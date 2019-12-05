@@ -1,0 +1,74 @@
+fileNameCell
+ highlightScope string
+keywordCell
+typeCell
+ enum assembly pl contractLanguage hardwareDescriptionLanguage knowledgeBase binaryDataFormat timeFormat computingMachine xmlFormat compiler grammarLanguage application ir isa queryLanguage protocol os esolang template textMarkup characterEncoding idl library editor cloud textData visual plzoo interpreter notation binaryExecutable metaLanguage stylesheetLanguage schema bytecode jsonFormat vm filesystem standard linter packageManager framework webApi pattern optimizingCompiler numeralSystem
+ highlightScope constant.language
+intCell
+stringCell
+anyCodeCell
+ extends stringCell
+wikipediaIdCell
+ extends stringCell
+urlCell
+ highlightScope string
+nameCell
+ extends stringCell
+yearCell
+ extends intCell
+abstractFactNode
+ abstract
+appearedNode
+ description What year was the language publicly released and/or announced.
+ cells keywordCell yearCell
+ extends abstractFactNode
+ crux appeared
+ required
+ single
+creatorsNode
+ description Name(s) of the original creators of the language delimited by " and "
+ cells keywordCell
+ catchAllCellType nameCell
+ extends abstractFactNode
+ crux creators
+websiteNode
+ description URL of the official homepage for the language project.
+ cells keywordCell urlCell
+ extends abstractFactNode
+ crux website
+githubNode
+ description URL of the official GitHub repo for the language project.
+ cells keywordCell urlCell
+ extends abstractFactNode
+ crux github
+wikipediaNode
+ description Name of the language on Wikipedia, if and only if it has a page dedicated to it.
+ cells keywordCell wikipediaIdCell
+ extends abstractFactNode
+ crux wikipedia
+exampleNode
+ description A text block containing a representative snippet of code for the language.
+ catchAllNodeType lineOfCodeNode
+ cells keywordCell
+ extends abstractFactNode
+ crux example
+lineOfCodeNode
+ description Any code fits.
+ catchAllCellType anyCodeCell
+ catchAllNodeType lineOfCodeNode
+laniNode
+ root
+ description A language for encoding data about Programming languages.
+ catchAllNodeType errorNode
+ inScope abstractFactNode
+ pattern [\w-]\.lani$
+ cells fileNameCell
+errorNode
+ baseNodeType errorNode
+typeNode
+ description A category that the entity roughly fits into.
+ cells keywordCell typeCell
+ required
+ crux type
+ single
+ extends abstractFactNode

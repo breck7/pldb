@@ -1,3 +1,4 @@
 type template
 website https://docs.python.org/3/library/string.html#format-specification-mini-language
-example '{0}, {1}, {2}'.format('a', 'b', 'c')
+example
+ '{0}, {1}, {2}'.format('a', 'b', 'c')

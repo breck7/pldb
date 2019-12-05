@@ -1,3 +1,4 @@
 appeared 1997
 type pl
-example <WIZSET VertSpacingGap = Chr(13) & Chr(10) & RepeatString(Chr(9),numIndent)>
+example
+ <WIZSET VertSpacingGap = Chr(13) & Chr(10) & RepeatString(Chr(9),numIndent)>
