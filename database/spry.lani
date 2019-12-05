@@ -2,3 +2,27 @@ appeared 2015
 type pl
 website http://sprylang.se/
 github https://github.com/gokr/spry
+example
+ # Let's add a method to:do: that works as in Smalltalk.
+ # Methods take the first argument, the "receiver", from the left
+ # and binds it to "self".
+ to:do: = method [:to :block
+   n = self
+   [n <= to] whileTrue: [
+     do block n
+     ..n = (n + 1)]]
+ 
+ # Then we can loop in Smalltalk style echoing 1 to 5!
+ 1 to: 5 do: [echo :x]
+ 
+ # We can similarly implement select: from Smalltalk
+ select: = method [:pred
+   result = ([] clone)
+   self reset
+   [self end?] whileFalse: [
+     n = (self next)
+     do pred n then: [result add: n]]
+   ^result]
+ 
+ # Then use it to produce [3 4]
+ echo ([1 2 3 4] select: [:x > 2])

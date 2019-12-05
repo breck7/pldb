@@ -1,3 +1,13 @@
 appeared 1994
 type pl
 website http://www.cs.cmu.edu/~acme/docs/language_overview.html
+example
+ System simple_cs = {
+    Component client = { Port send-request; };
+    Component server = { Port receive-request; };
+    Connector rpc = { Roels { caller, callee}};
+    Attachments {
+        client.send-request to rpc.caller;
+        server.receive-request to rpc.callee;
+    }
+ }

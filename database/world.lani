@@ -1,3 +1,22 @@
 appeared 2011
 type pl
 website http://www.world-lang.org
+example
+ timeval: struct [
+     slong sec
+     sint32 usec
+ ] none
+ 
+ timezone: struct [
+     sint minuteswest
+     sint dsttime
+ ] none
+ 
+ gettimeofday: routine [
+     [typecheck]
+     libc "gettimeofday" [
+         tp [struct!] pointer
+         tzp [struct!] pointer
+     ]
+     sint
+ ]

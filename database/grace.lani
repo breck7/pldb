@@ -1,3 +1,10 @@
 appeared 2010
 type pl
 website http://gracelang.org/
+example
+ class cat {
+     def name = "Felix"
+     method getName {
+         return name
+     }
+ }

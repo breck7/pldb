@@ -2,3 +2,9 @@ appeared 2018
 type pl
 website https://strat.world/
 github https://github.com/stratworld/strat
+example
+ service HelloWorld {
+  include "Birth"
+ 
+  Birth -> "Hello World!"
+ }

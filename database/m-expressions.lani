@@ -1,3 +1,8 @@
 appeared 1960
 type metaLanguage
 wikipedia M-expression
+example
+  [1;2;3]
+  f[x;y]
+  label[square;λ[[x];product[x;x]]]
+  [lessthan[x;0] → negative[x]; T → x]

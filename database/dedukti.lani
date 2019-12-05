@@ -2,3 +2,12 @@ appeared 2009
 type pl
 website https://deducteam.github.io
 github https://github.com/Deducteam/Dedukti
+example
+ Nat: Type.
+ zero: Nat.
+ succ: Nat -> Nat.
+ def plus: Nat -> Nat -> Nat.
+ [ n ] plus zero n --> n
+ [ n ] plus n zero --> n
+ [ n, m ] plus (succ n) m --> succ (plus n m)
+ [ n, m ] plus n (succ m) --> succ (plus n m).

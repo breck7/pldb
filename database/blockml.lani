@@ -1,3 +1,151 @@
 appeared 2014
 type textMarkup
 website http://blockml.awwapps.com
+example
+ /*
+     ____  __           __   __  _____ 
+    / __ )/ /___  _____/ /__/  |/  / / 
+   / __  / / __ \/ ___/ //_/ /|_/ / /  
+  / /_/ / / /_/ / /__/ ,< / /  / / /___
+ /_____/_/\____/\___/_/|_/_/  /_/_____/
+ 
+ */
+ 
+ 
+ head[
+ 
+ title[Recap of John McCarthy's Recursive Functions of Symbolic Expressions and Their Computation by Machine, Part I]
+ 
+ h3[Judith Lindemann]
+ 
+ h5[Berlin, 25 December 2013]
+ 
+ ]
+ 
+ h1[Preface]
+ 
+ This text is originated as an exercise for an university course about scientific writing at the Beuth University of Applied Sciences Berlin. The assignment was to choose a  computer science paper, reproduce the key ideas in own words, and add some own thoughts about that topic as conclusion. 
+ 
+ I have selected the classical paper "b[Recursive Functions of Symbolic Expressions and Their Computation by Machine, Part I]" by John McCarthy from 1960 (id[LISP]), because it  permits a fascinating look into the history of programming languages and is the origin of many concepts that are still relevant today.
+ 
+ This text is also influenced by Paul Graham's article "b[Roots of Lisp]" from 2002 (id[ROOTS]) about that McCarthy paper. I follow Paul Graham's approach to provide code  examples in actual LISP code instead of m-expressions, and I assume that c[quote] and c[cond] are elementary functions.
+ 
+ toc[Contents]
+ 
+ sec[Introduction][
+ 
+ The paper (id[LISP]) describes a dynamic typed and functional programming language called LISP. The name LISP is an abbreviation for b[LIS]t b[P]rocessor, which is a very  suitable name, because the whole syntax is completely based on a simple list notation for code and data.
+ 
+ LISP was developed in 1958, two years before the paper was published. The main purpose for the development was the lack of appropriate programming languages for artificial  intelligence applications. At this time FORTRAN was the dominant high level programming language, but it was developed for numeric calculations and engineering tasks and  therefore no good fit for AI problems.
+ 
+ LISP was influenced by IPL (Information Processing Language), which was an experimental programming language from 1957 (see id[IPL]). IPL was dedicated to AI research, but also  inappropriate because it was an assembly language. Some of the IPL concepts that LISP had adopted and heavily improved were: list-processing, higher-order functions, recursion  and computation with symbols. Some other concepts were new, for example: conditional control flow, garbage collection, lazy evaluation, and dynamic typing.
+ 
+ At first, we will learn something about the mathematical concepts behind LISP. Then, we will see that the early LISP had only two simple data types. After that, we will define  5-7 elementary functions and we will use them as building blocks to create our own functions. Then, we will see how the memory management works. At the end, we will look, how  LISP was doing in the past 55 years and how LISP is doing today.
+ 
+ ]/* Introduction */
+ 
+ sec[Mathematical concepts][
+ 
+ sec[Propositional expressions][
+ Propositional expressions are expressions whose values are either c[T] "true" or c[F] "false". These expressions are often combined by connectives like c[âˆ§] "and", c[âˆ¨] "or"  and c[Â¬] "not". Typical examples are:
+ 
+ math[$$x < y$$
+ $$(x < y) \land (b = c)$$]
+ 
+ ]/* Propositional Expressions */
+ 
+ sec[Conditional expressions][
+ The notation of conditional expressions was a new concept, developed by McCarthy in 1960. It is the ancestor of the "if...then...else" condition, who is part of nearly every  programming language nowadays. Conditional expressions allow a recursive definition of functions in a convenient way. A conditional expression has the form:
+ 
+ math[$$(p_1 \rightarrow e_1,\cdots,p_n \rightarrow e_n)$$]
+ 
+ The b[p]â€™s are propositional expressions that are true or false. The b[e]â€™s could be any kind of expression. One could read "if b[p]sub[1] then b[e]sub[1], else if b[p] sub[2] then b[e]sub[2], ..., else if b[p]sub[n] then b[e]sub[n]" or "b[p]sub[1] yields b[e]sub[1], ..., b[p]sub[n] yields b[e]sub[n]".
+ 
+ The b[p]â€™s get evaluate from left to right. When the first true b[p] is found, then the conditional expressions returns the b[e] that belongs to the b[p].
+ 
+ math[$$(1 < 2 \rightarrow 4, 1 > 2 \rightarrow 3) = 4$$
+ 
+ $$(2 < 1 \rightarrow 4, 2 > 1 \rightarrow 3, 2 > 1 \rightarrow 2) = 3$$
+ 
+ $$(2 < 1 \rightarrow 4, T \rightarrow 3) = 3$$
+ 
+ $$(2 < 1 \rightarrow {0 \over 0}, T \rightarrow 3) = 3$$]
+ 
+ The whole conditional expressions is undefined:
+ ol[
+ - if all b[p]'s are false, 
+ - if an undefined b[p] occurs before a true b[p] occurs 
+ - or if the b[e] that belongs to the first true b[p] is undefined it self
+ ]
+ 
+ math[$$(2 < 1 \rightarrow 3, 4 < 1 \rightarrow 4) \mbox{ is undefined}$$
+ 
+ $$({0 \over 0} < 1 \rightarrow 3, 1 < 4 \rightarrow 4) \mbox{ is undefined}$$
+ 
+ $$(2 < 1 \rightarrow 3, T \rightarrow {0 \over 0} )\mbox{ is undefined}$$]
+ 
+ ][COND]/* Conditional expressions */
+ 
+ sec[Recursive function definitions][
+ 
+ With the help of conditional expressions it is easy to define recursive functions. The factorial of a non-negative integer b[n] could be described as follows:
+ 
+ math[$$n! = (n = 0 \rightarrow 1, T \rightarrow n \cdot(n - 1)!)$$]
+ 
+ The evaluation of 0! returns 1. The evaluation of 2! looks as follows:
+ 
+ math[\\begin{eqnarray*}
+ 2! &=& (2 = 0 \\rightarrow 1, T \\rightarrow 2 \\cdot (2 - 1)!)\\\\
+ &=& 2 \\cdot 1!\\\\
+ &=& 2 \\cdot (1 = 0 \\rightarrow 1 T \\rightarrow \\cdot (1 - 1)!)\\\\
+ &=& 2 \\cdot 1 \\cdot 0!\\\\
+ &=& 2 \\cdot 1 \\cdot (0 = 0 \\rightarrow 1, T \\rightarrow 0\\cdot(0-1)!)\\\\
+ &=&2\\cdot1\\cdot1\\\\
+ &=&2
+ \\end{eqnarray*}]
+ 
+ ]/* Recursive function definitions */
+ 
+ sec[Lambda calculus][
+ The Lambda calculus is a formal notation, which is used in LISP to generate new functions and to use functions as arguments. It was introduced by Alonzo Church in 1941 (see id[ LAMBDA]).
+ 
+ Church distinguishes between forms and functions. An expression like im[$y^2 + x$] is a form. An expression like im[$f(3, 4)$ ] a function. im[$y^2 + x$] is not a function  because the expression im[$y^2 + x(3, 4)$] does not determine and could turn into 19 or 13. The problem is that the order, in which the arguments 3 and 4 are inserted into the  form, is undefined. To convert a form into a function we can write: is $2.50 for the first one, and $2.00 for each additional one
+ 
+ math[$$\lambda((x_1, \cdots, x_n),\cal E)$$]
+ 
+ im[$\cal E$] is a form and im[$x_1, \cdots, x_n$] are the ordered parameters for im[$\cal E$]. The Î»-expression is a function because the variables in im[$\cal E$] can be  substituted with arguments in the order of the parameter list im[$x_1, \cdots, x_n$]. We say that the variables of a Î»-expression are bounded. The example from above looks now  like this:
+ 
+ math[$$\lambda((x,y),y^2 +x)$$]
+ 
+ And with arguments like this:
+ 
+ math[$$\lambda((x,y),y^2 +x)(3,4) = 19$$]
+ 
+ 
+ If we want to define a recursive function like
+ 
+ math[$${\rm sqrt}(a,x,\epsilon)
+         = (|x^2 - a| < \epsilon \rightarrow x, T \rightarrow {\rm sqrt}(a,
+ {1 \over 2}(x + {a \over x}),\epsilon))$$]
+ 
+ in lambda notation
+ 
+ math[$${\rm sqrt} = \lambda((a,x,\epsilon),(|x^2 - a| < \epsilon \rightarrow x,
+ T\rightarrow
+ {\rm sqrt} (a,{1 \over 2}(x + {a \over x}), \epsilon))),$$]
+ 
+ we found that these definition is inadequate, because the right-hand side im[$sqrt$] can not serve as an expression for the whole function. Remember, a function would look like  im[$sqrt(a,x,Îµ)$].
+ 
+ In order to define recursive Î»-expressions, we must introduce a new notation.
+ 
+ math[$$label(f,\cal E)$$]
+ 
+ b[f] can be seen as the function name. The occurrence of b[f] within im[$\cal E$] will be evaluated to the label-expression as if b[f] is a parameter of the function. 
+ 
+ math[$$label(sqrt, \lambda((a,x,\epsilon),(| x^2 - a|
+ < \epsilon \rightarrow x, T \rightarrow {\rm sqrt} (a, {1 \over 2}(x + {a
+ \over x}),\epsilon))))$$]
+ 
+ ][LAMBDACALCULUS]/* Lambda calculus */
+ 
+ ]/* Mathematical concepts behind Lisp */

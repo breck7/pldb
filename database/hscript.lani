@@ -1,2 +1,8 @@
 appeared 1996
 type pl
+example
+ if ( $F == 1 ) then
+     echo Frame One
+ else
+     echo Not Frame One
+ endif

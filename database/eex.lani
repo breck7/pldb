@@ -1,3 +1,9 @@
 appeared 2012
 type template
 website https://hexdocs.pm/eex/EEx.html
+example
+ <%= if true do %>
+   It is obviously true
+ <% else %>
+   This will never appear
+ <% end %>

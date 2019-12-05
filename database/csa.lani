@@ -1,2 +1,13 @@
 appeared 2017
 type assembly
+example
+   test al,0x1
+   jz not_string
+   movq rbx,[rax-0x1]
+   cmpb [rbx+0xb],0x80
+   jnc not_string
+   movq rax,[rax+0xf]
+   retl
+ not_string:
+   movq rax,[r13-0x60]
+   retl

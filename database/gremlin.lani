@@ -1,3 +1,5 @@
 appeared 2009
 type queryLanguage
 wikipedia Gremlin_(programming_language)
+example
+ g.V().hasLabel('movie').values('year').min()

@@ -1,3 +1,11 @@
 appeared 2014
 type metaLanguage
 github https://github.com/hashicorp/hcl
+example
+ variable "ami" {
+    description = "the AMI to use"
+ }
+ <<FOO
+ hello
+ world
+ FOO

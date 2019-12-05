@@ -2,3 +2,11 @@ appeared 2008
 type queryLanguage
 website https://pig.apache.org/
 wikipedia Apache_Pig
+example
+ input_lines = LOAD '/tmp/word.txt' AS (line:chararray);
+ words = FOREACH input_lines GENERATE FLATTEN(TOKENIZE(line)) AS word;
+ filtered_words = FILTER words BY word MATCHES '\\w+';
+ word_groups = GROUP filtered_words BY word;
+ word_count = FOREACH word_groups GENERATE COUNT(filtered_words) AS count, group AS word;
+ ordered_word_count = ORDER word_count BY count DESC;
+ STORE ordered_word_count INTO '/tmp/results.txt';

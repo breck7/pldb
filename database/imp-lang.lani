@@ -1,3 +1,7 @@
 appeared 2019
 type pl
 website https://scattered-thoughts.net/writing/imp-intro/
+example
+ let colors = "apples" x "red" | "apples" x "green" | "oranges" x "orange" in
+ let fancy = "red" x "scarlet" | "red" x "crimson" | "green" x "emerald" in
+ "apples" colors fancy

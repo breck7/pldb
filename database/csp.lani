@@ -1,3 +1,5 @@
 appeared 1978
 type pl
 wikipedia Communicating_sequential_processes
+example
+ COPY = *[c:character; west?c → east!c]

@@ -2,3 +2,15 @@ appeared 2004
 type textMarkup
 website http://xetex.sourceforge.net
 wikipedia XeTeX
+example
+ \documentclass[11pt]{article}
+ \usepackage{fontspec}
+ \setmainfont[Ligatures=TeX]{Linux Libertine O}
+ \begin{document}
+ \section{Unicode support}
+ 
+ \subsection{English}
+ All human beings are born free and equal in dignity and rights.
+  
+ \subsection{Íslenska}
+ Hver maður er borinn frjáls og jafn öðrum að virðingu og réttindum.

@@ -1,4 +1,15 @@
 appeared 2018
 type pl
+creators Jon Whitehead
 website https://maraca-lang.org
 github https://github.com/maraca-lang/maraca-js
+example
+ [
+   pad: 10,
+   Hello,
+   [
+     : panel,
+     style: bold,
+     World,
+   ],
+ ]

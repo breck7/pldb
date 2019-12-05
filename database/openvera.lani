@@ -1,3 +1,50 @@
 appeared 2001
 type pl
 wikipedia OpenVera
+example
+ // This Examples shows how random 
+ // Test vectors is generated
+ 
+ // This is base object
+ class m_base_o {
+   rand bit [7:0] addr ;
+   rand bit [7:0] data ;
+   rand bit       rd_wr;
+ 
+   constraint c1 {
+     addr > 0;
+     data > 0;
+   }
+ 
+   task print() {
+     printf ("-------------------------\n");
+     printf ("Address : %x\n",addr);
+     printf ("Data    : %x\n",data);
+     printf ("Write   : %x\n",rd_wr);
+  }
+ }
+ 
+ // This is transcation generator
+ class txgen {
+   m_base_o base_ob;
+   integer num_cmds;
+   integer i,s;
+ 
+   // Method to generate commands
+   task gen_tx () {
+      base_ob = new();
+     // Generate num_cmds commands
+     for ( i = 0; i < num_cmds; i ++) {
+       s = base_ob.randomize();
+       base_ob.print();
+     }
+   }
+ }
+ 
+ // Top level for any vera testbench
+ program memory {
+    txgen tx;
+    tx = new();
+    tx.num_cmds = 5;
+    tx.gen_tx();
+ }

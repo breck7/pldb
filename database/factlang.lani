@@ -1,3 +1,14 @@
 appeared 2017
 type pl
 github https://github.com/PLSysSec/FaCT
+example
+ void
+ swap_conditional(secret mut uint64[5] a, secret mut uint64[5] b, secret uint64 swapi) {
+   if (swapi == 1) {
+     for (uint32 i from 0 to 5) {
+       secret uint64 x = a[i];
+       a[i] = b[i];
+       b[i] = x;
+     }
+   }
+ }

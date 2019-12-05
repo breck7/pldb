@@ -1,3 +1,7 @@
 appeared 2019
 type pl
 website https://www.t3x.org/klisp/index.html
+example
+ ((a . b) . c)
+ (a . (b . c))
+ ((a . b) . (c . d))

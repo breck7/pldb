@@ -1,3 +1,11 @@
 appeared 2004
 type template
 wikipedia ERuby
+example
+ <ul>
+ <% 4.times do %>
+ 
+   <li>list item</li>
+ 
+ <% end %>
+ </ul>

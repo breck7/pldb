@@ -1,3 +1,15 @@
 appeared 2013
 type template
 website http://reactjs.org
+example
+ class App extends React.Component {
+   render() {
+     return (
+       <div>
+         <p>Header</p>
+         <p>Content</p>
+         <p>Footer</p>
+       </div>
+     );
+   }
+ }

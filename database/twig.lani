@@ -3,3 +3,17 @@ type template
 website https://twig.symfony.com/
 github https://github.com/mitsuhiko/twig
 wikipedia Twig_(template_engine)
+example
+ {% extends "base.html" %}
+ {% block navigation %}
+     <ul id="navigation">
+     {% for item in navigation %}
+         <li>
+             <a href="{{ item.href }}">
+                 {% if item.level == 2 %}&nbsp;&nbsp;{% endif %}
+                 {{ item.caption|upper }}
+             </a>
+         </li>
+     {% endfor %}
+     </ul>
+ {% endblock navigation %}

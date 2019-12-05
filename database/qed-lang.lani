@@ -1,3 +1,13 @@
 appeared 2015
 type pl
 website https://qed-lang.org
+example
+ void Button(string text) {
+     int col = 0xC0C0C0; @out("  " + text + "  ")
+ } @out(rect()) @bgcol(col) @onpress(col = 0x808080) @onrelease([col = 0xC0C0C0, return()])
+ Button("Form 1");
+ println("Form 1 clicked");
+ Button("Form 2");
+ println("Form 2 clicked");
+ Button("Quit");
+ return(0);

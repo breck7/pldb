@@ -2,3 +2,24 @@ appeared 2017
 type pl
 website http://cell-lang.net/
 github https://github.com/cell-lang
+example
+ type AddUser = add_user(
+  id:            UserId,
+  username:      String,
+  signup_date:   Date,
+  first_name:    String,
+  last_name:     String,
+  date_of_birth: Date?
+ );
+ 
+ OnlineForum.AddUser {
+   id = self.id;
+   // Inserting the new user id and setting all the mandatory attributes
+   insert user(id),
+          username(id, self.username),
+          first_name(id, self.first_name),
+          last_name(id, self.last_name),
+          signup_date(id, self.signup_date);
+   // Setting the date_of_birth attribute, if available
+   insert date_of_birth(id, self.date_of_birth) if self.date_of_birth?;
+ }

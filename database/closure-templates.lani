@@ -1,3 +1,10 @@
 appeared 2009
 type template
 github https://github.com/google/closure-templates
+example
+ /**
+  * Says hello to the world.
+  */
+ {template .helloWorld}
+   Hello world!
+ {/template}

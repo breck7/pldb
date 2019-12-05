@@ -1,3 +1,17 @@
 appeared 1992
 type application
 wikipedia KiCad
+example
+ (kicad_pcb (version 3)
+  (host pcbnew "(2013-02-20 BZR 3963)-testing")
+   (general
+   (links 2)
+   (no_connects 0)
+   (area 57.924999 28.924999 74.075001 42.075001)
+   (thickness 1.6)
+   (drawings 5)
+   (tracks 5)
+   (zones 0)
+   (modules 2)
+   (nets 3)
+ ))

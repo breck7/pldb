@@ -2,3 +2,8 @@ appeared 2004
 type pl
 website http://tefkat.sourceforge.net/
 wikipedia Tefkat
+example
+ RULE ClassToTable
+ FORALL  Class c { name: n; }
+ MAKE    Table t { name: n; }
+ ;

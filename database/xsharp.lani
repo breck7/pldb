@@ -1,3 +1,25 @@
 appeared 2015
 type pl
 website https://www.xsharp.info
+example
+ FUNCTION start AS VOID 
+  LOCAL oErr AS OBJECT
+  LOCAL nI AS LONG
+  LOCAL f AS FLOAT
+  oErr := Error{} 
+  f := Seconds()
+  nI := 0
+  FOR VAR nX := 1 TO 10_000_000
+     IF IsInstanceOf(oErr, #Error)
+        nI++
+     ENDIF
+  NEXT 
+  ? Seconds() - f, nI
+  f := Seconds()
+  FOR VAR nX := 1 TO 10_000_000
+     IF oErr IS Error
+        nI++
+     ENDIF
+  NEXT 
+  ? Seconds() - f, nI
+  WAIT

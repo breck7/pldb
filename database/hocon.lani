@@ -2,3 +2,12 @@ appeared 2011
 type metaLanguage
 website https://github.com/lightbend/config/blob/master/HOCON.md
 wikipedia HOCON
+example
+ // one array
+ a : [ 1, 2, 3, 4 ]
+ // two arrays that are concatenated
+ a : [ 1, 2 ] [ 3, 4 ]
+ // a later definition referring to an earlier
+ // (see "self-referential substitutions" below)
+ a : [ 1, 2 ]
+ a : ${a} [ 3, 4 ]

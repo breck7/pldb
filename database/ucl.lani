@@ -1,3 +1,23 @@
 appeared 2013
 type metaLanguage
 github https://github.com/vstakhov/libucl
+example
+ param = value;
+ section {
+     param = value;
+     param1 = value1;
+     flag = true;
+     number = 10k;
+     time = 0.2s;
+     string = "something";
+     subsection {
+         host = {
+             host = "hostname";
+             port = 900;
+         }
+         host = {
+             host = "hostname";
+             port = 901;
+         }
+     }
+ }

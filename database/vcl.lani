@@ -1,2 +1,8 @@
 appeared 2006
 type application
+example
+ acl local {
+  "localhost";         // myself
+  "192.0.2.0"/24;      // and everyone on the local network
+  ! "192.0.2.23";      // except for the dialin router
+ }

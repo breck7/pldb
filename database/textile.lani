@@ -2,3 +2,13 @@ appeared 2002
 type textMarkup
 github https://github.com/textile
 wikipedia Textile_(markup_language)
+example
+ """
+ _This_ is a *test.*
+ 
+ * One
+ * Two
+ * Three
+ 
+ Link to "Slashdot":http://slashdot.org/
+ """

@@ -1,3 +1,10 @@
 appeared 2014
 type pl
 github https://github.com/conanite/nydp
+example
+ (def pre-compile (expr)
+   (map pre-compile
+     (if (mac-names (car expr))
+         (pre-compile (mac-expand (car expr) (cdr expr)))
+         expr)))
+ (mac yoyo (thing) `(do-yoyo ,thing))

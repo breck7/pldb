@@ -1,3 +1,24 @@
 appeared 2008
 type pl
 website http://docs.brightsign.biz/display/DOC/BrightScript
+example
+ REM
+ REM The game of Snake
+ REM demonstrates BrightScript programming concepts
+ REM June 22, 2008
+  
+ REM
+ REM Every BrightScript program must have a single Main()
+ REM
+  
+ Sub Main()
+  
+     game_board=newGameBoard()
+  
+     While true
+         game_board.SetSnake(newSnake(game_board.StartX(), game_board.StartY()))
+         game_board.Draw()
+         game_board.EventLoop()
+         if game_board.GameOver() then ExitWhile
+     End While
+ End Sub

@@ -1,2 +1,12 @@
 appeared 1983
 type pl
+example
+ Days_leave <- 22
+ AGE < 18         Y N N N N ELSE
+ AGE >= 60        N Y - N N -
+ SERVICE >= 30    N - Y N N -
+ SERVICE >= 15    N - - Y N -
+ AGE >= 45        N - - - Y -
+ Days_leave + 5   X X X . . .
+ Days_leave + 2   . . . X X .
+ Days_leave + 3   . X X . . .

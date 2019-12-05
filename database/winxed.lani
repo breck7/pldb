@@ -2,3 +2,42 @@ appeared 2009
 type pl
 website http://winxed.net/
 github https://github.com/NotFound/winxed
+example
+ #! winxed
+ # (C) 2010 Julián Albo
+ /*
+ = head1 NAME
+ setup.winxed - Python distutils style
+ =head1 DESCRIPTION
+ Just some testing, not intended for real usage yet.
+ =head1 USAGE
+ Handle with care. See DESCRIPTION.
+ =cut
+ */
+ $load 'Getopt/Obj.pbc';
+ //**********************************************************************
+ // Json file read.
+ function loadData(string filename)
+ {
+     var json = load_language('data_json');
+     var file = open(filename);
+     if (file == null || file.is_closed())
+         throw Error("Can't open " + filename);
+     file.encoding('utf8');
+     string jsondata = file.readall();
+     file.close();
+     var code = json.compile(jsondata);
+     return code();
+ }
+ //**********************************************************************
+ function main(argv)
+ {
+     // Parse command line.
+     var getopts = new ['Getopt','Obj'];
+     getopts.notOptStop(1);
+     getopts.push_string('file=s');
+     getopts.push_string('v');
+     string progname = argv.shift();
+     var opts = getopts.get_options(argv);
+     int verbose = opts['v'] != null;
+     var file = opts['file'];

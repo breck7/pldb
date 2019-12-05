@@ -3,3 +3,9 @@ type template
 website http://haml.info/
 github https://github.com/haml/haml
 wikipedia Haml
+example
+ %section.container
+  %h1= post.title
+  %h2= post.subtitle
+  .content
+    = post.content

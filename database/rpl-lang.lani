@@ -1,2 +1,18 @@
 appeared 1993
 type pl
+example
+ (DEF-INTERP-PROC LOOK-FOR (PL)
+  (LOOK-FOR-PROPS PL)
+  (WAIT-FOR VISUAL-INPUT*)
+  (SEEN-OB-DESIGS PL) )
+ 
+  ; Returns a list of desigs (Section 1.7), one for every object seen.
+  (DEFFUNC SEEN-OB-DESIGS - (LST desig) (PL - (LST (LRCD symbol obj)))
+   (FOR (I IN OB-POSITIONS*)
+     (SAVE (CREATE-DESIG "Perceived object"
+       ;Desig wil l print like: !:|Perceived object203|
+       (CONS (LIST 'LOC I)
+        (<# ( (X) (LIST (CAR X) (CADR X)))
+         PL))
+       ;Design property list
+      ))))

@@ -1,3 +1,17 @@
 appeared 1988
 type pl
 wikipedia UNITY_(programming_language)
+example
+ Program bubblesort
+ declare
+     n: integer,
+     A: array [0..n-1] of integer
+ initially
+     n = 20 #
+     <|| i : 0 <= i and i < n :: A[i] = rand() % 100 >
+ assign
+     <# k : 0 <= k < 2 ::
+         <|| i : i % 2 = k and 0 <= i < n - 1 ::
+             A[i], A[i+1] := A[i+1], A[i] 
+                 if A[i] > A[i+1] > >
+ end

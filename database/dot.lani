@@ -1,3 +1,9 @@
 appeared 2007
 type textMarkup
 wikipedia DOT_(graph_description_language)
+example
+  // The graph name and the semicolons are optional
+ graph graphname {
+     a -- b -- c;
+     b -- d;
+ }

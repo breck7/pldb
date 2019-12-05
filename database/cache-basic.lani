@@ -1,2 +1,67 @@
 appeared 1997
 type queryLanguage
+example
+ ' RightTriangle compute area and hypotenuse of a right triangle
+ ' this routine contains examples of Cache Basic features */
+  
+ Sub Run() 
+ println "Compute the area and hypotenuse of a right triangle"
+ println "given the lengths of its two sides."    
+ println
+ println "First, choose a unit of measurement. " 
+ input "(i)nches, (f)eet, (m)iles, " _
+       , "(c)entimeters, m(e)ters, (k)ilometers: ", units
+ println
+ ' translate units to a full word
+ select case left(units, 1)
+     case "i" units = "inches"
+     case "f" units = "feet"
+     case "m" units = "miles"
+     case "c" units = "centimeters"
+     case "e" units = "meters"
+     case "k" units = "kilometers"
+     case else units = "units"
+ end select
+  
+ do
+     println
+     input "Length of side 1: ", side1
+     if (side1) = "" then exit do
+ loop while IsNegative( side1 )
+ if (side1 = "") then exit sub
+  
+ do
+     println
+     input "Length of side 2: ", side2
+     if (side2) = "" then exit do
+ loop while IsNegative( side2 )
+ if (side2 = "") then exit sub
+  
+ Compute(units, side1, side2)
+ end sub
+  
+ public function IsNegative(ByVal num As %String) As %Boolean
+ ' is num negative?
+     ' check in range "1" through "9"
+     if (num < chr(49)) or (num > chr(57)) then
+         print "  Enter a positive number." 
+         return True
+     else
+         print "  Accepted."
+         return False
+     end if
+ end function
+  
+ private function Compute(ByVal units As %String, _
+                          ByVal A As %Integer, _
+                          ByVal B As %Integer)
+ ' compute and display area and hypotenuse
+  
+ area  = round((( A * B ) / 2), 2)
+ hypot = round(sqr(( A ^ 2 ) + ( B ^ 2 )), 2)
+   
+ println : println
+ println "The area of this triangle is ", area, " square ", units, "."
+ println
+ println "The hypotenuse is ", hypot, " ", units, "."
+ end function

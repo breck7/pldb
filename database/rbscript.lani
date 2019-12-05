@@ -1,2 +1,6 @@
 appeared 1996
 type pl
+example
+ Dim years, days As Integer
+ years = Val(Input("")) // Prompt the user to enter a value
+ days = years * 365

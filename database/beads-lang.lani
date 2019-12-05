@@ -1,3 +1,247 @@
 appeared 2016
 type pl
+creators Edward de Jong
 website http://beadslang.org/
+example
+ beads level 1 program calculator
+ //  flutter version available at: on github, look for: flutter-calculator-demo
+ //  article: https://itnext.io/building-a-calculator-app-in-flutter-824254704fe6
+ 
+ const
+   C_OP    = #3E424D  //  keycap fill for an operator like C
+   C_DIGIT = #6E6E6E  //  keycap fill for a digit
+   C_ARITH  = #1A4C6E //  keycap fill for arithmetic buttons
+ 
+   //  warning: you must use the same unicode math chars in case statements later in arithmetic()
+   KEYCAPS = [ 'C', '±', '%', '÷',  //  tried \u207A\u2215\u208B instead of ± but it is ugly
+         '1', '2', '3', 'x', 
+         '4', '5', '6', '−', // \u2212 is the minus sign 
+         '7', '8', '9', '+',
+         '', '0', '.', '=']  // '⌫' is U+232B, for future undo key
+ 
+   KEYCOLORS = [C_OP, C_OP, C_OP, C_ARITH,
+         C_DIGIT, C_DIGIT, C_DIGIT, C_ARITH,
+         C_DIGIT, C_DIGIT, C_DIGIT, C_ARITH,
+         C_DIGIT, C_DIGIT, C_DIGIT, C_ARITH,
+         C_OP, C_DIGIT, C_OP, C_ARITH]
+ 
+   SPACING = 3 // points between each cell
+   HAIR = "\u2009"  //  a thin space 200A is even thinner
+ 
+ record a_term
+   ss : str  // the string containing the contents of the term
+   op : str  // the operator in keycap string form '+', '-'...
+ 
+ record a_state
+   terms : array of a_term
+   termx : num  // which term we are on
+   chain_op : str  //  chain operator char for repeated = presses
+   chain_val: num  //  chain value to repeat
+   fresh : yesno   //  if this is Y, then next digit will clear existing value
+ 
+ var g : a_state
+ 
+ calc main_init
+   g.terms[1].ss = ""
+   g.termx = 1
+   g.fresh = Y
+ 
+ vert slice main_draw
+   var cellsize = if b.box.width > b.box.height then b.box.height/8 else b.box.width/4
+   var result_v = cellsize*2  //  need to enhance compiler so that expressions don't get converted 
+   var keys_v = cellsize*5
+   var keys_maxh = min(b.box.width, cellsize*8)  // don't go wider than 8 squares wide (double)
+   draw_rect(b.box, fill:#121F30)
+   skip 10 al
+   add result_v px d_result
+   add keys_v px d_keys(keys_maxh)
+   skip 10 al
+ 
+ draw d_result
+   draw_rect(b.box, fill:#0D161F)
+ 
+   //  build the string out of the active terms
+   var s : str = ""
+   loop array:g.terms index:i
+     g.terms[i].ss &=> s
+     if g.terms[i].op <> U
+       HAIR & g.terms[i].op & HAIR &=> s  // append the operator
+ 
+   if (s == "")
+     s = "0"  //  when nothing is entered into our expression, call it zero
+ 
+   draw_str(b.box, s, size:b.box.height*0.5, just:RIGHT, indent:20 pt, color:WHITE)
+ 
+ horz slice d_keys(
+   totwidth  -- max width we allow for the grid, might be all of the space
+   )
+   //  in landscape mode, we don't want the key grid to get too wide, looks bad
+   skip 10 al
+   add totwidth px d_keygrid
+   skip 10 al
+ 
+ table d_keygrid
+   horz slice
+     skip SPACING pt
+     loop reps:4
+       add 10 al
+       skip SPACING pt
+   vert slice
+     skip SPACING pt
+     loop reps:5
+       add 10 al
+       skip SPACING pt
+ 
+   //  inside grid cell draw function, b has properties b.box, cell_seq, cell:a_xy, nrows, ncols
+   cell
+     draw_rect(b.box, fill:KEYCOLORS[b.cell_seq], corner:6 pt)
+     draw_str(b.box, KEYCAPS[b.cell_seq], size:b.box.height, color:WHITE)
+ track EV_TAP
+   //  respond to the command
+   case b.cell_seq
+   | 1  //  clear
+     do_clear
+ 
+   | 2  //  plusminus - change the sign of the current term
+     sign_change(g.termx)
+ 
+   | 3  // percent - divide the current term by 100
+     do_percent
+ 
+   | 4, 8, 12, 16   //  arithmetic operations
+     do_arith(KEYCAPS[b.cell_seq])
+   
+   | 17  // future feature - backspace
+     nop // do_backspace
+ 
+   | 19  // period
+     do_period
+ 
+   | 20  //  equals
+     do_equals
+ 
+   else
+     //  must be a digit
+     add_digit(KEYCAPS[b.cell_seq])  
+ 
+ // calc do_backspace
+ //  log "backspace"
+ //  reserved for future undo functionality
+ //  this will test ability to read code and extend it
+   
+ calc do_percent
+   //  if the current term is empty do nothing
+   //  apple's calculator takes the sequence 900+% and makes it 900^2 which is nutty
+   if g.terms[g.termx].ss <> ""
+     if g.termx > 1
+       //  when we have two terms, like 300 + 20% we take 20% of the first term and replace
+       g.terms[g.termx].ss = to_str(eval(g.termx)*eval(g.termx-1)/100)
+     else
+       //  we only have 1 term, so just divide it by 100
+       g.terms[g.termx].ss = to_str(eval(g.termx)/100)
+     g.fresh = Y
+ 
+ calc eval (
+   termx  -- term index to evaluate
+   ) : num  //  convert a term to a floating point number
+   var ss : str = g.terms[termx].ss
+   if ss == ""
+     return 0
+   return to_num(ss)
+ 
+ calc do_clear // clear the current term to blank.
+   //  if the user has entered 123+, there is an empty current term will do nothing
+   g.terms[g.termx].ss = ""
+ 
+ calc sign_change(
+   tx  -- term index
+   )
+   var old : str = g.terms[tx].ss
+   if old == ""
+     //  we have no operand yet in the current term, so
+     //  either ignore it or change previous operand's sign
+     //  this is what apple's calculator does
+     if tx > 1
+       sign_change(tx-1)  // change previous operand's sign. kinda weird really.
+   elif str_begins(old, "-")
+     g.terms[tx].ss = str_subset(old, from:2)  // strip the minus
+   else
+     g.terms[tx].ss = '-' & old  //  prepend a minus
+ 
+ calc do_period
+   //  ignore attempts to add more than one period
+   var list : array of num
+   str_find(g.terms[g.termx].ss, ".", list)
+   if tree_count(list) == 0
+     add_digit(".")  //  no period yet, so append one
+ 
+ calc do_equals
+   var val = eval(1)  // start with the first term by itself
+   var val2
+ 
+   //  if there is no second or later term use the chain operator and value
+   if tree_count(g.terms) < 2
+     //  use repeat if we have one
+     if g.chain_op <> U
+       val = arithmetic(g.chain_op, val, g.chain_val)
+   else
+     // two or more terms to process
+     loop from:1 index:tx while:g.terms[tx+1].ss <> "" and g.terms[tx].op <> U
+       val2 = eval(tx+1)
+       //  remember the last operator we used as our chaining value
+       g.chain_op = g.terms[tx].op
+       g.chain_val = val2
+       val = arithmetic(g.chain_op, val, val2)
+ 
+   //  calculation done, convert the value back as if we entered it
+   trunc g.terms // zap the array
+   g.terms[1].ss = to_str(val)  //  replace our value
+   g.termx = 1
+   g.fresh = Y
+ 
+ calc arithmetic(
+   operand : str  -- operation like "+", must match keycap
+   term1   : num
+   term2   : num
+   ) : num -- resulting value
+   var result
+   case operand //  note: these operators must match the keycaps
+   | '+'
+     term1 + term2 => result
+   | '−'
+     term1 - term2 => result
+   | 'x'
+     term1 * term2 => result
+   | '÷'
+     term1 / term2 => result
+   else
+     result = ERR
+   return result
+   
+ calc add_digit(
+   digit : str // digit to append to current term
+   )
+   //  if we are starting fresh, then erase what was there before
+   //  we also replace the previous string if it was a leading zero
+   if g.fresh or g.terms[g.termx].ss == "0"
+     g.terms[g.termx].ss = "" // clear whatever was there
+   digit &=> g.terms[g.termx].ss
+   g.fresh = N
+ 
+ calc do_arith(
+   operand : str  // '+', etc
+   )
+   if g.terms[g.termx].ss == ""
+     //  we have no term, so treat that as replacing the previously entered operation
+     //  and if this is the very beginning and we have no prior operation, ignore it
+     if g.termx == 1
+       // starting with a plus on an empty term is ignored
+       return
+   
+     //  multiple operators in a row, rewrite the previous operator
+     g.terms[g.termx-1].op = operand
+   else
+     //  we did have a term, advance to the next term 
+     g.terms[g.termx].op = operand
+     inc g.termx
+     g.terms[g.termx].ss = "" // empty term 

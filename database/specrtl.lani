@@ -1,2 +1,17 @@
 appeared 2011
 type pl
+example
+ concrete *cmp_ccno_1.insn instantiates set_compare
+ {
+   root(reg(NULL:FLAGS_REG),0=nonimmediate_operand:SWI:",?m",
+ 1=const0_operand:SWI:"");
+ }
+ {:
+   "ix86_match_ccmode (insn, CCNOmode)"
+   "@
+   test{}\t%0, %0
+   cmp{}\t{%1, %0|%0,%1}"
+   [(set_attr "type" "test,icmp")
+   (set_attr "length_immediate" "0,1")
+   (set_attr "mode" "")]
+ :}

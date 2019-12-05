@@ -1,3 +1,19 @@
 appeared 1997
 type pl
 wikipedia Information_Presentation_Facility
+example
+ .* This is a comment line
+ :userdoc.
+ :title.Endangered Mammals
+ :h1 res=001.The Manatee
+ 
+ :p.
+ The manatee has a broad flat tail and two flipper
+ like forelegs.  There are no back legs.
+ The manatee's large upper lip is split in two and
+ can be used like fingers to place food into the
+ mouth.  Bristly hair protrudes from its lips,
+ and almost buried in its hide are small eyes, with
+ which it can barely see.
+ 
+ :euserdoc.

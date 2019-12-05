@@ -1,2 +1,17 @@
 appeared 2011
 type pl
+example
+ // YellowPages.ice
+ module YellowPages
+ {
+     class PersonDetails
+     {
+        string phoneNumber;
+        optional(1) string address;
+     }
+ 
+     interface PhoneBook
+     {
+         PersonDetails find(string name);
+     }
+ }

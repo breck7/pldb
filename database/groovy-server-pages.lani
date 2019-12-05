@@ -1,3 +1,9 @@
 appeared 2008
 type template
 website https://gsp.grails.org/latest/guide/index.html
+example
+ <html>
+   <body>
+     <% out << "Hello GSP!" %>
+   </body>
+ </html>

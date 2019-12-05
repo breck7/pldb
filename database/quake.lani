@@ -1,2 +1,6 @@
 appeared 2001
 type pl
+example
+ proc simple(prefix, suffix) is
+    q = prefix & "." & suffix
+  end

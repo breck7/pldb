@@ -1,2 +1,19 @@
 type pl
 website https://wiki.opencog.org/w/Atomese
+example
+ (define find-animals
+   (BindLink
+     ;; The variable to be bound
+     (VariableNode "$var")
+     ;; The pattern to be searched for
+     (InheritanceLink
+        (VariableNode "$var")
+        (ConceptNode "animal")
+     )
+     ;; The value to be returned.
+     (VariableNode "$var")
+   )
+ )
+  
+ ;; Run the above pattern
+ (cog-bind find-animals)

@@ -2,3 +2,17 @@ appeared 2014
 type metaLanguage
 website https://hjson.org/
 github https://github.com/hjson/hjson
+example
+ {
+  # hash style comments
+  # (because it's just one character)
+ 
+  // line style comments
+  // (because it's like C/JavaScript/...)
+ 
+  /* block style comments because
+     it allows you to comment out a block */
+ 
+  # Everything you do in comments,
+  # stays in comments ;-}
+ }

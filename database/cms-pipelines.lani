@@ -1,3 +1,13 @@
 appeared 1986
 type pl
 wikipedia CMS_Pipelines
+example
+ PIPE (end ?) 
+    < input txt 
+  | a: locate /Hello/ 
+  | insert / World!/ after
+  | i: faninany
+  | > newfile txt a
+  ? a:
+  | xlate upper
+  | i:

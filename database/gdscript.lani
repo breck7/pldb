@@ -1,3 +1,21 @@
 appeared 2008
 type pl
 website http://docs.godotengine.org/en/3.0/getting_started/scripting/gdscript/gdscript_basics.html
+example
+ # A file is a class!
+ 
+ # Inheritance
+ 
+ extends BaseClass
+ 
+ # Member Variables
+ 
+ var a = 5
+ var s = "Hello"
+ var arr = [1, 2, 3]
+ var dict = {"key": "value", 2:3}
+ 
+ # Constants
+ 
+ const ANSWER = 42
+ const THE_NAME = "Charly"

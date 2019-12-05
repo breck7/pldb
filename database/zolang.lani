@@ -1,3 +1,11 @@
 appeared 2018
 type pl
 github https://github.com/Zolang/Zolang
+example
+ describe Person {
+  name as text
+  street as text
+  number as number
+  friendNames as list of text
+ }
+ let john as Person be Person("John", "Wall Street", 15, [ "Alice", "Bob" ])

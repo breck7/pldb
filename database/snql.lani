@@ -1,2 +1,9 @@
 appeared 2011
 type queryLanguage
+example
+ CONSTRUCT CP1
+  WHERE EP2 FILTER ((A3 != A4) AND (A3 = A1 OR A3 = A2) AND
+  (A4 = A1 OR A4 = A5))
+  AND (TC(A1, A2, EP1) WITH L1=’John’)
+  AND (TC(A1, A5, EP3) WITH L1=’John’)
+ FROM FriendshipNetwork

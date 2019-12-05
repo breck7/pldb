@@ -2,3 +2,16 @@ appeared 2009
 type template
 website http://www.tornadoweb.org/en/stable/guide/templates.html
 github https://github.com/tornadoweb/tornado
+example
+ <html>
+   <head>
+      <title>{{ title }}</title>
+   </head>
+   <body>
+     <ul>
+       {% for item in items %}
+         <li>{{ escape(item) }}</li>
+       {% end %}
+     </ul>
+   </body>
+ </html>

@@ -1,3 +1,9 @@
 appeared 2011
 type queryLanguage
 website https://hive.apache.org
+example
+ 4 CREATE TABLE word_counts AS
+ 5 SELECT word, count(1) AS count FROM
+ 6 (SELECT explode(split(line, '\s')) AS word FROM docs) temp
+ 7 GROUP BY word
+ 8 ORDER BY word;

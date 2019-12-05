@@ -2,3 +2,13 @@ appeared 2016
 type pl
 website https://fennel-lang.org/
 github https://github.com/bakpakin/fennel
+example
+ ;; Sample: read the state of the keyboard and move the player accordingly
+ (local dirs {:up [0 -1] :down [0 1] :left [-1 0] :right [1 0]})
+ (each [key delta (pairs dirs)]
+   (when (love.keyboard.isDown key)
+     (let [[dx dy] delta
+           [px py] player
+           x (+ px (* dx player.speed dt))
+           y (+ py (* dy player.speed dt))]
+       (: world :move player x y))))

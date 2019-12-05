@@ -1,1 +1,19 @@
 type metaLanguage
+example
+ server
+   path: /core/www/
+   host: example.com
+   port: 80
+   service: true
+   proxy
+     host: proxy.example.com
+     port: 8080
+     authentication: plain
+   description
+     :Primary web-facing server
+     :Provides commerce-related functionality
+ 
+ server
+   ...
+   proxy host="proxy.example.com" port="8080"
+     authentication: plain

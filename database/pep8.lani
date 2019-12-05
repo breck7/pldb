@@ -1,3 +1,19 @@
 appeared 2009
 type assembly
 github https://github.com/StanWarford/pep8
+example
+  BR main
+  num: .EQUATE 0 
+  main: SUBSP 2,i 
+  DECI num,s 
+  if: LDA num,s 
+  ANDA 0x0001,i
+  BRNE else
+  STRO even_msg,d 
+  BR endIf
+  else: STRO odd_msg,d 
+  endIf: ADDSP 2,i 
+  STOP
+  odd_msg: .ASCII "The number is: Odd\x00"
+  even_msg: .ASCII "The number is: Even\x00"
+  .END

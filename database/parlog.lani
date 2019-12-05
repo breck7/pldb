@@ -1,3 +1,11 @@
 appeared 1983
 type pl
 wikipedia Parlog
+example
+ mode qsort(list?,sorted_list^).
+ qsort([N|Rest],Sorted) <-
+ partition(N,Rest,LessN,MoreN),
+ qsort(LessN,SortedLess),
+ qsort(MoreN,SortedMore),
+ append(SortedLess,[N|SortedMore],Sorted).
+ qsort([],[]).

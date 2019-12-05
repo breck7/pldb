@@ -1,2 +1,18 @@
 appeared 1988
 type pl
+example
+ <ROUTINE VILLAIN-STRENGTH (OO
+                        "AUX" (VILLAIN <GET .OO ,V-VILLAIN>)
+                        OD TMP)
+      <SET OD <GETP .VILLAIN ,P?STRENGTH>>
+      <COND (<NOT <L? .OD 0>>
+             <COND (<AND <EQUAL? .VILLAIN ,THIEF> ,THIEF-ENGROSSED>
+                    <COND (<G? .OD 2> <SET OD 2>)>
+                    <SETG THIEF-ENGROSSED <>>)>
+             <COND (<AND ,PRSI
+                         <FSET? ,PRSI ,WEAPONBIT>
+                         <EQUAL? <GET .OO ,V-BEST> ,PRSI>>
+                    <SET TMP <- .OD <GET .OO ,V-BEST-ADV>>>
+                    <COND (<L? .TMP 1> <SET TMP 1>)>
+                    <SET OD .TMP>)>)>
+      .OD>

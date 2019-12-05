@@ -1,2 +1,114 @@
 appeared 2007
 type application
+example
+ #!/sbin/openrc-run
+ command=/usr/bin/foo
+ command_args="${foo_args} --bar"
+ pidfile=/var/run/foo.pid
+ name="FooBar Daemon"
+ 
+ description="FooBar is a daemon that eats and drinks"
+ extra_commands="show"
+ extra_started_commands="drink eat"
+ description_drink="Opens mouth and reflexively swallows"
+ description_eat="Chews food in mouth"
+ description_show="Shows what's in the tummy"
+ 
+ _need_dbus()
+ {
+     grep -q dbus /etc/foo/plugins
+ }
+ 
+ depend()
+ {
+     # We write a pidfile and to /var/cache, so we need localmount.
+     need localmount
+     # We can optionally use the network, but it's not essential.
+     use net
+     # We should be after bootmisc so that /var/run is cleaned before
+     # we put our pidfile there.
+     after bootmisc
+ 
+     # Foo may use a dbus plugin.
+     # However, if we add the dbus plugin whilst foo is running and
+     # stop dbus, we don't need to stop foo as foo didn't use dbus.
+     config /etc/foo/plugins
+     local _need=
+     if service_started; then
+         _need=`service_get_value need`
+     else
+         if _need_dbus; then
+            _need="${_need} dbus"
+         fi
+     fi
+     need ${_need}
+ }
+ 
+ # This function does any pre-start setup. If it fails, the service will
+ # not be started.
+ # If you need this function to behave differently for a restart command,
+ # you should check the value of RC_CMD for "restart".
+ # This also applies to start_post, stop_pre and stop_post.
+ start_pre()
+ {
+         if [ "$RC_CMD" = restart ]; then
+                 # This block will only execute for a restart command. Use a
+                 # structure like this if you need special processing for a
+                 # restart which you do not need for a normal start.
+                 # The function can also fail from here, which will mean that a
+                 # restart can fail.
+                 # This logic can also be used in start_post, stop_pre and
+                 # stop_post.
+         fi
+     # Ensure that our dirs are correct
+     checkpath --directory --owner foo:foo --mode 0775 \
+         /var/run/foo /var/cache/foo
+ }
+ 
+ start_post()
+ {
+     # Save our need
+     if _need_dbus; then
+         service_set_value need dbus
+     fi
+ }
+ 
+ stop_post() {
+     # Clean any spills
+     rm -rf /var/cache/foo/*
+ }
+ 
+ drink()
+ {
+     ebegin "Starting to drink"
+     ${command} --drink beer
+     eend $? "Failed to drink any beer :("
+ }
+ 
+ eat()
+ {
+     local result=0 retval= ate= food=
+     ebegin "Starting to eat"
+ 
+     if yesno "${foo_diet}"; then
+         eend 1 "We are on a diet!"
+         return 1
+     fi
+ 
+     for food in /usr/share/food/*; do
+         veinfo "Eating `basename ${food}`"
+         ${command} --eat ${food}
+         retval=$?
+         : $(( result += retval ))
+         [ ${retval} = 0 ] && ate="${ate} `basename ${food}`"
+     done
+ 
+     if eend ${result} "Failed to eat all the food"; then
+         service_set_value ate "${ate}"
+     fi
+ }
+ 
+ show()
+ {
+     einfo "Foo has eaten: `service_get_value ate`"
+ }

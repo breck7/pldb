@@ -1,3 +1,7 @@
 appeared 2010
 type template
 github https://github.com/tj/ejs
+example
+ <% if (user) { %>
+    <h2><%= user.name %></h2>
+ <% } %>

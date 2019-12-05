@@ -1,3 +1,28 @@
 appeared 1997
 type pl
 github https://github.com/racket/scribble
+example
+ #lang scribble/doc
+ @(require scribble/manual "utils.rkt"
+           (for-syntax racket/base)
+           (for-label scribble/manual-struct
+                      version/utils
+                      syntax/quote))
+ 
+ @(define lit-ellipses (racket ...))
+ @(define lit-ellipses+ (racket ...+))
+ 
+ @title[#:tag "manual" #:style 'toc]{Manual Forms}
+ 
+ @defmodulelang[scribble/manual]{The @racketmodname[scribble/manual]
+ language provides all of @racketmodname[scribble/base] plus many
+ additional functions that are specific to writing Racket
+ documentation. It also associates @tech{style properties} with the
+ generated @racket[doc] export to select the default Racket manual
+ style for rendering; see @secref["manual-render-style"] for more
+ information.
+ 
+ The @racketmodname[scribble/manual] name can also be used as a library
+ with @racket[require], in which case it provides all of the same
+ bindings, but without setting the reader or setting the default
+ rendering format to the Racket manual format.}

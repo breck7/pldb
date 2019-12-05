@@ -1,3 +1,8 @@
 appeared 2002
 type grammarLanguage
 wikipedia Parsing_expression_grammar
+example
+ Expr    ← Sum
+ Sum     ← Product (('+' / '-') Product)*
+ Product ← Value (('*' / '/') Value)*
+ Value   ← [0-9]+ / '(' Expr ')'

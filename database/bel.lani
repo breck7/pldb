@@ -1,3 +1,29 @@
 appeared 2019
 type pl
 website http://paulgraham.com/bel.html
+example
+ ; Bel in Bel. 9 October 2019, 9:14 GMT
+ (def no (x)
+   (id x nil))
+ (def atom (x)
+   (no (id (type x) 'pair)))
+ (def all (f xs)
+   (if (no xs)      t
+       (f (car xs)) (all f (cdr xs))
+                    nil))
+ (def some (f xs)
+   (if (no xs)      nil
+       (f (car xs)) xs
+                    (some f (cdr xs))))
+ (def reduce (f xs)
+   (if (no (cdr xs))
+       (car xs)
+       (f (car xs) (reduce f (cdr xs)))))
+ (def cons args
+   (reduce join args))
+ (def append args
+   (if (no (cdr args)) (car args)
+       (no (car args)) (apply append (cdr args))
+                       (cons (car (car args))
+                             (apply append (cdr (car args))
+                                           (cdr args)))))

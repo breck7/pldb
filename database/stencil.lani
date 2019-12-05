@@ -2,3 +2,11 @@ appeared 2018
 type template
 website https://stencil.fuller.li/en/latest/
 github https://github.com/stencilproject/Stencil
+example
+ There are {{ articles.count }} articles.
+ 
+ <ul>
+   {% for article in articles %}
+     <li>{{ article.title }} by {{ article.author }}</li>
+   {% endfor %}
+ </ul>

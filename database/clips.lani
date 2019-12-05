@@ -2,3 +2,18 @@ appeared 1985
 type pl
 website http://www.clipsrules.net/
 wikipedia CLIPS
+example
+  (deftemplate car_problem
+      (slot name)
+      (slot status))
+ 
+  (deffacts trouble_shooting
+      (car_problem (name ignition_key) (status on))
+      (car_problem (name engine) (status wont_start))
+      (car_problem (name headlights) (status work)))
+ 
+  (defrule rule1
+      (car_problem (name ignition_key) (status on))
+      (car_problem (name engine) (status wont_start))
+       =>
+      (assert (car_problem (name starter) (status faulty))))

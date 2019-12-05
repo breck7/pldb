@@ -1,3 +1,81 @@
 appeared 1997
 type pl
 wikipedia SimCode
+example
+ //============================================================
+ //Section 1
+ # ls74 source
+ //1/2- 74LS74 D flip-flop Digital SimCode Model
+ //typical prop delay values from TI 1981 2nd edition data book
+ //============================================================
+ //Section 2
+ INPUTS VCC, GND, PRE, DATA, CLK, CLR;
+ OUTPUTS VCC_LD, PRE_LD, DATA_LD, CLK_LD, CLR_LD, QN, Q;
+ INTEGERS tblIndex;
+ REALS tplh_val, tphl_val, ts_val, th_val, trec_val, tt_val, temp_tp,
+       clk_twl, clk_twh, pre_clr_twl, ril_val, rih_val, ricc_val;
+ PWR_GND_PINS(VCC,GND);     //set pwr_param and gnd_param values
+ SUPPLY_MIN_MAX(4.75,5.25); //test for min supply=4.75 and max supply=5.25
+ VOL_VOH_MIN(0.2,-0.4,0.1); //vol_param=gnd_param+0.2,voh_param=pwr_param-0.4
+ VIL_VIH_VALUE(1.25,1.35);  //set input threshold values: vil and vih
+ IO_PAIRS(PRE:PRE_LD, DATA:DATA_LD, CLK:CLK_LD, CLR:CLR_LD);
+ //Section 3
+ IF (init_sim) THEN
+  BEGIN        //select prop delay, setup, hold, and width times
+   //NOTE: both ttlh and tthl are the same value
+   tt_val= (MIN_TYP_MAX(tt_param: NULL, 5n,  NULL));
+   temp_tp= (PWL_TABLE(sim_temp: -75, -5n, 125, 5n)); //tp temperature affect
+   tplh_val= (MIN_TYP_MAX(tp_param: NULL, 14n, 25n) + temp_tp);
+   tphl_val= (MIN_TYP_MAX(tp_param: NULL, 20n, 40n) + temp_tp);
+   ts_val= (20n);
+   th_val= (5n);
+   trec_val= (5n);
+   clk_twl= (25n);      //not specified - derived from fmax
+   clk_twh= (25n);
+   pre_clr_twl= (20n);
+   //LS stdout drive IOL max=8mA @ VOL typ=0.35V:rol_param=0.35V/8mA=43.75
+   //LS stdout drive IOL max=8mA @ VOL max=0.5V: rol_param=0.5V/8mA=62.5
+   rol_param= (MIN_TYP_MAX(drv_param: 62.5, 43.75,  NULL));
+   //LS stdout drive IOS min=20mA @ VCC max=5.25V: roh_param=5.25V/20mA=262.5
+   //LS stdout drive IOS max=100mA @ VCC max=5.25V:roh_param=5.25V/100mA=52.5
+   roh_param= (MIN_TYP_MAX(drv_param: 262.5, NULL, 52.5));
+   //LS input load IIH max=20uA @ Vin=2.7V: ril= (2.7-vol_param)/20uA=125k
+   ril_val= (MIN_TYP_MAX(ld_param: NULL, NULL, 125k));
+   //LS input load IIL max=-0.4mA @ Vin=0.4V:rih= (voh_param-0.4)/0.4mA=10.5k
+   rih_val= (MIN_TYP_MAX(ld_param: NULL, NULL, 10.5k));
+   //Icc @ 5V: 2500= 4mA/2 typical, 1250= 8mA/2 max
+   ricc_val= (MIN_TYP_MAX(i_param: NULL, 2500, 1250));
+   STATE Q = ONE;            // initialize output states
+   STATE QN = ZERO;
+   EXIT;
+  END;
+ //Section 4
+ DRIVE Q QN = (v0=vol_param,v1=voh_param,ttlh=tt_val,tthl=tt_val);
+ LOAD PRE_LD DATA_LD CLK_LD CLR_LD =
+ (v0=vol_param,r0=ril_val,v1=voh_param,r1=rih_val,io=1e9,t=1p);
+ //Section 5
+ EXT_TABLE tblIndex
+ PRE CLR CLK DATA    Q     QN
+ 0   1   X   X       H     L
+ 1   0   X   X       L     H
+ 0   0   X   X       H     H
+ 1   1   ^   X       DATA  ~DATA
+ 1   1   X   X       Q     ~Q;
+ LOAD VCC_LD = (v0=gnd_param,r0=ricc_val,t=1p);
+ //Section 6
+ IF (warn_param) THEN
+   BEGIN
+     IF (PRE && CLR) THEN
+       BEGIN
+         SETUP_HOLD(CLK=LH DATA Ts=ts_val Th=th_val "CLK->DATA");
+         RECOVER(CLK=LH PRE CLR Trec=trec_val "CLK->PRE or CLR");
+         WIDTH(CLK Twl=clk_twl Twh=clk_twh "CLK");
+         WIDTH(PRE CLR Twl= pre_clr_twl "PRE or CLR");
+       END;
+   END;
+ //Section 7
+ DELAY Q QN =
+   CASE (TRAN_LH) : tplh_val
+   CASE (TRAN_HL) : tphl_val
+ END;
+ EXIT;

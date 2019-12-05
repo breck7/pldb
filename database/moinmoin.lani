@@ -1,2 +1,15 @@
 type textMarkup
 website http://moinmo.in/HelpOnMoinWikiSyntax
+example
+ Table of contents:
+ <<TableOfContents()>>
+ 
+ Table of contents (up to 2nd level headings only):
+ <<TableOfContents(2)>>
+ 
+ = heading 1st level =
+ == heading 2nd level ==
+ === heading 3rd level ===
+ ==== heading 4th level ====
+ ===== heading 5th level =====
+ ====== no heading 6th level ======

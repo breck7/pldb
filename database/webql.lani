@@ -1,2 +1,13 @@
 appeared 2001
 type queryLanguage
+example
+ select
+   URL,
+   clean(CONTENT) as TITLE
+ from
+   links
+ within
+   http://blogsearch.google.com
+   submitting values 'wikipedia' for 'q'
+ where
+   url_host(URL) not matching 'google'

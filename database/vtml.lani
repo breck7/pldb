@@ -1,3 +1,22 @@
 appeared 1997
 type pl
 wikipedia VTML
+example
+ <TAG> <ATTRIBUTES>
+ ... Defines tag attribute properties and behavior
+ </ATTRIBUTES>
+ <ATTRIBCATEGORIES>
+ ... Defines logical grouping for tag attributes
+ </ATTRIBCATEGORIES>
+ 
+ <EDITORLAYOUT>
+ ... Defines the layout of a tag editor
+ </EDITORLAYOUT>
+ 
+ <TAGLAYOUT>
+ ... Defines the tag generation template
+ </TAGLAYOUT>
+ <TAGDESCRIPTION>
+ ... HTML-based documentation for the tag
+ </TAGDESCRIPTION>
+ </TAG>

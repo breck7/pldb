@@ -2,3 +2,15 @@ appeared 2009
 type pl
 website http://chaiscript.com/
 github https://github.com/ChaiScript/ChaiScript
+example
+ #include <chaiscript/chaiscript.hpp>
+ std::string helloWorld(const std::string &t_name) {
+   return "Hello " + t_name + "!";
+ }
+ int main() {
+   chaiscript::ChaiScript chai;
+   chai.add(chaiscript::fun(&helloWorld), "helloWorld");
+   chai.eval(R"(
+     puts(helloWorld("Bob"));
+   )");
+ }

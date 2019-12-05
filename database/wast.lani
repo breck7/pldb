@@ -1,2 +1,10 @@
 appeared 2015
 type pl
+example
+  (module
+   (import "math" "exp" (func $exp (param f64) (result f64)))
+   (func (export "doubleExp") (param $0 f64) (result f64)
+     (f64.mul
+       (call $exp
+         (get_local $0))
+       (f64.const 2))))

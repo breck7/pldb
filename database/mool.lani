@@ -1,3 +1,9 @@
 appeared 2010
 type pl
 website http://rss.di.fc.ul.pt/tools/mool/
+example
+ class File { 
+    usage lin{open; Read} where 
+    Read = lin{eof; <lin{close; end} + lin{read; Read}>};
+  ...
+ }

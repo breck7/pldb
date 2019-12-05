@@ -3,3 +3,16 @@ type bytecode
 website http://webassembly.org/
 github https://github.com/WebAssembly/wabt
 wikipedia WebAssembly
+example
+ 20 00
+ 50
+ 04 7E
+ 42 01
+ 05
+ 20 00
+ 20 00
+ 42 01
+ 7D
+ 10 00
+ 7E
+ 0B

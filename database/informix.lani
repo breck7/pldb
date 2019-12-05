@@ -1,3 +1,7 @@
 appeared 1985
 type queryLanguage
 wikipedia IBM_Informix-4GL
+example
+ SELECT UNIQUE city, state, zipcode, sname
+ FROM customer, state
+ WHERE customer.state = state.code

@@ -1,2 +1,23 @@
 appeared 1975
 type pl
+example
+ coroutine FRUIT_GEN()
+  begin
+  strin g FRUIT ;
+  FRUIT :- 'CHERRY1
+   ;
+  detach ;
+  whil e tru e do
+  case FRUIT of
+  'CHERRY1
+  : FRUIT := 'LEMON1
+   ;
+  'LEMON': FRUIT := 'ORANGE?
+   ;
+  'ORANGE1
+  : FRUIT :- 'APPLE' ;
+  'APPLE': FRUIT :- 'CHERRY' ;
+  end ;
+  detach ;
+  end ;
+  end ;

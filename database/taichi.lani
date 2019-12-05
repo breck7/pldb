@@ -1,2 +1,14 @@
 appeared 2019
 type pl
+example
+ // For CPU
+ Parallelize(int num_threads) // Multi-threading
+ Vectorize(int width) // Loop vectorization
+ // For GPU
+ BlockDim(int blockDim) // Specify GPU block size
+ // For scratchpad optimization
+ AssumeInRange(Expr base, int lower, int upper)
+ Cache(Expr)
+ // Cache data into GPU L1 cache
+ CacheL1(Expr)
+ More discussions on h

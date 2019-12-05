@@ -2,3 +2,7 @@ appeared 2012
 type grammarLanguage
 website http://goldparser.org/
 wikipedia GOLD_(parser)
+example
+ <Statement> ::= if <Expression> then <Statements> end
+             |  while <Expression> do <Statements> end
+             |  for Id = <Range> do <Statements> end

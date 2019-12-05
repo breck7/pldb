@@ -1,3 +1,9 @@
 appeared 2014
 type pl
 github https://github.com/i2y/mochi
+example
+ def factorial(n, m):
+    if n == 1:
+        m
+    else:
+        factorial(n - 1, n * m)

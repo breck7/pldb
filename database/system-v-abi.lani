@@ -1,1 +1,9 @@
 type binaryExecutable
+example
+ Address  Type  Name
+ 00000020  a T_BIT
+ 00000040  a F_BIT
+ 00000080  a I_BIT
+ 20000004  t irqvec
+ 20000008  t fiqvec
+ 2000000c  t InitReset

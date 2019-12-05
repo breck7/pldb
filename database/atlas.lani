@@ -2,3 +2,16 @@ appeared 2005
 type pl
 website https://www.eclipse.org/atl/
 wikipedia ATLAS_Transformation_Language
+example
+ rule TreeNodeRoot2RootElement {
+  from
+    rt : MMTree!Node (rt.isTreeNodeRoot()) 
+  to
+    lstRt : MMElementList!RootElement (
+      name <- rt.name,
+      elements <- elmLst
+    ),
+    elmLst : distinct MMElementList!CommonElement foreach(leaf in rt.getAllChildren())(
+      name <- leaf.name
+    )
+ }

@@ -3,3 +3,25 @@ type pl
 website http://whiley.org/
 github https://github.com/Whiley/WhileyCompiler
 wikipedia Whiley_(programming_language)
+example
+ // Define the type of natural numbers
+ type nat is (int x) where x >= 0
+ public function indexOf(int[] items, int item) -> (int|null index)
+ // If int returned, element at this position matches item
+ ensures index is int ==> items[index] == item
+ // If int returned, element at this position is first match
+ ensures index is int ==> no { i in 0 .. index | items[i] == item }
+ // If null returned, no element in items matches item
+ ensures index is null ==> no { i in 0 .. |items| | items[i] == item }:
+     //
+     nat i = 0
+     //
+     while i < |items|
+     // No element seen so far matches item
+     where no { j in 0 .. i | items[j] == item }:
+         //
+         if items[i] == item:
+             return i
+         i = i + 1
+     //
+     return null

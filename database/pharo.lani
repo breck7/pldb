@@ -2,3 +2,8 @@ appeared 2008
 type pl
 website https://pharo.org/
 wikipedia Pharo
+example
+ Object subclass: #Counter
+  instanceVariableNames: ’count initialValue’
+  classVariableNames: ’’
+  package: ’MyCounter’

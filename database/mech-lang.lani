@@ -1,4 +1,61 @@
 appeared 2018
 type pl
+creators Corey Montella
 website http://mech-lang.org
 github https://github.com/mech-lang/mech
+example
+ # Breakout
+ 
+ ## The Game
+ 
+ game setup
+   #system/timer = [resolution: 15 tick: 0 hours: 0 minutes: 0 seconds: 0]
+   #app/main = [root: "drawing" direction: _ contains: [#game]]
+ 
+ game area
+   #game = [|type     class contains    parameters|
+             #paddle-control
+             "canvas" _     [#elements] [width: 400 height: 400]]
+ 
+ controller slider
+   #paddle-control = [type: "slider" class: _ contains: _ parameters:  [min: 0 max: 300 value: 40]]
+ 
+ draw the game area
+   pos = #paddle-control{1,4}{1,3}
+   start = pos
+   end = pos + 100
+   #elements = [|shape    parameters|
+                 "circle" [cx: #ball.x cy: #ball.y radius: 10 fill: "#000000"]
+                 "line"   [x1: start y1: 350 x2: end y2: 350 stroke: "#000000"]]
+ 
+ ## The Ball
+ 
+ block
+   #ball = [x: 20 y: 20 vx: 1 vy: 3]
+ 
+ update ball position
+   ~ #system/timer.tick
+   #ball.x := #ball.x + #ball.vx
+   #ball.y := #ball.y + #ball.vy
+ 
+ bounce the ball off the paddle
+   ~ #ball.y
+   pos = #paddle-control{1,4}{1,3}
+   start = pos
+   end = pos + 100
+   ix = #ball.y > 340 & #ball.x > start & #ball.x < end & #ball.y < 342
+   #ball.vy{ix} := -#ball.vy
+ 
+ bounce the ball off the ceiling
+   ~ #ball.y
+   #ball.vy{#ball.y < 10} := -#ball.vy
+ 
+ bounce the ball off the walls
+   ~ #ball.x
+   #ball.vx{#ball.x > 390 | #ball.x < 10} := -#ball.vx
+ 
+ reset the ball if it makes it past the paddle
+   ~ #ball.y
+   ix = #ball.y > 390
+   #ball.x{ix} := 20
+   #ball.y{ix} := 20

@@ -1,3 +1,18 @@
 appeared 2002
 type template
 wikipedia Sweave
+example
+ %-------------------------------------------
+ \section{Introduction}
+ %--------------------------------------------
+ 
+ Just a simple introduction to Sweave. 
+ 
+ <<test1>>=
+ a=1
+ b=4
+ a+b
+ print("hello")
+ @
+ 
+ We can call R commands from the text. For example a+b= \Sexpr{a+b}

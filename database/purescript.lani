@@ -2,3 +2,11 @@ appeared 2013
 type pl
 website http://www.purescript.org/
 github https://github.com/purescript/purescript
+example
+ import Prelude
+ import Effect.Console (log)
+ 
+ greet :: String -> String
+ greet name = "Hello, " <> name <> "!"
+ 
+ main = log (greet "World")

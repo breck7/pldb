@@ -1,3 +1,29 @@
 appeared 2017
 type pl
 github https://github.com/yasl-lang/yasl
+example
+ # simple program that iteratively calculates factorials
+ 
+ fn range(a, b) {
+   tmp := []
+   for i := a; i < b; i += 1 {
+     tmp->push(i)
+   }
+ 
+   return tmp
+ }
+ 
+ fn fact(n) {
+   tmp := 1
+   while n > 0 {
+     tmp *= n
+     n -= 1
+   }
+ 
+   return tmp
+ }
+ 
+ 
+ for i <- range(0, 7) {
+   echo "fact(#{i}): #{fact(i)}"
+ }

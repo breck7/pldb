@@ -1,2 +1,26 @@
 appeared 1976
 type assembly
+example
+  ; memcpy --
+  ; Copy a block of memory from one location to another.
+  ;
+  ; Entry registers
+  ;      BC - Number of bytes to copy
+  ;      DE - Address of source data block
+  ;      HL - Address of target data block
+  ;
+  ; Return registers
+  ;      BC - Zero
+ 
+              org     1000h       ;Origin at 1000h
+  memcpy      public
+  loop        ld      a,b         ;Test BC,
+              or      c           ;If BC = 0,
+              ret     z           ;Return
+              ld      a,(de)      ;Load A from (DE)
+              ld      (hl),a      ;Store A into (HL)
+              inc     de          ;Increment DE
+              inc     hl          ;Increment HL
+              dec     bc          ;Decrement BC
+              jp      loop        ;Repeat the loop
+              end

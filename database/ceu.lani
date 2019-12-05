@@ -1,3 +1,12 @@
 appeared 2011
 type pl
 website http://www.ceu-lang.org
+example
+ input int KEY;  
+ par/or do  
+   every 1s do  
+     _printf("Hello World!\n");  
+   end  
+ with  
+   await KEY;  
+ end

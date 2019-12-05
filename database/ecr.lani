@@ -1,3 +1,12 @@
 appeared 2016
 type template
 website https://crystal-lang.org/api/0.22.0/ECR.html
+example
+ # greeting.ecr
+ <%- if @name -%>
+ Greeting, <%= @name %>!
+ <%- else -%>
+ Greeting!
+ <%- end -%>
+ 
+ Greeting.new(nil).to_s #=> Greeting!

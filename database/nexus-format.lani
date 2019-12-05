@@ -1,3 +1,12 @@
 appeared 1997
 type textData
 wikipedia Nexus_file
+example
+ #NEXUS
+ BEGIN TAXA;
+   TAXLABELS A B C;
+ END;
+ 
+ BEGIN TREES;
+   TREE tree1 = ((A,B),C);
+ END;

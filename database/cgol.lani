@@ -1,3 +1,10 @@
 appeared 1973
 type pl
 wikipedia CGOL
+example
+ for i in 1 to n do
+   for k in 1 to n do
+     (ac := 0;
+      for j in 1 to n do
+         ac := ac + a(i,j)*b(j,k);
+      c(i,k) := ac)

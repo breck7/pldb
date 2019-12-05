@@ -1,3 +1,13 @@
 appeared 2012
 type binaryDataFormat
 website https://avro.apache.org/
+example
+ {"namespace": "example.avro",
+  "type": "record",
+  "name": "User",
+  "fields": [
+      {"name": "name", "type": "string"},
+      {"name": "favorite_number",  "type": ["int", "null"]},
+      {"name": "favorite_color", "type": ["string", "null"]}
+  ]
+ }

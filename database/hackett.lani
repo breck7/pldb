@@ -2,3 +2,21 @@ appeared 2017
 type pl
 website https://lexi-lambda.github.io/hackett/
 github https://github.com/lexi-lambda/hackett
+example
+ #lang hackett
+ 
+ (data (Maybe a)
+   Nothing
+   (Just a))
+ 
+ (def x : Integer
+   (let ([y 3]
+         [z 7])
+     {y + z}))
+ 
+ (class (Show a)
+   [show : {a -> String}])
+ 
+ (instance (forall [a] (Show a) => (Show (Maybe a)))
+   [show (λ* [[(Just x)] {"(Just " ++ (show x) ++ ")"}]
+             [[Nothing ] "Nothing"])])

@@ -1,3 +1,17 @@
 appeared 2015
 type pl
 github https://github.com/holgerl/hilvl
+example
+ @ var foo = 42
+ @ var bar = (2 + 40)
+  
+ @ . foo == (@ . bar) then
+  @ set foo = 0
+  
+ @ var myList = 
+  1
+  2
+  3
+  
+ @ . myList loop
+  @ set foo = (@ . foo + (@ . element))

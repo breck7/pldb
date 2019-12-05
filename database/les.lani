@@ -1,2 +1,11 @@
 type grammarLanguage
 website http://loyc.net/les/
+example
+ @[#static]
+ fn factorial(x::int)::int {
+   var result = 1;
+   for (; x > 1; x--) {
+     result *= x;
+   };
+   return result;
+ };

@@ -1,3 +1,14 @@
 appeared 1999
 type pl
 website https://www.isi.edu/isd/LOOM/Stella/index.html
+example
+ (defun (lisp-null-array-symbol-string STRING) ((rank INTEGER))
+   ;; Used in the lisp translation code, insdie a verbatim
+   ;; to return Lisp-specific-code.
+   (CASE rank
+     (1 (return "STELLA::NULL-1D-ARRAY"))
+     (2 (return "STELLA::NULL-2D-ARRAY"))
+     (3 (return "STELLA::NULL-3D-ARRAY"))
+     (4 (return "STELLA::NULL-4D-ARRAY"))
+     (5 (return "STELLA::NULL-5D-ARRAY"))
+     (otherwise (return "STELLA::NULL"))))

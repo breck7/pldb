@@ -1,3 +1,20 @@
 appeared 2013
 type pl
 github https://github.com/seanpringle/reforth
+example
+ begin
+     condition
+     if    operation
+         next
+     end
+     condition1
+     if    operation1
+         leave
+     end
+ end
+ 10 for
+     condition
+     if    operation
+         leave
+     end
+ end

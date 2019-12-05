@@ -2,3 +2,23 @@ appeared 1990
 type pl
 website http://core.tcl.tk/expect/index
 wikipedia Expect
+example
+ # Assume $remote_server, $my_user_id, $my_password, and $my_command were read in earlier
+ # in the script.
+ # Open a telnet session to a remote server, and wait for a username prompt.
+ spawn telnet $remote_server
+ expect "username:"
+ # Send the username, and then wait for a password prompt.
+ send "$my_user_id\r"
+ expect "password:"
+ # Send the password, and then wait for a shell prompt.
+ send "$my_password\r"
+ expect "%"
+ # Send the prebuilt command, and then wait for another shell prompt.
+ send "$my_command\r"
+ expect "%"
+ # Capture the results of the command into a variable. This can be displayed, or written to disk.
+ set results $expect_out(buffer)
+ # Exit the telnet session, and wait for a special end-of-file character.
+ send "exit\r"
+ expect eof

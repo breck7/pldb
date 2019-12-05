@@ -1,3 +1,10 @@
 appeared 2016
 type pl
+creators Christopher Diggins
 github https://github.com/cdiggins/cat-language
+example
+ 1 1 +
+ eq 2
+ ["As I expected!"]
+ ["I need to be repaired!"]
+ if

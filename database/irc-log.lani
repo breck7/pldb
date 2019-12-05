@@ -1,2 +1,12 @@
 appeared 1988
 type application
+example
+ 12:06 Tantek: what does the datetime stamp represent?
+ 12:07 KevinMarks: in iRC, when it was said
+ 12:07 Tantek: is it a point in time *before* they started speaking?
+ 12:07 Tantek: or *after*?
+ 12:07 Tantek: or somewhere in the *middle*?
+ 12:07 KevinMarks: usually it is quantised to seconds
+ 12:07 KevinMarks: and it is time the msg was received
+ 12:07 Tantek: but the second they started typing or pressed return?
+ 12:08 KevinMarks: prssed return i think

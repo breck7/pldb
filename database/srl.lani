@@ -2,3 +2,10 @@ appeared 2016
 type queryLanguage
 website https://simple-regex.com/
 github https://github.com/SimpleRegex/SRL-PHP
+example
+ begin with any of (digit, letter, one of "._%+-") once or more,
+ literally "@",
+ any of (digit, letter, one of ".-") once or more,
+ literally ".",
+ letter at least 2 times,
+ must end, case insensitive

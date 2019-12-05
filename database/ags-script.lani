@@ -1,3 +1,8 @@
 appeared 2001
 type pl
 website http://www.adventuregamestudio.co.uk/site/ags/tutorial/scripting/1/
+example
+ function hDoor_Look()
+ {
+   Display("It's quite a large, ominous looking door.");
+ }

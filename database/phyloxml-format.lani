@@ -2,3 +2,26 @@ appeared 2009
 type xmlFormat
 website http://www.phyloxml.org/
 wikipedia PhyloXML
+example
+  <phyloxml xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+   xsi:schemaLocation="http://www.phyloxml.org http://www.phyloxml.org/1.10/phyloxml.xsd"
+   xmlns="http://www.phyloxml.org">
+   <phylogeny rooted="true">
+      <name>example from Prof. Joe Felsenstein's book "Inferring Phylogenies"</name>
+      <description>MrBayes based on MAFFT alignment</description>
+      <clade>
+         <clade branch_length="0.06">
+            <confidence type="probability">0.88</confidence>
+            <clade branch_length="0.102">
+               <name>A</name>
+            </clade>
+            <clade branch_length="0.23">
+               <name>B</name>
+            </clade>
+         </clade>
+         <clade branch_length="0.4">
+            <name>C</name>
+         </clade>
+      </clade>
+   </phylogeny>
+ </phyloxml>

@@ -2,3 +2,12 @@ appeared 2016
 type pl
 website http://docs.kai-lang.org
 github https://github.com/kai-language/kai
+example
+ /* // github.com/kai-language/issues/116
+ #test "bitcast to struct" {
+     A :: struct {
+         a: rawptr
+     }
+     x : rawptr = nil
+     a := bitcast(A) x
+ } */

@@ -2,3 +2,19 @@ appeared 1993
 type application
 website https://cfengine.com
 wikipedia CFEngine
+example
+ #!/var/cfengine/bin/cf-agent --no-lock
+ body common control
+ {
+   bundlesequence => { "hello_world" };
+ }
+ 
+ bundle agent hello_world
+ {
+   reports:
+ 
+     any::
+ 
+       "Hello World!";
+ 
+ }

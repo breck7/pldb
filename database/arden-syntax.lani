@@ -1,3 +1,57 @@
 appeared 1992
 type metaLanguage
 wikipedia Arden_syntax
+example
+ maintenance:
+  title: To check the diastolic blood pressure of the patient;;
+  mlmname: Hypotension;;
+  arden: version 2.7;;
+  version: 1.00;;
+  institution: Latrobe University Bundoora;;
+  author: Lakshmi Devineni;;
+  specialist: ;;
+  date: 2013-06-02;;
+  validation: testing;;
+ library:
+  purpose: check if the diastolic blood pressure of the patient is within limits;;
+  explanation: This MLM is an example for reading data and writing a message;;
+  keywords: hypotension; categorization;;
+  citations: ;;
+  links: http://en.wikipedia.org/wiki/Hypotension;;
+ knowledge:
+  type: data_driven;;
+  data:
+  /* read the diastolic blood pressure */
+  diastolic_blood_pressure := read last
+  {diastolic blood pressure}; /* the value in braces is specific to your 
+  runtime environment */
+  /* If the height is lower than height_threshold, output a message */
+  diastolic_pressure_threshold := 60;
+  stdout_dest := destination
+  {stdout};
+  ;;
+  evoke: null_event;;
+  logic:
+  if (diastolic_blood_pressure is not number) then
+  conclude false;
+  endif;
+  if (diastolic_blood_pressure >= diastolic_pressure_threshold) then
+  conclude true;
+  else
+  conclude false;
+  endif;
+  ;;
+  action:
+  write "Your Diastolic Blood Pressure is too low (hypotension)"
+  at stdout_dest;
+  ;;
+ resources:
+  default: de
+  ;;
+  language: en
+  'msg' : "The normal range from 60 to 90";
+  ;;
+  language: de
+  'msg' : "Der Normalbereich von 60 bis 90";
+  ;;
+ end:

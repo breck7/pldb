@@ -1,2 +1,56 @@
 appeared 2012
 type pl
+example
+ SAMPLES = "100 101 102 103".split()
+ 
+ REF = "hg19.fa"
+ 
+ rule all:
+ 
+  input: "{sample}.coverage.pdf".format(sample = sample)
+ 
+     for sample in SAMPLES
+ 
+ rule fastq_to_sai:
+ 
+   input: ref = REF, reads = "{sample}.{group}.fastq"
+ 
+   output: temp("{sample}.{group}.sai")
+ 
+   shell: "bwa aln {input.ref} {input.reads} > {output}"
+ 
+ rule sai_to_bam:
+ 
+   input: REF, "{sample}.1.sai", "{sample}.2.sai",
+ 
+      "{sample}.1.fastq", "{sample}.2.fastq"
+ 
+   output: protected("{sample}.bam")
+ 
+   shell: "bwa sampe {input} | samtools view -Sbh - > {output}"
+ 
+ rule remove_duplicates:
+ 
+   input: "{sample}.bam"
+ 
+   output: "{sample}.nodup.bam"
+ 
+   shell: "samtools rmdup {input} {output}"
+ 
+ rule plot_coverage_histogram:
+ 
+   input: "{sample}.nodup.bam"
+ 
+   output: hist = "{sample}.coverage.pdf"
+ 
+   run:
+ 
+     from matplotlib.pyplot import hist, savefig
+ 
+     hist(list(map(int,
+ 
+       shell("samtools mpileup {input} | cut -f4",
+ 
+       iterable = True))))
+ 
+     savefig(output.hist)

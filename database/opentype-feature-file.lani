@@ -1,2 +1,19 @@
 appeared 1996
 type application
+example
+ # Script and language coverage
+ languagesystem DFLT dflt;
+ languagesystem latn dflt;
+ 
+ # Ligature formation
+ feature liga {
+      substitute f i by f_i;
+      substitute f l by f_l;
+ } liga;
+ 
+ # Kerning
+ feature kern {
+      position A Y -100;
+      position a y -80;
+      position s f' <0 0 10 0> t;
+ } kern;

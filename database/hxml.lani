@@ -1,2 +1,20 @@
 appeared 2009
 type application
+example
+ -cp src
+ -dce full
+ 
+ --each
+ 
+ -js bin/homepage.js
+ -main website.HomePage
+ 
+ --next  
+ 
+ -js bin/gallery.js
+ -main website.GalleryPage
+ 
+ --next  
+ 
+ -js bin/contact.js
+ -main website.ContactPage

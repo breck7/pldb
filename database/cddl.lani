@@ -1,2 +1,8 @@
 appeared 2017
 type idl
+example
+ pii = (
+   age: int,
+   name: tstr,
+   employer: tstr,
+ )

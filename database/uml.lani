@@ -1,3 +1,39 @@
 appeared 1996
 type xmlFormat
 wikipedia Unified_Modeling_Language
+example
+ <?xml version="1.0"?>
+ <XMI xmi.version="1.2" xmlns:UML="org.omg/UML/1.4">
+  <XMI.header>
+   <XMI.documentation>
+    <XMI.exporter>ananas.org stylesheet</XMI.exporter>
+   </XMI.documentation>
+   <XMI.metamodel xmi.name="UML" xmi.version="1.4"/>
+  </XMI.header>
+  <XMI.content>
+   <UML:Model xmi.id="M.1" name="address" visibility="public"
+               isSpecification="false" isRoot="false"
+               isLeaf="false" isAbstract="false">
+    <UML:Namespace.ownedElement>
+     <UML:Class xmi.id="C.1" name="address" visibility="public"
+                isSpecification="false" namespace="M.1" isRoot="true"
+                isLeaf="true" isAbstract="false" isActive="false">
+      <UML:Classifier.feature>
+       <UML:Attribute xmi.id="A.1" name="name" visibility="private"
+                      isSpecification="false" ownerScope="instance"/>
+       <UML:Attribute xmi.id="A.2" name="street" visibility="private"
+                      isSpecification="false" ownerScope="instance"/>
+       <UML:Attribute xmi.id="A.3" name="zip" visibility="private"
+                      isSpecification="false" ownerScope="instance"/>
+       <UML:Attribute xmi.id="A.4" name="region" visibility="private"
+                      isSpecification="false" ownerScope="instance"/>
+       <UML:Attribute xmi.id="A.5" name="city" visibility="private"
+                      isSpecification="false" ownerScope="instance"/>
+       <UML:Attribute xmi.id="A.6" name="country" visibility="private"
+                      isSpecification="false" ownerScope="instance"/>
+      </UML:Classifier.feature>
+     </UML:Class>
+    </UML:Namespace.ownedElement>
+   </UML:Model>
+  </XMI.content>
+ </XMI>

@@ -1,3 +1,17 @@
 appeared 1984
 type idl
 wikipedia Abstract_Syntax_Notation_One
+example
+ FooProtocol DEFINITIONS ::= BEGIN
+ 
+     FooQuestion ::= SEQUENCE {
+         trackingNumber INTEGER,
+         question       IA5String
+     }
+ 
+     FooAnswer ::= SEQUENCE {
+         questionNumber INTEGER,
+         answer         BOOLEAN
+     }
+ 
+ END

@@ -2,3 +2,5 @@ appeared 1995
 type grammarLanguage
 website http://gema.sourceforge.net/new/index.shtml
 wikipedia General-purpose_macro_processor
+example
+ gema -match -p 'Title\:*\n=$0@end' foo

@@ -1,2 +1,6 @@
 appeared 1965
 type queryLanguage
+example
+ IF (x AUTHORED PAPER y)
+ AND (y SUBJECT INDEXED UNDER pattern recognition)
+ THEN (x CONDUCTS RESEARCH ON pattern recognition)

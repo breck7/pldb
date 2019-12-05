@@ -1,2 +1,12 @@
 appeared 2001
 type metaLanguage
+example
+ /*
+  * JSLint's implementation of JSHint
+  * The JSLint options and makeup of this file were created based on the documentation of JSLint by
+  * Douglas Crockford: http://www.jslint.com/lint.html
+  */
+ 
+ {
+   "foobar" : true,       // Not checked in JSHint
+ }

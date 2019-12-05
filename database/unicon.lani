@@ -2,3 +2,10 @@ appeared 2008
 type pl
 website http://www.unicon.org/
 wikipedia Unicon_(programming_language)
+example
+ procedure main()
+  w := open("test UNICON window", "g")
+  write(w, "Hello, World!")
+  read(w)
+  close(w)
+ end

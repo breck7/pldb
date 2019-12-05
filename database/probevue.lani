@@ -1,2 +1,9 @@
 appeared 2008
 type pl
+example
+ @@syscall:*:read:entry
+ when ( __pid == 123456)
+ {
+    /* This is a comment: The process with a PID of 123456 has called read(); */
+    printf("read() system call entered.\n");
+ }

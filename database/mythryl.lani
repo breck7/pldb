@@ -2,3 +2,5 @@ appeared 2006
 type pl
 website https://mythryl.org
 github https://github.com/mythryl/mythryl
+example
+ fun qsort [] => [];  qsort (x!xs) => qsort (filter {. #a < x; } xs) @ [x] @ qsort (filter {. #a >= x; } xs);  end;

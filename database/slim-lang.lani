@@ -2,3 +2,15 @@ appeared 2011
 type template
 website http://slim-lang.com/
 github https://github.com/slim-template/slim
+example
+ doctype html
+ html
+   head
+     title Slim Examples
+     meta name="keywords" content="template language"
+     meta name="author" content=author
+     javascript:
+       alert('Slim supports embedded javascript!')
+ 
+   body
+     h1 Markup examples

@@ -1,1 +1,14 @@
 type pl
+example
+ import syntax/attributes
+ import doc
+ define cool [
+     @[documentation [
+         title "Be cool"
+         description "Use this function to be really cool."
+         usage "how cool"
+         example "600 cool"
+         tags [very cool]
+     ]]
+     1337 add
+ ]

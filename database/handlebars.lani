@@ -1,3 +1,10 @@
 appeared 2010
 type template
 website http://handlebarsjs.com/
+example
+ <div class="entry">
+  <h1>{{title}}</h1>
+  <div class="body">
+    {{body}}
+  </div>
+ </div>

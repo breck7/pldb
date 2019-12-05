@@ -1,3 +1,9 @@
 appeared 2018
 type pl
 github https://github.com/Ratstail91/Toy
+example
+ if (1 < 2) {
+  print "this will print to the console";
+ } else {
+  print "this will not";
+ }

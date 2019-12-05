@@ -1,2 +1,8 @@
 appeared 2004
 type template
+example
+ <ul>
+   <% @products.each do |p| %>
+      <li><%=  @p.name %></li>
+   <% end %>
+ </ul>

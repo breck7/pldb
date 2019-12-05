@@ -2,3 +2,32 @@ appeared 2018
 type pl
 website https://spatial-lang.org/
 github https://github.com/stanford-ppl/spatial
+example
+ import spatial.dsl._
+ 
+ @spatial object HelloSpatial extends SpatialApp {
+   def main(args: Array[String]): Void = {
+     // Create ArgIn
+     val x = ArgIn[Int]
+     
+     // Set `x` to the value of the first command line argument
+     setArg(x, args(0).to[Int])
+     
+     Accel {
+       // Create 16x32 SRAM and a Register
+       val s = SRAM[Int](16,32)
+       val r = Reg[Int]
+       
+       // Loop over each element in SRAM
+       Foreach(16 by 1, 32 by 1){(i,j) => 
+         s(i,j) = i + j
+       }
+       // Store element into the register, based on the input arg
+       r := s(x,x)
+ 
+       // Print value of register (only shows in Scala simulation)
+       println(r"Value of SRAM at (${x.value},${x.value}) is ${r.value}")
+     }
+ 
+   }
+ } 

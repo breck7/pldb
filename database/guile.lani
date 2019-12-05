@@ -2,3 +2,8 @@ appeared 1993
 type pl
 website https://www.gnu.org/software/guile/
 wikipedia GNU_Guile
+example
+ ;;; Hello world program
+ (define name "World")
+ (display (string-append "Hello " name "!"))
+ (newline)

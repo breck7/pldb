@@ -2,3 +2,13 @@ appeared 2009
 type esolang
 website http://blog.fogus.me/2009/03/26/baysick-a-scala-dsl-implementing-basic/
 github https://github.com/fogus/baysick
+example
+ object SquareRoot extends Baysick {
+   def main(args:Array[String]) = {
+     10 PRINT "Enter a number"
+     20 INPUT 'n
+     30 PRINT "Square root of " % "'n is " % SQRT('n)
+     40 END
+     RUN
+   }
+ }

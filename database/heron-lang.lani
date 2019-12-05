@@ -1,4 +1,13 @@
 appeared 2016
 type pl
+creators Christopher Diggins
 website https://cdiggins.github.io/heron-language
 github https://github.com/cdiggins/heron-language
+example
+ // Named function with statement body
+ function sum(xs) {
+     var result = 0;
+     for (var x in xs)
+         result += x;
+     return result;
+ }

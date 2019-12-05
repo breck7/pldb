@@ -2,3 +2,10 @@ appeared 1997
 type pl
 website http://www.jirka.org/genius.html
 wikipedia Genius_(mathematics_software)
+example
+ function f(x) = (
+  if x <= 1 then
+    1
+  else
+    (f(x-1)*x)
+ )

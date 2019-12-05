@@ -1,2 +1,15 @@
 appeared 1998
 type pl
+example
+ CASE TW OF
+  1: DISPLAY := OVEN_TEMP;
+  2: DISPLAY := MOTOR_SPEED;
+  3: DISPLAY := GROSS_TARE;
+   QW4 := 16#0003;
+  4..10:DISPLAY := INT_TO_DINT (TW);
+   QW4 := 16#0004;
+  11,13,19:DISPLAY:= 99;
+   QW4 := 16#0005;
+ ELSE: DISPLAY := 0;
+  TW_ERROR := 1;
+ END_CASE;

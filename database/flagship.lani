@@ -1,3 +1,31 @@
 appeared 1986
 type pl
 website http://www.flagship.de/
+example
+ ** File: hello1.prg         // your first program
+ ? "Hello world!"            // similar to printf("\nHello world!")
+ wait                        // wait for user prompt before closing the application
+ 
+ ** File: hello2.prg         // your second application
+ set color to "W+/B"         // set color white on blue
+ @ 5,10 TO 9,30              // draw box
+ @ 7,12 SAY "hello world"    // print text on given coordinates
+ key = inkey(5)              // wait for key press within 5 seconds
+ 
+ ** File: dbf1.prg           // handles available/creates new database
+ #include "fspreset.fh"      // converts all file names to lower case
+ PARAMETER par1              // accepts command-line parameters 
+ dbname := IF(EMPTY(par1), "mydbf1", par1)       // set default if required 
+ IF .NOT. FILE(dbname + ".dbf")                  // database available?
+   DBCREATE(dbname, {{"Name",    "C", 25, 0}, ;  //  not yet, so
+                     {"Address", "C", 30, 0}, ;  //  create a new
+                     {"Born",    "D",  8, 0}, ;  //  database, here
+                     {"Note",    "M", 10, 0}} )  //  with 4 fields
+ ENDIF
+ USE (dbname) SHARED         // open the given database or mydbf1.dbf
+ IF !USED()                  // check the success
+    ? "sorry, cannot open", dbname
+    QUIT                     // abort the execution
+ ENDIF
+ BROWSE ()                   // browse/edit
+ QUIT                        // exit back to command line

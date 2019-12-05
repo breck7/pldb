@@ -1,3 +1,15 @@
 appeared 2017
 type ir
 website http://dlvm.org/
+example
+ // Dimension-erased functions are flexible because input shapes are dynamic.
+ // They may be slower and less optimized than their shape-specialized counterparts.
+ 
+ // f(x, w, b) = dot(x, w) + pad(b, at: 0)
+ func @f: (<_ x _ x f32>, <_ x _ x f32>, <_ x f32>) -> <_ x _ x f32> {
+ 'entry(%x: <_ x _ x f32>, %w: <_ x _ x f32>, %b: <_ x f32>):
+     %0.0 = dot %x: <_ x _ x f32>, %w: <_ x _ x f32>
+     %0.1 = padShape %b: <_ x f32> at 0
+     %0.2 = add %0.0: <_ x _ x f32>, %0.1: <1 x _ x f32>
+     return %0.2: <_ x _ x f32>
+ }

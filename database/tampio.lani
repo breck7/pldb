@@ -1,3 +1,16 @@
 appeared 2017
 type pl
 github https://github.com/fergusq/tampio
+example
+  Pienen luvun kertoma on
+       riippuen siitä, onko se pienempi tai yhtä suuri kuin yksi,
+       joko yksi
+       tai pieni luku kerrottuna pienen luvun edeltäjän kertomalla.
+   
+   Luvun edeltäjä on se vähennettynä yhdellä.
+   
+   Olkoon pieni muuttuja uusi muuttuja, jonka arvo on nolla.
+   
+   Kun nykyinen sivu avautuu,
+       pieneen muuttujaan luetaan luku
+       ja nykyinen sivu näyttää pienen muuttujan arvon kertoman.

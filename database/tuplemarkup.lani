@@ -1,3 +1,9 @@
 appeared 2012
 type textMarkup
 github https://github.com/judnich/TupleMarkup
+example
+ [html |
+     Hello. This is an example [b|language] test.
+  [ div [class testc] | And this text is enclosed in a div. ]
+  [ a [href google.com] | Click this link [i|now] ]
+ ]

@@ -1,2 +1,5 @@
 appeared 2002
 type pl
+example
+ _num = 10;
+ _num = _num + 20; systemChat str _num;

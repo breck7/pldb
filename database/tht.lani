@@ -2,3 +2,36 @@ appeared 2017
 type pl
 website https://tht-lang.org/
 github https://github.com/joelesko/tht
+example
+ // Familiar variable and List syntax.
+ $colors = ['red', 'blue', 'green'];
+ // New JSON-style syntax for Maps
+ $colorHex = {
+     red:   '#FF0000',
+     green: '#00FF00',
+     blue:  '#0000FF',
+ };
+ // Built-in types have methods using
+ // the mainstream 'dot' syntax.
+ $colors.push('purple');
+ // Extra parens aren't needed.
+ if $colors.length() > 3 {
+     $colors.pop();
+ }
+ // The standard library is organized
+ // into modules.
+ Response.sendPage({
+     title: 'Colors',
+     body: bodyHtml($colors),
+ });
+ // Template Functions let you organize
+ // your output (views) however you like.
+ // (e.g. by component, module, file, etc.)
+ template bodyHtml($colors) {
+     <h1>Colors</>
+     <ul>
+     -- foreach $colors as $c {
+         <li>{{ $c.toUpperCaseFirst() }}</>
+     -- }
+     </>
+ }

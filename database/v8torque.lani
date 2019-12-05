@@ -1,2 +1,22 @@
 appeared 2018
 type pl
+example
+  macro LoadDataViewUint32(buffer: JSArrayBuffer, offset: intptr,
+                    requested_little_endian: bool,
+                    signed: constexpr bool): Number {
+   let data_pointer: RawPtr = buffer.backing_store;
+ 
+   let b0: uint32 = LoadUint8(data_pointer, offset);
+   let b1: uint32 = LoadUint8(data_pointer, offset + 1);
+   let b2: uint32 = LoadUint8(data_pointer, offset + 2);
+   let b3: uint32 = LoadUint8(data_pointer, offset + 3);
+   let result: uint32;
+ 
+   if (requested_little_endian) {
+     result = (b3 << 24) | (b2 << 16) | (b1 << 8) | b0;
+   } else {
+     result = (b0 << 24) | (b1 << 16) | (b2 << 8) | b3;
+   }
+ 
+   return convert<Number>(result);
+ }

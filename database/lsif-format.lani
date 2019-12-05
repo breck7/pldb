@@ -2,3 +2,20 @@ appeared 2019
 type jsonFormat
 website https://lsif.dev/
 github https://github.com/lsif/lsif.github.io
+example
+ // a vertex representing the document
+ { id: 1, type: "vertex", label: "document", uri: "file:///Users/username/sample.ts", languageId: "typescript" }
+ // a vertex representing the range for the identifier bar
+ { id: 4, type: "vertex", label: "range", start: { line: 0, character: 9}, end: { line: 0, character: 12 } }
+ // an edge saying that the document with id 1 contains the range with id 4
+ { id: 5, type: "edge", label: "contains", outV: 1, inV: 4}
+ // a vertex representing the actual hover result
+ { id: 6, type: "vertex", label: "hoverResult",
+   result: {
+     contents: [
+       { language: "typescript", value: "function bar(): void" }
+     ]
+   }
+ }
+ // an edge linking the hover result to the range.
+ { id: 7, type: "edge", label: "textDocument/hover", outV: 4, inV: 6 }

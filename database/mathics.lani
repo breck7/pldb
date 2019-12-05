@@ -2,3 +2,5 @@ appeared 2012
 type pl
 website https://mathics.github.io/
 github https://github.com/mathics/Mathics
+example
+ StringJoin[Riffle[Map[ToString, Table[Fibonacci[i], {i,16}]], ", "]] <> "..."

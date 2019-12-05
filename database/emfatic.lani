@@ -1,3 +1,18 @@
 appeared 2004
 type pl
 website https://www.eclipse.org/epsilon/doc/articles/emfatic/
+example
+ package test;
+ 
+ datatype D1 : int;
+ 
+ package P {
+   datatype D2 : int;
+ }
+ 
+ class C {
+   attr D1 d1;
+   attr P.D2 d2;
+   attr ecore.EString s1;
+   attr String s2;
+ }

@@ -1,3 +1,8 @@
 appeared 2010
 type pl
 website http://o42a.org/
+example
+ Use namespace 'Console'
+ @Main (
+   Print "Hello, World!" nl
+ )

@@ -2,3 +2,8 @@ appeared 2018
 type pl
 website https://never-lang.readthedocs.io
 github https://github.com/never-lang/never
+example
+ func main() -> float
+ {
+    100.0 * 1.8 + 32.0
+ }

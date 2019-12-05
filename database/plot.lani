@@ -1,3 +1,16 @@
 appeared 2019
 type template
 github https://github.com/JohnSundell/Plot
+example
+ let html = HTML(
+     .head(
+         .title("My website"),
+         .stylesheet("styles.css")
+     ),
+     .body(
+         .div(
+             .h1("My website"),
+             .p("Writing HTML in Swift is pretty great!")
+         )
+     )
+ )

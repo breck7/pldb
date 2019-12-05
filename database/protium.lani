@@ -1,3 +1,16 @@
 appeared 2007
 type pl
+creators Diarmuid Pigott
 website http://www.protiumblue.com/
+example
+ <@ DEFAREFLE>pleac</@>
+ <@ DEFFLELIT>pleac|C:\Documents and Settings\All Users\Documents\Projects\PLEAC\pleac_perl.data</@>
+ <@ ITEENUFLELIT>pleac|
+ <@ LETVARELTFLE>aLine|...</@>
+ <@ TSTRXPVARLIT>aLine|# \^\^PLEAC\^\^_(\d+\.\d+)</@>
+ <@ IFF><@ LETVARKEY>number|__Reg1</@>
+ <@ ACTSNKLIT>__Off</@>
+ <@ ACTSNKEMMLIT>pleac_perl_&number;.p</@>
+ </@>
+ <@ SAYVAR>aLine</@>
+ </@>

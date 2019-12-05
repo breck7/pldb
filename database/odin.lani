@@ -2,3 +2,26 @@ appeared 2016
 type pl
 website https://odin-lang.org
 github https://github.com/odin-lang/Odin
+example
+ package main
+ 
+ import "core:fmt"
+ 
+ main :: proc() {
+  program := "+ + * 😃 - /";
+  accumulator := 0;
+ 
+  for token in program {
+    switch token {
+    case '+': accumulator += 1;
+    case '-': accumulator -= 1;
+    case '*': accumulator *= 2;
+    case '/': accumulator /= 2;
+    case '😃': accumulator *= accumulator;
+    case: // Ignore everything else
+    }
+  }
+ 
+  fmt.printf("The program \"%s\" calculates the value %d\n",
+             program, accumulator);
+ }

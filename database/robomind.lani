@@ -2,3 +2,9 @@ appeared 2005
 type pl
 website http://www.robomind.net
 wikipedia RoboMind
+example
+ paintWhite
+ repeat(4) {
+     forward(2)
+     right
+ }
