@@ -1,3 +1,336 @@
 appeared 2017
 type pl
-website https://idyll-lang.github.io
+website https://idyll-lang.org/
+github https://github.com/idyll-lang/idyll
+example
+ [meta
+   title:"How To: Tune a Guitar"
+   description:"An interactive audio guide with guitars and a little music theory."
+   twitterHandle:"mathisonian"
+   shareImageUrl:"https://mathisonian.github.io/idyll/how-to-tune-a-guitar/images/share.png"
+   shareImageWidth:"1940"
+   shareImageHeight:"970"
+   /]
+ 
+ 
+ [Header
+   title:"Tune a Guitar"
+   authors:`[{
+     name: "Matthew Conlen",
+     link: "https://twitter.com/mathisonian"
+   }, {
+     name: "Alex Kale",
+     link: "https://github.com/kalealex"
+   }]` /]
+ 
+ 
+ 
+ [var name:"currentFrequency" value:108 /]
+ [var name:"guitarState" value:"default" /]
+ [var name:"fft" value:` null ` /]
+ [var name:"waveform" value:` null ` /]
+ [var name:"isInTune" value:false /]
+ 
+ [var name:"clean" value:false /]
+ 
+ [var name:"playRiff" value:false /]
+ [var name:"playReference" value:false /]
+ [var name:"detuneGuitar" value:false /]
+ [var name:"autotuneGuitar" value:false /]
+ [var name:"playNotes" value:false /]
+ [var name:"playBeats" value:false /]
+ 
+ [var name:"playScale" value:false /]
+ [var name:"beatDiff" value:5 /]
+ 
+ [var name:"tunerVisualization" value:true /]
+ 
+ [var name:"targetNote" value:"E2" /]
+ [derived name:"targetString" value:`{ E2: 0, A2: 1, D3: 2, G3: 3, B3: 4, E4: 5 }[targetNote]` /]
+ 
+ [Fixed]
+   [Guitar
+     src:"images/svg/guitar.svg"
+     currentFrequency:currentFrequency
+     state:guitarState
+     targetNote:targetNote
+     fft:fft
+     waveform:waveform
+     playRiff:playRiff
+     isInTune:isInTune
+     clean:clean
+     detuneGuitar:detuneGuitar
+     autotuneGuitar:autotuneGuitar
+     playReference:playReference
+     tunerVisualization:tunerVisualization
+     playNotes:playNotes
+     playScale:playScale
+     playBeats:playBeats
+     beatDiff:beatDiff
+      /]
+ [/Fixed]
+ 
+ 
+ [section]
+ # A Sad Guitar.
+ 
+ Take a second and strum the guitar. It doesn't sound
+ so good, does it?
+ 
+ We've just taken it out of storage and *it's all out of tune...*
+ 
+ [/section]
+ 
+ [section onEnterViewFully:`guitarState = 'headstock'; playScale = false;`]
+ # Electric Tuner to the Rescue.
+ 
+ Tune the guitar using the tuner. Click and drag the tuning
+ knobs on the right to tighten and loosen the strings.
+ // Need a reward state to let them know when a string is in tune
+ 
+ [Tuner selectedString:targetString currFreq:currentFrequency /]
+ 
+ [conditional if:isInTune]
+ Great work, scroll on.
+ [/conditional]
+ 
+ [/section]
+ 
+ [section onEnterViewFully:`guitarState = null; playScale = false; `]
+ 
+ [conditional if:isInTune]
+ 
+ # A Sigh of Relief.
+ 
+ That sounds so much better! What a difference a few hertz make. Go ahead and
+ play a little something.
+ 
+ // audio clip of guitar shredding
+ 
+ [div className:"centered"]
+ [button onClick:`playRiff = true `]
+   Play a lick.
+ [/button]
+ [/div]
+ [/conditional]
+ 
+ 
+ [conditional if:`!isInTune `]
+ 
+ # Keep at it.
+ // the text in this section should depend on whether or not the guitar is in tune
+ This doesn't sound in tune quite yet. Scroll back up and try to get all of the tuning knobs to turn green.
+ 
+ [/conditional]
+ 
+ [/section]
+ 
+ [section onEnterViewFully:`guitarState = 'pickups'; playScale = true; `]
+ # How does this thing work?
+ 
+ Guitars generate noise through the vibration of their strings. On an electric guitar such as this one,
+ magnetic "pick-ups" convert those vibrations into an electrical signal which can then be sent to a tuner or an amplifier.
+ 
+ 
+ [var name:"waveInView" value:false /]
+ [WaveVisualizer
+   waveform:waveform
+   inView:waveInView
+   onEnterView:`waveInView = true `
+   onExitViewFully:`waveInView = false ` /]
+ 
+ This signal can be [visualized as a raw waveform](https://pudding.cool/2018/02/waveforms/), but
+ often we want to visualize the frequency instead. The [fourier transform](https://jackschaedler.github.io/circles-sines-signals/dft_introduction.html) is a mathematical  function
+ that reveals the audio frequencies hidden in that wave.
+ 
+ [var name:"freqInView" value:false /]
+ [FreqViz
+   fft:fft
+   inView:freqInView
+   onEnterView:`freqInView = true `
+   onExitViewFully:`freqInView = false ` /]
+ 
+ 
+ Strum the guitar to see the frequency
+ visualized.
+ 
+ [/section]
+ 
+ [section onEnterViewFully:`guitarState = null; playReference = false; `]
+ 
+ # Tuning by Ear.
+ 
+ Now that we've tuned the guitar using a tuner, let's try to tune the guitar by ear.
+ This is more challenging, and it may take you time to master.
+ 
+ [/section]
+ 
+ [notification onEnterViewFully:` detuneGuitar = true; `]
+ The guitar is out of tune again!
+ [/notification]
+ 
+ [section onEnterViewFully:`guitarState = 'headstock'; playReference = true; tunerVisualization = false; `]
+ # Match the Reference.
+ 
+ We'll start by tuning to a reference note. When you manipulate the tuners on the
+ right the current note will be played, as will a reference note.
+ 
+ [div className:"centered"]
+ [button onClick:` clean = !clean `]
+   [Display value:`clean ? "Turn distortion on." :  "Turn distortion off." `  /]
+ [/button]
+ [/div]
+ 
+ This will be easier with a cleaner sound. Match the two
+ sounds to get the guitar in tune.
+ 
+ [/section]
+ 
+ [section onEnterView:`playReference = false; autotuneGuitar = true; ` ]
+ 
+ # Tuning Techniques.
+ 
+ ## Harmonic Intervals.
+ // audio clip in text to illustrate intervals
+ // guitar in tune here
+ 
+ Most of the strings on a guitar are separated by an interval known as a *perfect fourth*.
+ 
+ [div className:"centered"]
+ [button className:"interval" onClick:` playNotes = 'E2:A2' `]
+ ♬ E2-A2
+ [/button]
+ [button className:"interval" onClick:` playNotes = 'A2:D3' `]
+ ♬ A2-D3
+ [/button]
+ [button className:"interval" onClick:` playNotes = 'D3:G3' `]
+ ♬ D3-G3
+ [/button]
+ [button className:"interval" onClick:` playNotes = 'B3:E4' `]
+ ♬ B3-E4
+ [/button]
+ [/div]
+ 
+  The perfect fourth is beautifully resonant, but there's one pair of strings on a guitar which are not separated by a perfect fourth.
+ 
+  The interval between the [equation]G[/equation] and [equation]B[/equation] strings is a *major third*. The major third sounds happy and uplifting.
+ 
+ [div className:"centered"]
+ [button className:"interval" onClick:` playNotes = 'G3:B3' `]
+ ♬ G3-B4
+ [/button]
+ [/div]
+ These intervals show up all the time in music, for example, the major third can be found the first two notes of  [The Saints](https://en.wikipedia.org/wiki/ When_the_Saints_Go_Marching_In). The first two notes of [Amazing Grace](https://en.wikipedia.org/wiki/Amazing_Grace) form a perfect fourth.
+ 
+ Learning to hear these intervals will help you tune your guitar without a tuner.
+ 
+ ## Find the beat.
+ 
+ [p onEnterViewFully:` clean = true ` ]
+ When two strings are played together, they produce a third higher frequency known as an overtone.
+ [/p]
+ 
+ // This overtune frequency is the least common multiple of the two component frequencies, which is amplified by the confluence of the two sound waves.
+ 
+ // For the purpose of tuning a guitar by ear, you just need to recognize that when two strings are played together they result in a higher frequency. We can see this  amplified overtone on the righthand side of the frequency visualizer.
+ // show frequency visualizer here? trigger example?
+ // However, when the two strings are not perfectly in tune, the overtone is amplified inconsistently over time.
+ // This produces a rhythmic pulsing or "beats" in the overtone which you can hear if you listen carefully.
+ 
+ When the two strings are not perfectly in tune, the overtone is inconsistent over time. This produces a wobbling, *a beat*, in the overtone which you can hear if you  listen carefully.
+ 
+ Play notes with a [Dynamic value:beatDiff min:0 max:20 step:0.05 /] Hz difference:
+ 
+ [div className:"centered"]
+   [button onClick:` playBeats = true; ` ]
+     Listen for the beats!
+   [/button]
+   [button onClick:` clean = !clean `]
+     [Display value:`clean ? "Turn distortion on." :  "Turn distortion off." `  /]
+   [/button]
+ [/div]
+ 
+ // These beats also show up in the frequency visualizer.
+ // here, an illustrative example of beats changing with intonation would be nice
+ // will find audio file
+ [var name:"freq3InView" value:false /]
+ [FreqViz
+   fft:fft
+   inView:freq3InView
+   showBeats:false
+   onEnterView:`freq3InView = true `
+   onExitViewFully:`freq3InView = false ` /]
+ 
+ As you get a pair of strings closer in tune, the beats will slow down until the overtone is perfectly amplified.
+ Listening for the slowing of these beats is a helpful cue for tuning.
+ 
+ [/section]
+ 
+ [section]
+ 
+ # Practice makes perfect.
+ 
+ Try tuning the guitar by listening for the relationships between adjacent strings and the beats in the resultant overtone.
+ 
+ [var name:"vizMode" value:0 /]
+ [div className:"centered"]
+ 
+ [button onClick:` vizMode = (vizMode + 1) % 3 `]
+   [Display value:`["Show tuner", "Show wave", "Show frequencies"][vizMode] `  /]
+ [/button]
+ [button onClick:` clean = !clean `]
+   [Display value:`clean ? "Add distortion" :  "Remove distortion" `  /]
+ [/button]
+ [button className:"tune-action" onClick:` autotuneGuitar = true `]
+ Tune Guitar
+ [/button]
+ [button className:"tune-action" onClick:` detuneGuitar = true `]
+ Detune Guitar
+ [/button]
+ [/div]
+ 
+ [div className:"centered"]
+ [/div]
+ 
+ 
+ [var name:"freq2InView" value:false /]
+ [div style:`{display: vizMode === 0 ? 'block' : 'none'}`]
+ [FreqViz
+   fft:fft
+   inView:freq2InView
+   onEnterView:`freq2InView = true `
+   onExitViewFully:`freq2InView = false ` /]
+ [/div]
+ 
+ [div style:`{display: vizMode === 1 ? 'block' : 'none'}`]
+   [Tuner selectedString:targetString currFreq:currentFrequency /]
+ [/div]
+ 
+ 
+ [div style:`{display: vizMode === 2 ? 'block' : 'none'}`]
+   [WaveVisualizer waveform:waveform inView:`vizMode === 2` /]
+ [/div]
+ 
+ 
+ 
+ 
+ [/section]
+ 
+ 
+ [section]
+ 
+ # About this.
+ 
+ This page was built using [Idyll](https://idyll-lang.org), a
+ markup language for interactive documents. The guitar was
+ created using [Sketch Interactive Export](https://github.com/mathisonian/sketch-interactive-export),
+  [D3](http://d3js.org/), and a modified version of [Tone.js](https://tonejs.github.io/). Audio samples were
+  provided by [freesound.org user SpeedY](https://freesound.org/people/SpeedY/).
+ 
+ This project
+ is from the [Interactive Data Lab](https://idl.cs.washington.edu/) at the [University of Washington](https://www.cs.washington.edu/).
+ 
+ [/section]
+ 
+ 
+ [analytics google:"UA-108267630-1" /]

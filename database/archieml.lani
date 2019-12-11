@@ -1,3 +1,30 @@
 appeared 2015
 type metaLanguage
 website http://archieml.org/
+example
+ [days]
+ * Sunday
+ note: holiday!
+ * Monday
+ * Tuesday
+ 
+ Whitespace is still fine around the '*'
+   *   Wednesday
+ 
+ * Thursday
+ 
+ Friday!
+ * Friday
+ * Saturday
+ []
+ [+books]
+ kicker: Books you should read
+ 
+ score: ★★★★★!!!
+ title: Wuthering Heights
+ author: Emily Brontë
+ 
+ title: Middlemarch
+ author: George Eliot
+ score: ★★★★☆
+ []

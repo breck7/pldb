@@ -2,3 +2,11 @@ appeared 2017
 type textMarkup
 website https://mdxjs.com/
 github https://github.com/mdx-js/mdx
+example
+ import { Chart } from '../components/chart'
+ 
+ # Here’s a chart
+ 
+ The chart is rendered inside our MDX document.
+ 
+ <Chart />

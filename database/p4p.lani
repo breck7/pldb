@@ -1,0 +1,29 @@
+appeared
+type pl
+website http://shriram.github.com/p4p/
+github https://github.com/shriram/p4p
+example
+ defvar: m = 10
+ defvar: this-better-be-6 = add(1, 2, 3)
+ defvar: this-better-be-0 = add()
+ deffun: five() = 5
+ deffun: trpl(x) = add(x, x, x)
+ deffun: g(a, b, c) = add(a, b, c)
+ deffun: d/dx(f) =
+ 
+   defvar: delta = 0.001
+ 
+   fun: (x) in:
+ 
+     div(sub(f(add(x, delta)),
+ 
+             f(x)),
+ 
+         delta)
+  deffun: fib(n) =
+    if: numeq(n, 0)
+      1
+    elseif: numeq(n, 1)
+      1
+    else:
+      add(fib(sub1(n)), fib(sub(n, 2)))

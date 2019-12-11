@@ -1,0 +1,23 @@
+appeared 2015
+type template
+website https://mavo.io/
+github https://github.com/mavoweb/mavo
+example
+ <main mv-app="todo" mv-storage="local" mv-mode="edit">
+  <header>
+    <h1>My tasks</h1>
+    <p>[count(done)] done out of [count(task)] total</p>
+  </header>
+ 
+  <ul>
+    <li property="task" mv-multiple>
+      <label>
+        <input property="done" type="checkbox" />
+        <span property="taskTitle">Do stuff</span>
+      </label>
+    </li>
+    <button mv-action="delete(task where done)">
+      Clear Completed
+    </button>
+  </ul>
+ </main>

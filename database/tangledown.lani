@@ -1,0 +1,22 @@
+appeared 2011
+type template
+website http://bollwyvl.github.io/TangleDown/
+github https://github.com/bollwyvl/tangledown
+example
+ If you eat t[number](cookies ' cookies'), you consume t[](calories ' calories'). This constitutes t[](dailypercent percent) of a daily intake of t[number](100<dailycalories..100 ' calories').
+ 
+ t[if](overninek)
+ ~ # It's over 9000!
+ 
+ ~~~~.initialize
+ #cookies: 3
+ #calories: 150
+ #dailypercent: 1
+ #dailycalories: 2100
+ #overninek: 0
+ ~~~~
+ ~~~~.update
+ #calories: #cookies * 50
+ #dailypercent: (#cookies * 50) / #dailycalories
+ #overninek: #calories > 9000
+ ~~~~

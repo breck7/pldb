@@ -1,0 +1,10 @@
+appeared 2009
+type pl
+website https://www.wescheme.org/
+example
+ ;; The world is a number
+ ;; tick: world -> world
+ (define (tick world)
+  (add1 world))
+ (big-bang 0
+          (on-tick tick 2)) ;; tick every two seconds

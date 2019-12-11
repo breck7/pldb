@@ -2,3 +2,16 @@ appeared 2016
 type textMarkup
 website https://visdown.com/
 github https://github.com/amitkaps/visdown
+example
+ ```vis
+ data:
+   url: data/cars.csv
+ mark: point
+ encoding: 
+   x: 
+     field: kmpl
+     type: quantitative
+   y: 
+     field: price
+     type: quantitative
+  ```
