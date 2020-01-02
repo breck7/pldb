@@ -1,0 +1,13 @@
+appeared 2003
+type xmlFormat
+wikipedia Namespace_Routing_Language
+example
+ <rules xmlns="http://www.thaiopensource.com/validate/nrl">
+  <namespace ns="http://schemas.xmlsoap.org/soap/envelope/">
+    <validate schema="soap-envelope.xsd"/>
+  </namespace>
+  <namespace ns="http://www.w3.org/1999/xhtml">
+    <validate schema="xhtml.rng"/>
+    <validate schema="xhtml.sch"/>
+  </namespace>
+ </rules>

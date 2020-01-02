@@ -1,0 +1,10 @@
+appeared 2002
+type xmlFormat
+wikipedia Content_Assembly_Mechanism
+example
+ <CAM CAMlevel="1" version="1.1">
+ <Header/>
+ <AssemblyStructure/>
+ <BusinessUseContext/>
+ <Extension/> <!-- Optional, repeatable -->
+ </CAM>

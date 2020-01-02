@@ -1,0 +1,14 @@
+appeared 2006
+type xmlFormat
+wikipedia Namespace-based_Validation_Dispatching_Language
+example
+ <rules xmlns="http://purl.oclc.org/dsdl/nvdl/ns/structure/1.0">
+  <namespace ns="http://www.w3.org/1999/xhtml">
+    <validate schema="xhtml.rng"/>
+  </namespace>
+  <namespace ns="http://www.w3.org/2000/svg/">
+    <validate schema="svg.sch"/>
+  </namespace>
+  <anyNamespace>
+    <reject/>
+  </anyNamespace>

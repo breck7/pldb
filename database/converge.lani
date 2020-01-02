@@ -1,0 +1,8 @@
+appeared 2004
+type pl
+website https://convergepl.org/
+example
+ import Sys
+ 
+ func main():
+   Sys::println("Hello world!")

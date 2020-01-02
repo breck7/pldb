@@ -1,0 +1,32 @@
+appeared 2010
+type pl
+example
+ OPTIONS SHORT CIRCUIT 
+ IMPORT FGL cust_data
+ SCHEMA stores
+ 
+ PRIVATE CONSTANT c_title = "Customer data form"
+ PUBLIC TYPE t_cust RECORD LIKE customer.*
+ PRIVATE DEFINE cust_arr DYNAMIC ARRAY OF t_cust
+ 
+ MAIN
+     ...
+ END MAIN
+ 
+ DIALOG cust_dlg()
+     INPUT BY NAME cust_rec.*
+        ...
+     END INPUT
+ END DIALOG
+ 
+ FUNCTION cust_display()
+    ...
+ END FUNCTION
+ 
+ FUNCTION cust_input()
+    ...
+ END FUNCTION
+ 
+ REPORT cust_rep(row)
+    ...
+ END REPORT

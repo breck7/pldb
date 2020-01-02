@@ -1,0 +1,28 @@
+appeared 2007
+type protocol
+website https://www.odata.org/
+wikipedia Open_Data_Protocol
+example
+ {
+   "@odata.context": "http://services.odata.org/V4/OData/OData.svc/$metadata#Products",
+   "value": [
+     {
+       "ID": 0,
+       "Name": "Meat",
+       "Description": "Red Meat",
+       "ReleaseDate": "1992-01-01T00:00:00Z",
+       "DiscontinuedDate": null,
+       "Rating": 14,
+       "Price": 2.5
+     },
+     {
+       "ID": 1,
+       "Name": "Milk",
+       "Description": "Low fat milk",
+       "ReleaseDate": "1995-10-01T00:00:00Z",
+       "DiscontinuedDate": null,
+       "Rating": 3,
+       "Price": 3.5
+     }
+   ]
+ }

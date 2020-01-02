@@ -1,0 +1,13 @@
+appeared 1999
+type xmlFormat
+wikipedia Schematron
+example
+ <schema xmlns="http://purl.oclc.org/dsdl/schematron">
+   <pattern>
+      <title>Date rules</title>
+      <rule context="Contract">
+         <assert test="ContractDate &lt; current-date()">ContractDate should be
+ in the past because future contracts are not allowed.</assert>
+      </rule>
+   </pattern>
+ </schema>

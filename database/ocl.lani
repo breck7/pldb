@@ -1,0 +1,5 @@
+appeared 1997
+wikipedia Object_Constraint_Language
+example
+ context Person inv: self.age >=0
+ context Person inv: self.age<18 implies self.cars->isEmpty()

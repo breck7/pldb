@@ -1,0 +1,9 @@
+appeared 1998
+type xmlFormat
+website http://www.clixml.org/
+wikipedia CLiX_(markup)
+example
+ <forall var="dates" in="//fpml:calculationPeriodDates>
+   <less op1="$dates/fpml:effectiveDate/fpml:unadjustedDate" 
+         op2="$dates/fpml:terminationDate/fpml:unadjustedDate"/>
+ </forall>

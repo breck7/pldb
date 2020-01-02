@@ -1,0 +1,29 @@
+website https://www.raku.org/
+wikipedia Raku_(programming_language)
+example
+ grammar Parser {
+     rule  TOP  { I <love> <lang> }
+     token love { '♥' | love }
+     token lang { < Raku Perl Rust Go Python Ruby > }
+  }
+  
+  say Parser.parse: 'I ♥ Raku';
+  # OUTPUT: ｢I ♥ Raku｣ love => ｢♥｣ lang => ｢Raku｣
+  
+  say Parser.parse: 'I love Perl';
+  # OUTPUT: ｢I love Perl｣ love => ｢love｣ lang => ｢Perl｣
+  start { sleep 1.5; print "hi" }
+  await Supply.from-list(<A B C D E F>).throttle: 2, {
+      sleep 0.5;
+      .print
+  }
+  # OUTPUT: ABCDhiEF
+  # No floating point noise:
+  say 0.1 + 0.2 == 0.3;        # OUTPUT: True
+  say (1/13 + 3/7 + 3/8).perl; # OUTPUT:  <641/728>
+  # Infinite list of primes:
+  my @primes = ^∞ .grep: *.is-prime;
+  say "1001ˢᵗ prime is @primes[1000]";
+  
+  # Lazily read words from a file
+  .say for '50TB.file.txt'.IO.words;

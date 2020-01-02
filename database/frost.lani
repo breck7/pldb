@@ -1,0 +1,37 @@
+appeared 2017
+type pl
+website https://www.frostlang.org/
+github https://github.com/ethannicholas/Frost
+example
+ ========================================================
+ Simple version of the Unix `head` utility. Reads a file
+ and outputs the first `count` lines from it to the
+ standard output stream.
+ 
+ @param path the file to read
+ @param count the number of lines to display
+ ========================================================
+ method head(path:File, count:Int) {
+     try {
+         path.lines()[..count].apply(Console.printLine)
+     }
+     fail(error) {
+         abort(error.message)
+     }
+ }
+ 
+ method abort(msg:String) {
+     Console.printLine(msg)
+     System.exit(1)
+ }
+ 
+ method main(args:ListView<String>) {
+     if args.count != 3 {
+         abort("usage: head <path> <count>")
+     }
+     def count := args[2].asInt
+     if count == null {
+         abort("error: '\{args[2]}' is not an integer")
+     }
+     head(File(args[1]), count)
+ }

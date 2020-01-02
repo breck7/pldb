@@ -1,0 +1,336 @@
+appeared 1999
+type xmlFormat
+wikipedia Document_Definition_Markup_Language
+example
+ <?xml version="1.0"?>
+ 
+ <!DOCTYPE "DocumentDef">
+ 
+ <DocumentDef FileExtension="ddm" prefix="">
+ 
+   <ElementDecl Name="DocumentDef" Root="Recommended">
+     <Model>
+       <Seq>
+         <Ref Element="Doc" Frequency="Optional"/>
+         <Ref Element="More" Frequency="Optional"/>
+         <Choice Frequency="ZeroOrMore">
+           <Ref Element="ElementDecl"/>
+           <Ref Element="Model"/>
+           <Ref Element="AttDef"/>
+           <Ref Element="AttGroup"/>
+           <Ref Element="Notation"/>
+           <Ref Element="UnparsedEntity"/>
+           <Ref Element="Enumeration"/>
+           <Ref Element="DocumentDef"/>
+         </Choice>
+       </Seq>
+     </Model>
+     <AttGroup>
+       <AttDef Name="xmlns" Required="Yes" AttValue="http://www.purl.org/NET/ddml/v1"/>
+       <AttDef Name="DDML" prefix="xmlns" Required="Yes" AttValue="http://www.purl.org/NET/ddml/v1"/>
+       <AttDef Name="ns"/>
+       <AttDef Name="ElementNS"/>
+       <AttDef Name="prefix" Type="Nmtoken"/>
+       <AttDef Name="Version" Required="Yes" AttValue="1.0"/>
+       <AttDef Name="MimeType" AttValue="application/xml"/>
+       <AttDef Name="FileExtension" AttValue="xml"/>
+       <AttDef Name="id" Type="ID"/>
+     </AttGroup>
+   </ElementDecl>
+ 
+   <ElementDecl Name="ElementDecl">
+     <Model>
+       <Seq>
+         <Ref Element="Doc" Frequency="Optional"/>
+         <Ref Element="More" Frequency="Optional"/>
+         <Ref Element="Model"/>
+         <Ref Element="AttGroup" Frequency="Optional"/>
+       </Seq>
+     </Model>
+     <AttGroup>
+       <AttDef Name="Name" Type="Nmtoken" Required="Yes"/>
+       <AttDef Name="ns"/>
+       <AttDef Name="prefix" Type="Nmtoken"/>
+       <AttDef Name="id" Type="ID"/>
+       <AttDef Name="Root" Type="Enumerated" AttValue="Possible">
+         <Enumeration>
+           <EnumerationValue Value="Recommended"/>
+           <EnumerationValue Value="Possible"/>
+           <EnumerationValue Value="Unlikely"/>
+         </Enumeration>
+       </AttDef>
+     </AttGroup>
+   </ElementDecl>
+ 
+   <ElementDecl Name="Model">
+     <Model>
+       <Seq>
+         <Ref Element="Doc" Frequency="Optional"/>
+         <Ref Element="More" Frequency="Optional"/>
+         <Choice>
+           <Ref Element="Ref"/>
+           <Ref Element="Choice"/>
+           <Ref Element="Seq"/>
+           <Ref Element="Empty"/>
+           <Ref Element="Any"/>
+           <Ref Element="PCData"/>
+           <Ref Element="Mixed"/>
+         </Choice>
+       </Seq>    
+     </Model>
+     <AttGroup>
+       <AttDef Name="id" Type="ID"/>
+     </AttGroup>
+   </ElementDecl>
+ 
+   <ElementDecl Name="Empty">
+     <Model>
+       <Empty/>
+     </Model>
+     <AttGroup>
+       <AttDef Name="id" Type="ID"/>
+     </AttGroup>
+   </ElementDecl>
+ 
+   <ElementDecl Name="Any">
+     <Model>
+       <Empty/>
+     </Model>
+     <AttGroup>
+       <AttDef Name="id" Type="ID"/>
+     </AttGroup>
+   </ElementDecl>
+ 
+   <ElementDecl Name="PCData">
+     <Model>
+       <Empty/>
+     </Model>
+     <AttGroup>
+       <AttDef Name="id" Type="ID"/>
+     </AttGroup>
+   </ElementDecl>
+ 
+   <ElementDecl Name="Ref">
+     <Model>
+       <Empty/>
+     </Model>
+     <AttGroup>
+       <AttDef Name="Element" Type="Nmtoken" Required="Yes"/>
+       <AttDef Name="ElementNS"/>
+       <AttDef Name="id" Type="ID"/>
+       <AttDef Name="Frequency" Type="Enumerated" AttValue="Required">
+         <Enumeration>
+           <EnumerationValue Value="Required"/>
+           <EnumerationValue Value="Optional"/>
+           <EnumerationValue Value="ZeroOrMore"/>
+           <EnumerationValue Value="OneOrMore"/>
+         </Enumeration>
+       </AttDef>
+     </AttGroup>
+   </ElementDecl>
+ 
+   <ElementDecl Name="Mixed">
+     <Model>
+       <Ref Element="Ref" Frequency="OneOrMore"/>
+     </Model>
+     <AttGroup>
+       <AttDef Name="ElementNS"/>
+       <AttDef Name="id" Type="ID"/>
+       <AttDef Name="Frequency" Type="Enumerated" Required="Yes" AttValue="ZeroOrMore">
+         <Enumeration>
+           <EnumerationValue Value="ZeroOrMore"/>
+         </Enumeration>
+       </AttDef>
+     </AttGroup>
+   </ElementDecl>
+ 
+   <ElementDecl Name="Choice">
+     <Model>
+       <Seq>
+         <Choice>
+           <Ref Element="Seq"/>
+           <Ref Element="Ref"/>
+           <Ref Element="Model"/>
+         </Choice>
+         <Choice Frequency="OneOrMore">
+           <Ref Element="Seq"/>
+           <Ref Element="Ref"/>
+           <Ref Element="Model"/>
+         </Choice>
+       </Seq>
+     </Model>
+     <AttGroup>
+       <AttDef Name="ElementNS"/>
+       <AttDef Name="id" Type="ID"/>
+       <AttDef Name="Frequency" Type="Enumerated" AttValue="Required">
+         <Enumeration>
+           <EnumerationValue Value="Required"/>
+           <EnumerationValue Value="Optional"/>
+           <EnumerationValue Value="ZeroOrMore"/>
+           <EnumerationValue Value="OneOrMore"/>
+         </Enumeration>
+       </AttDef>
+     </AttGroup>
+   </ElementDecl>
+ 
+   <ElementDecl Name="Seq">
+     <Model>
+       <Seq>
+         <Choice>
+           <Ref Element="Choice"/>
+           <Ref Element="Ref"/>
+           <Ref Element="Model"/>
+         </Choice>
+         <Choice Frequency="OneOrMore">
+           <Ref Element="Choice"/>
+           <Ref Element="Ref"/>
+           <Ref Element="Model"/>
+         </Choice>
+       </Seq>
+     </Model>
+     <AttGroup>
+       <AttDef Name="ElementNS"/>
+       <AttDef Name="id" Type="ID"/>
+       <AttDef Name="Frequency" Type="Enumerated" AttValue="Required">
+         <Enumeration>
+           <EnumerationValue Value="Required"/>
+           <EnumerationValue Value="Optional"/>
+           <EnumerationValue Value="ZeroOrMore"/>
+           <EnumerationValue Value="OneOrMore"/>
+         </Enumeration>
+       </AttDef>
+     </AttGroup>
+   </ElementDecl>
+ 
+   <ElementDecl Name="AttGroup">
+     <Model>
+       <Seq>
+         <Ref Element="Doc" Frequency="Optional"/>
+         <Ref Element="More" Frequency="Optional"/>
+         <Choice Frequency="ZeroOrMore">
+            <Ref Element="AttDef"/>
+            <Ref Element="AttGroup"/>
+         </Choice>
+       </Seq>
+     </Model>
+     <AttGroup>
+       <AttDef Name="ns"/>
+       <AttDef Name="prefix" Type="Nmtoken"/>
+       <AttDef Name="id" Type="ID"/>
+     </AttGroup>
+   </ElementDecl>
+ 
+   <ElementDecl Name="AttDef">
+     <Model>
+       <Seq>
+         <Ref Element="Doc" Frequency="Optional"/>
+         <Ref Element="More" Frequency="Optional"/>
+         <Ref Element="Enumeration" Frequency="Optional"/>
+       </Seq>
+     </Model>
+     <AttGroup>
+       <AttDef Name="Name" Type="Nmtoken" Required="Yes"/>
+       <AttDef Name="ns"/>
+       <AttDef Name="prefix" Type="Nmtoken"/>
+       <AttDef Name="Type" Type="Enumerated" AttValue="CData">
+         <Enumeration>
+           <EnumerationValue Value="CData"/>
+           <EnumerationValue Value="ID"/>
+           <EnumerationValue Value="IDRef"/>
+           <EnumerationValue Value="IDRefs"/>
+           <EnumerationValue Value="Entity"/>
+           <EnumerationValue Value="Entities"/>
+           <EnumerationValue Value="Nmtoken"/>
+           <EnumerationValue Value="Nmtokens"/>
+           <EnumerationValue Value="Notation"/>
+           <EnumerationValue Value="Enumerated"/>
+         </Enumeration>
+       </AttDef>
+       <AttDef Name="Required" Type="Enumeration" AttValue="No">
+         <Enumeration>
+           <EnumerationValue Value="Yes"/>
+           <EnumerationValue Value="No"/>
+         </Enumeration>
+       </AttDef>
+       <AttDef Name="AttValue"/>
+       <AttDef Name="id" Type="ID"/>
+     </AttGroup>
+   </ElementDecl>
+ 
+   <ElementDecl Name="Enumeration">
+     <Model>
+       <Seq>
+         <Ref Element="Doc" Frequen cy="Optional"/>
+         <Ref Element="More" Frequency="Optional"/>
+         <Ref Element="EnumerationValue" Frequency="OneOrMore"/>
+       </Seq>
+     </Model>
+     <AttGroup>
+       <AttDef Name="id" Type="ID"/>
+     </AttGroup>
+   </ElementDecl>
+ 
+   <ElementDecl Name="EnumerationValue">
+     <Model>
+       <Seq>
+         <Ref Element="Doc" Frequency="Optional"/>
+         <Ref Element="More" Frequency="Optional"/>
+       </Seq>
+     </Model>
+     <AttGroup>
+       <AttDef Name="Value" Required="Yes"/>
+     </AttGroup>
+   </ElementDecl>
+ 
+   <ElementDecl Name="Notation">
+     <Model>
+       <Seq>
+         <Ref Element="Doc" Frequency="Optional"/>
+         <Ref Element="More" Frequency="Optional"/>
+       </Seq>
+     </Model>
+     <AttGroup>
+       <AttDef Name="Name" Type="Nmtoken" Required="Yes"/>
+       <AttDef Name="PubidLiteral"/>
+       <AttDef Name="SystemLiteral"/>
+       <AttDef Name="id" Type="ID"/>
+     </AttGroup>
+   </ElementDecl>
+ 
+   <ElementDecl Name="UnparsedEntity">
+     <Model>
+       <Seq>
+         <Ref Element="Doc" Frequency="Optional"/>
+         <Ref Element="More" Frequency="Optional"/>
+       </Seq>
+     </Model>
+     <AttGroup>
+       <AttDef Name="Name" Type="Nmtoken" Required="Yes"/>
+       <AttDef Name="SystemLiteral" Required="Yes"/>
+       <AttDef Name="PubidLiteral"/>
+       <AttDef Name="Notation" Type="Nmtoken" Required="Yes"/>
+       <AttDef Name="id" Type="ID"/>
+     </AttGroup>
+   </ElementDecl>
+ 
+   <ElementDecl Name="Doc" prefix="DDML">
+     <Model>
+        <!-- The struct model from IBTWSH goes here.
+             Defining IBTWSH in DDML is left as an
+             exercise to the reader.            ;       -->
+     </Model>
+     <AttGroup>
+       <AttDef Name="xmlns" Required="Yes" AttValue=""/>
+     </AttGroup>
+   </ElementDecl>
+ 
+   <ElementDecl Name="More" prefix="DDML">
+     <Model>
+       <Any/>
+     </Model>
+     <AttGroup>
+       <AttDef Name="xmlns" AttValue=""/>
+     </AttGroup>
+   </ElementDecl>
+ 
+ </DocumentDef>
