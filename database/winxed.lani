@@ -41,3 +41,21 @@ example
      var opts = getopts.get_options(argv);
      int verbose = opts['v'] != null;
      var file = opts['file'];
+     // Get setup data from json file specified in command line
+     // or default value.
+     string filename = 'setup.json';
+     if (file != null)
+         filename = file;
+     var data = loadData(filename);
+     if (verbose) {
+         string description = data['description'];
+  say("\tFile: ", filename);
+  say("\tName: ", data['name']);
+         say("\tDescription: ", description);
+  say("\t(C) ", data['copyright_holder']);
+  say();
+     }
+     using extern distutils;
+     setup(argv:[flat], data:[flat,named]);
+ }
+ // End

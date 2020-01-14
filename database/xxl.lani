@@ -3,3 +3,10 @@ type pl
 github https://github.com/tlack/xxl
 example
  // enclose (c)urly(b)races, (s)quare(b)brackets, (q)uotes:
+ 'ecb is {"{",x,"}"}; 'esb is {"[",x,"]"}; 'eq is {"\"",x,"\""}; 
+ 'jc is {join ","}; 'jac is {each y jc};  // join x with commas; apply y to each of x then join with commas
+ 'pair is {encode,":",(y encode)};        // key:val pair for dict
+ 'dict is {key as 'k; x val as 'v; [k],v >: pair jc ecb}; // get keys/vals, pair merge, commas, braces
+ // wrap non-scalar values in appropriate way:
+ 'many is {as 'el type case ('char, {el str eq}, 'dict, {el dict}, {el jac encode esb})};
+ 'encode is {ravel[many,str]};            // ravel calls x y[0] for arrays (len > 1), x y[1] for scalars

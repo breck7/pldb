@@ -1,0 +1,97 @@
+appeared 2011
+type xmlFormat
+example
+ <?xml version="1.0" encoding="UTF-8"?>
+ <vcards xmlns="urn:ietf:params:xml:ns:vcard-4.0">
+   <vcard>
+     <n>
+       <surname>Gump</surname>
+       <given>Forrest</given>
+       <additional/>
+       <prefix>Mr.</prefix>
+       <suffix/>
+     </n>
+     <fn>
+       <text>Forrest Gump</text>
+     </fn>
+     <org>
+       <text>Bubba Gump Shrimp Co.</text>
+     </org>
+     <title>
+       <text>Shrimp Man</text>
+     </title>
+     <photo>
+       <parameters>
+         <mediatype>
+           <text>image/gif</text>
+         </mediatype>
+       </parameters>
+       <uri>http://www.example.com/dir_photos/my_photo.gif</uri>
+     </photo>
+     <tel>
+       <parameters>
+         <type>
+           <text>work</text>
+           <text>voice</text>
+         </type>
+       </parameters>
+       <uri>tel:+1-111-555-1212</uri>
+     </tel>
+     <tel>
+       <parameters>
+         <type>
+           <text>home</text>
+           <text>voice</text>
+         </type>
+       </parameters>
+       <uri>tel:+1-404-555-1212</uri>
+     </tel>
+     <adr>
+       <parameters>
+         <label>
+           <text>100 Waters Edge
+ Baytown, LA 30314
+ United States of America</text>
+         </label>
+         <type>
+           <text>work</text>
+         </type>
+         <pref>
+           <integer>1</integer>
+         </pref>
+       </parameters>
+       <pobox/>
+       <ext/>
+       <street>100 Waters Edge</street>
+       <locality>Baytown</locality>
+       <region>LA</region>
+       <code>30314</code>
+       <country>United States of America</country>
+     </adr>
+     <adr>
+       <parameters>
+         <label>
+           <text>42 Plantation St.
+ Baytown, LA 30314
+ United States of America</text>
+         </label>
+         <type>
+           <text>home</text>
+         </type>
+       </parameters>
+       <pobox/>
+       <ext/>
+       <street>42 Plantation St.</street>
+       <locality>Baytown</locality>
+       <region>LA</region>
+       <code>30314</code>
+       <country>United States of America</country>
+     </adr>
+     <email>
+       <text>forrestgump@example.com</text>
+     </email>
+     <rev>
+       <timestamp>20080424T195243Z</timestamp>
+     </rev>
+   </vcard>
+ </vcards>

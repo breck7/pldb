@@ -1,0 +1,15 @@
+appeared 1977
+type grammarLanguage
+wikipedia Wirth_syntax_notation
+example
+ SYNTAX     = { PRODUCTION } .
+ PRODUCTION = IDENTIFIER "=" EXPRESSION "." .
+ EXPRESSION = TERM { "|" TERM } .
+ TERM       = FACTOR { FACTOR } .
+ FACTOR     = IDENTIFIER
+            | LITERAL
+            | "[" EXPRESSION "]"
+            | "(" EXPRESSION ")"
+            | "{" EXPRESSION "}" .
+ IDENTIFIER = letter { letter } .
+ LITERAL    = """" character { character } """" .

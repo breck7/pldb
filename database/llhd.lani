@@ -1,0 +1,58 @@
+appeared 2016
+type hardwareDescriptionLanguage
+website http://llhd.io/
+example
+ proc %Accumulator.always_comb.227.0 (i1$ %0, i16$ %1, i16$ %2) -> (i16$ %3) {
+ %4:
+     br %body
+ %body:
+     %direction = prb i1$ %0
+     br %direction, %if_false, %if_true
+ %check:
+     wait %body, %0, %1, %2
+ %if_true:
+     %result = prb i16$ %2
+     %increment = prb i16$ %1
+     %5 = add i16 %result, %increment
+     %6 = const time 0s 1e
+     drv i16$ %3, %5, %6
+     wait %7 for %6
+ %if_false:
+     %result1 = prb i16$ %2
+     %increment1 = prb i16$ %1
+     %8 = sub i16 %result1, %increment1
+     %9 = const time 0s 1e
+     drv i16$ %3, %8, %9
+     wait %10 for %9
+ %if_exit:
+     br %check
+ %7:
+     br %if_exit
+ %10:
+     br %if_exit
+ }
+ proc %Accumulator.always_ff.228.0 (i1$ %0, i16$ %1) -> (i16$ %2) {
+ %3:
+     br %init
+ %init:
+     %clk = prb i1$ %0
+     wait %check, %0
+ %check:
+     %clk1 = prb i1$ %0
+     %4 = const i1 0
+     %5 = eq i1 %clk, %4
+     %6 = neq i1 %clk1, %4
+     %posedge = and i1 %5, %6
+     br %posedge, %init, %event
+ %event:
+     %next = prb i16$ %1
+     %7 = const time 0s 1d
+     drv i16$ %2, %next, %7
+     br %3
+ }
+ entity @Accumulator (i1$ %clk, i1$ %direction, i16$ %increment) -> (i16$ %result) {
+     %0 = const i16 0
+     %next = sig i16 %0
+     inst %Accumulator.always_comb.227.0 (i1$ %direction, i16$ %increment, i16$ %result) -> (i16$ %next)
+     inst %Accumulator.always_ff.228.0 (i1$ %clk, i16$ %next) -> (i16$ %result)
+ }

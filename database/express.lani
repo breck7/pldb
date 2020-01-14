@@ -1,0 +1,21 @@
+type metaLanguage
+wikipedia EXPRESS_(data_modeling_language)
+example
+ SCHEMA Family;
+ 
+ ENTITY Person
+    ABSTRACT SUPERTYPE OF (ONEOF (Male, Female));
+      name: STRING;
+      mother: OPTIONAL Female;
+      father: OPTIONAL Male;
+ END_ENTITY;
+ 
+ ENTITY Female
+    SUBTYPE OF (Person);
+ END_ENTITY;
+ 
+ ENTITY Male
+    SUBTYPE of (Person);
+ END_ENTITY;
+ 
+ END_SCHEMA;

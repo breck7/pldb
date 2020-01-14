@@ -1,0 +1,13 @@
+appeared 2012
+type pl
+github https://github.com/manuel/taf
+example
+ (define (make-person name email)
+   #(person :name name :email email)) ; creates a person record with name and email fields
+ 
+ (define-generic (to-string obj))
+ (define-method (to-string (obj #(person :name :email))) ; matches persons and binds name and email field to local variables
+   (concat (list name " <" email ">")))
+ 
+ (to-string (make-person "Manuel" "msimoni@gmail.com"))
+ ; ==> "Manuel <msimoni@gmail.com>"

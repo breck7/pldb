@@ -1,0 +1,9 @@
+appeared 2018
+type queryLanguage
+website https://www.operon.io/
+example
+ From json:true
+ Function mySum($a, $b):
+     $a + $b
+ End
+ Select [1 ... 5] => array:Reduce(mySum($a, $b))

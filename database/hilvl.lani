@@ -15,3 +15,14 @@ example
   
  @ . myList loop
   @ set foo = (@ . foo + (@ . element))
+ 
+ @ var myMap =
+  Map of
+    "firstname" , "Ola"
+    "lastname" , "Nordmann"
+ 
+ @ var MyService := 
+  @ var myAction :
+    @ . argument + 10
+    
+ MyService myAction (@ . foo) // foo is now 6, and this returns 16

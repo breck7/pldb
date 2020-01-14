@@ -1,0 +1,8 @@
+appeared 1994
+type queryLanguage
+example
+ INSERT myVariable RELATION {
+     TUPLE {x 1, y 2.3, z 'zap'},
+     TUPLE {x 2, y 3.4, z 'zot'},
+     TUPLE {x 3, y 4.2, z 'zaz'}
+ };

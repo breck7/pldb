@@ -61,3 +61,113 @@ example
         }
       }
     },
+    "year" : {
+      "label" : "2003-2014",
+      "category" : {
+        "index" : {
+          "2003" : 0,
+          "2004" : 1,
+          "2005" : 2,
+          "2006" : 3,
+          "2007" : 4,
+          "2008" : 5,
+          "2009" : 6,
+          "2010" : 7,
+          "2011" : 8,
+          "2012" : 9,
+          "2013" : 10,
+          "2014" : 11
+        }
+      }
+    },
+    "area" : {
+      "label" : "OECD countries, EU15 and total",
+      "note" : [ "Except where otherwise indicated, data refer to the actual territory of the country considered." ],
+      "category" : {
+        "index" : {
+          "AU" : 0,
+          "AT" : 1,
+          "BE" : 2,
+          "CA" : 3,
+          "CL" : 4,
+          "CZ" : 5,
+          "DK" : 6,
+          "EE" : 7,
+          "FI" : 8,
+          "FR" : 9,
+          "DE" : 10,
+          "GR" : 11,
+          "HU" : 12,
+          "IS" : 13,
+          "IE" : 14,
+          "IL" : 15,
+          "IT" : 16,
+          "JP" : 17,
+          "KR" : 18,
+          "LU" : 19,
+          "MX" : 20,
+          "NL" : 21,
+          "NZ" : 22,
+          "NO" : 23,
+          "PL" : 24,
+          "PT" : 25,
+          "SK" : 26,
+          "SI" : 27,
+          "ES" : 28,
+          "SE" : 29,
+          "CH" : 30,
+          "TR" : 31,
+          "UK" : 32,
+          "US" : 33,
+          "EU15" : 34,
+          "OECD" : 35
+        },
+        "label" : {
+          "AU" : "Australia",
+          "AT" : "Austria",
+          "BE" : "Belgium",
+          "CA" : "Canada",
+          "CL" : "Chile",
+          "CZ" : "Czech Republic",
+          "DK" : "Denmark",
+          "EE" : "Estonia",
+          "FI" : "Finland",
+          "FR" : "France",
+          "DE" : "Germany",
+          "GR" : "Greece",
+          "HU" : "Hungary",
+          "IS" : "Iceland",
+          "IE" : "Ireland",
+          "IL" : "Israel",
+          "IT" : "Italy",
+          "JP" : "Japan",
+          "KR" : "Korea",
+          "LU" : "Luxembourg",
+          "MX" : "Mexico",
+          "NL" : "Netherlands",
+          "NZ" : "New Zealand",
+          "NO" : "Norway",
+          "PL" : "Poland",
+          "PT" : "Portugal",
+          "SK" : "Slovak Republic",
+          "SI" : "Slovenia",
+          "ES" : "Spain",
+          "SE" : "Sweden",
+          "CH" : "Switzerland",
+          "TR" : "Turkey",
+          "UK" : "United Kingdom",
+          "US" : "United States",
+          "EU15" : "Euro area (15 countries)",
+          "OECD" : "total"
+        },
+        "note" : {
+          "DE" : [ "Germany (code DE) was created 3 October 1990 by the accession of the Democratic Republic of Germany (code DDR) to the then Federal Republic of Germany (code DEW)." ]
+        },
+        "child" : {
+          "EU15" : ["AT", "BE", "DE", "DK", "ES", "FI", "FR", "GR", "IE", "IT", "LU", "NL", "PT", "SE", "UK"],
+          "OECD" : [ "EU15", "AU", "CA", "CL", "CZ", "DK", "EE", "HU", "IS", "IL", "JP", "KR", "MX", "NO", "NZ", "PL", "SK", "SI", "CH", "TR", "US"]
+        }
+      }
+    }
+  }
+ }

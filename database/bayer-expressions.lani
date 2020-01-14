@@ -1,0 +1,9 @@
+appeared 2018
+type metaLanguage
+creators Dave Bayer
+example
+ define | edge? g e
+   let
+     $ es | edges g
+       e2 | reverse e
+     or (member e es) (member e2 es)

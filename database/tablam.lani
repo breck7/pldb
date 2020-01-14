@@ -1,0 +1,6 @@
+type queryLanguage
+website http://www.tablam.org/
+github https://github.com/Tablam/TablaM
+example
+ city ?where .population > 100_000 ?select .name, .country
+ points ?sort .x

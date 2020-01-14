@@ -1,0 +1,18 @@
+appeared 2009
+type htmlFormat
+wikipedia HCard
+example
+ <div class="vcard">
+     <div class="fn org">Wikimedia Foundation Inc.</div>
+     <div class="adr">
+         <div class="street-address">149 New Montgomery Street, 3rd Floor</div>
+         <div> <span class="locality">San Francisco</span>, <abbr class="region" title="California">CA</abbr> <span class="postal-code">94105</span></div>
+         <div class="country-name">USA</div>
+     </div>
+     <div>Phone: <span class="tel">+1-415-839-6885</span></div>
+     <div>Email: <span class="email">info@wikimedia.org</span></div>
+     <div class="tel">
+         <span class="type">Fax</span>:
+         <span class="value">+1-415-882-0495</span>
+     </div>
+ </div>

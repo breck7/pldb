@@ -1,0 +1,9 @@
+appeared 2009
+type pl
+example
+ Inductive trie : Fun(A:type).type :=
+ trie_none : Fun(A:type).<trie A>
+ | trie_exact : Fun(A:type)(s:string)(a:A).<trie A>
+ | trie_next : Fun(A:type)(o:<option A>)
+ (unique l:<charvec <trie A>>).
+ <trie A>.
