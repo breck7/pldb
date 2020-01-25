@@ -1,3 +1,4 @@
 appeared 1976
 type application
 wikipedia Makefile
+description Lines that begin with TAB are assumed to be part of a recipe (so they are shell scripts and passed to the shell for parsing), and lines that do not begin with TAB cannot be part of a recipe (so they cannot be shell scripts: they must be make syntax).

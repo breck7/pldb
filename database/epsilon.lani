@@ -27,3 +27,4 @@ example
  for (c in Class.allInstances) {
    c.extends = Class.allInstances.random();
  }
+description EOL is an imperative programming language for creating, querying and modifying EMF models. You can think of it as a mixture of Javascript and OCL, combining the best of both worlds. As such, it provides all the usual imperative features found in Javascript (e.g. statement sequencing, variables, for and while loops, if branches etc.) and all the nice features of OCL such as those handy collection querying functions.

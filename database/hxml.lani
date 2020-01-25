@@ -18,3 +18,5 @@ example
  
  -js bin/contact.js
  -main website.ContactPage
+reference https://haxe.org/manual/compiler-usage-hxml.html
+description Haxe compiler arguments can be stored in a .hxml file and can be executed with haxe <file.hxml>. In hxml it is possible to use newlines and comments which makes it easier to maintain Haxe build configurations. It is possible to supply more arguments after the hxml file, e.g. haxe build.hxml -debug.

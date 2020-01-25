@@ -11,3 +11,5 @@ example
  
  (to-string (make-person "Manuel" "msimoni@gmail.com"))
  ; ==> "Manuel <msimoni@gmail.com>"
+reference http://www.manuelsimoni.net/taf/doc/plan.html
+description A Lisp with row polymorphism, delimited continuations, and hygienic macros. [vaporware]

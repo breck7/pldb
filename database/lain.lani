@@ -7,3 +7,4 @@ example
  (def obj {:foo "bar"})                    ; Creating object
  (join obj:foo)                            ; Reading object parameters
  (def _sidebar (dom:create "sidebar"))     ; Creating DOM elements
+description Lain is both an inline scripting library that allows for complex templating of the wiki pages, and a programming language that exists at the core of the engine to load and parse content for each article.

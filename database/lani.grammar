@@ -56,6 +56,17 @@ lineOfCodeNode
  description Any code fits.
  catchAllCellType anyCodeCell
  catchAllNodeType lineOfCodeNode
+descriptionNode
+ baseNodeType blobNode
+ crux description
+ extends abstractFactNode
+abstractUrlNode
+ cells keywordCell urlCell
+ extends abstractFactNode
+ abstract
+referenceNode
+ extends abstractUrlNode
+ crux reference
 laniNode
  root
  description A language for encoding data about Programming languages.

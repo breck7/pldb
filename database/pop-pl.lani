@@ -12,3 +12,4 @@ example
  infusion:
   whenever new aPTTResult
    aPTT < 45 | giveBolus 80 units/kg of: HEParin by: iv
+reference https://users.cs.northwestern.edu/~sfq833/resources/papers/GPCE_POP-PL_2015.pdf

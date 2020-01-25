@@ -1,2 +1,4 @@
 appeared 1991
 type pl
+reference https://www.haskell.org/onlinereport/literate.html
+description Haskell is one of the few languages that provides native features to support literate programming. In haskell, a literate program is one with the suffix .lhs rather than .hs. In a literate Haskell program, there are two ways to distinguish between code and non-code portions. You can either prepend all code with a > , (bird style) or surround lines of code with \begin{code} and \end{code} pairs (latex style). For those who know, use and love latex, the latter is the suggested way to go.

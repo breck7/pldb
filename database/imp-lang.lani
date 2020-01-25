@@ -5,3 +5,4 @@ example
  let colors = "apples" x "red" | "apples" x "green" | "oranges" x "orange" in
  let fancy = "red" x "scarlet" | "red" x "crimson" | "green" x "emerald" in
  "apples" colors fancy
+description The vision is of an emacs-y live self-modifying environment for working with structured data across multiple devices. The big moving parts are: a versioned relational database; an extensible GUI; a pure programming language built around relations; an interpreter with fast incremental view maintenance.

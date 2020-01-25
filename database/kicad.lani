@@ -15,3 +15,5 @@ example
    (modules 2)
    (nets 3)
  ))
+reference http://kicad-pcb.org/help/file-formats/d
+description KiCad writes all files in human readable ASCII. This makes manipulation by hand and scripting very easy.

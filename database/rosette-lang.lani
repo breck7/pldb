@@ -15,3 +15,4 @@ example
    (solve (assert (interpret formula))))
  
  (SAT `(∧ r o (∨ s e (¬ t)) t (¬ e)))
+reference https://homes.cs.washington.edu/~emina/pubs/rosette.onward13.pdf

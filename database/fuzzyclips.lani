@@ -1,3 +1,5 @@
 appeared 1995
 type knowledgeBase
 wikipedia FuzzyCLIPS
+reference https://github.com/rorchard/FuzzyCLIPS
+description  The modifications made to CLIPS contain the capability of handling fuzzy concepts and reasoning. It enables domain experts to express rules using their own fuzzy terms. It allows any mix of fuzzy and normal terms, numeric-comparison logic controls, and uncertainties in the rules and facts. Fuzzy sets and relations deal with fuzziness in approximate reasoning, while certainty factors for rules and facts manipulate the uncertainty.

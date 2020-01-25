@@ -10,3 +10,4 @@ example
  <%- end -%>
  
  Greeting.new(nil).to_s #=> Greeting!
+description Embedded Crystal (ECR) is a template language for embedding Crystal code into other text, that includes but is not limited to HTML. The template is read and transformed at compile time and then embedded into the binary.

@@ -1,1 +1,3 @@
 type pattern
+reference https://docs.scala-lang.org/tour/implicit-parameters.html
+description Arguments that are not passed by the function caller, but are found in the function caller's scope.

@@ -26,3 +26,4 @@ example
     @ . argument + 10
     
  MyService myAction (@ . foo) // foo is now 6, and this returns 16
+description Hilvl is a programming language that is versatile but with a very small syntax. All code in hilvl are single-argument invocations of actions that belong to services. Services are the fundamental building blocks of a hilvl program. And the name hilvl reflects how this is a higher level of abstraction than objects and functions.

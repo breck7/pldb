@@ -10,3 +10,4 @@ example
      <li>{{ article.title }} by {{ article.author }}</li>
    {% endfor %}
  </ul>
+description Stencil is a simple and powerful template language for Swift. It provides a syntax similar to Django and Mustache.

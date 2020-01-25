@@ -1,3 +1,4 @@
 appeared 2013
 type pl
 github https://github.com/ilyash/ngs
+description <a href='https://github.com/ilyash/ngs'>NGS</a> - Next Generation Shell, a language (and a shell in the future) for ops tasks. NGS aims to be an alternative for both bash/Python/Ruby/Perl/Go and configuration management tools. It has syntax for the common operations and libraries (currently only AWS) for idempotent resources manipulation. NGS unique features include built in exit code handling and syntax for run-a-command-and-parse-output.

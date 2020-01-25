@@ -5,3 +5,4 @@ example
  SELECT UNIQUE city, state, zipcode, sname
  FROM customer, state
  WHERE customer.state = state.code
+description It includes embedded SQL, a report writer language, a form language, and a limited set of imperative capabilities (functions, if and while statements, and supports arrays etc.). The language is particularly close to a natural language and is easy to learn and use.

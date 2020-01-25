@@ -35,3 +35,4 @@ example
       e 47246660 10635826
       l 47246530 10635696 47246660 10635826 63
     }
+description LAV is a plain-text file format for alignments of two DNA sequences. It is the only output format produced by the BLASTZ alignment program (though often converted to AXT format by post-processing programs), and is the default output format for BLASTZ's successor, LASTZ.

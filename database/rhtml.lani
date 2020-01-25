@@ -6,3 +6,5 @@ example
       <li><%=  @p.name %></li>
    <% end %>
  </ul>
+reference https://www.tutorialspoint.com/ruby-on-rails/rails-and-rhtml.htm
+description RHTML is HTML mixed with Ruby, using HTML tags. All of Ruby is available for programming along with HTML.

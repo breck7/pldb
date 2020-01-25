@@ -7,3 +7,4 @@ example
      $a + $b
  End
  Select [1 ... 5] => array:Reduce(mySum($a, $b))
+description Operon.io is a powerful language to query, transform and integrate JSON-data. You can use it for example to build a small microservice for your backend services. All code is run on the powerful and battle tested Java Virtual Machine (JVM).

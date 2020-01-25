@@ -9,3 +9,5 @@ example
   0  0  0    0 15  7    0  0  0    0  0  0
   0  0  0    0  0  0    0 15  7    0  0  0
  15  0 15    0  0  0    0  0  0    0  0  0
+reference http://netpbm.sourceforge.net/doc/ppm.html
+description The PPM format is a lowest common denominator color image file format. It should be noted that this format is egregiously inefficient. It is highly redundant, while containing a lot of information that the human eye can't even discern. Furthermore, the format allows very little information about the image besides basic color, which means you may have to couple a file in this format with other independent information to get any decent use out of it. However, it is very easy to write and analyze programs to process this format, and that is the point.

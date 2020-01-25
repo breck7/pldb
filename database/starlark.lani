@@ -37,3 +37,4 @@ example
          print(s if s else i)
  
  fizz_buzz(20)
+description The language used in Bazel. Starlark is designed to be small, simple, and thread-safe. Although it is inspired from Python, it is not a general-purpose language and most Python features are not included. Starlark is syntactically a subset of Python 3

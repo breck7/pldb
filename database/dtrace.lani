@@ -7,3 +7,4 @@ example
  dtrace -n 'syscall:::entry { @num[probefunc] = count(); }'
  # Syscall count by process
  dtrace -n 'syscall:::entry { @num[pid,execname] = count(); }'
+description DTrace is a comprehensive dynamic tracing framework created by Sun Microsystems for troubleshooting kernel and application problems on production systems in real time.

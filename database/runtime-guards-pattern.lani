@@ -1,2 +1,3 @@
 type pattern
 wikipedia Guard_(computer_science)
+description Guards can easily be implemented using conditions (if !x: return;), but some languages include syntax and semantics specifically for guards.

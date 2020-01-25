@@ -27,3 +27,4 @@ example
  for i <- range(0, 7) {
    echo "fact(#{i}): #{fact(i)}"
  }
+reference https://www.reddit.com/r/ProgrammingLanguages/comments/diiqwt/request_for_feedback_on_pattern_matchingtype/

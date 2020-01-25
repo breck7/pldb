@@ -1,2 +1,4 @@
 appeared 2018
 type pl
+reference https://github.com/enkiv2/misc/blob/master/ds-lib/kaukatcr.py
+description Kaukatcr (pronounced “cowcatcher”[3]) is a stack-based language modeled loosely on Forth. It avoids tokenization by treating cell boundaries as word boundaries. Like Forth, any word that is neither a built-in nor found in the dictionary of defined functions will be treated as data and pushed onto the stack.

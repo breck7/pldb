@@ -20,3 +20,5 @@ example
      I32 i5=-0x80000000;
      Print("%X\n",i5>>1);        //Res is 0xFFFFFFFFC0000000
    }
+reference https://web.archive.org/web/20170325000321/http://www.templeos.org/Wb/Doc/HolyC.html
+description HolyC is a variation of C developed by Terry A. Davis. HolyC is the official programming language for The Temple Operating System (TempleOS).

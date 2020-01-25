@@ -4,3 +4,4 @@ website http://openbel.org/
 example
  r(HGNC:CFTR, var("r.1653_1655delcuu"))
  r(REF:"NM_000492.3", var("r.1653_1655delcuu"))
+reference https://github.com/OpenBEL/language

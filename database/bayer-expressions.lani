@@ -7,3 +7,5 @@ example
      $ es | edges g
        e2 | reverse e
      or (member e es) (member e2 es)
+reference https://news.ycombinator.com/item?id=19431720
+description An alternative notation for S-Expressions that uses fewer parentheses. As described by the creator: Indentation implies parentheses. A pipe "|" opens a parenthesis that auto-closes at the end of that line or at the next ")". A dollar "$" opens a parenthesis that auto-closes when the indentation recovers. The result has a lighter, more poetic look than any language I know, and the parentheses that are left actually matter, so I pay attention to them.

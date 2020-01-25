@@ -20,3 +20,4 @@ example
  
  integer "integer"
    = digits:[0-9]+ { return parseInt(digits.join(""), 10); }
+description PEG.js is a simple parser generator for JavaScript that produces fast parsers with excellent error reporting. You can use it to process complex data or computer languages and build transformers, interpreters, compilers and other tools easily.

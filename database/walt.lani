@@ -10,3 +10,4 @@ example
  
   return fibonacci(n - 1) + fibonacci(n - 2);
  }
+description Walt is a JavaScript-like syntax for WebAssembly text format

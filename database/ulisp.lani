@@ -3,3 +3,4 @@ website http://www.ulisp.com/show?3J
 github https://github.com/technoblogy/ulisp
 example
  (defun b (x) (pinmode 13 t) (digitalwrite 13 x) (delay 500) (b (not x)))
+description uLisp® is a version of the Lisp programming language specifically designed to run on microcontrollers with a limited amount of RAM.

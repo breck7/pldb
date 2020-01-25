@@ -41,3 +41,4 @@ example
  -- You can save Terra code as executables, object files, or shared libraries 
  -- and link them into existing programs
  terralib.saveobj("helloterra",{ main = hello })
+description Terra is a low-level system programming language that is embedded in and meta-programmed by the Lua programming language:

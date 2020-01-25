@@ -2,3 +2,4 @@ appeared 1992
 type pl
 website https://colorforth.github.io/cf.htm
 wikipedia ColorForth
+description In Forth, a new word is defined by a preceeding colon, words inside a definition are compiled, outside are executed. In colorForth a new word is red, green words are compiled, yellow executed. This use of color further reduces the syntax, or punctuation, needed. It also makes explicit how the computer will interpret each word.

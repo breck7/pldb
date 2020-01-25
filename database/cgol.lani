@@ -8,3 +8,4 @@ example
       for j in 1 to n do
          ac := ac + a(i,j)*b(j,k);
       c(i,k) := ac)
+reference https://www.cs.cmu.edu/afs/cs/project/ai-repository/ai/lang/lisp/code/syntax/cgol/0.html

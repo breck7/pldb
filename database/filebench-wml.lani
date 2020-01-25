@@ -2,3 +2,5 @@ appeared 2011
 type pl
 website https://github.com/filebench/filebench/wiki
 github https://github.com/filebench/filebench
+reference https://github.com/filebench/filebench/wiki/Workload-model-language
+description Filebench is a file system and storage benchmark that can generate a large variety of workloads. Unlike typical benchmarks it is extremely flexible and allows to specify application's I/O behavior using its extensive Workload Model Language (WML).

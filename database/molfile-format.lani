@@ -56,3 +56,5 @@ example
   11 24  1  0  0  0  0
  M  END
  $$$$
+reference https://en.wikipedia.org/wiki/Chemical_table_file
+description An MDL Molfile is a file format for holding information about the atoms, bonds, connectivity and coordinates of a molecule. The molfile consists of some header information, the Connection Table (CT) containing atom info, then bond connections and types, followed by sections for more complex information. The molfile is sufficiently common that most, if not all, cheminformatics software systems/applications are able to read the format, though not always to the same degree. It is also supported by some computational software such as Mathematica. The current de facto standard version is molfile V2000; although, more recently, the V3000 format has been circulating widely enough to present a potential compatibility issue for those applications that are not yet V3000-capable.

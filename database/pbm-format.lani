@@ -14,3 +14,5 @@ example
  0 1 1 1 0 0
  0 0 0 0 0 0
  0 0 0 0 0 0
+reference http://netpbm.sourceforge.net/doc/pbm.html
+description The PBM format is a lowest common denominator monochrome file format. It serves as the common language of a large family of bitmap image conversion filters. Because the format pays no heed to efficiency, it is simple and general enough that one can easily develop programs to convert to and from just about any other graphics format, or to manipulate the image. The name "PBM" is an acronym derived from "Portable Bit Map."

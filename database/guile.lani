@@ -7,3 +7,4 @@ example
  (define name "World")
  (display (string-append "Hello " name "!"))
  (newline)
+description Guile is designed to help programmers create flexible applications that can be extended by users or other programmers with plug-ins, modules, or scripts. Guile is an implementation of the Scheme programming language, supporting the Revised5 and most of the Revised6 language reports, as well as many SRFIs. It also comes with a library of modules that offer additional features, like an HTTP server and client, XML parsing, and object-oriented programming.

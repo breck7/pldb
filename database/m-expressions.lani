@@ -6,3 +6,4 @@ example
   f[x;y]
   label[square;λ[[x];product[x;x]]]
   [lessthan[x;0] → negative[x]; T → x]
+description The project of defining M-expressions precisely and compiling them or at least translating them into S-expressions was neither finalized nor explicitly abandoned. It just receded into the indefinite future, and a new generation of programmers appeared who preferred internal notation to any FORTRAN-like or ALGOL-like notation that could be devised.

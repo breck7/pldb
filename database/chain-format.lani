@@ -16,3 +16,5 @@ example
  60      4       0
  10      0       4
  70
+reference https://genome.ucsc.edu/goldenPath/help/chain.html
+description The chain format describes a pairwise alignment that allow gaps in both sequences simultaneously. Each set of chain alignments starts with a header line, contains one or more alignment data lines, and terminates with a blank line. The format is deliberately quite dense.

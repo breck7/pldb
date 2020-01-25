@@ -7,3 +7,5 @@ example
  20000004  t irqvec
  20000008  t fiqvec
  2000000c  t InitReset
+reference https://software.intel.com/sites/default/files/article/402129/mpx-linux64-abi.pdf
+description An example of a symbol table can be found in the SysV Application Binary Interface (ABI) specification, which mandates how symbols are to be laid out in a binary file, so that different compilers, linkers and loaders can all consistently find and work with the symbols in a compiled object.

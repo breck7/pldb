@@ -3,3 +3,5 @@ type binaryDataFormat
 website https://www.cog-genomics.org/plink2/formats#bed
 example
  0x6c 0x1b 0x01 0xdc 0x0f 0xe7 0x0f 0x6b 0x01
+reference https://www.sciencedirect.com/science/article/pii/S0002929707613524
+description Primary representation of genotype calls at biallelic variants. Do not confuse this with the UCSC Genome Browser's BED format, which is totally different. Used in plink.

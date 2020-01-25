@@ -1,3 +1,4 @@
 appeared 2016
 type ir
 website https://webkit.org/docs/b3/intermediate-representation.html
+description B3 IR is a C-like SSA representation of a procedure. A procedure has a root block at which it starts execution when it is invoked. A procedure does not have to terminate, but if it does, then it can be either due to a Return, which gracefully returns some value, or by a side-exit at designated instructions. B3 gives the client a lot of flexibility to implement many different kinds of side-exits. B3 is designed to represent procedures for the purpose of transforming them. Knowing what transformations are legal requires knowing what a procedure does. A transformation is valid if it does not change the observable behavior of a procedure. This document tells you what B3 procedures do by telling you what each construct in B3 IR does.

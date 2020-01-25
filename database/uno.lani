@@ -2,3 +2,5 @@ appeared 2002
 type pl
 website https://fuseopen.com
 github https://github.com/fuse-open/uno
+reference https://fuseopen.com/docs/uno/uno-lang.html
+description The Uno langauge is a dialect of C#, designed for cross-compilation to C++ and other languages. Uno does not require the .NET Framework, but has instead a more lightweight library called UnoCore. The syntax of Uno is more or less identical to C#, with deviations documented here.

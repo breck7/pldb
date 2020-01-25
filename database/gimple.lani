@@ -1,2 +1,4 @@
 appeared 2003
 type ir
+reference https://en.wikipedia.org/wiki/GNU_Compiler_Collection#GENERIC_and_GIMPLE
+description GCC is a widely used compiler infrastructure that supports a variety of input languages, e.g., C, C++, Fortran, Java, and Ada, and over 30 different target machine architectures. GCC translates each of its front-end languages into a language-independent intermediate representation, called GIMPLE, which then gets translated to machine code for one of GCC’s many target architectures. A subset of GENERIC.

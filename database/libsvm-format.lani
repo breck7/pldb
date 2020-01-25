@@ -4,3 +4,5 @@ website https://www.csie.ntu.edu.tw/~cjlin/libsvm/
 example
  1 10:3.4 123:0.5 34567:0.231
  0.2 22:1 456:03
+reference https://www.csie.ntu.edu.tw/~cjlin/papers/libsvm.pdf
+description <class/target>[ <attribute number>:<attribute value>]*

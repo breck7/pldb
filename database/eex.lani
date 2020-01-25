@@ -7,3 +7,5 @@ example
  <% else %>
    This will never appear
  <% end %>
+reference https://github.com/elixir-lang/elixir/commits/master/lib/eex/lib/eex.ex
+description EEx stands for Embedded Elixir. It allows you to embed Elixir code inside a string in a robust way.

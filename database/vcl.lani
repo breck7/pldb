@@ -6,3 +6,4 @@ example
   "192.0.2.0"/24;      // and everyone on the local network
   ! "192.0.2.23";      // except for the dialin router
  }
+reference https://en.wikipedia.org/wiki/Varnish_(software)
