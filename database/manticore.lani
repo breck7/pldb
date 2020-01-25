@@ -1,0 +1,10 @@
+appeared 2009
+type pl
+example
+ fun forever (init : ’a) (f: ’a -> ’a) : unit =
+  let
+    fun loop s = loop (f s)
+    val _ = spawn (loop init)
+  in
+    ()
+  end

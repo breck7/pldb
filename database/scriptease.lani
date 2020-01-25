@@ -1,0 +1,9 @@
+appeared 2001
+type pl
+website http://old.minford.k12.oh.us/sewse/manual/jsedesc.htm
+example
+ while( ThereAreUncalledNamesOnTheList() == true){
+   name=GetNameFromTheList();
+      CallthePerson(name);
+      LeaveTheMessage();
+   }

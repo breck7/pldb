@@ -1,0 +1,13 @@
+appeared 2000
+type grammarLanguage
+creators Alexander Okhotin
+website http://users.utu.fi/aleokh/whalecalf/
+example
+ algorithm=trellis;
+ terminal a, b, c;
+ S -> C & D;
+ C -> a C a | a C b | b C a | b C b | c;
+ D -> a A & a D | b B & b D | c E;
+ A -> a A a | a A b | b A a | b A b | c E a;
+ B -> a B a | a B b | b B a | b B b | c E b;
+ E -> a E | b E | e;

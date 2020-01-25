@@ -1,3 +1,12 @@
-appeared 2007
+appeared 2001
 type pl
-website http://felix-lang.org
+website http://felix-lang.github.io/felix/
+github https://github.com/felix-lang/felix
+example
+ #import <flx.flxh>
+ fun abs_div(a:int, b:int when b!=0)
+   expect result >=0
+ =>
+   abs(a/b)
+ ;
+ print (abs_div(2,4)); print "\n";

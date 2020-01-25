@@ -1,3 +1,13 @@
 appeared 2019
 type ir
+website https://mlir.llvm.org/
 github https://github.com/tensorflow/mlir
+example
+ // Syntactically similar to LLVM:
+ func @testFunction(%arg0: i32) {
+   %x = call @thingToCall(%arg0) : (i32) -> i32
+   br ^bb1
+ ^bb1:
+   %y = addi %x, %x : i32
+   return %y : i32
+ }

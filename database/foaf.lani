@@ -1,0 +1,23 @@
+appeared 2007
+type xmlFormat
+wikipedia FOAF
+example
+ @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+ @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+ @prefix foaf: <http://xmlns.com/foaf/0.1/> .
+ 
+ <#JW>
+     a foaf:Person ;
+     foaf:name "James Wales" ;
+     foaf:mbox <mailto:jwales@bomis.com> ;
+     foaf:homepage <http://www.jameswales.com> ;
+     foaf:nick "Jimbo" ;
+     foaf:depiction <http://www.jameswales.com/aus_img_small.jpg> ;
+     foaf:interest <http://www.wikimedia.org> ;
+     foaf:knows [
+         a foaf:Person ;
+         foaf:name "Angela Beesley"
+     ] .
+ 
+ <http://www.wikimedia.org>
+     rdfs:label "Wikimedia" .

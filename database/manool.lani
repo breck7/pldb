@@ -1,0 +1,18 @@
+appeared 2018
+type pl
+creators Alex Protasov
+website https://manool.org/
+github https://github.com/rusini/manool
+example
+ -- recursive version, MANOOLish "cascading" notation
+ { {extern "manool.org.18/std/0.3/all"} in
+ : let rec
+   { Fact = -- compile-time constant binding
+     { proc { N } as -- precondition: N.IsI48[] & (N >= 0)
+     : if N == 0 then 1 else
+       N * Fact[N - 1]
+     }
+   }
+   in
+   Out.WriteLine["Factorial of 10 is "; Fact[10]]
+ }

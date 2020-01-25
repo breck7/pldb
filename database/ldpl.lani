@@ -1,3 +1,13 @@
 appeared 2019
 type pl
 website https://www.ldpl-lang.org
+github https://github.com/Lartu/ldpl
+example
+ # Hello There Example
+ data: 
+   name is number
+ 
+ procedure: 
+   display "Hello there, what's your name?"
+   accept name
+   display "你好, " name "!" crlf

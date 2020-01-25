@@ -1,0 +1,28 @@
+appeared 2019
+type pl
+github https://github.com/neeilan/neeilang
+example
+ fn main() : Int {
+   var a : Int = 5;
+   var b : Int = 3;
+ 
+   print a + b;    // 8
+   print a - b;    // 2
+   print b - a;    // -2
+ 
+   if (a >= 5) {
+     print "a >= 5"; // a >= 5
+   }
+ 
+   if (a > 5) {
+     print "a > 5";  // Not executed
+   }
+ 
+   if (a < 5) {
+     print "a < 5";  // Not executed
+   }
+ 
+   if (5 <= a) {
+     print "5 <= a";  // 5 <= a
+   }
+ 

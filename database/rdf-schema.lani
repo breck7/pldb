@@ -1,0 +1,13 @@
+appeared 1998
+type grammarLanguage
+wikipedia RDF_Schema
+example
+ @prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+ @prefix rdfs:   <http://www.w3.org/2000/01/rdf-schema#> .
+ @prefix ex:   <http://example.org/> .
+ @prefix zoo:   <http://example.org/zoo/> .
+ ex:dog1     rdf:type     ex:animal .
+ ex:cat1     rdf:type     ex:cat .
+ ex:cat    rdfs:subClassOf  ex:animal .
+ zoo:host   rdfs:range      ex:animal .
+ ex:zoo1     zoo:host     ex:cat2 .

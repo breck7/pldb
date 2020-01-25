@@ -1,0 +1,15 @@
+type pl
+wikipedia TI-89_series
+example
+ fib(n)
+ Func
+ Local a,b,c,i
+ 0→a
+ 1→b
+ For i,1,n
+   a→c
+   b→a
+   c+b→b
+ EndFor
+ a
+ EndFunc
