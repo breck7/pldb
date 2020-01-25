@@ -8,6 +8,7 @@ codeLaniId,url,type,appeared
 2obj,https://codelani.com/languages/2obj.html,pl,1995
 3-lisp,https://codelani.com/languages/3-lisp.html,pl,1982
 3apl,https://codelani.com/languages/3apl.html,pl,1998
+3d-logo,https://codelani.com/languages/3d-logo.html,pl,1986
 3dcomposer,https://codelani.com/languages/3dcomposer.html,pl,1999
 3ds,https://codelani.com/languages/3ds.html,binaryDataFormat,1990
 3mf,https://codelani.com/languages/3mf.html,xmlFormat,2015
@@ -33,7 +34,7 @@ abc-algol,https://codelani.com/languages/abc-algol.html,pl,1973
 abcl,https://codelani.com/languages/abcl.html,pl,1986
 abcl-cp,https://codelani.com/languages/abcl-cp.html,pl,1988
 abcl-f,https://codelani.com/languages/abcl-f.html,pl,1994
-abcl-lang,https://codelani.com/languages/abcl-lang.html,,2008
+abcl-lang,https://codelani.com/languages/abcl-lang.html,pl,2008
 abcpp,https://codelani.com/languages/abcpp.html,pl,1994
 abel,https://codelani.com/languages/abel.html,pl,1979
 able,https://codelani.com/languages/able.html,pl,1981
@@ -56,6 +57,7 @@ acorn-atom,https://codelani.com/languages/acorn-atom.html,pl,1980
 acorn-lang,https://codelani.com/languages/acorn-lang.html,pl,2015
 acornsoft-logo,https://codelani.com/languages/acornsoft-logo.html,pl,1985
 acos,https://codelani.com/languages/acos.html,pl,1988
+acsi-matic,https://codelani.com/languages/acsi-matic.html,pl,1959
 acsl,https://codelani.com/languages/acsl.html,pl,1979
 act-iii,https://codelani.com/languages/act-iii.html,pl,1956
 act-one,https://codelani.com/languages/act-one.html,pl,1983
@@ -355,6 +357,7 @@ bamboo,https://codelani.com/languages/bamboo.html,pl,2016
 bancstar-programming-language,https://codelani.com/languages/bancstar-programming-language.html,pl,1996
 barrel,https://codelani.com/languages/barrel.html,pl,1980
 bartok,https://codelani.com/languages/bartok.html,pl,2001
+base64,https://codelani.com/languages/base64.html,encoding,1987
 baseball,https://codelani.com/languages/baseball.html,pl,1961
 basel,https://codelani.com/languages/basel.html,pl,1968
 bash,https://codelani.com/languages/bash.html,pl,1989
@@ -406,7 +409,7 @@ beflix,https://codelani.com/languages/beflix.html,pl,1963
 befunge,https://codelani.com/languages/befunge.html,esolang,1993
 behavior-markup-language,https://codelani.com/languages/behavior-markup-language.html,xmlFormat,
 bel,https://codelani.com/languages/bel.html,pl,2019
-bel-lang,https://codelani.com/languages/bel-lang.html,,2003
+bel-lang,https://codelani.com/languages/bel-lang.html,textDataFormat,2003
 ber,https://codelani.com/languages/ber.html,pl,1988
 berkeley-db-lib,https://codelani.com/languages/berkeley-db-lib.html,library,1994
 berkeleydb,https://codelani.com/languages/berkeleydb.html,library,1991
@@ -440,6 +443,7 @@ bitbake,https://codelani.com/languages/bitbake.html,pl,2004
 bitc,https://codelani.com/languages/bitc.html,pl,2004
 bjou,https://codelani.com/languages/bjou.html,pl,2019
 blade,https://codelani.com/languages/blade.html,template,2011
+blake-hash-function,https://codelani.com/languages/blake-hash-function.html,hashFunction,2012
 blank,https://codelani.com/languages/blank.html,pl,2018
 blaze,https://codelani.com/languages/blaze.html,pl,1985
 blaze-2,https://codelani.com/languages/blaze-2.html,pl,1989
@@ -461,6 +465,7 @@ blueprints,https://codelani.com/languages/blueprints.html,visual,2014
 bluespec,https://codelani.com/languages/bluespec.html,pl,2000
 blur-markup-language,https://codelani.com/languages/blur-markup-language.html,textMarkup,2017
 blz,https://codelani.com/languages/blz.html,pl,
+bmd,https://codelani.com/languages/bmd.html,pl,1961
 bml,https://codelani.com/languages/bml.html,metaLanguage,
 bmp-format,https://codelani.com/languages/bmp-format.html,binaryDataFormat,2000
 bnf,https://codelani.com/languages/bnf.html,grammarLanguage,1956
@@ -594,6 +599,7 @@ chain-programming-language,https://codelani.com/languages/chain-programming-lang
 chaiscript,https://codelani.com/languages/chaiscript.html,pl,2009
 champ,https://codelani.com/languages/champ.html,pl,1968
 chapel,https://codelani.com/languages/chapel.html,pl,2004
+chappe-code,https://codelani.com/languages/chappe-code.html,notation,1792
 charity,https://codelani.com/languages/charity.html,pl,1992
 charly,https://codelani.com/languages/charly.html,pl,2017
 charmpp,https://codelani.com/languages/charmpp.html,pl,1993
@@ -640,6 +646,7 @@ circal,https://codelani.com/languages/circal.html,pl,1985
 circle-lang,https://codelani.com/languages/circle-lang.html,pl,2019
 cirru,https://codelani.com/languages/cirru.html,pl,2012
 citrine,https://codelani.com/languages/citrine.html,pl,2014
+cityhash-hash-function,https://codelani.com/languages/cityhash-hash-function.html,hashFunction,2011
 cixl,https://codelani.com/languages/cixl.html,pl,2018
 cl-i,https://codelani.com/languages/cl-i.html,pl,1960
 claire,https://codelani.com/languages/claire.html,pl,2004
@@ -656,6 +663,7 @@ clausal-lang,https://codelani.com/languages/clausal-lang.html,pl,1997
 clean,https://codelani.com/languages/clean.html,pl,1987
 cleanlang,https://codelani.com/languages/cleanlang.html,pl,2017
 clear,https://codelani.com/languages/clear.html,pl,1976
+cleo,https://codelani.com/languages/cleo.html,pl,1963
 cleogo,https://codelani.com/languages/cleogo.html,pl,1998
 cleopatra,https://codelani.com/languages/cleopatra.html,pl,1973
 cli-assembly,https://codelani.com/languages/cli-assembly.html,library,2005
@@ -687,6 +695,7 @@ cms-2,https://codelani.com/languages/cms-2.html,pl,1968
 cms-exec,https://codelani.com/languages/cms-exec.html,pl,1966
 cms-pipelines,https://codelani.com/languages/cms-pipelines.html,pl,1986
 cmu-common-lisp,https://codelani.com/languages/cmu-common-lisp.html,pl,1980
+co-dfns,https://codelani.com/languages/co-dfns.html,pl,2012
 co2,https://codelani.com/languages/co2.html,pl,2016
 cobloc,https://codelani.com/languages/cobloc.html,pl,1964
 cobol,https://codelani.com/languages/cobol.html,pl,1959
@@ -709,6 +718,7 @@ coffee-cinema-4d,https://codelani.com/languages/coffee-cinema-4d.html,pl,1992
 coffeepp,https://codelani.com/languages/coffeepp.html,pl,2017
 coffeescript,https://codelani.com/languages/coffeescript.html,pl,2009
 cogmap,https://codelani.com/languages/cogmap.html,pl,1992
+cogo,https://codelani.com/languages/cogo.html,pl,1962
 coherence,https://codelani.com/languages/coherence.html,pl,2009
 coherent-parallel-c,https://codelani.com/languages/coherent-parallel-c.html,pl,1988
 coi-protocol,https://codelani.com/languages/coi-protocol.html,protocol,
@@ -821,6 +831,7 @@ css,https://codelani.com/languages/css.html,stylesheetLanguage,1996
 cssa,https://codelani.com/languages/cssa.html,pl,1979
 cst,https://codelani.com/languages/cst.html,pl,1988
 csv,https://codelani.com/languages/csv.html,metaLanguage,1972
+csvw,https://codelani.com/languages/csvw.html,metaLanguage,2014
 ct,https://codelani.com/languages/ct.html,pl,1989
 ctan-pm,https://codelani.com/languages/ctan-pm.html,packageManager,
 ctr,https://codelani.com/languages/ctr.html,pl,2017
@@ -829,6 +840,7 @@ cube,https://codelani.com/languages/cube.html,pl,1992
 cuda,https://codelani.com/languages/cuda.html,pl,2007
 cuecat,https://codelani.com/languages/cuecat.html,barCodeFormat,2000
 cuelang,https://codelani.com/languages/cuelang.html,metaLanguage,2018
+culler-fried-system,https://codelani.com/languages/culler-fried-system.html,pl,1961
 cullinet,https://codelani.com/languages/cullinet.html,pl,1968
 cuneiform,https://codelani.com/languages/cuneiform.html,pl,2015
 cupid,https://codelani.com/languages/cupid.html,pl,1975
@@ -915,12 +927,14 @@ descartes,https://codelani.com/languages/descartes.html,pl,1983
 descriptran,https://codelani.com/languages/descriptran.html,pl,1963
 desktop,https://codelani.com/languages/desktop.html,application,2008
 detab-65,https://codelani.com/languages/detab-65.html,pl,1964
+detab-x,https://codelani.com/languages/detab-x.html,pl,1960
 detap,https://codelani.com/languages/detap.html,pl,1965
 deva,https://codelani.com/languages/deva.html,pl,1993
 devil,https://codelani.com/languages/devil.html,pl,2000
 dex,https://codelani.com/languages/dex.html,pl,2018
 dexterity,https://codelani.com/languages/dexterity.html,pl,1991
 dfl,https://codelani.com/languages/dfl.html,pl,1983
+dfns,https://codelani.com/languages/dfns.html,pl,
 dgraph,https://codelani.com/languages/dgraph.html,application,2015
 dhall,https://codelani.com/languages/dhall.html,metaLanguage,2017
 diagram,https://codelani.com/languages/diagram.html,pl,1980
@@ -1038,7 +1052,8 @@ edinburgh-imp,https://codelani.com/languages/edinburgh-imp.html,pl,2002
 edinburgh-lcf,https://codelani.com/languages/edinburgh-lcf.html,pl,1979
 edison,https://codelani.com/languages/edison.html,pl,1992
 edje-data-collection,https://codelani.com/languages/edje-data-collection.html,jsonFormat,2010
-edn,https://codelani.com/languages/edn.html,application,2012
+edn,https://codelani.com/languages/edn.html,metaLanguage,2012
+edsac-initial-orders,https://codelani.com/languages/edsac-initial-orders.html,assembly,1948
 edsim,https://codelani.com/languages/edsim.html,pl,1977
 educe,https://codelani.com/languages/educe.html,pl,1986
 educe-star,https://codelani.com/languages/educe-star.html,pl,1990
@@ -1120,6 +1135,7 @@ euphoria,https://codelani.com/languages/euphoria.html,pl,1993
 eurisko,https://codelani.com/languages/eurisko.html,pl,1978
 eva,https://codelani.com/languages/eva.html,pl,1990
 eve,https://codelani.com/languages/eve.html,pl,2016
+exapt,https://codelani.com/languages/exapt.html,pl,1967
 excel-app,https://codelani.com/languages/excel-app.html,application,1987
 exec-2,https://codelani.com/languages/exec-2.html,pl,1970
 exel,https://codelani.com/languages/exel.html,pl,1973
@@ -1154,6 +1170,7 @@ false,https://codelani.com/languages/false.html,pl,1993
 family-basic,https://codelani.com/languages/family-basic.html,pl,1984
 fancy,https://codelani.com/languages/fancy.html,pl,2010
 fantom,https://codelani.com/languages/fantom.html,pl,2005
+fap,https://codelani.com/languages/fap.html,assembly,1959
 far,https://codelani.com/languages/far.html,pl,2000
 fasta-format,https://codelani.com/languages/fasta-format.html,textData,2004
 fastq-format,https://codelani.com/languages/fastq-format.html,textData,2000
@@ -1192,6 +1209,7 @@ fl,https://codelani.com/languages/fl.html,pl,1989
 flacc,https://codelani.com/languages/flacc.html,pl,1977
 flagship,https://codelani.com/languages/flagship.html,pl,1986
 flame-ir,https://codelani.com/languages/flame-ir.html,ir,2015
+flang,https://codelani.com/languages/flang.html,pl,1988
 flapjax,https://codelani.com/languages/flapjax.html,pl,2006
 flatbuffers,https://codelani.com/languages/flatbuffers.html,idl,2014
 flavors,https://codelani.com/languages/flavors.html,pl,1980
@@ -1218,6 +1236,7 @@ fm-standard,https://codelani.com/languages/fm-standard.html,standard,1950
 fmj,https://codelani.com/languages/fmj.html,pl,2003
 fml,https://codelani.com/languages/fml.html,xmlFormat,2004
 fo,https://codelani.com/languages/fo.html,pl,2018
+foaf,https://codelani.com/languages/foaf.html,xmlFormat,2007
 focal,https://codelani.com/languages/focal.html,pl,1968
 focus,https://codelani.com/languages/focus.html,pl,1997
 foil,https://codelani.com/languages/foil.html,pl,1967
@@ -1246,6 +1265,8 @@ fortran-90,https://codelani.com/languages/fortran-90.html,pl,1990
 fortran-cep,https://codelani.com/languages/fortran-cep.html,pl,1963
 fortran-d,https://codelani.com/languages/fortran-d.html,pl,1991
 fortran-ii,https://codelani.com/languages/fortran-ii.html,pl,1958
+fortran-iii,https://codelani.com/languages/fortran-iii.html,pl,1958
+fortran-iv,https://codelani.com/languages/fortran-iv.html,pl,1962
 fortran-m,https://codelani.com/languages/fortran-m.html,pl,1992
 fortransit,https://codelani.com/languages/fortransit.html,pl,1956
 fortress,https://codelani.com/languages/fortress.html,pl,2004
@@ -1259,6 +1280,8 @@ fpgac,https://codelani.com/languages/fpgac.html,pl,1996
 fractran,https://codelani.com/languages/fractran.html,pl,1996
 frame,https://codelani.com/languages/frame.html,pl,2013
 framework-office-suite,https://codelani.com/languages/framework-office-suite.html,pl,1983
+fran,https://codelani.com/languages/fran.html,pl,1997
+frank,https://codelani.com/languages/frank.html,pl,1985
 free-pascal,https://codelani.com/languages/free-pascal.html,pl,1997
 freebasic,https://codelani.com/languages/freebasic.html,pl,2004
 freebsd,https://codelani.com/languages/freebsd.html,os,1993
@@ -1297,6 +1320,7 @@ gap,https://codelani.com/languages/gap.html,pl,1986
 gargoyle,https://codelani.com/languages/gargoyle.html,pl,1964
 garp,https://codelani.com/languages/garp.html,pl,1988
 gas,https://codelani.com/languages/gas.html,compiler,1986
+gasp,https://codelani.com/languages/gasp.html,pl,1961
 gasp-ii,https://codelani.com/languages/gasp-ii.html,pl,1967
 gat,https://codelani.com/languages/gat.html,pl,1959
 gauche,https://codelani.com/languages/gauche.html,pl,1998
@@ -1320,6 +1344,7 @@ gema,https://codelani.com/languages/gema.html,grammarLanguage,1995
 general-algebraic-modeling-system,https://codelani.com/languages/general-algebraic-modeling-system.html,pl,1963
 generate-ninja,https://codelani.com/languages/generate-ninja.html,application,2015
 generic,https://codelani.com/languages/generic.html,ir,2003
+generic-haskell,https://codelani.com/languages/generic-haskell.html,pl,2000
 genero,https://codelani.com/languages/genero.html,pl,2010
 genexus,https://codelani.com/languages/genexus.html,pl,1988
 genie,https://codelani.com/languages/genie.html,pl,2008
@@ -1410,8 +1435,9 @@ graphit,https://codelani.com/languages/graphit.html,pl,2018
 graphlog,https://codelani.com/languages/graphlog.html,pl,1988
 graphml,https://codelani.com/languages/graphml.html,xmlFormat,2001
 graphos,https://codelani.com/languages/graphos.html,pl,1972
-graphql,https://codelani.com/languages/graphql.html,queryLanguage,2015
+graphql,https://codelani.com/languages/graphql.html,queryLanguage,2012
 graphql-plus-minus,https://codelani.com/languages/graphql-plus-minus.html,queryLanguage,2017
+graphql-sdl,https://codelani.com/languages/graphql-sdl.html,queryLanguage,2018
 graqula,https://codelani.com/languages/graqula.html,pl,1993
 grass,https://codelani.com/languages/grass.html,pl,1977
 gravity,https://codelani.com/languages/gravity.html,pl,2017
@@ -1468,6 +1494,7 @@ hasl,https://codelani.com/languages/hasl.html,pl,1982
 haste,https://codelani.com/languages/haste.html,pl,2014
 haxe,https://codelani.com/languages/haxe.html,pl,2005
 haxelibs-pm,https://codelani.com/languages/haxelibs-pm.html,packageManager,
+haystaq,https://codelani.com/languages/haystaq.html,queryLanguage,1959
 hazel,https://codelani.com/languages/hazel.html,pl,2016
 hbasic,https://codelani.com/languages/hbasic.html,pl,2007
 hcard,https://codelani.com/languages/hcard.html,htmlFormat,2009
@@ -1476,6 +1503,7 @@ hcl,https://codelani.com/languages/hcl.html,metaLanguage,2014
 hdf,https://codelani.com/languages/hdf.html,binaryDataFormat,1992
 hdfs,https://codelani.com/languages/hdfs.html,filesystem,2011
 hdmi-standard,https://codelani.com/languages/hdmi-standard.html,standard,2002
+hdt,https://codelani.com/languages/hdt.html,binaryDataFormat,2012
 helena,https://codelani.com/languages/helena.html,pl,2017
 helium,https://codelani.com/languages/helium.html,pl,2003
 hello,https://codelani.com/languages/hello.html,pl,2015
@@ -1540,6 +1568,7 @@ httplang,https://codelani.com/languages/httplang.html,pl,2015
 huginn,https://codelani.com/languages/huginn.html,pl,2015
 hugo,https://codelani.com/languages/hugo.html,pl,
 hugo-programming-language,https://codelani.com/languages/hugo-programming-language.html,pl,1995
+humanhash-hash-function,https://codelani.com/languages/humanhash-hash-function.html,hashFunction,2011
 hummingbird-quickscript,https://codelani.com/languages/hummingbird-quickscript.html,pl,1990
 hxml,https://codelani.com/languages/hxml.html,application,2009
 hy,https://codelani.com/languages/hy.html,pl,2013
@@ -1555,6 +1584,7 @@ hypertalk,https://codelani.com/languages/hypertalk.html,pl,1987
 hyphy,https://codelani.com/languages/hyphy.html,pl,2008
 hytime,https://codelani.com/languages/hytime.html,pl,1991
 hytran,https://codelani.com/languages/hytran.html,pl,1963
+i,https://codelani.com/languages/i.html,pl,2012
 i-expressions,https://codelani.com/languages/i-expressions.html,metaLanguage,2003
 ia-32,https://codelani.com/languages/ia-32.html,isa,1985
 ial,https://codelani.com/languages/ial.html,pl,1958
@@ -1573,6 +1603,8 @@ ibuki-cl,https://codelani.com/languages/ibuki-cl.html,pl,1992
 icalendar-format,https://codelani.com/languages/icalendar-format.html,textFormat,1998
 icarus,https://codelani.com/languages/icarus.html,pl,2015
 icd,https://codelani.com/languages/icd.html,schema,1983
+ices-system,https://codelani.com/languages/ices-system.html,standard,1961
+icetran,https://codelani.com/languages/icetran.html,pl,1965
 ici,https://codelani.com/languages/ici.html,pl,1980
 icon,https://codelani.com/languages/icon.html,pl,1977
 icot,https://codelani.com/languages/icot.html,pl,1995
@@ -1580,6 +1612,7 @@ id,https://codelani.com/languages/id.html,pl,1975
 idl,https://codelani.com/languages/idl.html,pl,1977
 idl-sl,https://codelani.com/languages/idl-sl.html,idl,1980
 idris,https://codelani.com/languages/idris.html,pl,2014
+ids,https://codelani.com/languages/ids.html,queryLanguage,1964
 idyll,https://codelani.com/languages/idyll.html,pl,2017
 ifo,https://codelani.com/languages/ifo.html,pl,1987
 ifps,https://codelani.com/languages/ifps.html,pl,1970
@@ -1714,6 +1747,7 @@ jolie,https://codelani.com/languages/jolie.html,pl,2006
 jonprl,https://codelani.com/languages/jonprl.html,pl,2015
 josie,https://codelani.com/languages/josie.html,pl,1991
 joss,https://codelani.com/languages/joss.html,pl,1966
+joss-ii,https://codelani.com/languages/joss-ii.html,pl,1965
 jot,https://codelani.com/languages/jot.html,esolang,
 joule,https://codelani.com/languages/joule.html,pl,1996
 jovial,https://codelani.com/languages/jovial.html,pl,1960
@@ -1767,6 +1801,7 @@ kaleidoscope,https://codelani.com/languages/kaleidoscope.html,pl,1994
 kaleidoscope90,https://codelani.com/languages/kaleidoscope90.html,pl,1990
 kaleidoscope91,https://codelani.com/languages/kaleidoscope91.html,pl,1991
 karel,https://codelani.com/languages/karel.html,pl,1981
+karl,https://codelani.com/languages/karl.html,pl,1993
 kate,https://codelani.com/languages/kate.html,pl,1979
 kate-editor,https://codelani.com/languages/kate-editor.html,editor,2000
 katex,https://codelani.com/languages/katex.html,textMarkup,2013
@@ -1774,6 +1809,7 @@ kathleen-booth,https://codelani.com/languages/kathleen-booth.html,pl,1947
 kaukatcr,https://codelani.com/languages/kaukatcr.html,pl,2018
 kawa-scheme-implementation,https://codelani.com/languages/kawa-scheme-implementation.html,pl,1996
 kayia,https://codelani.com/languages/kayia.html,pl,1999
+kb,https://codelani.com/languages/kb.html,pl,1990
 kee,https://codelani.com/languages/kee.html,pl,1984
 kei,https://codelani.com/languages/kei.html,pl,2019
 kek-nodal,https://codelani.com/languages/kek-nodal.html,pl,1985
@@ -1789,7 +1825,9 @@ kicad,https://codelani.com/languages/kicad.html,application,1992
 kid,https://codelani.com/languages/kid.html,template,1999
 kiev,https://codelani.com/languages/kiev.html,pl,2002
 kilo-lisp,https://codelani.com/languages/kilo-lisp.html,pl,2019
+kima,https://codelani.com/languages/kima.html,pl,2018
 king-kong,https://codelani.com/languages/king-kong.html,pl,1991
+kiss,https://codelani.com/languages/kiss.html,pl,1959
 kit,https://codelani.com/languages/kit.html,template,2012
 kitlang,https://codelani.com/languages/kitlang.html,pl,2018
 kitten,https://codelani.com/languages/kitten.html,pl,2012
@@ -1799,6 +1837,7 @@ kl-one,https://codelani.com/languages/kl-one.html,pl,1977
 kl0,https://codelani.com/languages/kl0.html,pl,1982
 kl1,https://codelani.com/languages/kl1.html,pl,1988
 klaim,https://codelani.com/languages/klaim.html,pl,1997
+klerer-may-system,https://codelani.com/languages/klerer-may-system.html,pl,1964
 klipa,https://codelani.com/languages/klipa.html,pl,1960
 klisp,https://codelani.com/languages/klisp.html,pl,
 klong,https://codelani.com/languages/klong.html,pl,2015
@@ -1902,6 +1941,7 @@ liberty-basic,https://codelani.com/languages/liberty-basic.html,pl,1992
 libra,https://codelani.com/languages/libra.html,pl,
 libsvm-format,https://codelani.com/languages/libsvm-format.html,textData,2011
 life,https://codelani.com/languages/life.html,pl,1987
+lift,https://codelani.com/languages/lift.html,pl,2014
 lil,https://codelani.com/languages/lil.html,pl,1974
 lila,https://codelani.com/languages/lila.html,pl,
 lila-lang,https://codelani.com/languages/lila-lang.html,pl,2019
@@ -1930,6 +1970,7 @@ lisaac,https://codelani.com/languages/lisaac.html,pl,2003
 liseb,https://codelani.com/languages/liseb.html,pl,1994
 liso,https://codelani.com/languages/liso.html,metaLanguage,2014
 lisp,https://codelani.com/languages/lisp.html,pl,1958
+lisp-1-5,https://codelani.com/languages/lisp-1-5.html,pl,1959
 lisp-2,https://codelani.com/languages/lisp-2.html,pl,1963
 lisp-a,https://codelani.com/languages/lisp-a.html,pl,1968
 lisp-machine-lisp,https://codelani.com/languages/lisp-machine-lisp.html,pl,1974
@@ -1978,6 +2019,7 @@ lookml,https://codelani.com/languages/lookml.html,pl,2012
 loom,https://codelani.com/languages/loom.html,knowledgeBase,1987
 loomscript,https://codelani.com/languages/loomscript.html,pl,2013
 loopnpp,https://codelani.com/languages/loopnpp.html,pl,2000
+loops,https://codelani.com/languages/loops.html,pl,1983
 lore,https://codelani.com/languages/lore.html,pl,1985
 lotis,https://codelani.com/languages/lotis.html,pl,1969
 lotos,https://codelani.com/languages/lotos.html,pl,1989
@@ -2004,6 +2046,7 @@ lustre,https://codelani.com/languages/lustre.html,pl,1993
 lyapas,https://codelani.com/languages/lyapas.html,pl,1964
 lygon,https://codelani.com/languages/lygon.html,pl,1995
 lynx,https://codelani.com/languages/lynx.html,pl,1984
+lyric,https://codelani.com/languages/lyric.html,pl,1966
 lyx-editor,https://codelani.com/languages/lyx-editor.html,editor,1995
 m-expressions,https://codelani.com/languages/m-expressions.html,metaLanguage,1960
 m-lisp,https://codelani.com/languages/m-lisp.html,pl,1991
@@ -2011,6 +2054,7 @@ m-programming-language,https://codelani.com/languages/m-programming-language.htm
 m2001,https://codelani.com/languages/m2001.html,pl,2001
 m4,https://codelani.com/languages/m4.html,pl,1977
 m4sugar,https://codelani.com/languages/m4sugar.html,pl,2003
+mac,https://codelani.com/languages/mac.html,pl,1957
 macaims,https://codelani.com/languages/macaims.html,pl,1968
 macbasic,https://codelani.com/languages/macbasic.html,pl,1985
 macbook-air-machine,https://codelani.com/languages/macbook-air-machine.html,computingMachine,2008
@@ -2028,6 +2072,7 @@ madcap,https://codelani.com/languages/madcap.html,pl,1960
 madcap-vi,https://codelani.com/languages/madcap-vi.html,pl,1972
 mads,https://codelani.com/languages/mads.html,pl,1964
 mages,https://codelani.com/languages/mages.html,pl,2016
+magic-paper,https://codelani.com/languages/magic-paper.html,pl,1963
 magik,https://codelani.com/languages/magik.html,pl,1989
 magma,https://codelani.com/languages/magma.html,pl,1993
 magma2,https://codelani.com/languages/magma2.html,pl,1984
@@ -2045,6 +2090,7 @@ malus,https://codelani.com/languages/malus.html,pl,1970
 mama-software,https://codelani.com/languages/mama-software.html,pl,2010
 man-machine-language,https://codelani.com/languages/man-machine-language.html,standard,1982
 manhood,https://codelani.com/languages/manhood.html,pl,2014
+manool,https://codelani.com/languages/manool.html,pl,2018
 manuscript,https://codelani.com/languages/manuscript.html,pl,
 mapbasic,https://codelani.com/languages/mapbasic.html,pl,1997
 maple,https://codelani.com/languages/maple.html,pl,1982
@@ -2098,6 +2144,7 @@ mbox,https://codelani.com/languages/mbox.html,textData,1974
 mckeeman-form,https://codelani.com/languages/mckeeman-form.html,grammarLanguage,
 mcleyvier-command-language,https://codelani.com/languages/mcleyvier-command-language.html,pl,
 mcobol,https://codelani.com/languages/mcobol.html,pl,1980
+md5-hash-function,https://codelani.com/languages/md5-hash-function.html,hashFunction,1991
 mdl,https://codelani.com/languages/mdl.html,pl,1971
 mdx,https://codelani.com/languages/mdx.html,textMarkup,2017
 mech-lang,https://codelani.com/languages/mech-lang.html,pl,2018
@@ -2119,6 +2166,7 @@ mesa,https://codelani.com/languages/mesa.html,pl,1970
 meson,https://codelani.com/languages/meson.html,pl,2013
 messagepack,https://codelani.com/languages/messagepack.html,binaryDataFormat,
 met-english,https://codelani.com/languages/met-english.html,pl,1950
+meta-ii,https://codelani.com/languages/meta-ii.html,grammarLanguage,1962
 meta-lisp,https://codelani.com/languages/meta-lisp.html,pl,1970
 meta-plus,https://codelani.com/languages/meta-plus.html,pl,1971
 metacomco,https://codelani.com/languages/metacomco.html,pl,1981
@@ -2249,8 +2297,12 @@ muf,https://codelani.com/languages/muf.html,pl,1995
 mufp,https://codelani.com/languages/mufp.html,pl,1984
 mul-t,https://codelani.com/languages/mul-t.html,pl,1989
 multi-user-basic,https://codelani.com/languages/multi-user-basic.html,pl,1980
+multiaddr,https://codelani.com/languages/multiaddr.html,schema,2014
+multibase,https://codelani.com/languages/multibase.html,encoding,2016
+multicodec,https://codelani.com/languages/multicodec.html,encoding,
 multics,https://codelani.com/languages/multics.html,pl,1967
 multigame,https://codelani.com/languages/multigame.html,pl,1994
+multihash-hash-function,https://codelani.com/languages/multihash-hash-function.html,hashFunction,
 mumath,https://codelani.com/languages/mumath.html,pl,1978
 mumps,https://codelani.com/languages/mumps.html,pl,1966
 mums,https://codelani.com/languages/mums.html,pl,1976
@@ -2258,6 +2310,7 @@ mun-lang,https://codelani.com/languages/mun-lang.html,pl,2019
 munin,https://codelani.com/languages/munin.html,pl,1989
 muon,https://codelani.com/languages/muon.html,pl,2019
 mupad,https://codelani.com/languages/mupad.html,pl,1997
+murmur-hash-function,https://codelani.com/languages/murmur-hash-function.html,hashFunction,2008
 music-sp,https://codelani.com/languages/music-sp.html,pl,1972
 musicxml,https://codelani.com/languages/musicxml.html,pl,2004
 musimp,https://codelani.com/languages/musimp.html,pl,1978
@@ -2293,7 +2346,9 @@ ncl,https://codelani.com/languages/ncl.html,pl,1994
 ndl,https://codelani.com/languages/ndl.html,pl,
 nearley,https://codelani.com/languages/nearley.html,grammarLanguage,2014
 neater,https://codelani.com/languages/neater.html,linter,1968
+nebula,https://codelani.com/languages/nebula.html,pl,1960
 nectar,https://codelani.com/languages/nectar.html,pl,2016
+neeilang,https://codelani.com/languages/neeilang.html,pl,2019
 neko,https://codelani.com/languages/neko.html,pl,2005
 neliac,https://codelani.com/languages/neliac.html,pl,1958
 nemerle,https://codelani.com/languages/nemerle.html,pl,2003
@@ -2430,7 +2485,7 @@ ocaml,https://codelani.com/languages/ocaml.html,pl,1996
 occam,https://codelani.com/languages/occam.html,pl,1983
 occam-2,https://codelani.com/languages/occam-2.html,pl,1987
 occam-pi,https://codelani.com/languages/occam-pi.html,pl,2005
-ocl,https://codelani.com/languages/ocl.html,,1997
+ocl,https://codelani.com/languages/ocl.html,pl,1997
 octave,https://codelani.com/languages/octave.html,pl,1988
 octopus,https://codelani.com/languages/octopus.html,pl,1993
 odata,https://codelani.com/languages/odata.html,protocol,2007
@@ -2458,6 +2513,10 @@ omgrofl,https://codelani.com/languages/omgrofl.html,esolang,2006
 omikron-basic,https://codelani.com/languages/omikron-basic.html,pl,1985
 omnimark,https://codelani.com/languages/omnimark.html,pl,
 omnis-studio,https://codelani.com/languages/omnis-studio.html,pl,1982
+omnitab,https://codelani.com/languages/omnitab.html,pl,1963
+omnitab-80,https://codelani.com/languages/omnitab-80.html,pl,1980
+omnitab-ii,https://codelani.com/languages/omnitab-ii.html,pl,1970
+one-man-language,https://codelani.com/languages/one-man-language.html,pl,1977
 onex,https://codelani.com/languages/onex.html,application,2014
 oniguruma,https://codelani.com/languages/oniguruma.html,queryLanguage,
 onnx,https://codelani.com/languages/onnx.html,binaryDataFormat,2017
@@ -2465,6 +2524,7 @@ onyx,https://codelani.com/languages/onyx.html,pl,1989
 ooc,https://codelani.com/languages/ooc.html,pl,2009
 oolp,https://codelani.com/languages/oolp.html,pl,1989
 oopal,https://codelani.com/languages/oopal.html,pl,2002
+oops,https://codelani.com/languages/oops.html,pl,1986
 oopsilon,https://codelani.com/languages/oopsilon.html,esolang,2017
 oopsp,https://codelani.com/languages/oopsp.html,pl,1988
 ooxml,https://codelani.com/languages/ooxml.html,xmlFormat,2006
@@ -2478,6 +2538,7 @@ opencomal,https://codelani.com/languages/opencomal.html,pl,
 openedge-advanced-business-language,https://codelani.com/languages/openedge-advanced-business-language.html,pl,2006
 openexr-format,https://codelani.com/languages/openexr-format.html,binaryDataFormat,1999
 opengl,https://codelani.com/languages/opengl.html,library,1992
+opengraph,https://codelani.com/languages/opengraph.html,xmlFormat,
 openlisp,https://codelani.com/languages/openlisp.html,pl,1988
 openmusic,https://codelani.com/languages/openmusic.html,pl,
 openrc-runscript,https://codelani.com/languages/openrc-runscript.html,application,2007
@@ -2508,6 +2569,7 @@ orient84-k,https://codelani.com/languages/orient84-k.html,pl,1986
 orlog,https://codelani.com/languages/orlog.html,pl,1992
 osiris,https://codelani.com/languages/osiris.html,pl,1970
 osl-2,https://codelani.com/languages/osl-2.html,pl,1970
+osql,https://codelani.com/languages/osql.html,queryLanguage,1990
 ottawa-euclid,https://codelani.com/languages/ottawa-euclid.html,pl,1984
 otter,https://codelani.com/languages/otter.html,pl,1988
 owbasic,https://codelani.com/languages/owbasic.html,pl,2000
@@ -2594,6 +2656,7 @@ pcn,https://codelani.com/languages/pcn.html,pl,1992
 pcol,https://codelani.com/languages/pcol.html,pl,1986
 pcpp,https://codelani.com/languages/pcpp.html,pl,1991
 pcre,https://codelani.com/languages/pcre.html,queryLanguage,1997
+pdel,https://codelani.com/languages/pdel.html,pl,1968
 pdf,https://codelani.com/languages/pdf.html,binaryDataFormat,1993
 pdl,https://codelani.com/languages/pdl.html,pl,1973
 pdl-ada,https://codelani.com/languages/pdl-ada.html,pl,1981
@@ -2602,6 +2665,7 @@ pear-pm,https://codelani.com/languages/pear-pm.html,packageManager,1999
 pearl,https://codelani.com/languages/pearl.html,pl,1977
 pebble,https://codelani.com/languages/pebble.html,pl,1984
 peg,https://codelani.com/languages/peg.html,grammarLanguage,2002
+pegasus-autocode,https://codelani.com/languages/pegasus-autocode.html,pl,1959
 pegjs,https://codelani.com/languages/pegjs.html,grammarLanguage,2010
 pei,https://codelani.com/languages/pei.html,pl,1994
 penguor,https://codelani.com/languages/penguor.html,pl,2020
@@ -2702,6 +2766,7 @@ plist,https://codelani.com/languages/plist.html,textMarkup,2012
 plot,https://codelani.com/languages/plot.html,template,2019
 plpgsql,https://codelani.com/languages/plpgsql.html,pl,1998
 pluk,https://codelani.com/languages/pluk.html,pl,
+plum,https://codelani.com/languages/plum.html,pl,1978
 plumb,https://codelani.com/languages/plumb.html,pl,2014
 plus,https://codelani.com/languages/plus.html,pl,1976
 plz,https://codelani.com/languages/plz.html,pl,1979
@@ -2754,6 +2819,8 @@ powershell,https://codelani.com/languages/powershell.html,pl,2006
 powershell-gallery-pm,https://codelani.com/languages/powershell-gallery-pm.html,packageManager,
 ppm-format,https://codelani.com/languages/ppm-format.html,textData,1988
 pqq,https://codelani.com/languages/pqq.html,pl,1964
+praxis,https://codelani.com/languages/praxis.html,pl,1980
+praxis-lang,https://codelani.com/languages/praxis-lang.html,pl,2011
 preferred-executable-format,https://codelani.com/languages/preferred-executable-format.html,pl,1994
 presto,https://codelani.com/languages/presto.html,pl,1987
 principle-of-sufficient-reason,https://codelani.com/languages/principle-of-sufficient-reason.html,pl,1975
@@ -2782,6 +2849,7 @@ prolog-pack-pm,https://codelani.com/languages/prolog-pack-pm.html,packageManager
 prologpp,https://codelani.com/languages/prologpp.html,pl,1994
 promal,https://codelani.com/languages/promal.html,pl,1986
 prometheus,https://codelani.com/languages/prometheus.html,pl,
+prompter,https://codelani.com/languages/prompter.html,pl,2011
 promql,https://codelani.com/languages/promql.html,queryLanguage,2014
 property-specification-language,https://codelani.com/languages/property-specification-language.html,pl,2004
 prophet,https://codelani.com/languages/prophet.html,pl,1974
@@ -2794,6 +2862,7 @@ protium,https://codelani.com/languages/protium.html,pl,2007
 proto-gnosis,https://codelani.com/languages/proto-gnosis.html,pl,1987
 protobuf,https://codelani.com/languages/protobuf.html,idl,2008
 protos-l,https://codelani.com/languages/protos-l.html,pl,1989
+protosynthex,https://codelani.com/languages/protosynthex.html,pl,1964
 providex,https://codelani.com/languages/providex.html,pl,1992
 prow,https://codelani.com/languages/prow.html,pl,1969
 proxy,https://codelani.com/languages/proxy.html,pl,1992
@@ -2804,6 +2873,7 @@ psi,https://codelani.com/languages/psi.html,pl,
 psl,https://codelani.com/languages/psl.html,pl,1979
 psyche,https://codelani.com/languages/psyche.html,pl,2018
 psyche-c,https://codelani.com/languages/psyche-c.html,compiler,2016
+psyco,https://codelani.com/languages/psyco.html,grammarLanguage,
 pt,https://codelani.com/languages/pt.html,pl,1983
 ptx,https://codelani.com/languages/ptx.html,assembly,2009
 public-key-file,https://codelani.com/languages/public-key-file.html,application,1995
@@ -2865,6 +2935,7 @@ quickbasic,https://codelani.com/languages/quickbasic.html,pl,1985
 quicklisp-pm,https://codelani.com/languages/quicklisp-pm.html,packageManager,2010
 quicksight-app,https://codelani.com/languages/quicksight-app.html,application,2015
 quikscript,https://codelani.com/languages/quikscript.html,pl,1965
+quiktran,https://codelani.com/languages/quiktran.html,pl,1964
 quilt,https://codelani.com/languages/quilt.html,pl,1970
 quorum,https://codelani.com/languages/quorum.html,pl,2013
 qute,https://codelani.com/languages/qute.html,pl,1986
@@ -2879,7 +2950,7 @@ raco-pm,https://codelani.com/languages/raco-pm.html,packageManager,
 ragel,https://codelani.com/languages/ragel.html,pl,2007
 rails,https://codelani.com/languages/rails.html,framework,2005
 rainbow,https://codelani.com/languages/rainbow.html,pl,2009
-raku,https://codelani.com/languages/raku.html,,
+raku,https://codelani.com/languages/raku.html,pl,2019
 ralph,https://codelani.com/languages/ralph.html,pl,2010
 ramen,https://codelani.com/languages/ramen.html,pl,2017
 ramis-software,https://codelani.com/languages/ramis-software.html,pl,1960
@@ -2890,6 +2961,7 @@ rapid,https://codelani.com/languages/rapid.html,pl,1994
 rapidbatch,https://codelani.com/languages/rapidbatch.html,pl,
 rapidgen-rpl,https://codelani.com/languages/rapidgen-rpl.html,pl,1983
 rapidq,https://codelani.com/languages/rapidq.html,pl,2000
+rapidwrite,https://codelani.com/languages/rapidwrite.html,pl,1962
 rapira,https://codelani.com/languages/rapira.html,pl,1987
 raptor,https://codelani.com/languages/raptor.html,visual,
 rascal,https://codelani.com/languages/rascal.html,grammarLanguage,2013
@@ -2905,6 +2977,7 @@ rc,https://codelani.com/languages/rc.html,pl,1989
 rcpp,https://codelani.com/languages/rcpp.html,pl,2001
 rdata-format,https://codelani.com/languages/rdata-format.html,binaryDataFormat,2000
 rdf,https://codelani.com/languages/rdf.html,schema,1997
+rdf-schema,https://codelani.com/languages/rdf-schema.html,grammarLanguage,1998
 rdfa,https://codelani.com/languages/rdfa.html,xmlFormat,2004
 rdml,https://codelani.com/languages/rdml.html,pl,2005
 rdoc,https://codelani.com/languages/rdoc.html,textMarkup,2004
@@ -2982,6 +3055,7 @@ rigal,https://codelani.com/languages/rigal.html,pl,1987
 ring,https://codelani.com/languages/ring.html,pl,2016
 rio,https://codelani.com/languages/rio.html,pl,2017
 risc-v,https://codelani.com/languages/risc-v.html,isa,2010
+rise,https://codelani.com/languages/rise.html,pl,2020
 rlab,https://codelani.com/languages/rlab.html,pl,1998
 rlisp,https://codelani.com/languages/rlisp.html,pl,1970
 rlmeta,https://codelani.com/languages/rlmeta.html,grammarLanguage,
@@ -3120,6 +3194,7 @@ scribe,https://codelani.com/languages/scribe.html,pl,1980
 scrimshaw,https://codelani.com/languages/scrimshaw.html,pl,1993
 script,https://codelani.com/languages/script.html,pl,1999
 scriptbasic,https://codelani.com/languages/scriptbasic.html,pl,1999
+scriptease,https://codelani.com/languages/scriptease.html,pl,2001
 scriptol,https://codelani.com/languages/scriptol.html,pl,2001
 scriptx,https://codelani.com/languages/scriptx.html,pl,1995
 scroll,https://codelani.com/languages/scroll.html,pl,1970
@@ -3161,8 +3236,12 @@ seval,https://codelani.com/languages/seval.html,pl,1981
 seymour,https://codelani.com/languages/seymour.html,pl,1989
 sgml,https://codelani.com/languages/sgml.html,textMarkup,1986
 sh,https://codelani.com/languages/sh.html,pl,1971
+sha-1-hash-function,https://codelani.com/languages/sha-1-hash-function.html,hashFunction,
+sha-2-hash-function,https://codelani.com/languages/sha-2-hash-function.html,hashFunction,2001
+sha-3-hash-function,https://codelani.com/languages/sha-3-hash-function.html,hashFunction,
 shade,https://codelani.com/languages/shade.html,pl,2012
 shaderlab,https://codelani.com/languages/shaderlab.html,pl,2000
+shadow,https://codelani.com/languages/shadow.html,pl,1958
 shakespeare,https://codelani.com/languages/shakespeare.html,esolang,1993
 shakespeare-programming-language,https://codelani.com/languages/shakespeare-programming-language.html,pl,2001
 shakti,https://codelani.com/languages/shakti.html,pl,2019
@@ -3216,10 +3295,12 @@ sina,https://codelani.com/languages/sina.html,pl,1989
 sinclair-basic,https://codelani.com/languages/sinclair-basic.html,pl,1979
 sing-sharp,https://codelani.com/languages/sing-sharp.html,pl,2005
 singular,https://codelani.com/languages/singular.html,pl,1987
+siphash-hash-function,https://codelani.com/languages/siphash-hash-function.html,hashFunction,2011
 siprol,https://codelani.com/languages/siprol.html,pl,1980
 sisal,https://codelani.com/languages/sisal.html,pl,1983
 sisc,https://codelani.com/languages/sisc.html,pl,2007
 sizzle,https://codelani.com/languages/sizzle.html,queryLanguage,2008
+sketchpad,https://codelani.com/languages/sketchpad.html,pl,1962
 sketchpad-iii,https://codelani.com/languages/sketchpad-iii.html,pl,1966
 skew,https://codelani.com/languages/skew.html,pl,2014
 skil,https://codelani.com/languages/skil.html,pl,1996
@@ -3389,6 +3470,7 @@ stratego,https://codelani.com/languages/stratego.html,grammarLanguage,1998
 strcmacs,https://codelani.com/languages/strcmacs.html,pl,1977
 streamit,https://codelani.com/languages/streamit.html,pl,1992
 strema,https://codelani.com/languages/strema.html,pl,1976
+stress,https://codelani.com/languages/stress.html,pl,1963
 string-diagrams-notation,https://codelani.com/languages/string-diagrams-notation.html,notation,2007
 stringbean,https://codelani.com/languages/stringbean.html,pl,2016
 stripe,https://codelani.com/languages/stripe.html,webApi,2011
@@ -3396,6 +3478,7 @@ strips,https://codelani.com/languages/strips.html,pl,1969
 strongtalk,https://codelani.com/languages/strongtalk.html,pl,1994
 structured-audio-orchestra-language,https://codelani.com/languages/structured-audio-orchestra-language.html,pl,1999
 structured-text,https://codelani.com/languages/structured-text.html,pl,2019
+strudl,https://codelani.com/languages/strudl.html,pl,1965
 stx,https://codelani.com/languages/stx.html,pl,1999
 stylus,https://codelani.com/languages/stylus.html,stylesheetLanguage,2010
 sub,https://codelani.com/languages/sub.html,plzoo,2013
@@ -3429,6 +3512,7 @@ sweet-expressions,https://codelani.com/languages/sweet-expressions.html,pl,2013
 swi-prolog,https://codelani.com/languages/swi-prolog.html,pl,1987
 swift,https://codelani.com/languages/swift.html,pl,2014
 swift-il,https://codelani.com/languages/swift-il.html,ir,2012
+symbal,https://codelani.com/languages/symbal.html,pl,
 symbmath,https://codelani.com/languages/symbmath.html,pl,
 symbol,https://codelani.com/languages/symbol.html,pl,1971
 sympl,https://codelani.com/languages/sympl.html,pl,1970
@@ -3532,6 +3616,7 @@ tht,https://codelani.com/languages/tht.html,pl,2017
 thue-programming-language,https://codelani.com/languages/thue-programming-language.html,pl,2004
 thune,https://codelani.com/languages/thune.html,pl,2014
 thymeleaf,https://codelani.com/languages/thymeleaf.html,template,2011
+ti-89-basic,https://codelani.com/languages/ti-89-basic.html,pl,
 ti-basic,https://codelani.com/languages/ti-basic.html,pl,1970
 ti-basic-assembly,https://codelani.com/languages/ti-basic-assembly.html,pl,1970
 tibbo-basic,https://codelani.com/languages/tibbo-basic.html,pl,2000
@@ -3624,6 +3709,7 @@ tyco,https://codelani.com/languages/tyco.html,pl,1998
 tymshare-superbasic,https://codelani.com/languages/tymshare-superbasic.html,pl,1968
 type-language,https://codelani.com/languages/type-language.html,pl,2013
 typecobol,https://codelani.com/languages/typecobol.html,pl,2015
+typedefs,https://codelani.com/languages/typedefs.html,grammarLanguage,2017
 typescript,https://codelani.com/languages/typescript.html,pl,2012
 tyruba,https://codelani.com/languages/tyruba.html,pl,1998
 u-datalog,https://codelani.com/languages/u-datalog.html,pl,1997
@@ -3643,6 +3729,7 @@ ufo,https://codelani.com/languages/ufo.html,pl,1992
 ugnis,https://codelani.com/languages/ugnis.html,pl,2017
 uiml,https://codelani.com/languages/uiml.html,xmlFormat,2005
 ujml,https://codelani.com/languages/ujml.html,pl,2000
+ulisp,https://codelani.com/languages/ulisp.html,pl,
 ultralisp-pm,https://codelani.com/languages/ultralisp-pm.html,packageManager,2018
 uml,https://codelani.com/languages/uml.html,xmlFormat,1996
 uml2-sp,https://codelani.com/languages/uml2-sp.html,pl,2018
@@ -3667,6 +3754,7 @@ unlambda,https://codelani.com/languages/unlambda.html,pl,1999
 uno,https://codelani.com/languages/uno.html,pl,2002
 unravel,https://codelani.com/languages/unravel.html,pl,1973
 unrealscript,https://codelani.com/languages/unrealscript.html,pl,1998
+unseemly,https://codelani.com/languages/unseemly.html,pl,2016
 upic,https://codelani.com/languages/upic.html,pl,2018
 urbiscript,https://codelani.com/languages/urbiscript.html,pl,2003
 url,https://codelani.com/languages/url.html,schema,1994
@@ -3699,6 +3787,7 @@ vector-pascal,https://codelani.com/languages/vector-pascal.html,pl,1998
 vega-editor-app,https://codelani.com/languages/vega-editor-app.html,application,2015
 venus,https://codelani.com/languages/venus.html,pl,1967
 verilog,https://codelani.com/languages/verilog.html,hardwareDescriptionLanguage,1984
+verona,https://codelani.com/languages/verona.html,pl,2019
 versioned-text-markup-language,https://codelani.com/languages/versioned-text-markup-language.html,textMarkup,1999
 verve,https://codelani.com/languages/verve.html,pl,2017
 vga-standard,https://codelani.com/languages/vga-standard.html,standard,
@@ -3780,6 +3869,7 @@ webql,https://codelani.com/languages/webql.html,queryLanguage,2001
 webstorm-editor,https://codelani.com/languages/webstorm-editor.html,editor,
 wescheme,https://codelani.com/languages/wescheme.html,pl,2009
 whack,https://codelani.com/languages/whack.html,pl,2018
+whalecalf,https://codelani.com/languages/whalecalf.html,grammarLanguage,2000
 whiley,https://codelani.com/languages/whiley.html,pl,2009
 whirl,https://codelani.com/languages/whirl.html,pl,1997
 whirlwind,https://codelani.com/languages/whirlwind.html,pl,1951
@@ -3815,6 +3905,7 @@ wsdl,https://codelani.com/languages/wsdl.html,xmlFormat,2000
 wsfn-programming-language,https://codelani.com/languages/wsfn-programming-language.html,pl,1983
 wxbasic,https://codelani.com/languages/wxbasic.html,pl,2002
 wylbur,https://codelani.com/languages/wylbur.html,pl,1973
+wyvern,https://codelani.com/languages/wyvern.html,pl,2012
 x-basic,https://codelani.com/languages/x-basic.html,pl,1987
 x-bitmap,https://codelani.com/languages/x-bitmap.html,application,1989
 x-bitmap-format,https://codelani.com/languages/x-bitmap-format.html,textData,1989
@@ -3884,7 +3975,7 @@ y,https://codelani.com/languages/y.html,pl,1981
 y-lang,https://codelani.com/languages/y-lang.html,pl,2019
 yabasic,https://codelani.com/languages/yabasic.html,pl,1995
 yacas,https://codelani.com/languages/yacas.html,pl,1999
-yacc,https://codelani.com/languages/yacc.html,pl,1975
+yacc,https://codelani.com/languages/yacc.html,grammarLanguage,1975
 yaml,https://codelani.com/languages/yaml.html,metaLanguage,2001
 yang,https://codelani.com/languages/yang.html,application,2014
 yap-prolog,https://codelani.com/languages/yap-prolog.html,pl,1985
@@ -3911,7 +4002,7 @@ zed,https://codelani.com/languages/zed.html,pl,1978
 zeno,https://codelani.com/languages/zeno.html,pl,1995
 zenscript,https://codelani.com/languages/zenscript.html,pl,2014
 zephir,https://codelani.com/languages/zephir.html,pl,2013
-zephyr-asdl,https://codelani.com/languages/zephyr-asdl.html,grammarLanguage,
+zephyr-asdl,https://codelani.com/languages/zephyr-asdl.html,grammarLanguage,1997
 zgrass,https://codelani.com/languages/zgrass.html,pl,1978
 zig,https://codelani.com/languages/zig.html,pl,2015
 zigzag,https://codelani.com/languages/zigzag.html,knowledgeBase,1965
