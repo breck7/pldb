@@ -1,0 +1,19 @@
+appeared 2019
+type pl
+creators Josh Huelsman
+website https://jiyu.handmade.network/
+github https://github.com/machinamentum/jiyu
+example
+ #clang_import
+ """
+ #include <stdio.h>
+ """;
+ 
+ func @metaprogram main(argc: int32, argv: **uint8) {
+     printf("Hello, Sailor!\n");
+ 
+     var file = fopen("myfile.txt", "wb");
+     fwrite("Hello, Pilot!\n".data, 1, 14, file);
+     fclose(file);
+ }
+reference https://machinamentum.github.io/Jiyu-A-Programming-Language/

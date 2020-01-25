@@ -1,0 +1,8 @@
+appeared 2015
+type pl
+creators Kevin Lawler
+github https://github.com/kevinlawler/kerf
+example
+ [100] + [0, 10, 20]
+reference http://kerfsoftware.com/
+description Kerf is a columnar tick database and time-series language for Linux/OSX/BSD/iOS/Android. It is written in C and natively speaks JSON and SQL. Kerf can be used for trading platforms, feedhandlers, low-latency networking, high-volume analysis of realtime and historical data, logfile processing, and more.

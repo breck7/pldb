@@ -1,4 +1,16 @@
-appeared 2019
+appeared 2017
 type pl
+github https://github.com/PLSysSec/FaCT
+example
+ void
+ swap_conditional(secret mut uint64[5] a, secret mut uint64[5] b, secret uint64 swapi) {
+   if (swapi == 1) {
+     for (uint32 i from 0 to 5) {
+       secret uint64 x = a[i];
+       a[i] = b[i];
+       b[i] = x;
+     }
+   }
+ }
 reference https://ranjitjhala.github.io/static/fact_dsl.pdf
-description Real-world cryptographic code is often written in a subset of C intended to execute in constant-time, thereby avoiding timing side channel vulnerabilities. This C subset eschews structured programming as we know it: if-statements, looping constructs, and procedural abstractions can leak timing information when handling sensitive data. The resulting obfuscation has led to subtle bugs, even in widely-used high-profile libraries like OpenSSL. To address the challenge of writing constant-time cryptographic code, we present FaCT, a crypto DSL that provides high-level but safe language constructs. The FaCT compiler uses a secrecy type system to automatically transform potentially timing-sensitive high-level code into low-level, constant-time LLVM bitcode. We develop the language and type system, formalize the constant-time transformation, and present an empirical evaluation that uses FaCT to implement core crypto routines from several open-source projects including OpenSSL, libsodium, and curve25519-donna. Our evaluation shows that FaCT's design makes it possible to write \emph{readable}, high-level cryptographic code, with \emph{efficient}, \emph{constant-time} behavior.
+description FaCT is a domain-specific language that aids you in writing constant-time code for cryptographic routines that need to be free from timing side channels. This is the compiler for the Flexible and Constant Time cryptographic programming language. Real-world cryptographic code is often written in a subset of C intended to execute in constant-time, thereby avoiding timing side channel vulnerabilities. This C subset eschews structured programming as we know it: if-statements, looping constructs, and procedural abstractions can leak timing information when handling sensitive data. The resulting obfuscation has led to subtle bugs, even in widely-used high-profile libraries like OpenSSL. To address the challenge of writing constant-time cryptographic code, we present FaCT, a crypto DSL that provides high-level but safe language constructs. The FaCT compiler uses a secrecy type system to automatically transform potentially timing-sensitive high-level code into low-level, constant-time LLVM bitcode. We develop the language and type system, formalize the constant-time transformation, and present an empirical evaluation that uses FaCT to implement core crypto routines from several open-source projects including OpenSSL, libsodium, and curve25519-donna. Our evaluation shows that FaCT's design makes it possible to write \emph{readable}, high-level cryptographic code, with \emph{efficient}, \emph{constant-time} behavior.

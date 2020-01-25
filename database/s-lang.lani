@@ -1,0 +1,19 @@
+appeared 1992
+type pl
+creators John E. Davis
+website http://www.jedsoft.org/slang/doc/html/slang.html
+example
+ define init_array (a)
+ {
+    variable i, imax;
+ 
+    imax = length (a);
+    for (i = 0; i < imax; i++)
+      {
+         a[i] = 7;
+      }
+ }
+ 
+ variable A = Int_Type [10];
+ init_array (A);
+description S-Lang is an interpreted language that was designed from the start to be easily embedded into a program to provide it with a powerful extension language. Examples of programs that use S-Lang as an extension language include the jed text editor and the slrn newsreader. Although S-Lang does not exist as a separate application, it is distributed with a quite capable program called slsh (``slang-shell'') that embeds the interpreter and allows one to execute S-Lang scripts, or simply experiment with S-Lang at an interactive prompt. Many of the the examples in this document are presented in the context of one of the above applications. S-Lang was originally a stack language that supported a postscript-like syntax. For that reason, I named it S-Lang, where the S was supposed to emphasize its stack-based nature. About a year later, I began to work on a preparser that would allow one unfamiliar with stack based languages to make use of a more traditional infix syntax. Currently, the syntax of the language resembles C, nevertheless some postscript-like features still remain, e.g., the `%' character is still used as a comment delimiter.

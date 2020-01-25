@@ -1,0 +1,12 @@
+appeared 2015
+type pl
+github https://github.com/MasterZean/z2-compiler-cpp
+example
+ namespace org.z2legacy.samples.ut;
+     class HelloWorld {
+         def @main() {
+             System.Out << "Hello World!\n";
+         }
+     }
+reference https://www.reddit.com/r/ProgrammingLanguages/comments/4xze6m/introducing_the_z2_programming_language_warning/
+description Z2 is a statically-typed pure-OOP general-use performance-centric systems-programming language.
