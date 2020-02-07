@@ -31,21 +31,25 @@ creatorsNode
  catchAllCellType nameCell
  extends abstractFactNode
  crux creators
+ single
 websiteNode
  description URL of the official homepage for the language project.
  cells keywordCell urlCell
  extends abstractFactNode
  crux website
+ single
 githubNode
  description URL of the official GitHub repo for the language project.
  cells keywordCell urlCell
  extends abstractFactNode
  crux github
+ single
 wikipediaNode
  description Name of the language on Wikipedia, if and only if it has a page dedicated to it.
  cells keywordCell wikipediaIdCell
  extends abstractFactNode
  crux wikipedia
+ single
 exampleNode
  description A text block containing a representative snippet of code for the language.
  catchAllNodeType lineOfCodeNode
@@ -60,6 +64,7 @@ descriptionNode
  baseNodeType blobNode
  crux description
  extends abstractFactNode
+ single
 abstractUrlNode
  cells keywordCell urlCell
  extends abstractFactNode

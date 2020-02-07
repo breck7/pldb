@@ -1,0 +1,22 @@
+appeared 2003
+type pl
+creators Christophe de Dinechin
+website http://tao3d.sourceforge.net/
+github https://github.com/c3d/tao3D
+example
+ import SeasonsGreetingsTheme
+ 
+ theme "SeasonsGreetings"
+ main_title_slide "The main title slide",
+     title "Seasons Greetings theme"
+     subtitle "A theme for the holidays"
+ 
+ section_slide "A section slide",
+     title "Section title"
+     subtitle "Section subtitle"
+ 
+ slide "Bullet points",
+     * "Bullet points"
+     ** "More bullet points"
+     *** "Deeper"
+description Tao3D is a programming language for interactive 3D.

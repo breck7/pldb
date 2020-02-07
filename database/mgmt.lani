@@ -1,0 +1,16 @@
+appeared 2015
+type pl
+website https://purpleidea.com/tags/mgmtconfig/
+github https://github.com/purpleidea/mgmt
+example
+ import "datetime"
+ $is_friday = datetime.weekday(datetime.now()) == "friday"
+ file "/srv/files/" {
+  state => $const.res.file.state.exists,
+  mode => if $is_friday { # this updates the mode, the instant it changes!
+    "0550"
+  } else {
+    "0770"
+  },
+ }
+reference https://fosdem.org/2020/schedule/event/mgmtconfigmore/

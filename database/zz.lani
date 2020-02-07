@@ -1,0 +1,21 @@
+appeared 2019
+type pl
+github https://github.com/aep/zz
+example
+ using <stdio.h>::{printf}
+ 
+ export fn main() -> int {
+     let r = Random{
+         num: 42,
+     };
+     printf("your lucky number: %u\n", r.gen());
+     return 0;
+ }
+ 
+ struct Random {
+     u32 num;
+ }
+ 
+ fn gen(Random *self) -> u32 {
+     return self->num;
+ }

@@ -1,0 +1,16 @@
+appeared 2019
+type pl
+creators Ray Stubbs
+website https://ten-lang.io
+github https://github.com/ten-lang/libten
+example
+ each( irange( 1, 101 )
+   [ num ]
+     if
+       num % 15 = 0: show"FizzBuzz "
+       num % 3  = 0: show"Fizz "
+       num % 5  = 0: show"Buzz "
+     else
+       show( num, " " )
+ )
+ show( N )

@@ -1,0 +1,11 @@
+appeared 
+type pl
+example
+ (define build-exp
+   #~(begin
+       (mkdir #$output)
+       (chdir #$output)
+       (symlink (string-append #$coreutils "/bin/ls")
+                "list-files")))
+reference https://fosdem.org/2020/schedule/event/gexpressionsguile/
+description The GNU Guix project invented G-Expressions to make it easier to "stage" data or code, in the form of S-Expressions, for later manipulation or evaluation. They are similar to S-Expressions, hence the name, but they provide useful code staging features beyond what can be easily accomplished with just "quasiquote" and "unquote". A high-level object (such as a Guix package) can be included in a G-Expression; the transitive dependencies of that high-level object will then be automatically carried along with the G-Expression. When the G-Expression is converted to an S-Expression and stored on disk for later manipulation or evaluation, the high-level object will be automatically "lowered" to an appropriate representation (such as the package's output path) via a "compiler". Compared to direct manipulation of S-Expressions, G-Expressions can provide a simpler and more intuitive way to stage data or code.

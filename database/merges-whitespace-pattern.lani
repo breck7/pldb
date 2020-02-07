@@ -1,3 +1,3 @@
 type pattern
 reference http://wiki.c2.com/?SyntacticallySignificantWhitespaceConsideredHarmful
-description Some languages merge repeated whitespace characters into 1 token as one of the first steps in lexing. Others treat whitespace as semantically meaningful and don't change it, but instead lex and parse it into individual structures. If the language supports features like block comments, it might preserve whitespace perfectly inside delimiters while shrinking other whitespace. 
+description Some languages merge repeated whitespace characters into 1 token as one of the first steps in lexing. Others treat whitespace as semantically meaningful and don't change it, but instead lex and parse it into individual structures. If the language supports features like block comments, it might preserve whitespace perfectly inside delimiters while shrinking other whitespace.

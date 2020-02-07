@@ -28,4 +28,4 @@ example
  main = do
    putStrLn "Hello Console!"
    alert "Hello Alert!"
-   addWindowEvent "load" greet 
+   addWindowEvent "load" greet

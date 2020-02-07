@@ -1,0 +1,50 @@
+appeared 2017
+type grammarLanguage
+creators Stephen Chang and Alex Knauth and Ben Greenman and Milo Turner and Michael Ballantyne
+example
+ #lang turnstile
+ (provide → Int λ #%app #%datum + ann)
+  
+ (define-base-type Int)
+ (define-type-constructor → #:arity > 0)
+  
+ (define-primop + : (→ Int Int Int))
+  
+ ; [APP]
+ (define-typed-syntax (#%app e_fn e_arg ...) ≫
+   [⊢ e_fn ≫ e_fn- ⇒ (~→ τ_in ... τ_out)]
+   #:fail-unless (stx-length=? #'[τ_in ...] #'[e_arg ...])
+                 (format "arity mismatch, expected ~a args, given ~a"
+                         (stx-length #'[τ_in ...]) #'[e_arg ...])
+   [⊢ e_arg ≫ e_arg- ⇐ τ_in] ...
+   --------
+   [⊢ (#%app- e_fn- e_arg- ...) ⇒ τ_out])
+  
+ ; [LAM]
+ (define-typed-syntax λ #:datum-literals (:)
+   [(_ ([x:id : τ_in:type] ...) e) ≫
+    [[x ≫ x- : τ_in.norm] ... ⊢ e ≫ e- ⇒ τ_out]
+    -------
+    [⊢ (λ- (x- ...) e-) ⇒ (→ τ_in.norm ... τ_out)]]
+   [(_ (x:id ...) e) ⇐ (~→ τ_in ... τ_out) ≫
+    [[x ≫ x- : τ_in] ... ⊢ e ≫ e- ⇐ τ_out]
+    ---------
+    [⊢ (λ- (x- ...) e-)]])
+  
+ ; [ANN]
+ (define-typed-syntax (ann e (~datum :) τ:type) ≫
+   [⊢ e ≫ e- ⇐ τ.norm]
+   --------
+   [⊢ e- ⇒ τ.norm])
+  
+ ; [DATUM]
+ (define-typed-syntax #%datum
+   [(_ . n:integer) ≫
+    --------
+    [⊢ (#%datum- . n) ⇒ Int]]
+   [(_ . x) ≫
+    --------
+    [#:error (type-error #:src #'x
+                         #:msg "Unsupported literal: ~v" #'x)]])
+reference https://docs.racket-lang.org/turnstile/index.html
+description Turnstile aims to help Racket programmers create typed languages. It does so with extensions of Racket’s macro-definition forms that facilitate implementation of type rules alongside normal macro code. As a result, the macros implementing a new language directly type check the program during expansion, obviating the need to create and call out to a separate type checker. Thus, a complete typed language implementation remains a series of macro definitions that may be imported and exported in the standard way that Racket programmers are accustomed to.

@@ -1,0 +1,92 @@
+appeared 2018
+type pl
+website https://carth.jo.zone/
+github https://github.com/bryal/carth
+example
+ ;; Note that many of these functions are/will be in the standard
+ ;; library in some shape or form. We just include them all in the same
+ ;; file here to show off more of the syntax and features.
+ 
+ ;; ~start~ is the programs entrypoint
+ (define (start _) (fizzbuzz unit))
+ 
+ (define (fizzbuzz _)
+   (for (range 1 100)
+        (comp display fizzbuzz')))
+ 
+ (define (fizzbuzz' n)
+   (match (Pair (divisible? n 3) (divisible? n 5))
+     (case (Pair false false) (my-show-int n))
+     (case (Pair true false) "Fizz")
+     (case (Pair false true) "Buzz")
+     (case (Pair true true) "Fizzbuzz")))
+ 
+ (define my-show-int
+   (fun-match
+     (case 1 "one")
+     (case 2 "two")
+     (case n (show-int n))))
+ 
+ ;; Apply an action to each element in an iterator
+ (define (for xs f)
+   (match (next xs)
+     (case None unit)
+     (case (Some (Pair x xs'))
+           (seq (f x) (for xs' f)))))
+ 
+ ;; Iterator over the closed range $[a, b]$
+ (define (range a b)
+   (Iter (Lazy (if (> a b)
+                   (fun _ None)
+                 (fun _ (Some (Pair a (range (+ a 1) b))))))))
+ 
+ ;; Advances an iterator, returning the next value and the rest of the
+ ;; iterator
+ (define (next (Iter it)) (lively it))
+ 
+ ;; An iterator / non-strict list
+ (type (Iter a)
+   (Iter (Lazy (Maybe (Pair a (Iter a))))))
+ 
+ (define (lively (Lazy f))
+   (f unit))
+ 
+ ;; A lazy, or rather a non-strict value
+ (type (Lazy a)
+   (Lazy (Fun Unit a)))
+ 
+ (type (Maybe a)
+   None
+   (Some a))
+ 
+ (define (seq a b)
+   b)
+ 
+ ;; Function composition
+ (define (comp f g a)
+   (f (g a)))
+ 
+ (define (divisible? n m)
+   (= (rem n m) 0))
+ 
+ (define (display s)
+   (display-inline (str-append s "\n")))
+ 
+ ;;; Currying wrappers
+ 
+ (define (rem a b)          (rem-int     (Pair a b)))
+ (define (= a b)            (eq-int      (Pair a b)))
+ (define (> a b)            (gt-int      (Pair a b)))
+ (define (+ a b)            (add-int     (Pair a b)))
+ (define (str-append s1 s2) (-str-append (Pair s1 s2)))
+ 
+ ;;; External functions defined in the foreign-core library
+ 
+ (extern show-int (Fun Int Str))
+ (extern eq-int (Fun (Pair Int Int) Bool))
+ (extern gt-int (Fun (Pair Int Int) Bool))
+ (extern rem-int (Fun (Pair Int Int) Int))
+ (extern add-int (Fun (Pair Int Int) Int))
+ (extern display-inline (Fun Str Unit))
+ (extern -str-append (Fun (Pair Str Str) Str))
+description Purely functional programming with lisp-syntax. Less infix, more parens!

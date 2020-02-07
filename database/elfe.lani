@@ -1,0 +1,18 @@
+appeared 2003
+type pl
+creators Christophe de Dinechin
+github https://github.com/c3d/elfe
+example
+ invoke "sensor.corp.net",
+     last_temperature := temperature
+     every 1s,
+         check_temperature temperature
+     check_temperature T:real ->
+         writeln "Measuring temperature ", T, " from process ", process_id
+         if abs(T - last_temperature) >= 1.0 then
+             reply
+                 temperature_changed T, last_temperature
+         last_temperature := T
+ temperature_changed new_temp, last_temp ->
+     writeln "Temperature changed from ", last_temp, " to ", new_temp
+description ELFE is a very simple and small programming language specifcally designed for everyday programming, notably for the Internet of Things.

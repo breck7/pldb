@@ -1,0 +1,49 @@
+appeared 2010
+type pl
+creators KS Sreeram and Joe Groff
+website http://claylabs.com/clay
+github https://github.com/jckarter/clay
+example
+ import printer.(println);
+ 
+ factorial1(n) {
+     if (n == 0)
+         return 1;
+     return n*factorial1(n-1);
+ }
+ 
+ factorial2(n) {
+     var p = 1;
+     again :
+     if (n == 0)
+         return p;
+     p *: n;
+     n -: 1;
+     goto again;
+ }
+ 
+ factorial3(n) {
+     var p = 1;
+     while (true) {
+         if (n == 0) break;
+         p *: n;
+         n -: 1;
+     }
+     return p;
+ }
+ 
+ factorial4(n) {
+     var p = 1;
+     for (i in range(n))
+         p *: i+1;
+     return p;
+ }
+ 
+ main() {
+     var n = 7;
+     n -: 1;
+     var f = factorial4(n);
+     println("factorial(", n, ") = ", f);
+     return 0;
+ }
+reference https://bitbucket.org/kssreeram/clay/src/default/
