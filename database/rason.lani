@@ -1,0 +1,28 @@
+appeared 2015
+type pl
+website https://www.rason.com/
+example
+ {
+     data :
+     {
+         "price" : { value: 200 },
+         "capacity" : { value: 100 },
+         "sold" : { value: 110 },
+         "refund_no_shows" : { value: 0.5 },
+         "refund_overbook" : { value: 1.25 }
+     },
+     uncertainVariables : 
+     {
+         "no_shows" : { formula: "PsiLogNormal(0.1*sold, 0.06*sold)" }
+     },
+     formulas :
+     {
+         "show_ups" : { formula: "sold - Round(no_shows, 0)" },
+         "overbook" : { formula: "Max(0, show_ups - capacity)" }
+     },
+     uncertainFunctions :
+     {
+         "revenue" : { formula: "price*(sold - refund_no_shows * Round(no_shows, 0) - refund_overbook * overbook)",
+         mean : [], stdev: [], max : [], min : [] }
+     }
+ }

@@ -1,3 +1,14 @@
 appeared 2018
 type pl
 website https://janet-lang.org
+example
+ import joy)
+ 
+ (defn home [request]
+   (joy/render :text "You found joy!"))
+ 
+ (def routes [[:get "/" home]])
+ 
+ (def app (joy/handler routes))
+ 
+ (joy/server app 8000)

@@ -1,0 +1,12 @@
+appeared 1941
+type grammarLanguage
+creators Emil Post
+wikipedia Post_canonical_system
+example
+ Alphabet: {[, ]}
+ Initial word: []
+ Production rules: 
+ (1)       $ → [$]
+ (2)       $ → $$
+ (3)       $1$2 → $1[]$2
+reference http://www-formal.stanford.edu/jmc/mcc59.pdf

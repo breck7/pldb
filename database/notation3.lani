@@ -1,0 +1,11 @@
+appeared 1998
+type metaLanguage
+creators Tim Berners-Lee
+wikipedia Notation3
+example
+ @prefix dc: <http://purl.org/dc/elements/1.1/>.
+ 
+ <http://en.wikipedia.org/wiki/Tony_Benn>
+   dc:title "Tony Benn";
+   dc:publisher "Wikipedia".
+reference https://www.w3.org/DesignIssues/N3Resources

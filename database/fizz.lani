@@ -1,0 +1,23 @@
+appeared 2017
+type pl
+website https://f1zz.org/
+example
+ // Code ----------------------------------------------------------------------------------------------------------------------------------
+ 
+ is.tree { // test if a term is a valid binary tree
+ 
+     (nil)^          :-  true;
+     (n(_,_,:l,:r))^ :-  #is.tree(:l), #is.tree(:r);
+     (_)             :-  false;
+ 
+ }
+ 
+ btr.length { // how many nodes is there on a binary tree
+ 
+     (nil,0)^            :-  true;
+     (n(_,_,:l,:r),:n)   :-  #btr.length(:l,:l.n),
+                             #btr.length(:r,:r.n),
+                             sum(:l.n,:r.n,1,:n);
+ 
+ }
+description fizz is an experimental language and runtime environment for the exploration of cognitive architectures and combined Machine Learning (ML) and Machine Reasoning (MR) solutions. It is based primarily on symbolic programming and fuzzy formal logic and it features a distributed (as in heterogeneous computer cluster), concurrent, asynchronous and responsive inference engine.

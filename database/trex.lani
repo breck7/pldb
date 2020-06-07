@@ -1,0 +1,18 @@
+appeared 2001
+type grammarLanguage
+creators James Clark
+website http://www.thaiopensource.com/trex/
+example
+ <element name="addressBook">
+   <zeroOrMore>
+     <element name="card">
+       <element name="name">
+         <anyString/>
+       </element>
+       <element name="email">
+         <anyString/>
+       </element>
+     </element>
+   </zeroOrMore>
+ </element>
+description TREX is a new language for validating XML documents. A TREX pattern specifies a pattern for the structure and content of an XML document. A TREX pattern thus identifies a class of XML documents consisting of those documents that match the pattern. A TREX pattern is itself an XML document.

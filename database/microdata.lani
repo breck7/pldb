@@ -1,0 +1,77 @@
+appeared 2013
+type schema
+wikipedia Microdata_(HTML)
+example
+ <div itemscope itemtype="http://schema.org/RentalCarReservation">
+   <meta itemprop="reservationNumber" content="546323"/>
+   <link itemprop="reservationStatus" href="http://schema.org/Confirmed"/>
+   <link itemprop="url" href="http://carrentals.com/view/546323"/>
+   <div itemprop="underName" itemscope itemtype="http://schema.org/Person">
+     <meta itemprop="name" content="John Smith"/>
+     <meta itemprop="email" content="john@mail.com"/>
+   </div>
+   <div itemprop="programMembership" itemscope itemtype="http://schema.org/ProgramMembership">
+     <meta itemprop="memberNumber" content="1234567"/>
+     <meta itemprop="program" content="AAA"/>
+   </div>
+   <div itemprop="bookingAgent" itemscope itemtype="http://schema.org/Organization">
+     <meta itemprop="name" content="Car Rentals Internationaly"/>
+     <link itemprop="url" href="http://carrentals.com/"/>
+   </div>
+   <meta itemprop="bookingTime" content="2027-01-14T13:05:00-05:00"/>
+   <meta itemprop="modifiedTime" content="2027-03-14T13:05:00-05:00"/>
+   <link itemprop="confirmReservationUrl" href="http://carrentals.com/confirm?id=546323"/>
+   <link itemprop="cancelReservationUrl" href="http://carrentals.com/cancel?id=546323"/>
+   <link itemprop="modifyReservationUrl" href="http://carrentals.com/edit?id=546323"/>
+   <link itemprop="checkinUrl" href="http://carrentals.com/checkin?id=546323"/>
+   <div itemprop="potentialAction" itemscope itemtype="http://schema.org/ConfirmAction">
+     <link itemprop="target" href="http://carrentals.com/confirm?id=546323"/>
+   </div>
+   <div itemprop="potentialAction" itemscope itemtype="http://schema.org/CancelAction">
+     <link itemprop="target" href="http://carrentals.com/cancel?id=546323"/>
+   </div>
+   <div itemprop="potentialAction" itemscope itemtype="http://schema.org/EditAction">
+     <link itemprop="target" href="http://carrentals.com/edit?id=546323"/>
+   </div>
+   <div itemprop="potentialAction" itemscope itemtype="http://schema.org/CheckInAction">
+     <link itemprop="target" href="http://carrentals.com/checkin?id=546323"/>
+   </div>
+   <div itemprop="reservationFor" itemscope itemtype="http://schema.org/RentalCar">
+     <meta itemprop="name" content="Economy Class Car"/>
+     <meta itemprop="model" content="Civic"/>
+     <div itemprop="brand" itemscope itemtype="http://schema.org/Brand">
+       <meta itemprop="name" content="Honda"/>
+     </div>
+     <meta itemprop="description" content="Sedan 4 Door, 5 Seatbelts, Automatic transmission"/>
+     <div itemprop="rentalCompany" itemscope itemtype="http://schema.org/Organization">
+       <meta itemprop="name" content="Hertz"/>
+     </div>
+   </div>
+   <div itemprop="pickupLocation" itemscope itemtype="http://schema.org/Place">
+     <meta itemprop="name" content="Hertz San Diego Airport"/>
+     <div itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
+       <meta itemprop="streetAddress" content="1500 Orange Avenue"/>
+       <meta itemprop="addressLocality" content="San Diego"/>
+       <meta itemprop="addressRegion" content="CA"/>
+       <meta itemprop="postalCode" content="94043"/>
+       <meta itemprop="addressCountry" content="US"/>
+     </div>
+     <meta itemprop="telephone" content="+1-800-123-4567"/>
+   </div>
+   <meta itemprop="pickupTime" content="2027-08-05T16:00:00-07:00"/>
+   <div itemprop="dropoffLocation" itemscope itemtype="http://schema.org/Place">
+     <meta itemprop="name" content="Hertz LAX"/>
+     <div itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
+       <meta itemprop="streetAddress" content="1234 First Street"/>
+       <meta itemprop="addressLocality" content="Los Angeles"/>
+       <meta itemprop="addressRegion" content="CA"/>
+       <meta itemprop="postalCode" content="94043"/>
+       <meta itemprop="addressCountry" content="US"/>
+     </div>
+     <meta itemprop="telephone" content="+1-800-123-4567"/>
+   </div>
+   <meta itemprop="dropoffTime" content="2027-08-06T20:00:00-07:00"/>
+   <meta itemprop="price" content="119.00"/>
+   <meta itemprop="priceCurrency" content="USD"/>
+ </div>
+reference https://www.w3.org/TR/microdata/

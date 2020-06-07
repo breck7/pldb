@@ -1,0 +1,23 @@
+type pl
+website https://verifpal.com/
+example
+ // All lines that start with "//" are treated as comments and ignored by Verifpal
+ // A principal block looks like the following
+ principal SmartphoneA[
+  // In the line below we state that Alice knows the public BroadcastKey
+  
+  knows public BroadcastKey
+  
+  // SK is going to be a secret random value
+  // To define it we use the "generates" keyword
+  // We will use the following template for SK variable names
+  // SK[day number][principal initial]
+  
+  generates SK0A
+  
+  // We will use the following template for EphID variable names
+  // EphID[day number][value number][principal initial]
+  
+  EphID00A, EphID01A, EphID02A = HKDF(nil, SK0A, BroadcastKey)
+ ]
+description Verifpal is new software for verifying the security of cryptographic protocols. The Verifpal language is meant to illustrate protocols close to how one may describe them in an informal conversation, while still being precise and expressive enough for formal modeling. Verifpal reasons about the protocol model with explicit principals: Alice and Bob exist and have independent states.

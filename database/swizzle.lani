@@ -1,0 +1,22 @@
+appeared 2018
+type esolang
+creators Robert Swierczek
+github https://github.com/rswier/swizzle
+example
+ {M
+     1=i
+     (i 100 <=?
+         (i 15 % 0 ==?
+             "FizzBuzz" P;
+         :(i 3 % 0 ==?
+             "Fizz" P;
+         :(i 5 % 0 ==?
+             "Buzz" P;
+         :
+             i "%d" P;;
+         )))
+         10 "%c" P;;
+         i++;
+     @)
+ }
+ M

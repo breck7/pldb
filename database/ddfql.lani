@@ -1,0 +1,39 @@
+appeared 2016
+type queryLanguage
+example
+ {
+  "select": {
+    "key": ["geo", "year"],
+    "value": [
+      "population", "life_expectancy", "gdp_per_cap", "gov_type"
+ ]
+  },
+  "from": "datapoints",
+  "where": {
+    "$or": [
+ { // implicit $and
+        "geo": "$geo",
+        "year": { "$eq": 2015 },
+      },
+ { "population": { "$gt": 100000 } },
+ { "gdp_per_cap": { "$gt": 1000 } },
+ { "$and": [ // explicit $and
+ { "$and": [ { "geo": “$geo” } ], // redundant and
+ { "gdp_per_cap": { "$gt": 400, "$lt": 500 } },
+ { "life_expectancy": { "$gt": 30, "$lt": 70 } }
+ ]}
+ ]
+  },
+  "order_by": ["life_expectancy", "population"],
+  "join": {
+    "$geo": {
+      key: "geo",
+      where: {
+          "is--country": true,
+        "latitude": { "$lte": 0 }, 
+      }
+    }
+  },
+  "language": "en"
+ }
+reference https://docs.google.com/document/d/1olFm-XXjWxQ4LrTCfM42an6LbjbIgnt__V1DZxSmnuQ/edit#

@@ -1,0 +1,9 @@
+type pl
+wikipedia Web_Coverage_Processing_Service
+example
+ for $c in ( M1, M2, M3 ),
+     $r in ( R )
+ where
+     some( $c.nir > 127 and $r )
+ return
+     encode( abs( $c.red - $c.nir ), "hdf5" )

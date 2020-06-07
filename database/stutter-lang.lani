@@ -1,0 +1,63 @@
+appeared 2018
+type esolang
+github https://github.com/stutter-lang/stutter
+example
+ let ratio be a Number and set it to 0.37
+ let variable be a Number
+ set variable to 5
+ 
+ comment add is a method on the Number data type
+ add 12.0 to variable
+ 
+ comment all methods accept multiple parameters via the and conjunction
+ multiply variable with ratio and 1.5
+ 
+ comment results of methods can be redirected with the to preposition
+ print variable to standard output
+ 
+ comment generic calls can be done with the call verb
+ call log on console with variable and ratio
+ 
+ 
+ if variable is greater than 2 then
+ 
+  if variable is greater than 2.5 then
+    call log on console with this is an example
+  else if variable is lower than 2.5 then
+    call alert on console with this is another example
+  else
+    call log on console with foo bar
+  end
+ 
+ end
+ 
+ 
+ let examples be a Number Array
+ set examples to 1, 3, 7 and 9
+ 
+ set index 0 on examples to 4
+ push 3 to examples
+ 
+ 
+ comment whatever is the string representation of examples
+ let whatever be a String
+ join examples to whatever
+ 
+ comment copy is the string copy of examples
+ let copy be a String Array
+ split whatever to copy
+ 
+ 
+ for each examples as key and value do
+ 
+  let temp be value
+  add 5 to value
+  divide value by 1.76
+ 
+  if temp is greater than 5 then
+    break
+  else
+    call log on console with temp
+  end
+ 
+ end

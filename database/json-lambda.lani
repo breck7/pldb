@@ -1,0 +1,5 @@
+appeared 2017
+type queryLanguage
+creators Chris Done
+github https://github.com/chrisdone/jl
+example map (\o -> { sha: o.sha, ps: map _.sha o.parents }) | filter (\o -> length o.ps > 1)

@@ -1,0 +1,16 @@
+appeared 2018
+type pl
+github https://github.com/u2zv1wx/neut
+example
+ ; download the core library
+ (ensure core/0.1.0.0
+   "https://github.com/u2zv1wx/neut-core/raw/master/release/0.1.0.0.tar.gz")
+ 
+ (include "core/0.1.0.0/core.neut")
+ 
+ (with identity.bind
+   (let str "a")
+   (let _ (string.print str))
+   (let _ (string.print str))
+   (string.print str))
+reference https://www.reddit.com/r/ProgrammingLanguages/comments/gprche/neut_a_dependentlytyped_programming_language_with/

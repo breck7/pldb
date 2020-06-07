@@ -1,0 +1,8 @@
+appeared 1996
+type queryLanguage
+creators Serge Abiteboul and Dallan Quass and Jason McHugh and Jennifer Widom and Janet L. Wiener
+example
+ select Guide.restaurant.name,
+    Guide.restaurant(.address)?.zipcode
+  where Guide.restaurant.% grep "cheap"
+reference http://infolab.stanford.edu/lore/pubs/lorel96.pdf

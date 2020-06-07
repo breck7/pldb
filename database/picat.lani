@@ -1,3 +1,16 @@
 appeared 2012
 type pl
+creators Neng-Fa Zhou and Jonathan Fruhman
 website http://www.picat-lang.org/
+example
+ import util.
+ 
+ input_data(Tri) => 
+     Lines = read_file_lines("triangle.txt"),
+     Tri = new_array(Lines.length),
+     I = 1,
+     foreach(Line in Lines)
+         Tri[I] = Line.split().map(to_integer).to_array(),
+  I := I+1
+     end.
+reference http://www.hakank.org/picat/

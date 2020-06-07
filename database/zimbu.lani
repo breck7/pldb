@@ -1,3 +1,10 @@
 appeared 2009
 type pl
+creators Bram Moolenaar
+website http://www.zimbu.org/
 wikipedia Zimbu
+example
+ FUNC Main() int
+   IO.write("Hello, World!\n")
+   RETURN 0
+ }

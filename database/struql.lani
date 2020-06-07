@@ -1,0 +1,30 @@
+appeared 1999
+type queryLanguage
+creators Mary Fernández and Dan Suciu and and Igor Tatarinov
+example
+  // Link root page to page of all accounts
+  link Root() -> "Accounts" -> AccountsPage()
+  // AccountsPage refers to each account in account database and its associated page
+  { where (acct, name, street, city, state, zip) in SQL.query("AccountDB", "select acct ...")
+  link AccountsPage() -> "Info" -> Info(acct),
+  Info(acct) -> { "Acct" acct, "Name" name, "Street" street,
+  "City" city, "State" state, "Zip" zip,
+  "AcctPage" AcctPage(acct) },
+  AcctPage(acct) -> "Info" -> Info(acct)
+  
+   // AcctPage refers to non-zero usage records in the usage database.
+   { where (date, dom is int, intl is int) in SQL.query("UsageDB", "select date ...", acct)
+   dom + intl > 0
+   link AcctPage(acct) -> "UsageData" -> UsageData(acct),
+   UsageData(acct) -> "Entry" -> UsageEntry(acct, date),
+   UsageEntry(acct, date) -> { "Date" date, "Total" (dom + intl) }
+   }
+   // Query postal database to determine possible aliases for account
+   { where XMLRoot{root}, root -> "addresses"."entry" -> addr,
+   addr -> { "name" alias, "address"."street" street1, "address"."zip" zip },
+   street1 = street
+   link Info(acct) -> "Alias" -> alias
+   }
+   }
+reference https://www.usenix.org/legacy/events/dsl99/full_papers/fernandez/fernandez.pdf
+description A StruQL query is a function from a set of input graphs to an output graph.

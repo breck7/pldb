@@ -1,0 +1,14 @@
+appeared 2011
+type textDataFormat
+example
+ feature  Rice  1 LOC_Os05g01020  gene  1903    "TBC domain containing protein, expressed"
+ feature Rice  1 LOC_Os09g20010  gene  10218   expressed protein
+ feature Barley  1H  12_30969  SNP 15    
+ feature Barley  1H  11_11223  SNP 78    
+ feature Barley  1H  11_11224  SNP 100   
+ homolog Barley  12_30969  Rice  LOC_Os05g01020  7.00E-91    #00FF00
+ homolog Barley  11_11223  Rice  LOC_Os09g20010  6.00E-50    
+ chromosome  Barley  1H  #593423       
+ URL Rice  http://rice.plantbiology.msu.edu/cgi-bin/gbrowse/rice/?name=
+reference http://bioinf.scri.ac.uk/strudel/help/data.shtml
+description Strudel is our graphical tool for visualizing genetic and physical maps of genomes for comparative purposes. The Strudel data format is tab delimited text with all features, homologs and potential reference URLs included in the same file.

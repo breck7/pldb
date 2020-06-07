@@ -1,0 +1,59 @@
+appeared 2000
+type pl
+creators Wouter Van Oortmerssen
+website http://strlen.com/sheep-language/
+example
+ — Tree of Pythagoras
+ 
+ — based on an old E example by Raymond Hoving
+ 
+ 
+ import “ave”
+ 
+ 
+ define pythtree ax:real ay:real bx:real by:real depth:int do
+ 
+   cx = ax-ay+by
+ 
+   cy = ax+ay-bx
+ 
+   dx = bx+by-ay
+ 
+   dy = ax-bx+by
+ 
+   ex = 0.5*(cx-cy+dx+dy)
+ 
+   ey = 0.5*(cx+cy-dx+dy)
+ 
+   c = -1-depth*$100020
+ 
+   ave_line cx cy ax ay c
+ 
+   ave_line ax ay bx by c
+ 
+   ave_line bx by dx dy c
+ 
+   ave_line dx dy cx cy c
+ 
+   ave_line cx cy ex ey c
+ 
+   ave_line ex ey dx dy c
+ 
+   if depth < 12 then
+     pythtree cx cy ex ey depth+1
+     pythtree ex ey dx dy depth+1
+   end
+ end
+ 
+ width = 640
+ height = 480
+ 
+ ave_openwindow "Pythagoras Tree" width height 0
+ 
+ pythtree width/2-width/12 height-20 width/2+width/12 height-20 0
+ 
+ ave_update
+ repeat
+ until ave_getmessage = 'Q'
+reference https://www.osnews.com/story/169/interview-wouter-van-oortmerssen-on-sheep/
+description New scripting/querying/ipc/programming language I created for Amiga Inc. There is no publicly available material right now, except for an introductory article at Amiga World, an interview at OSNews.com, and this released screenshot of an early sheep beta in action: SHEEP was planned to have familiar beginner friendly syntax and semantics coupled with multimethods, automatic memory management without garbage collection (linearity), powerful datatypes, pattern matching, strong and dynamic typing living together in harmony, integrated access to all the new Amiga OS features, and optional compiled output comparable to C in speed and size.

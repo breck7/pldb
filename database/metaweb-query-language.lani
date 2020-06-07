@@ -1,0 +1,13 @@
+appeared 2006
+type queryLanguage
+example
+ {
+     "name": None,
+     "mid": None,
+     "type": "/food/dish",
+     "count": None,
+     #"return": "count",
+     "limit": 20,
+     "sort": "name",
+ }
+reference https://rpbouman.blogspot.com/2011/01/mql-to-sql-json-based-query-language.html?m=0

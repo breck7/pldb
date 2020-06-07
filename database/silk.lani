@@ -1,0 +1,20 @@
+appeared 2019
+type pl
+website https://ajaymt.github.io/silk/
+github https://github.com/AjayMT/silk
+example
+ // this is a comment
+ 
+ extern func printf(s *i8) void;
+ 
+ func main(argc i32, argv **i8) i32 {
+   printf("hello, world\n");
+ 
+   if argc > 1 {
+     val arg = @(argv + 1);
+     printf(arg);
+   }
+ 
+   return 0;
+ }
+reference https://news.ycombinator.com/item?id=22926080

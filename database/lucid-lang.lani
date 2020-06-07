@@ -1,0 +1,9 @@
+appeared 2014
+type template
+creators Chris Done
+github https://github.com/chrisdone/lucid
+example
+ table_ [rows_ "2"]
+        (tr_ (do td_ [class_ "top",colspan_ "2",style_ "color:red"]
+                     (p_ "Hello, attributes!")
+                 td_ "yay!"))

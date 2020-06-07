@@ -1,0 +1,17 @@
+appeared 2020
+type pl
+creators Avery N. Nortonsmith
+website https://ptls.dev/
+github https://github.com/pointless-lang/pointless
+example
+ import "chart.ptls" as chart
+  
+ output =
+   iterate(collatzStep, 175)
+   |> takeWhile(greaterThan(1))
+   |> chart.scale(8)
+   |> println
+ 
+ collatzStep(n) =
+   if n % 2 == 0 then n / 2 else n * 3 + 1
+reference https://news.ycombinator.com/item?id=22838255

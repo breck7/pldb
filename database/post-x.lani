@@ -1,0 +1,13 @@
+appeared 1980
+type grammarLanguage
+creators P.A.C. Bailes and L.H. Reeker
+example
+ REPLACE GRAM := "<"^BREAK">"^"> ''
+                 {$<^((REPLACE GRAM)<
+                    SELECT RHS
+                    (ALT LTST<
+                    (LHS--FIND $2 <GRAM)))
+                 %>}
+                 INULL{$$}; 
+reference https://pdfs.semanticscholar.org/4949/e6dbe9967617534a3e9e5d66e1694a541d74.pdf
+description The Post-X language is designed to provide facilities for pattern-directed processing of strings, sequences and trees in an integrated applicative format. 

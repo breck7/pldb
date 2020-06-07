@@ -1,0 +1,14 @@
+appeared 1998
+type queryLanguage
+example
+ WHERE <book>
+         <publisher><name>Addison-Wesley</></>
+         <title> $t</>
+         <author> $a</>
+       </> IN "www.a.b.c/bib.xml"
+ CONSTRUCT <result>
+              <author> $a</>
+              <title> $t</>
+           </>
+reference https://www.w3.org/TR/1998/NOTE-xml-ql-19980819/
+description We propose a query language for XML, called XML-QL, as one possible answer to these questions. The language has a SELECT-WHERE construct, like SQL, and borrows features of query languages recently developed by the database research community for semistructured data.

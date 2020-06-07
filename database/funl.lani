@@ -1,0 +1,12 @@
+appeared 2020
+type pl
+github https://github.com/anssihalmeaho/funl
+example
+ ns main
+ 
+ main = func()
+   'this is return value'
+ end
+ 
+ endns
+reference https://www.reddit.com/r/ProgrammingLanguages/comments/ghqob0/funl_simple_dynamic_functional_language/

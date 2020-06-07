@@ -1,17 +1,14 @@
 appeared 2001
-type xmlFormat
+type grammarLanguage
+website https://relaxng.org/
 wikipedia RELAX_NG
 example
-    <start>
-       <element name="book">
-          <oneOrMore>
-             <ref name="page"/>
-          </oneOrMore>
-       </element>
-    </start>
-    <define name="page">
-       <element name="page">
-          <text/>
-       </element>
-    </define>
- </grammar>
+ # A RELAX NG compact syntax pattern
+ # for an address book.
+ element addressBook {
+   # an entry in the address book
+   element card {
+     element name { text },
+     element email { text }  # an email address
+   }*
+ }

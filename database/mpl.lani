@@ -1,0 +1,45 @@
+appeared 1988
+type pl
+website http://www.maximalsoftware.com/mpl/
+example
+ {   Planning.mpl   } 
+ 
+ {   Aggregate production planning for 12 months   } 
+ 
+ 
+ TITLE 
+    Production_Planning; 
+ 
+ INDEX 
+    product = 1..3; 
+    month   = (January,February,March,April,May,June,July,
+               August,September,October,November,December); 
+ 
+ DATA 
+    price[product]              := (105.09, 234.00, 800.00);
+    Demand[month,product]       := 1000 DATAFILE(demand.dat);
+    ProductionCapacity[product] := 1000 (10, 42, 14);
+    ProductionCost[product]     := (64.30, 188.10, 653.20);
+    InventoryCost               := 8.8 ; 
+ 
+ DECISION VARIABLES
+    Inventory[product,month]     ->  Invt
+    Production[product,month]    ->  Prod
+    Sales[product,month]         ->  Sale 
+ 
+ MACRO 
+    Revenues  := SUM(product,month: price * Sales);
+    TotalCost := SUM(product,month: InventoryCost * Inventory
+                                  + ProductionCost * Production);
+ MODEL
+ 
+    MAX   Profit  =  Revenues - TotalCost ;
+ 
+ SUBJECT TO
+    InventoryBalance[product,month]  ->  IBal : 
+    Inventory  =  Inventory[month-1] + Production - Sales ;
+ 
+ BOUNDS 
+    Sales  < ProductionCapacity ; Inventory[month="January..November]" < 90000 ; 
+    Inventory[month="December]" ; END
+reference http://www.gmu.edu/schools/vse/seor/syllabi/02F/mplman.pdf

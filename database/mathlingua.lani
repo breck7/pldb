@@ -1,0 +1,15 @@
+appeared 2019
+type pl
+website https://www.mathlingua.org/
+example
+ Result:
+ . for: X
+   where:
+   . 'X \subset \reals'
+   then:
+   . iff:
+     . 'X is \real.compact \set'
+     then:
+     . 'X is \real.closed \real.bounded \set'
+ Metadata:
+ . name = "Heine-Borel Theorem"

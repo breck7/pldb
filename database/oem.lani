@@ -1,0 +1,19 @@
+appeared 1995
+type schema
+wikipedia Object_Exchange_Model
+example
+ <DB:: Eats { // A Sample Database
+ <Restaurant {
+ <Name "Darbar">
+ <Entree {
+ <Name str "Masala Dosa"> <_895: Price 8.95>
+ }>
+ <Entree {
+ <Name "Mushroom Bhajee">
+ <Opinion "This entree is excellent, " #
+ "though it is a bit spicy">
+ <&_895>
+ }>
+ <"Credit Card" "Visa">
+ }>
+ }>

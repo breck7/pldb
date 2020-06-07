@@ -1,0 +1,10 @@
+appeared 1997
+type queryLanguage
+creators Mosha Pasumansky
+wikipedia MultiDimensional_eXpressions
+example
+ SELECT
+    { [Measures].[Store Sales] } ON COLUMNS,
+    { [Date].[2002], [Date].[2003] } ON ROWS
+ FROM Sales
+ WHERE ( [Store].[USA].[CA] )
