@@ -1,0 +1,22 @@
+appeared 2000
+type template
+wikipedia Apache_Velocity
+example
+ <html>
+   <body>
+     Hello $customer.Name!
+     <table>
+     #foreach( $mud in $mudsOnSpecial )
+       #if ( $customer.hasPurchased($mud) )
+         <tr>
+           <td>
+             $flogger.getPromo( $mud )
+           </td>
+         </tr>
+       #end
+     #end
+     </table>
+   </body>
+ </html>
+reference https://velocity.apache.org/engine/1.7/user-guide.html#what-is-velocity
+description Velocity is a Java-based template engine. It permits web page designers to reference methods defined in Java code.

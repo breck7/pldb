@@ -1,0 +1,24 @@
+appeared 2008
+type template
+example
+ /**
+  * Greets a person and optionally a list of other people.
+  * @param name The name of the person.
+  * @param additionalNames The additional names to greet. May be an empty list.
+  */
+ {template .helloNames}
+   // Greet the person.
+   {call .helloName data="all" /}<br>
+   // Greet the additional people.
+   {foreach $additionalName in $additionalNames}
+     {call .helloName}
+       {param name: $additionalName /}
+     {/call}
+     {if not isLast($additionalName)}
+       <br>  // break after every line except the last
+     {/if}
+   {ifempty}
+     No additional people to greet.
+   {/foreach}
+ {/template}
+reference https://godoc.org/github.com/robfig/soy

@@ -1,11 +1,11 @@
-appeared 2020 
-type pl 
+type pl
+website https://www.hamler-lang.org/
+github https://github.com/hamler-lang/hamler
 example
  module Main where
  
  import System.IO
  
- main = print "Hello, World!"   
-refrence 
- website https://www.hamler-lang.org
- github  https://github.com/hamler-lang/hanmler
+ main = print "Hello, World!"
+reference https://news.ycombinator.com/item?id=23491516
+description Hamler is a strongly-typed language with compile-time typechecking and built-in support for concurrency and distribution.
