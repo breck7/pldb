@@ -1,4 +1,15 @@
 appeared 2015
 type queryLanguage
-reference https://docs.microsoft.com/en-us/powerquery-m/power-query-m-reference
+example
+ "Hello World"             // a text value 
+ 123                       // a number 
+ 1 + 2                     // sum of two numbers 
+ {1, 2, 3}                 // a list of three numbers 
+ [ x = 1, y = 2 + 3 ]      // a record containing two fields: 
+                           //        x and y 
+ (x, y) => x + y           // a function that computes a sum 
+ if 2 > 1 then 2 else 1    // a conditional expression 
+ let x = 1 + 1  in x * 2   // a let expression 
+ error "A"                 // error with message "A"
+reference https://docs.microsoft.com/en-us/powerquery-m/power-query-m-type-system
 description The Power Query M formula language is optimized for building highly flexible data mashup queries. It's a functional, case sensitive language similar to F#.

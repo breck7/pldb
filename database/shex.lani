@@ -1,0 +1,11 @@
+appeared 2012
+type grammarLanguage
+wikipedia ShEx
+example
+ PREFIX :       <http://example.org/>
+ PREFIX schema: <http://schema.org/>
+ 
+ :Person {
+  schema:name  xsd:string   ;
+  schema:knows @:Person   * ;
+ }

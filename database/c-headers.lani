@@ -1,0 +1,4 @@
+appeared 1972
+type headerFiles
+reference https://gcc.gnu.org/onlinedocs/cpp/Header-Files.html
+description A header file is a file containing C declarations and macro definitions (see Macros) to be shared between several source files. You request the use of a header file in your program by including it, with the C preprocessing directive ‘#include’.

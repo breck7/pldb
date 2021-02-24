@@ -1,0 +1,10 @@
+appeared 2020
+type pl
+example
+ [[location 0]] var<out> gl_FragColor : vec4<f32>;
+ fn main() -> void {
+     gl_FragColor = vec4<f32>(0.4, 0.4, 0.8, 1.0);
+     return;
+ }
+ entry_point fragment = main;
+reference https://gpuweb.github.io/gpuweb/wgsl.html

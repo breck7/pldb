@@ -1,0 +1,20 @@
+appeared 2019
+type pl
+creators Linus Lee
+website https://dotink.co
+github https://github.com/thesephist/ink
+example
+ std := load('std')
+ 
+ log := std.log
+ 
+ listen('0.0.0.0:8080', evt => (
+   evt.type :: {
+     'error' -> log('Error: ' + evt.message)
+     'req' -> (evt.end)({
+       status: 200
+       headers: {'Content-Type': 'text/plain'}
+       body: 'Hello, World!'
+     })
+   }
+ ))

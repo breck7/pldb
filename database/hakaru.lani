@@ -1,0 +1,22 @@
+appeared 2014
+type pl
+website http://hakaru-dev.github.io/
+github https://github.com/hakaru-dev/hakaru
+example
+ def pulls(strength real):
+     normal(strength, 1)
+ 
+ def winner(a real, b real):
+     a_pull <~ pulls(a)
+     b_pull <~ pulls(b)
+     return (a_pull > b_pull)
+ 
+ alice <~ normal(0,1)
+ bob   <~ normal(0,1)
+ carol <~ normal(0,1)
+ 
+ match1 <~ winner(alice, bob)
+ match2 <~ winner(bob, carol)
+ match3 <~ winner(alice, carol)
+reference https://www.reddit.com/r/ProgrammingLanguages/comments/hejono/hakaru_a_simplytyped_probabilistic_programming/
+description Hakaru is a simply-typed probabilistic programming language, designed for easy specification of probabilistic models and inference algorithms. This type of language is useful for the development of machine learning algorithms and stochastic modeling.

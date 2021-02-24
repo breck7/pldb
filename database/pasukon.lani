@@ -1,0 +1,53 @@
+type grammarLanguage
+website https://pasukon.rocks
+github https://github.com/gosukiwi/Pasukon
+example
+ lex
+   match  NUMBER     /[0-9]+(?:\.[0-9]+)?/
+   match  PLUS       '+'
+   match  MINUS      '-'
+   match  TIMES      '*'
+   match  DIV        '/'
+   match  POPEN      '('
+   match  PCLOSE     ')'
+   ignore WHITESPACE /^\s+/
+ /lex
+ 
+ addition
+   | (subtraction as :lhs) then :PLUS then (subtraction as :rhs)
+   |> 'return $.lhs + $.rhs'
+   | subtraction
+   ;
+ 
+ subtraction
+   | (multiplication as :lhs) then :MINUS then (multiplication as :rhs)
+   |> 'return $.lhs - $.rhs'
+   | multiplication
+   ;
+ 
+ multiplication
+   | (division as :lhs) then :TIMES then (division as :rhs)
+   |> 'return $.lhs * $.rhs'
+   | division
+   ;
+ 
+ division
+   | (expression as :lhs) then :DIV then (expression as :rhs)
+   |> 'return $.lhs / $.rhs'
+   | expression
+   ;
+ 
+ expression
+   | :POPEN then (addition as :expr) then :PCLOSE
+   |> 'return $.expr'
+   | number
+   ;
+ 
+ number
+   | :NUMBER 'return +$1'
+   ;
+ 
+ start
+   | addition
+   ;
+reference https://news.ycombinator.com/item?id=24347956

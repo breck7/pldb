@@ -1,0 +1,18 @@
+appeared 2018
+type grammarLanguage
+example
+ type::{
+   name: Person,
+   type: struct,
+   fields: {
+     title: {
+       type: symbol,
+       valid_values: [Mr, Mrs, Miss, Ms, Mx, Dr],
+     },
+     firstName: { type: string, occurs: required },
+     middleName: string,
+     lastName: { type: string, occurs: required },
+     age: { type: int, valid_values: range::[0, 130] },
+   },
+ }
+reference https://amzn.github.io/ion-schema/docs/spec.html
