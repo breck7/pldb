@@ -1,0 +1,23 @@
+appeared 1997
+type pl
+website https://www.fon.hum.uva.nl/praat/manual/Praat_script.html
+github https://github.com/praat/praat
+example
+ clearinfo
+ # print fizzbuzz result
+ procedure fizzbuzz: .i
+ 	if .i mod 15 == 0
+ 		appendInfoLine: "fizzbuzz"
+ 	elsif .i mod 3 == 0
+ 		appendInfoLine: "fizz"
+ 	elsif .i mod 5 == 0
+ 		appendInfoLine: "buzz"
+ 	else
+ 		appendInfoLine: .i
+ 	endif
+ endproc
+ 
+ for i from 1 to 100
+ 	@fizzbuzz: i
+ endfor
+description The language is bundled with Praat, a speech analysis tool, to execute menu and action commands.
