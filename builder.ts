@@ -349,6 +349,19 @@ class Builder extends AbstractBuilder {
     this._buildListsSite()
   }
 
+  buildRedirects() {
+    Disk.mkdir(websiteFolder + "/posts")
+    Disk.read(__dirname + "/blog/redirects.txt")
+      .split("\n")
+      .forEach(line => {
+        const link = line.split(" ")
+        Disk.write(
+          websiteFolder + "/" + link[0],
+          `<meta http-equiv="Refresh" content="0; url='${link[1]}'" />`
+        )
+      })
+  }
+
   // Build all the list pages
   _buildListsSite() {
     shell(`cp -R ${__dirname}/blog/lists ${websiteFolder}`)

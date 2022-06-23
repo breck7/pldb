@@ -13,9 +13,8 @@ aftertext
  https://certbot.eff.org/ certbot
 
 aftertext
- CodeLani.com does not use cookies or include any tracking scripts. You can view a report of web traffic to this site here.
+ CodeLani.com does not use cookies or include any tracking scripts. You can view a report of web traffic to this site <a href="nginxStats.html">here</a>.
  https://www.nginx.com/ NGINX
- nginxStats.html here
 
 aftertext
  The log reports are generated using goaccess and is run once daily via the cron job below.
