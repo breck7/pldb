@@ -96,6 +96,6 @@ paragraph
 
 ohayoCode
  html.h1 How Many Programming Languages are there in the World?
- web.get https://codelani.com/next2/codelani.csv
+ web.get https://codelani.com/codelani.csv
   filter.where type = pl
    show.rowCount

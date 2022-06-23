@@ -327,7 +327,7 @@ paragraph
 
 ohayoCode
  html.h1 What is the growth in programming languages over time?
- web.get https://codelani.com/next2/codelani.csv
+ web.get https://codelani.com/codelani.csv
   filter.where appeared > 1940
    group.by appeared
     rows.sortBy appeared

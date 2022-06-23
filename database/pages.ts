@@ -11,7 +11,7 @@ import {
   cleanAndRightShift,
   getIndefiniteArticle,
   nameToAnchor,
-  toCommaList
+  toCommaList,
 } from "./utils"
 
 class LanguagePageTemplate {
@@ -39,7 +39,7 @@ class LanguagePageTemplate {
       }
 
       const tree = TreeNode.fromSsv(table.childrenToString())
-      tree.forEach(child => {
+      tree.forEach((child) => {
         child.set(
           "repo",
           `<a href='${child.get("url")}'>${child.get("name")}</a>`
@@ -61,7 +61,7 @@ commaTable
     if (!hnTable) return ""
 
     const table = TreeNode.fromDelimited(hnTable, "|")
-    table.forEach(row => {
+    table.forEach((row) => {
       row.set(
         "titleLink",
         `https://news.ycombinator.com/item?id=${row.get("id")}`
@@ -90,7 +90,7 @@ pipeTable
     return `title ${title}
 
 htmlTitle ${title} - ${lodash.upperFirst(typeName)}
-sourceLink https://github.com/codelani/codelani/blob/master/database/things/${
+sourceLink https://github.com/codelani/codelani/blob/main/database/things/${
       this.primaryKey
     }.codelani
 
@@ -122,7 +122,7 @@ html
   _getFactsSection() {
     const facts = this._getFacts()
     return `list
-${facts.map(fact => ` - ${fact}`).join("\n")}`
+${facts.map((fact) => ` - ${fact}`).join("\n")}`
   }
 
   _getDescription() {
@@ -155,10 +155,7 @@ ${facts.map(fact => ` - ${fact}`).join("\n")}`
       longerDescription +=
         description +
         " " +
-        wikipediaSummary
-          .split(". ")
-          .slice(0, 3)
-          .join(". ") +
+        wikipediaSummary.split(". ").slice(0, 3).join(". ") +
         `. <a href="${wpLink}">Read more on Wikipedia...</a>`
     else if (object.description)
       longerDescription += description + " " + object.description
@@ -175,7 +172,7 @@ ${facts.map(fact => ` - ${fact}`).join("\n")}`
     const category = isLanguage ? "languages" : "entities I track"
     if (percentile > 0.25) return ""
     else {
-      bins.forEach(bin => {
+      bins.forEach((bin) => {
         if (percentile < bin)
           rankMessage = `${title} ranks in the top ${bin * 100}% of ${category}`
       })
@@ -225,7 +222,7 @@ ${facts.map(fact => ` - ${fact}`).join("\n")}`
       creators = creators
         .split(" and ")
         .map(
-          name =>
+          (name) =>
             `<a href="../lists/creators.html#${nameToAnchor(name)}">${name}</a>`
         )
         .join(" and ")
@@ -237,7 +234,7 @@ ${facts.map(fact => ` - ${fact}`).join("\n")}`
       corporateDevelopers = corporateDevelopers
         .split(" and ")
         .map(
-          name =>
+          (name) =>
             `<a href="../lists/corporations.html#${nameToAnchor(
               name
             )}">${name}</a>`
@@ -259,7 +256,7 @@ ${facts.map(fact => ` - ${fact}`).join("\n")}`
       facts.push(
         `${title} compiles to ${compilesTo
           .split(" ")
-          .map(id => this._getATag(id))
+          .map((id) => this._getATag(id))
           .join(" & ")}`
       )
 
@@ -268,7 +265,7 @@ ${facts.map(fact => ` - ${fact}`).join("\n")}`
       facts.push(
         `${title} is written in ${writtenIn
           .split(" ")
-          .map(id => this._getATag(id))
+          .map((id) => this._getATag(id))
           .join(" & ")}`
       )
 
@@ -282,7 +279,7 @@ ${facts.map(fact => ` - ${fact}`).join("\n")}`
     if (conferences.length) {
       facts.push(
         `Recurring conference about ${title}: ${conferences.map(
-          tree => `<a href="${tree.getWord(1)}">${tree.getWordsFrom(2)}</a>`
+          (tree) => `<a href="${tree.getWord(1)}">${tree.getWordsFrom(2)}</a>`
         )}`
       )
     }
@@ -418,11 +415,11 @@ ${facts.map(fact => ` - ${fact}`).join("\n")}`
     const wpRelated = file.get("wikipedia related")
     const seeAlsoLinks = wpRelated ? wpRelated.split(" ") : []
     const related = object.related
-    if (related) related.split(" ").forEach(id => seeAlsoLinks.push(id))
+    if (related) related.split(" ").forEach((id) => seeAlsoLinks.push(id))
 
     if (seeAlsoLinks.length)
       facts.push(
-        "See also: " + seeAlsoLinks.map(id => this._getATag(id)).join(", ")
+        "See also: " + seeAlsoLinks.map((id) => this._getATag(id)).join(", ")
       )
 
     facts.push(
@@ -533,13 +530,13 @@ class PatternPageTemplate extends LanguagePageTemplate {
     const key = patternKeyword
     // todo: is this breaking the class? are we doing cloning or something?
 
-    const positives = results.filter(file => file.get(key) === "true")
-    const negatives = results.filter(file => file.get(key) === "false")
+    const positives = results.filter((file) => file.get(key) === "true")
+    const negatives = results.filter((file) => file.get(key) === "false")
 
     const negativeText = negatives.length
       ? `paragraph
  Languages <b>without</b> ${title} include ${negatives
-          .map(file => file.link)
+          .map((file) => file.link)
           .join(", ")}
 
 `
@@ -549,13 +546,13 @@ class PatternPageTemplate extends LanguagePageTemplate {
       negativeText +
       `paragraph
  Languages <b>with</b> ${title} include ${positives
-        .map(file => file.link)
+        .map((file) => file.link)
         .join(", ")}
 
 ` +
       positives
-        .filter(node => node.getNode(key).length)
-        .map(result => {
+        .filter((node) => node.getNode(key).length)
+        .map((result) => {
           const id = result.primaryKey
           return `subsection Example from <a href="${id}.html">${id}</a>:
 

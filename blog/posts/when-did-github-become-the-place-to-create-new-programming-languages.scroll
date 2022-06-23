@@ -110,7 +110,7 @@ commaTable
 
 ohayoCode
  html.h1 When did GitHub become the place to host new programming language projects?
- web.get https://codelani.com/next2/codelani.csv
+ web.get https://codelani.com/codelani.csv
   filter.where appeared > 1950
    columns.setType githubRepo boolean
     columns.setType appeared year

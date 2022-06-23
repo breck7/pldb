@@ -8,7 +8,7 @@ The rest of the content for the site is in the `blog` folder.
 
 ## To update a language
 
-To add or fix information on CodeLani, simply edit the corresponding `database/things/*.codelani` file and send a pull request. For example, if the `appeared` year field for the `Ada` Language was incorrect, you could update that line on https://github.com/codelani/codelani/blob/master/things/ada.scroll and send a pull request.
+To add or fix information on CodeLani, simply edit the corresponding `database/things/*.codelani` file and send a pull request. For example, if the `appeared` year field for the `Ada` Language was incorrect, you could update that line on https://github.com/codelani/codelani/blob/main/things/ada.scroll and send a pull request.
 
 ## To add a new language
 

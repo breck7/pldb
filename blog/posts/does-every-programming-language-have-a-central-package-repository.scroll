@@ -143,7 +143,7 @@ aftertext
 
 ohayoCode
  html.h1 Does every programming language have a central package repository?
- web.get https://codelani.com/next2/codelani.csv
+ web.get https://codelani.com/codelani.csv
   filter.where appeared > 1950
    columns.keep appeared patterns.hasCentralPackageRepository? title
     columns.setType appeared year

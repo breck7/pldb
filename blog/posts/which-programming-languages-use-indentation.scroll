@@ -57,7 +57,7 @@ paragraph
 
 ohayoCode
  html.h1 Which programming languages use indentation?
- web.get https://codelani.com/next2/codelani.csv
+ web.get https://codelani.com/codelani.csv
   filter.where appeared > 1950
    columns.keep appeared title patterns.hasSemanticIndentation?
     columns.setType appeared year
