@@ -1,0 +1,31 @@
+title Competitions
+skipIndexPage
+
+paragraph
+ A list of active programming competition sites.
+
+commaTable
+ series,seriesLink,type,started,wikipedia,wikipediaLink,firstHostCountry
+ IMO,https://www.imo-official.org/,Mathematics,1959,International_Mathematical_Olympiad,https://en.wikipedia.org/wiki/International_Mathematical_Olympiad,Romania
+ ICPC,https://icpc.baylor.edu/,Programming,1970,International_Collegiate_Programming_Contest,https://en.wikipedia.org/wiki/International_Collegiate_Programming_Contest,USA
+ ACSL,https://www.acsl.org/,Programming,1978,American_Computer_Science_League,https://en.wikipedia.org/wiki/American_Computer_Science_League,USA
+ IOI,https://ioinformatics.org/,Programming,1989,International_Olympiad_in_Informatics,https://en.wikipedia.org/wiki/International_Olympiad_in_Informatics,Bulgaria
+ ICFPProgrammingContest,https://icfpcontest2019.github.io/,Programming,1998,ICFP_Programming_Contest,https://en.wikipedia.org/wiki/ICFP_Programming_Contest,USA
+ TopCoder,https://www.topcoder.com/,Programming,2001,Topcoder,https://en.wikipedia.org/wiki/Topcoder,USA
+ TopCoderOpen,https://tco19.topcoder.com/,Programming,2001,Topcoder_Open,https://en.wikipedia.org/wiki/Topcoder_Open,USA
+ GoogleCodeJam,https://codingcompetitions.withgoogle.com/codejam,Programming,2003,Google_Code_Jam,https://en.wikipedia.org/wiki/Google_Code_Jam,USA
+ IEEEExtreme,https://ieeextreme.org/,Programming,2006,IEEEXtreme,https://en.wikipedia.org/wiki/IEEEXtreme,Online
+ CodeChef,https://www.codechef.com/,Programming,2009,CodeChef,https://en.wikipedia.org/wiki/CodeChef,India
+ CodeForces,https://codeforces.com/,Programming,2010,Codeforces,https://en.wikipedia.org/wiki/Codeforces,Russia
+ AtCoder,https://atcoder.jp/,Programming,2010,,,Japan
+ Kaggle,https://www.kaggle.com/,DataScience,2010,Kaggle,https://en.wikipedia.org/wiki/Kaggle,USA
+ FacebookHackerCup,https://www.facebook.com/hackercup/,Programming,2011,Facebook_Hacker_Cup,https://en.wikipedia.org/wiki/Facebook_Hacker_Cup,USA
+ HackerEarth,https://www.hackerearth.com/,Programming,2012,HackerEarth,https://en.wikipedia.org/wiki/HackerEarth,USA
+ HackerRank,https://www.hackerrank.com,Programming,2012,HackerRank,https://en.wikipedia.org/wiki/HackerRank,USA
+
+aftertext
+ Am I missing a competition? @Edit this file@ and send a pull request.
+ wrap @ https://github.com/codelani/codelani/blob/master/lists/competition.scroll
+
+maxColumns 1
+columnWidth 60

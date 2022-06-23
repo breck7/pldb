@@ -1,4 +1,43 @@
+title RMarkdown
 appeared 2014
 type textMarkup
+
+patterns
+ hasCentralPackageRepository? false
+
+githubLanguage RMarkdown
+ fileExtensions rmd
+ trendingProjectsCount 0
+
+githubRepo https://github.com/rstudio/rmarkdown
+ firstCommit 2014
+ stars 1321
+ forks 578
+ subscribers 134
+ created 2014
+ updated 2018
+ description Dynamic Documents for R
+ issues 109
+
+linguistGrammarRepo https://github.com/atom/language-gfm
+ firstCommit 2013
+ lastCommit 2018
+ committerCount 58
+ commitCount 426
+ sampleCount 1
+ example
+  # An example RMarkdown
+  
+  Some text.
+  
+  ## A graphic in R
+  
+  ```{r}
+  plot(1:10)
+  hist(rnorm(10000))
+  ```
+
 website https://rmarkdown.rstudio.com/
-github https://github.com/rstudio/rmarkdown
+status active
+fileType text
+isOpenSource true

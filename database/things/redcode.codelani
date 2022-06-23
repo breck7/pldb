@@ -1,3 +1,28 @@
+title Redcode
 appeared 1984
 type pl
-wikipedia Core_War
+
+patterns
+ hasCentralPackageRepository? false
+
+wikipedia https://en.wikipedia.org/wiki/Core_War
+ example
+  0000:  ADD.AB  #   4, $   3
+   0001:  MOV.F   $   2, @   2
+   0002:  JMP.B   $  -2, $   0
+   0003:  DAT.F   #   0, #   0
+ related assembly-language
+ summary Core War is a 1984 programming game created by D. G. Jones and A. K. Dewdney in which two or more battle programs (called "warriors") compete for control of a virtual computer. These battle programs are written in an abstract assembly language called Redcode.
+ pageId 274362
+ created 2003
+ backlinksCount 52
+ revisionCount 377
+ dailyPageViews 111
+ appeared 1984
+
+githubLanguage Redcode
+ fileExtensions cw
+ trendingProjectsCount 0
+
+status active
+fileType text

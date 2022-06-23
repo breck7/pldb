@@ -1,4 +1,38 @@
+title Xojo
 appeared 1996
 type pl
+
+patterns
+ hasCentralPackageRepository? false
+
+wikipedia https://en.wikipedia.org/wiki/Xojo
+ example
+  Dim names() As String = Array("Red Sox", "Yankees", "Orioles", "Blue Jays", "Rays")
+  For i As Integer = 0 To names.UBound
+    ListBox1.AddRow(names(i))
+  Next
+ related linux ios basic jvm x86-isa xml visual-basic gambas
+ summary The Xojo programming environment is developed and commercially marketed by Xojo, Inc. of Austin, Texas for software development targeting macOS, Microsoft Windows, Linux, iOS, the Web and Raspberry Pi. Xojo uses a proprietary object-oriented BASIC dialect, also known as Xojo.
+ pageId 39624220
+ created 2013
+ backlinksCount 140
+ revisionCount 281
+ dailyPageViews 75
+ appeared 2018
+
+githubLanguage REALbasic
+ fileExtensions rbbas rbfrm rbmnu rbres rbtbar rbuistate
+ trendingProjectsCount 0
+
+linguistGrammarRepo https://github.com/angryant0007/VBDotNetSyntax
+ firstCommit 2012
+ lastCommit 2017
+ committerCount 4
+ commitCount 61
+
 website http://xojo.com
-wikipedia Xojo
+aka Xojo REALbasic
+status active
+fileType text
+
+rosettaCode REALbasic

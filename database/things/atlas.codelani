@@ -1,7 +1,7 @@
+title ATLAS Transformation Language
 appeared 2005
 type pl
-website https://www.eclipse.org/atl/
-wikipedia ATLAS_Transformation_Language
+
 example
  rule TreeNodeRoot2RootElement {
   from
@@ -15,3 +15,13 @@ example
       name <- leaf.name
     )
  }
+
+wikipedia https://en.wikipedia.org/wiki/ATLAS_Transformation_Language
+ summary ATL (ATLAS Transformation Language) is a model transformation language and toolkit developed and maintained by OBEO and AtlanMod. It was initiated by the AtlanMod team (previously called ATLAS Group). In the field of Model-Driven Engineering (MDE), ATL provides ways to produce a set of target models from a set of source models. Released under the terms of the Eclipse Public License, ATL is an M2M (Eclipse) component, inside of the Eclipse Modeling Project (EMP).
+ backlinksCount 55
+ pageId 4671634
+ dailyPageViews 23
+ appeared 2005
+
+website https://www.eclipse.org/atl/
+fileExtensions atl

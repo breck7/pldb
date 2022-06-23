@@ -1,3 +1,40 @@
+title ALGO
 appeared 1958
 type pl
-wikipedia ALGO
+
+patterns
+ hasCentralPackageRepository? false
+
+wikipedia https://en.wikipedia.org/wiki/ALGO
+ example
+  1 TITLE TRABB PARDO-KNUTH ALGORITHM
+   2 SUBSCript I,J
+   3 DATA A(11)
+   4 FORMAt FI(2DT), FLARGE(3D)
+   5 PROCEDURE F(T=Z)
+   6 BEGIN
+   7 Z=SQRT(ABS(T))+5*T^3
+   8 END
+   9 FOR I=0(1)10
+  10 A[I]=KEYBD
+  11 FOR J=0(1)10 BEGIN
+  12 I=J-10
+  13 F(A[I]=Y)
+  14 PRINT(FI)=I
+  15 IF Y > 400
+  16 GO TO LARGE
+  17 PRINT(FL)=Y
+  18 GO TO NEXT
+  19 LARGE: PRINT(FLARGE)=999
+  20 NEXT: CARR(1) END
+  21 2END
+ related algol-60 neliac algol-58
+ summary ALGO is an algebraic programming language developed between 1959 and 1961 for the Bendix G-15 computer. ALGO was one of several programming languages inspired by the Preliminary Report on the Language written in Zürich in 1958. This report underwent several modifications before becoming the Revised Report on which most ALGOL implementations are based. As a result, ALGO and other early "ALGOLs" have a very different syntax from ALGOL 60. Other languages developed from the Zürich report include BENJAMIN, MAD (Michigan Algorithm Decoder) and NELIAC.
+ created 2004
+ backlinksCount 36
+ pageId 1149655
+ revisionCount 224
+ dailyPageViews 43
+ appeared 1958
+
+status historical

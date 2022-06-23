@@ -1,3 +1,22 @@
+title File Allocation Table
 appeared 1977
 type filesystem
-wikipedia File_Allocation_Table
+
+patterns
+ hasCentralPackageRepository? false
+
+wikipedia https://en.wikipedia.org/wiki/File_Allocation_Table
+ related exfat ntfs linux freebsd ext4 ascii x86-assembly rexx java android
+ summary File Allocation Table (FAT) is a computer file system architecture and a family of industry-standard file systems utilizing it. The FAT file system is a continuing standard which borrows source code from the original, legacy file system and proves to be simple and robust. It offers useful performance even in lightweight implementations, but cannot deliver the same performance, reliability and scalability as some modern file systems. It is, however, supported for compatibility reasons by nearly all currently developed operating systems for personal computers and many mobile devices and embedded systems, and thus is a well-suited format for data exchange between computers and devices of almost any type and age from 1981 up to the present. Originally designed in 1977 for use on floppy disks, FAT was soon adapted and used almost universally on hard disks throughout the DOS and Windows 9x eras for two decades. As disk drives evolved, the capabilities of the file system have been extended accordingly, resulting in three major file system variants: FAT12, FAT16 and FAT32. The FAT standard has also been expanded in other ways while generally preserving backward compatibility with existing software. With the introduction of more powerful computers and operating systems, as well as the development of more complex file systems for them, FAT is no longer the default file system for usage on Microsoft Windows computers.FAT file systems are still commonly found on floppy disks, flash and other solid-state memory cards and modules (including USB flash drives), as well as many portable and embedded devices. FAT is the standard file system for digital cameras per the DCF specification.
+ pageId 53045
+ created 2001
+ backlinksCount 1884
+ revisionCount 3163
+ dailyPageViews 1568
+ appeared 1977
+
+aka FAT32 FAT16 FAT12
+standsFor File Allocation Table
+status historical
+fileType text
+wordRank 1690

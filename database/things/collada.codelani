@@ -1,3 +1,29 @@
+title COLLADA
 appeared 2004
 type application
-wikipedia COLLADA
+
+patterns
+ hasCentralPackageRepository? false
+
+wikipedia https://en.wikipedia.org/wiki/COLLADA
+ related xml delphi kml godot-game-engine unity-engine maple python objective-c javascript webgl vrml
+ summary COLLADA (COLLAborative Design Activity) is an interchange file format for interactive 3D applications. It is managed by the nonprofit technology consortium, the Khronos Group, and has been adopted by ISO as a publicly available specification, ISO/PAS 17506.COLLADA defines an open standard XML schema for exchanging digital assets among various graphics software applications that might otherwise store their assets in incompatible file formats. COLLADA documents that describe digital assets are XML files, usually identified with a .dae (digital asset exchange) filename extension.
+ pageId 1464418
+ created 2005
+ backlinksCount 115
+ revisionCount 408
+ dailyPageViews 152
+ appeared 2004
+
+githubLanguage COLLADA
+ fileExtensions dae
+ trendingProjectsCount 0
+
+linguistGrammarRepo https://github.com/textmate/xml.tmbundle
+ firstCommit 2004
+ lastCommit 2018
+ committerCount 12
+ commitCount 97
+
+status active
+fileType text

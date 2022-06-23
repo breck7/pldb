@@ -1,3 +1,33 @@
+title Esterel
 appeared 1980
 type pl
-wikipedia Esterel
+
+patterns
+ hasCentralPackageRepository? false
+
+wikipedia https://en.wikipedia.org/wiki/Esterel
+ example
+  module ABRO:
+  input A, B, R;
+  output O;
+  
+  loop
+    [ await A || await B ];
+    emit O
+  each R
+  
+  end module
+ related c vhdl verilog
+ summary Esterel is a synchronous programming language for the development of complex reactive systems. The imperative programming style of Esterel allows the simple expression of parallelism and preemption. As a consequence, it is well suited for control-dominated model designs. The development of the language started in the early 1980s, and was mainly carried out by a team of Ecole des Mines de Paris and INRIA led by Gérard Berry. Current compilers take Esterel programs and generate C code or hardware (RTL) implementations (VHDL or Verilog). The language is still under development, with several compilers out. The commercial version of Esterel is the development environment Esterel Studio. The company that commercialize it (Synfora) initiated a normalization process with the IEEE in April 2007 however the working group (P1778) dissolved March 2011. The Esterel v7 Reference Manual Version v7 30 – initial IEEE standardization proposal is publicly available.
+ pageId 1285078
+ dailyPageViews 50
+ created 2004
+ backlinksCount 31
+ revisionCount 133
+ appeared 1980
+
+status historical
+country FR
+fileType text
+
+hopl 1081

@@ -1,3 +1,19 @@
+title QtScript
 appeared 2008
 type pl
-wikipedia QtScript
+
+patterns
+ hasCentralPackageRepository? false
+
+wikipedia https://en.wikipedia.org/wiki/QtScript
+ related ecmascript
+ summary QtScript is a scripting engine that has been part of the Qt cross-platform application framework since version 4.3.0. The scripting language is based on the ECMAScript standard with a few extensions, such as QObject-style signal and slot connections. The library contains the engine, and a C++ API for evaluating QtScript code and exposing custom QObject-derived C++ classes to QtScript. The QtScript Binding Generator provides bindings for the Qt API to access directly from ECMAScript. QtScript and the binding generator are used for Amarok 2's scripting system. The current (as of Qt 4.7) implementation uses JavaScriptCore and will not be further developed. The module is deprecated as of Qt 5.5.
+ pageId 9609819
+ created 2007
+ backlinksCount 145
+ revisionCount 64
+ dailyPageViews 27
+ appeared 2008
+
+status historical
+fileType text

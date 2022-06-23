@@ -1,4 +1,11 @@
+title Atomos
 appeared 2006
 type pl
-reference https://www.semanticscholar.org/paper/The-Atomos-transactional-programming-language-Carlstrom-McDonald/24fb613bf421ae2bbb32a9df08e3b9d2508d5ca0
+
+patterns
+ hasCentralPackageRepository? false
+
 description Atomos is the first programming language with implicit transactions, strong atomicity, and a scalable multiprocessor implementation. Atomos is derived from Java, but replaces its synchronization and conditional waiting constructs with simpler transactional alternatives.
+reference https://www.semanticscholar.org/paper/The-Atomos-transactional-programming-language-Carlstrom-McDonald/24fb613bf421ae2bbb32a9df08e3b9d2508d5ca0
+status historical
+fileType text

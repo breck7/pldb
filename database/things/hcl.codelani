@@ -1,6 +1,7 @@
+title HashiCorp configuration language
 appeared 2014
 type metaLanguage
-github https://github.com/hashicorp/hcl
+
 example
  variable "ami" {
     description = "the AMI to use"
@@ -9,4 +10,49 @@ example
  hello
  world
  FOO
+
+patterns
+ hasCentralPackageRepository? false
+
 description HCL (HashiCorp Configuration Language) is a configuration language built by HashiCorp. The goal of HCL is to build a structured configuration language that is both human and machine friendly for use with command-line tools, but specifically targeted towards DevOps tools, servers, etc. HCL is also fully JSON compatible. That is, JSON can be used as completely valid input to a system expecting HCL. This helps makes systems interoperable with other systems. HCL is heavily inspired by libucl, nginx configuration, and others similar.
+
+githubLanguage HCL
+ fileExtensions hcl tf tfvars workflow
+ trendingProjects
+  author name avatar url language languageColor stars forks currentPeriodStars description
+  terraform-google-modules terraform-google-kubernetes-engine https://github.com/terraform-google-modules.png https://github.com/terraform-google-modules/terraform-google-kubernetes-engine HCL #ccc 146 113 18 "A Terraform module for configuring GKE clusters."
+  hashicorp terraform-guides https://github.com/hashicorp.png https://github.com/hashicorp/terraform-guides HCL #ccc 413 279 28 "Example usage of HashiCorp Terraform"
+  brikis98 terraform-up-and-running-code https://github.com/brikis98.png https://github.com/brikis98/terraform-up-and-running-code HCL #ccc 767 451 41 "Code samples for the book ""Terraform: Up & Running"" by Yevgeniy Brikman"
+  terraform-aws-modules terraform-aws-eks https://github.com/terraform-aws-modules.png https://github.com/terraform-aws-modules/terraform-aws-eks HCL #ccc 660 480 44 "A Terraform module to create an Elastic Kubernetes (EKS) cluster and associated worker instances on AWS."
+  terraform-aws-modules terraform-aws-vpc https://github.com/terraform-aws-modules.png https://github.com/terraform-aws-modules/terraform-aws-vpc HCL #ccc 770 732 32 "Terraform module which creates VPC resources on AWS"
+ trendingProjectsCount 6
+
+githubRepo https://github.com/hashicorp/hcl
+ stars 1254
+ forks 117
+ subscribers 80
+ created 2014
+ updated 2017
+ firstCommit 2014
+ description HCL is the HashiCorp configuration language.
+ issues 65
+
+linguistGrammarRepo https://github.com/alexlouden/Terraform.tmLanguage
+ firstCommit 2015
+ lastCommit 2018
+ committerCount 16
+ commitCount 58
+ sampleCount 5
+ example
+  consul = "1.2.3.4"
+  
+  // This is a comment
+  template "foo" {
+    bar = "zip"
+  }
+
+standsFor HashiCorp configuration language
+status active
+fileType text
+isOpenSource true
+corporateDevelopers HashiCorp

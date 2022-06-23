@@ -1,3 +1,43 @@
+title Creative Basic
 appeared 2008
 type pl
-wikipedia Creative_Basic
+
+patterns
+ hasCentralPackageRepository? false
+
+wikipedia https://en.wikipedia.org/wiki/Creative_Basic
+ example
+  def w:WINDOW
+  def wstyle:INT
+  
+  wstyle = @SIZE|@MINBOX|@MAXBOX
+  
+  WINDOW w,50,50,800,600,wstyle,0,"Window Title",main
+  SETWINDOWCOLOR w,RGB(0,0,90)
+  
+  CONTROL w,"B,Exit,(800-80)/2, 500, 80, 40, 0, 1"
+  
+  WAITUNTIL w = 0
+  END
+  
+  SUB main
+  SELECT @CLASS
+  	case @IDCLOSEWINDOW
+  		closewindow w
+  ' clicking the Exit button ...
+  	case @IDCONTROL
+  		select @CONTROLID
+  			case 1
+  				closewindow w
+  		endselect
+  endselect
+  RETURN
+ summary Creative Basic (CB) is a third-generation event-driven programming language for Windows, with an integrated development environment (IDE). Current version executables are interpreted and require no runtime libraries be installed on the end-user's computer.  A planned future version will have compiled executables. Creative Basic has an extensive command set, and access to the application programming interface (API) libraries available in the Microsoft Windows operating system. Although this modern version dates from 2007, it is a development from, and is completely compatible with IBasic, which has been in use worldwide since 2002. Some notable projects are Jerry Muelver's WikiWriter, a WikiWriter to Chm Wizard by Alyce Watson, and Mike Rainey's manufacturing engineering programs. (see the Links below).
+ created 2008
+ backlinksCount 5
+ pageId 20125093
+ revisionCount 16
+ dailyPageViews 3
+ appeared 2008
+
+status historical

@@ -1,5 +1,12 @@
+title Fawlty
 appeared 2006
 type pl
+
+patterns
+ hasCentralPackageRepository? false
+
+description Fawlty Language is an IDL8 (Interactive Data Language) compatible compiler. Fawlty Language is a closed source, but freely usable IDL clone for Linux, Windows and Mac OS X.
 website http://www.flxpert.hu/fl/
 reference https://bitbucket.org/fawlty/fl/issues
-description Fawlty Language is an IDL8 (Interactive Data Language) compatible compiler. Fawlty Language is a closed source, but freely usable IDL clone for Linux, Windows and Mac OS X.
+status historical
+fileType text

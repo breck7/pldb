@@ -1,3 +1,21 @@
+title A-0 system
 appeared 1951
 type compiler
-wikipedia A-0_System
+
+patterns
+ hasCentralPackageRepository? false
+
+wikipedia https://en.wikipedia.org/wiki/A-0_System
+ related arith-matic math-matic flow-matic
+ summary The A-0 system (Arithmetic Language version 0), written by Grace Murray Hopper  in 1951 and 1952 for the UNIVAC I, was an early compiler related tool developed for electronic computers. The A-0 functioned more as a loader or linker than the modern notion of a compiler. A program was specified as a sequence of subroutines and arguments. The subroutines were identified by a numeric code and the arguments to the subroutines were written directly after each subroutine code. The A-0 system converted the specification into machine code that could be fed into the computer a second time to execute the said program. The A-0 system was followed by the  A-1, A-2, A-3 (released as ARITH-MATIC), AT-3 (released as MATH-MATIC) and B-0 (released as FLOW-MATIC). The A-2 system was developed at the UNIVAC division of Remington Rand in 1953 and released to customers by the end of that year.  Customers were provided the source code for A-2 and invited to send their improvements back to UNIVAC.   Thus A-2 was an early example of free and open-source software.
+ pageId 60383
+ created 2002
+ backlinksCount 36
+ revisionCount 87
+ dailyPageViews 640
+ appeared 1951
+
+status historical
+fileType na
+
+hopl 4

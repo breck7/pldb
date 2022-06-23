@@ -1,3 +1,76 @@
+title Web Services Description Language
 appeared 2000
 type xmlFormat
-wikipedia Web_Services_Description_Language
+
+patterns
+ hasCentralPackageRepository? false
+
+wikipedia https://en.wikipedia.org/wiki/Web_Services_Description_Language
+ example
+  <?xml version="1.0" encoding="UTF-8"?>
+  <description xmlns="http://www.w3.org/ns/wsdl" 
+               xmlns:tns="http://www.tmsws.com/wsdl20sample" 
+               xmlns:whttp="http://schemas.xmlsoap.org/wsdl/http/"
+               xmlns:wsoap="http://schemas.xmlsoap.org/wsdl/soap/"
+               targetNamespace="http://www.tmsws.com/wsdl20sample">
+  
+  <documentation>
+      This is a sample WSDL 2.0 document. 
+  </documentation>
+  
+  <!-- Abstract type -->
+     <types>
+        <xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
+                  xmlns="http://www.tmsws.com/wsdl20sample"
+                  targetNamespace="http://www.example.com/wsdl20sample">
+                   
+           <xs:element name="request"> ... </xs:element>
+           <xs:element name="response"> ... </xs:element>
+        </xs:schema>
+     </types>
+  
+  <!-- Abstract interfaces -->
+     <interface name="Interface1">
+        <fault name="Error1" element="tns:response"/>
+        <operation name="Get" pattern="http://www.w3.org/ns/wsdl/in-out">
+           <input messageLabel="In" element="tns:request"/>
+           <output messageLabel="Out" element="tns:response"/>
+        </operation>
+     </interface>
+  
+  <!-- Concrete Binding Over HTTP -->
+     <binding name="HttpBinding" interface="tns:Interface1" 
+              type="http://www.w3.org/ns/wsdl/http">
+        <operation ref="tns:Get" whttp:method="GET"/>
+     </binding>
+     
+  <!-- Concrete Binding with SOAP-->
+     <binding name="SoapBinding" interface="tns:Interface1" 
+              type="http://www.w3.org/ns/wsdl/soap" 
+              wsoap:protocol="http://www.w3.org/2003/05/soap/bindings/HTTP/"
+              wsoap:mepDefault="http://www.w3.org/2003/05/soap/mep/request-response">
+        <operation ref="tns:Get" />
+     </binding>
+  
+  <!-- Web Service offering endpoints for both bindings-->
+     <service name="Service1" interface="tns:Interface1">
+        <endpoint name="HttpEndpoint" 
+                  binding="tns:HttpBinding" 
+                  address="http://www.example.com/rest/"/>
+        <endpoint name="SoapEndpoint" 
+                  binding="tns:SoapBinding" 
+                  address="http://www.example.com/soap/"/>
+     </service>
+  </description>
+ related xml soap bpel
+ summary The Web Services Description Language (WSDL ) is an XML-based interface definition language that is used for describing the functionality offered by a web service. The acronym is also used for any specific WSDL description of a web service (also referred to as a WSDL file), which provides a machine-readable description of how the service can be called, what parameters it expects, and what data structures it returns. Therefore, its purpose is roughly similar to that of a method signature in a programming language. The current version of WSDL is WSDL 2.0. The meaning of the acronym has changed from version 1.1 where the "D" stood for "Definition".
+ pageId 23713739
+ dailyPageViews 471
+ created 2002
+ backlinksCount 277
+ revisionCount 535
+ appeared 2000
+
+standsFor Web Services Description Language
+status historical
+fileType text

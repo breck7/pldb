@@ -1,9 +1,28 @@
+title Formula language
 appeared 1989
 type pl
-website https://www.ibm.com/support/knowledgecenter/en/SSVRGU_9.0.1/basic/H_NOTES_FORMULA_LANGUAGE.html
-wikipedia Formula_language
+
 example
  FIELD NewDate:=@Today
  FIELD OldDate:=@DeleteField;
-reference https://searchdomino.techtarget.com/tutorial/What-is-Lotus-Formula-language
+
+patterns
+ hasCentralPackageRepository? false
+
 description Formula language is a simple, easy-to-use programming language that can be found in many Lotus products -- such as Lotus 1-2-3 and Lotus Notes. Formula language has been integrated into Lotus Notes since its inception in 1989 and has included numerous enhancements over the years.
+
+wikipedia https://en.wikipedia.org/wiki/Formula_language
+ related icon lisp lotusscript
+ summary The Formula language is a scripting language used by Lotus Notes. It is often referred to as @Formula language (pronounced at-formula) because many language elements start with the @-character. Here is an example of a selection formula:  SELECT @NoteId = "NT0050D26"  It was created by Ray Ozzie during the early development of Lotus Notes. He borrowed the compiler and decompiler from the Lotus 1-2-3 spreadsheet, but unlike the spreadsheet language Formula Language was designed primarily for string and list processing, not numerical processing.  It was originally a Functional programming language with unique text list-handling features inspired by Ray Ozzie's prior use of Icon and Lisp. The Formula language engine was rewritten by Damien Katz for Notes and Domino 6. New features were added to the language, such as looping and dynamic execution, and performance was improved.The Formula language has two parts:  @Functions for calculations and simple logic @Commands for performing actions in the user interface@Functions can be used in several places throughout Lotus Notes. The most important uses are:  to select documents to show to the user in a view (a kind of index) or to select documents for further processing. In this case, the formula will evaluate to a 'true' (selected) or 'false' value (not selected) for each document. to provide default values for fields, to transform the data entered by the user (like stripping off redundant spaces) and to validate this data. to get a list of values from a Notes database or even from a relational database (using ODBC). This may be used to provide a user with a list of values to choose from. to process a set of documents. The formula is placed in an agent, a program or macro that can be started by a user or by the Notes server according to a schedule. When the agent is triggered, the formula executes for each selected document (this a very limited form of a loop). This is an efficient way of changing lots of documents, if the logic is not too complicated. In case of complicated changes, LotusScript is used.@Commands are like menu commands: they perform actions in the Lotus Notes client. Examples of actions are:  opening a Notes database creating an e-mail putting the cursor in a specific data-entry field closing a window starting an agent@Commands are primarily used in formulas that are triggered by user action, such as in button formulas. It is possible to combine them with @Functions, for example by making execution of an @command conditional on a field value.
+ pageId 343386
+ created 2003
+ backlinksCount 10
+ revisionCount 22
+ dailyPageViews 10
+ appeared 2002
+
+website https://www.ibm.com/support/knowledgecenter/en/SSVRGU_9.0.1/basic/H_NOTES_FORMULA_LANGUAGE.html
+reference https://searchdomino.techtarget.com/tutorial/What-is-Lotus-Formula-language
+status historical
+fileType text
+wordRank 3630

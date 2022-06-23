@@ -1,4 +1,86 @@
+title Common Lisp
 appeared 1984
 type pl
+
+patterns
+ isLisp? true
+ hasSingleDispatch? true
+  ; https://eli.thegreenplace.net/2016/a-polyglots-guide-to-multiple-dispatch-part-3/
+  (defclass Person () ())
+  (defmethod frobnicate ((p Person) record spreadsheet)
+   (format t "~a ~a ~a~&" (type-of p) (type-of record) (type-of spreadsheet)))
+  (defclass Asteroid () ())
+  (defmethod frobnicate ((a Asteroid) velocity size)
+   ; do stuff
+   )
+  ; At runtime these 2 would be routed to respective methods:
+  (frobnicate a-person his-record big-spreadsheet)
+  (frobnicate an-asteroid very-fast pretty-small)
+ hasMultipleDispatch? true
+   (defmethod collide-with ((x asteroid) (y asteroid))
+    ;; deal with asteroid hitting asteroid
+    )
+  (defmethod collide-with ((x asteroid) (y spaceship))
+    ;; deal with asteroid hitting spaceship
+    )
+  (defmethod collide-with ((x spaceship) (y asteroid))
+    ;; deal with spaceship hitting asteroid
+    )
+  (defmethod collide-with ((x spaceship) (y spaceship))
+    ;; deal with spaceship hitting spaceship
+    )
+ hasCentralPackageRepository? false
+ hasComments? true
+ hasDirectives? true
+ hasMultipleInheritance? true
+
+wikipedia https://en.wikipedia.org/wiki/Common_Lisp
+ example
+  CL-USER > (available-shells)
+  (#P"/bin/bash" #P"/bin/csh" #P"/bin/ksh" #P"/bin/sh" #P"/bin/tcsh" #P"/bin/zsh")
+ related lisp clisp lispworks lisp-machine-lisp scheme interlisp clojure dylan emacs-lisp eulisp islisp julia r cadence-skill spice-lisp s-expressions ascii unicode c pascal java autolisp algol-68 ada perl unix freebsd linux solaris x86-isa corman-common-lisp maxima acl2 poplog pop-11 prolog standard-ml emacs-editor
+ summary Common Lisp (CL) is a dialect of the Lisp programming language, published in ANSI standard document ANSI INCITS 226-1994 (R2004) (formerly X3.226-1994 (R1999)). The Common Lisp HyperSpec, a hyperlinked HTML version, has been derived from the ANSI Common Lisp standard. The Common Lisp language was developed as a standardized and improved successor of Maclisp. By the early 1980s several groups were already at work on diverse successors to MacLisp: Lisp Machine Lisp (aka ZetaLisp), Spice Lisp, NIL and S-1 Lisp. Common Lisp sought to unify, standardise, and extend the features of these MacLisp dialects. Common Lisp is not an implementation, but rather a language specification. Several implementations of the Common Lisp standard are available, including free and open-source software and proprietary products. Common Lisp is a general-purpose, multi-paradigm programming language. It supports a combination of procedural, functional, and object-oriented programming paradigms. As a dynamic programming language, it facilitates evolutionary and incremental software development, with iterative compilation into efficient run-time programs. This incremental development is often done interactively without interrupting the running application. It also supports optional type annotation and casting, which can be added as necessary at the later profiling and optimization stages, to permit the compiler to generate more efficient code. For instance, fixnum can hold an unboxed integer in a range supported by the hardware and implementation, permitting more efficient arithmetic than on big integers or arbitrary precision types. Similarly, the compiler can be told on a per-module or per-function basis which type safety level is wanted, using optimize declarations. Common Lisp includes CLOS, an object system that supports multimethods and method combinations. It is often implemented with a Metaobject Protocol. Common Lisp is extensible through standard features such as Lisp macros (code transformations) and reader macros (input parsers for characters). Common Lisp provides some backwards compatibility to Maclisp and to John McCarthy's original Lisp. This allows older Lisp software to be ported to Common Lisp.
+ pageId 6068
+ dailyPageViews 334
+ created 2001
+ backlinksCount 866
+ revisionCount 1099
+ appeared 1984
+ fileExtensions lisp lsp l cl fasl
+
+githubLanguage Common Lisp
+ fileExtensions lisp asd cl l lsp ny podsl sexp
+ trendingProjects
+  author name avatar url language languageColor stars forks currentPeriodStars description
+  atlas-engineer next https://github.com/atlas-engineer.png https://github.com/atlas-engineer/next "Common Lisp" #3fb68b 3553 151 401 "Next browser - Be productive."
+  norvig paip-lisp https://github.com/norvig.png https://github.com/norvig/paip-lisp "Common Lisp" #3fb68b 4207 428 62 "Lisp code for the textbook ""Paradigms of Artificial Intelligence Programming"""
+  dimitri pgloader https://github.com/dimitri.png https://github.com/dimitri/pgloader "Common Lisp" #3fb68b 2221 289 56 "Migrate to PostgreSQL in a single command!"
+ trendingProjectsCount 4
+
+linguistGrammarRepo https://github.com/textmate/lisp.tmbundle
+ firstCommit 2005
+ lastCommit 2018
+ committerCount 6
+ commitCount 40
+ sampleCount 9
+ example
+  (DEFUN HELLO ()
+    (PRINT 'HELLO))
+  
+
 website http://common-lisp.net/
-wikipedia Common_Lisp
+status active
+country US
+fileExtensions lisp lsp l cl fasl
+fileType text
+
+tiobe Common Lisp
+
+hopl 946
+
+quineRelay Common Lisp
+
+ubuntuPackage clisp
+
+indeedJobs "common lisp"
+ 2017 24

@@ -1,5 +1,77 @@
+title CoffeeScript
 appeared 2009
 type pl
 creators Jeremy Ashkenas
+
+patterns
+ hasCentralPackageRepository? false
+ hasComments? true
+ hasSemanticIndentation? true
+
+wikipedia https://en.wikipedia.org/wiki/CoffeeScript
+ example
+  author = "Wittgenstein"
+  quote  = "A picture is a fact. -- #{ author }"
+  
+  sentence = "#{ 22 / 7 } is a decent approximation of π"
+ related haskell javascript perl python ruby yaml livescript rails jquery maven-pom java markdown elm haxe dart opa typescript
+ summary CoffeeScript is a programming language that transcompiles to JavaScript. It adds syntactic sugar inspired by Ruby, Python and Haskell in an effort to enhance JavaScript's brevity and readability. Specific additional features include list comprehension and pattern matching. CoffeeScript support is included in Ruby on Rails version 3.1 and Play Framework. In 2011, Brendan Eich referenced CoffeeScript as an influence on his thoughts about the future of JavaScript.
+ pageId 27403236
+ dailyPageViews 295
+ created 2010
+ backlinksCount 205
+ revisionCount 394
+ appeared 2011
+ fileExtensions coffee litcoffee
+
+githubLanguage CoffeeScript
+ fileExtensions coffee _coffee cake cjsx iced
+ trendingProjects
+  author name avatar url language languageColor stars forks currentPeriodStars description
+  cypress-io cypress https://github.com/cypress-io.png https://github.com/cypress-io/cypress CoffeeScript #244776 14465 770 668 "Fast, easy and reliable testing for anything that runs in a browser."
+  basecamp trix https://github.com/basecamp.png https://github.com/basecamp/trix CoffeeScript #244776 13950 661 171 "A rich text editor for everyday writing"
+  codecombat codecombat https://github.com/codecombat.png https://github.com/codecombat/codecombat CoffeeScript #244776 6869 3506 42 "Game for learning how to code."
+  overleaf overleaf https://github.com/overleaf.png https://github.com/overleaf/overleaf CoffeeScript #244776 5599 712 110 "A web-based collaborative LaTeX editor"
+  FelisCatus SwitchyOmega https://github.com/FelisCatus.png https://github.com/FelisCatus/SwitchyOmega CoffeeScript #244776 13272 2230 266 "Manage and switch between multiple proxies quickly & easily."
+  philc vimium https://github.com/philc.png https://github.com/philc/vimium CoffeeScript #244776 11430 1380 164 "The hacker's browser."
+ trendingProjectsCount 7
+
+helloWorldCollection CoffeeScript
+ // Hello world in CoffeeScript
+ 
+ alert "Hello, World!"
+
+linguistGrammarRepo https://github.com/atom/language-coffee-script
+ firstCommit 2013
+ lastCommit 2018
+ committerCount 30
+ commitCount 332
+ sampleCount 10
+ example
+  console.log "Hello, World!"
+  
+
 website http://coffeescript.org
-wikipedia CoffeeScript
+status active
+
+replit coffeescript
+
+tryItOnline coffeescript
+
+fileExtensions coffee litcoffee
+fileType text
+compilesTo javascript
+isOpenSource true
+
+tiobe CoffeeScript
+
+linkedInSkill coffeescript
+ peopleWithThisSkillCount 21574
+
+quineRelay CoffeeScript
+
+ubuntuPackage coffeescript
+
+codeMirror coffeescript
+
+rosettaCode CoffeeScript

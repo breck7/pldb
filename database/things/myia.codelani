@@ -1,3 +1,12 @@
+title myia
 appeared 2017
 type pl
-github https://github.com/mila-udem/myia
+
+patterns
+ hasCentralPackageRepository? false
+
+githubRepo https://github.com/mila-udem/myia
+ firstCommit 2017
+
+status active
+isOpenSource true

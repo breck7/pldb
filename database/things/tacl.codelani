@@ -1,3 +1,34 @@
+title Tandem Advanced Command Language
 appeared 1999
 type pl
-wikipedia TACL
+
+patterns
+ hasCentralPackageRepository? false
+
+wikipedia https://en.wikipedia.org/wiki/TACL
+ example
+  ?Section HELLO_BERNARD ROUTINE
+  #OUTPUT Hello BERNARD
+ related tal
+ summary TACL (the Tandem Advanced Command Language) is the scripting programming language used in Tandem Computers. TACL is the shell.
+ pageId 1558785
+ dailyPageViews 18
+ created 2005
+ backlinksCount 6
+ revisionCount 60
+ appeared 1999
+
+helloWorldCollection Tandem Advanced Command Language
+ Comment -- Hello World for TACL (Tandem Advanced Command Language)
+ 
+ ?tacl macro
+ 
+ #OUTPUT Hello world
+
+standsFor Tandem Advanced Command Language
+status active
+fileType text
+
+tiobe TACL
+
+hopl 1368

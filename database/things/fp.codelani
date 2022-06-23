@@ -1,3 +1,30 @@
+title Functional Programming
 appeared 1977
 type pl
-wikipedia FP_(programming_language)
+
+patterns
+ hasCentralPackageRepository? false
+
+wikipedia https://en.wikipedia.org/wiki/FP_(programming_language)
+ example
+  insert-left  \f       where   \f:〈x〉             =  x
+                        and     \f:〈x1,x2,...,xn〉  =  f:〈\f:〈x1,...,xn-1〉,xn〉
+                        and     \f:〈 〉             =  unit f
+ related apl fl haskell j
+ summary FP (short for function programming) is a programming language created by John Backus to support the function-level programming paradigm. This allows eliminating named variables. The language was introduced in Backus's 1977 Turing Award lecture, "Can Programming Be Liberated from the von Neumann Style?", subtitled "a functional style and its algebra of programs." The paper sparked interest in functional programming research, eventually leading to modern functional languages, and not the function-level paradigm Backus had hoped. FP itself never found much use outside of academia. In the 1980s Backus created a successor language, FL, which remained a research project.
+ pageId 899253
+ created 2004
+ backlinksCount 32
+ revisionCount 94
+ dailyPageViews 35
+ appeared 1977
+
+standsFor Functional Programming
+status historical
+country US
+fileType text
+wordRank 8320
+
+hopl 759
+
+rosettaCode FP

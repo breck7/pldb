@@ -1,6 +1,7 @@
+title nydp
 appeared 2014
 type pl
-github https://github.com/conanite/nydp
+
 example
  (def pre-compile (expr)
    (map pre-compile
@@ -8,3 +9,11 @@ example
          (pre-compile (mac-expand (car expr) (cdr expr)))
          expr)))
  (mac yoyo (thing) `(do-yoyo ,thing))
+
+githubRepo https://github.com/conanite/nydp
+ firstCommit 2014
+ stars 6
+ subscribers 2
+ created 2014
+ updated 2019
+ description nydp - a modern, more dangerous kind of lisp

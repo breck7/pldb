@@ -1,3 +1,20 @@
+title IMP programming language
 appeared 1970
 type pl
-wikipedia IMP_programming_language
+
+patterns
+ hasCentralPackageRepository? false
+
+wikipedia https://en.wikipedia.org/wiki/IMP_programming_language
+ example
+  <ATOM> ::= ABS ( <ATOM,A> ) ::= DEWOP(214B,AREG1(1,13),A)
+ related edinburgh-imp algol
+ summary IMP is an early systems programming language that was developed by Edgar T. Irons in the late 1960s through early 1970s. Unlike most other systems programming languages, IMP was an extensible syntax programming language. Even though its designer refers to the language as "being based on ALGOL", IMP excludes many defining features of that language, while supporting a very non-ALGOL-like one: syntax extensibility. A compiler for IMP existed as early as 1965 and was used for programming the CDC 6600 time-sharing system, which was in use at the Institute for Defense Analyses since 1967. Although the compiler is slower than comparable ones for non-extensible languages, it has been used for practical production work. IMP compilers were developed for the CDC-6600, Cray, PDP-10 and PDP-11 computers. Important IMP versions were IMP65, IMP70, and IMP72.
+ created 2015
+ backlinksCount 6
+ pageId 859608
+ revisionCount 2
+ dailyPageViews 1
+ appeared 1960
+
+status historical

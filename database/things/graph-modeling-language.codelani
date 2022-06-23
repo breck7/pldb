@@ -1,4 +1,84 @@
+title Graph Modeling Language
 appeared 1997
 type application
-wikipedia Graph_Modelling_Language
+
+patterns
+ hasCentralPackageRepository? false
+
+wikipedia https://en.wikipedia.org/wiki/Graph_Modelling_Language
+ example
+  graph [
+  	comment "This is a sample graph"
+  	directed 1
+  	id 42
+  	label "Hello, I am a graph"
+  	node [
+  		id 1
+  		label "node 1"
+  		thisIsASampleAttribute 42
+  	]
+  	node [
+  		id 2
+  		label "node 2"
+  		thisIsASampleAttribute 43
+  	]
+  	node [
+  		id 3
+  		label "node 3"
+  		thisIsASampleAttribute 44
+  	]
+  	edge [
+  		source 1
+  		target 2
+  		label "Edge from node 1 to node 2"
+  	]
+  	edge [
+  		source 2
+  		target 3
+  		label "Edge from node 2 to node 3"
+  	]
+  	edge [
+  		source 3
+  		target 1
+  		label "Edge from node 3 to node 1"
+  	]
+  ]
+ related graphml ascii python
+ summary Graph Modeling Language (GML) is a hierarchical ASCII-based file format for describing graphs. It has been also named Graph Meta Language.
+ created 2005
+ backlinksCount 32
+ pageId 3428490
+ revisionCount 60
+ dailyPageViews 31
+ appeared 2010
+
+githubLanguage Graph Modeling Language
+ fileExtensions gml
+ trendingProjectsCount 0
+
+example
+ graph
+ [
+   directed 0
+   node
+   [
+     id 0
+     label "Node 1"
+     value 100
+   ]
+   node
+   [
+     id 1
+     label "Node 2"
+     value 200
+   ]
+   edge
+   [
+     source 1
+     target 0
+   ]
+ ]
+ 
 reference http://www.uni-passau.de/fileadmin/files/lehrstuhl/brandenburg/projekte/gml/gml-technical-report.pdf
+status active
+fileType text

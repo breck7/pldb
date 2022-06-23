@@ -1,6 +1,167 @@
+title Rust
 appeared 2010
 type pl
 creators Graydon Hoare
+
+patterns
+ hasCentralPackageRepository? true
+ hasComments? true
+  // https://doc.rust-lang.org/reference/comments.html
+  // a comment
+ hasBlockComments? true
+  // see: https://doc.rust-lang.org/reference/comments.html
+  /* a block comment */
+ hasDirectives? true
+  // A conditionally-compiled module
+  #[cfg(target_os = "linux")]
+  mod bar {
+      /* ... */
+  }
+  // General metadata applied to the enclosing module or crate.
+  #![crate_type = "lib"]
+  // A function marked as a unit test
+  #[test]
+  fn test_foo() {
+      /* ... */
+  }
+  // A lint attribute used to suppress a warning/error
+  #[allow(non_camel_case_types)]
+  type int8_t = i8;
+  
+  // Inner attribute applies to the entire function.
+  fn some_unused_variables() {
+    #![allow(unused_variables)]
+  
+    let x = ();
+    let y = ();
+    let z = ();
+  }
+ hasImports? true
+  use ::std::fs;  // Imports from the `std` crate, not the module below.
+  use self::std::fs as self_fs;  // Imports the module below.
+  mod my;
+  use self::foo::Zoo as _;
+  #[path = "foo.rs"]
+  mod c;
+ hasIterators? true
+  for n in 0..42 {
+    println!("{}", n);
+  }
+ hasMacros? true
+  https://doc.rust-lang.org/book/ch19-06-macros.html
+ hasOperatorOverloading? true
+ hasPrintStatements? true
+  println!("Hi");
+ hasSemanticIndentation? false
+ hasTypeInference? true
+
+wikipedia https://en.wikipedia.org/wiki/Rust_(programming_language)
+ related linux freebsd android ios alef csharp cyclone erlang haskell haxe limbo newsqueak ruby scheme standard-ml swift crystal elm idris c ml go java ocaml llvmir d nim emacs-editor
+ summary Rust is a systems programming language sponsored by Mozilla Research, which describes it as a "safe, concurrent, practical language," supporting functional and imperative-procedural paradigms. Rust is syntactically similar to C++, but its designers intend it to provide better memory safety while maintaining performance. Rust is an open source programming language. Its designers have refined the language through the experiences of writing the Servo web browser layout engine and the Rust compiler. A large portion of current commits to the project are from community members. Rust won first place for "most loved programming language" in the Stack Overflow Developer Survey in 2016 and 2017; it is referenced in The Book of Mozilla as "oxidised metal".
+ pageId 29414838
+ dailyPageViews 1159
+ created 2010
+ backlinksCount 336
+ revisionCount 956
+ appeared 2016
+ fileExtensions rs rlib
+
+githubLanguage Rust
+ fileExtensions rs rsin
+ trendingProjects
+  author name avatar url language languageColor stars forks currentPeriodStars description
+  rust-lang rust https://github.com/rust-lang.png https://github.com/rust-lang/rust Rust #dea584 38932 6045 851 "Empowering everyone to build reliable and efficient software."
+  xi-editor druid https://github.com/xi-editor.png https://github.com/xi-editor/druid Rust #dea584 623 33 162 "Data-oriented Rust UI design toolkit."
+  yewstack yew https://github.com/yewstack.png https://github.com/yewstack/yew Rust #dea584 8506 323 422 "Rust framework for building client web apps"
+  getzola zola https://github.com/getzola.png https://github.com/getzola/zola Rust #dea584 2306 215 156 "A fast static site generator in a single binary with everything built-in."
+  wasmerio wasmer https://github.com/wasmerio.png https://github.com/wasmerio/wasmer Rust #dea584 4321 146 315 "The Universal WebAssembly Runtime"
+  cloudflare wrangler https://github.com/cloudflare.png https://github.com/cloudflare/wrangler Rust #dea584 644 63 185 "🤠 wrangle your cloudflare workers"
+  rust-unofficial awesome-rust https://github.com/rust-unofficial.png https://github.com/rust-unofficial/awesome-rust Rust #dea584 12178 807 497 "A curated list of Rust code and resources."
+  CraneStation wasmtime https://github.com/CraneStation.png https://github.com/CraneStation/wasmtime Rust #dea584 1282 90 130 "Standalone JIT-style runtime for WebAssembly, using Cranelift"
+  tokio-rs tokio https://github.com/tokio-rs.png https://github.com/tokio-rs/tokio Rust #dea584 5810 483 326 "A runtime for writing reliable asynchronous applications with Rust. Provides I/O, networking, scheduling, timers, ..."
+  SergioBenitez Rocket https://github.com/SergioBenitez.png https://github.com/SergioBenitez/Rocket Rust #dea584 7888 551 273 "A web framework for Rust."
+  hyperium hyper https://github.com/hyperium.png https://github.com/hyperium/hyper Rust #dea584 5153 752 171 "An HTTP library for Rust"
+  rust-lang-nursery futures-rs https://github.com/rust-lang-nursery.png https://github.com/rust-lang-nursery/futures-rs Rust #dea584 2833 350 85 "Zero-cost asynchronous programming in Rust"
+  Spotifyd spotifyd https://github.com/Spotifyd.png https://github.com/Spotifyd/spotifyd Rust #dea584 2017 106 112 "A spotify daemon"
+  maps4print azul https://github.com/maps4print.png https://github.com/maps4print/azul Rust #dea584 3105 123 211 "Desktop GUI Framework"
+  rust-lang regex https://github.com/rust-lang.png https://github.com/rust-lang/regex Rust #dea584 1200 189 42 "An implementation of regular expressions for Rust. This implementation uses finite automata and guarantees linear time matching on all inputs."
+  servo servo https://github.com/servo.png https://github.com/servo/servo Rust #dea584 14762 2222 210 "The Servo Browser Engine"
+  tokio-rs tracing https://github.com/tokio-rs.png https://github.com/tokio-rs/tracing Rust #dea584 262 27 127 "Application level tracing for Rust."
+  CraneStation cranelift https://github.com/CraneStation.png https://github.com/CraneStation/cranelift Rust #dea584 2066 172 138 "Cranelift code generator"
+  ggez ggez https://github.com/ggez.png https://github.com/ggez/ggez Rust #dea584 1715 213 79 "Rust library to create a Good Game Easily"
+  rust-lang cargo https://github.com/rust-lang.png https://github.com/rust-lang/cargo Rust #dea584 4696 989 109 "The Rust package manager"
+  sharkdp bat https://github.com/sharkdp.png https://github.com/sharkdp/bat Rust #dea584 15094 295 413 "A cat(1) clone with wings."
+  paritytech substrate https://github.com/paritytech.png https://github.com/paritytech/substrate Rust #dea584 1437 374 95 "Substrate: The platform for blockchain innovators"
+  gfx-rs gfx https://github.com/gfx-rs.png https://github.com/gfx-rs/gfx Rust #dea584 3334 389 111 "A low-overhead Vulkan-like GPU API for Rust."
+  rust-lang rust-clippy https://github.com/rust-lang.png https://github.com/rust-lang/rust-clippy Rust #dea584 3740 498 114 "A bunch of lints to catch common mistakes and improve your Rust code"
+  seanmonstar reqwest https://github.com/seanmonstar.png https://github.com/seanmonstar/reqwest Rust #dea584 1782 277 109 "An easy and powerful Rust HTTP Client"
+ trendingProjectsCount 26
+
+helloWorldCollection Rust
+ // Hello world in Rust
+ 
+ fn main() {
+     println!("Hello World!");
+ }
+
+linguistGrammarRepo https://github.com/zargony/atom-language-rust
+ firstCommit 2014
+ lastCommit 2018
+ committerCount 28
+ commitCount 181
+ sampleCount 3
+ example
+  extern crate foo;
+  extern crate bar;
+  
+  use foo::{self, quix};
+  use bar::car::*;
+  use bar;
+  
+  fn main() {
+      println!("Hello {}", "World");
+  
+      panic!("Goodbye")
+  }
+  
+
 website https://www.rust-lang.org
-wikipedia Rust_(programming_language)
 reference https://blog.rust-lang.org/2018/11/27/Rust-survey-2018.html
+status active
+
+replit rust
+
+tryItOnline rust
+
+twitter rustlang
+
+fileExtensions rs rlib
+fileType text
+isOpenSource true
+
+tiobe Rust
+ currentRank 31
+
+meetup rust
+ memberCount 29951
+ groupCount 122
+
+projectEuler Rust
+ memberCount
+  2019 507
+  2022 1227
+
+subreddit rust
+ memberCount
+  2017 30807
+
+quineRelay Rust
+
+ubuntuPackage rustc
+
+codeMirror rust
+
+rosettaCode Rust
+
+indeedJobs rust engineer
+ 2017 141

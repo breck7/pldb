@@ -1,6 +1,7 @@
+title Recfiles
 appeared 1994
 type metaLanguage
-wikipedia Recfiles
+
 example
  %rec: Book
  %mandatory: Title
@@ -28,5 +29,20 @@ example
  
  Title: Yeelong User Manual
  Location: home
-reference https://www.gnu.org/software/recutils/
+
+patterns
+ hasComments? true
+  # Blah blah…
+  # Unlike some file formats, comments in recfiles must be complete lines. You cannot start a comment in the middle of a line.
+
 description GNU recutils is a set of tools and libraries to access human-editable, text-based databases called recfiles. The data is stored as a sequence of records, each record containing an arbitrary number of named fields. Advanced capabilities usually found in other data storage systems are supported: data types, data integrity (keys, mandatory fields, etc.) as well as the ability of records to refer to other records (sort of foreign keys). Despite its simplicity, recfiles can be used to store medium-sized databases.
+
+wikipedia https://en.wikipedia.org/wiki/Recfiles
+ summary recfiles is a file format for human-editable, plain text databases. Databases using this file format can be edited using any text editor. recfiles allow for basic relational database operations, typing, auto-incrementing, as well as a simple join operation. Recutils is a collection of tools, like recfmt, recsel, and rec2csv used to work with recfile databases. Various software libraries support the format.
+ backlinksCount 1
+ pageId 63063548
+ dailyPageViews -1
+ appeared 1964
+
+reference https://www.gnu.org/software/recutils/
+fileExtensions rec

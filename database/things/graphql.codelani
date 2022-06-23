@@ -1,5 +1,125 @@
+title GraphQL
 appeared 2012
 type queryLanguage
 creators Lee Byron
+
+patterns
+ hasBooleans? true
+ hasCentralPackageRepository? false
+ hasEnums? true
+  enum Episode {
+    NEWHOPE
+    EMPIRE
+    JEDI
+  }
+ hasFloats? true
+ hasInterfaces? true
+  interface Character {
+   id: ID!
+   name: String!
+   friends: [Character]
+   appearsIn: [Episode]!
+  }
+  type Human implements Character {
+    id: ID!
+    name: String!
+    friends: [Character]
+    appearsIn: [Episode]!
+    starships: [Starship]
+    totalCredits: Int
+  }
+  type Droid implements Character {
+    id: ID!
+    name: String!
+    friends: [Character]
+    appearsIn: [Episode]!
+    primaryFunction: String
+  }
+ hasIntegers? true
+ hasStrings? true
+ hasUnionTypes? true
+  union SearchResult = Human | Droid | Starship
+
+wikipedia https://en.wikipedia.org/wiki/GraphQL
+ related javascript ruby scala
+ summary GraphQL is a data query language developed internally by Facebook in 2012 before being publicly released in 2015. It provides an alternative to REST and ad-hoc webservice architectures.. It allows clients to define the structure of the data required, and exactly the same structure of the data is returned from the server. It is a strongly typed runtime which allows clients to dictate what data is needed. This avoids both the problems of over-fetching as well as under-fetching of data. Major GraphQL clients include Apollo Client and Relay. GraphQL servers are available for multiple languages, including JavaScript, Python, Ruby, Java, C#, Scala, Go, Elixir, Erlang, PHP, and Clojure.
+ pageId 50353761
+ dailyPageViews 195
+ created 2016
+ backlinksCount 15
+ revisionCount 65
+ appeared 2015
+
+githubLanguage GraphQL
+ fileExtensions graphql gql
+ trendingProjectsCount 0
+
+linguistGrammarRepo https://github.com/rmosolgo/language-graphql
+ firstCommit 2015
+ lastCommit 2018
+ committerCount 6
+ commitCount 47
+ sampleCount 2
+ example
+  # Copyright (c) 2015, Facebook, Inc.
+  # All rights reserved.
+  #
+  # This source code is licensed under the BSD-style license found in the
+  # LICENSE file in the root directory of this source tree. An additional grant
+  # of patent rights can be found in the PATENTS file in the same directory.
+  
+  schema {
+    query: QueryType
+    mutation: MutationType
+  }
+  
+  type Foo implements Bar {
+    one: Type
+    two(argument: InputType!): Type
+    three(argument: InputType, other: String): Int
+    four(argument: String = "string"): String
+    five(argument: [String] = ["string", "string"]): String
+    six(argument: InputType = {key: "value"}): Type
+  }
+  
+  interface Bar {
+    one: Type
+    four(argument: String = "string"): String
+  }
+  
+  union Feed = Story | Article | Advert
+  
+  scalar CustomScalar
+  
+  enum Site {
+    DESKTOP
+    MOBILE
+  }
+  
+  input InputType {
+    key: String!
+    answer: Int = 42
+  }
+  
+  extend type Foo {
+    seven(argument: [String]): Type
+  }
+  
+  directive @skip(if: Boolean!) on FIELD | FRAGMENT_SPREAD | INLINE_FRAGMENT
+  
+  directive @include(if: Boolean!)
+    on FIELD
+     | FRAGMENT_SPREAD
+     | INLINE_FRAGMENT
+  
+
 website http://graphql.org/
-wikipedia GraphQL
+status active
+
+twitter graphql
+
+fileType text
+
+antlr https://github.com/antlr/grammars-v4/tree/master/graphql
+
+corporateDevelopers Facebook

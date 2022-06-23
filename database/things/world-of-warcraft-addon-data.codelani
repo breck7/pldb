@@ -1,5 +1,7 @@
+title World of Warcraft Addon Data
 appeared 2012
 type application
+
 example
  ## Interface: 70300
  ## Title: Waiting for Bob
@@ -8,4 +10,28 @@ example
  Bob.xml
  Bob.lua
  # comment
+
+patterns
+ hasCentralPackageRepository? false
+
+githubLanguage World of Warcraft Addon Data
+ fileExtensions toc
+ trendingProjectsCount 0
+
+linguistGrammarRepo https://github.com/nebularg/language-toc-wow
+ firstCommit 2016
+ lastCommit 2016
+ committerCount 1
+ commitCount 8
+ sampleCount 3
+ example
+  ## Interface: 60200
+  ## Title: Vahevian Lotus Vane
+  ## Notes: "Critical Threat Range"
+  ## Version: 4.2
+  Vahevia.xml
+  Lotus_Vane.lua
+
 reference http://wowwiki.wikia.com/wiki/TOC_format
+status active
+fileType text

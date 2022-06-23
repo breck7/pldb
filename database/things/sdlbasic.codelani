@@ -1,3 +1,29 @@
+title SdlBasic
 appeared 2002
 type pl
-wikipedia SdlBasic
+
+patterns
+ hasCentralPackageRepository? false
+
+wikipedia https://en.wikipedia.org/wiki/SdlBasic
+ example
+  Function swap( a, b )
+      tmp = a
+      a = b
+      b = tmp
+  End Function
+  v1=10
+  v2=20
+  print v1, v2
+  swap( v1, v2 )
+  print v1, v2
+ related basic wxbasic
+ summary SdlBasic is a multiplatform interpreter for BASIC, using the SDL libraries.  Its interpreter core is based on wxBasic. The interpreter can be very useful for people who are familiar with ANSI-BASIC interpreters and are curious or needing SDL library features on their coding development. Using the IDE it is possible to create an executable.
+ created 2007
+ backlinksCount 12
+ pageId 13475116
+ revisionCount 49
+ dailyPageViews 4
+ appeared 2002
+
+status historical

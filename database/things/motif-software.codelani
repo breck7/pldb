@@ -1,3 +1,19 @@
+title Motif
 appeared 1989
 type pl
-wikipedia Motif_(software)
+
+patterns
+ hasCentralPackageRepository? false
+
+wikipedia https://en.wikipedia.org/wiki/Motif_(software)
+ related linux unix unicode
+ summary In computing, Motif refers to both a graphical user interface (GUI) specification and the widget toolkit for building applications that follow that specification under the X Window System on Unix and Unix-like operating systems. Motif is the toolkit for the Common Desktop Environment and IRIX Interactive Desktop, thus it was the standard widget toolkit for Unix. Closely related to Motif is the Motif Window Manager (MWM). After many years as proprietary software, Motif was released in 2012, as free software under the GNU Lesser General Public License (LGPL).
+ created 2003
+ backlinksCount 273
+ pageId 222551
+ revisionCount 192
+ dailyPageViews 86
+ appeared 2017
+
+status historical
+isOpenSource true

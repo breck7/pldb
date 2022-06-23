@@ -1,3 +1,25 @@
+title XPath
 appeared 1999
 type queryLanguage
-wikipedia XPath
+
+patterns
+ hasCentralPackageRepository? false
+
+wikipedia https://en.wikipedia.org/wiki/XPath
+ example
+  /Wikimedia/projects/project[@name='Wikipedia']/editions/edition/text()
+ related xml css java csharp python javascript xproc xquery json unicode c free-pascal perl php ruby scheme sql mysql postgresql tcl
+ summary XPath (XML Path Language) is a query language for selecting nodes from an XML document. In addition, XPath may be used to compute values (e.g., strings, numbers, or Boolean values) from the content of an XML document. XPath was defined by the World Wide Web Consortium (W3C).
+ pageId 19086670
+ dailyPageViews 475
+ created 2008
+ backlinksCount 332
+ revisionCount 228
+ appeared 1999
+
+status historical
+fileType text
+
+antlr https://github.com/antlr/grammars-v4/tree/master/xpath
+
+corporateDevelopers W3C

@@ -1,3 +1,24 @@
+title Daplex
 appeared 1979
 type pl
-wikipedia Daplex
+
+patterns
+ hasCentralPackageRepository? false
+
+wikipedia https://en.wikipedia.org/wiki/Daplex
+ example
+  Type EMPLOYEE is entity
+  Name: string
+  SSN: integer
+  ADDRESS: string
+  SALARY: Float
+  end entity;
+ summary Daplex is a computer language introduced in 1981 by David Shipman of the Computer Corporation of America. Daplex was designed for creating distributed database systems and can be used as a global query language.
+ created 2007
+ backlinksCount 10
+ pageId 11305281
+ revisionCount 23
+ dailyPageViews 3
+ appeared 1981
+
+status historical

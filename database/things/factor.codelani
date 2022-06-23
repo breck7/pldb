@@ -1,6 +1,71 @@
+title Factor
 appeared 2003
 type pl
+
+patterns
+ hasCentralPackageRepository? false
+ hasComments? true
+ hasGarbageCollection? true
+ hasMacros? true
+
+wikipedia https://en.wikipedia.org/wiki/Factor_(programming_language)
+ example
+  : make-html ( string -- xml )
+      dup
+      <XML
+          <html>
+              <head><title><-></title></head>
+              <body><h1><-></h1></body>
+          </html>
+      XML> ;
+ related linux joy forth lisp self java scheme c java-bytecode reverse-polish-notation xml opengl postgresql sqlite objective-c fortran smalltalk
+ summary Factor is a stack-oriented programming language created by Slava Pestov. Factor is dynamically typed and has automatic memory management, as well as powerful metaprogramming features. The language has a single implementation featuring a self-hosted optimizing compiler and an interactive development environment. The Factor distribution includes a large standard library.
+ pageId 891398
+ dailyPageViews 44
+ created 2004
+ backlinksCount 63
+ revisionCount 238
+ appeared 2009
+
+githubLanguage Factor
+ fileExtensions factor
+ trendingProjectsCount 0
+
+githubRepo https://github.com/factor/factor
+ stars 634
+ forks 115
+ subscribers 52
+ created 2009
+ updated 2017
+ firstCommit 2007
+ description Factor programming language - GitHub mirror of official GIT repo
+ issues 563
+
+linguistGrammarRepo https://github.com/slavapestov/factor
+ firstCommit 2007
+ lastCommit 2016
+ committerCount 124
+ commitCount 28257
+
 website https://factorcode.org/
-github https://github.com/factor/factor
-wikipedia Factor_(programming_language)
 reference https://docs.google.com/document/d/17IddUbocCQhmx_mCcycij6Dmmn-c0ReZqLWzY-idt-Q/edit
+status active
+
+tryItOnline factor
+
+twitter factorbuilds
+
+fileType text
+wordRank 2090
+isOpenSource true
+
+tiobe Factor
+
+projectEuler Factor
+ memberCount
+  2019 48
+  2022 50
+
+codeMirror factor
+
+rosettaCode Factor

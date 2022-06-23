@@ -1,3 +1,91 @@
+title Whitespace
 appeared 2003
 type esolang
-wikipedia Whitespace_(programming_language)
+
+patterns
+ hasCentralPackageRepository? false
+
+wikipedia https://en.wikipedia.org/wiki/Whitespace_(programming_language)
+ example
+  S S S T	S S T	S S S L
+  T	L
+  S S S S S T	T	S S T	S T	L
+  T	L
+  S S S S S T	T	S T	T	S S L
+  T	L
+  S S S S S T	T	S T	T	S S L
+  T	L
+  S S S S S T	T	S T	T	T	T	L
+  T	L
+  S S S S S T	S T	T	S S L
+  T	L
+  S S S S S T	S S S S S L
+  T	L
+  S S S S S T	T	T	S T	T	T	L
+  T	L
+  S S S S S T	T	S T	T	T	T	L
+  T	L
+  S S S S S T	T	T	S S T	S L
+  T	L
+  S S S S S T	T	S T	T	S S L
+  T	L
+  S S S S S T	T	S S T	S S L
+  T	L
+  S S S S S T	S S S S T	L
+  T	L
+  S S L
+  L
+  L
+ related idris python brainfuck intercal lolcode malbolge
+ summary Whitespace is an esoteric programming language developed by Edwin Brady and Chris Morris at the University of Durham (also developers of the Kaya and Idris programming languages). It was released on 1 April 2003 (April Fool's Day). Its name is a reference to whitespace characters. Unlike most programming languages, which ignore or assign little meaning to most whitespace characters, the Whitespace interpreter ignores any non-whitespace characters. Only spaces, tabs and linefeeds have meaning. An interesting consequence of this property is that a Whitespace program can easily be contained within the whitespace characters of a program written in another language, except possibly in languages which depend on spaces for syntax validity such as Python, making the text a polyglot. The language itself is an imperative stack-based language. The virtual machine on which the programs run has a stack and a heap. The programmer is free to push arbitrary-width integers onto the stack (currently there is no implementation of floating point numbers) and can also access the heap as a permanent store for variables and data structures.
+ pageId 205017
+ dailyPageViews 326
+ created 2003
+ backlinksCount 52
+ revisionCount 295
+ appeared 2003
+
+helloWorldCollection Whitespace
+ Hello #World #in #Whitespace	* # #	* # # #
+ +	*[Space]
+ + #is #marked #with"#" # #[tab]	#with"*"	*line-feed #with #"+"	* #	*so
+ +it	#would
+ +be #easier #to #write #again... #All	*the	*non-whitespace-characters #are	*ignored...	* # #
+ +	*
+ + # # # # #	*	* #	*	* # #
+ +	*
+ + # # # # #	*	* #	*	*	*	*
+ +	*
+ + # # # # #	* # # # # #
+ +	*
+ + # # # # #	* #	* #	*	*	*
+ +	*
+ + # # # # #	*	* #	*	*	*	*
+ +	*
+ + # # # # #	*	*	* # #	* #
+ +	*
+ + # # # # #	*	* #	*	* # #
+ +	*
+ + # # # # #	*	* # #	* # #
+ +	*
+ + # # # # #	* # # # #	*
+ +	*
+ + # # # # #	* #	* #
+ +	*
+ + # #
+ +
+ +
+ +
+ 
+
+status active
+
+tryItOnline whitespace
+
+fileType text
+
+tiobe Whitespace
+
+quineRelay Whitespace
+
+rosettaCode Whitespace

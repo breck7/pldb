@@ -1,5 +1,232 @@
+title C
 appeared 1972
 type pl
 creators Dennis Ritchie
-wikipedia C_(programming_language)
+
+patterns
+ hasPointers? true
+  int *ptr;
+ hasAssertStatements? true
+  #include <assert.h>
+  int i, a[10];
+  for (i = 0; i < 10; ++i)
+    {
+    assert(0 <= i && i < 10);
+    a[i] = 10-i;
+    }
+  for (i = 0; i < 10; ++i)
+    {
+    assert(0 <= i && i < 10);
+    assert(0 <= a[i] && a[i] < 10);
+    a[a[i]] = a[i];
+    }
+ hasBitWiseOperators? true
+  int i = 4; /* bit pattern equivalent is binary 100 */
+  int j = i << 2; /* makes it binary 10000, which multiplies the original number by 4 i.e. 16 */
+ hasSymbolTables? true
+  // Declare an external function
+  extern double bar(double x);
+  
+  // Define a public function
+  double foo(int count)
+  {
+      double  sum = 0.0;
+  
+      // Sum all the values bar(1) to bar(count)
+      for (int i = 1;  i <= count;  i++)
+          sum += bar((double) i);
+      return sum;
+  }
+  // Symbol Table:
+  // Symbol name|Type|Scope
+  // bar|function, double|extern
+  // x|double|function parameter
+  // foo|function, double|global
+  // count|int|function parameter
+  // sum|double|block local
+  // i|int|for-loop statement
+ hasCentralPackageRepository? false
+ hasComments? true
+  /* hello world */
+  // hi
+ hasStructs? true
+  struct account {
+    int account_number;
+    char *first_name;
+    char *last_name;
+    float balance;
+  };
+ hasGarbageCollection? false
+ hasGotos? true
+  // C/C++ program to check if a number is 
+  // even or not using goto statement 
+  #include <iostream> 
+  using namespace std; 
+    
+  // function to check even or not 
+  void checkEvenOrNot(int num) 
+  { 
+      if (num % 2 == 0) 
+          goto even; // jump to even 
+      else
+          goto odd; // jump to odd 
+    
+  even: 
+      cout << num << " is evenn"; 
+      return; // return if even 
+  odd: 
+      cout << num << " is oddn"; 
+  } 
+    
+  // Driver program to test above function 
+  int main() 
+  { 
+      int num = 26; 
+      checkEvenOrNot(num); 
+      return 0; 
+  }
+ hasDirectives? true
+  #include <stdio.h>
+  #define height 10
+  #ifdef
+  #endif
+  #if
+  #else
+  #ifndef
+  #undef
+  #pragma
+ hasExplicitTypeCasting? true
+  double da = 3.3;
+  double db = 3.3;
+  double dc = 3.4;
+  int result = (int)da + (int)db + (int)dc; //result == 9
+ hasImports? true
+  //  If a header file is included within <>, the preprocessor will search a predetermined directory path to locate the header file. If the header file is enclosed in "", the preprocessor will look for the header file in the same directory as the source file.
+  #include <stdio.h>
+  #include "stdio.h"
+ hasIntegers? true
+  int c = 10;
+ hasMacros? true
+  https://gcc.gnu.org/onlinedocs/cpp/Macro-Arguments.html
+ hasManualMemoryManagement? true
+  #include <stdio.h>
+  #include <stdlib.h>
+  int main(void)
+  {
+    int *poin = malloc(4);
+    free(poin);
+  }
+ hasOperatorOverloading? false
+ hasVariadicFunctions? true
+  double average(int count, ...)
+  {
+   //
+  }
+ hasZeroBasedNumbering? true
+ hasIncrementAndDecrementOperators? true
+
+wikipedia https://en.wikipedia.org/wiki/C_(programming_language)
+ example
+  #include <stdio.h>
+  
+  int main(void)
+  {
+      printf("hello, world\n");
+  }
+ related cyclone unified-parallel-c split-c cilk b bcpl cpl algol-68 assembly-language pl-i ampl awk c-- csharp objective-c d go java javascript julia limbo lpc perl php pike processing python rust seed7 vala verilog unix algol swift multics unicode fortran pascal mathematica matlab ch smalltalk
+ summary C (, as in the letter c) is a general-purpose, imperative computer programming language, supporting structured programming, lexical variable scope and recursion, while a static type system prevents many unintended operations. By design, C provides constructs that map efficiently to typical machine instructions, and therefore it has found lasting use in applications that had formerly been coded in assembly language, including operating systems, as well as various application software for computers ranging from supercomputers to embedded systems. C was originally developed by Dennis Ritchie between 1969 and 1973 at Bell Labs, and used to re-implement the Unix operating system. It has since become one of the most widely used programming languages of all time, with C compilers from various vendors available for the majority of existing computer architectures and operating systems. C has been standardized by the American National Standards Institute (ANSI) since 1989 (see ANSI C) and subsequently by the International Organization for Standardization (ISO). C is an imperative procedural language. It was designed to be compiled using a relatively straightforward compiler, to provide low-level access to memory, to provide language constructs that map efficiently to machine instructions, and to require minimal run-time support. Despite its low-level capabilities, the language was designed to encourage cross-platform programming. A standards-compliant and portably written C program can be compiled for a very wide variety of computer platforms and operating systems with few changes to its source code. The language has become available on a very wide range of platforms, from embedded microcontrollers to supercomputers.
+ pageId 6021
+ dailyPageViews 6268
+ created 2001
+ backlinksCount 10585
+ revisionCount 7316
+ appeared 2011
+ fileExtensions Mono
+
+githubLanguage C
+ fileExtensions c cats h idc
+ trendingProjects
+  author name avatar url language languageColor stars forks currentPeriodStars description
+  pwn20wndstuff Undecimus https://github.com/pwn20wndstuff.png https://github.com/pwn20wndstuff/Undecimus C #555555 4836 991 1356 "unc0ver jailbreak for iOS 11.0 - 12.4"
+  LiteOS LiteOS https://github.com/LiteOS.png https://github.com/LiteOS/LiteOS C #555555 3361 1146 1832 "code and manual"
+  git git https://github.com/git.png https://github.com/git/git C #555555 29183 16856 680 "Git Source Code Mirror - This is a publish-only repository and all pull requests are ignored. Please follow Documentation/SubmittingPatches procedure for any of your improvements."
+  nginx nginx https://github.com/nginx.png https://github.com/nginx/nginx C #555555 9590 3619 293 "An official read-only mirror of http://hg.nginx.org/nginx/ which is updated hourly. Pull requests on GitHub cannot be accepted and will be automatically closed. The proper way to submit changes to nginx is via the nginx development mailing list, see http://nginx.org/en/docs/contributing_changes.html"
+  littlevgl lvgl https://github.com/littlevgl.png https://github.com/littlevgl/lvgl C #555555 2274 522 128 "Powerful and easy-to-use embedded GUI with many widgets, advanced visual effects (opacity, antialiasing, animations) and low memory requirements (16K RAM, 64K Flash)."
+  Genymobile scrcpy https://github.com/Genymobile.png https://github.com/Genymobile/scrcpy C #555555 18275 1510 2342 "Display and control your Android device"
+  NVIDIA open-gpu-doc https://github.com/NVIDIA.png https://github.com/NVIDIA/open-gpu-doc C #555555 734 39 721 "Documentation of NVIDIA chip/hardware interfaces"
+  betaflight betaflight https://github.com/betaflight.png https://github.com/betaflight/betaflight C #555555 3001 1405 124 "Open Source Flight Controller Firmware"
+  nothings stb https://github.com/nothings.png https://github.com/nothings/stb C #555555 10557 2767 341 "stb single-file public domain libraries for C/C++"
+  openbsd src https://github.com/openbsd.png https://github.com/openbsd/src C #555555 1202 314 52 "Public git conversion mirror of OpenBSD's official CVS src repository. Pull requests not accepted - send diffs to the tech@ mailing list."
+  ARMmbed littlefs https://github.com/ARMmbed.png https://github.com/ARMmbed/littlefs C #555555 1480 220 333 "A little fail-safe filesystem designed for microcontrollers"
+  nmap nmap https://github.com/nmap.png https://github.com/nmap/nmap C #555555 3319 1126 114 "Nmap - the Network Mapper. Github mirror of official SVN repository."
+  RT-Thread rt-thread https://github.com/RT-Thread.png https://github.com/RT-Thread/rt-thread C #555555 3199 2128 227 "RT-Thread is an open source IoT operating system from China."
+  DoubleLabyrinth navicat-keygen https://github.com/DoubleLabyrinth.png https://github.com/DoubleLabyrinth/navicat-keygen C++ #f34b7d 7512 1890 565 "A keygen for Navicat"
+  torvalds linux https://github.com/torvalds.png https://github.com/torvalds/linux C #555555 79929 27885 1452 "Linux kernel source tree"
+  zephyrproject-rtos zephyr https://github.com/zephyrproject-rtos.png https://github.com/zephyrproject-rtos/zephyr C #555555 2423 1468 115 "Primary Git Repository for the Zephyr Project. Zephyr is a new generation, scalable, optimized, secure RTOS for multiple hardware architectures."
+  KevinOConnor klipper https://github.com/KevinOConnor.png https://github.com/KevinOConnor/klipper C #555555 1531 724 62 "Klipper is a 3d-printer firmware"
+  JVictorDias Dinossauro-Google https://github.com/JVictorDias.png https://github.com/JVictorDias/Dinossauro-Google C #555555 297 85 191 "Código do projeto onde uma rede neural aprende a jogar o dinossauro do google"
+  commaai openpilot https://github.com/commaai.png https://github.com/commaai/openpilot C #555555 12310 2924 408 "open source driving agent"
+  qmk qmk_firmware https://github.com/qmk.png https://github.com/qmk/qmk_firmware C #555555 4961 9458 204 "Open-source keyboard firmware for Atmel AVR and Arm USB families"
+  cfenollosa os-tutorial https://github.com/cfenollosa.png https://github.com/cfenollosa/os-tutorial C #555555 16163 1776 271 "How to create an OS from scratch"
+  mit-pdos xv6-public https://github.com/mit-pdos.png https://github.com/mit-pdos/xv6-public C #555555 2956 1586 92 "xv6 OS"
+  php php-src https://github.com/php.png https://github.com/php/php-src C #555555 24746 5666 486 "The PHP Interpreter"
+  micropython micropython https://github.com/micropython.png https://github.com/micropython/micropython C #555555 9015 2745 190 "MicroPython - a lean and efficient Python implementation for microcontrollers and constrained systems"
+  esp8266 Arduino https://github.com/esp8266.png https://github.com/esp8266/Arduino C #555555 9944 7850 166 "ESP8266 core for Arduino"
+ trendingProjectsCount 26
+
+linguistGrammarRepo https://github.com/textmate/c.tmbundle
+ firstCommit 2005
+ lastCommit 2018
+ committerCount 23
+ commitCount 359
+ sampleCount 57
+ example
+  #ifndef HELLO_H
+  #define HELLO_H
+  
+  void hello();
+  
+  #endif
+  
+
 reference http://www.c4learn.com/c-programming/c-keywords/
+status active
+
+replit c
+
+country US
+fileType text
+wordRank 81
+
+tiobe C
+ currentRank 2
+
+meetup c
+ memberCount 69338
+ groupCount 204
+
+linkedInSkill c
+ peopleWithThisSkillCount 3635195
+
+projectEuler C/C++
+ memberCount
+  2022 46028
+  2019 41087
+
+hopl 577
+
+subreddit C_Programming
+ memberCount
+  2017 30709
+
+quineRelay C
+
+ubuntuPackage gcc
+
+rosettaCode C
+
+antlr https://github.com/antlr/grammars-v4/tree/master/c
+
+cheatSheetUrl https://courses.cs.washington.edu/courses/cse351/14sp/sections/1/Cheatsheet-c.pdf
+indeedJobs c engineer
+ 2017 23567

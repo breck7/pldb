@@ -1,4 +1,66 @@
+title Visual Basic
 appeared 1991
 type pl
+
+patterns
+ hasCentralPackageRepository? false
+ hasDirectives? true
+  Option Explicit On|Off
+  Option Compare Binary
+ hasOperatorOverloading? false
+
+wikipedia https://en.wikipedia.org/wiki/Visual_Basic
+ example
+  Option Explicit
+  Dim Count As Integer
+  Private Sub Form_Load()
+      Count = 0
+      Timer1.Interval = 1000 ' units of milliseconds
+  End Sub
+  Private Sub Timer1_Timer()
+      Count = Count + 1
+      Label1.Caption = Count
+  End Sub
+ related visual-basic-dot-net visual-studio-editor basic gambas xojo basic4ppc ns-basic vba perl pascal fortran vbscript ruby quickbasic autocad-app asp winwrap-basic lotusscript
+ summary Visual Basic is a third-generation event-driven programming language and integrated development environment (IDE) from Microsoft for its Component Object Model (COM) programming model first released in 1991 and declared legacy during 2008. Microsoft intended Visual Basic to be relatively easy to learn and use. Visual Basic was derived from BASIC and enables the rapid application development (RAD) of graphical user interface (GUI) applications, access to databases using Data Access Objects, Remote Data Objects, or ActiveX Data Objects, and creation of ActiveX controls and objects. A programmer can create an application using the components provided by the Visual Basic program itself. Over time the community of programmers developed third-party components. Programs written in Visual Basic can also use the Windows API, which requires external function declarations. The final release was version 6 in 1998 (now known simply as Visual Basic). On  April 8, 2008, Microsoft stopped supporting Visual Basic 6.0 IDE. The Microsoft Visual Basic team still maintains compatibility for Visual Basic 6.0 applications on Windows Vista, Windows Server 2008 including R2, Windows 7, Windows 8, Windows 8.1, Windows Server 2012, Windows 10 and Windows Server 2016 through its "It Just Works" program. In 2014, some software developers still preferred Visual Basic 6.0 over its successor, Visual Basic .NET.  In 2014 some developers lobbied for a new version of the VB6 programming environment. In 2016, Visual Basic 6.0 won the technical impact award at The 19th Annual D.I.C.E. Awards. A dialect of Visual Basic, Visual Basic for Applications (VBA), is used as a macro or scripting language within several Microsoft applications, including Microsoft Office.
+ pageId 6097382
+ dailyPageViews 1574
+ created 2001
+ backlinksCount 2512
+ revisionCount 4052
+ appeared 1991
+
+linguistGrammarRepo https://github.com/angryant0007/VBDotNetSyntax
+ firstCommit 2012
+ lastCommit 2017
+ committerCount 4
+ commitCount 61
+
 website https://msdn.microsoft.com/en-us/library/windows/desktop/ms788229.aspx
-wikipedia Visual_Basic
+aka vb VisualBasic
+status active
+country US
+fileType text
+
+tiobe Visual Basic
+ currentRank 17
+
+meetup vb
+ memberCount 12487
+ groupCount 21
+
+hopl 1374
+
+subreddit visualbasic
+ memberCount
+  2017 3474
+
+quineRelay Visual Basic
+
+ubuntuPackage mono-vbnc
+
+antlr https://github.com/antlr/grammars-v4/tree/master/vb6
+
+corporateDevelopers Microsoft
+indeedJobs visual basic engineer
+ 2017 3294

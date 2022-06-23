@@ -1,7 +1,7 @@
+title Language Server Index Format
 appeared 2019
 type jsonFormat
-website https://lsif.dev/
-github https://github.com/lsif/lsif.github.io
+
 example
  // a vertex representing the document
  { id: 1, type: "vertex", label: "document", uri: "file:///Users/username/sample.ts", languageId: "typescript" }
@@ -19,3 +19,8 @@ example
  }
  // an edge linking the hover result to the range.
  { id: 7, type: "edge", label: "textDocument/hover", outV: 4, inV: 6 }
+
+githubRepo https://github.com/lsif/lsif.github.io
+
+website https://lsif.dev/
+standsFor Language Server Index Format

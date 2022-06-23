@@ -1,5 +1,50 @@
+title NumPy
 appeared 1995
 type library
 creators Travis Oliphant
+
+patterns
+ hasCentralPackageRepository? false
+
+wikipedia https://en.wikipedia.org/wiki/NumPy
+ example
+  >>> # # # Pure iterative Python # # #
+  >>> points = [[9,2,8],[4,7,2],[3,4,4],[5,6,9],[5,0,7],[8,2,7],[0,3,2],[7,3,0],[6,1,1],[2,9,6]]
+  >>> qPoint = [4,5,3]
+  >>> minIdx = -1
+  >>> minDist = -1
+  >>> for idx, point in enumerate(points):  # iterate over all points
+          dist = sum([(dp-dq)**2 for dp,dq in zip(point,qPoint)])**0.5  # compute the euclidean distance for each point to q
+          if dist < minDist or minDist < 0:  # if necessary, update minimum distance and index of the corresponding point
+              minDist = dist
+              minIdx = idx
+  
+  >>> print 'Nearest point to q: ', points[minIdx]
+  Nearest point to q:  [3, 4, 4]
+  
+  >>> # # # Equivalent NumPy vectorization # # #
+  >>> import numpy as np
+  >>> points = np.array([[9,2,8],[4,7,2],[3,4,4],[5,6,9],[5,0,7],[8,2,7],[0,3,2],[7,3,0],[6,1,1],[2,9,6]])
+  >>> qPoint = np.array([4,5,3])
+  >>> minIdx = np.argmin(np.linalg.norm(points-qPoint,axis=1))  # compute all euclidean distances at once and return the index of the smallest one
+  >>> print 'Nearest point to q: ', points[minIdx]
+  Nearest point to q:  [3 4 4]
+ related python c mathematical-notation jython scipy matlab simulink matplotlib cython
+ summary NumPy (pronounced  (NUM-py) or sometimes  (NUM-pee)) is a library for the Python programming language, adding support for large, multi-dimensional arrays and matrices, along with a large collection of high-level mathematical functions to operate on these arrays. The ancestor of NumPy, Numeric, was originally created by Jim Hugunin with contributions from several other developers. In 2005, Travis Oliphant created NumPy by incorporating features of the competing Numarray into Numeric, with extensive modifications. NumPy is open-source software and has many contributors.
+ pageId 381782
+ dailyPageViews 427
+ created 2003
+ backlinksCount 108
+ revisionCount 379
+ appeared 2005
+
+githubLanguage NumPy
+ fileExtensions numpy numpyw numsc
+ trendingProjectsCount 0
+
 website http://www.numpy.org/
-wikipedia NumPy
+aka Numeric
+status active
+fileType text
+isOpenSource true
+writtenIn python c

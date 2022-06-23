@@ -1,5 +1,52 @@
+title Modelica
 appeared 1997
 type pl
+
+patterns
+ hasCentralPackageRepository? false
+
+wikipedia https://en.wikipedia.org/wiki/Modelica
+ example
+  model Circuit
+     Capacitor C1(C=1e-4) "A Capacitor instance from the model above";
+     Capacitor C2(C=1e-5) "A Capacitor instance from the model above";
+       ...
+  equation
+     connect(C1.pin_p, C2.pin_n);
+     ...
+  end Circuit;
+ related java unicode ampl general-algebraic-modeling-system matlab simulink doi
+ summary Modelica is an object-oriented, declarative, multi-domain modeling language for component-oriented modeling of complex systems, e.g., systems containing mechanical, electrical, electronic, hydraulic, thermal, control, electric power or process-oriented subcomponents. The free Modelica language is developed by the non-profit Modelica Association. The Modelica Association also develops the free Modelica Standard Library that contains about 1360 generic model components and 1280 functions in various domains, as of version 3.2.1.
+ pageId 1467946
+ dailyPageViews 93
+ created 2005
+ backlinksCount 53
+ revisionCount 288
+ appeared 1997
+
+githubLanguage Modelica
+ fileExtensions mo
+ trendingProjectsCount 0
+
+linguistGrammarRepo https://github.com/BorisChumichev/modelicaSublimeTextPackage
+ firstCommit 2013
+ lastCommit 2017
+ committerCount 6
+ commitCount 55
+ sampleCount 12
+ example
+  within ModelicaByExample;
+  package PackageExamples "Examples of using packages"
+  end PackageExamples;
+  
+
 website http://www.modelica.org/
-wikipedia Modelica
 reference https://marcobonvini.com/modelica/2020/06/29/all-about-modelica.html
+status active
+fileType text
+
+hopl 4965
+
+codeMirror modelica
+
+antlr https://github.com/antlr/grammars-v4/tree/master/modelica

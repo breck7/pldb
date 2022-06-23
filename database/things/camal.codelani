@@ -1,3 +1,21 @@
+title Cambridge Algebra System
 appeared 1973
 type pl
-wikipedia Cambridge_Algebra_System
+
+patterns
+ hasCentralPackageRepository? false
+
+wikipedia https://en.wikipedia.org/wiki/Cambridge_Algebra_System
+ related assembly-language bcpl
+ summary Cambridge Algebra System (CAMAL) is a computer algebra system written in Cambridge University by David Barton, Steve Bourne, and John Fitch. It was initially used for computations in celestial mechanics and general relativity. The foundation code was written in Titan computer assembler,.  In 1973, when Titan was replaced with an IBM370/85, it was rewritten in ALGOL 68C and then BCPL where it could run on IBM mainframes and assorted microcomputers.
+ pageId 36699162
+ created 2012
+ backlinksCount 57
+ revisionCount 29
+ dailyPageViews 3
+ appeared 1973
+
+status historical
+fileType text
+
+hopl 671

@@ -1,9 +1,20 @@
+title jasper
 appeared 2014
 type pl
-github https://github.com/ema-fox/jasper
+
 example
  (+ 2 3)
  (map [+ 1 _] '(1 2 3))
  (let a 4 (map [+ 3 a _] '(1 2 3)))
  (alert "Hello world!")
  (map str '(1 2 3) '(foo bar baz))
+
+githubRepo https://github.com/ema-fox/jasper
+ firstCommit 2014
+ stars 2
+ subscribers 1
+ created 2014
+ updated 2015
+ description compile to js lisp inspired by arc
+
+webRepl http://ema-fox.github.io/jasper/

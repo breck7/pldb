@@ -1,5 +1,106 @@
+title Ragel
 appeared 2007
 type pl
+
+patterns
+ hasCentralPackageRepository? false
+
+wikipedia https://en.wikipedia.org/wiki/Ragel
+ related c d go ruby java regex ascii xuml umple
+ summary Ragel is a finite-state machine compiler and a parser generator. Initially Ragel supported output for C, C++ and Assembly source code,. Although subsequently extended to support several other languages (said to be Objective C, D, Go, Ruby, and Java) this support of other languages was withdrawn .  It supports the generation of table or control flow driven state machines from regular expressions and/or state charts and can also build lexical analysers via the longest-match method. Ragel specifically targets text parsing and input validation.
+ created 2006
+ pageId 8052388
+ backlinksCount 21
+ revisionCount 88
+ dailyPageViews 29
+ appeared 2017
+
+githubLanguage Ragel
+ fileExtensions rl
+ trendingProjectsCount 0
+
+githubRepo https://github.com/bnoordhuis/ragel
+ firstCommit 2007
+ stars 96
+ forks 11
+ subscribers 5
+ created 2013
+ updated 2018
+ description Ragel State Machine Compiler - http://www.complang.org/ragel/
+ issues 0
+
+example
+ =begin
+ %%{
+   machine simple_scanner;
+ 
+   action Emit {
+     emit data[(ts+8)..(te-7)].pack('c*')
+   }
+ 
+   foo = 'STARTFOO' any+ :>> 'ENDFOO';
+   
+   main := |*
+     foo => Emit;
+     any;
+   *|;
+ }%%
+ =end
+ 
+ 
+ # Scans a file for "STARTFOO[...]ENDFOO" blocks and outputs their contents.
+ #
+ # ENV['CHUNK_SIZE'] determines how much of the file to read in at a time, allowing you to control memory usage.
+ #
+ # Uses ragel's scanner functionality even though it's not strictly necessary.
+ class SimpleScanner
+   attr_reader :path
+ 
+   def initialize(path)
+     @path = path
+     %% write data;
+     # % (this fixes syntax highlighting)
+   end
+ 
+   def emit(foo)
+     $stdout.puts foo
+   end
+   
+   def perform
+     # So that ragel doesn't try to get it from data.length
+     pe = :ignored
+     eof = :ignored
+ 
+     %% write init;
+     # % (this fixes syntax highlighting)
+ 
+     leftover = []
+     
+     File.open(path) do |f|
+       while chunk = f.read(ENV['CHUNK_SIZE'].to_i)
+         data = leftover + chunk.unpack('c*')
+         p ||= 0
+         pe = data.length
+ 
+         %% write exec;
+         # % (this fixes syntax highlighting)
+         if ts
+           leftover = data[ts..pe]
+           p = p - ts
+           ts = 0
+         else
+           leftover = []
+           p = 0
+         end
+       end
+     end
+   end
+ end
+ 
+ s = SimpleScanner.new ARGV[0]
+ s.perform
+
 website http://complang.org/ragel/
-github https://github.com/bnoordhuis/ragel
-wikipedia Ragel
+status active
+fileType text
+isOpenSource true

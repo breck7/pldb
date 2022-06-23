@@ -1,3 +1,165 @@
+title Yet Another Compiler-Compiler
 appeared 1975
 type grammarLanguage
-wikipedia Yacc
+
+patterns
+ hasCentralPackageRepository? false
+
+wikipedia https://en.wikipedia.org/wiki/Yacc
+ related unix b c bison ocaml ratfor ada pascal java python ruby go common-lisp
+ summary Yacc (Yet Another Compiler-Compiler) is a computer program for the Unix operating system. It is a Look Ahead Left-to-Right (LALR) parser generator, generating a parser, the part of a compiler that tries to make syntactic sense of the source code, specifically a LALR parser, based on an analytic grammar written in a notation similar to Backus–Naur Form (BNF). Yacc itself used to be available as the default parser generator on most Unix systems, though it has since been supplanted as the default by more recent, largely compatible, programs.
+ pageId 34358
+ dailyPageViews 229
+ created 2001
+ backlinksCount 358
+ revisionCount 347
+ appeared 1975
+
+githubLanguage Yacc
+ fileExtensions y yacc yy
+ trendingProjectsCount 0
+
+linguistGrammarRepo https://github.com/textmate/bison.tmbundle
+ firstCommit 2007
+ lastCommit 2011
+ committerCount 2
+ commitCount 2
+ sampleCount 1
+ example
+  %{
+  /*
+   * Test program: Advanced Calculator
+   * by Zhao Cheng 5/20/2012
+   */
+  %}
+  
+  %union {
+      double val;    /* For returning numbers.  */
+      symrec *tptr;  /* For returning symbol-table pointers.  */
+  }
+  
+  %token <val> NUMBER
+  %token <tptr> VAR FNCT
+  
+  %right '='
+  %left '+' '-'
+  %left '*' '/'
+  %right '^'
+  %left NEG
+  
+  %type <val> expression
+  
+  %{
+  #include <stdio.h>
+  #include <stdlib.h>
+  #include <string.h>
+  #include <math.h>
+  #include "calc.h"  /* Contains definition of `symrec'.  */
+  %}
+  
+  %%
+  
+  statement
+      : /* empty */ { exit(0); }
+      | expression { printf("= %f\n", $1); }
+      ;
+  
+  expression
+      : NUMBER { $$ = $1; }
+      | VAR    { $$ = $1->value.var; }
+      | VAR '=' expression        { $$ = $3; $1->value.var = $3; }
+      | FNCT '(' expression ')'   { $$ = (*($1->value.fnctptr))($3); }
+      | expression '*' expression { $$ = $1 * $3; }
+      | expression '/' expression { $$ = $1 / $3; }
+      | expression '+' expression { $$ = $1 + $3; }
+      | expression '-' expression { $$ = $1 - $3; }
+      | expression '^' expression { $$ = pow($1, $3); }
+      | '-' expression %prec NEG  { $$ = -$2; }
+      | '(' expression ')'        { $$ = $2; }
+      ;
+  
+  %%
+  struct init
+  {
+      char const *fname;
+      double (*fnct) (double);
+  };
+  struct init const arith_fncts[] =
+  {
+      "sin"   , sin   , 
+      "asin"  , asin  , 
+      "cos"   , cos   , 
+      "acos"  , acos  , 
+      "tan"   , tan   , 
+      "atan"  , atan  , 
+      "ceil"  , ceil  , 
+      "floor" , floor , 
+      "abs"   , fabs  , 
+      "ln"    , log   , 
+      "log"   , log10 , 
+      "lg"    , log2  , 
+      "exp"   , exp   , 
+      "sqrt"  , sqrt  , 
+      0       , 0
+  };
+  /* The symbol table: a chain of `struct symrec'.  */
+  symrec *sym_table;
+  /* Put arithmetic functions in table.  */
+  void init_table (void)
+  {
+      int i;
+      symrec *ptr;
+      for (i = 0; arith_fncts[i].fname != 0; i++) {
+          ptr = putsym (arith_fncts[i].fname, FNCT);
+          ptr->value.fnctptr = arith_fncts[i].fnct;
+      }
+  }
+  int main()
+  {
+      init_table();
+      while (yyparse() == 0)
+          ;
+      return 0;
+  }
+  void yyerror(const char *msg)
+  {
+      fprintf(stderr, "Error: %s\n", msg);
+  }
+  symrec *
+  putsym (char const *sym_name, int sym_type)
+  {
+    symrec *ptr;
+    ptr = (symrec *) malloc (sizeof (symrec));
+    ptr->name = (char *) malloc (strlen (sym_name) + 1);
+    strcpy (ptr->name,sym_name);
+    ptr->type = sym_type;
+    ptr->value.var = 0; /* Set value to 0 even if fctn.  */
+    ptr->next = (struct symrec *)sym_table;
+    sym_table = ptr;
+    return ptr;
+  }
+  symrec *
+  getsym (char const *sym_name)
+  {
+    symrec *ptr;
+    for (ptr = sym_table; ptr != (symrec *) 0;
+         ptr = (symrec *)ptr->next)
+      if (strcmp (ptr->name,sym_name) == 0)
+        return ptr;
+    return 0;
+  }
+  
+
+standsFor Yet Another Compiler-Compiler
+status active
+country US
+fileType text
+
+tiobe yacc
+
+linkedInSkill yacc
+ peopleWithThisSkillCount 1722
+
+hopl 704
+
+writtenIn c

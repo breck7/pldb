@@ -1,6 +1,7 @@
+title N-Triples
 appeared 2014
 type metaLanguage
-wikipedia N-Triples
+
 example
  <http://www.w3.org/2001/sw/RDFCore/ntriples/> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> ↵
     <http://xmlns.com/foaf/0.1/Document> .
@@ -11,3 +12,12 @@ example
  _:art <http://xmlns.com/foaf/0.1/name> "Art Barstow".
  _:dave <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://xmlns.com/foaf/0.1/Person> .
  _:dave <http://xmlns.com/foaf/0.1/name> "Dave Beckett".
+
+wikipedia https://en.wikipedia.org/wiki/N-Triples
+ summary N-Triples is a format for storing and transmitting data. It is a line-based, plain text serialisation format for RDF (Resource Description Framework) graphs, and a subset of the Turtle (Terse RDF Triple Language) format. N-Triples should not be confused with Notation3 which is a superset of Turtle. N-Triples was primarily developed by Dave Beckett at the University of Bristol and Art Barstow at the World Wide Web Consortium (W3C).N-Triples was designed to be a simpler format than Notation3 and Turtle, and therefore easier for software to parse and generate. However, because it lacks some of the shortcuts provided by other RDF serialisations (such as CURIEs and nested resources, which are provided by both RDF/XML and Turtle) it can be onerous to type out large amounts of data by hand, and difficult to read.
+ backlinksCount 140
+ pageId 15752256
+ dailyPageViews 91
+ appeared 2014
+
+related turtle

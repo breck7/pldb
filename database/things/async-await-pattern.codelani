@@ -1,4 +1,15 @@
+title Async Await
 appeared 2007
 type pattern
-wikipedia Async/await
+psuedoExample async doSomething => await somethingElse()
 description A syntactic feature of many programming languages that allows an asynchronous, non-blocking function to be structured in a way similar to an ordinary synchronous function.
+
+wikipedia https://en.wikipedia.org/wiki/Async/await
+ summary In computer programming, the async/await pattern is a syntactic feature of many programming languages that allows an asynchronous, non-blocking function to be structured in a way similar to an ordinary synchronous function. It is semantically related to the concept of a coroutine and is often implemented using similar techniques, but is primarily intended to provide opportunities for the program to execute other code while waiting for a long-running, asynchronous task to complete, usually represented by promises or similar data structures. The feature is found in C# 5.0, Python 3.5, Hack, Dart, Kotlin 1.1, and JavaScript, with some experimental work in extensions, beta versions, and particular implementations of Scala, Rust, and C++.
+ backlinksCount 8
+ pageId 40844675
+ dailyPageViews 77
+ appeared 2007
+
+status active
+patternKeyword hasAsyncAwait?

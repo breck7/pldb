@@ -1,5 +1,171 @@
+title TypeScript
 appeared 2012
 type pl
 creators Anders Hejlsberg
+
+patterns
+ hasAbstractTypes? true
+  abstract class Animal {}
+  class Dog extends Animal
+ hasGenerics? true
+  function identity<T>(arg: T): T {
+     return arg;
+  }
+ hasBooleans? true
+  const result = true
+ hasCentralPackageRepository? true
+ hasClasses? true
+  class Person {}
+ hasExplicitTypeCasting? true
+  <number>something;
+ hasImports? true
+  import { ZipCodeValidator } from "./ZipCodeValidator";
+  /// <reference path="../typings/jquery.d.ts"/>
+  /// <reference path="components/someclass.ts"/>
+  import moo = module('moo');
+  /// <amd-dependency path="legacy/moduleA" name="moduleA"/>
+ hasInterfaces? true
+  // https://www.typescriptlang.org/docs/handbook/interfaces.html
+  interface SquareConfig {
+     color?: string;
+     width?: number;
+  }
+ hasMixins? true
+  // https://www.typescriptlang.org/docs/handbook/mixins.html
+  class SmartObject implements Disposable, Activatable {
+  }
+  // Note: still need to do some runtime ops to make that work.
+ hasNamespaces? true
+  // Typescript even supports splitting namespaces across multiple files:
+  // Validation.ts
+  namespace Validation {
+      export interface StringValidator {
+          isAcceptable(s: string): boolean;
+      }
+  }
+  // LettersOnlyValidator.ts
+  /// <reference path="Validation.ts" />
+  namespace Validation {
+      const lettersRegexp = /^[A-Za-z]+$/;
+      export class LettersOnlyValidator implements StringValidator {
+          isAcceptable(s: string) {
+              return lettersRegexp.test(s);
+          }
+      }
+  }
+ hasOperatorOverloading? false
+ hasPrintStatements? true
+  console.log("Hi")
+ hasInheritance? true
+  class B {}
+  class A extends B {}
+ hasStaticTyping? true
+ hasTypeParameters? true
+  function identity<T>(arg: T): T {
+     return arg;
+  }
+ hasStrings? true
+  const greeting = "hello world"
+ hasTypeInference? true
+ hasSingleTypeArrays? true
+  const scores: int[]
+ hasUnionTypes? true
+  declare type numOrString = string | number
+
+wikipedia https://en.wikipedia.org/wiki/TypeScript
+ example
+  class Person {
+      private name: string;
+      private age: number;
+      private salary: number;
+  
+      constructor(name: string, age: number, salary: number) {
+          this.name = name;
+          this.age = age;
+          this.salary = salary;
+      }
+  
+      toString(): string {
+          return `${this.name} (${this.age}) (${this.salary})`; // As of version 1.4
+      }
+  }
+ related javascript java csharp delphi turbo-pascal jquery mongodb d3 visual-studio-editor eclipse-editor emacs-editor vim-editor sublime-editor visual-studio-code-editor ecmascript maven-pom dart coffeescript elm
+ summary TypeScript is a free and open-source programming language developed and maintained by Microsoft. It is a strict syntactical superset of JavaScript, and adds optional static typing to the language. Anders Hejlsberg, lead architect of C# and creator of Delphi and Turbo Pascal, has worked on the development of TypeScript. TypeScript may be used to develop JavaScript applications for client-side or server-side (Node.js) execution. TypeScript is designed for development of large applications and compiles to JavaScript. As TypeScript is a superset of JavaScript, existing JavaScript programs are also valid TypeScript programs. TypeScript supports definition files that can contain type information of existing JavaScript libraries, much like C++ header files can describe the structure of existing object files. This enables other programs to use the values defined in the files as if they were statically typed TypeScript entities. There are third-party header files for popular libraries such as jQuery, MongoDB, and D3.js. TypeScript headers for the Node.js basic modules are also available, allowing development of Node.js programs within TypeScript. The TypeScript compiler is itself written in TypeScript and compiled to JavaScript. It is licensed under the Apache 2 License. TypeScript is included as a first-class programming language in Microsoft Visual Studio 2013 Update 2 and later, beside C# and other Microsoft languages. An official extension allows Visual Studio 2012 to support TypeScript as well.
+ pageId 8157205
+ dailyPageViews 1098
+ created 2006
+ backlinksCount 428
+ revisionCount 523
+ appeared 2012
+ fileExtensions ts tsx
+
+githubLanguage TypeScript
+ fileExtensions ts tsx
+ trendingProjects
+  author name avatar url language languageColor stars forks currentPeriodStars description
+  projectstorm react-diagrams https://github.com/projectstorm.png https://github.com/projectstorm/react-diagrams TypeScript #2b7489 3230 409 525 "a super simple, no-nonsense diagramming library written in react that just works"
+  Flaque quirk https://github.com/Flaque.png https://github.com/Flaque/quirk TypeScript #2b7489 1581 132 293 "✨🐙 A GPL Licensed Cognitive Behavioral Therapy app for iOS and Android"
+  umijs qiankun https://github.com/umijs.png https://github.com/umijs/qiankun TypeScript #2b7489 1162 77 835 "📦🚀Blazing fast, simple and completed solution for micro frontends."
+  felixrieseberg windows95 https://github.com/felixrieseberg.png https://github.com/felixrieseberg/windows95 TypeScript #2b7489 16471 963 204 "💩🚀 Windows 95 in Electron. Runs on macOS, Linux, and Windows."
+  angular angular https://github.com/angular.png https://github.com/angular/angular TypeScript #2b7489 51134 14228 1167 "One framework. Mobile & desktop."
+  zeit now https://github.com/zeit.png https://github.com/zeit/now TypeScript #2b7489 3631 416 151 "The easiest way to deploy websites"
+  davidkpiano xstate https://github.com/davidkpiano.png https://github.com/davidkpiano/xstate TypeScript #2b7489 6618 248 439 "State machines and statecharts for the modern web."
+  storybookjs storybook https://github.com/storybookjs.png https://github.com/storybookjs/storybook TypeScript #2b7489 41039 3446 941 "UI component dev & test: React, Vue, Angular, React Native, Ember, Web Components & more!"
+  osdnk react-native-reanimated-bottom-sheet https://github.com/osdnk.png https://github.com/osdnk/react-native-reanimated-bottom-sheet TypeScript #2b7489 795 67 146 "Highly configurable bottom sheet component made with react-native-reanimated and react-native-gesture-handler"
+  typescript-eslint typescript-eslint https://github.com/typescript-eslint.png https://github.com/typescript-eslint/typescript-eslint TypeScript #2b7489 4722 297 465 "✨ Monorepo for all the tooling which enables ESLint to support TypeScript"
+  santiq bulletproof-nodejs https://github.com/santiq.png https://github.com/santiq/bulletproof-nodejs TypeScript #2b7489 569 111 123 "Implementation of a bulletproof node.js API 🛡️"
+  microsoft TypeScript https://github.com/microsoft.png https://github.com/microsoft/TypeScript TypeScript #2b7489 53347 7319 1165 "TypeScript is a superset of JavaScript that compiles to clean JavaScript output."
+  microsoft vscode https://github.com/microsoft.png https://github.com/microsoft/vscode TypeScript #2b7489 82411 11813 1876 "Visual Studio Code"
+  botpress botpress https://github.com/botpress.png https://github.com/botpress/botpress TypeScript #2b7489 7632 844 158 "The open-source Conversational Platform with built-in language understanding (NLU), beautiful graphical interface and dialog manager. Easily create chatbots and AI-based virtual assistants."
+  tensorflow tfjs https://github.com/tensorflow.png https://github.com/tensorflow/tfjs TypeScript #2b7489 11505 870 220 "A WebGL accelerated JavaScript library for training and deploying ML models."
+  DefinitelyTyped DefinitelyTyped https://github.com/DefinitelyTyped.png https://github.com/DefinitelyTyped/DefinitelyTyped TypeScript #2b7489 24096 18791 607 "The repository for high quality TypeScript type definitions."
+  angular components https://github.com/angular.png https://github.com/angular/components TypeScript #2b7489 18688 4888 245 "Component infrastructure and Material Design components for Angular"
+  microsoft azure-pipelines-tasks https://github.com/microsoft.png https://github.com/microsoft/azure-pipelines-tasks TypeScript #2b7489 1626 1266 53 "Tasks for Azure Pipelines"
+  typeorm typeorm https://github.com/typeorm.png https://github.com/typeorm/typeorm TypeScript #2b7489 14911 1989 577 "ORM for TypeScript and JavaScript (ES7, ES6, ES5). Supports MySQL, PostgreSQL, MariaDB, SQLite, MS SQL Server, Oracle, WebSQL databases. Works in NodeJS, Browser, Ionic, Cordova and Electron platforms."
+  theia-ide theia https://github.com/theia-ide.png https://github.com/theia-ide/theia TypeScript #2b7489 5270 678 372 "Eclipse Theia is a cloud & desktop IDE framework implemented in TypeScript."
+  grafana grafana https://github.com/grafana.png https://github.com/grafana/grafana TypeScript #2b7489 30810 5910 676 "The tool for beautiful monitoring and metric analytics & dashboards for Graphite, InfluxDB & Prometheus & More"
+  microsoft WebTemplateStudio https://github.com/microsoft.png https://github.com/microsoft/WebTemplateStudio TypeScript #2b7489 1527 115 856 "Microsoft Web Template Studio quickly builds web applications using a wizard-based UI to turn your needs into a foundation of best patterns and practices"
+  doczjs docz https://github.com/doczjs.png https://github.com/doczjs/docz TypeScript #2b7489 16315 740 352 "✍🏻It has never been so easy to document your things!"
+  darkreader darkreader https://github.com/darkreader.png https://github.com/darkreader/darkreader TypeScript #2b7489 4129 682 238 "Dark Reader Chrome and Firefox extension"
+  remaxjs remax https://github.com/remaxjs.png https://github.com/remaxjs/remax TypeScript #2b7489 878 46 600 全新的小程序开发体验
+ trendingProjectsCount 26
+
+helloWorldCollection TypeScript
+ // Hello world in TypeScript
+ 
+ alert('Hello world!');
+
+linguistGrammarRepo https://github.com/Microsoft/TypeScript-TmLanguage
+ firstCommit 2015
+ lastCommit 2018
+ committerCount 25
+ commitCount 616
+ sampleCount 7
+ example
+  console.log("Hello, World!");
+  
+
 website http://www.typescriptlang.org/
-wikipedia TypeScript
+status active
+
+tryItOnline typescript
+
+twitter typescript
+
+fileExtensions ts tsx
+fileType text
+isOpenSource true
+
+tiobe TypeScript
+
+webRepl https://www.typescriptlang.org/play/
+
+quineRelay TypeScript
+
+ubuntuPackage node-typescript
+
+rosettaCode TypeScript
+
+corporateDevelopers Microsoft
+indeedJobs typescript developer
+ 2017 1542

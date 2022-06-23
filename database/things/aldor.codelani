@@ -1,4 +1,61 @@
+title Aldor
 appeared 1990
 type pl
+
+patterns
+ hasCentralPackageRepository? false
+ hasSemanticIndentation? true
+
+wikipedia https://en.wikipedia.org/wiki/Aldor
+ example
+  #include "aldor"
+  #include "aldorio"
+  
+  import from Integer, String;
+  
+  bob(n: Integer): String == {
+      b: String := " bottle";
+  
+      if n ~= 1 then b := b + "s";
+      b + " of beer";
+  }
+  
+  main(): () == {
+      n: Integer := 99;
+      otw: String := " on the wall";
+  
+      -- refrain
+      while n > 0 repeat {
+          stdout << n << bob(n) << otw << ", " << n << bob(n) << "." << newline;
+          stdout << "Take one down and pass it around, ";
+          n := n - 1;
+          if n > 0 then stdout << n;
+          else stdout << "no more";
+          stdout << bob(n) << otw << "." << newline;
+          stdout << newline;
+      }
+  
+      -- last verse
+      stdout << "No more" << bob(n) << otw << ", no more" << bob(n) << "." << newline;
+      stdout << "Go to the store and buy some more, ";
+      n: Integer := 99;
+      stdout << n << bob(n) << otw << "." << newline;
+  }
+  
+  main();
+ related linux solaris pascal haskell python
+ summary Aldor is a programming language. It is the successor of A# as the extension language of the Axiom computer algebra system. Aldor combines imperative, functional, and object-oriented features. It has an elaborate type system,"Aldor Programming Language". Aldor.org. Retrieved 12 February 2017. allowing types to be used as first-class values. Aldor's syntax is heavily influenced by Pascal, but it is optionally indentation-sensitive, using whitespace characters and the off-side rule, like Python. In its current implementation, it is compiled, but an interactive listener is provided. Aldor is distributed as free and open-source software, under the Apache License 2.0.
+ pageId 948551
+ created 2004
+ backlinksCount 23
+ revisionCount 63
+ dailyPageViews 12
+ appeared 1990
+
 website http://www.aldor.org
-wikipedia Aldor
+status historical
+country GB
+fileType text
+isOpenSource true
+
+hopl 6911

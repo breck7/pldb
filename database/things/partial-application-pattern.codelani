@@ -1,3 +1,9 @@
+title Partial Application
 type pattern
-wikipedia Partial_application
+psuedoExample add5 = num => addNumbers(10, num)
 description Binds one or more arguments to a function, reducing its arity.
+
+wikipedia https://en.wikipedia.org/wiki/Partial_application
+
+status active
+patternKeyword hasPartialApplication?

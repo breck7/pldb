@@ -1,6 +1,7 @@
+title ASN.1
 appeared 1984
 type idl
-wikipedia Abstract_Syntax_Notation_One
+
 example
  FooProtocol DEFINITIONS ::= BEGIN
  
@@ -15,3 +16,75 @@ example
      }
  
  END
+
+patterns
+ hasCentralPackageRepository? false
+
+wikipedia https://en.wikipedia.org/wiki/Abstract_Syntax_Notation_One
+ example
+  <FooQuestion>
+      <trackingNumber>5</trackingNumber>
+      <question>Anybody there?</question>
+  </FooQuestion>
+ related protobuf thrift ascii json xml
+ summary Abstract Syntax Notation One (ASN.1) is an interface description language for defining data structures that can be serialized and deserialized in a standard, cross-platform way. It's broadly used in telecommunications and computer networking, and especially in cryptography. Protocol developers define data structures in ASN.1 modules, which are generally a section of a broader standards document written in the ASN.1 language. Because the language is both human-readable and machine-readable, modules can be automatically turned into libraries that process their data structures, using an ASN.1 compiler. ASN.1 is similar in purpose and use to protocol buffers and Apache Thrift, which are also interface description languages for cross-platform data serialization. Like those languages, it has a schema (in ASN.1, called a "module"), and a set of encodings, typically type-length-value encodings. However, ASN.1, defined in 1984, predates them by many years. It also includes a wider variety of basic data types, some of which are obsolete, and has more options for extensibility. A single ASN.1 message can include data from multiple modules defined in multiple standards, even standards defined years apart.
+ pageId 75625
+ dailyPageViews 358
+ created 2002
+ backlinksCount 145
+ revisionCount 363
+ appeared 1984
+
+githubLanguage ASN.1
+ fileExtensions asn asn1
+ trendingProjectsCount 0
+
+linguistGrammarRepo https://github.com/ajLangley12/language-asn1
+ firstCommit 2016
+ lastCommit 2016
+ committerCount 4
+ commitCount 20
+ sampleCount 1
+ example
+  MyShopPurchaseOrders DEFINITIONS AUTOMATIC TAGS ::= BEGIN
+  
+  PurchaseOrder ::= SEQUENCE {
+  dateOfOrder	DATE,
+  customer   	CustomerInfo,
+  items      	ListOfItems
+  }
+  
+  CustomerInfo ::= SEQUENCE {
+  companyName	   VisibleString (SIZE (3..50)),
+  billingAddress	Address,
+  contactPhone   NumericString (SIZE (7..12))
+  }
+  
+  Address::= SEQUENCE {
+  street	 VisibleString (SIZE (5 .. 50)) OPTIONAL,
+  city	   VisibleString (SIZE (2..30)),
+  state	  VisibleString (SIZE(2) ^ FROM ("A".."Z")),
+  zipCode	NumericString (SIZE(5 | 9))
+  }
+  
+  ListOfItems ::= SEQUENCE (SIZE (1..100)) OF Item
+  
+  Item ::= SEQUENCE {
+  itemCode	       INTEGER (1..99999),
+  color          	VisibleString ("Black" | "Blue" | "Brown"),
+  power          	INTEGER (110 | 220),
+  deliveryTime   	INTEGER (8..12 | 14..19),
+  quantity	       INTEGER (1..1000),
+  unitPrice	      REAL (1.00 .. 9999.00),
+  isTaxable	      BOOLEAN
+  }
+  END
+  
+
+status active
+country GB
+fileType text
+
+hopl 1070
+
+codeMirror asn-1

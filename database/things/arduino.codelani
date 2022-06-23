@@ -1,3 +1,31 @@
+title Arduino
 appeared 2005
 type pl
-wikipedia Arduino
+
+patterns
+ hasCentralPackageRepository? false
+
+wikipedia https://en.wikipedia.org/wiki/Arduino
+ example
+  #define LED_PIN 13                  // Pin number attached to LED.
+  
+  void setup() {
+      pinMode(LED_PIN, OUTPUT);       // Configure pin 13 to be a digital output.
+  }
+  
+  void loop() {
+      digitalWrite(LED_PIN, HIGH);    // Turn on the LED.
+      delay(1000);                    // Wait 1 second (1000 milliseconds).
+      digitalWrite(LED_PIN, LOW);     // Turn off the LED.
+      delay(1000);                    // Wait 1 second.
+  }
+ related atmel-avr x86-isa c processing basic-stamp arm java linux ia-32
+ summary Arduino is an open-source hardware and software company, project and user community that designs and manufactures single-board microcontrollers and microcontroller kits for building digital devices and interactive objects that can sense and control objects in the physical and digital world. Its products are licensed under the GNU Lesser General Public License (LGPL) or the GNU General Public License (GPL), permitting the manufacture of Arduino boards and software distribution by anyone. Arduino boards are available commercially in preassembled form or as do-it-yourself (DIY) kits. Arduino board designs use a variety of microprocessors and controllers. The boards are equipped with sets of digital and analog input/output (I/O) pins that may be interfaced to various expansion boards or breadboards (shields) and other circuits. The boards feature serial communications interfaces, including Universal Serial Bus (USB) on some models, which are also used for loading programs from personal computers. The microcontrollers are typically programmed using a dialect of features from the programming languages C and C++. In addition to using traditional compiler toolchains, the Arduino project provides an integrated development environment (IDE) based on the Processing language project. The Arduino project started in 2003 as a program for students at the Interaction Design Institute Ivrea in Ivrea, Italy, aiming to provide a low-cost and easy way for novices and professionals to create devices that interact with their environment using sensors and actuators. Common examples of such devices intended for beginner hobbyists include simple robots, thermostats and motion detectors. The name Arduino comes from a bar in Ivrea, Italy, where some of the founders of the project used to meet. The bar was named after Arduin of Ivrea, who was the margrave of the March of Ivrea and King of Italy from 1002 to 1014.
+ created 2006
+ backlinksCount 748
+ pageId 5389424
+ revisionCount 2471
+ dailyPageViews 2640
+ appeared 2003
+
+status active

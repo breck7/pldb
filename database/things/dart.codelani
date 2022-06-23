@@ -1,5 +1,155 @@
+title Dart
 appeared 2011
 type pl
 creators Lars Bak
+
+patterns
+ hasCentralPackageRepository? true
+ hasComments? true
+  // Hi
+  /* Assume address is not null. */
+ hasBlockComments? true
+  /* a comment
+   */
+ hasImports? true
+  import 'file-system.dart';
+  import 'dart:math' as math;
+ hasOperatorOverloading? true
+
+wikipedia https://en.wikipedia.org/wiki/Dart_(programming_language)
+ example
+  // Import the math library to get access to the sqrt function.
+  import 'dart:math' as math;
+  
+  // Create a class for Point.
+  class Point {
+  
+    // Final variables cannot be changed once they are assigned.
+    // Create two instance variables.
+    final num x, y;
+  
+    // A constructor, with syntactic sugar for setting instance variables.
+    Point(this.x, this.y);
+  
+    // A named constructor with an initializer list.
+    Point.origin()
+        : x = 0,
+          y = 0;
+  
+    // A method.
+    num distanceTo(Point other) {
+      var dx = x - other.x;
+      var dy = y - other.y;
+      return math.sqrt(dx * dx + dy * dy);
+    }
+  
+    // Example of Operator Overloading
+    Point operator +(Point other) => new Point(x + other.x, y + other.y);
+  }
+  
+  // All Dart programs start with main().
+  void main() {
+    // Instantiate point objects.
+    var p1 = new Point(10, 10);
+    var p2 = new Point.origin();
+    var distance = p1.distanceTo(p2);
+    print(distance);
+  }
+ related csharp erlang javascript smalltalk strongtalk c android ios eclipse-editor linux sublime-editor emacs-editor vim-editor visual-studio-code-editor algol ruby self coffeescript elm fantom go haxe opa typescript
+ summary Dart is a general-purpose programming language originally developed by Google and later approved as a standard by Ecma (ECMA-408). It is used to build web, server and mobile applications, and for Internet of Things (IoT) devices. It is open-source software under a permissive free software license (modified BSD license). Dart is an object-oriented, class defined, single inheritance language using a C-style syntax that transcompiles optionally into JavaScript. It supports interfaces, mixins, abstract classes, reified generics, optional typing, and a sound type system.
+ pageId 33033735
+ dailyPageViews 389
+ created 2011
+ backlinksCount 614
+ revisionCount 763
+ appeared 2011
+ fileExtensions dart
+
+githubLanguage Dart
+ fileExtensions dart
+ trendingProjects
+  author name avatar url language languageColor stars forks currentPeriodStars description
+  lohanidamodar flutter_ui_challenges https://github.com/lohanidamodar.png https://github.com/lohanidamodar/flutter_ui_challenges Dart #00B4AB 913 252 401 "Trying to replicate various app UIs in flutter"
+  FilledStacks flutter-tutorials https://github.com/FilledStacks.png https://github.com/FilledStacks/flutter-tutorials Dart #00B4AB 735 217 156 "The repo contains the source code for all the tutorials on the FilledStacks Youtube channel."
+  alibaba flutter-go https://github.com/alibaba.png https://github.com/alibaba/flutter-go Dart #00B4AB 16608 2283 1293 "flutter 开发者帮助 APP，包含 flutter 常用 140+ 组件的demo 演示与中文文档"
+  mobxjs mobx.dart https://github.com/mobxjs.png https://github.com/mobxjs/mobx.dart Dart #00B4AB 763 73 95 "MobX for the Dart language. Hassle-free, reactive state-management for your Dart and Flutter apps."
+  flutter flutter https://github.com/flutter.png https://github.com/flutter/flutter Dart #00B4AB 74265 9095 2535 "Flutter makes it easy and fast to build beautiful mobile apps."
+  xuelongqy flutter_easyrefresh https://github.com/xuelongqy.png https://github.com/xuelongqy/flutter_easyrefresh Dart #00B4AB 1101 167 206 "A widget provided to the flutter scroll component pull-refresh and push-load."
+  iampawan GDG-DevFest-App https://github.com/iampawan.png https://github.com/iampawan/GDG-DevFest-App Dart #00B4AB 364 91 228 "An App Template For GDG DevFest"
+  huextrat TheGorgeousLogin https://github.com/huextrat.png https://github.com/huextrat/TheGorgeousLogin Dart #00B4AB 834 226 87 "Login page built with @flutter 😍"
+  felangel bloc https://github.com/felangel.png https://github.com/felangel/bloc Dart #00B4AB 2455 446 237 "A predictable state management library that helps implement the BLoC design pattern"
+  asjqkkkk flutter-todos https://github.com/asjqkkkk.png https://github.com/asjqkkkk/flutter-todos Dart #00B4AB 692 98 474 "📝 全面而又精美的Flutter Todo-List app, 除了适合日常使用，作为flutter的实践项目也是超级合适的哟！"
+  OpenFlutter flutter_screenutil https://github.com/OpenFlutter.png https://github.com/OpenFlutter/flutter_screenutil Dart #00B4AB 1010 106 125 "Flutter screen adaptation, font adaptation, get screen information"
+  devefy Flutter-Story-App-UI https://github.com/devefy.png https://github.com/devefy/Flutter-Story-App-UI Dart #00B4AB 414 148 106 
+  leisim hive https://github.com/leisim.png https://github.com/leisim/hive Dart #00B4AB 325 20 154 "Lightweight and blazing fast key-value database written in pure Dart."
+  flutter plugins https://github.com/flutter.png https://github.com/flutter/plugins Dart #00B4AB 7934 3259 534 "Plugins for Flutter, including FlutterFire, maintained by the Flutter team"
+  Sh1d0w multi_image_picker https://github.com/Sh1d0w.png https://github.com/Sh1d0w/multi_image_picker Dart #00B4AB 410 84 63 "Flutter plugin that allows you to display multi image picker on iOS and Android. 👌🔝🎉"
+  mdanics fluttergram https://github.com/mdanics.png https://github.com/mdanics/fluttergram Dart #00B4AB 786 218 46 "A fully functional Instagram clone written in Flutter using Firebase / Firestore"
+  flutter samples https://github.com/flutter.png https://github.com/flutter/samples Dart #00B4AB 3985 1004 368 "A collection of Flutter examples and demos."
+  flutter flutter_web https://github.com/flutter.png https://github.com/flutter/flutter_web Dart #00B4AB 4411 299 279 "Bring your Flutter code to web browsers"
+  brianegan flutter_architecture_samples https://github.com/brianegan.png https://github.com/brianegan/flutter_architecture_samples Dart #00B4AB 3791 646 171 "TodoMVC for Flutter"
+  memspace zefyr https://github.com/memspace.png https://github.com/memspace/zefyr Dart #00B4AB 772 137 55 "Soft and gentle rich text editing for Flutter applications."
+  duytq94 flutter-chat-demo https://github.com/duytq94.png https://github.com/duytq94/flutter-chat-demo Dart #00B4AB 413 152 67 "This is the demo for chat app by Flutter"
+  peng8350 flutter_pulltorefresh https://github.com/peng8350.png https://github.com/peng8350/flutter_pulltorefresh Dart #00B4AB 748 119 115 "a widget provided to the flutter scroll component drop-down refresh and pull up load."
+  theyakka fluro https://github.com/theyakka.png https://github.com/theyakka/fluro Dart #00B4AB 1703 148 143 "Fluro is a Flutter routing library that adds flexible routing options like wildcards, named parameters and clear route definitions."
+  MarcioQuimbundo uber_clone https://github.com/MarcioQuimbundo.png https://github.com/MarcioQuimbundo/uber_clone Dart #00B4AB 363 166 36 
+  pauldemarco flutter_blue https://github.com/pauldemarco.png https://github.com/pauldemarco/flutter_blue Dart #00B4AB 834 288 67 "Bluetooth plugin for Flutter"
+ trendingProjectsCount 26
+
+helloWorldCollection Dart
+ // Hello world in Dart
+ 
+ main() {
+    print('Hello world!');
+ }
+
+linguistGrammarRepo https://github.com/dart-atom/dartlang
+ firstCommit 2015
+ lastCommit 2018
+ committerCount 26
+ commitCount 1555
+ sampleCount 1
+ example
+  import 'dart:math' as math;
+  
+  class Point {
+    num x, y;
+  
+    Point(this.x, this.y);
+  
+    num distanceTo(Point other) {
+      var dx = x - other.x;
+      var dy = y - other.y;
+      return math.sqrt(dx * dx + dy * dy);
+    }
+  }
+  
+  void main() {
+    var p = new Point(2, 3);
+    var q = new Point(3, 4);
+    print('distance from p to q = ${p.distanceTo(q)}');
+  }
+  
+
 website http://www.dartlang.org
-wikipedia Dart_(programming_language)
+status active
+
+tryItOnline dart
+
+fileExtensions dart
+fileType text
+isOpenSource true
+
+tiobe Dart
+ currentRank 22
+
+projectEuler Dart
+ memberCount
+  2019 22
+  2022 54
+
+codeMirror dart
+
+rosettaCode Dart
+
+corporateDevelopers Google

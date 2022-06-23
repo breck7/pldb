@@ -1,6 +1,7 @@
+title LookML
 appeared 2012
 type pl
-website https://docs.looker.com/data-modeling/learning-lookml/what-is-lookml
+
 example
  ######################################
  # FILE: ecommercestore.model.lkml    #
@@ -77,4 +78,67 @@ example
      fields: [id, state, orders.count]  # list of fields to show when someone clicks 'CUSTOMERS Count'
    }
  }
+
+patterns
+ hasCentralPackageRepository? false
+
+githubLanguage LookML
+ fileExtensions lookml modellkml viewlkml
+ trendingProjectsCount 0
+
+linguistGrammarRepo https://github.com/atom/language-yaml
+ firstCommit 2013
+ lastCommit 2018
+ committerCount 25
+ commitCount 205
+ sampleCount 3
+ example
+  - view: comments
+    fields:
+  
+    - dimension: id
+      primary_key: true
+      type: int
+      sql: ${TABLE}.id
+  
+    - dimension: body
+      sql: ${TABLE}.body
+  
+    - dimension_group: created
+      type: time
+      timeframes: [time, date, week, month]
+      sql: ${TABLE}.created_at
+  
+    - dimension: headline_id
+      type: int
+      hidden: true
+      sql: ${TABLE}.headline_id
+  
+    - dimension_group: updated
+      type: time
+      timeframes: [time, date, week, month]
+      sql: ${TABLE}.updated_at
+  
+    - dimension: user_id
+      type: int
+      hidden: true
+      sql: ${TABLE}.user_id
+  
+    - measure: count
+      type: count
+      detail: detail*
+  
+  
+    # ----- Detail ------
+    sets:
+      detail:
+        - id
+        - headlines.id
+        - headlines.name
+        - users.id
+
+website https://docs.looker.com/data-modeling/learning-lookml/what-is-lookml
 reference https://docs.looker.com/relnotes/v1-release-notes#looker_1.10.13
+status active
+fileType text
+corporateDevelopers Looker

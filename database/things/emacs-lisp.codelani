@@ -1,4 +1,68 @@
+title Emacs Lisp
 appeared 1985
 type pl
 creators Richard Stallman
-wikipedia Emacs_Lisp
+
+patterns
+ isLisp? true
+ hasCentralPackageRepository? true
+
+wikipedia https://en.wikipedia.org/wiki/Emacs_Lisp
+ example
+  (defun switch-to-next-window-in-split ()
+    (set-window-buffer (next-window) (other-buffer)))
+  
+  (advice-add 'split-window-vertically :before #'switch-to-next-window-in-split)
+ related lisp common-lisp emacs-editor c unix bourne-shell perl scheme
+ summary Emacs Lisp is a dialect of the Lisp programming language used as a scripting language by Emacs (a text editor family most commonly associated with GNU Emacs and XEmacs). It is used for implementing most of the editing functionality built into Emacs, the remainder being written in C (as is the Lisp interpreter itself). Emacs Lisp is also referred to as Elisp, although there is also an older, unrelated Lisp dialect with that name. Users of Emacs commonly write Emacs Lisp code to customize and extend Emacs. Other options include the "Customize" feature that's been in GNU Emacs since version 20. Itself written in Emacs Lisp, Customize provides a set of preferences pages allowing the user to set options and preview their effect in the running Emacs session. When the user saves their changes, Customize simply writes the necessary Emacs Lisp code to the user's config file, which can be set to a special file that only Customize uses, to avoid the possibility of messing up the users own file. Emacs Lisp can also function as a scripting language, much like the Unix Bourne shell or Perl, by calling Emacs in "batch mode". In this way it may be called from the command line or via an executable file, and its editing functions, such as buffers and movement commands are available to the program just as in the normal mode. No user interface is presented when Emacs is started in batch mode; it simply executes the passed-in script and exits, displaying any output from the script.
+ pageId 10392
+ dailyPageViews 85
+ created 2002
+ backlinksCount 154
+ revisionCount 262
+ appeared 1985
+ fileExtensions el elc
+
+githubLanguage Emacs Lisp
+ fileExtensions el emacs emacsdesktop
+ trendingProjects
+  author name avatar url language languageColor stars forks currentPeriodStars description
+  syl20bnr spacemacs https://github.com/syl20bnr.png https://github.com/syl20bnr/spacemacs "Emacs Lisp" #c065db 18408 4533 255 "A community-driven Emacs distribution - The best editor is neither Emacs nor Vim, it's Emacs *and* Vim!"
+  hlissner doom-emacs https://github.com/hlissner.png https://github.com/hlissner/doom-emacs "Emacs Lisp" #c065db 3698 571 244 "An Emacs configuration for the stubborn martian vimmer"
+  purcell emacs.d https://github.com/purcell.png https://github.com/purcell/emacs.d "Emacs Lisp" #c065db 5135 1768 69 "An Emacs configuration bundle with batteries included"
+  bbatsov prelude https://github.com/bbatsov.png https://github.com/bbatsov/prelude "Emacs Lisp" #c065db 4207 1636 35 "Prelude is an enhanced Emacs 25.1+ distribution that should make your experience with Emacs both more pleasant and more powerful."
+  Kivy-CN Stanford-CS-229-CN https://github.com/Kivy-CN.png https://github.com/Kivy-CN/Stanford-CS-229-CN "Emacs Lisp" #c065db 2019 565 123 "A Chinese Translation of Stanford CS229 notes 斯坦福机器学习CS229课程讲义的中文翻译"
+  emacs-lsp lsp-mode https://github.com/emacs-lsp.png https://github.com/emacs-lsp/lsp-mode "Emacs Lisp" #c065db 1763 221 88 "Emacs client/library for the Language Server Protocol"
+  manateelazycat snails https://github.com/manateelazycat.png https://github.com/manateelazycat/snails "Emacs Lisp" #c065db 160 12 55 "A modern, easy-to-expand fuzzy search framework"
+  melpa melpa https://github.com/melpa.png https://github.com/melpa/melpa "Emacs Lisp" #c065db 1850 1717 28 "Recipes and build machinery for the biggest Emacs package repo"
+  jwiegley use-package https://github.com/jwiegley.png https://github.com/jwiegley/use-package "Emacs Lisp" #c065db 2763 182 48 "A use-package declaration for simplifying your .emacs"
+  emacs-mirror emacs https://github.com/emacs-mirror.png https://github.com/emacs-mirror/emacs "Emacs Lisp" #c065db 2058 610 28 "Mirror of GNU Emacs"
+ trendingProjectsCount 11
+
+linguistGrammarRepo https://github.com/Alhadis/language-emacs-lisp
+ firstCommit 2016
+ lastCommit 2018
+ committerCount 1
+ commitCount 101
+ sampleCount 3
+ example
+  (print "Dude!")
+  
+
+status active
+
+tryItOnline emacs-lisp
+
+country US
+fileType text
+isOpenSource true
+
+tiobe Emacs Lisp
+
+hopl 2009
+
+quineRelay Emacs Lisp
+
+ubuntuPackage emacs25
+
+corporateDevelopers GNU Project

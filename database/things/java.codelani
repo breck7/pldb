@@ -1,5 +1,397 @@
+title Java
 appeared 1995
 type pl
 creators James Gosling
+
+patterns
+ hasAssertStatements? true
+  // By default, assertions are disabled
+  // java –enableassertions Test
+  int score = 10;
+  assert score >= 10 : " Below";
+  System.out.println("score is "+score);
+ hasGenerics? true
+  List<String> v = new ArrayList<String>();
+  v.add("test");
+  Integer i = v.get(0); // (type error)  compilation-time error
+ hasSingleDispatch? true
+ hasCentralPackageRepository? true
+ hasComments? true
+ hasConstructors? true
+ hasGarbageCollection? true
+ hasImports? true
+  import javax.swing.*;
+  import javax.swing.JOptionPane;
+  // use fully qualified name without import:
+  javax.swing.JOptionPane.showMessageDialog(null, "Hi");
+  // There are 166 packages containing 3279 classes and interfaces in Java 5.
+  // import java.io.*; Input-output classes.
+ hasInterfaces? true
+  interface MyInterface{  
+     /* This is a default method so we need not
+      * to implement this method in the implementation 
+      * classes  
+      */
+     default void newMethod(){  
+         System.out.println("Newly added default method");  
+     }  
+     /* Already existing public and abstract method
+      * We must need to implement this method in 
+      * implementation classes.
+      */
+     void existingMethod(String str);  
+  }  
+  public class Example implements MyInterface{ 
+    // implementing abstract method
+      public void existingMethod(String str){           
+          System.out.println("String is: "+str);  
+      }  
+      public static void main(String[] args) {  
+        Example obj = new Example();
+        
+        //calling the default method of interface
+          obj.newMethod();     
+          //calling the abstract method of interface
+          obj.existingMethod("Java 8 is easy to learn"); 
+    
+      }  
+  }
+ hasIterators? true
+  Iterator iter = list.iterator();
+  //Iterator<MyType> iter = list.iterator();    in J2SE 5.0
+  while (iter.hasNext()) {
+      System.out.print(iter.next());
+      if (iter.hasNext())
+          System.out.print(", ");
+  }
+ hasMacros? false
+ hasOperatorOverloading? false
+ hasZeroBasedNumbering? true
+ hasModules? true
+  // Package = directory. Java classes can be grouped together in packages. A package name is the same as the directory (folder) name which contains the .java files. You declare packages when you define your Java program, and you name the packages you want to use from other libraries in an import statement.
+  // The first statement, other than comments, in a Java source file, must be the package declaration.
+  // Following the optional package declaration, you can have import statements, which allow you to specify classes from other packages that can be referenced without qualifying them with their package.
+  // This source file must be Drawing.java in the illustration directory.
+  package illustration;
+  import java.awt.*;
+  public class Drawing {
+   // ...
+  }
+ hasIncrementAndDecrementOperators? true
+
+wikipedia https://en.wikipedia.org/wiki/Java_(programming_language)
+ example
+  // Hello.java (Java SE 5)
+  import javax.swing.*;
+  
+  public class Hello extends JFrame {
+      public Hello() {
+          super("hello");
+          super.setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
+          super.add(new JLabel("Hello, world!"));
+          super.pack();
+          super.setVisible(true);
+      }
+  
+      public static void main(final String[] args) {
+          new Hello();
+      }
+  }
+ related javascript pizza ada csharp eiffel mesa modula-3 oberon objective-c ucsd-pascal object-pascal beanshell chapel clojure ecmascript fantom gambas groovy hack jsharp kotlin php python scala seed7 vala java-bytecode jvm c oak linux solaris arm eclipse-editor html http mime java-server-pages motif-software android xml java-ee-version-history
+ summary Java is a general-purpose computer programming language that is concurrent, class-based, object-oriented, and specifically designed to have as few implementation dependencies as possible. It is intended to let application developers "write once, run anywhere" (WORA), meaning that compiled Java code can run on all platforms that support Java without the need for recompilation. Java applications are typically compiled to bytecode that can run on any Java virtual machine (JVM) regardless of computer architecture. As of 2016, Java is one of the most popular programming languages in use, particularly for client-server web applications, with a reported 9 million developers. Java was originally developed by James Gosling at Sun Microsystems (which has since been acquired by Oracle Corporation) and released in 1995 as a core component of Sun Microsystems' Java platform. The language derives much of its syntax from C and C++, but it has fewer low-level facilities than either of them. The original and reference implementation Java compilers, virtual machines, and class libraries were originally released by Sun under proprietary licenses. As of May 2007, in compliance with the specifications of the Java Community Process, Sun relicensed most of its Java technologies under the GNU General Public License. Others have also developed alternative implementations of these Sun technologies, such as the GNU Compiler for Java (bytecode compiler), GNU Classpath (standard libraries), and IcedTea-Web (browser plugin for applets). The latest version is Java 9, released on September 21, 2017, and is one of the two versions currently supported for free by Oracle. Versions earlier than Java 8 are supported by companies on a commercial basis; e.g. by Oracle back to Java 6 as of October 2017 (while they still "highly recommend that you uninstall" pre-Java 8 from at least Windows computers).
+ pageId 15881
+ dailyPageViews 5242
+ created 2001
+ backlinksCount 11543
+ revisionCount 7818
+ appeared 1995
+
+githubLanguage Java
+ fileExtensions java
+ trendingProjects
+  author name avatar url language languageColor stars forks currentPeriodStars description
+  xkcoding spring-boot-demo https://github.com/xkcoding.png https://github.com/xkcoding/spring-boot-demo Java #b07219 5022 1536 3876 "spring boot demo 是一个用来深度学习并实战 spring boot 的项目，目前总共包含 59 个集成demo，已经完成 49 个。 该项目已成功集成 actuator(监控)、admin(可视化监控)、logback(日志)、aopLog(通过AOP记录web请求日志)、统一异常处理(json级别和页面级别)、freemarker(模板引擎)、thymeleaf(模板引擎)、Beetl(模板引擎)、Enjoy(模板引擎)、JdbcTemplate(通用JDBC操作数据库)、JPA(强大的ORM框架)、mybatis(强大的ORM框架)、通用Mapper(快速操作Mybatis)、PageHelper(通用的Mybatis分页插件)、mybatis-plus(快速操作M…"
+  hope-for hope-boot https://github.com/hope-for.png https://github.com/hope-for/hope-boot Java #b07219 2706 523 1757 🌱🚀一款现代化的脚手架项目。企业开发？接外包？赚外快？还是学习？这都能满足你，居家必备，值得拥有🍻整合Springboot2，单点登陆+tk.mybatis+shiro+redis+thymeleaf+maven+swagger前后端分离接口管理+代码生成+定时任务+数据库版本管理flyway+hutool工具包，等实用技术。
+  alibaba spring-cloud-alibaba https://github.com/alibaba.png https://github.com/alibaba/spring-cloud-alibaba Java #b07219 8811 2415 1176 "Spring Cloud Alibaba provides a one-stop solution for application development for the distributed solutions of Alibaba middleware."
+  elunez eladmin https://github.com/elunez.png https://github.com/elunez/eladmin Java #b07219 3080 1123 744 "项目基于 Spring Boot 2.1.0 、 Jpa、 Spring Security、redis、Vue的前后端分离的后台管理系统，项目采用分模块开发方式， 权限控制采用 RBAC，支持数据字典与数据权限管理，支持一键生成前后端代码，支持动态路由"
+  zhoutaoo SpringCloud https://github.com/zhoutaoo.png https://github.com/zhoutaoo/SpringCloud Java #b07219 1237 666 345 基于SpringCloud2.0的微服务开发脚手架，整合了spring-security-oauth2、apollo、eureka、feign、hystrix、springcloud-gateway、springcloud-bus等。治理方面引入elasticsearch、skywalking、springboot-admin、zipkin等，让项目开发快速进入业务开发，而不需过多时间花费在架构搭建上。持续更新中
+  b3log solo https://github.com/b3log.png https://github.com/b3log/solo Java #b07219 11000 3050 1605 "🎸 一款小而美的博客系统，专为程序员设计。"
+  2227324689 gpmall https://github.com/2227324689.png https://github.com/2227324689/gpmall Java #b07219 1404 531 1387 【咕泡学院实战项目】-基于SpringBoot+Dubbo构建的电商平台-微服务架构、商城、电商、微服务、高并发、kafka、Elasticsearch
+  justauth JustAuth https://github.com/justauth.png https://github.com/justauth/JustAuth Java #b07219 4025 635 2866 "💯 史上最全的整合第三方登录的开源库。目前已支持Github、Gitee、微博、钉钉、百度、Coding、腾讯云开发者平台、OSChina、支付宝、QQ、微信、淘宝、Google、Facebook、抖音、领英、小米、微软、今日头条、Teambition、StackOverflow、Pinterest、人人、华为、企业微信、酷家乐和Gitlab等第三方平台的授权登录。 Login, so easy!"
+  seaswalker spring-analysis https://github.com/seaswalker.png https://github.com/seaswalker/spring-analysis Java #b07219 4014 1560 1136 Spring源码阅读
+  dengyuhan magnetW https://github.com/dengyuhan.png https://github.com/dengyuhan/magnetW Java #b07219 2748 571 1857 "磁力搜网页版 - 磁力链接聚合搜索 - https://bt.biedian.me"
+  frank-lam fullstack-tutorial https://github.com/frank-lam.png https://github.com/frank-lam/fullstack-tutorial Java #b07219 5473 1193 991 "🚀 fullstack tutorial 2019，后台技术栈/架构师之路/全栈开发社区，春招/秋招/校招/面试"
+  Angel-ML angel https://github.com/Angel-ML.png https://github.com/Angel-ML/angel Java #b07219 5174 1295 941 "A Flexible and Powerful Parameter Server for large-scale machine learning"
+  alibaba COLA https://github.com/alibaba.png https://github.com/alibaba/COLA Java #b07219 1054 348 314 "Clean Object-oriented & Layered Architecture"
+  apache skywalking https://github.com/apache.png https://github.com/apache/skywalking Java #b07219 10224 2942 742 "APM, Application Performance Monitoring System"
+  hollischuang toBeTopJavaer https://github.com/hollischuang.png https://github.com/hollischuang/toBeTopJavaer Java #b07219 8122 1818 1939 "To Be Top Javaer - Java工程师成神之路"
+  Activiti Activiti https://github.com/Activiti.png https://github.com/Activiti/Activiti Java #b07219 5681 4712 180 "Activiti is a light-weight workflow and Business Process Management (BPM) Platform targeted at business people, developers and system admins. Its core is a super-fast and rock-solid BPMN 2 process engine for Java. It's open-source and distributed under the Apache license. Activiti runs in any Java application, on a server, on a cluster or in the…"
+  MisterBooo LeetCodeAnimation https://github.com/MisterBooo.png https://github.com/MisterBooo/LeetCodeAnimation Java #b07219 39935 6812 3065 "Demonstrate all the questions on LeetCode in the form of animation.（用动画的形式呈现解LeetCode题目的思路）"
+  flowable flowable-engine https://github.com/flowable.png https://github.com/flowable/flowable-engine Java #b07219 2141 867 126 "A compact and highly efficient workflow and Business Process Management (BPM) platform for developers, system admins and business users."
+  ZXZxin ZXBlog https://github.com/ZXZxin.png https://github.com/ZXZxin/ZXBlog Java #b07219 3358 865 333 记录各种学习笔记(算法、Java、数据库、并发......)
+  CymChad BaseRecyclerViewAdapterHelper https://github.com/CymChad.png https://github.com/CymChad/BaseRecyclerViewAdapterHelper Java #b07219 18176 3805 361 "BRVAH:Powerful and flexible RecyclerAdapter"
+  crossoverJie cim https://github.com/crossoverJie.png https://github.com/crossoverJie/cim Java #b07219 3769 1134 278 "📲cim(cross IM) 适用于开发者的分布式即时通讯系统"
+  cabaletta baritone https://github.com/cabaletta.png https://github.com/cabaletta/baritone Java #b07219 961 273 308 "google maps for block game"
+  macrozheng mall-learning https://github.com/macrozheng.png https://github.com/macrozheng/mall-learning Java #b07219 2149 965 719 "mall学习教程，架构、业务、技术要点全方位解析。mall项目（20k+star）是一套电商系统，使用现阶段主流技术实现。 涵盖了SpringBoot2.1.3、MyBatis3.4.6、Elasticsearch6.2.2、RabbitMQ3.7.15、Redis3.2、Mongodb3.2、Mysql5.7等技术，采用Docker容器化部署。"
+  keycloak keycloak https://github.com/keycloak.png https://github.com/keycloak/keycloak Java #b07219 4386 2167 199 "Open Source Identity and Access Management For Modern Applications and Services"
+  hankcs HanLP https://github.com/hankcs.png https://github.com/hankcs/HanLP Java #b07219 14671 4174 518 "自然语言处理 中文分词 词性标注 命名实体识别 依存句法分析 新词发现 关键词短语提取 自动摘要 文本分类聚类 拼音简繁"
+ trendingProjectsCount 26
+
+helloWorldCollection Java
+ // Hello World in Java
+ 
+ class HelloWorld {
+   static public void main( String args[] ) {
+     System.out.println( "Hello World!" );
+   }
+ }
+ 
+
+linguistGrammarRepo https://github.com/textmate/java.tmbundle
+ firstCommit 2004
+ lastCommit 2018
+ committerCount 21
+ commitCount 283
+ sampleCount 9
+ example
+  /**
+   *   Copyright (c) Rich Hickey. All rights reserved.
+   *   The use and distribution terms for this software are covered by the
+   *   Eclipse Public License 1.0 (http://opensource.org/licenses/eclipse-1.0.php)
+   *   which can be found in the file epl-v10.html at the root of this distribution.
+   *   By using this software in any fashion, you are agreeing to be bound by
+   * 	 the terms of this license.
+   *   You must not remove this notice, or any other, from this software.
+   **/
+  
+  /* rich Apr 19, 2008 */
+  
+  package clojure.lang;
+  
+  import java.lang.ref.Reference;
+  import java.math.BigInteger;
+  import java.util.Map;
+  import java.util.concurrent.ConcurrentHashMap;
+  import java.lang.ref.SoftReference;
+  import java.lang.ref.ReferenceQueue;
+  
+  public class Util{
+  static public boolean equiv(Object k1, Object k2){
+  	if(k1 == k2)
+  		return true;
+  	if(k1 != null)
+  		{
+  		if(k1 instanceof Number && k2 instanceof Number)
+  			return Numbers.equal((Number)k1, (Number)k2);
+  		else if(k1 instanceof IPersistentCollection || k2 instanceof IPersistentCollection)
+  			return pcequiv(k1,k2);
+  		return k1.equals(k2);
+  		}
+  	return false;
+  }
+  
+  static public boolean equiv(long k1, long k2){
+  	return k1 == k2;
+  }
+  
+  static public boolean equiv(Object k1, long k2){
+  	return equiv(k1, (Object)k2);
+  }
+  
+  static public boolean equiv(long k1, Object k2){
+  	return equiv((Object)k1, k2);
+  }
+  
+  static public boolean equiv(double k1, double k2){
+  	return k1 == k2;
+  }
+  
+  static public boolean equiv(Object k1, double k2){
+  	return equiv(k1, (Object)k2);
+  }
+  
+  static public boolean equiv(double k1, Object k2){
+  	return equiv((Object)k1, k2);
+  }
+  
+  static public boolean equiv(boolean k1, boolean k2){
+  	return k1 == k2;
+  }
+  
+  static public boolean equiv(Object k1, boolean k2){
+  	return equiv(k1, (Object)k2);
+  }
+  
+  static public boolean equiv(boolean k1, Object k2){
+  	return equiv((Object)k1, k2);
+  }
+  
+  static public boolean equiv(char c1, char c2) {
+      return c1 == c2;
+  }
+  
+  static public boolean pcequiv(Object k1, Object k2){
+  	if(k1 instanceof IPersistentCollection)
+  		return ((IPersistentCollection)k1).equiv(k2);
+  	return ((IPersistentCollection)k2).equiv(k1);
+  }
+  
+  static public boolean equals(Object k1, Object k2){
+  	if(k1 == k2)
+  		return true;
+  	return k1 != null && k1.equals(k2);
+  }
+  
+  static public boolean identical(Object k1, Object k2){
+  	return k1 == k2;
+  }
+  
+  static public Class classOf(Object x){
+  	if(x != null)
+  		return x.getClass();
+  	return null;
+  }
+  
+  static public int compare(Object k1, Object k2){
+  	if(k1 == k2)
+  		return 0;
+  	if(k1 != null)
+  		{
+  		if(k2 == null)
+  			return 1;
+  		if(k1 instanceof Number)
+  			return Numbers.compare((Number) k1, (Number) k2);
+  		return ((Comparable) k1).compareTo(k2);
+  		}
+  	return -1;
+  }
+  
+  static public int hash(Object o){
+  	if(o == null)
+  		return 0;
+  	return o.hashCode();
+  }
+  
+  static public int hasheq(Object o){
+  	if(o == null)
+  		return 0;
+  	if(o instanceof Number)
+  		return Numbers.hasheq((Number)o);
+  	else if(o instanceof IHashEq)
+  		return ((IHashEq)o).hasheq();
+  	return o.hashCode();
+  }
+  
+  static public int hashCombine(int seed, int hash){
+  	//a la boost
+  	seed ^= hash + 0x9e3779b9 + (seed << 6) + (seed >> 2);
+  	return seed;
+  }
+  
+  static public boolean isPrimitive(Class c){
+  	return c != null && c.isPrimitive() && !(c == Void.TYPE);
+  }
+  
+  static public boolean isInteger(Object x){
+  	return x instanceof Integer
+  			|| x instanceof Long
+  	        || x instanceof BigInt
+  			|| x instanceof BigInteger;
+  }
+  
+  static public Object ret1(Object ret, Object nil){
+  		return ret;
+  }
+  
+  static public ISeq ret1(ISeq ret, Object nil){
+  		return ret;
+  }
+  
+  static public <K,V> void clearCache(ReferenceQueue rq, ConcurrentHashMap<K, Reference<V>> cache){
+  		//cleanup any dead entries
+  	if(rq.poll() != null)
+  		{
+  		while(rq.poll() != null)
+  			;
+  		for(Map.Entry<K, Reference<V>> e : cache.entrySet())
+  			{
+              Reference<V> val = e.getValue();
+  			if(val != null && val.get() == null)
+  				cache.remove(e.getKey(), val);
+  			}
+  		}
+  }
+  
+  static public RuntimeException runtimeException(String s){
+  	return new RuntimeException(s);
+  }
+  
+  static public RuntimeException runtimeException(String s, Throwable e){
+  	return new RuntimeException(s, e);
+  }
+  
+  /**
+   * Throw even checked exceptions without being required
+   * to declare them or catch them. Suggested idiom:
+   * <p>
+   * <code>throw sneakyThrow( some exception );</code>
+   */
+  static public RuntimeException sneakyThrow(Throwable t) {
+      // http://www.mail-archive.com/javaposse@googlegroups.com/msg05984.html
+  	if (t == null)
+  		throw new NullPointerException();
+  	Util.<RuntimeException>sneakyThrow0(t);
+  	return null;
+  }
+  
+  @SuppressWarnings("unchecked")
+  static private <T extends Throwable> void sneakyThrow0(Throwable t) throws T {
+  	throw (T) t;
+  }
+  
+  }
+  
+  
+
 website oracle.com/java/
-wikipedia Java_(programming_language)
+status active
+
+replit java
+
+twitter java
+
+fileType text
+wordRank 1489
+
+tiobe Java
+ currentRank 1
+
+meetup java
+ memberCount 1162766
+ groupCount 2090
+
+linkedInSkill java
+ peopleWithThisSkillCount 5256079
+
+projectEuler Java
+ memberCount
+  2019 27921
+  2022 29675
+
+hopl 2131
+
+subreddit java
+ memberCount
+  2017 77297
+
+quineRelay Java
+
+ubuntuPackage openjdk-8-jdk
+
+rosettaCode Java
+
+antlr https://github.com/antlr/grammars-v4/tree/master/java
+
+corporateDevelopers Oracle
+indeedJobs java engineer
+ 2017 32645

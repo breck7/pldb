@@ -1,3 +1,70 @@
+title Markdown
 appeared 2004
 type textMarkup
-wikipedia Markdown
+
+patterns
+ hasCentralPackageRepository? false
+ hasSemanticIndentation? true
+
+wikipedia https://en.wikipedia.org/wiki/Markdown
+ example
+  # Heading
+  
+  ## Sub-heading
+  
+  ### Another deeper heading
+   
+  Paragraphs are separated
+  by a blank line.
+  
+  Two spaces at the end of a line leave a  
+  line break.
+  
+  Text attributes _italic_, *italic*, __bold__, **bold**, `monospace`.
+  
+  Horizontal rule:
+  
+  ---
+  
+  Bullet list:
+  
+    * apples
+    * oranges
+    * pears
+  
+  Numbered list:
+  
+    1. apples
+    2. oranges
+    3. pears
+  
+  A [link](http://example.com).
+ related html textile restructuredtext perl pandoc-app mime php python ruby drupal mediawiki rstudio-editor r c apl asciidoc org txt2tags
+ summary Markdown is a lightweight markup language with plain text formatting syntax. It is designed so that it can be converted to HTML and many other formats using a tool by the same name. Markdown is often used to format readme files, for writing messages in online discussion forums, and to create rich text using a plain text editor. As the initial description of Markdown contained ambiguities and unanswered questions, many implementations and extensions of Markdown appeared over the years to answer these issues.
+ pageId 2415885
+ dailyPageViews 1954
+ created 2005
+ backlinksCount 286
+ revisionCount 1124
+ appeared 2004
+
+githubLanguage Markdown
+ fileExtensions md markdown mdown mdwn mkd mkdn mkdown ronn workbook
+ trendingProjectsCount 0
+
+linguistGrammarRepo https://github.com/atom/language-gfm
+ firstCommit 2013
+ lastCommit 2018
+ committerCount 58
+ commitCount 426
+ sampleCount 8
+ example
+  Tender
+  ======
+  
+
+compilesTo html
+status active
+fileType text
+
+codeMirror markdown

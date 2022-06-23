@@ -1,5 +1,19 @@
+title json-lambda
 appeared 2017
 type queryLanguage
 creators Chris Done
-github https://github.com/chrisdone/jl
-example map (\o -> { sha: o.sha, ps: map _.sha o.parents }) | filter (\o -> length o.ps > 1)
+
+example
+ map (\o -> { sha: o.sha, ps: map _.sha o.parents }) | filter (\o -> length o.ps > 1)
+
+githubRepo https://github.com/chrisdone/jl
+ firstCommit 2017
+ stars 413
+ forks 14
+ subscribers 9
+ created 2017
+ updated 2020
+ description Functional sed for JSON
+ issues 5
+
+writtenIn haskell

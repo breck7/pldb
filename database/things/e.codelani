@@ -1,8 +1,8 @@
+title E
 appeared 1997
 type pl
 creators Mark S. Miller
-website http://erights.org/
-wikipedia E_(programming_language)
+
 example
  def factorial(n :int) :int {
    if (n == 1) {
@@ -13,4 +13,66 @@ example
      throw("invalid argument to factorial: "+n)
    }
  }
+
+patterns
+ hasCentralPackageRepository? false
+ hasComments? true
+
 description E is an object-oriented programming language for secure distributed computing.
+
+wikipedia https://en.wikipedia.org/wiki/E_(programming_language)
+ example
+  def makeMint(name) :any {
+     def [sealer, unsealer] := makeBrandPair(name)
+     def mint {
+       to makePurse(var balance :(int >= 0)) :any {
+         def decr(amount :(0..balance)) :void {
+           balance -= amount
+         }
+         def purse {
+           to getBalance() :int { return balance }
+           to sprout() :any { return mint.makePurse(0) }
+           to getDecr() :any { return sealer.seal(decr) }
+           to deposit(amount :int, src) :void {
+             unsealer.unseal(src.getDecr())(amount)
+             balance += amount
+           }
+         }
+         return purse
+       }
+     }
+     return mint
+   }
+ related gnu-e joule java python pascal
+ summary E is an object-oriented programming language for secure distributed computing, created by Mark S. Miller, Dan Bornstein, and others at Electric Communities in 1997.  E is mainly descended from the concurrent language Joule and from Original-E, a set of extensions to Java for secure distributed programming.  E combines message-based computation with Java-like syntax.  A concurrency model based on event loops and promises ensures that deadlock can never occur.
+ pageId 1377046
+ created 2005
+ backlinksCount 75
+ revisionCount 104
+ dailyPageViews 77
+ appeared 1997
+
+githubLanguage E
+ fileExtensions E
+ trendingProjectsCount 0
+
+example
+ # E snippet from
+ # http://wiki.erights.org/wiki/Walnut/Distributed_Computing/Promises
+ when (tempVow) -> {
+     #...use tempVow
+ } catch prob {
+     #.... report problem
+ } finally {
+     #....log event
+ }
+ 
+website http://erights.org/
+status active
+fileType text
+wordRank 82
+isOpenSource true
+
+hopl 1990
+
+rosettaCode E

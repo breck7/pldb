@@ -1,3 +1,11 @@
+title Escapade
 appeared 1977
 type pl
-wikipedia Escapade_%28programming_language%29
+
+patterns
+ hasCentralPackageRepository? false
+
+wikipedia https://en.wikipedia.org/wiki/Escapade_%28programming_language%29
+ dailyPageViews -1
+
+status historical

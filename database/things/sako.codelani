@@ -1,3 +1,28 @@
+title System Automatycznego Kodowania Operacji
 appeared 1960
 type pl
-wikipedia SAKO_(programming_language)
+
+patterns
+ hasCentralPackageRepository? false
+
+wikipedia https://en.wikipedia.org/wiki/SAKO_(programming_language)
+ example
+  K) PROGRAM DRUKUJE NAPIS HELLO WORLD
+     LINIA
+     TEKST:
+     HELLO WORLD
+     KONIEC
+ summary SAKO (PL: System Automatycznego Kodowania Operacji - EN: Automatic Operation Encoding System) is a non-English-based programming language written for Polish computers XYZ, ZAM-2, ZAM-21 and ZAM-41.
+ dailyPageViews 4
+ pageId 38814216
+ created 2013
+ backlinksCount 4
+ revisionCount 12
+ appeared 1961
+
+standsFor System Automatycznego Kodowania Operacji
+status historical
+country PL
+fileType text
+
+hopl 2178

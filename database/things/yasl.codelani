@@ -1,6 +1,7 @@
+title Yet Another Scripting Language
 appeared 2017
 type pl
-github https://github.com/yasl-lang/yasl
+
 example
  # simple program that iteratively calculates factorials
  
@@ -27,4 +28,17 @@ example
  for i <- range(0, 7) {
    echo "fact(#{i}): #{fact(i)}"
  }
+
+githubRepo https://github.com/yasl-lang/yasl
+ firstCommit 2017
+ stars 26
+ forks 6
+ subscribers 3
+ created 2017
+ updated 2019
+ description Bytecode Interpreter for Yet Another Scripting Language (YASL).
+ issues 14
+
 reference https://www.reddit.com/r/ProgrammingLanguages/comments/diiqwt/request_for_feedback_on_pattern_matchingtype/
+standsFor Yet Another Scripting Language
+status active

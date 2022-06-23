@@ -1,6 +1,7 @@
+title reforth
 appeared 2013
 type pl
-github https://github.com/seanpringle/reforth
+
 example
  begin
      condition
@@ -18,4 +19,15 @@ example
          leave
      end
  end
+
 description Reforth tries to solve my gripes without fundamentally changing Forth's elegance and simplicity.
+
+githubRepo https://github.com/seanpringle/reforth
+ firstCommit 2013
+ stars 35
+ forks 3
+ subscribers 9
+ created 2013
+ updated 2019
+ description Rethinking Forth
+ issues 1

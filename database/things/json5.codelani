@@ -1,7 +1,7 @@
+title JSON5
 appeared 2012
 type metaLanguage
-website https://json5.org/
-github https://github.com/json5/json5
+
 example
  {
    // comments
@@ -15,4 +15,64 @@ example
    trailingComma: 'in objects', andIn: ['arrays',],
    "backwardsCompatible": "with JSON",
  } 
+
+patterns
+ hasCentralPackageRepository? false
+
 description The JSON5 Data Interchange Format (JSON5) is a superset of JSON that aims to alleviate some of the limitations of JSON by expanding its syntax to include some productions from ECMAScript 5.1.
+
+githubLanguage JSON5
+ fileExtensions json5
+ trendingProjectsCount 0
+
+githubRepo https://github.com/json5/json5
+ firstCommit 2012
+ stars 2801
+ forks 111
+ subscribers 70
+ created 2012
+ updated 2018
+ description JSON5 — JSON for humans
+ issues 14
+
+linguistGrammarRepo https://github.com/atom/language-javascript
+ firstCommit 2013
+ lastCommit 2018
+ committerCount 103
+ commitCount 1133
+ sampleCount 2
+ example
+  /*
+   * The following is a contrived example, but it illustrates most of the features:
+   */
+  
+  {
+      foo: 'bar',
+      while: true,
+  
+      this: 'is a \
+  multi-line string',
+  
+      // this is an inline comment
+      here: 'is another', // inline comment
+  
+      /* this is a block comment
+         that continues on another line */
+  
+      hex: 0xDEADbeef,
+      half: .5,
+      delta: +10,
+      to: Infinity,   // and beyond!
+  
+      finally: 'a trailing comma',
+      oh: [
+          "we shouldn't forget",
+          'arrays can have',
+          'trailing commas too',
+      ],
+  }
+
+website https://json5.org/
+status active
+fileType text
+isOpenSource true

@@ -1,7 +1,7 @@
+title baysick
 appeared 2009
 type esolang
-website http://blog.fogus.me/2009/03/26/baysick-a-scala-dsl-implementing-basic/
-github https://github.com/fogus/baysick
+
 example
  object SquareRoot extends Baysick {
    def main(args:Array[String]) = {
@@ -12,3 +12,17 @@ example
      RUN
    }
  }
+
+githubRepo https://github.com/fogus/baysick
+ firstCommit 2009
+ stars 231
+ forks 42
+ subscribers 16
+ created 2009
+ updated 2019
+ description An embedded Insane-specific Language for Scala implementing the BASIC programming language
+ issues 5
+
+website http://blog.fogus.me/2009/03/26/baysick-a-scala-dsl-implementing-basic/
+
+twitter fogus

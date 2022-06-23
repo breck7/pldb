@@ -1,3 +1,37 @@
+title Geography Markup Language
 appeared 2000
 type xmlFormat
-wikipedia Geography_Markup_Language
+
+patterns
+ hasCentralPackageRepository? false
+
+wikipedia https://en.wikipedia.org/wiki/Geography_Markup_Language
+ example
+  <PhotoCollection xmlns="http://www.myphotos.org" xmlns:gml="http://www.opengis.net/gml"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+        xsi:schemaLocation="http://www.myphotos.org
+        MyGoodPhotos.xsd">
+       <items>
+           <Item>
+               <name>Lynn Valley</name>
+               <description>A shot of the falls from the suspension bridge</description>
+               <where>North Vancouver</where>
+               <position>
+                   <gml:Point srsDimension="2" srsName="http://www.opengis.net/def/crs/EPSG/0/4326">
+                       <gml:pos>49.40 -123.26</gml:pos>
+                   </gml:Point>
+               </position>
+           </Item>
+       </items>
+   </PhotoCollection>
+ related xml rdf kml
+ summary The Geography Markup Language (GML) is the XML grammar defined by the Open Geospatial Consortium (OGC) to express geographical features. GML serves as a modeling language for geographic systems as well as an open interchange format for geographic transactions on the Internet. Key to GML's utility is its ability to integrate all forms of geographic information, including not only conventional "vector" or discrete objects, but coverages (see also GMLJP2) and sensor data.
+ pageId 203653
+ dailyPageViews 127
+ created 2003
+ backlinksCount 124
+ revisionCount 289
+ appeared 2000
+
+status historical
+fileType text

@@ -1,0 +1,48 @@
+foldBreakNode
+ crux foldBreak
+ extends abstractScrollNode
+ description Start a new section.
+ javascript
+  compile() {
+    return `</div><div class="scrollArticlePageComponent" style="column-width:70ch;column-count:1;max-width:90ch;">`
+  }
+kpiTableNode
+ catchAllNodeType rowNode
+ crux kpiTable
+ extends abstractScrollNode
+ javascript
+  getTableBody() {
+   return this.getTopDownArray()
+    .map(node => `<td>${node.getWord(0)}<span>${node.getContent()}</span></td>`)
+    .join("\n")
+  }
+  compile() {
+   return `<table class="kpiTable"><tr><tr>${this.getTableBody()}</tr></table>`
+  }
+tableSearchNode
+ crux tableSearch
+ extends abstractScrollNode
+ description Add table search to the tables
+ javascript
+  compile() {
+    return `
+    <script src="../jquery-3.4.1.min.js"></script>
+    <script src="../jquery.dataTables.min.js"></script>
+    <script>
+      $(document).ready( function () {
+      const urlSearchParams = new URLSearchParams(window.location.search)
+      const params = Object.fromEntries(urlSearchParams.entries())
+      $('table').DataTable({"paging": false,search:{ search: params.filter || ""}});
+    } );
+    </script>`
+  }
+ohayoCodeNode
+ extends codeNode
+ crux ohayoCode
+ description Provide a direct link to analyze this data in Ohayo.
+ javascript
+  compile() {
+   const link = `https://ohayo.computer?filename=${this.getRootNode().permalink}.ohayo&data=${encodeURIComponent(this.childrenToString())}`
+    return `<div class="scrollQuoteComponent">Run this analysis yourself in <a href="${link}">Ohayo</a></div>`
+  }
+

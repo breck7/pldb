@@ -1,7 +1,8 @@
+title Picat
 appeared 2012
 type pl
 creators Neng-Fa Zhou and Jonathan Fruhman
-website http://www.picat-lang.org/
+
 example
  import util.
  
@@ -13,4 +14,7 @@ example
          Tri[I] = Line.split().map(to_integer).to_array(),
   I := I+1
      end.
+
+website http://www.picat-lang.org/
 reference http://www.hakank.org/picat/
+related prolog

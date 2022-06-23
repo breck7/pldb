@@ -1,7 +1,7 @@
+title pegjs
 appeared 2010
 type grammarLanguage
-website https://pegjs.org/
-github https://github.com/pegjs/pegjs
+
 example
  start
   = additive
@@ -20,4 +20,26 @@ example
  
  integer "integer"
    = digits:[0-9]+ { return parseInt(digits.join(""), 10); }
+
+patterns
+ hasCentralPackageRepository? false
+
 description PEG.js is a simple parser generator for JavaScript that produces fast parsers with excellent error reporting. You can use it to process complex data or computer languages and build transformers, interpreters, compilers and other tools easily.
+
+githubRepo https://github.com/pegjs/pegjs
+ stars 2556
+ forks 308
+ subscribers 94
+ created 2010
+ updated 2017
+ firstCommit 2010
+ description PEG.js: Parser generator for JavaScript
+ issues 72
+
+website https://pegjs.org/
+status active
+
+twitter pegjs
+
+fileType text
+isOpenSource true

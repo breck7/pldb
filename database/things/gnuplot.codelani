@@ -1,4 +1,63 @@
+title Gnuplot
 appeared 1986
 type application
+
+patterns
+ hasCentralPackageRepository? false
+
+wikipedia https://en.wikipedia.org/wiki/Gnuplot
+ example
+  set title "Some Math Functions"
+  set xrange [-10:10]
+  set yrange [-2:2]
+  set zeroaxis
+  plot (x/4)**2, sin(x), 1/x
+ related c linux unix svg latex lua maxima octave perl perl-data-language python sagemath julia java ruby ch haskell smalltalk squeak matplotlib
+ summary gnuplot is a command-line program that can generate two- and three-dimensional plots of functions, data, and data fits. It is frequently used for publication-quality graphics as well as in education. The program runs on all major computers and operating systems (Linux, Unix, Microsoft Windows, macOS, and others). It is a program with a fairly long history, dating back to 1986. Despite its name, this software is not part of the GNU project.
+ pageId 43601
+ dailyPageViews 136
+ created 2002
+ backlinksCount 193
+ revisionCount 404
+ appeared 1986
+
+githubLanguage Gnuplot
+ fileExtensions gp gnu gnuplot plot plt
+ trendingProjectsCount 0
+
+linguistGrammarRepo https://github.com/mattfoster/gnuplot-tmbundle
+ firstCommit 2007
+ lastCommit 2015
+ committerCount 5
+ commitCount 86
+ sampleCount 6
+ example
+  #!/usr/bin/env gnuplot
+  
+  reset
+  
+  set terminal png
+  set output 'rates100.png'
+  
+  set xlabel "A2A price"
+  set ylabel "Response Rate"
+  
+  #set xr [0:5]
+  #set yr [0:6]
+  
+  plot 'rates100.dat' pt 7 notitle
+  
+
 website http://gnuplot.info/
-wikipedia Gnuplot
+status active
+
+tryItOnline gnuplot
+
+fileType text
+isOpenSource true
+
+quineRelay Gnuplot
+
+ubuntuPackage gnuplot
+
+rosettaCode Gnuplot

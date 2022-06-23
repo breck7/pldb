@@ -1,0 +1,68 @@
+title How many major global programming competitions are there?
+date 2019-09-04 12:00:00 -8000
+
+aftertext
+ dateline
+ I have done many problems on Project Euler but I've
+ never participated in competitive programming.
+ The other day I got curious, what does the competitive programming landscape look like?
+ https://projecteuler.net Project Euler
+ https://en.wikipedia.org/wiki/Competitive_programming competitive programming
+
+aftertext
+ I started my quest by watching a great interview with a competitive programmer. Then
+ I did some searching. Below are my results.
+ https://www.youtube.com/watch?v=F4rykKLcduI interview
+ https://www.youtube.com/channel/UCBr_Fu6q9iHYQCh13jmpbrg competitive programmer
+
+section There are 16 major programming competitions
+
+aftertext
+ The first one started in 1970. A few of the newer ones are online only.
+
+section Most of them started or are hosted in the USA
+
+image images/hostCountries.png
+
+endSnippet
+
+section The List
+
+aftertext
+ Here is my list. You can contribute to it on GitHub.
+ https://github.com/codelani/codelani/blob/master/competitions.ssv GitHub
+
+pipeTable
+ series|website|type|started|wikipediaPage|firstHostCountry
+ IMO|https://www.imo-official.org/🔗www.imo-official.org/|Mathematics|1959|https://en.wikipedia.org/wiki/International_Mathematical_Olympiad🔗en.wikipedia.org/wiki/International_Mathematical_Olympiad|Romania
+ ICPC|https://icpc.baylor.edu/🔗icpc.baylor.edu/|Programming|1970|https://en.wikipedia.org/wiki/International_Collegiate_Programming_Contest🔗en.wikipedia.org/wiki/International_Collegiate_Programming_Contest|USA
+ ACSL|https://www.acsl.org/🔗www.acsl.org/|Programming|1978|https://en.wikipedia.org/wiki/American_Computer_Science_League🔗en.wikipedia.org/wiki/American_Computer_Science_League|USA
+ IOI|https://ioinformatics.org/🔗ioinformatics.org/|Programming|1989|https://en.wikipedia.org/wiki/International_Olympiad_in_Informatics🔗en.wikipedia.org/wiki/International_Olympiad_in_Informatics|Bulgaria
+ ICFPProgrammingContest|https://icfpcontest2019.github.io/🔗icfpcontest2019.github.io/|Programming|1998|https://en.wikipedia.org/wiki/ICFP_Programming_Contest🔗en.wikipedia.org/wiki/ICFP_Programming_Contest|USA
+ TopCoder|https://www.topcoder.com/🔗www.topcoder.com/|Programming|2001|https://en.wikipedia.org/wiki/Topcoder🔗en.wikipedia.org/wiki/Topcoder|USA
+ TopCoderOpen|https://tco19.topcoder.com/🔗tco19.topcoder.com/|Programming|2001|https://en.wikipedia.org/wiki/Topcoder_Open🔗en.wikipedia.org/wiki/Topcoder_Open|USA
+ GoogleCodeJam|https://codingcompetitions.withgoogle.com/codejam🔗codingcompetitions.withgoogle.com/codejam|Programming|2003|https://en.wikipedia.org/wiki/Google_Code_Jam🔗en.wikipedia.org/wiki/Google_Code_Jam|USA
+ IEEEExtreme|https://ieeextreme.org/🔗ieeextreme.org/|Programming|2006|https://en.wikipedia.org/wiki/IEEEXtreme🔗en.wikipedia.org/wiki/IEEEXtreme|Online
+ CodeChef|https://www.codechef.com/🔗www.codechef.com/|Programming|2009|https://en.wikipedia.org/wiki/CodeChef🔗en.wikipedia.org/wiki/CodeChef|India
+ CodeForces|https://codeforces.com/🔗codeforces.com/|Programming|2010|https://en.wikipedia.org/wiki/Codeforces🔗en.wikipedia.org/wiki/Codeforces|Russia
+ AtCoder|https://atcoder.jp/🔗atcoder.jp/|Programming|2010||Japan
+ Kaggle|https://www.kaggle.com/🔗www.kaggle.com/|DataScience|2010|https://en.wikipedia.org/wiki/Kaggle🔗en.wikipedia.org/wiki/Kaggle|USA
+ FacebookHackerCup|https://www.facebook.com/hackercup/🔗www.facebook.com/hackercup/|Programming|2011|https://en.wikipedia.org/wiki/Facebook_Hacker_Cup🔗en.wikipedia.org/wiki/Facebook_Hacker_Cup|USA
+ HackerEarth|https://www.hackerearth.com/🔗www.hackerearth.com/|Programming|2012|https://en.wikipedia.org/wiki/HackerEarth🔗en.wikipedia.org/wiki/HackerEarth|USA
+ HackerRank|https://www.hackerrank.com🔗www.hackerrank.com|Programming|2012|https://en.wikipedia.org/wiki/HackerRank🔗en.wikipedia.org/wiki/HackerRank|USA
+
+section Gennady Korotkevich
+
+aftertext
+ I came across one interesting stat in my research. Gennady Korotkevich is a programmer who is currently the highest rated programmer on <i>all</i> 5 of the major competitive programming sites!
+ https://en.wikipedia.org/wiki/Gennady_Korotkevich Gennady Korotkevich
+
+section Future work
+
+aftertext
+ It would be interesting to see trends in the number of
+ participants and prize amounts in these competitions over
+ time. I'm curious if eSports
+ with prizes in the millions, will sap people away from
+ programming competitions.
+ https://en.wikipedia.org/wiki/Esports eSports

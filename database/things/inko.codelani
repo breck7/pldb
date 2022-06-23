@@ -1,5 +1,26 @@
+title inko
 appeared 2015
 type pl
-website http://inko-lang.org/
-github https://github.com/YorickPeterse/inko
+
+patterns
+ hasCentralPackageRepository? false
+
 description <a href='https://github.com/YorickPeterse/inko'>Inko</a> is a gradually typed, interpreted, object-oriented programming language drawing inspiration from languages such as Smalltalk, Self, Ruby, Erlang and Rust.
+
+githubRepo https://github.com/YorickPeterse/inko
+ stars 61
+ forks 7
+ subscribers 5
+ created 2015
+ updated 2017
+ firstCommit 2015
+ description Moved to https://gitlab.com/yorickpeterse/inko
+ issues 24
+
+website http://inko-lang.org/
+status active
+fileType text
+isOpenSource true
+hackerNewsDiscussions
+ id|title|time|timestamp|by|comments|score
+ 17702237|Show HN: Inko – A safe and concurrent object-oriented programming language|2018-08-06 22:14:06 UTC|1533593646|YorickPeterse|45|95

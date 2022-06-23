@@ -1,10 +1,85 @@
+title DTrace
 appeared 2005
 type pl
-website http://dtrace.org/
-wikipedia DTrace
+
 example
  # Syscall count by syscall
  dtrace -n 'syscall:::entry { @num[probefunc] = count(); }'
  # Syscall count by process
  dtrace -n 'syscall:::entry { @num[pid,execname] = count(); }'
+
+patterns
+ hasCentralPackageRepository? false
+
 description DTrace is a comprehensive dynamic tracing framework created by Sun Microsystems for troubleshooting kernel and application problems on production systems in real time.
+
+wikipedia https://en.wikipedia.org/wiki/DTrace
+ example
+  # New processes with arguments
+  dtrace -n 'proc:::exec-success { trace(curpsinfo->pr_psargs); }'
+  
+  # Files opened by process
+  dtrace -n 'syscall::open*:entry { printf("%s %s",execname,copyinstr(arg0)); }'
+  
+  # Syscall count by program
+  dtrace -n 'syscall:::entry { @num[execname] = count(); }'
+  
+  # Syscall count by syscall
+  dtrace -n 'syscall:::entry { @num[probefunc] = count(); }'
+  
+  # Syscall count by process
+  dtrace -n 'syscall:::entry { @num[pid,execname] = count(); }'
+  
+  # Disk size by process
+  dtrace -n 'io:::start { printf("%d %s %d",pid,execname,args[0]->b_bcount); }'
+  
+  # Pages paged in by process
+  dtrace -n 'vminfo:::pgpgin { @pg[execname] = sum(arg0); }'
+ related solaris freebsd linux c assembly-language java erlang javascript perl php python ruby tcl mysql postgresql
+ summary DTrace is a comprehensive dynamic tracing framework created by Sun Microsystems for troubleshooting kernel and application problems on production systems in real time. Originally developed for Solaris, it has since been released under the free Common Development and Distribution License (CDDL) and has been ported to several other Unix-like systems. DTrace can be used to get a global overview of a running system, such as the amount of memory, CPU time, filesystem and network resources used by the active processes. It can also provide much more fine-grained information, such as a log of the arguments with which a specific function is being called, or a list of the processes accessing a specific file. In 2010, Oracle Corporation acquired Sun Microsystems. In October 2011, Oracle announced the porting of DTrace to Linux, but for several years only an unofficial DTrace port to Linux was available, with no changes in licensing terms.In August 2017, Oracle released DTrace kernel code under the GPLv2+ license, and user space code under GPLv2 and UPL licensing. In September 2018 Microsoft announced that they had ported DTrace from FreeBSD to Windows.In September 2016 the OpenDTrace effort began on github with both code and comprehensive documentation of the system's internals.  The OpenDTrace effort maintains the original CDDL licensing for the code from OpenSolaris with additional code contributions coming under a BSD 2 Clause license.  The goal of OpenDTrace is to provide an OS agnostic, portable implementation of DTrace that is acceptable to all consumers, including macOS, FreeBSD, OpenBSD, NetBSD, and Linux as well as embedded systems.
+ pageId 1179136
+ created 2004
+ backlinksCount 92
+ revisionCount 300
+ dailyPageViews 141
+ appeared 2010
+
+githubLanguage DTrace
+ fileExtensions d
+ trendingProjectsCount 0
+
+linguistGrammarRepo https://github.com/textmate/c.tmbundle
+ firstCommit 2005
+ lastCommit 2018
+ committerCount 23
+ commitCount 359
+ sampleCount 3
+ example
+  /*
+   * This software is in the public domain.
+   *
+   * $Id: counts.d 10510 2005-08-15 01:46:19Z kateturner $
+   */
+  
+  #pragma D option quiet
+  
+  self int tottime;
+  BEGIN {
+  	tottime = timestamp;
+  }
+  
+  php$target:::function-entry
+  	@counts[copyinstr(arg0)] = count();
+  }
+  
+  END {
+  	printf("Total time: %dus\n", (timestamp - tottime) / 1000);
+  	printf("# calls by function:\n");
+  	printa("%-40s %@d\n", @counts);
+  }
+  
+  
+
+website http://dtrace.org/
+status active
+fileType text

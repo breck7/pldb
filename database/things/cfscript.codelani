@@ -1,3 +1,25 @@
+title CFScript
 appeared 1999
 type pl
-wikipedia CFScript
+
+patterns
+ hasCentralPackageRepository? false
+
+wikipedia https://en.wikipedia.org/wiki/CFScript
+ example
+  x = 0;
+  do {
+      x = x+1;
+      WriteOutput(x);
+  } while (x LTE 0);
+  // Outputs: 1
+ related cfml javascript html
+ summary CFScript is an extension of CFML on the ColdFusion platform. CFScript resembles JavaScript. Some ColdFusion developers prefer it since it has less visual and typographical overhead than ordinary CFML.
+ created 2006
+ backlinksCount 10
+ pageId 8036673
+ revisionCount 68
+ dailyPageViews 7
+ appeared 2006
+
+status historical

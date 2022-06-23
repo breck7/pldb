@@ -1,4 +1,20 @@
+title Microsoft Macro Assembler
 appeared 1981
 type assembly
+
+patterns
+ hasCentralPackageRepository? false
+
+wikipedia https://en.wikipedia.org/wiki/Microsoft_Macro_Assembler
+ related x86-assembly c visual-studio-editor mmx turbo-assembler assembly-language
+ summary The Microsoft Macro Assembler (MASM) is an x86 assembler that uses the Intel syntax for MS-DOS and Microsoft Windows. Beginning with MASM 8.0 there are two versions of the assembler - one for 16-bit and 32-bit assembly sources, and another (ML64) for 64-bit sources only. MASM is maintained by Microsoft, but since version 6.12 has not been sold as a separate product, it is instead supplied with various Microsoft SDKs and C compilers. Recent versions of MASM are included with Microsoft Visual Studio.
+ pageId 1061469
+ created 2004
+ backlinksCount 60
+ revisionCount 421
+ dailyPageViews 136
+ appeared 1981
+
 website https://docs.microsoft.com/en-us/cpp/assembler/masm/microsoft-macro-assembler-reference
-wikipedia Microsoft_Macro_Assembler
+status historical
+fileType text

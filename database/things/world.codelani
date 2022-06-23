@@ -1,6 +1,7 @@
+title world
 appeared 2011
 type pl
-website http://www.world-lang.org
+
 example
  timeval: struct [
      slong sec
@@ -20,3 +21,6 @@ example
      ]
      sint
  ]
+
+website http://www.world-lang.org
+status historical

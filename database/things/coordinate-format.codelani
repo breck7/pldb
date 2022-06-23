@@ -1,10 +1,26 @@
+title Matrix Market Coordinate Format
 appeared 1996
-type textData
-website https://math.nist.gov/MatrixMarket/formats.html#MMformat
-wikipedia Matrix_Market_exchange_formats
+type textDataFormat
+
 example
  1    0      0       6      0
  0   10.5    0       0      0
  0    0    .015      0      0å
  0  250.5    0     -280    33.32
  0    0      0       0     12
+
+patterns
+ hasCentralPackageRepository? false
+
+wikipedia https://en.wikipedia.org/wiki/Matrix_Market_exchange_formats
+ related ascii harwell-boeing-format
+ summary The Matrix Market exchange formats are a set of human readable, ASCII-based file formats designed to facilitate the exchange of matrix data.  The file formats were designed and adopted for the Matrix Market, a NIST repository for test data for use in comparative studies of algorithms for numerical linear algebra.
+ pageId 26998361
+ created 2010
+ backlinksCount 3
+ revisionCount 7
+ dailyPageViews 6
+
+website https://math.nist.gov/MatrixMarket/formats.html#MMformat
+status active
+fileType text

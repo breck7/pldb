@@ -1,3 +1,21 @@
+title Atom programming language
 appeared 2007
 type pl
-wikipedia Atom_(programming_language)
+
+patterns
+ hasCentralPackageRepository? false
+
+wikipedia https://en.wikipedia.org/wiki/Atom_(programming_language)
+ related haskell bluespec verilog
+ summary Atom is a domain-specific language (DSL) in Haskell, for designing real-time embedded software.
+ backlinksCount 9
+ pageId 25291178
+ created 2009
+ revisionCount 49
+ dailyPageViews 12
+ appeared 2007
+
+status historical
+fileType text
+wordRank 2431
+isOpenSource true

@@ -1,4 +1,198 @@
+title Julia
 appeared 2012
 type pl
+
+patterns
+ hasMultipleDispatch? true
+  collide_with(x::Asteroid, y::Asteroid) = ... # deal with asteroid hitting asteroid
+  collide_with(x::Asteroid, y::Spaceship) = ... # deal with asteroid hitting spaceship
+  collide_with(x::Spaceship, y::Asteroid) = ... # deal with spaceship hitting asteroid
+  collide_with(x::Spaceship, y::Spaceship) = ... # deal with spaceship hitting spaceship
+ hasUnicodeIdentifiers? true
+  δ = 0.00001
+ hasCentralPackageRepository? true
+ hasComments? true
+  # This is a comment
+ hasBlockComments? true
+  #=
+  Comment block
+  =#
+ hasGarbageCollection? true
+ hasImports? true
+  # Files and file names are mostly unrelated to modules; modules are associated only with module expressions.
+  # One can have multiple files per module, and multiple modules per file:
+  using MyModule
+  using MyModule: x, p
+  import MyModule
+  import MyModule.x, MyModule.p
+  import MyModule: x, p
+  module Foo
+  include("file1.jl")
+  include("file2.jl")
+  end
+ hasMixins? true
+  # Including the same code in different modules provides mixin-like behavior.
+  module Normal
+  include("mycode.jl")
+  end
+  
+  module Testing
+  include("safe_operators.jl")
+  include("mycode.jl")
+  end
+ hasPipes? true
+  [1,2,3] |> (y -> f(3, y))
+ hasSemanticIndentation? false
+ hasModules? true
+  module MyModule
+  using Lib
+  
+  using BigLib: thing1, thing2
+  
+  import Base.show
+  
+  export MyType, foo
+  
+  struct MyType
+      x
+  end
+  
+  bar(x) = 2x
+  foo(a::MyType) = bar(a.x) + 1
+  
+  show(io::IO, a::MyType) = print(io, "MyType $(a.x)")
+  end
+
+wikipedia https://en.wikipedia.org/wiki/Julia_(programming_language)
+ example
+  julia> p(x) = 2x^2 + 1; f(x, y) = 1 + 2p(x)y
+  julia> println("Hello world!", " I'm on cloud ", f(0, 4), " as Julia supports recognizable syntax!")
+  Hello world! I'm on cloud 9 as Julia supports recognizable syntax!
+ related c scheme llvmir fortran ia-32 linux freebsd lisp lua mathematica wolfram matlab perl python r ruby regex unicode utf-8 common-lisp dylan algol fortress html xml json arm powerpc
+ summary Julia is a high-level dynamic programming language designed to address the needs of high-performance numerical analysis and computational science, without the typical need of separate compilation to be fast, while also being effective for general-purpose programming, web use or as a specification language. Distinctive aspects of Julia's design include a type system with parametric polymorphism and types in a fully dynamic programming language and multiple dispatch as its core programming paradigm. It allows concurrent, parallel and distributed computing, and direct calling of C and Fortran libraries without glue code. Julia is garbage-collected, uses eager evaluation and includes efficient libraries for floating-point calculations, linear algebra, random number generation, fast Fourier transforms and regular expression matching.
+ pageId 38455554
+ dailyPageViews 640
+ created 2012
+ backlinksCount 377
+ revisionCount 1075
+ appeared 2012
+ fileExtensions jl
+
+githubLanguage Julia
+ fileExtensions jl
+ trendingProjects
+  author name avatar url language languageColor stars forks currentPeriodStars description
+  JuliaLang julia https://github.com/JuliaLang.png https://github.com/JuliaLang/julia Julia #a270ba 23614 3524 510 "The Julia Language: A fresh approach to technical computing."
+  JuliaLang IJulia.jl https://github.com/JuliaLang.png https://github.com/JuliaLang/IJulia.jl Julia #a270ba 1780 298 38 "Julia kernel for Jupyter"
+ trendingProjectsCount 3
+
+helloWorldCollection Julia
+ # Hello world in Julia
+ 
+ println("Hello, World!")
+
+linguistGrammarRepo https://github.com/JuliaEditorSupport/atom-language-julia
+ firstCommit 2015
+ lastCommit 2018
+ committerCount 21
+ commitCount 191
+ sampleCount 2
+ example
+  #!/usr/bin/env julia
+  
+  # From https://github.com/JoshCheek/language-sampler-for-fullpath/blob/b766dcdbd249ec63516f491390a75315e78cba95/julia/fullpath
+  help_screen = """
+  usage: fullpath *[relative-paths] [-c]
+  
+    Prints the fullpath of the paths
+    If no paths are given as args, it will read them from stdin
+  
+    If there is only one path, the trailing newline is omitted
+  
+    The -c flag will copy the results into your pasteboard
+  """
+  
+  help  = false
+  copy  = false
+  dir   = pwd()
+  paths = []
+  
+  for arg = ARGS
+    if arg == "-h" || arg == "--help"
+      help = true
+    elseif arg == "-c" || arg == "--copy"
+      copy = true
+    elseif arg != ""
+      push!(paths, arg)
+    end
+  end
+  
+  if help
+    print(help_screen)
+    exit()
+  end
+  
+  function notempty(string)
+    return !isempty(string)
+  end
+  
+  if length(paths) == 0
+    paths = filter(notempty, map(chomp, readlines()))
+  end
+  
+  function print_paths(stream, paths)
+    if length(paths) == 1
+      path = paths[1]
+      print(stream, "$dir/$path")
+    else
+      for path = paths
+        println(stream, "$dir/$path")
+      end
+    end
+  end
+  
+  if copy
+    read, write, process = readandwrite(`pbcopy`)
+    print_paths(write, paths)
+    close(write)
+  end
+  
+  print_paths(STDOUT, paths)
+  
+
 website http://julialang.org/
-wikipedia Julia_(programming_language)
+status active
+
+tryItOnline julia
+
+fileExtensions jl
+fileType text
+wordRank 7592
+isOpenSource true
+
+tiobe Julia
+ currentRank 35
+
+meetup julia
+ memberCount 15211
+ groupCount 36
+
+projectEuler Julia
+ memberCount
+  2019 331
+  2022 700
+
+subreddit Julia
+ memberCount
+  2017 3660
+
+quineRelay Julia
+
+ubuntuPackage julia
+
+codeMirror julia
+
+rosettaCode Julia
+
+indeedJobs julia engineer
+ 2017 85

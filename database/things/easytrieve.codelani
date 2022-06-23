@@ -1,3 +1,31 @@
+title Easytrieve
 appeared 1969
 type pl
-wikipedia Easytrieve
+
+patterns
+ hasCentralPackageRepository? false
+
+wikipedia https://en.wikipedia.org/wiki/Easytrieve
+ example
+  FILE PERSNL FB(150 1800)           } LIBRARY DEFINITION
+      NAME  17 8 A 
+      PERSNR 9 5 N
+      ABTL  98 3 N
+      SUMME 94 4 P 2
+  JOB INPUT PERSNL NAME SUM-PERS     } ACTIVITY DEFINITION
+    PRINT PAYRPT
+    REPORT PAYRPT LINESIZE 80
+    TITLE 01 'PERSONALREPORT BEISPIEL1'
+    LINE 01 ABTL NAME PERSNR SUMME
+ related unix linux
+ summary Easytrieve is a Report generator product of CA Technologies. Easytrieve Classic and Easytrieve Plus are two available versions of this programming languages primarily designed to generate reports and are used by large corporations operating in mainframe (z/OS, z/VM, z/VSE), UNIX, Linux, and Microsoft Windows environments
+ created 2009
+ backlinksCount 15
+ pageId 21771340
+ revisionCount 63
+ dailyPageViews 21
+ appeared 2009
+
+status historical
+
+hopl 5189

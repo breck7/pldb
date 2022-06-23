@@ -1,3 +1,18 @@
+title THINK C
 appeared 1986
 type pl
-wikipedia THINK_C
+
+patterns
+ hasCentralPackageRepository? false
+
+wikipedia https://en.wikipedia.org/wiki/THINK_C
+ related powerpc
+ summary THINK C was an extension of ANSI C for the classic Mac OS developed by THINK Technologies; although named Lightspeed C in the original mid-1986 release, it was later renamed THINK C. THINK Technologies was later acquired by Symantec Corporation and the product continued to be developed by the original author, Michael Kahl. Version 3 and subsequent versions were essentially a subset of C++ and supported basic object oriented programming concepts such as single inheritance as well as extensions to the C standard that conformed more closely to the requirements of Mac OS programming. After version 6, the OOP facilities were expanded to a full C++ implementation, and the product was rebranded Symantec C++ for versions 7 and 8, now under development by different authors. THINK C (and later, Symantec C++) featured a class library and framework for Mac programming called the Think Class Library (TCL), which was used extensively for Macintosh application development. The Lightspeed/THINK C IDE was quite influential, though considered not as advanced as that belonging to THINK Pascal, its sister language product; it was considered the standard environment when MPW was considered an overpriced niche product, and most Macintosh products were developed in it for many years. With the transition of the Mac from 68K to PowerPC, however, Symantec was widely seen as having dropped the ball, and competitor Metrowerks's product CodeWarrior took control of the marketplace. Despite the decline in popularity of their IDE, Symantec was eventually chosen by Apple to provide next-generation C/C++ compilers for MPW in the form of Sc/Scpp for 68K alongside MrC/MrCpp for PowerPC. These remained Apple's standard compilers until the arrival of Mac OS X replaced them with GCC. Symantec subsequently exited the developer tool business.
+ created 2006
+ backlinksCount 86
+ pageId 3756993
+ revisionCount 56
+ dailyPageViews 18
+ appeared 1986
+
+status historical

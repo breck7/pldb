@@ -1,3 +1,29 @@
+title C/AL
 appeared 1987
 type pl
-wikipedia C/AL
+
+patterns
+ hasCentralPackageRepository? false
+
+wikipedia https://en.wikipedia.org/wiki/C/AL
+ example
+  Item.RESET;
+    Item.SETRANGE("Blocked",TRUE);
+    IF Item.FINDSET THEN
+      REPEAT
+        IF Item."Profit %" < 20 THEN BEGIN
+          Item."Profit %" := 20;
+          Item.MODIFY(TRUE);
+        END;
+      UNTIL Item.NEXT = 0;
+    Item.MODIFYALL("Blocked",FALSE);
+ related pascal
+ summary C/AL (Client/server Application Language) is the programming language used within C/SIDE the Client/Server Integrated Development Environment in Microsoft Dynamics NAV (Formerly known as Navision Attain). C/AL is a Database specific programming language, and is primarily used for retrieving, inserting and modifying records in a Navision database. C/AL resembles the Pascal language on which it is based. The original C/AL compiler was written by Michael Nielsen.
+ created 2007
+ backlinksCount 14
+ pageId 13281075
+ revisionCount 81
+ dailyPageViews 72
+ appeared 1958
+
+status historical

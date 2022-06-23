@@ -1,3 +1,17 @@
+title PALASM
 appeared 1980
 type pl
-wikipedia PALASM
+
+patterns
+ hasCentralPackageRepository? false
+
+wikipedia https://en.wikipedia.org/wiki/PALASM
+ summary PALASM is an early hardware description language, used to translate Boolean functions and state transition tables into a fuse map for use with Programmable Array Logic (PAL) devices introduced by Monolithic Memories, Inc. (MMI). The language was developed by John Birkner in the early 1980s. It is not case-sensitive.  The PALASM compiler was written by MMI in FORTRAN IV on an IBM 370/168. MMI made the source code available to users at no cost. By 1983, MMI customers ran versions on the DEC PDP-11, Data General NOVA, Hewlett-Packard HP 2100, MDS800 and others. A widely used MS DOS port was produced by MMI. There was a windows front-end written sometime later.
+ created 2004
+ backlinksCount 90
+ pageId 1081091
+ revisionCount 34
+ dailyPageViews 16
+ appeared 1980
+
+status historical

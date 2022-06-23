@@ -1,3 +1,21 @@
+title FXML
 appeared 2011
 type xmlFormat
-wikipedia FXML
+
+patterns
+ hasCentralPackageRepository? false
+
+wikipedia https://en.wikipedia.org/wiki/FXML
+ example
+  <?import javafx.scene.control.Label?>
+  <Label text="Hello, World!"/>
+ related xml
+ summary FXML is an XML-based user interface markup language created by Oracle Corporation for defining the user interface of a JavaFX application.It provides a convenient alternative to constructing such graphs in procedural code, and is ideally suited to defining the user interface of a JavaFX application, since the hierarchical structure of an XML document closely parallels the structure of the JavaFX scene graph. However anything that is created or implemented in FXML can be expressed using JavaFX directly.
+ backlinksCount 97
+ pageId 33723519
+ created 2011
+ revisionCount 26
+ dailyPageViews 39
+ appeared 2011
+
+status historical

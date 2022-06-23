@@ -1,3 +1,22 @@
+title Urbiscript
 appeared 2003
 type pl
-wikipedia Urbiscript
+
+patterns
+ hasCentralPackageRepository? false
+
+wikipedia https://en.wikipedia.org/wiki/Urbiscript
+ example
+  at (x + y == z)
+      echo("%s + %s == %s" % [x, y, z]);
+ related self io c
+ summary urbiscript is a programming language for robotics.  It features syntactic support for concurrency and event-based programming.  It is a prototype-based object-oriented scripting language.  It is dynamic: name resolution is performed during the program execution (late binding); slots (member variables) can be added/removed at runtime, and even prototypes (superclasses) of an object can be changed at runtime. Memory management is performed by reference counting. Tightly bound to the Urbi platform it supports seamless integration of C++/Java components.
+ created 2011
+ backlinksCount 7
+ pageId 33150834
+ revisionCount 44
+ dailyPageViews 5
+ appeared 2003
+
+status historical
+isOpenSource true

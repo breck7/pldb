@@ -1,4 +1,36 @@
+title Schema.org
 appeared 2011
 type schema
+
+patterns
+ hasCentralPackageRepository? false
+
+wikipedia https://en.wikipedia.org/wiki/Schema.org
+ example
+  <script type="application/ld+json">
+  { 
+    "@context": "http://schema.org/",
+    "@type": "Movie",
+    "name": "Avatar",
+    "director": 
+      { 
+         "@type": "Person",
+         "name": "James Cameron",
+         "birthDate": "1954-08-16"
+      },
+    "genre": "Science fiction",
+    "trailer": "../movies/avatar-theatrical-trailer.html" 
+  }
+  </script>
+ related rdf owl turtle json csv url
+ summary Schema.org is an initiative launched on 2 June 2011 by Bing, Google and Yahoo! (then operators of the world's largest search engines) to “create and support a common set of schemas for structured data markup on web pages.” In November 2011 Yandex (whose search engine is the largest one in Russia) joined the initiative. They propose using the schema.org vocabulary along with the Microdata, RDFa, or JSON-LD formats to mark up website content with metadata about itself. Such markup can be recognized by search engine spiders and other parsers, thus gaining access to the meaning of the sites (see Semantic Web). The initiative also describes an extension mechanism for adding additional properties. Public discussion of the initiative largely takes place on the W3C public vocabularies mailing list. In 2012, the GoodRelations ontology was integrated into Schema.org. Much of the vocabulary on schema.org was inspired by earlier formats such as Microformats, FOAF, and OpenCyc. Microformats, with its most dominant representative hCard, continue (as of 2015) to be published widely in the Web, where the deployment of schema.org has strongly increased between 2012 and end 2014. To test the validity of the data marked up with the schemas and Microdata, such validators as the Google Structured Data Testing Tool, Yandex Microformat validator and Bing Markup Validator can be used. Some Schema markups such as Organization and Person are used to influence Google's Knowledge Graph results.
+ pageId 31963682
+ dailyPageViews 154
+ created 2011
+ backlinksCount 58
+ revisionCount 183
+ appeared 2011
+
 website http://schema.org/
-wikipedia Schema.org
+status historical
+fileType text

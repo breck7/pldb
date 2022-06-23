@@ -1,7 +1,8 @@
+title protium
 appeared 2007
 type pl
 creators Diarmuid Pigott
-website http://www.protiumblue.com/
+
 example
  <@ DEFAREFLE>pleac</@>
  <@ DEFFLELIT>pleac|C:\Documents and Settings\All Users\Documents\Projects\PLEAC\pleac_perl.data</@>
@@ -14,4 +15,11 @@ example
  </@>
  <@ SAYVAR>aLine</@>
  </@>
+
+patterns
+ hasCentralPackageRepository? false
+
+website http://www.protiumblue.com/
 reference http://enacademic.com/dic.nsf/enwiki/3468524
+status historical
+fileType text

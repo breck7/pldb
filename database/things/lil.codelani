@@ -1,5 +1,25 @@
+title Little Implementation Language
 appeared 1974
 type pl
 creators P. J. Plauger
+
+patterns
+ hasCentralPackageRepository? false
+
+wikipedia https://en.wikipedia.org/wiki/Little_Implementation_Language
+ related unix pl360
+ summary LIL, the Little Implementation Language, was a system programming language during the early days of Unix history on PDP-11 machines. It was written by P. J. Plauger of Bell Labs. LIL attempted to fill the gap between assemblers and machine-independent system implementation languages (such as the C programming language), by basically adding structured programming to the PDP-11 assembly language. LIL resembled PL360 with C-like flow control syntax. The LIL compiler "lc" was part of Fifth Edition Unix (1974), but was dropped by Sixth Edition Unix (1975). Plauger left Bell Labs in the same year. Plauger explains why LIL was abandoned in Bell Labs in favor of C: [1] ... LIL is, however, a failure. Its stiffest competition at Bell Labs is the language C, which is higher level, and machine independent. Every time it looked like C was too expensive to use for a particular project, LIL was considered. But almost every time, it proved easier (and more rewarding) to improve C, or its runtime support, or the hardware, than to invest time in yet another language. ... A machine independent language is always superior -- even for writing machine dependent code (it's easier to find trained programmers) -- so long as the overhead can be endured. It is clear now that writing straightforward code and then measuring it is the formula for the best end product. At worst there will be 5-15 per cent overhead, which is seldom critical. Once system writers become mature enough to recognize this basic truth, they gravitate naturally toward machine independent SILs. ... it looks like the little implementation language is an idea whose time as come -- and gone.
+ pageId 35320077
+ dailyPageViews 4
+ created 2012
+ backlinksCount 4
+ revisionCount 20
+ appeared 1974
+
 website http://www.ultimate.com/phil/lil/lil.html
-wikipedia Little_Implementation_Language
+standsFor Little Implementation Language
+status historical
+fileType text
+wordRank 6582
+
+hopl 2386

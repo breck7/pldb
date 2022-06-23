@@ -1,4 +1,46 @@
+title HOPE
 appeared 1978
 type pl
-wikipedia Hope_(programming_language)
+
+patterns
+ hasUserDefinedOperators? true
+  Hope enables us to use a function with two arguments as an infix operator. e must assign it a priority and use it as an infix operator everywhere, including the equations that define it. A bigger number in the infix declaration means a higher priority. Most of Hope's standard functions are supplied as infix operators.
+  infix mult 8;
+  dec mult : num # num - > num;
+  ---xmulty<= ifY=0then0elsexmult(y-1)+x;
+ mergesWhitespace? true
+ hasCentralPackageRepository? false
+ hasPatternMatching? true
+ hasInfixNotation? true
+  max(10,20) + max(1,max(2,3));
+ hasIntegers? true
+ hasAnonymousFunctions? true
+  lambda(x,y) => x + y
+ letterFirstIdentifiers? true
+ hasSingleTypeArrays? true
+  [1,2,3]
+ hasWhileLoops? false
+
+wikipedia https://en.wikipedia.org/wiki/Hope_(programming_language)
+ example
+  dec fact : num -> num;
+  --- fact 0 <= 1;
+  --- fact n <= n*fact(n-1);
+ related haskell ml snobol
+ summary Hope is a small functional programming language developed in the 1970s at Edinburgh University. It predates Miranda and Haskell and is contemporaneous with ML (also developed at Edinburgh). Hope was derived from NPL, a simple functional language developed by Rod Burstall and John Darlington in their work on program transformation. NPL was, in turn, derived from Kleene Recursion Equations. NPL and Hope are notable for being the first languages with call-by-pattern evaluation and algebraic data types. (Though SNOBOL is even older, and its 'patterns' may qualify as a hybrid between call-by-pattern and regular expression matching.) Hope is an important language in the development of functional programming. Hope was named for Sir Thomas Hope (c. 1681–1771), a Scottish agricultural reformer, after whom Hope Park Square in Edinburgh, the location of the Department of Artificial Intelligence at the time of the development of Hope, was also named.
+ pageId 933188
+ dailyPageViews 25
+ created 2004
+ backlinksCount 32
+ revisionCount 77
+ appeared 1970
+
 reference https://github.com/dmbaturin/hope
+status historical
+country GB
+fileType text
+wordRank 1086
+
+hopl 810
+
+rosettaCode Hope

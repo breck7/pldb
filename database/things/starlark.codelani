@@ -1,6 +1,7 @@
+title starlark
 appeared 2018
 type pl
-github https://github.com/bazelbuild/starlark
+
 example
  # Define a number
  number = 18
@@ -37,4 +38,17 @@ example
          print(s if s else i)
  
  fizz_buzz(20)
+
 description The language used in Bazel. Starlark is designed to be small, simple, and thread-safe. Although it is inspired from Python, it is not a general-purpose language and most Python features are not included. Starlark is syntactically a subset of Python 3
+
+githubRepo https://github.com/bazelbuild/starlark
+ firstCommit 2018
+ stars 346
+ forks 27
+ subscribers 40
+ created 2018
+ updated 2019
+ description Starlark Language
+ issues 36
+
+status active

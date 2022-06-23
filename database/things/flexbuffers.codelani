@@ -1,4 +1,6 @@
+title flexbuffers
 appeared 2014
 type idl
-reference https://google.github.io/flatbuffers/flatbuffers_internals.html
 description A schemaless binary encoding. This is a binary format that can be used in conjunction with FlatBuffers (by storing a part of a buffer in FlexBuffers format), or also as its own independent serialization format.
+reference https://google.github.io/flatbuffers/flatbuffers_internals.html
+related flatbuffers

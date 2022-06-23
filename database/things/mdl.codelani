@@ -1,3 +1,36 @@
+title MDL
 appeared 1971
 type pl
-wikipedia MDL_(programming_language)
+
+patterns
+ hasCentralPackageRepository? false
+
+wikipedia https://en.wikipedia.org/wiki/MDL_(programming_language)
+ example
+  <DEFINE EXIT-TO (EXITS RMS)
+          #DECL ((EXITS) EXIT (RMS) <UVECTOR [REST ROOM]>)
+          <MAPF <>
+                <FUNCTION (E)
+                   #DECL ((E) <OR DIRECTION ROOM CEXIT NEXIT DOOR>)
+                   <COND (<TYPE? .E DIRECTION>)
+                         (<AND <TYPE? .E ROOM> <MEMQ .E .RMS>>
+                          <MAPLEAVE T>)
+                         (<AND <TYPE? .E CEXIT> <MEMQ <2 .E> .RMS>>
+                          <MAPLEAVE T>)
+                         (<AND <TYPE? .E DOOR>
+                               <OR <MEMQ <DROOM1 .E> .RMS>
+                                   <MEMQ <DROOM2 .E> .RMS>>>
+                          <MAPLEAVE T>)>>
+                .EXITS>>
+ related scheme common-lisp java prolog smalltalk simula
+ summary MDL (the MIT Design Language) is a descendant of the Lisp programming language. Its initial purpose was to provide high level language support for the Dynamic Modeling Group at MIT's Project MAC. It was initially developed in 1971 on the  PDP-10 computer under the Incompatible Timesharing System. The initial development team consisted of Gerald Sussman and Carl Hewitt of the Artificial Intelligence Lab, and Chris Reeve, Bruce Daniels, and David Cressey of the Dynamic Modeling  Group. Later, Stu Galley, also of the Dynamic Modeling Group, wrote the MDL documentation.MDL was initially known as "Muddle". This style of self-deprecating humor was not widely understood or appreciated outside of Project MAC and a few other early citadels of information technology.  So the name was sanitized to MDL.MDL provides several enhancements to classical Lisp.  It supports several built-in data types, including lists, strings and arrays, and user-defined data types.  It offers multithreaded expression evaluation and coroutines.  Variables can carry both a local value within a scope, and a global value, for passing data between scopes. Advanced built-in functions supported interactive debugging of MDL programs, incremental development, and reconstruction of source programs from object programs. Although MDL is obsolete, some of its features have been incorporated in later versions of Lisp.  Gerald Sussman went on to develop the Scheme language, in collaboration with Guy Steele, who later wrote the specifications for Common Lisp and Java.  Carl Hewitt had already published the idea for the PLANNER language before the MDL project began, but his subsequent thinking on PLANNER reflected lessons learned from building MDL.  Planner concepts influenced languages such as Prolog and Smalltalk. Smalltalk and Simula, in turn, influenced his future work on the Actor model. But the largest influence that MDL had was on the genre known as interactive fiction.  An interactive fiction game known as Zork, sometimes called Dungeon, was first written in MDL. Later, Reeve, Daniels, Galley and other members of Dynamic Modeling went on to start Infocom, a company that produced many  early commercial works of interactive fiction.
+ created 2004
+ backlinksCount 63
+ pageId 586499
+ revisionCount 54
+ dailyPageViews 19
+ appeared 1971
+
+status historical
+
+rosettaCode MDL

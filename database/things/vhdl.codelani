@@ -1,3 +1,108 @@
+title VHSIC Hardware Description Language
 appeared 1983
 type hardwareDescriptionLanguage
-wikipedia VHDL
+
+patterns
+ hasCentralPackageRepository? false
+ hasComments? true
+
+wikipedia https://en.wikipedia.org/wiki/VHDL
+ example
+  process
+  begin
+    wait until START = '1'; -- wait until START is high
+    
+    for i in 1 to 10 loop -- then wait for a few clock periods...
+      wait until rising_edge(CLK);
+    end loop;
+  
+    for i in 1 to 10 loop 	-- write numbers 1 to 10 to DATA, 1 every cycle
+      DATA <= to_unsigned(i, 8);
+      wait until rising_edge(CLK);
+    end loop;
+  
+    -- wait until the output changes
+    wait on RESULT;
+    
+    -- now raise ACK for clock period
+    ACK <= '1';
+    wait until rising_edge(CLK);
+    ACK <= '0';
+  
+    -- and so on...
+  end process;
+ related verilog ada pascal vhdl-ams property-specification-language isbn
+ summary VHDL (VHSIC Hardware Description Language) is a hardware description language used in electronic design automation to describe digital and mixed-signal systems such as field-programmable gate arrays and integrated circuits. VHDL can also be used as a general purpose parallel programming language.
+ pageId 43410
+ dailyPageViews 731
+ created 2002
+ backlinksCount 548
+ revisionCount 893
+ appeared 1980
+
+githubLanguage VHDL
+ fileExtensions vhdl vhd vhf vhi vho vhs vht vhw
+ trendingProjects
+  author name avatar url language languageColor stars forks currentPeriodStars description
+  ghdl ghdl https://github.com/ghdl.png https://github.com/ghdl/ghdl VHDL #adb2cb 777 147 24 "VHDL 2008/93/87 simulator"
+ trendingProjectsCount 2
+
+helloWorldCollection VHSIC Hardware Description Language
+ --Hello World in VHDL
+ 
+ ENTITY helloworld IS
+ END helloworld;
+ 
+ ARCHITECTURE hw OF helloworld IS
+ 
+ BEGIN
+ 
+ ASSERT FALSE
+ REPORT "HELLO, WORLD!"
+ SEVERITY NOTE;
+ 
+ END hw;
+ 
+
+linguistGrammarRepo https://github.com/textmate/vhdl.tmbundle
+ firstCommit 2008
+ lastCommit 2017
+ committerCount 2
+ commitCount 23
+ sampleCount 1
+ example
+  -- VHDL example file
+  
+  library ieee;
+  use ieee.std_logic_1164.all;
+  
+  entity inverter is
+  	port(a : in std_logic;
+  	     b : out std_logic);
+  end entity;
+  
+  architecture rtl of inverter is
+  begin
+  	b <= not a;
+  end architecture;
+  
+
+standsFor VHSIC Hardware Description Language
+status active
+country US
+fileType text
+
+tiobe VHDL
+ currentRank 44
+
+hopl 1188
+
+subreddit VHDL
+ memberCount
+  2017 354
+
+codeMirror vhdl
+
+rosettaCode VHDL
+
+antlr https://github.com/antlr/grammars-v4/tree/master/vhdl

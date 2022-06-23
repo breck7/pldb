@@ -1,4 +1,40 @@
+title network embedded systems C
 appeared 2002
 type pl
-github https://github.com/tinyos/nesc
-wikipedia NesC
+
+patterns
+ hasCentralPackageRepository? false
+
+wikipedia https://en.wikipedia.org/wiki/NesC
+ related c
+ summary nesC (pronounced "NES-see") is a component-based, event-driven programming language used to build applications for the TinyOS platform. TinyOS is an operating environment designed to run on embedded devices used in distributed wireless sensor networks. nesC is built as an extension to the C programming language with components "wired" together to run applications on TinyOS. The name nesC is an abbreviation of "network embedded systems C".
+ pageId 1000634
+ created 2004
+ backlinksCount 92
+ revisionCount 52
+ dailyPageViews 37
+
+githubLanguage nesC
+ fileExtensions nc
+ trendingProjectsCount 0
+
+githubRepo https://github.com/tinyos/nesc
+ firstCommit 2002
+ stars 84
+ forks 42
+ subscribers 28
+ created 2012
+ updated 2018
+ description Master nesc repository
+ issues 10
+
+linguistGrammarRepo https://github.com/cdwilson/nesC.tmbundle
+ firstCommit 2011
+ lastCommit 2016
+ committerCount 7
+ commitCount 24
+
+standsFor network embedded systems C
+status active
+fileType text
+isOpenSource true

@@ -1,4 +1,36 @@
+title Not Quite C
 appeared 2017
 type pl
-github https://github.com/nlsandler/nqcc
-wikipedia Not_Quite_C
+
+patterns
+ hasCentralPackageRepository? false
+
+wikipedia https://en.wikipedia.org/wiki/Not_Quite_C
+ example
+  task main ()    // Main program
+   {
+       SetPower(OUT_A, OUT_FULL);    // Turn on motor A at 100% power.
+       OnFor(OUT_A, 200);            // Let the motor run for two seconds, and then turn it off.
+   }
+ related c linux
+ summary Not Quite C (NQC) is a programming language, application programming interface (API), and native bytecode compiler toolkit for the Lego Mindstorms, Cybermaster and LEGO Spybotics systems. It is based primarily on the C language but has specific limitations, such as the maximum number of subroutines and variables allowed, which differ depending on the version of firmware the RCX has. The language was invented by David Baum. He has released two books on the subject.
+ pageId 969174
+ created 2004
+ backlinksCount 9
+ revisionCount 60
+ dailyPageViews 11
+
+githubRepo https://github.com/nlsandler/nqcc
+ firstCommit 2017
+ stars 64
+ forks 5
+ subscribers 9
+ created 2017
+ updated 2018
+ description A compiler for a tiny (but growing!) subset of C, written in OCaml.
+ issues 2
+
+standsFor Not Quite C
+status active
+fileType text
+isOpenSource true

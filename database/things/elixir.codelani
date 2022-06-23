@@ -1,5 +1,121 @@
+title Elixir
 appeared 2011
 type pl
+
+patterns
+ hasCentralPackageRepository? false
+ hasComments? true
+  # this is a comment
+ hasBlockComments? false
+ hasImports? true
+  # Alias the module so it can be called as Bar instead of Foo.Bar
+  alias Foo.Bar, as: Bar
+  
+  # Require the module in order to use its macros
+  require Foo
+  
+  # Import functions from Foo so they can be called without the `Foo.` prefix
+  import Foo
+  
+  # Invokes the custom code defined in Foo as an extension point
+  use Foo
+ hasSemanticIndentation? true
+
+wikipedia https://en.wikipedia.org/wiki/Elixir_(programming_language)
+ example
+  task = Task.async fn -> perform_complex_action() end
+  other_time_consuming_action()
+  Task.await task
+ related erlang ruby clojure lfe unicode utf-8
+ summary Elixir is a functional, concurrent, general-purpose programming language that runs on the Erlang virtual machine (BEAM). Elixir builds on top of Erlang and shares the same abstractions for building distributed, fault-tolerant applications. Elixir also provides a productive tooling and an extensible design. The latter is supported by compile-time metaprogramming with macros and polymorphism via protocols. Elixir is used by companies such as E-MetroTel, Pinterest and Moz. Elixir is also used for web development, by companies such as Bleacher Report, Discord, and Inverse, and for building embedded systems. The community organizes yearly events in United States, Europe and Japan as well as minor local events and conferences.
+ pageId 38202780
+ dailyPageViews 413
+ created 2013
+ backlinksCount 283
+ revisionCount 197
+ appeared 2011
+ fileExtensions ex exs
+
+githubLanguage Elixir
+ fileExtensions ex exs
+ trendingProjects
+  author name avatar url language languageColor stars forks currentPeriodStars description
+  phoenixframework phoenix_live_view https://github.com/phoenixframework.png https://github.com/phoenixframework/phoenix_live_view Elixir #6e4a7e 2197 180 90 "Rich, real-time user experiences with server-rendered HTML"
+  elixir-lang elixir https://github.com/elixir-lang.png https://github.com/elixir-lang/elixir Elixir #6e4a7e 15832 2267 174 "Elixir is a dynamic, functional language designed for building scalable and maintainable applications"
+  elixir-ecto ecto https://github.com/elixir-ecto.png https://github.com/elixir-ecto/ecto Elixir #6e4a7e 4322 1019 44 "A database wrapper and language integrated query for Elixir"
+  phoenixframework phoenix https://github.com/phoenixframework.png https://github.com/phoenixframework/phoenix Elixir #6e4a7e 14194 1801 136 "Productive. Reliable. Fast."
+  absinthe-graphql absinthe https://github.com/absinthe-graphql.png https://github.com/absinthe-graphql/absinthe Elixir #6e4a7e 2846 280 49 "The GraphQL toolkit for Elixir"
+  derekkraan horde https://github.com/derekkraan.png https://github.com/derekkraan/horde Elixir #6e4a7e 569 44 32 "Horde is a distributed Supervisor and Registry backed by DeltaCrdt"
+  adriankumpf teslamate https://github.com/adriankumpf.png https://github.com/adriankumpf/teslamate Elixir #6e4a7e 136 15 44 "A self-hosted data logger for your Tesla 🚘"
+  poanetwork blockscout https://github.com/poanetwork.png https://github.com/poanetwork/blockscout Elixir #6e4a7e 639 229 30 "Blockchain explorer for Ethereum based network and a tool for inspecting and analyzing EVM based blockchains."
+  chrismccord phoenix_live_view_example https://github.com/chrismccord.png https://github.com/chrismccord/phoenix_live_view_example Elixir #6e4a7e 273 91 10
+ trendingProjectsCount 10
+
+githubRepo https://github.com/elixir-lang/elixir
+ stars 11726
+ forks 1687
+ subscribers 689
+ created 2011
+ updated 2017
+ firstCommit 2011
+ description Elixir is a dynamic, functional language designed for building scalable and maintainable applications
+ issues 28
+
+helloWorldCollection Elixir
+ # Hello world in Elixir
+ 
+ defmodule HelloWorld do
+   IO.puts "Hello, World!"
+ end
+
+linguistGrammarRepo https://github.com/elixir-lang/elixir-tmbundle
+ firstCommit 2011
+ lastCommit 2018
+ committerCount 47
+ commitCount 278
+ sampleCount 1
+ example
+  %{"cowboy": {:hex, :cowboy, "1.0.0"},
+    "cowlib": {:hex, :cowlib, "1.0.1"},
+    "hackney": {:hex, :hackney, "0.14.3"},
+    "hound": {:hex, :hound, "0.6.0"},
+    "httpoison": {:hex, :httpoison, "0.5.0"},
+    "idna": {:hex, :idna, "1.0.1"},
+    "phoenix": {:hex, :phoenix, "0.10.0"},
+    "plug": {:hex, :plug, "0.11.1"},
+    "poison": {:hex, :poison, "1.3.1"},
+    "ranch": {:hex, :ranch, "1.0.0"}}
+  
+
 website https://elixir-lang.org
-github https://github.com/elixir-lang/elixir
-wikipedia Elixir_(programming_language)
+status active
+
+tryItOnline elixir
+
+twitter elixirlang
+
+fileExtensions ex exs
+fileType text
+isOpenSource true
+
+tiobe Elixir
+
+meetup elixir
+ memberCount 44835
+ groupCount 211
+
+projectEuler Elixir
+ memberCount
+  2019 129
+  2022 173
+
+quineRelay Elixir
+
+ubuntuPackage elixir
+
+rosettaCode Elixir
+
+corporateDevelopers plataformatec
+writtenIn elixir
+indeedJobs elixir developer
+ 2017 214

@@ -1,4 +1,34 @@
+title Epigram
 appeared 2004
 type pl
-wikipedia Epigram_(programming_language)
+
+patterns
+ hasCentralPackageRepository? false
+ hasDependentTypes? true
+
+wikipedia https://en.wikipedia.org/wiki/Epigram_(programming_language)
+ example
+  plus x y <= rec x {
+    plus x y <= case x {
+      plus zero y => y
+      plus (suc x) y => suc (plus x y)
+    }
+  }
+ related linux agda idris coq haskell dependent-ml
+ summary Epigram is a functional programming language with dependent types. Epigram also refers to the IDE usually packaged with the language. Epigram's type system is strong enough to express program specifications. The goal is to support a smooth transition from ordinary programming to integrated programs and proofs whose correctness can be checked and certified by the compiler. Epigram exploits the propositions as types principle, and is based on intuitionistic type theory. The Epigram prototype was implemented by Conor McBride based on joint work with James McKinna. Its development is continued by the Epigram group in Nottingham, Durham, St Andrews and Royal Holloway in the UK. The current experimental implementation of the Epigram system is freely available together with a user manual, a tutorial and some background material. The system has been used under Linux, Windows and Mac OS X. It is currently unmaintained, and version 2, which was intended to implement Observational Type Theory, was never officially released, however there exists a GitHub mirror, last updated in 2012. The design of Epigram and Epigram 2 have inspired the development of other systems such as Agda, Idris and Coq.
+ pageId 1933143
+ created 2005
+ backlinksCount 31
+ revisionCount 87
+ dailyPageViews 23
+ appeared 2004
+
 reference http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.115.9718&rep=rep1&type=pdf
+status historical
+country GB
+fileType text
+isOpenSource true
+
+hopl 8173
+
+rosettaCode Epigram

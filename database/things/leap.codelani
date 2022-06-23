@@ -1,5 +1,25 @@
+title LEAP
 appeared 1969
 type pl
-wikipedia LEAP_(programming_language)
-reference http://www.dtic.mil/dtic/tr/fulltext/u2/675037.pdf
+
+patterns
+ hasCentralPackageRepository? false
+
 description An ALGOL-based associative language. A high level programming language for large, complex associative structures has been designed and implemented. The underlying data structure has been implemented using a hash-coding technique. The discussion includes a comparison with other work and examples of applications of the language.
+
+wikipedia https://en.wikipedia.org/wiki/LEAP_(programming_language)
+ related algol-60
+ summary LEAP is an extension to the ALGOL 60 programming language which provides an associative memory of triples. The three items in a triple denote the association that an Attribute of an Object has a specific Value.  LEAP was created by Jerome Feldman (University of California Berkeley) and Paul Rovner (MIT Lincoln Lab) in 1967.  LEAP was also implemented in SAIL.
+ pageId 911672
+ created 2004
+ backlinksCount 6
+ revisionCount 17
+ dailyPageViews 2
+ appeared 1967
+
+reference http://www.dtic.mil/dtic/tr/fulltext/u2/675037.pdf
+status historical
+country US
+fileType text
+
+hopl 427

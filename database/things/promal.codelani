@@ -1,3 +1,50 @@
+title PROMAL
 appeared 1986
 type pl
-wikipedia PROMAL
+
+patterns
+ hasCentralPackageRepository? false
+ hasSemanticIndentation? true
+
+wikipedia https://en.wikipedia.org/wiki/PROMAL
+ example
+  PROGRAM SIEVE
+     ; Sieve of Eratosthenes Benchmark
+     ; test (BYTE magazine)
+     ; 10 iterations, 1800 element array.
+   INCLUDE LIBRARY
+   CON SIZE=1800
+   WORD I
+   WORD J
+   WORD PRIME
+   WORD K
+   WORD COUNT
+   BYTE FLAGS[SIZE]
+   
+   BEGIN
+   OUTPUT "10 ITERATIONS"
+   FOR J= 1 TO 10
+     COUNT=0
+     FILL FLAGS, SIZE, TRUE
+     FOR I= 0 TO SIZE
+       IF FLAGS[I]
+         PRIME=I+I+3
+         K=I+PRIME
+         WHILE K <= SIZE
+           FLAGS[K]=FALSE
+           K=K+PRIME
+         COUNT=COUNT+1
+   OUTPUT "#C#I PRIMES", COUNT
+   END
+ related abc python
+ summary PROMAL (PROgrammer's Microapplication Language) is a structured programming language from Systems Management Associates for MS-DOS, Commodore 64, and Apple II. PROMAL features simple syntax, no line numbers, long variable names, functions and procedures with argument passing, real number type, arrays, strings, pointer, and a built-in I/O library. Like ABC and Python, indentation is part of the language syntax. The language uses a single-pass compiler to generate byte code that is interpreted when the program is run. Since the memory is very limited on these early home computers, the compiler can compile to/from disk and memory. The software package for C64 includes a full-screen editor and command shell. See also [Computer Language, Mar 1986, pp. 128–134].
+ created 2004
+ backlinksCount 11
+ pageId 1064169
+ revisionCount 38
+ dailyPageViews 7
+ appeared 1984
+
+status historical
+
+hopl 1261

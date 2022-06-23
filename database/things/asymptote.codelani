@@ -1,3 +1,47 @@
+title Asymptote vector graphics language
 appeared 2004
 type application
-wikipedia Asymptote_(vector_graphics_language)
+
+patterns
+ hasCentralPackageRepository? false
+ hasComments? true
+
+wikipedia https://en.wikipedia.org/wiki/Asymptote_(vector_graphics_language)
+ example
+  import graph;
+  import settings;
+  outformat="pdf";
+  
+  size(300,300);
+  
+  // Function.
+  real[] x1 = {-1.5,0};
+  real[] y1 = {0,0};
+  real[] x2 = {0,1.5};
+  real[] y2 = {1,1};
+  draw(graph(x1,y1),red+2);
+  draw(graph(x2,y2),red+2);
+  
+  draw((0,0)--(0,1),red+1.5+linetype("4 4"));
+  fill( circle((0,1),0.035), red);
+  filldraw( circle((0,0),0.03), white, red+1.5);
+  
+  // Axes.
+  xaxis( Label("$x$"), Ticks(new real[]{-1,-0.5,0.5,1}), Arrow);
+  yaxis( Label("$y$"), Ticks(new real[]{0.5,1}), Arrow, ymin=-0.18, ymax=1.25);
+  // Origin.
+  labelx("$O$",0,SW);
+ related unix latex postscript pdf svg tex python
+ summary Asymptote is a descriptive vector graphics language — developed by Andy Hammerlindl, John C. Bowman (University of Alberta), and Tom Prince — which provides a natural coordinate-based framework for technical drawing. Asymptote runs on all major platforms (Unix, Mac OS, Microsoft Windows). It is free software, available under the terms of the GNU Lesser General Public License (LGPL).
+ pageId 3469522
+ dailyPageViews 37
+ created 2005
+ backlinksCount 54
+ revisionCount 136
+ appeared 2004
+
+status historical
+fileType text
+isOpenSource true
+
+rosettaCode Asymptote

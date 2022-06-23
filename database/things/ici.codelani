@@ -1,3 +1,22 @@
+title Interactive C Interpreter
 appeared 1980
 type pl
-wikipedia ICI_(programming_language)
+
+patterns
+ hasCentralPackageRepository? false
+
+wikipedia https://en.wikipedia.org/wiki/ICI_(programming_language)
+ related c perl regex tcl
+ summary ICI is a general purpose interpreted, computer programming language originally developed by Tim Long in the late 1980s. It has dynamic typing and flexible data types, with the basic syntax, flow control constructs and operators of C. It can be considered broadly similar to Perl, with which it is roughly contemporary. Like Perl, it also has tight integration with regular expressions. ICI is not an acronym.Primitive data types in ICI include integers, reals, strings, files, safe pointers, and regular expressions. Aggregate data types are arrays, sets, and associative tables. Sets can be heterogeneous, nested, and support the usual set operations: union, intersection, etc. The language supports subroutines and nested modules. All variables are lexically scoped at the subroutine or module level, but unlike most structured languages, ICI allows the current scope to be adjusted (Tcl also allows this, for example). ICI is not object-based, many object programming features can be emulated in the language by using a data structure inheritance feature called super-structures. To support application development, ICI has C-like file I/O and system interface support, as well as a high-level event trigger facility. The language also has a modest standard library of built-in functions. It is also notable for its generous license, which permits use for any purpose, including commercial and alteration and resale.
+ pageId 771935
+ created 2004
+ backlinksCount 13
+ revisionCount 50
+ dailyPageViews 5
+ appeared 1980
+
+standsFor Interactive C Interpreter
+status historical
+fileType text
+
+hopl 2104

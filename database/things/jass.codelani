@@ -1,3 +1,24 @@
+title Just Another Scripting Syntax
 appeared 2009
 type pl
-wikipedia JASS
+
+patterns
+ hasCentralPackageRepository? false
+
+wikipedia https://en.wikipedia.org/wiki/JASS
+ example
+  function Trig_JASS_testPreloadExploit_Actions takes nothing returns nothing
+   call PreloadGenEnd(".\\redist\\miles\\Mp3enc.asi")
+  endfunction
+ related java
+ summary JASS and JASS2 (sometimes said to stand for Just Another Scripting Syntax) is a scripting language provided with an event-driven API created by Blizzard Entertainment. It is used extensively by their games Warcraft III (JASS2) and StarCraft (JASS) for scripting events in the game world. Map creators can use it in the Warcraft III World Editor and the Starcraft Editor to create scripts for triggers and AI (artificial intelligence) in custom maps and campaigns. Blizzard Entertainment has replaced JASS with Galaxy in Starcraft II.
+ pageId 3115483
+ created 2005
+ backlinksCount 89
+ revisionCount 241
+ dailyPageViews 30
+ appeared 2009
+
+standsFor Just Another Scripting Syntax
+status historical
+fileType text

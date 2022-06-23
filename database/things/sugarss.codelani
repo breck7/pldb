@@ -1,3 +1,42 @@
+title SugarSS
 appeared 2016
 type textMarkup
-github https://github.com/postcss/sugarss
+
+patterns
+ hasCentralPackageRepository? false
+
+githubLanguage SugarSS
+ fileExtensions sss
+ trendingProjectsCount 0
+
+githubRepo https://github.com/postcss/sugarss
+ firstCommit 2016
+ stars 503
+ forks 28
+ subscribers 25
+ created 2016
+ updated 2018
+ description Indent-based CSS syntax for PostCSS
+ issues 0
+
+linguistGrammarRepo https://github.com/hudochenkov/Syntax-highlighting-for-PostCSS
+ firstCommit 2013
+ lastCommit 2017
+ committerCount 10
+ commitCount 231
+ sampleCount 1
+ example
+  @define-mixin size $size
+    width: $size
+  
+  $big: 100px
+  
+  // Main block
+  .block
+    &_logo
+      background: inline("./logo.png")
+      @mixin size $big
+
+status active
+fileType text
+isOpenSource true

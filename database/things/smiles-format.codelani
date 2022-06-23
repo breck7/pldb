@@ -1,6 +1,16 @@
+title Simplified molecular-input line-entry system
 appeared 1988
-type textData
-wikipedia Simplified_molecular-input_line-entry_system
+type textDataFormat
+
 example
  CC(=O)NCCC1=CNc2c1cc(OC)cc2
  CC(=O)NCCc1c[nH]c2ccc(OC)cc12
+
+wikipedia https://en.wikipedia.org/wiki/Simplified_molecular-input_line-entry_system
+ summary The simplified molecular-input line-entry system (SMILES) is a specification in the form of a line notation for describing the structure of chemical species using short ASCII strings. SMILES strings can be imported by most molecule editors for conversion back into two-dimensional drawings or three-dimensional models of the molecules. The original SMILES specification was initiated in the 1980s. It has since been modified and extended. In 2007, an open standard called OpenSMILES was developed in the open-source chemistry community.  Other linear notations include the Wiswesser line notation (WLN), ROSDAL, and SYBYL Line Notation (SLN).
+ backlinksCount 17590
+ pageId 28569
+ dailyPageViews 413
+ appeared 1980
+
+fileExtensions smi

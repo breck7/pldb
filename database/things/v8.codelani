@@ -1,4 +1,21 @@
+title v8
 appeared 2008
 type vm
+
+patterns
+ hasCentralPackageRepository? false
+
+githubRepo https://github.com/v8/v8
+ firstCommit 2008
+ stars 10945
+ forks 2200
+ subscribers 886
+ created 2014
+ updated 2018
+ description The official mirror of the V8 Git repository
+ issues 1
+
 website https://chromium.googlesource.com/v8/v8.git
-github https://github.com/v8/v8
+status active
+fileType text
+isOpenSource true

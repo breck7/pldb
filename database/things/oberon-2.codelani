@@ -1,4 +1,72 @@
+title Oberon-2
 appeared 1991
 type pl
-wikipedia Oberon-2
+
+patterns
+ hasCentralPackageRepository? false
+ hasComments? true
+
+wikipedia https://en.wikipedia.org/wiki/Oberon-2
+ example
+  Module        = MODULE ident ";" [ImportList] DeclSeq [BEGIN StatementSeq] END ident ".".
+  ImportList    = IMPORT [ident ":="] ident {"," [ident ":="] ident} ";".
+  DeclSeq       = { CONST {ConstDecl ";" } | TYPE {TypeDecl ";"} | VAR {VarDecl ";"}} {ProcDecl ";" | ForwardDecl ";"}.
+  ConstDecl     = IdentDef "=" ConstExpr.
+  TypeDecl      = IdentDef "=" Type.
+  VarDecl       = IdentList ":" Type.
+  ProcDecl      = PROCEDURE [Receiver] IdentDef [FormalPars] ";" DeclSeq [BEGIN StatementSeq] END ident.
+  ForwardDecl   = PROCEDURE "^" [Receiver] IdentDef [FormalPars].
+  FormalPars    = "(" [FPSection {";" FPSection}] ")" [":" Qualident].
+  FPSection     = [VAR] ident {"," ident} ":" Type.
+  Receiver      = "(" [VAR] ident ":" ident ")".
+  Type          = Qualident
+                | ARRAY [ConstExpr {"," ConstExpr}] OF Type
+                | RECORD ["("Qualident")"] FieldList {";" FieldList} END
+                | POINTER TO Type
+                | PROCEDURE [FormalPars].
+  FieldList     = [IdentList ":" Type].
+  StatementSeq  = Statement {";" Statement}.
+  Statement     = [ Designator ":=" Expr
+                | Designator ["(" [ExprList] ")"]
+                | IF Expr THEN StatementSeq {ELSIF Expr THEN StatementSeq} [ELSE StatementSeq] END
+                | CASE Expr OF Case {"|" Case} [ELSE StatementSeq] END
+                | WHILE Expr DO StatementSeq END
+                | REPEAT StatementSeq UNTIL Expr
+                | FOR ident ":=" Expr TO Expr [BY ConstExpr] DO StatementSeq END
+                | LOOP StatementSeq END
+                | WITH Guard DO StatementSeq {"|" Guard DO StatementSeq} [ELSE StatementSeq] END
+                | EXIT
+                | RETURN [Expr]
+        ].	
+  Case          = [CaseLabels {"," CaseLabels} ":" StatementSeq].
+  CaseLabels    = ConstExpr [".." ConstExpr].
+  Guard         = Qualident ":" Qualident.
+  ConstExpr     = Expr.
+  Expr          = SimpleExpr [Relation SimpleExpr].
+  SimpleExpr    = ["+" | "-"] Term {AddOp Term}.
+  Term          = Factor {MulOp Factor}.
+  Factor        = Designator ["(" [ExprList] ")"] | number | character | string | NIL | Set | "(" Expr ")" | " ~ " Factor.
+  Set           = "{" [Element {"," Element}] "}".
+  Element       = Expr [".." Expr].
+  Relation      = "=" | "#" | "<" | "<=" | ">" | ">=" | IN | IS.
+  AddOp         = "+" | "-" | OR.
+  MulOp         = "*" | "/" | DIV | MOD | "&".
+  Designator    = Qualident {"." ident | "[" ExprList "]" | " ^ " | "(" Qualident ")"}.
+  ExprList      = Expr {"," Expr}.
+  IdentList     = IdentDef {"," IdentDef}.
+  Qualident     = [ident "."] ident.
+  IdentDef      = ident [" * " | " - "].
+ related oberon modula-2 pascal go object-oberon smalltalk python java algol yacc javascript powerpc
+ summary Oberon-2 is an extension of the original Oberon programming language that adds limited reflection and object-oriented programming facilities, open arrays as pointer base types, read-only field export and reintroduces the FOR loop from Modula-2. It was developed in 1991 at ETH Zurich by Niklaus Wirth and Hanspeter Mössenböck, who is now at Institut für Systemsoftware (SSW) of the University of Linz, Austria.  Oberon-2 is a superset of Oberon, and is fully compatible with it.  Oberon-2 was a redesign of Object Oberon. Oberon-2 inherited limited reflection and single inheritance ("type extension") without interfaces or mixins from Oberon, but added efficient virtual methods ("type bound procedures"). Method calls were resolved at run-time using C++-style virtual method tables. Compared to fully object-oriented programming languages like Smalltalk, in Oberon-2 basic types are not objects, classes are not objects, many operations are not methods, there is no message passing (to a certain extent it can be emulated by reflection and through message extension, as demonstrated in ETH Oberon), and polymorphism is limited to subclasses of a common class (no duck typing like in  Python, and it's not possible to define interfaces like in Java). Oberon-2 does not support encapsulation at object/class level, but modules can be used for this purpose. Reflection in Oberon-2 does not use meta-objects, but simply reads from type descriptors compiled into the executable binaries, and exposed in the modules that define the types and/or procedures.  If the format of these structures are exposed at the language level (as is the case for ETH Oberon, for example), reflection could be implemented at the library level.  It could therefore be implemented almost entirely at library level, without changing the language code.  Indeed, ETH Oberon makes use of language-level and library-level reflection capabilities extensively. Oberon-2 provides built-in run-time support for garbage collection similar to Java and performs bounds and array index checks, etc. that eliminate the potential stack and array bounds overwriting problems and manual memory management issues inherent in C/C++.  Separate compilation using symbol files and name-spaces via the module architecture ensure quick rebuilds since only modules with changed interfaces need to be recompiled. The language Component Pascal  is a refinement (a superset) of Oberon-2.
+ backlinksCount 64
+ pageId 449019
+ dailyPageViews 29
+ created 2004
+ appeared 1991
+
 reference https://semanticscholar.org/paper/0279ae521a3f0c16e53259cf62f83739931fbc50
+status historical
+
+hopl 1647
+
+rosettaCode Oberon-2

@@ -1,5 +1,7 @@
+title Formatted Table
 appeared 1990
 type metaLanguage
+
 example
  Weekly SST data starts week centered on 3Jan1990
  
@@ -9,4 +11,40 @@ example
  10JAN1990     23.4-0.8     25.2-0.3     26.6 0.1     28.6 0.3
  17JAN1990     24.2-0.3     25.3-0.3     26.5-0.1     28.6 0.3
  24JAN1990     24.4-0.5     25.5-0.4     26.5-0.1     28.4 0.2
+
+patterns
+ hasCentralPackageRepository? false
+
 description A simple plain text format for storing tabular data.
+
+githubLanguage Formatted
+ fileExtensions for eam.fs
+ trendingProjectsCount 0
+
+example
+ ACCEPTABLE LEFT PRIMERS
+                                   1-based     #                self   self hair-  qual-
+    # sequence                       start ln  N   GC%     Tm any_th end_th   pin   lity
+    0 tgctagctaggcgatgctag             411 20  0 55.00 60.028 23.16 23.16 38.59  0.028
+    1 actgatacgcgatgctagct             476 20  0 50.00 59.957 17.69  1.35  0.00  0.043
+    2 gatcgatgctagctaggcga             405 20  0 55.00 60.100 16.30 16.30  0.00  0.100
+    3 tcgatcgatgctagctaggc             403 20  0 55.00 60.100 18.63  8.45  0.00  0.100
+    4 tagctgatcgatcgtagcgg             565 20  0 55.00 60.101 25.02 17.36  0.00  0.101
+    5 gctgactgatcgatcgatgc             113 20  0 55.00 59.826 24.08 17.09 35.21  0.174
+    6 tatcatctctgcgcgatcga             361 20  0 50.00 59.747 22.07  1.72 38.48  0.253
+    7 agctaggcgatgctagctag             415 20  0 55.00 59.742 17.46 17.46 41.54  0.258
+    8 ctagctaggcgatgctagct             413 20  0 55.00 59.742 18.68 17.35 43.53  0.258
+    9 ggcgatctagctagctgact             583 20  0 55.00 59.671 17.44  7.44 37.58  0.329
+   10 tcgatgctagctaggcgatg             407 20  0 55.00 60.382 14.03  0.00  0.00  0.382
+   11 gctgatcgatcgatgctagc             398 20  0 55.00 59.618 25.97 24.79 35.21  0.382
+   12 gctagctgatcgatcgatgc             394 20  0 55.00 59.618 24.08 21.09 35.21  0.382
+   13 atcatctctgcgcgatcgat             362 20  0 50.00 60.382 22.07  5.02 38.48  0.382
+   14 gactgatacgcgatgctagc             475 20  0 55.00 59.551  8.61  8.61  0.00  0.449
+   15 atcgatgctagctaggcgat             406 20  0 50.00 59.452 18.43 18.43  0.00  0.548
+   16 gctagctgactgatacgcga             468 20  0 55.00 60.589 16.29  0.00  0.00  0.589
+   17 agctagctgactgatacgcg             467 20  0 55.00 60.590 17.99  3.89  0.00  0.590
+   18 atgctagctaggcgatgcta             410 20  0 50.00 59.375 10.59  8.91  0.00  0.625
+   19 ctatcatctctgcgcgatcg             360 20  0 55.00 59.347 12.19 12.19 39.07  0.653
+   20 gatgctagctaggcgatgct             409 20  0 55.00 60.668  7.01  7.53  0.00
+status active
+fileType text

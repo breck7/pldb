@@ -1,7 +1,8 @@
+title elfe
 appeared 2003
 type pl
 creators Christophe de Dinechin
-github https://github.com/c3d/elfe
+
 example
  invoke "sensor.corp.net",
      last_temperature := temperature
@@ -15,4 +16,18 @@ example
          last_temperature := T
  temperature_changed new_temp, last_temp ->
      writeln "Temperature changed from ", last_temp, " to ", new_temp
+
+patterns
+ hasSemanticIndentation? true
+
 description ELFE is a very simple and small programming language specifcally designed for everyday programming, notably for the Internet of Things.
+
+githubRepo https://github.com/c3d/elfe
+ firstCommit 2003
+ stars 87
+ forks 8
+ subscribers 21
+ created 2015
+ updated 2020
+ description Extensible Language for Everyday
+ issues 8

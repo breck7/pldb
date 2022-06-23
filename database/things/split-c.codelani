@@ -1,3 +1,18 @@
+title Split-C
 appeared 1995
 type pl
-wikipedia Split-C
+
+patterns
+ hasCentralPackageRepository? false
+
+wikipedia https://en.wikipedia.org/wiki/Split-C
+ related c cilk
+ summary Split-C is a parallel extension of the C programming language. The Split-C project website describes Split-C as:  a parallel extension of the C programming language that supports efficient access to a global address space on current distributed memory multiprocessors. It retains the "small language" character of C and supports careful engineering and optimization of programs by providing a simple, predictable cost model. Development of Split-C appears to be at a standstill since 1996.  Split-C is similar to Cilk.
+ created 2006
+ backlinksCount 12
+ pageId 5472261
+ revisionCount 13
+ dailyPageViews 11
+ appeared 1996
+
+status historical

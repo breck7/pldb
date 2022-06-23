@@ -1,4 +1,59 @@
+title Jasmin
 appeared 1997
 type pl
-website http://jasmin.sourceforge.net/
+
+patterns
+ hasCentralPackageRepository? false
+
 description Jasmin is an assembler for the Java Virtual Machine. It takes ASCII descriptions of Java classes, written in a simple assembler-like syntax using the Java Virtual Machine instruction set. It converts them into binary Java class files, suitable for loading by a Java runtime system.
+
+githubLanguage Jasmin
+ fileExtensions j
+ trendingProjectsCount 0
+
+linguistGrammarRepo https://github.com/atmarksharp/jasmin-sublime
+ firstCommit 2014
+ lastCommit 2014
+ committerCount 3
+ commitCount 12
+ sampleCount 8
+ example
+  .class public op2
+  .super java/lang/Object
+  ;
+  ; standard initializer (calls java.lang.Object's initializer)
+  ;
+  .method public <init>()V
+  aload_0
+  invokenonvirtual java/lang/Object/<init>()V
+  return
+  .end method
+  
+  .method public static main([Ljava/lang/String;)V
+  
+  .limit locals 1
+  .limit stack 5
+  BeginGlobal:
+  	.line 2
+  		getstatic		java/lang/System/out Ljava/io/PrintStream;
+  		ldc		0x1
+  		ldc		0x0
+  		iand
+  		invokevirtual		java/io/PrintStream/println(Z)V
+  
+  	.line 3
+  		getstatic		java/lang/System/out Ljava/io/PrintStream;
+  		ldc		0x1
+  		ldc		0x0
+  		ior
+  		invokevirtual		java/io/PrintStream/println(Z)V
+  
+  EndGlobal:
+  return
+  .end method
+  
+  
+
+website http://jasmin.sourceforge.net/
+status active
+fileType text

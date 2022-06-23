@@ -1,3 +1,85 @@
+title GCC Machine Description
 appeared 2001
 type pl
+
+patterns
+ hasCentralPackageRepository? false
+
+githubLanguage GCC Machine Description
+ fileExtensions md
+ trendingProjectsCount 0
+
+linguistGrammarRepo https://github.com/textmate/lisp.tmbundle
+ firstCommit 2005
+ lastCommit 2018
+ committerCount 6
+ commitCount 40
+ sampleCount 1
+ example
+  ;;- Machine description for the PDP-10.
+  ;;  Copyright (C) 2001, 2002 Lars Brinkhoff.
+  ;;  Contributed by Lars Brinkhoff <lars@nocrew.org>, funded by XKL, LLC.
+  
+  
+  ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+  ;; Index
+  
+  ;;   Front Page
+  ;;   Index
+  ;;   Constraints for Immediate Operands
+  ;;   To-do List
+  ;;   Instruction Wish-List
+  ;;   Attributes
+  ;;	length, skip, reorg_type
+  ;;   Unspec Usage
+  ;;	UNSPEC_ADJSP, UNSPEC_ADJBP, UNSPEC_ADDRESS, UNSPEC_FFO, UNSPEC_SUBBP,
+  ;;	VUNSPEC_BLT, VUNSPEC_FSC, VUNSPEC_XBLT, VUNSPEC_MOVSLJ, VUNSPEC_MOVST
+  ;;   Constants
+  ;;      RIGHT_HALF, LEFT_HALF, SIGNBIT, SP_REGNUM
+  ;;   Optimizations
+  ;;   Data Movement
+  ;;	LDB, ILDB, (LDBI), LDBE, ILDBE, (LDBEI), DPB, IDPB, (DPBI),
+  ;;	HRR, HRL, HLR, HLL, HRRM, HRLM, HLRM, HLLM,
+  ;;	HRRZ, HRLZ, HLRZ, HLLZ, HRRE, HRLE, HLRE, HLLE,
+  ;;	SETZM, SETOM,
+  ;;	MOVE, MOVEI, MOVSI, HRLOI, HRROI, MOVEM,
+  ;;	MOVS, EXCH, SETZB,
+  ;;	DMOVE, DMOVEM,
+  ;;	BLT, XBLT, (MOVSLJ), (MOVST), (CMPS)
+  ;;   Conditional Data Movement
+  ;;	SKIPL, SKIPE, SKIPLE, SKIPGE, SKIPN, SKIPG,
+  ;;	TDZA
+  ;;   Integer Arithmetic
+  ;;	AOS, SOS,
+  ;;	ADD, ADDI, ADDM, ADDB, DADD,
+  ;;	SUB, SUBI, SUBM, SUBB, DSUB,
+  ;;	IMUL, IMULI, IMULM, IMULB, MUL, MULI, MULM, MULB, DMUL,
+  ;;	IDIV, IDIVI, IDIVM, DIV, DIVI, DIVM, DDIV,
+  ;;	UIDIV, UIDIVI, UIDIVM, UIMOD, UIMODI, UIMODM,
+  ;;	MOVN, MOVNM, MOVNS, MOVNI, DMOVN, DMOVNM,
+  ;;	MOVM, MOVMM, MOVMS,
+  ;;	FFS
+  ;;   Integer Conversions
+  ;;	ANDI, HRRZ, SEXT, HRRE, ANDI, HRR
+  ;;   Shifting and Rotating
+  ;;	LSH, LSHC, ASH, ASHC, ROT, ROTC
+  ;;   Logical Operations
+  ;;	AND, ANDI, ANDM, ANDB, TLZ, ANDCMI,
+  ;;	ANDCA, ANDCAI, ANDCAM, ANDCAB, ANDCBI,
+  ;;	ANDCM, ANDCMM, ANDCMB,
+  ;;	XOR, XORI, XORM, XORB, TLC, EQVI,
+  ;;	IOR, IORI, IORM, IORB, TLO, ORCMI,
+  ;;	ANDCB, ANDCBM, ANDCBB,
+  ;;	EQV, EQVM, EQVB,
+  ;;	SETCA, SETCAM, SETCAB,
+  ;;	SETCM, SETCMM, SETCMB,
+  ;;	ORCA, ORCAI, ORCAM, ORCAB, ORCBI,
+  ;;	ORCM, ORCMM, ORCMB,
+  ;;	ORCB, ORCBM, ORCBB
+  ;;   Floating-point Arithmetic
+  ;;	FADR, FADRI, FADRM, FADRB, DFAD, GFAD,
+  ;;	FSBR, FSBRI, FSBRM, FSBRB, DFSB,
+
 reference https://en.wikipedia.org/wiki/Register_transfer_language
+status active
+fileType text

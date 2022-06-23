@@ -1,3 +1,27 @@
+title ASIC programming language
 appeared 1992
 type pl
-wikipedia ASIC_programming_language
+
+patterns
+ hasCentralPackageRepository? false
+
+wikipedia https://en.wikipedia.org/wiki/ASIC_programming_language
+ example
+  REM 10 a=2
+  L10: 
+  	A@ = 2 
+  	
+  	REM 20 b=a^10
+  	2:  Syntax error
+  
+  	REM 30 PRINT b	REM 30 PRINT b	3:  Syntax error
+ related microsoft-macro-assembler basic gw-basic
+ summary ASIC is a programming language, a BASIC dialect and shareware compiler for DOS systems.  Written by Dave Visti of 80/20 Software, it achieved brief popularity in the 1990s as one of the few BASIC compilers legally available for download from BBSes.  However, ASIC understood only a small subset of the BASIC language, with most versions having little or no support for logical operators, control structures, and floating-point arithmetic.  These shortcomings are the reason for the software's tongue-in-cheek motto, "ASIC: It's almost BASIC!"Notably, however, ASIC did feature a rudimentary integrated development environment and an RS-232 communications library for writing terminal and BBS software, as well not requiring line numbers.  The last release of ASIC, version 5.00, was more compatible with GW-BASIC and offered a utility to convert GW-BASIC programs to ASIC syntax. ASIC allows compiling to a DOS EXE file or COM file. The low overhead of the COM file format lets ASIC make one of the smallest compiled executables of the Hello world program, typically 360 bytes.
+ created 2005
+ backlinksCount 94
+ pageId 1459799
+ revisionCount 67
+ dailyPageViews 16
+ appeared 1994
+
+status historical

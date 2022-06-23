@@ -1,6 +1,7 @@
+title QMake
 appeared 2002
 type pl
-wikipedia Qmake
+
 example
  CONFIG += qt debug
  HEADERS += hello.h
@@ -18,4 +19,31 @@ example
  win32:debug {
      CONFIG += console
  }
+
+patterns
+ hasCentralPackageRepository? false
+
+wikipedia https://en.wikipedia.org/wiki/Qmake
+ related linux freebsd makefile qt cmake
+ summary qmake is an utility that automates the generation of makefiles. Makefiles are used by the program make to build executable programs from source code; therefore qmake is a make-makefile tool, or makemake for short. The makefiles that qmake produces are tailored to the particular platform where it is run from based on qmake project files. This way one set of build instructions can be used to create build instructions on different operating systems. qmake supports code generation for the following operating systems: Linux, Apple Mac OS X, Symbian, Microsoft Windows and Microsoft Windows CE. qmake was created by Trolltech (now The Qt Company). It is distributed and integrated with the Qt application framework, and automates the creation of moc (meta object compiler) and rcc (resource compiler) sources, which are used in Qt's meta-object system and in the integration of binary resources (e.g., pictures). The qmake tool helps simplify the build process for development projects across different platforms. It automates the generation of Makefiles so that only a few lines of information are needed to create each Makefile. You can use qmake for any software project, whether it is written with Qt or not.
+ backlinksCount 57
+ pageId 10962771
+ created 2007
+ revisionCount 48
+ dailyPageViews 31
+
+githubLanguage QMake
+ fileExtensions pro pri
+ trendingProjectsCount 0
+
+linguistGrammarRepo https://github.com/textmate/cpp-qt.tmbundle
+ sampleCount 4
+ example
+  #!/usr/bin/qmake
+  message(This is QMake.)
+  
+
 reference http://doc.qt.io/archives/qt-4.8/qmake-tutorial.html
+status active
+fileType text
+isOpenSource true

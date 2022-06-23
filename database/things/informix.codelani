@@ -1,8 +1,30 @@
+title IBM Informix-4GL
 appeared 1985
 type queryLanguage
-wikipedia IBM_Informix-4GL
+
 example
  SELECT UNIQUE city, state, zipcode, sname
  FROM customer, state
  WHERE customer.state = state.code
+
+patterns
+ hasCentralPackageRepository? false
+
 description It includes embedded SQL, a report writer language, a form language, and a limited set of imperative capabilities (functions, if and while statements, and supports arrays etc.). The language is particularly close to a natural language and is easy to learn and use.
+
+wikipedia https://en.wikipedia.org/wiki/IBM_Informix-4GL
+ related java
+ summary Informix-4GL is a 4GL programming language developed by Informix during the mid-1980s.
+ pageId 252830
+ created 2003
+ backlinksCount 17
+ revisionCount 105
+ dailyPageViews 29
+ appeared 1985
+
+status historical
+fileType text
+
+hopl 3472
+
+corporateDevelopers IBM

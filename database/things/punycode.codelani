@@ -1,4 +1,12 @@
+title Punycode
 appeared 2003
 type characterEncoding
-wikipedia Punycode
+
+wikipedia https://en.wikipedia.org/wiki/Punycode
+ summary Punycode is a representation of Unicode with the limited ASCII character subset used for Internet hostnames. Using Punycode, host names containing Unicode characters are transcoded to a subset of ASCII consisting of letters, digits, and hyphens, which is called the Letter-Digit-Hyphen (LDH) subset.  For example, München (German name for Munich) is encoded as Mnchen-3ya. While the Domain Name System (DNS) technically supports arbitrary sequences of octets in domain name labels, the DNS standards recommend the use of the LDH subset of ASCII conventionally used for host names, and require that string comparisons between DNS domain names should be case-insensitive. The Punycode syntax is a method of encoding strings containing Unicode characters, such as  internationalized domain names (IDNA), into the LDH subset of ASCII favored by DNS. It is specified in IETF Request for Comments 3492.
+ backlinksCount 190
+ pageId 380586
+ dailyPageViews 313
+ appeared 2003
+
 reference https://tools.ietf.org/html/rfc3492

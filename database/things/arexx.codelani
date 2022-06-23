@@ -1,3 +1,30 @@
+title ARexx
 appeared 1987
 type pl
-wikipedia ARexx
+
+patterns
+ hasCentralPackageRepository? false
+
+wikipedia https://en.wikipedia.org/wiki/ARexx
+ example
+  /* Alarm.rexx */
+     
+     ARG event
+     
+     IF event = 0 THEN EXIT
+     IF event = 1 THEN SAY "Program has ended unexpectedly"
+     IF event = 2 THEN SAY "Program has finished its job"
+     IF event = 3 THEN SAY "Cannot find data in selected directory"
+ related tex rexx
+ summary ARexx is an implementation of the Rexx language for the Amiga, written in 1987 by William S. Hawes, with a number of Amiga-specific features beyond standard REXX facilities.  Like most REXX implementations, ARexx is an interpreted language. Programs written for ARexx are called "scripts", or "macros"; several programs offer the ability to run ARexx scripts in their main interface as macros. ARexx can easily communicate with third-party software that implements an "ARexx port". Any Amiga application or script can define a set of commands and functions for ARexx to address, thus making the capabilities of the software available to the scripts written in ARexx. ARexx can direct commands and functions to several applications from the same script, thus offering the opportunity to mix and match functions from the different programs. For example, an ARexx script could extract data from a database, insert the data into a spreadsheet to perform calculations on it, then insert tables and charts based on the results into a word processor document.
+ pageId 1858505
+ created 2005
+ backlinksCount 139
+ revisionCount 139
+ dailyPageViews 23
+ appeared 1987
+
+status historical
+fileType text
+
+hopl 8017

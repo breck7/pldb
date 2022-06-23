@@ -1,11 +1,26 @@
+title hamler
 type pl
-website https://www.hamler-lang.org/
-github https://github.com/hamler-lang/hamler
+
 example
  module Main where
  
  import System.IO
  
  main = print "Hello, World!"
-reference https://news.ycombinator.com/item?id=23491516
+
 description Hamler is a strongly-typed language with compile-time typechecking and built-in support for concurrency and distribution.
+
+githubRepo https://github.com/hamler-lang/hamler
+ firstCommit 2019
+ stars 167
+ forks 12
+ subscribers 16
+ created 2019
+ updated 2020
+ description Haskell-style functional programming language running on Erlang VM.
+ issues 7
+
+website https://www.hamler-lang.org/
+reference https://news.ycombinator.com/item?id=23491516
+
+twitter hamlerlang

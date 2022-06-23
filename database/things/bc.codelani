@@ -1,3 +1,30 @@
+title basic calculator
 appeared 1975
 type pl
-wikipedia Bc_(programming_language)
+
+patterns
+ hasCentralPackageRepository? false
+
+wikipedia https://en.wikipedia.org/wiki/Bc_(programming_language)
+ example
+  $ result=$(echo "scale=2; 5 * 7 /3;" | bc)
+  $ echo $result
+  11.66
+ related c unix dc reverse-polish-notation yacc bash
+ summary bc, for basic calculator (often referred to as bench calculator), is "an arbitrary-precision calculator language" with syntax similar to the C programming language. bc is typically used as either a mathematical scripting language or as an interactive mathematical shell. A typical interactive usage is typing the command bc on a Unix command prompt and entering a mathematical expression, such as (1 + 3) * 2, whereupon 8 will be output. While bc can work with arbitrary precision, it actually defaults to zero digits after the decimal point, so the expression 2/3 yields 0. This can surprise new bc users unaware of this fact. The -l option to bc sets the default scale (digits after the decimal point) to 20 and adds several additional mathematical functions to the language. bc first appeared in Version 6 Unix in 1975 and was written by Robert Morris and Lorinda Cherry of Bell Labs. bc was preceded by dc, an earlier arbitrary-precision calculator written by the same authors. dc could do arbitrary-precision calculations, but its reverse Polish notation (RPN) syntax was inconvenient for users, and therefore bc was written as a front-end to dc. bc was a very simple compiler (a single yacc source file with a few hundred lines), which converted the new, C-like, bc syntax into dc's postfix notation and piped the results through dc. In 1991, POSIX rigorously defined and standardized bc. Two implementations of this standard survive today: The first is the traditional Unix implementation, a front-end to dc, which survives in Unix and Plan 9 systems. The second is the free software GNU bc, first released in 1991 by Philip A. Nelson. The GNU implementation has numerous extensions beyond the POSIX standard and is no longer a front-end to dc (it is a bytecode interpreter).
+ pageId 646359
+ created 2004
+ backlinksCount 221
+ revisionCount 236
+ dailyPageViews 84
+ appeared 1975
+
+standsFor basic calculator
+status historical
+
+tryItOnline bc
+
+fileType text
+wordRank 2585
+
+rosettaCode Bc

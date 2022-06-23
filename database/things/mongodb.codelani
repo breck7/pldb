@@ -1,5 +1,37 @@
+title MongoDB
 appeared 2009
 type application
+
+patterns
+ hasCentralPackageRepository? false
+
+wikipedia https://en.wikipedia.org/wiki/MongoDB
+ related c javascript linux solaris freebsd json nginx-config sql
+ summary MongoDB (from humongous) is a free and open-source cross-platform document-oriented database program. Classified as a NoSQL database program, MongoDB uses JSON-like documents with schemas. MongoDB is developed by MongoDB Inc., and is published under a combination of the GNU Affero General Public License and the Apache License.
+ pageId 21855450
+ dailyPageViews 1760
+ created 2009
+ backlinksCount 348
+ revisionCount 1385
+ appeared 2007
+
+githubRepo https://github.com/mongodb/mongo
+ stars 12736
+ forks 3388
+ subscribers 1141
+ created 2009
+ updated 2017
+ firstCommit 2007
+ description The MongoDB Database
+ issues 31
+
 website https://www.mongodb.com/
-github https://github.com/mongodb/mongo
-wikipedia MongoDB
+status active
+
+twitter mongodb
+
+fileType text
+isOpenSource true
+linkedInSkill MongoDB
+ peopleWithThisSkillCount 254440
+writtenIn cpp c javascript

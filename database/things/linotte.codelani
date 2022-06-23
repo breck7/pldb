@@ -1,4 +1,26 @@
+title Linotte
 appeared 2005
 type pl
+
+patterns
+ hasCentralPackageRepository? false
+
+wikipedia https://en.wikipedia.org/wiki/Linotte
+ example
+  BonjourLeMonde:
+     début
+       affiche "Bonjour le monde !"
+ related php java-server-pages
+ summary Linotte is an interpreted 4th generation programming language. Linotte's syntax is in French. The language's goal is to allow French-speaking children and other francophones with little computer science experience to easily learn programming, with the slogan (in French) "you know how to read a book, so you can write a computer program".
+ pageId 47833395
+ dailyPageViews 8
+ created 2015
+ backlinksCount 4
+ revisionCount 6
+ appeared 2005
+
 website http://langagelinotte.free.fr/
-wikipedia Linotte
+status historical
+country FR
+fileType text
+isOpenSource true

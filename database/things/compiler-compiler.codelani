@@ -1,4 +1,37 @@
+title Compiler-Compiler
 appeared 1963
 type pl
-wikipedia Compiler-compiler
+
+patterns
+ hasCentralPackageRepository? false
+
+wikipedia https://en.wikipedia.org/wiki/Compiler-compiler
+ example
+  expr_gen(ADD[expr_gen(x),expr_gen(y)]) =>
+                                  <AR + (x*16)+y;>
+                                  releasereg(y);
+                                  return x;
+                 (SUB[expr_gen(x),expr_gen(y)])=>
+                                  <SR + (x*16)+y;>
+                                  releasereg(y);
+                                  return x;
+                 (MUL[expr_gen(x),expr_gen(y)])=>
+                                .
+                                .
+                                .
+                 (x)=>     r1 = getreg();
+                              load(r1, x);
+                              return r1;
+  ...
+ related antlr basic algol-60 atlas-autocode coco-r bison javacc lisp-2 lisp yacc xpl peg doi isbn
+ summary In computer science, a compiler-compiler or compiler generator is a programming tool that creates a parser, interpreter, or compiler from some form of formal description of a programming language and machine. The input may be a text file containing the grammar written in BNF or EBNF that defines the syntax of a programming language, and whose generated output is some source code of the parser for the programming language, although other definitions exist. Usually, the resulting source code will have to be extended upon before a complete compiler emerges.A metacompiler is a software development tool used chiefly in the construction of compilers, translators, and interpreters for other programming languages. The input to a metacompiler is a computer program written in a specialized programming metalanguage designed chiefly for the purpose of constructing compilers. The language of the compiler produced is called the object language. The minimal input producing a compiler is a metaprogram specifying the object language grammar and semantic transformations into an object program.
+ backlinksCount 107
+ pageId 70097
+ dailyPageViews 59
+ created 2002
+ appeared 1968
+
 reference https://semanticscholar.org/paper/b1f4f9e12792a745e2229eca84cfe886496bb4dd
+status historical
+
+hopl 179

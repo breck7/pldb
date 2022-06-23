@@ -1,3 +1,40 @@
+title Mary
 appeared 1970
 type pl
-wikipedia Mary_(programming_language)
+
+patterns
+ hasCentralPackageRepository? false
+
+wikipedia https://en.wikipedia.org/wiki/Mary_(programming_language)
+ example
+  BEGIN
+     INT i := 10;          %% Variable with initial value.
+     REF INT ri := i;      %% Pointer initialized to point to i.
+     INT j := 11;
+     j :- REF INT =: ri;   %% Type conversion and assignment
+                           %% ri now points to j.
+     i =: (ri :- VAL REF INT);     
+                           %% Assignment and type conversion
+                           %% ri points to j so j is changed.
+     IF j > 10             %% Conditional statement with result
+     THEN                  %% used inside an arithmetic expression.
+        1
+     ELSE
+        2
+     FI + j =: j;
+  END
+ related sparc algol-68 c algol
+ summary Mary was a programming language designed and implemented by RUNIT at Trondheim, Norway in the 1970s. It borrowed many features from ALGOL 68 but was designed for machine-oriented programming. An unusual feature of its syntax was that expressions were constructed using the conventional infix operators, but all of them had the same precedence and evaluation went from left to right unless there were brackets. Assignment had the destination on the right and assignment was considered just another operator. Similar to C, several language features appear to have existed to allow programmers to produce reasonably well optimised code, despite a quite primitive code generator in the compiler. These included operators similar to the += et alter  in C and explicit register declarations for variables. Notable features:  "Dataflow syntax" - values flow from left to right, including assignment. Most constructs could be used in expressions (blocks, IF, CASE, etc.). Text-based recursive macros. Overloaded user-defined operators, not constrained to predefined identifiers as in C++. Automatic building and dereferencing of pointers from type context. Scalar range types. Array and set enumeration in loop iterators. Dynamic array descriptors (ROW).A book describing Mary was printed in 1974 (Fourth and last edition in 1979): Mary Textbook by Reidar Conradi & Per Holager. Compilers were made for Kongsberg Våpenfabrikk's SM-4  and Norsk Data Nord-10/ND-100 mini-computers. The original Mary compiler was written in NU ALGOL, ran on the Univac-1100 series and was used to bootstrap a native compiler for ND-100/SINTRAN-III. RUNIT implemented a CHILL compiler written in Mary which ran on ND-100 and had Intel 8086 and 80286 targets. When this compiler was ported to the VAX platform, a common backend for Mary and CHILL was implemented. Later, backends for i386 and SPARC were available. Since the Mary compiler was implemented in Mary, it was possible to run the compiler on all these platforms. Mary is no longer maintained.
+ pageId 20340
+ created 2001
+ backlinksCount 13
+ revisionCount 41
+ dailyPageViews 7
+ appeared 1970
+
+status historical
+country NO
+fileType text
+wordRank 1514
+
+hopl 647

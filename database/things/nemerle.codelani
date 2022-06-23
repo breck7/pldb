@@ -1,4 +1,83 @@
+title Nemerle
 appeared 2003
 type pl
+
+patterns
+ hasCentralPackageRepository? false
+ hasComments? true
+ hasSemanticIndentation? true
+ hasTypeInference? true
+
+wikipedia https://en.wikipedia.org/wiki/Nemerle
+ example
+  using System;
+  using System.Runtime.InteropServices;
+  
+  class PlatformInvokeTest
+  {
+      [DllImport("msvcrt.dll")]
+      public extern static puts(c : string) : int;
+  
+      [DllImport("msvcrt.dll")]
+      internal extern static _flushall() : int;
+  
+      public static Main() : void
+      {
+          _ = puts("Test");
+          _ = _flushall();
+      }
+  }
+ related csharp ml lisp java ocaml haskell sql
+ summary Nemerle is a general-purpose high-level statically typed programming language designed for platforms using the Common Language Infrastructure (.NET/Mono). It offers functional, object-oriented (OO) and imperative features. It has a simple C#-like syntax and a powerful metaprogramming system. In June 2012, the core developers of Nemerle were hired by the Czech software development company JetBrains. The team is focusing on developing Nitra, a framework to implement extant and new programming languages. This framework will likely be used to create future versions of Nemerle. Nemerle is named after the Archmage Nemmerle, a character in the fantasy novel A Wizard of Earthsea by Ursula K. Le Guin.
+ pageId 30883042
+ dailyPageViews 37
+ created 2004
+ backlinksCount 121
+ revisionCount 247
+ appeared 2003
+ fileExtensions n
+
+githubLanguage Nemerle
+ fileExtensions n
+ trendingProjectsCount 0
+
+helloWorldCollection Nemerle
+ // Hello World in Nemerle (a functional programming language for .NET)
+ 
+ System.Console.WriteLine("Hello World");
+ 
+
+linguistGrammarRepo https://github.com/textmate/nemerle.tmbundle
+ firstCommit 2006
+ lastCommit 2012
+ committerCount 3
+ commitCount 14
+ sampleCount 1
+ example
+  using System.Console;
+  
+  module Program
+  {
+     Main() : void
+     {
+       WriteLine("Hello world");
+     }
+  }
+
 website http://nemerle.org
-wikipedia Nemerle
+status active
+fileExtensions n
+fileType text
+
+tiobe Nemerle
+
+projectEuler Nemerle
+ memberCount
+  2019 9
+  2022 10
+
+hopl 8336
+
+rosettaCode Nemerle
+
+corporateDevelopers JetBrains

@@ -1,3 +1,33 @@
+title CLOS
 appeared 1988
 type pl
-wikipedia CLOS
+
+patterns
+ hasCentralPackageRepository? false
+
+wikipedia https://en.wikipedia.org/wiki/CLOS
+ example
+  ; declare the common argument structure prototype
+  (defgeneric f (x y))
+  
+  ; define an implementation for (f integer t), where t matches all types
+  (defmethod f ((x integer) y) 1)
+  
+  (f 1 2.0) => 1
+  
+  ; define an implementation for (f integer real)
+  (defmethod f ((x integer) (y real)) 2)
+  
+  (f 1 2.0) => 2 ; dispatch changed at runtime
+ related common-lisp java commonloops eulisp emacs-lisp flavors interlisp dylan guile islisp cadence-skill
+ summary The Common Lisp Object System (CLOS) is the facility for object-oriented programming which is part of ANSI Common Lisp. CLOS is a powerful dynamic object system which differs radically from the OOP facilities found in more static languages such as C++ or Java. CLOS was inspired by earlier Lisp object systems such as MIT Flavors and CommonLoops, although it is more general than either. Originally proposed as an add-on, CLOS was adopted as part of the ANSI standard for Common Lisp and has been adapted into other Lisp dialects such as EuLisp or Emacs Lisp.
+ created 2007
+ backlinksCount 142
+ pageId 191414
+ revisionCount 2
+ dailyPageViews 10
+ appeared 1988
+
+status historical
+
+hopl 1389

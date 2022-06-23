@@ -1,6 +1,7 @@
+title RDF Schema
 appeared 1998
 type grammarLanguage
-wikipedia RDF_Schema
+
 example
  @prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
  @prefix rdfs:   <http://www.w3.org/2000/01/rdf-schema#> .
@@ -11,3 +12,10 @@ example
  ex:cat    rdfs:subClassOf  ex:animal .
  zoo:host   rdfs:range      ex:animal .
  ex:zoo1     zoo:host     ex:cat2 .
+
+wikipedia https://en.wikipedia.org/wiki/RDF_Schema
+ summary RDF Schema (Resource Description Framework Schema, variously abbreviated as RDFS, RDF(S), RDF-S, or RDF/S) is a set of classes with certain properties using the RDF extensible knowledge representation data model, providing basic elements for the description of ontologies, otherwise called RDF vocabularies, intended to structure RDF resources. These resources can be saved in a triplestore to reach them with the query language SPARQL. The first version was published by the World-Wide Web Consortium (W3C) in April 1998, and the final W3C recommendation was released in February 2004. Many RDFS components are included in the more expressive Web Ontology Language (OWL).
+ backlinksCount 307
+ pageId 1984223
+ dailyPageViews 161
+ appeared 1998

@@ -1,6 +1,7 @@
+title janet
 appeared 2018
 type pl
-website https://janet-lang.org
+
 example
  import joy)
  
@@ -12,3 +13,8 @@ example
  (def app (joy/handler routes))
  
  (joy/server app 8000)
+
+website https://janet-lang.org
+hackerNewsDiscussions
+ id|title|url|time|timestamp|by|comments|score
+ 19171121|Janet is a Lisp for scripting, or embedding in other programs|https://janet-lang.org/|2019-02-15 14:26:40 UTC|1550240800|rainygold|0|3

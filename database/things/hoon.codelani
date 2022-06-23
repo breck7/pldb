@@ -1,5 +1,6 @@
+title hoon
 type pl
-website https://urbit.org/docs/learn/hoon/
+
 example
  ::  A message you ping another ship with
  ::
@@ -14,5 +15,7 @@ example
      ping-message
    --
  --
-reference https://github.com/cgyarvin/urbit/blob/master/doc/book/3-syntax.markdown
+
 description Hoon is a high-level, statically typed, functional programming language, custom-designed for use with Urbit. For a functional language it has a surprisingly imperative style, and mastering it doesn't require knowing any advanced mathematics.
+website https://urbit.org/docs/learn/hoon/
+reference https://github.com/cgyarvin/urbit/blob/master/doc/book/3-syntax.markdown

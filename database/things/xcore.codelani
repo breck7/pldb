@@ -1,3 +1,19 @@
+title XCore Architecture
 appeared 2007
 type isa
-wikipedia XCore_Architecture
+
+patterns
+ hasCentralPackageRepository? false
+
+wikipedia https://en.wikipedia.org/wiki/XCore_Architecture
+ related csp
+ summary The XCore Architecture is a 32-bit RISC microprocessor architecture designed by XMOS. The architecture is designed to be used in multi-core processors for embedded systems. Each XCore executes up to eight concurrent threads, each thread having its own register set, and the architecture directly supports inter-thread and inter-core communication and various forms of thread scheduling. Two versions of the XCore architecture exist: the XS1 architecture  and the XS2 architecture. Processors with the XS1 architecture include the XCore XS1-G4 and XCore XS1-L1. Processors with the XS2 architecture include xCORE-200. The architecture encodes instructions compactly, using 16 bits for frequently used instructions (with up to three operands) and 32 bits for less frequently used instructions (with up to 6 operands). Almost all instructions execute in a single cycle, and the architecture is event-driven in order to decouple the timings that a program needs to make from the execution speed of the program. A program will normally perform its computations and then wait for an event (e.g. a message, time, or external I/O event) before continuing.
+ pageId 23041908
+ dailyPageViews 8
+ created 2009
+ backlinksCount 6
+ revisionCount 62
+ appeared 2007
+
+status historical
+fileType na

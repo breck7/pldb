@@ -1,11 +1,24 @@
+title hodor
 appeared 2015
 type esolang
-website http://www.hodor-lang.org/
-github https://github.com/hummingbirdtech/hodor
+
 example
  $HODOR: hhodor? Hodor!? Hodor!? oHooodorrhodor orHodor!? d = HoDoRHoDoR () {
   hodor.hod('Hhodor? Hodor!? Hodor!? o HODOR!? orHodor!? d!');
  };
  
  hhodor? Hodor!? Hodor!? oHooodorrhodor orHodor!? d();
+
+patterns
+ hasCentralPackageRepository? false
+
 description Using jumbled permutations of the word "hodor" over and over again we have simplified programming syntax to make it easier than ever before.
+
+githubRepo https://github.com/hummingbirdtech/hodor
+
+website http://www.hodor-lang.org/
+status active
+
+tryItOnline hodor
+
+isOpenSource true

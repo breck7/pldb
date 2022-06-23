@@ -1,3 +1,11 @@
+title SoQL
 appeared 2009
 type queryLanguage
+
+patterns
+ hasCentralPackageRepository? false
+
 description language for querying and creating data in social networks. The language is designed to meet the growing need of social networks participants to efficiently manage the large, and quickly growing, amounts of data available to them, as well as automate processes of creating new data.
+aka soql
+standsFor Social Networks Query language
+status historical

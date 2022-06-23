@@ -1,8 +1,28 @@
+title wah
 appeared 2017
 type pl
-github https://github.com/tmcw/wah
+
 example
  (0 = 1)
  (%$a + %$b)
  (0 + 1)
+
+patterns
+ hasCentralPackageRepository? false
+
 description a slightly higher-level language superset of webassembly
+
+githubRepo https://github.com/tmcw/wah
+ firstCommit 2017
+ stars 107
+ forks 7
+ subscribers 8
+ created 2017
+ updated 2018
+ description a slightly higher-level language superset of webassembly
+ issues 1
+
+status active
+fileType text
+compilesTo wasm
+isOpenSource true

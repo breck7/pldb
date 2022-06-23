@@ -1,3 +1,20 @@
+title Zonnon
 appeared 2003
 type pl
-wikipedia Zonnon
+
+patterns
+ hasCentralPackageRepository? false
+
+wikipedia https://en.wikipedia.org/wiki/Zonnon
+ related oberon pascal modula
+ summary Zonnon is a programming language along the Oberon, Modula, and Pascal language line. Jürg Gutknecht is the author of the programming language.Zonnon is a general purpose programming language in the Pascal, Modula-2 and Oberon family. Its conceptual model is based on objects, definitions, implementations and modules. Its computing model is concurrent, based on active objects which interact via syntax controlled dialogs. The language is being developed at ETH Zürich Institute for Computer Systems by Prof. Jürg Gutknecht. Zonnon introduces the concept of 'active objects' which are used to represent real world concurrent objects within computer programs. The Zonnon Language Report was written by Brian Kirk (director at Robinsons Associates), and David Lightfoot (Oxford Brookes University) working with Prof. Jürg Gutknecht (ETH, Zürich) and Dr. Eugene Zueff (Евгений Зуев) (Moscow State University). The first book about Zonnon was published by the N. I. Lobachevsky State University of Nizhny Novgorod (a.k.a. the Nizhni Novgorod State University).
+ created 2005
+ backlinksCount 27
+ pageId 39516472
+ revisionCount 110
+ dailyPageViews 7
+ appeared 2013
+
+status historical
+
+rosettaCode Zonnon

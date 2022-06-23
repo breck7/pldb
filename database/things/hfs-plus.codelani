@@ -1,3 +1,19 @@
+title HFS Plus
 appeared 1998
 type filesystem
-wikipedia HFS_Plus
+
+patterns
+ hasCentralPackageRepository? false
+
+wikipedia https://en.wikipedia.org/wiki/HFS_Plus
+ related unicode ios linux hfs ntfs powerpc x86-isa
+ summary HFS Plus or HFS+ is a file system developed by Apple Inc.  It replaced the Hierarchical File System (HFS) as the primary file system of Apple computers with the 1998 release of Mac OS 8.1.  HFS+ continued as the primary Mac OS X file system until it was itself replaced with the release of the Apple File System (APFS) with macOS High Sierra in 2017. HFS+ is also one of the formats used by the iPod digital music player. It is also referred to as Mac OS Extended or HFS Extended, where its predecessor, HFS, is also referred to as Mac OS Standard or HFS Standard. During development, Apple referred to this file system with the codename Sequoia.HFS Plus is an improved version of HFS, supporting much larger files (block addresses are 32-bit length instead of 16-bit) and using Unicode (instead of Mac OS Roman or any of several other character sets) for naming items. Like HFS, HFS Plus uses B-trees to store most volume metadata, but unlike most other file systems, HFS Plus supports hard links to directories. HFS Plus permits filenames up to 255 characters in length, and n-forked files similar to NTFS, though until 2005 almost no system software took advantage of forks other than the data fork and resource fork. HFS Plus also uses a full 32-bit allocation mapping table rather than HFS's 16 bits, significantly improving space utilization with large disks.
+ backlinksCount 317
+ pageId 927752
+ created 2004
+ revisionCount 642
+ dailyPageViews 258
+ appeared 1998
+
+status historical
+fileType text

@@ -1,3 +1,23 @@
+title Meditech Interpretive Information System
 appeared 1986
 type pl
-wikipedia MIIS_(programming_language)
+
+patterns
+ hasCentralPackageRepository? false
+
+wikipedia https://en.wikipedia.org/wiki/MIIS_(programming_language)
+ related mumps
+ summary MIIS (Meditech Interpretive Information System) is a MUMPS-like programming language that was created by A.Neil Pappalardo and Curt W. Marble, on a DEC PDP at Mass General Hospital from 1964 to 1968. MUMPS evolution took two major directions: MUMPS proper and MIIS. MUMPS became an ANSI and ISO-standard language. When many MUMPS implementations standardized to be compatible, MIIS did not standardize, but became a proprietary system instead. As an example of the differences between MUMPS and MIIS, the value of a logical expression in MUMPS may be false = zero (0) or true = non-zero, canonically, one (1). In MIIS, the value false is the empty string and the value of true is a string consisting of the ASCII delete character (code 127 decimal). There is also a philosophical difference between the dialects.  MIIS often takes the approach that code should march along, regardless of possible errors, where MUMPS will error out to prevent more serious problems.  For example, when encountering an undefined variable, MUMPS generates an error where MIIS treats it as nil. In the 1980s Brigham and Women's Hospital in Massachusetts used MIIS to program their Data General Mainframe. In 1986, SCAMC reported that Vancouver General Hospital also had an Integrated Cardiology Patient Management System written in MIIS. The MIIS language has been used in programming library systems as well as health industry systems. The OCLC's library system is one example. It has also been used to create financial systems for insurance brokers, as seen in Ireland and the UK in the late 1970s.
+ pageId 3359079
+ created 2005
+ backlinksCount 12
+ revisionCount 30
+ dailyPageViews 10
+ appeared 1986
+
+standsFor Meditech Interpretive Information System
+status historical
+country US
+fileType text
+
+hopl 5919

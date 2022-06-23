@@ -1,8 +1,8 @@
+title manool
 appeared 2018
 type pl
 creators Alex Protasov
-website https://manool.org/
-github https://github.com/rusini/manool
+
 example
  -- recursive version, MANOOLish "cascading" notation
  { {extern "manool.org.18/std/0.3/all"} in
@@ -16,5 +16,16 @@ example
    in
    Out.WriteLine["Factorial of 10 is "; Fact[10]]
  }
-reference https://www.reddit.com/r/ProgrammingLanguages/comments/ep8pc2/manool_practical_language_with_universal_syntax/
+
 description Practical programming language with expressive power, in 10 KLOC in C++11 - "MAnool is Not an Object-Oriented Language!"
+
+githubRepo https://github.com/rusini/manool
+ firstCommit 2019
+ stars 8
+ subscribers 1
+ created 2019
+ updated 2020
+ description Practical programming language with expressive power, in 10 KLOC in C++11 - "MAnool is Not an Object-Oriented Language!"
+
+website https://manool.org/
+reference https://www.reddit.com/r/ProgrammingLanguages/comments/ep8pc2/manool_practical_language_with_universal_syntax/

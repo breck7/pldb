@@ -1,7 +1,7 @@
+title Gentoo Ebuild
 appeared 1999
 type pl
-website https://wiki.gentoo.org/wiki/Ebuild
-wikipedia Ebuild
+
 example
   Copyright 1999-2018 Gentoo Foundation
  # Distributed under the terms of the GNU General Public License v2
@@ -15,5 +15,35 @@ example
  LICENSE="MIT"
  SLOT="0"
  KEYWORDS="~alpha ~amd64 ~arm ~hppa ~ia64 ~ppc ~ppc64 ~s390 ~sh ~sparc ~x86"
-reference https://wiki.gentoo.org/wiki/Basic_guide_to_write_Gentoo_Ebuilds
+
+patterns
+ hasCentralPackageRepository? false
+
 description An ebuild file is a text file, used by Gentoo package managers, which identifies a specific software package and how the Gentoo package manager should handle it. It uses a bash-like syntax style and is standardized through the EAPI version. Gentoo Linux uses ebuilds as the package management format for individual software titles.
+
+wikipedia https://en.wikipedia.org/wiki/Ebuild
+ related bash
+ summary An ebuild is a specialized bash script which automates compilation and installation procedures for software packages. The format was created by the Gentoo Linux project for use in its Portage software management system. Each version of an application or package in the Portage repository has a specific ebuild script written for it. The script is used by the emerge tool, also created by the Gentoo Linux project, to calculate any dependencies of the desired software installation, download the required files (and patch them, if necessary), configure the package (based on "USE flag" settings), compile, and perform a sandboxed installation (in /var/tmp/portage/[ebuild name]/image/ by default). Upon successful completion of these steps, the installed files are merged into the live system, outside the sandbox. Although most ebuilds found in the Gentoo Portage repository are used to compile programs from source code, there are also ebuilds to install binary packages, ebuilds that install only documentation or data such as fonts, and basic ebuilds called "metabuilds" whose sole purpose is to trigger the installation of other ebuilds (such as the GNOME or KDE metabuilds).
+ created 2003
+ backlinksCount 43
+ pageId 361390
+ revisionCount 109
+ dailyPageViews 13
+
+githubLanguage Gentoo Ebuild
+ fileExtensions ebuild
+ trendingProjectsCount 0
+
+linguistGrammarRepo https://github.com/atom/language-shellscript
+ firstCommit 2013
+ lastCommit 2018
+ committerCount 31
+ commitCount 243
+
+website https://wiki.gentoo.org/wiki/Ebuild
+reference https://wiki.gentoo.org/wiki/Basic_guide_to_write_Gentoo_Ebuilds
+status active
+
+twitter gentoo
+
+fileType text

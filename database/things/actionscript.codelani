@@ -1,3 +1,79 @@
+title ActionScript
 appeared 1998
 type pl
-wikipedia ActionScript
+
+patterns
+ hasCentralPackageRepository? false
+
+wikipedia https://en.wikipedia.org/wiki/ActionScript
+ example
+  private function getNeighbours(_arg1:int, _arg2:int):Array{
+    var _local3:Array = -(((null - !NULL!) % ~(undefined)));
+    var _local4:*;
+    var _local5:*;
+    var _local6:*;
+    _local3 = new Array();
+    _local4 = 0;
+    for (;//unresolved jump
+    , _arg2 < 8;_local4++) {
+      _local5 = (_arg1 + int(!NULL!));
+      _local6 = (_arg2 + int(!NULL!));
+      if (true){
+        _arg1 = (((//unresolved nextvalue or nextname << !NULL!) + !NULL!) 
+  << undefined);
+        _arg1 = (!(!NULL!) ^ !NULL!);
+        (!NULL! instanceof !NULL!);
+        var _local1 = (((!NULL! as !NULL!) + !NULL!) == this);
+        if (!(!NULL! == !NULL!)){
+          -((true << !NULL!)).push(Cell(cells[_local5][_local6]));
+        }
+      }
+      if (!true){
+        (_local6 < 0);
+        (_local6 < 0);
+        (_local5 < 0);
+      }
+    }
+  return (_local3);
+  }
+ related javascript java haxe hypertalk hypercard ecmascript ios android json opengl xml mxml
+ summary 438 184 ActionScript is an object-oriented programming language originally developed by Macromedia Inc. (later acquired by Adobe Systems). It is a derivation of HyperTalk, the scripting language for HyperCard. It is now a dialect of ECMAScript (meaning it is a superset of the syntax and semantics of the language more widely known as JavaScript), though it originally arose as a sibling, both being influenced by HyperTalk. ActionScript is used primarily for the development of websites and software targeting the Adobe Flash Player platform, used on Web pages in the form of embedded SWF files. ActionScript 3 is also used with Adobe AIR system for the development of desktop and mobile applications. The language itself is open-source in that its specification is offered free of charge and both an open source compiler (as part of Apache Flex) and open source virtual machine (Mozilla Tamarin) are available. ActionScript is also used with Scaleform GFx for the development of 3D video game user interfaces and HUDs.
+ pageId 519691
+ dailyPageViews 282
+ created 2004
+ backlinksCount 934
+ revisionCount 1221
+ appeared 1999
+
+githubLanguage ActionScript
+ fileExtensions as
+ trendingProjectsCount 0
+
+linguistGrammarRepo https://github.com/simongregory/actionscript3-tmbundle
+ firstCommit 2007
+ lastCommit 2016
+ committerCount 9
+ commitCount 973
+ sampleCount 2
+ example
+  package mypackage
+  {
+  	public class Hello
+  	{
+  		/* Let's say hello!
+  		 * This is just a test script for Linguist's Actionscript detection.
+  		 */
+  		public function sayHello():void
+  		{
+  			trace("Hello, world");
+  		}
+  	}
+  }
+  
+
+status active
+fileType text
+
+tiobe ActionScript
+
+rosettaCode ActionScript

@@ -1,7 +1,7 @@
+title Open Data Protcol
 appeared 2007
 type protocol
-website https://www.odata.org/
-wikipedia Open_Data_Protocol
+
 example
  {
    "@odata.context": "http://services.odata.org/V4/OData/OData.svc/$metadata#Products",
@@ -26,3 +26,12 @@ example
      }
    ]
  }
+
+wikipedia https://en.wikipedia.org/wiki/Open_Data_Protocol
+ summary In computing, Open Data Protocol (OData) is an open  protocol which allows the creation and consumption of queryable and interoperable RESTful  APIs in a simple and standard way. Microsoft initiated OData in 2007. Versions 1.0, 2.0, and 3.0 are released under the Microsoft Open Specification Promise. Version 4.0 was standardized at OASIS, with a release in March 2014. In April 2015 OASIS submitted OData v4 and OData JSON Format v4 to ISO/IEC JTC 1 for approval as an international standard.The protocol enables the creation and consumption of  REST APIs, which allow  Web clients to publish and edit resources, identified using URLs and defined in a data model, using simple HTTP messages. OData shares some similarities with JDBC and with ODBC; like ODBC, OData is not limited to relational databases.
+ backlinksCount 39
+ pageId 26639400
+ dailyPageViews 244
+ appeared 2007
+
+website https://www.odata.org/

@@ -1,7 +1,7 @@
+title visdown
 appeared 2016
 type textMarkup
-website https://visdown.com/
-github https://github.com/amitkaps/visdown
+
 example
  ```vis
  data:
@@ -15,4 +15,23 @@ example
      field: price
      type: quantitative
   ```
+
+patterns
+ hasCentralPackageRepository? false
+
 description Write visualisation using a simple declarative markup like you would write code. Just wrap it in fenced block (three backticks) and mark the language as `vis`.
+
+githubRepo https://github.com/amitkaps/visdown
+ firstCommit 2016
+ stars 606
+ forks 36
+ subscribers 21
+ created 2016
+ updated 2018
+ description Visualisation Markdown
+ issues 4
+
+website https://visdown.com/
+status active
+fileType text
+isOpenSource true

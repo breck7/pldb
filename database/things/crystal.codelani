@@ -1,6 +1,169 @@
+title Crystal
 appeared 2014
 type pl
 creators Ary Borenszweig
+
+patterns
+ hasCentralPackageRepository? false
+ hasTypeInference? true
+
+wikipedia https://en.wikipedia.org/wiki/Crystal_(programming_language)
+ example
+  channel = Channel(Int32).new
+  
+  spawn do
+    puts "Before first send"
+    channel.send(1)
+    puts "Before second send"
+    channel.send(2)
+  end
+  
+  puts "Before first receive"
+  value = channel.receive
+  puts value # => 1
+  
+  puts "Before second receive"
+  value = channel.receive
+  puts value # => 2
+ related ia-32 freebsd ruby c rust go csharp python llvmir csp
+ summary In computer software programming languages, Crystal is a general-purpose, object-oriented programming language, designed and developed by Ary Borenszweig and Juan Wajnerman and more than 200 contributors. With syntax inspired by the language Ruby, it is a compiled language with static type-checking, but specifying the types of variables or method arguments is generally unneeded. Types are resolved by an advanced global type inference algorithm. Crystal is in active development. It is released as free and open-source software under the Apache License version 2.0
+ pageId 48972626
+ dailyPageViews 143
+ created 2016
+ backlinksCount 31
+ revisionCount 95
+ appeared 2014
+ fileExtensions cr
+
+githubLanguage Crystal
+ fileExtensions cr
+ trendingProjects
+  author name avatar url language languageColor stars forks currentPeriodStars description
+  omarroth invidious https://github.com/omarroth.png https://github.com/omarroth/invidious Crystal #000100 1184 86 154 "Invidious is an alternative front-end to YouTube"
+  crystal-lang crystal https://github.com/crystal-lang.png https://github.com/crystal-lang/crystal Crystal #000100 13807 1071 172 "The Crystal Programming Language"
+ trendingProjectsCount 3
+
+githubRepo https://github.com/crystal-lang/crystal
+ stars 9752
+ forks 763
+ subscribers 414
+ created 2012
+ updated 2017
+ firstCommit 2012
+ description The Crystal Programming Language
+ issues 761
+
+helloWorldCollection Crystal
+ # Hello world in Crystal
+ 
+ puts "Hello World"
+
+linguistGrammarRepo https://github.com/atom-crystal/language-crystal
+ firstCommit 2013
+ lastCommit 2018
+ committerCount 47
+ commitCount 320
+ sampleCount 3
+ example
+  #!/usr/bin/env bin/crystal --run
+  require "../../spec_helper"
+  
+  describe "Type inference: declare var" do
+    it "types declare var" do
+      assert_type("a :: Int32") { int32 }
+    end
+  
+    it "types declare var and reads it" do
+      assert_type("a :: Int32; a") { int32 }
+    end
+  
+    it "types declare var and changes its type" do
+      assert_type("a :: Int32; while 1 == 2; a = 'a'; end; a") { union_of(int32, char) }
+    end
+  
+    it "declares instance var which appears in initialize" do
+      result = assert_type("
+        class Foo
+          @x :: Int32
+        end
+  
+        Foo.new") { types["Foo"] }
+  
+      mod = result.program
+  
+      foo = mod.types["Foo"] as NonGenericClassType
+      foo.instance_vars["@x"].type.should eq(mod.int32)
+    end
+  
+    it "declares instance var of generic class" do
+      result = assert_type("
+        class Foo(T)
+          @x :: T
+        end
+  
+        Foo(Int32).new") do
+          foo = types["Foo"] as GenericClassType
+          foo_i32 = foo.instantiate([int32] of Type | ASTNode)
+          foo_i32.lookup_instance_var("@x").type.should eq(int32)
+          foo_i32
+      end
+    end
+  
+    it "declares instance var of generic class after reopen" do
+      result = assert_type("
+        class Foo(T)
+        end
+  
+        f = Foo(Int32).new
+  
+        class Foo(T)
+          @x :: T
+        end
+  
+        f") do
+          foo = types["Foo"] as GenericClassType
+          foo_i32 = foo.instantiate([int32] of Type | ASTNode)
+          foo_i32.lookup_instance_var("@x").type.should eq(int32)
+          foo_i32
+      end
+    end
+  
+    it "declares an instance variable in initialize" do
+      assert_type("
+        class Foo
+          def initialize
+            @x :: Int32
+          end
+  
+          def x
+            @x
+          end
+        end
+  
+        Foo.new.x
+        ") { int32 }
+    end
+  end
+  
+
 website https://crystal-lang.org
-github https://github.com/crystal-lang/crystal
-wikipedia Crystal_(programming_language)
+status active
+
+tryItOnline crystal
+
+twitter crystallanguage
+
+fileExtensions cr
+fileType text
+wordRank 2716
+isOpenSource true
+
+tiobe Crystal
+ currentRank 24
+
+projectEuler Crystal
+ memberCount
+  2019 5
+  2022 14
+
+rosettaCode Crystal

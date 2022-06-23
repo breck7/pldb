@@ -1,6 +1,43 @@
+title Self
 appeared 1987
 type pl
 creators David Ungar
+
+patterns
+ hasCentralPackageRepository? false
+
+wikipedia https://en.wikipedia.org/wiki/Self_(programming_language)
+ example
+  _AddSlots: (| porsche911 <- sportsCar copy |).
+  porsche911 name:'Bobs Porsche'.
+ related smalltalk newtonscript javascript io agora squeak lisaac lua factor rebol java solaris linux c cecil ioke
+ summary Self is an object-oriented programming language based on the concept of prototypes. Self began as a dialect of Smalltalk, being dynamically typed and using just-in-time compilation (JIT) as well as the prototype-based approach to objects: it was first used as an experimental test system for language design in the 1980s and 1990s. In 2006, Self was still being developed as part of the Klein project, which was a Self virtual machine written fully in Self. The latest version is 2017.1 released in May 2017. Several just-in-time compilation techniques were pioneered and improved in Self research as they were required to allow a very high level object oriented language to perform at up to half the speed of optimized C. Much of the development of Self took place at Sun Microsystems, and the techniques they developed were later deployed for Java's HotSpot virtual machine. At one point a version of Smalltalk was implemented in Self. Because it was able to use the JIT, this also gave extremely good performance.
+ pageId 60265
+ dailyPageViews 88
+ created 2002
+ backlinksCount 87
+ revisionCount 350
+ appeared 1987
+
+githubLanguage Self
+ fileExtensions self
+ trendingProjectsCount 0
+
+helloWorldCollection Self
+ (|  "Hello World in Self"
+ 
+   hello = (| | 'Hello World!' print)
+ |)
+ 
+
 website http://www.selflanguage.org
-wikipedia Self_(programming_language)
 reference https://www.youtube.com/watch?v=Ox5P7QyL774
+status active
+country US
+fileType text
+wordRank 697
+isOpenSource true
+
+hopl 1361
+
+rosettaCode Self

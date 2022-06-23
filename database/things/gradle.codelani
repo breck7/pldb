@@ -1,4 +1,56 @@
+title Gradle
 appeared 2008
 type application
+
+patterns
+ hasCentralPackageRepository? false
+
+githubLanguage Gradle
+ fileExtensions gradle
+ trendingProjectsCount 0
+
+githubRepo https://github.com/gradle/gradle
+ firstCommit 2008
+ stars 7817
+ forks 2374
+ subscribers 487
+ created 2009
+ updated 2018
+ description Adaptable, fast automation for all
+ issues 1321
+
+linguistGrammarRepo https://github.com/alkemist/gradle.tmbundle
+ firstCommit 2011
+ lastCommit 2014
+ committerCount 1
+ commitCount 29
+ sampleCount 2
+ example
+  apply plugin: GreetingPlugin
+  
+  greeting {
+      message = 'Hi'
+      greeter = 'Gradle'
+  }
+  
+  class GreetingPlugin implements Plugin<Project> {
+      void apply(Project project) {
+          project.extensions.create("greeting", GreetingPluginExtension)
+          project.task('hello') << {
+              println "${project.greeting.message} from ${project.greeting.greeter}"
+          }
+      }
+  }
+  
+  class GreetingPluginExtension {
+      String message
+      String greeter
+  }
+
 website https://gradle.org
-github https://github.com/gradle/gradle
+status active
+
+twitter gradle
+
+fileType text
+isOpenSource true

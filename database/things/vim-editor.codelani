@@ -1,4 +1,31 @@
+title Vim
 appeared 1991
 type editor
+
+patterns
+ hasCentralPackageRepository? true
+
+wikipedia https://en.wikipedia.org/wiki/Vim_(text_editor)
+ example
+  " This is the Hello World program in Vim script.
+  echo "Hello, world!"
+  
+  " This is a simple while loop in Vim script.
+  let i = 1
+  while i < 5
+    echo "count is" i
+    let i += 1
+  endwhile
+ related c unix linux ios android vi-editor tcl lua perl python racket ruby regex gzip ftp http unicode
+ summary Vim (; a contraction of Vi IMproved) is a clone, with additions, of Bill Joy's vi text editor program for Unix. It was written by Bram Moolenaar based on source for a port of the Stevie editor to the Amiga and first released publicly in 1991. Vim is designed for use both from a command-line interface and as a standalone application in a graphical user interface. Vim is free and open-source software and is released under a license that includes some charityware clauses, encouraging users who enjoy the software to consider donating to children in Uganda. The license is compatible with the GNU General Public License through a special clause allowing distribution of modified copies "under the GNU GPL version 2 or any later version".Although it was originally released for the Amiga, Vim has since been developed to be cross-platform, supporting many other platforms. In 2006, it was voted the most popular editor amongst Linux Journal readers; in 2015 the Stack Overflow developer survey found it to be the third most popular text editor; and in 2016 the Stack Overflow developer survey found it to be the fourth most popular development environment.
+ pageId 32478
+ created 2001
+ backlinksCount 852
+ revisionCount 965
+ dailyPageViews 696
+ appeared 1991
+
 website https://www.vim.org/
-wikipedia Vim_(text_editor)
+status historical
+fileType na
+isOpenSource true

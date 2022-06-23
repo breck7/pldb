@@ -1,6 +1,7 @@
+title iCalendar
 appeared 1998
-type textFormat
-wikipedia iCalendar
+type textDataFormat
+
 example
  BEGIN:VCALENDAR
  VERSION:2.0
@@ -15,3 +16,10 @@ example
  GEO:48.85299;2.36885
  END:VEVENT
  END:VCALENDAR
+
+wikipedia https://en.wikipedia.org/wiki/iCalendar
+ summary The Internet Calendaring and Scheduling Core Object Specification (iCalendar) is a MIME type which allows users to store and exchange calendaring and scheduling information such as events, to-dos, journal entries, and free/busy information. Files formatted according to the specification usually have an extension of .ics. With supporting software, such as an email reader or calendar application, recipients of an iCalendar data file can respond to the sender easily or counter-propose another meeting date/time. The file format is specified in a proposed internet standard (RFC 5545) for calendar data exchange.iCalendar is used and supported by many products, including Google Calendar, Apple Calendar (formerly iCal), IBM Notes (formerly Lotus Notes), Yahoo! Calendar, Evolution (software), eM Client, Lightning extension for Mozilla Thunderbird and SeaMonkey, and partially by Microsoft Outlook and Novell GroupWise. iCalendar is designed to be independent of the transport protocol. For example, certain events can be sent by traditional email or whole calendar files can be shared and edited by using a WebDav server, or SyncML. Simple web servers (using just the HTTP protocol) are often used to distribute iCalendar data about an event and to publish busy times of an individual.  Publishers can embed iCalendar data in web pages using hCalendar, a 1:1 microformat representation of iCalendar in semantic (X)HTML.
+ backlinksCount 126
+ pageId 301736
+ dailyPageViews -1
+ appeared 1998

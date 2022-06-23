@@ -1,4 +1,11 @@
+title bigWig format
 appeared 2009
 type binaryDataFormat
-reference http://genome.ucsc.edu/goldenPath/help/bigWig.html
+
+patterns
+ hasCentralPackageRepository? false
+
 description The bigWig format is the recommended format for almost all graphing track needs. The bigWig format is useful for dense, continuous data that will be displayed in the Genome Browser as a graph. BigWig files are created from wiggle (wig) type files using the program wigToBigWig. bigWig files are indexed binary files.
+reference http://genome.ucsc.edu/goldenPath/help/bigWig.html
+status active
+fileType binary

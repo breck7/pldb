@@ -1,6 +1,7 @@
+title The Satisfiability Modulo Theories Library
 appeared 2003
 type pl
-website http://smtlib.cs.uiowa.edu/language.shtml
+
 example
  ; Getting assertions
  (set-option :produce-assertions true)
@@ -21,4 +22,45 @@ example
   (get-assertions)
   ; ()
  (exit)
+
+patterns
+ hasCentralPackageRepository? false
+
 description Common input and output languages for SMT solvers.
+
+githubLanguage SMT
+ fileExtensions smt2 smt
+ trendingProjectsCount 0
+
+linguistGrammarRepo https://github.com/SRI-CSL/SMT.tmbundle.git
+ firstCommit 2015
+ lastCommit 2015
+ committerCount 3
+ commitCount 31
+ sampleCount 4
+ example
+  (set-logic QF_LIA)
+  (set-info :source | SMT-COMP'06 organizers |)
+  (set-info :smt-lib-version 2.0)
+  (set-info :category "check")
+  (set-info :status unsat)
+  (set-info :notes |This benchmark is designed to check if the DP supports bignumbers.|)
+  (declare-fun x1 () Int)
+  (declare-fun x2 () Int)
+  (declare-fun x3 () Int)
+  (declare-fun x4 () Int)
+  (declare-fun x5 () Int)
+  (declare-fun x6 () Int)
+  (assert (and (or (>= x1 1000) (>= x1 1002)) 
+               (or (>= x2 (* 1230 x1)) (>= x2 (* 1003 x1))) 
+  			 (or (>= x3 (* 1310 x2)) (>= x3 (* 1999 x2)))
+  			 (or (>= x4 (* 4000 x3)) (>= x4 (* 8000 x3))) 
+  			 (or (<= x5 (* (- 4000) x4)) (<= x5 (* (- 8000) x4)))
+  			 (or (>= x6 (* (- 3) x5)) (>= x6 (* (- 2) x5))) (< x6 0)))
+  (check-sat)
+  (exit)
+
+website http://smtlib.cs.uiowa.edu/language.shtml
+standsFor Satisfiability Modulo Theories
+status active
+fileType text

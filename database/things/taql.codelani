@@ -1,5 +1,13 @@
+title Table Query Language
 appeared 1997
 type queryLanguage
+
+patterns
+ hasCentralPackageRepository? false
+
+description The Table Query Language (TaQL) is an SQL-like high level language to do operations like selection, sort, and update on a casacore table. It is a very versatile language with full support for table columns containing array data. It has inherent support for masked arrays, units, and astronomical coordinates. It has a very rich set of functions (like cone search and array reduction) making it very suitable for astronomical applications. User deﬁned functions can be added easily. It also has full support of grouping/aggregation and nested queries. An operation that can be expressed in a single function is the matching of two sky catalogues. It can be used from C++, Python, and the Casacore program taql.
 website https://casacore.github.io/casacore-notes/199.html
 reference https://casa.nrao.edu/aips2_docs/notes/199/node3.html
-description The Table Query Language (TaQL) is an SQL-like high level language to do operations like selection, sort, and update on a casacore table. It is a very versatile language with full support for table columns containing array data. It has inherent support for masked arrays, units, and astronomical coordinates. It has a very rich set of functions (like cone search and array reduction) making it very suitable for astronomical applications. User deﬁned functions can be added easily. It also has full support of grouping/aggregation and nested queries. An operation that can be expressed in a single function is the matching of two sky catalogues. It can be used from C++, Python, and the Casacore program taql.
+aka tql
+status historical
+fileType text

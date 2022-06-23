@@ -1,3 +1,28 @@
+title MXML
 appeared 2004
 type xmlFormat
-wikipedia MXML
+
+patterns
+ hasCentralPackageRepository? false
+
+wikipedia https://en.wikipedia.org/wiki/MXML
+ example
+  <?xml version="1.0" encoding="utf-8"?>
+  <mx:Application xmlns:mx="http://www.adobe.com/2006/mxml" 
+                  layout="absolute" backgroundGradientColors="[#000011, #333333]">
+     <mx:Label text="Hello World!" verticalCenter="0" horizontalCenter="0" fontSize="48" letterSpacing="1">
+        <mx:filters>
+           <mx:GlowFilter color="#ffffdd"/>
+        </mx:filters>
+     </mx:Label>
+  </mx:Application>
+ related musicxml xml actionscript php xaml uiml svg
+ summary MXML is an XML-based user interface markup language first introduced by Macromedia in March 2004. Application developers use MXML in combination with ActionScript to develop rich Internet applications, with products such as Apache Flex. Adobe Systems, which acquired Macromedia in December 2005, gives no official meaning for the acronym MXML. Some developers suggest it should stand for "Magic eXtensible Markup Language" (which is a backronym). It is likely that the name comes from the MX suffix given to Macromedia Studio products released in 2002 and 2004, or simply "Macromedia eXtensible Markup Language". MXML is used mainly to declaratively lay out the interface of applications and can also be used to implement business logic and internet application behaviors. It can contain chunks of ActionScript code, either when creating the body of an event handler function, or with data binding where the curly braces ({) syntax is used. MXML is often used with Flex Server, which dynamically compiles it into standard binary SWF files. However, the Adobe Flash Builder IDE (formerly Adobe Flex Builder) and free Flex SDK can also compile MXML into SWF files without the use of a Flex Server. There is also a PHP PEAR package called XML_MXML, which is a framework to build Adobe Flex applications. MXML is considered a proprietary standard due to its tight integration with Adobe technologies.  It is like XAML in this respect.  No published translators exist for converting an MXML document to another user interface language such as UIML, XUL, XForms, XAML, or SVG. However, there do exist third party vendor plugins for Flex Builder that are capable of generating a result other than a SWF file from Flex applications, for instance native mobile applications.
+ backlinksCount 183
+ pageId 894349
+ created 2004
+ revisionCount 124
+ dailyPageViews 32
+ appeared 2002
+
+status historical

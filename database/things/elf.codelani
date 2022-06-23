@@ -1,3 +1,23 @@
+title Extensible Linking Format
 appeared 1999
 type binaryExecutable
-wikipedia Executable_and_Linkable_Format
+
+patterns
+ hasCentralPackageRepository? false
+
+wikipedia https://en.wikipedia.org/wiki/Executable_and_Linkable_Format
+ related unix x86-isa ascii linux solaris freebsd sparc mips powerpc arm risc-v coff preferred-executable-format android atmel-avr ia-32
+ summary In computing, the Executable and Linkable Format (ELF, formerly named Extensible Linking Format), is a common standard file format for executable files, object code, shared libraries, and core dumps. First published in the specification for the application binary interface (ABI) of the Unix operating system version named System V Release 4 (SVR4), and later in the Tool Interface Standard, it was quickly accepted among different vendors of Unix systems. In 1999, it was chosen as the standard binary file format for Unix and Unix-like systems on x86 processors by the 86open project. By design, ELF is flexible, extensible, and cross-platform, not bound to any given central processing unit (CPU) or instruction set architecture. This has allowed it to be adopted by many different operating systems on many different hardware platforms.
+ pageId 9914
+ dailyPageViews 625
+ created 2001
+ backlinksCount 194
+ revisionCount 570
+ appeared 1999
+
+standsFor Extensible Linking Format
+status historical
+
+tryItOnline elf
+
+fileType binary

@@ -1,3 +1,35 @@
+title Joy programming language
 appeared 2001
 type pl
-wikipedia Joy_(programming_language)
+
+patterns
+ hasCentralPackageRepository? false
+ hasComments? true
+
+wikipedia https://en.wikipedia.org/wiki/Joy_(programming_language)
+ example
+  DEFINE qsort ==
+     [small]
+     []
+     [uncons [>] split]
+     [enconcat]
+     binrec.
+ related scheme fp factor forth unlambda c symbol
+ summary The Joy programming language in computer science is a purely functional programming language that was produced by Manfred von Thun of La Trobe University in Melbourne, Australia. Joy is based on composition of functions rather than lambda calculus. It has turned out to have many similarities to Forth, due not to design but to a sort of parallel evolution and convergence. It was also inspired by the function-level programming style of Backus's FP.
+ pageId 696166
+ created 2003
+ backlinksCount 52
+ revisionCount 130
+ dailyPageViews 48
+ appeared 2001
+
+status historical
+
+tryItOnline joy
+
+fileType text
+wordRank 4281
+
+hopl 2137
+
+rosettaCode Joy

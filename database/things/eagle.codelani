@@ -1,3 +1,63 @@
+title Eagle
 appeared 1988
 type application
-wikipedia EAGLE_(program)
+
+patterns
+ hasCentralPackageRepository? false
+
+wikipedia https://en.wikipedia.org/wiki/EAGLE_(program)
+ related linux postscript xml arduino kicad
+ summary EAGLE is a scriptable electronic design automation (EDA) application with schematic capture, printed circuit board (PCB) layout, auto-router and computer-aided manufacturing (CAM) features. EAGLE stands for Easily Applicable Graphical Layout Editor (German: Einfach Anzuwendender Grafischer Layout-Editor) and is developed by CadSoft Computer GmbH. The company was acquired by Autodesk Inc. in 2016.
+ backlinksCount 476
+ pageId 1470123
+ created 2005
+ revisionCount 337
+ dailyPageViews 177
+ appeared 1988
+
+githubLanguage Eagle
+ fileExtensions sch brd
+ trendingProjectsCount 0
+
+linguistGrammarRepo https://github.com/textmate/xml.tmbundle
+ firstCommit 2004
+ lastCommit 2018
+ committerCount 12
+ commitCount 97
+ sampleCount 2
+ example
+  <?xml version="1.0" encoding="utf-8"?>
+  <!DOCTYPE eagle SYSTEM "eagle.dtd">
+  <eagle version="6.3">
+  <drawing>
+  <settings>
+  <setting alwaysvectorfont="no"/>
+  <setting verticaltext="up"/>
+  </settings>
+  <grid distance="10" unitdist="mil" unit="mil" style="lines" multiple="1" display="no" altdistance="0.025" altunitdist="inch" altunit="inch"/>
+  <layers>
+  <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
+  <layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
+  <layer number="3" name="Route3" color="4" fill="3" visible="no" active="no"/>
+  <layer number="4" name="Route4" color="1" fill="4" visible="no" active="no"/>
+  <layer number="5" name="Route5" color="4" fill="4" visible="no" active="no"/>
+  <layer number="6" name="Route6" color="1" fill="8" visible="no" active="no"/>
+  <layer number="7" name="Route7" color="4" fill="8" visible="no" active="no"/>
+  <layer number="8" name="Route8" color="1" fill="2" visible="no" active="no"/>
+  <layer number="9" name="Route9" color="4" fill="2" visible="no" active="no"/>
+  <layer number="10" name="Route10" color="1" fill="7" visible="no" active="no"/>
+  <layer number="11" name="Route11" color="4" fill="7" visible="no" active="no"/>
+  <layer number="12" name="Route12" color="1" fill="5" visible="no" active="no"/>
+  <layer number="13" name="Route13" color="4" fill="5" visible="no" active="no"/>
+  <layer number="14" name="Route14" color="1" fill="6" visible="no" active="no"/>
+  <layer number="15" name="Route15" color="4" fill="6" visible="no" active="no"/>
+  <layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="yes"/>
+  <layer number="17" name="Pads" color="2" fill="1" visible="yes" active="yes"/>
+  <layer number="18" name="Vias" color="2" fill="1" visible="yes" active="yes"/>
+  <layer number="19" name="Unrouted" color="6" fill="1" visible="yes" active="yes"/>
+  <layer number="20" name="Dimension" color="15" fill="1" visible="yes" active="yes"/>
+  <layer number="21" name="tPlace" color="7" fill="1" visible="yes" act
+
+status active
+fileType text
+wordRank 4196

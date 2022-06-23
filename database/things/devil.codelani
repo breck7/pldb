@@ -1,4 +1,22 @@
+title DEVIL
 appeared 2000
 type pl
-wikipedia DevIL
+
+patterns
+ hasCentralPackageRepository? false
+
+wikipedia https://en.wikipedia.org/wiki/DevIL
+ related opengl
+ summary Developer's Image Library or DevIL started by Denton Woods, is a cross-platform image library which aims to provide a common API for different image file formats. It consists of three parts: the main library (IL), the utility library (ILU) and the utility toolkit (ILUT), mirroring the corresponding parts of OpenGL (although the OpenGL Utility Toolkit is not part of the OpenGL specification).It was originally called OpenIL; the name was changed at a request from Silicon Graphics, Inc.DevIL currently supports 43 file formats for reading and 17 for writing; among those with read-write support are BMP, DDS, JPEG, PCX, PNG, raw, TGA, and TIFF. The actual supported formats depend on compilation settings, in particular, external libraries like libjpeg and libpng.On June 9, 2010, Woods announced that he had submitted a request to change the licensing terms from the GNU LGPL to a BSD license. According to the website (as well as the source repository), DevIL is still licensed under the terms of the LGPL. DevIl is listed in the directory of the Free Software Foundation as Free Software.
+ backlinksCount 12
+ pageId 6578391
+ dailyPageViews 6
+ created 2006
+ appeared 2001
+
 reference https://semanticscholar.org/paper/5eab2aa7f9c00db214e1335c2c19033dbf68f831
+status historical
+wordRank 5117
+isOpenSource true
+
+hopl 6202

@@ -1,7 +1,7 @@
+title Slim
 appeared 2011
 type template
-website http://slim-lang.com/
-github https://github.com/slim-template/slim
+
 example
  doctype html
  html
@@ -14,4 +14,66 @@ example
  
    body
      h1 Markup examples
+
+patterns
+ hasCentralPackageRepository? false
+
 description A lightweight templating engine
+
+githubLanguage Slim
+ fileExtensions slim
+ trendingProjectsCount 0
+
+githubRepo https://github.com/slim-template/slim
+ firstCommit 2010
+ stars 4715
+ forks 458
+ subscribers 129
+ created 2010
+ updated 2018
+ description Slim is a template language whose goal is to reduce the syntax to the essential parts without becoming cryptic.
+ issues 41
+
+linguistGrammarRepo https://github.com/slim-template/ruby-slim.tmbundle
+ firstCommit 2010
+ lastCommit 2017
+ committerCount 24
+ commitCount 109
+ sampleCount 1
+ example
+  doctype html
+  html
+    head
+      title Slim Examples
+      meta name="keywords" content="template language"
+      meta name="author" content=author
+      javascript:
+        alert('Slim supports embedded javascript!')
+  
+    body
+      h1 Markup examples
+  
+      #content
+        p This example shows you how a basic Slim file looks like.
+  
+        == yield
+  
+        - unless items.empty?
+          table
+            - for item in items do
+              tr
+                td.name = item.name
+                td.price = item.price
+        - else
+          p
+           | No items found.  Please add some inventory.
+             Thank you!
+  
+      div id="footer"
+        = render 'footer'
+        | Copyright © #{year} #{author}
+
+website http://slim-lang.com/
+status active
+fileType text
+isOpenSource true

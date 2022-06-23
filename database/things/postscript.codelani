@@ -1,4 +1,105 @@
+title PostScript
 appeared 1982
 type textMarkup
-wikipedia PostScript
+
+patterns
+ hasCentralPackageRepository? false
+ hasComments? true
+ hasPostfixNotation? true
+
 description Postscript is a graphical page description language invented by ChuckGetsche and JohnWarnock (the President and CEO of Adobe). Its syntax looks a little bit like Forth, because it is derived from Forth; however, Postscript's internal implementation has nothing to do with Forth.
+
+wikipedia https://en.wikipedia.org/wiki/PostScript
+ example
+  /mm {360 mul 127 div} def
+   0 0 moveto
+   0 40 mm lineto stroke
+ related ghostscript lisp pdf ascii tex forth reverse-polish-notation latex
+ summary PostScript (PS) is a page description language in the electronic publishing and desktop publishing business. It is a dynamically typed, concatenative programming language and was created at Adobe Systems by John Warnock, Charles Geschke, Doug Brotz, Ed Taft and Bill Paxton from 1982 to 1984.
+ pageId 24080
+ dailyPageViews 473
+ created 2001
+ backlinksCount 942
+ revisionCount 914
+ appeared 1982
+
+githubLanguage PostScript
+ fileExtensions ps eps pfa
+ trendingProjectsCount 0
+
+helloWorldCollection PostScript
+ % Hello World in Postscript
+ %!PS
+ /Palatino-Roman findfont
+ 100 scalefont
+ setfont
+ 100 100 moveto
+ (Hello World!) show
+ showpage
+ 
+
+linguistGrammarRepo https://github.com/textmate/postscript.tmbundle
+ firstCommit 2006
+ lastCommit 2011
+ committerCount 3
+ commitCount 10
+ sampleCount 2
+ example
+  %!PS-Adobe-3.0
+  %%Creator: Aaron Puchert
+  %%Title: The Sierpinski triangle
+  %%Pages: 1
+  %%PageOrder: Ascend
+  
+  %%BeginProlog
+  % PAGE SETTINGS
+  /pageset {
+    28.3464566 28.3464566 scale    % set cm = 1
+    0.5 0.5 translate
+    0 setlinewidth
+  } def
+  
+  % sierpinski(n) draws a sierpinski triangle of order n
+  /sierpinski {
+  dup 0 gt {
+    [0.5 0 0 0.5 0 0] concat dup 1 sub sierpinski
+    [1 0 0 1 1 0] concat dup 1 sub sierpinski
+    [1 0 0 1 -1 1] concat dup 1 sub sierpinski
+    [2 0 0 2 0 -1] concat
+  } {
+    newpath
+      0 0 moveto
+      1 0 lineto
+      0 1 lineto
+    closepath
+    fill
+  } ifelse pop} def
+  %%EndProlog
+  
+  %%BeginSetup
+  << /PageSize [596 843] >> setpagedevice  % A4
+  %%EndSetup
+  
+  %%Page: Test 1
+  pageset
+  [20 0 10 300 sqrt 0 0] concat
+  9 sierpinski
+  showpage
+  %%EOF
+  
+
+status active
+country US
+fileType text
+
+tiobe PostScript
+
+hopl 1010
+
+quineRelay PostScript
+
+ubuntuPackage ghostscript
+
+rosettaCode PostScript
+
+corporateDevelopers Adobe

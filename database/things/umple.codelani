@@ -1,4 +1,39 @@
+title Umple
 appeared 2008
 type pl
+
+patterns
+ hasCentralPackageRepository? false
+
+wikipedia https://en.wikipedia.org/wiki/Umple
+ example
+  class GarageDoor
+   {
+      status {
+         Open { buttonOrObstacle -> Closing;  }
+         Closing {
+             buttonOrObstacle -> Opening;
+             reachBottom -> Closed;
+         }
+         Closed { buttonOrObstacle -> Opening; }
+         Opening {
+             buttonOrObstacle -> HalfOpen;
+             reachTop -> Open;
+         }
+         HalfOpen { buttonOrObstacle -> Opening; }
+     }
+   }
+ related java uml ruby php eclipse-editor xuml
+ summary Umple is a language for both object-oriented programming and modelling with class diagrams and state diagrams. The name Umple is a portmanteau of "UML", "ample" and "programming language", indicating that it is designed to provide ample features to extend programming languages with UML capabilities.
+ pageId 39874090
+ dailyPageViews 182
+ created 2013
+ backlinksCount 24
+ revisionCount 35
+ appeared 2008
+ fileExtensions ump
+
 website http://www.umple.org/
-wikipedia Umple
+status historical
+fileType text
+isOpenSource true

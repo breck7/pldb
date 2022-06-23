@@ -1,5 +1,7 @@
+title guru
 appeared 2009
 type pl
+
 example
  Inductive trie : Fun(A:type).type :=
  trie_none : Fun(A:type).<trie A>
@@ -7,5 +9,7 @@ example
  | trie_next : Fun(A:type)(o:<option A>)
  (unique l:<charvec <trie A>>).
  <trie A>.
-reference http://homepage.divms.uiowa.edu/~astump/papers/plpv09.pdf
+
 description  OpTT has been implemented in the GURU verified programming language, which includes a type- and proof-checker, and a compiler to efficient C code. In addition to the core OpTT, GURU implements a number of extensions, including ones for verification of programs using mutable state and input/output. This paper gives an introduction to verified programming in GURU.
+reference http://homepage.divms.uiowa.edu/~astump/papers/plpv09.pdf
+status historical

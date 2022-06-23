@@ -1,6 +1,7 @@
+title v-lang
 appeared 2018
 type pl
-website https://volt.ws/lang
+
 example
  package main
  
@@ -31,4 +32,7 @@ example
      ctx.input.hide()
      ui.alert('Hello, $name!')
  }
+
+website https://volt.ws/lang
 reference https://volt.ws/game
+status active

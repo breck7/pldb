@@ -1,5 +1,7 @@
+title CodeStudAssembler
 appeared 2017
 type assembly
+
 example
    test al,0x1
    jz not_string
@@ -11,4 +13,10 @@ example
  not_string:
    movq rax,[r13-0x60]
    retl
+
+patterns
+ hasCentralPackageRepository? false
+
 reference https://v8.dev/blog/csa
+status active
+fileType text

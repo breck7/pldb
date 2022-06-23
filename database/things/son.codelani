@@ -1,5 +1,24 @@
+title son
 appeared 2017
 type textMarkup
-github https://github.com/seagreen/Son
-reference https://www.reddit.com/r/haskell/comments/5zdq5y/rfc_son_subset_of_json_for_machinetomachine/
+
+patterns
+ hasCentralPackageRepository? false
+
 description A minimal subset of JSON for machine-to-machine communication
+
+githubRepo https://github.com/seagreen/Son
+ stars 359
+ forks 6
+ subscribers 12
+ created 2017
+ updated 2017
+ firstCommit 2017
+ description Experiment only. Consider https://matrix.org/docs/spec/appendices.html#canonical-json instead.
+ issues 9
+
+reference https://www.reddit.com/r/haskell/comments/5zdq5y/rfc_son_subset_of_json_for_machinetomachine/
+status active
+fileType text
+wordRank 1417
+isOpenSource true

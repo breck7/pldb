@@ -1,3 +1,25 @@
+title Curry programming language
 appeared 1990
 type pl
-wikipedia Curry_(programming_language)
+
+patterns
+ hasCentralPackageRepository? false
+ hasSemanticIndentation? true
+
+wikipedia https://en.wikipedia.org/wiki/Curry_(programming_language)
+ example
+  insert x ys     = x : ys
+   insert x (y:ys) = y : insert x ys
+ related c haskell prolog
+ summary Curry is an experimental functional logic programming language, based on the Haskell language. It merges elements of functional and logic programming, including constraint programming integration. It is nearly a superset of Haskell, lacking support mostly for overloading using type classes, which some implementations provide anyway as a language extension, such as the Münster Curry Compiler.
+ pageId 302187
+ created 2003
+ backlinksCount 53
+ revisionCount 126
+ dailyPageViews 51
+ appeared 1990
+
+status historical
+fileType text
+
+rosettaCode Curry

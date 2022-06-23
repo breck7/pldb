@@ -1,4 +1,77 @@
+title Forth
 appeared 1970
 type pl
 creators Charles H. Moore
-wikipedia Forth_(programming_language)
+
+patterns
+ hasCentralPackageRepository? true
+ hasComments? true
+ hasCaseInsensitiveIdentifiers? true
+ hasPostfixNotation? true
+  \ Multiplies 25 and 10 and then adds 50 to result
+  25 10 * 50 +
+ isCaseSensitive? false
+
+wikipedia https://en.wikipedia.org/wiki/Forth_(programming_language)
+ example
+  hex
+  create AKey   61 c, 8A c, 63 c, D2 c, FB c,
+  : test   cr   0 DO  rc4_byte . LOOP  cr ;
+  AKey 5 rc4_init
+  2C F9 4C EE DC  5 test   \ output should be: F1 38 29 C9 DE
+ related lisp apl factor postscript rpl rebol reverse-polish-notation freebsd c linux unix atmel-avr msp430 ascii joy
+ summary Forth is an imperative stack-based computer programming language and environment originally designed by Charles "Chuck" Moore. Language features include structured programming, reflection (the ability to modify the program structure during program execution), concatenative programming (functions are composed with juxtaposition) and extensibility (the programmer can create new commands). Although not an acronym, the language's name is sometimes spelled with all capital letters as FORTH, following the customary usage during its earlier years. A procedural programming language without type checking, Forth features both interactive execution of commands (making it suitable as a shell for systems that lack a more formal operating system) and the ability to compile sequences of commands for later execution. Some Forth implementations (usually early versions or those written to be extremely portable) compile threaded code, but many implementations today generate optimized machine code like other language compilers. Forth is used in the Open Firmware boot loader, in space applications, such as the Philae spacecraft and other embedded systems which involve interaction with hardware. The bestselling 1986 DOS game Starflight, from Electronic Arts, was written with a custom Forth. The free software Gforth implementation is actively maintained, as are several commercially supported systems.
+ pageId 11012
+ dailyPageViews 392
+ created 2001
+ backlinksCount 454
+ revisionCount 1239
+ appeared 1970
+
+githubLanguage Forth
+ fileExtensions fth 4th f for forth fr frt fs
+ trendingProjectsCount 0
+
+helloWorldCollection Forth
+ ' Hello world in Forth
+ 
+ ." Hello World" CR
+
+linguistGrammarRepo https://github.com/textmate/forth.tmbundle
+ firstCommit 2008
+ lastCommit 2016
+ committerCount 1
+ commitCount 3
+ sampleCount 16
+ example
+  : HELLO  ( -- )
+      ." Hello Forth (fth)!" ; 
+  
+  HELLO
+  
+  
+
+status active
+
+replit forth
+
+country US
+fileType text
+wordRank 3664
+
+tiobe Forth
+
+projectEuler Forth
+ memberCount
+  2019 56
+  2022 63
+
+hopl 182
+
+quineRelay Forth
+
+ubuntuPackage gforth
+
+codeMirror forth
+
+rosettaCode Forth

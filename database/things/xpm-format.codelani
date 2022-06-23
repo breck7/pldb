@@ -1,6 +1,7 @@
+title X PixMap
 appeared 1989
-type textData
-wikipedia X_PixMap
+type textDataFormat
+
 example
  static char* <variable_name>[] = {
  <Values>
@@ -8,3 +9,8 @@ example
  <Pixels>
  <Extensions>
  };
+
+wikipedia https://en.wikipedia.org/wiki/X_PixMap
+
+status active
+fileExtensions xpm

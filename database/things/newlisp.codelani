@@ -1,4 +1,92 @@
+title NewLisp
 appeared 1991
 type pl
+
+patterns
+ hasCentralPackageRepository? false
+ hasComments? true
+
+wikipedia https://en.wikipedia.org/wiki/NewLISP
+ related lisp common-lisp scheme pascal c tcl s-expressions xml utf-8 tcp udp linux solaris sqlite smtp ftp opengl
+ summary newLISP is an open source scripting language in the Lisp family of programming languages developed by Lutz Mueller and released under the GNU General Public License.
+ pageId 1964813
+ created 2005
+ backlinksCount 48
+ revisionCount 242
+ dailyPageViews 18
+ appeared 1991
+
+githubLanguage NewLisp
+ fileExtensions nl lisp lsp
+ trendingProjectsCount 0
+
+linguistGrammarRepo https://github.com/textmate/lisp.tmbundle
+ firstCommit 2005
+ lastCommit 2018
+ committerCount 6
+ commitCount 40
+ sampleCount 3
+ example
+  #!/usr/bin/env newlisp
+  
+  (constant 'NUM 8)
+  
+  (define (intersects? q1 q2)
+  	(or 
+  		(= (q1 0) (q2 0)) 
+  		(= (q1 1) (q2 1))
+  		(= (abs (- (q1 0) (q2 0))) (abs (- (q1 1) (q2 1))))))
+  
+  (define (variant? alist)
+  	(set 'logic nil)
+  	(cond
+  		((= (length alist) 1) true)
+  		((> (length alist) 1)
+  			(while (> (length alist) 1)
+  				(set 'q (pop alist -1))
+  				(dolist (el alist)
+  					(push 
+  						(intersects? 
+  							(list q (inc (length alist)))
+  							(list el (+ 1 $idx)))
+  					logic -1)))
+  			(not (apply or logic)))))
+  
+  (define (fork-by-line alist)
+  	(let (res '())
+  		(dolist (i (sequence 1 NUM))
+  			(set 'tmp alist)
+  			(push i tmp -1)
+  			(setf res (push tmp res -1)))
+  		res))
+  
+  (define (find-variants num)
+  	(let (res '())
+  		(cond 
+  			((< num 1) 
+  				(begin (println "num < 1") (exit)))
+  			((= num 1) 
+  				(dolist (i (sequence 1 NUM)) (push (list i) res -1)))
+  			((> num 1) 
+  				(dolist (v (find-variants (dec num))) 
+  					(set 'passed (filter variant? (fork-by-line v)))
+  					(if (not (empty? passed)) (extend res passed)))))
+  		res))
+  		
+  (set 'solutions (find-variants NUM))
+  (println (length solutions))
+  ;;(exit)
+
 website http://www.newlisp.org/
-wikipedia NewLISP
+status active
+
+twitter newlisp
+
+fileType text
+isOpenSource true
+
+projectEuler newLISP
+ memberCount
+  2022 1
+
+rosettaCode NewLISP

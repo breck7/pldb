@@ -1,4 +1,6 @@
+title bml
 type metaLanguage
+
 example
  server
    path: /core/www/
@@ -17,4 +19,8 @@ example
    ...
    proxy host="proxy.example.com" port="8080"
      authentication: plain
+
+patterns
+ hasSemanticIndentation? true
+
 reference https://news.ycombinator.com/item?id=8645591

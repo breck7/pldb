@@ -1,4 +1,136 @@
+title Processing
 appeared 2001
 type pl
+
+patterns
+ hasCentralPackageRepository? false
+ hasComments? true
+
+wikipedia https://en.wikipedia.org/wiki/Processing_(programming_language)
+ example
+  PShape usa;
+  PShape state;
+  String [] Obama  = { "HI", "RI", "CT", "MA", "ME", "NH", "VT", "NY", "NJ",
+  	 "FL", "NC", "OH", "IN", "IA", "CO", "NV", "PA", "DE", "MD", "MI",
+  	 "WA", "CA", "OR", "IL", "MN", "WI", "DC", "NM", "VA" };
+  
+  String [] McCain = { "AK", "GA", "AL", "TN", "WV", "KY", "SC", "WY", "MT",
+  	 "ID", "TX", "AZ", "UT", "ND", "SD", "NE", "MS", "MO", "AR", "OK",
+  	 "KS", "LA" };
+  
+  void setup() {
+    size(950, 600);
+    // The file "Blank US Map (states only).svg" can be found at Wikimedia Commons
+    usa = loadShape("http://upload.wikimedia.org/wikipedia/commons/archive/1/1a/20130330152451!Blank_US_Map_(states_only).svg");
+    smooth(); // Improves the drawing quality of the SVG
+    noLoop();
+  }
+  
+  void draw() {
+    background(255);
+    // Draw the full map
+    shape(usa, 0, 0);
+    // Blue denotes states won by Obama
+    statesColoring(Obama , color(0, 0, 255));
+    // Red  denotes states won by McCain
+    statesColoring(McCain, color(255, 0, 0));
+    // Save the map as image
+    saveFrame("map output.png");
+  }
+  
+  void statesColoring(String[] states, int c){
+    for (int i = 0; i < states.length; ++i) {
+      PShape state = usa.getChild(states[i]);
+      // Disable the colors found in the SVG file
+      state.disableStyle();
+      // Set our own coloring
+      fill(c);
+      noStroke();
+      // Draw a single state
+      shape(state, 0, 0);
+    }
+  }
+ related java logo opengl postscript c javascript arduino scala clojure lisp max
+ summary Processing is an open source computer programming language and integrated development environment (IDE) built for the electronic arts, new media art, and visual design communities with the purpose of teaching the fundamentals of computer programming in a visual context, and to serve as the foundation for electronic sketchbooks. The project was initiated in 2001 by Casey Reas and Benjamin Fry, both formerly of the Aesthetics and Computation Group at the MIT Media Lab. In 2012, they started the Processing Foundation along with Daniel Shiffman, who joined as a third project lead. Johanna Hedva joined the Foundation in 2014 as Director of Advocacy. One of the aims of Processing is to allow non-programmers to start computer programming aided by visual feedback. The Processing language builds on the Java language, but uses a simplified syntax and a graphics user interface.
+ pageId 546083
+ dailyPageViews 429
+ created 2004
+ backlinksCount 240
+ revisionCount 517
+ appeared 2001
+ fileExtensions pde
+
+githubLanguage Processing
+ fileExtensions pde
+ trendingProjects
+  author name avatar url language languageColor stars forks currentPeriodStars description
+  greerviau SnakeAI https://github.com/greerviau.png https://github.com/greerviau/SnakeAI Processing #0096D8 578 133 77 "Train a Neural Network to play Snake using a Genetic Algorithm"
+ trendingProjectsCount 2
+
+helloWorldCollection Processing
+ // Hello world in Processing
+ 
+ println( "Hello world!" );
+
+linguistGrammarRepo https://github.com/textmate/processing.tmbundle
+ firstCommit 2006
+ lastCommit 2015
+ committerCount 5
+ commitCount 33
+ sampleCount 1
+ example
+  /**
+   * Shape Primitives. 
+   * 
+   * The basic shape primitive functions are triangle(),
+   * rect(), quad(), ellipse(), and arc(). Squares are made
+   * with rect() and circles are made with ellipse(). Each 
+   * of these functions requires a number of parameters to 
+   * determine the shape's position and size. 
+   */
+  
+  void setup() {
+    size(640, 360);
+    background(0);
+    noStroke();
+  }
+  
+  void draw() {
+    fill(204);
+    triangle(18, 18, 18, 360, 81, 360);
+  
+    fill(102);
+    rect(81, 81, 63, 63);
+  
+    fill(204);
+    quad(189, 18, 216, 18, 216, 360, 144, 360);
+  
+    fill(255);
+    ellipse(252, 144, 72, 72);
+  
+    fill(204);
+    triangle(288, 18, 351, 360, 288, 360); 
+  
+    fill(255);
+    arc(479, 300, 280, 280, PI, TWO_PI);
+  }
+  
+  
+
 website http://processing.org
-wikipedia Processing_(programming_language)
+status active
+
+twitter processingorg
+
+fileExtensions pde
+fileType text
+wordRank 1486
+
+tiobe Processing
+
+projectEuler Processing
+ memberCount
+  2019 43
+  2022 53
+
+rosettaCode Processing

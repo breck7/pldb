@@ -1,4 +1,34 @@
+title muPad
 appeared 1997
 type pl
+
+patterns
+ hasCentralPackageRepository? false
+
+wikipedia https://en.wikipedia.org/wiki/MuPAD
+ related linux matlab java
+ summary MuPAD is a computer algebra system (CAS). Originally developed by the MuPAD research group at the University of Paderborn, Germany, development was taken over by the company SciFace Software GmbH & Co. KG in cooperation with the MuPAD research group and partners from some other universities starting in 1997. Until autumn 2005, the version "MuPAD Light" was offered for free for research and education, but as a result of the closure of the home institute of the MuPAD research group, only the version "MuPAD Pro" became available for purchase. The MuPAD kernel is bundled with Scientific Notebook and Scientific Workplace. Former versions of MuPAD Pro were bundled with SciLab. In MathCAD's version 14 release Mupad was adopted as the CAS engine. In September 2008, SciFace was purchased by MathWorks and the MuPAD code was included in the Symbolic Math Toolbox add-on for MATLAB. On 28 September 2008, MuPAD was withdrawn from the market as a software product in its own right. However, it is still available in the Symbolic Math Toolbox in MATLAB and can also be used as a stand-alone program.
+ pageId 30874575
+ created 2004
+ backlinksCount 76
+ revisionCount 102
+ dailyPageViews 29
+ appeared 1997
+
+githubLanguage mupad
+ fileExtensions mu
+ trendingProjectsCount 0
+
+linguistGrammarRepo https://github.com/ccreutzig/sublime-MuPAD
+ firstCommit 2012
+ lastCommit 2018
+ committerCount 4
+ commitCount 18
+
 website http://mathworks.com/discovery/mupad.html
-wikipedia MuPAD
+status active
+country DE
+fileType text
+isOpenSource false
+
+hopl 7523

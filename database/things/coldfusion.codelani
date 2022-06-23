@@ -1,5 +1,110 @@
+title ColdFusion
 appeared 1995
 type pl
 creators Joseph J. Allaire
+
+patterns
+ hasCentralPackageRepository? true
+ hasComments? true
+
+wikipedia https://en.wikipedia.org/wiki/ColdFusion
+ example
+  http://path/to/components/Component.cfc?method=search&query=your+query&mode=strict
+ related java html cfml asp java-server-pages php javascript cfscript soap pdf smtp ftp xml xpath solaris excel-app linux ecmascript eclipse-editor wsdl json jython groovy jruby
+ summary Adobe ColdFusion is a commercial rapid web application development platform created by J. J. Allaire in 1995. (The programming language used with that platform is also commonly called ColdFusion, though is more accurately known as CFML.) ColdFusion was originally designed to make it easier to connect simple HTML pages to a database. By version 2 (1996), it became a full platform that included an IDE in addition to a full scripting language.
+ pageId 374636
+ dailyPageViews 85
+ created 2012
+ backlinksCount 386
+ revisionCount 1
+ appeared 1995
+
+githubLanguage ColdFusion
+ fileExtensions cfm cfml
+ trendingProjectsCount 0
+
+helloWorldCollection ColdFusion
+ <!---Hello world in ColdFusion--->
+ 
+ <cfset message = "Hello World">
+ <cfoutput> #message#</cfoutput>
+ 
+
+linguistGrammarRepo https://github.com/SublimeText/ColdFusion
+ firstCommit 2012
+ lastCommit 2017
+ committerCount 15
+ commitCount 584
+ sampleCount 1
+ example
+  <!--- cfcomment --->
+  <!--- nested <!--- cfcomment ---> --->
+  <!--- multi-line
+  nested
+  <!---
+  cfcomment
+  --->
+  --->
+  <!-- html comment -->
+  <html>
+  <head>
+  <title>Date Functions</title>
+  </head>
+  <body>
+  <cfset RightNow = Now()>
+  <cfoutput>
+   #RightNow#<br />
+   #DateFormat(RightNow)#<br />
+   #DateFormat(RightNow,"mm/dd/yy")#<br />
+   #TimeFormat(RightNow)#<br />
+   #TimeFormat(RightNow,"hh:mm tt")#<br />
+   #IsDate(RightNow)#<br />
+   #IsDate("January 31, 2007")#<br />
+   #IsDate("foo")#<br />
+   #DaysInMonth(RightNow)#
+  </cfoutput>
+  <cfset x="x">
+  <cfset y="y">
+  <cfset z="z">
+  <cfoutput group="x">
+      #x#
+      <cfoutput>#y#</cfoutput>
+      #z#
+  </cfoutput>
+  </body>
+  </html>
+  
+  <cfset person = "Paul">
+  <cfset greeting = "Hello #person#">
+  
+  <cfset greeting = "Hello" & " world!">
+  <cfset a = 5>
+  <cfset b = 10>
+  <cfset c = a^b>
+  <cfset c = a MOD b>
+  <cfset c = a / b>
+  <cfset c = a * b>
+  <cfset c = a + b>
+  <cfset c = a - b>
+  <!--- <!-- another <!--- nested --> ---> comment --->
+
 website https://www.adobe.com/products/coldfusion
-wikipedia ColdFusion
+status active
+
+twitter coldfusion
+
+fileType text
+isOpenSource false
+
+meetup coldfusion
+ memberCount 7310
+ groupCount 22
+
+projectEuler ColdFusion
+ memberCount
+  2019 9
+  2022 10
+
+rosettaCode ColdFusion
+
+corporateDevelopers Adobe

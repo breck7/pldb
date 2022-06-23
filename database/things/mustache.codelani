@@ -1,10 +1,28 @@
+title mustache
 appeared 2009
 type template
-website http://mustache.github.io/
-github https://github.com/mustache/mustache
+
 example
  Hello {{name}}
  You have just won {{value}} dollars!
  {{#in_ca}}
  Well, {{taxed_value}} dollars, after taxes.
  {{/in_ca}}
+
+patterns
+ hasCentralPackageRepository? false
+
+githubRepo https://github.com/mustache/mustache
+ firstCommit 2009
+ stars 2525
+ forks 237
+ subscribers 54
+ created 2009
+ updated 2018
+ description Logic-less Ruby templates.
+ issues 26
+
+website http://mustache.github.io/
+status active
+fileType text
+isOpenSource true

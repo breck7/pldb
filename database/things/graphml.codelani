@@ -1,3 +1,29 @@
+title GraphML
 appeared 2001
 type xmlFormat
-wikipedia GraphML
+
+patterns
+ hasCentralPackageRepository? false
+
+wikipedia https://en.wikipedia.org/wiki/GraphML
+ example
+  <?xml version="1.0" encoding="UTF-8"?>
+  <graphml xmlns="http://graphml.graphdrawing.org/xmlns"  
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://graphml.graphdrawing.org/xmlns/1.0/graphml.xsd">
+    <graph id="G" edgedefault="undirected">
+      <node id="n0"/>
+      <node id="n1"/>
+      <edge id="e1" source="n0" target="n1"/>
+    </graph>
+  </graphml>
+ related graph-modeling-language xml dot java
+ summary GraphML is an XML-based file format for graphs. The GraphML file format results from the joint effort of the graph drawing community to define a common format for exchanging graph structure data. It uses an XML-based syntax and supports the entire range of possible graph structure constellations including directed, undirected, mixed graphs, hypergraphs, and application-specific attributes.
+ created 2006
+ backlinksCount 37
+ pageId 3821625
+ revisionCount 85
+ dailyPageViews 60
+ appeared 2001
+
+status historical

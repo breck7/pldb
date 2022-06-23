@@ -1,7 +1,7 @@
+title mdx
 appeared 2017
 type textMarkup
-website https://mdxjs.com/
-github https://github.com/mdx-js/mdx
+
 example
  import { Chart } from '../components/chart'
  
@@ -10,3 +10,18 @@ example
  The chart is rendered inside our MDX document.
  
  <Chart />
+
+githubRepo https://github.com/mdx-js/mdx
+ firstCommit 2017
+ stars 6698
+ forks 265
+ subscribers 73
+ created 2017
+ updated 2019
+ description JSX in Markdown for ambitious projects
+ issues 20
+
+website https://mdxjs.com/
+status active
+
+twitter chrisbiscardi

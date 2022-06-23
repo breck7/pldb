@@ -1,6 +1,7 @@
+title UNITY programming language
 appeared 1988
 type pl
-wikipedia UNITY_(programming_language)
+
 example
  Program bubblesort
  declare
@@ -15,3 +16,34 @@ example
              A[i], A[i+1] := A[i+1], A[i] 
                  if A[i] > A[i+1] > >
  end
+
+patterns
+ hasCentralPackageRepository? false
+
+wikipedia https://en.wikipedia.org/wiki/UNITY_(programming_language)
+ example
+  Program shortestpath2
+  declare
+      n: integer,
+      D: array [0..n-1, 0..n-1] of integer
+  initially
+      n = 10 #
+      <|| i,j : 0 <= i < n and 0 <= j < n ::
+          D[i,j] = rand() % 10 >
+  assign
+      <|| i,j : 0 <= i < n and 0 <= j < n ::
+          D[i,j] := min(D[i,j], <min k : 0 <= k < n :: D[i,k] + D[k,j] >) >
+  end
+ summary UNITY is a programming language constructed by K. Mani Chandy and Jayadev Misra for their book Parallel Program Design: A Foundation. It is a theoretical language which focuses on what, instead of where, when or how. The language contains no method of flow control, and program statements run in a nondeterministic way until statements cease to cause changes during execution. This allows for programs to run indefinitely, such as auto-pilot or power plant safety systems, as well as programs that would normally terminate (which here converge to a fixed point).
+ pageId 3092830
+ created 2005
+ backlinksCount 6
+ revisionCount 41
+ dailyPageViews 38
+ appeared 1988
+
+status historical
+fileType text
+wordRank 6887
+
+hopl 1446

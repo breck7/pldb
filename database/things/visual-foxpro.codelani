@@ -1,4 +1,63 @@
+title Visual FoxPro
 appeared 1995
 type pl
+
+patterns
+ hasCentralPackageRepository? false
+
+wikipedia https://en.wikipedia.org/wiki/Visual_FoxPro
+ example
+  PRIVATE cAuthorID, cAuthorName      && Private variables supplant any previous global or private variable of the same name
+   LOCAL nHnd, nResult                 && Local variables are visible only here
+  
+   * Connect to an ODBC data source
+   nHnd = SQLCONNECT ("ODBCDSN", "user", "pwd")
+  
+   * Enter a loop so we can exit to the close connection code if there's an error
+   DO WHILE .T.
+       * Execute a SQL command
+       nResult = SQLEXEC (nHnd, "USE master")
+       IF nResult < 0
+           MESSAGEBOX ("MASTER database does not exist!")
+           EXIT  && To close the connection
+       ENDIF
+  
+       * Retrieve data from the remote server and stores it in a local data cursor
+       nResult = SQLEXEC (nHnd, "SELECT * FROM authors", "QAUTHORS")
+       IF nResult < 0
+           MESSAGEBOX ("Unable to execute remote SQL SELECT command!")
+           EXIT  && To close the connection
+       ENDIF
+  
+       * Update a record in a remote table using parameters
+       cAuthorID     = "1001"
+       cAuthorName   = "New name"
+       nResult       = SQLEXEC (nHnd, "UPDATE authors SET auth_name = ?cAuthorName WHERE auth_id = ?cAuthorID")
+       IF nResult < 0
+           MESSAGEBOX ("Unable to execute remote SQL UPDATE command!")
+           EXIT  && To close the connection
+       ENDIF
+  
+       * If we get here, we have retrieved everything successfully
+       EXIT  && Exit unconditionally
+   ENDDO
+  
+   * Close the connection
+   SQLDISCONNECT(nHnd)
+ related ia-32 foxpro unix dbase xbase sql linux
+ summary Visual FoxPro is a discontinued data-centric, object-oriented, procedural, programming language produced by Microsoft. It was derived from FoxPro (originally known as FoxBASE) which was developed by Fox Software beginning in 1984. It contained the fastest PC-based database engine available at the time. Fox Technologies merged with Microsoft in 1992, after which the software acquired further features and the prefix "Visual". The database engine is more powerful than the Microsoft Jet Database Engine which is used by Microsoft Access. FoxPro 2.6 worked on Mac OS, DOS, Windows, and Unix. Visual FoxPro 3.0, the first "Visual" version, reduced platform support to only Mac and Windows, and later versions 5, 6, 7, 8 and 9 were Windows-only. The current version of Visual FoxPro is COM-based and Microsoft has stated that they do not intend to create a Microsoft .NET version. Version 9.0, released in 2004 and updated in 2007, is the final version of the product.
+ pageId 23952547
+ dailyPageViews 288
+ created 2003
+ backlinksCount 213
+ revisionCount 914
+ appeared 1984
+
 website http://msdn.microsoft.com/vfoxpro
-wikipedia Visual_FoxPro
+status active
+fileType text
+
+tiobe (Visual) FoxPro
+ currentRank 46
+
+corporateDevelopers Microsoft

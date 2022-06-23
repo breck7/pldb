@@ -1,3 +1,44 @@
+title ThinBasic
 appeared 2004
 type pl
-wikipedia ThinBasic
+
+patterns
+ hasCentralPackageRepository? false
+
+wikipedia https://en.wikipedia.org/wiki/ThinBasic
+ example
+  ' Specifies program will use functions from console module
+  uses "Console"
+  
+  ' TBMain represents main body of the program
+  function TBMain()
+    ' Creates variable to hold user name
+    local UserName as string
+  
+    ' Asks user for the name
+    Console_Print("What is your name?: ")
+  
+    ' Stores it to variable
+    UserName = Console_ReadLine
+  
+    ' If length of username is 0 then no name is specified, else program will say hello
+    if len(UserName) = 0 then
+      Console_PrintLine("No user name specified...") 
+    else
+      Console_PrintLine("Hello " + UserName + "!")  
+    end if
+  
+    ' Waits for any key from user before program ends
+    Console_WaitKey
+  end function
+ related basic c visual-basic powerbasic opengl opencl xml freebasic microsoft-macro-assembler
+ summary thinBasic is a BASIC-like computer programming language interpreter with a central core engine architecture surrounded by many specialized modules. Although originally designed mainly for computer automation, thanks to its modular structure it can be used for wide range of tasks.
+ created 2005
+ backlinksCount 96
+ pageId 2046810
+ revisionCount 158
+ dailyPageViews 15
+ appeared 2015
+
+status historical
+isOpenSource true

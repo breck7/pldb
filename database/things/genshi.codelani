@@ -1,3 +1,29 @@
+title Genshi
 appeared 2006
 type template
-wikipedia Genshi_(templating_language)
+
+patterns
+ hasCentralPackageRepository? false
+
+wikipedia https://en.wikipedia.org/wiki/Genshi_(templating_language)
+ example
+  <html xmlns="http://www.w3.org/1999/xhtml" xmlns:py="http://genshi.edgewall.org/">
+      <body>
+          <p py:content="2 + 2">This will be replaced with 4</p>
+      </body>
+  </html>
+ related xml python html kid
+ summary Genshi is a template engine for XML-based vocabularies written in  Python.  Genshi is used to easily insert generated output into XML-based languages, usually HTML, and reuse elements between documents.  Genshi's syntax is based on Kid, but its architecture is different. Genshi aims to implement some of its functionality while processing templates faster, by dynamically processing templates using a stream based API, instead of compiling templates to Python code.Genshi can be used with several Python web frameworks, such as CherryPy, TurboGears, Pylons and web2py. Genshi has replaced Kid in the TurboGears 2.x web framework.
+ backlinksCount 15
+ pageId 8471397
+ created 2006
+ revisionCount 44
+ dailyPageViews 8
+ appeared 2006
+
+githubLanguage Genshi
+ fileExtensions kid
+ trendingProjectsCount 0
+
+status active
+fileType text

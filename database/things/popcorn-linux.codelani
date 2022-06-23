@@ -1,3 +1,9 @@
+title popcorn-linux
 appeared 1994
 type os
+
+patterns
+ hasCentralPackageRepository? false
+
 website http://popcornlinux.org/
+status active

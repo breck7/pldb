@@ -1,8 +1,18 @@
+title dex
 appeared 2018
 type pl
-github https://github.com/google-research/dex-lang
+
 example
  :p x = 1.                -- let binding
    y = (z = 2.; z + 1.)  -- let binding of a nested let expression
    ..                    -- escaped cosmetic line break
    x + y                 -- body of let expression
+
+githubRepo https://github.com/google-research/dex-lang
+ firstCommit 2018
+ stars 114
+ forks 1
+ subscribers 10
+ created 2019
+ updated 2019
+ description Research language for array processing in the Haskell/ML family

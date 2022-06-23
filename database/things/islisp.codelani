@@ -1,3 +1,21 @@
+title ISLISP
 appeared 2007
 type pl
-wikipedia ISLISP
+
+patterns
+ hasCentralPackageRepository? false
+
+wikipedia https://en.wikipedia.org/wiki/ISLISP
+ related common-lisp eulisp le-lisp scheme clos openlisp
+ summary ISLISP (also capitalized as ISLisp) is a programming language in the LISP family standardized by ISO working group ISO/IEC JTC 1/SC 22/WG 16 (commonly referred to simply as SC22/WG16 or WG16). The primary output of this working group was an International Standard, ISO/IEC 13816:1997(E), published by ISO.  The standard was updated in 2007 and republished as ISO/IEC 13816:2007(E).  Although official publication was through ISO, versions of the ISLISP language specification are available that are believed to be in the public domain.The goal of this standardization effort was to define a small, core language to help bridge the gap between differing dialects of Lisp. It attempted to accomplish this goal by studying primarily Common Lisp, EuLisp, Le Lisp, and Scheme and standardizing only those features shared between them. From ISLISP.info: ISLISP has these design goals:  Compatible with existing Lisp dialects where feasible. Provide basic functionality. Object-oriented. Designed with extensibility in mind. Gives priority to industrial needs over academic needs. Promotes efficient implementations and applications.ISLISP has separate function and variable namespaces (hence it is a Lisp-2). ISLISP's object system, ILOS, is for the most part a subset of CLOS.
+ pageId 6976849
+ created 2006
+ backlinksCount 50
+ revisionCount 63
+ dailyPageViews 17
+ appeared 2007
+
+status historical
+fileType text
+
+hopl 1690

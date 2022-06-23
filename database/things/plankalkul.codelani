@@ -1,4 +1,33 @@
+title Plankalkul
 appeared 1948
 type pl
 creators Konrad Zuse
-wikipedia Plankalkül
+
+patterns
+ hasCentralPackageRepository? false
+
+wikipedia https://en.wikipedia.org/wiki/Plankalkül
+ example
+  P1 max3 (V0[:8.0],V1[:8.0],V2[:8.0]) → R0[:8.0]
+  max(V0[:8.0],V1[:8.0]) → Z1[:8.0]
+  max(Z1[:8.0],V2[:8.0]) → R0[:8.0]
+  END
+  P2 max (V0[:8.0],V1[:8.0]) → R0[:8.0]
+  V0[:8.0] → Z1[:8.0]
+  (Z1[:8.0] < V1[:8.0]) → V1[:8.0] → Z1[:8.0]
+  Z1[:8.0] → R0[:8.0]
+  END
+ related algol-58 algol
+ summary Plankalkül (German pronunciation: [ˈplaːnkalkyːl], "Plan Calculus") is a programming language designed for engineering purposes by Konrad Zuse between 1942 and 1945. It was the first high-level (non-von Neumann) programming language to be designed for a computer. "Kalkül" means formal system – the Hilbert-style deduction system is for example originally called "Hilbert-Kalkül", so Plankalkül means "formal system for planning".
+ pageId 65944
+ dailyPageViews 154
+ created 2002
+ backlinksCount 51
+ revisionCount 268
+ appeared 1948
+
+status historical
+country DE
+fileType text
+
+hopl 3

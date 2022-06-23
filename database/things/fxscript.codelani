@@ -1,3 +1,19 @@
+title FXScript
 appeared 2002
 type pl
-wikipedia FXScript
+
+patterns
+ hasCentralPackageRepository? false
+
+wikipedia https://en.wikipedia.org/wiki/FXScript
+ example
+  scale(Region, CenterOfScale, 0.5, 0.5);
+  blitrect(ImageBuffer, OrigRegion, Destination-Buffer, Region);
+ summary FXScript is a scripting language for Final Cut Pro and Final Cut Express.  FXBuilder is the scripting utility in which users are able to modify existing FCP FXScripts or program completely new ones. For example, to scale an image, only two lines are necessary to scale an image from its full size to half size:  scale(Region, CenterOfScale, 0.5, 0.5); blitrect(ImageBuffer, OrigRegion, Destination-Buffer, Region);  First the region, which might be a rectangle, is scaled by the statement scale and its parameters.  Then the statement blitrect copies a region of an image into a changed region. When the OrigRegion and the new Region have different sizes, Final Cut Pro scales the image to fit into the new region. A Statement is a command that accomplishes a single action. In our example, the statements are scale and blitrect.   In FXBuilder users can create and test FXScripts, optionally in multiple windows.
+ created 2010
+ backlinksCount 4
+ pageId 27720109
+ revisionCount 9
+ dailyPageViews 2
+
+status historical

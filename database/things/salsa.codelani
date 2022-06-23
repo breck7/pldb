@@ -1,4 +1,48 @@
+title Simple Actor Language System and Architecture
 appeared 2001
 type pl
+
+patterns
+ hasCentralPackageRepository? false
+
+wikipedia https://en.wikipedia.org/wiki/SALSA_(programming_language)
+ example
+  module demo;
+  
+   
+  /*
+     This behavior simply prints out a string,
+     reads a line from the Standard Input,
+     combines the return value of the Standard Input with other strings,
+     and then prints out the combined string.
+  */
+  
+  behavior StandardInputTest{
+  
+     public StandardInputTest() {}
+  
+     String mergeString(String str1, String str2, String str3) {
+         return str1+str2+str3;
+      }
+  
+     void act(String[] args) {
+        standardOutput<-println("What's your name?")@
+        standardInput<-readLine()@
+        self<-mergeString("Hi, ",token, ". Nice to meet you!" )@
+        standardOutput<-println(token);
+     }
+  }
+ related java
+ summary The SALSA programming language (Simple Actor Language System and Architecture) is an actor-oriented programming language that uses concurrency primitives beyond asynchronous message passing, including token-passing, join, and first-class continuations. It also supports distributed computing over the Internet with universal naming, remote communication, and migration linguistic abstractions and associated middleware. For portability, it produces Java code.
+ pageId 2344513
+ dailyPageViews 14
+ created 2005
+ backlinksCount 11
+ revisionCount 16
+ appeared 2001
+ fileExtensions salsa
+
 website http://wcl.cs.rpi.edu/salsa/
-wikipedia SALSA_(programming_language)
+standsFor Simple Actor Language System and Architecture
+status historical
+fileType text

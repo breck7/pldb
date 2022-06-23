@@ -1,7 +1,7 @@
+title tht
 appeared 2017
 type pl
-website https://tht-lang.org/
-github https://github.com/joelesko/tht
+
 example
  // Familiar variable and List syntax.
  $colors = ['red', 'blue', 'green'];
@@ -35,3 +35,17 @@ example
      -- }
      </>
  }
+
+githubRepo https://github.com/joelesko/tht
+ firstCommit 2017
+ stars 87
+ forks 4
+ subscribers 15
+ created 2017
+ updated 2019
+ description THT Web Language
+
+website https://tht-lang.org/
+hackerNewsDiscussions
+ id|title|time|timestamp|by|comments|score
+ 15163343|Show HN: THT – a cleaner, safer language that compiles to PHP|2017-09-03 19:29:56 UTC|1504466996|jlesk|0|3

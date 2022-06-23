@@ -1,3 +1,31 @@
+title Template Attribute Language
 appeared 2007
 type template
-wikipedia Template_Attribute_Language
+
+patterns
+ hasCentralPackageRepository? false
+
+wikipedia https://en.wikipedia.org/wiki/Template_Attribute_Language
+ example
+  <html metal:define-macro="icing">
+   ...
+   <metal:myslot define-slot="optional-form">
+   ...
+   </html>
+   
+   <html metal:use-macro="templates/page/macros/icing">
+   <form metal:fill-slot="optional-form" action="."
+           tal:attributes="action context/designator">
+   ...
+   </form>
+   </html>
+ related html xml python java perl perl-6 common-lisp thymeleaf
+ summary The Template Attribute Language (TAL) is a templating language used to generate dynamic HTML and XML pages. Its main goal is to simplify the collaboration between programmers and designers. This is achieved by embedding TAL statements inside valid HTML (or XML) tags which can then be worked on using common design tools. TAL was created for Zope but is used in other Python-based projects as well.
+ backlinksCount 19
+ pageId 10517358
+ created 2007
+ revisionCount 91
+ dailyPageViews 19
+
+status historical
+fileType text

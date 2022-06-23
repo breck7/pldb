@@ -1,3 +1,20 @@
+title Knowledge Query and Manipulation Language
 appeared 1993
 type queryLanguage
-wikipedia Knowledge_Query_and_Manipulation_Language
+
+patterns
+ hasCentralPackageRepository? false
+
+wikipedia https://en.wikipedia.org/wiki/Knowledge_Query_and_Manipulation_Language
+ related knowledge-interchange-format
+ summary The Knowledge Query and Manipulation Language, or KQML, is a language and protocol for communication among software agents and knowledge-based systems. It was developed in the early 1990s part of the DARPA knowledge Sharing Effort, which was aimed at developing techniques for building large-scale knowledge bases which are shareable and reusable. While originally conceived of as an interface to knowledge based systems, it was soon repurposed as an Agent communication language.Work on KQML was led by Tim Finin of the University of Maryland, Baltimore County and  Jay Weber of EITech and involved contributions from many researchers. The KQML message format and protocol can be used to interact with an intelligent system, either by an application program, or by another intelligent system. KQML's "performatives" are operations that agents perform on each other's knowledge and goal stores. Higher-level interactions such as contract nets and negotiation are built using these. KQML's "communication facilitators" coordinate the interactions of other agents to support knowledge sharing.  Experimental prototype systems support concurrent engineering, intelligent design, intelligent planning, and scheduling. KQML is superseded by FIPA-ACL.
+ pageId 17216
+ created 2002
+ backlinksCount 12
+ revisionCount 40
+ dailyPageViews 9
+ appeared 1990
+
+standsFor Knowledge Query and Manipulation Language
+status historical
+fileType text

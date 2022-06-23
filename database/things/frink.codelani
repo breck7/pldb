@@ -1,4 +1,37 @@
+title Frink programming language
 appeared 2014
 type pl
+
+patterns
+ hasCentralPackageRepository? false
+ hasComments? true
+
+wikipedia https://en.wikipedia.org/wiki/Frink_(programming_language)
+ related jvm java
+ summary Frink is a computer programming language. It is, according to creator of the language, "designed to make physical calculations simple, to help ensure that answers come out right, and to make a tool that's really useful in the real world. It tracks units of measure (feet, meters, kilograms, watts, etc.) through all calculations, allowing you to mix units of measure transparently, and helps you easily verify that your answers make sense."
+ pageId 54431028
+ dailyPageViews 8
+ created 2017
+ backlinksCount 6
+ revisionCount 11
+ appeared 2011
+
+helloWorldCollection Frink programming language
+ // Hello World in Frink
+ 
+ println["Hello World!"]
+ 
+
 website https://frinklang.org/
-wikipedia Frink_(programming_language)
+status historical
+
+twitter frinklang
+
+fileType text
+
+projectEuler Frink
+ memberCount
+  2019 14
+  2022 14
+
+rosettaCode Frink

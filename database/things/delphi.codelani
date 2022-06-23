@@ -1,5 +1,64 @@
+title Delphi/Object Pascal
 appeared 1995
 type pl
+
+patterns
+ hasCentralPackageRepository? false
+ hasComments? true
+
+wikipedia https://en.wikipedia.org/wiki/Delphi_(programming_language)
+ example
+  procedure TForm1.ShowSomethingOnCreate;
+  begin
+    Label1.Text := 'Hello World!';
+  end;
+ related object-pascal pascal ia-32 ios android linux mercurial turbo-pascal x86-isa assembly-language java uml xml cil php visual-basic oxygene free-pascal
+ summary Embarcadero Delphi is an integrated development environment (IDE) for desktop, mobile, web, and console applications. It's also an event driven language. Delphi's compilers use their own Object Pascal dialect of Pascal and generate native code for several platforms: Windows (x86 and x64), OS X (32-bit only), iOS (32 and 64-bit), Android and Linux (64-bit Intel). Delphi, part of RAD Studio, includes a code editor with Code Insight (code completion), Error Insight (real-time error-checking), and other features; refactoring; a visual forms designer for both VCL (native Windows) and FMX (cross-platform, partially native per platform); an integrated debugger for all platforms including mobile; source control (SVN, git, and Mercurial); and support for third-party plugins. It has strong database support. It is not unusual for a Delphi project of a million lines to compile in a few seconds – one benchmark gave 170,000 lines per second. It is under active development, with (in 2016) releases every six months, with new platforms being added approximately every second release. Delphi was originally developed by Borland as a rapid application development tool for Windows as the successor of Turbo Pascal. Delphi added full object-orientation to the existing language, and since then the language has grown and supports many other modern language features, including generics and anonymous methods, as well as unusual features such as inbuilt string types and native COM support. Delphi and its C++ counterpart, C++Builder, share many core components, notably the IDE, the Visual Component Library (VCL), and much of the RTL, and are compatible with each other: C++Builder 6 and onwards can consume Delphi-language files and C++ in the one project, and packages compiled with C++Builder written in C++ can be used from within Delphi. In 2007, the products were released jointly as RAD Studio. RAD Studio is a shared host for Delphi and C++Builder, and can be purchased with either or both. In 2006, Borland’s developer tools section was transferred from Borland to a wholly owned subsidiary known as CodeGear, which was sold to Embarcadero Technologies in 2008. In 2015, Embarcadero was purchased by Idera Software, but the Embarcadero mark was retained for the developer tools division.
+ pageId 349208
+ dailyPageViews 765
+ created 2018
+ backlinksCount 303
+ revisionCount 3
+ appeared 2006
+
+helloWorldCollection Delphi%2FObject Pascal
+ // Hello World in Delphi
+ Program Hello_World;
+ 
+ {$APPTYPE CONSOLE}
+ 
+ Begin
+   WriteLn('Hello World');
+ End.
+ 
+
 website https://www.embarcadero.com/products/delphi
-wikipedia Delphi_(programming_language)
 reference http://delphi.wikia.com/wiki/Delphi_File_Extensions
+aka Embarcadero Delphi
+status active
+country US
+fileType text
+isOpenSource false
+
+tiobe Delphi/Object Pascal
+ currentRank 9
+
+meetup delphi
+ memberCount 2368
+ groupCount 24
+
+projectEuler Delphi
+ memberCount
+  2019 482
+  2022 481
+
+hopl 1963
+
+subreddit delphi
+ memberCount
+  2017 1085
+
+rosettaCode Delphi
+
+indeedJobs delphi engineer
+ 2017 181

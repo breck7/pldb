@@ -1,3 +1,11 @@
+title Plaid
 appeared 2009
 type pl
-wikipedia Plaid_%28programming_language%29
+
+patterns
+ hasCentralPackageRepository? false
+
+wikipedia https://en.wikipedia.org/wiki/Plaid_%28programming_language%29
+ dailyPageViews -1
+
+status historical

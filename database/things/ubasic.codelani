@@ -1,3 +1,51 @@
+title UBASIC
 appeared 1991
 type pl
-wikipedia UBASIC
+
+patterns
+ hasCentralPackageRepository? false
+
+wikipedia https://en.wikipedia.org/wiki/UBASIC
+ example
+  10   CONSOLE:CONSOLE 1,24,0:LOCATE 1,0
+    20   PRINT CHR(2);"N","P(N)","PARTITION COUNT"
+    30   WORD -19:POINT -8:H%=11:'FOR N UP TO ~1200
+    40   'PRINT=PRINT+"PARTN5.TXT":'output redirect
+    50   N=0:'INPUT N
+    60   CLR TIME
+    70   Mu=PI(SQRT(24*N-1)/6)
+    80   CLR S
+    90   FOR K=1 TO H%
+   100    '110 to 160 is selberg formula
+   110    CLR C
+   120    FOR L=0 TO 2*K-1
+   130      IF ((3*L^2+L)\2)@K=(-N)@K
+   140       :C+=(-1)^L*COS(PI((6*L+1)/(6*K)))
+   150    NEXT
+   160    'to get A(K,N), multiply C by SQRT(K/3)
+   170    U=EXP(Mu/K)
+   180    R=(Mu+K)/U:'Rademacher's convergence term
+   190    S+=((Mu-K)*U+R)*C
+   200   NEXT
+   210   S=ROUND(ABS(S*2/(MU*(24*N-1))))
+   220   PRINT CUTSPC(STR(N));
+   230   LOCATE 38-ALEN(S):PRINT S
+   240   IF N<1000:INC N:GOTO 70
+   250   Tt=TIME1000:PRINT=PRINT:PRINT Tt/1000
+   260   '~1.7% faster if N,K,L changed to N%,K%,L%
+ related basic
+ summary UBASIC is a freeware (public domain software without source code) BASIC interpreter written by Yuji Kida at Rikkyo University in Japan, specialized for mathematical computing.
+ created 2005
+ backlinksCount 104
+ pageId 1813917
+ revisionCount 108
+ dailyPageViews 10
+ appeared 1989
+
+status historical
+
+tryItOnline ubasic
+
+isOpenSource true
+
+hopl 1666

@@ -1,6 +1,62 @@
+title Interactive Data Language
 appeared 1977
 type pl
 creators David Stern
+
+patterns
+ hasCentralPackageRepository? false
+ hasComments? true
+
+wikipedia https://en.wikipedia.org/wiki/IDL_(programming_language)
+ related gdl pv-wave fortran c unix smalltalk matlab numpy python perl-data-language perl
+ summary IDL, short for Interactive Data Language, is a programming language used for data analysis. It is popular in particular areas of science, such as astronomy, atmospheric physics and medical imaging. IDL shares a common syntax with PV-Wave and originated from the same codebase, though the languages have subsequently diverged in detail. There are also two free implementations, GNU Data Language (GDL) and Fawlty Language (FL).
+ pageId 512587
+ dailyPageViews 202
+ created 2004
+ backlinksCount 123
+ revisionCount 274
+ appeared 1977
+
+githubLanguage IDL
+ fileExtensions pro dlm
+ trendingProjectsCount 0
+
+helloWorldCollection Interactive Data Language
+ IDL> ; Hello World in IDL (Interactive Data Language)
+ IDL> print, "Hello World"
+ 
+
+linguistGrammarRepo https://github.com/mgalloy/idl.tmbundle
+ firstCommit 2012
+ lastCommit 2017
+ committerCount 2
+ commitCount 62
+ sampleCount 4
+ example
+  MODULE mg_analysis
+  DESCRIPTION Tools for analysis
+  VERSION 1.0
+  SOURCE mgalloy
+  BUILD_DATE January 18, 2011
+  
+  FUNCTION MG_ARRAY_EQUAL      2 2 KEYWORDS
+  FUNCTION MG_TOTAL            1 1
+  
+  
+
 website http://www.exelisvis.com/ProductsServices/IDL.aspx
-wikipedia IDL_(programming_language)
 reference https://www.harrisgeospatial.com/Software-Technology/IDL
+standsFor Interactive Data Language
+status active
+country US
+fileType text
+
+tiobe IDL
+
+hopl 760
+
+codeMirror idl
+
+rosettaCode IDL
+
+antlr https://github.com/antlr/grammars-v4/tree/master/idl

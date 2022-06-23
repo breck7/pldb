@@ -1,3 +1,17 @@
+title IpTables Rope
 appeared 2005
 type pl
-wikipedia IpTables_Rope
+
+patterns
+ hasCentralPackageRepository? false
+
+wikipedia https://en.wikipedia.org/wiki/IpTables_Rope
+ related linux reverse-polish-notation
+ summary Rope is a programming language that allows developers to write extensions to the Iptables/Netfilter components of Linux using a simple scripting language based on Reverse Polish notation. It is a scriptable Iptables match module, used to identify whether IP packets passed to it match a particular set of criteria or not. Rope started life as a project to make the "string" match module of Iptables stronger and evolved fairly quickly into an open-ended scriptable packet matching mechanism.
+ created 2005
+ backlinksCount 4
+ pageId 3299549
+ revisionCount 12
+ dailyPageViews 4
+
+status historical

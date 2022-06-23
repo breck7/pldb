@@ -1,0 +1,24 @@
+title Lists
+skipIndexPage
+
+paragraph
+ Here is my list of lists
+
+pipeTable
+ List|ListLink
+ Top 100 Computer Languages|./top100.html
+ Top 250 Computer Languages|./top250.html
+ All Computer Languages|./languages.html
+ Language Patterns|./patterns.html
+ File Extensions|./extensions.html
+ People who created a Programming Language|./creators.html
+ Corporations developing Programming Languages|./corporations.html
+ Job Sites|./jobs.html
+ Programming Language Design Communities|./communities.html
+ Programming Language Conferences|./calendar.html
+ Programming Language Academic Journals|./journals.html
+ Programming Language Book Publishers|./publishers.html
+ Programming Competitions|./competitions.html
+
+maxColumns 1
+columnWidth 60

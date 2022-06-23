@@ -1,4 +1,48 @@
+title BETA
 appeared 1983
 type pl
+
+patterns
+ hasCentralPackageRepository? false
+
+wikipedia https://en.wikipedia.org/wiki/BETA_(programming_language)
+ example
+  max: (#
+      x, y, z: @integer
+  enter (x, y)
+  do
+      (if x >= y // True then
+          x -> z
+      else
+          y -> z
+      if)
+  exit z
+  #)
+ related simula eiffel
+ summary BETA is a pure object-oriented language originating within the "Scandinavian School" in object-orientation where the first object-oriented language Simula was developed. Among its notable features, it introduced nested classes, and unified classes with procedures into so called patterns.
+ pageId 135868
+ dailyPageViews 27
+ created 2002
+ backlinksCount 28
+ revisionCount 125
+ appeared 2007
+
+helloWorldCollection BETA
+ { *** Hello World in BETA ***}
+ (#
+   do
+      'Hello World!'->putLine
+ #)
+ 
+
 website http://cs.au.dk/~beta
-wikipedia BETA_(programming_language)
+status active
+country NO
+fileType text
+wordRank 2635
+
+tiobe BETA
+
+hopl 1032
+
+rosettaCode Beta

@@ -1,9 +1,24 @@
+title tuplemarkup
 appeared 2012
 type textMarkup
-github https://github.com/judnich/TupleMarkup
+
 example
  [html |
      Hello. This is an example [b|language] test.
   [ div [class testc] | And this text is enclosed in a div. ]
   [ a [href google.com] | Click this link [i|now] ]
  ]
+
+githubRepo https://github.com/judnich/TupleMarkup
+ firstCommit 2012
+ stars 28
+ forks 1
+ subscribers 4
+ created 2012
+ updated 2019
+ description A minimalist all-purpose markup language: nested lists with bracket-minimizing syntax. It enables XML-like and YAML-like semantics within the same clean and consistent language.
+ issues 1
+
+hackerNewsDiscussions
+ id|title|time|timestamp|by|comments|score
+ 5004956|Show HN: Tuple Markup Language – An all-purpose (Lisp-inspired) markup language|2013-01-03 22:01:21 UTC|1357250481|electrograv|1|2

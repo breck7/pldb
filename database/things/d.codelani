@@ -1,4 +1,107 @@
+title D
 appeared 2001
 type pl
+
+patterns
+ hasPointers? true
+ hasCentralPackageRepository? true
+ hasComments? true
+ hasOperatorOverloading? true
+ hasTypeInference? true
+ hasTemplates? true
+  template TCopy(T)
+  {
+      void copy(out T to, T from)
+      {
+          to = from;
+      }
+  }
+  int i;
+  TCopy!(int).copy(i, 3);
+
+wikipedia https://en.wikipedia.org/wiki/D_(programming_language)
+ example
+  1 import std.stdio, std.algorithm, std.range, std.string;
+   2 
+   3 void main()
+   4 {
+   5     dstring[][dstring] signs2words;
+   6 
+   7     foreach(dchar[] w; lines(File("words.txt")))
+   8     {
+   9         w = w.chomp().toLower();
+  10         immutable key = w.dup.sort().release().idup;
+  11         signs2words[key] ~= w.idup;
+  12     }
+  13 
+  14     foreach(words; signs2words)
+  15         if(words.length > 1)
+  16             writefln(words.join(" "));
+  17 }
+ related freebsd linux c csharp eiffel java python minid vala swift genie ruby assembly-language llvmir cil eclipse-editor visual-studio-editor emacs-editor vim-editor textmate-editor visual-studio-code-editor gdb utf-8
+ summary The D programming language is an object-oriented, imperative, multi-paradigm system programming language created by Walter Bright of Digital Mars and released in 2001. Bright was joined in the design and development effort in 2007 by Andrei Alexandrescu. Though it originated as a re-engineering of C++, D is a distinct language, having redesigned some core C++ features while also taking inspiration from other languages, notably Java, Python, Ruby, C#, and Eiffel. D's design goals attempt to combine the performance and safety of compiled languages with the expressive power of modern dynamic languages. Idiomatic D code is commonly as fast as equivalent C++ code, while being shorter and memory-safe. Type inference, automatic memory management and syntactic sugar for common types allow faster development, while bounds checking, design by contract features and a concurrency-aware type system help reduce the occurrence of bugs.
+ pageId 243881
+ dailyPageViews 1008
+ created 2003
+ backlinksCount 708
+ revisionCount 1343
+ appeared 2001
+ fileExtensions d
+
+githubLanguage D
+ fileExtensions d di
+ trendingProjectsCount 0
+
+helloWorldCollection D
+ // Hello World in D
+ 
+ import std.stdio;
+ 
+ void main()
+ {
+    writefln("Hello World!");
+ }
+ 
+
+linguistGrammarRepo https://github.com/textmate/d.tmbundle
+ firstCommit 2006
+ lastCommit 2018
+ committerCount 7
+ commitCount 113
+ sampleCount 9
+ example
+  unittest
+  {
+  }
+  
+
 website //dlang.org
-wikipedia D_(programming_language)
+status active
+
+tryItOnline d
+
+fileExtensions d
+fileType text
+wordRank 158
+
+tiobe D
+ currentRank 26
+
+meetup dpl
+ memberCount 1445
+ groupCount 7
+
+projectEuler D
+ memberCount
+  2019 228
+  2022 243
+
+hopl 3173
+
+quineRelay D
+
+ubuntuPackage gdc
+
+codeMirror d
+
+rosettaCode D

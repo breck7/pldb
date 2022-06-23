@@ -1,3 +1,10 @@
+title LEXX text editor
 appeared 1985
 type editor
-wikipedia LEXX_(text_editor)
+
+wikipedia https://en.wikipedia.org/wiki/LEXX_(text_editor)
+ summary LEXX is a text editor which was possibly the first to use live parsing and colour syntax highlighting. It was written by Mike Cowlishaw of IBM around 1985. The name was chosen because he wrote it as a tool for lexicographers, during an assignment for Oxford University Press's second edition of the Oxford English Dictionary. The program ran (and still, in 2018, runs) on mainframes under VM/CMS. LEXX's design was based on several other editors written by the same author (such as STET) augmented by the ability to dynamically parse text and display colour on the new colour terminals that had recently became available (PC-based, and stand-alone such as the IBM 3279). LEXX uses dynamically-loaded parsers which assign classes of elements (tokens formed from character strings) to fonts and colors. It allows indention to be used to format and show the structure of the file being edited, and other formatting options allow (for example) the hiding of selected classes of text, such as tags.  A collection of screenshots is available.LPEX ('Live Parsing Editor") is a reimplemented derivative of the LEXX concept, originally produced for OS/2 and AIX.  It now also runs on Windows, Linux, and the Java JVM.
+ backlinksCount 11
+ pageId 19663969
+ dailyPageViews 5
+ appeared 1985

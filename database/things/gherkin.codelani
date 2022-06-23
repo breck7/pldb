@@ -1,6 +1,7 @@
+title Gherkin
 appeared 2008
 type pl
-website https://docs.cucumber.io/gherkin/
+
 example
  Feature: Guess the word
  
@@ -14,5 +15,23 @@ example
     Given the Maker has started a game with the word "silky"
     When the Breaker joins the Maker's game
     Then the Breaker must guess a word with 5 characters
-reference https://docs.cucumber.io/gherkin/reference/
+
+patterns
+ hasCentralPackageRepository? false
+
 description Executable specifications
+
+githubLanguage Gherkin
+ fileExtensions feature
+ trendingProjectsCount 0
+
+linguistGrammarRepo https://github.com/cucumber/cucumber-tmbundle
+ firstCommit 2008
+ lastCommit 2017
+ committerCount 35
+ commitCount 261
+
+website https://docs.cucumber.io/gherkin/
+reference https://docs.cucumber.io/gherkin/reference/
+status active
+fileType text

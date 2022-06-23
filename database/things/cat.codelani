@@ -1,12 +1,25 @@
+title cat
 appeared 2016
 type pl
 creators Christopher Diggins
-github https://github.com/cdiggins/cat-language
+
 example
  1 1 +
  eq 2
  ["As I expected!"]
  ["I need to be repaired!"]
  if
-reference https://web.archive.org/web/20150205061802/http://cat-language.com/tutorial.html
+
 description Cat is a higher-order stack-oriented language.
+
+githubRepo https://github.com/cdiggins/cat-language
+ firstCommit 2016
+ stars 87
+ forks 5
+ subscribers 4
+ created 2016
+ updated 2019
+ description Cat - a statically typed functional stack-based programming language 
+ issues 3
+
+reference https://web.archive.org/web/20150205061802/http://cat-language.com/tutorial.html

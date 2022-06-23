@@ -1,3 +1,30 @@
+title XBLite
 appeared 2001
 type pl
-wikipedia XBLite
+
+patterns
+ hasCentralPackageRepository? false
+
+wikipedia https://en.wikipedia.org/wiki/XBLite
+ example
+  PROGRAM "sayhello"
+   ' interfaces to system DLLs
+   IMPORT "gdi32"             ' importing interface to gdi32.dll
+   IMPORT "user32"            ' importing interface to user32.dll
+   DECLARE FUNCTION Entry ()  ' declare function Entry()
+  
+   FUNCTION Entry ()          ' define (instantiate) function Entry()
+    ' display a message box and wait until the user clicks the 'OK!' button
+    MessageBoxA (0, &"Hello world!", &"Windows GUI Version", $$MB_OK)
+   END FUNCTION
+   END PROGRAM
+ related quickbasic basic m4
+ summary XBLite is a free Open Source BASIC programming language compiler and development system. It was started in 2001 by David Szafranski in order to provide a Windows exclusive version of the XBasic dialect. XBLite is released under the GNU GPL licensing scheme, Standard libraries are released under the GNU LGPL licensing scheme. The XBLite syntax is very similar to that of XBasic and somewhat similar to Microsoft's QuickBASIC in that it is a procedural language capable of subs and functions.  XBLite also has 64 bit integer data type, User Defined Types and the ability to have multiple modules in order to create GUI applications or games.
+ created 2008
+ backlinksCount 89
+ pageId 18695589
+ revisionCount 120
+ dailyPageViews 8
+ appeared 2001
+
+status historical

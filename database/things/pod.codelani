@@ -1,4 +1,87 @@
+title Pod
 appeared 1997
 type textMarkup
-wikipedia Plain_Old_Documentation
+
+patterns
+ hasCentralPackageRepository? false
+
+wikipedia https://en.wikipedia.org/wiki/Plain_Old_Documentation
+ example
+  =head1 NAME
+  
+  My::Module - An example module
+  
+  =head1 SYNOPSIS
+  
+      use My::Module;
+      my $object = My::Module->new();
+      print $object->as_string;
+  
+  =head1 DESCRIPTION
+  
+  This module does not really exist, it
+  was made for the sole purpose of
+  demonstrating how POD works.
+  
+  =head2 Methods
+  
+  =over 12
+  
+  =item C<new>
+  
+  Returns a new My::Module object.
+  
+  =item C<as_string>
+  
+  Returns a stringified representation of
+  the object. This is mainly for debugging
+  purposes.
+  
+  =back
+  
+  =head1 LICENSE
+  
+  This is released under the Artistic 
+  License. See L<perlartistic>.
+  
+  =head1 AUTHOR
+  
+  Juerd - L<http://juerd.nl/>
+  
+  =head1 SEE ALSO
+  
+  L<perlpod>, L<perlpodspec>
+  
+  =cut
+ related perl xml tex markdown parrot-vm bash tiddlywiki mediawiki ascii utf-8
+ summary Plain Old Documentation (pod) is a lightweight markup language used to document the Perl programming language.
+ backlinksCount 84
+ pageId 888219
+ created 2004
+ revisionCount 118
+ dailyPageViews 31
+ appeared 2000
+
+githubLanguage Pod
+ fileExtensions pod
+ trendingProjectsCount 0
+
+linguistGrammarRepo https://github.com/perl6/atom-language-perl6
+ sampleCount 3
+ example
+  use strict;
+  use warnings;
+  package DZT::Sample;
+  
+  sub return_arrayref_of_values_passed {
+    my $invocant = shift;
+    return \@_;
+  }
+  
+  1;
+  
+
 reference https://groups.google.com/forum/#!search/%22Plain$20Old$20Documentation%22/comp.lang.perl.misc/A9zVCf4UrIs/1hSITu_f4ckJ
+status active
+fileType text
+wordRank 9791

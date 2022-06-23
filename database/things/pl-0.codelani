@@ -1,3 +1,87 @@
+title PL/0
 appeared 1976
 type pl
-wikipedia PL/0
+
+patterns
+ hasCentralPackageRepository? false
+
+wikipedia https://en.wikipedia.org/wiki/PL/0
+ example
+  VAR x, y, z, q, r, n, f;
+  
+  PROCEDURE multiply;
+  VAR a, b;
+  BEGIN
+    a := x;
+    b := Y;
+    z := 0;
+    WHILE b > 0 DO
+    BEGIN
+      IF ODD b THEN z := z + a;
+      a := 2 * a;
+      b := b / 2
+    END
+  END;
+  
+  PROCEDURE divide;
+  VAR w;
+  BEGIN
+    r := x;
+    q := 0;
+    w := y;
+    WHILE w <= r DO w := 2 * w;
+    WHILE w > y DO
+    BEGIN
+      q := 2 * q;
+      w := w / 2;
+      IF w <= r THEN
+      BEGIN
+        r := r - w;
+        q := q + 1
+      END
+    END
+  END;
+  
+  PROCEDURE gcd;
+  VAR f, g;
+  BEGIN
+    f := x;
+    g := y;
+    WHILE f # g DO
+    BEGIN
+      IF f < g THEN g := g - f;
+      IF g < f THEN f := f - g
+    END;
+    z := f
+  END;
+  
+  PROCEDURE fact;
+  BEGIN
+    IF n > 1 THEN
+    BEGIN
+      f := n * f;
+      n := n - 1;
+      CALL fact
+    END
+  END;
+  
+  BEGIN
+    ?x; ?y; CALL multiply; !z;
+    ?x; ?y; CALL divide; !q; !r;
+    ?x; ?y; CALL gcd; !z;
+    ?n; f := 1; CALL fact; !f
+  END.
+ related pl-i pascal lex yacc python modula-2 csp isbn
+ summary PL/0 is a programming language, intended as an educational programming language, that is similar to but much simpler than Pascal, a general-purpose programming language. It serves as an example of how to construct a compiler. It was originally introduced in the book, Algorithms + Data Structures = Programs, by Niklaus Wirth in 1976. It features quite limited language constructs: there are no real numbers, very few basic arithmetic operations and no control-flow constructs other than "if" and "while" blocks. While these limitations make writing real applications in this language impractical, it helps the compiler remain compact and simple.
+ pageId 507221
+ created 2004
+ backlinksCount 26
+ revisionCount 133
+ dailyPageViews 40
+ appeared 1976
+
+status historical
+country CH
+fileType text
+
+hopl 2592

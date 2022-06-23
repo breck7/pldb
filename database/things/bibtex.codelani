@@ -1,7 +1,7 @@
+title BibTeX
 appeared 1985
 type application
-website https://www.ctan.org/pkg/bibtex
-wikipedia BibTeX
+
 example
   @inproceedings{Gousi13,
    author = {Gousios, Georgios},
@@ -19,3 +19,44 @@ example
    publisher = {IEEE Press},
    address = {Piscataway, NJ, USA},
   }
+
+patterns
+ hasCentralPackageRepository? false
+
+wikipedia https://en.wikipedia.org/wiki/BibTeX
+ example
+  @Book{abramowitz+stegun,
+   author    = "Milton {Abramowitz} and Irene A. {Stegun}",
+   title     = "Handbook of Mathematical Functions with
+                Formulas, Graphs, and Mathematical Tables",
+   publisher = "Dover",
+   year      =  1964,
+   address   = "New York City",
+   edition   = "ninth Dover printing, tenth GPO printing"
+  }
+ related latex tex url common-lisp unicode scribe html emacs-editor pdf
+ summary BibTeX is reference management software for formatting lists of references. The BibTeX tool is typically used together with the LaTeX document preparation system. Within the typesetting system, its name is styled as                                                 B                                                                I                   B                                                                       T                                                                               E                                                                       X                                     {\displaystyle {\mathrm {B{\scriptstyle {IB}}\!T\!_{\displaystyle E}\!X} }}   . The name is a portmanteau of the word bibliography and the name of the TeX typesetting software. The purpose of BibTeX is to make it easy to cite sources in a consistent manner, by separating bibliographic information from the presentation of this information, similarly to the separation of content and presentation/style supported by LaTeX itself.
+ pageId 239392
+ dailyPageViews 417
+ created 2003
+ backlinksCount 197
+ revisionCount 583
+ appeared 1985
+
+helloWorldCollection BibTeX
+ %Hello world in BibTex
+ 
+ ENTRY{author}{}{}
+ 
+ FUNCTION {hello.world}
+ { 
+   "Hello World!" write$ newline$
+ }
+ 
+ READ 
+ EXECUTE {hello.world}
+
+website https://www.ctan.org/pkg/bibtex
+status active
+fileExtensions bib
+fileType text

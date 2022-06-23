@@ -1,4 +1,42 @@
+title Apache Velocity
 appeared 2003
 type template
+
+patterns
+ hasCentralPackageRepository? false
+
+wikipedia https://en.wikipedia.org/wiki/Apache_Velocity
+ example
+  <html>
+      <body>
+          Hello Velocity World!
+      </body>
+  </html>
+ related java html sql postscript xml java-server-pages thymeleaf
+ summary Apache Velocity is a Java-based template engine that provides a template language to reference objects defined in Java code. It aims to ensure clean separation between the presentation tier and business tiers in a Web application (the model–view–controller design pattern). Velocity is an open source software project hosted by the Apache Software Foundation. It is released under the Apache License.
+ pageId 2285690
+ dailyPageViews 82
+ created 2005
+ backlinksCount 209
+ revisionCount 133
+ appeared 2003
+
+helloWorldCollection Apache Velocity
+ <HTML>
+ <!-- Hello World in Velocity -->
+ <BODY>
+   #set( $foo = "Hello World" )
+   $foo
+ </BODY>
+ </HTML>
+ 
+
 website http://velocity.apache.org/
-wikipedia Apache_Velocity
+aka Velocity
+status active
+fileType text
+isOpenSource true
+
+codeMirror velocity
+
+corporateDevelopers Apache

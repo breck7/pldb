@@ -1,6 +1,7 @@
+title SimCode
 appeared 1997
 type pl
-wikipedia SimCode
+
 example
  //============================================================
  //Section 1
@@ -79,5 +80,22 @@ example
    CASE (TRAN_HL) : tphl_val
  END;
  EXIT;
-reference https://en.wikipedia.org/wiki/CircuitMaker
+
+patterns
+ hasCentralPackageRepository? false
+
 description SimCode is a C like description language. You use it to define the characteristics and behavior of the device you are modeling. It includes functions to define parameters such as propagation delays, load characteristics, strengths, and so on. The device behavior is defined using truth tables, math functions and conditional control statements, such as IF..THEN statements. Digital SimCode is a proprietary language - devices created with it are not compatible with other simulators, nor are digital components created for other simulators compatible with Altium Designer's Mixed-Signal Circuit Simulator.
+
+wikipedia https://en.wikipedia.org/wiki/SimCode
+ related csharp arduino eagle kicad subversion gerber-image
+ summary CircuitMaker is electronic design automation software for printed circuit board designs targeted at the hobby, hacker, and maker community. CircuitMaker is available as freeware, and the hardware designed with it may be used for commercial and non-commercial purposes without limitations. It is currently available publicly as version 1.3 by Altium Limited, with the first non-beta release on January 17, 2016.
+ backlinksCount 42
+ pageId 48639018
+ created 2018
+ revisionCount 1
+ dailyPageViews 1
+ appeared 2016
+
+reference https://en.wikipedia.org/wiki/CircuitMaker
+status historical
+isOpenSource false

@@ -1,4 +1,34 @@
+title Z shell
 appeared 1990
 type pl
+
+patterns
+ hasCentralPackageRepository? false
+ hasHereDocs? true
+
+wikipedia https://en.wikipedia.org/wiki/Z_shell
+ related c bourne-shell bash korn-shell tcp ftp
+ summary The Z shell (Zsh) is a Unix shell that can be used as an interactive login shell and as a powerful command interpreter for shell scripting. Zsh is an extended Bourne shell with a large number of improvements, including some features of Bash, ksh, and tcsh.
+ pageId 95928
+ dailyPageViews 261
+ created 2002
+ backlinksCount 59
+ revisionCount 229
+ appeared 1990
+
 website http://www.zsh.org/
-wikipedia Z_shell
+status active
+
+tryItOnline zsh
+
+country US
+fileType text
+isOpenSource true
+
+tiobe Z shell
+
+hopl 2642
+
+quineRelay zsh
+
+ubuntuPackage zsh

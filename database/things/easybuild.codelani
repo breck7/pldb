@@ -1,5 +1,56 @@
+title Easybuild
 appeared 2014
 type application
-website http://easybuilders.github.io/easybuild/
-github https://github.com/easybuilders/easybuild
+
+patterns
+ hasCentralPackageRepository? false
+
 description EasyBuild is a software build and installation framework that allows you to manage (scientific) software on High Performance Computing (HPC) systems in an efficient way.
+
+githubLanguage Easybuild
+ fileExtensions eb
+ trendingProjectsCount 0
+
+githubRepo https://github.com/easybuilders/easybuild
+ stars 233
+ forks 95
+ subscribers 34
+ created 2012
+ updated 2018
+ description EasyBuild - building software with ease
+ issues 74
+ firstCommit 2012
+
+linguistGrammarRepo https://github.com/MagicStack/MagicPython
+ firstCommit 2015
+ lastCommit 2018
+ committerCount 13
+ commitCount 415
+ sampleCount 1
+ example
+  # not really (there's an EB_bzip2 easyblock), but fine for use in unit tests
+  easyblock = 'ConfigureMake'
+  
+  name = 'bzip2'
+  version = '1.0.6'
+  
+  homepage = 'http://www.bzip.org/'
+  description = """bzip2 is a freely available, patent free, high-quality data compressor. It typically
+  compresses files to within 10% to 15% of the best available techniques (the PPM family of statistical
+  compressors), whilst being around twice as fast at compression and six times faster at decompression."""
+  
+  toolchain = {'name': 'GCC', 'version': '4.9.2'}
+  toolchainopts = {'pic': True}
+  
+  sources = [SOURCE_TAR_GZ]
+  source_urls = ['http://www.bzip.org/%(version)s']
+  
+  builddependencies = [('gzip', '1.6')]
+  
+  moduleclass = 'tools'
+  
+
+website http://easybuilders.github.io/easybuild/
+status active
+fileType text
+isOpenSource true

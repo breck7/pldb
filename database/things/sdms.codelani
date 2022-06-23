@@ -1,2 +1,9 @@
+title SDMS
 type pl
+
+patterns
+ hasCentralPackageRepository? false
+
 reference https://ips-lmu.github.io/The-EMU-SDMS-Manual/chap-querysys-impl.html
+
+hopl 2488

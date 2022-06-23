@@ -1,5 +1,75 @@
+title OX
 appeared 1996
 type pl
 creators Jurgen A. Doornik
+
+patterns
+ hasCentralPackageRepository? false
+
+wikipedia https://en.wikipedia.org/wiki/Ox_(programming_language)
+ related linux r
+ summary Ox is an object-oriented matrix programming language with a mathematical and statistical function library, developed by Jurgen Doornik. It has been designed for econometric programming. It is available for Windows, Mac OS X and Linux platforms. The downloadable console version of Ox is free for academic use. A commercial version is available for non-academic use. According to its documentation, it should be cited whenever results are published.The programming environment for econometric modelling OxMetrics is based on Ox.
+ pageId 7762427
+ created 2006
+ backlinksCount 3
+ revisionCount 22
+ dailyPageViews 6
+ appeared 2011
+
+githubLanguage Ox
+ fileExtensions ox oxh oxo
+ trendingProjectsCount 0
+
+linguistGrammarRepo https://github.com/andreashetland/sublime-text-ox
+ firstCommit 2015
+ lastCommit 2015
+ committerCount 2
+ commitCount 20
+ sampleCount 3
+ example
+  nldge::ParticleLogLikeli()
+  {	decl it, ip,
+  		 mss, mbas, ms, my, mx, vw, vwi, dws,
+  		 mhi, mhdet, loglikeli, mData,
+  		 vxm, vxs, mxm=<>, mxsu=<>, mxsl=<>,
+  		 time, timeall, timeran=0, timelik=0, timefun=0, timeint=0, timeres=0;
+  
+  	mData = GetData(m_asY);
+  	mhdet = sqrt((2*M_PI)^m_cY * determinant(m_mMSbE.^2));		// covariance determinant
+  	mhi   = invert(m_mMSbE.^2);					// invert covariance of measurement shocks
+  
+  	ms 	  = m_vSss + zeros(m_cPar, m_cS);			// start particles
+  	mx 	  = m_vXss + zeros(m_cPar, m_cX);			// steady state of state and policy
+  
+  	loglikeli = 0;							// init likelihood
+  																								//timeall=timer();
+  	for(it = 0; it < sizer(mData); it++)
+  	{
+  		mss = rann(m_cPar, m_cSS) * m_mSSbE;			// state noise
+  		fg(&ms, ms, mx, mss);					// transition prior as proposal
+  		mx = m_oApprox.FastInterpolate(ms); 			// interpolate
+  		fy(&my, ms, mx, zeros(m_cPar, m_cMS));			// evaluate importance weights
+  		my -= mData[it][];					// observation error
+  
+  		vw = exp(-0.5 * outer(my,mhi,'d')' )/mhdet;		// vw = exp(-0.5 * sumr(my*mhi .*my ) )/mhdet;
+  
+  		vw = vw .== .NaN .? 0 .: vw;				// no policy can happen for extrem particles
+  		dws = sumc(vw);
+  		if(dws==0) return -.Inf;				// or extremely wrong parameters
+  		loglikeli += log(dws/m_cPar)	;			// loglikelihood contribution
+  																										//timelik += (timer()-time)/100;
+  																										//time=timer();
+  		vwi = resample(vw/dws)-1;				// selection step in c++
+  		ms = ms[vwi][];						// on normalized weights
+  		mx = mx[vwi][];
+  																	}
+  	return loglikeli;
+  }
+  
+
 website http://www.oxmetrics.net/
-wikipedia Ox_(programming_language)
+status active
+fileType text
+isOpenSource false
+
+hopl 2718

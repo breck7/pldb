@@ -1,3 +1,9 @@
+title Conditionals
 type pattern
-wikipedia Conditional_(computer_programming)
+psuedoExample if (isTrue) doSomething()
 description In computer science, conditional statements, conditional expressions and conditional constructs are features of a programming language, which perform different computations or actions depending on whether a programmer-specified boolean condition evaluates to true or false.
+
+wikipedia https://en.wikipedia.org/wiki/Conditional_(computer_programming)
+
+status active
+patternKeyword hasConditionals?

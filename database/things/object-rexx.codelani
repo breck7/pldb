@@ -1,5 +1,28 @@
+title Object Rexx
 appeared 1988
 type pl
 creators Simon C. Nash
+
+patterns
+ hasCentralPackageRepository? false
+ hasMultipleInheritance? true
+
+wikipedia https://en.wikipedia.org/wiki/Object_REXX
+ related linux rexx smalltalk netrexx solaris
+ summary The Object REXX programming language is an object-oriented scripting language initially produced by IBM for OS/2. It is a follow-on to and a significant extension of the "Classic Rexx" language originally created for the CMS component of VM/SP and later ported to MVS, OS/2 and PC DOS. OS/2 version of IBM Object REXX is deeply integrated with SOM. On October 12, 2004, IBM released Object REXX as open source software, giving rise to Open Object Rexx (ooREXX), now available for various operating systems: Linux, Solaris, Windows. This implementation includes a WSH Scripting Engine for Rexx. The released sources however didn't include significant piece of the SOM support. Object REXX supports multiple inheritance via the use of mixin classes.
+ pageId 1353817
+ dailyPageViews 17
+ created 2005
+ backlinksCount 32
+ revisionCount 76
+ appeared 1988
+ fileExtensions rxs rex
+
 website http://www.oorexx.org
-wikipedia Object_REXX
+status active
+fileExtensions rxs rex
+fileType text
+
+tiobe Object Rexx
+
+hopl 3742

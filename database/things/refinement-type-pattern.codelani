@@ -1,3 +1,9 @@
+title Refinement Types
 type pattern
-wikipedia Refinement_type
+psuedoExample evenInt where int % 2 = 0
 description A type endowed with a predicate which is assumed to hold for any element of the refined type.
+
+wikipedia https://en.wikipedia.org/wiki/Refinement_type
+
+status active
+patternKeyword hasRefinementTypes?

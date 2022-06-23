@@ -1,3 +1,56 @@
+title Assembly language
 appeared 1960
-type pl
-wikipedia Assembly_language
+type assembly
+
+patterns
+ hasCentralPackageRepository? false
+
+wikipedia https://en.wikipedia.org/wiki/Assembly_language
+ example
+  include \masm32\include\masm32rt.inc	; use the Masm32 library
+  
+  .code
+  demomain:
+    REPEAT 20
+  	switch rv(nrandom, 9)	; generate a number between 0 and 8
+  	mov ecx, 7
+  	case 0
+  		print "case 0"
+  	case ecx				; in contrast to most other programming languages,
+  		print "case 7"		; the Masm32 switch allows "variable cases"
+  	case 1 .. 3
+  		.if eax==1
+  			print "case 1"
+  		.elseif eax==2
+  			print "case 2"
+  		.else
+  			print "cases 1 to 3: other"
+  		.endif
+  	case 4, 6, 8
+  		print "cases 4, 6 or 8"
+  	default
+  		mov ebx, 19		     ; print 20 stars
+  		.Repeat
+  			print "*"
+  			dec ebx
+  		.Until Sign?		 ; loop until the sign flag is set
+  	endsw
+  	print chr$(13, 10)
+    ENDM
+    exit
+  end demomain
+ related x86-isa fortran algol lisp gas x86-assembly punched-tape ia-32 autocoder pl-i cobol c unix kathleen-booth espol turbo-pascal visual-basic pascal hla wasm
+ summary An assembly (or assembler) language, often abbreviated asm, is any low-level programming language in which there is a very strong correspondence between the program's statements and the architecture's machine code instructions.Each assembly language is specific to a particular computer architecture and operating system. In contrast, most high-level programming languages are generally portable across multiple architectures but require interpreting or compiling. Assembly language may also be called symbolic machine code.Assembly language usually has one statement per machine instruction, but assembler directives, macros and symbolic labels of program and memory locations are often also supported. Assembly code is converted into executable machine code by a utility program referred to as an assembler. The conversion process is referred to as assembly, or assembling the source code.
+ created 2001
+ backlinksCount 3074
+ pageId 1368
+ revisionCount 2431
+ dailyPageViews 2352
+ appeared 1949
+
+aka assembly
+status active
+
+projectEuler Assembly
+ memberCount
+  2022 223

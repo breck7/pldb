@@ -1,4 +1,21 @@
+title katex
 appeared 2013
 type textMarkup
+
+patterns
+ hasCentralPackageRepository? false
+
+githubRepo https://github.com/Khan/KaTeX
+ firstCommit 2013
+ stars 9153
+ forks 625
+ subscribers 303
+ created 2013
+ updated 2018
+ description Fast math typesetting for the web.
+ issues 158
+
 website https://katex.org
-github https://github.com/Khan/KaTeX
+status active
+fileType text
+isOpenSource true

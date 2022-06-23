@@ -1,3 +1,61 @@
+title Automatically Programmed Tool
 appeared 1956
 type pl
-wikipedia APT_(programming_language)
+
+patterns
+ hasCentralPackageRepository? false
+
+wikipedia https://en.wikipedia.org/wiki/APT_(programming_language)
+ example
+  PARTNO / APT-1
+  CLPRNT
+  UNITS / MM
+  NOPOST
+  CUTTER / 20.0
+  
+  $$ GEOMETRY DEFINITION
+  SETPT = POINT / 0.0, 0.0, 0.0
+  STRTPT = POINT / 70,70,0
+  P1 = POINT / 50, 50, 0
+  P2 = POINT / 20, -20, 0
+  C1 = CIRCLE / CENTER, P2, RADIUS, 30
+  P3 = POINT / -50, -50, 0
+  P5 = POINT / -30, 30, 0
+  C2 = CIRCLE / CENTER, P5, RADIUS, 20
+  P4 = POINT / 50, -20, 0
+  L1 = LINE / P1, P4
+  L2 = LINE / P3, PERPTO, L1
+  L3 = LINE / P3, PARLEL, L1
+  L4 = LINE / P1, PERPTO, L1
+  PLAN1 = PLANE / P1, P2, P3
+  PLAN2 = PLANE / PARLEL, PLAN1, ZSMALL, 16
+  
+  $$ MOTION COMMANDS
+  SPINDL / 3000, CW
+  FEDRAT / 100, 0
+  FROM / STRTPT
+  GO/TO, L1, TO, PLAN2, TO, L4
+  TLLFT, GOFWD / L1, TANTO, C1
+  GOFWD / C1, TANTO, L2
+  GOFWD / L2, PAST, L3
+  GORGT / L3, TANTO, C2
+  GOFWD / C2, TANTO, L4
+  GOFWD / L4, PAST, L1
+  NOPS
+  GOTO / STRTPT
+  FINI
+ related g-code
+ summary APT or Automatically Programmed Tool is a high-level computer programming language most commonly used to generate instructions for numerically controlled machine tools. Douglas T. Ross is considered by many to be the father of APT: as head of the newly created Computer Applications Group of the Servomechanisms Laboratory at MIT in 1956, he led its technical effort. APT is a language and system that makes numerically controlled manufacturing possible. This early language was used widely through the 1970s and is still a standard internationally. Derivatives of APT were later developed.
+ pageId 3673047
+ created 2006
+ backlinksCount 24
+ revisionCount 98
+ dailyPageViews 64
+ appeared 1956
+
+standsFor Automatically Programmed Tool
+status historical
+fileType text
+wordRank 8742
+
+hopl 23

@@ -1,4 +1,54 @@
+title Logtalk
 appeared 1998
 type pl
+
+patterns
+ hasCentralPackageRepository? false
+ hasComments? true
+ hasMultipleInheritance? true
+
+wikipedia https://en.wikipedia.org/wiki/Logtalk_(programming_language)
+ example
+  ?- my_first_object::p2.
+  ERROR: error(permission_error(access, private_predicate, p2), my_first_object::p2, user)
+ related prolog smalltalk objective-c swi-prolog mercury oz visual-prolog
+ summary Logtalk is an object-oriented logic programming language that extends and leverages the Prolog language with a feature set suitable for programming in the large. It provides support for encapsulation and data hiding, separation of concerns and enhanced code reuse. Logtalk uses standard Prolog syntax with the addition of a few operators and directives. The Logtalk language implementation is distributed under an open source license and can run using a Prolog implementation (compliant with official and de facto standards) as the back-end compiler.
+ pageId 7792164
+ created 2012
+ backlinksCount 42
+ revisionCount 1
+ dailyPageViews 2
+ appeared 1998
+
+githubLanguage Logtalk
+ fileExtensions lgt logtalk
+ trendingProjectsCount 0
+
+linguistGrammarRepo https://github.com/textmate/logtalk.tmbundle
+ firstCommit 2005
+ lastCommit 2017
+ committerCount 5
+ commitCount 90
+ sampleCount 1
+ example
+  % this is a Logtalk source file
+  
+  :- object(hello_world).
+  
+  	% the initialization/1 directive argument is automatically executed
+  	% when the object is loaded into memory:
+  	:- initialization((nl, write('********** Hello World! **********'), nl)).
+  
+  :- end_object.
+  
+
 website http://logtalk.org
-wikipedia Logtalk_(programming_language)
+status active
+
+twitter logtalkdotorg
+
+fileType text
+
+hopl 3555
+
+rosettaCode Logtalk

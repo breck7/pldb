@@ -1,3 +1,81 @@
+title X PixMap
 appeared 1989
 type application
-wikipedia X_PixMap
+
+patterns
+ hasCentralPackageRepository? false
+
+wikipedia https://en.wikipedia.org/wiki/X_PixMap
+ example
+  P1
+  16 7
+  1 1 0 0 1 0 0 0 0 0 0 0 0 0 0 0
+  1 0 1 0 1 0 0 0 0 0 0 0 0 0 0 0
+  1 1 0 0 1 0 0 1 1 0 1 1 0 0 1 1
+  1 0 1 0 1 0 1 0 1 0 1 0 0 1 0 1
+  1 1 0 0 1 0 0 1 1 0 1 0 0 0 1 1
+  0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1
+  0 0 0 0 0 0 0 0 0 0 0 0 0 1 1 0
+ related x-bitmap c ascii
+ summary X PixMap (XPM) is an image file format used by the X Window System, created in 1989 by Daniel Dardailler and Colas Nahaboo working at Bull Research Center at Sophia Antipolis, France, and later enhanced by Arnaud Le Hors.It is intended primarily for creating icon pixmaps, and supports transparent pixels. Derived from the earlier XBM syntax, it is a plain text file in the XPM2 format or of a C programming language syntax, which can be included in a C program file.
+ backlinksCount 146
+ pageId 522417
+ created 2004
+ revisionCount 244
+ dailyPageViews 68
+ appeared 1989
+
+githubLanguage X PixMap
+ fileExtensions xpm pm
+
+linguistGrammarRepo https://github.com/textmate/c.tmbundle
+ firstCommit 2005
+ lastCommit 2018
+ committerCount 23
+ commitCount 359
+ sampleCount 2
+ example
+  /* XPM */
+  static char * stick_unfocus_xpm[] = {
+  "20 17 20 1",
+  " 	c None",
+  ".	c #EBEBEB",
+  "+	c #E9E9E9",
+  "@	c #E6E6E6",
+  "#	c #E5E5E5",
+  "$	c #E2E2E2",
+  "%	c #DFDFDF",
+  "&	c #DEDEDE",
+  "*	c #FEFEFE",
+  "=	c #C4C4C4",
+  "-	c #898989",
+  ";	c #B7B7B7",
+  ">	c #6A6A6A",
+  ",	c #B9B9B9",
+  "'	c #E4E4E4",
+  ")	c #686868",
+  "!	c #E0E0E0",
+  "~	c #666666",
+  "{	c #E8E8E8",
+  "]	c #E1E1E1",
+  "....................",
+  "....................",
+  ".....+@#$%&%$#@+....",
+  "....+*********=&+...",
+  "....@*********-=#...",
+  "....#**;;;;;**>,'...",
+  "....$**;**;;**);$...",
+  "....%**;;;;;**>;&...",
+  "....&**;***;**>;&...",
+  "....&**;;;;;**>;&...",
+  "....!*********~;!...",
+  "....!*********>,&...",
+  "....@=->)>>>)>-=#...",
+  "....+&=,;;;;;,=&+...",
+  ".....{]%%&&&&%@+....",
+  "....................",
+  "...................."};
+  
+
+status active
+fileType text

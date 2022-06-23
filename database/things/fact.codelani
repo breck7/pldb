@@ -1,4 +1,40 @@
+title Fully Automated Compiling Technique
 appeared 1959
 type pl
-wikipedia FACT_(computer_language)
+
+patterns
+ hasCentralPackageRepository? false
+
 description FACT is an early discontinued computer programming language, created by the Datamatic Division of Minneapolis Honeywell for its model 800 series business computers in 1959. FACT was an acronym for "Fully Automated Compiling Technique". It was an influence on the design of the COBOL programming language.
+
+wikipedia https://en.wikipedia.org/wiki/FACT_(computer_language)
+ example
+  L   1  PAGE-HEADING                 BATCH NO.   ^ IN ERROR   PAGE ^
+  L   2  COLUMN-HEADING     EMP.NO. HOURS  EMP.NO. HOURS  EMP.NO. HOURS  EMP.NO. HOURS  EMP.NO. HOURS  EMP.NO. HOURS  EMP.NO. HOURS  EMP.NO. HOURS
+  L   3  ERROR-LINE               ^    .^        ^    .^        ^    .^        ^    .^        ^    .^        ^    .^        ^    .^        ^    .^
+  L   4  BOND-HEADING       BOND ORDERS  EMP. NO.     NAME           DATE       BOND    PAGE   ^
+  L   5  BONDORDER-LINE                        ^                ^   ^- ^- ^      . ^
+  L   6  DEL-HEADING        TERMINATIONS  EMP. NO.   DATE        NAME         BOND CR. TOTALS.. GROSS     TAX     FICA   INSUR    RET     PAGE  ^
+  L   7  DELETIONS-LINE                         ^   ^- ^- ^                ^      . ^              . ^      . ^     . ^     . ^     . ^
+  L   8  ERROR-HEADING      ERRORS...    EMP. NO.    DATE         TYPE         PAGE  ^
+  L   9  ERROR-LINE                            ^    ^- ^- ^                 ^
+  L  10  TITLE-LINE         PLACE CHECK FORM IN PRINTER
+  L  12 1PAYLINE                       ^             ^/ ^/ ^                                                 .^     ^/ ^/  ^
+  L  13 2PAYLINE                                                                          . ^     . ^     . ^     .^      . ^
+  L  14 3PAYLINE                                    ^        $****. ^                                     . ^             . ^
+ related cobol
+ summary FACT is an early discontinued computer programming language, created by the Datamatic Division of Minneapolis Honeywell for its model 800 series business computers in 1959.  FACT was an acronym for "Fully Automated Compiling Technique".  It was an influence on the design of the COBOL programming language. Some of the design of FACT was based on the linguistic project Basic English, developed about 1925 by C.K. Ogden. The software was actually designed by Computer Sciences Corporation (Fletcher Jones, Roy Nutt, and Robert L. Patrick) under contract to Richard Clippinger of Honeywell.
+ pageId 20497946
+ created 2008
+ backlinksCount 10
+ revisionCount 40
+ dailyPageViews 7
+ appeared 1959
+
+standsFor Fully Automated Compiling Technique
+status historical
+country US
+fileType text
+wordRank 854
+
+hopl 68

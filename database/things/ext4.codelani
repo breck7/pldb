@@ -1,3 +1,20 @@
+title Ext4
 appeared 2008
 type filesystem
-wikipedia Ext4
+
+patterns
+ hasCentralPackageRepository? false
+
+wikipedia https://en.wikipedia.org/wiki/Ext4
+ related linux freebsd ext3 ext2 android
+ summary The ext4 or fourth extended filesystem is a journaling file system for Linux, developed as the successor to ext3.
+ pageId 5767923
+ created 2006
+ backlinksCount 330
+ revisionCount 779
+ dailyPageViews 425
+ appeared 1986
+
+status historical
+fileType text
+isOpenSource true

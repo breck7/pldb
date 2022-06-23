@@ -1,4 +1,20 @@
+title Texy!
 appeared 2004
 type textMarkup
+
+patterns
+ hasCentralPackageRepository? false
+
+wikipedia https://en.wikipedia.org/wiki/Texy!
+ related php html css java
+ summary Texy is a lightweight markup language as well as converter of this format to XHTML, in a form of a library written in the PHP scripting language. It allows the user to write structured documents without knowledge or using of HTML language. Users write documents in human-readable text format and Texy converts it to structurally valid and well-formed XHTML code. Texy! format includes tags for turning off the formatter as well as for direct CSS styling, thus it can be said it fully supports HTML and CSS. The format itself supports images, links (anchors), nested lists, and tables, among other things. Other built-in features include a support of long words division (with respect for language rules), roll-over images, clickable emails and URL (emails are obfuscated against spambots), and an auto-correct tool for several typographic issues: national single and double quotation marks, ellipses, em dashes, dimension sign, nonbreakable spaces (e.g. in phone numbers), acronyms, arrows and many others. PHP implementation of Texy has been developed by David Grudl since 2004. It runs on PHP version 4.3.3 or newer and it can be used in any other platform using XML/RPC service. Current stable version is 2.9. Version 3.0 is planned. Texy! is distributed under the GNU General Public License and New BSD License. Plugins for several content-management systems are included. Java implementation, named JTexy, is under development. The project has its own website with basic description, syntax overview, on-line demo, XMLRPC, forum. Support for English-speaking users could be described as poor.
+ backlinksCount 6
+ pageId 6877682
+ created 2006
+ revisionCount 34
+ dailyPageViews 5
+ appeared 2004
+
 website https://texy.info/
-wikipedia Texy!
+status historical
+fileType text

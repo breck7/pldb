@@ -1,3 +1,49 @@
+title JAL compiler
 appeared 2000
 type compiler
-wikipedia JAL_(compiler)
+
+patterns
+ hasCentralPackageRepository? false
+
+wikipedia https://en.wikipedia.org/wiki/JAL_(compiler)
+ example
+  -- JAL 2.3
+  include 16f877_bert--define the variables
+  var byte resist--define the pins
+  pin_a0_direction = input--variable resistor
+  pin_d7_direction = input--switch
+  pin_c2_direction = output--pwm led--enable pulse width modulation
+  PWM_init_frequency (true, true)
+  
+  forever loop--convert analog on a0 to digital
+     resist = ADC_read_low_res(0)
+  
+     -- run measurement through flash memory
+     program_eeprom_write(2000,resist)
+     program_eeprom_read(2000,resist)
+  
+     -- run measurement through data memory
+     data_eeprom_write(10,resist)
+     data_eeprom_read(10,resist)
+  
+     -- if the switch is pressed return random value
+     if pin_d7 == high then
+        resist = random_byte
+     end if--send resistance to PC
+     serial_sw_write(resist)
+     delay_100ms(1)
+     -- set actual PWM duty cycle
+     PWM_Set_DutyCycle (resist, resist)
+  
+  end loop
+ related pic-microcontroller
+ summary JAL (Just Another Language) is a Pascal-like programming language and compiler that generates executable code for PIC microcontrollers.  It is a free-format language with a compiler that runs on Linux, MS-Windows and MS-DOS (OSX support). It is configurable and extendable through the use of libraries and can even be combined with PIC assembly language.
+ pageId 2410974
+ created 2005
+ backlinksCount 16
+ revisionCount 78
+ dailyPageViews 7
+ appeared 2000
+
+status historical
+fileType na

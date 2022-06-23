@@ -1,4 +1,69 @@
+title Tex
 appeared 1978
 type pl
+
+patterns
+ hasCentralPackageRepository? true
+
+wikipedia https://en.wikipedia.org/wiki/TeX
+ example
+  The quadratic formula is $$-b \pm \sqrt{b^2 - 4ac} \over 2a$$
+  \bye
+ related pascal metafont mathematical-notation troff unix latex m4 c linux xetex unicode bibtex pdf emacs-editor lyx-editor vim-editor mediawiki isbn
+ summary TeX ( or , see below), stylized within the system as TeX, is a typesetting system (or "formatting system") designed and mostly written by Donald Knuth and released in 1978. Together with the Metafont language for font description and the Computer Modern family of typefaces, TeX was designed with two main goals in mind: to allow anybody to produce high-quality books using minimal effort, and to provide a system that would give exactly the same results on all computers, at any point in time. TeX is free software, which made it accessible to a wide range of users. TeX is a popular means by which to typeset complex mathematical formulae; it has been noted as one of the most sophisticated digital typographical systems. TeX is popular in academia, especially in mathematics, computer science, economics, engineering, physics, statistics, and quantitative psychology. It has largely displaced Unix troff, the other favored formatting system, in many Unix installations, which use both for different purposes. It is also used for many other typesetting tasks, especially in the form of LaTeX, ConTeXt, and other macro packages.
+ pageId 30065
+ dailyPageViews 611
+ created 2001
+ backlinksCount 1657
+ revisionCount 1391
+ appeared 1978
+
+githubLanguage TeX
+ fileExtensions tex aux bbx bib cbx cls dtx ins lbx ltx mkii mkiv mkvi sty toc
+ trendingProjects
+  author name avatar url language languageColor stars forks currentPeriodStars description
+  hmemcpy milewski-ctfp-pdf https://github.com/hmemcpy.png https://github.com/hmemcpy/milewski-ctfp-pdf TeX #3D6117 5720 272 198 "Bartosz Milewski's 'Category Theory for Programmers' unofficial PDF and LaTeX source"
+  deedy Deedy-Resume https://github.com/deedy.png https://github.com/deedy/Deedy-Resume TeX #3D6117 2479 651 74 "A one page , two asymmetric column resume template in XeTeX that caters to an undergraduate Computer Science student"
+  soulmachine leetcode https://github.com/soulmachine.png https://github.com/soulmachine/leetcode TeX #3D6117 7856 2866 124 LeetCode题解，151道题完整版
+  jacobeisenstein gt-nlp-class https://github.com/jacobeisenstein.png https://github.com/jacobeisenstein/gt-nlp-class TeX #3D6117 3281 833 47 "Course materials for Georgia Tech CS 4650 and 7650, ""Natural Language"""
+  billryan resume https://github.com/billryan.png https://github.com/billryan/resume TeX #3D6117 2785 1155 82 "An elegant \LaTeX\ résumé template"
+  sb2nov resume https://github.com/sb2nov.png https://github.com/sb2nov/resume TeX #3D6117 1217 488 63 "Software developer resume in Latex"
+  rstudio cheatsheets https://github.com/rstudio.png https://github.com/rstudio/cheatsheets TeX #3D6117 1336 450 81 "RStudio Cheat Sheets"
+  zhanwen MathModel https://github.com/zhanwen.png https://github.com/zhanwen/MathModel TeX #3D6117 611 261 121 研究生数学建模，数学建模竞赛优秀论文，数学建模算法，LaTeX论文模板，算法思维导图，参考书籍，Matlab软件教程，PPT
+  lervag vimtex https://github.com/lervag.png https://github.com/lervag/vimtex TeX #3D6117 2076 200 75 "A modern vim plugin for editing LaTeX files."
+  tuhdo os01 https://github.com/tuhdo.png https://github.com/tuhdo/os01 TeX #3D6117 7627 431 92 "Bootstrap yourself to write an OS from scratch. A book for self-learner."
+  dart-lang language https://github.com/dart-lang.png https://github.com/dart-lang/language TeX #3D6117 504 43 48 "Design of the Dart language"
+  jikexueyuanwiki tensorflow-zh https://github.com/jikexueyuanwiki.png https://github.com/jikexueyuanwiki/tensorflow-zh TeX #3D6117 11183 4154 114 谷歌全新开源人工智能系统TensorFlow官方文档中文版
+  rafalab dsbook https://github.com/rafalab.png https://github.com/rafalab/dsbook TeX #3D6117 237 216 28 "Repository for data science book"
+ trendingProjectsCount 14
+
+helloWorldCollection Tex
+ % Hello World in plain \TeX
+ \immediate\write16{Hello World!}
+ \end
+ 
+
+linguistGrammarRepo https://github.com/textmate/latex.tmbundle
+ sampleCount 7
+ example
+  \ProvidesFile{verbose.bbx}
+  [\abx@bbxid]
+  
+  \RequireBibliographyStyle{authortitle}
+  
+  \endinput
+  
+
 website http://tug.org
-wikipedia TeX
+status active
+
+twitter texusersgroup
+
+country US
+fileType text
+wordRank 7751
+isOpenSource true
+
+tiobe Tex
+
+hopl 833

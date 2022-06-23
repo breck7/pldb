@@ -1,3 +1,38 @@
+title Gödel
 appeared 1992
 type pl
-wikipedia Gödel_(programming_language)
+
+patterns
+ hasCentralPackageRepository? false
+
+wikipedia https://en.wikipedia.org/wiki/Gödel_(programming_language)
+ example
+  MODULE      GCD.
+  IMPORT      Integers.
+   
+  PREDICATE   Gcd : Integer * Integer * Integer.
+  Gcd(i,j,d) <- 
+             CommonDivisor(i,j,d) &
+             ~ SOME [e] (CommonDivisor(i,j,e) & e > d).
+   
+  PREDICATE   CommonDivisor : Integer * Integer * Integer.
+  CommonDivisor(i,j,d) <-
+             IF (i = 0 \/ j = 0)
+             THEN
+               d = Max(Abs(i),Abs(j))
+             ELSE
+               1 =< d =< Min(Abs(i),Abs(j)) &
+               i Mod d = 0 &
+               j Mod d = 0.
+ summary Gödel is a declarative, general-purpose programming language that adheres to the logic programming paradigm. It is a strongly typed language, the type system being based on many-sorted logic with parametric polymorphism. It is named after logician Kurt Gödel.
+ pageId 936719
+ dailyPageViews 15
+ created 2004
+ backlinksCount 21
+ revisionCount 57
+ appeared 1992
+
+status historical
+fileType text
+
+hopl 2072

@@ -1,3 +1,33 @@
+title SPARK
 appeared 1988
 type pl
-wikipedia SPARK_(programming_language)
+
+patterns
+ hasCentralPackageRepository? true
+
+wikipedia https://en.wikipedia.org/wiki/SPARK_(programming_language)
+ example
+  procedure Increment (X : in out Counter_Type)
+    with Global  => null,
+         Depends => (X => X),
+         Pre     => X < Counter_Type'Last,
+         Post    => X = X'Old + 1;
+ related scala java python linux ada eiffel z-notation
+ summary SPARK is a formally defined computer programming language based on the Ada programming language, intended for the development of high integrity software used in systems where predictable and highly reliable operation is essential. It facilitates the development of applications that demand safety, security, or business integrity. Originally, there were three versions of the SPARK language (SPARK83, SPARK95, SPARK2005) based on Ada 83, Ada 95 and Ada 2005 respectively. A fourth version of the SPARK language, SPARK 2014, based on Ada 2012, was released on April 30, 2014. SPARK 2014 is a complete re-design of the language and supporting verification tools. The SPARK language consists of a well-defined subset of the Ada language that uses contracts to describe the specification of components in a form that is suitable for both static and dynamic verification. In SPARK83/95/2005, the contracts are encoded in Ada comments (and so are ignored by any standard Ada compiler), but are processed by the SPARK "Examiner" and its associated tools. SPARK 2014, in contrast, uses Ada 2012's built-in "aspect" syntax to express contracts, bringing them into the core of the language. The main tool for SPARK 2014 (GNATprove) is based on the GNAT/GCC infrastructure, and re-uses almost the entirety of the GNAT Ada 2012 front-end.
+ pageId 291874
+ dailyPageViews 194
+ created 2003
+ backlinksCount 54
+ revisionCount 202
+ appeared 2017
+
+status active
+country GB
+fileType text
+isOpenSource true
+
+tiobe SPARK
+
+hopl 2518
+
+rosettaCode SPARK

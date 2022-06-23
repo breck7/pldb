@@ -1,3 +1,60 @@
+title BlitzMax
 appeared 2014
 type pl
-github https://github.com/blitz-research/blitzmax
+
+patterns
+ hasPointers? true
+ hasCentralPackageRepository? false
+
+githubLanguage BlitzMax
+ fileExtensions bmx
+ trendingProjectsCount 0
+
+githubRepo https://github.com/blitz-research/blitzmax
+ firstCommit 2014
+ stars 106
+ forks 40
+ subscribers 23
+ created 2014
+ updated 2018
+ description BlitzMax
+ issues 7
+
+linguistGrammarRepo https://github.com/textmate/blitzmax.tmbundle
+ firstCommit 2009
+ lastCommit 2016
+ committerCount 2
+ commitCount 35
+ sampleCount 1
+ example
+  SuperStrict
+  
+  Framework Brl.StandardIO
+  
+  Type TMyType
+  	Field property:int
+  
+  	Function A:int(param:int)
+  		'do nothing
+  	End Function
+  
+  	Method B:int(param:int)
+  		'do nothing
+  	End Method
+  End Type
+  
+  
+  Global my:TMyType = new TMyType
+  ?Win32
+  	my.A()
+  	my.B()
+  ?Linux
+  	my.B()
+  	my.A()
+  ?
+
+status active
+fileType text
+isOpenSource true
+
+rosettaCode BlitzMax

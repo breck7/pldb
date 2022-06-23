@@ -1,6 +1,45 @@
+title Mirah
 appeared 2009
 type pl
-website http://www.mirah.org
-wikipedia Mirah_(programming_language)
+
 example
  def foo(a:String, b:int)
+
+patterns
+ hasCentralPackageRepository? false
+ hasComments? true
+
+wikipedia https://en.wikipedia.org/wiki/Mirah_(programming_language)
+ example
+  def fib(a:int)
+    if a < 2
+      a
+    else
+      fib(a - 1) + fib(a - 2)
+    end
+  end
+ related jvm ruby java boo java-bytecode jruby csharp rails erb
+ summary Mirah (formerly Duby) is a programming language based on Ruby language syntax, local type inference, hybrid static–dynamic type system, and a pluggable compiler toolchain. Mirah was created by Charles Oliver Nutter to be "a 'Ruby-like' language, probably a subset of Ruby syntax, that [could] compile to solid, fast, idiomatic JVM bytecode." The word mirah refers to the gemstone ruby in the Javanese language, a play on the concept of Ruby in Java.
+ pageId 27970668
+ created 2010
+ backlinksCount 15
+ revisionCount 63
+ dailyPageViews 12
+ appeared 2009
+
+githubLanguage Mirah
+ fileExtensions druby duby mirah
+ trendingProjectsCount 0
+
+linguistGrammarRepo https://github.com/atom/language-ruby
+ firstCommit 2013
+ lastCommit 2018
+ committerCount 76
+ commitCount 458
+
+website http://www.mirah.org
+status active
+fileType text
+isOpenSource true
+
+rosettaCode Mirah

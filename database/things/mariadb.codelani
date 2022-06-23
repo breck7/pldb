@@ -1,3 +1,20 @@
+title MariaDB
 appeared 2009
 type queryLanguage
-wikipedia MariaDB
+
+patterns
+ hasCentralPackageRepository? false
+
+wikipedia https://en.wikipedia.org/wiki/MariaDB
+ related c perl bash solaris linux mysql freebsd
+ summary MariaDB is a community-developed fork of the MySQL relational database management system intended to remain free under the GNU GPL. Development is led by some of the original developers of MySQL, who forked it due to concerns over its acquisition by Oracle Corporation.MariaDB intends to maintain high compatibility with MySQL, ensuring a drop-in replacement capability with library binary parity and exact matching with MySQL APIs and commands. It includes the XtraDB storage engine for replacing InnoDB, as well as a new storage engine, Aria, that intends to be both a transactional and non-transactional engine perhaps even included in future versions of MySQL.Its lead developer is Michael "Monty" Widenius, one of the founders of MySQL AB and the founder of Monty Program AB.  On 16 January 2008, MySQL AB announced that it had agreed to be acquired by Sun Microsystems for approximately $1 billion. The acquisition completed on 26 February 2008.  MariaDB is named after Monty's younger daughter Maria, similar to how MySQL is named after his other daughter My.
+ backlinksCount 218
+ pageId 24960699
+ created 2009
+ revisionCount 556
+ dailyPageViews 538
+ appeared 2009
+
+status historical
+fileType text
+isOpenSource true

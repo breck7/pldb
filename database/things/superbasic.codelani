@@ -1,3 +1,32 @@
+title SuperBASIC
 appeared 1984
 type pl
-wikipedia SuperBASIC
+
+patterns
+ hasCentralPackageRepository? false
+
+wikipedia https://en.wikipedia.org/wiki/SuperBASIC
+ example
+  100 DIM month$(12,9)
+   110 RESTORE 
+   120 REMark QL User Guide's "Data Read Restore" example ii
+   130 REMark (appropriately amended relative to example i)
+   140 FOR count=1 TO 12 : READ month$(count) 
+   150 DATA "January", "February", "March"
+   160 DATA "April","May","June"
+   170 DATA "July","August","September"
+   180 DATA "October","November","December"
+   190 DATA "SUN","MON","TUE","WED","THU","FRI","SAT"
+   199 END DEFine Iso
+ related tymshare-superbasic isbn
+ summary SuperBASIC is an advanced variant of the BASIC programming language with many structured programming additions. It was developed at Sinclair Research by Jan Jones during the early 1980s. Originally SuperBASIC was intended for a home computer, code-named SuperSpectrum, then under development. This project was later cancelled; however, SuperBASIC was subsequently included in the ROM firmware of the Sinclair QL microcomputer (announced in January 1984), also serving as the command line interpreter for the QL's Qdos operating system. It is notable for being the first second-generation BASIC to be integrated into a microcomputer's operating system, so making the latter user-extendable—as exemplified by Linus Torvalds in his formative years.
+ created 2004
+ backlinksCount 95
+ pageId 980058
+ revisionCount 58
+ dailyPageViews 9
+ appeared 1980
+
+status historical
+
+hopl 6742

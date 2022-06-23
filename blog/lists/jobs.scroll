@@ -1,0 +1,35 @@
+title Jobs
+skipIndexPage
+
+paragraph
+ Looking for a programming job? Here are some sites for finding one.
+
+aftertext
+ Am I missing a big site? @Edit this file@ and send a pull request.
+ wrap @ https://github.com/codelani/codelani/blob/master/lists/jobs.scroll
+
+section Job Sites for Programmers
+
+pipeTable
+ site|siteLink
+ Craigslist|https://www.craigslist.org/
+ Dice|https://www.dice.com/
+ GitHub Jobs|https://jobs.github.com/
+ Glassdoor|https://www.glassdoor.com/
+ Hacker News Jobs|https://news.ycombinator.com/jobs
+ Indeed|http://indeed.com/
+ LinkedIn|https://www.linkedin.com/
+ Product Hunt|https://www.producthunt.com/jobs
+ Remote OK|https://remoteok.io/
+ Remote.com|https://remote.com/
+ SimplyHired|https://www.simplyhired.com/
+ StackOverflow|https://stackoverflow.com/jobs
+ TripleByte|https://triplebyte.com/
+ We Work Remotely|https://weworkremotely.com/
+ Work At a Startup|https://www.workatastartup.com/
+ Working Nomads|https://www.workingnomads.co/jobs
+ ZipRecruiter|https://www.ziprecruiter.com/
+
+
+maxColumns 1
+columnWidth 50

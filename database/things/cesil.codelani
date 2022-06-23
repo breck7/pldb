@@ -1,3 +1,39 @@
+title Cesil
 appeared 1974
 type pl
-wikipedia Cesil
+
+patterns
+ hasCentralPackageRepository? false
+
+wikipedia https://en.wikipedia.org/wiki/Cesil
+ example
+  LOAD    0
+  LOOP    STORE   TOTAL
+          IN
+          JINEG   DONE
+          ADD     TOTAL
+          JUMP    LOOP
+  
+  DONE    PRINT   "The total is: "
+          LOAD    TOTAL
+          OUT
+          LINE
+          HALT
+  
+          %
+          1
+          2
+          3
+          -1
+  
+  [Output of above program running...] 
+          The total is:  6
+ related assembly-language
+ summary Cesil, or Computer Education in Schools Instruction Language, was a programming language designed to introduce pupils in British schools to Assembly language.  It is a low level language containing a total of fourteen instructions:  Load value - place the immediate value or the contents of the variable named in the accumulator. Store variable - place the contents of the accumulator in the variable. Jump label - transfer control to location labelled. Jineg label - transfer control to location labelled if the accumulator contains a negative value. Jizero label - transfer control to location labelled if the accumulator contains zero. Print literal - output the following string, delimited by single quotes. Line - output a carriage return In - allow user to input a numerical value from the console. Out - Output the contents of the accumulator as a decimal integer, signed if negative. Add value - add the variable or immediate integer value to the accumulator. Subtract value - subtract the variable or immediate integer from the accumulator. Multiply value - place the product of the accumulator and the variable or immediate integer in the accumulator. Divide value - place the contents of the accumulator divided by the value in the accumulator. Halt - return control to console.
+ created 2016
+ backlinksCount 3
+ pageId 2834686
+ revisionCount 1
+ dailyPageViews 3
+
+status historical

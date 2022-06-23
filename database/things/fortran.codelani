@@ -1,5 +1,171 @@
+title Fortran
 appeared 1957
 type pl
 creators John Backus
-wikipedia Fortran
+
+patterns
+ hasReservedWords? false
+  C Keywords are specifically NOT reserved words. http://fortranwiki.org/fortran/show/Keywords. http://rsusu1.rnd.runnet.ru/develop/fortran/prof77/node46.html
+ hasCentralPackageRepository? false
+ hasComments? true
+  C
+  C Lines that begin with 'C' (in the first or 'comment' column) are comments
+  C
+ hasPrintStatements? true
+  C     Hello World in Fortran
+  
+        PROGRAM HELLO
+        WRITE (*,100)
+        STOP
+    100 FORMAT (' Hello World! ' /)
+        END
+ hasZeroBasedNumbering? false
+ hasModules? true
+  module constants  
+  implicit none 
+  
+     real, parameter :: pi = 3.1415926536  
+     real, parameter :: e = 2.7182818285 
+     
+  contains      
+     subroutine show_consts()          
+        print*, "Pi = ", pi          
+        print*,  "e = ", e     
+     end subroutine show_consts 
+     
+  end module constants 
+  
+  
+  program module_example     
+  use constants      
+  implicit none     
+  
+     real :: x, ePowerx, area, radius 
+     x = 2.0
+     radius = 7.0
+     ePowerx = e ** x
+     area = pi * radius**2     
+     
+     call show_consts() 
+     
+     print*, "e raised to the power of 2.0 = ", ePowerx
+     print*, "Area of a circle with radius 7.0 = ", area  
+     
+  end program module_exampl
+
+wikipedia https://en.wikipedia.org/wiki/Fortran
+ example
+  program average
+  
+    ! Read in some numbers and take the average
+    ! As written, if there are no data points, an average of zero is returned
+    ! While this may not be desired behavior, it keeps this example simple
+  
+    implicit none
+  
+    real, dimension(:), allocatable :: points
+    integer                         :: number_of_points
+    real                            :: average_points=0., positive_average=0., negative_average=0.
+  
+    write (*,*) "Input number of points to average:"
+    read  (*,*) number_of_points
+  
+    allocate (points(number_of_points))
+  
+    write (*,*) "Enter the points to average:"
+    read  (*,*) points
+  
+    ! Take the average by summing points and dividing by number_of_points
+    if (number_of_points > 0) average_points = sum(points) / number_of_points
+  
+    ! Now form average over positive and negative points only
+    if (count(points > 0.) > 0) then
+       positive_average = sum(points, points > 0.) / count(points > 0.)
+    end if
+  
+    if (count(points < 0.) > 0) then
+       negative_average = sum(points, points < 0.) / count(points < 0.)
+    end if
+  
+    deallocate (points)
+  
+    ! Print result to terminal
+    write (*,'(a,g12.4)') 'Average = ', average_points
+    write (*,'(a,g12.4)') 'Average of positive points = ', positive_average
+    write (*,'(a,g12.4)') 'Average of negative points = ', negative_average
+  
+  end program average
+ related speedcoding algol-58 basic c chapel cms-2 pl-i pact-i mumps ratfor assembly-language laning-and-zierler-system 1620sps ucsd-pascal watfiv ascii modula-2 ada mortran ratfiv jcl simscript f
+ summary Fortran (; formerly FORTRAN, derived from Formula Translation) is a general-purpose, imperative programming language that is especially suited to numeric computation and scientific computing. Originally developed by IBM in the 1950s for scientific and engineering applications, Fortran came to dominate this area of programming early on and has been in continuous use for over half a century in computationally intensive areas such as numerical weather prediction, finite element analysis, computational fluid dynamics, computational physics, crystallography and computational chemistry. It is a popular language for high-performance computing and is used for programs that benchmark and rank the world's fastest supercomputers. Fortran encompasses a lineage of versions, each of which evolved to add extensions to the language while usually retaining compatibility with prior versions. Successive versions have added support for structured programming and processing of character-based data (FORTRAN 77), array programming, modular programming and generic programming (Fortran 90), high performance Fortran (Fortran 95), object-oriented programming (Fortran 2003) and concurrent programming (Fortran 2008).
+ pageId 11168
+ dailyPageViews 2052
+ created 2001
+ backlinksCount 1961
+ revisionCount 2816
+ appeared 1957
+ fileExtensions f for f90 f95 f03 f08 f15
+
+githubLanguage Fortran
+ fileExtensions f90 f f03 f08 f77 f95 for fpp
+ trendingProjects
+  author name avatar url language languageColor stars forks currentPeriodStars description
+  xianyi OpenBLAS https://github.com/xianyi.png https://github.com/xianyi/OpenBLAS Fortran #4d41b1 2879 794 62 "OpenBLAS is an optimized BLAS library based on GotoBLAS2 1.13 BSD version."
+  E3SM-Project E3SM https://github.com/E3SM-Project.png https://github.com/E3SM-Project/E3SM Fortran #4d41b1 117 76 2 "Energy Exascale Earth System Model source code."
+ trendingProjectsCount 3
+
+helloWorldCollection Fortran
+ C     Hello World in Fortran
+ 
+       PROGRAM HELLO
+       WRITE (*,100)
+       STOP
+   100 FORMAT (' Hello World! ' /)
+       END
+ 
+
+linguistGrammarRepo https://github.com/textmate/fortran.tmbundle
+ firstCommit 2005
+ lastCommit 2018
+ committerCount 6
+ commitCount 67
+ sampleCount 5
+ example
+  ! Codes/HYCOM/hycom/ATLb2.00/src_2.0.01_22_one/
+        real onemu, twomu
+        data onemu/0.0098/
+        data twomu/1./
+        data threemu/0.e9/
+        end
+  
+
 reference https://en.wikipedia.org/wiki/Fortran_95_language_features
+status active
+country US
+fileExtensions f for f90 f95 f03 f08 f15
+fileType text
+
+tiobe Fortran
+ currentRank 32
+
+linkedInSkill fortran
+ peopleWithThisSkillCount 148352
+
+projectEuler Fortran
+ memberCount
+  2019 444
+  2022 464
+
+hopl 8
+
+subreddit fortran
+ memberCount
+  2017 1573
+
+codeMirror fortran
+
+rosettaCode Fortran
+
+antlr https://github.com/antlr/grammars-v4/tree/master/fortran77
+
+indeedJobs fortran engineer
+ 2017 447

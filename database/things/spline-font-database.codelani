@@ -1,5 +1,7 @@
+title Spline Font Database
 appeared 2004
 type application
+
 example
  SplineFontDB: 3.0
  FontName: Ambrosia
@@ -42,4 +44,20 @@ example
  GaspTable 3 8 2 16 1 65535 3 0
  DEI: 91125
  ExtremaBound: 30
+
+patterns
+ hasCentralPackageRepository? false
+
+githubLanguage Spline Font Database
+ fileExtensions sfd
+ trendingProjectsCount 0
+
+linguistGrammarRepo https://github.com/Alhadis/language-fontforge
+ firstCommit 2016
+ lastCommit 2018
+ committerCount 2
+ commitCount 51
+
 reference https://fontforge.github.io/sfdformat.html
+status active
+fileType text

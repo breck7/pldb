@@ -1,4 +1,75 @@
+title Bash
 appeared 1989
 type pl
+
+patterns
+ hasCentralPackageRepository? true
+ hasHereDocs? true
+
+wikipedia https://en.wikipedia.org/wiki/Bash_(Unix_shell)
+ example
+  cd "$SOMEWHERE" && ./do_something || echo "An error occurred" >&2
+ related c gettext bourne-shell login linux almquist-shell android regex perl awk unix emacs-editor
+ summary Bash is a Unix shell and command language written by Brian Fox for the GNU Project as a free software replacement for the Bourne shell. First released in 1989, it has been distributed widely as the default login shell for most Linux distributions and Apple's macOS (formerly OS X). A version is also available for Windows 10. Bash is a command processor that typically runs in a text window, where the user types commands that cause actions. Bash can also read and execute commands from a file, called a script. Like all Unix shells, it supports filename globbing (wildcard matching), piping, here documents, command substitution, variables, and control structures for condition-testing and iteration. The keywords, syntax and other basic features of the language are all copied from sh. Other features, e.g., history, are copied from csh and ksh. Bash is a POSIX-compliant shell, but with a number of extensions. The shell's name is an acronym for Bourne-again shell, punning on the name of the Bourne shell that it replaces and on the term "born again" that denotes spiritual rebirth in contemporary American Christianity. A security hole in Bash dating from version 1.03 (August 1989), dubbed Shellshock, was discovered in early September 2014 and quickly led to a range of attacks across the Internet. Patches to fix the bugs were made available soon after the bugs were identified, but not all computers have been updated.
+ pageId 4547
+ dailyPageViews 1271
+ created 2001
+ backlinksCount 1835
+ revisionCount 1360
+ appeared 1989
+
+githubLanguage Shell
+ fileExtensions sh bash bats cgi command fcgi ksh shin tmux tool zsh
+ trendingProjects
+  author name avatar url language languageColor stars forks currentPeriodStars description
+  kaldi-asr kaldi https://github.com/kaldi-asr.png https://github.com/kaldi-asr/kaldi Shell #89e051 7031 3224 623 "This is the official location of the Kaldi project."
+  dylanaraps pure-bash-bible https://github.com/dylanaraps.png https://github.com/dylanaraps/pure-bash-bible Shell #89e051 14224 1102 899 "📖 A collection of pure bash alternatives to external processes."
+  pi-hole pi-hole https://github.com/pi-hole.png https://github.com/pi-hole/pi-hole Shell #89e051 17711 1224 847 "A black hole for Internet advertisements"
+  trimstray nginx-admins-handbook https://github.com/trimstray.png https://github.com/trimstray/nginx-admins-handbook Shell #89e051 9683 677 986 "How to improve NGINX performance, security, and other important things; @ssllabs A+ 100%, @mozilla A+ 120/100."
+  v1s1t0r1sh3r3 airgeddon https://github.com/v1s1t0r1sh3r3.png https://github.com/v1s1t0r1sh3r3/airgeddon Shell #89e051 2052 515 286 "This is a multi-use bash script for Linux systems to audit wireless networks."
+  esc0rtd3w wifi-hacker https://github.com/esc0rtd3w.png https://github.com/esc0rtd3w/wifi-hacker Shell #89e051 811 283 420 "Shell Script For Attacking Wireless Connections Using Built-In Kali Tools. Supports All Securities (WEP, WPS, WPA, WPA2)"
+  toniblyx my-arsenal-of-aws-security-tools https://github.com/toniblyx.png https://github.com/toniblyx/my-arsenal-of-aws-security-tools Shell #89e051 2624 378 440 "List of open source tools for AWS security: defensive, offensive, auditing, DFIR, etc."
+  robbyrussell oh-my-zsh https://github.com/robbyrussell.png https://github.com/robbyrussell/oh-my-zsh Shell #89e051 94524 17446 1679 "🙃 A delightful community-driven (with 1,300+ contributors) framework for managing your zsh configuration. Includes 200+ optional plugins (rails, git, OSX, hub, capistrano, brew, ant, php, python, etc), over 140 themes to spice up your morning, and an auto-update tool so that makes it easy to keep up with the latest updates from the community."
+  termux termux-packages https://github.com/termux.png https://github.com/termux/termux-packages Shell #89e051 2485 827 109 "Android terminal and Linux environment - packages repository."
+  wmnnd nginx-certbot https://github.com/wmnnd.png https://github.com/wmnnd/nginx-certbot Shell #89e051 579 208 127 "Boilerplate configuration for nginx and certbot with docker-compose"
+  tomav docker-mailserver https://github.com/tomav.png https://github.com/tomav/docker-mailserver Shell #89e051 4463 747 140 "A fullstack but simple mailserver (smtp, imap, antispam, antivirus, ssl...) using Docker."
+  dotnet core https://github.com/dotnet.png https://github.com/dotnet/core Shell #89e051 11705 2542 339 "Home repository for .NET Core"
+  thelinuxchoice saycheese https://github.com/thelinuxchoice.png https://github.com/thelinuxchoice/saycheese Shell #89e051 152 105 45 "Grab target's webcam shots by link"
+  hashicorp vault-helm https://github.com/hashicorp.png https://github.com/hashicorp/vault-helm Shell #89e051 108 34 106 "Helm chart to install Vault and other associated components."
+  Neilpang acme.sh https://github.com/Neilpang.png https://github.com/Neilpang/acme.sh Shell #89e051 14044 1787 406 "A pure Unix shell script implementing ACME client protocol"
+  mathiasbynens dotfiles https://github.com/mathiasbynens.png https://github.com/mathiasbynens/dotfiles Shell #89e051 22044 7799 200 "🔧 .files, including ~/.macos — sensible hacker defaults for macOS"
+  dennyzhang cheatsheet-kubernetes-A4 https://github.com/dennyzhang.png https://github.com/dennyzhang/cheatsheet-kubernetes-A4 Shell #89e051 436 246 62 "📖 Kubernetes CheatSheets In A4"
+  romkatv powerlevel10k https://github.com/romkatv.png https://github.com/romkatv/powerlevel10k Shell #89e051 1514 72 357 "A fast reimplementation of Powerlevel9k ZSH theme"
+  skywind3000 awesome-cheatsheets https://github.com/skywind3000.png https://github.com/skywind3000/awesome-cheatsheets Shell #89e051 4926 917 146 "超级速查表 - 编程语言、框架和开发工具的速查表，单个文件包含一切你需要知道的东西 ⚡️"
+  fouldsy azure-mol-samples https://github.com/fouldsy.png https://github.com/fouldsy/azure-mol-samples Shell #89e051 357 131 39 "Supporting resources for ""Learn Azure in a Month of Lunches"" (Manning Publications)"
+  vulhub vulhub https://github.com/vulhub.png https://github.com/vulhub/vulhub Shell #89e051 4211 1485 250 "Pre-Built Vulnerable Environments Based on Docker-Compose"
+  nvm-sh nvm https://github.com/nvm-sh.png https://github.com/nvm-sh/nvm Shell #89e051 36851 3480 616 "Node Version Manager - POSIX-compliant bash script to manage multiple active node.js versions"
+  easzlab kubeasz https://github.com/easzlab.png https://github.com/easzlab/kubeasz Shell #89e051 3840 1573 407 使用Ansible脚本安装K8S集群，介绍组件交互原理，方便直接，不受国内网络环境影响
+  dylanaraps neofetch https://github.com/dylanaraps.png https://github.com/dylanaraps/neofetch Shell #89e051 6957 441 186 "🖼️ A command-line system information tool written in bash 3.2+"
+  ashishb android-security-awesome https://github.com/ashishb.png https://github.com/ashishb/android-security-awesome Shell #89e051 4067 1026 65 "A collection of android security related resources"
+ trendingProjectsCount 26
+
+linguistGrammarRepo https://github.com/atom/language-shellscript
+ sampleCount 17
+ example
+  #!/bin/sh
+  echo "sh"
+  
+
 website https://www.gnu.org/software/bash/
-wikipedia Bash_(Unix_shell)
+aka Shell
+status active
+
+tryItOnline bash
+
+country US
+fileType text
+isOpenSource true
+
+tiobe Bash
+
+hopl 1851
+
+quineRelay bash
+
+ubuntuPackage bash

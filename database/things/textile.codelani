@@ -1,7 +1,7 @@
+title Textile
 appeared 2002
 type textMarkup
-github https://github.com/textile
-wikipedia Textile_(markup_language)
+
 example
  """
  _This_ is a *test.*
@@ -12,3 +12,29 @@ example
  
  Link to "Slashdot":http://slashdot.org/
  """
+
+patterns
+ hasCentralPackageRepository? false
+
+wikipedia https://en.wikipedia.org/wiki/Textile_(markup_language)
+ related markdown php perl python ruby javascript csharp html qt ios android
+ summary Textile is a lightweight markup language that uses a text formatting syntax to convert plain text into structured HTML markup. Textile is used for writing articles, forum posts, readme documentation, and any other type of written content published online.
+ pageId 2375629
+ dailyPageViews 141
+ created 2005
+ backlinksCount 75
+ revisionCount 496
+ appeared 2002
+
+githubLanguage Textile
+ fileExtensions textile
+ trendingProjectsCount 0
+
+githubRepo https://github.com/textile
+
+status active
+fileType text
+wordRank 8426
+isOpenSource true
+
+codeMirror textile

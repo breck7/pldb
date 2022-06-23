@@ -1,3 +1,24 @@
+title CECIL
 appeared 1992
 type pl
-wikipedia Cecil_(programming_language)
+
+patterns
+ hasCentralPackageRepository? false
+
+wikipedia https://en.wikipedia.org/wiki/Cecil_(programming_language)
+ related objective-c modula-3 self cesil
+ summary Cecil is a pure object-oriented programming language that was developed by Craig Chambers at the University of Washington in 1992 to be part of the Vortex project there. Cecil has many similarities to other object-oriented languages, most notably Objective-C, Modula-3, and Self. The main goals of the project were extensibility, orthogonality, efficiency, and ease-of-use. The language supports multiple dispatch and multimethods, dynamic inheritance, and optional static type checking. Unlike most other OOP systems, Cecil allows subtyping and code inheritance to be used separately, allowing run-time or external extension of object classes or instances. Like Objective-C, all object services in Cecil are invoked by message passing, and the language supports run-time class identification. These features allow Cecil to support dynamic, exploratory programming styles. Parameterized types and methods (generics, polymorphism), garbage collection, and delegation are also supported. Cecil also supports a module mechanism for isolating independent libraries or packages. Cecil does not presently support threads or any other form of concurrency. A standard library for Cecil is also available and includes various collection, utility, system, I/O, and GUI classes. The Diesel language was the successor of Cecil.There was also an assembler type language known as Cesil (Computer Education in Schools Instructional Language) used in the late-1970s developed by ICL. It was quite similar to the later language MASM.
+ pageId 527946
+ created 2004
+ backlinksCount 13
+ revisionCount 55
+ dailyPageViews 11
+ appeared 1992
+
+status historical
+country US
+fileType text
+
+hopl 1720
+
+rosettaCode Cecil

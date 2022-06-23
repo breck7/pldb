@@ -1,5 +1,6 @@
+title kona
 type pl
-github https://github.com/kevinlawler/kona
+
 example
  factorial:{*/1+!:x}
  fib1:{(x(|+\)\1 1)[;1]}
@@ -8,5 +9,17 @@ example
  maxsubsum:{|/0(0|+)\x}
  primes_to_n_sieve:{2_&{:[x@y;x&@[1,-1_ z#(1_ y#1),0;y;:;1];x]}/[x#1;2_!__ceil_sqrt x;x]}
  primes_to_n_sieve2:{:[x<4;,2;r,1_&~|/x#'~!:'r: _f[_ _ceil _sqrt x]]}
-reference http://www.hakank.org/k/
+
 description Kona is the open-source implementation of the k3 programming language. k is a synthesis of APL and LISP. Although many of the capabilities come from APL, the fundamental data construct is quite different. In APL the construct is a multi-dimensional matrix-like array, where the dimension of the array can range from 0 to some maximum (often 9). In k, like LISP, the fundamental data construct is a list. Also, like LISP, the k language is ASCII-based, so you don't need a special keyboard.
+
+githubRepo https://github.com/kevinlawler/kona
+ firstCommit 2010
+ stars 1084
+ forks 119
+ subscribers 53
+ created 2010
+ updated 2020
+ description Open-source implementation of the K programming language
+ issues 58
+
+reference http://www.hakank.org/k/

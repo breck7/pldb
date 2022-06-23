@@ -1,3 +1,64 @@
+title XProc
 appeared 1990
 type pl
-wikipedia XProc
+
+patterns
+ hasCentralPackageRepository? false
+
+wikipedia https://en.wikipedia.org/wiki/XProc
+ example
+  <p:pipeline name="pipeline" xmlns:p="http://www.w3.org/ns/xproc" 
+    version="1.0">
+    <p:input port="schemas" sequence="true"/>
+  
+    <p:xinclude name="included">
+      <p:input port="source">
+        <p:pipe step="pipeline" port="source"/>
+      </p:input>
+    </p:xinclude>
+  
+    <p:validate-with-xml-schema name="validated">
+      <p:input port="source">
+        <p:pipe step="included" port="result"/>
+      </p:input>
+      <p:input port="schema">
+        <p:pipe step="pipeline" port="schemas"/>
+      </p:input>
+    </p:validate-with-xml-schema>
+  </p:pipeline>
+ related xml java xquery xpath
+ summary XProc is a W3C Recommendation to define an XML transformation language to define XML Pipelines. Below is an example abbreviated XProc file:  This is a pipeline that consists of two atomic steps, XInclude and Validate. The pipeline itself has three inputs, “source” (a source document), “schemas” (a list of W3C XML Schemas) and  “parameters” (for passing parameters). The XInclude step reads the pipeline input “source” and produces a result document. The Validate step reads the pipeline input “schemas” and the output from the XInclude step and produces a result document. The result of the validation, “result”, is the result of the pipeline. Here is an equivalent less abbreviated XProc pipeline:
+ backlinksCount 129
+ pageId 13015603
+ created 2007
+ revisionCount 52
+ dailyPageViews 56
+ appeared 1990
+
+githubLanguage XProc
+ fileExtensions xpl xproc
+ trendingProjectsCount 0
+
+linguistGrammarRepo https://github.com/textmate/xml.tmbundle
+ firstCommit 2004
+ lastCommit 2018
+ committerCount 12
+ commitCount 97
+ sampleCount 1
+ example
+  <?xml version="1.0" encoding="UTF-8"?>
+  <p:declare-step xmlns:p="http://www.w3.org/ns/xproc"
+      xmlns:c="http://www.w3.org/ns/xproc-step" version="1.0">
+      <p:input port="source">
+          <p:inline>
+              <doc>Hello world!</doc>
+          </p:inline>
+      </p:input>
+      <p:output port="result"/>
+      <p:identity/>
+  </p:declare-step>
+
+status active
+fileType text
+
+rosettaCode XProc

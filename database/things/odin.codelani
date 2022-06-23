@@ -1,7 +1,7 @@
+title odin
 appeared 2016
 type pl
-website https://odin-lang.org
-github https://github.com/odin-lang/Odin
+
 example
  package main
  
@@ -25,3 +25,15 @@ example
   fmt.printf("The program \"%s\" calculates the value %d\n",
              program, accumulator);
  }
+
+githubRepo https://github.com/odin-lang/Odin
+ firstCommit 2016
+ stars 747
+ forks 66
+ subscribers 47
+ created 2016
+ updated 2019
+ description Odin Programming Language
+ issues 57
+
+website https://odin-lang.org

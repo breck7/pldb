@@ -1,5 +1,41 @@
+title UNLAMBDA
 appeared 1999
 type pl
 creators David Madore
+
+patterns
+ hasCentralPackageRepository? false
+ hasComments? true
+
+wikipedia https://en.wikipedia.org/wiki/Unlambda
+ related scheme c java
+ summary Unlambda is a minimal, "nearly pure" functional programming language invented by David Madore. It is based on combinatory logic, a version of the lambda calculus that omits the lambda operator. It relies mainly on two built-in functions (s and k) and an apply operator (written `, the backquote character). These alone make it Turing-complete, but there are also some input/output (I/O) functions to enable interacting with the user, some shortcut functions, and a lazy evaluation function. Variables are unsupported. Unlambda is free and open-source software distributed under a GNU General Public License (GPL) 2.0 or later.
+ pageId 146927
+ dailyPageViews 41
+ created 2002
+ backlinksCount 48
+ revisionCount 108
+ appeared 1999
+
+helloWorldCollection UNLAMBDA
+ # Hello World in unlambda
+ 
+ `r```````````.H.e.l.l.o. .w.o.r.l.di
+ 
+
 website http://www.madore.org/~david/programs/unlambda/
-wikipedia Unlambda
+status historical
+
+replit unlambda
+
+tryItOnline unlambda
+
+country US
+fileType text
+isOpenSource true
+
+hopl 2598
+
+quineRelay Unlambda
+
+rosettaCode Unlambda

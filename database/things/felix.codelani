@@ -1,8 +1,8 @@
+title Felix
 appeared 2001
 type pl
 creators John Skaller
-website http://felix-lang.github.io/felix/
-github https://github.com/felix-lang/felix
+
 example
  #import <flx.flxh>
  fun abs_div(a:int, b:int when b!=0)
@@ -11,4 +11,40 @@ example
    abs(a/b)
  ;
  print (abs_div(2,4)); print "\n";
+
+patterns
+ hasPointers? true
+  var x = 1;
+  &x <- 2;
+ hasGenerics? true
+  // generics
+  fun g (x) => f (f x);
+  println$ g 1, g "hello";
+  println$ _map f (1,"hello",2.0);
+ hasPolymorphism? true
+  // overloads
+  fun f (x:double) => x +42.1;
+  fun f (x:int) =>  x + 1;
+  fun f (x:string) => x + "!";
+ hasCentralPackageRepository? false
+ hasPatternMatching? true
+  match x with
+   | Some x => println$ x; 
+   | None => println "NONE";
+   endmatch;
+
+githubRepo https://github.com/felix-lang/felix
+ firstCommit 2001
+ stars 539
+ forks 38
+ subscribers 37
+ created 2010
+ updated 2020
+ description The Felix Programming Language
+ issues 39
+
+website http://felix-lang.github.io/felix/
 reference http://web.archive.org/web/20080415185225/http://felix-lang.org/
+hackerNewsDiscussions
+ id|title|url|time|timestamp|by|comments|score
+ 5007674|Felix - a fast scripting language|http://felix-lang.org|2013-01-04 14:17:49 UTC|1357309069|nmcfarl|83|107

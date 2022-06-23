@@ -1,7 +1,18 @@
+title OQL
 type queryLanguage
-wikipedia Object_Query_Language
+
 example
  select c.address
  from Persons p, p.children c
  where p.address.street = "Main Street" and count(p.children) >= 2 and c.address.city != p.address.city
+
+wikipedia https://en.wikipedia.org/wiki/Object_Query_Language
+ summary Object Query Language (OQL) is a query language standard for object-oriented databases modeled after SQL.  OQL was developed by the Object Data Management Group (ODMG). Because of its overall complexity nobody has ever fully implemented the complete OQL. OQL has influenced the design of some of the newer query languages like JDOQL and EJB QL, but they can't be considered as different flavors of OQL.
+ backlinksCount 62
+ pageId 4674558
+ dailyPageViews 45
+
 reference http://tech.novosoft-us.com/products/oql_book.htm
+aka OQL
+
+hopl 4549

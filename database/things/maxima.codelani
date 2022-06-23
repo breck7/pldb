@@ -1,4 +1,31 @@
+title Maxima
 appeared 1982
 type pl
+
+patterns
+ hasCentralPackageRepository? false
+ hasComments? true
+
+wikipedia https://en.wikipedia.org/wiki/Maxima_(software)
+ related common-lisp unix linux android algol lisp gnuplot fortran jupyter-editor python qt sagemath r lyx-editor emacs-editor isbn
+ summary Maxima is a computer algebra system (CAS) based on a 1982 version of Macsyma. It is written in Common Lisp and runs on all POSIX platforms such as macOS, Unix, BSD, and Linux, as well as under Microsoft Windows and Android. It is free software released under the terms of the GNU General Public License (GPL).
+ pageId 95925
+ created 2002
+ backlinksCount 250
+ revisionCount 380
+ dailyPageViews 134
+ appeared 1982
+
 website http://maxima.sourceforge.net/
-wikipedia Maxima_(software)
+status historical
+
+tryItOnline maxima
+
+fileType text
+isOpenSource true
+
+projectEuler Maxima
+ memberCount
+  2022 19
+
+rosettaCode Maxima

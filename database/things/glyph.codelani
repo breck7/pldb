@@ -1,5 +1,23 @@
+title Glyph
 appeared 2007
 type pl
+
+patterns
+ hasCentralPackageRepository? false
+
+description Glyph2 is the scripting language for Pointwise.  It is an extension to the tcl programming language that allows access to the commands and entities of the Pointwise application.
+
+githubLanguage Glyph
+ fileExtensions glf
+ trendingProjectsCount 0
+
+linguistGrammarRepo https://github.com/textmate/tcl.tmbundle
+ firstCommit 2005
+ lastCommit 2013
+ committerCount 4
+ commitCount 56
+
 website http://www.pointwise.com/glyph2/files/Glyph/cxx/GgGlyph-cxx.html
 reference https://www.cfd-online.com/Wiki/Pointwise
-description Glyph2 is the scripting language for Pointwise.  It is an extension to the tcl programming language that allows access to the commands and entities of the Pointwise application.
+status active
+fileType text

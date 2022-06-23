@@ -1,4 +1,25 @@
+title American Standard Code for Information Interchange
 appeared 1963
 type characterEncoding
-wikipedia ASCII
+
+patterns
+ hasCentralPackageRepository? false
+
 description Started out as 7 bits. Now 8.
+
+wikipedia https://en.wikipedia.org/wiki/ASCII
+ example
+  !"#$%&'()*+,-./0123456789:;<=>?@ABCDEFGHIJKLMNOPQRSTUVWXYZ[\]^_`abcdefghijklmnopqrstuvwxyz{|}~
+ related punched-tape c vi-editor multics unix ftp utf-8 unicode java perl
+ summary ASCII ( ( listen) ASS-kee), abbreviated from American Standard Code for Information Interchange, is a character encoding standard for electronic communication. ASCII codes represent text in computers, telecommunications equipment, and other devices. Most modern character-encoding schemes are based on ASCII, although they support many additional characters. ASCII is the traditional name for the encoding system; the Internet Assigned Numbers Authority (IANA) prefers the updated name US-ASCII, which clarifies that this system was developed in the US and based on the typographical symbols predominantly in use there.
+ pageId 586
+ dailyPageViews 4139
+ created 2001
+ backlinksCount 4364
+ revisionCount 3541
+ appeared 1963
+
+standsFor American Standard Code for Information Interchange
+status active
+fileType na
+wordRank 7938

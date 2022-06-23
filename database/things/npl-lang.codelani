@@ -1,3 +1,13 @@
+title NPL programming language
 appeared 1977
 type pl
-wikipedia NPL_(programming_language)
+
+patterns
+ hasPatternMatching? true
+
+wikipedia https://en.wikipedia.org/wiki/NPL_(programming_language)
+ summary NPL is a functional programming language with pattern matching designed by Rod Burstall and John Darlington in 1977. The language allows certain sets and logic constructs to appear on the right hand side of definitions, e.g.  setofeven(X) <= <:x: x in X & even(x) :>The NPL interpreter evaluates the list of generators from left to right so conditions can mention any bound variables that occur to their left. These were known as set comprehensions. NPL eventually evolved into Hope but lost set comprehensions, which made a reappearance in the form of list comprehensions in later functional languages.
+ backlinksCount 9
+ pageId 948982
+ dailyPageViews 10
+ appeared 1977

@@ -1,8 +1,16 @@
+title git-config
 appeared 2005
 type application
-website https://git-scm.com/docs/git-config#_syntax
+
 example
  # Core variables
  [core]
    ; Don't trust file modes
    filemode = false
+
+patterns
+ hasCentralPackageRepository? false
+
+website https://git-scm.com/docs/git-config#_syntax
+status historical
+fileType text

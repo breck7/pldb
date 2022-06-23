@@ -1,4 +1,78 @@
+title ECL
 appeared 2000
 type pl
+
+patterns
+ hasCentralPackageRepository? false
+ hasComments? true
+
+wikipedia https://en.wikipedia.org/wiki/ECL,_data-centric_programming_language_for_Big_Data
+ example
+  D := DATASET([{'ECL'},{'Declarative'},{'Data'},{'Centric'},{'Programming'},{'Language'}],{STRING Value;});
+ related linux prolog pascal sql clarion
+ summary ECL is a declarative, data centric programming language designed in 2000 to allow a team of programmers to process big data across a high performance computing cluster without the programmer being involved in many of the lower level, imperative decisions.
+ pageId 31108124
+ dailyPageViews 1
+ created 2012
+ backlinksCount 19
+ revisionCount 1
+ appeared 2000
+
+githubLanguage ECL
+ fileExtensions ecl eclxml
+ trendingProjectsCount 0
+
+linguistGrammarRepo https://github.com/hpcc-systems/ecl-tmLanguage
+ sampleCount 1
+ example
+  /* 
+   * Multi-line comment
+   */
+  #option ('slidingJoins', true);
+  
+  namesRecord :=
+              RECORD
+  string20        surname;
+  string10        forename;
+  integer2        age;
+  integer2        dadAge;
+  integer2        mumAge;
+              END;
+  
+  namesRecord2 :=
+              record
+  string10        extra;
+  namesRecord;
+              end;
+  
+  namesTable := dataset('x',namesRecord,FLAT);
+  namesTable2 := dataset('y',namesRecord2,FLAT);
+  
+  integer2 aveAgeL(namesRecord l) := (l.dadAge+l.mumAge)/2;
+  integer2 aveAgeR(namesRecord2 r) := (r.dadAge+r.mumAge)/2;
+  
+  // Standard join on a function of left and right
+  output(join(namesTable, namesTable2, aveAgeL(left) = aveAgeR(right)));
+  
+  //Several simple examples of sliding join syntax
+  output(join(namesTable, namesTable2, left.age >= right.age - 10 and left.age <= right.age +10));
+  output(join(namesTable, namesTable2, left.age between right.age - 10 and right.age +10));
+  output(join(namesTable, namesTable2, left.age between right.age + 10 and right.age +30));
+  output(join(namesTable, namesTable2, left.age between (right.age + 20) - 10 and (right.age +20) + 10));
+  output(join(namesTable, namesTable2, aveAgeL(left) between aveAgeR(right)+10 and aveAgeR(right)+40));
+  
+  //Same, but on strings.  Also includes age to ensure sort is done by non-sliding before sliding.
+  output(join(namesTable, namesTable2, left.surname between right.surname[1..10]+'AAAAAAAAAA' and right.surname[1..10]+'ZZZZZZZZZZ' and left.age=right.age));
+  output(join(namesTable, namesTable2, left.surname between right.surname[1..10]+'AAAAAAAAAA' and right.surname[1..10]+'ZZZZZZZZZZ' and left.age=right.age,all));
+  
+  //This should not generate a self join
+  output(join(namesTable, namesTable, left.age between right.age - 10 and right.age +10));
+  
+
 website http://hpccsystems.com/
-wikipedia ECL,_data-centric_programming_language_for_Big_Data
+status active
+fileType text
+
+codeMirror ecl
+
+rosettaCode ECL

@@ -1,4 +1,13 @@
+title orca
 appeared 1985
 type pl
-reference https://sourceforge.net/p/orca-lang/wiki/Home/
+
+patterns
+ hasCentralPackageRepository? false
+
 description orca is yet another script language which supports OO & distribute processing & functional programming aspects. And It's useful in string processing with decode statements & regular expression in it.
+reference https://sourceforge.net/p/orca-lang/wiki/Home/
+status historical
+fileType text
+
+hopl 1250

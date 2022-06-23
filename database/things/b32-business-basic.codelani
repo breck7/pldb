@@ -1,3 +1,18 @@
+title B32 Business Basic
 appeared 1986
 type pl
-wikipedia B32_Business_Basic
+
+patterns
+ hasCentralPackageRepository? false
+
+wikipedia https://en.wikipedia.org/wiki/B32_Business_Basic
+ related data-general-business-basic unix
+ summary B32 Business Basic was a competitor to Data General Business Basic written by Murray Haszard in 1986. It ran on the Data General Eclipse MV line of computers initially, and was ported to Unix in 1989 and to DOS in 1991. B32 Software was the company that developed and supported B32 Business Basic, with the original site in Auckland, New Zealand supplemented by a sales and support centre in Blue Ash, Ohio. The B32 interpreter was highly compatible with Data General Business Basic (DGBB), but it also enhanced and extended that language in many ways. Like DGBB, B32 could access Data General's INFOS II database and it could use DGBB's lock server or its own improved version. B32 was over twice as fast for number crunching, string manipulation, and disk I/O. Many of the internal restrictions of DGBB were removed. B32 allowed 32,767 line numbers (65,535 in later versions), compared with DGBB's 9,999. B32 allowed more memory for programs, more simultaneous locks, and more files to be open at once. Language enhancements included a high-speed internal sort routine, do-while blocks, and the ability to step backwards through an indexed file. Debugging facilities were also significantly improved over DGBB. B32 allowed programs to run with full cursor positioning and attribute support on non-Data General terminals, even programs which had Data General control sequences hard-coded into them. B32 carried out all arithmetic at "quad precision", i.e. 64-bit, and emulated the "triple precision" and "double precision" versions of DGBB at runtime. This avoided the subtle incompatibilities between the two versions of DGBB. On Unix and DOS, B32 emulated all commonly used system calls of Data General's AOS/VS and RDOS operating systems, including implementing its own symbolic links on SCO Xenix and DOS. In 1991, a features war between B32 and one of its competitors, Transoft's Universal Business Basic, saw major improvements to the B32 language. B32 added a Bluebird Business Basic emulation mode, made line numbers optional, and added subroutine calls by name with parameter passing. Transoft had greater financial resources than B32, and more effective marketing. It purchased B32 in 1992. The DOS and Unix versions of B32 were discarded as Universal Business Basic ran on those operating systems, but the Eclipse MV version of B32 continued to be sold while the MV line lasted. Some of the B32 Software staff in Blue Ash moved to Transoft's Atlanta, Georgia office. The New Zealand staff went on to found Binary Research.
+ created 2004
+ backlinksCount 9
+ pageId 649437
+ revisionCount 12
+ dailyPageViews 4
+ appeared 1986
+
+status historical

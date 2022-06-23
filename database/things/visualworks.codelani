@@ -1,3 +1,20 @@
+title VisualWorks
 appeared 1985
 type pl
-wikipedia VisualWorks
+
+patterns
+ hasCentralPackageRepository? false
+
+wikipedia https://en.wikipedia.org/wiki/VisualWorks
+ related smalltalk linux unix fortran pascal ada squeak ntfs
+ summary VisualWorks is a cross-platform implementation of the Smalltalk language. It is implemented as a development system based on "images", which are dynamic collections of software objects, each contained in a system image. The lineage of VisualWorks goes back to the first Smalltalk-80 implementation by Xerox PARC. In the late 1980s, a group of Smalltalk-80 developers spun off ParcPlace Systems to further develop Smalltalk-80 as a commercial product. The commercial product was initially called ObjectWorks, and then VisualWorks. On August 31, 1999, the VisualWorks product was sold to Cincom. VisualWorks runs under many operating systems, including  Windows, Mac OS X, Linux, and several versions of Unix. VisualWorks has a very active third-party developers community, with a non-commercial version available free. The non-commercial version has all the power and functionality of the commercial version. In both versions, as in all Smalltalks, the user can see all the source code. This includes all the system classes, including the browser and GUI builder. VisualWorks supports cross-platform development projects, because of its built-in multi-platform features. For example, a GUI application needs to be developed only once, and can then be switched to different widget styles. A VisualWorks application can be run on all supported platforms without any modifications. Only the virtual machine is platform-dependent.
+ created 2004
+ backlinksCount 46
+ pageId 1316295
+ revisionCount 114
+ dailyPageViews 39
+ appeared 1980
+
+status historical
+
+hopl 3895

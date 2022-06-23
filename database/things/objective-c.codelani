@@ -1,5 +1,132 @@
+title Objective-C
 appeared 1984
 type pl
 creators Brad Cox
+
+patterns
+ hasSingleDispatch? true
+ hasCentralPackageRepository? true
+ hasConstructors? true
+ hasGarbageCollection? false
+ hasImports? true
+  // #import ensures that a file is only ever included once so that you never have a problem with recursive includes.
+  #import <Foundation/Foundation.h>
+  #include <asl.h>
+  #include <mach/mach.h>
+ hasInterfaces? true
+  @protocol Printing
+     -(void) print;
+  @end
+ hasOperatorOverloading? false
+
+wikipedia https://en.wikipedia.org/wiki/Objective-C
+ example
+  -(void) firstLabel: (int)param1 secondLabel: (int)param2;
+ related c smalltalk groovy java nu objective-j tom-oopl swift ios simula ada self ruby llvmir linux vala
+ summary Objective-C is a general-purpose, object-oriented programming language that adds Smalltalk-style messaging to the C programming language. It was the main programming language used by Apple for the OS X and iOS operating systems, and their respective application programming interfaces (APIs) Cocoa and Cocoa Touch prior to the introduction of Swift. The programming language Objective-C was originally developed in the early 1980s. It was selected as the main language used by NeXT for its NeXTSTEP operating system, from which OS X and iOS are derived. Portable Objective-C programs that do not use the Cocoa or Cocoa Touch libraries, or those using parts that may be ported or reimplemented for other systems, can also be compiled for any system supported by GNU Compiler Collection (GCC) or Clang. Objective-C source code 'implementation' program files usually have .m filename extensions, while Objective-C 'header/interface' files have .h extensions, the same as C header files. Objective-C++ files are denoted with a .mm file extension.
+ pageId 39809523
+ dailyPageViews 910
+ created 2002
+ backlinksCount 1275
+ revisionCount 1901
+ appeared 1984
+ fileExtensions h m mm C
+
+githubLanguage Objective-C
+ fileExtensions m h
+ trendingProjects
+  author name avatar url language languageColor stars forks currentPeriodStars description
+  MustangYM WeChatExtension-ForMac https://github.com/MustangYM.png https://github.com/MustangYM/WeChatExtension-ForMac Objective-C #438eff 1706 302 460 Mac版微信的功能拓展
+  firebase firebase-ios-sdk https://github.com/firebase.png https://github.com/firebase/firebase-ios-sdk Objective-C #438eff 1341 317 54 "Firebase iOS SDK"
+  Flipboard FLEX https://github.com/Flipboard.png https://github.com/Flipboard/FLEX Objective-C #438eff 10723 1223 112 "An in-app debugging and exploration tool for iOS"
+  sparkle-project Sparkle https://github.com/sparkle-project.png https://github.com/sparkle-project/Sparkle Objective-C #438eff 4445 795 54 "A software update framework for macOS"
+  Sunnyyoung WeChatTweak-macOS https://github.com/Sunnyyoung.png https://github.com/Sunnyyoung/WeChatTweak-macOS Objective-C #438eff 3641 479 210 "A dynamic library tweak for WeChat macOS - 首款微信 macOS 客户端撤回拦截与多开"
+  gnachman iTerm2 https://github.com/gnachman.png https://github.com/gnachman/iTerm2 Objective-C #438eff 9157 917 200 "iTerm2 is a terminal emulator for Mac OS X that does amazing things."
+  react-native-community react-native-permissions https://github.com/react-native-community.png https://github.com/react-native-community/react-native-permissions Objective-C #438eff 1592 506 50 "Check and request user permissions in ReactNative (iOS and Android)"
+  react-native-webrtc react-native-webrtc https://github.com/react-native-webrtc.png https://github.com/react-native-webrtc/react-native-webrtc Objective-C #438eff 2291 556 54 "The WebRTC module for React Native"
+  banchichen TZImagePickerController https://github.com/banchichen.png https://github.com/banchichen/TZImagePickerController Objective-C #438eff 6628 1487 106 "一个支持多选、选原图和视频的图片选择器，同时有预览、裁剪功能，支持iOS6+。 A clone of UIImagePickerController, support picking multiple photos、original photo、video, also allow preview photo and video, support iOS6+"
+  git-up GitUp https://github.com/git-up.png https://github.com/git-up/GitUp Objective-C #438eff 8649 567 81 "The Git interface you've been missing all your life has finally arrived."
+  kstenerud KSCrash https://github.com/kstenerud.png https://github.com/kstenerud/KSCrash Objective-C #438eff 2785 421 51 "The Ultimate iOS Crash Reporter"
+  halfrost Halfrost-Field https://github.com/halfrost.png https://github.com/halfrost/Halfrost-Field Objective-C #438eff 4210 702 102 "✍️ 这里是写博客的地方 —— Halfrost-Field 冰霜之地"
+  WenchaoD FSCalendar https://github.com/WenchaoD.png https://github.com/WenchaoD/FSCalendar Objective-C #438eff 8285 1457 124 "A fully customizable iOS calendar library, compatible with Objective-C and Swift"
+  facebook Shimmer https://github.com/facebook.png https://github.com/facebook/Shimmer Objective-C #438eff 9052 1092 58 "An easy way to add a simple, shimmering effect to any view in an iOS app."
+  liberalisman iOS-InterviewQuestion-collection https://github.com/liberalisman.png https://github.com/liberalisman/iOS-InterviewQuestion-collection Objective-C #438eff 2176 419 91 "iOS 开发者在面试过程中，常见的一些面试题，建议尽量弄懂了原理，并且多实践。"
+  realm realm-cocoa https://github.com/realm.png https://github.com/realm/realm-cocoa Objective-C #438eff 13425 1754 71 "Realm is a mobile database: a replacement for Core Data & SQLite"
+  luggit react-native-config https://github.com/luggit.png https://github.com/luggit/react-native-config Objective-C #438eff 2536 440 62 "Bring some 12 factor love to your mobile apps!"
+  pujiaxin33 JXPagingView https://github.com/pujiaxin33.png https://github.com/pujiaxin33/JXPagingView Objective-C #438eff 911 154 94 类似微博主页、简书主页等效果。多页面嵌套，既可以上下滑动，也可以左右滑动切换页面。支持HeaderView悬浮、支持下拉刷新、上拉加载更多。
+  nst iOS-Runtime-Headers https://github.com/nst.png https://github.com/nst/iOS-Runtime-Headers Objective-C #438eff 7298 1564 42 "iOS Objective-C headers as derived from runtime introspection"
+  kayanouriko E-HentaiViewer https://github.com/kayanouriko.png https://github.com/kayanouriko/E-HentaiViewer Objective-C #438eff 534 78 43 一个E-Hentai的iOS端阅读器
+  zendesk zendesk_sdk_ios https://github.com/zendesk.png https://github.com/zendesk/zendesk_sdk_ios Objective-C #438eff 105 72 4 "Zendesk Mobile SDK for iOS"
+  KJCracks Clutch https://github.com/KJCracks.png https://github.com/KJCracks/Clutch Objective-C #438eff 2607 534 58 "Fast iOS executable dumper"
+  AliSoftware OHHTTPStubs https://github.com/AliSoftware.png https://github.com/AliSoftware/OHHTTPStubs Objective-C #438eff 4256 512 49 "Stub your network requests easily! Test your apps with fake network data and custom response time, response code and headers!"
+  openid AppAuth-iOS https://github.com/openid.png https://github.com/openid/AppAuth-iOS Objective-C #438eff 657 328 18 "iOS and macOS SDK for communicating with OAuth 2.0 and OpenID Connect providers."
+  uber ios-snapshot-test-case https://github.com/uber.png https://github.com/uber/ios-snapshot-test-case Objective-C #438eff 977 99 26 "Snapshot view unit tests for iOS"
+ trendingProjectsCount 26
+
+helloWorldCollection Objective-C
+ /* Hello World in Objective-C.
+ ** Since the standard implementation is identical to K&R C,
+ ** a version that says hello to a set of people passed on
+ ** the command line is shown here.
+ */
+ 
+ #include <stdio.h>
+ #include <objpak.h>
+ int main(int argc,char **argv)
+ {
+     id set = [Set new];
+     argv++;while (--argc) [set add:[String str:*argv++]];
+     [set do:{ :each | printf("hello, %s!\n",[each str]); }];
+     return 0;
+ }
+ 
+
+linguistGrammarRepo https://github.com/textmate/objective-c.tmbundle
+ firstCommit 2005
+ lastCommit 2018
+ committerCount 14
+ commitCount 499
+ sampleCount 22
+ example
+  #import "Foo.h"
+  
+  
+  @implementation Foo
+  
+  @end
+  
+
 website https://developer.apple.com/library/content/documentation/Cocoa/Conceptual/ProgrammingWithObjectiveC/Introduction/Introduction.html
-wikipedia Objective-C
+status active
+country US
+fileExtensions h m mm C
+fileType text
+
+tiobe Objective-C
+ currentRank 19
+
+meetup objective-c
+ memberCount 235352
+ groupCount 445
+
+projectEuler Objective-C
+ memberCount
+  2019 66
+  2022 60
+
+hopl 1247
+
+subreddit ObjectiveC
+ memberCount
+  2017 5468
+
+quineRelay Objective-C
+
+ubuntuPackage gobjc
+
+rosettaCode Objective-C
+
+antlr https://github.com/antlr/grammars-v4/tree/master/objc
+
+indeedJobs objective-c engineer
+ 2017 4276

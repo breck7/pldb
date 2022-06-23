@@ -1,3 +1,30 @@
+title Combined Programming Language
 appeared 1963
 type pl
-wikipedia CPL_(programming_language)
+
+patterns
+ hasCentralPackageRepository? false
+
+wikipedia https://en.wikipedia.org/wiki/CPL_(programming_language)
+ example
+  Max(Items, ValueFunction) = value of
+  § (Best, BestVal) = (NIL, -∞)
+  while Items do §
+  (Item, Val) = (Head(Items), ValueFunction(Head(Items)))
+  if Val > BestVal then (Best, BestVal) := (Item, Val)
+  Items := Rest(Items) §⃒
+  result is Best §⃒
+ related algol-60 bcpl pop-2 b c
+ summary CPL (Combined Programming Language) is a multi-paradigm programming language, that was developed in the early 1960s.  It is an early ancestor of the C language via the BCPL and B languages.
+ pageId 828614
+ created 2001
+ backlinksCount 31
+ revisionCount 157
+ dailyPageViews 58
+ appeared 1963
+
+standsFor Combined Programming Language
+status historical
+fileType text
+
+hopl 181

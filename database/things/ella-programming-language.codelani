@@ -1,3 +1,64 @@
+title ELLA
 appeared 1979
 type pl
-wikipedia ELLA_%28programming_language%29
+
+patterns
+ hasCentralPackageRepository? false
+
+wikipedia https://en.wikipedia.org/wiki/ELLA_%28programming_language%29
+ example
+  MAC ZIP = ([INT n]TYPE t: vector1 vector2) -> [n][2]t:
+    [INT k = 1..n](vector1[k], vector2[k]).
+       
+  MAC TRANSPOSE = ([INT n][INT m]TYPE t: matrix) -> [m][n]t:
+    [INT i = 1..m] [INT j = 1..n] matrix[j][i].
+  
+  MAC INNER_PRODUCT{FN * = [2]TYPE t -> TYPE s, FN + = [2]s -> s}
+                   = ([INT n][2]t: vector) -> s:
+    IF n = 1 THEN *vector[1]
+    ELSE *vector[1] + INNER_PRODUCT {*,+} vector[2..n]
+    FI.
+  
+  MAC MATRIX_MULT {FN * = [2]TYPE t->TYPE s, FN + = [2]s->s} =
+  ([INT n][INT m]t: matrix1, [m][INT p]t: matrix2) -> [n][p]s:
+  BEGIN
+    LET transposed_matrix2 = TRANSPOSE matrix2.
+  OUTPUT [INT i = 1..n][INT j = 1..p]
+         INNER_PRODUCT{*,+}ZIP(matrix1[i],transposed_matrix2[j])
+  END.
+  
+  TYPE element = NEW elt/(1..20),
+       product = NEW prd/(1..1200).
+  
+  FN PLUS = (product: integer1 integer2) -> product:
+    ARITH integer1 + integer2.
+  
+  FN MULT = (element: integer1 integer2) -> product:
+    ARITH integer1 * integer2.
+  
+  FN MULT_234 = ([2][3]element:matrix1, [3][4]element:matrix2) ->
+               [2][4]product:  
+    MATRIX_MULT{MULT,PLUS}(matrix1, matrix2).
+  
+  FN TEST = () -> [2][4]product:
+  ( LET m1 = ((elt/2, elt/1, elt/1),
+              (elt/3, elt/6, elt/9)), 
+        m2 = ((elt/6, elt/1, elt/3, elt/4), 
+              (elt/9, elt/2, elt/8, elt/3),
+              (elt/6, elt/4, elt/1, elt/2)).
+    OUTPUT
+      MULT_234 (m1, m2)
+  ).
+  
+  COM test: just displaysignal MOC
+ summary ELLA is a Hardware description language and support toolset. Developed by the Royal Signals and Radar Establishment during the 1980s and 1990s. Includes tools to perform:  design transformation symbolic simulations formal verificationELLA is a winner of the 1989 Queen's Award for Technological Achievement.
+ created 2008
+ backlinksCount 102
+ pageId 20547508
+ revisionCount 16
+ dailyPageViews 10
+ appeared 1980
+
+status historical
+
+hopl 847

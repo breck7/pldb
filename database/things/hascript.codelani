@@ -1,3 +1,19 @@
+title IBM HAScript
 appeared 1990
 type pl
-wikipedia IBM_HAScript
+
+patterns
+ hasCentralPackageRepository? false
+
+wikipedia https://en.wikipedia.org/wiki/IBM_HAScript
+ related xml jvm
+ summary HAScript, or Host Access Script, is an IBM-developed macro language with an XML syntax designed for programmatic interaction with terminal-based applications. HAScript is based on a state machine principle. The first commercial implementation appeared in IBM's Host On-Demand in the late 1990s. IBM software products that use HAScript include WebSphere Host On-Demand (HOD), Personal Communications, and WebSphere Host Access Transformation Services (HATS). When accessing the IBM Mainframe the HAScript API allows for Host emulation whereby information from the host screen can be retrieved and reformatted within a webpage, or other software application.  There has been limited adoption of HAScript as it requires an intense amount of system resources, general process overhead and Java virtual machine resources.  To date, the implementation of HAScript by other software companies has been mild as the language used for communication is not universally standardized.
+ pageId 1205430
+ created 2004
+ backlinksCount 5
+ revisionCount 13
+ dailyPageViews 6
+ appeared 1990
+
+status historical
+fileType text

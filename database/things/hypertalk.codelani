@@ -1,4 +1,35 @@
+title HyperTalk
 appeared 1987
 type pl
 creators Dan Winkler
-wikipedia HyperTalk
+
+patterns
+ hasCentralPackageRepository? false
+
+wikipedia https://en.wikipedia.org/wiki/HyperTalk
+ example
+  on mouseUp 
+      select the clickLine
+      put word 2 of the clickLine into linenum
+      do line linenum of cd fld 1
+    end mouseUp
+ related pascal actionscript applescript ecmascript javascript lingo livecode sensetalk supertalk hypercard
+ summary HyperTalk is a high-level, procedural programming language created in 1987 by Dan Winkler and used in conjunction with Apple Computer's HyperCard hypermedia program by Bill Atkinson. The main target audience of HyperTalk was beginning programmers, hence HyperTalk programmers were usually called authors, and the process of writing programs was called "scripting". HyperTalk scripts are fairly similar to written English, and use a logic structure similar to that of the Pascal programming language. It supports the basic control structures of procedural languages: repeat for/while/until, if/then/else, as well as function and message "handler" calls (a handler is a subroutine, a message handler is a procedure). Data types are transparent to the user, conversion happens transparently in the background between strings and numbers. There are no classes or data structures in the traditional sense; their place was taken by special string literals, or rather "lists" of "items" delimited by commas (in later versions the "itemDelimiter" property allowed choosing an arbitrary character). In the late 1980s Apple considered using HyperCard's HyperTalk scripting language as the standard language across the company and within its classic Mac OS operating system, and for interprocess communication between Apple and non-Apple products. The company did not oppose the development of imitations like SuperCard, and created a HyperTalk Standards Committee to avoid incompatibility between language variants. The case-insensitive language was interpreted at first, but gained just-in-time compilation with HyperCard 2.0.
+ pageId 78136
+ dailyPageViews 51
+ created 2002
+ backlinksCount 59
+ revisionCount 221
+ appeared 1987
+
+status active
+country US
+fileType text
+
+tiobe HyperTalk
+
+hopl 1328
+
+rosettaCode HyperTalk
+
+corporateDevelopers Apple

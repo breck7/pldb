@@ -1,3 +1,25 @@
+title Action Code Script
 appeared 2004
 type pl
-wikipedia Action_Code_Script
+
+patterns
+ hasCentralPackageRepository? false
+
+wikipedia https://en.wikipedia.org/wiki/Action_Code_Script
+ example
+  1  // Similar to C's stdio.h, ACS has its own library of basic functions
+  2  #include "zcommon.acs"
+  3  
+  4  script 1 ENTER
+  5  {
+  6     print(s:"Hello World!");
+  7  }
+ related c quakec
+ summary Action Code Script (ACS) is a scripting language used in video games such as HeXen and some modern Doom source ports, such as ZDoom. It is syntactically similar to C, but less flexible. As its name implies, most of the core logic for script functionality comes in the form of "scripts", which are traditionally identified with a numerical value. Later revisions of the ACS compiler added support for "named" scripts (which utilize a String in lieu of the numerical identifier), and simple functions.  Similar to traditional code, ACS is compiled using ACC (an homage to C's gcc utility) for use in Doom, Hexen, etc... Scripts can be executed in a variety of methods, such as being attached to in-game actors, execution through level triggers around each map, or invocation from other scripts or functions. As the entire scripting language is built as a hack on top of the Doom id Tech's engine, there is no formal support for any Object-oriented programming principles.
+ created 2004
+ backlinksCount 10
+ pageId 421959
+ revisionCount 35
+ dailyPageViews 7
+
+status historical

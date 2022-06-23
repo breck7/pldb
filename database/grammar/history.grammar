@@ -1,0 +1,52 @@
+statusCell
+ enum historical active
+ highlightScope constant.language
+statusNode
+ cells keywordCell statusCell
+ extends abstractFactNode
+ crux status
+creatorNameCell
+ extends stringCell
+creatorsNode
+ description Name(s) of the original creators of the language delimited by " and "
+ cells keywordCell
+ catchAllCellType creatorNameCell
+ extends abstractFactNode
+ crux creators
+ int sortIndex 800
+ single
+appearedNode
+ description What year was the language publicly released and/or announced.
+ extends abstractYearNode
+ int sortIndex 900
+ crux appeared
+ single
+firstAnnouncementNode
+ description A url announcing the creation or release of a new language
+ extends abstractUrlNode
+ crux firstAnnouncement
+announcementMethodCell
+ description Common ways languages are first announced.
+ enum pressRelease paper rfc webpage blogPost interview
+ highlightScope constant.language
+announcementMethodNode
+ description How was the language first announced?
+ extends abstractFactNode
+ cells keywordCell announcementMethodCell
+ crux announcementMethod
+countryWordCell
+countryNode
+ description What country was the language first developed in?
+ cells keywordCell countryWordCell
+ extends abstractFactNode
+ crux country
+corporateDevelopersNode
+ description Which corporation(s) sponsors the development of the project, if any.
+ catchAllCellType stringCell
+ extends abstractFactNode
+ crux corporateDevelopers
+isOpenSourceNode
+ description Is it an open source project?
+ extends abstractBooleanNode
+ crux isOpenSource
+ single

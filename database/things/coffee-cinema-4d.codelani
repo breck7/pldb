@@ -1,4 +1,18 @@
+title COFFEE Cinema 4D
 appeared 1992
 type pl
-wikipedia COFFEE_(Cinema_4D)
+
+patterns
+ hasCentralPackageRepository? false
+
+wikipedia https://en.wikipedia.org/wiki/COFFEE_(Cinema_4D)
+ related perl javascript
+ summary COFFEE (often written as "C.O.F.F.E.E") is a computer scripting language that forms part of CINEMA 4D, a proprietary 3D graphics application. Although presented as an acronym the letters of the word COFFEE do not appear to stand for anything, but are rather a comic reference to Java, a considerably more famous computer language.
+ created 2006
+ backlinksCount 5
+ pageId 6261085
+ revisionCount 19
+ dailyPageViews 5
+
 reference https://en.wikipedia.org/wiki/Cinema_4D
+status historical

@@ -1,6 +1,7 @@
+title OpenVera
 appeared 2001
 type pl
-wikipedia OpenVera
+
 example
  // This Examples shows how random 
  // Test vectors is generated
@@ -48,4 +49,21 @@ example
     tx.num_cmds = 5;
     tx.gen_tx();
  }
+
+patterns
+ hasCentralPackageRepository? false
+
+wikipedia https://en.wikipedia.org/wiki/OpenVera
+ related systemverilog
+ summary OpenVera is a hardware verification language developed and managed by Synopsys. OpenVera is an interoperable, open hardware verification language for testbench creation. The OpenVera language was used as the basis for the advanced verification features in the IEEE Std. 1800 SystemVerilog standard, for the benefit of the entire verification community including companies in the semiconductor, systems, IP and EDA industries along with verification services. The OpenVera language reference manual (LRM) can be obtained at no cost, but modifications to the language must go through Synopsys.
+ pageId 7841593
+ created 2006
+ backlinksCount 100
+ revisionCount 43
+ dailyPageViews 17
+ appeared 2008
+
 reference http://wiki.c2.com/?VeraLanguage
+status historical
+fileExtensions vr
+fileType text

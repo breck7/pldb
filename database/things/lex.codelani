@@ -1,3 +1,76 @@
+title Lex
 appeared 1975
 type grammarLanguage
-wikipedia Lex_(software)
+
+patterns
+ hasCentralPackageRepository? false
+
+wikipedia https://en.wikipedia.org/wiki/Lex_(software)
+ example
+  Saw an integer: 123
+  Saw an integer: 2
+  Saw an integer: 6
+ related yacc unix c regex bison ragel
+ summary Lex is a computer program that generates lexical analyzers ("scanners" or "lexers"). Lex is commonly used with the yacc parser generator. Lex, originally written by Mike Lesk and Eric Schmidt and described in 1975, is the standard lexical analyzer generator on many Unix systems, and an equivalent tool is specified as part of the POSIX standard. Lex reads an input stream specifying the lexical analyzer and outputs source code implementing the lexer in the C programming language.
+ pageId 105985
+ dailyPageViews 178
+ created 2002
+ backlinksCount 280
+ revisionCount 304
+ appeared 1975
+
+githubLanguage Lex
+ fileExtensions l lex
+ trendingProjectsCount 0
+
+linguistGrammarRepo https://github.com/Alhadis/language-grammars
+ sampleCount 1
+ example
+  /*
+     +----------------------------------------------------------------------+
+     | Zend Engine                                                          |
+     +----------------------------------------------------------------------+
+     | Copyright (c) 1998-2012 Zend Technologies Ltd. (http://www.zend.com) |
+     +----------------------------------------------------------------------+
+     | This source file is subject to version 2.00 of the Zend license,     |
+     | that is bundled with this package in the file LICENSE, and is        |
+     | available through the world-wide-web at the following url:           |
+     | http://www.zend.com/license/2_00.txt.                                |
+     | If you did not receive a copy of the Zend license and are unable to  |
+     | obtain it through the world-wide-web, please send a note to          |
+     | license@zend.com so we can mail you a copy immediately.              |
+     +----------------------------------------------------------------------+
+     | Authors: Zeev Suraski <zeev@zend.com>                                |
+     |          Jani Taskinen <jani@php.net>                                |
+     |          Marcus Boerger <helly@php.net>                              |
+     |          Nuno Lopes <nlopess@php.net>                                |
+     |          Scott MacVicar <scottmac@php.net>                           |
+     +----------------------------------------------------------------------+
+  */
+  
+  /* $Id$ */
+  
+  #include <errno.h>
+  #include "zend.h"
+  #include "zend_globals.h"
+  #include <zend_ini_parser.h>
+  #include "zend_ini_scanner.h"
+  
+  #if 0
+  # define YYDEBUG(s, c) printf("state: %d char: %c\n", s, c)
+  #else
+  # define YYDEBUG(s, c)
+  #endif
+  
+  #include "zend_ini_scanner_defs.h"
+  
+  #define YYCTYPE   unsigned char
+  /* allow the scanner to read one null byte after the end of the string (from ZEND_MMAP_AHEAD)
+   * so that if will be able to terminate to match the current token (e.g. non-enclosed string) */
+  #define YYFILL(n) { if (YYCURSOR > YYLIMIT) return 0
+
+status active
+country US
+fileType text
+
+hopl 680

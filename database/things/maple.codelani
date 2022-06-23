@@ -1,4 +1,49 @@
+title Maple
 appeared 1982
 type pl
+
+patterns
+ hasCentralPackageRepository? true
+ hasComments? true
+
+wikipedia https://en.wikipedia.org/wiki/Maple_(software)
+ example
+  eqn:= f(x)-3*Int((x*y+x^2*y^2)*f(y), y=-1..1) = h(x):
+   intsolve(eqn,f(x));
+ related c java linux pascal csharp fortran matlab visual-basic excel-app watcom sql http javascript julia perl python r java-server-pages mathcad mupad sagemath
+ summary Maple is a symbolic and numeric computing environment, and is also a multi-paradigm programming language. Developed by Maplesoft, Maple also covers other aspects of technical computing, including visualization, data analysis, matrix computation, and connectivity. A toolbox, MapleSim, adds functionality for multidomain physical modeling and code generation.
+ pageId 79099
+ dailyPageViews 231
+ created 2002
+ backlinksCount 421
+ revisionCount 776
+ appeared 1982
+
+helloWorldCollection Maple
+ # Hello World in Maple
+ 
+ >> printf("Hello World!");
+ 
+
 website http://www.maplesoft.com/products/maple/
-wikipedia Maple_(software)
+status active
+
+twitter maplesoft
+
+country CA
+fileType text
+wordRank 6311
+
+tiobe Maple
+
+linkedInSkill maple
+ peopleWithThisSkillCount 51134
+
+projectEuler Maple
+ memberCount
+  2019 262
+  2022 265
+
+hopl 909
+
+rosettaCode Maple

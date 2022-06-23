@@ -1,5 +1,7 @@
+title WebAssembly Text Format
 appeared 2015
 type pl
+
 example
   (module
    (import "math" "exp" (func $exp (param f64) (result f64)))
@@ -8,5 +10,10 @@ example
        (call $exp
          (get_local $0))
        (f64.const 2))))
-reference https://developer.mozilla.org/en-US/docs/WebAssembly/Text_format_to_wasm
+
+patterns
+ hasSemanticIndentation? false
+
 description WebAssembly has an S-expression-based textual representation, an intermediate form designed to be exposed in text editors, browser developer tools, etc.
+reference https://developer.mozilla.org/en-US/docs/WebAssembly/Text_format_to_wasm
+fileExtensions wast

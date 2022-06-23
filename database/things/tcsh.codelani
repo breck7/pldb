@@ -1,2 +1,25 @@
+title tcsh
 appeared 1983
 type pl
+
+patterns
+ hasCentralPackageRepository? false
+
+githubLanguage Tcsh
+ fileExtensions tcsh csh
+ trendingProjectsCount 0
+
+linguistGrammarRepo https://github.com/atom/language-shellscript
+ firstCommit 2013
+ lastCommit 2018
+ committerCount 31
+ commitCount 243
+
+status active
+
+tryItOnline tcsh
+
+country US
+fileType text
+
+hopl 2560

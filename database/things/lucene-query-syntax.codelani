@@ -1,4 +1,20 @@
+title Apache Lucene
 appeared 1999
 type queryLanguage
-wikipedia Apache_Lucene
+
+patterns
+ hasCentralPackageRepository? false
+
+wikipedia https://en.wikipedia.org/wiki/Apache_Lucene
+ related java object-pascal perl csharp python ruby php pdf html c
+ summary Apache Lucene is a free and open-source information retrieval software library, originally written completely in Java by Doug Cutting. It is supported by the Apache Software Foundation and is released under the Apache Software License. Lucene has been ported to other programming languages including Object Pascal, Perl, C#, C++, Python, Ruby and PHP.
+ created 2004
+ backlinksCount 220
+ pageId 522923
+ revisionCount 657
+ dailyPageViews 187
+ appeared 2010
+
 reference https://lucene.apache.org/core/2_9_4/queryparsersyntax.html
+status active
+isOpenSource true

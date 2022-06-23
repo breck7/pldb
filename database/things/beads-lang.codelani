@@ -1,7 +1,8 @@
+title beads-lang
 appeared 2016
 type pl
 creators Edward de Jong
-website http://beadslang.org/
+
 example
  beads level 1 program calculator
  //  flutter version available at: on github, look for: flutter-calculator-demo
@@ -245,4 +246,8 @@ example
      g.terms[g.termx].op = operand
      inc g.termx
      g.terms[g.termx].ss = "" // empty term 
+
+website http://beadslang.org/
 reference https://docs.google.com/spreadsheets/d/12sTu7RT-s_QlAupY1v-3DfI1Mm9NEX5YMWWTDAKHLfc/edit#gid=0
+country USA
+fileExtensions beads

@@ -1,7 +1,18 @@
+title rosie
 appeared 2015
 type queryLanguage
-website http://rosie-lang.org/
-github https://gitlab.com/rosie-pattern-language/rosie
+
 example
  rosie --rpl 'd = [:digit:]' -o json match d
+
+patterns
+ hasCentralPackageRepository? false
+
 description RPL is a variant of modern Regular Expressions (regex) that is designed to scale to big data, many developers, and large collections of patterns.  If you use regex, you already know a lot of RPL.
+
+githubRepo https://gitlab.com/rosie-pattern-language/rosie
+
+website http://rosie-lang.org/
+status active
+fileType text
+isOpenSource true

@@ -1,3 +1,19 @@
+title IA-32
 appeared 1985
 type isa
-wikipedia IA-32
+
+patterns
+ hasCentralPackageRepository? false
+
+wikipedia https://en.wikipedia.org/wiki/IA-32
+ related x86-isa
+ summary IA-32 (short for "Intel Architecture, 32-bit", sometimes also called i386) is the 32-bit version of the x86 instruction set architecture, first implemented in the Intel 80386 microprocessors in 1985. IA-32 is the first incarnation of x86 that supports 32-bit computing; as a result, the "IA-32" term may be used as a metonym to refer to all x86 versions that support 32-bit computing. The IA-32 instruction set was introduced in the Intel 80386 microprocessor in 1985 and, as of 2017, remains supported by contemporary PC microprocessors. Even though the instruction set has remained intact, the successive generations of microprocessors that run it have become much faster. Within various programming language directives, IA-32 is still sometimes referred to as the "i386" architecture. Intel is the inventor and the biggest supplier of IA-32 processors, and the second biggest supplier is AMD. For a while, VIA, Transmeta and others also produced IA-32 processors, but since the 2000s all manufacturers moved to the 64-bit variant of x86, x86-64.
+ pageId 15046
+ dailyPageViews 299
+ created 2001
+ backlinksCount 971
+ revisionCount 570
+ appeared 1985
+
+status historical
+fileType na

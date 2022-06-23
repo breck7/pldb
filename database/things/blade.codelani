@@ -1,6 +1,7 @@
+title Blade
 appeared 2011
 type template
-website https://laravel.com/docs/5.7/blade
+
 example
  <!-- Stored in resources/views/layouts/app.blade.php -->
  
@@ -18,3 +19,45 @@ example
          </div>
      </body>
  </html>
+
+patterns
+ hasCentralPackageRepository? false
+
+githubLanguage Blade
+ fileExtensions blade bladephp
+ trendingProjectsCount 0
+
+linguistGrammarRepo https://github.com/jawee/language-blade
+ firstCommit 2014
+ lastCommit 2018
+ committerCount 13
+ commitCount 245
+ sampleCount 2
+ example
+  <!DOCTYPE html>
+  <html>
+  <head>
+      <title>@yield('title', 'We love GitHub')</title>
+      @stack('scripts')
+      @stack('styles')
+  </head>
+  <body>
+      @include('partials.nav')
+  
+      @yield('content')
+  
+      <ul>
+          @foreach($foo as $bar)
+          <li>{{ $bar }}</li>
+          @endforeach
+      </ul>
+  
+      {!! $raw_content !!}
+  </body>
+  </html>
+  
+
+website https://laravel.com/docs/5.7/blade
+status active
+fileType text
+wordRank 5556

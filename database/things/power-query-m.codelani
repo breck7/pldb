@@ -1,5 +1,7 @@
+title power-query-m
 appeared 2015
 type queryLanguage
+
 example
  "Hello World"             // a text value 
  123                       // a number 
@@ -11,5 +13,10 @@ example
  if 2 > 1 then 2 else 1    // a conditional expression 
  let x = 1 + 1  in x * 2   // a let expression 
  error "A"                 // error with message "A"
-reference https://docs.microsoft.com/en-us/powerquery-m/power-query-m-type-system
+
+patterns
+ hasCentralPackageRepository? false
+
 description The Power Query M formula language is optimized for building highly flexible data mashup queries. It's a functional, case sensitive language similar to F#.
+reference https://docs.microsoft.com/en-us/powerquery-m/power-query-m-type-system
+status active

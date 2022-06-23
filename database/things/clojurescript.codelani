@@ -1,4 +1,25 @@
+title clojurescript
 appeared 2011
 type pl
+
+patterns
+ hasCentralPackageRepository? false
+
+githubRepo https://github.com/clojure/clojurescript
+ stars 7429
+ forks 648
+ subscribers 449
+ created 2011
+ updated 2017
+ firstCommit 2011
+ description Clojure to JS compiler
+ issues 2
+
 website https://clojurescript.org/
-github https://github.com/clojure/clojurescript
+status active
+firstAnnouncement http://clojure.com/blog/2011/07/22/introducing-clojurescript.html
+fileType text
+compilesTo javascript
+isOpenSource true
+cheatSheetUrl http://cljs.info/cheatsheet/
+announcementMethod blogPost

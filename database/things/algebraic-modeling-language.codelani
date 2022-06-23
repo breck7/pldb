@@ -1,3 +1,20 @@
+title Algebraic modeling language
 appeared 1980
 type pl
-wikipedia Algebraic_modeling_language
+
+patterns
+ hasCentralPackageRepository? false
+
+wikipedia https://en.wikipedia.org/wiki/Algebraic_modeling_language
+ related aimms ampl general-algebraic-modeling-system
+ summary Algebraic modeling languages (AML) are high-level computer programming languages for describing and solving high complexity problems for large scale mathematical computation (i.e. large scale optimization type problems). One particular advantage of some algebraic modeling languages like AIMMS, AMPL, GAMS,MathProg, Mosel,  and OPL is the similarity of their syntax to the mathematical notation of optimization problems. This allows for a very concise and readable definition of problems in the domain of optimization, which is supported by certain language elements like sets, indices, algebraic expressions, powerful sparse index and data handling variables, constraints with arbitrary names. The algebraic formulation of a model does not contain any hints how to process it. An AML does not solve those problems directly; instead, it calls appropriate external algorithms to obtain a solution. These algorithms are called solvers and can handle certain kind of mathematical problems like:  linear problems integer problems (mixed integer) quadratic problems mixed complementarity problems mathematical programs with equilibrium constraints constrained nonlinear systems general nonlinear problems non-linear programs with discontinuous derivatives nonlinear integer problems global optimization problems stochastic optimization problems
+ created 2007
+ backlinksCount 45
+ pageId 9463527
+ revisionCount 93
+ dailyPageViews 20
+ appeared 2002
+
+status historical
+
+hopl 882

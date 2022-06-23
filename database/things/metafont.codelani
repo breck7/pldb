@@ -1,3 +1,46 @@
+title METAFONT
 appeared 1977
 type application
-wikipedia Metafont
+
+patterns
+ hasCentralPackageRepository? false
+ hasComments? true
+
+wikipedia https://en.wikipedia.org/wiki/Metafont
+ example
+  %file name: beta.mf
+  %mode_setup;
+  % Define a beanlike shape for the character B
+  beginchar("B",11pt#,11pt#,0);
+    % Setup coordinates as an equation system
+    y1=y2=y3=0;
+    y4=y5=y6=h;
+    x1=x4=0;
+    x2=x5=w;
+    x3=x6=2*w;
+  
+    % Define pen
+    pickup pencircle xscaled 0.2w yscaled 0.04w rotated 45;
+  
+    % Draw the character curve
+    draw z1..z3..z6{z2-z6}..z5..{z4-z2}z4..cycle;
+  endchar;
+  
+  end
+ related postscript tex asymptote
+ summary Metafont is a description language used to define raster fonts. It is also the name of the interpreter that executes Metafont code, generating the bitmap fonts that can be embedded into e.g. PostScript. Metafont was devised by Donald Knuth as a counterpart to his TeX typesetting system. One of the characteristics of Metafont is that all of the shapes of the glyphs are defined with geometrical equations. In particular, one can define a given point to be the intersection of a line segment and a Bézier cubic.
+ pageId 44263
+ created 2002
+ backlinksCount 159
+ revisionCount 240
+ dailyPageViews 63
+ appeared 1977
+
+status historical
+country US
+fileType text
+isOpenSource true
+
+hopl 1238
+
+rosettaCode Metafont

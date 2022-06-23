@@ -1,3 +1,21 @@
+title Tree and Tabular Combined Notation
 appeared 1992
 type pl
-wikipedia TTCN
+
+patterns
+ hasCentralPackageRepository? false
+
+wikipedia https://en.wikipedia.org/wiki/TTCN
+ summary TTCN is a programming language used for testing of communication protocols and web services. A TTCN test suite consists of many test cases written in the TTCN programming language. Until version 2 the language was written in tables and called Tree and Tabular Combined Notation. Reading and editing this language required special TTCN editors. Beginning with version 3 TTCN was renamed to Testing and Test Control Notation. It is now closer to current programming languages and can be edited with traditional editors. TTCN-3 is more flexible than TTCN-2 in that it can be used for protocol testing as well as testing traditional software. All versions of TTCN need dedicated compilers or interpreters for execution. TTCN is widely used, for example; ETSI, ITU for the testing of telecommunication protocols. Conformance test cases of ETSI standards like ISDN, DECT, GSM, EDGE, 3G, DSRC have also been written in TTCN. Recently it has also been used for testing various protocol standards e.g. Bluetooth, IP. Execution of those test cases against products (e.g. phones, mobile phones, service enablers or network elements) is used to verify that the protocol implementation in those products meet the requirements defined by telecommunication standards. TTCN is often combined with ASN.1.
+ pageId 780024
+ dailyPageViews 21
+ created 2004
+ backlinksCount 14
+ revisionCount 99
+ appeared 1992
+
+standsFor Tree and Tabular Combined Notation
+status historical
+fileType text
+
+codeMirror ttcn

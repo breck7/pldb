@@ -1,0 +1,19 @@
+typeCell
+ enum assembly pl contractLanguage barCodeFormat hardwareDescriptionLanguage knowledgeBase binaryDataFormat contractLanguage timeFormat computingMachine xmlFormat compiler grammarLanguage application ir isa queryLanguage protocol os esolang template textMarkup characterEncoding idl library editor cloud textDataFormat visual plzoo interpreter notation binaryExecutable metaLanguage stylesheetLanguage schema bytecode jsonFormat vm filesystem standard linter packageManager framework webApi pattern optimizingCompiler numeralSystem hashFunction database font distribution headerLang dataStructure musicalNotation textEncodingFormat equation
+ highlightScope constant.language
+typeNode
+ description Which category in CodeLani's subjective ontology does this entity fit into.
+ cells keywordCell typeCell
+ required
+ crux type
+ int sortIndex 850
+ single
+ extends abstractFactNode
+fileTypeWordCell
+ enum paper text binary na
+ highlightScope constant.language
+fileTypeNode
+ description What is the file encoding for programs in this language?
+ cells keywordCell fileTypeWordCell
+ extends abstractFactNode
+ crux fileType

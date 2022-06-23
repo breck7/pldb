@@ -1,3 +1,45 @@
+title GNU Assembler
 appeared 1986
 type compiler
-wikipedia GNU_Assembler
+
+patterns
+ hasCentralPackageRepository? false
+
+wikipedia https://en.wikipedia.org/wiki/GNU_Assembler
+ example
+  .global	_start
+  
+  .text
+  _start:
+  	movl  $4, %eax
+  	movl  $1, %ebx
+  	movl  $msg, %ecx
+  	movl  $len, %edx
+  	int   $0x80
+  
+  	movl  $1, %eax
+  	movl  $0, %ebx
+  	int   $0x80
+  .data
+  msg:
+  	.ascii  "Hello, world!\n"
+  	len =   . - msg
+ related c unix powerpc mips arm linux ia-32 x86-isa
+ summary The GNU Assembler, commonly known as gas or simply as, its executable name, is the assembler used by the GNU Project. It is the default back-end of GCC. It is used to assemble the GNU operating system and the Linux kernel, and various other software. It is a part of the GNU Binutils package. The GAS executable is named as, the standard name for a Unix assembler. GAS is cross-platform, and both runs on and assembles for a number of different computer architectures. Released under the GNU General Public License v3, GAS is free software.
+ pageId 863402
+ dailyPageViews 97
+ created 2004
+ backlinksCount 65
+ revisionCount 228
+ appeared 2016
+
+status historical
+firstAnnouncement http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.32.4503&rep=rep1&type=pdf
+fileType na
+wordRank 1119
+isOpenSource true
+
+codeMirror gas
+
+corporateDevelopers GNU Project
+announcementMethod paper

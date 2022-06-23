@@ -1,3 +1,10 @@
+title Interchange File Format
 appeared 1985
 type binaryDataFormat
-wikipedia Interchange_File_Format
+
+wikipedia https://en.wikipedia.org/wiki/Interchange_File_Format
+ summary Interchange File Format (IFF), is a generic container file format originally introduced by the Electronic Arts company in 1985 (in cooperation with Commodore) in order to facilitate transfer of data between software produced by different companies. IFF files do not have any standard extension.  On many systems that generate IFF files, file extensions are not important (the OS stores file format metadata separately from the file name).  An .iff extension is commonly used for ILBM format files, which use the IFF container format. Resource Interchange File Format is a format developed by Microsoft and IBM in 1991 that is based on IFF, except the byte order has been changed to little-endian to match the x86 processor architecture. Apple's AIFF is a big-endian audio file format developed from IFF. The TIFF image file format is unrelated.
+ backlinksCount 381
+ pageId 66783
+ dailyPageViews 88
+ appeared 1985

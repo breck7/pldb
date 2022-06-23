@@ -1,3 +1,8 @@
+title Unary Operators
 type pattern
-wikipedia Unary_operation
+psuedoExample count++
 description Operators with arity 1.
+
+wikipedia https://en.wikipedia.org/wiki/Unary_operation
+
+patternKeyword hasUnaryOperators?

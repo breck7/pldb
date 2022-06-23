@@ -1,10 +1,18 @@
+title ScriptEase
 appeared 2001
 type pl
-website http://old.minford.k12.oh.us/sewse/manual/jsedesc.htm
+
 example
  while( ThereAreUncalledNamesOnTheList() == true){
    name=GetNameFromTheList();
       CallthePerson(name);
       LeaveTheMessage();
    }
+
+patterns
+ hasDirectives? true
+
 description ScriptEase provides the most powerful and advanced form of JavaScript available today. Whereas other flavors of JavaScipt are embedded in web browsers and restricted to scripts that have been transmitted along with HTML documents, the ScriptEase processor allows you to run scripts locally, so you can use ScriptEase to write full fledged programs. In addition, ScriptEase has added commands and directives that increase and extend its power without interfering with the operation of standard JavaScript. These enhancements include preprocessor directives such as #include and #define, the switch/case statement, and the built-in Buffer object.
+website http://old.minford.k12.oh.us/sewse/manual/jsedesc.htm
+
+hopl 3619

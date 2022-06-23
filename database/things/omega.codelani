@@ -1,7 +1,8 @@
+title omega
 appeared 2005
 type pl
 creators Tim Sheard
-website http://web.cecs.pdx.edu/~sheard/Omega/index.html
+
 example
  --
  -- This code written by James Hook
@@ -80,4 +81,7 @@ example
       in appMonoList sortedGreater (appMonoList (singletonMonoList x) sortedLess)
  
  --
+
 description The Ωmega interpreter is styled after the Hugs Haskell Interpreter. The Ωmega syntax is based upon the syntax of Haskell. If you’re unsure of what syntax to use, a best first approximation is to use Haskell syntax. It works most of the time. While clearly descended from Haskell, Ωmega has several important syntactic and semantic differences.
+website http://web.cecs.pdx.edu/~sheard/Omega/index.html
+status historical

@@ -1,3 +1,22 @@
+title clike
 appeared 2014
 type pl
-github https://github.com/combinatorylogic/clike
+
+patterns
+ hasCentralPackageRepository? false
+
+githubRepo https://github.com/combinatorylogic/clike
+ stars 111
+ forks 3
+ subscribers 7
+ created 2014
+ updated 2017
+ firstCommit 2014
+ description A simple C-like language compiler with an extensible syntax and typed macros support
+ issues 2
+
+status active
+fileType text
+isOpenSource true
+
+codeMirror clike

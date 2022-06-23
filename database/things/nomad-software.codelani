@@ -1,3 +1,22 @@
+title Nomad software
 appeared 1976
 type pl
-wikipedia Nomad_software
+
+patterns
+ hasCentralPackageRepository? false
+
+wikipedia https://en.wikipedia.org/wiki/Nomad_software
+ example
+  CHANGE ALL SALARY=SALARY*1.06 WHERE POSITION='ENG' AND AVG(INSTANCE(RATING)) GE 7
+ related sql ramis-software assembly-language focus cobol unix excel-app
+ summary Nomad Software is a relational database and fourth-generation language (4GL), originally developed in the 1970s by time-sharing vendor National CSS. While it is still in use today, its widest use was in the 1970s and 1980s. Nomad provides both interactive and batch environments for data management and application development, including commands for database definition, data manipulation, and reporting. All components are accessible by and integrated through a database-oriented programming language. Unlike many tools for managing mainframe data, which are geared to the needs of professional programmers in MIS departments, Nomad is particularly designed for (and sold to) application end-users in large corporations. End-users employ Nomad in batch production cycles and in Web-enabled applications, as well as for reporting and distribution via the Web or PC desktop.
+ created 2005
+ backlinksCount 18
+ pageId 2491250
+ revisionCount 78
+ dailyPageViews 19
+ appeared 1975
+
+status historical
+
+hopl 727

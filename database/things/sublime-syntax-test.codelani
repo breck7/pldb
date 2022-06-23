@@ -1,5 +1,6 @@
+title sublime-syntax-test
 type grammarLanguage
-website https://www.sublimetext.com/docs/3/syntax.html#testing
+
 example
  // SYNTAX TEST "Packages/C/C.sublime-syntax"
  #pragma once
@@ -31,3 +32,5 @@ example
  "Hello, World! // not a comment";
  // ^ string.quoted.double
  //                  ^ string.quoted.double - comment
+
+website https://www.sublimetext.com/docs/3/syntax.html#testing

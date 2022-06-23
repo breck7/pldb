@@ -1,6 +1,55 @@
+title Ioke
 appeared 2008
 type pl
 creators Ola Bini
+
+patterns
+ hasCentralPackageRepository? false
+
+wikipedia https://en.wikipedia.org/wiki/Ioke_(programming_language)
+ related io smalltalk lisp ruby jruby
+ summary Ioke is a dynamic, strongly typed, prototype-based programming language targeting the Java Virtual Machine and the Common Language Runtime. It was designed by Ola Bini, a developer of JRuby. It has a very simple homoiconic syntax, somewhat similar to Io.
+ pageId 20148120
+ dailyPageViews 22
+ created 2008
+ backlinksCount 16
+ revisionCount 49
+ appeared 2008
+ fileExtensions ik
+
+githubLanguage Ioke
+ fileExtensions ik
+ trendingProjectsCount 0
+
+githubRepo https://github.com/olabini/ioke
+ stars 140
+ forks 16
+ subscribers 14
+ created 2010
+ updated 2017
+ firstCommit 2008
+ description ioke is a new language for the JVM, based on Io and other languages.
+ issues 1
+
+linguistGrammarRepo https://github.com/vic/ioke-outdated
+ firstCommit 2008
+ lastCommit 2009
+ committerCount 13
+ commitCount 1552
+ sampleCount 1
+ example
+  #!/usr/bin/env ioke
+  
+  "Hello world." println
+  
+
 website http://ioke.org
-github https://github.com/olabini/ioke
-wikipedia Ioke_(programming_language)
+status active
+fileExtensions ik
+fileType text
+runsOnVm jvm
+isOpenSource true
+
+tiobe Ioke
+
+rosettaCode Ioke

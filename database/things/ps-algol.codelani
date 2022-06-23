@@ -1,3 +1,20 @@
+title PS-algol
 appeared 1981
 type pl
-wikipedia PS-algol
+
+patterns
+ hasCentralPackageRepository? false
+
+wikipedia https://en.wikipedia.org/wiki/PS-algol
+ related s-algol
+ summary PS-algol is an orthogonally persistent programming language. PS-algol was an extension of the language S-algol implemented by the University of St Andrews and the University of Edinburgh, Scotland. S-algol was designed by Ron Morrison, and extended and by Pete Bailey, Fred Brown, Paul Cockshott, Ken Chisholm and Al Dearle. PS-algol was the world's first fully implemented persistent programming language, and had a significant quantity of users both in academia and, notably, in ICL research labs.
+ created 2011
+ backlinksCount 8
+ pageId 31727718
+ revisionCount 13
+ dailyPageViews 2
+ appeared 1983
+
+status historical
+
+hopl 972

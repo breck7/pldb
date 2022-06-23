@@ -1,0 +1,79 @@
+title Which programming languages use indentation?
+date 2019-01-21 12:00:00 -8000
+
+aftertext
+ dateline
+ Python, as one of the top 10 programming languages in the world, is the most popular programming language that treats indentation as significant. In these offside languages, programmers indent their code blocks instead of using braces, brackets, or other visible characters.
+ link languages/python.html Python
+ link https://en.wikipedia.org/wiki/Off-side_rule offside
+
+paragraph
+ I was curious about how common these languages were so I did some brief analysis to answer these questions:
+
+orderedList
+ 1. How common is this type of language?
+ 2. How many languages use significant indentation?
+ 3. Are new indentation languages on the rise?
+
+section 1) Fewer than 2% of programming languages have significant indentation
+
+image images/fractions-indentation.png
+
+endSnippet
+
+section 2) Only 36 out of 2,500 programming languages in my database use indentation
+
+paragraph
+ These languages use indentation:
+
+paragraph
+ abc🔗./languages/abc.html, aldor🔗./languages/aldor.html, boo🔗./languages/boo.html, buddyscript🔗./languages/buddyscript.html, cobra🔗./languages/cobra.html, coffeescript🔗./languages/coffeescript.html, csl🔗./languages/csl.html, curry🔗./languages/curry.html, elixir🔗./languages/elixir.html, f-sharp🔗./languages/f-sharp.html, genie🔗./languages/genie.html, haml🔗./languages/haml.html, haskell🔗./languages/haskell.html, inform🔗./languages/inform.html, iswim🔗./languages/iswim.html, literate-coffeescript🔗./languages/literate-coffeescript.html, livescript🔗./languages/livescript.html, madcap-vi🔗./languages/madcap-vi.html, madcap🔗./languages/madcap.html, makefile🔗./languages/makefile.html, markdown🔗./languages/markdown.html, miranda🔗./languages/miranda.html, nemerle🔗./languages/nemerle.html, net-format🔗./languages/net-format.html, nim🔗./languages/nim.html, occam🔗./languages/occam.html, org🔗./languages/org.html, promal🔗./languages/promal.html, python🔗./languages/python.html, restructuredtext🔗./languages/restructuredtext.html, sass🔗./languages/sass.html, scss🔗./languages/scss.html, spin🔗./languages/spin.html, stylus🔗./languages/stylus.html, xl-programming-language🔗./languages/xl-programming-language and yaml🔗./languages/yaml.html.
+
+paragraph
+ According to my present database, languages that strip indentation are about <b>70x</b> more common than languages that employ it.
+
+aftertext
+ My methods and models are not yet perfect and may have missed some indentation languages. If my models missed ~80% of the languages, that would still be a 10x difference between the two classes of languages. If you know of a missing language, please open an issue or send a pull request.
+ https://github.com/codelani/codelani/issues/new open an issue
+ https://github.com/codelani/codelani pull request
+
+section 3) The creation of indentation sensitive languages has ticked up, but not by much
+
+image images/indentation-time.png
+
+paragraph
+ While there have been some notable new languages using significant indentation in the 2000's, some of the biggest new languages don't, including Go, Swift, Rust, TypeScript, Julia and Kotlin.
+
+paragraph
+ Takeaway: According to my current data, there has not been a significant increase in new languages using significant indentation.
+
+section Future Work
+
+paragraph
+ I would like to expand upon this to help language designers answer the question: will adding significant indentation increase the odds of my language becoming successful? I will continue to invest in my data collection and mining efforts to ensure I am not missing accurate information about the lesser documented languages.
+
+paragraph
+ UPDATE: masonic on HackerNews pointed out that COBOL🔗./languages/cobol.html should be included on this list. The column position of tokens is indeed significant in COBOL (and FORTRAN🔗./languages/fortran.html too), so perhaps in the next update I'll clarify this categorization to adhere more closely to the offside rule, or will include a broader definition of significant indentation that includes some of these additional languages
+
+ohayoCode
+ html.h1 Which programming languages use indentation?
+ web.get https://codelani.com/next2/codelani.csv
+  filter.where appeared > 1950
+   columns.keep appeared title patterns.hasSemanticIndentation?
+    columns.setType appeared year
+     columns.rename patterns.hasSemanticIndentation? indents
+      fill.missing indents false
+       tables.basic
+       group.by indents
+        tables.basic
+        vega.bar Languages and Semantic Indentation
+       group.by indents appeared
+        tables.basic
+        vega.bar Proportion of Languages Created With Semantic Indentation by Year
+         xColumn appeared
+         yColumn count
+         colorColumn indents
+       filter.where indents = true
+        group.by appeared
+         vega.bar How many Languages with Semantic Indentation Created By Year
+          yColumn count

@@ -1,3 +1,18 @@
+title Mallard BASIC
 appeared 1985
 type pl
-wikipedia Mallard_BASIC
+
+patterns
+ hasCentralPackageRepository? false
+
+wikipedia https://en.wikipedia.org/wiki/Mallard_BASIC
+ related basic cbasic zbasic x86-assembly locomotive-basic
+ summary Mallard BASIC is a BASIC interpreter for CP/M written by Locomotive Software and supplied with the Amstrad PCW range of small business computers, the ZX Spectrum +3 version of CP/M Plus, and the Acorn BBC Micro Z80 second Processor. In the 1980s, it was standard industry practice to bundle a BASIC interpreter with microcomputers, and the PCW followed this practice.  While it was primarily a wordprocessor for business use, it was not a dedicated WP: it also ran the CP/M operating system. Though there were existing implementations of BASIC for CP/M, such as Digital Research's CBASIC and the third-party ZBasic, they followed the earlier 1970s model of compilers, fed source code prepared in a separate text editor. Mallard was more like a traditional micro ROM BASIC, with an integrated editor which was tailored for the PCW's non-standard 90-column screen. Although the PCW actually had excellent monochrome graphics support for its time and specification, closely comparable to the Hercules Graphics Card for the PC, Mallard BASIC had no graphics support whatsoever. Instead, Locomotive optimised it for business use, with, for instance, full ISAM random-access file support, making it easier to write database applications. It was also optimised for speed –  it is named after the LNER A4 class 4468 Mallard locomotive, the fastest steam locomotive in the world, once again displaying the company's fondness for railway-oriented nomenclature. (For instance, see the company name itself.) In fact the Locomotive name came from the phrase "To run like a train" and it was this theme that was used to name Mallard BASIC –  no other Locomotive product was named after anything railway-oriented. The Acorn version was designed simply to run the Compact Software small business accounting products Acorn was including to target its Z80 second processor at small businesses. Mallard's major innovation designed specifically for Acorn was the addition of the Jetsam B*-tree keyed access filing system to give similar (but superior) features to the Miksam product Compact had originally designed around. Graphics could be implemented by loading the GSX extension to CP/M, but this was cumbersome for BASIC programmers. The lack of graphics support was rectified by several BASIC toolkits, of which the most popular was LEB: Lightning Extended BASIC. This patched Mallard BASIC, replacing the redundant LET keyword with LEB, which could be followed by a wide variety of parameters to allow sophisticated graphics (for the time) to be drawn on screen, saved to disc, printed, et cetera. Probably the most widespread Mallard application ever was RPED, the text editor supplied with the PCW. The name was short for Roland Perry's EDitor, the program being put together quickly by Roland Perry, the Amstrad executive running the computer product development, when it was realised that CP/M-80 came with no usable full-screen editor, but users had a requirement to edit configuration files. The same problem was apparent with DOS Plus and MS-DOS supplied with IBM-compatible Amstrad computers, but the RPED for those machines was written in 8086 assembler, and not Mallard BASIC. The PC version of Mallard Basic is still available from LocoScript Software as an MS-DOS program which will run under Windows as a Disc only version with licence or with the full Introduction & Reference manual.
+ created 2004
+ backlinksCount 95
+ pageId 1250505
+ revisionCount 62
+ dailyPageViews 8
+ appeared 1970
+
+status historical

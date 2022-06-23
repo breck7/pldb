@@ -1,3 +1,21 @@
+title File Transfer Protocol
 appeared 1971
 type protocol
-wikipedia File_Transfer_Protocol
+
+patterns
+ hasCentralPackageRepository? false
+
+wikipedia https://en.wikipedia.org/wiki/File_Transfer_Protocol
+ related http smtp tls tcp udp unix linux ascii
+ summary The File Transfer Protocol (FTP) is the standard network protocol used for the transfer of computer files between a client and server on a computer network. FTP is built on a client-server model architecture and uses separate control and data connections between the client and the server. FTP users may authenticate themselves with a clear-text sign-in protocol, normally in the form of a username and password, but can connect anonymously if the server is configured to allow it. For secure transmission that protects the username and password, and encrypts the content, FTP is often secured with SSL/TLS (FTPS). SSH File Transfer Protocol (SFTP) is sometimes also used instead; it is technologically different. The first FTP client applications were command-line programs developed before operating systems had graphical user interfaces, and are still shipped with most Windows, Unix, and Linux operating systems. Many FTP clients and automation utilities have since been developed for desktops, servers, mobile devices, and hardware, and FTP has been incorporated into productivity applications, such as web page editors.
+ pageId 53289
+ dailyPageViews 2685
+ created 2002
+ backlinksCount 1280
+ revisionCount 2802
+ appeared 1971
+
+standsFor File Transfer Protocol
+status historical
+fileType na
+wordRank 4060

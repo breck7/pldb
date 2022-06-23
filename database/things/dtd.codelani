@@ -1,3 +1,37 @@
+title document type definition
 appeared 1996
 type grammarLanguage
-wikipedia Document_type_definition
+
+patterns
+ hasCentralPackageRepository? false
+
+wikipedia https://en.wikipedia.org/wiki/Document_type_definition
+ example
+  <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+  <!DOCTYPE people_list [
+    <!ELEMENT people_list (person*)>
+    <!ELEMENT person (name, birthdate?, gender?, socialsecuritynumber?)>
+    <!ELEMENT name (#PCDATA)>
+    <!ELEMENT birthdate (#PCDATA)>
+    <!ELEMENT gender (#PCDATA)>
+    <!ELEMENT socialsecuritynumber (#PCDATA)>
+  ]>
+  <people_list>
+    <person>
+      <name>Fred Bloggs</name>
+      <birthdate>2008-11-27</birthdate>
+      <gender>Male</gender>
+    </person>
+  </people_list>
+ related xml html
+ summary A document type definition (DTD) is a set of markup declarations that define a document type for an SGML-family markup language (SGML, XML, HTML). A Document Type Definition (DTD) defines the legal building blocks of an XML document. It defines the document structure with a list of legal elements and attributes. A DTD can be declared inline inside an XML document, or as an external reference. XML uses a subset of SGML DTD. As of 2009, newer XML namespace-aware schema languages (such as W3C XML Schema and ISO RELAX NG) have largely superseded DTDs. A namespace-aware version of DTDs is being developed as Part 9 of ISO DSDL. DTDs persist in applications that need special publishing characters, such as the XML and HTML Character Entity References, which derive from larger sets defined as part of the ISO SGML standard effort.
+ pageId 8537
+ dailyPageViews 235
+ created 2001
+ backlinksCount 72
+ revisionCount 583
+ appeared 2009
+
+standsFor document type definition
+status historical
+fileType text

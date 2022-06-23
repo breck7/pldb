@@ -1,6 +1,7 @@
+title rason
 appeared 2015
 type pl
-website https://www.rason.com/
+
 example
  {
      data :
@@ -26,3 +27,6 @@ example
          mean : [], stdev: [], max : [], min : [] }
      }
  }
+
+website https://www.rason.com/
+related ampl gams siman

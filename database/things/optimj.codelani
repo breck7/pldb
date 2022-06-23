@@ -1,3 +1,21 @@
+title OptimJ
 appeared 2006
 type pl
-wikipedia OptimJ
+
+patterns
+ hasCentralPackageRepository? false
+
+wikipedia https://en.wikipedia.org/wiki/OptimJ
+ example
+  // select name from persons where age > 18
+    `multiSet(){ p.name | Person p : persons, :p.age > 18 }
+ related java algebraic-modeling-language
+ summary OptimJ is an extension of the Java with language support for writing optimization models and abstractions for bulk data processing. The extensions and the proprietary product implementing the extensions were developed by Ateji which went out of business in September 2011. OptimJ aims at providing a clear and concise algebraic notation for optimization modeling, removing compatibility barriers between optimization modeling and application programming tools, and bringing software engineering techniques such as object-orientation and modern IDE support to optimization experts. OptimJ models are directly compatible with Java source code, existing Java libraries such as database access, Excel connection or graphical interfaces. OptimJ is compatible with development tools such as Eclipse, CVS, JUnit or JavaDoc. OptimJ is available free with the following solvers: lp_solve, glpk, LP or MPS file formats and also supports the following commercial solvers: Gurobi, MOSEK, IBM ILOG CPLEX Optimization Studio.
+ created 2010
+ backlinksCount 67
+ pageId 28952622
+ revisionCount 52
+ dailyPageViews 10
+ appeared 2006
+
+status historical

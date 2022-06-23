@@ -1,3 +1,22 @@
+title Color BASIC
 appeared 1980
 type pl
-wikipedia Color_BASIC
+
+patterns
+ hasCentralPackageRepository? false
+
+wikipedia https://en.wikipedia.org/wiki/Color_BASIC
+ example
+  FOR {num} = {number} TO {number} [STEP {number}]
+  ...
+  NEXT (num)
+ related trs-80-color-computer microsoft-basic basic c assembly-language ascii
+ summary Color BASIC is the implementation of Microsoft BASIC that is included in the ROM of the Tandy/Radio Shack TRS-80 Color Computers manufactured between 1980 and 1991. BASIC (Beginners All-purpose Symbolic Instruction Code) is a high level language with simple syntax that makes it easy for novices to write simple programs. Color BASIC is interpreted, that is, decoded as it is run. Because of this, it is simple to edit and debug but performance is significantly lower than a compiled language such as C or assembly language.
+ created 2005
+ backlinksCount 92
+ pageId 3251996
+ revisionCount 69
+ dailyPageViews 13
+ appeared 1980
+
+status historical

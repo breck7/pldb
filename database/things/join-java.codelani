@@ -1,3 +1,24 @@
+title Join Java
 appeared 2000
 type pl
-wikipedia Join_Java
+
+patterns
+ hasCentralPackageRepository? false
+
+wikipedia https://en.wikipedia.org/wiki/Join_Java
+ example
+  class ThreadExample {
+      signal thread(SomeObject x) {
+         //this code will execute in a new thread
+      }
+   }
+ related java
+ summary Join Java is a programming language based on the join-pattern that extends the standard Java programming language with the join semantics of the join-calculus.  It was written at the University of South Australia within the Reconfigurable Computing Lab by Dr. Von Itzstein.
+ created 2005
+ backlinksCount 33
+ pageId 2225745
+ revisionCount 38
+ dailyPageViews 12
+ appeared 2000
+
+status historical

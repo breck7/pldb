@@ -1,3 +1,27 @@
+title ODRL
 appeared 2000
 type pl
-wikipedia ODRL
+
+patterns
+ hasCentralPackageRepository? false
+
+wikipedia https://en.wikipedia.org/wiki/ODRL
+ example
+  {
+   "@context": "http://www.w3.org/ns/odrl.jsonld",
+   "uid": "http://example.com/policy:001",
+   "permission": [{
+   	"target": "http://example.com/mysong.mp3",
+  	"assignee": "John",
+  	"action": "play"
+   }]
+  }
+ summary The Open Digital Rights Language (ODRL) is a policy expression language that provides a flexible and interoperable information model, vocabulary, and encoding mechanisms for representing statements about the usage of content and services.  An example of ODRL policy follows, which can be intepreted as "John can play mysong.mp3".
+ created 2004
+ backlinksCount 9
+ pageId 1001985
+ revisionCount 68
+ dailyPageViews 12
+ appeared 2000
+
+status historical

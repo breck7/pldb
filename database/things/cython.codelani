@@ -1,4 +1,53 @@
+title Cython
 appeared 2007
 type pl
+
+patterns
+ hasCentralPackageRepository? false
+
+wikipedia https://en.wikipedia.org/wiki/Cython
+ example
+  In [1]: %load_ext Cython
+  
+  In [2]: %%cython
+     ...: def f(n):
+     ...:     a = 0
+     ...:     for i in range(n):
+     ...:         a += i
+     ...:     return a
+     ...: 
+     ...: cpdef g(int n):
+     ...:     cdef int a = 0, i
+     ...:     for i in range(n):
+     ...:         a += i
+     ...:     return a
+     ...: 
+  
+  In [3]: %timeit f(1000000)
+  42.7 ms ± 783 µs per loop (mean ± std. dev. of 7 runs, 10 loops each)
+  
+  In [4]: %timeit g(1000000)
+  74 µs ± 16.6 ns per loop (mean ± std. dev. of 7 runs, 10000 loops each)
+ related python c linux pyrex sagemath xml scipy pandas scikit-learn
+ summary Cython is a superset of the Python programming language, designed to give C-like performance with code which is mostly written in Python. Cython is a compiled language that generates CPython extension modules. These extension modules can then be loaded and used by regular Python code using the import statement. Cython is written in Python and works on Windows, macOS, and Linux, producing source files compatible with CPython 2.6, 2.7, and 3.3 through 3.7.
+ pageId 18384111
+ dailyPageViews 270
+ created 2008
+ backlinksCount 81
+ revisionCount 234
+ appeared 2007
+
+githubLanguage Cython
+ fileExtensions pyx pxd pxi
+ trendingProjectsCount 0
+
+linguistGrammarRepo https://github.com/textmate/cython.tmbundle
+ firstCommit 2009
+ lastCommit 2017
+ committerCount 2
+ commitCount 8
+
 website http://cython.org
-wikipedia Cython
+status active
+fileType text
+isOpenSource true

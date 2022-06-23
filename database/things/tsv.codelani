@@ -1,3 +1,27 @@
+title tab-separated values
 appeared 1993
 type metaLanguage
-wikipedia Tab-separated_values
+
+patterns
+ hasCentralPackageRepository? false
+
+wikipedia https://en.wikipedia.org/wiki/Tab-separated_values
+ example
+  Sepal length	Sepal width	Petal length	Petal width	Species
+  5.1	3.5	1.4	0.2	I. setosa
+  4.9	3.0	1.4	0.2	I. setosa
+  4.7	3.2	1.3	0.2	I. setosa
+  4.6	3.1	1.5	0.2	I. setosa
+  5.0	3.6	1.4	0.2	I. setosa
+ related mime csv
+ summary A tab-separated values (TSV) file is a simple text format for storing data in a tabular structure, e.g., database table or spreadsheet data, and a way of exchanging information between databases. Each record in the table is one line of the text file. Each field value of a record is separated from the next by a tab character. The TSV format is thus a type of the more general delimiter-separated values format. TSV is a simple file format that is widely supported, so it is often used in data exchange to move tabular data between different computer programs that support the format. For example, a TSV file might be used to transfer information from a database program to a spreadsheet. TSV is an alternative to the common comma-separated values (CSV) format, which often causes difficulties because of the need to escape commas – literal commas are very common in text data, but literal tab stops are infrequent in running text. The IANA standard for TSV achieves simplicity by simply disallowing tabs within fields.
+ pageId 2422553
+ dailyPageViews 199
+ created 2005
+ backlinksCount 36
+ revisionCount 74
+ appeared 1993
+
+standsFor tab-separated values
+status historical
+fileType text

@@ -1,4 +1,21 @@
+title RascalMPL
 appeared 2010
 type pl
+
+patterns
+ hasCentralPackageRepository? false
+
+wikipedia https://en.wikipedia.org/wiki/RascalMPL
+ related linux unix antlr
+ summary Rascal is an experimental domain specific language for metaprogramming, such as static code analysis, program transformation and implementation of domain specific languages. It is a general meta language in the sense that it does not have a bias for any particular software language. It includes primitives from relational calculus and term rewriting. Its syntax and semantics are based on procedural (imperative) and functional programming.
+ pageId 26118915
+ created 2010
+ backlinksCount 11
+ revisionCount 23
+ dailyPageViews 7
+ appeared 2009
+
 website http://www.rascal-mpl.org
-wikipedia RascalMPL
+status historical
+fileType text
+isOpenSource true

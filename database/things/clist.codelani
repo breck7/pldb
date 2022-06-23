@@ -1,3 +1,40 @@
+title CLIST
 appeared 1990
 type pl
-wikipedia CLIST
+
+patterns
+ hasCentralPackageRepository? false
+
+wikipedia https://en.wikipedia.org/wiki/CLIST
+ example
+  1    /********************************************************************/
+   2    /*  MULTI-LINGUAL "HELLO WORLD" PROGRAM.                            */
+   3    /*                                                                  */
+   4    /*  THIS CLIST, STORED AS USERID.TSO.CLIST(TEST), CAN BE INVOKED    */
+   5    /*  FROM THE ISPF COMMAND LINE AS SHOWN IN THE FOLLOWING EXAMPLE:   */
+   6    /*                                                                  */
+   7    /*     COMMAND ===> TSO TEST SPANISH                                */
+   8    /*                                                                  */
+   9    /********************************************************************/
+  10    PROC 1 LANGUAGE
+  11      IF &LANGUAGE = SPANISH THEN +
+  12         WRITE HOLA, MUNDO
+  13      ELSE IF &LANGUAGE = FRENCH THEN +
+  14         WRITE BONJOUR, MONDE
+  15      ELSE +
+  16         WRITE HELLO, WORLD
+  17    EXIT
+ related batch cobol pl-i jcl rexx
+ summary CLIST (Command List) (pronounced "C-List") is a procedural programming language for TSO in MVS systems. It originated in OS/360 Release 20 and has assumed a secondary role since the availability of Rexx in TSO/E Version 2. The term CLIST is also used for command lists written by users of NetView.In its basic form, a CLIST program (or "CLIST" for short) can take the form of a simple list of commands to be executed in strict sequence (like a DOS batch file (*.bat) file).  However, CLIST also features If-Then-Else logic as well as loop constructs. CLIST is an interpreted language.  That is, the computer must translate a CLIST every time the program is executed.  CLISTs therefore tend to be slower than programs written in compiled languages such as COBOL, FORTRAN, or PL/1.  (A program written in a compiled language is translated once to create a "load module" or executable.) CLIST can read/write MVS files and read/write from/to a TSO terminal. It can read parameters from the caller and also features a function to hold global variables and pass them between CLISTs. A CLIST can also call an MVS application program (written in COBOL or  PL/I, for example). CLISTs can be run in background (by running JCL which executes the TSO control program (IKJEFT01)). TSO I/O screens and menus using ISPF dialog services can be displayed by CLISTs. Compare the function of CLIST with that provided by REXX.
+ pageId 391542
+ created 2003
+ backlinksCount 24
+ revisionCount 63
+ dailyPageViews 21
+ appeared 1956
+
+status historical
+country US
+fileType text
+
+hopl 3423

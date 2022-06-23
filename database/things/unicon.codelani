@@ -1,7 +1,7 @@
+title Unicon programming language
 appeared 2008
 type pl
-website http://www.unicon.org/
-wikipedia Unicon_(programming_language)
+
 example
  procedure main()
   w := open("test UNICON window", "g")
@@ -9,3 +9,35 @@ example
   read(w)
   close(w)
  end
+
+patterns
+ hasCentralPackageRepository? false
+
+wikipedia https://en.wikipedia.org/wiki/Unicon_(programming_language)
+ example
+  procedure main()
+  	w := open("test UNICON window", "g")
+  	write(w, "Hello, World!")
+  	read(w)
+  	close(w)
+  end
+ related unix uml unicode rebol curl
+ summary Unicon is a programming language designed by American computer scientist Clint Jeffery with collaborators including Shamim Mohamed, Jafar Al Gharaibeh, Robert Parlett and others. Unicon descended from Icon and a preprocessor for Icon called IDOL. Compared with Icon, Unicon offers better access to the operating system as well as support for object-oriented programming. Unicon began life as a merger of three popular Icon extensions: an OO preprocessor named Idol, a POSIX filesystem and networking interface, and an ODBC facility. The name is shorthand for "Unified Extended Dialect of Icon." Compared with Icon, many of the new features of Unicon are extensions to the I/O and system interface, to complement Icon's core control and data structures. Rather than providing lower-level APIs as-is from C, Unicon implements higher level and easier to use facilities, enabling rapid development of graphic- and network-intensive applications in addition to Icon's core strengths in text and file processing. classes and packages exceptions as a contributed class library - see mailing list loadable child programs monitoring of child programs dynamic loading of C modules (some platforms) multiple inheritance, with novel semantics ODBC database access dbm files can be used as associative arrays posix system interface 3D graphics true concurrency (on platforms supporting Posix threads) When run as a graphical IDE, the Unicon program ui.exe continues to offer links to Icon help. The official Unicon programming book in PDF format is a popular way to learn Unicon. The book includes an introduction to object-oriented development as well as UML. It includes useful chapters on topics such as the use of Unicon for CGI. Recent additions to Unicon include true concurrency. Unicon is not yet Unicode-compliant. There are opportunities posted at a help-wanted page.
+ pageId 902180
+ dailyPageViews 19
+ created 2004
+ backlinksCount 25
+ revisionCount 82
+ appeared 2008
+
+website http://www.unicon.org/
+status historical
+fileType text
+isOpenSource true
+
+projectEuler Unicon
+ memberCount
+  2019 20
+  2022 20
+
+rosettaCode Unicon

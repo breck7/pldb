@@ -1,4 +1,88 @@
+title Statistical Analysis System
 appeared 1976
 type pl
+
+patterns
+ hasCentralPackageRepository? false
+ hasComments? true
+ hasBlockComments? true
+   /* For example 1 use: x=abc;
+    for example 2 use: y=ghi; */
+
+wikipedia https://en.wikipedia.org/wiki/SAS_language
+ related html linux
+ summary The SAS language is a computer programming language used for statistical analysis, created by Anthony James Barr at North Carolina State University. It can read in data from common spreadsheets and databases and output the results of statistical analyses in tables, graphs, and as RTF, HTML and PDF documents. The SAS language runs under compilers that can be used on Microsoft Windows, Linux, and various other UNIX and  mainframe computers. The SAS System and World Programming System (WPS) are SAS language compilers.
+ pageId 19060492
+ dailyPageViews 151
+ created 2008
+ backlinksCount 50
+ revisionCount 92
+ appeared 1976
+
+githubLanguage SAS
+ fileExtensions sas
+ trendingProjectsCount 0
+
+helloWorldCollection Statistical Analysis System
+ /* Hello world in SAS */
+ 
+ * Writes as output title;
+ TITLE "Hello World!";
+ * writes to the log;
+ data _null_;
+     PUT "Hello world!";
+ run;
+
+linguistGrammarRepo https://github.com/rpardee/sas.tmbundle
+ firstCommit 2010
+ lastCommit 2018
+ committerCount 14
+ commitCount 142
+ sampleCount 3
+ example
+  /* Example DATA step code for linguist */
+  
+  libname source 'C:\path\to\file'
+  
+  data work.working_copy;
+  	set source.original_file.sas7bdat;
+  run;
+  
+  data work.working_copy;
+  	set work.working_copy;
+  	if Purge = 1 then delete;
+  run;
+  
+  data work.working_copy;
+  	set work.working_copy;
+  	if ImportantVariable = . then MissingFlag = 1;
+  run;
+
 website https://www.sas.com
-wikipedia SAS_language
+standsFor Statistical Analysis System
+status active
+
+twitter sassoftware
+
+country US
+fileType text
+wordRank 8860
+
+tiobe SAS
+ currentRank 21
+
+linkedInSkill sas
+ peopleWithThisSkillCount 352164
+
+projectEuler SAS
+ memberCount
+  2019 49
+  2022 54
+
+hopl 733
+
+subreddit sas
+ memberCount
+  2017 2538
+
+rosettaCode SAS

@@ -1,4 +1,27 @@
+title C shell
 appeared 1978
 type pl
+
+patterns
+ hasCentralPackageRepository? false
+ hasHereDocs? true
+
+wikipedia https://en.wikipedia.org/wiki/C_Shell
+ example
+  # Always creates an empty file
+  if ( ! -e myfile ) echo mytext > myfile
+ related c linux bourne-shell algol-68 unicode grep bash
+ summary The C shell (csh or the improved version, tcsh) is a Unix shell created by Bill Joy while he was a graduate student at University of California, Berkeley in the late 1970s. It has been widely distributed, beginning with the 2BSD release of the Berkeley Software Distribution (BSD) that Joy began distributing in 1978. Other early contributors to the ideas or the code were Michael Ubell, Eric Allman, Mike O'Brien and Jim Kulp. The C shell is a command processor typically run in a text window, allowing the user to type commands. The C shell can also read commands from a file, called a script. Like all Unix shells, it supports filename wildcarding, piping, here documents, command substitution, variables and control structures for condition-testing and iteration. What differentiated the C shell from others, especially in the 1980s, were its interactive features and overall style. Its new features made it easier and faster to use. The overall style of the language looked more like C and was seen as more readable. On many systems, such as Mac OS X and Red Hat Linux, csh is actually tcsh, an improved version of csh. Often one of the two files is either a hard link or a symbolic link to the other, so that either name refers to the same improved version of the C shell. On Debian and some derivatives (including Ubuntu), there are two different packages: csh and tcsh. The former is based on the original BSD version of csh and the latter is the improved tcsh. tcsh added filename and command completion and command line editing concepts borrowed from the Tenex system, which is the source of the "t". Because it only added functionality and did not change what was there, tcsh remained backward compatible with the original C shell. Though it started as a side branch from the original source tree Joy had created, tcsh is now the main branch for ongoing development. tcsh is very stable but new releases continue to appear roughly once a year, consisting mostly of minor bug fixes.
+ pageId 95833
+ dailyPageViews 19
+ created 2002
+ backlinksCount 173
+ revisionCount 3
+ appeared 1978
+
 website http://mx.gw.com
-wikipedia C_Shell
+status active
+fileType text
+isOpenSource true
+
+tiobe C shell

@@ -1,3 +1,29 @@
+title Sing Sharp
 appeared 2005
 type pl
-wikipedia Sing_Sharp
+
+patterns
+ hasCentralPackageRepository? false
+
+wikipedia https://en.wikipedia.org/wiki/Sing_Sharp
+ example
+  static int Main(string![] args)
+          requires args.Length > 0;
+          ensures return == 0;
+      {
+          foreach(string arg in args)
+          {
+              Console.WriteLine(arg);
+          }
+          return 0;
+      }
+ related csharp eiffel java
+ summary Spec# is a programming language with specification language features that extends the capabilities of the C# programming language with Eiffel-like contracts, including object invariants, preconditions and postconditions. Like ESC/Java, it includes a static checking tool based on a theorem prover that is able to statically verify many of these invariants. It also includes a variety of other minor extensions to the language, such as non-null reference types. The code contracts API in the .NET Framework 4.0 has evolved with Spec#. Microsoft Research developed both Spec# and C#; in turn, Spec# serves as the foundation of the Sing# programming language, which Microsoft Research also developed.
+ created 2005
+ backlinksCount 82
+ pageId 3078904
+ revisionCount 39
+ dailyPageViews 12
+ appeared 2004
+
+status historical

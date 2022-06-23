@@ -1,3 +1,46 @@
+title Committee on Uniform Security Identification Procedures
 appeared 1968
 type schema
-wikipedia CUSIP
+
+patterns
+ hasCentralPackageRepository? false
+
+wikipedia https://en.wikipedia.org/wiki/CUSIP
+ example
+  algorithm Cusip-Check-Digit(cusip) is
+     Input: an 8-character CUSIP
+  
+     sum := 0
+     for 1 ≤ i ≤ 8 do
+        c := the ith character of cusip
+        if c is a digit then
+           v := numeric value of the digit c
+        else if c is a letter then
+           p := ordinal position of c in the alphabet (A=1, B=2...)
+           v := p + 9
+        else if c = "*" then
+           v := 36
+        else if c = "@" then
+           v := 37
+        else if c = "#" then
+           v := 38
+        end if
+        if i is even then
+           v := v × 2
+        end if
+  
+        sum := sum + int ( v div 10 ) + v mod 10
+     repeat
+  
+     return (10 - (sum mod 10)) mod 10
+  end function
+ summary A CUSIP is a nine-character alphanumeric code that identifies a North American financial security for the purposes of facilitating clearing and settlement of trades.  The CUSIP was adopted as an American National Standard under Accredited Standards X9.6. The CUSIP system is owned by the American Bankers Association and is operated by S&P Global Market Intelligence. The operating body, CUSIP Global Services (CGS), also serves as the national numbering agency (NNA) for North America, and the CUSIP serves as the National Securities Identification Number (NSIN) for products issued from both the United States and Canada. In its role as the NNA, CUSIP Global Services (CGS) also assigns all US-based ISINs.
+ created 2004
+ backlinksCount 40
+ pageId 1083873
+ revisionCount 290
+ dailyPageViews 233
+ appeared 1964
+
+standsFor Committee on Uniform Security Identification Procedures
+status historical

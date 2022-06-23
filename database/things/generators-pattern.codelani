@@ -1,3 +1,9 @@
+title Generators
 type pattern
-wikipedia Generator_(computer_programming)
+psuedoExample yield 2
 description In computer science, a generator is a special routine that can be used to control the iteration behaviour of a loop. All generators are iterators.
+
+wikipedia https://en.wikipedia.org/wiki/Generator_(computer_programming)
+
+status active
+patternKeyword hasGenerators?

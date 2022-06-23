@@ -1,3 +1,38 @@
+title MATH-MATIC
 appeared 1957
 type pl
-wikipedia MATH-MATIC
+
+patterns
+ hasCentralPackageRepository? false
+
+wikipedia https://en.wikipedia.org/wiki/MATH-MATIC
+ example
+  (2)  TYPE-IN ALPHA . 
+  (2A) READ A B C SERVO 4 STORAGE A IF SENTINEL JUMP TO SENTENCE 8 . 
+  (3)  READ D F SERVO 5 . 
+  (4)  VARY Y 1 (0.1) 3 SENTENCE 5 THRU 6 . 
+  (5)  X1 = (7*103*Y*A*SIN ALPHA)3 / (B POW D+C POW E) . 
+  (6)  WRITE AND EDIT A Y D E X1 SERVO 6 . 
+  (7)  JUMP TO SENTENCE 2A . 
+  (8)  CLOSE-INPUT AND REWIND SENTENCE 3 . 
+  (9)  CLOSE-OUTPUT SENTENCE 6 . 
+  (10) READ F G H N SERVO 4 STORAGE A IF SENTINEL JUMP TO SENTENCE 20 . 
+  (11) EXECUTE SENTENCE 3 . 
+  (12) X2 = (3 ROOT (E-G)+LOG (D+N)) / (F2.6*EXP H) . 
+  (13) WRITE EDIT F D F X2 SERVO 6 . 
+  (16) JUMP TO SENTENCE 10 . 
+  (20) STOP .
+ related flow-matic arith-matic algol-58 fortran
+ summary MATH-MATIC is the marketing name for the AT-3 (Algebraic Translator 3) compiler, an early programming language for the UNIVAC I and UNIVAC II. MATH-MATIC was written beginning around 1955 by a team led by Charles Katz under the direction of Grace Hopper. A preliminary manual was produced in 1957 and a final manual the following year. Syntactically, MATH-MATIC was similar to Univac's contemporaneous business-oriented language, FLOW-MATIC, differing in providing algebraic-style expressions and floating-point arithmetic, and arrays rather than record structures.
+ pageId 202110
+ created 2003
+ backlinksCount 19
+ revisionCount 40
+ dailyPageViews 12
+ appeared 1957
+
+status historical
+country US
+fileType text
+
+hopl 435

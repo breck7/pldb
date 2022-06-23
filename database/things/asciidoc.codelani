@@ -1,4 +1,69 @@
+title AsciiDoc
 appeared 2002
 type textMarkup
+
+patterns
+ hasCentralPackageRepository? false
+
+wikipedia https://en.wikipedia.org/wiki/AsciiDoc
+ example
+  = My Article
+  J. Smith
+  
+  https://wikipedia.org[Wikipedia] is an
+  on-line encyclopaedia, available in
+  English and *many* other languages.
+  
+  == Software
+  
+  You can install 'package-name' using
+  the `gem` command:
+  
+   gem install package-name
+  
+  == Hardware
+  
+  Metals commonly used include:
+  
+  * copper
+  * tin
+  * lead
+ related python ruby xml html tex unix java
+ summary AsciiDoc is a human-readable document format, semantically equivalent to DocBook XML, but using plain-text mark-up conventions.  AsciiDoc documents can be created using any text editor and read “as-is”, or rendered to HTML or any other format supported by a DocBook tool-chain, i.e. PDF, TeX, Unix manpages, e-books, slide presentations, etc.
+ pageId 6697014
+ created 2006
+ backlinksCount 69
+ revisionCount 116
+ dailyPageViews 89
+ appeared 2002
+
+githubLanguage AsciiDoc
+ fileExtensions asciidoc adoc asc
+ trendingProjectsCount 0
+
+linguistGrammarRepo https://github.com/zuckschwerdt/asciidoc.tmbundle
+ firstCommit 2008
+ lastCommit 2015
+ committerCount 8
+ commitCount 37
+ sampleCount 3
+ example
+  AsciiDoc Home Page
+  ==================
+  
+  Title
+  -----
+  
+  Example Articles
+  ~~~~~~~~~~~~~~~~
+  - Item 1
+  
+  - Item 2
+  
+  - Item 3
+  
+
 website http://asciidoc.org/
-wikipedia AsciiDoc
+status active
+fileType text
+isOpenSource true

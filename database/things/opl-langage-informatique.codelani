@@ -1,3 +1,11 @@
+title OPL
 appeared 1989
 type pl
-wikipedia OPL_%28langage_informatique%29
+
+patterns
+ hasCentralPackageRepository? false
+
+wikipedia https://en.wikipedia.org/wiki/OPL_%28langage_informatique%29
+ dailyPageViews -1
+
+status historical

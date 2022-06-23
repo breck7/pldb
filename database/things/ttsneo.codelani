@@ -1,4 +1,15 @@
+title ttsneo
 appeared 2006
 type pl
-website http://tts.utopiat.net/
+
+patterns
+ hasCentralPackageRepository? false
+
 description The Japanese programming language "TTSneo" is a scripting language that makes it easy to program in Japanese.
+website http://tts.utopiat.net/
+status historical
+
+twitter jpl_ttsneo
+
+country JP
+fileType text

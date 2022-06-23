@@ -1,3 +1,42 @@
+title ABC
 appeared 1980
 type pl
-wikipedia ABC_(programming_language)
+
+patterns
+ hasCentralPackageRepository? false
+ hasSemanticIndentation? true
+
+wikipedia https://en.wikipedia.org/wiki/ABC_(programming_language)
+ example
+  HOW TO RETURN words document:
+     PUT {} IN collection
+     FOR line IN document:
+        FOR word IN split line:
+           IF word not.in collection:
+              INSERT word IN collection
+     RETURN collection
+ related setl algol-68 python basic pascal awk c unix isbn
+ summary ABC is an imperative general-purpose programming language and programming environment developed at CWI, Netherlands by Leo Geurts, Lambert Meertens, and Steven Pemberton. It is interactive, structured, high-level, and intended to be used instead of BASIC, Pascal, or AWK. It is not meant to be a systems-programming language but is intended for teaching or prototyping. The language had a major influence on the design of the Python programming language; Guido van Rossum, who developed Python, previously worked for several years on the ABC system in the early 1980s.
+ pageId 147585
+ dailyPageViews 121
+ created 2002
+ backlinksCount 43
+ revisionCount 122
+ appeared 1980
+
+helloWorldCollection ABC
+ \ Hello world in ABC
+ 
+ WRITE "Hello, World!" /
+
+status active
+
+tryItOnline abc
+
+country NL
+fileType text
+wordRank 4100
+
+tiobe ABC
+
+hopl 1290

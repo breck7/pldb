@@ -1,3 +1,27 @@
+title Enterprise Mashup Markup Language
 appeared 2001
 type pl
-wikipedia Enterprise_Mashup_Markup_Language
+
+patterns
+ hasCentralPackageRepository? false
+
+wikipedia https://en.wikipedia.org/wiki/Enterprise_Mashup_Markup_Language
+ example
+  <script type="text/javascript">
+  <![CDATA[
+              var r = new String(result)
+              var ar = r.split("=");
+              auth = ar[ar.length-1];
+              auth = auth.slice(0, -1)
+              ]]>
+  </script>
+ related xml eclipse-editor json javascript jruby groovy xquery html xpath
+ summary EMML, or Enterprise Mashup Markup Language, is an XML markup language for creating enterprise mashups, which are software applications that consume and mash data from variety of sources, often performing logical or mathematical operations as well as presenting data. Mashed data produced by enterprise mashups are presented in graphical user interfaces as mashlets, widgets, or gadgets. EMML can also be considered a declarative mashup domain-specific language (DSL). A mashup DSL eliminates the need for complex, time-consuming, and repeatable procedural programming logic to create enterprise mashups. EMML also provides a declarative language for creating visual tools for enterprise mashups.   The primary benefits of EMML are mashup design portability and interoperability of mashup solutions. These benefits are expected to accelerate the adoption of enterprise mashups by creating transferable skills for software developers and reducing vendor lock-in. The introduction of EMML is expected to help accelerate the trend toward the integration of Web-based applications and service-oriented architecture (SOA) technologies. Bank of America was a high-profile early supporter of EMML. Other prominent early supporters included Hewlett-Packard, Capgemini, Adobe Systems, and Intel.
+ created 2009
+ backlinksCount 22
+ pageId 23983698
+ revisionCount 194
+ dailyPageViews 5
+ appeared 2006
+
+status historical

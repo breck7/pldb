@@ -1,4 +1,57 @@
+title EmberScript
 appeared 2012
 type pl
+
+patterns
+ hasCentralPackageRepository? false
+
+githubLanguage EmberScript
+ fileExtensions em emberscript
+ trendingProjectsCount 0
+
+githubRepo https://github.com/ghempton/ember-script
+ firstCommit 2012
+ stars 371
+ forks 30
+ subscribers 11
+ created 2012
+ updated 2018
+ description Ember-infused CoffeeScript
+ issues 30
+
+linguistGrammarRepo https://github.com/atom/language-coffee-script
+ firstCommit 2013
+ lastCommit 2018
+ committerCount 30
+ commitCount 332
+ sampleCount 1
+ example
+  class App.FromNowView extends Ember.View
+      tagName: 'time'
+      template: Ember.Handlebars.compile '{{view.output}}'
+      output: ~>
+          return moment(@value).fromNow()
+  
+      didInsertElement: ->
+          @tick()
+  
+      tick: ->
+          f = ->
+              @notifyPropertyChange 'output'
+              @tick()
+  
+          nextTick = Ember.run.later(this, f, 1000)
+          @set 'nextTick', nextTick
+  
+      willDestroyElement: ->
+          nextTick = @nextTick
+          Ember.run.cancel nextTick
+  
+  Ember.Handlebars.helper 'fromNow', App.FromNowView
+  
+  
+
 website http://emberscript.com/
-github https://github.com/ghempton/ember-script
+status active
+fileType text
+isOpenSource true

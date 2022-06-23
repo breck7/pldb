@@ -1,8 +1,8 @@
+title heron-lang
 appeared 2016
 type pl
 creators Christopher Diggins
-website https://cdiggins.github.io/heron-language
-github https://github.com/cdiggins/heron-language
+
 example
  // Named function with statement body
  function sum(xs) {
@@ -11,3 +11,16 @@ example
          result += x;
      return result;
  }
+
+githubRepo https://github.com/cdiggins/heron-language
+ firstCommit 2016
+ stars 47
+ forks 3
+ subscribers 2
+ created 2016
+ updated 2019
+ description A pure functional type-inferred language based on JavaScript
+
+website https://cdiggins.github.io/heron-language
+
+twitter cdiggins

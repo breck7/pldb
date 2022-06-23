@@ -1,8 +1,14 @@
+title converge
 appeared 2004
 type pl
-website https://convergepl.org/
+
 example
  import Sys
  
  func main():
    Sys::println("Hello world!")
+
+patterns
+ hasSemanticIndentation? true
+
+website https://convergepl.org/

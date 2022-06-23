@@ -1,4 +1,20 @@
+title XCAS
 appeared 2001
 type pl
-wikipedia Xcas
+
+patterns
+ hasCentralPackageRepository? false
+
+wikipedia https://en.wikipedia.org/wiki/Xcas
+ related linux unix maple mupad
+ summary Xcas is a user interface to Giac, a free, basic Computer Algebra System (CAS) for Microsoft Windows, Apple macOS and Linux/Unix. Giac can be used directly inside software written in C++. Giac has a compatibility mode with Maple and MuPAD and Qcas and ExpressionsinBar software and TI-89, TI-92, Voyage 200 and TI-Nspire calculators. Users can use Giac/Xcas as well as a free software compatible with Maple to develop formal algorithms or use it in other software. Among other things Xcas can solve equations and draw graphs. CmathOOoCAS, an OpenOffice.org plugin which allows formal calculation in Calc spreadsheet and Writer word processing, uses Xcas to perform calculations.
+ backlinksCount 78
+ pageId 11502667
+ dailyPageViews 26
+ created 2007
+ appeared 2000
+
 reference https://www-fourier.ujf-grenoble.fr/~parisse/giac.html
+status historical
+
+hopl 4928

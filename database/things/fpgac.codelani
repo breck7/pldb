@@ -1,3 +1,19 @@
+title FpgaC
 appeared 1996
 type pl
-wikipedia FpgaC
+
+patterns
+ hasCentralPackageRepository? false
+
+wikipedia https://en.wikipedia.org/wiki/FpgaC
+ related handel-c
+ summary FpgaC is a compiler for a subset of the C programming language, which produces digital circuits that will execute the compiled programs. The circuits may use FPGAs or CPLDs as the target processor for reconfigurable computing, or even ASICs for dedicated applications.  FpgaC's goal is to be an efficient High Level Language (HLL) for reconfigurable computing, rather than a Hardware Description Language (HDL) for building efficient custom hardware circuits.
+ created 2006
+ backlinksCount 10
+ pageId 4378418
+ revisionCount 25
+ dailyPageViews 6
+ appeared 2005
+
+status historical
+isOpenSource true

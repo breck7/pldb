@@ -1,0 +1,8 @@
+conferenceNameCell
+ extends stringCell
+conferenceNode
+ description Some languages have a recurring conference(s).
+ cells keywordCell urlCell
+ catchAllCellType conferenceNameCell
+ extends abstractFactNode
+ crux conference

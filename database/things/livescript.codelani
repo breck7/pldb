@@ -1,3 +1,72 @@
+title LiveScript
 appeared 2011
 type pl
-wikipedia LiveScript
+
+patterns
+ hasCentralPackageRepository? false
+ hasSemanticIndentation? true
+
+wikipedia https://en.wikipedia.org/wiki/LiveScript
+ related javascript haskell coffeescript f-sharp elixir
+ summary LiveScript is a functional programming language that compiles to JavaScript. It was created by Jeremy Ashkenas—the creator of CoffeeScript—along with Satoshi Muramaki, George Zahariev, and many others. For a brief period in the 1990s, LiveScript was the name of JavaScript.
+ pageId 17731
+ created 2001
+ backlinksCount 27
+ revisionCount 53
+ dailyPageViews 35
+ appeared 2011
+ fileExtensions ls
+
+githubLanguage LiveScript
+ fileExtensions ls _ls
+ trendingProjectsCount 0
+
+linguistGrammarRepo https://github.com/paulmillr/LiveScript.tmbundle
+ firstCommit 2010
+ lastCommit 2017
+ committerCount 40
+ commitCount 263
+ sampleCount 1
+ example
+  a = -> 1
+  const b = --> 2
+  var c = ~> 3
+  d = ~~> 10_000_000km * 500ms
+  e = (a) -> (b) ~> (c) --> (d, e) ~~> 5
+  dashes-identifiers = ->
+    a - a
+    b -- c
+    1-1 1- -1
+    a- a
+    a -a
+  underscores_i$d = ->
+  /regexp1/ and //regexp2//g
+  'strings' and "strings" and \strings
+  ([2 til 10] or [1 to 50])
+    |> map (* 2)
+    |> filter (> 5)
+    |> fold (+)
+  
+  class Class extends Anc-est-or
+    (args) ->
+  
+  copy = (from, to, callback) -->
+    error, data <- read file
+    return callback error if error?
+    error <~ write file, data
+    return callback error if error?
+    callback()
+  
+  ->
+  ~>
+  ~~>
+  -->
+  # Comment
+  /* Comment */
+  
+
+status active
+fileType text
+isOpenSource true
+
+rosettaCode LiveScript

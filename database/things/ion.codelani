@@ -1,4 +1,85 @@
+title Ion
 appeared 2016
 type idl
-reference https://amzn.github.io/ion-docs/
+
+patterns
+ hasBooleans? true
+  null.bool
+  true
+  false
+ hasComments? true
+ hasStructs? true
+  { first : "Tom" , last: "Riddle" }  // Structure with two fields
+  {"first":"Tom","last":"Riddle"}     // The same value with confusing style
+  {center:{x:1.0, y:12.5}, radius:3}  // Nested struct
+ hasFloats? true
+  // http://amzn.github.io/ion-docs/docs/spec.html
+  -0.12e4           // Type is float
+ hasIdentifiers? true
+  // A subset of symbols called identifiers can be denoted in text without single-quotes. 
+ hasIntegers? true
+  // http://amzn.github.io/ion-docs/docs/spec.html
+  null.int   // A null int value
+  0          // Zero.  Surprise!
+  -0         //   ...the same value with a minus sign
+  123        // A normal int
+  -123       // Another negative int
+  0xBeef     // An int denoted in hexadecimal
+  0b0101     // An int denoted in binary
+  1_2_3      // An int with underscores
+  0xFA_CE    // An int denoted in hexadecimal with underscores
+  0b10_10_10 // An int denoted in binary with underscores
+ hasMultilineStrings? true
+  ( '''hello '''     // Sexp with one element
+    '''world!'''  )
+  
+  ("hello world!")   // The exact same sexp value
+  
+  // This Ion value is a string containing three newlines. The serialized
+  // form's first newline is escaped into nothingness.
+  '''\
+  The first line of the string.
+  This is the second line of the string,
+  and this is the third line.
+  '''
+ hasNull? true
+  null
+ hasStrings? true
+  ""                     // An empty string value
+  " my string "          // A normal string
+  "\""                   // Contains one double-quote character
+  "\uABCD"               // Contains one unicode character
+
+example
+ /* Ion supports comments. */
+ // Here is a struct, which is similar to a JSON object
+ {
+   // Field names don't always have to be quoted
+   name: "Fido",
+ 
+   // This is an integer with a 'years' annotation
+   age: years::4,
+ 
+   // This is a timestamp with day precision
+   birthday: 2012-03-01T,
+ 
+   // Here is a list, which is like a JSON array
+   toys: [
+     // These are symbol values, which are like strings,
+     // but get encoded as integers in binary
+     ball,
+     rope,
+   ],
+ 
+   // This is a decimal -- a base-10 floating point value
+   weight: pounds::41.2,
+ 
+   // Here is a blob -- binary data, which is
+   // base64-encoded in Ion text encoding
+   buzz: {{VG8gaW5maW5pdHkuLi4gYW5kIGJleW9uZCE=}},
+ }
+
 description Amazon Ion is a richly-typed, self-describing, hierarchical data serialization format offering interchangeable binary and text representations. The text format (a superset of JSON) is easy to read and author, supporting rapid prototyping. The binary representation is efficient to store, transmit, and skip-scan parse.
+aka Amazon Ion
+reference https://amzn.github.io/ion-docs/
+related protobuf

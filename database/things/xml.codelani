@@ -1,3 +1,50 @@
+title XML markup languages
 appeared 1996
 type metaLanguage
-wikipedia XML
+
+patterns
+ canWriteToDisk? false
+ hasCentralPackageRepository? false
+
+wikipedia https://en.wikipedia.org/wiki/XML
+ example
+  <?xml version="1.0" encoding="ISO-8859-1" ?>
+  <xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"></xs:schema>
+ related sgml unicode soap ooxml utf-8 ascii html regex xpath xquery scala java smalltalk php python ecmascript rdf javascript hytime json yaml s-expressions
+ summary In computing, Extensible Markup Language (XML) is a markup language that defines a set of rules for encoding documents in a format that is both human-readable and machine-readable. The W3C's XML 1.0 Specification and several other related specifications—all of them free open standards—define XML. The design goals of XML emphasize simplicity, generality, and usability across the Internet. It is a textual data format with strong support via Unicode for different human languages. Although the design of XML focuses on documents, the language is widely used for the representation of arbitrary data structures such as those used in web services. Several schema systems exist to aid in the definition of XML-based languages, while programmers have developed many application programming interfaces (APIs) to aid the processing of XML data.
+ pageId 34138
+ dailyPageViews 2861
+ created 2001
+ backlinksCount 5441
+ revisionCount 4025
+ appeared 1996
+
+githubLanguage XML
+ fileExtensions xml adml admx ant axml builds ccproj ccxml clixml cproject cscfg csdef csl csproj ct depproj dita ditamap ditaval dllconfig dotsettings filters fsproj fxml glade gml gmx grxml iml ivy jelly jsproj kml launch mdpolicy mjml mm mod mxml natvis ncl ndproj nproj nuspec odd osm pkgproj plist pluginspec proj props ps1xml psc1 pt rdf resx rss sch scxml sfproj shproj srdf storyboard stTheme sublime-snippet targets tmCommand tml tmLanguage tmPreferences tmSnippet tmTheme ts tsx ui urdf ux vbproj vcxproj vsixmanifest vssettings vstemplate vxml wixproj workflow wsdl wsf wxi wxl wxs x3d xacro xaml xib xlf xliff xmi xmldist xproj xsd xspec xul zcml
+ trendingProjectsCount 0
+
+linguistGrammarRepo https://github.com/textmate/xml.tmbundle
+ firstCommit 2004
+ lastCommit 2018
+ committerCount 12
+ commitCount 97
+ sampleCount 63
+ example
+  <?xml version="1.0"?>
+  <gml:Point xmlns:gml="http://www.opengis.net/gml" srsName="urn:ogc:def:crs:EPSG::4326" gml:id="uuid.12b3c8bb-bc8a-4f83-9085-1a5f3280b8ba">
+    <gml:pos>52.56 13.29</gml:pos>
+  </gml:Point>
+  
+
+standsFor XML markup languages
+status active
+fileType text
+wordRank 1434
+linkedInSkill xml
+ peopleWithThisSkillCount 1902877
+
+hopl 2626
+
+codeMirror xml
+
+antlr https://github.com/antlr/grammars-v4/tree/master/xml

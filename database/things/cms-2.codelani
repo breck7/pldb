@@ -1,5 +1,24 @@
+title CMS-2
 appeared 1968
 type pl
 creators Vincent Cecil Secades and David Clark Rummler
-wikipedia CMS-2_(programming_language)
+
+patterns
+ hasCentralPackageRepository? false
+
+wikipedia https://en.wikipedia.org/wiki/CMS-2_(programming_language)
+ related fortran jovial pl-i ada
+ summary CMS-2 is an embedded systems programming language used by the United States Navy. It was an early attempt to develop a standardized high-level computer programming language intended to improve code portability and reusability. CMS-2 was developed primarily for the US Navy’s tactical data systems (NTDS).CMS-2 was developed by RAND Corporation in the early 1970s and stands for "Compiler Monitor System". The name "CMS-2" is followed in literature by a letter designating the type of target system. For example, CMS-2M targets Navy 16-bit processors, such as the AN/AYK-14.
+ pageId 1181779
+ created 2004
+ backlinksCount 24
+ revisionCount 93
+ dailyPageViews 22
+ appeared 1968
+
 reference https://www.semanticscholar.org/paper/Steps-toward-a-revised-compiler-monitor-system-II-Secades-Rummler/2ea5859d3f2045a9dd3296c28a9d18a87853a083
+status historical
+country US
+fileType text
+
+hopl 711

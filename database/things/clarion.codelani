@@ -1,4 +1,70 @@
+title Clarion
 appeared 1986
 type pl
+
+patterns
+ hasCentralPackageRepository? false
+
+wikipedia https://en.wikipedia.org/wiki/Clarion_(programming_language)
+ example
+  PROGRAM
+       MAP
+       END
+     CODE
+       MESSAGE('Hello World!','Clarion')
+       RETURN
+ related sql ascii csv foxpro dbase xml html pdf turbo-pascal
+ summary Clarion is a commercial, 4GL, multi-paradigm, programming language and Integrated Development Environment from SoftVelocity used to program database applications. It is compatible with ISAM, SQL and ADO data access methods, reads and writes several flat file desktop database formats including ASCII, CSV, DOS (Binary), FoxPro, Clipper, dBase, and some relational databases via ODBC, MS SQL Server, Sybase SQL Anywhere and Oracle through the use of accelerated native database drivers, and XML, Clarion can be used to output to HTML, XML, plaintext, and PDF, among others. The Clarion Development Environment (IDE) sits on top of the Clarion Programming Language. The IDE provides code generation facilities via a system of templates which allow programmers to describe the program from an abstract level higher than actual code statements. The generator then turns this higher level into code, which in turn is then compiled and linked using a normal compiler and linker. This generation layer is sometimes referred to as 4GL programming. The generation layer is not required. It is possible to create programs completely at the code level (the so-called 3GL layer), bypassing all the code generation facilities. If the templates are used to generate code then programmers are able to inject their own code into the generated code to alter, or extend, the functionality offered by the template layer. This process of embedding code can be done while viewing the surrounding generated code. This mixing of template code and generated code allows the template settings to be updated, and the code regenerated, without the loss of the embedded code. The templates (from which the code is generated) are provided in source form and developers are free to create their own templates. A large collection of templates have been written by various developers some of which are offered as commercial add-ons and some of which are free. There are several Clarion products available; Clarion Professional Edition, Clarion Enterprise Edition and Clarion.Net.
+ pageId 508614
+ dailyPageViews 65
+ created 2004
+ backlinksCount 40
+ revisionCount 540
+ appeared 1989
+
+githubLanguage Clarion
+ fileExtensions clw
+ trendingProjectsCount 0
+
+helloWorldCollection Clarion
+ !Hello World in Clarion 
+  
+   PROGRAM
+  
+  MAP
+  END
+  
+  CODE
+  
+  MESSAGE('Hello World!')
+  
+  RETURN
+ 
+
+linguistGrammarRepo https://github.com/fushnisoft/SublimeClarion
+ firstCommit 2011
+ lastCommit 2018
+ committerCount 3
+ commitCount 67
+ sampleCount 4
+ example
+    PROGRAM
+  
+    MAP
+    END
+  
+    CODE
+  
+    MESSAGE('Hello World!')
+  
+    RETURN
+
 website http://www.softvelocity.com
-wikipedia Clarion_(programming_language)
+status active
+fileType text
+
+tiobe Clarion
+
+hopl 1903
+
+rosettaCode Clarion

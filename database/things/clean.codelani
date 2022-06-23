@@ -1,4 +1,69 @@
+title Clean
 appeared 1987
 type pl
+
+patterns
+ hasCentralPackageRepository? false
+ hasComments? true
+
+wikipedia https://en.wikipedia.org/wiki/Clean_(programming_language)
+ example
+  (^) infixr 8 :: Int Int -> Int
+    (^) x 0 = 1
+    (^) x n = x * x ^ (n-1)
+ related miranda haskell c solaris linux fibonacci prolog
+ summary Clean is a general-purpose purely functional computer programming language. For much of the language's active development history it was called Concurrent Clean, but this was dropped at some point.
+ pageId 161878
+ dailyPageViews 52
+ created 2002
+ backlinksCount 41
+ revisionCount 390
+ appeared 1987
+ fileExtensions icl dcl abc sapl
+
+githubLanguage Clean
+ fileExtensions icl dcl
+ trendingProjectsCount 0
+
+helloWorldCollection Clean
+ // Hello World in Clean
+ 
+ module hello
+ 
+ Start :: String
+ Start = "Hello World!\n"
+ 
+
+linguistGrammarRepo https://github.com/timjs/atom-language-clean.git
+ firstCommit 2016
+ lastCommit 2017
+ committerCount 2
+ commitCount 25
+ sampleCount 9
+ example
+  definition module GenMap
+  
+  import StdGeneric
+  
+  generic gMap a b :: .a -> .b
+  derive gMap c, UNIT, PAIR, EITHER, CONS, FIELD, OBJECT, {}, {!} 
+  
+  derive gMap [], (,), (,,),  (,,,), (,,,,), (,,,,,), (,,,,,,), (,,,,,,,)
+  
+  
+
 website http://clean.cs.ru.nl
-wikipedia Clean_(programming_language)
+status active
+
+tryItOnline clean
+
+country NL
+fileExtensions icl dcl abc sapl
+fileType text
+wordRank 1809
+
+tiobe Clean
+
+hopl 1305
+
+rosettaCode Clean

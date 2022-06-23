@@ -1,4 +1,14 @@
+title Links programming language
 appeared 2006
 type pl
-github https://github.com/links-lang/links
-wikipedia Links_(programming_language)
+
+patterns
+ hasCentralPackageRepository? false
+
+wikipedia https://en.wikipedia.org/wiki/Links_(programming_language)
+ dailyPageViews -1
+
+githubRepo https://github.com/links-lang/links
+
+status active
+isOpenSource true

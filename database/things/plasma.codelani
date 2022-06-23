@@ -1,4 +1,15 @@
+title plasma
 appeared 2015
 type pl
-website http://plasmalang.org/
+
+patterns
+ hasCentralPackageRepository? false
+
 description <a href='http://plasmalang.org/'>Plasma</a>, which aims to strike a balance between functional and imperative programming, include state-of-the-art concurrent programming features and feature <a href='http://plasmalang.org/about.html#goal-conc-and-par'> automatic parallelisation</a>. Boney previously worked on <a href='http://mercurylang.org/'>Mercury</a> a logic language.</dd>
+website http://plasmalang.org/
+status historical
+
+twitter plasmalang
+
+fileType text
+wordRank 3774

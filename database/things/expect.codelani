@@ -1,7 +1,7 @@
+title Expect
 appeared 1990
 type pl
-website http://core.tcl.tk/expect/index
-wikipedia Expect
+
 example
  # Assume $remote_server, $my_user_id, $my_password, and $my_command were read in earlier
  # in the script.
@@ -22,3 +22,41 @@ example
  # Exit the telnet session, and wait for a special end-of-file character.
  send "exit\r"
  expect eof
+
+patterns
+ hasCentralPackageRepository? false
+
+wikipedia https://en.wikipedia.org/wiki/Expect
+ example
+  #timeout is a predefined variable in expect which by default is set to 10 sec
+  #spawn_id is another default variable in expect.
+  #It is good practice to close spawn_id handle created by spawn command
+  set timeout 60
+  spawn ssh $user@machine
+  while {1} {
+    expect {
+  
+      eof                          {break}
+      "The authenticity of host"   {send "yes\r"}
+      "password:"                  {send "$password\r"}
+      "*\]"                        {send "exit\r"}
+    }
+  }
+  wait
+  close $spawn_id
+ related tcl unix regex python ruby perl
+ summary Expect, an extension to the Tcl scripting language written by Don Libes, is a program to automate interactions with programs that expose a text terminal interface.  Expect was originally written in 1990 for Unix systems, but has since become available for Microsoft Windows and other systems.
+ pageId 1161030
+ created 2004
+ backlinksCount 52
+ revisionCount 273
+ dailyPageViews 198
+ appeared 1990
+
+website http://core.tcl.tk/expect/index
+status historical
+fileType text
+wordRank 2323
+isOpenSource true
+
+hopl 1622

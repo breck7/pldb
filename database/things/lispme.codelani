@@ -1,4 +1,18 @@
+title LispMe
 appeared 2008
 type pl
-wikipedia LispMe
+
+patterns
+ hasCentralPackageRepository? false
+
+wikipedia https://en.wikipedia.org/wiki/LispMe
+ summary LispMe is an interpreter for the Scheme programming language developed by Fred Bayer for Palm OS PDAs.  It is free software released under the GNU General Public License.  It is reasonably close to standard Scheme but is not fully R5RS compliant.  Scheme source programs can be stored in Palm OS memopad format while Scheme sessions,  are stored in Palm OS PDB database files and can be interrupted and restarted. There is some support for Palm OS user interface primitives.  LispMe also provides some database support. LispMe sessions can be given a "starter icon", which appears in the Applications menu, enabling the session to be run as a Palm Pilot application. The product ended development in August 2008, but is fairly complete and quite robust.
+ backlinksCount 4
+ pageId 1392960
+ dailyPageViews 3
+ appeared 2008
+
 reference https://en.wikipedia.org/wiki/LispMe
+isOpenSource true
+
+hopl 3617

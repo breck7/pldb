@@ -1,4 +1,123 @@
+title Cascading Style Sheets
 appeared 1996
 type stylesheetLanguage
-wikipedia Cascading_Style_Sheets
+
+patterns
+ canWriteToDisk? false
+ hasCentralPackageRepository? false
+ hasImports? true
+  @import 'custom.css';
+ hasFunctions? false
+
+wikipedia https://en.wikipedia.org/wiki/Cascading_Style_Sheets
+ example
+  body {
+     overflow: hidden;
+     background: #000000;
+  }
+ related html javascript webgl xml svg xpath
+ summary Cascading Style Sheets (CSS) is a style sheet language used for describing the presentation of a document written in a markup language. Although most often used to set the visual style of web pages and user interfaces written in HTML and XHTML, the language can be applied to any XML document, including plain XML, SVG and XUL, and is applicable to rendering in speech, or on other media. Along with HTML and JavaScript, CSS is a cornerstone technology used by most websites to create visually engaging webpages, user interfaces for web applications, and user interfaces for many mobile applications. CSS is designed primarily to enable the separation of presentation and content, including aspects such as the layout, colors, and fonts. This separation can improve content accessibility, provide more flexibility and control in the specification of presentation characteristics, enable multiple HTML pages to share formatting by specifying the relevant CSS in a separate .css file, and reduce complexity and repetition in the structural content. Separation of formatting and content makes it possible to present the same markup page in different styles for different rendering methods, such as on-screen, in print, by voice (via speech-based browser or screen reader), and on Braille-based tactile devices. It can also display the web page differently depending on the screen size or viewing device. Readers can also specify a different style sheet, such as a CSS file stored on their own computer, to override the one the author specified. Changes to the graphic design of a document (or hundreds of documents) can be applied quickly and easily, by editing a few lines in the CSS file they use, rather than by changing markup in the documents. The CSS specification describes a priority scheme to determine which style rules apply if more than one rule matches against a particular element. In this so-called cascade, priorities (or weights) are calculated and assigned to rules, so that the results are predictable. The CSS specifications are maintained by the World Wide Web Consortium (W3C). Internet media type (MIME type) text/css is registered for use with CSS by RFC 2318 (March 1998). The W3C operates a free CSS validation service for CSS documents.
+ pageId 23290197
+ dailyPageViews 1937
+ created 2001
+ backlinksCount 7498
+ revisionCount 3840
+ appeared 1996
+
+githubLanguage CSS
+ fileExtensions css
+ trendingProjects
+  author name avatar url language languageColor stars forks currentPeriodStars description
+  LanikSJ slack-dark-mode https://github.com/LanikSJ.png https://github.com/LanikSJ/slack-dark-mode CSS #563d7c 425 52 202 "Slack Dark Mode for macOS Desktop"
+  Cyb3rWard0g HELK https://github.com/Cyb3rWard0g.png https://github.com/Cyb3rWard0g/HELK CSS #563d7c 1743 327 110 "The Hunting ELK"
+  microsoft TypeScript-Node-Starter https://github.com/microsoft.png https://github.com/microsoft/TypeScript-Node-Starter CSS #563d7c 5908 1323 307 "A starter template for TypeScript and Node with a detailed README describing how to use the two together."
+  UndeadSec SocialFish https://github.com/UndeadSec.png https://github.com/UndeadSec/SocialFish CSS #563d7c 1216 441 97 "Educational Phishing Tool & Information Collector"
+  jonasschmedtmann advanced-css-course https://github.com/jonasschmedtmann.png https://github.com/jonasschmedtmann/advanced-css-course CSS #563d7c 1413 1726 86 "Starter files, final projects and FAQ for my Advanced CSS course"
+  necolas normalize.css https://github.com/necolas.png https://github.com/necolas/normalize.css CSS #563d7c 36137 7356 423 "A modern alternative to CSS resets"
+  vinceliuice Mojave-gtk-theme https://github.com/vinceliuice.png https://github.com/vinceliuice/Mojave-gtk-theme CSS #563d7c 352 71 58 "Mojave is a macos Mojave like theme for GTK 3, GTK 2 and Gnome-Shell"
+  nikitavoloboev my-mac-os https://github.com/nikitavoloboev.png https://github.com/nikitavoloboev/my-mac-os CSS #563d7c 15117 629 171 "List of applications and tools that make my macOS experience even more amazing"
+  jgthms bulma https://github.com/jgthms.png https://github.com/jgthms/bulma CSS #563d7c 36439 2965 550 "Modern CSS framework based on Flexbox"
+  rstacruz cheatsheets https://github.com/rstacruz.png https://github.com/rstacruz/cheatsheets CSS #563d7c 7217 1704 226 "My cheatsheets"
+  troxler awesome-css-frameworks https://github.com/troxler.png https://github.com/troxler/awesome-css-frameworks CSS #563d7c 2026 151 99 "List of awesome CSS frameworks"
+  pmarsceill just-the-docs https://github.com/pmarsceill.png https://github.com/pmarsceill/just-the-docs CSS #563d7c 847 420 80 "A modern, high customizable, responsive Jekyll theme for documention with built-in search."
+  tailwindcss tailwindcss https://github.com/tailwindcss.png https://github.com/tailwindcss/tailwindcss CSS #563d7c 14288 666 761 "A utility-first CSS framework for rapid UI development."
+  StylishThemes GitHub-Dark https://github.com/StylishThemes.png https://github.com/StylishThemes/GitHub-Dark CSS #563d7c 5847 421 215 "Dark GitHub style"
+  ryanoasis nerd-fonts https://github.com/ryanoasis.png https://github.com/ryanoasis/nerd-fonts CSS #563d7c 16392 1030 650 "Iconic font aggregator, collection, & patcher. 3,600+ icons, 40+ patched fonts: Hack, Source Code Pro, more. Glyph collections: Font Awesome, Material Design Icons, Octicons, & more"
+  BlackrockDigital startbootstrap-sb-admin https://github.com/BlackrockDigital.png https://github.com/BlackrockDigital/startbootstrap-sb-admin CSS #563d7c 2234 1587 29 "A free, open source, Bootstrap admin theme created by Start Bootstrap"
+  DMQ mvvm https://github.com/DMQ.png https://github.com/DMQ/mvvm CSS #563d7c 3821 942 113 剖析vue实现原理，自己动手实现mvvm
+  BNDong Cnblogs-Theme-SimpleMemory https://github.com/BNDong.png https://github.com/BNDong/Cnblogs-Theme-SimpleMemory CSS #563d7c 300 256 67 "🍭 Cnblogs theme / Basic theme : SimpleMemory"
+  uikit uikit https://github.com/uikit.png https://github.com/uikit/uikit CSS #563d7c 14876 2128 144 "A lightweight and modular front-end framework for developing fast and powerful web interfaces"
+  BlackrockDigital startbootstrap-sb-admin-2 https://github.com/BlackrockDigital.png https://github.com/BlackrockDigital/startbootstrap-sb-admin-2 CSS #563d7c 7083 4238 166 "A free, open source, Bootstrap admin theme created by Start Bootstrap"
+  theme-next hexo-theme-next https://github.com/theme-next.png https://github.com/theme-next/hexo-theme-next CSS #563d7c 3901 1230 248 "Elegant and powerful theme for Hexo."
+  microsoft azuredevopslabs https://github.com/microsoft.png https://github.com/microsoft/azuredevopslabs CSS #563d7c 200 146 19 "Learn how you can plan smartly, collaborate better, and ship faster with a set of modern development services with Azure DevOps."
+  Tencent weui.js https://github.com/Tencent.png https://github.com/Tencent/weui.js CSS #563d7c 2546 837 42 "A lightweight javascript library for WeUI."
+  daneden animate.css https://github.com/daneden.png https://github.com/daneden/animate.css CSS #563d7c 61860 13095 738 "🍿 A cross-browser library of CSS animations. As easy to use as an easy thing."
+  kitian616 jekyll-TeXt-theme https://github.com/kitian616.png https://github.com/kitian616/jekyll-TeXt-theme CSS #563d7c 833 788 65 "💎 🐳 A super customizable Jekyll theme for personal site, team site, blog, project, documentation, etc."
+ trendingProjectsCount 26
+
+helloWorldCollection Cascading Style Sheets
+ /* Hello World in CSS */
+ body:before {
+     content: "Hello World";
+ }
+ 
+
+linguistGrammarRepo https://github.com/atom/language-css
+ firstCommit 2013
+ lastCommit 2018
+ committerCount 48
+ commitCount 418
+ sampleCount 2
+ example
+  /*!
+   * Bootstrap v2.3.1
+   *
+   * Copyright 2012 Twitter, Inc
+   * Licensed under the Apache License v2.0
+   * http://www.apache.org/licenses/LICENSE-2.0
+   *
+   * Designed and built with all the love in the world @twitter by @mdo and @fat.
+   */
+  .clearfix{*zoom:1;}.clearfix:before,.clearfix:after{display:table;content:"";line-height:0;}
+  .clearfix:after{clear:both;}
+  .hide-text{font:0/0 a;color:transparent;text-shadow:none;background-color:transparent;border:0;}
+  .input-block-level{display:block;width:100%;min-height:30px;-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box;}
+  article,aside,details,figcaption,figure,footer,header,hgroup,nav,section{display:block;}
+  audio,canvas,video{display:inline-block;*display:inline;*zoom:1;}
+  audio:not([controls]){display:none;}
+  html{font-size:100%;-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%;}
+  a:focus{outline:thin dotted #333;outline:5px auto -webkit-focus-ring-color;outline-offset:-2px;}
+  a:hover,a:active{outline:0;}
+  sub,sup{position:relative;font-size:75%;line-height:0;vertical-align:baseline;}
+  sup{top:-0.5em;}
+  sub{bottom:-0.25em;}
+  img{max-width:100%;width:auto\9;height:auto;vertical-align:middle;border:0;-ms-interpolation-mode:bicubic;}
+  #map_canvas img,.google-maps img{max-width:none;}
+  button,input,select,textarea{margin:0;font-size:100%;vertical-align:middle;}
+  button,input{*overflow:visible;line-height:normal;}
+  button::-moz-focus-inner,input::-moz-focus-inner{padding:0;border:0;}
+  button,html input[type="button"],input[type="reset"],input[type="submit"]{-webkit-appearance:button;cursor:pointer;}
+  label,select,button,input[type="button"],input[type="reset"],input[type="submit"],input[type="radio"],input[type="checkbox"]{cursor:pointer;}
+  input[type="search"]{-webkit-box-sizing:content-box;-moz-box-sizing:content-box;box-sizing:content-box;-webkit-appearance:textfield;}
+  input[type="search"]::-webkit-search-decoration,input[type="search"]::-webkit-search-cancel-button{-webkit-appearance:none;}
+  textarea{overflow:
+
 reference https://examples.p6c.dev/categories/parsers/CSSGrammar.html
+standsFor Cascading Style Sheets
+status active
+fileType text
+wordRank 3840
+
+meetup css
+ memberCount 608659
+ groupCount 963
+
+linkedInSkill css
+ peopleWithThisSkillCount 2871891
+
+codeMirror css
+
+antlr https://github.com/antlr/grammars-v4/tree/master/css3
+
+indeedJobs css developer
+ 2017 16898

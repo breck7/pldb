@@ -1,3 +1,42 @@
+title Backus-Naur Form
 appeared 1956
 type grammarLanguage
-wikipedia Backus–Naur_form
+
+patterns
+ hasCentralPackageRepository? false
+
+wikipedia https://en.wikipedia.org/wiki/Backus–Naur_form
+ example
+  <syntax>         ::= <rule> | <rule> <syntax>
+   <rule>           ::= <opt-whitespace> "<" <rule-name> ">" <opt-whitespace> "::=" <opt-whitespace> <expression> <line-end>
+   <opt-whitespace> ::= " " <opt-whitespace> | ""
+   <expression>     ::= <list> | <list> <opt-whitespace> "|" <opt-whitespace> <expression>
+   <line-end>       ::= <opt-whitespace> <EOL> | <line-end> <line-end>
+   <list>           ::= <term> | <term> <opt-whitespace> <list>
+   <term>           ::= <literal> | "<" <rule-name> ">"
+   <literal>        ::= '"' <text1> '"' | "'" <text2> "'"
+   <text1>          ::= "" | <character1> <text1>
+   <text2>          ::= "" | <character2> <text2>
+   <character>      ::= <letter> | <digit> | <symbol>
+   <letter>         ::= "A" | "B" | "C" | "D" | "E" | "F" | "G" | "H" | "I" | "J" | "K" | "L" | "M" | "N" | "O" | "P" | "Q" | "R" | "S" | "T" | "U" | "V" | "W" | "X" | "Y" | "Z" | "a" | "b" | "c" | "d" | "e" | "f" | "g" | "h" | "i" | "j" | "k" | "l" | "m" | "n" | "o" | "p" | "q" | "r" | "s" | "t" | "u" | "v" | "w" | "x" | "y" | "z"
+   <digit>          ::= "0" | "1" | "2" | "3" | "4" | "5" | "6" | "7" | "8" | "9"
+   <symbol>         ::=  "|" | " " | "-" | "!" | "#" | "$" | "%" | "&" | "(" | ")" | "*" | "+" | "," | "-" | "." | "/" | ":" | ";" | ">" | "=" | "<" | "?" | "@" | "[" | "\" | "]" | "^" | "_" | "`" | "{" | "}" | "~"
+   <character1>     ::= <character> | "'"
+   <character2>     ::= <character> | '"'
+   <rule-name>      ::= <letter> | <rule-name> <rule-char>
+   <rule-char>      ::= <letter> | <digit> | "-"
+ related algol-58 algol algol-60 compiler-compiler yacc symbol ascii regex pl-i peg antlr java haskell coco-r gold bison xpl isbn
+ summary In computer science, Backus–Naur form or Backus normal form (BNF) is a notation technique for context-free grammars, often used to describe the syntax of languages used in computing, such as computer programming languages, document formats, instruction sets and communication protocols. They are applied wherever exact descriptions of languages are needed: for instance, in official language specifications, in manuals, and in textbooks on programming language theory. Many extensions and variants of the original Backus–Naur notation are used; some are exactly defined, including extended Backus–Naur form (EBNF) and augmented Backus–Naur form (ABNF).
+ pageId 62247
+ dailyPageViews 488
+ backlinksCount 130
+ appeared 1956
+
+standsFor Backus–Naur Form
+status historical
+country US
+fileType text
+
+hopl 1865
+
+antlr https://github.com/antlr/grammars-v4/tree/master/bnf

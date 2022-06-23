@@ -1,3 +1,23 @@
+title RLaB
 appeared 1998
 type pl
-wikipedia Rlab
+
+patterns
+ hasCentralPackageRepository? false
+ hasComments? true
+
+wikipedia https://en.wikipedia.org/wiki/Rlab
+ related matlab linux
+ summary Rlab is an interactive, interpreted numerical computation program and its core programming language, written by Ian Searle. Rlab (the language) is very high level and is intended to provide fast prototyping and program development, as well as easy data-visualization, and processing. Rlab was not designed as a clone of MATLAB. However, as Rlab (the program) is intended to provide a good experimental environment (or laboratory) in which to do matrix math, the programming language possesses similar operators and concepts and could be called MATLAB-like. Rlab borrows some of the best features of the MATLAB language but provides them through a different syntax that has been modified in order to be more expressive while reducing ambiguity. The variable scoping rules facilitate the creation of larger programs and re-usable program libraries. A heterogeneous associative array datatype has been added to allow users to create and operate on arbitrary data structures. The fundamental data type is the dense floating point matrix (either real or complex), though string and sparse numerical matrices (both real and complex) are also provided. Rlab 2.1 is no longer under active development. Binary versions are available for Linux and for Windows, and source code is available under the GPL. Rlab 2.2 has been released as a part of the project rlabplus by Marijan Koštrun.
+ pageId 593529
+ created 2004
+ backlinksCount 6
+ revisionCount 38
+ dailyPageViews 12
+
+status historical
+fileType text
+
+hopl 5721
+
+rosettaCode RLaB

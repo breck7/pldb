@@ -1,3 +1,20 @@
+title FX-87
 appeared 1987
 type pl
-wikipedia FX-87
+
+patterns
+ hasCentralPackageRepository? false
+
+wikipedia https://en.wikipedia.org/wiki/FX-87
+ related fibonacci
+ summary FX-87 is a polymorphic typed functional language based on a system for static program analysis in which every expression has two static properties: a type and an effect. In a study done by MIT, FX-87 yields similar performance results as functional languages on programs that do not contain side effects (Fibonacci, Factorial). FX-87 did yield a great performance increase when matching DNA sequences.KFX is the kernel language of FX-87. It was described in 'Polymorphic Effect Systems', J.M. Lucassen et al., Proceedings of the 15th Annual ACM Conference POPL, ACM 1988, pp. 47–57.
+ created 2002
+ backlinksCount 5
+ pageId 17139
+ revisionCount 30
+ dailyPageViews 5
+ appeared 1988
+
+status historical
+
+hopl 2653

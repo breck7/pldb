@@ -1,0 +1,11 @@
+helloWorldCollectionNode
+ description Hello world written in this language from http://helloworldcollection.de/
+ extends exampleNode
+ crux helloWorldCollection
+ boolean padOnFormat true
+ int sortIndex 400
+ cells keywordCell
+ catchAllCellType helloWorldCollectionIdCell
+ string sourceDomain helloworldcollection.de
+helloWorldCollectionIdCell
+ description Id for this language on hello world collection.

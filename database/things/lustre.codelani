@@ -1,3 +1,29 @@
+title Lustre
 appeared 1993
 type pl
-wikipedia Lustre_(programming_language)
+
+patterns
+ hasCentralPackageRepository? false
+
+wikipedia https://en.wikipedia.org/wiki/Lustre_(programming_language)
+ example
+  node Edge (X : bool) returns (E : bool);
+  let
+    E = false -> X and not pre X;
+  tel
+ related esterel signal
+ summary Lustre is a formally defined, declarative, and synchronous dataflow programming language for programming reactive systems. It began as a research project in the early 1980s. A formal presentation of the language can be found in the 1991 Proceedings of the IEEE. In 1993 it progressed to practical, industrial use in a commercial product as the core language of the industrial environment SCADE, developed by Esterel Technologies. It is now used for critical control software in aircraft, helicopters, and nuclear power plants.
+ pageId 2211835
+ dailyPageViews 26
+ created 2005
+ backlinksCount 22
+ revisionCount 51
+ appeared 1993
+
+status active
+country FR
+fileType text
+
+tiobe Lustre
+
+hopl 1161

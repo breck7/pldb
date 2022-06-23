@@ -1,7 +1,7 @@
+title PureScript
 appeared 2013
 type pl
-website http://functorial.com/purescript
-github https://github.com/purescript/purescript
+
 example
  import Prelude
  import Effect.Console (log)
@@ -10,3 +10,93 @@ example
  greet name = "Hello, " <> name <> "!"
  
  main = log (greet "World")
+
+patterns
+ hasCentralPackageRepository? true
+ hasComments? true
+ hasDocComments? true
+  -- https://github.com/purescript/documentation/blob/master/language/Syntax.md
+  -- | `bool` performs case analysis for the `Boolean` data type, like an `if` statement.
+  bool :: forall a. Boolean -> a -> a -> a
+  bool true x _ = x
+  bool false _ x = x
+ hasSemanticIndentation? true
+  -- https://github.com/purescript/documentation/blob/master/language/Syntax.md
+  -- Syntax is whitespace sensitive. The general rule of thumb is that declarations which span multiple lines should be indented past the column on which they were first defined on their subsequent lines.
+  foo = bar +
+   baz
+
+githubLanguage PureScript
+ fileExtensions purs
+ trendingProjectsCount 0
+
+githubRepo https://github.com/purescript/purescript
+ firstCommit 2013
+ stars 5269
+ forks 391
+ subscribers 196
+ created 2013
+ updated 2018
+ description A strongly-typed language that compiles to Javascript
+ issues 226
+
+linguistGrammarRepo https://github.com/purescript-contrib/atom-language-purescript
+ firstCommit 2014
+ lastCommit 2018
+ committerCount 9
+ commitCount 90
+ sampleCount 4
+ example
+  module Control.Arrow where
+  
+  import Data.Tuple
+  
+  class Arrow a where
+    arr :: forall b c. (b -> c) -> a b c
+    first :: forall b c d. a b c -> a (Tuple b d) (Tuple c d)
+  
+  instance arrowFunction :: Arrow (->) where
+    arr f = f
+    first f (Tuple b d) = Tuple (f b) d
+  
+  second :: forall a b c d. (Category a, Arrow a) => a b c -> a (Tuple d b) (Tuple d c)
+  second f = arr swap >>> first f >>> arr swap
+  
+  swap :: forall a b. Tuple a b -> Tuple b a
+  swap (Tuple x y) = Tuple y x
+  
+  infixr 3 ***
+  infixr 3 &&&
+  
+  (***) :: forall a b b' c c'. (Category a, Arrow a) => a b c -> a b' c' -> a (Tuple b b') (Tuple c c')
+  (***) f g = first f >>> second g
+  
+  (&&&) :: forall a b b' c c'. (Category a, Arrow a) => a b c -> a b c' -> a b (Tuple c c')
+  (&&&) f g = arr (\b -> Tuple b b) >>> (f *** g)
+  
+  class ArrowZero a where
+    zeroArrow :: forall b c. a b c
+  
+  infixr 5 <+>
+  
+  class ArrowPlus a where
+    (<+>) :: forall b c. a b c -> a b c -> a b c
+
+website http://functorial.com/purescript
+status active
+
+tryItOnline purescript
+
+twitter purescript
+
+fileType text
+compilesTo javascript
+isOpenSource true
+
+projectEuler PureScript
+ memberCount
+  2022 4
+
+hackerNewsDiscussions
+ id|title|time|timestamp|by|comments|score
+ 6644685|Show HN: PureScript - a functional language which compiles to Javascript|2013-10-31 01:19:21 UTC|1383182361|paf31|0|2

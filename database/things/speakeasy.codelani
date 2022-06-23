@@ -1,4 +1,35 @@
+title Speakeasy computational environment
 appeared 2006
 type pl
+
+patterns
+ hasCentralPackageRepository? false
+
+wikipedia https://en.wikipedia.org/wiki/Speakeasy_(computational_environment)
+ example
+  $ In the following statement 
+  $ selector must be >= 1 and <= N
+  
+  GO TO label1, label2, ..., labelN : selector 
+  ...
+  label1:
+  ...
+  label2:
+  ...
+  ...
+  labelN:
+  ...
+ related mortran c solaris apl matlab linux fortran
+ summary Speakeasy is a numerical computing interactive environment also featuring an interpreted programming language. It was initially developed for internal use at the Physics Division of Argonne National Laboratory by the theoretical physicist Stanley Cohen. He eventually founded Speakeasy Computing Corporation to make the program available commercially. Speakeasy is a very long-lasting numerical package. In fact, the original version of the environment was built around a core dynamic data repository called "Named storage" developed in the early 1960s, while the most recent version has been released in 2006. Speakeasy was aimed to make the computational work of the physicists at the Argonne National Laboratory easier. It was initially conceived to work on mainframes (the only kind of computers at that time), and was subsequently ported to new platforms (minicomputers, personal computers) as they became available. The porting of the same code on different platforms was made easier by using Mortran metalanguage macros to face systems dependencies and compilers deficiencies and differences. Speakeasy is currently available on several platforms : PCs running Windows, macOS, Linux, departmental computers and workstations running several flavors of Linux, AIX or Solaris. Speakeasy was also among the first interactive numerical computing environments, having been implemented in such a way on a CDC 3600 system, and later on IBM TSO machines as one was in beta-testing at the Argonne National Laboratory at the time. Almost since the beginning (as the dynamic linking functionality was made available in the operating systems) Speakeasy features the capability of expanding its operational vocabulary using separated modules, dynamically linked to the core processor as they are needed. For that reason such modules  were called "linkules" (LINKable-modULES). They are functions with a generalized interface, which can be written in  FORTRAN or in C. The independence of each of the new modules from the others and from the main processor is of great help in improving the system, especially it was in the old days. This easy way of expanding the functionalities of the main processor was often exploited by the users to develop their own specialized packages. Besides the programs, functions and subroutines the user can write in the Speakeasy's own interpreted language, linkules add functionalities carried out with the typical performances of compiled programs. Among the packages developed by the users, one of the most important is "Modeleasy", originally developed as "FEDeasy" in the early 1970s at the research department of the Federal Reserve Board of Governors in Washington D.C.. Modeleasy implements special objects and functions for large econometric models estimation and simulation. Its evolution led eventually to its distribution as an independent product.
+ pageId 24641580
+ created 2009
+ backlinksCount 81
+ revisionCount 126
+ dailyPageViews 15
+ appeared 2006
+
 website http://speakeasy.com
-wikipedia Speakeasy_(computational_environment)
+status historical
+fileType text
+
+hopl 660

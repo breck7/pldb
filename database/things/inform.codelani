@@ -1,5 +1,126 @@
+title Inform
 appeared 1993
 type pl
 creators Graham Nelson
+
+patterns
+ hasCentralPackageRepository? false
+ hasSemanticIndentation? true
+
+wikipedia https://en.wikipedia.org/wiki/Inform
+ example
+  "Hello Deductible" by "I.F. Author"
+  
+  The story headline is "An Interactive Example".
+  
+  The Living Room is a room. "A comfortably furnished living room."
+  The Kitchen is north of the Living Room.
+  The Front Door is south of the Living Room.
+  The Front Door is a door. The Front Door is closed and locked.
+  
+  The insurance salesman is a man in the Living Room. The description is "An insurance salesman in a tacky polyester suit. He seems eager to speak to you." Understand "man" as the insurance salesman.
+  
+  A briefcase is carried by the insurance salesman. The description is "A slightly worn, black briefcase."  Understand "case" as the briefcase.
+  
+  The insurance paperwork is in the briefcase. The description is "Page after page of small legalese." Understand "papers" or "documents" or "forms" as the paperwork.
+  
+  Instead of listening to the insurance salesman: 
+  	say "The salesman bores you with a discussion of life  insurance policies.  From his briefcase he pulls some paperwork which he hands to you.";
+  	move the insurance paperwork to the player.
+ related linux z-machine basic tads isbn
+ summary Inform is a programming language and design system for interactive fiction originally created in 1993 by Graham Nelson. Inform can generate programs designed for the Z-code or Glulx virtual machines. Versions 1 through 5 were released between 1993 and 1996. Around 1996, Nelson rewrote Inform from first principles to create version 6 (or Inform 6). Over the following decade, version 6 became reasonably stable and a popular language for writing interactive fiction. In 2006, Nelson released Inform 7 (briefly known as Natural Inform), a completely new language based on principles of natural language and a new set of tools based around a book-publishing metaphor.
+ pageId 227989
+ dailyPageViews 73
+ created 2003
+ backlinksCount 129
+ revisionCount 426
+ appeared 1993
+
+githubLanguage Inform 7
+ fileExtensions ni i7x
+ trendingProjectsCount 0
+
+helloWorldCollection Inform
+ !  "Hello world" in Inform
+ [ Main;
+   print "Hello world^";
+ ];
+ 
+
+linguistGrammarRepo https://github.com/erkyrath/language-inform7
+ firstCommit 2016
+ lastCommit 2018
+ committerCount 2
+ commitCount 29
+ sampleCount 2
+ example
+  "Test Case" by Andrew Plotkin.
+  
+  Include Trivial Extension by Andrew Plotkin.
+  
+  Volume 1 - overview
+  
+  Chapter - setting the scene
+  
+  The Kitchen is a room.
+  
+  [Comment: this kitchen is modelled after the one in Zork, although it lacks the detail to establish this to the player.]
+  
+  Section - the kitchen table
+  
+  The spicerack is a container in the Kitchen.
+  
+  Table of Spices
+  Name Flavor
+  "cinnamon" 5
+  "nutmeg" 4
+  "szechuan pepper"  8
+  
+  The description of the spicerack is "It's mostly empty."
+  
+  Chapter - a character
+  
+  A purple cow called Gelett is in the Kitchen.
+  
+  [This comment spans multiple lines..
+  
+  ...and this line contains [nested square[] brackets]...
+  
+  ...which is legal in Inform 7.]
+  
+  Instead of examining Gelett:
+   say "You'd rather see than be one."
+  
+  Instead of examining Gelett:
+   say "You'd rather see than be one."
+  
+  Check smelling Gelett:
+   say "This text contains several lines.
+  
+  A blank line is displayed as a paragraph break,
+  but a simple line break is not.";
+   stop the action.
+  
+  Section - cow catching
+  
+  Gelett has a number called the mooness.
+  
+  Instead of taking Gelett:
+   increment the mooness of Gelett;
+   if the mooness of Gelett is one:
+     say "Gelett moos once.";
+   else:
+     say "Gelett moos [mooness of Gelett in words] times.";
+  
+  Volume 2 - the turn cycle
+  
+  Every turn:
+   say "A turn passes[one of][or] placidly[or] idly[or] tediously[at random]."
+  
+
 website http://inform7.com/
-wikipedia Inform
+status active
+fileType text
+wordRank 5526
+
+tiobe Inform

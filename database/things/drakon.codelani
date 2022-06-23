@@ -1,4 +1,23 @@
+title DRAKON
 appeared 1996
 type pl
+
+patterns
+ hasCentralPackageRepository? false
+
+wikipedia https://en.wikipedia.org/wiki/DRAKON
+ example
+  The word "наглядность" (pronounced approximately as "naa-glya-dno-st-th") refers to a quality of concept or idea being easy to imagine and understand, and may be translated as "clarity" as well.
+ related uml perl tcl linux c csharp d erlang go java javascript lua processing python verilog isbn
+ summary DRAKON is an algorithmic visual programming language developed within the Buran space project following ergonomic design principles. The language provides a uniform way to represent flowcharts of any complexity that are easy to read and understand. The DRAKON Editor, which was released in September 2011, is an implementation of the language available in the public domain. It can be used for creating documentation, or for creating visual programs that can be converted to source code in other languages. Unlike UML's philosophy, DRAKON language philosophy is based on being augmented if needed, by using a hybrid language, which can be illustrated as "incrustating code snippets from text language used into shape DRAKON requires". This way, DRAKON stays an all-way simple visual language per se, that can be used as an augmentation for a programmer, who is interested in making own project code easier for support or other long-term needs, i.e. improving ergonomics of coding process or to make code easy to review and understand. Name DRAKON is Russian acronym for "Дружелюбный Русский Алгоритмический [язык], Который Обеспечивает Наглядность", which translates"Friendly Russian algorithmic [language] that provides illustrativeness (or clarity)".  The word "наглядность" (pronounced approximately as "naa-glya-dno-st-th") refers to a quality of concept or idea being easy to imagine and understand, and may be translated as "clarity" as well.  It is to note, that DRAKON language can be used both as modelling\"markup" language (which is considered a standalone "pure DRAKON" program making) and as programming language (as part of a hybrid language). Integration of stricter, "academic" variant of a markup language into programming, which any DRAKON-(programming language used) provides, supposedly (as intended by initial philosophy of DRAKON development) adds syntactic sugar to such extent users of different text programming language can comprehend each other's input into the overall project and criticize it upon necessity.
+ pageId 9912359
+ dailyPageViews 130
+ created 2007
+ backlinksCount 71
+ revisionCount 208
+ appeared 1996
+
 website https://drakon-editor.com/
-wikipedia DRAKON
+status historical
+country RU
+fileType text

@@ -1,8 +1,61 @@
+title GOLD parser
 appeared 2012
 type grammarLanguage
-website http://goldparser.org/
-wikipedia GOLD_(parser)
+
 example
  <Statement> ::= if <Expression> then <Statements> end
              |  while <Expression> do <Statements> end
              |  for Id = <Range> do <Statements> end
+
+patterns
+ hasCentralPackageRepository? false
+
+wikipedia https://en.wikipedia.org/wiki/GOLD_(parser)
+ example
+  <Statements>  ::= <Statements> <Statement>
+                 |  <Statement>
+  
+  <Statement>   ::= display <Expression>
+                 |  display <Expression> read ID
+                 |  assign ID '=' <Expression>
+                 |  while <Expression> do <Statements> end
+                 |  if <Expression> then <Statements> end
+                 |  if <Expression> then <Statements> else <Statements> end
+                 
+  <Expression>  ::= <Expression> '>'  <Add Exp>
+                 |  <Expression> '<'  <Add Exp>
+                 |  <Expression> '<=' <Add Exp>
+                 |  <Expression> '>=' <Add Exp>
+                 |  <Expression> '==' <Add Exp>
+                 |  <Expression> '<>' <Add Exp>
+                 |  <Add Exp>
+  
+  <Add Exp>     ::= <Add Exp> '+' <Mult Exp>
+                 |  <Add Exp> '-' <Mult Exp>
+                 |  <Add Exp> '&' <Mult Exp>
+                 |  <Mult Exp>
+  
+  <Mult Exp>    ::= <Mult Exp> '*' <Negate Exp>
+                 |  <Mult Exp> '/' <Negate Exp>
+                 |  <Negate Exp>
+  
+  <Negate Exp>  ::= '-' <Value>
+                 |  <Value>
+  
+  <Value>       ::= Identifier
+                 |  StringLiteral
+                 |  NumberLiteral
+                 |  '(' <Expression> ')'
+ related antlr visual-basic assembly-language csharp d java pascal python visual-basic-dot-net regex
+ summary GOLD is a free parsing system that is designed to support multiple programming languages.
+ pageId 8544400
+ dailyPageViews 14
+ created 2006
+ backlinksCount 27
+ revisionCount 67
+ appeared 2012
+
+website http://goldparser.org/
+status historical
+fileType text
+wordRank 740

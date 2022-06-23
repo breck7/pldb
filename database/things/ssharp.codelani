@@ -1,6 +1,70 @@
+title Script.NET
 appeared 2007
 type pl
-website http://www.protsyk.com/scriptdotnet/
-github https://github.com/PetroProtsyk/SSharp
-wikipedia Script.NET
+
+patterns
+ hasCentralPackageRepository? false
+
 description S# is a weakly-typed dynamic language and runtime infrastructure to make your applications extendable, customizable and highly flexible.
+
+wikipedia https://en.wikipedia.org/wiki/Script.NET
+ example
+  function Push(item)
+  [
+  //Limit to 10 items
+   pre(me{{Not a typo|.}}Count < 10 ); 
+   post();
+   invariant();
+  ]
+  {
+   //me is mutated object, 
+   //stack in this case
+   me.Push(item);
+  }
+  
+  function Pop()
+  [//Check emptiness hardik
+   pre(me{{Not a typo|.}}Count > 0);
+   post();
+   invariant();
+  ]
+  {
+   return me.Pop();
+  }
+  
+  stack = new Stack<|int|>();
+  
+  //Create Mutant hardik
+  //1. Set Functions, override stack{{Not a typo|.}}Push
+  mObject=[Push->Push,PopCheck->Pop];
+  //2. Capture object
+  mObject.Mutate(stack);
+  
+  for (i=0; i<5; i++)
+    mObject.Push(i);
+  
+  Console.WriteLine((string)mObject.PopCheck());
+ related javascript vba boo jython nemerle
+ summary Script.NET or S# is a metaprogramming language that provides scripting functionality in Microsoft .NET applications, allowing runtime execution of custom functionality, similar to VBA in Microsoft Office applications. The syntax of Script.NET is similar to JavaScript. It is designed to be simple and efficient scripting language allowing to customize .NET applications. The language has a true runtime interpreter, and it is executed without generating additional in-memory assemblies. Script.NET is an open-source project.
+ pageId 13819923
+ created 2007
+ backlinksCount 11
+ revisionCount 63
+ dailyPageViews 23
+ appeared 2007
+
+githubRepo https://github.com/PetroProtsyk/SSharp
+ firstCommit 2010
+ stars 72
+ forks 29
+ subscribers 14
+ created 2010
+ updated 2018
+ description S# is a weakly-typed dynamic language and runtime infrastructure to make your applications extendable, customizable and highly flexible. It allows introducing expressions and large code blocks evaluation within your applications in the similar way Microsoft Office deals with VBScript, gives you possibilities providing rich formula evaluation capabilities like it can be seen in MS Excel and other office applications.
+ issues 16
+
+website http://www.protsyk.com/scriptdotnet/
+aka Script.NET
+status active
+fileType text
+isOpenSource true

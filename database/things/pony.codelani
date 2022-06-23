@@ -1,8 +1,45 @@
+title Pony
 appeared 2012
 type pl
-website https://www.ponylang.org/
-github https://github.com/ponylang/
+
 example
  actor Main
   new create(env: Env) =>
     env.out.print("Hello, world!")
+
+patterns
+ hasCentralPackageRepository? false
+
+githubLanguage Pony
+ fileExtensions pony
+ trendingProjectsCount 0
+
+githubRepo https://github.com/ponylang/
+
+linguistGrammarRepo https://github.com/CausalityLtd/sublime-pony
+ firstCommit 2014
+ lastCommit 2018
+ committerCount 10
+ commitCount 32
+ sampleCount 6
+ example
+  actor Main
+    new create(env: Env) =>
+      env.out.print("Hello, world.")
+  
+
+website https://www.ponylang.org/
+status active
+
+tryItOnline pony
+
+twitter ponylang
+
+fileType text
+isOpenSource true
+
+subreddit ponylang
+ memberCount
+  2017 375
+
+rosettaCode Pony

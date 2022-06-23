@@ -1,4 +1,30 @@
+title MiniZinc
 appeared 2012
 type pl
+
+patterns
+ hasCentralPackageRepository? false
+
+githubRepo https://github.com/MiniZinc/libminizinc
+ firstCommit 2012
+ stars 201
+ forks 29
+ subscribers 36
+ created 2015
+ updated 2018
+ description The MiniZinc compiler
+ issues 36
+
 website http://www.minizinc.org/
-github https://github.com/MiniZinc/libminizinc
+status active
+
+twitter minizinc
+
+fileType text
+isOpenSource true
+
+quineRelay MiniZinc
+
+ubuntuPackage minizinc
+
+rosettaCode MiniZinc

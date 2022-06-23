@@ -1,3 +1,25 @@
+title Autocode
 appeared 1954
 type pl
-wikipedia Autocode
+
+patterns
+ hasCentralPackageRepository? false
+
+wikipedia https://en.wikipedia.org/wiki/Autocode
+ example
+  1     n1 = 1         
+       vn1 = I         reads input into v[n[1]]
+        n1 = n1 + 1
+     j1,11 ≥ n1        jumps to 1 if n[1] ≤ 11
+ related autocoder cobol fortran dartmouth-basic algol atlas-autocode cpl bcpl b c
+ summary Autocode is the name of a family of "simplified coding systems", later called programming languages, devised in the 1950s and 1960s for a series of  digital computers at the Universities of Manchester, Cambridge and London. Autocode was a generic term; the autocodes for different machines were not necessarily closely related as are, for example, the different versions of the single language FORTRAN. Today the term is used to refer to the family of early languages descended from the Manchester Mark 1 autocoder systems, which were generally similar. In the 1960s, the term autocoders was used more generically as to refer to any high-level programming language using a compiler.  Examples of languages referred to as autocodes are COBOL and Fortran.
+ created 2005
+ backlinksCount 52
+ pageId 1619142
+ revisionCount 122
+ dailyPageViews 47
+ appeared 1950
+
+status historical
+
+hopl 5

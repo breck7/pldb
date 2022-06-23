@@ -1,4 +1,82 @@
+title GAP
 appeared 1986
 type pl
+
+patterns
+ hasCentralPackageRepository? false
+ hasComments? true
+
+wikipedia https://en.wikipedia.org/wiki/GAP_(programming_language)
+ example
+  gap> G:=SmallGroup(8,1); # Set G to be a group of order 8.
+  <pc group of size 8 with 3 generators>
+  gap> i:=IsomorphismPermGroup(G); # Find an isomorphism from G to a group of permutations
+  <action isomorphism>
+  gap> Image(i,G); # The image of G under I - these are the generators of im G.
+  Group([ (1,5,3,7,2,6,4,8), (1,3,2,4)(5,7,6,8), (1,2)(3,4)(5,6)(7,8) ])
+  gap> Elements(Image(i,G)); # All the elements of im G.
+  [ (), (1,2)(3,4)(5,6)(7,8), (1,3,2,4)(5,7,6,8), (1,4,2,3)(5,8,6,7), 
+     (1,5,3,7,2,6,4,8), (1,6,3,8,2,5,4,7), (1,7,4,5,2,8,3,6), (1,8,4,6,2,7,3,5) ]
+ related c unix sagemath
+ summary GAP (Groups, Algorithms and Programming) is a computer algebra system for computational discrete algebra with particular emphasis on computational group theory.
+ pageId 262144
+ created 2016
+ backlinksCount 66
+ revisionCount 1
+ dailyPageViews 1
+ appeared 1986
+
+githubLanguage GAP
+ fileExtensions g gap gd gi tst
+ trendingProjectsCount 0
+
+linguistGrammarRepo https://github.com/dhowden/gap-tmbundle
+ firstCommit 2010
+ lastCommit 2018
+ committerCount 3
+ commitCount 10
+ sampleCount 9
+ example
+  gap> START_TEST("Test of factor groups and natural homomorphisms");
+  
+  gap> G:=HeisenbergPcpGroup(2);
+  Pcp-group with orders [ 0, 0, 0, 0, 0 ]
+  
+  gap> H:=Subgroup(G,[G.2,G.3,G.4,G.5]);
+  gap> K:=G/H;
+  gap> NaturalHomomorphism(K);
+  
+  gap> A:=Subgroup(H, [G.3]);
+  Pcp-group with orders [ 0 ]
+  gap> B:=Subgroup(Subgroup(G,[G.1,G.4,G.5]), [G.4]);
+  Pcp-group with orders [ 0 ]
+  gap> Normalizer(A,B);
+  Pcp-group with orders [ 0 ]
+  gap> # The following used to trigger the error "arguments must have a common parent group"
+  gap> Normalizer(B,A);
+  Pcp-group with orders [ 0 ]
+  
+  
+  gap> STOP_TEST( "factor.tst", 10000000);
+  
+
 website http://www.gap-system.org/
-wikipedia GAP_(programming_language)
+standsFor Groups, Algorithms and Programming
+status active
+
+tryItOnline gap
+
+twitter gap_system
+
+country DE
+fileType text
+wordRank 4114
+isOpenSource true
+
+projectEuler GAP
+ memberCount
+  2022 33
+
+hopl 2668
+
+rosettaCode GAP

@@ -1,3 +1,52 @@
+title BlooP
 appeared 1979
 type esolang
-wikipedia BlooP_and_FlooP
+
+patterns
+ hasCentralPackageRepository? false
+
+wikipedia https://en.wikipedia.org/wiki/BlooP_and_FlooP
+ example
+  DEFINE PROCEDURE ''ACKERMANN'' [M, N]:
+  BLOCK 0: BEGIN
+  	CELL(0) ⇐ M;
+  	OUTPUT ⇐ N;
+  	CELL(1) ⇐ 0;
+  	MU-LOOP:
+  	BLOCK 1: BEGIN
+  		IF CELL(0) = 0, THEN:
+  		BLOCK 2: BEGIN
+  			OUTPUT ⇐ OUTPUT + 1;
+  			IF CELL(1) = 0, THEN: ABORT LOOP 1;
+  			CELL(0) ⇐ TOP [CELL(1)];
+  			CELL(1) ⇐ POP [CELL(1)];
+  			QUIT BLOCK 1;
+  		BLOCK 2: END
+  		IF OUTPUT = 0, THEN:
+  		BLOCK 3: BEGIN
+  			OUTPUT ⇐ 1;
+  			CELL(0) ⇐ MINUS [CELL(0), 1];
+  			QUIT BLOCK 1;
+  		BLOCK 3: END 
+  		OUTPUT ⇐ MINUS [OUTPUT, 1];
+  		CELL(1) ⇐ PUSH [MINUS [CELL(0), 1], CELL(1)];
+  	BLOCK 1: END;
+  BLOCK 0: END.
+ summary BlooP and FlooP are simple programming languages designed by Douglas Hofstadter to illustrate a point in his book Gödel, Escher, Bach. BlooP is a non-Turing-complete programming language whose main control flow structure is a bounded loop (i.e. recursion is not permitted). All programs in the language must terminate, and this language can only express primitive recursive functions. FlooP is identical to BlooP except that it supports unbounded loops; it is a Turing-complete language and can express all computable functions. For example, it can express the Ackermann function, which (not being primitive recursive) cannot be written in BlooP. Borrowing from standard terminology in mathematical logic, Hofstadter calls FlooP's unbounded loops MU-loops. Like all Turing-complete programming languages, FlooP suffers from the halting problem: programs might not terminate, and it is not possible, in general, to decide which programs do. BlooP and FlooP can be regarded as models of computation, and have sometimes been used in teaching computability.
+ pageId 436718
+ dailyPageViews 33
+ created 2004
+ backlinksCount 41
+ revisionCount 99
+ appeared 1979
+
+status historical
+
+replit bloop
+
+country US
+fileType text
+
+hopl 844
+
+rosettaCode BlooP

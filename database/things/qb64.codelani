@@ -1,3 +1,42 @@
+title QB64
 appeared 2007
 type pl
-wikipedia QB64
+
+patterns
+ hasCentralPackageRepository? false
+
+wikipedia https://en.wikipedia.org/wiki/QB64
+ example
+  t1 = _FREETIMER
+  t2 = _FREETIMER
+  ON TIMER(t1, 1) GOSUB Timer.Trap 'the code following the Timer.Trap label will be run every 1 second
+  
+  ON TIMER(t2, .5) mySub 'QB64 can also trigger a SUB procedure with TIMER;
+  '                       in this case mySUB will be triggered every 500 milliseconds
+  
+  'activate timers:
+  TIMER(t1) ON
+  TIMER(t2) ON
+  
+  DO 'go into an infinite loop until the window is closed
+      _LIMIT 1 'run the main loop at 1 cycle per second, to show how timers are independent from main program flow
+  LOOP
+  
+  Timer.Trap:
+  PRINT "1s; ";
+  RETURN
+  
+  SUB mySub
+      PRINT "500ms; ";
+  END SUB
+ related linux quickbasic basic qbasic
+ summary QB64 (originally QB32) is a self-hosting BASIC compiler for Microsoft Windows, Linux and Mac OS X, designed to be compatible with Microsoft QBasic and QuickBASIC. QB64 is a C++ emitter, which is integrated with a C++ compiler to provide compilation via C++ code and GCC optimization.QB64 implements most QBasic statements, and can run many QBasic programs, including Microsoft's QBasic Gorillas and Nibbles games. Furthermore, QB64 has been designed to contain an IDE resembling the QBASIC IDE. QB64 also extends the QBASIC programming language to include 64-bit data types, as well as better sound and graphics support. It can also emulate some DOS/x86 specific features such as INT 33h mouse access, and multiple timers.
+ created 2008
+ backlinksCount 102
+ pageId 18410776
+ revisionCount 233
+ dailyPageViews 90
+ appeared 2007
+
+status historical
+isOpenSource true

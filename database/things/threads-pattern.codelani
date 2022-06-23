@@ -1,3 +1,9 @@
+title Threads
 type pattern
-wikipedia Thread_(computing)
+psuedoExample thread1(); thread2();
 description A thread of execution.
+
+wikipedia https://en.wikipedia.org/wiki/Thread_(computing)
+
+status active
+patternKeyword hasThreads?

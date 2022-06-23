@@ -1,3 +1,31 @@
+title Parrot BASIC
 appeared 2009
 type pl
-wikipedia Parrot_BASIC
+
+patterns
+ hasCentralPackageRepository? false
+
+wikipedia https://en.wikipedia.org/wiki/Parrot_BASIC
+ example
+  .sub 'main' :main
+      $I1 = 4
+      inc $I1     # $I1 is now 5
+      $I1 += 2    # $I1 is now 7
+      $N1 = 42.0
+      dec $N1     # $N1 is now 41.0
+      $N1 -= 2.0  # $N1 now 39.0
+      print $I1
+      print ', '
+      print $N1
+      print "\n"
+   .end
+ related c parrot-assembly parrot-internal-representation perl perl-6 python jvm llvmir java java-bytecode joy lua php ruby scheme tcl wmlscript arc apl common-lisp lisp ecmascript forth quickbasic smalltalk cil befunge brainfuck lolcode unlambda unicode
+ summary Parrot is a register-based process virtual machine designed to run dynamic languages efficiently. It is possible to compile Parrot assembly language and PIR (an intermediate language) to Parrot bytecode and execute it. Parrot is free and open source software.Parrot was started by the Perl community and is developed with help from the open source and free software communities. As a result, it is focused on license compatibility with Perl (Artistic License 2.0), platform compatibility across a broad array of systems, processor architecture compatibility across most modern processors, speed of execution, small size (around 700k depending on platform), and the flexibility to handle the varying demands made by Perl 6 and other modern dynamic languages. Version 1.0, with a stable API for development, was released on March 17, 2009.The current version is release 8.1.0 "Andean Parakeet"
+ created 2010
+ backlinksCount 174
+ pageId 60511
+ revisionCount 1
+ dailyPageViews 1
+ appeared 2016
+
+status historical

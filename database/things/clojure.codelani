@@ -1,6 +1,126 @@
+title Clojure
 appeared 2007
 type pl
 creators Rich Hickey
+
+patterns
+ isLisp? true
+ hasPartialApplication? true
+  (defn fun-full [x y] (+ x y))
+  (fun-full 2 3)
+  (def fun-half (partial fun-full 2))
+  (fun-half 3)
+ hasCentralPackageRepository? true
+ hasComments? true
+ hasImports? true
+  (load "fun")
+  (load "files/fun")
+  (load-file "./files/fun.clj")
+  (defproject project-a
+  :dependencies [[org.clojure/clojure "1.5.1"]
+                [project-b "0.1.0"]])
+  (require '[clojure.string :as string])
+  (use '[clojure.string :only [split]])
+  (import 'java.util.Date)
+  (java.util.Date.)
+  (require 'clojure.contrib.def 'clojure.contrib.except 'clojure.contrib.sql)
+  (require '(clojure.contrib def except sql))
+ hasMacros? true
+  https://clojure.org/reference/macros
+ hasOperatorOverloading? true
+
+wikipedia https://en.wikipedia.org/wiki/Clojure
+ example
+  ([382 318 466 963 619 22 21 273 45 596] [808 639 804 471 394 904 952 75 289 778] ...
+  [484 216 622 139 651 592 379 228 242 355])
+  Distinct: 1000
+ related jvm csharp common-lisp erlang haskell mathematica ml prolog scheme java racket ruby elixir lisp maven-pom s-expressions csp actionscript python unicode
+ summary Clojure ( , like "closure") is a dialect of the Lisp programming language. Clojure is a general-purpose programming language with an emphasis on functional programming. It runs on the Java virtual machine and the Common Language Runtime. Like other Lisps, Clojure treats code as data and has a macro system. The current development process is community-driven, overseen by Rich Hickey as its benevolent dictator for life (BDFL). Clojure encourages immutability and immutable data structures. While its type system is entirely dynamic, recent efforts have also sought the implementation of gradual typing. Clojure encourages programmers to be explicit about managing state and identity. This focus on programming with immutable values and explicit progression-of-time constructs is intended to facilitate developing more robust programs, especially multithreaded ones. Clojure is used in industry by firms such as Funding Circle, Walmart, Puppet, and other large software firms. Commercial support for Clojure is provided by Cognitect. Annual Clojure conferences are organised every year across the globe, the most famous of them being Clojure/conj (US east coast), Clojure/West (US west coast), and EuroClojure (Europe). The latest stable version of Clojure is 1.8, released on January 19, 2016. The first stable release was version 1.0, released on May 4, 2009. Clojure is free software released under the Eclipse Public License.
+ pageId 16561990
+ dailyPageViews 610
+ created 2008
+ backlinksCount 363
+ revisionCount 594
+ appeared 2007
+ fileExtensions clj cljs cljc edn
+
+githubLanguage Clojure
+ fileExtensions clj boot cl2 cljc cljs cljshl cljscm cljx hic
+ trendingProjects
+  author name avatar url language languageColor stars forks currentPeriodStars description
+  tonsky FiraCode https://github.com/tonsky.png https://github.com/tonsky/FiraCode Clojure #db5855 38337 1263 1065 "Monospaced font with programming ligatures"
+  status-im status-react https://github.com/status-im.png https://github.com/status-im/status-react Clojure #db5855 2759 701 44 "a free (libre) open source, mobile OS for Ethereum"
+  functional-koans clojure-koans https://github.com/functional-koans.png https://github.com/functional-koans/clojure-koans Clojure #db5855 3168 1833 22 "A set of exercises for learning Clojure"
+  Day8 re-frame https://github.com/Day8.png https://github.com/Day8/re-frame Clojure #db5855 3897 515 61 "A Reagent Framework For Writing SPAs, in Clojurescript."
+  metabase metabase https://github.com/metabase.png https://github.com/metabase/metabase Clojure #db5855 16675 2211 484 "The simplest, fastest way to get business intelligence and analytics to everyone in your company 😋"
+  ring-clojure ring https://github.com/ring-clojure.png https://github.com/ring-clojure/ring Clojure #db5855 2869 437 31 "Clojure HTTP server abstraction"
+  LightTable LightTable https://github.com/LightTable.png https://github.com/LightTable/LightTable Clojure #db5855 10751 913 65 "The Light Table IDE ⛺"
+  reagent-project reagent https://github.com/reagent-project.png https://github.com/reagent-project/reagent Clojure #db5855 3544 294 48 "A minimalistic ClojureScript interface to React.js"
+ trendingProjectsCount 9
+
+helloWorldCollection Clojure
+ ; Hello world in Clojure
+ 
+ (defn hello []
+   (println "Hello world!"))
+ 
+ (hello)
+
+linguistGrammarRepo https://github.com/atom/language-clojure
+ firstCommit 2013
+ lastCommit 2018
+ committerCount 36
+ commitCount 149
+ sampleCount 9
+ example
+  (defn rand
+    "Returns a random floating point number between 0 (inclusive) and
+    n (default 1) (exclusive)."
+    ([] (scm* [n] (random-real)))
+    ([n] (* (rand) n)))
+
 website https://clojure.org
-wikipedia Clojure
 reference https://download.clojure.org/papers/clojure-hopl-iv-final.pdf
+status active
+
+replit clojure
+
+tryItOnline clojure
+
+fileExtensions clj cljs cljc edn
+fileType text
+runsOnVm jvm
+isOpenSource true
+
+tiobe Clojure
+ currentRank 42
+
+meetup clojure
+ memberCount 163418
+ groupCount 378
+
+linkedInSkill clojure
+ peopleWithThisSkillCount 11354
+
+projectEuler Clojure
+ memberCount
+  2019 1572
+  2022 1655
+
+subreddit Clojure
+ memberCount
+  2017 12947
+
+quineRelay Clojure
+
+ubuntuPackage clojure
+
+codeMirror clojure
+
+rosettaCode Clojure
+
+antlr https://github.com/antlr/grammars-v4/tree/master/clojure
+
+cheatSheetUrl http://web.csulb.edu/~artg/524/clojure-cheat-sheet-a4-grey.pdf
+indeedJobs clojure engineer
+ 2017 355

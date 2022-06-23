@@ -1,3 +1,21 @@
+title Shapefile
 appeared 1995
 type binaryDataFormat
-wikipedia Shapefile
+
+patterns
+ hasCentralPackageRepository? false
+
+wikipedia https://en.wikipedia.org/wiki/Shapefile
+ related dbase autocad-app xbase unicode
+ summary The shapefile format is a popular geospatial vector data format for geographic information system (GIS) software. It is developed and regulated by Esri as a (mostly) open specification for data interoperability among Esri and other GIS software products. The shapefile format can spatially describe vector features: points, lines, and polygons, representing, for example, water wells, rivers, and lakes. Each item usually has attributes that describe it, such as name or temperature.
+ pageId 2770513
+ dailyPageViews 487
+ created 2005
+ backlinksCount 385
+ revisionCount 416
+ appeared 1990
+
+status active
+fileExtensions shp shx dbf
+fileType binary
+corporateDevelopers Esri

@@ -1,0 +1,81 @@
+.codeLaniHeader {
+  padding: 8px;
+  padding-left: 20px;
+  margin-bottom: 10px;
+}
+.codeLaniHeader a {
+  color: black;
+  margin-right: 5px;
+  font-size: 16px;
+}
+.languageSection {
+  border: 1px solid black;
+  padding: 5px;
+  break-inside: avoid;
+}
+a {
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
+}
+.codeLaniHeader a:hover,
+.codeLaniFooter a:hover {
+  color: black;
+}
+.scrollPage {
+  margin: 0;
+}
+.codeLaniFooter {
+  margin-top: 18px;
+  padding: 8px;
+  padding-left: 20px;
+  color: #828282;
+}
+.codeLaniFooter a {
+  color: #828282;
+}
+#search {
+  border: 0;
+  background: transparent;
+  font-size: 16px;
+  line-height: 1.5;
+}
+.scrollSingleArticleTitle {
+  font-size: 36px;
+}
+
+.kpiTable {
+  width: 100%;
+  font-size: 30px;
+  text-align: center;
+  font-weight: bold;
+  break-inside: avoid;
+  margin-top: 8px;
+  margin-bottom: 8px;
+}
+.kpiTable td {
+  width: 33.3%;
+  border: 1px solid #e8e8e8;
+}
+.kpiTable span {
+  font-size: 20px;
+  display: block;
+}
+.scrollTableComponent {
+  table-layout: auto;
+}
+.scrollCodeBlockComponent {
+  border: 1px solid rgba(204, 204, 204, 0.8);
+  border-radius: 3px;
+  max-height: 50ch;
+}
+.dataTable th {
+  cursor: pointer;
+}
+.dataTables_filter {
+  float: right;
+  text-align: right;
+  margin-top: 8px;
+  margin-bottom: 8px;
+}

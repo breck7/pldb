@@ -1,4 +1,20 @@
+title ABSYS
 appeared 1966
 type pl
-wikipedia Absys
+
+patterns
+ hasCentralPackageRepository? false
+
+wikipedia https://en.wikipedia.org/wiki/Absys
+ related prolog abset
+ summary Absys was an early declarative programming language from the University of Aberdeen.  It anticipated a number of features of Prolog such as negation as failure, aggregation operators, the  central role of backtracking and constraint solving.  Absys was the first implementation of a logic programming language.The name Absys was chosen as an abbreviation for Aberdeen System.
+ backlinksCount 4
+ pageId 114299
+ dailyPageViews 6
+ created 2002
+ appeared 1967
+
 reference https://semanticscholar.org/paper/3ee349b69c1fb7404770d4ea7bc17d21046e934d
+status historical
+
+hopl 357

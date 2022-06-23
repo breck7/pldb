@@ -1,3 +1,14 @@
+title Switch Statements
 appeared 1952
 type pattern
-wikipedia Switch_statement
+psuedoExample switch animal: case dog-buy; case cat-sell;
+
+wikipedia https://en.wikipedia.org/wiki/Switch_statement
+ summary In computer programming languages, a switch statement is a type of selection control mechanism used to allow the value of a variable or expression to change the control flow of program execution via search and map. Switch statements function somewhat similarly to the if statement used in programming languages like C/C++, C#, Visual Basic .NET, Java and exists in most high-level imperative programming languages such as Pascal, Ada, C/C++, C#, Visual Basic .NET, Java, and in many other types of language, using such keywords as switch, case, select or inspect. Switch statements come in two main variants: a structured switch, as in Pascal, which takes exactly one branch, and an unstructured switch, as in C, which functions as a type of goto. The main reasons for using a switch include improving clarity, by reducing otherwise repetitive coding, and (if the heuristics permit) also offering the potential for faster execution through easier compiler optimization in many cases.
+ backlinksCount 161
+ pageId 1831479
+ dailyPageViews 397
+ appeared 1952
+
+status active
+patternKeyword hasSwitch?

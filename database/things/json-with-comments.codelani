@@ -1,5 +1,7 @@
+title JSON with Comments
 appeared 2001
 type metaLanguage
+
 example
  /*
   * JSLint's implementation of JSHint
@@ -10,4 +12,26 @@ example
  {
    "foobar" : true,       // Not checked in JSHint
  }
+
+patterns
+ hasCentralPackageRepository? false
+
+githubLanguage JSON with Comments
+ fileExtensions sublime-build sublime-commands sublime-completions sublime-keymap sublime-macro sublime-menu sublime-mousemap sublime-project sublime-settings sublime-theme sublime-workspace sublime_metrics sublime_session
+
+linguistGrammarRepo https://github.com/atom/language-javascript
+ firstCommit 2013
+ lastCommit 2018
+ committerCount 103
+ commitCount 1133
+ sampleCount 12
+ example
+  [
+  	{
+  		"command": "haxe_run_build"
+  	}
+  ]
+
 reference https://plus.google.com/118095276221607585885/posts/RK8qyGVaGSr
+status active
+fileType text

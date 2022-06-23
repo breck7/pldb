@@ -1,3 +1,49 @@
+title IP Pascal
 appeared 1990
 type pl
-wikipedia IP_Pascal
+
+patterns
+ hasCentralPackageRepository? false
+
+wikipedia https://en.wikipedia.org/wiki/IP_Pascal
+ example
+  program hello(input, output);
+   uses gralib;
+   var er: evtrec;
+   begin
+      bcolor(output, green);
+      curvis(output, false);
+      auto(output, false);
+      page(output);
+      fcolor(output, red);
+      frect(output, 50, 50, maxxg(output)-50, maxyg(output)-50);
+      fcolorg(output, maxint, maxint-(maxint div 3), maxint-maxint div 3);
+      frect(output, 50, 50, 53, maxyg(output)-50);
+      frect(output, 50, 50, maxxg(output)-50, 53);
+      fcolorg(output, maxint div 2, 0, 0);
+      frect(output, 52, maxyg(output)-53, maxxg(output)-50, maxyg(output)-50);
+      frect(output, maxxg(output)-53, 52, maxxg(output)-50, maxyg(output)-50);
+      font(output, font_sign);
+      fontsiz(output, 100);
+      binvis(output);
+      fcolor(output, cyan);
+      cursorg(output, maxxg(output) div 2-strsiz(output, 'hello, world') div 2+3,
+                      maxyg(output) div 2-100 div 2+3);
+      writeln('hello, world');
+      fcolor(output, blue);
+      cursorg(output, maxxg(output) div 2-strsiz(output, 'hello, world') div 2,
+                      maxyg(output) div 2-100 div 2);
+      writeln('hello, world');
+      repeat event(input, er) until er.etype = etterm
+    end.
+ related pascal csharp unicode utf-8 java ucsd-pascal visual-basic turbo-pascal linux isbn
+ summary IP Pascal is an implementation of the Pascal programming language using the IP portability platform, a multiple machine, operating system and language implementation system.
+ backlinksCount 133
+ pageId 2096603
+ dailyPageViews 18
+ created 2005
+ appeared 1971
+
+status historical
+
+hopl 6942

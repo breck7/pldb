@@ -1,4 +1,100 @@
+title OpenCL
 appeared 2009
 type pl
+
+patterns
+ hasCentralPackageRepository? false
+
+wikipedia https://en.wikipedia.org/wiki/OpenCL
+ example
+  // This kernel computes FFT of length 1024. The 1024 length FFT is decomposed into
+    // calls to a radix 16 function, another radix 16 function and then a radix 4 function
+  
+    __kernel void fft1D_1024 (__global float2 *in, __global float2 *out,
+                            __local float *sMemx, __local float *sMemy) {
+      int tid = get_local_id(0);
+      int blockIdx = get_group_id(0) * 1024 + tid;
+      float2 data[16];
+  
+      // starting index of data to/from global memory
+      in = in + blockIdx;  out = out + blockIdx;
+  
+      globalLoads(data, in, 64); // coalesced global reads
+      fftRadix16Pass(data);      // in-place radix-16 pass
+      twiddleFactorMul(data, tid, 1024, 0);
+  
+      // local shuffle using local memory
+      localShuffle(data, sMemx, sMemy, tid, (((tid & 15) * 65) + (tid >> 4)));
+      fftRadix16Pass(data);               // in-place radix-16 pass
+      twiddleFactorMul(data, tid, 64, 4); // twiddle factor multiplication
+  
+      localShuffle(data, sMemx, sMemy, tid, (((tid >> 4) * 64) + (tid & 15)));
+  
+      // four radix-4 function calls
+      fftRadix4Pass(data);      // radix-4 function number 1
+      fftRadix4Pass(data + 4);  // radix-4 function number 2
+      fftRadix4Pass(data + 8);  // radix-4 function number 3
+      fftRadix4Pass(data + 12); // radix-4 function number 4
+  
+      // coalesced global writes
+      globalStores(data, out, 64);
+    }
+ related opengl android freebsd linux ia-32 cuda c python java llvmir mathematica javascript arm x86-isa ptx metal sequencel
+ summary Open Computing Language (OpenCL) is a framework for writing programs that execute across heterogeneous platforms consisting of central processing units (CPUs), graphics processing units (GPUs), digital signal processors (DSPs), field-programmable gate arrays (FPGAs) and other processors or hardware accelerators. OpenCL specifies programming languages (based on C99 and C++11) for programming these devices and application programming interfaces (APIs) to control the platform and execute programs on the compute devices. OpenCL provides a standard interface for parallel computing using task- and data-based parallelism. OpenCL is an open standard maintained by the non-profit technology consortium Khronos Group. Conformant implementations are available from Altera, AMD, Apple, ARM, Creative, IBM, Imagination, Intel, Nvidia, Qualcomm, Samsung, Vivante, Xilinx, and ZiiLABS.
+ pageId 17861917
+ dailyPageViews 702
+ created 2008
+ backlinksCount 586
+ revisionCount 1164
+ appeared 2009
+
+githubLanguage OpenCL
+ fileExtensions cl opencl
+ trendingProjectsCount 0
+
+linguistGrammarRepo https://github.com/textmate/c.tmbundle
+ firstCommit 2005
+ lastCommit 2018
+ committerCount 23
+ commitCount 359
+ sampleCount 2
+ example
+  /* Old-style comment. */
+  
+  // New-style comment.
+  
+  typedef float foo_t;
+  
+  #ifndef ZERO
+  #define ZERO (0.0)
+  #endif
+  
+  #define FOO(x) ((x) + \
+    ZERO)
+  
+  __kernel
+  void foo(__global const foo_t * x, __local foo_t y, const uint n)
+  {
+    barrier(CLK_LOCAL_MEM_FENCE);
+  
+    if (n > 42) {
+      *x += y;
+    }
+  }
+  
+  
+
 website https://www.khronos.org/opencl
-wikipedia OpenCL
+status active
+fileType text
+isOpenSource true
+
+tiobe OpenCL
+
+meetup opencl
+ memberCount 4546
+ groupCount 37
+
+corporateDevelopers Khronos Group
+indeedJobs opencl engineer
+ 2017 266

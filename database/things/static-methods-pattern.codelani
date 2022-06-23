@@ -1,3 +1,7 @@
+title Static Methods
 type pattern
-reference https://www.geeksforgeeks.org/static-methods-vs-instance-methods-java/
+psuedoExample static bark() {}
 description Methods on a class in object oriented langauges that are not called on an instance.
+reference https://www.geeksforgeeks.org/static-methods-vs-instance-methods-java/
+status active
+patternKeyword hasStaticMethods?

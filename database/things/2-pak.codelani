@@ -1,5 +1,7 @@
+title 2-pak
 appeared 1975
 type pl
+
 example
  coroutine FRUIT_GEN()
   begin
@@ -21,4 +23,11 @@ example
   detach ;
   end ;
   end ;
+
+patterns
+ hasCentralPackageRepository? false
+
 reference https://www.ijcai.org/Proceedings/75/Papers/082.pdf
+status historical
+
+hopl 663

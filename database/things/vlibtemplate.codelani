@@ -1,3 +1,27 @@
+title VlibTemplate
 appeared 2003
 type template
-wikipedia VlibTemplate
+
+patterns
+ hasCentralPackageRepository? false
+
+wikipedia https://en.wikipedia.org/wiki/VlibTemplate
+ example
+  require_once 'vlib/vlibTemplate.php';
+  
+  $tmpl = new vlibTemplate('tmpl/basic.htm');
+  
+  $tmpl->setvar('title_text', 'TITLE: This is the vLIB basic example ...');
+  $tmpl->setvar('body_text', 'BODY: This is the message set using setvar()');
+  $tmpl->setvar('div_cont' , 'DIV : This is div paragraph');
+  $tmpl->pparse();
+ related php html mysql postgresql
+ summary vlibTemplate is a template engine written in PHP. Programmers and web developers may use it for web development. vlibTemplate is a PHP class that is intended to make splitting PHP from HTML a simple and natural task, using markup tags. This class allows users to set values for variables, loops, if statements, etc. which are declared in the template. vlibTemplate is a part of vLIB. It has an interface to vlibDate and vlibMimeMail.
+ backlinksCount 2
+ pageId 3183049
+ created 2005
+ revisionCount 31
+ dailyPageViews 3
+
+status historical
+fileType text

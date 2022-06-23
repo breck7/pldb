@@ -1,7 +1,11 @@
+title ros-msg
 appeared 2010
 type idl
+
 example
  int32 x
  int32 y
-reference http://wiki.ros.org/msg
+
 description The format of this language is simple: a message description is a list of data field descriptions and constant definitions on separate lines.
+reference http://wiki.ros.org/msg
+fileExtensions msg

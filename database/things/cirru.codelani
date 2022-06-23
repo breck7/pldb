@@ -1,11 +1,41 @@
+title Cirru
 appeared 2012
 type pl
 creators ChenYong
-website http://text.cirru.org/
+
 example
  set a
   add
     number 1
     number 2
-reference https://github.com/Cirru/cirru-parser/wiki/About-Cirru
+
+patterns
+ hasCentralPackageRepository? false
+ hasSemanticIndentation? true
+  print
+    + 1 2
+    , 11
+
 description Cirru Project helps people code in syntax tree. It offers a tree editor and a text syntax.
+
+githubLanguage Cirru
+ fileExtensions cirru
+ trendingProjectsCount 0
+
+linguistGrammarRepo https://github.com/Cirru/sublime-cirru
+ firstCommit 2012
+ lastCommit 2015
+ committerCount 3
+ commitCount 31
+ sampleCount 9
+ example
+  
+  require ./stdio.cr
+
+website http://text.cirru.org/
+reference https://github.com/Cirru/cirru-parser/wiki/About-Cirru
+status active
+
+twitter cirrulang
+
+fileType text

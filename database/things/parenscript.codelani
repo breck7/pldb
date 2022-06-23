@@ -1,5 +1,25 @@
+title parenscript
 appeared 2009
 type pl
 creators Manuel Odendahl and Edward Marco Baringer
+
+patterns
+ isLisp? yes
+ hasCentralPackageRepository? false
+
+githubRepo https://github.com/vsedach/Parenscript
+ stars 208
+ forks 35
+ subscribers 25
+ created 2013
+ updated 2017
+ firstCommit 2005
+ description Parenscript Github mirror
+ issues 3
+
 website https://common-lisp.net/project/parenscript/
-github https://github.com/vsedach/Parenscript
+status active
+fileType text
+compilesTo javascript
+isOpenSource true
+writtenIn common-lisp

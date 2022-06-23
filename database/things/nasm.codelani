@@ -1,4 +1,69 @@
+title Netwide Assembler
 appeared 1996
 type assembly
+
+patterns
+ hasCentralPackageRepository? false
+
+wikipedia https://en.wikipedia.org/wiki/Netwide_Assembler
+ example
+  global _start
+  
+  section .data
+  
+  	query_string:		db	"Enter a character:  "
+  	query_string_len:	equ	$ - query_string
+  	out_string:			db	"You have input:  "
+  	out_string_len:		equ	$ - out_string
+  
+  section .bss
+  
+  	in_char:			resw 4
+  
+  section .text
+  
+  _start:
+  
+  	mov	rax, 0x2000004	 	; put the write-system-call-code into register rax
+  	mov	rdi, 1				; tell kernel to use stdout
+  	mov	rsi, query_string	; rsi is where the kernel expects to find the address of the message
+  	mov	rdx, query_string_len	; and rdx is where the kernel expects to find the length of the message 
+  	syscall
+  
+  	; read in the character
+  	mov	rax, 0x2000003		; read system call
+  	mov	rdi, 0				; stdin
+  	mov	rsi, in_char		; address for storage, declared in section .bss
+  	mov	rdx, 2				; get 2 bytes from the kernel's buffer (one for the carriage return)
+  	syscall
+  
+  	; show user the output
+  	mov	rax, 0x2000004		; write system call
+  	mov	rdi, 1				; stdout
+  	mov	rsi, out_string
+  	mov	rdx, out_string_len
+  	syscall
+  
+  	mov	rax, 0x2000004		; write system call
+  	mov	rdi, 1				; stdout
+  	mov	rsi, in_char
+  	mov	rdx, 2				; the second byte is to apply the carriage return expected in the string
+  	syscall
+  
+  	; exit system call
+  	mov	rax, 0x2000001		; exit system call
+          xor     rdi, rdi
+  	syscall
+ related x86-assembly assembly-language x86-isa ia-32 linux coff elf powerpc sparc
+ summary The Netwide Assembler (NASM) is an assembler and disassembler for the Intel x86 architecture. It can be used to write 16-bit, 32-bit (IA-32) and 64-bit (x86-64) programs. NASM is considered to be one of the most popular assemblers for Linux. NASM was originally written by Simon Tatham with assistance from Julian Hall. As of 2016, it is maintained by a small team led by H. Peter Anvin. It is open-source software released under the terms of a simplified (2-clause) BSD license.
+ pageId 60647
+ dailyPageViews 117
+ created 2002
+ backlinksCount 77
+ revisionCount 297
+ appeared 2017
+
 website http://www.nasm.us
-wikipedia Netwide_Assembler
+status historical
+fileType text
+isOpenSource true

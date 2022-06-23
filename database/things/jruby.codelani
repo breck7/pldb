@@ -1,3 +1,28 @@
+title JRuby
 appeared 2001
 type pl
-wikipedia JRuby
+
+patterns
+ hasCentralPackageRepository? false
+
+wikipedia https://en.wikipedia.org/wiki/JRuby
+ example
+  //Example using JSR 233 Scripting for Java 6
+  ScriptEngineManager mgr = new ScriptEngineManager();
+  ScriptEngine rbEngine = mgr.getEngineByExtension("rb");
+  try {
+    rbEngine.eval("puts 'Hello World!'");
+  } catch (ScriptException ex) {
+    ex.printStackTrace();
+  }
+ related java ruby jython c rails android java-bytecode yarv
+ summary JRuby is an implementation of the Ruby programming language atop the Java Virtual Machine, written largely in Java. It is free software released under a three-way EPL/GPL/LGPL license. JRuby is tightly integrated with Java to allow the embedding of the interpreter into any Java application with full two-way access between the Java and the Ruby code (similar to Jython for the Python language). JRuby's lead developers are Charles Oliver Nutter and Thomas Enebo, with many current and past contributors including Ola Bini and Nick Sieger. In September 2006, Sun Microsystems hired Enebo and Nutter to work on JRuby full-time. In June 2007, ThoughtWorks hired Ola Bini to work on Ruby and JRuby.In July 2009, the JRuby developers left Sun to continue JRuby development at Engine Yard. In May 2012, Nutter and Enebo left Engine Yard to work on JRuby at Red Hat.
+ created 2005
+ backlinksCount 207
+ pageId 1948859
+ revisionCount 639
+ dailyPageViews 58
+ appeared 2001
+
+status active
+isOpenSource true

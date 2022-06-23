@@ -1,8 +1,40 @@
+title Wavefront Material
 appeared 1988
 type application
+
 example
  newmtl flat_green
  Ka 0.0000 0.2000 0.0000
  Kd 0.0000 0.8000 0.0000
  illum 1
+
+patterns
+ hasCentralPackageRepository? false
+
+githubLanguage Wavefront Material
+ fileExtensions mtl
+ trendingProjectsCount 0
+
+linguistGrammarRepo https://github.com/Alhadis/language-wavefront
+ firstCommit 2016
+ lastCommit 2017
+ committerCount 1
+ commitCount 45
+ sampleCount 4
+ example
+  # 3ds Max Wavefront OBJ Exporter v0.97b - (c)2007 guruware
+  # File Created: 27.05.2016 16:27:25
+  
+  newmtl wire_088177027
+  	Ns 32
+  	d 1
+  	Tr 0
+  	Tf 1 1 1
+  	illum 2
+  	Ka 0.34509805 0.69411767 0.10588236
+  	Kd 0.34509805 0.69411767 0.10588236
+  	Ks 0.34999999 0.34999999 0.34999999
+
 reference https://github.com/Alhadis/language-wavefront/blob/master/specs/mtl.rst
+status active
+fileType text

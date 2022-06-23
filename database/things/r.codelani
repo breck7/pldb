@@ -1,5 +1,130 @@
+title R
 appeared 1993
 type pl
 creators Ross Ihaka
+
+patterns
+ hasBitWiseOperators? true
+  ! x
+  x & y
+  x && y
+  x | y
+  x || y
+  xor(x, y)
+ hasCentralPackageRepository? true
+ hasComments? true
+ hasImports? true
+  source("filename.r")
+ hasLazyEvaluation? true
+ hasOperatorOverloading? true
+ hasPipes? true
+  # R has pipes via a library like dplyr
+  starwars %>% filter(species == "Droid")
+ hasZeroBasedNumbering? false
+
+wikipedia https://en.wikipedia.org/wiki/R_(programming_language)
+ example
+  install.packages("caTools")  # install external package
+  library(caTools)           # external package providing write.gif function
+  jet.colors <- colorRampPalette(c("#00007F", "blue", "#007FFF", "cyan", "#7FFF7F",
+                                   "yellow", "#FF7F00", "red", "#7F0000"))
+  dx <- 400                  # define width
+  dy <- 400                  # define height
+  C <- complex( real=rep(seq(-2.2, 1.0, length.out=dx), each=dy ),
+                imag=rep(seq(-1.2, 1.2, length.out=dy), dx ) )
+  C <- matrix(C,dy,dx)       # reshape as square matrix of complex numbers
+  Z <- 0                     # initialize Z to zero
+  X <- array(0, c(dy,dx,20)) # initialize output 3D array
+  for (k in 1:20) {          # loop with 20 iterations
+    Z <- Z^2+C               # the central difference equation
+    X[,,k] <- exp(-abs(Z))   # capture results
+  }
+  write.gif(X, "Mandelbrot.gif", col=jet.colors, delay=100)
+ related common-lisp s scheme julia c fortran java python latex apl matlab octave knitr sweave utf-8 rstudio-editor eclipse-editor emacs-editor lyx-editor perl ruby f-sharp spss stata mathematica
+ summary R is an open source programming language and software environment for statistical computing and graphics that is supported by the R Foundation for Statistical Computing. The R language is widely used among statisticians and data miners for developing statistical software and data analysis. Polls, surveys of data miners, and studies of scholarly literature databases show that R's popularity has increased substantially in recent years. R is a GNU package. The source code for the R software environment is written primarily in C, Fortran, and R. R is freely available under the GNU General Public License, and pre-compiled binary versions are provided for various operating systems. While R has a command line interface, there are several graphical front-ends available.
+ pageId 376707
+ dailyPageViews 3651
+ created 2003
+ backlinksCount 1479
+ revisionCount 2219
+ appeared 1993
+ fileExtensions r R RData rds rda
+
+githubLanguage R
+ fileExtensions r rd rsx
+ trendingProjects
+  author name avatar url language languageColor stars forks currentPeriodStars description
+  rstudio bookdown https://github.com/rstudio.png https://github.com/rstudio/bookdown R #198CE7 1586 711 44 "Authoring Books and Technical Documents with R Markdown"
+  hadley r4ds https://github.com/hadley.png https://github.com/hadley/r4ds R #198CE7 2051 2560 44 "R for data science: a book"
+  rfordatascience tidytuesday https://github.com/rfordatascience.png https://github.com/rfordatascience/tidytuesday R #198CE7 1062 490 94 "Official repo for the #tidytuesday project"
+  rstudio shiny https://github.com/rstudio.png https://github.com/rstudio/shiny R #198CE7 3527 1528 46 "Easy interactive web applications with R"
+  rstudio rmarkdown https://github.com/rstudio.png https://github.com/rstudio/rmarkdown R #198CE7 1596 676 29 "Dynamic Documents for R"
+  swirldev swirl_courses https://github.com/swirldev.png https://github.com/swirldev/swirl_courses R #198CE7 3009 6259 30 "🎓 A collection of interactive courses for the swirl R package."
+  griffithlab rnaseq_tutorial https://github.com/griffithlab.png https://github.com/griffithlab/rnaseq_tutorial R #198CE7 767 417 30 "Informatics for RNA-seq: A web resource for analysis on the cloud. Educational tutorials and working pipelines for RNA-seq analysis including an introduction to: cloud computing, critical file formats, reference genomes, gene annotation, expression, differential expression, alternative splicing, data visualization, and interpretation."
+  satijalab seurat https://github.com/satijalab.png https://github.com/satijalab/seurat R #198CE7 540 326 25 "R toolkit for single cell genomics"
+ trendingProjectsCount 9
+
+helloWorldCollection R
+ # Hello World in R
+ cat("Hello world\n")
+ 
+
+linguistGrammarRepo https://github.com/textmate/r.tmbundle
+ firstCommit 2005
+ lastCommit 2016
+ committerCount 13
+ commitCount 226
+ sampleCount 7
+ example
+  hello <- function() {
+      print("hello, world!")
+  }
+  hello()
+  
+
 website https://www.r-project.org
-wikipedia R_(programming_language)
+status active
+
+tryItOnline r
+
+twitter _r_foundation
+
+country US
+fileExtensions r R RData rds rda
+fileType text
+wordRank 179
+isOpenSource true
+
+tiobe R
+ currentRank 11
+
+meetup r-programming-language
+ memberCount 26230
+ groupCount 84
+
+linkedInSkill r
+ peopleWithThisSkillCount 1026107
+
+projectEuler R
+ memberCount
+  2019 1115
+  2022 1329
+
+hopl 2426
+
+subreddit Rlanguage
+ memberCount
+  2017 12731
+
+quineRelay R
+
+ubuntuPackage r-base
+
+codeMirror r
+
+rosettaCode R
+
+antlr https://github.com/antlr/grammars-v4/tree/master/r
+
+indeedJobs r data scientist
+ 2017 3912

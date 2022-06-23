@@ -1,7 +1,7 @@
+title Human-Optimized Config Object Notation
 appeared 2011
 type metaLanguage
-website https://github.com/lightbend/config/blob/master/HOCON.md
-wikipedia HOCON
+
 example
  // one array
  a : [ 1, 2, 3, 4 ]
@@ -11,3 +11,20 @@ example
  // (see "self-referential substitutions" below)
  a : [ 1, 2 ]
  a : ${a} [ 3, 4 ]
+
+patterns
+ hasCentralPackageRepository? false
+
+wikipedia https://en.wikipedia.org/wiki/HOCON
+ related json java-properties puppet yaml
+ summary HOCON, or Human-Optimized Config Object Notation is a format for human-readable data, and a superset of JSON and .properties. It is primarily used in conjunction with the Play framework, and is developed by Lightbend. It is also supported as a configuration format for .NET projects via Akka.NET and Puppet.
+ pageId 46353833
+ created 2015
+ backlinksCount 10
+ revisionCount 17
+ dailyPageViews 49
+
+website https://github.com/lightbend/config/blob/master/HOCON.md
+standsFor Human-Optimized Config Object Notation
+status historical
+fileType text

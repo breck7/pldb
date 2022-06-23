@@ -1,4 +1,85 @@
+title AutoIt
 appeared 1999
 type pl
+
+patterns
+ hasCentralPackageRepository? false
+ hasComments? true
+
+wikipedia https://en.wikipedia.org/wiki/AutoIt
+ example
+  ; Find Average by JohnOne, modified by czardas
+  #include <MsgBoxConstants.au3>
+  
+  _Example() ; Run the example.
+  
+  Func _Example()
+      ; Display an input box and ask the user to enter some numbers separated by commas.
+      Local $sInput = InputBox("Find Average", "Enter some numbers separated by commas: 1,2,42,100,3")
+  
+  	; If an error occurred then exit the script.
+  	If @error Then Exit
+  
+      ; Populate an array with the user's input.
+      Local $aSplit = StringSplit($sInput, ",")
+  
+      ; Pass the array to the function _Find_Average() and then check for errors.
+      Local $fAverage = _Find_Average($aSplit)
+      If @error Then Exit
+  
+      ; Display the result in a message box.
+      MsgBox($MB_OK, "Find Average", "Result: " & $fAverage)
+  EndFunc   ;==>_Example
+  
+  Func _Find_Average($aArray)
+      ; If the input is not of the correct type (an array), then return an error along with the details.
+      If Not IsArray($aArray) Then Return SetError(1, 0, VarGetType($aArray))
+  	; More detailed checks are possible, but for brevity just one is performed here.
+  
+      ; Declare a variable to store the sum of the numbers.
+      Local $iArraySum = 0
+  
+      ; Loop through the array.
+      For $i = 1 To $aArray[0]
+          ; Increment the sum by the number in each array element.
+          $iArraySum += Number($aArray[$i])
+      Next
+  
+      ; Return the average rounded to 2 decimal places.
+      Return Round($iArraySum / $aArray[0], 2)
+  EndFunc   ;==>_Find_Average
+ related basic tcp udp autohotkey kixtart thinbasic visual-basic winbatch expect
+ summary AutoIt  is a freeware automation language for Microsoft Windows. In its earliest release, the software was primarily intended to create automation scripts (sometimes called macros) for Microsoft Windows programs but has since grown to include enhancements in both programming language design and overall functionality. While the scripting language in AutoIt 1 and 2 was statement-driven, designed primarily for simulating user interaction, from version 3 onwards the AutoIt syntax is similar to that found in the BASIC family of languages. In this form, AutoIt is a general-purpose, third-generation programming language with a classical data model and a variant data type that can store several types of data, including arrays. While version 1 and 2 were compatible with Windows 95, 98, ME, NT4, 2000, XP, 2003, Vista, Windows 7, support for operating systems older than Windows 2000 was discontinued with the release of v3.3.0 in December 2008. Currently AutoIt is also compatible with Windows 2008, Windows 8, Windows 2012, Windows 10, and the minimal requirement is Windows XP SP3. An AutoIt automation script can be converted into a compressed, stand-alone executable which can be run on computers that do not have the AutoIt interpreter installed. A wide range of function libraries (known as UDFs, or "User Defined Functions") are also included as standard or are available from the website to add specialized functionality. AutoIt is also distributed with an IDE based on the free SciTE editor. The compiler and help text are fully integrated and provide a de facto standard environment for developers using AutoIt.
+ pageId 2281448
+ dailyPageViews 158
+ created 2005
+ backlinksCount 174
+ revisionCount 567
+ appeared 2000
+
+githubLanguage AutoIt
+ fileExtensions au3
+ trendingProjectsCount 0
+
+linguistGrammarRepo https://github.com/AutoIt/SublimeAutoItScript
+ firstCommit 2013
+ lastCommit 2018
+ committerCount 11
+ commitCount 88
+
 website http://www.autoitscript.com/autoit3/
-wikipedia AutoIt
+status active
+
+twitter autoitconsult
+
+fileType text
+isOpenSource true
+
+tiobe AutoIt
+
+projectEuler AutoIt
+ memberCount
+  2019 7
+  2022 12
+
+rosettaCode AutoIt

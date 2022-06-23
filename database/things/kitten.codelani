@@ -1,5 +1,25 @@
+title kitten
 appeared 2012
 type pl
-website http://kittenlang.org/
-github https://github.com/evincarofautumn/kitten
+
+patterns
+ hasCentralPackageRepository? false
+
 description <a href='http://kittenlang.org'>Kitten</a> is a statically typed concatenative language with effect types.
+
+githubRepo https://github.com/evincarofautumn/kitten
+ firstCommit 2011
+ stars 648
+ forks 31
+ subscribers 58
+ created 2011
+ updated 2018
+ description A statically typed concatenative systems programming language.
+ issues 63
+
+website http://kittenlang.org/
+status active
+fileType text
+isOpenSource true
+
+rosettaCode Kitten

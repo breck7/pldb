@@ -1,3 +1,30 @@
+title Tuple space
 appeared 1988
 type pl
-wikipedia Tuple_space
+
+patterns
+ hasCentralPackageRepository? false
+
+wikipedia https://en.wikipedia.org/wiki/Tuple_space
+ example
+  // Client
+  public class Client {
+       public static void main(String[] args) throws Exception {
+           JavaSpace space = (JavaSpace) space();
+           SpaceEntry e = space.take(new SpaceEntry(), null, Long.MAX_VALUE);
+           System.out.println(e.service());
+           space.write(e, null, Lease.FOREVER);
+       }
+  }
+ related linda java lisp lua prolog python ruby smalltalk tcl isbn
+ summary A tuple space is an implementation of the  associative memory paradigm for parallel/distributed computing. It provides a repository of tuples that can be accessed concurrently. As an illustrative example, consider that there are a group of processors that produce pieces of data and a group of processors that use the data. Producers post their data as tuples in the space, and the consumers then retrieve data from the space that match a certain pattern. This is also known as the blackboard metaphor. Tuple space may be thought as a form of distributed shared memory. Tuple spaces were the theoretical underpinning of the Linda language developed by David Gelernter and Nicholas Carriero at Yale University in 1986. Implementations of tuple spaces have also been developed for Java (JavaSpaces), Lisp, Lua, Prolog, Python, Ruby, Smalltalk, Tcl, and the .NET framework.
+ created 2005
+ backlinksCount 51
+ pageId 1966238
+ revisionCount 168
+ dailyPageViews 56
+ appeared 1986
+
+status historical
+
+hopl 1443

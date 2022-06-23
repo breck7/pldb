@@ -1,4 +1,70 @@
+title PAWN
 appeared 2006
 type pl
+
+patterns
+ hasCentralPackageRepository? false
+
+githubLanguage PAWN
+ fileExtensions pwn inc
+ trendingProjectsCount 0
+
+githubRepo https://github.com/compuphase/pawn
+ firstCommit 2006
+ stars 181
+ forks 34
+ subscribers 22
+ created 2015
+ updated 2018
+ description Pawn is a quick and small scripting language that requires few resources.
+ issues 13
+
+linguistGrammarRepo https://github.com/Southclaw/pawn-sublime-language.git
+ firstCommit 2014
+ lastCommit 2018
+ committerCount 23
+ commitCount 168
+ sampleCount 2
+ example
+  #include <a_samp>
+  
+  forward OneSecTimer();
+  
+  new lasttick = 0;
+  
+  main()
+  {
+  	print("\n----------------------------------");
+  	print("  This is a blank GameModeScript");
+  	print("----------------------------------\n");
+  }
+  
+  public OnGameModeInit()
+  {
+  	// Set timer of 1 second.
+  	SetTimer("OneSecTimer", 1000, 1);
+  	print("GameModeInit()");
+  	SetGameModeText("Timer Test");
+  	AddPlayerClass(0, 1958.3783, 1343.1572, 15.3746, 269.1425, 0, 0, 0, 0, 0, 0);
+  	return 1;
+  }
+  
+  public OneSecTimer() {
+  
+  	if(lasttick == 0) {
+       	lasttick = GetTickCount();
+  		return;
+  	}
+  	new sText[256];
+  	format(sText,sizeof(sText),"GetTickCountOffset = %d",GetTickCount() - lasttick);
+  	print(sText);
+  	SendClientMessageToAll(0xFF0000, sText);
+  	lasttick = GetTickCount();
+  }
+  
+  
+
 website https://www.compuphase.com/pawn/pawn.htm
-github https://github.com/compuphase/pawn
+status active
+fileType text
+isOpenSource true

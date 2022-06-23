@@ -1,4 +1,35 @@
+title Resource Description Framework
 appeared 1997
 type schema
+
+patterns
+ hasCentralPackageRepository? false
+ hasTypeInference? true
+
+wikipedia https://en.wikipedia.org/wiki/Resource_Description_Framework
+ example
+  @prefix rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+  @prefix foaf: <http://xmlns.com/foaf/0.1/> .
+  @prefix dc:   <http://purl.org/dc/elements/1.1/> .
+  
+  <http://en.wikipedia.org/wiki/Tony_Benn>
+      dc:publisher "Wikipedia" ;
+      dc:title "Tony Benn" ;
+      foaf:primaryTopic [
+          a foaf:Person ;
+          foaf:name "Tony Benn"
+      ] .
+ related owl xml turtle json unicode sparql sql python
+ summary The Resource Description Framework (RDF) is a family of World Wide Web Consortium (W3C) specifications originally designed as a metadata data model. It has come to be used as a general method for conceptual description or modeling of information that is implemented in web resources, using a variety of syntax notations and data serialization formats. It is also used in knowledge management applications. RDF was adopted as a W3C recommendation in 1999. The RDF 1.0 specification was published in 2004, the RDF 1.1 specification in 2014.
+ pageId 53847
+ dailyPageViews 815
+ created 2001
+ backlinksCount 698
+ revisionCount 947
+ appeared 1997
+
 website https://www.w3.org/RDF/
-wikipedia Resource_Description_Framework
+standsFor Resource Description Framework
+status active
+related json-ld
+fileType text

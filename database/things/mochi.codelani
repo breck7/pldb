@@ -1,10 +1,29 @@
+title mochi
 appeared 2014
 type pl
-github https://github.com/i2y/mochi
+
 example
  def factorial(n, m):
     if n == 1:
         m
     else:
         factorial(n - 1, n * m)
+
+patterns
+ hasCentralPackageRepository? false
+
 description Mochi is a dynamically typed programming language for functional programming and actor-style programming. Its interpreter is written in Python3. The interpreter translates a program written in Mochi to Python3's AST / bytecode.
+
+githubRepo https://github.com/i2y/mochi
+ firstCommit 2014
+ stars 886
+ forks 28
+ subscribers 49
+ created 2014
+ updated 2018
+ description Dynamically typed functional programming language
+ issues 14
+
+status active
+fileType text
+isOpenSource true

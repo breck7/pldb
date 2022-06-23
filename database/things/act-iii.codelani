@@ -1,6 +1,7 @@
+title ACT-III
 appeared 1956
 type pl
-wikipedia LGP-30
+
 example
  s1'dim'a'500'm'500'q'500''
  index'j'j+1'j-1''
@@ -12,4 +13,37 @@ example
  s3'sqrt'd.';'sqrd.''
  1'unflo'sqrd.'i/'10';'sqrd''
  2010'print'sqrd.''2000'iprt'sqrd''cr''cr''
+
+patterns
+ hasCentralPackageRepository? false
+
 description The LGP-30 had a high-level language called ACT-III. Every token had to be delimited by an apostrophe, making it hard to read and even harder to prepare tapes.
+
+wikipedia https://en.wikipedia.org/wiki/LGP-30
+ example
+  burrrp, clunk, 
+  burrrp, clunk, clunk, clunk, 
+  burrrp, clunk, 
+  burrrp, clunk, clunk, clunk,
+  burrrp, clunk, 
+  burrrp, clunk, clunk, clunk, 
+  burrrp, clunk, 
+  burrrp, clunk, clunk, clunk, 
+  burrrp, clunk, 
+  burrrp, clunk, clunk, clunk, 
+  burrrp, clunk, 
+  burrrp, clunk, clunk, clunk.
+ related algol-60 isbn
+ summary The LGP-30, standing for Librascope General Purpose and then Librascope General Precision, was an early off-the-shelf computer. It was manufactured by the Librascope company of Glendale, California (a division of General Precision Inc.), and sold and serviced by the Royal Precision Electronic Computer Company, a joint venture with the Royal McBee division of the Royal Typewriter Company. The LGP-30 was first manufactured in 1956 with a retail price of $47,000—equivalent to about $423,000 in 2017.The LGP-30 was commonly referred to as a desk computer.  It was 26 inches (660 mm) deep, 33 inches (840 mm) high, and 44 inches (1120 mm) long, exclusive of the typewriter shelf.  The computer weighed approximately 800 pounds (360 kg) and was mounted on sturdy casters which facilitated movement of the computer.
+ pageId 1624694
+ created 2005
+ backlinksCount 43
+ revisionCount 171
+ dailyPageViews 37
+ appeared 1956
+
+status historical
+country US
+fileType text
+
+hopl 3844

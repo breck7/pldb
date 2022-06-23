@@ -1,7 +1,7 @@
+title asciidots
 appeared 2017
 type esolang
-website http://ajanse.me/asciidots/
-github https://github.com/aaronduino/asciidots
+
 example
  /-&         `` This is where the program ends!
  |
@@ -11,3 +11,31 @@ example
  \---/   |
          |
          \-. `` Here's where the program starts
+
+patterns
+ hasCentralPackageRepository? false
+
+githubRepo https://github.com/aaronduino/asciidots
+ stars 764
+ forks 19
+ subscribers 21
+ created 2017
+ updated 2017
+ firstCommit 2017
+ description The combinination of ascii art, electrical engineering, and programming.
+ issues 13
+
+website http://ajanse.me/asciidots/
+status active
+
+tryItOnline asciidots
+
+fileType text
+isOpenSource true
+webRepl http://ajanse.me/asciidots/demo
+
+rosettaCode AsciiDots
+
+hackerNewsDiscussions
+ id|title|time|timestamp|by|comments|score
+ 14947449|Show HN: AsciiDots – a 2D esoteric language inspired by circuits|2017-08-07 13:57:27 UTC|1502114247|aaronduino|33|148

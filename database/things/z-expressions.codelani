@@ -1,6 +1,37 @@
+title z-expressions
 appeared 2012
 type pl
 creators Chris Done
+
+patterns
+ hasComments? true
+  -- A simple function, that is used inside the macro below.
+  defun ap x y
+       ++ x
+          y
+  defmacro : input
+           z:string input
+  -- Example with print:
+  print : Hello, World!
+          What's going on in here? 
+ hasSemanticIndentation? true
+  defun message msg
+        do print : Here's a message
+           print msg
+           print : End of message. 
+ hasStrings? true
+  print "Hai, guys!"
+
+githubRepo https://github.com/chrisdone/z
+ firstCommit 2012
+ stars 242
+ forks 7
+ subscribers 14
+ created 2012
+ updated 2019
+ description A strict, impure, curried, partially applied programming language with rather peculiar syntax. 
+
 website http://chrisdone.com/z/
-github https://github.com/chrisdone/z
 reference https://news.ycombinator.com/item?id=20557363
+fileExtensions zz
+writtenIn haskell

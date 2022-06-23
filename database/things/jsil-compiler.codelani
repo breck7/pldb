@@ -1,5 +1,23 @@
+title jsil-compiler
 appeared 2010
 type compiler
-website http://jsil.org/
-github https://github.com/sq/JSIL
+
+patterns
+ hasCentralPackageRepository? false
+
 description JSIL is a compiler that transforms .NET applications and libraries from their native executable format - CIL bytecode - into standards-compliant, cross-browser JavaScript.
+
+githubRepo https://github.com/sq/JSIL
+ firstCommit 2011
+ stars 1526
+ forks 248
+ subscribers 108
+ created 2011
+ updated 2018
+ description CIL to Javascript Compiler
+ issues 378
+
+website http://jsil.org/
+status active
+fileType na
+isOpenSource true

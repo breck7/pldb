@@ -1,3 +1,80 @@
+title coq
 appeared 1989
 type pl
-wikipedia Coq
+
+patterns
+ hasCentralPackageRepository? false
+
+wikipedia https://en.wikipedia.org/wiki/Coq
+ related ocaml agda idris mathematical-notation c isabelle
+ summary In computer science, Coq is an interactive theorem prover. It allows the expression of mathematical assertions, mechanically checks proofs of these assertions, helps to find formal proofs, and extracts a certified program from the constructive proof of its formal specification. Coq works within the theory of the calculus of inductive constructions, a derivative of the calculus of constructions. Coq is not an automated theorem prover but includes automatic theorem proving tactics and various decision procedures. The Association for Computing Machinery rewarded Thierry Coquand, Gérard Pierre Huet, Christine Paulin-Mohring, Bruno Barras, Jean-Christophe Filliâtre, Hugo Herbelin, Chetan Murthy, Yves Bertot and Pierre Castéran with the 2013 ACM Software System Award for Coq.
+ pageId 581974
+ dailyPageViews 265
+ created 2004
+ backlinksCount 138
+ revisionCount 267
+ appeared 1989
+
+githubLanguage Coq
+ fileExtensions coq v
+ trendingProjectsCount 0
+
+linguistGrammarRepo https://github.com/mkolosick/Sublime-Coq
+ firstCommit 2013
+ lastCommit 2018
+ committerCount 4
+ commitCount 62
+ sampleCount 13
+ example
+  Require Import FunctionNinjas.All.
+  Require Import ListString.All.
+  Require Import Computation.
+  
+  Import C.Notations.
+  
+  Definition error (message : LString.t) : C.t :=
+    do_call! Command.ShowError message in
+    ret.
+  
+  Definition main : C.t :=
+    call! card_is_valid := Command.AskCard in
+    if card_is_valid then
+      call! pin := Command.AskPIN in
+      match pin with
+      | None => error @@ LString.s "No PIN given."
+      | Some pin =>
+        call! pin_is_valid := Command.CheckPIN pin in
+        if pin_is_valid then
+          call! ask_amount := Command.AskAmount in
+          match ask_amount with
+          | None => error @@ LString.s "No amount given."
+          | Some amount =>
+            call! amount_is_valid := Command.CheckAmount amount in
+            if amount_is_valid then
+              call! card_is_given := Command.GiveCard in
+              if card_is_given then
+                call! amount_is_given := Command.GiveAmount amount in
+                if amount_is_given then
+                  ret
+                else
+                  error @@ LString.s "Cannot give you the amount. Please contact your bank."
+              else
+                error @@ LString.s "Cannot give you back the card. Please contact your bank."
+            else
+              error @@ LString.s "Invalid amount."
+          end
+        else
+          error @@ LString.s "Invalid PIN."
+      end
+    else
+      error @@ LString.s "Invalid card.".
+  
+
+status active
+country FR
+fileType text
+isOpenSource true
+
+hopl 6970
+
+rosettaCode Coq

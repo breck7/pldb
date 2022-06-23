@@ -1,3 +1,36 @@
+title QuickBASIC
 appeared 1985
 type pl
-wikipedia QuickBASIC
+
+patterns
+ hasCentralPackageRepository? false
+
+wikipedia https://en.wikipedia.org/wiki/QuickBASIC
+ example
+  REM sample of bubble sort
+  N = 10
+  DIM A(N) AS INTEGER
+  FOR L = 1 TO N
+      A(L) = INT(RND * 10 + 1)
+  NEXT
+  FOR X = 1 TO N
+      FOR Y = 1 TO N - 1
+          IF A(X) < A(Y) THEN SWAP A(X), A(Y)
+      NEXT
+  NEXT
+  FOR L = 1 TO N
+      PRINT A(L)
+  NEXT
+  END
+ related qbasic basic gw-basic visual-basic linux freebasic qb64 powerbasic turbo-basic
+ summary Microsoft QuickBASIC (also QB) is an Integrated Development Environment (or IDE) and compiler for the BASIC programming language that was developed by Microsoft. QuickBASIC runs mainly on DOS, though there was a short-lived version for the classic Mac OS. It is loosely based on GW-BASIC but adds user-defined types, improved programming structures, better graphics and disk support and a compiler in addition to the interpreter.  Microsoft marketed QuickBASIC as the introductory level for their BASIC Professional Development System.  Microsoft marketed two other similar IDEs for C and Pascal, viz QuickC and QuickPascal.
+ created 2002
+ backlinksCount 224
+ pageId 63569
+ revisionCount 337
+ dailyPageViews 91
+ appeared 1985
+
+status historical
+
+hopl 5233

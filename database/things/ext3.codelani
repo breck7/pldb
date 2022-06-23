@@ -1,3 +1,19 @@
+title Ext3
 appeared 2001
 type filesystem
-wikipedia Ext3
+
+patterns
+ hasCentralPackageRepository? false
+
+wikipedia https://en.wikipedia.org/wiki/Ext3
+ related linux ext2 ext4
+ summary ext3, or third extended filesystem, is a journaled file system that is commonly used by the Linux kernel. It used to be the default file system for many popular Linux distributions. Stephen Tweedie first revealed that he was working on extending ext2 in Journaling the Linux ext2fs Filesystem in a 1998 paper, and later in a February 1999 kernel mailing list posting. The filesystem was merged with the mainline Linux kernel in November 2001 from 2.4.15 onward. Its main advantage over ext2 is journaling, which improves reliability and eliminates the need to check the file system after an unclean shutdown. Its successor is ext4.
+ pageId 39195
+ created 2002
+ backlinksCount 325
+ revisionCount 789
+ dailyPageViews 191
+ appeared 1998
+
+status historical
+fileType text

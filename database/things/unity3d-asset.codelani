@@ -1,2 +1,26 @@
+title Unity3D Asset
 appeared 2005
 type application
+
+patterns
+ hasCentralPackageRepository? false
+
+githubLanguage Unity3D Asset
+ fileExtensions anim asset mat meta prefab unity
+ trendingProjectsCount 0
+
+linguistGrammarRepo https://github.com/atom/language-yaml
+ firstCommit 2013
+ lastCommit 2018
+ committerCount 25
+ commitCount 205
+ sampleCount 5
+ example
+  fileFormatVersion: 2
+  guid: 9e5c401e9d1d5415fbf2854b29c004c4
+  folderAsset: yes
+  DefaultImporter:
+    userData:
+
+status active
+fileType text

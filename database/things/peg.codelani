@@ -1,8 +1,31 @@
+title parsing expression grammar
 appeared 2002
 type grammarLanguage
-wikipedia Parsing_expression_grammar
+
 example
  Expr    ← Sum
  Sum     ← Product (('+' / '-') Product)*
  Product ← Value (('*' / '/') Value)*
  Value   ← [0-9]+ / '(' Expr ')'
+
+patterns
+ hasCentralPackageRepository? false
+
+wikipedia https://en.wikipedia.org/wiki/Parsing_expression_grammar
+ example
+  Value   ← [0-9.]+ / '(' Expr ')'
+  Product ← Expr (('*' / '/') Expr)*
+  Sum     ← Expr (('+' / '-') Expr)*
+  Expr    ← Product / Sum / Value
+ related regex
+ summary In computer science, a parsing expression grammar, or PEG, is a type of analytic formal grammar, i.e. it describes a formal language in terms of a set of rules for recognizing strings in the language. The formalism was introduced by Bryan Ford in 2004 and is closely related to the family of top-down parsing languages introduced in the early 1970s. Syntactically, PEGs also look similar to context-free grammars (CFGs), but they have a different interpretation: the choice operator selects the first match in PEG, while it is ambiguous in CFG. This is closer to how string recognition tends to be done in practice, e.g. by a recursive descent parser. Unlike CFGs, PEGs cannot be ambiguous; if a string parses, it has exactly one valid parse tree. It is conjectured that there exist context-free languages that cannot be recognized by a PEG, but this is not yet proven. PEGs are well-suited to parsing computer languages (and artificial human languages such as Lojban), but not natural languages where the performance of PEG algorithms is comparable to general CFG algorithms such as the Earley algorithm.
+ pageId 892899
+ created 2004
+ backlinksCount 121
+ revisionCount 443
+ dailyPageViews 187
+ appeared 2002
+
+standsFor parsing expression grammar
+status historical
+fileType text

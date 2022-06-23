@@ -1,7 +1,7 @@
+title Resource Description Framework in Attributes
 appeared 2004
 type xmlFormat
-website http://rdfa.info/
-wikipedia RDFa
+
 example
  <div xmlns:dc="http://purl.org/dc/elements/1.1/"
    about="http://www.example.com/books/wikinomics">
@@ -9,3 +9,13 @@ example
    <span property="dc:creator">Don Tapscott</span>
    <span property="dc:date">2006-10-01</span>
  </div>
+
+wikipedia https://en.wikipedia.org/wiki/RDFa
+ summary RDFa (or Resource Description Framework in Attributes) is  a W3C Recommendation that adds a set of attribute-level extensions to HTML, XHTML and various XML-based document types for embedding rich metadata within Web documents. The RDF data-model mapping enables its use for embedding RDF subject-predicate-object expressions within XHTML documents. It also enables the extraction of RDF model triples by compliant user agents. The RDFa community runs a wiki website to host tools, examples, and tutorials.
+ backlinksCount 212
+ pageId 4321818
+ dailyPageViews 1419
+ appeared 2004
+
+website http://rdfa.info/
+related json-ld

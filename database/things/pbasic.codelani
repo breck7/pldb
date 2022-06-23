@@ -1,3 +1,25 @@
+title PBASIC
 appeared 1988
 type pl
-wikipedia PBASIC
+
+patterns
+ hasCentralPackageRepository? false
+
+wikipedia https://en.wikipedia.org/wiki/PBASIC
+ example
+  HIGH 1                 'turn on LED on pin 1
+   PAUSE 1000             'pause for one second
+   LOW 1                  'turn off LED on pin 1
+   END                    'end program
+ related basic basic-stamp
+ summary PBASIC is a microcontroller-based version of BASIC created by Parallax, Inc. in 1992.PBASIC was created to bring ease of use to the microcontroller and embedded processor world. It is used for writing code for the BASIC Stamp microcontrollers. After the code is written, it is tokenized and loaded into an EEPROM on the microcontroller. These tokens are fetched by the microcontroller and used to generate instructions for the processor.
+ created 2005
+ backlinksCount 26
+ pageId 1655770
+ revisionCount 87
+ dailyPageViews 12
+ appeared 1992
+
+status historical
+
+hopl 6747

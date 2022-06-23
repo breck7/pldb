@@ -1,3 +1,28 @@
+title GEORGE
 appeared 1957
 type pl
-wikipedia GEORGE_(programming_language)
+
+patterns
+ hasCentralPackageRepository? false
+
+wikipedia https://en.wikipedia.org/wiki/GEORGE_(programming_language)
+ example
+  1, 10 R1 (a)
+  1, 10 rep (j)
+     j | a dup * j | (a) ;
+  ]
+  1, 10 P1 (a)
+ related reverse-polish-notation
+ summary GEORGE is a programming language invented by Charles Leonard Hamblin in 1957.It was designed around a push-down pop-up stack for arithmetic operations, and employed reverse Polish notation. The language included loops, subroutines, conditionals, vectors, and matrices. Algebraic expressions were written in reverse Polish notation; thus,                         a         +         b                 {\displaystyle a+b}    was written a b +, and similarly for the other arithmetic operations of subtraction, multiplication, and division. The algebraic expression                         a                    x                        2                             +         b         x         +         c                 {\displaystyle ax^{2}+bx+c}    was written a x dup × × b x × + c +, where 'dup' meant 'duplicate the value'. Following the reverse Polish form, an assignment statement to evaluate the formula                         y         =         a                    x                        2                             +         b         x         +         c                 {\displaystyle y=ax^{2}+bx+c}    was written as a x dup × × b x × + c + (y). The computer evaluated the expression as follows: the values of a, then x, were pushed onto the top of the accumulator stack; 'dup' caused a copy of the top-most value (x) to be pushed onto the top of the accumulator stack; Multiply (×) caused the top two values, namely, x and x, to be removed (popped) and multiplied, returning the product to the top of the accumulator stack.  The second multiply (×) then caused the top two values on the stack (namely, a and x**2) to be popped and multiplied, and the product (a×x**2) to be pushed onto the top of the accumulator stack.  And so on the remaining components of the expression.  The final operation, namely (y), returned the value of the expression to storage without changing the status of the accumulator stack. Assuming that the value on the top of the accumulator stack was not required immediately, it would be removed (cleared) by using the operator (;). The following program reads in eight values and forms their sum:  0, 1, 8 rep (j)    R + ] (P)  The first line initialises the sum by pushing the value zero onto the top of the accumulator stack. The second line introduces a loop, is spoken as "for 1 to 8 repeat for j", and is terminated by the square bracket. In the third line, R causes one number to be read in and pushed onto the top of the accumulator stack, and the plus sign (+) causes that value to be added to the (partial) sum, leaving only the partial sum on the top of the accumulator stack. After the loop terminates, the (P) causes the final sum to be punched on a card.Manipulation of vectors and matrices requires subscript notation.  In GEORGE, the subscript(s) preceded the vector or matrix name.  Thus A(j) was written j | A. The following program reads in vector a of 10 values, then forms the squares of those values, and finally prints those values.  1, 10 R1 (a) 1, 10 rep (j)    j | a dup * j | (a) ; ] 1, 10 P1 (a)  In the program, the first line is a vector read that reads in the ten values into a(1) through a(10). The second line introduces a loop to run through the ten values of j. The third line fetches a(j), duplicates it, multiplies those two values giving the square, and then stores it in  a(j).  Note the semicolon (;), which clears (or cancels) the top entry in the accumulator stack.  Were this not done, the accumulator would gradually fill up with the squares of the values. The final line is a vector punch (i.e., print) to write out the ten squares.The above GEORGE coding table assisted in transcribing a program onto punch cards. Conditional operations were written as jumps, as follows: if a > 0 go to 5 (which transfers to label 5 if a is greater than zero) would be written  0 a > 5 ↑  Label 5 was indicated by including *5 elsewhere in the program. Unconditional transfers were written 5↑ Subroutine calls were made with the down arrow, .g., to call subroutine labelled 17, write 17↓, where the label 17 was encoded using column 3 of the above table.
+ created 2012
+ backlinksCount 7
+ pageId 36133392
+ dailyPageViews 7
+ appeared 1957
+
+status historical
+wordRank 1177
+
+hopl 20
+
+rosettaCode GEORGE

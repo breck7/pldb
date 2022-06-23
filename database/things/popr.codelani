@@ -1,6 +1,31 @@
+title popr
 appeared 2012
 type pl
-github https://github.com/HackerFoo/poprc
+
 example
  1 2 | 3 +
+
+patterns
+ hasCentralPackageRepository? false
+ hasGarbageCollection? false
+ hasLazyEval? true
+
 description <a href='https://github.com/HackerFoo/poprc'>Popr</a> applies concatenative programming to types as well as values, striving for purity and correctness, and efficient execution.
+
+githubRepo https://github.com/HackerFoo/poprc
+ stars 42
+ forks 2
+ subscribers 5
+ created 2012
+ updated 2017
+ firstCommit 2012
+ description A Compiler for the Popr Language
+ issues 0
+
+status active
+firstAnnouncement http://hackerfoo.com/presentations/ttpl_slides.html
+fileType text
+compilesTo c
+isOpenSource true
+webRepl http://hackerfoo.com/eval.html
+announcementMethod webpage

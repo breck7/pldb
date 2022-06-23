@@ -1,6 +1,7 @@
+title Object Exchange Model
 appeared 1995
 type schema
-wikipedia Object_Exchange_Model
+
 example
  <DB:: Eats { // A Sample Database
  <Restaurant {
@@ -17,3 +18,12 @@ example
  <"Credit Card" "Visa">
  }>
  }>
+
+wikipedia https://en.wikipedia.org/wiki/Object_Exchange_Model
+ summary The Object Exchange Model  (OEM) is a model for exchanging semi-structured data between object-oriented databases. It serves as the basic data model in numerous projects of the Stanford University Database Group, including Tsimmis, Lore, and C3. Slight variations of OEM have evolved across different Stanford projects. In Lore, labels are actually on parent-child "links" rather than objects. For example, if an OEM object has multiple parents, different parent objects may use different labels to identify that object. An atomic value encoding a person's name might be included in one complex object using the label "Author" and in another complex object using the label "Editor." In C3, additional attributes are required for each object to annotate the changes to the object that have occurred over time.
+ backlinksCount 15
+ pageId 6366963
+ dailyPageViews 6
+ appeared 1995
+
+related rdf

@@ -1,5 +1,7 @@
+title Zork Implementation Language
 appeared 1988
 type pl
+
 example
  <ROUTINE VILLAIN-STRENGTH (OO
                         "AUX" (VILLAIN <GET .OO ,V-VILLAIN>)
@@ -16,4 +18,6 @@ example
                     <COND (<L? .TMP 1> <SET TMP 1>)>
                     <SET OD .TMP>)>)>
       .OD>
+
 reference https://archive.org/details/Learning_ZIL_Steven_Eric_Meretzky_1995
+standsFor Zork Implementation Language

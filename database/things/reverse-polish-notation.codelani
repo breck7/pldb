@@ -1,3 +1,27 @@
+title Reverse Polish notation
 appeared 1953
 type pl
-wikipedia Reverse_Polish_notation
+
+patterns
+ hasCentralPackageRepository? false
+
+wikipedia https://en.wikipedia.org/wiki/Reverse_Polish_notation
+ example
+  15 7 1 1 + − ÷ 3 × 2 1 1 + + − =
+  15 7 1 1 + − ÷ 3 × 2     2 + − =
+  15 7 1 1 + − ÷ 3 ×         4 − =
+  15 7     2 − ÷ 3 ×         4 − =
+  15         5 ÷ 3 ×         4 − =
+               3 3 ×         4 − =
+                   9         4 − =
+                               5
+ related forth postscript rpl factor bibtex befunge joy iptscrae android unix dc
+ summary Reverse Polish notation (RPN), also known as Polish postfix notation or simply postfix notation, is a mathematical notation in which operators follow their operands, in contrast to Polish notation (PN), in which operators precede their operands. It does not need any parentheses as long as each operator has a fixed number of operands. The description "Polish" refers to the nationality of logician Jan Łukasiewicz, who invented Polish notation in 1924.The reverse Polish scheme was proposed in 1954 by Arthur Burks, Don Warren, and Jesse Wright and was independently reinvented by Friedrich L. Bauer and Edsger W. Dijkstra in the early 1960s to reduce computer memory access and utilize the stack to evaluate expressions. The algorithms and notation for this scheme were extended by Australian philosopher and computer scientist Charles L. Hamblin in the mid-1950s.During the 1970s and 1980s, Hewlett-Packard used RPN in all of their desktop and hand-held calculators, and continued to use it in some into the 2010's.  In computer science, reverse Polish notation is used in stack-oriented programming languages such as Forth and PostScript. Most of what follows is about binary operators. An example of a unary operator whose standard notation may be interpreted as reverse Polish notation is the factorial, "n!".
+ created 2002
+ backlinksCount 211
+ pageId 26513
+ revisionCount 1037
+ dailyPageViews 836
+ appeared 1960
+
+status historical

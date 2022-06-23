@@ -1,3 +1,41 @@
+title GLSL
 appeared 1992
 type pl
-wikipedia OpenGL_Shading_Language
+
+patterns
+ hasCentralPackageRepository? false
+
+wikipedia https://en.wikipedia.org/wiki/OpenGL_Shading_Language
+ related opengl c linux javascript delphi java webgl cg
+ summary OpenGL Shading Language (abbreviated: GLSL), is a high-level shading language with a syntax based on the C programming language. It was created by the OpenGL ARB (OpenGL Architecture Review Board) to give developers more direct control of the graphics pipeline without having to use ARB assembly language or hardware-specific languages.
+ pageId 2152476
+ dailyPageViews 46
+ created 2013
+ backlinksCount 45
+ revisionCount 311
+ appeared 1992
+
+githubLanguage GLSL
+ fileExtensions glsl fp frag frg fs fsh fshader geo geom glslv gshader shader tesc tese vert vrx vsh vshader
+ trendingProjectsCount 0
+
+linguistGrammarRepo https://github.com/euler0/sublime-glsl
+ firstCommit 2012
+ lastCommit 2017
+ committerCount 9
+ commitCount 62
+ sampleCount 14
+ example
+  varying vec4 v_color;
+  
+  void main()
+  {
+  	gl_FragColor = v_color;
+  }
+
+status active
+fileType text
+
+tiobe GLSL
+
+rosettaCode GLSL

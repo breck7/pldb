@@ -1,6 +1,7 @@
+title ERB
 appeared 2004
 type template
-wikipedia ERuby
+
 example
  <ul>
  <% 4.times do %>
@@ -9,4 +10,94 @@ example
  
  <% end %>
  </ul>
+
+patterns
+ hasCentralPackageRepository? false
+
 description eRuby (Embedded Ruby) is a templating system that embeds Ruby into a text document.
+
+wikipedia https://en.wikipedia.org/wiki/ERuby
+ example
+  class ERBExample
+      attr_accessor:variable1
+      
+      # using bind to access class variables
+      def render()
+          renderer.result(binding)
+      end
+  
+      def initialize(variable1)
+          @variable1 = variable1
+      end
+  
+      # Expose private binding() method.
+      def get_binding
+          binding()
+      end
+  end
+  
+  example = ERBExample.new(variable1)
+  renderer = ERB.new(template)
+  puts output = renderer.result(example.get_binding)
+ related html asp java-server-pages php rails xml perl java linux haml rdoc
+ summary eRuby (Embedded Ruby) is a templating system that embeds Ruby into a text document. It is often used to embed Ruby code in an HTML document, similar to ASP, JSP and PHP. The templating system of eRuby combines the ruby code and the plain text to provide flow control and variable substitution, thus making it easy to maintain.The View module of the rails is responsible to display the response or output on a browser. In its simplest form, a view can be a piece of HTML code which has some static content. For most applications, just having static content may not be enough. Many Rails applications will require dynamic content created by the controller (action method) to be displayed in their view. This is made possible by using Embedded Ruby to generate templates which can contain dynamic content. Embedded Ruby allows ruby code to be embedded in a view document. This code gets replaced with proper value resulted from the execution of the code at run time. But, by having the ability to embed code in a view document, we risk bridging the clear separation present in the MVC frame. It is thus the responsibility of the developer to make sure that there is a clear separation of responsibility among the model, view and controller modules of his/her application.
+ pageId 3883199
+ created 2006
+ backlinksCount 94
+ revisionCount 148
+ dailyPageViews 36
+ appeared 2004
+
+githubLanguage HTML+ERB
+ fileExtensions erb erbdeface
+ trendingProjectsCount 0
+
+linguistGrammarRepo https://github.com/atom/language-ruby
+ firstCommit 2013
+ lastCommit 2018
+ committerCount 76
+ commitCount 458
+ sampleCount 2
+ example
+  <% provide(:title, @header) %>
+  <% present @users do |user_presenter| %>
+  	<div class="row key-header">
+  		<h1><%= @header %></h1>
+  	</div>
+  
+  	<div class='row'>
+  		<div class='small-12 columns'>
+  			<%= will_paginate %>
+  		</div>
+  	</div>
+  	<div class="row key-table">
+  		<div class="small-12 columns">
+  			<div class="row key-table-row">
+  				<div class="small-2 columns">Name</div>
+  				<div class="small-3 columns">Email</div>
+  				<div class="small-1 columns">Chords</div>
+  				<div class="small-1 columns">Keys</div>
+  				<div class="small-1 columns">Tunings</div>
+  				<div class="small-1 columns">Credits</div>
+  				<div class="small-1 columns">Prem?</div>
+  				<div class="small-2 columns">Since?</div>
+  			</div>
+  
+  			<% if @users == [] %>
+  				<div class="row key-table-row">
+  					<div class="small-4 small-centered columns">No Users</div>
+  				</div>
+  			<% else %>
+  				<%= render @users %>
+  			<% end %>
+  		</div>
+  	</div>
+  	<div class='row'>
+  		<div class='small-12 columns'>
+  			<%= will_paginate %>
+  		</div>
+  	</div>
+  <% end %>
+
+status active
+fileType text

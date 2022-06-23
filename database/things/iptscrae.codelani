@@ -1,3 +1,23 @@
+title IPTSCRAE
 appeared 1994
 type pl
-wikipedia IPTSCRAE
+
+patterns
+ hasCentralPackageRepository? false
+
+wikipedia https://en.wikipedia.org/wiki/IPTSCRAE
+ example
+  /""s={n++{{" "n itoa&}{" buzz"}n 5%ifelse}{" fizz"}n 3%ifelse s+=}{101n>}while s logmsg
+ related forth javascript java html
+ summary Iptscrae is a stack-oriented scripting language used to give additional functionality to The Palace software and servers. Its name comes from the pronunciation of "script" in Pig Latin. [1] The language was created by Jim Bumgardner, who in turn was inspired by Forth, another stack-based language.  Bumgardner chose this style of language because it is extremely easily to implement an interpreter, since there is no need to support parenthetical groupings or operator precedence. The name "iptScrae" was borrowed by Bumgardner from a former colleague and mentor, Kevin Bjorke, who came up with the name "iptscray" for a freeware Forth interpreter a few years previously.  Bumgardner originally created Iptscrae for Idaho, an in-house multi-media authoring system, similar to HyperCard, which he created while an employee at Warner New Media.  He then reused and modified the IptScrae compiler for the Palace project, which was developed in 1994. Although it is a scripting language, many have used it to provide additional functionality to many other programs and functions. Forums can be created with Iptscrae while embedding it with JavaScript, as many factions of Iptscrae fans have done in the past. It's fully possible to implement Iptscrae with other languages, even if they're not on the same dynamic principles. For example, Iptscrae has, in the past, been webbed together with Java, JavaScript, HTML, and other artificial languages, including other scripting languages, programming languages, specification languages, query languages, and markup languages to add more end-user interactions and commands to other programs, without sacrificing user-friendliness. In the past years, Iptscrae has even been utilized in computer peer groups through open-source language compilers, using not only transformation and hardware description languages, but also combining it with several other genres of computer languages to create an intertwined web of user-friendliness and application compatibility.
+ pageId 1603407
+ created 2005
+ backlinksCount 7
+ revisionCount 43
+ dailyPageViews 3
+ appeared 1994
+
+status historical
+fileType text
+
+rosettaCode Iptscrae

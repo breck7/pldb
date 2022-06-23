@@ -1,3 +1,51 @@
+title PL/I
 appeared 1964
 type pl
-wikipedia PL/I
+
+patterns
+ hasPointers? true
+ hasCentralPackageRepository? false
+
+wikipedia https://en.wikipedia.org/wiki/PL/I
+ example
+  /* Read in a line, which contains a string,
+  /* and then print every subsequent line that contains that string. */
+  
+  find_strings: procedure options (main);
+     declare pattern character (100) varying;
+     declare line character (100) varying;
+     declare line_no fixed binary;
+  
+     on endfile (sysin) stop;
+  
+     get edit (pattern) (L);
+     line_no = 1;
+     do forever;
+        get edit (line) (L);
+        if index(line, pattern) > 0 then
+           put skip list (line_no, line);
+        line_no = line_no + 1;
+     end;
+  
+  end find_strings;
+ related pl-m xpl pl-p pl-c cobol fortran algol cms-2 sp-k b rexx autocoder comtran george multics basic pascal daisy-systems linux hal-s unix java c isbn doi
+ summary PL/I (Programming Language One, pronounced ) is a procedural, imperative computer programming language designed for scientific, engineering, business and system programming uses. It has been used by various academic, commercial and industrial organizations since it was introduced in the 1960s, and continues to be actively used. PL/I's main domains are data processing, numerical computation, scientific computing, and system programming; it supports recursion, structured programming, linked data structure handling, fixed-point, floating-point, complex, character string handling, and bit string handling. The language syntax is English-like and suited for describing complex data formats, with a wide set of functions available to verify and manipulate them.
+ pageId 23708
+ dailyPageViews 303
+ created 2001
+ backlinksCount 341
+ revisionCount 1138
+ appeared 1964
+
+status active
+fileType text
+
+tiobe PL/I
+
+projectEuler PL/I
+ memberCount
+  2022 1
+
+hopl 185
+
+corporateDevelopers IBM

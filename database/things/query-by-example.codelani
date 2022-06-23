@@ -1,4 +1,22 @@
+title Query by Example
 appeared 1969
 type pl
-wikipedia Query_by_Example
+
+patterns
+ hasCentralPackageRepository? false
+
+wikipedia https://en.wikipedia.org/wiki/Query_by_Example
+ example
+  SELECT * FROM Contacts WHERE City='Sampleton' AND Zipcode='12345';
+ related sql graphql
+ summary Query by Example (QBE) is a database query language for relational databases. It was devised by Moshé M. Zloof at IBM Research during the mid-1970s, in parallel to the development of SQL. It is the first graphical query language, using visual tables where the user would enter commands, example elements and conditions. Many graphical front-ends for databases use the ideas from QBE today. Originally limited only for the purpose of retrieving data, QBE was later extended to allow other operations, such as inserts, deletes and updates, as well as creation of temporary tables. The motivation behind QBE is that a parser can convert the user's actions into statements expressed in a database manipulation language, such as SQL.  Behind the scenes, it is this statement that is actually executed. A suitably comprehensive front-end can minimize the burden on the user to remember the finer details of SQL, and it is easier and more productive for end-users (and even programmers) to select tables and columns by selecting them rather than typing in their names, In the context of information retrieval, QBE has a somewhat different meaning. The user can submit a document, or several documents, and ask for "similar" documents to be retrieved from a document database [see search by multiple examples]. Similarity search is based comparing document vectors (see Vector Space Model). QBE is a seminal work in end-user development, frequently cited in research papers as an early example of this topic. Currently, QBE is supported in several relational database front ends, notably Microsoft Access, which implements "Visual Query by Example", as well as Microsoft SQL Server Enterprise Manager. It is also implemented in several object-oriented databases (e.g. in db4o). QBE is based on the logical formalism called tableau query, although QBE adds some extensions to that, much like SQL is based on the relational algebra.
+ backlinksCount 47
+ pageId 2271084
+ dailyPageViews 136
+ created 2005
+ appeared 1970
+
 reference https://semanticscholar.org/paper/f320e453ae65ddf0a3789f4383fa164481c7a8b3
+status historical
+
+hopl 3957

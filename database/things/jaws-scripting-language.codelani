@@ -1,4 +1,19 @@
+title JAWS Scripting Language
 appeared 2008
 type pl
-wikipedia JAWS_Scripting_Language
+
+patterns
+ hasCentralPackageRepository? false
+
+wikipedia https://en.wikipedia.org/wiki/JAWS_Scripting_Language
+ summary JAWS Scripting Language is a proprietary programming language that facilitates the interoperability of the JAWS for Windows screen reading program with practically any application–both proprietary and off-the-shelf.  The JAWS Scripting Language, or JSL is a compiled language, allowing for source code protection.  "JAWS scripting" commonly also cumulatively refers to customization of JAWS through use of its built-in, user-editable utilities (called "Managers") or editing the configuration files directly, in combination with writing actual scripts.  The scripting language is an API that exposes functionality including a combination of traditional JAWS scripting, MSAA Server direct scripting, and document object model scripting to ensure optimal performance of JAWS to end-users.
+ created 2008
+ backlinksCount 5
+ pageId 16873677
+ revisionCount 12
+ dailyPageViews 5
+ appeared 2011
+
 reference https://en.wikipedia.org/wiki/JAWS_(screen_reader)
+aka JSL
+status historical

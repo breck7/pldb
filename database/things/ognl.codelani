@@ -1,3 +1,19 @@
+title OGNL
 appeared 2007
 type pl
-wikipedia OGNL
+
+patterns
+ hasCentralPackageRepository? false
+
+wikipedia https://en.wikipedia.org/wiki/OGNL
+ related java antlr javacc thymeleaf mvel
+ summary Object-Graph Navigation Language (OGNL) is an open-source Expression Language (EL) for Java, which, while using simpler expressions than the full range of those supported by the Java language, allows getting and setting properties (through defined setProperty and getProperty methods, found in JavaBeans), and execution of methods of Java classes. It also allows for simpler array manipulation. It is aimed to be used in Java EE applications with taglibs as expression language. OGNL was created by Luke Blanshard and Drew Davidson of OGNL Technology. OGNL development was continued by OpenSymphony, which closed in 2011. OGNL is developed now as a part of the Apache Commons.
+ created 2007
+ backlinksCount 13
+ pageId 9332907
+ revisionCount 104
+ dailyPageViews 29
+ appeared 2011
+
+status historical
+isOpenSource true

@@ -1,3 +1,41 @@
+title Grammatical Framework
 appeared 1998
 type grammarLanguage
-wikipedia Grammatical_Framework
+
+patterns
+ hasCentralPackageRepository? false
+
+wikipedia https://en.wikipedia.org/wiki/Grammatical_Framework
+ example
+  > parse -lang=Fre "Marie aime Jean" | align_words -lang=Fre,Dut,Lat -view="eog"
+ related javascript java
+ summary Grammatical Framework (GF) is a programming language for writing grammars of natural languages. GF is capable of parsing and generating texts in several languages simultaneously while working from a language-independent representation of meaning. Grammars written in GF can be compiled into different formats including JavaScript and Java and can be reused as software components. A companion to GF is the GF Resource Grammar Library, a reusable library for dealing with the morphology and syntax of a growing number of natural languages. Both GF itself and the GF Resource Grammar Library are open-source. Typologically, GF is a functional programming language. Mathematically, it is a type-theoretic formal system (a logical framework to be precise) based on Martin-Löf's intuitionistic type theory, with additional judgments tailored specifically to the domain of linguistics.
+ backlinksCount 6
+ pageId 10372077
+ created 2007
+ revisionCount 36
+ dailyPageViews 9
+ appeared 1998
+
+githubLanguage Grammatical Framework
+ fileExtensions gf
+ trendingProjectsCount 0
+
+linguistGrammarRepo https://github.com/atom-haskell/language-haskell
+ firstCommit 2014
+ lastCommit 2018
+ committerCount 13
+ commitCount 463
+ sampleCount 41
+ example
+  --# -path=.:present
+  
+  -- (c) 2009 Aarne Ranta under LGPL
+  
+  concrete FoodsFin of Foods = FoodsI with 
+    (Syntax = SyntaxFin),
+    (LexFoods = LexFoodsFin) ;
+  
+
+status active
+fileType text

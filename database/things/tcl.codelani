@@ -1,5 +1,172 @@
+title Tool Command Language
 appeared 1988
 type pl
 creators John Ousterhout
+
+patterns
+ hasCentralPackageRepository? false
+ hasComments? true
+
+wikipedia https://en.wikipedia.org/wiki/Tcl
+ example
+  oo::class create fruit {
+      method eat {} {
+          puts "yummy!"
+      }
+  }
+  oo::class create banana {
+      superclass fruit
+      constructor {} {
+          my variable peeled
+          set peeled 0
+      }
+      method peel {} {
+          my variable peeled
+          set peeled 1
+          puts "skin now off"
+      }
+      method edible? {} {
+          my variable peeled
+          return $peeled
+      }
+      method eat {} {
+          if {![my edible?]} {
+              my peel
+          }
+          next
+      }
+  }
+  set b [banana new]
+  $b eat               → prints "skin now off" and "yummy!"
+  fruit destroy
+  $b eat               → error "unknown command"
+ related awk lisp php tea windows-powershell c python expect unicode regex java unix linux bourne-shell xotcl snit verilog vhdl udp mysql postgresql sqlite
+ summary Tcl (pronounced "tickle" or tee cee ell, ) is a high-level, general-purpose, interpreted, dynamic programming language. It was designed with the goal of being very simple but powerful. Tcl casts everything into the mold of a command, even programming constructs like variable assignment and procedure definition. Tcl supports multiple programming paradigms, including object-oriented, imperative and functional programming or procedural styles. It is commonly used embedded into C applications, for rapid prototyping, scripted applications, GUIs, and testing. Tcl interpreters are available for many operating systems, allowing Tcl code to run on a wide variety of systems. Because Tcl is a very compact language, it is used on embedded systems platforms, both in its full form and in several other small-footprint versions. The popular combination of Tcl with the Tk extension is referred to as Tcl/Tk, and enables building a graphical user interface (GUI) natively in Tcl. Tcl/Tk is included in the standard Python installation in the form of Tkinter.
+ pageId 39880682
+ dailyPageViews 567
+ created 2001
+ backlinksCount 938
+ revisionCount 944
+ appeared 1988
+ fileExtensions tcl tbc
+
+githubLanguage Tcl
+ fileExtensions tcl adp tm
+ trendingProjectsCount 0
+
+helloWorldCollection Tool Command Language
+ #!/usr/local/bin/tclsh
+ # Hello World in Tcl
+ 
+ puts "Hello World!"
+ 
+
+linguistGrammarRepo https://github.com/textmate/tcl.tmbundle
+ firstCommit 2005
+ lastCommit 2013
+ committerCount 4
+ commitCount 56
+ sampleCount 2
+ example
+  # XDG Base Directory Specification handling
+  #
+  # Copyright (C) 2013 Lawrence Woodman
+  #
+  # Licensed under an MIT licence.  Please see LICENCE.md for details.
+  #
+  # For XDG Base Directory Specification
+  #   http://standards.freedesktop.org/basedir-spec/basedir-spec-latest.html
+  #
+  package require Tcl 8.5
+  
+  namespace eval XDG {
+    variable DEFAULTS ""
+    namespace export DATA_HOME CONFIG_HOME CACHE_HOME
+    namespace export RUNTIME_DIR DATA_DIRS CONFIG_DIRS
+  }
+  
+  proc XDG::SetDefaults {} {
+    variable DEFAULTS
+    if {$DEFAULTS ne ""} return
+    set DEFAULTS [list \
+      DATA_HOME   [file join $::env(HOME) .local share] \
+      CONFIG_HOME [file join $::env(HOME) .config] \
+      CACHE_HOME  [file join $::env(HOME) .cache] \
+      DATA_DIRS   [list [file join /usr local share] [file join /usr share]] \
+      CONFIG_DIRS [list [file join /etc xdg ]]
+    ]
+  }
+  
+  proc XDG::XDGVarSet {var} {
+    expr {[info exists ::env(XDG_$var)] && $::env(XDG_$var) ne ""}
+  }
+  
+  proc XDG::Dir {var {subdir ""} } {
+    variable DEFAULTS
+    SetDefaults
+    set dir [dict get $DEFAULTS $var]
+  
+    if {[XDGVarSet $var]} {
+      set dir $::env(XDG_$var)
+    }
+  
+    return [file join $dir $subdir]
+  }
+  
+  proc XDG::Dirs {var {subdir ""} } {
+    variable DEFAULTS
+    SetDefaults
+    set rawDirs [dict get $DEFAULTS $var]
+  
+    if {[XDGVarSet $var]} {
+      set rawDirs [split $::env(XDG_$var) ":"]
+    }
+  
+    set outDirs {}
+    foreach dir $rawDirs {
+      lappend outDirs [file join $dir $subdir]
+    }
+    return $outDirs
+  }
+  
+  # The remaining procs reference the environmental variables XDG_
+  # followed by the proc name.
+  proc XDG::DATA_HOME {{subdir ""}} {Dir DATA_HOME $subdir}
+  proc XDG::CONFIG_HOME {{subdir ""}} {Dir CONFIG_HOME $subdir}
+  proc XDG::CACHE_HOME {{subdir ""}} {Dir CACHE_HOME $subdir}
+  
+  proc XDG::RUNTIME_DIR {{subdir ""}} {
+    if {![XDGVarSet RUNTIME_DIR]} { return {} }
+    return [file join $::env(XDG_RUNTIME_DIR) $subdir]
+  }
+  
+  # The following procs returning the directories as a list with the most
+  # important first.
+  proc XDG::DATA_DIRS {{subdir ""}} {Dirs DATA_DIRS $subdir}
+  proc XDG::CONFIG_DIRS {{subdir ""}} {Dirs CONFIG_DIRS $subdir}
+  
+
 website http://www.tcl.tk
-wikipedia Tcl
+standsFor Tool Command Language
+status active
+
+tryItOnline tcl
+
+fileExtensions tcl tbc
+fileType text
+isOpenSource true
+
+tiobe Tcl
+
+projectEuler Tcl
+ memberCount
+  2019 75
+  2022 71
+
+quineRelay Tcl
+
+ubuntuPackage tcl
+
+codeMirror tcl
+
+rosettaCode Tcl

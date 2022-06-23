@@ -1,5 +1,26 @@
+title Futhark
 appeared 2013
 type pl
-website https://futhark-lang.org
-github https://github.com/diku-dk/futhark
+
+patterns
+ hasCentralPackageRepository? false
+ hasComments? true
+
 description <a href='https://futhark-lang.org'>Futhark</a>, a high-performance parallel functional array language targeting GPUs.
+
+githubRepo https://github.com/diku-dk/futhark
+ firstCommit 2013
+ stars 759
+ forks 57
+ subscribers 55
+ created 2013
+ updated 2018
+ description :boom::computer::boom: A data-parallel functional programming language
+ issues 32
+
+website https://futhark-lang.org
+status active
+fileType text
+isOpenSource true
+
+rosettaCode Futhark

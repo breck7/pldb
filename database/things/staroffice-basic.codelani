@@ -1,3 +1,42 @@
+title StarOffice Basic
 appeared 2000
 type pl
-wikipedia StarOffice_Basic
+
+patterns
+ hasCentralPackageRepository? false
+
+wikipedia https://en.wikipedia.org/wiki/StarOffice_Basic
+ example
+  Sub ParaCount
+  '
+  ' Count number of paragraphs in a text document
+  '
+      Dim Doc As Object, Enum As Object, TextEl As Object, Count As Long
+      Doc = ThisComponent
+  ' Is this a text document?
+      If Not Doc.SupportsService("com.sun.star.text.TextDocument") Then
+          MsgBox "This macro must be run from a text document", 64, "Error"
+          Exit Sub
+      End If
+      Count = 0
+  ' Examine each component - paragraph or table?
+      Enum = Doc.Text.CreateEnumeration
+      While Enum.HasMoreElements
+          TextEl = Enum.NextElement
+  ' Is the component a paragraph?
+          If TextEl.SupportsService("com.sun.star.text.Paragraph") Then
+              Count = Count + 1
+          End If
+      Wend
+  'Display result
+      MsgBox Count, 0, "Paragraph Count"
+  End Sub
+ related basic vba isbn
+ summary OpenOffice Basic (formerly known as StarOffice Basic or StarBasic or OOoBasic) is a dialect of the programming language BASIC that originated with the StarOffice office suite and spread through OpenOffice.org and derivatives such as LibreOffice (where it is known as LibreOffice Basic). The language is a domain-specific programming language which specifically serves the OpenOffice application suite.
+ created 2012
+ backlinksCount 113
+ pageId 318131
+ revisionCount 2
+ dailyPageViews 5
+
+status historical

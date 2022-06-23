@@ -1,0 +1,110 @@
+intCell
+populationCountCell
+ description A positive integer representing a number of people.
+ extends intCell
+stringCell
+ highlightScope string
+boolCell
+codeCell
+ highlightScope comment
+urlCell
+ highlightScope constant.language
+keywordCell
+ highlightScope keyword
+yearCell
+ extends intCell
+permalinkCell
+ description An ID of a language on Codelani.
+externalGuidCell
+ description A GUID from another site.
+errorNode
+ baseNodeType errorNode
+fileNameCell
+ highlightScope string
+permalinkCell
+abstractFactNode
+ abstract
+ cells keywordCell
+abstractSectionNode
+ extends abstractFactNode
+ boolean padOnFormat true
+ single
+abstractPermalinksNode
+ abstract
+ catchAllCellType permalinkCell
+ extends abstractFactNode
+ description Links to other entities on CodeLani.
+abstractPermalinkNode
+ abstract
+ cells keywordCell permalinkCell
+ extends abstractFactNode
+ description Link to other entities on CodeLani.
+abstractUrlNode
+ cells keywordCell urlCell
+ extends abstractFactNode
+ abstract
+abstractIntNode
+ cells keywordCell intCell
+ extends abstractFactNode
+ abstract
+abstractCountNode
+ abstract
+ extends abstractIntNode
+abstractPopulationCountNode
+ abstract
+ extends abstractCountNode
+abstractYearNode
+ cells keywordCell yearCell
+ extends abstractIntNode
+ abstract
+abstractAnnualPopulationCountNode
+ catchAllNodeType annualPopulationCountNode
+ description A map of counts, one per year.
+ extends abstractFactNode
+ abstract
+annualPopulationCountNode
+ cells yearCell populationCountCell
+abstractWordNode
+ cells keywordCell stringCell
+ extends abstractFactNode
+ abstract
+abstractBooleanNode
+ cells keywordCell boolCell
+ abstract
+abstractStringNode
+ catchAllCellType stringCell
+ extends abstractFactNode
+ abstract
+abstractMultiwordGuidNode
+ abstract
+ cells keywordCell
+ catchAllCellType externalGuidCell
+ extends abstractFactNode
+ boolean padOnFormat true
+ single
+abstractOneWordGuidNode
+ abstract
+ cells keywordCell externalGuidCell
+ extends abstractFactNode
+ boolean padOnFormat true
+ single
+abstractUrlGuidNode
+ abstract
+ extends abstractOneWordGuidNode
+ cells keywordCell urlCell
+abstractCodeNode
+ abstract
+ catchAllNodeType lineOfCodeNode
+ extends abstractFactNode
+ boolean includeChildrenInCsv false
+lineOfCodeNode
+ catchAllCellType codeCell
+ catchAllNodeType lineOfCodeNode
+blankCell
+blankLineNode
+ description Blank lines compile to nothing in the HTML.
+ cells blankCell
+ compiler
+  stringTemplate 
+ pattern ^$
+ tags doNotSynthesize

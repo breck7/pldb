@@ -1,6 +1,7 @@
+title Smali
 appeared 2010
 type assembly
-github https://github.com/JesusFreke/smali
+
 example
  .method public getTokens(I)I
   .locals 2
@@ -36,3 +37,157 @@ example
   
   goto :goto_0
  .end method
+
+patterns
+ hasCentralPackageRepository? false
+
+githubLanguage Smali
+ fileExtensions smali
+ trendingProjects
+  author name avatar url language languageColor stars forks currentPeriodStars description
+  AhMyth AhMyth-Android-RAT https://github.com/AhMyth.png https://github.com/AhMyth/AhMyth-Android-RAT Smali #ccc 1554 764 152 "Android Remote Administration Tool"
+  phhusson treble_experimentations https://github.com/phhusson.png https://github.com/phhusson/treble_experimentations Smali #ccc 827 200 36 "Notes about tinkering with Android Project Treble"
+ trendingProjectsCount 3
+
+githubRepo https://github.com/JesusFreke/smali
+ firstCommit 2009
+ stars 3116
+ forks 652
+ subscribers 251
+ created 2012
+ updated 2018
+ description smali/baksmali
+ issues 97
+
+linguistGrammarRepo https://github.com/ShaneWilton/sublime-smali
+ firstCommit 2013
+ lastCommit 2016
+ committerCount 4
+ commitCount 46
+ sampleCount 7
+ example
+  .class public Lcom/tdq/game/shootbubble/sprite/PenguinSprite;
+  .super Lcom/tdq/game/shootbubble/sprite/Sprite;
+  .source "PenguinSprite.java"
+  
+  
+  # static fields
+  .field public static final LOST_SEQUENCE:[[I
+  
+  .field public static final STATE_FIRE:I = 0x2
+  
+  .field public static final STATE_GAME_LOST:I = 0x5
+  
+  .field public static final STATE_GAME_WON:I = 0x4
+  
+  .field public static final STATE_TURN_LEFT:I = 0x0
+  
+  .field public static final STATE_TURN_RIGHT:I = 0x1
+  
+  .field public static final STATE_VOID:I = 0x3
+  
+  .field public static final WON_SEQUENCE:[[I
+  
+  
+  # instance fields
+  .field private count:I
+  
+  .field private currentPenguin:I
+  
+  .field private finalState:I
+  
+  .field private nextPosition:I
+  
+  .field private rand:Ljava/util/Random;
+  
+  .field private spritesImage:Lcom/tdq/game/shootbubble/sprite/BmpWrap;
+  
+  
+  # direct methods
+  .method static constructor <clinit>()V
+      .locals 8
+  
+      .prologue
+      const/4 v7, 0x4
+  
+      const/4 v6, 0x3
+  
+      const/4 v5, 0x1
+  
+      const/4 v4, 0x0
+  
+      const/4 v3, 0x2
+  
+      .line 67
+      const/16 v0, 0x8
+  
+      new-array v0, v0, [[I
+  
+      new-array v1, v3, [I
+  
+      fill-array-data v1, :array_0
+  
+      aput-object v1, v0, v4
+  
+      new-array v1, v3, [I
+  
+      fill-array-data v1, :array_1
+  
+      aput-object v1, v0, v5
+  
+      new-array v1, v3, [I
+  
+      fill-array-data v1, :array_2
+  
+      aput-object v1, v0, v3
+  
+      new-array v1, v3, [I
+  
+      fill-array-data v1, :array_3
+  
+      aput-object v1, v0, v6
+  
+      new-array v1, v3, [I
+  
+      fill-array-data v1, :array_4
+  
+      aput-object v1, v0, v7
+  
+      const/4 v1, 0x5
+  
+      new-array v2, v3, [I
+  
+      fill-array-data v2, :array_5
+  
+      aput-object v2, v0, v1
+  
+      const/4 v1, 0x6
+  
+      new-array v2, v3, [I
+  
+      fill-array-data v2, :array_6
+  
+      aput-object v2, v0, v1
+  
+      const/4 v1, 0x7
+  
+      new-array v2, v3, [I
+  
+      fill-array-data v2, :array_7
+  
+      aput-object v2, v0, v1
+  
+      sput-object v0, Lcom/tdq/game/shootbubble/sprite/PenguinSprite;->LOST_SEQUENCE:[[I
+  
+      .line 69
+      const/16 v0, 0x8
+  
+      new-array v0, v0, [[I
+  
+      new-array v1, v3, [I
+  
+      fil
+
+status active
+fileType text
+isOpenSource true

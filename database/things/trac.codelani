@@ -1,3 +1,23 @@
+title Text Reckoning And Compiling
 appeared 1964
 type pl
-wikipedia TRAC_(programming_language)
+
+patterns
+ hasCentralPackageRepository? false
+
+wikipedia https://en.wikipedia.org/wiki/TRAC_(programming_language)
+ related sam76 emacs-editor ttm
+ summary TRAC (for Text Reckoning And Compiling) Language is a programming language developed between 1959-1964 by Calvin Mooers and implemented on a PDP-10 in 1964 by L. Peter Deutsch. It was one of three "first languages" recommended by Ted Nelson in Computer Lib. TRAC T64 was used until 1984, when Mooers updated it to TRAC T84. TRAC is a purely text-based language—a kind of macro language. Unlike traditional ad hoc macro languages of the time, such as those found in assemblers, TRAC is well planned, consistent, and in many senses complete. It has explicit input and output operators, unlike the typical implicit I/O at the outermost macro level, which makes it simultaneously simpler and more versatile than older macro languages. It also differs from traditional macro languages in that TRAC numbers are strings of digits, with integer arithmetic (without specific limits on maximum values) being provided through built-in ("primitive") functions. Arguably, one aspect of its completeness is that the concept of error is limited to events like lack of file space and requesting expansion of a string longer than the interpreter's working storage; what would in many languages be described as illegal operations are dealt with in TRAC by defining a result (often a null string) for every possible combination of a function's argument strings. The emphasis on strings as strings is so strong that TRAC provides mechanisms for handling the language's own syntactic characters either in their syntactic roles or like any other character, and self-modifying code has more the feel of a natural consequence of typical TRAC programming techniques than of being a special feature. TRAC is, like APL or LISP, an expression oriented language (in contrast to more typical procedure-oriented languages), but unlike APL, it completely lacks operators. In most respects, it is a case of pure functional programming. TRAC has in common with LISP a syntax that generally involves the presence of many levels of nested parentheses. Mooers trademarked the name TRAC in an effort to maintain his control over the definition of the language, an unusual and pioneering action at the time. At one point, he brought an intellectual property infringement suit against DEC, alleging that a contract to deliver a mini-computer with a TRAC interpreter violated his rights. "The first issue of Dr. Dobb's Journal, one of the early publications in the personal computer field, has a vitriolic editorial against Mooers and his rapacity in trying to charge people for his computing language." However, the trademark (#72301892) expired in 1992. The name has since been used several times for unrelated information technology projects, including a current open source project management system called Trac. There have been various languages inspired by TRAC. To avoid any trouble with Mooers, they renamed primitives and/or used different metacharacters. In SAM76's case, primitives were added, according to Claude Kagan, "because TRAC is baby talk". In MINT's case, primitives were added to give access to a sophisticated text editor machinery. one perceived shortcoming of TRAC was lack of full extensibility: some TRAC primitive functions are sensitive to the distinction between a null (zero-character) argument and a nonexistent (non-delimited) one, but beyond its last non-null argument, a user-defined function cannot make the distinction. SAM76 was a TRAC-like language which eliminated that limitation. Russ Nelson implemented an emacs extension language named MINT (MINT Is Not TRAC). This language is used by the FreeDOS editor FreeMACS. TRAC was used by FTP Software in its PC/TCP product as the modem dialler scripting language. TRAC was also used as a front end on Digital Productions Cray renderer for films, including The Last Starfighter.
+ pageId 352419
+ dailyPageViews 13
+ created 2003
+ backlinksCount 25
+ revisionCount 67
+ appeared 1964
+
+standsFor Text Reckoning And Compiling
+status historical
+country US
+fileType text
+
+hopl 276

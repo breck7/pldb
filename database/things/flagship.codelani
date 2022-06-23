@@ -1,6 +1,7 @@
+title flagship
 appeared 1986
 type pl
-website http://www.flagship.de/
+
 example
  ** File: hello1.prg         // your first program
  ? "Hello world!"            // similar to printf("\nHello world!")
@@ -29,3 +30,5 @@ example
  ENDIF
  BROWSE ()                   // browse/edit
  QUIT                        // exit back to command line
+
+website http://www.flagship.de/

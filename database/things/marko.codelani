@@ -1,4 +1,48 @@
+title Marko
 appeared 2014
 type textMarkup
+
+patterns
+ hasCentralPackageRepository? false
+
+githubLanguage Marko
+ fileExtensions marko
+ trendingProjectsCount 0
+
+githubRepo https://github.com/marko-js/marko
+ firstCommit 2014
+ stars 7509
+ forks 410
+ subscribers 227
+ created 2014
+ updated 2018
+ description A friendly (and fast!) UI library from eBay that makes building web apps fun
+ issues 110
+
+linguistGrammarRepo https://github.com/marko-js/marko-tmbundle
+ firstCommit 2016
+ lastCommit 2018
+ committerCount 5
+ commitCount 40
+ sampleCount 3
+ example
+  $ var name = 'Frank';
+  $ var colors = ['red', 'green', 'blue'];
+  
+  <h1>
+      Hello ${name}!
+  </h1>
+  
+  <ul if(colors.length)>
+      <li style={color: color} for(color in colors)>
+          ${color}
+      </li>
+  </ul>
+  <div else>
+      No colors!
+  </div>
+
 website https://markojs.com/
-github https://github.com/marko-js/marko
+status active
+fileType text
+isOpenSource true

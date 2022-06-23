@@ -1,3 +1,66 @@
+title PLpgSQL
 appeared 1998
 type pl
-wikipedia PL/pgSQL
+
+patterns
+ hasCentralPackageRepository? false
+
+wikipedia https://en.wikipedia.org/wiki/PL/pgSQL
+ related pl-sql ada postgresql sql-psm sql bison
+ summary PL/pgSQL (Procedural Language/PostgreSQL) is a procedural programming language supported by the PostgreSQL ORDBMS.  It closely resembles Oracle's PL/SQL language. Implemented by Jan Wieck, PL/pgSQL first appeared with PostgreSQL 6.4, released on October 30, 1998. Version 9 also implements some ISO SQL/PSM features, like overloading of SQL-invoked functions and procedures.PL/pgSQL, as a fully featured programming language, allows much more procedural control than SQL, including the ability to use loops and other control structures. SQL statements and triggers can call functions created in the PL/pgSQL language. The design of PL/pgSQL aimed to allow PostgreSQL users to perform more complex operations and computations than SQL, while providing ease of use. The language is able to be defined as trusted by the server.PL/pgSQL is one of the programming languages included in the standard PostgreSQL distribution, the others being PL/Tcl, PL/Perl and PL/Python. In addition many others are available from third parties, including PL/Java, PL/pgPSM, PL/php, PL/R,  PL/Ruby,PL/sh,  PL/Lua and PL/v8.  PostgreSQL uses Bison as its parser, making it easy to port many open-source languages, as well as to reuse code.
+ created 2005
+ backlinksCount 37
+ pageId 1545014
+ revisionCount 89
+ dailyPageViews 54
+ appeared 1998
+
+githubLanguage PLpgSQL
+ fileExtensions sql
+ trendingProjects
+  author name avatar url language languageColor stars forks currentPeriodStars description
+  openmaptiles openmaptiles https://github.com/openmaptiles.png https://github.com/openmaptiles/openmaptiles PLpgSQL #ccc 711 222 26 "OpenMapTiles Vector Tile Schema Implementation"
+ trendingProjectsCount 2
+
+linguistGrammarRepo https://github.com/textmate/sql.tmbundle
+ firstCommit 2005
+ lastCommit 2016
+ committerCount 15
+ commitCount 224
+ sampleCount 7
+ example
+  load 'plpgsql';
+  load 'plpgsql_lint';
+  
+  DROP FUNCTION IF EXISTS list_sites();
+  CREATE OR REPLACE FUNCTION list_sites() RETURNS TABLE (fc json) AS
+  $func$
+  BEGIN
+  RETURN QUERY SELECT row_to_json(feat_col) FROM (
+      SELECT 'FeatureCollection' AS type, array_to_json(array_agg(feat)) AS features FROM (
+              SELECT DISTINCT ON (new_id) 'Feature' AS type, ST_ASGeoJSON(loc.geom)::json AS geometry, row_to_json(
+                  (SELECT prop FROM (SELECT new_id) AS prop)) AS properties FROM location loc) AS feat) AS feat_col;
+  END;
+  $func$ LANGUAGE plpgsql;
+  
+  
+  DROP FUNCTION IF EXISTS get_observations(character varying, integer);
+  CREATE OR REPLACE FUNCTION get_observations(kind varchar, site_id integer) RETURNS TABLE (fc json) AS
+  $func$
+  BEGIN
+      IF kind = 'o2_abs' THEN
+          RETURN QUERY SELECT array_to_json(array_agg(row_to_json(obs))) FROM (
+              SELECT observation_date AS date, o2_abs AS value FROM oxygen WHERE new_id = site_id) AS obs;
+      ELSIF kind = 'o2_rel' THEN
+          RETURN QUERY SELECT array_to_json(array_agg(row_to_json(obs))) FROM (
+              SELECT observation_date AS date, o2_rel AS value FROM oxygen WHERE new_id = site_id) AS obs;
+      ELSIF kind = 'temp' THEN
+          RETURN QUERY SELECT array_to_json(array_agg(row_to_json(obs))) FROM (
+              SELECT observation_date AS date, temp AS value FROM oxygen WHERE new_id = site_id) AS obs;
+      END IF;
+  END;
+  $func$ LANGUAGE plpgsql;
+  
+
+status active
+fileType text

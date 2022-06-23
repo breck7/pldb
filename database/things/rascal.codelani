@@ -1,6 +1,56 @@
+title Rascal
 appeared 2013
 type grammarLanguage
-website https://www.rascal-mpl.org/
-github https://github.com/usethesource/rascal
-wikipedia RascalMPL
+
+patterns
+ hasCentralPackageRepository? false
+
 description Rascal solves this problem by integrating source code analysis, transformation, and generation primitives on the language level. Use it for any kind of metaprogramming task: to construct parsers for programming languages, to analyze and transform source code, or to define new DSLs with full IDE support. Rascal is a programming language; such that meta programs can be created by, understood by, and debugged by programmers.
+
+wikipedia https://en.wikipedia.org/wiki/RascalMPL
+ related linux unix antlr
+ summary Rascal is an experimental domain specific language for metaprogramming, such as static code analysis, program transformation and implementation of domain specific languages. It is a general meta language in the sense that it does not have a bias for any particular software language. It includes primitives from relational calculus and term rewriting. Its syntax and semantics are based on procedural (imperative) and functional programming.
+ backlinksCount 11
+ pageId 26118915
+ created 2010
+ revisionCount 23
+ dailyPageViews 7
+ appeared 2009
+
+githubLanguage Rascal
+ fileExtensions rsc
+ trendingProjectsCount 0
+
+githubRepo https://github.com/usethesource/rascal
+ firstCommit 2008
+ stars 187
+ forks 52
+ subscribers 28
+ created 2012
+ updated 2018
+ description The implementation of the Rascal meta-programming language (including interpreter, type checker, parser generator, compiler and JVM based run-time system)
+ issues 390
+
+linguistGrammarRepo https://github.com/usethesource/rascal-syntax-highlighting
+ firstCommit 2016
+ lastCommit 2017
+ committerCount 3
+ commitCount 39
+ sampleCount 4
+ example
+  module Syntax
+  
+  extend lang::std::Layout;
+  extend lang::std::Id;
+  
+  start syntax Machine = machine: State+ states;
+  syntax State = @Foldable state: "state" Id name Trans* out;
+  syntax Trans = trans: Id event ":" Id to;
+  
+
+website https://www.rascal-mpl.org/
+status active
+fileType text
+isOpenSource true
+
+rosettaCode Rascal

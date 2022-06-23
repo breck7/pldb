@@ -1,3 +1,9 @@
+title Virtual function
 type pattern
-wikipedia Virtual_function
+psuedoExample virtual Shout();
 description A virtual function defines a target function to be executed, but the target might not be known at compile time.
+
+wikipedia https://en.wikipedia.org/wiki/Virtual_function
+
+status active
+patternKeyword hasVirtualFunctions?

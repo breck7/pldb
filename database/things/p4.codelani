@@ -1,4 +1,77 @@
+title P4
 appeared 2014
 type pl
+
+patterns
+ hasCentralPackageRepository? false
+
+wikipedia https://en.wikipedia.org/wiki/P4_(programming_language)
+ related c python
+ summary P4 is a programming language designed to allow programming of packet forwarding planes. In contrast to a general purpose language such as C or Python, P4 is a domain-specific language with a number of constructs optimized around network data forwarding.  P4 is an open-source, permissively licensed language and is maintained by a non-profit organization called the P4 Language Consortium.  The language was originally described in a SIGCOMM CCR paper in 2014 titled “Programming Protocol-Independent Packet Processors” – the alliterative name shortens to “P4”.
+ pageId 46347117
+ created 2015
+ backlinksCount 6
+ revisionCount 28
+ dailyPageViews 89
+ appeared 2014
+ fileExtensions p4
+
+githubLanguage P4
+ fileExtensions p4
+ trendingProjectsCount 0
+
+linguistGrammarRepo https://github.com/TakeshiTseng/atom-language-p4
+ firstCommit 2016
+ lastCommit 2017
+ committerCount 3
+ commitCount 30
+ sampleCount 2
+ example
+  // Copyright 2015, Barefoot Networks, Inc.
+  //
+  // Licensed under the Apache License, Version 2.0 (the "License");
+  // you may not use this file except in compliance with the License.
+  // You may obtain a copy of the License at
+  //
+  //     http://www.apache.org/licenses/LICENSE-2.0
+  //
+  // Unless required by applicable law or agreed to in writing, software
+  // distributed under the License is distributed on an "AS IS" BASIS,
+  // WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  // See the License for the specific language governing permissions and
+  // limitations under the License.
+  
+  action set_mirror_id(session_id) {
+      clone_ingress_pkt_to_egress(session_id);
+  }
+  
+  table mirror_acl {
+      reads {
+          ingress_metadata.if_label : ternary;
+          ingress_metadata.bd_label : ternary;
+  
+          /* ip acl */
+          ingress_metadata.lkp_ipv4_sa : ternary;
+          ingress_metadata.lkp_ipv4_da : ternary;
+          ingress_metadata.lkp_ip_proto : ternary;
+  
+          /* mac acl */
+          ingress_metadata.lkp_mac_sa : ternary;
+          ingress_metadata.lkp_mac_da : ternary;
+          ingress_metadata.lkp_mac_type : ternary;
+      }
+      actions {
+          nop;
+          set_mirror_id;
+      }
+      size : INGRESS_MIRROR_ACL_TABLE_SIZE;
+  }
+  
+
 website http://p4.org
-wikipedia P4_(programming_language)
+status active
+
+twitter p4org
+
+fileType text
+isOpenSource true

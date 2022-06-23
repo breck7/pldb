@@ -1,6 +1,7 @@
+title Document Definition Markup Language
 appeared 1999
 type xmlFormat
-wikipedia Document_Definition_Markup_Language
+
 example
  <?xml version="1.0"?>
  
@@ -334,3 +335,10 @@ example
    </ElementDecl>
  
  </DocumentDef>
+
+wikipedia https://en.wikipedia.org/wiki/Document_Definition_Markup_Language
+ summary Document Definition Markup Language (DDML) is an XML schema language proposed in 1999 by various contributors from the xml-dev electronic mailing list. It was published only as a W3C Note, not a Recommendation, and never found favor with developers. DDML began as XSchema, a reformulation of XML DTDs as full XML documents, so that elements and attributes, rather than declarations, could be used to describe a schema. As development continued, the name was changed to DDML, reflecting a shift away from the goal of replicating all DTD functionality, in order to concentrate on providing a robust framework for describing basic element/attribute hierarchy. DDML offered no datatypes or functionality beyond what DTDs already provided, so there was not much advantage to using DDML instead of DTDs. DDML did, however, inform the development of the next generation of XML-based schema languages, including the more successful XML Schema and RELAX NG.
+ backlinksCount 6
+ pageId 2165201
+ dailyPageViews 5
+ appeared 1999

@@ -1,4 +1,128 @@
+title Nullsoft Software Install Script
 appeared 2001
 type pl
+
+patterns
+ hasCentralPackageRepository? false
+ hasComments? true
+
+wikipedia https://en.wikipedia.org/wiki/Nullsoft_Scriptable_Install_System
+ example
+  # Modern UI example script
+  !include MUI.nsh
+  Name "Example 2"
+  OutFile "Example2.exe"
+  !insertmacro MUI_PAGE_WELCOME
+  !insertmacro MUI_PAGE_LICENSE "license.rtf"
+  !insertmacro MUI_PAGE_DIRECTORY
+  !insertmacro MUI_PAGE_COMPONENTS
+  !insertmacro MUI_PAGE_INSTFILES
+  !insertmacro MUI_PAGE_FINISH
+  !insertmacro MUI_LANGUAGE "English"
+  !insertmacro MUI_LANGUAGE "German"
+  !insertmacro MUI_LANGUAGE "French"
+  Section "Extract makensis"
+    SetOutPath $INSTDIR
+    File ..\makensis.exe
+  SectionEnd
+ related c eclipse-editor delphi visual-studio-editor python
+ summary Nullsoft Scriptable Install System (NSIS) is a script-driven installer authoring tool for Microsoft Windows with minimal overhead backed by Nullsoft, the creators of Winamp. NSIS is released under a combination of free software licenses, primarily the zlib license. It has become a widely used alternative to commercial proprietary products like InstallShield, with users including Amazon.com, Dropbox, Ubisoft, FL Studio, BitTorrent, and McAfee.
+ pageId 307436
+ dailyPageViews 97
+ created 2003
+ backlinksCount 103
+ revisionCount 476
+ appeared 2001
+
+githubLanguage NSIS
+ fileExtensions nsi nsh
+ trendingProjectsCount 0
+
+helloWorldCollection Nullsoft Software Install Script
+ ; Hello World in Nullsoft Software Install Script (NSIS)
+ 
+ Caption "Hello World!"
+ OutFile ".\HelloWorld.exe"
+ SilentInstall silent
+ 
+ Section ""
+         MessageBox MB_OK "Hello World!"
+ SectionEnd
+ 
+
+linguistGrammarRepo https://github.com/github-linguist/NSIS
+ firstCommit 2011
+ lastCommit 2016
+ committerCount 12
+ commitCount 75
+ sampleCount 2
+ example
+  ; ---------------------
+  ;       x64.nsh
+  ; ---------------------
+  ;
+  ; A few simple macros to handle installations on x64 machines.
+  ;
+  ; RunningX64 checks if the installer is running on x64.
+  ;
+  ;   ${If} ${RunningX64}
+  ;     MessageBox MB_OK "running on x64"
+  ;   ${EndIf}
+  ;
+  ; DisableX64FSRedirection disables file system redirection.
+  ; EnableX64FSRedirection enables file system redirection.
+  ;
+  ;   SetOutPath $SYSDIR
+  ;   ${DisableX64FSRedirection}
+  ;   File some.dll # extracts to C:\Windows\System32
+  ;   ${EnableX64FSRedirection}
+  ;   File some.dll # extracts to C:\Windows\SysWOW64
+  ;
+  
+  !ifndef ___X64__NSH___
+  !define ___X64__NSH___
+  
+  !include LogicLib.nsh
+  
+  !macro _RunningX64 _a _b _t _f
+    !insertmacro _LOGICLIB_TEMP
+    System::Call kernel32::GetCurrentProcess()i.s
+    System::Call kernel32::IsWow64Process(is,*i.s)
+    Pop $_LOGICLIB_TEMP
+    !insertmacro _!= $_LOGICLIB_TEMP 0 `${_t}` `${_f}`
+  !macroend
+  
+  !define RunningX64 `"" RunningX64 ""`
+  
+  !macro DisableX64FSRedirection
+  
+    System::Call kernel32::Wow64EnableWow64FsRedirection(i0)
+  
+  !macroend
+  
+  !define DisableX64FSRedirection "!insertmacro DisableX64FSRedirection"
+  
+  !macro EnableX64FSRedirection
+  
+    System::Call kernel32::Wow64EnableWow64FsRedirection(i1)
+  
+  !macroend
+  
+  !define EnableX64FSRedirection "!insertmacro EnableX64FSRedirection"
+  
+  !endif # !___X64__NSH___
+  
+
 website http://nsis.sourceforge.net
-wikipedia Nullsoft_Scriptable_Install_System
+standsFor Nullsoft Software Install Script
+status active
+
+twitter nsis_tweets
+
+fileType text
+
+tiobe NSIS
+
+codeMirror nsis
+
+rosettaCode NSIS

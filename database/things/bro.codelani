@@ -1,5 +1,31 @@
+title Big Red One
 appeared 1994
 type pl
-website https://www.bro.org/
-wikipedia Bro
+
+patterns
+ hasCentralPackageRepository? false
+
 description Bro's domain-specific scripting language enables site-specific monitoring policies.
+
+wikipedia https://en.wikipedia.org/wiki/Bro
+ backlinksCount 97
+ pageId 8846268
+ created 2007
+ revisionCount 513
+ dailyPageViews 41
+ appeared 1972
+
+githubLanguage Bro
+ fileExtensions bro
+ trendingProjectsCount 0
+
+linguistGrammarRepo https://github.com/bro/bro-sublime
+ firstCommit 2014
+ lastCommit 2016
+ committerCount 4
+ commitCount 32
+
+website https://www.bro.org/
+standsFor Big Red One
+status active
+fileType text

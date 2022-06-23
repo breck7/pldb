@@ -1,5 +1,14 @@
+title ColorForth
 appeared 1992
 type pl
-website https://colorforth.github.io/cf.htm
-wikipedia ColorForth
+creators Charles H. Moore
 description In Forth, a new word is defined by a preceeding colon, words inside a definition are compiled, outside are executed. In colorForth a new word is red, green words are compiled, yellow executed. This use of color further reduces the syntax, or punctuation, needed. It also makes explicit how the computer will interpret each word.
+
+wikipedia https://en.wikipedia.org/wiki/ColorForth
+ summary colorForth is a programming language from the Forth language's original designer, Charles H. Moore, developed in the 1990s. There was an earlier predecessor called 386 OK which appeared for sale at Silicon Valley Forth Interest Group (SVFIG) meetings in 1992.An idiosyncratic programming environment, the colors simplify Forth's semantics, speed compiling, and are said to aid Moore's own poor eyesight: colorForth uses different colors in its source code (replacing some of the punctuation in standard Forth) to determine how different words are treated. colorForth was originally developed as the scripting language for Moore's own homebrew VLSI CAD program OKAD, with which he develops custom Forth processors. As the language gained utility, he rewrote his CAD program in it, spruced up the environment, and released it to the public. It has since gained a small following, spurred much debate in the Forth community, and sprung offshoots for other processors and operating environments. The language's roots are closer to the Forth machine languages Moore develops for his processors than to the mainstream standardized Forths in more widespread use. The language comes with its own tiny (63K) operating system. Practically everything is stored as source code and compiled as and when needed. The current colorForth environment is limited to running on Pentium grade PCs with limited support for lowest-common-denominator motherboards, AGP video, disk, and network hardware. Coloring in colorForth has semantic meaning. Red words start a definition and green words are compiled into the current definition. Thus, colorForth would be rendered in standard Forth as:   : color forth ;  Moore developed Forth in the early 1970s and created a series of implementations of the language. In the 1980s he diverged from (or rather ignored) the standardization of the language, instead continuing to evolve it. He developed a series of Forth-like languages, each fairly extreme in its simplicity: Machine Forth, OK, colorForth. There is some controversy about colorForth marginalizing color blind programmers, but Moore has stated that color is only one option for displaying the language. One of Moore's papers on colorForth was printed in black and white, but used italics and other typographical conventions to present source code.
+ backlinksCount 7
+ pageId 436740
+ dailyPageViews 13
+ appeared 1990
+
+website https://colorforth.github.io/cf.htm

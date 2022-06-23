@@ -1,8 +1,16 @@
+title GUIDO music notation
 appeared 1998
 type textDataFormat
 creators Holger H. Hoos and Keith Hamel
-wikipedia GUIDO_music_notation
+
 example
  [ \clef<"treble"> \key<"D"> \meter<"4/4">
   a1*1/2 b a/4. g/8 f#/4 g a/2 b a/4. g/8 f#/4 g
   a/2 a b c#2/4 d c#/2 b1 a/1 ]
+
+wikipedia https://en.wikipedia.org/wiki/GUIDO_music_notation
+ summary GUIDO Music Notation is a computer music notation format designed to logically represent all aspects of music in a manner that is both computer-readable and easily readable by human beings. It was named after Guido of Arezzo, who pioneered today's conventional musical notation 1,000 years ago. GUIDO was first designed by Holger H. Hoos (then at Technische Universität Darmstadt, Germany, now at University of British Columbia, Canada) and Keith Hamel (University of British Columbia, Canada).  Later developments have been done by the SALIERI Project by Holger H. Hoos, Kai Renz and Jürgen F. Kilian.  GUIDO Music Notation has been designed to represent music in a logical format (with the ability to render to sheet music), whereas LilyPond is more narrowly focused on typesetting sheet music.  The basic idea behind the GUIDO design is representational adequacy which means that simple musical concepts are represented in a simple way and only complex notions require more complex representations. [1]GUIDO is not primarily focused on conventional music notation, but has been invented as an open format, capable of storing musical, structural, and notational information. GUIDO Music Notation is designed as a flexible and easily extensible open standard. In particular, its syntax does not restrict the features it can represent. Thus, GUIDO can be easily adapted and customized to cover specialized musical concepts as might be required in the context of research projects in computational musicology. More importantly, GUIDO is designed in a way that when using such custom extensions, the resulting GUIDO data can still be processed by other applications that support GUIDO but are not aware of the custom extensions, which are gracefully ignored. This design also greatly facilitates the incremental implementation of GUIDO support in music software, which can speed up the software development process significantly, especially for research software and prototypes. GUIDO has been split into three consecutive layers: Basic GUIDO introduces the main concepts of the GUIDO design and allows to represent much of the conventional music of today. Advanced GUIDO extends Basic GUIDO by adding exact score-formatting and some more advanced musical concepts. Finally, Extended GUIDO can represent user-defined extensions, like microtonal information or user defined pitch classes.
+ backlinksCount 16
+ pageId 26654338
+ dailyPageViews 18
+ appeared 1998

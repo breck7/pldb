@@ -1,3 +1,18 @@
+title NorthStar BASIC
 appeared 1977
 type pl
-wikipedia NorthStar_BASIC
+
+patterns
+ hasCentralPackageRepository? false
+
+wikipedia https://en.wikipedia.org/wiki/NorthStar_BASIC
+ related basic fortran atari-basic unix
+ summary NorthStar BASIC was a dialect of the programming language BASIC originally provided for use on the NorthStar Horizon and NorthStar Advantage. The interpreter was written using only Intel 8080 instructions so that it could run also on custom systems.  One notable difference with other dialects of BASIC of the time was the array-like way in which strings were addressed. For example, A$(13,17) in NorthStar BASIC corresponded to MID$(A$,13,5) in other dialects. This string addressing technique is analogous to the one used in Fortran, and was also used in HP-3000 Basic and Atari BASIC.  Strings were allocated 10 bytes maximum length unless DIMensioned otherwise. It was still possible to use arrays of strings, but these were declared in two or more dimensions, for example DIM B$(10,50) created 11 strings (0-10) of maximum length 50 bytes. Input from the keyboard and output to the console and printers were treated in the same way as reading and writing to data files. Some other differences were that POKE became FILL, PEEK became EXAM, and INSTR became MATCH.Some other dialects of BASIC were created which were based on and inspired by NorthStar BASIC, such as Bazic (a rewrite of North Star BASIC taking advantage of the faster Zilog Z80 instructions), Megabasic and S.A.I.L.B.O.A.T. (a basic optimized for Z80 and X86 MS-DOS). Some of these were available for other hardware and operating systems, including Unix, CP/M and DOS.
+ created 2010
+ backlinksCount 3
+ pageId 26078944
+ revisionCount 17
+ dailyPageViews 2
+ appeared 1977
+
+status historical

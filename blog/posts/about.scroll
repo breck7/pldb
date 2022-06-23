@@ -1,0 +1,49 @@
+title About
+
+paragraph
+ Aloha!
+
+aftertext
+ I want to help you *build the next great programming language*.
+ wrapsOn
+
+aftertext
+ I am building a comprehensive database of computer
+ languages and their common design patterns. I'm focused on
+ *programming languages*, but the database also
+ includes other computer languages and entities--from
+ popular high level plain text formats to binary
+ specifications and beyond.
+ wrapsOn
+
+paragraph
+ Besides being useful to me, I hope this database helps two
+ types of people:
+
+aftertext
+ 1. Programming language creators. I want to organize big
+ data to help you create great new languages, and improve
+ existing ones. If you are researching something and can't
+ find what you need here, open an issue and explain what you need.
+ https://github.com/codelani/codelani/issues/new open an issue
+
+aftertext
+ 2. Programming language users. I want to provide a
+ data-driven view of the programming language universe, to
+ demystify the world of programming languages for you, and
+ provide sound strategic and tactical advice to help you in
+ your projects and your career. If you have a question not answered
+ by the data here, open an issue and explain what you need.
+ https://github.com/codelani/codelani/issues/new open an issue
+
+aftertext
+ Information about this web server is available `here`.
+ wrap ` a href="about-this-web-server.html"
+
+aftertext
+ This site is powered by information and software from so many people and organizations, a few of which are listed on the acknowledgements page.
+ link acknowledgements.html acknowledgements
+
+maxColumns 1
+columnWidth 60
+skipIndexPage

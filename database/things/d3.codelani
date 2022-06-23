@@ -1,5 +1,53 @@
+title D3.js
 appeared 2011
 type library
+
+patterns
+ hasCentralPackageRepository? false
+
+wikipedia https://en.wikipedia.org/wiki/D3.js
+ example
+  // Data
+    var countriesData = [
+       { name:"Ireland",  income:53000, life: 78, pop:6378, color: "black"},
+       { name:"Norway",   income:73000, life: 87, pop:5084, color: "blue" },
+       { name:"Tanzania", income:27000, life: 50, pop:3407, color: "grey" }
+    ];
+  // Create SVG container
+    var svg = d3.select("#hook").append("svg")
+          .attr("width", 120)
+          .attr("height", 120)
+          .style("background-color", "#D0D0D0");
+  // Create SVG elements from data 
+      svg.selectAll("circle")                  // create virtual circle template
+        .data(countriesData)                   // bind data
+      .enter()                                 // for each row in data...
+        .append("circle")                      // bind circle & data row such that... 
+          .attr("id", function(d) { return d.name })            // set the circle's id according to the country name
+          .attr("cx", function(d) { return d.income / 1000  })  // set the circle's horizontal position according to income 
+          .attr("cy", function(d) { return d.life })            // set the circle's vertical position according to life expectancy 
+          .attr("r",  function(d) { return d.pop / 1000 *2 })   // set the circle's radius according to country's population 
+          .attr("fill", function(d) { return d.color });        // set the circle's color according to country's color
+ related javascript svg css actionscript html json csv geojson jquery
+ summary D3.js (or just D3 for Data-Driven Documents) is a JavaScript library for producing dynamic, interactive data visualizations in web browsers. It makes use of the widely implemented SVG, HTML5, and CSS standards. It is the successor to the earlier Protovis framework. In contrast to many other libraries, D3.js allows great control over the final visual result. Its development was noted in 2011, as version 2.0.0 was released in August 2011.D3.js is used on hundreds of thousands of websites. Some popular uses include creating interactive graphics for online news websites, information dashboards for viewing data, and producing maps from GIS map making data. In addition, the exportable nature of SVG enables graphics created by D3 to be used in print publications.
+ pageId 36177168
+ created 2012
+ backlinksCount 92
+ revisionCount 351
+ dailyPageViews 275
+ appeared 2011
+
+githubRepo https://github.com/d3/d3
+ firstCommit 2010
+ stars 79968
+ forks 19981
+ subscribers 3993
+ created 2010
+ updated 2018
+ description Bring data to life with SVG, Canvas and HTML. :bar_chart::chart_with_upwards_trend::tada:
+ issues 6
+
 website https://d3js.org/
-github https://github.com/d3/d3
-wikipedia D3.js
+status active
+fileType text
+isOpenSource true

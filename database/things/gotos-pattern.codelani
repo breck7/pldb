@@ -1,3 +1,9 @@
+title Gotos
 type pattern
-wikipedia Goto
+psuedoExample goto 10
 description It performs a one-way transfer of control to another line of code; in contrast a function call normally returns control.
+
+wikipedia https://en.wikipedia.org/wiki/Goto
+
+status active
+patternKeyword hasGotos?

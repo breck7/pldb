@@ -1,3 +1,20 @@
+title ISBL
 appeared 1980
 type pl
-wikipedia ISBL
+
+patterns
+ hasCentralPackageRepository? false
+
+wikipedia https://en.wikipedia.org/wiki/ISBL
+ example
+  OS = ORDERS * SUPPLIERS
+  LIST OS: NAME="Brooks" % SNAME, ITEM, PRICE
+ summary ISBL (Information Systems Base Language) is the relational algebra notation that was invented for PRTV, one of the earliest database management systems to implement E.F. Codd's relational model of data.
+ created 2006
+ backlinksCount 42
+ pageId 3946520
+ revisionCount 51
+ dailyPageViews 13
+ appeared 1980
+
+status historical

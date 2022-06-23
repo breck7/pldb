@@ -1,4 +1,115 @@
+title Vim script
 appeared 1991
 type pl
-wikipedia Vim_script
+
+patterns
+ hasCentralPackageRepository? false
+
 description Vim script (also called vimscript or VimL) is the scripting language built into Vim.
+
+wikipedia https://en.wikipedia.org/wiki/Vim_script
+ example
+  " This is the Hello World program in Vim script.
+  echo "Hello, world!"
+  
+  " This is a simple while loop in Vim script.
+  let i = 1
+  while i < 5
+    echo "count is" i
+    let i += 1
+  endwhile
+ related c unix linux ios android vi-editor tcl lua perl python racket ruby regex gzip ftp http unicode
+ summary Vim (; a contraction of Vi IMproved) is a clone, with additions, of Bill Joy's vi text editor program for Unix. It was written by Bram Moolenaar based on source for a port of the Stevie editor to the Amiga and first released publicly in 1991. Vim is designed for use both from a command-line interface and as a standalone application in a graphical user interface. Vim is free and open-source software and is released under a license that includes some charityware clauses, encouraging users who enjoy the software to consider donating to children in Uganda. The license is compatible with the GNU General Public License through a special clause allowing distribution of modified copies "under the GNU GPL version 2 or any later version".Although it was originally released for the Amiga, Vim has since been developed to be cross-platform, supporting many other platforms. In 2006, it was voted the most popular editor amongst Linux Journal readers; in 2015 the Stack Overflow developer survey found it to be the third most popular text editor, and the fifth most popular development environment in 2018.
+ backlinksCount 851
+ pageId 32478
+ created 2008
+ revisionCount 40
+ dailyPageViews 4
+ appeared 1991
+
+githubLanguage Vim script
+ fileExtensions vim
+ trendingProjects
+  author name avatar url language languageColor stars forks currentPeriodStars description
+  neovim neovim https://github.com/neovim.png https://github.com/neovim/neovim "Vim script" #199f4b 32892 2396 564 "Vim-fork focused on extensibility and usability"
+  junegunn vim-plug https://github.com/junegunn.png https://github.com/junegunn/vim-plug "Vim script" #199f4b 15853 735 338 "🌺 Minimalist Vim Plugin Manager"
+  tpope vim-fugitive https://github.com/tpope.png https://github.com/tpope/vim-fugitive "Vim script" #199f4b 11401 686 194 "fugitive.vim: A Git wrapper so awesome, it should be illegal"
+  fatih vim-go https://github.com/fatih.png https://github.com/fatih/vim-go "Vim script" #199f4b 10992 1106 172 "Go development plugin for Vim"
+  rafi awesome-vim-colorschemes https://github.com/rafi.png https://github.com/rafi/awesome-vim-colorschemes "Vim script" #199f4b 748 63 43 "Collection of awesome color schemes for Neo/vim, merged for quick use."
+  mashirozx Pixiv-Nginx https://github.com/mashirozx.png https://github.com/mashirozx/Pixiv-Nginx "Vim script" #199f4b 431 66 46 P站（Pixiv）的正确打开方式
+  yangyangwithgnu use_vim_as_ide https://github.com/yangyangwithgnu.png https://github.com/yangyangwithgnu/use_vim_as_ide "Vim script" #199f4b 8042 2247 120 "use vim as IDE"
+  arcticicestudio nord-vim https://github.com/arcticicestudio.png https://github.com/arcticicestudio/nord-vim "Vim script" #199f4b 852 97 86 "An arctic, north-bluish clean and elegant Vim theme."
+  chxuan vimplus https://github.com/chxuan.png https://github.com/chxuan/vimplus "Vim script" #199f4b 1626 610 76 "🚀An automatic configuration program for vim"
+  vim vim https://github.com/vim.png https://github.com/vim/vim "Vim script" #199f4b 17776 2352 314 "The official Vim repository"
+  jiangmiao auto-pairs https://github.com/jiangmiao.png https://github.com/jiangmiao/auto-pairs "Vim script" #199f4b 2250 251 48 "Vim plugin, insert or delete brackets, parens, quotes in pair"
+  morhetz gruvbox https://github.com/morhetz.png https://github.com/morhetz/gruvbox "Vim script" #199f4b 6102 575 137 "Retro groove color scheme for Vim"
+  vimwiki vimwiki https://github.com/vimwiki.png https://github.com/vimwiki/vimwiki "Vim script" #199f4b 3660 324 61 "Personal Wiki for Vim"
+  wsdjeg vim-galore-zh_cn https://github.com/wsdjeg.png https://github.com/wsdjeg/vim-galore-zh_cn "Vim script" #199f4b 4876 789 153 "Vim 从入门到精通"
+  macvim-dev macvim https://github.com/macvim-dev.png https://github.com/macvim-dev/macvim "Vim script" #199f4b 5340 561 72 "Vim - the text editor - for Mac OS X"
+  flazz vim-colorschemes https://github.com/flazz.png https://github.com/flazz/vim-colorschemes "Vim script" #199f4b 2748 565 31 "one colorscheme pack to rule them all!"
+  scrooloose nerdtree https://github.com/scrooloose.png https://github.com/scrooloose/nerdtree "Vim script" #199f4b 12161 1132 177 "A tree explorer plugin for vim."
+  dense-analysis ale https://github.com/dense-analysis.png https://github.com/dense-analysis/ale "Vim script" #199f4b 8261 896 196 "Check syntax in Vim asynchronously and fix files, with Language Server Protocol (LSP) support"
+  amix vimrc https://github.com/amix.png https://github.com/amix/vimrc "Vim script" #199f4b 18996 5365 307 "The ultimate Vim configuration: vimrc"
+  SpaceVim SpaceVim https://github.com/SpaceVim.png https://github.com/SpaceVim/SpaceVim "Vim script" #199f4b 11943 1005 302 "A community-driven modular vim distribution - The ultimate vim configuration"
+  sheerun vim-polyglot https://github.com/sheerun.png https://github.com/sheerun/vim-polyglot "Vim script" #199f4b 2901 165 78 "A solid language pack for Vim."
+  easymotion vim-easymotion https://github.com/easymotion.png https://github.com/easymotion/vim-easymotion "Vim script" #199f4b 4508 250 56 "Vim motions on speed!"
+  mattn emmet-vim https://github.com/mattn.png https://github.com/mattn/emmet-vim "Vim script" #199f4b 4782 358 44 "emmet for vim: http://emmet.io/"
+ trendingProjectsCount 24
+
+linguistGrammarRepo https://github.com/Alhadis/language-viml
+ firstCommit 2014
+ lastCommit 2018
+ committerCount 7
+ commitCount 117
+ sampleCount 1
+ example
+  " Name:     Solarized vim colorscheme
+  " Author:   Ethan Schoonover <es@ethanschoonover.com>
+  " URL:      http://ethanschoonover.com/solarized
+  "           (see this url for latest release & screenshots)
+  " License:  OSI approved MIT license (see end of this file)
+  " Created:  In the middle of the night
+  " Modified: 2011 May 05
+  "
+  " Usage "{{{
+  "
+  " ---------------------------------------------------------------------
+  " ABOUT:
+  " ---------------------------------------------------------------------
+  " Solarized is a carefully designed selective contrast colorscheme with dual
+  " light and dark modes that runs in both GUI, 256 and 16 color modes.
+  "
+  " See the homepage above for screenshots and details.
+  "
+  " ---------------------------------------------------------------------
+  " OPTIONS:
+  " ---------------------------------------------------------------------
+  " See the "solarized.txt" help file included with this colorscheme (in the 
+  " "doc" subdirectory) for information on options, usage, the Toggle Background 
+  " function and more. If you have already installed Solarized, this is available 
+  " from the Solarized menu and command line as ":help solarized"
+  "
+  " ---------------------------------------------------------------------
+  " INSTALLATION:
+  " ---------------------------------------------------------------------
+  " Two options for installation: manual or pathogen
+  "
+  " MANUAL INSTALLATION OPTION:
+  " ---------------------------------------------------------------------
+  "
+  " 1.  Download the solarized distribution (available on the homepage above)
+  "     and unarchive the file.
+  " 2.  Move `solarized.vim` to your `.vim/colors` directory.
+  " 3.  Move each of the files in each subdirectories to the corresponding .vim
+  "     subdirectory (e.g. autoload/togglebg.vim goes into your .vim/autoload 
+  "     directory as .vim/autoload/togglebg.vim).
+  "
+  " RECOMMENDED PATHOGEN INSTALLATION OPTION:
+  " ---------------------------------------------------------------------
+  "
+  " 1.  Download and install Tim Pope's
+
+aka vimscript viml
+status active
+fileType text
+isOpenSource true

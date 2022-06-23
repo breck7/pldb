@@ -1,8 +1,7 @@
+title Yet Another Recursive Acronym
 appeared 2008
 type pl
-website http://virustotal.github.io/yara/
-github https://github.com/VirusTotal/yara
-wikipedia YARA
+
 example
  rule silent_banker : banker
  {
@@ -19,4 +18,47 @@ example
      condition:
          $a or $b or $c
  }
+
+patterns
+ hasCentralPackageRepository? false
+
 description YARA is a tool aimed at (but not limited to) helping malware researchers to identify and classify malware samples. With YARA you can create descriptions of malware families (or whatever you want to describe) based on textual or binary patterns. Each description, a.k.a rule, consists of a set of strings and a boolean expression which determine its logic.
+
+wikipedia https://en.wikipedia.org/wiki/YARA
+ related perl regex elf
+ summary YARA is the name of a tool primarily used in malware research and detection. It provides a rule-based approach to create descriptions of malware families based on textual or binary patterns. A description is essentially a Yara rule name, where these rules consist of sets of strings and a boolean expression. The language used has traits of Perl compatible regular expressions.
+ pageId 26289898
+ created 2010
+ backlinksCount 5
+ revisionCount 27
+ dailyPageViews 106
+
+githubLanguage YARA
+ fileExtensions yar yara
+ trendingProjectsCount 0
+
+githubRepo https://github.com/VirusTotal/yara
+ firstCommit 2008
+ stars 2464
+ forks 619
+ subscribers 272
+ created 2012
+ updated 2018
+ description The pattern matching swiss knife
+ issues 103
+
+linguistGrammarRepo https://github.com/blacktop/language-yara
+ firstCommit 2014
+ lastCommit 2018
+ committerCount 4
+ commitCount 21
+ sampleCount 3
+ example
+  rule test { condition: true }
+  
+
+website http://virustotal.github.io/yara/
+standsFor Yet Another Recursive Acronym
+status active
+fileType text
+isOpenSource true

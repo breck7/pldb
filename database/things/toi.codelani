@@ -1,5 +1,43 @@
+title Toi programming language
 appeared 2015
 type pl
+
+patterns
+ hasCentralPackageRepository? false
+
+wikipedia https://en.wikipedia.org/wiki/Toi_(programming_language)
+ example
+  def
+                                        /\
+                                       /  \
+                                      /    \
+                                     /      \
+                                    /        \
+                                  int        set
+                                  /\          /\
+                                 /  \        /  \
+                               null 'x'    'x'  null
+                                           /\
+                                          /  \
+                                        null  3
+ summary Toi is an imperative, type-sensitive language that provides the basic functionality of a programming language. The language was designed and developed from the ground-up by Paul Longtine. Written in C, Toi was created with the intent to be an educational experience and serves as a learning tool (or toy, hence the name) for those looking to familiarize themselves with the inner-workings of a programming language.
+ pageId 52078022
+ created 2016
+ backlinksCount 3
+ revisionCount 30
+ dailyPageViews 5
+
+githubRepo https://github.com/bannana/language
+ firstCommit 2015
+ stars 7
+ forks 0
+ subscribers 4
+ created 2015
+ updated 2018
+ description Some fools attempt at an interpreted language
+ issues 0
+
 website https://banna.tech/things/post/toy_language/
-github https://github.com/bannana/language
-wikipedia Toi_(programming_language)
+status active
+fileType text
+isOpenSource true

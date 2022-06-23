@@ -1,4 +1,21 @@
+title sizzle
 appeared 2008
 type queryLanguage
+
+patterns
+ hasCentralPackageRepository? false
+
+githubRepo https://github.com/jquery/sizzle
+ firstCommit 2008
+ stars 5534
+ forks 900
+ subscribers 310
+ created 2008
+ updated 2018
+ description A sizzlin' hot selector engine.
+ issues 27
+
 website https://sizzlejs.com/
-github https://github.com/jquery/sizzle
+status active
+fileType text
+isOpenSource true

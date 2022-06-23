@@ -1,4 +1,196 @@
+title Ada
 appeared 1980
 type pl
+
+patterns
+ hasPointers? true
+ hasGenerics? true
+  generic
+     Max_Size : Natural; -- a generic formal value
+     type Element_Type is private; -- a generic formal type; accepts any nonlimited type
+  package Stacks is
+     type Size_Type is range 0 .. Max_Size;
+     type Stack is limited private;
+     procedure Create (S : out Stack;
+                       Initial_Size : in Size_Type := Max_Size);
+     procedure Push (Into : in out Stack; Element : in Element_Type);
+     procedure Pop (From : in out Stack; Element : out Element_Type);
+     Overflow : exception;
+     Underflow : exception;
+  private
+     subtype Index_Type is Size_Type range 1 .. Max_Size;
+     type Vector is array (Index_Type range <>) of Element_Type;
+     type Stack (Allocated_Size : Size_Type := 0) is record
+        Top : Index_Type;
+        Storage : Vector (1 .. Allocated_Size);
+     end record;
+  end Stacks;
+ hasCentralPackageRepository? false
+ hasComments? true
+ hasDirectives? true
+ hasCaseInsensitiveIdentifiers? true
+ hasOperatorOverloading? true
+
+wikipedia https://en.wikipedia.org/wiki/Ada_(programming_language)
+ example
+  with Ada.Text_IO; use Ada.Text_IO;
+  
+  procedure Traffic is
+  
+     type Airplane_ID is range 1..10;             -- 10 airplanes
+  
+     task type Airplane (ID: Airplane_ID);        -- task representing airplanes, with ID as initialisation parameter
+     type Airplane_Access is access Airplane;     -- reference type to Airplane
+  
+     protected type Runway is                     -- the shared runway (protected to allow concurrent access)
+        entry Assign_Aircraft (ID: Airplane_ID);  -- all entries are guaranteed mutually exclusive
+        entry Cleared_Runway (ID: Airplane_ID);
+        entry Wait_For_Clear;
+     private
+        Clear: Boolean := True;                   -- protected private data - generally more than just a flag...
+     end Runway;
+     type Runway_Access is access all Runway;
+  
+     -- the air traffic controller task takes requests for takeoff and landing
+     task type Controller (My_Runway: Runway_Access) is
+        -- task entries for synchronous message passing
+        entry Request_Takeoff (ID: in Airplane_ID; Takeoff: out Runway_Access);
+        entry Request_Approach(ID: in Airplane_ID; Approach: out Runway_Access);
+     end Controller;
+  
+     --  allocation of instances
+     Runway1    : aliased Runway;              -- instantiate a runway
+     Controller1: Controller (Runway1'Access); -- and a controller to manage it
+  
+     ------ the implementations of the above types ------
+     protected body Runway is
+        entry Assign_Aircraft (ID: Airplane_ID)
+   when Clear is   -- the entry guard - calling tasks are blocked until the condition is true
+        begin
+         Clear := False;
+         Put_Line (Airplane_ID'Image (ID) & " on runway ");
+        end;
+  
+        entry Cleared_Runway (ID: Airplane_ID)
+   when not Clear is
+        begin
+           Clear := True;
+           Put_Line (Airplane_ID'Image (ID) & " cleared runway ");
+        end;
+  
+        entry Wait_For_Clear
+   when Clear is
+        begin
+           null;      -- no need to do anything here - a task can only enter if "Clear" is true
+        end;
+     end Runway;
+  
+     task body Controller is
+     begin
+        loop
+           My_Runway.Wait_For_Clear;   -- wait until runway is available (blocking call)
+           select                      -- wait for two types of requests (whichever is runnable first)
+              when Request_Approach'count = 0 =>  -- guard statement - only accept if there are no tasks queuing on Request_Approach
+               accept Request_Takeoff (ID: in Airplane_ID; Takeoff: out Runway_Access)
+               do                                 -- start of synchronized part
+                 My_Runway.Assign_Aircraft (ID);  -- reserve runway (potentially blocking call if protected object busy or entry guard false)
+                 Takeoff := My_Runway;            -- assign "out" parameter value to tell airplane which runway
+               end Request_Takeoff;               -- end of the synchronised part
+           or
+              accept Request_Approach (ID: in Airplane_ID; Approach: out Runway_Access) do
+                 My_Runway.Assign_Aircraft (ID);
+                 Approach := My_Runway;
+              end Request_Approach;
+           or                          -- terminate if no tasks left who could call
+              terminate;
+           end select;
+        end loop;
+     end;
+  
+     task body Airplane is
+        Rwy : Runway_Access;
+     begin
+        Controller1.Request_Takeoff (ID, Rwy); -- This call blocks until Controller task accepts and completes the accept block
+        Put_Line (Airplane_ID'Image (ID) & "  taking off...");
+        delay 2.0;
+        Rwy.Cleared_Runway (ID);               -- call will not block as "Clear" in Rwy is now false and no other tasks should be inside protected object
+        delay 5.0; -- fly around a bit...
+        loop
+           select   -- try to request a runway
+              Controller1.Request_Approach (ID, Rwy); -- this is a blocking call - will run on controller reaching accept block and return on completion
+              exit; -- if call returned we're clear for landing - leave select block and proceed...
+           or
+              delay 3.0;  -- timeout - if no answer in 3 seconds, do something else (everything in following block)
+              Put_Line (Airplane_ID'Image (ID) & "   in holding pattern");  -- simply print a message
+           end select;
+        end loop;
+        delay 4.0;  -- do landing approach...
+        Put_Line (Airplane_ID'Image (ID) & "            touched down!");
+        Rwy.Cleared_Runway (ID);  -- notify runway that we're done here.
+     end;
+  
+     New_Airplane: Airplane_Access;
+  
+  begin
+     for I in Airplane_ID'Range loop  -- create a few airplane tasks
+        New_Airplane := new Airplane (I); -- will start running directly after creation
+        delay 4.0;
+     end loop;
+  end Traffic;
+ related spark ravenscar-profile algol-68 pascal smalltalk java eiffel chapel nim pl-sql plpgsql ruby rust seed7 sql-psm vhdl unicode lisp setl algol algol-60 apse
+ summary Ada is a structured, statically typed, imperative, wide-spectrum, and object-oriented high-level computer programming language, extended from Pascal and other languages. It has built-in language support for design-by-contract, extremely strong typing, explicit concurrency, offering tasks, synchronous message passing, protected objects, and non-determinism. Ada improves code safety and maintainability by using the compiler to find errors in favor of runtime errors. Ada is an international standard; the current version (known as Ada 2012) is defined by ISO/IEC 8652:2012. Ada was originally designed by a team led by Jean Ichbiah of CII Honeywell Bull under contract to the United States Department of Defense (DoD) from 1977 to 1983 to supersede over 450 programming languages used by the DoD at that time. Ada was named after Ada Lovelace (1815–1852), who has been credited with being the first computer programmer.
+ pageId 1242
+ dailyPageViews 768
+ created 2001
+ backlinksCount 744
+ revisionCount 1280
+ appeared 1980
+ fileExtensions adb ads
+
+githubLanguage Ada
+ fileExtensions adb ada ads
+ trendingProjectsCount 0
+
+helloWorldCollection Ada
+ -- Hello World in Ada
+ 
+ with Text_IO;
+ procedure Hello_World is
+ 
+ begin
+   Text_IO.Put_Line("Hello World!");
+ end Hello_World;
+ 
+
+linguistGrammarRepo https://github.com/textmate/ada.tmbundle
+ firstCommit 2005
+ lastCommit 2015
+ committerCount 4
+ commitCount 44
+
 website http://www.adaic.org
-wikipedia Ada_(programming_language)
+status active
+country US
+fileExtensions adb ads
+fileType text
+wordRank 8040
+
+tiobe Ada
+ currentRank 28
+
+projectEuler Ada
+ memberCount
+  2019 120
+  2022 129
+
+hopl 840
+
+subreddit ada
+ memberCount
+  2017 1092
+
+quineRelay Ada
+
+ubuntuPackage gnat
+
+rosettaCode Ada

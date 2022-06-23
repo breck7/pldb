@@ -1,8 +1,32 @@
+title Adventure Game Studio Script
 appeared 2001
 type pl
-website http://www.adventuregamestudio.co.uk/site/ags/tutorial/scripting/1/
+
 example
  function hDoor_Look()
  {
    Display("It's quite a large, ominous looking door.");
  }
+
+patterns
+ hasCentralPackageRepository? false
+
+githubLanguage AGS Script
+ fileExtensions asc ash
+ trendingProjectsCount 0
+
+linguistGrammarRepo https://github.com/textmate/c.tmbundle
+ firstCommit 2005
+ lastCommit 2018
+ committerCount 23
+ commitCount 359
+ sampleCount 4
+ example
+  // Main header script - this will be included into every script in
+  // the game (local and global). Do not place functions here; rather,
+  // place import definitions and #define names here to be used by all
+  // scripts.
+
+website http://www.adventuregamestudio.co.uk/site/ags/tutorial/scripting/1/
+status active
+fileType text

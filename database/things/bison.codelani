@@ -1,4 +1,54 @@
+title Bison
 appeared 1985
 type grammarLanguage
+
+patterns
+ hasCentralPackageRepository? false
+
+wikipedia https://en.wikipedia.org/wiki/GNU_bison
+ example
+  # Makefile
+  
+  FILES	= Lexer.c Parser.c Expression.c main.c
+  CC	= g++
+  CFLAGS	= -g -ansi
+  
+  test:		$(FILES)
+  		$(CC) $(CFLAGS) $(FILES) -o test
+  
+  Lexer.c:	Lexer.l 
+  		flex Lexer.l
+  
+  Parser.c:	Parser.y Lexer.c
+  		bison Parser.y
+  
+  clean:
+  		rm -f *.o *~ Lexer.c Lexer.h Parser.c Parser.h test
+ related c m4 java yacc ruby php go bash lilypond postgresql mysql octave
+ summary GNU bison, commonly known as Bison, is a parser generator that is part of the GNU Project. Bison reads a specification of a context-free language, warns about any parsing ambiguities, and generates a parser (either in C, C++, or Java) which reads sequences of tokens and decides whether the sequence conforms to the syntax specified by the grammar. Bison by default generates LALR parsers but can also create GLR parsers. In POSIX mode, Bison is compatible with yacc, but also has several extensions over this earlier program. flex, an automatic lexical analyser, is often used with Bison, to tokenise input data and provide Bison with tokens. Bison was originally written by Robert Corbett in 1985. Later, in 1989, Robert Corbett released another parser generator named Berkeley Yacc. Bison was made Yacc-compatible by Richard Stallman. Bison is free software and is available under the GNU General Public License, with an exception (discussed below) allowing its generated code to be used without triggering the copyleft requirements of the licence.
+ pageId 53189
+ dailyPageViews 125
+ created 2002
+ backlinksCount 65
+ revisionCount 1
+ appeared 1985
+
+githubLanguage Bison
+ fileExtensions bison
+ trendingProjectsCount 0
+
+linguistGrammarRepo https://github.com/textmate/bison.tmbundle
+ firstCommit 2007
+ lastCommit 2011
+ committerCount 2
+ commitCount 2
+
 website https://www.gnu.org/software/bison/
-wikipedia GNU_bison
+status active
+country US
+fileType text
+isOpenSource true
+
+hopl 4653
+
+corporateDevelopers GNU Project

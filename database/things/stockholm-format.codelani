@@ -1,3 +1,31 @@
+title Stockholm format
 appeared 1997
-type textData
-wikipedia Stockholm_format
+type textDataFormat
+
+patterns
+ hasCentralPackageRepository? false
+
+wikipedia https://en.wikipedia.org/wiki/Stockholm_format
+ example
+  Feature   Description            Description
+        -------   -----------            --------------
+        RF        ReFerence annotation   Often the consensus RNA or protein sequence is used as a reference
+                                         Any non-gap character (e.g. x's) can indicate consensus/conserved/match columns
+                                         .'s or -'s indicate insert columns
+                                         ~'s indicate unaligned insertions
+                                         Upper and lower case can be used to discriminate strong and weakly conserved 
+                                         residues respectively
+        MM        Model Mask             Indicates which columns in an alignment should be masked, such
+                                         that the emission probabilities for match states corresponding to
+                                         those columns will be the background distribution.
+ related fasta-format
+ summary Stockholm format is a multiple sequence alignment format used by Pfam and Rfam to disseminate protein and RNA sequence alignments. The alignment editors Ralee  and Belvu support Stockholm format as do the probabilistic database search tools, Infernal and HMMER, and the phylogenetic analysis tool Xrate. A simple example of an Rfam alignment (UPSK RNA) with a pseudoknot in Stockholm format is shown below: # STOCKHOLM 1.0 #=GF ID    UPSK #=GF SE    Predicted; Infernal  #=GF SS    Published; PMID 9223489 #=GF RN    [1] #=GF RM    9223489 #=GF RT    The role of the pseudoknot at the 3' end of turnip yellow mosaic #=GF RT    virus RNA in minus-strand synthesis by the viral RNA-dependent RNA #=GF RT    polymerase. #=GF RA    Deiman BA, Kortlever RM, Pleij CW; #=GF RL    J Virol 1997;71:5990-5996.  AF035635.1/619-641             UGAGUUCUCGAUCUCUAAAAUCG M24804.1/82-104                UGAGUUCUCUAUCUCUAAAAUCG J04373.1/6212-6234             UAAGUUCUCGAUCUUUAAAAUCG M24803.1/1-23                  UAAGUUCUCGAUCUCUAAAAUCG #=GC SS_cons                   .AAA....<<<<aaa....>>>> //  Here is a slightly more complex example showing the Pfam CBS domain:  # STOCKHOLM 1.0 #=GF ID CBS #=GF AC PF00571 #=GF DE CBS domain #=GF AU Bateman A #=GF CC CBS domains are small intracellular modules mostly found #=GF CC in 2 or four copies within a protein. #=GF SQ 5 #=GS O31698/18-71 AC O31698 #=GS O83071/192-246 AC O83071 #=GS O83071/259-312 AC O83071 #=GS O31698/88-139 AC O31698 #=GS O31698/88-139 OS Bacillus subtilis O83071/192-246          MTCRAQLIAVPRASSLAEAIACAQKMRVSRVPVYERS #=GR O83071/192-246 SA  9998877564535242525515252536463774777 O83071/259-312          MQHVSAPVFVFECTRLAYVQHKLRAHSRAVAIVLDEY #=GR O83071/259-312 SS  CCCCCHHHHHHHHHHHHHEEEEEEEEEEEEEEEEEEE O31698/18-71            MIEADKVAHVQVGNNLEHALLVLTKTGYTAIPVLDPS #=GR O31698/18-71 SS    CCCHHHHHHHHHHHHHHHEEEEEEEEEEEEEEEEHHH O31698/88-139           EVMLTDIPRLHINDPIMKGFGMVINN..GFVCVENDE #=GR O31698/88-139 SS   CCCCCCCHHHHHHHHHHHHEEEEEEEEEEEEEEEEEH #=GC SS_cons            CCCCCHHHHHHHHHHHHHEEEEEEEEEEEEEEEEEEH O31699/88-139           EVMLTDIPRLHINDPIMKGFGMVINN..GFVCVENDE #=GR O31699/88-139 AS   ________________*____________________ #=GR O31699/88-139 IN   ____________1____________2______0____ //  A minimal well formed Stockholm files should contain the header which states the format and version identifier, currently '# STOCKHOLM 1.0'. Followed by the sequences and corresponding unique sequence names:  <seqname> <aligned sequence> <seqname> <aligned sequence> <seqname> <aligned sequence>  '<seqname>' stands for "sequence name", typically in the form "name/start-end" or just "name". Finally, the "//" line indicates the end of the alignment. Sequence letters may include any characters except whitespace. Gaps may be indicated by "." or "-".
+ backlinksCount 23
+ pageId 17304991
+ created 2008
+ revisionCount 51
+ dailyPageViews 13
+ appeared 1997
+
+status active
+fileType text

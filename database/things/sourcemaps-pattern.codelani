@@ -1,2 +1,6 @@
+title Source Maps
 type pattern
+psuedoExample {file: 'min.js',sources: ['one.js'], mappings: 'CAAC,IAAI,IAAM'}
 description A specific type of Symbol Table. When debugging transpiled code, it is much easier to debug the original source. A source map is a file that maps from the transformed source to the original source.
+status active
+patternKeyword hasSourceMaps?

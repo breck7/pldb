@@ -1,3 +1,53 @@
+title MACRO-10
 appeared 1978
 type pl
-wikipedia MACRO-10
+
+patterns
+ hasCentralPackageRepository? false
+
+wikipedia https://en.wikipedia.org/wiki/MACRO-10
+ example
+  HELLO WORLD     MACRO %53B(1247) 17:29  7-Apr-:9 Page 1
+  HELLO   MAC      7-Apr-:9 17:29
+  
+                                                  TITLE   HELLO WORLD
+                                                  ; 'Hello world' in MACRO-10 for TOPS-10
+                                                  SEARCH  UUOSYM          ; Make UUO symbol names available
+  
+          000000' 110 145 154 154 157     LAB:    ASCIZ   /Hello, world!
+          000001' 054 040 167 157 162
+          000002' 154 144 041 015 012     /                               ; NUL-terminated ASCII string with CRLF
+          000003' 000 000 000 000 000
+  
+          000004' 047 00 0 00 000000      START:  RESET                   ; Initialise job to clean runtime state
+          000005' 051 03 0 00 000000'     OUTPUT: OUTSTR  LAB             ; Output string starting at LAB:
+          000006' 047 01 0 00 000012              MONRT.                  ; Return to monitor
+          000007' 254 00 0 00 000005'             JRST    OUTPUT          ; Restart at OUTPUT: if user CONTINUEs job
+                          000004'                 END     START           ; End assembly, set program start address
+  
+  NO ERRORS DETECTED
+  
+  PROGRAM BREAK IS 000010
+  CPU TIME USED 58:25.100
+  
+  36P CORE USED
+  
+  HELLO WORLD     MACRO %53B(1247) 17:29  7-Apr-:9 Page S-1
+  HELLO   MAC      7-Apr-:9 17:29         SYMBOL TABLE
+  
+  LAB             000000'
+  MONRT.  047040  000012
+  OUTPUT          000005'
+  OUTSTR  051140  000000
+  RESET   047000  000000
+  START           000004'
+ related assembly-language
+ summary MACRO-10 is an assembly language with extensive macro facilities for DEC's PDP-10-based Mainframe computer systems, the DECsystem-10 and the DECSYSTEM-20. MACRO-10 is implemented as a two-pass assembler.
+ created 2009
+ backlinksCount 11
+ pageId 22291061
+ revisionCount 25
+ dailyPageViews 4
+ appeared 1978
+
+status historical

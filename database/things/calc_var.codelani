@@ -1,5 +1,11 @@
+title calc_var
 appeared 2013
 type plzoo
+
+patterns
+ hasCentralPackageRepository? false
+
+description integer arithmetic +, -, *, /, variables
 website http://plzoo.andrej.com/language/calc_var.html
 reference https://github.com/andrejbauer/plzoo
-description integer arithmetic +, -, *, /, variables
+status historical

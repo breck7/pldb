@@ -1,4 +1,40 @@
+title Fortress
 appeared 2004
 type pl
+
+patterns
+ hasCentralPackageRepository? false
+
+wikipedia https://en.wikipedia.org/wiki/Fortress_(programming_language)
+ example
+  component hello
+  export Executable
+  run() = println(“Hello, World!”)
+  end
+ related fortran scala haskell scheme common-lisp java unicode standard-ml ascii emacs-editor latex mathematical-notation x10 chapel sisal
+ summary Fortress is a discontinued experimental programming language for high-performance computing, created by Sun Microsystems with funding from DARPA's High Productivity Computing Systems project. One of the language designers was Guy L. Steele Jr., whose previous work includes Scheme, Common Lisp, and Java.
+ pageId 1822171
+ dailyPageViews 54
+ created 2005
+ backlinksCount 171
+ revisionCount 164
+ appeared 2006
+
+helloWorldCollection Fortress
+ (* Hello World in Fortress *)
+ 
+ export Executable
+ run(args) = print "Hello, world!"
+ 
+
 website http://projectfortress.java.net/
-wikipedia Fortress_(programming_language)
+status active
+country US
+fileType text
+isOpenSource true
+
+tiobe Fortress
+
+hopl 8170
+
+rosettaCode Fortress

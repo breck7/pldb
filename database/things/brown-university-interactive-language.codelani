@@ -1,3 +1,20 @@
+title Brown University Interactive Language
 appeared 1968
 type pl
-wikipedia Brown_University_Interactive_Language
+
+patterns
+ hasCentralPackageRepository? false
+
+wikipedia https://en.wikipedia.org/wiki/Brown_University_Interactive_Language
+ related joss doi
+ summary Brown University Interactive Language (BRUIN) was an introductory programming language developed at Brown University in the late 1960s.  It operated in the IBM 360, and was similar to PL/1.  The abstract of R. G. Munck's document, "Meeting the Computational Requirements of the University, Brown University Interactive Language" describes BRUIN as "a JOSS-like interpreter and a WATFOR-Like compiler and has a syntax very much like PL/I. It is intended that BRUIN and PL/I will together form a language system which will supply most of the (non-computer science) computational requirements of the university."
+ created 2005
+ backlinksCount 7
+ pageId 3244022
+ revisionCount 16
+ dailyPageViews 4
+ appeared 1969
+
+status historical
+
+hopl 377

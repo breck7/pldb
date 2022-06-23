@@ -1,5 +1,22 @@
+title Qore programming language
 appeared 2006
 type pl
+
+wikipedia https://en.wikipedia.org/wiki/Qore_(programming_language)
+ summary Qore is an interpreted, high-level, general-purpose, garbage collected  dynamic programming language, featuring support for code embedding and sandboxing with optional strong typing and a focus on fundamental support for multithreading and SMP scalability. Qore is unique because it is an interpreted scripting language with fundamental support for multithreading (meaning more than one part of the same code can run at the same time), and additionally because it features automatic memory management (meaning programmers do not have to allocate and free memory explicitly) while also supporting the RAII idiom with destructors for scope-based resource management and exception-safe programming.  This is due to Qore's unique prompt collection implementation for garbage collection.
+ backlinksCount 9
+ pageId 33850384
+ dailyPageViews 6
+
+githubRepo https://github.com/qorelanguage/qore
+ firstCommit 2006
+ stars 20
+ forks 7
+ subscribers 15
+ created 2015
+ updated 2019
+ description Qore Programming Language
+ issues 261
+
 website http://qore.org/
-github https://github.com/qorelanguage/qore
-wikipedia Qore_(programming_language)
+fileExtensions q qm qtest

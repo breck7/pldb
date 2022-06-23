@@ -1,4 +1,54 @@
+title Stan
 appeared 2012
 type pl
+
+patterns
+ hasCentralPackageRepository? false
+ hasTypeInference? true
+
+wikipedia https://en.wikipedia.org/wiki/Stan_(software)
+ related ia-32 r matlab stata
+ summary Stan is a probabilistic programming language for statistical inference written in C++. The Stan language is used to specify a (Bayesian) statistical model with an imperative program calculating the log probability density function. Stan is licensed under the New BSD License. Stan is named in honour of Stanislaw Ulam, pioneer of the Monte Carlo method.
+ pageId 42243853
+ dailyPageViews 68
+ created 2014
+ backlinksCount 116
+ revisionCount 34
+ appeared 2012
+
+githubLanguage Stan
+ fileExtensions stan
+ trendingProjectsCount 0
+
+linguistGrammarRepo https://github.com/jrnold/atom-language-stan
+ firstCommit 2015
+ lastCommit 2018
+ committerCount 2
+ commitCount 86
+ sampleCount 3
+ example
+  data {
+    int<lower=0> N;
+    vector[N] incumbency_88;
+    vector[N] vote_86;
+    vector[N] vote_88;
+  }
+  parameters {
+    vector[3] beta;
+    real<lower=0> sigma;
+  }
+  model {
+      vote_88 ~ normal(beta[1] + beta[2] * vote_86
+                       + beta[3] * incumbency_88,sigma);
+  }
+  
+
 website http://mc-stan.org/
-wikipedia Stan_(software)
+status active
+
+twitter mcmc_stan
+
+fileType text
+wordRank 9401
+isOpenSource true
+writtenIn cpp

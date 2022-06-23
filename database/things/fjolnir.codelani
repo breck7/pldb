@@ -1,3 +1,34 @@
+title Fjölnir
 appeared 1986
 type pl
-wikipedia Fjölnir_(programming_language)
+
+patterns
+ hasCentralPackageRepository? false
+
+wikipedia https://en.wikipedia.org/wiki/Fjölnir_(programming_language)
+ example
+  ;; Hello world in Fjölnir
+  
+  "hello" < main
+  {
+      main ->
+      stef(;)
+      stofn
+          skrifastreng(;"Hello, world!"),
+      stofnlok
+  }
+  *
+  "GRUNNUR"
+  ;
+ summary Fjölnir (also Fjolnir or Fjoelnir) is a programming language developed by professor Snorri Agnarsson of computer science at Háskóli Íslands (University of Iceland) that was mostly used in the 1980s. The source files usually have the extension fjo or sma.
+ pageId 3236625
+ dailyPageViews 17
+ created 2005
+ backlinksCount 20
+ revisionCount 29
+ appeared 1980
+ fileExtensions fjo fjv sma ein
+
+status historical
+country IS
+fileType text

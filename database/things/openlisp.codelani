@@ -1,3 +1,43 @@
+title OpenLisp
 appeared 1988
 type pl
-wikipedia OpenLisp
+
+patterns
+ hasCentralPackageRepository? false
+
+wikipedia https://en.wikipedia.org/wiki/OpenLisp
+ example
+  static POINTER 
+  OLDEFCOMPILED1(olfib_00, p1) {
+          POINTER a1;
+          POINTER VOLATILE a2;
+  
+          ollapenter(SN_OLFIB_00);
+          a1 = p1;
+          if (eq(a1, olmakefix(1))) goto _l004;
+          if (!eq(a1, olmakefix(2))) goto _l003;
+          ollapleave(SN_OLFIB_00);
+          return olmakefix(1);
+  _l003:
+          a1 = ollapgsub(a1, olmakefix(1));
+          a2 = olfib_00(a1);
+          a1 = ollapgsub(p1, olmakefix(2));
+          a1 = olfib_00(a1);
+          a1 = ollapgadd(a2, a1);
+  _l004:
+          ollapleave(SN_OLFIB_00);
+          return a1;
+  }
+ related emacs-editor lisp c x86-isa sparc powerpc mips arm unix linux freebsd solaris islisp common-lisp regex xml sql java unicode interlisp lisp-machine-lisp scheme le-lisp t emacs-lisp autolisp picolisp eulisp newlisp racket guile clojure arc lfe http smtp mysql sqlite postgresql csv
+ summary OpenLisp is a programming language in the Lisp family developed by Christian Jullien. It conforms to the international standard for ISLISP published jointly by the International Organization for Standardization (ISO) and International Electrotechnical Commission (IEC), ISO/IEC 13816:1997(E), revised to ISO/IEC 13816:2007(E).Written in the programming languages C and Lisp, it runs on most common operating systems. OpenLisp is designated an ISLISP implementation, but also contains many Common Lisp-compatible extensions (hashtable, readtable, package, defstruct, sequences, rational numbers) and other libraries (network socket, regular expression, XML, Portable Operating System Interface (POSIX), SQL, Lightweight Directory Access Protocol (LDAP)).OpenLisp includes an interpreter associated to a read–eval–print loop (REPL), a Lisp Assembly Program (LAP) and a backend compiler for the language C.
+ created 2012
+ backlinksCount 39
+ pageId 34994823
+ revisionCount 142
+ dailyPageViews 15
+ appeared 1988
+
+status historical
+isOpenSource false
+
+rosettaCode OpenLisp

@@ -1,8 +1,104 @@
+title Nim
 appeared 2008
 type pl
 creators Andreas Rumpf
-website https://nim-lang.org/
-github https://github.com/nim-lang/Nim
-wikipedia Nim_(programming_language)
-reference https://irclogs.nim-lang.org/01-07-2012.html
+
+patterns
+ hasCentralPackageRepository? true
+ hasComments? true
+ hasMacros? true
+  https://hookrace.net/blog/introduction-to-metaprogramming-in-nim/#macros
+ hasSemanticIndentation? true
+ hasStaticTyping? true
+
 description Nim was called Nimrod until 2014. Nimrod is a relatively new programming language that is severely underrated in comparison to other new programming languages, with extensive metaprogramming support, generics and exception tracking built in, optional garbage collection, and rivals C in performance. And it can compile to C, C++, Objective-C, or JavaScript. Nimrod is a statically typed, imperative programming language that tries to give the programmer ultimate power without compromises on runtime efficiency. This means it focuses on compile-time mechanisms in all their various forms.
+
+wikipedia https://en.wikipedia.org/wiki/Nim_(programming_language)
+ example
+  proc printf(formatstr: cstring) {.header: "<stdio.h>", varargs.}
+  
+  printf("%s %d\n", "foo", 5)
+ related ada modula-3 lisp object-pascal python oberon c javascript pascal delphi csharp go objective-c ios android git json opengl postgresql mysql sqlite lua scala d rust
+ summary Nim (formerly named Nimrod) is an imperative, multi-paradigm, compiled programming language designed and developed by Andreas Rumpf. It is designed to be "efficient, expressive, and elegant", supporting metaprogramming, functional, message passing, procedural, and object-oriented programming styles by providing several features such as compile time code generation, algebraic data types, a foreign function interface (FFI) with C and compiling to JavaScript, C and C++.
+ pageId 45413679
+ dailyPageViews 176
+ created 2015
+ backlinksCount 69
+ revisionCount 247
+ appeared 2008
+ fileExtensions nim
+
+githubLanguage Nim
+ fileExtensions nim nimrod
+ trendingProjectsCount 0
+
+githubRepo https://github.com/nim-lang/Nim
+ stars 5977
+ forks 752
+ subscribers 283
+ created 2010
+ updated 2018
+ firstCommit 2008
+ description Nim is a compiled, garbage-collected systems programming language with a design that focuses on efficiency, expressiveness, and elegance (in that order of priority).
+ issues 1516
+
+helloWorldCollection Nim
+ # Hello world in Nim
+ 
+ echo "Hello World"
+
+linguistGrammarRepo https://github.com/Varriount/NimLime
+ firstCommit 2013
+ lastCommit 2018
+ committerCount 28
+ commitCount 303
+ sampleCount 4
+ example
+  # from: https://github.com/nim-lang/Nim/blob/27b081d1f77604ee47c886e69dbc52f53ea3741f/compiler/nimfix/nimfix.nim.cfg
+  
+  # Special configuration file for the Nim project
+  # gc:markAndSweep
+  
+  hint[XDeclaredButNotUsed]:off
+  path:"$projectPath/.."
+  
+  path:"$lib/packages/docutils"
+  path:"$nim"
+  
+  define:useStdoutAsStdmsg
+  symbol:nimfix
+  define:nimfix
+  
+  cs:partial
+  #define:useNodeIds
+  define:booting
+  define:noDocgen
+  
+
+website https://nim-lang.org/
+reference https://irclogs.nim-lang.org/01-07-2012.html
+aka nimrod
+status active
+
+tryItOnline nim
+
+twitter nim_lang
+
+fileExtensions nim
+fileType text
+isOpenSource true
+
+tiobe Nim
+
+projectEuler Nim
+ memberCount
+  2019 10
+  2022 36
+
+quineRelay Nim
+
+ubuntuPackage nim
+
+rosettaCode Nim
+
+writtenIn nim

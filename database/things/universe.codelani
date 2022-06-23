@@ -1,3 +1,22 @@
+title UniVerse
 appeared 1997
 type pl
-wikipedia UniVerse
+
+patterns
+ hasCentralPackageRepository? false
+
+wikipedia https://en.wikipedia.org/wiki/UniVerse
+ example
+  123-45-6789^JOHN JONES^jjones@example.com]johnnyjones@example.net^432100^...
+ related unix linux pick-operating-system xml ascii
+ summary Rocket U2 is a suite of database management (DBMS) and supporting software now owned by Rocket Software.  It includes two MultiValue database platforms: UniData and UniVerse.  Both of these products are operating environments which run on current Unix, Linux and Windows operating systems.  They are both derivatives of the Pick operating system. The family also includes developer and web-enabling technologies including SystemBuilder/SB+, SB/XA, U2 Web Development Environment (WebDE), UniObjects and wIntegrate.
+ created 2006
+ backlinksCount 45
+ pageId 38328989
+ revisionCount 7
+ dailyPageViews 2
+ appeared 1997
+
+status historical
+wordRank 3484
+isOpenSource false

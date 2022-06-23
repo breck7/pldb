@@ -1,4 +1,127 @@
+title Pascal
 appeared 1970
 type pl
 creators Niklaus Wirth
-wikipedia Pascal_(programming_language)
+
+patterns
+ hasPolymorphism? true
+ hasCentralPackageRepository? false
+ hasComments? true
+ hasFunctionOverloading? true
+  program Adhoc;
+  
+  function Add(x, y : Integer) : Integer;
+  begin
+      Add := x + y
+  end;
+  
+  function Add(s, t : String) : String;
+  begin
+      Add := Concat(s, t)
+  end;
+  
+  begin
+      Writeln(Add(1, 2));                   (* Prints "3"             *)
+      Writeln(Add('Hello, ', 'World!'));    (* Prints "Hello, World!" *)
+  end.
+ hasOperatorOverloading? false
+
+wikipedia https://en.wikipedia.org/wiki/Pascal_(programming_language)
+ example
+  program Printing;
+  
+  var i : integer;
+  
+  procedure Print(j : integer);
+  begin
+    ...
+  end;
+  
+  begin { main program }
+    ...
+    Print(i);
+  end.
+ related delphi free-pascal turbo-pascal ucsd-pascal algol-w ada go java modula modula-2 modula-3 oberon object-pascal oxygene seed7 algol-60 euler lisp algol-68 assembly-language tex simula fortran watcom c x86-isa ip-pascal csharp algol pl-i ios android unicode linux freebsd
+ summary Pascal is an imperative and procedural programming language, which Niklaus Wirth designed in 1968–69 and published in 1970, as a small, efficient language intended to encourage good programming practices using structured programming and data structuring. It is named in honor of the French mathematician, philosopher and physicist Blaise Pascal. Pascal was developed on the pattern of the ALGOL 60 language. Wirth had already developed several improvements to this language as part of the ALGOL X proposals, but these were not accepted and Pascal was developed separately and released in 1970. A derivative known as Object Pascal designed for object-oriented programming was developed in 1985; this was used by Apple Computer and Borland in the late 1980s and later developed into Delphi on the Microsoft Windows platform. Extensions to the Pascal concepts led to the Pascal-like languages Modula-2 and Oberon.
+ pageId 23773
+ dailyPageViews 1116
+ created 2001
+ backlinksCount 2517
+ revisionCount 2212
+ appeared 1970
+ fileExtensions pp pas inc
+
+githubLanguage Pascal
+ fileExtensions pas dfm dpr inc lpr pascal pp
+ trendingProjects
+  author name avatar url language languageColor stars forks currentPeriodStars description
+  cheat-engine cheat-engine https://github.com/cheat-engine.png https://github.com/cheat-engine/cheat-engine Pascal #E3F171 3166 650 185 "Cheat Engine. A development environment focused on modding"
+  stascorp rdpwrap https://github.com/stascorp.png https://github.com/stascorp/rdpwrap Pascal #E3F171 5646 1029 162 "RDP Wrapper Library"
+ trendingProjectsCount 3
+
+helloWorldCollection Pascal
+ {Hello World in Pascal}
+ 
+ program HelloWorld(output);
+ begin
+   WriteLn('Hello World!');
+ end.
+ 
+
+linguistGrammarRepo https://github.com/textmate/pascal.tmbundle
+ firstCommit 2005
+ lastCommit 2016
+ committerCount 4
+ commitCount 37
+ sampleCount 10
+ example
+  uses
+    uw27294;
+  
+  var
+    p : procedure;
+  
+  procedure test;
+  
+  begin
+    p:=@test;
+    writeln('OK');
+  end;
+  
+  procedure global;
+  begin
+    p:=nil;
+    test;
+    p();
+  end;
+  
+  begin
+    global;
+    uw27294.global;
+  end.
+  
+  
+  
+
+status active
+fileExtensions pp pas inc
+fileType text
+
+tiobe Pascal
+
+projectEuler Pascal
+ memberCount
+  2019 708
+  2022 710
+
+hopl 520
+
+quineRelay Pascal
+
+ubuntuPackage fp-compiler
+
+codeMirror pascal
+
+rosettaCode Pascal
+
+antlr https://github.com/antlr/grammars-v4/tree/master/pascal

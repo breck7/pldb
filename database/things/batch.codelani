@@ -1,3 +1,50 @@
+title Batchfile
 appeared 1985
 type pl
-wikipedia Batch_file
+
+patterns
+ hasCentralPackageRepository? false
+ hasCaseInsensitiveIdentifiers? true
+
+wikipedia https://en.wikipedia.org/wiki/Batch_file
+ example
+  C:\>set /p ="Message 1"<nul >data.txt
+  C:\>set /p ="Message 2"<nul >>data.txt
+  C:\>set /p ="Message 3"<nul >>data.txt
+  C:\>type data.txt
+  Message 1Message 2Message 3
+ related jcl linux notepad-editor unicode kixtart vbscript jscript windows-powershell unix perl python ruby php
+ summary A batch file is a kind of script file in DOS, OS/2 and Microsoft Windows. It consists of a series of commands to be executed by the command-line interpreter, stored in a plain text file. A batch file may contain any command the interpreter accepts interactively and use constructs that enable conditional branching and looping within the batch file, such as IF, FOR, and GOTO labels. The term "batch" is from batch processing, meaning "non-interactive execution", though a batch file may not process a batch of multiple data. Similar to Job Control Language (JCL) and other systems on mainframe and minicomputer systems, batch files were added to ease the work required for certain regular tasks by allowing the user to set up a script to automate them. When a batch file is run, the shell program (usually COMMAND.COM or cmd.exe) reads the file and executes its commands, normally line-by-line. Unix-like operating systems, such as Linux, have a similar, but more flexible, type of file called a shell script. The filename extension .bat is used in DOS and Windows. Windows NT and OS/2 also added .cmd. Batch files for other environments may have different extensions, e.g., .btm in 4DOS, 4OS2 and 4NT related shells. The detailed handling of batch files has changed. Some of the detail in this article applies to all batch files, while other details apply only to certain versions.
+ pageId 15264030
+ dailyPageViews 757
+ created 2004
+ backlinksCount 845
+ revisionCount 1307
+ appeared 1985
+
+githubLanguage Batchfile
+ fileExtensions bat cmd
+ trendingProjects
+  author name avatar url language languageColor stars forks currentPeriodStars description
+  realpython python-guide https://github.com/realpython.png https://github.com/realpython/python-guide Batchfile #C1F12E 19021 5085 295 "Python best practices guidebook, written for humans."
+  niudai How-to-be-a-good-programmer https://github.com/niudai.png https://github.com/niudai/How-to-be-a-good-programmer Batchfile #C1F12E 132 51 116 "I'm here to tell you some amazing stuff which teacher would never tell you."
+  kkkgo KMS_VL_ALL https://github.com/kkkgo.png https://github.com/kkkgo/KMS_VL_ALL Batchfile #C1F12E 689 122 54 "🔑KMS_VL_ALL - Smart Activation Script"
+  Mr-xn BurpSuite-collections https://github.com/Mr-xn.png https://github.com/Mr-xn/BurpSuite-collections Batchfile #C1F12E 513 160 255 "BurpSuite收集：包括不限于 Burp 文章、破解版、插件(非BApp Store)、汉化等相关教程，欢迎添砖加瓦"
+  CHEF-KOCH KMS-activator https://github.com/CHEF-KOCH.png https://github.com/CHEF-KOCH/KMS-activator Batchfile #C1F12E 288 64 41 "Windows activation research project."
+  kkkgo LTSC-Add-MicrosoftStore https://github.com/kkkgo.png https://github.com/kkkgo/LTSC-Add-MicrosoftStore Batchfile #C1F12E 225 29 33 "Add Windows Store for LTSC"
+  FQrabbit SSTap-Rule https://github.com/FQrabbit.png https://github.com/FQrabbit/SSTap-Rule Batchfile #C1F12E 2367 613 195 支持更多游戏规则，让SSTap成为真正的“网游加速器”
+ trendingProjectsCount 8
+
+linguistGrammarRepo https://github.com/mmims/language-batchfile
+ firstCommit 2014
+ lastCommit 2018
+ committerCount 3
+ commitCount 55
+
+status active
+fileType text
+wordRank 7410
+
+projectEuler Batch
+ memberCount
+  2022 9

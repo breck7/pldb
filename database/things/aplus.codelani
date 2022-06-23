@@ -1,4 +1,25 @@
+title A+
 appeared 1988
 type pl
+
+patterns
+ hasCentralPackageRepository? false
+
+wikipedia https://en.wikipedia.org/wiki/A+_(programming_language)
+ related apl k unix linux j
+ summary A+ is an array programming language descendent from the programming language A, which in turn was created to replace APL in 1988. Arthur Whitney developed the A portion of A+, while other developers at Morgan Stanley extended it, adding a graphical user interface and other language features. A+ is a high-level, interactive, interpreted language, designed for numerically intensive applications, especially those found in financial applications.  A+ runs on many Unix variants, including Linux. It is free and open source software released under a GNU General Public License. A+ provides an extended set of functions and operators, a graphical user interface with automatic synchronizing of widgets and variables, asynchronous executing of functions associated with variables and events, dynamic loading of user compiled subroutines, and other features. A newer graphical user interface has not yet been ported to all supported platforms The A+ language implements the following changes to the APL language:  an A+ function may have up to nine formal parameters A+ code statements are separated by semicolons, so a single statement may be divided into two or more physical lines The explicit result of a function or operator is the result of the last statement executed A+ implements an object called a dependency, which is a global variable (the dependent variable) and an associated definition that is like a function with no arguments. Values can be explicitly set and referenced in exactly the same ways as for a global variable, but they can also be set through the associated definition.Interactive A+ development is primarily done in the Xemacs editor, through extensions to the editor. Because A+ code uses the original APL symbols, displaying A+ requires a font with those special characters; a font named kapl is provided on the web site for that purpose. Arthur Whitney went on to create a proprietary array language named K.  Like J, K omits the APL character set.  It lacks some of the perceived complexities of A+, such as the existence of statements and two different modes of syntax.
+ pageId 890931
+ created 2008
+ backlinksCount 71
+ revisionCount 1
+ dailyPageViews 57
+ appeared 1988
+
+corporateDevelopers Morgan Stanley
 website http://www.aplusdev.org/
-wikipedia A+_(programming_language)
+status historical
+country US
+fileType text
+isOpenSource true
+
+hopl 1531

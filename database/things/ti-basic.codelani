@@ -1,3 +1,28 @@
+title TI-BASIC
 appeared 1970
 type pl
-wikipedia TI-BASIC
+
+patterns
+ hasCentralPackageRepository? false
+
+wikipedia https://en.wikipedia.org/wiki/TI-BASIC
+ example
+  fact(x)
+  :Func
+  :  If x=0
+  :    Return 1
+  :  If x<0
+  :    Return undef
+  :  x*fact(x-1)
+  :End Func
+ related basic assembly-language c bbcode xml tcl perl rpl
+ summary TI-BASIC is the official name of a BASIC-like language built into Texas Instruments (TI)'s graphing calculators, including the TI-83 series, TI-84 Plus series, TI-89 series, TI-92 series (including Voyage 200), TI-73, and TI-Nspire. TI rarely refers to the language by name, but the name TI-BASIC has been used in some developer documentation. For many applications, it is the most convenient way to program any TI calculator, since the capability to write programs in TI-BASIC is built-in. Assembly language (often referred to as "asm") can also be used, and C compilers exist for translation into assembly: TIGCC for Motorola 68000 (68k) based calculators, and SDCC for Zilog Z80 based calculators. However, both of them are cross-compilers, not allowing on-calculator programming. TI-BASIC is considerably slower than the assembly language (because it has to be interpreted), making it better suited to writing programs to quickly solve math problems or perform repetitive tasks, rather than programming games or graphics-intensive applications. Some math instruction books even provide programs in TI-BASIC (usually for the widespread variant used by the TI-82/83/84 series). Although it is somewhat minimalist compared to programming languages used on computers, TI-BASIC is nonetheless an important factor in the programming community. Because TI graphing calculators are required for advanced mathematics classes in many high schools and universities, TI-BASIC often provides the first glimpse many students have into the world of programming.
+ pageId 657730
+ dailyPageViews 99
+ created 2004
+ backlinksCount 372
+ revisionCount 586
+ appeared 1970
+
+status historical
+fileType text

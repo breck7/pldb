@@ -1,3 +1,23 @@
+title Rc
 appeared 1989
 type pl
-wikipedia Rc
+
+patterns
+ hasCentralPackageRepository? false
+
+wikipedia https://en.wikipedia.org/wiki/Rc
+ example
+  a |[2] b    # pipe only standard error of a to b — in Bourne shell as a 3>&2 2>&1 >&3 | b
+  a <>b       # opens b as a's standard input and standard output
+  a <{b} <{c} # becomes a {standard output of b} {standard output of c}
+ related bourne-shell c algol bash
+ summary rc (for "run commands") is the command line interpreter for Version 10 Unix and Plan 9 from Bell Labs operating systems. It resembles the Bourne shell, but its syntax is somewhat simpler. It was created by Tom Duff, who is better known for an unusual C programming language construct ("Duff's device"). A port of the original rc to Unix is part of Plan 9 from User Space.  A rewrite of rc for Unix-like operating systems by Byron Rakitzis is also available but includes some incompatible changes. Rc uses C-like control structures instead of ALGOL-like, as the original Bourne shell, except that it uses an if not construct instead of else and has a Bourne-like for loop to iterate over lists. In rc all variables are lists of strings, which eliminates the need for constructs like "$@".
+ created 2003
+ backlinksCount 77
+ pageId 171918
+ revisionCount 173
+ dailyPageViews 65
+ appeared 1989
+
+status historical
+wordRank 4637

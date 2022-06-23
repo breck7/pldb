@@ -1,3 +1,24 @@
+title Lithe programming language
 appeared 1982
 type pl
-wikipedia Lithe_(programming_language)
+
+patterns
+ hasCentralPackageRepository? false
+
+wikipedia https://en.wikipedia.org/wiki/Lithe_(programming_language)
+ example
+  rule "|" <i:int> "|" return int;
+    {if i<0 then return -i else return i end}
+ related smalltalk
+ summary Lithe is an experimental programming language created in 1982 by David Sandberg at the University of Washington which allows the programmer to freely choose their own syntax. Lithe combines the ideas of syntax-directed translation and classes in a novel manner that results in a remarkably simple yet powerful language.
+ pageId 908572
+ created 2004
+ backlinksCount 5
+ revisionCount 17
+ dailyPageViews 5
+ appeared 1982
+
+status historical
+fileType text
+
+hopl 998

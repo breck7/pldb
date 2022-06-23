@@ -1,6 +1,7 @@
+title Mako
 appeared 2006
 type template
-website https://www.makotemplates.org/
+
 example
  <%inherit file="base.html"/>
  <%
@@ -19,4 +20,22 @@ example
      % endfor
      </tr>
  </%def>
+
+patterns
+ hasCentralPackageRepository? false
+
 description Mako is a template library written in Python. It provides a familiar, non-XML syntax which compiles into Python modules for maximum performance. Mako's syntax and API borrows from the best ideas of many others, including Django and Jinja2 templates, Cheetah, Myghty, and Genshi. Conceptually, Mako is an embedded Python (i.e. Python Server Page) language, which refines the familiar ideas of componentized layout and inheritance to produce one of the most straightforward and flexible models available, while also maintaining close ties to Python calling and scoping semantics. Mako is used by reddit.com where it delivers over one billion page views per month. It is the default template language included with the Pylons and Pyramid web frameworks.
+
+githubLanguage Mako
+ fileExtensions mako mao
+ trendingProjectsCount 0
+
+linguistGrammarRepo https://github.com/marconi/mako-tmbundle
+ firstCommit 2012
+ lastCommit 2016
+ committerCount 6
+ commitCount 17
+
+website https://www.makotemplates.org/
+status active
+fileType text

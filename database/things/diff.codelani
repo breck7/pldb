@@ -1,3 +1,79 @@
+title Diff
 appeared 1974
 type application
-wikipedia Diff_utility
+
+patterns
+ hasCentralPackageRepository? false
+
+wikipedia https://en.wikipedia.org/wiki/Diff_utility
+ example
+  --- /path/to/original	timestamp
+  +++ /path/to/new	timestamp
+  @@ -1,3 +1,9 @@
+  +This is an important
+  +notice! It should
+  +therefore be located at
+  +the beginning of this
+  +document!
+  +
+   This part of the
+   document has stayed the
+   same from version to
+  @@ -5,16 +11,10 @@
+   be shown if it doesn't
+   change.  Otherwise, that
+   would not be helping to
+  -compress the size of the
+  -changes.
+  -
+  -This paragraph contains
+  -text that is outdated.
+  -It will be deleted in the
+  -near future.
+  +compress anything.
+  
+   It is important to spell
+  -check this dokument. On
+  +check this document. On
+   the other hand, a
+   misspelled word isn't
+   the end of the world.
+  @@ -22,3 +22,7 @@
+   this paragraph needs to
+   be changed. Things can
+   be added after it.
+  +
+  +This paragraph contains
+  +important new additions
+  +to this document.
+ related unix grep emacs-editor regex c bourne-shell fortran modula-2 lisp isbn doi
+ summary In computing, the diff utility is a data comparison tool that calculates and displays the differences between two files. Unlike edit distance notions used for other purposes, diff is line-oriented rather than character-oriented, but it is like Levenshtein distance in that it tries to determine the smallest set of deletions and insertions to create one file from the other. The diff command displays the changes made in a standard format, such that both humans and machines can understand the changes and apply them: given one file and the changes, the other file can be created. Typically, diff is used to show the changes between two versions of the same file. Modern implementations also support binary files. The output is called a "diff", or a patch, since the output can be applied with the Unix program patch. The output of similar file comparison utilities are also called a "diff"; like the use of the word "grep" for describing the act of searching, the word diff became a generic term for calculating data difference and the results thereof.
+ pageId 79673
+ dailyPageViews 223
+ created 2018
+ backlinksCount 257
+ revisionCount 1
+ appeared 1970
+
+githubLanguage Diff
+ fileExtensions diff patch
+ trendingProjectsCount 0
+
+linguistGrammarRepo https://github.com/textmate/diff.tmbundle
+ firstCommit 2005
+ lastCommit 2017
+ committerCount 10
+ commitCount 81
+ sampleCount 1
+ example
+  diff --git a/lib/linguist.rb b/lib/linguist.rb
+  index d472341..8ad9ffb 100644
+  --- a/lib/linguist.rb
+  +++ b/lib/linguist.rb
+  
+
+status active
+fileType text
+wordRank 2959
+
+codeMirror diff

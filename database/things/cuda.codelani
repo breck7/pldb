@@ -1,4 +1,143 @@
+title Compute Unified Device Architecture
 appeared 2007
 type pl
+
+patterns
+ hasCentralPackageRepository? false
+
+wikipedia https://en.wikipedia.org/wiki/CUDA
+ example
+  import numpy
+  from pycublas import CUBLASMatrix
+  A = CUBLASMatrix( numpy.mat([[1,2,3]],[[4,5,6]],numpy.float32) )
+  B = CUBLASMatrix( numpy.mat([[2,3]],[4,5],[[6,7]],numpy.float32) )
+  C = A*B
+  print C.np_mat()
+ related linux c fortran opengl opencl llvmir python perl java ruby lua haskell r matlab idl mathematica common-lisp f-sharp
+ summary CUDA is a parallel computing platform and application programming interface (API) model created by Nvidia. It allows software developers and software engineers to use a CUDA-enabled graphics processing unit (GPU) for general purpose processing – an approach termed GPGPU (General-Purpose computing on Graphics Processing Units). The CUDA platform is a software layer that gives direct access to the GPU's virtual instruction set and parallel computational elements, for the execution of compute kernels. The CUDA platform is designed to work with programming languages such as C, C++, and Fortran. This accessibility makes it easier for specialists in parallel programming to use GPU resources, in contrast to prior APIs like Direct3D and OpenGL, which required advanced skills in graphics programming. Also, CUDA supports programming frameworks such as OpenACC and OpenCL. When it was first introduced by Nvidia, the name CUDA was an acronym for Compute Unified Device Architecture, but Nvidia subsequently dropped the use of the acronym.
+ pageId 7933386
+ dailyPageViews 1966
+ created 2006
+ backlinksCount 444
+ revisionCount 1315
+ appeared 2007
+
+githubLanguage Cuda
+ fileExtensions cu cuh
+ trendingProjects
+  author name avatar url language languageColor stars forks currentPeriodStars description
+  rapidsai cudf https://github.com/rapidsai.png https://github.com/rapidsai/cudf Cuda #3A4E3A 1931 274 187 "cuDF - GPU DataFrame Library"
+  DeepGraphLearning graphvite https://github.com/DeepGraphLearning.png https://github.com/DeepGraphLearning/graphvite Cuda #3A4E3A 433 47 285 "A general and high-performance graph embedding system for various applications"
+ trendingProjectsCount 3
+
+helloWorldCollection Compute Unified Device Architecture
+ // Hello world in CUDA
+ 
+ #include <stdio.h>
+  
+ const int N = 16; 
+ const int blocksize = 16; 
+  
+ __global__ 
+ void hello(char *a, int *b) 
+ {
+ 	a[threadIdx.x] += b[threadIdx.x];
+ }
+  
+ int main()
+ {
+ 	char a[N] = "Hello \0\0\0\0\0\0";
+ 	int b[N] = {15, 10, 6, 0, -11, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0};
+  
+ 	char *ad;
+ 	int *bd;
+ 	const int csize = N*sizeof(char);
+ 	const int isize = N*sizeof(int);
+  
+ 	printf("%s", a);
+  
+ 	cudaMalloc( (void**)&ad, csize ); 
+ 	cudaMalloc( (void**)&bd, isize ); 
+ 	cudaMemcpy( ad, a, csize, cudaMemcpyHostToDevice ); 
+ 	cudaMemcpy( bd, b, isize, cudaMemcpyHostToDevice ); 
+ 	
+ 	dim3 dimBlock( blocksize, 1 );
+ 	dim3 dimGrid( 1, 1 );
+ 	hello<<<dimGrid, dimBlock>>>(ad, bd);
+ 	cudaMemcpy( a, ad, csize, cudaMemcpyDeviceToHost ); 
+ 	cudaFree( ad );
+ 	cudaFree( bd );
+ 	
+ 	printf("%s\n", a);
+ 	return EXIT_SUCCESS;
+ }
+
+linguistGrammarRepo https://github.com/harrism/sublimetext-cuda-cpp
+ firstCommit 2012
+ lastCommit 2017
+ committerCount 3
+ commitCount 25
+ sampleCount 2
+ example
+  #include <stdio.h>
+  #include <cuda_runtime.h>
+  
+  /**
+   * CUDA Kernel Device code
+   *
+   * Computes the vector addition of A and B into C. The 3 vectors have the same
+   * number of elements numElements.
+   */
+  __global__ void
+  vectorAdd(const float *A, const float *B, float *C, int numElements)
+  {
+      int i = blockDim.x * blockIdx.x + threadIdx.x;
+  
+      if (i < numElements)
+      {
+          C[i] = A[i] + B[i];
+      }
+  }
+  
+  /**
+   * Host main routine
+   */
+  int
+  main(void)
+  {
+      // Error code to check return values for CUDA calls
+      cudaError_t err = cudaSuccess;
+  
+      // Launch the Vector Add CUDA Kernel
+      int threadsPerBlock = 256;
+      int blocksPerGrid =(numElements + threadsPerBlock - 1) / threadsPerBlock;
+      vectorAdd<<<blocksPerGrid, threadsPerBlock>>>(d_A, d_B, d_C, numElements);
+      err = cudaGetLastError();
+  
+      if (err != cudaSuccess)
+      {
+          fprintf(stderr, "Failed to launch vectorAdd kernel (error code %s)!\n", cudaGetErrorString(err));
+          exit(EXIT_FAILURE);
+      }
+  
+      // Reset the device and exit
+      err = cudaDeviceReset();
+  
+      return 0;
+  }
+
 website https://developer.nvidia.com/cuda-zone
-wikipedia CUDA
+standsFor Compute Unified Device Architecture
+status active
+fileType text
+isOpenSource true
+
+meetup cuda
+ memberCount 9400
+ groupCount 32
+
+linkedInSkill cuda
+ peopleWithThisSkillCount 28572
+corporateDevelopers Nvidia
+indeedJobs cuda engineer
+ 2017 483

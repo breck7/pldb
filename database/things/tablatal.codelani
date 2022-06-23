@@ -1,6 +1,7 @@
+title tablatal
 appeared 2017
 type pl
-website https://wiki.xxiivv.com/#tablatal
+
 example
  NAME    AGE   COLOR
  Erica   12    Opal
@@ -8,5 +9,7 @@ example
  Nike    34    Red
  Ruca    45    Grey
  Or, [{name:Erica,Age:12,Color:Blue},{name:Alex,Age..}
-reference https://github.com/XXIIVV/Oscean
+
 description This space-sensitive database format is designed to store a list of elements of the same length, accessible by id. The parser is 30 lines long, and allows for human-readable data structures for static sites such as Oscean, also see Indental. In the Tablatal file, the first line declares the key, the spacing between each key defines the length of the parameters for all subsequent lines.
+website https://wiki.xxiivv.com/#tablatal
+reference https://github.com/XXIIVV/Oscean

@@ -1,4 +1,67 @@
+title RobotFramework
 appeared 2013
 type pl
+
+patterns
+ hasCentralPackageRepository? false
+
+githubLanguage RobotFramework
+ fileExtensions robot
+ trendingProjectsCount 0
+
+githubRepo https://github.com/robotframework/robotframework
+ stars 2800
+ forks 929
+ subscribers 370
+ created 2014
+ updated 2018
+ description Generic automation framework for acceptance testing and RPA
+ issues 131
+ firstCommit 2013
+
+linguistGrammarRepo https://github.com/shellderp/sublime-robot-plugin
+ firstCommit 2012
+ lastCommit 2016
+ committerCount 7
+ commitCount 83
+ sampleCount 3
+ example
+  *** Settings ***
+  Documentation     Example test case using the gherkin syntax.
+  ...
+  ...               This test has a workflow similar to the keyword-driven
+  ...               examples. The difference is that the keywords use higher
+  ...               abstraction level and their arguments are embedded into
+  ...               the keyword names.
+  ...
+  ...               This kind of _gherkin_ syntax has been made popular by
+  ...               [http://cukes.info|Cucumber]. It works well especially when
+  ...               tests act as examples that need to be easily understood also
+  ...               by the business people.
+  Library           CalculatorLibrary
+  
+  *** Test Cases ***
+  Addition
+      Given calculator has been cleared
+      When user types "1 + 1"
+      and user pushes equals
+      Then result is "2"
+  
+  *** Keywords ***
+  Calculator has been cleared
+      Push button    C
+  
+  User types "${expression}"
+      Push buttons    ${expression}
+  
+  User pushes equals
+      Push button    =
+  
+  Result is "${result}"
+      Result should be    ${result}
+  
+
 website http://robotframework.org/
-github https://github.com/robotframework/robotframework
+status active
+fileType text
+isOpenSource true

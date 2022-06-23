@@ -1,3 +1,34 @@
+title CEEMAC
 appeared 1980
 type pl
-wikipedia CEEMAC
+
+patterns
+ hasCentralPackageRepository? false
+
+wikipedia https://en.wikipedia.org/wiki/CEEMAC
+ example
+  SCORE: KT
+        			:FIRE ORGAN  KEY T
+        			SPEED [0,0]
+        			: - BUT 0
+        			0
+        			CLEAR [0,0]
+        			XY1 = $80;$80
+       			: MAIN LOOP
+        			F
+       			:FORGND SYMMETRY 0-3
+        			VC = RND3 ORA 3
+        			: SAVE FORGND ROTATION
+        			VD = ROTEZ
+        			:FORGND COLOR
+        			COLOR = NXTCOL
+ related basic pascal
+ summary CEEMAC is a programming language developed in the 1980s for the Apple II family of computers.  It was authored by Brooke Boering and published by Vagabondo Enterprises,CEEMAC was designed to be a visual composition language in which the programmer designed dynamic "scores" by programatically controlling color, shape, sound and movement. Additionally, a programmer could then "perform" their score through use of the Apple II keyboard or paddle input devices to introduce additional variation.CEEMAC syntax loosely resembled a combination of BASIC and Pascal and include control commands such as GOTO, GOSUB, DO, AGAIN, FOR, SKIP, EXIT and loop control structures such as IF/WHILE and TIL/UNLESS. Additionally, 30 predefined macros were included in CEEMAC to aid in score composition.The following is a small CEEMAC sample score: 		    SCORE: KT       			:FIRE ORGAN  KEY T       			SPEED [0,0]       			: - BUT 0       			0       			CLEAR [0,0]       			XY1 = $80;$80      			: MAIN LOOP       			F      			:FORGND SYMMETRY 0-3       			VC = RND3 ORA 3       			: SAVE FORGND ROTATION       			VD = ROTEZ       			:FORGND COLOR       			COLOR = NXTCOL CEEMAC was originally marketed through distribution of a free demonstration program entitled Fire Organ.  This program contained several scores create by Boering and other programmers to demonstrate some of the capabilities of the language.
+ created 2011
+ backlinksCount 3
+ pageId 30646029
+ revisionCount 17
+ dailyPageViews 3
+ appeared 1980
+
+status historical

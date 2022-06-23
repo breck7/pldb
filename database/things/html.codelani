@@ -1,3 +1,99 @@
+title HTML
 appeared 1991
 type textMarkup
-wikipedia HTML
+
+patterns
+ hasCentralPackageRepository? false
+ hasImports? false
+
+wikipedia https://en.wikipedia.org/wiki/HTML
+ example
+  <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+ related sgml css javascript webgl dtd rfc xml unicode utf-8 http fat
+ summary Hypertext Markup Language (HTML) is the standard markup language for creating web pages and web applications. With Cascading Style Sheets (CSS) and JavaScript it forms a triad of cornerstone technologies for the World Wide Web. Web browsers receive HTML documents from a web server or from local storage and render them into multimedia web pages. HTML describes the structure of a web page semantically and originally included cues for the appearance of the document. HTML elements are the building blocks of HTML pages. With HTML constructs, images and other objects, such as interactive forms, may be embedded into the rendered page. It provides a means to create structured documents by denoting structural semantics for text such as headings, paragraphs, lists, links, quotes and other items. HTML elements are delineated by tags, written using angle brackets. Tags such as <img /> and <input /> introduce content into the page directly. Others such as <p>...</p> surround and provide information about document text and may include other tags as sub-elements. Browsers do not display the HTML tags, but use them to interpret the content of the page. HTML can embed programs written in a scripting language such as JavaScript which affect the behavior and content of web pages. Inclusion of CSS defines the look and layout of content. The World Wide Web Consortium (W3C), maintainer of both the HTML and the CSS standards, has encouraged the use of CSS over explicit presentational HTML since 1997.
+ pageId 13191
+ dailyPageViews 4897
+ created 2001
+ backlinksCount 15298
+ revisionCount 7612
+ appeared 1993
+
+githubLanguage HTML
+ fileExtensions html htm htmlhl inc st xht xhtml
+ trendingProjects
+  author name avatar url language languageColor stars forks currentPeriodStars description
+  ripienaar free-for-dev https://github.com/ripienaar.png https://github.com/ripienaar/free-for-dev HTML #e34c26 23923 2569 587 "A list of SaaS, PaaS and IaaS offerings that have free tiers of interest to devops and infradev"
+  nax3t webdevbootcamp https://github.com/nax3t.png https://github.com/nax3t/webdevbootcamp HTML #e34c26 739 506 106 "All source code for back-end projects from the Web Developer Bootcamp"
+  Igglybuff awesome-piracy https://github.com/Igglybuff.png https://github.com/Igglybuff/awesome-piracy HTML #e34c26 7209 648 447 "A curated list of awesome warez and piracy links"
+  adolfintel speedtest https://github.com/adolfintel.png https://github.com/adolfintel/speedtest HTML #e34c26 2572 698 162 "Self-hosted HTML5 Speedtest. Easy setup, examples, configurable, mobile friendly. Supports PHP, Node, Multiple servers, and more"
+  javascript-tutorial ru.javascript.info https://github.com/javascript-tutorial.png https://github.com/javascript-tutorial/ru.javascript.info HTML #e34c26 931 298 335 "Современный учебник JavaScript"
+  thelinuxchoice blackeye https://github.com/thelinuxchoice.png https://github.com/thelinuxchoice/blackeye HTML #e34c26 1235 465 328 "The most complete Phishing Tool, with 32 templates +1 customizable"
+  shishan100 Java-Interview-Advanced https://github.com/shishan100.png https://github.com/shishan100/Java-Interview-Advanced HTML #e34c26 467 208 222 中华石杉--互联网Java进阶面试训练营
+  terkelg awesome-creative-coding https://github.com/terkelg.png https://github.com/terkelg/awesome-creative-coding HTML #e34c26 5334 408 221 "Creative Coding: Generative Art, Data visualization, Interaction Design, Resources."
+  cod3rcursos web-moderno https://github.com/cod3rcursos.png https://github.com/cod3rcursos/web-moderno HTML #e34c26 831 441 69 
+  portainer portainer https://github.com/portainer.png https://github.com/portainer/portainer HTML #e34c26 12659 1201 276 "Making Docker management easy."
+  mercyblitz jsr https://github.com/mercyblitz.png https://github.com/mercyblitz/jsr HTML #e34c26 1176 628 83 "Java Specification Requests"
+  github training-kit https://github.com/github.png https://github.com/github/training-kit HTML #e34c26 2328 3160 54 "Open source cheat sheets for Git and GitHub"
+  google styleguide https://github.com/google.png https://github.com/google/styleguide HTML #e34c26 21536 7535 378 "Style guides for Google-originated open-source projects"
+  blinkfox hexo-theme-matery https://github.com/blinkfox.png https://github.com/blinkfox/hexo-theme-matery HTML #e34c26 910 230 154 "A beautiful hexo blog theme with material design and responsive design.一个基于材料设计和响应式设计而成的全面、美观的Hexo主题。"
+  stisla stisla https://github.com/stisla.png https://github.com/stisla/stisla HTML #e34c26 995 261 93 "Free Bootstrap Admin Template"
+  facebookresearch fastText https://github.com/facebookresearch.png https://github.com/facebookresearch/fastText HTML #e34c26 19504 3714 422 "Library for fast text representation and classification."
+  simple-icons simple-icons https://github.com/simple-icons.png https://github.com/simple-icons/simple-icons HTML #e34c26 7606 881 106 "SVG icons for popular brands"
+  whatwg html https://github.com/whatwg.png https://github.com/whatwg/html HTML #e34c26 2806 927 67 "HTML Standard"
+  microsoft dotnet https://github.com/microsoft.png https://github.com/microsoft/dotnet HTML #e34c26 11433 1806 111 "This repo is the official home of .NET on GitHub. It's a great starting point to find many .NET OSS projects from Microsoft and the community, including many that are part of the .NET Foundation."
+  SamProf MatBlazor https://github.com/SamProf.png https://github.com/SamProf/MatBlazor HTML #e34c26 520 51 95 "Material Design components for Blazor and Razor Components"
+  bigcommerce cornerstone https://github.com/bigcommerce.png https://github.com/bigcommerce/cornerstone HTML #e34c26 124 245 6 "The BigCommerce Cornerstone theme"
+  GTFOBins GTFOBins.github.io https://github.com/GTFOBins.png https://github.com/GTFOBins/GTFOBins.github.io HTML #e34c26 1682 210 269 "Curated list of Unix binaries that can be exploited to bypass system security restrictions"
+  KhronosGroup glTF https://github.com/KhronosGroup.png https://github.com/KhronosGroup/glTF HTML #e34c26 3332 610 77 "glTF – Runtime 3D Asset Delivery"
+  w3c webcomponents https://github.com/w3c.png https://github.com/w3c/webcomponents HTML #e34c26 2838 258 88 "Web Components specifications"
+  ganlanyuan tiny-slider https://github.com/ganlanyuan.png https://github.com/ganlanyuan/tiny-slider HTML #e34c26 1839 272 163 "Vanilla javascript slider for all purposes."
+ trendingProjectsCount 26
+
+helloWorldCollection HTML
+ <HTML>
+ <!-- Hello World in HTML -->
+ <HEAD>
+ <TITLE>Hello World!</TITLE>
+ </HEAD>
+ <BODY>
+ Hello World!
+ </BODY>
+ </HTML>
+ 
+
+linguistGrammarRepo https://github.com/atom/language-html
+ firstCommit 2013
+ lastCommit 2018
+ committerCount 51
+ commitCount 371
+ sampleCount 7
+ example
+  </UL>
+  <P><A HREF="devices.html">Supported Targets</A></P>
+  </BODY>
+  </HEAD>
+  
+  
+
+status active
+
+replit html
+
+country CH
+fileType text
+wordRank 970
+
+meetup html5
+ memberCount 1590050
+ groupCount 2347
+
+linkedInSkill html
+ peopleWithThisSkillCount 5505882
+
+hopl 2097
+
+antlr https://github.com/antlr/grammars-v4/tree/master/html
+
+corporateDevelopers W3C
+indeedJobs html developer
+ 2017 14472

@@ -1,7 +1,7 @@
+title Specify Parameterized Accelerators Through Inordinately Abstract Language
 appeared 2018
 type pl
-website https://spatial-lang.org/
-github https://github.com/stanford-ppl/spatial
+
 example
  import spatial.dsl._
  
@@ -31,4 +31,25 @@ example
  
    }
  } 
+
+patterns
+ hasCentralPackageRepository? false
+
 description Spatial: A High Level Programming Language for FPGAs
+
+githubRepo https://github.com/stanford-ppl/spatial
+ firstCommit 2017
+ stars 72
+ forks 6
+ subscribers 14
+ created 2018
+ updated 2018
+ description Spatial: "Specify Parameterized Accelerators Through Inordinately Abstract Language"
+ issues 32
+
+website https://spatial-lang.org/
+standsFor Specify Parameterized Accelerators Through Inordinately Abstract Language
+status active
+fileType text
+wordRank 6389
+isOpenSource true

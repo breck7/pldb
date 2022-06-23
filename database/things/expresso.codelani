@@ -1,5 +1,16 @@
+title expresso
 appeared 2012
 type pl
-github https://github.com/willtim/Expresso
+
 example
  let sqmag = {x, y} -> x*x + y*y
+
+githubRepo https://github.com/willtim/Expresso
+ firstCommit 2012
+ stars 212
+ forks 12
+ subscribers 16
+ created 2012
+ updated 2020
+ description A simple expressions language with polymorphic extensible row types.
+ issues 6

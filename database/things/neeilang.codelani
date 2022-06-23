@@ -1,6 +1,7 @@
+title neeilang
 appeared 2019
 type pl
-github https://github.com/neeilan/neeilang
+
 example
  fn main() : Int {
    var a : Int = 5;
@@ -26,4 +27,13 @@ example
      print "5 <= a";  // 5 <= a
    }
  
+
+githubRepo https://github.com/neeilan/neeilang
+ firstCommit 2019
+ stars 9
+ subscribers 1
+ created 2019
+ updated 2020
+ description Fast, type-safe, object-oriented language by yours truly
+
 reference https://www.reddit.com/r/ProgrammingLanguages/comments/erqm6s/neeilang_a_small_stronglytyped_language_oop/

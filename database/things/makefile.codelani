@@ -1,4 +1,66 @@
+title Makefile
 appeared 1976
 type application
-wikipedia Makefile
+
+patterns
+ hasCentralPackageRepository? false
+ hasSemanticIndentation? true
+
 description Lines that begin with TAB are assumed to be part of a recipe (so they are shell scripts and passed to the shell for parsing), and lines that do not begin with TAB cannot be part of a recipe (so they cannot be shell scripts: they must be make syntax).
+
+wikipedia https://en.wikipedia.org/wiki/Makefile
+ example
+  edit: main.o kbd.o command.o display.o 
+      cc -o edit main.o kbd.o command.o display.o
+       
+  main.o: main.c defs.h
+      cc -c main.c
+  kbd.o: kbd.c defs.h command.h
+      cc -c kbd.c
+  command.o: command.c defs.h command.h
+      cc -c command.c
+  display.o: display.c defs.h
+      cc -c display.c
+  
+  clean:
+       rm edit main.o kbd.o command.o display.o
+ related c
+ summary A makefile is a file containing a set of directives used with the make build automation tool.
+ pageId 55976
+ dailyPageViews 328
+ created 2002
+ backlinksCount 81
+ revisionCount 87
+
+githubLanguage Makefile
+ fileExtensions mak d make mk mkfile
+ trendingProjects
+  author name avatar url language languageColor stars forks currentPeriodStars description
+  theos theos https://github.com/theos.png https://github.com/theos/theos Makefile #427819 2638 756 60 "A cross-platform suite of tools for building and deploying software for iOS and other platforms."
+  frida frida https://github.com/frida.png https://github.com/frida/frida Makefile #427819 3977 444 165 "Clone this repo to build Frida"
+  ccrisan motioneyeos https://github.com/ccrisan.png https://github.com/ccrisan/motioneyeos Makefile #427819 4285 483 145 "A Video Surveillance OS For Single-board Computers"
+  jobbole awesome-python-cn https://github.com/jobbole.png https://github.com/jobbole/awesome-python-cn Makefile #427819 16302 5573 437 Python资源大全中文版，包括：Web框架、网络爬虫、模板引擎、数据库、数据可视化、图片处理等，由伯乐在线持续更新。
+  NVIDIA nvidia-docker https://github.com/NVIDIA.png https://github.com/NVIDIA/nvidia-docker Makefile #427819 9125 1223 268 "Build and run Docker containers leveraging NVIDIA GPUs"
+  home-assistant hassos https://github.com/home-assistant.png https://github.com/home-assistant/hassos Makefile #427819 568 156 32 "🔰 HassOS Docker hypervisor"
+  container-storage-interface spec https://github.com/container-storage-interface.png https://github.com/container-storage-interface/spec Makefile #427819 512 140 17 "Container Storage Interface (CSI) Specification."
+  feiskyer kubernetes-handbook https://github.com/feiskyer.png https://github.com/feiskyer/kubernetes-handbook Makefile #427819 3083 868 146 "Kubernetes Handbook （Kubernetes指南） https://kubernetes.feisky.xyz"
+  buildroot buildroot https://github.com/buildroot.png https://github.com/buildroot/buildroot Makefile #427819 821 873 28 "Buildroot, making embedded Linux easy. Note that this is not the official repository, but only a mirror. The official Git repository is at http://git.buildroot.net/buildroot/. Do not open issues or file pull requests here."
+  mkubecek vmware-host-modules https://github.com/mkubecek.png https://github.com/mkubecek/vmware-host-modules Makefile #427819 457 74 29 "Patches needed to build VMware (Player and Workstation) host modules against recent kernels"
+  ramitsurana awesome-kubernetes https://github.com/ramitsurana.png https://github.com/ramitsurana/awesome-kubernetes Makefile #427819 6891 1036 275 "A curated list for awesome kubernetes sources 🚢🎉"
+  tomwhite hadoop-book https://github.com/tomwhite.png https://github.com/tomwhite/hadoop-book Makefile #427819 2791 2359 47 "Example source code accompanying O'Reilly's ""Hadoop: The Definitive Guide"" by Tom White"
+ trendingProjectsCount 13
+
+linguistGrammarRepo https://github.com/textmate/make.tmbundle
+ sampleCount 3
+ example
+  #!/usr/bin/make -f
+  %:
+  	ls -l
+  
+
+status active
+fileType text
+
+quineRelay Makefile
+
+ubuntuPackage make

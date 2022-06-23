@@ -1,3 +1,86 @@
+title One World Language
 appeared 2004
 type xmlFormat
-wikipedia Web_Ontology_Language
+
+patterns
+ hasCentralPackageRepository? false
+
+wikipedia https://en.wikipedia.org/wiki/Web_Ontology_Language
+ example
+  <http://example.org/tea.owl> rdf:type owl:Ontology .
+   :Tea  rdf:type            owl:Class .
+ related rdf xml html axiom turtle sql prolog uml
+ summary The Web Ontology Language (OWL) is a family of knowledge representation languages for authoring ontologies. Ontologies are a formal way to describe taxonomies and classification networks, essentially defining the structure of knowledge for various domains: the nouns representing classes of objects and the verbs representing relations between the objects. Ontologies resemble class hierarchies in object-oriented programming but there are several critical differences. Class hierarchies are meant to represent structures used in source code that evolve fairly slowly (typically monthly revisions) whereas ontologies are meant to represent information on the Internet and are expected to be evolving almost constantly. Similarly, ontologies are typically far more flexible as they are meant to represent information on the Internet coming from all sorts of heterogeneous data sources. Class hierarchies on the other hand are meant to be fairly static and rely on far less diverse and more structured sources of data such as corporate databases. The OWL languages are characterized by formal semantics. They are built upon the World Wide Web Consortium's (W3C) XML standard for objects called the Resource Description Framework (RDF). OWL and RDF have attracted significant academic, medical and commercial interest. In October 2007, a new W3C working group was started to extend OWL with several new features as proposed in the OWL 1.1 member submission. W3C announced the new version of OWL on 27 October 2009. This new version, called OWL 2, soon found its way into semantic editors such as Protégé and semantic reasoners such as Pellet, RacerPro, FaCT++ and HermiT. The OWL family contains many species, serializations, syntaxes and specifications with similar names. OWL and OWL2 are used to refer to the 2004 and 2009 specifications, respectively. Full species names will be used, including specification version (for example, OWL2 EL). When referring more generally, OWL Family will be used.
+ pageId 248001
+ dailyPageViews 443
+ created 2003
+ backlinksCount 506
+ revisionCount 706
+ appeared 2004
+
+githubLanguage Web Ontology Language
+ fileExtensions owl
+ trendingProjectsCount 0
+
+linguistGrammarRepo https://github.com/textmate/xml.tmbundle
+ firstCommit 2004
+ lastCommit 2018
+ committerCount 12
+ commitCount 97
+ sampleCount 1
+ example
+  <?xml version="1.0"?>
+  
+  
+  <!DOCTYPE rdf:RDF [
+      <!ENTITY owl "http://www.w3.org/2002/07/owl#" >
+      <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
+      <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
+      <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
+  ]>
+  
+  
+  <rdf:RDF xmlns="http://www.co-ode.org/ontologies/pizza/pizza.owl#"
+       xml:base="http://www.co-ode.org/ontologies/pizza/pizza.owl"
+       xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+       xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+       xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+       xmlns:owl="http://www.w3.org/2002/07/owl#">
+      <owl:Ontology rdf:about="">
+          <owl:versionInfo xml:lang="en"
+              >v.1.4. Added Food class (used in domain/range of hasIngredient), Added several hasCountryOfOrigin restrictions on pizzas, Made hasTopping invers functional</owl:versionInfo>
+          <owl:versionInfo rdf:datatype="&xsd;string">version 1.5</owl:versionInfo>
+          <owl:versionInfo xml:lang="en"
+              >v.1.5. Removed protege.owl import and references. Made ontology URI date-independent</owl:versionInfo>
+          <rdfs:comment xml:lang="en"
+              >An example ontology that contains all constructs required for the various versions of the Pizza Tutorial run by Manchester University (see http://www.co-ode.org/resources/tutorials/)</rdfs:comment>
+      </owl:Ontology>
+      
+  
+  
+      <!-- 
+      ///////////////////////////////////////////////////////////////////////////
+      //
+      //   OWL Classes
+      //
+      ///////////////////////////////////////////////////////////////////////////
+       -->
+  
+      
+  
+  
+      <!-- Class: http://www.co-ode.org/ontologies/pizza/pizza.owl#American -->
+  
+      <owl:Class rdf:about="#American">
+          <rdfs:label xml:lang="pt">Americana</rdfs:label>
+          <rdfs:subClassOf>
+              <owl:Restriction>
+                  <owl:onProperty rdf:resource="#hasTopping"/>
+                  <owl:someValuesFrom rdf:resource="#TomatoTopping"/>
+              </owl:Re
+
+standsFor One World Language
+status active
+fileType text
+
+hopl 4934

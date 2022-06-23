@@ -1,6 +1,7 @@
+title SCRIPT markup
 appeared 1999
 type pl
-wikipedia SCRIPT_(markup)
+
 example
  .ez on
  &P.This is a paragraph.
@@ -8,3 +9,27 @@ example
  &N2.First subitem
  &N2.Second subitem
  &N1.Second item
+
+patterns
+ hasCentralPackageRepository? false
+
+wikipedia https://en.wikipedia.org/wiki/SCRIPT_(markup)
+ example
+  .ez on
+  &P.This is a paragraph.
+  &N1.First item
+  &N2.First subitem
+  &N2.Second subitem
+  &N1.Second item
+ related ibm-gml sgml scribe
+ summary SCRIPT, any of a series of text markup languages starting with Script under Control Program-67/Cambridge Monitor System (CP-67/CMS) and Script/370 under Virtual Machine Facility/370 (VM/370); the current version, SCRIPT/VS, is part of IBM's Document Composition Facility (DCF) for IBM z/VM and z/OS systems. SCRIPT was developed for CP-67/CMS by Stuart Madnick at MIT, succeeding CTSS RUNOFF. SCRIPT is a procedural markup language. Inline commands called control words, indicated by a period in the first column of a logical line, describe the desired appearance of the formatted text. SCRIPT originally provided a 2PASS option to allow text to refer to variables defined later in the text, but subsequent versions allowed more than two passes.
+ pageId 4226836
+ dailyPageViews 17
+ created 2006
+ backlinksCount 18
+ revisionCount 121
+ appeared 1999
+
+status historical
+fileType text
+wordRank 2443

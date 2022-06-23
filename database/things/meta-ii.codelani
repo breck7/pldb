@@ -1,3 +1,12 @@
+title Meta II
 appeared 1962
 type grammarLanguage
-wikipedia META_II
+
+wikipedia https://en.wikipedia.org/wiki/META_II
+ summary META II is a domain-specific programming language for writing compilers. It was created in 1963-1964 by Dewey Val Schorre at UCLA. META II uses what Schorre called syntax equations. Its operation is simply explained as:   Each syntax equation is translated into a recursive subroutine which tests the input string for a particular phrase structure, and deletes it if found. Meta II programs are compiled into an interpreted byte code language. VALGOL and SMALGOL compilers illustrating its capabilities were written in the META II language,  VALGOL is a simple algebraic language designed for the purpose of illustrating META II. SMALGOL was a fairly large subset of ALGOL 60.
+ backlinksCount 33
+ pageId 6512314
+ dailyPageViews 17
+ appeared 1963
+
+hopl 202

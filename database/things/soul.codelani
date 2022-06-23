@@ -1,5 +1,13 @@
+title soul
 appeared 2000
 type queryLanguage
+
+patterns
+ hasCentralPackageRepository? false
+
+description Program queries can answer important software engineering questions ranging from “is my code bug free?” over “does my code follow the prescribed design?” to “how can my code be refactored?”. SOUL is a Prolog-like language with specialized features for querying programs.
 website http://soft.vub.ac.be/SOUL/
 reference https://github.com/Ducasse/SOUL
-description Program queries can answer important software engineering questions ranging from “is my code bug free?” over “does my code follow the prescribed design?” to “how can my code be refactored?”. SOUL is a Prolog-like language with specialized features for querying programs.
+status historical
+fileType text
+wordRank 2403

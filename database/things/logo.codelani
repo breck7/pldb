@@ -1,3 +1,42 @@
+title Logo
 appeared 1967
 type pl
-wikipedia Logo_(programming_language)
+
+patterns
+ hasCentralPackageRepository? false
+ hasComments? true
+
+wikipedia https://en.wikipedia.org/wiki/Logo_(programming_language)
+ related starlogo netlogo smalltalk etoys scratch rebol lisp trs-80-color-computer objectlogo acornsoft-logo python jquery squeak
+ summary Logo is an educational programming language, designed in 1967 by Wally Feurzeig, Seymour Papert and Cynthia Solomon. "Logo" is not an acronym. It was derived from the Greek logos meaning word or "thought" by Feurzeig, to distinguish itself from other programming languages that were primarily numbers, not graphics or logic, oriented. A general-purpose language, Logo is widely known for its use of turtle graphics, in which commands for movement and drawing produced line graphics either on screen or with a small robot called a turtle. The language was conceived to teach concepts of programming related to Lisp and only later to enable what Papert called "body-syntonic reasoning", where students could understand, predict and reason about the turtle's motion by imagining what they would do if they were the turtle. There are substantial differences among the many dialects of Logo, and the situation is confused by the regular appearance of turtle-graphics programs that call themselves Logo. Logo is a multi-paradigm adaptation and dialect of Lisp, a functional programming language. There is no standard Logo, but UCBLogo has the best facilities for handling lists, files, I/O, and recursion in scripts, and can be used to teach all computer science concepts, as UC Berkeley lecturer Brian Harvey did in his Computer Science Logo Style trilogy. Logo is usually an interpreted language, although there have been developed compiled Logo dialects (such as Lhogho and Liogo). Logo is not case-sensitive but retains the case used for formatting.
+ pageId 18334
+ dailyPageViews 575
+ created 2001
+ backlinksCount 229
+ revisionCount 1360
+ appeared 1967
+
+helloWorldCollection Logo
+ ; Hello World in Logo
+ 
+ DRUCKEZEILE [Hello World!]
+ 
+
+status active
+country US
+fileType text
+wordRank 1154
+
+tiobe Logo
+ currentRank 36
+
+projectEuler Logo
+ memberCount
+  2019 24
+  2022 23
+
+hopl 291
+
+rosettaCode Logo
+
+antlr https://github.com/antlr/grammars-v4/tree/master/logo

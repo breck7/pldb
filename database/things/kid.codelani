@@ -1,3 +1,32 @@
+title Kid templating language
 appeared 1999
 type template
-wikipedia Kid_(templating_language)
+
+patterns
+ hasCentralPackageRepository? false
+
+wikipedia https://en.wikipedia.org/wiki/Kid_(templating_language)
+ example
+  <html xmlns="http://www.w3.org/1999/xhtml"
+        xmlns:py="http://purl.org/kid/ns#">
+    <head>
+      <title py:content="title">title goes here</title>
+    </head>
+    <body>
+      <ul>
+        <li py:for="item in mylist" py:content="item">item goes here</li>
+      </ul>
+    </body>
+  </html>
+ related xml python template-attribute-language php genshi
+ summary Kid is a simple template engine for XML-based vocabularies written in Python. Kid claims to have many of the best features of XSLT, TAL, and PHP, but "with much of the limitations and complexity stamped out". Kid initially acted as the View component of the TurboGears framework in the framework's version 1.x implementation; however, the TurboGears project team has since replaced it with Genshi, citing perceived performance advantages.Kid is used by the Fedora Project in the repoview utility  which creates a set of static HTML pages within a YUM repository.
+ backlinksCount 11
+ pageId 3738821
+ created 2006
+ revisionCount 46
+ dailyPageViews 5
+ appeared 1999
+
+status historical
+fileType text
+wordRank 3435

@@ -1,3 +1,99 @@
+title Monkey
 appeared 2011
 type pl
-wikipedia Monkey_(programming_language)
+
+patterns
+ hasCentralPackageRepository? false
+
+wikipedia https://en.wikipedia.org/wiki/Monkey_(programming_language)
+ example
+  ' The 'Player' class, as referenced previously (Placement does not matter):
+  Class Player
+    ' Declare all of our fields (Class-local variables):
+    
+    ' These two variables will act as our position on the screen.
+    ' (Alternatively, an 'Array or third-party class could be used)
+    Field x:Float, y:Float
+    
+    ' This will be a reference to an 'Image' object we'll specify.
+    Field image:Image
+    
+    ' Constructor(s):
+    
+    ' Overloading 'New' mainly works the same way as constructors in other languages.
+    ' Returning is generally not recommended for constructors.
+    Method New(img:Image, x:Float=100, y:Float=100)
+      ' Due to the arguments using the same names, 'Self'
+      ' is required to resolve our fields' names:
+      Self.image = img
+      
+      Self.x = x
+      Self.y = y
+    End
+    
+    ' Methods:
+    
+    ' This will be our main render-method for this object:
+    Method Draw:Void()
+      ' Draw the 'image' object to the screen using our 'x' and 'y' fields.
+      DrawImage(image, x, y)
+      
+      ' Returning in a 'Void' function is not required. (Some still recommend it)
+      Return
+    End
+  End
+ related linux blitzbasic c csharp javascript java basic android ios python opengl webgl objective-c llvmir haxe
+ summary Monkey X is a high-level programming language designed for video game development for many different platforms, including desktop and laptop computers, mobile phones, tablets, and video game consoles. The language itself is an object-oriented dialect of BASIC, which the compiler translates into native source code for several target platforms. The resulting code is then compiled normally. Currently the official target platforms include: Windows (Including the Windows 8 store), OS X, Linux, Xbox 360, Android, iOS, among others. Community-driven, user-made targets have also been created, some notable user-targets include: MonkeyMax (BlitzMax), Monkey-Python (Python), and a Nintendo DS target.Monkey X's main implementation (compiler), and a number of official modules are open source. Monkey X's main application/game framework, Mojo, is partially commercial. The compiler and most of the official modules can be found on GitHub. Monkey is also distributed in several compiled binary forms from its official website (registration required, to build the compiler). For details, see: Mojo (framework), and Game targets (technical).
+ pageId 31116115
+ created 2013
+ backlinksCount 91
+ revisionCount 1
+ dailyPageViews 14
+ appeared 2011
+
+githubLanguage Monkey
+ fileExtensions monkey monkey2
+ trendingProjectsCount 0
+
+linguistGrammarRepo https://github.com/gingerbeardman/monkey.tmbundle
+ firstCommit 2011
+ lastCommit 2016
+ committerCount 4
+ commitCount 113
+ sampleCount 5
+ example
+  'Showcases use of Lambda functions and Generics.
+  
+  #Import "<std>"
+  Using std..
+  
+  Function Main()
+  
+  	Local testStack := New Stack< MyObject >
+  	
+  	For Local n := 1 To 20
+  		Local newItem := New MyObject
+  		newItem.depth = Rnd( 0, 100 )
+  		testStack.Push( newItem )
+  	Next
+  		
+  	testStack.Sort( Lambda:Int( x:MyObject,y:MyObject )
+  		Return x.depth<=>y.depth
+  	End )
+  	
+  	For Local n := Eachin testStack
+  		Print( n.depth )
+  	Next
+  	
+  End
+  
+  
+  Struct MyObject
+  	Field depth := 0
+  End
+
+status active
+fileType text
+wordRank 6182
+
+rosettaCode Monkey

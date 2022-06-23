@@ -1,3 +1,49 @@
+title PIC
 appeared 1988
 type textMarkup
-wikipedia Pic_(programming_language)
+
+patterns
+ hasCentralPackageRepository? false
+
+wikipedia https://en.wikipedia.org/wiki/Pic_(programming_language)
+ related diagram troff tex linux
+ summary In computing, Pic is a domain-specific programming language by Brian Kernighan for specifying diagrams in terms of objects such as boxes with arrows between them.  The pic compiler translates this description into concrete drawing commands.  Pic is a procedural programming language, with variable assignment, macros, conditionals, and looping. The language is an example of a little language originally intended for the comfort of non-programmers in the Unix environment (Bentley 1988). Pic was first implemented, and is still most typically used, as a preprocessor in the troff document processing system.  The pic preprocessor filters a troff document, replacing diagram descriptions by concrete drawing commands, and passing the rest of the document through without change. A version of pic is included in groff, the GNU version of troff.  GNU pic can also act as a preprocessor for TeX documents, emitting its own tpic DVI specials, which aren't as widely supported as those of other TeX drivers (like PostScript).  Arbitrary diagram text can be included for formatting by the word processor to which the pic output is directed, and arbitrary post-processor commands can also be included. Dwight Aplevich's implementation, DPIC, can also generate postscript or svg images by itself, as well as act as a preprocessor. The three principal sources of pic processors are GNU pic, found on many Linux systems, and dpic, both of which are free, and the original AT&T pic. Pic has some similarity with MetaPost and the DOT language.
+ pageId 8033525
+ created 2017
+ backlinksCount 19
+ revisionCount 1
+ dailyPageViews 1
+ appeared 1988
+
+githubLanguage Pic
+ fileExtensions pic chem
+ trendingProjectsCount 0
+
+linguistGrammarRepo https://github.com/Alhadis/language-roff
+ firstCommit 2016
+ lastCommit 2018
+ committerCount 3
+ commitCount 351
+ sampleCount 3
+ example
+  # Dextroamphetamine molecule
+  .cstart
+  	.ps 26
+  	size 28
+  R1:
+  	ring double 1,2 3,4 5,6
+  	bond 60 from R1.V2
+  	bond 120
+  A1:
+  	front bond down ; CH3
+  	bond 60 from A1 ; NH2
+  	.ps
+  .cend
+  
+
+status active
+country US
+fileType text
+wordRank 2402
+
+hopl 1007

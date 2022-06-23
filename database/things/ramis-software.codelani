@@ -1,3 +1,20 @@
+title Ramis software
 appeared 1960
 type pl
-wikipedia Ramis_software
+
+patterns
+ hasCentralPackageRepository? false
+
+wikipedia https://en.wikipedia.org/wiki/Ramis_software
+ related focus cobol
+ summary RAMIS (Random Access Management Information System) is a fourth-generation programming language (4GL) capable of creating and maintaining databases consisting of named files containing both numeric and alphabetic fields and subsequently producing detailed simple or complex reports using a very simple English like language.  As such it is easily mastered by non-programmers. A typical program - either to create or maintain a database or to create quite complex reports - would normally consist of a handful of lines of code which could be written or understood by non-professional programmers.  "End users" as they became known. Such end users could be trained to use RAMIS in a matter of days and so large companies would often have several hundred such users scattered throughout the company.
+ created 2007
+ backlinksCount 8
+ pageId 2491336
+ revisionCount 4
+ dailyPageViews 3
+ appeared 1960
+
+status historical
+
+hopl 4567

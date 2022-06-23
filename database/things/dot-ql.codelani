@@ -1,3 +1,24 @@
+title .QL
 appeared 2007
 type pl
-wikipedia .QL
+
+patterns
+ hasCentralPackageRepository? false
+
+wikipedia https://en.wikipedia.org/wiki/.QL
+ example
+  1  from Class c, int numOfMethods
+  2  where numOfMethods = count(Method m| m.getDeclaringType()=c 
+  3                       and m.hasModifier("public"))
+  4        and numOfMethods > 10
+  5  select c.getPackage(), c, numOfMethods
+ related datalog sql java
+ summary .QL (pronounced "dot-cue-el") is an object-oriented query language used to retrieve data from relational database management systems. It is reminiscent of the standard query language SQL and the object-oriented programming language Java. .QL is an object-oriented variant of a logical query language called Datalog. Hierarchical data can therefore be naturally queried in .QL in a recursive manner.  Queries written in .QL are optimised, compiled into SQL and can then be executed on any major relational database management system. .QL query language is being used in SemmleCode to query a relational representation of Java programs. .QL is developed at Semmle Limited and is based on the company's proprietary technology.
+ created 2007
+ backlinksCount 39
+ pageId 11537140
+ revisionCount 24
+ dailyPageViews 59
+ appeared 2007
+
+status historical

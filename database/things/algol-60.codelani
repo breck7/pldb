@@ -1,7 +1,8 @@
+title ALGOL 60
 appeared 1960
 type pl
 creators John Backus and Friedrich L. Bauer and Julien Green and Charles Katz and John McCarthy and Peter Naur and Alan Perlis and Heinz Rutishauser and Klaus Samelson and Adriaan van Wijngaarden and Bernard Vauquois and Joseph Henry Wegstein and Michael Woodger
-wikipedia ALGOL_60
+
 example
  procedure Absmax(a) Size:(n, m) Result:(y) Subscripts:(i, k);
     value n, m; array a; integer n, m, i, k; real y;
@@ -17,4 +18,31 @@ example
                      i := p; k := q
                  end
  end Absmax 
+
+patterns
+ hasCentralPackageRepository? false
+
 description ALGOL 60 (short for Algorithmic Language 1960) is a member of the ALGOL family of computer programming languages. It followed on from ALGOL 58 which had introduced code blocks and the begin and end pairs for delimiting them. ALGOL 60 was the first language implementing nested function definitions with lexical scope. It gave rise to many other programming languages, including CPL, Simula, BCPL, B, Pascal and C.
+
+wikipedia https://en.wikipedia.org/wiki/ALGOL_60
+ example
+  'PROGRAM' (HELLO)
+    'BEGIN'
+       'COMMENT' OPEN QUOTE IS '(', CLOSE IS ')', PRINTABLE SPACE HAS TO
+                 BE WRITTEN AS % BECAUSE SPACES ARE IGNORED;
+       WRITE TEXT('('HELLO%WORLD')');
+    'END'
+    'FINISH'
+ related algol-58 simula combined-programming-language pascal ada c algol cpl bcpl b algol-w algol-68 cobol scheme lisp synchronized-multimedia-integration-language act-iii elliott-algol espol newp algol-n atlas-autocode coral edinburgh-imp iswim jovial neliac s-algol
+ summary ALGOL 60 (short for Algorithmic Language 1960) is a member of the ALGOL family of computer programming languages. It followed on from ALGOL 58 which had introduced code blocks and the begin and end pairs for delimiting them.  ALGOL 60 was the first language implementing nested function definitions with lexical scope.  It gave rise to many other programming languages, including CPL, Simula, BCPL, B, Pascal and C. Niklaus Wirth based his own ALGOL W on ALGOL 60 before moving to develop Pascal. Algol-W was intended to be the next generation ALGOL but the ALGOL 68 committee decided on a design that was more complex and advanced rather than a cleaned simplified ALGOL 60. The official ALGOL versions are named after the year they were first published. Algol 68 is substantially different from Algol 60 and was criticised partially for being so, so that in general "Algol" refers to dialects of Algol 60.
+ pageId 692878
+ created 2004
+ backlinksCount 884
+ revisionCount 130
+ dailyPageViews 248
+ appeared 1960
+
+status historical
+fileType text
+
+hopl 1807

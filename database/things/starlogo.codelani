@@ -1,3 +1,18 @@
+title StarLogo
 appeared 2008
 type pl
-wikipedia StarLogo
+
+patterns
+ hasCentralPackageRepository? false
+
+wikipedia https://en.wikipedia.org/wiki/StarLogo
+ related logo netlogo etoys lisp connection-machine java squeak smalltalk scratch
+ summary StarLogo is an agent-based simulation language developed by Mitchel Resnick, Eric Klopfer, and others at MIT Media Lab and MIT Scheller Teacher Education Program in Massachusetts. It is an extension of the Logo programming language, a dialect of Lisp. Designed for education, StarLogo can be used by students to model the behavior of decentralized systems. The first StarLogo ran on a Connection Machine 2 parallel computer. A subsequent version ran on Macintosh computers; this version became known later as MacStarLogo (and now is called MacStarLogo Classic). The current StarLogo is written in Java and works on most computers. StarLogo is also available in a version called OpenStarLogo. The source code for OpenStarLogo is available online, although the license under which it is released is not an open source license according to the Open Source Definition, because of restrictions on the commercial use of the code. StarLogo TNG (The Next Generation) version 1.0 was released in July 2008. It provides a 3D world using OpenGL graphics and a block-based graphical language to increase ease of use and learnability. It is written in C and Java. StarLogo TNG uses "blocks" to put together puzzle-like pieces. StarLogo TNG reads the blocks in the order you fit them together, and sets the program in the Spaceland view. StarLogo is a primary influence for the Kedama particle system, programmed by Yoshiki Oshima, found in the  Etoys educational programming environment and language, which can be viewed as a Logo done originally in Squeak Smalltalk.
+ created 2004
+ backlinksCount 34
+ pageId 746828
+ revisionCount 86
+ dailyPageViews 26
+ appeared 2011
+
+status historical

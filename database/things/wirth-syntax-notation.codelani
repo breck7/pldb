@@ -1,6 +1,7 @@
+title Wirth syntax notation
 appeared 1977
 type grammarLanguage
-wikipedia Wirth_syntax_notation
+
 example
  SYNTAX     = { PRODUCTION } .
  PRODUCTION = IDENTIFIER "=" EXPRESSION "." .
@@ -13,4 +14,12 @@ example
             | "{" EXPRESSION "}" .
  IDENTIFIER = letter { letter } .
  LITERAL    = """" character { character } """" .
+
+wikipedia https://en.wikipedia.org/wiki/Wirth_syntax_notation
+ summary Wirth syntax notation (WSN) is a metasyntax, that is, a formal way to describe formal languages. Originally proposed by Niklaus Wirth in 1977 as an alternative to Backus–Naur form (BNF). It has several advantages over BNF in that it contains an explicit iteration construct, and it avoids the use of an explicit symbol for the empty string (such as <empty> or ε).WSN has been used in several international standards, starting with ISO 10303-21. It was also used to define the syntax of EXPRESS, the data modelling language of STEP.
+ backlinksCount 40
+ pageId 8611414
+ dailyPageViews 15
+ appeared 1977
+
 reference https://dl.acm.org/doi/10.1145/359863.359883

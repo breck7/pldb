@@ -1,4 +1,23 @@
+title TOM
 appeared 2001
 type pl
+
+patterns
+ hasCentralPackageRepository? false
+
+wikipedia https://en.wikipedia.org/wiki/Tom_(pattern_matching_language)
+ related xml c java
+ summary Tom is a programming language particularly well-suited for programming various transformations on tree structures and XML based documents. Tom is a language extension which adds new matching primitives to C and Java as well as support for rewrite rules systems. The rules can be controlled using a strategy language. Tom is good for: programming by pattern matching developing compilers and DSL transforming XML documents implementing rule based systems describing algebraic transformations
+ pageId 11090262
+ dailyPageViews 10
+ created 2007
+ backlinksCount 14
+ revisionCount 41
+ appeared 2008
+
 website http://tom.loria.fr
-wikipedia Tom_(pattern_matching_language)
+status active
+fileType text
+wordRank 1723
+
+tiobe TOM

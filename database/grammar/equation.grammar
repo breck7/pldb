@@ -1,0 +1,6 @@
+equationNode
+ description A text block containing a LaTeX snippet of a formula.
+ extends abstractCodeNode
+ boolean padOnFormat true
+ int sortIndex 600
+ crux equation

@@ -1,6 +1,7 @@
+title mpl
 appeared 1988
 type pl
-website http://www.maximalsoftware.com/mpl/
+
 example
  {   Planning.mpl   } 
  
@@ -42,4 +43,8 @@ example
  BOUNDS 
     Sales  < ProductionCapacity ; Inventory[month="January..November]" < 90000 ; 
     Inventory[month="December]" ; END
+
+website http://www.maximalsoftware.com/mpl/
 reference http://www.gmu.edu/schools/vse/seor/syllabi/02F/mplman.pdf
+related gams ampl
+fileExtensions mpl

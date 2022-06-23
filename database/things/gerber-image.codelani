@@ -1,3 +1,54 @@
+title Gerber Image
 appeared 1980
 type application
-wikipedia Gerber_format
+
+patterns
+ hasCentralPackageRepository? false
+
+wikipedia https://en.wikipedia.org/wiki/Gerber_format
+ example
+  D11*
+  X1785250Y2173980D02*
+  X1796650Y2177730D01*
+  X1785250Y2181480D01*
+  X1796650Y2184580D01*
+  D12*
+  X3421095Y1407208D03*
+  X1785250Y2173980D03*
+  M02*
+ related ascii
+ summary The Gerber format is an open ASCII vector format for 2D binary images. It is the de facto standard used by printed circuit board (PCB) industry software to describe the printed circuit board images: copper layers, solder mask, legend, etc.Gerber is used in PCB fabrication data. PCBs are designed on a specialized electronic design automation (EDA) or a computer-aided design (CAD) system. The CAD systems output PCB fabrication data to allow fabrication of the board. This data typically contains a Gerber file for each image layer (copper layers, solder mask, legend or silk...). Gerber is also the standard image input format for all bare board fabrication equipment needing image data, such as photoplotters, legend printers, direct imagers or automated optical inspection (AOI) machines and for viewing reference images in different departments. For assembly the fabrication data contains the solder paste layers and the central locations of components to create the stencil and place and bond the components.There are two major generations of Gerber format:  Extended Gerber, or RS-274X. This is the current Gerber format. In 2014, the graphics format was extended with the option to add meta-information to the graphics objects. Files with attributes are called X2 files, without X1 files. Standard Gerber, or RS-274-D. This obsolete format was revoked.The standard file extension is .GBR or .gbr though other extensions are also used.
+ created 2004
+ backlinksCount 179
+ pageId 727659
+ revisionCount 744
+ dailyPageViews 276
+ appeared 2018
+
+githubLanguage Gerber Image
+ fileExtensions gbr gbl gbo gbp gbs gko gpb gpt gtl gto gtp gts
+ trendingProjectsCount 0
+
+linguistGrammarRepo https://github.com/Alhadis/language-pcb
+ firstCommit 2017
+ lastCommit 2018
+ committerCount 1
+ commitCount 25
+ sampleCount 16
+ example
+  G04 #@! TF.FileFunction,Paste,Top*
+  %FSLAX46Y46*%
+  G04 Gerber Fmt 4.6, Leading zero omitted, Abs format (unit mm)*
+  G04 Created by KiCad (PCBNEW (2016-07-14 BZR 6980)-product) date Sunday, 23 April 2017 'PMt' 23:49:01*
+  %MOMM*%
+  %LPD*%
+  G01*
+  G04 APERTURE LIST*
+  %ADD10C,0.150000*%
+  G04 APERTURE END LIST*
+  D10*
+  M02*
+  
+
+status active
+fileType text

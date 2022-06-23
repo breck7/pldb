@@ -1,4 +1,74 @@
+title Objective C++
 appeared 1993
 type pl
-reference https://en.wikipedia.org/wiki/Objective-C
+
+patterns
+ hasCentralPackageRepository? false
+
 description Objective-C++ is simply source code that mixes Objective-C classes and C++ classes.
+
+githubLanguage Objective-C++
+ fileExtensions mm
+ trendingProjects
+  author name avatar url language languageColor stars forks currentPeriodStars description
+  TextureGroup Texture https://github.com/TextureGroup.png https://github.com/TextureGroup/Texture Objective-C++ #6866fb 5856 833 103 "Smooth asynchronous user interfaces for iOS apps."
+ trendingProjectsCount 2
+
+linguistGrammarRepo https://github.com/textmate/objective-c.tmbundle
+ firstCommit 2005
+ lastCommit 2018
+ committerCount 14
+ commitCount 499
+ sampleCount 2
+ example
+  // grabbed from https://raw.github.com/AOKP/external_webkit/61b2fb934bdd3a5fea253e2de0bcf8a47a552333/Source/WebCore/page/mac/EventHandlerMac.mm
+  
+  /*
+   * Copyright (C) 2006, 2007, 2008, 2009 Apple Inc. All rights reserved.
+   *
+   * Redistribution and use in source and binary forms, with or without
+   * modification, are permitted provided that the following conditions
+   * are met:
+   * 1. Redistributions of source code must retain the above copyright
+   *    notice, this list of conditions and the following disclaimer.
+   * 2. Redistributions in binary form must reproduce the above copyright
+   *    notice, this list of conditions and the following disclaimer in the
+   *    documentation and/or other materials provided with the distribution.
+   *
+   * THIS SOFTWARE IS PROVIDED BY APPLE COMPUTER, INC. ``AS IS'' AND ANY
+   * EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE
+   * IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR
+   * PURPOSE ARE DISCLAIMED.  IN NO EVENT SHALL APPLE COMPUTER, INC. OR
+   * CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL,
+   * EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO,
+   * PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR
+   * PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY
+   * OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT
+   * (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE
+   * OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+   */
+  
+  #include "config.h"
+  #include "EventHandler.h"
+  
+  #include "AXObjectCache.h"
+  #include "BlockExceptions.h"
+  #include "Chrome.h"
+  #include "ChromeClient.h"
+  #include "ClipboardMac.h"
+  #include "DragController.h"
+  #include "EventNames.h"
+  #include "FocusController.h"
+  #include "Frame.h"
+  #include "FrameLoader.h"
+  #include "FrameView.h"
+  #include "KeyboardEvent.h"
+  #include "MouseEventWithHitTestResults.h"
+  #include "NotImplemented.h"
+  #include "Page.h"
+  #include "PlatformKeyboardEvent.h"
+  #include "Pl
+
+reference https://en.wikipedia.org/wiki/Objective-C
+status active
+fileType text

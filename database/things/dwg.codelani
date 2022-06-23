@@ -1,4 +1,19 @@
+title .dwg
 appeared 1982
 type binaryDataFormat
-wikipedia .dwg
+
+patterns
+ hasCentralPackageRepository? false
+
 description Autodesk estimates that in 1998 there were in excess of two billion DWG files in existence.
+
+wikipedia https://en.wikipedia.org/wiki/.dwg
+ related autocad-app dxf
+ summary DWG (from drawing) is a proprietary binary file format used for storing two- and three- dimensional design data and metadata. It is the native format for several  CAD packages including DraftSight, AutoCAD, IntelliCAD (and its variants), Caddie and Open Design Alliance compliant applications. In addition, DWG is supported non-natively by many other CAD applications. The .bak (drawing backup), .dws (drawing standards), .dwt (drawing template) and .sv$ (temporary automatic save) files are also DWG files.
+ created 2004
+ backlinksCount 170
+ pageId 641111
+ dailyPageViews 368
+ appeared 1982
+
+status active

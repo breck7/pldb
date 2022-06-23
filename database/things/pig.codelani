@@ -1,7 +1,7 @@
+title Pig Latin
 appeared 2008
 type queryLanguage
-website https://pig.apache.org/
-wikipedia Apache_Pig
+
 example
  input_lines = LOAD '/tmp/word.txt' AS (line:chararray);
  words = FOREACH input_lines GENERATE FLATTEN(TOKENIZE(line)) AS word;
@@ -10,3 +10,69 @@ example
  word_count = FOREACH word_groups GENERATE COUNT(filtered_words) AS count, group AS word;
  ordered_word_count = ORDER word_count BY count DESC;
  STORE ordered_word_count INTO '/tmp/results.txt';
+
+patterns
+ hasCentralPackageRepository? false
+
+wikipedia https://en.wikipedia.org/wiki/Apache_Pig
+ example
+  input_lines = LOAD '/tmp/my-copy-of-all-pages-on-internet' AS (line:chararray);
+   
+   -- Extract words from each line and put them into a pig bag
+   -- datatype, then flatten the bag to get one word on each row
+   words = FOREACH input_lines GENERATE FLATTEN(TOKENIZE(line)) AS word;
+   
+   -- filter out any words that are just white spaces
+   filtered_words = FILTER words BY word MATCHES '\\w+';
+   
+   -- create a group for each word
+   word_groups = GROUP filtered_words BY word;
+   
+   -- count the entries in each group
+   word_count = FOREACH word_groups GENERATE COUNT(filtered_words) AS count, group AS word;
+   
+   -- order the records by count
+   ordered_word_count = ORDER word_count BY count DESC;
+   STORE ordered_word_count INTO '/tmp/number-of-words-on-internet';
+ related linux java sql python javascript ruby groovy sawzall
+ summary Apache Pig is a high-level platform for creating programs that run on Apache Hadoop. The language for this platform is called Pig Latin.  Pig can execute its Hadoop jobs in MapReduce, Apache Tez, or Apache Spark.  Pig Latin abstracts the programming from the Java MapReduce idiom into a notation which makes MapReduce programming high level, similar to that of SQL for relational database management systems. Pig Latin can be extended using user-defined functions (UDFs) which the user can write in Java, Python, JavaScript, Ruby or Groovy and then call directly from the language.
+ pageId 29417433
+ dailyPageViews 211
+ created 2010
+ backlinksCount 13
+ revisionCount 102
+ appeared 2008
+
+githubLanguage PigLatin
+ fileExtensions pig
+ trendingProjectsCount 0
+
+linguistGrammarRepo https://github.com/goblindegook/sublime-text-pig-latin
+ firstCommit 2014
+ lastCommit 2016
+ committerCount 2
+ commitCount 4
+ sampleCount 1
+ example
+  /**
+   * sample.pig
+   */
+  
+  REGISTER $SOME_JAR;
+  
+  A = LOAD 'person' USING PigStorage() AS (name:chararray, age:int); -- Load person
+  B = FOREACH A generate name;
+  DUMP B;
+  
+  
+
+website https://pig.apache.org/
+aka piglatin
+status active
+fileType text
+wordRank 7993
+isOpenSource true
+
+codeMirror pig
+
+corporateDevelopers Apache

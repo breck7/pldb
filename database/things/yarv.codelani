@@ -1,3 +1,18 @@
+title YARV
 appeared 2007
 type vm
-wikipedia YARV
+
+patterns
+ hasCentralPackageRepository? false
+
+wikipedia https://en.wikipedia.org/wiki/YARV
+ related c ruby subversion parrot-vm
+ summary YARV (Yet another Ruby VM) is a bytecode interpreter that was developed for the Ruby programming language by Koichi Sasada. The goal of the project was to greatly reduce the execution time of Ruby programs. Since YARV has become the official Ruby interpreter for Ruby 1.9, it is also named KRI (Koichi's Ruby Interpreter), in the same vein as the original Ruby MRI, named for Ruby's creator Yukihiro Matsumoto.
+ created 2006
+ backlinksCount 70
+ pageId 5227238
+ revisionCount 98
+ dailyPageViews 25
+ appeared 2006
+
+status active

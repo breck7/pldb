@@ -1,5 +1,82 @@
+title Limbo
 appeared 1995
 type pl
 creators Rob Pike
+
+patterns
+ hasCentralPackageRepository? false
+
+wikipedia https://en.wikipedia.org/wiki/Limbo_(programming_language)
+ example
+  implement Command;
+   
+   include "sys.m";
+       sys: Sys;
+   
+  
+   
+   init(Context, nil: list of string)
+   {
+       sys = load Sys Sys->PATH;
+       print("Hello World!\n");
+   }
+ related c pascal csp alef newsqueak stackless-python go rust ada isbn
+ summary Limbo is a programming language for writing distributed systems and is the language used to write applications for the Inferno operating system. It was designed at Bell Labs by Sean Dorward, Phil Winterbottom, and Rob Pike. The Limbo compiler generates architecture-independent object code which is then interpreted by the Dis virtual machine or compiled just before runtime to improve performance. Therefore all Limbo applications are completely portable across all Inferno platforms. Limbo's approach to concurrency was inspired by Hoare's communicating sequential processes (CSP), as implemented and amended in Pike's earlier Newsqueak language and Winterbottom's Alef.
+ pageId 236298
+ dailyPageViews 73
+ created 2003
+ backlinksCount 119
+ revisionCount 138
+ appeared 1995
+
+githubLanguage Limbo
+ fileExtensions b m
+ trendingProjectsCount 0
+
+helloWorldCollection Limbo
+ Hello World in Limbo.
+ Limbo is the programming language of the Inferno OS
+ (from Lucent Bell Labs).
+ 
+ 
+ implement Cmd;
+ 
+ include "sys.m";
+ include "draw.m";
+ 
+ Cmd : module {
+     init : fn (ctxt : ref Draw->Context, args : list of string);
+ };
+ 
+ init(nil : ref Draw->Context, nil : list of string)
+ {
+     sys := load Sys Sys->PATH;
+     sys->print("Hello World\n");
+ }
+
+example
+ Lock: module
+ {
+ 	PATH:	con "/dis/lib/lock.dis";
+ 
+ 	Semaphore: adt {
+ 		c: chan of int;
+ 		obtain:	fn(nil: self ref Semaphore);
+ 		release: fn(nil: self ref Semaphore);
+ 		new: fn(): ref Semaphore;
+ 	};
+ 	
+ 	init: fn();
+ };
+
 website http://www.vitanuova.com/inferno/limbo.html
-wikipedia Limbo_(programming_language)
+status active
+country US
+fileType text
+isOpenSource true
+
+tiobe Limbo
+
+hopl 2166
+
+rosettaCode Limbo

@@ -1,7 +1,7 @@
+title NCAR Command Language
 appeared 1994
 type pl
-website https://www.ncl.ucar.edu/index.shtml
-github https://github.com/NCAR/ncl
+
 example
  ;-----------------------------------------------------------------
  ;  NCL User Guide Example:   NUG_bar_chart.ncl
@@ -45,4 +45,38 @@ example
     plot = gsn_csm_xy(wks, x, y, res)
  
  end
+
+patterns
+ hasCentralPackageRepository? false
+
 description (The NCAR Command Language (NCL), a product of the Computational & Information Systems Laboratory at the National Center for Atmospheric Research (NCAR) and sponsored by the National Science Foundation, is a free interpreted language designed specifically for scientific data processing and visualization.
+
+githubLanguage NCL
+ fileExtensions ncl
+ trendingProjectsCount 0
+
+githubRepo https://github.com/NCAR/ncl
+ firstCommit 1990
+ stars 26
+ forks 10
+ subscribers 19
+ created 2016
+ updated 2018
+ issues 3
+
+linguistGrammarRepo https://github.com/rpavlick/language-ncl.git
+ firstCommit 2015
+ lastCommit 2015
+ committerCount 2
+ commitCount 9
+ sampleCount 16
+ example
+  val=102
+  a=val/4.
+  print(a)
+
+website https://www.ncl.ucar.edu/index.shtml
+standsFor NCAR Command Language
+status active
+fileType text
+isOpenSource true

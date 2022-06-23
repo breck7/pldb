@@ -1,5 +1,47 @@
+title nodejs
 appeared 2009
 type pl
+creators Ryan Dahl
+
+patterns
+ canWriteToDisk? true
+  require("fs").writeFileSync("foo.txt", "foo", "utf8")
+ hasCentralPackageRepository? true
+ hasImports? true
+  const jtree = require("jtree")
+ hasStreams? true
+  const stream = require('stream');
+
+wikipedia https://en.wikipedia.org/wiki/nodejs
+ related c javascript linux freebsd npm-pm tcp tls udp ecmascript unix coffeescript dart typescript php mps visual-studio-editor eclipse-editor visual-studio-code-editor postgresql mongodb json
+ summary Node.js is an open-source, cross-platform JavaScript run-time environment that executes JavaScript code outside of a browser. Typically, JavaScript is used primarily for client-side scripting, in which scripts written in JavaScript are embedded in a webpage's HTML and run client-side by a JavaScript engine in the user's web browser. Node.js lets developers use JavaScript to write Command Line tools and for server-side scripting—running scripts server-side to produce dynamic web page content before the page is sent to the user's web browser. Consequently, Node.js represents a "JavaScript everywhere" paradigm, unifying web application development around a single programming language, rather than different languages for server side and client side scripts. Though .js is the conventional filename extension for JavaScript code, the name "Node.js" does not refer to a particular file in this context and is merely the name of the product. Node.js has an event-driven architecture capable of asynchronous I/O. These design choices aim to optimize throughput and scalability in web applications with many input/output operations, as well as for real-time Web applications (e.g., real-time communication programs and browser games).The Node.js distributed development project, governed by the Node.js Foundation, is facilitated by the Linux Foundation's Collaborative Projects program.Corporate users of Node.js software include GoDaddy, Groupon, IBM, LinkedIn, Microsoft, Netflix, PayPal, Rakuten, SAP, Voxer, Walmart, and Yahoo!.
+ pageId 26415635
+ created 2010
+ backlinksCount 805
+ revisionCount 2
+ dailyPageViews -1
+ appeared 2009
+
+githubRepo https://github.com/nodejs/node
+ stars 43507
+ forks 9111
+ subscribers 2563
+ created 2014
+ updated 2017
+ firstCommit 2009
+ description Node.js JavaScript runtime :sparkles::turtle::rocket::sparkles:
+ issues 938
+
 website https://nodejs.org
-github https://github.com/nodejs/node
-wikipedia nodejs
+status active
+
+replit nodejs
+
+fileType text
+isOpenSource true
+
+meetup nodejs
+ memberCount 928277
+ groupCount 1560
+
+writtenIn c cpp javascript

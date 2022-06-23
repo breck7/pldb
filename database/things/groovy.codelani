@@ -1,5 +1,84 @@
+title Groovy
 appeared 2003
 type pl
 creators James Strachan
+
+patterns
+ hasCentralPackageRepository? false
+ hasOperatorOverloading? true
+
+wikipedia https://en.wikipedia.org/wiki/Groovy_(programming_language)
+ example
+  class Bird implements FlyingAbility {} /* Adds the trait FlyingAbility to the Bird class capabilities */
+  def bird = new Bird() /* instantiate a new Bird */
+  assert bird.fly() == "I'm flying!" /* the Bird class automatically gets the behavior of the FlyingAbility trait */
+ related java python ruby perl smalltalk objective-c kotlin jvm regex xml html json android eclipse-editor emacs-editor textmate-editor visual-studio-code-editor javascript
+ summary Apache Groovy is an object-oriented programming language for the Java platform. It is a dynamic language with features similar to those of Python, Ruby, Perl, and Smalltalk. It can be used as a scripting language for the Java Platform, is dynamically compiled to Java virtual machine (JVM) bytecode, and interoperates with other Java code and libraries. Groovy uses a Java-like curly-bracket syntax. Most Java code is also syntactically valid Groovy, although semantics may be different. Groovy 1.0 was released on January 2, 2007, and Groovy 2.0 in July, 2012. Since version 2, Groovy can also be compiled statically, offering type inference, and performance near that of Java. Groovy 2.4 was the last major release under Pivotal Software's sponsorship which ended in March 2015. Groovy has since changed its governance structure to a Project Management Committee (PMC) in the Apache Software Foundation.
+ pageId 508401
+ dailyPageViews 577
+ created 2018
+ backlinksCount 583
+ revisionCount 1
+ appeared 2003
+ fileExtensions groovy
+
+githubLanguage Groovy
+ fileExtensions groovy grt gtpl gvy
+ trendingProjects
+  author name avatar url language languageColor stars forks currentPeriodStars description
+  jenkinsci pipeline-examples https://github.com/jenkinsci.png https://github.com/jenkinsci/pipeline-examples Groovy #e69f56 2979 1833 67 "A collection of examples, tips and tricks and snippets of scripting for the Jenkins Pipeline plugin"
+  ben-manes gradle-versions-plugin https://github.com/ben-manes.png https://github.com/ben-manes/gradle-versions-plugin Groovy #e69f56 2012 111 52 "Gradle plugin to discover dependency updates"
+ trendingProjectsCount 3
+
+helloWorldCollection Groovy
+ // Hello World in Groovy
+ 
+ println "Hello World"
+ 
+
+linguistGrammarRepo https://github.com/textmate/groovy.tmbundle
+ firstCommit 2007
+ lastCommit 2014
+ committerCount 9
+ commitCount 113
+ sampleCount 5
+ example
+  #!/usr/bin/env groovy
+  println "Groovy!"
+  
+
 website http://groovy-lang.org/
-wikipedia Groovy_(programming_language)
+status active
+
+tryItOnline groovy
+
+twitter apachegroovy
+
+fileExtensions groovy
+fileType text
+runsOnVm jvm
+isOpenSource true
+
+tiobe Groovy
+ currentRank 29
+
+meetup groovy-programming-language
+ memberCount 24522
+ groupCount 49
+
+projectEuler Groovy
+ memberCount
+  2019 114
+  2022 121
+
+subreddit groovy
+ memberCount
+  2017 1784
+
+quineRelay Groovy
+
+ubuntuPackage groovy
+
+codeMirror groovy
+
+rosettaCode Groovy

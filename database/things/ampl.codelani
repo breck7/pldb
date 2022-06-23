@@ -1,7 +1,7 @@
+title A Mathematical Programming Language
 appeared 1985
 type pl
-website https://ampl.com/
-wikipedia AMPL
+
 example
  set PROD;  # products
  
@@ -21,3 +21,121 @@ example
  
                 # Constraint: total of hours used by all
                 # products may not exceed hours available
+
+patterns
+ hasCentralPackageRepository? false
+
+wikipedia https://en.wikipedia.org/wiki/AMPL
+ example
+  set Plants;
+   set Markets;
+  
+   # Capacity of plant p in cases
+   param Capacity{p in Plants};
+  
+   # Demand at market m in cases
+   param Demand{m in Markets};
+  
+   # Distance in thousands of miles
+   param Distance{Plants, Markets};
+  
+   # Freight in dollars per case per thousand miles
+   param Freight;
+  
+   # Transport cost in thousands of dollars per case
+   param TransportCost{p in Plants, m in Markets} :=
+       Freight * Distance[p, m] / 1000;
+  
+   # Shipment quantities in cases
+   var shipment{Plants, Markets} >= 0;
+  
+   # Total transportation costs in thousands of dollars
+   minimize cost:
+       sum{p in Plants, m in Markets} TransportCost[p, m] * shipment[p, m];
+  
+   # Observe supply limit at plant p
+   s.t. supply{p in Plants}: sum{m in Markets} shipment[p, m] <= Capacity[p];
+  
+   # Satisfy demand at market m
+   s.t. demand{m in Markets}: sum{p in Plants} shipment[p, m] >= Demand[m];
+  
+   data;
+  
+   set Plants := seattle san-diego;
+   set Markets := new-york chicago topeka;
+  
+   param Capacity :=
+       seattle   350
+       san-diego 600;
+  
+   param Demand :=
+       new-york 325
+       chicago  300
+       topeka   275;
+  
+   param Distance : new-york chicago topeka :=
+       seattle        2.5      1.7     1.8
+       san-diego      2.5      1.8     1.4;
+  
+   param Freight := 90;
+ related linux unix awk c algebraic-modeling-language nl xml excel-app
+ summary A Mathematical Programming Language (AMPL) is an algebraic modeling language to describe and solve high-complexity problems for large-scale mathematical computing (i.e., large-scale optimization and scheduling-type problems). It was developed by Robert Fourer, David Gay, and Brian Kernighan at Bell Laboratories. AMPL supports dozens of solvers, both open source and commercial software, including CBC, CPLEX, FortMP, Gurobi, MINOS, IPOPT, SNOPT, KNITRO, and LGO. Problems are passed to solvers as nl files. AMPL is used by more than 100 corporate clients, and by government agencies and academic institutions. One advantage of AMPL is the similarity of its syntax to the mathematical notation of optimization problems. This allows for a very concise and readable definition of problems in the domain of optimization. Many modern solvers available on the NEOS Server (formerly hosted at the Argonne National Laboratory, currently hosted at the University of Wisconsin, Madison) accept AMPL input. According to the NEOS statistics AMPL is the most popular format for representing mathematical programming problems.
+ pageId 1076270
+ dailyPageViews 109
+ created 2004
+ backlinksCount 133
+ revisionCount 237
+ appeared 1985
+ fileExtensions mod dat run
+
+githubLanguage AMPL
+ fileExtensions ampl mod
+ trendingProjectsCount 0
+
+linguistGrammarRepo https://github.com/ampl/sublime-ampl
+ firstCommit 2013
+ lastCommit 2013
+ committerCount 2
+ commitCount 12
+ sampleCount 2
+ example
+  # A toy knapsack problem from the LocalSolver docs written in AMPL.
+  
+  set I;
+  param Value{I};
+  param Weight{I};
+  param KnapsackBound;
+  var Take{I} binary;
+  
+  maximize TotalValue: sum{i in I} Take[i] * Value[i];
+  s.t. WeightLimit: sum{i in I} Take[i] * Weight[i] <= KnapsackBound;
+  
+  data;
+  
+  param:
+  I: Weight Value :=
+  0    10     1
+  1    60    10
+  2    30    15
+  3    40    40
+  4    30    60
+  5    20    90
+  6    20   100
+  7     2    15;
+  
+  param KnapsackBound := 102;
+  
+
+website https://ampl.com/
+standsFor A Mathematical Programming Language
+status active
+
+twitter amplopt
+
+country US
+fileType text
+isOpenSource false
+
+hopl 7232
+
+rosettaCode AMPL

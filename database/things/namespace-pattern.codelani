@@ -1,2 +1,6 @@
+title Namespaces
 type pattern
+psuedoExample namespace Stuff {}
 description Most languages have implicit scopes/namespaces, but some also allow for explicit namespacing.
+status active
+patternKeyword hasNamespaces?

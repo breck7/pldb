@@ -1,7 +1,7 @@
+title PhyloXML
 appeared 2009
 type xmlFormat
-website http://www.phyloxml.org/
-wikipedia PhyloXML
+
 example
   <phyloxml xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
    xsi:schemaLocation="http://www.phyloxml.org http://www.phyloxml.org/1.10/phyloxml.xsd"
@@ -25,3 +25,43 @@ example
       </clade>
    </phylogeny>
  </phyloxml>
+
+patterns
+ hasCentralPackageRepository? false
+
+wikipedia https://en.wikipedia.org/wiki/PhyloXML
+ example
+  <phyloxml xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+     xsi:schemaLocation="http://www.phyloxml.org http://www.phyloxml.org/1.10/phyloxml.xsd"
+     xmlns="http://www.phyloxml.org">
+     <phylogeny rooted="true">
+        <name>example from Prof. Joe Felsenstein's book "Inferring Phylogenies"</name>
+        <description>MrBayes based on MAFFT alignment</description>
+        <clade>
+           <clade branch_length="0.06">
+              <confidence type="probability">0.88</confidence>
+              <clade branch_length="0.102">
+                 <name>A</name>
+              </clade>
+              <clade branch_length="0.23">
+                 <name>B</name>
+              </clade>
+           </clade>
+           <clade branch_length="0.4">
+              <name>C</name>
+           </clade>
+        </clade>
+     </phylogeny>
+   </phyloxml>
+ related xml nexus-format newick-format
+ summary PhyloXML is an XML language for the analysis, exchange, and storage of phylogenetic trees (or networks) and associated data. The structure of phyloXML is described by XML Schema Definition (XSD) language. A shortcoming of current formats for describing phylogenetic trees (such as Nexus and Newick/New Hampshire) is a lack of a standardized means to annotate tree nodes and branches with distinct data fields (which in the case of a basic species tree might be: species names, branch lengths, and possibly multiple support values). Data storage and exchange is even more cumbersome in studies in which trees are the result of a reconciliation of some kind:  gene-function studies (requires annotation of nodes with taxonomic information as well as gene names, and possibly gene-duplication data) evolution of host-parasite interactions (requires annotation of tree nodes with taxonomic information for both host and parasite) phylogeographic studies (requires annotation of tree nodes with taxonomic and geographic information)To alleviate this, a variety of ad-hoc, special purpose formats have come into use (such as the NHX format, which focuses on the needs of gene-function and phylogenomic studies). A well defined XML format addresses these problems in a general and extensible manner and allows for interoperability between specialized and general purpose software. An example of a program for visualizing phyloXML is Archaeopteryx.
+ pageId 21356135
+ created 2009
+ backlinksCount 12
+ revisionCount 42
+ dailyPageViews 6
+ appeared 2001
+
+website http://www.phyloxml.org/
+status historical
+fileType text

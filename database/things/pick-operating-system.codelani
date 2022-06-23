@@ -1,3 +1,21 @@
+title Pick operating system
 appeared 1970
 type pl
-wikipedia Pick_operating_system
+
+patterns
+ hasCentralPackageRepository? false
+
+wikipedia https://en.wikipedia.org/wiki/Pick_operating_system
+ related assembly-language solaris linux sql basic dartmouth-basic unix mumps
+ summary The Pick operating system (often called just "the Pick system" or simply "Pick") is a demand-paged, multiuser, virtual memory, time-sharing computer operating system based around a unique MultiValue database. Pick is used primarily for business data processing. It is named after one of its developers, Dick Pick. The term "Pick system" has also come to be used as the general name of all operating environments which employ this multivalued database and have some implementation of Pick/BASIC and ENGLISH/Access queries. Although Pick started on a variety of minicomputers, the system and its various implementations eventually spread to a large assortment of microcomputers, personal computers and mainframe computers.
+ created 2004
+ backlinksCount 258
+ pageId 471217
+ revisionCount 467
+ dailyPageViews 115
+ appeared 1973
+
+status historical
+isOpenSource false
+
+hopl 2362

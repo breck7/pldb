@@ -1,4 +1,21 @@
+title CYCL
 appeared 1988
 type pl
-wikipedia CycL
+
+patterns
+ hasCentralPackageRepository? false
+
+wikipedia https://en.wikipedia.org/wiki/CycL
+ example
+  (#$relationAllExists #$biologicalMother #$ChordataPhylum #$FemaleAnimal)
+ summary CycL in computer science and artificial intelligence is an ontology language used by Doug Lenat's Cyc artificial intelligence project. Ramanathan V. Guha was instrumental in the design of early versions of the language. There is a close variant of CycL known as MELD. The original version of CycL was a frame language, but the modern version is not.  Rather, it is a declarative language based on classical first-order logic, with extensions for modal operators and higher order quantification. CycL is used to represent the knowledge stored in the Cyc Knowledge Base, available from Cycorp.  The source code written in CycL released with the OpenCyc system is licensed as open source, to increase its usefulness in supporting the semantic web.
+ backlinksCount 32
+ pageId 87136
+ dailyPageViews 45
+ created 2002
+ appeared 1990
+
 reference https://semanticscholar.org/paper/fc1584ebf311e8343c91dcc9ad8e5ef19d815bda
+status historical
+
+hopl 1546

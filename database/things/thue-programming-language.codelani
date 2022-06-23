@@ -1,3 +1,30 @@
+title Thue
 appeared 2004
 type pl
-wikipedia Thue_%28programming_language%29
+
+patterns
+ hasCentralPackageRepository? false
+
+wikipedia https://en.wikipedia.org/wiki/Thue_%28programming_language%29
+ example
+  1_::=1++
+  0_::=1
+  
+  01++::=10
+  11++::=1++0
+  
+  _0::=_
+  _1++::=10
+  
+  ::=
+  
+  _1111111111_
+ summary Thue ( TOO-ay) is an esoteric programming language invented by John Colagioia in early 2000. It is a meta-language that can be used to define or recognize Type-0 languages from the Chomsky hierarchy. Because it is able to define languages of such complexity, it is also Turing-complete itself. Thue is based on a nondeterministic string rewriting system called semi-Thue grammar, which itself is named after the Norwegian mathematician Axel Thue. The author describes it as follows: "Thue represents one of the simplest possible ways to construe constraint-based programming. It is to the constraint-based paradigm what languages like OISC are to the imperative paradigm; in other words, it's a tar pit."
+ created 2004
+ backlinksCount 14
+ pageId 899025
+ revisionCount 58
+ dailyPageViews 25
+ appeared 2000
+
+status historical

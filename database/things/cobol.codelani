@@ -1,3 +1,102 @@
+title COBOL
 appeared 1959
 type pl
-wikipedia COBOL
+
+patterns
+ hasPointers? true
+ hasCentralPackageRepository? false
+ hasComments? true
+ hasZeroBasedNumbering? false
+
+wikipedia https://en.wikipedia.org/wiki/COBOL
+ example
+  19.52.48 JOB    3  $HASP100 COBUCLG  ON READER1     COBOL BASE TEST
+      19.52.48 JOB    3  IEF677I WARNING MESSAGE(S) FOR JOB COBUCLG  ISSUED
+      19.52.48 JOB    3  $HASP373 COBUCLG  STARTED - INIT  1 - CLASS A - SYS BSP1
+      19.52.48 JOB    3  IEC130I SYSPUNCH DD STATEMENT MISSING
+      19.52.48 JOB    3  IEC130I SYSLIB   DD STATEMENT MISSING
+      19.52.48 JOB    3  IEC130I SYSPUNCH DD STATEMENT MISSING
+      19.52.48 JOB    3  IEFACTRT - Stepname  Procstep  Program   Retcode
+      19.52.48 JOB    3  COBUCLG    BASETEST  COB       IKFCBL00  RC= 0000
+      19.52.48 JOB    3  COBUCLG    BASETEST  LKED      IEWL      RC= 0000
+      19.52.48 JOB    3  +HELLO, WORLD
+      19.52.48 JOB    3  COBUCLG    BASETEST  GO        PGM=*.DD  RC= 0000
+      19.52.48 JOB    3  $HASP395 COBUCLG  ENDED
+ related comtran eiffel flow-matic smalltalk pl-i plb algol-58 fact algol unicode xml unix visual-basic-dot-net utf-8 jcl pascal
+ summary COBOL (, an acronym for common business-oriented language) is a compiled English-like computer programming language designed for business use. It is imperative, procedural and, since 2002, object-oriented. COBOL is primarily used in business, finance, and administrative systems for companies and governments. COBOL is still widely used in legacy applications deployed on mainframe computers, such as large-scale batch and transaction processing jobs. But due to its declining popularity and the retirement of experienced COBOL programmers, programs are being migrated to new platforms, rewritten in modern languages or replaced with software packages. Most programming in COBOL is now purely to maintain existing applications. COBOL was designed in 1959 by CODASYL and was partly based on previous programming language design work by Grace Hopper, commonly referred to as "the (grand)mother of COBOL". It was created as part of a US Department of Defense effort to create a portable programming language for data processing. Intended as a stopgap, the Department of Defense promptly forced computer manufacturers to provide it, resulting in its widespread adoption. It was standardized in 1968 and has since been revised four times. Expansions include support for structured and object-oriented programming. The current standard is ISO/IEC 1989:2014. COBOL has an English-like syntax, which was designed to be self-documenting and highly readable. However, it is verbose and uses over 300 reserved words. In contrast with modern, succinct syntax like y = x;, COBOL has a more English-like syntax (in this case, MOVE x TO y). COBOL code is split into four divisions (identification, environment, data and procedure) containing a rigid hierarchy of sections, paragraphs and sentences. Lacking a large standard library, the standard specifies 43 statements, 87 functions and just one class. Academic computer scientists were generally uninterested in business applications when COBOL was created and were not involved in its design; it was (effectively) designed from the ground up as a computer language for business, with an emphasis on inputs and outputs, whose only data types were numbers and strings of text. COBOL has been criticized throughout its life, however, for its verbosity, design process and poor support for structured programming, which resulted in monolithic and incomprehensible programs.
+ pageId 6799
+ dailyPageViews 1302
+ created 2001
+ backlinksCount 1151
+ revisionCount 2255
+ appeared 1959
+ fileExtensions cbl cob cpy
+
+githubLanguage COBOL
+ fileExtensions cob cbl ccp cobol cpy
+ trendingProjectsCount 0
+
+helloWorldCollection COBOL
+        * Hello World in COBOL
+ 
+ *****************************
+ IDENTIFICATION DIVISION.
+ PROGRAM-ID. HELLO.
+ ENVIRONMENT DIVISION.
+ DATA DIVISION.
+ PROCEDURE DIVISION.
+ MAIN SECTION.
+ DISPLAY "Hello World!"
+ STOP RUN.
+ ****************************
+
+linguistGrammarRepo https://bitbucket.org/bitlang/sublime_cobol
+ firstCommit 2013
+ lastCommit 2018
+ committerCount 6
+ commitCount 94
+ sampleCount 4
+ example
+          program-id. hello.
+          procedure division.
+          display "Hello, World!".
+          stop run.
+  
+  
+
+status active
+country US
+fileExtensions cbl cob cpy
+fileType text
+
+tiobe COBOL
+ currentRank 25
+
+meetup cobol
+ memberCount 123
+ groupCount 4
+
+linkedInSkill cobol
+ peopleWithThisSkillCount 177803
+
+projectEuler COBOL
+ memberCount
+  2019 34
+  2022 39
+
+hopl 139
+
+subreddit cobol
+ memberCount
+  2017 715
+
+quineRelay Cobol
+
+ubuntuPackage open-cobol
+
+codeMirror cobol
+
+rosettaCode COBOL
+
+indeedJobs cobol developer
+ 2017 838

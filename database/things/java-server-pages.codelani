@@ -1,3 +1,31 @@
+title Java Server Pages
 appeared 1999
 type template
-wikipedia JavaServer_Pages
+
+patterns
+ hasCentralPackageRepository? false
+
+wikipedia https://en.wikipedia.org/wiki/JavaServer_Pages
+ example
+  The value of "variable" in the object "javabean" is ${javabean.variable}.
+ related html xml php asp java jvm apache-velocity java-ee-version-history thymeleaf
+ summary JavaServer Pages (JSP) is a technology that helps software developers create dynamically generated web pages based on HTML, XML, or other document types. Released in 1999 by Sun Microsystems, JSP is similar to PHP and ASP, but it uses the Java programming language. To deploy and run JavaServer Pages, a compatible web server with a servlet container, such as Apache Tomcat or Jetty, is required.
+ backlinksCount 391
+ pageId 42910
+ created 2002
+ revisionCount 1033
+ dailyPageViews 549
+ appeared 1999
+
+githubLanguage Java Server Pages
+ fileExtensions jsp
+ trendingProjectsCount 0
+
+linguistGrammarRepo https://github.com/textmate/java.tmbundle
+ firstCommit 2004
+ lastCommit 2018
+ committerCount 21
+ commitCount 283
+
+status active
+fileType text

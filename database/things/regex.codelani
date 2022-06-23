@@ -1,3 +1,36 @@
+title Regular Expression
 appeared 1951
 type queryLanguage
-wikipedia Regular_expression
+
+patterns
+ hasCentralPackageRepository? false
+
+wikipedia https://en.wikipedia.org/wiki/Regular_expression
+ example
+  Hello World
+   contains a character other than a, b, and c.
+ related unix perl sed awk ascii snobol grep vi-editor emacs-editor tcl postgresql unicode perl-6 peg sgml pcre php java python ecmascript linux vim-editor javascript ruby c lisp utf-8 isbn
+ summary A regular expression, regex or regexp (sometimes called a rational expression) is, in theoretical computer science and formal language theory, a sequence of characters that define a search pattern. Usually this pattern is then used by string searching algorithms for "find" or "find and replace" operations on strings. The concept arose in the 1950s when the American mathematician Stephen Cole Kleene formalized the description of a regular language. The concept came into common use with Unix text-processing utilities. Since the 1980s, different syntaxes for writing regular expressions exist, one being the POSIX standard and another, widely used, being the Perl syntax. Regular expressions are used in search engines, search and replace dialogs of word processors and text editors, in text processing utilities such as sed and AWK and in lexical analysis. Many programming languages provide regex capabilities, built-in, or via libraries.
+ pageId 25717
+ dailyPageViews 3569
+ created 2001
+ backlinksCount 2228
+ revisionCount 2877
+ appeared 1994
+
+githubLanguage Regular Expression
+ fileExtensions regexp regex
+ trendingProjectsCount 0
+
+linguistGrammarRepo https://github.com/Alhadis/language-regexp
+ firstCommit 2016
+ lastCommit 2017
+ committerCount 1
+ commitCount 68
+ sampleCount 4
+ example
+  \b(\d*1[1-3]th|\d*0th|(?:(?!11st)\d)*1st|\d*2nd|(?:(?!13rd)\d*)3rd|\d*[4-9]th)\b
+  
+
+status active
+fileType text

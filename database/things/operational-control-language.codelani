@@ -1,3 +1,65 @@
+title Operational Control Language
 appeared 1986
 type pl
-wikipedia Operational_Control_Language
+
+patterns
+ hasCentralPackageRepository? false
+
+wikipedia https://en.wikipedia.org/wiki/Operational_Control_Language
+ example
+  ** Procedure PROC1
+  ** 
+  ** Written by Joe User 2006-05-29
+  **
+  ** 
+  // * 'PROC1 procedure is running'
+  // * ' '
+  // IFF ACTIVE-'PROC2,PROC3' GOTO OKAY
+  ** IFF means 'if false'
+  ** ACTIVE-'nnn,nnn2' means at least one of the listed programs is currently running
+  ** GOTO xxx means skip to the statement that says TAG xxx and resume processing
+  // PAUSE ' Cannot continue because other Payroll is running'
+  // CANCEL                                               stops execution of this procedure
+  // TAG OKAY
+  // IFF DATAF1-PFILE1 IFF DATAF1-PFILE2 GOTO NODELT
+  // * ' Caution, Pay Data Exists'                        displays info on CRT
+  // * ' '
+  // * ' Press 1 to continue and DELETE existing files'
+  // IFF '1'=?1R? CANCEL     A parameter is indicated by question marks surrounding a number
+  ** Using 1R between question marks indicates that the parameter is required and processing
+  ** waits for user input.  CANCEL means immediately go to end of job.
+  // LOAD $DELET                                         $DELET is used to delete files
+  // RUN
+  // IF DATAF1-PFILE1 SCRATCH UNIT-F1,LABEL-PFILE1       deletes a disk file
+  // IF DATAF1-PFILE2 SCRATCH UNIT-F1,LABEL-PFILE2
+  // END                                              END returns control from a system program
+  // LOAD PR101                                          PR101 is the sample RPG program
+  // FILE NAME-PAYMAST,DISP-SHR                          PAYMAST is the payroll master file
+  // FILE NAME-PFILE1,DISP-NEW,RECORDS-100,EXTEND-100    A new file PFILE1 is created
+  ** 100 records are assigned to PFILE1 - if full, the system tries to extend it by another 100
+  ** each time it fills.
+  // RUN
+  ** It's not necessary or valid to put an END statement after most user programs
+  // SWITCH 1XXXXXXX                                    Causes U1 to be SETON in the RPG program
+  // LOCAL OFFSET-1,DATA-'PROC1'      Places PROC1 in the Local Data Area
+  // LOCAL OFFSET-101,DATA-'?USER?'   Substitutes the operator's User ID                        
+  ** LDA becomes the external data structure (UDS) in an RPG program
+  // LOAD PR102
+  // FILE NAME-PAYMAST,DISP-SHR                         DISP-SHR means the file is shared
+  ** Other programs can use PAYMAST at the same time
+  // FILE NAME-PFILE,LABEL-PFILE1
+  ** NAME/LABEL is used when the RPG disk file and the actual disk file names are different.
+  // RUN
+  // RETURN                                             Return means go to end-of-job
+ related jcl
+ summary Operational Control Language (OCL) is the control language of the IBM System/34 and System/36 minicomputer family. Other control languages include CL (System/38 and AS/400), JCL (System/370), and REXX (AS/400). The facility of DOS to use batch files is also control language.
+ created 2006
+ backlinksCount 8
+ pageId 5336178
+ revisionCount 23
+ dailyPageViews 4
+ appeared 2006
+
+status historical
+
+hopl 2301

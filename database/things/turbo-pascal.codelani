@@ -1,3 +1,45 @@
+title Turbo Pascal
 appeared 1983
 type compiler
-wikipedia Turbo_Pascal
+
+patterns
+ hasCentralPackageRepository? false
+ hasComments? true
+  { within pairs of braces }
+  (* left parenthesis/asterisk and asterisk/right parenthesis pairs *)
+  // preceded by two forward slashes
+ hasDirectives? true
+  // In Turbo Pascal, directives are called significant comments, because in the language grammar they follow the same syntax as comments.
+  // In Turbo Pascal, a significant comment is a comment whose first character is a dollar sign and whose second character is a letter;
+  // for example, the equivalent of C's #include "file" directive is the significant comment:
+  {$I "file"}
+
+wikipedia https://en.wikipedia.org/wiki/Turbo_Pascal
+ example
+  program WriteName;
+  var
+    i    : Integer;        {variable to be used for looping}
+    Name : String;         {declares the variable Name as a string}
+  begin
+    Write('Please tell me your name: ');
+    ReadLn(Name);          {ReadLn returns the string entered by the user}
+    for i := 1 to 100 do
+    begin
+      WriteLn('Hello ', Name)
+    end;
+   readln;
+  end.
+ related x86-isa pascal assembly-language ucsd-pascal turbo-assembler microsoft-macro-assembler java modula-2 object-pascal free-pascal c visual-studio-editor delphi
+ summary Turbo Pascal is a software development system that includes a compiler and an integrated development environment (IDE) for the Pascal programming language running on CP/M, CP/M-86, and MS-DOS, developed by Borland under Philippe Kahn's leadership. For versions 6 and 7 (last), both a lower-priced Turbo Pascal and more expensive Borland Pascal were produced; Borland Pascal was more oriented towards professional software development, with more libraries and standard library source code. The name Borland Pascal is also used more generically for Borland's dialect of the Pascal programming language, significantly different from Standard Pascal. Borland has released three old versions of Turbo Pascal free of charge because of their historical interest: the original Turbo Pascal (now known as 1.0), and versions 3.02 and 5.5 for DOS.
+ pageId 38273
+ dailyPageViews 240
+ created 2002
+ backlinksCount 237
+ revisionCount 852
+ appeared 1983
+
+status historical
+country US
+fileType na
+
+hopl 1372

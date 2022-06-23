@@ -1,4 +1,87 @@
+title Agda
 appeared 2007
 type pl
+
+patterns
+ hasTypedHoles? true
+ hasCentralPackageRepository? false
+
+wikipedia https://en.wikipedia.org/wiki/Agda_(programming_language)
+ example
+  data _≤_ : ℕ → ℕ → Set where
+     z≤n : {n : ℕ} → zero ≤ n
+     s≤s : {n m : ℕ} → n ≤ m → suc n ≤ suc m
+ related coq epigram haskell idris emacs-editor unicode javascript
+ summary Agda is a dependently typed functional programming language originally developed by Ulf Norell at Chalmers University of Technology with implementation described in his PhD thesis. The current version of Agda was originally known as Agda 2. The original Agda system was developed at Chalmers by Catarina Coquand in 1999. The current version is a full rewrite, which should be considered a new language that shares name and tradition. Agda is also a proof assistant based on the propositions-as-types paradigm, but unlike Coq, has no support for tactics, and proofs are written in a functional programming style. The language has ordinary programming constructs such as data types, pattern matching, records, let expressions and modules, and a Haskell-like syntax. The system has Emacs and Atom interfaces but can also be run in batch mode from the command line. Agda is based on Zhaohui Luo's Unified Theory of Dependent Types (UTT), a type theory similar to Martin-Löf type theory.
+ pageId 4426773
+ created 2006
+ backlinksCount 64
+ revisionCount 256
+ dailyPageViews 102
+ appeared 2007
+ fileExtensions agda lagda
+
+githubLanguage Agda
+ fileExtensions agda
+ trendingProjectsCount 0
+
+linguistGrammarRepo https://github.com/mokus0/Agda.tmbundle
+ firstCommit 2011
+ lastCommit 2014
+ committerCount 2
+ commitCount 6
+ sampleCount 1
+ example
+  module NatCat where
+  
+  open import Relation.Binary.PropositionalEquality
+  
+  -- If you can show that a relation only ever has one inhabitant
+  -- you get the category laws for free
+  module
+    EasyCategory
+    (obj : Set)
+    (_⟶_ : obj → obj → Set)
+    (_∘_ : ∀ {x y z} → x ⟶ y → y ⟶ z → x ⟶ z)
+    (id : ∀ x → x ⟶ x)
+    (single-inhabitant : (x y : obj) (r s : x ⟶ y) → r ≡ s)
+    where
+  
+    idʳ : ∀ x y (r : x ⟶ y) → r ∘ id y ≡ r
+    idʳ x y r = single-inhabitant x y (r ∘ id y) r 
+  
+    idˡ : ∀ x y (r : x ⟶ y) → id x ∘ r ≡ r
+    idˡ x y r = single-inhabitant x y (id x ∘ r) r
+  
+    ∘-assoc : ∀ w x y z (r : w ⟶ x) (s : x ⟶ y) (t : y ⟶ z) → (r ∘ s) ∘ t ≡ r ∘ (s ∘ t)
+    ∘-assoc w x y z r s t = single-inhabitant w z ((r ∘ s) ∘ t) (r ∘ (s ∘ t))
+  
+  open import Data.Nat
+  
+  same : (x y : ℕ) (r s : x ≤ y) → r ≡ s
+  same .0 y z≤n z≤n = refl
+  same .(suc m) .(suc n) (s≤s {m} {n} r) (s≤s s) = cong s≤s (same m n r s)
+  
+  ≤-trans : ∀ x y z → x ≤ y → y ≤ z → x ≤ z
+  ≤-trans .0 y z z≤n s = z≤n
+  ≤-trans .(suc m) .(suc n) .(suc n₁) (s≤s {m} {n} r) (s≤s {.n} {n₁} s) = s≤s (≤-trans m n n₁ r s)
+  
+  ≤-refl : ∀ x → x ≤ x
+  ≤-refl zero = z≤n
+  ≤-refl (suc x) = s≤s (≤-refl x)
+  
+  module Nat-EasyCategory = EasyCategory ℕ _≤_ (λ {x}{y}{z} → ≤-trans x y z) ≤-refl same
+  
+
 website http://wiki.portal.chalmers.se/agda
-wikipedia Agda_(programming_language)
+status active
+
+tryItOnline agda
+
+country SE
+fileType text
+isOpenSource true
+
+hopl 7860
+
+rosettaCode Agda

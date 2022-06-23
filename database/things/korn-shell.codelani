@@ -1,4 +1,25 @@
+title Korn shell
 appeared 1983
 type pl
+
+patterns
+ hasCentralPackageRepository? false
+ hasHereDocs? true
+
+wikipedia https://en.wikipedia.org/wiki/KornShell
+ related c unix bourne-shell emacs-editor vi-editor bash motif-software tcl arexx
+ summary KornShell (ksh) is a Unix shell which was developed by David Korn at Bell Labs in the early 1980s and announced at USENIX on July 14, 1983. The initial development was based on Bourne shell source code. Other early contributors were Bell Labs developers Mike Veach and Pat Sullivan, who wrote the Emacs and vi-style line editing modes' code, respectively. KornShell is backward-compatible with the Bourne shell and includes many features of the C shell, inspired by the requests of Bell Labs users.
+ pageId 17213
+ dailyPageViews 66
+ created 2016
+ backlinksCount 20
+ revisionCount 351
+ appeared 1983
+
 website http://www.kornshell.org/
-wikipedia KornShell
+status active
+fileType text
+
+tiobe Korn shell
+
+hopl 3481

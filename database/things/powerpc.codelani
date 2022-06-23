@@ -1,3 +1,21 @@
+title PowerPC
 appeared 1992
 type isa
-wikipedia PowerPC
+
+patterns
+ hasCentralPackageRepository? false
+
+wikipedia https://en.wikipedia.org/wiki/PowerPC
+ related powerIsa solaris unix linux x86-isa freebsd
+ summary PowerPC (a backronym for Performance Optimization With Enhanced RISC – Performance Computing, sometimes abbreviated as PPC) is a reduced instruction set computer instruction set architecture created by the 1991 Apple–IBM–Motorola alliance, known as AIM. PowerPC, as an evolving instruction set, has since 2006 been named Power ISA, while the old name lives on as a trademark for some implementations of Power Architecture-based processors. PowerPC was the cornerstone of AIM's PReP and Common Hardware Reference Platform initiatives in the 1990s. Originally intended for personal computers, the architecture is well known for being used by Apple's Power Macintosh, PowerBook, iMac, iBook, and Xserve lines from 1994 until 2006, when Apple migrated to Intel's x86. It has since become niche in personal computers, but remain popular as embedded and high-performance processors. Its use in video game consoles and embedded applications provided an array of uses. In addition, PowerPC CPUs are still used in AmigaOne and third party AmigaOS 4 personal computers. PowerPC is largely based on IBM's earlier POWER instruction set architecture, and retains a high level of compatibility with it; the architectures have remained close enough that the same programs and operating systems will run on both if some care is taken in preparation; newer chips in the POWER series use the Power ISA.
+ pageId 24281
+ dailyPageViews 646
+ created 2001
+ backlinksCount 1637
+ revisionCount 1385
+ appeared 1992
+
+status historical
+fileType na
+linkedInSkill powerpc
+ peopleWithThisSkillCount 5876

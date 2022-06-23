@@ -1,4 +1,21 @@
+title SPIP
 appeared 1977
 type pl
-wikipedia SPIP
+
+patterns
+ hasCentralPackageRepository? false
+
+wikipedia https://en.wikipedia.org/wiki/SPIP
+ related php sql sqlite postgresql html xml csv yaml url
+ summary SPIP (Système de Publication pour l'Internet) is a free software content management system designed for web site publishing, oriented towards online collaborative editing. The software is designed for easy setup, use and maintenance, and is used in public and private institutions. The last P in the word SPIP stands for both Partagé (shared) and Participatif (participative), in the sense that the software is designed for collective online editing. Its mascot is a flying squirrel. It is used both by institutional sites, community portals, academic sites, personal webpages, and news sites.
+ backlinksCount 27
+ pageId 10279391
+ dailyPageViews 19
+ created 2007
+ appeared 2001
+
 reference https://semanticscholar.org/paper/89137321e60ede138005ba4ff84ea3c5a57496e7
+status historical
+isOpenSource true
+
+hopl 7981

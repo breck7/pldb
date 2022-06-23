@@ -1,3 +1,46 @@
+title Ravenscar profile
 appeared 1997
 type pl
-wikipedia Ravenscar_profile
+
+patterns
+ hasCentralPackageRepository? false
+
+wikipedia https://en.wikipedia.org/wiki/Ravenscar_profile
+ example
+  pragma Task_Dispatching_Policy (FIFO_Within_Priorities);
+  pragma Locking_Policy (Ceiling_Locking);
+  pragma Detect_Blocking;
+  pragma Restrictions (
+                   No_Abort_Statements,
+                   No_Dynamic_Attachment,
+                   No_Dynamic_Priorities,
+                   No_Implicit_Heap_Allocations,
+                   No_Local_Protected_Objects,
+                   No_Local_Timing_Events,
+                   No_Protected_Type_Allocators,
+                   No_Relative_Delay,
+                   No_Requeue_Statements,
+                   No_Select_Statements,
+                   No_Specific_Termination_Handlers,
+                   No_Task_Allocators,
+                   No_Task_Hierarchy,
+                   No_Task_Termination,
+                   Simple_Barriers,
+                   Max_Entry_Queue_Length => 1,
+                   Max_Protected_Entries  => 1,
+                   Max_Task_Entries       => 0,
+                   No_Dependence => Ada.Asynchronous_Task_Control,
+                   No_Dependence => Ada.Calendar,
+                   No_Dependence => Ada.Execution_Time.Group_Budget,
+                   No_Dependence => Ada.Execution_Time.Timers,
+                   No_Dependence => Ada.Task_Attributes);
+ related ada spark
+ summary The Ravenscar profile is a subset of the Ada tasking features designed for safety-critical hard real-time computing. It was defined by a separate technical report in Ada 95; it is now part of the Ada 2012 Standard. It has been named after the English village of Ravenscar, the location of the 8th International Real-Time Ada Workshop (IRTAW 8).
+ created 2005
+ backlinksCount 9
+ pageId 1938385
+ revisionCount 29
+ dailyPageViews 16
+ appeared 2012
+
+status historical

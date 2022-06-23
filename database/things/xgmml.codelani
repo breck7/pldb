@@ -1,3 +1,17 @@
+title XGMML
 appeared 2006
 type pl
-wikipedia XGMML
+
+patterns
+ hasCentralPackageRepository? false
+
+wikipedia https://en.wikipedia.org/wiki/XGMML
+ related xml graph-modeling-language sgml
+ summary XGMML (the eXtensible Graph Markup and Modeling Language) is an XML application based on GML which is used for graph description. Technically, while GML is not related to XML nor SGML, XGMML is an XML application that is so designed that there's a 1:1 relation towards GML for trivial conversion between the two formats.
+ created 2006
+ backlinksCount 18
+ pageId 4843588
+ revisionCount 34
+ dailyPageViews 7
+
+status historical

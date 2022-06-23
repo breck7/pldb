@@ -1,0 +1,9 @@
+linkedInSkillNode
+ description Some languages can be listed as a skill on LinkedIn.
+ extends abstractOneWordGuidNode
+ crux linkedInSkill
+ inScope linkedInSkillCountNode
+ string sourceDomain linkedin.com
+linkedInSkillCountNode
+ crux peopleWithThisSkillCount
+ extends abstractPopulationCountNode

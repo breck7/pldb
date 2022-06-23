@@ -1,5 +1,7 @@
+title chain-format
 appeared 2013
-type textData
+type textDataFormat
+
 example
  chain 4900 chrY 58368225 + 25985403 25985638 chr5 151006098 - 43257292 43257528 1
  9       1       0
@@ -16,5 +18,11 @@ example
  60      4       0
  10      0       4
  70
-reference https://genome.ucsc.edu/goldenPath/help/chain.html
+
+patterns
+ hasCentralPackageRepository? false
+
 description The chain format describes a pairwise alignment that allow gaps in both sequences simultaneously. Each set of chain alignments starts with a header line, contains one or more alignment data lines, and terminates with a blank line. The format is deliberately quite dense.
+reference https://genome.ucsc.edu/goldenPath/help/chain.html
+status active
+fileType text

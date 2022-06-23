@@ -1,4 +1,25 @@
+title Augeas
 appeared 2007
 type pl
+
+patterns
+ hasCentralPackageRepository? false
+
+wikipedia https://en.wikipedia.org/wiki/Augeas_(software)
+ related c xml xpath python ruby ocaml perl haskell java php tcl puppet
+ summary Augeas is a free software  configuration-management library, written in the C programming language.  It is licensed under the terms of the GNU Lesser General Public License. Augeas uses programs called  lenses (in reference to the Harmony Project) to map a filesystem to an XML tree which can then be parsed using an XPath syntax, using a bidirectional transformation. Writing such lenses extends the amount of files Augeas can parse.
+ created 2011
+ pageId 79322
+ backlinksCount 150
+ revisionCount 25
+ dailyPageViews 9
+ appeared 2018
+
+githubLanguage Augeas
+ fileExtensions aug
+ trendingProjectsCount 0
+
 website http://augeas.net/
-wikipedia Augeas_(software)
+status active
+fileType text
+isOpenSource true

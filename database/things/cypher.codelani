@@ -1,5 +1,29 @@
+title Cypher Query Language
 appeared 2011
 type queryLanguage
-website https://neo4j.com/developer/cypher-query-language/
-wikipedia Cypher_Query_Language
+
+patterns
+ hasCentralPackageRepository? false
+
 description Cypher is a declarative, SQL-inspired language for describing patterns in graphs visually using an ascii-art syntax. It allows us to state what we want to select, insert, update or delete from our graph data without requiring us to describe exactly how to do it. A language with neo4j.
+
+wikipedia https://en.wikipedia.org/wiki/Cypher_Query_Language
+ example
+  MATCH (start:Content)-[:RELATED_CONTENT]->(content:Content)
+  WHERE content.source = 'user'
+  OPTIONAL MATCH (content)-[r]-()
+  DELETE r, content
+ related sql sparql
+ summary Cypher is a declarative graph query language that allows for expressive and efficient querying and updating of a property graph. Cypher is a relatively simple but still very powerful language. Very complicated database queries can easily be expressed through Cypher. This allows users to focus on their domain instead of getting lost in database access.Cypher was largely an invention of Andrés Taylor while working for Neo4j, Inc.(formerly Neo Technology) in 2011. Cypher was originally intended to be used with the graph database Neo4j, but was opened up through the openCypher project in October 2015.
+ created 2014
+ pageId 41583056
+ backlinksCount 43
+ revisionCount 49
+ dailyPageViews 79
+ appeared 2011
+
+website https://neo4j.com/developer/cypher-query-language/
+status historical
+fileType text
+
+codeMirror cypher

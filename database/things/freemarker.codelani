@@ -1,3 +1,75 @@
+title FreeMarker
 appeared 2000
 type pl
-wikipedia Apache_FreeMarker
+
+patterns
+ hasCentralPackageRepository? false
+
+wikipedia https://en.wikipedia.org/wiki/Apache_FreeMarker
+ example
+  <html>
+  <body>
+  <p>Hello Joe! You have the following messages:
+    <p><b>Tim:</b> Please don't forget to bring the conference papers!</p>
+    <p><b>Cindy:</b> Can you give me a visit this afternoon?</p>
+    <p><b>Richard:</b> Don't forget the papers this time!</p>
+  </p>
+  </body>
+  </html>
+ related java html java-server-pages apache-velocity thymeleaf
+ summary FreeMarker is a free Java-based template engine, originally focusing on dynamic web page generation with MVC software architecture. However, it is a general purpose template engine, with no dependency on servlets or HTTP or HTML, and is thus often used for generating source code, configuration files or e-mails.
+ backlinksCount 6
+ pageId 1866752
+ created 2005
+ revisionCount 123
+ dailyPageViews 31
+ appeared 2000
+
+githubLanguage FreeMarker
+ fileExtensions ftl
+ trendingProjectsCount 0
+
+linguistGrammarRepo https://github.com/freemarker/FreeMarker.tmbundle
+ firstCommit 2011
+ lastCommit 2015
+ committerCount 7
+ commitCount 25
+ sampleCount 2
+ example
+  <#ftl strip_text=true />
+  
+  <#macro page title>
+      <!doctype html>
+      <html lang="${.lang}">
+          <head>
+              <title>${title}</title>
+              <@metaTags />
+          </head>
+          <body>
+              <#nested />
+              <@footer />
+          </body>
+      </html>
+  </#macro>
+  
+  
+  <#---
+    Default meta tags
+  -->
+  <#macro metaTags>
+      <#compress>
+          <meta charset="utf-8">
+          <meta http-equiv="X-UA-Compatible" content="IE=edge">
+          <meta name="viewport" content="width=device-width,initial-scale=1">
+          <meta name="format-detection" content="telephone=no">
+      </#compress>
+  </#macro>
+  
+  <#macro footer>
+      <p>This page is using FreeMarker v${.version}</p>
+  </#macro>
+  
+
+status active
+fileType text
+isOpenSource true

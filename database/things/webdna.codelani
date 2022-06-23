@@ -1,3 +1,33 @@
+title WebDNA
 appeared 1995
 type pl
-wikipedia WebDNA
+
+patterns
+ hasCentralPackageRepository? false
+
+wikipedia https://en.wikipedia.org/wiki/WebDNA
+ example
+  <!--HAS_WEBDNA_TAGS-->
+  <html>
+  
+  [text]info=[tcpconnect host=whois.domaindiscover.com&port=43]
+  [tcpsend]webdna.us[unurl]%0D%0A[/unurl][/tcpsend]
+  [/tcpconnect][/text]
+  
+  [append db=base.db]domain=webdna.us&whois=[info]
+  [/append]
+  
+  </html>
+ related php mysql
+ summary WebDNA is a server-side scripting, interpreted language with an embedded database system, specifically designed for the World Wide Web. Its primary use is in creating database-driven dynamic web page applications. Released in 1995, the name was registered as a trademark in 1998. WebDNA is currently maintained by WebDNA Software Corporation.
+ pageId 24964854
+ dailyPageViews 19
+ created 2009
+ backlinksCount 22
+ revisionCount 135
+ appeared 1995
+
+status active
+fileType text
+
+tiobe WebDNA

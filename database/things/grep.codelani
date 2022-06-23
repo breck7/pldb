@@ -1,3 +1,31 @@
+title grep
 appeared 1974
 type pl
-wikipedia Grep
+
+patterns
+ hasCentralPackageRepository? false
+
+wikipedia https://en.wikipedia.org/wiki/Grep
+ example
+  $ grep root /etc/passwd
+  root:x:0:0:root:/root:/bin/bash
+  operator:x:11:0:operator:/root:/sbin/nologin
+  
+  $ grep -n root /etc/passwd
+  1:root:x:0:0:root:/root:/bin/bash
+  12:operator:x:11:0:operator:/root:/sbin/nologin
+  
+  $ grep -c false /etc/passwd
+  7
+ related unix regex perl
+ summary grep is a command-line utility for searching plain-text data sets for lines that match a regular expression. Its name comes from the ed command g/re/p (globally search a regular expression and print), which has the same effect: doing a global search with the regular expression and printing all matching lines. Grep was originally developed for the Unix operating system, but later available for all Unix-like systems.
+ backlinksCount 559
+ pageId 46642
+ dailyPageViews 619
+ created 2002
+ appeared 1974
+
+status historical
+isOpenSource true
+
+hopl 2295

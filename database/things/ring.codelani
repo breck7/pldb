@@ -1,5 +1,87 @@
+title Ring
 appeared 2016
 type pl
 creators Mahmoud Fayed
+
+patterns
+ hasCentralPackageRepository? false
+ hasComments? true
+
+wikipedia https://en.wikipedia.org/wiki/Ring_(programming_language)
+ related c linux lua python ruby csharp basic qml xbase
+ summary Ring is a dynamic and general-purpose programming language. It can be embedded in C/C++ projects, extended using C/C++ code and/or used as a standalone language. The supported programming paradigms are imperative, procedural, object-oriented, functional, Meta programming, declarative programming using nested structures, and natural programming. The language is portable (Windows, Linux, Mac OS X, Android, etc.) and can be used to create Console, GUI, Web, Games and Mobile applications.
+ pageId 52912829
+ dailyPageViews 42
+ created 2017
+ backlinksCount 6
+ revisionCount 91
+ appeared 2016
+ fileExtensions ring rh rform
+
+githubLanguage Ring
+ fileExtensions ring
+ trendingProjectsCount 0
+
+linguistGrammarRepo https://github.com/MahmoudFayed/atom-language-ring
+ firstCommit 2016
+ lastCommit 2017
+ committerCount 1
+ commitCount 6
+ sampleCount 4
+ example
+  New App
+  {
+          I want window
+          The window title = "hello world"
+  }
+  
+  Class App
+  
+          func geti
+                  if nIwantwindow = 0
+                          nIwantwindow++
+                  ok
+  
+          func getwant
+                  if nIwantwindow = 1
+                          nIwantwindow++
+                  ok
+  
+          func getwindow
+                  if nIwantwindow = 2
+                          nIwantwindow= 0
+                          see "Instruction : I want window" + nl
+                  ok
+                  if nWindowTitle = 0
+                          nWindowTitle++
+                  ok
+  
+          func settitle cValue
+                  if nWindowTitle = 1
+                          nWindowTitle=0
+                          see "Instruction : Window Title = " + cValue + nl
+                  ok
+  
+          private
+  
+                  # Attributes for the instruction I want window
+                          i want window
+                          nIwantwindow = 0
+                  # Attributes for the instruction Window title
+                  # Here we don't define the window attribute again
+                          title
+                          nWindowTitle = 0
+                  # Keywords to ignore, just give them any value
+                          the=0
+  
+
 website http://ring-lang.net
-wikipedia Ring_(programming_language)
+status active
+fileExtensions ring rh rform
+fileType text
+wordRank 1517
+isOpenSource true
+
+tiobe Ring
+
+rosettaCode Ring

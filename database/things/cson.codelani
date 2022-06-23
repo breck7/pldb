@@ -1,3 +1,43 @@
+title CSON
 appeared 2011
 type metaLanguage
-github https://github.com/bevry/cson
+
+patterns
+ hasCentralPackageRepository? false
+
+githubLanguage CSON
+ fileExtensions cson
+ trendingProjectsCount 0
+
+githubRepo https://github.com/bevry/cson
+ firstCommit 2011
+ stars 1154
+ forks 51
+ subscribers 21
+ created 2011
+ updated 2018
+ description CoffeeScript-Object-Notation. Same as JSON but for CoffeeScript objects.
+ issues 10
+
+linguistGrammarRepo https://github.com/atom/language-coffee-script
+ firstCommit 2013
+ lastCommit 2018
+ committerCount 30
+ commitCount 332
+ sampleCount 4
+ example
+  'menu': [
+    {
+      'label': 'Packages'
+      'submenu': [
+        'label': 'Wercker Status'
+        'submenu': [
+          { 'label': 'Check now!', 'command': 'wercker-status:checknow' }
+        ]
+      ]
+    }
+  ]
+
+status active
+fileType text
+isOpenSource true

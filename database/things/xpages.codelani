@@ -1,4 +1,53 @@
+title XPages
 appeared 2008
 type application
+
+patterns
+ hasCentralPackageRepository? false
+
+wikipedia https://en.wikipedia.org/wiki/XPages
+ related javascript html java
+ summary XPages is an IBM extension of Java Server Faces with a server side JavaScript runtime and the built-in NoSQL database IBM Domino. It allows data from IBM Notes and Relational Databases to be displayed to browser clients on all platforms. The programming model is based on web development languages and standards including JavaScript, Ajax, Java, the Dojo Toolkit, Server-side JavaScript and JavaServer Faces. XPages uses IBM Domino, IBM's rapid application development platform, including functionality such as the document-oriented database.
+ pageId 21563127
+ created 2009
+ backlinksCount 11
+ revisionCount 114
+ dailyPageViews 19
+ appeared 2008
+
+githubLanguage XPages
+ fileExtensions xsp-config xspmetadata
+ trendingProjectsCount 0
+
+linguistGrammarRepo https://github.com/textmate/xml.tmbundle
+ firstCommit 2004
+ lastCommit 2018
+ committerCount 12
+ commitCount 97
+ sampleCount 2
+ example
+  <?xml version="1.0" encoding="UTF-8"?>
+  <faces-config>
+    <faces-config-extension>
+      <namespace-uri>http://www.ibm.com/xsp/custom</namespace-uri>
+      <default-prefix>xc</default-prefix>
+    </faces-config-extension>
+    <composite-component>
+      <component-type>navbar</component-type>
+      <composite-name>navbar</composite-name>
+      <composite-file>/navbar.xsp</composite-file>
+      <composite-extension>
+        <designer-extension>
+          <in-palette>true</in-palette>
+        </designer-extension>
+      </composite-extension>
+    </composite-component>
+  </faces-config>
+  
+
 website http://xpages.info/
-wikipedia XPages
+status active
+
+twitter xpagesinfo
+
+fileType text

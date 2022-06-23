@@ -1,3 +1,33 @@
+title TOM object-oriented programming language
 appeared 1999
 type pl
-wikipedia TOM_(object-oriented_programming_language)
+
+patterns
+ hasCentralPackageRepository? false
+
+wikipedia https://en.wikipedia.org/wiki/TOM_(object-oriented_programming_language)
+ example
+  implementation class HelloWorld
+  
+   int
+     main Array argv
+   {
+      [[[stdio out] print "Hello, world!"] nl];
+   }
+  
+   end;
+  
+   implementation instance HelloWorld end;
+ related objective-c c ruby
+ summary TOM was an object-oriented programming language developed in the 1990s that built on the lessons learned from Objective-C. The main purpose of TOM was to allow for "unplanned reuse" of code via a well-developed extension mechanism. This concept was introduced seemingly by accident in Objective-C and later proved to be of wide use, and was applied aggressively in TOM. The primary changes in TOM are the addition of multiple inheritance, tuples as a first-class part of the language, cleaner syntax, free of the C requirements for header files and pre-compiler commands, and the ability to use categories (the re-use mechanism) to include anything. It is this latter ability that represents "the whole idea". Unlike Objective-C's categories that allowed only new methods to be built onto existing classes, TOM allowed the addition of class and instance variables, new methods, even new superclasses. This results in the redefinition of "class" as "a class is defined by its main definition and any extensions", these extensions have become a first-class citizen of the language (similarly to Ruby). The book The Pragmatic Programmer lists TOM as an example for a new language to learn. Development of the TOM language has ceased.
+ pageId 11090266
+ dailyPageViews 8
+ created 2007
+ backlinksCount 7
+ revisionCount 40
+ appeared 1999
+ fileExtensions t
+
+status historical
+fileType text
+isOpenSource true

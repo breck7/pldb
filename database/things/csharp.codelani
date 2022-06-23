@@ -1,5 +1,239 @@
+title C#
 appeared 2000
 type pl
 creators Anders Hejlsberg
+
+patterns
+ hasAsyncAwait? true
+  public async Task<int> FindPageSize(Uri uri) 
+  {
+      byte[] data = await new WebClient().DownloadDataTaskAsync(uri);
+      return data.Length;
+  }
+ hasPointers? true
+  // Pointers supported only under certain conditions.
+  // Get 16 bytes of memory from the process's unmanaged memory
+  IntPtr pointer = System.Runtime.InteropServices.Marshal.AllocHGlobal(16);
+ hasGenerics? true
+  // Declare the generic class.
+  public class GenericList<T>
+  {
+      public void Add(T input) { }
+  }
+  class TestGenericList
+  {
+      private class ExampleClass { }
+      static void Main()
+      {
+          // Declare a list of type int.
+          GenericList<int> list1 = new GenericList<int>();
+          list1.Add(1);
+  
+          // Declare a list of type string.
+          GenericList<string> list2 = new GenericList<string>();
+          list2.Add("");
+  
+          // Declare a list of type ExampleClass.
+          GenericList<ExampleClass> list3 = new GenericList<ExampleClass>();
+          list3.Add(new ExampleClass());
+      }
+  }
+ hasCentralPackageRepository? true
+ hasConstructors? true
+  public class MyClass
+  {
+      private int a;
+      private string b;
+  
+      // Constructor
+      public MyClass() : this(42, "string")
+      {
+      }
+  
+      // Overloading a constructor
+      public MyClass(int a, string b)
+      {
+          this.a = a;
+          this.b = b;
+      }
+  }
+  // Code somewhere
+  // Instantiating an object with the constructor above
+  MyClass c = new MyClass(42, "string");
+ hasGenerators? true
+  // Method that takes an iterable input (possibly an array)
+  // and returns all even numbers.
+  public static IEnumerable<int> GetEven(IEnumerable<int> numbers) {
+      foreach (int i in numbers) {
+          if ((i % 2) == 0) {
+              yield return i;
+          }
+      }
+  }
+ hasDirectives? true
+  #define MAX_CLIENTS 200
+  int array[MAX_CLIENTS];
+  
+  #if PRODUCTION
+  //code
+  #elif DEVELOPMENT
+  //code
+  #else
+  //code
+  #endif
+ hasExplicitTypeCasting? true
+  Animal animal = new Cat();
+  
+  Bulldog b = (Bulldog) animal;   // if (animal is Bulldog), stat.type(animal) is Bulldog, else an exception
+  b = animal as Bulldog;          // if (animal is Bulldog), b = (Bulldog) animal, else b = null
+  
+  animal = null;
+  b = animal as Bulldog;          // b == null
+ hasImports? true
+  using static System.Console;
+  using static System.Math;
+  class Program
+  {
+      static void Main()
+      {
+          WriteLine(Sqrt(3*3 + 4*4));
+      }
+  }
+ hasNamespaces? true
+  namespace MyNamespace
+  {
+      class MyClass
+      {
+          public void MyMethod()
+          {
+              System.Console.WriteLine("Creating my namespace");
+      }
+    }
+  }
+ hasOperatorOverloading? true
+ hasModules? true
+  // In C#, namespaces are the semi-equivalent of Java's packages.
+  namespace com.test
+  {
+     class Test {}
+  }
+ hasDisposeBlocks? true
+  using (Resource resource = GetResource())
+  {
+     // Perform actions with the resource.
+     ...
+  }
+
+wikipedia https://en.wikipedia.org/wiki/C_Sharp_(programming_language)
+ example
+  using System.Windows.Forms;
+  
+  class Program
+  {
+      static void Main(string[] args)
+      {
+          MessageBox.Show("Hello, World!");
+          System.Console.WriteLine("Is almost the same argument!");
+      }
+  }
+ related spec-sharp eiffel java modula-3 object-pascal ml visual-basic icon haskell rust jsharp f-sharp chapel crystal d dart hack kotlin monkey nemerle oxygene swift vala unity-engine c turbo-pascal smalltalk linq a-sharp ada cil fortran visual-studio-editor morfik
+ summary C# (pronounced as see sharp) is a multi-paradigm programming language encompassing strong typing, imperative, declarative, functional, generic, object-oriented (class-based), and component-oriented programming disciplines. It was developed by Microsoft within its .NET initiative and later approved as a standard by Ecma (ECMA-334) and ISO (ISO/IEC 23270:2006). C# is one of the programming languages designed for the Common Language Infrastructure. C# is a general-purpose, object-oriented programming language. Its development team is led by Anders Hejlsberg. The most recent version is C# 7.1, which was released in 2017 along with Visual Studio 2017 Update 3. The Unity game engine uses C# as its primary scripting language.
+ pageId 2356196
+ dailyPageViews 2794
+ created 2001
+ backlinksCount 4097
+ revisionCount 4580
+ appeared 2017
+ fileExtensions cs
+
+githubLanguage C#
+ fileExtensions cs cake cshtml csx
+ trendingProjects
+  author name avatar url language languageColor stars forks currentPeriodStars description
+  mxgmn WaveFunctionCollapse https://github.com/mxgmn.png https://github.com/mxgmn/WaveFunctionCollapse C# #178600 12814 642 580 "Bitmap & tilemap generation from a single example with the help of ideas from quantum mechanics."
+  ppy osu https://github.com/ppy.png https://github.com/ppy/osu C# #178600 3486 733 227 "rhythm is just a *click* away!"
+  dotnet samples https://github.com/dotnet.png https://github.com/dotnet/samples C# #178600 618 1379 71 "Sample code and snippets used in the .NET documentation"
+  HMBSbige ShadowsocksR-Windows https://github.com/HMBSbige.png https://github.com/HMBSbige/ShadowsocksR-Windows C# #178600 677 194 208 "【自用】Forked from shadowsocksr and shadowsocksrr"
+  dotnet coreclr https://github.com/dotnet.png https://github.com/dotnet/coreclr C# #178600 11992 2818 177 "CoreCLR is the runtime for .NET Core. It includes the garbage collector, JIT compiler, primitive data types and low-level classes."
+  EduardoPires EquinoxProject https://github.com/EduardoPires.png https://github.com/EduardoPires/EquinoxProject C# #178600 2873 883 128 "Full ASP.NET Core 2.2 application with DDD, CQRS and Event Sourcing"
+  confluentinc confluent-kafka-dotnet https://github.com/confluentinc.png https://github.com/confluentinc/confluent-kafka-dotnet C# #178600 1172 366 69 "Confluent's Apache Kafka .NET client"
+  asc-lab dotnetcore-microservices-poc https://github.com/asc-lab.png https://github.com/asc-lab/dotnetcore-microservices-poc C# #178600 529 167 153 "Very simplified insurance sales system made in a microservices architecture using .NET Core"
+  thangchung awesome-dotnet-core https://github.com/thangchung.png https://github.com/thangchung/awesome-dotnet-core C# #178600 9843 1502 307 "🐝 A collection of awesome .NET core libraries, tools, frameworks and software"
+  jellyfin jellyfin https://github.com/jellyfin.png https://github.com/jellyfin/jellyfin C# #178600 3666 346 407 "The Free Software Media System"
+  0xd4d dnSpy https://github.com/0xd4d.png https://github.com/0xd4d/dnSpy C# #178600 11499 1810 374 ".NET debugger and assembly editor"
+  dotnetcore WTM https://github.com/dotnetcore.png https://github.com/dotnetcore/WTM C# #178600 932 220 252 WTM框架是针对中小规模后台管理系统的开发利器。基于DotNetCore，实现0编码创建项目，0编码生成业务模块。框架严格遵循MVVM的开发模式，并深得MVVM的精髓。对于新手，可以快速上手搭建项目；对于高手，可以把那些繁琐重复的工作交给框架生成，专心攻克需求难点。框架经过数十个真实项目检测，可以极大提高开发效率，降低开发成本。
+  JasonGT NorthwindTraders https://github.com/JasonGT.png https://github.com/JasonGT/NorthwindTraders C# #178600 2559 873 138 "Northwind Traders is a sample application built using ASP.NET Core and Entity Framework Core."
+  aspnet EntityFrameworkCore https://github.com/aspnet.png https://github.com/aspnet/EntityFrameworkCore C# #178600 8039 2058 143 "Entity Framework Core is a lightweight and extensible version of the popular Entity Framework data access technology"
+  microsoft appcenter https://github.com/microsoft.png https://github.com/microsoft/appcenter C# #178600 367 70 49 "Central repository for App Center open source resources and planning."
+  Azure azure-powershell https://github.com/Azure.png https://github.com/Azure/azure-powershell C# #178600 1598 1679 58 "Microsoft Azure PowerShell"
+  HangfireIO Hangfire https://github.com/HangfireIO.png https://github.com/HangfireIO/Hangfire C# #178600 5046 1139 132 "An easy way to perform background job processing in your .NET and .NET Core applications. No Windows Service or separate process required"
+  grandnode grandnode https://github.com/grandnode.png https://github.com/grandnode/grandnode C# #178600 797 324 83 "Free and Open Source Ecommerce Shopping Cart solution based on ASP.NET CORE and MongoDB"
+  quasar QuasarRAT https://github.com/quasar.png https://github.com/quasar/QuasarRAT C# #178600 2618 1155 95 "Remote Administration Tool for Windows"
+  migueldeicaza gui.cs https://github.com/migueldeicaza.png https://github.com/migueldeicaza/gui.cs C# #178600 2674 201 232 "Console-based user interface toolkit for .NET applications."
+  dotnetcore CAP https://github.com/dotnetcore.png https://github.com/dotnetcore/CAP C# #178600 3096 623 179 "Distributed transaction solution in micro-service base on eventually consistency, also an eventbus with Outbox pattern"
+  MaterialDesignInXAML MaterialDesignInXamlToolkit https://github.com/MaterialDesignInXAML.png https://github.com/MaterialDesignInXAML/MaterialDesignInXamlToolkit C# #178600 7150 1706 211 "Google's Material Design in XAML & WPF, for C# & VB.Net."
+  2dust v2rayN https://github.com/2dust.png https://github.com/2dust/v2rayN C# #178600 581 111 486 
+  Azure DotNetty https://github.com/Azure.png https://github.com/Azure/DotNetty C# #178600 2571 673 69 "DotNetty project – a port of netty, event-driven asynchronous network application framework"
+  GoogleCloudPlatform microservices-demo https://github.com/GoogleCloudPlatform.png https://github.com/GoogleCloudPlatform/microservices-demo C# #178600 5767 865 372 "Sample cloud-native application with 10 microservices showcasing Kubernetes, Istio, gRPC and OpenCensus. Provided for illustration and demo purposes."
+ trendingProjectsCount 26
+
+linguistGrammarRepo https://github.com/atom/language-csharp
+ firstCommit 2014
+ lastCommit 2018
+ committerCount 30
+ commitCount 235
+ sampleCount 5
+ example
+  ﻿using System;
+  
+  namespace MongoDB.Serialization.Descriptors
+  {
+      internal class BsonPropertyValue
+      {
+          public bool IsDictionary { get; private set; }
+  
+          public Type Type { get; private set; }
+  
+          public object Value { get; private set; }
+  
+          public BsonPropertyValue(Type type, object value, bool isDictionary)
+          {
+              Type = type;
+              Value = value;
+              IsDictionary = isDictionary;
+          }
+      }
+  }
+
 website https://docs.microsoft.com/dotnet/csharp/language-reference/
-wikipedia C_Sharp_(programming_language)
+status active
+
+replit csharp
+
+country US
+fileExtensions cs
+fileType text
+
+tiobe C#
+ currentRank 5
+
+meetup csharp
+ memberCount 351091
+ groupCount 802
+
+projectEuler C#
+ memberCount
+  2019 13078
+  2022 14113
+
+hopl 3445
+
+subreddit csharp
+ memberCount
+  2017 46616
+
+antlr https://github.com/antlr/grammars-v4/tree/master/csharp
+
+corporateDevelopers Microsoft
+indeedJobs c# developer
+ 2017 19747

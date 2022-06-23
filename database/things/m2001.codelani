@@ -1,3 +1,40 @@
+title M2001
 appeared 2001
 type pl
-wikipedia M2001
+
+patterns
+ hasCentralPackageRepository? false
+
+wikipedia https://en.wikipedia.org/wiki/M2001
+ example
+  matrix polynomial rationomial                    stack queue list
+    powerseries series sequence                      tree graph digraph
+    MATHEMATICAL CLASSES                      ABSTRACT CLASSES
+              |                                               |
+              |                                               |
+              |                                               |
+              +-------------------------+---------------------+
+                                        |
+                                        |
+                                        |
+                  product sum set string exponential subdomain
+                              STRUCTURED TYPES
+                                        |
+                                        |
+                                        |
+         boolean character natural integer rational real complex text
+                             COMPUTATIONAL TYPES
+ related pascal modula-2
+ summary M2001 is a modular educational mathematical programming language for developing and presenting mathematical algorithms, from the modern discrete to the classical continuous mathematics. M2001 is built on a semantic framework that is based in category theory and has a syntax similar to that of Pascal or Modula-2. It is designed purely for pedagogic use, so efficiency and ease of implementation have been far less important in its development than generality and range of application. It was created to play an important role in forming a formal algorithmic foundation for first-year college math students.
+ pageId 941103
+ created 2004
+ backlinksCount 11
+ revisionCount 16
+ dailyPageViews 5
+ appeared 2001
+
+status historical
+country US
+fileType text
+
+hopl 7622

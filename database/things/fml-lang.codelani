@@ -1,6 +1,8 @@
+title Function Manipulation Language
 appeared 2012
 type pl
 creators Joe Groff
+
 example
  pad = x flip[stitch] 0, stitch 0, flip[cat] 0, cat 0
  life = pad, neighborhoods[3 3], [ravel, [sum in?: [x @ 4, + 3; 3]]]/2
@@ -35,5 +37,21 @@ example
   1 1 0 0
   0 1 0 0]
  ###
-reference https://gist.github.com/jckarter/2839239
+
+patterns
+ hasComments? true
+  # This is a line comment
+  
+  ###
+  This is a block comment
+  ###
+ hasDirectives? true
+  # Directives are special lines that have syntax and semantics of their own. Directives all start with a name of the form .foo; new directives may be added by future versions of the language.
+  .import math.constants
+  area = x * math.constants.Pi, ^ 2
+  .from math.constants import Pi, E
+  area = x sq, * Pi
+  polar = a * [E ^ [b * 0+j1]]
+
 description fml is an optimizing, function-oriented, array programming language. Unlike other array programming languages, it aims to have a less symbol-heavy but still concise syntax, and non-strict semantics that allow for high-level optimization. Note that fml is not: meant for serious use always faster than systems languages like C/C++/etc. always more expressive than general-purpose languages like Python, Javascript, etc. suitable for cryptography, real-time, or low-level applications that require fine control of time and space complexity
+reference https://gist.github.com/jckarter/2839239

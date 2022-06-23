@@ -1,9 +1,16 @@
+title torchscript
 appeared 2018
 type pl
+
 example
  import torch
  def foo(x, y):
      return 2*x + y
  traced_foo = torch.jit.trace(foo, (torch.rand(3), torch.rand(3)))
-reference https://pytorch.org/docs/stable/jit.html
+
+patterns
+ hasCentralPackageRepository? false
+
 description The PyTorch 1.0 release candidate introduces Torch Script, a Python subset that can be JIT-compiled into C++ or other high-speed code.
+reference https://pytorch.org/docs/stable/jit.html
+status active

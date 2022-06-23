@@ -1,6 +1,176 @@
+title Elm
 appeared 2012
 type pl
 creators Evan Czaplicki
+
+patterns
+ hasCentralPackageRepository? true
+ hasComments? true
+ hasTypeInference? true
+
+wikipedia https://en.wikipedia.org/wiki/Elm_(programming_language)
+ example
+  -- This is a single line comment
+  
+  {- This is a multi-line comment.
+     It can span multiple lines.
+  -}
+  
+  {- It is possible to {- nest -} multi-line comments -}
+  
+  -- Here we define a value named ''greeting''. The type is inferred as a String.
+  greeting =
+      "Hello World!"
+  
+   -- It is best to add type annotations to top-level declarations.
+  hello : String
+  hello =
+      "Hi there."
+  
+  -- Functions are declared the same way, with arguments following the function name.
+  add x y =
+      x + y
+  
+  -- Again, it is best to add type annotations.
+  hypotenuse : Float -> Float -> Float
+  hypotenuse a b =
+      sqrt (a^2 + b^2)
+  
+  -- Functions are also curried; here we've curried the multiplication 
+  -- infix operator with a `2`
+  multiplyBy2 : number -> number
+  multiplyBy2 =
+      (*) 2
+  
+  -- If-expressions are used to branch on values
+  absoluteValue : number -> number
+  absoluteValue number =
+      if number < 0 then negate number else number
+  
+   -- Records are used to hold values with named fields
+  book : { title : String, author : String, pages : Int }
+  book =
+      { title = "Steppenwolf"
+      , author = "Hesse"
+      , pages = 237 
+      }
+  
+  -- Record access is done with `.`
+  title : String
+  title =
+      book.title
+  
+  -- Record access `.` can also be used as a function
+  author : String
+  author =
+      .author book
+  
+  -- We can create entirely new types with the `type` keyword.
+  -- The following value represents a binary tree.
+  type Tree a
+      = Empty
+      | Node a (Tree a) (Tree a)
+  
+  -- It is possible to inspect these types with case-expressions.
+  depth : Tree a -> Int
+  depth tree =
+      case tree of
+          Empty ->
+              0
+  
+          Node value left right ->
+              1 + max (depth left) (depth right)
+ related haskell standard-ml ocaml f-sharp vuejs javascript typescript
+ summary Elm is a domain-specific programming language for declaratively creating web browser-based graphical user interfaces. Elm is purely functional, and is developed with emphasis on usability, performance, and robustness. It advertises "no runtime exceptions in practice," made possible by the Elm compiler's static type checking.
+ pageId 37552825
+ dailyPageViews 268
+ created 2012
+ backlinksCount 54
+ revisionCount 395
+ appeared 2012
+ fileExtensions elm
+
+githubLanguage Elm
+ fileExtensions elm
+ trendingProjectsCount 0
+
+githubRepo https://github.com/elm-lang/elm-compiler
+ stars 4837
+ forks 389
+ subscribers 230
+ created 2012
+ updated 2018
+ firstCommit 2012
+ description Compiler for Elm, a functional language for reliable webapps.
+ issues 91
+
+helloWorldCollection Elm
+ -- Hello world in Elm
+ 
+ import Text
+ 
+ main = Text.plainText "Hello, world!"
+
+linguistGrammarRepo https://github.com/elm-community/Elm.tmLanguage
+ firstCommit 2013
+ lastCommit 2017
+ committerCount 19
+ commitCount 295
+ sampleCount 3
+ example
+  
+  main = asText (qsort [3,9,1,8,5,4,7])
+  
+  qsort lst =
+    case lst of
+      x:xs -> qsort (filter ((>=)x) xs) ++ [x] ++ qsort (filter ((<)x) xs)
+      [] -> []
+  
+  
+  {---------------------
+  
+  QuickSort works as follows:
+   - Choose a pivot element which be placed in the "middle" of the sorted list.
+     In our case we are choosing the first element as the pivot.
+   - Gather all of the elements less than the pivot (the first filter).
+     We know that these must come before our pivot element in the sorted list.
+     Note: ((>=)x) === (\y -> (>=) x y) === (\y -> x >= y)
+   - Gather all of the elements greater than the pivot (the second filter).
+     We know that these must come after our pivot element in the sorted list.
+   - Run `qsort` on the lesser elements, producing a sorted list that contains
+     only elements less than the pivot. Put these before the pivot.
+   - Run `qsort` on the greater elements, producing a sorted list. Put these
+     after the pivot.
+  
+  Note that choosing a bad pivot can have bad effects. Take a sorted list with
+  N elements. The pivot will always be the lowest member, meaning that it does
+  not divide the list very evenly. The list of lessers has 0 elements
+  and the list of greaters has N-1 elemens. This means qsort will be called
+  N times, each call looking through the entire list. This means, in the worst
+  case, QuickSort will make N^2 comparisons.
+  
+  ----------------------}
+  
+
 website http://elm-lang.org
-github https://github.com/elm-lang/elm-compiler
-wikipedia Elm_(programming_language)
+status active
+fileExtensions elm
+fileType text
+compilesTo javascript
+isOpenSource true
+
+tiobe Elm
+
+webRepl http://elm-lang.org/try
+
+projectEuler Elm
+ memberCount
+  2022 4
+
+codeMirror elm
+
+rosettaCode Elm
+
+writtenIn haskell
+indeedJobs elm engineer
+ 2017 127

@@ -1,3 +1,22 @@
+title Caché ObjectScript
 appeared 1997
 type pl
-wikipedia Caché_ObjectScript
+
+patterns
+ hasCentralPackageRepository? false
+
+wikipedia https://en.wikipedia.org/wiki/Caché_ObjectScript
+ related mumps sql
+ summary Caché ObjectScript is a part of the Caché database system sold by InterSystems. The language is a functional superset of the ANSI-standard MUMPS programming language. Since Caché is at its core a MUMPS implementation, it can run ANSI MUMPS routines with no change. To appeal as a commercial product, Caché implements support for object-oriented programming, a macro preprocessing language, embedded SQL for ANSI-standard SQL access to M's built-in database, procedure and control blocks using C-like brace syntax, procedure-scoped variables, and relaxed whitespace syntax limitations. The language has private and public variables and globals. Global has a different meaning in this language than in most; such variables are global across routines, processes, and sessions. Thus, editing a global variable is making permanent and immediate changes to a system-universal database (which survives reboots, etc.).  The scope of a private variable is the local function, the scope of a public variable is the entire process. Variables, private and public, may be single elements or complete multi-dimensional arrays. The great majority of Caché's feature-set is inherited from the ANSI MUMPS standard.  See that article for details on how data is represented and the different ways a programmer can think about the data during development.
+ pageId 2242790
+ created 2005
+ backlinksCount 19
+ revisionCount 55
+ dailyPageViews 19
+ appeared 1997
+
+status historical
+country US
+fileType text
+
+hopl 4987

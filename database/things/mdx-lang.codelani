@@ -1,10 +1,18 @@
+title MultiDimensional eXpressions
 appeared 1997
 type queryLanguage
 creators Mosha Pasumansky
-wikipedia MultiDimensional_eXpressions
+
 example
  SELECT
     { [Measures].[Store Sales] } ON COLUMNS,
     { [Date].[2002], [Date].[2003] } ON ROWS
  FROM Sales
  WHERE ( [Store].[USA].[CA] )
+
+wikipedia https://en.wikipedia.org/wiki/MultiDimensional_eXpressions
+ summary Multidimensional Expressions (MDX) is a query language for online analytical processing (OLAP) using a database management system. Much like SQL, it is a query language for OLAP cubes.  It is also a calculation language, with syntax similar to spreadsheet formulas.
+ backlinksCount 112
+ pageId 2506869
+ dailyPageViews 114
+ appeared 1997

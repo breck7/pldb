@@ -1,9 +1,20 @@
+title never
 appeared 2018
 type pl
-website https://never-lang.readthedocs.io
-github https://github.com/never-lang/never
+
 example
  func main() -> float
  {
     100.0 * 1.8 + 32.0
  }
+
+githubRepo https://github.com/never-lang/never
+ firstCommit 2018
+ stars 108
+ subscribers 10
+ created 2018
+ updated 2019
+ description Never: statically typed, embedded functional programming language
+
+website https://never-lang.readthedocs.io
+status active

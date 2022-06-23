@@ -1,5 +1,74 @@
+title Pike
 appeared 1994
 type pl
 creators Fredrik Hübinette
+
+patterns
+ hasCentralPackageRepository? false
+ hasComments? true
+
+wikipedia https://en.wikipedia.org/wiki/Pike_(programming_language)
+ example
+  mixed anything;
+  anything = (int)5.5;         // anything is now the integer value 5
+  anything = (string)anything; // anything is now the string value "5"
+ related lpc c
+ summary Pike is an interpreted, general-purpose, high-level, cross-platform, dynamic programming language, with a syntax similar to that of C. Unlike many other dynamic languages, Pike is both statically and dynamically typed, and requires explicit type definitions. It features a flexible type system that allows the rapid development and flexible code of dynamically typed languages, while still providing some of the benefits of a statically typed language. Pike features garbage collection, advanced data types, and first-class anonymous functions, with support for many programming paradigms, including object-oriented, functional and imperative programming. Pike is free software, released under the GPL, LGPL and MPL licenses.
+ pageId 86780
+ dailyPageViews 45
+ created 2002
+ backlinksCount 66
+ revisionCount 165
+ appeared 1994
+
+githubLanguage Pike
+ fileExtensions pike pmod
+ trendingProjectsCount 0
+
+helloWorldCollection Pike
+ // Hello world in Pike (pike.roxen.com)
+ 
+ int main(){
+         write("Hello World!\n");
+ }
+ 
+
+linguistGrammarRepo https://github.com/hww3/pike-textmate
+ firstCommit 2014
+ lastCommit 2014
+ committerCount 1
+ commitCount 1
+ sampleCount 3
+ example
+  #!/usr/bin/env pike
+  
+  int main(int argc, array argv) {
+  	return 0;
+  }
+  
+  
+
 website https://pike.lysator.liu.se/
-wikipedia Pike_(programming_language)
+status active
+
+tryItOnline pike
+
+country SE
+fileType text
+wordRank 9961
+isOpenSource true
+
+tiobe Pike
+
+projectEuler Pike
+ memberCount
+  2019 3
+  2022 6
+
+hopl 2369
+
+quineRelay Pike
+
+ubuntuPackage pike8.0
+
+rosettaCode Pike

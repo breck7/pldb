@@ -1,3 +1,160 @@
+title BlitzBasic
 appeared 2000
 type pl
-wikipedia Blitz_BASIC
+
+patterns
+ hasCentralPackageRepository? false
+
+wikipedia https://en.wikipedia.org/wiki/Blitz_BASIC
+ example
+  AppTitle = "Binary Clock"
+   Graphics 145,85
+  
+   secondtimer = CreateTimer(2)
+   
+   Repeat
+           Hour = CurrentTime()[..2].ToInt()
+           Minute = CurrentTime()[4..6].ToInt()
+           Second = CurrentTime()[6..].ToInt()
+  
+           If Hour >= 12 Then PM = 1
+           If Hour > 12 Then Hour = Hour - 12
+           If Hour = 0 Then Hour = 12
+  
+           'should do this otherwise the PM dot will be
+           'Left up once the clock rolls past midnight!
+           Cls
+  
+           SetColor(0,255,0) 'make the text green For the PM part
+           If PM  = 1 Then DrawText "PM",5,5
+           'set the text colour back To white For the rest
+           SetColor(255,255,255)
+  
+           For bit=0 Until 6
+                   xpos=20*(6-bit)
+                   binaryMask=2^bit
+                   'do hours
+                   If (bit<4)
+                           If (hour & binaryMask)
+                                   DrawText "1",xpos,5
+                           Else
+                                   DrawText "0",xpos,5
+                           EndIf
+                   EndIf
+  
+                   'do the minutes
+                   If (minute & binaryMask)
+                           DrawText "1", xpos,25
+                   Else
+                           DrawText "0", xpos,25
+                   EndIf
+  
+                   'do the seconds
+                   If (second & binaryMask)
+                           DrawText "1",xpos,45
+                   Else
+                           DrawText "0",xpos,45
+                   EndIf
+           Next
+  
+           'make the text red For the decimal time
+           SetColor(255,0,0)
+           DrawText "Decimal: " + CurrentTime(),5,65
+           'set the text back To white For the rest
+           SetColor(255,255,255)
+  
+   	 Flip
+  
+           'will wait half a second
+           WaitTimer(secondTimer)
+   	 If KeyHit(KEY_ESCAPE) Then Exit
+   Forever
+ related basic linux monkey opengl ascii lua unicode csharp purebasic ios
+ summary Blitz BASIC refers to the programming language dialect that was interpreted by the first Blitz compilers, devised by New Zealand-based developer Mark Sibly. Being derived from BASIC, Blitz syntax was designed to be easy to pick up for beginners first learning to program.  The languages are game-programming oriented but are often found general-purpose enough to be used for most types of application. The Blitz language evolved as new products were released, with recent incarnations offering support for more advanced programming techniques such as object-orientation and multi-threading.  This led to the languages losing their BASIC moniker in later years.
+ backlinksCount 126
+ pageId 4840
+ created 2001
+ revisionCount 448
+ dailyPageViews 51
+ appeared 2000
+
+githubLanguage BlitzBasic
+ fileExtensions bb decls
+ trendingProjectsCount 0
+
+linguistGrammarRepo https://github.com/textmate/blitzmax.tmbundle
+ firstCommit 2009
+ lastCommit 2016
+ committerCount 2
+ commitCount 35
+ sampleCount 3
+ example
+  
+  Local i, start, result
+  
+  Local s.Sum3Obj = New Sum3Obj
+  
+  For i = 1 To 100000
+  	s = New Sum3Obj
+  	result = Handle Before s
+  	Delete s
+  Next
+  
+  start = MilliSecs()
+  For i = 1 To 1000000
+  	result = Sum3_(MakeSum3Obj(i, i, i))
+  Next
+  start = MilliSecs() - start
+  Print start
+  
+  start = MilliSecs()
+  For i = 1 To 1000000
+  	result = Sum3(i, i, i)
+  Next
+  start = MilliSecs() - start
+  Print start
+  
+  WaitKey
+  End
+  
+  
+  Function Sum3(a, b, c)
+  	Return a + b + c
+  End Function
+  
+  
+  Type Sum3Obj
+  	Field isActive
+  	Field a, b, c
+  End Type
+  
+  Function MakeSum3Obj(a, b, c)
+  	Local s.Sum3Obj = Last Sum3Obj
+  	If s\isActive Then s = New Sum3Obj
+  	s\isActive = True
+  	s\a = a
+  	s\b = b
+  	s\c = c
+  	
+  	Restore label
+  	Read foo
+  	
+  	Return Handle(s)
+  End Function
+  
+  .label
+  Data (10 + 2), 12, 14
+  :
+  Function Sum3_(a_)
+  	Local a.Sum3Obj = Object.Sum3Obj a_
+  	Local return_ =  a\a + a\b + a\c
+  	Insert a Before First Sum3Obj :: a\isActive = False
+  	Return return_
+  End Function
+  
+  
+  ;~IDEal Editor Parameters:
+  ;~C#Blitz3D
+
+status active
+fileType text

@@ -1,3 +1,28 @@
+title Chrome
 appeared 2008
 type pl
-wikipedia Chrome_%28programming_language%29
+
+patterns
+ hasCentralPackageRepository? false
+
+wikipedia https://en.wikipedia.org/wiki/Chrome_%28programming_language%29
+ example
+  Type: System.Int32
+  -> a = 23, b = 15
+  -> a = 15, b = 23
+  Type: System.String
+  -> a = abc, b = def
+  -> a = def, b = abc
+  Type: System.Double
+  -> a = 1,1, b = 1,2
+  -> a = 1,2, b = 1,1
+ related wasm object-pascal csharp eiffel java f-sharp delphi swift free-pascal
+ summary Oxygene (formerly known as Chrome) is a programming language developed by RemObjects Software for Microsoft's Common Language Infrastructure, the Java Platform and Cocoa. Oxygene is Object Pascal-based, but also has influences from  C#, Eiffel, Java, F# and other languages. Compared to the now deprecated Delphi.NET, Oxygene does not emphasize total backward compatibility, but is designed to be a "reinvention" of the language, be a good citizen on the managed development platforms, and leverage all the features and technologies provided by the .NET and Java runtimes. Oxygene is a commercial product, and offers full integration into Microsoft's Visual Studio IDE on Windows, as well as its own IDE, Fire for use on macOS. The command line compiler is available free. Oxygene is one of four languages supported by the underlying Elements Compiler toolchain, next to C#, Swift and Java). From 2008 to 2012, RemObjects Software has licensed its compiler and IDE technology to Embarcadero to be used in their Embarcadero Prism product. Starting in the Fall of 2011, Oxygene became available in two separate editions, with the second edition adding support for the Java and Android runtimes.  Starting with the release of XE4, Embarcadero Prism is no longer part of the RAD Studio SKU. Numerous support and upgrade paths for Prism customers exist to migrate to Oxygene. As of 2016, there is only one edition of Oxygene, which allows development on Windows or macOS, and which can create executables for Windows .NET, iOS, Android, Java and macOS.
+ created 2008
+ backlinksCount 208
+ pageId 4249746
+ revisionCount 3
+ dailyPageViews 4
+ appeared 2005
+
+status historical

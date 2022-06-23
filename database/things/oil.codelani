@@ -1,5 +1,31 @@
+title oil
 appeared 2016
 type pl
-website http://www.oilshell.org/
-github https://github.com/oilshell/oil
+
+patterns
+ hasCentralPackageRepository? false
+
 description Oil is a new Unix shell.
+
+githubRepo https://github.com/oilshell/oil
+ firstCommit 2016
+ stars 829
+ forks 43
+ subscribers 32
+ created 2016
+ updated 2018
+ description Oil shell
+ issues 64
+
+website http://www.oilshell.org/
+aka OSH
+status active
+
+twitter oilshellblog
+
+wordRank 981
+isOpenSource true
+
+subreddit oilshell
+ memberCount
+  2017 221

@@ -1,4 +1,11 @@
+title python-cl-compiler
 appeared 1991
 type compiler
-reference https://www.researchgate.net/publication/221252239_Python_compiler_for_CMU_common_Lisp
+
+patterns
+ hasCentralPackageRepository? false
+
 description The Python compiler for CMU Common Lisp has been under development for over five years, and now forms the core of a production quality public domain Lisp implementation. Python synthesizes the good ideas from Lisp compilers and source transformation systems with mainstream optimization and retargetability techniques. Novel features include strict type checking and source-level debugging of compiled code. Unusual attention has been paid to the compiler's user interface.
+reference https://www.researchgate.net/publication/221252239_Python_compiler_for_CMU_common_Lisp
+status historical
+fileType na

@@ -1,3 +1,22 @@
+title S/SL
 appeared 1980
 type pl
-wikipedia S/SL_programming_language
+
+patterns
+ hasCentralPackageRepository? false
+
+wikipedia https://en.wikipedia.org/wiki/S/SL_programming_language
+ related yacc pl-i euclid turing ada cobol
+ summary The Syntax/Semantic Language (S/SL) is an executable high level specification language for recursive descent parsers, semantic analyzers and code generators developed by James Cordy, Ric Holt and David Wortman at the University of Toronto in 1980.S/SL is a small programming language that supports cheap recursion and defines input, output, and error token names (& values), semantic mechanisms (class interfaces whose methods are really escapes to routines in a host programming language but allow good abstraction in the pseudocode) and a pseudocode program that defines the syntax of the input language by the token stream the program accepts. Alternation, control flow and one-symbol look-ahead constructs are part of the language. The S/SL processor compiles this pseudocode into a table (byte-codes) that is interpreted by the S/SL table-walker (interpreter). The pseudocode language processes the input language in LL(1) recursive descent style but extensions allow it to process any LR(k) language relatively easily.  S/SL is designed to provide excellent syntax error recovery and repair. It is more powerful and transparent than Yacc but can be slower. S/SL's "semantic mechanisms" extend its capabilities to all phases of compiling, and it has been used to implement all phases of compilation, including scanners, parsers, semantic analyzers, code generators and virtual machine interpreters in multi-pass language processors.S/SL has been used to implement production commercial compilers for languages such as PL/I, Euclid, Turing, Ada, and COBOL, as well as interpreters, command processors, and domain specific languages of many kinds.  It is the primary technology used in IBM's ILE/400 COBOL compiler, and the ZMailer mail transfer agent uses S/SL for defining both its mail router processing language and its RFC 822 email address validation.
+ pageId 485828
+ created 2004
+ backlinksCount 21
+ revisionCount 35
+ dailyPageViews 13
+ appeared 1980
+
+status historical
+country CA
+fileType text
+
+hopl 1017

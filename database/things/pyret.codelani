@@ -1,7 +1,7 @@
+title pyret
 appeared 2011
 type pl
-website https://www.pyret.org/
-github https://github.com/brownplt/pyret-lang
+
 example
  data BinTree:
   | leaf
@@ -19,4 +19,17 @@ example
    node4 = node(4, leaf, leaf)
    tree-sum(node(5, node4, leaf)) is 9
  end
+
 description Pyret is a programming language designed to serve as an outstanding choice for programming education while exploring the confluence of scripting and functional programming. It's under active design and development, and free to use or modify.
+
+githubRepo https://github.com/brownplt/pyret-lang
+ firstCommit 2012
+ stars 659
+ forks 88
+ subscribers 40
+ created 2012
+ updated 2019
+ description The Pyret language.
+ issues 409
+
+website https://www.pyret.org/

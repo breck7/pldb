@@ -1,3 +1,79 @@
+title PL/SQL
 appeared 1991
 type pl
-wikipedia PL/SQL
+
+patterns
+ hasCentralPackageRepository? false
+
+wikipedia https://en.wikipedia.org/wiki/PL/SQL
+ example
+  DECLARE
+    CURSOR cursor_person IS
+      SELECT person_code FROM people_table;
+  BEGIN
+    FOR RecordIndex IN cursor_person
+    LOOP
+      DBMS_OUTPUT.PUT_LINE(recordIndex.person_code);
+    END LOOP;
+  END;
+ related sql transact-sql postgresql plpgsql sql-psm object-pascal free-pascal java sqlite sqlpl
+ summary PL/SQL (Procedural Language/Structured Query Language) is Oracle Corporation's procedural extension for SQL and the Oracle relational database. PL/SQL is available in Oracle Database (since version 6 - stored pl/sql procedures/functions/packages/triggers since version 7), TimesTen in-memory database (since version 11.2.1), and IBM DB2 (since version 9.7). Oracle Corporation usually extends PL/SQL functionality with each successive release of the Oracle Database. PL/SQL includes procedural language elements such as conditions and loops. It allows declaration of constants and variables, procedures and functions, types and variables of those types, and triggers. It can handle exceptions (runtime errors). Arrays are supported involving the use of PL/SQL collections. Implementations from version 8 of Oracle Database onwards have included features associated with object-orientation. One can create PL/SQL units such as procedures, functions, packages, types, and triggers, which are stored in the database for reuse by applications that use any of the Oracle Database programmatic interfaces.
+ pageId 33862363
+ dailyPageViews 427
+ created 2001
+ backlinksCount 432
+ revisionCount 1056
+ appeared 2005
+
+githubLanguage PLSQL
+ fileExtensions pls bdy ddl fnc pck pkb pks plb plsql prc spc sql tpb tps trg vw
+ trendingProjectsCount 0
+
+helloWorldCollection PL%2FSQL
+ -- Hello World in Oracle PL/SQL (sqlplus)
+ 
+ set serveroutput on
+ 
+ begin
+   dbms_output.enable(10000);
+   dbms_output.put_line('Hello World');
+ end;
+ /
+ 
+
+linguistGrammarRepo https://github.com/textmate/sql.tmbundle
+ sampleCount 8
+ example
+  create or replace procedure print_bool(
+      p_bool in BOOLEAN,
+      p_true_value in varchar2 default 'TRUE',
+      p_false_value in varchar2 := 'FALSE'
+  )
+  as
+  begin
+  
+      dbms_output.put_line(case when p_bool then p_true_value else p_false_value end);
+  
+  end print_bool;
+  /
+  
+
+aka PLSQL
+status active
+country US
+fileType text
+
+tiobe PL/SQL
+ currentRank 18
+
+meetup oracle
+ memberCount 78458
+ groupCount 276
+
+hopl 7323
+
+antlr https://github.com/antlr/grammars-v4/tree/master/plsql
+
+corporateDevelopers Oracle
+indeedJobs pl/sql developer
+ 2017 2972

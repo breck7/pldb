@@ -1,3 +1,26 @@
+title Liberty BASIC
 appeared 1992
 type pl
-wikipedia Liberty_BASIC
+
+patterns
+ hasCentralPackageRepository? false
+
+wikipedia https://en.wikipedia.org/wiki/Liberty_BASIC
+ example
+  [multi]
+    for i = 1 to 10
+       res = 5 * i
+       print res
+    next i
+  end
+ related linux run-basic quickbasic smalltalk basic bbc-basic
+ summary Liberty BASIC (LB) is a commercial computer programming language and integrated development environment (IDE). It has an interpreter, developed in Smalltalk, which recognizes its own dialect of the BASIC programming language. It runs on 16- and 32-bit Windows and OS/2.
+ created 2002
+ backlinksCount 105
+ pageId 53252
+ revisionCount 238
+ dailyPageViews 21
+ appeared 1992
+
+status historical
+isOpenSource false

@@ -1,4 +1,22 @@
+title Interlisp
 appeared 1966
 type pl
 creators Daniel G. Bobrow and Warren Teitelman and Ronald Kaplan
-wikipedia Interlisp
+
+patterns
+ hasCentralPackageRepository? false
+
+wikipedia https://en.wikipedia.org/wiki/Interlisp
+ related common-lisp flavors sparc
+ summary Interlisp (also seen with a variety of capitalizations) is a programming environment built around a version of the Lisp programming language. Interlisp development began in 1966 at Bolt, Beranek and Newman in Cambridge, Massachusetts with Lisp implemented for the DEC PDP-1 by Danny Bobrow and D. L. Murphy. In 1970 BBN LISP was designed, which ran on PDP-10 machines running the TENEX operating system. In 1973, when Danny Bobrow, Warren Teitelman and Ronald Kaplan moved from BBN to Xerox PARC, it was renamed Interlisp. Interlisp became a popular Lisp development tool for AI researchers at Stanford University and elsewhere in the DARPA community. Interlisp was notable for the integration of interactive development tools into the environment, such as a debugger, an automatic correction tool for simple errors (DWIM – "do what I mean"), and analysis tools.
+ pageId 353464
+ created 2003
+ backlinksCount 61
+ revisionCount 70
+ dailyPageViews 20
+ appeared 1966
+
+status historical
+fileType text
+
+hopl 957

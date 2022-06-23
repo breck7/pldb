@@ -1,3 +1,37 @@
+title ALEF
 appeared 1992
 type pl
-wikipedia Alef_(programming_language)
+
+patterns
+ hasCentralPackageRepository? false
+
+wikipedia https://en.wikipedia.org/wiki/Alef_(programming_language)
+ example
+  (int, byte*, byte) 
+  func() 
+  { 
+      return (10, "hello", ’c’); 
+  }
+  
+  void 
+  main() 
+  {
+      int a; 
+      byte* str; 
+      byte c; 
+      (a, str, c) = func(); 
+  }
+ related c newsqueak limbo rust go csp
+ summary Alef is a discontinued concurrent programming language, designed as part of the Plan 9 operating system by Phil Winterbottom of Bell Labs. It implemented the channel-based concurrency model of Newsqueak in a compiled, C-like language.
+ pageId 1935217
+ created 2005
+ backlinksCount 87
+ revisionCount 78
+ dailyPageViews 39
+ appeared 1992
+
+status historical
+country US
+fileType text
+
+hopl 1799

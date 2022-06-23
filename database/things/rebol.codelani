@@ -1,5 +1,72 @@
+title Relative Expression-Based Object Language
 appeared 1997
 type pl
 creators Carl Sassenrath
+
+patterns
+ hasCentralPackageRepository? false
+ hasComments? true
+
+wikipedia https://en.wikipedia.org/wiki/REBOL
+ example
+  Digit: charset [#"0" - #"9"]
+  Value: [some Digit | "(" Expr ")"]
+  Product: [Value any [["*"| "/"] Value]]
+  Sum: [Product any [["+"| "-"] Product]]
+  Expr: Sum
+  parse/all "12+13" Expr
+ related self forth lisp logo json red javascript c algol s-expressions peg
+ summary Rebol ( REB-əl; historically REBOL) is a cross-platform data exchange language and a multi-paradigm dynamic programming language designed by Carl Sassenrath for network communications and distributed computing. It introduces the concept of dialecting: small, optimized, domain-specific languages for code and data, which is also the most notable property of the language according to its designer Carl Sassenrath:  Although it can be used for programming, writing functions, and performing processes, its greatest strength is the ability to easily create domain-specific languages or dialects  Douglas Crockford, known for his involvement in the development of JavaScript, has described Rebol as "a more modern language, but with some very similar ideas to Lisp, in that it's all built upon a representation of data which is then executable as programs" and as one of JSON's influences. Originally, the language and its official implementation were proprietary and closed source, developed by REBOL Technologies. Following discussion with Lawrence Rosen, the Rebol version 3 interpreter was released under the Apache 2.0 license on December 12, 2012. Older versions are only available in binary form, and no source release for them is planned. Rebol has been used to program Internet applications (both client- and server-side), database applications, utilities, and multimedia applications.
+ pageId 26384
+ dailyPageViews 21
+ created 2013
+ backlinksCount 77
+ revisionCount 1
+ appeared 1997
+ fileExtensions r reb
+
+githubLanguage Rebol
+ fileExtensions reb r r2 r3 rebol
+ trendingProjectsCount 0
+
+helloWorldCollection Relative Expression-Based Object Language
+ ; Hello World in REBOL
+ 
+ print "Hello World!"
+
+linguistGrammarRepo https://github.com/Oldes/Sublime-REBOL
+ firstCommit 2014
+ lastCommit 2015
+ committerCount 1
+ commitCount 7
+ sampleCount 6
+ example
+  Rebol []
+  hello: func [] [
+      print "hello, world!"
+  ]
+  hello
+  
+
 website http://www.rebol.com
-wikipedia REBOL
+standsFor Relative Expression-Based Object Language
+status active
+
+tryItOnline rebol
+
+fileExtensions r reb
+fileType text
+isOpenSource true
+
+tiobe REBOL
+
+projectEuler REBOL
+ memberCount
+  2019 14
+  2022 15
+
+hopl 2438
+
+rosettaCode REBOL
+
+corporateDevelopers REBOL Technologies

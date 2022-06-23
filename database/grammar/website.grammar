@@ -1,0 +1,9 @@
+websiteNode
+ description URL of the official homepage for the language project.
+ extends abstractUrlNode
+ crux website
+ single
+webReplNode
+ extends abstractUrlNode
+ description An online repl for the project.
+ crux webRepl

@@ -1,3 +1,23 @@
+title Q equational programming language
 appeared 1991
 type pl
-wikipedia Q_(equational_programming_language)
+
+patterns
+ hasCentralPackageRepository? false
+
+wikipedia https://en.wikipedia.org/wiki/Q_(equational_programming_language)
+ example
+  extern int puts(char*);
+   hello = puts "Hello, world!";
+   hello;
+ related freebsd linux haskell lisp alice matlab llvmir c miranda puredata octave opengl faust supercollider
+ summary Pure, successor to the equational language Q, is a dynamically typed, functional programming language based on term rewriting. It has facilities for user-defined operator syntax, macros, arbitrary-precision arithmetic (multiple-precision numbers), and compiling to native code through the LLVM. Pure is free and open-source software distributed (mostly) under the GNU Lesser General Public License version 3 or later. Pure comes with an interpreter and debugger, provides automatic memory management, has powerful functional and symbolic programming abilities, and interfaces to libraries in C (e.g., for numerics, low-level protocols, and other such tasks). At the same time, Pure is a small language designed from scratch; its interpreter is not large, and the library modules are written in Pure. The syntax of Pure resembles that of Miranda and Haskell, but it is a free-format language and thus uses explicit delimiters (rather than off-side rule indents) to denote program structure. The Pure language is a successor of the equational programming language Q, previously created by the same author, Albert Gräf at the University of Mainz, Germany. Relative to Q, it offers some important new features (such as local functions with lexical scoping, efficient vector and matrix support, and the built-in C interface) and programs run much faster as they are compiled just-in-time to native code on the fly. Pure is mostly aimed at mathematical applications and scientific computing currently, but its interactive interpreter environment, the C interface and the growing set of addon modules make it suitable for a variety of other applications, such as artificial intelligence, symbolic computation, and real-time multimedia processing. Pure plug-ins are available for the Gnumeric spreadsheet and Miller Puckette's Pure Data graphical multimedia software, which make it possible to extend these programs with functions written in the Pure language. Interfaces are also provided as library modules to GNU Octave, OpenCV, OpenGL, the GNU Scientific Library, FAUST, SuperCollider, and liblo (for Open Sound Control (OSC)).
+ created 2003
+ backlinksCount 34
+ pageId 20446791
+ revisionCount 77
+ dailyPageViews 8
+ appeared 2008
+
+status historical
+isOpenSource true

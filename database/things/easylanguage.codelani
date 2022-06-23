@@ -1,3 +1,18 @@
+title EasyLanguage
 appeared 1995
 type pl
-wikipedia EasyLanguage
+
+patterns
+ hasCentralPackageRepository? false
+
+wikipedia https://en.wikipedia.org/wiki/EasyLanguage
+ related pascal
+ summary EasyLanguage is a proprietary programming language that was developed by TradeStation and built into its electronic trading platform. It is used to create custom indicators for financial charts and also to create algorithmic trading strategies for the markets. External DLL's can be referenced using EasyLanguage which greatly extends its functionality.  The language was intended to allow creation of custom trading strategies by traders without specialized computer training. Commands consist mostly of regular English words, which makes EasyLanguage easier to learn than more complex programming languages.Example:  Plain English: "If the close is greater than the high of 1 day ago, then buy 100 shares at market." EasyLanguage: "if the Close > the High of 1 day ago then Buy 100 shares next bar at market;"
+ backlinksCount 8
+ pageId 8648665
+ created 2006
+ revisionCount 38
+ dailyPageViews 18
+ appeared 2009
+
+status historical

@@ -1,2 +1,6 @@
+title Import Pattern
 type pattern
+psuedoExample import package
 description Many (most?) languages allow you to split code into different files and import the code from one file into a different file.
+status active
+patternKeyword hasImports?

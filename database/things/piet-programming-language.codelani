@@ -1,3 +1,26 @@
+title Piet
 appeared 1990
 type pl
-wikipedia Piet_%28programming_language%29
+
+patterns
+ hasCentralPackageRepository? false
+
+wikipedia https://en.wikipedia.org/wiki/Piet_%28programming_language%29
+ example
+  ~ATH(THIS) {
+  
+      // ADDITIONAL GRAVES...
+  
+  } EXECUTE(NULL);
+  
+  THIS.DIE();
+ related intercal fortran cobol assembly-language unix brainfuck befunge fractran grass lolcode malbolge unlambda whitespace
+ summary An esoteric programming language (sometimes shortened to esolang) is a programming language designed to test the boundaries of computer programming language design, as a proof of concept, as software art, as a hacking interface to another language (particularly functional programming or procedural programming languages), or as a joke.  The use of esoteric distinguishes these languages from programming languages that working developers use to write software. Usually, an esolang's creators do not intend the language to be used for mainstream programming, although some esoteric features, such as visuospatial syntax,  have inspired practical applications in the arts.  Such languages are often popular among hackers and hobbyists. Usability is rarely a goal for esoteric programming language designers—often it is quite the opposite.  Their usual aim is to remove or replace conventional language features while still maintaining a language that is Turing-complete, or even one for which the computational class is unknown.
+ created 2004
+ backlinksCount 283
+ pageId 53398
+ revisionCount 87
+ dailyPageViews 21
+ appeared 1972
+
+status historical

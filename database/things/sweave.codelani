@@ -1,6 +1,7 @@
+title Sweave
 appeared 2002
 type template
-wikipedia Sweave
+
 example
  %-------------------------------------------
  \section{Introduction}
@@ -16,3 +17,20 @@ example
  @
  
  We can call R commands from the text. For example a+b= \Sexpr{a+b}
+
+patterns
+ hasCentralPackageRepository? false
+
+wikipedia https://en.wikipedia.org/wiki/Sweave
+ related r latex lyx-editor knitr
+ summary Sweave is a function in the statistical programming language R that enables integration of R code into LaTeX or LyX documents. The purpose is "to create dynamic reports, which can be updated automatically if data or analysis change".The data analysis is performed at the moment of writing the report, or more exactly, at the moment of compiling the Sweave code with Sweave (i.e., essentially with R) and subsequently with LaTeX. This can facilitate the creation of up-to-date reports for the author. Because the Sweave files together with any external R files that might be sourced from them and the data files contain all the information necessary to trace back all steps of the data analyses, Sweave also has the potential to make research more transparent and reproducible to others. However, this is only the case to the extent that the author makes the data and the R and Sweave code available. If the author only publishes the resulting PDF document or printed versions thereof, a report created using Sweave is no more transparent or reproducible than the same report created with other statistical and text preparation software.
+ backlinksCount 24
+ pageId 16749071
+ created 2008
+ revisionCount 49
+ dailyPageViews 26
+ appeared 2002
+
+status historical
+fileExtensions rnw
+compilesTo latex

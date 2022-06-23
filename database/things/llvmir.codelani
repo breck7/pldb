@@ -1,4 +1,48 @@
+title LLVM IR
 appeared 2003
 type ir
+
+patterns
+ hasCentralPackageRepository? false
+
+wikipedia https://en.wikipedia.org/wiki/LLVM
+ example
+  @.str = internal constant [14 x i8] c"hello, world\0A\00"
+  
+  declare i32 @printf(i8*, ...)
+  
+  define i32 @main(i32 %argc, i8** %argv) nounwind {
+  entry:
+      %tmp1 = getelementptr [14 x i8], [14 x i8]* @.str, i32 0, i32 0
+      %tmp2 = call i32 (i8*, ...) @printf( i8* %tmp1 ) nounwind
+      ret i32 0
+  }
+ related c actionscript ada csharp common-lisp crystal d delphi fortran glsl haskell java-bytecode julia lua objective-c python r ruby rust cuda scala swift xojo ios assembly-language java opengl cil standard-ml arm hexagon mips ptx powerpc sparc x86-isa elf c-- pure opencl isbn
+ summary The LLVM compiler infrastructure project is a "collection of modular and reusable compiler and toolchain technologies" used to develop compiler front ends and back ends. LLVM is written in C++ and is designed for compile-time, link-time, run-time, and "idle-time" optimization of programs written in arbitrary programming languages. Originally implemented for C and C++, the language-agnostic design of LLVM has since spawned a wide variety of front ends: languages with compilers that use LLVM include ActionScript, Ada, C#, Common Lisp, Crystal, D, Delphi, Fortran, OpenGL Shading Language, Halide, Haskell, Java bytecode, Julia, Lua, Objective-C, Pony, Python, R, Ruby, Rust, CUDA, Scala, Swift, and Xojo. The LLVM project started in 2000 at the University of Illinois at Urbana–Champaign, under the direction of Vikram Adve and Chris Lattner. LLVM was originally developed as a research infrastructure to investigate dynamic compilation techniques for static and dynamic programming languages. LLVM was released under the University of Illinois/NCSA Open Source License, a permissive free software licence. In 2005, Apple Inc. hired Lattner and formed a team to work on the LLVM system for various uses within Apple's development systems. LLVM is an integral part of Apple's latest development tools for macOS and iOS. Since 2013, Sony has been using LLVM's primary front end Clang compiler in the software development kit (SDK) of its PS4 console. The name LLVM was originally an initialism for Low Level Virtual Machine. This initialism has offically been removed to avoid confusion, as the LLVM has evolved into an umbrella project that has little relationship to what most current developers think of as virtual machines. Now, LLVM is a brand that applies to the LLVM umbrella project, the LLVM intermediate representation (IR), the LLVM debugger, the LLVM C++ Standard Library (with full support of C++11 and C++14), etc. LLVM is administered by the LLVM Foundation. Its president is compiler engineer Tanya Lattner. The Association for Computing Machinery presented Adve, Lattner, and Evan Cheng with the 2012 ACM Software System Award for LLVM.
+ pageId 654611
+ dailyPageViews 693
+ created 2004
+ backlinksCount 252
+ revisionCount 692
+ appeared 2000
+
+githubLanguage LLVM
+ fileExtensions ll
+ trendingProjects
+  author name avatar url language languageColor stars forks currentPeriodStars description
+  llvm-mirror llvm https://github.com/llvm-mirror.png https://github.com/llvm-mirror/llvm LLVM #185619 4073 1911 87 "Mirror of official llvm git repository located at http://llvm.org/git/llvm. Updated every five minutes."
+ trendingProjectsCount 2
+
 website http://llvm.org/docs/LangRef.html
-wikipedia LLVM
+status active
+
+tryItOnline llvm
+
+fileType text
+isOpenSource true
+linkedInSkill llvm
+ peopleWithThisSkillCount 2326
+
+quineRelay LLVM asm
+
+ubuntuPackage llvm

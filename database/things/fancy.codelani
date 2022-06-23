@@ -1,5 +1,37 @@
+title Fancy
 appeared 2010
 type pl
+
+patterns
+ hasCentralPackageRepository? false
+ hasComments? true
+
+wikipedia https://en.wikipedia.org/wiki/Fancy_(programming_language)
+
+githubLanguage Fancy
+ fileExtensions fy fancypack
+ trendingProjectsCount 0
+
+githubRepo https://github.com/bakkdoor/fancy
+ firstCommit 2010
+ stars 252
+ forks 19
+ subscribers 16
+ created 2010
+ updated 2018
+ description Fancy is a dynamic, object-oriented programming language inspired by Smalltalk, Ruby, Io and Erlang that runs on the Rubinius VM.
+ issues 5
+
+linguistGrammarRepo https://github.com/fancy-lang/fancy-tmbundle
+ firstCommit 2010
+ lastCommit 2017
+ committerCount 6
+ commitCount 37
+
 website http://www.fancy-lang.org/
-github https://github.com/bakkdoor/fancy
-wikipedia Fancy_(programming_language)
+status active
+fileType text
+wordRank 6823
+isOpenSource true
+
+rosettaCode Fancy

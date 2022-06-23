@@ -1,3 +1,44 @@
+title SQLPL
 appeared 2009
 type pl
-wikipedia SQL_PL
+
+patterns
+ hasCentralPackageRepository? false
+
+wikipedia https://en.wikipedia.org/wiki/SQL_PL
+ related sql sql-psm pl-sql
+ summary SQL PL stands for Structured Query Language Procedural Language and was developed by IBM as a set of commands that extend the use of SQL in the IBM DB2 (DB2 UDB Version 7) database system. It provides procedural programmability in addition to the querying commands of SQL. It is a subset of the SQL Persistent Stored Modules (SQL/PSM) language standard. As of DB2 version 9, SQL PL stored procedures can run natively inside the DB2 process (inside the DBM1 address space, more precisely) instead of being fenced in an external process. In DB2 version 9.7 IBM also added a PL/SQL front-end to this infrastructure (called "SQL Unified Runtime Engine"), meaning that procedural SQL using either the ISO standard or Oracle's syntax compile to bytecode running on the same engine in DB2.
+ backlinksCount 13
+ pageId 11665982
+ created 2007
+ revisionCount 29
+ dailyPageViews 30
+ appeared 2009
+
+githubLanguage SQLPL
+ fileExtensions sql db2
+ trendingProjects
+  author name avatar url language languageColor stars forks currentPeriodStars description
+  microsoft sql-server-samples https://github.com/microsoft.png https://github.com/microsoft/sql-server-samples SQLPL #ccc 3773 3553 131 "Official Microsoft GitHub Repository containing code samples for SQL Server"
+ trendingProjectsCount 2
+
+linguistGrammarRepo https://github.com/textmate/sql.tmbundle
+ firstCommit 2005
+ lastCommit 2016
+ committerCount 15
+ commitCount 224
+ sampleCount 6
+ example
+  create procedure sleep (in sleeptime integer)
+  begin
+    declare wait_until timestamp;
+  
+    set wait_until = (current timestamp + sleeptime seconds);
+    while (wait_until > current timestamp)
+      do
+      end while;
+  end!
+  
+
+status active
+fileType text

@@ -1,0 +1,10 @@
+projectEulerNode
+ extends abstractMultiwordGuidNode
+ description Is this language one of the ones listed on https://projecteuler.net/?
+ crux projectEuler
+ inScope projectEulerMemberCountNode
+ string sourceDomain projecteuler.net
+projectEulerMemberCountNode
+ crux memberCount
+ description How many project euler members use this language.
+ extends abstractAnnualPopulationCountNode

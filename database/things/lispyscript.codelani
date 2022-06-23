@@ -1,7 +1,7 @@
+title lispyscript
 appeared 2012
 type pl
-website http://lispyscript.com
-github https://github.com/santoshrajan/lispyscript
+
 example
  ;; test with and without the "./"
  ;;(var k (require "square.ls"))
@@ -13,5 +13,18 @@ example
  (var k (require "square"))
  ;;(var k (require "./square"))
  (console.log (k 10))
-reference http://web.archive.org/web/20180123072250/http://lispyscript.com/
+
 description A javascript With Lispy Syntax And Macros!
+
+githubRepo https://github.com/santoshrajan/lispyscript
+ firstCommit 2012
+ stars 560
+ forks 66
+ subscribers 38
+ created 2012
+ updated 2019
+ description A javascript with Lispy syntax and macros
+ issues 18
+
+website http://lispyscript.com
+reference http://web.archive.org/web/20180123072250/http://lispyscript.com/

@@ -1,5 +1,205 @@
+title Go
 appeared 2009
 type pl
 creators Rob Pike and Ken Thompson and Robert Griesemer
+
+patterns
+ hasPointers? true
+  package main
+  
+  import "fmt"
+  
+  func main() {
+    i, j := 42, 2701
+  
+    p := &i         // point to i
+    fmt.Println(*p) // read i through the pointer
+    *p = 21         // set i through the pointer
+    fmt.Println(i)  // see the new value of i
+  
+    p = &j         // point to j
+    *p = *p / 37   // divide j through the pointer
+    fmt.Println(j) // see the new value of j
+  }
+  
+ hasCentralPackageRepository? false
+ hasComments? true
+  // This is a comment
+ hasImports? true
+  import (
+     "fmt"
+     "math"
+  )
+  import . "fmt"
+  import _ "io"
+  import log "github.com/foo/bar"
+  import m "math"
+ hasOperatorOverloading? false
+ hasSemanticIndentation? false
+ hasTypeInference? true
+ hasVariadicFunctions? true
+  // This variadic function takes an arbitrary number of ints as arguments.
+  func sum(nums ...int) {
+    fmt.Print("The sum of ", nums) // Also a variadic function.
+    total := 0
+    for _, num := range nums {
+      total += num
+    }
+    fmt.Println(" is", total) // Also a variadic function.
+  }
+ hasIncrementAndDecrementOperators? true
+
+wikipedia https://en.wikipedia.org/wiki/Go_(programming_language)
+ example
+  package main
+  
+  import (
+      "fmt"
+      "time"
+  )
+  
+  func readword(ch chan string) {
+      fmt.Println("Type a word, then hit Enter.")
+      var word string
+      fmt.Scanf("%s", &word)
+      ch <- word
+  }
+  
+  func timeout(t chan bool) {
+      time.Sleep(5 * time.Second)
+      t <- true
+  }
+  
+  func main() {
+      t := make(chan bool)
+      go timeout(t)
+  
+      ch := make(chan string)
+      go readword(ch)
+  
+      select {
+      case word := <-ch:
+          fmt.Println("Received", word)
+      case <-t:
+          fmt.Println("Timeout.")
+      }
+  }
+ related assembly-language linux freebsd solaris alef apl bcpl c csp limbo modula newsqueak oberon occam pascal python smalltalk crystal algol unix java utf-8 csharp rust erlang chapel cilk mongodb standard-ml cobol fortran scala dart
+ summary Go (often referred to as golang) is a programming language created at Google in 2009 by Robert Griesemer, Rob Pike, and Ken Thompson. It is a compiled, statically typed language in the tradition of Algol and C, with garbage collection, limited structural typing, memory safety features and CSP-style concurrent programming features added. The compiler and other language tools originally developed by Google are all free and open source.
+ pageId 25039021
+ dailyPageViews 2602
+ created 2009
+ backlinksCount 1153
+ revisionCount 1802
+ appeared 2009
+ fileExtensions go
+
+githubLanguage Go
+ fileExtensions go
+ trendingProjects
+  author name avatar url language languageColor stars forks currentPeriodStars description
+  vmware octant https://github.com/vmware.png https://github.com/vmware/octant Go #00ADD8 2406 121 2308 "A web-based, highly extensible platform for developers to better understand the complexity of Kubernetes clusters."
+  quii learn-go-with-tests https://github.com/quii.png https://github.com/quii/learn-go-with-tests Go #00ADD8 7624 769 3121 "Learn Go with test-driven development"
+  cnlh nps https://github.com/cnlh.png https://github.com/cnlh/nps Go #00ADD8 7403 1139 2253 一款轻量级、功能强大的内网穿透代理服务器。支持tcp、udp流量转发，支持内网http代理、内网socks5代理，同时支持snappy压缩、站点保护、加密传输、多路复用、header修改等。支持web图形化管理，集成多用户模式。
+  iawia002 annie https://github.com/iawia002.png https://github.com/iawia002/annie Go #00ADD8 7577 733 681 "👾 Fast, simple and clean video downloader"
+  sqshq sampler https://github.com/sqshq.png https://github.com/sqshq/sampler Go #00ADD8 6099 267 3394 "A tool for shell commands execution, visualization and alerting. Configured with a simple YAML file."
+  fatedier frp https://github.com/fatedier.png https://github.com/fatedier/frp Go #00ADD8 27370 4960 1262 "A fast reverse proxy to help you expose a local server behind a NAT or firewall to the internet."
+  prometheus prometheus https://github.com/prometheus.png https://github.com/prometheus/prometheus Go #00ADD8 26226 3783 739 "The Prometheus monitoring system and time series database."
+  unknwon the-way-to-go_ZH_CN https://github.com/unknwon.png https://github.com/unknwon/the-way-to-go_ZH_CN Go #00ADD8 17200 4782 746 "《The Way to Go》中文译本，中文正式名《Go 入门指南》"
+  grafana loki https://github.com/grafana.png https://github.com/grafana/loki Go #00ADD8 7087 469 299 "Like Prometheus, but for logs."
+  wtfutil wtf https://github.com/wtfutil.png https://github.com/wtfutil/wtf Go #00ADD8 10146 521 1603 "The personal information dashboard for your terminal."
+  crawlab-team crawlab https://github.com/crawlab-team.png https://github.com/crawlab-team/crawlab Go #00ADD8 2390 346 1549 "Distributed web crawler admin platform for spiders management regardless of languages and frameworks."
+  kubernetes minikube https://github.com/kubernetes.png https://github.com/kubernetes/minikube Go #00ADD8 15590 2460 446 "Run Kubernetes locally"
+  golang go https://github.com/golang.png https://github.com/golang/go Go #00ADD8 63142 8820 1596 "The Go programming language"
+  kubernetes kubernetes https://github.com/kubernetes.png https://github.com/kubernetes/kubernetes Go #00ADD8 57528 20099 1425 "Production-Grade Container Scheduling and Management"
+  Dreamacro clash https://github.com/Dreamacro.png https://github.com/Dreamacro/clash Go #00ADD8 3405 467 279 "A rule-based tunnel in Go."
+  developer-learning reading-go https://github.com/developer-learning.png https://github.com/developer-learning/reading-go Go #00ADD8 4682 446 274 "Go 夜读 > Share the related technical topics of Go every week through zoom online live broadcast, every day on the WeChat/Slack to communicate programming technology topics. 每周通过 zoom 在线直播的方式分享 Go 相关的技术话题，每天大家在微信/Slack 上及时沟通交流编程技术话题。"
+  istio istio https://github.com/istio.png https://github.com/istio/istio Go #00ADD8 19423 3336 565 "Connect, secure, control, and observe services."
+  pulumi pulumi https://github.com/pulumi.png https://github.com/pulumi/pulumi Go #00ADD8 3364 164 217 "Modern Infrastructure as Code - Create, deploy, and manage infrastructure on any cloud using your favorite language."
+  nsqio nsq https://github.com/nsqio.png https://github.com/nsqio/nsq Go #00ADD8 16146 2111 294 "A realtime distributed messaging platform"
+  FiloSottile mkcert https://github.com/FiloSottile.png https://github.com/FiloSottile/mkcert Go #00ADD8 20261 740 503 "A simple zero-config tool to make locally trusted development certificates with any names you'd like."
+  urfave cli https://github.com/urfave.png https://github.com/urfave/cli Go #00ADD8 11779 946 437 "A simple, fast, and fun package for building command line apps in Go"
+  drone drone https://github.com/drone.png https://github.com/drone/drone Go #00ADD8 19329 1908 347 "Drone is a Container-Native, Continuous Delivery Platform"
+  goproxy goproxy.cn https://github.com/goproxy.png https://github.com/goproxy/goproxy.cn Go #00ADD8 1062 54 477 "The most trusted Go module proxy in China."
+  cortexproject cortex https://github.com/cortexproject.png https://github.com/cortexproject/cortex Go #00ADD8 1834 220 224 "A multitenant, horizontally scalable Prometheus as a Service"
+  aquasecurity trivy https://github.com/aquasecurity.png https://github.com/aquasecurity/trivy Go #00ADD8 2130 148 443 "A Simple and Comprehensive Vulnerability Scanner for Containers, Suitable for CI"
+ trendingProjectsCount 26
+
+helloWorldCollection Go
+ // Hello world in Go
+ 
+ package main
+ import "fmt"
+ func main() {
+  fmt.Printf("Hello World\n")
+ }
+
+linguistGrammarRepo https://github.com/AlanQuatermain/go-tmbundle
+ firstCommit 2009
+ lastCommit 2013
+ committerCount 21
+ commitCount 194
+ sampleCount 3
+ example
+  // Autogenerated by Thrift Compiler (1.0.0-dev)
+  // DO NOT EDIT UNLESS YOU ARE SURE THAT YOU KNOW WHAT YOU ARE DOING
+  
+  package linguist
+  
+  import (
+  	"bytes"
+  	"fmt"
+  	"git.apache.org/thrift.git/lib/go/thrift"
+  )
+  
+  // (needed to ensure safety because of naive import list construction.)
+  var _ = thrift.ZERO
+  var _ = fmt.Printf
+  var _ = bytes.Equal
+  
+  func init() {
+  }
+  
+
 website https://golang.org
-wikipedia Go_(programming_language)
+aka golang
+status active
+
+replit go
+
+tryItOnline go
+
+fileExtensions go
+fileType text
+wordRank 123
+isOpenSource true
+
+tiobe Go
+ currentRank 14
+
+meetup golang
+ memberCount 147668
+ groupCount 315
+
+webRepl https://play.golang.org/
+linkedInSkill go
+ peopleWithThisSkillCount 511898
+
+projectEuler Go
+ memberCount
+  2019 1313
+  2022 1768
+
+quineRelay Go
+
+ubuntuPackage golang
+
+codeMirror go
+
+rosettaCode Go
+
+antlr https://github.com/antlr/grammars-v4/tree/master/golang
+
+corporateDevelopers Google
+indeedJobs go engineer
+ 2017 1284

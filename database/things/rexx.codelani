@@ -1,4 +1,115 @@
+title REXX
 appeared 1979
 type pl
 creators Mike Cowlishaw
-wikipedia REXX
+
+patterns
+ hasCentralPackageRepository? false
+ hasComments? true
+
+wikipedia https://en.wikipedia.org/wiki/REXX
+ example
+  ChangeCodePage: procedure /* protect SIGNAL settings */
+   signal on syntax name ChangeCodePage.Trap
+   return SysQueryProcessCodePage()
+   ChangeCodePage.Trap: return 1004 /* windows-1252 on OS/2 */
+ related arexx netrexx object-rexx pl-i algol cms-exec exec-2 perl assembly-language tcl python java linux unix solaris visual-basic jscript
+ summary Rexx (Restructured Extended Executor) is an interpreted programming language developed at IBM by Mike Cowlishaw. It is a structured, high-level programming language designed for ease of learning and reading. Proprietary and open source REXX interpreters exist for a wide range of computing platforms; compilers exist for IBM mainframe computers. Rexx is used as a scripting and macro language, and is often used for processing data and text and generating reports; these similarities with Perl mean that Rexx works well in Common Gateway Interface (CGI) programming and it is indeed used for this purpose. Rexx is the primary scripting language in some operating systems, e.g. OS/2, MVS, VM, AmigaOS, and is also used as an internal macro language in some other software, such as KEDIT, THE and the ZOC terminal emulator. Additionally, the Rexx language can be used for scripting and macros in any program that uses Windows Scripting Host ActiveX scripting engines languages (e.g. VBScript and JScript) if one of the Rexx engines is installed. Rexx is supplied with VM/SP on up, TSO/E Version 2 on up, OS/2 (1.3 and later, where it is officially named Procedures Language/2), AmigaOS Version 2 on up, PC DOS (7.0 or 2000), and Windows NT 4.0 (Resource Kit: Regina). REXX scripts for OS/2 share the filename extension .cmd with other scripting languages, and the first line of the script specifies the interpreter to be used. REXX macros for REXX-aware applications use extensions determined by the application. In the late 1980s Rexx became the common scripting language for IBM Systems Application Architecture, where it was renamed "SAA Procedure Language REXX." A Rexx script or command is sometimes referred to as an EXEC in a nod to Rexx's role as a replacement for the older EXEC command language on CP/CMS and VM/370 and EXEC 2 command language on VM/SP.
+ pageId 25572284
+ dailyPageViews 43
+ created 2012
+ backlinksCount 91
+ revisionCount 3
+ appeared 1979
+ fileExtensions cmd exec rexx rex
+
+githubLanguage REXX
+ fileExtensions rexx pprx rex
+ trendingProjectsCount 0
+
+linguistGrammarRepo https://github.com/mblocker/rexx-sublime
+ firstCommit 2014
+ lastCommit 2017
+ committerCount 2
+ commitCount 13
+ sampleCount 4
+ example
+  /* rexx */
+  PARSE ARG filnamn
+  IF filnamn='' THEN DO
+     filnamn='raw'
+     filnamn='font.shapes'
+     end
+  IF ~open(fil,filnamn,r) THEN EXIT 10
+  pixwidth=48
+  ebwidth=pixwidth/8
+  pixheight=48
+  depth=4
+  SAY "Skriver utfil..."
+  CALL open utfil,"RAM:utfil",W
+  CALL skriv pixwidth,2
+  CALL skriv pixheight,2
+  CALL skriv depth,2
+  CALL skriv ebwidth,2
+  bltsize=Right(C2B(D2C(pixheight)),10,"00")
+  bltsize=bltsize || Right(C2B(D2C(ebwidth)),6,"00")
+  /* SAY bltsize */
+  CALL skriv C2D(B2C(bltsize)),2
+  CALL skriv 0,4 /* xhandle, yhandle*/
+  CALL skriv 0,4 /* datapekare */
+  CALL skriv 0,4 /* cookiepekare */
+  CALL skriv ebwidth*pixheight,2 /* onebpmem */
+  CALL skriv ebwidth*pixheight+pixheight*2,2 /* onebpmemx */
+  CALL skriv ebwidth*pixheight*depth,2 /* allbpmem */
+  CALL skriv ebwidth*pixheight*depth+pixheight*2*depth,2 /* allbpmemx */
+  CALL skriv 0,2 /* padding */
+  CALL Close utfil
+  EXIT
+  
+  skriv:
+  say "Skriver $"D2X(arg(1)) "("arg(2) "byte)"
+  call writech utfil,right(D2C(ARG(1)),ARG(2),"00"x)
+  return
+  
+  visacookie:
+     rad=copies('00'x,pixheight*ebwidth)
+     say "Initierar bitmap till" pixheight*ebwidth*depth
+     say "Ett bitplan =" pixheight*ebwidth
+     bmap.=''
+     say "laser in"
+     do bitplan=1 to depth
+        say "laser plan" bitplan
+        rad=bitor(rad,readch(fil,pixheight*ebwidth))
+        end
+     ln=1
+     say "skriver ut"
+     do for pixheight
+        say c2b(substr(rad,ln,bredd/8))
+        ln=ln+bredd/8
+        end
+  return
+
+status active
+
+tryItOnline rexx
+
+country GB
+fileExtensions cmd exec rexx rex
+fileType text
+
+tiobe REXX
+
+projectEuler Rexx
+ memberCount
+  2019 11
+  2022 11
+
+hopl 868
+
+quineRelay REXX
+
+ubuntuPackage regina-rexx
+
+rosettaCode REXX
+
+corporateDevelopers IBM

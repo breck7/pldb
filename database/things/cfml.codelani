@@ -1,4 +1,40 @@
+title Cold Fusion Markup Language
 appeared 1995
 type pl
+
+patterns
+ hasCentralPackageRepository? false
+ hasConstructors? true
+  component {
+     // properties
+     property name="cheeseName";
+   
+     // constructor
+     function Cheese init( required string cheeseName ) {
+        variables.cheeseName = arguments.cheeseName;
+        return this;
+     }
+  }
+
+wikipedia https://en.wikipedia.org/wiki/ColdFusion_Markup_Language
+ example
+  <cfset person = CreateObject("component", "Person") />
+ related coldfusion java cfscript javascript xml java-server-pages soap
+ summary ColdFusion Markup Language, more commonly known as CFML, is a scripting language for web development that runs on the JVM, the .NET framework, and Google App Engine. Multiple commercial and open source implementations of CFML engines are available, including Adobe ColdFusion, Lucee, New Atlanta BlueDragon (who makes both a Java-based and a .NET-based version), Railo, and Open BlueDragon as well as other CFML server engines.
+ pageId 962933
+ dailyPageViews 105
+ created 2004
+ backlinksCount 75
+ revisionCount 257
+ appeared 1995
+ fileExtensions cfm cfc
+
 website http://www.adobe.com/products/coldfusion
-wikipedia ColdFusion_Markup_Language
+standsFor Cold Fusion Markup Language
+status active
+country US
+fileType text
+
+tiobe CFML
+
+hopl 5234

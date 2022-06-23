@@ -1,6 +1,7 @@
+title TriG syntax
 appeared 2007
 type metaLanguage
-wikipedia TriG_(syntax)
+
 example
  @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
   @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
@@ -26,3 +27,12 @@ example
         _:w2 swp:authority :Chris .
         :Chris rdf:type ex:Person .
         :Chris ex:email <mailto:chris@bizer.de> }
+
+wikipedia https://en.wikipedia.org/wiki/TriG_(syntax)
+ summary TriG is a serialization format for RDF (Resource Description Framework) graphs. It is a plain text format for serializing named graphs and RDF Datasets which offers a compact and readable alternative to the XML-based TriX syntax.
+ backlinksCount 132
+ pageId 27937297
+ dailyPageViews 53
+ appeared 2007
+
+related rdf turtle

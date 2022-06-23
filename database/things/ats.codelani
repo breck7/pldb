@@ -1,4 +1,90 @@
+title Applied Type System
 appeared 2013
 type pl
+
+patterns
+ hasCentralPackageRepository? false
+
+wikipedia https://en.wikipedia.org/wiki/ATS_(programming_language)
+ example
+  #define BUFLEN 10
+  var !p_buf with pf_buf = @[byte][BUFLEN](0)    // pf_buf = @[byte][BUFLEN](0) @ p_buf[14]
+ related dependent-ml ml ocaml c
+ summary ATS (Applied Type System) is a programming language designed to unify programming with formal specification. ATS has support for combining theorem proving with practical programming through the use of advanced type systems. A past version of The Computer Language Benchmarks Game has demonstrated that the performance of ATS is comparable to that of the C and C++ programming languages. By using theorem proving and strict type checking, the compiler can detect and prove that its implemented functions are not susceptible to bugs such as division by zero, memory leaks, buffer overflow, and other forms of memory corruption by verifying pointer arithmetic and reference counting before the program compiles. Additionally, by using the integrated theorem-proving system of ATS (ATS/LF), the programmer may make use of static constructs that are intertwined with the operative code to prove that a function attains its specification.
+ pageId 19905196
+ dailyPageViews 71
+ created 2008
+ backlinksCount 20
+ revisionCount 295
+ appeared 2013
+
+githubLanguage ATS
+ fileExtensions dats hats sats
+ trendingProjectsCount 0
+
+helloWorldCollection Applied Type System
+ // Hello world in ATS
+ 
+ implement main () = begin
+   print ("Hello, world!"); print_newline ()
+ end
+
+linguistGrammarRepo https://github.com/steinwaywhw/ats-mode-sublimetext
+ firstCommit 2013
+ lastCommit 2016
+ committerCount 7
+ commitCount 46
+ sampleCount 9
+ example
+  (* ****** ****** *)
+  //
+  // HX-2013-11
+  //
+  // Implementing a variant of
+  // the problem of Dining Philosophers
+  //
+  (* ****** ****** *)
+  //
+  #include "share/atspre_define.hats"
+  #include "share/atspre_staload.hats"
+  //
+  (* ****** ****** *)
+  
+  staload "{$LIBATSHWXI}/teaching/mythread/SATS/mythread.sats"
+  
+  (* ****** ****** *)
+  
+  local
+  //
+  #include "{$LIBATSHWXI}/teaching/mythread/DATS/mythread.dats"
+  //
+  in (* in of [local] *)
+  //
+  // HX: it is intentionally left to be empty
+  //
+  end // end of [local]
+  
+  (* ****** ****** *)
+  
+  local
+  //
+  #include "{$LIBATSHWXI}/teaching/mythread/DATS/mythread_posix.dats"
+  //
+  in (* in of [local] *)
+  //
+  // HX: it is intentionally left to be empty
+  //
+  end // end of [local]
+  
+  (* ****** ****** *)
+  
+  (* end of [DiningPhil2_thread.dats] *)
+  
+
 website http://www.ats-lang.org/
-wikipedia ATS_(programming_language)
+standsFor Applied Type System
+status active
+fileType text
+isOpenSource true
+
+rosettaCode ATS

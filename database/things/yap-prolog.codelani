@@ -1,3 +1,18 @@
+title YAP
 appeared 1985
 type pl
-wikipedia YAP_%28Prolog%29
+
+patterns
+ hasCentralPackageRepository? false
+
+wikipedia https://en.wikipedia.org/wiki/YAP_%28Prolog%29
+ related linux solaris prolog
+ summary YAP is an open-source, high-performance implementation of the Prolog  programming language developed at LIACC/Universidade do Porto and at COPPE Sistemas/UFRJ. Its Prolog engine is based in the WAM (Warren Abstract Machine), with several optimizations for better performance. YAP follows the Edinburgh tradition, and is largely compatible with the ISO-Prolog standard and with Quintus Prolog and SICStus Prolog. YAP has been developed since 1985. The original version was written in assembly, C and Prolog, and achieved high performance on m68k-based machines.
+ created 2007
+ backlinksCount 10
+ pageId 11517931
+ revisionCount 33
+ dailyPageViews 8
+ appeared 2013
+
+status historical

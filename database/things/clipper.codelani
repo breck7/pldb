@@ -1,4 +1,39 @@
+title Clipper
 appeared 1985
 type pl
+
+patterns
+ hasCentralPackageRepository? false
+
+wikipedia https://en.wikipedia.org/wiki/Clipper_(programming_language)
+ example
+  USE Customer SHARED NEW
+  clear
+  @  1, 0 SAY "CustNum" GET Customer->CustNum PICT "999999" VALID Customer->CustNum > 0
+  @  3, 0 SAY "Contact" GET Customer->Contact VALID !empty(Customer->Contact)
+  @  4, 0 SAY "Address" GET Customer->Address
+  READ
+ related xbase c visual-objects visual-basic delphi xbasepp linux unix visual-foxpro sql dbase
+ summary Clipper is an xBase compiler, which is a computer programming language, that is used to create software programs that originally operated primarily under MS-DOS. Although it is a powerful general-purpose programming language, it was primarily used to create database/business programs.
+ pageId 246367
+ dailyPageViews 99
+ created 2003
+ backlinksCount 70
+ revisionCount 235
+ appeared 1985
+
+helloWorldCollection Clipper
+ // Hello World in Clipper
+ 
+ ? "Hello World"
+
 website http://www.grafxsoft.com/clipper.htm
-wikipedia Clipper_(programming_language)
+status active
+country US
+fileType text
+
+tiobe Clipper
+
+hopl 1909
+
+rosettaCode Clipper

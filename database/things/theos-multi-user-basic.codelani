@@ -1,3 +1,17 @@
+title THEOS
 appeared 1977
 type pl
-wikipedia THEOS
+
+patterns
+ hasCentralPackageRepository? false
+
+wikipedia https://en.wikipedia.org/wiki/THEOS
+ related c linux unix pick-operating-system
+ summary THEOS, which translates from Greek as "God", is an operating system which started out as OASIS, a microcomputer operating system for small computers that use the Z80 processor. Originally written in the late 1970s by Timothy S. Williams as a low-cost alternative to the more expensive mini- and mainframe- computers that were popular in the day, OASIS provided time-sharing multiuser facilities to allow several users to utilise the resources of one computer. Similar in concept to MP/M or UNIX, THEOS uses external device drivers rather than a kernel, allowing it to be more portable to other environments, though support has been primarily directed towards industry-standard hardware (i.e. PC's).  THEOS is specifically aimed at small business users, with a wide range of vertical-market applications packages being developed and supported by individuals and companies. THEOS operating systems have been distributed by THEOS Software Corporation in Walnut Creek, California, since 1983. As of 2003, Phase One Systems publishes software development tools for THEOS(R) systems. As well as porting tools, Phase One Systems distributed the Freedom query package and Control database package for THEOS systems, used to bring SQL-like data extraction tools to third-party software packages. The languages distributed with THEOS include THEOS Multi-User Basic and C. A powerful EXEC shell language can be used for task automation or to produce a turnkey system. When the operating system was launched for the IBM Personal Computer/AT in 1982, the decision was taken to change the name from OASIS to THEOS, short for THE Operating System. A number of security features exist, including dynamic passwords (where the password includes part of the date or time, or client IP address, or other dynamic elements), allow/deny security, a comprehensive inbound and outbound firewall, and an option to require a certain level of encryption in the workstation connection. In addition, the object file format is proprietary, and the operating system uses Intel "protected mode" to further increase defence against buffer overrun attacks. THEOS was introduced in Europe by Fujitsu and other hardware manufacturers 30 years ago, and is distributed by a number of distributors in Great Britain, Spain, Portugal, Germany, Italy and more. The 'current' version is THEOS Corona Commercial Release 6, which was released in December 2008, and a number of updates have been released since that time. The current Windows Workstation Client (as of May 2009) is version 3.16 from July 2003.
+ backlinksCount 95
+ pageId 1593766
+ revisionCount 102
+ dailyPageViews 37
+ appeared 1970
+
+status historical

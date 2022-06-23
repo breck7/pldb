@@ -1,3 +1,50 @@
+title Plus programming language
 appeared 1976
 type pl
-wikipedia Plus_(programming_language)
+
+patterns
+ hasCentralPackageRepository? false
+
+wikipedia https://en.wikipedia.org/wiki/Plus_(programming_language)
+ example
+  %Title := "Hello world";
+  %Include(Pluslist);
+  %Subtitle := "Definitions";
+  %Lower_Case := True;
+  
+  /* Definitions that everyone needs */
+  %Include(Boolean, Numeric_Types, More_Numeric_Types, String_Types,
+     More_String_Types);
+  
+  /* A tasteful subset of procedure definitions */
+  %Include(Main);
+  
+  /* Message routine definitions */
+  %Include(Message_Initialize, Message, Message_Terminate);
+  
+  %Subtitle := "Local Procedure Definitions";
+  %Eject();
+  definition Main
+  
+    variable Mcb is pointer to Stream_Type;
+  
+    Mcb := Message_Initialize();
+    Message(Mcb, "Hello, world!");
+    Message_Terminate(Mcb);
+    Mcb := Null;
+   
+  end Main;
+ related pascal c
+ summary Plus is a "Pascal-like" system implementation language from the University of British Columbia (UBC), Canada, based on the SUE system language developed at the University of Toronto, c. 1971.There is another programming language named PLUS, developed at Sperry Univac in Roseville, Minnesota, but the Univac PLUS is not the subject of this article.
+ pageId 27900530
+ created 2010
+ backlinksCount 22
+ revisionCount 32
+ dailyPageViews 8
+ appeared 1976
+
+status historical
+fileType text
+wordRank 844
+
+rosettaCode PLUS

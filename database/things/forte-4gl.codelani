@@ -1,3 +1,31 @@
+title Forte 4GL
 appeared 1994
 type pl
-wikipedia Forte_4GL
+
+patterns
+ hasCentralPackageRepository? false
+
+wikipedia https://en.wikipedia.org/wiki/Forte_4GL
+ example
+  begin
+      ...
+      raise UsageException();
+      ...
+  exception
+      when e : UsageException do
+          task.ErrMgr.Clear();
+          ...
+      else
+          ...
+          raise;
+  end;
+ related java
+ summary Forté 4GL was a proprietary application server that was developed by Forté Software and used for developing scalable, highly available, enterprise applications.
+ created 2006
+ backlinksCount 11
+ pageId 3995907
+ revisionCount 70
+ dailyPageViews 11
+ appeared 1994
+
+status historical

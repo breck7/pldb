@@ -1,6 +1,61 @@
+title Workflow Description Language
 appeared 2012
 type pl
-website http://www.openwdl.org/
-github https://github.com/openwdl/wdl
-reference https://software.broadinstitute.org/wdl/
+
+patterns
+ hasCentralPackageRepository? false
+
 description The Workflow Description Language (WDL) is a way to specify data processing workflows with a human-readable and -writeable syntax. WDL makes it straightforward to define analysis tasks, chain them together in workflows, and parallelize their execution. The language makes common patterns simple to express, while also admitting uncommon or complicated behavior; and strives to achieve portability not only across execution platforms, but also different types of users. Whether one is an analyst, a programmer, an operator of a production system, or any other sort of user, WDL should be accessible and understandable.
+
+githubLanguage wdl
+ fileExtensions wdl
+ trendingProjectsCount 0
+
+githubRepo https://github.com/openwdl/wdl
+ firstCommit 2012
+ stars 225
+ forks 83
+ subscribers 78
+ created 2012
+ updated 2018
+ description Workflow Description Language - Specification and Implementations
+ issues 65
+
+linguistGrammarRepo https://github.com/broadinstitute/wdl-sublime-syntax-highlighter
+ firstCommit 2017
+ lastCommit 2018
+ committerCount 6
+ commitCount 27
+ sampleCount 3
+ example
+  # Sample originally from https://github.com/broadinstitute/centaur
+  
+  task hello {
+    String addressee
+    command {
+      echo "Hello ${addressee}!"
+    }
+    output {
+      String salutation = read_string(stdout())
+    }
+    runtime {
+      docker: "ubuntu@sha256:71cd81252a3563a03ad8daee81047b62ab5d892ebbfbf71cf53415f29c130950"
+    }
+  }
+  
+  workflow wf_hello {
+    call hello
+    output {
+       hello.salutation
+    }
+  }
+
+website http://www.openwdl.org/
+reference https://software.broadinstitute.org/wdl/
+standsFor Workflow Description Language
+status active
+
+twitter wdl_dev
+
+fileType text
+isOpenSource true

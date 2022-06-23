@@ -1,7 +1,7 @@
+title CFEngine
 appeared 1993
 type application
-website https://cfengine.com
-wikipedia CFEngine
+
 example
  #!/var/cfengine/bin/cf-agent --no-lock
  body common control
@@ -18,3 +18,24 @@ example
        "Hello World!";
  
  }
+
+patterns
+ hasCentralPackageRepository? false
+
+wikipedia https://en.wikipedia.org/wiki/CFEngine
+ related linux solaris puppet
+ summary CFEngine is an open source configuration management system, written by Mark Burgess. Its primary function is to provide automated configuration and maintenance of large-scale computer systems, including the unified management of servers, desktops, consumer and industrial devices, embedded networked devices, mobile smartphones, and tablet computers.
+ pageId 1109117
+ created 2004
+ backlinksCount 34
+ revisionCount 273
+ dailyPageViews 56
+ appeared 1993
+
+website https://cfengine.com
+status historical
+
+twitter cfengine
+
+fileType text
+isOpenSource true

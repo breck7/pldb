@@ -1,3 +1,36 @@
+title comma-separated values
 appeared 1972
 type metaLanguage
-wikipedia Comma-separated_values
+
+patterns
+ hasCentralPackageRepository? false
+
+wikipedia https://en.wikipedia.org/wiki/Comma-separated_values
+ example
+  Year;Make;Model;Length
+  1997;Ford;E350;2,34
+  2000;Mercury;Cougar;2,38
+ related tsv ascii unicode utf-8 fortran html xml excel-app unix emacs-editor awk
+ summary In computing, a comma-separated values (CSV) file stores tabular data (numbers and text) in plain text. Each line of the file is a data record. Each record consists of one or more fields, separated by commas. The use of the comma as a field separator is the source of the name for this file format. The CSV file format is not standardized. The basic idea of separating fields with a comma is clear, but that idea gets complicated when the field data may also contain commas or even embedded line-breaks. CSV implementations may not handle such field data, or they may use quotation marks to surround the field. Quotation does not solve everything: some fields may need embedded quotation marks, so a CSV implementation may include escape characters or escape sequences. In addition, the term "CSV" also denotes some closely related delimiter-separated formats that use different field delimiters. These include tab-separated values and space-separated values. A delimiter that is not present in the field data (such as tab) keeps the format parsing simple. These alternate delimiter-separated files are often even given a .csv extension despite the use of a non-comma field separator. This loose terminology can cause problems in data exchange. Many applications that accept CSV files have options to select the delimiter character and the quotation character.
+ pageId 501906
+ dailyPageViews 56
+ created 2004
+ backlinksCount 1438
+ revisionCount 1207
+ appeared 1972
+
+githubLanguage CSV
+ fileExtensions csv
+ trendingProjectsCount 0
+
+example
+ Year,Make,Model,Length
+ 1997,Ford,E350,2.34
+ 2000,Mercury,Cougar,2.38
+
+standsFor comma-separated values
+status active
+fileExtensions csv
+fileType text
+
+antlr https://github.com/antlr/grammars-v4/tree/master/csv

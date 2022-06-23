@@ -1,5 +1,79 @@
+title Dafny
 appeared 2009
 type pl
+
+patterns
+ hasCentralPackageRepository? false
+
+wikipedia https://en.wikipedia.org/wiki/Dafny_(programming_language)
+ example
+  datatype List = Nil | Link(data:int,next:List)
+  
+  function sum(l:List): int {
+    match l
+      case Nil => 0
+      case Link(d,n) => d + sum(n)
+  }
+  
+  predicate isNatList(l:List) {
+    match l
+      case Nil => true
+      case Link(d,n) => d >= 0 && isNatList(n)
+  }
+  
+  ghost method NatSumLemma(l:List, n:int)
+  requires isNatList(l) && n == sum(l)
+  ensures n >= 0 
+  {
+    match l
+      case Nil =>
+        // Discharged Automatically
+      case Link(data,next) => {
+        // Apply Inductive Hypothesis
+        NatSumLemma(next,sum(next));
+        // Check what known by Dafny
+        assert data >= 0;
+      }
+  }
+ related csharp spec-sharp spark idris agda
+ summary Dafny is an imperative compiled language that targets C# and supports formal specification through preconditions, postconditions, loop invariants and loop variants.  The language combines ideas primarily from the Functional and Imperative paradigms, and includes limited support for Object-Oriented Programming.  Features include generic classes, dynamic allocation, inductive datatypes and a variation of separation logic known as implicit dynamic frames for reasoning about side effects.  Dafny was created by Rustan Leino at Microsoft Research after his previous work on developing ESC/Modula-3, ESC/Java, and Spec#.  Dafny is been used widely in teaching and features regularly in software verification competitions (e.g. VSTTE'08, VSCOMP'10, COST'11, and VerifyThis'12). Dafny was designed to provide a simple introduction to formal specification and verification and has been used widely in teaching.  Dafny follows in the lineage of many previous tools, including SPARK/Ada, ESC/Java, Spec#, Whiley, Why3 and Frama-C.  Such tools rely on the use of automated theorem proving to discharge proof obligations unlike, for example, those based on dependent types (e.g. Idris, Agda) which require more human intervention.  Dafny builds on the Boogie intermediate language which uses the Z3 automated theorem prover for discharging proof obligations.
+ pageId 56073623
+ created 2018
+ backlinksCount 4
+ revisionCount 2
+ dailyPageViews 1
+ appeared 2009
+
+githubRepo https://github.com/Microsoft/dafny
+ stars 616
+ forks 40
+ subscribers 72
+ created 2016
+ updated 2017
+ firstCommit 2009
+ description Dafny is a verification-aware programming language
+ issues 32
+
+helloWorldCollection Dafny
+ // Hello world in Dafny
+ 
+ method Main() {
+   print "Hello, World!\n";
+ }
+
 website https://www.microsoft.com/en-us/research/project/dafny-a-language-and-program-verifier-for-functional-correctness/
-github https://github.com/Microsoft/dafny
-wikipedia Dafny_(programming_language)
+status active
+
+tryItOnline dafny
+
+fileType text
+isOpenSource true
+
+quineRelay Dafny
+
+ubuntuPackage dafny
+
+rosettaCode Dafny
+
+corporateDevelopers Microsoft
+writtenIn csharp

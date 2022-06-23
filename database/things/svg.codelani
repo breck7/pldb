@@ -1,3 +1,53 @@
+title Scalable Vector Graphics
 appeared 2001
 type textMarkup
-wikipedia Scalable_Vector_Graphics
+
+patterns
+ hasCentralPackageRepository? false
+
+wikipedia https://en.wikipedia.org/wiki/Scalable_Vector_Graphics
+ example
+  <?xml version="1.0" encoding="UTF-8" ?>
+  <svg xmlns="http://www.w3.org/2000/svg" version="1.1">
+    <rect x="25" y="25" width="200" height="200" fill="lime" stroke-width="4" stroke="pink" />
+    <circle cx="125" cy="125" r="75" fill="orange" />
+    <polyline points="50,150 50,200 200,200 200,100" stroke="red" stroke-width="4" fill="none" />
+    <line x1="50" y1="50" x2="200" y2="200" stroke="blue" stroke-width="4" />
+  </svg>
+ related xml css javascript pdf synchronized-multimedia-integration-language ecmascript gzip url html android dxf gnuplot vml
+ summary Scalable Vector Graphics (SVG) is an XML-based vector image format for two-dimensional graphics with support for interactivity and animation. The SVG specification is an open standard developed by the World Wide Web Consortium (W3C) since 1999. SVG images and their behaviors are defined in XML text files. This means that they can be searched, indexed, scripted, and compressed. As XML files, SVG images can be created and edited with any text editor, as well as with drawing software. All major modern web browsers—including Mozilla Firefox, Internet Explorer, Google Chrome, Opera, Safari, and Microsoft Edge—have SVG rendering support.
+ pageId 27751
+ dailyPageViews 1237
+ created 2001
+ backlinksCount 34348
+ revisionCount 2645
+ appeared 2011
+
+githubLanguage SVG
+ fileExtensions svg
+ trendingProjectsCount 0
+
+helloWorldCollection Scalable Vector Graphics
+ <?xml version="1.0" encoding="utf-8" standalone="no"?>
+ <!-- Hello World in SVG -->
+ 
+ <svg width="240" height="100" viewBox="0 0 240 100" zoomAndPan="disable"
+      xmlns="http://www.w3.org/2000/svg"  xmlns:xlink="http://www.w3.org/1999/xlink">
+   <title>Hello World</title>
+     <g>
+       <text x="10" y="50">Hello World</text>
+       <animate attributeName='opacity' values='0;1' dur='4s' fill='freeze' begin="0s"/>
+     </g>
+ </svg>
+ 
+
+linguistGrammarRepo https://github.com/textmate/xml.tmbundle
+ firstCommit 2004
+ lastCommit 2018
+ committerCount 12
+ commitCount 97
+
+standsFor Scalable Vector Graphics
+status active
+fileType text
+corporateDevelopers W3C

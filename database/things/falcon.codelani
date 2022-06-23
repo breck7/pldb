@@ -1,5 +1,39 @@
+title Falcon
 appeared 2003
 type pl
 creators Giancarlo Niccolai
+
+patterns
+ hasCentralPackageRepository? false
+ hasComments? true
+
+wikipedia https://en.wikipedia.org/wiki/Falcon_(programming_language)
+ example
+  directive lang=fr_FR           // uses 5 characters ISO language code
+  
+   > i"Bonjour à tout le monde!"
+ related perl lua smalltalk php lisp python ruby unicode xml postgresql sqlite json regex linux solaris
+ summary Falcon is an open source, multi-paradigm programming language. Design and implementation is led by Giancarlo Niccolai, a native of Bologna, Italy and Information Technology graduate from Pistoia. Falcon translates computer source code to virtual machine instructions for evaluation. The virtual machine is intended to be both a stand-alone interpreter as well as for integration in third-party embedding applications. A core design consideration for the Falcon programming language is to provide acceptably high performing scripting plug-ins to multi threaded data acquisition, reporting and dispersion applications. As programming languages go, Falcon design leans more towards conciseness of code and expressiveness than general readability. The Falcon implementation does provide facilities for source level documentation and this documentation may become important as the mixed paradigm potential of Falcon scripting attempts to meet the problems faced with programming in the large.
+ pageId 21628757
+ dailyPageViews 57
+ created 2009
+ backlinksCount 66
+ appeared 2003
+ fileExtensions ftd fal fam
+
+helloWorldCollection Falcon
+ // Hello World in Falcon
+ 
+ > "Hello World!"
+
 website http://falconpl.org
-wikipedia Falcon_(programming_language)
+status active
+country IT
+fileExtensions ftd fal fam
+fileType text
+
+tiobe Falcon
+
+hopl 7122
+
+rosettaCode Falcon

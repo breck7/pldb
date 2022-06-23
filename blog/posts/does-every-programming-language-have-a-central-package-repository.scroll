@@ -1,0 +1,157 @@
+title Does every programming language have a central package repository?
+date 2019-02-04 12:00:00 -8000
+
+aftertext
+ Like millions of other programmers, every day I depend on
+ central package repositories (CR) like npm, PyPI
+ and CRAN.
+ https://npmjs.org npm
+ https://pypi.python.org PyPI
+ https://cran.r-project.org CRAN
+ dateline
+
+paragraph
+ The other day I was curious: does every programming
+ language have one of these? I decided to find out. I
+ pointed my crawler and trained a model to check for a
+ package repository for every one of the 3,006 languages I
+ am tracking. The results surprised me.
+
+section ★ Only 1% have them
+
+endSnippet
+
+paragraph
+ My model found only 39 languages with central package
+ repositories. (For comparison, Wikipedia lists ~20). That's
+ just ~1% of languages. I thought it would be higher.
+
+section ★ ~30% of the Top 100 have them
+
+paragraph
+ Given that a programming language is very popular and
+ appears in my top 100 list, it is about 15 - 30x more
+ likely to have a CR. Given a language is not in the top
+ 100, <1% will have a CR.
+
+section ★ 2 Million+ Packages Total
+
+paragraph
+ There are over 2,000,000 packages (aka modules or
+ libraries) across these CRs. That means there are about
+ 1,000x more packages than there are programming languages.
+
+paragraph
+ With that many packages, name collision is certainly a
+ problem (maybe a subject for another post), though not as
+ much of a problem as in the domain system where
+ 130,000,000+ ".coms" alone are registered.
+
+section ★ The top 5 account for ~80% of all packages
+
+aftertext
+ At over 900,000, Javascript's npm has almost more packages
+ than all other CRs combined. Javascript, Java, PHP, Perl,
+ and Python account for about 80% of packages.
+ https://npmjs.org npm
+
+section ★ GitHub has over 100,000,000 repositories
+
+paragraph
+ Given the size of GitHub, and it's growth as somewhat of a
+ universal central package repository (though totally
+ unmoderated), and given that many (if not the majority) of
+ the packages in these CRs are also listed on GitHub, it's
+ conceivable that GitHub is the largest CR and that the
+ number of packages out there is easily 10x bigger than 2M.
+
+section ★ Newer languages are not more likely to have CRs
+
+paragraph
+ This surprised me. The median age of a language with a CR
+ is 24 (1995). Of the top 5 languages I mentioned above, all
+ were created by then. Almost always the creation of the CR
+ follows the launch of the language, sometimes by months or
+ sometimes by years. I expected most CRs to be from newer
+ languages, but that wasn't the case. While some new
+ languages like Rust and Julia have CRs, others like Go and
+ Kotlin do not.
+
+section ★ A Visual
+
+image images/packages-repos.png
+
+section ★ The List
+
+aftertext
+ Here's my list of the main central package repositories for
+ languages that have them. I cut the list a bit to only
+ include CRs with more than 100 packages available. As
+ always, open an issue if you spot any omissions or mistakes!
+ https://github.com/codelani/codelani/issues/new open an issue
+
+pipeTable
+ id|idLink|website|websiteLink|packages|appeared
+ javascript|/languages/javascript.html|http://npmjs.org|http://npmjs.org|901,025|1995
+ java|/languages/java.html|https://search.maven.org/|https://search.maven.org/|266,776|1995
+ php|/languages/php.html|https://packagist.org/|https://packagist.org/|211,636|1995
+ perl|/languages/perl.html|https://www.cpan.org/|https://www.cpan.org/|176,876|1987
+ python|/languages/python.html|https://pypi.python.org/pypi|https://pypi.python.org/pypi|167,097|1991
+ ruby|/languages/ruby.html|https://rubygems.org/|https://rubygems.org/|154,445|1995
+ csharp|/languages/csharp.html|https://www.nuget.org/|https://www.nuget.org/|141,524|2000
+ swift|/languages/swift.html|https://cocoapods.org/|https://cocoapods.org/|57,000|2014
+ clojure|/languages/clojure.html|https://clojars.org/|https://clojars.org/|23,459|2007
+ rust|/languages/rust.html|https://crates.io/|https://crates.io/|22,486|2010
+ r|/languages/r.html|https://cran.r-project.org/|https://cran.r-project.org/|13,674|1993
+ haskell|/languages/haskell.html|https://hackage.haskell.org/|https://hackage.haskell.org/|13,487|1990
+ matlab|/languages/matlab.html|https://www.mathworks.com/matlabcentral/fileexchange/|https://www.mathworks.com/matlabcentral/fileexchange/|9,718|1984
+ erlang|/languages/erlang.html|https://hex.pm/|https://hex.pm/|8,069|1986
+ tex|/languages/tex.html|https://ctan.org/|https://ctan.org/|5,649|1978
+ stata|/languages/stata.html|https://www.stata.com/manuals/rssc.pdf|https://www.stata.com/manuals/rssc.pdf|4,608|1985
+ smalltalk|/languages/smalltalk.html|http://smalltalkhub.com/|http://smalltalkhub.com/|4,534|1972
+ powershell|/languages/powershell.html|https://www.powershellgallery.com/|https://www.powershellgallery.com/|4,382|2006
+ emacs-editor|/languages/emacs-editor.html|https://melpa.org/|https://melpa.org/|4,079|1976
+ dart|/languages/dart.html|https://pub.dartlang.org/|https://pub.dartlang.org/|2,751|2011
+ maple|/languages/maple.html|https://www.maplesoft.com/applications/|https://www.maplesoft.com/applications/|2,650|1982
+ ocaml|/languages/ocaml.html|https://opam.ocaml.org/|https://opam.ocaml.org/|2,224|1996
+ lua|/languages/lua.html|https://luarocks.org/|https://luarocks.org/|2,047|1993
+ julia|/languages/julia.html|https://pkg.julialang.org/|https://pkg.julialang.org/|1,906|2012
+ d|/languages/d.html|https://code.dlang.org/|https://code.dlang.org/|1,498|2001
+ dynamo-visual-language|/languages/dynamo-visual-language.html|https://dynamopackages.com/|https://dynamopackages.com/|1,494|2011
+ haxe|/languages/haxe.html|https://lib.haxe.org/|https://lib.haxe.org/|1,303|2005
+ racket|/languages/racket.html|https://pkgs.racket-lang.org/|https://pkgs.racket-lang.org/|1,122|1994
+ elm|/languages/elm.html|https://package.elm-lang.org/|https://package.elm-lang.org/|594|2012
+ coldfusion|/languages/coldfusion.html|https://www.forgebox.io|https://www.forgebox.io|519|1995
+ nim|/languages/nim.html|https://nimble.directory/|https://nimble.directory/|499|2008
+ spark|/languages/spark.html|https://spark-packages.org/|https://spark-packages.org/|441|1988
+ prolog|/languages/prolog.html|http://www.swi-prolog.org/pldoc/doc/_SWI_/library/prolog_pack.pl|http://www.swi-prolog.org/pldoc/doc/_SWI_/library/prolog_pack.pl|275|1972
+ mathematica|/languages/mathematica.html|http://packagedata.net/|http://packagedata.net/|210|1988
+
+paragraph
+ Notes: as Jay18001 pointed out, a few of these repositories
+ serve packages for more than one language. Cocoapods =>
+ Objective-C, and Nuget => F# and other .Net langs. In this
+ post I collapsed things so each repo only has 1 language.
+
+aftertext
+ Update: 8/26/2019. Multiple readers pointed out that my
+ stat for Ruby was off by 10x. I used the # I found on this
+ page, which turned out to be
+ just the gems beginning with the letter A. I apologize for
+ the mistake and am very grateful for the corrections.
+ https://rubygems.org/gems page
+
+ohayoCode
+ html.h1 Does every programming language have a central package repository?
+ web.get https://codelani.com/next2/codelani.csv
+  filter.where appeared > 1950
+   columns.keep appeared patterns.hasCentralPackageRepository? title
+    columns.setType appeared year
+     columns.rename patterns.hasCentralPackageRepository? cpr
+      group.by cpr
+       tables.basic
+      filter.where cpr = true
+       tables.basic
+       group.by appeared
+        vega.bar
+         yColumn count

@@ -1,4 +1,33 @@
+title ooc
 appeared 2009
 type pl
+
+patterns
+ hasCentralPackageRepository? false
+
+githubLanguage ooc
+ fileExtensions ooc
+ trendingProjectsCount 0
+
+githubRepo https://github.com/ooc-lang/rock
+ firstCommit 2009
+ stars 336
+ forks 38
+ subscribers 29
+ created 2009
+ updated 2018
+ description :ocean: self-hosted ooc compiler that generates c99
+ issues 76
+
+linguistGrammarRepo https://github.com/nilium/ooc.tmbundle
+ firstCommit 2009
+ lastCommit 2014
+ committerCount 3
+ commitCount 20
+
 website https://ooc-lang.org/
-github https://github.com/ooc-lang/rock
+status active
+fileType text
+isOpenSource true
+
+rosettaCode OOC

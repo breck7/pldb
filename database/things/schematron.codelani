@@ -1,6 +1,7 @@
+title Schematron
 appeared 1999
 type xmlFormat
-wikipedia Schematron
+
 example
  <schema xmlns="http://purl.oclc.org/dsdl/schematron">
    <pattern>
@@ -11,3 +12,10 @@ example
       </rule>
    </pattern>
  </schema>
+
+wikipedia https://en.wikipedia.org/wiki/Schematron
+ summary Schematron is a rule-based validation language for making assertions about the presence or absence of patterns in XML trees.  It is a structural schema language expressed in XML using a small number of elements and XPath. In a typical implementation, the Schematron schema XML is processed into normal XSLT code for deployment anywhere that XSLT can be used. Schematron is capable of expressing constraints in ways that other XML schema languages like XML Schema and DTD cannot. For example, it can require that the content of an element be controlled by one of its siblings. Or it can request or require that the root element, regardless of what element that is, must have specific attributes. Schematron can also specify required relationships between multiple XML files. Constraints and content rules may be associated with "plain-English" validation error messages, allowing translation of numeric Schematron error codes into meaningful user error messages. The current ISO recommendation is Information technology, Document Schema Definition Languages (DSDL), Part 3: Rule-based validation, Schematron (ISO/IEC 19757-3:2016).
+ backlinksCount 35
+ pageId 347726
+ dailyPageViews 40
+ appeared 2016

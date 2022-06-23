@@ -1,6 +1,7 @@
+title Creole
 appeared 2007
 type textMarkup
-wikipedia Creole_(markup)
+
 example
  * Bullet list
  * Second item
@@ -9,4 +10,85 @@ example
  # Numbered list
  # Second item
  ## Sub item
+
+patterns
+ hasCentralPackageRepository? false
+
 description Creole is a lightweight markup language, aimed at being a common markup language for wikis, enabling and simplifying the transfer of content between different wiki engines.
+
+wikipedia https://en.wikipedia.org/wiki/Creole_(markup)
+ example
+  |=  |= table |= header |
+  | a | table  | row     |
+  | b | table  | row     |
+ related xml mediawiki tiddlywiki
+ summary Creole is a lightweight markup language, aimed at being a common markup language for wikis, enabling and simplifying the transfer of content between different wiki engines.
+ pageId 20480609
+ created 2008
+ backlinksCount 52
+ revisionCount 91
+ dailyPageViews 59
+ appeared 2006
+
+githubLanguage Creole
+ fileExtensions creole
+ trendingProjectsCount 0
+
+linguistGrammarRepo https://github.com/Siddley/Creole
+ firstCommit 2012
+ lastCommit 2018
+ committerCount 3
+ commitCount 17
+ sampleCount 1
+ example
+  = Creole
+  
+  Creole is a Creole-to-HTML converter for Creole, the lightweight markup
+  language (http://wikicreole.org/). Github uses this converter to render *.creole files.
+  
+  Project page on github:
+  
+  * http://github.com/minad/creole
+  
+  Travis-CI:
+  
+  * https://travis-ci.org/minad/creole
+  
+  RDOC:
+  
+  * http://rdoc.info/projects/minad/creole
+  
+  == INSTALLATION
+  
+  {{{
+  gem install creole
+  }}}
+  
+  == SYNOPSIS
+  
+  {{{
+  require 'creole'
+  html = Creole.creolize('== Creole text')
+  }}}
+  
+  == BUGS
+  
+  If you found a bug, please report it at the Creole project's tracker
+  on GitHub:
+  
+  http://github.com/minad/creole/issues
+  
+  == AUTHORS
+  
+  * Lars Christensen (larsch)
+  * Daniel Mendler (minad)
+  
+  == LICENSE
+  
+  Creole is Copyright (c) 2008 - 2013 Lars Christensen, Daniel Mendler. It is free software, and
+  may be redistributed under the terms specified in the README file of
+  the Ruby distribution.
+  
+
+status active
+fileType text

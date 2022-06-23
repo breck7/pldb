@@ -1,3 +1,70 @@
+title Extensible Embeddable Language
 appeared 2005
 type pl
-wikipedia Extensible_Embeddable_Language
+
+patterns
+ hasCentralPackageRepository? false
+
+wikipedia https://en.wikipedia.org/wiki/Extensible_Embeddable_Language
+ example
+  export function main<args>
+  {
+      print("Recursion test 1:\n");
+      
+      procedure recurse(arg)
+      {
+          print("arg = ", arg, "\n");
+          if arg
+               recurse(arg - 1);
+      }
+      
+      recurse(10);
+      
+      print("Recursion test 2; Mutual Recursion:\n");
+      
+      procedure mrecurse2(arg);
+      
+      procedure mrecurse1(arg)
+      {
+           print("arg = ", arg, "\n");
+           if arg
+                mrecurse2(arg);
+      }
+      
+      procedure mrecurse2(arg)
+      {
+           mrecurse1(arg - 1);
+      };
+      
+      mrecurse1(10);
+      
+      print("Recursion test 2; Mutual Recursion with Function Reference:\n");
+      
+      procedure mrrecurse1(arg, fn)
+      {
+           print("arg = ", arg, "\n");
+           if arg
+                fn(arg, fn);
+      }
+      
+      local mrr2 = procedure (arg, fn)
+      {
+           mrrecurse1(arg - 1, fn);
+      };
+      
+      mrrecurse1(10, mrr2);
+      
+      print(Recursion tests done.\n);
+      return 0;
+  }
+ related lua c pascal
+ summary The Extensible Embeddable Language (EEL) is a scripting and programming language in development by David Olofson. EEL is intended for scripting in realtime systems with cycle rates in the kHz range, such as musical synthesizers and industrial control systems, but also aspires to be usable as a platform independent general purpose programming language.
+ created 2006
+ backlinksCount 13
+ pageId 6848938
+ revisionCount 30
+ dailyPageViews 5
+ appeared 2005
+
+status historical
+isOpenSource true

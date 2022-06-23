@@ -1,4 +1,58 @@
+title GNU Octave
 appeared 1988
 type pl
+
+patterns
+ hasCentralPackageRepository? false
+ hasComments? true
+
+wikipedia https://en.wikipedia.org/wiki/GNU_Octave
+ example
+  % create figure and panel on it
+  f = figure;
+  % create a button group
+  gp = uibuttongroup (f, "Position", [ 0 0.5 1 1])
+  % create a buttons in the group
+  b1 = uicontrol (gp, "style", "radiobutton", "string", "Choice 1", "Position", [ 10 150 100 50 ]);
+  b2 = uicontrol (gp, "style", "radiobutton", "string", "Choice 2", "Position", [ 10 50 100 30 ]);
+  % create a button not in the group
+  b3 = uicontrol (f, "style", "radiobutton","string", "Not in the group","Position", [ 10 50 100 50 ]);
+ related linux c fortran scilab opengl gnuplot unix bash lisp qt
+ summary GNU Octave is software featuring a high-level programming language, primarily intended for numerical computations. Octave helps in solving linear and nonlinear problems numerically, and for performing other numerical experiments using a language that is mostly compatible with Matlab. It may also be used as a batch-oriented language. Since it is part of the GNU Project, it is free software under the terms of the GNU General Public License. Octave is one of the major free alternatives to Matlab, others being Scilab and FreeMat. Scilab, however, puts less emphasis on (bidirectional) syntactic compatibility with Matlab than Octave does.
+ pageId 48707
+ dailyPageViews 467
+ created 2002
+ backlinksCount 613
+ revisionCount 653
+ appeared 1988
+
+helloWorldCollection GNU Octave
+ #Hello World in Octave (http://www.octave.org/)
+ printf("Hello World\n");
+ 
+
 website https://gnu.org/software/octave/
-wikipedia GNU_Octave
+status active
+
+tryItOnline octave
+
+country US
+fileType text
+isOpenSource true
+
+tiobe GNU Octave
+
+projectEuler Octave
+ memberCount
+  2019 137
+  2022 150
+
+hopl 2302
+
+quineRelay Octave
+
+ubuntuPackage octave
+
+codeMirror octave
+
+rosettaCode Octave

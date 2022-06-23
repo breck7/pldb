@@ -1,7 +1,7 @@
+title YASnippet
 appeared 2008
 type textMarkup
-website http://joaotavora.github.com/yasnippet/
-github https://github.com/joaotavora/yasnippet
+
 example
  # -*- mode: snippet -*-
  # name: fun
@@ -10,3 +10,46 @@ example
  # --
  ${1:function-name} :: ${2:type}
  $1 ${3:arguments} $0
+
+patterns
+ hasCentralPackageRepository? false
+
+githubLanguage YASnippet
+ fileExtensions yasnippet
+
+githubRepo https://github.com/joaotavora/yasnippet
+ firstCommit 2008
+ stars 1786
+ forks 266
+ subscribers 88
+ created 2011
+ updated 2018
+ description A template system for Emacs
+ issues 29
+
+linguistGrammarRepo https://github.com/Alhadis/language-emacs-lisp
+ firstCommit 2016
+ lastCommit 2018
+ committerCount 1
+ commitCount 101
+ sampleCount 2
+ example
+  # name: Read stdin
+  # key: stdin
+  # group: es6
+  # --
+  new Promise(resolve => {
+  	let input = "";
+  	process.stdin.setEncoding("UTF8");
+  	process.stdin.on("readable", () => {
+  		const chunk = process.stdin.read();
+  		null !== chunk ? input += chunk : resolve(input);
+  	})
+  }).then(data => {
+  	$1
+  });
+
+website http://joaotavora.github.com/yasnippet/
+status active
+fileType text
+isOpenSource true

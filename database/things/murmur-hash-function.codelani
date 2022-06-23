@@ -1,3 +1,10 @@
+title MurmurHash
 appeared 2008
 type hashFunction
-wikipedia MurmurHash
+
+wikipedia https://en.wikipedia.org/wiki/MurmurHash
+ summary MurmurHash is a non-cryptographic hash function suitable for general hash-based lookup.  It was created by Austin Appleby in 2008 and is currently hosted on GitHub along with its test suite named 'SMHasher'. It also exists in a number of variants, all of which have been released into the public domain. The name comes from two basic operations, multiply (MU) and rotate (R), used in its inner loop. Unlike cryptographic hash functions, it is not specifically designed to be difficult to reverse by an adversary, making it unsuitable for cryptographic purposes.
+ backlinksCount 41
+ pageId 25081196
+ dailyPageViews 297
+ appeared 2008

@@ -1,0 +1,69 @@
+title What letters do programming languages start with?
+date 2018-10-25 12:00:00 -8000
+
+aftertext
+ As the chart below shows, the number of programming
+ languages beginning with a certain letter varies as much as
+ 10x by letter.
+ dateline
+
+image images/firstLetter.png
+
+endSnippet
+
+paragraph
+ Below is the same list, sorted by popularity.
+
+image images/firstLetter-sorted.png
+
+paragraph
+ A curious observation: why are A and C both ~3x more popular than B?
+
+paragraph
+ Data used for these charts:
+
+commaTable
+ firstLetter,count
+ a,59
+ b,22
+ c,75
+ d,20
+ e,28
+ f,38
+ g,30
+ h,15
+ i,23
+ j,27
+ k,15
+ l,45
+ m,57
+ n,31
+ o,30
+ p,69
+ q,10
+ r,33
+ s,76
+ t,24
+ u,13
+ v,13
+ w,9
+ x,10
+ y,4
+ z,6
+
+ohayoCode
+ html.h1 What letters do programming languages start with?
+ web.get https://codelani.com/next2/codelani.csv
+  hidden
+  columns.keep title type
+   hidden
+   text.firstLetter title
+    hidden
+    text.toLowerCase firstLetter
+     hidden
+     group.by firstLetter
+      hidden
+      vega.bar How many programming language names begin with each letter?
+      rows.sortByReverse count
+       hidden
+       tables.basic

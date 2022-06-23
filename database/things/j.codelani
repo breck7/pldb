@@ -1,5 +1,62 @@
+title J
 appeared 1990
 type pl
 creators Kenneth E. Iverson and Roger Hui
+
+patterns
+ hasCentralPackageRepository? false
+ hasComments? true
+
+wikipedia https://en.wikipedia.org/wiki/J_(programming_language)
+ example
+  3 |. 1 0 1 1 0 0 1 1 1 1 1             NB. rotate
+  1 0 0 1 1 1 1 1 1 0 1
+ related linux apl fp fl numpy supercollider ascii unix sql c unicode k q
+ summary The J programming language, developed in the early 1990s by Kenneth E. Iverson and Roger Hui, is a synthesis of APL (also by Iverson) and the FP and FL function-level languages created by John Backus. To avoid repeating the APL special-character problem, J uses only the basic ASCII character set, resorting to the use of the dot and colon as inflections to form short words similar to digraphs. Most such "primary" (or "primitive") J words serve as mathematical symbols, with the dot or colon extending the meaning of the basic characters available. Also, many characters which in other languages often must be paired (such as [] {} "" `` or <>) are treated by J as stand-alone words or, when inflected, as single-character roots of multi-character words. J is a very terse array programming language, and is most suited to mathematical and statistical programming, especially when performing operations on matrices. It has also been used in extreme programming and network performance analysis. Like the original FP/FL languages, J supports function-level programming via its tacit programming features. Unlike most languages that support object-oriented programming, J's flexible hierarchical namespace scheme (where every name exists in a specific locale) can be effectively used as a framework for both class-based and prototype-based object-oriented programming. Since March 2011, J is free and open-source software under the GPLv3 license. One may also purchase source under a negotiated license.
+ pageId 73227
+ dailyPageViews 561
+ created 2002
+ backlinksCount 196
+ revisionCount 498
+ appeared 1990
+
+githubLanguage J
+ fileExtensions ijs
+ trendingProjectsCount 0
+
+helloWorldCollection J
+ NB. Hello World in J
+ 'Hello World' 1!:2(2)
+
+linguistGrammarRepo https://github.com/tikkanz/JSyntax
+ firstCommit 2014
+ lastCommit 2018
+ committerCount 4
+ commitCount 43
+ sampleCount 2
+ example
+  #!/bin/jconsole
+  echo 'Hello, GitHub!'
+  exit ''
+  
+
 website http://www.jsoftware.com
-wikipedia J_(programming_language)
+status active
+
+tryItOnline j
+
+country US
+fileType text
+wordRank 417
+isOpenSource true
+
+tiobe J
+
+projectEuler APL/J/K
+ memberCount
+  2022 2478
+  2019 332
+
+hopl 1558
+
+rosettaCode J

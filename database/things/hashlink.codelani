@@ -1,4 +1,21 @@
+title hashlink
 appeared 2015
 type bytecode
+
+patterns
+ hasCentralPackageRepository? false
+
+githubRepo https://github.com/HaxeFoundation/hashlink
+ firstCommit 2015
+ stars 235
+ forks 49
+ subscribers 40
+ created 2015
+ updated 2018
+ description A virtual machine for Haxe
+ issues 27
+
 website https://hashlink.haxe.org/
-github https://github.com/HaxeFoundation/hashlink
+status active
+fileType text
+isOpenSource true

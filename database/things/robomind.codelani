@@ -1,10 +1,45 @@
+title RoboMind
 appeared 2005
 type pl
-website http://www.robomind.net
-wikipedia RoboMind
+
 example
  paintWhite
  repeat(4) {
      forward(2)
      right
  }
+
+patterns
+ hasCentralPackageRepository? false
+
+wikipedia https://en.wikipedia.org/wiki/RoboMind
+ example
+  follow
+  
+  procedure follow{
+      if(frontIsWhite){
+                forward(1)		
+      }
+      else if(rightIsWhite){
+                right
+      }
+      else if(leftIsWhite){
+           left
+      }
+      else{
+           end
+      }
+      follow
+  }
+ related java linux karel pascal logo javascript scratch microsoft-small-basic kodu-game-lab
+ summary RoboMind is a simple educational programming environment with its own scripting language that allows beginners to learn the basics of computer science by programming a simulated robot. In addition to introducing common programming techniques, it also aims at offering insights in robotics and artificial intelligence. RoboMind is available as stand-alone application for Windows, Linux and Mac OS X. It was first released in 2005 and was originally developed by Arvid Halma, a student of the University of Amsterdam at that time. Since 2011 RoboMind is published by Research Kitchen.
+ pageId 10434801
+ created 2007
+ backlinksCount 12
+ revisionCount 57
+ dailyPageViews 17
+ appeared 2005
+
+website http://www.robomind.net
+status historical
+fileType text

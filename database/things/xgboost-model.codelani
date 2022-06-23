@@ -1,5 +1,23 @@
+title Xgboost
 appeared 2014
 type binaryDataFormat
-wikipedia Xgboost
-reference https://rdrr.io/cran/xgboost/man/xgb.dump.html
+
+patterns
+ hasCentralPackageRepository? false
+
 description The model and data format of XGBoost is exchangeable, which means the model trained by one language can be loaded in another. This means you can train the model using R, while running prediction using Java or C++, which are more common in production systems. You can also train the model using distributed versions, and load them in from Python to do some interactive analysis.
+
+wikipedia https://en.wikipedia.org/wiki/Xgboost
+ related linux java python r julia scala scikit-learn
+ summary XGBoost is an open-source software library which provides a gradient boosting framework for C++, Java, Python,R, and Julia. It works on Linux, Windows, and macOS. From the project description, it aims to provide a "Scalable, Portable and Distributed Gradient Boosting (GBM, GBRT, GBDT) Library". Other than running on a single machine, it also supports the distributed processing frameworks Apache Hadoop, Apache Spark, and Apache Flink. It has gained much popularity and attention recently as it was the algorithm of choice for many winning teams of a number of machine learning competitions.
+ backlinksCount 10
+ pageId 49541331
+ created 2016
+ revisionCount 1
+ dailyPageViews 362
+ appeared 2014
+
+reference https://rdrr.io/cran/xgboost/man/xgb.dump.html
+status active
+fileExtensions model
+isOpenSource true

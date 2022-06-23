@@ -1,6 +1,175 @@
+title Kotlin
 appeared 2011
 type pl
 creators Andrey Breslav
+
+patterns
+ hasCentralPackageRepository? false
+ hasComments? true
+ hasImports? true
+  import foo.Bar // Bar is now accessible without qualification
+  import foo.* // everything in 'foo' becomes accessible
+  import bar.Bar as bBar // bBar stands for 'bar.Bar'
+ hasInterfaces? true
+  interface Named {
+     val name: String
+  }
+  interface Person : Named {
+      val firstName: String
+      val lastName: String
+      
+      override val name: String get() = "$firstName $lastName"
+  }
+ hasMacros? false
+ hasOperatorOverloading? true
+ hasSemanticIndentation? false
+ hasTypeInference? true
+
+wikipedia https://en.wikipedia.org/wiki/Kotlin_(programming_language)
+ example
+  // returns null if...
+    // - foo() returns null,
+    // - or if foo() is non-null, but bar() returns null,
+    // - or if foo() and bar() are non-null, but baz() returns null.
+    // vice versa, return value is non-null if and only if foo(), bar() and baz() are non-null
+    foo()?.bar()?.baz()
+ related jvm java-bytecode javascript java scala groovy csharp gosu swift llvmir android pascal perl eclipse-editor maven-pom emacs-editor
+ summary Kotlin is a statically-typed programming language that runs on the Java virtual machine and also can be compiled to JavaScript source code or use the LLVM compiler infrastructure. Its primary development is from a team of JetBrains programmers based in Saint Petersburg, Russia. While the syntax is not compatible with Java, Kotlin is designed to interoperate with Java code and is reliant on Java code from the existing Java Class Library, such as the collections framework. As of Android Studio 3.0 (Beta version) Kotlin is a fully supported programming language on Android and lets the user choose between targeting Java 6- or Java 8-compatible bytecode.
+ pageId 41819039
+ dailyPageViews 1638
+ created 2014
+ backlinksCount 416
+ revisionCount 489
+ appeared 2011
+ fileExtensions kt kts
+
+githubLanguage Kotlin
+ fileExtensions kt ktm kts
+ trendingProjects
+  author name avatar url language languageColor stars forks currentPeriodStars description
+  google iosched https://github.com/google.png https://github.com/google/iosched Kotlin #F18E33 19058 5939 894 "The Google I/O 2019 Android App"
+  inorichi tachiyomi https://github.com/inorichi.png https://github.com/inorichi/tachiyomi Kotlin #F18E33 4268 601 327 "Free and open source manga reader for Android"
+  chrisbanes tivi https://github.com/chrisbanes.png https://github.com/chrisbanes/tivi Kotlin #F18E33 2337 303 128 "Tivi is a work-in-progress TV show tracking Android app, which connects to Trakt.tv. It is still in its early stages of development and currently only contains two pieces of UI. It is under heavy development."
+  dbacinski Design-Patterns-In-Kotlin https://github.com/dbacinski.png https://github.com/dbacinski/Design-Patterns-In-Kotlin Kotlin #F18E33 3176 392 169 "Design Patterns implemented in Kotlin"
+  Kotlin kotlinx.coroutines https://github.com/Kotlin.png https://github.com/Kotlin/kotlinx.coroutines Kotlin #F18E33 5850 763 291 "Library support for Kotlin coroutines"
+  googlesamples android-architecture-components https://github.com/googlesamples.png https://github.com/googlesamples/android-architecture-components Kotlin #F18E33 14412 4418 391 "Samples for Android Architecture Components."
+  kizitonwose CalendarView https://github.com/kizitonwose.png https://github.com/kizitonwose/CalendarView Kotlin #F18E33 979 62 132 "A highly customizable calendar library for Android, powered by RecyclerView."
+  googlesamples android-sunflower https://github.com/googlesamples.png https://github.com/googlesamples/android-sunflower Kotlin #F18E33 8355 1602 343 "A gardening app illustrating Android development best practices with Android Jetpack."
+  googlesamples android-UniversalMusicPlayer https://github.com/googlesamples.png https://github.com/googlesamples/android-UniversalMusicPlayer Kotlin #F18E33 11093 3339 110 "This sample shows how to implement an audio media app that works across multiple form factors and provide a consistent user experience on Android phones, tablets, Auto, Wear and Cast devices"
+  shadowsocks shadowsocks-android https://github.com/shadowsocks.png https://github.com/shadowsocks/shadowsocks-android Kotlin #F18E33 26014 10047 739 "A shadowsocks client for Android"
+  hoodiearon fq-book https://github.com/hoodiearon.png https://github.com/hoodiearon/fq-book Kotlin #F18E33 1392 467 105 "📖 《这本书能让你连接互联网》科学上网Freestyle，了解网络基础知识与实践蹭网操作"
+  android plaid https://github.com/android.png https://github.com/android/plaid Kotlin #F18E33 13763 2813 197 "An Android app which provides design news & inspiration as well as being an example of implementing material design."
+  JetBrains Exposed https://github.com/JetBrains.png https://github.com/JetBrains/Exposed Kotlin #F18E33 2964 267 94 "Kotlin SQL Framework"
+  airbnb MvRx https://github.com/airbnb.png https://github.com/airbnb/MvRx Kotlin #F18E33 3188 217 92 "MvRx: Android on Autopilot"
+  KotlinBy awesome-kotlin https://github.com/KotlinBy.png https://github.com/KotlinBy/awesome-kotlin Kotlin #F18E33 7695 852 180 "A curated list of awesome Kotlin related stuff Inspired by awesome-java."
+  JetBrains kotlin https://github.com/JetBrains.png https://github.com/JetBrains/kotlin Kotlin #F18E33 28954 3382 421 "The Kotlin Programming Language"
+  cashapp sqldelight https://github.com/cashapp.png https://github.com/cashapp/sqldelight Kotlin #F18E33 2745 205 189 "SQLDelight - Generates typesafe Kotlin APIs from SQL"
+  CypherpunkArmory UserLAnd https://github.com/CypherpunkArmory.png https://github.com/CypherpunkArmory/UserLAnd Kotlin #F18E33 1312 137 45 "Main UserLAnd Repository"
+  googlesamples android-dynamic-features https://github.com/googlesamples.png https://github.com/googlesamples/android-dynamic-features Kotlin #F18E33 401 129 36 
+  InsertKoinIO koin https://github.com/InsertKoinIO.png https://github.com/InsertKoinIO/koin Kotlin #F18E33 4173 256 170 "KOIN - a pragmatic lightweight dependency injection framework for Kotlin"
+  eycorsican kitsunebi-android https://github.com/eycorsican.png https://github.com/eycorsican/kitsunebi-android Kotlin #F18E33 546 105 75 "A fully-featured V2Ray client for Android."
+  sanogueralorenzo Android-Kotlin-Clean-Architecture https://github.com/sanogueralorenzo.png https://github.com/sanogueralorenzo/Android-Kotlin-Clean-Architecture Kotlin #F18E33 767 146 59 "Android Sample Clean Architecture App written in Kotlin"
+  arturbosch detekt https://github.com/arturbosch.png https://github.com/arturbosch/detekt Kotlin #F18E33 2289 258 116 "Static code analysis for Kotlin"
+  anthonycr Lightning-Browser https://github.com/anthonycr.png https://github.com/anthonycr/Lightning-Browser Kotlin #F18E33 1442 679 36 "A lightweight Android browser with modern navigation"
+  kittinunf fuel https://github.com/kittinunf.png https://github.com/kittinunf/fuel Kotlin #F18E33 3012 316 88 "The easiest HTTP networking library for Kotlin/Android"
+ trendingProjectsCount 26
+
+helloWorldCollection Kotlin
+ // Hello world in Kotlin
+ 
+ fun main(args : Array<String>) {
+     println("Hello, world!")
+ }
+
+linguistGrammarRepo https://github.com/nishtahir/language-kotlin
+ firstCommit 2018
+ lastCommit 2018
+ committerCount 1
+ commitCount 6
+ sampleCount 1
+ example
+  package addressbook
+  
+  class Contact(
+    val name : String,
+    val emails : List<EmailAddress>,
+    val addresses : List<PostalAddress>,
+    val phonenums : List<PhoneNumber>
+  )
+  
+  class EmailAddress(
+    val user : String,
+    val host : String
+  )
+  
+  class PostalAddress(
+    val streetAddress : String,
+    val city : String,
+    val zip : String,
+    val state : USState?,
+    val country : Country
+  ) {
+     assert {(state == null) xor (country == Countries["US"]) }
+  }
+  
+  class PhoneNumber(
+    val country : Country,
+    val areaCode : Int,
+    val number : Long
+  )
+  
+  object Countries {
+    fun get(id : CountryID) : Country = countryTable[id]
+    
+    private var table : Map<String, Country>? = null
+    private val countryTable : Map<String, Country>
+      get() {
+        if (table == null) {
+          table = HashMap()
+          for (line in TextFile("countries.txt").lines(stripWhiteSpace = true)) {
+            table[line] = Country(line)
+          }
+        }
+        return table
+      }
+  }
+  
+  class Country(val name : String)
+
 website https://kotlinlang.org
-wikipedia Kotlin_(programming_language)
 reference https://steve-yegge.blogspot.co.nz/2017/05/why-kotlin-is-better-than-whatever-dumb.html
+status active
+
+replit kotlin
+
+tryItOnline kotlin
+
+twitter kotlin
+
+fileExtensions kt kts
+fileType text
+runsOnVm jvm
+isOpenSource true
+
+tiobe Kotlin
+ currentRank 48
+
+meetup kotlin
+ memberCount 33854
+ groupCount 138
+
+projectEuler Kotlin
+ memberCount
+  2019 80
+  2022 275
+
+subreddit Kotlin
+ memberCount
+  2017 6987
+
+rosettaCode Kotlin
+
+antlr https://github.com/antlr/grammars-v4/tree/master/kotlin
+
+corporateDevelopers JetBrains
+cheatSheetUrl https://www.ekito.fr/people/wp-content/uploads/2016/11/Kotlin-Cheat-Sheet-by-ekito-1.2.pdf

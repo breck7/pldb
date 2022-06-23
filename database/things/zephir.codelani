@@ -1,4 +1,90 @@
+title Zephir
 appeared 2013
 type pl
+
+patterns
+ hasCentralPackageRepository? false
+
+githubLanguage Zephir
+ fileExtensions zep
+ trendingProjectsCount 0
+
+githubRepo https://github.com/phalcon/zephir
+ firstCommit 2013
+ stars 2445
+ forks 378
+ subscribers 225
+ created 2013
+ updated 2018
+ description Zephir is a compiled high level language aimed to the creation of C-extensions for PHP
+ issues 163
+
+linguistGrammarRepo https://github.com/phalcon/zephir-sublime
+ firstCommit 2013
+ lastCommit 2017
+ committerCount 13
+ commitCount 37
+ sampleCount 2
+ example
+  /**
+   * CBLOCK tests
+   * asfas
+   */
+  
+  %{
+  // top statement before namespace, add to after headers
+  #define MAX_FACTOR 40
+  }%
+  
+  namespace Test;
+  
+  %{
+  // top statement before class, add to after headers
+  // test include .h
+  #include "kernel/require.h"
+  }%
+  
+  %{
+  
+  // c implement fibonacci
+  static long fibonacci(long n) {
+          if (n < 2) return n;
+          else return fibonacci(n - 2) + fibonacci(n - 1);
+  }
+  
+  }%
+  
+  class Cblock
+  {
+      public function testCblock1()
+      {
+          int a = 0;
+  
+          %{
+              a = MAX_FACTOR;
+          }%
+  
+          return a;
+      }
+  
+      public function testCblock2()
+      {
+              long a = 0;
+  
+              %{
+                  a = fibonacci(MAX_FACTOR);
+              }%
+  
+              return a;
+      }
+  
+  }
+  
+
 website https://zephir-lang.com/
-github https://github.com/phalcon/zephir
+status active
+
+twitter zephirlang
+
+fileType text
+isOpenSource true

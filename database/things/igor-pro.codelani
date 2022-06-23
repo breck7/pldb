@@ -1,4 +1,50 @@
+title IGOR Pro
 appeared 1993
 type pl
-wikipedia IGOR_Pro
+
+patterns
+ hasCentralPackageRepository? false
+
+wikipedia https://en.wikipedia.org/wiki/IGOR_Pro
+ related c
+ summary IGOR Pro is a scientific data analysis software, numerical computing environment and programming language that runs on Windows or Mac operating systems. It is developed by WaveMetrics Inc., and was originally aimed at time series analysis, but has since then evolved and covers other applications such as curve fitting and image processing. It comes with a fully functional programming language and compiler, but many functions are also accessible through menus. IGOR Pro is primarily known for its graphics capabilities, and like Origin and other similar programs, is often used to generate plots for scientific and other publications.  Other features include the possibility of extending the built-in functions with external operations (XOP) allowing data acquisition, manipulation and analysis features, communication with external devices and in principle any other task that can be programmed in C or C++.
+ created 2005
+ backlinksCount 29
+ pageId 2515207
+ revisionCount 68
+ dailyPageViews 39
+ appeared 2018
+
+githubLanguage IGOR Pro
+ fileExtensions ipf
+ trendingProjectsCount 0
+
+linguistGrammarRepo https://github.com/byte-physics/language-igor
+ sampleCount 2
+ example
+  #pragma rtGlobals=3
+  
+  StrConstant myConstString="abcd"
+  // some comment
+  constant myConst=123
+  
+  Structure struct1
+  	string str
+  	variable var
+  EndStructure
+  
+  static Structure struct2
+  	string str
+  	variable var
+  EndStructure
+  
+  #include "someFile"
+  
+  #ifdef NOT_DEFINED
+  	// conditional compilation
+  #endif
+  
+
 reference https://groups.google.com/forum/#!search/igor-pro/comp.sys.mac.scitech/1QMC8N6AyLw/1Vvaa5rZPBwJ
+status active
+fileType text

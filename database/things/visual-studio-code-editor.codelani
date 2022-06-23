@@ -1,3 +1,19 @@
+title Visual Studio Code
 appeared 2015
 type editor
-wikipedia Visual_Studio_Code
+
+patterns
+ hasCentralPackageRepository? true
+
+wikipedia https://en.wikipedia.org/wiki/Visual_Studio_Code
+ related visual-studio-editor typescript javascript linux ia-32 git json c csharp clojure coffeescript css f-sharp go groovy html ini java less lua makefile markdown objective-c perl php powershell python r ruby rust sql swift visual-basic xml yaml
+ summary Visual Studio Code is a source code editor developed by Microsoft for Windows, Linux and macOS. It includes support for debugging, embedded Git control, syntax highlighting, intelligent code completion, snippets, and code refactoring. It is also customizable, so users can change the editor's theme, keyboard shortcuts, and preferences. It is free and open-source, although the official download is under a proprietary license.Visual Studio Code is based on Electron, a framework which is used to deploy Node.js applications for the desktop running on the Blink layout engine. Although it uses the Electron framework, the software does not use Atom and instead employs the same editor component (codenamed "Monaco") used in Visual Studio Team Services (formerly called Visual Studio Online).In the Stack Overflow 2018 Developer Survey, Visual Studio Code was ranked the most popular developer environment tool, with 34.9% of 75,398 respondents claiming to use it.
+ pageId 46561507
+ created 2015
+ backlinksCount 361
+ revisionCount 308
+ dailyPageViews 1501
+ appeared 2015
+
+status active
+fileType na

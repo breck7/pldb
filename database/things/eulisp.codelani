@@ -1,3 +1,102 @@
+title EuLisp
 appeared 1985
 type pl
-wikipedia EuLisp
+
+patterns
+ hasCentralPackageRepository? false
+ hasMultipleInheritance? true
+
+wikipedia https://en.wikipedia.org/wiki/EuLisp
+ example
+  (defmodule hanoi
+    (syntax (syntax-0)
+     import (level-0)
+     export (hanoi))
+  
+  ;;;-------------------------------------------------
+  ;;; Tower definition
+  ;;;-------------------------------------------------
+  (defconstant *max-tower-height* 10)
+  
+  (defclass <tower> ()
+    ((id reader: tower-id keyword: id:)
+     (blocks accessor: tower-blocks)))
+  
+  (defun build-tower (x n)
+    (labels ((loop (i res)
+                   (if (= i 0) res
+                     (loop (- i 1) (cons i res)))))
+            ((setter tower-blocks) x (loop n ()))
+            x))
+  
+  (defmethod generic-print ((x <tower>) (s <stream>))
+    (sformat s "#<tower ~a: ~a>" (tower-id x) (tower-blocks x)))
+  
+  ;;;-------------------------------------------------
+  ;;; Access to tower blocks
+  ;;;-------------------------------------------------
+  (defgeneric push (x y))
+  
+  (defmethod push ((x <tower>) (y <fpi>))
+    (let ((blocks (tower-blocks x)))
+      (if (or (null? blocks) (< y (car blocks)))
+          ((setter tower-blocks) x (cons y blocks))
+        (error <condition>
+               (fmt "cannot push block of size ~a on tower ~a" y x)))))
+  
+  (defgeneric pop (x))
+  
+  (defmethod pop ((x <tower>))
+    (let ((blocks (tower-blocks x)))
+      (if blocks
+          (progn
+            ((setter tower-blocks) x (cdr blocks))
+            (car blocks))
+        (error <condition>
+               (fmt "cannot pop block from empty tower ~a" x)))))
+  
+  ;;;-------------------------------------------------
+  ;;; Move n blocks from tower x1 to tower x2 using x3 as buffer
+  ;;;-------------------------------------------------
+  (defgeneric move (n x1 x2 x3))
+  
+  (defmethod move ((n <fpi>) (x1 <tower>) (x2 <tower>) (x3 <tower>))
+    (if (= n 1)
+        (progn
+          (push x2 (pop x1))
+          (print x1 nl x2 nl x3 nl nl))
+      (progn
+        (move (- n 1) x1 x3 x2)
+        (move 1 x1 x2 x3)
+        (move (- n 1) x3 x2 x1))))
+  
+  ;;;-------------------------------------------------
+  ;;; Initialize and run the 'Towers of Hanoi'
+  ;;;-------------------------------------------------
+  (defun hanoi ()
+    (let ((x1 (make <tower> id: 0))
+          (x2 (make <tower> id: 1))
+          (x3 (make <tower> id: 2)))
+      (build-tower x1 *max-tower-height*)
+      (build-tower x2 0)
+      (build-tower x3 0)
+      (print x1 nl x2 nl x3 nl nl)
+      (move *max-tower-height* x1 x2 x3)))
+  
+  (hanoi)
+  
+  ;;;-------------------------------------------------
+  )  ;; End of module hanoi
+  ;;;-------------------------------------------------
+ related lisp linux common-lisp scheme t standard-ml haskell dylan islisp interlisp lisp-machine-lisp le-lisp emacs-lisp autolisp openlisp picolisp newlisp racket guile clojure arc lfe
+ summary EuLisp is a statically and dynamically scoped Lisp dialect developed by a loose formation of industrial and academic Lisp users and developers from around Europe. The standardizers intended to create a new Lisp "less encumbered by the past" (compared to Common Lisp), and not so minimalist as Scheme. Another objective was to integrate the object-oriented programming paradigm well. It is a third-generation programming language.
+ created 2006
+ backlinksCount 59
+ pageId 4158686
+ revisionCount 71
+ dailyPageViews 14
+ appeared 1990
+
+status historical
+
+hopl 1139

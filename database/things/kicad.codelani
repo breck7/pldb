@@ -1,6 +1,7 @@
+title KiCad Legacy Layout
 appeared 1992
 type application
-wikipedia KiCad
+
 example
  (kicad_pcb (version 3)
   (host pcbnew "(2013-02-20 BZR 3963)-testing")
@@ -15,5 +16,145 @@ example
    (modules 2)
    (nets 3)
  ))
-reference http://kicad-pcb.org/help/file-formats/d
+
+patterns
+ hasCentralPackageRepository? false
+
 description KiCad writes all files in human readable ASCII. This makes manipulation by hand and scripting very easy.
+
+wikipedia https://en.wikipedia.org/wiki/KiCad
+ related linux freebsd gerber-image eagle opengl java vrml
+ summary KiCad (pronounced "Key-CAD") is a free software suite for electronic design automation (EDA). It facilitates the design of schematics for electronic circuits and their conversion to PCB designs. KiCad was originally developed by Jean-Pierre Charras. It features an integrated environment for schematic capture and PCB layout design. Tools exist within the package to create a bill of materials, artwork, Gerber files, and 3D views of the PCB and its components.
+ created 2007
+ backlinksCount 154
+ pageId 8853175
+ revisionCount 263
+ dailyPageViews 143
+ appeared 1992
+
+githubLanguage KiCad Legacy Layout
+ fileExtensions brd
+ trendingProjectsCount 0
+
+linguistGrammarRepo https://github.com/Alhadis/language-pcb
+ firstCommit 2017
+ lastCommit 2018
+ committerCount 1
+ commitCount 25
+ sampleCount 1
+ example
+  PCBNEW-BOARD Version 1 date Fri Oct 19 11:53:05 2012
+  
+  # Created by Pcbnew(2012-05-21 BZR 3261)-stable
+  
+  $GENERAL
+  encoding utf-8
+  LayerCount 2
+  Ly 1FFF8001
+  EnabledLayers 1FFF8001
+  Links 135
+  NoConn 11
+  Di 41844 16849 73060 58324
+  Ndraw 54
+  Ntrack 512
+  Nzone 0
+  BoardThickness 630
+  Nmodule 51
+  Nnets 44
+  $EndGENERAL
+  
+  $SHEETDESCR
+  Sheet A4 11700 8267
+  Title ""
+  Date "19 oct 2012"
+  Rev ""
+  Comp ""
+  Comment1 ""
+  Comment2 ""
+  Comment3 ""
+  Comment4 ""
+  $EndSHEETDESCR
+  
+  $SETUP
+  InternalUnit 0.000100 INCH
+  Layers 2
+  Layer[0] Back signal
+  Layer[15] Front signal
+  TrackWidth 80
+  TrackWidthList 200
+  TrackWidthList 500
+  TrackWidthList 1000
+  TrackClearence 80
+  ZoneClearence 200
+  TrackMinWidth 80
+  DrawSegmWidth 80
+  EdgeSegmWidth 150
+  ViaSize 270
+  ViaDrill 130
+  ViaMinSize 270
+  ViaMinDrill 130
+  ViaSizeList 310 160
+  ViaSizeList 370 200
+  ViaSizeList 420 250
+  MicroViaSize 200
+  MicroViaDrill 50
+  MicroViasAllowed 0
+  MicroViaMinSize 200
+  MicroViaMinDrill 50
+  TextPcbWidth 75
+  TextPcbSize 300 400
+  EdgeModWidth 80
+  TextModSize 600 600
+  TextModWidth 120
+  PadSize 551 551
+  PadDrill 150
+  Pad2MaskClearance 80
+  Pad2PasteClearanceRatio -0.12
+  AuxiliaryAxisOrg 0 0
+  PcbPlotParams (pcbplotparams (layerselection 284721153) (usegerberextensions true) (excludeedgelayer false) (linewidth 60) (plotframeref false) (viasonmask false) (mode 1) (useauxorigin false) (hpglpennumber 1) (hpglpenspeed 20) (hpglpendiameter 15) (hpglpenoverlay 0) (pscolor true) (psnegative false) (psa4output false) (plotreference false) (plotvalue false) (plotothertext true) (plotinvisibletext false) (padsonsilk false) (subtractmaskfromsilk false) (outputformat 1) (mirror false) (drillshape 1) (scaleselection 1) (outputdirectory ""))
+  $EndSETUP
+  
+  $EQUIPOT
+  Na 0 ""
+  St ~
+  $EndEQUIPOT
+  $EQUIPOT
+  Na 1 "/DC"
+  St ~
+  $EndEQUIPOT
+  $EQUIPOT
+  Na 2 "/DD"
+  St ~
+  $EndEQUIPOT
+  $EQUIPOT
+  Na 3 "/P0_0"
+  St ~
+  $EndEQUIPOT
+  $EQUIPOT
+  Na 4 "/P0_1"
+  St ~
+  $EndEQUIPOT
+  $EQUIPOT
+  Na 5 "/P0_2"
+  St ~
+  $EndEQUIPOT
+  $EQUIPOT
+  Na 6 "/P0_3"
+  St ~
+  $EndEQUIPOT
+  $EQUIPOT
+  Na 7 "/P0_4"
+  St ~
+  $EndEQUIPOT
+  $EQUIPOT
+  Na 8 "/P0_5"
+  St ~
+  $EndEQUIPOT
+  $EQUIPOT
+  Na 9 "
+
+reference http://kicad-pcb.org/help/file-formats/d
+status active
+fileExtensions sch lib brd kicad_pcb kicad_wks kicad_mod
+fileType text
+isOpenSource true

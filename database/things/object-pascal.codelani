@@ -1,3 +1,37 @@
+title Object Pascal
 appeared 1986
 type pl
-wikipedia Object_Pascal
+
+patterns
+ hasCentralPackageRepository? false
+ hasConstructors? true
+ hasOperatorOverloading? true
+
+wikipedia https://en.wikipedia.org/wiki/Object_Pascal
+ example
+  type
+     THelloWorld = class
+        procedure Put;
+        begin
+           PrintLn('Hello, World!');
+        end
+     end;
+  
+  var HelloWorld := THelloWorld.Create;
+  
+  HelloWorld.Put;
+ related x86-isa arm free-pascal powerpc sparc mips oxygene java javascript turbo-pascal pascal simula smalltalk csharp genie nim ios linux freebsd solaris ecmascript morfik visual-studio-editor android delphi
+ summary Object Pascal refers to a branch of object-oriented derivatives of Pascal, mostly known as the primary programming language of Embarcadero Delphi.
+ pageId 630175
+ dailyPageViews 149
+ created 2004
+ backlinksCount 412
+ revisionCount 548
+ appeared 1986
+ fileExtensions p pp pas
+
+status historical
+country US
+fileType text
+
+hopl 1170

@@ -1,5 +1,131 @@
+title Swift
 appeared 2014
 type pl
 creators Chris Lattner
+
+patterns
+ hasSingleDispatch? true
+ hasCentralPackageRepository? true
+ hasComments? true
+ hasImports? true
+  import UIKit
+  import UIKit.UITableViewController
+  let tvc = UITableViewController()
+  let vc = UIViewController()
+  let label = UILabel()
+ hasInterfaces? true
+  protocol MyProtocol {
+  init(parameter: Int)
+  var myVariable: Int { get set }
+  var myReadOnlyProperty: Int { get }
+  func myMethod()
+  func myMethodWithBody()
+  }
+  extension MyProtocol {
+  func myMethodWithBody() {
+    // implementation goes here
+    }
+  }
+ hasOperatorOverloading? true
+ hasSemanticIndentation? false
+ hasTypeInference? true
+
+wikipedia https://en.wikipedia.org/wiki/Swift_(programming_language)
+ example
+  var someSortOfPrintableObject: SupportsToString
+  ...
+  print(someSortOfPrintableObject.toString())
+ related linux freebsd csharp clu d haskell objective-c python ruby rust ios llvmir c smalltalk java unicode android kotlin
+ summary Swift is a general-purpose, multi-paradigm, compiled programming language developed by Apple Inc. for iOS, macOS, watchOS, tvOS, and Linux. Swift is designed to work with Apple's Cocoa and Cocoa Touch frameworks and the large body of existing Objective-C (ObjC) code written for Apple products. It is built with the open source LLVM compiler framework and has been included in Xcode since version 6. On platforms other than Linux, it uses the Objective-C runtime library which allows C, Objective-C, C++ and Swift code to run within one program. Apple intended Swift to support many core concepts associated with Objective-C, notably dynamic dispatch, widespread late binding, extensible programming and similar features, but "safer" (easier to catch software bugs); Swift has features addressing some common programming errors like null pointers and provides syntactic sugar to help avoid the pyramid of doom. Swift supports the concept of protocol extensibility, an extensibility system that can be applied to types, structs and classes, which Apple promotes as a real change in programming paradigms they term "protocol-oriented programming" (similar to traits). Swift was introduced at Apple's 2014 Worldwide Developers Conference (WWDC). It underwent an upgrade to version 1.2 during 2014 and a more major upgrade to Swift 2 at WWDC 2015. Initially a proprietary language, version 2.2 was made open-source software under the Apache License 2.0 on December 3, 2015, for Apple's platforms and Linux. In March 2017, Swift made the top 10 in the monthly TIOBE index ranking of popular programming languages, while since then it slipped down the list to 20.
+ pageId 42946389
+ dailyPageViews 1501
+ created 2014
+ backlinksCount 518
+ revisionCount 1256
+ appeared 2014
+ fileExtensions swift
+
+githubLanguage Swift
+ fileExtensions swift
+ trendingProjects
+  author name avatar url language languageColor stars forks currentPeriodStars description
+  LoopKit Loop https://github.com/LoopKit.png https://github.com/LoopKit/Loop Swift #ffac45 478 657 49 "An automated insulin delivery app template for iOS, built on LoopKit"
+  brentsimmons NetNewsWire https://github.com/brentsimmons.png https://github.com/brentsimmons/NetNewsWire Swift #ffac45 2174 151 728 "RSS reader for macOS."
+  dkhamsing open-source-ios-apps https://github.com/dkhamsing.png https://github.com/dkhamsing/open-source-ios-apps Swift #ffac45 21111 3506 354 "📱 Collaborative List of Open-Source iOS Apps"
+  pedrommcarrasco Brooklyn https://github.com/pedrommcarrasco.png https://github.com/pedrommcarrasco/Brooklyn Swift #ffac45 2926 131 200 "🍎 Screensaver inspired by Apple's Event on October 30, 2018"
+  yonaskolb XcodeGen https://github.com/yonaskolb.png https://github.com/yonaskolb/XcodeGen Swift #ffac45 2618 239 128 "A Swift command line tool for generating your Xcode project"
+  mozilla-mobile firefox-ios https://github.com/mozilla-mobile.png https://github.com/mozilla-mobile/firefox-ios Swift #ffac45 8877 2061 77 "Firefox for iOS"
+  httpswift swifter https://github.com/httpswift.png https://github.com/httpswift/swifter Swift #ffac45 2776 406 56 "Tiny http server engine written in Swift programming language."
+  WenchaoD FSPagerView https://github.com/WenchaoD.png https://github.com/WenchaoD/FSPagerView Swift #ffac45 4633 551 142 "FSPagerView is an elegant Screen Slide Library. It is extremely helpful for making Banner View、Product Show、Welcome/Guide Pages、Screen/ViewController Sliders."
+  marmelroy PhoneNumberKit https://github.com/marmelroy.png https://github.com/marmelroy/PhoneNumberKit Swift #ffac45 3094 357 97 "A Swift framework for parsing, formatting and validating international phone numbers. Inspired by Google's libphonenumber."
+  Alamofire Alamofire https://github.com/Alamofire.png https://github.com/Alamofire/Alamofire Swift #ffac45 31815 5728 273 "Elegant HTTP Networking in Swift"
+  JohnCoates Aerial https://github.com/JohnCoates.png https://github.com/JohnCoates/Aerial Swift #ffac45 15249 815 273 "Apple TV Aerial Screensaver for Mac"
+  ReactiveX RxSwift https://github.com/ReactiveX.png https://github.com/ReactiveX/RxSwift Swift #ffac45 17102 2889 232 "Reactive Programming in Swift"
+  luispadron UICircularProgressRing https://github.com/luispadron.png https://github.com/luispadron/UICircularProgressRing Swift #ffac45 1198 211 94 "A circular progress bar for iOS written in Swift"
+  apple swift-log https://github.com/apple.png https://github.com/apple/swift-log Swift #ffac45 1383 69 81 "A Logging API for Swift"
+  stephencelis SQLite.swift https://github.com/stephencelis.png https://github.com/stephencelis/SQLite.swift Swift #ffac45 6327 1092 86 "A type-safe, Swift-language layer over SQLite3."
+  matteocrippa awesome-swift https://github.com/matteocrippa.png https://github.com/matteocrippa/awesome-swift Swift #ffac45 17867 2509 205 "A collaborative list of awesome Swift libraries and resources. Feel free to contribute!"
+  SCENEE FloatingPanel https://github.com/SCENEE.png https://github.com/SCENEE/FloatingPanel Swift #ffac45 2768 188 128 "A clean and easy-to-use floating panel UI component for iOS"
+  krzyzanowskim CryptoSwift https://github.com/krzyzanowskim.png https://github.com/krzyzanowskim/CryptoSwift Swift #ffac45 7218 823 93 "CryptoSwift is a growing collection of standard and secure cryptographic algorithms implemented in Swift"
+  serhii-londar open-source-mac-os-apps https://github.com/serhii-londar.png https://github.com/serhii-londar/open-source-mac-os-apps Swift #ffac45 18202 1211 360 "🚀 Awesome list of open source applications for macOS."
+  HeroTransitions Hero https://github.com/HeroTransitions.png https://github.com/HeroTransitions/Hero Swift #ffac45 17276 1368 227 "Elegant transition library for iOS & tvOS"
+  Quick Quick https://github.com/Quick.png https://github.com/Quick/Quick Swift #ffac45 8386 777 82 "The Swift (and Objective-C) testing framework."
+  radex SwiftyUserDefaults https://github.com/radex.png https://github.com/radex/SwiftyUserDefaults Swift #ffac45 3871 266 55 "Modern Swift API for NSUserDefaults"
+  sindresorhus Gifski https://github.com/sindresorhus.png https://github.com/sindresorhus/Gifski Swift #ffac45 3753 109 595 "🌈 Convert videos to high-quality GIFs on your Mac"
+  Mortennn Dozer https://github.com/Mortennn.png https://github.com/Mortennn/Dozer Swift #ffac45 2187 78 162 "Hide status bar icons on macOS"
+  mxcl PromiseKit https://github.com/mxcl.png https://github.com/mxcl/PromiseKit Swift #ffac45 11928 1160 135 "Promises for Swift & ObjC."
+ trendingProjectsCount 26
+
+helloWorldCollection Swift
+ // Hello world in Swift
+ 
+ println("Hello, world!")
+
+linguistGrammarRepo https://github.com/textmate/swift.tmbundle
+ firstCommit 2014
+ lastCommit 2018
+ committerCount 11
+ commitCount 101
+ sampleCount 43
+ example
+  println("Hello, world")
+  
+
 website https://swift.org
-wikipedia Swift_(programming_language)
+status active
+
+replit swift
+
+twitter swiftlang
+
+fileExtensions swift
+fileType text
+wordRank 9077
+isOpenSource true
+
+tiobe Swift
+ currentRank 20
+
+meetup swift-language
+ memberCount 154306
+ groupCount 375
+
+linkedInSkill swift
+ peopleWithThisSkillCount 171143
+
+projectEuler Swift
+ memberCount
+  2019 523
+  2022 690
+
+subreddit swift
+ memberCount
+  2017 29890
+
+codeMirror swift
+
+rosettaCode Swift
+
+corporateDevelopers Apple
+indeedJobs swift developer
+ 2017 2043

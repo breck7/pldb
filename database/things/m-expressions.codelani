@@ -1,9 +1,20 @@
+title Meta Expressions
 appeared 1960
 type metaLanguage
-wikipedia M-expression
+
 example
   [1;2;3]
   f[x;y]
   label[square;λ[[x];product[x;x]]]
   [lessthan[x;0] → negative[x]; T → x]
+
 description The project of defining M-expressions precisely and compiling them or at least translating them into S-expressions was neither finalized nor explicitly abandoned. It just receded into the indefinite future, and a new generation of programmers appeared who preferred internal notation to any FORTRAN-like or ALGOL-like notation that could be devised.
+
+wikipedia https://en.wikipedia.org/wiki/M-expression
+ summary In computer programming, M-expressions (or meta-expressions) were an early proposed syntax for the Lisp programming language, inspired by contemporary languages such as Fortran  and ALGOL.
+ backlinksCount 93
+ pageId 301782
+ dailyPageViews 43
+ appeared 1960
+
+standsFor Meta Expressions

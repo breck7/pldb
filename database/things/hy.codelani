@@ -1,8 +1,70 @@
+title Hy
 appeared 2013
 type pl
-website http://hylang.org/
-github https://github.com/hylang/hy
-wikipedia Hy_(programming_language)
+
 example
  (+ "Hyllo " "World" "!")
+
+patterns
+ hasCentralPackageRepository? false
+
 description A dialect of Lisp that's embedded in Python
+
+wikipedia https://en.wikipedia.org/wiki/Hy_(programming_language)
+ example
+  => (print "Hy!")
+  Hy!
+  => (defn salutationsnm [name] (print (+ "Hy " name "!")))
+  => (salutationsnm "YourName")
+  Hy YourName!
+ related lisp ia-32 clojure python jvm
+ summary Hy (alternately, Hylang) is a programming language, a dialect of the language Lisp designed to interact with the language Python by translating expressions into Python's abstract syntax tree (AST). Hy was introduced at Python Conference (PyCon) 2013 by Paul Tagliamonte.Similar to Kawa's and Clojure's mapping of s-expressions onto the Java virtual machine (JVM), Hy is meant to operate as a transparent Lisp front end to Python's abstract syntax. Lisp allows operating on code as data (metaprogramming). Thus, Hy can be used to write domain-specific languages. Hy also allows Python libraries, including the standard library, to be imported and accessed alongside Hy code with a compiling step converting the data structure of both into Python's AST.
+ pageId 43723435
+ created 2015
+ backlinksCount 76
+ revisionCount 1
+ dailyPageViews 1
+ appeared 2013
+ fileExtensions hy
+
+githubLanguage Hy
+ fileExtensions hy
+ trendingProjectsCount 0
+
+githubRepo https://github.com/hylang/hy
+ firstCommit 2012
+ stars 2636
+ forks 278
+ subscribers 121
+ created 2012
+ updated 2018
+ description A dialect of Lisp that's embedded in Python
+ issues 161
+
+linguistGrammarRepo https://github.com/Slowki/hy.tmLanguage.git
+ firstCommit 2013
+ lastCommit 2018
+ committerCount 30
+ commitCount 97
+ sampleCount 3
+ example
+  ;; Fibonacci example in Hy.
+  
+  (defn fib [n]
+    (if (<= n 2) n
+        (+ (fib (- n 1)) (fib (- n 2)))))
+  
+  (if (= __name__ "__main__")
+    (for [x [1 2 3 4 5 6 7 8]]
+      (print (fib x))))
+  
+
+website http://hylang.org/
+status active
+
+tryItOnline hy
+
+fileType text
+isOpenSource true
+
+rosettaCode Hy

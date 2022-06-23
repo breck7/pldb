@@ -1,7 +1,7 @@
+title frost
 appeared 2017
 type pl
-website https://www.frostlang.org/
-github https://github.com/ethannicholas/Frost
+
 example
  ========================================================
  Simple version of the Unix `head` utility. Reads a file
@@ -35,3 +35,14 @@ example
      }
      head(File(args[1]), count)
  }
+
+githubRepo https://github.com/ethannicholas/Frost
+ firstCommit 2017
+ stars 17
+ forks 2
+ subscribers 2
+ created 2014
+ updated 2019
+ description Frost is a powerful, general purpose, multi-paradigm programming language
+
+website https://www.frostlang.org/

@@ -1,5 +1,7 @@
+title webql
 appeared 2001
 type queryLanguage
+
 example
  select
    URL,
@@ -11,5 +13,12 @@ example
    submitting values 'wikipedia' for 'q'
  where
    url_host(URL) not matching 'google'
-reference https://wikivisually.com/wiki/WebQL
+
+patterns
+ hasCentralPackageRepository? false
+
 description WebQL was developed by QL2 Softaware in 2006. It is used for data integration and collection of unstructured and structured sources including the Web, PDF and Word documents, spreadsheets, email repositories, corporate data stores and more. It is also capable of Optical Character Recognition that enables it to retrive text within images. WebQL also support XML data of arbitrary size, and APIs for embedding WebQL in C, Java or .NET programs.
+reference https://wikivisually.com/wiki/WebQL
+status historical
+fileType text
+corporateDevelopers QL2 Software

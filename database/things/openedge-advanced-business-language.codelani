@@ -1,3 +1,39 @@
+title OpenEdge ABL
 appeared 2006
 type pl
-wikipedia OpenEdge_Advanced_Business_Language
+
+patterns
+ hasCentralPackageRepository? false
+
+wikipedia https://en.wikipedia.org/wiki/OpenEdge_Advanced_Business_Language
+ example
+  FOR EACH customer WHERE customer.custno = 14 EXCLUSIVE-LOCK:
+      ASSIGN customer.salesman = 'Fred'.
+  END.
+ related sql isbn
+ summary OpenEdge Advanced Business Language, or OpenEdge ABL for short, is a business application development language created and maintained by Progress Software Corporation (PSC). The language, typically classified as a fourth-generation programming language, uses an English-like syntax to simplify software development. The language was called PROGRESS or Progress 4GL up until version 9, but in 2006 PSC changed the name to OpenEdge Advanced Business Language (OpenEdge ABL) in order to overcome a presumed industry perception that 4GLs were less capable than other languages. A subset of the language, called SpeedScript, is used in the development of web applications.OpenEdge ABL helps developers to develop applications optionally using its own integrated relational database and programming tool. These applications are portable across computing systems and allow access to various popular data sources without having to learn the underlying data access methods. This means that the end-user of these products can be unaware of the underlying architecture. By combining a fourth generation language and relational database, OpenEdge ABL allows the use of the Rapid Application Development (RAD) model for developing software. A programmer and even end users can do rapid prototyping using the integrated and GUI tools of the development environment.
+ pageId 1071357
+ created 2004
+ backlinksCount 36
+ revisionCount 308
+ dailyPageViews 98
+ appeared 2006
+
+githubLanguage OpenEdge ABL
+ fileExtensions p cls w
+ trendingProjectsCount 0
+
+linguistGrammarRepo https://github.com/jfairbank/Sublime-Text-2-OpenEdge-ABL
+ firstCommit 2012
+ lastCommit 2016
+ committerCount 4
+ commitCount 21
+ sampleCount 6
+ example
+  MESSAGE "Hello, world!".
+  
+
+aka abl
+status active
+fileType text
+isOpenSource false

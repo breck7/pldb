@@ -1,5 +1,7 @@
+title dslx
 appeared 2020
 type pl
+
 example
  fn cast_to_array(x: u6) -> u2[3] {
    x as u2[3]
@@ -43,5 +45,6 @@ example
  
    ()
  }
-reference https://google.github.io/xls/dslx_reference/
+
 description DSLX is a domain specific, functional language to build hardware that can also run effectively as host software. The DSL targets the XLS compiler (by conversion to XLS IR) to enable flows for FPGAs and ASICs (note that other frontends will become available in the future). DSLX mimics Rust, while being an immutable expression-based dataflow DSL with hardware-oriented features; e.g. arbitrary bitwidths, entirely fixed size objects, fully analyzeable call graph, etc. To avoid arbitrary new syntax/semantics choices the DSL mimics Rust where it is reasonably possible; for example, integer conversions all follow the same semantics as Rust.
+reference https://google.github.io/xls/dslx_reference/

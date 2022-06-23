@@ -1,3 +1,74 @@
+title Apollo Guidance Computer
 appeared 1966
 type pl
-wikipedia Apollo_Guidance_Computer
+
+patterns
+ hasCentralPackageRepository? false
+
+wikipedia https://en.wikipedia.org/wiki/Apollo_Guidance_Computer
+ related si assembly-language
+ summary The Apollo Guidance Computer (AGC) was a digital computer produced for the Apollo program that was installed on board each Apollo Command Module (CM) and Lunar Module (LM). The AGC provided computation and electronic interfaces for guidance, navigation, and control of the spacecraft. The AGC has a 16-bit word length, with 15 data bits and one parity bit. Most of the software on the AGC is stored in a special read-only memory known as core rope memory, fashioned by weaving wires through magnetic cores, though a small amount of read-write core memory is available. Astronauts communicated with the AGC using a numeric display and keyboard called the DSKY (DiSplay&KeYboard, pronounced 'DISS-key'). The AGC and its DSKY user interface were developed in the early 1960s for the Apollo program by the MIT Instrumentation Laboratory and first flew in 1966. The AGC was one of the first integrated circuit-based computers. The computer's performance was comparable to the first generation of home computers from the late 1970s, such as the Apple II, TRS-80, and Commodore PET.
+ backlinksCount 174
+ pageId 188887
+ created 2003
+ revisionCount 733
+ dailyPageViews 561
+ appeared 1966
+
+githubLanguage Apollo Guidance Computer
+ fileExtensions agc
+ trendingProjectsCount 0
+
+linguistGrammarRepo https://github.com/Alhadis/language-agc
+ firstCommit 2016
+ lastCommit 2017
+ committerCount 1
+ commitCount 17
+ sampleCount 1
+ example
+  # Copyright:	Public domain.
+  # Filename:	BURN_BABY_BURN--MASTER_IGNITION_ROUTINE.agc
+  # Purpose: 	Part of the source code for Luminary 1A build 099.
+  #		It is part of the source code for the Lunar Module's (LM)
+  #		Apollo Guidance Computer (AGC), for Apollo 11.
+  # Assembler:	yaYUL
+  # Contact:	Ron Burkey <info@sandroid.org>.
+  # Website:	www.ibiblio.org/apollo.
+  # Pages:	731-751
+  # Mod history:	2009-05-19 RSB	Adapted from the corresponding 
+  #				Luminary131 file, using page 
+  #				images from Luminary 1A.
+  #		2009-06-07 RSB	Corrected 3 typos.
+  #		2009-07-23 RSB	Added Onno's notes on the naming
+  #				of this function, which he got from
+  #				Don Eyles.
+  #
+  # This source code has been transcribed or otherwise adapted from
+  # digitized images of a hardcopy from the MIT Museum.  The digitization
+  # was performed by Paul Fjeld, and arranged for by Deborah Douglas of
+  # the Museum.  Many thanks to both.  The images (with suitable reduction
+  # in storage size and consequent reduction in image quality as well) are
+  # available online at www.ibiblio.org/apollo.  If for some reason you
+  # find that the images are illegible, contact me at info@sandroid.org
+  # about getting access to the (much) higher-quality images which Paul
+  # actually created.
+  #
+  # Notations on the hardcopy document read, in part:
+  #
+  #	Assemble revision 001 of AGC program LMY99 by NASA 2021112-61
+  #	16:27 JULY 14, 1969 
+  
+  # Page 731
+  ## At the get-together of the AGC developers celebrating the 40th anniversary
+  ## of the first moonwalk, Don Eyles (one of the authors of this routine along
+  ## with Peter Adler) has related to us a little interesting history behind the
+  ## naming of the routine.<br>
+  ## <br>
+  ## It traces back to 1965 and the Los Angeles riots, and was inspired 
+  ## by disc jockey extraordinaire and radio station owner Magnificent Montague.
+  ## Magnificent Montague used the phrase "Burn, baby! BURN!" when spinning the 
+  ## hottest new records. Magnificent Montague was the charismatic voice of
+  ## soul music in Chicago, New York, and
+
+status active
+fileType text

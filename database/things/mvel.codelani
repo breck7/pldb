@@ -1,3 +1,45 @@
+title MVEL
 appeared 2003
 type pl
-wikipedia MVEL
+
+patterns
+ hasCentralPackageRepository? false
+
+wikipedia https://en.wikipedia.org/wiki/MVEL
+ example
+  import java.util.*;
+  
+  // the main quicksort algorithm
+  def quicksort(list) {
+      if (list.size() <= 1) {
+           list;
+      }
+      else {
+           pivot = list[0];
+           concat(quicksort(($ in list if $ < pivot)), pivot, quicksort(($ in list if $ > pivot)));
+      }
+  }
+  
+  // define method to concatenate lists.
+  def concat(list1, pivot, list2) {
+      concatList = new ArrayList(list1);
+      concatList.add(pivot);
+      concatList.addAll(list2);
+      concatList;
+  }
+  
+  // create a list to sort
+  list = [5,2,4,1,18,10,15,1,0];
+  
+  // sort it!
+  quicksort(list);
+ related java xml lisp ognl
+ summary MVFLEX Expression Language (MVEL) is a hybrid dynamic/statically typed, embeddable Expression Language and runtime for the Java Platform.  Originally started as a utility language for an application framework, the project is now developed completely independently. MVEL is typically used for exposing basic logic to end-users and programmers through configuration such as XML files or annotations.  It may also be used to parse simple JavaBean expressions. The runtime allows MVEL expressions to be executed either interpretively, or through a pre-compilation process with support for runtime bytecode generation to remove overhead. Since MVEL is meant to augment Java-based software, it borrows most of its syntax directly from the Java programming language with some minor differences and additional capabilities. For example: as a side effect of MVEL's typing model, which treats class and method references as regular variables, it is possible to use both class and function pointers (but only for static methods).  MVEL also allows collections to be represented as folds (or projections) in a Lisp-like syntax.
+ created 2008
+ backlinksCount 13
+ pageId 19100445
+ revisionCount 75
+ dailyPageViews 43
+
+status historical
+isOpenSource true

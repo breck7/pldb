@@ -1,4 +1,27 @@
+title Neko programming language
 appeared 2005
 type pl
+
+patterns
+ hasCentralPackageRepository? false
+ hasComments? true
+
+wikipedia https://en.wikipedia.org/wiki/Neko_(programming_language)
+ example
+  get_params = $loader.loadprim("mod_neko@get_params",0);
+  $print("PARAMS = "+get_params());
+ related c ocaml ia-32 linux haxe jvm groovy
+ summary Neko is a high-level dynamically typed programming language developed by Nicolas Cannasse as part of research and development (R&D) efforts at two indie video game firms in Bordeaux, France: first at Motion Twin and then at Shiro Games.
+ pageId 15110419
+ created 2008
+ backlinksCount 20
+ revisionCount 59
+ dailyPageViews 32
+ appeared 2005
+
 website https://nekovm.org/
-wikipedia Neko_(programming_language)
+status historical
+fileType text
+isOpenSource true
+
+rosettaCode Neko

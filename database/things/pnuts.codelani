@@ -1,3 +1,24 @@
+title Pnuts
 appeared 1997
 type pl
-wikipedia Pnuts
+
+patterns
+ hasCentralPackageRepository? false
+
+wikipedia https://en.wikipedia.org/wiki/Pnuts
+ example
+  use("pnuts.lib") // Standard module that makes sort, println and other functions available. 
+  countries = ["Canada", "Austria", "Brazil"] 
+  sort(countries) 
+  for (country : countries) println("Hello " + country)
+ related java
+ summary Pnuts is a dynamic scripting language for the Java platform. It is designed to be used in a dual language system with the Java programming language. The goals of the Pnuts project are to provide a small, fast scripting language that has tight integration with the Java language. Pnuts uses syntax that is simple and friendly to Java developers, while also being very expressive.
+ created 2008
+ backlinksCount 11
+ pageId 16718543
+ revisionCount 26
+ dailyPageViews 8
+ appeared 1997
+
+status historical
+isOpenSource true

@@ -1,4 +1,49 @@
+title JSONiq
 appeared 2011
 type queryLanguage
+
+patterns
+ hasCentralPackageRepository? false
+
+wikipedia https://en.wikipedia.org/wiki/JSONiq
+ example
+  for $p in collection("persons")
+   return 
+     <person>
+       <firstName>{$p("firstName")}</firstName>
+       <lastName>{$p("lastName")}</lastName>
+       <age>{$p("age")}</age>
+     </person>
+ related xquery sql json xml isbn
+ summary JSONiq is a query and functional programming language that is designed to declaratively query and transform collections of hierarchical and heterogeneous data in format of JSON, XML, as well as unstructured, textual data. JSONiq is an open specification published under the Creative Commons Attribution-ShareAlike 3.0 license. It is based on the XQuery language, with which it shares the same core expressions and operations on atomic types. JSONiq comes in two syntactical flavors, which both support JSON and XML natively.  The JSONiq syntax (a superset of JSON) extended with XML support through a compatible subset of XQuery. The XQuery syntax (native XML support) extended with JSON support through a compatible subset (the JSONiq extension to XQuery) of the above JSONiq syntax.
+ pageId 40213347
+ created 2013
+ backlinksCount 11
+ revisionCount 14
+ dailyPageViews 6
+
+githubLanguage JSONiq
+ fileExtensions jq
+ trendingProjectsCount 0
+
+linguistGrammarRepo https://github.com/wcandillon/language-jsoniq
+ firstCommit 2015
+ lastCommit 2016
+ committerCount 2
+ commitCount 108
+ sampleCount 2
+ example
+  (: Query for returning one database entry :) 
+  
+  import module namespace req = "http://www.28msec.com/modules/http-request";
+  import module namespace catalog = "http://guide.com/catalog";
+  
+  variable $id := (req:param-values("id"), "London")[1];
+  variable $part := (req:param-values("part"), "main")[1];
+  
+  catalog:get-data-by-key($id, $part)
+  
+
 website http://www.jsoniq.org/
-wikipedia JSONiq
+status active
+fileType text

@@ -1,3 +1,27 @@
+title Sawzall programming language
 appeared 2003
 type pl
-wikipedia Sawzall_(programming_language)
+
+patterns
+ hasCentralPackageRepository? false
+
+wikipedia https://en.wikipedia.org/wiki/Sawzall_(programming_language)
+ example
+  count: table sum of int;
+  total: table sum of float;
+  sum_of_squares: table sum of float;
+  x: float = input;
+  emit count <- 1;
+  emit total <- x;
+  emit sum_of_squares <- x * x;
+ related go protobuf gfs x86-isa
+ summary Sawzall is a procedural domain-specific programming language, used by Google to process large numbers of individual log records. Sawzall was first described in 2003, and the szl runtime was open-sourced in August 2010. However, since the MapReduce table aggregators have not been released, the open-sourced runtime is not useful for large-scale data analysis of multiple log files off the shelf. Sawzall has been replaced by Lingo (logs in Go) for most purposes within Google.
+ dailyPageViews 17
+ pageId 12640293
+ created 2007
+ backlinksCount 470
+ revisionCount 59
+ appeared 2003
+
+status historical
+fileType text

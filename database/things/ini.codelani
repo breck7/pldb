@@ -1,3 +1,53 @@
+title INI
 appeared 1987
 type metaLanguage
-wikipedia INI_file
+
+patterns
+ hasCentralPackageRepository? false
+ hasComments? true
+  # a '#' or ';' character indicates
+  ; a comment
+ hasEscapeCharacters? true
+  ; \" \\ \n \t \b
+  [section "subsection with \"quotes\""]
+ hasIdentifiers? true
+  [branch "master"]
+  remote = origin
+  merge = refs/heads/master
+ isCaseSensitive? true
+  [subsections "areCaseSensitive"]
+
+wikipedia https://en.wikipedia.org/wiki/INI_file
+ example
+  GetPrivateProfileString("owner", "name", ... , "c:\\programs\\oldprogram\\dbsettings.ini");
+ related xml linux unix php unicode c json yaml
+ summary The INI file format is an informal standard for configuration files for some platforms or software. INI files are simple text files with a basic structure composed of sections, properties, and values. In MS-DOS and 16-bit Windows platforms up through Windows ME, the INI file served as the primary mechanism to configure operating system and installed applications features, such as device drivers, fonts, startup launchers, and things that needed to be initialized in booting Windows. INI files were also generally used by applications to store their individual settings. Starting with Windows NT, Microsoft favored the use of the registry, and began to steer developers away from using INI files for configuration. All subsequent versions of Windows have used the Windows Registry for system configuration, and applications built on the .NET Framework use special XML .config files. The APIs still exist in Windows, however, and developers may still use them. The name "INI file" comes from the commonly used filename extension .INI, which stands for "initialization". Other common initialization file extensions are .CFG, .conf, and .TXT, especially CONFIG.SYS and 'config.txt' occurrences. Linux and Unix systems also use a similar file format for system configuration. In addition, platform-agnostic software may use this file format for configuration. It is human-readable and simple to parse, so it is a usable format for configuration files that do not require much greater complexity. For example, the platform-agnostic PHP uses the INI format for its "php.ini" configuration file in both Windows and Linux systems. Desktop.ini files determine how a folder is displayed by Windows, such as the icon used by that folder.
+ pageId 1908172
+ dailyPageViews 546
+ created 2005
+ backlinksCount 74
+ revisionCount 437
+ appeared 2001
+
+githubLanguage INI
+ fileExtensions ini cfg lektorproject prefs pro properties
+ trendingProjectsCount 0
+
+linguistGrammarRepo https://github.com/textmate/ini.tmbundle
+ firstCommit 2005
+ lastCommit 2013
+ committerCount 6
+ commitCount 26
+ sampleCount 6
+ example
+  title=Mindstorms
+  isbn=0465046290
+  author=Seymour Papert
+  pubmonth=198001
+  subject=children computers powerful ideas LOGO education
+  url=http://www.papert.org/
+
+status active
+fileType text
+
+antlr https://github.com/antlr/grammars-v4/tree/master//codelani/rawData/antlr/yaip

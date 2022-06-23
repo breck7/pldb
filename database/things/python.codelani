@@ -1,6 +1,216 @@
+title Python
 appeared 1991
 type pl
 creators Guido van Rossum
+
+patterns
+ canWriteToDisk? true
+  with open('helloworld.txt', 'w') as filehandle:
+   filehandle.write('Hello, world!\n')
+ hasDuckTyping? true
+ hasSingleDispatch? true
+ hasBitWiseOperators? true
+  x << y
+ canDoShebang? true
+  #!/usr/bin/env python
+ hasSymbolTables? true
+  # https://eli.thegreenplace.net/2010/09/18/python-internals-symbol-tables-part-1
+ hasDynamicProperties? true
+  class Person (object):
+    def __init__(self, name):
+     self.name = name
+  
+  person = Person("John")
+  person.age = 50
+ hasBooleans? true
+  result = true
+ hasCentralPackageRepository? true
+ hasClasses? true
+  class Person (object):
+    def __init__(self, name):
+      self.name = name
+ hasConditionals? true
+  if True:
+   print("Hello world")
+ hasComments? true
+  # This is a comment
+ hasBlockComments? true
+  '''
+  This is a multiline
+  comment.
+  '''
+ hasConstructors? true
+ hasGenerators? true
+  https://wiki.python.org/moin/Generators
+ hasDirectives? true
+  from __future__ import feature
+  # coding=<encoding name>
+ hasIdentifiers? true
+  name = "John"
+ hasImports? true
+  import datetime
+  oTime = datetime.datetime.now()
+  from my_pkg import my_funcs
+ hasInfixNotation? true
+  seven = 3 + 4
+ hasIterators? true
+  https://www.w3schools.com/python/python_iterators.asp
+ hasMixins? true
+  # https://easyaspython.com/mixins-for-fun-and-profit-cb9962760556
+  class EssentialFunctioner(LoggerMixin, object):
+ hasMultilineStrings? true
+  template = """This is the first line.
+  This is the second line.
+  This is the third line."""
+ hasMultipleInheritance? true
+  class Base1:
+      pass
+  class Base2:
+      pass
+  class MultiDerived(Base1, Base2):
+      pass
+  # Or multilevel inheritance:
+  class Base:
+      pass
+  class Derived1(Base):
+      pass
+  class Derived2(Derived1):
+      pass
+ hasOperatorOverloading? true
+  # Python Program illustrate how  
+  # to overload an binary + operator 
+    
+  class A: 
+      def __init__(self, a): 
+          self.a = a 
+    
+      # adding two objects  
+      def __add__(self, o): 
+          return self.a + o.a  
+  ob1 = A(1) 
+  ob2 = A(2) 
+  ob3 = A("Geeks") 
+  ob4 = A("For") 
+    
+  print(ob1 + ob2) 
+  print(ob3 + ob4)
+ hasSemanticIndentation? true
+ hasInheritance? true
+  class SumComputer(object):
+     def __init__(self, a, b):
+         self.a = a
+         self.b = b
+     def transform(self, x):
+         raise NotImplementedError
+     def inputs(self):
+         return range(self.a, self.b)
+     def compute(self):
+         return sum(self.transform(value) for value in self.inputs())
+   class SquareSumComputer(SumComputer):
+       def transform(self, x):
+           return x * x
+   class CubeSumComputer(SumComputer):
+       def transform(self, x):
+           return x * x * x
+ hasStrings? true
+  greeting = "hello world"
+ hasZeroBasedNumbering? true
+ hasDisposeBlocks? true
+  with resource_context_manager() as resource:
+     # Perform actions with the resource.
+  # Perform other actions where the resource is guaranteed to be deallocated.
+
+wikipedia https://en.wikipedia.org/wiki/Python_(programming_language)
+ related jython micropython stackless-python cython abc algol-68 c dylan haskell icon java lisp modula-3 perl boo cobra coffeescript d f-sharp falcon genie go groovy javascript julia nim ruby swift setl unix unicode standard-ml pascal regex csharp common-lisp scheme objective-c numpy mime http sagemath llvmir jvm java-bytecode cil pyrex mercurial python-for-s60 qt django scipy matplotlib mathematical-notation gdb freebsd ecmascript ocaml tcl erlang
+ summary Python is a widely used high-level programming language for general-purpose programming, created by Guido van Rossum and first released in 1991. An interpreted language, Python has a design philosophy that emphasizes code readability (notably using whitespace indentation to delimit code blocks rather than curly brackets or keywords), and a syntax that allows programmers to express concepts in fewer lines of code than might be used in languages such as C++ or Java. It provides constructs that enable clear programming on both small and large scales. Python features a dynamic type system and automatic memory management. It supports multiple programming paradigms, including object-oriented, imperative, functional and procedural, and has a large and comprehensive standard library. Python interpreters are available for many operating systems. CPython, the reference implementation of Python, is open source software and has a community-based development model, as do nearly all of its variant implementations. CPython is managed by the non-profit Python Software Foundation.
+ pageId 23862
+ dailyPageViews 7204
+ created 2001
+ backlinksCount 6849
+ revisionCount 6342
+ appeared 1991
+ fileExtensions py pyc pyd pyo
+
+githubLanguage Python
+ fileExtensions py bzl cgi fcgi gyp gypi lmi py3 pyde pyi pyp pyt pyw rpy spec tac wsgi xpy
+ trendingProjects
+  author name avatar url language languageColor stars forks currentPeriodStars description
+  CorentinJ Real-Time-Voice-Cloning https://github.com/CorentinJ.png https://github.com/CorentinJ/Real-Time-Voice-Cloning Python #3572A5 7049 955 4051 "Clone a voice in 5 seconds to generate arbitrary speech in real-time"
+  Yorko mlcourse.ai https://github.com/Yorko.png https://github.com/Yorko/mlcourse.ai Python #3572A5 5417 3816 871 "Open Machine Learning Course"
+  iperov DeepFaceLab https://github.com/iperov.png https://github.com/iperov/DeepFaceLab Python #3572A5 8645 2006 3166 "DeepFaceLab is a tool that utilizes machine learning to replace faces in videos. Includes prebuilt ready to work standalone Windows 7,8,10 binary (look readme.md)."
+  taki0112 UGATIT https://github.com/taki0112.png https://github.com/taki0112/UGATIT Python #3572A5 3646 593 2798 "Official Tensorflow implementation of U-GAT-IT: Unsupervised Generative Attentional Networks with Adaptive Layer-Instance Normalization for Image-to-Image Translation"
+  shengqiangzhang examples-of-web-crawlers https://github.com/shengqiangzhang.png https://github.com/shengqiangzhang/examples-of-web-crawlers Python #3572A5 4155 1295 1321 "一些非常有趣的python爬虫例子,对新手比较友好,主要爬取淘宝、天猫、微信、豆瓣、QQ等网站。(Some interesting examples of python crawlers that are friendly to beginners. )"
+  google-research google-research https://github.com/google-research.png https://github.com/google-research/google-research Python #3572A5 3329 488 724 "Google AI Research"
+  deepfakes faceswap https://github.com/deepfakes.png https://github.com/deepfakes/faceswap Python #3572A5 24602 8021 3172 "Deepfakes Software For All"
+  znxlwm UGATIT-pytorch https://github.com/znxlwm.png https://github.com/znxlwm/UGATIT-pytorch Python #3572A5 1150 199 933 "Official PyTorch implementation of U-GAT-IT: Unsupervised Generative Attentional Networks with Adaptive Layer-Instance Normalization for Image-to-Image Translation"
+  pwxcoo chinese-xinhua https://github.com/pwxcoo.png https://github.com/pwxcoo/chinese-xinhua Python #3572A5 6111 1309 535 "📙 中华新华字典数据库。包括歇后语，成语，词语，汉字。"
+  tlbootcamp tlroadmap https://github.com/tlbootcamp.png https://github.com/tlbootcamp/tlroadmap Python #3572A5 1965 184 806 "👩🏼‍💻👨🏻‍💻Карта навыков и модель развития тимлидов"
+  pytorch fairseq https://github.com/pytorch.png https://github.com/pytorch/fairseq Python #3572A5 5336 1168 536 "Facebook AI Research Sequence-to-Sequence Toolkit written in Python."
+  vinta awesome-python https://github.com/vinta.png https://github.com/vinta/awesome-python Python #3572A5 72704 14251 2125 "A curated list of awesome Python frameworks, libraries, software and resources"
+  Avik-Jain 100-Days-Of-ML-Code https://github.com/Avik-Jain.png https://github.com/Avik-Jain/100-Days-Of-ML-Code Python #3572A5 25578 6210 861 "100 Days of ML Coding"
+  pandas-dev pandas https://github.com/pandas-dev.png https://github.com/pandas-dev/pandas Python #3572A5 21188 8366 561 "Flexible and powerful data analysis / manipulation library for Python, providing labeled data structures similar to R data.frame objects, statistical functions, and much more"
+  timgrossmann InstaPy https://github.com/timgrossmann.png https://github.com/timgrossmann/InstaPy Python #3572A5 8694 2384 280 "📷 Instagram Bot - Tool for automated Instagram interactions"
+  robotframework robotframework https://github.com/robotframework.png https://github.com/robotframework/robotframework Python #3572A5 3746 1186 153 "Generic automation framework for acceptance testing and RPA"
+  google python-fire https://github.com/google.png https://github.com/google/python-fire Python #3572A5 15088 900 469 "Python Fire is a library for automatically generating command line interfaces (CLIs) from absolutely any Python object."
+  eriklindernoren ML-From-Scratch https://github.com/eriklindernoren.png https://github.com/eriklindernoren/ML-From-Scratch Python #3572A5 13039 2386 1269 "Machine Learning From Scratch. Bare bones NumPy implementations of machine learning models and algorithms with a focus on accessibility. Aims to cover everything from linear regression to deep learning."
+  nvbn thefuck https://github.com/nvbn.png https://github.com/nvbn/thefuck Python #3572A5 46597 2305 1380 "Magnificent app which corrects your previous console command."
+  instagrambot instabot https://github.com/instagrambot.png https://github.com/instagrambot/instabot Python #3572A5 1902 648 151 "🐙 Free Instagram scripts, bots and Python API wrapper. Get free instagram followers with our auto like, auto follow and other scripts!"
+  public-apis public-apis https://github.com/public-apis.png https://github.com/public-apis/public-apis Python #3572A5 61065 6583 1402 "A collective list of free APIs for use in software and web development."
+  tiangolo fastapi https://github.com/tiangolo.png https://github.com/tiangolo/fastapi Python #3572A5 4182 224 516 "FastAPI framework, high performance, easy to learn, fast to code, ready for production"
+  521xueweihan HelloGitHub https://github.com/521xueweihan.png https://github.com/521xueweihan/HelloGitHub Python #3572A5 15415 1708 1008 "Find pearls on open-source seashore 分享 GitHub 上有趣、入门级的开源项目"
+  3b1b manim https://github.com/3b1b.png https://github.com/3b1b/manim Python #3572A5 13205 1540 1041 "Animation engine for explanatory math videos"
+  xingyizhou CenterNet https://github.com/xingyizhou.png https://github.com/xingyizhou/CenterNet Python #3572A5 2194 503 289 "Object detection, 3D detection, and pose estimation using center point detection:"
+ trendingProjectsCount 26
+
+linguistGrammarRepo https://github.com/tree-sitter/tree-sitter-python
+ sampleCount 20
+ example
+  #!/usr/bin/env python2.4
+  print "Python"
+  
+
 website https://www.python.org/
-wikipedia Python_(programming_language)
 reference https://www.programiz.com/python-programming/keyword-list
+status active
+
+replit python
+
+country NL
+fileExtensions py pyc pyd pyo
+fileType text
+wordRank 4048
+
+tiobe Python
+ currentRank 4
+
+meetup python
+ memberCount 1424303
+ groupCount 1964
+
+linkedInSkill python
+ peopleWithThisSkillCount 1801117
+
+projectEuler Python
+ memberCount
+  2019 46780
+  2022 60791
+
+hopl 1658
+
+subreddit Python
+ memberCount
+  2017 197722
+
+quineRelay Python
+
+ubuntuPackage python
+
+codeMirror python
+
+rosettaCode Python
+
+antlr https://github.com/antlr/grammars-v4/tree/master/python
+
+corporateDevelopers Python Software Foundation
+indeedJobs python engineer
+ 2017 28965

@@ -1,4 +1,186 @@
+title PureBasic
 appeared 1998
 type pl
+
+patterns
+ hasCentralPackageRepository? false
+ hasComments? true
+
+wikipedia https://en.wikipedia.org/wiki/PureBasic
+ example
+  Structure type_name
+     field_name.type ; Single field. Perhaps the structures attachment.
+     field_name[count].type ; Static arrays.
+     ; ... 
+     ; Optional construction StructureUnion .. EndStructureUnion allows you
+     ; to combine multiple fields into one area of memory
+     ; that is sometimes required for the conversion types.
+     StructureUnion
+        type_name.type
+        ; ... 
+     EndStructureUnion 
+  EndStructure
+ related basic linux x86-isa powerpc isbn
+ summary PureBasic is a commercially distributed procedural computer programming language and integrated development environment based on BASIC and developed by Fantaisie Software for Windows 32/64-bit, Linux 32/64-bit, and macOS. An Amiga version is available, although it has been discontinued and some parts of it are released as open source. The first public release of PureBasic for Windows was on December 17, 2000. It has been continually updated since. PureBasic has a "lifetime license model". As cited on the website, the very first PureBasic user (who registered in 1998) still has free access to new updates and this is not going to change.PureBasic compiles directly to x86, x86-64, PowerPC or 680x0  instruction sets, generating small standalone executables and DLLs which need no runtime libraries beyond the standard system libraries. Programs developed without using the platform-specific application programming interfaces (APIs) can be built easily from the same source file with little or no modification. PureBasic supports inline assembly, allowing the developer to include FASM assembler commands within PureBasic source code, while using the variables declared in PureBasic source code, enabling experienced programmers to improve the speed of speed-critical sections of code. PureBasic supports and has integrated the OGRE 3D Environment. Other 3D environments such as the Irrlicht Engine are unofficially supported.
+ pageId 60643
+ created 2002
+ backlinksCount 135
+ revisionCount 349
+ dailyPageViews 41
+ appeared 1998
+
+githubLanguage PureBasic
+ fileExtensions pb pbi
+ trendingProjects
+  author name avatar url language languageColor stars forks currentPeriodStars description
+  onnx onnx https://github.com/onnx.png https://github.com/onnx/onnx PureBasic #5a6986 6751 1080 196 "Open Neural Network Exchange"
+  alibaba x-deeplearning https://github.com/alibaba.png https://github.com/alibaba/x-deeplearning PureBasic #5a6986 2862 709 123 "An industrial deep learning framework for high-dimension sparse data"
+ trendingProjectsCount 3
+
+linguistGrammarRepo https://github.com/telnet23/language-basic
+ sampleCount 2
+ example
+  EnableExplicit
+  
+  ; ##################################################### Includes ####################################################
+  
+  XIncludeFile "Includes/AudioOut.pbi"
+  
+  ; ##################################################### Prototypes ##################################################
+  
+  ; ##################################################### Structures ##################################################
+  
+  ; ##################################################### Constants ###################################################
+  
+  #Samplerate = 44100
+  
+  ; ##################################################### Structures ##################################################
+  
+  Structure Main
+    *AudioOut
+    
+    Quit.i
+  EndStructure
+  Global Main.Main
+  
+  Structure Main_Window
+    ID.i
+    
+    TrackBar.i [10]
+  EndStructure
+  Global Main_Window.Main_Window
+  
+  ; ##################################################### Variables ###################################################
+  
+  Global Frequency.d = 1000
+  Global Amplitude.d = 0.25
+  
+  ; ##################################################### Procedures ##################################################
+  
+  Procedure Main_Window_Open()
+    Main_Window\ID = OpenWindow(#PB_Any, 0, 0, 800, 100, "AudioOut Example", #PB_Window_SystemMenu | #PB_Window_MinimizeGadget | #PB_Window_ScreenCentered)
+    
+    If Main_Window\ID
+      
+      Main_Window\TrackBar[0] = TrackBarGadget(#PB_Any, 10, 10, 780, 30, 0, 20000)
+      SetGadgetState(Main_Window\TrackBar[0], Frequency)
+      
+      Main_Window\TrackBar[1] = TrackBarGadget(#PB_Any, 10, 40, 780, 30, 0, 1000)
+      SetGadgetState(Main_Window\TrackBar[1], Amplitude*1000)
+      
+    EndIf
+  EndProcedure
+  
+  Procedure Notifier_CallBack(*AudioOut)
+    Protected *Temp, Temp_Size.i
+    Static Rotation.d
+    
+    While AudioOut::GetQueuedBlocks(*AudioOut) <= 3
+      
+      Temp_Size = AudioOut::GetBufferBlocksize(*AudioOut)
+      If Temp_Size > 0
+        *Temp = AllocateMemory(Temp_Size)
+        
+        Define Left.d, Right.d, i
+        For i = 0 To Temp_Size / 4 - 1
+          Left = Sin(Rotation) * Amplitude
+          Right = Sin(Rotation) * Amplitude
+          
+          PokeW(*Temp + i*4    , Left*32767)
+          PokeW(*Temp + i*4 + 2, Right*32767)
+          
+          Rotation + 2.0*#PI / #Samplerate * Frequency
+        Next
+        
+        AudioOut::Write_Data(Main\AudioOut, *Temp, Temp_Size)
+        
+        FreeMemory(*Temp)
+      EndIf
+      
+    Wend
+  EndProcedure
+  
+  ; ##################################################### Initialisation ##############################################
+  
+  Main_Window_Open()
+  
+  AudioOut::GetDevices()
+  
+  ForEach AudioOut::Device()
+    Debug PeekS(AudioOut::@Device()\szPname)
+  Next
+  
+  Main\AudioOut = AudioOut::Initialize(#WAVE_MAPPER, #Samplerate, 2, 16, @Notifier_CallBack())
+  
+  If Not Main\AudioOut
+    Debug AudioOut::GetError()
+    End
+  EndIf
+  
+  Notifier_CallBack(Main\AudioOut)
+  
+  ; ##################################################### Main ########################################################
+  
+  Repeat
+    
+    Repeat
+      Select WaitWindowEvent(100)
+        Case #PB_Event_Gadget
+          Select EventGadget()
+            Case Main_Window\TrackBar[0]
+              Frequency = GetGadgetState(Main_Window\TrackBar[0])
+              Debug Frequency
+              
+            Case Main_Window\TrackBar[1]
+              Amplitude = GetGadgetState(Main_Window\TrackBar[1]) / 1000
+              
+          EndSelect
+          
+        Case #PB_Event_CloseWindow
+          Main\Quit = #True
+          
+        Case 0
+          Break
+      EndSelect
+    ForEver
+    
+  Until Main\Quit
+  
+  ; ##################################################### End #########################################################
+  
+  AudioOut::Deinitialize(Main\AudioOut)
+  
+  ; IDE Options = PureBasic 5.30 Beta 2 (Windows - x64)
+  ; CursorPosition = 109
+  ; FirstLine = 79
+  ; Folding = -
+  ; EnableUnicode
+  ; EnableThread
+  ; EnableXP
+  
+
 website http://www.purebasic.com
-wikipedia PureBasic
+status active
+fileType text
+
+rosettaCode PureBasic

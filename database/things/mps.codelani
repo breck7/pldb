@@ -1,6 +1,37 @@
+title Meta programming System
 appeared 2010
 type grammarLanguage
-website https://www.jetbrains.com/mps/
-github https://github.com/JetBrains/MPS
-wikipedia JetBrains_MPS
+
+patterns
+ hasCentralPackageRepository? false
+
 description With MPS you can define custom editors for a new language and make using these DSLs simpler. Even domain experts, who are not familiar with traditional programming, can easily work in MPS with domain-specific languages designed around their domain-specific terminology.
+
+wikipedia https://en.wikipedia.org/wiki/JetBrains_MPS
+ related java
+ summary JetBrains MPS is a metaprogramming system which is being developed by JetBrains. MPS is a tool to design Domain-specific languages (DSL). It uses projectional editing which allows users to overcome the limits of language parsers, and build DSL editors, such as ones with tables and diagrams. It implements language-oriented programming. MPS is an environment for language definition, a language workbench, and integrated development environment (IDE) for such languages.
+ backlinksCount 23
+ pageId 22726517
+ created 2009
+ revisionCount 108
+ dailyPageViews 39
+ appeared 2018
+
+githubRepo https://github.com/JetBrains/MPS
+ firstCommit 2004
+ stars 886
+ forks 172
+ subscribers 100
+ created 2011
+ updated 2018
+ description JetBrains Meta programming System
+ issues 3
+
+website https://www.jetbrains.com/mps/
+standsFor Meta programming System
+status active
+
+twitter jetbrains_mps
+
+fileType text
+isOpenSource true

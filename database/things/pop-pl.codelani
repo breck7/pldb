@@ -1,6 +1,7 @@
+title Patient-Oriented Prescription Programming Language
 appeared 2015
 type pl
-website https://users.cs.northwestern.edu/~sfq833/pop-pl/
+
 example
  #lang pop-pl
  
@@ -12,4 +13,6 @@ example
  infusion:
   whenever new aPTTResult
    aPTT < 45 | giveBolus 80 units/kg of: HEParin by: iv
+
+website https://users.cs.northwestern.edu/~sfq833/pop-pl/
 reference https://users.cs.northwestern.edu/~sfq833/resources/papers/GPCE_POP-PL_2015.pdf

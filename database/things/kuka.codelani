@@ -1,3 +1,21 @@
+title KUKA Robot Language
 appeared 2010
 type pl
-wikipedia KUKA_Robot_Language
+
+patterns
+ hasCentralPackageRepository? false
+
+wikipedia https://en.wikipedia.org/wiki/KUKA_Robot_Language
+ related pascal ascii rapid
+ summary The KUKA Robot Language, also known as KRL, is a proprietary programming language similar to Pascal and used to control KUKA robots.
+ pageId 50540803
+ dailyPageViews 36
+ created 2016
+ backlinksCount 3
+ revisionCount 12
+ appeared 2010
+
+status historical
+fileType text
+
+antlr https://github.com/antlr/grammars-v4/tree/master/kuka

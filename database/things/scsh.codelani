@@ -1,3 +1,32 @@
+title Scsh
 appeared 2002
 type pl
-wikipedia Scsh
+
+patterns
+ hasCentralPackageRepository? false
+
+wikipedia https://en.wikipedia.org/wiki/Scsh
+ example
+  #!/usr/local/bin/scsh -s
+  !#
+  
+  (define (executables dir)
+    (with-cwd dir
+      (filter file-executable? (directory-files dir #t))))
+  (define (writeln x) (display x) (newline))
+  
+  (for-each writeln
+    (append-map executables ((infix-splitter ":") (getenv "PATH"))))
+ related ia-32 scheme regex
+ summary Scsh (a Scheme shell) is computer software, a type of shell for an operating system. It is a Portable Operating System Interface (POSIX) application programming interface (API) layered on the programming language Scheme, in a manner to make the most of Scheme's ability for scripting. Scsh is limited to 32-bit platforms but there is a development version against the latest Scheme 48 that works in 64-bit mode. It is free and open-source software released under a BSD license.
+ created 2003
+ backlinksCount 60
+ pageId 380536
+ revisionCount 61
+ dailyPageViews 14
+ appeared 1994
+
+status historical
+isOpenSource true
+
+hopl 2484

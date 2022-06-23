@@ -1,3 +1,21 @@
+title Atari BASIC
 appeared 1983
 type pl
-wikipedia Atari_BASIC
+
+patterns
+ hasCentralPackageRepository? false
+
+wikipedia https://en.wikipedia.org/wiki/Atari_BASIC
+ example
+  10 REM Opens the cassette device on channel 1 for reading in BASIC
+  20 OPEN #1,4,0,"C:MYPROG.DAT"
+ related atari-microsoft-basic atari-st-basic basic-programming microsoft-basic basic applesoft-basic basic-plus hp-time-shared-basic optimized-systems-software turbo-basic-xl
+ summary Atari BASIC is an interpreter for the BASIC programming language that shipped with the Atari 8-bit family of 6502-based home computers. Unlike most 8-bit BASICs, Atari BASIC is not a derivative of Microsoft BASIC, and differs in significant ways. It includes keywords for Atari-specific features and lacks support for string arrays, for example. The language was originally an 8 KB ROM cartridge for the first machines in the 8-bit series, the 400, 800 and 1200XL. Starting with the 600XL and 800XL, BASIC was built-in to the machines, but can be disabled by holding down the OPTION key while booting. The XEGS disables BASIC if powered without the keyboard attached. The complete annotated source code and design specifications of Atari BASIC were published as The Atari BASIC Source Book in 1983.
+ created 2002
+ backlinksCount 147
+ pageId 147581
+ revisionCount 723
+ dailyPageViews 54
+ appeared 1979
+
+status historical

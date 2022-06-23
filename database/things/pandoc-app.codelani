@@ -1,5 +1,24 @@
+title Pandoc
 appeared 2006
 type application
-website http://pandoc.org/
-wikipedia Pandoc
+
+patterns
+ hasCentralPackageRepository? false
+
 description If you need to convert files from one markup format into another, pandoc is your swiss-army knife.
+
+wikipedia https://en.wikipedia.org/wiki/Pandoc
+ related haskell markdown html restructuredtext latex org ooxml tex lua bibtex
+ summary Pandoc is a free and open-source software document converter, widely used as a writing tool (especially by scholars) and as a basis for publishing workflows. It was created by John MacFarlane, a philosophy professor at the University of California, Berkeley.
+ pageId 43162750
+ created 2014
+ backlinksCount 136
+ revisionCount 66
+ dailyPageViews 75
+ appeared 2006
+
+website http://pandoc.org/
+status active
+fileType text
+isOpenSource true
+writtenIn haskell

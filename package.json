@@ -1,10 +1,15 @@
 {
   "name": "codelani",
-  "version": "1.0.0",
-  "description": "Processed datasets used in CodeLani posts",
+  "version": "5.0.0",
+  "description": "The CodeLani database and blog.",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "jtree build buildAll",
+    "cloc": "cloc --vcs git .",
+    "checkLinks": "linkinator -r https://codelani.com > brokenLinks.txt"
+  },
+  "prettier": {
+    "semi": false
   },
   "repository": {
     "type": "git",
@@ -18,5 +23,15 @@
   "bugs": {
     "url": "https://github.com/codelani/codelani/issues"
   },
-  "homepage": "https://github.com/codelani/codelani#readme"
+  "homepage": "https://github.com/codelani/codelani#readme",
+  "dependencies": {
+    "jtree": "^53.2.0",
+    "lodash": "^4.17.21",
+    "moment": "^2.29.1",
+    "numeral": "^2.0.6",
+    "scroll-cli": "^25.2.0"
+  },
+  "devDependencies": {
+    "@types/node": "^17.0.8"
+  }
 }

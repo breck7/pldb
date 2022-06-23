@@ -1,3 +1,36 @@
+title JADE
 appeared 1996
 type pl
-wikipedia JADE_(programming_language)
+
+patterns
+ hasCentralPackageRepository? false
+
+wikipedia https://en.wikipedia.org/wiki/JADE_(programming_language)
+ example
+  helloWorld();
+  
+  begin
+     write "Hello, World!";
+  end;
+ related java c pascal modula-2 linc-4gl
+ summary JADE is a proprietary object-oriented software development and deployment platform product from the New Zealand-based Jade Software Corporation, first released in 1996. It consists of the JADE programming language, IDE and debugger, integrated application server and object database management system. Designed as an end-to-end development environment to allow systems to be coded in one language from the database server down to the clients, it also provides APIs for other languages, including .NET Framework, Java, C/C++ and Web services. Although a free limited licence is available for development, using the JADE platform requires per-process fees to be paid.
+ pageId 5887624
+ dailyPageViews 84
+ created 2005
+ backlinksCount 33
+ revisionCount 172
+ appeared 1996
+
+helloWorldCollection JADE
+ // Hello World in JADE
+ write "Hello World";
+
+status active
+fileType text
+wordRank 9715
+
+tiobe JADE
+
+hopl 2130
+
+codeMirror jade

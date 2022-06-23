@@ -1,6 +1,7 @@
+title Go! programming language
 appeared 2003
 type pl
-wikipedia Go!_(programming_language)
+
 example
  Sex ::= male | female.
  person <~ {dayOfBirth:[] => day.
@@ -22,3 +23,10 @@ example
  }.
  newPerson:[string, day, Sex, string] => person.
  newPerson(Nm, Born, Sx, Hm) => $person(Nm, Born, Sx, Hm).
+
+wikipedia https://en.wikipedia.org/wiki/Go!_(programming_language)
+ summary Go! is an agent-based programming language in the tradition of logic-based programming languages like Prolog.  It was introduced in a 2003 paper by Francis McCabe and Keith Clark.
+ backlinksCount 23
+ pageId 25045328
+ dailyPageViews 85
+ appeared 2003

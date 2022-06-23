@@ -1,3 +1,32 @@
+title Z++
 appeared 1991
 type pl
-wikipedia Z%2B%2B
+
+patterns
+ hasCentralPackageRepository? false
+
+wikipedia https://en.wikipedia.org/wiki/Z%2B%2B
+ example
+  CLASS ClassName
+    [OWNS List_of_attributes]
+    [FUNCTIONS constant_definitions]
+    [TYPE type_declaration]
+    [ENTENDS list_of_super_classes]
+    [OPERATIONS list_of_state_change_operations_definitions]
+    [RETURNS list_of_query_operations_definitions]
+    [ACTIONS all_operations_declarations]
+    [INVARIANT predicates]
+    [HISTORY RTL_predicates]
+  END CLASS
+ related z-notation
+ summary Z++ is also a version of the C++ programming language (not to be confused with Z++ that this article is about).Z++  (pronounced zee plus plus) was an object-oriented extension to the Z specification language. Z++ is an object-oriented extension to the Z specification language, allowing for the definition of classes, and the relation of classes through inheritance, association or aggregation. The primary construct of Z++ is a class.  A Z++ class consists of a number of clauses which are optional. Z++ Class Structure:  CLASS ClassName   [OWNS List_of_attributes]   [FUNCTIONS constant_definitions]   [TYPE type_declaration]   [ENTENDS list_of_super_classes]   [OPERATIONS list_of_state_change_operations_definitions]   [RETURNS list_of_query_operations_definitions]   [ACTIONS all_operations_declarations]   [INVARIANT predicates]   [HISTORY RTL_predicates] END CLASS
+ created 2002
+ backlinksCount 13
+ pageId 140589
+ revisionCount 107
+ dailyPageViews 29
+ appeared 1990
+
+status historical
+
+hopl 1607

@@ -1,3 +1,20 @@
+title Hierarchical File System
 appeared 1985
 type filesystem
-wikipedia Hierarchical_File_System
+
+patterns
+ hasCentralPackageRepository? false
+
+wikipedia https://en.wikipedia.org/wiki/Hierarchical_File_System
+ related linux hfs-plus fat
+ summary Hierarchical File System (HFS) is a proprietary file system developed by Apple Inc. for use in computer systems running Mac OS. Originally designed for use on floppy and hard disks, it can also be found on read-only media such as CD-ROMs. HFS is also referred to as Mac OS Standard (or, erroneously, "HFS Standard"), while its successor, HFS Plus, is also called Mac OS Extended (or, erroneously, "HFS Extended"). With the introduction of Mac OS X 10.6, Apple dropped support for formatting or writing HFS disks and images, which remain supported as read-only volumes.
+ pageId 55347
+ created 2002
+ backlinksCount 341
+ revisionCount 249
+ dailyPageViews 97
+ appeared 1985
+
+standsFor Hierarchical File System
+status historical
+fileType text

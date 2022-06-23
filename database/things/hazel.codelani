@@ -1,8 +1,30 @@
+title hazel
 appeared 2016
 type pl
-website http://hazel.org/
-github https://github.com/hazelgrove/hazel
+
 example
  let v = {} in
  v : num
+
+patterns
+ hasTypedHoles? true
+ hasCentralPackageRepository? false
+
 description Hazel is a live functional programming environment rooted in the principles of type theory.
+
+githubRepo https://github.com/hazelgrove/hazel
+ firstCommit 2017
+ stars 79
+ forks 6
+ subscribers 11
+ created 2017
+ updated 2018
+ description Hazel, a live functional programming environment with typed holes
+ issues 14
+
+website http://hazel.org/
+status active
+fileType text
+compilesTo javascript
+isOpenSource true
+writtenIn reason

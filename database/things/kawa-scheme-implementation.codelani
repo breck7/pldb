@@ -1,3 +1,21 @@
+title Kawa
 appeared 1996
 type pl
-wikipedia Kawa_%28Scheme_implementation%29
+
+patterns
+ hasCentralPackageRepository? false
+
+wikipedia https://en.wikipedia.org/wiki/Kawa_%28Scheme_implementation%29
+ example
+  $ java -jar /path/to/kawa/kawa.jar [optional arguments] ...
+ related lisp java scheme jvm
+ summary Kawa  is a language framework written in the programming language Java that implements the programming language Scheme, a dialect of Lisp, and can be used to implement other languages to run on the Java virtual machine (JVM). It is a part of the GNU Project. The name Kawa comes from the Polish word for coffee; a play on words, since Java is another familiar name for coffee.
+ created 2007
+ backlinksCount 62
+ pageId 12304060
+ revisionCount 82
+ dailyPageViews 29
+ appeared 1998
+
+status historical
+isOpenSource true

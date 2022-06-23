@@ -1,3 +1,21 @@
+title Speedcoding
 appeared 1953
 type pl
-wikipedia Speedcoding
+
+patterns
+ hasCentralPackageRepository? false
+
+wikipedia https://en.wikipedia.org/wiki/Speedcoding
+ related assembly-language fortran algol-58 basic c pl-i pact-i mumps ratfor short-code-computer-language
+ summary Speedcoding or Speedcode was the first high-level programming language created for an IBM computer. The language was developed by John Backus in 1953 for the IBM 701 to support computation with  floating point numbers. Here high level means symbolic and aiming for natural language expressivity as a goal as opposed to machine or hardware instruction oriented coding. The idea arose from the difficulty of programming the IBM SSEC machine when Backus was hired to calculate astronomical positions in early 1950. The speedcoding system was an interpreter and focused on ease of use at the expense of system resources. It provided pseudo-instructions for common mathematical functions: logarithms, exponentiation, and trigonometric operations. The resident software analyzed pseudo-instructions one by one and called the appropriate subroutine. Speedcoding was also the first implementation of decimal input/output operations. Although it substantially reduced the effort of writing many jobs, the running time of a program that was written with the help of Speedcoding was usually ten to twenty times that of machine code. The interpreter took 310 memory words, about 30% of the memory available on a 701.
+ pageId 6616312
+ created 2006
+ backlinksCount 16
+ revisionCount 53
+ dailyPageViews 63
+ appeared 1953
+
+status historical
+fileType text
+
+hopl 7

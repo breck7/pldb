@@ -1,7 +1,8 @@
+title whalecalf
 appeared 2000
 type grammarLanguage
 creators Alexander Okhotin
-website http://users.utu.fi/aleokh/whalecalf/
+
 example
  algorithm=trellis;
  terminal a, b, c;
@@ -11,5 +12,7 @@ example
  A -> a A a | a A b | b A a | b A b | c E a;
  B -> a B a | a B b | b B a | b B b | c E b;
  E -> a E | b E | e;
-reference https://medium.com/@mikhail.barash.mikbar/grammars-for-programming-languages-fae3a72a22c6
+
 description Whale Calf is a research-level parser generator for Boolean grammars, which are context-free grammars augmented with Boolean operations. It is written by Alexander Okhotin in C++, and is mainly aimed at demonstrating different parsing algorithms, of which the most practically useful is the Generalized LR (GLR). The main development took place in 2000-2004, though (as of April 2017) some occasional corrections are still being made.
+website http://users.utu.fi/aleokh/whalecalf/
+reference https://medium.com/@mikhail.barash.mikbar/grammars-for-programming-languages-fae3a72a22c6

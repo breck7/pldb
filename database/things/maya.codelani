@@ -1,3 +1,58 @@
+title Maya Embedded Language
 appeared 2013
 type pl
-wikipedia Maya_Embedded_Language
+
+patterns
+ hasCentralPackageRepository? false
+
+wikipedia https://en.wikipedia.org/wiki/Maya_Embedded_Language
+ example
+  // animated duplicates/instances script
+  proc animatedDuplication (int $rangeStart, int $rangeEnd, int $numOfDuplicates, int $duplicateOrInstance)
+  {
+      int $range_start = $rangeStart;
+      int $range_end = $rangeEnd;
+      int $num_of_duplicates = $numOfDuplicates;
+      int $step_size = ($range_end - $range_start) / $num_of_duplicates;
+      int $i = 0;
+      int $temp;
+  
+      currentTime $range_start;     // set to range start
+  
+      string $selectedObjects[];    // to store selected objects
+      $selectedObjects = `ls -sl`;  // store selected objects
+      select $selectedObjects;
+  
+      while ($i <= $num_of_duplicates)
+      {
+          $temp = $range_start + ($step_size * $i);
+          currentTime ($temp);
+          // selected the objects to duplicate or instance
+          select $selectedObjects;
+          if($duplicateOrInstance == 0)
+          {
+              duplicate;
+          }
+          else
+          {
+              instance;
+          }
+          $i++;
+      }
+  }
+  
+   // Usage example:
+   //  duplicate the current selection 5 times --
+   //  evenly distributed between frame 1 and 240
+   animatedDuplication(1, 240, 5, 0);
+ related perl tcl python
+ summary The Maya Embedded Language (MEL) is a scripting language used to simplify tasks in Autodesk's 3D Graphics Software Maya. Most tasks that can be achieved through Maya's GUI can be achieved with MEL, as well as certain tasks that are not available from the GUI. MEL offers a method of speeding up complicated or repetitive tasks, as well as allowing users to redistribute a specific set of commands to others that may find it useful.
+ pageId 1690201
+ created 2005
+ backlinksCount 30
+ revisionCount 97
+ dailyPageViews 50
+ appeared 2013
+
+status historical
+fileType text

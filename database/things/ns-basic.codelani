@@ -1,3 +1,24 @@
+title NS Basic
 appeared 1994
 type pl
-wikipedia NS_Basic
+
+patterns
+ hasCentralPackageRepository? false
+
+wikipedia https://en.wikipedia.org/wiki/NS_Basic
+ example
+  // in JavaScript
+  OKButton.onclick = function() {
+     NSB.MsgBox("Hello World");
+  }
+ related ios android visual-basic javascript hypercard
+ summary NS Basic is a family of development tools for the mobile devices developed and commercially marketed by NS  BASIC Corporation in Toronto, Ontario, Canada for iOS, Android, BlackBerry OS, WebOS, Newton OS, Palm OS, Windows CE, Windows Mobile and Microsoft Windows.
+ created 2008
+ backlinksCount 90
+ pageId 19160625
+ revisionCount 154
+ dailyPageViews 17
+ appeared 2018
+
+status historical
+isOpenSource false

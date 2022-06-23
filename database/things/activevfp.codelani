@@ -1,3 +1,94 @@
+title ActiveVFP
 appeared 2001
 type pl
-wikipedia ActiveVFP
+
+patterns
+ hasCentralPackageRepository? false
+
+wikipedia https://en.wikipedia.org/wiki/ActiveVFP
+ example
+  * customers.prg -Customers Controller
+  * * bypasses Main.prg and .AVFP script code
+  * 
+  DEFINE CLASS customersController AS restController
+   *
+   PROCEDURE openData
+    SELECT 0
+    USE (THIS.homeFolder + "customers.dbf") ALIAS customers
+   ENDPROC
+   
+   PROCEDURE infoAction && GET www.hostname.com/app/customers/info
+    RETURN "homeFolder: <b>" + THIS.homeFolder + "</b>"
+   ENDPROC
+   
+   PROCEDURE getAction && GET www.hostname.com/app/customers/<id>
+    LOCAL cCustId
+    cCustId = THIS.Params[1]
+    THIS.openData()
+    SELECT CUSTOMERS
+    LOCATE FOR custId = cCustId
+    IF FOUND()
+     LOCAL cJSON
+     **USE mydbf  &&test error
+     *quick and dirty JSON
+     cJSON = [{"custId":"] + RTRIM(custId) + [","custName":"] + RTRIM(custName) + [",] + ;
+             ["custStat":"] + RTRIM(custStat) + ["}]
+     RETURN cJSON 
+    ENDIF
+   ENDPROC
+   
+   PROCEDURE listAction  && GET www.hostname.com/app/customers/
+    LOCAL cHTML
+    cHTML = ""
+    *oEmp=newOBJECT('schedbizobj','c:\avfp5.61Demo\prg\utiltest2.prg')
+    SET PROC to substr(oProp.AppStartPath,1,AT([\],oProp.AppStartPath,2))+'prg\AVFPutilities' ADDITIVE   && Make sure you use ADDITIVE or bad things happen!
+    THIS.openData()
+    SELECT CUSTOMERS
+    cHTML= oHTML.mergescript(FILETOSTR(substr(oProp.AppStartPath,1,AT([\],oProp.AppStartPath,2))+'viewtest.avfp'))
+    RETURN cHTML 
+   ENDPROC
+   
+   PROCEDURE helloworld      && custom method (&& GET www.hostname.com/app/customers/helloworld/)
+    LOCAL cHTML
+    cHTML = ""
+    *USE mydbf
+    *SET PROC to substr(oProp.AppStartPath,1,AT([\],oProp.AppStartPath,2))+'prg\AVFPutilities' ADDITIVE   && Make sure you use ADDITIVE or bad things happen!
+    cHTML= oHTML.mergescript(FILETOSTR(substr(oProp.AppStartPath,1,AT([\],oProp.AppStartPath,2))+'hello.avfp'))
+    RETURN cHTML 
+   ENDPROC
+   
+   PROCEDURE getemployees      && custom method   (&& GET www.hostname.com/app/customers/getemployee/<id>
+    
+  	oJSON=NEWOBJECT('json','json.prg')
+      
+      SET PATH TO oProp.AppStartPath+'data\AVFPdemo41\'
+  	
+  	select e.emp_id as id, e.first_Name as firstName, e.last_Name as lastName, e.title as title, [images/Emps/]+e.picture as picture,count(r.emp_id) as reportCount ;
+  	from employee e left join employee r on VAL(r.reports_to) = VAL(e.emp_id) ;
+  	INTO Cursor SearchResults;
+  	group by e.last_Name,e.emp_id, e.first_Name,e.title, e.picture ;
+  	order by e.last_Name,e.first_Name
+  
+  	oJSON.keyforcursors="items"
+  
+  	* send JSON data and properties back
+  	oResponse.ContentType = "application/json;charset=utf-8"  
+  	oResponse.Write(oJSON.stringify('SearchResults'))
+  	oResponse.Flush
+  	lcHTMLout=[]
+   ENDPROC
+  
+  ************************************************************************
+  
+  ENDDEFINE
+ related php visual-foxpro mysql rest html
+ summary ActiveVFP (also known as AVFP) is a server-side scripting framework designed for Web development to produce dynamic Web pages. Similar to PHP, but using the native Visual Foxpro (VFP) language and database (or other databases like Microsoft SQL and MySQL), ActiveVFP can also be used in Model-View-Controller (MVC) web applications as well as RESTful API.  ActiveVFP is completely free and open source and does not require the purchase of Microsoft Visual FoxPro or any additional software. ActiveVFP was originally created in 2001. The main implementation of ActiveVFP is now produced by the Foxpro Community at activevfp.codeplex.com and serves as the formal reference to ActiveVFP. ActiveVFP is free software released under the MIT License. ActiveVFP is unique among server-side web languages and frameworks because it has a database and database functionality built into the language.
+ created 2013
+ backlinksCount 9
+ pageId 38172349
+ revisionCount 58
+ dailyPageViews 13
+ appeared 2001
+
+status historical
+isOpenSource true

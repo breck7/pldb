@@ -1,0 +1,47 @@
+githubRepoNode
+ description URL of the official GitHub repo for the language project if it hosted there.
+ extends abstractSectionNode
+ cells keywordCell urlCell
+ crux githubRepo
+ inScope abstractGithubYearNode abstractGithubCountNode githubDescriptionNode
+ single
+ int sortIndex 490
+ string sourceDomain github.com
+abstractGithubYearNode
+ abstract
+ extends abstractYearNode
+githubCreatedNode
+ extends abstractGithubYearNode
+ crux created
+ description When was the *Github repo* for this entity created?
+githubUpdatedNode
+ extends abstractGithubYearNode
+ crux updated
+ description What year was the last commit made?
+githubFirstCommitNode
+ extends abstractGithubYearNode
+ crux firstCommit
+ description What year the first commit made in this git repo?
+abstractGithubCountNode
+ abstract
+ extends abstractCountNode
+githubSubscribersNode
+ extends abstractGithubCountNode
+ crux subscribers
+ description How many subscribers to the repo?
+githubForksNode
+ extends abstractGithubCountNode
+ crux forks
+ description How many forks of the repo?
+githubStarsNode
+ extends abstractGithubCountNode
+ crux stars
+ description How many stars of the repo?
+githubIssuesNode
+ extends abstractGithubCountNode
+ crux issues
+ description How many isses on the repo?
+githubDescriptionNode
+ extends descriptionNode
+ crux description
+ description Description of the repo on GitHub.

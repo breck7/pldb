@@ -1,5 +1,46 @@
+title SCSS
 appeared 2006
 type stylesheetLanguage
 creators Hampton Catlin
+
+patterns
+ hasCentralPackageRepository? false
+ hasSemanticIndentation? true
+
+githubLanguage SCSS
+ fileExtensions scss
+ trendingProjectsCount 0
+
+linguistGrammarRepo https://github.com/MarioRicalde/SCSS.tmbundle
+ firstCommit 2010
+ lastCommit 2015
+ committerCount 32
+ commitCount 203
+ sampleCount 1
+ example
+  $blue: #3bbfce;
+  $margin: 16px;
+  
+  .content-navigation {
+    border-color: $blue;
+    color:
+      darken($blue, 9%);
+  }
+  
+  .border {
+    padding: $margin / 2;
+    margin: $margin / 2;
+    border-color: $blue;
+  }
+  
+
 website http://sass-lang.com/
 reference https://en.wikipedia.org/wiki/Sass_(stylesheet_language)
+status active
+
+twitter sasscss
+
+fileExtensions sass scss
+fileType text
+
+antlr https://github.com/antlr/grammars-v4/tree/master/scss

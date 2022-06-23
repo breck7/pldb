@@ -1,6 +1,7 @@
+title xsharp
 appeared 2015
 type pl
-website https://www.xsharp.info
+
 example
  FUNCTION start AS VOID 
   LOCAL oErr AS OBJECT
@@ -23,4 +24,6 @@ example
   NEXT 
   ? Seconds() - f, nI
   WAIT
+
 description X# is an open source development language for .NET, based on the xBase language.
+website https://www.xsharp.info

@@ -1,3 +1,25 @@
+title Knitr
 appeared 2012
 type template
-wikipedia Knitr
+
+patterns
+ hasCentralPackageRepository? false
+
+wikipedia https://en.wikipedia.org/wiki/Knitr
+ example
+  The Wilcoxon Sign test was applied as statistical comparison of the average of two dependent samples above. 
+     In this case then, the calculated P-value was 0.56 and hence greater than the significance (0.05 by default).
+     This implies that "H0: there is no difference between the    
+     results in data1 and data2" must be accepted.
+ related r latex lyx-editor html markdown asciidoc restructuredtext sweave python perl coffeescript rstudio-editor
+ summary knitr is an engine for dynamic report generation with R. It is a package in the statistical programming language R that enables integration of R code into LaTeX, LyX, HTML, Markdown, AsciiDoc, and reStructuredText documents. The purpose of knitr is to allow reproducible research in R through the means of Literate Programming. It is licensed under the GNU General Public License.knitr was inspired by Sweave and written with a different design for better modularization, so it is easier to maintain and extend. Sweave can be regarded as a subset of knitr in the sense that all features of Sweave are also available in knitr. Some of knitr's extensions include the R Markdown format (used in reports published on RPubs), caching, TikZ graphics and support to other languages such as Python, Perl, C++, Shell scripts and CoffeeScript, and so on. knitr is officially supported in the RStudio IDE for R, LyX, Emacs/ESS and the Architect IDE for data science.
+ backlinksCount 30
+ pageId 38393230
+ created 2013
+ revisionCount 44
+ dailyPageViews 48
+ appeared 2012
+
+status historical
+compilesTo latex
+isOpenSource true

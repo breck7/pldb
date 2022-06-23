@@ -1,6 +1,73 @@
+title Common Workflow Language
 appeared 2014
 type pl
-website https://www.commonwl.org/
-github https://github.com/common-workflow-language/cwltool
-reference https://doi.org/10.6084/m9.figshare.3115156.v2
+
+patterns
+ hasCentralPackageRepository? false
+
 description The Common Workflow Language (CWL) is a specification for describing analysis workflows and tools in a way that makes them portable and scalable across a variety of software and hardware environments, from workstations to cluster, cloud, and high performance computing (HPC) environments. CWL is designed to meet the needs of data-intensive science, such as Bioinformatics, Medical Imaging, Astronomy, Physics, and Chemistry.
+
+githubLanguage Common Workflow Language
+ fileExtensions cwl
+ trendingProjectsCount 0
+
+githubRepo https://github.com/common-workflow-language/cwltool
+ firstCommit 2014
+ stars 119
+ forks 112
+ subscribers 47
+ created 2015
+ updated 2018
+ description Common Workflow Language reference implementation
+ issues 248
+
+linguistGrammarRepo https://github.com/manabuishii/language-cwl
+ firstCommit 2017
+ lastCommit 2018
+ committerCount 5
+ commitCount 41
+ sampleCount 1
+ example
+  #!/usr/bin/env cwl-runner
+  # Originally from
+  # https://github.com/Duke-GCB/GGR-cwl/blob/54e897263a702ff1074c8ac814b4bf7205d140dd/utils/trunk-peak-score.cwl
+  # Released under the MIT License:
+  # https://github.com/Duke-GCB/GGR-cwl/blob/54e897263a702ff1074c8ac814b4bf7205d140dd/LICENSE
+  # Converted to CWL v1.0 syntax using
+  # https://github.com/common-workflow-language/cwl-upgrader
+  # and polished by Michael R. Crusoe <mrc@commonwl.org>
+  # All modifications also released under the MIT License
+  cwlVersion: v1.0
+  class: CommandLineTool
+  doc: Trunk scores in ENCODE bed6+4 files
+  
+  hints:
+    DockerRequirement:
+      dockerPull: dukegcb/workflow-utils
+  
+  inputs:
+    peaks:
+      type: File
+    sep:
+      type: string
+      default: \t
+  
+  outputs:
+    trunked_scores_peaks:
+      type: stdout
+  
+  baseCommand: awk
+  
+  arguments:
+  - -F $(inputs.sep)
+  - BEGIN{OFS=FS}$5>1000{$5=1000}{print}
+  - $(inputs.peaks.path)
+  
+  stdout: $(inputs.peaks.nameroot).trunked_scores$(inputs.peaks.nameext)
+  
+
+website https://www.commonwl.org/
+reference https://doi.org/10.6084/m9.figshare.3115156.v2
+status active
+fileType text
+isOpenSource true

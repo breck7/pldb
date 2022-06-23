@@ -1,7 +1,17 @@
+title Security Assertion Markup Language
 appeared 2001
 type xmlFormat
-wikipedia Security_Assertion_Markup_Language
+
 example
  <saml:Assertion ...>
    ..
  </saml:Assertion>
+
+wikipedia https://en.wikipedia.org/wiki/Security_Assertion_Markup_Language
+ summary Security Assertion Markup Language (SAML, pronounced sam-el) is an open standard for exchanging authentication and authorization data between parties, in particular, between an identity provider and a service provider. As its name implies, SAML is an XML-based markup language for security assertions (statements that service providers use to make access-control decisions).  SAML is also:  A set of XML-based protocol messages A set of protocol message bindings A set of profiles (utilizing all of the above)The single most important use case that SAML addresses is web browser single sign-on (SSO). Single sign-on is relatively easy to accomplish within a security domain (using cookies, for example) but extending SSO across security domains is more difficult and resulted in the proliferation of non-interoperable proprietary technologies. The SAML Web Browser SSO profile was specified and standardized to promote interoperability.  (For comparison, the more recent OpenID Connect protocol is an alternative approach to web browser SSO.)
+ backlinksCount 126
+ pageId 973888
+ dailyPageViews 1058
+ appeared 2001
+
+standsFor Security Assertion Markup Language

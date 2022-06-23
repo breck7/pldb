@@ -1,5 +1,7 @@
+title Linux Kernel Module
 appeared 1996
 type application
+
 example
  /*
   * hello−1.c − The simplest kernel module.
@@ -18,5 +20,21 @@ example
  {
   printk(KERN_INFO "Goodbye world 1.\n");
  }
-reference https://www.tldp.org/LDP/lkmpg/2.6/lkmpg.pdf
+
+patterns
+ hasCentralPackageRepository? false
+
 description As of Linux kernel version 2.6, KO files are used in place of .O files and contain additional information that the kernel uses to load modules. The Linux program modpost can be used to convert O files into KO files.
+
+githubLanguage Linux Kernel Module
+ fileExtensions mod
+ trendingProjectsCount 0
+
+example
+ fs/mbcache.ko
+ fs/mbcache.o
+
+reference https://www.tldp.org/LDP/lkmpg/2.6/lkmpg.pdf
+status active
+fileExtensions ko
+fileType text

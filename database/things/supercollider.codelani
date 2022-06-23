@@ -1,4 +1,66 @@
+title SuperCollider
 appeared 1996
 type pl
+
+patterns
+ hasCentralPackageRepository? false
+
+wikipedia https://en.wikipedia.org/wiki/SuperCollider
+ example
+  // Factorial function
+  f = { |x| if(x == 0) { 1 } { f.(x-1) * x } };
+ related freebsd linux smalltalk c lisp puredata scheme haskell scala clojure android ios emacs-editor vim-editor
+ summary SuperCollider is an environment and programming language originally released in 1996 by James McCartney for real-time audio synthesis and algorithmic composition. Since then it has been evolving into a system used and further developed by both scientists and artists working with sound. It is an efficient and expressive dynamic programming language providing a framework for acoustic research, algorithmic music, interactive programming and live coding. Released under the terms of the GPLv2 in 2002, SuperCollider is free and open-source software.
+ pageId 346978
+ dailyPageViews 116
+ created 2003
+ backlinksCount 123
+ revisionCount 472
+ appeared 1996
+
+githubLanguage SuperCollider
+ fileExtensions sc scd
+ trendingProjectsCount 0
+
+helloWorldCollection SuperCollider
+ // Hello World in SuperCollider
+ 
+ "Hello, world!".postln;
+
+linguistGrammarRepo https://github.com/supercollider/language-supercollider
+ firstCommit 2014
+ lastCommit 2017
+ committerCount 7
+ commitCount 16
+ sampleCount 5
+ example
+  WarpPreset {
+  	*new {|path|
+  		if(path.notNil) {
+  			^Object.readArchive(path);
+  		};
+  
+  		^super.new.init();
+  	}
+  
+  	init {
+  
+  	}
+  
+  	save {
+  		Dialog.savePanel({|path|
+  			this.writeArchive(path);
+  		});
+  	}
+  }
+
 website http://supercollider.github.io
-wikipedia SuperCollider
+status active
+fileType text
+isOpenSource true
+
+tiobe SuperCollider
+
+hopl 6465
+
+rosettaCode SuperCollider

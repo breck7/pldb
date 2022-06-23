@@ -1,4 +1,49 @@
+title PostCSS
 appeared 2013
 type textMarkup
+
+patterns
+ hasCentralPackageRepository? false
+
+githubLanguage PostCSS
+ fileExtensions pcss
+ trendingProjectsCount 0
+
+githubRepo https://github.com/postcss/postcss
+ firstCommit 2013
+ stars 19611
+ forks 1089
+ subscribers 571
+ created 2013
+ updated 2018
+ description Transforming styles with JS plugins
+ issues 13
+
+linguistGrammarRepo https://github.com/hudochenkov/Syntax-highlighting-for-PostCSS
+ firstCommit 2013
+ lastCommit 2017
+ committerCount 10
+ commitCount 231
+ sampleCount 1
+ example
+  @define-mixin size $size {
+    width: $size;
+  }
+  
+  $big: 100px;
+  
+  /* Main block */
+  .block {
+    &_logo {
+      background: inline("./logo.png");
+      @mixin size $big;
+    }
+  }
+
 website https://postcss.org/
-github https://github.com/postcss/postcss
+status active
+
+twitter postcss
+
+fileType text
+isOpenSource true

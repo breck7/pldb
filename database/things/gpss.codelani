@@ -1,3 +1,32 @@
+title General Purpose Simulation System
 appeared 1960
 type pl
-wikipedia GPSS
+
+patterns
+ hasCentralPackageRepository? false
+
+wikipedia https://en.wikipedia.org/wiki/GPSS
+ example
+  FACILITY           AVERAGE           NUMBER         AVERAGE         SEIZING      PREEMPTING 
+                  UTILIZATION          ENTRIES       TIME/TRAN       TRANS. NO.    TRANS. NO.
+         Joe            .860               26          15.884              26
+  
+  QUEUE       MAXIMUM   AVERAGE    TOTAL     ZERO     PERCENT   AVERAGE   $AVERAGE     TABLE    CURRENT
+             CONTENTS   CONTENT   ENTRIES   ENTRIES    ZEROS  TIME/TRANS TIME/TRANS   NUMBER   CONTENTS
+    Chairs          1      .160       27        12      44.4      2.851      5.133                    1
+  $AVERAGE TIME/TRANS = AVERAGE TIME/TRANS EXCLUDING ZERO ENTITIES
+ related apl
+ summary General Purpose Simulation System (GPSS) is a discrete time simulation general-purpose programming language, where a simulation clock advances in discrete steps. A system is modelled as transactions enter the system and are passed from one service (represented by blocks) to another. It is used primarily as a process flow oriented simulation language; this is particularly well-suited for problems such as a factory.
+ pageId 577078
+ created 2004
+ backlinksCount 17
+ revisionCount 105
+ dailyPageViews 41
+ appeared 1960
+
+standsFor General Purpose Simulation System
+status historical
+country US
+fileType text
+
+hopl 141

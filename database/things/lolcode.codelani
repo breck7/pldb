@@ -1,4 +1,111 @@
+title LOLCODE
 appeared 2007
 type esolang
+
+patterns
+ hasCentralPackageRepository? false
+
+wikipedia https://en.wikipedia.org/wiki/LOLCODE
+ example
+  HAI 1.2
+  CAN HAS STDIO?
+  IM IN YR LOOP UPPIN YR VAR TIL BOTH SAEM VAR AN 10
+      VISIBLE SUM OF VAR AN 1
+  IM OUTTA YR LOOP
+  KTHXBYE
+ related c php javascript parrot-vm
+ summary LOLCODE is an esoteric programming language inspired by lolspeak, the language expressed in examples of the lolcat Internet meme. The language was created in 2007 by Adam Lindsay, researcher at the Computing Department of Lancaster University. The language is not clearly defined in terms of operator priorities and correct syntax, but several functioning interpreters and compilers exist. One interpretation of the language has been proven Turing-complete.
+ pageId 15450778
+ dailyPageViews 293
+ created 2007
+ backlinksCount 98
+ revisionCount 532
+ appeared 2007
+
+githubLanguage LOLCODE
+ fileExtensions lol
+ trendingProjectsCount 0
+
+example
+ HAI 1.3
+     OBTW
+       Author: Logan Kelly (logan.kelly@gmail.com)
+       Github: https://github.com/LoganKelly/LOLTracer
+     TLDR
+ 
+     OBTW prev is the number used in the randin function.
+          I had to declare it in global scope so that it
+          would retain its value between calls to randin.
+     TLDR
+     I HAS A prev ITZ 0
+     I HAS A rand_max ITZ 104729
+ 
+ 
+     OBTW Equivalent to C's rand() function, except returns
+         a number in the range of 0 to rand_max.
+     TLDR
+     HOW IZ I randin
+         I HAS A a ITZ 33083
+         I HAS A c ITZ 67607
+         prev R MOD OF SUM OF PRODUKT OF prev AN a AN c AN rand_max
+         FOUND YR prev
+     IF U SAY SO
+ 
+ 
+     BTW Returns a random number within the range of 0-1.
+     HOW IZ I rand_onein
+         I HAS A rand_num ITZ I IZ randin MKAY
+         rand_num IS NOW A NUMBAR
+         I HAS A rand_max_float ITZ MAEK rand_max A NUMBAR
+         FOUND YR  QUOSHUNT OF rand_num AN rand_max_float
+     IF U SAY SO
+ 
+ 
+     OBTW Equivalent to C ceil() function. Returns the next
+         largest integer for the given number.
+     TLDR
+     HOW IZ I ceilin YR num
+         I HAS A int_num ITZ num
+         int_num IS NOW A NUMBR
+         BOTH SAEM int_num AN num, O RLY?
+             YA RLY, FOUND YR num
+         OIC
+         DIFFRINT num AN SMALLR OF num AN 0, O RLY?
+             YA RLY
+                 int_num R SUM OF int_num AN 1
+                 FOUND YR MAEK int_num A NUMBAR
+         OIC
+         DIFFRINT num AN BIGGR OF num AN 0, O RLY?
+             YA RLY
+                 FOUND YR MAEK int_num A NUMBAR
+         OIC
+     IF U SAY SO
+ 
+ 
+     OBTW Convert a number to hexadecimal. This
+          is returned as a string.
+     TLDR
+     HOW IZ I decimal_to_hex YR num
+         I HAS A i ITZ 0
+         I HAS A rem
+         I HAS A hex_num ITZ A BUKKIT
+         I HAS A decimal_num ITZ num
+         IM IN YR num_loop
+             rem R MOD OF decimal_num AN 16
+             I HAS A hex_digit
+             rem, WTF?
+                 OMG 10, hex_digit R "A", GTFO
+                 OMG 1
+
 website http://lolcode.org/
-wikipedia LOLCODE
+status active
+
+replit lolcode
+
+tryItOnline lolcode
+
+twitter icanhaslolcode
+
+fileType text
+
+rosettaCode LOLCODE

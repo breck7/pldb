@@ -1,3 +1,21 @@
+title TTM programming language
 appeared 1968
 type pl
-wikipedia TTM_(programming_language)
+
+patterns
+ hasCentralPackageRepository? false
+
+wikipedia https://en.wikipedia.org/wiki/TTM_(programming_language)
+ example
+  #<def;n!;N;<#<lt;N;2;1;<#<mu;N;#<n!;#<su;N;1>>>>>>>
+ summary TTM is a string oriented, general purpose macro processing programming language developed in 1968 by Steven Caine and E. Kent Gordon at the California Institute of Technology.
+ pageId 37939929
+ created 2012
+ backlinksCount 11
+ revisionCount 16
+ dailyPageViews 9
+ appeared 1968
+
+status historical
+fileType text
+isOpenSource true

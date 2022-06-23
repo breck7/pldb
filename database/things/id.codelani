@@ -1,3 +1,27 @@
+title Irvine Dataflow
 appeared 1975
 type pl
-wikipedia Id_(programming_language)
+
+patterns
+ hasCentralPackageRepository? false
+
+wikipedia https://en.wikipedia.org/wiki/Id_(programming_language)
+ example
+  False? :: bool -> bool
+     and :: bool -> bool -> bool
+ related haskell
+ summary Irvine Dataflow (Id) is a general-purpose parallel programming language, started at the University of California at Irvine in 1975 by Arvind and K. P. Gostelow. Arvind continued work with Id at MIT into the 1990s. The major subset of Id is a purely functional programming language with non-strict semantics. Features include: higher-order functions, a Milner-style statically type-checked polymorphic type system with overloading, user defined types and pattern matching, and prefix and infix operators. It led to the development of pH, a parallel dialect of Haskell. Id programs are fine grained implicitly parallel. The MVar synchronisation variable abstraction in Haskell is based on Id's M-structures.
+ pageId 15127771
+ created 2008
+ backlinksCount 13
+ revisionCount 20
+ dailyPageViews 9
+ appeared 1975
+
+standsFor Irvine Dataflow
+status historical
+country US
+fileType text
+wordRank 654
+
+hopl 812

@@ -1,8 +1,19 @@
+title spiral
 appeared 2017
 type pl
-github https://github.com/mrakgr/The-Spiral-Language
+
 example
  inl x = 2 // Define a 64-bit integer in Spiral.
  inl mult a b = a * b
  inl f g = g 1 2, g 3.0 4.0 // Would give a type error in F#.
  f mult
+
+githubRepo https://github.com/mrakgr/The-Spiral-Language
+ firstCommit 2017
+ stars 698
+ forks 20
+ subscribers 30
+ created 2017
+ updated 2019
+ description Functional language with intensional polymorphism and first-class staging.
+ issues 1

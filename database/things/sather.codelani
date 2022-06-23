@@ -1,5 +1,49 @@
+title Sather
 appeared 1990
 type pl
 creators Steve Omohundro
+
+patterns
+ hasCentralPackageRepository? false
+ hasComments? true
+
+wikipedia https://en.wikipedia.org/wiki/Sather
+ example
+  upto!(once m:INT):SAME is
+      i: INT := self; -- initialise i to the value of self, 
+                      -- that is the integer of which this method is called
+      loop
+        if i>m then 
+          quit;  -- leave the loop when i goes beyond m
+        end;
+        yield i; -- else use i as return value and stay in the loop
+        i := i + 1; -- and increment
+      end;
+    end;
+ related eiffel clu common-lisp scheme cool rust c
+ summary Sather is an object-oriented programming language. It originated circa 1990 at the International Computer Science Institute (ICSI) at the University of California, Berkeley, developed by an international team led by Steve Omohundro. It supports garbage collection and generics by subtypes. Originally, it was based on Eiffel, but it has diverged, and now includes several functional programming features. It is probably best to view it as an object-oriented language, with many ideas borrowed from Eiffel. Even the name is inspired by Eiffel; the Sather Tower is a recognizable landmark at Berkeley, named after Jane Krom Sather, the widow of Peder Sather, who donated large sums to the foundation of the university. Sather also takes inspiration from other programming languages and paradigms: iterators, design by contract, abstract classes, multiple inheritance, anonymous functions, operator overloading, contravariant type system. The original Berkeley implementation (last stable version 1.1 was released in 1995, no longer maintained) has been adopted by the Free Software Foundation therefore becoming GNU Sather. Last stable GNU version (1.2.3) was released in July 2007 and the software is currently not maintained. There were several other variants: Sather-K from the University of Karlsruhe; Sather-W from the University of Waikato (implementation of Sather version 1.3); Peter Naulls' port of ICSI Sather 1.1 to RISC OS; and pSather, a parallel version of ICSI Sather addressing non-uniform memory access multiprocessor architectures but presenting a shared memory model to the programmer. The former ICSI Sather compiler (now GNU Sather) is implemented as a compiler to C, i.e., the compiler does not output object or machine code, but takes Sather source code and generates C source code as an intermediate language. Optimizing is left to the C compiler. The GNU Sather compiler, written in Sather itself, is dual licensed under the GNU GPL & LGPL.
+ pageId 28763
+ dailyPageViews 21
+ created 2001
+ backlinksCount 31
+ revisionCount 96
+ appeared 1990
+
+helloWorldCollection Sather
+ -- Hello World in Sather
+ 
+     class HELLO is
+        main is #OUT + "Hello World!\n" end
+     end
+ 
+
 website https://www.gnu.org/software/sather/
-wikipedia Sather
+status active
+country US
+fileType text
+
+tiobe Sather
+
+hopl 1659
+
+rosettaCode Sather

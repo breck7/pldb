@@ -1,3 +1,20 @@
+title Property Specification Language
 appeared 2004
 type pl
-wikipedia Property_Specification_Language
+
+patterns
+ hasCentralPackageRepository? false
+
+wikipedia https://en.wikipedia.org/wiki/Property_Specification_Language
+ example
+  ((true[*]; req; ack)  |=> (start; data[*3]; end) @ clk
+ related vhdl verilog systemverilog
+ summary Property Specification Language (PSL) is a temporal logic extending Linear temporal logic with a range of operators for both ease of expression and enhancement of expressive power. PSL makes an extensive use of regular expressions and syntactic sugaring. It is widely used in the hardware design and verification industry, where formal verification tools (such as model checking) and/or  logic simulation tools are used to prove or refute that a given PSL formula holds on a given design. PSL was initially developed by Accellera for specifying properties or assertions about hardware designs. Since September 2004 the standardization on the language has been done in IEEE 1850 working group. In September 2005, the IEEE 1850 Standard for Property Specification Language (PSL) was announced.
+ created 2004
+ backlinksCount 255
+ pageId 762084
+ revisionCount 109
+ dailyPageViews 30
+ appeared 2004
+
+status historical

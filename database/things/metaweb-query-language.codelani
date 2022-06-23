@@ -1,5 +1,7 @@
+title Metaweb Query Language
 appeared 2006
 type queryLanguage
+
 example
  {
      "name": None,
@@ -10,4 +12,5 @@ example
      "limit": 20,
      "sort": "name",
  }
+
 reference https://rpbouman.blogspot.com/2011/01/mql-to-sql-json-based-query-language.html?m=0

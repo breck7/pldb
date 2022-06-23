@@ -1,6 +1,117 @@
+title Idris
 appeared 2014
 type pl
 creators Edwin Brady
+
+patterns
+ hasCentralPackageRepository? false
+ hasDependentTypes? true
+
+wikipedia https://en.wikipedia.org/wiki/Idris_(programming_language)
+ example
+  total
+  pairAdd : Num a => Vect n a -> Vect n a -> Vect n a
+  pairAdd Nil       Nil       = Nil
+  pairAdd (x :: xs) (y :: ys) = x + y :: pairAdd xs ys
+ related agda coq epigram haskell ml rust perl c javascript java jvm cil ocaml llvmir
+ summary Idris is a general-purpose purely functional programming language with dependent types, strict or optional lazy evaluation and features such as a totality checker. Even before its possible usage for interactive theorem-proving, the focus of Idris is on general-purpose programming, like the purely functional Haskell, and with sufficient performance. The type system of Idris is similar to the one used by Agda and theorem-proving in it is similar to Coq, including tactics. In comparison, Idris has a priority on easy management of side-effects and support for implementing embedded domain specific languages. As of May 2017, Idris compiles to C (relying on a custom copying garbage collector using Cheney's algorithm) and JavaScript (both browser- and Node.js-based). There are also a number of third-party code generators for other platforms, including Java, JVM, CIL, OCaml, and a partial LLVM backend. The name Idris goes back to the character of the singing dragon in the 1970s UK kids' program Ivor the Engine.
+ pageId 39035048
+ dailyPageViews 123
+ created 2013
+ backlinksCount 38
+ revisionCount 109
+ appeared 2017
+ fileExtensions idr lidr
+
+githubLanguage Idris
+ fileExtensions idr lidr
+ trendingProjectsCount 0
+
+githubRepo https://github.com/idris-lang/Idris-dev
+ stars 2204
+ forks 527
+ subscribers 141
+ created 2011
+ updated 2017
+ firstCommit 2011
+ description A Dependently Typed Functional Programming Language
+ issues 595
+
+helloWorldCollection Idris
+ Hello world in Idris
+ 
+ > main : IO ()
+ > main = putStrLn "Hello, World!"
+
+linguistGrammarRepo https://github.com/idris-hackers/idris-sublime.git
+ firstCommit 2013
+ lastCommit 2017
+ committerCount 6
+ commitCount 24
+ sampleCount 1
+ example
+  module Prelude.Char
+  
+  import Builtins
+  
+  isUpper : Char -> Bool
+  isUpper x = x >= 'A' && x <= 'Z'
+  
+  isLower : Char -> Bool
+  isLower x = x >= 'a' && x <= 'z'
+  
+  isAlpha : Char -> Bool
+  isAlpha x = isUpper x || isLower x
+  
+  isDigit : Char -> Bool
+  isDigit x = (x >= '0' && x <= '9')
+  
+  isAlphaNum : Char -> Bool
+  isAlphaNum x = isDigit x || isAlpha x
+  
+  isSpace : Char -> Bool
+  isSpace x = x == ' '  || x == '\t' || x == '\r' ||
+              x == '\n' || x == '\f' || x == '\v' ||
+              x == '\xa0'
+  
+  isNL : Char -> Bool
+  isNL x = x == '\r' || x == '\n'
+  
+  toUpper : Char -> Char
+  toUpper x = if (isLower x)
+                 then (prim__intToChar (prim__charToInt x - 32))
+                 else x
+  
+  toLower : Char -> Char
+  toLower x = if (isUpper x)
+                 then (prim__intToChar (prim__charToInt x + 32))
+                 else x
+  
+  isHexDigit : Char -> Bool
+  isHexDigit x = elem (toUpper x) hexChars where
+    hexChars : List Char
+    hexChars = ['0', '1', '2', '3', '4', '5', '6', '7', '8', '9',
+                'A', 'B', 'C', 'D', 'E', 'F']
+  
+
 website http://idris-lang.org
-github https://github.com/idris-lang/Idris-dev
-wikipedia Idris_(programming_language)
+status active
+
+tryItOnline idris
+
+fileExtensions idr lidr
+fileType text
+isOpenSource true
+
+tiobe Idris
+
+projectEuler Idris
+ memberCount
+  2019 10
+  2022 11
+
+rosettaCode Idris
+
+writtenIn haskell
+indeedJobs idris developer
+ 2017 1

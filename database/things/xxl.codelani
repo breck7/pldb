@@ -1,6 +1,7 @@
+title xxl
 appeared 2016
 type pl
-github https://github.com/tlack/xxl
+
 example
  // enclose (c)urly(b)races, (s)quare(b)brackets, (q)uotes:
  'ecb is {"{",x,"}"}; 'esb is {"[",x,"]"}; 'eq is {"\"",x,"\""}; 
@@ -10,3 +11,13 @@ example
  // wrap non-scalar values in appropriate way:
  'many is {as 'el type case ('char, {el str eq}, 'dict, {el dict}, {el jac encode esb})};
  'encode is {ravel[many,str]};            // ravel calls x y[0] for arrays (len > 1), x y[1] for scalars
+
+githubRepo https://github.com/tlack/xxl
+ firstCommit 2016
+ stars 156
+ forks 7
+ subscribers 17
+ created 2016
+ updated 2019
+ description a minimal vector programming language
+ issues 3

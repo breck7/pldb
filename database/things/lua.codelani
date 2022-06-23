@@ -1,6 +1,121 @@
+title Lua
 appeared 1993
 type pl
 creators Roberto Ierusalimschy
+
+patterns
+ hasCentralPackageRepository? true
+ hasComments? true
+ hasBlockComments? true
+  --[[
+  print(10)         -- no action (comment)
+  --]]
+ hasIdentifiers? true
+ hasOperatorOverloading? true
+
+wikipedia https://en.wikipedia.org/wiki/Lua_(programming_language)
+ example
+  $ cc -o example example.c -llua
+  $ ./example
+  Result: 8
+ related clu modula-2 scheme snobol falcon gamemonkey-script io javascript julia minid red ruby squirrel tcl lisp python modula awk ada eiffel haskell sql vhdl self perl-6 parrot-vm android c
+ summary Lua ( LOO-ə, from Portuguese: lua [ˈlu.(w)ɐ] meaning moon) is a lightweight, multi-paradigm programming language designed primarily for embedded systems and clients. Lua is cross-platform, since the interpreter is written in ANSI C, and has a relatively simple C API. Lua was originally designed in 1993 as a language for extending software applications to meet the increasing demand for customization at the time. It provided the basic facilities of most procedural programming languages, but more complicated or domain-specific features were not included; rather, it included mechanisms for extending the language, allowing programmers to implement such features. As Lua was intended to be a general embeddable extension language, the designers of Lua focused on improving its speed, portability, extensibility, and ease-of-use in development.
+ pageId 46150
+ dailyPageViews 1069
+ created 2002
+ backlinksCount 2096
+ revisionCount 2536
+ appeared 1993
+
+githubLanguage Lua
+ fileExtensions lua fcgi nse p8 pd_lua rbxs wlua
+ trendingProjects
+  author name avatar url language languageColor stars forks currentPeriodStars description
+  vulnersCom nmap-vulners https://github.com/vulnersCom.png https://github.com/vulnersCom/nmap-vulners Lua #000080 1613 245 112 "NSE script based on Vulners.com API"
+  koreader koreader https://github.com/koreader.png https://github.com/koreader/koreader Lua #000080 5226 668 103 "An ebook reader application supporting PDF, DjVu, EPUB, FB2 and many more formats, running on Cervantes, Kindle, Kobo, PocketBook and Android devices"
+  stijnwop guidanceSteering https://github.com/stijnwop.png https://github.com/stijnwop/guidanceSteering Lua #000080 174 55 15 "Guidance Steering (AutoTrack) for Farming Simulator 19."
+  cmusatyalab openface https://github.com/cmusatyalab.png https://github.com/cmusatyalab/openface Lua #000080 12574 3099 141 "Face recognition with deep neural networks."
+  cardwing Codes-for-Lane-Detection https://github.com/cardwing.png https://github.com/cardwing/Codes-for-Lane-Detection Lua #000080 375 125 92 "Learning Lightweight Lane Detection CNNs by Self Attention Distillation (ICCV 2019)"
+  Kong kong https://github.com/Kong.png https://github.com/Kong/kong Lua #000080 23291 2898 452 "🦍 The Cloud-Native API Gateway"
+  nagadomi waifu2x https://github.com/nagadomi.png https://github.com/nagadomi/waifu2x Lua #000080 15744 1802 374 "Image Super-Resolution for Anime-Style Art"
+  opentibiabr OTServBR-Global https://github.com/opentibiabr.png https://github.com/opentibiabr/OTServBR-Global Lua #000080 57 81 14 "OTServBR-Global 10x and 12x for OpenTibia community. | Supported by:"
+  Tencent LuaPanda https://github.com/Tencent.png https://github.com/Tencent/LuaPanda Lua #000080 329 74 48 "Lua Debugger for VS Code"
+ trendingProjectsCount 10
+
+helloWorldCollection Lua
+ # Hello World in Lua
+ 
+ print "Hello world"
+ 
+
+linguistGrammarRepo https://github.com/textmate/lua.tmbundle
+ firstCommit 2006
+ lastCommit 2018
+ committerCount 11
+ commitCount 63
+ sampleCount 5
+ example
+  
+  -- A simple counting object that increments an internal counter whenever it receives a bang at its first inlet, or changes to whatever number it receives at its second inlet.
+  
+  local HelloCounter = pd.Class:new():register("h-counter")
+  
+  function HelloCounter:initialize(sel, atoms)
+  	self.inlets = 2
+  	self.outlets = 1
+  	self.num = 0
+  	return true
+  end
+  
+  function HelloCounter:in_1_bang()
+  	self:outlet(1, "float", {self.num})
+  	self.num = self.num + 1
+  end
+  
+  function HelloCounter:in_2_float(f)
+  	self.num = f
+  end
+  
+
 website //www.lua.org/
-wikipedia Lua_(programming_language)
 reference http://www.lua.org/manual/5.1/manual.html#2.1
+status active
+
+replit lua
+
+tryItOnline lua
+
+country BR
+fileType text
+isOpenSource true
+
+tiobe Lua
+ currentRank 30
+
+meetup lua
+ memberCount 4670
+ groupCount 24
+
+linkedInSkill lua
+ peopleWithThisSkillCount 36954
+
+projectEuler Lua
+ memberCount
+  2019 437
+  2022 477
+
+hopl 2196
+
+subreddit lua
+ memberCount
+  2017 5571
+
+quineRelay Lua
+
+ubuntuPackage lua5.3
+
+codeMirror lua
+
+rosettaCode Lua
+
+antlr https://github.com/antlr/grammars-v4/tree/master/lua

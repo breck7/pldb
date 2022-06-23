@@ -1,3 +1,17 @@
+title Larceny Scheme implementation
 appeared 2017
 type pl
-wikipedia Larceny_(Scheme_implementation)
+
+patterns
+ hasCentralPackageRepository? false
+
+wikipedia https://en.wikipedia.org/wiki/Larceny_(Scheme_implementation)
+ related scheme arm c sparc
+ summary Larceny is an implementation of the Scheme programming language built around the Twobit optimizing compiler. Larceny offers several back-ends able to target native x86 and ARMv7 code.  Petit Larceny is also available and emits C source code, which can then be further compiled to native code with an ordinary C compiler.Older versions (<0.98) included support for the SPARC architecture in Larceny, and for Microsoft's Common Language Runtime via Common Larceny.Larceny supports all major Scheme standards (R5RS, IEEE/ANSI, R6RS, and R7RS.  The Larceny software is open source and available online.
+ created 2006
+ backlinksCount 61
+ pageId 8527916
+ dailyPageViews 5
+ appeared 2017
+
+status active

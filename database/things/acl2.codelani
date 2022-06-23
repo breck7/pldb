@@ -1,3 +1,27 @@
+title A Computational Logic for Applicative Common Lisp
 appeared 1990
 type pl
-wikipedia ACL2
+
+patterns
+ hasCentralPackageRepository? false
+ hasComments? true
+
+wikipedia https://en.wikipedia.org/wiki/ACL2
+ related common-lisp axiom
+ summary ACL2 (A Computational Logic for Applicative Common Lisp) is a software system consisting of a programming language, an extensible theory in a first-order logic, and an automated theorem prover.  ACL2 is designed to support automated reasoning in inductive logical theories, mostly for the purpose of software and hardware verification.  The input language and implementation of ACL2 are built on Common Lisp.  ACL2 is free, open source (BSD license) software. The ACL2 programming language is an applicative (side-effect free) variant of Common Lisp.  ACL2 is untyped. All ACL2 functions are total — that is, every function maps each object in the ACL2 universe to another object in its universe. ACL2's base theory axiomatizes the semantics of its programming language and its built-in functions.  User definitions in the programming language that satisfy a definitional principle extend the theory in a way that maintains the theory's logical consistency. The core of ACL2's theorem prover is based on term rewriting, and this core is extensible in that user-discovered theorems can be used as ad-hoc proof techniques for subsequent conjectures. ACL2 is intended to be an "industrial strength" version of the Boyer–Moore theorem prover, NQTHM.  Toward this goal, ACL2 has many features to support clean engineering of interesting mathematical and computational theories.  ACL2 also derives efficiency from being built on Common Lisp; for example, the same specification that is the basis for inductive verification can be compiled and run natively. In 2005, the authors of the Boyer-Moore family of provers, which includes ACL2, received the ACM Software System Award "for pioneering and engineering a most effective theorem prover (...) as a formal methods tool for verifying safety-critical hardware and software."
+ pageId 162049
+ created 2002
+ backlinksCount 72
+ revisionCount 124
+ dailyPageViews 35
+ appeared 1990
+
+standsFor A Computational Logic for Applicative Common Lisp
+status historical
+country US
+fileType text
+isOpenSource true
+
+hopl 6972
+
+rosettaCode ACL2

@@ -1,3 +1,20 @@
+title SA-C
 appeared 1998
 type pl
-wikipedia SA-C_%28programming_language%29
+
+patterns
+ hasCentralPackageRepository? false
+
+wikipedia https://en.wikipedia.org/wiki/SA-C_%28programming_language%29
+ related sac-programming-language
+ summary Single Assignment C (SA-C) (pronounced "sassy") is a member of the C programming language family designed to be directly and intuitively translatable into circuits, including FPGAs. To ease translation, SA-C does not include pointers and arithmetics thereon. To retain most of the expressiveness of C, SA-C instead features true n-dimensional arrays as first-class objects of the language.
+ created 2007
+ backlinksCount 6
+ pageId 8787221
+ revisionCount 15
+ dailyPageViews 7
+ appeared 2007
+
+status historical
+
+hopl 3572

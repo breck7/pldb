@@ -1,4 +1,75 @@
+title Stylus
 appeared 2010
 type stylesheetLanguage
+
+patterns
+ hasCentralPackageRepository? false
+ hasSemanticIndentation? true
+
+wikipedia https://en.wikipedia.org/wiki/Stylus_(stylesheet_language)
+ example
+  div.rectangle {
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+  }
+ related sass css jade python
+ summary Stylus is a dynamic stylesheet language that is compiled into Cascading Style Sheets (CSS). Its design is influenced by Sass and LESS. It's regarded as the fourth most used CSS preprocessor syntax. It was created by TJ Holowaychuk, a former programmer for Node.js and the creator of the Luna language. It is written in JADE and Node.js.
+ pageId 38256010
+ dailyPageViews 24
+ created 2013
+ backlinksCount 22
+ revisionCount 31
+ appeared 2010
+
+githubLanguage Stylus
+ fileExtensions styl
+ trendingProjectsCount 0
+
+linguistGrammarRepo https://github.com/billymoon/Stylus
+ firstCommit 2012
+ lastCommit 2017
+ committerCount 19
+ commitCount 113
+ sampleCount 1
+ example
+  border-radius()
+    -webkit-border-radius arguments
+    -moz-border-radius arguments
+    border-radius arguments
+  
+  a.button
+    border-radius 5px
+  
+  fonts = helvetica, arial, sans-serif
+  
+  body {
+    padding: 50px;
+    font: 14px/1.4 fonts;
+  }
+  
+  form
+    input[type=text]
+      padding: 5px
+      border: 1px solid #eee
+      color: #ddd
+  
+  textarea
+    @extends form input[type=text]
+    padding: 10px
+  
+  $foo
+    color: #FFF
+  
+  .bar
+    background: #000
+    @extends $foo
+  
+
 website http://stylus-lang.com/
-wikipedia Stylus_(stylesheet_language)
+status active
+fileType text
+wordRank 6948
+isOpenSource true
+
+codeMirror stylus

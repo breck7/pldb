@@ -1,3 +1,172 @@
+title FIGlet Font
 appeared 1991
 type application
+
+patterns
+ hasCentralPackageRepository? false
+
+githubLanguage FIGlet Font
+ fileExtensions flf
+
+linguistGrammarRepo https://github.com/Alhadis/language-fontforge
+ firstCommit 2016
+ lastCommit 2018
+ committerCount 2
+ commitCount 51
+ sampleCount 1
+ example
+  flf2a$ 6 5 76 15 14 1 16271 39
+  Ivrit (Hebrew) Unicode font assembled by John Cowan <cowan@ccil.org>
+  Latin chars from  Standard by G. Chappell & Ian Chai
+  Hebrew chars from Jerusalem by Gedaliah Friedenberg <gfrieden@nyx.cs.du.edu>
+          Use "ilhebrew.flc" for Hebrew keyboard mapping
+          Use "ushebrew.flc" for U.S.-style keyboard mapping ("febrew" script)
+          Use "8859-8.flc" for ISO 8859-8 text
+          Or use UTF-8
+  WARNING! FIGfonts aren't bidirectional; this is strictly right-to-left 
+          (by default) even for the Latin characters.
+  figlet release 2.2 -- November 1996
+  
+  Modified by Paul Burton <solution@earthlink.net> 12/96 to include new parameter
+  supported by FIGlet and FIGWin.  May also be slightly modified for better use
+  of new full-width/kern/smush alternatives, but default output is NOT changed.
+   $@
+   $@
+   $@
+   $@
+   $@
+   $@@
+    _ @
+   | |@
+   | |@
+   |_|@
+   (_)@
+      @@
+    _ _ @
+   ( | )@
+    V V @
+     $  @
+     $  @
+        @@
+      _  _   @
+    _| || |_ @
+   |_  ..  _|@
+   |_      _|@
+     |_||_|  @
+             @@
+     _  @
+    | | @
+   / __)@
+   \__ \@
+   (   /@
+    |_| @@
+    _  __@
+   (_)/ /@
+     / / @
+    / /_ @
+   /_/(_)@
+         @@
+     ___   @
+    ( _ )  @
+    / _ \/\@
+   | (_>  <@
+    \___/\/@
+           @@
+    _ @
+   ( )@
+   |/ @
+    $ @
+    $ @
+      @@
+     __@
+    / /@
+   | | @
+   | | @
+   | | @
+    \_\@@
+   __  @
+   \ \ @
+    | |@
+    | |@
+    | |@
+   /_/ @@
+         @
+   __/\__@
+   \    /@
+   /_  _\@
+     \/  @
+         @@
+          @
+      _   @
+    _| |_ @
+   |_   _|@
+     |_|  @
+          @@
+      @
+      @
+      @
+    _ @
+   ( )@
+   |/ @@
+          @
+          @
+    _____ @
+   |_____|@
+      $   @
+          @@
+      @
+      @
+      @
+    _ @
+   (_)@
+      @@
+       __@
+      / /@
+     / / @
+    / /  @
+   /_/   @
+         @@
+     ___  @
+    / _ \ @
+   | | | |@
+   | |_| |@
+    \___/ @
+          @@
+    _ @
+   / |@
+   | |@
+   | |@
+   |_|@
+      @@
+    ____  @
+   |___ \ @
+     __) |@
+    / __/ @
+   |_____|@
+          @@
+    _____ @
+   |___ / @
+     |_ \ @
+    ___) |@
+   |____/ @
+          @@
+    _  _   @
+   | || |  @
+   | || |_ @
+   |__   _|@
+      |_|  @
+           @@
+    ____  @
+   | ___| @
+   |___ \ @
+    ___) |@
+   |____/ @
+          @@
+     __   @
+    / /_  @
+   | '_ \ @
+   | (_)
+
 reference https://en.wikipedia.org/wiki/FIGlet
+status active
+fileType text

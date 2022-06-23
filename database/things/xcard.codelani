@@ -1,5 +1,7 @@
+title xcard
 appeared 2011
 type xmlFormat
+
 example
  <?xml version="1.0" encoding="UTF-8"?>
  <vcards xmlns="urn:ietf:params:xml:ns:vcard-4.0">
@@ -95,4 +97,5 @@ example
      </rev>
    </vcard>
  </vcards>
+
 reference https://tools.ietf.org/html/rfc6351

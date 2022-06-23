@@ -1,3 +1,27 @@
+title Fortran 90
 appeared 1990
 type pl
+
+patterns
+ hasPointers? true
+  type real_list_t
+    real :: sample_data(100)
+    type (real_list_t), pointer :: next => null ()
+  end type
+  
+  type (real_list_t), target :: my_real_list
+  type (real_list_t), pointer :: real_list_temp
+  
+  real_list_temp => my_real_list
+  do
+    read (1,iostat=ioerr) real_list_temp%sample_data
+    if (ioerr /= 0) exit
+    allocate (real_list_temp%next)
+    real_list_temp => real_list_temp%next
+  end do
+ hasCentralPackageRepository? false
+
 reference https://semanticscholar.org/paper/d896513025079fa1e7a8d6aa44843c39bbf2b6ff
+status historical
+
+hopl 1627

@@ -1,3 +1,23 @@
+title CodeGear Delphi
 appeared 1995
 type pl
-wikipedia CodeGear_Delphi
+
+patterns
+ hasCentralPackageRepository? false
+
+wikipedia https://en.wikipedia.org/wiki/CodeGear_Delphi
+ example
+  procedure TForm1.ShowSomethingOnCreate;
+  begin
+    Label1.Text := 'Hello World!';
+  end;
+ related object-pascal pascal ia-32 ios android linux turbo-pascal assembly-language java uml xml cil php visual-basic oxygene free-pascal
+ summary Delphi is an integrated development environment (IDE) for rapid application development of desktop, mobile, web, and console software, developed by Embarcadero Technologies. It is also an event-driven language.  Delphi's compilers use their own Object Pascal dialect of Pascal and generate native code for Microsoft Windows, macOS (IA-32 only), iOS, Android and Linux (x64 only). Since 2016, there have been new releases of Delphi every six months, with new platforms being added approximately every second release.Delphi includes a code editor, a visual designer, an integrated debugger, a source code control component, and support for third-party plugins. The code editor features Code Insight (code completion), Error Insight (real-time error-checking), and refactoring. The visual forms designer has traditionally used Visual Component Library (VCL) for native Windows development, but the FireMonkey (FMX) platform was later added for cross-platform development. Database support in Delphi is very strong. A Delphi project of a million lines to compile in a few seconds – one benchmark gave 170,000 lines per second. Delphi was originally developed by Borland as a rapid application development tool for Windows as the successor of Turbo Pascal. Delphi added full object-oriented programming to the existing language, and since then the language has grown to support generics and anonymous methods, and native Component Object Model (COM) support. In 2006, Borland’s developer tools section was transferred from Borland to a wholly owned subsidiary known as CodeGear, which was sold to Embarcadero Technologies in 2008. In 2015, Embarcadero was purchased by Idera Software, but the Embarcadero mark was retained for the developer tools division. Delphi and its C++ counterpart, C++Builder, are interoperable. They share many core components, notably the IDE, VCL, and much of the runtime library. In addition, they can be used jointly in a project. For example, C++Builder 6 and later can consume Delphi source code and C++ in one project, while packages compiled with C++Builder can be used from within Delphi. In 2007, the products were released jointly as RAD Studio, a shared host for Delphi and C++Builder, which can be purchased with either or both.
+ created 2009
+ backlinksCount 128
+ pageId 349208
+ revisionCount 3
+ dailyPageViews 7
+ appeared 1995
+
+status historical

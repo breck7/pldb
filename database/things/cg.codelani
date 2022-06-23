@@ -1,4 +1,50 @@
+title C for Graphics
 appeared 2003
 type pl
-wikipedia Cg_(programming_language)
+
+patterns
+ hasCentralPackageRepository? false
+
+wikipedia https://en.wikipedia.org/wiki/Cg_(programming_language)
+ example
+  // input vertex
+   struct VertIn {
+       float4 pos   : POSITION;
+       float4 color : COLOR0;
+   };
+   
+   // output vertex
+   struct VertOut {
+       float4 pos   : POSITION;
+       float4 color : COLOR0;
+   };
+   
+   // vertex shader main entry
+   VertOut main(VertIn IN, uniform float4x4 modelViewProj) {
+       VertOut OUT;
+       OUT.pos     = mul(modelViewProj, IN.pos); // calculate output coords
+       OUT.color   = IN.color; // copy input color to output
+       OUT.color.z = 1.0f; // blue component of color = 1.0f
+       return OUT;
+   }
+ related c opengl unity-engine
+ summary Cg (short for C for Graphics) is a high-level shading language developed by Nvidia in close collaboration with Microsoft for programming vertex and pixel shaders. Cg is based on the C programming language and although they share the same syntax, some features of C were modified and new data types were added to make Cg more suitable for programming graphics processing units. This language is only suitable for GPU programming and is not a general programming language. The Cg compiler outputs DirectX or OpenGL shader programs. Since 2012, Cg was deprecated, with no additional development or support available.
+ pageId 390212
+ dailyPageViews 189
+ created 2003
+ backlinksCount 122
+ revisionCount 233
+ appeared 2012
+
 reference https://arxiv.org/pdf/cs/0302013.pdf
+standsFor C for Graphics
+status active
+country US
+fileType text
+wordRank 7928
+
+tiobe cg
+
+hopl 6204
+
+corporateDevelopers Nvidia

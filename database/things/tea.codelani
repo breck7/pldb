@@ -1,4 +1,34 @@
+title Tea
 appeared 1997
 type textMarkup
+
+patterns
+ hasCentralPackageRepository? false
+
+wikipedia https://en.wikipedia.org/wiki/Tea_(programming_language)
+ related tcl java scheme xml jvm
+ summary Tea is a high level scripting language for the Java environment. It combines features of Scheme, Tcl, and Java.  Integrated support for all major programming paradigms. Functional programming language. Functions are first class objects. Scheme-like closures are intrinsic to the language. Support for object oriented programming. Modular libraries with autoloading on demand facilities. Large base of core functions and classes. String and list processing. Regular expressions. File and network I/O. Database access. XML processing. 100% Pure Java. The Tea interpreter is implemented in Java. Tea runs anywhere with a Java 1.6 JVM or higher. Java reflection features allow the use of Java libraries directly from Tea code. Intended to be easily extended in Java. For example, Tea supports relational database access through JDBC, regular expressions through GNU Regexp, and an XML parser through a SAX parser (XML4J for example).
+ pageId 3431871
+ created 2005
+ backlinksCount 20
+ revisionCount 55
+ dailyPageViews 14
+ appeared 1997
+
+githubLanguage Tea
+ fileExtensions tea
+ trendingProjectsCount 0
+
+linguistGrammarRepo https://github.com/pferruggiaro/sublime-tea
+ firstCommit 2012
+ lastCommit 2015
+ committerCount 3
+ commitCount 10
+ sampleCount 1
+ example
+  <% template foo() %>
+
 website http://www2.pdmfc.com/tea
-wikipedia Tea_(programming_language)
+status active
+fileType text
+wordRank 2862

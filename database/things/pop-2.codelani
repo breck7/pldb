@@ -1,3 +1,23 @@
+title POP-2
 appeared 1967
 type pl
-wikipedia POP-2
+
+patterns
+ hasCentralPackageRepository? false
+
+wikipedia https://en.wikipedia.org/wiki/POP-2
+ example
+  vars operation 3 +*;
+      lambda x y; x * x + y * y end -> nonop +*
+ related cowsel algol-60 pop-11 unix prolog poplog common-lisp standard-ml
+ summary POP-2 (also referred to as POP2) is a programming language developed around 1970 from the earlier language POP-1 (developed by Robin Popplestone in 1968, originally named COWSEL) by Robin Popplestone and Rod Burstall at the University of Edinburgh.  It drew roots from many sources: the languages LISP and ALGOL 60, and theoretical ideas from Peter J. Landin. It used an incremental compiler, which gave it some of the flexibility of an interpreted language, including allowing new function definitions at run time and modification of function definitions while a program was running (both of which are features of dynamic compilation), without the overhead of an interpreted language.
+ created 2004
+ backlinksCount 34
+ pageId 981616
+ revisionCount 64
+ dailyPageViews 14
+ appeared 1968
+
+status historical
+
+hopl 298

@@ -1,4 +1,137 @@
+title Erlang
 appeared 1986
 type pl
+
+patterns
+ canDoShebang? true
+  #!/usr/bin/env escript
+ hasCentralPackageRepository? true
+ hasComments? true
+  % hello world program
+ hasBlockComments? false
+ hasDirectives? true
+  -define(TIMEOUT, 200).
+  ...
+  call(Request) ->
+     server:call(refserver, Request, ?TIMEOUT).
+  -undef(Macro).
+ hasImports? true
+  -include("my_records.hrl").
+  -include("incdir/my_records.hrl").
+  -include("/home/user/proj/my_records.hrl").
+  -include("$PROJ_ROOT/my_records.hrl").
+  -include_lib("kernel/include/file.hrl").
+ hasExports? true
+  -export([start/0, codeswitch/1]).
+ hasMacros? true
+  -define(Const, Replacement).
+  -define(Func(Var1,...,VarN), Replacement).
+
+wikipedia https://en.wikipedia.org/wiki/Erlang_(programming_language)
+ example
+  %% Second version
+    -module(counter).
+    -export([start/0, codeswitch/1]).
+  
+    start() -> loop(0).
+  
+    loop(Sum) ->
+      receive
+         {increment, Count} ->
+            loop(Sum+Count);
+         reset ->
+            loop(0);
+         {counter, Pid} ->
+            Pid ! {counter, Sum},
+            loop(Sum);
+         code_switch ->
+            ?MODULE:codeswitch(Sum)
+      end.
+  
+    codeswitch(Sum) -> loop(Sum).
+ related prolog smalltalk plex f-sharp clojure rust scala opa elixir dart oz java ascii occam csp lfe lisp
+ summary Erlang ( ER-lang) is a general-purpose, concurrent, functional programming language, as well as a garbage-collected runtime system. The term Erlang is used interchangeably with Erlang/OTP, or OTP, which consists of the Erlang runtime system, a number of ready-to-use components mainly written in Erlang, and a set of design principles for Erlang programs. The Erlang runtime system is known for its designs that are well suited for systems with the following characteristics: Distributed Fault-tolerant Soft real-time, Highly available, non-stop applications Hot swapping, where code can be changed without stopping a system. The Erlang programming language is known for the following properties: Immutable data Pattern matching Functional programming The sequential subset of the Erlang language supports eager evaluation, single assignment, and dynamic typing. It was originally a proprietary language within Ericsson, developed by Joe Armstrong, Robert Virding and Mike Williams in 1986, but was released as open source in 1998. Erlang/OTP is supported and maintained by the OTP product unit at Ericsson.
+ pageId 9646
+ dailyPageViews 857
+ created 2001
+ backlinksCount 605
+ revisionCount 1311
+ appeared 1986
+ fileExtensions erl hrl
+
+githubLanguage Erlang
+ fileExtensions erl appsrc es escript hrl xrl yrl
+ trendingProjects
+  author name avatar url language languageColor stars forks currentPeriodStars description
+  emqx emqx https://github.com/emqx.png https://github.com/emqx/emqx Erlang #B83998 4937 943 140 "EMQ X Broker - Scalable Distributed MQTT Message Broker for IoT in 5G Era"
+  rabbitmq rabbitmq-server https://github.com/rabbitmq.png https://github.com/rabbitmq/rabbitmq-server Erlang #B83998 6212 1921 158 "Open source multi-protocol messaging broker"
+ trendingProjectsCount 3
+
+helloWorldCollection Erlang
+ %% Hello World in Erlang
+ 
+ -module(hello).
+ 
+ -export([hello/0]).
+ 
+ hello() ->
+    io:format("Hello World!~n", []).
+ 
+
+linguistGrammarRepo https://github.com/textmate/erlang.tmbundle
+ firstCommit 2006
+ lastCommit 2018
+ committerCount 9
+ commitCount 51
+ sampleCount 10
+ example
+  #!/usr/bin/env escript
+  -export([main/1]).
+  
+  main([]) -> io:format("Hello, World!~n").
+  
+
 website https://www.erlang.org
-wikipedia Erlang_(programming_language)
+status active
+
+twitter erlang_org
+
+country SE
+fileExtensions erl hrl
+fileType text
+isOpenSource true
+
+tiobe Erlang
+ currentRank 49
+
+meetup erlang-programming
+ memberCount 104319
+ groupCount 306
+
+linkedInSkill erlang
+ peopleWithThisSkillCount 12535
+
+projectEuler Erlang
+ memberCount
+  2019 614
+  2022 618
+
+hopl 1728
+
+subreddit erlang
+ memberCount
+  2017 6019
+
+quineRelay Erlang
+
+ubuntuPackage erlang
+
+codeMirror erlang
+
+rosettaCode Erlang
+
+antlr https://github.com/antlr/grammars-v4/tree/master/erlang
+
+corporateDevelopers Ericsson
+indeedJobs erlang engineer
+ 2017 183

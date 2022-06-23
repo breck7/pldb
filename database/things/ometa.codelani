@@ -1,3 +1,10 @@
+title OMeta
 appeared 2007
 type grammarLanguage
-wikipedia OMeta
+
+wikipedia https://en.wikipedia.org/wiki/OMeta
+ summary OMeta is a specialized object-oriented programming language for pattern matching, developed by Alessandro Warth and Ian Piumarta in 2007 under the Viewpoints Research Institute. The language is based on Parsing Expression Grammars (PEGs) rather than Context-Free Grammars with the intent of providing “a natural and convenient way for programmers to implement tokenizers, parsers, visitors, and tree-transformers”.OMeta's main goal is to allow a broader audience to use techniques generally available only to language programmers, such as parsing. It is also known for its use in quickly creating prototypes, though programs written in OMeta are noted to be generally less efficient than those written in vanilla (base language) implementations, such as JavaScript.OMeta is noted for its use in creating domain-specific languages, and especially for the maintainability of its implementations (Newcome). OMeta, like other meta languages, requires a host language; it was originally created as a COLA implementation.
+ backlinksCount 15
+ pageId 40847963
+ dailyPageViews 10
+ appeared 2007

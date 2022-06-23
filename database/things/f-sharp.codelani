@@ -1,5 +1,133 @@
+title F#
 appeared 2005
 type pl
+
+patterns
+ hasCentralPackageRepository? true
+ hasComments? true
+ hasDocComments? true
+  /// Adds 2 numbers
+  let rec add x y =
+   x + y
+ hasDirectives? true
+  #if VERSION1
+  let function1 x y =
+     printfn "x: %d y: %d" x y
+     x + 2 * y
+  #else
+  let function1 x y =
+     printfn "x: %d y: %d" x y
+     x - 2*y
+  #endif
+  // Line directives as source maps can be used when compiling to F#:
+  #line 25 "C:\\Projects\\MyProject\\MyProject\\Script1"
+ hasImports? true
+  open module-or-namespace-name
+  open System.IO
+  open List
+  open Seq
+ hasNamespaces? true
+  namespace Widgets
+  type MyWidget1 =
+     member this.WidgetName = "Widget1"
+  module WidgetsModule =
+     let widgetName = "Widget2"
+ hasOperatorOverloading? true
+ hasSemanticIndentation? true
+ hasTypeInference? true
+
+wikipedia https://en.wikipedia.org/wiki/F_Sharp_(programming_language)
+ example
+  /// A simple prime number detector
+  let isPrime (n:int) =
+     let bound = int (sqrt (float n))
+     seq {2 .. bound} |> Seq.forall (fun x -> n % x <> 0)
+  
+  // We are using async workflows
+  let primeAsync n =
+      async { return (n, isPrime n) }
+  
+  /// Return primes between m and n using multiple threads
+  let primes m n =
+      seq {m .. n}
+          |> Seq.map primeAsync
+          |> Async.Parallel
+          |> Async.RunSynchronously
+          |> Array.filter snd
+          |> Array.map fst
+  
+  // Run a test
+  primes 1000000 1002000
+      |> Array.iter (printfn "%d")
+ summary F# (pronounced F sharp) is a strongly typed, multi-paradigm programming language that encompasses functional, imperative, and object-oriented programming methods. F# is most often used as a cross-platform Common Language Infrastructure (CLI) language, but it can also generate JavaScript and graphics processing unit (GPU) code. F# is developed by the F# Software Foundation, Microsoft and open contributors. An open source, cross-platform compiler for F# is available from the F# Software Foundation. F# is also a fully supported language in Visual Studio and Xamarin Studio. Other tools supporting F# development include Mono, MonoDevelop, SharpDevelop, MBrace and WebSharper. Plug-ins supporting F# exist for many widely used editors, most notably the Ionide extension for Atom and Visual Studio Code, and integrations for other editors such as Vim, Emacs, and Sublime Text. F# is member of the ML language family and originated as a .NET Framework implementation of a core of the programming language OCaml, It has also been influenced by C#, Python, Haskell, Scala, and Erlang.
+ pageId 239964
+ dailyPageViews 619
+ created 2003
+ backlinksCount 429
+ revisionCount 714
+ appeared 2005
+ fileExtensions fs fsi fsx fsscript
+
+githubLanguage F#
+ fileExtensions fs fsi fsx
+ trendingProjects
+  author name avatar url language languageColor stars forks currentPeriodStars description
+  dotnet fsharp https://github.com/dotnet.png https://github.com/dotnet/fsharp F# #b845fc 1919 476 39 "The F# compiler, FSharp.Core library, and tools for F#"
+ trendingProjectsCount 2
+
+helloWorldCollection F#
+ (* Hello World in F# *)
+ 
+ printf "Hello World!\n"
+
+linguistGrammarRepo https://github.com/fsprojects/atom-fsharp
+ firstCommit 2015
+ lastCommit 2017
+ committerCount 6
+ commitCount 347
+ sampleCount 8
+ example
+  module Sample
+  
+  open System
+  
+  type Foo =
+      {
+          Bar : string
+      }
+  
+  type Baz = interface end
+  
+  let Sample1(xs : int list) : string =
+      xs
+      |> List.map (fun x -> string x)
+      |> String.concat ","
+  
+
 website http://fsharp.org
-wikipedia F_Sharp_(programming_language)
 reference https://docs.microsoft.com/en-us/dotnet/fsharp/language-reference/index
+aka f#
+status active
+
+replit fsharp
+
+fileExtensions fs fsi fsx fsscript
+fileType text
+isOpenSource true
+
+tiobe F#
+
+meetup f-programming
+ memberCount 37224
+ groupCount 128
+
+projectEuler F#
+ memberCount
+  2019 1199
+  2022 1245
+
+hopl 3716
+
+quineRelay F#
+
+ubuntuPackage fsharp

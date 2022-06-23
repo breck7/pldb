@@ -1,11 +1,58 @@
+title EEX
 appeared 2012
 type template
-website https://hexdocs.pm/eex/EEx.html
+
 example
  <%= if true do %>
    It is obviously true
  <% else %>
    This will never appear
  <% end %>
-reference https://github.com/elixir-lang/elixir/commits/master/lib/eex/lib/eex.ex
+
+patterns
+ hasCentralPackageRepository? false
+
 description EEx stands for Embedded Elixir. It allows you to embed Elixir code inside a string in a robust way.
+
+githubLanguage HTML+EEX
+ fileExtensions eex
+ trendingProjectsCount 0
+
+linguistGrammarRepo https://github.com/elixir-lang/elixir-tmbundle
+ firstCommit 2011
+ lastCommit 2018
+ committerCount 47
+ commitCount 278
+ sampleCount 1
+ example
+  <h1>Listing Books</h1>
+   
+  <table>
+    <tr>
+      <th>Title</th>
+      <th>Summary</th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  
+  <%= for book <- @books do %>
+    <tr>
+      <%# comment %>
+      <td><%= book.title %></td>
+      <td><%= book.content %></td>
+      <td><%= link "Show", to: book_path(@conn, :show, book) %></td>
+      <td><%= link "Edit", to: book_path(@conn, :edit, book) %></td>
+      <td><%= link "Delete", to: book_path(@conn, :delete, book), method: :delete, data: [confirm: "Are you sure?"] %></td>
+    </tr>
+  <% end %>
+  </table>
+   
+  <br />
+   
+  <%= link "New book", to: book_path(@conn, :new) %>
+
+website https://hexdocs.pm/eex/EEx.html
+reference https://github.com/elixir-lang/elixir/commits/master/lib/eex/lib/eex.ex
+status active
+fileType text

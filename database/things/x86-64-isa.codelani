@@ -1,3 +1,22 @@
+title x86-64
 appeared 2000
 type isa
-wikipedia x86-64
+
+patterns
+ hasCentralPackageRepository? false
+
+wikipedia https://en.wikipedia.org/wiki/x86-64
+ related x86-isa mips sparc ia-32 freebsd linux opengl powerpc solaris visual-studio-editor
+ summary x86-64 (also known as x64, x86_64, AMD64 and Intel 64) is the 64-bit version of the x86 instruction set. It introduces two new modes of operation, 64-bit mode and compatibility mode, along with a new 4-level paging mode. With 64-bit mode and the new paging mode, it supports vastly larger amounts of virtual memory and physical memory than is possible on its 32-bit predecessors, allowing programs to store larger amounts of data in memory. x86-64 also expands general-purpose registers to 64-bit, as well extends the number of them from 8 (some of which had limited or fixed functionality, e.g. for stack management) to 16 (fully general), and provides numerous other enhancements. Floating point operations are supported via mandatory SSE2-like instructions, and x87/MMX style registers are generally not used (but still available even in 64-bit mode); instead, a set of 32 vector registers, 128 bits each, is used. (Each can store one or two double-precision numbers or one to four single precision numbers, or various integer formats.) In 64-bit mode, instructions are modified to support 64-bit operands and 64-bit addressing mode. The compatibility mode allows 16- and 32-bit user applications to run unmodified coexisting with 64-bit applications if the 64-bit operating system supports them. As the full x86 16-bit and 32-bit instruction sets remain implemented in hardware without any intervening emulation, these older executables can run with little or no performance penalty, while newer or modified applications can take advantage of new features of the processor design to achieve performance improvements. Also, a processor supporting x86-64 still powers on in real mode for full backward compatibility. The original specification, created by AMD and released in 2000, has been implemented by AMD, Intel and VIA. The AMD K8 processor was the first to implement it. This was the first significant addition to the x86 architecture designed by a company other than Intel. Intel was forced to follow suit and introduced a modified NetBurst family which was software-compatible with AMD's specification. VIA Technologies introduced x86-64 in their VIA Isaiah architecture, with the VIA Nano. The x86-64 architecture is distinct from the Intel Itanium architecture (formerly IA-64), which is not compatible on the native instruction set level with the x86 architecture. Operating systems and applications written for one cannot be run on the other.
+ pageId 244374
+ dailyPageViews 1
+ created 2003
+ backlinksCount 1555
+ revisionCount 2158
+ appeared 2000
+
+aka amd64 x86_64
+status historical
+fileType na
+linkedInSkill x86
+ peopleWithThisSkillCount 41266

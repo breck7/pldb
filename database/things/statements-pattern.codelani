@@ -1,2 +1,11 @@
+title Statements
 type pattern
-wikipedia Statement_(computer_science)
+psuedoExample print Hello world
+
+wikipedia https://en.wikipedia.org/wiki/Statement_(computer_science)
+ summary In computer programming, a statement is a syntactic unit of an imperative programming language that expresses some action to be carried out. A program written in such a language is formed by a sequence of one or more statements. A statement may have internal components (e.g., expressions). Many imperative languages (e.g. C) make a distinction between statements and definitions, with a statement only containing executable code and a definition instantiating an identifier, while an expression evaluates to a value only. A distinction can also be made between simple and compound statements; the latter may contain statements as components.
+ backlinksCount 78
+ pageId 938656
+ dailyPageViews 171
+
+patternKeyword hasStatements?

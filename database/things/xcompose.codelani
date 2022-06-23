@@ -1,9 +1,64 @@
+title XCompose
 appeared 2006
 type application
+
 example
  include "%L"
  
  <Multi_key> <g> <a> : "α"
  <Multi_key> <g> <b> : "β"
  <Multi_key> <g> <g> : "γ"
+
+patterns
+ hasCentralPackageRepository? false
+
+githubLanguage XCompose
+ trendingProjectsCount 0
+
+linguistGrammarRepo https://github.com/samcv/language-xcompose
+ firstCommit 2016
+ lastCommit 2016
+ committerCount 1
+ commitCount 4
+ sampleCount 1
+ example
+  # for Emacs: -*- coding: utf-8 -*-
+  include "%L"
+  
+  # def emit(keys, codepoint, word):
+  #     print ('<Multi_key> %s <period>\t: "%s"\tU%04X\t\t# CIRCLED DIGIT %s' % 
+  #            (keys, unichr(codepoint), codepoint, word)).encode('utf8')
+  # numbers = 'one two three four five six seven eight nine ten eleven twelve thirteen fourteen fifteen sixteen seventeen eighteen nineteen twenty'
+  # words = numbers.upper().split()
+  # emit('<0>', 0x24EA, "ZERO")
+  # for num, word in zip(range(1, 21), words):
+  #     emit(' '.join("<%s>" % char for char in str(num)), 0x245f + num, word)
+  
+  # Custom additions: Typography
+  <Multi_key> <period> <period>		: "…"	U2026		# HORIZONTAL ELLIPSIS
+  <Multi_key> <v> <period> <period>	: "⋮"	U22EE		# VERTICAL ELLIPSIS
+  <Multi_key> <c> <period> <period>	: "⋯"	U22EF		# MIDLINE HORIZONTAL ELLIPSIS
+  <Multi_key> <slash> <period> <period>	: "⋰"	U22F0		# UP RIGHT DIAGONAL ELLIPSIS
+  # To avoid conflict with \. for combining dot above.
+  #<Multi_key> <backslash> <period> <period> : "⋱" U22F1		# DOWN RIGHT DIAGONAL ELLIPSIS
+  <Multi_key> <period> <backslash> <period> : "⋱" U22F1		# DOWN RIGHT DIAGONAL ELLIPSIS
+  # Will we someday regret this, wanting 2. for ⒉ ?
+  <Multi_key> <2> <period>	 	  : "‥"	U2025		# TWO DOT LEADER
+  # This should not be needed.
+  #<Multi_key> <1> <period>		  : "․"	U2024		# ONE DOT LEADER
+  <Multi_key> <c> <1> <period>		  : "·"	U00B7		# MIDDLE DOT (maybe I can remember the keystroke better?
+  <Multi_key> <period> <slash> <period>	: "⁒"	U2052		# COMMERCIAL MINUS SIGN
+  # Printable sign for space.  But is \<space> too useful a key combo to use
+  # for this?
+  <Multi_key> <backslash> <space>		: "␣"	U2423		# OPEN BOX
+  # These two are already present for me:
+  # <Multi_key> <minus> <minus> <minus>	: "—"	U2014		# EM DASH
+  # <Multi_key> <minus> <minus> <period>	: "–"	U2013		# EN DASH
+  <Multi_key> <minus> <minus> <space>	: "– "			# EN DASH (followed by space)
+  <Multi_key> <minus> <asciitilde> <minus> : "―" U2015 # HORIZONTAL BAR
+  <Multi_key> <minus> <2> <M>	 	 : "⸺" U2E3A # TWO-EM DASH
+  <M
+
 reference https://wiki.debian.org/XCompose
+status active
+fileType text

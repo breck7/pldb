@@ -1,4 +1,54 @@
+title API Blueprint
 appeared 2013
 type textMarkup
+
+patterns
+ hasCentralPackageRepository? false
+
+githubLanguage API Blueprint
+ fileExtensions apib
+ trendingProjectsCount 0
+
+githubRepo https://github.com/apiaryio/api-blueprint
+ firstCommit 2013
+ stars 7031
+ forks 1968
+ subscribers 203
+ created 2013
+ updated 2018
+ description API Blueprint
+ issues 96
+
+linguistGrammarRepo https://github.com/apiaryio/api-blueprint-sublime-plugin
+ firstCommit 2013
+ lastCommit 2018
+ committerCount 15
+ commitCount 72
+ sampleCount 3
+ example
+  FORMAT: 1A
+  
+  # The Simplest API
+  This is one of the simplest APIs written in the **API Blueprint**.
+  One plain resource combined with a method and that's it! We will explain what is going on in the next installment - [Resource and Actions](02.%20Resource%20and%20Actions.md).
+  
+  **Note:** As we progress through the examples, do not also forget to view the [Raw](https://raw.github.com/apiaryio/api-blueprint/master/examples/01.%20Simplest%20API.md) code to see what is really going on in the API Blueprint, as opposed to just seeing the output of the Github Markdown parser.
+  
+  Also please keep in mind that every single example in this course is a **real API Blueprint** and as such you can **parse** it with the [API Blueprint parser](https://github.com/apiaryio/drafter) or one of its [bindings](https://github.com/apiaryio/drafter#bindings).
+  
+  ## API Blueprint
+  + [This: Raw API Blueprint](https://raw.github.com/apiaryio/api-blueprint/master/examples/01.%20Simplest%20API.md)
+  + [Next: Resource and Actions](02.%20Resource%20and%20Actions.md)
+  
+  # GET /message
+  + Response 200 (text/plain)
+  
+          Hello World!
+
 website https://apiblueprint.org
-github https://github.com/apiaryio/api-blueprint
+status active
+
+twitter apiblueprint
+
+fileType text
+isOpenSource true

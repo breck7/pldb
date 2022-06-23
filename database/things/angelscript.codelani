@@ -1,4 +1,119 @@
+title Angelscript
 appeared 2003
 type pl
+
+patterns
+ hasCentralPackageRepository? false
+
+wikipedia https://en.wikipedia.org/wiki/AngelScript
+ related eclipse-editor
+ summary AngelScript is a game-oriented interpreted compiled scripting language. AngelScript features static typing, object handles (similar to C++ pointers but garbage collected via reference counting), object-orientation, single inheritance, multiple inheritance with interfaces. Allows operators to be registered and overloaded. AngelScript can be used with any C++ IDE, such as Netbeans, Geany, Eclipse, and also supported by AngelJuice IDE developed specifically for the language. C and C++ functions can be called within an AngelScript environment. AngelScript's class syntax closely follows C++ classes by design: no proxy functions are required to embed AngelScript in C++ applications easing the two languages integration. There are several differences of AngelScript and C++: AngelScript does not support multiple inheritance. Multiple-inheritance functionality may be achieved with Interfaces. It is impossible to declare methods or properties outside of the class body. All methods (including constructors and destructors) are virtual. AngelScript is used in video game development, including Amnesia: The Dark Descent, Amy, Dustforce, Gekkeiju Online, King Arthur's Gold, Legend of the Guardians: The Owls of Ga'Hoole, Overgrowth, Penumbra: Overture, Penumbra: Requiem, Puddle, Rigs of Rods, Sine Mora, Star Ruler, SuperTuxKart, Warhammer: Mark of Chaos, Warsow, Urho3D. AngelScript is used at the University of Ulm in interactive 3D-Animation program. AngelScript is also used in robotics, for example, to program behavioral rules of robotic agents.
+ pageId 39538319
+ dailyPageViews 29
+ created 2013
+ backlinksCount 23
+ revisionCount 58
+ appeared 2003
+
+githubLanguage AngelScript
+ fileExtensions as angelscript
+ trendingProjectsCount 0
+
+helloWorldCollection Angelscript
+ // Hello world in AngelScript
+ 
+ void main() { print("Hello world\n"); }
+
+linguistGrammarRepo https://github.com/wronex/sublime-angelscript
+ firstCommit 2012
+ lastCommit 2018
+ committerCount 4
+ commitCount 22
+ sampleCount 2
+ example
+  /*
+  *	This is a sample script.
+  */
+  
+  #include "BotManagerInterface.acs"
+  
+  BotManager::BotManager g_BotManager( @CreateDumbBot );
+  
+  CConCommand@ m_pAddBot;
+  
+  void PluginInit()
+  {
+  	g_BotManager.PluginInit();
+  	
+  	@m_pAddBot = @CConCommand( "addbot", "Adds a new bot with the given name", @AddBotCallback );
+  }
+  
+  void AddBotCallback( const CCommand@ args )
+  {
+  	if( args.ArgC() < 2 )
+  	{
+  		g_Game.AlertMessage( at_console, "Usage: addbot <name>" );
+  		return;
+  	}
+  	
+  	BotManager::BaseBot@ pBot = g_BotManager.CreateBot( args[ 1 ] );
+  	
+  	if( pBot !is null )
+  	{
+  		g_Game.AlertMessage( at_console, "Created bot " + args[ 1 ] + "\n" );
+  	}
+  	else
+  	{
+  		g_Game.AlertMessage( at_console, "Could not create bot\n" );
+  	}
+  }
+  
+  final class DumbBot : BotManager::BaseBot
+  {	
+  	DumbBot( CBasePlayer@ pPlayer )
+  	{
+  		super( pPlayer );
+  	}
+  	
+  	void Think()
+  	{
+  		BotManager::BaseBot::Think();
+  		
+  		// If the bot is dead and can be respawned, send a button press
+  		if( Player.pev.deadflag >= DEAD_RESPAWNABLE )
+  		{
+  			Player.pev.button |= IN_ATTACK;
+  		}
+  		else
+  			Player.pev.button &= ~IN_ATTACK;
+  		
+  		KeyValueBuffer@ pInfoBuffer = g_EngineFuncs.GetInfoKeyBuffer( Player.edict() );
+  		
+  		pInfoBuffer.SetValue( "topcolor", Math.RandomLong( 0, 255 ) );
+  		pInfoBuffer.SetValue( "bottomcolor", Math.RandomLong( 0, 255 ) );
+  		
+  		if( Math.RandomLong( 0, 100 ) > 10 )
+  			Player.pev.button |= IN_ATTACK;
+  		else
+  			Player.pev.button &= ~IN_ATTACK;
+  			
+  		for( uint uiIndex = 0; uiIndex < 3; ++uiIndex )
+  		{
+  			m_vecVelocity[ uiIndex ] = Math.RandomLong( -50, 50 );
+  		}
+  	}
+  }
+  
+  BotManager::BaseBot@ CreateDumbBot( CBasePlayer@ pPlayer )
+  {
+  	return @DumbBot( pPlayer );
+  }
+  
+
 website http://angelcode.com/angelscript
-wikipedia AngelScript
+status active
+fileType text
+
+tiobe Angelscript
+
+rosettaCode AngelScript

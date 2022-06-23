@@ -1,4 +1,36 @@
+title Pug
 appeared 2010
 type template
+
+patterns
+ hasCentralPackageRepository? false
+
+githubLanguage Pug
+ fileExtensions jade pug
+ trendingProjectsCount 0
+
+githubRepo https://github.com/pugjs/pug
+ firstCommit 2010
+ stars 17441
+ forks 1869
+ subscribers 590
+ created 2010
+ updated 2018
+ description Pug – robust, elegant, feature rich template engine for Node.js
+ issues 206
+
+linguistGrammarRepo https://github.com/davidrios/jade-tmbundle
+ firstCommit 2010
+ lastCommit 2016
+ committerCount 16
+ commitCount 118
+ sampleCount 2
+ example
+  p.
+    Hello,
+    World!
+
 website https://pugjs.org
-github https://github.com/pugjs/pug
+status active
+fileType text
+isOpenSource true

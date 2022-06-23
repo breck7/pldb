@@ -1,11 +1,34 @@
+title G-Portugol
 appeared 2005
 type pl
 creators Thiago Silva
-github https://github.com/thiago-silva/gpt
+
 example
  algoritmo OlaMundo;
  
  início
     imprima("Olá, Mundo!");
  fim 
+
+patterns
+ hasCentralPackageRepository? false
+
+githubRepo https://github.com/thiago-silva/gpt
+ firstCommit 2005
+ stars 3
+ forks 1
+ subscribers 2
+ created 2013
+ updated 2017
+ description G-Portugol - A linguagem de programação
+ issues 0
+
 reference https://pt.wikipedia.org/wiki/G-Portugol
+status active
+country PT
+fileType text
+isOpenSource true
+
+quineRelay G-Portugol
+
+ubuntuPackage gpt

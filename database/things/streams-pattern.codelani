@@ -1,3 +1,9 @@
+title Streams
 type pattern
-wikipedia Stream_(computing)
+psuedoExample echo 123 | 123.txt
 description In computer science, a stream is a sequence of data elements made available over time. A stream can be thought of as items on a conveyor belt being processed one at a time rather than in large batches.
+
+wikipedia https://en.wikipedia.org/wiki/Stream_(computing)
+
+status active
+patternKeyword hasStreams?

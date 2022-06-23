@@ -1,7 +1,7 @@
+title GEL Genius
 appeared 1997
 type pl
-website http://www.jirka.org/genius.html
-wikipedia Genius_(mathematics_software)
+
 example
  function f(x) = (
   if x <= 1 then
@@ -9,3 +9,33 @@ example
   else
     (f(x-1)*x)
  )
+
+patterns
+ hasCentralPackageRepository? false
+
+wikipedia https://en.wikipedia.org/wiki/Genius_(mathematics_software)
+ example
+  function f(x) = (
+    if x <= 1 then
+      1
+    else
+      (f(x-1)*x)
+  )
+ related linux matlab octave mathematica maple chapel fortress julia maxima r sagemath scilab x10 labview mathcad mathematica-editor speakeasy vissim
+ summary Genius  (also known as the Genius Math Tool) is a free open-source numerical computing environment and programming language, similar in some aspects to MATLAB, GNU Octave, Mathematica and Maple.  Genius is aimed at mathematical experimentation rather than computationally intensive tasks.  It is also very useful as just a calculator.  The programming language is called GEL and aims to have a mathematically friendly syntax.  The software comes with a command-line interface and a GUI, which uses the GTK+ libraries.  The graphical version supports both 2D and 3D plotting.  The graphical version includes a set of tutorials originally aimed at in class demonstrations.
+ pageId 21839519
+ dailyPageViews 14
+ created 2009
+ backlinksCount 53
+ revisionCount 33
+ appeared 1997
+
+website http://www.jirka.org/genius.html
+aka GEL
+status historical
+fileType text
+isOpenSource true
+
+quineRelay GEL (Genius)
+
+ubuntuPackage genius

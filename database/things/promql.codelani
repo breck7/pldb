@@ -1,6 +1,14 @@
+title PromQL
 appeared 2014
 type queryLanguage
-website https://prometheus.io/docs/prometheus/latest/querying/basics/
+
 example
  topk(3, sum by (app, proc) (rate(instance_cpu_time_ns[5m])))
+
+patterns
+ hasCentralPackageRepository? false
+
+website https://prometheus.io/docs/prometheus/latest/querying/basics/
 reference https://timber.io/blog/promql-for-humans/
+status active
+cheatSheetUrl https://files.timber.io/pdfs/PromQL+Cheatsheet.pdf

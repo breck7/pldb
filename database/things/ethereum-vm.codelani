@@ -1,3 +1,10 @@
+title Ethereum Virtual Machine
 appeared 2015
 type vm
+
+patterns
+ hasCentralPackageRepository? false
+
 reference https://github.com/ethereum/wiki/wiki/Ethereum-Virtual-Machine-(EVM)-Awesome-List
+status historical
+fileType text

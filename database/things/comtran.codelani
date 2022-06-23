@@ -1,3 +1,80 @@
+title COMTRAN
 appeared 1957
 type pl
-wikipedia COMTRAN
+
+patterns
+ hasCentralPackageRepository? false
+
+wikipedia https://en.wikipedia.org/wiki/COMTRAN
+ example
+  01001 *PROCEDURE
+   
+   01002 CALL (EMPLOYEE.NUMBER)  EMPLOYNO,
+   01003      (BONDEDUCTION)     BONDEDUCT,
+   01004      (BONDENOMINATION)  BONDENOM,
+   01005      (BONDACCUMULATION) BONDACCUM,
+   01006      (INSURANCE.PREM)   INSPREM,
+   01007      (RETIREMENT.PREM)  RETPREM,
+   01008      (DEPARTMENT.TOTAl) DPT.
+   
+   01009 START. OPEN ALL FILES.
+   
+   01010 GET.MASTER. GET MASTER, AT END DO END.OF.MASTERS.
+   
+   01011 GET.DETAIL. GET DETAIL, AT END GO TO END.OF.DETAILS.
+   
+   01012 COMPARE.EMPLOYEE.NUMBERS. GO TO COMPUTE.PAY WHEN DETAIL EMPLOYNO
+   01013       IS EQUAL TO MASTER EMPLOYNO, LOW.DETAIL WHEN DETAIL
+   01014       EMPLOYNO IS LESS THAN MASTER EMPLOYNO.
+   
+   01015 HIGH.DETAIL. MOVE 'M' TO MASTER ERRORCODE, FILE MASTER IN
+   01016       ERROR.FILE.
+   
+   01017         GET MASTER, AT END DO END.OF.MASTERS.
+   
+   01018         GO TO COMPARE.EMPLOYEE.NUMBERS.
+   
+   02001 LOW.DETAIL. MOVE 'D' TO DETAIL ERRORCODE, FILE DETAIL IN
+   02002        ERROR.FILE.
+   
+   02003          GO TO GET.DETAIL.
+   
+   02004 END.OF.MASTERS. IF DETAIL EMPLOYNO = HIGH.VALUE THEN GO TO
+   02005         END.OF.RUN OTHERWISE SET MASTER EMPLOYNO = HIGH.VALUE.
+   
+   02006 END.OF.DETAILS. IF MASTEREMPLOYNO = HIGH.VALUE THEN GO TO
+   02007         END.OF.RUN OTHERWISE SET DETAIL EMPLOYNO = HIGH.VALUE, GO
+   02008         TO COMPARE.EMPLOYEE.NUMBERS.
+   
+   02009 END.OF.RUN. MOVE CORRESPONDING GRAND.TOTAL TO PAYRECORD, FILE
+   02010        PAYRECORD, CLOSE ALL FILES.
+   02011          STOP 1234.
+   
+   02012 COMPUTE.PAY. IF DETAIL HOURS IS GREATER THAN 40 THEN SET DETAIL
+   02013        GROSS = (DETAIL HOURS - 40) * MASTER RATE * 1.5.
+   
+   02014        SET DETAIL GROSS = DETAIL GROSS + MASTER RATE * 40, DO
+   02015      FICA.ROUTINE, DO WITHHOLDING.TAX.ROUTINE.
+   
+   02016        IF MASTER BONDEDUCT IS NOT EQUAL TO ZERO THEN DO
+   02017      BOND.ROUTINE.
+   
+   02018        DO SEARCH FOR INDEX = 1(1)12.
+   
+   02019 NET. SET PAYRECORD NETPAY = DETAIL GROSS - DETAIL FICA - DETAIL
+   02020        WHT -DETAIL RETIREMENT - DETAIL INSURANCE - DETAIL
+   02021        BONDEDUCT.
+ related flow-matic cobol
+ summary COMTRAN (COMmercial TRANslator) is an early programming language developed at IBM.  It was intended as the business programming equivalent of the scientific programming language FORTRAN (FORmula TRANslator).  It served as one of the forerunners to the COBOL language. Developed by Bob Bemer, in 1957, the language was the first to feature the programming language element known as a picture clause.
+ pageId 4292196
+ created 2006
+ backlinksCount 18
+ revisionCount 35
+ dailyPageViews 547
+ appeared 1957
+
+status historical
+country US
+fileType text
+
+hopl 387

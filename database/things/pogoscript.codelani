@@ -1,4 +1,81 @@
+title PogoScript
 appeared 2011
 type pl
+
+patterns
+ hasCentralPackageRepository? false
+
+githubLanguage PogoScript
+ fileExtensions pogo
+ trendingProjectsCount 0
+
+githubRepo https://github.com/featurist/pogoscript
+ firstCommit 2011
+ stars 124
+ forks 9
+ subscribers 14
+ created 2011
+ updated 2018
+ description A readable, DSL friendly programming language with excellent concurrency primitives
+ issues 20
+
+linguistGrammarRepo https://github.com/featurist/PogoScript.tmbundle
+ firstCommit 2012
+ lastCommit 2015
+ committerCount 2
+ commitCount 9
+ sampleCount 1
+ example
+  httpism = require 'httpism'
+  async = require 'async'
+  resolve = require 'url'.resolve
+  
+  exports.squash (url) ! =
+      html = httpism.get ! (url).body
+      squash html ! (html, url)
+  
+  squash html (html, url, callback) =
+      replacements = sort (links in (html).concat(scripts in (html)))
+      for each @(r) in (replacements) @{ r.url = resolve(url, r.href) }
+      async.map (replacements, get) @(err, requested)
+          callback (err, replace (requested) in (html))    
+  
+  sort (replacements) =
+      replacements.sort @(a, b) @{ a.index - b.index }
+  
+  get (replacement) =
+      replacement.body = httpism.get ! (replacement.url).body
+      replacement
+  
+  replace (replacements) in (html) =
+      i = 0
+      parts = ""
+      for each @(rep) in (replacements)
+          parts := "#(parts)#(html.substring(i, rep.index))<#(rep.tag)>#(rep.body)</#(rep.tag)>"
+          i := rep.index + rep.length
+      
+      parts + html.substr(i)
+  
+  links in (html) =
+      link reg = r/<link\s[^>]*href=["']?([^"']+)["'][^\>]*(\/\>|\>\s*\<\/link\>)/gi
+      elements in (html) matching (link reg) as 'style'
+  
+  scripts in (html) =
+      script reg = r/<script\s[^>]*src=["']?([^"']+)["'][^\>]*(\/\>|\>\s*\<\/script\>)/gi
+      elements in (html) matching (script reg) as 'script'
+  
+  elements in (html) matching (reg) as (tag) =
+      elements = []
+      while (m = reg.exec (html))
+          elements.push { tag = tag, index = m.index, length = m.0.length, href = m.1 }
+      
+      elements
+  
+
 website http://pogoscript.org/
-github https://github.com/featurist/pogoscript
+status active
+
+twitter pogoscript
+
+fileType text
+isOpenSource true

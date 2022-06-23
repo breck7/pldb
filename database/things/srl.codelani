@@ -1,7 +1,7 @@
+title Simple Regex Language
 appeared 2016
 type queryLanguage
-website https://simple-regex.com/
-github https://github.com/SimpleRegex/SRL-PHP
+
 example
  begin with any of (digit, letter, one of "._%+-") once or more,
  literally "@",
@@ -9,3 +9,22 @@ example
  literally ".",
  letter at least 2 times,
  must end, case insensitive
+
+patterns
+ hasCentralPackageRepository? false
+
+githubRepo https://github.com/SimpleRegex/SRL-PHP
+ stars 1762
+ forks 74
+ subscribers 59
+ created 2016
+ updated 2017
+ firstCommit 2016
+ description Simple Regex Language
+ issues 9
+
+website https://simple-regex.com/
+standsFor Simple Regex Language
+status active
+fileType text
+isOpenSource true

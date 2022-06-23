@@ -1,4 +1,35 @@
+title Request for Comments
 appeared 1969
 type notation
 creators Steve Crocker
-wikipedia Request_for_Comments
+
+patterns
+ hasCentralPackageRepository? false
+
+wikipedia https://en.wikipedia.org/wiki/Request_for_Comments
+ example
+  RFC 2046                      Media Types                  November 1996
+  
+  
+     A. Collected Grammar ....................................   43
+  
+  1.  Introduction
+  
+     The first document in this set, RFC 2045, defines a number of header
+     fields, including Content-Type. The Content-Type field is used to
+     specify the nature of the data in the body of a MIME entity, by
+     giving media type and subtype identifiers, and by providing auxiliary
+     information that may be required for certain media types.  After the
+ related ascii
+ summary A Request for Comments (RFC) is a type of publication from the Internet Engineering Task Force (IETF) and the Internet Society (ISOC), the principal technical development and standards-setting bodies for the Internet. An RFC is authored by engineers and computer scientists in the form of a memorandum describing methods, behaviors, research, or innovations applicable to the working of the Internet and Internet-connected systems. It is submitted either for peer review or simply to convey new concepts, information, or (occasionally) engineering humor. The IETF adopts some of the proposals published as RFCs as Internet Standards. Request for Comments documents were invented by Steve Crocker in 1969 to help record unofficial notes on the development of ARPANET. RFCs have since become official documents of Internet specifications, communications protocols, procedures, and events.
+ pageId 25540
+ dailyPageViews 700
+ created 2001
+ backlinksCount 739
+ revisionCount 757
+ appeared 1969
+
+standsFor Request for Comments
+status historical
+fileType text
+wordRank 5769

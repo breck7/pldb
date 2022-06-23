@@ -1,7 +1,7 @@
+title dedukti
 appeared 2009
 type pl
-website https://deducteam.github.io
-github https://github.com/Deducteam/Dedukti
+
 example
  Nat: Type.
  zero: Nat.
@@ -11,3 +11,21 @@ example
  [ n ] plus n zero --> n
  [ n, m ] plus (succ n) m --> succ (plus n m)
  [ n, m ] plus n (succ m) --> succ (plus n m).
+
+patterns
+ hasComments? true
+  (; This is a comment ;)
+ hasBlockComments? true
+  (; This is a comment ;)
+
+githubRepo https://github.com/Deducteam/Dedukti
+ firstCommit 2009
+ stars 95
+ forks 9
+ subscribers 13
+ created 2017
+ updated 2019
+ description Implementation of the λΠ-calculus modulo rewriting
+ issues 34
+
+website https://deducteam.github.io

@@ -1,3 +1,19 @@
+title Basic4GL
 appeared 2002
 type pl
-wikipedia Basic4GL
+
+patterns
+ hasCentralPackageRepository? false
+
+wikipedia https://en.wikipedia.org/wiki/Basic4GL
+ related linux quickbasic basic opengl qbasic gfa-basic c glbasic darkbasic freebasic thinbasic
+ summary Basic4GL (B4GL; from Basic for openGL) is an interpreted, open source version of the BASIC programming language which features support for 3D computer graphics using OpenGL. While being interpreted, it is also able to compile programs on top of the virtual machine to produce standalone executable programs. It uses a syntax similar to traditional dialects of BASIC and features an IDE and a very thorough and comprehensive debugger. Basic4GL is not designed to compete with programming languages such as C++; it was intended to replace older languages such as QBasic or GFA BASIC. Basic4GL features the usual commands that you would expect to find in a version of BASIC such as...  PRINT INPUT GOSUBIt also includes a few features that C programmers will be familiar with, such as support for pointers, structures and most importantly the entire OpenGL v1.1 API.
+ created 2007
+ backlinksCount 16
+ pageId 8740064
+ revisionCount 115
+ dailyPageViews 5
+ appeared 2002
+
+status historical
+isOpenSource true

@@ -1,5 +1,71 @@
+title JavaScript Object Notation for Linked Data
 appeared 2010
 type metaLanguage
+
+patterns
+ hasCentralPackageRepository? false
+
+wikipedia https://en.wikipedia.org/wiki/JSON-LD
+ summary JSON-LD (JavaScript Object Notation for Linked Data), is a method of encoding Linked Data using JSON. It was a goal to require as little effort as possible from developers to transform their existing JSON to JSON-LD. This allows data to be serialized in a way that is similar to traditional JSON. It is a World Wide Web Consortium Recommendation. It was initially developed by the JSON for Linking Data Community Group before being transferred to the RDF Working Group for review, improvement, and standardization.
+ backlinksCount 259
+ pageId 34228206
+ dailyPageViews 307
+ appeared 2010
+
+githubLanguage JSONLD
+ fileExtensions jsonld
+ trendingProjectsCount 0
+
+githubRepo https://github.com/digitalbazaar/jsonld.js
+ firstCommit 2010
+ stars 905
+ forks 124
+ subscribers 66
+ created 2011
+ updated 2018
+ description A JSON-LD Processor and API implementation in JavaScript
+ issues 91
+
+linguistGrammarRepo https://github.com/atom/language-javascript
+ firstCommit 2013
+ lastCommit 2018
+ committerCount 103
+ commitCount 1133
+ sampleCount 1
+ example
+  {
+    "@context": {
+      "property": "http://example.com/vocab#property"
+    },
+    "@id": "../document-relative",
+    "@type": "#document-relative",
+    "property": {
+      "@context": {
+        "@base": "http://example.org/test/"
+      },
+      "@id": "../document-base-overwritten",
+      "@type": "#document-base-overwritten",
+      "property": [
+        {
+          "@context": null,
+          "@id": "../document-relative",
+          "@type": "#document-relative",
+          "property": "context completely reset, drops property"
+        },
+        {
+          "@context": {
+            "@base": null
+          },
+          "@id": "../document-relative",
+          "@type": "#document-relative",
+          "property": "only @base is cleared"
+        }
+      ]
+    }
+  }
+
 website https://json-ld.org/
-github https://github.com/digitalbazaar/jsonld.js
-wikipedia JSON-LD
+standsFor JavaScript Object Notation for Linked Data
+status active
+fileType text
+isOpenSource true

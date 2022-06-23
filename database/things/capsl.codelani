@@ -1,4 +1,10 @@
+title Common Authentication Protocol Specification Language
 appeared 1996
 type pl
-reference https://pdfs.semanticscholar.org/696d/b0556e653f96d0de57c5e6d1ca1634de08fb.pdf
+
+patterns
+ hasCentralPackageRepository? false
+
 description a high-level language to support security analysis of cryptographic authentication and key distribution protocols. It is translated to CIL, an intermediate language expressing state transitions with term-rewriting rules. Connectors are being written to adapt CIL to supply input to different security analysis tools, including PVS for inductive verification and Maude for model-checking.
+reference https://pdfs.semanticscholar.org/696d/b0556e653f96d0de57c5e6d1ca1634de08fb.pdf
+status historical

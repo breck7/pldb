@@ -1,3 +1,49 @@
+title TELCOMP
 appeared 1966
 type pl
-wikipedia TELCOMP
+
+patterns
+ hasCentralPackageRepository? false
+
+wikipedia https://en.wikipedia.org/wiki/TELCOMP
+ example
+  1.04 TYPE #,"ENTER ONE OF THE FOLLOWING:-";MENU
+   1.05 TYPE FORM X FOR X=1:1:4 FOR END=10^15
+   1.06 READ GRNO IN FORM 15
+   1.065 DONE IF GRNO=END
+   1.07 TO STEP 1.06 IF GRNO>4
+   1.08 TO PART GRNO+1
+   
+   2.01 DO PART 50
+   2.02 READ N,K
+   2.03 DO PART 51
+   2.04 TO PART 15
+   
+   ..
+   
+   15.01 LINE FOR X=1:1:3
+   15.02 TYPE MINPL,MAXPL IN FORM 17
+   15.03 TYPE FORM 17
+   15.04 DO PART GRNO+15 FOR X=MNPL:STPL:MXPL
+   
+   16.01 Y=(X^N)+K
+   16.02 Y1[X]=(((Y-MNPL)/(MXPL-MNPL))*2)-1
+   
+   ..
+   
+   FORM 15
+   ITEM NUMBER?   #####
+   FORM 17
+   MINIMUM ##### MAXIMUM ######
+ related joss mumps logo
+ summary TELCOMP was a programming language developed at Bolt, Beranek and Newman (BBN) in about 1964 and in use until at least 1974. BBN offered TELCOMP as a paid service, with first revenue in October 1965.  The service was sold to a company called On-Line Systems in 1972.  In the United Kingdom, TELCOMP was offered by Time Sharing, Ltd, a partnership between BBN and an entrepreneur named Richard Evans. It was an interactive, conversational language based on JOSS, developed by BBN after Cliff Shaw from RAND visited the labs in 1964 as part of the NIH survey.  It was first implemented on the PDP-1 and was used to provide a commercial time sharing service by BBN in the Boston area and later by Time Sharing Ltd. in the United Kingdom. In 1996, Leo Beranek said "We even developed a programming language called TELCOMP that to this day, some say was better than the programming language that the industry adopted, namely BASIC."There were at least three versions: TELCOMP I, TELCOMP II, and TELCOMP III. TELCOMP I was implemented on the PDP-1, TELCOMP II on the PDP-7 and TELCOMP III on the PDP-10, running on DEC 's TOPS-10 operating system or on BBN's own TENEX operating system. TELCOMP programs were normally input via a paper tape reader on a Teletype Model 33, which would be connected to a PDP via a modem and acoustic telephone line.  Data could be read from the paper tape reader or from the Teletype keyboard.  Output was either printed to the Teletype or sent to the paper tape punch.  Early versions had no facility for on-line storage of programs or data. During data input using a Teletype, the user would type a response to a printed prompt. If, instead of hitting Return, the user hit Tab, another, possibly computed, prompt would be printed on the same line.  This process could be repeated for the full width of the line. This unusual feature allowed very compact data entry, comparable to full-screen CRT data entry.  It saved paper, and the input section of the form became part of the program's printed output. A later derivative of TELCOMP called STRINGCOMP was oriented towards string handling.  Another BBN JOSS-derivative called FILECOMP was developed for the GE MEDINET system, which was cancelled. The implicit file handling system it contained was influential on the MUMPS global database system. The initial research for LOGO was carried out in TELCOMP, but only the JOSS-style errors and interaction made it through to the actual language.
+ created 2004
+ backlinksCount 16
+ pageId 991259
+ revisionCount 36
+ dailyPageViews 6
+ appeared 1965
+
+status historical
+
+hopl 478

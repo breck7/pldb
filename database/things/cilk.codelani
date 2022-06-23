@@ -1,4 +1,35 @@
+title CIL
 appeared 1994
 type pl
+
+patterns
+ hasCentralPackageRepository? false
+
+wikipedia https://en.wikipedia.org/wiki/Cilk
+ example
+  // y ← α x + y
+   void axpy(int n, float alpha, const float *x, float *y)
+   {
+       for (int i = 0; i < n; i++) {
+           y[i] += alpha * x[i];
+       }
+   }
+ related c opencl nesl unified-parallel-c
+ summary Cilk, Cilk++ and Cilk Plus are general-purpose programming languages designed for multithreaded parallel computing. They are based on the C and C++ programming languages, which they extend with constructs to express parallel loops and the fork–join idiom. Originally developed in the 1990s at the Massachusetts Institute of Technology (MIT) in the group of Charles E. Leiserson, Cilk was later commercialized as Cilk++ by a spinoff company, Cilk Arts. That company was subsequently acquired by Intel, which increased compatibility with existing C and C++ code, calling the result Cilk Plus.
+ pageId 945803
+ dailyPageViews 85
+ created 2004
+ backlinksCount 179
+ revisionCount 211
+ appeared 1994
+
 website http://www.cilk.com/
-wikipedia Cilk
+status active
+country US
+fileType text
+
+tiobe CIL
+
+hopl 1899
+
+rosettaCode Cilk

@@ -1,4 +1,50 @@
+title JQuery
 appeared 2006
 type library
+
+patterns
+ hasCentralPackageRepository? false
+
+wikipedia https://en.wikipedia.org/wiki/JQuery
+ example
+  $.ajax({
+    type: 'POST',
+    url: '/process/submit.php',
+    data: {
+      name : 'John',
+      location : 'Boston',
+    },
+  }).done(function(msg) {
+    alert('Data Saved: ' + msg);
+  }).fail(function(xmlHttpRequest, statusText, errorThrown) {
+    alert(
+      'Your form submission failed.\n\n'
+        + 'XML Http Request: ' + JSON.stringify(xmlHttpRequest)
+        + ',\nStatus Text: ' + statusText
+        + ',\nError Thrown: ' + errorThrown);
+  });
+ related javascript html visual-studio-editor css json xml
+ summary jQuery is a cross-platform JavaScript library designed to simplify the client-side scripting of HTML. It is free, open-source software using the permissive MIT License. Web analysis indicates that it is the most widely deployed JavaScript library by a large margin. jQuery's syntax is designed to make it easier to navigate a document, select DOM elements, create animations, handle events, and develop Ajax applications. jQuery also provides capabilities for developers to create plug-ins on top of the JavaScript library. This enables developers to create abstractions for low-level interaction and animation, advanced effects and high-level, themeable widgets. The modular approach to the jQuery library allows the creation of powerful dynamic web pages and Web applications. The set of jQuery core features—DOM element selections, traversal and manipulation—enabled by its selector engine (named "Sizzle" from v1.3), created a new "programming style", fusing algorithms and DOM data structures. This style influenced the architecture of other JavaScript frameworks like YUI v3 and Dojo, later stimulating the creation of the standard Selectors API. Microsoft and Nokia bundle jQuery on their platforms. Microsoft includes it with Visual Studio for use within Microsoft's ASP.NET AJAX and ASP.NET MVC frameworks while Nokia has integrated it into the Web Run-Time widget development platform.
+ pageId 7672626
+ dailyPageViews 886
+ created 2006
+ backlinksCount 892
+ revisionCount 1344
+ appeared 2006
+
 website https://jquery.com
-wikipedia JQuery
+status active
+
+twitter jquery
+
+fileType text
+isOpenSource true
+
+meetup jquery
+ memberCount 463942
+ groupCount 670
+
+linkedInSkill jquery
+ peopleWithThisSkillCount 1549390
+indeedJobs jquery developer
+ 2017 9286

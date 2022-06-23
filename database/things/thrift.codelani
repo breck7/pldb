@@ -1,7 +1,7 @@
+title Thrift
 appeared 2007
 type idl
-website http://thrift.apache.org/
-wikipedia Apache_Thrift
+
 example
  enum PhoneType {
   HOME,
@@ -20,3 +20,58 @@ example
    Phone findById(1: i32 id),
    list<Phone> findAll()
  }
+
+patterns
+ hasCentralPackageRepository? false
+
+wikipedia https://en.wikipedia.org/wiki/Apache_Thrift
+ example
+  enum PhoneType {
+    HOME,
+    WORK,
+    MOBILE,
+    OTHER
+  }
+  
+  struct Phone {
+    1: i32 id,
+    2: string number,
+    3: PhoneType type
+  }
+  
+  service PhoneSvc {
+    Phone findById(1: i32 id),
+    list<Phone> findAll()
+  }
+ related actionscript c csharp erlang go haskell java objective-c ocaml perl php python ruby smalltalk json soap xml asn-1 protobuf
+ summary Thrift is an interface definition language and binary communication protocol that is used to define and create services for numerous languages. It is used as a remote procedure call (RPC) framework and was developed at Facebook for "scalable cross-language services development". It combines a software stack with a code generation engine to build cross-platform services that can connect applications written in a variety of languages and frameworks, including ActionScript, C, C++, C#, Cappuccino, Cocoa, Delphi, Erlang, Go, Haskell, Java, Node.js, Objective-C, OCaml, Perl, PHP, Python, Ruby and Smalltalk. Although developed at Facebook, it is now an open source project in the Apache Software Foundation. The implementation was described in an April 2007 technical paper released by Facebook, now hosted on Apache.
+ pageId 10438451
+ dailyPageViews 281
+ created 2007
+ backlinksCount 381
+ revisionCount 188
+ appeared 2017
+
+githubLanguage Thrift
+ fileExtensions thrift
+ trendingProjectsCount 0
+
+linguistGrammarRepo https://github.com/textmate/thrift.tmbundle
+ firstCommit 2008
+ lastCommit 2014
+ committerCount 3
+ commitCount 30
+ sampleCount 1
+ example
+  struct PullRequest {
+    1: string title
+  }
+  
+  
+  
+
+website http://thrift.apache.org/
+status active
+fileType text
+isOpenSource true
+corporateDevelopers Apache

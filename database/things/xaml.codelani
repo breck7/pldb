@@ -1,3 +1,33 @@
+title Extensible Application Markup Language
 appeared 2008
 type xmlFormat
-wikipedia Extensible_Application_Markup_Language
+
+patterns
+ hasCentralPackageRepository? false
+
+wikipedia https://en.wikipedia.org/wiki/Extensible_Application_Markup_Language
+ example
+  <html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+      <title>XAML Example</title>
+      <script type="text/javascript" src="MySilverlight.js" />
+      <script type="text/javascript" src="Silver.js" />
+    </head>
+    <body>
+      <div id="MySilverlight" >
+      </div>
+      <script type="text/javascript">
+        createMySilverlight();
+      </script>
+    </body>
+  </html>
+ related xml visual-studio-editor csharp visual-basic-dot-net xbl html javascript linux
+ summary Extensible Application Markup Language (XAML  (listen)) is a declarative XML-based language developed by Microsoft that is used for initializing structured values and objects. It is available under Microsoft's Open Specification Promise. The acronym originally stood for Extensible Avalon Markup Language, Avalon being the code-name for Windows Presentation Foundation (WPF).XAML is used extensively in .NET Framework 3.0 & .NET Framework 4.0 technologies, particularly Windows Presentation Foundation (WPF), Silverlight, Windows Workflow Foundation (WF), Windows Runtime XAML Framework and Windows Store apps. In WPF, XAML forms a user interface markup language to define UI elements, data binding, events, and other features. In WF, workflows can be defined using XAML. XAML can also be used in Silverlight applications, Windows Phone apps and Windows Store apps. XAML elements map directly to Common Language Runtime object instances, while XAML attributes map to Common Language Runtime properties and events on those objects. XAML files can be created and edited with visual design tools like Microsoft Expression Blend, Microsoft Visual Studio, and the hostable Windows Workflow Foundation visual designer. They can also be created and edited with a standard text editor, a code editor like XAMLPad, or a graphical editor like Vector Architect. Anything that is created or implemented in XAML can be expressed using a more traditional .NET language, such as C# or Visual Basic .NET. However, a key aspect of the technology is the reduced complexity needed for tools to process XAML, because it is based on XML. Consequently, a variety of products are emerging, particularly in the WPF space, which create XAML-based applications. As XAML is simply based on XML, developers and designers are able to share and edit content freely amongst themselves without requiring compilation. XAML also benefits from being a declarative definition of the UI rather than procedural code to generate it.
+ backlinksCount 451
+ pageId 626631
+ created 2004
+ revisionCount 512
+ dailyPageViews 159
+ appeared 2008
+
+status historical

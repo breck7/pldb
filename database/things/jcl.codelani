@@ -1,3 +1,34 @@
+title Job Control Language
 appeared 1964
 type pl
-wikipedia Job_Control_Language
+
+patterns
+ hasCentralPackageRepository? false
+ hasComments? true
+
+wikipedia https://en.wikipedia.org/wiki/Job_Control_Language
+ example
+  * $$ JOB JNM=NAME,DISP=K,CLASS=2
+  
+  [some JCL statements here]
+  
+  * $$ EOJ
+ related unix assembly-language clist
+ summary Job Control Language (JCL) is a name for scripting languages used on IBM mainframe operating systems to instruct the system on how to run a batch job or start a subsystem. More specifically, the purpose of JCL is to say which programs to run, using which files or devices  for input or output, and at times to also indicate under what conditions to skip a step. There are two distinct IBM Job Control languages: one for the operating system lineage that begins with DOS/360 and whose latest member is z/VSE; and the other for the lineage from OS/360 to z/OS, the latter now including JES extensions, Job Entry Control Language (JECL). They share some basic syntax rules and a few basic concepts, but are otherwise very different.
+ pageId 391487
+ dailyPageViews 155
+ created 2003
+ backlinksCount 163
+ revisionCount 546
+ appeared 1964
+
+standsFor Job Control Language
+status historical
+country US
+fileType text
+
+hopl 2134
+
+rosettaCode JCL
+
+corporateDevelopers IBM

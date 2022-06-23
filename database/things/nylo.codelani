@@ -1,5 +1,23 @@
+title nylo
 appeared 2017
 type pl
-website http://veggero.altervista.org/nylo.html
-github https://github.com/veggero/nylo
+
+patterns
+ hasCentralPackageRepository? false
+
 description <a href='http://veggero.altervista.org/nylo.html'>Nylo</a>: any task in one line of code
+
+githubRepo https://github.com/veggero/nylo
+ firstCommit 2017
+ stars 16
+ forks 4
+ subscribers 7
+ created 2017
+ updated 2018
+ description Nylo's programming language interpreter.
+ issues 1
+
+website http://veggero.altervista.org/nylo.html
+status active
+fileType text
+isOpenSource true

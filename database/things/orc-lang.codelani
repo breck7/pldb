@@ -1,4 +1,21 @@
+title Orc
 appeared 2004
 type pl
+
+patterns
+ hasCentralPackageRepository? false
+
+wikipedia https://en.wikipedia.org/wiki/Orc_(programming_language)
+ related haskell ml oz smalltalk
+ summary Orc is a concurrent, nondeterministic computer programming language created by Jayadev Misra at the University of Texas at Austin. Orc  provides uniform access to computational services, including distributed communication and data manipulation, through sites. Using four simple concurrency primitives, the programmer orchestrates the invocation of sites to achieve a goal, while managing timeouts, priorities, and failures.
+ pageId 13345244
+ created 2007
+ backlinksCount 11
+ revisionCount 37
+ dailyPageViews 13
+ appeared 2004
+
 website http://orc.csres.utexas.edu/
-wikipedia Orc_(programming_language)
+status historical
+fileType text
+isOpenSource true

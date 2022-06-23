@@ -1,5 +1,83 @@
+title reStructuredText
 appeared 2002
 type textMarkup
-wikipedia ReStructuredText
-reference http://docutils.sourceforge.net/rst.html
+
+patterns
+ hasCentralPackageRepository? false
+ hasSemanticIndentation? true
+
 description "reStructuredText" is ONE word, not two! reStructuredText is an easy-to-read, what-you-see-is-what-you-get plaintext markup syntax and parser system. It is useful for in-line program documentation (such as Python docstrings), for quickly creating simple web pages, and for standalone documents. reStructuredText is designed for extensibility for specific application domains. The reStructuredText parser is a component of Docutils. reStructuredText is a revision and reinterpretation of the StructuredText and Setext lightweight markup systems.
+
+wikipedia https://en.wikipedia.org/wiki/ReStructuredText
+ example
+  ::
+  
+    some literal text
+  
+  This may also be used inline at the end of a paragraph, like so::
+  
+    some more literal text
+  
+  .. code:: python
+  
+     print("A literal block directive explicitly marked as python code")
+ related rest java pod perl python cmake markdown org textile html asciidoc txt2tags
+ summary reStructuredText (sometimes abbreviated as RST, ReST, or reST) is a file format for textual data used primarily in the Python programming language community for technical documentation. It is part of the Docutils project of the Python Doc-SIG (Documentation Special Interest Group), aimed at creating a set of tools for Python similar to Javadoc for Java or POD for Perl. Docutils can extract comments and information from Python programs, and format them into various forms of program documentation. In this sense, reStructuredText is a lightweight markup language designed to be both (a) processable by documentation-processing software such as Docutils, and (b) easily readable by human programmers who are reading and writing Python source code.
+ pageId 730903
+ dailyPageViews 161
+ created 2004
+ backlinksCount 56
+ revisionCount 259
+ appeared 2002
+
+githubLanguage reStructuredText
+ fileExtensions rst rest resttxt rsttxt
+ trendingProjectsCount 0
+
+linguistGrammarRepo https://github.com/Lukasa/language-restructuredtext
+ firstCommit 2014
+ lastCommit 2018
+ committerCount 16
+ commitCount 101
+ sampleCount 1
+ example
+  Contributing to SciPy
+  =====================
+  
+  This document aims to give an overview of how to contribute to SciPy.  It
+  tries to answer commonly asked questions, and provide some insight into how the
+  community process works in practice.  Readers who are familiar with the SciPy
+  community and are experienced Python coders may want to jump straight to the
+  `git workflow`_ documentation.
+  
+  
+  Contributing new code
+  ---------------------
+  
+  If you have been working with the scientific Python toolstack for a while, you
+  probably have some code lying around of which you think "this could be useful
+  for others too".  Perhaps it's a good idea then to contribute it to SciPy or
+  another open source project.  The first question to ask is then, where does
+  this code belong?  That question is hard to answer here, so we start with a
+  more specific one: *what code is suitable for putting into SciPy?*
+  Almost all of the new code added to scipy has in common that it's potentially
+  useful in multiple scientific domains and it fits in the scope of existing
+  scipy submodules.  In principle new submodules can be added too, but this is
+  far less common.  For code that is specific to a single application, there may
+  be an existing project that can use the code.  Some scikits (`scikit-learn`_,
+  `scikits-image`_, `statsmodels`_, etc.) are good examples here; they have a
+  narrower focus and because of that more domain-specific code than SciPy.
+  
+  Now if you have code that you would like to see included in SciPy, how do you
+  go about it?  After checking that your code can be distributed in SciPy under a
+  compatible license (see FAQ for details), the first step is to discuss on the
+  scipy-dev mailing list.  All new features, as well as changes to existing code,
+  are discussed and decided on there.  You can, and probably should, already
+  start this discussion before your code is finished.
+  
+  Assuming the outcome of the discussion on the mailing list is positive and you
+  have a function or piece of code that does what you nee
+
+reference http://docutils.sourceforge.net/rst.html
+status active
+fileType text

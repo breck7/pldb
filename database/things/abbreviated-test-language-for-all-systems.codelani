@@ -1,3 +1,25 @@
+title Abbreviated Test Language for All Systems
 appeared 1984
 type pl
-wikipedia Abbreviated_Test_Language_for_All_Systems
+
+patterns
+ hasCentralPackageRepository? false
+
+wikipedia https://en.wikipedia.org/wiki/Abbreviated_Test_Language_for_All_Systems
+ example
+  ...
+    010200  APPLY, AC SIGNAL, VOLTAGE-PP 7.5V, FREQ 3 KHZ, CNX HI=P1-1 $
+  ...
+    010300  VERIFY, (VOLTAGE-AV INTO ‘VAVG’), AC SIGNAL, VOLTAGE-PP RANGE 64V TO 1V, SAMPLE-WIDTH 10MSEC, 
+            SYNC-VOLTAGE 2 MAX 5, SYNC-NEG-SLOPE, MAX-TIME 0.5, GO-TO-STEP 400 IF GO, LL 0.5 UL 50, 
+            CNX HI=P2-4 LO=P2-5, SYNC HI=P2-8 LO=P2-5 $ 
+  ...
+ summary Abbreviated Test Language for All Systems (ATLAS) is a MILSPEC language for automatic testing of avionics equipment. It is a high-level computer language and can be used on any computer whose supporting software can translate it into the appropriate low-level instructions.
+ created 2002
+ backlinksCount 8
+ pageId 60446
+ revisionCount 101
+ dailyPageViews 14
+ appeared 1968
+
+status historical

@@ -1,3 +1,50 @@
+title Occam
 appeared 1983
 type pl
-wikipedia Occam_(programming_language)
+
+patterns
+ hasCentralPackageRepository? false
+ hasSemanticIndentation? true
+
+wikipedia https://en.wikipedia.org/wiki/Occam_(programming_language)
+ example
+  ALT
+     count1 < 100 & c1 ? data
+       SEQ
+         count1 := count1 + 1
+         merged ! data
+     count2 < 100 & c2 ? data
+       SEQ
+         count2 := count2 + 1
+         merged ! data
+     status ? request
+       SEQ
+         out ! count1
+         out ! count2
+ related ocaml ease go csp pascal haskell python
+ summary occam is a concurrent programming language that builds on the communicating sequential processes (CSP) process algebra, and shares many of its features. It is named after William of Ockham of Occam's Razor fame. occam is an imperative procedural language (such as Pascal). It was developed by David May and others at INMOS, advised by Tony Hoare, as the native programming language for their transputer microprocessors, but implementations for other platforms are available. The most widely known version is occam 2; its programming manual was written by Steven Ericsson-Zenith and others at INMOS.
+ pageId 22660
+ dailyPageViews 61
+ created 2001
+ backlinksCount 63
+ revisionCount 213
+ appeared 1983
+
+helloWorldCollection Occam
+ PROGRAM Hello
+ -- Hello world in Occam
+ #USE ioconv
+ 
+ SEQ
+   write.full.string(screen,"Hello World!")
+ 
+
+status active
+country GB
+fileType text
+
+tiobe Occam
+
+hopl 1002
+
+rosettaCode Occam

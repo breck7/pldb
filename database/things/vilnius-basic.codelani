@@ -1,3 +1,18 @@
+title Vilnius BASIC
 appeared 1986
 type pl
-wikipedia Vilnius_BASIC
+
+patterns
+ hasCentralPackageRepository? false
+
+wikipedia https://en.wikipedia.org/wiki/Vilnius_BASIC
+ related basic msx-basic
+ summary Vilnius BASIC is a dialect of the BASIC programming language running on the Elektronika BK-0010-01/BK-0011M and UKNC computers.It was a quite advanced BASIC and featured a runtime threaded code compiler that compiled the program when one entered the RUN command. The dialect was very close to MSX BASIC. The major differences were the lack of the PLAY, SOUND, VPOKE and PUT SPRITE operators, the inability to open several files at the same time, and the inability to use more than one operator on one line. Only the UKNC version had a full-screen editor. Machine-dependent features, like graphics operators parameters  and PEEK/POKE addresses were also different. The software was developed at Vilnius University, located in Lithuania which was a republic of the Soviet Union at the time.
+ created 2004
+ backlinksCount 92
+ pageId 1172241
+ revisionCount 76
+ dailyPageViews 7
+ appeared 1986
+
+status historical

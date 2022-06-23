@@ -1,3 +1,27 @@
+title DATALOG
 appeared 1977
 type pl
-wikipedia Datalog
+
+patterns
+ hasCentralPackageRepository? false
+
+wikipedia https://en.wikipedia.org/wiki/Datalog
+ example
+  ancestor(X,Y) :- parent(X,Y).
+   ancestor(X,Y) :- parent(X,Z),ancestor(Z,Y).
+ related prolog java owl c python ruby lua clojure racket tcl haskell dot-ql rdf sparql
+ summary Datalog is a declarative logic programming language that syntactically is a subset of Prolog. It is often used as a query language for deductive databases. In recent years, Datalog has found new application in data integration, information extraction, networking, program analysis, security, and cloud computing. Its origins date back to the beginning of logic programming, but it became prominent as a separate area around 1977 when Hervé Gallaire and Jack Minker organized a workshop on logic and databases. David Maier is credited with coining the term Datalog.
+ pageId 968357
+ dailyPageViews 160
+ created 2004
+ backlinksCount 87
+ revisionCount 376
+ appeared 1977
+
+status historical
+country IT
+fileType text
+
+hopl 3793
+
+rosettaCode Datalog

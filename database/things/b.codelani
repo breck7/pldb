@@ -1,4 +1,41 @@
+title B
 appeared 1969
 type pl
 creators Ken Thompson and Dennis Ritchie
-wikipedia B_(programming_language)
+
+patterns
+ hasCentralPackageRepository? false
+
+wikipedia https://en.wikipedia.org/wiki/B_(programming_language)
+ example
+  /* The following function will print a non-negative number, n, to
+     the base b, where 2<=b<=10.  This routine uses the fact that
+     in the ASCII character set, the digits 0 to 9 have sequential
+     code values.  */
+  
+  printn(n, b) {
+          extrn putchar;
+          auto a;
+  
+          if (a = n / b)        /* assignment, not test for equality */
+                  printn(a, b); /* recursive */
+          putchar(n % b + '0');
+  }
+ related abc bcpl pl-i c multics algol-58 unix tmg yacc
+ summary B is a programming language developed at Bell Labs circa 1969. It is the work of Ken Thompson with Dennis Ritchie. B was derived from BCPL, and its name may be a contraction of BCPL. Thompson's coworker Dennis Ritchie speculated that the name might be based on Bon, an earlier, but unrelated, programming language that Thompson designed for use on Multics. B was designed for recursive, non-numeric, machine independent applications, such as system and language software.
+ pageId 4475
+ dailyPageViews 272
+ created 2001
+ backlinksCount 110
+ revisionCount 288
+ appeared 1969
+ fileExtensions b
+
+status historical
+country US
+fileType text
+wordRank 124
+
+hopl 492
+
+rosettaCode B

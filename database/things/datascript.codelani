@@ -1,6 +1,7 @@
+title datascript
 appeared 2014
 type queryLanguage
-github https://github.com/tonsky/DataScript
+
 example
  (require '[datascript.core :as d])
  
@@ -22,3 +23,13 @@ example
  
  
  ;; Destructuring, function call, predicate call, query over collection
+
+githubRepo https://github.com/tonsky/DataScript
+ firstCommit 2014
+ stars 3762
+ forks 251
+ subscribers 149
+ created 2014
+ updated 2020
+ description Immutable database and Datalog query engine for Clojure, ClojureScript and JS
+ issues 63

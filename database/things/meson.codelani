@@ -1,3 +1,34 @@
+title Meson
 appeared 2013
 type pl
-wikipedia Meson_(software)
+
+patterns
+ hasCentralPackageRepository? false
+
+wikipedia https://en.wikipedia.org/wiki/Meson_(software)
+ related python unix c d java rust vala visual-studio-editor cmake ninja
+ summary Meson (/ˈmɛ.sɒn/) is a software tool for automating the building (compiling) of software. The overall goal for Meson is to promote programmer productivity.Meson is free and open-source software written in Python 3 and subject to the terms of the Apache 2.0 License.
+ backlinksCount 16
+ pageId 50160571
+ created 2016
+ revisionCount 92
+ dailyPageViews 63
+ appeared 2013
+
+githubLanguage Meson
+ trendingProjectsCount 0
+
+linguistGrammarRepo https://github.com/TingPing/language-meson
+ firstCommit 2017
+ lastCommit 2018
+ committerCount 1
+ commitCount 14
+ sampleCount 2
+ example
+  option('with-something', type: 'boolean',
+    value: true,
+  )
+
+status active
+fileType text
+isOpenSource true

@@ -1,5 +1,21 @@
+title Google Sheets
 appeared 2006
 type application
-wikipedia Google_Sheets
-reference https://support.google.com/docs/table/25273?hl=en
+
+patterns
+ hasCentralPackageRepository? false
+
 description Google Sheets supports cell formulas typically found in most desktop spreadsheet packages. These functions can be used to create formulas that manipulate data and calculate strings and numbers. You can change the language of Google Sheets functions between English and 21 other languages.
+
+wikipedia https://en.wikipedia.org/wiki/Google_Sheets
+ related javascript android ios excel-app pdf ooxml
+ summary Google Sheets is a spreadsheet program included as part of a free, web-based software office suite offered by Google within its Google Drive service. The service also includes Google Docs and Google Slides , a word processor and presentation program respectively. Google Sheets is available as a web application, mobile app for Android, iOS, Windows, BlackBerry, and as a desktop application on Google's ChromeOS. The app is compatible with Microsoft Excel file formats. The app allows users to create and edit files online while collaborating with other users in real-time. Edits are tracked by user with a revision history presenting changes. An editor's position is highlighted with an editor-specific color and cursor and a permissions system regulates what users can do. Updates have introduced features using machine learning, including "Explore", offering answers based on natural language questions in a spreadsheet.
+ created 2014
+ backlinksCount 486
+ pageId 42951365
+ revisionCount 29
+ dailyPageViews 272
+ appeared 2006
+
+reference https://support.google.com/docs/table/25273?hl=en
+status historical

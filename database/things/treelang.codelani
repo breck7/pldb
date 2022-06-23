@@ -1,4 +1,69 @@
+title Treelang
 appeared 1988
 type pl
-wikipedia Treelang
+
+patterns
+ hasCentralPackageRepository? false
+
+wikipedia https://en.wikipedia.org/wiki/Treelang
+ example
+  // function prototypes
+       // function 'add' taking two ints and returning an int
+       external_definition int add(int arg1, int arg2);
+       external_definition int subtract(int arg3, int arg4);
+       external_definition int first_nonzero(int arg5, int arg6);
+       external_definition int double_plus_one(int arg7);
+       external_definition int main();
+  
+       // function definition
+       add
+       {
+         // return the sum of arg1 and arg2
+         return arg1 + arg2;
+       }
+    
+       subtract
+       {
+         return arg3 - arg4;
+       }
+  
+       double_plus_one
+       {
+         // aaa is a variable, of type integer and allocated at the start of the function
+         automatic int aaa;
+         // set aaa to the value returned from add, when passed arg7 and arg7 as the two parameters
+         aaa=add(arg7, arg7);
+         aaa=add(aaa, aaa);
+         aaa=subtract(subtract(aaa, arg7), arg7) + 1;
+         return aaa;
+       }
+       
+       first_nonzero
+       {
+         // C-like if statement
+         if (arg5)
+           {
+             return arg5;
+           }
+         else
+           {
+           }
+         return arg6;
+       }
+  
+       // Like C, 'gtreelang' needs the main to be defined to create an executable.
+       main
+       {
+            return double_plus_one(5);
+       }
+ related c
+ summary Treelang is a "toy" programming language distributed with the GNU Compiler Collection (GCC) to demonstrate the features of its code-generation backend. It was developed by Tim Josling, based on a language called Toy created by Richard Kenner.  During the GCC 4.3 release cycle, a patch was committed to remove the language, because of high maintenance costs outweighing its benefits and also because it was no longer considered a good front-end example by GCC developers.
+ created 2004
+ backlinksCount 5
+ pageId 799463
+ revisionCount 37
+ dailyPageViews 2
+ appeared 2008
+
 reference https://web.archive.org/web/20011108165657/http://www.geocities.com/timjosling/treelang.diff.txt
+status historical

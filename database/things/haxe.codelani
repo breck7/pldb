@@ -1,5 +1,86 @@
+title Haxe
 appeared 2005
 type pl
+
+patterns
+ hasCentralPackageRepository? true
+ hasComments? true
+ hasStaticTyping? true
+ hasTypeInference? true
+
+wikipedia https://en.wikipedia.org/wiki/Haxe
+ example
+  class FooBar {
+  
+     public var foo:Int;
+     public var bar:String;
+  
+     public function new(){ foo=1; bar="2";}
+  
+     function anyFooBar(v:{foo:Int,bar:String}) trace(v.foo);
+  
+     static function test(){
+          var fb = new FooBar();
+          fb.anyFooBar(fb);
+          fb.anyFooBar({foo:123,bar:"456"});
+     }
+  }
+ related hack ocaml arm ia-32 android ios linux actionscript java javascript csharp php python lua neko xml haskell ml go dart opa clojure coffeescript typescript scala monkey vala
+ summary Haxe is computer software, a high-level, cross-platform, multi-paradigm programming language and compiler that can produce applications and source code, for many different computing platforms, from one code-base. It is free and open-source software, distributed under the GNU General Public License (GPL) 2.0, and the standard library under an MIT License. Haxe includes a set of common functions that are supported across all platforms, such as numeric data types, text, arrays, binary and some common file formats. Haxe also includes platform-specific application programming interface (API) for Adobe Flash, C++, PHP and other languages. Code written in the Haxe language can be source-to-source compiled into ActionScript 3, JavaScript, Java, C++, C#, PHP, Python, Lua and Node.js. Haxe can also emit small web format SWF and Neko bytecode. Major users of Haxe include BBC, Coca-Cola, Disney, Hasbro, Mattel, Nickelodeon, Prezi, TiVo, Toyota, and Zynga. OpenFL, Kha and Flambe are popular Haxe frameworks that enable creating multi-platform content from one codebase.
+ pageId 5404706
+ dailyPageViews 150
+ created 2006
+ backlinksCount 218
+ revisionCount 353
+ appeared 2005
+ fileExtensions hx hxml
+
+githubLanguage Haxe
+ fileExtensions hx hxsl
+ trendingProjectsCount 0
+
+githubRepo https://github.com/HaxeFoundation/haxe
+ firstCommit 2005
+ stars 2548
+ forks 438
+ subscribers 188
+ created 2013
+ updated 2018
+ description Haxe - The Cross-Platform Toolkit
+ issues 688
+
+helloWorldCollection Haxe
+ // Hello world in Haxe
+ 
+ class Hello {
+     static public function main() {
+         trace("Hello world!");
+     }
+ }
+
+linguistGrammarRepo https://github.com/vshaxe/haxe-TmLanguage
+ firstCommit 2017
+ lastCommit 2018
+ committerCount 4
+ commitCount 109
+
 website http://haxe.org
-github https://github.com/HaxeFoundation/haxe
-wikipedia Haxe
+status active
+
+tryItOnline haxe
+
+twitter haxe_org
+
+fileExtensions hx hxml
+fileType text
+isOpenSource true
+
+tiobe Haxe
+
+quineRelay Haxe
+
+ubuntuPackage haxe
+
+codeMirror haxe
+
+rosettaCode Haxe

@@ -1,3 +1,44 @@
+title FutureBASIC
 appeared 1992
 type pl
-wikipedia FutureBASIC
+
+patterns
+ hasCentralPackageRepository? false
+
+wikipedia https://en.wikipedia.org/wiki/FutureBASIC
+ example
+  BeginCFunction
+  // Simple C function to add two integers
+  long simple_add( long a, long b )
+    {
+      long sum;
+        sum = a + b;
+      return (sum);
+    }
+  endC
+  
+  // Define C function so FB can see it
+  toolbox fn simple_add ( long a, long b ) = long
+  
+  // Create little program to add 2 + 2 with the C function
+  
+  window 1
+  
+  print fn simple_add ( 2, 2 )
+  
+  do
+  HandleEvents
+  until ( gFBQuit )
+ related basic powerpc c zbasic pascal applescript
+ summary FutureBasic is a free BASIC compiler for Apple Inc.'s Macintosh. It consists of an integrated development environment (IDE), editor, project manager, etc. for both PowerPC and Intel microprocessors. Since 1 January 2008, the package contains a translator, FBtoC, that converts the FutureBasic syntax to C and automatically calls Apple's GNU Compiler Collection (gcc). No knowledge of C is required. FutureBasic supports access to Mac OS library calls.
+ created 2008
+ backlinksCount 87
+ pageId 15647539
+ revisionCount 129
+ dailyPageViews 11
+ appeared 2016
+
+status historical
+isOpenSource true
+
+rosettaCode FutureBasic

@@ -1,5 +1,156 @@
+title Scala
 appeared 2004
 type pl
 creators Martin Odersky
+
+patterns
+ hasPartialApplication? true
+  def add(x: Int, y: Int) = {x+y}; add(1, _: Int)
+ hasCentralPackageRepository? false
+ hasComments? true
+ hasImplicitArguments? true
+  // https://docs.scala-lang.org/tour/implicit-parameters.html
+  abstract class Monoid[A] {
+    def add(x: A, y: A): A
+    def unit: A
+  }
+  
+  object ImplicitTest {
+    implicit val stringMonoid: Monoid[String] = new Monoid[String] {
+      def add(x: String, y: String): String = x concat y
+      def unit: String = ""
+    }
+    
+    implicit val intMonoid: Monoid[Int] = new Monoid[Int] {
+      def add(x: Int, y: Int): Int = x + y
+      def unit: Int = 0
+    }
+    
+    def sum[A](xs: List[A])(implicit m: Monoid[A]): A =
+      if (xs.isEmpty) m.unit
+      else m.add(xs.head, sum(xs.tail))
+      
+    def main(args: Array[String]): Unit = {
+      println(sum(List(1, 2, 3)))       // uses intMonoid implicitly
+      println(sum(List("a", "b", "c"))) // uses stringMonoid implicitly
+    }
+  }
+ hasOperatorOverloading? true
+ hasTypeInference? true
+
+wikipedia https://en.wikipedia.org/wiki/Scala_(programming_language)
+ example
+  val urls = List("http://scala-lang.org",  "https://github.com/scala/scala")
+  
+  def fromURL(url: String) = scala.io.Source.fromURL(url)
+    .getLines().mkString("\n")
+  
+  val t = System.currentTimeMillis()
+  urls.par.map(fromURL(_))
+  println("time: " + (System.currentTimeMillis - t) + "ms")
+ related jvm javascript llvmir eiffel erlang haskell java lisp pizza standard-ml ocaml scheme smalltalk oz ceylon fantom f-sharp kotlin lasso red java-bytecode c android pascal csharp python ml csp groovy clojure php ruby
+ summary Scala ( SKAH-lah) is a general-purpose programming language providing support for functional programming and a strong static type system. Designed to be concise, many of Scala's design decisions aimed to address criticisms of Java. Scala source code is intended to be compiled to Java bytecode, so that the resulting executable code runs on a Java virtual machine. Scala provides language interoperability with Java, so that libraries written in both languages may be referenced directly in Scala or Java code. Like Java, Scala is object-oriented, and uses a curly-brace syntax reminiscent of the C programming language. Unlike Java, Scala has many features of functional programming languages like Scheme, Standard ML and Haskell, including currying, type inference, immutability, lazy evaluation, and pattern matching. It also has an advanced type system supporting algebraic data types, covariance and contravariance, higher-order types (but not higher-rank types), and anonymous types. Other features of Scala not present in Java include operator overloading, optional parameters, named parameters, and raw strings. Conversely, a feature of Java not in Scala is checked exceptions, which have proved controversial. The name Scala is a portmanteau of scalable and language, signifying that it is designed to grow with the demands of its users.
+ pageId 3254510
+ dailyPageViews 1496
+ created 2004
+ backlinksCount 832
+ revisionCount 1472
+ appeared 2004
+ fileExtensions scala sc
+
+githubLanguage Scala
+ fileExtensions scala kojo sbt sc
+ trendingProjects
+  author name avatar url language languageColor stars forks currentPeriodStars description
+  Azure mmlspark https://github.com/Azure.png https://github.com/Azure/mmlspark Scala #c22d40 1637 354 79 "Microsoft Machine Learning for Apache Spark"
+  lampepfl dotty https://github.com/lampepfl.png https://github.com/lampepfl/dotty Scala #c22d40 3551 535 72 "Research compiler that will become Scala 3"
+  freechipsproject chisel3 https://github.com/freechipsproject.png https://github.com/freechipsproject/chisel3 Scala #c22d40 933 212 45 "Chisel 3: A Modern Hardware Design Language"
+  apache spark https://github.com/apache.png https://github.com/apache/spark Scala #c22d40 23299 19958 464 "Apache Spark"
+  cloudstateio cloudstate https://github.com/cloudstateio.png https://github.com/cloudstateio/cloudstate Scala #c22d40 246 26 127 "Towards Serverless 2.0"
+  ornicar lila https://github.com/ornicar.png https://github.com/ornicar/lila Scala #c22d40 5805 862 132 "♞ lichess.org: the forever free, adless and open source chess server ♞"
+  yahoo kafka-manager https://github.com/yahoo.png https://github.com/yahoo/kafka-manager Scala #c22d40 7893 1920 187 "A tool for managing Apache Kafka."
+  typelevel cats https://github.com/typelevel.png https://github.com/typelevel/cats Scala #c22d40 3436 874 68 "Lightweight, modular, and extensible library for functional programming."
+  scala scala https://github.com/scala.png https://github.com/scala/scala Scala #c22d40 12057 2789 154 "The Scala programming language"
+  chipsalliance rocket-chip https://github.com/chipsalliance.png https://github.com/chipsalliance/rocket-chip Scala #c22d40 1180 495 34 "Rocket Chip Generator"
+  InterestingLab waterdrop https://github.com/InterestingLab.png https://github.com/InterestingLab/waterdrop Scala #c22d40 573 187 45 生产环境的海量数据计算产品，文档地址：
+  fpinscala fpinscala https://github.com/fpinscala.png https://github.com/fpinscala/fpinscala Scala #c22d40 4475 2519 59 "Code, exercises, answers, and hints to go along with the book ""Functional Programming in Scala"""
+  apache incubator-livy https://github.com/apache.png https://github.com/apache/incubator-livy Scala #c22d40 375 242 30 "Mirror of Apache livy (Incubating)"
+  scalameta metals https://github.com/scalameta.png https://github.com/scalameta/metals Scala #c22d40 874 106 60 "Scala language server with rich IDE features 🚀"
+  lw-lin CoolplaySpark https://github.com/lw-lin.png https://github.com/lw-lin/CoolplaySpark Scala #c22d40 2688 1180 89 "酷玩 Spark: Spark 源代码解析、Spark 类库等"
+  twitter-archive snowflake https://github.com/twitter-archive.png https://github.com/twitter-archive/snowflake Scala #c22d40 5447 922 84 "Snowflake is a network service for generating unique ID numbers at high scale with some simple guarantees."
+  prisma prisma https://github.com/prisma.png https://github.com/prisma/prisma Scala #c22d40 15534 903 348 "💾 Database Tools incl. ORM, Migrations and Admin UI (Postgres, MySQL & MongoDB)"
+  akka alpakka https://github.com/akka.png https://github.com/akka/alpakka Scala #c22d40 1027 490 15 "Alpakka is a Reactive Enterprise Integration library for Java and Scala, based on Reactive Streams and Akka."
+  milessabin shapeless https://github.com/milessabin.png https://github.com/milessabin/shapeless Scala #c22d40 2855 465 24 "Generic programming for Scala"
+  gitbucket gitbucket https://github.com/gitbucket.png https://github.com/gitbucket/gitbucket Scala #c22d40 7803 1077 53 "A Git platform powered by Scala with easy installation, high extensibility & GitHub API compatibility"
+ trendingProjectsCount 21
+
+helloWorldCollection Scala
+ // Hello world in Scala
+ 
+ object HelloWorld extends App {
+   println("Hello world!")
+ }
+
+linguistGrammarRepo https://github.com/scala/vscode-scala-syntax
+ firstCommit 2018
+ lastCommit 2018
+ committerCount 4
+ commitCount 26
+ sampleCount 7
+ example
+  #!/bin/sh
+  exec scala "$0" "$@"
+  !#
+  
+  object HelloWorld {
+    def main(args: Array[String]) {
+      println("Hello, world!")
+    }
+  }
+  
+
 website http://www.scala-lang.org
-wikipedia Scala_(programming_language)
+status active
+
+tryItOnline scala
+
+twitter scala_lang
+
+country CH
+fileExtensions scala sc
+fileType text
+runsOnVm jvm
+isOpenSource true
+
+tiobe Scala
+ currentRank 39
+
+meetup scala
+ memberCount 369728
+ groupCount 624
+
+webRepl https://scastie.scala-lang.org/
+linkedInSkill scala
+ peopleWithThisSkillCount 84552
+
+projectEuler Scala
+ memberCount
+  2019 1908
+  2022 1985
+
+hopl 6814
+
+subreddit scala
+ memberCount
+  2017 15219
+
+quineRelay Scala
+
+ubuntuPackage scala
+
+rosettaCode Scala
+
+antlr https://github.com/antlr/grammars-v4/tree/master/scala
+
+indeedJobs scala engineer
+ 2017 3679

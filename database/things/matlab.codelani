@@ -1,4 +1,110 @@
+title MATLAB
 appeared 1984
 type pl
+
+patterns
+ hasCentralPackageRepository? true
+ hasComments? true
+  % This is a comment
+ hasBlockComments? true
+  %{
+  Comment block
+  %}
+ hasConstructors? true
+ hasExplicitTypeCasting? true
+  b = cast(a, 'like', p)
+ hasImports? true
+  import pkg.cls1
+  import pkg.pkfcn
+ hasIterators? true
+  % Define an array of integers
+  myArray = [1,3,5,7,11,13];
+  
+  for n = myArray
+     % ... do something with n
+     disp(n)  % Echo integer to Command Window
+  end
+ hasOperatorOverloading? true
+
+wikipedia https://en.wikipedia.org/wiki/MATLAB
+ example
+  [X,Y] = meshgrid(-10:0.25:10,-10:0.25:10);
+  f = sinc(sqrt((X/pi).^2+(Y/pi).^2));
+  surf(X,Y,f);
+  axis([-10 10 -10 10 -0.3 1])
+  xlabel('{\bfx}')
+  ylabel('{\bfy}')
+  zlabel('{\bfsinc} ({\bfR})')
+ related mathlab c java linux ia-32 apl pl-0 speakeasy julia octave scilab csharp fortran python mupad simulink r perl xml sql maple mathematica idl sagemath s perl-data-language numpy scipy matplotlib lua ruby javascript jvm hdf powerpc solaris sparc subversion json isbn
+ summary MATLAB (matrix laboratory) is a multi-paradigm numerical computing environment. A proprietary programming language developed by MathWorks, MATLAB allows matrix manipulations, plotting of functions and data, implementation of algorithms, creation of user interfaces, and interfacing with programs written in other languages, including C, C++, C#, Java, Fortran and Python. Although MATLAB is intended primarily for numerical computing, an optional toolbox uses the MuPAD symbolic engine, allowing access to symbolic computing abilities. An additional package, Simulink, adds graphical multi-domain simulation and model-based design for dynamic and embedded systems. As of 2017, MATLAB has over 2 million users across industry and academia. MATLAB users come from various backgrounds of engineering, science, and economics.
+ pageId 20412
+ dailyPageViews 2338
+ created 2001
+ backlinksCount 1565
+ revisionCount 2461
+ appeared 1984
+
+githubLanguage Matlab
+ fileExtensions matlab m
+ trendingProjects
+  author name avatar url language languageColor stars forks currentPeriodStars description
+  luanfujun deep-photo-styletransfer https://github.com/luanfujun.png https://github.com/luanfujun/deep-photo-styletransfer MATLAB #e16737 9275 1342 92 "Code and data for paper ""Deep Photo Style Transfer"": https://arxiv.org/abs/1703.07511"
+  HuangCongQing Algorithms_MathModels https://github.com/HuangCongQing.png https://github.com/HuangCongQing/Algorithms_MathModels MATLAB #e16737 376 162 47 "【国赛】【美赛】数学建模相关算法 MATLAB实现"
+  AvaisP machine-learning-programming-assignments-coursera-andrew-ng https://github.com/AvaisP.png https://github.com/AvaisP/machine-learning-programming-assignments-coursera-andrew-ng MATLAB #e16737 218 214 14 "Solutions to Andrew NG's machine learning course on Coursera"
+ trendingProjectsCount 4
+
+helloWorldCollection MATLAB
+ % Hello World in MATLAB.
+ 
+ disp('Hello World');
+ 
+
+linguistGrammarRepo https://github.com/mathworks/MATLAB-Language-grammar
+ firstCommit 2017
+ lastCommit 2018
+ committerCount 2
+ commitCount 21
+ sampleCount 39
+ example
+  function [ d, d_mean, d_std ] = normalize( d )
+      d_mean = mean(d);
+      d = d - repmat(d_mean, size(d,1), 1);
+      d_std = std(d);
+      d = d./ repmat(d_std, size(d,1), 1);
+  end
+  
+
 website http://mathworks.com/products/matlab
-wikipedia MATLAB
+status active
+
+twitter matlab
+
+country US
+fileType text
+
+tiobe MATLAB
+ currentRank 12
+
+meetup matlab
+ memberCount 10609
+ groupCount 25
+
+linkedInSkill matlab
+ peopleWithThisSkillCount 2602372
+
+projectEuler Matlab
+ memberCount
+  2019 3028
+  2022 3252
+
+hopl 2216
+
+subreddit matlab
+ memberCount
+  2017 13222
+
+rosettaCode MATLAB
+
+corporateDevelopers MathWorks
+indeedJobs matlab engineer
+ 2017 6204

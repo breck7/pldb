@@ -1,3 +1,10 @@
+title Maps
 type pattern
-wikipedia Associative_array
+psuedoExample {name: "Mary"}
 description An associative array, map, symbol table, or dictionary is an abstract data type composed of a collection of (key, value) pairs, such that each possible key appears at most once in the collection.
+
+wikipedia https://en.wikipedia.org/wiki/Associative_array
+
+aka dict or dictionary or object or record or struct or hashtable or keyed list or associative array
+status active
+patternKeyword hasMaps?

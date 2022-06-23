@@ -1,5 +1,73 @@
+title Icon
 appeared 1977
 type pl
 creators Ralph Griswold
+
+patterns
+ hasCentralPackageRepository? false
+
+wikipedia https://en.wikipedia.org/wiki/Icon_(programming_language)
+ example
+  procedure main()
+       s := "Mon Dec 8"
+       s ? write(Mdate() | "not a valid date")
+   end
+   # Define a matching function that returns
+   # a string that matches a day month dayofmonth
+   procedure Mdate()
+   # Define some initial values
+   static dates
+   static days
+   initial {
+          days := ["Mon","Tue","Wed","Thr","Fri","Sat","Sun"]
+          dates := ["Jan","Feb","Mar","Apr","May","Jun",
+                    "Jul","Aug","Sep","Oct","Nov","Dec"]
+   }
+   every suspend   (retval <-  tab(match(!days)) ||     # Match a day
+                               =" " ||                  # Followed by a blank
+                               tab(match(!dates)) ||    # Followed by the month
+                               =" " ||                  # Followed by a blank
+                               matchdigits(2)           # Followed by at least 2 digits
+                   ) &
+                   (=" " | pos(0) ) &                   # Either a blank or the end of the string
+                   retval                               # And finally return the string
+   end
+   # Matching function that returns a string of n digits
+   procedure matchdigits(n)
+       suspend (v := tab(many(&digits)) & *v <= n) & v
+   end
+ related snobol algol python unicon c pascal java smalltalk clu
+ summary Icon is a very high-level programming language featuring goal-directed execution and many facilities for managing strings and textual patterns. It is related to SNOBOL and SL5, string processing languages. Icon is not object-oriented, but an object-oriented extension called Idol was developed in 1996 which eventually became Unicon.
+ pageId 14801
+ dailyPageViews 50
+ created 2001
+ backlinksCount 82
+ revisionCount 184
+ appeared 1977
+
+helloWorldCollection Icon
+ # Hello world in Icon (http://www.cs.arizona.edu/icon/)
+ 
+ procedure main()
+     write("Hello world")
+ end
+ 
+
 website http://www.cs.arizona.edu/icon
-wikipedia Icon_(programming_language)
+status active
+
+tryItOnline icon
+
+country US
+fileType text
+wordRank 2368
+
+tiobe Icon
+
+hopl 510
+
+quineRelay Icon
+
+ubuntuPackage icont
+
+rosettaCode Icon

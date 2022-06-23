@@ -1,5 +1,34 @@
+title CLU
 appeared 1975
 type pl
 creators Barbara Liskov
+
+patterns
+ hasCentralPackageRepository? false
+
+wikipedia https://en.wikipedia.org/wiki/CLU_(programming_language)
+ example
+  complex_number = cluster is add, subtract, multiply, ...
+          rep = record [ real_part: real, imag_part: real ]
+          add = proc ... end add;
+          subtract = proc ... end subtract;
+          multiply = proc ... end multiply;
+          ...
+      end complex_number;
+ related sparc algol-60 lisp simula ada argus lua ruby sather swift algol ml cpl java python csharp perl
+ summary CLU is a programming language created at the Massachusetts Institute of Technology (MIT) by Barbara Liskov and her students between 1974 and 1975. While it did not find extensive use, it introduced many features that are used widely now, and is seen as a step in the development of object-oriented programming (OOP). Key contributions include abstract data types, call-by-sharing, iterators, multiple return values (a form of parallel assignment), type-safe parameterized types, and type-safe variant types. It is also notable for its use of classes with constructors and methods, but without inheritance.
+ pageId 7575
+ dailyPageViews 62
+ created 2001
+ backlinksCount 48
+ revisionCount 166
+ appeared 1975
+
 website http://www.pmg.lcs.mit.edu/CLU.html
-wikipedia CLU_(programming_language)
+status active
+country US
+fileType text
+
+tiobe CLU
+
+hopl 637

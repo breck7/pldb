@@ -1,5 +1,32 @@
+title Gremlin programming language
 appeared 2009
 type queryLanguage
-wikipedia Gremlin_(programming_language)
+
 example
  g.V().hasLabel('movie').values('year').min()
+
+patterns
+ hasCentralPackageRepository? false
+
+wikipedia https://en.wikipedia.org/wiki/Gremlin_(programming_language)
+ example
+  g.V().match(
+    as("a").label().is("person"),
+    as("a").out("knows").as("b"),
+    as("a").out("created").as("c"),
+    as("b").out("created").as("c"),
+    as("b").values("age").as("d"),
+    as("d").is(gt(30))).
+      select("a","b","c")
+ related regex xpath sparql sql java jvm groovy scala
+ summary Gremlin is a graph traversal language and virtual machine developed by Apache TinkerPop of the Apache Software Foundation. Gremlin works for both OLTP-based graph databases as well as OLAP-based graph processors. Gremlin's automata and functional language foundation enable Gremlin to naturally support imperative and declarative querying, host language agnosticism, user-defined domain specific languages, an extensible compiler/optimizer, single- and multi-machine execution models, hybrid depth- and breadth-first evaluation, as well as Turing Completeness. As an explanatory analogy, Apache TinkerPop and Gremlin are to graph databases what the JDBC and SQL are to relational databases. Likewise, the Gremlin traversal machine is to graph computing as what the Java virtual machine is to general purpose computing.
+ pageId 33800942
+ dailyPageViews 69
+ created 2011
+ backlinksCount 38
+ revisionCount 103
+ appeared 2009
+
+status active
+fileType text
+isOpenSource true

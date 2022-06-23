@@ -1,6 +1,7 @@
+title archieml
 appeared 2015
 type metaLanguage
-website http://archieml.org/
+
 example
  [days]
  * Sunday
@@ -28,4 +29,11 @@ example
  author: George Eliot
  score: ★★★★☆
  []
+
+patterns
+ hasSemanticIndentation? false
+  AML ignores all whitespace not within a value. We believe this makes it easier for non-programmers to use, and is essential for use in environments with non-monospaced fonts, like in Google Documents.
+
 description ArchieML (or "AML") was created at The New York Times to make it easier to write and edit structured text on deadline that could be rendered in web pages, or more specifically, rendered in interactive graphics.
+website http://archieml.org/
+webRepl http://archieml.org/sandbox.html

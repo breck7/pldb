@@ -1,8 +1,8 @@
+title pointless
 appeared 2020
 type pl
 creators Avery N. Nortonsmith
-website https://ptls.dev/
-github https://github.com/pointless-lang/pointless
+
 example
  import "chart.ptls" as chart
   
@@ -14,4 +14,15 @@ example
  
  collatzStep(n) =
    if n % 2 == 0 then n / 2 else n * 3 + 1
+
+githubRepo https://github.com/pointless-lang/pointless
+ firstCommit 2020
+ stars 14
+ forks 1
+ subscribers 3
+ created 2020
+ updated 2020
+ description Pointless: a scripting language for learning and fun
+
+website https://ptls.dev/
 reference https://news.ycombinator.com/item?id=22838255

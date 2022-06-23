@@ -1,4 +1,35 @@
+title SPSS
 appeared 1968
 type pl
+
+patterns
+ hasCentralPackageRepository? false
+
+wikipedia https://en.wikipedia.org/wiki/SPSS
+ related linux java python visual-basic r ascii sql html xml unix
+ summary SPSS Statistics is a software package used for logical batched and non-batched statistical analysis. Long produced by SPSS Inc., it was acquired by IBM in 2009. The current versions (2015) are officially named IBM SPSS Statistics. Companion products in the same family are used for survey authoring and deployment (IBM SPSS Data Collection, now divested under UNICOM Intelligence), data mining (IBM SPSS Modeler), text analytics, and collaboration and deployment (batch and automated scoring services). The software name originally stood for Statistical Package for the Social Sciences (SPSS), reflecting the original market, although the software is now popular in other fields as well, including the health sciences and marketing.
+ pageId 179088
+ dailyPageViews 1898
+ created 2002
+ backlinksCount 503
+ revisionCount 878
+ appeared 1968
+
+helloWorldCollection SPSS
+ * SPSS Syntax
+ * "Hello World" title in the Output Window of SPSS via SPSS Syntax.
+ 
+ TITLE 'Hello World'.
+ 
+
 website https://www.ibm.com/us-en/marketplace/spss-statistics
-wikipedia SPSS
+status active
+country US
+fileType text
+
+tiobe SPSS
+
+linkedInSkill spss
+ peopleWithThisSkillCount 956163
+
+hopl 240

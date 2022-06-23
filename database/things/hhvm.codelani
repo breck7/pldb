@@ -1,5 +1,31 @@
+title HHVM
 appeared 2011
 type vm
+
+patterns
+ hasCentralPackageRepository? false
+
+wikipedia https://en.wikipedia.org/wiki/HHVM
+ related ocaml php hack csharp jvm java parrot-vm
+ summary HipHop Virtual Machine (HHVM) is an open-source virtual machine based on just-in-time (JIT) compilation that serves as an execution engine for the PHP and Hack programming languages.  By using the principle of JIT compilation, executed PHP or Hack code is first transformed into intermediate HipHop bytecode (HHBC), which is then dynamically translated into x86-64 machine code, optimized, and natively executed.  This contrasts with PHP's usual interpreted execution, in which the Zend Engine transforms PHP source code into opcodes that serve as a form of bytecode, and executes the opcodes directly on the Zend Engine's virtual CPU.HHVM is developed by Facebook, with the project's source code hosted on GitHub; it is licensed under the terms of the PHP License and Zend License.
+ pageId 42020002
+ created 2014
+ backlinksCount 226
+ revisionCount 167
+ dailyPageViews 136
+ appeared 2011
+
+githubRepo https://github.com/facebook/hhvm
+ firstCommit 2010
+ stars 15645
+ forks 2802
+ subscribers 1145
+ created 2010
+ updated 2018
+ description A virtual machine for executing programs written in Hack.
+ issues 832
+
 website https://hhvm.com
-github https://github.com/facebook/hhvm
-wikipedia HHVM
+status active
+fileType text
+isOpenSource true

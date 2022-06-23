@@ -1,3 +1,36 @@
+title WDDX
 appeared 1998
 type pl
-wikipedia WDDX
+
+patterns
+ hasCentralPackageRepository? false
+
+wikipedia https://en.wikipedia.org/wiki/WDDX
+ example
+  <wddxPacket version='1.0'>
+    <header comment='PHP'/>
+    <data>
+      <struct>
+        <var name='pi'>
+          <number>3.1415926</number>
+        </var>
+        <var name='cities'>
+          <array length='3'>
+            <string>Austin</string>
+            <string>Novato</string>
+            <string>Seattle</string>
+          </array>
+        </var>
+      </struct>
+    </data>
+  </wddxPacket>
+ related coldfusion ruby python php java haskell perl xml ftp javascript json
+ summary WDDX (Web Distributed Data eXchange) is a programming language-, platform- and transport-neutral data interchange mechanism designed to pass data between different environments and different computers.
+ created 2004
+ backlinksCount 23
+ pageId 1023479
+ revisionCount 95
+ dailyPageViews 13
+ appeared 1998
+
+status historical

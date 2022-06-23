@@ -1,5 +1,41 @@
+title Scala.js programming language
 appeared 2013
 type pl
+
+patterns
+ hasCentralPackageRepository? false
+
+wikipedia https://en.wikipedia.org/wiki/Scala.js_(programming_language)
+ example
+  val urls = List("https://scala-lang.org",  "https://github.com/scala/scala")
+  
+  def fromURL(url: String) = scala.io.Source.fromURL(url)
+    .getLines().mkString("\n")
+  
+  val t = System.currentTimeMillis()
+  urls.par.map(fromURL(_))
+  println("time: " + (System.currentTimeMillis - t) + "ms")
+ related jvm javascript llvmir eiffel erlang haskell java lisp pizza standard-ml ocaml scheme smalltalk oz ceylon fantom f-sharp kotlin lasso red java-bytecode c android pascal csharp python ml csp groovy clojure swift perl go powershell objective-c r ruby
+ summary Scala ( SKAH-lah) is a general-purpose programming language providing support for functional programming and a strong static type system. Designed to be concise, many of Scala's design decisions aimed to address criticisms of Java.Scala source code is intended to be compiled to Java bytecode, so that the resulting executable code runs on a Java virtual machine. Scala provides language interoperability with Java, so that libraries written in both languages may be referenced directly in Scala or Java code. Like Java, Scala is object-oriented, and uses a curly-brace syntax reminiscent of the C programming language. Unlike Java, Scala has many features of functional programming languages like Scheme, Standard ML and Haskell, including currying, type inference, immutability, lazy evaluation, and pattern matching. It also has an advanced type system supporting algebraic data types, covariance and contravariance, higher-order types (but not higher-rank types), and anonymous types. Other features of Scala not present in Java include operator overloading, optional parameters, named parameters, and raw strings. Conversely, a feature of Java not in Scala is checked exceptions, which have proved controversial.The name Scala is a portmanteau of scalable and language, signifying that it is designed to grow with the demands of its users.
+ pageId 3254510
+ created 2016
+ backlinksCount 843
+ revisionCount 1
+ dailyPageViews 2
+ appeared 2004
+
+githubRepo https://github.com/scala-js/scala-js
+ stars 3502
+ forks 307
+ subscribers 184
+ created 2013
+ updated 2018
+ firstCommit 2013
+ description Scala.js, the Scala to JavaScript compiler
+ issues 54
+
 website https://www.scala-lang.org
-github https://github.com/scala-js/scala-js
-wikipedia Scala.js_(programming_language)
+status active
+fileType text
+compilesTo javascript
+isOpenSource true

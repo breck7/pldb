@@ -1,5 +1,14 @@
+title Lazy K
 appeared 2002
 type esolang
+
+patterns
+ hasCentralPackageRepository? false
+
+description Lazy K is a garbage-collected, referentially transparent functional programming language, with a simple stream-based I/O system. What distinguishes Lazy K from other such languages is its almost total lack of other features.
 website https://tromp.github.io/cl/lazy-k.html
 reference http://lambda-the-ultimate.org/node/406
-description Lazy K is a garbage-collected, referentially transparent functional programming language, with a simple stream-based I/O system. What distinguishes Lazy K from other such languages is its almost total lack of other features.
+status historical
+fileType text
+
+quineRelay Lazy K

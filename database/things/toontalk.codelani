@@ -1,5 +1,24 @@
+title ToonTalk
 appeared 1995
 type pl
+
+patterns
+ hasCentralPackageRepository? false
+
+wikipedia https://en.wikipedia.org/wiki/ToonTalk
+ related janus-programming-language
+ summary ToonTalk is a computer programming system intended to be programmed by children.  The "Toon" part stands for cartoon.  The system's presentation is in the form of animated characters, including robots that can be trained by example. It is one of the few successful implementations outside academia of the concurrent constraint logic programming paradigm. It was created by Kenneth M. Kahn in 1995, and implemented as part of the ToonTalk IDE, a software package distributed worldwide between 1996 and 2009. Since 2009, its specification is scholarly published and its implementation is freely available. Beginning 2014 a JavaScript HTML5 version of ToonTalk called ToonTalk Reborn for the Web has been available. It runs on any modern web browser and differs from the desktop version of ToonTalk in a few ways. ToonTalk programs can run on any DOM element and various browser capabilities (audio, video, style sheets, speech input and output, and browser events) are available to ToonTalk programs. Web services such as Google Drive are integrated. ToonTalk Reborn is free and open source. Beyond its life as a commercial product, ToonTalk evolved via significant academic use in various research projects, notably at the London Knowledge Lab and the Institute of Education - projects Playground and WebLabs, which involved research partners from Cambridge (Logotron), Portugal (Cnotinfor and the University of Lisbon), Sweden (Royal Institute of Technology), Slovakia (Comenius University), Bulgaria (Sofia University), Cyprus (University of Cyprus), and Italy (Institute for Educational Technology of the Consiglio Nazionale delle Ricerche). It was also source of academic interest in Sweden, where Mikael Kindborg proposed a static representation of ToonTalk programs and in Portugal, where Leonel Morgado studied its potential to enable computer programming by preliterate children.ToonTalk was influenced by the Janus computer programming language and the Actor model.  The main communication abstraction in ToonTalk is the bird/nest pair.  When you (the programmer or a robot) give a thing to a bird, she flies to her nest and puts the thing in it, then returns.  If one or more things already occupy the nest, the bird puts the new one underneath the others. A ToonTalk program is a sequence of rules, where each rule has a head and a tail.  The head is a pattern that can be matched against the argument, which must be a tuple.  In ToonTalk's presentation, a rule appears as a robot, a program as a team of robots, and a tuple as a box that can have any number of holes or compartments in which things may be placed.  The alphabet of things includes number pads, text pads, other boxes, robot teams, birds, nests, and things from some other categories.  A process consists of a box with a team of robots working on it.  If none of the patterns matches the box, the process suspends.  Otherwise, the first rule that matches, fires.  The end of the tail of the rule can either destroy the process, or continue it with the same team.  In case the pattern calls for something other than an empty nest where an empty nest is present, the process suspends until some bird should place something on the nest (usually as a result of the actions of other processes).  A nest with something on it matches the pattern as though the nest were not there, just the (top) something.  The actions in the tail also manipulate the something rather than the whole nest.  Consequently, a nest can be used to program a future. ToonTalk can be given an imperative reading or a declarative reading.  If we ignore certain constructs designed to facilitate I/O, we can see ToonTalk as not having any shared access to mutable memory.  The bird/nest mechanism resembles the communication in the Actor model, but with the additional power to be able to pass nests around and for a process to hold more than one nest (which is also true in Janus).  A difference between communication in the Actor model and in ToonTalk is that ToonTalk preserves the order of the messages; however, ToonTalk can also provide an indeterministic merge of message streams.
+ created 2006
+ backlinksCount 15
+ pageId 4070265
+ revisionCount 48
+ dailyPageViews 11
+ appeared 1995
+
+githubRepo https://github.com/ToonTalk/ToonTalk
+
 website http://www.toontalk.com/
-github https://github.com/ToonTalk/ToonTalk
-wikipedia ToonTalk
+status historical
+isOpenSource true
+
+hopl 5762

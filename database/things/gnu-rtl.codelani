@@ -1,8 +1,15 @@
+title gnu-rtl
 appeared 1987
 type ir
+
 example
  (set (reg:SI 140)
      (plus:SI (reg:SI 138)
               (reg:SI 139)))
-reference https://en.wikipedia.org/wiki/Register_transfer_language
+
+patterns
+ hasCentralPackageRepository? false
+
 description In GCC, RTL is generated from the GIMPLE representation, transformed by various passes in the GCC 'middle-end', and then converted to assembly language.
+reference https://en.wikipedia.org/wiki/Register_transfer_language
+status historical

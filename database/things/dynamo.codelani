@@ -1,3 +1,22 @@
+title DYNAMO
 appeared 1959
 type pl
-wikipedia DYNAMO_(programming_language)
+
+patterns
+ hasCentralPackageRepository? false
+
+wikipedia https://en.wikipedia.org/wiki/DYNAMO_(programming_language)
+ related assembly-language isbn doi
+ summary DYNAMO (DYNAmic MOdels) is a discontinued a simulation language and accompanying graphical notation developed within the system dynamics analytical framework.  It was originally for industrial dynamics but was soon extended to other applications, including population and resource studies and urban planning.DYNAMO was initially developed under the direction of Jay Wright Forrester in the late 1950s, by Dr. Phyllis Fox, Alexander L. Pugh III, Grace Duren, and others at the M.I.T. Computation Center. The earliest versions were written in assembly language for the IBM 704, then for the IBM 709 and IBM 7090.  DYNAMO II was written in AED-0, an extended version of Algol 60. Dynamo II/F, in 1971, generated portable FORTRAN code and both Dynamo II/F and Dynamo III improved the system's portability by being written in FORTRAN.DYNAMO was used for the system dynamics simulations of global resource-depletion reported in the Club of Rome's Limits to Growth. Originally designed for batch processing on mainframe computers, it was made available on minicomputers in the late 1970s, and became available as "micro-Dynamo" on personal computers in the early 1980s. The language went through several revisions from DYNAMO II up to DYNAMO IV in 1983, but has since fallen into disuse.
+ pageId 26064582
+ created 2010
+ backlinksCount 28
+ revisionCount 114
+ dailyPageViews 26
+ appeared 2004
+
+status historical
+country US
+fileType text
+
+hopl 61

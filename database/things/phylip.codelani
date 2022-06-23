@@ -1,5 +1,7 @@
+title phylip
 appeared 1991
-type textData
+type textDataFormat
+
 example
  3 30
  Taxon1     ACCGTTTCCACAGCATTATGG
@@ -8,5 +10,12 @@ example
  GCTAGTGCA
  Taxon3     TAAGGTATTGGGCTTGGTTCG
  CAGGGGACT
-reference http://rosalind.info/glossary/phylip-format/
+
+patterns
+ hasCentralPackageRepository? false
+
 description The PHYLIP file format stores a multiple sequence alignment. The format was originally defined and used in Joe Felsenstein’s PHYLIP package [R165], and has since been supported by several other bioinformatics tools
+reference http://rosalind.info/glossary/phylip-format/
+status active
+fileExtensions phy ph
+fileType text

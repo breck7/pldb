@@ -1,4 +1,21 @@
+title CRAM file format
 appeared 2011
 type binaryDataFormat
-wikipedia CRAM_(file_format)
+
+patterns
+ hasCentralPackageRepository? false
+
 description CRAM files typically vary from 30 to 60% smaller than BAM, depending on the data held within them.
+
+wikipedia https://en.wikipedia.org/wiki/CRAM_(file_format)
+ related sam-format bam-format python java c
+ summary CRAM is a compressed columnar file format for storing biological sequences aligned to a reference sequence, initially devised by Markus Hsi-Yang Fritz et al.CRAM was designed to be an efficient reference-based alternative to the Sequence Alignment Map (SAM) and Binary Alignment Map (BAM) file formats.  It optionally uses a genomic reference to describe differences between the aligned sequence fragments and the reference sequence, reducing storage costs.  Additionally each column in the SAM format is separated into its own blocks, improving compression ratio.  CRAM files typically vary from 30 to 60% smaller than BAM, depending on the data held within them.
+ backlinksCount 12
+ pageId 58749955
+ created 2018
+ revisionCount 19
+ dailyPageViews 23
+ appeared 2015
+
+status active
+fileType binary

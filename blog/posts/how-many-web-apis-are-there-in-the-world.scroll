@@ -1,0 +1,55 @@
+title How Many Web APIs are there in the World?
+date 2017-11-22 12:00:00 -8000
+
+aftertext
+ Last week I explored the question "how many programming
+ languages are there in the world?". My current
+ estimate is between 5,000 and 25,000 active computer
+ languages.
+ link posts/how-many-programming-languages-are-there-in-the-world.html: question
+ dateline
+
+paragraph
+ But perhaps the number is higher, if you include all active
+ external web APIs.
+
+question What do other people say?
+
+section Programmable Web - 18,409
+
+endSnippet
+
+paragraph
+ The site Programmable Web lists 18,409🔗www.programmableweb.com/category/all/apis web APIs.
+ But figuring out which ones are used most🔗www.programmableweb.com/news/which-are-developers-favorite-apis/research/2017/09/01 is a work in progress.
+
+section RapidAPI - 7,500
+
+paragraph
+ RapidAPI lists over 500🔗rapidapi.com APIs, but that should
+ expand as it completes its acquisition🔗blog.rapidapi.com/2017/05/23/rapidapi-and-mashape-api-marketplace-join-forces/ of the Mashape
+ Marketplace, which listed over 7,500🔗market.mashape.com/explore APIs.
+
+section Zapier - 750+
+
+paragraph
+ Zapier lists over 750🔗zapier.com/zapbook APIs.
+
+section Other Lists
+
+paragraph
+ On GitHub user abhishekbanthia maintains a popular list of
+ about 300🔗github.com/abhishekbanthia/Public-APIs apis. Wikipedia has a small list of
+ about 30🔗en.wikipedia.org/wiki/List_of_open_APIs APIs.
+
+question What do I say?
+
+paragraph
+ My estimate is: <b>between 2,000 and 25,000 active public facing web APIs</b>.
+
+section Reproducibility Notes: 
+
+paragraph
+ My ad hoc estimates are based on
+ checking the CodeLani database, the datasets listed above,
+ and additional web sources.

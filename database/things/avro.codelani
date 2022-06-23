@@ -1,6 +1,7 @@
+title avro
 appeared 2012
 type binaryDataFormat
-website https://avro.apache.org/
+
 example
  {"namespace": "example.avro",
   "type": "record",
@@ -11,3 +12,10 @@ example
       {"name": "favorite_color", "type": ["string", "null"]}
   ]
  }
+
+patterns
+ hasCentralPackageRepository? false
+
+website https://avro.apache.org/
+status active
+fileType binary

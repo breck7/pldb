@@ -1,5 +1,55 @@
+title Ch
 appeared 2003
 type pl
 creators Ge Wang
+
+patterns
+ hasCentralPackageRepository? false
+ hasComments? true
+
+wikipedia https://en.wikipedia.org/wiki/ChucK
+ example
+  // our signal graph (patch)
+   SinOsc f => dac;
+   // set gain
+   .3 => f.gain;
+   // an array of pitch classes (in half steps)
+   [ 0, 2, 4, 6, 9, 10 ] @=> int hi[];
+   
+   // infinite loop
+   while( true )
+   {
+       // choose a note, shift registers, convert to frequency
+       Std.mtof( 65 + Std.rand2(0,1) * 43 +
+           hi[Std.rand2(0,hi.cap()-1)] ) => f.freq;
+   
+       // advance time by 120 ms
+       120::ms => now;
+   }
+ related linux ios
+ summary ChucK is a concurrent, strongly timed audio programming language for real-time synthesis, composition, and performance, which runs on Linux, Mac OS X, Microsoft Windows, and iOS. It is designed to favor readability and flexibility for the programmer over other considerations such as raw performance. It natively supports deterministic concurrency and multiple, simultaneous, dynamic control rates. Another key feature is the ability to live code; adding, removing, and modifying code on the fly, while the program is running, without stopping or restarting. It has a highly precise timing/concurrency model, allowing for arbitrarily fine granularity. It offers composers and researchers a powerful and flexible programming tool for building and experimenting with complex audio synthesis programs, and real-time interactive control. ChucK was created and chiefly designed by Ge Wang as a graduate student working with Perry R. Cook. ChucK is distributed freely under the terms of the GNU General Public License on Mac OS X, Linux and Microsoft Windows. On iPhone and iPad, ChiP (ChucK for iPhone) is distributed under a limited, closed source license, and is not currently licensed to the public. However, the core team has stated that it would like to explore "ways to open ChiP by creating a beneficial environment for everyone".
+ pageId 478750
+ dailyPageViews 63
+ created 2004
+ backlinksCount 118
+ revisionCount 319
+ appeared 2003
+
+githubLanguage ChucK
+ fileExtensions ck
+ trendingProjectsCount 0
+
+linguistGrammarRepo https://github.com/textmate/java.tmbundle
+ firstCommit 2004
+ lastCommit 2018
+ committerCount 21
+ commitCount 283
+
 website http://chuck.cs.princeton.edu
-wikipedia ChucK
+status active
+fileType text
+wordRank 6367
+
+tiobe Ch
+
+rosettaCode ChucK

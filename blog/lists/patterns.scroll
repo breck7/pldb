@@ -1,0 +1,131 @@
+title Patterns
+skipIndexPage
+maxColumns 1
+columnWidth 80
+
+paragraph
+ A list of 113 patterns found in computer languages.
+
+aftertext
+ Am I missing a pattern? @@Create a new file@@ in the pattern of `*-pattern.scroll` in the languages folder and send a pull request.
+ wrap @@ https://github.com/codelani/codelani/blob/master/languages/
+ wrapsOn
+
+tableSearch
+
+comment autogenPatterns
+pipeTable
+ pattern|patternLink|aka|psuedoExample
+ Abstract Types|../languages/abstract-types-pattern.html||abstract class Div {}
+ Access Modifiers|../languages/access-modifiers-pattern.html||class Box { private location }
+ Algebraic Data Type|../languages/algebraic-types-pattern.html||garageContents = empty &#124; vehicle
+ Anonymous Functions|../languages/anonymous-functions-pattern.html|Lambdas|() => doSomething()
+ Assert Statements|../languages/assert-statements-pattern.html||assert(isTrue)
+ Async Await|../languages/async-await-pattern.html||async doSomething => await somethingElse()
+ Binary Operators|../languages/binary-operators-pattern.html||1 + 1
+ Bitwise Operators|../languages/bitwise-operaters-pattern.html||3 == (2 &#124; 1)
+ Block Comments|../languages/block-comments-pattern.html||/* a looong comment */
+ Booleans|../languages/booleans-pattern.html||doBabiesSleep = false
+ Case Insensitive Identifiers|../languages/case-insensitive-identifiers-pattern.html||AnYcASE = 2
+ Central Package Repository Pattern|../languages/central-package-repository-pattern.html||npm install lani
+ Classes|../languages/classes-pattern.html||class Dog {}
+ Comments|../languages/comment-pattern.html||# a comment
+ Conditionals|../languages/conditionals-pattern.html||if (isTrue) doSomething()
+ Constants|../languages/constants-pattern.html||const ONE = 1
+ Constructors|../languages/constructor-pattern.html||Person: constructor(name: string): {}
+ Core Language Development Hosted on GitHub|../languages/core-on-github-pattern.html||git clone microsoft.com/typescript
+ Default Parameters Pattern|../languages/default-parameters-pattern.html||"say(message = ""Hello"")"
+ Dependent types|../languages/dependent-types-pattern.html||sortedList // a list where is sorted is true
+ Destructuring|../languages/destructuring-pattern.html||{name, age} = person
+ Directives|../languages/directives-pattern.html||use strict;
+ Disk Output|../languages/disk-output-pattern.html||"write(""foobar.txt"", ""something"")"
+ Dispose Blocks Pattern|../languages/dispose-blocks-pattern.html||with something: do something()
+ Duck Typing|../languages/duck-typing-pattern.html||length() // makes me an iterator
+ Dynamic Properties|../languages/dynamic-properties-pattern.html||person.age = 50
+ Exceptions|../languages/exceptions-pattern.html||"throw new Error(""Uh oh"")"
+ Expressions|../languages/expressions-pattern.html||(1 + 2)
+ First-Class Functions|../languages/first-class-functions-pattern.html||[2.1].map(Math.round)
+ Function Composition|../languages/function-composition-pattern.html||
+ Function Overloading|../languages/function-overloading-pattern.html|Ad hoc polymorphism|add(string: str, string2: str)
+ Functions|../languages/functions-pattern.html|routines or procedures or methods|function foo() {}
+ Garbage Collection|../languages/garbage-collection-pattern.html||var iDontNeedToFreeThis
+ Generators|../languages/generators-pattern.html||yield 2
+ Generics|../languages/generics-pattern.html||function identity&lt;T>(arg: T): T
+ Gotos|../languages/gotos-pattern.html||goto 10
+ Homoiconic|../languages/homoiconic-pattern.html||(list ())
+ Identifiers|../languages/identifiers-pattern.html||name = Bob
+ Implicit Arguments|../languages/implicit-arguments-pattern.html||shout(implicit message: string)
+ Implicit Type Casting|../languages/implicit-type-casting-pattern.html||"console.log(""hello "" + 2)"
+ Import Pattern|../languages/import-pattern.html||import package
+ Increment and decrement operators|../languages/increment-and-decrement-operators-pattern.html||i++
+ Infix Notation|../languages/infix-notation-pattern.html||1 + 2
+ Inheritance|../languages/inheritance-pattern.html||class Box extends Cube
+ Integers|../languages/integers-pattern.html||int score = 28
+ Interfaces|../languages/interface-pattern.html||interface Sendable
+ Iterators|../languages/iterators-pattern.html||for a in collection()
+ Lazy Evaluation|../languages/lazy-evaluation-pattern.html||print(range(1000000)[2])
+ Letter-first Identifiers|../languages/letter-first-identifiers-pattern.html||"seven11 = ""OK"" // 711 = ""ERROR"""
+ Lists|../languages/lists-pattern.html|array or vector or sequence|[2, 3, 10]
+ Macros|../languages/macros-pattern.html||#define height 10
+ Magic Getters and Setters|../languages/magic-getters-and-setters-pattern.html||get(name) => obj[name]
+ Manual Memory Management|../languages/manual-memory-management-pattern.html||malloc(4);
+ Map Functions|../languages/map-functions-pattern.html||[1,2].map(square)
+ Maps|../languages/maps-pattern.html|dict or dictionary or object or record or struct or hashtable or keyed list or associative array|"{name: ""Mary""}"
+ Merges Whitespace|../languages/merges-whitespace-pattern.html||result = 1    +    2
+ Message Passing|../languages/message-passing-pattern.html||"""get homepage"""
+ Method Chaining|../languages/method-chaining-pattern.html||a.toString().length
+ Methods|../languages/methods-pattern.html||hi.length
+ Mixins|../languages/mixin-pattern.html||extends structure, paintable
+ Module Pattern|../languages/module-pattern.html||module Foobar {}
+ Monad|../languages/monads-pattern.html||g >>= f
+ Multiline Strings|../languages/multiline-strings-pattern.html||"hello = """"""hello\nworld"""""""
+ Multiple Dispatch|../languages/multiple-dispatch-pattern.html||collide_with(x::Spaceship, y::Spaceship)
+ Multiple Inheritance|../languages/multiple-inheritance-pattern.html||extends parentWhichExtendsSomethingElse
+ Namespaces|../languages/namespace-pattern.html||namespace Stuff {}
+ Operator Overloading|../languages/operator-overloading-pattern.html||def __add__(): doSomethingDifferent()
+ Partial Application|../languages/partial-application-pattern.html||add5 = num => addNumbers(10, num)
+ Pattern Matching|../languages/pattern-matching-pattern.html||fib 0 = 1; fib 1 = 1
+ Pipes|../languages/pipes-pattern.html||ls &#124; wc
+ Pointers|../languages/pointers-pattern.html||int *foobar
+ Polymorphism|../languages/polymorphism-pattern.html||"a + ""b""; 1 + 2"
+ Postfix Notation|../languages/postfix-notation-pattern.html||2 3 4 + 2 -
+ Prefix Notation|../languages/prefix-notation-pattern.html||+ 1 2
+ Print Statements|../languages/print-statements-pattern.html||"print ""Hi"""
+ Processor Registers|../languages/processor-registers-pattern.html||eax 2
+ Range Operator|../languages/range-operator-pattern.html||1 ... 10
+ References|../languages/reference-pattern.html||fn(objPointer)
+ Refinement Types|../languages/refinement-type-pattern.html||evenInt where int % 2 = 0
+ Regular Expressions|../languages/regular-expressions-pattern.html||/\w+\d?/
+ Runtime Guards|../languages/runtime-guards-pattern.html||f x &#124; x > 0 = 1 &#124; otherwise = 0
+ Semantic Indentation|../languages/semantic-indentation-pattern.html||if true(newline/space)print True
+ Semaphores|../languages/semaphores-pattern.html||singletonIsSet = 0
+ Sets|../languages/sets-pattern.html||{black, red, yellow}
+ Shebang|../languages/shebang-pattern.html||#! /run
+ Single Dispatch|../languages/single-dispatch-pattern.html||person.run()
+ Single-Type Arrays|../languages/single-type-arrays-pattern.html||const scores: int[]
+ Source Maps|../languages/sourcemaps-pattern.html||{file: 'min.js',sources: ['one.js'], mappings: 'CAAC,IAAI,IAAM'}
+ Statements|../languages/statements-pattern.html||print Hello world
+ Static Methods|../languages/static-methods-pattern.html||static bark() {}
+ Static Typing|../languages/static-typing-pattern.html||int score = 100
+ Streams|../languages/streams-pattern.html||echo 123 &#124; 123.txt
+ Strings|../languages/strings-pattern.html||"""hi"""
+ Structs|../languages/structs-pattern.html||struct account { int account_number; char *first_name; float balance; };
+ Supports Breakpoints|../languages/supports-breakpoints-pattern.html||debugger;
+ Switch Statements|../languages/switch-statements-pattern.html||switch animal: case dog-buy; case cat-sell;
+ Symbol Tables|../languages/symbol-table-pattern.html||SymbolName&#124;Type&#124;Scope;bar&#124;function,double&#124;extern
+ Templates|../languages/templates-pattern.html||template TCopy(T) {}
+ Ternary operators|../languages/ternary-operators-pattern.html||true ? 1 : 0
+ Threads|../languages/threads-pattern.html||thread1(); thread2();
+ Traits|../languages/traits-pattern.html||use redBorder
+ Triples|../languages/triple-pattern.html||Boston isCapitalOf Massachusetts
+ Type Casting|../languages/type-casting-pattern.html||(float)score;
+ Type Parameters|../languages/type-parameters-pattern.html||function identity&lt;T>(arg: T): T {return arg}
+ Typed Holes|../languages/typed-holes-pattern.html||2 + _ => 2 + [int&#124;float]
+ Unary Operators|../languages/unary-operators-pattern.html||count++
+ Unicode Identifers|../languages/unicode-identifiers-pattern.html||δ = 0.00001
+ Union Types|../languages/union-types-pattern.html||any = string &#124; number
+ Units of Measure|../languages/units-of-measure-pattern.html||Boston isCapitalOf Massachusetts
+ Variadic Functions|../languages/variadic-functions-pattern.html||args.map(doSomething)
+ Virtual function|../languages/virtual-functions-pattern.html||virtual Shout();
+ While Loops|../languages/while-loops-pattern.html||while (true) loop()
+ Zippers|../languages/zipper-pattern.html||zipper.moveLeft()

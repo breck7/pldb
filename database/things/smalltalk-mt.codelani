@@ -1,3 +1,18 @@
+title Smalltalk MT
 appeared 1994
 type pl
-wikipedia Smalltalk_MT
+
+patterns
+ hasCentralPackageRepository? false
+
+wikipedia https://en.wikipedia.org/wiki/Smalltalk_MT
+ related smalltalk c
+ summary Smalltalk MT is an implementation of the Smalltalk programming language created in 1994 by Tarik Kerroum to deal with some of the shortcomings of Smalltalk-80 style of implementations. Smalltalk MT adopts a different approach in that the Smalltalk source is compiled to machine code before being executed. This allows the developer the freedom of working with compiled code without the need for the traditional compile-link-run cycle. This is like a specialized form of incremental or dynamic compilation. Smalltalk MT directly interfaces to DLLs in exactly the same manner as C which allows DLL calls to be tested directly in a Workspace, which allows a scripting style of approach to accessing any DLL based code. For example, one could write in a Workspace the following (single line or multiline, breaking on the '.' character) to reverse the string 'abc': a := 'abc'. WINAPI _strrev: a. a inspect. For 64-bit Windows , try: a:= 'abc'. WINAPI _wcsrev: a.  a inspect. The WINAPI call directly calls the DLL function _strrev natively passing parameters from the Smalltalk environment to the C environment and back. Smalltalk MT has a close integration with COM objects and fully compiled COM components can be created that operate in exactly the same way as C/C++ COM objects. In 1998 David Anderson teamed up with Tarik Kerroum to advance Smalltalk MT into the high performance and graphics areas.
+ created 2007
+ backlinksCount 6
+ pageId 9443964
+ revisionCount 12
+ dailyPageViews 3
+ appeared 1994
+
+status historical

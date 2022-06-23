@@ -1,3 +1,130 @@
+title Verilog
 appeared 1984
 type hardwareDescriptionLanguage
-wikipedia Verilog
+
+patterns
+ hasCentralPackageRepository? false
+ hasComments? true
+
+wikipedia https://en.wikipedia.org/wiki/Verilog
+ example
+  initial
+    a = 0;
+  
+  initial
+    b = a;
+  
+  initial
+    begin
+      #1;
+      $display("Value a=%d Value of b=%d",a,b);
+    end
+ related systemverilog c vhdl openvera property-specification-language
+ summary Verilog, standardized as IEEE 1364, is a hardware description language (HDL) used to model electronic systems. It is most commonly used in the design and verification of digital circuits at the register-transfer level of abstraction. It is also used in the verification of analog circuits and mixed-signal circuits, as well as in the design of genetic circuits.
+ pageId 63863
+ dailyPageViews 497
+ created 2002
+ backlinksCount 515
+ revisionCount 738
+ appeared 1984
+ fileExtensions v
+
+githubLanguage Verilog
+ fileExtensions v veo
+ trendingProjects
+  author name avatar url language languageColor stars forks currentPeriodStars description
+  SI-RISCV e200_opensource https://github.com/SI-RISCV.png https://github.com/SI-RISCV/e200_opensource Verilog #b2b7f8 899 409 57 "The Ultra-Low Power RISC Core"
+  cliffordwolf picorv32 https://github.com/cliffordwolf.png https://github.com/cliffordwolf/picorv32 Verilog #b2b7f8 966 254 29 "PicoRV32 - A Size-Optimized RISC-V CPU"
+ trendingProjectsCount 3
+
+helloWorldCollection Verilog
+ /* Hello World in Verilog. */
+ 
+ module main;
+ 
+  initial
+    begin
+      $display("Hello, World");
+      $finish ;
+    end
+ 
+  endmodule
+ 
+
+linguistGrammarRepo https://github.com/textmate/verilog.tmbundle
+ firstCommit 2008
+ lastCommit 2015
+ committerCount 3
+ commitCount 16
+ sampleCount 13
+ example
+  `timescale 1ns / 1ps
+  // Copyright (C) 2008 Schuyler Eldridge, Boston University
+  //
+  // This program is free software: you can redistribute it and/or modify
+  // it under the terms of the GNU General Public License as published by
+  // the Free Software Foundation, either version 3 of the License.
+  //
+  // This program is distributed in the hope that it will be useful,
+  // but WITHOUT ANY WARRANTY; without even the implied warranty of
+  // MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+  // GNU General Public License for more details.
+  //
+  // You should have received a copy of the GNU General Public License
+  // along with this program.  If not, see <http://www.gnu.org/licenses/>.
+  module mux(opA,opB,sum,dsp_sel,out);
+  	input [3:0] opA,opB;
+  	input [4:0] sum;
+  	input [1:0] dsp_sel;
+  	output [3:0] out;
+  	
+  	reg cout;
+  	
+  	always @ (sum)
+  		begin
+  			if (sum[4] == 1)
+  				cout <= 4'b0001;
+  			else
+  				cout <= 4'b0000;
+  		end
+  	
+  	reg out;
+  	
+  	always @(dsp_sel,sum,cout,opB,opA)
+  		begin
+  			if (dsp_sel == 2'b00)
+  				out <= sum[3:0];
+  			else if (dsp_sel == 2'b01)
+  				out <= cout;
+  			else if (dsp_sel == 2'b10)
+  				out <= opB;
+  			else if (dsp_sel == 2'b11)
+  				out <= opA;
+  		end
+  
+  endmodule
+  
+
+status active
+country US
+fileExtensions v
+fileType text
+
+tiobe Verilog
+ currentRank 50
+
+hopl 1062
+
+subreddit Verilog
+ memberCount
+  2017 552
+
+quineRelay Verilog
+
+ubuntuPackage iverilog
+
+codeMirror verilog
+
+rosettaCode Verilog
+
+antlr https://github.com/antlr/grammars-v4/tree/master/verilog

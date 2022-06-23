@@ -1,3 +1,81 @@
+title Brightscript
 appeared 2010
 type pl
+
+patterns
+ hasCentralPackageRepository? false
+
+githubLanguage Brightscript
+ fileExtensions brs
+ trendingProjectsCount 0
+
+linguistGrammarRepo https://github.com/cmink/BrightScript.tmbundle
+ firstCommit 2011
+ lastCommit 2015
+ committerCount 3
+ commitCount 26
+ sampleCount 1
+ example
+  ' *********************************************************
+  ' **  Simple Grid Screen Demonstration App
+  ' **  Jun 2010
+  ' **  Copyright (c) 2010 Roku Inc. All Rights Reserved.
+  ' *********************************************************
+  
+  '************************************************************
+  '** Application startup
+  '************************************************************
+  Sub Main()
+  
+      'initialize theme attributes like titles, logos and overhang color
+      initTheme()
+    
+      gridstyle = "Flat-Movie"
+  
+      'set to go, time to get started
+      while gridstyle <> ""
+          print "starting grid style= ";gridstyle
+          screen=preShowGridScreen(gridstyle)
+          gridstyle = showGridScreen(screen, gridstyle)
+      end while
+  
+  End Sub
+  
+  
+  '*************************************************************
+  '** Set the configurable theme attributes for the application
+  '** 
+  '** Configure the custom overhang and Logo attributes
+  '** These attributes affect the branding of the application
+  '** and are artwork, colors and offsets specific to the app
+  '*************************************************************
+  
+  Sub initTheme()
+      app = CreateObject("roAppManager")
+      app.SetTheme(CreateDefaultTheme())
+  End Sub
+  
+  '******************************************************
+  '** @return The default application theme.
+  '** Screens can make slight adjustments to the default
+  '** theme by getting it from here and then overriding
+  '** individual theme attributes.
+  '******************************************************
+  Function CreateDefaultTheme() as Object
+      theme = CreateObject("roAssociativeArray")
+  
+      theme.ThemeType = "generic-dark"
+  
+      ' All these are greyscales
+      theme.GridScreenBackgroundColor = "#363636"
+      theme.GridScreenMessageColor    = "#808080"
+      theme.GridScreenRetrievingColor = "#CCCCCC"
+      theme.GridScreenListNameColor   = "#FFFFFF"
+  
+      ' Color values work here
+      theme.GridScreenDescriptionTitleColor    = "#001090"
+      theme.GridScreenDescriptionDateColor     = "
+
 reference https://medium.com/float-left-insights/what-makes-roku-brightscript-a-powerful-scripting-language-5f46532f496d
+status active
+fileType text

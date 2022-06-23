@@ -1,3 +1,26 @@
+title Short Code computer language
 appeared 1949
 type pl
-wikipedia Short_Code_(computer_language)
+
+patterns
+ hasCentralPackageRepository? false
+
+wikipedia https://en.wikipedia.org/wiki/Short_Code_(computer_language)
+ example
+  X3 =  (  X1 +  Y1 )  /  X1 * Y1   substitute variables
+  X3 03 09 X1 07 Y1 02 04 X1   Y1   substitute operators and parentheses. 
+                                         Note multiplication is represented
+                                         by juxtaposition.
+  07Y10204X1Y1                      group into 12-byte words.
+  0000X30309X1
+ summary Short Code was one of the first higher-level languages ever developed for an electronic computer. Unlike machine code, Short Code statements represented mathematic expressions rather than a machine instruction. Also known as an automatic programming, the source code was not compiled but executed through an interpreter to simplify the programming process; the execution time was much slower though.
+ created 2006
+ backlinksCount 20
+ pageId 5276950
+ revisionCount 83
+ dailyPageViews 31
+ appeared 1950
+
+status historical
+
+hopl 2707

@@ -1,4 +1,25 @@
+title Monaco Editor
 appeared 2016
 type editor
+
+patterns
+ hasCentralPackageRepository? false
+
+description The Monaco Editor is the code editor that powers VS Code.
+
+githubRepo https://github.com/Microsoft/monaco-editor
+ firstCommit 2016
+ stars 11818
+ forks 1003
+ subscribers 374
+ created 2016
+ updated 2018
+ description A browser based code editor
+ issues 450
+
+webRepl https://microsoft.github.io/monaco-editor/playground.html
 website https://microsoft.github.io/monaco-editor/
-github https://github.com/Microsoft/monaco-editor
+status active
+fileType na
+isOpenSource true
+related codemirror-editor

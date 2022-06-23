@@ -1,3 +1,46 @@
+title Visual Prolog
 appeared 1996
 type pl
-wikipedia Visual_Prolog
+
+patterns
+ hasCentralPackageRepository? false
+
+wikipedia https://en.wikipedia.org/wiki/Visual_Prolog
+ example
+  class hanoi 
+     predicates 
+         hanoi : (unsigned N). 
+  end class hanoi 
+   
+  implement hanoi 
+     domains 
+         pole = string. 
+   
+     clauses 
+         hanoi(N) :- move(N, "left", "centre", "right"). 
+   
+     class predicates 
+         move : (unsigned N, pole A, pole B, pole C). 
+     clauses 
+         move(0, _, _, _) :- !. 
+         move(N, A, B, C) :- 
+             move(N-1, A, C, B), 
+             stdio::writef("move a disc from % pole to the % pole\n", A, C), 
+             move(N-1, B, A, C). 
+  end implement hanoi 
+   
+  goal 
+     console::init(), 
+     hanoi::hanoi(4).
+ related prolog isbn mercury
+ summary Visual Prolog, also formerly known as PDC Prolog and Turbo Prolog, is a strongly typed object-oriented extension of Prolog.  As Turbo Prolog, it was marketed by Borland but it is now developed and marketed by the Danish firm Prolog Development Center (PDC) that originally developed it. Visual Prolog can build Microsoft Windows GUI-applications, console applications, DLLs (dynamic link libraries), and CGI-programs. It can also link to COM components and to databases by means of ODBC. Logic languages are traditionally interpreted, but Visual Prolog is compiled. This provides the important improvement of converting traditional Prolog-typical run-time errors to compiler warnings, which ensures a better robustness of the finished applications. The core of Visual Prolog are Horn clauses, algebraic datatypes, pattern matching and controlled non-determinism like in traditional Prolog, but unlike traditional Prolog, Visual Prolog has always been strongly and statically typed.
+ backlinksCount 45
+ pageId 1741668
+ dailyPageViews 38
+ created 2005
+ appeared 2018
+
+status historical
+isOpenSource false
+
+hopl 3332

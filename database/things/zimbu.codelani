@@ -1,10 +1,26 @@
+title Zimbu
 appeared 2009
 type pl
 creators Bram Moolenaar
-website http://www.zimbu.org/
-wikipedia Zimbu
+
 example
  FUNC Main() int
    IO.write("Hello, World!\n")
    RETURN 0
  }
+
+patterns
+ hasCentralPackageRepository? false
+
+wikipedia https://en.wikipedia.org/wiki/Zimbu
+ related vim-editor vi-editor python
+ summary Bram Moolenaar (born 1961, in Lisse) is a Dutch computer programmer and an active member of the open-source software community. He is the original author, maintainer, release manager, and benevolent dictator for life of Vim, a text editor that is very popular among programmers and power users. Since July 2006, Moolenaar has been employed by Google, working in the Zürich office. He is able to spend part of his time maintaining Vim.
+ created 2015
+ backlinksCount 30
+ pageId 176160
+ revisionCount 1
+ dailyPageViews 1
+ appeared 1961
+
+website http://www.zimbu.org/
+status historical

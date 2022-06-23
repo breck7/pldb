@@ -1,4 +1,22 @@
+title Pyrex
 appeared 2002
 type pl
+
+patterns
+ hasCentralPackageRepository? false
+
+wikipedia https://en.wikipedia.org/wiki/Pyrex_(programming_language)
+ related python c cython
+ summary Pyrex is a programming language developed to aid in creating Python modules. Its syntax is very close to Python. The goal is to make it easy for Python programmers to write the non-Python supporting code usually required for interfacing modules in a language which is as close to Python as possible.
+ pageId 3274540
+ dailyPageViews 24
+ created 2005
+ backlinksCount 18
+ revisionCount 64
+ appeared 2002
+
 website http://www.cosc.canterbury.ac.nz/greg.ewing/python/Pyrex/
-wikipedia Pyrex_(programming_language)
+status historical
+fileType text
+
+hopl 4938

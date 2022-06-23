@@ -1,4 +1,10 @@
+title reuse-description-language
 appeared 2005
 type pl
-reference https://cs.uwaterloo.ca/research/tr/2005/CS-2005-11.pdf
+
+patterns
+ hasCentralPackageRepository? false
+
 description RDL: A Language for Framework Instantiation Representation
+reference https://cs.uwaterloo.ca/research/tr/2005/CS-2005-11.pdf
+aka RDL

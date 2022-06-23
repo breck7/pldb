@@ -1,3 +1,45 @@
+title Text editor character oriented
 appeared 1963
 type pl
-wikipedia TECO_(text_editor)
+
+patterns
+ hasCentralPackageRepository? false
+
+wikipedia https://en.wikipedia.org/wiki/TECO_(text_editor)
+ example
+  0uz                             ! clear repeat flag !
+  <j 0aua l                       ! load 1st char into register A !
+  <0aub                           ! load 1st char of next line into B !
+  qa-qb"g xa k -l ga -1uz '       ! if A>B, switch lines and set flag !
+  qbua                            ! load B into A !
+  l .-z;>                         ! loop back if another line in buffer !
+  qz;>                            ! repeat if a switch was made last pass !
+ related emacs-editor unix isbn
+ summary TECO (; originally an acronym for [paper] Tape editor and corrector, but later Text editor and corrector, then Text editor character oriented) is a text editor originally developed at the Massachusetts Institute of Technology (MIT) in the 1960s, after which it was modified by many other people. TECO was a direct ancestor of Emacs, which was originally implemented in TECO macros.
+ pageId 30449
+ dailyPageViews 43
+ created 2001
+ backlinksCount 24
+ revisionCount 331
+ appeared 1962
+
+helloWorldCollection Text editor character oriented
+ !Hello World in TECO
+ !The $ symbol below wouldn't actually be a printing character -
+ !it's the [escape] character, \u001b!
+ FTHello World$
+ 
+
+standsFor Text editor character oriented
+status historical
+country US
+fileType text
+
+projectEuler TECO
+ memberCount
+  2019 7
+  2022 8
+
+hopl 2563
+
+rosettaCode Teco

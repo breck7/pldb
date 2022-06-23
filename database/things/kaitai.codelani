@@ -1,7 +1,7 @@
+title kaitai
 appeared 2016
 type idl
-website http://kaitai.io/
-github https://github.com/kaitai-io/kaitai_struct
+
 example
  meta:
    id: tcp_segment
@@ -15,5 +15,24 @@ example
      type: u4
    - id: ack_num
      type: u4
-reference http://kaitai.io/
+
 description Kaitai Struct is a YAML-based declarative language used to describe various binary data structures, laid out in files or in memory: i.e. binary file formats, network stream packet formats, etc. The main idea is that a particular format is described in Kaitai Struct language (.ksy file) and then can be compiled with ksc into source files in one of the supported programming languages. These modules will include a generated code for a parser that can read described data structure from a file / stream and give access to it in a nice, easy-to-comprehend API.
+
+githubRepo https://github.com/kaitai-io/kaitai_struct
+ firstCommit 2016
+ stars 1988
+ forks 106
+ subscribers 84
+ created 2016
+ updated 2020
+ description Kaitai Struct: declarative language to generate binary data parsers in C++ / C# / Go / Java / JavaScript / Lua / Perl / PHP / Python / Ruby
+ issues 350
+
+website http://kaitai.io/
+reference http://kaitai.io/
+
+twitter kaitai_io
+
+related protobuf
+fileExtensions ksy
+webRepl https://ide.kaitai.io/

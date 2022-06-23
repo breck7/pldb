@@ -1,4 +1,46 @@
+title Strips
 appeared 1969
 type pl
-wikipedia STRIPS
+
+patterns
+ hasCentralPackageRepository? false
+
+wikipedia https://en.wikipedia.org/wiki/STRIPS
+ example
+  Actions:
+                 // move from X to Y
+                 _Move(X, Y)_
+                 Preconditions:  At(X), Level(low)
+                 Postconditions: not At(X), At(Y)
+                 
+                 // climb up on the box
+                 _ClimbUp(Location)_
+                 Preconditions:  At(Location), BoxAt(Location), Level(low)
+                 Postconditions: Level(high), not Level(low)
+                 
+                 // climb down from the box
+                 _ClimbDown(Location)_
+                 Preconditions:  At(Location), BoxAt(Location), Level(high)
+                 Postconditions: Level(low), not Level(high)
+                 
+                 // move monkey and box from X to Y
+                 _MoveBox(X, Y)_
+                 Preconditions:  At(X), BoxAt(X), Level(low)
+                 Postconditions: BoxAt(Y), not BoxAt(X), At(Y), not At(X)
+                 
+                 // take the bananas
+                 _TakeBananas(Location)_
+                 Preconditions:  At(Location), BananasAt(Location), Level(high)
+                 Postconditions: Have(bananas)
+ summary In artificial intelligence, STRIPS (Stanford Research Institute Problem Solver) is an automated planner developed by Richard Fikes and Nils Nilsson in 1971 at SRI International. The same name was later used to refer to the formal language of the inputs to this planner. This language is the base for most of the languages for expressing automated planning problem instances in use today; such languages are commonly known as action languages. This article only describes the language, not the planner.
+ backlinksCount 39
+ pageId 1953958
+ dailyPageViews 119
+ created 2005
+ appeared 1971
+
 reference https://semanticscholar.org/paper/076ae14bfc68acdbaf2ab24913e152d49540e988
+status historical
+wordRank 9151
+
+hopl 2413

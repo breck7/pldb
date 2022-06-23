@@ -1,5 +1,26 @@
+title MicroPython
 appeared 2014
 type pl
+
+patterns
+ hasCentralPackageRepository? false
+
+wikipedia https://en.wikipedia.org/wiki/MicroPython
+ related c arduino python arm
+ summary MicroPython is a software implementation of the Python 3 programming language, written in C, that is optimized to run on a microcontroller. MicroPython is a full Python compiler and runtime that runs on the micro-controller hardware. The user is presented with an interactive prompt (the REPL) to execute supported commands immediately. Included are a selection of core Python libraries; MicroPython includes modules which give the programmer access to low-level hardware.MicroPython was originally created by the Australian programmer and physicist Damien George, after a successful Kickstarter backed campaign in 2013. While the original Kickstart campaign released MicroPython with a pyboard microcontroller, MicroPython supports a number of ARM based architectures. MicroPython has since been run on Arduino platform based products, ESP8266, ESP32, and Internet of things hardware. In 2016 a version of MicroPython for the BBC Micro Bit was created as part of the Python Software Foundation's contribution to the Micro Bit partnership with the BBC.The source code for the project is available on GitHub.
+ pageId 50278739
+ created 2016
+ backlinksCount 35
+ revisionCount 51
+ dailyPageViews 132
+ appeared 2013
+
+githubRepo https://github.com/MicroPython
+
 website https://micropython.org/
-github https://github.com/MicroPython
-wikipedia MicroPython
+status active
+
+twitter micropython
+
+fileType text
+isOpenSource true

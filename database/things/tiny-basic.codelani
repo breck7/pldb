@@ -1,3 +1,52 @@
+title Tiny BASIC
 appeared 1975
 type pl
-wikipedia Tiny_BASIC
+
+patterns
+ hasCentralPackageRepository? false
+
+wikipedia https://en.wikipedia.org/wiki/Tiny_BASIC
+ example
+  line ::= number statement CR | statement CR
+   
+      statement ::= PRINT expr-list
+                    IF expression relop expression THEN statement
+                    GOTO expression
+                    INPUT var-list
+                    LET var = expression
+                    GOSUB expression
+                    RETURN
+                    CLEAR
+                    LIST
+                    RUN
+                    END
+   
+      expr-list ::= (string|expression) (, (string|expression) )*
+   
+      var-list ::= var (, var)*
+   
+      expression ::= (+|-|ε) term ((+|-) term)*
+   
+      term ::= factor ((*|/) factor)*
+   
+      factor ::= var | number | (expression)
+   
+      var ::= A | B | C ... | Y | Z
+   
+      number ::= digit digit*
+   
+      digit ::= 0 | 1 | 2 | 3 | ... | 8 | 9
+   
+      relop ::= < (>|=|ε) | > (<|=|ε) | =
+  
+      string ::= " (a|b|c ... |x|y|z|A|B|C ... |X|Y|Z|digit)* "
+ related dartmouth-basic microsoft-basic li-chen-wang
+ summary Tiny BASIC is a dialect of the BASIC programming language that can fit into as little as 2 or 3 KB of memory. This small size made it invaluable in the early days of microcomputers in the mid-1970s, when typical memory size was only 4 to 8 KB. To meet these strict size limits, math was purely integer based and it lacked arrays. The language was written, in part, as an alternative to Microsoft BASIC. MS BASIC would also run in 4 KB machines, but left only 790 bytes free for the programs. More free space was a significant advantage of Tiny BASIC. Piracy of MS BASIC led Bill Gates to publish an open letter complaining about people "stealing" BASIC, which further helped drive the popularity of this alternative. Tiny BASIC was published in a newsletter offshoot of the People's Computer Company. Dozens of versions were created for almost every platform of the era, and there were many variations and additions that were published over time. The newsletter eventually became Dr. Dobb's Journal, a long-lived computing magazine. Tiny BASIC is an example of a free software project that existed before the free software movement.
+ created 2002
+ backlinksCount 128
+ pageId 86894
+ revisionCount 198
+ dailyPageViews 148
+ appeared 1970
+
+status historical

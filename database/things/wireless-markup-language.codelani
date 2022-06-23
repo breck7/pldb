@@ -1,3 +1,25 @@
+title Wireless Markup Language
 appeared 1998
 type xmlFormat
-wikipedia Wireless_Markup_Language
+
+patterns
+ hasCentralPackageRepository? false
+
+wikipedia https://en.wikipedia.org/wiki/Wireless_Markup_Language
+ example
+  <card id="cM" title="MY_DOMAIN.com">
+    <p>
+      Call A Taxi:
+      <a href="wtai://wp/mc;%2B19035551212">903-555-1212</a>
+    </p>
+  </card>
+ related wml xml html wmlscript
+ summary Wireless Markup Language (WML),  based on XML, is a now-obsolete markup language intended for devices that implement the Wireless Application Protocol (WAP) specification, such as mobile phones. It provides navigational support, data input, hyperlinks, text and image presentation, and forms, much like HTML (HyperText Markup Language). It preceded the use of other markup languages now used with WAP, such as HTML itself, and XHTML (which are gaining in popularity as processing power in mobile devices increases).
+ created 2002
+ backlinksCount 123
+ pageId 57821
+ revisionCount 293
+ dailyPageViews 64
+ appeared 1998
+
+status historical

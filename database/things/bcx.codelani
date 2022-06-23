@@ -1,3 +1,18 @@
+title BCX
 appeared 1999
 type pl
-wikipedia BCX
+
+patterns
+ hasCentralPackageRepository? false
+
+wikipedia https://en.wikipedia.org/wiki/BCX
+ related c
+ summary BCX is a free software programming development application originally created in 1999 by Kevin Diggins.  BCX converts BASIC source code to C/C++ source code which can then be compiled using any one of a number of available Microsoft Win32 C/C++ compilers. For many years, most implementations of BASIC shared a nagging drawback - the programs that users created performed slower than similar programs that were created using C/C++.  BCX changed that by giving users the friendliness and ease of use of the BASIC language and coupled it with the high performance and flexibility of C/C++. BCX is written in the BCX BASIC language, making BCX a self-translating translator. BCX was made an open source project in 2004. Since then, several members of the BCX community have led the continued development and maintenance of BCX. Recent project forks have resulted in variants of BCX that can produce native-code applications that run on Linux and Apple operating systems. BCX contains verbs that simplify the creation of Windows UI desktop applications. Unlike many BASIC implementations that rely on run-time engines, the combination of BCX and most C/C++ compilers produce efficient and performant native code applications. BCX can be used to create GUI, DLL, console mode, and web server applications. BCX can use the Standard C Library.
+ created 2005
+ backlinksCount 23
+ pageId 1442891
+ revisionCount 179
+ dailyPageViews 10
+ appeared 1999
+
+status historical

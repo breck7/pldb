@@ -1,5 +1,110 @@
+title JFlex
 appeared 2003
 type grammarLanguage
-website http://jflex.de/
-github https://github.com/jflex-de/jflex
+
+patterns
+ hasCentralPackageRepository? false
+
 description JFlex is a lexical analyzer generator (also known as scanner generator) for Java, written in Java.
+
+githubLanguage JFlex
+ fileExtensions flex jflex
+ trendingProjectsCount 0
+
+githubRepo https://github.com/jflex-de/jflex
+ firstCommit 2003
+ stars 232
+ forks 46
+ subscribers 19
+ created 2015
+ updated 2018
+ description The fast scanner generator for Java with full Unicode support
+ issues 40
+
+linguistGrammarRepo https://github.com/jflex-de/jflex.tmbundle.git
+ firstCommit 2015
+ lastCommit 2017
+ committerCount 1
+ commitCount 5
+ sampleCount 2
+ example
+  /* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+   * Copyright (C) 1998-2015  Gerwin Klein <lsf@jflex.de>                    *
+   * All rights reserved.                                                    *
+   *                                                                         *
+   * License: BSD                                                            *
+   *                                                                         *
+   * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
+  
+  /* Java 1.2 language lexer specification */
+  
+  /* Use together with unicode.flex for Unicode preprocesssing */
+  /* and java12.cup for a Java 1.2 parser                      */
+  
+  /* Note that this lexer specification is not tuned for speed.
+     It is in fact quite slow on integer and floating point literals, 
+     because the input is read twice and the methods used to parse
+     the numbers are not very fast. 
+     For a production quality application (e.g. a Java compiler) 
+     this could be optimized */
+  
+  
+  import java_cup.runtime.*;
+  
+  %%
+  
+  %public
+  %class Scanner
+  %implements sym
+  
+  %unicode
+  
+  %line
+  %column
+  
+  %cup
+  %cupdebug
+  
+  %{
+    StringBuilder string = new StringBuilder();
+    
+    private Symbol symbol(int type) {
+      return new JavaSymbol(type, yyline+1, yycolumn+1);
+    }
+  
+    private Symbol symbol(int type, Object value) {
+      return new JavaSymbol(type, yyline+1, yycolumn+1, value);
+    }
+  
+    /** 
+     * assumes correct representation of a long value for 
+     * specified radix in scanner buffer from <code>start</code> 
+     * to <code>end</code> 
+     */
+    private long parseLong(int start, int end, int radix) {
+      long result = 0;
+      long digit;
+  
+      for (int i = start; i < end; i++) {
+        digit  = Character.digit(yycharat(i),radix);
+        result*= radix;
+        result+= digit;
+      }
+  
+      return result;
+    }
+  %}
+  
+  /* main character classes */
+  LineTerminator = \r|\n|\r\n
+  InputCharacter = [^\r\n]
+  
+  WhiteSpace = {LineTerminator} | [ \t\f]
+  
+  /* comments */
+  Comment = {Tradi
+
+website http://jflex.de/
+status active
+fileType text
+isOpenSource true

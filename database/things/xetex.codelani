@@ -1,7 +1,7 @@
+title XeTeX
 appeared 2004
 type textMarkup
-website http://xetex.sourceforge.net
-wikipedia XeTeX
+
 example
  \documentclass[11pt]{article}
  \usepackage{fontspec}
@@ -14,3 +14,37 @@ example
   
  \subsection{Íslenska}
  Hver maður er borinn frjáls og jafn öðrum að virðingu og réttindum.
+
+patterns
+ hasCentralPackageRepository? false
+
+wikipedia https://en.wikipedia.org/wiki/XeTeX
+ example
+  % Encoding: UTF8
+  @ARTICLE(Ekstrom,
+          AUTHOR    = "Author w",
+          TITLE     = "{Ekstrøm title}",
+          JOURNAL   = "Ekstr{\o}m Journal",
+          YEAR      = 1965,
+      note      = {Working with pdflatex}
+          )
+   @ARTICLE(Ekstrøm,
+          AUTHOR    = "Author Ekstr{\o}m",
+          TITLE     = "{Ekstrøm title}",
+          JOURNAL   = "Ekstrøm Journal",
+          YEAR      = "1965",
+      note      = {Not working with pdflatex but with xelatex}
+          )
+ related pascal c tex unicode utf-8 latex linux postscript
+ summary XeTeX ( ZEE-tekh or ; see also Pronouncing and writing "TeX") is a TeX typesetting engine using Unicode and supporting modern font technologies such as OpenType, Graphite and Apple Advanced Typography (AAT). It was originally written by Jonathan Kew and is distributed under the X11 free software license. Initially developed for Mac OS X only, it is now available for all major platforms. It natively supports Unicode and the input file is assumed to be in UTF-8 encoding by default. XeTeX can use any fonts installed in the operating system without configuring TeX font metrics, and can make direct use of advanced typographic features of OpenType, AAT and Graphite technologies such as alternative glyphs and swashes, optional or historic ligatures, and variable font weights. Support for OpenType local typographic conventions (locl tag) is also present. XeTeX even allows raw OpenType feature tags to be passed to the font. Microtypography is also supported. XeTeX also supports typesetting mathematics using Unicode fonts that contain special mathematical features, such as Cambria Math or Asana Math as an alternative to the traditional mathematical typesetting based on TeX font metrics.
+ pageId 1316123
+ dailyPageViews 113
+ created 2004
+ backlinksCount 88
+ revisionCount 252
+ appeared 2004
+
+website http://xetex.sourceforge.net
+status active
+fileType text
+isOpenSource true

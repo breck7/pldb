@@ -1,3 +1,27 @@
+title Gellish
 appeared 2005
 type textMarkup
-wikipedia Gellish
+
+patterns
+ hasCentralPackageRepository? false
+
+wikipedia https://en.wikipedia.org/wiki/Gellish
+ example
+  - a UID of the fact that is expressed on this row in the table 
+  - a UID of the intention with which the fact is communicated or stored (e.g. as a statement, a query, etc.) 
+  - a UID of a left-hand object 
+  - a UID of a relation type 
+  - a UID of a right-hand object 
+  - a UID of a unit of measure (optional) 
+  - a string that forms a description (textual definition) of the left hand object.
+ related rdf xml owl
+ summary Gellish is a formal language that is natural language independent, although its concepts have 'names' and definitions in various natural languages. Any natural language variant, such as Gellish Formal English is a controlled natural language. Information and knowledge can be expressed in such a way that it is computer-interpretable, as well as system-independent and natural language independent. Each natural language variant is a structured subset of that natural language and is suitable for information modeling and knowledge representation in that particular language. All expressions, concepts and individual things are represented in Gellish by (numeric) unique identifiers (Gellish UID's). This enables software to translate expressions from one formal natural language to any other formal natural language. Gellish is a universal and extendable conceptual data modeling language. Because it includes domain-specific terminology and definitions, it is also a semantic data modelling language and the Gellish modeling methodology is a member of the family of semantic modeling methodologies. Gellish started out as an engineering modeling language ("Generic Engineering Language", hence the name, "Gellish") and was subsequently developed into a language with general applications.
+ pageId 6112660
+ dailyPageViews 22
+ created 2006
+ backlinksCount 36
+ revisionCount 128
+ appeared 2005
+
+status historical
+fileType text

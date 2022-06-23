@@ -1,3 +1,31 @@
+title Dartmouth BASIC
 appeared 1964
 type pl
-wikipedia Dartmouth_BASIC
+
+patterns
+ hasCentralPackageRepository? false
+
+wikipedia https://en.wikipedia.org/wiki/Dartmouth_BASIC
+ example
+  5 LET S = 0 
+  10 MAT INPUT V 
+  20 LET N = NUM 
+  30 IF N = 0 THEN 99 
+  40 FOR I = 1 TO N 
+  45   LET S = S + V(I) 
+  50 NEXT I 
+  60 PRINT S/N 
+  70 GO TO 5 
+  99 END
+ related algol basic microsoft-basic true-basic act-iii algol-60 ascii hp-time-shared-basic basic-plus altair-basic
+ summary Dartmouth BASIC is the original version of the BASIC programming language.  It is so named because it was designed and implemented at Dartmouth College by John Kemény and Thomas Kurtz. It was developed as part of the Dartmouth Time Sharing System (DTSS) and was one of the first programming languages intended to be used interactively. Several versions were produced at Dartmouth over the years, all implemented as compile and go compilers. They were implemented by teams of undergraduate programmers working for Kemény and Kurtz.  The first version ran on 1 May 1964, and it was opened to general users in June; upgrades followed, culminating in the seventh release in 1979. Dartmouth also introduced a dramatically updated version known as Structured BASIC (or SBASIC) in 1975, which added various structured programming concepts. SBASIC formed the basis of the ANSI-standard Standard BASIC efforts in the early 1980s. Most dialects of BASIC, notably Microsoft BASIC (MS BASIC), can trace their history to the Fifth Edition. In contrast to the Dartmouth compilers, most other BASICs were written as interpreters. They also lack some of the more advanced features, notably the matrix math commands. Cutting these features allowed these versions to run in the very small main memory of early microcomputers. By the early 1980s, tens of millions of home computers were running some variant of the MS interpreter. It became the de facto standard for BASIC, which led to the abandonment of the ANSI SBASIC efforts. Kemény and Kurtz later left Dartmouth to develop and promote a version of SBASIC known as True BASIC. Many of the early computer games of the mainframe computer era trace their history to Dartmouth BASIC and the DTSS system. A selection of these were collected, in HP 2000 versions, in the People's Computer Company book What to do after you hit Return. Many of the original source listings in BASIC Computer Games and related works also trace their history to Dartmouth BASIC.
+ created 2004
+ backlinksCount 126
+ pageId 516845
+ revisionCount 301
+ dailyPageViews 42
+ appeared 1964
+
+status historical
+
+hopl 1948

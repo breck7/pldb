@@ -1,6 +1,7 @@
+title Turing
 appeared 1982
 type pl
-wikipedia Turing_(programming_language)
+
 example
  % Accepts a number and calculates its factorial
  
@@ -21,3 +22,75 @@ example
  end loop
  
  put "The factorial of ", n, " is ", factorial (n)
+
+patterns
+ hasCentralPackageRepository? false
+
+wikipedia https://en.wikipedia.org/wiki/Turing_(programming_language)
+ example
+  % Accepts a number and calculates its factorial
+   
+   function factorial (n: int) : real
+        if n = 0 then
+             result 1
+        else
+             result n * factorial (n - 1)
+        end if
+   end factorial
+   
+   var n: int
+   loop
+        put "Please input an integer: " ..
+        get n
+        exit when n >= 0
+        put "Input must be a non-negative integer."
+   end loop
+   
+   put "The factorial of ", n, " is ", factorial (n)
+ related euclid pascal sp-k mips txl
+ summary Turing is a Pascal-like programming language developed in 1982 by Ric Holt and James Cordy, then of University of Toronto, Canada. Turing is a descendant of Euclid, Pascal and SP/k that features a clean syntax and precise machine-independent semantics. Turing 4.1.0 is the latest stable version of Turing. Turing 4.1.1 and Turing 4.1.2 do not allow for stand alone .EXE files to be created and versions before Turing 4.1.0 have outdated syntax and outdated functions.
+ pageId 31105
+ dailyPageViews 61
+ created 2001
+ backlinksCount 51
+ revisionCount 281
+ appeared 1982
+
+githubLanguage Turing
+ fileExtensions t tu
+ trendingProjectsCount 0
+
+linguistGrammarRepo https://github.com/Alhadis/language-turing
+ firstCommit 2016
+ lastCommit 2017
+ committerCount 1
+ commitCount 62
+ sampleCount 2
+ example
+  % Accepts a number and calculates its factorial
+  
+  function factorial (n: int) : real
+  	if n = 0 then
+  		result 1
+  	else
+  		result n * factorial (n - 1)
+     end if
+  end factorial
+  
+  var n: int
+  loop
+  	put "Please input an integer: " ..
+  	get n
+  	exit when n >= 0
+  	put "Input must be a non-negative integer."
+  end loop
+  
+  put "The factorial of ", n, " is ", factorial (n)
+
+status active
+country CA
+fileType text
+
+hopl 1023
+
+rosettaCode Turing

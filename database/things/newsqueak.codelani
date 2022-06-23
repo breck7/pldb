@@ -1,3 +1,20 @@
+title Newsqueak
 appeared 1990
 type pl
-wikipedia Newsqueak
+
+patterns
+ hasCentralPackageRepository? false
+
+wikipedia https://en.wikipedia.org/wiki/Newsqueak
+ related squeak newspeak c csp alef go limbo rust smalltalk
+ summary Newsqueak is a concurrent programming language for writing application software with interactive graphical user interfaces. Newsqueak's syntax and semantics are influenced by the C language, but its approach to concurrency was inspired by C. A. R. Hoare's communicating sequential processes (CSP). However, in Newsqueak, channels are first-class objects, with dynamic process creation and dynamic channel creation. Newsqueak was developed from an earlier, smaller, language, called Squeak (not to be confused with the Smalltalk implementation Squeak). It was developed by Luca Cardelli and Rob Pike at Bell Labs in the first half of the 1980s as a language for implementing graphical user interfaces. Both languages were presented as "a language for communicating with mice": their main aim was to model the concurrent nature of programs interacting with multiple input devices, viz., keyboards and mice.The ideas present in Newsqueak were further developed in the programming languages Alef, Limbo, and Go.
+ created 2009
+ backlinksCount 32
+ pageId 25051106
+ revisionCount 18
+ dailyPageViews 19
+ appeared 1980
+
+status historical
+
+hopl 1503

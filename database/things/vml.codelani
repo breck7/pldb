@@ -1,3 +1,50 @@
+title Vector Markup Language
 appeared 1998
 type xmlFormat
-wikipedia Vector_Markup_Language
+
+patterns
+ hasCentralPackageRepository? false
+
+wikipedia https://en.wikipedia.org/wiki/Vector_Markup_Language
+ example
+  <html xmlns:v="urn:schemas-microsoft-com:vml">
+      <head>
+          <style>
+              v:* { behavior: url(#default#VML); display: inline-block; }
+          </style>
+      </head>
+      <body>
+      <table width="600" border="0" cellpadding="0" cellspacing="0" style="border-collapse: collapse;">
+          <tr>
+              <td style="width: 300px; height: 80px; background-image: url('http://placekitten.com/g/300/80');">
+              <!--[if gte mso 9]>
+              <v:image xmlns:v="urn:schemas-microsoft-com:vml" id="theImage" style='behavior: url(#default#VML); display: inline-block; position: absolute; width: 300px; height: 80px; top: 0; left: 0; border: 0; z-index: 1;' src="http://placekitten.com/g/300/80" />
+                  <v:shape xmlns:v="urn:schemas-microsoft-com:vml" id="theText" style='behavior: url(#default#VML); display: inline-block; position: absolute; width: 300px; height: 80px; top: -5; left: -10; border: 0; z-index: 2;'>
+                  <div>
+               <![endif]-->
+               <table width="300" border="0" cellspacing="0" cellpadding="0" style="border-collapse: collapse;">
+                   <tr>
+                       <td height="80" align="center" valign="top" style="color:#ffffff;font-size:20px;"><span>Text</span></td>
+                   </tr>
+               </table>
+               <!--[if gte mso 9]>
+                   </div>
+                   </v:shape>
+               <![endif]-->
+               </td>
+           </tr>
+      </table>
+  </body>
+  </html>
+ related xml ooxml svg javascript excel-app html
+ summary Vector Markup Language (VML) was an XML-based file format for two-dimensional vector graphics. VML was specified in Part 4 of the Office Open XML standards ISO/IEC 29500 and ECMA-376. According to the specification, VML is a deprecated format included in Office Open XML for legacy reasons only. VML was pervasively used in MS Office 2007 documents (i.e. Word, Excel and PowerPoint documents). As of 2012, with the release of Internet Explorer 10, VML became obsolete and is no longer supported by Internet Explorer standard mode. It is a legacy feature that is available in Internet Explorer 10 only when the browser is set to run in modes that emulate the functionality of previous versions of Internet Explorer 6, 7, 8, and 9.
+ pageId 366610
+ dailyPageViews 183
+ created 2003
+ backlinksCount 356
+ revisionCount 429
+ appeared 2007
+
+standsFor Vector Markup Language
+status historical
+fileType text

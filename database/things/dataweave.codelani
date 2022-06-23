@@ -1,4 +1,33 @@
+title DataWeave
 appeared 2014
 type pl
-reference https://docs.mulesoft.com/mule-runtime/4.1/dataweave
+
+patterns
+ hasCentralPackageRepository? false
+
 description DataWeave is the MuleSoft expression language for accessing and transforming data received through a Mule app. DataWeave is tightly integrated with Mule runtime, which runs the scripts and expressions in your Mule app.
+
+githubLanguage DataWeave
+ fileExtensions dwl
+ trendingProjectsCount 0
+
+linguistGrammarRepo https://github.com/mulesoft-labs/data-weave-tmLanguage
+ firstCommit 2017
+ lastCommit 2017
+ committerCount 1
+ commitCount 14
+ sampleCount 5
+ example
+  %dw 2.0
+  var number = 1234
+  fun foo(func,name="Mariano") = func(name)
+  input payload application/test arg="value"
+  output application/json
+  ---
+  {
+    foo: "bar"
+  }
+
+reference https://docs.mulesoft.com/mule-runtime/4.1/dataweave
+status active
+fileType text

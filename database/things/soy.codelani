@@ -1,5 +1,7 @@
+title soy
 appeared 2008
 type template
+
 example
  /**
   * Greets a person and optionally a list of other people.
@@ -21,4 +23,7 @@ example
      No additional people to greet.
    {/foreach}
  {/template}
+
 reference https://godoc.org/github.com/robfig/soy
+fileExtensions soy
+corporateDevelopers Google

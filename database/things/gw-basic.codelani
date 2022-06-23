@@ -1,3 +1,23 @@
+title GW-BASIC
 appeared 1983
 type pl
-wikipedia GW-BASIC
+
+patterns
+ hasCentralPackageRepository? false
+ hasComments? true
+
+wikipedia https://en.wikipedia.org/wiki/GW-BASIC
+ related ibm-basica qbasic msx-basic basic quickbasic mbasic dartmouth-basic ascii
+ summary GW-BASIC is a dialect of the BASIC programming language developed by Microsoft from BASICA, originally for Compaq. It is otherwise identical to Microsoft/IBM BASICA, but is a fully self-contained executable and does not need the ROM BASIC. It was bundled with MS-DOS operating systems on IBM PC compatibles by Microsoft. Microsoft also sold a BASIC compiler, BASCOM, compatible with GW-BASIC, for programs needing more speed. The language is suitable for simple games, business programs and the like. Since it was included with most versions of MS-DOS, it was also a low-cost way for many aspiring programmers to learn the fundamentals of computer programming. With the release of MS-DOS 5.0, GW-BASIC's place was eventually taken by QBasic, the interpreter part of the separately available QuickBASIC compiler.
+ created 2002
+ backlinksCount 251
+ pageId 13087
+ revisionCount 426
+ dailyPageViews 234
+ appeared 1983
+
+status historical
+
+hopl 2081
+
+rosettaCode GW-BASIC

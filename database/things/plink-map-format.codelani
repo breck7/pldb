@@ -1,5 +1,13 @@
+title plink-map-format
 appeared 2007
-type textData
+type textDataFormat
+
+patterns
+ hasCentralPackageRepository? false
+
+description Variant information file accompanying a .ped text pedigree + genotype table.
 website https://www.cog-genomics.org/plink2/formats#map
 reference https://www.sciencedirect.com/science/article/pii/S0002929707613524
-description Variant information file accompanying a .ped text pedigree + genotype table.
+status active
+fileExtensions map
+fileType text

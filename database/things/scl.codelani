@@ -1,5 +1,7 @@
+title Structured Control Language
 appeared 1998
 type pl
+
 example
  CASE TW OF
   1: DISPLAY := OVEN_TEMP;
@@ -13,4 +15,6 @@ example
  ELSE: DISPLAY := 0;
   TW_ERROR := 1;
  END_CASE;
+
 reference https://cache.industry.siemens.com/dl/files/188/1137188/att_27471/v1/SCLV4_e.pdf
+standsFor Structured Control Language

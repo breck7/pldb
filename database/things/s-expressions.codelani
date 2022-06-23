@@ -1,3 +1,50 @@
+title S-expressions
 appeared 1960
 type metaLanguage
-wikipedia S-expression
+
+patterns
+ hasCentralPackageRepository? false
+
+wikipedia https://en.wikipedia.org/wiki/S-expression
+ example
+  def parse_sexp(string):
+      """
+      >>> parse_sexp("(+ 5 (+ 3 5))")
+      [['+', '5', ['+', '3', '5']]]
+      
+      """
+      sexp = [[]]
+      word = ''
+      in_str = False
+      for char in string:
+          if char is '(' and not in_str:
+              sexp.append([])
+          elif char is ')' and not in_str:
+              if word:
+                  sexp[-1].append(word)
+                  word = ''
+              temp = sexp.pop()
+              sexp[-1].append(temp)
+          elif char in (' ', '\n', '\t') and not in_str:
+              if word:
+                  sexp[-1].append(word)
+                  word = ''
+          elif char is '\"':
+              in_str = not in_str
+          else:
+              word += char
+      return sexp[0]
+ related lisp scheme c common-lisp xml python islisp rfc
+ summary In computing, s-expressions, sexprs or sexps (for "symbolic expression") are a notation for nested list (tree-structured) data, invented for and popularized by the programming language Lisp, which uses them for source code as well as data. In the usual parenthesized syntax of Lisp, an s-expression is classically defined as an atom, or an expression of the form (x . y) where x and y are s-expressions. The second, recursive part of the definition represents an ordered pair so that s-exprs are effectively binary trees. The definition of an atom varies per context; in the original definition by John McCarthy, it was assumed that there existed "an infinite set of distinguishable atomic symbols" represented as "strings of capital Latin letters and digits with single embedded blanks" (i.e., character string and numeric literals). Most modern sexpr notations in addition use an abbreviated notation to represent lists in s-expressions, so that (x y z) stands for (x . (y . (z . NIL))) where NIL is the special end-of-list object (alternatively written (), which is the only representation in Scheme). In the Lisp family of programming languages, s-expressions are used to represent both source code and data. Other uses of S-expressions are in Lisp-derived languages such as DSSSL, and as mark-up in communications protocols like IMAP and John McCarthy's CBCL. The details of the syntax and supported data types vary in the different languages, but the most common feature among these languages is the use of S-expressions and prefix notation.
+ pageId 54458
+ dailyPageViews 311
+ created 2002
+ backlinksCount 101
+ revisionCount 203
+ appeared 1994
+
+status active
+related i-expressions bayer-expressions
+fileType text
+
+antlr https://github.com/antlr/grammars-v4/tree/master/sexpression

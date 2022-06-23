@@ -1,8 +1,8 @@
+title clay
 appeared 2010
 type pl
 creators KS Sreeram and Joe Groff
-website http://claylabs.com/clay
-github https://github.com/jckarter/clay
+
 example
  import printer.(println);
  
@@ -46,4 +46,20 @@ example
      println("factorial(", n, ") = ", f);
      return 0;
  }
+
+githubRepo https://github.com/jckarter/clay
+ firstCommit 2010
+ stars 380
+ forks 33
+ subscribers 25
+ created 2010
+ updated 2019
+ description The Clay programming language
+ issues 62
+
+website http://claylabs.com/clay
 reference https://bitbucket.org/kssreeram/clay/src/default/
+
+projectEuler Clay
+ memberCount
+  2022 5

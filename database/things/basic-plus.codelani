@@ -1,3 +1,20 @@
+title BASIC-PLUS
 appeared 1975
 type pl
-wikipedia BASIC-PLUS
+
+patterns
+ hasCentralPackageRepository? false
+
+wikipedia https://en.wikipedia.org/wiki/BASIC-PLUS
+ related basic dartmouth-basic microsoft-basic hp-basic-for-openvms
+ summary BASIC-PLUS was an extended dialect of the BASIC programming language developed by Digital Equipment Corporation (DEC) for use on its RSTS/E time-sharing operating system for the PDP-11 series of 16-bit minicomputers in the early 1970s through the 1980s. BASIC-PLUS is based very closely on the original Dartmouth BASIC, although it added a number of new structures. In turn, BASIC-PLUS was the version that the original Microsoft BASIC was patterned.The language was later rewritten as a true compiler as BASIC-Plus-2, and was ported to the VAX-11 platform as that machine's native BASIC implementation. This version survived several platform changes, and is today known as HP BASIC for OpenVMS.
+ created 2004
+ backlinksCount 26
+ pageId 617705
+ revisionCount 99
+ dailyPageViews 16
+ appeared 1970
+
+status historical
+
+hopl 3420

@@ -1,3 +1,64 @@
+title Smalltalk
 appeared 1972
 type pl
-wikipedia Smalltalk
+
+patterns
+ hasMultipleDispatch? true
+ hasCentralPackageRepository? true
+ hasComments? true
+ hasGarbageCollection? true
+ hasOperatorOverloading? true
+
+wikipedia https://en.wikipedia.org/wiki/Smalltalk
+ example
+  quadMultiply: i1 and: i2
+      "This method multiplies the given numbers by each other and the result by 4."
+      | mul |
+      mul := i1 * i2.
+      ^mul * 4
+ related pharo squeak visualworks lisp simula euler imp planner logo applescript dart dylan erlang etoys falcon go groovy io ioke java lasso lisaac newtonscript object-rexx objective-c php perl-6 python ruby scala scratch self sql flavors clos prolog ascii javascript visual-smalltalk-enterprise smalltalk-mt jvm strongtalk
+ summary Smalltalk is an object-oriented, dynamically typed, reflective programming language. Smalltalk was created as the language to underpin the "new world" of computing exemplified by "human–computer symbiosis." It was designed and created in part for educational use, more so for constructionist learning, at the Learning Research Group (LRG) of Xerox PARC by Alan Kay, Dan Ingalls, Adele Goldberg, Ted Kaehler, Scott Wallace, and others during the 1970s. The language was first generally released as Smalltalk-80. Smalltalk-like languages are in continuing active development and have gathered loyal communities of users around them. ANSI Smalltalk was ratified in 1998 and represents the standard version of Smalltalk. Smalltalk took second place for "most loved programming language" in the Stack Overflow Developer Survey in 2017.
+ pageId 28319
+ dailyPageViews 826
+ created 2001
+ backlinksCount 1030
+ revisionCount 1228
+ appeared 1972
+
+githubLanguage Smalltalk
+ fileExtensions st cs
+ trendingProjectsCount 0
+
+linguistGrammarRepo https://github.com/tomas-stefano/smalltalk-tmbundle
+ firstCommit 2011
+ lastCommit 2017
+ committerCount 5
+ commitCount 22
+ sampleCount 10
+ example
+  ChartJs
+  dataFunction
+  	^ 'bars'
+
+status active
+country US
+fileType text
+
+tiobe Smalltalk
+
+projectEuler Smalltalk
+ memberCount
+  2019 104
+  2022 111
+
+hopl 828
+
+quineRelay Smalltalk
+
+ubuntuPackage gnu-smalltalk
+
+codeMirror smalltalk
+
+rosettaCode Smalltalk
+
+antlr https://github.com/antlr/grammars-v4/tree/master/smalltalk

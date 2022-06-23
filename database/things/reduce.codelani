@@ -1,4 +1,24 @@
+title REDUCE
 appeared 2011
 type pl
+
+patterns
+ hasCentralPackageRepository? false
+
+wikipedia https://en.wikipedia.org/wiki/REDUCE
+ related portable-standard-lisp lisp algol unix linux camal
+ summary Reduce is a general-purpose computer algebra system geared towards applications in physics. The development of the Reduce computer algebra system was started in the 1960s by Anthony C. Hearn. Since then, many scientists from all over the world have contributed to its development under his direction. Reduce is written entirely in its own LISP dialect called Portable Standard Lisp, expressed in an ALGOL-like syntax called RLISP. The latter is used as a basis for Reduce's user-level language. Implementations of Reduce are available on most variants of Unix, Linux, Microsoft Windows, or Apple Macintosh systems by using an underlying Portable Standard Lisp or Codemist Standard LISP implementation. Reduce was open sourced in December 2008 and is available for free under a modified BSD license on SourceForge. Previously it had cost $695.
+ pageId 499024
+ created 2004
+ backlinksCount 75
+ revisionCount 2
+ dailyPageViews 2
+ appeared 2011
+
 website http://www.reduce-algebra.com
-wikipedia REDUCE
+status historical
+fileType text
+wordRank 2036
+isOpenSource true
+
+rosettaCode Reduce

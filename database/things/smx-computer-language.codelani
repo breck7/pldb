@@ -1,3 +1,35 @@
+title SMX
 appeared 1998
 type pl
-wikipedia SMX_%28computer_language%29
+
+patterns
+ hasCentralPackageRepository? false
+
+wikipedia https://en.wikipedia.org/wiki/SMX_%28computer_language%29
+ example
+  %expand%
+  %if(%not(%exists(/tmp/gbook.sq3))
+          ,%sql(sqlite:/tmp/gbook.sq3,CREATE TABLE guests (name text, comment text))
+  )
+  %if(%and(%form(name),%form(comment))
+      ,%sql(sqlite:/tmp/gbook.sq3,"INSERT INTO guests (name, comment) VALUES (%sqlq(%form(name)),%sqlq(%form(comment)))")
+  )
+  %sql(sqlite:/tmp/gbook.sq3,SELECT * FROM guests
+          ,<p>%html-quote(%col(name)) said %html-quote(%col(comment))<hr>
+           <p>
+           <form action="%client-url%" method=post>
+           <br>Name: <input name=name>
+           <br>Comment: <input name=comment>
+           <br><input type=submit>
+           </form>
+  )
+ related perl php sql
+ summary SMX (from Server Macro Expansion) is a macro processing language designed to embed macros in web pages. Originally shipped with the popular Internet Factory's Commerce Builder software, it has been ported as an Apache module.
+ created 2005
+ backlinksCount 16
+ pageId 2231975
+ revisionCount 56
+ dailyPageViews 10
+ appeared 2009
+
+status historical

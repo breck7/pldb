@@ -1,4 +1,91 @@
+title GDB
 appeared 1986
 type application
+
+patterns
+ hasCentralPackageRepository? false
+
+wikipedia https://en.wikipedia.org/wiki/GNU_Debugger
+ example
+  GNU gdb (GDB) Fedora (7.3.50.20110722-13.fc16)
+  Copyright (C) 2011 Free Software Foundation, Inc.
+  License GPLv3+: GNU GPL version 3 or later <https://gnu.org/licenses/gpl.html>
+  This is free software: you are free to change and redistribute it.
+  There is NO WARRANTY, to the extent permitted by law.  Type "show copying"
+  and "show warranty" for details.
+  This GDB was configured as "x86_64-redhat-linux-gnu".
+  For bug reporting instructions, please see:
+  <https://www.gnu.org/software/gdb/bugs/>...
+  Reading symbols from /path/example...done.
+  (gdb) run
+  Starting program: /path/example
+  size of a = 21
+  [Inferior 1 (process 14290) exited normally]
+ related c ada objective-c free-pascal fortran java arm atmel-avr x86-isa mips powerpc sparc arc-isa python guile freebsd vim-editor linux
+ summary The GNU Debugger (GDB) is a portable debugger that runs on many Unix-like systems and works for many programming languages, including Ada, C, C++, Objective-C, Free Pascal, Fortran, Java and partially others.
+ pageId 13052
+ dailyPageViews 192
+ created 2002
+ backlinksCount 285
+ revisionCount 429
+ appeared 1986
+
+githubLanguage GDB
+ fileExtensions gdb gdbinit
+ trendingProjectsCount 0
+
+linguistGrammarRepo https://github.com/quarnster/SublimeGDB
+ firstCommit 2012
+ lastCommit 2018
+ committerCount 35
+ commitCount 198
+ sampleCount 2
+ example
+  #
+  # MicropendousX LPC17xx Development Board
+  #
+  # http://www.MicropendousX.org
+  #
+  # Connect to a debugger controlling a LPC17xx
+  # and download firmware.
+  #
+  # Start your OpenOCD gdb server before running
+  # this script with:  arm-none-eabi-gdb -x gdb_lpc17xx_program.gdb
+  #
+  # Note the 'monitor' command just passes its
+  # arguments to OpenOCD
+  #
+  # This file is released under the MIT License
+  #
+  
+  # Connect to OpenOCD gdb server
+  target remote localhost:3333
+  
+  # reset the LPC17xx IC with the OpenOCD reset command
+  monitor reset
+  
+  # the following are OpenOCD commands as in OpenOCD_program.script
+  # which will download a hex file into your LPC17xx
+  monitor halt
+  monitor sleep 200
+  monitor wait_halt
+  monitor flash probe 0
+  monitor flash info 0
+  monitor flash write_image erase unlock USBtoSerial.hex
+  monitor sleep 200
+  monitor reset run
+  monitor exit
+  
+  quit
+  
+
 website https://www.gnu.org/software/gdb
-wikipedia GNU_Debugger
+status active
+fileType text
+isOpenSource true
+
+quineRelay GDB
+
+ubuntuPackage gdb
+
+corporateDevelopers GNU Project

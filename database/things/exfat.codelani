@@ -1,3 +1,19 @@
+title ExFAT
 appeared 2006
 type filesystem
-wikipedia ExFAT
+
+patterns
+ hasCentralPackageRepository? false
+
+wikipedia https://en.wikipedia.org/wiki/ExFAT
+ related ntfs linux fat freebsd android
+ summary exFAT (Extended File Allocation Table) is a Microsoft file system introduced in 2006 and optimized for flash memory such as USB flash drives and SD cards. It is proprietary and Microsoft owns patents on several elements of its design.exFAT can be used where NTFS is not a feasible solution (due to data-structure overhead), but a greater file-size limit than the standard FAT32 file system (i.e. 4 GiB) is required. exFAT has been adopted by the SD Card Association as the default file system for SDXC cards larger than 32 GiB.
+ backlinksCount 541
+ pageId 7121456
+ created 2006
+ revisionCount 896
+ dailyPageViews 748
+ appeared 2006
+
+status historical
+fileType text

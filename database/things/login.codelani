@@ -1,4 +1,21 @@
+title LOGIN
 appeared 1986
 type pl
-wikipedia Login
+
+patterns
+ hasCentralPackageRepository? false
+
+wikipedia https://en.wikipedia.org/wiki/Login
+ related linux
+ summary In computer security, logging in (or logging on or signing in or signing on) is the process by which an individual gains access to a computer system by identifying and authenticating themselves. The user credentials are typically some form of "username" and a matching "password", and these credentials themselves are sometimes referred to as a login, (or a logon or a sign-in or a sign-on). In practice, modern secure systems also often require a  second factor for extra security.  When access is no longer needed, the user can log out (log off, sign out or sign off).
+ backlinksCount 297
+ pageId 9878372
+ dailyPageViews 906
+ created 2007
+ appeared 1960
+
 reference https://semanticscholar.org/paper/f487a24e7f7329da852d0638a130e00aae08a598
+status historical
+wordRank 541
+
+hopl 1236

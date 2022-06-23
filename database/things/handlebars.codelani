@@ -1,6 +1,7 @@
+title Handlebars
 appeared 2010
 type template
-website http://handlebarsjs.com/
+
 example
  <div class="entry">
   <h1>{{title}}</h1>
@@ -8,3 +9,30 @@ example
     {{body}}
   </div>
  </div>
+
+patterns
+ hasCentralPackageRepository? false
+
+githubLanguage Handlebars
+ fileExtensions handlebars hbs
+ trendingProjectsCount 0
+
+linguistGrammarRepo https://github.com/daaain/Handlebars
+ firstCommit 2012
+ lastCommit 2017
+ committerCount 14
+ commitCount 153
+ sampleCount 2
+ example
+  <div class="entry">
+    <h1>{{title}}</h1>
+    <div class="body">
+      {{body}}
+    </div>
+  </div>
+
+website http://handlebarsjs.com/
+status active
+fileType text
+
+codeMirror handlebars

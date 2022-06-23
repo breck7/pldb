@@ -1,6 +1,7 @@
+title OpenSCAD
 appeared 2010
 type pl
-wikipedia OpenSCAD
+
 example
   cube(5);
   x = 4+y;
@@ -8,5 +9,46 @@ example
   translate([10,5]) { circle(5); square(4); }
   rotate(60) color("red") { circle(5); square(4); }
   color("blue") { translate([5,3,0]) sphere(5); rotate([45,0,45]) { cylinder(10); cube([5,6,7]); } }
-reference https://en.wikipedia.org/wiki/OpenSCAD
+
+patterns
+ hasCentralPackageRepository? false
+ hasComments? true
+
 description OpenSCAD is a 2D/3D and solid modeling program which is based on a Functional programming language used to create models that are previewed on the screen, and rendered into 3D mesh which allows the model to be exported in a variety of 2D/3D file formats. A script in the OpenSCAD language is used to create 2D or 3D models. This script is a free format list of action statements.
+
+wikipedia https://en.wikipedia.org/wiki/OpenSCAD
+ related opengl linux freebsd ia-32 dxf
+ summary OpenSCAD is a free software application for creating solid 3D CAD (computer-aided design) objects. It is a script-only based modeller that uses its own description language; parts can be previewed, but it cannot be interactively selected or modified by mouse in the 3D view. An OpenSCAD script specifies geometric primitives (such as spheres, boxes, cylinders, etc.) and defines how they are modified and combined (for instance by intersection, difference, envelope combination and Minkowski sums) to render a 3D model. As such, the program does constructive solid geometry (CSG). OpenSCAD is available for Windows, Linux and OS X.
+ created 2010
+ backlinksCount 126
+ pageId 25778048
+ revisionCount 132
+ dailyPageViews 100
+ appeared 2010
+
+githubLanguage OpenSCAD
+ fileExtensions scad
+ trendingProjects
+  author name avatar url language languageColor stars forks currentPeriodStars description
+  maduce fosscad-repo https://github.com/maduce.png https://github.com/maduce/fosscad-repo OpenSCAD #ccc 650 518 22 "Official FOSSCAD Library Repository"
+  prusa3d Original-Prusa-i3 https://github.com/prusa3d.png https://github.com/prusa3d/Original-Prusa-i3 OpenSCAD #ccc 859 494 22 "Original Prusa i3 MK2 3D printer printed parts"
+ trendingProjectsCount 3
+
+linguistGrammarRepo https://github.com/tbuser/openscad.tmbundle
+ firstCommit 2011
+ lastCommit 2017
+ committerCount 2
+ commitCount 12
+ sampleCount 2
+ example
+  // Simple sphere in OpenSCAD
+  
+  sphere( r=10 );
+  
+
+reference https://en.wikipedia.org/wiki/OpenSCAD
+status active
+fileType text
+isOpenSource true
+
+rosettaCode Openscad

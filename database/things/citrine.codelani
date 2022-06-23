@@ -1,9 +1,16 @@
+title Citrine
 appeared 2014
 type pl
-website http://citrine-lang.org/
-wikipedia Citrine
+
 example
  salut := 'Bună țară!'.
  salut țară: 'România'.
  scrie: salut.
+
+patterns
+ hasCentralPackageRepository? false
+
+wikipedia https://en.wikipedia.org/wiki/Citrine
+
+website http://citrine-lang.org/
 reference https://news.ycombinator.com/item?id=23885059

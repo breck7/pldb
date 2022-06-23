@@ -1,7 +1,7 @@
+title storyscript
 appeared 2017
 type pl
-website https://storyscript.com/
-github https://github.com/storyscript
+
 example
  ### 
  Storyscript is a language, editor, database, infra and community all-in-one.
@@ -53,4 +53,19 @@ example
      return input
  name(input:1)
  # >>> 1
+
 description Storyscript is a language, editor, database, infra and community all-in-one. Create holistic apps, tools and workflows blazing fast that power your business.
+
+githubRepo https://github.com/storyscript
+ firstCommit 2017
+ stars 303
+ forks 33
+ subscribers 14
+ created 2017
+ updated 2019
+ description The polyglot, cloud-native programming language for zero-devops deployments into Kubernetes.
+ issues 169
+
+website https://storyscript.com/
+
+twitter storyscript_

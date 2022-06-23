@@ -1,6 +1,162 @@
+title Squirrel
 appeared 2003
 type pl
 creators Alberto Demichelis
+
+patterns
+ hasCentralPackageRepository? false
+ hasComments? true
+
+wikipedia https://en.wikipedia.org/wiki/Squirrel_(programming_language)
+ example
+  class BaseVector {
+      constructor(...)
+      {
+        if(vargv.len() >= 3) {
+          x = vargv[0];
+          y = vargv[1];
+          z = vargv[2];
+        }
+      }
+      x = 0;
+      y = 0;
+      z = 0;
+    }
+  
+    class Vector3 extends BaseVector {
+      function _add(other)
+      {
+        if(other instanceof ::Vector3)
+          return ::Vector3(x+other.x,y+other.y,z+other.z);
+        else
+          throw "wrong parameter";
+      }
+      function Print()
+      {
+        ::print(x+","+y+","+z+"\n");
+      }
+    }
+  
+    local v0 = Vector3(1,2,3)
+    local v1 = Vector3(11,12,13)
+    local v2 = v0 + v1;
+    v2.Print();
+ related javascript lua python minid ecmascript ruby
+ summary Squirrel is a high level imperative, object-oriented programming language, designed to be a light-weight scripting language that fits in the size, memory bandwidth, and real-time requirements of applications like video games and hardware such as Electric Imp. MirthKit, a simple toolkit for making and distributing open source, cross-platform 2D games, uses Squirrel for its platform. It is used extensively by Code::Blocks for scripting and was also used in Final Fantasy Crystal Chronicles: My Life as a King. It is also used in Left 4 Dead 2, Portal 2 and Thimbleweed Park for scripted events.
+ pageId 2819069
+ dailyPageViews 65
+ created 2005
+ backlinksCount 39
+ revisionCount 173
+ appeared 2003
+ fileExtensions nut
+
+githubLanguage Squirrel
+ fileExtensions nut
+ trendingProjectsCount 0
+
+githubRepo https://github.com/albertodemichelis/squirrel
+ stars 280
+ forks 53
+ subscribers 40
+ created 2015
+ updated 2017
+ firstCommit 2015
+ description Official repository for the programming language Squirrel
+ issues 57
+
+helloWorldCollection Squirrel
+ #!/usr/bin/squirrelsh
+ // Hello world in Squirrel
+ printl("Hello, world!");
+
+linguistGrammarRepo https://github.com/textmate/c.tmbundle
+ firstCommit 2005
+ lastCommit 2018
+ committerCount 23
+ commitCount 359
+ sampleCount 1
+ example
+  //example from http://www.squirrel-lang.org/#documentation
+  
+  local table = {
+  	a = "10"
+  	subtable = {
+  		array = [1,2,3]
+  	},
+  	[10 + 123] = "expression index"
+  }
+   
+  local array=[ 1, 2, 3, { a = 10, b = "string" } ];
+   
+  foreach (i,val in array)
+  {
+  	::print("the type of val is"+typeof val);
+  }
+   
+  /////////////////////////////////////////////
+   
+  class Entity
+  {	
+  	constructor(etype,entityname)
+  	{
+  		name = entityname;
+  		type = etype;
+  	}
+  									
+  	x = 0;
+  	y = 0;
+  	z = 0;
+  	name = null;
+  	type = null;
+  }
+   
+  function Entity::MoveTo(newx,newy,newz)
+  {
+  	x = newx;
+  	y = newy;
+  	z = newz;
+  }
+   
+  class Player extends Entity {
+  	constructor(entityname)
+  	{
+  		base.constructor("Player",entityname)
+  	}
+  	function DoDomething()
+  	{
+  		::print("something");
+  	}
+  	
+  }
+   
+  local newplayer = Player("da playar");
+   
+  newplayer.MoveTo(100,200,300);	
+  
+
 website http://squirrel-lang.org/
-github https://github.com/albertodemichelis/squirrel
-wikipedia Squirrel_(programming_language)
+status active
+
+tryItOnline squirrel
+
+twitter squirrellang
+
+fileExtensions nut
+fileType text
+isOpenSource true
+
+tiobe Squirrel
+
+projectEuler Squirrel
+ memberCount
+  2019 34
+  2022 42
+
+quineRelay Squirrel
+
+ubuntuPackage squirrel3
+
+rosettaCode Squirrel
+
+writtenIn cpp

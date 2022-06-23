@@ -1,3 +1,10 @@
+title Java Speech Markup Languag
 appeared 2001
 type xmlFormat
-wikipedia Java_Speech_Markup_Language
+
+wikipedia https://en.wikipedia.org/wiki/Java_Speech_Markup_Language
+ summary Java Speech API Markup Language (JSML) is an XML-based markup language for annotating text input to speech synthesizers.  JSML is used within the Java Speech API. JSML is an XML application and conforms to the requirements of well-formed XML documents. Java Speech API Markup Language is referred to as JSpeech Markup Language when describing the W3C documentation of the standard. Java Speech API Markup Language and JSpeech Markup Language identical apart from the change in name, which is made to protect Sun trademarks. JSML is primarily an XML text format used by Java applications to annotate text input to speech synthesizers. Elements of JSML provide speech synthesizer with detailed information on how to speak text in a naturalized fashion. JSML defines elements which define a document's structure, the pronunciation of certain words and phrases, features of speech such as emphasis and intonation, etc. JSML is designed in the Java fashion to be simple to learn and use, to be portable across different synthesizers and computing platforms, and although designed for use within is also applicable to a wide range of languages. An example of how JSML is defined is set out below:  The W3C has developed a standard markup language called SSML, which is based on JSML but is not identical to it. This became a formal W3C recommendation in 2004.
+ backlinksCount 11
+ pageId 142383
+ dailyPageViews 3
+ appeared 2004

@@ -1,3 +1,70 @@
+title INTERCAL
 appeared 1972
 type pl
-wikipedia INTERCAL
+
+patterns
+ hasCentralPackageRepository? false
+
+wikipedia https://en.wikipedia.org/wiki/INTERCAL
+ example
+  DO ,1 <- #13
+  PLEASE DO ,1 SUB #1 <- #238
+  DO ,1 SUB #2 <- #108
+  DO ,1 SUB #3 <- #112
+  DO ,1 SUB #4 <- #0
+  DO ,1 SUB #5 <- #64
+  DO ,1 SUB #6 <- #194
+  DO ,1 SUB #7 <- #48
+  PLEASE DO ,1 SUB #8 <- #22
+  DO ,1 SUB #9 <- #248
+  DO ,1 SUB #10 <- #168
+  DO ,1 SUB #11 <- #24
+  DO ,1 SUB #12 <- #16
+  DO ,1 SUB #13 <- #162
+  PLEASE READ OUT ,1
+  PLEASE GIVE UP
+ related ascii utf-8 c
+ summary The Compiler Language With No Pronounceable Acronym, abbreviated INTERCAL, is an esoteric programming language that was created as a parody by Don Woods and James M. Lyon, two Princeton University students, in 1972. It satirizes aspects of the various programming languages at the time, as well as the proliferation of proposed language constructs and notations in the 1960s. There are two currently maintained versions of INTERCAL: C-INTERCAL, maintained by Eric S. Raymond, and CLC-INTERCAL, maintained by Claudio Calvelli.
+ pageId 15075
+ dailyPageViews 140
+ created 2001
+ backlinksCount 69
+ revisionCount 332
+ appeared 1972
+
+helloWorldCollection INTERCAL
+ Hello World in Intercal
+ 
+ DO ,1 <- #13
+ PLEASE DO ,1 SUB #1 <- #234
+ DO ,1 SUB #2 <- #112
+ DO ,1 SUB #3 <- #112
+ DO ,1 SUB #4 <- #0
+ DO ,1 SUB #5 <- #64
+ DO ,1 SUB #6 <- #194
+ DO ,1 SUB #7 <- #48
+ PLEASE DO ,1 SUB #8 <- #22
+ DO ,1 SUB #9 <- #248
+ DO ,1 SUB #10 <- #168
+ DO ,1 SUB #11 <- #24
+ DO ,1 SUB #12 <- #16
+ DO ,1 SUB #13 <- #214
+ PLEASE READ OUT ,1
+ PLEASE GIVE UP
+
+status active
+
+tryItOnline intercal
+
+country US
+fileType text
+
+tiobe INTERCAL
+
+hopl 585
+
+quineRelay INTERCAL
+
+ubuntuPackage intercal
+
+rosettaCode Intercal

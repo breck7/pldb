@@ -1,5 +1,70 @@
+title Oberon
 appeared 1986
 type pl
 creators Niklaus Wirth
+
+patterns
+ hasCentralPackageRepository? false
+
+wikipedia https://en.wikipedia.org/wiki/Oberon_(programming_language)
+ example
+  MODULE Rectangles;
+  
+  IMPORT Figures;
+  
+  TYPE
+     Rectangle* = POINTER TO RectangleDesc;
+  
+     RectangleDesc* = RECORD
+        (Figures.FigureDesc)
+        x, y, w, h : INTEGER;
+     END;
+  
+  PROCEDURE Draw* (r : Rectangle);
+  BEGIN
+    (* ... *)
+  END Draw;
+  
+  (* Other procedures here *)
+  
+  PROCEDURE Handle* (f: Figure; VAR msg: Figures.Message);
+     VAR
+        r : Rectangle;
+  BEGIN
+     r := f(Rectangle);
+     IF    msg IS Figures.DrawMsg THEN Draw(r)
+     ELSIF msg IS Figures.MarkMsg THEN Mark(r)
+     ELSIF msg IS Figures.MoveMsg THEN Move(r, msg(Figures.MoveMsg).dx, msg(Figures.MoveMsg).dy)
+     ELSE  (* ignore *)
+     END
+  END Handle;
+  
+  PROCEDURE New* (VAR r : Rectangle);
+  BEGIN
+     NEW(r);
+     Figures.Init(r, Handle);
+  END New;
+  
+  END Rectangles.
+ related modula-2 oberon-2 zonnon go nim algol euler pascal modula ada linux solaris lex yacc x86-isa obliq visual-studio-editor
+ summary Oberon is a general-purpose programming language created in 1986 by Niklaus Wirth and the latest member of the Wirthian family of ALGOL-like languages (Euler, Algol-W, Pascal, Modula, and Modula-2). Oberon was the result of a concentrated effort to increase the power of Modula-2, the direct successor of Pascal, and simultaneously to reduce its complexity. Its principal new feature is the concept of type extension of record types: It permits the construction of new data types on the basis of existing ones and to relate them, deviating from the dogma of strictly static data typing. Type extension is Wirth's way of inheritance reflecting the viewpoint of the parent site. Oberon was developed as part of the implementation of the Oberon operating system at ETH Zurich in Switzerland. The name is from the moon of Uranus, Oberon. Oberon is still maintained by Wirth and the latest revision is dated May 3, 2016.
+ pageId 22496
+ dailyPageViews 100
+ created 2001
+ backlinksCount 128
+ revisionCount 388
+ appeared 1986
+
 website http://www.projectoberon.com/
-wikipedia Oberon_(programming_language)
+status active
+country CH
+fileType text
+
+tiobe Oberon
+
+projectEuler Oberon
+ memberCount
+  2019 2
+  2022 3
+
+hopl 1415

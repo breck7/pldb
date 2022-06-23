@@ -1,3 +1,24 @@
+title SIMSCRIPT
 appeared 1963
 type pl
-wikipedia SIMSCRIPT
+
+patterns
+ hasCentralPackageRepository? false
+
+wikipedia https://en.wikipedia.org/wiki/SIMSCRIPT
+ related fortran simula quikscript gpss
+ summary SIMSCRIPT is a free-form, English-like general-purpose simulation language conceived by Harry Markowitz and Bernard Hausner at the RAND Corporation in 1963. It was implemented as a Fortran preprocessor on the IBM 7090 and was designed for large discrete event simulations. It influenced Simula. Though earlier versions were released into the public domain, SIMSCRIPT was commercialized by Markowitz's company, California Analysis Center, Inc., which produced proprietary versions SIMSCRIPT I.5 and SIMSCRIPT II.5.
+ pageId 1064164
+ dailyPageViews 17
+ created 2004
+ backlinksCount 13
+ revisionCount 46
+ appeared 1963
+
+status historical
+country US
+fileType text
+
+hopl 190
+
+corporateDevelopers RAND

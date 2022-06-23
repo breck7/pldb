@@ -1,3 +1,46 @@
+title DIGITAL Command Language
 appeared 1997
 type pl
-wikipedia DIGITAL_Command_Language
+
+patterns
+ hasCentralPackageRepository? false
+
+wikipedia https://en.wikipedia.org/wiki/DIGITAL_Command_Language
+ example
+  $ i = 1
+  $ variable'i' = "blue"
+  $ i = 2 
+  $ variable'i' = "green"
+  $ j = 1
+  $ color = variable'j'
+  $ rainbow'color' = "red"
+  $ color = variable'i'
+  $ rainbow'color' = "yellow"
+ related windows-powershell fortran unix isbn
+ summary DIGITAL Command Language (DCL) is the standard command language adopted by most of the operating systems (OSs) that were sold by the former Digital Equipment Corporation (which was acquired by Compaq, which was in turn acquired by Hewlett-Packard). DCL had its roots in the IAS, TOPS-20, and RT-11 OSs and was implemented as a standard across most of Digital's OSs, notably RSX-11, but took its most powerful form in the OpenVMS OS. Written when the programming language Fortran was in heavy use, DCL is a scripting language supporting several datatypes, including strings, integers, bit arrays, arrays and booleans, but not floating point numbers. Access to OpenVMS system services (kernel API) is through lexical functions, which perform the same as their compiled language counterparts and allow scripts to get information on system state. DCL includes IF-THEN-ELSE, access to all the Record Management Services (RMS) file types including stream, indexed, and sequential, but unfortunately lacks a DO-WHILE or other looping construct, requiring users to make do with IF and GOTO-label statements instead. DCL is available for other operating systems as well, including VCL and VX/DCL for Unix, VCL for Unix, MS-DOS, OS/2 and Windows, and PC-DCL and Accelr8 DCL Lite for Windows.  DCL is the basis of the XLNT language, implemented on Windows by an interpreter-IDE-WSH engine combination with CGI capabilities distributed by Advanced System Concepts Inc. from 1997.
+ pageId 532369
+ created 2004
+ backlinksCount 65
+ revisionCount 103
+ dailyPageViews 39
+ appeared 1997
+
+githubLanguage DIGITAL Command Language
+ fileExtensions com
+ trendingProjectsCount 0
+
+example
+ $! Compiling with VAXC is said to work, but it requires the usual cruft
+ $! (vaxcrtl and all), and to avoid hair we don't supply said cruft here.
+ $ CC/DECC/PREFIX=all VMSBACKUP.C/DEFINE=(HAVE_MT_IOCTLS=0,HAVE_UNIXIO_H=1)
+ $ CC/DECC/PREFIX=all DCLMAIN.C
+ $! Probably we don't want match as it probably doesn't implement VMS-style
+ $! matching, but I haven't looking into the issues yet.
+ $ CC/DECC/PREFIX=all match
+ $ LINK/exe=VMSBACKUP.EXE -
+ vmsbackup.obj,dclmain.obj,match.obj,sys$input/opt
+ identification="VMSBACKUP4.1.1"
+ 
+
+status active
+fileType text

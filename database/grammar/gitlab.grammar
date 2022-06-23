@@ -1,0 +1,6 @@
+gitlabNode
+ description URL of the official GitLab repo for the language project.
+ extends abstractUrlNode
+ crux gitlab
+ single
+ string sourceDomain gitlab.com

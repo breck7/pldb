@@ -1,3 +1,167 @@
+title Yoix
 appeared 2000
 type pl
-wikipedia Yoix
+
+patterns
+ hasCentralPackageRepository? false
+
+wikipedia https://en.wikipedia.org/wiki/Yoix
+ example
+  import yoix.*.*;
+  
+  BuildYoixLogoImage(double height, Color color, int addshadow) {
+    // create the basic image, without shadow
+    GenImage(double height, Color color, Font imagefont, double scale) {
+      Image yoixlogo = {
+        int type = TYPE_RGB_ALPHA;
+        Color imgcolor = color;
+        double scale = scale;
+        Font imagefont = imagefont;
+        Font regfont = imagefont.scalefont(0.5, 0.5);
+        Graphics graphics = {
+          Font font = imagefont;
+          int textantialiasing = TRUE;
+        };
+        double ywd = stringWidth(graphics.font, "Y");
+        Dimension size = {
+          double height = height;
+          double width = ywd * 5.25;
+        };
+        double owd = stringWidth(graphics.font, "o");
+        double iwd = stringWidth(graphics.font, "i");
+        double xwd = stringWidth(graphics.font, "x");
+        ywd += iwd;
+        ywd /= 2.0;
+        paint(Rectangle r) {
+          double alpha = 1.0;
+          double alpha2 = 0.3333;
+          int    limit = 12;
+      
+          graphics {
+            gsave();
+            erasedrawable(0.0); // for transparent PNG
+            rectclip(r);
+            setrgbcolor(imgcolor.red, imgcolor.green, imgcolor.blue);
+            translate(48 * this.scale, 44 * this.scale);
+            for(n=0; n<limit; n++) {
+              moveto(0.0, 0.0);
+              setfont(this.imagefont);
+              // "handmade" kerning
+              show("Y", alpha);
+              if (n == 0) {
+                moveto(ywd, 0.0);
+                show("o", alpha);
+                moveto(ywd + owd - 0.3 * iwd, 0.0);
+                show("i", alpha);
+                moveto(ywd + owd + 0.8 * iwd, 0.0);
+                show("x", alpha);
+                moveto(ywd + owd + 0.8 * iwd + xwd, -this.imagefont.height * 0.33);
+                setfont(this.regfont);
+                show("\xAE", alpha);
+                alpha = alpha2;
+              }
+              alpha *= 0.75;
+              rotate(30);
+            } 
+            grestore();
+          }
+        }
+      };
+  
+      return(yoixlogo);
+    }
+  
+    Font basefont = {
+      String name = "ClearviewATT-plain-48";
+    };
+    double scale = height / 90.0;
+    Font imagefont = basefont.scalefont(scale, scale);
+  
+    if (addshadow) {
+      Image logo = GenImage(height, color, imagefont, scale);
+      image = new Image {
+        int type = TYPE_RGB_ALPHA;
+        Image source = logo;
+        Image img = logo;
+        // convolve image to make a (lightened) shadow
+        Image shadow = new Image {
+          int type = TYPE_RGB_ALPHA;
+          Image source = img;
+          Array kernel = new Array[100];
+          Pointer ptr;
+          for(ptr in kernel) *ptr = 0.0055;
+          paint() {
+            convolve(kernel);
+          }
+        };
+        // combine the image and shadow into one image
+        paint(Rectangle r) {
+          graphics {
+            gsave();
+            moveto(0, 0);
+            showimage(this.img);
+            moveto(this.img.size.height * 0.005, this.img.size.height * 0.02);
+            showimage(this.shadow);
+            grestore();
+          }
+        }
+      };
+    } else {
+      image = GenImage(height, color, imagefont, scale);
+    }
+  
+    return(image);
+  }
+  
+  // rudimentary argument processing (getopt is also available)
+  // first argument is height of image
+  double sz = (argc > 1) ? atof(argv[1]) : 270;
+  int shdw = 1;
+  int print = 0;
+  // second argument: if 0/1 turn shadow off/on, otherwise
+  // assume it is a filename for printing.
+  if (argc > 2) {
+    if (argv[2] =~ "^[01]$") {
+      shdw = atoi(argv[2]);
+    } else {
+      print = 1;
+    }
+  }
+  
+  Image yoixlogo = BuildYoixLogoImage(sz, Color.black, (sz >= 72) && shdw);
+  
+  if (print) {
+    Stream output;
+  
+    if ((output = open(argv[2], "w")) != NULL) {
+      encodeImage(yoixlogo, "png", output);
+      close(output);
+    }
+  } else {
+    JFrame jf = {
+      int visible = TRUE;
+      Dimension size = NULL;
+      Array layout = {
+        new JPanel {
+          Dimension preferredsize = {
+            double width = yoixlogo.size.width;
+            double height = yoixlogo.size.height;
+          };
+          Color background = Color.white;
+          Image backgroundimage = yoixlogo;
+          int backgroundhints = SCALE_NONE;
+        },
+      };
+    };
+  }
+ related c java postscript perl unix linux html
+ summary In computer programming, Yoix is a high-level, general-purpose, interpreted, dynamic programming language. The Yoix interpreter is implemented using standard Java technology without any add-on packages and requires only a Sun-compliant JVM to operate. Initially developed by AT&T Labs researchers for internal use, it has been available as free and open source software since late 2000.
+ created 2005
+ backlinksCount 9
+ pageId 2248859
+ revisionCount 89
+ dailyPageViews 9
+ appeared 2000
+
+status historical
+isOpenSource true

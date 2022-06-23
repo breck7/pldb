@@ -1,9 +1,13 @@
+title phel
 appeared 2020
 type pl
 creators Jens Haase
-website https://phel-lang.org/
-github https://github.com/phel-lang/phel-lang
+
 example
   (ns hello-world\boot)
  
   (println "Hello, World!")
+
+githubRepo https://github.com/phel-lang/phel-lang
+
+website https://phel-lang.org/

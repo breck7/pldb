@@ -1,3 +1,52 @@
+title Caltech Intermediate Form
 appeared 1980
 type pl
-wikipedia Caltech_Intermediate_Form
+
+patterns
+ hasCentralPackageRepository? false
+
+wikipedia https://en.wikipedia.org/wiki/Caltech_Intermediate_Form
+ example
+  cifFile ::= (blank* command? semi)* endCommand blank*
+  command ::= primCommand | defDeleteCommand | defStartCommand semi (blank* primCommand? semi)* defFinishCommand
+  primCommand ::= polygonCommand | boxCommand | roundFlashCommand | wireCommand | layerCommand | callCommand | userExtensionCommand | commentCommand
+  polygonCommand ::= "P" path
+  boxCommand ::= "B" integer sep integer sep point (sep point)?
+  roundFlashCommand ::= "R" integer sep point
+  wireCommand ::= "W" integer sep path
+  layerCommand ::= "L" blank* shortname
+  defStartCommand ::= "D" blank* "S" integer (sep integer sep integer)?
+  defFinishCommand ::= "D" blank* "F"
+  defDeleteCommand ::= "D" blank* "D" integer
+  callCommand ::= "C" integer transformation
+  userExtensionCommand ::= digit userText
+  commentCommand ::= "(" commentText ")"
+  endCommand ::= "E"
+  transformation ::= (blank* ("T" point |"M" blank* "X" |"M" blank* "Y" |"R" point)*)*
+  path ::= point (sep point)*
+  point ::= sInteger sep sInteger
+  sInteger ::= sep* "-"? integerD
+  integer ::= sep* integerD
+  integerD ::= digit+
+  shortname ::= c c? c? c?
+  c ::= digit | upperChar
+  userText ::= userChar*
+  commentText ::= commentChar* | commentText "(" commentText ")" commentText
+  semi ::= blank* ";" blank*
+  sep ::= upperChar | blank
+  digit ::= "0" | "1" | ... | "9"
+  upperChar ::= "A" | "B" | ... | "Z"
+  blank ::= any ASCII character except digit, upperChar, "-", "(", ")", or ";"
+  userChar ::= any ASCII character except ";"
+  commentChar ::= any ASCII character except "(" or ")"
+ summary Caltech Intermediate Form (CIF) is a file format for describing integrated circuits. CIF provides a limited set of graphics primitives that are useful for describing the two-dimensional shapes on the different layers of a chip. The format allows hierarchical description, which makes the representation concise. In addition, it is a terse but human-readable text format.
+ created 2006
+ backlinksCount 8
+ pageId 4558978
+ revisionCount 36
+ dailyPageViews 10
+ appeared 1980
+
+status historical
+
+hopl 890

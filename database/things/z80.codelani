@@ -1,5 +1,7 @@
+title z80
 appeared 1976
 type assembly
+
 example
   ; memcpy --
   ; Copy a block of memory from one location to another.
@@ -24,4 +26,12 @@ example
               dec     bc          ;Decrement BC
               jp      loop        ;Repeat the loop
               end
+
+patterns
+ hasCentralPackageRepository? false
+
 reference https://en.wikipedia.org/wiki/Zilog_Z80#Z80_assembly_language
+status historical
+fileType text
+
+codeMirror z80

@@ -1,5 +1,22 @@
+title NeXML format
 appeared 2007
 type xmlFormat
+
+patterns
+ hasCentralPackageRepository? false
+
+wikipedia https://en.wikipedia.org/wiki/NeXML_format
+ related nexus-format xml
+ summary NeXML is an exchange standard for representing phyloinformatic data. It was inspired by the widely used Nexus file format but uses XML to produce a more robust format for rich phylogenetic data. Advantages include syntax validation, semantic annotation, and web services. The format is broadly supported and has libraries in many popular programming languages for bioinformatics.
+ pageId 48720906
+ created 2015
+ backlinksCount 4
+ revisionCount 17
+ dailyPageViews 2
+
+githubRepo https://github.com/nexml
+
 website http://nexml.org/
-github https://github.com/nexml
-wikipedia NeXML_format
+status active
+fileType text
+isOpenSource true

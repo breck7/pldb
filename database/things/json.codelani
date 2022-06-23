@@ -1,6 +1,65 @@
+title JSON
 appeared 2001
 type metaLanguage
 creators Douglas Crockford
+
+patterns
+ canWriteToDisk? false
+ hasBooleans? true
+  false
+ hasCentralPackageRepository? false
+ hasComments? false
+ hasBlockComments? false
+ hasFloats? true
+  2.3
+ hasImports? false
+ hasIntegers? true
+  2
+ hasMultilineStrings? false
+ hasStrings? true
+  "hello world"
+
+wikipedia https://en.wikipedia.org/wiki/JSON
+ example
+  var y = {a: undefined};
+   var ys = JSON.stringify(y,
+    function (k, v){return (v === undefined) ? "UNDEFINED" : v});
+ related javascript xml java http unicode utf-8 ecmascript soap yaml csv protobuf gzip xpath css hocon s-expressions geojson
+ summary In computing, JavaScript Object Notation or JSON ( JAY-sən), is an open-standard file format that uses human-readable text to transmit data objects consisting of attribute–value pairs and array data types (or any other serializable value). It is a very common data format used for asynchronous browser–server communication, including as a replacement for XML in some AJAX-style systems. JSON is a language-independent data format. It was derived from JavaScript, but as of 2017 many programming languages include code to generate and parse JSON-format data. The official Internet media type for JSON is application/json. JSON filenames use the extension .json. Douglas Crockford originally specified the JSON format in the early 2000s; two competing standards, RFC 7159 and ECMA-404, defined it in 2013. The ECMA standard describes only the allowed syntax, whereas the RFC covers some security and interoperability considerations. A restricted profile of JSON, known as I-JSON (short for "Internet JSON"), seeks to overcome some of the interoperability problems with JSON. It is defined in RFC 7493..
+ pageId 1575082
+ dailyPageViews 3994
+ created 2005
+ backlinksCount 1329
+ revisionCount 2473
+ appeared 2013
+
+githubLanguage JSON
+ fileExtensions json avsc geojson gltf JSON-tmLanguage jsonl tfstate tfstatebackup topojson webapp webmanifest yy yyp
+ trendingProjectsCount 0
+
+linguistGrammarRepo https://github.com/textmate/json.tmbundle
+ firstCommit 2007
+ lastCommit 2016
+ committerCount 11
+ commitCount 21
+ sampleCount 14
+ example
+  {
+          "id": 1,
+          "name": "Foo",
+          "price": 123,
+          "tags": ["Bar","Eek"],
+          "stock": { "warehouse":300, "retail":20 }
+  }
+
 website https://www.json.org/
-wikipedia JSON
 reference https://twobithistory.org/2017/09/21/the-rise-and-rise-of-json.html
+status active
+fileType text
+linkedInSkill json
+ peopleWithThisSkillCount 335550
+
+antlr https://github.com/antlr/grammars-v4/tree/master/json
+
+indeedJobs json developer
+ 2017 5872

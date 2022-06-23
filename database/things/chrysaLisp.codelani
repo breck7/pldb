@@ -1,5 +1,6 @@
+title chrysaLisp
 type pl
-github https://github.com/vygr/ChrysaLisp
+
 example
  ;imports
  (import 'sys/lisp.inc)
@@ -73,3 +74,5 @@ example
      (t (view-event window msg))))
  
  (view-hide window)
+
+githubRepo https://github.com/vygr/ChrysaLisp

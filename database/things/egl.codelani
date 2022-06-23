@@ -1,3 +1,54 @@
+title Enterprise Generation Language
 appeared 2008
 type pl
-wikipedia EGL_(programming_language)
+
+patterns
+ hasCentralPackageRepository? false
+
+wikipedia https://en.wikipedia.org/wiki/EGL_(programming_language)
+ example
+  1 package com.mycompany.ui;
+   2 
+   3 import com.mycompany.services.Employee;
+   4 import com.mycompany.services.EmployeeService;
+   5 import dojo.widgets.DojoGrid;
+   6 import dojo.widgets.DojoGridColumn;
+   7 
+   8 handler EmployeeView type RUIhandler { initialUI = [ grid ], 
+   9                                        onConstructionFunction = start, 
+  10                                        cssFile = "main.css" }
+  11 
+  12     grid DojoGrid { behaviors = [ ], headerBehaviors = [ ], columns = [
+  13                     new DojoGridColumn { displayName = "First Name", name = "FIRSTNAME" },
+  14                     new DojoGridColumn { displayName = "Last Name", name = "LASTNAME" },
+  15                     new DojoGridColumn { displayName = "Salary", name = "SALARY" }
+  16             ] };
+  17 
+  18     function start()
+  19         svc EmployeeService { };
+  20         call svc.getEmployees () returning to displayEmployees;
+  21     end
+  22 
+  23     function displayEmployees(retResult Employee [ ] in)
+  24         grid.data = retResult as any [ ];
+  25     end
+  26     
+  27 end
+ related java cobol c uml javascript jvm linux systemz soap ibm-rpg
+ summary EGL (Enterprise Generation Language), originally developed by IBM and now available as the EDT (EGL Development Tools) Open Source project under the Eclipse Public License (EPL), is a programming technology designed to meet the challenges of modern, multi-platform application development by providing a common language and programming model across languages, frameworks, and runtime platforms. The language borrows concepts familiar to anyone using statically typed languages like Java, COBOL, C, etc. However, it borrows the concept of stereotype from Unified Modeling Language (UML) that is not typically found in statically typed programming languages. In a nutshell, EGL is a higher-level, universal application development language. EGL is similar in syntax to other common languages so it can be learned by application developers with similar previous programming background. EGL application development abstractions shield programmers from the technical interfaces of systems and middleware allowing them to focus on building business functionality. EGL applications and services are written, tested and debugged at the EGL source level, and once they are satisfactorily functionally tested they can be compiled into COBOL, Java, or JavaScript code to support deployment of business applications that can run in any of the following environments: Platforms with a Java virtual machine, such as Microsoft Windows, Linux, and UNIX, for example in the context of a Java EE servlet container (IBM WebSphere Application Server, Apache Tomcat, GlassFish) IBM System z: CICS Transaction Server, IMS, z/OS Batch, UNIX System Services, WebSphere Application Server, z/VSE, Linux IBM System i: IBM i5/OS, IBM WebSphere Application Server, Apache Tomcat, Integrated Web Application Server for i Web browsers supporting JavaScript, such as Internet Explorer, Firefox, and Safari, for Ajax rich web applications
+ pageId 1205107
+ dailyPageViews 26
+ created 2004
+ backlinksCount 14
+ revisionCount 104
+ appeared 2008
+
+standsFor Enterprise Generation Language
+status active
+fileType text
+
+tiobe EGL
+
+hopl 7930
+
+rosettaCode EGL

@@ -1,5 +1,6 @@
+title Web Coverage Processing Service
 type pl
-wikipedia Web_Coverage_Processing_Service
+
 example
  for $c in ( M1, M2, M3 ),
      $r in ( R )
@@ -7,3 +8,10 @@ example
      some( $c.nir > 127 and $r )
  return
      encode( abs( $c.red - $c.nir ), "hdf5" )
+
+wikipedia https://en.wikipedia.org/wiki/Web_Coverage_Processing_Service
+ summary The Web Coverage Processing Service (WCPS) defines a language for filtering and processing of multi-dimensional raster coverages, such as sensor, simulation, image, and statistics data. The Web Coverage Processing Service is maintained by the Open Geospatial Consortium (OGC). This raster query language allows clients to obtain original coverage data, or derived information, in a platform-neutral manner over the Web.
+ backlinksCount 28
+ pageId 36426647
+ dailyPageViews 5
+ appeared 2008

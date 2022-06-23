@@ -1,3 +1,20 @@
+title Chomski
 appeared 2007
 type pl
-wikipedia Chomski
+
+patterns
+ hasCentralPackageRepository? false
+
+wikipedia https://en.wikipedia.org/wiki/Chomski
+ example
+  cat inputFileName | chomski -s '[-n]{plus;} <>{count;print;}'
+ related sed unix grep unicode c
+ summary chomski virtual machine  (named after the noted linguist Noam Chomsky) and pp (the pattern parser) refer to both a command line computer language and utility (interpreter for that language) which can be used to parse and transform text patterns. The utility reads input files character by character (sequentially), applying the operation which has been specified via the command line or a pp script, and then outputs the line. It was developed from 2006 as a Unix and Windows utility, and is available today for Windows and Linux systems. Pp has derived a number of ideas and syntax elements from Sed, a command line text stream editor.
+ created 2008
+ backlinksCount 9
+ pageId 18718048
+ revisionCount 54
+ dailyPageViews 12
+ appeared 2007
+
+status historical

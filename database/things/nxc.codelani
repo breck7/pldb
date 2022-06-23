@@ -1,3 +1,26 @@
+title Not eXactly C
 appeared 2006
 type pl
-wikipedia Not_eXactly_C
+
+patterns
+ hasCentralPackageRepository? false
+
+wikipedia https://en.wikipedia.org/wiki/Not_eXactly_C
+ example
+  task main() //sets a new task. main() is compulsory
+   {
+        OnFwd(OUT_BC,75); //ask the motors connected to ports B and C to move forward at a power of 75.
+        Wait(5000); //wait for 5 seconds [the value is in milliseconds](note that 1000 = 1 second)
+        Off(OUT_BC); //off the motors connected to ports B and C
+   }
+ related assembly-language c nqc
+ summary Not eXactly C, or NXC, is a high-level programming language for the Lego Mindstorms NXT designed by John Hansen in 2006. NXC, which is short for Not eXactly C, is based on Next Byte Codes, an assembly language. NXC has a syntax like C. The IDE for NXC is the Bricx Command Center. The NXC compiler is available under the Mozilla Public License. A sample code is as shown below:
+ pageId 16826148
+ created 2008
+ backlinksCount 13
+ revisionCount 50
+ dailyPageViews 21
+ appeared 2006
+
+status historical
+fileType text

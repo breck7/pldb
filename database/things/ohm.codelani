@@ -1,3 +1,23 @@
+title ohm
 appeared 2014
 type grammarLanguage
-github https://github.com/harc/ohm
+
+patterns
+ hasCentralPackageRepository? false
+
+githubRepo https://github.com/harc/ohm
+ stars 2073
+ forks 115
+ subscribers 82
+ created 2015
+ updated 2018
+ firstCommit 2014
+ description A library and language for building parsers, interpreters, compilers, etc.
+ issues 48
+
+status active
+
+tryItOnline ohm
+
+fileType text
+isOpenSource true

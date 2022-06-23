@@ -1,4 +1,71 @@
+title Mathematica
 appeared 1988
 type pl
+
+patterns
+ hasCentralPackageRepository? true
+
+wikipedia https://en.wikipedia.org/wiki/Mathematica
+ related wolfram linux c java modelica sql fortran cuda opencl http eclipse-editor visual-studio-editor haskell applescript racket visual-basic python clojure excel-app matlab sagemath mongodb wsdl labview
+ summary Wolfram Mathematica (usually termed Mathematica) is a modern technical computing system spanning most areas of technical computing — including neural networks, machine learning, image processing, geometry, data science, visualizations, and others. The system is used in many technical, scientific, engineering, mathematical, and computing fields. It was conceived by Stephen Wolfram and is developed by Wolfram Research of Champaign, Illinois. The Wolfram Language is the programming language used in Mathematica.
+ pageId 49024
+ dailyPageViews 228
+ created 2016
+ backlinksCount 256
+ revisionCount 5
+ appeared 1988
+
+githubLanguage Mathematica
+ fileExtensions mathematica cdf m ma mt nb nbp wl wlt
+ trendingProjects
+  author name avatar url language languageColor stars forks currentPeriodStars description
+  Autodesk maya-usd https://github.com/Autodesk.png https://github.com/Autodesk/maya-usd Mathematica #ccc 97 16 43 "A common USD (Universal Scene Description) plugin for Autodesk Maya"
+ trendingProjectsCount 2
+
+helloWorldCollection Mathematica
+ (* Hello World in Mathematica *)
+ 
+ Hello[] := Print["Hello, World!"]
+ 
+
+linguistGrammarRepo https://github.com/shadanan/mathematica-tmbundle
+ firstCommit 2008
+ lastCommit 2018
+ committerCount 6
+ commitCount 157
+ sampleCount 12
+ example
+  Test[1 + 2, 3, TestID -> "One plus two"]
+  
+
 website http://www.wolfram.com/mathematica
-wikipedia Mathematica
+aka Wolfram Language
+status active
+
+tryItOnline mathematica
+
+country US
+fileType text
+isOpenSource false
+
+meetup mathematica
+ memberCount 1678
+ groupCount 11
+
+linkedInSkill mathematica
+ peopleWithThisSkillCount 146330
+
+projectEuler Mathematica
+ memberCount
+  2019 1664
+  2022 1757
+
+hopl 1410
+
+codeMirror mathematica
+
+rosettaCode Mathematica
+
+corporateDevelopers Wolfram Research
+indeedJobs mathematica engineer
+ 2017 90

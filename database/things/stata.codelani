@@ -1,5 +1,78 @@
+title Stata
 appeared 1985
 type pl
+
+patterns
+ hasCentralPackageRepository? true
+ hasComments? true
+
+wikipedia https://en.wikipedia.org/wiki/Stata
+ example
+  program define fizzbuzz
+  	args x
+  	forvalues i = 1(1)`x' {
+  		if mod(`i',15) == 0 {
+  			display "fizzbuzz"
+  		}
+  		else if mod(`i',5) == 0 {
+  			display "buzz"
+  		}
+  		else if mod(`i',3) == 0 {
+  			display "fizz"
+  		}
+  		else {
+  		display `i'
+  		}
+  	}
+  end
+ related c linux ascii excel-app
+ summary Stata is a general-purpose statistical software package created in 1985 by StataCorp. Most of its users work in research, especially in the fields of economics, sociology, political science, biomedicine and epidemiology. Stata's capabilities include data management, statistical analysis, graphics, simulations, regression, and custom programming. It also has a system to disseminate user-written programs that lets it grow continuously. The name Stata is a syllabic abbreviation of the words statistics and data. The FAQ for the official forum of Stata insists that the correct English pronunciation of Stata "must remain a mystery"; any of "Stay-ta", "Sta-ta" or "Stah-ta" are considered acceptable. There are four major builds of each version of Stata: Stata/MP for multiprocessor computers (including dual-core and multicore processors) Stata/SE for large databases Stata/IC, which is the standard version Numerics by Stata, supports any of the data sizes listed above in an embedded environment Small Stata, which was the smaller, student version for educational purchase only is no longer available.
+ pageId 1809002
+ dailyPageViews 319
+ created 2005
+ backlinksCount 246
+ revisionCount 370
+ appeared 1985
+
+githubLanguage Stata
+ fileExtensions do ado doh ihlp mata matah sthlp
+ trendingProjectsCount 0
+
+helloWorldCollection Stata
+ /* Hello world in Stata */
+ 
+  .program hello
+   1. display "Hello, World!"
+   2. end
+ .hello
+ 
+
+linguistGrammarRepo https://github.com/pschumm/Stata.tmbundle
+ firstCommit 2009
+ lastCommit 2015
+ committerCount 3
+ commitCount 44
+ sampleCount 7
+ example
+  local MAXDIM   800
+  
+
 website https://www.stata.com/
-wikipedia Stata
 reference http://www.haghish.com/statistics/stata-blog/stata-programming/ssc_stata_package_list.php
+status active
+
+twitter stata
+
+fileType text
+isOpenSource false
+
+tiobe Stata
+
+projectEuler Stata
+ memberCount
+  2019 14
+  2022 16
+
+rosettaCode Stata
+
+corporateDevelopers StataCorp

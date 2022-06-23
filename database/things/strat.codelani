@@ -1,10 +1,21 @@
+title strat
 appeared 2018
 type pl
-website https://strat.world/
-github https://github.com/stratworld/strat
+
 example
  service HelloWorld {
   include "Birth"
  
   Birth -> "Hello World!"
  }
+
+githubRepo https://github.com/stratworld/strat
+ firstCommit 2018
+ stars 8
+ subscribers 3
+ created 2018
+ updated 2019
+ description A language to represent and deploy portable cloud systems ->
+
+website https://strat.world/
+status active

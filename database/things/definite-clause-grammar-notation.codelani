@@ -1,5 +1,6 @@
+title Definite clause grammar
 type grammarLanguage
-wikipedia Definite_clause_grammar
+
 example
  sentence --> noun_phrase, verb_phrase.
  noun_phrase --> det, noun.
@@ -9,3 +10,5 @@ example
  noun --> [cat].
  noun --> [bat].
  verb --> [eats].
+
+wikipedia https://en.wikipedia.org/wiki/Definite_clause_grammar

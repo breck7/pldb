@@ -1,4 +1,29 @@
+title Nord Programming Language
 appeared 1974
 type pl
-wikipedia Nord_Programming_Language
+
+patterns
+ hasCentralPackageRepository? false
+
+wikipedia https://en.wikipedia.org/wiki/Nord_Programming_Language
+ example
+  FUNC FUN1, FUN2
+  
+  FUN1: T := 1
+  FUN2:
+  
+  code here
+  
+  END
+ summary Nord Programming Language, commonly abbreviated NPL, was a programming language by the Norwegian minicomputer manufacturer Norsk Data. It shipped as a standard component of the operating system SINTRAN III. The language was also used to implement SINTRAN III. I.e. the core and file system of SINTRAN III was written in NPL. The NPL compiler was also written in NPL and some core applications was early on written in NPL until PLANC came and linker and other software was rewritten in PLANC. The NPL compiler was also special in that it did not produce object code as most compilers do. Instead it produced assembler code which then had to be assembled using the Norsk Data Assembler. The registers of the CPU were available in NPL as predefined variables. Thus you could write:  X + T =: A  and the compiler would generate:  COPY SX DA RADD ST DA  Functions could be declared with multiple entry points:  FUNC FUN1, FUN2  FUN1: T := 1 FUN2:  code here  END  FUN1 could be called to set T to 1 before falling into FUN2 or T could be set to something else and call FUN2. If T register specified which file handle to write to then either FUN1 could be called to always output to terminal or T could be specified to handle a file itself in T and call FUN2 to output to that file.
+ pageId 8295240
+ created 2006
+ backlinksCount 28
+ revisionCount 21
+ dailyPageViews 3
+ appeared 2006
+
 reference http://gunkies.org/wiki/NORD_PL
+status historical
+country NO
+fileType text

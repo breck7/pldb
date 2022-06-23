@@ -1,4 +1,20 @@
+title Cadence SKILL
 appeared 1990
 type pl
-wikipedia Cadence_SKILL
+
+patterns
+ hasCentralPackageRepository? false
+
+wikipedia https://en.wikipedia.org/wiki/Cadence_SKILL
+ related scheme common-lisp lisp
+ summary SKILL is a Lisp dialect used as a scripting language and PCell (parameterized cells) description language used in many EDA software suites by Cadence Design Systems. It was originally put forth in an IEEE paper in 1990.
+ created 2006
+ backlinksCount 53
+ pageId 6693612
+ revisionCount 133
+ dailyPageViews 34
+ appeared 1990
+
 reference http://pwp.gatech.edu/wp-content/uploads/sites/367/2016/03/Intro_to_skill_prog.pdf
+aka SKILL
+status historical

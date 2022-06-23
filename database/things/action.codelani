@@ -1,3 +1,59 @@
+title Action! programming language
 appeared 1983
 type pl
-wikipedia Action!_(programming_language)
+
+patterns
+ hasCentralPackageRepository? false
+ hasConstructors? true
+
+wikipedia https://en.wikipedia.org/wiki/Action!_(programming_language)
+ example
+  BYTE RTCLOK=20, ; addr of sys timer
+       SDMCTL=559 ; DMA control
+  
+  BYTE ARRAY FLAGS(8190)
+  
+  CARD COUNT,I,K,PRIME,TIME
+  
+  PROC SIEVE()
+  
+    SDMCTL=0 ; shut off Antic
+    RTCLOK=0 ; only one timer needed
+  
+    COUNT=0         ; init count
+    FOR I=0 TO 8190 ; and flags
+      DO
+      FLAGS(I)='T ; "'T" is a compiler-provided constant for True
+      OD
+  
+    FOR I=0 TO 8190 ; and flags
+      DO
+      IF FLAGS(I)='T THEN
+        PRIME=I+I+3
+        K=I+PRIME
+        WHILE K<=8190
+          DO
+          FLAGS(K)='F ; "'F" is a compiler-provided constant for False
+          K==+PRIME
+          OD
+        COUNT==+1
+      FI
+      OD
+    TIME=RTCLOK ; get timer reading
+    SDMCTL=34   ; restore screen
+  
+    PRINTF("%E %U PRIMES IN",COUNT)
+    PRINTF("%E %U JIFFIES",TIME)
+  RETURN
+ related optimized-systems-software algol-68 atari-basic
+ summary Action! is a procedural programming language similar to ALGOL 68 that is intended to produce high-performance programs for the Atari 8-bit family. The language was written by Clinton Parker and distributed on ROM cartridge by Optimized Systems Software starting in 1983. Action! was used to develop at least two commercial products—the Homepak productivity suite and Games Computers Play client program—and numerous programs in ANALOG Computing and Antic magazines. The system was not ported to any other platforms. Parker had previously developed Micro-SPL with Henry Baker, a similar programming language for the Xerox Alto. The 6502 assembly language source code for Action! was made available under the GNU General Public License by the author in 2015.
+ pageId 1273369
+ created 2004
+ backlinksCount 14
+ revisionCount 181
+ dailyPageViews 15
+ appeared 1983
+
+status historical
+fileType text
+wordRank 473

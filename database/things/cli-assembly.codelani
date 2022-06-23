@@ -1,3 +1,29 @@
+title Assembly CLI
 appeared 2005
 type library
-wikipedia Assembly_(CLI)
+
+patterns
+ hasCentralPackageRepository? false
+
+wikipedia https://en.wikipedia.org/wiki/Assembly_(CLI)
+ example
+  .method private hidebysig static void  Main(string[] args) cil managed {
+    .entrypoint
+    .custom instance void [mscorlib]System.STAThreadAttribute::.ctor() = ( 01 00 00 00 )
+    // Code size       11 (0xb)
+    .maxstack  1
+    IL_0000:  ldstr      "Hello World"
+    IL_0005:  call       void [mscorlib]System.Console::WriteLine(string)
+    IL_000a:  ret } // end of method Class1::Main
+ related cil visual-studio-editor fat ntfs
+ summary Defined by Microsoft for use in recent versions of Windows, an assembly in the Common Language Infrastructure (CLI) is a compiled code library used for deployment, versioning, and security. There are two types: process assemblies (EXE) and library assemblies (DLL). A process assembly represents a process that will use classes defined in library assemblies. CLI assemblies contain code in CIL, which is usually generated from a CLI language, and then compiled into machine language at run time by the just-in-time compiler. In the .NET Framework implementation, this compiler is part of the Common Language Runtime (CLR). An assembly can consist of one or more files. Code files are called modules. An assembly can contain more than one code module. And since it is possible to use different languages to create code modules, it is technically possible to use several different languages to create an assembly. Visual Studio however does not support using different languages in one assembly.
+ pageId 2016154
+ dailyPageViews 44
+ created 2005
+ backlinksCount 101
+ revisionCount 409
+ appeared 2008
+
+aka cli
+status historical
+fileType text

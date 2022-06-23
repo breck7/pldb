@@ -1,0 +1,5 @@
+ubuntuPackageNode
+ extends abstractOneWordGuidNode
+ description The name of an Ubuntu package for the language from https://packages.ubuntu.com/.
+ string sourceDomain ubuntu.com
+ crux ubuntuPackage

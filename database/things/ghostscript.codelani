@@ -1,3 +1,20 @@
+title Ghostscript
 appeared 1988
 type pl
-wikipedia Ghostscript
+
+patterns
+ hasCentralPackageRepository? false
+
+wikipedia https://en.wikipedia.org/wiki/Ghostscript
+ related c postscript pdf
+ summary Ghostscript is a suite of software based on an interpreter for Adobe Systems' PostScript and Portable Document Format (PDF) page description languages. Its main purposes are the rasterization or rendering of such page description language files, for the display or printing of document pages, and the conversion between PostScript and PDF files.
+ backlinksCount 242
+ pageId 61619
+ dailyPageViews 212
+ created 2002
+ appeared 1988
+
+status historical
+isOpenSource true
+
+hopl 7773

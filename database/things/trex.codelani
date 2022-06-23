@@ -1,7 +1,8 @@
+title Tree Regular Expressions for XML
 appeared 2001
 type grammarLanguage
 creators James Clark
-website http://www.thaiopensource.com/trex/
+
 example
  <element name="addressBook">
    <zeroOrMore>
@@ -15,4 +16,8 @@ example
      </element>
    </zeroOrMore>
  </element>
+
 description TREX is a new language for validating XML documents. A TREX pattern specifies a pattern for the structure and content of an XML document. A TREX pattern thus identifies a class of XML documents consisting of those documents that match the pattern. A TREX pattern is itself an XML document.
+website http://www.thaiopensource.com/trex/
+standsFor Tree Regular Expressions for XML
+related dtd

@@ -1,2 +1,11 @@
+title rust-hir
 appeared 2015
 type ir
+
+patterns
+ hasCentralPackageRepository? false
+
+status historical
+firstAnnouncement https://github.com/rust-lang/rfcs/blob/master/text/1191-hir.md
+fileType text
+announcementMethod rfc

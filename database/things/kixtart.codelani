@@ -1,4 +1,34 @@
+title KiXtart
 appeared 1991
 type pl
+
+patterns
+ hasCentralPackageRepository? false
+
+wikipedia https://en.wikipedia.org/wiki/KiXtart
+ example
+  ; Read value from registry
+  $ProductID = ReadValue("HKEY_LOCAL_MACHINE\Software\Microsoft\Windows NT\CurrentVersion","ProductId")
+  
+  ; Display result or error message
+  If @ERROR = 0
+      ? "ProductID=$ProductID"
+  Else
+      ? "Error reading product ID"
+  Endif
+  ?
+  
+  ; Done
+  Exit @ERROR
+ related isbn fasttrack-scripting-host autoit
+ summary KiXtart is a closed source free-format scripting language for Windows. It is described as a logon script processor and enhanced batch scripting language by the official website. Its name is a portmanteau of "kick start".
+ pageId 1370630
+ created 2005
+ backlinksCount 21
+ revisionCount 70
+ dailyPageViews 27
+ appeared 1991
+
 website http://www.kixtart.org/
-wikipedia KiXtart
+status historical
+fileType text

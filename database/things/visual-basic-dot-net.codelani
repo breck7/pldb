@@ -1,4 +1,55 @@
+title Visual Basic .NET
 appeared 2001
 type pl
+
+patterns
+ hasCentralPackageRepository? true
+ hasConstructors? true
+ hasOperatorOverloading? true
+
+wikipedia https://en.wikipedia.org/wiki/Visual_Basic_.NET
+ example
+  System.WindowsApplication1.Forms.Form2.text = " MainForm "
+ related android linux solaris unix microsoft-small-basic visual-basic f-sharp csharp linq vba
+ summary Visual Basic .NET (VB.NET) is a multi-paradigm, object-oriented programming language, implemented on the .NET Framework. Microsoft launched VB.NET in 2002 as the successor to its original Visual Basic language. Although the ".NET" portion of the name was dropped in 2005, this article uses "Visual Basic [.NET]" to refer to all Visual Basic languages released since 2002, in order to distinguish between them and the classic Visual Basic. Along with Visual C#, it is one of the two main languages targeting the .NET framework. Microsoft's integrated development environment (IDE) for developing in Visual Basic .NET language is Visual Studio. Most Visual Studio editions are commercial; the only exceptions are Visual Studio Express and Visual Studio Community, which are freeware. In addition, the .NET Framework SDK includes a freeware command-line compiler called vbc.exe. Mono also includes a command-line VB.NET compiler.
+ pageId 208996
+ dailyPageViews 894
+ created 2003
+ backlinksCount 1207
+ revisionCount 1867
+ appeared 2002
+ fileExtensions vb
+
+githubLanguage Visual Basic
+ fileExtensions vb bas cls frm frx vba vbhtml vbs
+ trendingProjects
+  author name avatar url language languageColor stars forks currentPeriodStars description
+  frk1 hazedumper https://github.com/frk1.png https://github.com/frk1/hazedumper "Visual Basic" #945db7 422 239 15 "up to date csgo offsets and hazedumper config"
+  mymmsc books https://github.com/mymmsc.png https://github.com/mymmsc/books "Visual Basic" #945db7 926 481 31 常用书籍
+ trendingProjectsCount 3
+
+linguistGrammarRepo https://github.com/peters-ben-0007/VBDotNetSyntax
+ sampleCount 4
+ example
+  ﻿Module Module1
+  
+    Sub Main()
+      Console.Out.WriteLine("Hello, I am a little sample application to test GitHub's Linguist module.")
+      Console.Out.WriteLine("I also include a Razor MVC file just to prove it handles cshtml files now.")
+    End Sub
+  
+  End Module
+  
+
 website https://docs.microsoft.com/dotnet/visual-basic/
-wikipedia Visual_Basic_.NET
+aka vb.net VisualBasic.NET
+status active
+fileExtensions vb
+fileType text
+
+tiobe Visual Basic .NET
+ currentRank 7
+
+hopl 3724
+
+corporateDevelopers Microsoft

@@ -1,3 +1,33 @@
+title Keyhole Markup Language
 appeared 2007
 type xmlFormat
-wikipedia Keyhole_Markup_Language
+
+patterns
+ hasCentralPackageRepository? false
+
+wikipedia https://en.wikipedia.org/wiki/Keyhole_Markup_Language
+ example
+  <?xml version="1.0" encoding="UTF-8"?>
+  <kml xmlns="http://www.opengis.net/kml/2.2">
+  <Document>
+  <Placemark>
+    <name>New York City</name>
+    <description>New York City</description>
+    <Point>
+      <coordinates>-74.006393,40.714172,0</coordinates>
+    </Point>
+  </Placemark>
+  </Document>
+  </kml>
+ related xml geo-ml collada
+ summary Keyhole Markup Language (KML) is an XML notation for expressing geographic annotation and visualization within Internet-based, two-dimensional maps and three-dimensional Earth browsers. KML was developed for use with Google Earth, which was originally named Keyhole Earth Viewer. It was created by Keyhole, Inc, which was acquired by Google in 2004. KML became an international standard of the Open Geospatial Consortium in 2008. Google Earth was the first program able to view and graphically edit KML files. Other projects such as Marble have also started to develop KML support.
+ pageId 2139847
+ dailyPageViews 284
+ created 2005
+ backlinksCount 25456
+ revisionCount 364
+ appeared 2004
+
+standsFor Keyhole Markup Language
+status historical
+fileType text

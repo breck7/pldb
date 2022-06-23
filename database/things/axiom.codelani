@@ -1,4 +1,22 @@
+title AXIOM
 appeared 1992
 type pl
-wikipedia Axiom
+
+patterns
+ hasCentralPackageRepository? false
+
+wikipedia https://en.wikipedia.org/wiki/Axiom
+ related mathematical-notation
+ summary An axiom or postulate is a statement that is taken to be true, to serve as a premise or starting point for further reasoning and arguments. The word comes from the Greek axíōma (ἀξίωμα) 'that which is thought worthy or fit' or 'that which commends itself as evident.'The term has subtle differences in definition when used in the context of different fields of study. As defined in classic philosophy, an axiom is a statement that is so evident or well-established, that it is accepted without controversy or question. As used in modern logic, an axiom is a premise or starting point for reasoning.As used in mathematics, the term axiom is used in two related but distinguishable senses: "logical axioms" and "non-logical axioms". Logical axioms are usually statements that are taken to be true within the system of logic they define (e.g., (A and B) implies A), often shown in symbolic form, while non-logical axioms (e.g., a + b = b + a) are actually substantive assertions about the elements of the domain of a specific mathematical theory (such as arithmetic). When used in the latter sense, "axiom", "postulate", and "assumption" may be used interchangeably. In general, a non-logical axiom is not a self-evident truth, but rather a formal logical expression used in deduction to build a mathematical theory.  To axiomatize a system of knowledge is to show that its claims can be derived from a small, well-understood set of sentences (the axioms). There are typically multiple ways to axiomatize a given mathematical domain. Any axiom is a statement that serves as a starting point from which other statements are logically derived.  Whether it is meaningful (and, if so, what it means) for an axiom to be "true" is a subject of debate in the philosophy of mathematics.
+ backlinksCount 1197
+ pageId 928
+ dailyPageViews 994
+ created 2001
+ appeared 1964
+
 reference https://semanticscholar.org/paper/5aa0cc98cc623c61d77cd900dbacc21d921152a3
+status historical
+
+hopl 1673
+
+rosettaCode Axiom

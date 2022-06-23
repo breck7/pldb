@@ -1,4 +1,90 @@
+title Scheme
 appeared 1970
 type pl
+
+patterns
+ isLisp? true
+ hasCentralPackageRepository? false
+ hasComments? true
+ hasMacros? true
+  https://en.wikibooks.org/wiki/Scheme_Programming/Macros
+ hasPrefixNotation? true
+  (+ 1 2 3)
+
+wikipedia https://en.wikipedia.org/wiki/Scheme_(programming_language)
+ example
+  (set! +
+        (let ((original+ +))
+          (lambda args
+            (if (and (not (null? args)) (string? (car args)))
+                (apply string-append args)
+                (apply original+ args)))))
+  (+ 1 2 3)
+  ===> 6
+  (+ "1" "2" "3")
+  ===> "123"
+ related t lisp algol clojure common-lisp dylan eulisp haskell javascript julia lua r s racket ruby rust scala planner ikarus larceny unicode s-expressions fortran c guile emacs-lisp android
+ summary Scheme is a functional programming language and one of the two main dialects of the programming language Lisp. Unlike Common Lisp, the other main dialect, Scheme follows a minimalist design philosophy specifying a small standard core with powerful tools for language extension. Scheme was created during the 1970s at the MIT AI Lab and released by its developers, Guy L. Steele and Gerald Jay Sussman, via a series of memos now known as the Lambda Papers. It was the first dialect of Lisp to choose lexical scope and the first to require implementations to perform tail-call optimization, giving stronger support for functional programming and associated techniques such as recursive algorithms. It was also one of the first programming languages to support first-class continuations. It had a significant influence on the effort that led to the development of Common Lisp. The Scheme language is standardized in the official IEEE standard and a de facto standard called the Revisedn Report on the Algorithmic Language Scheme (RnRS). The most widely implemented standard is R5RS (1998); a new standard, R6RS, was ratified in 2007. Scheme has a diverse user base due to its compactness and elegance, but its minimalist philosophy has also caused wide divergence between practical implementations, so much that the Scheme Steering Committee calls it "the world's most unportable programming language" and "a family of dialects" rather than a single language.
+ pageId 28119
+ dailyPageViews 705
+ created 2001
+ backlinksCount 929
+ revisionCount 1710
+ appeared 1970
+ fileExtensions scm   ss
+
+githubLanguage Scheme
+ fileExtensions scm sch sld sls sps ss
+ trendingProjectsCount 0
+
+helloWorldCollection Scheme
+ ; Hello World in Scheme
+ 
+ (display "Hello, world!")
+ (newline)
+
+linguistGrammarRepo https://github.com/textmate/scheme.tmbundle
+ firstCommit 2006
+ lastCommit 2014
+ committerCount 10
+ commitCount 42
+ sampleCount 4
+ example
+  (define-library (libs basic)
+      (export list2 x)
+      (begin
+          (define (list2 . objs)  objs)
+          (define x 'libs-basic)
+          (define not-exported 'should-not-be-exported)
+          ))
+  
+
 website http://www.scheme-reports.org/
-wikipedia Scheme_(programming_language)
+status active
+
+replit scheme
+
+country US
+fileExtensions scm ss
+fileType text
+wordRank 2803
+
+tiobe Scheme
+
+projectEuler Scheme
+ memberCount
+  2019 791
+  2022 817
+
+hopl 694
+
+quineRelay Scheme
+
+ubuntuPackage guile-2.0
+
+codeMirror scheme
+
+rosettaCode Scheme
+
+indeedJobs scheme engineer
+ 2017 1174

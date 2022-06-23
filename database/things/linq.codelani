@@ -1,3 +1,30 @@
+title Language Integrated Query
 appeared 2007
 type queryLanguage
-wikipedia Language_Integrated_Query
+
+patterns
+ hasCentralPackageRepository? false
+
+wikipedia https://en.wikipedia.org/wiki/Language_Integrated_Query
+ example
+  [Table(Name="Customers")]
+  public class Customer
+  {
+       [Column(IsPrimaryKey = true)]
+       public int CustID;
+  
+       [Column]
+       public string CustName;
+  }
+ related csharp f-sharp sql haskell php javascript typescript actionscript xml oxygene nemerle
+ summary Language Integrated Query (LINQ, pronounced "link") is a Microsoft .NET Framework component that adds native data querying capabilities to .NET languages, although ports exist for PHP (PHPLinq), JavaScript (linq.js), TypeScript (linq.ts), and ActionScript (ActionLinq) - but none of these ports are strictly equivalent to LINQ in C# for example (where it is a part of the language, not an external library, and where it often addresses a wider range of needs). LINQ extends the language by the addition of query expressions, which are akin to SQL statements, and can be used to conveniently extract and process data from arrays, enumerable classes, XML documents, relational databases, and third-party data sources. Other uses, which utilize query expressions as a general framework for readably composing arbitrary computations, include the construction of event handlers or monadic parsers. LINQ also defines a set of method names (called standard query operators, or standard sequence operators), along with translation rules used by the compiler to translate fluent-style query expressions into expressions using these method names, lambda expressions and anonymous types. Many of the concepts that LINQ has introduced were originally tested in Microsoft's Cω research project. LINQ was released as a major part of .NET Framework 3.5 on November 19, 2007.
+ pageId 13706337
+ dailyPageViews 184
+ created 2005
+ backlinksCount 234
+ revisionCount 679
+ appeared 2007
+
+status historical
+fileType text
+corporateDevelopers Microsoft

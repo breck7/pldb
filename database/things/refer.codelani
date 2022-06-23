@@ -1,6 +1,7 @@
+title Refer
 appeared 1978
 type textMarkup
-wikipedia Refer_(software)
+
 example
  %A Brian W. Kernighan
  %A Lorinda L. Cherry
@@ -14,3 +15,10 @@ example
  .[
  kernighan cherry eqn
  .]
+
+wikipedia https://en.wikipedia.org/wiki/Refer_(software)
+ summary refer is a program for managing bibliographic references, and citing them in troff documents.  It is implemented as a troff preprocessor. refer was written by Mike Lesk at Bell Laboratories in or before 1978, and is now available as part of most Unix-like operating systems.  A free reimplementation exists as part of the groff package. As of 2015, refer sees little use, primarily because troff itself is not used much for longer technical writing that might need software support for reference and citation management.  As of 2016, some reference management software (for instance, RefWorks) will import refer data.
+ backlinksCount 48
+ pageId 4310897
+ dailyPageViews 13
+ appeared 1978

@@ -1,3 +1,58 @@
+title Structured Query Language
 appeared 1974
 type queryLanguage
-wikipedia SQL
+
+patterns
+ hasCentralPackageRepository? false
+ hasComments? true
+
+wikipedia https://en.wikipedia.org/wiki/SQL
+ related sql-92 datalog linq powershell c sql-psm sqlpl transact-sql mysql pl-sql ada postgresql plpgsql java perl python tcl javascript xml xquery dot-ql isbl quel mumps isbn doi
+ summary SQL ( ( listen) ESS-kew-EL or  ( listen) SEE-kwəl or  SKWEEL, Structured Query Language) is a domain-specific language used in programming and designed for managing data held in a relational database management system (RDBMS), or for stream processing in a relational data stream management system (RDSMS). In comparison to older read/write APIs like ISAM or VSAM, SQL offers two main advantages: first, it introduced the concept of accessing many records with one single command; and second, it eliminates the need to specify how to reach a record, e.g. with or without an index. Originally based upon relational algebra and tuple relational calculus, SQL consists of a data definition language, data manipulation language, and data control language. The scope of SQL includes data insert, query, update and delete, schema creation and modification, and data access control. Although SQL is often described as, and to a great extent is, a declarative language (4GL), it also includes procedural elements. SQL was one of the first commercial languages for Edgar F. Codd's relational model, as described in his influential 1970 paper, "A Relational Model of Data for Large Shared Data Banks". Despite not entirely adhering to the relational model as described by Codd, it became the most widely used database language. SQL became a standard of the American National Standards Institute (ANSI) in 1986, and of the International Organization for Standardization (ISO) in 1987. Since then, the standard has been revised to include a larger set of features. Despite the existence of such standards, most SQL code is not completely portable among different database systems without adjustments.
+ pageId 29004
+ dailyPageViews 3084
+ created 2001
+ backlinksCount 4159
+ revisionCount 4153
+ appeared 1986
+
+githubLanguage SQL
+ fileExtensions sql cql ddl inc mysql prc tab udf viw
+ trendingProjectsCount 0
+
+helloWorldCollection Structured Query Language
+ # Hello World in SQL
+ 
+ SELECT 'Hello World';
+ 
+
+linguistGrammarRepo https://github.com/textmate/sql.tmbundle
+ firstCommit 2005
+ lastCommit 2016
+ committerCount 15
+ commitCount 224
+ sampleCount 12
+ example
+  --this is the most basic oracle sql command
+  select * from dual;
+  
+  
+
+standsFor Structured Query Language
+status active
+country US
+fileType text
+wordRank 2975
+linkedInSkill sql
+ peopleWithThisSkillCount 7163429
+
+projectEuler SQL
+ memberCount
+  2019 104
+  2022 124
+
+hopl 533
+
+codeMirror sql
+
+rosettaCode SQL

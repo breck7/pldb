@@ -1,4 +1,39 @@
+title K
 appeared 1993
 type pl
 creators Arthur Whitney
-wikipedia K_(programming_language)
+
+patterns
+ hasCentralPackageRepository? false
+ hasComments? true
+
+wikipedia https://en.wikipedia.org/wiki/K_(programming_language)
+ related scheme q apl sql j sql-92 solaris linux
+ summary K is a proprietary array processing language developed by Arthur Whitney and commercialized by Kx Systems. Since then, an open-source implementation known as Kona has also been developed. The language serves as the foundation for kdb+, an in-memory, column-based database, and other related financial products. The language, originally developed in 1993, is a variant of APL and contains elements of Scheme. Advocates of the language emphasize its speed, facility in handling arrays, and expressive syntax.
+ pageId 890956
+ dailyPageViews 113
+ created 2004
+ backlinksCount 42
+ revisionCount 221
+ appeared 1993
+
+helloWorldCollection K
+ / Hello world in K
+ 
+ "Hello world!"
+
+status historical
+country US
+fileType text
+wordRank 381
+
+projectEuler APL/J/K
+ memberCount
+  2022 2478
+  2019 332
+
+hopl 2142
+
+rosettaCode K
+
+corporateDevelopers Kx Systems

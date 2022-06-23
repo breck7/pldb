@@ -1,3 +1,10 @@
+title Lists
 type pattern
-wikipedia List_(abstract_data_type)
+psuedoExample [2, 3, 10]
 description A list or sequence is an abstract data type that represents a countable number of ordered values, where the same value may occur more than once
+
+wikipedia https://en.wikipedia.org/wiki/List_(abstract_data_type)
+
+aka array or vector or sequence
+status active
+patternKeyword hasLists?

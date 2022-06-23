@@ -1,3 +1,78 @@
+title S-algol
 appeared 1979
 type pl
-wikipedia S-algol
+
+patterns
+ hasCentralPackageRepository? false
+
+wikipedia https://en.wikipedia.org/wiki/S-algol
+ example
+  ! Comments are introduced by an exclamation point and continue until end of line.
+  
+  ! The let keyword introduces declarations of constants and variables
+  ! Identifiers start with an alphabetic character followed by alphanumeric characters or the full stop (.)
+  ! An initial value must be given, and this determines the data type of declaration
+  
+  let width := 10                   ! := sets the value of a variable, this is an int
+  let animal := "dog"               ! type string
+  
+  let x := -7 ; let y := x + x      ! ; separates clauses, needed only if there are two or more clauses on a line
+  
+  let n.a = 6.022e+23               ! = is used to set the value of a constant, this is a cfloat (constant float)
+  
+  ! if and case can have values and be used in expressions
+  let no.of.lives := if animal = "cat" then 9 else 1
+  
+  ! Sieve of Eratosthenes
+  write "Find primes up to n = ?"
+  let n = readi                     ! constant values can be set during the program run
+  let p = vector 2::n of true       ! vector of bool with bounds 2 to n
+  for i = 2 to truncate(sqrt(n)) do ! for indexes are constants so they use = rather than :=
+      if p(i) do                    ! vector dereference uses parens like a procedure call
+          for j = 2 * i to n by i do
+              p(j) := false
+  for i = 2 to n do
+      if p(i) do write i, "'n"      ! 'n in a literal string is a newline
+  
+  ! structure (record) type for a binary tree of cstrings
+  ! the pntr data type can point to a structure of any type, type checking is done at runtime
+  structure tree.node(cstring name ; pntr left, right)
+  
+  ! inserts a new string into the binary tree head
+  procedure insert.tree(cpntr head ; cstring new -> pntr)
+  ! the case clause ends with a mandatory default option, use default : {} if it is not needed
+  case true of
+      head = nil       : tree.node(new, nil, nil)
+      new < head(name) : { head(left) := insert.tree(head(left), new) ; head }
+      new > head(name) : { head(right) := insert.tree(head(right), new) ; head }
+      default          : head
+  
+  procedure print.tree(cpntr head)
+  if head ~= nil do                 ! ~= is the not equals operator
+  begin
+      print.tree(head(left))
+      write head(name), "'n"
+      print.tree(head(right))
+  end
+  
+  let fruit := nil
+  fruit := insert.tree(fruit, "banana")
+  fruit := insert.tree(fruit, "kiwi")
+  fruit := insert.tree(fruit, "apple")
+  fruit := insert.tree(fruit, "peach")
+  print.tree(fruit)                 ! print in sorted order
+  
+  ! The end of the S-algol program is indicated by ?
+  ?
+ related algol-60 ps-algol unix pascal c napier88 algol
+ summary S-algol (St Andrews Algol) is a computer programming language derivative of ALGOL 60 developed at the University of St Andrews in 1979 by Ron Morrison and Tony Davie. The language is a modification of ALGOL to contain orthogonal data types that Morrison created for his PhD thesis.  Morrison would go on to become professor at the university and head of the department of computer science. The S-algol language was used for teaching at the university at an undergraduate level until 1999. It was also the language taught for several years in the 1980s at a local school in St. Andrews, Madras College. The computer science text Recursive Descent Compiling describes a recursive descent compiler for S-algol, using S-algol as the implementation language. PS-algol is a persistent derivative of S-algol.  It was developed around 1981 at the Universities of Edinburgh and St Andrews.  It supports database capability by providing for longevity of data in the form of a persistent heap that survives termination of PS-algol programs.
+ created 2006
+ backlinksCount 17
+ pageId 4706468
+ revisionCount 75
+ dailyPageViews 9
+ appeared 1979
+
+status historical
+
+hopl 869

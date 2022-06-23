@@ -1,5 +1,72 @@
+title Beginner's All-purpose Symbolic Instruction Code
 appeared 1964
 type pl
 creators John G. Kemeny and Thomas E. Kurtz
-wikipedia BASIC
+
+patterns
+ hasCentralPackageRepository? false
+ hasComments? true
+  REM This BASIC program shows the use of the PRINT and GOTO Statements.
+ hasGotos? true
+  10 REM This BASIC program shows the use of the PRINT and GOTO Statements.
+  15 REM It fills the screen with the phrase "HELLO"
+  20 PRINT "HELLO"
+  30 GOTO 20
+ hasOperatorOverloading? false
+
 description BASIC (Beginner's All-purpose Symbolic Instruction Code)[1] is a family of general-purpose, high-level programming languages whose design philosophy emphasizes ease of use. In 1964, John G. Kemeny and Thomas E. Kurtz designed the original BASIC language at Dartmouth College. They wanted to enable students in fields other than science and mathematics to use computers. At the time, nearly all use of computers required writing custom software, which was something only scientists and mathematicians tended to learn.
+
+wikipedia https://en.wikipedia.org/wiki/BASIC
+ example
+  Public Class StarsProgram
+     Public Shared Sub Main()
+        Dim UserName, Answer, stars As String, NumStars As Integer
+        Console.Write("What is your name: ")
+        UserName = Console.ReadLine()
+        Console.WriteLine("Hello {0}", UserName)
+        Do
+           Console.Write("How many stars do you want: ")
+           NumStars = CInt(Console.ReadLine())
+           stars = New String("*", NumStars)
+           Console.WriteLine(stars)
+           Do
+              Console.Write("Do you want more stars? ")
+              Answer = Console.ReadLine()
+           Loop Until Answer <> ""
+           Answer = Answer.Substring(0, 1)
+        Loop While Answer.ToUpper() = "Y"
+        Console.WriteLine("Goodbye {0}", UserName)
+     End Sub
+  End Class
+ related atari-basic dartmouth-basic apple-basic sinclair-basic commodore-basic bbc-basic ti-basic casio-basic microsoft-basic liberty-basic visual-basic freebasic powerbasic gambas algol-60 fortran joss comal visual-basic-dot-net grass autoit autohotkey basic-plus hp-time-shared-basic pick-operating-system msx-basic tiny-basic li-chen-wang altair-basic mbasic ibm-basica qbasic pascal turbo-basic amigabasic c excel-app vbscript csharp java qb64 rapidq purebasic xojo true-basic microsoft-small-basic cipherlab quickbasic gw-basic lotusscript vba chipmunk-basic hp-basic-for-openvms superbasic staroffice-basic forth
+ summary BASIC (an acronym for Beginner's All-purpose Symbolic Instruction Code) is a family of general-purpose, high-level programming languages whose design philosophy emphasizes ease of use. In 1964, John G. Kemeny and Thomas E. Kurtz designed the original BASIC language at Dartmouth College in New Hampshire, United States. They wanted to enable students in fields other than science and mathematics to use computers. At the time, nearly all use of computers required writing custom software, which was something only scientists and mathematicians tended to learn. Versions of BASIC became widespread on microcomputers in the mid-1970s and 1980s. Microcomputers usually shipped with BASIC, often in the machine's firmware. Having an easy-to-learn language on these early personal computers allowed small business owners, professionals, hobbyists, and consultants to develop custom software on computers they could afford. In the 2010s, BASIC was popular in many computing dialects and in new languages influenced by BASIC, such as Microsoft's Visual Basic.
+ pageId 4015
+ dailyPageViews 1401
+ created 2001
+ backlinksCount 2623
+ revisionCount 2802
+ appeared 1964
+
+helloWorldCollection Beginner's All-purpose Symbolic Instruction Code
+ 10 REM Hello World in BASIC
+ 20 PRINT "Hello World!"
+ 
+
+standsFor Beginner's All-purpose Symbolic Instruction Code
+status active
+country US
+fileType text
+wordRank 945
+
+tiobe Basic
+
+projectEuler BASIC
+ memberCount
+  2019 1334
+  2022 1336
+
+hopl 176
+
+rosettaCode BASIC
+
+antlr https://github.com/antlr/grammars-v4/tree/master/basic

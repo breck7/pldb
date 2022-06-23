@@ -1,3 +1,30 @@
+title EXEC
 appeared 1966
 type pl
-wikipedia CMS_EXEC
+
+patterns
+ hasCentralPackageRepository? false
+
+wikipedia https://en.wikipedia.org/wiki/CMS_EXEC
+ example
+  * The following code issues CMS commands to set
+  * the "blip" character to asterisk and request
+  * the "short" format for system ready messages.
+  &CONTROL OFF
+  SET BLIP *
+  SET RDYMSG SMSG
+ related exec-2 rexx
+ summary CMS EXEC, or EXEC, is an interpreted, command procedure control, computer scripting language used by the CMS EXEC Processor supplied with the IBM Virtual Machine/Conversational Monitor System (VM/CMS) operating system. EXEC was written in 1966 by Stuart Madnick at MIT on the model of CTSS RUNCOM. He originally called this processor COMMAND, and it was later renamed EXEC. CMS EXEC has been superseded by EXEC 2 and REXX. All three — CMS EXEC, EXEC 2 and REXX — continue to be supported by the IBM CMS product.
+ pageId 9424740
+ dailyPageViews 8
+ created 2007
+ backlinksCount 16
+ revisionCount 31
+ appeared 1966
+
+status active
+fileType text
+
+tiobe EXEC
+
+hopl 2023

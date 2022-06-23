@@ -1,8 +1,30 @@
+title mathics
 appeared 2012
 type pl
-website https://mathics.github.io/
-github https://github.com/mathics/Mathics
+
 example
  StringJoin[Riffle[Map[ToString, Table[Fibonacci[i], {i,16}]], ", "]] <> "..."
-reference https://news.ycombinator.com/item?id=11459186
+
+patterns
+ hasCentralPackageRepository? false
+
 description Mathics is a free, general-purpose online computer algebra system featuring Mathematica-compatible syntax and functions. It is backed by highly extensible Python code, relying on SymPy for most mathematical tasks.
+
+githubRepo https://github.com/mathics/Mathics
+ firstCommit 2011
+ stars 1377
+ forks 181
+ subscribers 68
+ created 2011
+ updated 2018
+ description a general-purpose computer algebra system
+ issues 154
+
+website https://mathics.github.io/
+reference https://news.ycombinator.com/item?id=11459186
+status active
+
+tryItOnline mathics
+
+fileType text
+isOpenSource true

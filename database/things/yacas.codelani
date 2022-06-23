@@ -1,9 +1,35 @@
+title Yet Another Computer Algebra System
 appeared 1999
 type pl
-website http://www.yacas.org/
-wikipedia Yacas
+
 example
  record["name"]:="Isaia";
  record["occupation"]:="prophet";
  record["is alive"]:=False;
+
+patterns
+ hasCentralPackageRepository? false
+
 description a general-purpose computer algebra system. The name is an acronym for Yet Another Computer Algebra System.
+
+wikipedia https://en.wikipedia.org/wiki/Yacas
+ related ascii
+ summary Yacas  is a general-purpose computer algebra system.  The name is an acronym for Yet Another Computer Algebra System. Released under the GNU Lesser General Public License, Yacas is free software. YACAS is a program for symbolic manipulation of mathematical expressions. It uses its own programming language designed for symbolic as well as arbitrary-precision numerical computations. The system has a library of scripts that implement many of the symbolic algebra operations; new algorithms can be easily added to the library. YACAS comes with extensive documentation covering the scripting language, the functionality that is already implemented in the system, and the algorithms used. Its development started in early 1999.Yacas handles input and output in plain ASCII or in OpenMath, either interactively or in batch mode.
+ pageId 638163
+ created 2004
+ backlinksCount 65
+ revisionCount 121
+ dailyPageViews 12
+ appeared 1999
+
+website http://www.yacas.org/
+standsFor Yet Another Computer Algebra System
+status active
+fileType text
+isOpenSource true
+
+hopl 593
+
+rosettaCode Yacas
+
+writtenIn cpp

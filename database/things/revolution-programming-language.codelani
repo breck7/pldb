@@ -1,3 +1,20 @@
+title Revolution programming language
 appeared 1993
 type pl
-wikipedia Revolution_(programming_language)
+
+patterns
+ hasCentralPackageRepository? false
+
+wikipedia https://en.wikipedia.org/wiki/Revolution_(programming_language)
+ example
+  put url "binfile:picture.jpg" into url "ftp://john:passwd@ftp.example.net:2121/picture.jpg"
+ related linux unix android ios hypertalk hypercard sql
+ summary LiveCode (formerly Revolution and MetaCard) is a cross-platform rapid application development runtime environment inspired by HyperCard. It features the Transcript (formerly MetaTalk) programming language which belongs to the family of xTalk scripting languages like HyperCard's HyperTalk.The environment was introduced in 2001.  The "Revolution" development system was based on the MetaCard engine technology which Runtime Revolution later acquired from MetaCard Corporation in 2003. The platform won the Macworld Annual Editor's Choice Award for "Best Development Software" in 2004.  "Revolution" was renamed "LiveCode" in the fall of 2010.  "LiveCode" is developed and sold by Runtime Revolution Ltd., based in Edinburgh, Scotland. In March, 2015, the company was renamed "LiveCode Ltd.", to unify the company name with the product. In April 2013 a free/open source version 'LiveCode Community Edition 6.0' was published after a successful crowdfunding campaign at Kickstarter. The code base was re-licensed and made available as free and open source software with a version in April 2013. LiveCode runs on iOS, Android, OS X, Windows 95 through Windows 10, Raspberry Pi and several variations of Unix, including Linux, Solaris, and BSD. It can be used for mobile, desktop and server/CGI applications. The iOS (iPhone and iPad) version was released in December 2010. The first version to deploy to the Web was released in 2009. It is the most widely used HyperCard/HyperTalk clone, and the only one that runs on all major operating systems. A developer release of v.8 was announced in New York on March 12, 2015. This major enhancement to the product includes a new, separate development language, known as "LiveCode Builder",  which is capable of creating new object classes called "widgets". In earlier versions, the set of object classes was fixed, and could only be enhanced via the use of ordinary procedural languages like C. The new language, which runs in its own IDE, is a departure from the transitional x-talk paradigm in that it permits typing of variables. But the two environments are fully integrated, and apart from the ability to create new objects, development in LiveCode proceeds in the normal way, within the established IDE. A second crowdfunding campaign to Bring HTML5 to LiveCode reached funding goals of nearly $400,000 USD on July 31, 2014. LiveCode developer release 8.0 DP4 (August 31, 2015) was the first to include a standalone deployment option to HTML5.
+ created 2011
+ backlinksCount 56
+ pageId 30890362
+ revisionCount 5
+ dailyPageViews 2
+ appeared 2001
+
+status historical

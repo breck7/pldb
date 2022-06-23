@@ -1,5 +1,7 @@
+title Bossam Rule Language
 appeared 2004
 type queryLanguage
+
 example
  prefix family = http://family.com/Family#;
  namespace = http://family.com/Johns#;
@@ -11,4 +13,6 @@ example
    family:isUncleOf(?z,?y);
  fact f1 is
   family:isFatherOf(John,Bob);
+
 reference https://sci-hub.tw/https://link.springer.com/chapter/10.1007/978-3-540-30504-0_10
+related owl rdf

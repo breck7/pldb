@@ -1,4 +1,40 @@
+title Microsoft Excel
 appeared 1987
 type application
+
+patterns
+ hasCentralPackageRepository? false
+
+wikipedia https://en.wikipedia.org/wiki/Microsoft_Excel
+ example
+  <?xml version="1.0"?>
+  <Workbook xmlns="urn:schemas-microsoft-com:office:spreadsheet"
+   xmlns:o="urn:schemas-microsoft-com:office:office"
+   xmlns:x="urn:schemas-microsoft-com:office:excel"
+   xmlns:ss="urn:schemas-microsoft-com:office:spreadsheet"
+   xmlns:html="http://www.w3.org/TR/REC-html40">
+   <Worksheet ss:Name="Sheet1">
+    <Table ss:ExpandedColumnCount="2" ss:ExpandedRowCount="2" x:FullColumns="1" x:FullRows="1">
+     <Row>
+      <Cell><Data ss:Type="String">Name</Data></Cell>
+      <Cell><Data ss:Type="String">Example</Data></Cell>
+     </Row>
+     <Row>
+      <Cell><Data ss:Type="String">Value</Data></Cell>
+      <Cell><Data ss:Type="Number">123</Data></Cell>
+     </Row>
+    </Table>
+   </Worksheet>
+  </Workbook>
+ related android ios vba visual-basic ooxml xml csv dbase mysql c fortran python javascript
+ summary Microsoft Excel is a spreadsheet developed by Microsoft for Windows, macOS, Android and iOS. It features calculation, graphing tools, pivot tables, and a macro programming language called Visual Basic for Applications. It has been a very widely applied spreadsheet for these platforms, especially since version 5 in 1993, and it has replaced Lotus 1-2-3 as the industry standard for spreadsheets. Excel forms part of Microsoft Office.
+ pageId 20268
+ dailyPageViews 3977
+ created 2001
+ backlinksCount 2892
+ revisionCount 3519
+ appeared 1993
+
 website http://office.microsoft.com/en-us/excel
-wikipedia Microsoft_Excel
+status historical
+fileType text

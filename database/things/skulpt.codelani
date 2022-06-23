@@ -1,5 +1,23 @@
+title skulpt
 appeared 2009
 type pl
-website http://www.skulpt.org/
-github https://github.com/skulpt/skulpt
+
+patterns
+ hasCentralPackageRepository? false
+
 description Skulpt is an entirely in-browser implementation of Python.
+
+githubRepo https://github.com/skulpt/skulpt
+ firstCommit 2009
+ stars 2307
+ forks 680
+ subscribers 116
+ created 2012
+ updated 2018
+ description Skulpt is a Javascript implementation of the Python programming language
+ issues 147
+
+website http://www.skulpt.org/
+status active
+fileType text
+isOpenSource true

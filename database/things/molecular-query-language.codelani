@@ -1,5 +1,8 @@
+title Molecular Query Language
 appeared 2007
 type queryLanguage
-wikipedia Molecular_Query_Language
-reference https://pubs.acs.org/doi/full/10.1021/ci600305h
 description We have developed a Java library for substructure matching that features easy-to-read syntax and extensibility. This molecular query language (MQL) is grounded on a context-free grammar, which allows for straightforward modification and extension. The formal description of MQL is provided in this paper. Molecule primitives are atoms, bonds, properties, branching, and rings. User-defined features can be added via a Java interface. In MQL, molecules are represented as graphs. Substructure matching was implemented using the Ullmann algorithm because of favorable run-time performance. The Ullmann algorithm carries out a fast subgraph isomorphism search by combining backtracking with effective forward checking. MQL software design was driven by the aim to facilitate the use of various cheminformatics toolkits. Two Java interfaces provide a bridge from our MQL package to an external toolkit: the first one provides the matching rules for every feature of a particular toolkit; the second one converts the found match from the internal format of MQL to the format of the external toolkit. We already implemented these interfaces for the Chemistry Development Toolkit.
+
+wikipedia https://en.wikipedia.org/wiki/Molecular_Query_Language
+
+reference https://pubs.acs.org/doi/full/10.1021/ci600305h

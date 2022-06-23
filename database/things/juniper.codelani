@@ -1,5 +1,23 @@
+title juniper
 appeared 2016
 type pl
-website http://www.juniper-lang.org/
-github https://github.com/calebh/Juniper
+
+patterns
+ hasCentralPackageRepository? false
+
 description <a href='http://www.juniper-lang.org/'>Juniper</a> is a functional reactive programming language for the Arduino and other related platforms.
+
+githubRepo https://github.com/calebh/Juniper
+ firstCommit 2016
+ stars 108
+ forks 3
+ subscribers 13
+ created 2016
+ updated 2018
+ description FRP (Functional Reactive Programming) for the Arduino and other microcontrollers
+ issues 0
+
+website http://www.juniper-lang.org/
+status active
+fileType text
+isOpenSource true

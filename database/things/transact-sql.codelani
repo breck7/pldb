@@ -1,3 +1,42 @@
+title Transact-SQL
 appeared 1984
 type queryLanguage
-wikipedia Transact-SQL
+
+patterns
+ hasCentralPackageRepository? false
+
+wikipedia https://en.wikipedia.org/wiki/Transact-SQL
+ example
+  -- begin transaction
+  BEGIN TRAN
+  
+  BEGIN TRY
+     -- execute each statement
+     INSERT INTO MYTABLE(NAME) VALUES ('ABC')
+     INSERT INTO MYTABLE(NAME) VALUES ('123')
+  
+     -- commit the transaction
+     COMMIT TRAN
+  END TRY
+  BEGIN CATCH
+     -- roll back the transaction because of error
+     ROLLBACK TRAN
+  END CATCH
+ related sql pl-sql plpgsql sql-psm
+ summary Transact-SQL (T-SQL) is Microsoft's and Sybase's proprietary extension to the SQL (Structured Query Language) used to interact with relational databases. T-SQL expands on the SQL standard to include procedural programming, local variables, various support functions for string processing, date processing, mathematics, etc. and changes to the DELETE and UPDATE statements. Transact-SQL is central to using Microsoft SQL Server. All applications that communicate with an instance of SQL Server do so by sending Transact-SQL statements to the server, regardless of the user interface of the application.
+ pageId 295710
+ dailyPageViews 299
+ created 2003
+ backlinksCount 75
+ revisionCount 306
+ appeared 2000
+
+status active
+fileType text
+
+tiobe Transact-SQL
+ currentRank 23
+
+rosettaCode Transact-SQL
+
+antlr https://github.com/antlr/grammars-v4/tree/master//codelani/rawData/antlr.org/grammars-v4/tsql/TSqlParser.g4

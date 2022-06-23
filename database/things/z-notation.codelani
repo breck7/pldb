@@ -1,5 +1,22 @@
+title Z notation
 appeared 1974
 type notation
-wikipedia Z_notation
-reference http://czt.sourceforge.net/
+
+patterns
+ hasCentralPackageRepository? false
+
 description Z is not an executable notation. In general, Z specifications cannot be interpreted or compiled into a running program (or prototype or simulation). Z is not a programming language. Z texts are not just programs written in very high-level language. What would be the point of writing the program twice? Z was designed for people, not machines. For years Z was exclusively a pencil-and-paper notation.
+
+wikipedia https://en.wikipedia.org/wiki/Z_notation
+ related apl ascii latex unicode zpp object-z alloy
+ summary The Z notation  is a formal specification language used for describing and modelling computing systems. It is targeted at the clear specification of computer programs and computer-based systems in general.
+ pageId 34521
+ dailyPageViews 337
+ created 2001
+ backlinksCount 829
+ revisionCount 213
+ appeared 1974
+
+reference http://czt.sourceforge.net/
+status historical
+fileType paper

@@ -1,3 +1,69 @@
+title xBase
 appeared 1986
 type pl
-wikipedia XBase
+
+patterns
+ hasCentralPackageRepository? false
+
+wikipedia https://en.wikipedia.org/wiki/XBase
+ related jet-propulsion-laboratory-display-information-system
+ summary xBase is the generic term for all programming languages that derive from the original dBASE (Ashton-Tate) programming language and database formats. These are sometimes informally known as dBASE "clones". While there was a non-commercial predecessor to the Ashton-Tate product (Vulcan written by Wayne Ratliff), most clones are based on Ashton-Tate's 1986 dBASE III+ release — scripts written in the dBASE III+ dialect are most likely to run on all the clones.
+ pageId 572327
+ dailyPageViews 41
+ created 2004
+ backlinksCount 65
+ revisionCount 190
+ appeared 1986
+
+githubLanguage xBase
+ fileExtensions prg ch prw
+ trendingProjectsCount 0
+
+linguistGrammarRepo https://github.com/hernad/atom-language-harbour
+ firstCommit 2014
+ lastCommit 2017
+ committerCount 7
+ commitCount 157
+ sampleCount 3
+ example
+  #ifndef __HARBOUR__
+     #ifndef __XPP__
+        #ifndef __CLIP__
+           #ifndef FlagShip
+              #define __CLIPPER__
+           #endif
+        #endif
+     #endif
+  #endif
+  
+  /* File create flags */
+  #define FC_NORMAL          0  /* No file attributes are set */
+  #define FC_READONLY        1
+  #define FC_HIDDEN          2
+  #define FC_SYSTEM          4
+  
+  // New-style comment
+  #command SET DELETED <x:ON,OFF,&>      => Set( _SET_DELETED, <(x)> )
+  #command SET DELETED (<x>)             => Set( _SET_DELETED, <x> )
+  #command @ <row>, <col> SAY <exp> [PICTURE <pic>] [COLOR <clr>] => ;
+           DevPos( <row>, <col> ) ; DevOutPict( <exp>, <pic> [, <clr>] )
+           
+  #command ENDIF <*x*> => endif
+  
+  #ifdef __CLIPPER__   
+     #xtranslate hb_MemoWrit( [<x,...>] )  => MemoWrit( <x> )
+     #xtranslate hb_dbExists( <t> )        => File( <t> )
+     #xtranslate hb_dbPack()               => __dbPack()
+     #xtranslate hb_default( @<v>, <x> )   => iif( StrTran( ValType( <v> ), "M", "C" ) == StrTran( ValType( <x> ), "M", "C" ),, <v> := <x>, )
+  #endif
+  
+
+status active
+country US
+fileType text
+
+tiobe xBase
+
+hopl 2621
+
+rosettaCode XBase

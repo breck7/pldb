@@ -1,5 +1,31 @@
+title wren
 appeared 2013
 type pl
-website http://wren.io/
-github https://github.com/munificent/wren
+
+patterns
+ hasCentralPackageRepository? false
+
 description Wren is a small, fast, class-based concurrent scripting language.
+
+githubRepo https://github.com/munificent/wren
+ stars 2148
+ forks 198
+ subscribers 121
+ created 2013
+ updated 2017
+ firstCommit 2013
+ description The Wren Programming Language
+ issues 136
+
+website http://wren.io/
+status active
+
+tryItOnline wren
+
+country US
+fileType text
+isOpenSource true
+
+rosettaCode Wren
+
+writtenIn c

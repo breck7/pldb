@@ -1,6 +1,7 @@
+title universal configuration language
 appeared 2013
 type metaLanguage
-github https://github.com/vstakhov/libucl
+
 example
  param = value;
  section {
@@ -21,3 +22,21 @@ example
          }
      }
  }
+
+patterns
+ hasCentralPackageRepository? false
+
+githubRepo https://github.com/vstakhov/libucl
+ stars 995
+ forks 93
+ subscribers 52
+ created 2013
+ updated 2018
+ firstCommit 2013
+ description Universal configuration library parser
+ issues 48
+
+standsFor universal configuration language
+status active
+fileType text
+isOpenSource true

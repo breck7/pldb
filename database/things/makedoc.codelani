@@ -1,3 +1,27 @@
+title MakeDoc
 appeared 2000
 type textMarkup
-wikipedia MakeDoc
+
+patterns
+ hasCentralPackageRepository? false
+
+wikipedia https://en.wikipedia.org/wiki/MakeDoc
+ example
+  *Bullet item
+  
+  *Another 
+  
+  #Numbered item
+  
+  #Another numbered item
+ related rebol html xml vi-editor emacs-editor
+ summary MakeDoc is a lightweight markup language created in 2000 by Carl Sassenrath for creating documentation and web pages using simple text notations. The language is used extensively in the REBOL community for documentation, websites, and wikis.
+ backlinksCount 7
+ pageId 21339396
+ created 2009
+ revisionCount 22
+ dailyPageViews 5
+ appeared 2000
+
+status historical
+fileType text

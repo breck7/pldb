@@ -1,5 +1,25 @@
+title Advanced Interactive Multidimensional Modeling System
 appeared 1993
 type pl
-wikipedia AIMMS
-reference https://download.aimms.com/aimms/download/references/AIMMS-Whitepaper-COA.pdf
+
+patterns
+ hasCentralPackageRepository? false
+
 description AIMMS (an acronym for "Advanced Interactive Multidimensional Modeling System") began as a software system designed for modeling and solving large-scale optimization and scheduling-type problems. AIMMS is considered to be one of the five most important algebraic modeling languages and the creator (Johannes J. Bisschop) has been awarded with INFORMS Impact Prize for his work in this language.
+
+wikipedia https://en.wikipedia.org/wiki/AIMMS
+ related algebraic-modeling-language xml
+ summary AIMMS is a prescriptive analytics software company with offices in the Netherlands, United States, China and Singapore. AIMMS has two main product offerings that provide modeling and optimization capabilities across a variety of industries. The AIMMS Prescriptive Analytics Platform is a tool for those with an Operations Research or Analytics background. It offers unlimited flexibility to develop optimization-based applications and deploy them to business users. AIMMS SC Navigator, launched in 2017, is built on the AIMMS Prescriptive Analytics Platform and provides configurable Apps for supply chain teams. SC Navigator provides supply chain analytics to individuals without a technical or analytics background so they can get the same benefits from sophisticated analytics without needing to code or model.
+ pageId 31460418
+ created 2011
+ backlinksCount 76
+ revisionCount 82
+ dailyPageViews 41
+ appeared 1993
+
+reference https://download.aimms.com/aimms/download/references/AIMMS-Whitepaper-COA.pdf
+standsFor Advanced Interactive Multidimensional Modeling System
+status active
+fileType text
+
+hopl 4940

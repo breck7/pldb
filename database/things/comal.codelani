@@ -1,3 +1,32 @@
+title COMAL
 appeared 1973
 type pl
-wikipedia COMAL
+
+patterns
+ hasCentralPackageRepository? false
+
+wikipedia https://en.wikipedia.org/wiki/COMAL
+ example
+  10 PAGE
+  20 FOR number:= 1 TO 10 DO
+  30  PRINT "HELLO, WORLD!"
+  40 NEXT or ENDFOR (Unicomal)
+  50 END " "
+ related basic pascal logo isbn bbc-basic unix doi action
+ summary COMAL (Common Algorithmic Language) is a computer programming language developed in Denmark by Benedict Løfstedt and Børge R. Christensen in 1973. COMAL was one of the few structured programming languages that was available for and comfortably usable on 8-bit home computers. The "COMAL Kernel Syntax & Semantics" contains the formal definition of the language. Further extensions common to many implementations are described in .
+ pageId 197700
+ dailyPageViews 23
+ created 2003
+ backlinksCount 33
+ revisionCount 111
+ appeared 1973
+
+status active
+country DK
+fileType text
+
+tiobe COMAL
+
+hopl 605
+
+rosettaCode Comal

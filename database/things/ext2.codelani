@@ -1,3 +1,19 @@
+title Ext2
 appeared 1993
 type filesystem
-wikipedia Ext2
+
+patterns
+ hasCentralPackageRepository? false
+
+wikipedia https://en.wikipedia.org/wiki/Ext2
+ related linux ext ext3 ext4
+ summary The ext2 or second extended file system is a file system for the Linux kernel.  It was initially designed by Rémy Card as a replacement for the extended file system (ext).  Having been designed according to the same principles as the Berkeley Fast File System from BSD, it was the first commercial-grade filesystem for Linux.The canonical implementation of ext2 is the "ext2fs" filesystem driver in the Linux kernel. Other implementations (of varying quality and completeness) exist in GNU Hurd, MINIX 3, some BSD kernels, in MiNT, and as third-party Microsoft Windows and macOS drivers. ext2 was the default filesystem in several Linux distributions, including Debian and Red Hat Linux, until supplanted more recently by ext3, which is almost completely compatible with ext2 and is a journaling file system. ext2 is still the filesystem of choice for flash-based storage media (such as SD cards and USB flash drives) because its lack of a journal increases performance and minimizes the number of writes, and flash devices have a limited number of write cycles. However, recent Linux kernels support a journal-less mode of ext4 which provides benefits not found with ext2.
+ pageId 39194
+ created 2002
+ backlinksCount 322
+ revisionCount 489
+ dailyPageViews 141
+ appeared 1992
+
+status historical
+fileType text

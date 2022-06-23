@@ -1,3 +1,14 @@
+title DARPA Agent Markup Language
 appeared 1999
 type xmlFormat
-wikipedia DARPA_Agent_Markup_Language
+
+wikipedia https://en.wikipedia.org/wiki/DARPA_Agent_Markup_Language
+ summary The DARPA Agent Markup Language (DAML) was the name of a US funding program at the US Defense Advanced Research Projects Agency (DARPA) started in 1999 by then-Program Manager James Hendler, and later run by Murray Burke,  Mark Greaves and Michael Pagels. The program focused on the creation of machine-readable representations for the Web. One of the Investigators working on the program was Tim Berners-Lee and to a great degree through his influence, working with the program managers, the effort worked to create technologies and demonstrations for what is now called the Semantic Web and this in turn led to the growth of Knowledge Graph technology. A primary outcome of the DAML program was the DAML language, an  agent markup language based on  RDF.  This language was then followed by an extension entitled DAML+OIL which included researchers outside of the DARPA program in the design. The 2002 submission of the DAML+OIL language to the World Wide Web Consortium (W3C) captures the work done by DAML contractors and the EU/U.S. ad hoc Joint Committee on Markup Languages.  This submission was the starting point for the language (later called OWL) to be developed by W3C's web ontology working group, WebOnt. DAML+OIL was a syntax, layered on RDF and XML, that could be used to describe sets of facts making up an ontology. DAML+OIL had its roots in three main languages - DAML, as described above,  OIL (Ontology Inference Layer) and  SHOE, an earlier US research project. A major innovation of the languages was to use RDF and XML for a basis, and to use RDF namespaces to organize and assist with the integration of arbitrarily many different and incompatible ontologies. Articulation ontologies can link these competing ontologies through codification of analogous subsets in a neutral point of view, as is done in the Wikipedia. Current ontology research derived in part from DAML is leading toward the expression of ontologies and rules for reasoning and action.  Much of the work in DAML has now been incorporated into RDF Schema, the OWL and their successor languages and technologies including schema.org
+ backlinksCount 42
+ pageId 53832
+ dailyPageViews 12
+ appeared 1999
+
+standsFor DARPA Agent Markup Language
+
+hopl 7645

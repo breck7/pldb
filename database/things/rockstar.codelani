@@ -1,6 +1,7 @@
+title rockstar
 appeared 2018
 type esolang
-github https://github.com/dylanbeattie/rockstar
+
 example
  Midnight takes your heart and your soul
  While your heart is as high as your soul
@@ -28,4 +29,27 @@ example
  Take it to the top
  
  Whisper my world 
+
+patterns
+ hasCentralPackageRepository? false
+
 description Rockstar is a dynamically typed Turing-complete programming language. Rockstar is designed for creating computer programs that are also song lyrics, and is heavily influenced by the lyrical conventions of 1980s hard rock and power ballads.
+
+githubRepo https://github.com/dylanbeattie/rockstar
+ firstCommit 2018
+ stars 4550
+ forks 108
+ subscribers 131
+ created 2018
+ updated 2018
+ description The Rockstar programming language specification
+ issues 66
+
+status active
+
+tryItOnline rockstar
+
+fileType text
+isOpenSource true
+
+rosettaCode Rockstar

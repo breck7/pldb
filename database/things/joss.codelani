@@ -1,3 +1,27 @@
+title JOHNNIAC Open Shop System
 appeared 1966
 type pl
-wikipedia JOSS
+
+patterns
+ hasCentralPackageRepository? false
+
+wikipedia https://en.wikipedia.org/wiki/JOSS
+ example
+  Form 1: "  L(%.0f,%.0f)  ="
+  Form 2: "  -L(%.0f,%.0f)  ="
+  Form 3: "  %.0f\n"
+ related algol-58 basic telcomp focal mumps jean
+ summary JOSS (an acronym for JOHNNIAC Open Shop System) was one of the very first interactive, time-sharing programming languages. JOSS I, developed by J. Clifford Shaw at RAND was first implemented, in beta form, on the JOHNNIAC computer in May 1963.  The full implementation was deployed in January 1964, supporting five terminals and the final version, supporting ten terminals, was deployed in January 1965.JOSS was written in a symbolic assembly language called EasyFox (E and F in the US military's phonetic alphabet of that time).  EasyFox was also developed by Cliff Shaw. JOSS was dubbed "The Helpful Assistant" for its conversational user interface.  Originally green/black typewriter ribbons were used in its terminals with green being used for user input and black for the computer's response. Mathematically, JOSS was interesting because it stored all numbers as an integer and a decimal exponent. This means calculations were exact decimal values, as opposed to floating point calculations. One third plus one third plus one third was exactly one. Any command that was not understood elicited the response "Eh?" or "SORRY". JOSS II, was developed by Charles L. Baker, Joseph W. Smith, Irwin D. Greenwald, and G. Edward Bryan for the PDP-6 computer between 1964 and February 1966. Many variants of JOSS were developed and implemented on a variety of platforms.  Some of these variants remained very similar to the original: TELCOMP, FOCAL, CAL, CITRAN, ISIS, PIL/I, JEAN (ICT 1900 series), AID (PDP-10); while others, such as MUMPS, developed in distinctive directions.
+ pageId 140643
+ created 2002
+ backlinksCount 52
+ revisionCount 99
+ dailyPageViews 26
+ appeared 1966
+
+standsFor JOHNNIAC Open Shop System
+status historical
+country US
+fileType text
+
+hopl 200

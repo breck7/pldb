@@ -1,4 +1,8 @@
+title TypeScript Type Declarations
 appeared 2012
-type headerFiles
-reference https://microsoft.github.io/TypeScript-New-Handbook/chapters/type-declarations/
+type headerLang
 description TypeScript .d.ts files are declaration files that contain only type information. These files don't produce .js outputs; they are only used for typechecking.
+reference https://microsoft.github.io/TypeScript-New-Handbook/chapters/type-declarations/
+related typescript
+fileExtensions d.ts
+subsetOf typescript

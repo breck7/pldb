@@ -1,3 +1,24 @@
+title IBM 1620
 appeared 1959
 type assembly
-wikipedia IBM_1620
+
+patterns
+ hasCentralPackageRepository? false
+
+wikipedia https://en.wikipedia.org/wiki/IBM_1620
+ example
+  C F 8 4 2 1
+  1 0 1 0  –  Record Mark (right most end of record, prints as a double dagger symbol, ‡)
+  1 1 0 0  –  Numeric Blank (blank for punched card output formatting)
+  1 1 1 1  –  Group Mark (right most end of a group of records for disk I/O)
+ related unicode assembly-language fortran
+ summary The IBM 1620 was announced by IBM on October 21, 1959, and marketed as an inexpensive "scientific computer". After a total production of about two thousand machines, it was withdrawn on November 19, 1970. Modified versions of the 1620 were used as the CPU of the IBM 1710 and IBM 1720 Industrial Process Control Systems (making it the first digital computer considered reliable enough for real-time process control of factory equipment). Being variable word length decimal, as opposed to fixed-word-length pure binary, made it an especially attractive first computer to learn on –  and hundreds of thousands of students had their first experiences with a computer on the IBM 1620. Core memory cycle times were 20 microseconds for the (earlier) Model I, 10 microseconds for the Model II (about a thousand times slower than typical computer main memory in 2006). The Model II was introduced in 1962.
+ pageId 92577
+ created 2002
+ backlinksCount 112
+ revisionCount 481
+ dailyPageViews 60
+ appeared 1962
+
+status historical
+fileType paper

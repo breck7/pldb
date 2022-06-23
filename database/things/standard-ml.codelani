@@ -1,4 +1,76 @@
+title Standard ML
 appeared 1990
 type pl
+
+patterns
+ hasCentralPackageRepository? false
+ hasTypeInference? true
+
+wikipedia https://en.wikipedia.org/wiki/Standard_ML
+ example
+  - haar [1, 2, 3, 4, ~4, ~3, ~2, ~1];
+     val it = [0,20,4,4,~1,~1,~1,~1]  : int list
+ related alice dependent-ml hope elm fstar ocaml rust scala ml caml c poplog pop-11 common-lisp prolog emacs-editor isabelle extended-ml f-sharp
+ summary Standard ML (SML; Standard Meta Language) is a general-purpose, modular, functional programming language with compile-time type checking and type inference. It is popular among compiler writers and programming language researchers, as well as in the development of theorem provers. SML is a modern dialect of ML, the programming language used in the Logic for Computable Functions (LCF) theorem-proving project. It is distinctive among widely used languages in that it has a formal specification, given as typing rules and operational semantics in The Definition of Standard ML (1990, revised and simplified as The Definition of Standard ML (Revised) in 1997).
+ pageId 100337
+ dailyPageViews 301
+ created 2002
+ backlinksCount 185
+ revisionCount 411
+ appeared 1997
+ fileExtensions sml
+
+githubLanguage Standard ML
+ fileExtensions ML fun sig sml
+ trendingProjects
+  author name avatar url language languageColor stars forks currentPeriodStars description
+  komeiji-satori Dress https://github.com/komeiji-satori.png https://github.com/komeiji-satori/Dress "Standard ML" #dc566d 11618 1639 636 "好耶 是女装"
+ trendingProjectsCount 2
+
+linguistGrammarRepo https://github.com/textmate/standard-ml.tmbundle
+ firstCommit 2006
+ lastCommit 2015
+ committerCount 6
+ commitCount 51
+ sampleCount 5
+ example
+   
+  signature LAZY_BASE =
+     sig 
+        type 'a lazy
+        exception Undefined
+        val force: 'a lazy -> 'a
+        val delay: (unit -> 'a) -> 'a lazy
+        val undefined: 'a lazy
+     end
+  
+  signature LAZY' =
+     sig
+        include LAZY_BASE
+        val isUndefined: 'a lazy -> bool
+        val inject : 'a -> 'a lazy
+        val toString: ('a -> string) -> 'a lazy -> string
+        val eq: ''a lazy * ''a lazy -> bool
+        val eqBy: ('a * 'a -> bool) -> 'a lazy * 'a lazy -> bool
+        val compare: ('a * 'a -> order) -> 'a lazy * 'a lazy -> order
+        val map: ('a -> 'b) -> 'a lazy -> 'b lazy
+  
+        structure Ops: 
+                     sig
+                        val ! : 'a lazy -> 'a (* force *)
+                        val ? : 'a -> 'a lazy (* inject *)
+                     end
+     end
+  
+
 website http://sml-family.org
-wikipedia Standard_ML
+aka sml
+status active
+fileExtensions sml
+fileType text
+
+tiobe Standard ML
+
+quineRelay Standard ML
+
+ubuntuPackage mlton

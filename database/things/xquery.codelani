@@ -1,4 +1,135 @@
+title XQuery
 appeared 2007
 type pl
+
+patterns
+ hasCentralPackageRepository? false
+ hasComments? true
+
+wikipedia https://en.wikipedia.org/wiki/XQuery
+ example
+  <html><body>
+   {
+     for $act in doc("hamlet.xml")//ACT
+     let $speakers := distinct-values($act//SPEAKER)
+     return
+       <div>
+         <h1>{ string($act/TITLE) }</h1>
+         <ul>
+         {
+           for $speaker in $speakers
+           return <li>{ $speaker }</li>
+         }
+         </ul>
+       </div>
+   }
+   </body></html>
+ related xpath sql lisp prolog xml java csharp jsoniq json isbn
+ summary XQuery (XML Query) is a query and functional programming language that queries and transforms collections of structured and unstructured data, usually in the form of XML, text and with vendor-specific extensions for other data formats (JSON, binary, etc.). The language is developed by the XML Query working group of the W3C. The work is closely coordinated with the development of XSLT by the XSL Working Group; the two groups share responsibility for XPath, which is a subset of XQuery. XQuery 1.0 became a W3C Recommendation on January 23, 2007. XQuery 3.0 became a W3C Recommendation on April 8, 2014. XQuery 3.1 became a W3C Recommendation on March 21, 2017.  "The mission of the XML Query project is to provide flexible query facilities to extract data from real and virtual documents on the World Wide Web, therefore finally providing the needed interaction between the Web world and the database world. Ultimately, collections of XML files will be accessed like databases".
+ pageId 23742879
+ dailyPageViews 216
+ created 2002
+ backlinksCount 308
+ revisionCount 433
+ appeared 2007
+ fileExtensions xq xql xqm xqy xquery
+
+githubLanguage XQuery
+ fileExtensions xquery xq xql xqm xqy
+ trendingProjectsCount 0
+
+helloWorldCollection XQuery
+ (: Hello World with XQuery :)
+ let $i := "Hello World"
+ return $i
+ 
+
+linguistGrammarRepo https://github.com/wcandillon/language-jsoniq
+ firstCommit 2015
+ lastCommit 2016
+ committerCount 2
+ commitCount 108
+ sampleCount 1
+ example
+  (: -------------------------------------------------------------------------------------
+  
+      xproc.xqm - core xqm contains entry points, primary eval-step function and
+      control functions.
+  
+   ---------------------------------------------------------------------------------------- :)
+  xquery version "3.0"  encoding "UTF-8";
+  
+  module namespace xproc = "http://xproc.net/xproc";
+  
+   (: declare namespaces :)
+   declare namespace p="http://www.w3.org/ns/xproc";
+   declare namespace c="http://www.w3.org/ns/xproc-step";
+   declare namespace err="http://www.w3.org/ns/xproc-error";
+  
+   (: module imports :)
+  (:  import module namespace util = "http://xproc.net/xproc/util" at "util1.xqm"; :)
+   import module namespace const = "http://xproc.net/xproc/const" at "const.xqm";
+   import module namespace parse = "http://xproc.net/xproc/parse" at "parse.xqm";
+   import module namespace u = "http://xproc.net/xproc/util" at "util.xqm";
+  
+   (: declare options :)
+   declare boundary-space preserve;
+   declare option saxon:output "indent=yes";
+  
+   (: declare functions :)
+   declare variable $xproc:run-step       := xproc:run#6;
+   declare variable $xproc:parse-and-eval := ();
+   declare variable $xproc:declare-step   := ();
+   declare variable $xproc:choose         := ();
+   declare variable $xproc:try            := ();
+   declare variable $xproc:catch          := ();
+   declare variable $xproc:group          := ();
+   declare variable $xproc:for-each       := ();
+   declare variable $xproc:viewport       := ();
+   declare variable $xproc:library        := ();
+   declare variable $xproc:pipeline       := ();
+   declare variable $xproc:variable       := ();
+  
+  
+   (: list all declared namespaces :)
+   (: -------------------------------------------------------------------------- :)
+   declare function xproc:enum-namespaces($pipeline){
+   (: -------------------------------------------------------------------------- :)
+      <namespace name="{$pipeline/@name}">{u:enum-ns(<dummy>{$pipeline}</dummy>)}</namespace>
+   };
+  
+   (: entry point :)
+   (: -------------------------------------------------------------------------- :)
+   declare function xproc:run($pipeline,$stdin,$dflag,$tflag,$bindings,$options){
+   (: -------------------------------------------------------------------------- :)
+  
+   (: STEP I: preprocess :)
+   let $validate   := ()
+   let $namespaces := xproc:enum-namespaces($pipeline)
+   let $parse      := parse:explicit-bindings( parse:AST(parse:explicit-name(parse:explicit-type($pipeline))))
+   let $ast        := element p:declare-step {$parse/@*,
+         parse:pipeline-step-sort( $parse/*, () )
+       }
+  
+   (: STEP II: eval AST :)
+   let $eval_result := ()
+  
+   (: STEP III: serialize and return results :)
+   let $serialized_result := $pipeline
+  
+   return 
+     $serialized_result
+   };
+  
+  
+
 website http://www.w3.org/XML/Query/
-wikipedia XQuery
+status active
+fileExtensions xq xql xqm xqy xquery
+fileType text
+
+tiobe XQuery
+
+codeMirror xquery
+
+rosettaCode XQuery

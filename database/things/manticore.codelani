@@ -1,5 +1,7 @@
+title manticore
 appeared 2009
 type pl
+
 example
  fun forever (init : ’a) (f: ’a -> ’a) : unit =
   let
@@ -8,5 +10,6 @@ example
   in
     ()
   end
-reference http://manticore.cs.uchicago.edu/papers/cefp09-notes.pdf
+
 description The Manticore project is an effort to design and implement a new functional language for parallel programming. Unlike many earlier parallel languages, Manticore is a heterogeneous language that supports parallelism at multiple levels. Specifically, the Manticore language combines Concurrent ML-style explicit concurrency with fine-grain, implicitly threaded, parallel constructs. These lectures will introduce the Manticore language and explore a variety of programs written to take advantage of heterogeneous parallelism. At the explicit-concurrency level, Manticore supports the creation distinct threads of control and the coordination of threads through first-class synchronous-message passing. Message-passing synchronization, in contrast to shared-memory synchronization, fits naturally with the functional-programming paradigm. At the implicit-parallelism level, Manticore supports a diverse collection of parallel constructs for different granularities of work. Many of these constructs are inspired by common functional-programming idioms. In addition to describing the basic mechanisms, we will present a number of useful programming techniques that are enabled by these mechanisms. Finally, we will briefly discuss some of the implementation techniques used to execute Manticore programs on commodity multicore computers.
+reference http://manticore.cs.uchicago.edu/papers/cefp09-notes.pdf

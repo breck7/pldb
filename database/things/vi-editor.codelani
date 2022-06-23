@@ -1,3 +1,20 @@
+title vi
 appeared 1976
 type editor
-wikipedia Vi
+
+patterns
+ hasCentralPackageRepository? false
+
+wikipedia https://en.wikipedia.org/wiki/Vi
+ related c unix emacs-editor ruby solaris freebsd vim-editor utf-8
+ summary vi is a screen-oriented text editor originally created for the Unix operating system. The portable subset of the behavior of vi and programs based on it, and the ex editor language supported within these programs, is described by (and thus standardized by) the Single Unix Specification and POSIX.The original code for vi was written by Bill Joy in 1976, as the visual mode for a line editor called ex that Joy had written with Chuck Haley. Bill Joy's ex 1.1 was released as part of the first Berkeley Software Distribution (BSD) Unix release in March 1978. It was not until version 2.0 of ex, released as part of Second BSD in May 1979 that the editor was installed under the name "vi" (which took users straight into ex's visual mode), and the name by which it is known today. Some current implementations of vi can trace their source code ancestry to Bill Joy; others are completely new, largely compatible reimplementations. The name "vi" is derived from the shortest unambiguous abbreviation for the ex command visual, which switches the ex line editor to visual mode. The name is sometimes pronounced  (as in the discrete English letters v and i) and sometimes to rhyme with bye.In addition to various non–free software variants of vi distributed with proprietary implementations of Unix, vi was opensourced with OpenSolaris, and several free and open source software vi clones exist. A 2009 survey of Linux Journal readers found that vi was the most widely used text editor among respondents, beating gedit, the second most widely used editor, by nearly a factor of two (36% to 19%).
+ pageId 32494
+ created 2001
+ backlinksCount 713
+ revisionCount 1132
+ dailyPageViews 589
+ appeared 1976
+
+status historical
+fileType na
+isOpenSource true

@@ -1,6 +1,7 @@
+title zolang
 appeared 2018
 type pl
-github https://github.com/Zolang/Zolang
+
 example
  describe Person {
   name as text
@@ -9,4 +10,22 @@ example
   friendNames as list of text
  }
  let john as Person be Person("John", "Wall Street", 15, [ "Alice", "Bob" ])
+
+patterns
+ hasCentralPackageRepository? false
+
 description A programming language to generate code for multiple platforms
+
+githubRepo https://github.com/Zolang/Zolang
+ firstCommit 2018
+ stars 103
+ forks 6
+ subscribers 5
+ created 2018
+ updated 2018
+ description A programming language to generate code for multiple platforms
+ issues 5
+
+status active
+fileType text
+isOpenSource true

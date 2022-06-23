@@ -1,4 +1,18 @@
+title Gforth
 appeared 1992
 type pl
+
+patterns
+ hasCaseInsensitiveIdentifiers? true
+ hasPostfixNotation? true
+ isCaseSensitive? false
+
+wikipedia https://en.wikipedia.org/wiki/Gforth
+ summary Gforth is a free and portable implementation of the Forth programming language for Unix-like systems, Microsoft Windows, and other operating systems. A primary goal of Gforth is to adhere to the ANS Forth standard. Gforth is free software as part of the GNU Project.
+ backlinksCount 10
+ pageId 25795841
+ dailyPageViews 25
+ appeared 1992
+
 website https://www.gnu.org/software/gforth/
-wikipedia Gforth
+status active

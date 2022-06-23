@@ -1,4 +1,20 @@
+title muMath
 appeared 1978
 type pl
-wikipedia MuMATH
+
+patterns
+ hasCentralPackageRepository? false
+
+wikipedia https://en.wikipedia.org/wiki/MuMATH
+ related maxima pari-gp sagemath xcas yacas magma maple mathcad mathematica-editor mupad camal
+ summary muMATH is a computer algebra system (CAS), which was developed in the late 1970s and early eighties by Albert D. Rich and David Stoutemyer of Soft Warehouse in Honolulu, Hawaii. It was implemented in the muSIMP programming language which was built on top of a LISP dialect called muLISP. Platforms supported were CP/M and TRS-DOS (since muMATH-79), Apple II (since muMATH-80) and DOS (in muMATH-83, the last version, which was published by Microsoft). The Soft Warehouse later developed Derive, another computer algebra system. The company was purchased by Texas Instruments in 1999, and development of Derive ended in 2006.
+ backlinksCount 57
+ pageId 1270063
+ dailyPageViews 8
+ created 2004
+ appeared 1970
+
 reference https://semanticscholar.org/paper/44ab3648a50014007bda6cef7e091ae20e7737ae
+status historical
+
+hopl 3625

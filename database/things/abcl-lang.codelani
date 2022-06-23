@@ -1,5 +1,18 @@
+title Armed Bear Common Lisp
 appeared 2008
 type pl
-website https://common-lisp.net/project/armedbear/
-github https://github.com/armedbear/abcl
 description Armed Bear Common Lisp (ABCL) is a full implementation of the Common Lisp language featuring both an interpreter and a compiler, running in the JVM. Originally started to be a scripting language for the J editor, it now supports JSR-223 (Java scripting API): it can be a scripting engine in any Java application. Additionally, it can be used to implement (parts of) the application using Java to Lisp integration APIs.
+
+githubRepo https://github.com/armedbear/abcl
+ firstCommit 2008
+ stars 85
+ forks 14
+ subscribers 14
+ created 2016
+ updated 2019
+ description Armed Bear Common Lisp <git+https://github.com/armedbear/abcl/> <--> <svn+https://abcl.org/svn> Bridge
+ issues 30
+
+website https://common-lisp.net/project/armedbear/
+aka ABCL
+standsFor Armed Bear Common Lisp

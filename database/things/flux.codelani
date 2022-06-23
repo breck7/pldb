@@ -1,5 +1,68 @@
+title FLUX
 appeared 2014
 type pl
-website https://facebook.github.io/flux/
-github https://github.com/facebook/flux
+
+patterns
+ hasCentralPackageRepository? false
+
 description Application Architecture for Building User Interfaces
+
+githubLanguage FLUX
+ fileExtensions fx flux
+ trendingProjectsCount 0
+
+githubRepo https://github.com/facebook/flux
+ firstCommit 2014
+ stars 15696
+ forks 3642
+ subscribers 722
+ created 2014
+ updated 2018
+ description Application Architecture for Building User Interfaces
+ issues 13
+
+example
+ // concrete node signatures
+ Listen ()
+   => (int socket);
+ 
+ ReadRequest (int socket)
+   => (int socket, bool close, image_tag *request);
+ 
+ CheckCache (int socket, bool close, image_tag *request)
+   => (int socket, bool close, image_tag *request);
+ 
+ // omitted for space:
+ // ReadInFromDisk, StoreInCache
+ Compress (int socket, bool close, image_tag *request, __u8 *rgb_data)
+   => (int socket, bool close, image_tag *request);
+ Write (int socket, bool close, image_tag *request)
+   => (int socket, bool close, image_tag *request);
+ Complete (int socket, bool close, image_tag *request) => ();
+ 
+ // source node
+ source Listen => Image;
+ 
+ // abstract node
+ Image = ReadRequest -> CheckCache -> Handler -> Write -> Complete;
+ 
+ // predicate type & dispatch
+ typedef hit TestInCache;
+ Handler:[_, _, hit] = ;
+ Handler:[_, _, _] =
+ ReadInFromDisk -> Compress -> StoreInCache;
+ 
+ // error handler
+ handle error ReadInFromDisk => FourOhFor;
+ 
+ // atomicity constraints
+ atomic CheckCache:{cache};
+ atomic StoreInCache:{cache};
+ atomic Complete:{cache};
+ 
+ 
+website https://facebook.github.io/flux/
+status active
+fileType text
+wordRank 8630
+isOpenSource true

@@ -1,3 +1,28 @@
+title ECMAScript
 appeared 1997
 type pl
-wikipedia ECMAScript
+
+patterns
+ hasCentralPackageRepository? false
+
+wikipedia https://en.wikipedia.org/wiki/ECMAScript
+ example
+  var readWikiArticle = (content) => {
+      //Read article!
+  }
+ related javascript actionscript jscript qtscript self hypertalk awk c perl python java scheme json regex csharp
+ summary ECMAScript (or ES) is a trademarked scripting-language specification standardized by Ecma International in ECMA-262 and ISO/IEC 16262. It was created to standardize JavaScript, so as to foster multiple independent implementations.  JavaScript has remained the best-known implementation of ECMAScript since the standard was first published, with other well-known implementations including JScript and ActionScript. ECMAScript is commonly used for client-side scripting on the World Wide Web, and it is increasingly being used for writing server applications and services using Node.js.
+ created 2003
+ backlinksCount 1269
+ pageId 188515
+ revisionCount 1547
+ dailyPageViews 1310
+ appeared 1997
+
+status historical
+
+projectEuler ECMAScript
+ memberCount
+  2022 2478
+
+hopl 2179

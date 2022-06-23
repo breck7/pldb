@@ -1,4 +1,12 @@
+title Friendly Enough Expression Language
 appeared 2015
 type queryLanguage
-reference https://docs.camunda.org/manual/7.11/reference/dmn11/feel/
+
+patterns
+ hasBooleans? true
+ hasIntegers? true
+ hasStrings? true
+
 description FEEL defines a syntax for expressing conditions that input data should be evaluated against
+reference https://docs.camunda.org/manual/7.11/reference/dmn11/feel/
+standsFor Friendly Enough Expression Language

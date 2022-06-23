@@ -1,3 +1,47 @@
+title MIMIC
 appeared 1964
 type pl
-wikipedia MIMIC
+
+patterns
+ hasCentralPackageRepository? false
+
+wikipedia https://en.wikipedia.org/wiki/MIMIC
+ example
+  Card columns
+  0        1         2         3         4         5         6         7
+  12345678901234567890123456789012345678901234567890123456789012345678901
+  -----------------------------------------------------------------------
+  * A SIMPLE PREDATOR-PREY MODEL FROM MARINE BIOLOGY
+  / (TUTORIAL 2: NUMERICAL SOLUTION OF ODE'S - 19/08/02)
+  / ENVIRONMENTAL FLUID MECHANICS LAB
+  / DEPT OF CIVIL AND ENVIRONMENTAL ENGINEERİNG
+  / STANFORD UNIVERSITY
+  *
+  * LOTKA–VOLTERRA EQUATION
+                    CON(F0,S0,TMAX)
+                    CON(ALPHA,BETA,GAMMA,EPS)
+            1DF   = ALPHA*F-BETA*F*S
+            F     = INT(1DF,F0)
+            1DS   = EPS*BETA*F*S-GAMMA*S
+            S     = INT(1DS,S0)
+                    HDR(TIME,FISH,SHARK)
+                    OUT(T,F,S)
+                    PLO(F,S)
+                    FIN(T,TMAX)
+                    END
+  <EOR>
+  600.       50.          50.
+  0.7        0.007        0.5         0.1
+  <EOF>
+ summary MIMIC, known in capitalized form only, is a former simulation computer language developed 1964 by H. E. Petersen, F. J. Sansom and L. M. Warshawsky of Systems Engineering Group within the Air Force Materiel Command at the Wright-Patterson AFB in Dayton, Ohio, United States. It is an expression-oriented continuous block simulation language, but capable of incorporating blocks of FORTRAN-like algebra. MIMIC is a further development from MIDAS (Modified Integration Digital Analog Simulator), which represented analog computer design. Written completely in FORTRAN but one routine in COMPASS, and ran on Control Data supercomputers, MIMIC is capable of solving much larger simulation models. With MIMIC, ordinary differential equations describing mathematical models in several scientific disciplines as in engineering, physics, chemistry, biology, economics and as well as in social sciences can easily be solved by numerical integration and the results of the analysis are listed or drawn in diagrams. It also enables the analysis of nonlinear dynamic conditions. The MIMIC software package, written as FORTRAN overlay programs, executes input statements of the mathematical model in six consecutive passes. Simulation programs written in MIMIC are compiled rather than interpreted. The core of the simulation package is a variable step numerical integrator of fourth-order Runge-Kutta method. Many useful functions related to electrical circuit elements exist besides some mathematical functions found in most scientific programming languages. There is no need to sort the statements in order of dependencies of the variables, since MIMIC does it internally. Parts of the software organized in overlays are:  MIMIN (input)– reads in user simulation program and data, MIMCO (compiler) – compiles the user program and creates an in-core array of instructions, MIMSO (sort)– sorts the instructions array after dependencies of variables, MIMAS (assembler) – converts the BCD instructions into machine-oriented code, MIMEX (execute)– executes the user program by integrating, MIMOUT (output)– puts out the data as a list or diagram of data.
+ pageId 4017688
+ created 2006
+ backlinksCount 15
+ revisionCount 40
+ dailyPageViews 14
+ appeared 1964
+
+status historical
+fileType text
+
+hopl 294

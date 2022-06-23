@@ -1,3 +1,44 @@
+title FLOW-MATIC
 appeared 1955
 type pl
-wikipedia FLOW-MATIC
+
+patterns
+ hasCentralPackageRepository? false
+
+wikipedia https://en.wikipedia.org/wiki/FLOW-MATIC
+ example
+  (0)  INPUT INVENTORY FILE-A PRICE FILE-B ; OUTPUT PRICED-INV FILE-C UNPRICED-INV
+       FILE-D ; HSP D .
+   (1)  COMPARE PRODUCT-NO (A) WITH PRODUCT-NO (B) ; IF GREATER GO TO OPERATION 10 ;
+       IF EQUAL GO TO OPERATION 5 ; OTHERWISE GO TO OPERATION 2 .
+   (2)  TRANSFER A TO D .
+   (3)  WRITE-ITEM D .
+   (4)  JUMP TO OPERATION 8 .
+   (5)  TRANSFER A TO C .
+   (6)  MOVE UNIT-PRICE (B) TO UNIT-PRICE (C) .
+   (7)  WRITE-ITEM C .
+   (8)  READ-ITEM A ; IF END OF DATA GO TO OPERATION 14 .
+   (9)  JUMP TO OPERATION 1 .
+  (10)  READ-ITEM B ; IF END OF DATA GO TO OPERATION 12 .
+  (11)  JUMP TO OPERATION 1 .
+  (12)  SET OPERATION 9 TO GO TO OPERATION 2 .
+  (13)  JUMP TO OPERATION 2 .
+  (14)  TEST PRODUCT-NO (B) AGAINST ; IF EQUAL GO TO OPERATION 16 ;
+       OTHERWISE GO TO OPERATION 15 .
+  (15)  REWIND B .
+  (16)  CLOSE-OUT FILES C ; D .
+  (17)  STOP . (END)
+ related arith-matic math-matic cobol
+ summary FLOW-MATIC, originally known as B-0 (Business Language version 0), was the first English-like data processing language. It was developed for the UNIVAC I at Remington Rand under Grace Hopper during the period from 1955 until 1959. It had a strong influence on the development of COBOL.
+ pageId 82760
+ dailyPageViews 81
+ created 2002
+ backlinksCount 32
+ revisionCount 83
+ appeared 1955
+
+status historical
+country US
+fileType text
+
+hopl 27

@@ -1,7 +1,21 @@
+title Digital Object Identifier System
 appeared 2000
 type schema
-website https://www.doi.org/
-wikipedia Digital_object_identifier
+
 example
  https://doi.org/10.1000/182
+
+patterns
+ hasCentralPackageRepository? false
+
 description The DOI system provides a technical and social infrastructure for the registration and use of persistent interoperable identifiers, called DOIs, for use on digital networks.
+
+wikipedia https://en.wikipedia.org/wiki/Digital_object_identifier
+ created 2004
+ revisionCount 910
+ dailyPageViews 4196
+
+website https://www.doi.org/
+standsFor Digital Object Identifier
+status historical
+fileType text

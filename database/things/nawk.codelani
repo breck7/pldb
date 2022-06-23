@@ -1,4 +1,13 @@
+title New AWK
 appeared 1993
 type pl
-website https://linux.die.net/man/1/nawk
+
+patterns
+ hasCentralPackageRepository? false
+
 description Brian Kernighan's nawk (New AWK) source was first released in 1993 unpublicized, and publicly since the late 1990s; many BSD systems use it to avoid the GPL license.
+website https://linux.die.net/man/1/nawk
+status historical
+fileType text
+
+hopl 2272

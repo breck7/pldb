@@ -1,3 +1,59 @@
+title SystemVerilog
 appeared 2002
 type pl
-wikipedia SystemVerilog
+
+patterns
+ hasCentralPackageRepository? false
+
+wikipedia https://en.wikipedia.org/wiki/SystemVerilog
+ example
+  class eth_frame;
+     // Definitions as above
+     covergroup cov;
+        coverpoint dest {
+            bins bcast[1] = {48'hFFFFFFFFFFFF};
+            bins ucast[1] = default;
+        }
+        coverpoint f_type {
+            bins length[16] = { [0:1535] };
+            bins typed[16] = { [1536:32767] };
+            bins other[1] = default;
+        }
+        psize: coverpoint payload.size {
+            bins size[] = { 46, [47:63], 64, [65:511], [512:1023], [1024:1499], 1500 };
+        }
+  
+        sz_x_t: cross f_type, psize;
+     endgroup
+  endclass
+ related verilog vhdl openvera java c property-specification-language axiom
+ summary SystemVerilog, standardized as IEEE 1800, is a hardware description and hardware verification language used to model, design, simulate, test and implement electronic systems. SystemVerilog is based on Verilog and some extensions, and since 2008 Verilog is now part of the same IEEE standard. It is commonly used in the semiconductor and electronic design industry as an evolution of Verilog.
+ pageId 2540686
+ created 2005
+ backlinksCount 305
+ revisionCount 385
+ dailyPageViews 225
+ appeared 2002
+ fileExtensions header file
+
+githubLanguage SystemVerilog
+ fileExtensions sv svh vh
+ trendingProjectsCount 0
+
+linguistGrammarRepo https://github.com/TheClams/SystemVerilog
+ sampleCount 4
+ example
+  function integer log2;
+    input integer x;
+    begin
+      x = x-1;
+      for (log2 = 0; x > 0; log2 = log2 + 1)
+        x = x >> 1;
+    end
+  endfunction
+  
+
+status active
+fileType text
+
+rosettaCode SystemVerilog

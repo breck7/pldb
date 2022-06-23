@@ -1,4 +1,68 @@
+title AutoHotkey
 appeared 2003
 type pl
+
+patterns
+ hasCentralPackageRepository? false
+ hasComments? true
+ hasCaseInsensitiveIdentifiers? true
+
+wikipedia https://en.wikipedia.org/wiki/AutoHotkey
+ example
+  ^+w::last := CopyUser() ; Ctrl+Shift+w
+  ^+e::edit := CopyUser() ; Ctrl+Shift+e
+  
+  CopyUser() {
+     Clipboard =
+     StringReplace, Clipboard, Clipboard, http://en.wikipedia.org/
+     StringReplace, Clipboard, Clipboard, wiki/
+     StringReplace, Clipboard, Clipboard, w/index.php?title=
+     StringReplace, Clipboard, Clipboard, Special:Contributions&target=
+     StringReplace, Clipboard, Clipboard, User:
+     StringReplace, Clipboard, Clipboard, &action=edit
+     StringReplace, Clipboard, Clipboard, _, %A_Space%, All
+     Return, Clipboard
+  }
+  
+  ; Ctrl+Shift+r
+  ^+r::Send revert edits by [[Special:Contributions/%edit%|%edit%]] to last version by %last%
+ related emacs-editor c excel-app autoit visual-basic-dot-net csharp lua lisp vbscript jscript kixtart winbatch
+ summary AutoHotkey is a free, open-source custom scripting language for Microsoft Windows, initially aimed at providing easy keyboard shortcuts or hotkeys, fast macro-creation and software automation that allows users of most levels of computer skill to automate repetitive tasks in any Windows application. User interfaces can easily be extended or modified by AutoHotkey (for example, overriding the default Windows control key commands with their Emacs equivalents). The AutoHotkey installation includes its own extensive help file with an always updated web-based version.
+ pageId 1485612
+ dailyPageViews 308
+ created 2005
+ backlinksCount 146
+ revisionCount 496
+ appeared 2017
+
+githubLanguage AutoHotkey
+ fileExtensions ahk ahkl
+ trendingProjectsCount 0
+
+helloWorldCollection AutoHotkey
+ ; Hello World in AutoHotkey
+ 
+ Msgbox Hello, World!
+ 
+
+linguistGrammarRepo https://github.com/ahkscript/SublimeAutoHotkey
+ firstCommit 2013
+ lastCommit 2018
+ committerCount 5
+ commitCount 53
+ sampleCount 1
+ example
+  MsgBox, Hello`, World!
+  
+
 website https://autohotkey.com
-wikipedia AutoHotkey
+status active
+fileType text
+isOpenSource true
+
+projectEuler AutoHotkey
+ memberCount
+  2019 23
+  2022 28
+
+rosettaCode AutoHotkey

@@ -1,4 +1,63 @@
+title MUMPS
 appeared 1966
 type pl
 creators Neil Pappalardo
-wikipedia MUMPS
+
+patterns
+ hasCentralPackageRepository? false
+
+wikipedia https://en.wikipedia.org/wiki/MUMPS
+ example
+  GTM>S n=""
+  GTM>S n=$order(^nodex(n))
+  GTM>zwr n
+  n=" building"
+  GTM>S n=$order(^nodex(n))
+  GTM>zwr n
+  n=" name:gd"
+  GTM>S n=$order(^nodex(n))
+  GTM>zwr n
+  n="%kml:guid"
+ related joss unix telcomp miis linux tiny-basic ascii csv
+ summary MUMPS (Massachusetts General Hospital Utility Multi-Programming System), or M, is a general-purpose computer programming language that provides ACID (Atomic, Consistent, Isolated, and Durable) transaction processing. Its differentiating feature is its "built-in" database, enabling high-level access to disk storage using simple symbolic program variables and subscripted arrays, similar to the variables used by most languages to access main memory. The M database is a key-value database engine optimized for high-throughput transaction processing. As such it is in the class of "schema-less", "schema-free," or NoSQL databases. Internally, M stores data in multidimensional hierarchical sparse arrays (also known as key-value nodes, sub-trees, or associative memory). Each array may have up to 32 subscripts, or dimensions. A scalar can be thought of as an array element with zero subscripts. Nodes with varying numbers of subscripts (including one node with no subscripts) can freely co-exist in the same array. Perhaps the most unusual aspect of the M language is the notion that the database is accessed through variables, rather than queries or retrievals. This means that accessing volatile memory and non-volatile storage use the same basic syntax, enabling a function to work on either local (volatile) or global (non-volatile) variables. Practically, this provides for extremely high performance data access. Originally designed in 1966 for the healthcare industry, M continues to be used today by many large hospitals and banks to provide high-throughput transaction data processing.
+ pageId 19723
+ dailyPageViews 255
+ created 2001
+ backlinksCount 197
+ revisionCount 1017
+ appeared 1966
+
+githubLanguage M
+ fileExtensions mumps m
+ trendingProjectsCount 0
+
+helloWorldCollection MUMPS
+ ; Hello World in Mumps-M
+  w !,"Hello World"
+example
+ label1 ; This is a label
+     write "Hello World !",!
+     quit
+ 
+aka m
+status active
+
+tryItOnline mumps
+
+country US
+fileType text
+
+tiobe MUMPS
+
+projectEuler MUMPS
+ memberCount
+  2019 31
+  2022 38
+
+hopl 773
+
+codeMirror mumps
+
+rosettaCode MUMPS
+
+antlr https://github.com/antlr/grammars-v4/tree/master/mumps

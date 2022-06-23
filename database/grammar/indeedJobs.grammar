@@ -1,0 +1,8 @@
+searchQueryCell
+indeedJobsNode
+ description How many job descriptions match this query for this language on indeed.com?
+ cells keywordCell
+ catchAllCellType searchQueryCell
+ extends abstractAnnualPopulationCountNode
+ crux indeedJobs
+ string sourceDomain indeed.com

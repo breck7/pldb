@@ -1,4 +1,27 @@
+title Dolittle programming language
 appeared 1952
 type pl
+
+patterns
+ hasCentralPackageRepository? false
+
+wikipedia https://en.wikipedia.org/wiki/Dolittle_(programming_language)
+ example
+  かめ太＝タートル！作る。
+   カメ＝タートル！　作る。
+   時計＝タイマー！　作る　0.1秒　間隔　500回　回数。 時計！　「かめ太！　１０　歩く」　実行。
+   左＝ボタン！”左”作る。 左：動作＝「かめ太！　２０　左回り」。
+   右＝ボタン！”右”作る。 右：動作＝「かめ太！　10　右回り」。
+ related logo arduino java
+ summary Dolittle (Japanese ドリトル doritoru) is a programming language developed at the Osaka Electro-Communication University . Unlike the majority of programming languages it uses keywords based on Japanese and written in Japanese script. It is named after the character Dr Dolittle. It is easier for learners whose native language is Japanese to make early progress in understanding programming.
+ pageId 40592324
+ created 2013
+ backlinksCount 5
+ revisionCount 21
+ dailyPageViews 13
+ appeared 1952
+
 website http://dolittle.eplang.jp/
-wikipedia Dolittle_(programming_language)
+status historical
+country JP
+fileType text

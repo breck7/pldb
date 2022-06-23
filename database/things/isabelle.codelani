@@ -1,6 +1,107 @@
+title Isabelle
 appeared 1986
 type pl
-website http://isabelle.in.tum.de/
-wikipedia Isabelle_(proof_assistant)
-reference https://books.google.com/books?id=xwdqCQAAQBAJ&dq=isabelle+language+proof&lr=
+
+patterns
+ hasCentralPackageRepository? false
+
 description Isabelle is a generic proof assistant. It allows mathematical formulas to be expressed in a formal language and provides tools for proving those formulas in a logical calculus. Isabelle was originally developed at the University of Cambridge and Technische Universität München, but now includes numerous contributions from institutions and individuals worldwide.
+
+wikipedia https://en.wikipedia.org/wiki/Isabelle_(proof_assistant)
+ example
+  theorem sqrt2_not_rational:
+    "sqrt (real 2) ∉ ℚ"
+  proof
+    let ?x = "sqrt (real 2)"
+    assume "?x ∈ ℚ"
+    then obtain m n :: nat where
+      sqrt_rat: "¦?x¦ = real m / real n" and lowest_terms: "coprime m n"
+      by (rule Rats_abs_nat_div_natE)
+    hence "real (m^2) = ?x^2 * real (n^2)" by (auto simp add: power2_eq_square)
+    hence eq: "m^2 = 2 * n^2" using of_nat_eq_iff power2_eq_square by fastforce
+    hence "2 dvd m^2" by simp
+    hence "2 dvd m" by simp
+    have "2 dvd n" proof-
+      from ‹2 dvd m› obtain k where "m = 2 * k" ..
+      with eq have "2 * n^2 = 2^2 * k^2" by simp
+      hence "2 dvd n^2" by simp
+      thus "2 dvd n" by simp
+    qed
+    with ‹2 dvd m› have "2 dvd gcd m n" by (rule gcd_greatest)
+    with lowest_terms have "2 dvd 1" by simp
+    thus False using odd_one by blast
+  qed
+ related standard-ml coq
+ summary The Isabelle theorem prover is an interactive theorem prover, a Higher Order Logic (HOL) theorem prover. It is an LCF-style theorem prover (written in Standard ML), so it is based on a small logical core to ease logical correctness. Isabelle is generic: it provides a meta-logic (a weak type theory), which is used to encode object logics like first-order logic (FOL), higher-order logic (HOL) or Zermelo–Fraenkel set theory (ZFC). Isabelle's main proof method is a higher-order version of resolution, based on higher-order unification. Though interactive, Isabelle also features efficient automatic reasoning tools, such as a term rewriting engine and a tableaux prover, as well as various decision procedures.  Isabelle has been used to formalize numerous theorems from mathematics and computer science, like Gödel's completeness theorem, Gödel's theorem about the consistency of the axiom of choice, the prime number theorem, correctness of security protocols, and properties of programming language semantics. The Isabelle theorem prover is free software, released under the revised BSD license. Isabelle was named by Lawrence Paulson after Gérard Huet's daughter.
+ created 2002
+ backlinksCount 32
+ pageId 161886
+ revisionCount 150
+ dailyPageViews 71
+ appeared 1986
+
+githubLanguage Isabelle
+ fileExtensions thy
+ trendingProjectsCount 0
+
+linguistGrammarRepo https://github.com/lsf37/Isabelle.tmbundle
+ firstCommit 2014
+ lastCommit 2018
+ committerCount 1
+ commitCount 9
+ sampleCount 1
+ example
+  theory HelloWorld
+  imports Main
+  begin
+  
+  section{*Playing around with Isabelle*}
+  
+  text{* creating a lemma with the name hello_world*}
+  lemma hello_world: "True" by simp
+  
+  (*inspecting it*)
+  thm hello_world
+  
+  text{* defining a string constant HelloWorld *}
+  
+  definition HelloWorld :: "string" where
+    "HelloWorld \<equiv> ''Hello World!''"
+  
+  (*reversing HelloWorld twice yilds HelloWorld again*)
+  theorem "rev (rev HelloWorld) = HelloWorld"
+    by (fact List.rev_rev_ident)
+  
+  text{*now we delete the already proven List.rev_rev_ident lema and show it by hand*}
+  declare List.rev_rev_ident[simp del]
+  hide_fact List.rev_rev_ident
+  
+  (*It's trivial since we can just 'execute' it*)
+  corollary "rev (rev HelloWorld) = HelloWorld"
+    apply(simp add: HelloWorld_def)
+    done
+  
+  text{*does it hold in general?*}
+  theorem rev_rev_ident:"rev (rev l) = l"
+    proof(induction l)
+    case Nil thus ?case by simp
+    next
+    case (Cons l ls)
+      assume IH: "rev (rev ls) = ls"
+      have "rev (l#ls) = (rev ls) @ [l]" by simp
+      hence "rev (rev (l#ls)) = rev ((rev ls) @ [l])" by simp
+      also have "\<dots> = [l] @ rev (rev ls)" by simp
+      finally show "rev (rev (l#ls)) = l#ls" using IH by simp
+    qed
+  
+  corollary "\<forall>(l::string). rev (rev l) = l" by(fastforce intro: rev_rev_ident)
+  
+  end
+  
+
+website http://isabelle.in.tum.de/
+reference https://books.google.com/books?id=xwdqCQAAQBAJ&dq=isabelle+language+proof&lr=
+status active
+fileExtensions ROOT
+fileType text
+isOpenSource true

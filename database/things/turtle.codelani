@@ -1,6 +1,7 @@
+title Turtle
 appeared 2011
 type metaLanguage
-wikipedia Turtle_(syntax)
+
 example
  @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
  @prefix dc: <http://purl.org/dc/elements/1.1/> .
@@ -12,3 +13,47 @@ example
      ex:fullname "Dave Beckett";
      ex:homePage <http://purl.org/net/dajobe/>
    ] .
+
+patterns
+ hasCentralPackageRepository? false
+
+wikipedia https://en.wikipedia.org/wiki/Turtle_(syntax)
+ example
+  <http://www.w3.org/TR/rdf-syntax-grammar> <http://purl.org/dc/elements/1.1/title> "RDF/XML Syntax Specification (Revised)" .
+   <http://www.w3.org/TR/rdf-syntax-grammar> <http://example.org/stuff/1.0/editor> _:bnode .
+   _:bnode <http://example.org/stuff/1.0/fullname> "Dave Beckett" .
+   _:bnode <http://example.org/stuff/1.0/homePage> <http://purl.org/net/dajobe/> .
+ related rdf sparql xml utf-8
+ summary Terse RDF Triple Language (Turtle) is a syntax and file format for expressing data in the Resource Description Framework (RDF) data model. Turtle syntax is similar to that of SPARQL, an RDF query language. RDF represents information using semantic triples, which comprise a subject, predicate, and object. Each item in the triple is expressed as a Web URI. Turtle provides a way to group three URIs to make a triple, and provides ways to abbreviate such information, for example by factoring out common portions of URIs. For example:   <http://example.org/person/Mark_Twain>     <http://example.org/relation/author>     <http://example.org/books/Huckleberry_Finn> .
+ pageId 6723738
+ created 2006
+ backlinksCount 189
+ revisionCount 124
+ dailyPageViews 542
+ appeared 2011
+
+githubLanguage Turtle
+ fileExtensions ttl
+ trendingProjectsCount 0
+
+linguistGrammarRepo https://github.com/peta/turtle.tmbundle
+ firstCommit 2013
+ lastCommit 2015
+ committerCount 2
+ commitCount 128
+ sampleCount 2
+ example
+  @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+  @prefix dc: <http://purl.org/dc/elements/1.1/> .
+  @prefix ex: <http://example.org/stuff/1.0/> .
+  
+  <http://www.w3.org/TR/rdf-syntax-grammar>
+    dc:title "RDF/XML Syntax Specification (Revised)" ;
+    ex:editor [
+      ex:fullname "Dave Beckett";
+      ex:homePage <http://purl.org/net/dajobe/>
+    ] .
+
+status active
+fileType text
+wordRank 9688

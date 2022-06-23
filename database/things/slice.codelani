@@ -1,5 +1,7 @@
+title Slice
 appeared 2011
 type pl
+
 example
  // YellowPages.ice
  module YellowPages
@@ -15,4 +17,75 @@ example
          PersonDetails find(string name);
      }
  }
+
+patterns
+ hasCentralPackageRepository? false
+
+githubLanguage Slice
+ fileExtensions ice
+
+linguistGrammarRepo https://github.com/zeroc-ice/vscode-slice
+ firstCommit 2018
+ lastCommit 2018
+ committerCount 5
+ commitCount 14
+ sampleCount 1
+ example
+  #pragma once
+  
+  #ifndef SOME_TEST
+  [["java:package:linguist"]]
+  #endif
+  
+  module Linguist
+  {
+      enum MyEnum
+      {
+          One,
+          Two,
+          Three
+      }
+  
+      struct MyStruct
+      {
+          // An int
+          int a;
+          /* string */
+          string b;
+  
+          MyEnum e;
+      }
+  
+      exception MyException {
+          string e;
+      }
+  
+      dictionary<string, string> MyDict;
+  
+      sequence<MyEnum> MyEnumSeq;
+  
+      class BaseClass {
+          int value = -1;
+      }
+  
+      class MyClass extends BaseClass
+      {
+          MyDict info;
+  
+          optional(1) string op;
+      }
+  
+  
+      interface MyInterface
+      {
+          void operationA(out bool valid);
+          idempotent void operationB(int a);
+          MyEnumseq getEnum();
+  
+          ["cpp:const", "cpp:noexcept"] string getName();
+      }
+  }
+
 reference https://zeroc.com/products/ice
+status active
+fileType text

@@ -1,3 +1,34 @@
+title Turbo Assembler
 appeared 1989
 type pl
-wikipedia Turbo_Assembler
+
+patterns
+ hasCentralPackageRepository? false
+
+wikipedia https://en.wikipedia.org/wiki/Turbo_Assembler
+ example
+  .model small
+  .stack	100h
+  .data
+  msg	db "Merry Christmas!",'$'
+  .code
+  main	proc
+  	mov	ds, ax
+  	mov	dx, offset msg
+  	mov	ah, 9
+  	int	21h
+  	mov	ax, 4c00h
+  	int	21h
+  main	endp
+  end	main
+ related x86-isa turbo-pascal turbo-basic microsoft-macro-assembler
+ summary Turbo Assembler (TASM)  is a computer assembler (software for program development) developed by Borland which runs on and produces code for 16- or 32-bit x86 DOS or Microsoft Windows. It can be used with Borland's high-level language compilers, such as Turbo Pascal, Turbo Basic, Turbo C and Turbo C++. The Turbo Assembler package is bundled with the Turbo Linker, and is interoperable with the Turbo Debugger. TASM can assemble Microsoft Macro Assembler (MASM) source using its MASM mode and has an ideal mode with a few enhancements. Object-Oriented programming has been supported since version 3.0. The last version of Turbo Assembler is 5.4, with files dated 1996 and patches up to 2010; it is still supplied with Delphi and C++Builder. TASM itself is a 16-bit program; it will run on 16- and 32-bit versions of Windows, and produce code for the same versions. There are ways to run 16-bit programs such as TASM on 64-bit Windows (e.g., on a virtual machine), but it will not generate 64-bit Windows code. The Borland Turbo Assembler 5.0 package is supplied on three 3.5-inch diskettes and with three small books.
+ created 2004
+ backlinksCount 60
+ pageId 788619
+ revisionCount 167
+ dailyPageViews 69
+ appeared 1989
+
+status historical
+isOpenSource false

@@ -1,4 +1,5 @@
+title sqlite-storage-format
 appeared 2000
 type binaryDataFormat
-reference https://www.sqlite.org/fileformat.html#:~:text=The%20complete%20state%20of%20an,a%20write%2Dahead%20log%20file.
 description The complete state of an SQLite database is usually contained in a single file on disk called the "main database file". During a transaction, SQLite stores additional information in a second file called the "rollback journal", or if SQLite is in WAL mode, a write-ahead log file.
+reference https://www.sqlite.org/fileformat.html#:~:text=The%20complete%20state%20of%20an,a%20write%2Dahead%20log%20file.

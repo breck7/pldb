@@ -1,4 +1,33 @@
+title Curl
 appeared 1998
 type pl
+
+patterns
+ hasCentralPackageRepository? false
+ hasMultipleInheritance? true
+
+wikipedia https://en.wikipedia.org/wiki/Curl_(programming_language)
+ example
+  {poem || wraps entire poem
+      {stanza  || first verse here in any language
+      }
+      {stanza  || another verse here in any language
+      }
+   }
+ related linux html javascript lisp java csharp css groovy
+ summary Curl is a reflective object-oriented programming language for interactive web applications whose goal is to provide a smoother transition between formatting and programming. It makes it possible to embed complex objects in simple documents without needing to switch between programming languages or development platforms. The Curl implementation initially consisted of just an interpreter, but a compiler was added later. Curl combines text markup (as in HTML), scripting (as in JavaScript), and heavy-duty computing (as in Java, C#, or C++) within one unified framework. It is used in a range of internal enterprise, B2B, and B2C applications. Curl programs may be compiled into Curl applets, that are viewed using the Curl RTE, a runtime environment with a plugin for web browsers. Currently, it is supported on Microsoft Windows, Linux, and macOS. Curl supports "detached applets", which is a web deployed applet which runs on the user's desktop independent of a browser window much as in Silverlight 3 and Adobe AIR.
+ pageId 42537
+ dailyPageViews 110
+ created 2002
+ backlinksCount 102
+ revisionCount 197
+ appeared 1998
+
 website http://www.curl.com
-wikipedia Curl_(programming_language)
+status active
+country US
+fileType text
+
+tiobe Curl
+
+hopl 8042

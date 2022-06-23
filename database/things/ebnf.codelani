@@ -1,4 +1,58 @@
+title extended Backus-Naur form
 appeared 1977
 type grammarLanguage
 creators Niklaus Wirth
-wikipedia Extended_Backus–Naur_form
+
+patterns
+ hasCentralPackageRepository? false
+
+wikipedia https://en.wikipedia.org/wiki/Extended_Backus–Naur_form
+ example
+  function application = list( symbol, { expression } );
+ related pascal xml regex
+ summary In computer science, extended Backus-Naur form (EBNF) is a family of metasyntax notations, any of which can be used to express a context-free grammar. EBNF is used to make a formal description of a formal language which can be a computer programming language. They are extensions of the basic Backus–Naur form (BNF) metasyntax notation. The earliest EBNF was originally developed by Niklaus Wirth incorporating some of the concepts (with a different syntax and notation) from Wirth syntax notation. However, many variants of EBNF are in use. The International Organization for Standardization has adopted an EBNF standard (ISO/IEC 14977). This article uses EBNF as specified by the ISO for examples applying to all EBNFs. Other EBNF variants use somewhat different syntactic conventions.
+ pageId 71289
+ dailyPageViews 244
+ backlinksCount 50
+ appeared 1977
+
+githubLanguage EBNF
+ fileExtensions ebnf
+ trendingProjectsCount 0
+
+linguistGrammarRepo https://github.com/sanssecours/EBNF.tmbundle
+ firstCommit 2012
+ lastCommit 2016
+ committerCount 2
+ commitCount 42
+ sampleCount 4
+ example
+  (*
+    Source:  https://github.com/io7m/jsom0
+    License: ISC
+  *)
+  
+  digit_without_zero =
+    "1" | "2" | "3" | "4" | "5" | "6" | "7" | "8" | "9" ;
+  
+  digit =
+    "0" | digit_without_zero ;
+  
+  positive =
+    digit_without_zero , { digit } ;
+  
+  natural =
+    "0" | positive ;
+  
+  real =
+    [ "-" ] , digit , [ "." , { digit } ] ;
+  
+  
+
+standsFor extended Backus-Naur form
+status active
+fileType text
+
+hopl 755
+
+codeMirror ebnf

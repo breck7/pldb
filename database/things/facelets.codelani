@@ -1,3 +1,30 @@
+title Facelets
 appeared 2005
 type template
-wikipedia Facelets
+
+patterns
+ hasCentralPackageRepository? false
+
+wikipedia https://en.wikipedia.org/wiki/Facelets
+ example
+  <ui:composition
+      xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:ui="http://java.sun.com/jsf/facelets" 
+      xmlns:h="http://java.sun.com/jsf/html"
+      xmlns:cc="http://java.sun.com/jsf/composite">
+      <cc:interface/>
+      <cc:implementation> 
+          <h:outputText value="&amp;nbsp;" escape="false"/>
+      </cc:implementation>
+  </ui:composition>
+ related java xml java-server-pages
+ summary In computing, Facelets is an open-source Web template system under the Apache license and the default view handler technology (aka view declaration language) for JavaServer Faces (JSF). The language requires valid input XML documents to work. Facelets supports all of the JSF UI components and focuses completely on building the JSF component tree, reflecting the view for a JSF application. Although both JSP and JSF technologies have been improved to work better together, Facelets eliminates the issues noted in Hans Bergsten's article "Improving JSF by Dumping JSP"Facelets draws on some of the ideas from Apache Tapestry, and is similar enough to draw comparison. The project is conceptually similar to Tapestry's, which treats blocks of HTML elements as framework components backed by Java classes. Facelets also has some similarities to the Apache Tiles framework with respect to support templating as well as composition. Facelets was originally created by Jacob Hookom in 2005 as a separate, alternative view declaration language for JSF 1.1 and JSF 1.2 that both used JSP as the default view declaration language. Starting from JSF 2.0, Facelets has been promoted by the JSF expert group to be the default view declaration language. JSP has been deprecated as a legacy fall back.
+ backlinksCount 21
+ pageId 20234648
+ created 2008
+ revisionCount 129
+ dailyPageViews 28
+ appeared 2005
+
+status historical
+fileType text

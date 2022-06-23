@@ -1,5 +1,26 @@
+title Dern
 appeared 2008
 type pl
-website https://octaspire.io/dern-manual.html
-github https://github.com/octaspire/dern
+
+patterns
+ hasCentralPackageRepository? false
+
 description A platform independent programming language in standard C99. It is a dialect of Lisp with influences from Scheme, Emacs Lisp and C. Runs in Amiga, Haiku, Plan9, Unix, Windows and almost anything between.
+
+githubRepo https://github.com/octaspire/dern
+ firstCommit 2017
+ stars 21
+ forks 0
+ subscribers 1
+ created 2017
+ updated 2018
+ description Programming language
+ issues 0
+
+website https://octaspire.io/dern-manual.html
+status active
+fileType text
+isOpenSource true
+hackerNewsDiscussions
+ id|title|time|timestamp|by|comments|score
+ 14073664|Show HN: Octaspire Dern – Programming language|2017-04-09 18:35:42 UTC|1491762942|octaspire|15|47

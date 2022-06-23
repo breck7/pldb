@@ -1,9 +1,38 @@
+title Groovy Server Pages
 appeared 2008
 type template
-website https://gsp.grails.org/latest/guide/index.html
+
 example
  <html>
    <body>
      <% out << "Hello GSP!" %>
    </body>
  </html>
+
+patterns
+ hasCentralPackageRepository? false
+
+githubLanguage Groovy Server Pages
+ fileExtensions gsp
+ trendingProjectsCount 0
+
+linguistGrammarRepo https://github.com/textmate/java.tmbundle
+ firstCommit 2004
+ lastCommit 2018
+ committerCount 21
+ commitCount 283
+ sampleCount 4
+ example
+  <html>
+  <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <title>Testing with SiteMesh and ${example}</title>
+  
+  </head>
+  <body>
+  </body>
+  </html>
+
+website https://gsp.grails.org/latest/guide/index.html
+status active
+fileType text

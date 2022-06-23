@@ -1,4 +1,95 @@
+title Edje Data Collection
 appeared 2010
 type jsonFormat
-reference https://phab.enlightenment.org/w/edjebasics/
+
+patterns
+ hasCentralPackageRepository? false
+
 description An Edje Data Collection, it's a plain text file (normally identified with the .edc extension), consisting of instructions for the Edje Compiler.
+
+githubLanguage Edje Data Collection
+ fileExtensions edc
+ trendingProjectsCount 0
+
+linguistGrammarRepo https://github.com/textmate/json.tmbundle
+ firstCommit 2007
+ lastCommit 2016
+ committerCount 11
+ commitCount 21
+ sampleCount 1
+ example
+  // https://raw.githubusercontent.com/billiob/terminology/master/data/themes/mild.edc
+  /* overlay to default to make theme easier on the eyes, less effects */
+  
+  #ifndef BG_COLOR
+  #define BG_COLOR 48 48 48 255
+  #endif
+  
+  #ifndef BG_COLOR_TRANSLUCENT
+  #define BG_COLOR_TRANSLUCENT 48 48 48 200
+  #endif
+  
+  #ifndef BELL_OVERLAY_COLOR
+  #define BELL_OVERLAY_COLOR 220 220 220 16
+  #endif
+  
+  
+  collections {
+     group { name: "terminology/background";
+  
+  #ifndef INHERIT_PROVIDE_OWN_COLORS
+         color_classes {
+  #include "default_colors.in.edc"
+         }
+  #endif
+  
+        images {
+          image: "bg_bevel.png" COMP;
+          image: "bg_shine.png" COMP;
+          image: "bg_glint.png" COMP;
+          image: "bg_led_base.png" COMP;
+          image: "bg_led.png" COMP;
+          image: "bg_led_strobe.png" COMP;
+          image: "pm_shadow.png" COMP;
+          image: "pm_overlay.png" COMP;
+          image: "pm_fill.png" COMP;
+          image: "tab_bg_l0.png" COMP;
+          image: "tab_bg_l1.png" COMP;
+          image: "tab_bg_r0.png" COMP;
+          image: "tab_bg_r1.png" COMP;
+          image: "tab_shad_l0.png" COMP;
+          image: "tab_shad_l1.png" COMP;
+          image: "tab_shad_r0.png" COMP;
+          image: "tab_shad_r1.png" COMP;
+        }
+        sounds {
+           sample { name: "bell" LOSSY 64;
+              source: "bell.wav";
+           }
+        }
+  
+        script {
+           public message(Msg_Type:type, id, ...) {
+              new r, g, b, a, v;
+  
+              if ((type != MSG_INT) || (id != 1)) return;
+  
+              v = (getarg(2) * 255) / 100;
+  
+              custom_state(PART:"base", "default", 0.0);
+              get_state_val(PART:"base", STATE_COLOR, r, g, b, a);
+              set_state_val(PART:"base", STATE_COLOR, r, g, b, v);
+              set_state(PART:"base", "custom", 0.0);
+  
+              custom_state(PART:"fade", "default", 0.0);
+              get_state_val(PART:"fade", STATE_COLOR, r, g, b, a);
+              set_state_val(PART:"fade", STATE_COLOR, r, g, b, v);
+              set_state(PART:"fade", "custom", 0.0);
+           }
+        }
+  
+        pa
+
+reference https://phab.enlightenment.org/w/edjebasics/
+status active
+fileType text

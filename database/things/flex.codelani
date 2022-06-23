@@ -1,4 +1,72 @@
+title FLEX
 appeared 1987
 type grammarLanguage
+
+patterns
+ hasCentralPackageRepository? false
+
+wikipedia https://en.wikipedia.org/wiki/Flex_(lexical_analyser_generator)
+ example
+  %{
+  #include "y.tab.h"
+  %}
+  
+  digit         [0-9]
+  letter        [a-zA-Z]
+  
+  %%
+  "+"                  { return PLUS;       }
+  "-"                  { return MINUS;      }
+  "*"                  { return TIMES;      }
+  "/"                  { return SLASH;      }
+  "("                  { return LPAREN;     }
+  ")"                  { return RPAREN;     }
+  ";"                  { return SEMICOLON;  }
+  ","                  { return COMMA;      }
+  "."                  { return PERIOD;     }
+  ":="                 { return BECOMES;    }
+  "="                  { return EQL;        }
+  "<>"                 { return NEQ;        }
+  "<"                  { return LSS;        }
+  ">"                  { return GTR;        }
+  "<="                 { return LEQ;        }
+  ">="                 { return GEQ;        }
+  "begin"              { return BEGINSYM;   }
+  "call"               { return CALLSYM;    }
+  "const"              { return CONSTSYM;   }
+  "do"                 { return DOSYM;      }
+  "end"                { return ENDSYM;     }
+  "if"                 { return IFSYM;      }
+  "odd"                { return ODDSYM;     }
+  "procedure"          { return PROCSYM;    }
+  "then"               { return THENSYM;    }
+  "var"                { return VARSYM;     }
+  "while"              { return WHILESYM;   }
+  {letter}({letter}|{digit})* {
+                         yylval.id = strdup(yytext);
+                         return IDENT;      }
+  {digit}+             { yylval.num = atoi(yytext);
+                         return NUMBER;     }
+  [ \t\n\r]            /* skip whitespace */
+  .                    { printf("Unknown character [%c]\n",yytext[0]);
+                         return UNKNOWN;    }
+  %%
+  
+  int yywrap(void){return 1;}
+ related bison yacc c ratfor pl-0
+ summary Flex (fast lexical analyzer generator) is a free and open-source software alternative to lex. It is a computer program that generates lexical analyzers (also known as "scanners" or "lexers"). It is frequently used as the lex implementation together with Berkeley Yacc parser generator on BSD-derived operating systems (as both lex and yacc are part of POSIX), or together with GNU bison (a version of yacc) in *BSD ports and in Linux distributions. Unlike Bison, flex is not part of the GNU Project and is not released under the GNU General Public License.
+ pageId 376795
+ dailyPageViews 80
+ created 2003
+ backlinksCount 12
+ revisionCount 253
+ appeared 1987
+
 website https://github.com/westes/flex
-wikipedia Flex_(lexical_analyser_generator)
+status historical
+country CA
+fileType text
+wordRank 9114
+isOpenSource true
+
+hopl 2033

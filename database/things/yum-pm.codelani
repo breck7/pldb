@@ -1,3 +1,13 @@
+title Yum
 appeared 1999
 type packageManager
-wikipedia Yum_(software)
+
+wikipedia https://en.wikipedia.org/wiki/Yum_(software)
+ summary The Yellowdog Updater, Modified (YUM) is a libre and open-source command-line package-management utility for computers running the Linux operating system using the RPM Package Manager. Though YUM has a command-line interface, several other tools provide graphical user interfaces to YUM functionality. YUM allows for automatic updates and package and dependency management on RPM-based distributions. Like the Advanced Package Tool (APT) from Debian, YUM works with software repositories (collections of packages), which can be accessed locally or over a network connection. Under the hood, YUM depends on RPM, which is a packaging standard for digital distribution of software, which automatically uses hashes and digisigs to verify the authorship and integrity of said software; unlike some app stores, which serve a similar function, neither YUM nor RPM provide built-in support for proprietary restrictions on copying of packages by end-users. YUM is implemented as libraries in the Python programming language, with a small set of programs that provide a command-line interface. GUI-based wrappers such as YUM Extender (yumex) also exist.A rewrite of YUM named DNF replaced YUM as the default package manager in Fedora 22. DNF was created to improve on YUM in several ways - improved performance, better resolution of dependency conflicts, and easier integration with other software applications.
+ backlinksCount 65
+ pageId 290313
+ dailyPageViews 167
+ appeared 2011
+
+status active
+isOpenSource true

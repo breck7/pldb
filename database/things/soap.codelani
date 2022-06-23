@@ -1,3 +1,38 @@
+title Simple Object Access Protocol
 appeared 1998
 type xmlFormat
-wikipedia SOAP
+
+patterns
+ hasCentralPackageRepository? false
+
+wikipedia https://en.wikipedia.org/wiki/SOAP
+ example
+  POST /InStock HTTP/1.1
+  Host: www.example.org
+  Content-Type: application/soap+xml; charset=utf-8
+  Content-Length: 299
+  SOAPAction: "http://www.w3.org/2003/05/soap-envelope"
+  
+  <?xml version="1.0"?>
+  <soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope" xmlns:m="http://www.example.org/stock/Manikandan">
+    <soap:Header>
+    </soap:Header>
+    <soap:Body>
+      <m:GetStockPrice>
+        <m:StockName>GOOGLE</m:StockName>
+      </m:GetStockPrice>
+    </soap:Body>
+  </soap:Envelope>
+ related http smtp linux xml tcp wddx rfc wsdl tls json rest
+ summary SOAP (originally Simple Object Access Protocol) is a protocol specification for exchanging structured information in the implementation of web services in computer networks. Its purpose is to induce extensibility, neutrality and independence. It uses XML Information Set for its message format, and relies on application layer protocols, most often Hypertext Transfer Protocol (HTTP) or Simple Mail Transfer Protocol (SMTP), for message negotiation and transmission. SOAP allows processes running on disparate operating systems (such as Windows and Linux) to communicate using Extensible Markup Language (XML). Since Web protocols like HTTP are installed and running on all operating systems, SOAP allows clients to invoke web services and receive responses independent of language and platforms.
+ pageId 29215
+ dailyPageViews 2103
+ created 2001
+ backlinksCount 752
+ revisionCount 1982
+ appeared 1998
+
+standsFor Simple Object Access Protocol
+status historical
+fileType text
+wordRank 5253

@@ -1,7 +1,7 @@
+title cell
 appeared 2017
 type pl
-website http://cell-lang.net/
-github https://github.com/cell-lang
+
 example
  type AddUser = add_user(
   id:            UserId,
@@ -23,3 +23,17 @@ example
    // Setting the date_of_birth attribute, if available
    insert date_of_birth(id, self.date_of_birth) if self.date_of_birth?;
  }
+
+patterns
+ hasCentralPackageRepository? false
+
+githubRepo https://github.com/cell-lang
+
+website http://cell-lang.net/
+status active
+
+twitter cell_lang
+
+fileType text
+wordRank 695
+isOpenSource true

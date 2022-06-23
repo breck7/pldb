@@ -1,7 +1,41 @@
+title Nit
 appeared 2008
 type pl
-website https://nitlanguage.org/
-github https://github.com/nitlang/nit
+
 example
  print "Hello, World!"
+
+patterns
+ hasCentralPackageRepository? false
+
+githubLanguage Nit
+ fileExtensions nit
+ trendingProjectsCount 0
+
+githubRepo https://github.com/nitlang/nit
+ firstCommit 2008
+ stars 178
+ forks 55
+ subscribers 19
+ created 2009
+ updated 2018
+ description Nit language
+ issues 167
+
+linguistGrammarRepo https://github.com/R4PaSs/Sublime-Nit
+ firstCommit 2014
+ lastCommit 2015
+ committerCount 2
+ commitCount 7
+ sampleCount 24
+ example
+  print "hello world"
+  
+
+website https://nitlanguage.org/
 reference http://nitlanguage.org/nit.git/
+status active
+fileType text
+isOpenSource true
+
+rosettaCode Nit

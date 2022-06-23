@@ -1,3 +1,31 @@
+title Turbo Basic
 appeared 1987
 type pl
-wikipedia Turbo_Basic
+
+patterns
+ hasCentralPackageRepository? false
+
+wikipedia https://en.wikipedia.org/wiki/Turbo_Basic
+ example
+  #Compile Exe ' using either PBCC6 or PBWIN10 compiler
+  #Dim All
+  
+  Function PBMain 
+      Local GW As Dword
+      ' start a GRAPHIC WINDOW
+      Graphic Window New "graphic window", 100, 100, 200, 200 to GW
+      ' show a coloured disc
+      Graphic Ellipse (10, 10)-(190, 190), %rgb_Red, %rgb_SeaGreen, 0
+      ' wait for a keypress
+      Graphic Waitkey$
+  End Function
+ related turbo-basic-xl turbo-basic basic qbasic quickbasic algol assembly-language x86-isa mmx
+ summary PowerBASIC, formerly Turbo Basic, is the brand of several commercial compilers by PowerBASIC Inc. that compile a dialect of the BASIC programming language. There are both MS-DOS and Windows versions, and two kinds of the latter:  Console and Windows.  The MS-DOS version has a syntax similar to that of QBasic and QuickBASIC.  The Windows versions use a BASIC syntax expanded to include many Windows functions, and the statements can be combined with calls to the Windows API.
+ created 2002
+ backlinksCount 135
+ pageId 64316
+ revisionCount 109
+ dailyPageViews 12
+ appeared 1989
+
+status historical

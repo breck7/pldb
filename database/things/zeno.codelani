@@ -1,3 +1,27 @@
+title ZENO
 appeared 1995
 type pl
-wikipedia Zeno_(programming_language)
+
+patterns
+ hasCentralPackageRepository? false
+
+wikipedia https://en.wikipedia.org/wiki/Zeno_(programming_language)
+ example
+  2     3     5     7    11 
+     13    17    19    23    29 
+     31    37    41    43    47 
+     53    59    61    67    71 
+     73    79    83    89    97 
+    101   103   107   109   113
+ summary Zeno (after pre-Socratic Greek philosopher Zeno of Elea) is an imperative procedural programming language designed to be easy to learn and user friendly. Zeno is generic in the sense that it contains most of the essential elements used in other languages to develop real applications. The Zeno Interpreter was designed for use in Windows 95 and later Microsoft operating systems. The interpreter comes with built-in debugging tools, a source code text editor, and an on-line language reference.  Zeno was created by Stephen R. Schmitt and is maintained by Abecedarical Systems.
+ pageId 928636
+ created 2004
+ backlinksCount 5
+ revisionCount 25
+ dailyPageViews 7
+
+status historical
+country US
+fileType text
+
+hopl 838

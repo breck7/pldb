@@ -1,3 +1,52 @@
+title True BASIC
 appeared 1983
 type pl
-wikipedia True_BASIC
+
+patterns
+ hasCentralPackageRepository? false
+
+wikipedia https://en.wikipedia.org/wiki/True_BASIC
+ example
+  !Draw the Car
+  SET WINDOW 0,20,0,20
+  SET COLOR 5
+  BOX AREA 2,6,2,3
+  BOX AREA 9,13,2,3
+  BOX AREA 16,20,2,3
+  SET COLOR 249
+  PLOT LINES :0,5;20,5
+  FLOOD 10,1
+  BOX KEEP 0,20,0,5 IN road$
+  BOX CIRCLE 2,3,5,6
+  FLOOD 2.5,5.5
+  BOX CIRCLE 5,6,5,6
+  FLOOD 5.5,5.5
+  SET COLOR 35
+  PLOT LINES :2.5,6;5.5,6
+  PLOT LINES :5,6;8,6;8,8;6,8;6,10;2,10;2,8;0,8;0,6;3,6
+  FLOOD 4,8
+  SET COLOR 248
+  BOX AREA 4,5,8,9
+  
+  BOX KEEP 0,8,5,10 IN car$ !Save the car in 'car$'
+   
+  FOR x=1 TO 20 STEP 1 !Create a 'for' loop
+      BOX SHOW road$ AT 0,0
+      BOX SHOW car$ AT x,5  
+      PAUSE .1
+      CLEAR
+  NEXT x !End the 'for' loop
+  
+  END !End the programs
+ related basic dartmouth-basic microsoft-basic gw-basic trs-80-color-computer assembly-language cbasic isbn
+ summary True BASIC is a variant of the BASIC programming language descended from Dartmouth BASIC — the original BASIC — invented by college professors John G. Kemeny and Thomas E. Kurtz.
+ created 2001
+ backlinksCount 109
+ pageId 31382
+ revisionCount 137
+ dailyPageViews 23
+ appeared 1983
+
+status historical
+
+hopl 2590

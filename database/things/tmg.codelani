@@ -1,3 +1,21 @@
+title TMG language
 appeared 1968
 type grammarLanguage
-wikipedia TMG_(language)
+
+patterns
+ hasCentralPackageRepository? false
+
+wikipedia https://en.wikipedia.org/wiki/TMG_(language)
+ related unix pl-i fortran b bcpl yacc
+ summary TMG (TransMoGrifier) is a compiler-compiler created by Robert M. McClure and presented in 1968, and implemented by Douglas McIlroy. TMG ran on systems like OS360 and early Unix. It was used to build EPL, an early version of PL/I. Ken Thompson used TMG in 1970 on PDP-7 as a tool to offer Fortran, but ended up creating the B programming language which was much influenced by BCPL.
+ pageId 38020020
+ created 2012
+ backlinksCount 6
+ revisionCount 17
+ dailyPageViews 8
+ appeared 1968
+
+status historical
+fileType text
+
+hopl 242

@@ -1,5 +1,15 @@
+title Open Shading Language
 appeared 2008
 type pl
+
+wikipedia https://en.wikipedia.org/wiki/Open_Shading_Language
+ summary Open Shading Language (OSL) is a shading language developed by Sony Pictures Imageworks for use in its Arnold Renderer. It is also supported by Otoy's Octane Render, V-Ray 3, and by the Cycles render engine in Blender (starting with Blender 2.65). OSL's surface and volume shaders define how surfaces or volumes scatter light in a way that allows for importance sampling; thus, it is well suited for physically-based renderers that support ray tracing and global illumination.
+ backlinksCount 15
+ pageId 43647388
+ dailyPageViews 24
+
+githubRepo https://github.com/imageworks/openshadinglanguage
+ firstCommit 2008
+
 website http://openshadinglanguage.com
-github https://github.com/imageworks/openshadinglanguage
-wikipedia Open_Shading_Language
+status active

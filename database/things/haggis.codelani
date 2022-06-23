@@ -1,3 +1,33 @@
+title HAGGIS
 appeared 2010
 type pl
-wikipedia HAGGIS
+
+patterns
+ hasCentralPackageRepository? false
+
+wikipedia https://en.wikipedia.org/wiki/HAGGIS
+ example
+  CONSTRUCTOR( [Data Type][Data Name], [Data Type][Data Name]...)
+          The users' '''HAGGIS''' code will then go here.
+      END CONSTRUCTOR
+  
+      FUNCTION <Function Name>() RETURN <Data Type>
+          The users' '''HAGGIS''' code will then go here.
+          RETURN THIS <Class Property>
+      END FUNCTION
+      '''“THIS” is used to reference the current object invoking the method.'''
+  
+      PROCEDURE <Procedure Name> ()
+          The users' '''HAGGIS''' code will then go here.
+      END PROCEDURE
+ related python
+ summary HAGGIS is a high-level reference programming language used primarily to examine Computing Science for Scottish pupils taking SQA courses on the subject. HAGGIS is used as a tool to bridge the gap between pseudocode and typical computer programming. HAGGIS is not based on any one language but a mixture that is intended to allow a pupil familiar with any of the many languages used in classrooms to easily understand the syntactic construct being used in an example. It has multiple programming paradigms of functional, imperative and object-oriented to suit this purpose. There are three separate language definitions, one for each level at which computing is assessed by the SQA; these are proper subsets of each other, so for example any program contained by the National 5 level language is also well-defined at Higher and Advanced Higher levels. Higher includes the definition of procedures and functions and the use of record types and files, while Advanced Higher includes object-orientation. Online HAGGIS interpreters have been developed to provide a way for examiners and teachers to check their programs are correctly defined and behave as expected.
+ pageId 52222071
+ dailyPageViews 92
+ created 2016
+ backlinksCount 11
+ revisionCount 88
+ appeared 2010
+
+status historical
+fileType text

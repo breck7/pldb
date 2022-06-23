@@ -1,3 +1,18 @@
+title Lisp Machine Lisp
 appeared 1974
 type pl
-wikipedia Lisp_Machine_Lisp
+
+patterns
+ hasCentralPackageRepository? false
+
+wikipedia https://en.wikipedia.org/wiki/Lisp_Machine_Lisp
+ related lisp interlisp common-lisp flavors
+ summary Lisp Machine Lisp is a programming language, a dialect of the language Lisp. A direct descendant of Maclisp, it was initially developed in the mid to late 1970s as the system programming language for the Massachusetts Institute of Technology (MIT) Lisp machines. Lisp Machine Lisp was also the Lisp dialect with the most influence on the design of Common Lisp. Lisp Machine Lisp branched into three dialects. Symbolics named their variant ZetaLisp. Lisp Machines, Inc. and later Texas Instruments (with the TI Explorer) would share a common code base, but their dialect of Lisp Machine Lisp would differ from the version maintained at the MIT AI Lab by Richard Stallman and others.
+ created 2002
+ backlinksCount 74
+ pageId 47775
+ revisionCount 45
+ dailyPageViews 21
+ appeared 1976
+
+status historical

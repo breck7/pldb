@@ -1,4 +1,192 @@
+title Lisp Flavored Erlang
 appeared 2008
 type pl
-wikipedia LFE_(programming_language)
+
+patterns
+ hasCentralPackageRepository? false
+
+wikipedia https://en.wikipedia.org/wiki/LFE_(programming_language)
+ example
+  (defun parse-args (flag)
+    "Given one or more command-line arguments, extract the passed values.
+  
+    For example, if the following was passed via the command line:
+  
+      $ erl -my-flag my-value-1 -my-flag my-value-2
+  
+    One could then extract it in an LFE program by calling this function:
+  
+      (let ((args (parse-args 'my-flag)))
+        ...
+        )
+    In this example, the value assigned to the arg variable would be a list
+    containing the values my-value-1 and my-value-2."
+    (let ((`#(ok ,data) (init:get_argument flag)))
+      (lists:merge data)))
+  
+  (defun get-pages ()
+    "With no argument, assume 'url parameter was passed via command line."
+    (let ((urls (parse-args 'url)))
+      (get-pages urls)))
+  
+  (defun get-pages (urls)
+    "Start inets and make (potentially many) HTTP requests."
+    (inets:start)
+    (plists:map
+      (lambda (x)
+        (get-page x)) urls))
+  
+  (defun get-page (url)
+    "Make a single HTTP request."
+    (let* ((method 'get)
+           (headers '())
+           (request-data `#(,url ,headers))
+           (http-options ())
+           (request-options '(#(sync false))))
+      (httpc:request method request-data http-options request-options)
+      (receive
+        (`#(http #(,request-id #(error ,reason)))
+         (io:format "Error: ~p~n" `(,reason)))
+        (`#(http #(,request-id ,result))
+         (io:format "Result: ~p~n" `(,result))))))
+ related erlang common-lisp scheme elixir hy lisp
+ summary Lisp Flavored Erlang (LFE) is a functional, concurrent, general-purpose programming language and Lisp dialect built on top of Core Erlang and the Erlang Virtual Machine (BEAM). LFE builds on top of Erlang in order to provide a Lisp syntax for writing distributed, fault-tolerant, soft real-time, non-stop applications. LFE also extends Erlang to support meta-programming with Lisp macros and an improved developer experience with a feature-rich REPL. LFE is actively supported on all recent releases of Erlang; the oldest version of Erlang supported is R14.
+ pageId 41671035
+ created 2014
+ backlinksCount 33
+ revisionCount 54
+ dailyPageViews 37
+ appeared 2008
+ fileExtensions lfe hrl
+
+githubLanguage LFE
+ fileExtensions lfe
+ trendingProjectsCount 0
+
+linguistGrammarRepo https://github.com/textmate/lisp.tmbundle
+ firstCommit 2005
+ lastCommit 2018
+ committerCount 6
+ commitCount 40
+ sampleCount 4
+ example
+  ;; Copyright (c) 2013 Duncan McGreggor <oubiwann@cogitat.io>
+  ;;
+  ;; Licensed under the Apache License, Version 2.0 (the "License");
+  ;; you may not use this file except in compliance with the License.
+  ;; You may obtain a copy of the License at
+  ;;
+  ;;     http://www.apache.org/licenses/LICENSE-2.0
+  ;;
+  ;; Unless required by applicable law or agreed to in writing, software
+  ;; distributed under the License is distributed on an "AS IS" BASIS,
+  ;; WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  ;; See the License for the specific language governing permissions and
+  ;; limitations under the License.
+  
+  ;; File    : church.lfe
+  ;; Author  : Duncan McGreggor
+  ;; Purpose : Demonstrating church numerals from the lambda calculus
+  
+  ;; The code below was used to create the section of the user guide here:
+  ;;    http://lfe.github.io/user-guide/recursion/5.html
+  ;;
+  ;; Here is some example usage:
+  ;;
+  ;; > (slurp '"church.lfe")
+  ;; #(ok church)
+  ;; > (zero)
+  ;; #Fun<lfe_eval.10.53503600>
+  ;; > (church->int1 (zero))
+  ;; 0
+  ;; > (church->int1 (three))
+  ;; 3
+  ;; > (church->int1 (five))
+  ;; 5
+  ;; > (church->int2 #'five/0)
+  ;; 5
+  ;; > (church->int2 (lambda () (get-church 25)))
+  ;; 25
+  
+  (defmodule church
+    (export all))
+  
+  (defun zero ()
+    (lambda (s)
+      (lambda (x) x)))
+  
+  (defun one ()
+    (lambda (s)
+      (lambda (x)
+        (funcall s x))))
+  
+  (defun two ()
+    (lambda (s)
+      (lambda (x)
+        (funcall s
+          (funcall s x)))))
+  
+  (defun three ()
+    (lambda (s)
+      (lambda (x)
+        (funcall s
+          (funcall s
+            (funcall s x))))))
+  
+  (defun four ()
+    (lambda (s)
+      (lambda (x)
+        (funcall s
+          (funcall s
+            (funcall s
+              (funcall s x)))))))
+  
+  (defun five ()
+    (get-church 5))
+  
+  (defun int-successor (n)
+    (+ n 1))
+  
+  (defun church->int1 (church-numeral)
+    "
+    Converts a called church numeral to an integer, e.g.:
+    > (church->int1 (five))
+    "
+    (funcall
+      (funcall church-numeral #'int-successor/1) 0))
+  
+  (defun church->int2 (church-numeral)
+    "
+    Converts a non-called church numeral to an integer, e.g.:
+    > (church->int2 #'five/0)
+    "
+    (funcall
+      (funcall
+        (funcall church-numeral) #'int-successor/1) 0))
+  
+  (defun church-successor (church-numeral)
+    (lambda (s)
+      (lambda (x)
+        (funcall s
+          (funcall
+            (funcall church-numeral s) x)))))
+  
+  (defun get-church (church-numeral count limit)
+    (cond ((== count limit) church-numeral)
+          ((/= count limit)
+           (get-church
+             (church-successor church-numeral)
+             (+ 1 count)
+             limit))))
+  
+  (defun get-church (integer)
+    (get-church (zero) 0 integer))
+  
+
 reference https://lfe.io/
+standsFor Lisp Flavored Erlang
+status active
+fileType text
+isOpenSource true
+
+rosettaCode LFE

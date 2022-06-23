@@ -1,3 +1,38 @@
+title ProvideX
 appeared 1992
 type pl
-wikipedia ProvideX
+
+patterns
+ hasCentralPackageRepository? false
+
+wikipedia https://en.wikipedia.org/wiki/ProvideX
+ example
+  ! This example code shows some ways to do the traditional hello world.
+  !
+  begin
+     print 'CS', ! Clear Screen
+     ! Plain Text
+     print "Hello World!"
+  
+     ! Fonted Text (Error branch moves to next line if fonted text not available)
+     print (0,err=*next)'Font'("Arial,-16,B"), ! Use Bold 16pt Arial Font
+     print (0,err=*next)'Text'(@x(20),@y(2),"Hello World"),
+  
+     ! Move to the 2nd to last line on screen
+     print @(3,mxl(0)-2),"Press Enter: ",
+     input a$
+  
+     ! Message Box
+     msgbox "Hello World"+sep+sep+"This is a test message box.","Message Box"
+  end
+ related unix linux business-basic
+ summary ProvideX is a computer language and development environment derived from Business Basic (a business oriented derivative of BASIC) in the mid-1980s. ProvideX is available on several operating systems (Unix/Linux/Windows/Mac OS X) and includes not only the programming language but also file system, presentation layer interface, and other components.  The language is primarily designed for use in the development of business applications. Over the years since its inception and as the computer industry has changed, ProvideX has added functionality such as a graphical interface, client-server capabilities, access to external databases, web services, and, more recently, object-oriented programming capabilities. On October 8, 2010, PVX Plus Technologies announced that it has assumed all ongoing sales, development, and support of the ProvideX product line for Independent Software Vendors.  This brings the development of the language back under control of the original creator, Mike King and is the end result of almost 2 years of negotiations between Sage, EDIAS, and PVX Plus Technologies.
+ pageId 2276397
+ created 2005
+ backlinksCount 97
+ revisionCount 49
+ dailyPageViews 18
+ appeared 1992
+
+status historical
+fileType text

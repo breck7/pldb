@@ -1,3 +1,20 @@
+title PL/P
 appeared 1978
 type pl
-wikipedia PL/P
+
+patterns
+ hasCentralPackageRepository? false
+
+wikipedia https://en.wikipedia.org/wiki/PL/P
+ related pl-i c
+ summary The PL/P programming language (an acronym of Programming Language for Prime (computers)) is a mid-level programming language developed by Prime Computer to serve as their second primary system programming language after Fortran IV.  PL/P was a subset of PL/I. Additions to the PRIMOS operating system for Prime 50 Series computers were written mostly in PL/P in later years.  Certain PRIMOS modules written in Fortran IV during PRIMOS's early years were rewritten in PL/P.  PL/P was the most widespread compiled programming language used for commercial PRIMOS applications, outpacing the use of the Prime C compiler, the CPL (PRIMOS) scripting language, and the Fortran IV compiler in commercial applications.
+ created 2005
+ backlinksCount 10
+ pageId 1960521
+ revisionCount 19
+ dailyPageViews 26
+ appeared 2009
+
+status historical
+
+hopl 2380

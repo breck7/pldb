@@ -1,7 +1,7 @@
+title tornado
 appeared 2009
 type template
-website http://www.tornadoweb.org/en/stable/guide/templates.html
-github https://github.com/tornadoweb/tornado
+
 example
  <html>
    <head>
@@ -15,3 +15,23 @@ example
      </ul>
    </body>
  </html>
+
+patterns
+ hasCentralPackageRepository? false
+
+githubRepo https://github.com/tornadoweb/tornado
+ firstCommit 2009
+ stars 16748
+ forks 4754
+ subscribers 1072
+ created 2009
+ updated 2018
+ description Tornado is a Python web framework and asynchronous networking library, originally developed at FriendFeed.
+ issues 144
+
+website http://www.tornadoweb.org/en/stable/guide/templates.html
+status active
+fileType text
+isOpenSource true
+
+codeMirror tornado

@@ -1,4 +1,56 @@
+title Xojo
 appeared 1996
 type pl
+
+patterns
+ hasCentralPackageRepository? false
+ hasComments? true
+
+wikipedia https://en.wikipedia.org/wiki/Xojo
+ related linux ios basic jvm x86-isa xml visual-basic gambas
+ summary The Xojo programming environment is developed and commercially marketed by Xojo, Inc of Austin, Texas for software development targeting macOS, Microsoft Windows, Linux, iOS, the Web and Raspberry Pi. Xojo uses a proprietary object-oriented BASIC dialect, also known as Xojo.
+ pageId 39624220
+ dailyPageViews 70
+ created 2013
+ backlinksCount 138
+ revisionCount 281
+ appeared 1996
+
+githubLanguage Xojo
+ fileExtensions xojo_code xojo_menu xojo_report xojo_script xojo_toolbar xojo_window
+ trendingProjectsCount 0
+
+linguistGrammarRepo https://github.com/angryant0007/VBDotNetSyntax
+ firstCommit 2012
+ lastCommit 2017
+ committerCount 4
+ commitCount 61
+ sampleCount 6
+ example
+  #tag Toolbar
+  Begin Toolbar MyToolbar
+  	Begin ToolButton FirstItem
+  		Caption = "First Item"
+  		HelpTag = ""
+  		Style = 0
+  	End
+  	Begin ToolButton SecondItem
+  		Caption = "Second Item"
+  		HelpTag = ""
+  		Style = 0
+  	End
+  End
+  #tag EndToolbar
+  
+
 website http://xojo.com
-wikipedia Xojo
+status active
+
+twitter xojo
+
+fileType text
+isOpenSource false
+
+tiobe Xojo
+
+rosettaCode Xojo

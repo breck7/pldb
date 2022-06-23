@@ -1,3 +1,43 @@
+title Scilab
 appeared 1990
 type pl
-wikipedia Scilab
+
+patterns
+ hasCentralPackageRepository? false
+ hasComments? true
+
+wikipedia https://en.wikipedia.org/wiki/Scilab
+ example
+  // A simple plot of z = f(x,y)
+  t=[0:0.3:2*%pi]';
+  z=sin(t)*cos(t');
+  plot3d(t,t,z)
+ related c java fortran freebsd linux matlab octave modelica simulink sagemath
+ summary Scilab is an open source, cross-platform numerical computational package and a high-level, numerically oriented programming language. It can be used for signal processing, statistical analysis, image enhancement, fluid dynamics simulations, numerical optimization, and modeling, simulation of explicit and implicit dynamical systems and (if the corresponding toolbox is installed) symbolic manipulations. Scilab is one of the two major open-source alternatives to MATLAB, the other one being GNU Octave. Scilab is similar enough to MATLAB that some book authors (who use it) argue that it is easy to transfer skills between the two systems. Scilab however puts less emphasis on (bidirectional) syntactic compatibility with MATLAB than Octave does.
+ pageId 153563
+ dailyPageViews 214
+ created 2002
+ backlinksCount 147
+ revisionCount 432
+ appeared 1990
+
+githubLanguage Scilab
+ fileExtensions sci sce tst
+ trendingProjectsCount 0
+
+linguistGrammarRepo https://github.com/textmate/scilab.tmbundle
+ firstCommit 2007
+ lastCommit 2012
+ committerCount 2
+ commitCount 5
+ sampleCount 3
+ example
+  disp(%pi);
+  
+  
+
+status active
+fileType text
+isOpenSource true
+
+rosettaCode Scilab

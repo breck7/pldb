@@ -1,4 +1,89 @@
+title CWEB
 appeared 1987
 type pl
+
+patterns
+ hasCentralPackageRepository? false
+
+wikipedia https://en.wikipedia.org/wiki/CWEB
+ example
+  % This file is part of CWEB.
+   % This program by Silvio Levy and Donald E. Knuth
+   % is based on a program by Knuth.
+   % It is distributed WITHOUT ANY WARRANTY, express or implied.
+   % Version 3.64 --- January 2002
+   
+   % Copyright (C) 1987,1990,1993,2000 Silvio Levy and Donald E. Knuth 
+   
+   % Permission is granted to make and distribute verbatim copies of this
+   % document provided that the copyright notice and this permission notice
+   % are preserved on all copies.
+   
+   % Permission is granted to copy and distribute modified versions of this
+   % document under the conditions for verbatim copying, provided that the
+   % entire resulting derived work is given a different name and distributed
+   % under the terms of a permission notice identical to this one.
+ related tex c java pascal
+ summary CWEB is a computer programming system created by Donald Knuth and Silvio Levy as a follow-up to Knuth's WEB literate programming system, using the C programming language (and to a lesser extent the C++ and Java programming languages) instead of Pascal. Like WEB, it consists of two primary programs: CTANGLE, which produces compilable C code from the source texts, and CWEAVE, which produces nicely-formatted printable documentation using TeX.
+ pageId 87398
+ created 2002
+ backlinksCount 94
+ revisionCount 73
+ dailyPageViews 31
+ appeared 1987
+
+githubLanguage CWeb
+ fileExtensions w
+ trendingProjectsCount 0
+
+example
+ \datethis
+ @*Intro. This program generates clauses for the transition relation
+ from time $t$ to time $t+1$ in Conway's Game of Life, assuming that
+ all of the potentially live cells at time $t$ belong to a pattern
+ that's specified in |stdin|. The pattern is defined by one or more
+ lines representing rows of cells, where each line has `\..' in a
+ cell that's guaranteed to be dead at time~$t$, otherwise it has `\.*'.
+ The time is specified separately as a command-line parameter.
+ 
+ The Boolean variable for cell $(x,y)$ at time $t$ is named by its
+ so-called ``xty code,'' namely by the decimal value of~$x$, followed
+ by a code letter for~$t$, followed by the decimal value of~$y$. For
+ example, if $x=10$ and $y=11$ and $t=0$, the variable that indicates
+ liveness of the cell is \.{10a11}; and the corresponding variable
+ for $t=1$ is \.{10b11}.
+ 
+ Up to 19 auxiliary variables are used together with each xty code,
+ in order to construct clauses that define the successor state.
+ The names of these variables are obtained by appending one of
+ the following two-character combinations to the xty code:
+ \.{A2}, \.{A3}, \.{A4},
+ \.{B1}, \.{B2}, \.{B3}, \.{B4},
+ \.{C1}, \.{C2}, \.{C3}, \.{C4},
+ \.{D1}, \.{D2},
+ \.{E1}, \.{E2},
+ \.{F1}, \.{F2},
+ \.{G1}, \.{G2}.
+ These variables are derived from the Bailleux--Boufkhad method
+ of encoding cardinality constraints:
+ The auxiliary variable \.{A$k$} stands for the condition
+ ``at least $k$ of the eight neighbors are alive.'' Similarly,
+ \.{B$k$} stands for ``at least $k$ of the first four neighbors
+ are alive,'' and \.{C$k$} accounts for the other four neighbors.
+ Codes \.D, \.E, \.F, and~\.G refer to pairs of neighbors.
+ Thus, for instance, \.{10a11C2} means that at least two of the
+ last four neighbors of cell $(10,11)$ are alive.
+ 
+ Those auxiliary variables receive values by means of up to 77 clauses per cell.
+ For example, if $u$ and~$v$ are the neighbors of cell~$z$ that correspond
+ to a pairing of type~\.D, there are six clauses
+ $$\bar u d_1,\quad
+   \bar v d_1,\quad
+
 website http://www-cs-faculty.stanford.edu/~uno/cweb.html
-wikipedia CWEB
+status active
+country NL
+fileType text
+isOpenSource true
+
+hopl 1939

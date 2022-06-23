@@ -1,3 +1,36 @@
+title Nested Interactive Array Language
 appeared 1981
 type pl
-wikipedia Nial
+
+patterns
+ hasCentralPackageRepository? false
+
+wikipedia https://en.wikipedia.org/wiki/Nial
+ example
+  quicksort is fork [ >= [1 first,tally],
+     pass,
+     link [
+         quicksort sublist [ < [pass, first], pass ],
+         sublist [ match [pass,first],pass ],
+         quicksort sublist [ > [pass,first], pass ]
+     ]
+  ]
+ summary Nial (from "Nested Interactive Array Language") is a high-level array programming language developed from about 1981 by Mike Jenkins of Queen's University, Kingston, Ontario, Canada.  Jenkins co-created the Jenkins–Traub algorithm. Nial combines a functional programming notation for arrays based on an array theory developed by Trenchard More with structured programming concepts for numeric, character and symbolic data. It is most often used for prototyping and artificial intelligence.
+ pageId 21571
+ created 2001
+ backlinksCount 30
+ revisionCount 125
+ dailyPageViews 21
+ appeared 1981
+
+standsFor Nested Interactive Array Language
+status historical
+
+tryItOnline nial
+
+country CA
+fileType text
+
+hopl 1242
+
+rosettaCode Nial

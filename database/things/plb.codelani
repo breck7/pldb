@@ -1,3 +1,45 @@
+title Programming Language for Business
 appeared 1972
 type pl
-wikipedia Programming_Language_for_Business
+
+patterns
+ hasCentralPackageRepository? false
+
+wikipedia https://en.wikipedia.org/wiki/Programming_Language_for_Business
+ example
+  IF (DF_EDIT[ITEM] = "PHYS")
+             STATESAVE MYSTATE
+             IF (C_F07B != 2)
+                DISPLAY   *SETSWALL 1:1:1:80:
+                          *BGCOLOR=2,*COLOR=15:
+                          *P49:1," 7-Find "
+             ELSE
+                DISPLAY   *SETSWALL 1:1:1:80:
+                          *BGCOLOR=7,*COLOR=0:
+                          *P49:1," 7-Find "
+             ENDIF
+             STATEREST MYSTATE
+             TRAP      GET_PRO NORESET IF F7
+          ENDIF
+          IF (SHOW_FILTER AND THIS_FILTER AND C_CUSTNO <> "MAG")
+             LOADMOD   "filter"
+             PACK      PASS_ID WITH "QED     ",QED_ID1,BLANKS
+             MOVE      " FILTER DISPLAY (F6)        " TO PASS_DESC
+             SET C_BIGFLT
+             CALL      RUN_FILT USING PASS_ID,PASS_DESC,"432"
+             UNLOAD    "filter"
+             CLEAR     THIS_FILTER
+          ENDIF
+ related cobol java unix linux visual-basic sql xml
+ summary Programming Language for Business or PL/B is a business-oriented programming language originally called DATABUS and designed by Datapoint in 1972 as an alternative to COBOL because Datapoint's 8-bit computers could not fit COBOL into their limited memory, and because COBOL did not at the time have facilities to deal with Datapoint's built-in keyboard and screen. A version of DATABUS became an ANSI standard, and the name PL/B came about when Datapoint chose not to release its trademark on the DATABUS name.
+ pageId 350323
+ created 2003
+ backlinksCount 10
+ revisionCount 82
+ dailyPageViews 19
+ appeared 1972
+ fileExtensions rl ps cb
+
+standsFor Programming Language for Business
+status historical
+fileType text

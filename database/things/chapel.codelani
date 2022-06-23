@@ -1,6 +1,68 @@
+title CHAPEL
 appeared 2004
 type pl
+
+patterns
+ hasCentralPackageRepository? false
+ hasComments? true
+
+wikipedia https://en.wikipedia.org/wiki/Chapel_(programming_language)
+ related ada csharp c fortran java fortress unified-parallel-c x10 isbn
+ summary Chapel, the Cascade High Productivity Language, is a parallel programming language developed by Cray. It is being developed as part of the Cray Cascade project, a participant in DARPA's High Productivity Computing Systems (HPCS) program, which had the goal of increasing supercomputer productivity by the year 2010. It is being developed as an open source project, under version 2 of the Apache license.
+ pageId 6776794
+ dailyPageViews 63
+ created 2006
+ backlinksCount 198
+ revisionCount 122
+ appeared 2009
+ fileExtensions chpl
+
+githubLanguage Chapel
+ fileExtensions chpl
+ trendingProjectsCount 0
+
+githubRepo https://github.com/chapel-lang/chapel
+ stars 567
+ forks 153
+ subscribers 57
+ created 2014
+ updated 2017
+ firstCommit 2009
+ description a Productive Parallel Programming Language
+ issues 1232
+
+linguistGrammarRepo https://github.com/chapel-lang/chapel-tmbundle
+ firstCommit 2011
+ lastCommit 2018
+ committerCount 7
+ commitCount 40
+ sampleCount 5
+ example
+  writeln("Hello, world!");    // print 'Hello, world!' to the console
+  
+
 website https://chapel-lang.org/
-github https://github.com/chapel-lang/chapel
-wikipedia Chapel_(programming_language)
 reference https://ieeexplore.ieee.org/document/1299190
+status active
+
+tryItOnline chapel
+
+twitter ChapelLanguage
+
+country US
+fileExtensions chpl
+fileType text
+wordRank 6683
+isOpenSource true
+
+projectEuler Chapel
+ memberCount
+  2019 8
+  2022 11
+
+hopl 8171
+
+rosettaCode Chapel
+
+corporateDevelopers Cray
+writtenIn chapel

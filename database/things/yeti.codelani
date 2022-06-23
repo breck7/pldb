@@ -1,7 +1,7 @@
+title yeti
 appeared 2007
 type pl
-website http://mth.github.io/yeti/
-github https://github.com/mth/yeti
+
 example
  ack m n =
      if m == 0 then
@@ -13,3 +13,16 @@ example
      fi;
  
  println "ack 3 8 = \(ack 3 8)"
+
+githubRepo https://github.com/mth/yeti
+ firstCommit 2007
+ stars 190
+ forks 15
+ subscribers 16
+ created 2008
+ updated 2019
+ description Functional programming language for JVM.
+ issues 3
+
+website http://mth.github.io/yeti/
+webRepl http://try-yeti.appspot.com/

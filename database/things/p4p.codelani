@@ -1,7 +1,7 @@
+title p4p
 appeared 2010
 type pl
-website http://shriram.github.com/p4p/
-github https://github.com/shriram/p4p
+
 example
  defvar: m = 10
  defvar: this-better-be-6 = add(1, 2, 3)
@@ -27,5 +27,20 @@ example
       1
     else:
       add(fib(sub1(n)), fib(sub(n, 2)))
-reference http://shriram.github.io/p4p/
+
+patterns
+ hasSemanticIndentation? true
+
 description an alternate syntax for Racket.
+
+githubRepo https://github.com/shriram/p4p
+ firstCommit 2010
+ stars 10
+ forks 2
+ subscribers 1
+ created 2010
+ updated 2019
+ description An alternate syntax for Racket
+
+website http://shriram.github.com/p4p/
+reference http://shriram.github.io/p4p/

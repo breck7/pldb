@@ -1,3 +1,38 @@
+title Pop-11
 appeared 1999
 type pl
-wikipedia POP-11
+
+patterns
+ hasCentralPackageRepository? false
+ hasMultipleInheritance? true
+
+wikipedia https://en.wikipedia.org/wiki/POP-11
+ example
+  define RemoveElementsMatching(Element, Source) -> Result;
+       lvars Index;
+       [[%
+       for Index in Source do
+           unless Index = Element or Index matches Element then
+               Index;
+           endunless;
+       endfor;
+       %]] -> Result;
+   enddefine;
+  
+   RemoveElementsMatching("the", [[the cat sat on the mat]]) => ;;; outputs [[cat sat on mat]]
+   RemoveElementsMatching("the", [[the cat] [sat on] the mat]) => ;;; outputs [[the cat] [sat on] mat]
+   RemoveElementsMatching([[= cat]], [[the cat]] is a [[big cat]]) => ;;; outputs [[is a]]
+ related poplog pop-2 forth prolog common-lisp standard-ml cowsel
+ summary POP-11 is a reflective, incrementally compiled programming language with many of the features of an interpreted language. It is the core language of the Poplog programming environment developed originally by the University of Sussex, and recently in the School of Computer Science at the University of Birmingham which hosts the Poplog website. POP-11 is an evolution of the language POP-2, developed in Edinburgh University and features an open stack model (like Forth, among others). It is mainly procedural, but supports declarative language constructs, including a pattern matcher and is mostly used for research and teaching in Artificial Intelligence, although it has features sufficient for many other classes of problems. It is often used to introduce symbolic programming techniques to programmers of more conventional languages like Pascal, who find POP syntax more familiar than that of Lisp. One of POP-11's features is that it supports first-class functions. Pop-11 is the core language of the Poplog system. The fact that the compiler and compiler subroutines are available at run-time (a requirement for incremental compilation) gives it the ability to support a far wider range of extensions than would be possible using only a macro facility. This made it possible for incremental compilers to be added for Prolog, Common Lisp and Standard ML, which could be added as required to support either mixed language development or development in the second language without using any Pop-11 constructs. This made it possible for Poplog to be used by teachers, researchers, or developers who were interested in only one of the languages. The most successful product developed in Pop-11 was the Clementine data-mining system, developed by ISL, as described in the entry on Poplog. After SPSS bought ISL they decided to port Clementine to C++ and Java, and eventually succeeded with great effort (and perhaps some loss of the flexibility provided by the use of an AI language!). As explained in the entries for Poplog and POP-2, Pop-11 was for a time available only as part of an expensive commercial package (Poplog), but since about 1999 it has been freely available as part of the Open Source version of Poplog, including various additional packages and teaching libraries. An online version of ELIZA using Pop-11 is available at Birmingham. At the University of Sussex David Young used Pop-11 in combination with C and Fortran to develop a suite of teaching and interactive development tools for image processing and vision, and has made them available in the Popvision extension to Poplog.
+ pageId 562827
+ created 2004
+ backlinksCount 26
+ revisionCount 75
+ dailyPageViews 18
+ appeared 1999
+
+status historical
+country GB
+fileType text
+
+hopl 689

@@ -1,6 +1,7 @@
+title qed-lang
 appeared 2015
 type pl
-website https://qed-lang.org
+
 example
  void Button(string text) {
      int col = 0xC0C0C0; @out("  " + text + "  ")
@@ -11,3 +12,7 @@ example
  println("Form 2 clicked");
  Button("Quit");
  return(0);
+
+website https://qed-lang.org
+
+twitter qedlang

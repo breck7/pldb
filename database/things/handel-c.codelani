@@ -1,3 +1,34 @@
+title Handel-C
 appeared 1996
 type pl
-wikipedia Handel-C
+
+patterns
+ hasCentralPackageRepository? false
+
+wikipedia https://en.wikipedia.org/wiki/Handel-C
+ example
+  int a;
+  
+  void main(void)
+  {
+     int b;
+     /* "a" and "b" are within scope */
+     {
+       int c;
+       /* "a", "b" and "c" are within scope */ 
+     }
+     {
+       int d;
+       /* "a", "b" and "d" are within scope */  
+     }
+  }
+ related c csp occam fpgac
+ summary Handel-C is a high-level programming language which targets low-level hardware, most commonly used in the programming of FPGAs. It is a rich subset of C, with non-standard extensions to control hardware instantiation with an emphasis on parallelism.  Handel-C is to hardware design what the first high-level programming languages were to programming CPUs.  Unlike many other design languages that target a specific architecture Handel-C can be compiled to a number of design languages and then synthesised to the corresponding hardware.  This frees developers to concentrate on the programming task at hand rather than the idiosyncrasies of a specific design language and architecture.
+ created 2006
+ backlinksCount 98
+ pageId 4244144
+ revisionCount 64
+ dailyPageViews 17
+ appeared 1996
+
+status historical

@@ -1,4 +1,25 @@
+title Newspeak programming language
 appeared 2006
 type pl
+
+patterns
+ hasCentralPackageRepository? false
+
+wikipedia https://en.wikipedia.org/wiki/Newspeak_(programming_language)
+ example
+  HelloBraveNewWorld usingPlatform: platform = ( 
+   platform Transcript open show: 'Hello, Oh Brave new world'. 
+  )
+ related smalltalk self beta
+ summary Newspeak is a programming language and platform in the tradition of Smalltalk and Self being developed by a team led by Gilad Bracha. The platform includes an IDE, a GUI library, and standard libraries. Starting in 2006, Cadence Design Systems funded its development and employed the main contributors, but ceased funding in January 2009. Newspeak is a class based language. Classes may be nested, as in BETA. This is one of the key differences between Newspeak and Smalltalk. All names in Newspeak are late-bound, and are interpreted as message sends, as in Self. Newspeak is distinguished by its unusual approach to modularity. The language has no global namespace. Top level classes act as module declarations. Module declarations are first class values (i.e., they may be stored in variables, passed as parameters, returned from methods, etc.) and are stateless.
+ pageId 24308364
+ dailyPageViews 17
+ created 2009
+ backlinksCount 16
+ revisionCount 59
+ appeared 2006
+
 website http://newspeaklanguage.org/
-wikipedia Newspeak_(programming_language)
+status historical
+fileType text
+isOpenSource true

@@ -1,4 +1,91 @@
+title Harbour
 appeared 1999
 type pl
+
+patterns
+ hasCentralPackageRepository? false
+
+wikipedia https://en.wikipedia.org/wiki/Harbour_(programming_language)
+ example
+  #include "hbclass.ch"
+  
+   PROCEDURE Main()
+  
+      LOCAL oPerson
+  
+      CLS
+  
+      oPerson := Person():New( "Dave" )
+  
+      oPerson:Eyes := "Invalid"
+  
+      oPerson:Eyes := "Blue"
+  
+      Alert( oPerson:Describe() )
+  
+      RETURN
+  
+   CREATE CLASS Person
+  
+      VAR Name INIT ""
+  
+      METHOD New( cName )
+      METHOD Describe()
+  
+      ACCESS Eyes INLINE ::pvtEyes
+      ASSIGN Eyes( x ) INLINE iif( HB_ISSTRING( x ) .AND. x $ "Blue,Brown,Green", ::pvtEyes := x, Alert( "Invalid value" ) )
+  
+      PROTECTED:
+  
+      VAR pvtEyes
+  
+   ENDCLASS
+  
+   // Sample of normal Method definition
+   METHOD New( cName ) CLASS Person
+  
+      ::Name := cName
+  
+      RETURN Self
+  
+   METHOD Describe() CLASS Person
+  
+      LOCAL cDescription
+  
+      IF Empty( ::Name )
+         cDescription := "I have no name yet."
+      ELSE
+         cDescription := "My name is: " + ::Name + ";"
+      ENDIF
+  
+      IF ! Empty( ::Eyes )
+         cDescription += "my eyes' color is: " + ::Eyes
+      ENDIF
+  
+      RETURN cDescription
+ related clipper dbase linux unix ios android tcp mysql postgresql sqlite xbase c java visual-foxpro visual-objects xbasepp
+ summary Harbour is a modern computer programming language, primarily used to create database/business programs. It is a modernized, open sourced and cross-platform version of the older Clipper system, which in turn developed from the dBase database market of the 1980s and 90s. Harbour code using the same databases can be compiled under a wide variety of platforms, including Microsoft Windows, Linux, Unix variants, several BSD descendants, Mac OS X, MINIX 3, Windows CE, Pocket PC, Symbian, iOS, Android, QNX, VxWorks, OS/2/eComStation, BeOS/Haiku,  AIX and MS-DOS.
+ pageId 1882856
+ created 2010
+ backlinksCount 49
+ revisionCount 1
+ dailyPageViews 2
+ appeared 1999
+ fileExtensions prg ch hb hbp
+
+githubLanguage Harbour
+ fileExtensions hb
+ trendingProjectsCount 0
+
+linguistGrammarRepo https://github.com/hernad/atom-language-harbour
+ firstCommit 2014
+ lastCommit 2017
+ committerCount 7
+ commitCount 157
+
 website https://harbour.github.io/
-wikipedia Harbour_(programming_language)
+status active
+fileType text
+isOpenSource true
+
+rosettaCode Harbour

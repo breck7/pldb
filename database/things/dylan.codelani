@@ -1,4 +1,62 @@
+title Dylan
 appeared 1992
 type pl
+
+patterns
+ hasMultipleDispatch? true
+ hasCentralPackageRepository? false
+ hasComments? true
+ hasMultipleInheritance? true
+
+wikipedia https://en.wikipedia.org/wiki/Dylan_(programming_language)
+ example
+  define method turn-blue (w :: <window>)
+    w.color := $blue;
+  end method;
+ related algol scheme eulisp lasso python ruby common-lisp unix java smalltalk
+ summary Dylan  is a multi-paradigm programming language that includes support for functional and object-oriented programming, and is dynamic and reflective while providing a programming model designed to support efficient machine code generation, including fine-grained control over dynamic and static behaviors. It was created in the early 1990s by a group led by Apple Computer. A concise and thorough overview of the language may be found in the Dylan Reference Manual. Dylan derives from Scheme and Common Lisp and adds an integrated object system derived from the Common Lisp Object System (CLOS). In Dylan, all values (including numbers, characters, functions, and classes) are first-class objects. Dylan supports multiple inheritance, polymorphism, multiple dispatch, keyword arguments, object introspection, pattern-based syntax extension macros, and many other advanced features. Programs can express fine-grained control over dynamism, admitting programs that occupy a continuum between dynamic and static programming and supporting evolutionary development (allowing for rapid prototyping followed by incremental refinement and optimization). Dylan's main design goal is to be a dynamic language well-suited for developing commercial software. Dylan attempts to address potential performance issues by introducing "natural" limits to the full flexibility of Lisp systems, allowing the compiler to clearly understand compilable units (i.e., libraries). Although deriving much of its semantics from Scheme and other Lisps—some implementations were in fact initially built within existing Lisp systems—Dylan has an ALGOL-like syntax rather than a Lisp-like prefix syntax.
+ pageId 8741
+ dailyPageViews 73
+ created 2002
+ backlinksCount 91
+ revisionCount 299
+ appeared 1992
+
+githubLanguage Dylan
+ fileExtensions dylan dyl intr lid
+ trendingProjectsCount 0
+
+helloWorldCollection Dylan
+ module:			hello-world
+ author:			Homer
+ copyright:		(c) 1994 Homer
+ version:		1.0
+ 
+ // Hello World in DYLAN
+ 
+ define method main (#rest args)
+   princ("Hello world!");
+ end;
+ 
+ main();
+ 
+
+linguistGrammarRepo https://github.com/textmate/dylan.tmbundle
+ firstCommit 2005
+ lastCommit 2011
+ committerCount 5
+ commitCount 20
+
 website http://opendylan.org
-wikipedia Dylan_(programming_language)
+status active
+country GB
+fileType text
+wordRank 9298
+
+tiobe Dylan
+
+hopl 1682
+
+codeMirror dylan
+
+rosettaCode Dylan

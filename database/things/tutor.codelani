@@ -1,3 +1,29 @@
+title TUTOR programming language
 appeared 1969
 type pl
-wikipedia TUTOR_(programming_language)
+
+patterns
+ hasCentralPackageRepository? false
+
+wikipedia https://en.wikipedia.org/wiki/TUTOR_(programming_language)
+ example
+  unit    someu
+          NAME1,NAME2,NAME3(SIZE)
+          NAME4=CONSTANT
+          floating:NAME5,NAME6,NAME7(SIZE)
+          integer, NUM BITS:NAME8,NAME9
+          integer, NUM BITS,signed:NAME10
+          integer:NAME11
+ related cobol python c pascal ascii
+ summary TUTOR (also known as PLATO Author Language) is a programming language developed for use on the PLATO system at the University of Illinois at Urbana-Champaign around 1965. TUTOR was initially designed by Paul Tenczar for use in computer assisted instruction (CAI) and computer managed instruction (CMI) (in computer programs called "lessons") and has many features for that purpose. For example, TUTOR has powerful answer-parsing and answer-judging commands, graphics, and features to simplify handling student records and statistics by instructors. TUTOR's flexibility, in combination with PLATO's computational power (running on what was considered a supercomputer in 1972), also made it suitable for the creation of many non-educational lessons—that is, games—including flight simulators, war games, dungeon style multiplayer role-playing games, card games, word games, and medical lesson games such as Bugs and Drugs (BND).
+ pageId 3281107
+ dailyPageViews 17
+ created 2005
+ backlinksCount 27
+ revisionCount 147
+ appeared 1972
+
+status historical
+fileType text
+
+hopl 788

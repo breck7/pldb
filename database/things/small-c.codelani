@@ -1,4 +1,20 @@
+title Small-C
 appeared 1980
 type pl
-wikipedia Small-C
+
+patterns
+ hasCentralPackageRepository? false
+
+wikipedia https://en.wikipedia.org/wiki/Small-C
+ related c unix assembly-language tinyc-compiler
+ summary Small-C is both a subset of the C programming language, suitable for resource-limited microcomputers and embedded systems, and an implementation of that subset. Originally valuable as an early compiler for microcomputer systems available during the late 1970s and early 1980s, the implementation has also been useful as an example simple enough for teaching purposes. The original compiler, written in Small-C for the Intel 8080 by Ron Cain, appeared in the May 1980 issue of Dr. Dobb's Journal of Computer Calisthenics & Orthodontia. James E. Hendrix improved and extended the original compiler, and wrote The Small-C Handbook. Ron bootstrapped Small-C on the SRI International PDP 11/45 Unix system with an account provided by John Bass for Small C development. The provided source code was released with management permission into the public domain. Small-C was important for tiny computers in a manner somewhat analogous to the importance of GCC for larger computers. Just like its Unix counterparts, the compiler generates assembler code, which then must be translated to machine code by an available assembler. Small-C is a retargetable compiler. Porting Small-C requires only that the back-end code generator be rewritten for the target processor.
+ backlinksCount 20
+ pageId 98145
+ dailyPageViews 33
+ created 2002
+ appeared 1980
+
 reference https://semanticscholar.org/paper/2f227e7312a4176b28168e024f80303a6e8890b4
+status historical
+
+hopl 932

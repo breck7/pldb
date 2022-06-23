@@ -1,6 +1,7 @@
+title scribble
 appeared 1997
 type pl
-github https://github.com/racket/scribble
+
 example
  #lang scribble/doc
  @(require scribble/manual "utils.rkt"
@@ -26,3 +27,14 @@ example
  with @racket[require], in which case it provides all of the same
  bindings, but without setting the reader or setting the default
  rendering format to the Racket manual format.}
+
+githubRepo https://github.com/racket/scribble
+ firstCommit 1997
+ stars 82
+ forks 52
+ subscribers 33
+ created 2014
+ updated 2019
+ issues 69
+
+status active

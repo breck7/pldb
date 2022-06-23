@@ -1,3 +1,28 @@
+title Qualcomm Hexagon
 appeared 2006
 type assembly
-wikipedia Qualcomm_Hexagon
+
+patterns
+ hasCentralPackageRepository? false
+
+wikipedia https://en.wikipedia.org/wiki/Qualcomm_Hexagon
+ example
+  { R17:16 = MEMD(R0++M1)
+    MEMD(R6++M1) = R25:24
+    R20 = CMPY(R20, R8):<<1:rnd:sat
+    R11:10 = VADDH(R11:10, R13:12)
+  }:endloop0
+ related linux llvmir
+ summary Hexagon (QDSP6) is the brand for a family of 32-bit multi-threaded microarchitectures implementing the same instruction set for a digital signal processor (DSP) developed by Qualcomm. According to 2012 estimation, Qualcomm shipped 1.2 billion DSP cores inside its system on a chip (SoCs) (average 2.3 DSP core per SoC) in 2011 year, and 1.5 billion cores were planned for 2012, making the QDSP6 the most shipped architecture of DSP (CEVA had around 1 billion of DSP cores shipped in 2011 with 90% of IP-licenseable DSP market). The Hexagon architecture is designed to deliver performance with low power over a variety of applications. It has features such as hardware assisted multithreading, privilege levels, Very Long Instruction Word (VLIW), Single Instruction, Multiple Data (SIMD), and instructions geared toward efficient signal processing. The CPU is capable of in-order dispatching up to 4 instructions (the packet) to 4 Execution Units every clock. Hardware multithreading is implemented as barrel temporal multithreading - threads are switched in round-robin fashion each cycle, so the 600 MHz physical core is presented as three logical 200 MHz cores before V5. Hexagon V5 switched to dynamic multithreading (DMT) with thread switch on L2 misses, interrupt waiting or on special instructions.
+ pageId 34469129
+ dailyPageViews 117
+ created 2012
+ backlinksCount 29
+ revisionCount 105
+ appeared 2011
+
+status historical
+fileType text
+linkedInSkill hexagon
+ peopleWithThisSkillCount 1021
+corporateDevelopers Qualcomm

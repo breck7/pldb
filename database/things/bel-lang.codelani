@@ -1,7 +1,11 @@
+title Biological Expression Language
 appeared 2003
 type textDataFormat
-website http://openbel.org/
+
 example
  r(HGNC:CFTR, var("r.1653_1655delcuu"))
  r(REF:"NM_000492.3", var("r.1653_1655delcuu"))
+
+website http://openbel.org/
 reference https://github.com/OpenBEL/language
+standsFor Biological Expression Language

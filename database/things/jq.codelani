@@ -1,5 +1,30 @@
+title jq
 appeared 2012
 type queryLanguage
+
+patterns
+ hasCentralPackageRepository? false
+
+githubRepo https://github.com/stedolan/jq
+ firstCommit 2012
+ stars 12935
+ forks 738
+ subscribers 303
+ created 2012
+ updated 2018
+ description Command-line JSON processor
+ issues 447
+
 website https://stedolan.github.io/jq/
-github https://github.com/stedolan/jq
 reference https://jqplay.org/
+status active
+
+tryItOnline jq
+
+isOpenSource true
+
+projectEuler jq
+ memberCount
+  2022 5
+
+rosettaCode Jq

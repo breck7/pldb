@@ -1,7 +1,7 @@
+title gentee
 appeared 2018
 type pl
-website http://gentee.org/
-github https://github.com/gentee/gentee
+
 example
  #!/usr/local/bin/gentee
  # stdin = 1024\n384\n0
@@ -30,4 +30,17 @@ example
         Println("GCD = \{ gcd( left, right )}")
      }
  }
+
 description Script programming language for automation. It uses VM and compiler written in Go (Golang).
+
+githubRepo https://github.com/gentee/gentee
+ firstCommit 2018
+ stars 38
+ forks 4
+ subscribers 4
+ created 2018
+ updated 2019
+ description Gentee - script programming language for automation. It uses VM and compiler written in Go (Golang).
+ issues 1
+
+website http://gentee.org/

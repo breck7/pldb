@@ -1,6 +1,7 @@
+title hilvl
 appeared 2015
 type pl
-github https://github.com/holgerl/hilvl
+
 example
  @ var foo = 42
  @ var bar = (2 + 40)
@@ -26,4 +27,14 @@ example
     @ . argument + 10
     
  MyService myAction (@ . foo) // foo is now 6, and this returns 16
+
 description Hilvl is a programming language that is versatile but with a very small syntax. All code in hilvl are single-argument invocations of actions that belong to services. Services are the fundamental building blocks of a hilvl program. And the name hilvl reflects how this is a higher level of abstraction than objects and functions.
+
+githubRepo https://github.com/holgerl/hilvl
+ firstCommit 2015
+ stars 6
+ subscribers 2
+ created 2015
+ updated 2019
+ description The hilvl programming language
+ issues 8

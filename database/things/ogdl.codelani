@@ -1,2 +1,8 @@
-type textData
+title Ordered graph data language
+type textDataFormat
+
+patterns
+ hasSemanticIndentation? true
+
 website http://ogdl.org/
+standsFor Ordered graph data language

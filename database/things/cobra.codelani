@@ -1,5 +1,56 @@
+title Cobra
 appeared 2006
 type pl
 creators Charles Esterbrook
+
+patterns
+ hasCentralPackageRepository? false
+ hasSemanticIndentation? true
+
+wikipedia https://en.wikipedia.org/wiki/Cobra_(programming_language)
+ example
+  class Person
+  
+      var _name as String
+      var _age as int
+  
+      cue init(name as String, age as int)
+          _name, _age = name, age
+  
+      def toString as String is override
+          return 'My name is [_name] and I am [_age] years old'
+ related python eiffel csharp objective-c
+ summary Cobra is a general-purpose, object-oriented programming language. Cobra is designed by Charles Esterbrook, and runs on the Microsoft .NET and Mono platforms. It is strongly influenced by Python, C#, Eiffel, Objective-C, and other programming languages. It supports both static and dynamic typing. It has support for unit tests and contracts. It has lambda expressions, closures, list comprehensions, and generators. Cobra is an open-source project; it was released under the MIT License on February 29, 2008. Updates are posted to the Cobra news forum with progress on features, fixes, documentation and related projects since the last update.
+ pageId 13862555
+ dailyPageViews 82
+ created 2007
+ backlinksCount 104
+ revisionCount 136
+ appeared 2006
+ fileExtensions cobra
+
+helloWorldCollection Cobra
+ """Hello world in Cobra"""
+ 
+ class Hello
+ 
+     def main
+         print 'Hello, world.'
+
 website http://cobra-language.com/
-wikipedia Cobra_(programming_language)
+status active
+
+tryItOnline cobra
+
+fileExtensions cobra
+fileType text
+isOpenSource true
+
+tiobe Cobra
+
+projectEuler Cobra
+ memberCount
+  2019 11
+  2022 11
+
+rosettaCode Cobra

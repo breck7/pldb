@@ -1,4 +1,37 @@
+title Open Programming Language
 appeared 1984
 type pl
+
+patterns
+ hasCentralPackageRepository? false
+
+wikipedia https://en.wikipedia.org/wiki/Open_Programming_Language
+ example
+  PROC test:
+    dINIT "Your Challenge"
+    dTEXT "","Will your answer to this question be no?"
+    dBUTTONS "Yes",%y,"No",%n
+    IF DIALOG=%y
+       PRINT "No it wasn't!"
+    ELSE
+       PRINT "Yes it was!"
+    ENDIF
+    GET
+  ENDP
+ related basic visual-basic python python-for-s60
+ summary Open Programming Language (OPL) is an embedded programming language for portable devices that run the Symbian Operating System.
+ pageId 832032
+ dailyPageViews 18
+ created 2004
+ backlinksCount 22
+ revisionCount 100
+ appeared 1984
+
 website http://opl-dev.sourceforge.net
-wikipedia Open_Programming_Language
+standsFor Open Programming Language
+status active
+fileType text
+
+tiobe OPL
+
+rosettaCode OPL

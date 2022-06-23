@@ -1,3 +1,9 @@
+title Solaris operating system
 appeared 1992
 type os
-wikipedia Solaris_(operating_system)
+
+patterns
+ hasCentralPackageRepository? true
+
+wikipedia https://en.wikipedia.org/wiki/Solaris_(operating_system)
+ dailyPageViews 1015

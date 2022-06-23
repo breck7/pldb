@@ -1,5 +1,103 @@
+title OCaml
 appeared 1996
 type pl
 creators Xavier Leroy
+
+patterns
+ hasCentralPackageRepository? true
+ hasComments? true
+  (* This is a single-line comment. *)
+  (* This is a
+   * multi-line
+   * comment.
+   *)
+ hasMultipleInheritance? true
+ hasTypeInference? true
+ hasModules? true
+  (* In OCaml, every piece of code is wrapped into a module. *)
+  (* amodule.ml *)
+  let hello () = print_endline "Hello"
+  (* bmodule.ml *)
+  Amodule.hello ()
+
+wikipedia https://en.wikipedia.org/wiki/OCaml
+ example
+  fun x_1 -> (x_1 *
+       let y_3 =
+           let y_2 = (x_1 * 1)
+           in (y_2 * y_2)
+       in (y_3 * y_3))
+ related occam c ia-32 sparc arm unix f-sharp caml cool standard-ml ats elm fstar haxe opa rust scala ml python perl java csharp fortran javascript jvm pic-microcontroller emacs-editor vim-editor opengl hack php ios android coq wasm haskell
+ summary OCaml ( oh-KAM-əl), originally named Objective Caml, is the main implementation of the programming language Caml, created by Xavier Leroy, Jérôme Vouillon, Damien Doligez, Didier Rémy, Ascánder Suárez and others in 1996. A member of the ML language family, OCaml extends the core Caml language with object-oriented programming constructs. OCaml's toolset includes an interactive top-level interpreter, a bytecode compiler, a reversible debugger, a package manager (OPAM), and an optimizing native code compiler. It has a large standard library, making it useful for many of the same applications as Python or Perl, and has robust modular and object-oriented programming constructs that make it applicable for large-scale software engineering. OCaml is the successor to Caml Light. The acronym CAML originally stood for Categorical Abstract Machine Language, although OCaml omits this abstract machine. OCaml is a free and open-source software project managed and principally maintained by French Institute for Research in Computer Science and Automation (INRIA). In the early 2000s, many new languages adopted elements from OCaml, most notably F# and Scala.
+ pageId 39652
+ dailyPageViews 424
+ created 2002
+ backlinksCount 445
+ revisionCount 886
+ appeared 1996
+ fileExtensions ml mli
+
+githubLanguage OCaml
+ fileExtensions ml eliom eliomi ml4 mli mll mly
+ trendingProjects
+  author name avatar url language languageColor stars forks currentPeriodStars description
+  coq coq https://github.com/coq.png https://github.com/coq/coq OCaml #3be133 2275 366 118 "Coq is a formal proof management system. It provides a formal language to write mathematical definitions, executable algorithms and theorems together with an environment for semi-interactive development of machine-checked proofs."
+  facebook pyre-check https://github.com/facebook.png https://github.com/facebook/pyre-check OCaml #3be133 2985 148 243 "Performant type-checking for python."
+  ocaml ocaml https://github.com/ocaml.png https://github.com/ocaml/ocaml OCaml #3be133 2473 590 53 "The core OCaml system: compilers, runtime system, base libraries"
+  facebook flow https://github.com/facebook.png https://github.com/facebook/flow OCaml #3be133 19958 1699 131 "Adds static typing to JavaScript to improve developer productivity and code quality."
+  facebook infer https://github.com/facebook.png https://github.com/facebook/infer OCaml #3be133 10169 1365 134 "A static analyzer for Java, C, C++, and Objective-C"
+ trendingProjectsCount 6
+
+helloWorldCollection OCaml
+ (* Hello World in OCaml *)
+ print_string "Hello World!\n";;
+
+linguistGrammarRepo https://github.com/textmate/ocaml.tmbundle
+ firstCommit 2005
+ lastCommit 2015
+ committerCount 11
+ commitCount 241
+ sampleCount 10
+ example
+  (*
+   * Copyright (c) 2013 Jeremy Yallop.
+   *
+   * This file is distributed under the terms of the MIT License.
+   * See the file LICENSE for details.
+   *)
+  let string_of format v =
+    let buf = Buffer.create 100 in
+    let fmt = Format.formatter_of_buffer buf in begin
+      format fmt v;
+      Format.pp_print_flush fmt ();
+      Buffer.contents buf
+    end
+
 website http://ocaml.org
-wikipedia OCaml
+status active
+
+tryItOnline ocaml
+
+country FR
+fileExtensions ml mli
+fileType text
+isOpenSource true
+
+tiobe OCaml
+
+meetup ocaml-programming
+ memberCount 23394
+ groupCount 87
+
+projectEuler OCaml
+ memberCount
+  2019 142
+  2022 219
+
+hopl 2294
+
+quineRelay OCaml
+
+ubuntuPackage ocaml
+
+rosettaCode OCaml

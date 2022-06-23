@@ -1,5 +1,7 @@
+title rbs
 appeared 2020
-type headerFiles
+type headerLang
+
 example
  # sig/merchant.rbs
  
@@ -13,5 +15,8 @@ example
    def each_employee: () { (Employee) -> void } -> void
                     | () -> Enumerator[Employee, void]
  end
-reference https://developer.squareup.com/blog/the-state-of-ruby-3-typing/
+
 description We defined a new language called RBS for type signatures for Ruby 3. The signatures are written in .rbs files which is different from Ruby code. You can consider the .rbs files are similar to .d.ts files in TypeScript or .h files in C/C++/ObjC. The benefit of having different files is it doesn't require changing Ruby code to start type checking. You can opt-in type checking safely without changing any part of your workflow.
+reference https://developer.squareup.com/blog/the-state-of-ruby-3-typing/
+related ruby
+fileExtensions rbs

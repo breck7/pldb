@@ -1,3 +1,33 @@
+title ApeScript
 appeared 1995
 type pl
-wikipedia ApeScript
+
+patterns
+ hasCentralPackageRepository? false
+
+wikipedia https://en.wikipedia.org/wiki/ApeScript
+ example
+  function( being ){
+     number_b = 942 ;
+     which_function = 2 ;
+     offset_function = 15 ;
+     which_function = 30 ;
+     which_function = 151 ;
+     run( which_function ){
+        run( actual_three ){
+           number_a = 932 ;
+           number_a = 19572 ;
+           number_a = 19699 ;
+           }
+        }
+        number_result = 19699 ;
+     }
+ summary ApeScript is an interpreted procedural dynamic-typed language. It was developed for the Noble Ape Simulation through mid-2005 by Tom Barbalet. ApeScript was designed with the following specifications;  simple language, stable memory footprint, minimal crashes, and, small code size.ApeScript is defined in the Noble Ape Simulation manual. Additional ApeScript tutorials are on the Noble Ape site.
+ created 2006
+ backlinksCount 6
+ pageId 3587360
+ revisionCount 17
+ dailyPageViews 3
+ appeared 2005
+
+status historical

@@ -1,3 +1,20 @@
+title BASICODE
 appeared 1980
 type pl
-wikipedia BASICODE
+
+patterns
+ hasCentralPackageRepository? false
+
+wikipedia https://en.wikipedia.org/wiki/BASICODE
+ example
+  minimodem --rx 1200 -q -S 1200 -M 2400 --stopbits 2 -f basicode.wav
+ related basic acorn-atom pascal java pdf ascii isbn
+ summary BASICODE was a computer project intended to create a unified standard for the BASIC programming language. BASIC was available on many popular home computers, but there were countless variants that were mostly incompatible with each other. The project was initiated in 1980 by Hobbyscoop, a radio program of the Dutch broadcasting organisation Nederlandse Omroep Stichting (NOS). The basic implementation were architecture-specific utility applications that executed calls of subroutines for text, audio and sound defined in the BASICODE language standard according to the abilities of the computer in question. These applications, called Bascoders, also enabled the sharing of data and programs across different computer platforms by defining a data format for the compact audio cassettes that were regularly used as storage media in the 1980s. A BASICODE program stored on cassette could be loaded and run on any computer supporting the language. BASICODE was often called "Esperanto for computers" for that reason.
+ created 2006
+ backlinksCount 19
+ pageId 4753069
+ revisionCount 120
+ dailyPageViews 9
+ appeared 1980
+
+status historical

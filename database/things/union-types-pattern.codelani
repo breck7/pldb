@@ -1,3 +1,12 @@
+title Union Types
 type pattern
-wikipedia Union_type
+psuedoExample any = string | number
 description a union type definition will specify which of a number of permitted primitive types may be stored in its instances, e.g., "float or long integer"
+
+wikipedia https://en.wikipedia.org/wiki/Union_type
+ summary In computer science, a union is a value that may have any of several representations or formats within the same position in memory; that consists of a variable that may hold such a data structure. Some programming languages support special data types, called union types, to describe such values and variables. In other words, a union type definition will specify which of a number of permitted primitive types may be stored in its instances, e.g., "float or long integer". In contrast with a record (or structure), which could be defined to contain a float and an integer; in a union, there is only one value at any given time. A union can be pictured as a chunk of memory that is used to store variables of different data types. Once a new value is assigned to a field, the existing data is overwritten with the new data. The memory area storing the value has no intrinsic type (other than just bytes or words of memory), but the value can be treated as one of several abstract data types, having the type of the value that was last written to the memory area. In type theory, a union has a sum type; this corresponds to disjoint union in mathematics. Depending on the language and type, a union value may be used in some operations, such as assignment and comparison for equality, without knowing its specific type.  Other operations may require that knowledge, either by some external information, or by the use of a tagged union.
+ backlinksCount 133
+ pageId 492281
+ dailyPageViews 138
+
+patternKeyword hasUnionTypes?

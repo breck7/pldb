@@ -1,3 +1,17 @@
+title FleXML
 appeared 2001
 type pl
-wikipedia FleXML
+
+patterns
+ hasCentralPackageRepository? false
+
+wikipedia https://en.wikipedia.org/wiki/FleXML
+ related c yacc xml perl
+ summary FleXML is an XML transformation language originally developed by Kristofer Rose.  It allows a programmer to specify actions in C programming language or C++, and associate those actions with element definitions in an XML DTD.  It is similar in philosophy to Yacc and the Lex programming tool in that it is a syntax-directed driver; one could establish the analogies Yacc:LR(1) grammar::Lex:Regular grammar::FleXML::XML. The implementation is in Perl. A programmer supplied action file is input to FleXML; the output is a file suitable for input to Flex lexical analyser.
+ created 2005
+ backlinksCount 8
+ pageId 1660966
+ revisionCount 17
+ dailyPageViews 3
+
+status historical

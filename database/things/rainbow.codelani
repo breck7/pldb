@@ -1,5 +1,14 @@
+title rainbow
 appeared 2009
 type pl
-website https://vmlanguages.is-research.de/rainbow/
-github https://github.com/conanite/rainbow
+
+patterns
+ hasCentralPackageRepository? false
+
 description Rainbow is an implementation of Arc in Java. It is fairly complete, providing continuations and tail-call optimization.
+
+githubRepo https://github.com/conanite/rainbow
+
+website https://vmlanguages.is-research.de/rainbow/
+status active
+isOpenSource true

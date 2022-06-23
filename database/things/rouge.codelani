@@ -1,3 +1,30 @@
+title Rouge
 appeared 2012
 type pl
-github https://github.com/vic/rouge
+
+patterns
+ hasCentralPackageRepository? false
+
+githubLanguage Rouge
+ fileExtensions rg
+ trendingProjectsCount 0
+
+githubRepo https://github.com/vic/rouge
+ firstCommit 2012
+ stars 6
+ forks 18
+ subscribers 2
+ created 2012
+ updated 2018
+ description Ruby + Clojure = Rouge
+
+linguistGrammarRepo https://github.com/atom/language-clojure
+ firstCommit 2013
+ lastCommit 2018
+ committerCount 36
+ commitCount 149
+
+status active
+fileType text
+wordRank 8822
+isOpenSource true

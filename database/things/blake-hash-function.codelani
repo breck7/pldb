@@ -1,3 +1,10 @@
+title BLAKE hash function
 appeared 2012
 type hashFunction
-wikipedia BLAKE_(hash_function)
+
+wikipedia https://en.wikipedia.org/wiki/BLAKE_(hash_function)
+ summary BLAKE is a cryptographic hash function based on Dan Bernstein's ChaCha stream cipher, but a permuted copy of the input block, XORed with round constants, is added before each ChaCha round. Like SHA-2, there are two variants differing in the word size. ChaCha operates on a 4×4 array of words. BLAKE repeatedly combines an 8-word hash value with 16 message words, truncating the ChaCha result to obtain the next hash value. BLAKE-256 and BLAKE-224 use 32-bit words and produce digest sizes of 256 bits and 224 bits, respectively, while BLAKE-512 and BLAKE-384 use 64-bit words and produce digest sizes of 512 bits and 384 bits, respectively. The BLAKE2 hash function, based on BLAKE, was announced in 2012. The BLAKE3 hash function, based on BLAKE2, was announced in 2020.
+ backlinksCount 144
+ pageId 30054589
+ dailyPageViews 133
+ appeared 2012

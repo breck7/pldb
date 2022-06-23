@@ -1,3 +1,44 @@
+title Parrot Internal Representation
 appeared 2006
 type pl
-wikipedia Parrot_intermediate_representation
+
+patterns
+ hasCentralPackageRepository? false
+
+wikipedia https://en.wikipedia.org/wiki/Parrot_intermediate_representation
+ example
+  .sub foo
+    .param int a
+    .param int b
+    .local int tmp
+    tmp = a + b
+    .return (tmp)
+   .end
+ related assembly-language parrot-vm parrot-assembly
+ summary The Parrot intermediate representation (PIR), previously called Intermediate code (IMC), is one of the two assembly languages for the Parrot virtual machine. The other is Parrot assembly language or PASM. Compared to PASM, PIR exists at a slightly higher abstraction layer, and provides temporary registers and named registers, simplifying code generation. While Parrot is still evolving, it is currently being used in many different capacities, and has undergone several releases.
+ backlinksCount 12
+ pageId 4850580
+ created 2006
+ revisionCount 20
+ dailyPageViews 10
+
+githubLanguage Parrot Internal Representation
+ fileExtensions pir
+ trendingProjectsCount 0
+
+linguistGrammarRepo https://github.com/textmate/parrot.tmbundle
+ firstCommit 2007
+ lastCommit 2016
+ committerCount 1
+ commitCount 10
+ sampleCount 1
+ example
+  #!/usr/bin/env parrot
+  
+  .sub 'main' :main
+      say "Hello!"
+  .end
+  
+
+status active
+fileType text

@@ -1,3 +1,55 @@
+title BEFUNGE
 appeared 1993
 type esolang
-wikipedia Befunge
+
+patterns
+ hasCentralPackageRepository? false
+ hasComments? true
+
+wikipedia https://en.wikipedia.org/wiki/Befunge
+ example
+  >25*"!dlrow ,olleH":v
+                    v:,_@
+                    >  ^
+ related forth intercal ascii brainfuck lisp python whitespace malbolge
+ summary Befunge is a stack-based, reflective, esoteric programming language. It differs from conventional languages in that programs are arranged on a two-dimensional grid. "Arrow" instructions direct the control flow to the left, right, up or down, and loops are constructed by sending the control flow in a cycle. It has been described as "a cross between Forth and Lemmings."  A worthy companion to INTERCAL; a computer language family which escapes the quotidian limitation of linear control flow and embraces program counters flying through multiple dimensions with exotic topologies.
+ pageId 53391
+ dailyPageViews 80
+ created 2002
+ backlinksCount 57
+ revisionCount 228
+ appeared 1993
+
+githubLanguage Befunge
+ fileExtensions befunge
+ trendingProjectsCount 0
+
+helloWorldCollection BEFUNGE
+ v Hello World in Befunge
+ 
+ >"dlroW olleH",,,,,,,,,,,@
+ 
+
+linguistGrammarRepo https://github.com/johanasplund/sublime-befunge
+ firstCommit 2014
+ lastCommit 2014
+ committerCount 2
+ commitCount 20
+
+status active
+
+tryItOnline befunge
+
+country US
+fileType text
+
+projectEuler Befunge
+ memberCount
+  2019 9
+  2022 10
+
+hopl 1717
+
+quineRelay Befunge
+
+rosettaCode Befunge

@@ -1,7 +1,7 @@
+title halide
 appeared 2010
 type pl
-website http://halide-lang.org/
-github https://github.com/halide/Halide
+
 example
  Func blur_3x3(Func input) {
   Func blur_x, blur_y;
@@ -18,5 +18,15 @@ example
  
   return blur_y;
  }
-reference https://news.ycombinator.com/item?id=7544855
+
+patterns
+ hasCentralPackageRepository? false
+
 description a language for fast, portable computation on images and tensors
+
+githubRepo https://github.com/halide/Halide
+
+website http://halide-lang.org/
+reference https://news.ycombinator.com/item?id=7544855
+status active
+isOpenSource true

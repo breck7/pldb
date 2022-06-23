@@ -1,4 +1,22 @@
+title R Markdown
 appeared 2014
 type textMarkup
+
+patterns
+ hasCentralPackageRepository? false
+
+githubRepo https://github.com/rstudio/rmarkdown
+ firstCommit 2014
+ stars 1321
+ forks 578
+ subscribers 134
+ created 2014
+ updated 2018
+ description Dynamic Documents for R
+ issues 109
+
 website https://rmarkdown.rstudio.com/
-github https://github.com/rstudio/rmarkdown
+status active
+fileExtensions rmd
+fileType text
+isOpenSource true

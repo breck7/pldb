@@ -1,3 +1,20 @@
+title 51forth
 appeared 1980
 type pl
-wikipedia 51-FORTH
+
+patterns
+ hasCentralPackageRepository? false
+
+wikipedia https://en.wikipedia.org/wiki/51-FORTH
+ related assembly-language forth
+ summary 51-FORTH is an implementation of the Forth programming language for the Intel 8051 microcontroller. It was created in 1989 by Scott Gehmlich of IDACOM Electronics (which was acquired by Hewlett-Packard in 1990), and sent to Giovanni Moretti of Massey University, from whom it was propagated widely. The original 51forth.zip package is available from many archive sites, along with several other implementations of Forth. This implementation is subroutine-threaded, with about 20 words written in assembly language, and the complete system occupying a total of about 8K of RAM. It was cross-developed from a VAX to an RTX2000 Forth system connected to dual-ported RAM accessible to the microcontroller. The sources and documentation are in the public domain.
+ created 2001
+ backlinksCount 10
+ pageId 35509
+ dailyPageViews 3
+ appeared 1989
+
+status historical
+isOpenSource true
+
+hopl 5208

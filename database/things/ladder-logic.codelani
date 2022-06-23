@@ -1,3 +1,29 @@
+title Ladder Logic
 appeared 1994
 type pl
-wikipedia Ladder_logic
+
+patterns
+ hasCentralPackageRepository? false
+
+wikipedia https://en.wikipedia.org/wiki/Ladder_logic
+ example
+  +--------+
+    --------------------+ A + B  +-----------
+                        | into C |
+                        +--------+
+                           Adder
+ related sequential-function-chart basic c
+ summary Ladder logic was originally a written method to document the design and construction of relay racks as used in manufacturing and process control. Each device in the relay rack would be represented by a symbol on the ladder diagram with connections between those devices shown. In addition, other items external to the relay rack such as pumps, heaters, and so forth would also be shown on the ladder diagram. See relay logic. Ladder logic has evolved into a programming language that represents a program by a graphical diagram based on the circuit diagrams of relay logic hardware. Ladder logic is used to develop software for programmable logic controllers (PLCs) used in industrial control applications. The name is based on the observation that programs in this language resemble ladders, with two vertical rails and a series of horizontal rungs between them. While ladder diagrams were once the only available notation for recording programmable controller programs, today other forms are standardized in IEC 61131-3 (For example, as an alternative to the graphical ladder logic form, there is also a more assembly language like format called Instruction list within the IEC 61131-3 standard.).
+ pageId 66251
+ dailyPageViews 468
+ created 2002
+ backlinksCount 83
+ revisionCount 513
+ appeared 1999
+
+status active
+fileType text
+
+tiobe Ladder Logic
+
+hopl 8317

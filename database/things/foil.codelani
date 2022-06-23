@@ -1,3 +1,40 @@
+title File Oriented Interpretive Language
 appeared 1967
 type pl
-wikipedia FOIL_(programming_language)
+
+patterns
+ hasCentralPackageRepository? false
+
+wikipedia https://en.wikipedia.org/wiki/FOIL_(programming_language)
+ example
+  :START COUNT=0
+   TY Enter the number of times you want to repeat the statement:
+   ACCEPT
+   MAX=NUMBER.(1)
+   :LOOP
+   TY This loop has run #COUNT times it will terminate when it runs #MAX times
+   IF COUNT<MAX,
+      COUNT=COUNT+1
+      GO TO :LOOP
+   TY Do you want to do this again?
+   ACCEPT
+   IF 'yes', GO TO START
+   IF 'no' GO TO FINISH
+   :FINISH
+   TY Goodbye!
+   STOP
+ related pilot basic abc forth
+ summary FOIL was the name for two different programming languages.
+ pageId 602746
+ created 2004
+ backlinksCount 8
+ revisionCount 31
+ dailyPageViews 5
+ appeared 1967
+
+standsFor File Oriented Interpretive Language
+status historical
+country US
+fileType text
+
+hopl 325

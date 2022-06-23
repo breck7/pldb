@@ -1,4 +1,38 @@
+title Refal
 appeared 1968
 type pl
+
+patterns
+ hasCentralPackageRepository? false
+
+wikipedia https://en.wikipedia.org/wiki/Refal
+ example
+  Squeeze {
+      '__'e.1 = <Squeeze '_'e.1>;
+      s.A e.1 = s.A <Squeeze e.1>;
+      = ; };
+ related prolog lisp
+ summary Refal (Recursive functions algorithmic language) "is functional programming language oriented toward symbol manipulation", including "string processing, translation, [and] artificial intelligence". It is one of the oldest members of this family, first conceived in 1966 as a theoretical tool with the first implementation appearing in 1968. Refal was intended to combine mathematical simplicity with practicality for writing large and sophisticated programs. Unlike other functional programming languages, Refal is based on pattern matching. Its pattern matching works in the forward direction rather than backwards (starting from the goal) as in Prolog. The basic data structure of Lisp and Prolog is a linear list consed up from the beginning. Refal lists are built and scanned from both ends, and pattern matching allows to match against nested lists as well as the top-level one. (In effect, the basic data structure of Refal is a tree rather than a list). According to the authors, this gives freedom and convenience in creating data structures while using only mathematically simple control mechanisms of pattern matching and substitution. Refal also includes a feature called the freezer to support efficient partial evaluation. Refal can be applied to the processing and transformation of tree structures, similarly to XSLT.
+ pageId 14926151
+ dailyPageViews 16
+ created 2007
+ backlinksCount 17
+ revisionCount 78
+ appeared 1966
+
+helloWorldCollection Refal
+ * Hello world in Refal
+ 
+ $ENTRY Go { = <Hello>;}
+ Hello {
+    = <Prout 'Hello world'>;
+ }
+
 website http://www.refal.net
-wikipedia Refal
+status historical
+country RU
+fileType text
+
+hopl 595
+
+rosettaCode Refal

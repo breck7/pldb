@@ -1,5 +1,62 @@
+title Less
 appeared 2009
 type stylesheetLanguage
 creators Alexis Sellier
+
+patterns
+ hasCentralPackageRepository? false
+
+wikipedia https://en.wikipedia.org/wiki/Less_(stylesheet_language)
+ example
+  #header {
+    color: #333333;
+    border-left: 1px;
+    border-right: 3px;
+  }
+  #footer {
+    color: #114411;
+    border-color: #7d2717;
+  }
+ related javascript sass css ruby stylus
+ summary Less (sometimes stylized as LESS) is a dynamic style sheet language that can be compiled into Cascading Style Sheets (CSS) and run on the client side or server side. Designed by Alexis Sellier, Less is influenced by Sass and has influenced the newer "SCSS" syntax of Sass, which adapted its CSS-like block formatting syntax. Less is open source. Its first version was written in Ruby; however, in the later versions, use of Ruby has been deprecated and replaced by JavaScript. The indented syntax of Less is a nested metalanguage, as valid CSS is valid Less code with the same semantics. Less provides the following mechanisms: variables, nesting, mixins, operators and functions; the main difference between Less and other CSS precompilers being that Less allows real-time compilation via less.js by the browser.
+ pageId 31294765
+ dailyPageViews 186
+ created 2011
+ backlinksCount 48
+ revisionCount 256
+ appeared 2009
+
+githubLanguage Less
+ fileExtensions less
+ trendingProjectsCount 0
+
+linguistGrammarRepo https://github.com/atom/language-less.git
+ firstCommit 2013
+ lastCommit 2018
+ committerCount 35
+ commitCount 309
+ sampleCount 1
+ example
+  @blue: #3bbfce;
+  @margin: 16px;
+  
+  .content-navigation {
+    border-color: @blue;
+    color:
+      darken(@blue, 9%);
+  }
+  
+  .border {
+    padding: @margin / 2;
+    margin: @margin / 2;
+    border-color: @blue;
+  }
+  
+
 website http://lesscss.org
-wikipedia Less_(stylesheet_language)
+status active
+fileType text
+wordRank 535
+isOpenSource true
+
+antlr https://github.com/antlr/grammars-v4/tree/master/less

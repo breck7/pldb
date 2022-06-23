@@ -1,2 +1,9 @@
+title SHA-1
 type hashFunction
-wikipedia SHA-1
+
+wikipedia https://en.wikipedia.org/wiki/SHA-1
+ summary In cryptography, SHA-1 (Secure Hash Algorithm 1) is a cryptographic hash function which takes an input and  produces a 160-bit (20-byte) hash value known as a message digest – typically rendered as a hexadecimal number, 40 digits long. It was designed by the United States National Security Agency, and is a U.S. Federal Information Processing Standard.Since 2005 SHA-1 has not been considered secure against well-funded opponents, as of 2010 many organizations have recommended its replacement. NIST formally deprecated use of SHA-1 in 2011 and disallowed its use for digital signatures in 2013. Since 2020 attacks against SHA-1 are as practical as against MD5. It is recommended to remove SHA-1 in from products as soon as possible and use instead SHA-256 or SHA-3. Replacing SHA-1 is urgent where it's used for signatures. All major web browser vendors ceased acceptance of SHA-1 SSL certificates in 2017. In February 2017, CWI Amsterdam and Google announced they had performed a collision attack against SHA-1, publishing two dissimilar PDF files which produced the same SHA-1 hash.
+ backlinksCount 1092
+ pageId 26672
+ dailyPageViews 1478
+ appeared 1993

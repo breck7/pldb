@@ -1,3 +1,44 @@
+title Genie
 appeared 2008
 type pl
-wikipedia Genie_(programming_language)
+
+patterns
+ hasCentralPackageRepository? false
+ hasComments? true
+ hasSemanticIndentation? true
+
+wikipedia https://en.wikipedia.org/wiki/Genie_(programming_language)
+ example
+  class Sample
+  
+  	def run()
+  		stdout.printf("Hello, world!\n")
+  
+  init
+  	var sample = new Sample()
+  	sample.run()
+ related python boo d object-pascal vala java c
+ summary Genie is a modern, general-purpose high-level programming language in active development since 2008. It was designed as an alternative, simpler and cleaner dialect for the Vala compiler, while preserving the same functionality of the Vala language. Genie uses the same compiler and libraries as Vala; the two can indeed be used alongside each other. The differences are only syntactic. Genie's syntax is derived from numerous modern languages like Python, Boo, D and Delphi. In the vein of Python, Genie uses indentation rather than curly brackets to delimit blocks. Like Vala, Genie uses the GObject type system to create classes and interfaces declared in Genie source code, without imposing additional runtime requirements (i.e., unlike Python, Java or C#, it does not require a virtual machine). Genie allows access to C libraries, especially those based in GObject (like GTK+), without using a different application binary interface (ABI). During compilation, the code is first translated to C source and header files, which are then compiled to platform-specific machine code using any available C compiler like GCC, thus allowing cross-platform software development. Although both Vala and Genie are being developed and promoted by GNOME, programs developed in Vala and Genie don't depend on the GNOME Desktop Environment, usually requiring only GLib.
+ pageId 25291443
+ created 2009
+ backlinksCount 234
+ revisionCount 103
+ dailyPageViews 52
+ appeared 2008
+ fileExtensions gs
+
+githubLanguage Genie
+ fileExtensions gs
+ trendingProjectsCount 0
+
+example
+ init
+  print( "Hello, World!" )
+ 
+status active
+fileType text
+isOpenSource true
+
+hopl 8118
+
+rosettaCode Genie

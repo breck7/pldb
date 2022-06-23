@@ -1,5 +1,20 @@
+title Forsyth-Edwards Notation
 appeared 1883
 type notation
-wikipedia Forsyth–Edwards_Notation
+
 example
  rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1
+
+patterns
+ hasCentralPackageRepository? false
+
+wikipedia https://en.wikipedia.org/wiki/Forsyth–Edwards_Notation
+ example
+  rnbqkbnr/pp1ppppp/8/2p5/4P3/5N2/PPPP1PPP/RNBQKB1R b KQkq - 1 2
+ summary Forsyth–Edwards Notation (FEN) is a standard notation for describing a particular board position of a chess game. The purpose of FEN is to provide all the necessary information to restart a game from a particular position. FEN is based on a system developed by Scottish newspaper journalist David Forsyth. Forsyth's system became popular in the 19th century; Steven J. Edwards extended it to support use by computers. FEN is an integral part of the Portable Game Notation for chess games, since FEN is used to define initial positions other than the standard one. FEN does not represent sufficient information to decide whether a draw by threefold repetition may be legally claimed or a draw offer may be accepted; for that, a different format such as Extended Position Description is needed.
+ pageId 258696
+ dailyPageViews 109
+ backlinksCount 78
+
+status historical
+fileType paper

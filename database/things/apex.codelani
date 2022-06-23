@@ -1,5 +1,92 @@
+title Apex
 appeared 2007
 type pl
+
+patterns
+ hasCentralPackageRepository? false
+ hasComments? true
+
+description Apex is a proprietary programming language provided by the Force.com platform to developers similar to Java and C#. It is a strongly typed, object-oriented, case-insensitive programming language, following a dot-notation and curly-brackets syntax. Apex can be used to execute programmed functions during most processes on the Force.com platform including custom buttons and links, event handlers on record insertion, update, or deletion, via scheduling, or via the custom controllers of Visualforce pages. Due to the multitenant nature of the platform, the language has strictly imposed governor limitations[61] to guard against any code monopolizing shared resources. Salesforce provides a series of asynchronous processing methods for Apex to allow developers to produce longer running and more complex Apex code.
+
+githubLanguage Apex
+ fileExtensions cls
+ trendingProjectsCount 0
+
+linguistGrammarRepo https://github.com/textmate/java.tmbundle
+ firstCommit 2004
+ lastCommit 2018
+ committerCount 21
+ commitCount 283
+ sampleCount 6
+ example
+  public class GeoUtils {
+  	// generate a KML string given a page reference, call getContent() 
+  	// then cleanup the output.
+  	public static string generateFromContent(PageReference pr) { 
+  		string ret = ''; 
+  		try {  
+  	        ret = (string) pr.getContent().toString();
+  			
+  			ret = ret.replaceAll('"','\'' ); // get content produces quote chars \"  
+  	        ret = ret.replaceAll( '&','&amp;');// we need to escape these in the node value
+          } catch (exception e ) { 
+          	system.debug( 'ERROR '+e); 
+          }
+     		
+     		ret = ret.replaceAll('\n',' ');	// must use ALL since many new line may get 
+          ret = ret.replaceAll('\r',' ');	// get these also!
+        //  system.debug( ret); // dump the KML 
+          return ret ;
+  	}
+  	
+  	public static Map<String, String> geo_response = new Map<String, String>{'200'=>'G_GEO_SUCCESS',
+      '400'=>'G_GEO_BAD_REQUEST',
+      '500'=>'G_GEO_SERVER_ERROR',
+      '601'=>'G_GEO_MISSING_ADDRESS',
+      '602'=>'G_GEO_UNKNOWN_ADDRESS',
+      '603'=>'G_GEO_UNAVAILABLE_ADDRESS',
+      '604'=>'G_GEO_UNKNOWN_DIRECTIONS',
+      '610'=>'G_GEO_BAD_KEY',
+      '620'=>'G_GEO_TOO_MANY_QUERIES'
+      };
+          
+  	public static string accountAddressString ( account acct ) {
+      	// form an address string given an account object
+      	string adr = acct.billingstreet + ',' + acct.billingcity + ',' + acct.billingstate; 
+          if ( acct.billingpostalcode != null ) adr += ',' + acct.billingpostalcode; 
+          if ( acct.billingcountry != null ) adr += ',' + acct.billingcountry; 
+          adr = adr.replaceAll('\"', '' );
+          adr = adr.replaceAll('\'', '' );
+          adr = adr.replaceAll( '\n', ' ' );    
+          adr = adr.replaceAll( '\r', ' ' );    
+          system.debug( adr );  
+          return adr;	
+      }
+      
+  	public static testmethod void t1() { 
+  		PageReference pageRef =  Page.kmlPreviewTemplate;
+          Test.setCurrentPage(pageRef);
+          system.assert ( GeoUtils.generateFromContent( pageRef ) != null );
+          Account a =  new Account( name='foo', billingstreet='main', billingcity='springfield',billingstate='il',
+           billingpostalcode='9',billingcountry='us');
+          insert a;
+          system.assertEquals( 'main,springfield,il,9,us',accountAddressString( a) );
+         
+  	}
+  }
+
 website https://developer.salesforce.com/docs/atlas.en-us.apexcode.meta/apexcode/apex_intro_what_is_apex.htm
 reference https://en.wikipedia.org/wiki/Salesforce.com#Apex
-description Apex is a proprietary programming language provided by the Force.com platform to developers similar to Java and C#. It is a strongly typed, object-oriented, case-insensitive programming language, following a dot-notation and curly-brackets syntax. Apex can be used to execute programmed functions during most processes on the Force.com platform including custom buttons and links, event handlers on record insertion, update, or deletion, via scheduling, or via the custom controllers of Visualforce pages. Due to the multitenant nature of the platform, the language has strictly imposed governor limitations[61] to guard against any code monopolizing shared resources. Salesforce provides a series of asynchronous processing methods for Apex to allow developers to produce longer running and more complex Apex code.
+status active
+firstAnnouncement http://www.zdnet.com/article/inside-the-salesforce-apex-language/
+fileType text
+
+tiobe Apex
+ currentRank 43
+
+rosettaCode Apex
+
+antlr https://github.com/antlr/grammars-v4/tree/master/apex
+
+corporateDevelopers Salesforce
+announcementMethod interview

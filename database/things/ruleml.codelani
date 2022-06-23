@@ -1,3 +1,19 @@
+title RuleML
 appeared 2002
 type pl
-wikipedia RuleML
+
+patterns
+ hasCentralPackageRepository? false
+
+wikipedia https://en.wikipedia.org/wiki/RuleML
+ related xml
+ summary RuleML is a global initiative, led by a non-profit organization RuleML Inc., that is devoted to advancing research and industry standards design activities in the technical area of rules that are semantic and highly inter-operable. The standards design takes the form primarily of a markup language, also known as RuleML. The research activities include an annual research conference, the RuleML Symposium, also known as RuleML for short. Founded in fall 2000 by Harold Boley, Benjamin Grosof, and Said Tabet, RuleML was originally devoted purely to standards design, but then quickly branched out into the related activities of coordinating research and organizing an annual research conference starting in 2002. The M in RuleML is sometimes interpreted as standing for Markup and Modeling. The markup language was developed to express both forward (bottom-up) and backward (top-down) rules in XML for deduction, rewriting, and further inferential-transformational tasks. It is defined by the Rule Markup Initiative, an open network of individuals and groups from both industry and academia that was formed to develop a canonical Web language for rules using XML markup and transformations from and to other rule standards/systems. Markup standards and initiatives related to RuleML include:  Rule Interchange Format (RIF): The design and overall purpose of W3C's Rule Interchange Format (RIF) industry standard is based primarily on the RuleML industry standards design. Like RuleML, RIF embraces a multiplicity of potentially useful rule dialects that nevertheless share common characteristics. RuleML Technical Committee from Oasis-Open: An industry standards effort devoted to legal automation utilizing RuleML. Semantic Web Rule Language (SWRL): An industry standards design, based primarily on an early version of RuleML, whose development was funded in part by the DARPA Agent Markup Language (DAML) research program. Semantic Web Services Framework], particularly its Semantic Web Services Language: An industry standards design, based primarily on a medium-mature version of RuleML, whose development was funded in part by the DARPA Agent Markup Language (DAML) research program and the WSMO research effort of the EU. Mathematical Markup Language (MathML): However, MathML's Content Markup is better suited for defining functions rather than relations or general rules Predictive Model Markup Language (PMML): With this XML-based language one can define and share various models for data-mining results, including association rules Attribute Grammars in XML (AG-markup): For AG's semantic rules, there are various possible XML markups that are similar to Horn-rule markup Extensible Stylesheet Language Transformations (XSLT): This is a restricted term-rewriting system of rules, written in XML, for transforming XML documents into other text documents
+ backlinksCount 18
+ pageId 1568414
+ dailyPageViews 14
+ created 2005
+ appeared 2000
+
+status historical
+
+hopl 7648

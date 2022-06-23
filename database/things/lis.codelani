@@ -1,3 +1,23 @@
+title Langage Implementation Systeme
 appeared 1980
 type pl
-wikipedia LIS_(programming_language)
+
+patterns
+ hasCentralPackageRepository? false
+
+wikipedia https://en.wikipedia.org/wiki/LIS_(programming_language)
+ related ada
+ summary LIS (Language d'Implementation de Systèmes) was a system implementation programming language designed by Jean Ichbiah, who later designed Ada. LIS was used to implement the compiler for the Ada-0 subset of Ada at Karlsruhe on the BS2000 Siemens operating system. Later on the Karlsruhe Ada compilation system got rewritten in Ada-0 itself, which was easy, because LIS and Ada-0 are very close.
+ pageId 12073324
+ created 2007
+ backlinksCount 9
+ revisionCount 23
+ dailyPageViews 10
+ appeared 1980
+
+standsFor Langage Implementation Systeme
+status historical
+country FR
+fileType text
+
+hopl 618

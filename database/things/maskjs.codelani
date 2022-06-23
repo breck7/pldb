@@ -1,4 +1,94 @@
+title Mask
 appeared 2012
 type template
+
+patterns
+ hasCentralPackageRepository? false
+
+githubLanguage Mask
+ fileExtensions mask
+ trendingProjectsCount 0
+
+githubRepo https://github.com/atmajs/maskjs
+ firstCommit 2012
+ stars 88
+ forks 6
+ subscribers 9
+ created 2012
+ updated 2018
+ description Markup | Template | HMVC
+ issues 1
+
+linguistGrammarRepo https://github.com/tenbits/sublime-mask
+ firstCommit 2014
+ lastCommit 2018
+ committerCount 2
+ commitCount 60
+ sampleCount 1
+ example
+  
+  // HTML Elements
+  header {
+      
+      img .logo src='/images/~[currentLogo].png' alt=logo;
+      
+      h4 > 'Bar View'
+      
+      if (currentUser) {
+          
+          .account >
+              a href='/acount' >
+                  'Hello, ~[currentUser.username]'
+      }
+  }
+  
+  .view {
+      ul {
+         
+          // Iteration
+          for ((user, index) of users) {
+              
+              li.user data-id='~[user.id]' {
+                  
+                  // interpolation
+                  .name > '~[ user.username ]'
+                  
+                  // expression
+                  .count > '~[: user.level.toFixed(2) ]'
+                  
+                  // util
+                  /* Localization sample
+                   * lastActivity: "Am {0:dd. MM} war der letzte Eintrag"
+                   */
+                  .date > '~[ L: "lastActivity",  user.date]'
+              }
+          }
+      }
+      
+      // Component
+      :countdownComponent {
+          input type = text >
+              :dualbind value='number';
+              
+          button x-signal='click: countdownStart' > 'Start';
+          
+          h5 {
+              '~[bind: number]'
+              
+              :animation x-slot='countdownStart' {
+                  @model > 'transition | scale(0) > scale(1) | 500ms'
+                  @next  > 'background-color | red > blue | 2s linear'
+              }
+          }
+      }
+  }
+  
+  footer > :bazCompo {
+      
+      'Component generated at ~[: $u.format($c.date, "HH-mm") ]'
+  }
+
 website http://www.atmajs.com/
-github https://github.com/atmajs/maskjs
+status active
+fileType text
+isOpenSource true

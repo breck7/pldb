@@ -1,4 +1,84 @@
+title Q
 appeared 2003
 type pl
 creators Arthur Whitney
-wikipedia Q_(programming_language_from_Kx_Systems)
+
+patterns
+ hasCentralPackageRepository? false
+
+wikipedia https://en.wikipedia.org/wiki/Q_(programming_language_from_Kx_Systems)
+ example
+  q)select from t where name like "ja*",age>50
+  name age
+  --------
+  jack 60
+  
+  q)select rows:count i by age from t
+  age| rows
+  ---| ----
+  20 | 1
+  50 | 2
+  60 | 1
+ related q-equational-programming-language scheme k apl sql
+ summary Q is a proprietary array processing language developed by Arthur Whitney and commercialized by Kx Systems. The language serves as the query language for kdb+, a disk based and in-memory, column-based database. kdb+ is based upon K, a terse variant of APL. Q is a thin wrapper around K, providing a more readable, English-like interface.
+ pageId 18595067
+ dailyPageViews 99
+ created 2008
+ backlinksCount 23
+ revisionCount 91
+ appeared 2003
+
+githubLanguage q
+ fileExtensions q
+
+helloWorldCollection Q
+ /* Hello world in Q */
+ 
+ hello            = writes "Hello, world!\n";
+
+linguistGrammarRepo https://github.com/komsit37/sublime-q
+ firstCommit 2015
+ lastCommit 2018
+ committerCount 7
+ commitCount 73
+ sampleCount 2
+ example
+  dst:`:tq
+  src:`:tqsrc
+  F:key src
+  
+  / trade fields (types;widths)   trf after 200609
+  tf:`time`ex`sym`s`cond`size`price`stop`corr`seq`cts`trf
+  tt:("TCSS*IFBIJCC ";9 1 6 10 4 9 11 1 2 16 1 1,1+20060930<"I"$-8#string first F)
+  
+  / quote fields (types;widths)
+  qf:`time`ex`sym`s`bid`bsize`ask`asize`cond`mmid`bex`aex`seq`bbo`qbbo`corr`cqs
+  qt:("TCSSFIFIC*CCJCCCC ";9 1 6 10 11 7 11 7 1 4 1 1 16 1 1 1 1 2)
+  
+  / sym[.s] "e"$pricebidask 
+  g:{[f;x]`sym`time xcols delete s from @[;`sym;{$[null y;x;` sv x,y]}';x`s]@[x;f;"e"$%;1e4]}
+  foo:{[d;f;t;g;x]@[;`sym;`p#].Q.dsftg[(dst;"D"$-8#string x;d);(` sv src,x;sum t 1;0);f;t;g]}
+  
+  \t foo[`trade;tf;tt;g[`price]  ]each F where F like"taqtrade*[0-9]";
+  \t foo[`quote;qf;qt;g[`bid`ask]]each F where F like"taqquote*[0-9]";
+  
+  \
+  http://www.nyxdata.com/Data-Products/Daily-TAQ
+  
+
+status active
+fileType text
+wordRank 559
+
+tiobe Q
+
+projectEuler Q
+ memberCount
+  2019 132
+  2022 152
+
+codeMirror q
+
+rosettaCode Q
+
+corporateDevelopers Kx Systems

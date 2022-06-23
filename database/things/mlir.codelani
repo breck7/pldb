@@ -1,7 +1,7 @@
+title mlir
 appeared 2019
 type ir
-website https://mlir.llvm.org/
-github https://github.com/tensorflow/mlir
+
 example
  // Syntactically similar to LLVM:
  func @testFunction(%arg0: i32) {
@@ -11,4 +11,16 @@ example
    %y = addi %x, %x : i32
    return %y : i32
  }
+
+githubRepo https://github.com/tensorflow/mlir
+ firstCommit 2019
+ stars 1178
+ forks 156
+ subscribers 170
+ created 2019
+ updated 2019
+ description "Multi-Level Intermediate Representation" Compiler Infrastructure
+ issues 23
+
+website https://mlir.llvm.org/
 reference https://blog.tensorflow.org/2019/04/mlir-new-intermediate-representation.html

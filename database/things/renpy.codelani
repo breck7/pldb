@@ -1,3 +1,93 @@
+title Ren'Py
 appeared 2004
 type pl
-wikipedia Ren'Py
+
+patterns
+ hasCentralPackageRepository? false
+
+wikipedia https://en.wikipedia.org/wiki/Ren'Py
+ related python cython linux freebsd android ios utf-8
+ summary The Ren'Py Visual Novel Engine is a free software engine which facilitates the creation of visual novels, a form of computer-mediated storytelling. Ren'Py is a portmanteau of ren'ai (恋愛), the Japanese word for 'romantic love', a common element of games made using Ren'Py; and Python, the programming language that Ren'Py runs on. Ren'Py has proved attractive to English-language hobbyists; over 1000 games use the Ren'Py engine, nearly all in English.
+ pageId 17474146
+ created 2008
+ backlinksCount 250
+ revisionCount 375
+ dailyPageViews 130
+ appeared 2004
+
+githubLanguage Ren'Py
+ fileExtensions rpy
+ trendingProjectsCount 0
+
+linguistGrammarRepo https://github.com/williamd1k0/language-renpy.git
+ firstCommit 2013
+ lastCommit 2018
+ committerCount 26
+ commitCount 238
+ sampleCount 1
+ example
+  ###     Demo Script Example     ###
+  
+  ﻿# This script, but not the artwork associated with it, is in the
+  # public domain. Feel free to use it as the basis for your own
+  # game.
+  
+  # If you're trying to understand this script, I recommend skipping
+  # down to the line beginning with 'label start:', at least on your
+  # first read-through.
+  
+  # This init block runs first, and sets up all sorts of things that
+  # are used by the rest of the game. Variables that are set in init
+  # blocks are _not_ saved, unless they are changed later on in the
+  # program.
+  
+  init:
+  
+      # Set up the size of the screen, and the window title.
+      $ config.screen_width = 800
+      $ config.screen_height = 600
+      $ config.window_title = "The Ren'Py Demo Game"
+  
+      # Declare the images that are used in the program.
+  
+      # Backgrounds.
+      image bg carillon = "carillon.jpg"
+      image bg whitehouse = "whitehouse.jpg"
+      image bg washington = "washington.jpg"
+      image bg onememorial = "1memorial.jpg"
+      image black = Solid((0, 0, 0, 255))
+  
+      # Character pictures.
+      image eileen happy = "9a_happy.png"
+      image eileen vhappy = "9a_vhappy.png"
+      image eileen concerned = "9a_concerned.png"
+  
+      # A character object. This object lets us have the character say
+      # dialogue without us having to repeatedly type her name. It also
+      # lets us change the color of her name.
+  
+      $ e = Character('Eileen', color=(200, 255, 200, 255))
+  
+  # The start label marks the place where the main menu jumps to to
+  # begin the actual game.
+  
+  label start:
+  
+      # The save_name variable sets the name of the save game. Like all
+      # variables declared outside of init blocks, this variable is
+      # saved and restored with a save file.
+      $ save_name = "Introduction"
+  
+      # This variable is only used by our game. If it's true, it means
+      # that we won the date.
+      $ date = False
+  
+      # Clear the game runtime timer, so it doesn't reflect time spent
+      # sitting at the main menu.
+      $ renpy.clear_game_runtime()
+  
+      # Start some m
+
+status active
+fileType text
+isOpenSource true

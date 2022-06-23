@@ -1,5 +1,28 @@
+title koka
 appeared 2012
 type pl
 creators Daan Leijen
+
+patterns
+ hasCentralPackageRepository? false
+
+githubRepo https://github.com/koka-lang/koka
+ stars 264
+ forks 25
+ subscribers 14
+ created 2016
+ updated 2017
+ firstCommit 2012
+ description Koka language compiler and interpreter
+ issues 56
+
 website https://www.microsoft.com/en-us/research/project/koka/?from=http%3A%2F%2Fresearch.microsoft.com%2Fen-us%2Fprojects%2Fkoka
-github https://github.com/koka-lang/koka
+status active
+
+tryItOnline koka
+
+fileType text
+isOpenSource true
+webRepl https://rise4fun.com/koka/
+corporateDevelopers Microsoft
+writtenIn haskell

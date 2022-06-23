@@ -1,5 +1,75 @@
+title Mercury
 appeared 1995
 type pl
 creators Zoltan Somogyi
+
+patterns
+ hasCentralPackageRepository? false
+
+wikipedia https://en.wikipedia.org/wiki/Mercury_(programming_language)
+ example
+  :- module fib.
+   :- interface.
+   :- import_module io.
+   :- pred main(io::di, io::uo) is det.
+   
+   :- implementation.
+   :- import_module int.
+  
+   :- func fib(int) = int.
+   fib(N) = (if N =< 2 then 1 else fib(N - 1) + fib(N - 2)).
+  
+   main(!IO) :-
+          io.write_string("fib(10) = ", !IO),
+          io.write_int(fib(10), !IO),
+          io.nl(!IO).
+          % Could instead use io.format("fib(10) = %d\n", [i(fib(10))], !IO).
+ related autocode mercurial ia-32 arm unix linux solaris freebsd android prolog hope haskell c java csharp erlang assembly-language cil vim-editor emacs-editor eclipse-editor curry alice standard-ml oz visual-prolog
+ summary Mercury is a functional logic programming language made for real-world uses. The first version was developed at the University of Melbourne, Computer Science department, by Fergus Henderson, Thomas Conway, and Zoltan Somogyi, under Somogyi's supervision, and released on April 8, 1995. Mercury is a purely declarative logic programming language. It is related to both Prolog and Haskell. It features a strong, static, polymorphic type system, and a strong mode and determinism system. The official implementation, the Melbourne Mercury Compiler, is available for most Unix and Unix-like platforms, including Linux, macOS, and for Windows (32bits only).
+ pageId 19726
+ dailyPageViews 74
+ created 2001
+ backlinksCount 83
+ revisionCount 260
+ appeared 1995
+ fileExtensions m
+
+githubLanguage Mercury
+ fileExtensions m moo
+ trendingProjectsCount 0
+
+linguistGrammarRepo https://github.com/sebgod/mercury-tmlanguage
+ firstCommit 2014
+ lastCommit 2015
+ committerCount 1
+ commitCount 31
+ sampleCount 10
+ example
+  % "Hello World" in Mercury.
+  
+  % This source file is hereby placed in the public domain.  -fjh (the author).
+  
+  :- module hello.
+  :- interface.
+  :- import_module io.
+  
+  :- pred main(io::di, io::uo) is det.
+  
+  :- implementation.
+  
+  main(!IO) :-
+  	io.write_string("Hello, world\n", !IO).
+  
+
 website http://www.mercurylang.org
-wikipedia Mercury_(programming_language)
+status active
+fileExtensions m
+fileType text
+wordRank 4418
+isOpenSource true
+
+tiobe Mercury
+
+hopl 2226
+
+rosettaCode Mercury

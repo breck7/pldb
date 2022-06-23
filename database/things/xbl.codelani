@@ -1,3 +1,24 @@
+title XML Binding Language
 appeared 2000
 type xmlFormat
-wikipedia XBL
+
+patterns
+ hasCentralPackageRepository? false
+
+wikipedia https://en.wikipedia.org/wiki/XBL
+ example
+  scrollbar {
+    -moz-binding: url('somefile.xml#binding1');
+  }
+ related xml css svg
+ summary XBL (XML Binding Language) is an XML-based markup language used to declare the behavior and look of XUL-widgets and XML elements. Development of the XBL specification was abandoned by the W3C in 2012. XBL was developed by the Mozilla project for use in the Mozilla Application Suite; the language is not currently described by any formal standard and is thus proprietary to Mozilla, with the only implementation being the Gecko layout engine. XBL 2.0 is the latest version of XBL. XBL 1.0 was first developed at Netscape in 2000 and announced in 2001. In August 2015, Mozilla announced that the use of XBL for creating Firefox add-ons would be deprecated in the future in favour of WebExtensions. Pale Moon, a fork of Firefox, will continue to support XBL indefinitely.
+ pageId 793475
+ dailyPageViews 115
+ created 2004
+ backlinksCount 237
+ revisionCount 131
+ appeared 2000
+
+standsFor XML Binding Language
+status historical
+fileType text

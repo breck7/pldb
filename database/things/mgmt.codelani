@@ -1,7 +1,7 @@
+title mgmt
 appeared 2015
 type pl
-website https://purpleidea.com/tags/mgmtconfig/
-github https://github.com/purpleidea/mgmt
+
 example
  import "datetime"
  $is_friday = datetime.weekday(datetime.now()) == "friday"
@@ -13,4 +13,18 @@ example
     "0770"
   },
  }
+
+githubRepo https://github.com/purpleidea/mgmt
+ firstCommit 2015
+ stars 2110
+ forks 236
+ subscribers 106
+ created 2015
+ updated 2020
+ description Next generation distributed, event-driven, parallel config management!
+ issues 108
+
+website https://purpleidea.com/tags/mgmtconfig/
 reference https://fosdem.org/2020/schedule/event/mgmtconfigmore/
+
+twitter purpleidea

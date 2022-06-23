@@ -1,6 +1,7 @@
+title taf
 appeared 2012
 type pl
-github https://github.com/manuel/taf
+
 example
  (define (make-person name email)
    #(person :name name :email email)) ; creates a person record with name and email fields
@@ -11,5 +12,10 @@ example
  
  (to-string (make-person "Manuel" "msimoni@gmail.com"))
  ; ==> "Manuel <msimoni@gmail.com>"
-reference http://www.manuelsimoni.net/taf/doc/plan.html
+
 description A Lisp with row polymorphism, delimited continuations, and hygienic macros. [vaporware]
+
+githubRepo https://github.com/manuel/taf
+ firstCommit 2012
+
+reference http://www.manuelsimoni.net/taf/doc/plan.html

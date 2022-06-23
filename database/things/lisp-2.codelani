@@ -1,4 +1,20 @@
+title LISP 2
 appeared 1963
 type pl
-wikipedia LISP_2
+
+patterns
+ hasCentralPackageRepository? false
+
+wikipedia https://en.wikipedia.org/wiki/LISP_2
+ related lisp algol
+ summary For Lisp-2, Lisp systems with separate function namespaces, see Lisp-1 vs. Lisp-2LISP 2 was a programming language proposed in the 1960s as the successor to Lisp. It had largely Lisp-like semantics and Algol 60-like syntax. Today it is mostly remembered for its syntax, but in fact it had many features beyond those of early Lisps. Early Lisps had many limitations, including limited data types and slow numerics. Its use of fully parenthesized notation was also considered a problem. The inventor of Lisp, John McCarthy, expected these issues to be addressed in a later version, called notionally Lisp 2. Hence the name Lisp 1.5 for the successor to the earliest Lisp.Lisp 2 was a joint project of the System Development Corporation and Information International, Inc., and was intended for  the IBM built AN/FSQ-32 military computer. Development later shifted to the IBM 360/67 and the Digital Equipment Corporation PDP-6. The project was eventually abandoned.
+ backlinksCount 16
+ pageId 13388339
+ dailyPageViews 8
+ created 2007
+ appeared 1960
+
 reference https://semanticscholar.org/paper/7a578a2bbf9a8d14a246ac8e6f46ee49b9a7dae7
+status historical
+
+hopl 264

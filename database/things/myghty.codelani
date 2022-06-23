@@ -1,4 +1,16 @@
+title Myghty
 appeared 2006
 type pl
-reference https://pypi.org/project/Myghty/
+
+patterns
+ hasCentralPackageRepository? false
+
 description A Python-based template and view-controller framework derived from HTML::Mason. Supports the full featureset of Mason, allowing component-based web development with Python-embedded HTML, and includes many new concepts and features not found in Mason. Myghty is a legacy library. New projects should use Mako templates.
+
+githubLanguage Myghty
+ fileExtensions myt
+ trendingProjectsCount 0
+
+reference https://pypi.org/project/Myghty/
+status historical
+fileType text

@@ -1,3 +1,27 @@
+title Visual Basic for Applications
 appeared 1993
 type pl
-wikipedia Visual_Basic_for_Applications
+
+patterns
+ hasCentralPackageRepository? false
+ hasComments? true
+
+wikipedia https://en.wikipedia.org/wiki/Visual_Basic_for_Applications
+ related quickbasic visual-basic excel-app autocad-app basic microsoft-basic visual-basic-dot-net vbscript jscript csharp visual-studio-editor
+ summary Visual Basic for Applications (VBA) is an implementation of Microsoft's event-driven programming language Visual Basic 6, which was discontinued in 2008, and its associated integrated development environment (IDE). Although Visual Basic is no longer supported or updated by Microsoft, VBA itself got upgraded in 2010 with the introduction of Visual Basic for Applications 7 in Microsoft Office applications. Visual Basic for Applications enables building user-defined functions (UDFs), automating processes and accessing Windows API and other low-level functionality through dynamic-link libraries (DLLs). It supersedes and expands on the abilities of earlier application-specific macro programming languages such as Word's WordBasic. It can be used to control many aspects of the host application, including manipulating user interface features, such as menus and toolbars, and working with custom user forms or dialog boxes. As its name suggests, VBA is closely related to Visual Basic and uses the Visual Basic Runtime Library. However, VBA code normally can only run within a host application, rather than as a standalone program. VBA can, however, control one application from another using OLE Automation. For example, VBA can automatically create a Microsoft Word report from Microsoft Excel data that Excel collects automatically from polled sensors. VBA can use, but not create, ActiveX/COM DLLs, and later versions add support for class modules. VBA is built into most Microsoft Office applications, including Office for Mac OS X (except version 2008), and other Microsoft applications, including Microsoft MapPoint and Microsoft Visio. VBA is also implemented, at least partially, in applications published by companies other than Microsoft, including ArcGIS, AutoCAD, CorelDraw, LibreOffice, Reflection, SolidWorks, and WordPerfect.
+ pageId 32778
+ dailyPageViews 726
+ created 2002
+ backlinksCount 576
+ revisionCount 817
+ appeared 1993
+
+standsFor Visual Basic for Applications
+status historical
+fileType text
+
+rosettaCode VBA
+
+antlr https://github.com/antlr/grammars-v4/tree/master/vba
+
+corporateDevelopers Microsoft

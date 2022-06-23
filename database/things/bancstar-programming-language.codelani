@@ -1,3 +1,40 @@
+title BANCStar programming language
 appeared 1996
 type pl
-wikipedia BANCStar_programming_language
+
+patterns
+ hasCentralPackageRepository? false
+
+wikipedia https://en.wikipedia.org/wiki/BANCStar_programming_language
+ example
+  8607,,,1
+  11547,15475,22002,22002
+  1316,1629,1,1649
+  3001,1316,3,30078
+  11528,22052,22002,22002
+  9301,0,1528,1528
+  31568,10001,800,107
+  8560,,,1568
+  8550,210,,
+  3001,,,
+  3100,1316,3,30089
+  11547,15475,22002,22002
+  3001,1316,3,30089
+  3001,1317,3,10000
+  8400,,,
+  8550,700,801,
+  3001,,,
+  9301,0,522,522
+  3000,1284,3,10001
+  8500,,3,
+  8500,,5,
+  1547,,1,-2301
+ summary BANCStar is a specialist  computer programming language for financial applications. The language is an internal language for the National Financial Computer Services, Inc (later Broadway & Seymour) BANCStar application, which is software to automate the operations of a bank branch.The language is a fixed format four integer command language NFCS internally referred to as "Screen Code". It resembles an esoteric programming language; so much so that it has sometimes been mistaken for a joke language. Conceptually the BANCStar application executed "Screen Code" much like a primitive Virtual Machine. In the 5.1c release the only legal characters are the  numerals 0–9, the comma, the minus sign and the carriage return.  However, it is used in real commercial applications. It was originally intended as generated code from a user interface-building tool — similar to bytecode rendered in ASCII — but due to limitations in the tool, it became a directly programmed language in itself.The BANCStar 10.0 release changed the "Screen Code" format to binary, and rearranged the numeric codes into an opcode with a variable number of parameter integers. The 10.0 opcode encoded a bit mapped length value that indicated the length of the command in words.
+ created 2007
+ backlinksCount 9
+ pageId 14938248
+ revisionCount 38
+ dailyPageViews 7
+ appeared 1995
+
+status historical

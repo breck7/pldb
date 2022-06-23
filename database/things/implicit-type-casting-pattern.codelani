@@ -1,3 +1,6 @@
+title Implicit Type Casting
 type pattern
-reference https://en.wikipedia.org/wiki/Type_conversion
+psuedoExample console.log("hello " + 2)
 description Changing an expression from one data type to another automatically.
+reference https://en.wikipedia.org/wiki/Type_conversion
+patternKeyword hasImplicitTypeConversions?

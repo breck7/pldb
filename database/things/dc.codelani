@@ -1,3 +1,72 @@
+title desk calculator
 appeared 1978
 type pl
-wikipedia Dc_(computer_program)
+
+patterns
+ hasCentralPackageRepository? false
+
+wikipedia https://en.wikipedia.org/wiki/Dc_(computer_program)
+ example
+  #!/usr/bin/perl
+  
+  my ($g,$e,$m) = map { "\U$_" } @ARGV;
+  die "$0 gen exp mod\n" unless $m;
+  
+  print `echo $g $e $m | dc -e '
+  # Hex input and output
+  16dio
+  # Read m, e and g from stdin on one line
+  ?SmSeSg
+  
+  # Function z: return g * top of stack
+  [lg*]sz
+  
+  # Function Q: remove the top of the stack and return 1
+  [sb1q]sQ
+  
+  # Function X(e): recursively compute g^e % m
+  # It is the same as Sm^Lm%, but handles arbitrarily large exponents.
+  # Stack at entry: e
+  # Stack at exit: g^e % m
+  # Since e may be very large, this uses the property that g^e % m == 
+  #	if( e == 0 )
+  #		return 1
+  #	x = (g^(e/2)) ^ 2
+  #	if( e % 2 == 1 )
+  #		x *= g
+  #	return x %
+  [
+  	d 0=Q		# return 1 if e==0 (otherwise, stack: e)
+  	d 2% Sa		# Store e%2 in a (stack: e)
+  	2/		# compute e/2
+  	lXx		# call X(e/2)
+  	d*		# compute X(e/2)^2
+  	La1=z		# multiply by g if e%2==1
+  	lm %		# compute (g^e) % m
+  ] SX
+  
+  le	# Load e from the register
+  lXx	# compute g^e % m
+  p	# Print the result
+  '`;
+ related reverse-polish-notation unix c
+ summary dc (desk calculator) is a cross-platform reverse-polish calculator which supports arbitrary-precision arithmetic. It is one of the oldest Unix utilities, predating even the invention of the C programming language. Like other utilities of that vintage, it has a powerful set of features but terse syntax. Traditionally, the bc calculator program (with infix notation) was implemented on top of dc. This article provides some examples in an attempt to give a general flavour of the language; for a complete list of commands and syntax, one should consult the man page for one's specific implementation.
+ pageId 562904
+ created 2004
+ backlinksCount 23
+ revisionCount 149
+ dailyPageViews 36
+ appeared 1971
+
+standsFor desk calculator
+status historical
+
+tryItOnline dc
+
+country US
+fileType text
+wordRank 1109
+
+hopl 1957
+
+rosettaCode Dc

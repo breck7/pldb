@@ -1,7 +1,7 @@
+title kai
 appeared 2016
 type pl
-website http://docs.kai-lang.org
-github https://github.com/kai-language/kai
+
 example
  /* // github.com/kai-language/issues/116
  #test "bitcast to struct" {
@@ -11,4 +11,17 @@ example
      x : rawptr = nil
      a := bitcast(A) x
  } */
+
 description An expressive low level programming language
+
+githubRepo https://github.com/kai-language/kai
+ firstCommit 2016
+ stars 67
+ forks 1
+ subscribers 3
+ created 2016
+ updated 2019
+ description An expressive low level programming language
+ issues 37
+
+website http://docs.kai-lang.org

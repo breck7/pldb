@@ -1,6 +1,27 @@
+title Parallel Thread Execution
 appeared 2009
 type assembly
-website https://llvm.org/docs/NVPTXUsage.html
-wikipedia Parallel_Thread_Execution
-reference https://www.nvidia.com/content/cuda-ptx_isa_1.4.pdf
+
+patterns
+ hasCentralPackageRepository? false
+
 description PTX, a low-level parallel thread execution virtual machine and instruction set architecture (ISA). PTX exposes the GPU as a data-parallel computing device.
+
+wikipedia https://en.wikipedia.org/wiki/Parallel_Thread_Execution
+ example
+  .shared .align 8 .b8 pbatch_cache[15744]; // define 15744 bytes, aligned to an 8-byte boundary
+ related assembly-language cuda
+ summary Parallel Thread Execution (PTX, or NVPTX) is a pseudo-assembly language used in Nvidia's CUDA programming environment.  The nvcc compiler translates code written in CUDA, a C++-like language, into PTX, and the graphics driver contains a compiler which translates the PTX into a binary code which can be run on the processing cores.
+ backlinksCount 13
+ pageId 25073119
+ created 2009
+ revisionCount 37
+ dailyPageViews 19
+ appeared 2009
+
+website https://llvm.org/docs/NVPTXUsage.html
+reference https://www.nvidia.com/content/cuda-ptx_isa_1.4.pdf
+aka nvptx
+status historical
+fileType text
+corporateDevelopers Nvidia

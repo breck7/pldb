@@ -1,3 +1,13 @@
+title Sun Raster
 appeared 1989
 type binaryDataFormat
-wikipedia Sun_Raster
+
+wikipedia https://en.wikipedia.org/wiki/Sun_Raster
+ summary Sun Raster was a raster graphics file format used on SunOS by Sun Microsystems. The format has no MIME type, it is specified in @(#)rasterfile.h 1.11 89/08/21 SMI. The format was used for some research papers.ACDSee, FFmpeg, GIMP, ImageMagick, IrfanView, LibreOffice, Netpbm, PaintShop Pro, and XnView among others support Sun Raster image files. In version 2.13 XnView supported the file extensions .ras and .sun for this graphics file format. In version 2.1.4 FFmpeg could encode and decode Sun Raster pixel formats bgr24, pal8, gray, and monow. The format does not support transparency. The plain text Sun icon format specified in @(#)icon_load.h 10.5 89/09/05 SMI is unrelated to the Sun Raster format.
+ backlinksCount 111
+ pageId 42195377
+ dailyPageViews 25
+ appeared 1989
+
+status active
+fileExtensions sun ras

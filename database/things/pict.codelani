@@ -1,3 +1,23 @@
+title PICT
 appeared 1992
 type pl
-wikipedia Pict_(programming_language)
+
+patterns
+ hasCentralPackageRepository? false
+
+wikipedia https://en.wikipedia.org/wiki/Pict_(programming_language)
+ summary Pict is a statically typed programming language, one of the very few based on the π-calculus. Work on the language began at the University of Edinburgh in 1992, and development has been more or less dormant since 1998. The language is still at an experimental stage.
+ pageId 6751312
+ created 2006
+ backlinksCount 7
+ revisionCount 22
+ dailyPageViews 8
+ appeared 1992
+
+status historical
+country GB
+fileType text
+
+hopl 2365
+
+rosettaCode Pict

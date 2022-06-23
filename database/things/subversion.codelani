@@ -1,4 +1,31 @@
+title Apache Subversion
 appeared 2000
 type application
+
+patterns
+ hasCentralPackageRepository? false
+
+wikipedia https://en.wikipedia.org/wiki/Apache_Subversion
+ example
+  componentfoo/
+              /trunk/
+              /tags/
+                   /1.1/
+  componentbar/
+              /trunk/
+              /tags/
+                   /1.1/
+ related c free-pascal freebsd xml csharp php python perl ruby java mime unix
+ summary Apache Subversion (often abbreviated SVN, after its command name svn) is a software versioning and revision control system distributed as open source under the Apache License. Software developers use Subversion to maintain current and historical versions of files such as source code, web pages, and documentation. Its goal is to be a mostly compatible successor to the widely used Concurrent Versions System (CVS). The open source community has used Subversion widely: for example in projects such as Apache Software Foundation, Free Pascal, FreeBSD, GCC and SourceForge. CodePlex offers access to Subversion as well as to other types of clients. Subversion was created by CollabNet Inc. in 2000, and is now a top-level Apache project being built and used by a global community of contributors.
+ pageId 144868
+ dailyPageViews 491
+ created 2002
+ backlinksCount 493
+ revisionCount 1596
+ appeared 2000
+
 website http://subversion.apache.org/
-wikipedia Apache_Subversion
+status active
+fileType text
+isOpenSource true
+corporateDevelopers Apache

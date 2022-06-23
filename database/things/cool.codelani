@@ -1,3 +1,80 @@
+title Classroom Object Oriented Language
 appeared 1996
 type pl
-wikipedia Cool_(programming_language)
+
+patterns
+ hasCentralPackageRepository? false
+
+wikipedia https://en.wikipedia.org/wiki/Cool_(programming_language)
+ example
+  class Main inherits IO {
+    main(): Object {{
+      out_string("Enter an integer greater-than or equal-to 0: ");
+  
+      let input: Int <- in_int() in
+        if input < 0 then
+          out_string("ERROR: Number must be greater-than or equal-to 0\n")
+        else {
+          out_string("The factorial of ").out_int(input);
+          out_string(" is ").out_int(factorial(input));
+          out_string("\n");
+        }
+        fi;
+    }};
+  
+    factorial(num: Int): Int {
+      if num = 0 then 1 else num * factorial(num - 1) fi
+    };
+  };
+ related clips sather java ml pascal ocaml mips
+ summary Cool, an acronym for Classroom Object Oriented Language, is a computer programming language designed by Alexander Aiken for use in an undergraduate compiler course project. While small enough for a one term project, Cool still has many of the features of modern programming languages, including objects, automatic memory management, strong static typing and simple reflection. The reference Cool compiler is written in C++, built fully on the public domain tools. It generates code for a MIPS simulator, SPIM. Thus, the language should port easily to other platforms. It has been used for teaching compilers at many institutions (such as the University of California at Berkeley, where it was first used or Shahid Beheshti University of Iran) and the software is stable. This language is unrelated to the COOL language included in CLIPS.
+ pageId 14782123
+ created 2007
+ backlinksCount 18
+ revisionCount 105
+ dailyPageViews 25
+ appeared 1996
+
+githubLanguage Cool
+ fileExtensions cl
+ trendingProjectsCount 0
+
+linguistGrammarRepo https://github.com/anunayk/cool-tmbundle
+ firstCommit 2014
+ lastCommit 2014
+ committerCount 1
+ commitCount 4
+ sampleCount 2
+ example
+  (* This simple example of a list class is adapted from an example in the
+     Cool distribution. *)
+  
+  class List {
+     isNil() : Bool { true };
+     head()  : Int { { abort(); 0; } };
+     tail()  : List { { abort(); self; } };
+     cons(i : Int) : List {
+        (new Cons).init(i, self)
+     };
+  };
+  
+  class Cons inherits List {
+     car : Int;	-- The element in this list cell
+     cdr : List;	-- The rest of the list
+     isNil() : Bool { false };
+     head()  : Int { car };
+     tail()  : List { cdr };
+     init(i : Int, rest : List) : List {
+        {
+  	 car <- i;
+  	 cdr <- rest;
+  	 self;
+        }
+     };
+  };
+  
+
+standsFor Classroom Object Oriented Language
+status active
+fileType text
+wordRank 1457

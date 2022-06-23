@@ -1,5 +1,256 @@
+title Apache Maven
 appeared 2004
 type application
-website http://maven.apache.org/
-wikipedia Apache_Maven
+
+patterns
+ hasCentralPackageRepository? false
+
 description Apache Maven is a software project management and comprehension tool. Based on the concept of a project object model (POM), Maven can manage a project's build, reporting and documentation from a central piece of information.
+
+wikipedia https://en.wikipedia.org/wiki/Apache_Maven
+ example
+  1  validate
+   2  generate-sources
+   3  process-sources
+   4  generate-resources
+   5  process-resources
+   6  compile
+   7  process-test-sources
+   8  process-test-resources
+   9  test-compile
+  10  test
+  11  package
+  12  install
+  13  deploy
+ related java xml csharp ruby scala c eclipse-editor yaml groovy
+ summary Maven is a build automation tool used primarily for Java projects. Maven addresses two aspects of building software: first, it describes how software is built, and second, it describes its dependencies. Unlike earlier tools like Apache Ant, it uses conventions for the build procedure, and only exceptions need to be written down. An XML file describes the software project being built, its dependencies on other external modules and components, the build order, directories, and required plug-ins. It comes with pre-defined targets for performing certain well-defined tasks such as compilation of code and its packaging. Maven dynamically downloads Java libraries and Maven plug-ins from one or more repositories such as the Maven 2 Central Repository, and stores them in a local cache. This local cache of downloaded artifacts can also be updated with artifacts created by local projects. Public repositories can also be updated. Maven can also be used to build and manage projects written in C#, Ruby, Scala, and other languages. The Maven project is hosted by the Apache Software Foundation, where it was formerly part of the Jakarta Project. Maven is built using a plugin-based architecture that allows it to make use of any application controllable through standard input. Theoretically, this would allow anyone to write plugins to interface with build tools (compilers, unit test tools, etc.) for any other language. In reality, support and use for languages other than Java has been minimal. A plugin for the .NET framework exists and is maintained, and a C/C++ native plugin is maintained for Maven 2.Alternative technologies like Gradle and sbt as build tools do not rely on XML, but keep the key concepts Maven introduced. With Apache Ivy, a dedicated dependency manager was developed as well that also supports Maven repositories.Maven still does not support reproducible builds, but developers are progressing on this task.
+ created 2004
+ backlinksCount 327
+ pageId 1333305
+ revisionCount 657
+ dailyPageViews 619
+ appeared 2002
+
+githubLanguage Maven POM
+ trendingProjectsCount 0
+
+linguistGrammarRepo https://github.com/textmate/maven.tmbundle
+ firstCommit 2007
+ lastCommit 2014
+ committerCount 3
+ commitCount 43
+ sampleCount 1
+ example
+  <?xml version="1.0" encoding="UTF-8"?>
+  <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+  	<modelVersion>4.0.0</modelVersion>
+  	<groupId>renpengben</groupId>
+  	<artifactId>spring4mvc-jpa</artifactId>
+  	<packaging>war</packaging>
+  	<version>0.0.1-SNAPSHOT</version>
+  	<name>spring4mvc-jpa Maven Webapp</name>
+  
+  	<url>https://renpengben.github.io</url>
+  
+  	<description>spring4mvc-jpa</description>
+  
+  	<properties>
+  		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+  		<java.version>1.7</java.version>
+  		<junit.version>4.11</junit.version>
+  		<slf4j.version>1.7.7</slf4j.version>
+  		<log4j.version>1.2.17</log4j.version>
+  
+  		<spring.version>4.0.5.RELEASE</spring.version>
+  		<spring.data.jpa.version>1.6.0.RELEASE</spring.data.jpa.version>
+  		<cglib.version>2.1_3</cglib.version>
+  
+  		<mysql.version>5.1.31</mysql.version>
+  		<hibernate.version>4.3.5.Final</hibernate.version>
+  		<hibernate-validator.version>5.1.1.Final</hibernate-validator.version>
+  		<druid-version>1.0.6</druid-version>
+  
+  	</properties>
+  
+  
+  	<dependencies>
+  
+  		<dependency>
+  			<groupId>junit</groupId>
+  			<artifactId>junit</artifactId>
+  			<version>${junit.version}</version>
+  			<scope>test</scope>
+  		</dependency>
+  
+  		<dependency>
+  			<groupId>org.slf4j</groupId>
+  			<artifactId>slf4j-api</artifactId>
+  			<version>${slf4j.version}</version>
+  		</dependency>
+  		<dependency>
+  			<groupId>org.slf4j</groupId>
+  			<artifactId>slf4j-log4j12</artifactId>
+  			<version>${slf4j.version}</version>
+  		</dependency>
+  		<dependency>
+  			<groupId>log4j</groupId>
+  			<artifactId>log4j</artifactId>
+  			<version>${log4j.version}</version>
+  		</dependency>
+  
+  
+  		<!-- Spring -->
+  		<dependency>
+  			<groupId>org.springframework</groupId>
+  			<artifactId>spring-core</artifactId>
+  			<version>${spring.version}</version>
+  			<exclusions>
+  				<exclusion>
+  					<groupId>commons-logging</groupId>
+  					<artifactId>commons-logging</artifactId>
+  				</exclusion>
+  			</exclusions>
+  		</dependency>
+  
+  		<dependency>
+  			<groupId>org.springframework</groupId>
+  			<artifactId>spring-beans</artifactId>
+  			<version>${spring.version}</version>
+  		</dependency>
+  		<dependency>
+  			<groupId>org.springframework</groupId>
+  			<artifactId>spring-context</artifactId>
+  			<version>${spring.version}</version>
+  		</dependency>
+  
+  		<dependency>
+  			<groupId>org.springframework</groupId>
+  			<artifactId>spring-aop</artifactId>
+  			<version>${spring.version}</version>
+  		</dependency>
+  
+  		<dependency>
+  			<groupId>org.springframework</groupId>
+  			<artifactId>spring-expression</artifactId>
+  			<version>${spring.version}</version>
+  		</dependency>
+  		<dependency>
+  			<groupId>org.springframework</groupId>
+  			<artifactId>spring-tx</artifactId>
+  			<version>${spring.version}</version>
+  		</dependency>
+  
+  
+  		<dependency>
+  			<groupId>org.springframework</groupId>
+  			<artifactId>spring-aspects</artifactId>
+  			<version>${spring.version}</version>
+  		</dependency>
+  		<dependency>
+  			<groupId>org.springframework</groupId>
+  			<artifactId>spring-context-support</artifactId>
+  			<version>${spring.version}</version>
+  		</dependency>
+  		<dependency>
+  			<groupId>org.springframework</groupId>
+  			<artifactId>spring-jdbc</artifactId>
+  			<version>${spring.version}</version>
+  		</dependency>
+  		<dependency>
+  			<groupId>org.springframework</groupId>
+  			<artifactId>spring-orm</artifactId>
+  			<version>${spring.version}</version>
+  		</dependency>
+  
+  		<dependency>
+  			<groupId>org.springframework</groupId>
+  			<artifactId>spring-web</artifactId>
+  			<version>${spring.version}</version>
+  		</dependency>
+  		<dependency>
+  			<groupId>org.springframework</groupId>
+  			<artifactId>spring-webmvc</artifactId>
+  			<version>${spring.version}</version>
+  		</dependency>
+  		<dependency>
+  			<groupId>org.springframework</groupId>
+  			<artifactId>spring-test</artifactId>
+  			<version>${spring.version}</version>
+  			<scope>test</scope>
+  		</dependency>
+  
+  		<dependency>
+  			<groupId>org.springframework.data</groupId>
+  			<artifactId>spring-data-jpa</artifactId>
+  			<version>${spring.data.jpa.version}</version>
+  			<exclusions>
+  				<exclusion>
+  					<artifactId>junit-dep</artifactId>
+  					<groupId>junit</groupId>
+  				</exclusion>
+  			</exclusions>
+  		</dependency>
+  		<dependency>
+  			<groupId>cglib</groupId>
+  			<artifactId>cglib-nodep</artifactId>
+  			<version>${cglib.version}</version>
+  		</dependency>
+  
+  
+  
+  		<!-- JPA -->
+  
+  		<dependency>
+  			<groupId>org.hibernate</groupId>
+  			<artifactId>hibernate-core</artifactId>
+  			<version>${hibernate.version}</version>
+  		</dependency>
+  		<dependency>
+  			<groupId>org.hibernate</groupId>
+  			<artifactId>hibernate-entitymanager</artifactId>
+  			<version>${hibernate.version}</version>
+  		</dependency>
+  		<dependency>
+  			<groupId>org.hibernate</groupId>
+  			<artifactId>hibernate-validator</artifactId>
+  			<version>${hibernate-validator.version}</version>
+  			<scope>compile</scope>
+  
+  		</dependency>
+  
+  
+  		<dependency>
+  			<groupId>mysql</groupId>
+  			<artifactId>mysql-connector-java</artifactId>
+  			<version>${mysql.version}</version>
+  			<scope>runtime</scope>
+  		</dependency>
+  		<dependency>
+  			<groupId>com.alibaba</groupId>
+  			<artifactId>druid</artifactId>
+  			<version>${druid-version}</version>
+  		</dependency>
+  
+  
+  	</dependencies>
+  	<build>
+  		<plugins>
+  			<plugin>
+  				<groupId>org.apache.maven.plugins</groupId>
+  				<artifactId>maven-compiler-plugin</artifactId>
+  				<version>2.0.2</version>
+  				<configuration>
+  					<source>1.7</source>
+  					<target>1.7</target>
+  				</configuration>
+  			</plugin>
+  		</plugins>
+  	</build>
+  </project>
+  
+
+website http://maven.apache.org/
+status active
+fileType text
+isOpenSource true

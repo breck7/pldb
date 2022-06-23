@@ -1,3 +1,20 @@
+title Sequential function chart
 appeared 1993
 type pl
-wikipedia Sequential_function_chart
+
+patterns
+ hasCentralPackageRepository? false
+
+wikipedia https://en.wikipedia.org/wiki/Sequential_function_chart
+ related drakon
+ summary Sequential function chart (SFC) is a graphical programming language used for programmable logic controllers (PLCs). It is one of the five languages defined by IEC 61131-3 standard.  The SFC standard is defined as, Preparation of function charts for control systems, and was based on GRAFCET (itself based on binary Petri nets). It can be used to program processes that can be split into steps.  Main components of SFC are:  Steps with associated actions; Transitions with associated logic conditions; Directed links between steps and transitions.Steps in an SFC diagram can be active or inactive. Actions are only executed for active steps. A step can be active for one of two motives:  It is an initial step as specified by the programmer. It was activated during a scan cycle and not deactivated since.Steps are activated when all steps above it are active and the connecting transition is superable (i.e. its associated condition is true). When a transition is passed, all steps above are deactivated at once and after all steps below are activated at once. Actions associated with steps can be of several types, the most relevant ones being Continuous (N), Set (S) and Reset (R). Apart from the obvious meaning of Set and Reset, an N action ensures that its target variable is set to 1 as long as the step is active. An SFC rule states that if two steps have an N action on the same target, the variable must never be reset to 0. It is also possible to insert LD (Ladder Diagram) actions inside an SFC program (and this is the standard way, for instance, to work on integer variables). SFC is an inherently parallel language in that multiple control flows — Program Organization Units (POUs) in the standard's parlance — can be active at once. Non-standard extensions to the language include macroactions: i.e. actions inside a program unit that influence the state of another program unit. The most relevant such macroaction is "forcing", in which a POU can decide the active steps of another POU.
+ pageId 2009084
+ dailyPageViews 78
+ created 2005
+ backlinksCount 19
+ revisionCount 82
+ appeared 2008
+
+aka sfc
+status historical
+fileType text

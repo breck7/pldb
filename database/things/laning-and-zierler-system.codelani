@@ -1,3 +1,24 @@
+title Laning and Zierler system
 appeared 1953
 type pl
-wikipedia Laning_and_Zierler_system
+
+patterns
+ hasCentralPackageRepository? false
+
+wikipedia https://en.wikipedia.org/wiki/Laning_and_Zierler_system
+ example
+  1 x = 0,
+     z = 1 - x2/2 + x4/2·3·4 - x6/2·3·4·5·6
+       + x8/2·3·4·5·6·7·8 - x10/2·3·4·5·6·7·8·9·10,
+ related speedcoding punched-tape
+ summary The Laning and Zierler system (sometimes called "George" by its users) was one of the first operating algebraic compilers, that is, a system capable of accepting mathematical formulae in algebraic notation and producing equivalent machine code (the term compiler had not yet been invented and the system was referred to as "an interpretive program"). It was implemented in 1952 for the MIT WHIRLWIND by J. Halcombe Laning and Neal Zierler. It is preceded by the UNIVAC A-2, IBM Speedcoding and a number of systems that were proposed but never implemented.
+ created 2005
+ backlinksCount 11
+ pageId 2732031
+ revisionCount 41
+ dailyPageViews 6
+ appeared 1952
+
+status historical
+
+hopl 6

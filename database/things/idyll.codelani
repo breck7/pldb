@@ -1,7 +1,7 @@
+title idyll
 appeared 2017
 type pl
-website https://idyll-lang.org/
-github https://github.com/idyll-lang/idyll
+
 example
  [meta
    title:"How To: Tune a Guitar"
@@ -334,4 +334,20 @@ example
  
  
  [analytics google:"UA-108267630-1" /]
+
 description Idyll is a markup language and toolkit for writing interactive articles. Idyll's reactive document model and standard component library decrease the amount of code needed to create high quality multimedia narratives. Idyll uses web standards to produce output that will load quickly in any web browser and is fully extensible. Idyll enables collaboration between programmers and journalists, researchers and designers. Those familiar with JavaScript can write custom components using tools like D3 or React.
+
+githubRepo https://github.com/idyll-lang/idyll
+ firstCommit 2017
+ stars 1231
+ forks 65
+ subscribers 22
+ created 2017
+ updated 2019
+ description Create explorable explanations and interactive essays.
+ issues 38
+
+website https://idyll-lang.org/
+hackerNewsDiscussions
+ id|title|url|time|timestamp|by|comments|score
+ 15204241|Idyll: Interactive Document Language|https://idyll-lang.github.io/|2017-09-08 21:55:53 UTC|1504907753|abhirag|18|195

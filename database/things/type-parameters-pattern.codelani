@@ -1,3 +1,9 @@
+title Type Parameters
 type pattern
-wikipedia TypeParameter
+psuedoExample function identity<T>(arg: T): T {return arg}
 description In computer programming languages, TypeParameter is a frequently used generic label used in templates to reference an unknown data type, data structure, or class.
+
+wikipedia https://en.wikipedia.org/wiki/TypeParameter
+
+status active
+patternKeyword hasTypeParameters?

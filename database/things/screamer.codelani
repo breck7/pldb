@@ -1,2 +1,9 @@
+title SCREAMER
 type pl
+
+patterns
+ hasCentralPackageRepository? false
+
 reference https://quickref.common-lisp.net/screamer.html
+
+hopl 2478

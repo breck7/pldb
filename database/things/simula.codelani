@@ -1,3 +1,83 @@
+title Simula
 appeared 1965
 type pl
-wikipedia Simula
+
+patterns
+ hasCentralPackageRepository? false
+ hasComments? true
+
+wikipedia https://en.wikipedia.org/wiki/Simula
+ example
+  Simulation Begin
+     Class FittingRoom; Begin
+        Ref (Head) door;
+        Boolean inUse;
+        Procedure request; Begin
+           If inUse Then Begin
+               Wait (door);
+               door.First.Out;
+           End;
+           inUse:= True;
+        End;
+        Procedure leave; Begin
+           inUse:= False;
+           Activate door.First;
+        End;
+        door:- New Head;
+     End;
+    
+     Procedure report (message); Text message; Begin
+        OutFix (Time, 2, 0); OutText (": " & message); OutImage;
+     End;
+  
+     Process Class Person (pname); Text pname; Begin
+        While True Do Begin
+           Hold (Normal (12, 4, u));
+           report  (pname & " is requesting the fitting room");
+           fittingroom1.request;
+           report (pname & " has entered the fitting room");
+           Hold (Normal (3, 1, u));
+           fittingroom1.leave;
+           report (pname & " has left the fitting room");
+        End;
+     End;
+  
+     Integer u;
+     Ref (FittingRoom) fittingRoom1;
+  
+     fittingRoom1:- New FittingRoom;
+     Activate New Person ("Sam");
+     Activate New Person ("Sally");
+     Activate New Person ("Andy");
+     Hold (100);
+  End;
+ related algol-60 object-pascal java csharp algol smalltalk beta doi isbn
+ summary Simula is the name of two simulation programming languages, Simula I and Simula 67, developed in the 1960s at the Norwegian Computing Center in Oslo, by Ole-Johan Dahl and Kristen Nygaard. Syntactically, it is a fairly faithful superset of ALGOL 60. Simula 67 introduced objects, classes, inheritance and subclasses, virtual procedures, coroutines, and discrete event simulation, and features garbage collection. Also other forms of subtyping (besides inheriting subclasses) were introduced in Simula derivatives. Simula is considered the first object-oriented programming language. As its name suggests, Simula was designed for doing simulations, and the needs of that domain provided the framework for many of the features of object-oriented languages today. Simula has been used in a wide range of applications such as simulating VLSI designs, process modeling, protocols, algorithms, and other applications such as typesetting, computer graphics, and education. The influence of Simula is often understated, and Simula-type objects are reimplemented in C++, Object Pascal, Java, C# and several other languages. Computer scientists such as Bjarne Stroustrup, creator of C++, and James Gosling, creator of Java, have acknowledged Simula as a major influence.
+ pageId 29513
+ dailyPageViews 218
+ created 2002
+ backlinksCount 153
+ revisionCount 435
+ appeared 1965
+
+helloWorldCollection Simula
+ ! Hello World in Simula;
+ 
+ BEGIN
+     OutText("Hello World!");
+     OutImage;
+ END
+ 
+
+status active
+
+tryItOnline simula
+
+country NO
+fileType text
+
+tiobe Simula
+
+hopl 170
+
+rosettaCode Simula

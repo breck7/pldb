@@ -1,4 +1,72 @@
+title RAML
 appeared 2013
 type textMarkup
+
+patterns
+ hasCentralPackageRepository? false
+
+githubLanguage RAML
+ fileExtensions raml
+ trendingProjectsCount 0
+
+githubRepo https://github.com/raml-org/raml-spec
+ firstCommit 2013
+ stars 3261
+ forks 704
+ subscribers 171
+ created 2013
+ updated 2018
+ description RAML Specification
+ issues 205
+
+linguistGrammarRepo https://github.com/atom/language-yaml
+ firstCommit 2013
+ lastCommit 2018
+ committerCount 25
+ commitCount 205
+ sampleCount 1
+ example
+  #%RAML 0.8
+  
+  title: World Music API
+  baseUri: http://example.api.com/{version}
+  version: v1
+  traits:
+    - paged:
+        queryParameters:
+          pages:
+            description: The number of pages to return
+            type: number
+    - secured: !include http://raml-example.com/secured.yml
+  /songs:
+    is: [ paged, secured ]
+    get:
+      queryParameters:
+        genre:
+          description: filter the songs by genre
+    post:
+    /{songId}:
+      get:
+        responses:
+          200:
+            body:
+              application/json:
+                schema: |
+                  { "$schema": "http://json-schema.org/schema",
+                    "type": "object",
+                    "description": "A canonical song",
+                    "properties": {
+                      "title":  { "type": "string" },
+                      "artist": { "type": "string" }
+                    },
+                    "required": [ "title", "artist" ]
+                  }
+              application/xml:
+      delete:
+        description: |
+          This method will *delete* an **individual song**
+
 website http://raml.org/spec.html
-github https://github.com/raml-org/raml-spec
+status active
+fileType text
+isOpenSource true

@@ -1,4 +1,40 @@
+title Arc
 appeared 2001
 type pl
 creators Paul Graham and Robert Morris
-wikipedia Arc_(programming_language)
+
+patterns
+ isLisp? true
+ hasCentralPackageRepository? false
+
+wikipedia https://en.wikipedia.org/wiki/Arc_(programming_language)
+ example
+  (defop said req
+    (aform [onlink "click here" (pr "you said: " (arg _ "foo"))]
+      (input "foo") 
+      (submit)))
+ related lisp racket s-expressions scheme javascript java c interlisp lisp-machine-lisp common-lisp t emacs-lisp autolisp islisp openlisp picolisp eulisp newlisp clojure lfe
+ summary Arc is a dialect of the Lisp programming language developed by Paul Graham and Robert Morris.
+ pageId 188190
+ dailyPageViews 82
+ created 2003
+ backlinksCount 50
+ revisionCount 193
+ appeared 2001
+
+githubLanguage Arc
+ fileExtensions arc
+ trendingProjectsCount 0
+
+status active
+country US
+fileType text
+wordRank 5327
+
+tiobe Arc
+
+webRepl http://tryarc.org/
+
+hopl 3986
+
+rosettaCode Arc

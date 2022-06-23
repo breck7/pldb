@@ -1,6 +1,7 @@
+title Namespace Routing Language
 appeared 2003
 type xmlFormat
-wikipedia Namespace_Routing_Language
+
 example
  <rules xmlns="http://www.thaiopensource.com/validate/nrl">
   <namespace ns="http://schemas.xmlsoap.org/soap/envelope/">
@@ -11,4 +12,8 @@ example
     <validate schema="xhtml.sch"/>
   </namespace>
  </rules>
+
+wikipedia https://en.wikipedia.org/wiki/Namespace_Routing_Language
+
 reference https://relaxng.org/jclark/nrl.html
+aka nrl

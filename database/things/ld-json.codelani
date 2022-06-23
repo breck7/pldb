@@ -1,4 +1,11 @@
+title Line Delimited JSON
 appeared 2013
 type metaLanguage
+
+patterns
+ hasCentralPackageRepository? false
+
 website http://jsonlines.org/
 reference https://en.wikipedia.org/wiki/JSON_streaming
+status historical
+fileExtensions ldj jsonl

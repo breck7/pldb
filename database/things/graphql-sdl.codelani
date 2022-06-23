@@ -1,5 +1,7 @@
+title GraphQL Schema Definition Language
 appeared 2018
 type idl
+
 example
  # Enumeration type for a level of priority
  enum Priority {
@@ -28,5 +30,10 @@ example
    query: Query
    mutation: Mutation
  }
-reference https://github.com/graphql/graphql-spec/pull/90
+
+patterns
+ hasComments? true
+ hasBlockComments? false
+
 description A type definition syntax to the GraphQL specification.
+reference https://github.com/graphql/graphql-spec/pull/90

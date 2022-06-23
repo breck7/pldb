@@ -1,3 +1,10 @@
+title Tahoe-LAFS
 appeared 2007
-type fileSystem
-wikipedia Tahoe-LAFS
+type filesystem
+
+wikipedia https://en.wikipedia.org/wiki/Tahoe-LAFS
+ summary Tahoe-LAFS (Tahoe Least-Authority File Store) is a free and open, secure, decentralized, fault-tolerant, distributed data store and distributed file system. It can be used as an online backup system, or to serve as a file or Web host similar to Freenet, depending on the front-end used to insert and access files in the Tahoe system. Tahoe can also be used in a RAID-like fashion using multiple disks to make a single large Redundant Array of Inexpensive Nodes (RAIN) pool of reliable data storage. The system is designed and implemented around the "principle of least authority" (POLA). Strict adherence to this convention is enabled by the use of cryptographic capabilities that provide the minimum set of privileges necessary to perform a given task by asking agents. A RAIN array acts as a storage volume; these servers do not need to be trusted by confidentiality or integrity of the stored data.
+ backlinksCount 152
+ pageId 24447073
+ dailyPageViews 50
+ appeared 2018

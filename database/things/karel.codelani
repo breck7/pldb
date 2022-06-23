@@ -1,3 +1,42 @@
+title Karel
 appeared 1981
 type pl
-wikipedia Karel_(programming_language)
+
+patterns
+ hasCentralPackageRepository? false
+
+wikipedia https://en.wikipedia.org/wiki/Karel_(programming_language)
+ example
+  BEGINNING-OF-PROGRAM
+   
+   DEFINE turnRight AS
+   BEGIN
+     turnLeft;
+     turnLeft;
+     turnLeft;
+   END
+   
+   BEGINNING-OF-EXECUTION
+     ITERATE 3 TIMES
+     BEGIN
+       turnRight;
+       move
+     END
+     turnoff
+   END-OF-EXECUTION
+   
+  END-OF-PROGRAM
+ related pascal java javascript robomind
+ summary Karel is an educational programming language for beginners, created by Richard E. Pattis in his book Karel The Robot: A Gentle Introduction to the Art of Programming. Pattis used the language in his courses at Stanford University, California. The language is named after Karel Čapek, a Czech writer who introduced the word robot.
+ pageId 1433925
+ dailyPageViews 91
+ created 2005
+ backlinksCount 27
+ revisionCount 205
+ appeared 1981
+
+status historical
+country US
+fileType text
+
+hopl 958

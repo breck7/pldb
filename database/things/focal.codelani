@@ -1,3 +1,43 @@
+title Formulating On-Line Calculations in Algebraic Language
 appeared 1968
 type pl
-wikipedia FOCAL_(programming_language)
+
+patterns
+ hasCentralPackageRepository? false
+
+wikipedia https://en.wikipedia.org/wiki/FOCAL_(programming_language)
+ example
+  FOCAL15 V6B
+  *01.10 ASK "IN WHAT YEAR WERE YOU BORN?", YEAR
+  *01.20 SET YEAROFFOCAL=YEAR-1969+1
+  *01.30 IF (YEAROFFOCAL) 02.10,02.10,01.40
+  *01.40 TYPE "YOU WERE BORN IN THE YEAR ",YEAROFFOCAL," OF FOCAL!",!
+  *01.50 GOTO 01.10
+  *02.10 TYPE "YOU ARE TOO OLD FOR FOCAL, POPS",!
+  *02.20 GOTO 01.10
+  *GO
+  IN WHAT YEAR WERE YOU BORN?:1969
+  YOU WERE BORN IN THE YEAR     1.0000 OF FOCAL
+  IN WHAT YEAR WERE YOU BORN?:1950
+  YOU ARE TOO OLD FOR FOCAL, POPS
+  IN WHAT YEAR WERE YOU BORN?:
+ related joss basic mumps
+ summary FOCAL is an interpreted programming language resembling JOSS. The name is an acronym for Formulating On-Line Calculations in Algebraic Language. Largely the creation of Richard Merrill, FOCAL was initially written for and had its largest impact on the Digital Equipment Corporation's (DEC's) PDP-8 computers. Merrill wrote the original (1968) and classic FOCAL-69 interpreters for the PDP-8.  Digital itself described FOCAL as "a JOSS-like language." Like early versions of BASIC, FOCAL was a complete programming environment in itself, requiring no operating system. As in MUMPS, most commands could be, and in practice were, abbreviated to a single letter of the alphabet. Creative choices of words were used to make each command uniquely defined by its leading character. Digital made available several European-language versions in which the command words were translated into the target language.
+ pageId 1170592
+ created 2004
+ backlinksCount 51
+ revisionCount 96
+ dailyPageViews 18
+ appeared 1968
+
+standsFor Formulating On-Line Calculations in Algebraic Language
+status historical
+
+tryItOnline focal
+
+fileType text
+wordRank 9081
+
+hopl 406
+
+rosettaCode FOCAL

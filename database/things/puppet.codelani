@@ -1,4 +1,47 @@
+title Puppet
 appeared 2005
 type pl
+
+patterns
+ hasCentralPackageRepository? false
+
+wikipedia https://en.wikipedia.org/wiki/Puppet_(software)
+ example
+  user { 'harry':
+    ensure => present,
+    uid    => '1000',
+    shell  => '/bin/bash',
+    home   => '/var/tmp'
+  }
+ related clojure ruby linux rest solaris
+ summary In computing, Puppet is an open-source software configuration management tool. It runs on many Unix-like systems as well as on Microsoft Windows, and includes its own declarative language to describe system configuration. Puppet is produced by Puppet, founded by Luke Kanies in 2005. It is written in Ruby and released as free software under the GNU General Public License (GPL) until version 2.7.0 and the Apache License 2.0 after that.
+ pageId 14432911
+ dailyPageViews 586
+ created 2007
+ backlinksCount 144
+ revisionCount 286
+ appeared 2005
+
+githubLanguage Puppet
+ fileExtensions pp
+ trendingProjectsCount 0
+
+linguistGrammarRepo https://github.com/russCloak/SublimePuppet
+ firstCommit 2013
+ lastCommit 2018
+ committerCount 9
+ commitCount 72
+ sampleCount 5
+ example
+  hiera_include('classes')
+  
+
 website http://www.puppet.com/
-wikipedia Puppet_(software)
+status active
+
+twitter puppetize
+
+fileType text
+isOpenSource true
+
+codeMirror puppet

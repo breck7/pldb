@@ -1,3 +1,29 @@
+title COWSEL
 appeared 1964
 type pl
-wikipedia COWSEL
+
+patterns
+ hasCentralPackageRepository? false
+
+wikipedia https://en.wikipedia.org/wiki/COWSEL
+ example
+  function member
+  lambda x y
+  comment Is x a member of list y;
+  define      y atom then *0 end
+              y hd x equal then *1 end
+              y tl -> y repeat up
+ related combined-programming-language lisp pop-2 reverse-polish-notation pop-11 poplog
+ summary COWSEL (COntrolled Working SpacE Language) is a programming language designed between 1964 and 1966 by Robin Popplestone. It was based on an RPN form of Lisp combined with some ideas from CPL. COWSEL was initially implemented on a Ferranti Pegasus computer at the University of Leeds and on a Stantec Zebra at the Bradford Institute of Technology; later, Rod Burstall implemented it on an Elliot 4120 at the University of Edinburgh. COWSEL was renamed POP-1 during the summer of 1966 and development continued under that name from then on.
+ pageId 94451
+ created 2002
+ backlinksCount 15
+ revisionCount 32
+ dailyPageViews 8
+ appeared 1964
+
+status historical
+country GB
+fileType text
+
+hopl 196

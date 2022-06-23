@@ -1,5 +1,107 @@
+title PowerShell
 appeared 2006
 type pl
 creators Jeffrey Snover
+
+patterns
+ hasCentralPackageRepository? true
+ hasComments? true
+
+wikipedia https://en.wikipedia.org/wiki/PowerShell
+ example
+  name value1 value2
+  name -Param1 value1 -Param2 value2
+ related perl csharp digital-command-language sql tcl puppet jscript vbscript linux ascii awk grep sed xml cli-assembly ooxml bash
+ summary PowerShell is a task automation and configuration management framework from Microsoft, consisting of a command-line shell and associated scripting language. Initially a Windows component only, known as Windows PowerShell, it was made open-source and cross-platform on 18 August 2016 with the introduction of PowerShell Core. The former is built on .NET Framework while the latter on .NET Core. In PowerShell, administrative tasks are generally performed by cmdlets (pronounced command-lets), which are specialized .NET classes implementing a particular operation. These work by accessing data in different data stores, like the file system or registry, which are made available to PowerShell via providers. Third-party developers can develop their own cmdlets and add them to PowerShell. Sets of cmdlets may be combined into scripts. PowerShell provides full access to COM and WMI, enabling administrators to perform administrative tasks on both local and remote Windows systems as well as WS-Management and CIM enabling management of remote Linux systems and network devices. PowerShell also provides a hosting API with which the PowerShell runtime can be embedded inside other applications. These applications can then use PowerShell functionality to implement certain operations, including those exposed via the graphical interface. This capability has been used by Microsoft Exchange Server 2007 to expose its management functionality as PowerShell cmdlets and providers and implement the graphical management tools as PowerShell hosts which invoke the necessary cmdlets. Other Microsoft applications including Microsoft SQL Server 2008 also expose their management interface via PowerShell cmdlets. PowerShell includes its own extensive, console-based help (similar to man pages in Unix shells) accessible via the Get-Help cmdlet. Local help contents can be retrieved from the Internet via Update-Help cmdlet. Alternatively, help from the web can be acquired on a case-by-case basis via the -online switch to Get-Help.
+ pageId 14465871
+ dailyPageViews 1173
+ created 2004
+ backlinksCount 680
+ revisionCount 1897
+ appeared 2006
+
+githubLanguage PowerShell
+ fileExtensions ps1 psd1 psm1
+ trendingProjects
+  author name avatar url language languageColor stars forks currentPeriodStars description
+  Azure azure-quickstart-templates https://github.com/Azure.png https://github.com/Azure/azure-quickstart-templates PowerShell #012456 5646 8219 173 "Azure Quickstart Templates"
+  fireeye commando-vm https://github.com/fireeye.png https://github.com/fireeye/commando-vm PowerShell #012456 2883 631 217 "Complete Mandiant Offensive VM (Commando VM), a fully customizable Windows-based pentesting virtual machine distribution."
+  dotnet docs https://github.com/dotnet.png https://github.com/dotnet/docs PowerShell #012456 1949 3479 52 "This repository contains .NET Documentation."
+  MicrosoftDocs azure-docs https://github.com/MicrosoftDocs.png https://github.com/MicrosoftDocs/azure-docs PowerShell #012456 3023 7981 127 "Open source documentation of Microsoft Azure"
+  microsoft azure-pipelines-image-generation https://github.com/microsoft.png https://github.com/microsoft/azure-pipelines-image-generation PowerShell #012456 527 288 39 "Azure Pipelines VM image generation for Microsoft-hosted CI/CD"
+  redcanaryco atomic-red-team https://github.com/redcanaryco.png https://github.com/redcanaryco/atomic-red-team PowerShell #012456 2427 764 106 "Small and highly portable detection tests based on MITRE's ATT&CK."
+  SharePoint sp-dev-docs https://github.com/SharePoint.png https://github.com/SharePoint/sp-dev-docs PowerShell #012456 803 585 18 "SharePoint Developer Documentation"
+  PowerShellMafia PowerSploit https://github.com/PowerShellMafia.png https://github.com/PowerShellMafia/PowerSploit PowerShell #012456 5774 2124 180 "PowerSploit - A PowerShell Post-Exploitation Framework"
+  aspnet Blazor https://github.com/aspnet.png https://github.com/aspnet/Blazor PowerShell #012456 8382 669 125 "Blazor is a .NET web framework using C#/Razor and HTML that runs in the browser with WebAssembly"
+  Disassembler0 Win10-Initial-Setup-Script https://github.com/Disassembler0.png https://github.com/Disassembler0/Win10-Initial-Setup-Script PowerShell #012456 2542 607 95 "PowerShell script for automation of routine tasks done after fresh installations of Windows 10 / Server 2016 / Server 2019"
+  BloodHoundAD BloodHound https://github.com/BloodHoundAD.png https://github.com/BloodHoundAD/BloodHound PowerShell #012456 3358 622 114 "Six Degrees of Domain Admin"
+  Sycnex Windows10Debloater https://github.com/Sycnex.png https://github.com/Sycnex/Windows10Debloater PowerShell #012456 2759 362 222 "Script to remove Windows 10 bloatware."
+  fireeye flare-vm https://github.com/fireeye.png https://github.com/fireeye/flare-vm PowerShell #012456 1575 266 78 
+  dotnet machinelearning-samples https://github.com/dotnet.png https://github.com/dotnet/machinelearning-samples PowerShell #012456 1966 908 106 "Samples for ML.NET, an open source and cross-platform machine learning framework for .NET."
+  dahlbyk posh-git https://github.com/dahlbyk.png https://github.com/dahlbyk/posh-git PowerShell #012456 3788 610 75 "A PowerShell environment for Git"
+  dfinke ImportExcel https://github.com/dfinke.png https://github.com/dfinke/ImportExcel PowerShell #012456 1083 206 42 "PowerShell module to import/export Excel spreadsheets, without Excel"
+  hak5 bashbunny-payloads https://github.com/hak5.png https://github.com/hak5/bashbunny-payloads PowerShell #012456 1176 844 30 "The Official Bash Bunny Payload Repository"
+  samratashok nishang https://github.com/samratashok.png https://github.com/samratashok/nishang PowerShell #012456 3127 1193 105 "Nishang - Offensive PowerShell for red team, penetration testing and offensive security."
+  MicrosoftDocs dynamics-365-unified-operations-public https://github.com/MicrosoftDocs.png https://github.com/MicrosoftDocs/dynamics-365-unified-operations-public PowerShell #012456 91 253 12 "Documentation for Microsoft Dynamics 365 for Finance and Operations, Dynamics 365 for Retail, and Dynamics 365 for Talent"
+  lukesampson scoop-extras https://github.com/lukesampson.png https://github.com/lukesampson/scoop-extras PowerShell #012456 580 405 19 """Extras"" bucket for Scoop"
+  MicrosoftDocs OfficeDocs-Exchange https://github.com/MicrosoftDocs.png https://github.com/MicrosoftDocs/OfficeDocs-Exchange PowerShell #012456 47 219 4 "Contains documentation for Exchange Server and Exchange Online"
+  MicrosoftDocs windows-driver-docs https://github.com/MicrosoftDocs.png https://github.com/MicrosoftDocs/windows-driver-docs PowerShell #012456 239 390 3 "The official Windows Driver Kit documentation sources"
+  MicrosoftDocs appcenter-docs https://github.com/MicrosoftDocs.png https://github.com/MicrosoftDocs/appcenter-docs PowerShell #012456 51 186 1 "content repo for Visual Studio App Center on docs.microsoft.com"
+ trendingProjectsCount 24
+
+helloWorldCollection PowerShell
+ # Hello World in Microsoft Powershell
+ 
+ 'Hello World!'
+ 
+
+linguistGrammarRepo https://github.com/PowerShell/EditorSyntax
+ firstCommit 2016
+ lastCommit 2018
+ committerCount 10
+ commitCount 108
+ sampleCount 4
+ example
+  #!/usr/bin/env pwsh
+  
+  # source:  https://github.com/PowerShell/PowerShellStandard/blob/3436bfc162d6804dd11d1d76c4faff486b4b405d/build.ps1
+  
+  param ( 
+      [Parameter(ParameterSetName="Clean")][switch]$Clean,
+      [Parameter(ParameterSetName="Test")][switch]$Test
+  )
+  
+  import-module $PSScriptRoot/PowerShellStandard.psm1 -force
+  
+  if ( $Clean ) {
+      Start-Clean
+      return
+  }
+  
+  Start-Build
+  
+  if ( $Test ) {
+      Invoke-Test
+  }
+  
+
 website http://microsoft.com/powershell
-wikipedia PowerShell
+status active
+
+tryItOnline powershell
+
+twitter powershell_team
+
+fileType text
+isOpenSource true
+
+tiobe PowerShell
+
+projectEuler PowerShell
+ memberCount
+  2019 134
+  2022 159
+
+rosettaCode PowerShell
+
+corporateDevelopers Microsoft

@@ -1,4 +1,60 @@
+title SPARQL Protocol and RDF Query Language
 appeared 2008
 type queryLanguage
-wikipedia SPARQL
+
+patterns
+ hasCentralPackageRepository? false
+
+wikipedia https://en.wikipedia.org/wiki/SPARQL
+ example
+  PREFIX ex: <http://example.com/exampleOntology#>
+  SELECT ?capital
+         ?country
+  WHERE
+    {
+      ?x  ex:cityname       ?capital   ;
+          ex:isCapitalOf    ?y         .
+      ?y  ex:countryname    ?country   ;
+          ex:isInContinent  ex:Africa  .
+    }
+ related rdf sql xquery turtle geo-ml
+ summary SPARQL (pronounced "sparkle", a recursive acronym for SPARQL Protocol and RDF Query Language) is an RDF query language, that is, a semantic query language for databases, able to retrieve and manipulate data stored in Resource Description Framework (RDF) format. It was made a standard by the RDF Data Access Working Group (DAWG) of the World Wide Web Consortium, and is recognized as one of the key technologies of the semantic web. On 15 January 2008, SPARQL 1.0 became an official W3C Recommendation, and SPARQL 1.1 in March, 2013. SPARQL allows for a query to consist of triple patterns, conjunctions, disjunctions, and optional patterns. Implementations for multiple programming languages exist. There exist tools that allow one to connect and semi-automatically construct a SPARQL query for a SPARQL endpoint, for example ViziQuer. In addition, there exist tools that translate SPARQL queries to other query languages, for example to SQL and to XQuery.
+ pageId 2574343
+ dailyPageViews 379
+ created 2005
+ backlinksCount 480
+ revisionCount 380
+ appeared 2008
+
+githubLanguage SPARQL
+ fileExtensions sparql rq
+ trendingProjectsCount 0
+
+linguistGrammarRepo https://github.com/peta/turtle.tmbundle
+ firstCommit 2013
+ lastCommit 2015
+ committerCount 2
+ commitCount 128
+ sampleCount 2
+ example
+  PREFIX foaf: <http://xmlns.com/foaf/0.1/>
+  SELECT ?name ?email
+  WHERE {
+    ?person a foaf:Person.
+    ?person foaf:name ?name.
+    ?person foaf:mbox ?email.
+  }
+  
+
 reference https://www.w3.org/TR/rdf-sparql-query/
+standsFor SPARQL Protocol and RDF Query Language
+status active
+fileType text
+webRepl https://dbpedia.org/sparql
+
+codeMirror sparql
+
+antlr https://github.com/antlr/grammars-v4/tree/master/sparql
+
+corporateDevelopers W3C
+cheatSheetUrl http://www.iro.umontreal.ca/~lapalme/ift6281/sparql-1_1-cheat-sheet.pdf

@@ -1,4 +1,10 @@
+title bscript-interpreter
 appeared 1999
 type interpreter
-website http://bscript.sourceforge.net/
+
+patterns
+ hasCentralPackageRepository? false
+
 description BScript is a (yet another) BASIC interpreter.
+website http://bscript.sourceforge.net/
+status historical

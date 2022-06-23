@@ -1,3 +1,16 @@
+title NEWP
 appeared 1985
 type pl
-wikipedia NEWP
+
+patterns
+ hasCentralPackageRepository? false
+
+wikipedia https://en.wikipedia.org/wiki/NEWP
+ summary NEWP (or the New Executive Programming Language) is a high-level programming language used on the Unisys MCP systems. The language is used to write the operating system and other system utilities, although it can also be used to write user software as well. Several constructs separate it from extended ALGOL on which it is based. Language operators such as MEMORY which allows direct memory access are strictly used by programs running as the MCP.
+ created 2006
+ backlinksCount 36
+ pageId 6433017
+ revisionCount 23
+ dailyPageViews 13
+
+status historical

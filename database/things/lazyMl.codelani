@@ -1,3 +1,22 @@
+title Lazy ML
 appeared 1980
 type pl
-wikipedia Lazy_ML
+
+patterns
+ hasCentralPackageRepository? false
+
+wikipedia https://en.wikipedia.org/wiki/Lazy_ML
+ example
+  let rec fact 0 = 1  ||
+              fact n = n*fact(n-1)
+ related haskell ml
+ summary Lazy ML (LML) is a functional programming language developed in the early 1980s by Lennart Augustsson and Thomas Johnsson at Chalmers University of Technology, prior to Miranda and Haskell. LML is a strongly typed, statically scoped implementation of ML, with lazy evaluation. The key innovation of LML was to demonstrate how to compile a lazy functional language. Until then, lazy languages had been implemented via interpreted graph reduction. LML compiled to G-machine code. LML is also notable as the language in which HBC, the Haskell B Compiler, was implemented.
+ pageId 15127519
+ dailyPageViews 8
+ created 2008
+ backlinksCount 37
+ revisionCount 19
+ appeared 1980
+
+status historical
+fileType text

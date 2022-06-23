@@ -1,4 +1,56 @@
+title Perl 6
 appeared 2015
 type pl
+
+patterns
+ hasCentralPackageRepository? false
+ hasMultipleInheritance? true
+ hasOperatorOverloading? true
+
+wikipedia https://en.wikipedia.org/wiki/Perl_6
+ example
+  multi sub hanoi(0, $, $, $) { }                         # No disk, so do not do anything
+   multi sub hanoi($n, $a = 'A', $b = 'B', $c = 'C') {     # Start with $n disks and three pegs A, B, C
+       hanoi $n - 1, $a, $c, $b;                           # firstly move top $n - 1 disks from A to B
+       say "Move disk $n from peg $a to peg $c";           # then move last disk from A to C
+       hanoi $n - 1, $b, $a, $c;                           # lastly move $n - 1 disks from B to C
+   }
+ related perl haskell javascript ruby smalltalk rfc python java squeak regex peg antlr icon isbn
+ summary Perl 6 (also known as Raku) is a member of the Perl family of programming languages.While historically several interpreter and compiler implementations were being written, today only the Rakudo Perl 6 implementation is in active development. It is introducing elements of many modern and historical languages. Compatibility with Perl 5 is not a goal, though a compatibility mode is part of the specification. The design process for Perl 6 began in 2000. In February 2015 a post on The Perl Foundation blog stated that "The Perl6 team will attempt to get a development release of version 1.0 available for Larry's birthday in September and a Version 1.0 release by Christmas", and on 25 December 2015, the first stable version of the specification was announced.Development on Pugs, the first high-traction implementation, began in 2005, and there have been multiple Perl 6 implementation projects. Rakudo Perl 6 is based on NQP (Not Quite Perl) and can use MoarVM or the Java Virtual Machine as a runtime environment, and releases a new version every month (including precompiled GNU/Linux packages); in July 2010, the project released the first Rakudo Star distribution, a collection of a Perl 6 implementation and related materials. Larry Wall maintains a reference grammar known as STD.pm6, written in Perl 6 and bootstrapped with Perl 5.
+ backlinksCount 180
+ pageId 1146638
+ created 2004
+ revisionCount 893
+ dailyPageViews 148
+ appeared 2018
+
+githubLanguage Perl 6
+ fileExtensions 6pl 6pm nqp p6 p6l p6m pl pl6 pm pm6 t
+ trendingProjectsCount 0
+
+linguistGrammarRepo https://github.com/perl6/atom-language-perl6
+ firstCommit 2015
+ lastCommit 2017
+ committerCount 6
+ commitCount 510
+ sampleCount 22
+ example
+  # used in t/spec/S11-modules/nested.t 
+  
+  BEGIN { @*INC.push('t/spec/packages') };
+  
+  module A::A {
+      use A::B;
+  }
+  
+  # vim: ft=perl6
+  
+
 website https://perl6.org/
-wikipedia Perl_6
+aka Raku perl6
+status active
+
+tryItOnline perl6
+
+fileType text
+isOpenSource true

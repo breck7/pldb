@@ -1,5 +1,40 @@
+title Seed7
 appeared 2005
 type pl
 creators Thomas Mertes
+
+patterns
+ hasCentralPackageRepository? false
+ hasComments? true
+ hasOperatorOverloading? true
+
+wikipedia https://en.wikipedia.org/wiki/Seed7
+ related linux unix pascal modula-2 ada algol-68 c java unicode tls http ftp smtp mysql mariadb sqlite postgresql xml
+ summary Seed7 is an extensible general-purpose programming language designed by Thomas Mertes. It is syntactically similar to Pascal and Ada. Along with many other features, it provides an extension mechanism. Seed7 supports introducing new syntax elements and their semantics into the language, and allows new language constructs to be defined and written in Seed7. For example, programmers can introduce syntax and semantics of new statements and user defined operator symbols. The implementation of Seed7 differs significantly from that of languages with hard-coded syntax and semantics.
+ pageId 36346048
+ dailyPageViews 37
+ created 2012
+ backlinksCount 78
+ revisionCount 114
+ appeared 2005
+ fileExtensions sd7 s7i
+
+helloWorldCollection Seed7
+ # Hello World in Seed7
+ 
+ $ include "seed7_05.s7i";
+ 
+ const proc: main is func
+   begin
+     writeln("Hello World!");
+   end func;
+ 
+
 website http://seed7.sourceforge.net
-wikipedia Seed7
+status active
+fileExtensions sd7 s7i
+fileType text
+
+tiobe Seed7
+
+rosettaCode Seed7

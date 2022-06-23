@@ -1,4 +1,305 @@
+title C++
 appeared 1985
 type pl
+
+patterns
+ hasUnaryOperators? true
+  int count = 2;
+  count++;
+  ++count;
+  count--;
+  --count;
+  &count; // address
+  *count; // indirection
+  +count; // Positive
+  -count; // negative
+  ~count; // one's complement
+  !x; // logical negation
+  sizeof count;
+  sizeof(int);
+  (float)count;
+ hasPartialApplication? true
+  // http://www.cplusplus.com/reference/functional/bind/
+  // bind example
+  #include <iostream>     // std::cout
+  #include <functional>   // std::bind
+  
+  // a function: (also works with function object: std::divides<double> my_divide;)
+  double my_divide (double x, double y) {return x/y;}
+  
+  struct MyPair {
+    double a,b;
+    double multiply() {return a*b;}
+  };
+  
+  int main () {
+    using namespace std::placeholders;    // adds visibility of _1, _2, _3,...
+  
+    // binding functions:
+    auto fn_five = std::bind (my_divide,10,2);               // returns 10/2
+    std::cout << fn_five() << '\n';                          // 5
+  
+    auto fn_half = std::bind (my_divide,_1,2);               // returns x/2
+    std::cout << fn_half(10) << '\n';                        // 5
+  
+    auto fn_invert = std::bind (my_divide,_2,_1);            // returns y/x
+    std::cout << fn_invert(10,2) << '\n';                    // 0.2
+  
+    auto fn_rounding = std::bind<int> (my_divide,_1,_2);     // returns int(x/y)
+    std::cout << fn_rounding(10,3) << '\n';                  // 3
+  
+    MyPair ten_two {10,2};
+  
+    // binding members:
+    auto bound_member_fn = std::bind (&MyPair::multiply,_1); // returns x.multiply()
+    std::cout << bound_member_fn(ten_two) << '\n';           // 20
+  
+    auto bound_member_data = std::bind (&MyPair::a,ten_two); // returns ten_two.a
+    std::cout << bound_member_data() << '\n';                // 10
+  
+    return 0;
+  }
+ mergesWhitespace? true
+ hasSingleDispatch? true
+ hasBitWiseOperators? true
+ hasMagicGettersAndSetters? false
+ hasCentralPackageRepository? false
+ hasComments? true
+ hasConstructors? true
+  class Foobar {
+   public:
+    Foobar(double r = 1.0,
+           double alpha = 0.0)  // Constructor, parameters with default values.
+        : x_(r * cos(alpha))    // <- Initializer list
+    {
+      y_ = r * sin(alpha);  // <- Normal assignment
+    }
+  
+   private:
+    double x_;
+    double y_;
+  };
+  Foobar a,
+         b(3),
+         c(5, M_PI/4);
+ hasConstants? true
+  int const one = 1;
+ hasGarbageCollection? false
+ hasGotos? true
+  // C/C++ program to check if a number is 
+  // even or not using goto statement 
+  #include <iostream> 
+  using namespace std; 
+    
+  // function to check even or not 
+  void checkEvenOrNot(int num) 
+  { 
+      if (num % 2 == 0) 
+          goto even; // jump to even 
+      else
+          goto odd; // jump to odd 
+    
+  even: 
+      cout << num << " is evenn"; 
+      return; // return if even 
+  odd: 
+      cout << num << " is oddn"; 
+  } 
+    
+  // Driver program to test above function 
+  int main() 
+  { 
+      int num = 26; 
+      checkEvenOrNot(num); 
+      return 0; 
+  }
+ hasDirectives? true
+  // #pragma once is a non-standard but widely supported preprocessor directive designed to cause the current source file to be included only once in a single compilation.
+  #pragma once
+  struct foo
+  {
+     int member;
+  };
+ hasIterators? true
+  std::vector<int> items;
+  items.push_back(5);  // Append integer value '5' to vector 'items'.
+  items.push_back(2);  // Append integer value '2' to vector 'items'.
+  items.push_back(9);  // Append integer value '9' to vector 'items'.
+  
+  for (auto it = items.begin(); it != items.end(); ++it) {  // Iterate through 'items'.
+    std::cout << *it;  // And print value of 'items' for current index.
+  }
+ hasMacros? true
+  https://msdn.microsoft.com/en-us/library/503x3e3s.aspx
+ hasManualMemoryManagement? true
+ hasFunctionOverloading? true
+  // volume of a cube
+  int volume(const int s) {
+   return s*s*s;
+  }
+  // volume of a cylinder
+  double volume(const double r, const int h) {
+    return 3.1415926*r*r*static_cast<double>(h);
+  }
+ hasNamespaces? true
+  #include <iostream>
+  using namespace std;
+  
+  // Variable created inside namespace
+  namespace first
+  {
+    int val = 500;
+  }
+   
+  // Global variable
+  int val = 100;
+  // Ways to do it: https://en.cppreference.com/w/cpp/language/namespace
+  namespace ns_name { declarations }
+  inline namespace ns_name { declarations }
+  namespace { declarations }
+  ns_name::name
+  using namespace ns_name;
+  using ns_name::name;
+  namespace name = qualified-namespace ;
+  namespace ns_name::inline(since C++20)(optional) name { declarations } 
+ hasMultipleInheritance? true
+ hasOperatorOverloading? true
+ hasReferences? true
+ hasPrintStatements? true
+  cout<<"hello world." << std::endl;
+ hasTemplates? true
+  template <int length>
+  Vector<length>& Vector<length>::operator+=(const Vector<length>& rhs)
+  {
+      for (int i = 0; i < length; ++i)
+          value[i] += rhs.value[i];
+      return *this;
+  }
+
+wikipedia https://en.wikipedia.org/wiki/C++
+ example
+  1 #include <iostream>
+  2 #include <vector>
+  3 #include <stdexcept>
+  4 
+  5 int main() {
+  6     try {
+  7         std::vector<int> vec{3, 4, 3, 1};
+  8         int i{vec.at(4)}; // Throws an exception, std::out_of_range (indexing for vec is from 0-3 not 1-4)
+  9     }
+  10     // An exception handler, catches std::out_of_range, which is thrown by vec.at(4)
+  11     catch (std::out_of_range &e) {
+  12         std::cerr << "Accessing a non-existent element: " << e.what() << '\n';
+  13     }
+  14     // To catch any other standard library exceptions (they derive from std::exception)
+  15     catch (std::exception &e) {
+  16         std::cerr << "Exception thrown: " << e.what() << '\n';
+  17     }
+  18     // Catch any unrecognised exceptions (i.e. those which don't derive from std::exception)
+  19     catch (...) {
+  20         std::cerr << "Some fatal error\n";
+  21     }
+  22 }
+ related ada algol-68 c clu ml simula python csharp chapel d java lua perl php rust nim sql bcpl unix assembly-language regex
+ summary C++ ( pronounced cee plus plus) is a general-purpose programming language. It has imperative, object-oriented and generic programming features, while also providing facilities for low-level memory manipulation. It was designed with a bias toward system programming and embedded, resource-constrained and large systems, with performance, efficiency and flexibility of use as its design highlights. C++ has also been found useful in many other contexts, with key strengths being software infrastructure and resource-constrained applications, including desktop applications, servers (e.g. e-commerce, web search or SQL servers), and performance-critical applications (e.g. telephone switches or space probes). C++ is a compiled language, with implementations of it available on many platforms. Many vendors provide C++ compilers, including the Free Software Foundation, Microsoft, Intel, and IBM. C++ is standardized by the International Organization for Standardization (ISO), with the latest standard version ratified and published by ISO in December 2014 as ISO/IEC 14882:2014 (informally known as C++14). The C++ programming language was initially standardized in 1998 as ISO/IEC 14882:1998, which was then amended by the C++03, ISO/IEC 14882:2003, standard. The current C++14 standard supersedes these and C++11, with new features and an enlarged standard library. Before the initial standardization in 1998, C++ was developed by Bjarne Stroustrup at Bell Labs since 1979, as an extension of the C language as he wanted an efficient and flexible language similar to C, which also provided high-level features for program organization. The C++17 standard is due in July 2017, with the draft largely implemented by some compilers already, and C++20 is the next planned standard thereafter. Many other programming languages have been influenced by C++, including C#, D, Java, and newer versions of C.
+ pageId 72038
+ dailyPageViews 4307
+ created 2001
+ backlinksCount 10943
+ revisionCount 1487
+ appeared 1998
+
+githubLanguage C++
+ fileExtensions cpp c++ cc cp cxx h h++ hh hpp hxx inc inl ino ipp re tcc tpp
+ trendingProjects
+  author name avatar url language languageColor stars forks currentPeriodStars description
+  google mediapipe https://github.com/google.png https://github.com/google/mediapipe C++ #f34b7d 2824 386 2250 "MediaPipe is a cross-platform framework for building multimodal applied machine learning pipelines"
+  fmtlib fmt https://github.com/fmtlib.png https://github.com/fmtlib/fmt C++ #f34b7d 6596 796 273 "A modern formatting library"
+  TheCherno Hazel https://github.com/TheCherno.png https://github.com/TheCherno/Hazel C++ #f34b7d 1589 265 130 "Hazel Engine"
+  arendst Sonoff-Tasmota https://github.com/arendst.png https://github.com/arendst/Sonoff-Tasmota C++ #f34b7d 7683 1795 281 "Provide ESP8266 based itead Sonoff with Web, MQTT and OTA firmware using Arduino IDE or PlatformIO"
+  ocornut imgui https://github.com/ocornut.png https://github.com/ocornut/imgui C++ #f34b7d 16553 2604 474 "Dear ImGui: Bloat-free Immediate Mode Graphical User interface for C++ with minimal dependencies"
+  anhkgg SuperWeChatPC https://github.com/anhkgg.png https://github.com/anhkgg/SuperWeChatPC C++ #f34b7d 2071 573 474 超级微信电脑客户端，支持多开、防消息撤销、语音消息备份...开放WeChatSDK
+  gnuradio gnuradio https://github.com/gnuradio.png https://github.com/gnuradio/gnuradio C++ #f34b7d 1798 1055 79 "GNU Radio"
+  plaidml plaidml https://github.com/plaidml.png https://github.com/plaidml/plaidml C++ #f34b7d 2457 214 120 "PlaidML is a framework for making deep learning work everywhere."
+  TonyChen56 WeChatRobot https://github.com/TonyChen56.png https://github.com/TonyChen56/WeChatRobot C++ #f34b7d 1468 559 938 PC版微信机器人
+  huihut interview https://github.com/huihut.png https://github.com/huihut/interview C++ #f34b7d 7108 2269 641 "📚 C/C++ 技术面试基础知识总结，包括语言、程序库、数据结构、算法、系统、网络、链接装载库等知识及面试经验、招聘、内推等信息。"
+  skypjack entt https://github.com/skypjack.png https://github.com/skypjack/entt C++ #f34b7d 2053 180 302 "Gaming meets modern C++ - a fast and reliable entity-component system (ECS) and much more"
+  OneLoneCoder videos https://github.com/OneLoneCoder.png https://github.com/OneLoneCoder/videos C++ #f34b7d 535 395 72 "The official distribution of olcConsoleGameEngine, a tool used in javidx9's YouTube videos and projects"
+  dolphin-emu dolphin https://github.com/dolphin-emu.png https://github.com/dolphin-emu/dolphin C++ #f34b7d 5521 1278 96 "Dolphin is a GameCube / Wii emulator, allowing you to play games for these two platforms on PC with improvements."
+  osquery osquery https://github.com/osquery.png https://github.com/osquery/osquery C++ #f34b7d 14868 1796 457 "SQL powered operating system instrumentation, monitoring, and analytics."
+  danielkrupinski Osiris https://github.com/danielkrupinski.png https://github.com/danielkrupinski/Osiris C++ #f34b7d 260 115 56 "Free open-source training software / cheat for Counter-Strike: Global Offensive, written in modern C++. GUI powered by imgui."
+  carla-simulator carla https://github.com/carla-simulator.png https://github.com/carla-simulator/carla C++ #f34b7d 3098 840 239 "Open-source simulator for autonomous driving research."
+  grpc grpc https://github.com/grpc.png https://github.com/grpc/grpc C++ #f34b7d 22945 5381 557 "The C based gRPC (C++, Python, Ruby, Objective-C, PHP, C#)"
+  FastLED FastLED https://github.com/FastLED.png https://github.com/FastLED/FastLED C++ #f34b7d 3180 828 63 "The main FastLED library (successor to FastSPI_LED). Please direct questions/requests for advice to the reddit community - http://fastled.io/r - we'd like to keep issues to just tracking bugs/enhancements/tasks. *NOTE* major library work is currently on hold"
+  TarsCloud Tars https://github.com/TarsCloud.png https://github.com/TarsCloud/Tars C++ #f34b7d 7510 1822 243 "Tars is a high-performance RPC framework based on name service and Tars protocol, also integrated administration platform, and implemented hosting-service via flexible schedule."
+  apache thrift https://github.com/apache.png https://github.com/apache/thrift C++ #f34b7d 6723 3037 131 "Apache Thrift"
+  NVIDIA DALI https://github.com/NVIDIA.png https://github.com/NVIDIA/DALI C++ #f34b7d 1829 208 245 "A library containing both highly optimized building blocks and an execution engine for data pre-processing in deep learning applications"
+  haoel leetcode https://github.com/haoel.png https://github.com/haoel/leetcode C++ #f34b7d 11615 3642 295 "LeetCode Problems' Solutions"
+  llvm llvm-project https://github.com/llvm.png https://github.com/llvm/llvm-project C++ #f34b7d 1832 557 213 "This is the canonical git mirror of the LLVM subversion repository. The repository does not accept github pull requests at this moment. Please submit your patches at http://reviews.llvm.org."
+  pytorch pytorch https://github.com/pytorch.png https://github.com/pytorch/pytorch C++ #f34b7d 31392 7706 966 "Tensors and Dynamic neural networks in Python with strong GPU acceleration"
+  microsoft onnxruntime https://github.com/microsoft.png https://github.com/microsoft/onnxruntime C++ #f34b7d 1113 247 135 "ONNX Runtime: cross-platform, high performance scoring engine for ML models"
+ trendingProjectsCount 26
+
+helloWorldCollection C++
+ // Hello World in C++ (pre-ISO)
+ 
+ #include <iostream.h>
+ 
+ main()
+ {
+     cout << "Hello World!" << endl;
+     return 0;
+ }
+ 
+
+linguistGrammarRepo https://github.com/textmate/c.tmbundle
+ sampleCount 49
+ example
+  #include <cstdint>
+  
+  namespace Gui
+  {
+  
+  }
+  
+
 website http://isocpp.org/
-wikipedia C++
+status active
+
+replit cpp
+
+twitter isocpp
+
+country US
+fileType text
+
+tiobe C++
+ currentRank 3
+
+meetup c
+ memberCount 69338
+ groupCount 204
+
+linkedInSkill c++
+ peopleWithThisSkillCount 3886123
+
+projectEuler C/C++
+ memberCount
+  2022 46028
+  2019 41087
+
+hopl 1202
+
+subreddit cpp
+ memberCount
+  2017 56189
+
+quineRelay C++
+
+ubuntuPackage g++
+
+antlr https://github.com/antlr/grammars-v4/tree/master/cpp
+
+conference https://cppcon.org CppCon
+indeedJobs c++ engineer
+ 2017 22237

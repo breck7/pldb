@@ -1,3 +1,34 @@
+title PeopleCode
 appeared 2008
 type pl
-wikipedia PeopleCode
+
+patterns
+ hasCentralPackageRepository? false
+
+wikipedia https://en.wikipedia.org/wiki/PeopleCode
+ example
+  &SQL = CreateSQL("SQL Statement");
+     &SQL.Execute([bind_values]);
+ related java
+ summary PeopleCode is a proprietary object-oriented programming language used to express business logic for PeopleSoft applications. Syntactically, PeopleCode is similar to other programming languages, and can be found in both loosely-typed and strongly-typed forms. PeopleCode and its run-time environment is part of the larger PeopleTools framework. PeopleCode has evolved over time and its implementation through the PeopleSoft applications lack consistency. PeopleCode offers some interoperability with the Java programming language. Definition name references, for example, enable you to refer to PeopleTools definitions, such as record definitions or pages, without using hard-coded string literals. Other language features, such as PeopleCode data types and metastrings, reflect the close interaction of PeopleTools and Structured Query Language (SQL). Dot notation, classes and methods in PeopleCode are similar to other object oriented languages, like Java. Object syntax was an important feature of PeopleTools 8.
+ pageId 5157513
+ dailyPageViews 27
+ created 2006
+ backlinksCount 10
+ revisionCount 83
+ appeared 2008
+
+helloWorldCollection PeopleCode
+ /* Hello World in PeopleCode 8.45
+ 
+ &MsgText = MsgGetText(66666666, 999999999, "Hello World!");
+ 
+
+status historical
+fileType text
+
+rosettaCode PeopleCode
+
+antlr https://github.com/antlr/grammars-v4/tree/master/peoplecode
+
+corporateDevelopers Oracle

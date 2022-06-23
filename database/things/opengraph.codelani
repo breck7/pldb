@@ -1,5 +1,6 @@
+title opengraph
 type xmlFormat
-website https://ogp.me/
+
 example
  <html prefix="og: http://ogp.me/ns#">
  <head>
@@ -12,4 +13,13 @@ example
  </head>
  ...
  </html>
+
+patterns
+ hasBooleans? true
+  true
+  false
+  1
+  0
+
 description The Open Graph protocol enables any web page to become a rich object in a social graph. For instance, this is used on Facebook to allow any web page to have the same functionality as any other object on Facebook.
+website https://ogp.me/

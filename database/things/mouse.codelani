@@ -1,3 +1,31 @@
+title Mouse
 appeared 1970
 type pl
-wikipedia Mouse_(programming_language)
+
+patterns
+ hasCentralPackageRepository? false
+
+wikipedia https://en.wikipedia.org/wiki/Mouse_(programming_language)
+ example
+  1 N:              ~ initialize N to 1
+  ( N. N. * ! " "   ~ begin loop; print squares of numbers
+    N. 10 - 0 < ^   ~ exit loop if N >= 10
+    N. 1 + N: ) $   ~ increment N and repeat loop
+ related reverse-polish-notation assembly-language pascal isbn
+ summary The Mouse programming language is a small computer programming language developed by Dr. Peter Grogono in the late 1970s and early 1980s. It was developed as an extension of an earlier language called MUSYS, which was used to control digital and analog devices in an electronic music studio. Mouse was originally intended as a small, efficient language for microcomputers with limited memory.  It is an interpreted, stack-based language and uses Reverse Polish notation.  To make an interpreter as easy as possible to implement, Mouse is designed so that a program is processed as a stream of characters, interpreted one character at a time. The elements of the Mouse language consist of a set of (mostly) one-character symbols, each of which performs a specific function (see table below).  Since variable names are limited to one character, there are only 26 possible variables in Mouse (named A-Z).  Integers and characters are the only available data types. Despite these limits, Mouse includes a number of relatively advanced features, including:  Conditional branching Loops Pointers Macros (subroutines (which may be recursive)) Arrays Code tracingThe design of the Mouse language makes it ideal for teaching the design of a simple interpreter.  Much of the book describing Mouse is devoted to describing the implementation of two interpreters, one in Z80 assembly language, the other in Pascal.
+ pageId 6378343
+ created 2006
+ backlinksCount 10
+ revisionCount 43
+ dailyPageViews 12
+ appeared 1970
+
+status historical
+
+tryItOnline mouse
+
+country US
+fileType text
+wordRank 2382
+
+hopl 684

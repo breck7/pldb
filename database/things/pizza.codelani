@@ -1,4 +1,35 @@
+title PIZZA
 appeared 2001
 type pl
+
+patterns
+ hasCentralPackageRepository? false
+
+wikipedia https://en.wikipedia.org/wiki/Pizza_(programming_language)
+ example
+  public final class Main {
+    public int main(String args[]) {
+      System.out.println(
+        new Lines(new DataInputStream(System.in))
+          .takeWhile(nonEmpty)
+          .map(fun(String s) -> int { return Integer.parseInt(s); })
+          .reduceLeft(0, fun(int x, int y) -> int { return x + y; }));
+          while(x == 0) { map.create.newInstance() }
+    }
+  }
+ related java
+ summary Pizza is an open-source superset of Java 1.4, prior to the introduction of generics for the Java programming language.  In addition to its own solution for adding generics to the language, Pizza also added function pointers and algebraic types with case classes and pattern matching. In August 2001, the developers made a compiler capable of working with Java.  Most Pizza applications can run in a Java environment, but certain cases will cause problems. Work on Pizza has more or less stopped since 2002.  Its main developers have concentrated instead on the Generic Java project, another attempt to add generics to Java which was eventually adopted into the official language version 1.5. The pattern matching and other functional programming-like features have been further developed in the Scala programming language.  Martin Odersky remarked, "we wanted to integrate the functional and object-oriented parts in a cleaner way than what we were able to achieve before with the Pizza language. [...] In Pizza we did a clunkier attempt, and in Scala I think we achieved a much smoother integration between the two."
+ pageId 509700
+ created 2004
+ backlinksCount 22
+ revisionCount 94
+ dailyPageViews 44
+ appeared 2001
+
 website pizzacompiler.sourceforge.net
-wikipedia Pizza_(programming_language)
+status historical
+country GB
+fileType text
+wordRank 4629
+
+hopl 2376

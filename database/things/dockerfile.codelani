@@ -1,3 +1,69 @@
+title Dockerfile
 appeared 2013
 type pl
+
+patterns
+ hasCentralPackageRepository? false
+
+githubLanguage Dockerfile
+ fileExtensions dockerfile
+ trendingProjects
+  author name avatar url language languageColor stars forks currentPeriodStars description
+  kelseyhightower nocode https://github.com/kelseyhightower.png https://github.com/kelseyhightower/nocode Dockerfile #384d54 30957 2658 905 "The best way to write secure and reliable applications. Write nothing; deploy nowhere."
+  laradock laradock https://github.com/laradock.png https://github.com/laradock/laradock Dockerfile #384d54 8174 2745 183 "PHP development environment that runs on Docker."
+  dotnet dotnet-docker https://github.com/dotnet.png https://github.com/dotnet/dotnet-docker Dockerfile #384d54 1800 703 73 "Docker images for .NET Core and the .NET Core Tools."
+  microsoft vscode-dev-containers https://github.com/microsoft.png https://github.com/microsoft/vscode-dev-containers Dockerfile #384d54 247 65 56 "A repository of development container definitions for the VS Code Remote - Containers extension"
+  nodejs docker-node https://github.com/nodejs.png https://github.com/nodejs/docker-node Dockerfile #384d54 4780 1071 106 "Official Docker Image for Node.js 🐳 🐢 🚀"
+  microsoft mssql-docker https://github.com/microsoft.png https://github.com/microsoft/mssql-docker Dockerfile #384d54 800 377 24 "Official Microsoft repository for SQL Server in Docker resources"
+  jessfraz dockerfiles https://github.com/jessfraz.png https://github.com/jessfraz/dockerfiles Dockerfile #384d54 8891 1560 145 "Various Dockerfiles I use on the desktop and on servers."
+  GoogleCloudPlatform cloud-builders-community https://github.com/GoogleCloudPlatform.png https://github.com/GoogleCloudPlatform/cloud-builders-community Dockerfile #384d54 458 303 28 "Community-contributed images for Google Cloud Build"
+  nginxinc docker-nginx https://github.com/nginxinc.png https://github.com/nginxinc/docker-nginx Dockerfile #384d54 1585 891 35 "Official NGINX Dockerfiles"
+  amancevice docker-superset https://github.com/amancevice.png https://github.com/amancevice/docker-superset Dockerfile #384d54 537 297 26 "Docker image for AirBnB's Superset"
+  cnych kubernetes-learning https://github.com/cnych.png https://github.com/cnych/kubernetes-learning Dockerfile #384d54 400 151 59 《从Docker到Kubernetes进阶课程》在线文档
+  nicolaka netshoot https://github.com/nicolaka.png https://github.com/nicolaka/netshoot Dockerfile #384d54 1168 173 69 "a Docker + Kubernetes network trouble-shooting swiss-army container"
+ trendingProjectsCount 13
+
+linguistGrammarRepo https://github.com/asbjornenge/Docker.tmbundle
+ firstCommit 2014
+ lastCommit 2017
+ committerCount 11
+ commitCount 52
+ sampleCount 1
+ example
+  # This file describes the standard way to build Docker, using docker
+  docker-version 0.4.2
+  from	ubuntu:12.04
+  maintainer	Solomon Hykes <solomon@dotcloud.com>
+  # Build dependencies
+  run	apt-get install -y -q curl
+  run	apt-get install -y -q git
+  # Install Go
+  run	curl -s https://go.googlecode.com/files/go1.1.1.linux-amd64.tar.gz | tar -v -C /usr/local -xz
+  env	PATH	/usr/local/go/bin:/usr/local/bin:/usr/local/sbin:/usr/bin:/usr/sbin:/bin:/sbin
+  env	GOPATH	/go
+  env	CGO_ENABLED 0
+  run	cd /tmp && echo 'package main' > t.go && go test -a -i -v
+  # Download dependencies
+  run	PKG=github.com/kr/pty REV=27435c699;		 git clone http://$PKG /go/src/$PKG && cd /go/src/$PKG && git checkout -f $REV
+  run	PKG=github.com/gorilla/context/ REV=708054d61e5; git clone http://$PKG /go/src/$PKG && cd /go/src/$PKG && git checkout -f $REV
+  run	PKG=github.com/gorilla/mux/ REV=9b36453141c;	 git clone http://$PKG /go/src/$PKG && cd /go/src/$PKG && git checkout -f $REV
+  # Run dependencies
+  run	apt-get install -y iptables
+  # lxc requires updating ubuntu sources
+  run	echo 'deb http://archive.ubuntu.com/ubuntu precise main universe' > /etc/apt/sources.list
+  run	apt-get update
+  run	apt-get install -y lxc
+  run	apt-get install -y aufs-tools
+  # Upload docker source
+  add	.       /go/src/github.com/dotcloud/docker
+  # Build the binary
+  run	cd /go/src/github.com/dotcloud/docker/docker && go install -ldflags "-X main.GITCOMMIT '??' -d -w"
+  env	PATH	/usr/local/go/bin:/go/bin:/usr/local/bin:/usr/local/sbin:/usr/bin:/usr/sbin:/bin:/sbin
+  cmd	["docker"]
+
 website https://docs.docker.com/engine/reference/builder/
+status active
+
+twitter docker
+
+fileType text

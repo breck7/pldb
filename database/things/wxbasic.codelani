@@ -1,3 +1,90 @@
+title WxBasic
 appeared 2002
 type pl
-wikipedia WxBasic
+
+patterns
+ hasCentralPackageRepository? false
+
+wikipedia https://en.wikipedia.org/wiki/WxBasic
+ example
+  ' from http://wxbasic.sourceforge.net/phpBB2/viewtopic.php?t=554
+    ' Simple Text Viewer written in wxBasic
+    dim AppName = "Text Viewer"
+    fileName = ""
+  
+    ' Main window
+    dim frame = new wxFrame( Nothing, -1, AppName & " - Untitled Document" )
+    ' Text edit control
+    dim control = new wxTextCtrl( frame, -1, "", wxPoint( 0, 0 ),
+    wxSize( 100, 100 ), wxTE_MULTILINE | wxTE_READONLY | wxTE_RICH)
+  
+    ' Status bar - The one at the bottom of the window
+    dim status = frame.CreateStatusBar( 1 )
+    frame.SetStatusText("Ready")
+    '
+    ' Dialog used for Open
+    dim fileDialog = new wxFileDialog( frame )
+    '
+    ' add menubar to the frame
+    dim mBar = new wxMenuBar()
+    frame.SetMenuBar(mBar)
+    '
+    ' build the "File" dropdown menu
+    dim mFile = new wxMenu()
+    mBar.Append(mFile, "&File")
+  
+    ' make it
+    '
+    mFile.Append( wxID_OPEN, "&Open...", "Loads an existing file from disk" )
+    '
+    mFile.AppendSeparator()
+    mFile.Append( wxID_EXIT, "E&xit\tAlt-X", "Exit Application" )
+  
+    Sub onFileOpen( event )
+       fileDialog.SetMessage("Open File")
+       fileDialog.SetStyle( wxOPEN )
+       If fileDialog.ShowModal() = wxID_OK Then
+         fileName = fileDialog.GetPath()
+         Ext = fileDialog.GetFilename()
+         control.Clear()
+         control.LoadFile( fileName )
+         frame.SetTitle( AppName & " - " & fileName )
+         frame.SetStatusText(Ext)
+      End If
+    End Sub
+    '
+    Connect( frame, wxID_OPEN, wxEVT_COMMAND_MENU_SELECTED, "onFileOpen" )
+  
+    Sub onFileExit( event )
+      frame.Close(True)
+    End Sub
+    '
+    Connect( frame, wxID_EXIT, wxEVT_COMMAND_MENU_SELECTED, "onFileExit" )
+  
+    ' build the "Help" dropdown menu
+    dim mHelp = new wxMenu()
+    mBar.Append(mHelp, "&Help")
+    mHelp.Append( wxID_HELP, "&About\tF1", "About this program" )
+    '
+    Sub onHelpAbout( event )
+      Dim msg = "Text View allows any text file\n" &
+      "to be viewed regardless of its extension.\n" &
+      "If the file being opened isn't a text file\n" &
+      "then it won't be displayed. There will be a\n" &
+      "little garbage shown and that's all."
+      wxMessageBox( msg, "About Text View", wxOK + wxICON_INFORMATION, frame )
+    End Sub
+    Connect( frame, wxID_HELP, wxEVT_COMMAND_MENU_SELECTED, "onHelpAbout" )
+  
+    frame.Show(True)
+ related linux perl java visual-basic c
+ summary wxBasic is a free software / open-source software, cross-platform BASIC interpreter. As it is based on syntax of the BASIC language, it is designed to be simple to learn and understand, and allow novice programmers to write applications for graphical environments like Windows and Linux with minimal effort.  wxBasic is a bytecode based language, like Perl or Java. It is licensed under the LGPL, so proprietary software's source code can be linked against it. It can create stand-alone executables by binding together source code with the interpreter. In contrast with executables created by similar commercial programs like Visual Basic, executables produced by wxBasic do not require any external DLL file, resource file, or installer to run.  The executable is distributed alone and can be run immediately by end-users.  As with programs written in any interpreted language, wxBasic programs may also be run straight from the source code on any platform, if wxBasic is present.    wxBasic is written primarily in C, with some C++ linking it to the wxWidgets library. wxWidgets supplies the cross-platform features. It runs on Microsoft Windows using native controls, and on Linux and macOS using the GTK+ library.
+ created 2004
+ backlinksCount 26
+ pageId 770576
+ revisionCount 68
+ dailyPageViews 5
+ appeared 2002
+
+status historical
+isOpenSource true

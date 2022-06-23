@@ -1,5 +1,56 @@
+title Opa
 appeared 2011
 type pl
+
+patterns
+ hasCentralPackageRepository? false
+ hasTypeInference? true
+
+wikipedia https://en.wikipedia.org/wiki/Opa_(programming_language)
+ example
+  Server.start(Server.http,
+    { title: "Hello"
+    , page: function() { <h1>Hello, web!</h1> }
+    }
+  )
+ related linux ocaml erlang javascript jquery html mongodb postgresql sql dart haxe coffeescript
+ summary Opa is an open-source programming language for developing scalable web applications. It can be used for both client-side and server-side scripting, where complete programs are written in Opa and subsequently compiled to Nodejs on the server and JavaScript on the client, with the compiler automating all communication between the two. Opa implements strong, static typing, which can be helpful in protecting against security issues such as SQL injections and cross-site scripting attacks. The language was first officially presented at the OWASP conference in 2010, and the source code was released on GitHub in June 2011, under a GNU Affero General Public License. Later, the license changed to the MIT license for the framework part (library) and AGPL for the compiler so that applications written in Opa can be released under any license, proprietary or open source.
+ pageId 32976878
+ dailyPageViews 53
+ created 2011
+ backlinksCount 94
+ revisionCount 149
+ appeared 2011
+
+githubLanguage Opa
+ fileExtensions opa
+ trendingProjectsCount 0
+
+githubRepo https://github.com/MLstate/opalang
+
+linguistGrammarRepo https://github.com/mads379/opa.tmbundle
+ firstCommit 2011
+ lastCommit 2014
+ committerCount 3
+ commitCount 23
+ sampleCount 2
+ example
+  /**
+   * To compile & run on port 8080:
+   * opa hello_syntax1.opa --
+   */
+  server = Server.one_page_server(
+     "Hello, world",
+     -> (<h1>Hello, world</h1>)
+  )
+  
+  
+
 website http://opalang.org
-github https://github.com/MLstate/opalang
-wikipedia Opa_(programming_language)
+status active
+
+twitter opalang
+
+fileType text
+
+rosettaCode Opa

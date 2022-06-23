@@ -1,4 +1,46 @@
+title Gosu
 appeared 2002
 type pl
+
+patterns
+ hasCentralPackageRepository? false
+
+wikipedia https://en.wikipedia.org/wiki/Gosu_(programming_language)
+ example
+  var list = {1, 2, 3}
+  var result = list.where(\ elem -> elem >= 2)
+  print(result)
+ related java-bytecode java csharp kotlin ecmascript pascal go
+ summary Gosu is a statically-typed programming language that runs on the Java Virtual Machine released under the Apache 2. This general-purpose programming language is used in several open-source software projects including SparkGS and Ragnar DB among several others, and is widely used in the insurance industry via Guidewire Software's commercial products. The language borrows from several existing languages including Java, C#, and ECMAScript. A notable and unique feature is its Open Type System, which allows the language to be easily extended to provide compile-time checking and IDE awareness of information that is typically checked only at runtime in most other languages. Also of note is the language's ability to serve as both a full-featured general purpose language and as a concise scripting language. For instance, Gosu has free-form Program types (.gsp files) for scripting as well as statically verified Template files (.gst files). Gosu can optionally execute these and all other types directly from source without precompilation, which also distinguishes it from other static languages.
+ pageId 29539307
+ dailyPageViews 101
+ created 2010
+ backlinksCount 38
+ revisionCount 131
+ appeared 2017
+ fileExtensions gs gsp gst gsx
+
+githubLanguage Gosu
+ fileExtensions gs gst gsx vark
+ trendingProjectsCount 0
+
+linguistGrammarRepo https://github.com/jpcamara/Textmate-Gosu-Bundle
+ firstCommit 2011
+ lastCommit 2014
+ committerCount 2
+ commitCount 13
+ sampleCount 5
+ example
+  function hello() {
+    print("hello")
+  }
+
 website http://gosu-lang.org/
-wikipedia Gosu_(programming_language)
+status active
+fileExtensions gs gsp gst gsx
+fileType text
+isOpenSource true
+
+tiobe Gosu
+
+rosettaCode Gosu

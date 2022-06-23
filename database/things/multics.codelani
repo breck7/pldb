@@ -1,4 +1,21 @@
+title MULTICS
 appeared 1967
 type pl
-wikipedia Multics
+
+patterns
+ hasCentralPackageRepository? false
+
+wikipedia https://en.wikipedia.org/wiki/Multics
+ related pl-i assembly-language unix linux algol
+ summary Multics (Multiplexed Information and Computing Service) is an influential early time-sharing operating system, based around the concept of a single-level memory. Virtually all modern operating systems were heavily influenced by Multics – often through Unix, which was created by some of the people who had worked on Multics – either directly (Linux, macOS) or indirectly (Windows NT).
+ backlinksCount 303
+ pageId 18847
+ dailyPageViews 190
+ created 2001
+ appeared 1969
+
 reference https://semanticscholar.org/paper/bbdb16ebe3c71e7b6d32750ae61d0aab7ab72e84
+status historical
+isOpenSource false
+
+hopl 3513

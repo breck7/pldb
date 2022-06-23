@@ -1,5 +1,31 @@
+title Qalb programming language
 appeared 2012
 type pl
+
+patterns
+ hasCentralPackageRepository? false
+
+wikipedia https://en.wikipedia.org/wiki/Qalb_(programming_language)
+ related scheme lisp
+ summary قلب (Levantine Arabic: [ʔalb]), transliterated Qalb, Qlb and Alb, is a functional programming language allowing a programmer to write programs completely in Arabic. Its name means heart and is a recursive acronym in Arabic meaning Qlb: a programming language (قلب: لغة برمجة, Qlb: Lughat Barmajah). It was developed in 2012 by Ramsey Nasser, a computer scientist at the Eyebeam Art + Technology Center in New York City, as both an artistic endeavor and as a response to the Anglophone bias in the vast majority of programming languages, which express their fundamental concepts using English words. The syntax is like that of Lisp or Scheme, consisting of parenthesized lists. All keywords are appropriate Arabic terms, and program text is laid out right-to-left, like all Arabic text. The language provides a minimal set of primitives for defining functions, conditionals, looping, list manipulation, and basic arithmetic expressions. It is Turing-complete, and the Fibonacci sequence and Conway's Game of Life have been implemented. Because all program text is written in Arabic, and the connecting strokes between characters in the Arabic script can be extended to any length, it is possible to align the source code in artistic patterns, in the tradition of Arabic calligraphy. A JavaScript-based interpreter is currently hosted on herokuapp and the project can be forked on GitHub.
+ pageId 38441485
+ dailyPageViews 20
+ created 2013
+ backlinksCount 5
+ revisionCount 35
+ appeared 2012
+
+githubRepo https://github.com/nasser/---
+ stars 355
+ forks 54
+ subscribers 33
+ created 2012
+ updated 2017
+ firstCommit 2012
+ description قلب: لغة برمجة
+ issues 4
+
 website http://qlb-repl.herokuapp.com/
-github https://github.com/nasser/---
-wikipedia Qalb_(programming_language)
+status active
+fileType text
+isOpenSource true

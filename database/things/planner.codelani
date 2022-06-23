@@ -1,3 +1,23 @@
+title PLANNER
 appeared 1969
 type pl
-wikipedia Planner_(programming_language)
+
+patterns
+ hasCentralPackageRepository? false
+
+wikipedia https://en.wikipedia.org/wiki/Planner_(programming_language)
+ related pop-2 lisp prolog
+ summary Planner (often seen in publications as "PLANNER" although it is not an acronym) is a programming language designed by Carl Hewitt at MIT, and first published in 1969. First, subsets such as Micro-Planner and Pico-Planner were implemented, and then essentially the whole language was implemented as Popler by Julian Davies at the University of Edinburgh in the POP-2 programming language. Derivations such as QA4, Conniver, QLISP and Ether (see Scientific Community Metaphor) were important tools in Artificial Intelligence research in the 1970s, which influenced commercial developments such as KEE and ART.
+ pageId 46143
+ dailyPageViews 27
+ created 2002
+ backlinksCount 36
+ revisionCount 347
+ appeared 1969
+
+status historical
+country US
+fileType text
+wordRank 5824
+
+hopl 297

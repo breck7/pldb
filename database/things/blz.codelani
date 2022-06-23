@@ -1,5 +1,6 @@
+title blz
 type pl
-website https://blazingk.in/blz
+
 example
  import Lists
  :main
@@ -7,3 +8,5 @@ example
    evens = range(1000).filter!(x -> x % 2 == 0)
    print(evens.map!(x -> x ** 3)
  end
+
+website https://blazingk.in/blz

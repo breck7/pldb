@@ -1,10 +1,30 @@
+title GNU Ubiquitous Intelligent Language for Extensions
 appeared 1993
 type pl
-website https://www.gnu.org/software/guile/
-wikipedia GNU_Guile
+
 example
  ;;; Hello world program
  (define name "World")
  (display (string-append "Hello " name "!"))
  (newline)
+
+patterns
+ hasCentralPackageRepository? false
+
 description Guile is designed to help programmers create flexible applications that can be extended by users or other programmers with plug-ins, modules, or scripts. Guile is an implementation of the Scheme programming language, supporting the Revised5 and most of the Revised6 language reports, as well as many SRFIs. It also comes with a library of modules that offer additional features, like an HTTP server and client, XML parsing, and object-oriented programming.
+
+wikipedia https://en.wikipedia.org/wiki/GNU_Guile
+ related linux scheme lilypond gdb c s-expressions xml emacs-editor emacs-lisp scm tcl
+ summary GNU Guile is the preferred extension system for the GNU Project, which features an implementation of the Scheme programming language. Its first version was released in 1993.  In addition to large parts of Scheme standards, Guile Scheme includes modularized extensions for many different programming tasks.For extending programs, Guile offers "libguile" which allows the language to be embedded in other programs, and integrated closely through the C API; similarly, new types and subroutines defined through the C API can be made available as extensions to Guile itself.Guile stands for the GNU Ubiquitous Intelligent Language for Extensions. It is used in programs like GnuCash, LilyPond, GNU Guix, GuixSD, and GNU Debugger.
+ pageId 1436948
+ created 2005
+ backlinksCount 94
+ revisionCount 262
+ dailyPageViews 71
+ appeared 1993
+
+website https://www.gnu.org/software/guile/
+standsFor GNU Ubiquitous Intelligent Language for Extensions
+status historical
+fileType text
+isOpenSource true

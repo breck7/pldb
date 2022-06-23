@@ -1,4 +1,35 @@
+title Gettext Catalog
 appeared 1990
 type textMarkup
-wikipedia Gettext
+
+patterns
+ hasCentralPackageRepository? false
+
+wikipedia https://en.wikipedia.org/wiki/Gettext
+ example
+  #: src/name.c:36
+  msgid "My name is %s.\n"
+  msgstr "Je m'appelle %s.\n"
+ related c emacs-editor unix csharp perl php python scala
+ summary In computing, gettext is an internationalization and localization (i18n) system commonly used for writing multilingual programs on Unix-like computer operating systems. The most commonly used implementation of gettext is GNU gettext, released by the GNU Project in 1995.
+ created 2004
+ backlinksCount 66
+ pageId 646489
+ revisionCount 271
+ dailyPageViews 107
+ appeared 1995
+
+githubLanguage Gettext Catalog
+ fileExtensions po pot
+ trendingProjectsCount 0
+
+linguistGrammarRepo https://github.com/textmate/gettext.tmbundle
+ firstCommit 2007
+ lastCommit 2014
+ committerCount 3
+ commitCount 22
+
 reference https://www.gnu.org/software/gettext/
+status active
+fileType text
+isOpenSource true

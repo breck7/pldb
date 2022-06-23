@@ -1,5 +1,7 @@
+title Caché Basic
 appeared 1997
 type queryLanguage
+
 example
  ' RightTriangle compute area and hypotenuse of a right triangle
  ' this routine contains examples of Cache Basic features */
@@ -65,5 +67,10 @@ example
  println
  println "The hypotenuse is ", hypot, " ", units, "."
  end function
-reference https://docs.intersystems.com/latest/csp/docbook/DocBook.UI.Page.cls?KEY=TBAS_ARoutine
+
+patterns
+ hasCentralPackageRepository? false
+
 description Caché is a high-performance object database with several built-in general-purpose programming languages. It supports multiple processes and provides concurrency control. Each process has direct, efficient access to the data.
+reference https://docs.intersystems.com/latest/csp/docbook/DocBook.UI.Page.cls?KEY=TBAS_ARoutine
+status historical

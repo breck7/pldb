@@ -1,3 +1,27 @@
+title F
 appeared 1996
 type pl
-wikipedia F_(programming_language)
+
+patterns
+ hasCentralPackageRepository? false
+
+wikipedia https://en.wikipedia.org/wiki/F_(programming_language)
+ example
+  program main
+      ! Insert code here
+  end program main
+ related f-sharp fstar fortran
+ summary F is a modular, compiled, numeric programming language, designed for scientific programming and scientific computation. F was developed as a modern Fortran, thus making it a subset of Fortran 95. It combines both numerical and data abstraction features from these languages. F is also backwards compatible with Fortran 77, allowing calls to Fortran 77 programs. F was first included in the g95 compiler.
+ pageId 1283488
+ created 2004
+ backlinksCount 18
+ revisionCount 59
+ dailyPageViews 52
+
+status historical
+fileType text
+wordRank 213
+
+hopl 3460
+
+rosettaCode F

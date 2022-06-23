@@ -1,3 +1,21 @@
+title Argus programming language
 appeared 1982
 type pl
-wikipedia Argus_(programming_language)
+
+patterns
+ hasCentralPackageRepository? false
+
+wikipedia https://en.wikipedia.org/wiki/Argus_(programming_language)
+ related clu
+ summary Argus is a programming language created at MIT by Barbara Liskov between 1982 and 1988, in collaboration with Maurice Herlihy, Paul Johnson, Robert Scheifler, and William Weihl.  It is an extension of the CLU language, and utilizes most of the same syntax and semantics.  Argus was designed to support the creation of distributed programs, by encapsulating related procedures within objects called guardians, and by supporting atomic operations called actions.
+ pageId 27580389
+ created 2010
+ backlinksCount 15
+ revisionCount 13
+ dailyPageViews 12
+ appeared 1982
+
+status historical
+fileType text
+
+hopl 1295

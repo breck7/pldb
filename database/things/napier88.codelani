@@ -1,3 +1,18 @@
+title Napier88
 appeared 1989
 type pl
-wikipedia Napier88
+
+patterns
+ hasCentralPackageRepository? false
+
+wikipedia https://en.wikipedia.org/wiki/Napier88
+ related java s-algol ps-algol isbn
+ summary Napier88 is an orthogonally persistent programming language that was designed and implemented at the University of St Andrews, Scotland. The primary designer was Ron Morrison, whose initial designs were extended and implemented by Fred Brown, Richard Connor, and Al Dearle. Napier88 was ahead of its time in many ways, and was the first robustly implemented language to combine a polymorphic type system with orthogonal persistence. The language was robustly implemented and released to users from both industry and academia; up to 1,000 registered users were recorded in due course. The language, however, was only intended to provide a proof of concept for an experiment in persistent programming; some time after 1989 (the year the first implementation was in fact released) the group's interests moved on and the language was no longer maintained. Its influence lives on in various other systems however; the CORBA type ANY is distinctly recognisable in Napier88's type ANY; Microsoft's CLR uses a similar polymorphic architecture, and Java's parametric types solve some of the same problems of uninstantiated types escaping from their static scope.
+ created 2006
+ backlinksCount 24
+ pageId 5748470
+ revisionCount 35
+ dailyPageViews 5
+ appeared 1989
+
+status historical

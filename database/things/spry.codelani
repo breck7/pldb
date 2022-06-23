@@ -1,8 +1,8 @@
+title spry
 appeared 2015
 type pl
 creators Göran Krampe
-website http://sprylang.se/
-github https://github.com/gokr/spry
+
 example
  # Let's add a method to:do: that works as in Smalltalk.
  # Methods take the first argument, the "receiver", from the left
@@ -27,4 +27,17 @@ example
  
  # Then use it to produce [3 4]
  echo ([1 2 3 4] select: [:x > 2])
+
 description Spry borrows homoiconicity from Rebol and Lisp, free form syntax from Forth and Rebol, the word of different types from Rebol, good data structure literal support from JavaScript and the general coding experience and style from Smalltalk. It also has a few ideas of its own, like an interesting argument passing mechanism and a relatively novel take on OO.
+
+githubRepo https://github.com/gokr/spry
+ firstCommit 2015
+ stars 308
+ forks 22
+ subscribers 25
+ created 2015
+ updated 2019
+ description A Smalltalk and Rebol inspired language implemented as an AST interpreter in Nim
+
+website http://sprylang.se/
+aka ni

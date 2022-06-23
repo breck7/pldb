@@ -1,4 +1,25 @@
+title XL programming language
 appeared 2000
 type pl
+
+patterns
+ hasCentralPackageRepository? false
+ hasSemanticIndentation? true
+ hasTemplates? true
+
+wikipedia https://en.wikipedia.org/wiki/XL_(programming_language)
+ example
+  if true then TrueBody else FalseBody -> TrueBody
+    if false then TrueBody else FalseBody -> FalseBody
+ related ada basic c fortran java lisp prolog visual-basic smalltalk forth
+ summary XL ("eXtensible Language") is the first and so far the only computer programming language designed to support concept programming.XL features programmer-reconfigurable syntax and semantics. Compiler plug-ins can be used to add new features to the language. A base set of plug-ins implements a relatively standard imperative language. Programmers can write their own plug-ins to implement application-specific notations, such as symbolic differentiation, which can then be used as readily as built-in language features.
+ created 2005
+ backlinksCount 36
+ pageId 2855241
+ revisionCount 106
+ dailyPageViews 26
+ appeared 2000
+
 website http://xlr.sourceforge.net/
-wikipedia XL_(programming_language)
+status historical
+isOpenSource true

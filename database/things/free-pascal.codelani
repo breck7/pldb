@@ -1,3 +1,20 @@
+title Free Pascal
 appeared 1997
 type pl
-wikipedia Free_Pascal
+
+patterns
+ hasCentralPackageRepository? false
+ hasOperatorOverloading? true
+
+wikipedia https://en.wikipedia.org/wiki/Free_Pascal
+ related object-pascal assembly-language pascal turbo-pascal delphi objective-c linux powerpc arm sparc x86-isa ios elf freebsd solaris android atmel-avr jvm mips ipf visual-studio-code-editor morfik
+ summary Free Pascal Compiler (FPC) is a compiler for the closely related programming language dialects, Pascal and Object Pascal. It is free software released under the GNU General Public License, with exception clauses that allow for static linking against its runtime libraries and packages for any purpose in combination with any other software license. It supports its own Object Pascal dialect as well as the dialects of several other Pascal family compilers to a certain extent, including those of Turbo Pascal, Delphi, and some historical Macintosh compilers. The dialect is selected on a per-unit (module) basis, and more than one dialect can be used per program. It follows a write once, compile anywhere philosophy, and is available for many CPU architectures and operating systems (see Targets). It supports inline assembly language and includes an internal assembler capable of parsing several dialects such as AT&T and Intel style. Separate projects exist to facilitate developing cross-platform graphical user interface (GUI) applications, the most prominent one being the Lazarus integrated development environment (IDE).
+ created 2004
+ backlinksCount 255
+ pageId 638429
+ revisionCount 749
+ dailyPageViews 127
+ appeared 1997
+
+status historical
+isOpenSource true

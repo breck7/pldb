@@ -1,4 +1,144 @@
+title MoonScript
 appeared 2011
 type pl
+
+example
+ class Thing
+   name: "unknown"
+ 
+ class Person extends Thing
+   say_name: => print "Hello, I am #{@name}!"
+ 
+ with Person!
+   .name = "MoonScript"
+   \say_name!
+
+patterns
+ hasCentralPackageRepository? false
+
+githubLanguage MoonScript
+ fileExtensions moon
+ trendingProjectsCount 0
+
+githubRepo https://github.com/leafo/moonscript
+ stars 1791
+ forks 138
+ subscribers 88
+ created 2011
+ updated 2017
+ firstCommit 2011
+ description :crescent_moon: A language that compiles to Lua
+ issues 135
+
+linguistGrammarRepo https://github.com/leafo/moonscript-tmbundle
+ firstCommit 2011
+ lastCommit 2015
+ committerCount 6
+ commitCount 26
+ sampleCount 1
+ example
+  
+  types = require "moonscript.types"
+  util = require "moonscript.util"
+  data = require "moonscript.data"
+  
+  import reversed, unpack from util
+  import ntype, mtype, build, smart_node, is_slice, value_is_singular from types
+  import insert from table
+  import NameProxy, LocalName from require "moonscript.transform.names"
+  
+  destructure = require "moonscript.transform.destructure"
+  
+  local implicitly_return
+  
+  class Run
+    new: (@fn) =>
+      self[1] = "run"
+  
+    call: (state) =>
+      self.fn state
+  
+  -- transform the last stm is a list of stms
+  -- will puke on group
+  apply_to_last = (stms, fn) ->
+    -- find last (real) exp
+    last_exp_id = 0
+    for i = #stms, 1, -1
+      stm = stms[i]
+      if stm and mtype(stm) != Run
+        last_exp_id = i
+        break
+  
+    return for i, stm in ipairs stms
+      if i == last_exp_id
+        fn stm
+      else
+        stm
+  
+  -- is a body a sindle expression/statement
+  is_singular = (body) ->
+    return false if #body != 1
+    if "group" == ntype body
+      is_singular body[2]
+    else
+      true
+  
+  find_assigns = (body, out={}) ->
+    for thing in *body
+      switch thing[1]
+        when "group"
+          find_assigns thing[2], out
+        when "assign"
+          table.insert out, thing[2] -- extract names
+    out
+  
+  hoist_declarations = (body) ->
+    assigns = {}
+  
+    -- hoist the plain old assigns
+    for names in *find_assigns body
+      for name in *names
+        table.insert assigns, name if type(name) == "string"
+  
+    -- insert after runs
+    idx = 1
+    while mtype(body[idx]) == Run do idx += 1
+  
+    table.insert body, idx, {"declare", assigns}
+  
+  expand_elseif_assign = (ifstm) ->
+    for i = 4, #ifstm
+      case = ifstm[i]
+      if ntype(case) == "elseif" and ntype(case[2]) == "assign"
+        split = { unpack ifstm, 1, i - 1 }
+        insert split, {
+          "else", {
+            {"if", case[2], case[3], unpack ifstm, i + 1}
+          }
+        }
+        return split
+  
+    ifstm
+  
+  constructor_name = "new"
+  
+  with_continue_listener = (body) ->
+    continue_name = nil
+    {
+      Run =>
+        @listen "continue", ->
+          unless continue_name
+
 website http://moonscript.org/
-github https://github.com/leafo/moonscript
+status active
+
+tryItOnline moonscript
+
+fileType text
+compilesTo lua
+isOpenSource true
+webRepl http://moonscript.org/compiler/
+
+rosettaCode MoonScript
+
+writtenIn lua

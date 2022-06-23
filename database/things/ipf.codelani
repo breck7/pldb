@@ -1,6 +1,7 @@
+title Information Presentation Facility
 appeared 1997
 type pl
-wikipedia Information_Presentation_Facility
+
 example
  .* This is a comment line
  :userdoc.
@@ -17,3 +18,45 @@ example
  which it can barely see.
  
  :euserdoc.
+
+patterns
+ hasCentralPackageRepository? false
+
+wikipedia https://en.wikipedia.org/wiki/Information_Presentation_Facility
+ example
+  :lm margin=2.:font facename=Helv size=24x10.
+  :p.:hp8.Welcome to PM123 !:ehp8.
+  :font facename=Helv size=16x8.
+  :p.:p.
+  Hello and welcome to the wonderful world of digital music on OS/2. First we
+  must congratulate you for choosing the best MPEG-audio player available for
+  OS/2! PM123 has been in development since beginning of 1997 and has become
+  the most advanced player on OS/2. Some of you may have used the earlier
+  betas of PM123 and for your convenience, here are the new features in this
+  release:
+  .br
+  :ul compact.
+  :li. New skin options, allowing PM123 to be modified to just about anything. 
+  :li. Graphical :hp2.equalizer:ehp2., including pre-amplification and band mute.
+  :li. Support for plugins, a :hp2.spectrum analyzer:ehp2. and :hp2.oscilloscope:ehp2. plugin.
+  :li. :hp2.Playlist Manager:ehp2. for users, allowing easier managing of playlists.
+  :li. Better HTTP streaming support: support for URLs in playlist, and M3Us for playlists.
+  :li. Recursive directory adding.
+  :li. Commandline and remote control of PM123.
+  :li. General improvements in all parts of the player.
+  :eul.
+  .br
+  .br
+  :p.
+ related ibm-gml html free-pascal
+ summary Information Presentation Facility (IPF) is a system for presenting online help and hypertext on IBM OS/2 systems. IPF also refers to the markup language that is used to create IPF content. The IPF language has its origins in BookMaster and Generalized Markup Language developed by IBM. The IPF language is very similar to the well-known HTML language, version 3.0, with a range of additional possibilities. Therefore, a trained user may use virtually any word processor when creating IPF documents. The IPF language consists of 45 basic commands. IPF files are compiled using the IPF Compiler (IPFC) into viewable INF or HLP files. IPF HLP files are distinct from the WinHelp HLP files that are prevalent in Windows. OS/2 contains a built in viewer, and there are other viewers available for other platforms.
+ pageId 8694762
+ dailyPageViews 17
+ created 2006
+ backlinksCount 31
+ revisionCount 27
+ appeared 1997
+
+standsFor Information Presentation Facility
+status historical
+fileType text

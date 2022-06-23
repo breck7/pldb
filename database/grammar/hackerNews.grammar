@@ -1,0 +1,9 @@
+hackerNewsDiscussionsNode
+ boolean fromCrawler true
+ extends abstractCountNode
+ crux hackerNewsDiscussions
+ baseNodeType blobNode
+ boolean includeChildrenInCsv false
+ boolean fromCrawler true
+ description Links to Hacker News posts discussing this language.
+ string sourceDomain news.ycombinator.com

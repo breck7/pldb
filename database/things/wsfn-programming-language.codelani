@@ -1,3 +1,24 @@
+title WSFN
 appeared 1983
 type pl
-wikipedia WSFN_%28programming_language%29
+
+patterns
+ hasCentralPackageRepository? false
+
+wikipedia https://en.wikipedia.org/wiki/WSFN_%28programming_language%29
+ example
+  DIT(-I2FI5RG5RI2FI+)2R
+  DG4F
+  DY (HN63F2R61FRC4 (2FI))
+ related li-chen-wang tiny-basic
+ summary WSFN (Which Stands for Nothing) is an interpreted programming language for controlling robots created by Li-Chen Wang. It was designed to be as small as possible, a "tiny" language, similar to Wang's earlier effort, Palo Alto Tiny BASIC. WSFN was first published in Dr. Dobb's Journal in September 1977. The language consists primarily of single-letter commands to tell a robot to move in certain directions, while other commands perform tests or basic mathematical operations. These can be grouped into named macros to produce more complex programs. The original version also included code that simulated the robot as a cursor on the VDM-1 display, or graphically on a Cromemco Dazzler display. Today, this is known as turtle graphics. Extended WSFN is an implementation created for the Atari 8-bit family of home computers written by Harry Stewart and published by the Atari Program Exchange in 1981. In addition to supporting turtle graphics, it adds a number of commands to control the graphics and sound capabilities of that platform. It was offered as a "beginner's language with emphasis on graphics".
+ created 2008
+ backlinksCount 12
+ pageId 15264750
+ revisionCount 74
+ dailyPageViews 3
+ appeared 1977
+
+status historical
+
+hopl 1065

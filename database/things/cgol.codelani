@@ -1,6 +1,7 @@
+title CGOL
 appeared 1973
 type pl
-wikipedia CGOL
+
 example
  for i in 1 to n do
    for k in 1 to n do
@@ -8,4 +9,14 @@ example
       for j in 1 to n do
          ac := ac + a(i,j)*b(j,k);
       c(i,k) := ac)
+
+wikipedia https://en.wikipedia.org/wiki/CGOL
+ summary CGOL (pronounced "see goll") is an alternative syntax featuring an extensible algebraic notation for the Lisp programming language. It was designed for MACLISP by Vaughan Pratt and subsequently ported to Common Lisp.The notation of CGOL is a traditional infix notation, in the style of ALGOL, rather than Lisp's traditional, uniformly-parenthesized prefix notation syntax. The CGOL parser is based on Pratt's design for top-down operator precedence parsing, sometimes informally referred to as a "Pratt parser". Semantically, CGOL is essentially just Common Lisp, with some additional reader and printer support.
+ backlinksCount 9
+ pageId 14030444
+ dailyPageViews 7
+ appeared 1973
+
 reference https://www.cs.cmu.edu/afs/cs/project/ai-repository/ai/lang/lisp/code/syntax/cgol/0.html
+
+hopl 750

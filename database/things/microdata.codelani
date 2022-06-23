@@ -1,6 +1,7 @@
+title Microdata HTML
 appeared 2013
 type schema
-wikipedia Microdata_(HTML)
+
 example
  <div itemscope itemtype="http://schema.org/RentalCarReservation">
    <meta itemprop="reservationNumber" content="546323"/>
@@ -74,4 +75,13 @@ example
    <meta itemprop="price" content="119.00"/>
    <meta itemprop="priceCurrency" content="USD"/>
  </div>
+
+wikipedia https://en.wikipedia.org/wiki/Microdata_(HTML)
+ summary Microdata is a WHATWG HTML specification used to nest metadata within existing content on web pages. Search engines, web crawlers, and browsers can extract and process Microdata from a web page and use it to provide a richer browsing experience for users. Search engines benefit greatly from direct access to this structured data because it allows them to understand the information on web pages and provide more relevant results to users. Microdata uses a supporting vocabulary to describe an item and name-value pairs to assign values to its properties. Microdata is an attempt to provide a simpler way of annotating HTML elements with machine-readable tags than the similar approaches of using RDFa and microformats. In 2013, because the W3C HTML Working Group failed to find someone to serve as an editor for the Microdata HTML specification, its development was terminated with a 'Note'. However, since that time, two new editors were selected, and five newer versions of the working draft have been published, the most recent being W3C Working Draft 26 April 2018.
+ backlinksCount 157
+ pageId 25817778
+ dailyPageViews 172
+ appeared 2013
+
 reference https://www.w3.org/TR/microdata/
+related rdf json-ld

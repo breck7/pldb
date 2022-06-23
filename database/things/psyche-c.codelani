@@ -1,4 +1,22 @@
+title psyche-c
 appeared 2016
 type compiler
-github https://github.com/ltcmelo/psychec
+
+patterns
+ hasCentralPackageRepository? false
+
 description <a href='https://github.com/ltcmelo/psychec'>Psyche-c</a> is a compiler for incomplete C code. It features a Hindley/Milner-inspired type inference engine for C.
+
+githubRepo https://github.com/ltcmelo/psychec
+ stars 157
+ forks 11
+ subscribers 10
+ created 2016
+ updated 2017
+ firstCommit 2016
+ description Hindley-Milner type inference engine for C
+ issues 0
+
+status active
+fileType na
+isOpenSource true

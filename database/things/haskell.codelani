@@ -1,4 +1,139 @@
+title Haskell
 appeared 1990
 type pl
+
+patterns
+ hasRunTimeGuards? true
+  f x
+   | x > 0 = 1
+   | otherwise = 0
+ hasTypedHoles? true
+  -- Found hole `_' with type f (Free f b)
+ hasMonads? true
+  -- https://stackoverflow.com/questions/44965/what-is-a-monad
+  parseExpr = parseString <|> parseNumber
+  
+  parseString = do
+          char '"'
+          x <- many (noneOf "\"")
+          char '"'
+          return (StringValue x)
+  
+  parseNumber = do
+      num <- many1 digit
+      return (NumberValue (read num))
+ hasMapFunctions? true
+  class Functor f where
+     fmap :: (a -> b) -> f a -> f b
+     (<$) :: a -> f b -> f a
+ hasCentralPackageRepository? true
+ hasComments? true
+   -- a single line comment
+   {- A multiline comment
+      which can continue for many lines
+   -}
+ hasBlockComments? true
+ hasZippers? true
+  -- https://wiki.haskell.org/Zipper_monad/TravelTree
+ hasPatternMatching? true
+  fib 0 = 1
+  fib 1 = 1
+  fib n | n >= 2
+        = fib (n-1) + fib (n-2)
+ hasGarbageCollection? true
+ hasDirectives? true
+  {-# INLINE foo #-}
+ hasImports? true
+  import Data.Maybe
+  import Mod as Foo
+  import Mod (x,y, (+++))
+  import qualified Mod
+  import Mod hiding (x,y,(+++))
+  import qualified Mod hiding (x,y)
+ hasOperatorOverloading? true
+ hasSemanticIndentation? true
+ hasTypeInference? true
+
+wikipedia https://en.wikipedia.org/wiki/Haskell_(programming_language)
+ example
+  $ ghci
+  Prelude> import Data.Int
+  Prelude Data.Int> fromIntegral (32767 :: Int16) :: Int8
+  -1
+  Prelude Data.Int> fromInteger (2^64 :: Integer) :: Int32
+  0
+ related clean fp hope id iswim krc lisp miranda ml standard-ml scheme sisal agda csharp linq cayenne clojure coffeescript curry elm epigram f-sharp frege hack idris java livescript mercury perl-6 python rust scala swift visual-basic-dot-net c c-- llvmir opengl javascript lazyMl pandoc-app cryptol jvm
+ summary Haskell  is a standardized, general-purpose purely functional programming language, with non-strict semantics and strong static typing. It is named after logician Haskell Curry. The latest standard of Haskell is Haskell 2010. As of May 2016, a group is working on the next version, Haskell 2020. Haskell features a type system with type inference and lazy evaluation. Type classes first appeared in the Haskell programming language. Its main implementation is the Glasgow Haskell Compiler. Haskell is based on the semantics, but not the syntax, of the language Miranda, which served to focus the efforts of the initial Haskell working group. Haskell is used widely in academia and industry.
+ pageId 27404990
+ dailyPageViews 1177
+ created 2001
+ backlinksCount 1499
+ revisionCount 1802
+ appeared 1990
+ fileExtensions hs lhs
+
+githubLanguage Haskell
+ fileExtensions hs hsc
+ trendingProjects
+  author name avatar url language languageColor stars forks currentPeriodStars description
+  koalaman shellcheck https://github.com/koalaman.png https://github.com/koalaman/shellcheck Haskell #5e5086 16292 821 422 "ShellCheck, a static analysis tool for shell scripts"
+  facebook duckling https://github.com/facebook.png https://github.com/facebook/duckling Haskell #5e5086 2567 435 119 "Language, engine, and tooling for expressing, testing, and evaluating composable language rules on input strings."
+  unisonweb unison https://github.com/unisonweb.png https://github.com/unisonweb/unison Haskell #5e5086 2110 92 208 "Next generation programming language, currently in development"
+ trendingProjectsCount 4
+
+helloWorldCollection Haskell
+ -- Hello World in Haskell
+  
+ main = putStrLn "Hello World"
+ 
+
+linguistGrammarRepo https://github.com/atom-haskell/language-haskell
+ firstCommit 2014
+ lastCommit 2018
+ committerCount 13
+ commitCount 463
+ sampleCount 5
+ example
+  import Data.Char
+  
+  main :: IO ()
+  main = do
+  	let hello = "hello world"
+  	putStrLn $ map toUpper hello
+
 website https://www.haskell.org
-wikipedia Haskell_(programming_language)
+status active
+
+replit haskell
+
+tryItOnline haskell
+
+fileExtensions hs lhs
+fileType text
+
+tiobe Haskell
+
+meetup haskell
+ memberCount 115163
+ groupCount 311
+
+linkedInSkill haskell
+ peopleWithThisSkillCount 30472
+
+projectEuler Haskell
+ memberCount
+  2019 6635
+  2022 7098
+
+hopl 1555
+
+quineRelay Haskell
+
+ubuntuPackage ghc
+
+codeMirror haskell
+
+rosettaCode Haskell
+
+indeedJobs haskell developer
+ 2017 190

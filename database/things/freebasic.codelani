@@ -1,3 +1,33 @@
+title FreeBASIC
 appeared 2004
 type pl
-wikipedia FreeBASIC
+
+patterns
+ hasPointers? true
+ hasCentralPackageRepository? false
+ hasComments? true
+ hasOperatorOverloading? true
+
+wikipedia https://en.wikipedia.org/wiki/FreeBASIC
+ example
+  Dim As Vector Ptr player = New Vector()
+  
+  *player = Type<Vector>(100, 100)
+  Print player->getX
+  Print player->getY
+  
+  Delete player
+  
+  Sleep 'Prevents the program window from closing instantly
+ related freebsd linux quickbasic c basic opengl
+ summary FreeBASIC  is a multiplatform, free/open source (GPL) BASIC compiler for Microsoft Windows, protected-mode MS-DOS (DOS extender), Linux, FreeBSD and Xbox.  The Xbox version is no longer maintained.According to its official Web site, FreeBASIC provides syntax compatibility with programs originally written in Microsoft QuickBASIC (QB).  Unlike QuickBASIC, however, FreeBASIC is a command line only compiler, unless users manually install an external integrated development environment (IDE) of their choice.   IDEs specifically made for FreeBASIC include FBide and FbEdit.
+ created 2005
+ backlinksCount 157
+ pageId 1443566
+ revisionCount 468
+ dailyPageViews 156
+ appeared 2016
+
+status historical
+
+rosettaCode FreeBASIC

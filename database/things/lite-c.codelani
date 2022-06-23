@@ -1,4 +1,31 @@
+title Lite-C
 appeared 2007
 type pl
+
+patterns
+ hasCentralPackageRepository? false
+
+wikipedia https://en.wikipedia.org/wiki/Lite-C
+ example
+  void main()
+  {
+     level_load(""); // open an empty level. you can use NULL instead of ""
+     ENTITY* sphere = ent_create("sphere.mdl",vector(0,0,0),NULL); // create sphere model at position (0,0,0)
+     while(1) {
+        sphere->pan += 1; // rotate the sphere with 1 degree per frame
+        wait(1);  // wait one frame
+     }
+  }
+ related c opengl
+ summary Lite-C is a programming language for multimedia applications and personal computer games, using a syntax subset of the C language with some elements of the C++ language. Its main difference to C is the native implementation of multimedia and computer game related objects like sounds, images, movies, GUI elements, 2D and 3D models, collision detection and rigid body physics. Lite-C executables are compiled instead of interpreted. Lite-C runs on 32-bit and 64-bit Windows XP or Vista operating systems. Lite-C claims to allow very fast programming with a minimum of code, and easy access to non-programmers. For this, the developer provides a 25-lesson workshop that especially deals with the game and multimedia related objects of the language.  Lite-C supports the Windows API and the Component Object Model (COM); therefore OpenGL and DirectX programs can directly be written in lite-C. It has integrated the free A8 rendering engine.
+ pageId 10780425
+ created 2007
+ backlinksCount 7
+ revisionCount 46
+ dailyPageViews 13
+ appeared 2007
+
 website http://www.3dgamestudio.de/litec.php
-wikipedia Lite-C
+status historical
+fileType text
+isOpenSource true

@@ -1,3 +1,18 @@
+title Galaksija BASIC
 appeared 1983
 type pl
-wikipedia Galaksija_BASIC
+
+patterns
+ hasCentralPackageRepository? false
+
+wikipedia https://en.wikipedia.org/wiki/Galaksija_BASIC
+ related basic microsoft-basic ascii
+ summary Galaksija BASIC was the BASIC interpreter of the Galaksija build-it-yourself home computer from Yugoslavia. While being partially based on code taken from TRS-80 Level 1 BASIC, which the creator believed to have been a Microsoft BASIC, the extensive modifications of Galaksija BASIC—such as to include rudimentary array support, video generation code (as the CPU itself did it in absence of dedicated video circuitry) and generally improvements to the programming language—is said to have left not much more than flow-control and floating point code remaining from the original. The core implementation of the interpreter was fully contained in the 4 KiB ROM "A" or "1". The computer's original mainboard had a reserved slot for an extension ROM "B" or "2" that added more commands and features such as a built-in Zilog Z80 assembler.
+ created 2006
+ backlinksCount 9
+ pageId 3743155
+ revisionCount 37
+ dailyPageViews 3
+ appeared 1983
+
+status historical

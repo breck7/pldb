@@ -1,7 +1,7 @@
+title ink
 appeared 2015
 type esolang
-website http://www.inklestudios.com/ink
-github https://github.com/inkle/ink
+
 example
  - I looked at Monsieur Fogg 
  *   ... and I could contain myself no longer.
@@ -22,4 +22,27 @@ example
  *   ... but I said nothing[] and <> 
  - we passed the day in silence.
  - -> END 
+
+patterns
+ hasCentralPackageRepository? false
+
 description Ink is inkle's scripting language for writing interactive narrative, both for text-centric games as well as more graphical games that contain highly branching stories.
+
+githubRepo https://github.com/inkle/ink
+ firstCommit 2015
+ stars 1572
+ forks 189
+ subscribers 106
+ created 2016
+ updated 2018
+ description inkle's open source scripting language for writing interactive narrative.
+ issues 191
+
+website http://www.inklestudios.com/ink
+status active
+
+twitter inklestudios
+
+fileType text
+wordRank 3033
+isOpenSource true

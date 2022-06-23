@@ -1,5 +1,43 @@
+title Yorick
 appeared 1996
 type pl
 creators David H. Munro
+
+patterns
+ hasCentralPackageRepository? false
+
+wikipedia https://en.wikipedia.org/wiki/Yorick_(programming_language)
+ example
+  > x=[[1,2,3],[4,5,6]]
+  > x
+  [[1,2,3],[4,5,6]]
+  > y=[[7,8],[9,10],[11,12]]
+  > x(,+)*y(+,)
+  [[39,54,69],[49,68,87],[59,82,105]]
+  > x(+,)*y(,+)
+  [[58,139],[64,154]]
+ related c fortran perl-data-language
+ summary Yorick is an interpreted programming language designed for numerics, graph plotting, and steering large scientific simulation codes. It is quite fast due to array syntax, and extensible via C or Fortran routines. It was created in 1996 by David H. Munro of Lawrence Livermore National Laboratory.
+ pageId 175271
+ dailyPageViews 14
+ created 2003
+ backlinksCount 10
+ revisionCount 79
+ appeared 1996
+ fileExtensions i
+
 website http://yorick.github.com
-wikipedia Yorick_(programming_language)
+status active
+fileExtensions i
+fileType text
+isOpenSource true
+
+tiobe Yorick
+
+hopl 2637
+
+quineRelay Yorick
+
+ubuntuPackage yorick
+
+rosettaCode Yorick

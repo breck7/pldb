@@ -1,3 +1,19 @@
+title Executable UML
 appeared 2002
 type pl
-wikipedia Executable_UML
+
+patterns
+ hasCentralPackageRepository? false
+
+wikipedia https://en.wikipedia.org/wiki/Executable_UML
+ related uml mysql isbn
+ summary Executable UML (xtUML or xUML) is both a software development method and a highly abstract software language. It was described for the first time in 2002 in the book "Executable UML: A Foundation for Model-Driven Architecture". The language "combines a subset of the UML (Unified Modeling Language) graphical notation with executable semantics and timing rules." The Executable UML method is the successor to the Shlaer–Mellor method. Executable UML models "can be run, tested, debugged, and measured for performance.", and can be compiled into a less abstract programming language to target a specific implementation. Executable UML supports model-driven architecture (MDA) through specification of platform-independent models, and the compilation of the platform-independent models into platform-specific models.
+ pageId 4849249
+ dailyPageViews 67
+ created 2006
+ backlinksCount 256
+ revisionCount 328
+ appeared 2002
+
+status historical
+fileType text

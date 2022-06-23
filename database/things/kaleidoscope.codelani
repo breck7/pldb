@@ -1,3 +1,28 @@
+title Kaleidoscope programming language
 appeared 1994
 type pl
-wikipedia Kaleidoscope_(programming_language)
+
+patterns
+ hasCentralPackageRepository? false
+
+wikipedia https://en.wikipedia.org/wiki/Kaleidoscope_(programming_language)
+ example
+  always: temperature = mercury.height / scale;
+  always: white rectangle( thermometer );
+  always: grey rectangle( mercury );
+  always: display number( temperature );
+  while mouse.button = down do
+   mercury.top = mouse.location.y;
+  end while;
+ summary The Kaleidoscope programming language is a constraint programming language embedding constraints into an imperative object-oriented language.  It adds keywords always, once, and assert..during (formerly while..assert) to make statements about relational invariants. Objects have constraint constructors, which are not methods, to enforce the meanings of user-defined datatypes. There are three versions of Kaleidoscope which show an evolution from declarative to an increasingly imperative style. Differences between them are as follows.
+ pageId 4400159
+ created 2006
+ backlinksCount 6
+ revisionCount 19
+ dailyPageViews 8
+ appeared 1994
+
+status historical
+fileType text
+
+hopl 2143

@@ -1,3 +1,20 @@
+title MyBB
 appeared 2002
 type pl
-wikipedia MyBB
+
+patterns
+ hasCentralPackageRepository? false
+
+wikipedia https://en.wikipedia.org/wiki/MyBB
+ related php mysql postgresql sqlite subversion javascript jquery twig wordpress xml
+ summary MyBB, formerly MyBBoard and originally MyBulletinBoard, is a free and open-source forum software developed by the MyBB Group. It is written in PHP, supports MySQL, PostgreSQL and SQLite as database systems and, in addition, has database failover support. It is available in multiple languages and is licensed under the LGPL.
+ backlinksCount 60
+ pageId 34093886
+ dailyPageViews 46
+ created 2011
+ appeared 2002
+
+status historical
+isOpenSource true
+
+hopl 8605

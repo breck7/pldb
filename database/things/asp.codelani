@@ -1,3 +1,54 @@
+title Active Server Pages
 appeared 1996
 type template
-wikipedia Active_Server_Pages
+
+patterns
+ hasCentralPackageRepository? false
+
+wikipedia https://en.wikipedia.org/wiki/Active_Server_Pages
+ example
+  <%
+  On Error Resume Next
+  
+  Response.Write 1 / 0 ' Division by zero
+  
+  If Err.Number <> 0 Then
+       Response.Write "Error Code: " & Server.HTMLEncode(Err.Number) & "<br />"
+       Response.Write "Error Source: " & Server.HTMLEncode(Err.Source) & "<br />"
+       Response.Write "Error Description: " & Server.HTMLEncode(Err.Description) & "<br />"
+       Err.Clear 
+  End If 
+  %>
+ related vbscript jscript html csharp java-server-pages php
+ summary Active Server Pages (ASP), later known as Classic ASP or ASP Classic, is Microsoft's first server-side script engine for dynamically generated web pages. ASP.NET, first released in January 2002, has superseded ASP.
+ pageId 2883
+ dailyPageViews 329
+ created 2001
+ backlinksCount 817
+ revisionCount 1093
+ appeared 2000
+
+githubLanguage ASP
+ fileExtensions asp asax ascx ashx asmx aspx axd
+ trendingProjects
+  author name avatar url language languageColor stars forks currentPeriodStars description
+  hq450 fancyss https://github.com/hq450.png https://github.com/hq450/fancyss ASP #6a40fd 4177 1188 357 "fancyss is a project providing tools to across the GFW on asuswrt/merlin based router."
+  koolshare armsoft https://github.com/koolshare.png https://github.com/koolshare/armsoft ASP #6a40fd 107 23 40 "梅林384软件中心 for armv7l架构机型"
+ trendingProjectsCount 3
+
+linguistGrammarRepo https://github.com/textmate/asp.tmbundle
+ firstCommit 2005
+ lastCommit 2015
+ committerCount 4
+ commitCount 39
+
+standsFor Active Server Pages
+status active
+country US
+fileType text
+wordRank 4194
+isOpenSource false
+
+hopl 5356
+
+rosettaCode ASP

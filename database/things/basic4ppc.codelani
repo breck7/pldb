@@ -1,3 +1,27 @@
+title Basic4ppc
 appeared 2005
 type pl
-wikipedia Basic4ppc
+
+patterns
+ hasCentralPackageRepository? false
+
+wikipedia https://en.wikipedia.org/wiki/Basic4ppc
+ example
+  Sub App_Start
+  numA = "Five "
+  numB = "5"
+  numC = 6
+  
+  SUM1 = numA & numB 'remark: = "Five 5"
+  SUM2 = numB + numC 'remark: = 11
+  End Sub
+ related visual-basic basic xml
+ summary Basic4ppc (pronounced "Basic for PPC") is a programming language for Pocket PC handheld computers running Windows Mobile operating system, by Anywhere Software. The language is based on a BASIC-like syntax, taking advantage of Microsoft's .NET technology, to allow additional libraries, graphical user interface design of windows forms, rapid application development (RAD), and .NET framework compatible compilation. The language implements a unique way of adding objects to a program without being object-oriented. Its advantages are simplicity, development pace and the integration with .NET framework. A special version of the integrated development environment (IDE) allows developing straight onto the Windows Mobile device. With the demise of Windows Mobile operating system and the devices running it Basic4PPC came to the end of its life in about 2012. For owners of Basic4PPC it remains a useful Windows-desktop BASIC compiler as it runs code directly in the Windows environment and it can compile a project to a Windows 'exe' file for use as a Windows program.
+ created 2009
+ backlinksCount 88
+ pageId 23497750
+ revisionCount 63
+ dailyPageViews 11
+ appeared 2005
+
+status historical

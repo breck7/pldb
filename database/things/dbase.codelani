@@ -1,4 +1,29 @@
+title DBase
 appeared 1979
 type application
+
+patterns
+ hasCentralPackageRepository? false
+
+wikipedia https://en.wikipedia.org/wiki/DBase
+ example
+  i = 2
+   myMacro = "i + 10"
+   i = &myMacro
+   * comment: i now has the value 12
+ related c clipper foxpro xbase sql jet-propulsion-laboratory-display-information-system assembly-language shapefile excel-app emacs-editor visual-foxpro
+ summary dBase (also stylized dBASE) was one of the first database management systems for microcomputers, and the most successful in its day. The dBase system includes the core database engine, a query system, a forms engine, and a programming language that ties all of these components together. dBase's underlying file format, the .dbf file, is widely used in applications needing a simple format to store structured data. dBase was originally published by Ashton-Tate for microcomputer operating system CP/M in 1980, and later ported to Apple II and IBM PC computers running DOS. On the PC platform, in particular, dBase became one of the best-selling software titles for a number of years. A major upgrade was released as dBase III, and ported to a wider variety of platforms, adding UNIX, and VMS. By the mid-1980s, Ashton-Tate was one of the "big three" software publishers in the early business software market, the others being Lotus Development and WordPerfect. Starting in the mid-1980s, several companies produced their own variations on the dBase product and especially the dBase programming language. These included FoxBASE+ (later renamed FoxPro), Clipper, and other so-called xBase products. Many of these were technically stronger than dBase, but could not push it aside in the market. This changed with the disastrous introduction of dBase IV, whose design and stability were so poor that many users switched to other products. At the same time, there was growing use of IBM-invented SQL (Structured Query Language) in database products. Another factor was user adoption of Microsoft Windows on desktop computers. The shift toward SQL and Windows put pressure on the makers of xBase products to invest in major redesign to provide new capabilities. In spite of growing pressure to evolve, in the early 1990s xBase products constituted the leading database platform for implementing business applications. The size and impact of the xBase market did not go unnoticed, and within one year, the three top xBase firms were acquired by larger software companies. Borland purchased Ashton-Tate, Microsoft bought Fox Software, and Computer Associates acquired Nantucket. However, by the following decade most of the original xBase products had faded from prominence and several disappeared. Products known as dBase still exist, owned by dBase LLC.
+ pageId 209537
+ dailyPageViews 205
+ created 2003
+ backlinksCount 163
+ revisionCount 669
+ appeared 1979
+
 website http://www.dbase.com/
-wikipedia DBase
+status historical
+
+twitter dbaseworld
+
+fileType text
+isOpenSource false

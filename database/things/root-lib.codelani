@@ -1,7 +1,7 @@
+title ROOT
 appeared 1994
 type library
-website https://root.cern.ch/
-wikipedia ROOT
+
 example
  #include "Riostream.h"
  void basic() {
@@ -29,4 +29,24 @@ example
     in.close();
     f->Write();
  }
+
+patterns
+ hasCentralPackageRepository? false
+
 description A modular scientific software toolkit. It provides all the functionalities needed to deal with big data processing, statistical analysis, visualisation and storage. It is mainly written in C++ but integrated with other languages such as Python and R.
+
+wikipedia https://en.wikipedia.org/wiki/ROOT
+ related linux solaris ia-32 postscript svg latex python matlab matplotlib scipy numpy perl-data-language perl r igor-pro
+ summary ROOT is an object-oriented program and library developed by CERN. It was originally designed for particle physics data analysis and contains several features specific to this field, but it is also used in other applications such as astronomy and data mining.  Release 6.14.04 as of 2018-08-23
+ pageId 1048909
+ created 2004
+ backlinksCount 63
+ revisionCount 407
+ dailyPageViews 67
+ appeared 2018
+
+website https://root.cern.ch/
+status historical
+fileType text
+isOpenSource true
+writtenIn cpp

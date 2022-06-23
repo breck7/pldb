@@ -1,9 +1,18 @@
+title toy-lang
 appeared 2018
 type pl
-github https://github.com/Ratstail91/Toy
+
 example
  if (1 < 2) {
   print "this will print to the console";
  } else {
   print "this will not";
  }
+
+githubRepo https://github.com/Ratstail91/Toy
+ firstCommit 2018
+ stars 12
+ subscribers 1
+ created 2018
+ updated 2019
+ description A toy programming language.

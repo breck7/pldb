@@ -1,4 +1,20 @@
+title Eurisko
 appeared 1978
 type pl
-wikipedia Eurisko
+
+patterns
+ hasCentralPackageRepository? false
+
+wikipedia https://en.wikipedia.org/wiki/Eurisko
+ related doi isbn
+ summary Eurisko (Gr., I discover) is a discovery system written by Douglas Lenat in RLL-1, a representation language itself written in the Lisp programming language. A sequel to Automated Mathematician, it consists of heuristics, i.e. rules of thumb, including heuristics describing how to use and change its own heuristics. Lenat was frustrated by Automated Mathematician's constraint to a single domain and so developed Eurisko; his frustration with the effort of encoding domain knowledge for Eurisko led to Lenat's subsequent (and, as of  2014, continuing) development of Cyc. Lenat envisions ultimately coupling the Cyc knowledgebase with the Eurisko discovery engine.
+ backlinksCount 60
+ pageId 463838
+ dailyPageViews 26
+ created 2004
+ appeared 2014
+
 reference https://semanticscholar.org/paper/4e047dd2a91dd7d9342a819b91722c2148afcab5
+status historical
+
+hopl 806

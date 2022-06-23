@@ -1,5 +1,62 @@
+title Pan
 appeared 2011
 type pl
+
+patterns
+ hasCentralPackageRepository? false
+
+wikipedia https://en.wikipedia.org/wiki/Pan_(programming_language)
+ example
+  [ object | declaration | unique | structure ] template template-name;
+  [ statement … ]
+ related java
+ summary The pan configuration language allows the definition of machine configuration information and an associated schema with a simple, human-accessible syntax. A pan language compiler transforms the configuration information contained within a set of pan templates to a machine-friendly XML or JSON format. The pan language is used within the Quattor toolkit to define the desired configuration for one or more machines. The language is primarily a declarative language where elements in a hierarchical tree are set to particular values. The pan syntax is human-friendly and fairly simple, yet allows system administrators to simultaneously set configuration values, define an overall configuration schema, and validate the final configuration against the schema.
+ pageId 33160613
+ created 2011
+ backlinksCount 5
+ revisionCount 27
+ dailyPageViews 4
+ fileExtensions pan tpl
+
+githubLanguage Pan
+ fileExtensions pan
+ trendingProjectsCount 0
+
+githubRepo https://github.com/quattor/pan
+ firstCommit 2011
+ stars 11
+ forks 16
+ subscribers 24
+ created 2012
+ updated 2018
+ description Pan Language Compiler and Tools
+ issues 64
+
+linguistGrammarRepo https://github.com/quattor/language-pan
+ firstCommit 2013
+ lastCommit 2018
+ committerCount 17
+ commitCount 117
+ sampleCount 18
+ example
+  unique template site/one/onevm;
+  
+  include 'components/chkconfig/config';
+  
+  # set opennebula map
+  include 'quattor/aii/opennebula/schema';
+  bind "/system/opennebula" = opennebula_vmtemplate;
+  
+  include 'site/config-vm';
+  
+  include 'quattor/aii/opennebula/default';
+  
+  "/software/packages/{acpid}" = dict();
+  "/software/components/chkconfig/service/acpid" = dict('on', '', 'startstop', true);
+  
+
 website http://www.quattor.org/
-github https://github.com/quattor/pan
-wikipedia Pan_(programming_language)
+status active
+fileType text
+wordRank 3457
+isOpenSource true

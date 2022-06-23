@@ -1,10 +1,13 @@
+title dio
 appeared 2020
 type pl
-website https://diolang.com/
+
 example
  for v in [5, 8, 32, 9, 14]
  {
      //itoa is defined as itoa(u64 val) u8[23]
      puts(itoa(v))
  }
+
+website https://diolang.com/
 reference https://www.reddit.com/r/ProgrammingLanguages/comments/eiuadc/dio/

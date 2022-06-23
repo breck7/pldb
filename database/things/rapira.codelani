@@ -1,6 +1,43 @@
+title Rapira
 appeared 1987
 type pl
+
+patterns
+ hasCentralPackageRepository? false
+
+wikipedia https://en.wikipedia.org/wiki/Rapira
+ example
+  proc start()
+       output: 'Hello, world!!!';
+  end proc
+ related pop-2 setl algol
+ summary Rapira is also a name for the T-12 antitank gun. Rapira (Russian: Рапира, rapier) is an educational procedural programming language developed in the Soviet Union and implemented on Agat computer, PDP-11 clones (Electronika, DVK, BK series) and Intel-8080/Z80 clones (Korvet). It was an interpreted language with dynamic type system and high level constructions. The language originally had a Russian-based set of keywords, but English and Moldovan were added later. Also, it was more elegant and easier to use than existing Pascal implementations of the time. Rapira was used in teaching computer programming in Soviet schools. The programming environment included a text editor and an integrated debugger. Sample program:  ПРОЦ СТАРТ()     ВЫВОД: 'Привет, мир!!!' КОН ПРОЦ  The same, but using the English lexics [sic, from the article referenced below]:  proc start()      output: 'Hello, world!!!'; end proc  Rapira's ideology was based on such languages as POP-2 and SETL, with strong influences from ALGOL.
+ pageId 146951
+ dailyPageViews 19
+ created 2002
+ backlinksCount 10
+ revisionCount 59
+
+githubRepo https://github.com/freeduke33/rerap2
+ stars 4
+ forks 0
+ subscribers 3
+ created 2015
+ updated 2017
+ firstCommit 2015
+ description ReRap2 is an interpreter for the Russian and English dialects of the Rapira programming language.
+ issues 0
+
 website http://freeduke33.github.io/rerap2
-github https://github.com/freeduke33/rerap2
-wikipedia Rapira
 reference http://ershov.iis.nsk.su/ru/node/772586
+status active
+
+tryItOnline rapira
+
+country RU
+fileType text
+isOpenSource true
+
+hopl 5224
+
+rosettaCode Rapira

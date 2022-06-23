@@ -1,3 +1,30 @@
+title Magik
 appeared 1989
 type pl
-wikipedia Magik_(programming_language)
+
+patterns
+ hasCentralPackageRepository? false
+
+wikipedia https://en.wikipedia.org/wiki/Magik_(programming_language)
+ example
+  my_procedure << _proc @my_procedure(a, b, c)
+      _return a + b + c
+    _endproc
+  
+    x << my_procedure(1, 2, 3) # x = 6
+ related jvm smalltalk unix linux c csharp java
+ summary Magik is an object-oriented programming language that supports multiple inheritance, polymorphism and is dynamically typed. It was designed implemented in 1989 by Arthur Chance, of Smallworld Systems Ltd, as part of Smallworld Geographical Information System (GIS). Following Smallworld's acquisition in 2000, Magik is now is provided by GE Energy, still as part of its Smallworld technology platform. Magik (Inspirational Magik) was originally introduced in 1990 and has been improved and updated over the years. Its current version is 5.1. In July 2012, Magik developers announced that they were in the process of porting Magik language on the Java virtual machine. The successful porting was confirmed by Oracle Corporation in November of the same year.
+ pageId 2988758
+ dailyPageViews 29
+ created 2005
+ backlinksCount 12
+ revisionCount 147
+ appeared 1989
+
+status active
+country GB
+fileType text
+
+tiobe Magik
+
+hopl 3912

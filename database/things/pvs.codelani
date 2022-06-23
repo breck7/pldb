@@ -1,4 +1,19 @@
+title Prototype Verification System
 appeared 1992
 type pl
-wikipedia Prototype_Verification_System
+
+patterns
+ hasCentralPackageRepository? false
+
+wikipedia https://en.wikipedia.org/wiki/Prototype_Verification_System
+ summary The Prototype Verification System (PVS) is a specification language integrated with support tools and an automated theorem prover, developed at the Computer Science Laboratory of SRI International in Menlo Park, California.  PVS is based on a kernel consisting of an extension of Church's theory of types with dependent types, and is fundamentally a classical typed higher-order logic. The base types include uninterpreted types that may be introduced by the user, and built-in types such as the booleans, integers, reals, and the ordinals.  Type-constructors include functions, sets, tuples, records, enumerations, and abstract data types. Predicate subtypes and dependent types can be used to introduce constraints; these constrained types may incur proof obligations (called type-correctness conditions or TCCs) during typechecking.  PVS specifications are organized into parameterized theories. The system is implemented in Common Lisp, and is released under the GNU General Public License (GPL).
+ backlinksCount 24
+ pageId 1848947
+ dailyPageViews 9
+ appeared 1992
+
 reference https://semanticscholar.org/paper/50597508a9e76ed5cef6515b6bb107c8988c1e67
+standsFor Prototype Verification System
+status historical
+
+hopl 2724

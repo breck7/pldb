@@ -1,4 +1,74 @@
+title HLSL
 appeared 2002
 type pl
-wikipedia High-Level_Shading_Language
+
+patterns
+ hasCentralPackageRepository? false
+
+wikipedia https://en.wikipedia.org/wiki/High-Level_Shading_Language
+ related opengl cg
+ summary The High-Level Shader Language or High-Level Shading Language (HLSL) is a proprietary shading language developed by Microsoft for the Direct3D 9 API to augment the shader assembly language, and went on to become the required shading language for the unified shader model of Direct3D 10 and higher. HLSL is analogous to the GLSL shading language used with the OpenGL standard. It is very similar to the Nvidia Cg shading language, as it was developed alongside it.  HLSL shaders can enable profound speed and detail increases as well as many special effects in both 2d and 3d computer graphics.HLSL programs come in five forms: pixel shaders (fragment in GLSL), vertex shaders, geometry shaders, compute shaders and tessellation shaders (Hull and Domain shaders). A vertex shader is executed for each vertex that is submitted by the application, and is primarily responsible for transforming the vertex from object space to view space, generating texture coordinates, and calculating lighting coefficients such as the vertex's tangent, binormal and normal vectors. When a group of vertices (normally 3, to form a triangle) come through the vertex shader, their output position is interpolated to form pixels within its area; this process is known as rasterisation. Each of these pixels comes through the pixel shader, whereby the resultant screen colour is calculated. Optionally, an application using a Direct3D 10/11/12 interface and Direct3D 10/11/12 hardware may also specify a geometry shader. This shader takes as its input some vertices of a primitive (triangle/line/point) and uses this data to generate/degenerate (or tessellate) additional primitives or to change the type of primitives, which are each then sent to the rasterizer. D3D11.3 and D3D12 introduced Shader Model 5.1 and later 6.0.
+ backlinksCount 70
+ pageId 2338657
+ created 2005
+ revisionCount 292
+ dailyPageViews 84
+ appeared 2000
+
+githubLanguage HLSL
+ fileExtensions hlsl cginc fx fxh hlsli
+ trendingProjectsCount 0
+
+linguistGrammarRepo https://github.com/tgjones/shaders-tmLanguage
+ firstCommit 2017
+ lastCommit 2017
+ committerCount 2
+ commitCount 5
+ sampleCount 5
+ example
+  float alpha = 1.f;
+  
+  texture tex;
+  sampler tex_sampler = sampler_state
+  {
+  	Texture = (tex);
+  	MipFilter = LINEAR;
+  	MinFilter = LINEAR;
+  	MagFilter = LINEAR;
+  	
+  	AddressU = WRAP;
+  	AddressV = WRAP;
+  };
+  
+  struct VS_OUTPUT
+  {
+  	float4 pos  : POSITION;
+  	float2 tex  : TEXCOORD1;
+  };
+  
+  VS_OUTPUT vertex(float4 ipos : POSITION, float2 tex  : TEXCOORD0)
+  {
+  	VS_OUTPUT Out;
+  	Out.pos = ipos;
+  	Out.tex = tex * 2;
+  	return Out;
+  }
+  
+  float4 pixel(VS_OUTPUT In) : COLOR
+  {
+  	return tex2D(tex_sampler, In.tex) * alpha;
+  }
+  
+  technique blur_ps_vs_2_0
+  {
+  	pass P0
+  	{
+  		VertexShader = compile vs_2_0 vertex();
+  		PixelShader  = compile ps_2_0 pixel();
+  	}
+  }
+  
+
 reference https://docs.microsoft.com/en-us/windows/desktop/direct3dhlsl/dx-graphics-hlsl
+status active
+fileType text

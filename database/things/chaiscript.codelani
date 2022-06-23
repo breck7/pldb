@@ -1,7 +1,7 @@
+title chaiscript
 appeared 2009
 type pl
-website http://chaiscript.com/
-github https://github.com/ChaiScript/ChaiScript
+
 example
  #include <chaiscript/chaiscript.hpp>
  std::string helloWorld(const std::string &t_name) {
@@ -14,3 +14,15 @@ example
      puts(helloWorld("Bob"));
    )");
  }
+
+githubRepo https://github.com/ChaiScript/ChaiScript
+ firstCommit 2009
+ stars 1675
+ forks 225
+ subscribers 112
+ created 2011
+ updated 2019
+ description Embedded Scripting Language Designed for C++
+ issues 79
+
+website http://chaiscript.com/

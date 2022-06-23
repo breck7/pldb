@@ -1,3 +1,29 @@
+title Algol
 appeared 1958
 type pl
-wikipedia ALGOL
+
+patterns
+ hasCentralPackageRepository? false
+
+wikipedia https://en.wikipedia.org/wiki/ALGOL
+ example
+  'BEGIN'
+       WRITE TEXT('('HELLO%WORLD')');
+    'END'
+ related pl-i simula bcpl b pascal c lisp cobol algol-58 algol-60 algol-68 algol-w scheme ml elliott-algol jovial ada act-iii s-algol espol newp ascii alcor unicode atlas-autocode coral edinburgh-imp iswim neliac
+ summary ALGOL (short for Algorithmic Language) is a family of imperative computer programming languages, originally developed in the mid-1950s, which greatly influenced many other languages and was the standard method for algorithm description used by the ACM in textbooks and academic sources for more than thirty years. In the sense that the syntax of most modern languages is "Algol-like", it was arguably the most influential of the four high-level programming languages among which it was roughly contemporary: FORTRAN, Lisp, and COBOL. It was designed to avoid some of the perceived problems with FORTRAN and eventually gave rise to many other programming languages, including PL/I, Simula, BCPL, B, Pascal, and C. ALGOL introduced code blocks and the begin…end pairs for delimiting them. It was also the first language implementing nested function definitions with lexical scope. Moreover, it was the first programming language which gave detailed attention to formal language definition and through the Algol 60 Report introduced Backus–Naur form, a principal formal grammar notation for language design. There were three major specifications, named after the year they were first published: ALGOL 58 – originally proposed to be called IAL, for International Algebraic Language. ALGOL 60 – first implemented as X1 ALGOL 60 in mid-1960. Revised 1963. ALGOL 68 – introduced new elements including flexible arrays, slices, parallelism, operator identification. Revised 1973. Niklaus Wirth based his own ALGOL W on ALGOL 60 before developing Pascal. ALGOL-W was based on the proposal for the next generation ALGOL, but the ALGOL 68 committee decided on a design that was more complex and advanced, rather than a cleaned, simplified ALGOL 60. ALGOL 68 is substantially different from ALGOL 60 and was not well received, so that in general "Algol" means ALGOL 60 and dialects thereof.
+ pageId 1453
+ dailyPageViews 323
+ created 2001
+ backlinksCount 453
+ revisionCount 865
+ appeared 1958
+
+status active
+fileType text
+
+tiobe Algol
+
+hopl 2966
+
+rosettaCode ALGOL

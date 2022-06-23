@@ -1,3 +1,29 @@
+title Simple Mail Transfer Protocol
 appeared 1982
 type protocol
-wikipedia Simple_Mail_Transfer_Protocol
+
+patterns
+ hasCentralPackageRepository? false
+
+wikipedia https://en.wikipedia.org/wiki/Simple_Mail_Transfer_Protocol
+ example
+  S: 220 smtp2.example.com ESMTP Postfix
+  C: EHLO bob.example.com
+  S: 250-smtp2.example.com Hello bob.example.org [192.0.2.201]
+  S: 250-SIZE 14680064
+  S: 250-PIPELINING
+  S: 250 HELP
+ related ftp http tls tcp udp ascii mime utf-8 mbox doi
+ summary Simple Mail Transfer Protocol (SMTP) is an Internet standard for electronic mail (email) transmission. First defined by RFC 821 in 1982, it was last updated in 2008 with Extended SMTP additions by RFC 5321, which is the protocol in widespread use today. Although electronic mail servers and other mail transfer agents use SMTP to send and receive mail messages, user-level client mail applications typically use SMTP only for sending messages to a mail server for relaying. For retrieving messages, client applications usually use either IMAP or POP3. SMTP communication between mail servers uses TCP port 25. Mail clients on the other hand, often submit the outgoing emails to a mail server on port 587. Despite being deprecated, mail providers sometimes still permit the use of nonstandard port 465 for this purpose. SMTP connections secured by TLS, known as SMTPS, can be made using STARTTLS. Although proprietary systems (such as Microsoft Exchange and IBM Notes) and webmail systems (such as Outlook.com, Gmail and Yahoo! Mail) use their own non-standard protocols to access mail box accounts on their own mail servers, all use SMTP when sending or receiving email from outside their own systems.
+ pageId 27675
+ dailyPageViews 2662
+ created 2001
+ backlinksCount 794
+ revisionCount 1436
+ appeared 1982
+
+aka smtp
+standsFor Simple Mail Transfer Protocol
+status historical
+fileType na
+wordRank 9812

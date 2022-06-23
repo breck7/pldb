@@ -1,3 +1,30 @@
+title BBCode
 appeared 1998
 type textMarkup
-wikipedia BBCode
+
+patterns
+ hasCentralPackageRepository? false
+
+wikipedia https://en.wikipedia.org/wiki/BBCode
+ example
+  [table]
+  [tr]
+    [td]table cell 1[/td]
+    [td]table cell 2[/td]
+  [/tr]
+  [tr]
+    [td]table cell 3[/td]
+    [td]table cell 4[/td]
+  [/tr]
+  [/table]
+ related mediawiki html php regex
+ summary BBCode or Bulletin Board Code is a lightweight markup language used to format posts in many message boards and on sites based on MediaWiki. The available tags are usually indicated by square brackets ([ ]) surrounding a keyword, and they are parsed by the message board system before being translated into a markup language that web browsers understand—usually HTML or XHTML.BBCode was introduced in 1998 by the messageboard software Ultimate Bulletin Board (UBB) implemented in Perl. In 2000 BBCode was used in phpBB—an internet forum system written in PHP and also XMB forum. vBulletin also uses BBCode.
+ pageId 689527
+ created 2004
+ backlinksCount 134
+ revisionCount 794
+ dailyPageViews 358
+ appeared 1998
+
+status historical
+fileType text

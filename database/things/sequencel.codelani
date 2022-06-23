@@ -1,3 +1,25 @@
+title SequenceL
 appeared 1989
 type pl
-wikipedia SequenceL
+
+patterns
+ hasCentralPackageRepository? false
+
+wikipedia https://en.wikipedia.org/wiki/SequenceL
+ example
+  cmd:>prime(100...200)
+     [101,103,107,109,113,127,131,137,139,149,151,157,163,167,173,179,181,191,193,197,199]
+ related x86-isa arm linux opencl c csharp fortran java python lisp haskell pascal eclipse-editor
+ summary SequenceL is a general purpose functional programming language and auto-parallelizing (Parallel computing) compiler and tool set, whose primary design objectives are performance on multi-core processor hardware, ease of programming, platform portability/optimization, and code clarity and readability.  Its main advantage is that it can be used to write straightforward code that automatically takes full advantage of all the processing power available, without programmers needing to be concerned with identifying parallelisms, specifying vectorization, avoiding race conditions, and other challenges of manual directive-based programming approaches such as OpenMP. Programs written in SequenceL can be compiled to multithreaded code that runs in parallel, with no explicit indications from a programmer of how or what to parallelize. As of  2015, versions of the SequenceL compiler generate parallel code in C++ and OpenCL, which allows it to work with most popular programming languages, including C, C++, C#, Fortran, Java, and Python.  A platform-specific runtime manages the threads safely, automatically providing parallel performance according to the number of cores available, currently supporting x86, OpenPOWER/POWER8, and ARM platforms.
+ pageId 37895661
+ created 2012
+ backlinksCount 43
+ revisionCount 191
+ dailyPageViews 22
+ appeared 1989
+
+status historical
+fileType text
+isOpenSource false
+
+rosettaCode SequenceL

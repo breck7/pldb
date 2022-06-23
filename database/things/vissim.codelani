@@ -1,3 +1,19 @@
+title VisSim
 appeared 1989
 type pl
-wikipedia VisSim
+
+patterns
+ hasCentralPackageRepository? false
+
+wikipedia https://en.wikipedia.org/wiki/VisSim
+ related c udp matlab simulink
+ summary VisSim is a visual block diagram program for simulation of dynamical systems and model based design of embedded systems, with its own visual language. It is developed by Visual Solutions of Westford, Massachusetts. Visual Solutions, has been acquired by Altair in August 2015 and its products have been rebranded as solidThinking Embed as a part of solidThinking's Model Based Development Suite. With solidThinking Embed, you can develop virtual prototypes of dynamic systems. Models are built by sliding blocks into the work area and wiring them together with the mouse. Embed automatically converts the control diagrams into C-code ready to be downloaded to the target hardware. VisSim or now solidThinking Embed uses a graphical data flow paradigm to implement dynamic systems based on differential equations. Version 8 adds interactive UML OMG 2 compliant state chart graphs that are placed in VisSim diagrams. This allows the modeling of state based systems such as startup sequencing of process plants or serial protocol decoding.
+ created 2005
+ backlinksCount 121
+ pageId 3545503
+ revisionCount 155
+ dailyPageViews 35
+ appeared 1989
+
+status historical
+isOpenSource false

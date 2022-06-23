@@ -1,4 +1,35 @@
+title Max
 appeared 1990
 type jsonFormat
+
+patterns
+ hasCentralPackageRepository? false
+
+wikipedia https://en.wikipedia.org/wiki/Max_(software)
+ related c linux puredata opengl csound supercollider java javascript
+ summary Max, also known as Max/MSP/Jitter, is a visual programming language for music and multimedia developed and maintained by San Francisco-based software company Cycling '74. Over its more than thirty-year history, it has been used by composers, performers, software designers, researchers, and artists to create recordings, performances, and installations.The Max program is modular, with most routines existing as shared libraries. An application programming interface (API) allows third-party development of new routines (named external objects). Thus, Max has a large user base of programmers unaffiliated with Cycling '74 who enhance the software with commercial and non-commercial extensions to the program. Because of this extensible design, which simultaneously represents both the program's structure and its graphical user interface (GUI), Max has been described as the lingua franca for developing interactive music performance software.
+ pageId 479795
+ created 2004
+ backlinksCount 171
+ revisionCount 756
+ dailyPageViews 205
+ appeared 1990
+
+githubLanguage Max
+ fileExtensions maxpat maxhelp maxproj mxt pat
+ trendingProjectsCount 0
+
+linguistGrammarRepo https://github.com/textmate/json.tmbundle
+ firstCommit 2007
+ lastCommit 2016
+ committerCount 11
+ commitCount 21
+ sampleCount 3
+ example
+  max v2;#N vpatcher 109 76 569 534;#P toggle 31 168 21 0;#P button 360 299 15 0;#P button 322 299 15 0;#P button 284 299 15 0;#P button 246 299 15 0;#P window setfont Verdana 12.;#P window linecount 1;#P newex 246 168 43 472055820 r jojo;#B color 5;#P newex 31 386 45 472055820 s jojo;#B color 5;#P newex 246 254 162 472055820 route 0 1 2 3;#P newex 31 338 88 472055820 append toto;#P newex 31 296 35 472055820 % 4;#N counter;#X flags 0 0;#P newobj 31 251 75 472055820 counter;#P newex 31 209 75 472055820 metro 250;#P newex 164 96 32 472055820 t 0;#P message 164 55 136 472055820 Goodbye World !;#P newex 31 96 32 472055820 t 1;#P message 31 55 113 472055820 Hello World !;#P connect 0 0 1 0;#P fasten 3 0 15 0 169 146 36 146;#P connect 1 0 15 0;#P connect 15 0 4 0;#P connect 4 0 5 0;#P connect 5 0 6 0;#P connect 6 0 7 0;#P connect 7 0 9 0;#P connect 2 0 3 0;#P connect 10 0 8 0;#P connect 8 0 11 0;#P connect 8 1 12 0;#P connect 8 2 13 0;#P connect 8 3 14 0;#P pop;
+
 website https://cycling74.com/products/max/
-wikipedia Max_(software)
+status active
+fileType text
+wordRank 1428
+isOpenSource false

@@ -1,7 +1,50 @@
+title EJS
 appeared 2010
 type template
-github https://github.com/tj/ejs
+
 example
  <% if (user) { %>
     <h2><%= user.name %></h2>
  <% } %>
+
+patterns
+ hasCentralPackageRepository? false
+
+githubLanguage EJS
+ fileExtensions ejs
+ trendingProjectsCount 0
+
+githubRepo https://github.com/tj/ejs
+ firstCommit 2010
+ stars 4038
+ forks 521
+ subscribers 156
+ created 2010
+ updated 2018
+ description Embedded JavaScript templates for node
+ issues 97
+
+linguistGrammarRepo https://github.com/gregory-m/ejs-tmbundle
+ firstCommit 2011
+ lastCommit 2016
+ committerCount 3
+ commitCount 5
+ sampleCount 2
+ example
+  <% include parts/depend %>
+  
+  <div class="row">
+    <% if (user.primaryAccount == "teacher") { %>
+      <% include teacher/sidebar %>
+      <% include teacher/dashboard %>
+    <% } else if (user.primaryAccount == "student") { %>
+      <% include student/sidebar %>
+      <% include student/dashboard %>
+    <% } else { %>
+      <center><h2>There seems to be a problem</h2></center>
+    <% } %>
+  </div>
+
+status active
+fileType text
+isOpenSource true

@@ -1,3 +1,48 @@
+title DNS Zone
 appeared 2001
 type application
-wikipedia Zone_file
+
+patterns
+ hasCentralPackageRepository? false
+
+wikipedia https://en.wikipedia.org/wiki/Zone_file
+ example
+  zone "0.0.127.in-addr.arpa"  IN { type master; file "r.local"; };
+ related smtp
+ summary A Domain Name System (DNS) zone file is a text file that describes a DNS zone. A DNS zone is a subset, often a single domain, of the hierarchical domain name structure of the DNS. The zone file contains mappings between domain names and IP addresses and other resources, organized in the form of text representations of resource records (RR). A zone file may be either a DNS master file, authoritatively describing a zone, or it may be used to list the contents of a DNS cache.
+ pageId 2775463
+ dailyPageViews 294
+ created 2005
+ backlinksCount 31
+ revisionCount 135
+ appeared 2001
+
+githubLanguage DNS Zone
+ fileExtensions zone arpa
+ trendingProjectsCount 0
+
+linguistGrammarRepo https://github.com/sixty4k/st2-zonefile
+ firstCommit 2012
+ lastCommit 2017
+ committerCount 6
+ commitCount 22
+ sampleCount 2
+ example
+  $ORIGIN 0.0.0.c.2.1.0.3.0.0.2.1.e.f.f.3.ip6.arpa.
+  $TTL     60
+  @ 	 IN SOA ns root (
+  	     2002042901 ; SERIAL
+  	     7200       ; REFRESH
+  	     600        ; RETRY
+  	     36000000   ; EXPIRE
+  	     120        ; MINIMUM
+  	     )
+  
+  	    NS	 ns.example.com.
+  
+  c.a.7.e.d.7.e.f.f.f.0.2.8.0.a.0 PTR  sip01.example.com.
+  
+
+status active
+fileType text
+wordRank 1757

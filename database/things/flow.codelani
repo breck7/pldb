@@ -1,7 +1,7 @@
+title flow
 appeared 2014
 type pl
-website https://flow.org/
-github https://github.com/facebook/flow
+
 example
  // @flow
  function square(n: number): number {
@@ -9,4 +9,20 @@ example
  }
  
  square("2"); // Error!
+
 description Flow Is A Static Type Checker For Javascript
+
+githubRepo https://github.com/facebook/flow
+ firstCommit 2014
+ stars 20201
+ forks 1716
+ subscribers 423
+ created 2014
+ updated 2019
+ description Adds static typing to JavaScript to improve developer productivity and code quality.
+ issues 2494
+
+website https://flow.org/
+status active
+
+twitter flowtype

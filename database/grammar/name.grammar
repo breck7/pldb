@@ -1,0 +1,18 @@
+aliasCell
+titleNode
+ int sortIndex 1000
+ description The official title of the language
+ extends abstractStringNode
+ crux title
+wordRankNode
+ description Some creators use a common English word as their language's name. For these we note how common the word is, where "the" is 1.
+ extends abstractIntNode
+ crux wordRank
+standsForNode
+ description If the language name is an abbreviation, what does/did it stand for?
+ extends abstractStringNode
+ crux standsFor
+akaNode
+ description Other names for the language.
+ extends abstractStringNode
+ crux aka

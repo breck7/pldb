@@ -1,3 +1,58 @@
+title MOO
 appeared 1993
 type pl
-wikipedia MOO_(programming_language)
+
+patterns
+ hasCentralPackageRepository? false
+ hasComments? true
+
+wikipedia https://en.wikipedia.org/wiki/MOO_(programming_language)
+ example
+  @program toy:wind
+   if (this.location == player)
+     if (this.wound < this.maximum)
+       this.wound = this.wound + 2;
+       player:tell("You wind up the ", this.name,".");
+       player.location:announce(player.name, " winds up the ", this.name,".");
+       if (this.wound >= this.maximum)
+         player:tell("The knob comes to a stop while winding.");
+       endif
+     else
+       player:tell("The ",this.name," is already fully wound.");
+     endif
+   else
+     player:tell("You have to be holding the ", this.name,".");
+   endif
+   .
+ related scheme smalltalk self c ada muf lpc pike linden-scripting-language
+ summary The MOO programming language is a relatively simple programming language used to support the MOO Server. It is dynamically typed and uses a prototype-based object-oriented system, with syntax roughly derived from the Algol school of programming languages.
+ pageId 20178
+ dailyPageViews 12
+ created 2001
+ backlinksCount 67
+ revisionCount 119
+ appeared 1993
+
+githubLanguage Moocode
+ fileExtensions moo
+ trendingProjectsCount 0
+
+helloWorldCollection MUD%2C object-oriented
+ "Hello World in MOO";
+ 
+ player.location:announce_all("Hello, world!");
+
+example
+ @program toy:wind
+ this.wound = this.wound + 2;
+ player:tell("You wind up the ", this.name,".");
+ player.location:announce(player.name, " winds up the ", this.name,".");
+ .
+ 
+standsFor MUD, object-oriented
+status active
+fileType text
+
+tiobe MOO
+
+rosettaCode MOO

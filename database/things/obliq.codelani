@@ -1,3 +1,24 @@
+title Obliq
 appeared 1993
 type pl
-wikipedia Obliq
+
+patterns
+ hasCentralPackageRepository? false
+ hasTypeInference? true
+
+wikipedia https://en.wikipedia.org/wiki/Obliq
+ related modula-3 self oberon smalltalk
+ summary Obliq is an interpreted, object-oriented programming language designed to make distributed, and locally multi-threaded, computation simple and easy for the programmer, while providing program safety and implicit type system. The interpreter is written in Modula-3, and provides Obliq with full access to Modula-3's network objects capabilities. A type inference algorithm for record concatenation, subtyping and recursive types has been developed for Obliq, more important it has been proved to be NP-complete  and its lowest complexity to be Ο(n3) or if under other modeling up to certain conditions down to Ο(n2)  and its best known implementation runs in Ο(n5). Obliq's syntax is very similar to Modula-3, the biggest difference being that Obliq has no need of explicit typed variables (i.e., a variable can hold any data type allowed by the type checker and if does not accepts one, i.e., a given expression execution error will be thrown) although explicit type declarations are allowed and ignored by the interpreter. The basic data types in the language include booleans, integers, reals, characters, strings, and arrays. Obliq supports the usual set of sequential control structures (conditional, iteration, and exception handling forms), as well as special control forms for concurrency (mutexes and guarded statements). Besides that Obliq's objects are able to be cloned and safely copied remotely by any machine in a distributed network object and it can be done in a transparent way. Obliq's large standard library provides strong support for mathematical operations, I/O, persistence, thread control, graphics, and animation. Distributed computation is object-based: objects hold a state, which is local to a particular process. Scope of objects and other variables is purely lexical. Objects can call methods of other objects, even if those objects are on another machine on the network. Obliq objects are simply collections of named fields (similar to slots in Self and Smalltalk), and support inheritance by delegation (like Self). The common uses of Obliq involve programming over networks, 3D animation, and distributed computation over Ethernet LAN as. Obliq is included free with the DEC Modula-3 distribution, but other free versions exist elsewhere including pre-compiled binaries for several operating systems.
+ pageId 602578
+ dailyPageViews 9
+ created 2004
+ backlinksCount 12
+ revisionCount 45
+ appeared 1992
+
+status historical
+fileType text
+
+hopl 1742
+
+corporateDevelopers DEC

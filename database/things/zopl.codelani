@@ -1,3 +1,23 @@
+title ZOPL
 appeared 1979
 type pl
-wikipedia ZOPL
+
+patterns
+ hasCentralPackageRepository? false
+
+wikipedia https://en.wikipedia.org/wiki/ZOPL
+ related c pascal unix
+ summary ZOPL is a programming language created by Geac Computer Corporation in the early 1970s for use on their mainframe computer systems used in libraries and banking institutions.  It had similarities to C and Pascal. ZOPL stood for "Version Z, Our Programming Language". ZOPL is still in use at CGI Group (formerly known as RealTime Datapro), who ported it to VAX/VMS and Unix in the 1980s, and to Windows in 1998.  It currently (2010) runs on Windows XP/2000/2003 and Red Hat Linux.  The RTM (formerly ZUG) language compiler and runtime framework are written in ZOPL. Outside of CGI, ZOPL has not been in general use since the late 1980s, although there is still one known working system where it is found embedded in programs written in the KARL programming language.
+ dailyPageViews 6
+ pageId 4426247
+ created 2006
+ backlinksCount 2
+ revisionCount 26
+ appeared 1998
+
+standsFor Version Z, Our Programming Language
+status historical
+country US
+fileType text
+
+hopl 2641

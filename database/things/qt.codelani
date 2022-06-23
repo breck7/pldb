@@ -1,4 +1,31 @@
+title Qt
 appeared 1995
 type framework
+
+patterns
+ hasCentralPackageRepository? false
+
+wikipedia https://en.wikipedia.org/wiki/Qt_(software)
+ related android ios linux sql xml json visual-studio-editor qml javascript sibelius-software qmake solaris opengl qtscript xpath xquery unix emacs-editor
+ summary Qt ( "cute") is a cross-platform application framework that is used for developing application software that can be run on various software and hardware platforms with little or no change in the underlying codebase, while still being a native application with native capabilities and speed. Qt is currently being developed both by The Qt Company, a publicly listed company, and the Qt Project under open-source governance, involving individual developers and firms working to advance Qt. Qt is available with both proprietary and open source GPL 2.0, GPL 3.0, and LGPL 3.0 licenses.
+ pageId 25204
+ dailyPageViews 790
+ created 2001
+ backlinksCount 734
+ revisionCount 2376
+ appeared 1990
+
+linguistGrammarRepo https://github.com/textmate/cpp-qt.tmbundle
+ firstCommit 2006
+ lastCommit 2014
+ committerCount 7
+ commitCount 50
+
 website https://www.qt.io/
-wikipedia Qt_(software)
+status active
+
+twitter qtproject
+
+fileType text
+wordRank 9774
+writtenIn cpp

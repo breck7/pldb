@@ -1,4 +1,29 @@
+title Alice
 appeared 2000
 type pl
+
+patterns
+ hasCentralPackageRepository? false
+
+wikipedia https://en.wikipedia.org/wiki/Alice_(programming_language)
+ example
+  fun fib 0 = 0
+     | fib 1 = 1
+     | fib n = spawn fib(n-1) + fib(n-2);
+ related ml oz standard-ml haskell
+ summary Alice ML is a programming language designed by the Programming Systems Laboratory at Saarland University, Saarbrücken, Germany. It is a dialect of Standard ML, augmented with support for lazy evaluation, concurrency (multithreading and distributed computing via remote procedure calls) and constraint programming.
+ pageId 30877972
+ dailyPageViews 48
+ created 2006
+ backlinksCount 36
+ revisionCount 94
+ appeared 2000
+
 website http://www.ps.uni-saarland.de/alice
-wikipedia Alice_(programming_language)
+status active
+
+tryItOnline alice
+
+fileType text
+wordRank 5414
+isOpenSource true

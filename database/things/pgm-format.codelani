@@ -1,5 +1,7 @@
+title Netpbm grayscale image format
 appeared 1988
-type textData
+type textDataFormat
+
 example
  P2
  # feep.pgm
@@ -12,5 +14,7 @@ example
  0  3  0  0  0  0  0  7  0  0  0  0  0 11  0  0  0  0  0 15  0  0  0  0
  0  3  0  0  0  0  0  7  7  7  7  0  0 11 11 11 11  0  0 15  0  0  0  0
  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0
-reference https://en.wikipedia.org/wiki/Netpbm_format
+
 description The PGM format is a lowest common denominator grayscale file format. It is designed to be extremely easy to learn and write programs for. (It's so simple that most people will simply reverse engineer it because it's easier than reading this specification).
+reference https://en.wikipedia.org/wiki/Netpbm_format
+status active

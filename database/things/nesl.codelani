@@ -1,3 +1,25 @@
+title NESL
 appeared 1993
 type pl
-wikipedia NESL
+
+patterns
+ hasCentralPackageRepository? false
+ hasComments? true
+
+wikipedia https://en.wikipedia.org/wiki/NESL
+ related haskell cilk
+ summary NESL is a parallel programming language developed at Carnegie Mellon by the SCandAL project and released in 1993. It integrates various ideas from parallel algorithms, and functional programming and array programming languages. The most important new ideas behind NESL are  Nested data parallelism: this feature offers the benefits of data parallelism, concise code that is easy to understand and debug, while being well suited for irregular algorithms, such as algorithms on trees, graphs or sparse matrices. A language based performance model: this gives a formal way to calculate the work and depth of a program. These measures can be related to running time on parallel machines.The main design guideline for NESL was to make parallel programming easy and portable. Algorithms are typically significantly more concise in NESL than in most other parallel programming languages, and the code closely resembles high-level pseudocode. NESL supports nested data parallelism by using the flattening transform to convert nested data parallelism to flat data parallelism. This works by storing nested vectors as the nested data and a segment descriptor of vector lengths, separately. This flattening transform, however, can increase the asymptotic work and space complexity of the original program, leading to a much less efficient result.
+ pageId 919571
+ created 2004
+ backlinksCount 13
+ revisionCount 21
+ dailyPageViews 10
+ appeared 1993
+
+status historical
+country US
+fileType text
+
+hopl 1740
+
+rosettaCode NESL

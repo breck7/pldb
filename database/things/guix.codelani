@@ -1,3 +1,10 @@
+title GNU Guix
 appeared 2013
-type pm
-wikipedia GNU_Guix
+type distribution
+
+wikipedia https://en.wikipedia.org/wiki/GNU_Guix
+ summary GNU Guix () is a cross-platform package manager and a tool to instantiate and manage Unix-like operating systems, based on the Nix package manager with Guile Scheme APIs and specializes in providing exclusively free software. Differing from traditional package managers, Guix (like Nix) utilizes a purely functional deployment model where software is installed into unique directories generated through cryptographic hashes. Dependencies from each software are included within each hash, solving the problem of dependency hell. This approach to package management promises to generate more reliable, reproducible, and portable packages.Guix packages are defined through functional Guile Scheme APIs specifically designed for package management. Dependencies are tracked directly in this language through special values called "derivations" which are evaluated by the Guix daemon lazily. Guix keeps track of these references automatically so that installed packages can be garbage collected when no other package depends on them. At the cost of greater storage requirements, all upgrades in Guix are guaranteed to be both atomic and efficiently rolled back. This also enables multiple users to safely install software on the same system without administrator privileges. The extra storage requirements translates to greater bandwidth usage when binary substitutes are downloaded compared to distributions such as Debian. If the user chooses to build everything from source even larger storage space and bandwidth is required.  The development of GNU Guix is intertwined with Guix System (until Guix 1.0: Guix System Distribution [GuixSD]), a complete installable GNU system using the Linux-libre kernel and GNU Shepherd init system.The roll-back feature of Guix is inherited from the design of Nix and is not found in any of the popular Linux distributions such as Debian and its derivatives, Arch Linux and its derivatives, or in other major distributions such as Fedora, CentOS or OpenSUSE. The project is coordinated over the Internet by a team of volunteers and is incorporated in the French non-profit Guix Europe with members of the community.
+ backlinksCount 247
+ pageId 37721889
+ dailyPageViews 70
+ appeared 2019

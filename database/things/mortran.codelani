@@ -1,3 +1,22 @@
+title Mortran
 appeared 1973
 type pl
-wikipedia Mortran
+
+patterns
+ hasCentralPackageRepository? false
+
+wikipedia https://en.wikipedia.org/wiki/Mortran
+ example
+  I = SQRT(X/2.0)
+            A(I,K) = SQRT(X/2.0)
+            J = SQRT(X/2.0)
+ related fortran
+ summary Mortran (More Fortran) is an extension of the Fortran programming language used for scientific computation. It introduces syntax changes, including the use of semicolons to end statements, in order to improve readability and flexibility. Mortran code is macro-processed into Fortran code for compilation. Note that Mortran, like many preprocessors, does not make a complete analysis of the Fortran source and, like many preprocessors, may not always make its assumptions/requirements explicit.  Consider, for example, Mortran multiple assignment.  From the Mortran User Guide:  produces the following FORTRAN statements:  In this example, the produced Fortran implements the multiple assignment correctly only if X is not aliased to I or to A(I,K), assuming the multiple assignment semantics are left to right.
+ created 2005
+ backlinksCount 6
+ pageId 1979848
+ revisionCount 25
+ dailyPageViews 8
+ appeared 2008
+
+status historical

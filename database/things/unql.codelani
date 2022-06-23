@@ -1,9 +1,12 @@
+title unql
 appeared 2000
 type queryLanguage
 creators Peter Buneman and Mary Fernandez and Dan Suciu
+
 example
  query Q1 :=
   select {result: E}
   where {country: {name: "France", people: {ethnicGroup: E}}} in db
-reference https://www.researchgate.net/publication/2458246_UnQL_A_Query_Language_and_Algebra_for_Semistructured_Data_Based_on_Structural_Recursion
+
 description A Query Language and Algebra for Semistructured Data Based on Structural Recursion
+reference https://www.researchgate.net/publication/2458246_UnQL_A_Query_Language_and_Algebra_for_Semistructured_Data_Based_on_Structural_Recursion

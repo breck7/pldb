@@ -1,5 +1,36 @@
+title Papyrus
 appeared 2015
 type pl
-wikipedia Papyrus
-reference https://www.creationkit.com/index.php?title=Category:Papyrus
+
+patterns
+ hasCentralPackageRepository? false
+
 description Papyrus is an entirely new scripting system created specifically for the Creation Kit. If you've never used a Bethesda toolset before, consider some basic tutorials to get your footing with the Creation Kit in general.
+
+wikipedia https://en.wikipedia.org/wiki/Papyrus
+ related isbn doi
+ summary Papyrus  is a material similar to thick paper that was used in ancient times as a writing surface. It was made from the pith of the papyrus plant, Cyperus papyrus, a wetland sedge. Papyrus (plural: papyri) can also refer to a document written on sheets of such material, joined together side by side and rolled up into a scroll, an early form of a book.   Papyrus is first known to have been used in Egypt (at least as far back as the First Dynasty), as the papyrus plant was once abundant across the Nile Delta. It was also used throughout the Mediterranean region and in the Kingdom of Kush. Apart from a writing material, ancient Egyptians employed papyrus in the construction of other artifacts, such as reed boats, mats, rope, sandals, and baskets.
+ backlinksCount 1929
+ pageId 23664
+ created 2002
+ revisionCount 1920
+ dailyPageViews 868
+ appeared 1830
+
+githubLanguage Papyrus
+ fileExtensions psc
+ trendingProjectsCount 0
+
+linguistGrammarRepo https://github.com/Kapiainen/SublimePapyrus
+ firstCommit 2014
+ lastCommit 2017
+ committerCount 3
+ commitCount 523
+ sampleCount 3
+ example
+  Scriptname vMFX_FXPlugin extends Quest  
+  
+
+reference https://www.creationkit.com/index.php?title=Category:Papyrus
+status active
+fileType text

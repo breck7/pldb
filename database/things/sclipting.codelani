@@ -1,3 +1,10 @@
+title Sclipting
 appeared 2011
 type esolang
+
+patterns
+ hasCentralPackageRepository? false
+
 description Sclipting is a stack-based golf language, inspired by GolfScript, that uses Chinese characters for instructions and Hangul syllables for data (strings and integers). The basic idea is that to minimise the number of characters in a program, the language should provide as many single-character instructions as possible. It was invented by Timwi in 2011. Sclipting is not considered finished as it can trivially be extended with more and more instructions assigned to new Chinese characters.
+status historical
+fileType text

@@ -1,4 +1,68 @@
+title A Programming Language
 appeared 1964
 type pl
 creators Kenneth E. Iverson
-wikipedia APL_(programming_language)
+
+patterns
+ hasCentralPackageRepository? false
+ hasComments? true
+ hasGarbageCollection? true
+
+wikipedia https://en.wikipedia.org/wiki/APL_(programming_language)
+ example
+  txt←'<html><body><p>This is <em>emphasized</em> text.</p></body></html>'
+  ⎕←{⍵/⍨~{⍵∨≠\⍵}⍵∊'<>'}txt
+ related aplx j go k matlab nial polymorphic-programming-language q s sac-programming-language speakeasy wolfram 1620sps basic music-sp unix isbn ascii cobol java linux ruby r unicode c fortran csharp cil excel-app octave scilab lyapas rpl
+ summary APL (named after the book A Programming Language) is a programming language developed in the 1960s by Kenneth E. Iverson. Its central datatype is the multidimensional array. It uses a large range of special graphic symbols to represent most functions and operators, leading to very concise code. It has been an important influence on the development of concept modeling, spreadsheets, functional programming, and computer math packages. It has also inspired several other programming languages. It is still used today for certain applications.
+ pageId 1451
+ dailyPageViews 680
+ created 2001
+ backlinksCount 388
+ revisionCount 1557
+ appeared 1964
+
+githubLanguage APL
+ fileExtensions apl dyalog
+ trendingProjectsCount 0
+
+helloWorldCollection A Programming Language
+ ⍝ Hello World in APL
+ 
+ ⎕←\'Hello World\'
+
+linguistGrammarRepo https://github.com/Alhadis/language-apl.git
+ firstCommit 2016
+ lastCommit 2018
+ committerCount 1
+ commitCount 99
+ sampleCount 3
+ example
+  #!/usr/local/bin/apl --script
+  NEWLINE ← ⎕UCS 10
+  HEADERS ← 'Content-Type: text/plain', NEWLINE
+  HEADERS
+  ⍝ ⎕←HEADERS
+  ⍝ ⍕⎕TS
+  )OFF
+  
+
+standsFor A Programming Language
+status active
+
+replit apl
+
+country US
+fileType text
+
+tiobe APL
+
+projectEuler APL/J/K
+ memberCount
+  2022 2478
+  2019 332
+
+hopl 18
+
+codeMirror apl
+
+rosettaCode APL

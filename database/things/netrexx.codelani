@@ -1,3 +1,24 @@
+title NetRexx
 appeared 1996
 type pl
-wikipedia NetRexx
+
+patterns
+ hasCentralPackageRepository? false
+ hasComments? true
+
+wikipedia https://en.wikipedia.org/wiki/NetRexx
+ related pl-i rexx object-rexx java jvm
+ summary NetRexx is an open source, originally IBM's, variant of the REXX programming language to run on the Java virtual machine.  It supports a classic REXX syntax, with no reserved keywords, along with considerable additions to support object-oriented programming in a manner compatible with Java's object model, yet can be used as both a compiled and an interpreted language, with an option of using only data types native to the JVM or the NetRexx runtime package. The latter offers the standard Rexx data type that combines string processing with unlimited precision decimal arithmetic. Integration with the JVM platform is tight, and all existing Java class libraries can be used unchanged and without special setup; at the same time, a Java programmer can opt to just use the Rexx class from the runtime package for improved string handling in Java syntax source programs.NetRexx is free to download from the Rexx Language Association. IBM announced the transfer of NetRexx 3.00 source code to the Rexx Language Association (RexxLA) on June 8, 2011.
+ pageId 11690683
+ created 2007
+ backlinksCount 19
+ revisionCount 133
+ dailyPageViews 9
+ appeared 1996
+
+status historical
+fileType text
+
+hopl 2277
+
+rosettaCode NetRexx

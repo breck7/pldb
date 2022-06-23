@@ -1,3 +1,30 @@
+title TiddlyWiki
 appeared 2004
 type template
-wikipedia TiddlyWiki
+
+patterns
+ hasCentralPackageRepository? false
+
+wikipedia https://en.wikipedia.org/wiki/TiddlyWiki
+ example
+  <div title="Tiddlers"
+      modifier="John Smith"
+      created="200811132220"
+      modified="200811132225"
+      changecount="3"
+      tags="wikipedia section example code">
+      <pre>TiddlyWiki introduces the division of...
+ related html css javascript
+ summary TiddlyWiki is an open-source single page application wiki in the form of a single HTML file that includes CSS, JavaScript, and the content. It is designed to be easy to customize and re-shape depending on application. It facilitates re-use of content by dividing it into small pieces called Tiddlers.
+ pageId 1909898
+ dailyPageViews 143
+ created 2005
+ backlinksCount 130
+ revisionCount 470
+ appeared 2004
+
+status active
+fileType text
+isOpenSource true
+
+codeMirror tiddlywiki

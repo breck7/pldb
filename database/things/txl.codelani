@@ -1,3 +1,134 @@
+title TXL
 appeared 1985
 type pl
-wikipedia TXL_(programming_language)
+
+patterns
+ hasCentralPackageRepository? false
+
+wikipedia https://en.wikipedia.org/wiki/TXL_(programming_language)
+ example
+  function fact
+     replace [number]
+        n [number]
+     construct nMinusOne [number]
+        n [- 1]
+     where 
+        n [> 1]
+     construct factMinusOne [number]
+        nMinusOne [fact]
+     by
+        n [* factMinusOne]
+  end function 
+        
+  function fact0
+   replace [number]
+        0
+   by
+        1
+  end function
+ related turing yacc refal
+ summary TXL is a special-purpose programming language originally designed by Charles Halpern-Hamu and James Cordy at the University of Toronto in 1985.  The acronym "TXL" originally stood for "Turing eXtender Language" after the language's original purpose, the specification and rapid prototyping of variants and extensions of the Turing programming language, but no longer has any meaningful interpretation. Modern TXL is specifically designed for creating, manipulating and rapidly prototyping language-based descriptions, tools and applications using source transformation.   It is a hybrid functional / rule-based language using first order functional programming at the higher level and term rewriting at the lower level.  The formal semantics and implementation of TXL are based on formal term rewriting, but the term structures are largely hidden from the user due to the example-like style of pattern specification. Each TXL program has two components: a description of the source structures to be transformed, specified as a (possibly ambiguous) context-free grammar using an extended Backus–Naur Form; and a set of tree transformation rules, specified using pattern / replacement pairs combined using first order functional programming.  TXL is designed to allow explicit programmer control over the interpretation, application, order and backtracking of both parsing and rewriting rules, allowing for expression of a wide range of grammar-based techniques such as agile parsing. The first component parses the input expression into a tree using pattern-matching. The second component uses Term-rewriting in a manner similar to Yacc to produce the transformed output. TXL is most commonly used in software analysis and reengineering tasks such as design recovery, and in rapid prototyping of new programming languages and dialects.
+ pageId 7025179
+ created 2006
+ backlinksCount 14
+ revisionCount 31
+ dailyPageViews 9
+ appeared 1985
+
+githubLanguage TXL
+ fileExtensions txl
+ trendingProjectsCount 0
+
+linguistGrammarRepo https://github.com/MikeHoffert/Sublime-Text-TXL-syntax
+ firstCommit 2014
+ lastCommit 2015
+ committerCount 2
+ commitCount 6
+ sampleCount 1
+ example
+  % Calculator.Txl - simple numerical expression evaluator
+  
+  % Part I.  Syntax specification
+  define program
+          [expression]
+  end define
+  
+  define expression
+          [term]
+      |   [expression] [addop] [term]
+  end define
+  
+  define term
+          [primary]
+      |   [term] [mulop] [primary]
+  end define
+  
+  define primary
+          [number]
+      |   ( [expression] )
+  end define
+  
+  define addop
+          '+
+      |   '-
+  end define
+  
+  define mulop
+          '*
+      |   '/
+  end define
+  
+  
+  % Part 2.  Transformation rules
+  rule main
+      replace [expression]
+          E [expression]
+      construct NewE [expression]
+          E [resolveAddition] [resolveSubtraction] [resolveMultiplication]
+            [resolveDivision] [resolveParentheses]
+      where not
+          NewE [= E]
+      by
+          NewE
+  end rule
+  
+  rule resolveAddition
+      replace [expression]
+          N1 [number] + N2 [number]
+      by
+          N1 [+ N2]
+  end rule
+  
+  rule resolveSubtraction
+      replace [expression]
+          N1 [number] - N2 [number]
+      by
+          N1 [- N2]
+  end rule
+  
+  rule resolveMultiplication
+      replace [term]
+          N1 [number] * N2 [number]
+      by
+          N1 [* N2]
+  end rule
+  
+  rule resolveDivision
+      replace [term]
+          N1 [number] / N2 [number]
+      by
+          N1 [/ N2]
+  end rule
+  
+  rule resolveParentheses
+      replace [primary]
+          ( N [number] )
+      by
+          N
+  end rule
+  
+
+status active
+fileType text
+
+hopl 1444

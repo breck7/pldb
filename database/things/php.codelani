@@ -1,7 +1,232 @@
+title PHP
 appeared 1995
 type pl
 creators Rasmus Lerdorf
+
+patterns
+ hasMagicGettersAndSetters? true
+      public function __set($name, $value)
+     {
+         echo "Setting '$name' to '$value'\n";
+         $this->data[$name] = $value;
+     }
+  
+     public function __get($name)
+     {
+         echo "Getting '$name'\n";
+         if (array_key_exists($name, $this->data)) {
+             return $this->data[$name];
+         }
+  
+         $trace = debug_backtrace();
+         trigger_error(
+             'Undefined property via __get(): ' . $name .
+             ' in ' . $trace[0]['file'] .
+             ' on line ' . $trace[0]['line'],
+             E_USER_NOTICE);
+         return null;
+     }
+ hasCentralPackageRepository? true
+ hasComments? true
+ hasConstructors? true
+ hasHereDocs? true
+ hasIdentifiers? true
+  $name = "John"
+ hasImports? true
+  <?php
+  include 'vars.php';
+  require 'filename'; // FATAL error if fails
+ hasMultilineStrings? true
+  $xml = <<<XML
+  l
+  vv
+  XML;
+ hasOperatorOverloading? true
+ hasTraits? true
+  // The template
+  trait TSingleton
+  {
+      private static $_instance = null; 
+      private function __construct(){} // Must have private default constructor and be aware not to open it in the class
+      public static function getInstance()
+      {
+          if (null === self::$_instance)
+          {
+              self::$_instance = new self();
+          }
+          return self::$_instance;
+      }
+  }
+  class FrontController
+  {
+      use TSingleton;
+  }
+  // Can also be used in already extended classes
+  class WebSite extends SomeClass
+  {
+      use TSingleton;
+  }
+ hasVariadicFunctions? true
+  function sum(...$nums)
+  {
+      return array_sum($nums);
+  }
+  echo sum(1, 2, 3); // 6
+ hasFunctions? true
+ hasIncrementAndDecrementOperators? true
+
+wikipedia https://en.wikipedia.org/wiki/PHP
+ example
+  class Person
+  {
+      public $firstName;
+      public $lastName;
+  
+      public function __construct(string $firstName, string $lastName = '') { // optional second argument
+          $this->firstName = $firstName;
+          $this->lastName  = $lastName;
+      }
+  
+      public function greet(): string {
+          return 'Hello, my name is ' . $this->firstName .
+                 (($this->lastName != '') ? (' ' . $this->lastName) : '') . '.';
+      }
+  
+      public static function staticGreet(string $firstName, string $lastName) {
+          return 'Hello, my name is ' . $firstName . ' ' . $lastName . '.';
+      }
+  }
+  
+  $he    = new Person('John', 'Smith');
+  $she   = new Person('Sally', 'Davis');
+  $other = new Person('iAmine');
+  
+  echo $he->greet(); // prints "Hello, my name is John Smith."
+  echo '<br />';
+  
+  echo $she->greet(); // prints "Hello, my name is Sally Davis."
+  echo '<br />';
+  
+  echo $other->greet(); // prints "Hello, my name is iAmine."
+  echo '<br />';
+  
+  echo Person::staticGreet('Jane', 'Doe'); // prints "Hello, my name is Jane Doe."
+ related c hhvm parrot-vm java perl tcl falcon hack html x86-isa unicode wordpress json mysql mime javascript xml parrot-internal-representation cil ftp postgresql sqlite aws java-server-pages linux python mediawiki drupal
+ summary PHP is a server-side scripting language designed primarily for web development but also used as a general-purpose programming language. Originally created by Rasmus Lerdorf in 1994, the PHP reference implementation is now produced by The PHP Development Team. PHP originally stood for Personal Home Page, but it now stands for the recursive acronym PHP: Hypertext Preprocessor. PHP code may be embedded into HTML or HTML5 markup, or it can be used in combination with various web template systems, web content management systems and web frameworks. PHP code is usually processed by a PHP interpreter implemented as a module in the web server or as a Common Gateway Interface (CGI) executable. The web server software combines the results of the interpreted and executed PHP code, which may be any type of data, including images, with the generated web page. PHP code may also be executed with a command-line interface (CLI) and can be used to implement standalone graphical applications. The standard PHP interpreter, powered by the Zend Engine, is free software released under the PHP License. PHP has been widely ported and can be deployed on most web servers on almost every operating system and platform, free of charge. The PHP language evolved without a written formal specification or standard until 2014, leaving the canonical PHP interpreter as a de facto standard. Since 2014 work has gone on to create a formal PHP specification.
+ pageId 24131
+ dailyPageViews 3151
+ created 2001
+ backlinksCount 7839
+ revisionCount 10104
+ appeared 1994
+ fileExtensions php phtml php3 php4 php5 php7 phps
+
+githubLanguage PHP
+ fileExtensions php aw ctp fcgi inc php3 php4 php5 phps phpt
+ trendingProjects
+  author name avatar url language languageColor stars forks currentPeriodStars description
+  fzaninotto Faker https://github.com/fzaninotto.png https://github.com/fzaninotto/Faker PHP #4F5D95 21754 2507 375 "Faker is a PHP library that generates fake data for you"
+  laravel laravel https://github.com/laravel.png https://github.com/laravel/laravel PHP #4F5D95 54813 16809 929 "A PHP framework for web artisans"
+  laravel framework https://github.com/laravel.png https://github.com/laravel/framework PHP #4F5D95 18676 6774 463 
+  monicahq monica https://github.com/monicahq.png https://github.com/monicahq/monica PHP #4F5D95 7726 935 302 "Personal CRM. Remember everything about your friends and family."
+  mautic mautic https://github.com/mautic.png https://github.com/mautic/mautic PHP #4F5D95 3421 1236 88 "Mautic: Open Source Marketing Automation Software."
+  danielmiessler SecLists https://github.com/danielmiessler.png https://github.com/danielmiessler/SecLists PHP #4F5D95 19907 8011 550 "SecLists is the security tester's companion. It's a collection of multiple types of lists used during security assessments, collected in one place. List types include usernames, passwords, URLs, sensitive data patterns, fuzzing payloads, web shells, and many more."
+  the-benchmarker web-frameworks https://github.com/the-benchmarker.png https://github.com/the-benchmarker/web-frameworks PHP #4F5D95 2932 243 204 "Which is the fastest web framework?"
+  Seldaek monolog https://github.com/Seldaek.png https://github.com/Seldaek/monolog PHP #4F5D95 15663 1570 315 "Sends your logs to files, sockets, inboxes, databases and various web services"
+  firefly-iii firefly-iii https://github.com/firefly-iii.png https://github.com/firefly-iii/firefly-iii PHP #4F5D95 2718 426 130 "Firefly III: a personal finances manager"
+  easy-swoole easyswoole https://github.com/easy-swoole.png https://github.com/easy-swoole/easyswoole PHP #4F5D95 2336 365 282 "High performance Coroutine PHP Framework, base on Swoole"
+  PrestaShop PrestaShop https://github.com/PrestaShop.png https://github.com/PrestaShop/PrestaShop PHP #4F5D95 3922 3305 77 "PrestaShop offers a fully scalable open source ecommerce solution."
+  akaunting akaunting https://github.com/akaunting.png https://github.com/akaunting/akaunting PHP #4F5D95 2097 797 137 "Free and Online Accounting Software"
+  phacility phabricator https://github.com/phacility.png https://github.com/phacility/phabricator PHP #4F5D95 10942 1385 116 "Open software engineering platform and fun adventure game"
+  yiisoft yii2 https://github.com/yiisoft.png https://github.com/yiisoft/yii2 PHP #4F5D95 13073 6810 94 "Yii 2: The Fast, Secure and Professional PHP Framework"
+  swoft-cloud swoft https://github.com/swoft-cloud.png https://github.com/swoft-cloud/swoft PHP #4F5D95 3829 590 447 "🚀 PHP Microservice Full Coroutine Framework"
+  elastic elasticsearch-php https://github.com/elastic.png https://github.com/elastic/elasticsearch-php PHP #4F5D95 3510 712 106 "Official PHP low-level client for Elasticsearch."
+  elementor elementor https://github.com/elementor.png https://github.com/elementor/elementor PHP #4F5D95 2505 632 81 "The most advanced frontend drag & drop page builder. Create high-end, pixel perfect websites at record speeds. Any theme, any page, any design."
+  opencart opencart https://github.com/opencart.png https://github.com/opencart/opencart PHP #4F5D95 5040 3838 87 "A free shopping cart system. OpenCart is an open source PHP-based online e-commerce solution."
+  tymondesigns jwt-auth https://github.com/tymondesigns.png https://github.com/tymondesigns/jwt-auth PHP #4F5D95 8258 1047 134 "🔐 JSON Web Token Authentication for Laravel & Lumen"
+  laravel cashier https://github.com/laravel.png https://github.com/laravel/cashier PHP #4F5D95 1655 411 41 
+  magento magento2 https://github.com/magento.png https://github.com/magento/magento2 PHP #4F5D95 7806 6717 128 "All Submissions you make to Magento Inc. (""Magento"") through GitHub are subject to the following terms and conditions: (1) You grant Magento a perpetual, worldwide, non-exclusive, no charge, royalty free, irrevocable license under your applicable copyrights and patents to reproduce, prepare derivative works of, display, publically perform, subli…"
+  tennc webshell https://github.com/tennc.png https://github.com/tennc/webshell PHP #4F5D95 4829 3617 191 "This is a webshell open source project"
+  area17 twill https://github.com/area17.png https://github.com/area17/twill PHP #4F5D95 1507 162 119 "Twill is an open source CMS toolkit for Laravel that helps developers rapidly create a custom admin console that is intuitive, powerful and flexible. Chat with us and others on Spectrum! https://spectrum.chat/twill"
+  hyperf-cloud hyperf https://github.com/hyperf-cloud.png https://github.com/hyperf-cloud/hyperf PHP #4F5D95 1186 167 366 "🚀 A coroutine framework that focuses on hyperspeed and flexibility, specifically used for build microservices or middlewares."
+  composer composer https://github.com/composer.png https://github.com/composer/composer PHP #4F5D95 20839 5592 354 "Dependency Manager for PHP"
+ trendingProjectsCount 26
+
+githubRepo https://github.com/php/php-src
+ firstCommit 1999
+ stars 21644
+ forks 5225
+ subscribers 1496
+ created 2011
+ updated 2019
+ description The PHP Interpreter
+ issues 163
+
+helloWorldCollection PHP
+ <?php
+   // Hello world in PHP
+   echo 'Hello World!';
+ ?>
+
+linguistGrammarRepo https://github.com/textmate/php.tmbundle
+ firstCommit 2005
+ lastCommit 2018
+ committerCount 28
+ commitCount 509
+ sampleCount 15
+ example
+  #!/usr/bin/php
+  <?php
+  
+  echo "PHP\n";
+
 website https://php.net
-github https://github.com/php/php-src
-wikipedia PHP
 reference http://php.net/manual/en/reserved.keywords.php
+standsFor Personal Home Page
+status active
+
+replit php
+
+tryItOnline php
+
+twitter official_php
+
+country CA
+fileExtensions php phtml php3 php4 php5 php7 phps
+fileType text
+wordRank 1596
+
+tiobe PHP
+ currentRank 8
+
+meetup php
+ memberCount 904206
+ groupCount 2012
+
+linkedInSkill php
+ peopleWithThisSkillCount 2133213
+
+projectEuler PHP
+ memberCount
+  2019 3134
+  2022 3210
+
+hopl 2361
+
+subreddit PHP
+ memberCount
+  2017 54023
+
+quineRelay PHP
+
+ubuntuPackage php-cli
+
+codeMirror php
+
+rosettaCode PHP
+
+antlr https://github.com/antlr/grammars-v4/tree/master/php
+
+corporateDevelopers Zend
+indeedJobs php developer
+ 2017 9017

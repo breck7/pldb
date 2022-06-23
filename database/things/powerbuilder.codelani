@@ -1,3 +1,62 @@
+title PowerBuilder
 appeared 2010
 type pl
-wikipedia PowerBuilder
+
+patterns
+ hasCentralPackageRepository? false
+
+wikipedia https://en.wikipedia.org/wiki/PowerBuilder
+ example
+  UPDATE my_employee SET STATUS = 'A';
+   IF sqlca.sqlcode<>0 THEN ...
+ related csharp json xml sql
+ summary PowerBuilder is an integrated development environment owned by SAP since the acquisition of Sybase in 2010.  On July 5, 2016, SAP and Appeon entered into an agreement whereby Appeon would be responsible for developing, selling, and supporting PowerBuilder.PowerBuilder has been in use since 1991, peaking around 1998 with around 100,000 users. While PowerBuilder's market share has declined over the years, many applications created with it are still in use today.  Over the years, PowerBuilder has been updated with new standards.  In 2010, a major upgrade of PowerBuilder was released to provide support for the Microsoft .NET Framework.  In 2014, support was added for OData, dockable windows, and 64-bit native applications.  In 2017, support was added for iOS and Android app development.PowerBuilder 2018 provides new targets to enable developers to rapidly create RESTful Web APIs and non-visual .NET assemblies, in a test-driven manner, with the native PowerBuilder IDE and C#. A preview version is currently available for select customers.
+ pageId 1611118
+ created 2005
+ backlinksCount 65
+ revisionCount 539
+ dailyPageViews 189
+ appeared 2010
+
+githubLanguage PowerBuilder
+ fileExtensions pbt sra sru srw
+ trendingProjectsCount 0
+
+example
+ // The MIT License (MIT)
+ 
+ // Copyright (c) 2016 dario ureña
+ 
+ // Permission is hereby granted, free of charge, to any person obtaining a copy
+ // of this software and associated documentation files (the "Software"), to deal
+ // in the Software without restriction, including without limitation the rights
+ // to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+ // copies of the Software, and to permit persons to whom the Software is
+ // furnished to do so, subject to the following conditions:
+ 
+ // The above copyright notice and this permission notice shall be included in all
+ // copies or substantial portions of the Software.
+ 
+ // THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+ // IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+ // FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+ // AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+ // LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+ // OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+ // SOFTWARE.
+ 
+ // Source: https://github.com/darioaxel/PowerScriptToKDMTransformer/blob/173c3949d5684150c34f7405f0689310eade0362/resources/basics/TestPBT.pbt
+ 
+ Save Format v3.0(19990112)
+ @begin Projects
+  0 "myproject\\myprojectlib.pbl";
+ @end;
+ appname "myproject";
+ applib "myproject\\myproject.pbl";
+ LibList "myproject\\myproject.pbl;myproject\\lib\\logger\\logger.pbl;myproject\\lib\\payroll\\payroll.pbl;myproject\\lib\\contract\\contract.pbl;myproject\\lib\\common\\common.pbl;";
+ type "pb";
+
+status active
+fileType text
+
+rosettaCode Powerbuilder

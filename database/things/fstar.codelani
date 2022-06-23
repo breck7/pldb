@@ -1,5 +1,41 @@
+title F*
 appeared 2014
 type pl
+
+patterns
+ hasCentralPackageRepository? false
+
+wikipedia https://en.wikipedia.org/wiki/F*_(programming_language)
+ related linux f-sharp ocaml standard-ml ml c javascript
+ summary F* (pronounced F star) is a functional programming language inspired by ML and aimed at program verification. Its type system includes dependent types, monadic effects, and refinement types. This allows expressing precise specifications for programs, including functional correctness and security properties. The F* type-checker aims to prove that programs meet their specifications using a combination of SMT solving and manual proofs. Programs written in F* can be translated to OCaml, F#, and C for execution. Previous versions of F* could also be translated to JavaScript. The latest version of F* is written entirely in a common subset of F* and F#, and bootstraps in OCaml and F#. It is open source (under the Apache 2.0 License) and is under active development on GitHub.
+ pageId 38420593
+ dailyPageViews 53
+ created 2013
+ backlinksCount 21
+ revisionCount 50
+ appeared 2016
+ fileExtensions fst
+
+githubLanguage F*
+ fileExtensions fst
+
+githubRepo https://github.com/FStarLang/FStar
+ stars 1092
+ forks 95
+ subscribers 98
+ created 2014
+ updated 2017
+ firstCommit 2014
+ description Verification system for effectful programs
+ issues 366
+
+linguistGrammarRepo https://github.com/FStarLang/atom-fstar
+ firstCommit 2015
+ lastCommit 2018
+ committerCount 8
+ commitCount 28
+
 website https://www.fstar-lang.org/
-github https://github.com/FStarLang/FStar
-wikipedia F*_(programming_language)
+status active
+fileType text
+isOpenSource true

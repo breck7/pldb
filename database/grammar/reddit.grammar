@@ -1,0 +1,14 @@
+subredditNode
+ extends abstractOneWordGuidNode
+ crux subreddit
+ inScope subredditMemberCountNode
+ string sourceDomain reddit.com
+subredditMemberCountNode
+ extends abstractAnnualPopulationCountNode
+ crux memberCount
+ description How many members in this subreddit.
+redditDiscussionNode
+ description A link to a related discussion on reddit.
+ extends abstractUrlNode
+ crux redditDiscussion
+ string sourceDomain reddit.com

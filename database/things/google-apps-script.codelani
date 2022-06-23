@@ -1,3 +1,24 @@
+title Google Apps Script
 appeared 2009
 type pl
-wikipedia Google_Apps_Script
+
+patterns
+ hasCentralPackageRepository? false
+
+wikipedia https://en.wikipedia.org/wiki/Google_Apps_Script
+ example
+  function doGet() {
+    var app = UiApp.createApplication();
+    app.add(app.createHTML("<b>Hello World!</b>"));
+    return app;
+  }
+ related javascript ecmascript
+ summary Apps Script is a scripting language for light-weight application development in the G Suite platform. It is based on JavaScript 1.6 with some portions of 1.7 and 1.8 and provides subset of ECMAScript 5 API, however instead of running on the client, it gets executed in the Google Cloud. According to Google, Apps Script "provides easy ways to automate tasks across Google products and third party services." Apps Script is also the tool that powers the add-ons for Google Docs, Sheets and Slides.
+ created 2011
+ backlinksCount 473
+ pageId 31285354
+ revisionCount 139
+ dailyPageViews 143
+ appeared 2009
+
+status historical

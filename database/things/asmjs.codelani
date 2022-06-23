@@ -1,4 +1,30 @@
+title Asm.js
 appeared 2013
 type ir
+
+patterns
+ hasCentralPackageRepository? false
+
+wikipedia https://en.wikipedia.org/wiki/Asm.js
+ example
+  function strlen(ptr) {
+    ptr = ptr|0;
+    var curr = 0;
+    curr = ptr;
+    while (MEM8[curr]|0 != 0) {
+      curr = (curr + 1)|0;
+    }
+    return (curr - ptr)|0;
+  }
+ related javascript llvmir lua perl python ruby opengl vim-editor sqlite gnuplot unity-engine godot-game-engine wasm
+ summary asm.js is an intermediate programming language designed to allow computer software written in languages such as C to be run as web applications while maintaining performance characteristics considerably better than standard JavaScript, the typical language used for such applications. asm.js consists of a strict subset of JavaScript, into which code written in statically-typed languages with manual memory management (such as C) is translated by a source-to-source compiler such as Emscripten (based on LLVM). Performance is improved by limiting language features to those amenable to ahead-of-time optimization and other performance improvements. Mozilla Firefox was the first web browser to implement asm.js-specific optimizations, starting with version 22.
+ pageId 38962533
+ dailyPageViews 176
+ created 2013
+ backlinksCount 218
+ revisionCount 203
+ appeared 2013
+
 website http://asmjs.org/
-wikipedia Asm.js
+status historical
+fileType text

@@ -1,3 +1,23 @@
+title Text Executive Programming Language
 appeared 1979
 type pl
-wikipedia Text_Executive_Programming_Language
+
+patterns
+ hasCentralPackageRepository? false
+
+wikipedia https://en.wikipedia.org/wiki/Text_Executive_Programming_Language
+ example
+  _ lastly we subs in x,y,z and then evaluate the goto mypgm_1_2!label_3 which does an interfile goto
+     goto mycat/mypgm_?x?_?y?!label_?z?
+ related awk tex ascii
+ summary In 1979, Honeywell Information Systems announced a new programming language for their time-sharing service named TEX, an acronym for the Text Executive text processing system. TEX was a first generation scripting language, developed around the time of AWK and used by Honeywell initially as an in-house system test automation tool. TEX extended the Honeywell Time-Sharing service (TSS) line editor with programmable capabilities which allowed the user greater latitude in developing ease-of-use editing extensions as well as write scripts to automate many other time-sharing tasks formerly done by more complex TSS FORTRAN programs.
+ pageId 13852549
+ created 2007
+ backlinksCount 9
+ revisionCount 166
+ dailyPageViews 15
+ appeared 1979
+
+aka tex
+status historical
+fileType text

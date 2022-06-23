@@ -1,3 +1,20 @@
+title SASL
 appeared 1972
 type pl
-wikipedia SASL_%28programming_language%29
+
+patterns
+ hasCentralPackageRepository? false
+
+wikipedia https://en.wikipedia.org/wiki/SASL_%28programming_language%29
+ related iswim krc haskell miranda
+ summary SASL (from St Andrews Static Language, alternatively  St Andrews Standard Language) is a purely functional programming language developed by David Turner at the University of St Andrews in 1972, based on the applicative subset of ISWIM.  In 1976 Turner redesigned and reimplemented it as a non-strict (lazy) language.  In this form it was the foundation of Turner's later languages KRC and Miranda, but SASL appears to be untyped whereas Miranda has polymorphic types. Burroughs Corporation used SASL to write a compiler and operating system.
+ created 2004
+ backlinksCount 16
+ pageId 1298198
+ revisionCount 36
+ dailyPageViews 12
+ appeared 1972
+
+status historical
+
+hopl 5836

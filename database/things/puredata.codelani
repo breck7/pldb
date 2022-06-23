@@ -1,4 +1,29 @@
+title Pure Data
 appeared 1996
 type pl
+
+patterns
+ hasCentralPackageRepository? false
+
+wikipedia https://en.wikipedia.org/wiki/Pure_Data
+ related linux ios android freebsd max opengl c python scheme lua tcl
+ summary Pure Data (Pd) is a visual programming language developed by Miller Puckette in the 1990s for creating interactive computer music and multimedia works. While Puckette is the main author of the program, Pd is an open source project with a large developer base working on new extensions. It is released under a license similar to the BSD license. It runs on GNU/Linux, Mac OS X, iOS, Android and Windows. Ports exist for FreeBSD and IRIX. Pd is very similar in scope and design to Puckette's original Max program, developed while he was at IRCAM, and is to some degree interoperable with Max/MSP, the commercial successor to the Max language. They may be collectively discussed as members of the Patcher family of languages. With the addition of the Graphics Environment for Multimedia (GEM) external, and externals designed to work with it (like Pure Data Packet / PiDiP for Linux, Mac OS X), framestein for Windows, GridFlow (as n-dimensional matrix processing, for Linux, Mac OS X, Windows), it is possible to create and manipulate video, OpenGL graphics, images, etc., in realtime with extensive possibilities for interactivity with audio, external sensors, etc. Pd is natively designed to enable live collaboration across networks or the Internet, allowing musicians connected via LAN or even in disparate parts of the globe to create music together in real time. Pd uses FUDI as a networking protocol.
+ pageId 480378
+ dailyPageViews 137
+ created 2004
+ backlinksCount 135
+ revisionCount 319
+ appeared 2017
+
+githubLanguage Pure Data
+ fileExtensions pd
+ trendingProjectsCount 0
+
 website http://puredata.info/
-wikipedia Pure_Data
+status active
+fileType text
+isOpenSource true
+
+tiobe Pure Data
+
+hopl 6444

@@ -1,3 +1,19 @@
+title BEFLIX
 appeared 1963
 type pl
-wikipedia BEFLIX
+
+patterns
+ hasCentralPackageRepository? false
+
+wikipedia https://en.wikipedia.org/wiki/BEFLIX
+ summary BEFLIX is the name of the first embedded domain-specific language for computer animation, invented by Ken Knowlton at Bell Labs in 1963. The name derives from a combination of Bell Flicks. Ken Knowlton used BEFLIX to create animated films for educational and engineering purposes. He also collaborated with the artist Stan Vanderbeek at Bell Labs to create a series of computer-animated films called Poemfields between 1966 and 1969. BEFLIX was developed on the IBM 7090 mainframe computer using a Stromberg-Carlson SC2040 microfilm recorder for output. The programming environment targeted by BEFLIX consisted of a FORTRAN II implementation with FORTRAN II Assembly Program (FAP) macros.  The first version of BEFLIX was implemented through the FAP macro facility.  A later version targeting FORTRAN IV resembled a more traditional subroutine library and lost some of the unique flavor to the language. Pixels are produced by writing characters to the screen of the microfilm recorder with a defocused electron beam. The SC2040 used a charactron tube to expose microfilm.  In BEFLIX, the electron beam is defocused to draw pixels as blurred character shapes.  Characters are selected to create a range of grayscale values for pixels. The microfilm recorder is not connected directly to the 7090, but communicates through magnetic tape.  BEFLIX writes the magnetic tape output on the 7090 and the film recorder reads the tape to create the film output.  BEFLIX also supports a preview mode where selected frames of the output are written to the line printer.
+ created 2006
+ backlinksCount 8
+ pageId 5621549
+ revisionCount 20
+ dailyPageViews 7
+ appeared 1963
+
+status historical
+
+hopl 7742

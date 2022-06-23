@@ -1,3 +1,19 @@
+title OBJ
 appeared 1976
 type pl
-wikipedia OBJ_%28programming_language%29
+
+patterns
+ hasCentralPackageRepository? false
+
+wikipedia https://en.wikipedia.org/wiki/OBJ_%28programming_language%29
+ summary OBJ is a programming language family introduced by Joseph Goguen in 1976. It is a family of declarative "ultra high-level" languages. It features abstract types, generic modules, subsorts (subtypes with multiple inheritance), pattern-matching modulo equations, E-strategies (user control over laziness), module expressions (for combining modules), theories and views (for describing module interfaces) for the massively parallel RRM (rewrite rule machine). Members of the OBJ family of languages include CafeOBJ, Eqlog, FOOPS, Kumo, Maude and OBJ3.
+ created 2004
+ backlinksCount 12
+ pageId 1063976
+ revisionCount 29
+ dailyPageViews 9
+ appeared 1976
+
+status historical
+
+hopl 728

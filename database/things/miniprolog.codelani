@@ -1,5 +1,11 @@
+title miniprolog
 appeared 2013
 type plzoo
+
+patterns
+ hasCentralPackageRepository? false
+
+description logic programming, Horn clauses, unification
 website http://plzoo.andrej.com/language/miniprolog.html
 reference https://github.com/andrejbauer/plzoo
-description logic programming, Horn clauses, unification
+status historical

@@ -1,3 +1,45 @@
+title Reverse Polish Lisp
 appeared 1984
 type pl
-wikipedia RPL_(programming_language)
+
+patterns
+ hasCentralPackageRepository? false
+
+wikipedia https://en.wikipedia.org/wiki/RPL_(programming_language)
+ example
+  « 
+     0       @ Start with zero on the stack
+     1 10    @ Loop from 1 to 10
+     FOR I   @ "I" is the local variable
+        I +  @ Add "I" to the running total
+     NEXT    @ Repeat...
+  »
+ related forth lisp assembly-language
+ summary RPL (derived from Reverse Polish Lisp according to its original developers, whilst for a short while in 1987 HP marketing attempted to coin the backronym ROM-based Procedural Language for it) is a handheld calculator operating system and application programming language used on Hewlett-Packard's scientific graphing RPN (Reverse Polish Notation) calculators of the HP 28, 48, 49 and 50 series, but it is also usable on non-RPN calculators, such as the 38, 39 and 40 series. RPL is a structured programming language based on RPN, but equally capable of processing algebraic expressions and formulae, implemented as a threaded interpreter. RPL has many similarities to Forth, both languages being stack-based, as well as the list-based LISP. Contrary to previous HP RPN calculators, which had a fixed four-level stack, the stack used by RPL is only limited by available calculator RAM. RPL originated from HP's Corvallis, Oregon development facility in 1984 as a replacement for the previous practice of implementing the operating systems of calculators in assembly language. The last calculator supporting RPL, the HP 50g, was discontinued in 2015.
+ pageId 512681
+ dailyPageViews 52
+ created 2004
+ backlinksCount 57
+ revisionCount 164
+ appeared 1984
+
+helloWorldCollection Reverse Polish Lisp
+ Hello World in RPL for the HP-28, HP-48, HP-49 and HP-50 series pocket calculators. No comments possible.
+ 
+ <<
+     "HELLO WORLD"
+     1 DISP
+     60 FREEZE
+ >>
+ 
+
+standsFor Reverse Polish Lisp
+status historical
+fileType text
+
+projectEuler RPL
+ memberCount
+  2019 11
+  2022 11
+
+rosettaCode RPL

@@ -1,4 +1,120 @@
+title ANTLR
 appeared 1992
 type grammarLanguage
+
+patterns
+ hasCentralPackageRepository? false
+
+example
+ /** Taken from "The Definitive ANTLR 4 Reference" by Terence Parr */
+ // Derived from http://json.org
+ grammar JSON;
+ json
+    : value
+    ;
+ obj
+    : '{' pair (',' pair)* '}'
+    | '{' '}'
+    ;
+ pair
+    : STRING ':' value
+    ;
+ arr
+    : '[' value (',' value)* ']'
+    | '[' ']'
+    ;
+ value
+    : STRING
+    | NUMBER
+    | obj
+    | arr
+    | 'true'
+    | 'false'
+    | 'null'
+    ;
+ 
+ STRING
+    : '"' (ESC | SAFECODEPOINT)* '"'
+    ;
+ 
+ fragment ESC
+    : '\\' (["\\/bfnrt] | UNICODE)
+    ;
+ fragment UNICODE
+    : 'u' HEX HEX HEX HEX
+    ;
+ fragment HEX
+    : [0-9a-fA-F]
+    ;
+ fragment SAFECODEPOINT
+    : ~ ["\\\u0000-\u001F]
+    ;
+ 
+ NUMBER
+    : '-'? INT ('.' [0-9] +)? EXP?
+    ;
+ 
+ fragment INT
+    : '0' | [1-9] [0-9]*
+    ;
+ 
+ // no leading zeros
+ 
+ fragment EXP
+    : [Ee] [+\-]? INT
+    ;
+ 
+ // \- since - means "range" inside [...]
+ 
+ WS
+    : [ \t\n\r] + -> skip
+    ; 
+
+wikipedia https://en.wikipedia.org/wiki/ANTLR
+ example
+  TextReader reader;
+   // (...) Fill TextReader with character
+   SumLexer lexer = new SumLexer(reader);
+   SumParser parser = new SumParser(lexer);
+  
+   parser.expression();
+ related java actionscript c csharp javascript objective-c perl python ruby standard-ml swift go groovy jython processing coco-r javacc peg
+ summary In computer-based language recognition, ANTLR (pronounced Antler), or Another Tool For Language Recognition, is a parser generator that uses LL(*) for parsing. ANTLR is the successor to the Purdue Compiler Construction Tool Set (PCCTS), first developed in 1989, and is under active development. Its maintainer is Professor Terence Parr of the University of San Francisco.
+ pageId 765588
+ dailyPageViews 103
+ created 2004
+ backlinksCount 60
+ revisionCount 253
+ appeared 1989
+
+githubLanguage ANTLR
+ fileExtensions g4
+ trendingProjects
+  author name avatar url language languageColor stars forks currentPeriodStars description
+  antlr grammars-v4 https://github.com/antlr.png https://github.com/antlr/grammars-v4 ANTLR #9DC3FF 4119 1736 119 "Grammars written for ANTLR v4; expectation that the grammars are free of actions."
+ trendingProjectsCount 2
+
+linguistGrammarRepo https://github.com/textmate/antlr.tmbundle
+ firstCommit 2005
+ lastCommit 2018
+ committerCount 5
+ commitCount 31
+
 website http://www.antlr.org
-wikipedia ANTLR
+status active
+
+twitter the_antlr_guy
+
+fileType text
+isOpenSource true
+linkedInSkill antlr
+ peopleWithThisSkillCount 2312
+
+hopl 1825
+
+rosettaCode ANTLR
+
+antlr https://github.com/antlr/grammars-v4/tree/master/antlr4
+
+indeedJobs antlr engineer
+ 2017 7

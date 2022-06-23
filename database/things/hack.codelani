@@ -1,4 +1,74 @@
+title Hack
 appeared 2014
 type pl
+
+patterns
+ hasCentralPackageRepository? false
+ hasFirstClassFunctions? true
+
+wikipedia https://en.wikipedia.org/wiki/Hack_(programming_language)
+ example
+  <?hh
+  // Hack functions are annotated with types.
+  function negate(bool $x): bool {
+      return !$x;
+  }
+ related php ocaml java csharp scala haskell actionscript html parrot-vm
+ summary Hack is a programming language for the HipHop Virtual Machine (HHVM), created by Facebook as a dialect of PHP. The language implementation is open-source, licensed under the BSD License. Hack allows programmers to use both dynamic typing and static typing. This kind of a type system is called gradual typing, which is also implemented in other programming languages such as ActionScript. Hack's type system allows types to be specified for function arguments, function return values, and class properties; however, types of local variables are always inferred and cannot be specified.
+ pageId 42257880
+ dailyPageViews 243
+ created 2014
+ backlinksCount 156
+ revisionCount 209
+ appeared 2014
+
+githubLanguage Hack
+ fileExtensions hh php
+ trendingProjects
+  author name avatar url language languageColor stars forks currentPeriodStars description
+  facebook fbctf https://github.com/facebook.png https://github.com/facebook/fbctf Hack #878787 5992 1205 31 "Platform to host Capture the Flag competitions"
+ trendingProjectsCount 2
+
+helloWorldCollection Hack
+ <?hh
+ // Hello world in Hack
+ echo 'Hello World';
+
+linguistGrammarRepo https://github.com/textmate/php.tmbundle
+ firstCommit 2005
+ lastCommit 2018
+ committerCount 28
+ commitCount 509
+ sampleCount 28
+ example
+  <?hh // strict
+  /**
+   * Copyright (c) 2014, Facebook, Inc.
+   * All rights reserved.
+   *
+   * This source code is licensed under the BSD-style license found in the
+   * LICENSE file in the root directory of this source tree. An additional grant
+   * of patent rights can be found in the PATENTS file in the same directory.
+   *
+   */
+  
+  function startup(): void {
+    setup_errors();
+  }
+  
+
 website http://hacklang.org/
-wikipedia Hack_(programming_language)
+status active
+
+twitter hacklang
+
+fileType text
+wordRank 8412
+isOpenSource true
+
+tiobe Hack
+ currentRank 33
+
+rosettaCode Hack
+
+corporateDevelopers Facebook

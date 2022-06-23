@@ -1,3 +1,20 @@
+title Game Oriented Assembly Lisp
 appeared 1993
 type pl
-wikipedia Game_Oriented_Assembly_Lisp
+
+patterns
+ hasCentralPackageRepository? false
+
+wikipedia https://en.wikipedia.org/wiki/Game_Oriented_Assembly_Lisp
+ related scheme
+ summary Game Oriented Assembly Lisp (or GOAL) is a video game programming language developed by Andy Gavin and the Jak and Daxter team at Naughty Dog. It was written using Allegro Common Lisp and used in the development of the entire Jak and Daxter series of games. Syntactically GOAL resembles Scheme, though with many idiosyncratic features such as classes, inheritance, and virtual functions. GOAL encourages an imperative programming style: programs tend to consist of a sequence of events to be executed rather than the functional programming style of functions to be evaluated recursively. This is a diversion from Scheme, which allows such side-effects but does not encourage imperative style. GOAL does not run in an interpreter, but instead is compiled directly into PlayStation 2 machine code for execution. It offers limited facilities for garbage collection, relying extensively on runtime support. It offers dynamic memory allocation primitives designed to make it well-suited to running in constant memory on a video game console. GOAL has extensive support for inlined assembly code using a special rlet form, allowing programmers to freely mix assembly and higher-level constructs within the same function. The GOAL compiler is implemented in Allegro Common Lisp. It supports a long term compiling listener session which gives the compiler knowledge about the state of the compiled and therefore running program, including the symbol table. This, in addition to dynamic linking, allows a function to be edited, recompiled, uploaded, and inserted into a running game without having to restart. The process is similar to the "edit and continue" feature offered by some C++ compilers, but allows the programmer to replace arbitrary amounts of code (even up to entire object files), and does not interrupt the running game with the debugger. This feature was used to implement code as well as level streaming in the Jak and Daxter games. GOAL's first use was for the Jak and Daxter: The Precursor Legacy game. The predecessor language, Game Oriented Object Lisp (GOOL), was also developed by Andy Gavin for the Crash Bandicoot game. Since Naughty Dog no longer employs GOAL's primary development and maintenance engineer and they were under pressure from their new parent company (Sony) to share technology between studios, Naughty Dog transitioned away from Lisp. However, they have since resumed using it for scripting on some PlayStation 3 games, including The Last of Us.
+ created 2006
+ backlinksCount 56
+ pageId 4993415
+ revisionCount 87
+ dailyPageViews 35
+ appeared 2005
+
+status historical
+
+hopl 7628

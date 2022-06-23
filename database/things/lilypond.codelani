@@ -1,4 +1,36 @@
+title LilyPond
 appeared 1996
 type pl
+
+patterns
+ hasCentralPackageRepository? false
+ hasComments? true
+
+wikipedia https://en.wikipedia.org/wiki/LilyPond
+ example
+  <score vorbis="1">\relative c' { f d f a d f e d cis a cis e a g f e }</score>
+ related scheme metafont postscript python linux freebsd musicxml pdf svg guile latex tex utf-8 emacs-editor org mediawiki sibelius-software
+ summary LilyPond is a computer program and file format for music engraving. One of LilyPond's major goals is to produce scores that are engraved with traditional layout rules, reflecting the era when scores were engraved by hand. LilyPond is cross-platform, and is available for several common operating systems; released under the terms of the GNU General Public License, LilyPond is free software.
+ pageId 169144
+ dailyPageViews 102
+ created 2003
+ backlinksCount 286
+ revisionCount 569
+ appeared 1996
+
+githubLanguage LilyPond
+ fileExtensions ly ily
+ trendingProjectsCount 0
+
+linguistGrammarRepo https://github.com/textmate/lilypond.tmbundle
+ firstCommit 2006
+ lastCommit 2012
+ committerCount 4
+ commitCount 28
+
 website http://lilypond.org
-wikipedia LilyPond
+status active
+fileType text
+isOpenSource true
+
+rosettaCode Lilypond

@@ -1,6 +1,19 @@
+title ulisp
 type pl
-website http://www.ulisp.com/show?3J
-github https://github.com/technoblogy/ulisp
+
 example
  (defun b (x) (pinmode 13 t) (digitalwrite 13 x) (delay 500) (b (not x)))
+
 description uLisp® is a version of the Lisp programming language specifically designed to run on microcontrollers with a limited amount of RAM.
+
+githubRepo https://github.com/technoblogy/ulisp
+ firstCommit 2016
+ stars 168
+ forks 24
+ subscribers 22
+ created 2016
+ updated 2020
+ description A version of the Lisp programming language for ATmega-based Arduino boards.
+ issues 4
+
+website http://www.ulisp.com/show?3J

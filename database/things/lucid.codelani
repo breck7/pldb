@@ -1,5 +1,36 @@
+title LUCID
 appeared 1976
 type pl
 creators Edward A. Ashcroft and William W. Wadge
-wikipedia Lucid_(programming_language)
+
+patterns
+ hasCentralPackageRepository? false
+
+wikipedia https://en.wikipedia.org/wiki/Lucid_(programming_language)
+ example
+  h
+     where
+       h = 1 fby merge(merge(2 * h, 3 * h), 5 * h);
+       merge(x,y) = if xx <= yy then xx else yy fi
+          where 
+            xx = x upon xx <= yy;
+            yy = y upon yy <= xx;
+          end;
+     end;
+ related iswim sisal lustre
+ summary Lucid is a dataflow programming language designed to experiment with non-von Neumann programming models. It was designed by Bill Wadge and Ed Ashcroft and described in the 1985 book Lucid, the Dataflow Programming Language. pLucid was the first interpreter for Lucid.
+ pageId 1485589
+ dailyPageViews 19
+ created 2005
+ backlinksCount 21
+ revisionCount 119
+ appeared 1976
+
 reference https://news.ycombinator.com/item?id=14233054
+status historical
+country CA
+fileType text
+
+hopl 960
+
+rosettaCode Lucid

@@ -1,4 +1,53 @@
+title End User Programming Hierarchial Objects for Robust Interpreted Applications
 appeared 1993
 type pl
+
+patterns
+ hasCentralPackageRepository? false
+ hasComments? true
+
+wikipedia https://en.wikipedia.org/wiki/Euphoria_(programming_language)
+ example
+  global function replace_item( object old, object new, sequence group )
+     integer pos
+               -- Code begins --
+     pos = find( old, group )
+     if pos > 0 then
+         group[pos] = new
+     end if
+     return group
+  end function
+ related linux freebsd c basic mathematical-notation ascii lua python rebol ruby
+ summary Euphoria is a programming language originally created by Robert Craig of Rapid Deployment Software in Toronto, Ontario, Canada. Initially developed (though not publicly released) on the Atari ST, the first commercial release was for the 16-bit DOS platform and was proprietary. In 2006, with the release of version 3, Euphoria became open-source software. The openEuphoria Group continues to administer and develop the project. In December 2010, the openEuphoria Group released version 4 of openEuphoria along with a new identity and mascot for the project. OpenEuphoria is currently available for Windows, Linux, macOS and three flavors of *BSD. Euphoria is a general-purpose high-level imperative-procedural interpreted language. A translator generates C source code and the GNU compiler collection (GCC) and Open Watcom compilers are supported. Alternatively, Euphoria programs may be bound with the interpreter to create stand-alone executables. A number of graphical user interface (GUI) libraries are supported including Win32lib and wrappers for wxWidgets, GTK+ and IUP. Euphoria has a simple built-in database and wrappers for a variety of other databases.
+ pageId 9647
+ dailyPageViews 25
+ created 2001
+ backlinksCount 34
+ revisionCount 266
+ appeared 1993
+ fileExtensions e ex exw edb
+
+helloWorldCollection End User Programming Hierarchial Objects for Robust Interpreted Applications
+ -- Hello World in Euphoria
+ 
+ puts(1, "Hello World!\n")
+ 
+
 website http://openeuphoria.org
-wikipedia Euphoria_(programming_language)
+standsFor End User Programming Hierarchial Objects for Robust Interpreted Applications
+status active
+country CA
+fileExtensions e ex exw edb
+fileType text
+isOpenSource true
+
+tiobe Euphoria
+
+projectEuler Euphoria
+ memberCount
+  2019 3
+  2022 8
+
+hopl 2020
+
+rosettaCode Euphoria

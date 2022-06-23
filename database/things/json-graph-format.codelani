@@ -1,7 +1,7 @@
+title json-graph-format
 appeared 2014
 type jsonFormat
-website http://jsongraphformat.info/
-github https://github.com/jsongraph/json-graph-specification
+
 example
  {
      "graph": {
@@ -43,3 +43,16 @@ example
          ]
      }
  }
+
+githubRepo https://github.com/jsongraph/json-graph-specification
+ firstCommit 2014
+ stars 275
+ forks 26
+ subscribers 20
+ created 2014
+ updated 2019
+ description A proposal for representing graph structure (nodes / edges) in JSON.
+ issues 11
+
+website http://jsongraphformat.info/
+aka jgf

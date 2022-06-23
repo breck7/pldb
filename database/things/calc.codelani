@@ -1,5 +1,11 @@
+title calc
 appeared 2013
 type plzoo
+
+patterns
+ hasCentralPackageRepository? false
+
+description integer arithmetic +, -, *, /
 website http://plzoo.andrej.com/language/calc.html
 reference https://github.com/andrejbauer/plzoo
-description integer arithmetic +, -, *, /
+status historical

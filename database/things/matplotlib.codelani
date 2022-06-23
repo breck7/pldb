@@ -1,6 +1,46 @@
+title Matplotlib
 appeared 2003
 type library
 creators John D. Hunter
+
+patterns
+ hasCentralPackageRepository? false
+
+wikipedia https://en.wikipedia.org/wiki/Matplotlib
+ example
+  >>> from matplotlib import cm
+  >>> from mpl_toolkits.mplot3d import Axes3D
+  >>> import matplotlib.pyplot as plt
+  >>> import numpy as np
+  >>> fig = plt.figure()
+  >>> ax = fig.gca(projection='3d')
+  >>> X = np.arange(-5, 5, 0.25)
+  >>> Y = np.arange(-5, 5, 0.25)
+  >>> X, Y = np.meshgrid(X, Y)
+  >>> R = np.sqrt(X**2 + Y**2)
+  >>> Z = np.sin(R)
+  >>> surf = ax.plot_surface(X, Y, Z, rstride=1, cstride=1, cmap=cm.coolwarm)
+  >>> plt.show()
+ related python numpy qt opengl matlab scipy gnuplot julia octave maxima excel-app jython sagemath
+ summary matplotlib is a plotting library for the Python programming language and its numerical mathematics extension NumPy. It provides an object-oriented API for embedding plots into applications using general-purpose GUI toolkits like Tkinter, wxPython, Qt, or GTK+. There is also a procedural "pylab" interface based on a state machine (like OpenGL), designed to closely resemble that of MATLAB, though its use is discouraged. SciPy makes use of matplotlib. matplotlib was originally written by John D. Hunter, has an active development community, and is distributed under a BSD-style license. Michael Droettboom was nominated as matplotlib's lead developer shortly before John Hunter's death in 2012. As of 23 June 2017, matplotlib 2.0.x supports Python versions 2.7 through 3.6. Matplotlib 1.2 is the first version of matplotlib to support Python 3.x. Matplotlib 1.4 is the last version of matplotlib to support Python 2.6.
+ pageId 2901907
+ dailyPageViews 218
+ created 2005
+ backlinksCount 85
+ revisionCount 241
+ appeared 2012
+
+githubRepo https://github.com/matplotlib/matplotlib
+ stars 6371
+ forks 3021
+ subscribers 484
+ created 2011
+ updated 2017
+ firstCommit 2003
+ description matplotlib: plotting with Python
+ issues 1433
+
 website http://matplotlib.org/
-github https://github.com/matplotlib/matplotlib
-wikipedia Matplotlib
+status active
+fileType text
+isOpenSource true

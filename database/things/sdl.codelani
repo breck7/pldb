@@ -1,5 +1,13 @@
+title Shared Dataspace Language
 appeared 1988
 type pl
-wikipedia SDL
-reference https://ieeexplore.ieee.org/document/12526
 description he authors are currently evaluating the use of shared dataspace paradigm as the basis for a novel programming language, called SDL (Shared Dataspace Language), that supports large-scale concurrency. Their goal is to develop the software support needed for the design, analysis, understanding, and testing of programs involving many thousands of concurrent processes running on a highly parallel multiprocessor. The authors provide an overview of the key SDL features, using small examples to illustrate its power and flexibility
+
+wikipedia https://en.wikipedia.org/wiki/SDL
+ backlinksCount 17
+ appeared 1990
+
+reference https://ieeexplore.ieee.org/document/12526
+standsFor Shared Dataspace Language
+
+hopl 1429

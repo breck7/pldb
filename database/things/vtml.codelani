@@ -1,6 +1,7 @@
+title Visual Tool Markup Language
 appeared 1997
 type pl
-wikipedia VTML
+
 example
  <TAG> <ATTRIBUTES>
  ... Defines tag attribute properties and behavior
@@ -20,5 +21,19 @@ example
  ... HTML-based documentation for the tag
  </TAGDESCRIPTION>
  </TAG>
-reference http://www.ulitzer.com/node/41770
+
+patterns
+ hasCentralPackageRepository? false
+
 description VTML is a family of markup languages used to extend the IDE of HomeSite and ColdFusion Studio. Using VTML you can define your own Tag Insight and Tag Editors, which is very helpful when developing your own custom tags, since you can simply put the VTML files inside your distribution, enabling your custom tags to tightly integrate into the ColdFusion Studio IDE. As the name (Markup Language) might suggest, VTML is a tag-based language (CFML is also tag-based) and therefore easy to learn.
+
+wikipedia https://en.wikipedia.org/wiki/VTML
+ summary Visual Tool Markup Language, a user interface markup language used by Macromedia HomeSite, ColdFusion Studio and JRun Studio. VTML is used for tag editors and custom dialogs shipped with these applications and can be used to extend the user interface and to support additional tag-based languages. It is documented in help files included with these applications or available online, notably in the "VTML Reference" and "Customizing the Development Environment" sections. Wizard Markup Language (WIZML) is a sub-language of VTML that defines the logic used by user interface wizards and tag editors.
+ created 2006
+ backlinksCount 4
+ pageId 7642484
+ revisionCount 14
+ dailyPageViews 4
+
+reference http://www.ulitzer.com/node/41770
+status historical

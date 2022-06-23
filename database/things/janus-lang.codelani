@@ -1,3 +1,27 @@
+title Janus time-reversible computing programming language
 appeared 1982
 type pl
-wikipedia Janus_(time-reversible_computing_programming_language)
+
+patterns
+ hasCentralPackageRepository? false
+
+wikipedia https://en.wikipedia.org/wiki/Janus_(time-reversible_computing_programming_language)
+ example
+  procedure fib
+      from  i = 2
+      do
+          i += 1
+          x1 <=> x2
+          x1 -= x2
+      loop
+      until i = n
+ related prolog
+ summary Janus is a time-reversible programming language written at Caltech in 1982. The operational semantics of the language were formally specified, together with a program inverter and an invertible self-interpreter, in 2007 by Tetsuo Yokoyama and Robert Glück. A Janus inverter and interpreter is made freely available by the TOPPS research group at DIKU. Another Janus interpreter was implemented in Prolog in 2009. The below summarises the language presented in the 2007 paper. Janus is an imperative programming language with a global store (there is no stack or heap allocation). Janus is a reversible programming language, i.e. it supports deterministic forward and backward computation by local inversion.
+ revisionCount 9
+ created 2016
+ backlinksCount 4
+ pageId 50304039
+ dailyPageViews 11
+ appeared 1982
+
+status historical

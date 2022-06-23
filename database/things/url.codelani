@@ -1,4 +1,24 @@
+title Uniform Resource Locator
 appeared 1994
 type schema
 creators Tim Berners-Lee
-wikipedia URL
+
+patterns
+ hasCentralPackageRepository? false
+
+wikipedia https://en.wikipedia.org/wiki/URL
+ example
+  scheme:[//[user[:password]@]host[:port]][/path][?query][#fragment]
+ related ftp http html utf-8
+ summary A Uniform Resource Locator (URL), colloquially termed a web address, is a reference to a web resource that specifies its location on a computer network and a mechanism for retrieving it. A URL is a specific type of Uniform Resource Identifier (URI), although many people use the two terms interchangeably. URLs occur most commonly to reference web pages (http), but are also used for file transfer (ftp), email (mailto), database access (JDBC), and many other applications. Most web browsers display the URL of a web page above the page in an address bar. A typical URL could have the form http://www.example.com/index.html, which indicates a protocol (http), a hostname (www.example.com), and a file name (index.html).
+ pageId 47817022
+ dailyPageViews 3566
+ created 2001
+ backlinksCount 4264
+ revisionCount 3008
+ appeared 1985
+
+standsFor Uniform Resource Locator
+status historical
+fileType text
+wordRank 793

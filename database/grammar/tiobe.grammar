@@ -1,0 +1,11 @@
+tiobeNode
+ extends abstractMultiwordGuidNode
+ description Tiobe maintains a well known ranking of programming languages here: https://www.tiobe.com/tiobe-index/
+ crux tiobe
+ inScope tiobeCurrentRankNode
+ string sourceDomain tiobe.com
+ catchAllCellType externalGuidCell
+tiobeCurrentRankNode
+ description What is the current Tiobe rank of this language?
+ extends abstractIntNode
+ crux currentRank

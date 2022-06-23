@@ -1,3 +1,22 @@
+title Graphics BASIC
 appeared 1983
 type pl
-wikipedia Graphics_BASIC
+
+patterns
+ hasCentralPackageRepository? false
+
+wikipedia https://en.wikipedia.org/wiki/Graphics_BASIC
+ example
+  DOT 160,100
+   LINE 80,50 TO 240,150
+   BOX 10,10 TO 20,20
+ related commodore-basic gw-basic amigabasic unix
+ summary Graphics BASIC is a third-party extension to the Commodore BASIC V2.0 programming language of the Commodore 64 computer. It was originally written in 1983 by Ron Gilbert and Tom McFarlane. The program was licensed to Hesware, who briefly sold the program in 1984 as part of their product line before going out of business. The program was later extended by Ken Rose and Jack Thornton, and repackaged and sold in 1985 by Epyx under the title Programmers BASIC Toolkit.  Graphics BASIC adds over 100 new commands to the BASIC language, providing an easy-to-use API to the relatively advanced (at the time) graphics and sound hardware capabilities of the Commodore 64. The only access to these features with Commodore BASIC alone is through the cumbersome use of PEEK and POKE commands. Graphics BASIC was delivered on a single 5.25" floppy disk, containing the language itself and numerous, very simple demo programs showing off the new features of the language. A cartridge version was also available.
+ created 2005
+ backlinksCount 6
+ pageId 1459380
+ revisionCount 35
+ dailyPageViews 9
+ appeared 1983
+
+status historical

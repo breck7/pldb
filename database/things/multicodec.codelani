@@ -1,2 +1,12 @@
-type encoding
-github https://github.com/multiformats/multicodec
+title multicodec
+type standard
+
+githubRepo https://github.com/multiformats/multicodec
+ firstCommit 2015
+ stars 116
+ forks 80
+ subscribers 39
+ created 2015
+ updated 2020
+ description Compact self-describing codecs. Save space by using predefined multicodec tables.
+ issues 40

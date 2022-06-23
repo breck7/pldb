@@ -1,3 +1,19 @@
+title Axiom
 appeared 1992
 type pl
-wikipedia Axiom_%28computer_algebra_system%29
+
+patterns
+ hasCentralPackageRepository? false
+
+wikipedia https://en.wikipedia.org/wiki/Axiom_%28computer_algebra_system%29
+ related fortran coq acl2 emacs-editor aldor
+ summary Axiom is a free, general-purpose computer algebra system.  It consists of an interpreter environment, a compiler and a library, which defines a strongly typed, mathematically (mostly) correct type hierarchy.
+ created 2004
+ backlinksCount 98
+ pageId 487947
+ revisionCount 221
+ dailyPageViews 57
+ appeared 1965
+
+status historical
+isOpenSource true

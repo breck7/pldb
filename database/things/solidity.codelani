@@ -1,5 +1,72 @@
+title Solidity
 appeared 2014
 type pl
+
+patterns
+ hasCentralPackageRepository? false
+
+wikipedia https://en.wikipedia.org/wiki/Solidity
+ example
+  contract GavCoin
+  {
+    mapping(address=>uint) balances;
+    uint constant totalCoins = 100000000000;
+  
+    /// Endows creator of contract with 1m GAV.
+    function GavCoin(){
+        balances[msg.sender] = totalCoins;
+    }
+  
+    /// Send $((valueInmGAV / 1000).fixed(0,3)) GAV from the account of $(message.caller.address()), to an account accessible only by $(to.address()).
+    function send(address to, uint256 valueInmGAV) {
+      if (balances[msg.sender] >= valueInmGAV) {
+        balances[to] += valueInmGAV;
+        balances[msg.sender] -= valueInmGAV;
+      }
+    }
+  
+    /// getter function for the balance
+    function balance(address who) constant returns (uint256 balanceInmGAV) {
+      balanceInmGAV = balances[who];
+    }
+  
+  }
+ related javascript ecmascript visual-studio-editor azure aws
+ summary Solidity is a contract-oriented programming language for writing smart contracts. It is used for implementing smart contracts on various blockchain platforms. It was developed by Gavin Wood, Christian Reitwiessner, Alex Beregszaszi, Liana Husikyan, Yoichi Hirai and several former Ethereum core contributors to enable writing smart contracts on blockchain platforms such as Ethereum.
+ pageId 6817996
+ dailyPageViews 405
+ created 2006
+ backlinksCount 41
+ revisionCount 148
+ appeared 2014
+
+githubLanguage Solidity
+ trendingProjectsCount 0
+
+githubRepo https://github.com/ethereum/solidity
+ stars 6245
+ forks 1667
+ subscribers 522
+ created 2015
+ updated 2018
+ firstCommit 2014
+ description Solidity, the Contract-Oriented Programming Language
+ issues 655
+
+linguistGrammarRepo https://github.com/davidhq/SublimeEthereum.git
+ firstCommit 2015
+ lastCommit 2018
+ committerCount 11
+ commitCount 38
+
 website http://github.com/ethereum/solidity
-github https://github.com/ethereum/solidity
-wikipedia Solidity
+status active
+fileType text
+isOpenSource true
+
+tiobe Solidity
+
+webRepl https://ethereum.github.io/browser-solidity/
+writtenIn cpp
+indeedJobs solidity developer
+ 2017 41

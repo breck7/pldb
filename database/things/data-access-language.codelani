@@ -1,3 +1,18 @@
+title Data Access Language
 appeared 1990
 type pl
-wikipedia Data_Access_Language
+
+patterns
+ hasCentralPackageRepository? false
+
+wikipedia https://en.wikipedia.org/wiki/Data_Access_Language
+ related sql unix pl-sql transact-sql hypercard
+ summary Data Access Language, or simply DAL, was a SQL-like language and application programming interface released by Apple Computer in 1990 to provide unified client/server access to database management systems. It was known for poor performance and high costs, something Apple did little to address over its short lifetime, before it was sold off in 1994. DAL is used as the native SQL dialect of the PrimeBase SQL server, as well as the now-defunct Butler SQL.
+ created 2005
+ backlinksCount 7
+ pageId 1919898
+ revisionCount 42
+ dailyPageViews 7
+ appeared 1990
+
+status historical

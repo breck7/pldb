@@ -1,6 +1,7 @@
+title Guix Workflow Language
 appeared 2017
 type pl
-website https://www.guixwl.org/
+
 example
   ;; https://www.guixwl.org/extended-start
   ;; We are going to extend the workflow defined in the file
@@ -44,3 +45,7 @@ example
         ;; pairs up each of the processes in "list-file-processes" with
         ;; one of the processes in "compress-file-processes".
         zip list-file-processes compress-file-processes
+
+website https://www.guixwl.org/
+standsFor Guix Workflow Language
+related scheme

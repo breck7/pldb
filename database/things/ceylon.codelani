@@ -1,6 +1,92 @@
+title Ceylon
 appeared 2011
 type pl
 creators Gavin King
+
+patterns
+ hasCentralPackageRepository? false
+ hasOperatorOverloading? true
+ hasStaticTyping? true
+ hasTypeInference? true
+
+wikipedia https://en.wikipedia.org/wiki/Ceylon_(programming_language)
+ example
+  /* The classic Hello World program */
+  shared void run() {
+      print("Hello, World!");
+  }
+ related jvm javascript java scala smalltalk ml lisp maven-pom typescript dart fantom
+ summary Ceylon is an object-oriented, strongly statically typed programming language with an emphasis on immutability, created by Red Hat. Ceylon programs run on the Java virtual machine (JVM), and can be compiled to JavaScript. The language design focuses on source code readability, predictability, toolability, modularity, and metaprogrammability. Important features of Ceylon include: A type system enforcing null safety and list element existence at compile time Regular syntax and semantics, avoiding special cases and primitively-defined constructs in favor of syntactic sugar Support for generic programming and metaprogramming, with reified generics Modularity built into the language, based on JBoss modules, interoperable with OSGi and Maven powerful tools, including an Eclipse-based IDE The name "Ceylon" is an oblique reference to Java, in that Java and Sri Lanka, formerly known as Ceylon, are islands known for growth and export of coffee and tea. In August 2017, Ceylon was donated to the Eclipse Foundation.
+ pageId 31483631
+ dailyPageViews 72
+ created 2011
+ backlinksCount 33
+ revisionCount 218
+ appeared 2011
+ fileExtensions ceyloncite web
+
+githubLanguage Ceylon
+ fileExtensions ceylon
+ trendingProjectsCount 0
+
+githubRepo https://github.com/eclipse/ceylon
+ stars 301
+ forks 55
+ subscribers 31
+ created 2015
+ updated 2017
+ firstCommit 2017
+ description The Ceylon compiler, language module, and command line tools
+ issues 1000
+
+helloWorldCollection Ceylon
+ // Hello world in Ceylon
+ 
+ print("Hello, World!");
+
+linguistGrammarRepo https://github.com/jeancharles-roger/ceylon-sublimetext
+ firstCommit 2013
+ lastCommit 2017
+ committerCount 6
+ commitCount 29
+ sampleCount 1
+ example
+  "Test function for Ceylon"
+  by ("Enrique")
+  shared void test() {
+      print("test");
+  }
+  
+  "Test class for Ceylon"
+  shared class Test(name) satisfies Comparable<Test> {
+      shared String name;
+      shared actual String string = "Test ``name``.";
+  
+      shared actual Comparison compare(Test other) {
+          return name<=>other.name;
+      }
+  }
+  
+
 website http://ceylon-lang.org
-github https://github.com/eclipse/ceylon
-wikipedia Ceylon_(programming_language)
+status active
+
+tryItOnline ceylon
+
+twitter ceylonlang
+
+fileType text
+runsOnVm jvm
+isOpenSource true
+
+tiobe Ceylon
+
+projectEuler Ceylon
+ memberCount
+  2019 5
+  2022 8
+
+rosettaCode Ceylon
+
+corporateDevelopers Red Hat
+writtenIn java

@@ -1,4 +1,23 @@
+title Kent Recursive Calculator
 appeared 1981
 type pl
-wikipedia Kent_Recursive_Calculator
+
+patterns
+ hasCentralPackageRepository? false
+
+wikipedia https://en.wikipedia.org/wiki/Kent_Recursive_Calculator
+ related bcpl c unix isbn
+ summary KRC (Kent Recursive Calculator) is a lazy functional language developed by David Turner from November 1979 to October 1981 based on SASL, with pattern matching, guards and ZF expressions (now more usually called list comprehensions). Two implementations of KRC were written: David Turner's original one in BCPL running on EMAS, and Simon J. Croft's later one in C under Unix, and KRC was the main language used for teaching functional programming at the University of Kent at Canterbury (UK) from 1982 to 1985. The direct successor to KRC is Miranda, which includes a polymorphic type discipline based on that of Milner's ML.
+ pageId 17224
+ created 2002
+ backlinksCount 19
+ revisionCount 42
+ dailyPageViews 10
+ appeared 1981
+
 reference http://krc-lang.org/
+standsFor Kent Recursive Calculator
+status historical
+fileType text
+
+hopl 959

@@ -1,5 +1,332 @@
+title JavaScript
 appeared 1995
 type pl
 creators Brendan Eich
-wikipedia JavaScript
+
+patterns
+ hasAbstractTypes? false
+ hasAsyncAwait? true
+  async doSomething => await somethingElse()
+ hasBinaryOperators? true
+  1 + 1
+ hasMapFunctions? true
+  [1,2.1].map(Math.round)
+ hasPartialApplication? true
+  const addNumbers = (num1, num2) => num1 + num2
+  const add5 = num => addNumbers(10, num)
+ supportsBreakpoints? true
+  if (false)
+    debugger
+ hasPointers? false
+ mergesWhitespace? true
+ hasPolymorphism? true
+  "a" + "b"; 1 + 2
+ hasSingleDispatch? true
+ hasMultipleDispatch? false
+ hasBitWiseOperators? true
+  var x = 5 & 1;
+ hasSourceMaps? true
+  {
+   version: 3,
+   file: 'min.js',
+   names: ['bar', 'baz', 'n'],
+   sources: ['one.js', 'two.js'],
+   sourceRoot: 'http://example.com/www/js/',
+   mappings: 'CAAC,IAAI,IAAM,SAAUA,GAClB,OAAOC,IAAID;CCDb,IAAI,IAAM,SAAUE,GAClB,OAAOA'
+  };
+ hasProcessorRegisters? false
+ hasDynamicProperties? true
+  class Person {}
+  const person = new Person()
+  person.age = 50
+ hasMagicGettersAndSetters? true
+  // Can be implemented in ES6 using proxies:
+  "use strict";
+  if (typeof Proxy == "undefined") {
+      throw new Error("This browser doesn't support Proxy");
+  }
+  let original = {
+      "foo": "bar"
+  };
+  let proxy = new Proxy(original, {
+      get(target, name, receiver) {
+          let rv = Reflect.get(target, name, receiver);
+          if (typeof rv === "string") {
+              rv = rv.toUpperCase();
+          }
+          return rv;
+        }
+  });
+  console.log(`original.foo = ${original.foo}`); // "original.foo = bar"
+  console.log(`proxy.foo = ${proxy.foo}`);       // "proxy.foo = BAR"
+ hasBooleans? true
+  const result = true
+ hasCentralPackageRepository? true
+ hasMethodChaining? true
+  "hello world".toString().substr(0, 1).length
+ hasClasses? true
+  class Person {}
+ hasConditionals? true
+  if (true)
+   console.log("hi!")
+ hasComments? true
+ hasBlockComments? true
+ hasConstructors? true
+  class Person {
+   constructor(name) {
+     this._name = name
+   }
+  }
+  new Person("Jane")
+ hasConstants? true
+  const one = 1
+ hasDynamicTyping? true
+ hasExceptions? true
+  try {
+   undefinedFn()
+  } catch (err) {
+   console.log(err)
+  }
+ hasFirstClassFunctions? true
+  [2.0,1.1].map(Math.round)
+ hasGarbageCollection? true
+ hasGenerators? true
+  function* fibonacci(limit) {
+      let [prev, curr] = [0, 1];
+      while (!limit || curr <= limit) {
+          yield curr;
+          [prev, curr] = [curr, prev + curr];
+      }
+  }
+  // bounded by upper limit 10
+  for (let n of fibonacci(10)) {
+      console.log(n);
+  }
+  // generator without an upper bound limit
+  for (let n of fibonacci()) {
+      console.log(n);
+      if (n > 10000) break;
+  }
+  // manually iterating
+  let fibGen = fibonacci();
+  console.log(fibGen.next().value); // 1
+  console.log(fibGen.next().value); // 1
+  console.log(fibGen.next().value); // 2
+  console.log(fibGen.next().value); // 3
+  console.log(fibGen.next().value); // 5
+  console.log(fibGen.next().value); // 8
+  // picks up from where you stopped
+  for (let n of fibGen) {
+      console.log(n);
+      if (n > 10000) break;
+  }
+ hasDirectives? true
+  "use strict";
+  "use asm";
+ hasIdentifiers? true
+  var name = "John"
+ hasImplicitTypeConversions? true
+  console.log("hello " + 2)
+ hasInfixNotation? true
+  const six = 2 + 2 + 2
+ hasAnonymousFunctions? true
+  (() => console.log("hello world"))()
+ hasMacros? false
+ hasFunctionOverloading? false
+ hasMultilineStrings? true
+  const lines = `one
+  two`
+ hasMultipleInheritance? false
+ hasCaseInsensitiveIdentifiers? false
+ hasOperatorOverloading? false
+ hasReferences? true
+ hasPrintStatements? true
+  console.log("Hi")
+ hasInheritance? true
+  class B {}
+  class A extends B {}
+ letterFirstIdentifiers? true
+ hasStrings? true
+  const greeting = "hello world"
+ hasSwitch? true
+  var animal = "dog"
+  switch (animal) {
+   case "dog": console.log("yay"); break;
+   case "cat": console.log("oh"); break;
+  }
+ hasTernaryOperators? true
+  let i = true ? 1 : 0
+ hasWhileLoops? true
+  let times = 10
+  while (times) {times--}
+  console.log("done")
+ hasZeroBasedNumbering? true
+ isCaseSensitive? true
+ hasFunctions? true
+  function helloWorld() {console.log("hi")}
+ hasMethods? true
+  class Person {
+   method1() {}
+   method2() {}
+  }
+ hasIncrementAndDecrementOperators? true
+  let i = 0
+  i++
+  i--
+
+wikipedia https://en.wikipedia.org/wiki/JavaScript
+ example
+  var minstake   = 0.00000100;  // valor base
+      //-----------------------------------------
+      var autorounds = 99;         // n° de rolls
+      //======================================================
+      // if (profit > profit_max) {
+          //     error_title = "Maximum profit exceeded";
+          //     error_info = "Maximum profit: " + number_format(profit_max, devise_decimal);
+          //     error_value = "Maximum profit exceeded - Maximum profit: " + number_format(profit_max, devise_decimal);
+          //     error = true;
+          // }
+          // else if (amount > balance) {
+          //     error_title = "Bet amount";
+          //     error_info = "Maximum bet: " + number_format(balance, devise_decimal);
+          //     error_value = "Bet amount - Maximum bet: " + number_format(balance, devise_decimal);
+          //     error = true;
+          // }
+      var handbrake  = 1.0000000;  // valor lose pause game
+      var autoruns   = 1;
+          // else if (amount > bet_max) {
+          //     error_title = "Bet amount";
+          //     error_info = "Maximum bet: " + number_format(bet_max, devise_decimal);
+          //     error_value = "Bet amount - Maximum bet: " + number_format(bet_max, devise_decimal);
+          //     error = true;
+          // }
+          // else if (amount < bet_min) {
+          //     error_title = "Bet amount";
+          //     error_info = "Minimum bet: " + number_format(bet_min, devise_decimal);
+          //     error_value = "Bet amount - Minimum bet: " + number_format(bet_min, devise_decimal);
+          //     error = true;
+          // }
+      function playnow() {
+             if (autoruns > autorounds ) { console.log('Limit reached'); return; }
+             document.getElementById('double_your_btc_bet_hi_button').click();
+             setTimeout(checkresults, 1000);
+             return;}
+      function checkresults() {
+             if (document.getElementById('double_your_btc_bet_hi_button').disabled === true) {
+                    setTimeout(checkresults, 1000);
+                    return;
+             }
+             var stake = document.getElementById('double_your_btc_stake').value * 1;
+             var won = document.getElementById('double_your_btc_bet_win').innerHTML;
+             if (won.match(/(\d+\.\d+)/) !== null) { won = won.match(/(\d+\.\d+)/)[0]; } else { won = false; }
+             var lost = document.getElementById('double_your_btc_bet_lose').innerHTML;
+             if (lost.match(/(\d+\.\d+)/) !== null) { lost = lost.match(/(\d+\.\d+)/)[0]; } else { lost = false; }
+             if (won && !lost) { stake = minstake; console.log('Bet #' + autoruns + '/' + autorounds + ': Won  ' + won  + ' Stake: ' + stake.toFixed(8)); }
+             if (lost && !won) { stake = lost * 2.1; console.log('Bet #' + autoruns + '/' + autorounds + ': Lost ' + lost + ' Stake: ' + stake.toFixed(8)); }
+             if (!won && !lost) { console.log('Something went wrong'); return; }
+             document.getElementById('double_your_btc_stake').value = stake.toFixed(8);
+             autoruns++;
+             if (stake >= handbrake) {
+                    document.getElementById('handbrakealert').play();
+                    console.log('Handbrake triggered! Execute playnow() to override');
+                 return;
+             }
+             setTimeout(playnow, 1000);
+             return;
+             }playnow()
+ related java lua scheme perl self c python awk hypertalk actionscript coffeescript dart livescript objective-j opa perl-6 qml typescript json ecmascript html regex pdf tcl c-- vbscript jscript jquery npm-pm mongodb sql max unity-engine google-apps-script objective-c applescript visual-studio-editor asmjs processing oberon smalltalk scala racket llvmir fantom haxe clojure kotlin squeak wasm
+ summary JavaScript (), often abbreviated as JS, is a high-level, dynamic, weakly typed, prototype-based, multi-paradigm, and interpreted programming language. Alongside HTML and CSS, JavaScript is one of the three core technologies of World Wide Web content production. It is used to make webpages interactive and provide online programs, including video games. The majority of websites employ it, and all modern web browsers support it without the need for plug-ins by means of a built-in JavaScript engine. Each of the many JavaScript engines represent a different implementation of JavaScript, all based on the ECMAScript specification, with some engines not supporting the spec fully, and with many engines supporting additional features beyond ECMA. As a multi-paradigm language, JavaScript supports event-driven, functional, and imperative (including object-oriented and prototype-based) programming styles. It has an API for working with text, arrays, dates, regular expressions, and basic manipulation of the DOM, but the language itself does not include any I/O, such as networking, storage, or graphics facilities, relying for these upon the host environment in which it is embedded. Initially only implemented client-side in web browsers, JavaScript engines are now embedded in many other types of host software, including server-side in web servers and databases, and in non-web programs such as word processors and PDF software, and in runtime environments that make JavaScript available for writing mobile and desktop applications, including desktop widgets. Although there are strong outward similarities between JavaScript and Java, including language name, syntax, and respective standard libraries, the two languages are distinct and differ greatly in design; JavaScript was influenced by programming languages such as Self and Scheme.
+ pageId 9845
+ dailyPageViews 4264
+ created 2001
+ backlinksCount 8982
+ revisionCount 6131
+ appeared 1995
+
+githubLanguage JavaScript
+ fileExtensions js _js bones es es6 frag gs jake jsb jscad jsfl jsm jss mjs njs pac sjs ssjs xsjs xsjslib
+ trendingProjects
+  author name avatar url language languageColor stars forks currentPeriodStars description
+  PavelDoGreat WebGL-Fluid-Simulation https://github.com/PavelDoGreat.png https://github.com/PavelDoGreat/WebGL-Fluid-Simulation JavaScript #f1e05a 6010 473 2246 "Play with fluids in your browser (works even on mobile)"
+  yangshun tech-interview-handbook https://github.com/yangshun.png https://github.com/yangshun/tech-interview-handbook JavaScript #f1e05a 33598 4587 4242 "💯 Materials to help you rock your next coding interview"
+  haotian-wang google-access-helper https://github.com/haotian-wang.png https://github.com/haotian-wang/google-access-helper JavaScript #f1e05a 3644 1071 1332 谷歌访问助手破解版
+  nondanee UnblockNeteaseMusic https://github.com/nondanee.png https://github.com/nondanee/UnblockNeteaseMusic JavaScript #f1e05a 5101 689 1660 "Revive unavailable songs for Netease Cloud Music"
+  ricklamers gridstudio https://github.com/ricklamers.png https://github.com/ricklamers/gridstudio JavaScript #f1e05a 5643 937 3362 "Grid studio is a web-based spreadsheet application with full integration of the Python programming language."
+  amejiarosario dsa.js-data-structures-algorithms-javascript https://github.com/amejiarosario.png https://github.com/amejiarosario/dsa.js-data-structures-algorithms-javascript JavaScript #f1e05a 4576 334 2082 "Data Structures and Algorithms explained and implemented in JavaScript"
+  bilibili flv.js https://github.com/bilibili.png https://github.com/bilibili/flv.js JavaScript #f1e05a 15970 2425 648 "HTML5 FLV Player"
+  outline outline https://github.com/outline.png https://github.com/outline/outline JavaScript #f1e05a 5553 330 2038 "The fastest wiki and knowledge base for growing teams. Beautiful, feature rich, markdown compatible and open source."
+  jamiebuilds the-super-tiny-compiler https://github.com/jamiebuilds.png https://github.com/jamiebuilds/the-super-tiny-compiler JavaScript #f1e05a 14459 1332 966 "⛄️ Possibly the smallest compiler ever"
+  YvetteLau Blog https://github.com/YvetteLau.png https://github.com/YvetteLau/Blog JavaScript #f1e05a 1043 181 253 【前端进阶】优质博文
+  alvarotrigo fullPage.js https://github.com/alvarotrigo.png https://github.com/alvarotrigo/fullPage.js JavaScript #f1e05a 27942 6580 805 "fullPage plugin by Alvaro Trigo. Create full screen pages fast and simple"
+  dcloudio uni-app https://github.com/dcloudio.png https://github.com/dcloudio/uni-app JavaScript #f1e05a 12081 957 1600 "uni-app 是使用 Vue 语法开发小程序、H5、App的统一框架"
+  webtorrent webtorrent https://github.com/webtorrent.png https://github.com/webtorrent/webtorrent JavaScript #f1e05a 20280 1948 307 "⚡️ Streaming torrent client for the web"
+  answershuto learnVue https://github.com/answershuto.png https://github.com/answershuto/learnVue JavaScript #f1e05a 7570 1538 421 "Vue.js 源码解析"
+  date-fns date-fns https://github.com/date-fns.png https://github.com/date-fns/date-fns JavaScript #f1e05a 19569 803 836 "⏳ Modern JavaScript date utility library ⌛️"
+  Kickball awesome-selfhosted https://github.com/Kickball.png https://github.com/Kickball/awesome-selfhosted JavaScript #f1e05a 35277 2823 1495 "This is a list of Free Software network services and web applications which can be hosted locally. Selfhosting is the process of locally hosting and managing applications instead of renting from SaaS providers."
+  react-ui-kit dribbble2react https://github.com/react-ui-kit.png https://github.com/react-ui-kit/dribbble2react JavaScript #f1e05a 1143 522 222 "Transform Dribbble designs to React-Native code & YouTube video tutorials"
+  jonasschmedtmann complete-javascript-course https://github.com/jonasschmedtmann.png https://github.com/jonasschmedtmann/complete-javascript-course JavaScript #f1e05a 2088 3077 198 "Starter files, final projects and FAQ for my Complete JavaScript course"
+  graphql graphql-js https://github.com/graphql.png https://github.com/graphql/graphql-js JavaScript #f1e05a 14679 1279 340 "A reference implementation of GraphQL for JavaScript"
+  DIYgod RSSHub https://github.com/DIYgod.png https://github.com/DIYgod/RSSHub JavaScript #f1e05a 8818 1112 480 "🍰 万物皆可 RSS"
+  qianguyihao Web https://github.com/qianguyihao.png https://github.com/qianguyihao/Web JavaScript #f1e05a 6166 1785 598 前端入门和进阶学习笔记，超详细的Web前端学习图文教程。从零开始学前端，做一个Web全栈工程师。持续更新...
+  Binaryify NeteaseCloudMusicApi https://github.com/Binaryify.png https://github.com/Binaryify/NeteaseCloudMusicApi JavaScript #f1e05a 11486 2196 826 "网易云音乐 Node.js API service"
+  transloadit uppy https://github.com/transloadit.png https://github.com/transloadit/uppy JavaScript #f1e05a 20872 1051 498 "The next open source file uploader for web browsers 🐶"
+  gchq CyberChef https://github.com/gchq.png https://github.com/gchq/CyberChef JavaScript #f1e05a 5890 818 424 "The Cyber Swiss Army Knife - a web app for encryption, encoding, compression and data analysis"
+  givanz VvvebJs https://github.com/givanz.png https://github.com/givanz/VvvebJs JavaScript #f1e05a 1848 443 616 "Drag and drop website builder javascript library."
+ trendingProjectsCount 26
+
+helloWorldCollection JavaScript
+ // Hello world in JavaScript
+ console.log("Hello World");
+
+linguistGrammarRepo https://github.com/atom/language-javascript
+ firstCommit 2013
+ lastCommit 2018
+ committerCount 103
+ commitCount 1133
+ sampleCount 38
+ example
+  alert("dude!")
+
 reference https://www.w3schools.com/js/js_reserved.asp
+aka ECMAScript es6 es5 ecmascript
+status active
+
+replit javascript
+
+country US
+fileType text
+wordRank 3002
+
+tiobe JavaScript
+ currentRank 6
+
+meetup javascript
+ memberCount 3151948
+ groupCount 5270
+
+linkedInSkill javascript
+ peopleWithThisSkillCount 3826705
+
+projectEuler ECMAScript
+ memberCount
+  2022 2478
+  2019 1818
+
+hopl 2133
+
+subreddit javascript
+ memberCount
+  2017 156874
+
+quineRelay JavaScript
+
+ubuntuPackage nodejs
+
+codeMirror javascript
+
+rosettaCode JavaScript
+
+antlr https://github.com/antlr/grammars-v4/tree/master/javascript
+
+indeedJobs javascript developer
+ 2017 25726

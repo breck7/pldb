@@ -1,3 +1,38 @@
+title Cayenne programming language
 appeared 1998
 type pl
-wikipedia Cayenne_(programming_language)
+
+patterns
+ hasCentralPackageRepository? false
+
+wikipedia https://en.wikipedia.org/wiki/Cayenne_(programming_language)
+ example
+  PrintfType :: String -> #
+  PrintfType (Nil)          = String
+  PrintfType ('%':('d':cs)) = Int    -> PrintfType cs
+  PrintfType ('%':('s':cs)) = String -> PrintfType cs
+  PrintfType ('%':( _ :cs)) =           PrintfType cs
+  PrintfType ( _ :cs)       =           PrintfType cs
+  
+  aux :: (fmt::String) -> String -> PrintfType fmt
+  aux  (Nil)          out = out
+  aux  ('%':('d':cs)) out = \ (i::Int)    -> aux  cs (out ++ show i)
+  aux  ('%':('s':cs)) out = \ (s::String) -> aux  cs (out ++ s)
+  aux  ('%':( c :cs)) out =                  aux  cs (out ++ c : Nil)
+  aux  (c:cs)         out =                  aux  cs (out ++ c : Nil)
+  
+  printf :: (fmt::String) -> PrintfType fmt
+  printf fmt = aux fmt Nil
+ related agda dependent-ml haskell
+ summary Cayenne is a dependently typed functional programming language created by Lennart Augustsson in 1998, making it one of the earliest dependently type programming language (as opposed to proof assistant or logical framework). A notable design decision is that the language allows unbounded recursive functions to be used on the type level, making type checking undecidable. Most dependently typed proof assistants and later dependently typed languages such as Agda included a termination checker to prevent the type checker from looping, while the contemporary Dependent ML restricted the expressivity of the type-level language to maintain decidability. There are very few building blocks in the language, but much syntactic sugar to make it more readable. The basic types are functions, products, and sums. Functions and products use dependent types to gain additional power. The syntax is largely borrowed from Haskell. There is no special module system, because with dependent types records (products) are powerful enough to define modules. The Cayenne implementation was written in Haskell, and it also translated to Haskell, but is currently no longer being maintained.
+ pageId 6528823
+ created 2006
+ backlinksCount 18
+ revisionCount 35
+ dailyPageViews 11
+ appeared 1998
+
+status historical
+fileType text
+
+hopl 5746

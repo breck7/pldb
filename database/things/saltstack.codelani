@@ -1,4 +1,37 @@
+title SaltStack
 appeared 2011
 type pl
+
+patterns
+ hasCentralPackageRepository? false
+
+githubLanguage SaltStack
+ fileExtensions sls
+ trendingProjectsCount 0
+
+githubRepo https://github.com/saltstack/salt
+ firstCommit 2011
+ stars 9357
+ forks 4378
+ subscribers 614
+ created 2011
+ updated 2018
+ description Software to automate the management and configuration of any infrastructure or application at scale. Get access to the Salt software package repository here: 
+ issues 2434
+
+linguistGrammarRepo https://github.com/saltstack/atom-salt
+ firstCommit 2013
+ lastCommit 2015
+ committerCount 6
+ commitCount 25
+ sampleCount 6
+ example
+  base:
+    '*':
+      - packages
+      - coffeestats
+
 website https://repo.saltstack.com/
-github https://github.com/saltstack/salt
+status active
+fileType text
+isOpenSource true

@@ -1,3 +1,51 @@
+title Report Program Generator
 appeared 1959
 type pl
-wikipedia IBM_RPG
+
+patterns
+ hasCentralPackageRepository? false
+
+wikipedia https://en.wikipedia.org/wiki/IBM_RPG
+ example
+  ctl-opt main(GetCustInf);
+         dcl-ds ARMSTF1 ext end-ds;
+         dcl-proc GetCustInf;
+           dcl-pi *n extpgm('CUS001');
+             inCusNo like(arCNum) const;
+             outName like(arName);
+             outAddr1 like(arAdd1);
+             outAddr2 like(arAdd2);
+             outCity like(arCity);
+             outState like(arStte);
+             outZip like(arZip);
+           end-pi;
+           exec sql select arName, arAdd1, arAdd2, arCity, arStte, arZip
+                    into  :outName, :outAddr1, :outAddr2, :outCity, :outState,
+                          :outZip
+                    from   ARMSTF1
+                    where  arCNum = :inCusNo
+                    fetch first 1 row only
+                    with CS
+                    use currently committed;
+           return;
+         end-proc;
+ related cobol pl-i pascal assembly-language algol autocoder java
+ summary RPG is a high-level programming language (HLL) for business applications. RPG is an IBM proprietary programming language and its later versions are available only on IBM i- or OS/400-based systems. It has a long history, having been developed by IBM in 1959 as the Report Program Generator - a tool to replicate punched card processing on the IBM 1401 then updated to RPG II for the IBM System/3 in the late 1960s, and since evolved into an HLL equivalent to COBOL and PL/I. It remains a popular programming language on the IBM i operating system, which runs on IBM Power i platform hardware. The current version, RPG IV (a.k.a. ILE RPG), provides a modern programming environment.
+ pageId 632241
+ dailyPageViews 225
+ created 2004
+ backlinksCount 159
+ revisionCount 549
+ appeared 1959
+
+standsFor Report Program Generator
+status active
+fileType text
+wordRank 7279
+
+tiobe RPG (OS/400)
+ currentRank 47
+
+hopl 207
+
+corporateDevelopers IBM

@@ -1,4 +1,32 @@
+title Cryptol
 appeared 2014
 type pl
-github https://github.com/GaloisInc/cryptol
-wikipedia Cryptol
+
+patterns
+ hasCentralPackageRepository? false
+
+wikipedia https://en.wikipedia.org/wiki/Cryptol
+ summary Cryptol is a domain specific programming language for cryptography developed by the Portland, Oregon based software development firm, Galois, Inc.. The language was originally developed for use by the United States National Security Agency. The language is also used by private firms that provide information technology systems, such as the American company Rockwell Collins provides to aerospace and defense contractors in the United States.The programming language is used for all aspects of developing and using cryptography, such as the design and implementation of new ciphers and the verification of existing cryptographic algorithms.  Cryptol is designed to allow the cryptographer to watch how stream processing functions in the program manipulate the ciphers or encryption algorithms.
+ pageId 20921449
+ created 2008
+ backlinksCount 28
+ revisionCount 64
+ dailyPageViews 10
+ appeared 2003
+
+githubRepo https://github.com/GaloisInc/cryptol
+ firstCommit 2014
+ stars 737
+ forks 76
+ subscribers 80
+ created 2014
+ updated 2018
+ description Cryptol: The Language of Cryptography
+ issues 82
+
+status active
+
+tryItOnline cryptol
+
+fileType text
+isOpenSource true

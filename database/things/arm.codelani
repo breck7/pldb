@@ -1,3 +1,32 @@
+title Acorn RISC Machine
 appeared 1985
 type assembly
-wikipedia ARM_architecture
+
+patterns
+ hasCentralPackageRepository? false
+
+wikipedia https://en.wikipedia.org/wiki/ARM_architecture
+ example
+  ; if (r0 == r1)
+  CMP r0, r1
+  ITE EQ        ; ARM: no code ... Thumb: IT instruction
+  ; then r0 = r2;
+  MOVEQ r0, r2  ; ARM: conditional; Thumb: condition via ITE 'T' (then)
+  ; else r0 = r3;
+  MOVNE r0, r3  ; ARM: conditional; Thumb: condition via ITE 'E' (else)
+  ; recall that the Thumb MOV instruction has no bits to encode "EQ" or "NE"
+ related x86-isa java-bytecode bbc-basic verilog c assembly-language java csharp perl python mmx javascript android unix ios freebsd linux
+ summary ARM, originally Acorn RISC Machine, later Advanced RISC Machine, is a family of reduced instruction set computing (RISC) architectures for computer processors, configured for various environments. British company ARM Holdings develops the architecture and licenses it to other companies, who design their own products that implement one of those architectures‍—‌including systems-on-chips (SoC) and systems-on-modules (SoM) that incorporate memory, interfaces, radios, etc. It also designs cores that implement this instruction set and licenses these designs to a number of companies that incorporate those core designs into their own products. Processors that have a RISC architecture typically require fewer transistors than those with a complex instruction set computing (CISC) architecture (such as the x86 processors found in most personal computers), which improves cost, power consumption, and heat dissipation. These characteristics are desirable for light, portable, battery-powered devices‍—‌including smartphones, laptops and tablet computers, and other embedded systems. For supercomputers, which consume large amounts of electricity, ARM could also be a power-efficient solution. ARM Holdings periodically releases updates to architectures and core designs. All of them support a 32-bit address space (only pre-ARMv3 chips, made before ARM Holdings was formed, as in original Acorn Archimedes, had smaller) and 32-bit arithmetic; instructions for ARM Holdings' cores have 32-bit fixed-length instructions, but later versions of the architecture also support a variable-length instruction set that provides both 32- and 16-bit instructions for improved code density. Some older cores can also provide hardware execution of Java bytecodes. The ARMv8-A architecture, announced in October 2011, adds support for a 64-bit address space and 64-bit arithmetic with its new 32-bit fixed-length instruction set. With over 100 billion ARM processors produced as of 2017, ARM is the most widely used instruction set architecture in terms of quantity produced. Currently, the widely used Cortex cores, older "classic" cores, and specialized SecurCore cores variants are available for each of these to include or exclude optional capabilities.
+ pageId 60558
+ dailyPageViews 2538
+ created 2002
+ backlinksCount 1871
+ revisionCount 3920
+ appeared 1985
+
+standsFor Acorn RISC Machine
+status historical
+fileType text
+wordRank 3230
+linkedInSkill arm
+ peopleWithThisSkillCount 110713

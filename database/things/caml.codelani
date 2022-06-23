@@ -1,4 +1,31 @@
+title Categorical abstract machine language
 appeared 1985
 type pl
+
+patterns
+ hasCentralPackageRepository? false
+
+wikipedia https://en.wikipedia.org/wiki/Caml
+ example
+  # haar [1; 2; 3; 4; -4; -3; -2; -1];;
+     - : int list = [0; 20; 4; 4; -1; -1; -1; -1]
+ related ocaml ml f-sharp lisp c standard-ml
+ summary Caml (originally an acronym for Categorical abstract machine language) is a multi-paradigm, general-purpose programming language which is a dialect of the ML programming language family. Caml was developed in France at INRIA and ENS. Like many descendants of ML, Caml is statically typed, strictly evaluated, and uses automatic memory management. OCaml, as of 2017 the main implementation of Caml, adds many features to the language, including an object layer.
+ pageId 2362118
+ dailyPageViews 84
+ created 2005
+ backlinksCount 31
+ revisionCount 124
+ appeared 1985
+
 website //caml.inria.fr
-wikipedia Caml
+standsFor Categorical abstract machine language
+status active
+country FR
+fileType text
+
+tiobe Caml
+
+hopl 1460
+
+rosettaCode Caml

@@ -1,5 +1,96 @@
+title Jinja
 appeared 2006
 type template
+
+patterns
+ hasCentralPackageRepository? false
+
+wikipedia https://en.wikipedia.org/wiki/Jinja_(template_engine)
+ example
+  <!DOCTYPE html>
+  <html>
+    <head>
+      <title>Value with &lt;unsafe&gt; data</title>
+    </head>
+    <body>
+      1,
+      2,
+      3,
+      4,
+      5,
+      6
+    </body>
+  </html>
+ related python django smarty unix isbn
+ summary Jinja is a template engine for the Python programming language and is licensed under a BSD License created by Armin Ronacher. It is similar to the Django template engine but provides Python-like expressions while ensuring that the templates are evaluated in a sandbox. It is a text-based template language and thus can be used to generate any markup as well as sourcecode. The Jinja template engine allows customization of tags, filters, tests, and globals. Also, unlike the Django template engine, Jinja allows the template designer to call functions with arguments on objects. Jinja is Flask's default template engine.
+ pageId 4218966
+ dailyPageViews 106
+ created 2006
+ backlinksCount 34
+ revisionCount 63
+
+githubLanguage HTML+Django
+ fileExtensions jinja jinja2 mustache njk
+ trendingProjectsCount 0
+
+githubRepo https://github.com/pallets/jinja
+ firstCommit 2007
+ stars 5607
+ forks 1079
+ subscribers 259
+ created 2010
+ updated 2018
+ description The Jinja2 template engine
+ issues 145
+
+linguistGrammarRepo https://github.com/textmate/python-django.tmbundle
+ firstCommit 2005
+ lastCommit 2014
+ committerCount 6
+ commitCount 40
+ sampleCount 2
+ example
+  <h1>Workers</h1>
+  
+  <table class="workers">
+    <tr>
+      <th>Job server</th>
+      <th>IP</th>
+      <th>File descriptor</th>
+      <th>Client ID</th>
+      <th>Functions</th>
+    </tr>
+  
+  {% for server_info in server_infos %}
+    <tr {% if server_info['failed'] %} class="failure" {% endif %} >
+      
+      <th>{{ server_info['hostport'][0] }}:{{ server_info['hostport'][1] }}</th>
+      <th>
+        {%- if server_info['failed'] -%} Not responding! {%- endif -%}
+      </th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+    
+    {% if not server_info['failed'] %}
+      {% for worker in server_info['workers'] %}
+      <tr>
+        <td class="server"></td>
+        <td class="ip">{{ worker['ip'] }}</td>
+        <td class="file_descriptor">{{ worker['file_descriptor'] }}</td>
+        <td class="client_id">{{ worker['client_id'] }}</td>
+        <td class="functions">
+          {{ worker['tasks']|join(', ') }}
+        </td>
+      </tr>
+      {% endfor %}
+    {% endif %}
+  {% endfor %}
+  </table>
+  
+
 website http://jinja.pocoo.org/
-github https://github.com/pallets/jinja
-wikipedia Jinja_(template_engine)
+status active
+fileType text
+isOpenSource true

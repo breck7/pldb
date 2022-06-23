@@ -1,4 +1,24 @@
+title Website Meta Language
 appeared 2006
 type template
+
+patterns
+ hasCentralPackageRepository? false
+
+wikipedia https://en.wikipedia.org/wiki/Website_Meta_Language
+ related wireless-markup-language c perl unix html haml
+ summary Website Meta Language (WML) and its associated command wmk are together a free and extensible web designer's off-line HTML generation toolkit for Unix, distributed under the GNU General Public License (GPL v2). It works as an off-line content management system. It is written in ANSI C and Perl 5, built via a GNU Autoconf based source tree and runs out-of-the-box on all major Unix derivates. WML consists of a control frontend driving up to nine backends in a sequential pass-oriented filtering scheme. Each backend provides one particular core language. WML additionally ships with a set of include files which provide higher-level features. WML's nine backends are: Pass 1: Source Reading and Include File Expansion (ipp) Pass 2: HTML Macro Construct Expansion (mp4h) Pass 3: Perl 5 Programming Construct Expansion (eperl) Pass 4: M4 Macro Construct Expansion (gm4) Pass 5: Diversion Filter (divert) Pass 6: Character and String Substitution (asubst) Pass 7: HTML Fixup (htmlfix) Pass 8: Line Stripping and Output Fixup (htmlstrip) Pass 9: Output Splitting and Final Writing (slice)
+ pageId 290279
+ dailyPageViews 9
+ created 2003
+ backlinksCount 17
+ revisionCount 32
+ appeared 2006
+
 website http://thewml.org/
-wikipedia Website_Meta_Language
+standsFor Website Meta Language
+status historical
+fileType text
+isOpenSource true
+
+rosettaCode WML

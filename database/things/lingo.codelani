@@ -1,3 +1,35 @@
+title Lingo
 appeared 1988
 type pl
-wikipedia Lingo_(programming_language)
+
+patterns
+ hasCentralPackageRepository? false
+ hasComments? true
+
+wikipedia https://en.wikipedia.org/wiki/Lingo_(programming_language)
+ related smalltalk hypertalk javascript actionscript
+ summary Lingo is a verbose object-oriented (OO) scripting language developed by John H. Thompson for use in Adobe Director (formerly Macromedia Director). Lingo is used to develop desktop application software, interactive kiosks, CD-ROMs and Adobe Shockwave content. Lingo is the primary programming language on the Adobe Shockwave platform, which dominated the interactive multimedia product market during the 1990s. Various graphic adventure games were developed with Lingo during the 1990s, including The Journeyman Project, Total Distortion, Mia's Language Adventure, Mia's Science Adventure, and the Didi & Ditto series. Hundreds of free online video games were developed using Lingo, and published on websites such as Miniclip and Shockwave.com. Lingo can be used to build user interfaces, to manipulate raster graphics, vector graphics and 3D computer graphics, and other data processing tasks. Lingo supports specialized syntax for image processing and 3D object manipulation. 3D meshes can also be created on the fly using Lingo.
+ pageId 493076
+ dailyPageViews 40
+ created 2004
+ backlinksCount 30
+ revisionCount 218
+ appeared 1988
+
+helloWorldCollection Lingo
+ Hello World in Lingo (Macromedia Director)
+ 
+ on startmovie
+   alert "Hello World" 
+ end
+ 
+
+status active
+country US
+fileType text
+
+tiobe Lingo
+
+hopl 1640
+
+rosettaCode Lingo

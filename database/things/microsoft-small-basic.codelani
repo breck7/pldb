@@ -1,4 +1,35 @@
+title Microsoft Small Basic
 appeared 2008
 type pl
+
+patterns
+ hasCentralPackageRepository? false
+
+wikipedia https://en.wikipedia.org/wiki/Microsoft_Small_Basic
+ example
+  [SmallBasicType]
+  public static class ExampleClass
+  {
+      public static Primitive Add(Primitive A, Primitive B) => A + B;
+  
+      public static Primitive SomeProperty
+      {
+          get;
+          set;
+      }
+  
+      public static Primitive Pi => (Primitive)3.14159;
+  }
+ related smallbasic logo qbasic visual-basic-dot-net basic csharp xml visual-studio-editor visual-basic visual-studio-code-editor robomind scratch
+ summary Microsoft Small Basic is a programming language and associated IDE. It is Microsoft's simplified variant of the BASIC programming language, intended as an easy programming language for beginners. The associated IDE provides a simplified programming environment with functionality such as syntax highlighting, intelligent code completion, and in-editor documentation access. The language has only 14 keywords.
+ pageId 20153719
+ created 2008
+ backlinksCount 190
+ revisionCount 276
+ dailyPageViews 103
+ appeared 2008
+
 website http://www.smallbasic.com/
-wikipedia Microsoft_Small_Basic
+status active
+fileType text
+isOpenSource true

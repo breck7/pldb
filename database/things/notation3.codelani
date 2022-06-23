@@ -1,11 +1,22 @@
+title Notation3
 appeared 1998
 type metaLanguage
 creators Tim Berners-Lee
-wikipedia Notation3
+
 example
  @prefix dc: <http://purl.org/dc/elements/1.1/>.
  
  <http://en.wikipedia.org/wiki/Tony_Benn>
    dc:title "Tony Benn";
    dc:publisher "Wikipedia".
+
+wikipedia https://en.wikipedia.org/wiki/Notation3
+ summary Notation3, or N3 as it is more commonly known, is a shorthand non-XML serialization of Resource Description Framework models, designed with human-readability in mind: N3 is much more compact and readable than XML RDF notation. The format is being developed by Tim Berners-Lee and others from the Semantic Web community. A formalization of the logic underlying N3 was published by Berners-Lee and others in 2008.N3 has several features that go beyond a serialization for RDF models, such as support for RDF-based rules. Turtle is a simplified, RDF-only subset of N3.
+ backlinksCount 145
+ pageId 2906123
+ dailyPageViews 74
+ appeared 2008
+
 reference https://www.w3.org/DesignIssues/N3Resources
+aka n3
+related turtle rdf rdfa

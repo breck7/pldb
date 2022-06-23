@@ -1,3 +1,20 @@
+title Object-Z
 appeared 1991
 type pl
-wikipedia Object-Z
+
+patterns
+ hasCentralPackageRepository? false
+
+wikipedia https://en.wikipedia.org/wiki/Object-Z
+ related z-notation zpp
+ summary Object-Z is an object-oriented extension to the Z notation developed at the University of Queensland, Australia. Object-Z extends Z by the addition of language constructs resembling the object-oriented paradigm, most notably, classes. Other object-oriented notions such as polymorphism and inheritance are also supported. While not as popular as its base language Z, Object-Z has still received significant attention in the formal methods community, and research on aspects of the language are ongoing, including hybrid languages using Object-Z, tool support (e.g., through the Community Z Tools project) and refinement calculi.
+ created 2004
+ backlinksCount 8
+ pageId 30872150
+ revisionCount 33
+ dailyPageViews 6
+ appeared 2000
+
+status historical
+
+hopl 1649

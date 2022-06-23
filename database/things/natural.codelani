@@ -1,3 +1,27 @@
+title NATURAL
 appeared 1971
 type pl
-wikipedia NATURAL
+
+patterns
+ hasCentralPackageRepository? false
+
+wikipedia https://en.wikipedia.org/wiki/NATURAL
+ example
+  0010 * These two lines (0010 and 0020)
+  0020 ** are comments.
+  0030 FORMAT LS = 80 / * As well as this part of the line (0030)
+  0040 * NOTE: The "/ *" form has a space between the SLASH and ASTERISK.
+  .
+  .
+  0200 END
+ related linux unix model-204 sql cobol
+ summary ADABAS, a contraction of “adaptable database system", is a database package that was developed by Software AG to run on IBM mainframes. Launched in 1971 as a non-relational software package, earnings reports for the package's vendor were being followed by The New York Times in the early 1980s.As of 2017, ADABAS is marketed for use on a wider range of platforms, including Linux, UNIX and Windows.
+ created 2018
+ backlinksCount 34
+ pageId 401962
+ revisionCount 1
+ dailyPageViews 3
+ appeared 1971
+
+status historical
+wordRank 759

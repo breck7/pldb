@@ -1,6 +1,7 @@
+title Nexus file
 appeared 1997
-type textData
-wikipedia Nexus_file
+type textDataFormat
+
 example
  #NEXUS
  BEGIN TAXA;
@@ -10,4 +11,29 @@ example
  BEGIN TREES;
    TREE tree1 = ((A,B),C);
  END;
+
+patterns
+ hasCentralPackageRepository? false
+
+wikipedia https://en.wikipedia.org/wiki/Nexus_file
+ example
+  #NEXUS
+  BEGIN TAXA;
+    TAXLABELS A B C;
+  END;
+  
+  BEGIN TREES;
+    TREE tree1 = ((A,B),C);
+  END;
+ related newick-format nexml phyloxml-format
+ summary The NEXUS file format (usually .nex or .nxs) is widely used in bioinformatics. Several popular phylogenetic programs such as PAUP*, MrBayes, Mesquite,, MacClade and SplitsTree use this format.
+ pageId 6139571
+ created 2006
+ backlinksCount 22
+ revisionCount 71
+ dailyPageViews 35
+ appeared 1997
+
 reference http://wiki.christophchamp.com/index.php/NEXUS_file_format
+status active
+fileType text

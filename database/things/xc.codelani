@@ -1,3 +1,60 @@
+title XMOS community
 appeared 2005
 type pl
-wikipedia XC_(programming_language)
+
+patterns
+ hasCentralPackageRepository? false
+
+wikipedia https://en.wikipedia.org/wiki/XC_(programming_language)
+ example
+  #include <stdio.h>
+  #include <platform.h>
+  
+  void hello(int id, chanend cin, chanend cout){
+    if (id > 0) cin :> int;
+    printf("Hello from core %d!", id);
+    if (id < 3) cout <: 1;
+  }
+  
+  int main(void) {
+    chan c[3];
+    par (int i=0; i<4; i++)
+      on tile[i] : hello(i, c[i], c[(i+1)%4]);
+    return 0;
+  }
+ related c occam
+ summary In computers, XC is a programming language for real-time embedded parallel processors, targeted at the XMOS XCore processor architecture.XC is an imperative language, based on the features for parallelism and communication in occam, and the syntax and sequential features of C. It provides primitive features that correspond to the various architectural resources provided, namely: channel ends, locks, ports and timers. In combination with XCore processors, XC is used to build embedded systems with levels of I/O, real-time performance and computational ability usually attributed to field-programmable gate arrays (FPGAs) or application-specific integrated circuit (ASIC) devices.
+ pageId 25080840
+ created 2009
+ backlinksCount 8
+ revisionCount 67
+ dailyPageViews 31
+ appeared 2005
+ fileExtensions xc
+
+githubLanguage XC
+ fileExtensions xc
+ trendingProjectsCount 0
+
+linguistGrammarRepo https://github.com/graymalkin/xc.tmbundle
+ firstCommit 2005
+ lastCommit 2015
+ committerCount 17
+ commitCount 353
+ sampleCount 1
+ example
+  int main()
+  {
+    int x;
+    chan c;
+    par {
+      c <: 0;
+      c :> x;
+    }
+    return x;
+  }
+  
+
+standsFor XMOS community
+status active
+fileType text

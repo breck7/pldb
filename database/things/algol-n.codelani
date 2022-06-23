@@ -1,3 +1,20 @@
+title ALGOL N
 appeared 1967
 type pl
-wikipedia ALGOL_N
+
+patterns
+ hasCentralPackageRepository? false
+
+wikipedia https://en.wikipedia.org/wiki/ALGOL_N
+ related algol-60 algol-68
+ summary ALGOL N is the name of a successor to ALGOL 60 designed in Japan with the aim of being as powerful as ALGOL 68 but as simple as ALGOL 60. The language was proposed by Nobuo Yoneda. Algol N tried to use extensibility in order to solve the problem that programming language designers faced when trying to make an inextensible language for everything or having to make many languages, one for each domain. It avoided coercion while not making things difficult for programmers. The letter 'N' is short for 'Nippon', or Japan in Japanese.
+ created 2004
+ backlinksCount 7
+ pageId 946649
+ revisionCount 21
+ dailyPageViews 3
+ appeared 1969
+
+status historical
+
+hopl 1809

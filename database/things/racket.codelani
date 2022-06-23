@@ -1,4 +1,115 @@
+title Racket
 appeared 1994
 type pl
+
+patterns
+ isLisp? true
+ hasSymbolTables? true
+  ;; Some programming languages allow the symbol table to be manipulated at run-time, so that symbols can be added at any time.
+ hasCentralPackageRepository? true
+ hasComments? true
+ hasImports? true
+  (require (prefix-in tcp: racket/tcp))
+ hasMacros? true
+  https://docs.racket-lang.org/guide/macros.html
+ hasMixins? true
+  (mixin (interface-expr ...) (interface-expr ...)
+   class-clause ...)
+ hasPrefixNotation? true
+  (+ 1 2 3)
+ hasModules? true
+  (module nest racket
+     (provide (for-syntax meta-eggs)
+              (for-meta 1 meta-chicks)
+              num-eggs)
+     (define-for-syntax meta-eggs 2)
+     (define-for-syntax meta-chicks 3)
+     (define num-eggs 2))
+
+wikipedia https://en.wikipedia.org/wiki/Racket_(programming_language)
+ example
+  #lang typed/racket
+  
+  (: fact (Integer -> Integer))
+  (define (fact n)
+    (cond [(zero? n) 1]
+          [else (* n (fact (- n 1)))]))
+ related x86-isa powerpc sparc mips arm scheme eiffel rust clojure lisp java unicode json unix linux arc
+ summary Racket (formerly PLT Scheme) is a general purpose, multi-paradigm programming language in the Lisp-Scheme family. One of its design goals is to serve as a platform for language creation, design, and implementation. The language is used in a variety of contexts such as scripting, general-purpose programming, computer science education, and research. The platform provides an implementation of the Racket language (including a sophisticated run-time system, various libraries, JIT compiler, and more) along with a development environment called DrRacket (formerly named DrScheme) written in Racket itself. The IDE and an accompanying programming curriculum is used in the ProgramByDesign outreach program, an attempt to turn computing and programming into "an indispensable part of the liberal arts curriculum". The core language is known for its extensive macro system which enables the creation of embedded and domain-specific languages, language constructs such as classes or modules, and separate dialects of Racket with different semantics. The platform distribution is free and open-source software distributed under the GNU Lesser General Public License (LGPL) license. Extensions and packages written by the community are uploaded to Racket's centralized package catalog.
+ pageId 3350021
+ dailyPageViews 286
+ created 2005
+ backlinksCount 184
+ revisionCount 504
+ appeared 1994
+ fileExtensions rkt rktl rktd scrbl plt ss scm
+
+githubLanguage Racket
+ fileExtensions rkt rktd rktl scrbl
+ trendingProjects
+  author name avatar url language languageColor stars forks currentPeriodStars description
+  salimt Courses- https://github.com/salimt.png https://github.com/salimt/Courses- Racket #3c5caa 43 73 9 "Quiz & Assignment of Coursera"
+ trendingProjectsCount 2
+
+helloWorldCollection Racket
+ ;; Hello world in Racket
+ 
+ #lang racket/base
+ "Hello, World!"
+
+linguistGrammarRepo https://github.com/soegaard/racket-highlight-for-github
+ firstCommit 2014
+ lastCommit 2015
+ committerCount 1
+ commitCount 122
+ sampleCount 2
+ example
+  ; Clean, simple and efficient code -- that's the power of Racket!
+  ; http://racket-lang.org/
+  
+  (define (bottles n more)
+    (printf "~a bottle~a of beer~a"
+            (case n [(0) "no more"] [(1) "1"] [else n])
+            (if (= n 1) "" "s")
+            more))
+  
+  (for ([n (in-range 99 0 -1)])
+    (bottles n " on the wall, ")
+    (bottles n ".\n")
+    (printf "Take one down and pass it around, ")
+    (bottles (sub1 n) " on the wall.\n\n"))
+  
+  (displayln "No more bottles of beer on the wall, no more bottles of beer.")
+  (displayln "Go to the store and buy some more, 99 bottles of beer on the wall.")
+  
+
 website http://racket-lang.org
-wikipedia Racket_(programming_language)
+status active
+
+tryItOnline racket
+
+twitter racketlang
+
+fileExtensions rkt rktl rktd scrbl plt ss scm
+fileType text
+isOpenSource true
+
+tiobe Racket
+
+meetup racket
+ memberCount 735
+ groupCount 6
+
+linkedInSkill racket
+ peopleWithThisSkillCount 4702
+
+projectEuler Racket
+ memberCount
+  2019 282
+  2022 316
+
+rosettaCode Racket
+
+conference https://con.racket-lang.org/ RacketCon
+indeedJobs racket engineer
+ 2017 1

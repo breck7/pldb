@@ -1,4 +1,27 @@
+title ALGOL 68-R
 appeared 1970
 type pl
-wikipedia ALGOL_68-R
+
+patterns
+ hasCentralPackageRepository? false
+
+wikipedia https://en.wikipedia.org/wiki/ALGOL_68-R
+ example
+  [1 : 120] CHAR buff;
+  INT unitnumber;
+  STRUCT (BITS typemode, reply, INT count, REF CHAR address)
+        control area := (8r47400014,0,120,buff[1]);
+  ...;
+  CODE 0,6/unitnumber; 157,6/typemode OF control area EDOC
+ related algol-68 punched-tape
+ summary ALGOL 68-R was the first implementation of the Algorithmic language ALGOL 68. In December 1968 the report on the Algorithmic language ALGOL 68 was published.  On 20–24 July 1970 a working conference was arranged by the IFIP to discuss the problems of implementation of the language, a small team from the Royal Radar Establishment attended to present their compiler, written by I.F. Currie, Susan G. Bond and J.D. Morrison.  In the face of estimates of up to 100 man-years to implement the language, using up to 7 pass compilers they described how they had already implemented a one-pass compiler which was in production use in engineering and scientific applications.
+ backlinksCount 8
+ pageId 8632932
+ dailyPageViews 5
+ created 2006
+ appeared 1968
+
 reference https://semanticscholar.org/paper/32fd282fa40e4cbb20eca00e57805a298598bb0a
+status historical
+
+hopl 489

@@ -1,4 +1,8 @@
+title SHADOW
 appeared 1958
 type pl
-reference https://dl.acm.org/doi/10.1145/368959.368992
 description This paper provides an account of the Shadow language that is used to describe syntax and of a corresponding subroutine that enables a computer to perform syntactic analysis. The input to this subroutine consists of a string to be analyzed and a description of the syntax that is to be used. The syntax is expressed in the Shadow language. The output consists of a trace table that expresses the results of the syntactic analysis in a tabular form. Several versions of the subroutine and some associated programs have been in use now for over three years. The present account of the language and the subroutine contains a summary of material that has been described previously in unpublished reports and also some additional discussion of the work in relation to the more general questions of problem-oriented languages and string transformations.
+reference https://dl.acm.org/doi/10.1145/368959.368992
+wordRank 4505
+
+hopl 168

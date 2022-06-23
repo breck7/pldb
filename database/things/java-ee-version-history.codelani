@@ -1,3 +1,57 @@
+title Java EE version history
 appeared 1998
 type pl
-wikipedia Java_EE_version_history
+
+patterns
+ hasCentralPackageRepository? false
+
+wikipedia https://en.wikipedia.org/wiki/Java_EE_version_history
+ example
+  @Entity
+  public class User {
+  
+      @Id
+      @GeneratedValue(strategy = IDENTITY)
+      private Integer id;
+          
+      @Size(min = 2, message="First name too short")
+      private String firstName;
+          
+      @Size(min = 2, message="Last name too short")
+      private String lastName;
+    
+      public Integer getId() {
+          return id;
+      }
+          
+      public void setId(Integer id) {
+          this.id = id;
+      }
+    
+      public String getFirstName() {
+          return firstName;
+      }
+  
+      public void setFirstName(String firstName) {
+          this.firstName = firstName;
+      }
+          
+      public String getLastName() {
+          return lastName;
+      }
+   
+      public void setLastName(String lastName) {
+          this.lastName = lastName;
+      }
+  
+  }
+ related java-server-pages facelets java-ee-version-history
+ summary Java Platform, Enterprise Edition (Java EE), formerly Java 2 Platform, Enterprise Edition (J2EE), currently Jakarta EE, is a set of specifications, extending Java SE 8 (i.e. not based on latest Java 11; while can also work with later it or later than Java 8) with specifications for enterprise features such as distributed computing and web services. Java EE applications are run on reference runtimes, that can be microservices or application servers, which handle transactions, security, scalability, concurrency and management of the components it is deploying. Java EE is defined by its specification. The specification defines APIs and their interactions. As with other Java Community Process specifications, providers must meet certain conformance requirements in order to declare their products as Java EE compliant. Examples of contexts in which Java EE referencing runtimes are used are: e-commerce, accounting, banking information systems.
+ created 2007
+ backlinksCount 322
+ pageId 42869
+ revisionCount 140
+ dailyPageViews 44
+ appeared 1999
+
+status historical

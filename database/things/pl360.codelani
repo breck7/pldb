@@ -1,3 +1,33 @@
+title PL360
 appeared 1967
 type pl
-wikipedia PL360
+
+patterns
+ hasCentralPackageRepository? false
+
+wikipedia https://en.wikipedia.org/wiki/PL360
+ example
+  BEGIN INTEGER BUCKET;
+           IF FLAG THEN
+           BEGIN BUCKET := R0; R0 := R1; R1 := R2;
+                 R2 := BUCKET;
+           END ELSE
+           BEGIN BUCKET := R2; R2 := R1; R1 := R0;
+                R0 := BUCKET;
+           END
+           RESET(FLAG);
+      END
+ related algol assembly-language euler
+ summary PL360 (or PL/360) is a programming language designed by Niklaus Wirth and written by Niklaus Wirth, Joseph  W.  Wells, Jr., and Edwin Satterthwaite, Jr. for the IBM System/360 computer at Stanford University. A description of PL360 was published in early 1968, although the implementation was probably completed before Wirth left Stanford in 1967.
+ pageId 15774460
+ created 2008
+ backlinksCount 17
+ revisionCount 42
+ dailyPageViews 8
+ appeared 1967
+
+status historical
+country US
+fileType text
+
+hopl 342

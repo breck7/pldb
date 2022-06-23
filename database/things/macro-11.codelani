@@ -1,3 +1,29 @@
+title MACRO-11
 appeared 1974
 type pl
-wikipedia MACRO-11
+
+patterns
+ hasCentralPackageRepository? false
+
+wikipedia https://en.wikipedia.org/wiki/MACRO-11
+ example
+  .MACRO HELLO
+  ERRORS DETECTED:  0
+  
+  .LINK HELLO
+  
+  .R HELLO
+  Hello, world!
+  .
+ related assembly-language unix
+ summary MACRO-11 is an assembly language with macro facilities for PDP-11 minicomputers from Digital Equipment Corporation (DEC).  It is the successor to PAL-11 (Program Assembler Loader), an earlier version of the PDP-11 assembly language without macro facilities. The MACRO-11 assembly language was designed for the PDP-11 minicomputer family.  It was supported on all DEC PDP-11 operating systems. PDP-11 Unix systems also include an assembler (called "as"), structurally similar to MACRO-11 but with different syntax and fewer features.
+ created 2005
+ backlinksCount 21
+ pageId 2864587
+ revisionCount 34
+ dailyPageViews 9
+ appeared 1980
+
+status historical
+
+hopl 4442

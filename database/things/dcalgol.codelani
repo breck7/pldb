@@ -1,5 +1,7 @@
+title Data Communications ALGOL
 appeared 1970
 type pl
+
 example
  BEGIN
  ARRAY DCREC [0:0];
@@ -21,4 +23,9 @@ example
  WHILE MYSELF.TASKVALUE = 0 DO
    DISPLAY ("HELLO WORLD"); %Duh
  END.
+
 reference https://en.wikipedia.org/wiki/Burroughs_large_systems
+
+hopl 1958
+
+corporateDevelopers Burroughs Corporation

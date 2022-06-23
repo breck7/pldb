@@ -1,3 +1,21 @@
+title SAC programming language
 appeared 1994
 type pl
-wikipedia SAC_programming_language
+
+patterns
+ hasCentralPackageRepository? false
+
+wikipedia https://en.wikipedia.org/wiki/SAC_programming_language
+ related sisal c haskell nesl nial fortran
+ summary SAC (Single Assignment C) is a strict purely functional programming language whose design is focused on the needs of numerical applications. Emphasis is laid on efficient support for array processing. Efficiency concerns are essentially twofold. On the one hand, efficiency in program development is to be improved by the opportunity to specify array operations on a high level of abstraction. On the other hand, efficiency in program execution, i.e. the runtime performance of programs, in time and memory consumption, is still to be achieved by sophisticated compilation schemes. Only as far as the latter succeeds, the high-level style of specifications can actually be called useful. To facilitate compiling to efficiently executable code, certain functional language features which are not considered essential for numerical applications, e.g. higher-order functions, polymorphism, or lazy evaluation, are not (yet) supported by SAC. These may be found in general-purpose functional languages, e.g. Haskell, Clean, Miranda, or ML. To overcome the acceptance problems encountered by other functional or array based languages intended for numerical / array intensive applications, e.g. SISAL, NESL, Nial, APL, J, or K, particular regard is paid to ease the transition from a C / Fortran like programming environment to SAC. In more detail, the basic language design goals of SAC are to:  provide a purely functional language with a syntax very similar to that of C in order to ease, for a large community of programmers, the transition from an imperative to a functional programming style; support multi-dimensional arrays as first class objects; allow the specification of shape- and dimension-invariant array operations; provide high-level array operations that liberate programming from tedious and error-prone specifications of starts, stops and strides for array traversals thereby improving code reusability and programming productivity, in general. incorporate a module system that allows for separate compilation, separate name spaces, and abstract data types, and, additionally, provides an interface to foreign languages in order to enable reuse of existing code; provide means for a smooth integration of states and state modifications into the functional paradigm based on uniqueness types; use the module system, the foreign language interface, and the integration of states in order to create a standard library which provides a functionality similar to that of the standard C libraries, e.g. powerful I/O facilities or mathematical functions; facilitate the compilation to host machine code which can be efficiently executed both in terms of time and space demand; facilitate the compilation for non-sequential program execution in multiprocessor environments.
+ created 2005
+ backlinksCount 11
+ pageId 2179985
+ revisionCount 32
+ dailyPageViews 11
+ appeared 1994
+
+status historical
+isOpenSource false
+
+hopl 4989

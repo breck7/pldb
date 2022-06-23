@@ -1,4 +1,112 @@
+title Frege
 appeared 2011
 type pl
+
+patterns
+ hasCentralPackageRepository? false
+ hasTypeInference? true
+
+wikipedia https://en.wikipedia.org/wiki/Frege_(programming_language)
+ example
+  {-- 
+      This program displays the
+      current time on standard output
+      every other second.
+      -}
+      
+  module examples.CommandLineClock where
+  
+  data Date = native java.util.Date where
+      native new :: () -> IO (MutableIO Date)             -- new Date()
+      native toString :: Mutable s Date -> ST s String    -- d.toString()
+  
+  --- 'IO' action to give us the current time as 'String'
+  current :: IO String
+  current = do
+      d <- Date.new ()  -- reads system timer, hence IO
+      d.toString
+  
+  main args =  
+      forever do
+          current >>= print   -- print formatted date
+          print "\r"          -- followed by carriage return
+          stdout.flush        -- make sure it's shown
+          Thread.sleep 999L   -- wait 0.999 seconds
+ related haskell jvm java java-bytecode linux unix eclipse-editor
+ summary Frege is a non-strict, purely functional programming language for the Java virtual machine in the spirit of Haskell. It is considered a Haskell dialect or simply "a" Haskell for the Java virtual machine. Frege has a strong static type system with type inference. Higher rank types are supported, though type annotations are required for that. Frege programs are compiled to Java bytecode and run in a Java virtual machine. Existing Java classes and methods can be used seamlessly from Frege after their types have been properly declared. The language was designed by Ingo Wechsung, who named it after the German mathematician, logician and philosopher Gottlob Frege. (This language is unrelated to the Frege Program Prover.)
+ pageId 35111228
+ dailyPageViews 31
+ backlinksCount 11
+ appeared 2011
+ fileExtensions fr
+
+githubLanguage Frege
+ fileExtensions fr
+ trendingProjectsCount 0
+
+linguistGrammarRepo https://github.com/atom-haskell/language-haskell
+ firstCommit 2014
+ lastCommit 2018
+ committerCount 13
+ commitCount 463
+ sampleCount 4
+ example
+  {-- 
+      This program displays the
+      current time on stdandard output
+      every other second.
+      -}
+      
+  module examples.CommandLineClock where
+  
+  data Date = native java.util.Date where
+      native new :: () -> IO (MutableIO Date)     -- new Date()
+      native toString :: Mutable s Date -> ST s String    -- d.toString()
+  
+  --- 'IO' action to give us the current time as 'String'
+  current :: IO String
+  current = do
+      d <- Date.new ()
+      d.toString
+  
+  {- 
+      "java.lang.Thread.sleep" takes a "long" and
+      returns nothing, but may throw an InterruptedException.
+      This is without doubt an IO action.
+      
+      public static void sleep(long millis)
+                    throws InterruptedException
+      
+      Encoded in Frege:
+      - argument type  long   Long
+      - result         void   ()
+      - does IO               IO ()
+      - throws ...            throws ....
+       
+  -}
+  -- .... defined in frege.java.Lang
+  -- native sleep java.lang.Thread.sleep :: Long -> IO () throws InterruptedException
+  
+        
+  main args =  
+      forever do
+          current >>= print
+          print "\r"
+          stdout.flush
+          Thread.sleep 999
+                  
+
 website https://github.com/Frege/frege
-wikipedia Frege_(programming_language)
+status active
+
+twitter fregelang
+
+fileType text
+isOpenSource true
+
+projectEuler Frege
+ memberCount
+  2019 2
+  2022 3
+
+rosettaCode Frege

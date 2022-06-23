@@ -1,8 +1,19 @@
+title wart
 appeared 2010
 type pl
-website http://akkartik.name/post/wart
-github http://github.com/akkartik/wart
+
 example
  def (foo (a | (b c)))     # 'b' and 'c' name parts of list 'a'
    (list a b c)
  (foo '(1 2))
+
+githubRepo http://github.com/akkartik/wart
+ firstCommit 2010
+ stars 107
+ forks 6
+ subscribers 7
+ created 2010
+ updated 2019
+ description An experimental, small, readable Lisp with thorough unit tests and extensible functions/macros.
+
+website http://akkartik.name/post/wart

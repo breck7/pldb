@@ -1,3 +1,92 @@
+title M4
 appeared 1977
 type pl
-wikipedia M4_(computer_language)
+
+patterns
+ hasCentralPackageRepository? false
+ hasComments? true
+
+wikipedia https://en.wikipedia.org/wiki/M4_(computer_language)
+ example
+  <HTML>
+  <h2>1. First Section</h2>
+  <h2>2. Second Section</h2>
+  <h2>3. Conclusion</h2>
+  </HTML>
+ related assembly-language ratfor unix fortran html freebsd
+ summary m4 is a general-purpose macro processor included in all UNIX-like operating systems, and is a component of the POSIX standard. The language was designed by Brian Kernighan and Dennis Ritchie for the original versions of UNIX. It is an extension of an earlier macro processor m3, written by Ritchie for the AP-3 minicomputer. The macro preprocessor operates as a text-replacement tool. It is employed to re-use text templates, typically in computer programming applications, but also in text editing and text-processing applications. Most users require m4 as a dependency of GNU autoconf.
+ pageId 625653
+ dailyPageViews 99
+ created 2004
+ backlinksCount 256
+ revisionCount 200
+ appeared 1977
+
+githubLanguage M4
+ fileExtensions m4
+ trendingProjectsCount 0
+
+helloWorldCollection M4
+ # Hello World for the m4 macro processor
+ Hello
+ 
+
+linguistGrammarRepo https://github.com/Alhadis/language-etc
+ sampleCount 1
+ example
+  dnl Took from https://en.wikipedia.org/wiki/M4_(computer_language)
+  divert(-1)
+  
+  M4 has multiple output queues that can be manipulated with the
+  `divert' macro. Valid queues range from 0 to 10, inclusive, with
+  the default queue being 0.
+  
+  Calling the `divert' macro with an invalid queue causes text to be
+  discarded until another call.  Note that even while output is being
+  discarded, quotes around `divert' and other macros are needed to
+  prevent expansion.
+  
+  # Macros aren't expanded within comments, meaning that keywords such
+  # as divert and other built-ins may be used without consequence.
+  
+  # HTML utility macro:
+  
+  define(`H2_COUNT', 0)
+  
+  # The H2_COUNT macro is redefined every time the H2 macro is used:
+  
+  define(`H2',
+  	`define(`H2_COUNT', incr(H2_COUNT))<h2>H2_COUNT. $1</h2>')
+  
+  divert(1)dnl
+  dnl
+  dnl The dnl macro causes m4 to discard the rest of the line, thus
+  dnl preventing unwanted blank lines from appearing in the output.
+  dnl
+  H2(First Section)
+  H2(Second Section)
+  H2(Conclusion)
+  dnl
+  divert(0)dnl
+  dnl
+  <HTML>
+  undivert(1)dnl One of the queues is being pushed to output.
+  </HTML>
+  
+
+status active
+
+tryItOnline m4
+
+country US
+fileType text
+
+tiobe M4
+
+hopl 766
+
+quineRelay M4
+
+ubuntuPackage m4
+
+rosettaCode M4

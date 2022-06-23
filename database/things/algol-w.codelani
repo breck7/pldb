@@ -1,3 +1,45 @@
+title ALGOL W
 appeared 1966
 type pl
-wikipedia ALGOL_W
+
+patterns
+ hasCentralPackageRepository? false
+
+wikipedia https://en.wikipedia.org/wiki/ALGOL_W
+ example
+  RECORD PERSON (
+      STRING(20) NAME; 
+      INTEGER AGE; 
+      LOGICAL MALE; 
+      REFERENCE(PERSON) FATHER, MOTHER, YOUNGESTOFFSPRING, ELDERSIBLING
+  );
+  
+  REFERENCE(PERSON) PROCEDURE YOUNGESTUNCLE (REFERENCE(PERSON) R);
+      BEGIN
+          REFERENCE(PERSON) P, M;
+          P := YOUNGESTOFFSPRING(FATHER(FATHER(R)));
+          WHILE (P ¬= NULL) AND (¬ MALE(P)) OR (P = FATHER(R)) DO
+              P := ELDERSIBLING(P);
+          M := YOUNGESTOFFSPRING(MOTHER(MOTHER(R)));
+          WHILE (M ¬= NULL) AND (¬ MALE(M)) DO
+              M := ELDERSIBLING(M);
+          IF P = NULL THEN 
+              M 
+          ELSE IF M = NULL THEN 
+              P 
+          ELSE 
+              IF AGE(P) < AGE(M) THEN P ELSE M
+      END
+ related algol-60 pascal modula-2
+ summary ALGOL W is a programming language. It is based on a proposal for ALGOL X by Niklaus Wirth and Tony Hoare as a successor to ALGOL 60 in IFIP Working Group 2.1. When the committee decided that the proposal was not a sufficient advance over ALGOL 60, the proposal was published as A contribution to the development of ALGOL. After making small modifications to the language Wirth supervised a high quality implementation for the IBM/360 at Stanford University that was widely distributed.It represented a relatively conservative modification of ALGOL 60, adding string, bitstring, complex number and reference to record datatypes and call-by-result passing of parameters, introducing the while statement, replacing switch with the case statement, and generally tightening up the language. The implementation was written in PL/360, an ALGOL-like assembly language designed by Wirth. The implementation includes influential debugging and profiling abilities.
+ pageId 211058
+ created 2003
+ backlinksCount 41
+ revisionCount 107
+ dailyPageViews 29
+ appeared 1966
+
+status historical
+fileType text
+
+hopl 243

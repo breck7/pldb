@@ -1,4 +1,113 @@
+title Objective-J
 appeared 2008
 type pl
+
+patterns
+ hasCentralPackageRepository? false
+
+wikipedia https://en.wikipedia.org/wiki/Objective-J
+ example
+  @implementation Address : CPObject
+  {
+    CPString name;
+    CPString city;
+  }
+  
+  - (id)initWithName:(CPString)aName city:(CPString)aCity
+  {
+    self = [super init];
+  
+    name = aName;
+    city = aCity;
+  
+    return self;
+  }
+  
+  - (void)setName:(CPString)aName
+  {
+    name = aName;
+  }
+  
+  - (CPString)name
+  {
+    return name;
+  }
+  
+  + (id)newAddressWithName:(CPString)aName city:(CPString)aCity
+  {
+    return [[self alloc] initWithName:aName city:aCity];
+  }
+  
+  @end
+ related objective-c javascript c smalltalk
+ summary Objective-J is a programming language developed as part of the Cappuccino web development framework. Its syntax is nearly identical to the Objective-C syntax and it shares with JavaScript the same relationship that Objective-C has with the C programming language: that of being a strict, but small, superset; adding traditional inheritance and Smalltalk/Objective-C style dynamic dispatch. Pure JavaScript, being a prototype-based language, already has a notion of object orientation and inheritance, but Objective-J adds the use of class-based programming to JavaScript. Programs written in Objective-J need to be preprocessed before being run by a web browser's JavaScript virtual machine. This step can occur in the web browser at runtime or by a compiler which translates Objective-J programs into pure JavaScript code.  The Objective-J compiler is written in JavaScript; consequently, deploying Objective-J programs does not require a web browser plug-in. Objective-J can be compiled and run on Node.js.
+ pageId 19176983
+ created 2008
+ backlinksCount 102
+ revisionCount 112
+ dailyPageViews 31
+ appeared 2008
+
+githubLanguage Objective-J
+ fileExtensions j sj
+ trendingProjectsCount 0
+
+linguistGrammarRepo https://github.com/textmate/javascript-objective-j.tmbundle
+ firstCommit 2008
+ lastCommit 2014
+ committerCount 3
+ commitCount 7
+ sampleCount 3
+ example
+  
+  @import <Foundation/CPObject.j>
+  
+  
+  @implementation AppController : CPObject
+  {
+  }
+  
+  - (void)applicationDidFinishLaunching:(CPNotification)aNotification
+  {
+      // The end result of this layout will be the kind of master/detail/auxilliary view
+      // found in iTunes, Mail, and many other apps.
+  
+      var theWindow = [[CPWindow alloc] initWithContentRect:CGRectMakeZero() styleMask:CPBorderlessBridgeWindowMask],
+          contentView = [theWindow contentView];
+  
+      var navigationArea = [[CPView alloc] initWithFrame:CGRectMake(0.0, 0.0, 150.0, CGRectGetHeight([contentView bounds]) - 150.0)];
+  
+      [navigationArea setBackgroundColor:[CPColor redColor]];
+  
+      // This view will grow in height, but stay fixed width attached to the left side of the screen.
+      [navigationArea setAutoresizingMask:CPViewHeightSizable | CPViewMaxXMargin];
+  
+      [contentView addSubview:navigationArea];
+  
+      var metaDataArea = [[CPView alloc] initWithFrame:CGRectMake(0.0, CGRectGetMaxY([navigationArea frame]), 150.0, 150.0)];
+  
+      [metaDataArea setBackgroundColor:[CPColor greenColor]];
+  
+      // This view will stay the same size in both directions, and fixed to the lower left corner.
+      [metaDataArea setAutoresizingMask:CPViewMinYMargin | CPViewMaxXMargin];
+  
+      [contentView addSubview:metaDataArea];
+  
+      var contentArea = [[CPView alloc] initWithFrame:CGRectMake(150.0, 0.0, CGRectGetWidth([contentView bounds]) - 150.0, CGRectGetHeight([contentView bounds]))];
+  
+      [contentArea setBackgroundColor:[CPColor blueColor]];
+  
+      // This view will grow in both height an width.
+      [contentArea setAutoresizingMask:CPViewWidthSizable | CPViewHeightSizable];
+  
+      [contentView addSubview:contentArea];
+  
+      [theWindow orderFront:self];
+  }
+  
+  @end
+
 website http://www.cappuccino-project.org/
-wikipedia Objective-J
+status active
+fileType text
+isOpenSource true

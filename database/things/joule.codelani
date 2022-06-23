@@ -1,3 +1,25 @@
+title Joule programming language
 appeared 1996
 type pl
-wikipedia Joule_(programming_language)
+
+patterns
+ hasCentralPackageRepository? false
+
+wikipedia https://en.wikipedia.org/wiki/Joule_(programming_language)
+ example
+  If amount <= balance
+         • account withdraw: amount
+     else
+         • account report-bounce:
+     end
+ related e ascii unicode
+ summary Joule is a concurrent dataflow programming language, designed for building distributed applications. It is so concurrent that the order of statements within a block is irrelevant to the operation of the block. Statements are executed whenever possible, based on their inputs. Everything in Joule happens by sending messages. There is no control flow. Instead, the programmer describes the flow of data, making it a dataflow programming language.   It is considered the precursor to the E programming language.
+ pageId 502786
+ created 2004
+ backlinksCount 46
+ revisionCount 30
+ dailyPageViews 15
+ appeared 1996
+
+status historical
+fileType text

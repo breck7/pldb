@@ -1,8 +1,7 @@
+title WebAssembly
 appeared 2015
 type bytecode
-website http://webassembly.org/
-github https://github.com/WebAssembly/wabt
-wikipedia WebAssembly
+
 example
  20 00
  50
@@ -16,3 +15,77 @@ example
  10 00
  7E
  0B
+
+patterns
+ hasCentralPackageRepository? false
+
+wikipedia https://en.wikipedia.org/wiki/WebAssembly
+ example
+  (module
+    (import "math" "exp" (func $exp (param f64) (result f64)))
+    (func (export "doubleExp") (param $0 f64) (result f64)
+      (f64.mul
+        (call $exp
+          (get_local $0))
+        (f64.const 2))))
+ related asmjs assembly-language javascript unity-engine llvmir c rust java csharp go s-expressions doi
+ summary WebAssembly (Wasm, WA) is a web standard that defines a binary format and a corresponding assembly-like text format for executable code in Web pages. It is meant to enable executing code nearly as fast as running native machine code. It was envisioned to complement JavaScript to speed up performance-critical parts of web applications and later on to enable web development in languages other than JavaScript. WebAssembly does not attempt to replace JavaScript, but to complement it. It is developed at the World Wide Web Consortium (W3C) with engineers from Mozilla, Microsoft, Google and Apple.It is executed in a sandbox in the web browser after a verification step. Programs can be compiled from high-level languages into Wasm modules and loaded as libraries from within JavaScript applets.
+ pageId 47013794
+ dailyPageViews 392
+ created 2015
+ backlinksCount 269
+ revisionCount 215
+ appeared 2017
+ fileExtensions wat wasm
+
+githubLanguage WebAssembly
+ fileExtensions wast wat
+ trendingProjects
+  author name avatar url language languageColor stars forks currentPeriodStars description
+  AssemblyScript assemblyscript https://github.com/AssemblyScript.png https://github.com/AssemblyScript/assemblyscript WebAssembly #04133b 6742 263 287 "Definitely not a TypeScript to WebAssembly compiler 🚀"
+ trendingProjectsCount 2
+
+githubRepo https://github.com/WebAssembly/wabt
+ stars 1216
+ forks 160
+ subscribers 114
+ created 2015
+ updated 2018
+ firstCommit 2015
+ description The WebAssembly Binary Toolkit
+ issues 34
+
+linguistGrammarRepo https://github.com/Alhadis/language-webassembly
+ firstCommit 2017
+ lastCommit 2017
+ committerCount 1
+ commitCount 32
+ sampleCount 6
+ example
+  (module
+    (import "env" "printInt" (func $printInt (param i32)))
+    (func $add (param $lhs i32) (param $rhs i32) (result i32)
+      get_local $lhs
+      get_local $rhs
+      i32.add
+    )
+  
+    (func $main
+      (call $printInt
+        (call $add (i32.const 9) (i32.const 8))))
+  
+    (export "main" (func $main))
+  )
+  
+
+website http://webassembly.org/
+status active
+
+tryItOnline wasm
+
+fileExtensions wasm
+fileType text
+isOpenSource true
+writtenIn cpp
+indeedJobs webassembly engineer
+ 2017 5

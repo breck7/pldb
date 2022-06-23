@@ -1,4 +1,26 @@
+title PICO
 appeared 1997
 type pl
+
+patterns
+ hasCentralPackageRepository? false
+
+wikipedia https://en.wikipedia.org/wiki/Pico_(programming_language)
+ example
+  `http://www.paulgraham.com/accgen.html`
+  foo(n): fun(i): n := n+i
+ related scheme
+ summary See also Pico (disambiguation).Pico is a programming language developed at the Software Languages Lab at Vrije Universiteit Brussel. The language was created to introduce the essentials of programming to non-computer science students. Pico can be seen as an effort to generate a palatable and enjoyable language for people who do not want to study hard for the elegance and power of a language. They have done it by adapting Scheme's semantics. While designing Pico, the Software Languages Lab was inspired by the Abelson and Sussman's book "Structure and Interpretation of Computer Programs". Furthermore, they were influenced by the teaching of programming at high school or academic level. Pico should be interpreted as 'small', the idea was to create a small language for educational purposes.
+ pageId 379013
+ created 2003
+ backlinksCount 14
+ revisionCount 81
+ dailyPageViews 14
+ appeared 1997
+
 website pico.vub.ac.be
-wikipedia Pico_(programming_language)
+status historical
+country BE
+fileType text
+
+hopl 2364

@@ -1,5 +1,21 @@
+title Strand
 appeared 1989
 type pl
-wikipedia Strand_%28programming_language%29
-reference https://link.springer.com/chapter/10.1007/978-1-4471-3421-3_17
+
+patterns
+ hasCentralPackageRepository? false
+
 description Strand is a logic programming language designed for efficient programming of parallel computers.
+
+wikipedia https://en.wikipedia.org/wiki/Strand_%28programming_language%29
+ related prolog
+ summary Strand is a high-level symbolic language for parallel computing, similar in syntax to Prolog. Artificial Intelligence Ltd were awarded the British Computer Society Award for Technical Innovation 1989 for Strand88. The language was created by computer scientists Ian Foster and Stephen Taylor.
+ created 2006
+ backlinksCount 5
+ pageId 7837169
+ revisionCount 13
+ dailyPageViews 9
+ appeared 1989
+
+reference https://link.springer.com/chapter/10.1007/978-1-4471-3421-3_17
+status historical

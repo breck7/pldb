@@ -1,7 +1,7 @@
+title Document Structure Description
 appeared 2000
 type xmlFormat
-website https://www.brics.dk/DSD/
-wikipedia Document_Structure_Description
+
 example
  <dsd xmlns="http://www.brics.dk/DSD/2.0[permanent dead link]"
   xmlns:my="http://example.com">
@@ -24,4 +24,12 @@ example
   </if>
   
  </dsd>
+
+wikipedia https://en.wikipedia.org/wiki/Document_Structure_Description
+ summary Document Structure Description, or DSD, is a schema language for XML, that is, a language for describing valid XML documents. It's an alternative to DTD or the W3C XML Schema. An example of DSD in its simplest form:  <dsd xmlns="http://www.brics.dk/DSD/2.0"  xmlns:my="http://example.com">    <if><element name="my:foo"/>   <declare>    <attribute name="first"/>    <attribute name="second"/>    <contents>     <element name="my:bar"/>    </contents>   </declare>  </if>    <if><element name="my:bar"/>   <declare>    <contents>    </contents>   </declare>  </if>   </dsd>  This says that element named "foo" in the XML namespace "http://example.com" may have two attributes, named "first" and "second". A "foo" element may not have any character data. It must contain one subelement, named "bar", also in the "http://example.com" namespace. A "bar" element is not allowed any attributes, character data or subelements. One XML document that would be valid according to the above DSD would be:  <foo xmlns="http://example.com" second="2">  <bar/> </foo>
+ backlinksCount 9
+ pageId 1545534
+ dailyPageViews 8
+
+website https://www.brics.dk/DSD/
 reference https://www.brics.dk/DSD/dsd.html

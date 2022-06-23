@@ -1,3 +1,10 @@
+title Gello Expression Language
 appeared 2001
 type pl
-wikipedia Gello_Expression_Language
+
+wikipedia https://en.wikipedia.org/wiki/Gello_Expression_Language
+ summary The GELLO Expression Language was started in 2001 and introduced in 2002; in 2005, GELLO was adopted as an international standard by Health Level Seven International and ANSI for a decision support language. GELLO Release 2 was completed and approved by ANSI in June 2010. The GELLO specifications have been developed in coordination with the HL7 Clinical Decision Support TC (CDSTC)GELLO is a class-based object-oriented programming language and a relative of the Object Constraint Language (OCL). OCL is a well-developed constraint language that makes it attractive for use as an expression language. The intention was for GELLO to evolve as a standard query and expression language for decision support.GELLO creates the potential for many decision support options, as the full array of atomic patient data is greatly accessible to complement better, safer clinical decision making by health professionals. Furthermore, this enables specialist clinicians to customize their current systems and create flexible purpose built decision support systems.Standardization of GELLO it has made this language compatible with the HL7 version 3.0 Reference Information Model (RIM). GELLO uses an abstract "virtual medical record" (vMR) so that the same GELLO code can run on multiple systems accessing data stored in different formats. The vMR is a simplified view of the HL7 RIM.The current focus of the HL7 CDS WG is to build on the Clinical Quality Language (CQL)
+ backlinksCount 14
+ pageId 26322208
+ dailyPageViews 10
+ appeared 2001

@@ -1,7 +1,10 @@
+title xql
 appeared 1999
 type queryLanguage
 creators Jonathan Robie
+
 example
  //(editor contains "Leksh*")
-reference http://www.ibiblio.org/xql/xql-tutorial.html
+
 description XQL is a query language designed specifically for XML. In the same sense that SQL is a query language for relational tables and OQL is a query language for objects stored in an object database, XQL is a query language for XML documents.
+reference http://www.ibiblio.org/xql/xql-tutorial.html

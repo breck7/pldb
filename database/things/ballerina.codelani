@@ -1,5 +1,74 @@
+title Ballerina
 appeared 2015
 type pl
+
+patterns
+ hasCentralPackageRepository? true
+ hasComments? true
+  // A comment
+ hasImports? true
+  import ballerina/http;
+  import ballerina/io;
+
+wikipedia https://en.wikipedia.org/wiki/Ballerina_(programming_language)
+ example
+  // The simplest hello world REST API
+  // To run it:
+  // ballerina run demo.bal
+  // To invoke:
+  // curl localhost:9090/hello/hi
+  
+  import ballerina/http;
+  
+  service<http:Service> hello bind {port:9090} {
+    hi (endpoint caller, http:Request request) {
+        http:Response res;
+        res.setTextPayload("Hello World!\n");
+        _ = caller->respond(res);
+    }
+  }
+ related java go rust
+ summary Ballerina is a compiled, type-safe, concurrent programming language targeting microservice development and integration.It is an open source project started in 2015 by architects from WSO2 as code-based alternative to the configuration-based integration tools such as EAI, ESB, and workflow products.Ballerina has various constructs geared toward cloud-native development including support for modern data formats and protocols, reliability, distributed transactions, APIs, and event streams.
+ pageId 57629994
+ created 2018
+ backlinksCount 12
+ revisionCount 42
+ dailyPageViews 37
+ appeared 2015
+
+githubLanguage Ballerina
+ fileExtensions bal
+ trendingProjectsCount 0
+
+githubRepo https://github.com/ballerina-platform/ballerina-lang
+ firstCommit 2014
+ stars 1765
+ forks 431
+ subscribers 147
+ created 2016
+ updated 2019
+ description Ballerina is a compiled, transactional, statically and strongly typed programming language with textual and graphical syntaxes.
+ issues 835
+
+linguistGrammarRepo https://github.com/ballerina-platform/ballerina-grammar
+ firstCommit 2018
+ lastCommit 2018
+ committerCount 7
+ commitCount 58
+ sampleCount 5
+ example
+  import ballerina.lang.system;
+  
+  function main (string[] args) {
+      system:println("Hello, World!");
+  }
+  
+  
+
 website http://ballerina.io/
-github https://github.com/ballerina-platform/ballerina-lang
-wikipedia Ballerina_(programming_language)
+status active
+
+twitter ballerinalang
+
+fileType text
+isOpenSource true

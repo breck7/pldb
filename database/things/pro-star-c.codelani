@@ -1,4 +1,19 @@
+title Pro*C
 appeared 1996
 type pl
-wikipedia Pro*C
+
+patterns
+ hasCentralPackageRepository? false
+
+wikipedia https://en.wikipedia.org/wiki/Pro*C
+ related sql
+ summary Pro*C (also known as Pro*C/C++) is an embedded SQL programming language used by Oracle Database database management systems.  Pro*C uses either C or C++ as its host language.  During compilation, the embedded SQL statements are interpreted by a precompiler and replaced by C or C++ function calls to their respective SQL library.  The output from the Pro*C precompiler is standard C or C++ code that is then compiled by any one of several C or C++ compilers into an executable.
+ pageId 13142178
+ created 2007
+ backlinksCount 18
+ revisionCount 23
+ dailyPageViews 46
+
 reference https://docs.oracle.com/cd/A97630_01/win.920/a96111/intro.htm
+status historical
+fileType text

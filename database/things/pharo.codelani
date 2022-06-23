@@ -1,11 +1,34 @@
+title Pharo
 appeared 2008
 type pl
-website https://pharo.org/
-wikipedia Pharo
+
 example
  Object subclass: #Counter
   instanceVariableNames: ’count initialValue’
   classVariableNames: ’’
   package: ’MyCounter’
-reference https://fosdem.org/2020/schedule/event/pharominimalrefllangkernels/
+
+patterns
+ hasCentralPackageRepository? false
+
 description Pharo is a pure object-oriented programming language and a powerful environment, focused on simplicity and immediate feedback (think IDE and OS rolled into one).
+
+wikipedia https://en.wikipedia.org/wiki/Pharo
+ related smalltalk linux squeak newspeak visualworks
+ summary Pharo is an open source dynamic and reflective language inspired from the programming language and integrated development environment (IDE) Smalltalk. Pharo offers strong live programming features such as immediate object manipulation, live update and hot recompiling. The live programming environment is at the heart of the system.
+ pageId 23490878
+ created 2009
+ backlinksCount 62
+ revisionCount 189
+ dailyPageViews 72
+ appeared 2008
+
+website https://pharo.org/
+reference https://fosdem.org/2020/schedule/event/pharominimalrefllangkernels/
+status active
+
+twitter pharoproject
+
+fileType text
+isOpenSource true
+cheatSheetUrl http://files.pharo.org/media/pharoCheatSheet.pdf

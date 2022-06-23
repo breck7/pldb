@@ -1,2 +1,6 @@
+title Multiline Strings
 type pattern
+psuedoExample hello = """hello\nworld"""
 description Some languages allow strings to span multiple lines.
+status active
+patternKeyword hasMultilineStrings?

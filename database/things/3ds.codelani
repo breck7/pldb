@@ -1,4 +1,57 @@
+title 3DS
 appeared 1990
 type binaryDataFormat
-wikipedia .3ds
+
+patterns
+ hasCentralPackageRepository? false
+
 description 3DS is one of the file formats used by the Autodesk 3ds Max 3D modeling, animation and rendering software.
+
+wikipedia https://en.wikipedia.org/wiki/.3ds
+ example
+  0x4D4D // Main Chunk
+  ├─ 0x0002 // M3D Version
+  ├─ 0x3D3D // 3D Editor Chunk
+  │  ├─ 0x4000 // Object Block
+  │  │  ├─ 0x4100 // Triangular Mesh
+  │  │  │  ├─ 0x4110 // Vertices List
+  │  │  │  ├─ 0x4120 // Faces Description
+  │  │  │  │  ├─ 0x4130 // Faces Material
+  │  │  │  │  └─ 0x4150 // Smoothing Group List
+  │  │  │  ├─ 0x4140 // Mapping Coordinates List
+  │  │  │  └─ 0x4160 // Local Coordinates System
+  │  │  ├─ 0x4600 // Light
+  │  │  │  └─ 0x4610 // Spotlight
+  │  │  └─ 0x4700 // Camera
+  │  └─ 0xAFFF // Material Block
+  │     ├─ 0xA000 // Material Name
+  │     ├─ 0xA010 // Ambient Color
+  │     ├─ 0xA020 // Diffuse Color
+  │     ├─ 0xA030 // Specular Color
+  │     ├─ 0xA200 // Texture Map 1
+  │     ├─ 0xA230 // Bump Map
+  │     └─ 0xA220 // Reflection Map
+  │        │  /* Sub Chunks For Each Map */
+  │        ├─ 0xA300 // Mapping Filename
+  │        └─ 0xA351 // Mapping Parameters
+  └─ 0xB000 // Keyframer Chunk
+     ├─ 0xB002 // Mesh Information Block
+     ├─ 0xB007 // Spot Light Information Block
+     └─ 0xB008 // Frames (Start and End)
+        ├─ 0xB010 // Object Name
+        ├─ 0xB013 // Object Pivot Point
+        ├─ 0xB020 // Position Track
+        ├─ 0xB021 // Rotation Track
+        ├─ 0xB022 // Scale Track
+        └─ 0xB030 // Hierarchy Position
+ related ascii wavefront-object
+ summary 3DS is one of the file formats used by the Autodesk 3ds Max 3D modeling, animation and rendering software. It was the native file format of the old Autodesk 3D Studio DOS (releases 1 to 4), which was popular until its successor (3D Studio MAX 1.0) replaced it in April 1996. Having been around since 1990 (when the first version of 3D Studio DOS was launched), it has grown to become a de facto industry standard for transferring models between 3D programs, or for storing models for 3D resource catalogs (along with OBJ, which is more frequently used as a model archiving file format).While the 3DS format aims to provide an import/export format, retaining only essential geometry, texture and lighting data, the related MAX format (now superseded by the PRJ format) also contains extra information specific to Autodesk 3ds Max, to allow a scene to be completely saved/loaded.
+ backlinksCount 39
+ pageId 21670782
+ created 2009
+ revisionCount 94
+ dailyPageViews 90
+ appeared 1990
+
+status active
+fileType binary

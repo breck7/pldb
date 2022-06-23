@@ -1,5 +1,21 @@
+title Business Object Notation
 appeared 1989
 type notation
-website http://www.bon-method.com/index_normal.htm
-wikipedia Business_Object_Notation
+
+patterns
+ hasCentralPackageRepository? false
+
 description The BON method for analysis and design of object-oriented software was developed 1989-93 by Jean-Marc Nerson and Kim Waldén as a means of extending the higher-level concepts of the Eiffel programming language into the realm of analysis and design aided by a graphical notation. The core idea is simplicity and well-defined semantics, since from our industrial experience we know that anything complex and/or ambiguous becomes useless in practice, and tends to be a hindrance rather than an aid to successful completion of software projects.  In this respect, BON could be viewed as the direct opposite of the widely publicized UML/RUP approach.
+
+wikipedia https://en.wikipedia.org/wiki/Business_Object_Notation
+ related eiffel uml
+ summary In software engineering, Business Object Notation (BON) is a method and graphical notation for high-level object-oriented analysis and design. The method was developed 1989–93 by Jean-Marc Nerson and Kim Waldén as a means of extending the higher-level concepts of the Eiffel programming language. It claims to be much simpler than its competition - the UML - but it didn't enjoy its commercial success.
+ created 2005
+ backlinksCount 8
+ pageId 1790493
+ revisionCount 12
+ dailyPageViews 4
+ appeared 1989
+
+website http://www.bon-method.com/index_normal.htm
+status historical

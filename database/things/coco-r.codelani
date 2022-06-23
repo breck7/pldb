@@ -1,5 +1,23 @@
+title Coco/R
 appeared 1990
 type grammarLanguage
-website http://ssw.jku.at/coco/
-wikipedia Coco/R
+
+patterns
+ hasCentralPackageRepository? false
+
 description Coco/R is a compiler generator, which takes an attributed grammar of a source language and generates a scanner and a parser for this language. The scanner works as a deterministic finite automaton. The parser uses recursive descent. LL(1) conflicts can be resolved by a multi-symbol lookahead or by semantic checks. Thus the class of accepted grammars is LL(k) for an arbitrary k.
+
+wikipedia https://en.wikipedia.org/wiki/Coco/R
+ related unicode utf-8 java csharp pascal modula-2 modula-3 codegear-delphi python ruby eclipse-editor antlr javacc
+ summary Coco/R is a compiler generator that takes an L-attributed Extended Backus–Naur Form (EBNF) grammar of a source language and generates a scanner and a parser for that language. The scanner works as a deterministic finite automaton.  It supports Unicode characters in UTF-8 encoding and can be made case-sensitive or case-insensitive. It can also recognize tokens based on their right-hand-side context. In addition to terminal symbols the scanner can also recognize pragmas, which are tokens that are not part of the syntax but can occur anywhere in the input stream (e.g. compiler directives or end-of-line characters). The parser uses recursive descent; LL(1) conflicts can be resolved by either a multi-symbol lookahead or by semantic checks. Thus the class of accepted grammars is LL(k) for an arbitrary k. Fuzzy parsing is supported by so-called ANY symbols that match complementary sets of tokens. Semantic actions are written in the same language as the generated scanner and parser. The parser's error handling can be tuned by specifying synchronization points and "weak symbols" in the grammar. Coco/R checks the grammar for completeness, consistency, non-redundancy as well as for LL(1) conflicts. There are versions of Coco/R for most modern languages (Java, C#, C++, Pascal, Modula-2, Modula-3, Delphi, VB.NET, Python, Ruby and others). The latest versions from the University of Linz are those for C#, Java and C++. For the Java version, there is an Eclipse plug-in and for C#, a Visual Studio plug-in. There are also sample grammars for Java and C#. Coco/R was originally developed at the ETHZ and moved with Hanspeter Mössenböck to University of Linz when he got his appointment there. Coco/R is distributed under the terms of a slightly relaxed GNU General Public License.
+ created 2004
+ pageId 862658
+ backlinksCount 27
+ revisionCount 51
+ dailyPageViews 15
+ appeared 1985
+
+website http://ssw.jku.at/coco/
+status historical
+fileType text
+isOpenSource true

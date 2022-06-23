@@ -1,9 +1,39 @@
+title Kit
 appeared 2012
 type template
-website https://codekitapp.com/help/kit/
+
 example
  <!-- @page_name: Homepage -->
  <!-- @body_class: home blog -->
  <!-- @include inc/opening.kit -->
-reference https://www.hongkiat.com/blog/kit-language/
+
+patterns
+ hasCentralPackageRepository? false
+
 description HTML template language from CodeKit
+
+githubLanguage Kit
+ fileExtensions kit
+ trendingProjectsCount 0
+
+linguistGrammarRepo https://github.com/atom/language-html
+ firstCommit 2013
+ lastCommit 2018
+ committerCount 51
+ commitCount 371
+ sampleCount 1
+ example
+  <!-- $pageTitle: The Kit Language -->
+  
+  <section>
+  	<h1><!-- $pageTitle --></h1>
+  	<p>
+  		<!-- @include "loremipsum" -->
+  	</p>
+  </section>
+
+website https://codekitapp.com/help/kit/
+reference https://www.hongkiat.com/blog/kit-language/
+status active
+fileType text
+wordRank 1359

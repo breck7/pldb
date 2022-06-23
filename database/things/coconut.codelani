@@ -1,5 +1,33 @@
+title coconut
 appeared 2014
 type pl
+
+patterns
+ hasCentralPackageRepository? false
+ hasPatternMatching? true
+  match [head] + tail in [0, 1, 2, 3]:
+     print(head, tail)
+ hasInfixNotation? true
+  5 `mod` 3 == 2
+ hasAnonymousFunctions? true
+  x -> x ** 2
+
+githubRepo https://github.com/evhub/coconut
+ stars 1372
+ forks 56
+ subscribers 53
+ created 2014
+ updated 2017
+ firstCommit 2014
+ description Simple, elegant, Pythonic functional programming.
+ issues 72
+
 website http://coconut-lang.org/
-github https://github.com/evhub/coconut
 reference https://news.ycombinator.com/item?id=23759721
+status active
+
+tryItOnline coconut
+
+fileType text
+isOpenSource true
+writtenIn python

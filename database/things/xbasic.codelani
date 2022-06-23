@@ -1,3 +1,36 @@
+title Xbasic
 appeared 1988
 type pl
-wikipedia Xbasic
+
+patterns
+ hasCentralPackageRepository? false
+
+wikipedia https://en.wikipedia.org/wiki/Xbasic
+ example
+  ' Programs contain:
+   ' 1. A PROLOG with type/function/constant declarations.
+   ' 2. This Entry() function where execution begins.
+   ' 3. Zero or more additional functions.
+   '
+   FUNCTION Entry()
+  
+   PRINT "Hello World"
+  
+   PRINT 2+2
+   PRINT 44/12
+   PRINT 33*3
+  
+   END FUNCTION
+ related basic c unix linux assembly-language xblite
+ summary XBasic is a variant of the BASIC programming language that was developed in the late 1980s for the Motorola 88000 CPU and Unix by Max Reason. In the early 1990s it was ported to Windows and Linux, and since 1999 it has been available as open source software with its runtime library under the LGPL license. It should not be confused with TI Extended BASIC, which is sometimes called XBasic or X Basic. Xbasic should also not be confused with the Xbasic language used in Alpha Software's Alpha Anywhere and Alpha Five products. Alpha Software has developed Xbasic as a proprietary language for its products. Alpha Software's Xbasic is not connected in any way at all to the version of Xbasic described in this article. Max Reason discontinued his support, and development since has been overseen by Eddie Penninkhof. Version 6.2.3 was the last official release, released on 27 October 2002.
+ created 2006
+ backlinksCount 99
+ pageId 79323
+ revisionCount 2
+ dailyPageViews 1
+ appeared 2002
+
+status historical
+isOpenSource true
+
+rosettaCode XBasic

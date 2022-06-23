@@ -1,3 +1,91 @@
+title XBase++
 appeared 1997
 type pl
-wikipedia XBase%2B%2B
+
+patterns
+ hasCentralPackageRepository? false
+
+wikipedia https://en.wikipedia.org/wiki/XBase%2B%2B
+ example
+  #include "class.ch"
+  
+  //
+  //  This program prints:
+  //
+  //  Missy  Meow!
+  //  Mr. Bojangles  Meow!
+  //  Lassie  Bark!
+  //  Press any key to continue...
+  //
+  
+  /////////////////////////////
+  //
+  PROCEDURE Main()
+  //
+  /////////////////////////////
+  
+    LOCAL aAnimals := Array(3)
+    LOCAL i
+  
+    aAnimals[1] :=  Cat():New("Missy")
+    aAnimals[2] :=  Cat():New("Mr. Bojangles")
+    aAnimals[3] :=  Dog():New("Lassie")
+  
+    FOR i:=1 TO LEN(aAnimals)
+       ? aAnimals[i]:Name + "  " + aAnimals[i]:Talk()
+    NEXT i
+  
+    WAIT
+  
+  RETURN
+  
+  /////////////////////////////
+  //
+  CLASS Animal
+  //
+  /////////////////////////////
+  
+     EXPORTED:
+        VAR Name   READONLY
+  
+        METHOD Init
+        DEFERRED CLASS METHOD Talk
+  ENDCLASS
+  
+  METHOD Animal:Init( cName )
+     ::Name := cName
+  RETURN Self
+  
+  /////////////////////////////
+  //
+  CLASS Dog FROM Animal
+  //
+  /////////////////////////////
+     EXPORTED:
+     METHOD Talk
+  ENDCLASS
+  
+  METHOD Dog:Talk()
+  RETURN "Bark!"
+  
+  /////////////////////////////
+  //
+  CLASS Cat FROM Animal
+  //
+  /////////////////////////////
+     EXPORTED:
+     METHOD Talk
+  ENDCLASS
+  
+  METHOD Cat:Talk()
+  RETURN "Meow!"
+ related xbase clipper visual-foxpro visual-objects
+ summary Xbase++ is an object oriented programming language which has multiple inheritance and polymorphism. It is based on the XBase language dialect and conventions. It is 100% Clipper compatible language supporting multiple inheritance, polymorphism, object oriented programming. It supports the xBase data types, including Codeblocks. With Xbase++ it is possible to generate applications for Windows NT, 95, 98, Me, 2000, XP, VISTA and Windows 7.
+ created 2005
+ backlinksCount 31
+ pageId 2924800
+ revisionCount 65
+ dailyPageViews 19
+ appeared 2000
+
+status historical

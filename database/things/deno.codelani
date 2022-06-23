@@ -1,0 +1,19 @@
+title Deno
+appeared 2018
+type pl
+creators Ryan Dahl
+
+example
+ // Imports `serve` from the remote Deno standard library, using URL.
+ import { serve } from "https://deno.land/std@v0.21.0/http/server.ts";
+ 
+ // `serve` function returns an asynchronous iterator, yielding a stream of requests
+ for await (const req of serve({ port: 8000 })) {
+     req.respond({ body: "Hello, World!\n" });
+ }
+
+wikipedia https://en.wikipedia.org/wiki/Deno_(software)
+
+website https://deno.land/
+status active
+related javascript typescript

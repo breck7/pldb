@@ -1,4 +1,25 @@
+title TextMate
 appeared 2004
 type editor
+
+patterns
+ hasCentralPackageRepository? false
+
+wikipedia https://en.wikipedia.org/wiki/TextMate
+ example
+  text.html.mediawiki
+      markup.list.mediawiki
+          meta.link.inline.external.mediawiki
+              string.other.link.title.external.mediawiki
+ related ftp plist regex bash php ruby markdown mips emacs-editor emacs-lisp rails
+ summary TextMate is a general-purpose GUI text editor for Mac OS X created by Allan Odgaard. TextMate features declarative customizations, tabs for open documents, recordable macros, folding sections, snippets, shell integration, and an extensible bundle system.
+ pageId 3494476
+ created 2005
+ backlinksCount 160
+ revisionCount 519
+ dailyPageViews 87
+ appeared 2004
+
 website http://macromates.com/
-wikipedia TextMate
+status historical
+fileType na

@@ -1,4 +1,46 @@
+title Io
 appeared 2002
 type pl
-wikipedia Io_(programming_language)
+
+patterns
+ hasCentralPackageRepository? false
+ hasComments? true
+ hasOperatorOverloading? true
+
+wikipedia https://en.wikipedia.org/wiki/Io_(programming_language)
+ example
+  factorial := method(n,
+      if(n == 0, return 1)
+      res := 1
+      Range 1 to(n) foreach(i, res = res * i)
+  )
+ related smalltalk newtonscript self lua lisp python ioke
+ summary Io is a pure object-oriented programming language inspired by Smalltalk, Self, Lua, Lisp, Act1, and NewtonScript. Io has a prototype-based object model similar to the ones in Self and NewtonScript, eliminating the distinction between instance and class. Like Smalltalk, everything is an object and it uses dynamic typing. Like Lisp, programs are just data trees. Io uses actors for concurrency. Remarkable features of Io are its minimal size and openness to using external code resources. Io is executed by a small, portable virtual machine.
+ pageId 323340
+ created 2003
+ backlinksCount 59
+ revisionCount 184
+ dailyPageViews 48
+ appeared 2002
+
+githubLanguage Io
+ fileExtensions io
+ trendingProjectsCount 0
+
+linguistGrammarRepo https://github.com/textmate/io.tmbundle
+ firstCommit 2005
+ lastCommit 2014
+ committerCount 6
+ commitCount 33
+
 reference https://news.ycombinator.com/item?id=8867575
+status active
+
+tryItOnline io
+
+fileType text
+wordRank 9022
+
+hopl 7112
+
+rosettaCode Io

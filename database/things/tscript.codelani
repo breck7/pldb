@@ -1,3 +1,27 @@
+title TScript
 appeared 2012
 type pl
-wikipedia TScript
+
+patterns
+ hasCentralPackageRepository? false
+
+wikipedia https://en.wikipedia.org/wiki/TScript
+ example
+  function(){return error = -1;}
+  
+  public main(){
+     if(!function()){
+        if(error != -1) return error;
+     }
+     System::MessageBox(L"function executed correctly");
+  }
+ related linux xml php soap visual-basic
+ summary TScript is an object-oriented embeddable scripting language for C++ that supports hierarchical transient typed variables (TVariable). Its main design criterion is to create a scripting language that can interface with C++, transforming data and returning the result. This enables C++ applications to change their functionality after installation.
+ created 2012
+ backlinksCount 7
+ pageId 37307697
+ revisionCount 51
+ dailyPageViews 7
+
+status historical
+isOpenSource true

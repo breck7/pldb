@@ -1,3 +1,20 @@
+title Business application language
 appeared 1974
 type pl
-wikipedia Business_application_language
+
+patterns
+ hasCentralPackageRepository? false
+
+wikipedia https://en.wikipedia.org/wiki/Business_application_language
+ related basic unix
+ summary Business Application Language (BAL) refers to one of many offshoots of the BASIC language and should not be confused with IBM's well-established Basic assembly language. Business Application Language was originally defined by Honeywell in 1973 and the major diffusion was in their system '80-'90 in Europe with the work of French firm Prologue S.A. that used BAL for programming on their proprietary Operative System (Prologue). In 1986 the language was ported to the Unix platform by GuyPes.  The first development environment, named Balix, are distributed starting in  1988 in Italy and France. A different evolution path was made by Prologue S.A., named ABAL, in 1992. The evolution of Balix, developed in Italy, is called B2U (an acronym for Business under UNIX) developed by GuyPes, and are used for a Banking Information System that are used by one hundred banks in Italy.
+ created 2006
+ backlinksCount 7
+ pageId 7937393
+ revisionCount 32
+ dailyPageViews 3
+ appeared 1973
+
+status historical
+
+hopl 4895

@@ -1,3 +1,29 @@
+title CLAIRE
 appeared 2004
 type pl
-wikipedia Claire_(programming_language)
+
+patterns
+ hasCentralPackageRepository? false
+
+wikipedia https://en.wikipedia.org/wiki/Claire_(programming_language)
+ example
+  fib(n:integer) : integer
+  -> (if (n < 2) 1
+  else fib(n - 1) + fib(n - 2))
+ related smalltalk setl ops5 lisp ml c java ocaml scala f-sharp
+ summary Claire is a high-level functional and object-oriented programming language with rule processing abilities. It was designed by Yves Caseau at Bouygues' e-Lab research laboratory, and received its final definition in 2004. Claire provides:  a simple object system with parametric classes and methods polymorphic and parametric functional programming production rules triggered by events versioned snapshots of the state of the whole system, or any part, supporting rollback and easy exploration of search spaces explicit relations between entities; for example, two entities might be declared inverses of one another first-class sets with convenient syntax for set-based programming an expressive set-based type system allowing both second-order static and dynamic typingClaire's reference implementation, consisting of an interpreter and compiler, was fully open-sourced with the release of version 3.3.46 in February 2009. Another implementation, WebClaire, is commercially supported.
+ pageId 930956
+ created 2004
+ backlinksCount 18
+ revisionCount 96
+ dailyPageViews 9
+ appeared 2004
+ fileExtensions cl
+
+status historical
+country FR
+fileType text
+wordRank 8044
+isOpenSource true
+
+hopl 1902

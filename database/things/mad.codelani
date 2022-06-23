@@ -1,3 +1,37 @@
+title Michigan Algorithm Decoder
 appeared 1959
 type pl
-wikipedia MAD_(programming_language)
+
+patterns
+ hasCentralPackageRepository? false
+
+wikipedia https://en.wikipedia.org/wiki/MAD_(programming_language)
+ example
+  PRINT FORMAT HELLOW
+  VECTOR VALUES HELLOW=$13h0Hello, world*$
+  END OF PROGRAM
+ related algol-58 algol multics algol-60 pl-i isbn
+ summary MAD (Michigan Algorithm Decoder) is a programming language and compiler for the IBM 704 and later the IBM 709, IBM 7090, IBM 7040, UNIVAC 1107, UNIVAC 1108, Philco 210-211, and eventually the IBM S/370 mainframe computers. Developed in 1959 at the University of Michigan by Bernard Galler, Bruce Arden and Robert M. Graham, MAD is a variant of the ALGOL language. It was widely used to teach programming at colleges and universities during the 1960s and played a minor role in the development of CTSS, Multics, and the Michigan Terminal System computer operating systems. The archives at the Bentley Historical Library of the University of Michigan contain reference materials on the development of MAD and MAD/I, including three linear feet of printouts with hand-written notations and original printed manuals.
+ pageId 55579
+ dailyPageViews 24
+ created 2002
+ backlinksCount 43
+ revisionCount 147
+ appeared 1959
+
+helloWorldCollection Michigan Algorithm Decoder
+          R Hello world in MAD
+ 
+ PRINT FORMAT HELLOW
+ VECTOR VALUES HELLOW=$13h0Hello, world*$
+ END OF PROGRAM
+
+standsFor Michigan Algorithm Decoder
+status active
+country US
+fileType text
+wordRank 4248
+
+tiobe MAD
+
+hopl 92

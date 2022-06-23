@@ -1,3 +1,24 @@
+title RenderMan Shading Language
 appeared 1989
 type pl
-wikipedia RenderMan_Shading_Language
+
+patterns
+ hasCentralPackageRepository? false
+
+wikipedia https://en.wikipedia.org/wiki/RenderMan_Shading_Language
+ example
+  float length(vector v) {
+    return sqrt(v . v); /* . is a dot product */
+  }
+ related isbn
+ summary Renderman Shading Language (abbreviated RSL) is a component of the RenderMan Interface Specification, and is used to define shaders. The language syntax is C-like. A shader written in RSL can be used without changes on any RenderMan-compliant renderer, such as Pixar's PhotoRealistic RenderMan, DNA Research's 3Delight, Sitexgraphics' Air or an open source solution such as Pixie or Aqsis. RenderMan Shading Language defines standalone functions and five types of shaders: surface, light, volume, imager and displacement shaders. An example of a surface shader that defines a metal surface is:  Shaders do the work by reading and writing special variables such as Cs (surface color), N (normal at given point), and Ci (final surface color). The arguments to the shaders are global parameters that are attached to objects of the model (so one metal shader can be used for different metals and so on). Shaders have no return values, but functions can be defined which take arguments and return a value. For example, the following function computes vector length using the dot product operator ".":
+ created 2006
+ backlinksCount 22
+ pageId 5405333
+ revisionCount 50
+ dailyPageViews 11
+ appeared 1990
+
+status historical
+
+hopl 1518

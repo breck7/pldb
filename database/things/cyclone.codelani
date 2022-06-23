@@ -1,4 +1,31 @@
+title Cyclone
 appeared 2001
 type pl
+
+patterns
+ hasCentralPackageRepository? false
+
+wikipedia https://en.wikipedia.org/wiki/Cyclone_(programming_language)
+ example
+  char *itoa(int i)
+   {
+      char buf[20], *z;
+      sprintf(buf,"%d",i);
+      z = buf;
+      return z;
+   }
+ related c rust ml
+ summary The Cyclone programming language is intended to be a safe dialect of the C language. Cyclone is designed to avoid buffer overflows and other vulnerabilities that are possible in C programs, without losing the power and convenience of C as a tool for system programming. Cyclone development was started as a joint project of AT&T Labs Research and Greg Morrisett's group at Cornell in 2001. Version 1.0 was released on May 8, 2006.
+ pageId 7645
+ created 2002
+ backlinksCount 28
+ revisionCount 133
+ dailyPageViews 43
+ appeared 2001
+
 website http://cyclone.thelanguage.org
-wikipedia Cyclone_(programming_language)
+status historical
+country US
+fileType text
+
+hopl 3312

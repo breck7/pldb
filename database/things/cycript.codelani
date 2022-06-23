@@ -1,4 +1,66 @@
+title Cycript
 appeared 2008
 type pl
+
+patterns
+ hasCentralPackageRepository? false
+
+githubLanguage Cycript
+ fileExtensions cy
+ trendingProjectsCount 0
+
+linguistGrammarRepo https://github.com/atom/language-javascript
+ firstCommit 2013
+ lastCommit 2018
+ committerCount 103
+ commitCount 1133
+ sampleCount 1
+ example
+  (function(utils) {
+  	// Load C functions declared in utils.loadFuncs
+  	var shouldLoadCFuncs = true;
+  	// Expose the C functions to cycript's global scope
+  	var shouldExposeCFuncs = true;
+  	// Expose C constants to cycript's global scope
+  	var shouldExposeConsts = true;
+  	// Expose functions defined here to cycript's global scope
+  	var shouldExposeFuncs = true;
+  	// Which functions to expose
+  	var funcsToExpose = ["exec", "include", "sizeof", "logify", "apply", "str2voidPtr", "voidPtr2str", "double2voidPtr", "voidPtr2double", "isMemoryReadable", "isObject", "makeStruct"];
+  	
+  	// C functions that utils.loadFuncs loads
+  	var CFuncsDeclarations = [
+  		// <stdlib.h>
+  		"void *calloc(size_t num, size_t size)",
+  		// <string.h>
+  		"char *strcpy(char *restrict dst, const char *restrict src)",
+  		"char *strdup(const char *s1)",
+  		"void* memset(void* dest, int ch, size_t count)",
+  		// <stdio.h>
+  		"FILE *fopen(const char *, const char *)",
+  		"int fclose(FILE *)",
+  		"size_t fread(void *restrict, size_t, size_t, FILE *restrict)",
+  		"size_t fwrite(const void *restrict, size_t, size_t, FILE *restrict)",
+  		// <mach.h>
+  		"mach_port_t mach_task_self()",
+  		"kern_return_t task_for_pid(mach_port_name_t target_tport, int pid, mach_port_name_t *tn)",
+  		"kern_return_t mach_vm_protect(vm_map_t target_task, mach_vm_address_t address, mach_vm_size_t size, boolean_t set_maximum, vm_prot_t new_protection)",
+  		"kern_return_t mach_vm_write(vm_map_t target_task, mach_vm_address_t address, vm_offset_t data, mach_msg_type_number_t dataCnt)",
+  		"kern_return_t mach_vm_read(vm_map_t target_task, mach_vm_address_t address, mach_vm_size_t size, vm_offset_t *data, mach_msg_type_number_t *dataCnt)",
+  	];
+  	
+  	/*
+  		Replacement for eval that can handle @encode etc.
+  		
+  		Usage:
+  			cy# utils.exec("@encode(void *(int, char))")
+  			@encode(void*(int,char))
+  	*/
+  	utils.exec = function(str) {
+  		var mkdir = @encode(int (const char *, int))(dlsym(RTLD_DEFAULT, "mkdir"));
+  		var tempnam = @encode(char *(const char *, const char *))(dlsym(R
+
 website http://www.cycript.org/
 reference https://git.saurik.com/cycript.git
+status active
+fileType text

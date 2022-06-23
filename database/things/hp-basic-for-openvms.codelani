@@ -1,3 +1,30 @@
+title HP BASIC for OpenVMS
 appeared 1982
 type pl
-wikipedia HP_BASIC_for_OpenVMS
+
+patterns
+ hasCentralPackageRepository? false
+
+wikipedia https://en.wikipedia.org/wiki/HP_BASIC_for_OpenVMS
+ example
+  10 PRINT "Enter a temperature in Celsius ";
+      INPUT C
+      when error in
+          X = REAL(C)
+          PRINT "Temperature in degrees Fahrenheit is "; (X * 1.8) + 32
+      use
+          PRINT "Error: Enter a valid numeric value."
+      end when 
+   40 END
+ related dartmouth-basic cobol basic-plus java
+ summary HP BASIC for OpenVMS is the latest name for a dialect of the BASIC programming language created by Digital Equipment Corporation (DEC) and now owned by Hewlett-Packard Enterprise (HPE).  It was originally developed in the 1970s for the RSTS-11 operating system on the PDP-11 minicomputer.  It was later ported to OpenVMS, first on VAX, then Alpha, and most recently Integrity. Past names for the product include: BASIC-PLUS, Basic Plus 2 (BP2 or BASIC-Plus-2), VAX BASIC, DEC BASIC, and Compaq BASIC for OpenVMS.  Multiple variations of the titles noting the hardware platform (VAX, AlphaServer, etc.) also exist.
+ created 2005
+ backlinksCount 101
+ pageId 1420680
+ revisionCount 116
+ dailyPageViews 11
+ appeared 1970
+
+status historical
+
+hopl 6349

@@ -1,4 +1,7 @@
+title Logres
 appeared 1990
 type queryLanguage
-reference https://dl.acm.org/doi/10.1145/93605.98732
 description LOGRES is a new project for the development of extended database systems which is based on the integration of the object-oriented data modelling paradigm and of the rule-based approach for the specification of queries and updates. The data model supports generalization hierarchies and object sharing, the rule-based language extends Datalog to support generalized type constructors (sets, multisets, and sequences), rule-based integrity constraints are automatically produced by analyzing schema definitions. Modularization is a fundamental feature, as modules encapsulate queries and updates, when modules are applied to a LOGRES database, their side effects can be controlled. The LOGRES project is a follow-up of the ALGRES project, and takes advantage of the ALGRES programming environment for the development of a fast prototype.
+reference https://dl.acm.org/doi/10.1145/93605.98732
+
+hopl 5790

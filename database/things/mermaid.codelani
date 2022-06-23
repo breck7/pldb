@@ -1,7 +1,7 @@
+title mermaid
 appeared 2014
 type textMarkup
-website https://mermaidjs.github.io/
-github https://github.com/mermaid-js/mermaid
+
 example
  gitGraph:
  options
@@ -19,3 +19,15 @@ example
  commit
  commit
  merge newbranch
+
+githubRepo https://github.com/mermaid-js/mermaid
+ firstCommit 2014
+ stars 28166
+ forks 1787
+ subscribers 542
+ created 2014
+ updated 2020
+ description Generation of diagram and flowchart from text in a similar manner as markdown
+ issues 120
+
+website https://mermaidjs.github.io/

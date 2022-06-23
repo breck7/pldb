@@ -1,3 +1,102 @@
+title XS
 appeared 2002
 type pl
-wikipedia XS_(Perl)
+
+patterns
+ hasCentralPackageRepository? false
+
+wikipedia https://en.wikipedia.org/wiki/XS_(Perl)
+ related perl c pod
+ summary XS is a Perl foreign function interface through which a program can call a C or C++ subroutine. XS or xsub is an abbreviation of "eXternal Subroutine", where external refers to programming languages external to Perl. XS also refers to a glue language for specifying calling interfaces supporting such interfaces (see below).
+ pageId 1557123
+ created 2005
+ backlinksCount 9
+ revisionCount 52
+ dailyPageViews 13
+ appeared 2002
+
+githubLanguage XS
+ fileExtensions xs
+ trendingProjectsCount 0
+
+linguistGrammarRepo https://github.com/textmate/c.tmbundle
+ firstCommit 2005
+ lastCommit 2018
+ committerCount 23
+ commitCount 359
+ sampleCount 1
+ example
+  /*
+   * This software is copyright (C) by Nick Wellnhofer <wellnhofer@aevum.de>.
+   *
+   * This is free software; you can redistribute it and/or modify it under
+   * the same terms as the Perl 5 programming language system itself.
+   *
+   * Terms of the Perl programming language system itself
+   *
+   * a) the GNU General Public License as published by the Free
+   *    Software Foundation; either version 1, or (at your option) any
+   *    later version, or
+   * b) the "Artistic License"
+   */
+  
+  /*
+   * Notes on memory management
+   *
+   * - A pointer to the Perl SV representing a node is stored in the
+   *   user data slot of `struct cmark_node`, so there's a 1:1 mapping
+   *   between Perl and C objects.
+   * - Every node SV keeps a reference to the parent SV. This is done
+   *   indirectly by looking up the parent SV and increasing its refcount.
+   * - This makes sure that a document isn't freed if the last reference
+   *   from Perl to the root node is dropped, as references to child nodes
+   *   might still exist.
+   * - As a consequence, as long as a node is referenced from Perl, all its
+   *   ancestor nodes will also be associated with a Perl object.
+   */
+  
+  #define PERL_NO_GET_CONTEXT
+  
+  #include "EXTERN.h"
+  #include "perl.h"
+  #include "XSUB.h"
+  
+  #include <stdlib.h>
+  #include <cmark.h>
+  
+  #if CMARK_VERSION < 0x001000
+      #error libcmark 0.16.0 is required.
+  #endif
+  
+  /* Fix prefixes of render functions. */
+  #define cmark_node_render_html cmark_render_html
+  #define cmark_node_render_xml  cmark_render_xml
+  #define cmark_node_render_man  cmark_render_man
+  
+  static SV*
+  S_create_or_incref_node_sv(pTHX_ cmark_node *node) {
+      SV *new_obj = NULL;
+  
+      while (node) {
+          SV *obj;
+          HV *stash;
+  
+          /* Look for existing object. */
+          obj = (SV*)cmark_node_get_user_data(node);
+  
+          if (obj) {
+              /* Incref if found. */
+              SvREFCNT_inc_simple_void_NN(obj);
+              if (!new_obj) {
+                  new_obj = obj;
+              }
+              break;
+          }
+  
+          /* Create a new SV. */
+          o
+
+status active
+fileType text
+
+rosettaCode XS

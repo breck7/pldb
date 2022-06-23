@@ -1,6 +1,23 @@
+title datafun
 appeared 2015
 type pl
-website http://www.rntz.net/datafun/
-github https://github.com/rntz/datafun
-reference http://www.rntz.net/files/datafun.pdf
+
+patterns
+ hasCentralPackageRepository? false
+
 description It's a simple, pure, and total functional language that generalizes Datalog. Datafun's superpower is that it can concisely and declaratively express and compute fixed points of monotone maps on semilattices.
+
+githubRepo https://github.com/rntz/datafun
+ firstCommit 2015
+ stars 234
+ forks 13
+ subscribers 36
+ created 2015
+ updated 2019
+ description Research on integrating datalog & lambda calculus via monotonicity types
+ issues 1
+
+website http://www.rntz.net/datafun/
+reference http://www.rntz.net/files/datafun.pdf
+status active
+isOpenSource true

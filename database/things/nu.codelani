@@ -1,3 +1,44 @@
+title Nu
 appeared 2007
 type pl
-wikipedia Nu_(programming_language)
+
+patterns
+ hasCentralPackageRepository? false
+
+wikipedia https://en.wikipedia.org/wiki/Nu_(programming_language)
+ example
+  (unless @prefix
+          (set @prefix 
+               "#{((((NSProcessInfo processInfo) arguments) 0) dirName)}.."))
+  
+  (unless @icon_files 
+          (set @icon_files 
+               (array "#{@prefix}/share/nu/resources/nu.icns")))
+ related x86-isa lisp objective-c ruby linux f-script
+ summary Nu is an interpreted object-oriented programming language, with a Lisp-like syntax, created by Tim Burks as an alternative scripting language to program OS X through its Cocoa application programming interface (API). Implementations also exist for iPhone and Linux. The language was first announced at C4, a conference for indie Mac developers held in August 2007.
+ pageId 17151577
+ created 2008
+ backlinksCount 13
+ revisionCount 55
+ dailyPageViews 14
+ appeared 2007
+
+githubLanguage Nu
+ fileExtensions nu
+ trendingProjectsCount 0
+
+linguistGrammarRepo https://github.com/jsallis/nu.tmbundle
+ firstCommit 2008
+ lastCommit 2017
+ committerCount 7
+ commitCount 107
+ sampleCount 2
+ example
+  #!/usr/bin/env nush
+  (puts "Hello")
+  
+
+status active
+fileType text
+wordRank 7528
+isOpenSource true

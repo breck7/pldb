@@ -1,5 +1,50 @@
+title PostgreSQL
 appeared 1986
 type queryLanguage
+
+patterns
+ hasCentralPackageRepository? false
+
+wikipedia https://en.wikipedia.org/wiki/PostgreSQL
+ related c linux sql gist xml xpath json julia go r d erlang plpgsql pl-sql sql-psm perl python tcl java javascript ruby regex tls freebsd solaris x86-isa powerpc systemz sparc arm mips visual-basic mysql aws
+ summary PostgreSQL, often simply Postgres, is an object-relational database management system (ORDBMS) with an emphasis on extensibility and standards compliance. As a database server, its primary functions are to store data securely and return that data in response to requests from other software applications. It can handle workloads ranging from small single-machine applications to large Internet-facing applications (or for data warehousing) with many concurrent users; on macOS Server, PostgreSQL is the default database; and it is also available for Microsoft Windows and Linux (supplied in most distributions). PostgreSQL is ACID-compliant and transactional. PostgreSQL has updatable views and materialized views, triggers, foreign keys; supports functions and stored procedures, and other expandability. PostgreSQL is developed by the PostgreSQL Global Development Group, a diverse group of many companies and individual contributors. It is free and open-source, released under the terms of the PostgreSQL License, a permissive software license.
+ pageId 23824
+ dailyPageViews 1262
+ created 2001
+ backlinksCount 991
+ revisionCount 2302
+ appeared 1996
+
+githubRepo https://github.com/postgres/postgres
+ stars 3378
+ forks 1159
+ subscribers 311
+ created 2010
+ updated 2017
+ firstCommit 1996
+ description Mirror of the official PostgreSQL GIT repository. Note that this is just a *mirror* - we don't work with pull requests on github. To contribute, please see https://wiki.postgresql.org/wiki/Submitting_a_Patch
+ issues 0
+
+helloWorldCollection PostgreSQL
+ -- Hello World in PL/pgSQL (PostgreSQL Procedural Language)
+ -- In old versions replace '$$' by double qoutes
+ 
+ CREATE FUNCTION hello_world() RETURNS text AS $$
+ BEGIN
+ RETURN 'Hello World';
+ END
+ $$ LANGUAGE plpgsql;
+ 
+ SELECT hello_world();
+ 
+
 website https://www.postgresql.org/
-github https://github.com/postgres/postgres
-wikipedia PostgreSQL
+status active
+
+twitter postgresql
+
+fileType text
+isOpenSource true
+linkedInSkill postgresql
+ peopleWithThisSkillCount 313773
+writtenIn c

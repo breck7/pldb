@@ -1,7 +1,7 @@
+title fay
 appeared 2012
 type pl
-website https://github.com/faylang/fay/wiki
-github https://github.com/faylang/fay
+
 example
  {-# LANGUAGE EmptyDataDecls #-}
  module Hello where
@@ -29,3 +29,25 @@ example
    putStrLn "Hello Console!"
    alert "Hello Alert!"
    addWindowEvent "load" greet
+
+patterns
+ hasCentralPackageRepository? false
+
+githubRepo https://github.com/faylang/fay
+ firstCommit 2012
+ stars 1166
+ forks 90
+ subscribers 78
+ created 2012
+ updated 2018
+ description A proper subset of Haskell that compiles to JavaScript
+ issues 17
+
+website https://github.com/faylang/fay/wiki
+status active
+
+twitter fayhaskell
+
+fileType text
+compilesTo javascript
+isOpenSource true

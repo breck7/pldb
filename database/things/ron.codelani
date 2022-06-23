@@ -1,6 +1,7 @@
+title Rusty Object Notation
 appeared 2015
 type metaLanguage
-github https://github.com/ron-rs/ron
+
 example
  GameConfig( // optional struct name
      window_size: (800, 600),
@@ -28,4 +29,15 @@ example
          adaptive: false,
      ),
  )
+
 description RON is a simple readable data serialization format that looks similar to Rust syntax. It's designed to support all of Serde's data model, so structs, enums, tuples, arrays, generic maps, and primitive values.
+
+githubRepo https://github.com/ron-rs/ron
+ firstCommit 2015
+ stars 805
+ forks 35
+ subscribers 24
+ created 2015
+ updated 2019
+ description Rusty Object Notation
+ issues 26

@@ -1,3 +1,21 @@
+title XPL0
 appeared 1976
 type pl
-wikipedia XPL0
+
+patterns
+ hasCentralPackageRepository? false
+ hasComments? true
+
+wikipedia https://en.wikipedia.org/wiki/XPL0
+ related pascal c basic pl-0 algol assembly-language
+ summary XPL0 is a computer programming language that is essentially a cross between Pascal and C. It was created in 1976 by Peter J. R. Boyle who wanted a high-level language for his microcomputer and wanted something more sophisticated than BASIC, which was the dominant language for personal computers at the time. XPL0 is based on PL/0, an example compiler in the book Algorithms + Data Structures = Programs by Niklaus Wirth. The first XPL0 compiler was written in ALGOL. It generated instructions for a pseudo-machine that was implemented as an interpreter on a Digital Group computer based on the 6502 microprocessor. The compiler was converted from ALGOL to XPL0 and was then able to compile itself and run on a microcomputer. XPL0 soon proved its worth in a variety of products based on the 6502. These embedded systems would otherwise have had their code written in assembly language, which is much more tedious to do. Boyle used XPL0 to write a disk operating system called Apex. Beginning in 1980 this was sold, along with XPL0, as an alternative to Apple DOS for the Apple II computer, which was based on the 6502. Since those early years XPL0 has migrated to other processors and many features have been added. Open source versions of the compilers for IBM-style PCs are available from the link below.
+ created 2008
+ backlinksCount 3
+ pageId 18528411
+ revisionCount 12
+ dailyPageViews 4
+ appeared 1976
+
+status historical
+
+rosettaCode XPL0

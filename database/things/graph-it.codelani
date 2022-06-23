@@ -1,7 +1,7 @@
+title GraphIt
 appeared 2017
 type pl
-website http://graphit-lang.org/
-github https://github.com/GraphIt-DSL/graphit
+
 example
  element Vertex end
  element Edge end
@@ -57,4 +57,24 @@ example
  end
  
  % specify schedules here or use a separate schedule file
+
+patterns
+ hasCentralPackageRepository? false
+
 description GraphIt is a new DSL for graph computations that generates fast implementations for algorithms with different performance characteristics running on graphs with different sizes and structures. GraphIt separates what is computed (algorithm) from how it is computed (schedule). Programmers specify the algorithm using an algorithm language, and performance optimizations are specified using a separate scheduling language. The scheduling language enables programmers to easily search through this complicated tradeoff space by composing together a large set of edge traversal and vertex data layout optimizations.
+
+githubRepo https://github.com/GraphIt-DSL/graphit
+ firstCommit 2017
+ stars 16
+ forks 1
+ subscribers 9
+ created 2017
+ updated 2018
+ description GraphIt - A High-Performance Domain Specific Language for Graph Analytics
+ issues 0
+
+website http://graphit-lang.org/
+status active
+fileExtensions gt
+fileType text
+isOpenSource true

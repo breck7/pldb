@@ -1,7 +1,31 @@
+title CLPR
 appeared 1986
 type pl
-wikipedia CLP(R)
+
 example
  3*X + 4*Y - 2*Z = 8,
  X - 5*Y + Z = 10,
  2*X + 3*Y -Z = 20.
+
+patterns
+ hasCentralPackageRepository? false
+
+wikipedia https://en.wikipedia.org/wiki/CLP(R)
+ example
+  3*X + 4*Y - 2*Z = 8,
+  X - 5*Y + Z = 10,
+  2*X + 3*Y -Z = 20.
+ related prolog
+ summary CLP(R) is a declarative programming language. It stands for constraint logic programming (Real) where real refers to the real numbers. It can be considered and is generally implemented as a superset or add-on package for a Prolog implementation.
+ pageId 14734259
+ created 2007
+ backlinksCount 10
+ revisionCount 31
+ dailyPageViews 5
+ appeared 1992
+
+status historical
+country AU
+fileType text
+
+hopl 1205

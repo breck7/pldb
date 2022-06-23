@@ -1,4 +1,25 @@
+title ISETL
 appeared 1989
 type pl
-wikipedia ISETL_%28programming_language%29
+
+patterns
+ hasCentralPackageRepository? false
+
+wikipedia https://en.wikipedia.org/wiki/ISETL_%28programming_language%29
+ example
+  procedure factorial(n); -- calculates the factorial n!
+    return if n = 1 then 1 else n * factorial(n - 1) end if;
+  end factorial;
+ related algol-60 abc ada python
+ summary SETL (SET Language) is a very high-level programming language based on the mathematical theory of sets.  It was originally developed by (Jack) Jacob T. Schwartz at the New York University (NYU) Courant Institute of Mathematical Sciences in the late 1960s.
+ created 2014
+ backlinksCount 51
+ pageId 916963
+ revisionCount 4
+ dailyPageViews 1
+ appeared 1969
+
 reference https://semanticscholar.org/paper/32550542f523856c16c49b66b1251485e7fe916e
+status historical
+
+hopl 2123

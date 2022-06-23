@@ -1,5 +1,84 @@
+title fish
 appeared 2005
 type pl
+
+patterns
+ hasCentralPackageRepository? false
+ hasComments? true
+
+wikipedia https://en.wikipedia.org/wiki/Friendly_interactive_shell
+ example
+  string replace --regex '.*?\.(.*)' '$1' a.b.c #b.c
+  string replace --regex '.*\.(.*)' '$1' a.b.c  #c
+  string replace --regex '(.*)\..*' '$1' a.b.c  #a.b
+  string replace --regex '(.*?)\..*' '$1' a.b.c #a
+ related bash z-shell
+ summary The friendly interactive shell (fish) is a Unix shell that attempts to be more interactive and user-friendly than those with a longer history (i.e. most other Unix shells) or those formulated as function-compatible replacements for the aforementioned (e.g. zsh, the Falstad shell). The design goal of fish is to give the user a rich set of powerful features in a way that is easy to discover, remember, and use. fish is considered an "exotic shell", in that its syntax derives from neither the Bourne shell (ksh, bash, zsh) nor the C shell (csh, tcsh). Also unlike previous shells, which disable certain features by default to save system resources, fish enables all features by default.
+ created 2005
+ pageId 1889847
+ backlinksCount 38
+ revisionCount 226
+ dailyPageViews 62
+ appeared 2017
+
+githubLanguage fish
+ fileExtensions fish
+ trendingProjectsCount 0
+
+githubRepo https://github.com/fish-shell/fish-shell
+ firstCommit 2005
+ stars 10681
+ forks 986
+ subscribers 251
+ created 2012
+ updated 2018
+ description The user-friendly command line shell.
+ issues 446
+
+linguistGrammarRepo https://github.com/l15n/fish-tmbundle
+ firstCommit 2008
+ lastCommit 2014
+ committerCount 2
+ commitCount 16
+ sampleCount 3
+ example
+  
+  function eval -S -d "Evaluate parameters as a command"
+  
+  	# If we are in an interactive shell, eval should enable full
+  	# job control since it should behave like the real code was
+  	# executed.  If we don't do this, commands that expect to be
+  	# used interactively, like less, wont work using eval.
+  
+  	set -l mode
+  	if status --is-interactive-job-control
+  		set mode interactive
+  	else
+  		if status --is-full-job-control
+  			set mode full
+  		else
+  			set mode none
+  		end
+  	end
+  	if status --is-interactive
+  		status --job-control full
+  	end
+  
+  	echo "begin; $argv ;end eval2_inner <&3 3<&-" | . 3<&0
+  	set -l res $status
+  
+  	status --job-control $mode
+  	return $res
+  end
+  
+
 website http://fishshell.com/
-github https://github.com/fish-shell/fish-shell
-wikipedia Friendly_interactive_shell
+status active
+
+tryItOnline fish
+
+fileType text
+wordRank 1563
+isOpenSource true
+
+rosettaCode Fish

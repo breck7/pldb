@@ -1,3 +1,97 @@
+title CartoCSS
 appeared 2010
 type pl
+
+patterns
+ hasCentralPackageRepository? false
+
+githubLanguage CartoCSS
+ fileExtensions mss
+ trendingProjectsCount 0
+
+linguistGrammarRepo https://github.com/yohanboniface/carto-atom
+ firstCommit 2014
+ lastCommit 2015
+ committerCount 2
+ commitCount 19
+ sampleCount 1
+ example
+  @marina-text: #576ddf; // also swimming_pool
+  @wetland-text: darken(#017fff, 10%); /* Also for marsh */
+  @mud-text: darken(#aea397, 20%);
+  @shop-icon: #ac39ac;
+  @transportation-icon: #0092da;
+  @transportation-text: #0066ff;
+  @airtransport: #8461C4;
+  
+  @landcover-font-size: 10;
+  @landcover-font-size-big: 12;
+  @landcover-font-size-bigger: 15;
+  @landcover-wrap-width-size: 25;
+  @landcover-wrap-width-size-big: 35;
+  @landcover-wrap-width-size-bigger: 45;
+  @landcover-face-name: @oblique-fonts;
+  
+  @standard-wrap-width: 30;
+  
+  .points {
+    [feature = 'tourism_alpine_hut'][zoom >= 13] {
+      point-file: url('symbols/alpinehut.p.16.png');
+      point-placement: interior;
+    }
+  
+    [feature = 'amenity_shelter'][zoom >= 16] {
+      point-file: url('symbols/shelter2.p.16.png');
+      point-placement: interior;
+    }
+  
+    [feature = 'amenity_atm'][zoom >= 17] {
+      point-file: url('symbols/atm2.p.16.png');
+      point-placement: interior;
+    }
+  
+    [feature = 'amenity_bank'][zoom >= 17] {
+      point-file: url('symbols/bank2.p.16.png');
+      point-placement: interior;
+    }
+  
+    [feature = 'amenity_bar'][zoom >= 17] {
+      point-file: url('symbols/bar.p.20.png');
+      point-placement: interior;
+    }
+  
+    [feature = 'amenity_bicycle_rental'][zoom >= 17] {
+      point-file: url('symbols/rental_bicycle.p.20.png');
+      point-placement: interior;
+    }
+  
+    [feature = 'highway_bus_stop'] {
+      [zoom >= 16] {
+        marker-file: url('symbols/square.svg');
+        marker-fill: @transportation-icon;
+        marker-placement: interior;
+        marker-width: 6;
+      }
+      [zoom >= 17] {
+        marker-file: url('symbols/bus_stop.p.12.png');
+        marker-width: 12;
+      }
+    }
+  
+    [feature = 'amenity_bus_station'][zoom >= 16] {
+      point-file: url('symbols/bus_station.n.16.png');
+      point-placement: interior;
+    }
+  
+    [feature = 'highway_traffic_signals'][zoom >= 17] {
+      marker-file: url('symbols/traffic_light.svg');
+      marker-fill: #0a0a0a;
+      marker-placement: interior;
+    }
+  
+    [feature = 'amenity_cafe'][zoom >= 17] {
+      point-file: url('symbols/cafe.p.1
+
 reference https://blog.mapbox.com/the-end-of-cartocss-da2d7427cf1
+status active
+fileType text

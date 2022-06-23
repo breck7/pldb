@@ -1,3 +1,57 @@
+title Gambas
 appeared 1999
 type pl
-wikipedia Gambas
+
+patterns
+ hasCentralPackageRepository? false
+ hasComments? true
+
+wikipedia https://en.wikipedia.org/wiki/Gambas
+ example
+  Private Sub Test(X As Float) As Float
+  
+    Dim Mu As Float = 10.0
+    Dim Pu, Su As Float
+    Dim I, J, N As Integer
+    Dim aPoly As New Float[100]
+  
+    N = 500000
+  
+    For I = 0 To N - 1
+      For J = 0 To 99
+        Mu =  (Mu + 2.0) / 2.0
+        aPoly[J] = Mu
+      Next
+      Su = 0.0
+      For J = 0 To 99
+        Su = X * Su + aPoly[J]
+      Next
+      Pu += Su
+    Next
+  
+    Return Pu
+  
+  End
+  
+  Public Sub Main()
+  
+    Dim I as Integer
+  
+     For I = 1 To 10
+       Print Test(0.2)
+     Next
+  
+  End
+ related linux freebsd visual-basic java basic qt opengl perl python visual-basic-dot-net
+ summary Gambas is the name of an object-oriented dialect of the BASIC programming language, as well as the integrated development environment that accompanies it. Designed to run on Linux and other Unix-like computer operating systems, its name is a recursive acronym for Gambas Almost Means Basic. Gambas is also the word for prawns in the Spanish,  French, and Portuguese languages, from which the project's logos are derived.
+ created 2003
+ backlinksCount 153
+ pageId 215824
+ revisionCount 496
+ dailyPageViews 93
+ appeared 1999
+
+status historical
+isOpenSource true
+
+rosettaCode Gambas

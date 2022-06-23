@@ -1,3 +1,19 @@
+title MMX instruction set
 appeared 1997
 type isa
-wikipedia MMX_(instruction_set)
+
+patterns
+ hasCentralPackageRepository? false
+
+wikipedia https://en.wikipedia.org/wiki/MMX_(instruction_set)
+ related ia-32 c assembly-language arm
+ summary MMX is a single instruction, multiple data (SIMD) instruction set designed by Intel, introduced in 1997 with its P5-based Pentium line of microprocessors, designated as "Pentium with MMX Technology". It developed out of a similar unit introduced on the Intel i860, and earlier the Intel i750 video pixel processor. MMX is a processor supplementary capability that is supported on recent IA-32 processors by Intel and other vendors. MMX has subsequently been extended by several programs by Intel and others: 3DNow!, Streaming SIMD Extensions (SSE), and ongoing revisions of Advanced Vector Extensions (AVX).
+ pageId 55364
+ dailyPageViews 215
+ created 2002
+ backlinksCount 275
+ revisionCount 278
+ appeared 1997
+
+status historical
+fileType na

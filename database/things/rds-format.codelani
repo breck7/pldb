@@ -1,4 +1,12 @@
+title rds-format
 appeared 2011
 type binaryDataFormat
-reference https://groups.google.com/forum/#!search/saveRDS%7Csort:date/r-help-archive/0FDc1dogqIk/60BvIxO2LHoJ
+
+patterns
+ hasCentralPackageRepository? false
+
 description Can also be an ASCII data format.
+reference https://groups.google.com/forum/#!search/saveRDS%7Csort:date/r-help-archive/0FDc1dogqIk/60BvIxO2LHoJ
+status active
+fileExtensions rds
+fileType binary

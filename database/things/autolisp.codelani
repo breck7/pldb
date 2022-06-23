@@ -1,3 +1,49 @@
+title AutoLISP
 appeared 1986
 type pl
-wikipedia AutoLISP
+
+patterns
+ isLisp? true
+ hasCentralPackageRepository? false
+
+wikipedia https://en.wikipedia.org/wiki/AutoLISP
+ example
+  1 (defun c:pointlabel ( / pnt )
+   2     (if (setq pnt (getpoint "\nSpecify point: "))
+   3         (progn
+   4             (entmake
+   5                 (list
+   6                    '(0 . "POINT")
+   7                     (cons 10 (trans pnt 1 0))
+   8                 )
+   9             )
+  10             (entmake
+  11                 (list
+  12                    '(0 . "TEXT")
+  13                     (cons 10 (trans (cons (+ (car pnt) 0.6) (cdr pnt)) 1 0))
+  14                     (cons 40 (getvar 'textsize))
+  15                     (cons  1 (strcat "X:" (rtos (car pnt)) " Y:" (rtos (cadr pnt))))
+  16                 )
+  17             )
+  18         )
+  19     )
+  20     (princ)
+  21 )
+ related autocad-app vba lisp interlisp lisp-machine-lisp scheme common-lisp t emacs-lisp islisp openlisp picolisp eulisp newlisp racket clojure arc lfe
+ summary AutoLISP is a dialect of the LISP programming language built specifically for use with the full version of AutoCAD and its derivatives, which include AutoCAD Map 3D, AutoCAD Architecture and AutoCAD Mechanical. Neither the application programming interface nor the interpreter to execute AutoLISP code are included in the AutoCAD LT product line.
+ pageId 51458
+ dailyPageViews 82
+ created 2001
+ backlinksCount 74
+ revisionCount 232
+ appeared 1986
+
+status active
+country US
+fileType text
+
+tiobe AutoLISP
+
+hopl 1842
+
+rosettaCode AutoLISP

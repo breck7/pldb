@@ -1,5 +1,30 @@
+title Scribe
 appeared 1980
 type pl
-wikipedia Scribe_(markup_language)
+
 example
  @MakeSection(tag=beginning, title="The Beginning")
+
+patterns
+ hasCentralPackageRepository? false
+
+wikipedia https://en.wikipedia.org/wiki/Scribe_(markup_language)
+ example
+  @Heading(The Beginning)
+    @Begin(Quotation)
+        Let's start at the very beginning, a very good place to start
+    @End(Quotation)
+ related ibm-gml html latex css javascript emacs-editor tex
+ summary Scribe is a markup language and word processing system which pioneered the use of descriptive markup. Scribe was revolutionary when it was proposed, because it involved for the first time a clean separation of presentation and content.
+ pageId 9313682
+ dailyPageViews 25
+ created 2007
+ backlinksCount 23
+ revisionCount 80
+ appeared 1969
+
+status historical
+country US
+fileType text
+
+hopl 2481

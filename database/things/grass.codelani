@@ -1,3 +1,34 @@
+title GRASS
 appeared 1977
 type pl
-wikipedia GRASS_(programming_language)
+
+patterns
+ hasCentralPackageRepository? false
+
+wikipedia https://en.wikipedia.org/wiki/GRASS_(programming_language)
+ example
+  SINCURVE=[PROMPT "WHAT IS THE OFFSET?"
+  INPUT OFFSET
+  x=-160
+  angle=0
+  POINT OFFSET+x,SIN(angle)*80,3
+  angle=angle+2
+  IF (x=x+1)<159,SKIP -2]
+ related basic opengl c true-basic
+ summary GRASS (GRAphics Symbiosis System) is a programming language created to script 2D vector graphics animations. GRASS was similar to BASIC in syntax, but added numerous instructions for specifying 2D object animation, including scaling, translation, rotation and color changes over time. It quickly became a hit with the artistic community who were experimenting with the new medium of computer graphics, and is most famous for its use by Larry Cuba to create the original "attacking the Death Star will not be easy" animation in Star Wars (1977). A later version that was adapted to support raster graphics was known as ZGrass.
+ pageId 144766
+ created 2002
+ backlinksCount 16
+ revisionCount 96
+ dailyPageViews 13
+ appeared 1977
+
+status historical
+
+tryItOnline grass
+
+country US
+fileType text
+wordRank 5118
+
+hopl 4146

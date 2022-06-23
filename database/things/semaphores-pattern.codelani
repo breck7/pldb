@@ -1,4 +1,10 @@
+title Semaphores
 appeared 1962
 type pattern
-wikipedia Semaphore_(programming)
+psuedoExample singletonIsSet = 0
 description In computer science, a semaphore is a variable or abstract data type used to control access to a common resource by multiple processes in a concurrent system such as a multitasking operating system. A semaphore is simply a variable. This variable is used to solve critical section problems and to achieve process synchronization in the multi processing environment. A trivial semaphore is a plain variable that is changed (for example, incremented or decremented, or toggled) depending on programmer-defined conditions.
+
+wikipedia https://en.wikipedia.org/wiki/Semaphore_(programming)
+
+status active
+patternKeyword hasSemaphores?

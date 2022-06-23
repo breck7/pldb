@@ -1,5 +1,41 @@
+title VHDL-AMS
 appeared 1993
 type pl
-wikipedia VHDL-AMS
-reference https://ieeexplore.ieee.org/document/8267464
+
+patterns
+ hasCentralPackageRepository? false
+
 description The IEEE 1076.1 language, a hardware description language for the description and the simulation of analog, digital, and mixed-signal systems, is defined in this standard. The language, also informally known as VHDL-AMS, is built on IEEE Std 1076-2008 (VHDL) and extends it with additions and changes to provide capabilities of writing and simulating analog and mixed-signal models.
+
+wikipedia https://en.wikipedia.org/wiki/VHDL-AMS
+ example
+  library IEEE;
+  use IEEE.math_real.all;
+  use IEEE.electrical_systems.all;
+  
+  -- this is the entity
+  entity DIODE is
+     generic (iss : current := 1.0e-14;  
+              af  : real    := 1.0;      
+              kf  : real    := 0.0);     
+     port (terminal anode, cathode : electrical);      
+  end entity DIODE;
+  
+  architecture IDEAL of DIODE is
+    quantity v across i through anode to cathode;
+    constant vt : voltage := 0.0258;     
+  begin
+  
+    i == iss * (exp(v/vt) - 1.0);
+  
+  end architecture IDEAL;
+ related vhdl
+ summary VHDL-AMS is a derivative of the hardware description language VHDL (IEEE standard 1076-1993). It includes analog and mixed-signal extensions (AMS) in order to define the behavior of analog and mixed-signal systems (IEEE 1076.1-1999). The VHDL-AMS standard was created with the intent of enabling designers of analog and mixed signal systems and integrated circuits to create and use modules that encapsulate high-level behavioral descriptions as well as structural descriptions of systems and components.VHDL-AMS is an industry standard modeling language for mixed signal circuits. It provides both continuous-time and event-driven modeling semantics, and so is suitable for analog, digital, and mixed analog/digital circuits. It is particularly well suited for verification of very complex analog, mixed-signal and radio frequency integrated circuits.
+ created 2007
+ backlinksCount 108
+ pageId 14453419
+ dailyPageViews 33
+ appeared 1993
+
+reference https://ieeexplore.ieee.org/document/8267464
+status historical
