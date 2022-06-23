@@ -33,6 +33,7 @@ class Builder extends AbstractBuilder {
     shell(`cp ${__dirname}/blog/public/*.* ${websiteFolder}`)
 
     // Copy grammar to public folder
+    Disk.mkdir(websiteFolder + "/datasets")
     Disk.write(
       websiteFolder + "/datasets/codelani.grammar",
       Disk.read(thingsFolder + "codelani.grammar")
@@ -58,8 +59,8 @@ class Builder extends AbstractBuilder {
     const page = new TreeNode(Disk.read(pagePath))
 
     let files = codeLaniBase
-      .filter((lang) => lang.isLanguage)
-      .map((file) => {
+      .filter(lang => lang.isLanguage)
+      .map(file => {
         const name = file.primaryKey
         const appeared = file.get("appeared")
         const rank = file.languageRank + 1
@@ -69,7 +70,7 @@ class Builder extends AbstractBuilder {
           nameLink: `../languages/${name}.html`,
           rank,
           type,
-          appeared,
+          appeared
         }
       })
 
@@ -83,7 +84,7 @@ class Builder extends AbstractBuilder {
         "nameLink",
         "appeared",
         "type",
-        "rank",
+        "rank"
       ])
     )
 
@@ -101,16 +102,16 @@ class Builder extends AbstractBuilder {
     const page = new TreeNode(Disk.read(pagePath))
 
     const files = codeLaniBase
-      .filter((file) => file.get("type") !== "pattern")
-      .map((file) => {
+      .filter(file => file.get("type") !== "pattern")
+      .map(file => {
         const name = file.primaryKey
         return {
           name,
           nameLink: `../languages/${name}.html`,
-          extensions: file.extensions,
+          extensions: file.extensions
         }
       })
-      .filter((file) => file.extensions)
+      .filter(file => file.extensions)
 
     replaceNext(
       page,
@@ -134,8 +135,8 @@ class Builder extends AbstractBuilder {
     const page = new TreeNode(Disk.read(pagePath))
 
     const files = codeLaniBase
-      .filter((file) => file.get("type") !== "pattern")
-      .map((file) => {
+      .filter(file => file.get("type") !== "pattern")
+      .map(file => {
         const name = file.primaryKey
         const appeared = file.get("appeared") || ""
         const type = file.get("type")
@@ -143,7 +144,7 @@ class Builder extends AbstractBuilder {
           name,
           nameLink: `../languages/${name}.html`,
           type,
-          appeared,
+          appeared
         }
       })
 
@@ -154,7 +155,7 @@ class Builder extends AbstractBuilder {
         "name",
         "nameLink",
         "type",
-        "appeared",
+        "appeared"
       ])
     )
 
@@ -174,8 +175,8 @@ class Builder extends AbstractBuilder {
     const page = new TreeNode(Disk.read(pagePath))
 
     const files = codeLaniBase
-      .filter((lang) => lang.get("type") === "pattern")
-      .map((file) => {
+      .filter(lang => lang.get("type") === "pattern")
+      .map(file => {
         const name = file.primaryKey
         return {
           pattern: file.get("title"),
@@ -183,7 +184,7 @@ class Builder extends AbstractBuilder {
           aka: file.get("aka"),
           psuedoExample: (file.get("psuedoExample") || "")
             .replace(/\</g, "&lt;")
-            .replace(/\|/g, "&#124;"),
+            .replace(/\|/g, "&#124;")
         }
       })
 
@@ -194,7 +195,7 @@ class Builder extends AbstractBuilder {
         "pattern",
         "patternLink",
         "aka",
-        "psuedoExample",
+        "psuedoExample"
       ])
     )
 
@@ -214,13 +215,13 @@ class Builder extends AbstractBuilder {
     const page = new TreeNode(Disk.read(pagePath))
 
     const entities = {}
-    codeLaniBase.forEach((file) => {
+    codeLaniBase.forEach(file => {
       const languageId = file.primaryKey
       if (file.has("creators"))
         file
           .get("creators")
           .split(" and ")
-          .forEach((entity) => {
+          .forEach(entity => {
             if (!entities[entity]) entities[entity] = []
             entities[entity].push(languageId)
           })
@@ -228,13 +229,13 @@ class Builder extends AbstractBuilder {
 
     const wikipediaLinks = new TreeNode(
       page
-        .find((node) => node.getLine().startsWith("comment WikipediaPages"))
+        .find(node => node.getLine().startsWith("comment WikipediaPages"))
         .childrenToString()
     )
 
-    const rows = Object.keys(entities).map((name) => {
+    const rows = Object.keys(entities).map(name => {
       const languages = entities[name]
-        .map((lang) => `<a href='../languages/${lang}.html'>${lang}</a>`)
+        .map(lang => `<a href='../languages/${lang}.html'>${lang}</a>`)
         .join(" ")
       const count = entities[name].length
 
@@ -255,7 +256,7 @@ class Builder extends AbstractBuilder {
     const theTable = toScrollTable(new TreeNode(sorted), [
       "name",
       "languages",
-      "count",
+      "count"
     ])
 
     replaceNext(page, "comment autogenCreators", theTable)
@@ -274,21 +275,21 @@ class Builder extends AbstractBuilder {
     const page = new TreeNode(Disk.read(pagePath))
 
     const entities = {}
-    codeLaniBase.forEach((file) => {
+    codeLaniBase.forEach(file => {
       const languageId = file.primaryKey
       if (file.has("corporateDevelopers"))
         file
           .get("corporateDevelopers")
           .split(" and ")
-          .forEach((entity) => {
+          .forEach(entity => {
             if (!entities[entity]) entities[entity] = []
             entities[entity].push(languageId)
           })
     })
 
-    const rows = Object.keys(entities).map((name) => {
+    const rows = Object.keys(entities).map(name => {
       const languages = entities[name]
-        .map((lang) => `<a href='../languages/${lang}.html'>${lang}</a>`)
+        .map(lang => `<a href='../languages/${lang}.html'>${lang}</a>`)
         .join(" ")
       const count = entities[name].length
 
@@ -302,7 +303,7 @@ class Builder extends AbstractBuilder {
     const theTable = toScrollTable(new TreeNode(sorted), [
       "name",
       "languages",
-      "count",
+      "count"
     ])
 
     replaceNext(page, "comment autogenCorporations", theTable)
@@ -376,7 +377,7 @@ class Builder extends AbstractBuilder {
     Disk.mkdir(databaseFolderWhenPublishedToWebsite)
 
     codeLaniBase.loadFolder()
-    codeLaniBase.forEach((file) => {
+    codeLaniBase.forEach(file => {
       const path = `${databaseFolderWhenPublishedToWebsite}/${file.primaryKey}.scroll`
 
       const constructor =
@@ -406,14 +407,14 @@ class Builder extends AbstractBuilder {
       new Set(
         Disk.read(thingsFolder + "codelani.grammar")
           .split("\n")
-          .filter((line) => line.includes("string sourceDomain"))
-          .map((line) => line.split("string sourceDomain")[1].trim())
+          .filter(line => line.includes("string sourceDomain"))
+          .map(line => line.split("string sourceDomain")[1].trim())
       )
     )
     sources.sort()
     const table =
       `list\n` +
-      sources.map((s) => ` - <a href="https://${s}">${s}</a>`).join("\n")
+      sources.map(s => ` - <a href="https://${s}">${s}</a>`).join("\n")
 
     const path = __dirname + "/blog/posts/acknowledgements.scroll"
     const tree = new TreeNode(Disk.read(path))
@@ -430,8 +431,8 @@ class Builder extends AbstractBuilder {
       `tooling A function generates this grammar by combining all files in the grammar folder.\n` +
       fs
         .readdirSync(__dirname + "/database/grammar")
-        .filter((file) => file.endsWith(".grammar"))
-        .map((file) =>
+        .filter(file => file.endsWith(".grammar"))
+        .map(file =>
           fs.readFileSync(__dirname + "/database/grammar/" + file, "utf8")
         )
         .join("\n")
@@ -443,7 +444,7 @@ class Builder extends AbstractBuilder {
 
     const grammarErrors = new grammarNode(grammar)
       .getAllErrors()
-      .map((err) => err.toObject())
+      .map(err => err.toObject())
     if (grammarErrors.length) console.log(grammarErrors)
 
     // Format the file:
@@ -461,7 +462,7 @@ class Builder extends AbstractBuilder {
 
   formatDatabase() {
     codeLaniBase.loadFolder()
-    codeLaniBase.forEach((file) => file.formatAndSave())
+    codeLaniBase.forEach(file => file.formatAndSave())
   }
 
   startServer(port = 4444) {
@@ -471,7 +472,7 @@ class Builder extends AbstractBuilder {
   checkBlog() {
     console.log(
       shell(`cd ${websiteFolder}; scroll check; cd lists/; scroll check; `, {
-        encoding: "utf8",
+        encoding: "utf8"
       })
     )
   }
