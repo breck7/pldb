@@ -1,0 +1,7 @@
+tooling onsave jtree build buildGrammar
+languageServerProtocolProjectNode
+ extends abstractUrlNode
+ inScope writtenInNode
+ boolean multipleOk true
+ description A link to a project implementing LSP for this language.
+ crux languageServerProtocolProject

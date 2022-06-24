@@ -3,6 +3,7 @@ subredditNode
  crux subreddit
  inScope subredditMemberCountNode
  string sourceDomain reddit.com
+ boolean multipleOk true
 subredditMemberCountNode
  extends abstractAnnualPopulationCountNode
  crux memberCount

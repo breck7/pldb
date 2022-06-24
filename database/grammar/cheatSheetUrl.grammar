@@ -1,4 +1,5 @@
 cheatSheetUrlNode
  extends abstractUrlNode
  crux cheatSheetUrl
+ boolean multipleOk true
  description A link to a cheat sheet for this language.

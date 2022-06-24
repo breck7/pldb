@@ -9,7 +9,7 @@ lineCommentKeywordNode
  extends abstractCommonKeywordNode
  description I define a line comment as a character(s) that starts a comment that cannot be stopped except by a line break character or end of file character.
  crux lineCommentKeyword
- todo Be able to hard code that multiple are okay
+ boolean multipleOk true
  example
   javascript
    lineCommentKeyword //

@@ -5,6 +5,7 @@ statusNode
  cells keywordCell statusCell
  extends abstractFactNode
  crux status
+ single
 creatorNameCell
  extends stringCell
 creatorsNode
@@ -25,6 +26,7 @@ firstAnnouncementNode
  description A url announcing the creation or release of a new language
  extends abstractUrlNode
  crux firstAnnouncement
+ single
 announcementMethodCell
  description Common ways languages are first announced.
  enum pressRelease paper rfc webpage blogPost interview
@@ -34,6 +36,7 @@ announcementMethodNode
  extends abstractFactNode
  cells keywordCell announcementMethodCell
  crux announcementMethod
+ single
 countryWordCell
 countryNode
  description What country was the language first developed in?

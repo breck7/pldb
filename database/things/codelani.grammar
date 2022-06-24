@@ -1,4 +1,5 @@
 tooling A function generates this grammar by combining all files in the grammar folder.
+tooling onsave jtree build buildGrammar
 languageCommonKeywordCell
 conferenceNameCell
  extends stringCell
@@ -66,7 +67,7 @@ antlrNode
  string sourceDomain antlr.org
 codeMirrorNode
  extends abstractOneWordGuidNode
- description A link to the CodeMirror syntax highlighting package for this language (https://github.com/codemirror/codemirror5/tree/master/mode/LANGUAGE)
+ description A link to a CodeMirror syntax highlighting package for this language (https://github.com/codemirror/codemirror5/tree/master/mode/LANGUAGE)
  crux codeMirror
  string sourceDomain codemirror.net
 hoplNode
@@ -74,6 +75,7 @@ hoplNode
  description The matching language on Diarmuid Pigott's Online Historical Encyclopaedia of Programming Languages site (https://hopl.info/)
  crux hopl
  string sourceDomain hopl.info
+ single
 linkedInSkillNode
  description Some languages can be listed as a skill on LinkedIn.
  extends abstractOneWordGuidNode
@@ -91,21 +93,25 @@ subredditNode
  crux subreddit
  inScope subredditMemberCountNode
  string sourceDomain reddit.com
+ boolean multipleOk true
 replitNode
  extends abstractOneWordGuidNode
  description A link to try this langunage on replit.com
  crux replit
  string sourceDomain replit.com
+ single
 rosettaCodeNode
  extends abstractOneWordGuidNode
  description A link to this language on Rosetta Code - http://www.rosettacode.org/
  crux rosettaCode
  string sourceDomain rosettacode.org
+ single
 tryItOnlineNode
  extends abstractOneWordGuidNode
  description A link to try this language on https://tio.run
  crux tryItOnline
  string sourceDomain tio.run
+ single
 twitterNode
  extends abstractOneWordGuidNode
  description Official Twitter handle of the entity, if any.
@@ -124,6 +130,7 @@ abstractUrlNode
 cheatSheetUrlNode
  extends abstractUrlNode
  crux cheatSheetUrl
+ boolean multipleOk true
  description A link to a cheat sheet for this language.
 gitlabNode
  description URL of the official GitLab repo for the language project.
@@ -135,6 +142,13 @@ firstAnnouncementNode
  description A url announcing the creation or release of a new language
  extends abstractUrlNode
  crux firstAnnouncement
+ single
+languageServerProtocolProjectNode
+ extends abstractUrlNode
+ inScope writtenInNode
+ boolean multipleOk true
+ description A link to a project implementing LSP for this language.
+ crux languageServerProtocolProject
 packageRepositoryNode
  extends abstractUrlNode
  crux packageRepository
@@ -148,6 +162,7 @@ referenceNode
  extends abstractUrlNode
  crux reference
  description A link with more info about this entity.
+ boolean multipleOk true
 websiteNode
  description URL of the official homepage for the language project.
  extends abstractUrlNode
@@ -167,7 +182,7 @@ lineCommentKeywordNode
  extends abstractCommonKeywordNode
  description I define a line comment as a character(s) that starts a comment that cannot be stopped except by a line break character or end of file character.
  crux lineCommentKeyword
- todo Be able to hard code that multiple are okay
+ boolean multipleOk true
  example
   javascript
    lineCommentKeyword //
@@ -260,11 +275,13 @@ projectEulerNode
  crux projectEuler
  inScope projectEulerMemberCountNode
  string sourceDomain projecteuler.net
+ single
 quineRelayNode
  extends abstractMultiwordGuidNode
  description The Quine Relay project (https://github.com/mame/quine-relay).
  crux quineRelay
  string sourceDomain github.com/mame/quine-relay
+ single
 tiobeNode
  extends abstractMultiwordGuidNode
  description Tiobe maintains a well known ranking of programming languages here: https://www.tiobe.com/tiobe-index/
@@ -272,6 +289,7 @@ tiobeNode
  inScope tiobeCurrentRankNode
  string sourceDomain tiobe.com
  catchAllCellType externalGuidCell
+ single
 abstractIntNode
  cells keywordCell intCell
  extends abstractFactNode
@@ -303,15 +321,6 @@ githubIssuesNode
  extends abstractGithubCountNode
  crux issues
  description How many isses on the repo?
-hackerNewsDiscussionsNode
- boolean fromCrawler true
- extends abstractCountNode
- crux hackerNewsDiscussions
- baseNodeType blobNode
- boolean includeChildrenInCsv false
- boolean fromCrawler true
- description Links to Hacker News posts discussing this language.
- string sourceDomain news.ycombinator.com
 linguistCommitsNode
  description How many commits in this repo?
  extends abstractCountNode
@@ -413,6 +422,7 @@ wordRankNode
  description Some creators use a common English word as their language's name. For these we note how common the word is, where "the" is 1.
  extends abstractIntNode
  crux wordRank
+ single
 tiobeCurrentRankNode
  description What is the current Tiobe rank of this language?
  extends abstractIntNode
@@ -457,10 +467,20 @@ wikipediaNode
  cells keywordCell urlCell
  string sourceDomain wikipedia.org
  single
+hackerNewsDiscussionsNode
+ boolean fromCrawler true
+ extends abstractFactNode
+ crux hackerNewsDiscussions
+ baseNodeType blobNode
+ boolean includeChildrenInCsv false
+ description Links to Hacker News posts discussing this language.
+ string sourceDomain news.ycombinator.com
+ single
 statusNode
  cells keywordCell statusCell
  extends abstractFactNode
  crux status
+ single
 creatorsNode
  description Name(s) of the original creators of the language delimited by " and "
  cells keywordCell
@@ -474,6 +494,7 @@ announcementMethodNode
  extends abstractFactNode
  cells keywordCell announcementMethodCell
  crux announcementMethod
+ single
 countryNode
  description What country was the language first developed in?
  cells keywordCell countryWordCell
@@ -496,6 +517,7 @@ indeedJobsNode
  extends abstractAnnualPopulationCountNode
  crux indeedJobs
  string sourceDomain indeed.com
+ single
 projectEulerMemberCountNode
  crux memberCount
  description How many project euler members use this language.
@@ -513,10 +535,12 @@ titleNode
  description The official title of the language
  extends abstractStringNode
  crux title
+ single
 standsForNode
  description If the language name is an abbreviation, what does/did it stand for?
  extends abstractStringNode
  crux standsFor
+ single
 akaNode
  description Other names for the language.
  extends abstractStringNode
@@ -1212,6 +1236,6 @@ codelaniNode
  description A database about programming languages and related concepts.
  catchAllNodeType errorNode
  todo Should not have to manually list each node type here, but should be able to mark some tag as inscope
- inScope blankLineNode descriptionNode wikipediaNode equationNode exampleNode fileExtensionsNode githubLanguageNode githubRepoNode gitlabNode helloWorldCollectionNode statusNode creatorsNode appearedNode announcementUrlNode countryNode titleNode wordRankNode standsForNode akaNode psuedoExampleNode patternKeywordNode patternsNode referenceNode relatedNode replitNode tryItOnlineNode twitterNode typeNode websiteNode wikipediaNode fileTypeNode linguistGrammarRepoNode tiobeNode meetupNode webReplNode linkedInSkillNode projectEulerNode hoplNode subredditNode redditDiscussionNode quineRelayNode ubuntuPackageNode codeMirrorNode rosettaCodeNode antlrNode corporateDevelopersNode compilesToNode cheatSheetUrlNode isOpenSourceNode indeedJobsNode hackerNewsDiscussionsNode firstAnnouncementNode announcementMethodNode writtenInNode runsOnVmNode packageCountNode packageInstallsNode packageRepositoryNode packageAuthorsNode packagesIncludingVersionsNode forLanguagesNode subsetOfNode conferenceNode supersetOfNode abstractCommonKeywordNode
+ inScope blankLineNode descriptionNode wikipediaNode equationNode exampleNode fileExtensionsNode githubLanguageNode githubRepoNode gitlabNode helloWorldCollectionNode statusNode creatorsNode appearedNode announcementUrlNode countryNode titleNode wordRankNode standsForNode akaNode psuedoExampleNode patternKeywordNode patternsNode referenceNode relatedNode replitNode tryItOnlineNode twitterNode typeNode websiteNode wikipediaNode fileTypeNode linguistGrammarRepoNode tiobeNode meetupNode webReplNode linkedInSkillNode projectEulerNode hoplNode subredditNode redditDiscussionNode quineRelayNode ubuntuPackageNode codeMirrorNode rosettaCodeNode antlrNode corporateDevelopersNode compilesToNode cheatSheetUrlNode isOpenSourceNode indeedJobsNode hackerNewsDiscussionsNode firstAnnouncementNode announcementMethodNode writtenInNode runsOnVmNode packageCountNode packageInstallsNode packageRepositoryNode packageAuthorsNode packagesIncludingVersionsNode forLanguagesNode subsetOfNode conferenceNode supersetOfNode abstractCommonKeywordNode languageServerProtocolProjectNode
  pattern [\w-]\.codelani$
  cells fileNameCell
