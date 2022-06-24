@@ -6,6 +6,8 @@ creators Kenneth E. Iverson and Roger Hui
 patterns
  hasCentralPackageRepository? false
  hasComments? true
+ hasLineComments? true
+  NB. Hello World in J
 
 wikipedia https://en.wikipedia.org/wiki/J_(programming_language)
  example
@@ -60,3 +62,5 @@ projectEuler APL/J/K
 hopl 1558
 
 rosettaCode J
+
+lineCommentKeyword NB.

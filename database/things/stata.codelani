@@ -5,6 +5,8 @@ type pl
 patterns
  hasCentralPackageRepository? true
  hasComments? true
+ hasLineComments? true
+   // there are 4 regions in this dataset
 
 wikipedia https://en.wikipedia.org/wiki/Stata
  example
@@ -76,3 +78,5 @@ projectEuler Stata
 rosettaCode Stata
 
 corporateDevelopers StataCorp
+
+lineCommentKeyword //

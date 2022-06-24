@@ -5,6 +5,7 @@ type metaLanguage
 patterns
  canWriteToDisk? false
  hasCentralPackageRepository? false
+ hasLineComments? false
 
 wikipedia https://en.wikipedia.org/wiki/XML
  example

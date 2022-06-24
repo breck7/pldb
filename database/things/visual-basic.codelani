@@ -8,6 +8,9 @@ patterns
   Option Explicit On|Off
   Option Compare Binary
  hasOperatorOverloading? false
+ hasComments? true
+ hasLineComments? true
+  'This entire line is a comment
 
 wikipedia https://en.wikipedia.org/wiki/Visual_Basic
  example
@@ -64,3 +67,5 @@ antlr https://github.com/antlr/grammars-v4/tree/master/vb6
 corporateDevelopers Microsoft
 indeedJobs visual basic engineer
  2017 3294
+
+lineCommentKeyword '

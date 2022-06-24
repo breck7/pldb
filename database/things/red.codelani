@@ -5,6 +5,8 @@ creators Nenad Rakocevic
 
 patterns
  hasCentralPackageRepository? false
+ hasLineComments? true
+  ;-- save previous frame pointer
 
 wikipedia https://en.wikipedia.org/wiki/Red_(programming_language)
  example
@@ -189,3 +191,5 @@ tiobe Red
 rosettaCode Red
 
 writtenIn red
+
+lineCommentKeyword ;

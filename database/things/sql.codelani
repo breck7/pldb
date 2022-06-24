@@ -5,6 +5,9 @@ type queryLanguage
 patterns
  hasCentralPackageRepository? false
  hasComments? true
+ hasLineComments? true
+  SELECT * FROM Customers -- WHERE City='Berlin';
+
 
 wikipedia https://en.wikipedia.org/wiki/SQL
  related sql-92 datalog linq powershell c sql-psm sqlpl transact-sql mysql pl-sql ada postgresql plpgsql java perl python tcl javascript xml xquery dot-ql isbl quel mumps isbn doi
@@ -56,3 +59,5 @@ hopl 533
 codeMirror sql
 
 rosettaCode SQL
+
+lineCommentKeyword --

@@ -5,6 +5,9 @@ type textMarkup
 patterns
  hasCentralPackageRepository? false
  hasImports? false
+ hasLineComments? false
+ hasComments? true
+  <!-- Hello World in HTML -->
 
 wikipedia https://en.wikipedia.org/wiki/HTML
  example

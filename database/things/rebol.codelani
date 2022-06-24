@@ -6,6 +6,8 @@ creators Carl Sassenrath
 patterns
  hasCentralPackageRepository? false
  hasComments? true
+ hasLineComments? true
+  ; Hello World in REBOL
 
 wikipedia https://en.wikipedia.org/wiki/REBOL
  example
@@ -70,3 +72,4 @@ hopl 2438
 rosettaCode REBOL
 
 corporateDevelopers REBOL Technologies
+lineCommentKeyword ;

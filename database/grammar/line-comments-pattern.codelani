@@ -1,0 +1,7 @@
+title Line Comments
+type pattern
+psuedoExample # from here to end of line|file is a comment
+description Comments that start with a character and continue until end of line.
+reference https://en.wikipedia.org/wiki/Comparison_of_programming_languages_(syntax)#Comments
+status active
+patternKeyword hasLineComments?

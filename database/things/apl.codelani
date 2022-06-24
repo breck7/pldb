@@ -7,6 +7,8 @@ patterns
  hasCentralPackageRepository? false
  hasComments? true
  hasGarbageCollection? true
+ hasLineComments? true
+  ⍝ This is a comment
 
 wikipedia https://en.wikipedia.org/wiki/APL_(programming_language)
  example
@@ -66,3 +68,5 @@ hopl 18
 codeMirror apl
 
 rosettaCode APL
+
+lineCommentKeyword ⍝

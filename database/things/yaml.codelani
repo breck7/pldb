@@ -5,6 +5,9 @@ type metaLanguage
 patterns
  hasCentralPackageRepository? false
  hasSemanticIndentation? true
+ hasLineComments? true
+  # this is single line comment.
+ hasComments? true
 
 wikipedia https://en.wikipedia.org/wiki/YAML
  example
@@ -65,3 +68,5 @@ linkedInSkill yaml
  peopleWithThisSkillCount 6065
 
 codeMirror yaml
+
+lineCommentKeyword #

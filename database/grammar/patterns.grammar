@@ -193,6 +193,10 @@ hasConditionalsNode
 hasCommentsNode
  extends abstractPatternNode
  crux hasComments?
+hasLineCommentsNode
+ extends abstractPatternNode
+ description I define a line comment as a character(s) that starts a comment that cannot be stopped except by a line break character or end of file character.
+ crux hasLineComments?
 hasBlockCommentsNode
  extends abstractPatternNode
  crux hasBlockComments?
