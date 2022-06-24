@@ -51,3 +51,6 @@ status active
 fileType text
 
 antlr https://github.com/antlr/grammars-v4/tree/master//codelani/rawData/antlr/yaip
+
+lineCommentKeyword #
+lineCommentKeyword ;

@@ -1,4 +1,5 @@
 tooling A function generates this grammar by combining all files in the grammar folder.
+languageCommonKeywordCell
 conferenceNameCell
  extends stringCell
 extensionCell
@@ -156,6 +157,20 @@ webReplNode
  extends abstractUrlNode
  description An online repl for the project.
  crux webRepl
+abstractCommonKeywordNode
+ description Most general purpose programming languages implement a set of common keywords for common patterns like these.
+ cells keywordCell
+ catchAllCellType languageCommonKeywordCell
+ extends abstractFactNode
+ abstract
+lineCommentKeywordNode
+ extends abstractCommonKeywordNode
+ description I define a line comment as a character(s) that starts a comment that cannot be stopped except by a line break character or end of file character.
+ crux lineCommentKeyword
+ todo Be able to hard code that multiple are okay
+ example
+  javascript
+   lineCommentKeyword //
 conferenceNode
  description Some languages have a recurring conference(s).
  cells keywordCell urlCell
@@ -1193,6 +1208,6 @@ codelaniNode
  description A database about programming languages and related concepts.
  catchAllNodeType errorNode
  todo Should not have to manually list each node type here, but should be able to mark some tag as inscope
- inScope blankLineNode descriptionNode wikipediaNode equationNode exampleNode fileExtensionsNode githubLanguageNode githubRepoNode gitlabNode helloWorldCollectionNode statusNode creatorsNode appearedNode announcementUrlNode countryNode titleNode wordRankNode standsForNode akaNode psuedoExampleNode patternKeywordNode patternsNode referenceNode relatedNode replitNode tryItOnlineNode twitterNode typeNode websiteNode wikipediaNode fileTypeNode linguistGrammarRepoNode tiobeNode meetupNode webReplNode linkedInSkillNode projectEulerNode hoplNode subredditNode redditDiscussionNode quineRelayNode ubuntuPackageNode codeMirrorNode rosettaCodeNode antlrNode corporateDevelopersNode compilesToNode cheatSheetUrlNode isOpenSourceNode indeedJobsNode hackerNewsDiscussionsNode firstAnnouncementNode announcementMethodNode writtenInNode runsOnVmNode packageCountNode packageInstallsNode packageRepositoryNode packageAuthorsNode packagesIncludingVersionsNode forLanguagesNode subsetOfNode conferenceNode supersetOfNode
+ inScope blankLineNode descriptionNode wikipediaNode equationNode exampleNode fileExtensionsNode githubLanguageNode githubRepoNode gitlabNode helloWorldCollectionNode statusNode creatorsNode appearedNode announcementUrlNode countryNode titleNode wordRankNode standsForNode akaNode psuedoExampleNode patternKeywordNode patternsNode referenceNode relatedNode replitNode tryItOnlineNode twitterNode typeNode websiteNode wikipediaNode fileTypeNode linguistGrammarRepoNode tiobeNode meetupNode webReplNode linkedInSkillNode projectEulerNode hoplNode subredditNode redditDiscussionNode quineRelayNode ubuntuPackageNode codeMirrorNode rosettaCodeNode antlrNode corporateDevelopersNode compilesToNode cheatSheetUrlNode isOpenSourceNode indeedJobsNode hackerNewsDiscussionsNode firstAnnouncementNode announcementMethodNode writtenInNode runsOnVmNode packageCountNode packageInstallsNode packageRepositoryNode packageAuthorsNode packagesIncludingVersionsNode forLanguagesNode subsetOfNode conferenceNode supersetOfNode abstractCommonKeywordNode
  pattern [\w-]\.codelani$
  cells fileNameCell
