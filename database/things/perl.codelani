@@ -20,6 +20,8 @@ patterns
   compiler until the next =cut is encountered.
   =cut
  hasBlockComments? true
+ hasLineComments? true
+  # This is a comment in perl
  hasHereDocs? true
  hasDirectives? true
   # In Perl, the keyword "use", which imports modules, can also be used to specify directives, such as use strict; or use utf8;

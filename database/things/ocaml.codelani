@@ -5,6 +5,7 @@ creators Xavier Leroy
 
 patterns
  hasCentralPackageRepository? true
+ hasLineComments? false
  hasComments? true
   (* This is a single-line comment. *)
   (* This is a

@@ -6,6 +6,8 @@ patterns
  isLisp? true
  hasCentralPackageRepository? false
  hasComments? true
+ hasLineComments? true
+  ; Hello World in Scheme
  hasMacros? true
   https://en.wikibooks.org/wiki/Scheme_Programming/Macros
  hasPrefixNotation? true
@@ -88,3 +90,5 @@ rosettaCode Scheme
 
 indeedJobs scheme engineer
  2017 1174
+
+lineCommentKeyword ;
