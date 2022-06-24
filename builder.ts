@@ -345,6 +345,7 @@ class Builder extends AbstractBuilder {
     folder.buildIndexPage("full.html")
     folder.buildSnippetsPage("index.html")
     folder.buildCssFile()
+    folder.buildRssFeed()
 
     this._buildListsSite()
   }
