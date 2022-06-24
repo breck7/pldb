@@ -158,6 +158,10 @@ class CodeLaniBaseFolder extends TreeBaseFolder {
     return new TreeNode.Parser(CodeLaniFile)
   }
 
+  get patternFiles() {
+    return this.filter(file => file.get("type") === "pattern")
+  }
+
   get grammarProgramConstructor() {
     if (!this._grammarProgramConstructor)
       this._grammarProgramConstructor = new jtree.HandGrammarProgram(

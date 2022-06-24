@@ -65,6 +65,7 @@ pipeTable
  Iterators|../languages/iterators-pattern.html||for a in collection()
  Lazy Evaluation|../languages/lazy-evaluation-pattern.html||print(range(1000000)[2])
  Letter-first Identifiers|../languages/letter-first-identifiers-pattern.html||"seven11 = ""OK"" // 711 = ""ERROR"""
+ Line Comments|../languages/line-comments-pattern.html||# from here to end of line is a comment
  Lists|../languages/lists-pattern.html|array or vector or sequence|[2, 3, 10]
  Macros|../languages/macros-pattern.html||#define height 10
  Magic Getters and Setters|../languages/magic-getters-and-setters-pattern.html||get(name) => obj[name]

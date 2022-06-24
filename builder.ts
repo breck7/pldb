@@ -174,19 +174,17 @@ class Builder extends AbstractBuilder {
     const pagePath = __dirname + "/blog/lists/patterns.scroll"
     const page = new TreeNode(Disk.read(pagePath))
 
-    const files = codeLaniBase
-      .filter(lang => lang.get("type") === "pattern")
-      .map(file => {
-        const name = file.primaryKey
-        return {
-          pattern: file.get("title"),
-          patternLink: `../languages/${name}.html`,
-          aka: file.get("aka"),
-          psuedoExample: (file.get("psuedoExample") || "")
-            .replace(/\</g, "&lt;")
-            .replace(/\|/g, "&#124;")
-        }
-      })
+    const files = codeLaniBase.patternFiles.map(file => {
+      const name = file.primaryKey
+      return {
+        pattern: file.get("title"),
+        patternLink: `../languages/${name}.html`,
+        aka: file.get("aka"),
+        psuedoExample: (file.get("psuedoExample") || "")
+          .replace(/\</g, "&lt;")
+          .replace(/\|/g, "&#124;")
+      }
+    })
 
     replaceNext(
       page,
