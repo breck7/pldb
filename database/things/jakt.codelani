@@ -1,0 +1,12 @@
+title Jakt
+githubRepo https://github.com/SerenityOS/jakt
+description Jakt is a memory-safe systems programming language. It currently transpiles to C++.
+compilesTo cpp
+type pl
+
+example
+ function main() {
+    let x = ("a", 2, true)
+ 
+    println("{}", x.1)
+ }
