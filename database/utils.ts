@@ -1,4 +1,6 @@
 const lodash = require("lodash")
+const { jtree } = require("jtree")
+const { Utils } = jtree
 
 const cleanAndRightShift = (str, numSpaces = 1) =>
   str.replace(/\r/g, "").replace(/\n/g, "\n" + " ".repeat(numSpaces))
@@ -8,6 +10,9 @@ const toCommaList = (arr, conjunction = "and") => {
   let last = arr.pop()
   return arr.join(", ") + ` ${conjunction} ${last}`
 }
+
+const getPrimaryKey = node =>
+  Utils.getFileName(Utils.removeFileExtension(node.getWord(0)))
 
 const replaceNext = (node, path, newContent) =>
   node
@@ -115,5 +120,6 @@ export {
   replaceNext,
   nodeToFlatObject,
   toScrollTable,
-  getJoined
+  getJoined,
+  getPrimaryKey
 }

@@ -1,9 +1,9 @@
 import { jtree } from "jtree"
 import { codelaniNodeKeywords } from "./types"
-import { nodeToFlatObject, getJoined } from "./utils"
+import { nodeToFlatObject, getJoined, getPrimaryKey } from "./utils"
 
 const lodash = require("lodash")
-const { Utils, TreeNode } = jtree
+const { TreeNode } = jtree
 const {
   TreeBaseFolder,
   TreeBaseFile,
@@ -53,7 +53,7 @@ xmlFormat`).toObject()
 
 class CodeLaniFile extends TreeBaseFile {
   get primaryKey() {
-    return Utils.getFileName(Utils.removeFileExtension(this.getWord(0)))
+    return getPrimaryKey(this)
   }
 
   get link() {
@@ -335,7 +335,15 @@ class CodeLaniBaseFolder extends TreeBaseFolder {
     program.getTopDownArray().forEach(node => {
       if (node.includeChildrenInCsv === false) node.deleteChildren()
     })
+    program.forEach(node => {
+      node.set("id", getPrimaryKey(node))
+    })
     const objects = program.map(nodeToFlatObject)
+    const ranks = this._getRanks()
+    // Add ranks
+    objects.forEach(obj => {
+      obj.rank = ranks[obj.id]
+    })
     return new TreeNode(objects).toCsv()
   }
 
