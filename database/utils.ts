@@ -11,6 +11,24 @@ const toCommaList = (arr, conjunction = "and") => {
   return arr.join(", ") + ` ${conjunction} ${last}`
 }
 
+const isLanguage = type => {
+  const nonLanguages = {
+    vm: true,
+    linter: true,
+    library: true,
+    webApi: true,
+    characterEncoding: true,
+    cloud: true,
+    editor: true,
+    filesystem: true,
+    pattern: true,
+    packageManager: true,
+    os: true
+  }
+
+  return nonLanguages[type] ? false : true
+}
+
 const getPrimaryKey = node =>
   Utils.getFileName(Utils.removeFileExtension(node.getWord(0)))
 
@@ -121,5 +139,6 @@ export {
   nodeToFlatObject,
   toScrollTable,
   getJoined,
-  getPrimaryKey
+  getPrimaryKey,
+  isLanguage
 }

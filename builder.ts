@@ -25,7 +25,12 @@ const websiteFolder = __dirname + "/codelani.com"
 const databaseFolderWhenPublishedToWebsite = websiteFolder + "/languages" // Todo: eventually redirect away from /languages?
 const settingsFile = Disk.read(__dirname + "/blog/scroll.settings")
 
-import { nameToAnchor, replaceNext, toScrollTable } from "./database/utils"
+import {
+  nameToAnchor,
+  replaceNext,
+  toScrollTable,
+  isLanguage
+} from "./database/utils"
 
 class Builder extends AbstractBuilder {
   _cpAssets() {
@@ -49,7 +54,7 @@ class Builder extends AbstractBuilder {
     this.buildAcknowledgementsPage()
     this.buildTopPages()
     this.buildBlog()
-    this.buildCsv()
+    this.buildCsvs()
     this.buildDatabasePages()
   }
 
@@ -463,9 +468,15 @@ class Builder extends AbstractBuilder {
     new CommandLineApp().format(outputFilePath)
   }
 
-  buildCsv() {
+  buildCsvs() {
     codeLaniBase.loadFolder()
-    Disk.write(websiteFolder + "/codelani.csv", codeLaniBase.toCsv())
+    const objects = codeLaniBase.toObjectsForCsv()
+
+    Disk.write(websiteFolder + "/codelani.csv", new TreeNode(objects).toCsv())
+    Disk.write(
+      websiteFolder + "/languages.csv",
+      new TreeNode(objects.filter(obj => isLanguage(obj.type))).toCsv()
+    )
   }
 
   buildTypesFile() {

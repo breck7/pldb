@@ -1,6 +1,6 @@
 import { jtree } from "jtree"
 import { codelaniNodeKeywords } from "./types"
-import { nodeToFlatObject, getJoined, getPrimaryKey } from "./utils"
+import { nodeToFlatObject, getJoined, getPrimaryKey, isLanguage } from "./utils"
 
 const lodash = require("lodash")
 const { TreeNode } = jtree
@@ -68,21 +68,7 @@ class CodeLaniFile extends TreeBaseFile {
   }
 
   get isLanguage() {
-    const nonLanguages = {
-      vm: true,
-      linter: true,
-      library: true,
-      webApi: true,
-      characterEncoding: true,
-      cloud: true,
-      editor: true,
-      filesystem: true,
-      pattern: true,
-      packageManager: true,
-      os: true
-    }
-
-    return nonLanguages[this.get("type")] ? false : true
+    return isLanguage(this.get("type"))
   }
 
   get numberOfUsers() {
@@ -334,10 +320,12 @@ class CodeLaniBaseFolder extends TreeBaseFolder {
     return { id: file.primaryKey, score: score }
   }
 
-  toCsv() {
+  toObjectsForCsv() {
+    // todo: sort columns by importance
     const program = this.toProgram()
     program.getTopDownArray().forEach(node => {
       if (node.includeChildrenInCsv === false) node.deleteChildren()
+      if (node.getNodeTypeId() === "blankLineNode") node.destroy()
     })
     program.forEach(node => {
       node.set("id", getPrimaryKey(node))
@@ -348,7 +336,8 @@ class CodeLaniBaseFolder extends TreeBaseFolder {
     objects.forEach(obj => {
       obj.rank = ranks[obj.id]
     })
-    return new TreeNode(objects).toCsv()
+
+    return lodash.sortBy(objects, "rank")
   }
 
   startServer(port) {
