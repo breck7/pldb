@@ -12,6 +12,8 @@ patterns
   --]]
  hasIdentifiers? true
  hasOperatorOverloading? true
+ hasLineComments? true
+  -- A comment
 
 wikipedia https://en.wikipedia.org/wiki/Lua_(programming_language)
  example

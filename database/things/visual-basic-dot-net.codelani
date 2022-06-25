@@ -6,6 +6,8 @@ patterns
  hasCentralPackageRepository? true
  hasConstructors? true
  hasOperatorOverloading? true
+ hasLineComments? true
+  ' A comment
 
 example
  Imports System.Console

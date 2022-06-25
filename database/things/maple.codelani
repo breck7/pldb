@@ -5,6 +5,8 @@ type pl
 patterns
  hasCentralPackageRepository? true
  hasComments? true
+ hasLineComments? true
+  # A comment
 
 wikipedia https://en.wikipedia.org/wiki/Maple_(software)
  example

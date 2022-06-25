@@ -4,6 +4,8 @@ type pl
 
 patterns
  hasCentralPackageRepository? false
+ hasLineComments? true
+  // A comment
 
 example
  // SPDX-License-Identifier: MIT

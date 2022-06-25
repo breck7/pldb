@@ -9,6 +9,8 @@ patterns
  hasImports? true
   import ballerina/http;
   import ballerina/io;
+ hasLineComments? true
+  // A comment
 
 wikipedia https://en.wikipedia.org/wiki/Ballerina_(programming_language)
  example

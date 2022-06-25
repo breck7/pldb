@@ -74,6 +74,8 @@ patterns
   echo sum(1, 2, 3); // 6
  hasFunctions? true
  hasIncrementAndDecrementOperators? true
+ hasLineComments? true
+  // A comment
 
 wikipedia https://en.wikipedia.org/wiki/PHP
  example

@@ -175,6 +175,8 @@ patterns
           value[i] += rhs.value[i];
       return *this;
   }
+ hasLineComments? true
+  // A comment
 
 wikipedia https://en.wikipedia.org/wiki/C++
  example

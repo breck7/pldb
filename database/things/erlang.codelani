@@ -26,6 +26,8 @@ patterns
  hasMacros? true
   -define(Const, Replacement).
   -define(Func(Var1,...,VarN), Replacement).
+ hasLineComments? true
+  % A comment
 
 wikipedia https://en.wikipedia.org/wiki/Erlang_(programming_language)
  example

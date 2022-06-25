@@ -25,6 +25,8 @@ patterns
      disp(n)  % Echo integer to Command Window
   end
  hasOperatorOverloading? true
+ hasLineComments? true
+  % A comment
 
 wikipedia https://en.wikipedia.org/wiki/MATLAB
  example

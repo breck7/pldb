@@ -5,6 +5,8 @@ type pl
 patterns
  hasCentralPackageRepository? false
  hasComments? true
+ hasLineComments? true
+  ' A comment
 
 wikipedia https://en.wikipedia.org/wiki/VBScript
  example

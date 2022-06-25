@@ -28,6 +28,8 @@ patterns
  hasMacros? true
   https://clojure.org/reference/macros
  hasOperatorOverloading? true
+ hasLineComments? true
+  ; A comment
 
 wikipedia https://en.wikipedia.org/wiki/Clojure
  example

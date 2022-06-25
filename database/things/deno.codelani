@@ -19,3 +19,6 @@ status active
 related javascript typescript
 
 lineCommentKeyword //
+patterns
+ hasLineComments? true
+  // A comment

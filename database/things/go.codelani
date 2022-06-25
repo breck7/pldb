@@ -48,6 +48,8 @@ patterns
     fmt.Println(" is", total) // Also a variadic function.
   }
  hasIncrementAndDecrementOperators? true
+ hasLineComments? true
+  // A comment
 
 wikipedia https://en.wikipedia.org/wiki/Go_(programming_language)
  example

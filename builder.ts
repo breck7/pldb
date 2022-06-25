@@ -468,6 +468,23 @@ class Builder extends AbstractBuilder {
     new CommandLineApp().format(outputFilePath)
   }
 
+  merge() {
+    codeLaniBase.loadFolder()
+    codeLaniBase.forEach(file => {
+      const comment = file.get("lineCommentKeyword")
+      if (comment && !file.getNode("patterns hasLineComments?")) {
+        file
+          .touchNode("patterns")
+          .appendLineAndChildren(
+            `hasLineComments? true`,
+            `${comment} A comment`
+          )
+
+        file.save()
+      }
+    })
+  }
+
   buildCsvs() {
     codeLaniBase.loadFolder()
     const objects = codeLaniBase.toObjectsForCsv()

@@ -25,6 +25,8 @@ patterns
      (define-for-syntax meta-eggs 2)
      (define-for-syntax meta-chicks 3)
      (define num-eggs 2))
+ hasLineComments? true
+  ; A comment
 
 wikipedia https://en.wikipedia.org/wiki/Racket_(programming_language)
  example

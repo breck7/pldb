@@ -33,6 +33,8 @@ patterns
  hasComments? true
  hasDirectives? true
  hasMultipleInheritance? true
+ hasLineComments? true
+  ; A comment
 
 wikipedia https://en.wikipedia.org/wiki/Common_Lisp
  example

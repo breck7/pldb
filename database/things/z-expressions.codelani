@@ -21,6 +21,8 @@ patterns
            print : End of message. 
  hasStrings? true
   print "Hai, guys!"
+ hasLineComments? true
+  -- A comment
 
 githubRepo https://github.com/chrisdone/z
  firstCommit 2012

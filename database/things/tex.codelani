@@ -4,6 +4,8 @@ type pl
 
 patterns
  hasCentralPackageRepository? true
+ hasLineComments? true
+  % A comment
 
 wikipedia https://en.wikipedia.org/wiki/TeX
  example

@@ -173,6 +173,8 @@ patterns
   let i = 0
   i++
   i--
+ hasLineComments? true
+  // A comment
 
 wikipedia https://en.wikipedia.org/wiki/JavaScript
  example

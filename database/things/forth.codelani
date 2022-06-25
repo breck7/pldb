@@ -11,6 +11,8 @@ patterns
   \ Multiplies 25 and 10 and then adds 50 to result
   25 10 * 50 +
  isCaseSensitive? false
+ hasLineComments? true
+  \ A comment
 
 wikipedia https://en.wikipedia.org/wiki/Forth_(programming_language)
  example

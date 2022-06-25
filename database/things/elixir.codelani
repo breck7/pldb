@@ -20,6 +20,8 @@ patterns
   # Invokes the custom code defined in Foo as an extension point
   use Foo
  hasSemanticIndentation? true
+ hasLineComments? true
+  # A comment
 
 wikipedia https://en.wikipedia.org/wiki/Elixir_(programming_language)
  example

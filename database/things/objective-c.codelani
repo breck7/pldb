@@ -18,6 +18,8 @@ patterns
      -(void) print;
   @end
  hasOperatorOverloading? false
+ hasLineComments? true
+  // A comment
 
 wikipedia https://en.wikipedia.org/wiki/Objective-C
  example

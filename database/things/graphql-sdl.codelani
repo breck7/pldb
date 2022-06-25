@@ -34,6 +34,8 @@ example
 patterns
  hasComments? true
  hasBlockComments? false
+ hasLineComments? true
+  “”” A comment
 
 description A type definition syntax to the GraphQL specification.
 reference https://github.com/graphql/graphql-spec/pull/90

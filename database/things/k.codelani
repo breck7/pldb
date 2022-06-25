@@ -8,6 +8,8 @@ description K is like APL, but K restricts itself to the ASCII character set.
 patterns
  hasCentralPackageRepository? false
  hasComments? true
+ hasLineComments? true
+  / A comment
 
 wikipedia https://en.wikipedia.org/wiki/K_(programming_language)
  related scheme q apl sql j sql-92 solaris linux

@@ -19,3 +19,6 @@ example
  }
 webRepl https://rescript-lang.org/try
 lineCommentKeyword //
+patterns
+ hasLineComments? true
+  // A comment

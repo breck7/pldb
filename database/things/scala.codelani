@@ -37,6 +37,8 @@ patterns
   }
  hasOperatorOverloading? true
  hasTypeInference? true
+ hasLineComments? true
+  // A comment
 
 wikipedia https://en.wikipedia.org/wiki/Scala_(programming_language)
  example

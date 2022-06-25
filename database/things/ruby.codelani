@@ -64,6 +64,8 @@ patterns
  hasOperatorOverloading? true
  hasPrintStatements? true
   puts "Hi"
+ hasLineComments? true
+  # A comment
 
 wikipedia https://en.wikipedia.org/wiki/Ruby_(programming_language)
  example

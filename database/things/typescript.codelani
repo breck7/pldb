@@ -71,6 +71,8 @@ patterns
   const scores: int[]
  hasUnionTypes? true
   declare type numOrString = string | number
+ hasLineComments? true
+  // A comment
 
 wikipedia https://en.wikipedia.org/wiki/TypeScript
  example

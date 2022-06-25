@@ -119,6 +119,8 @@ patterns
   with resource_context_manager() as resource:
      # Perform actions with the resource.
   # Perform other actions where the resource is guaranteed to be deallocated.
+ hasLineComments? true
+  # A comment
 
 wikipedia https://en.wikipedia.org/wiki/Python_(programming_language)
  related jython micropython stackless-python cython abc algol-68 c dylan haskell icon java lisp modula-3 perl boo cobra coffeescript d f-sharp falcon genie go groovy javascript julia nim ruby swift setl unix unicode standard-ml pascal regex csharp common-lisp scheme objective-c numpy mime http sagemath llvmir jvm java-bytecode cil pyrex mercurial python-for-s60 qt django scipy matplotlib mathematical-notation gdb freebsd ecmascript ocaml tcl erlang

@@ -62,6 +62,8 @@ patterns
   
   show(io::IO, a::MyType) = print(io, "MyType $(a.x)")
   end
+ hasLineComments? true
+  # A comment
 
 wikipedia https://en.wikipedia.org/wiki/Julia_(programming_language)
  example

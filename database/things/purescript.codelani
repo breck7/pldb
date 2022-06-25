@@ -25,6 +25,8 @@ patterns
   -- Syntax is whitespace sensitive. The general rule of thumb is that declarations which span multiple lines should be indented past the column on which they were first defined on their subsequent lines.
   foo = bar +
    baz
+ hasLineComments? true
+  -- A comment
 
 githubLanguage PureScript
  fileExtensions purs

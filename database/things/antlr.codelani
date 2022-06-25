@@ -4,6 +4,8 @@ type grammarLanguage
 
 patterns
  hasCentralPackageRepository? false
+ hasLineComments? true
+  // A comment
 
 example
  /** Taken from "The Definitive ANTLR 4 Reference" by Terence Parr */

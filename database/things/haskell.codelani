@@ -53,6 +53,8 @@ patterns
  hasOperatorOverloading? true
  hasSemanticIndentation? true
  hasTypeInference? true
+ hasLineComments? true
+  -- A comment
 
 wikipedia https://en.wikipedia.org/wiki/Haskell_(programming_language)
  example

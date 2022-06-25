@@ -8,6 +8,8 @@ related rust elm purescript fable-lang clojurescript swift haxe
 
 patterns
  hasCentralPackageRepository? false
+ hasLineComments? true
+  // A comment
 
 githubLanguage Reason
  fileExtensions re rei
