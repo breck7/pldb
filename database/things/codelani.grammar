@@ -1,5 +1,4 @@
 tooling A function generates this grammar by combining all files in the grammar folder.
-tooling onsave jtree build buildGrammar
 languageCommonKeywordCell
 conferenceNameCell
  extends stringCell
@@ -149,6 +148,7 @@ languageServerProtocolProjectNode
  boolean multipleOk true
  description A link to a project implementing LSP for this language.
  crux languageServerProtocolProject
+ string sourceDomain langserver.org
 packageRepositoryNode
  extends abstractUrlNode
  crux packageRepository

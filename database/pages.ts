@@ -384,6 +384,13 @@ ${facts.map(fact => ` - ${fact}`).join("\n")}`
         `Here is an <a href="antlr.html">ANTLR</a> <a href="${antlr}">grammar</a> for ${title}`
       )
 
+    // todo: handle multiple
+    const lsp = file.get("languageServerProtocolProject")
+    if (lsp)
+      facts.push(
+        `Here is a ${title} <a href="language-server-protocol.html">LSP</a> <a href="${lsp}">implementation</a>`
+      )
+
     const codeMirror = file.get("codeMirror")
     if (codeMirror)
       facts.push(

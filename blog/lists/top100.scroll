@@ -14,12 +14,12 @@ pipeTable
  javascript|../languages/javascript.html|1995|pl|4
  ruby|../languages/ruby.html|1995|pl|5
  perl|../languages/perl.html|1987|pl|6
- c|../languages/c.html|1972|pl|7
- r|../languages/r.html|1993|pl|8
+ r|../languages/r.html|1993|pl|7
+ c|../languages/c.html|1972|pl|8
  scala|../languages/scala.html|2004|pl|9
  go|../languages/go.html|2009|pl|10
- matlab|../languages/matlab.html|1984|pl|11
- rust|../languages/rust.html|2010|pl|12
+ rust|../languages/rust.html|2010|pl|11
+ matlab|../languages/matlab.html|1984|pl|12
  swift|../languages/swift.html|2014|pl|13
  haskell|../languages/haskell.html|1990|pl|14
  fortran|../languages/fortran.html|1957|pl|15
@@ -36,32 +36,32 @@ pipeTable
  mathematica|../languages/mathematica.html|1988|pl|26
  visual-basic|../languages/visual-basic.html|1991|pl|27
  objective-c|../languages/objective-c.html|1984|pl|28
- css|../languages/css.html|1996|stylesheetLanguage|29
- mysql|../languages/mysql.html|1995|queryLanguage|30
- xml|../languages/xml.html|1996|metaLanguage|31
+ xml|../languages/xml.html|1996|metaLanguage|29
+ css|../languages/css.html|1996|stylesheetLanguage|30
+ mysql|../languages/mysql.html|1995|queryLanguage|31
  julia|../languages/julia.html|2012|pl|32
- coffeescript|../languages/coffeescript.html|2009|pl|33
- scheme|../languages/scheme.html|1970|pl|34
- racket|../languages/racket.html|1994|pl|35
- typescript|../languages/typescript.html|2012|pl|36
- json|../languages/json.html|2001|metaLanguage|37
- postgresql|../languages/postgresql.html|1986|queryLanguage|38
- elixir|../languages/elixir.html|2011|pl|39
- maple|../languages/maple.html|1982|pl|40
- elm|../languages/elm.html|2012|pl|41
+ typescript|../languages/typescript.html|2012|pl|33
+ coffeescript|../languages/coffeescript.html|2009|pl|34
+ scheme|../languages/scheme.html|1970|pl|35
+ json|../languages/json.html|2001|metaLanguage|36
+ racket|../languages/racket.html|1994|pl|37
+ elixir|../languages/elixir.html|2011|pl|38
+ postgresql|../languages/postgresql.html|1986|queryLanguage|39
+ elm|../languages/elm.html|2012|pl|40
+ maple|../languages/maple.html|1982|pl|41
  delphi|../languages/delphi.html|1995|pl|42
  cuda|../languages/cuda.html|2007|pl|43
  labview|../languages/labview.html|1986|pl|44
  llvmir|../languages/llvmir.html|2003|ir|45
- wordpress|../languages/wordpress.html|2003|application|46
+ yaml|../languages/yaml.html|2001|metaLanguage|46
  idris|../languages/idris.html|2014|pl|47
- yaml|../languages/yaml.html|2001|metaLanguage|48
+ wordpress|../languages/wordpress.html|2003|application|48
  common-lisp|../languages/common-lisp.html|1984|pl|49
  wasm|../languages/wasm.html|2015|bytecode|50
  antlr|../languages/antlr.html|1992|grammarLanguage|51
  yacc|../languages/yacc.html|1975|grammarLanguage|52
- opencl|../languages/opencl.html|2009|pl|53
- pl-sql|../languages/pl-sql.html|1991|pl|54
+ pl-sql|../languages/pl-sql.html|1991|pl|53
+ opencl|../languages/opencl.html|2009|pl|54
  mongodb|../languages/mongodb.html|2009|application|55
  verilog|../languages/verilog.html|1984|hardwareDescriptionLanguage|56
  vhdl|../languages/vhdl.html|1983|hardwareDescriptionLanguage|57
@@ -79,32 +79,32 @@ pipeTable
  vala|../languages/vala.html|2006|pl|69
  redis|../languages/redis.html|2009|application|70
  vba|../languages/vba.html|1993|pl|71
- wolfram|../languages/wolfram.html|1988|pl|72
- uml|../languages/uml.html|1996|xmlFormat|73
+ uml|../languages/uml.html|1996|xmlFormat|72
+ wolfram|../languages/wolfram.html|1988|pl|73
  xojo|../languages/xojo.html|1996|pl|74
  standard-ml|../languages/standard-ml.html|1990|pl|75
  arm|../languages/arm.html|1985|assembly|76
  xbase|../languages/xbase.html|1986|pl|77
  svg|../languages/svg.html|2001|textMarkup|78
- scratch|../languages/scratch.html|2002|visual|79
- turtle|../languages/turtle.html|2011|metaLanguage|80
+ turtle|../languages/turtle.html|2011|metaLanguage|79
+ scratch|../languages/scratch.html|2002|visual|80
  x10|../languages/x10.html|2004|pl|81
  xpath|../languages/xpath.html|1999|queryLanguage|82
  whitespace|../languages/whitespace.html|2003|esolang|83
- sqlite|../languages/sqlite.html|2000|queryLanguage|84
- vuejs|../languages/vuejs.html|2014|textMarkup|85
+ vuejs|../languages/vuejs.html|2014|textMarkup|84
+ sqlite|../languages/sqlite.html|2000|queryLanguage|85
  sparql|../languages/sparql.html|2008|queryLanguage|86
  supercollider|../languages/supercollider.html|1996|pl|87
- simula|../languages/simula.html|1965|pl|88
- sed|../languages/sed.html|1974|pl|89
- stata|../languages/stata.html|1985|pl|90
- drupal|../languages/drupal.html|2000|application|91
+ sed|../languages/sed.html|1974|pl|88
+ simula|../languages/simula.html|1965|pl|89
+ drupal|../languages/drupal.html|2000|application|90
+ stata|../languages/stata.html|1985|pl|91
  squirrel|../languages/squirrel.html|2003|pl|92
  visual-foxpro|../languages/visual-foxpro.html|1995|pl|93
  z-shell|../languages/z-shell.html|1990|pl|94
- turing|../languages/turing.html|1982|pl|95
- x86-assembly|../languages/x86-assembly.html|1972|assembly|96
- twig|../languages/twig.html|2009|template|97
- transact-sql|../languages/transact-sql.html|1984|queryLanguage|98
- red|../languages/red.html|2011|pl|99
+ transact-sql|../languages/transact-sql.html|1984|queryLanguage|95
+ turing|../languages/turing.html|1982|pl|96
+ x86-assembly|../languages/x86-assembly.html|1972|assembly|97
+ red|../languages/red.html|2011|pl|98
+ twig|../languages/twig.html|2009|template|99
  sagemath|../languages/sagemath.html|2005|pl|100
