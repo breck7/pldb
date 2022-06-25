@@ -1,6 +1,12 @@
 import { jtree } from "jtree"
 import { codelaniNodeKeywords } from "./types"
-import { nodeToFlatObject, getJoined, getPrimaryKey, isLanguage } from "./utils"
+import {
+  nodeToFlatObject,
+  getJoined,
+  getPrimaryKey,
+  isLanguage,
+  getCleanedId
+} from "./utils"
 
 const lodash = require("lodash")
 const { TreeNode } = jtree
@@ -191,6 +197,26 @@ class CodeLaniBaseFolder extends TreeBaseFolder {
         .toTypeScriptInterface()
         .replace("interface codelaniNode", "export interface codelaniNode")
     return tsContent
+  }
+
+  _searchIndex?: Map<string, string>
+  get searchIndex() {
+    if (this._searchIndex) return this._searchIndex
+    const map = new Map()
+    this.forEach(file => {
+      const id = file.primaryKey
+      map.set(file.primaryKey, id)
+      map.set(file.title, id)
+      const wp = file.get("wikipedia")
+      if (wp) map.set(wp.replace("https://en.wikipedia.org/wiki/", ""), id)
+    })
+    this._searchIndex = map
+    return this._searchIndex
+  }
+
+  searchForEntity(query) {
+    const { searchIndex } = this
+    return searchIndex.get(query) || searchIndex.get(getCleanedId(query))
   }
 
   predictNumberOfUsers(file) {
