@@ -5,6 +5,7 @@ type pl
 patterns
  hasCentralPackageRepository? false
  hasTypeInference? true
+ hasLineComments? false
 
 wikipedia https://en.wikipedia.org/wiki/Standard_ML
  example
@@ -74,3 +75,5 @@ tiobe Standard ML
 quineRelay Standard ML
 
 ubuntuPackage mlton
+
+lineCommentKeyword #

@@ -5,6 +5,8 @@ type pl
 patterns
  hasCentralPackageRepository? false
  hasComments? true
+  (: Hello World with XQuery :)
+ hasLineComments? false
 
 wikipedia https://en.wikipedia.org/wiki/XQuery
  example

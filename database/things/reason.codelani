@@ -2,6 +2,10 @@ title Reason
 appeared 2016
 type pl
 
+compilesTo ocaml
+
+related rust elm purescript fable-lang clojurescript swift haxe
+
 patterns
  hasCentralPackageRepository? false
 
@@ -18,6 +22,17 @@ githubRepo https://github.com/facebook/reason
  firstCommit 2016
  description Simple, fast & type safe code that leverages the JavaScript & OCaml ecosystems
  issues 367
+
+example
+ type schoolPerson = Teacher | Director | Student(string);
+ 
+ let greeting = person =>
+   switch (person) {
+   | Teacher => "Hey Professor!"
+   | Director => "Hello Director."
+   | Student("Richard") => "Still here Ricky?"
+   | Student(anyOtherName) => "Hey, " ++ anyOtherName ++ "."
+   };
 
 linguistGrammarRepo https://github.com/reasonml-editor/language-reason
  firstCommit 2016
@@ -531,3 +546,5 @@ corporateDevelopers Facebook
 writtenIn ocaml
 languageServerProtocolProject https://github.com/jaredly/reason-language-server
  writtenIn ocaml
+
+lineCommentKeyword //

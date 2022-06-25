@@ -1,0 +1,25 @@
+title Fable
+type pl
+description Fable is a compiler that brings F# into the JavaScript ecosystem
+website https://fable.io/
+example
+ type Face =
+     | Ace | King | Queen | Jack
+     | Number of int
+ type Color =
+     | Spades | Hearts | Diamonds | Clubs
+ type Card =
+     | Face * Color
+ let aceOfHearts = Ace, Hearts
+ let tenOfSpades = (Number 10), Spades
+ match card with
+ | Ace, Hearts -> printfn "Ace Of Hearts!"
+ | _, Hearts -> printfn "A lovely heart"
+ | (Number 10), Spades -> printfn "10 of Spades"
+ | _, (Diamonds|Clubs) -> printfn "Diamonds or clubs"
+ // Warning:
+ // Incomplete pattern matches on this expression.
+ // For example, the value '(_,Spades)' may indicate
+ // a case not covered by the pattern(s).
+
+lineCommentKeyword //
