@@ -29,11 +29,13 @@ class LanguagePageTemplate {
 
   _getTrendingRepos() {
     const { file } = this
+    const { title } = file
     const count = file.get(
       `${codelaniNodeKeywords.githubLanguage} trendingProjectsCount`
     )
     if (parseInt(count) > 0) {
       const table = file.getNode("githubLanguage trendingProjects")
+      const githubId = file.get("githubLanguage")
 
       if (!table) {
         console.log(`Error with ${this.primaryKey}`)
@@ -48,7 +50,7 @@ class LanguagePageTemplate {
         )
       })
       return `foldBreak
-subsection Trending Repos
+subsection Trending <a href="https://github.com/trending/${githubId}?since=monthly">${title} repos</a> on GitHub
 commaTable
  ${cleanAndRightShift(tree.toDelimited(",", ["repo", "stars", "description"]))}
  `
