@@ -5,6 +5,7 @@ type pl
 patterns
  hasCentralPackageRepository? false
  hasComments? true
+ hasLineComments? false
 
 wikipedia https://en.wikipedia.org/wiki/Modula-3
  example
@@ -275,3 +276,4 @@ tiobe Modula-3
 hopl 1411
 
 rosettaCode Modula-3
+reference https://www.cs.purdue.edu/homes/hosking/m3/reference/syntax.html

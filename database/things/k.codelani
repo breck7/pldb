@@ -3,6 +3,8 @@ appeared 1993
 type pl
 creators Arthur Whitney
 
+description K is like APL, but K restricts itself to the ASCII character set.
+
 patterns
  hasCentralPackageRepository? false
  hasComments? true
@@ -37,3 +39,4 @@ hopl 2142
 rosettaCode K
 
 corporateDevelopers Kx Systems
+lineCommentKeyword /

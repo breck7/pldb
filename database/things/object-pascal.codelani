@@ -6,6 +6,14 @@ patterns
  hasCentralPackageRepository? false
  hasConstructors? true
  hasOperatorOverloading? true
+ hasComments? true
+  (* This is a multi-line comments
+   and it will span multiple lines. *)
+  { This is a single line comment in pascal }
+ hasBlockComments? true
+  (* This is a multi-line comments
+   and it will span multiple lines. *)
+ hasLineComments? false
 
 wikipedia https://en.wikipedia.org/wiki/Object_Pascal
  example
