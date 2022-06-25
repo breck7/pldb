@@ -14,6 +14,8 @@ import {
   toCommaList
 } from "./utils"
 
+const currentYear = 2022
+
 class LanguagePageTemplate {
   constructor(file: CodeLaniFile) {
     this.file = file
@@ -494,14 +496,23 @@ code
     const appeared = object.appeared
     const { numberOfUsers, numberOfJobs } = file
     const users =
-      numberOfUsers > 10 ? numeral(numberOfUsers).format("0.0a") : "?"
-    const jobs = numberOfJobs > 10 ? numeral(numberOfJobs).format("0a") : "?"
-    const currentYear = 2022
+      numberOfUsers > 10 ? numeral(numberOfUsers).format("0.0a") : ""
+    const jobs = numberOfJobs > 10 ? numeral(numberOfJobs).format("0a") : ""
+
+    const appearedLine = isNaN(appeared)
+      ? ""
+      : `${currentYear - appeared} Years Old`
+    const userLine = users
+      ? `${users} <span title="Crude user estimate from a linear model.">Users</span>`
+      : ""
+    const jobsLine = jobs
+      ? `${jobs} <span title="Crude jobs estimate from a linear model.">Jobs</span>`
+      : ""
 
     return `kpiTable
- ${isNaN(appeared) ? "?" : currentYear - appeared} Years Old
- ${users} <span title="Crude user estimate from a linear model. ? implies no user estimate available.">Users</span>
- ${jobs} <span title="Crude jobs estimate from a linear model. ? implies no job estimate available.">Jobs</span>`
+ ${appearedLine}
+ ${userLine}
+ ${jobsLine}`.trim()
   }
 }
 
@@ -510,8 +521,10 @@ class PatternPageTemplate extends LanguagePageTemplate {
     const { object } = this
     const appeared = object.appeared
 
+    if (isNaN(appeared)) return ""
+
     return `kpiTable
- ${isNaN(appeared) ? "?" : 2019 - appeared} Years Old`
+ ${currentYear - appeared} Years Old`
   }
 
   _getTypeLink() {

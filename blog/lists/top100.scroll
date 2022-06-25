@@ -8,76 +8,76 @@ aftertext
 comment autogenTop
 pipeTable
  name|nameLink|appeared|type|rank
- python|../languages/python.html|1991|pl|1
- java|../languages/java.html|1995|pl|2
- php|../languages/php.html|1995|pl|3
- javascript|../languages/javascript.html|1995|pl|4
- ruby|../languages/ruby.html|1995|pl|5
- perl|../languages/perl.html|1987|pl|6
- r|../languages/r.html|1993|pl|7
- c|../languages/c.html|1972|pl|8
- scala|../languages/scala.html|2004|pl|9
- go|../languages/go.html|2009|pl|10
- rust|../languages/rust.html|2010|pl|11
+ java|../languages/java.html|1995|pl|1
+ javascript|../languages/javascript.html|1995|pl|2
+ python|../languages/python.html|1991|pl|3
+ c|../languages/c.html|1972|pl|4
+ php|../languages/php.html|1995|pl|5
+ ruby|../languages/ruby.html|1995|pl|6
+ perl|../languages/perl.html|1987|pl|7
+ r|../languages/r.html|1993|pl|8
+ go|../languages/go.html|2009|pl|9
+ html|../languages/html.html|1991|textMarkup|10
+ scala|../languages/scala.html|2004|pl|11
  matlab|../languages/matlab.html|1984|pl|12
- swift|../languages/swift.html|2014|pl|13
- haskell|../languages/haskell.html|1990|pl|14
+ csharp|../languages/csharp.html|2000|pl|13
+ sql|../languages/sql.html|1974|queryLanguage|14
  fortran|../languages/fortran.html|1957|pl|15
- html|../languages/html.html|1991|textMarkup|16
- csharp|../languages/csharp.html|2000|pl|17
+ cpp|../languages/cpp.html|1985|pl|16
+ haskell|../languages/haskell.html|1990|pl|17
  lua|../languages/lua.html|1993|pl|18
  cobol|../languages/cobol.html|1959|pl|19
- sql|../languages/sql.html|1974|queryLanguage|20
- clojure|../languages/clojure.html|2007|pl|21
- cpp|../languages/cpp.html|1985|pl|22
- erlang|../languages/erlang.html|1986|pl|23
- prolog|../languages/prolog.html|1972|pl|24
- lisp|../languages/lisp.html|1958|pl|25
- mathematica|../languages/mathematica.html|1988|pl|26
- visual-basic|../languages/visual-basic.html|1991|pl|27
+ swift|../languages/swift.html|2014|pl|20
+ rust|../languages/rust.html|2010|pl|21
+ clojure|../languages/clojure.html|2007|pl|22
+ prolog|../languages/prolog.html|1972|pl|23
+ xml|../languages/xml.html|1996|metaLanguage|24
+ erlang|../languages/erlang.html|1986|pl|25
+ css|../languages/css.html|1996|stylesheetLanguage|26
+ mysql|../languages/mysql.html|1995|queryLanguage|27
  objective-c|../languages/objective-c.html|1984|pl|28
- xml|../languages/xml.html|1996|metaLanguage|29
- css|../languages/css.html|1996|stylesheetLanguage|30
- mysql|../languages/mysql.html|1995|queryLanguage|31
- julia|../languages/julia.html|2012|pl|32
- typescript|../languages/typescript.html|2012|pl|33
- coffeescript|../languages/coffeescript.html|2009|pl|34
- scheme|../languages/scheme.html|1970|pl|35
- json|../languages/json.html|2001|metaLanguage|36
- racket|../languages/racket.html|1994|pl|37
+ mathematica|../languages/mathematica.html|1988|pl|29
+ lisp|../languages/lisp.html|1958|pl|30
+ visual-basic|../languages/visual-basic.html|1991|pl|31
+ coffeescript|../languages/coffeescript.html|2009|pl|32
+ json|../languages/json.html|2001|metaLanguage|33
+ julia|../languages/julia.html|2012|pl|34
+ typescript|../languages/typescript.html|2012|pl|35
+ postgresql|../languages/postgresql.html|1986|queryLanguage|36
+ scheme|../languages/scheme.html|1970|pl|37
  elixir|../languages/elixir.html|2011|pl|38
- postgresql|../languages/postgresql.html|1986|queryLanguage|39
- elm|../languages/elm.html|2012|pl|40
- maple|../languages/maple.html|1982|pl|41
+ racket|../languages/racket.html|1994|pl|39
+ maple|../languages/maple.html|1982|pl|40
+ elm|../languages/elm.html|2012|pl|41
  delphi|../languages/delphi.html|1995|pl|42
  cuda|../languages/cuda.html|2007|pl|43
  labview|../languages/labview.html|1986|pl|44
  llvmir|../languages/llvmir.html|2003|ir|45
  yaml|../languages/yaml.html|2001|metaLanguage|46
- idris|../languages/idris.html|2014|pl|47
- wordpress|../languages/wordpress.html|2003|application|48
- common-lisp|../languages/common-lisp.html|1984|pl|49
- wasm|../languages/wasm.html|2015|bytecode|50
+ wordpress|../languages/wordpress.html|2003|application|47
+ common-lisp|../languages/common-lisp.html|1984|pl|48
+ idris|../languages/idris.html|2014|pl|49
+ yacc|../languages/yacc.html|1975|grammarLanguage|50
  antlr|../languages/antlr.html|1992|grammarLanguage|51
- yacc|../languages/yacc.html|1975|grammarLanguage|52
- opencl|../languages/opencl.html|2009|pl|53
+ mongodb|../languages/mongodb.html|2009|application|52
+ wasm|../languages/wasm.html|2015|bytecode|53
  pl-sql|../languages/pl-sql.html|1991|pl|54
- mongodb|../languages/mongodb.html|2009|application|55
+ opencl|../languages/opencl.html|2009|pl|55
  verilog|../languages/verilog.html|1984|hardwareDescriptionLanguage|56
  visual-basic-dot-net|../languages/visual-basic-dot-net.html|2001|pl|57
  vhdl|../languages/vhdl.html|1983|hardwareDescriptionLanguage|58
  rails|../languages/rails.html|2005|framework|59
  mediawiki|../languages/mediawiki.html|2002|application|60
- vbscript|../languages/vbscript.html|1996|pl|61
- xquery|../languages/xquery.html|2007|pl|62
- spss|../languages/spss.html|1968|pl|63
+ spss|../languages/spss.html|1968|pl|61
+ vbscript|../languages/vbscript.html|1996|pl|62
+ xquery|../languages/xquery.html|2007|pl|63
  tcl|../languages/tcl.html|1988|pl|64
- solidity|../languages/solidity.html|2014|pl|65
- tex|../languages/tex.html|1978|pl|66
- git|../languages/git.html|2005|application|67
+ tex|../languages/tex.html|1978|pl|65
+ git|../languages/git.html|2005|application|66
+ solidity|../languages/solidity.html|2014|pl|67
  smalltalk|../languages/smalltalk.html|1972|pl|68
- vala|../languages/vala.html|2006|pl|69
- redis|../languages/redis.html|2009|application|70
+ redis|../languages/redis.html|2009|application|69
+ vala|../languages/vala.html|2006|pl|70
  vba|../languages/vba.html|1993|pl|71
  uml|../languages/uml.html|1996|xmlFormat|72
  wolfram|../languages/wolfram.html|1988|pl|73

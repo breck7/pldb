@@ -252,15 +252,23 @@ class CodeLaniBaseFolder extends TreeBaseFolder {
     )
   }
 
-  predictNumberOfJobs(file) {
-    return Math.round(
-      this._computeMetric(file, [
-        "linkedInSkill peopleWithThisSkillCount",
-        li => parseInt(li.split(" ")[0]) * 0.01,
-        "indeedJobs 2017",
-        li => parseInt(li.split(" ")[1])
-      ]).score
+  _computeMetric(file, criteria) {
+    const keys = criteria.filter((item, i) => i % 2 === 0)
+    const fns = criteria.filter((item, i) => i % 2 === 1)
+    const values = keys.map(key => file.get(key))
+    const score = Math.round(
+      values
+        .map((value, index) => (value ? fns[index](value) : 0))
+        .reduce((a, b) => a + b, 0)
     )
+    return { id: file.primaryKey, score }
+  }
+
+  predictNumberOfJobs(file) {
+    const li =
+      parseInt(file.get("linkedInSkill peopleWithThisSkillCount") || 0) * 0.01
+    const indeed = parseInt(file.get("indeedJobs 2017") || 0)
+    return Math.round(li + indeed)
   }
 
   // Rank is:
@@ -332,18 +340,6 @@ class CodeLaniBaseFolder extends TreeBaseFolder {
   getRank(file) {
     const ranks = this._getRanks()
     return ranks[file.primaryKey]
-  }
-
-  _computeMetric(file, criteria) {
-    const keys = criteria.filter((item, i) => i % 2 === 0)
-    const fns = criteria.filter((item, i) => i % 2 === 1)
-    const values = keys.map(key => file.get(key))
-    const score = Math.round(
-      values
-        .map((value, index) => (value ? fns[index](value) : 0))
-        .reduce((a, b) => a + b, 0)
-    )
-    return { id: file.primaryKey, score: score }
   }
 
   toObjectsForCsv() {
