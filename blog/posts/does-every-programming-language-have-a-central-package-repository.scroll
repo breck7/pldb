@@ -80,6 +80,7 @@ paragraph
 section ★ A Visual
 
 image images/packages-repos.png
+ caption Languages with web package managers plotted by year and number of published packages.
 
 section ★ The List
 
@@ -127,8 +128,10 @@ pipeTable
  prolog|/languages/prolog.html|http://www.swi-prolog.org/pldoc/doc/_SWI_/library/prolog_pack.pl|http://www.swi-prolog.org/pldoc/doc/_SWI_/library/prolog_pack.pl|275|1972
  mathematica|/languages/mathematica.html|http://packagedata.net/|http://packagedata.net/|210|1988
 
-paragraph
- Notes: as Jay18001 pointed out, a few of these repositories
+subsection Updates
+
+aftertext
+ As Jay18001 pointed out, a few of these repositories
  serve packages for more than one language. Cocoapods =>
  Objective-C, and Nuget => F# and other .Net langs. In this
  post I collapsed things so each repo only has 1 language.
@@ -140,6 +143,12 @@ aftertext
  just the gems beginning with the letter A. I apologize for
  the mistake and am very grateful for the corrections.
  https://rubygems.org/gems page
+
+aftertext
+ Thanks to PallHaraldsson for reviewing this post and encouraging it to get updated.
+ https://github.com/PallHaraldsson PallHaraldsson
+
+observable https://observablehq.com/@codelani/languages-with-central-package-repositories
 
 ohayoCode
  html.h1 Does every programming language have a central package repository?

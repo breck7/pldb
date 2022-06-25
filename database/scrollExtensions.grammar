@@ -43,6 +43,14 @@ ohayoCodeNode
  javascript
   compile() {
    const link = `https://ohayo.computer?filename=${this.getRootNode().permalink}.ohayo&data=${encodeURIComponent(this.childrenToString())}`
-    return `<div class="scrollQuoteComponent">Run this analysis yourself in <a href="${link}">Ohayo</a></div>`
+    return `<div class="scrollQuoteComponent">Analyze this data yourself in <a href="${link}">Ohayo</a></div>`
   }
-
+observableNode
+ extends abstractScrollNode
+ crux observable
+ cells keywordCell urlCell
+ description Provide a direct link to analyze this data in Observable.
+ javascript
+  compile() {
+   return `<div class="scrollQuoteComponent">Analyze this data yourself in <a href="${this.getWord(1)}">Observable</a></div>`
+  }

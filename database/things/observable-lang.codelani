@@ -8,6 +8,11 @@ corporateDevelopers Observable
 
 creators Mike Bostock
 
+patterns
+ hasComments? true
+ hasLineComments? true
+  // A comment
+
 githubRepo https://github.com/observablehq/runtime
  firstCommit 2017
  stars 339
@@ -34,3 +39,5 @@ example
   }
   return x;
  }
+
+lineCommentKeyword //
