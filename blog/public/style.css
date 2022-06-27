@@ -13,6 +13,10 @@
   padding: 5px;
   break-inside: avoid;
 }
+.logoFont {
+  font-weight: bold;
+  font-family: Tahoma, Arial;
+}
 a {
   text-decoration: none;
 }

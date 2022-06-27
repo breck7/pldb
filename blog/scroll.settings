@@ -9,8 +9,9 @@ maxColumns 2
 footer
  div
   class pldbFooter
-  a <b>PLDB</b>
+  a PLDB
    href BASE_URL/index.html
+   class logoFont
   span - Build the next great programming language. v5.0.0 - 
   a Email
    href mailto:feedback@pldb.pub
@@ -34,6 +35,7 @@ header
   class pldbHeader
   a PLDB
    href BASE_URL/index.html
+   class logoFont
   form
    style display:inline-block;
    input
