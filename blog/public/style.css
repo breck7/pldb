@@ -1,9 +1,9 @@
-.codeLaniHeader {
+.pldbHeader {
   padding: 8px;
   padding-left: 20px;
   margin-bottom: 10px;
 }
-.codeLaniHeader a {
+.pldbHeader a {
   color: black;
   margin-right: 5px;
   font-size: 16px;
@@ -19,20 +19,20 @@ a {
 a:hover {
   text-decoration: underline;
 }
-.codeLaniHeader a:hover,
-.codeLaniFooter a:hover {
+.pldbHeader a:hover,
+.pldbFooter a:hover {
   color: black;
 }
 .scrollPage {
   margin: 0;
 }
-.codeLaniFooter {
+.pldbFooter {
   margin-top: 18px;
   padding: 8px;
   padding-left: 20px;
   color: #828282;
 }
-.codeLaniFooter a {
+.pldbFooter a {
   color: #828282;
 }
 #search {

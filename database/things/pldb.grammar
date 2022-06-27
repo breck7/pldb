@@ -33,7 +33,7 @@ keywordCell
 yearCell
  extends intCell
 permalinkCell
- description An ID of a language on Codelani.
+ description An ID of a language on PLDB.
 externalGuidCell
  description A GUID from another site.
 fileNameCell
@@ -555,7 +555,7 @@ abstractPermalinksNode
  abstract
  catchAllCellType permalinkCell
  extends abstractFactNode
- description Links to other entities on CodeLani.
+ description Links to other entities on PLDB.
 forLanguagesNode
  description Which languages is this repository for?
  extends abstractPermalinksNode
@@ -596,13 +596,13 @@ abstractPermalinkNode
  abstract
  cells keywordCell permalinkCell
  extends abstractFactNode
- description Link to other entities on CodeLani.
+ description Link to other entities on PLDB.
 subsetOfNode
  description Is this language a subset of another?
  extends abstractPermalinkNode
  crux subsetOf
 typeNode
- description Which category in CodeLani's subjective ontology does this entity fit into.
+ description Which category in PLDB's subjective ontology does this entity fit into.
  cells keywordCell typeCell
  required
  crux type
@@ -1231,11 +1231,11 @@ blankLineNode
   stringTemplate 
  pattern ^$
  tags doNotSynthesize
-codelaniNode
+pldbNode
  root
  description A database about programming languages and related concepts.
  catchAllNodeType errorNode
  todo Should not have to manually list each node type here, but should be able to mark some tag as inscope
  inScope blankLineNode descriptionNode wikipediaNode equationNode exampleNode fileExtensionsNode githubLanguageNode githubRepoNode gitlabNode helloWorldCollectionNode statusNode creatorsNode appearedNode announcementUrlNode countryNode titleNode wordRankNode standsForNode akaNode psuedoExampleNode patternKeywordNode patternsNode referenceNode relatedNode replitNode tryItOnlineNode twitterNode typeNode websiteNode wikipediaNode fileTypeNode linguistGrammarRepoNode tiobeNode meetupNode webReplNode linkedInSkillNode projectEulerNode hoplNode subredditNode redditDiscussionNode quineRelayNode ubuntuPackageNode codeMirrorNode rosettaCodeNode antlrNode corporateDevelopersNode compilesToNode cheatSheetUrlNode isOpenSourceNode indeedJobsNode hackerNewsDiscussionsNode firstAnnouncementNode announcementMethodNode writtenInNode runsOnVmNode packageCountNode packageInstallsNode packageRepositoryNode packageAuthorsNode packagesIncludingVersionsNode forLanguagesNode subsetOfNode conferenceNode supersetOfNode abstractCommonKeywordNode languageServerProtocolProjectNode
- pattern [\w-]\.codelani$
+ pattern [\w-]\.pldb$
  cells fileNameCell

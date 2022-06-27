@@ -89,7 +89,7 @@ aftertext
  languages that have them. I cut the list a bit to only
  include CRs with more than 100 packages available. As
  always, open an issue if you spot any omissions or mistakes!
- https://github.com/codelani/codelani/issues/new open an issue
+ https://github.com/breck7/pldb/issues/new open an issue
 
 pipeTable
  id|idLink|website|websiteLink|packages|appeared
@@ -148,11 +148,11 @@ aftertext
  Thanks to PallHaraldsson for reviewing this post and encouraging it to get updated.
  https://github.com/PallHaraldsson PallHaraldsson
 
-observable https://observablehq.com/@codelani/languages-with-central-package-repositories
+observable https://observablehq.com/@pldb/languages-with-central-package-repositories
 
 ohayoCode
  html.h1 Does every programming language have a central package repository?
- web.get https://codelani.com/codelani.csv
+ web.get https://pldb.pub/pldb.csv
   filter.where appeared > 1950
    columns.keep appeared patterns.hasCentralPackageRepository? title
     columns.setType appeared year

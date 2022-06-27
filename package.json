@@ -1,19 +1,19 @@
 {
-  "name": "codelani",
+  "name": "pldb",
   "version": "5.0.0",
-  "description": "The CodeLani database and blog.",
+  "description": "The PLDB database and blog.",
   "main": "index.js",
   "scripts": {
     "build": "jtree build buildAll",
     "cloc": "cloc --vcs git .",
-    "checkLinks": "linkinator -r https://codelani.com > brokenLinks.txt"
+    "checkLinks": "linkinator -r https://pldb.pub > brokenLinks.txt"
   },
   "prettier": {
     "semi": false
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/codelani/codelani.git"
+    "url": "git+https://github.com/breck7/pldb.git"
   },
   "keywords": [
     "programming"
@@ -21,9 +21,9 @@
   "author": "Code Lani",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/codelani/codelani/issues"
+    "url": "https://github.com/breck7/pldb/issues"
   },
-  "homepage": "https://github.com/codelani/codelani#readme",
+  "homepage": "https://github.com/breck7/pldb#readme",
   "dependencies": {
     "jtree": "^53.2.0",
     "lodash": "^4.17.21",

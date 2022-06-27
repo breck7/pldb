@@ -53,7 +53,7 @@ commaTable
 
 ohayoCode
  html.h1 What letters do programming languages start with?
- web.get https://codelani.com/codelani.csv
+ web.get https://pldb.pub/pldb.csv
   hidden
   columns.keep title type
    hidden

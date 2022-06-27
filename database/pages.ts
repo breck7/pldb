@@ -4,8 +4,8 @@ const numeral = require("numeral")
 
 import { jtree } from "jtree"
 const { TreeNode } = jtree
-import { codelaniNode, codelaniNodeKeywords } from "./types"
-import { CodeLaniFile } from "./CodeLaniBase"
+import { pldbNode, pldbNodeKeywords } from "./types"
+import { PLDBFile } from "./PLDBBase"
 
 import {
   cleanAndRightShift,
@@ -17,21 +17,21 @@ import {
 const currentYear = 2022
 
 class LanguagePageTemplate {
-  constructor(file: CodeLaniFile) {
+  constructor(file: PLDBFile) {
     this.file = file
     this.object = file.toObject()
     this.primaryKey = this.file.primaryKey
   }
 
-  protected object: codelaniNode
-  protected file: CodeLaniFile // todo: fix type
+  protected object: pldbNode
+  protected file: PLDBFile // todo: fix type
   protected primaryKey: string
 
   _getTrendingRepos() {
     const { file } = this
     const { title } = file
     const count = file.get(
-      `${codelaniNodeKeywords.githubLanguage} trendingProjectsCount`
+      `${pldbNodeKeywords.githubLanguage} trendingProjectsCount`
     )
     if (parseInt(count) > 0) {
       const table = file.getNode("githubLanguage trendingProjects")
@@ -94,9 +94,9 @@ pipeTable
     return `title ${title}
 
 htmlTitle ${title} - ${lodash.upperFirst(typeName)}
-sourceLink https://github.com/codelani/codelani/blob/main/database/things/${
+sourceLink https://github.com/breck7/pldb/blob/main/database/things/${
       this.primaryKey
-    }.codelani
+    }.pldb
 
 ${this._getDescriptionSection()}
 
@@ -154,7 +154,7 @@ ${facts.map(fact => ` - ${fact}`).join("\n")}`
     const { file, object } = this
     let longerDescription = ""
     const wikipediaSummary = file.get("wikipedia summary")
-    const wpLink = file.get(codelaniNodeKeywords.wikipedia)
+    const wpLink = file.get(pldbNodeKeywords.wikipedia)
     if (wikipediaSummary)
       longerDescription +=
         description +
@@ -437,7 +437,7 @@ ${facts.map(fact => ` - ${fact}`).join("\n")}`
       )
 
     facts.push(
-      `Have a question about ${title} not answered here? <a href="https://github.com/codelani/codelani/issues/new">Open an issue</a> explaining what you need.`
+      `Have a question about ${title} not answered here? <a href="https://github.com/breck7/pldb/issues/new">Open an issue</a> explaining what you need.`
     )
     return facts
   }

@@ -2,6 +2,6 @@ title Semantic Indentation
 type pattern
 psuedoExample if true(newline/space)print True
 description With this pattern, programmers indent their code blocks with whitespace instead of using braces, brackets, or other visible characters.
-reference http://codelani.com/posts/which-programming-languages-use-indentation.html
+reference https://pldb.pub/posts/which-programming-languages-use-indentation.html
 status active
 patternKeyword hasSemanticIndentation?

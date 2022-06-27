@@ -1,9 +1,10 @@
 title About this Web Server
 
 aftertext
- You can download all the source code for this site and browse it completely offline from our GitHub.
+ You can download all the source code for this site and browse it completely offline from GitHub.
+ https://github.com/breck7/pldb source code
 
-section CodeLani.com
+section PLDB.pub
 
 aftertext
  I use Google Domains for domain registration and DNS.
@@ -21,7 +22,7 @@ aftertext
 subsection Analytics
 
 aftertext
- CodeLani.com does not use cookies or include any tracking scripts. You can view a report of web traffic to this site <a href="nginxStats.html">here</a>.
+ This site does not use cookies or include any tracking scripts. You can view a report of web traffic to this site <a href="nginxStats.html">here</a>.
  https://www.nginx.com/ NGINX
 
 aftertext
@@ -34,15 +35,15 @@ cronCode
 subsection Server setup
 
 bashCode
- ssh root@codelani.com
+ ssh root@pldb.pub
  apt-get update
  apt-get upgrade
  reboot
  # Log back in:
- ssh root@codelani.com
- adduser codelani
- usermod -aG sudo codelani
- su codelani
+ ssh root@pldb.pub
+ adduser pldb
+ usermod -aG sudo pldb
+ su pldb
  cd
  sudo apt-get install nginx
  # google "digital ocean certbot" and follow instructions.

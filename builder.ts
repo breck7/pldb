@@ -14,14 +14,14 @@ const { ScrollFolder } = require("scroll-cli")
 const shell = require("child_process").execSync
 
 import { LanguagePageTemplate, PatternPageTemplate } from "./database/pages"
-import { CodeLaniBaseFolder } from "./database/CodeLaniBase"
+import { PLDBBaseFolder } from "./database/PLDBBase"
 
 const thingsFolder = __dirname + "/database/things/"
-const codeLaniBase = new (<any>CodeLaniBaseFolder)(
+const pldbBase = new (<any>PLDBBaseFolder)(
   undefined,
   thingsFolder
-) as CodeLaniBaseFolder
-const websiteFolder = __dirname + "/codelani.com"
+) as PLDBBaseFolder
+const websiteFolder = __dirname + "/pldb.pub"
 const databaseFolderWhenPublishedToWebsite = websiteFolder + "/languages" // Todo: eventually redirect away from /languages?
 const settingsFile = Disk.read(__dirname + "/blog/scroll.settings")
 
@@ -40,8 +40,8 @@ class Builder extends AbstractBuilder {
     // Copy grammar to public folder
     Disk.mkdir(websiteFolder + "/datasets")
     Disk.write(
-      websiteFolder + "/datasets/codelani.grammar",
-      Disk.read(thingsFolder + "codelani.grammar")
+      websiteFolder + "/datasets/pldb.grammar",
+      Disk.read(thingsFolder + "pldb.grammar")
     )
   }
 
@@ -59,11 +59,11 @@ class Builder extends AbstractBuilder {
   }
 
   _buildTopPages(num) {
-    codeLaniBase.loadFolder()
+    pldbBase.loadFolder()
     const pagePath = __dirname + `/blog/lists/top${num}.scroll`
     const page = new TreeNode(Disk.read(pagePath))
 
-    let files = codeLaniBase
+    let files = pldbBase
       .filter(lang => lang.isLanguage)
       .map(file => {
         const name = file.primaryKey
@@ -102,11 +102,11 @@ class Builder extends AbstractBuilder {
   }
 
   buildFileExtensionsPage() {
-    codeLaniBase.loadFolder()
+    pldbBase.loadFolder()
     const pagePath = __dirname + "/blog/lists/extensions.scroll"
     const page = new TreeNode(Disk.read(pagePath))
 
-    const files = codeLaniBase
+    const files = pldbBase
       .filter(file => file.get("type") !== "pattern")
       .map(file => {
         const name = file.primaryKey
@@ -135,11 +135,11 @@ class Builder extends AbstractBuilder {
   }
 
   buildLanguagesPage() {
-    codeLaniBase.loadFolder()
+    pldbBase.loadFolder()
     const pagePath = __dirname + "/blog/lists/languages.scroll"
     const page = new TreeNode(Disk.read(pagePath))
 
-    const files = codeLaniBase
+    const files = pldbBase
       .filter(file => file.get("type") !== "pattern")
       .map(file => {
         const name = file.primaryKey
@@ -175,11 +175,11 @@ class Builder extends AbstractBuilder {
   }
 
   buildPatternsPage() {
-    codeLaniBase.loadFolder()
+    pldbBase.loadFolder()
     const pagePath = __dirname + "/blog/lists/patterns.scroll"
     const page = new TreeNode(Disk.read(pagePath))
 
-    const files = codeLaniBase.patternFiles.map(file => {
+    const files = pldbBase.patternFiles.map(file => {
       const name = file.primaryKey
       return {
         pattern: file.get("title"),
@@ -213,12 +213,12 @@ class Builder extends AbstractBuilder {
   }
 
   buildCreatorsPage() {
-    codeLaniBase.loadFolder()
+    pldbBase.loadFolder()
     const pagePath = __dirname + "/blog/lists/creators.scroll"
     const page = new TreeNode(Disk.read(pagePath))
 
     const entities = {}
-    codeLaniBase.forEach(file => {
+    pldbBase.forEach(file => {
       const languageId = file.primaryKey
       if (file.has("creators"))
         file
@@ -273,12 +273,12 @@ class Builder extends AbstractBuilder {
   }
 
   buildCorporationsPage() {
-    codeLaniBase.loadFolder()
+    pldbBase.loadFolder()
     const pagePath = __dirname + "/blog/lists/corporations.scroll"
     const page = new TreeNode(Disk.read(pagePath))
 
     const entities = {}
-    codeLaniBase.forEach(file => {
+    pldbBase.forEach(file => {
       const languageId = file.primaryKey
       if (file.has("corporateDevelopers"))
         file
@@ -332,7 +332,7 @@ class Builder extends AbstractBuilder {
         .replace(/BASE_URL/g, ".")
         .replace(
           "GIT_PATH",
-          "https://github.com/codelani/codelani/blob/main/blog/posts/"
+          "https://github.com/breck7/pldb/blob/main/blog/posts/"
         )
     )
 
@@ -376,7 +376,7 @@ class Builder extends AbstractBuilder {
         .replace(/BASE_URL/g, "..")
         .replace(
           "GIT_PATH",
-          "https://github.com/codelani/codelani/blob/main/blog/lists/"
+          "https://github.com/breck7/pldb/blob/main/blog/lists/"
         )
     )
 
@@ -393,8 +393,8 @@ class Builder extends AbstractBuilder {
     this.buildGrammar()
     Disk.mkdir(databaseFolderWhenPublishedToWebsite)
 
-    codeLaniBase.loadFolder()
-    codeLaniBase.forEach(file => {
+    pldbBase.loadFolder()
+    pldbBase.forEach(file => {
       const path = `${databaseFolderWhenPublishedToWebsite}/${file.primaryKey}.scroll`
 
       const constructor =
@@ -422,7 +422,7 @@ class Builder extends AbstractBuilder {
   buildAcknowledgementsPage() {
     const sources = Array.from(
       new Set(
-        Disk.read(thingsFolder + "codelani.grammar")
+        Disk.read(thingsFolder + "pldb.grammar")
           .split("\n")
           .filter(line => line.includes("string sourceDomain"))
           .map(line => line.split("string sourceDomain")[1].trim())
@@ -441,7 +441,7 @@ class Builder extends AbstractBuilder {
   }
 
   buildGrammar() {
-    const outputFilePath = thingsFolder + "codelani.grammar"
+    const outputFilePath = thingsFolder + "pldb.grammar"
 
     // Concatenate all files ending in ".grammar" in the "grammar" directory:
     const grammar =
@@ -469,8 +469,8 @@ class Builder extends AbstractBuilder {
   }
 
   merge() {
-    codeLaniBase.loadFolder()
-    codeLaniBase.forEach(file => {
+    pldbBase.loadFolder()
+    pldbBase.forEach(file => {
       const comment = file.get("lineCommentKeyword")
       if (comment && !file.getNode("patterns hasLineComments?")) {
         file
@@ -486,10 +486,10 @@ class Builder extends AbstractBuilder {
   }
 
   buildCsvs() {
-    codeLaniBase.loadFolder()
-    const objects = codeLaniBase.toObjectsForCsv()
+    pldbBase.loadFolder()
+    const objects = pldbBase.toObjectsForCsv()
 
-    Disk.write(websiteFolder + "/codelani.csv", new TreeNode(objects).toCsv())
+    Disk.write(websiteFolder + "/pldb.csv", new TreeNode(objects).toCsv())
     Disk.write(
       websiteFolder + "/languages.csv",
       new TreeNode(objects.filter(obj => isLanguage(obj.type))).toCsv()
@@ -497,16 +497,16 @@ class Builder extends AbstractBuilder {
   }
 
   buildTypesFile() {
-    Disk.write(__dirname + "/database/types.ts", codeLaniBase.typesFile)
+    Disk.write(__dirname + "/database/types.ts", pldbBase.typesFile)
   }
 
   formatDatabase() {
-    codeLaniBase.loadFolder()
-    codeLaniBase.forEach(file => file.formatAndSave())
+    pldbBase.loadFolder()
+    pldbBase.forEach(file => file.formatAndSave())
   }
 
   startServer(port = 4444) {
-    codeLaniBase.startServer(port)
+    pldbBase.startServer(port)
   }
 
   checkBlog() {

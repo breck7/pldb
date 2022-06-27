@@ -1,27 +1,22 @@
-title CodeLani
+title PLDB
 description Build the next great programming language. v5.0.0
-github https://github.com/codelani
+github https://github.com/breck7/pldb
 git GIT_PATH
-twitter https://twitter.com/codelani
-email feedback@codelani.com
-subreddit https://www.reddit.com/r/codelani/
-baseUrl https://codelani.com/
+email feedback@pldb.pub
+baseUrl https://pldb.pub/
 css none
 maxColumns 2
 footer
  div
-  class codeLaniFooter
-  a <b>CodeLani</b>
+  class pldbFooter
+  a <b>PLDB</b>
    href BASE_URL/index.html
   span - Build the next great programming language. v5.0.0 - 
   a Email
-   href mailto:feedback@codelani.com
+   href mailto:feedback@pldb.pub
   span ·
   a Github
-   href https://github.com/codelani
-  span ·
-  a Twitter
-   href https://twitter.com/codelani
+   href https://github.com/breck7/pldb
 header
  link
   rel stylesheet
@@ -32,14 +27,14 @@ header
   type text/css
   href BASE_URL/style.css
  div
-  class codeLaniHeader
-  a CodeLani
+  class pldbHeader
+  a PLDB
    href BASE_URL/index.html
   form
    method get
    style display:inline-block;
    action https://google.com/search
-   onsubmit window.location = 'https://google.com/search?q=site%3Acodelani.com+' + document.getElementById('search').value; return false;
+   onsubmit window.location = 'https://google.com/search?q=site%3Apldb.pub+' + document.getElementById('search').value; return false;
    input
     type search
     id search

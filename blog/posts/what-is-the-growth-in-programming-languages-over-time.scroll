@@ -321,13 +321,13 @@ section Reproducibility Notes
 
 paragraph
  The data in this post comes from
- the CodeLani database. It is possible to build a
+ the PLDB database. It is possible to build a
  continually updating version of this article that updates
  as more data comes in.
 
 ohayoCode
  html.h1 What is the growth in programming languages over time?
- web.get https://codelani.com/codelani.csv
+ web.get https://pldb.pub/pldb.csv
   filter.where appeared > 1940
    group.by appeared
     rows.sortBy appeared

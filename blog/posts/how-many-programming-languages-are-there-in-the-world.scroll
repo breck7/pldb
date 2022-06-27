@@ -8,7 +8,7 @@ aftertext
  link https://www.ethnologue.com/guides/how-many-languages ~7,099
 
 paragraph
- This is one of the questions I aim to answer with CodeLani.
+ This is one of the questions I aim to answer with PLDB.
  I am building a comprehensive database of programming
  languages.
 
@@ -88,7 +88,7 @@ section Reproducibility notes
 
 paragraph
  A hard count of programming
- languages was made by querying the CodeLani database, which
+ languages was made by querying the PLDB database, which
  consists of thousands of human-checked facts about
  programming languages. Confidence intervals were added ad
  hoc through spot checking with the reference lists
@@ -96,6 +96,6 @@ paragraph
 
 ohayoCode
  html.h1 How Many Programming Languages are there in the World?
- web.get https://codelani.com/codelani.csv
+ web.get https://pldb.pub/pldb.csv
   filter.where type = pl
    show.rowCount

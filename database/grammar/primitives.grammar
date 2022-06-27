@@ -14,7 +14,7 @@ keywordCell
 yearCell
  extends intCell
 permalinkCell
- description An ID of a language on Codelani.
+ description An ID of a language on PLDB.
 externalGuidCell
  description A GUID from another site.
 errorNode
@@ -33,12 +33,12 @@ abstractPermalinksNode
  abstract
  catchAllCellType permalinkCell
  extends abstractFactNode
- description Links to other entities on CodeLani.
+ description Links to other entities on PLDB.
 abstractPermalinkNode
  abstract
  cells keywordCell permalinkCell
  extends abstractFactNode
- description Link to other entities on CodeLani.
+ description Link to other entities on PLDB.
 abstractUrlNode
  cells keywordCell urlCell
  extends abstractFactNode

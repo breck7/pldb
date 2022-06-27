@@ -490,7 +490,7 @@ export enum twitterNodeKeywords {
   followers = "followers"
 }
 
-export interface codelaniNode {
+export interface pldbNode {
   aka?: any // Other names for the language.
   announcementUrl?: any // A url announcing the creation or release of a new language
   appeared?: any // What year was the language publicly released and/or announced.
@@ -520,13 +520,13 @@ export interface codelaniNode {
   title?: any // The official title of the language
   tryItOnline?: any // A link to try this langunage on https://tio.run
   twitter?: twitterNode
-  type: any // Which category in CodeLani's subjective ontology does this entity fit into.
+  type: any // Which category in PLDB's subjective ontology does this entity fit into.
   website?: any // URL of the official homepage for the language project.
   wikipedia?: wikipediaNode
   wordRank?: any // Some creators use a common English word as their language's name. For these we note how common the word is, where "the" is 1.
 }
 
-export enum codelaniNodeKeywords {
+export enum pldbNodeKeywords {
   githubLanguage = "githubLanguage",
   githubRepo = "githubRepo",
   linguistGrammarRepo = "linguistGrammarRepo",
