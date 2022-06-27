@@ -35,12 +35,36 @@ a:hover {
 .pldbFooter a {
   color: #828282;
 }
-#search {
+#searchBox {
   border: 0;
   background: transparent;
   font-size: 16px;
   line-height: 1.5;
 }
+
+.autocomplete {
+  background: #fff;
+  z-index: 1000;
+  font-size: 14px/22px;
+  overflow: auto;
+  box-sizing: border-box;
+  border: 1px solid rgba(50, 50, 50, 0.6);
+}
+.autocomplete * {
+  font: inherit;
+}
+.autocomplete > div {
+  padding: 3px 4px;
+}
+.autocomplete .group {
+  background: #eee;
+}
+.autocomplete > div.selected,
+.autocomplete > div:hover:not(.group) {
+  background: #e3e3e3;
+  cursor: pointer;
+}
+
 .scrollSingleArticleTitle {
   font-size: 36px;
 }

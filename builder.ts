@@ -16,6 +16,8 @@ const shell = require("child_process").execSync
 import { LanguagePageTemplate, PatternPageTemplate } from "./database/pages"
 import { PLDBBaseFolder } from "./database/PLDBBase"
 
+const { TreeBaseServer } = require("jtree/products/treeBase.node.js")
+
 const thingsFolder = __dirname + "/database/things/"
 const pldbBase = new (<any>PLDBBaseFolder)(
   undefined,
@@ -55,6 +57,7 @@ class Builder extends AbstractBuilder {
     this.buildTopPages()
     this.buildBlog()
     this.buildCsvs()
+    this.buildSearchIndex()
     this.buildDatabasePages()
   }
 
@@ -485,6 +488,21 @@ class Builder extends AbstractBuilder {
     })
   }
 
+  buildSearchIndex() {
+    pldbBase.loadFolder()
+    const objects = pldbBase.toObjectsForCsv().map(object => {
+      return {
+        label: object.title,
+        appeared: object.appeared,
+        id: object.id
+      }
+    })
+    Disk.write(
+      websiteFolder + "/searchIndex.json",
+      JSON.stringify(objects, null, 2)
+    )
+  }
+
   buildCsvs() {
     pldbBase.loadFolder()
     const objects = pldbBase.toObjectsForCsv()
@@ -505,8 +523,17 @@ class Builder extends AbstractBuilder {
     pldbBase.forEach(file => file.formatAndSave())
   }
 
+  serveFolder(port = 3030) {
+    const express = require("express")
+    const app = express()
+    app.use(express.static(__dirname + "/pldb.pub"))
+    app.listen(port)
+  }
+
   startServer(port = 4444) {
-    pldbBase.startServer(port)
+    pldbBase.loadFolder()
+    pldbBase.startListeningForFileChanges()
+    new (<any>TreeBaseServer)(pldbBase).listen(port)
   }
 
   checkBlog() {

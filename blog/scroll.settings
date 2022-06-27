@@ -26,19 +26,21 @@ header
   rel stylesheet
   type text/css
   href BASE_URL/style.css
+ script
+  src BASE_URL/libs.js
+ script
+  src BASE_URL/search.js
  div
   class pldbHeader
   a PLDB
    href BASE_URL/index.html
   form
-   method get
    style display:inline-block;
-   action https://google.com/search
-   onsubmit window.location = 'https://google.com/search?q=site%3Apldb.pub+' + document.getElementById('search').value; return false;
    input
     type search
-    id search
+    id searchBox
     placeholder Search
+    autocomplete off
   a Languages
    href BASE_URL/lists/languages.html
   a Patterns

@@ -111,7 +111,6 @@ ${this._getTrendingRepos()}
 ${this._getHackerNewsTable()}
 
 html
- <script src="../entityPageLibs.js"></script>
  <script>
   Mousetrap.bind("left", () => {window.location = "${
     prevFile.primaryKey

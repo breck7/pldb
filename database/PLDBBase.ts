@@ -12,8 +12,7 @@ const lodash = require("lodash")
 const { TreeNode } = jtree
 const {
   TreeBaseFolder,
-  TreeBaseFile,
-  TreeBaseServer
+  TreeBaseFile
 } = require("jtree/products/treeBase.node.js")
 const { Disk } = require("jtree/products/Disk.node.js")
 
@@ -360,13 +359,6 @@ class PLDBBaseFolder extends TreeBaseFolder {
     })
 
     return lodash.sortBy(objects, "rank")
-  }
-
-  startServer(port) {
-    this.buildGrammar()
-    this.loadFolder()
-    this.startListeningForFileChanges()
-    new TreeBaseServer(this).listen(port)
   }
 }
 
