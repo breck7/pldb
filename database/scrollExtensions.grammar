@@ -54,3 +54,14 @@ observableNode
   compile() {
    return `<div class="scrollQuoteComponent">Analyze this data yourself in <a href="${this.getWord(1)}">Observable</a></div>`
   }
+authorNode
+ extends abstractScrollNode
+ crux author
+ cells keywordCell urlCell
+ catchAllCellType anyCell
+ description The author of a post.
+ javascript
+  compile() {
+   return `<div class="scrollAuthor">Written by <a href="${this.getWord(1)}">${this.getWordsFrom(2).join(" ")}</a></div>`
+  }
+
