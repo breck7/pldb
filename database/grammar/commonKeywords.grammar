@@ -5,6 +5,12 @@ abstractCommonKeywordNode
  catchAllCellType languageCommonKeywordCell
  extends abstractFactNode
  abstract
+keywordsNode
+ description What are all the keywords in this language?
+ extends abstractFactNode
+ crux keywords
+ catchAllCellType stringCell
+ single
 lineCommentKeywordNode
  extends abstractCommonKeywordNode
  description I define a line comment as a character(s) that starts a comment that cannot be stopped except by a line break character or end of file character.

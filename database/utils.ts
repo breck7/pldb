@@ -11,6 +11,8 @@ const toCommaList = (arr, conjunction = "and") => {
   return arr.join(", ") + ` ${conjunction} ${last}`
 }
 
+const getATag = permalink => `<a href="${permalink}.html">${permalink}</a>`
+
 const getCleanedId = str =>
   str
     .replace(/[\/\_\:\\\[\]]/g, "-")
@@ -170,5 +172,6 @@ export {
   getJoined,
   getPrimaryKey,
   isLanguage,
-  getCleanedId
+  getCleanedId,
+  getATag
 }

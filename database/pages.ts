@@ -11,7 +11,8 @@ import {
   cleanAndRightShift,
   getIndefiniteArticle,
   nameToAnchor,
-  toCommaList
+  toCommaList,
+  getATag
 } from "./utils"
 
 const currentYear = parseInt(moment(Date.now()).format("YYYY"))
@@ -27,7 +28,7 @@ class LanguagePageTemplate {
   protected file: PLDBFile // todo: fix type
   protected primaryKey: string
 
-  _getTrendingRepos() {
+  get trendingRepos() {
     const { file } = this
     const { title } = file
     const count = file.get(
@@ -58,7 +59,7 @@ commaTable
     return ""
   }
 
-  _getHackerNewsTable() {
+  get hackerNewsTable() {
     const hnTable = this.file
       .getNode(`hackerNewsDiscussions`)
       ?.childrenToString()
@@ -98,17 +99,19 @@ sourceLink https://github.com/breck7/pldb/blob/main/database/things/${
       this.primaryKey
     }.pldb
 
-${this._getDescriptionSection()}
+${this.descriptionSection}
 
-${this._getKpiBar()}
+${this.kpiBar}
 
-${this._getFactsSection()}
+${this.factsSection}
 
-${this._getExampleSection()}
+${this.exampleSection}
 
-${this._getTrendingRepos()}
+${this.keywordsSection}
 
-${this._getHackerNewsTable()}
+${this.trendingRepos}
+
+${this.hackerNewsTable}
 
 html
  <script>
@@ -122,13 +125,13 @@ html
 `
   }
 
-  _getFactsSection() {
-    const facts = this._getFacts()
+  get factsSection() {
+    const { facts } = this
     return `list
 ${facts.map(fact => ` - ${fact}`).join("\n")}`
   }
 
-  _getDescription() {
+  get description() {
     const { typeName, title } = this.file
     const { object } = this
     let statusMessage =
@@ -137,20 +140,19 @@ ${facts.map(fact => ` - ${fact}`).join("\n")}`
         : "an actively used"
     let akaMessage = object.standsFor ? `, aka ${object.standsFor},` : ""
     const appeared = object.appeared
-    return `${title}${akaMessage} is ${statusMessage} ${this._getTypeLink()}${
+    return `${title}${akaMessage} is ${statusMessage} ${this.typeLink}${
       appeared
         ? ` created in <a href="../lists/languages.html?filter=${appeared}">${appeared}</a>`
         : ""
     }.`
   }
 
-  _getTypeLink() {
+  get typeLink() {
     return `<a href="../lists/languages.html?filter=${this.object.type}">${this.file.typeName}</a>`
   }
 
-  _getDescriptionSection() {
-    const description = this._getDescription()
-    const { file, object } = this
+  get descriptionSection() {
+    const { file, object, description } = this
     let longerDescription = ""
     const wikipediaSummary = file.get("wikipedia summary")
     const wpLink = file.get(pldbNodeKeywords.wikipedia)
@@ -169,7 +171,7 @@ ${facts.map(fact => ` - ${fact}`).join("\n")}`
  ${longerDescription || description}`
   }
 
-  _getRankMessage() {
+  get rankMessage() {
     const { file } = this
     const { isLanguage, percentile, title } = file
     const bins = [0.01, 0.05, 0.1, 0.25]
@@ -186,13 +188,13 @@ ${facts.map(fact => ` - ${fact}`).join("\n")}`
     return rankMessage
   }
 
-  _getFacts() {
+  get facts() {
     const { object, file } = this
     const { title, languageRank } = file
 
     const facts = []
 
-    const rankMessage = this._getRankMessage()
+    const rankMessage = this.rankMessage
     if (languageRank < 101) {
       facts.push(
         `${title} <a href="../lists/top100.html">is a top 100</a> language`
@@ -262,7 +264,7 @@ ${facts.map(fact => ` - ${fact}`).join("\n")}`
       facts.push(
         `${title} compiles to ${compilesTo
           .split(" ")
-          .map(id => this._getATag(id))
+          .map(getATag)
           .join(" & ")}`
       )
 
@@ -271,7 +273,7 @@ ${facts.map(fact => ` - ${fact}`).join("\n")}`
       facts.push(
         `${title} is written in ${writtenIn
           .split(" ")
-          .map(id => this._getATag(id))
+          .map(getATag)
           .join(" & ")}`
       )
 
@@ -453,9 +455,7 @@ ${facts.map(fact => ` - ${fact}`).join("\n")}`
     if (related) related.split(" ").forEach(id => seeAlsoLinks.push(id))
 
     if (seeAlsoLinks.length)
-      facts.push(
-        "See also: " + seeAlsoLinks.map(id => this._getATag(id)).join(", ")
-      )
+      facts.push("See also: " + seeAlsoLinks.map(getATag).join(", "))
 
     facts.push(
       `Have a question about ${title} not answered here? <a href="https://github.com/breck7/pldb/issues/new">Open an issue</a> explaining what you need.`
@@ -463,11 +463,15 @@ ${facts.map(fact => ` - ${fact}`).join("\n")}`
     return facts
   }
 
-  _getATag(permalink) {
-    return `<a href="${permalink}.html">${permalink}</a>`
+  get keywordsSection() {
+    const keywords = this.file.get("keywords")
+    if (!keywords) return ""
+    return `subsection Keywords in ${this.file.title}
+paragraph
+ ${keywords}`
   }
 
-  _getExampleSection() {
+  get exampleSection() {
     const exampleSection = []
     let example: any = ""
     let exampleMessage = ""
@@ -510,7 +514,7 @@ code
     return exampleSection.join("\n\n")
   }
 
-  _getKpiBar() {
+  get kpiBar() {
     const { file, object } = this
     const appeared = object.appeared
     const { numberOfUsers, numberOfJobs } = file
@@ -536,7 +540,7 @@ code
 }
 
 class PatternPageTemplate extends LanguagePageTemplate {
-  _getKpiBar() {
+  get kpiBar() {
     const { object } = this
     const appeared = object.appeared
 
@@ -546,11 +550,11 @@ class PatternPageTemplate extends LanguagePageTemplate {
  ${currentYear - appeared} Years Old`
   }
 
-  _getTypeLink() {
+  get typeLink() {
     return `<a href="../lists/patterns.html">${this.file.typeName}</a>`
   }
 
-  _getExampleSection() {
+  get exampleSection() {
     const { file } = this
     const { title, patternPath } = file
 
@@ -592,8 +596,8 @@ code
     )
   }
 
-  _getFacts() {
-    const facts = super._getFacts()
+  get facts() {
+    const facts = super.facts
     const ref = this.object.reference
     if (ref)
       facts.push(`Read more about <a href="${ref}">${this.file.title}</a>`)
