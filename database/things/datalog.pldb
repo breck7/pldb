@@ -1,9 +1,15 @@
-title DATALOG
+title Datalog
 appeared 1977
 type pl
 
 patterns
  hasCentralPackageRepository? false
+
+example
+ parent(john, douglas). % store some data
+ parent(john, douglas)? % run a query
+
+lineCommentKeyword %
 
 wikipedia https://en.wikipedia.org/wiki/Datalog
  example
@@ -25,3 +31,6 @@ fileType text
 hopl 3793
 
 rosettaCode Datalog
+reference http://www.learndatalogtoday.org/
+related datomic
+reference http://datalog.sourceforge.net/datalog.html

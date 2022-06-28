@@ -1,6 +1,10 @@
 title Extensible Data Notation
 appeared 2012
 type metaLanguage
+aka edn
+
+example
+ {:a 1, "foo" :bar, [1 2 3] four}
 
 patterns
  hasBooleans? true

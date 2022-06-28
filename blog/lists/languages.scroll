@@ -4,7 +4,7 @@ maxColumns 1
 columnWidth 60
 
 paragraph
- Here is the list of all 3,998 languages in PLDB.
+ Here is the list of all 4,000 languages in PLDB.
 
 aftertext
  Add a language by opening a @pull request@ or an issue.
@@ -896,6 +896,7 @@ pipeTable
  datascript|../languages/datascript.html|queryLanguage|2014
  datatrieve|../languages/datatrieve.html|queryLanguage|1970
  dataweave|../languages/dataweave.html|pl|2014
+ datomic|../languages/datomic.html|queryLanguage|
  dbml|../languages/dbml.html|textMarkup|2019
  dc|../languages/dc.html|pl|1978
  dcalgol|../languages/dcalgol.html|pl|1970
@@ -2852,6 +2853,7 @@ pipeTable
  providex|../languages/providex.html|pl|1992
  prow|../languages/prow.html|pl|1969
  proxy|../languages/proxy.html|pl|1992
+ prql|../languages/prql.html|queryLanguage|
  ps-algol|../languages/ps-algol.html|pl|1981
  psather|../languages/psather.html|pl|1991
  psg|../languages/psg.html|pl|1969
