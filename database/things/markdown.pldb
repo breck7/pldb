@@ -1,10 +1,12 @@
 title Markdown
 appeared 2004
 type textMarkup
+creators John Gruber and Aaron Swartz
 
 patterns
  hasCentralPackageRepository? false
  hasSemanticIndentation? true
+ hasLineComments? false
 
 wikipedia https://en.wikipedia.org/wiki/Markdown
  example
