@@ -346,6 +346,12 @@ ${facts.map(fact => ` - ${fact}`).join("\n")}`
         `Explore ${title} snippets on <a href="http://www.rosettacode.org/wiki/Category:${rosettaCode}">Rosetta Code</a>`
       )
 
+    const nativeLanguage = file.get("nativeLanguage")
+    if (nativeLanguage)
+      facts.push(
+        `${title} is written with the native language of ${nativeLanguage}`
+      )
+
     const hopl = file.get("hopl")
     if (hopl)
       facts.push(

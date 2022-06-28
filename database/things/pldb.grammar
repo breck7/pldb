@@ -10,6 +10,8 @@ statusCell
  highlightScope constant.language
 creatorNameCell
  extends stringCell
+nativeLanguageWordCell
+ description The name of a natural language like English or Japanese.
 announcementMethodCell
  description Common ways languages are first announced.
  enum pressRelease paper rfc webpage blogPost interview
@@ -487,6 +489,11 @@ creatorsNode
  crux creators
  int sortIndex 800
  single
+nativeLanguageNode
+ cells keywordCell nativeLanguageWordCell
+ extends abstractFactNode
+ description Nearly all programming languages are written in English, but some aren't. Set this field for the ones that are not.
+ crux nativeLanguage
 announcementMethodNode
  description How was the language first announced?
  extends abstractFactNode
@@ -1250,6 +1257,6 @@ pldbNode
  description A database about programming languages and related concepts.
  catchAllNodeType errorNode
  todo Should not have to manually list each node type here, but should be able to mark some tag as inscope
- inScope blankLineNode descriptionNode wikipediaNode equationNode exampleNode fileExtensionsNode githubLanguageNode githubRepoNode gitlabNode helloWorldCollectionNode statusNode creatorsNode appearedNode announcementUrlNode countryNode titleNode wordRankNode standsForNode akaNode psuedoExampleNode patternKeywordNode patternsNode referenceNode relatedNode replitNode tryItOnlineNode twitterNode typeNode websiteNode wikipediaNode fileTypeNode linguistGrammarRepoNode tiobeNode meetupNode webReplNode linkedInSkillNode projectEulerNode hoplNode subredditNode redditDiscussionNode quineRelayNode ubuntuPackageNode codeMirrorNode rosettaCodeNode antlrNode corporateDevelopersNode compilesToNode cheatSheetUrlNode isOpenSourceNode indeedJobsNode hackerNewsDiscussionsNode firstAnnouncementNode announcementMethodNode writtenInNode runsOnVmNode packageCountNode packageInstallsNode packageRepositoryNode packageAuthorsNode packagesIncludingVersionsNode forLanguagesNode subsetOfNode conferenceNode supersetOfNode abstractCommonKeywordNode languageServerProtocolProjectNode abstractParadigmNode latestReleaseNode
+ inScope blankLineNode descriptionNode wikipediaNode equationNode exampleNode fileExtensionsNode githubLanguageNode githubRepoNode gitlabNode helloWorldCollectionNode statusNode creatorsNode appearedNode announcementUrlNode countryNode titleNode wordRankNode standsForNode akaNode psuedoExampleNode patternKeywordNode patternsNode referenceNode relatedNode replitNode tryItOnlineNode twitterNode typeNode websiteNode wikipediaNode fileTypeNode linguistGrammarRepoNode tiobeNode meetupNode webReplNode linkedInSkillNode projectEulerNode hoplNode subredditNode redditDiscussionNode quineRelayNode ubuntuPackageNode codeMirrorNode rosettaCodeNode antlrNode corporateDevelopersNode compilesToNode cheatSheetUrlNode isOpenSourceNode indeedJobsNode hackerNewsDiscussionsNode firstAnnouncementNode announcementMethodNode writtenInNode runsOnVmNode packageCountNode packageInstallsNode packageRepositoryNode packageAuthorsNode packagesIncludingVersionsNode forLanguagesNode subsetOfNode conferenceNode supersetOfNode abstractCommonKeywordNode languageServerProtocolProjectNode abstractParadigmNode latestReleaseNode nativeLanguageNode
  pattern [\w-]\.pldb$
  cells fileNameCell

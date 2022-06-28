@@ -22,6 +22,13 @@ appearedNode
  int sortIndex 900
  crux appeared
  single
+nativeLanguageWordCell
+ description The name of a natural language like English or Japanese.
+nativeLanguageNode
+ cells keywordCell nativeLanguageWordCell
+ extends abstractFactNode
+ description Nearly all programming languages are written in English, but some aren't. Set this field for the ones that are not.
+ crux nativeLanguage
 latestReleaseNode
  description The year of the most recent release of the thing.
  extends abstractYearNode
