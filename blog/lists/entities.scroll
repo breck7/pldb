@@ -4,7 +4,7 @@ maxColumns 1
 columnWidth 60
 
 aftertext
- Here is the list of all 4,422 entities in the PLDB. You can also download the whole database as a @CSV@.
+ Here is the list of all 4,428 entities in the PLDB. You can also download the whole database as a @CSV@.
  wrap @ a href="../pldb.csv"
 
 aftertext
@@ -295,6 +295,7 @@ pipeTable
  ascii|../languages/ascii.html|characterEncoding|1963
  asciidoc|../languages/asciidoc.html|textMarkup|2002
  asciidots|../languages/asciidots.html|esolang|2017
+ asciimath|../languages/asciimath.html|textMarkup|
  asf-sdf|../languages/asf-sdf.html|pl|1993
  ashmedai|../languages/ashmedai.html|pl|1967
  asic-programming-language|../languages/asic-programming-language.html|pl|1992
@@ -1204,6 +1205,7 @@ pipeTable
  epsilon|../languages/epsilon.html|pl|
  eql|../languages/eql.html|pl|1989
  eqlog|../languages/eqlog.html|pl|1986
+ eqn|../languages/eqn.html|textMarkup|1974
  eqs|../languages/eqs.html|pl|1978
  equate|../languages/equate.html|pl|1991
  erb|../languages/erb.html|template|2004
@@ -2323,9 +2325,12 @@ pipeTable
  mathematica|../languages/mathematica.html|pl|1988
  mathematical-notation|../languages/mathematical-notation.html|notation|1356
  mathics|../languages/mathics.html|pl|2012
+ mathjax|../languages/mathjax.html|textMarkup|
  mathlab|../languages/mathlab.html|pl|1964
  mathlingua|../languages/mathlingua.html|pl|2019
+ mathml|../languages/mathml.html|xmlFormat|1998
  mathsy|../languages/mathsy.html|pl|1980
+ mathtype|../languages/mathtype.html|application|1987
  mathworks-file-exchange-pm|../languages/mathworks-file-exchange-pm.html|packageManager|
  matita|../languages/matita.html|pl|1999
  matlab|../languages/matlab.html|pl|1984
@@ -2406,6 +2411,7 @@ pipeTable
  microplanner|../languages/microplanner.html|pl|1970
  micropython|../languages/micropython.html|pl|2014
  microsoft-basic|../languages/microsoft-basic.html|pl|1975
+ microsoft-equation-editor|../languages/microsoft-equation-editor.html|application|1993
  microsoft-macro-assembler|../languages/microsoft-macro-assembler.html|assembly|1981
  microsoft-small-basic|../languages/microsoft-small-basic.html|pl|2008
  microtal|../languages/microtal.html|pl|1981

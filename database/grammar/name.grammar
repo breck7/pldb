@@ -5,6 +5,7 @@ titleNode
  extends abstractStringNode
  crux title
  single
+ required
 wordRankNode
  description Some creators use a common English word as their language's name. For these we note how common the word is, where "the" is 1.
  extends abstractIntNode

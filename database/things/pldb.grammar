@@ -541,6 +541,7 @@ titleNode
  extends abstractStringNode
  crux title
  single
+ required
 standsForNode
  description If the language name is an abbreviation, what does/did it stand for?
  extends abstractStringNode
