@@ -6,6 +6,11 @@ patterns
  hasCentralPackageRepository? false
  hasLineComments? true
   // A comment
+ hasUnitsOfMeasure? true
+  type SpecificHeatCapacity = Real (
+    final quantity="SpecificHeatCapacity",
+    final unit="J/(kg.K)"
+  );
 
 wikipedia https://en.wikipedia.org/wiki/Modelica
  example

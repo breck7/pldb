@@ -5,6 +5,8 @@ type pl
 patterns
  hasCentralPackageRepository? false
  hasComments? true
+ hasUnitsOfMeasure? true
+  10 feet 12 feet 8 feet -> gallons
 
 wikipedia https://en.wikipedia.org/wiki/Frink_(programming_language)
  related jvm java

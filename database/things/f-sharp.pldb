@@ -37,6 +37,14 @@ patterns
  hasTypeInference? true
  hasLineComments? true
   // A comment
+ hasUnitsOfMeasure? true
+  // https://fsharpforfunandprofit.com/posts/units-of-measure/
+  [<Measure>] type N = kg m/sec^2
+  
+  let force1 = 5.0<kg m/sec^2>    
+  let force2 = 5.0<N>
+  
+  force1 = force2 // true
 
 wikipedia https://en.wikipedia.org/wiki/F_Sharp_(programming_language)
  example

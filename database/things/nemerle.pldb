@@ -7,6 +7,15 @@ patterns
  hasComments? true
  hasSemanticIndentation? true
  hasTypeInference? true
+ hasUnitsOfMeasure? true
+  def m3 = 1 g;
+  def m4 = Si.Mass(m1);
+  
+  WriteLine($"Mass in SI: $m4, in CGS: $m3");
+  
+  def x1 = Si.Area(1 cm * 10 m);
+  
+  WriteLine($"Area of 1 cm * 10 m = $x1 m");
 
 wikipedia https://en.wikipedia.org/wiki/Nemerle
  example
