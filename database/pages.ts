@@ -443,10 +443,6 @@ ${facts.map(fact => ` - ${fact}`).join("\n")}`
     return facts
   }
 
-  _getFactCount() {
-    return this.file.length
-  }
-
   _getATag(permalink) {
     return `<a href="${permalink}.html">${permalink}</a>`
   }
@@ -534,30 +530,12 @@ class PatternPageTemplate extends LanguagePageTemplate {
     return `<a href="../lists/patterns.html">${this.file.typeName}</a>`
   }
 
-  _getFactCount() {
-    return (
-      super._getFactCount() +
-      this._getLanguagesWithThisPatternResearched().length
-    )
-  }
-
-  _getLanguagesWithThisPatternResearched() {
-    const { patternKeyword } = this.object
-
-    return this.file
-      .getParent()
-      .filter(file => file.getNode("patterns")?.has(patternKeyword))
-  }
-
   _getExampleSection() {
-    const { object, file } = this
-    const { title } = file
-    const { patternKeyword } = object
-    const results = this._getLanguagesWithThisPatternResearched()
-    const patternPath = `patterns ${patternKeyword}`
+    const { file } = this
+    const { title, patternPath } = file
 
-    const positives = results.filter(file => file.get(patternPath) === "true")
-    const negatives = results.filter(file => file.get(patternPath) === "false")
+    const positives = file.languagesWithThisPattern
+    const negatives = file.languagesWithoutThisPattern
 
     const negativeText = negatives.length
       ? `paragraph

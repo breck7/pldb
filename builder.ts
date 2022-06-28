@@ -227,6 +227,7 @@ class Builder extends AbstractBuilder {
         pattern: file.get("title"),
         patternLink: `../languages/${name}.html`,
         aka: file.get("aka"),
+        languages: file.languagesWithThisPattern.length,
         psuedoExample: (file.get("psuedoExample") || "")
           .replace(/\</g, "&lt;")
           .replace(/\|/g, "&#124;")
@@ -240,7 +241,8 @@ class Builder extends AbstractBuilder {
         "pattern",
         "patternLink",
         "aka",
-        "psuedoExample"
+        "psuedoExample",
+        "languages"
       ])
     )
 

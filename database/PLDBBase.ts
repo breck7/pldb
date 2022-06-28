@@ -65,6 +65,32 @@ class PLDBFile extends TreeBaseFile {
     return `<a href="${this.primaryKey}.html">${this.primaryKey}</a>`
   }
 
+  get patternPath() {
+    return `patterns ${this.get("patternKeyword")}`
+  }
+
+  get _getLanguagesWithThisPatternResearched() {
+    const patternKeyword = this.get("patternKeyword")
+
+    return this.base.filter(file =>
+      file.getNode("patterns")?.has(patternKeyword)
+    )
+  }
+
+  get languagesWithThisPattern() {
+    const { patternPath } = this
+    return this._getLanguagesWithThisPatternResearched.filter(
+      file => file.get(patternPath) === "true"
+    )
+  }
+
+  get languagesWithoutThisPattern() {
+    const { patternPath } = this
+    return this._getLanguagesWithThisPatternResearched.filter(
+      file => file.get(patternPath) === "false"
+    )
+  }
+
   getMostRecentInt(pathToSet: string): number {
     let set = this.getNode(pathToSet)
     if (!set) return 0
