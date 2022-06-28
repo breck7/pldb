@@ -6,7 +6,7 @@ patterns
  hasCentralPackageRepository? false
  hasComments? true
  hasLineComments? true
-  SELECT * FROM Customers -- WHERE City='Berlin';
+  -- A comment
 
 
 wikipedia https://en.wikipedia.org/wiki/SQL

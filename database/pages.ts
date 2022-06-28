@@ -561,6 +561,31 @@ class PatternPageTemplate extends LanguagePageTemplate {
     const positives = file.languagesWithThisPattern
     const negatives = file.languagesWithoutThisPattern
 
+    const examples = positives
+      .filter(file => file.getNode(patternPath).length)
+      .map(file => {
+        return {
+          id: file.primaryKey,
+          title: file.title,
+          example: file.getNode(patternPath).childrenToString()
+        }
+      })
+
+    const grouped = lodash.groupBy(examples, "example")
+
+    const examplesText = Object.values(grouped)
+      .map((group: any) => {
+        const id = file.primaryKey
+        const links = group
+          .map(hit => `<a href="${hit.id}.html">${hit.title}</a>`)
+          .join(", ")
+        return `subsection Example from ${links}:
+
+code
+ ${cleanAndRightShift(lodash.escape(group[0].example), 1)}`
+      })
+      .join("\n\n")
+
     const negativeText = negatives.length
       ? `paragraph
  Languages <b>without</b> ${title} include ${negatives
@@ -578,21 +603,7 @@ class PatternPageTemplate extends LanguagePageTemplate {
         .join(", ")}
 
 ` +
-      positives
-        .filter(file => file.getNode(patternPath).length)
-        .map(file => {
-          const id = file.primaryKey
-          return `subsection Example from <a href="${id}.html">${
-            file.title
-          }</a>:
-
-code
- ${cleanAndRightShift(
-   lodash.escape(file.getNode(patternPath).childrenToString()),
-   1
- )}`
-        })
-        .join("\n\n")
+      examplesText
     )
   }
 
