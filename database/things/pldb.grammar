@@ -75,12 +75,6 @@ hoplNode
  crux hopl
  string sourceDomain hopl.info
  single
-linkedInSkillNode
- description Some languages can be listed as a skill on LinkedIn.
- extends abstractOneWordGuidNode
- crux linkedInSkill
- inScope linkedInSkillCountNode
- string sourceDomain linkedin.com
 meetupNode
  description Some languages have active meetup groups on Meetup.com 
  extends abstractOneWordGuidNode
@@ -336,9 +330,6 @@ linguistCommitterCountNode
  description How many people have made commits in this repo?
  extends abstractPopulationCountNode
  crux committerCount
-linkedInSkillCountNode
- crux peopleWithThisSkillCount
- extends abstractPopulationCountNode
 meetupMemberCountNode
  crux memberCount
  extends abstractPopulationCountNode
@@ -517,6 +508,13 @@ indeedJobsNode
  extends abstractAnnualPopulationCountNode
  crux indeedJobs
  string sourceDomain indeed.com
+ single
+linkedInSkillNode
+ description How many people list this skill on LinkedIn?
+ extends abstractAnnualPopulationCountNode
+ crux linkedInSkill
+ inScope linkedInSkillCountNode
+ string sourceDomain linkedin.com
  single
 projectEulerMemberCountNode
  crux memberCount

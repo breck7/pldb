@@ -65,6 +65,14 @@ class PLDBFile extends TreeBaseFile {
     return `<a href="${this.primaryKey}.html">${this.primaryKey}</a>`
   }
 
+  getMostRecentInt(pathToSet: string): number {
+    let set = this.getNode(pathToSet)
+    if (!set) return 0
+    set = set.toObject()
+    const key = Math.max(...Object.keys(set).map(year => parseInt(year)))
+    return parseInt(set[key])
+  }
+
   private _title: string
 
   get title() {
@@ -219,55 +227,40 @@ class PLDBBaseFolder extends TreeBaseFolder {
   }
 
   predictNumberOfUsers(file) {
-    return Math.round(
-      this._computeMetric(file, [
-        "linkedInSkill peopleWithThisSkillCount",
-        li => parseInt(li.split(" ")[0]) + 12,
-        "meetup members",
-        rank => parseInt(rank),
-        "subreddit memberCount 2017",
-        value => parseInt(value),
-        "projectEuler members 2022",
-        value => parseInt(value),
-        pldbNodeKeywords.wikipedia,
-        value => 20,
-        "patterns hasCentralPackageRepository?",
-        value => 1000,
-        "wikipedia dailyPageViews",
-        count => 100 * (parseInt(count) / 20), // say its 95% bot traffic, and 1% of users visit the wp page daily
-        "linguistGrammarRepo", // According to https://github.com/github/linguist/blob/master/CONTRIBUTING.md, linguist indicates a min of 200 users.
-        value => 200,
-        "codeMirror",
-        value => 50,
-        pldbNodeKeywords.website,
-        value => 5,
-        pldbNodeKeywords.githubRepo,
-        value => 5,
-        "githubRepo forks",
-        value => value * 3,
-        "githubRepo stars",
-        count => parseInt(count)
-      ]).score
-    )
-  }
+    const mostRecents = [
+      "linkedInSkill",
+      "subreddit memberCount",
+      "projectEuler members"
+    ]
+    const directs = ["meetup members", "githubRepo stars"]
+    const customs = {
+      wikipedia: v => 20,
+      "patterns hasCentralPackageRepository?": v => 1000,
+      "wikipedia dailyPageViews": count => 100 * (parseInt(count) / 20), // say its 95% bot traffic, and 1% of users visit the wp page daily
+      linguistGrammarRepo: c => 200, // According to https://github.com/github/linguist/blob/master/CONTRIBUTING.md, linguist indicates a min of 200 users.
+      codeMirror: v => 50,
+      website: v => 1,
+      githubRepo: v => 1,
+      "githubRepo forks": v => v * 3
+    }
 
-  _computeMetric(file, criteria) {
-    const keys = criteria.filter((item, i) => i % 2 === 0)
-    const fns = criteria.filter((item, i) => i % 2 === 1)
-    const values = keys.map(key => file.get(key))
-    const score = Math.round(
-      values
-        .map((value, index) => (value ? fns[index](value) : 0))
-        .reduce((a, b) => a + b, 0)
+    return Math.round(
+      lodash.sum(mostRecents.map(key => file.getMostRecentInt(key))) +
+        lodash.sum(directs.map(key => parseInt(file.get(key) || 0))) +
+        lodash.sum(
+          Object.keys(customs).map(key => {
+            const val = file.get(key)
+            return val ? customs[key](val) : 0
+          })
+        )
     )
-    return { id: file.primaryKey, score }
   }
 
   predictNumberOfJobs(file) {
-    const li =
-      parseInt(file.get("linkedInSkill peopleWithThisSkillCount") || 0) * 0.01
-    const indeed = parseInt(file.get("indeedJobs 2017") || 0)
-    return Math.round(li + indeed)
+    return (
+      Math.round(file.getMostRecentInt("linkedInSkill") * 0.01) +
+      file.getMostRecentInt("indeedJobs")
+    )
   }
 
   // Rank is:

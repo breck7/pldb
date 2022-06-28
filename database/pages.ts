@@ -14,7 +14,7 @@ import {
   toCommaList
 } from "./utils"
 
-const currentYear = 2022
+const currentYear = parseInt(moment(Date.now()).format("YYYY"))
 
 class LanguagePageTemplate {
   constructor(file: PLDBFile) {
@@ -322,9 +322,9 @@ ${facts.map(fact => ` - ${fact}`).join("\n")}`
 
     const subreddit = file.get("subreddit")
     if (subreddit) {
-      const peNum = numeral(file.get("subreddit memberCount 2017")).format(
-        "0,0"
-      )
+      const peNum = numeral(
+        file.getMostRecentInt("subreddit memberCount")
+      ).format("0,0")
       facts.push(
         `There are ${peNum} members in the <a href="https://reddit.com/r/${subreddit}">${title} subreddit</a>`
       )
@@ -332,9 +332,9 @@ ${facts.map(fact => ` - ${fact}`).join("\n")}`
 
     const pe = file.get("projectEuler")
     if (pe) {
-      const peNum = numeral(file.get("projectEuler memberCount 2022")).format(
-        "0,0"
-      )
+      const peNum = numeral(
+        file.getMostRecentInt("projectEuler memberCount")
+      ).format("0,0")
       facts.push(
         `There are ${peNum} <a href="https://projecteuler.net/language=${pe}">Project Euler</a> users using ${title}`
       )
@@ -419,7 +419,9 @@ ${facts.map(fact => ` - ${fact}`).join("\n")}`
     const indeedJobs = file.getNode("indeedJobs")
     if (indeedJobs) {
       const query = file.get("indeedJobs")
-      const jobCount = numeral(file.get("indeedJobs 2017")).format("0,0")
+      const jobCount = numeral(file.getMostRecentInt("indeedJobs")).format(
+        "0,0"
+      )
       facts.push(
         `Indeed.com has ${jobCount} matches for <a href="https://www.indeed.com/jobs?q=${query}">"${query}"</a>.`
       )

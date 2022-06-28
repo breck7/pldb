@@ -75,10 +75,10 @@ pipeTable
  smalltalk|../languages/smalltalk.html|1972|pl|64
  vala|../languages/vala.html|2006|pl|65
  vba|../languages/vba.html|1993|pl|66
- wolfram|../languages/wolfram.html|1988|pl|67
- uml|../languages/uml.html|1996|xmlFormat|68
- xojo|../languages/xojo.html|1996|pl|69
- standard-ml|../languages/standard-ml.html|1990|pl|70
+ uml|../languages/uml.html|1996|xmlFormat|67
+ wolfram|../languages/wolfram.html|1988|pl|68
+ standard-ml|../languages/standard-ml.html|1990|pl|69
+ xojo|../languages/xojo.html|1996|pl|70
  arm|../languages/arm.html|1985|assembly|71
  xbase|../languages/xbase.html|1986|pl|72
  turtle|../languages/turtle.html|2011|metaLanguage|73
@@ -96,9 +96,9 @@ pipeTable
  visual-foxpro|../languages/visual-foxpro.html|1995|pl|85
  squirrel|../languages/squirrel.html|2003|pl|86
  stata|../languages/stata.html|1985|pl|87
- transact-sql|../languages/transact-sql.html|1984|queryLanguage|88
- z-shell|../languages/z-shell.html|1990|pl|89
- turing|../languages/turing.html|1982|pl|90
+ turing|../languages/turing.html|1982|pl|88
+ transact-sql|../languages/transact-sql.html|1984|queryLanguage|89
+ z-shell|../languages/z-shell.html|1990|pl|90
  x86-assembly|../languages/x86-assembly.html|1972|assembly|91
  twig|../languages/twig.html|2009|template|92
  red|../languages/red.html|2011|pl|93
@@ -114,8 +114,8 @@ pipeTable
  powershell|../languages/powershell.html|2006|pl|103
  self|../languages/self.html|1987|pl|104
  unified-parallel-c|../languages/unified-parallel-c.html|2003|pl|105
- turbo-pascal|../languages/turbo-pascal.html|1983|compiler|106
- sass|../languages/sass.html|2006|stylesheetLanguage|107
+ sass|../languages/sass.html|2006|stylesheetLanguage|106
+ turbo-pascal|../languages/turbo-pascal.html|1983|compiler|107
  thrift|../languages/thrift.html|2007|idl|108
  spark|../languages/spark.html|1988|pl|109
  snobol|../languages/snobol.html|1962|pl|110
@@ -123,9 +123,9 @@ pipeTable
  rexx|../languages/rexx.html|1979|pl|112
  qt|../languages/qt.html|1995|framework|113
  scilab|../languages/scilab.html|1990|pl|114
- javacc|../languages/javacc.html|1996|grammarLanguage|115
+ symbol|../languages/symbol.html|1971|pl|115
  protobuf|../languages/protobuf.html|2008|idl|116
- symbol|../languages/symbol.html|1971|pl|117
+ javacc|../languages/javacc.html|1996|grammarLanguage|117
  simulink|../languages/simulink.html|1984|pl|118
  puppet|../languages/puppet.html|2005|pl|119
  xtend|../languages/xtend.html|2011|pl|120
@@ -139,8 +139,8 @@ pipeTable
  troff|../languages/troff.html|1973|pl|128
  xpl|../languages/xpl.html|1967|pl|129
  octave|../languages/octave.html|1988|pl|130
- rebol|../languages/rebol.html|1997|pl|131
- regex|../languages/regex.html|1951|queryLanguage|132
+ regex|../languages/regex.html|1951|queryLanguage|131
+ rebol|../languages/rebol.html|1997|pl|132
  ucsd-pascal|../languages/ucsd-pascal.html|1978|pl|133
  purescript|../languages/purescript.html|2013|pl|134
  xproc|../languages/xproc.html|1990|pl|135
@@ -153,8 +153,8 @@ pipeTable
  seed7|../languages/seed7.html|2005|pl|142
  tinyc-compiler|../languages/tinyc-compiler.html|2001|compiler|143
  puredata|../languages/puredata.html|1996|pl|144
- yawl|../languages/yawl.html|2006|pl|145
- s-expressions|../languages/s-expressions.html|1960|metaLanguage|146
+ s-expressions|../languages/s-expressions.html|1960|metaLanguage|145
+ yawl|../languages/yawl.html|2006|pl|146
  reason|../languages/reason.html|2016|pl|147
  restructuredtext|../languages/restructuredtext.html|2002|textMarkup|148
  q|../languages/q.html|2003|pl|149
@@ -223,9 +223,9 @@ pipeTable
  watfiv|../languages/watfiv.html|1968|pl|212
  trac|../languages/trac.html|1964|pl|213
  pod|../languages/pod.html|1997|textMarkup|214
- mercury|../languages/mercury.html|1995|pl|215
- mime|../languages/mime.html|1991|textDataFormat|216
- scribe|../languages/scribe.html|1980|pl|217
+ mime|../languages/mime.html|1991|textDataFormat|215
+ scribe|../languages/scribe.html|1980|pl|216
+ mercury|../languages/mercury.html|1995|pl|217
  oxygene|../languages/oxygene.html|2002|pl|218
  txt2tags|../languages/txt2tags.html|2001|textMarkup|219
  j|../languages/j.html|1990|pl|220
@@ -233,8 +233,8 @@ pipeTable
  maxima|../languages/maxima.html|1982|pl|222
  pharo|../languages/pharo.html|2008|pl|223
  sql-92|../languages/sql-92.html|1992|pl|224
- umple|../languages/umple.html|2008|pl|225
- zpp|../languages/zpp.html|1991|pl|226
+ zpp|../languages/zpp.html|1991|pl|225
+ umple|../languages/umple.html|2008|pl|226
  xcas|../languages/xcas.html|2001|pl|227
  plpgsql|../languages/plpgsql.html|1998|pl|228
  object-pascal|../languages/object-pascal.html|1986|pl|229
@@ -247,12 +247,12 @@ pipeTable
  http|../languages/http.html|1989|protocol|236
  rdoc|../languages/rdoc.html|2004|textMarkup|237
  speakeasy|../languages/speakeasy.html|2006|pl|238
- toontalk|../languages/toontalk.html|1995|pl|239
+ s-plus|../languages/s-plus.html|1988|pl|239
  ubasic|../languages/ubasic.html|1991|pl|240
- s-plus|../languages/s-plus.html|1988|pl|241
- mupad|../languages/mupad.html|1997|pl|242
- tal|../languages/tal.html|2008|pl|243
- wsdl|../languages/wsdl.html|2000|xmlFormat|244
+ tal|../languages/tal.html|2008|pl|241
+ wsdl|../languages/wsdl.html|2000|xmlFormat|242
+ mupad|../languages/mupad.html|1997|pl|243
+ toontalk|../languages/toontalk.html|1995|pl|244
  m4|../languages/m4.html|1977|pl|245
  max|../languages/max.html|1990|jsonFormat|246
  pari-gp|../languages/pari-gp.html|1985|pl|247
