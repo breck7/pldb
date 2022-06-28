@@ -11,6 +11,8 @@ urlCell
  highlightScope constant.language
 keywordCell
  highlightScope keyword
+searchQueryCell
+ extends stringCell
 yearCell
  extends intCell
 permalinkCell

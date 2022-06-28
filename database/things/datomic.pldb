@@ -1,3 +1,4 @@
+title Datomic
 type queryLanguage
 description Datomic's query and rules system is an extended form of Datalog. Datalog is a deductive query system, typically consisting of: A database of facts; A set of rules for deriving new facts from existing facts; a query processor that, given some partial specification of a fact or rule: finds all matching facts.
 related edn datalog

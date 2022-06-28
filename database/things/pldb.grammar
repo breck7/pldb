@@ -15,7 +15,6 @@ announcementMethodCell
  enum pressRelease paper rfc webpage blogPost interview
  highlightScope constant.language
 countryWordCell
-searchQueryCell
 aliasCell
 intCell
 populationCountCell
@@ -30,6 +29,8 @@ urlCell
  highlightScope constant.language
 keywordCell
  highlightScope keyword
+searchQueryCell
+ extends stringCell
 yearCell
  extends intCell
 permalinkCell
@@ -503,7 +504,6 @@ abstractAnnualPopulationCountNode
  abstract
 indeedJobsNode
  description How many job descriptions match this query for this language on indeed.com?
- cells keywordCell
  catchAllCellType searchQueryCell
  extends abstractAnnualPopulationCountNode
  crux indeedJobs
@@ -513,6 +513,7 @@ linkedInSkillNode
  description How many people list this skill on LinkedIn?
  extends abstractAnnualPopulationCountNode
  crux linkedInSkill
+ catchAllCellType searchQueryCell
  inScope linkedInSkillCountNode
  string sourceDomain linkedin.com
  single

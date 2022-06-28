@@ -2,6 +2,7 @@ linkedInSkillNode
  description How many people list this skill on LinkedIn?
  extends abstractAnnualPopulationCountNode
  crux linkedInSkill
+ catchAllCellType searchQueryCell
  inScope linkedInSkillCountNode
  string sourceDomain linkedin.com
  single
