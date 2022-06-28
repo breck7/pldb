@@ -10,6 +10,10 @@ patterns
  hasCentralPackageRepository? false
  hasLineComments? true
   // A comment
+ hasDestructuring? true
+  type person = {name: string, age: int};
+  let somePerson = {name: "Guy", age: 30};
+  let {name, age} = somePerson;
 
 githubLanguage Reason
  fileExtensions re rei

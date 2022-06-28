@@ -28,6 +28,7 @@ patterns
   -define(Func(Var1,...,VarN), Replacement).
  hasLineComments? true
   % A comment
+ hasMessagePassing? true
 
 wikipedia https://en.wikipedia.org/wiki/Erlang_(programming_language)
  example

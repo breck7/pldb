@@ -19,6 +19,10 @@ patterns
  hasMultilineStrings? false
  hasStrings? true
   "hello world"
+ hasMaps? true
+  {"name": "Mary"}
+ hasLists? true
+  [1, 2, 3]
 
 wikipedia https://en.wikipedia.org/wiki/JSON
  example

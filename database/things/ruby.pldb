@@ -66,6 +66,8 @@ patterns
   puts "Hi"
  hasLineComments? true
   # A comment
+ hasRangeOperators? true
+  (3...6)
 
 wikipedia https://en.wikipedia.org/wiki/Ruby_(programming_language)
  example

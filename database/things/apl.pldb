@@ -9,6 +9,8 @@ patterns
  hasGarbageCollection? true
  hasLineComments? true
   ⍝ This is a comment
+ hasFunctionComposition? true
+  foo←f∘g
 
 wikipedia https://en.wikipedia.org/wiki/APL_(programming_language)
  example

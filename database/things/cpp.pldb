@@ -177,6 +177,26 @@ patterns
   }
  hasLineComments? true
   // A comment
+ hasVirtualFunctions? true
+  class Animal {
+   public:
+    // Intentionally not virtual:
+    void Move(void) {
+      std::cout << "This animal moves in some way" << std::endl;
+    }
+    virtual void Eat(void) = 0;
+  };
+  
+  // The class "Animal" may possess a definition for Eat if desired.
+  class Llama : public Animal {
+   public:
+    // The non virtual function Move is inherited but not overridden.
+    void Eat(void) override {
+      std::cout << "Llamas eat grass!" << std::endl;
+    }
+  };
+ hasThreads? true
+ hasGdbSupport? true
 
 wikipedia https://en.wikipedia.org/wiki/C++
  example

@@ -4,6 +4,7 @@ type pl
 
 patterns
  hasCentralPackageRepository? false
+ hasGdbSupport? true
 
 wikipedia https://en.wikipedia.org/wiki/OpenCL
  example

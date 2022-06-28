@@ -39,6 +39,17 @@ patterns
  hasStrings? true
  hasUnionTypes? true
   union SearchResult = Human | Droid | Starship
+ hasLists? true
+ hasIds? true
+  # The ID scalar type represents a unique identifier, often used to refetch an object or as the key for a cache. The ID type is serialized in the same way as a String; however, defining it as an ID signifies that it is not intended to be human‐readable.
+  query {
+    hero {
+      name
+    }
+    droid(id: "2000") {
+      name
+    }
+  }
 
 wikipedia https://en.wikipedia.org/wiki/GraphQL
  related javascript ruby scala

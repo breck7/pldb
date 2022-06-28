@@ -56,6 +56,7 @@ patterns
  hasTypeInference? true
  hasLineComments? true
   // A comment
+ hasGdbSupport? true
 
 wikipedia https://en.wikipedia.org/wiki/Rust_(programming_language)
  related linux freebsd android ios alef csharp cyclone erlang haskell haxe limbo newsqueak ruby scheme standard-ml swift crystal elm idris c ml go java ocaml llvmir d nim emacs-editor

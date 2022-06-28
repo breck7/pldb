@@ -25,6 +25,7 @@ patterns
       Writeln(Add('Hello, ', 'World!'));    (* Prints "Hello, World!" *)
   end.
  hasOperatorOverloading? false
+ hasGdbSupport? true
 
 wikipedia https://en.wikipedia.org/wiki/Pascal_(programming_language)
  example

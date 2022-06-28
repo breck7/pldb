@@ -5,6 +5,7 @@ type schema
 patterns
  hasCentralPackageRepository? false
  hasTypeInference? true
+ hasTriples? true
 
 wikipedia https://en.wikipedia.org/wiki/Resource_Description_Framework
  example

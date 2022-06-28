@@ -20,6 +20,8 @@ patterns
  hasOperatorOverloading? false
  hasLineComments? true
   // A comment
+ hasGdbSupport? true
+ hasMessagePassing? true
 
 wikipedia https://en.wikipedia.org/wiki/Objective-C
  example

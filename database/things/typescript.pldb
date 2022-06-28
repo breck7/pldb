@@ -73,6 +73,8 @@ patterns
   declare type numOrString = string | number
  hasLineComments? true
   // A comment
+ hasAlgebraicTypes? true
+  declare type numOrString = string | number
 
 wikipedia https://en.wikipedia.org/wiki/TypeScript
  example

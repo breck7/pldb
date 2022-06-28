@@ -49,6 +49,54 @@ patterns
   " my string "          // A normal string
   "\""                   // Contains one double-quote character
   "\uABCD"               // Contains one unicode character
+ hasBlobs? true
+  // In the text format, blob values are denoted as RFC 4648-compliant Base64 text within two pairs of curly braces.
+  // A valid blob value with one required padding character.
+  {{ VG8gaW5maW5pdHkuLi4gYW5kIGJleW9uZCE= }}
+ hasClobs? true
+  // The clob type is similar to blob in that it holds uninterpreted binary data. The difference is that the content is expected to be text, so we use a text notation that’s more readable than Base64.
+  // An Ion clob type is similar to the blob type except that the denotation in the Ion text format uses an ASCII-based string notation rather than a base64 encoding to denote its binary value. It is important to make the distinction that clob is a sequence of raw octets and string is a sequence of Unicode code points.
+  // The string may only contain legal 7-bit ASCII character
+ hasTimestamps? true
+  // Timestamps represent a specific moment in time, always include a local offset, and are capable of arbitrary precision.
+  2007-02-23T12:14Z                // Seconds are optional, but local offset is not
+  2007-01-01T00:00-00:00           // Happy New Year in UTC, unknown local offset
+ hasDecimals? true
+  null.decimal      // A null decimal value
+  0.123             // Type is decimal
+  -0.12d4           // Type is decimal
+  123_456.789_012   // Decimal with underscores
+  -0d-1             // Decimal maintains precision: -0. != -0.0
+  -0d0              // Negative zero decimal (distinct from positive zero)
+ hasSymbols? true
+  myvar2       // A different symbol
+  'hi ho'      // Symbol requiring quotes
+ hasTypeAnnotations? true
+  int32::12                                // Suggests 32 bits as end-user type
+  'my.custom.type' :: { x : 12 , y : -1 }  // Gives a struct a user-defined type
+  
+  { field: something::'another thing'::value }  // Field's name must precede annotations of its value
+  
+  jpeg :: {{ ... }}                        // Indicates the blob contains jpeg data
+  bool :: null.int                         // A very misleading annotation on the integer null
+  '' :: 1                                  // An empty annotation
+  null.symbol :: 1                         // ERROR: type annotation cannot be null 
+ hasLists? true
+  null.list         // A null list value
+  []                // An empty list value
+  [1, 2, 3]         // List of three ints
+  [ 1 , two ]       // List of an int and a symbol
+  [a , [b]]         // Nested list
+  [ 1.2, ]          // Trailing comma is legal in Ion (unlike JSON)
+  [ 1, , 2 ]        // ERROR: missing element between commas
+ hasSExpressions? true
+  null.sexp         // A null S-expression value
+  ()                // An empty expression value
+  (cons 1 2)        // S-expression of three values
+  ([hello][there])  // S-expression containing two lists
+  
+  (a+-b)  ( 'a' '+-' 'b' )    // Equivalent; three symbols
+  (a.b;)  ( 'a' '.' 'b' ';')  // Equivalent; four symbols
 
 example
  /* Ion supports comments. */

@@ -11,6 +11,20 @@ patterns
   5 `mod` 3 == 2
  hasAnonymousFunctions? true
   x -> x ** 2
+ hasDestructuring? true
+  {"list": [0] + rest} = {"list": [0, 1, 2, 3]}
+ hasFunctionComposition? true
+  (f..g..h)(x, y, z)
+ hasAlgebraicTypes? true
+  data Empty()
+  data Leaf(n)
+  data Node(l, r)
+  
+  def size(Empty()) = 0
+  
+  addpattern def size(Leaf(n)) = 1
+  
+  addpattern def size(Node(l, r)) = size(l) + size(r)
 
 githubRepo https://github.com/evhub/coconut
  stars 1372

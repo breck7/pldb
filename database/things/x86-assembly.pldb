@@ -5,6 +5,7 @@ type assembly
 patterns
  hasProcessorRegisters? true
  hasCentralPackageRepository? false
+ hasGdbSupport? true
 
 wikipedia https://en.wikipedia.org/wiki/X86_assembly_language
  example

@@ -175,6 +175,22 @@ patterns
   i--
  hasLineComments? true
   // A comment
+ hasDefaultParameters? true
+  function multiply(a, b = 1) {
+   return a * b;
+  }
+ hasDestructuring? true
+  const o = {p: 42, q: true};
+  const {p, q} = o;
+ hasFunctionComposition? true
+  function o(f, g) {
+     return function(x) {
+         return f(g(x));
+     }
+  }
+ hasSets? true
+  set = new Set()
+  set.add("foo")
 
 wikipedia https://en.wikipedia.org/wiki/JavaScript
  example

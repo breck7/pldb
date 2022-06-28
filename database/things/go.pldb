@@ -50,6 +50,8 @@ patterns
  hasIncrementAndDecrementOperators? true
  hasLineComments? true
   // A comment
+ hasGdbSupport? true
+ hasMessagePassing? true
 
 wikipedia https://en.wikipedia.org/wiki/Go_(programming_language)
  example

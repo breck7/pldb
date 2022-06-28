@@ -13,6 +13,9 @@ patterns
  hasFloats? true
  hasIntegers? true
  hasStrings? true
+ hasLists? true
+ hasMaps? true
+ hasSets? true
 
 githubLanguage edn
  fileExtensions edn

@@ -18,7 +18,7 @@ pipeTable
  pattern|patternLink|aka|psuedoExample|languages
  Abstract Types|../languages/abstract-types-pattern.html||abstract class Div {}|1
  Access Modifiers|../languages/access-modifiers-pattern.html||class Box { private location }|0
- Algebraic Data Type|../languages/algebraic-types-pattern.html||garageContents = empty &#124; vehicle|0
+ Algebraic Data Type|../languages/algebraic-types-pattern.html||garageContents = empty &#124; vehicle|2
  Anonymous Functions|../languages/anonymous-functions-pattern.html|Lambdas|() => doSomething()|3
  Assert Statements|../languages/assert-statements-pattern.html||assert(isTrue)|2
  Async Await|../languages/async-await-pattern.html||async doSomething => await somethingElse()|2
@@ -34,9 +34,9 @@ pipeTable
  Constants|../languages/constants-pattern.html||const ONE = 1|2
  Constructors|../languages/constructor-pattern.html||Person: constructor(name: string): {}|12
  Core Language Development Hosted on GitHub|../languages/core-on-github-pattern.html||git clone microsoft.com/typescript|0
- Default Parameters Pattern|../languages/default-parameters-pattern.html||"say(message = ""Hello"")"|0
+ Default Parameters Pattern|../languages/default-parameters-pattern.html||"say(message = ""Hello"")"|2
  Dependent types|../languages/dependent-types-pattern.html||sortedList // a list where is sorted is true|3
- Destructuring|../languages/destructuring-pattern.html||{name, age} = person|0
+ Destructuring|../languages/destructuring-pattern.html||{name, age} = person|3
  Directives|../languages/directives-pattern.html||use strict;|18
  Disk Output|../languages/disk-output-pattern.html||"write(""foobar.txt"", ""something"")"|2
  Dispose Blocks Pattern|../languages/dispose-blocks-pattern.html||with something: do something()|2
@@ -45,7 +45,7 @@ pipeTable
  Exceptions|../languages/exceptions-pattern.html||"throw new Error(""Uh oh"")"|1
  Expressions|../languages/expressions-pattern.html||(1 + 2)|0
  First-Class Functions|../languages/first-class-functions-pattern.html||[2.1].map(Math.round)|2
- Function Composition|../languages/function-composition-pattern.html|||0
+ Function Composition|../languages/function-composition-pattern.html|||6
  Function Overloading|../languages/function-overloading-pattern.html|Ad hoc polymorphism|add(string: str, string2: str)|2
  Functions|../languages/functions-pattern.html|routines or procedures or methods|function foo() {}|2
  Garbage Collection|../languages/garbage-collection-pattern.html||var iDontNeedToFreeThis|11
@@ -66,14 +66,14 @@ pipeTable
  Lazy Evaluation|../languages/lazy-evaluation-pattern.html||print(range(1000000)[2])|1
  Letter-first Identifiers|../languages/letter-first-identifiers-pattern.html||"seven11 = ""OK"" // 711 = ""ERROR"""|2
  Line Comments|../languages/line-comments-pattern.html||# from here to end of line is a comment|81
- Lists|../languages/lists-pattern.html|array or vector or sequence|[2, 3, 10]|0
+ Lists|../languages/lists-pattern.html|array or vector or sequence|[2, 3, 10]|4
  Macros|../languages/macros-pattern.html||#define height 10|10
  Magic Getters and Setters|../languages/magic-getters-and-setters-pattern.html||get(name) => obj[name]|2
  Manual Memory Management|../languages/manual-memory-management-pattern.html||malloc(4);|2
  Map Functions|../languages/map-functions-pattern.html||[1,2].map(square)|2
- Maps|../languages/maps-pattern.html|dict or dictionary or object or record or struct or hashtable or keyed list or associative array|"{name: ""Mary""}"|0
+ Maps|../languages/maps-pattern.html|dict or dictionary or object or record or struct or hashtable or keyed list or associative array|"{name: ""Mary""}"|3
  Merges Whitespace|../languages/merges-whitespace-pattern.html||result = 1    +    2|3
- Message Passing|../languages/message-passing-pattern.html||"""get homepage"""|0
+ Message Passing|../languages/message-passing-pattern.html||"""get homepage"""|10
  Method Chaining|../languages/method-chaining-pattern.html||a.toString().length|1
  Methods|../languages/methods-pattern.html||hi.length|1
  Mixins|../languages/mixin-pattern.html||extends structure, paintable|6
@@ -93,14 +93,14 @@ pipeTable
  Prefix Notation|../languages/prefix-notation-pattern.html||+ 1 2|2
  Print Statements|../languages/print-statements-pattern.html||"print ""Hi"""|6
  Processor Registers|../languages/processor-registers-pattern.html||eax 2|1
- Range Operator|../languages/range-operator-pattern.html||1 ... 10|0
+ Range Operator|../languages/range-operator-pattern.html||1 ... 10|3
  References|../languages/reference-pattern.html||fn(objPointer)|2
  Refinement Types|../languages/refinement-type-pattern.html||evenInt where int % 2 = 0|1
  Regular Expressions|../languages/regular-expressions-pattern.html||/\w+\d?/|0
  Runtime Guards|../languages/runtime-guards-pattern.html||f x &#124; x > 0 = 1 &#124; otherwise = 0|1
  Semantic Indentation|../languages/semantic-indentation-pattern.html||if true(newline/space)print True|51
  Semaphores|../languages/semaphores-pattern.html||singletonIsSet = 0|0
- Sets|../languages/sets-pattern.html||{black, red, yellow}|0
+ Sets|../languages/sets-pattern.html||{black, red, yellow}|2
  Shebang|../languages/shebang-pattern.html||#! /run|3
  Single Dispatch|../languages/single-dispatch-pattern.html||person.run()|7
  Single-Type Arrays|../languages/single-type-arrays-pattern.html||const scores: int[]|2
@@ -116,17 +116,17 @@ pipeTable
  Symbol Tables|../languages/symbol-table-pattern.html||SymbolName&#124;Type&#124;Scope;bar&#124;function,double&#124;extern|3
  Templates|../languages/templates-pattern.html||template TCopy(T) {}|3
  Ternary operators|../languages/ternary-operators-pattern.html||true ? 1 : 0|1
- Threads|../languages/threads-pattern.html||thread1(); thread2();|0
+ Threads|../languages/threads-pattern.html||thread1(); thread2();|5
  Traits|../languages/traits-pattern.html||use redBorder|1
- Triples|../languages/triple-pattern.html||Boston isCapitalOf Massachusetts|0
+ Triples|../languages/triple-pattern.html||Boston isCapitalOf Massachusetts|1
  Type Casting|../languages/type-casting-pattern.html||(float)score;|4
  Type Parameters|../languages/type-parameters-pattern.html||function identity&lt;T>(arg: T): T {return arg}|1
  Typed Holes|../languages/typed-holes-pattern.html||2 + _ => 2 + [int&#124;float]|4
  Unary Operators|../languages/unary-operators-pattern.html||count++|1
  Unicode Identifers|../languages/unicode-identifiers-pattern.html||δ = 0.00001|1
  Union Types|../languages/union-types-pattern.html||any = string &#124; number|2
- Units of Measure|../languages/units-of-measure-pattern.html||Boston isCapitalOf Massachusetts|0
+ Units of Measure|../languages/units-of-measure-pattern.html||Boston isCapitalOf Massachusetts|5
  Variadic Functions|../languages/variadic-functions-pattern.html||args.map(doSomething)|3
- Virtual function|../languages/virtual-functions-pattern.html||virtual Shout();|0
+ Virtual function|../languages/virtual-functions-pattern.html||virtual Shout();|1
  While Loops|../languages/while-loops-pattern.html||while (true) loop()|1
  Zippers|../languages/zipper-pattern.html||zipper.moveLeft()|1

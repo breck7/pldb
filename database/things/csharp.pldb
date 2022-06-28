@@ -125,6 +125,16 @@ patterns
   }
  hasLineComments? true
   // A comment
+ hasDefaultParameters? true
+  public void ExampleMethod(string optionalstr = "default string") {}
+ hasFunctionComposition? true
+  // Call example:
+  //   var c = Compose(f, g);
+  //
+  //   Func<int, bool> g = _ =>  ...
+  //   Func<bool, string> f = _ => ...
+  
+  Func<TIn, TOut> Compose<TIn, TMid, TOut>(Func<TMid, TOut> f, Func<TIn, TMid> g) => _ => f(g(_));
 
 wikipedia https://en.wikipedia.org/wiki/C_Sharp_(programming_language)
  example
