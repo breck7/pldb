@@ -27,6 +27,7 @@ patterns
      (define num-eggs 2))
  hasLineComments? true
   ; A comment
+ hasHomoiconicity? true
 
 wikipedia https://en.wikipedia.org/wiki/Racket_(programming_language)
  example

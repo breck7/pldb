@@ -4,7 +4,7 @@ maxColumns 1
 columnWidth 80
 
 paragraph
- A list of 114 patterns found in programming languages.
+ A list of 113 patterns found in programming languages.
 
 aftertext
  Is PLDB missing a pattern? @@Create a new file@@ in the pattern of `*-pattern.scroll` in the `things` folder and send a pull request.
@@ -17,7 +17,7 @@ comment autogenPatterns
 pipeTable
  pattern|patternLink|aka|psuedoExample|languages
  Abstract Types|../languages/abstract-types-pattern.html||abstract class Div {}|1
- Access Modifiers|../languages/access-modifiers-pattern.html||class Box { private location }|0
+ Access Modifiers|../languages/access-modifiers-pattern.html||class Box { private location }|1
  Algebraic Data Type|../languages/algebraic-types-pattern.html||garageContents = empty &#124; vehicle|2
  Anonymous Functions|../languages/anonymous-functions-pattern.html|Lambdas|() => doSomething()|3
  Assert Statements|../languages/assert-statements-pattern.html||assert(isTrue)|2
@@ -33,7 +33,6 @@ pipeTable
  Conditionals|../languages/conditionals-pattern.html||if (isTrue) doSomething()|2
  Constants|../languages/constants-pattern.html||const ONE = 1|2
  Constructors|../languages/constructor-pattern.html||Person: constructor(name: string): {}|12
- Core Language Development Hosted on GitHub|../languages/core-on-github-pattern.html||git clone microsoft.com/typescript|0
  Default Parameters Pattern|../languages/default-parameters-pattern.html||"say(message = ""Hello"")"|2
  Dependent types|../languages/dependent-types-pattern.html||sortedList // a list where is sorted is true|3
  Destructuring|../languages/destructuring-pattern.html||{name, age} = person|3
@@ -43,7 +42,7 @@ pipeTable
  Duck Typing|../languages/duck-typing-pattern.html||length() // makes me an iterator|1
  Dynamic Properties|../languages/dynamic-properties-pattern.html||person.age = 50|2
  Exceptions|../languages/exceptions-pattern.html||"throw new Error(""Uh oh"")"|1
- Expressions|../languages/expressions-pattern.html||(1 + 2)|0
+ Expressions|../languages/expressions-pattern.html||(1 + 2)|1
  First-Class Functions|../languages/first-class-functions-pattern.html||[2.1].map(Math.round)|2
  Function Composition|../languages/function-composition-pattern.html|||6
  Function Overloading|../languages/function-overloading-pattern.html|Ad hoc polymorphism|add(string: str, string2: str)|2
@@ -52,7 +51,7 @@ pipeTable
  Generators|../languages/generators-pattern.html||yield 2|4
  Generics|../languages/generics-pattern.html||function identity&lt;T>(arg: T): T|5
  Gotos|../languages/gotos-pattern.html||goto 10|3
- Homoiconic|../languages/homoiconic-pattern.html||(list ())|0
+ Homoiconic|../languages/homoiconic-pattern.html||(list ())|5
  Identifiers|../languages/identifiers-pattern.html||name = Bob|6
  Implicit Arguments|../languages/implicit-arguments-pattern.html||shout(implicit message: string)|1
  Implicit Type Casting|../languages/implicit-type-casting-pattern.html||"console.log(""hello "" + 2)"|1
@@ -96,7 +95,7 @@ pipeTable
  Range Operator|../languages/range-operator-pattern.html||1 ... 10|3
  References|../languages/reference-pattern.html||fn(objPointer)|2
  Refinement Types|../languages/refinement-type-pattern.html||evenInt where int % 2 = 0|1
- Regular Expressions|../languages/regular-expressions-pattern.html||/\w+\d?/|0
+ Regular Expressions|../languages/regular-expressions-pattern.html||/\w+\d?/|1
  Runtime Guards|../languages/runtime-guards-pattern.html||f x &#124; x > 0 = 1 &#124; otherwise = 0|1
  Semantic Indentation|../languages/semantic-indentation-pattern.html||if true(newline/space)print True|51
  Semaphores|../languages/semaphores-pattern.html||singletonIsSet = 0|0
@@ -105,8 +104,8 @@ pipeTable
  Single Dispatch|../languages/single-dispatch-pattern.html||person.run()|7
  Single-Type Arrays|../languages/single-type-arrays-pattern.html||const scores: int[]|2
  Source Maps|../languages/sourcemaps-pattern.html||{file: 'min.js',sources: ['one.js'], mappings: 'CAAC,IAAI,IAAM'}|1
- Statements|../languages/statements-pattern.html||print Hello world|0
- Static Methods|../languages/static-methods-pattern.html||static bark() {}|0
+ Statements|../languages/statements-pattern.html||print Hello world|1
+ Static Methods|../languages/static-methods-pattern.html||static bark() {}|1
  Static Typing|../languages/static-typing-pattern.html||int score = 100|7
  Streams|../languages/streams-pattern.html||echo 123 &#124; 123.txt|1
  Strings|../languages/strings-pattern.html||"""hi"""|9

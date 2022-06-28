@@ -4,6 +4,20 @@ type pl
 creators Anders Hejlsberg
 
 patterns
+ hasStaticMethods? true
+  class Person {
+    static sayHi() {
+      console.log("Hello world")
+    }
+  }
+ hasAccessModifiers? true
+  class Person {
+    private _age = 2
+    public get age() {
+      return _age
+    }
+    protected year = 1990
+  }
  hasAbstractTypes? true
   abstract class Animal {}
   class Dog extends Animal

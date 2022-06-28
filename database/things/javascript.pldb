@@ -4,7 +4,14 @@ type pl
 creators Brendan Eich
 
 patterns
+ hasAccessModifiers? false
  hasAbstractTypes? false
+ hasStatements? true
+  let x = 3;
+ hasRegularExpressions? true
+  /foobar/
+ hasExpressions? true
+  1 + 1
  hasAsyncAwait? true
   async doSomething => await somethingElse()
  hasBinaryOperators? true

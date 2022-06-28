@@ -30,6 +30,7 @@ patterns
  hasOperatorOverloading? true
  hasLineComments? true
   ; A comment
+ hasHomoiconicity? true
 
 wikipedia https://en.wikipedia.org/wiki/Clojure
  example

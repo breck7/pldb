@@ -5,6 +5,7 @@ type xmlFormat
 patterns
  hasCentralPackageRepository? false
  hasComments? true
+ hasHomoiconicity? true
 
 githubLanguage XSLT
  fileExtensions xslt xsl
