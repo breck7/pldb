@@ -157,6 +157,10 @@ class PLDBFile extends TreeBaseFile {
       .map(word => word.word)
   }
 
+  getAll(keyword) {
+    return this.findNodes(keyword).map(i => i.getContent())
+  }
+
   // todo: move upstream to Grammar
   formatAndSave() {
     const original = this.childrenToString()

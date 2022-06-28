@@ -418,6 +418,20 @@ ${facts.map(fact => ` - ${fact}`).join("\n")}`
         `${title} appears in the <a href="https://github.com/mame/quine-relay">Quine Relay</a> project`
       )
 
+    const jupyters = file.getAll("jupyterKernel")
+    if (jupyters.length === 1)
+      facts.push(
+        `There is a <a href="jupyter-notebook.html">Jupyter</a> <a href="${jupyters[0]}">Kernel</a> for ${title}`
+      )
+    else if (jupyters.length > 1)
+      facts.push(
+        `There are ${
+          jupyters.length
+        } <a href="jupyter-notebook.html">Jupyter</a> Kernels for ${title}: ${jupyters.map(
+          (i, index) => `<a href="${i}">${index + 1}</a>`
+        )}`
+      )
+
     const cheatSheetUrl = file.get("cheatSheetUrl")
     if (cheatSheetUrl)
       facts.push(`${title} <a href="${cheatSheetUrl}">cheat sheet</a>`)
