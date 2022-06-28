@@ -1,0 +1,8 @@
+title AsciiMath
+description AsciiMath is an easy-to-write markup language for mathematics.
+website http://asciimath.org/
+example
+ sum_(i=1)^n i^3=((n(n+1))/2)^2
+related latex
+type textMarkup
+githubRepo https://github.com/mathjax/asciimathml

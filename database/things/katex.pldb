@@ -1,6 +1,14 @@
-title katex
+title KaTeX
 appeared 2013
 type textMarkup
+
+description The fastest math typesetting library for the web.
+
+example
+ % \f is defined as #1f(#2) using the macro
+ \f\relax{x} = \int_{-\infty}^\infty
+     \f\hat\xi\,e^{2 \pi i \xi x}
+     \,d\xi
 
 patterns
  hasCentralPackageRepository? false

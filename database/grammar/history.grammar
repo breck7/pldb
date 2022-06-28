@@ -22,6 +22,12 @@ appearedNode
  int sortIndex 900
  crux appeared
  single
+latestReleaseNode
+ description The year of the most recent release of the thing.
+ extends abstractYearNode
+ int sortIndex 899
+ crux latestRelease
+ single
 firstAnnouncementNode
  description A url announcing the creation or release of a new language
  extends abstractUrlNode

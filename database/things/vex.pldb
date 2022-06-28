@@ -4,3 +4,4 @@ type notation
 creators Wayne Citrin and Richard Hall and Benjamin Zorn
 description The lambda calculus is a formal symbolic term rewrite system that has been used for many years both as a mechanism for defining the semantics of programming languages, and as the basis for functional programming languages. In this paper, we describe a completely visual representation for lambda expressions, VEX, that has several advantages over traditional textual lambda calculus. Although VEX is designed as an expression-oriented component of VIPR [3, 4], it can also be used in teaching the concepts of lambda calculus as a replacement for or augmentation to the teaching of traditional textual rewrite rules. Many semantic issues in lambda calculus that are confusing to students, including substitution, free variables, and binding, become apparent and explicit in VEX.
 reference http://users.encs.concordia.ca/~haarslev/vl95www/html-papers/citrin/citrin.html
+visualParadigm true
