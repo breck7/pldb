@@ -84,6 +84,11 @@ class PLDBFile extends TreeBaseFile {
     return isLanguage(this.get("type"))
   }
 
+  get wikipediaTitle() {
+    const wp = this.get("wikipedia")
+    return wp ? wp.replace("https://en.wikipedia.org/wiki/", "").trim() : ""
+  }
+
   get numberOfUsers() {
     return this.getParent().predictNumberOfUsers(this)
   }
@@ -214,8 +219,8 @@ class PLDBBaseFolder extends TreeBaseFolder {
       const id = file.primaryKey
       map.set(file.primaryKey, id)
       map.set(file.title, id)
-      const wp = file.get("wikipedia")
-      if (wp) map.set(wp.replace("https://en.wikipedia.org/wiki/", ""), id)
+      const wp = file.wikipediaTitle
+      if (wp) map.set(wp, id)
     })
     this._searchIndex = map
     return this._searchIndex
