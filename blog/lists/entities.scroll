@@ -4,7 +4,7 @@ maxColumns 1
 columnWidth 60
 
 aftertext
- Here is the list of all 4,419 entities in the PLDB. You can also download the whole database as a @CSV@.
+ Here is the list of all 4,422 entities in the PLDB. You can also download the whole database as a @CSV@.
  wrap @ a href="../pldb.csv"
 
 aftertext
@@ -2182,6 +2182,7 @@ pipeTable
  locomotive-basic|../languages/locomotive-basic.html|pl|1984
  locs|../languages/locs.html|pl|1965
  logal|../languages/logal.html|pl|1977
+ logica|../languages/logica.html|queryLanguage|
  logicon|../languages/logicon.html|pl|1986
  login|../languages/login.html|pl|1986
  logist|../languages/logist.html|pl|1980
@@ -3115,6 +3116,7 @@ pipeTable
  progres|../languages/progres.html|pl|1991
  progsbase|../languages/progsbase.html|pl|2018
  proiv|../languages/proiv.html|pl|1976
+ project-mentat|../languages/project-mentat.html|queryLanguage|
  prolog-d-linda|../languages/prolog-d-linda.html|pl|1990
  prolog-elf|../languages/prolog-elf.html|pl|1985
  prolog-iii|../languages/prolog-iii.html|pl|1984
@@ -4394,6 +4396,7 @@ pipeTable
  yasnippet|../languages/yasnippet.html|textMarkup|2008
  yawl|../languages/yawl.html|pl|2006
  ycp|../languages/ycp.html|pl|2005
+ yedalog|../languages/yedalog.html||2015
  yeti|../languages/yeti.html|pl|2007
  yii|../languages/yii.html|framework|2006
  yinyang|../languages/yinyang.html|pl|2013

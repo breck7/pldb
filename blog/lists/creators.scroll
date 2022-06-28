@@ -4,7 +4,7 @@ maxColumns 1
 columnWidth 60
 
 paragraph
- Here is the list of 292 people who created a language(s) or other thing(s) in the PLDB.
+ Here is the list of 301 people who created a language(s) or other thing(s) in the PLDB.
 
 aftertext
  Is PLDB missing the creator(s) of a language? Find the language on the @languages page@ and send a pull request.
@@ -155,6 +155,7 @@ pipeTable
  <a name='Isaac_Newton' />Isaac Newton|<a href='../languages/gravity-equation.html'>gravity-equation</a> <a href='../languages/integral-equation.html'>integral-equation</a>|2
  <a name='Brandon_Barber' />Brandon Barber|<a href='../languages/exkited.html'>exkited</a> <a href='../languages/nymph.html'>nymph</a>|2
  <a name='Alan_Kay' href='https://en.wikipedia.org/wiki/Alan_Kay'>Alan Kay</a>|<a href='../languages/etoys.html'>etoys</a> <a href='../languages/flex-lang.html'>flex-lang</a>|2
+ <a name='Mark_S._Miller' href='https://en.wikipedia.org/wiki/Mark_S._Miller'>Mark S. Miller</a>|<a href='../languages/e.html'>e</a> <a href='../languages/yedalog.html'>yedalog</a>|2
  <a name='Ryan_Dahl' href='https://en.wikipedia.org/wiki/Ryan_Dahl'>Ryan Dahl</a>|<a href='../languages/deno.html'>deno</a> <a href='../languages/nodejs.html'>nodejs</a>|2
  <a name='Mike_Bostock' />Mike Bostock|<a href='../languages/d3.html'>d3</a> <a href='../languages/observable-lang.html'>observable-lang</a>|2
  <a name='Anders_Hejlsberg' href='https://en.wikipedia.org/wiki/Anders_Hejlsberg'>Anders Hejlsberg</a>|<a href='../languages/csharp.html'>csharp</a> <a href='../languages/typescript.html'>typescript</a>|2
@@ -170,6 +171,13 @@ pipeTable
  <a name='Bram_Moolenaar' />Bram Moolenaar|<a href='../languages/zimbu.html'>zimbu</a>|1
  <a name='David_H._Munro' />David H. Munro|<a href='../languages/yorick.html'>yorick</a>|1
  <a name='Trevor_Blackwell' />Trevor Blackwell|<a href='../languages/yoga.html'>yoga</a>|1
+ <a name='Fernando_Pereira' />Fernando Pereira|<a href='../languages/yedalog.html'>yedalog</a>|1
+ <a name='Chris_Olston' />Chris Olston|<a href='../languages/yedalog.html'>yedalog</a>|1
+ <a name='Franz_Och' />Franz Och|<a href='../languages/yedalog.html'>yedalog</a>|1
+ <a name='Peter_Hawkins' />Peter Hawkins|<a href='../languages/yedalog.html'>yedalog</a>|1
+ <a name='Vuk_Ercegovac' />Vuk Ercegovac|<a href='../languages/yedalog.html'>yedalog</a>|1
+ <a name='Daniel_von_Dincklage' />Daniel von Dincklage|<a href='../languages/yedalog.html'>yedalog</a>|1
+ <a name='Brian_Chin' />Brian Chin|<a href='../languages/yedalog.html'>yedalog</a>|1
  <a name='Paul_T._Graunke' />Paul T. Graunke|<a href='../languages/xt3d.html'>xt3d</a>|1
  <a name='Kathryn_E._Gray' />Kathryn E. Gray|<a href='../languages/xt3d.html'>xt3d</a>|1
  <a name='Shriram_Krishnamurthi' />Shriram Krishnamurthi|<a href='../languages/xt3d.html'>xt3d</a>|1
@@ -299,6 +307,8 @@ pipeTable
  <a name='Ned_Freed' />Ned Freed|<a href='../languages/mime.html'>mime</a>|1
  <a name='Nathaniel_Borenstein' />Nathaniel Borenstein|<a href='../languages/mime.html'>mime</a>|1
  <a name='Zoltan_Somogyi' />Zoltan Somogyi|<a href='../languages/mercury.html'>mercury</a>|1
+ <a name='Jane_W.S._Liu' />Jane W.S. Liu|<a href='../languages/mentat.html'>mentat</a>|1
+ <a name='Andrew_S._Grimshaw' />Andrew S. Grimshaw|<a href='../languages/mentat.html'>mentat</a>|1
  <a name='Vannevar_Bush' />Vannevar Bush|<a href='../languages/memex-machine.html'>memex-machine</a>|1
  <a name='Corey_Montella' />Corey Montella|<a href='../languages/mech-lang.html'>mech-lang</a>|1
  <a name='Mosha_Pasumansky' />Mosha Pasumansky|<a href='../languages/mdx-lang.html'>mdx-lang</a>|1
@@ -373,7 +383,6 @@ pipeTable
  <a name='Stanley_Gill' />Stanley Gill|<a href='../languages/edsac-initial-orders.html'>edsac-initial-orders</a>|1
  <a name='Maurice_Wilkes' />Maurice Wilkes|<a href='../languages/edsac-initial-orders.html'>edsac-initial-orders</a>|1
  <a name='David_Wheeler' />David Wheeler|<a href='../languages/edsac-initial-orders.html'>edsac-initial-orders</a>|1
- <a name='Mark_S._Miller' href='https://en.wikipedia.org/wiki/Mark_S._Miller'>Mark S. Miller</a>|<a href='../languages/e.html'>e</a>|1
  <a name='Joseph-Louis_Lagrange' />Joseph-Louis Lagrange|<a href='../languages/dot-product-equation.html'>dot-product-equation</a>|1
  <a name='Paul_Mockapetris' />Paul_Mockapetris|<a href='../languages/dns.html'>dns</a>|1
  <a name='Nicolaas_Govert_de_Bruijn' />Nicolaas Govert de Bruijn|<a href='../languages/de-bruijn-index-notation.html'>de-bruijn-index-notation</a>|1

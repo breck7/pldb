@@ -1,0 +1,21 @@
+website https://logica.dev/
+title Logica
+type queryLanguage
+description Logica is an open source declarative logic programming language for data manipulation. Logica is a successor to Yedalog, a language created at Google earlier.
+
+compilesTo sql
+lineCommentKeyword #
+
+example
+ # Define natural numbers from 1 to 29.
+ N(x) :- x in Range(30);
+ # Define primes.
+ Prime(prime: x) :-
+   N(x),
+   x > 1,
+   ~(
+     N(y),
+     y > 1,
+     y != x,
+     Mod(x, y) == 0
+   );
