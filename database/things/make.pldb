@@ -1,17 +1,17 @@
 title Make
 appeared 1977
-type pl
+type application
+description Make — a program for maintaining computer programs
 
 patterns
  hasCentralPackageRepository? false
 
 reference https://semanticscholar.org/paper/40cf2b47de20d0b930cd4b5184febe40bdc681c8
-status historical
-
-tryItOnline make
+status active
 
 wordRank 132
 
 hopl 768
 
-rosettaCode Make
+related makefile
+

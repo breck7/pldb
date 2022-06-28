@@ -51,7 +51,8 @@ const isLanguage = type => {
     filesystem: true,
     pattern: true,
     packageManager: true,
-    os: true
+    os: true,
+    application: true
   }
 
   return nonLanguages[type] ? false : true

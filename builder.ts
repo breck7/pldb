@@ -55,6 +55,7 @@ class Builder extends AbstractBuilder {
     this.buildFileExtensionsPage()
     this.buildAcknowledgementsPage()
     this.buildTopPages()
+    this.buildEntitiesPage()
     this.buildBlog()
     this.buildCsvs()
     this.buildSearchIndex()
@@ -130,8 +131,46 @@ class Builder extends AbstractBuilder {
     const text = page
       .toString()
       .replace(
-        /list of \.+ file extensions/,
+        /list of .+ file extensions/,
         `list of ${numeral(files.length).format("0,0")} file extensions`
+      )
+
+    Disk.write(pagePath, text)
+  }
+
+  buildEntitiesPage() {
+    pldbBase.loadFolder()
+    const pagePath = __dirname + "/blog/lists/entities.scroll"
+    const page = new TreeNode(Disk.read(pagePath))
+
+    const files = pldbBase.map(file => {
+      const name = file.primaryKey
+      const appeared = file.get("appeared") || ""
+      const type = file.get("type")
+      return {
+        name,
+        nameLink: `../languages/${name}.html`,
+        type,
+        appeared
+      }
+    })
+
+    replaceNext(
+      page,
+      "comment autogenEntities",
+      toScrollTable(new TreeNode(files), [
+        "name",
+        "nameLink",
+        "type",
+        "appeared"
+      ])
+    )
+
+    const text = page
+      .toString()
+      .replace(
+        /list of all .+ entities/,
+        `list of all ${numeral(files.length).format("0,0")} entities`
       )
 
     Disk.write(pagePath, text)
@@ -143,7 +182,7 @@ class Builder extends AbstractBuilder {
     const page = new TreeNode(Disk.read(pagePath))
 
     const files = pldbBase
-      .filter(file => file.get("type") !== "pattern")
+      .filter(file => file.isLanguage)
       .map(file => {
         const name = file.primaryKey
         const appeared = file.get("appeared") || ""
@@ -170,8 +209,8 @@ class Builder extends AbstractBuilder {
     const text = page
       .toString()
       .replace(
-        /list of the \.+ computer/,
-        `list of the ${numeral(files.length).format("0,0")} computer`
+        /list of all .+ languages/,
+        `list of all ${numeral(files.length).format("0,0")} languages`
       )
 
     Disk.write(pagePath, text)
@@ -208,7 +247,7 @@ class Builder extends AbstractBuilder {
     const text = page
       .toString()
       .replace(
-        /A list of \.+ patterns/,
+        /A list of .+ patterns/,
         `A list of ${numeral(files.length).format("0,0")} patterns`
       )
 
@@ -270,7 +309,7 @@ class Builder extends AbstractBuilder {
     const newCount = numeral(Object.values(entities).length).format("0,0")
     const text = page
       .toString()
-      .replace(/list of \.+ people/, `list of ${newCount} people`)
+      .replace(/list of .+ people/, `list of ${newCount} people`)
 
     Disk.write(pagePath, text)
   }
@@ -317,7 +356,7 @@ class Builder extends AbstractBuilder {
     const newCount = numeral(Object.values(entities).length).format("0,0")
     const text = page
       .toString()
-      .replace(/list of \.+ corporations/, `list of ${newCount} corporations`)
+      .replace(/list of .+ corporations/, `list of ${newCount} corporations`)
 
     Disk.write(pagePath, text)
   }

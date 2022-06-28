@@ -7,7 +7,7 @@ aftertext
 section PLDB.pub
 
 aftertext
- I use Google Domains for domain registration and DNS.
+ PLDB.pub is registered with Google Domains and also uses Google Domains for DNS.
  https://domains.google/ Google Domains
 
 aftertext
@@ -64,7 +64,7 @@ nginxConfigCode
  add_header 'Access-Control-Expose-Headers' 'Content-Length,Content-Range' always;
 
 aftertext
- I use rsync to deploy the site.
+ PLDB is deployed using rsync.
  https://linux.die.net/man/1/rsync rsync
 
 subsection Logo and favicons

@@ -4,12 +4,8 @@ paragraph
  Welcome to PLDB--the Programming Language Database!
 
 aftertext
- I want to help you *build the next great programming language*.
- wrapsOn
-
-aftertext
- I am building a comprehensive database of programming
- languages and their common design patterns. I focus on
+ PLDB is a comprehensive database of programming
+ languages and their common design patterns. The focus is on
  *programming languages*, but the database also
  includes other languages and entities one degree away--from
  popular high level plain text formats to binary
@@ -17,18 +13,19 @@ aftertext
  wrapsOn
 
 paragraph
- Besides being useful to me, I hope this database helps two
- types of people:
+ PLDB is for two groups of people:
 
 aftertext
- 1. Programming language creators. I want to organize big
- data to help you create great new languages, and improve
- existing ones. If you are researching something and can't
+ 1. <b>Programming language creators.</b> PLDB is organized big data
+ to help you create great new languages, and improve
+ existing ones. When making design decisions, quickly look up
+ what other languages have tried. Benefit from the experiences
+ of thousands that have built languages before you. If you are researching something and can't
  find what you need here, open an issue and explain what you need.
  https://github.com/breck7/pldb/issues/new open an issue
 
 aftertext
- 2. Programming language users. I want to provide a
+ 2. <b>Programming language users.</b> PLDB provides a
  data-driven view of the programming language universe, to
  demystify the world of programming languages for you, and
  provide sound strategic and tactical advice to help you in

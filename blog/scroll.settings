@@ -44,7 +44,7 @@ header
     placeholder Search
     autocomplete off
   a Languages
-   href BASE_URL/lists/languages.html
+   href BASE_URL/lists/top250.html
   a Patterns
    href BASE_URL/lists/patterns.html
   a Calendar
@@ -53,3 +53,5 @@ header
    href BASE_URL/about.html
   a Lists
    href BASE_URL/lists/lists.html
+  a GitHub
+   href https://github.com/breck7/pldb
