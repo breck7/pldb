@@ -176,7 +176,7 @@ ${facts.map(fact => ` - ${fact}`).join("\n")}`
     const bins = [0.01, 0.05, 0.1, 0.25]
     bins.reverse()
     let rankMessage = ""
-    const category = isLanguage ? "languages" : "entities I track"
+    const category = isLanguage ? "languages" : "entities on PLDB"
     if (percentile > 0.25) return ""
     else {
       bins.forEach(bin => {
@@ -622,14 +622,6 @@ code
 ` +
       examplesText
     )
-  }
-
-  get facts() {
-    const facts = super.facts
-    const ref = this.object.reference
-    if (ref)
-      facts.push(`Read more about <a href="${ref}">${this.file.title}</a>`)
-    return facts
   }
 }
 
