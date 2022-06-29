@@ -16,11 +16,11 @@ pipeTable
  php|../languages/php.html|1995|pl|5
  ruby|../languages/ruby.html|1995|pl|6
  perl|../languages/perl.html|1987|pl|7
- r|../languages/r.html|1993|pl|8
- go|../languages/go.html|2009|pl|9
+ go|../languages/go.html|2009|pl|8
+ r|../languages/r.html|1993|pl|9
  csharp|../languages/csharp.html|2000|pl|10
- scala|../languages/scala.html|2004|pl|11
- html|../languages/html.html|1991|textMarkup|12
+ html|../languages/html.html|1991|textMarkup|11
+ scala|../languages/scala.html|2004|pl|12
  matlab|../languages/matlab.html|1984|pl|13
  sql|../languages/sql.html|1974|queryLanguage|14
  fortran|../languages/fortran.html|1957|pl|15
@@ -43,8 +43,8 @@ pipeTable
  json|../languages/json.html|2001|metaLanguage|32
  julia|../languages/julia.html|2012|pl|33
  postgresql|../languages/postgresql.html|1986|queryLanguage|34
- typescript|../languages/typescript.html|2012|pl|35
- coffeescript|../languages/coffeescript.html|2009|pl|36
+ coffeescript|../languages/coffeescript.html|2009|pl|35
+ typescript|../languages/typescript.html|2012|pl|36
  scheme|../languages/scheme.html|1970|pl|37
  racket|../languages/racket.html|1994|pl|38
  elixir|../languages/elixir.html|2011|pl|39
@@ -58,8 +58,8 @@ pipeTable
  common-lisp|../languages/common-lisp.html|1984|pl|47
  idris|../languages/idris.html|2014|pl|48
  antlr|../languages/antlr.html|1992|grammarLanguage|49
- yacc|../languages/yacc.html|1975|grammarLanguage|50
- opencl|../languages/opencl.html|2009|pl|51
+ opencl|../languages/opencl.html|2009|pl|50
+ yacc|../languages/yacc.html|1975|grammarLanguage|51
  wasm|../languages/wasm.html|2015|bytecode|52
  pl-sql|../languages/pl-sql.html|1991|pl|53
  visual-basic-dot-net|../languages/visual-basic-dot-net.html|2001|pl|54
@@ -80,10 +80,10 @@ pipeTable
  wolfram|../languages/wolfram.html|1988|pl|69
  standard-ml|../languages/standard-ml.html|1990|pl|70
  xojo|../languages/xojo.html|1996|pl|71
- turtle|../languages/turtle.html|2011|metaLanguage|72
- svg|../languages/svg.html|2001|textMarkup|73
- xbase|../languages/xbase.html|1986|pl|74
- x86-assembly|../languages/x86-assembly.html|1972|assembly|75
+ x86-assembly|../languages/x86-assembly.html|1972|assembly|72
+ turtle|../languages/turtle.html|2011|metaLanguage|73
+ svg|../languages/svg.html|2001|textMarkup|74
+ xbase|../languages/xbase.html|1986|pl|75
  scratch|../languages/scratch.html|2002|visual|76
  sqlite|../languages/sqlite.html|2000|queryLanguage|77
  xpath|../languages/xpath.html|1999|queryLanguage|78
@@ -94,8 +94,8 @@ pipeTable
  sparql|../languages/sparql.html|2008|queryLanguage|83
  simula|../languages/simula.html|1965|pl|84
  transact-sql|../languages/transact-sql.html|1984|queryLanguage|85
- supercollider|../languages/supercollider.html|1996|pl|86
- sed|../languages/sed.html|1974|pl|87
+ sed|../languages/sed.html|1974|pl|86
+ supercollider|../languages/supercollider.html|1996|pl|87
  turbo-pascal|../languages/turbo-pascal.html|1983|compiler|88
  squirrel|../languages/squirrel.html|2003|pl|89
  visual-foxpro|../languages/visual-foxpro.html|1995|pl|90
@@ -103,8 +103,8 @@ pipeTable
  red|../languages/red.html|2011|pl|92
  turing|../languages/turing.html|1982|pl|93
  twig|../languages/twig.html|2009|template|94
- sagemath|../languages/sagemath.html|2005|pl|95
- pascal|../languages/pascal.html|1970|pl|96
+ pascal|../languages/pascal.html|1970|pl|95
+ sagemath|../languages/sagemath.html|2005|pl|96
  powershell|../languages/powershell.html|2006|pl|97
  postscript|../languages/postscript.html|1982|textMarkup|98
  url|../languages/url.html|1994|schema|99
@@ -153,8 +153,8 @@ pipeTable
  ucsd-pascal|../languages/ucsd-pascal.html|1978|pl|142
  perl-6|../languages/perl-6.html|2015|pl|143
  smarty|../languages/smarty.html|2006|pl|144
- reason|../languages/reason.html|2016|pl|145
- tinyc-compiler|../languages/tinyc-compiler.html|2001|compiler|146
+ tinyc-compiler|../languages/tinyc-compiler.html|2001|compiler|145
+ reason|../languages/reason.html|2016|pl|146
  s-expressions|../languages/s-expressions.html|1960|metaLanguage|147
  seed7|../languages/seed7.html|2005|pl|148
  puredata|../languages/puredata.html|1996|pl|149
@@ -218,8 +218,8 @@ pipeTable
  strips|../languages/strips.html|1969|pl|207
  ninja|../languages/ninja.html|2012|template|208
  newlisp|../languages/newlisp.html|1991|pl|209
- j|../languages/j.html|1990|pl|210
- maxima|../languages/maxima.html|1982|pl|211
+ maxima|../languages/maxima.html|1982|pl|210
+ j|../languages/j.html|1990|pl|211
  mime|../languages/mime.html|1991|textDataFormat|212
  lolcode|../languages/lolcode.html|2007|esolang|213
  qmake|../languages/qmake.html|2002|pl|214

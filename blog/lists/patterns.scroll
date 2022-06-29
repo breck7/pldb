@@ -27,10 +27,10 @@ pipeTable
  Block Comments|../languages/block-comments-pattern.html||/* a looong comment */|14
  Booleans|../languages/booleans-pattern.html||doBabiesSleep = false|10
  Case Insensitive Identifiers|../languages/case-insensitive-identifiers-pattern.html||AnYcASE = 2|5
- Classes|../languages/classes-pattern.html||class Dog {}|3
+ Classes|../languages/classes-pattern.html||class Dog {}|4
  Comments|../languages/comment-pattern.html||# a comment|157
  Conditionals|../languages/conditionals-pattern.html||if (isTrue) doSomething()|2
- Constants|../languages/constants-pattern.html||const ONE = 1|2
+ Constants|../languages/constants-pattern.html||const ONE = 1|3
  Constructors|../languages/constructor-pattern.html||Person: constructor(name: string): {}|12
  Default Parameters Pattern|../languages/default-parameters-pattern.html||"say(message = ""Hello"")"|2
  Dependent types|../languages/dependent-types-pattern.html||sortedList // a list where is sorted is true|3
@@ -38,9 +38,9 @@ pipeTable
  Directives|../languages/directives-pattern.html||use strict;|18
  Disk Output|../languages/disk-output-pattern.html||"write(""foobar.txt"", ""something"")"|2
  Dispose Blocks Pattern|../languages/dispose-blocks-pattern.html||with something: do something()|2
- Duck Typing|../languages/duck-typing-pattern.html||length() // makes me an iterator|1
+ Duck Typing|../languages/duck-typing-pattern.html||length() // makes me an iterator|2
  Dynamic Properties|../languages/dynamic-properties-pattern.html||person.age = 50|2
- Exceptions|../languages/exceptions-pattern.html||"throw new Error(""Uh oh"")"|1
+ Exceptions|../languages/exceptions-pattern.html||"throw new Error(""Uh oh"")"|2
  Expressions|../languages/expressions-pattern.html||(1 + 2)|1
  First-Class Functions|../languages/first-class-functions-pattern.html||[2.1].map(Math.round)|2
  Function Composition|../languages/function-composition-pattern.html|||6
@@ -50,7 +50,7 @@ pipeTable
  Generators|../languages/generators-pattern.html||yield 2|4
  Generics|../languages/generics-pattern.html||function identity&lt;T>(arg: T): T|5
  Gotos|../languages/gotos-pattern.html||goto 10|3
- Homoiconic|../languages/homoiconic-pattern.html||(list ())|5
+ Homoiconicity|../languages/homoiconic-pattern.html||(list ())|5
  Identifiers|../languages/identifiers-pattern.html||name = Bob|6
  Implicit Arguments|../languages/implicit-arguments-pattern.html||shout(implicit message: string)|1
  Implicit Type Casting|../languages/implicit-type-casting-pattern.html||"console.log(""hello "" + 2)"|1
