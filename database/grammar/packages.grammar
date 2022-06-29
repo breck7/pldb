@@ -2,6 +2,7 @@ packageRepositoryNode
  extends abstractUrlNode
  crux packageRepository
  description URL to the package repository for this language.
+ boolean multipleOk true
 packageInstallsNode
  description How many packages have been downloaded?
  extends abstractCountNode

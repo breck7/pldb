@@ -440,13 +440,27 @@ ${facts.map(fact => ` - ${fact}`).join("\n")}`
     const jupyters = file.getAll("jupyterKernel")
     if (jupyters.length === 1)
       facts.push(
-        `There is a <a href="jupyter-notebook.html">Jupyter</a> <a href="${jupyters[0]}">Kernel</a> for ${title}`
+        `There is 1 <a href="jupyter-notebook.html">Jupyter</a> <a href="${jupyters[0]}">Kernel</a> for ${title}`
       )
     else if (jupyters.length > 1)
       facts.push(
         `There are ${
           jupyters.length
         } <a href="jupyter-notebook.html">Jupyter</a> Kernels for ${title}: ${jupyters.map(
+          (i, index) => `<a href="${i}">${index + 1}</a>`
+        )}`
+      )
+
+    const packageRepos = file.getAll("packageRepository")
+    if (packageRepos.length === 1)
+      facts.push(
+        `There is a <a href="${packageRepos[0]}">central package repository</a> for ${title}`
+      )
+    else if (packageRepos.length > 1)
+      facts.push(
+        `There are ${
+          packageRepos.length
+        } central package repositories for ${title}: ${packageRepos.map(
           (i, index) => `<a href="${i}">${index + 1}</a>`
         )}`
       )
