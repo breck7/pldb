@@ -2,9 +2,6 @@ title HAGGIS
 appeared 2010
 type pl
 
-patterns
- hasCentralPackageRepository? false
-
 wikipedia https://en.wikipedia.org/wiki/HAGGIS
  example
   CONSTRUCTOR( [Data Type][Data Name], [Data Type][Data Name]...)
@@ -31,3 +28,4 @@ wikipedia https://en.wikipedia.org/wiki/HAGGIS
 
 status historical
 fileType text
+centralPackageRepositoryCount 0

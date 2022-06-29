@@ -9,9 +9,6 @@ example
     else:
         factorial(n - 1, n * m)
 
-patterns
- hasCentralPackageRepository? false
-
 description Mochi is a dynamically typed programming language for functional programming and actor-style programming. Its interpreter is written in Python3. The interpreter translates a program written in Mochi to Python3's AST / bytecode.
 
 githubRepo https://github.com/i2y/mochi
@@ -28,3 +25,4 @@ status active
 fileType text
 isOpenSource true
 jupyterKernel https://github.com/pya/mochi-kernel
+centralPackageRepositoryCount 0

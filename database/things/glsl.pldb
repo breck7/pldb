@@ -2,9 +2,6 @@ title GLSL
 appeared 1992
 type pl
 
-patterns
- hasCentralPackageRepository? false
-
 wikipedia https://en.wikipedia.org/wiki/OpenGL_Shading_Language
  related opengl c linux javascript delphi java webgl cg
  summary OpenGL Shading Language (abbreviated: GLSL), is a high-level shading language with a syntax based on the C programming language. It was created by the OpenGL ARB (OpenGL Architecture Review Board) to give developers more direct control of the graphics pipeline without having to use ARB assembly language or hardware-specific languages.
@@ -42,3 +39,4 @@ rosettaCode GLSL
 
 languageServerProtocolProject https://github.com/svenstaro/glsl-language-server
  writtenIn cpp
+centralPackageRepositoryCount 0

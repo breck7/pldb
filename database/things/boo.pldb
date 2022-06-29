@@ -4,7 +4,6 @@ type pl
 creators Rodrigo B. De Oliveira
 
 patterns
- hasCentralPackageRepository? false
  hasSemanticIndentation? true
  hasTypeInference? true
 
@@ -62,3 +61,5 @@ projectEuler Boo
   2022 23
 
 rosettaCode Boo
+
+centralPackageRepositoryCount 0

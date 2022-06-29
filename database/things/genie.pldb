@@ -3,7 +3,6 @@ appeared 2008
 type pl
 
 patterns
- hasCentralPackageRepository? false
  hasComments? true
  hasSemanticIndentation? true
 
@@ -42,3 +41,5 @@ isOpenSource true
 hopl 8118
 
 rosettaCode Genie
+
+centralPackageRepositoryCount 0

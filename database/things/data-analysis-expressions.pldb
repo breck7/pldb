@@ -2,9 +2,6 @@ title Data analysis expressions
 appeared 2009
 type pl
 
-patterns
- hasCentralPackageRepository? false
-
 wikipedia https://en.wikipedia.org/wiki/Data_analysis_expressions
  related excel-app
  summary Data Analysis Expressions (DAX) is the native formula and query language for Microsoft PowerPivot, Power BI Desktop and SQL Server Analysis Services (SSAS) Tabular models. DAX includes some of the functions that are used in Excel formulas with additional functions that are designed to work with relational data and perform dynamic aggregation. It is, in part, an evolution of the Multidimensional Expression (MDX) language developed by Microsoft for Analysis Services multidimensional models (often called cubes) combined with Excel formula functions. It is designed to be simple and easy to learn, while exposing the power and flexibility of PowerPivot and SSAS tabular models.
@@ -16,3 +13,4 @@ wikipedia https://en.wikipedia.org/wiki/Data_analysis_expressions
  appeared 2009
 
 status historical
+centralPackageRepositoryCount 0

@@ -2,9 +2,6 @@ title BlooP
 appeared 1979
 type esolang
 
-patterns
- hasCentralPackageRepository? false
-
 wikipedia https://en.wikipedia.org/wiki/BlooP_and_FlooP
  example
   DEFINE PROCEDURE ''ACKERMANN'' [M, N]:
@@ -50,3 +47,5 @@ fileType text
 hopl 844
 
 rosettaCode BlooP
+
+centralPackageRepositoryCount 0

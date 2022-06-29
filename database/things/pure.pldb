@@ -3,9 +3,6 @@ appeared 2008
 type pl
 creators Albert Gräf
 
-patterns
- hasCentralPackageRepository? false
-
 wikipedia https://en.wikipedia.org/wiki/Pure_(programming_language)
  example
   extern int puts(char*);
@@ -30,3 +27,5 @@ wordRank 3337
 isOpenSource true
 
 rosettaCode Pure
+
+centralPackageRepositoryCount 0

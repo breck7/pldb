@@ -12,9 +12,6 @@ example
          |
          \-. `` Here's where the program starts
 
-patterns
- hasCentralPackageRepository? false
-
 githubRepo https://github.com/aaronduino/asciidots
  stars 764
  forks 19
@@ -40,3 +37,4 @@ hackerNewsDiscussions
  id|title|time|timestamp|by|comments|score
  14947449|Show HN: AsciiDots – a 2D esoteric language inspired by circuits|2017-08-07 13:57:27 UTC|1502114247|aaronduino|33|148
 visualParadigm true
+centralPackageRepositoryCount 0

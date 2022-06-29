@@ -2,9 +2,6 @@ title Keyhole Markup Language
 appeared 2007
 type xmlFormat
 
-patterns
- hasCentralPackageRepository? false
-
 wikipedia https://en.wikipedia.org/wiki/Keyhole_Markup_Language
  example
   <?xml version="1.0" encoding="UTF-8"?>
@@ -31,3 +28,4 @@ wikipedia https://en.wikipedia.org/wiki/Keyhole_Markup_Language
 standsFor Keyhole Markup Language
 status historical
 fileType text
+centralPackageRepositoryCount 0

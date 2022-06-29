@@ -2,9 +2,6 @@ title IBM POWER Instruction Set Architecture
 appeared 1998
 type isa
 
-patterns
- hasCentralPackageRepository? false
-
 wikipedia https://en.wikipedia.org/wiki/IBM_POWER_Instruction_Set_Architecture
  related powerpc
  summary The IBM POWER ISA is a reduced instruction set computer (RISC) instruction set architecture (ISA) developed by IBM. The name is an acronym for Performance Optimization With Enhanced RISC. The ISA is used as base for high end microprocessors from IBM during the 1990s and were used in many of IBM's servers, minicomputers, workstations, and supercomputers. These processors are called POWER1 (RIOS-1, RIOS.9, RSC, RAD6000) and POWER2 (POWER2, POWER2+ and P2SC). The ISA evolved into the PowerPC instruction set architecture and was deprecated in 1998 when IBM introduced the POWER3 processor that was mainly a 32/64 bit PowerPC processor but included the POWER ISA for backwards compatibility. The POWER ISA was then abandoned.
@@ -17,3 +14,4 @@ wikipedia https://en.wikipedia.org/wiki/IBM_POWER_Instruction_Set_Architecture
 
 status historical
 fileType na
+centralPackageRepositoryCount 0

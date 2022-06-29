@@ -5,9 +5,6 @@ type notation
 example
  −− −−− ·−· ··· ·       −·−· −−− −·· ·
 
-patterns
- hasCentralPackageRepository? false
-
 wikipedia https://en.wikipedia.org/wiki/Morse_code
  example
   M   O   R   S  E          C    O   D  E
@@ -21,3 +18,4 @@ wikipedia https://en.wikipedia.org/wiki/Morse_code
  appeared 1966
 
 status historical
+centralPackageRepositoryCount 0

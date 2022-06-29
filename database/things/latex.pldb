@@ -3,7 +3,6 @@ appeared 1985
 type textMarkup
 
 patterns
- hasCentralPackageRepository? false
  hasComments? true
 
 wikipedia https://en.wikipedia.org/wiki/LaTeX
@@ -63,3 +62,4 @@ hopl 2157
 rosettaCode LaTeX
 
 languageServerProtocolProject https://github.com/efoerster/texlab
+centralPackageRepositoryCount 0

@@ -2,9 +2,6 @@ title DML
 appeared 2005
 type pl
 
-patterns
- hasCentralPackageRepository? false
-
 wikipedia https://en.wikipedia.org/wiki/Dependent_ML
  related ats
  summary Dependent ML is an experimental functional programming language proposed by Hongwei Xi (Xi 2007) and Frank Pfenning. Dependent ML extends ML by a restricted notion of dependent types: types may be dependent on static indices of type Nat (natural numbers). Dependent ML employs a constraint theorem prover to decide a strong equational theory over the index expressions. DML's types are not dependent on runtime values - there is still a phase distinction between compilation and execution of the program. By restricting the generality of full dependent types type checking remains decidable, but type inference becomes undecidable. Dependent ML has been superseded by ATS and is no longer under active development.
@@ -18,3 +15,5 @@ wikipedia https://en.wikipedia.org/wiki/Dependent_ML
 status historical
 
 hopl 1681
+
+centralPackageRepositoryCount 0

@@ -2,9 +2,6 @@ title Report Program Generator
 appeared 1959
 type pl
 
-patterns
- hasCentralPackageRepository? false
-
 wikipedia https://en.wikipedia.org/wiki/IBM_RPG
  example
   ctl-opt main(GetCustInf);
@@ -49,3 +46,4 @@ tiobe RPG (OS/400)
 hopl 207
 
 corporateDevelopers IBM
+centralPackageRepositoryCount 0

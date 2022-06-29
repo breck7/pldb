@@ -6,7 +6,6 @@ creators Martin Odersky
 patterns
  hasPartialApplication? true
   def add(x: Int, y: Int) = {x+y}; add(1, _: Int)
- hasCentralPackageRepository? false
  hasComments? true
  hasImplicitArguments? true
   // https://docs.scala-lang.org/tour/implicit-parameters.html
@@ -174,3 +173,4 @@ stackOverflowSurvey
   fans 3165
   percentageUsing 0.03
 packageRepository https://index.scala-lang.org/
+centralPackageRepositoryCount 0

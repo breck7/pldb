@@ -2,9 +2,6 @@ title Extensible Application Markup Language
 appeared 2008
 type xmlFormat
 
-patterns
- hasCentralPackageRepository? false
-
 wikipedia https://en.wikipedia.org/wiki/Extensible_Application_Markup_Language
  example
   <html xmlns="http://www.w3.org/1999/xhtml">
@@ -31,3 +28,4 @@ wikipedia https://en.wikipedia.org/wiki/Extensible_Application_Markup_Language
  appeared 2008
 
 status historical
+centralPackageRepositoryCount 0

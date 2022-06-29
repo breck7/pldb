@@ -3,7 +3,6 @@ appeared 1990
 type pl
 
 patterns
- hasCentralPackageRepository? false
  hasComments? true
 
 wikipedia https://en.wikipedia.org/wiki/Scilab
@@ -43,3 +42,4 @@ isOpenSource true
 rosettaCode Scilab
 
 jupyterKernel https://github.com/calysto/scilab_kernel
+centralPackageRepositoryCount 0

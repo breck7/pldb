@@ -3,7 +3,6 @@ appeared 2010
 type pl
 
 patterns
- hasCentralPackageRepository? false
  hasComments? true
 
 wikipedia https://en.wikipedia.org/wiki/Fancy_(programming_language)
@@ -35,3 +34,5 @@ wordRank 6823
 isOpenSource true
 
 rosettaCode Fancy
+
+centralPackageRepositoryCount 0

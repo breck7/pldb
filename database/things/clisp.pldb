@@ -2,9 +2,6 @@ title CLISP
 appeared 1973
 type pl
 
-patterns
- hasCentralPackageRepository? false
-
 wikipedia https://en.wikipedia.org/wiki/CLISP
  related common-lisp unix c
  summary In computing, CLISP is an implementation of the programming language Common Lisp originally developed by Bruno Haible and Michael Stoll for the Atari ST. Today it supports the Unix and Microsoft Windows  operating systems. CLISP includes an interpreter, a bytecode compiler, debugger, socket interface, high-level foreign language interface, strong internationalization support, and two object systems: Common Lisp Object System (CLOS) and metaobject protocol (MOP). It is written in C and Common Lisp. It is now part of the GNU Project and is free software, available under the terms of the GNU General Public License (GPL).
@@ -22,3 +19,5 @@ tryItOnline clisp
 isOpenSource true
 
 hopl 604
+
+centralPackageRepositoryCount 0

@@ -2,9 +2,6 @@ title X86
 appeared 1978
 type isa
 
-patterns
- hasCentralPackageRepository? false
-
 wikipedia https://en.wikipedia.org/wiki/X86
  related ia-32 mmx arm opencl x86-assembly linux solaris sparc powerpc
  summary x86 is a family of backward-compatible instruction set architectures based on the Intel 8086 CPU and its Intel 8088 variant. The 8086 was introduced in 1978 as a fully 16-bit extension of Intel's 8-bit-based 8080 microprocessor, with memory segmentation as a solution for addressing more memory than can be covered by a plain 16-bit address. The term "x86" came into being because the names of several successors to Intel's 8086 processor end in "86", including the 80186, 80286, 80386 and 80486 processors. Many additions and extensions have been added to the x86 instruction set over the years, almost consistently with full backward compatibility. The architecture has been implemented in processors from Intel, Cyrix, AMD, VIA and many other companies; there are also open implementations, such as the Zet SoC platform. Nevertheless, of those, only Intel, AMD, and VIA hold x86 architectural licenses, and are producing modern 64-bit designs.The term is not synonymous with IBM PC compatibility, as this implies a multitude of other computer hardware; embedded systems, as well as general-purpose computers, used x86 chips before the PC-compatible market started, some of them before the IBM PC (1981) itself. As of 2018, the majority of personal computers and laptops sold are based on the x86 architecture, while other categories—especially high-volume mobile categories such as smartphones or tablets—are dominated by ARM; at the high end, x86 continues to dominate compute-intensive workstation and cloud computing segments.
@@ -17,3 +14,4 @@ wikipedia https://en.wikipedia.org/wiki/X86
 
 status historical
 fileType na
+centralPackageRepositoryCount 0

@@ -3,7 +3,6 @@ appeared 1974
 type queryLanguage
 
 patterns
- hasCentralPackageRepository? false
  hasComments? true
  hasLineComments? true
   -- A comment
@@ -69,3 +68,4 @@ stackOverflowSurvey
   medianSalary 56228
   fans 26631
   percentageUsing 0.47
+centralPackageRepositoryCount 0

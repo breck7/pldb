@@ -2,9 +2,6 @@ title RAML
 appeared 2013
 type textMarkup
 
-patterns
- hasCentralPackageRepository? false
-
 githubLanguage RAML
  fileExtensions raml
  trendingProjectsCount 0
@@ -71,3 +68,4 @@ status active
 fileType text
 isOpenSource true
 languageServerProtocolProject https://github.com/raml-org/raml-language-server
+centralPackageRepositoryCount 0

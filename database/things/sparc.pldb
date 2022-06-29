@@ -2,9 +2,6 @@ title SPARC
 appeared 1987
 type isa
 
-patterns
- hasCentralPackageRepository? false
-
 wikipedia https://en.wikipedia.org/wiki/SPARC
  related mips ml lisp solaris freebsd linux verilog systemverilog
  summary SPARC, for Scalable Processor Architecture, is a reduced instruction set computing (RISC) instruction set architecture (ISA) originally developed by Sun Microsystems. Its design was strongly influenced by the experimental Berkeley RISC system developed in the early 1980s. First released in 1987, SPARC was one of the most successful early commercial RISC systems, and its success led to the introduction of similar RISC designs from a number of vendors through the 1980s and 90s. The first implementation of the original 32-bit architecture (SPARC V7) was used in Sun's Sun-4 workstation and server systems, replacing their earlier Sun-3 systems based on the Motorola 68000 series of processors. SPARC V8 added a number of improvements that were part of the SuperSPARC series of processors released in 1992. SPARC V9, released in 1993, introduced a 64-bit architecture and was first released in Sun's UltraSPARC processors in 1995. Later, SPARC processors were used in SMP and CC-NUMA servers produced by Sun, Solbourne and Fujitsu, among others. The design was turned over to the SPARC International trade group in 1989, and since then its architecture has been developed by its members. SPARC International is also responsible for licensing and promoting the SPARC architecture, managing SPARC trademarks (including SPARC, which it owns), and providing conformance testing. SPARC International was intended to grow the SPARC architecture to create a larger ecosystem; SPARC has been licensed to several manufacturers, including Atmel, Bipolar Integrated Technology, Cypress Semiconductor, Fujitsu, Matsushita and Texas Instruments. Due to SPARC International, SPARC is fully open, non-proprietary and royalty-free. By September 2017, the latest commercial high-end SPARC processors are Fujitsu's SPARC64 XII (introduced in 2017 for its SPARC M12 server) and SPARC64 XIfx (introduced in 2015 for its PRIMEHPC FX100 supercomputer); and Oracle's SPARC M8 (introduced in September 2017 for its high-end servers). On Friday, September 1, 2017, after a round of layoffs that started in Oracle Labs in November of 2016, Oracle finally killed off SPARC design after the completion of the M8. Nearly the entire processor core development group in Austin was let go, and the same for the SOC teams in California and Burlington.
@@ -18,3 +15,4 @@ wikipedia https://en.wikipedia.org/wiki/SPARC
 status historical
 fileType na
 wordRank 9263
+centralPackageRepositoryCount 0

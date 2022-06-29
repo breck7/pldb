@@ -2,9 +2,6 @@ title M2001
 appeared 2001
 type pl
 
-patterns
- hasCentralPackageRepository? false
-
 wikipedia https://en.wikipedia.org/wiki/M2001
  example
   matrix polynomial rationomial                    stack queue list
@@ -38,3 +35,5 @@ country US
 fileType text
 
 hopl 7622
+
+centralPackageRepositoryCount 0

@@ -2,9 +2,6 @@ title Pod
 appeared 1997
 type textMarkup
 
-patterns
- hasCentralPackageRepository? false
-
 wikipedia https://en.wikipedia.org/wiki/Plain_Old_Documentation
  example
   =head1 NAME
@@ -85,3 +82,4 @@ reference https://groups.google.com/forum/#!search/%22Plain$20Old$20Documentatio
 status active
 fileType text
 wordRank 9791
+centralPackageRepositoryCount 0

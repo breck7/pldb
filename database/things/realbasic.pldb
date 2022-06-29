@@ -2,9 +2,6 @@ title Xojo
 appeared 1996
 type pl
 
-patterns
- hasCentralPackageRepository? false
-
 wikipedia https://en.wikipedia.org/wiki/Xojo
  example
   Dim names() As String = Array("Red Sox", "Yankees", "Orioles", "Blue Jays", "Rays")
@@ -36,3 +33,5 @@ status active
 fileType text
 
 rosettaCode REALbasic
+
+centralPackageRepositoryCount 0

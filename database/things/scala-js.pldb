@@ -2,9 +2,6 @@ title Scala.js programming language
 appeared 2013
 type pl
 
-patterns
- hasCentralPackageRepository? false
-
 wikipedia https://en.wikipedia.org/wiki/Scala.js_(programming_language)
  example
   val urls = List("https://scala-lang.org",  "https://github.com/scala/scala")
@@ -39,3 +36,4 @@ status active
 fileType text
 compilesTo javascript
 isOpenSource true
+centralPackageRepositoryCount 0

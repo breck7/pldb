@@ -2,9 +2,6 @@ title General Purpose Simulation System
 appeared 1960
 type pl
 
-patterns
- hasCentralPackageRepository? false
-
 wikipedia https://en.wikipedia.org/wiki/GPSS
  example
   FACILITY           AVERAGE           NUMBER         AVERAGE         SEIZING      PREEMPTING 
@@ -30,3 +27,5 @@ country US
 fileType text
 
 hopl 141
+
+centralPackageRepositoryCount 0

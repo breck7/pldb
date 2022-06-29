@@ -2,9 +2,6 @@ title Tuple space
 appeared 1988
 type pl
 
-patterns
- hasCentralPackageRepository? false
-
 wikipedia https://en.wikipedia.org/wiki/Tuple_space
  example
   // Client
@@ -28,3 +25,5 @@ wikipedia https://en.wikipedia.org/wiki/Tuple_space
 status historical
 
 hopl 1443
+
+centralPackageRepositoryCount 0

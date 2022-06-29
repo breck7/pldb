@@ -2,9 +2,6 @@ title Short Code computer language
 appeared 1949
 type pl
 
-patterns
- hasCentralPackageRepository? false
-
 wikipedia https://en.wikipedia.org/wiki/Short_Code_(computer_language)
  example
   X3 =  (  X1 +  Y1 )  /  X1 * Y1   substitute variables
@@ -24,3 +21,5 @@ wikipedia https://en.wikipedia.org/wiki/Short_Code_(computer_language)
 status historical
 
 hopl 2707
+
+centralPackageRepositoryCount 0

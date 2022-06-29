@@ -23,9 +23,6 @@ example
    }
  }
 
-patterns
- hasCentralPackageRepository? false
-
 description Logos is a component of the Theos development suite that allows method hooking code to be written easily and clearly, using a set of special preprocessor directives. Theos is a cross-platform suite of development tools for managing, developing, and deploying iOS software without the use of Xcode. It is an important tool for people building extensions (tweaks) for jailbroken iOS; most extension developers use Theos.
 
 githubLanguage Logos
@@ -50,3 +47,4 @@ reference https://github.com/DHowett/theos-logos-examples
 status active
 fileType text
 wordRank 3920
+centralPackageRepositoryCount 0

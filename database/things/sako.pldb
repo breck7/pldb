@@ -2,9 +2,6 @@ title System Automatycznego Kodowania Operacji
 appeared 1960
 type pl
 
-patterns
- hasCentralPackageRepository? false
-
 wikipedia https://en.wikipedia.org/wiki/SAKO_(programming_language)
  example
   K) PROGRAM DRUKUJE NAPIS HELLO WORLD
@@ -28,3 +25,4 @@ fileType text
 hopl 2178
 
 nativeLanguage Polish
+centralPackageRepositoryCount 0

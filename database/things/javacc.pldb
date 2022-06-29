@@ -2,9 +2,6 @@ title JavaCC
 appeared 1996
 type grammarLanguage
 
-patterns
- hasCentralPackageRepository? false
-
 wikipedia https://en.wikipedia.org/wiki/JavaCC
  related java yacc lex beanshell lucene-query-syntax antlr coco-r
  summary JavaCC (Java Compiler Compiler) is an open source parser generator and lexical analyzer generator written in the Java programming language. JavaCC is similar to yacc in that it generates a parser from a formal grammar written in EBNF notation. Unlike yacc, however, JavaCC generates top-down parsers. JavaCC can resolve choices based on the next k input tokens, and so can handle LL(k) grammars automatically; by use of "lookahead specifications", it can also resolve choices requiring unbounded look ahead. JavaCC also generates lexical analyzers in a fashion similar to lex. The tree builder that accompanies it, JJTree, constructs its trees from the bottom up. JavaCC is licensed under a BSD license.
@@ -21,3 +18,4 @@ fileType text
 isOpenSource true
 linkedInSkill javacc
  2018 528
+centralPackageRepositoryCount 0

@@ -2,9 +2,6 @@ title Mortran
 appeared 1973
 type pl
 
-patterns
- hasCentralPackageRepository? false
-
 wikipedia https://en.wikipedia.org/wiki/Mortran
  example
   I = SQRT(X/2.0)
@@ -20,3 +17,4 @@ wikipedia https://en.wikipedia.org/wiki/Mortran
  appeared 2008
 
 status historical
+centralPackageRepositoryCount 0

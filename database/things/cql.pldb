@@ -2,9 +2,6 @@ title cql
 appeared 1998
 type pl
 
-patterns
- hasCentralPackageRepository? false
-
 wikipedia https://en.wikipedia.org/wiki/CQL
  related cypher
  summary As an abbreviation, CQL can refer to:  Chess Query Language, a query language for interrogating chess databases Contextual Query Language (or common query language), for information retrieval Cassandra Query Language, for Apache Cassandra Classora Query Language, for Classora Knowledge Base CIM Query Language, a query language for the Common Information Model (CIM) standard from the Distributed Management Task Force (DMTF) Cypher Query Language a declarative graph query language that allows for expressive and efficient querying and updating of a property graph.
@@ -17,3 +14,5 @@ reference https://semanticscholar.org/paper/20a10f4140ae568527c3de5603300e7b1ec6
 status historical
 
 hopl 5568
+
+centralPackageRepositoryCount 0

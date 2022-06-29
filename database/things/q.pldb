@@ -3,9 +3,6 @@ appeared 2003
 type pl
 creators Arthur Whitney
 
-patterns
- hasCentralPackageRepository? false
-
 wikipedia https://en.wikipedia.org/wiki/Q_(programming_language_from_Kx_Systems)
  example
   q)select from t where name like "ja*",age>50
@@ -84,3 +81,4 @@ rosettaCode Q
 corporateDevelopers Kx Systems
 jupyterKernel https://github.com/jvictorchen/IKdbQ
 jupyterKernel https://github.com/newtux/KdbQ_kernel
+centralPackageRepositoryCount 0

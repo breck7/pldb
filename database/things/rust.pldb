@@ -4,7 +4,6 @@ type pl
 creators Graydon Hoare
 
 patterns
- hasCentralPackageRepository? true
  hasComments? true
   // https://doc.rust-lang.org/reference/comments.html
   // a comment

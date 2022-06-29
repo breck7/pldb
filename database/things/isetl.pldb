@@ -2,9 +2,6 @@ title ISETL
 appeared 1989
 type pl
 
-patterns
- hasCentralPackageRepository? false
-
 wikipedia https://en.wikipedia.org/wiki/ISETL_%28programming_language%29
  example
   procedure factorial(n); -- calculates the factorial n!
@@ -23,3 +20,5 @@ reference https://semanticscholar.org/paper/32550542f523856c16c49b66b1251485e7fe
 status historical
 
 hopl 2123
+
+centralPackageRepositoryCount 0

@@ -2,9 +2,6 @@ title ELLA
 appeared 1979
 type pl
 
-patterns
- hasCentralPackageRepository? false
-
 wikipedia https://en.wikipedia.org/wiki/ELLA_%28programming_language%29
  example
   MAC ZIP = ([INT n]TYPE t: vector1 vector2) -> [n][2]t:
@@ -62,3 +59,5 @@ wikipedia https://en.wikipedia.org/wiki/ELLA_%28programming_language%29
 status historical
 
 hopl 847
+
+centralPackageRepositoryCount 0

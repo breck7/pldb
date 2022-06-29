@@ -2,9 +2,6 @@ title UBASIC
 appeared 1991
 type pl
 
-patterns
- hasCentralPackageRepository? false
-
 wikipedia https://en.wikipedia.org/wiki/UBASIC
  example
   10   CONSOLE:CONSOLE 1,24,0:LOCATE 1,0
@@ -49,3 +46,5 @@ tryItOnline ubasic
 isOpenSource true
 
 hopl 1666
+
+centralPackageRepositoryCount 0

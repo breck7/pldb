@@ -2,9 +2,6 @@ title Esterel
 appeared 1980
 type pl
 
-patterns
- hasCentralPackageRepository? false
-
 wikipedia https://en.wikipedia.org/wiki/Esterel
  example
   module ABRO:
@@ -33,3 +30,4 @@ fileType text
 hopl 1081
 
 jupyterKernel https://github.com/abingham/jupyter-elm-kernel
+centralPackageRepositoryCount 0

@@ -2,9 +2,6 @@ title XPL
 appeared 1967
 type pl
 
-patterns
- hasCentralPackageRepository? false
-
 wikipedia https://en.wikipedia.org/wiki/XPL
  related pl-i fortran cobol algol systemz c java bcpl pl360 yacc hal-s freebsd linux pl-m
  summary XPL is a programming language based on PL/I, a portable one-pass compiler written in its own language, and a parser generator tool for easily implementing similar compilers for other languages. XPL was designed in 1967 as a way to teach compiler design principles and as starting point for students to build compilers for their own languages. XPL was designed and implemented by William McKeeman and David B. Wortman at University of California, Santa Cruz and James J. Horning and others at Stanford University. XPL was first announced at the 1968 Fall Joint Computer Conference. The methods and compiler are described in detail in the 1971 textbook A Compiler Generator. They called the combined work a 'compiler generator'. But that implies little or no language- or target-specific programming is required to build a compiler for a new language or new target. A better label for XPL is a translator writing system. It helps to write a compiler with less new or changed programming code.
@@ -22,3 +19,5 @@ fileType text
 tiobe XPL
 
 hopl 308
+
+centralPackageRepositoryCount 0

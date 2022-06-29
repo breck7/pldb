@@ -2,9 +2,6 @@ title Ruby Document format
 appeared 1995
 type textMarkup
 
-patterns
- hasCentralPackageRepository? false
-
 wikipedia https://en.wikipedia.org/wiki/Ruby_Document_format
  example
   here.is_a?(Piece::Of::Code)
@@ -23,3 +20,4 @@ wikipedia https://en.wikipedia.org/wiki/Ruby_Document_format
 
 status historical
 fileType text
+centralPackageRepositoryCount 0

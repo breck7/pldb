@@ -10,9 +10,6 @@ example
     (f(x-1)*x)
  )
 
-patterns
- hasCentralPackageRepository? false
-
 wikipedia https://en.wikipedia.org/wiki/Genius_(mathematics_software)
  example
   function f(x) = (
@@ -39,3 +36,5 @@ isOpenSource true
 quineRelay GEL (Genius)
 
 ubuntuPackage genius
+
+centralPackageRepositoryCount 0

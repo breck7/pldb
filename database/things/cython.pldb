@@ -2,9 +2,6 @@ title Cython
 appeared 2007
 type pl
 
-patterns
- hasCentralPackageRepository? false
-
 wikipedia https://en.wikipedia.org/wiki/Cython
  example
   In [1]: %load_ext Cython
@@ -51,3 +48,4 @@ website http://cython.org
 status active
 fileType text
 isOpenSource true
+centralPackageRepositoryCount 0

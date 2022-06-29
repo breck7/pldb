@@ -2,9 +2,6 @@ title zig
 appeared 2015
 type pl
 
-patterns
- hasCentralPackageRepository? false
-
 description A programming language designed for robustness, optimality, and clarity.
 
 githubRepo https://github.com/ziglang/zig
@@ -26,3 +23,5 @@ fileType text
 isOpenSource true
 
 rosettaCode Zig
+
+centralPackageRepositoryCount 0

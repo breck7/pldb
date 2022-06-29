@@ -2,9 +2,6 @@ title Multi-User Forth
 appeared 1995
 type pl
 
-patterns
- hasCentralPackageRepository? false
-
 wikipedia https://en.wikipedia.org/wiki/MUF_(programming_language)
  related muf forth
  summary TinyMUCK or, more broadly, a MUCK, is a type of user-extendable online text-based role-playing game, designed for role playing and social interaction. Backronyms like "Multi-User Chat/Created/Computer/Character/Carnal Kingdom" and "Multi-User Construction Kit" are sometimes cited, but are not the actual origin of the term; "muck" is simply a play on the term MUD.
@@ -304,3 +301,5 @@ status active
 fileType text
 
 rosettaCode MUF
+
+centralPackageRepositoryCount 0

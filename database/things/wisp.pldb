@@ -6,7 +6,6 @@ example
  (alert "Hello world!")
 
 patterns
- hasCentralPackageRepository? false
  hasSemanticIndentation? true
 
 description A little Clojure-like LISP in JavaScript
@@ -100,3 +99,4 @@ website https://gozala.github.io/wisp/
 status active
 fileType text
 isOpenSource true
+centralPackageRepositoryCount 0

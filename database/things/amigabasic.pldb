@@ -2,9 +2,6 @@ title AmigaBASIC
 appeared 1985
 type pl
 
-patterns
- hasCentralPackageRepository? false
-
 wikipedia https://en.wikipedia.org/wiki/AmigaBASIC
  related basic metacomco arexx rexx assembly-language amos blitzbasic gfa-basic true-basic
  summary AmigaBASIC was an interpreted BASIC programming language implementation for the Amiga, designed and written by Microsoft.  AmigaBASIC shipped with AmigaOS versions 1.1 to 1.3. It succeeded MetaComCo's ABasiC, which was included in AmigaOS 1.0 and 1.1, and was superseded by ARexx, a REXX-style scripting language, from AmigaOS version 2.0 onwards.
@@ -16,3 +13,4 @@ wikipedia https://en.wikipedia.org/wiki/AmigaBASIC
  appeared 1987
 
 status historical
+centralPackageRepositoryCount 0

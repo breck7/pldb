@@ -2,9 +2,6 @@ title BASIC A+
 appeared 1983
 type pl
 
-patterns
- hasCentralPackageRepository? false
-
 wikipedia https://en.wikipedia.org/wiki/BASIC_A%2B
  related optimized-systems-software atari-basic turbo-basic-xl
  summary BASIC A+ was developed by Optimized Systems Software of Cupertino, California, United States, to provide the Atari 8-bit family with an extended BASIC compatible with, but faster than, the simpler ROM-based Atari BASIC. While Atari BASIC came on an 8 KB ROM cartridge, BASIC A+ was delivered on floppy disk and took 15 KB of the computer's RAM, leaving 23 KB available for user programs in a 48 KB Atari 800. BASIC A+ was offered at a price of US$80.00 in 1983, including the products OS/A+ and EASMD (Editor/Assembler), and being an extension of Atari BASIC, came with a supplement to the latter's reference manual as its documentation. In addition to being faster than its ROM-bound counterpart, BASIC A+ provided a number of extra commands for DOS operations, player/missile graphics, and debugging.
@@ -16,3 +13,4 @@ wikipedia https://en.wikipedia.org/wiki/BASIC_A%2B
  appeared 1983
 
 status historical
+centralPackageRepositoryCount 0

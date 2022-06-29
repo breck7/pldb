@@ -2,9 +2,6 @@ title Spice Lisp
 appeared 1980
 type pl
 
-patterns
- hasCentralPackageRepository? false
-
 wikipedia https://en.wikipedia.org/wiki/Spice_Lisp
  related pascal c ada common-lisp
  summary Spice Lisp is a Lisp dialect and its implementation originally written by CMU's Spice Lisp Group which targeted the microcode of the 16-bit PERQ workstation and its Accent operating system; it used that workstation's microcode abilities (it provided microcodes for Pascal, C, and Ada besides) to implement a stack architecture to store its data structures as 32-bit objects and to enable runtime type-checking. It would later be popular on other workstations. Spice Lisp evolved into CMUCL, a Common Lisp implementation.
@@ -18,3 +15,5 @@ wikipedia https://en.wikipedia.org/wiki/Spice_Lisp
 status historical
 
 hopl 3526
+
+centralPackageRepositoryCount 0

@@ -2,9 +2,6 @@ title Nu
 appeared 2007
 type pl
 
-patterns
- hasCentralPackageRepository? false
-
 wikipedia https://en.wikipedia.org/wiki/Nu_(programming_language)
  example
   (unless @prefix
@@ -42,3 +39,4 @@ status active
 fileType text
 wordRank 7528
 isOpenSource true
+centralPackageRepositoryCount 0

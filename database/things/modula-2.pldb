@@ -4,7 +4,6 @@ type pl
 creators Niklaus Wirth
 
 patterns
- hasCentralPackageRepository? false
  hasComments? true
  hasOperatorOverloading? false
  hasGdbSupport? true
@@ -392,3 +391,5 @@ tiobe Modula-2
 hopl 817
 
 rosettaCode Modula-2
+
+centralPackageRepositoryCount 0

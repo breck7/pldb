@@ -2,9 +2,6 @@ title Java Server Pages
 appeared 1999
 type template
 
-patterns
- hasCentralPackageRepository? false
-
 wikipedia https://en.wikipedia.org/wiki/JavaServer_Pages
  example
   The value of "variable" in the object "javabean" is ${javabean.variable}.
@@ -29,3 +26,4 @@ linguistGrammarRepo https://github.com/textmate/java.tmbundle
 
 status active
 fileType text
+centralPackageRepositoryCount 0

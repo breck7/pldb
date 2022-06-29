@@ -14,9 +14,7 @@ example
  let x = 1 + 1  in x * 2   // a let expression 
  error "A"                 // error with message "A"
 
-patterns
- hasCentralPackageRepository? false
-
 description The Power Query M formula language is optimized for building highly flexible data mashup queries. It's a functional, case sensitive language similar to F#.
 reference https://docs.microsoft.com/en-us/powerquery-m/power-query-m-type-system
 status active
+centralPackageRepositoryCount 0

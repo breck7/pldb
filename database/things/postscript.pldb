@@ -3,7 +3,6 @@ appeared 1982
 type textMarkup
 
 patterns
- hasCentralPackageRepository? false
  hasComments? true
  hasPostfixNotation? true
 
@@ -103,3 +102,4 @@ ubuntuPackage ghostscript
 rosettaCode PostScript
 
 corporateDevelopers Adobe
+centralPackageRepositoryCount 0

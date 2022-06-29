@@ -2,9 +2,6 @@ title Lisp Flavored Erlang
 appeared 2008
 type pl
 
-patterns
- hasCentralPackageRepository? false
-
 wikipedia https://en.wikipedia.org/wiki/LFE_(programming_language)
  example
   (defun parse-args (flag)
@@ -190,3 +187,5 @@ fileType text
 isOpenSource true
 
 rosettaCode LFE
+
+centralPackageRepositoryCount 0

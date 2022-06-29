@@ -2,9 +2,6 @@ title Thue
 appeared 2004
 type pl
 
-patterns
- hasCentralPackageRepository? false
-
 wikipedia https://en.wikipedia.org/wiki/Thue_%28programming_language%29
  example
   1_::=1++
@@ -28,3 +25,4 @@ wikipedia https://en.wikipedia.org/wiki/Thue_%28programming_language%29
  appeared 2000
 
 status historical
+centralPackageRepositoryCount 0

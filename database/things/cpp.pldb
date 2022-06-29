@@ -63,7 +63,6 @@ patterns
  hasSingleDispatch? true
  hasBitWiseOperators? true
  hasMagicGettersAndSetters? false
- hasCentralPackageRepository? false
  hasComments? true
  hasConstructors? true
   class Foobar {
@@ -336,3 +335,4 @@ stackOverflowSurvey
   medianSalary 54049
   fans 15249
   percentageUsing 0.24
+centralPackageRepositoryCount 0

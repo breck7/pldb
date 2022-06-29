@@ -1,9 +1,8 @@
 title MASM
 type pl
 
-patterns
- hasCentralPackageRepository? false
-
 reference http://www.visualmasm.com/
 
 hopl 2212
+
+centralPackageRepositoryCount 0

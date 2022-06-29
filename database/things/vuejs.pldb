@@ -2,9 +2,6 @@ title Vue
 appeared 2014
 type textMarkup
 
-patterns
- hasCentralPackageRepository? false
-
 wikipedia https://en.wikipedia.org/wiki/Vue.js
  example
   <div id="app">
@@ -102,3 +99,4 @@ isOpenSource true
 languageServerProtocolProject https://github.com/vuejs/vetur
  writtenIn typescript
 packageRepository https://curated.vuejs.org/
+centralPackageRepositoryCount 0

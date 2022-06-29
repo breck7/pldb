@@ -3,7 +3,6 @@ appeared 1999
 type pl
 
 patterns
- hasCentralPackageRepository? false
  hasComments? true
 
 wikipedia https://en.wikipedia.org/wiki/AutoIt
@@ -83,3 +82,5 @@ projectEuler AutoIt
   2022 12
 
 rosettaCode AutoIt
+
+centralPackageRepositoryCount 0

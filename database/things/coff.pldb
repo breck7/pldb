@@ -2,9 +2,6 @@ title Common Object File Format
 appeared 1983
 type binaryExecutable
 
-patterns
- hasCentralPackageRepository? false
-
 wikipedia https://en.wikipedia.org/wiki/COFF
  related unix elf c
  summary The Common Object File Format (COFF) is a format for executable, object code, and shared library computer files used on Unix systems. It was introduced in Unix System V, replaced the previously used a.out format, and formed the basis for extended specifications such as XCOFF and ECOFF, before being largely replaced by ELF, introduced with SVR4. COFF and its variants continue to be used on some Unix-like systems, on Microsoft Windows, in EFI environments and in some embedded development systems.
@@ -18,3 +15,4 @@ wikipedia https://en.wikipedia.org/wiki/COFF
 standsFor Common Object File Format
 status historical
 fileType binary
+centralPackageRepositoryCount 0

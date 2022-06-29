@@ -3,7 +3,6 @@ appeared 2011
 type pl
 
 patterns
- hasCentralPackageRepository? false
  hasTypeInference? true
 
 wikipedia https://en.wikipedia.org/wiki/Frege_(programming_language)
@@ -110,3 +109,5 @@ projectEuler Frege
   2022 3
 
 rosettaCode Frege
+
+centralPackageRepositoryCount 0

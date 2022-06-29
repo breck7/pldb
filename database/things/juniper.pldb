@@ -2,9 +2,6 @@ title juniper
 appeared 2016
 type pl
 
-patterns
- hasCentralPackageRepository? false
-
 description <a href='http://www.juniper-lang.org/'>Juniper</a> is a functional reactive programming language for the Arduino and other related platforms.
 
 githubRepo https://github.com/calebh/Juniper
@@ -21,3 +18,4 @@ website http://www.juniper-lang.org/
 status active
 fileType text
 isOpenSource true
+centralPackageRepositoryCount 0

@@ -2,9 +2,6 @@ title fmj
 appeared 2003
 type pl
 
-patterns
- hasCentralPackageRepository? false
-
 description Full Metal Jacket is very different from other programming languages. It's intrinsically parallel, with no flow of control, and has no variables. Programs are composed almost entirely with the mouse rather than keyboard, and type inference and other checks take place while you edit your program.
  
  There are a few other visual dataflow languages out there, but Full Metal Jacket is simpler than them, and has a cleaner design. Full Metal Jacket is general-purpose, though it might in due course find a niche.
@@ -13,3 +10,4 @@ description Full Metal Jacket is very different from other programming languages
 website http://www.fmjlang.co.uk/fmj/FMJ.html
 reference http://www.fmjlang.co.uk/fmj/fmj2.pdf
 status historical
+centralPackageRepositoryCount 0

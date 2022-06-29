@@ -5,7 +5,6 @@ creators Lee Byron
 
 patterns
  hasBooleans? true
- hasCentralPackageRepository? false
  hasEnums? true
   enum Episode {
     NEWHOPE
@@ -138,3 +137,4 @@ languageServerProtocolProject https://github.com/graphql/graphql-language-servic
  writtenIn javascript
 languageServerProtocolProject https://github.com/Mayank1791989/gql-language-server
  writtenIn javascript
+centralPackageRepositoryCount 0

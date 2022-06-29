@@ -3,7 +3,6 @@ appeared 1976
 type pl
 
 patterns
- hasCentralPackageRepository? false
  hasComments? true
  hasBlockComments? true
    /* For example 1 use: x=abc;
@@ -91,3 +90,4 @@ rosettaCode SAS
 
 lineCommentKeyword *
 jupyterKernel https://github.com/sassoftware/sas_kernel
+centralPackageRepositoryCount 0

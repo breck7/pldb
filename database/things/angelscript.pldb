@@ -2,9 +2,6 @@ title Angelscript
 appeared 2003
 type pl
 
-patterns
- hasCentralPackageRepository? false
-
 wikipedia https://en.wikipedia.org/wiki/AngelScript
  related eclipse-editor
  summary AngelScript is a game-oriented interpreted compiled scripting language. AngelScript features static typing, object handles (similar to C++ pointers but garbage collected via reference counting), object-orientation, single inheritance, multiple inheritance with interfaces. Allows operators to be registered and overloaded. AngelScript can be used with any C++ IDE, such as Netbeans, Geany, Eclipse, and also supported by AngelJuice IDE developed specifically for the language. C and C++ functions can be called within an AngelScript environment. AngelScript's class syntax closely follows C++ classes by design: no proxy functions are required to embed AngelScript in C++ applications easing the two languages integration. There are several differences of AngelScript and C++: AngelScript does not support multiple inheritance. Multiple-inheritance functionality may be achieved with Interfaces. It is impossible to declare methods or properties outside of the class body. All methods (including constructors and destructors) are virtual. AngelScript is used in video game development, including Amnesia: The Dark Descent, Amy, Dustforce, Gekkeiju Online, King Arthur's Gold, Legend of the Guardians: The Owls of Ga'Hoole, Overgrowth, Penumbra: Overture, Penumbra: Requiem, Puddle, Rigs of Rods, Sine Mora, Star Ruler, SuperTuxKart, Warhammer: Mark of Chaos, Warsow, Urho3D. AngelScript is used at the University of Ulm in interactive 3D-Animation program. AngelScript is also used in robotics, for example, to program behavioral rules of robotic agents.
@@ -119,3 +116,4 @@ tiobe Angelscript
 rosettaCode AngelScript
 
 keywords and abstract* auto bool break case cast class const continue default do double else enum false final* float for from* funcdef get* if import in inout int interface int8 int16 int32 int64 is mixin namespace not null or out override* private protected return set* shared* super* switch this* true typedef uint uint8 uint16 uint32 uint64 void while xor * ** / % + - <= < >= > ( ) == != ? : = += -= *= /= %= **= ++ -- & , { } ; | ^ ~ << >> >>> &= |= ^= <<= >>= >>>= . && || ! [ ] ^^ @ !is :: 123456789 123.123e123 123.123e123f 0x1234FEDC 0d123987 0o1276 0b1010 'abc' "abc" """heredoc""" _Abc123 // /* */
+centralPackageRepositoryCount 0

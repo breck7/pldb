@@ -5,9 +5,6 @@ type queryLanguage
 example
  g.V().hasLabel('movie').values('year').min()
 
-patterns
- hasCentralPackageRepository? false
-
 wikipedia https://en.wikipedia.org/wiki/Gremlin_(programming_language)
  example
   g.V().match(
@@ -30,3 +27,4 @@ wikipedia https://en.wikipedia.org/wiki/Gremlin_(programming_language)
 status active
 fileType text
 isOpenSource true
+centralPackageRepositoryCount 0

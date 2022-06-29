@@ -2,9 +2,6 @@ title egel
 appeared 2016
 type interpreter
 
-patterns
- hasCentralPackageRepository? false
-
 description <a href='https://egel-lang.github.io/'>Egel</a> An interpreter for eager untyped combinator rewriting implemented in C++.
 
 githubRepo https://github.com/egel-lang/egel
@@ -26,3 +23,5 @@ fileType text
 isOpenSource true
 
 rosettaCode Egel
+
+centralPackageRepositoryCount 0

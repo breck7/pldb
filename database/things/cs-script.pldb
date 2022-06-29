@@ -2,9 +2,6 @@ title CS-Script
 appeared 2004
 type pl
 
-patterns
- hasCentralPackageRepository? false
-
 wikipedia https://en.wikipedia.org/wiki/CS-Script
  related boo visual-studio-editor
  summary CS-Script (www.csscript.net) is a CLR (Common Language Runtime) based scripting system which uses ECMA-compliant C# as a programming language. CS-Script currently targets Microsoft implementation of CLR (.NET 2.0/3.0/3.5/4.0) and with full support for Mono. CS-Script as well as a few other .NET languages (e.g. Boo) is a statically typed language and it allows unlimited access to .NET/CLR functionality with plain vanilla C# syntax. CS-Script as a scripting environment offers stand alone script execution as well as hosting the script engine from CLR application. Because of statically typed nature of the script execution CS-Script demonstrates no performance degradation comparing to the compiled managed binaries. Existing .NET development tools (e.g. MS Visual Studio, Sharp Develop) can be used, allowing editing and debugging scripts within traditional .NET Development environment. In addition to this in 2013 an Open Source CS-Script plugin for Notepad++ has been made publicly available. CS-Script has been used in a number of open-source and proprietary products of different scale and complexity (e.g. FlashDevelop, MediaPortal). CS-Script is released under the custom "liberal" license, which is allows free commercial use and free access to the source code.
@@ -16,3 +13,4 @@ wikipedia https://en.wikipedia.org/wiki/CS-Script
  appeared 2013
 
 status historical
+centralPackageRepositoryCount 0

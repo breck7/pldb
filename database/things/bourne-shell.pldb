@@ -5,7 +5,6 @@ type pl
 patterns
  canDoShebang? true
   #!/bin/sh -x
- hasCentralPackageRepository? false
  hasHereDocs? true
 
 wikipedia https://en.wikipedia.org/wiki/Bourne_shell
@@ -29,3 +28,5 @@ projectEuler Bourne Shell
   2022 85
 
 hopl 3931
+
+centralPackageRepositoryCount 0

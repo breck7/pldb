@@ -2,9 +2,6 @@ title Speakeasy computational environment
 appeared 2006
 type pl
 
-patterns
- hasCentralPackageRepository? false
-
 wikipedia https://en.wikipedia.org/wiki/Speakeasy_(computational_environment)
  example
   $ In the following statement 
@@ -33,3 +30,5 @@ status historical
 fileType text
 
 hopl 660
+
+centralPackageRepositoryCount 0

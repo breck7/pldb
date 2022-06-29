@@ -2,9 +2,6 @@ title MiniD
 appeared 2006
 type pl
 
-patterns
- hasCentralPackageRepository? false
-
 wikipedia https://en.wikipedia.org/wiki/MiniD
  example
   function first(x: array|string) = x[0]
@@ -28,3 +25,4 @@ githubLanguage MiniD
 website http://www.dsource.org/projects/minid
 status active
 fileType text
+centralPackageRepositoryCount 0

@@ -2,9 +2,6 @@ title RDoc
 appeared 2004
 type textMarkup
 
-patterns
- hasCentralPackageRepository? false
-
 wikipedia https://en.wikipedia.org/wiki/RDoc
  related ruby-document-format
  summary RDoc, designed by Dave Thomas, is an embedded documentation generator for the Ruby programming language. It analyzes Ruby source code, generating a structured collection of pages for Ruby objects and methods. Code comments can be added in a natural style. RDoc is included as part of the Ruby core distribution. The RDoc software and format are successors to the Ruby Document format (with associated software RD). RDoc can produce usable documentation even if the target source code does not contain explicit comments as it will still parse the classes, modules, and methods, and list them in the generated API files. RDoc also provides the engine for creating Ruby ri data files, providing access to API information from the command line. RDoc and ri are currently maintained by Eric Hodel and Ryan Davis.
@@ -161,3 +158,4 @@ website https://ruby.github.io/rdoc/
 status active
 fileType text
 isOpenSource true
+centralPackageRepositoryCount 0

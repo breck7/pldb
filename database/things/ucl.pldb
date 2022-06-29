@@ -23,9 +23,6 @@ example
      }
  }
 
-patterns
- hasCentralPackageRepository? false
-
 githubRepo https://github.com/vstakhov/libucl
  stars 995
  forks 93
@@ -40,3 +37,4 @@ standsFor universal configuration language
 status active
 fileType text
 isOpenSource true
+centralPackageRepositoryCount 0

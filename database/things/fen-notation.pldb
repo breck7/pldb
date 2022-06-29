@@ -5,9 +5,6 @@ type notation
 example
  rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1
 
-patterns
- hasCentralPackageRepository? false
-
 wikipedia https://en.wikipedia.org/wiki/Forsyth–Edwards_Notation
  example
   rnbqkbnr/pp1ppppp/8/2p5/4P3/5N2/PPPP1PPP/RNBQKB1R b KQkq - 1 2
@@ -18,3 +15,4 @@ wikipedia https://en.wikipedia.org/wiki/Forsyth–Edwards_Notation
 
 status historical
 fileType paper
+centralPackageRepositoryCount 0

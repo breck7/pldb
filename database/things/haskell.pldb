@@ -26,7 +26,6 @@ patterns
   class Functor f where
      fmap :: (a -> b) -> f a -> f b
      (<$) :: a -> f b -> f a
- hasCentralPackageRepository? true
  hasComments? true
    -- a single line comment
    {- A multiline comment

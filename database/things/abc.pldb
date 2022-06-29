@@ -3,7 +3,6 @@ appeared 1980
 type pl
 
 patterns
- hasCentralPackageRepository? false
  hasSemanticIndentation? true
 
 wikipedia https://en.wikipedia.org/wiki/ABC_(programming_language)
@@ -40,3 +39,5 @@ wordRank 4100
 tiobe ABC
 
 hopl 1290
+
+centralPackageRepositoryCount 0

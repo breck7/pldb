@@ -3,7 +3,6 @@ appeared 1983
 type pl
 
 patterns
- hasCentralPackageRepository? false
  hasHereDocs? true
 
 wikipedia https://en.wikipedia.org/wiki/KornShell
@@ -23,3 +22,5 @@ fileType text
 tiobe Korn shell
 
 hopl 3481
+
+centralPackageRepositoryCount 0

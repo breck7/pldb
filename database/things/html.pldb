@@ -3,7 +3,6 @@ appeared 1991
 type textMarkup
 
 patterns
- hasCentralPackageRepository? false
  hasImports? false
  hasLineComments? false
  hasComments? true
@@ -108,3 +107,4 @@ stackOverflowSurvey
   medianSalary 52980
   fans 29353
   percentageUsing 0.55
+centralPackageRepositoryCount 0

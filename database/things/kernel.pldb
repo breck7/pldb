@@ -2,11 +2,9 @@ title kernel
 appeared 2009
 type pl
 
-patterns
- hasCentralPackageRepository? false
-
 description Kernel is a conservative, Scheme-like dialect of Lisp in which everything is a first-class object.
 website https://web.cs.wpi.edu/~jshutt/kernel.html
 reference https://bitbucket.org/AndresNavarro/klisp
 aka klisp
 status active
+centralPackageRepositoryCount 0

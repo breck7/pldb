@@ -2,9 +2,6 @@ title X10
 appeared 2004
 type pl
 
-patterns
- hasCentralPackageRepository? false
-
 wikipedia https://en.wikipedia.org/wiki/X10_(programming_language)
  related linux java chapel fortress unified-parallel-c
  summary X10 is a programming language being developed by IBM at the Thomas J. Watson Research Center as part of the Productive, Easy-to-use, Reliable Computing System (PERCS) project funded by DARPA's High Productivity Computing Systems (HPCS) program. Its primary authors are Kemal Ebcioğlu, Vijay Saraswat, Saravanan Arumugam, and Vivek Sarkar. X10 is designed specifically for parallel computing using the partitioned global address space (PGAS) model. A computation is divided among a set of places, each of which holds some data and hosts one or more activities that operate on those data. It has a constrained type system for object-oriented programming, a form of dependent types. Other features include user-defined primitive struct types; globally distributed arrays, and structured and unstructured parallelism. X10 uses the concept of parent and child relationships for activities to prevent the lock stalemate that can occur when two or more processes wait for each other to finish before they can complete. An activity may spawn one or more child activities, which may themselves have children. Children cannot wait for a parent to finish, but a parent can wait for a child using the finish command.
@@ -67,3 +64,4 @@ hopl 8172
 rosettaCode X10
 
 corporateDevelopers IBM
+centralPackageRepositoryCount 0

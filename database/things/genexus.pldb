@@ -2,9 +2,6 @@ title GeneXus
 appeared 1988
 type pl
 
-patterns
- hasCentralPackageRepository? false
-
 wikipedia https://en.wikipedia.org/wiki/GeneXus
  related prolog cobol java objective-c ibm-rpg ruby visual-basic visual-foxpro postgresql mysql
  summary GeneXus is a Cross-Platform, knowledge representation-based, development tool, mainly oriented to enterprise-class applications for  Web applications, smart devices and the Microsoft Windows platform. A developer describes an application in a high-level, mostly declarative language, from which native code is generated for multiple environments. It includes a normalization module, which creates and maintains an optimal database structure based on the user views of the reality described in a declarative (rule-based) language. The languages for which code can be generated include, COBOL, Java including Android and BlackBerry smart devices, Objective-C for Apple mobile devices, RPG, Ruby, Visual Basic, and Visual FoxPro.Most popular DBMSs are supported, such as Microsoft SQL Server, Oracle, DB2, Informix, PostgreSQL and MySQL. GeneXus is developed by Uruguayan company ARTech Consultores SRL.The latest version is Genexus 16, which was released in 2018.
@@ -17,3 +14,4 @@ wikipedia https://en.wikipedia.org/wiki/GeneXus
 
 status historical
 isOpenSource false
+centralPackageRepositoryCount 0

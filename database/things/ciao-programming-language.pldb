@@ -2,9 +2,6 @@ title Ciao
 appeared 1984
 type pl
 
-patterns
- hasCentralPackageRepository? false
-
 wikipedia https://en.wikipedia.org/wiki/Ciao_%28programming_language%29
  related unix prolog c java
  summary Ciao is a general-purpose programming language which supports logic, constraint, functional, higher-order, and object-oriented programming styles. Its main design objectives are high expressive power, extensibility, safety, reliability, and efficient execution.
@@ -18,3 +15,5 @@ wikipedia https://en.wikipedia.org/wiki/Ciao_%28programming_language%29
 status historical
 
 hopl 5477
+
+centralPackageRepositoryCount 0

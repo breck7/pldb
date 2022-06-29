@@ -2,9 +2,6 @@ title APE100
 appeared 1995
 type pl
 
-patterns
- hasCentralPackageRepository? false
-
 wikipedia https://en.wikipedia.org/wiki/APE100
  summary APE100 was a family of SIMD supercomputers developed by the Istituto Nazionale di Fisica Nucleare (INFN) in Italy between 1989 and 1994. The systems were developed to study the structure of elementary particles by means of lattice gauge theories, especially quantum chromodynamics. APE ("ah-pei"), an acronym for Array Processor Experiment, was the collective name of several generations of massively parallel supercomputers since 1984, optimized for theoretical physics simulations. The APE machines were massively parallel 3D arrays of custom computing nodes with periodic boundary conditions. APE100 was developed at INFN in Rome and Pisa under the direction of Nicola Cabibbo. Each node was capable of 50MFLOPS so that the complete configuration with 2,048 nodes had a performance of 100GFLOPS. In 1991, it became the most powerful supercomputer in the world. A version of APE100 has been marketed by Alcatel Alenia Space under the name of Quadrics. After 1994 the project at INFN was continued with the new names APEmille and ApeNext.
  created 2011
@@ -15,3 +12,4 @@ wikipedia https://en.wikipedia.org/wiki/APE100
  appeared 1984
 
 status historical
+centralPackageRepositoryCount 0

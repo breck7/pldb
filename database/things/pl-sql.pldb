@@ -2,9 +2,6 @@ title PL/SQL
 appeared 1991
 type pl
 
-patterns
- hasCentralPackageRepository? false
-
 wikipedia https://en.wikipedia.org/wiki/PL/SQL
  example
   DECLARE
@@ -77,3 +74,4 @@ antlr https://github.com/antlr/grammars-v4/tree/master/plsql
 corporateDevelopers Oracle
 indeedJobs pl/sql developer
  2017 2972
+centralPackageRepositoryCount 0

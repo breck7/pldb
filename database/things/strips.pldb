@@ -2,9 +2,6 @@ title Strips
 appeared 1969
 type pl
 
-patterns
- hasCentralPackageRepository? false
-
 wikipedia https://en.wikipedia.org/wiki/STRIPS
  example
   Actions:
@@ -44,3 +41,5 @@ status historical
 wordRank 9151
 
 hopl 2413
+
+centralPackageRepositoryCount 0

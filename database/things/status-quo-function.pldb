@@ -6,9 +6,6 @@ example
  _num = 10;
  _num = _num + 20; systemChat str _num;
 
-patterns
- hasCentralPackageRepository? false
-
 githubLanguage SQF
  fileExtensions sqf hqf
  trendingProjectsCount 0
@@ -44,3 +41,4 @@ reference https://community.bistudio.com/wiki/SQF_syntax
 aka sqf
 status active
 fileType text
+centralPackageRepositoryCount 0

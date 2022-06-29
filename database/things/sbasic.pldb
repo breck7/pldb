@@ -2,9 +2,6 @@ title SBASIC
 appeared 1983
 type pl
 
-patterns
- hasCentralPackageRepository? false
-
 wikipedia https://en.wikipedia.org/wiki/SBASIC
  related smallbasic basic mbasic
  summary S-BASIC (for Structured Basic) was a "structured" BASIC variant, distributed with Kaypro CP/M systems.  It was made by Topaz Programming is distributed by Micro-Ap (San Ramon, CA).SBasic was compatible with the syntax of Basic, a programming language commonly used in the 1970s through the 1980s, as well as Fortran77.  However, the language relaxed many of the requirements of Basic and had more flexibility than Fortran.  For instance, line numbers were optional, and permitted non-numeric characters.  In addition, SBasic offered developers structured programming concepts, including recursion and nesting. Many PL-1 programs could be compiled with little modification, though SBasic did not offer an extensive function library. Among the more advanced features was the ability to "base" a variable or array, making the memory location dynamic and modifiable during execution.  SBasic programs had the ability to access memory areas reserved for the operating system unless prohibited from doing so by the operating system itself.  (Kaypro's CP/M had no such prohibitions.)  This enabled direct utilization and modification of DMA and other memory areas.  This feature also permitted a program to modify itself at run-time.  This capability also allowed modifying the instruction pointer, so a program could effectively link other executable modules that were read during execution as data. Unlike Basic interpreters that stored "p-code" that was parsed by an execution module, SBasic was a two-pass compiler, ultimately producing .com files that were executable.  The language was written in a subset of itself and compiled using a .com kernel, then stored on diskette (or hard drive on the last KayPro model).  The source was distributed with some KayPro models.  This encouraged open-source-like modification of the language, with some early pre-Internet user groups exchanging physical diskettes by regular mail. Not to be confused with the namesake SBasic (S for Spectral Basic) Programming Language for the commercial Spectral UV-Visible software.
@@ -18,3 +15,5 @@ wikipedia https://en.wikipedia.org/wiki/SBASIC
 status historical
 
 hopl 5081
+
+centralPackageRepositoryCount 0

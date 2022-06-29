@@ -11,9 +11,6 @@ example
  Remote.transfer bob
  bar x y -- happens on `bob` node
 
-patterns
- hasCentralPackageRepository? false
-
 githubRepo https://github.com/unisonweb/unison
  firstCommit 2013
  stars 1493
@@ -31,3 +28,4 @@ status active
 twitter unisonweb
 
 isOpenSource true
+centralPackageRepositoryCount 0

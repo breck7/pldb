@@ -2,9 +2,6 @@ title tidyverse
 appeared 2016
 type library
 
-patterns
- hasCentralPackageRepository? false
-
 description The tidyverse is an opinionated collection of R packages designed for data science. All packages share an underlying design philosophy, grammar, and data structures.
 
 githubRepo https://github.com/tidyverse/tidyverse
@@ -21,3 +18,4 @@ website https://www.tidyverse.org/
 status active
 fileType text
 isOpenSource true
+centralPackageRepositoryCount 0

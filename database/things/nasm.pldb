@@ -2,9 +2,6 @@ title Netwide Assembler
 appeared 1996
 type assembly
 
-patterns
- hasCentralPackageRepository? false
-
 wikipedia https://en.wikipedia.org/wiki/Netwide_Assembler
  example
   global _start
@@ -67,3 +64,4 @@ website http://www.nasm.us
 status historical
 fileType text
 isOpenSource true
+centralPackageRepositoryCount 0

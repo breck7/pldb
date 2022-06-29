@@ -17,9 +17,6 @@ example
      </ul>
  {% endblock navigation %}
 
-patterns
- hasCentralPackageRepository? false
-
 wikipedia https://en.wikipedia.org/wiki/Twig_(template_engine)
  example
   {% extends "base.html" %}
@@ -69,3 +66,5 @@ fileType text
 isOpenSource true
 
 codeMirror twig
+
+centralPackageRepositoryCount 0

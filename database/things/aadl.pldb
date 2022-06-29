@@ -2,9 +2,6 @@ title Avionics Architecture Design Language
 appeared 2003
 type pl
 
-patterns
- hasCentralPackageRepository? false
-
 wikipedia https://en.wikipedia.org/wiki/Architecture_Analysis_%26_Design_Language
  related uml
  summary The Architecture Analysis & Design Language (AADL) is an architecture description language standardized by SAE. AADL was first developed in the field of avionics, and was known formerly as the Avionics Architecture Description Language.The Architecture Analysis & Design Language is derived from MetaH, an architecture description language made by the Advanced Technology Center of Honeywell. AADL is used to model the software and hardware architecture of an embedded, real-time system. Due to its emphasis on the embedded domain, AADL contains constructs for modeling both software and hardware components (with the hardware components named "execution platform" components within the standard). This architecture model can then be used either as a design documentation, for analyses (such as schedulability and flow control) or for code generation (of the software portion), like UML.
@@ -20,3 +17,5 @@ standsFor Avionics Architecture Design Language
 status historical
 
 hopl 7771
+
+centralPackageRepositoryCount 0

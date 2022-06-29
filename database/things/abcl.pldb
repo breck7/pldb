@@ -2,9 +2,6 @@ title Actor-Based Concurrent Language
 appeared 1986
 type pl
 
-patterns
- hasCentralPackageRepository? false
-
 wikipedia https://en.wikipedia.org/wiki/Actor-Based_Concurrent_Language
  related common-lisp
  summary Actor-Based Concurrent Language (ABCL) is a family of programming languages, developed in Japan in the 1980s and 1990s.
@@ -19,3 +16,5 @@ standsFor Actor-Based Concurrent Language
 status historical
 
 hopl 1779
+
+centralPackageRepositoryCount 0

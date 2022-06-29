@@ -22,7 +22,6 @@ patterns
     fmt.Println(j) // see the new value of j
   }
   
- hasCentralPackageRepository? false
  hasComments? true
   // This is a comment
  hasImports? true
@@ -225,3 +224,4 @@ stackOverflowSurvey
   medianSalary 75669
   fans 15788
   percentageUsing 0.09
+centralPackageRepositoryCount 0

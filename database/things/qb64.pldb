@@ -2,9 +2,6 @@ title QB64
 appeared 2007
 type pl
 
-patterns
- hasCentralPackageRepository? false
-
 wikipedia https://en.wikipedia.org/wiki/QB64
  example
   t1 = _FREETIMER
@@ -40,3 +37,4 @@ wikipedia https://en.wikipedia.org/wiki/QB64
 
 status historical
 isOpenSource true
+centralPackageRepositoryCount 0

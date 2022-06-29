@@ -2,9 +2,6 @@ title Parallel Thread Execution
 appeared 2009
 type assembly
 
-patterns
- hasCentralPackageRepository? false
-
 description PTX, a low-level parallel thread execution virtual machine and instruction set architecture (ISA). PTX exposes the GPU as a data-parallel computing device.
 
 wikipedia https://en.wikipedia.org/wiki/Parallel_Thread_Execution
@@ -25,3 +22,4 @@ aka nvptx
 status historical
 fileType text
 corporateDevelopers Nvidia
+centralPackageRepositoryCount 0

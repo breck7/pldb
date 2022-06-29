@@ -2,9 +2,6 @@ title ProSet
 appeared 1990
 type pl
 
-patterns
- hasCentralPackageRepository? false
-
 wikipedia https://en.wikipedia.org/wiki/ProSet
  related setl
  summary ProSet is a set theoretic programming language that is being developed at the University of Essen as a successor to SETL. It is a very-high level language that supports prototyping. ProSet provides the following first-class data types: atom, integer, real, string, boolean, tuple, set. Functions and modules are also first-class.
@@ -18,3 +15,5 @@ reference https://semanticscholar.org/paper/b0d78f9fea44c60186b6957d94fbb2a6bf7d
 status historical
 
 hopl 1586
+
+centralPackageRepositoryCount 0

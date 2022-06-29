@@ -2,9 +2,6 @@ title Apache Velocity
 appeared 2003
 type template
 
-patterns
- hasCentralPackageRepository? false
-
 wikipedia https://en.wikipedia.org/wiki/Apache_Velocity
  example
   <html>
@@ -40,3 +37,4 @@ isOpenSource true
 codeMirror velocity
 
 corporateDevelopers Apache
+centralPackageRepositoryCount 0

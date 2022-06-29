@@ -2,9 +2,6 @@ title HP BASIC for OpenVMS
 appeared 1982
 type pl
 
-patterns
- hasCentralPackageRepository? false
-
 wikipedia https://en.wikipedia.org/wiki/HP_BASIC_for_OpenVMS
  example
   10 PRINT "Enter a temperature in Celsius ";
@@ -28,3 +25,5 @@ wikipedia https://en.wikipedia.org/wiki/HP_BASIC_for_OpenVMS
 status historical
 
 hopl 6349
+
+centralPackageRepositoryCount 0

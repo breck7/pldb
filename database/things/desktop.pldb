@@ -32,9 +32,6 @@ example
  # Describes the categories in which this entry should be shown
  Categories=Education;Languages;Java; 
 
-patterns
- hasCentralPackageRepository? false
-
 githubLanguage desktop
  fileExtensions desktop desktopin
  trendingProjectsCount 0
@@ -72,3 +69,4 @@ reference https://wiki.archlinux.org/index.php/desktop_entries#File_example
 status active
 fileType text
 wordRank 1680
+centralPackageRepositoryCount 0

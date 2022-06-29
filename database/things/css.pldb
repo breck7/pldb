@@ -4,7 +4,6 @@ type stylesheetLanguage
 
 patterns
  canWriteToDisk? false
- hasCentralPackageRepository? false
  hasImports? true
   @import 'custom.css';
  hasFunctions? false
@@ -124,3 +123,4 @@ antlr https://github.com/antlr/grammars-v4/tree/master/css3
 
 indeedJobs css developer
  2017 16898
+centralPackageRepositoryCount 0

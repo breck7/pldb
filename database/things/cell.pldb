@@ -24,9 +24,6 @@ example
    insert date_of_birth(id, self.date_of_birth) if self.date_of_birth?;
  }
 
-patterns
- hasCentralPackageRepository? false
-
 githubRepo https://github.com/cell-lang
 
 website http://cell-lang.net/
@@ -37,3 +34,4 @@ twitter cell_lang
 fileType text
 wordRank 695
 isOpenSource true
+centralPackageRepositoryCount 0

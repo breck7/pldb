@@ -21,9 +21,6 @@ example
  -js bin/contact.js
  -main website.ContactPage
 
-patterns
- hasCentralPackageRepository? false
-
 description Haxe compiler arguments can be stored in a .hxml file and can be executed with haxe <file.hxml>. In hxml it is possible to use newlines and comments which makes it easier to maintain Haxe build configurations. It is possible to supply more arguments after the hxml file, e.g. haxe build.hxml -debug.
 
 githubLanguage HXML
@@ -50,3 +47,4 @@ linguistGrammarRepo https://github.com/vshaxe/haxe-TmLanguage
 reference https://haxe.org/manual/compiler-usage-hxml.html
 status active
 fileType text
+centralPackageRepositoryCount 0

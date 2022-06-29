@@ -2,9 +2,6 @@ title IFPS
 appeared 1970
 type pl
 
-patterns
- hasCentralPackageRepository? false
-
 wikipedia https://en.wikipedia.org/wiki/IFPS
  summary IFPS (Interactive Financial Planning System) was a financial modeling language created by professor Gerald R. Wagner and his students of the University of Texas at Austin in the late 1970s. IFPS was marketed by Execucom, an Austin-based company started by Wagner. The company was acquired by Comshare in 1991.IFPS was available for a variety of platforms, including IBM mainframes (VM/CMS), DEC VAX, various flavors of Unix, DOS-based PCs and Macintosh Computers (named "Mindsight"- running on two floppies). There were a number of versions, from about 1985,  including optimization and a data area for storing data separately from models. IFPS seems to have been an important inspiration for the Javelin financial modeling application. Some parts of the IFPS approach were later used by Lotus's Improv- like the separation of model logic and data. Difference to spreadsheet software (Lotus 1-2-3 and later Excel): Mainframe and PC/Mac versions of IFPS completely separated the logic model (connections between variables) and the data. Both were bound together by data placeholder (like "earnings in Year1" in the logic model - to easily run scenarios . (Spreadsheet) columns were represented by Name1, Name2, name3 etc. The model logic was written in lines with placeholder- oriented text ( "earnings=sales-costs" etc.). Comment lines on the model could be included anywhere with //. IFPS mainframe versions also allowed to simulate stochastic events by providing a range of probability distributions. The IFPS approach made it easy to communicate complex models even to laymen and managers. IFPS was eventually out-competed by spreadsheets.  IFPS was an essential financial model-development tool for long range planning and strategic planning, popular business practices in the 1980's.  As an "English-like" language, IFPS made it very simple to express relationships among financial concepts without having to worry about sequential logic, as the program would figure out dependencies among variables.  This allowed for simple creation of both financial and managerial accounting statements.   I was fortunate to work with IFPS for over ten years as an analyst at Champlin Petroleum aka. Union Pacific Resources.  I also attended seminars and conferences put on by Gerald Wagner and his team at EXECUCOM.   I believe it was the rise of risk management in the commodity industries over "assumption-based" techniques like long range planning, rather than spreadsheets per se, which contributed to IFPS loss in popularity. [Edit by David Benepe]
  created 2007
@@ -15,3 +12,4 @@ wikipedia https://en.wikipedia.org/wiki/IFPS
  appeared 1970
 
 status historical
+centralPackageRepositoryCount 0

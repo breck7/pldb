@@ -3,7 +3,6 @@ appeared 1978
 type pl
 
 patterns
- hasCentralPackageRepository? false
  hasHereDocs? true
 
 wikipedia https://en.wikipedia.org/wiki/C_Shell
@@ -25,3 +24,5 @@ fileType text
 isOpenSource true
 
 tiobe C shell
+
+centralPackageRepositoryCount 0

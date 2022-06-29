@@ -2,9 +2,6 @@ title HAL/S
 appeared 1972
 type assembly
 
-patterns
- hasCentralPackageRepository? false
-
 wikipedia https://en.wikipedia.org/wiki/HAL/S
  related xpl pl-i ada fortran fortress
  summary HAL/S (High-order Assembly Language/Shuttle)  is a real-time aerospace programming language compiler and cross-compiler for avionics applications used by NASA and associated agencies (JPL, etc.). It has been used in many U.S. space projects since 1973 and its most significant use was in the Space Shuttle program (approximately 85% of the Shuttle software is coded in HAL/S).  It was designed by Intermetrics in 1972 for NASA and delivered in 1973. HAL/S is written in XPL, a dialect of PL/I. Although HAL/S is designed primarily for programming on-board computers, it is general enough to meet nearly all the needs in the production, verification, and support of aerospace and other real-time applications. It is currently (2005) maintained by the HAL/S project of United Space Alliance.
@@ -19,3 +16,5 @@ status historical
 fileType text
 
 hopl 583
+
+centralPackageRepositoryCount 0

@@ -89,9 +89,6 @@ example
      }
  }
 
-patterns
- hasCentralPackageRepository? false
-
 githubRepo https://github.com/SAP/chevrotain
  stars 576
  forks 38
@@ -106,3 +103,4 @@ website http://sap.github.io/chevrotain/
 status active
 fileType text
 isOpenSource true
+centralPackageRepositoryCount 0

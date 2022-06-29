@@ -2,9 +2,6 @@ title Caltech Intermediate Form
 appeared 1980
 type pl
 
-patterns
- hasCentralPackageRepository? false
-
 wikipedia https://en.wikipedia.org/wiki/Caltech_Intermediate_Form
  example
   cifFile ::= (blank* command? semi)* endCommand blank*
@@ -50,3 +47,5 @@ wikipedia https://en.wikipedia.org/wiki/Caltech_Intermediate_Form
 status historical
 
 hopl 890
+
+centralPackageRepositoryCount 0

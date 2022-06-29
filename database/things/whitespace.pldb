@@ -2,9 +2,6 @@ title Whitespace
 appeared 2003
 type esolang
 
-patterns
- hasCentralPackageRepository? false
-
 wikipedia https://en.wikipedia.org/wiki/Whitespace_(programming_language)
  example
   S S S T	S S T	S S S L
@@ -89,3 +86,5 @@ tiobe Whitespace
 quineRelay Whitespace
 
 rosettaCode Whitespace
+
+centralPackageRepositoryCount 0

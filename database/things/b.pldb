@@ -3,9 +3,6 @@ appeared 1969
 type pl
 creators Ken Thompson and Dennis Ritchie
 
-patterns
- hasCentralPackageRepository? false
-
 wikipedia https://en.wikipedia.org/wiki/B_(programming_language)
  example
   /* The following function will print a non-negative number, n, to
@@ -39,3 +36,5 @@ wordRank 124
 hopl 492
 
 rosettaCode B
+
+centralPackageRepositoryCount 0

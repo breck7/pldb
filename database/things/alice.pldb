@@ -2,9 +2,6 @@ title Alice
 appeared 2000
 type pl
 
-patterns
- hasCentralPackageRepository? false
-
 wikipedia https://en.wikipedia.org/wiki/Alice_(programming_language)
  example
   fun fib 0 = 0
@@ -27,3 +24,4 @@ tryItOnline alice
 fileType text
 wordRank 5414
 isOpenSource true
+centralPackageRepositoryCount 0

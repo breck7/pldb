@@ -2,9 +2,6 @@ title 3D Manufacturing Format
 appeared 2015
 type xmlFormat
 
-patterns
- hasCentralPackageRepository? false
-
 wikipedia https://en.wikipedia.org/wiki/3D_Manufacturing_Format
  related xml
  summary 3D Manufacturing Format or 3MF is a file format developed and published by the 3MF Consortium. 3MF is an XML-based data format designed for using additive manufacturing, including information about materials, colors, and other information that cannot be represented in the STL format. As of today, CAD software related companies such as Autodesk, Dassault Systems and Netfabb are part of the 3MF Consortium. Other firms in the 3MF Consortium are Microsoft (for Operating system support), SLM and HP, whilst Shapeways are also included to give insight from a 3D Printing background. Other key players in the 3D printing and additive manufacturing business, such as Materialise, 3D Systems, Siemens PLM Software and Stratasys have recently joined the consortium.
@@ -23,3 +20,4 @@ twitter 3mfconsortium
 
 fileType text
 corporateDevelopers 3MF Consortium
+centralPackageRepositoryCount 0

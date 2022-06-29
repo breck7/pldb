@@ -2,9 +2,6 @@ title Advanced Message Queuing Protocol
 appeared 2003
 type protocol
 
-patterns
- hasCentralPackageRepository? false
-
 wikipedia https://en.wikipedia.org/wiki/Advanced_Message_Queuing_Protocol
  related tls erlang
  summary The Advanced Message Queuing Protocol (AMQP) is an open standard application layer protocol for message-oriented middleware. The defining features of AMQP are message orientation, queuing, routing (including point-to-point and publish-and-subscribe), reliability and security. AMQP mandates the behavior of the messaging provider and client to the extent that implementations from different vendors are interoperable, in the same way as SMTP, HTTP, FTP, etc. have created interoperable systems. Previous standardizations of middleware have happened at the API level (e.g. JMS) and were focused on standardizing programmer interaction with different middleware implementations, rather than on providing interoperability between multiple implementations. Unlike JMS, which defines an API and a set of behaviors that a messaging implementation must provide, AMQP is a wire-level protocol. A wire-level protocol is a description of the format of the data that is sent across the network as a stream of bytes. Consequently, any tool that can create and interpret messages that conform to this data format can interoperate with any other compliant tool irrespective of implementation language.
@@ -18,3 +15,4 @@ wikipedia https://en.wikipedia.org/wiki/Advanced_Message_Queuing_Protocol
 standsFor Advanced Message Queuing Protocol
 status historical
 fileType na
+centralPackageRepositoryCount 0

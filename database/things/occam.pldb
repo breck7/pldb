@@ -3,7 +3,6 @@ appeared 1983
 type pl
 
 patterns
- hasCentralPackageRepository? false
  hasSemanticIndentation? true
 
 wikipedia https://en.wikipedia.org/wiki/Occam_(programming_language)
@@ -48,3 +47,5 @@ tiobe Occam
 hopl 1002
 
 rosettaCode Occam
+
+centralPackageRepositoryCount 0

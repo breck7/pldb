@@ -3,7 +3,6 @@ appeared 2002
 type pl
 
 patterns
- hasCentralPackageRepository? false
  hasSemanticIndentation? true
 
 wikipedia https://en.wikipedia.org/wiki/BuddyScript
@@ -26,3 +25,4 @@ helloWorldCollection BuddyScript
 
 status historical
 fileType text
+centralPackageRepositoryCount 0

@@ -2,9 +2,6 @@ title M4Sugar
 appeared 2003
 type pl
 
-patterns
- hasCentralPackageRepository? false
-
 description M4 by itself provides only a small, but sufficient, set of all-purpose macros. M4sugar introduces additional generic macros. Its name was coined by Lars J. Aas: “Readability And Greater Understanding Stands 4 M4sugar”
 
 githubLanguage M4Sugar
@@ -63,3 +60,4 @@ linguistGrammarRepo https://github.com/Alhadis/language-etc
 reference http://www6.gnu.org/software/autoconf/manual/autoconf.pdf
 status active
 fileType text
+centralPackageRepositoryCount 0

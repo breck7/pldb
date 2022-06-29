@@ -23,9 +23,6 @@ example
  send "exit\r"
  expect eof
 
-patterns
- hasCentralPackageRepository? false
-
 wikipedia https://en.wikipedia.org/wiki/Expect
  example
   #timeout is a predefined variable in expect which by default is set to 10 sec
@@ -60,3 +57,5 @@ wordRank 2323
 isOpenSource true
 
 hopl 1622
+
+centralPackageRepositoryCount 0

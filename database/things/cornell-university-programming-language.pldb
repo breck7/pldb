@@ -2,9 +2,6 @@ title Cornell University Programming Language
 appeared 1967
 type pl
 
-patterns
- hasCentralPackageRepository? false
-
 wikipedia https://en.wikipedia.org/wiki/Cornell_University_Programming_Language
  related basic pl-i pl-c
  summary Cornell University Programming Language (also called CUPL) is a procedural computer programming language developed at Cornell University in the late 1960s. CUPL was based on an earlier Cornell-developed programming language, CORC.  It was used to teach introductory computer programming classes. CUPL was developed by R. W. Conway, W. L. Maxwell, G. Blomgren, Howard Elder, H. Morgan, C. Pottle, W. Riddle, and Robert Walker.  CUPL had a very simple syntax similar to BASIC and to PL/I. The processor was designed to offer extensive error correction and diagnostic capabilities.  This would allow student programs to execute even if they contained minor syntax errors.  The compiler also included spelling correction capabilities so that if a variable name is referenced only once, the compiler would assume that it was a misspelling of some other intended name. CUPL also offered an extensive set of matrix operations and offered dynamic run-time memory allocation.  At the time, Cornell's computer was an IBM System 360 Model 40 with only 64K of core memory.  CUPL was able to process a large batch of student programs quickly by remaining resident in core memory, but the compiler occupied 58K of memory, leaving only a small amount for the program code and variable storage.
@@ -18,3 +15,5 @@ wikipedia https://en.wikipedia.org/wiki/Cornell_University_Programming_Language
 status historical
 
 hopl 283
+
+centralPackageRepositoryCount 0

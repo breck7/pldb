@@ -2,9 +2,6 @@ title Dartmouth BASIC
 appeared 1964
 type pl
 
-patterns
- hasCentralPackageRepository? false
-
 wikipedia https://en.wikipedia.org/wiki/Dartmouth_BASIC
  example
   5 LET S = 0 
@@ -29,3 +26,5 @@ wikipedia https://en.wikipedia.org/wiki/Dartmouth_BASIC
 status historical
 
 hopl 1948
+
+centralPackageRepositoryCount 0

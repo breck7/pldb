@@ -2,9 +2,6 @@ title MediaWiki
 appeared 2002
 type application
 
-patterns
- hasCentralPackageRepository? false
-
 wikipedia https://en.wikipedia.org/wiki/MediaWiki
  example
   <h4><span class="mw-headline" id="A_dialogue">A dialogue</span></h4>
@@ -133,3 +130,4 @@ wordRank 9998
 isOpenSource true
 linkedInSkill mediawiki
  2018 3862
+centralPackageRepositoryCount 0

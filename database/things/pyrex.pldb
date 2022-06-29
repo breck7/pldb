@@ -2,9 +2,6 @@ title Pyrex
 appeared 2002
 type pl
 
-patterns
- hasCentralPackageRepository? false
-
 wikipedia https://en.wikipedia.org/wiki/Pyrex_(programming_language)
  related python c cython
  summary Pyrex is a programming language developed to aid in creating Python modules. Its syntax is very close to Python. The goal is to make it easy for Python programmers to write the non-Python supporting code usually required for interfacing modules in a language which is as close to Python as possible.
@@ -20,3 +17,5 @@ status historical
 fileType text
 
 hopl 4938
+
+centralPackageRepositoryCount 0

@@ -7,9 +7,6 @@ example
     q = prefix & "." & suffix
   end
 
-patterns
- hasCentralPackageRepository? false
-
 description Quake is a simple, specialized language and its interpreter drawing on elements of the C language, the Bourne shell, and the C pre-processor. The cm3 compiler includes a quake interpreter as its extension language. In fact, the configuration file, cm3.cfg, and m3makefiles are quake scripts. Quake was designed to be a simple extension language for the builder. Building a complete, general-purpose language was not one of the goals. Cm3 calls out to quake every time it needs to do something that needs to be specialized such as compiling C files or linking.
 
 githubLanguage Quake
@@ -28,3 +25,4 @@ linguistGrammarRepo https://github.com/newgrammars/quake
 reference https://modula3.elegosoft.com/cm3/doc/help/cm3/quake.html
 status active
 fileType text
+centralPackageRepositoryCount 0

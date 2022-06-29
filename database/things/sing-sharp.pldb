@@ -2,9 +2,6 @@ title Sing Sharp
 appeared 2005
 type pl
 
-patterns
- hasCentralPackageRepository? false
-
 wikipedia https://en.wikipedia.org/wiki/Sing_Sharp
  example
   static int Main(string![] args)
@@ -27,3 +24,4 @@ wikipedia https://en.wikipedia.org/wiki/Sing_Sharp
  appeared 2004
 
 status historical
+centralPackageRepositoryCount 0

@@ -1,9 +1,8 @@
 title ISAC
 type pl
 
-patterns
- hasCentralPackageRepository? false
-
 reference http://www.ist.tugraz.at/isac/Installation_for_Windows
 
 hopl 7034
+
+centralPackageRepositoryCount 0

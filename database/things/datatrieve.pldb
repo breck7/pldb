@@ -2,9 +2,6 @@ title DATATRIEVE
 appeared 1970
 type queryLanguage
 
-patterns
- hasCentralPackageRepository? false
-
 wikipedia https://en.wikipedia.org/wiki/DATATRIEVE
  summary DATATRIEVE is a database query and report writer tool from Hewlett-Packard. It runs on the OpenVMS operating system, as well as several PDP-11 operating systems.  DATATRIEVE's command structure is nearly plain English, and it is an early example of a Fourth Generation Language (4GL). It works against flat files, indexed files, and databases. Such data files are delimited using record definitions stored in the Common Data Dictionary (CDD), or in RMS files. DATATRIEVE is used at many OpenVMS installations. DATATRIEVE was developed in the late 1970s and early 1980s by a team of software engineers at DEC's Central Commercial Engineering facilities in Merrimack and Nashua, New Hampshire, under database architect Jim Starkey. Many of the project's engineers went on to highly visible careers in database management and other software disciplines. DATATRIEVE adopted the wombat as its notional mascot; the program's help file responded to “HELP WOMBAT” with factual information about real world wombats.
  pageId 2214310
@@ -19,3 +16,5 @@ country US
 fileType text
 
 hopl 5188
+
+centralPackageRepositoryCount 0

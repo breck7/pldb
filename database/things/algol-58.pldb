@@ -2,9 +2,6 @@ title ALGOL 58
 appeared 1958
 type pl
 
-patterns
- hasCentralPackageRepository? false
-
 wikipedia https://en.wikipedia.org/wiki/ALGOL_58
  related algol algol-60 act-iii jovial neliac algo ada mad
  summary ALGOL 58, originally known as IAL, is one of the family of ALGOL computer programming languages. It was an early compromise design soon superseded by ALGOL 60. According to John Backus  "The Zurich ACM-GAMM Conference had two principal motives in proposing the IAL: (a) To provide a means of communicating numerical methods and other procedures between people, and (b) To provide a means of realizing a stated process on a variety of machines..."  ALGOL 58 introduced the fundamental notion of the compound statement, but it was restricted to control flow only, and it was not tied to identifier scope in the way that Algol 60's blocks were.
@@ -19,3 +16,5 @@ status historical
 fileType text
 
 hopl 17
+
+centralPackageRepositoryCount 0

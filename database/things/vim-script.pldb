@@ -2,9 +2,6 @@ title Vim script
 appeared 1991
 type pl
 
-patterns
- hasCentralPackageRepository? false
-
 description Vim script (also called vimscript or VimL) is the scripting language built into Vim.
 
 wikipedia https://en.wikipedia.org/wiki/Vim_script
@@ -113,3 +110,4 @@ aka vimscript viml
 status active
 fileType text
 isOpenSource true
+centralPackageRepositoryCount 0

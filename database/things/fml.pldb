@@ -2,9 +2,6 @@ title Fuzzy Markup Language
 appeared 2004
 type xmlFormat
 
-patterns
- hasCentralPackageRepository? false
-
 wikipedia https://en.wikipedia.org/wiki/Fuzzy_markup_language
  example
   <?xml version="1.0" encoding="UTF-8"?>
@@ -175,3 +172,4 @@ wikipedia https://en.wikipedia.org/wiki/Fuzzy_markup_language
 standsFor Fuzzy Markup Language
 status historical
 fileType text
+centralPackageRepositoryCount 0

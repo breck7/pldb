@@ -2,9 +2,6 @@ title WebGL
 appeared 2011
 type library
 
-patterns
- hasCentralPackageRepository? false
-
 wikipedia https://en.wikipedia.org/wiki/WebGL
  related html css javascript glsl c ios unity-engine typescript asmjs actionscript vrml
  summary WebGL (Web Graphics Library) is a JavaScript API for rendering interactive 2D and 3D graphics within any compatible web browser without the use of plug-ins. WebGL is integrated completely into all the web standards of the browser allowing GPU accelerated usage of physics and image processing and effects as part of the web page canvas. WebGL elements can be mixed with other HTML elements and composited with other parts of the page or page background. WebGL programs consist of control code written in JavaScript and shader code that is written in OpenGL Shading Language (GLSL), a language similar to C or C++, and is executed on a computer's graphics processing unit (GPU). WebGL is designed and maintained by the non-profit Khronos Group.
@@ -19,3 +16,4 @@ website https://www.khronos.org/webgl/
 status historical
 fileType text
 corporateDevelopers Khronos Group
+centralPackageRepositoryCount 0

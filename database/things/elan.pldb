@@ -2,9 +2,6 @@ title ELAN programming language
 appeared 1974
 type pl
 
-patterns
- hasCentralPackageRepository? false
-
 wikipedia https://en.wikipedia.org/wiki/ELAN_(programming_language)
  related algol-68 basic
  summary ELAN is an educational programming language for learning and teaching systematic programming. It was developed in 1974 by C.H.A. Koster and a group at the Technical University of Berlin as an alternative to BASIC in teaching, and approved for use in secondary schools in Germany by the "Arbeitskreis Schulsprache". It is in use in a number of schools in Germany, Belgium, the Netherlands, and Hungary for informatics teaching in secondary education, and used at the Radboud University Nijmegen in the Netherlands for teaching systematic programming to students from various disciplines and in teacher courses. The language design focuses strongly on structured programming, and has a special construction for stepwise refinement, allowing students to focus on top-down design, and bottom-up coding.
@@ -22,3 +19,5 @@ fileType text
 hopl 1319
 
 rosettaCode Elan
+
+centralPackageRepositoryCount 0

@@ -2,9 +2,6 @@ title System 2
 appeared 2008
 type pl
 
-patterns
- hasCentralPackageRepository? false
-
 wikipedia https://en.wikipedia.org/wiki/S2_(programming_language)
  related perl http
  summary S2 (Style System 2) is an object-oriented programming language developed in the late 1990s by Brad Fitzpatrick, Martin "Mart" Atkins, and others for the online journaling service LiveJournal in order to allow users full control over the appearance of their pages. S2 source code is compiled into Perl, which the webserver can then execute directly for individual web page requests. The S2 system is, at its heart, completely general and can be used for almost any web application; however there exists no documentation for the implementation of S2 within other applications, which ties it relatively closely to LiveJournal. This article will make use of LiveJournal's implementation of S2 for examples. A link to detailed documentation about this implementation can be found at the bottom.
@@ -19,3 +16,4 @@ website http://www.livejournal.com/doc/s2
 standsFor System 2
 status historical
 fileType text
+centralPackageRepositoryCount 0

@@ -2,9 +2,6 @@ title ARexx
 appeared 1987
 type pl
 
-patterns
- hasCentralPackageRepository? false
-
 wikipedia https://en.wikipedia.org/wiki/ARexx
  example
   /* Alarm.rexx */
@@ -28,3 +25,5 @@ status historical
 fileType text
 
 hopl 8017
+
+centralPackageRepositoryCount 0

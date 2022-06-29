@@ -4,9 +4,6 @@ type library
 
 creators Mike Bostock
 
-patterns
- hasCentralPackageRepository? false
-
 wikipedia https://en.wikipedia.org/wiki/D3.js
  example
   // Data
@@ -54,3 +51,4 @@ status active
 fileType text
 isOpenSource true
 related observable-lang
+centralPackageRepositoryCount 0

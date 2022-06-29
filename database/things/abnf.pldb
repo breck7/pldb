@@ -2,9 +2,6 @@ title Augmented Backus-Naur Form
 appeared 2008
 type grammarLanguage
 
-patterns
- hasCentralPackageRepository? false
-
 wikipedia https://en.wikipedia.org/wiki/Augmented_Backus–Naur_form
  example
   postal-address   = name-part street zip-part
@@ -242,3 +239,5 @@ status active
 fileType text
 
 antlr https://github.com/antlr/grammars-v4/tree/master/abnf
+
+centralPackageRepositoryCount 0

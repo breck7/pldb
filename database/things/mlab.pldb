@@ -2,9 +2,6 @@ title MLAB
 appeared 1975
 type pl
 
-patterns
- hasCentralPackageRepository? false
-
 wikipedia https://en.wikipedia.org/wiki/MLab
  related mongodb azure aws google-cloud
  summary mLab is a fully managed cloud database service that hosts MongoDB databases. mLab runs on cloud providers Amazon, Google, and Microsoft Azure, and has partnered with platform-as-a-service providers. In May 2011, mLab secured $3 million in first-round funding from Foundry Group, Baseline Ventures, Upfront Ventures, Freestyle Capital and David Cohen.In October 2012, mLab received a follow-on investment of $5 million  and shortly thereafter, mLab was named by Network World as one of the 10 most useful cloud databases along with Amazon Web Services, Google Cloud SQL, Microsoft Azure, Rackspace, and others. In June 2014, MongoDB Inc. announced a fully managed highly available MongoDB-as-a-Service Add-On offering on the Microsoft Azure store. The offering is delivered in collaboration with Microsoft and mLab.In February 2016, mLab changed its name from MongoLab to mLab to expand into new areas and products.In October 2018, mLab announced that it will be acquired by MongoDB Inc., citing reasons of a shared vision and engineering culture. All engineers at mLab have been invited to join MongoDB Inc. All of mLab's customers will be transitioned to MongoDB Atlas instances.. The acquisition "is expected to close in the fourth quarter of MongoDB’s fiscal year ending Jan. 31, 2019".
@@ -18,3 +15,5 @@ reference https://semanticscholar.org/paper/2f1db51bcb66ba9073de6a402b01cbdfb8d3
 status historical
 
 hopl 682
+
+centralPackageRepositoryCount 0

@@ -2,9 +2,6 @@ title Datapoint's Advanced Systems Language
 appeared 1982
 type pl
 
-patterns
- hasCentralPackageRepository? false
-
 wikipedia https://en.wikipedia.org/wiki/Datapoint%27s_Advanced_Systems_Language
  related pascal c assembly-language
  summary DASL (Datapoint's Advanced Systems Language) was a programming language and compiler proprietary to Datapoint.  Primarily influenced by Pascal with some C touches, it was created in the early 1980s by Gene Hughes. The compiler output was assembly language, which was typically processed through a peep-hole optimizer before the assembler and linker. Reflecting its name, DASL was used for systems programming, mainly by the vendor itself.
@@ -19,3 +16,4 @@ reference https://en.wikipedia.org/wiki/Datapoint
 aka DASL
 status historical
 country us
+centralPackageRepositoryCount 0

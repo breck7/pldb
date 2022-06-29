@@ -3,7 +3,6 @@ appeared 2011
 type pl
 
 patterns
- hasCentralPackageRepository? false
  hasComments? true
 
 description An interpreted language with a focus on expressiveness and type safety
@@ -27,3 +26,5 @@ fileType text
 isOpenSource true
 
 rosettaCode Lily
+
+centralPackageRepositoryCount 0

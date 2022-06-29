@@ -2,9 +2,6 @@ title skulpt
 appeared 2009
 type pl
 
-patterns
- hasCentralPackageRepository? false
-
 description Skulpt is an entirely in-browser implementation of Python.
 
 githubRepo https://github.com/skulpt/skulpt
@@ -22,3 +19,4 @@ status active
 fileType text
 isOpenSource true
 jupyterKernel https://github.com/Calysto/skulpt_python
+centralPackageRepositoryCount 0

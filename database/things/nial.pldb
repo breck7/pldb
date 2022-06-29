@@ -2,9 +2,6 @@ title Nested Interactive Array Language
 appeared 1981
 type pl
 
-patterns
- hasCentralPackageRepository? false
-
 wikipedia https://en.wikipedia.org/wiki/Nial
  example
   quicksort is fork [ >= [1 first,tally],
@@ -34,3 +31,5 @@ fileType text
 hopl 1242
 
 rosettaCode Nial
+
+centralPackageRepositoryCount 0

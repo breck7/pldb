@@ -2,9 +2,6 @@ title Magik
 appeared 1989
 type pl
 
-patterns
- hasCentralPackageRepository? false
-
 wikipedia https://en.wikipedia.org/wiki/Magik_(programming_language)
  example
   my_procedure << _proc @my_procedure(a, b, c)
@@ -28,3 +25,5 @@ fileType text
 tiobe Magik
 
 hopl 3912
+
+centralPackageRepositoryCount 0

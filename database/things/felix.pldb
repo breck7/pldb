@@ -26,7 +26,6 @@ patterns
   fun f (x:double) => x +42.1;
   fun f (x:int) =>  x + 1;
   fun f (x:string) => x + "!";
- hasCentralPackageRepository? false
  hasPatternMatching? true
   match x with
    | Some x => println$ x; 
@@ -48,3 +47,4 @@ reference http://web.archive.org/web/20080415185225/http://felix-lang.org/
 hackerNewsDiscussions
  id|title|url|time|timestamp|by|comments|score
  5007674|Felix - a fast scripting language|http://felix-lang.org|2013-01-04 14:17:49 UTC|1357309069|nmcfarl|83|107
+centralPackageRepositoryCount 0

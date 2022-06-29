@@ -3,9 +3,6 @@ appeared 1994
 type schema
 creators Tim Berners-Lee
 
-patterns
- hasCentralPackageRepository? false
-
 wikipedia https://en.wikipedia.org/wiki/URL
  example
   scheme:[//[user[:password]@]host[:port]][/path][?query][#fragment]
@@ -22,3 +19,4 @@ standsFor Uniform Resource Locator
 status historical
 fileType text
 wordRank 793
+centralPackageRepositoryCount 0

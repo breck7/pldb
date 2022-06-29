@@ -2,9 +2,6 @@ title INFER
 appeared 1992
 type pl
 
-patterns
- hasCentralPackageRepository? false
-
 wikipedia https://en.wikipedia.org/wiki/Infer
  related prolog owl axiom
  summary Inferences are steps in reasoning, moving from premises to logical consequences. Charles Sanders Peirce divided inference into three kinds: deduction, induction, and abduction.  Deduction is inference deriving logical conclusions from premises known or assumed to be true,  with the laws of valid inference being studied in logic.  Induction is inference from particular premises to a universal conclusion.  Abduction is inference to the best explanation. Human inference (i.e. how humans draw conclusions) is traditionally studied within the field of cognitive psychology; artificial intelligence researchers develop automated inference systems to emulate human inference. Statistical inference uses mathematics to draw conclusions in the presence of uncertainty. This generalizes deterministic reasoning, with the absence of uncertainty as a special case. Statistical inference uses quantitative or qualitative (categorical) data which may be subject to random variations.
@@ -18,3 +15,5 @@ reference https://semanticscholar.org/paper/27184821d21e662cbd0c1526995ff8499fc0
 status historical
 
 hopl 2114
+
+centralPackageRepositoryCount 0

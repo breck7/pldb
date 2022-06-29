@@ -21,9 +21,6 @@ example
   printk(KERN_INFO "Goodbye world 1.\n");
  }
 
-patterns
- hasCentralPackageRepository? false
-
 description As of Linux kernel version 2.6, KO files are used in place of .O files and contain additional information that the kernel uses to load modules. The Linux program modpost can be used to convert O files into KO files.
 
 githubLanguage Linux Kernel Module
@@ -38,3 +35,4 @@ reference https://www.tldp.org/LDP/lkmpg/2.6/lkmpg.pdf
 status active
 fileExtensions ko
 fileType text
+centralPackageRepositoryCount 0

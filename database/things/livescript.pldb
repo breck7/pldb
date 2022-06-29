@@ -3,7 +3,6 @@ appeared 2011
 type pl
 
 patterns
- hasCentralPackageRepository? false
  hasSemanticIndentation? true
 
 wikipedia https://en.wikipedia.org/wiki/LiveScript
@@ -72,3 +71,4 @@ isOpenSource true
 rosettaCode LiveScript
 
 jupyterKernel https://github.com/p2edwards/jp-livescript
+centralPackageRepositoryCount 0

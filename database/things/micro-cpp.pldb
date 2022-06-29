@@ -2,9 +2,6 @@ title ΜC++
 appeared 1992
 type pl
 
-patterns
- hasCentralPackageRepository? false
-
 wikipedia https://en.wikipedia.org/wiki/ΜC%2B%2B
  summary μC++, also called uC++, is a programming language, an extension of C++ designed for concurrent programming. Among other features, it adds coroutines, tasks, and monitors, and extends existing language constructs to integrate with them. Its compiler, named u++, operates as a source-to-source translator targeting C++. μC++ is part of the μSystem project, of the University of Waterloo, Ontario, Canada, a large-scale project led by professor Peter Buhr with the goal to create a "highly-concurrent shared-memory programming system".It is used in course CS 343 in University of Waterloo.Every μC++ program should include the uC++.h header file before any other header, although this is not necessary for more recent versions. uC++ is now open source, available on GitHub.
  created 2005
@@ -14,3 +11,4 @@ wikipedia https://en.wikipedia.org/wiki/ΜC%2B%2B
  appeared 2006
 
 status historical
+centralPackageRepositoryCount 0

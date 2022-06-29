@@ -2,9 +2,6 @@ title NXT-G
 appeared 2006
 type pl
 
-patterns
- hasCentralPackageRepository? false
-
 wikipedia https://en.wikipedia.org/wiki/NXT-G
  related atmel-avr labview csharp nxc nqc assembly-language c robomind java matlab simulink ravenscar-profile ruby haskell python ch perl ada arduino
  summary LEGO Mindstorms NXT is a programmable robotics kit released by Lego in late July 2006. It replaced the first-generation Lego Mindstorms kit, which was called the Robotics Invention System. The base kit ships in two versions: the Retail Version (set #8527) and the Education Base Set (set #9797). It comes with the NXT-G programming software, or optionally LabVIEW for Lego Mindstorms. A variety of unofficial languages exist, such as NXC, NBC, leJOS NXJ, and RobotC. The second generation of the set, the Lego Mindstorms NXT 2.0, was released on August 1, 2009, featuring a color sensor and other upgraded capabilities. The third generation, the EV3, was released in September 2013.
@@ -19,3 +16,5 @@ status active
 fileType text
 
 tiobe NXT-G
+
+centralPackageRepositoryCount 0

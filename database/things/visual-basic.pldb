@@ -3,7 +3,6 @@ appeared 1991
 type pl
 
 patterns
- hasCentralPackageRepository? false
  hasDirectives? true
   Option Explicit On|Off
   Option Compare Binary
@@ -69,3 +68,4 @@ indeedJobs visual basic engineer
  2017 3294
 
 lineCommentKeyword '
+centralPackageRepositoryCount 0

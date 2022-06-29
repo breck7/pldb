@@ -2,9 +2,6 @@ title Troff
 appeared 1973
 type pl
 
-patterns
- hasCentralPackageRepository? false
-
 wikipedia https://en.wikipedia.org/wiki/Troff
  related unix bcpl assembly-language c latex scheme unicode tex scribe
  summary troff  is the major component of a document processing system developed by AT&T Corporation for the Unix operating system. troff features commands to designate fonts, spacing, paragraphs, margins, footnotes and more. Unlike many other text formatters, troff can position characters arbitrarily on a page, even overlapping them, and has a fully programmable input language. Separate preprocessors are used for more convenient production of tables, diagrams, and mathematics. Inputs to troff are plain text files that can be created by any text editor. Extensive macro packages have been created for various document styles. A typical distribution of troff includes the me macros for formatting research papers, man and mdoc macros for creating Unix man pages, mv macros for creating mountable transparencies, and the ms and mm macros for letters, books, technical memoranda, and reports.
@@ -28,3 +25,5 @@ fileType text
 hopl 2589
 
 codeMirror troff
+
+centralPackageRepositoryCount 0

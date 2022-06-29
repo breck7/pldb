@@ -2,9 +2,6 @@ title JavaFX Script
 appeared 2005
 type pl
 
-patterns
- hasCentralPackageRepository? false
-
 wikipedia https://en.wikipedia.org/wiki/JavaFX_Script
  example
   import javafx.ext.swing.*;
@@ -34,3 +31,4 @@ isOpenSource true
 tiobe JavaFX Script
 
 corporateDevelopers Oracle
+centralPackageRepositoryCount 0

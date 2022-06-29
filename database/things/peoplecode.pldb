@@ -2,9 +2,6 @@ title PeopleCode
 appeared 2008
 type pl
 
-patterns
- hasCentralPackageRepository? false
-
 wikipedia https://en.wikipedia.org/wiki/PeopleCode
  example
   &SQL = CreateSQL("SQL Statement");
@@ -32,3 +29,4 @@ rosettaCode PeopleCode
 antlr https://github.com/antlr/grammars-v4/tree/master/peoplecode
 
 corporateDevelopers Oracle
+centralPackageRepositoryCount 0

@@ -2,9 +2,6 @@ title SIMPL
 appeared 1990
 type pl
 
-patterns
- hasCentralPackageRepository? false
-
 wikipedia https://en.wikipedia.org/wiki/SIMPL
  summary Synchronous Interprocess Messaging Project for LINUX (SIMPL) is a free and open-source project that allows QNX-style synchronous message passing by adding a Linux library using user space techniques like shared memory and Unix pipes to implement SendMssg/ReceiveMssg/ReplyMssg inter-process messaging mechanisms.
  backlinksCount 26
@@ -16,3 +13,5 @@ reference https://www.crestron.com/en-US/Products/Control-Hardware-Software/Soft
 isOpenSource true
 
 hopl 5221
+
+centralPackageRepositoryCount 0

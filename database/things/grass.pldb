@@ -2,9 +2,6 @@ title GRASS
 appeared 1977
 type pl
 
-patterns
- hasCentralPackageRepository? false
-
 wikipedia https://en.wikipedia.org/wiki/GRASS_(programming_language)
  example
   SINCURVE=[PROMPT "WHAT IS THE OFFSET?"
@@ -32,3 +29,5 @@ fileType text
 wordRank 5118
 
 hopl 4146
+
+centralPackageRepositoryCount 0

@@ -2,9 +2,6 @@ title Michigan Algorithm Decoder
 appeared 1959
 type pl
 
-patterns
- hasCentralPackageRepository? false
-
 wikipedia https://en.wikipedia.org/wiki/MAD_(programming_language)
  example
   PRINT FORMAT HELLOW
@@ -35,3 +32,5 @@ wordRank 4248
 tiobe MAD
 
 hopl 92
+
+centralPackageRepositoryCount 0

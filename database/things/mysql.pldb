@@ -3,7 +3,6 @@ appeared 1995
 type queryLanguage
 
 patterns
- hasCentralPackageRepository? false
  hasLineComments? true
   -- A comment
 
@@ -39,3 +38,4 @@ antlr https://github.com/antlr/grammars-v4/tree/master/mysql
 
 corporateDevelopers Oracle
 lineCommentKeyword --
+centralPackageRepositoryCount 0

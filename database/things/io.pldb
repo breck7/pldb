@@ -3,7 +3,6 @@ appeared 2002
 type pl
 
 patterns
- hasCentralPackageRepository? false
  hasComments? true
  hasOperatorOverloading? true
  hasLineComments? true
@@ -49,3 +48,4 @@ rosettaCode Io
 website https://iolanguage.org/
 lineCommentKeyword //
 visualParadigm false
+centralPackageRepositoryCount 0

@@ -2,9 +2,6 @@ title AutoCAD DXF
 appeared 1982
 type application
 
-patterns
- hasCentralPackageRepository? false
-
 wikipedia https://en.wikipedia.org/wiki/AutoCAD_DXF
  related autocad-app dwg ascii
  summary AutoCAD DXF (Drawing Interchange Format, or Drawing Exchange Format) is a CAD data file format developed by Autodesk for enabling data interoperability between AutoCAD and other programs. DXF was originally introduced in December 1982 as part of AutoCAD 1.0, and was intended to provide an exact representation of the data in the AutoCAD native file format, DWG (Drawing), for which Autodesk for many years did not publish specifications. Because of this, correct imports of DXF files have been difficult. Autodesk now publishes the DXF specifications as a PDF on its website. Versions of AutoCAD from Release 10 (October 1988) and up support both ASCII and binary forms of DXF.  Earlier versions support only ASCII. As AutoCAD has become more powerful, supporting more complex object types, DXF has become less useful. Certain object types, including ACIS solids and regions, are not documented. Other object types, including AutoCAD 2006's dynamic blocks, and all of the objects specific to the vertical market versions of AutoCAD, are partially documented, but not well enough to allow other developers to support them. For these reasons many CAD applications use the DWG format which can be licensed from Autodesk or non-natively from the Open Design Alliance. DXF coordinates are always without dimensions so that the reader or user needs to know the drawing unit or has to extract it from the textual comments in the sheets.
@@ -17,3 +14,4 @@ wikipedia https://en.wikipedia.org/wiki/AutoCAD_DXF
 
 status historical
 fileType text
+centralPackageRepositoryCount 0

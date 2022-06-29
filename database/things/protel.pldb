@@ -2,9 +2,6 @@ title Protel
 appeared 1975
 type pl
 
-patterns
- hasCentralPackageRepository? false
-
 wikipedia https://en.wikipedia.org/wiki/Protel
  related pascal algol-68
  summary Protel stands for "Procedure Oriented Type Enforcing Language". It is a programming language created by Nortel Networks and used on telecommunications switching systems such as the DMS-100. Protel-2 is the object-oriented version of Protel.PROTEL languages were designed to meet the needs of digital telephony and is the basis of the DMS-100 line of switching systems  PROTEL is a strongly typed, block-structured language which is based heavily on PASCAL and ALGOL 68 with left-to-right style of variable assignment, variable-sized arrays, and extensible structures.  The designers of PROTEL significantly extended PASCAL of the day by adding external compilation and extending the data structures available in the language.
@@ -18,3 +15,5 @@ wikipedia https://en.wikipedia.org/wiki/Protel
 status historical
 
 hopl 4094
+
+centralPackageRepositoryCount 0

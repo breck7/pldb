@@ -3,7 +3,6 @@ appeared 1990
 type pl
 
 patterns
- hasCentralPackageRepository? false
  hasComments? true
 
 wikipedia https://en.wikipedia.org/wiki/ACL2
@@ -25,3 +24,5 @@ isOpenSource true
 hopl 6972
 
 rosettaCode ACL2
+
+centralPackageRepositoryCount 0

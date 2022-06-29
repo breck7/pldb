@@ -2,9 +2,6 @@ title High Level Assembly
 appeared 2011
 type pl
 
-patterns
- hasCentralPackageRepository? false
-
 wikipedia https://en.wikipedia.org/wiki/High_Level_Assembly
  related assembly-language linux freebsd ia-32 pascal ada modula-2 microsoft-macro-assembler turbo-assembler x86-isa c nasm gas coff elf
  summary High Level Assembly (HLA) is an high-level assembly language developed by Randall Hyde. It allows the use of higher-level language constructs to aid both beginners and advanced assembly developers. It fully supports advanced data types and object-oriented programming. It uses a syntax loosely based on several high-level programming languages (HLLs), such as Pascal, Ada, Modula-2, and C++, to allow creating readable assembly language programs, and to allow HLL programmers to learn HLA as fast as possible.
@@ -22,3 +19,5 @@ fileType text
 isOpenSource true
 
 rosettaCode HLA
+
+centralPackageRepositoryCount 0

@@ -2,9 +2,6 @@ title Asterisk dialplan
 appeared 1999
 type application
 
-patterns
- hasCentralPackageRepository? false
-
 wikipedia https://en.wikipedia.org/wiki/Asterisk_(PBX)
  related c linux freebsd solaris
  summary Asterisk is a software implementation of a telephone private branch exchange (PBX); it allows attached telephones to make calls to one another, and to connect to other telephone services, such as the public switched telephone network (PSTN) and Voice over Internet Protocol (VoIP) services. Its name comes from the asterisk symbol "*". Asterisk is released with a dual license model, using the GNU General Public License (GPL) as a free software license and a proprietary software license to permit licensees to distribute proprietary, unpublished system components. Asterisk was created in 1999 by Mark Spencer of Digium. Originally designed for Linux, Asterisk runs on a variety of operating systems, including NetBSD, OpenBSD, FreeBSD, macOS, and Solaris, and can be installed in embedded systems based on OpenWrt and on flash drives.
@@ -26,3 +23,5 @@ fileType text
 isOpenSource true
 
 codeMirror asterisk
+
+centralPackageRepositoryCount 0

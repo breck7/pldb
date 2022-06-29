@@ -2,9 +2,6 @@ title Ecological Metadata Language
 appeared 1997
 type xmlFormat
 
-patterns
- hasCentralPackageRepository? false
-
 wikipedia https://en.wikipedia.org/wiki/Ecological_Metadata_Language
  summary Ecological Metadata Language (EML) is a metadata standard developed by and for the ecology discipline. It is based on prior work done by the Ecological Society of America and others, including the Knowledge Network for Biocomplexity. EML is a set of XML schema documents that allow for the structural expression of metadata.  It was developed specifically to allow researchers to document a typical data set in the ecological sciences. EML is largely designed to describe digital resources, however, it may also be used to describe non-digital resources such as paper maps and other non-digital media. The Knowledge Network for Biocomplexity project has developed a software client specifically to address this need. Morpho is data management software intended for generating metadata in EML format. Morpho is part of the DataONE Investigator Toolkit, and therefore intended to facilitate data sharing and reuse among ecologists and environmental scientists.
  pageId 2987821
@@ -18,3 +15,4 @@ reference https://knb.ecoinformatics.org/external//emlparser/docs/index.html
 aka eml
 status historical
 fileType text
+centralPackageRepositoryCount 0

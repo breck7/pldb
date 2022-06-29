@@ -2,9 +2,6 @@ title DNS Zone
 appeared 2001
 type application
 
-patterns
- hasCentralPackageRepository? false
-
 wikipedia https://en.wikipedia.org/wiki/Zone_file
  example
   zone "0.0.127.in-addr.arpa"  IN { type master; file "r.local"; };
@@ -46,3 +43,4 @@ linguistGrammarRepo https://github.com/sixty4k/st2-zonefile
 status active
 fileType text
 wordRank 1757
+centralPackageRepositoryCount 0

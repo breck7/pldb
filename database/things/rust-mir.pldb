@@ -2,9 +2,6 @@ title rust-mir
 appeared 2016
 type ir
 
-patterns
- hasCentralPackageRepository? false
-
 githubRepo https://github.com/rust-lang/rust/tree/master/src/librustc_mir
 
 website https://blog.rust-lang.org/2016/04/19/MIR.html
@@ -12,3 +9,4 @@ status active
 fileType text
 compilesTo llvmir
 isOpenSource true
+centralPackageRepositoryCount 0

@@ -5,9 +5,6 @@ type schema
 example
  978-3-16-148410-0
 
-patterns
- hasCentralPackageRepository? false
-
 wikipedia https://en.wikipedia.org/wiki/International_Standard_Book_Number
  dailyPageViews 9882
  created 2001
@@ -16,3 +13,4 @@ wikipedia https://en.wikipedia.org/wiki/International_Standard_Book_Number
 status historical
 fileType text
 wordRank 1659
+centralPackageRepositoryCount 0

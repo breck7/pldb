@@ -2,9 +2,6 @@ title CHILL
 appeared 1980
 type pl
 
-patterns
- hasCentralPackageRepository? false
-
 wikipedia https://en.wikipedia.org/wiki/CHILL
  related cobol ada plex erlang
  summary In computing, CHILL (an acronym for CCITT High Level Language) is a procedural programming language designed for use in telecommunication switches (the hardware used inside telephone exchanges). The language is still used for legacy systems in some telecommunication companies and for signal box programming. The CHILL language is similar in size and complexity to the original Ada language. The first specification of the CHILL language was published in 1980, a few years before Ada. ITU provides a standard CHILL compiler. A free CHILL compiler was bundled with GCC up to version 2.95, however, was removed from later versions. An object-oriented version, called Object CHILL, was developed also. ITU is responsible for the CHILL standard, known as ITU-T Rec. Z.200. The equivalent ISO standard is ISO/IEC 9496:2003. (The text of the two documents is the same). In late 1999 CCITT stopped maintaining the CHILL standard. CHILL was used in systems of Alcatel System 12 and Siemens EWSD, for example.
@@ -21,3 +18,5 @@ fileType text
 tiobe CHILL
 
 hopl 889
+
+centralPackageRepositoryCount 0

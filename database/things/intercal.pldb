@@ -2,9 +2,6 @@ title INTERCAL
 appeared 1972
 type pl
 
-patterns
- hasCentralPackageRepository? false
-
 wikipedia https://en.wikipedia.org/wiki/INTERCAL
  example
   DO ,1 <- #13
@@ -68,3 +65,5 @@ quineRelay INTERCAL
 ubuntuPackage intercal
 
 rosettaCode Intercal
+
+centralPackageRepositoryCount 0

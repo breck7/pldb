@@ -2,9 +2,6 @@ title Alpha
 appeared 1971
 type pl
 
-patterns
- hasCentralPackageRepository? false
-
 wikipedia https://en.wikipedia.org/wiki/Alpha_%28programming_language%29
  related quel sql
  summary The Alpha language was the original database language proposed by Edgar F. Codd, the inventor of the relational database approach. It was defined in Codd's 1971 paper "A Data Base Sublanguage Founded on the Relational Calculus". Alpha influenced the design of QUEL. It was eventually supplanted by SQL (which is however based on the relational algebra defined by Codd in "Relational Completeness of Data Base Sublanguages"), which IBM developed for its first commercial relational database product.
@@ -16,3 +13,4 @@ wikipedia https://en.wikipedia.org/wiki/Alpha_%28programming_language%29
  appeared 1971
 
 status historical
+centralPackageRepositoryCount 0

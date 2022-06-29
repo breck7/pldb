@@ -3,7 +3,6 @@ appeared 2014
 type pl
 
 patterns
- hasCentralPackageRepository? false
  hasComments? true
  hasUnitsOfMeasure? true
   10 feet 12 feet 8 feet -> gallons
@@ -37,3 +36,5 @@ projectEuler Frink
   2022 14
 
 rosettaCode Frink
+
+centralPackageRepositoryCount 0

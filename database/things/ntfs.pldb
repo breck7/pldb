@@ -2,9 +2,6 @@ title New Technology File System
 appeared 1993
 type filesystem
 
-patterns
- hasCentralPackageRepository? false
-
 wikipedia https://en.wikipedia.org/wiki/NTFS
  related fat linux windows-powershell freebsd
  summary NTFS (New Technology File System) is a proprietary file system developed by Microsoft. Starting with Windows NT 3.1, it is the default file system of the Windows NT family.NTFS has several technical improvements over the file systems that it superseded – File Allocation Table (FAT) and High Performance File System (HPFS) – such as improved support for metadata and advanced data structures to improve performance, reliability, and disk space use. Additional extensions are a more elaborate security system based on access control lists (ACLs) and file system journaling. NTFS is supported in other desktop and server operating systems as well. Linux and BSD have a free and open-source NTFS driver, called NTFS-3G, with both read and write functionality. macOS comes with read-only support for NTFS; its disabled-by-default write support for NTFS is unstable.
@@ -18,3 +15,4 @@ wikipedia https://en.wikipedia.org/wiki/NTFS
 standsFor New Technology File System
 status historical
 fileType text
+centralPackageRepositoryCount 0

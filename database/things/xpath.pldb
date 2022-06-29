@@ -2,9 +2,6 @@ title XPath
 appeared 1999
 type queryLanguage
 
-patterns
- hasCentralPackageRepository? false
-
 wikipedia https://en.wikipedia.org/wiki/XPath
  example
   /Wikimedia/projects/project[@name='Wikipedia']/editions/edition/text()
@@ -23,3 +20,4 @@ fileType text
 antlr https://github.com/antlr/grammars-v4/tree/master/xpath
 
 corporateDevelopers W3C
+centralPackageRepositoryCount 0

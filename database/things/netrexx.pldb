@@ -3,7 +3,6 @@ appeared 1996
 type pl
 
 patterns
- hasCentralPackageRepository? false
  hasComments? true
 
 wikipedia https://en.wikipedia.org/wiki/NetRexx
@@ -22,3 +21,5 @@ fileType text
 hopl 2277
 
 rosettaCode NetRexx
+
+centralPackageRepositoryCount 0

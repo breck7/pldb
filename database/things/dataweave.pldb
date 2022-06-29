@@ -2,9 +2,6 @@ title DataWeave
 appeared 2014
 type pl
 
-patterns
- hasCentralPackageRepository? false
-
 description DataWeave is the MuleSoft expression language for accessing and transforming data received through a Mule app. DataWeave is tightly integrated with Mule runtime, which runs the scripts and expressions in your Mule app.
 
 githubLanguage DataWeave
@@ -31,3 +28,4 @@ linguistGrammarRepo https://github.com/mulesoft-labs/data-weave-tmLanguage
 reference https://docs.mulesoft.com/mule-runtime/4.1/dataweave
 status active
 fileType text
+centralPackageRepositoryCount 0

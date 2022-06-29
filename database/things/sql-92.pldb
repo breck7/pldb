@@ -2,9 +2,6 @@ title SQL-92
 appeared 1992
 type pl
 
-patterns
- hasCentralPackageRepository? false
-
 wikipedia https://en.wikipedia.org/wiki/SQL-92
  related sql c ada mumps sql-psm
  summary SQL-92 was the third revision of the SQL database query language. Unlike SQL-89, it was a major revision of the standard.  Aside from a few minor incompatibilities, the SQL-89 standard is forward-compatible with SQL-92. The standard specification itself grew about five times compared to SQL-89. Much of it was due to more precise specifications of existing features; the increase due to new features was only by a factor of 1.5–2. Many of the new features had already been implemented by vendors before the new standard was adopted. However, most of the new features were added to the "intermediate" and "full" tiers of the specification, meaning that conformance with SQL-92 entry level was scarcely any more demanding than conformance with SQL-89. Later revisions of the standard include SQL:1999 (SQL3), SQL:2003, SQL:2008, SQL:2011 and SQL:2016.
@@ -18,3 +15,5 @@ wikipedia https://en.wikipedia.org/wiki/SQL-92
 status historical
 
 hopl 6829
+
+centralPackageRepositoryCount 0

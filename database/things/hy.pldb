@@ -5,9 +5,6 @@ type pl
 example
  (+ "Hyllo " "World" "!")
 
-patterns
- hasCentralPackageRepository? false
-
 description A dialect of Lisp that's embedded in Python
 
 wikipedia https://en.wikipedia.org/wiki/Hy_(programming_language)
@@ -71,3 +68,4 @@ rosettaCode Hy
 
 jupyterKernel https://github.com/bollwyvl/hy_kernel/
 jupyterKernel https://github.com/Calysto/calysto_hy
+centralPackageRepositoryCount 0

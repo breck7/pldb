@@ -2,9 +2,6 @@ title BeanShell
 appeared 1999
 type pl
 
-patterns
- hasCentralPackageRepository? false
-
 wikipedia https://en.wikipedia.org/wiki/BeanShell
  related java jvm javascript perl
  summary BeanShell is a Java-like scripting language, invented by Patrick Niemeyer. It runs in the Java Runtime Environment (JRE) and uses a variation of the Java syntax, in addition to scripting commands and syntax.
@@ -22,3 +19,4 @@ tryItOnline beanshell
 
 fileType text
 isOpenSource true
+centralPackageRepositoryCount 0

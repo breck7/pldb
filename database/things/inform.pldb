@@ -4,7 +4,6 @@ type pl
 creators Graham Nelson
 
 patterns
- hasCentralPackageRepository? false
  hasSemanticIndentation? true
 
 wikipedia https://en.wikipedia.org/wiki/Inform
@@ -124,3 +123,5 @@ fileType text
 wordRank 5526
 
 tiobe Inform
+
+centralPackageRepositoryCount 0

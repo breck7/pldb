@@ -2,9 +2,6 @@ title PLEX programming language
 appeared 1975
 type pl
 
-patterns
- hasCentralPackageRepository? false
-
 wikipedia https://en.wikipedia.org/wiki/PLEX_(programming_language)
  related fortran erlang
  summary PLEX (Programming Language for EXchanges) is a special-purpose, concurrent, real-time programming language.  The PLEX language is closely tied to the architecture of Ericsson's AXE telephone exchanges which it was designed to control. PLEX was developed by Göran Hemdahl at Ericsson in the 1970s,  and it has been continuously evolving since then. PLEX was described in 2008 as "a cross between Fortran and a macro assembler."The language has two variants: Plex-C used for the AXE Central Processor (CP) and Plex-M used for Extension Module Regional Processors (EMRP).
@@ -19,3 +16,4 @@ reference https://www.erlang-factory.com/upload/presentations/416/MikeWilliams.p
 status historical
 fileType text
 isOpenSource false
+centralPackageRepositoryCount 0

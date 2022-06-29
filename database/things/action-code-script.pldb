@@ -2,9 +2,6 @@ title Action Code Script
 appeared 2004
 type pl
 
-patterns
- hasCentralPackageRepository? false
-
 wikipedia https://en.wikipedia.org/wiki/Action_Code_Script
  example
   1  // Similar to C's stdio.h, ACS has its own library of basic functions
@@ -23,3 +20,4 @@ wikipedia https://en.wikipedia.org/wiki/Action_Code_Script
  dailyPageViews 7
 
 status historical
+centralPackageRepositoryCount 0

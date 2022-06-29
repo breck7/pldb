@@ -2,9 +2,6 @@ title MiniZinc
 appeared 2012
 type pl
 
-patterns
- hasCentralPackageRepository? false
-
 githubRepo https://github.com/MiniZinc/libminizinc
  firstCommit 2012
  stars 201
@@ -28,3 +25,5 @@ quineRelay MiniZinc
 ubuntuPackage minizinc
 
 rosettaCode MiniZinc
+
+centralPackageRepositoryCount 0

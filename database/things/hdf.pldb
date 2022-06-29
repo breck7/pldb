@@ -2,9 +2,6 @@ title Hierarchical Data Format
 appeared 1992
 type binaryDataFormat
 
-patterns
- hasCentralPackageRepository? false
-
 wikipedia https://en.wikipedia.org/wiki/Hierarchical_Data_Format
  related java matlab scilab octave mathematica idl python r julia sql utf-8 c fortran common-lisp d erlang elixir lfe gdl go igor-pro json labview lua perl pandas rust cdf protobuf
  summary Hierarchical Data Format (HDF) is a set of file formats (HDF4, HDF5) designed to store and organize large amounts of data. Originally developed at the National Center for Supercomputing Applications, it is supported by The HDF Group, a non-profit corporation whose mission is to ensure continued development of HDF5 technologies and the continued accessibility of data stored in HDF. In keeping with this goal, the HDF libraries and associated tools are available under a liberal, BSD-like license for general use. HDF is supported by many commercial and non-commercial software platforms, including Java, MATLAB, Scilab, Octave, Mathematica, IDL, Python, R, and Julia. The freely available HDF distribution consists of the library, command-line utilities, test suite source, Java interface, and the Java-based HDF Viewer (HDFView).The current version, HDF5, differs significantly in design and API from the major legacy version HDF4.
@@ -20,3 +17,4 @@ standsFor Hierarchical Data Format
 status active
 fileExtensions hdf h4 hdf4 he2 h5 hdf5 he5
 fileType binary
+centralPackageRepositoryCount 0

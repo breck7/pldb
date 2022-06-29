@@ -10,7 +10,6 @@ patterns
   }
   my &surname-smith = &first-and-last.assuming( *, 'Smith' );
   &surname-smith.( 'Joe' ); # OUTPUT: «Name is Joe Smith␤» 
- hasCentralPackageRepository? true
  hasComments? true
   # This is a comment in perl
   =begin comment

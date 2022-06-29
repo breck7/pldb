@@ -2,9 +2,6 @@ title TextMate
 appeared 2004
 type editor
 
-patterns
- hasCentralPackageRepository? false
-
 wikipedia https://en.wikipedia.org/wiki/TextMate
  example
   text.html.mediawiki
@@ -23,3 +20,4 @@ wikipedia https://en.wikipedia.org/wiki/TextMate
 website http://macromates.com/
 status historical
 fileType na
+centralPackageRepositoryCount 0

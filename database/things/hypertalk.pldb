@@ -3,9 +3,6 @@ appeared 1987
 type pl
 creators Dan Winkler
 
-patterns
- hasCentralPackageRepository? false
-
 wikipedia https://en.wikipedia.org/wiki/HyperTalk
  example
   on mouseUp 
@@ -33,3 +30,4 @@ hopl 1328
 rosettaCode HyperTalk
 
 corporateDevelopers Apple
+centralPackageRepositoryCount 0

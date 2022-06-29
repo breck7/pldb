@@ -2,9 +2,6 @@ title Yabasic
 appeared 1995
 type pl
 
-patterns
- hasCentralPackageRepository? false
-
 wikipedia https://en.wikipedia.org/wiki/Yabasic
  related unix linux
  summary Yabasic (Yet Another BASIC) is a free and open-source BASIC interpreter for Windows and Unix platforms. Yabasic was originally developed by Marc-Oliver Ihm, who released the last stable version 2.77.3 in 2016. From version 2.77.1, the project has adopted the MIT Licence as well as the source code being moved to GitHub to encourage others to participate in its development.
@@ -22,3 +19,5 @@ tryItOnline yabasic
 isOpenSource true
 
 rosettaCode Yabasic
+
+centralPackageRepositoryCount 0

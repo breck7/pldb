@@ -2,9 +2,6 @@ title WinWrap Basic
 appeared 1993
 type pl
 
-patterns
- hasCentralPackageRepository? false
-
 wikipedia https://en.wikipedia.org/wiki/WinWrap_Basic
  related visual-basic vbscript jscript vba hummingbird-quickscript
  summary WinWrap Basic (WWB) by Polar Engineering, Inc. is a third-party macro language based on Visual Basic used with programmes of various types  which its vendor touts as an alternative to ActiveX (e.g. VBScript, JScript, PerlScript, Rexx-based WSH engines and others), Visual Basic for Applications, and VSTA for this purpose. The WWB software package is used in conjunction with Microsoft development tools including Visual Studio, Visual Studio.NET, and the ActiveX scripting engines.  The default file extension for programmes written in this language is .wwb   WWB 10 has Windows Scripting Host functionality,  i.e. it contains a scripting engine similar to the default and third-party language implementations for WSH.  This engine is able to access both the .NET framework and the Component Object Model. The current version, 10.01, is available for different combinations of OS and platform. At this time there are four types of WWB, those being WWB.NET for the .NET object model (used with Visual Studio.NET 2005 and 2008 and Vista), .WWB-COM for the COM object model (Visual Studio and Visual Studio.NET earlier versions), both of which are used with all Windows 32 and 64-bit operating systems from Windows 95 to Windows Vista; the other two packages are for Windows CE and PocketPC & Windows Mobile. Earlier versions of WWB ran under Windows 3.1 and ostensibly OS/2 Warp 3 as well. WWB is integrated into many software packages including most categories of PC and server software (e.g. earlier versions of Host Explorer, which now uses two proprietary scripting languages, Hummingbird QuickScript and Hummingbird Basic)   as well as software used to run various types of equipment like mass spectrometers and other lab equipment.
@@ -16,3 +13,4 @@ wikipedia https://en.wikipedia.org/wiki/WinWrap_Basic
  appeared 2005
 
 status historical
+centralPackageRepositoryCount 0

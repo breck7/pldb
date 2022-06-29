@@ -2,9 +2,6 @@ title ThinBasic
 appeared 2004
 type pl
 
-patterns
- hasCentralPackageRepository? false
-
 wikipedia https://en.wikipedia.org/wiki/ThinBasic
  example
   ' Specifies program will use functions from console module
@@ -42,3 +39,4 @@ wikipedia https://en.wikipedia.org/wiki/ThinBasic
 
 status historical
 isOpenSource true
+centralPackageRepositoryCount 0

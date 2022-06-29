@@ -4,7 +4,6 @@ type pl
 
 patterns
  isLisp? true
- hasCentralPackageRepository? false
 
 wikipedia https://en.wikipedia.org/wiki/AutoLISP
  example
@@ -47,3 +46,5 @@ tiobe AutoLISP
 hopl 1842
 
 rosettaCode AutoLISP
+
+centralPackageRepositoryCount 0

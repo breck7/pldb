@@ -2,9 +2,6 @@ title POPLOG
 appeared 1992
 type pl
 
-patterns
- hasCentralPackageRepository? false
-
 wikipedia https://en.wikipedia.org/wiki/Poplog
  related pop-11 common-lisp prolog standard-ml spss scheme sparc solaris powerpc pop-2
  summary Poplog is a reflective, incrementally compiled software development environment for the programming languages POP-11, Common Lisp, Prolog, and Standard ML, originally created in the UK for teaching and research in artificial intelligence at the University of Sussex.
@@ -20,3 +17,4 @@ status historical
 hopl 1705
 
 visualParadigm false
+centralPackageRepositoryCount 0

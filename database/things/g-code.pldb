@@ -2,9 +2,6 @@ title G-code
 appeared 1950
 type pl
 
-patterns
- hasCentralPackageRepository? false
-
 wikipedia https://en.wikipedia.org/wiki/G-code
  related gerber-image labview punched-tape html css apt
  summary G-code (also RS-274), which has many variants, is the common name for the most widely used numerical control (NC) programming language. It is used mainly in computer-aided manufacturing to control automated machine tools. G-code is sometimes called G programming language, not to be confused with LabVIEW's G programming language. G-code is a language in which people tell computerized machine tools how to make something. The "how" is defined by g-code instructions provided to a machine controller (industrial computer) that tells the motors where to move, how fast to move, and what path to follow. The most common situation is that, within a machine tool, a cutting tool is moved according to these instructions through a toolpath and cuts away material to leave only the finished workpiece. The same concept also extends to noncutting tools such as forming or burnishing tools, photoplotting, additive methods such as 3D printing, and measuring instruments.
@@ -44,3 +41,4 @@ linguistGrammarRepo https://github.com/robotmaster/sublime-text-syntax-highlight
 
 status active
 fileType text
+centralPackageRepositoryCount 0

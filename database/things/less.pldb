@@ -3,9 +3,6 @@ appeared 2009
 type stylesheetLanguage
 creators Alexis Sellier
 
-patterns
- hasCentralPackageRepository? false
-
 wikipedia https://en.wikipedia.org/wiki/Less_(stylesheet_language)
  example
   #header {
@@ -60,3 +57,5 @@ wordRank 535
 isOpenSource true
 
 antlr https://github.com/antlr/grammars-v4/tree/master/less
+
+centralPackageRepositoryCount 0

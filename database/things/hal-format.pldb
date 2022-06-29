@@ -2,9 +2,6 @@ title HAL Format
 appeared 2012
 type binaryDataFormat
 
-patterns
- hasCentralPackageRepository? false
-
 description HAL is a graph-based structure to efficiently store and index multiple genome alignments and ancestral reconstructions. HAL files are represented in HDF5 format, an open standard for storing and indexing large, compressed scientific data sets. Genomes within HAL are organized according to the phylogenetic tree that relate them: each genome is segmented into pairwise DNA alignment blocks with respect to its parent and children (if present) in the tree. Note that if the phylogeny is unknown, a star tree can be used. The modularity provided by this tree-based decomposition allows for efficient querying of sub-alignments, as well as the ability to add, remove and update genomes within the alignment with only local modifications to the structure. Another important feature of HAL is reference independence: alignments in this format can be queried with respect to the coordinates of any genome they contain.
 
 githubRepo https://github.com/ComparativeGenomicsToolkit/hal
@@ -21,3 +18,4 @@ reference https://genome.ucsc.edu/FAQ/FAQformat.html#format1
 status active
 fileType binary
 isOpenSource true
+centralPackageRepositoryCount 0

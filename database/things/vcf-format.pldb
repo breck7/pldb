@@ -2,9 +2,6 @@ title Variant Call Format
 appeared 2011
 type textDataFormat
 
-patterns
- hasCentralPackageRepository? false
-
 wikipedia https://en.wikipedia.org/wiki/Variant_Call_Format
  example
   ##fileformat=VCFv4.3
@@ -43,3 +40,4 @@ wikipedia https://en.wikipedia.org/wiki/Variant_Call_Format
 reference https://academic.oup.com/bioinformatics/article/27/15/2156/402296
 status active
 fileType text
+centralPackageRepositoryCount 0

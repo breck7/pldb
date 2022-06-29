@@ -2,9 +2,6 @@ title ΛProlog
 appeared 1986
 type pl
 
-patterns
- hasCentralPackageRepository? false
-
 wikipedia https://en.wikipedia.org/wiki/%CE%9BProlog
  related prolog
  summary λProlog, also written lambda Prolog, is a logic programming language featuring polymorphic typing, modular programming, and higher-order programming.  These extensions to Prolog are derived from the higher-order hereditary Harrop formulas used to justify the foundations of λProlog.  Higher-order quantification, simply typed λ-terms, and higher-order unification gives λProlog the basic supports needed to capture the λ-tree syntax approach to higher-order abstract syntax, an approach to representing syntax that maps object-level bindings to programming language bindings.  Programmers in λProlog need not deal with bound variable names: instead various declarative devices are available to deal with binder scopes and their instantiations.  Since 1986, λProlog has received numerous implementations.  As of 2013, the language and its implementations are still actively being developed. The Abella theorem prover has been designed to provide an interactive environment for proving theorems about the declarative core of λProlog.
@@ -16,3 +13,4 @@ wikipedia https://en.wikipedia.org/wiki/%CE%9BProlog
  appeared 1986
 
 status historical
+centralPackageRepositoryCount 0

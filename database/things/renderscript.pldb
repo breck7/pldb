@@ -2,9 +2,6 @@ title RenderScript
 appeared 2011
 type pl
 
-patterns
- hasCentralPackageRepository? false
-
 description RenderScript is a component of the Android operating system for mobile devices that offers an API for acceleration that takes advantage of heterogeneous hardware. It allows developers to increase the performance of their applications at the cost of writing more complex (lower-level) code.
 
 wikipedia https://en.wikipedia.org/wiki/RenderScript
@@ -94,3 +91,4 @@ website http://developer.android.com/guide/topics/renderscript/index.html
 reference https://developer.android.com/guide/topics/renderscript/advanced
 status active
 fileType text
+centralPackageRepositoryCount 0

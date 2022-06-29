@@ -2,9 +2,6 @@ title Unity
 appeared 2005
 type library
 
-patterns
- hasCentralPackageRepository? false
-
 wikipedia https://en.wikipedia.org/wiki/Unity_(game_engine)
  related csharp linux ia-32 arm boo javascript opengl webgl metal cg hlsl ios android
  summary Unity is a cross-platform game engine developed by Unity Technologies, first announced and released in June 2005 at Apple Inc.'s Worldwide Developers Conference as an OS X-exclusive game engine. As of 2018, the engine has been extended to support 27 platforms. The engine can be used to create both three-dimensional and two-dimensional games as well as simulations for its many platforms. Several major versions of Unity have been released since its launch, with the latest stable version being Unity 2018.2.13, released on October 18, 2018.
@@ -26,3 +23,5 @@ isOpenSource false
 meetup unity
  memberCount 213536
  groupCount 565
+
+centralPackageRepositoryCount 0

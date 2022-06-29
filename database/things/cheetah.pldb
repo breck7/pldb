@@ -2,9 +2,6 @@ title CheetahTemplate
 appeared 2001
 type template
 
-patterns
- hasCentralPackageRepository? false
-
 wikipedia https://en.wikipedia.org/wiki/CheetahTemplate
  related python html linux
  summary Cheetah (or CheetahTemplate) is a template engine that uses the Python programming language.  It can be used standalone or combined with other tools and frameworks.  It is often used for server-side scripting and dynamic web content by generating HTML, but can also be used to generate source code.  Cheetah is free/open-source software licensed under the MIT License. Templating engines encourage clean separation of content, graphic design, and program code. This leads to more modular, flexible, and reusable site architectures, shorter development time, and code that is easier to understand and maintain.  Cheetah compiles templates into optimized, yet readable, Python code.  It gives template authors full access to any Python data and functionality, while providing a way for administrators to selectively restrict access to Python when needed. Cheetah is included in the FreeBSD Ports collection and several Linux distributions: Gentoo, Fedora, Debian, and Ubuntu among others.
@@ -18,3 +15,4 @@ wikipedia https://en.wikipedia.org/wiki/CheetahTemplate
 status active
 fileType text
 isOpenSource true
+centralPackageRepositoryCount 0

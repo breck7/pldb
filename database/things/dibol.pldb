@@ -2,9 +2,6 @@ title Digital Interactive Business Oriented Language
 appeared 1970
 type pl
 
-patterns
- hasCentralPackageRepository? false
-
 wikipedia https://en.wikipedia.org/wiki/DIBOL
  related basic fortran cobol
  summary DiBOL or Digital's Business Oriented Language is a general-purpose, procedural, imperative programming language, designed for use in Management Information Systems (MIS) software development. It has a syntax similar to FORTRAN and BASIC, along with BCD arithmetic. It shares the COBOL program structure of data and procedure divisions.
@@ -23,3 +20,5 @@ fileType text
 tiobe DiBOL
 
 hopl 503
+
+centralPackageRepositoryCount 0

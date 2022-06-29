@@ -3,7 +3,6 @@ appeared 2003
 type pl
 
 patterns
- hasCentralPackageRepository? false
  hasComments? true
  hasGarbageCollection? true
  hasMacros? true
@@ -69,3 +68,5 @@ projectEuler Factor
 codeMirror factor
 
 rosettaCode Factor
+
+centralPackageRepositoryCount 0

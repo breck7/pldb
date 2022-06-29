@@ -2,9 +2,6 @@ title LLVM IR
 appeared 2003
 type ir
 
-patterns
- hasCentralPackageRepository? false
-
 wikipedia https://en.wikipedia.org/wiki/LLVM
  example
   @.str = internal constant [14 x i8] c"hello, world\0A\00"
@@ -46,3 +43,5 @@ linkedInSkill llvm
 quineRelay LLVM asm
 
 ubuntuPackage llvm
+
+centralPackageRepositoryCount 0

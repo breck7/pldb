@@ -2,9 +2,6 @@ title Sage
 appeared 2005
 type pl
 
-patterns
- hasCentralPackageRepository? false
-
 wikipedia https://en.wikipedia.org/wiki/SageMath
  example
   sage: E2 = EllipticCurve(CC, [0,0,-2,1,1])
@@ -187,3 +184,4 @@ projectEuler Sage
   2022 312
 
 jupyterKernel http://www.sagemath.org/
+centralPackageRepositoryCount 0

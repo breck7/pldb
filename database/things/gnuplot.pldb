@@ -2,9 +2,6 @@ title Gnuplot
 appeared 1986
 type application
 
-patterns
- hasCentralPackageRepository? false
-
 wikipedia https://en.wikipedia.org/wiki/Gnuplot
  example
   set title "Some Math Functions"
@@ -63,3 +60,4 @@ ubuntuPackage gnuplot
 rosettaCode Gnuplot
 
 jupyterKernel https://github.com/has2k1/gnuplot_kernel
+centralPackageRepositoryCount 0

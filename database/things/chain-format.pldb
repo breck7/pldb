@@ -19,10 +19,8 @@ example
  10      0       4
  70
 
-patterns
- hasCentralPackageRepository? false
-
 description The chain format describes a pairwise alignment that allow gaps in both sequences simultaneously. Each set of chain alignments starts with a header line, contains one or more alignment data lines, and terminates with a blank line. The format is deliberately quite dense.
 reference https://genome.ucsc.edu/goldenPath/help/chain.html
 status active
 fileType text
+centralPackageRepositoryCount 0

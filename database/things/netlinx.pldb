@@ -2,9 +2,6 @@ title NetLinx
 appeared 2007
 type pl
 
-patterns
- hasCentralPackageRepository? false
-
 wikipedia https://en.wikipedia.org/wiki/NetLinx
  related c ascii
  summary NetLinx is both a range of controllers manufactured by AMX and the name of the proprietary programming language (loosely based on C) used to program the devices.  The NetLinx controllers are rack mountable devices which run a version of VxWorks and integrate both a processor and device controllers and are typically utilized for audio-visual control systems. An example is the mid-range NetLinx Integrated NI-2100 controller which has 3 RS-232/RS-485 serial ports, 4 relays, 4 infrared/serial ports and 4 input/outputs.  Serial ports can send and receive strings, typically ASCII instructions and replies. Relays permit switching of modest currents. IR ports can send infrared signals which emulate typical remote control devices that control (for instance) televisions and video recorders. Input/output ports detect contact closures. AMX supplies an IDE known as NetLinx Studio which allows a proprietary language to be edited, compiled and sent to the NetLinx controller.  NetLinx also contains an interface which allows it to utilize Java based modules. Earlier models of AMX controller were named Axcent.
@@ -164,3 +161,4 @@ reference http://habitech.s3.amazonaws.com/PDFs/AMX/AMX-FG1906-18/NetLinx.Langua
 status active
 fileExtensions axserb axierb
 fileType text
+centralPackageRepositoryCount 0

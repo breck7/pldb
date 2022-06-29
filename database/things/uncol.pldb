@@ -2,9 +2,6 @@ title UNCOL
 appeared 1958
 type ir
 
-patterns
- hasCentralPackageRepository? false
-
 wikipedia https://en.wikipedia.org/wiki/UNCOL
  related compiler-compiler llvmir
  summary UNCOL (Universal Computer Oriented Language) was a proposed universal intermediate language for compilers introduced by Melvin E. Conway in 1958. It was never fully specified or implemented; in many ways it was more a concept than a language. UNCOL was intended to make compilers economically available for each new instruction set architecture and programming language. Each machine architecture would require just one compiler back end, and each programming language would require one compiler front end. This was a very ambitious goal in 1961 because compiler technology was in its infancy, and little was standardized in computer hardware and software. The concept of such a universal intermediate language is old: the SHARE report (1958) already says "[it has] been discussed by many independent persons as long ago as 1954." Macrakis (1993) summarizes its fate:  UNCOL was an ambitious effort for the early 1960s. An attempt to solve the compiler-writing problem, it ultimately failed because language and compiler technology were not yet mature. In the 1970s, compiler-compilers ultimately contributed to solving the problem that UNCOL set itself: the economical production of compilers for new languages and new machines.  UNCOL is sometimes used as a generic term for the idea of a universal intermediate language. The Architecture Neutral Distribution Format is an example of an UNCOL in this sense.
@@ -19,3 +16,5 @@ status historical
 fileType text
 
 hopl 143
+
+centralPackageRepositoryCount 0

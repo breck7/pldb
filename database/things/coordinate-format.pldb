@@ -9,9 +9,6 @@ example
  0  250.5    0     -280    33.32
  0    0      0       0     12
 
-patterns
- hasCentralPackageRepository? false
-
 wikipedia https://en.wikipedia.org/wiki/Matrix_Market_exchange_formats
  related ascii harwell-boeing-format
  summary The Matrix Market exchange formats are a set of human readable, ASCII-based file formats designed to facilitate the exchange of matrix data.  The file formats were designed and adopted for the Matrix Market, a NIST repository for test data for use in comparative studies of algorithms for numerical linear algebra.
@@ -24,3 +21,4 @@ wikipedia https://en.wikipedia.org/wiki/Matrix_Market_exchange_formats
 website https://math.nist.gov/MatrixMarket/formats.html#MMformat
 status active
 fileType text
+centralPackageRepositoryCount 0

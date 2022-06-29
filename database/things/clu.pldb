@@ -3,9 +3,6 @@ appeared 1975
 type pl
 creators Barbara Liskov
 
-patterns
- hasCentralPackageRepository? false
-
 wikipedia https://en.wikipedia.org/wiki/CLU_(programming_language)
  example
   complex_number = cluster is add, subtract, multiply, ...
@@ -32,3 +29,5 @@ fileType text
 tiobe CLU
 
 hopl 637
+
+centralPackageRepositoryCount 0

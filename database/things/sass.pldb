@@ -3,7 +3,6 @@ appeared 2006
 type stylesheetLanguage
 
 patterns
- hasCentralPackageRepository? false
  hasSemanticIndentation? true
 
 wikipedia https://en.wikipedia.org/wiki/Sass_(stylesheet_language)
@@ -66,3 +65,5 @@ fileType text
 isOpenSource true
 
 codeMirror sass
+
+centralPackageRepositoryCount 0

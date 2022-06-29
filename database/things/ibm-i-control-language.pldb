@@ -2,9 +2,6 @@ title IBM i Control Language
 appeared 1993
 type pl
 
-patterns
- hasCentralPackageRepository? false
-
 wikipedia https://en.wikipedia.org/wiki/IBM_i_Control_Language
  example
   PGM (&IN &TYP)
@@ -39,3 +36,4 @@ wikipedia https://en.wikipedia.org/wiki/IBM_i_Control_Language
  appeared 2004
 
 status historical
+centralPackageRepositoryCount 0

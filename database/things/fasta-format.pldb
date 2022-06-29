@@ -2,9 +2,6 @@ title FASTA format
 appeared 2004
 type textDataFormat
 
-patterns
- hasCentralPackageRepository? false
-
 wikipedia https://en.wikipedia.org/wiki/FASTA_format
  example
   >SEQUENCE_1
@@ -28,3 +25,5 @@ status active
 fileType text
 
 antlr https://github.com/antlr/grammars-v4/tree/master/fasta
+
+centralPackageRepositoryCount 0

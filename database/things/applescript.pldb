@@ -3,7 +3,6 @@ appeared 1993
 type pl
 
 patterns
- hasCentralPackageRepository? false
  hasComments? true
  hasGarbageCollection? true
  hasMessagePassing? true
@@ -96,3 +95,4 @@ hopl 1830
 rosettaCode AppleScript
 
 corporateDevelopers Apple
+centralPackageRepositoryCount 0

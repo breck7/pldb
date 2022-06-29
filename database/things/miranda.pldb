@@ -3,7 +3,6 @@ appeared 1985
 type pl
 
 patterns
- hasCentralPackageRepository? false
  hasSemanticIndentation? true
 
 wikipedia https://en.wikipedia.org/wiki/Miranda_(programming_language)
@@ -29,3 +28,5 @@ status historical
 fileType text
 
 hopl 911
+
+centralPackageRepositoryCount 0

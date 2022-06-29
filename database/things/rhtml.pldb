@@ -9,9 +9,6 @@ example
    <% end %>
  </ul>
 
-patterns
- hasCentralPackageRepository? false
-
 description RHTML is HTML mixed with Ruby, using HTML tags. All of Ruby is available for programming along with HTML.
 
 githubLanguage RHTML
@@ -27,3 +24,4 @@ linguistGrammarRepo https://github.com/atom/language-ruby
 reference https://www.tutorialspoint.com/ruby-on-rails/rails-and-rhtml.htm
 status active
 fileType text
+centralPackageRepositoryCount 0

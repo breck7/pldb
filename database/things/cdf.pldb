@@ -2,9 +2,6 @@ title Common Data Format
 appeared 1985
 type binaryDataFormat
 
-patterns
- hasCentralPackageRepository? false
-
 wikipedia https://en.wikipedia.org/wiki/Common_Data_Format
  related hdf
  summary Common Data Format (CDF) is a library and toolkit that was developed by the National Space Science Data Center (NSSDC) at NASA starting in 1985. The software is an interface for the storage and manipulation of multi-dimensional data sets.
@@ -18,3 +15,4 @@ wikipedia https://en.wikipedia.org/wiki/Common_Data_Format
 standsFor Common Data Format
 status active
 fileType binary
+centralPackageRepositoryCount 0

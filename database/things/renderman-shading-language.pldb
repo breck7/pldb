@@ -2,9 +2,6 @@ title RenderMan Shading Language
 appeared 1989
 type pl
 
-patterns
- hasCentralPackageRepository? false
-
 wikipedia https://en.wikipedia.org/wiki/RenderMan_Shading_Language
  example
   float length(vector v) {
@@ -22,3 +19,5 @@ wikipedia https://en.wikipedia.org/wiki/RenderMan_Shading_Language
 status historical
 
 hopl 1518
+
+centralPackageRepositoryCount 0

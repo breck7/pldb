@@ -7,9 +7,6 @@ example
  X - 5*Y + Z = 10,
  2*X + 3*Y -Z = 20.
 
-patterns
- hasCentralPackageRepository? false
-
 wikipedia https://en.wikipedia.org/wiki/CLP(R)
  example
   3*X + 4*Y - 2*Z = 8,
@@ -29,3 +26,5 @@ country AU
 fileType text
 
 hopl 1205
+
+centralPackageRepositoryCount 0

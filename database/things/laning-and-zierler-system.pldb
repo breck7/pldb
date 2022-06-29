@@ -2,9 +2,6 @@ title Laning and Zierler system
 appeared 1953
 type pl
 
-patterns
- hasCentralPackageRepository? false
-
 wikipedia https://en.wikipedia.org/wiki/Laning_and_Zierler_system
  example
   1 x = 0,
@@ -22,3 +19,5 @@ wikipedia https://en.wikipedia.org/wiki/Laning_and_Zierler_system
 status historical
 
 hopl 6
+
+centralPackageRepositoryCount 0

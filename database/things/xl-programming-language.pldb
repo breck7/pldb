@@ -3,7 +3,6 @@ appeared 2000
 type pl
 
 patterns
- hasCentralPackageRepository? false
  hasSemanticIndentation? true
  hasTemplates? true
 
@@ -23,3 +22,4 @@ wikipedia https://en.wikipedia.org/wiki/XL_(programming_language)
 website http://xlr.sourceforge.net/
 status historical
 isOpenSource true
+centralPackageRepositoryCount 0

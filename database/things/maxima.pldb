@@ -3,7 +3,6 @@ appeared 1982
 type pl
 
 patterns
- hasCentralPackageRepository? false
  hasComments? true
 
 wikipedia https://en.wikipedia.org/wiki/Maxima_(software)
@@ -31,3 +30,4 @@ projectEuler Maxima
 rosettaCode Maxima
 
 jupyterKernel https://github.com/robert-dodier/maxima-jupyter
+centralPackageRepositoryCount 0

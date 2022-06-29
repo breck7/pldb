@@ -3,7 +3,6 @@ appeared 2006
 type pl
 
 patterns
- hasCentralPackageRepository? false
  hasSemanticIndentation? true
 
 description The multicore Propeller microcontroller opens up a new level of invention possibilities for students. Programming it in its native high-level language, Spin, makes optimal use of this unique and powerful multicore microcontroller. Spin's design was inspired by great attributes of three other languages, Delphi, C, and Python, and by envisioning new solutions to common programming problems. Like Python, Spin uses indentation whitespace, rather than curly braces or keywords, to delimit blocks.
@@ -207,3 +206,5 @@ fileType text
 wordRank 5184
 
 rosettaCode Spin
+
+centralPackageRepositoryCount 0

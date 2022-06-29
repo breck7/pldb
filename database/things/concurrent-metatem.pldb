@@ -2,9 +2,6 @@ title Concurrent METATEM
 appeared 1993
 type pl
 
-patterns
- hasCentralPackageRepository? false
-
 wikipedia https://en.wikipedia.org/wiki/Concurrent_MetateM
  summary Concurrent MetateM is a multi-agent language in which each agent is programmed using a set of (augmented) temporal logic specifications of the behaviour it should exhibit. These specifications are executed directly to generate the behaviour of the agent. As a result, there is no risk of invalidating the logic as with systems where logical specification must first be translated to a lower-level implementation. The root of the MetateM concept is Gabbay's separation theorem; any arbitrary temporal logic formula can be rewritten in a logically equivalent past → future form. Execution proceeds by a process of continually matching rules against a history, and firing those rules when antecedents are satisfied. Any instantiated future-time consequents become commitments which must subsequently be satisfied, iteratively generating a model for the formula made up of the program rules.
  backlinksCount 12
@@ -17,3 +14,5 @@ reference https://semanticscholar.org/paper/1716556a2336d202f6ddeaafd9566004e1a7
 status historical
 
 hopl 5661
+
+centralPackageRepositoryCount 0

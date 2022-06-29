@@ -2,9 +2,6 @@ title CWEB
 appeared 1987
 type pl
 
-patterns
- hasCentralPackageRepository? false
-
 wikipedia https://en.wikipedia.org/wiki/CWEB
  example
   % This file is part of CWEB.
@@ -87,3 +84,5 @@ fileType text
 isOpenSource true
 
 hopl 1939
+
+centralPackageRepositoryCount 0

@@ -2,9 +2,6 @@ title APSE
 appeared 1980
 type pl
 
-patterns
- hasCentralPackageRepository? false
-
 wikipedia https://en.wikipedia.org/wiki/APSE
  related ada unix
  summary APSE standing for Ada Programming Support Environment was a specification for a programming environment to support software development in the Ada programming language. This represented the second stage of the U.S. military Ada project; once the language was implemented, it was felt necessary to specify and implement a standard set of tools, hence the APSE. CAIS-A, Common APSE Interface Set A, was defined in MIL STD-1838A. CAIS defines a set of Ada APIs to enable portability of development tools across operating systems. As of 1988, CAIS implementations were under development for Unix, VMS and IBM MVS.
@@ -17,3 +14,5 @@ wikipedia https://en.wikipedia.org/wiki/APSE
 status historical
 
 hopl 1273
+
+centralPackageRepositoryCount 0

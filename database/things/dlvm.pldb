@@ -15,10 +15,8 @@ example
      return %0.2: <_ x _ x f32>
  }
 
-patterns
- hasCentralPackageRepository? false
-
 description Modern Compiler Infrastructure for Deep Learning Systems
 website http://dlvm.org/
 status active
 fileType text
+centralPackageRepositoryCount 0

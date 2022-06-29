@@ -2,9 +2,6 @@ title EUMEL
 appeared 1979
 type pl
 
-patterns
- hasCentralPackageRepository? false
-
 wikipedia https://en.wikipedia.org/wiki/Eumel
  related elan powerpc
  summary EUMEL (pronounced oimel for Extendable Multi User Microprocessor ELAN System and also known as L2 for Liedtke 2) is an operating system which began as a run-time environment for the ELAN programming language. It was created in 1979 by Jochen Liedtke at the University of Bielefeld. EUMEL initially ran on the 8-bit Z80 processor, and was later ported to many different architectures. EUMEL is based on a virtual machine using a bitcode and achieves remarkable performance and functionality. Z80-based EUMEL systems provide full multi-user multi-tasking operation with virtual memory management and complete isolation of one process against all others. These systems usually execute ELAN programs faster than equivalent programs written in languages such as BASIC, Pascal, or Cobol and compiled into Z80 machine language on other operating systems. One of the main features of EUMEL is that it is persistent, using a fixpoint/restart logic.  This means that if the power fails you only lose a couple of minutes of work: upon restart you continue working from the previous fixpoint with all program state fully intact. This is also known as orthogonal persistence.  EUMEL was followed by L3 and later L4.
@@ -17,3 +14,5 @@ wikipedia https://en.wikipedia.org/wiki/Eumel
 status historical
 
 hopl 3459
+
+centralPackageRepositoryCount 0

@@ -3,9 +3,6 @@ appeared 1986
 type pl
 creators Niklaus Wirth
 
-patterns
- hasCentralPackageRepository? false
-
 wikipedia https://en.wikipedia.org/wiki/Oberon_(programming_language)
  example
   MODULE Rectangles;
@@ -68,3 +65,5 @@ projectEuler Oberon
   2022 3
 
 hopl 1415
+
+centralPackageRepositoryCount 0

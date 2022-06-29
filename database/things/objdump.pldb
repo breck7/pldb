@@ -2,9 +2,6 @@ title ObjDump
 appeared 1991
 type application
 
-patterns
- hasCentralPackageRepository? false
-
 wikipedia https://en.wikipedia.org/wiki/objdump
  example
   4004ed:	55                   	push   rbp
@@ -46,3 +43,4 @@ linguistGrammarRepo https://github.com/nanoant/assembly.tmbundle
 
 status active
 fileType text
+centralPackageRepositoryCount 0

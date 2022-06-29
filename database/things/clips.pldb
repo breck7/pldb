@@ -18,9 +18,6 @@ example
        =>
       (assert (car_problem (name starter) (status faulty))))
 
-patterns
- hasCentralPackageRepository? false
-
 wikipedia https://en.wikipedia.org/wiki/CLIPS
  example
   (deftemplate car_problem
@@ -353,3 +350,5 @@ wordRank 2427
 hopl 1759
 
 rosettaCode CLIPS
+
+centralPackageRepositoryCount 0

@@ -2,9 +2,6 @@ title Janus time-reversible computing programming language
 appeared 1982
 type pl
 
-patterns
- hasCentralPackageRepository? false
-
 wikipedia https://en.wikipedia.org/wiki/Janus_(time-reversible_computing_programming_language)
  example
   procedure fib
@@ -25,3 +22,4 @@ wikipedia https://en.wikipedia.org/wiki/Janus_(time-reversible_computing_program
  appeared 1982
 
 status historical
+centralPackageRepositoryCount 0

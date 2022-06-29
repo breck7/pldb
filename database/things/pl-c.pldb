@@ -2,9 +2,6 @@ title PL/C
 appeared 1973
 type pl
 
-patterns
- hasCentralPackageRepository? false
-
 wikipedia https://en.wikipedia.org/wiki/PL/C
  related pl-i cornell-university-programming-language sp-k watfiv
  summary PL/C is a computer programming language developed at Cornell University with the specific goal of being used for teaching programming.  It is based on  IBM's PL/I language, and was designed in the early 1970s.  Cornell also developed a compiler for the language that was based on its earlier CUPL compiler, and it was widely used in college-level programming courses.  The two researchers and academic teachers who designed PL/C were Richard W. Conway and Thomas R. Wilcox. They submitted the famous article "Design and implementation of a diagnostic compiler for PL/I" published in the Communications of ACM in March 1973, pages 169-179.   PL/C eliminated some of the more complex features of PL/I, and added extensive debugging and error recovery facilities. PL/C is a subset of PL/I.   A program that runs without error under the PL/C compiler should run under PL/I and produce the  same results, unless certain incompatible diagnostic features, such as a  macro section (begun by a $MACRO statement and finished by a $MEND statement), were used.The PL/C compiler had the unusual capability of never failing to compile any program, through the use of extensive automatic correction of many syntax errors and by converting any remaining syntax errors to output statements.
@@ -20,3 +17,5 @@ country US
 fileType text
 
 hopl 650
+
+centralPackageRepositoryCount 0

@@ -4,7 +4,6 @@ type pl
 creators Jeremy Ashkenas
 
 patterns
- hasCentralPackageRepository? false
  hasComments? true
  hasSemanticIndentation? true
  hasLineComments? true
@@ -80,3 +79,4 @@ rosettaCode CoffeeScript
 
 lineCommentKeyword #
 jupyterKernel https://github.com/n-riesco/jp-coffeescript
+centralPackageRepositoryCount 0

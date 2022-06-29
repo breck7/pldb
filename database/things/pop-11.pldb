@@ -3,7 +3,6 @@ appeared 1999
 type pl
 
 patterns
- hasCentralPackageRepository? false
  hasMultipleInheritance? true
 
 wikipedia https://en.wikipedia.org/wiki/POP-11
@@ -36,3 +35,5 @@ country GB
 fileType text
 
 hopl 689
+
+centralPackageRepositoryCount 0

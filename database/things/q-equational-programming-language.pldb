@@ -2,9 +2,6 @@ title Q equational programming language
 appeared 1991
 type pl
 
-patterns
- hasCentralPackageRepository? false
-
 wikipedia https://en.wikipedia.org/wiki/Q_(equational_programming_language)
  example
   extern int puts(char*);
@@ -21,3 +18,4 @@ wikipedia https://en.wikipedia.org/wiki/Q_(equational_programming_language)
 
 status historical
 isOpenSource true
+centralPackageRepositoryCount 0

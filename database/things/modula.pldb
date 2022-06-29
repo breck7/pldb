@@ -3,9 +3,6 @@ appeared 1975
 type pl
 creators Niklaus Wirth
 
-patterns
- hasCentralPackageRepository? false
-
 wikipedia https://en.wikipedia.org/wiki/Modula
  related pascal alma-0 go modula-2
  summary The Modula programming language is a descendant of the Pascal programming language. It was developed in Switzerland in the 1970s by Niklaus Wirth, the same person who designed Pascal. The main innovation of Modula over Pascal is a module system, used for grouping sets of related declarations into program units; hence the name Modula. The language is defined in a report by Wirth called Modula. A language for modular multiprogramming published 1976. Modula was first implemented by Niklaus Wirth himself on a PDP-11. Very soon other implementations followed, most important the University of York Modula compiler and a compiler developed at Philips Laboratories named PL Modula, which generated code for the LSI-11 microprocessor. The development of Modula was discontinued soon after its publication. Wirth then concentrated his efforts on Modula's successor, Modula-2.
@@ -21,3 +18,5 @@ country CH
 fileType text
 
 hopl 771
+
+centralPackageRepositoryCount 0

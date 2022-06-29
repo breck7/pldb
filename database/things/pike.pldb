@@ -4,7 +4,6 @@ type pl
 creators Fredrik Hübinette
 
 patterns
- hasCentralPackageRepository? false
  hasComments? true
  hasLineComments? true
   // A comment
@@ -76,3 +75,4 @@ ubuntuPackage pike8.0
 rosettaCode Pike
 lineCommentKeyword //
 jupyterKernel https://github.com/kevinior/jupyter-pike-kernel
+centralPackageRepositoryCount 0

@@ -2,9 +2,6 @@ title DIAGRAM
 appeared 1980
 type pl
 
-patterns
- hasCentralPackageRepository? false
-
 wikipedia https://en.wikipedia.org/wiki/Diagram
  related uml drakon ladder-logic
  summary A diagram is a symbolic representation of information according to some visualization technique. Diagrams have been used since ancient times, but became more prevalent during the Enlightenment.  Sometimes, the technique uses a three-dimensional visualization which is then projected onto a two-dimensional surface. The word graph is sometimes used as a synonym for diagram.
@@ -19,3 +16,5 @@ status historical
 wordRank 6435
 
 hopl 7795
+
+centralPackageRepositoryCount 0

@@ -2,9 +2,6 @@ title SYMPL
 appeared 1970
 type pl
 
-patterns
- hasCentralPackageRepository? false
-
 wikipedia https://en.wikipedia.org/wiki/SYMPL
  related jovial fortran
  summary SYMPL is an obsolete programming language developed by the Control Data Corporation (CDC) for use on the CDC 6000 series computer systems in the 1970s and 1980s.  It was based on a subset of CDCs version of JOVIAL, as an alternative to assembly language.  A number of important CDC software products were implemented in SYMPL, including compilers, libraries, a full-screen editor, and major subsystems. SYMPL is a compiled, imperative, and procedural language.  Compared to the Fortran of the day, SYMPL supports:  Stronger data typing - All variables must be declared prior to use, Data structures - Including "based" dynamically allocated structures, Structured programming constructs, Nested procedures, In-fix "bead" (bit) and character manipulation A simple macro facilitySimplifications compared to JOVIAL include: fewer built-in data types, no recursive calls to procedures, and no COMPOOL concept.
@@ -20,3 +17,5 @@ country US
 fileType text
 
 hopl 699
+
+centralPackageRepositoryCount 0

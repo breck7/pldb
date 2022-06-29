@@ -3,7 +3,6 @@ appeared 1977
 type pl
 
 patterns
- hasCentralPackageRepository? false
  hasComments? true
 
 wikipedia https://en.wikipedia.org/wiki/M4_(computer_language)
@@ -90,3 +89,5 @@ quineRelay M4
 ubuntuPackage m4
 
 rosettaCode M4
+
+centralPackageRepositoryCount 0

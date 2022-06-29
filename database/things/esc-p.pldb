@@ -2,9 +2,6 @@ title ESC/P
 appeared 1992
 type pl
 
-patterns
- hasCentralPackageRepository? false
-
 wikipedia https://en.wikipedia.org/wiki/ESC/P
  related postscript
  summary ESC/P, short for Epson Standard Code for Printers and sometimes styled Escape/P, is a printer control language developed by Epson to control computer printers. It was mainly used in dot matrix printers and some inkjet printers, and is still widely used in many receipt printers. During the era of dot matrix printers, it was also used by other manufacturers (e.g., NEC), sometimes in modified form. At the time, it was a popular mechanism to add formatting to printed text, and was widely supported in software.
@@ -17,3 +14,5 @@ wikipedia https://en.wikipedia.org/wiki/ESC/P
 status historical
 
 hopl 5581
+
+centralPackageRepositoryCount 0

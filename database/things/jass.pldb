@@ -2,9 +2,6 @@ title Just Another Scripting Syntax
 appeared 2009
 type pl
 
-patterns
- hasCentralPackageRepository? false
-
 wikipedia https://en.wikipedia.org/wiki/JASS
  example
   function Trig_JASS_testPreloadExploit_Actions takes nothing returns nothing
@@ -22,3 +19,4 @@ wikipedia https://en.wikipedia.org/wiki/JASS
 standsFor Just Another Scripting Syntax
 status historical
 fileType text
+centralPackageRepositoryCount 0

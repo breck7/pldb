@@ -2,9 +2,6 @@ title GraphML
 appeared 2001
 type xmlFormat
 
-patterns
- hasCentralPackageRepository? false
-
 wikipedia https://en.wikipedia.org/wiki/GraphML
  example
   <?xml version="1.0" encoding="UTF-8"?>
@@ -27,3 +24,4 @@ wikipedia https://en.wikipedia.org/wiki/GraphML
  appeared 2001
 
 status historical
+centralPackageRepositoryCount 0

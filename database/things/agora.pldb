@@ -2,9 +2,6 @@ title Agora programming language
 appeared 1993
 type pl
 
-patterns
- hasCentralPackageRepository? false
-
 wikipedia https://en.wikipedia.org/wiki/Agora_(programming_language)
  related java
  summary Agora is a reflective, prototype-based, object-oriented programming language that is based exclusively on message passing and not delegation. Agora was intended to show that even subject to that limit, it is possible to build a full object-oriented language that features inheritance, cloning and reflective operators.
@@ -19,3 +16,5 @@ status historical
 fileType text
 
 hopl 1794
+
+centralPackageRepositoryCount 0

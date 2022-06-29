@@ -2,9 +2,6 @@ title Real-time Cmix
 appeared 1992
 type pl
 
-patterns
- hasCentralPackageRepository? false
-
 wikipedia https://en.wikipedia.org/wiki/Real-time_Cmix
  related tcp linux minc c supercollider
  summary Real-Time Cmix (RTcmix) is one of the MUSIC-N family of computer music programming languages.  RTcmix is descended from the MIX program developed by Paul Lansky at Princeton University in 1978 to perform algorithmic composition using digital audio soundfiles on a IBM 3031 mainframe computer.  After synthesis functions were added, the program was renamed Cmix in the 1980s.  Real-time capability was added by Brad Garton and David Topper in the mid-1990s, with support for TCP socket connectivity,  interactive control of the scheduler, and object-oriented embedding of the synthesis engine into fully featured applications. Over the years Cmix/RTcmix has run on a variety of computer platforms and operating systems, including NeXT, Sun Microsystems, IRIX, Linux, and Mac OS X.  It is and has always been an open source project, differentiating it from commercial synthesizers and music software.  It is currently developed by a group of computer music researchers at Princeton, Columbia University, and the University of Virginia. RTcmix has a number of unique (or highly unusual) features when compared with other synthesis and signal processing languages.  For one, it has a built-in MINC parser, which enables the user to write C-style code within the score file, extending its innate capability for algorithmic composition and making it closer in some respects to later music software such as SuperCollider and Max/MSP.  It uses a single-script instruction file (the score file), and synthesis and signal processing routines (called instruments) exist as compile  shared libraries.  This is different from MUSIC-N languages such as  Csound where the instruments exist in a second file written in a specification language that builds the routines out of simple building blocks (organized as opcodes or unit generators).  RTcmix has similar functionality to Csound and other computer music languages, however, and their shared lineage means that scripts written for one language will be extremely familiar-looking (if not immediately comprehensible) to users of the other language.
@@ -16,3 +13,4 @@ wikipedia https://en.wikipedia.org/wiki/Real-time_Cmix
  appeared 1978
 
 status historical
+centralPackageRepositoryCount 0

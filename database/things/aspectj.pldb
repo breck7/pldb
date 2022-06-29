@@ -2,9 +2,6 @@ title AspectJ
 appeared 2001
 type pl
 
-patterns
- hasCentralPackageRepository? false
-
 wikipedia https://en.wikipedia.org/wiki/AspectJ
  example
   pointcut set() : execution(* set*(..) ) && this(Point);
@@ -89,3 +86,5 @@ ubuntuPackage aspectj
 rosettaCode AspectJ
 
 antlr https://github.com/antlr/grammars-v4/tree/master/aspectj
+
+centralPackageRepositoryCount 0

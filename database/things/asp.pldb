@@ -2,9 +2,6 @@ title Active Server Pages
 appeared 1996
 type template
 
-patterns
- hasCentralPackageRepository? false
-
 wikipedia https://en.wikipedia.org/wiki/Active_Server_Pages
  example
   <%
@@ -52,3 +49,5 @@ isOpenSource false
 hopl 5356
 
 rosettaCode ASP
+
+centralPackageRepositoryCount 0

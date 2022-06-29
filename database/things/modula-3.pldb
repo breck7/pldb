@@ -3,7 +3,6 @@ appeared 1986
 type pl
 
 patterns
- hasCentralPackageRepository? false
  hasComments? true
  hasLineComments? false
 
@@ -277,3 +276,4 @@ hopl 1411
 
 rosettaCode Modula-3
 reference https://www.cs.purdue.edu/homes/hosking/m3/reference/syntax.html
+centralPackageRepositoryCount 0

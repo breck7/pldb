@@ -15,9 +15,6 @@ example
  \subsection{Íslenska}
  Hver maður er borinn frjáls og jafn öðrum að virðingu og réttindum.
 
-patterns
- hasCentralPackageRepository? false
-
 wikipedia https://en.wikipedia.org/wiki/XeTeX
  example
   % Encoding: UTF8
@@ -48,3 +45,4 @@ website http://xetex.sourceforge.net
 status active
 fileType text
 isOpenSource true
+centralPackageRepositoryCount 0

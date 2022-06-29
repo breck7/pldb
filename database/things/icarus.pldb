@@ -2,9 +2,6 @@ title icarus
 appeared 2015
 type pl
 
-patterns
- hasCentralPackageRepository? false
-
 description <a href='https://github.com/mkfifo/icarus'>Icarus</a> is a minimum-viable type-safe imperative language designed to serve as a platform for exploring mutation and general side-effect control.
 
 githubRepo https://github.com/mkfifo/icarus
@@ -20,3 +17,4 @@ githubRepo https://github.com/mkfifo/icarus
 status active
 fileType text
 isOpenSource true
+centralPackageRepositoryCount 0

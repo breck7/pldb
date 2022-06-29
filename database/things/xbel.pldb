@@ -2,9 +2,6 @@ title XBEL
 appeared 2006
 type pl
 
-patterns
- hasCentralPackageRepository? false
-
 wikipedia https://en.wikipedia.org/wiki/XBEL
  related xml python
  summary The XML Bookmark Exchange Language (XBEL), is an open XML standard for sharing Internet URIs, also known as bookmarks (or favorites in Internet Explorer). An example of XBEL use is the XBELicious application, which stores Del.icio.us bookmarks in XBEL format. The Galeon, Konqueror, Arora and Midori web browsers use XBEL as the format for storing user bookmarks. The SiteBar bookmark server can import and export bookmarks in XBEL format. XBEL was created by the Python XML Special Interest Group "to create an interesting, fun project which was both useful and would demonstrate the Python XML processing software which was being developed at the time".It is also used by Nautilus and gedit of the GNOME desktop environment.
@@ -16,3 +13,4 @@ wikipedia https://en.wikipedia.org/wiki/XBEL
  appeared 2006
 
 status historical
+centralPackageRepositoryCount 0

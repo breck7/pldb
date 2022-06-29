@@ -2,9 +2,6 @@ title Committee on Uniform Security Identification Procedures
 appeared 1968
 type schema
 
-patterns
- hasCentralPackageRepository? false
-
 wikipedia https://en.wikipedia.org/wiki/CUSIP
  example
   algorithm Cusip-Check-Digit(cusip) is
@@ -44,3 +41,4 @@ wikipedia https://en.wikipedia.org/wiki/CUSIP
 
 standsFor Committee on Uniform Security Identification Procedures
 status historical
+centralPackageRepositoryCount 0

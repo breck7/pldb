@@ -2,9 +2,6 @@ title PIZZA
 appeared 2001
 type pl
 
-patterns
- hasCentralPackageRepository? false
-
 wikipedia https://en.wikipedia.org/wiki/Pizza_(programming_language)
  example
   public final class Main {
@@ -33,3 +30,5 @@ fileType text
 wordRank 4629
 
 hopl 2376
+
+centralPackageRepositoryCount 0

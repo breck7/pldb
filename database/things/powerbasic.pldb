@@ -2,9 +2,6 @@ title PowerBASIC
 appeared 1989
 type pl
 
-patterns
- hasCentralPackageRepository? false
-
 wikipedia https://en.wikipedia.org/wiki/PowerBASIC
  example
   #Compile Exe ' using either PBCC6 or PBWIN10 compiler
@@ -31,3 +28,5 @@ wikipedia https://en.wikipedia.org/wiki/PowerBASIC
 status historical
 
 rosettaCode PowerBASIC
+
+centralPackageRepositoryCount 0

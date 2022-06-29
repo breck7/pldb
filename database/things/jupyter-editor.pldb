@@ -2,9 +2,6 @@ title Project Jupyter
 appeared 2014
 type editor
 
-patterns
- hasCentralPackageRepository? false
-
 wikipedia https://en.wikipedia.org/wiki/Project_Jupyter
  related julia python r haskell ruby json markdown html latex restructuredtext jquery maple mathematica sagemath mathematica-editor octave rstudio-editor scilab spyder-editor
  summary Project Jupyter ( ( listen)) is a nonprofit organization created to "develop open-source software, open-standards, and services for interactive computing across dozens of programming languages."  Spun-off from IPython in 2014 by Fernando Pérez, Project Jupyter supports execution environments in several dozen languages.  Project Jupyter's name is a reference to the three core programming languages supported by Jupyter, which are Julia, Python and R, and also an homage to Galileo's notebooks recording the discovery of the moons of Jupiter. Project Jupyter has developed and supported the interactive computing products Jupyter Notebook, Jupyter Hub, and Jupyter Lab, the next-generation version of Jupyter Notebook.
@@ -18,3 +15,4 @@ wikipedia https://en.wikipedia.org/wiki/Project_Jupyter
 website https://jupyter.org/
 status historical
 fileType na
+centralPackageRepositoryCount 0

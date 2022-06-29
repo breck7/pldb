@@ -2,9 +2,6 @@ title ALCOR
 appeared 1959
 type pl
 
-patterns
- hasCentralPackageRepository? false
-
 wikipedia https://en.wikipedia.org/wiki/ALCOR
  related algol-60
  summary For the cryonics organization, see Alcor Life Extension Foundation. ALCOR is a radar tracking station in Roi-Namur island in the north part of the Kwajalein atoll in the Marshall Islands.ALCOR is an early computer language definition created by the ALCOR Group, a consortium of universities, research institutions and manufacturers in Europe and the United States which was founded in 1959 and which had 60 members in 1966. The group had the aim of a common compiler specification for a subset of ALGOL 60 after the ALGOL meeting in Copenhagen in 1958.  ALCOR is an acronym, from ALGOL Converter. In addition, the naming of Alcor is an astronomical reference. Algol is named, in addition to its programming application, for the star Algol; In this way, Alcor is also named in astronomical reference for the star Alcor.  In Europe, a high level machine architecture for ALGOL 60 was devised which was emulated on various real computers, among them the Siemens 2002 and the IBM 7090. An ALGOL manual was published which provided a detailed introduction of all features of the language with many program snippets, and four appendixes:Revised Report on the Algorithmic Language ALGOL 60 Report on Subset ALGOL 60 (IFIP) Report on Input-Output Procedures for ALGOL 60 an early "standard" character set for representing ALGOL 60 code on paper and paper tape.This character set included the unusual "᛭"  (iron/runic cross) character for multiplication and the "⏨" (Decimal Exponent Symbol) for floating point notation.
@@ -18,3 +15,5 @@ wikipedia https://en.wikipedia.org/wiki/ALCOR
 status historical
 
 hopl 360
+
+centralPackageRepositoryCount 0

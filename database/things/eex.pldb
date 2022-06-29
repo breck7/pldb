@@ -9,9 +9,6 @@ example
    This will never appear
  <% end %>
 
-patterns
- hasCentralPackageRepository? false
-
 description EEx stands for Embedded Elixir. It allows you to embed Elixir code inside a string in a robust way.
 
 githubLanguage HTML+EEX
@@ -56,3 +53,4 @@ website https://hexdocs.pm/eex/EEx.html
 reference https://github.com/elixir-lang/elixir/commits/master/lib/eex/lib/eex.ex
 status active
 fileType text
+centralPackageRepositoryCount 0

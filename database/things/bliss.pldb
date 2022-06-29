@@ -2,9 +2,6 @@ title BLISS
 appeared 1969
 type pl
 
-patterns
- hasCentralPackageRepository? false
-
 wikipedia https://en.wikipedia.org/wiki/BLISS
  example
   MODULE E1 (MAIN = CTRL) =
@@ -47,3 +44,5 @@ reference https://semanticscholar.org/paper/4430dfe254804b19bb6a4d9fc10d5bed2932
 status historical
 
 hopl 375
+
+centralPackageRepositoryCount 0

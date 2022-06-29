@@ -2,9 +2,6 @@ title SPARQL
 appeared 2008
 type queryLanguage
 
-patterns
- hasCentralPackageRepository? false
-
 wikipedia https://en.wikipedia.org/wiki/SPARQL
  example
   PREFIX ex: <http://example.com/exampleOntology#>
@@ -61,3 +58,4 @@ cheatSheetUrl http://www.iro.umontreal.ca/~lapalme/ift6281/sparql-1_1-cheat-shee
 languageServerProtocolProject https://github.com/stardog-union/stardog-language-servers/tree/master/packages/sparql-language-server
  writtenIn typescript
 jupyterKernel https://github.com/paulovn/sparql-kernel
+centralPackageRepositoryCount 0

@@ -2,9 +2,6 @@ title Easytrieve
 appeared 1969
 type pl
 
-patterns
- hasCentralPackageRepository? false
-
 wikipedia https://en.wikipedia.org/wiki/Easytrieve
  example
   FILE PERSNL FB(150 1800)           } LIBRARY DEFINITION
@@ -29,3 +26,5 @@ wikipedia https://en.wikipedia.org/wiki/Easytrieve
 status historical
 
 hopl 5189
+
+centralPackageRepositoryCount 0

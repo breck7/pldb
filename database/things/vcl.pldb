@@ -9,9 +9,6 @@ example
   ! "192.0.2.23";      // except for the dialin router
  }
 
-patterns
- hasCentralPackageRepository? false
-
 githubLanguage VCL
  fileExtensions vcl
  trendingProjectsCount 0
@@ -176,3 +173,4 @@ linguistGrammarRepo https://github.com/brandonwamboldt/sublime-varnish
 reference https://en.wikipedia.org/wiki/Varnish_(software)
 status active
 fileType text
+centralPackageRepositoryCount 0

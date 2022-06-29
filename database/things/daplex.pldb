@@ -2,9 +2,6 @@ title Daplex
 appeared 1979
 type pl
 
-patterns
- hasCentralPackageRepository? false
-
 wikipedia https://en.wikipedia.org/wiki/Daplex
  example
   Type EMPLOYEE is entity
@@ -22,3 +19,4 @@ wikipedia https://en.wikipedia.org/wiki/Daplex
  appeared 1981
 
 status historical
+centralPackageRepositoryCount 0

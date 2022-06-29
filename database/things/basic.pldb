@@ -4,7 +4,6 @@ type pl
 creators John G. Kemeny and Thomas E. Kurtz
 
 patterns
- hasCentralPackageRepository? false
  hasComments? true
   REM This BASIC program shows the use of the PRINT and GOTO Statements.
  hasGotos? true
@@ -74,3 +73,4 @@ rosettaCode BASIC
 antlr https://github.com/antlr/grammars-v4/tree/master/basic
 
 lineCommentKeyword REM
+centralPackageRepositoryCount 0

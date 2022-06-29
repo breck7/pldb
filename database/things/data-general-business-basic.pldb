@@ -2,9 +2,6 @@ title Data General Business Basic
 appeared 1970
 type pl
 
-patterns
- hasCentralPackageRepository? false
-
 wikipedia https://en.wikipedia.org/wiki/Data_General_Business_Basic
  related basic cobol b32-business-basic unix
  summary Data General Business Basic was a BASIC interpreter (based on MAI Basic Four's version) developed by Data General for their Nova minicomputer in the 1970s, and later ported to the Data General Eclipse MV and AViiON computers. Most business applications for the Nova were developed in Business Basic. Business Basic was an integer-only language inspired by COBOL, and contained powerful string-handling functions and the ability to manipulate indexed files very quickly. It also provided full control over the display screen, with cursor positioning, attribute setting, and region-blanking commands. Business Basic could interface to Data General's INFOS II database, and make calls directly to the operating system. A lock server gave multiple concurrent users efficient access to database records. Small business programs could be developed and debugged rapidly with Business Basic because of the interactive nature of the interpreter, but the language did not provide many structured programming features, and as programs grew larger, maintenance became a problem. There was limited memory space for Business Basic programs on the Nova, and programmers often resorted to tricks such as self-modifying programs, which was easy to program in Business Basic, but complicated to debug. The original version of the language was "double precision", i.e. 32-bit (and so each integer used two 16-bit Nova words). When Data General ported the language to the MV line, they included two copies of the language, one "double precision", and one "triple precision". Unfortunately the two were incompatible with each other in subtle ways. Although Data General improved the language in some ways, such as adding multiple-line IF THEN ELSE END IF statements, they failed to lift many of the constraints of the language on the MV machines, such as a 9,999 line maximum, 384 variable limit, and maximum of 16 open files.
@@ -16,3 +13,4 @@ wikipedia https://en.wikipedia.org/wiki/Data_General_Business_Basic
  appeared 1970
 
 status historical
+centralPackageRepositoryCount 0

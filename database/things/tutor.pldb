@@ -2,9 +2,6 @@ title TUTOR programming language
 appeared 1969
 type pl
 
-patterns
- hasCentralPackageRepository? false
-
 wikipedia https://en.wikipedia.org/wiki/TUTOR_(programming_language)
  example
   unit    someu
@@ -27,3 +24,5 @@ status historical
 fileType text
 
 hopl 788
+
+centralPackageRepositoryCount 0

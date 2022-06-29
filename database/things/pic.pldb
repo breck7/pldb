@@ -2,9 +2,6 @@ title PIC
 appeared 1988
 type textMarkup
 
-patterns
- hasCentralPackageRepository? false
-
 wikipedia https://en.wikipedia.org/wiki/Pic_(programming_language)
  related diagram troff tex linux
  summary In computing, Pic is a domain-specific programming language by Brian Kernighan for specifying diagrams in terms of objects such as boxes with arrows between them.  The pic compiler translates this description into concrete drawing commands.  Pic is a procedural programming language, with variable assignment, macros, conditionals, and looping. The language is an example of a little language originally intended for the comfort of non-programmers in the Unix environment (Bentley 1988). Pic was first implemented, and is still most typically used, as a preprocessor in the troff document processing system.  The pic preprocessor filters a troff document, replacing diagram descriptions by concrete drawing commands, and passing the rest of the document through without change. A version of pic is included in groff, the GNU version of troff.  GNU pic can also act as a preprocessor for TeX documents, emitting its own tpic DVI specials, which aren't as widely supported as those of other TeX drivers (like PostScript).  Arbitrary diagram text can be included for formatting by the word processor to which the pic output is directed, and arbitrary post-processor commands can also be included. Dwight Aplevich's implementation, DPIC, can also generate postscript or svg images by itself, as well as act as a preprocessor. The three principal sources of pic processors are GNU pic, found on many Linux systems, and dpic, both of which are free, and the original AT&T pic. Pic has some similarity with MetaPost and the DOT language.
@@ -47,3 +44,5 @@ fileType text
 wordRank 2402
 
 hopl 1007
+
+centralPackageRepositoryCount 0

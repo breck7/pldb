@@ -2,9 +2,6 @@ title CMake
 appeared 2000
 type application
 
-patterns
- hasCentralPackageRepository? false
-
 wikipedia https://en.wikipedia.org/wiki/CMake
  related c visual-studio-editor eclipse-editor linux ninja unix falcon kicad llvmir mysql mariadb qt amqp root-lib meson qmake
  summary CMake is cross-platform free and open-source software for managing the build process of software using a compiler-independent method. It supports directory hierarchies and applications that depend on multiple libraries. It is used in conjunction with native build environments such as make, Apple's Xcode, and Microsoft Visual Studio. It has minimal dependencies, requiring only a C++ compiler on its own build system.
@@ -64,3 +61,5 @@ isOpenSource true
 codeMirror cmake
 
 rosettaCode CMake
+
+centralPackageRepositoryCount 0

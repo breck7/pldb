@@ -2,9 +2,6 @@ title Visual FoxPro
 appeared 1995
 type pl
 
-patterns
- hasCentralPackageRepository? false
-
 wikipedia https://en.wikipedia.org/wiki/Visual_FoxPro
  example
   PRIVATE cAuthorID, cAuthorName      && Private variables supplant any previous global or private variable of the same name
@@ -61,3 +58,4 @@ tiobe (Visual) FoxPro
  currentRank 46
 
 corporateDevelopers Microsoft
+centralPackageRepositoryCount 0

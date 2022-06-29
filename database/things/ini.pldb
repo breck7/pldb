@@ -15,7 +15,6 @@ example
  file = "payroll.dat"
 
 patterns
- hasCentralPackageRepository? false
  hasComments? true
   # a '#' or ';' character indicates
   ; a comment
@@ -68,3 +67,5 @@ antlr https://github.com/afucher/yaip
 
 lineCommentKeyword #
 lineCommentKeyword ;
+
+centralPackageRepositoryCount 0

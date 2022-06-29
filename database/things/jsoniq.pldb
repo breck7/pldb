@@ -2,9 +2,6 @@ title JSONiq
 appeared 2011
 type queryLanguage
 
-patterns
- hasCentralPackageRepository? false
-
 wikipedia https://en.wikipedia.org/wiki/JSONiq
  example
   for $p in collection("persons")
@@ -47,3 +44,4 @@ linguistGrammarRepo https://github.com/wcandillon/language-jsoniq
 website http://www.jsoniq.org/
 status active
 fileType text
+centralPackageRepositoryCount 0

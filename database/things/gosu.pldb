@@ -2,9 +2,6 @@ title Gosu
 appeared 2002
 type pl
 
-patterns
- hasCentralPackageRepository? false
-
 wikipedia https://en.wikipedia.org/wiki/Gosu_(programming_language)
  example
   var list = {1, 2, 3}
@@ -44,3 +41,5 @@ isOpenSource true
 tiobe Gosu
 
 rosettaCode Gosu
+
+centralPackageRepositoryCount 0

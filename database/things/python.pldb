@@ -24,7 +24,6 @@ patterns
   person.age = 50
  hasBooleans? true
   result = true
- hasCentralPackageRepository? true
  hasClasses? true
   class Person (object):
     def __init__(self, name):

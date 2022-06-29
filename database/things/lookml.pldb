@@ -79,9 +79,6 @@ example
    }
  }
 
-patterns
- hasCentralPackageRepository? false
-
 githubLanguage LookML
  fileExtensions lookml modellkml viewlkml
  trendingProjectsCount 0
@@ -142,3 +139,4 @@ reference https://docs.looker.com/relnotes/v1-release-notes#looker_1.10.13
 status active
 fileType text
 corporateDevelopers Looker
+centralPackageRepositoryCount 0

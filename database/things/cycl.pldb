@@ -2,9 +2,6 @@ title CYCL
 appeared 1988
 type pl
 
-patterns
- hasCentralPackageRepository? false
-
 wikipedia https://en.wikipedia.org/wiki/CycL
  example
   (#$relationAllExists #$biologicalMother #$ChordataPhylum #$FemaleAnimal)
@@ -19,3 +16,5 @@ reference https://semanticscholar.org/paper/fc1584ebf311e8343c91dcc9ad8e5ef19d81
 status historical
 
 hopl 1546
+
+centralPackageRepositoryCount 0

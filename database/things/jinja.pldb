@@ -2,9 +2,6 @@ title Jinja
 appeared 2006
 type template
 
-patterns
- hasCentralPackageRepository? false
-
 wikipedia https://en.wikipedia.org/wiki/Jinja_(template_engine)
  example
   <!DOCTYPE html>
@@ -94,3 +91,4 @@ website http://jinja.pocoo.org/
 status active
 fileType text
 isOpenSource true
+centralPackageRepositoryCount 0

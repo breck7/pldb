@@ -2,9 +2,6 @@ title UniVerse
 appeared 1997
 type pl
 
-patterns
- hasCentralPackageRepository? false
-
 wikipedia https://en.wikipedia.org/wiki/UniVerse
  example
   123-45-6789^JOHN JONES^jjones@example.com]johnnyjones@example.net^432100^...
@@ -20,3 +17,4 @@ wikipedia https://en.wikipedia.org/wiki/UniVerse
 status historical
 wordRank 3484
 isOpenSource false
+centralPackageRepositoryCount 0

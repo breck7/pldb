@@ -3,9 +3,6 @@ appeared 1995
 type library
 creators Travis Oliphant
 
-patterns
- hasCentralPackageRepository? false
-
 wikipedia https://en.wikipedia.org/wiki/NumPy
  example
   >>> # # # Pure iterative Python # # #
@@ -48,3 +45,4 @@ status active
 fileType text
 isOpenSource true
 writtenIn python c
+centralPackageRepositoryCount 0

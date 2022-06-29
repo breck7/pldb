@@ -2,9 +2,6 @@ title XProc
 appeared 1990
 type pl
 
-patterns
- hasCentralPackageRepository? false
-
 wikipedia https://en.wikipedia.org/wiki/XProc
  example
   <p:pipeline name="pipeline" xmlns:p="http://www.w3.org/ns/xproc" 
@@ -62,3 +59,5 @@ status active
 fileType text
 
 rosettaCode XProc
+
+centralPackageRepositoryCount 0

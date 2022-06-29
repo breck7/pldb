@@ -3,7 +3,6 @@ appeared 1990
 type pl
 
 patterns
- hasCentralPackageRepository? false
  hasHereDocs? true
 
 wikipedia https://en.wikipedia.org/wiki/Z_shell
@@ -32,3 +31,5 @@ hopl 2642
 quineRelay zsh
 
 ubuntuPackage zsh
+
+centralPackageRepositoryCount 0

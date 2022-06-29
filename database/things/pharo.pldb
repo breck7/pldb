@@ -8,9 +8,6 @@ example
   classVariableNames: ’’
   package: ’MyCounter’
 
-patterns
- hasCentralPackageRepository? false
-
 description Pharo is a pure object-oriented programming language and a powerful environment, focused on simplicity and immediate feedback (think IDE and OS rolled into one).
 
 wikipedia https://en.wikipedia.org/wiki/Pharo
@@ -33,3 +30,4 @@ fileType text
 isOpenSource true
 cheatSheetUrl http://files.pharo.org/media/pharoCheatSheet.pdf
 jupyterKernel https://github.com/jmari/JupyterTalk
+centralPackageRepositoryCount 0

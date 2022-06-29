@@ -3,7 +3,6 @@ appeared 2011
 type pl
 
 patterns
- hasCentralPackageRepository? false
  hasStaticTyping? true
  hasTypeInference? true
 
@@ -104,3 +103,5 @@ runsOnVm jvm
 isOpenSource true
 
 tiobe Xtend
+
+centralPackageRepositoryCount 0

@@ -3,9 +3,6 @@ appeared 1996
 type pl
 creators Jurgen A. Doornik
 
-patterns
- hasCentralPackageRepository? false
-
 wikipedia https://en.wikipedia.org/wiki/Ox_(programming_language)
  related linux r
  summary Ox is an object-oriented matrix programming language with a mathematical and statistical function library, developed by Jurgen Doornik. It has been designed for econometric programming. It is available for Windows, Mac OS X and Linux platforms. The downloadable console version of Ox is free for academic use. A commercial version is available for non-academic use. According to its documentation, it should be cited whenever results are published.The programming environment for econometric modelling OxMetrics is based on Ox.
@@ -73,3 +70,5 @@ fileType text
 isOpenSource false
 
 hopl 2718
+
+centralPackageRepositoryCount 0

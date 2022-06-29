@@ -3,9 +3,6 @@ appeared 2004
 type idl
 creators Marc Schellens
 
-patterns
- hasCentralPackageRepository? false
-
 wikipedia https://en.wikipedia.org/wiki/GNU_Data_Language
  related linux solaris idl octave ncar-command-language perl-data-language r scilab scipy yorick hdf postscript python
  summary The GNU Data Language (GDL) is a free alternative to IDL (Interactive Data Language). Together with its library routines, GDL is developed to serve as a tool for data analysis and visualization in such disciplines as astronomy, geosciences, and medical imaging. GDL is licensed under the GPL. Other open-source numerical data analysis tools similar to GDL include GNU Octave, NCAR Command Language (NCL), Perl Data Language (PDL), R, Scilab, SciPy, and Yorick. GDL as a language is dynamically-typed, vectorized, and has object-oriented programming capabilities. GDL library routines handle numerical calculations (e.g. FFT), data visualisation, signal/image processing, interaction with host OS, and data input/output. GDL supports several data formats, such as NetCDF, HDF (v4 & v5), GRIB, PNG, TIFF, and DICOM. Graphical output is handled by X11, PostScript, SVG, or z-buffer terminals, the last one allowing output graphics (plots) to be saved in raster graphics formats. GDL features integrated debugging facilities, such as breakpoints. GDL has a Python bridge (Python code can be called from GDL; GDL can be compiled as a Python module). GDL uses Eigen (C++ library) numerical library (similar to Intel MKL) to have excellent computing performance on multi-cores processors, with better benchmark than IDL on large matrix operations. Packaged versions of GDL are available for several Linux and BSD flavours as well as Mac OS X. The source code compiles on Microsoft Windows (since GDL 0.9.3) and other UNIX systems, including Solaris. GDL is not an official GNU package.
@@ -22,3 +19,4 @@ status active
 fileType text
 isOpenSource true
 writtenIn cpp
+centralPackageRepositoryCount 0

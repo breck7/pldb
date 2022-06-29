@@ -3,7 +3,6 @@ appeared 2014
 type pl
 
 patterns
- hasCentralPackageRepository? false
  hasComments? true
 
 description <a href='https://github.com/monte-language'>Monte</a> is a dynamic programming language inspired by Python and E.
@@ -24,3 +23,5 @@ wordRank 8540
 isOpenSource true
 
 rosettaCode Monte
+
+centralPackageRepositoryCount 0

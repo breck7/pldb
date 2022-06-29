@@ -2,9 +2,6 @@ title Connection Machine
 appeared 1990
 type pl
 
-patterns
- hasCentralPackageRepository? false
-
 wikipedia https://en.wikipedia.org/wiki/Connection_Machine
  related lisp common-lisp sparc
  summary A Connection Machine (CM) is a member of a series of massively parallel supercomputers that grew out of doctoral research on alternatives to the traditional von Neumann architecture of computers by Danny Hillis at the Massachusetts Institute of Technology (MIT) in the early 1980s. Starting with CM-1, the machines were intended originally for applications in artificial intelligence and symbolic processing, but later versions found greater success in the field of computational science.
@@ -18,3 +15,5 @@ wikipedia https://en.wikipedia.org/wiki/Connection_Machine
 status historical
 
 hopl 2401
+
+centralPackageRepositoryCount 0

@@ -2,9 +2,6 @@ title Blockly
 appeared 2011
 type library
 
-patterns
- hasCentralPackageRepository? false
-
 wikipedia https://en.wikipedia.org/wiki/Blockly
  related javascript scratch python php dart webgl svg android ios
  summary Blockly is a client-side JavaScript library for creating visual block programming languages and editors. It is a project of Google and is open-source under the Apache 2.0 License. It typically runs in a web browser, and visually resembles Scratch. Blockly is also being implemented for Android and iOS; not all web browser based features are available for Android/iOS. Blockly uses visual blocks that link together to make writing code easier, and can generate JavaScript, Python, PHP or Dart code. It can also be customised to generate code in any textual computer language.
@@ -17,3 +14,4 @@ wikipedia https://en.wikipedia.org/wiki/Blockly
 
 status historical
 fileType text
+centralPackageRepositoryCount 0

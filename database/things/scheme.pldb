@@ -4,7 +4,6 @@ type pl
 
 patterns
  isLisp? true
- hasCentralPackageRepository? false
  hasComments? true
  hasLineComments? true
   ; A comment
@@ -94,3 +93,4 @@ indeedJobs scheme engineer
 
 lineCommentKeyword ;
 jupyterKernel https://github.com/Calysto/calysto_scheme
+centralPackageRepositoryCount 0

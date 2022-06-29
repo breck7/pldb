@@ -2,9 +2,6 @@ title Alphard
 appeared 1974
 type pl
 
-patterns
- hasCentralPackageRepository? false
-
 wikipedia https://en.wikipedia.org/wiki/Alphard_%28programming_language%29
  related pascal lisp
  summary Alphard is a Pascal-like programming language for data abstraction and verification, proposed and designed by William A. Wulf, Ralph L. London, and Mary Shaw. The language was the subject of several research publications in the late 1970s, but was never implemented. Its main innovative feature was the introduction of the 'form' datatype, which combines a specification and a procedural (executable) implementation. It also took the generator from IPL-V, as well as the mapping functions from Lisp and made it general case.
@@ -16,3 +13,4 @@ wikipedia https://en.wikipedia.org/wiki/Alphard_%28programming_language%29
  appeared 1970
 
 status historical
+centralPackageRepositoryCount 0

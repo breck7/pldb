@@ -9,9 +9,6 @@ example
  <Multi_key> <g> <b> : "β"
  <Multi_key> <g> <g> : "γ"
 
-patterns
- hasCentralPackageRepository? false
-
 githubLanguage XCompose
  trendingProjectsCount 0
 
@@ -62,3 +59,4 @@ linguistGrammarRepo https://github.com/samcv/language-xcompose
 reference https://wiki.debian.org/XCompose
 status active
 fileType text
+centralPackageRepositoryCount 0

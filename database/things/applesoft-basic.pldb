@@ -2,9 +2,6 @@ title Applesoft BASIC
 appeared 1979
 type pl
 
-patterns
- hasCentralPackageRepository? false
-
 wikipedia https://en.wikipedia.org/wiki/Applesoft_BASIC
  related microsoft-basic integer-basic macbasic c scheme java chinese-basic
  summary Applesoft BASIC is a dialect of Microsoft BASIC, developed by Marc McDonald and Ric Weiland,  supplied with the Apple II series of computers. It supersedes Integer BASIC and is the BASIC in ROM in all Apple II series computers after the original Apple II model. It is also referred to as FP BASIC (from "floating point") because of the Apple DOS command used to invoke it, instead of INT for Integer BASIC. Applesoft BASIC was supplied by Microsoft and its name is derived from the names of both Apple and Microsoft. Apple employees, including Randy Wigginton, adapted Microsoft's interpreter for the Apple II and added several features. The first version of Applesoft was released in 1977 on cassette tape and lacked proper support for high-resolution graphics. Applesoft II, which was made available on cassette and disk and in the ROM of the Apple II Plus and subsequent models, was released in 1978. It is this latter version, which has some syntax differences and support for the Apple II high-resolution graphics modes, that is usually synonymous with the term "Applesoft."
@@ -16,3 +13,4 @@ wikipedia https://en.wikipedia.org/wiki/Applesoft_BASIC
  appeared 1977
 
 status historical
+centralPackageRepositoryCount 0

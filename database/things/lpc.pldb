@@ -3,9 +3,6 @@ appeared 1995
 type pl
 creators Lars Pensjö
 
-patterns
- hasCentralPackageRepository? false
-
 wikipedia https://en.wikipedia.org/wiki/LPC_(programming_language)
  example
   function op = (:
@@ -37,3 +34,5 @@ fileType text
 tiobe LPC
 
 hopl 1409
+
+centralPackageRepositoryCount 0

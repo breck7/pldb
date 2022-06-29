@@ -2,9 +2,6 @@ title ScriptBasic
 appeared 1999
 type pl
 
-patterns
- hasCentralPackageRepository? false
-
 wikipedia https://en.wikipedia.org/wiki/ScriptBasic
  related c unix linux html tex pdf mysql postgresql regex
  summary ScriptBasic is a scripting language variant of BASIC. The source of the interpreter is available as a C program under the LGPL license. ScriptBasic generates intermediary code which is then interpreted by a runtime environment. ScriptBasic is available for Windows, Unix and Mac OS X and may be embedded in other programs as well. It can create standalone executable files. A runtime library is linked into the executable. It is available in precompiled binaries (setup.exe under Windows and uninstall also supported), dpkg and rpm for Linux and in source code form. The language, the interpreter is fully documented in the Users' Guide available in text, HTML, HTML Help, TeX, texi and PDF formats. ScriptBasic has been developed since 1999 and has reached a fairly matured state in terms of functions and stability. The precompiled version available for Windows and Linux includes a command line version and a standalone web server. This BASIC can be the choice for developers, who seek a BASIC variant that runs on UNIX as well as under Windows and Mac OS X (Intel). The Basic is embeddable with an option to compile your applications to a small footprint executable. ScriptBasic has an open interface for module developers. There are several external modules developed by the developer of ScriptBasic as well as by other developers. These include data base connection handling for various database systems (MySQL, PostgreSQL, ODBC, Berkeley DB and others), binding to the library CURL, PNG graphics, GTK+ graphical user interface, sockets, regular expressions, thread support, data compression and CGI. ScriptBasic also has an open interface for preprocessor developers. These are modules that may act not only during run-time but also compile time, thus making it possible to alter the language. Currently there is a single preprocessor that delivers debugger functionality. This lets the BASIC programmer run the BASIC program line by line, examine variable contents, set break points and all the usual debugging features. This debugger supports not only the command line version but also the web server implementation allowing full interactive debugging of CGI applications in BASIC. The architecture of the interpreter internally is object oriented and provides a clean and well documented interface to embed the interpreter into any application written in C or C++. The whole source code is extensively documented and commented, which is an outstanding feature compared to other embeddable script language implementations. Slides in HTML format with English narration in RealAudio format are also available to get a jump start learning the architecture and module, preprocessor and embedding developments. ScriptBasic is supported by a forum.
@@ -18,3 +15,5 @@ wikipedia https://en.wikipedia.org/wiki/ScriptBasic
 status historical
 
 rosettaCode ScriptBasic
+
+centralPackageRepositoryCount 0

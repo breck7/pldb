@@ -2,9 +2,6 @@ title CommonLoops
 appeared 1986
 type pl
 
-patterns
- hasCentralPackageRepository? false
-
 wikipedia https://en.wikipedia.org/wiki/CommonLoops
  related common-lisp java clos
  summary CommonLoops (the Common Lisp Object-Oriented Programming System; an acronym reminiscent of the earlier Lisp OO system "Loops" for the Interlisp-D system) is an early programming language which extended Common Lisp to include Object-oriented programming functionality and is a dynamic object system which differs from the OOP facilities found in static languages such as C++ or Java. Like New Flavors, CommonLoops supported multiple inheritance, generic functions and method combination. CommonLoops also supported multi-methods and made use of metaobjects. CommonLoops and New Flavors were the primary ancestors of  CLOS.  CommonLoops was supported by a portable implementation known as Portable CommonLoops (PCL) which ran on all Common Lisp implementations of the day.
@@ -18,3 +15,5 @@ reference https://semanticscholar.org/paper/529224b910e0f9e658c3e5d8421694db487b
 status historical
 
 hopl 1208
+
+centralPackageRepositoryCount 0

@@ -3,7 +3,6 @@ appeared 1986
 type pl
 
 patterns
- hasCentralPackageRepository? false
  hasConstructors? true
  hasOperatorOverloading? true
  hasComments? true
@@ -45,3 +44,4 @@ fileType text
 hopl 1170
 
 visualParadigm false
+centralPackageRepositoryCount 0

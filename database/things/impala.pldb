@@ -2,9 +2,6 @@ title Apache Impala
 appeared 2012
 type queryLanguage
 
-patterns
- hasCentralPackageRepository? false
-
 wikipedia https://en.wikipedia.org/wiki/Apache_Impala
  related java sql pig aws
  summary Apache Impala is an open source massively parallel processing (MPP) SQL query engine for data stored in a computer cluster running Apache Hadoop. Impala has been described as the open-source equivalent of Google F1, which inspired its development in 2012.
@@ -31,3 +28,4 @@ twitter apacheimpala
 
 fileType text
 isOpenSource true
+centralPackageRepositoryCount 0

@@ -2,9 +2,6 @@ title S3
 appeared 1986
 type pl
 
-patterns
- hasCentralPackageRepository? false
-
 wikipedia https://en.wikipedia.org/wiki/S3_(programming_language)
  example
   GLOBAL STATIC (<STATUS 5;PSPACE 10001; TEMPLATE>) PROC KERMIT_THE_FROG IS
@@ -71,3 +68,5 @@ country GB
 fileType text
 
 hopl 2462
+
+centralPackageRepositoryCount 0

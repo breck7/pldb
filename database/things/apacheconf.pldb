@@ -2,9 +2,6 @@ title ApacheConf
 appeared 1995
 type application
 
-patterns
- hasCentralPackageRepository? false
-
 githubLanguage ApacheConf
  fileExtensions apacheconf vhost
  trendingProjectsCount 0
@@ -39,3 +36,4 @@ website https://httpd.apache.org/
 reference https://en.wikipedia.org/wiki/Apache_HTTP_Server
 status active
 fileType text
+centralPackageRepositoryCount 0

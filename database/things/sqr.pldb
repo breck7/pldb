@@ -2,9 +2,6 @@ title Structured Query Reporter
 appeared 1980
 type pl
 
-patterns
- hasCentralPackageRepository? false
-
 wikipedia https://en.wikipedia.org/wiki/SQR
  related sql c cobol
  summary SQR (Hyperion SQR Production Reporting, Part of OBIEE) is a programming language designed for generating reports from database management systems. The name is an acronym of Structured Query Reporter, which suggests its relationship to SQL (Structured Query Language). Any SQL statement can be embedded in an SQR program.
@@ -26,3 +23,5 @@ status active
 fileType text
 
 tiobe SQR
+
+centralPackageRepositoryCount 0

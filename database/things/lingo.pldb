@@ -3,7 +3,6 @@ appeared 1988
 type pl
 
 patterns
- hasCentralPackageRepository? false
  hasComments? true
 
 wikipedia https://en.wikipedia.org/wiki/Lingo_(programming_language)
@@ -33,3 +32,5 @@ tiobe Lingo
 hopl 1640
 
 rosettaCode Lingo
+
+centralPackageRepositoryCount 0

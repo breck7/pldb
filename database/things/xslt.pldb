@@ -3,7 +3,6 @@ appeared 1998
 type xmlFormat
 
 patterns
- hasCentralPackageRepository? false
  hasComments? true
  hasHomoiconicity? true
 
@@ -51,3 +50,5 @@ fileType text
 hopl 3482
 
 rosettaCode XSLT
+
+centralPackageRepositoryCount 0

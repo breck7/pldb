@@ -2,9 +2,6 @@ title Flavors programming language
 appeared 1980
 type pl
 
-patterns
- hasCentralPackageRepository? false
-
 wikipedia https://en.wikipedia.org/wiki/Flavors_(programming_language)
  related lisp-machine-lisp common-lisp
  summary Flavors, an early object-oriented extension to Lisp developed by Howard Cannon at the MIT Artificial Intelligence Laboratory for the Lisp machine and its programming language Lisp Machine Lisp, was the first programming language to include mixins. Symbolics used it for its Lisp machines, and eventually developed it into New Flavors; both the original and new Flavors were message passing OO models. It was hugely influential in the development of the Common Lisp Object System (CLOS).Implementations of Flavors are also available for Common Lisp.New Flavors replaced message sending with calling generic functions. Flavors offers :before and :after daemons with the default method combination (called :daemon).
@@ -19,3 +16,5 @@ status historical
 fileType text
 
 hopl 898
+
+centralPackageRepositoryCount 0

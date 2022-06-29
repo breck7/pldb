@@ -2,9 +2,6 @@ title EXEC 2
 appeared 1970
 type pl
 
-patterns
- hasCentralPackageRepository? false
-
 wikipedia https://en.wikipedia.org/wiki/EXEC_2
  related cms-exec rexx
  summary EXEC 2 is an interpreted, command procedure control, computer scripting language used by the EXEC 2 Processor supplied with the IBM Virtual Machine/System Product (VM/SP) operating system.EXEC 2 is similar to EXEC with the following enhancements: There is no 8-byte restriction on token length. Statements can be up to 255 characters long. EXEC 2 can issue commands to subcommand environments as well as CMS and CP. EXEC 2 has additional built-in functions. EXEC 2 commands may include subroutines and functions. EXEC 2 has extra debugging facilities. CMS programs can manipulate EXEC 2 variables.
@@ -20,3 +17,5 @@ status historical
 fileType text
 
 hopl 757
+
+centralPackageRepositoryCount 0

@@ -2,9 +2,6 @@ title General feature format
 appeared 2006
 type textDataFormat
 
-patterns
- hasCentralPackageRepository? false
-
 wikipedia https://en.wikipedia.org/wiki/General_feature_format
  related vcf-format
  summary The general feature format (gene-finding format, generic feature format, GFF) is a file format used for describing genes and other features of DNA, RNA and protein sequences. The filename extension associated with such files is .GFF and the content type associated with them is text/x-gff3. There are two versions of the GFF file format in general use:  General Feature Format Version 2.2 especially in its GTF variant Generic Feature Format Version 3 (Sequence Ontology Project)Servers that generate this format:  Clients that use this format:
@@ -16,3 +13,4 @@ wikipedia https://en.wikipedia.org/wiki/General_feature_format
 
 status active
 fileType text
+centralPackageRepositoryCount 0

@@ -2,9 +2,6 @@ title dyvil
 appeared 2014
 type pl
 
-patterns
- hasCentralPackageRepository? false
-
 description <a href='https://github.com/Dyvil/Dyvil'>Dyvil</a> is a multi-paradigm, general purpose programming language that is based on Java and the JVM. It is a compiled, statically and strongly typed language that supports object-oriented, functional and imperative programming styles. The language features many high-level constructs as well as an extensible and expressive syntax, making it highly useful for both rapid and safe prototyping, and the creation of domain-specific languages.
 
 githubRepo https://github.com/Dyvil/Dyvil
@@ -24,3 +21,4 @@ tryItOnline dyvil
 
 fileType text
 isOpenSource true
+centralPackageRepositoryCount 0

@@ -2,9 +2,6 @@ title Operational Control Language
 appeared 1986
 type pl
 
-patterns
- hasCentralPackageRepository? false
-
 wikipedia https://en.wikipedia.org/wiki/Operational_Control_Language
  example
   ** Procedure PROC1
@@ -63,3 +60,5 @@ wikipedia https://en.wikipedia.org/wiki/Operational_Control_Language
 status historical
 
 hopl 2301
+
+centralPackageRepositoryCount 0

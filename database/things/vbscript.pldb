@@ -3,7 +3,6 @@ appeared 1996
 type pl
 
 patterns
- hasCentralPackageRepository? false
  hasComments? true
  hasLineComments? true
   ' A comment
@@ -64,3 +63,4 @@ rosettaCode VBScript
 
 corporateDevelopers Microsoft
 lineCommentKeyword '
+centralPackageRepositoryCount 0

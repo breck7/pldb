@@ -16,9 +16,6 @@ example
     When the Breaker joins the Maker's game
     Then the Breaker must guess a word with 5 characters
 
-patterns
- hasCentralPackageRepository? false
-
 description Executable specifications
 
 githubLanguage Gherkin
@@ -35,3 +32,4 @@ website https://docs.cucumber.io/gherkin/
 reference https://docs.cucumber.io/gherkin/reference/
 status active
 fileType text
+centralPackageRepositoryCount 0

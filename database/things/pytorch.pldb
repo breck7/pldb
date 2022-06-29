@@ -2,9 +2,6 @@ title PyTorch
 appeared 2016
 type library
 
-patterns
- hasCentralPackageRepository? false
-
 wikipedia https://en.wikipedia.org/wiki/PyTorch
  related python cuda linux numpy
  summary PyTorch is an open-source machine learning library for Python, based on Torch, used for applications such as natural language processing. It is primarily developed by Facebook's artificial-intelligence research group, and Uber's "Pyro" software for probabilistic programming is built on it.PyTorch provides two high-level features: Tensor computation (like NumPy) with strong GPU acceleration Deep Neural Networks built on a tape-based autodiff system
@@ -22,3 +19,4 @@ status active
 twitter pytorch
 
 isOpenSource true
+centralPackageRepositoryCount 0

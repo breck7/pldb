@@ -2,9 +2,6 @@ title Le-Lisp
 appeared 1984
 type pl
 
-patterns
- hasCentralPackageRepository? false
-
 wikipedia https://en.wikipedia.org/wiki/Le_Lisp
  related lisp c x86-isa sparc powerpc mips unix linux freebsd solaris islisp openlisp interlisp lisp-machine-lisp scheme common-lisp t emacs-lisp autolisp picolisp eulisp newlisp racket guile clojure arc lfe
  summary Le Lisp (also Le_Lisp and Le-Lisp) is a programming language, a dialect of the language Lisp.It was developed at the French Institute for Research in Computer Science and Automation (INRIA), to be an implementation language for a very large scale integration (VLSI) workstation being designed under the direction of Jean Vuillemin. Le Lisp also had to run on various incompatible platforms (mostly running Unix operating systems) that were used by the project. The main goals for the language were to be a powerful post-Maclisp version of Lisp that would be portable, compatible, extensible, and efficient.Jérôme Chailloux led the Le Lisp team, working with Emmanuel St. James, Matthieu Devin, and Jean-Marie Hullot in 1980. The dialect is historically noteworthy as one of the first Lisp implementations to be available on both the Apple II and the IBM PC.
@@ -19,3 +16,5 @@ status historical
 isOpenSource false
 
 hopl 1090
+
+centralPackageRepositoryCount 0

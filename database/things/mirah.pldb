@@ -6,7 +6,6 @@ example
  def foo(a:String, b:int)
 
 patterns
- hasCentralPackageRepository? false
  hasComments? true
 
 wikipedia https://en.wikipedia.org/wiki/Mirah_(programming_language)
@@ -43,3 +42,5 @@ fileType text
 isOpenSource true
 
 rosettaCode Mirah
+
+centralPackageRepositoryCount 0

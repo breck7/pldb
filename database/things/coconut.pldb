@@ -3,7 +3,6 @@ appeared 2014
 type pl
 
 patterns
- hasCentralPackageRepository? false
  hasPatternMatching? true
   match [head] + tail in [0, 1, 2, 3]:
      print(head, tail)
@@ -46,3 +45,4 @@ fileType text
 isOpenSource true
 writtenIn python
 jupyterKernel http://coconut-lang.org/
+centralPackageRepositoryCount 0

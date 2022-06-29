@@ -2,9 +2,6 @@ title OptimJ
 appeared 2006
 type pl
 
-patterns
- hasCentralPackageRepository? false
-
 wikipedia https://en.wikipedia.org/wiki/OptimJ
  example
   // select name from persons where age > 18
@@ -19,3 +16,4 @@ wikipedia https://en.wikipedia.org/wiki/OptimJ
  appeared 2006
 
 status historical
+centralPackageRepositoryCount 0

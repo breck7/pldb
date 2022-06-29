@@ -2,9 +2,6 @@ title BlitzBasic
 appeared 2000
 type pl
 
-patterns
- hasCentralPackageRepository? false
-
 wikipedia https://en.wikipedia.org/wiki/Blitz_BASIC
  example
   AppTitle = "Binary Clock"
@@ -158,3 +155,4 @@ linguistGrammarRepo https://github.com/textmate/blitzmax.tmbundle
 
 status active
 fileType text
+centralPackageRepositoryCount 0

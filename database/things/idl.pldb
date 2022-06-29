@@ -4,7 +4,6 @@ type pl
 creators David Stern
 
 patterns
- hasCentralPackageRepository? false
  hasComments? true
 
 wikipedia https://en.wikipedia.org/wiki/IDL_(programming_language)
@@ -62,3 +61,4 @@ rosettaCode IDL
 antlr https://github.com/antlr/grammars-v4/tree/master/idl
 
 jupyterKernel https://github.com/lstagner/idl_kernel
+centralPackageRepositoryCount 0

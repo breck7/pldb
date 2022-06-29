@@ -8,9 +8,6 @@ example
  Product ← Value (('*' / '/') Value)*
  Value   ← [0-9]+ / '(' Expr ')'
 
-patterns
- hasCentralPackageRepository? false
-
 wikipedia https://en.wikipedia.org/wiki/Parsing_expression_grammar
  example
   Value   ← [0-9.]+ / '(' Expr ')'
@@ -29,3 +26,4 @@ wikipedia https://en.wikipedia.org/wiki/Parsing_expression_grammar
 standsFor parsing expression grammar
 status historical
 fileType text
+centralPackageRepositoryCount 0

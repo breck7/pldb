@@ -2,9 +2,6 @@ title PL-11
 appeared 1971
 type pl
 
-patterns
- hasCentralPackageRepository? false
-
 wikipedia https://en.wikipedia.org/wiki/PL-11
  related pl360
  summary PL-11 is a high-level machine-oriented programming language for the PDP-11, developed by R.D. Russell of CERN in 1971. Written in Fortran IV, it is similar to PL360 and is cross-compiled on other machines. PL-11 was originally developed as part of the Omega project, a particle physics facility operational at CERN (Geneva, Switzerland) during the 1970s. The first version was written for the CII 10070, a clone of the XDS Sigma 7 built in France. Towards the end of the 1970s it was ported to the IBM 370/168, then part of CERN's computer centre. A report describing the language is available from CERN.
@@ -19,3 +16,5 @@ status historical
 fileType text
 
 hopl 561
+
+centralPackageRepositoryCount 0

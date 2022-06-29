@@ -2,9 +2,6 @@ title Occam π
 appeared 2005
 type pl
 
-patterns
- hasCentralPackageRepository? false
-
 description occam-pi is a concurrent programming language using the process-oriented programming model, which aims to make it straightforward to write correct, expressive concurrent programs. occam-pi is supported on a variety of platforms by a collection of open source tools, and is used and maintained by a community of developers around the world.
 
 wikipedia https://en.wikipedia.org/wiki/Occam-π
@@ -21,3 +18,4 @@ status historical
 tryItOnline occam-pi
 
 fileType text
+centralPackageRepositoryCount 0

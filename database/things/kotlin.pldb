@@ -4,7 +4,6 @@ type pl
 creators Andrey Breslav
 
 patterns
- hasCentralPackageRepository? false
  hasComments? true
  hasImports? true
   import foo.Bar // Bar is now accessible without qualification
@@ -185,3 +184,4 @@ stackOverflowSurvey
   medianSalary 55071
   fans 10691
   percentageUsing 0.08
+centralPackageRepositoryCount 0

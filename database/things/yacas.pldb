@@ -7,9 +7,6 @@ example
  record["occupation"]:="prophet";
  record["is alive"]:=False;
 
-patterns
- hasCentralPackageRepository? false
-
 description a general-purpose computer algebra system. The name is an acronym for Yet Another Computer Algebra System.
 
 wikipedia https://en.wikipedia.org/wiki/Yacas
@@ -34,3 +31,4 @@ rosettaCode Yacas
 
 writtenIn cpp
 jupyterKernel https://github.com/grzegorzmazur/yacas_kernel
+centralPackageRepositoryCount 0

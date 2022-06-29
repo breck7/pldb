@@ -3,7 +3,6 @@ appeared 1998
 type pl
 
 patterns
- hasCentralPackageRepository? false
  hasMultipleInheritance? true
 
 wikipedia https://en.wikipedia.org/wiki/Curl_(programming_language)
@@ -33,3 +32,4 @@ tiobe Curl
 hopl 8042
 
 visualParadigm false
+centralPackageRepositoryCount 0

@@ -3,9 +3,6 @@ appeared 1969
 type xmlFormat
 creators Charles Goldfarb and Edward Mosher and Raymond Lorie
 
-patterns
- hasCentralPackageRepository? false
-
 wikipedia https://en.wikipedia.org/wiki/IBM_Generalized_Markup_Language
  related script sgml xml ipf
  summary Generalized Markup Language (GML) is a set of macros that implement intent-based (procedural) markup tags for the IBM text formatter, SCRIPT.  SCRIPT/VS is the main component of IBM's Document Composition Facility (DCF). A starter set of tags in GML is provided with the DCF product.
@@ -24,3 +21,5 @@ fileType text
 hopl 6352
 
 antlr https://github.com/antlr/grammars-v4/tree/master/gml
+
+centralPackageRepositoryCount 0

@@ -13,9 +13,6 @@ example
    .name = "MoonScript"
    \say_name!
 
-patterns
- hasCentralPackageRepository? false
-
 githubLanguage MoonScript
  fileExtensions moon
  trendingProjectsCount 0
@@ -142,3 +139,4 @@ webRepl http://moonscript.org/compiler/
 rosettaCode MoonScript
 
 writtenIn lua
+centralPackageRepositoryCount 0

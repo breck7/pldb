@@ -2,9 +2,6 @@ title FreeMarker
 appeared 2000
 type pl
 
-patterns
- hasCentralPackageRepository? false
-
 wikipedia https://en.wikipedia.org/wiki/Apache_FreeMarker
  example
   <html>
@@ -73,3 +70,4 @@ linguistGrammarRepo https://github.com/freemarker/FreeMarker.tmbundle
 status active
 fileType text
 isOpenSource true
+centralPackageRepositoryCount 0

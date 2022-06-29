@@ -2,9 +2,6 @@ title Newspeak programming language
 appeared 2006
 type pl
 
-patterns
- hasCentralPackageRepository? false
-
 wikipedia https://en.wikipedia.org/wiki/Newspeak_(programming_language)
  example
   HelloBraveNewWorld usingPlatform: platform = ( 
@@ -23,3 +20,4 @@ website http://newspeaklanguage.org/
 status historical
 fileType text
 isOpenSource true
+centralPackageRepositoryCount 0

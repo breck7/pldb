@@ -3,7 +3,6 @@ appeared 1983
 type pl
 
 patterns
- hasCentralPackageRepository? false
  hasComments? true
 
 wikipedia https://en.wikipedia.org/wiki/GW-BASIC
@@ -21,3 +20,5 @@ status historical
 hopl 2081
 
 rosettaCode GW-BASIC
+
+centralPackageRepositoryCount 0

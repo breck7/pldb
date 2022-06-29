@@ -2,9 +2,6 @@ title TensorFlow
 appeared 2015
 type library
 
-patterns
- hasCentralPackageRepository? false
-
 wikipedia https://en.wikipedia.org/wiki/TensorFlow
  related python cuda linux android ios
  summary TensorFlow is an open-source software library for dataflow programming across a range of tasks. It is a symbolic math library, and also used for machine learning applications such as neural networks. It is used for both research and production at Google,‍   often replacing its closed-source predecessor, DistBelief. TensorFlow was developed by the Google Brain team for internal Google use. It was released under the Apache 2.0 open source license on November 9, 2015.
@@ -40,3 +37,4 @@ meetup tensorflow
 writtenIn python cpp cuda
 indeedJobs tensorflow engineer
  2017 721
+centralPackageRepositoryCount 0

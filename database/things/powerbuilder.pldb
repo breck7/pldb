@@ -2,9 +2,6 @@ title PowerBuilder
 appeared 2010
 type pl
 
-patterns
- hasCentralPackageRepository? false
-
 wikipedia https://en.wikipedia.org/wiki/PowerBuilder
  example
   UPDATE my_employee SET STATUS = 'A';
@@ -60,3 +57,5 @@ status active
 fileType text
 
 rosettaCode Powerbuilder
+
+centralPackageRepositoryCount 0

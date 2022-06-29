@@ -2,9 +2,6 @@ title Averest
 appeared 2005
 type pl
 
-patterns
- hasCentralPackageRepository? false
-
 wikipedia https://en.wikipedia.org/wiki/Averest
  related esterel
  summary Averest is a synchronous programming language and set of tools to specify, verify, and implement reactive systems. It includes a compiler for synchronous programs, a symbolic model checker, and a tool for hardware/software synthesis. It can be used to model and verify finite and infinite state systems, at varied abstraction levels. It is useful for hardware design, modeling communication protocols, concurrent programs, software in embedded systems, and more. Components: compiler to translate synchronous programs to transition systems, symbolic model checker, tool for hardware/software synthesis. These cover large parts of the design flow of reactive systems, from specifying to implementing. Though the tools are part of a common framework, they are mostly independent of each other, and can be used with 3rd-party tools.
@@ -16,3 +13,4 @@ wikipedia https://en.wikipedia.org/wiki/Averest
  appeared 2011
 
 status historical
+centralPackageRepositoryCount 0

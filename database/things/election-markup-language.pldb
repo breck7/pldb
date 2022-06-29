@@ -2,9 +2,6 @@ title Election Markup Language
 appeared 2001
 type xmlFormat
 
-patterns
- hasCentralPackageRepository? false
-
 description Election Markup Language (EML) is an XML-based standard to support end to end management of election processes.
 
 wikipedia https://en.wikipedia.org/wiki/Election_Markup_Language
@@ -21,3 +18,4 @@ reference https://wiki.oasis-open.org/election
 aka eml
 status historical
 fileType text
+centralPackageRepositoryCount 0

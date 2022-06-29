@@ -3,7 +3,6 @@ appeared 2012
 type pl
 
 patterns
- hasCentralPackageRepository? false
  hasDependentTypes? true
 
 description <a href='https://github.com/ColonelJ/Starpial'>Starpial</a> is a stack-oriented functional logic programming language with OOP, recursive regex, dependent types, refinement types, and automatic parallelization based on transactions.
@@ -21,3 +20,4 @@ githubRepo https://github.com/ColonelJ/Starpial
 status active
 fileType text
 isOpenSource true
+centralPackageRepositoryCount 0

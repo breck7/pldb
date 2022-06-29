@@ -2,9 +2,6 @@ title Lithe programming language
 appeared 1982
 type pl
 
-patterns
- hasCentralPackageRepository? false
-
 wikipedia https://en.wikipedia.org/wiki/Lithe_(programming_language)
  example
   rule "|" <i:int> "|" return int;
@@ -22,3 +19,5 @@ status historical
 fileType text
 
 hopl 998
+
+centralPackageRepositoryCount 0

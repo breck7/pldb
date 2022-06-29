@@ -2,9 +2,6 @@ title Zimpl
 appeared 2004
 type pl
 
-patterns
- hasCentralPackageRepository? false
-
 description Zimpl is a little language to translate the mathematical model of a problem into a linear or nonlinear (mixed-) integer mathematical program expressed in .lp or .mps file format which can be read and (hopefully) solved by a LP or MIP solver.
 
 githubLanguage Zimpl
@@ -36,3 +33,4 @@ example
 website https://zimpl.zib.de/
 status active
 fileType text
+centralPackageRepositoryCount 0

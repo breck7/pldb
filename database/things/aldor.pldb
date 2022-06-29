@@ -3,7 +3,6 @@ appeared 1990
 type pl
 
 patterns
- hasCentralPackageRepository? false
  hasSemanticIndentation? true
 
 wikipedia https://en.wikipedia.org/wiki/Aldor
@@ -61,3 +60,4 @@ isOpenSource true
 hopl 6911
 
 jupyterKernel https://github.com/mattpap/IAldor
+centralPackageRepositoryCount 0

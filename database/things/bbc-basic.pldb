@@ -2,9 +2,6 @@ title BBC BASIC
 appeared 1981
 type pl
 
-patterns
- hasCentralPackageRepository? false
-
 wikipedia https://en.wikipedia.org/wiki/BBC_BASIC
  example
   IF INSTR(REPORT$,"VI") THEN PRINT "BASIC64" ELSE PRINT "BASIC"
@@ -19,3 +16,4 @@ wikipedia https://en.wikipedia.org/wiki/BBC_BASIC
 
 status historical
 isOpenSource false
+centralPackageRepositoryCount 0

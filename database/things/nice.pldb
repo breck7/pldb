@@ -2,9 +2,6 @@ title Nice programming language
 appeared 2006
 type pl
 
-patterns
- hasCentralPackageRepository? false
-
 wikipedia https://en.wikipedia.org/wiki/Nice_(programming_language)
  related haskell eiffel java-bytecode java
  summary Nice is an object-oriented programming language released under the GNU General Public License. It features a powerful type system which can help eliminate many common bugs, such as null pointer dereferences and invalid casts, by detecting potential runtime errors at compile-time; the goal of the designers was to provide safety features comparable to those found in languages such as ML and Haskell, but using a more conventional syntax. Nice aims to be feature-rich, and as such, in addition to the common features of modern object-oriented programming languages, it implements contracts in the style of Eiffel, class extensibility through multimethods, and many concepts drawn from functional programming such as anonymous functions, tuples, pattern matching (“value dispatch”), and parametric polymorphism. Source programs are compiled to Java bytecode, and can therefore interact with libraries written in Java and other programming languages targeting the Java Virtual Machine. Work on the Nice language appears to have slowed since early 2006.
@@ -20,3 +17,5 @@ fileType text
 wordRank 1157
 
 rosettaCode Nice
+
+centralPackageRepositoryCount 0

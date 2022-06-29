@@ -2,9 +2,6 @@ title Adenine programming language
 appeared 1999
 type pl
 
-patterns
- hasCentralPackageRepository? false
-
 wikipedia https://en.wikipedia.org/wiki/Adenine_(programming_language)
  related rdf python lisp
  summary Haystack was a project at the Massachusetts Institute of Technology to research and develop several applications around personal information management and the Semantic Web. The most notable of those applications is the Haystack client, a research personal information manager (PIM) and one of the first to be based on semantic desktop technologies. The Haystack client is published as open source software under the BSD license.  Similar to the Chandler PIM, the Haystack system unifies handling different types of unstructured information. This information has a common representation in RDF that is presented to users in a configurable human-readable way.
@@ -16,3 +13,4 @@ wikipedia https://en.wikipedia.org/wiki/Adenine_(programming_language)
  appeared 1999
 
 status historical
+centralPackageRepositoryCount 0

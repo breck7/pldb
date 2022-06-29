@@ -2,9 +2,6 @@ title Backus-Naur Form
 appeared 1956
 type grammarLanguage
 
-patterns
- hasCentralPackageRepository? false
-
 wikipedia https://en.wikipedia.org/wiki/Backus–Naur_form
  example
   <syntax>         ::= <rule> | <rule> <syntax>
@@ -40,3 +37,5 @@ fileType text
 hopl 1865
 
 antlr https://github.com/antlr/grammars-v4/tree/master/bnf
+
+centralPackageRepositoryCount 0

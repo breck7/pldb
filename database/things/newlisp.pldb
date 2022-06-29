@@ -3,7 +3,6 @@ appeared 1991
 type pl
 
 patterns
- hasCentralPackageRepository? false
  hasComments? true
 
 wikipedia https://en.wikipedia.org/wiki/NewLISP
@@ -90,3 +89,5 @@ projectEuler newLISP
   2022 1
 
 rosettaCode NewLISP
+
+centralPackageRepositoryCount 0

@@ -2,9 +2,6 @@ title SP/k
 appeared 1974
 type pl
 
-patterns
- hasCentralPackageRepository? false
-
 wikipedia https://en.wikipedia.org/wiki/SP/k
  related pl-i turing pl-c watfiv
  summary SP/k is a programming language developed circa 1974 by R.C. Holt, D.B. Wortman, D.T. Barnard and J.R. Cordy as a subset of the PL/I programming language designed for teaching programming. It was used for about a decade at over 40 universities, schools, and research laboratories in Canada and the United States. SP/k was one of the first languages specifically designed to encourage structured programming. The features of SP/k were chosen to encourage structured problem solving by computers, to make the language easy to learn and use, to eliminate confusing and redundant constructs, and to make the language easy to compile.The resulting language was suitable for introducing programming concepts used in various applications, including business data processing, scientific calculations and non-numeric computation.  SP/k is actually a sequence of language subsets called SP/1, SP/2, … SP/8. Each subset introduces new programming language constructs while retaining all the constructs of preceding subsets, forming a stepwise system for teaching computer programming. Each subset is precisely defined and self-contained, and can be learned or implemented without the following subsets. This allows for various levels of programming education. The design and philosophy of SP/k was a strong influence on the Turing programming language.
@@ -20,3 +17,5 @@ country CA
 fileType text
 
 hopl 784
+
+centralPackageRepositoryCount 0

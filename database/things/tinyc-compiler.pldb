@@ -2,9 +2,6 @@ title Tiny C Compiler
 appeared 2001
 type compiler
 
-patterns
- hasCentralPackageRepository? false
-
 wikipedia https://en.wikipedia.org/wiki/Tiny_C_Compiler
  related c assembly-language linux unix x86-isa small-c
  summary The Tiny C Compiler (a.k.a. TCC, tCc, or TinyCC) is an x86, X86-64 and ARM processor C compiler created by Fabrice Bellard. It is designed to work for slow computers with little disk space (e.g. on rescue disks). Windows operating system support was added in version 0.9.23 (17 Jun 2005). TCC is distributed under the GNU Lesser General Public License (LGPL). TCC claims to implement all of ANSI C (C89/C90), much of the C99 ISO standard, and many GNU C extensions including inline assembly.
@@ -32,3 +29,5 @@ fileType na
 isOpenSource true
 
 antlr https://github.com/antlr/grammars-v4/tree/master/tinyc
+
+centralPackageRepositoryCount 0

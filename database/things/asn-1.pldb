@@ -17,9 +17,6 @@ example
  
  END
 
-patterns
- hasCentralPackageRepository? false
-
 wikipedia https://en.wikipedia.org/wiki/Abstract_Syntax_Notation_One
  example
   <FooQuestion>
@@ -88,3 +85,5 @@ fileType text
 hopl 1070
 
 codeMirror asn-1
+
+centralPackageRepositoryCount 0

@@ -4,7 +4,6 @@ type stylesheetLanguage
 creators Hampton Catlin
 
 patterns
- hasCentralPackageRepository? false
  hasSemanticIndentation? true
 
 githubLanguage SCSS
@@ -44,3 +43,5 @@ fileExtensions sass scss
 fileType text
 
 antlr https://github.com/antlr/grammars-v4/tree/master/scss
+
+centralPackageRepositoryCount 0

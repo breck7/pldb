@@ -2,9 +2,6 @@ title Java Orchestration Language Interpreter Engine
 appeared 2006
 type pl
 
-patterns
- hasCentralPackageRepository? false
-
 wikipedia https://en.wikipedia.org/wiki/Jolie_(programming_language)
  related java linux bpel xml c javascript
  summary Jolie (Java Orchestration Language Interpreter Engine) is an open-source programming language for developing distributed applications based on microservices. In the programming paradigm proposed with Jolie, each program is a service that can communicate with other programs by sending and receiving messages over a network. Jolie supports an abstraction layer that allows services to communicate using different mediums, ranging from TCP/IP sockets to local in-memory communications between processes.Jolie is currently supported by an interpreter implemented in the Java language, which can be run in multiple operating systems including Linux-based operating systems, OS X, and Windows. The language comes with formal semantics, meaning that the execution of Jolie programs is mathematically defined. For this reason, Jolie is used in research for the investigation of language-based techniques for the development of distributed systems, and it is also used for teaching at some Universities.The Jolie open source project was started by Fabrizio Montesi in 2006, as part of his studies at the University of Bologna. The project initially began as an implementation of the SOCK process calculus, a formal model proposed by Claudio Guidi et al. at the University of Bologna inspired by the CCS process calculus and the WS-BPEL programming language. Jolie extends SOCK with support for, e.g., tree-like data structures (inspired by XML, but with a syntax resembling that of C and Java), message types, typed session programming, integration with Java and JavaScript, code mobility, application containment, and web programming. A complete list of the project contributors is available at.The project is currently maintained by Fabrizio Montesi and its evolution is driven by Fabrizio Montesi and Claudio Guidi. Since it supports the orchestration of web services, Jolie is an alternative to XML-based orchestration languages such as WS-BPEL as it offers a concise (C-like) syntax for accessing XML-like data structures.
@@ -61,3 +58,4 @@ status active
 twitter jolielang
 
 fileType text
+centralPackageRepositoryCount 0

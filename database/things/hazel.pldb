@@ -8,7 +8,6 @@ example
 
 patterns
  hasTypedHoles? true
- hasCentralPackageRepository? false
 
 description Hazel is a live functional programming environment rooted in the principles of type theory.
 
@@ -28,3 +27,4 @@ fileType text
 compilesTo javascript
 isOpenSource true
 writtenIn reason
+centralPackageRepositoryCount 0

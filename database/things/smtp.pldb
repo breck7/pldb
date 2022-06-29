@@ -2,9 +2,6 @@ title SMTP
 appeared 1982
 type protocol
 
-patterns
- hasCentralPackageRepository? false
-
 wikipedia https://en.wikipedia.org/wiki/Simple_Mail_Transfer_Protocol
  example
   S: 220 smtp2.example.com ESMTP Postfix
@@ -27,3 +24,4 @@ standsFor Simple Mail Transfer Protocol
 status historical
 fileType na
 wordRank 9812
+centralPackageRepositoryCount 0

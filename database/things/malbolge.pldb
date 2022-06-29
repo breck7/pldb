@@ -2,9 +2,6 @@ title Malbolge
 appeared 1998
 type pl
 
-patterns
- hasCentralPackageRepository? false
-
 wikipedia https://en.wikipedia.org/wiki/Malbolge
  example
   0000000000111111111122222222223333333333444444444455555555556666666666777777777788888888889999
@@ -25,3 +22,5 @@ status historical
 tryItOnline malbolge
 
 rosettaCode Malbolge
+
+centralPackageRepositoryCount 0

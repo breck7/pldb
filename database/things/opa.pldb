@@ -3,7 +3,6 @@ appeared 2011
 type pl
 
 patterns
- hasCentralPackageRepository? false
  hasTypeInference? true
 
 wikipedia https://en.wikipedia.org/wiki/Opa_(programming_language)
@@ -54,3 +53,5 @@ twitter opalang
 fileType text
 
 rosettaCode Opa
+
+centralPackageRepositoryCount 0

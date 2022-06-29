@@ -2,9 +2,6 @@ title Ante
 appeared 2015
 type pl
 
-patterns
- hasCentralPackageRepository? false
-
 description <a href='https://github.com/jfecher/ante'>Ante</a> is a compiled systems language focusing on providing extreme extensibility through the use of a compile-time API. Using such an API, compiler extensions can be created within the program itself, allowing for the addition of a garbage collector, ownership system, type system changes, etc.
 
 githubRepo https://github.com/jfecher/ante
@@ -24,3 +21,4 @@ tryItOnline ante
 
 fileType text
 isOpenSource true
+centralPackageRepositoryCount 0

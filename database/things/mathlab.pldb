@@ -2,9 +2,6 @@ title MATHLAB
 appeared 1964
 type pl
 
-patterns
- hasCentralPackageRepository? false
-
 wikipedia https://en.wikipedia.org/wiki/MATHLAB
  related matlab lisp doi
  summary MATHLAB is a computer algebra system created in 1964 by Carl Engelman at MITRE and written in  Lisp. "MATHLAB 68" was introduced in 1967 and became rather popular in university environments running on DECs PDP-6 and PDP-10 under TOPS-10 or TENEX. In 1969 this version was included in the DECUS user group's library (as 10-142) as royalty-free software. Carl Engelman left MITRE for Symbolics where he contributed his expert knowledge in the development of Macsyma.
@@ -18,3 +15,5 @@ reference https://semanticscholar.org/paper/298ddf1bd24a43720211b5e9d925d00fa9d0
 status historical
 
 hopl 201
+
+centralPackageRepositoryCount 0

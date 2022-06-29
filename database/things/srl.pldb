@@ -10,9 +10,6 @@ example
  letter at least 2 times,
  must end, case insensitive
 
-patterns
- hasCentralPackageRepository? false
-
 githubRepo https://github.com/SimpleRegex/SRL-PHP
  stars 1762
  forks 74
@@ -28,3 +25,5 @@ standsFor Simple Regex Language
 status active
 fileType text
 isOpenSource true
+
+centralPackageRepositoryCount 0

@@ -3,7 +3,6 @@ appeared 1983
 type pl
 
 patterns
- hasCentralPackageRepository? false
  hasComments? true
 
 wikipedia https://en.wikipedia.org/wiki/ABAP
@@ -279,3 +278,5 @@ projectEuler ABAP
   2022 47
 
 rosettaCode ABAP
+
+centralPackageRepositoryCount 0

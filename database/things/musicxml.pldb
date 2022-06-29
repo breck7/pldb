@@ -2,9 +2,6 @@ title MusicXML
 appeared 2004
 type pl
 
-patterns
- hasCentralPackageRepository? false
-
 wikipedia https://en.wikipedia.org/wiki/MusicXML
  example
   <?xml version="1.0" encoding="UTF-8" standalone="no"?>
@@ -55,3 +52,5 @@ wikipedia https://en.wikipedia.org/wiki/MusicXML
 status historical
 
 hopl 6430
+
+centralPackageRepositoryCount 0

@@ -3,9 +3,6 @@ appeared 1997
 type queryLanguage
 creators Philip Hazel
 
-patterns
- hasCentralPackageRepository? false
-
 wikipedia https://en.wikipedia.org/wiki/Perl_Compatible_Regular_Expressions
  related regex c perl php r cmake unicode ascii utf-8 python
  summary Perl Compatible Regular Expressions (PCRE) is a regular expression C library inspired by the regular expression capabilities in the Perl programming language. Philip Hazel started writing PCRE in summer 1997. PCRE's syntax is much more powerful and flexible than either of the POSIX regular expression flavors and than that of many other regular-expression libraries. While PCRE originally aimed at feature-equivalence with Perl, the two implementations are not fully equivalent. During the PCRE 7.x and Perl 5.9.x phase, the two projects have coordinated development, with features being ported between them in both directions. A number of prominent open-source programs, such as the Apache HTTP Server and the PHP and R scripting languages, incorporate the PCRE library; proprietary software can do likewise (BSD license). As of Perl 5.10, PCRE is also available as a replacement for Perl's default regular expression engine through the re::engine::PCRE module. The library can be built using configure and make (typical of Unix-like environments), as well as in Unix, Windows and other environments using CMake. Numerous default settings are chosen at build time. In addition to the PCRE library, the distribution includes a POSIX C wrapper, a native C++ wrapper, several test programs, and the utility program pcregrep built in tandem with the library. The PCRE library provides matching only; the C++ wrapper, if used, adds multiple match and replacement functionality. Unless users choose the "NoRecurse" PCRE build option (aka "--disable-stack-for-recursion"), the calling application or operating system must allocate adequate stack space to PCRE. The amount of stack needed varies for each pattern. For example, completing the tests provided with pcretest needs 8 MB of stack space. While PCRE's documentation cautions that the "NoRecurse" build option makes PCRE slower than the alternative, using it avoids entirely the issue of stack overflows.
@@ -21,3 +18,4 @@ standsFor Perl Compatible Regular Expressions
 status historical
 fileType text
 writtenIn c
+centralPackageRepositoryCount 0

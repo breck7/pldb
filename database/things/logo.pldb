@@ -3,7 +3,6 @@ appeared 1967
 type pl
 
 patterns
- hasCentralPackageRepository? false
  hasComments? true
  hasLineComments? true
   ; A comment
@@ -43,3 +42,4 @@ rosettaCode Logo
 
 antlr https://github.com/antlr/grammars-v4/tree/master/logo
 lineCommentKeyword ;
+centralPackageRepositoryCount 0

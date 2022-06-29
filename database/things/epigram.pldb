@@ -3,7 +3,6 @@ appeared 2004
 type pl
 
 patterns
- hasCentralPackageRepository? false
  hasDependentTypes? true
 
 wikipedia https://en.wikipedia.org/wiki/Epigram_(programming_language)
@@ -32,3 +31,5 @@ isOpenSource true
 hopl 8173
 
 rosettaCode Epigram
+
+centralPackageRepositoryCount 0

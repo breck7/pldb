@@ -2,9 +2,6 @@ title RAPID
 appeared 1994
 type pl
 
-patterns
- hasCentralPackageRepository? false
-
 wikipedia https://en.wikipedia.org/wiki/RAPID
  related c
  summary RAPID is a high-level programming language used to control ABB industrial robots. RAPID was introduced along with S4 Control System in 1994 by ABB, superseding the ARLA programming language. Features in the language include:  Routine parameters: Procedures - used as a subprogram. Functions - return a value of a specific type and are used as an argument of an instruction. Trap routines - a means of responding to interrupts. Arithmetic and logical expressions Automatic error handling Modular programs Multi tasking
@@ -19,3 +16,5 @@ status historical
 wordRank 3809
 
 hopl 5407
+
+centralPackageRepositoryCount 0

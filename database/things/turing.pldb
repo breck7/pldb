@@ -23,9 +23,6 @@ example
  
  put "The factorial of ", n, " is ", factorial (n)
 
-patterns
- hasCentralPackageRepository? false
-
 wikipedia https://en.wikipedia.org/wiki/Turing_(programming_language)
  example
   % Accepts a number and calculates its factorial
@@ -94,3 +91,5 @@ fileType text
 hopl 1023
 
 rosettaCode Turing
+
+centralPackageRepositoryCount 0

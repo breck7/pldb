@@ -2,9 +2,6 @@ title Executive Systems Problem Oriented Language
 appeared 1967
 type pl
 
-patterns
- hasCentralPackageRepository? false
-
 wikipedia https://en.wikipedia.org/wiki/Executive_Systems_Problem_Oriented_Language
  related algol-60 newp
  summary This article is about the programming language. For the university, see Escuela Superior Politecnica del Litoral.ESPOL (short for Executive Systems Problem Oriented Language) was a superset of ALGOL 60 that provided capabilities of what would later be known as Mohols, machine oriented high order languages, such as interrupting a processor on a multiprocessor system (the Burroughs large systems were multiprocessor processor systems). ESPOL was used to write the MCP (Master Control Program) on Burroughs computer systems from the B5000 to the B6700. The single-pass compiler for ESPOL could compile over 250 lines per second. ESPOL was superseded by NEWP.
@@ -21,3 +18,5 @@ country US
 fileType text
 
 hopl 506
+
+centralPackageRepositoryCount 0

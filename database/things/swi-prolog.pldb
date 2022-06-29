@@ -2,9 +2,6 @@ title SWI-Prolog
 appeared 1987
 type pl
 
-patterns
- hasCentralPackageRepository? false
-
 wikipedia https://en.wikipedia.org/wiki/SWI-Prolog
  related c prolog java rdf unix linux lisp emacs-editor
  summary SWI-Prolog is a free implementation of the programming language Prolog, commonly used for teaching and semantic web applications. It has a rich set of features, libraries for constraint logic programming, multithreading, unit testing, GUI, interfacing to Java, ODBC and others, literate programming, a web server, SGML, RDF, RDFS, developer tools (including an IDE with a GUI debugger and GUI profiler), and extensive documentation. SWI-Prolog runs on Unix, Windows, Macintosh and Linux platforms. SWI-Prolog has been under continuous development since 1987. Its main author is Jan Wielemaker. The name SWI is derived from Sociaal-Wetenschappelijke Informatica ("Social Science Informatics"), the former name of the group at the University of Amsterdam, where Wielemaker is employed. The name of this group has changed to HCS (Human-Computer Studies).
@@ -19,3 +16,4 @@ website http://www.swi-prolog.org/
 status historical
 fileType text
 jupyterKernel https://github.com/madmax2012/SWI-Prolog-Kernel
+centralPackageRepositoryCount 0

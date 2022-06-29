@@ -2,9 +2,6 @@ title XMOS community
 appeared 2005
 type pl
 
-patterns
- hasCentralPackageRepository? false
-
 wikipedia https://en.wikipedia.org/wiki/XC_(programming_language)
  example
   #include <stdio.h>
@@ -58,3 +55,4 @@ linguistGrammarRepo https://github.com/graymalkin/xc.tmbundle
 standsFor XMOS community
 status active
 fileType text
+centralPackageRepositoryCount 0

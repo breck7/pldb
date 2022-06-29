@@ -3,7 +3,6 @@ appeared 2003
 type pl
 
 patterns
- hasCentralPackageRepository? false
  hasComments? true
  hasSemanticIndentation? true
  hasTypeInference? true
@@ -91,3 +90,4 @@ rosettaCode Nemerle
 
 corporateDevelopers JetBrains
 visualParadigm false
+centralPackageRepositoryCount 0

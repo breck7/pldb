@@ -2,9 +2,6 @@ title SLIP programming language
 appeared 1960
 type pl
 
-patterns
- hasCentralPackageRepository? false
-
 wikipedia https://en.wikipedia.org/wiki/SLIP_(programming_language)
  related fortran algol
  summary SLIP is a list processing computer programming language, invented by Joseph Weizenbaum in the 1960s.  The name SLIP stands for Symmetric LIst Processor.  It was first implemented as an extension to the Fortran programming language, and later embedded into MAD and ALGOL.
@@ -20,3 +17,5 @@ fileType text
 wordRank 5110
 
 hopl 3550
+
+centralPackageRepositoryCount 0

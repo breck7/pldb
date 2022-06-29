@@ -4,7 +4,6 @@ type pl
 creators Thomas Mertes
 
 patterns
- hasCentralPackageRepository? false
  hasComments? true
  hasOperatorOverloading? true
 
@@ -38,3 +37,5 @@ fileType text
 tiobe Seed7
 
 rosettaCode Seed7
+
+centralPackageRepositoryCount 0

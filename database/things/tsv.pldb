@@ -2,9 +2,6 @@ title tab-separated values
 appeared 1993
 type metaLanguage
 
-patterns
- hasCentralPackageRepository? false
-
 wikipedia https://en.wikipedia.org/wiki/Tab-separated_values
  example
   Sepal length	Sepal width	Petal length	Petal width	Species
@@ -25,3 +22,4 @@ wikipedia https://en.wikipedia.org/wiki/Tab-separated_values
 standsFor tab-separated values
 status historical
 fileType text
+centralPackageRepositoryCount 0

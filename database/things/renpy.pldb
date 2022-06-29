@@ -2,9 +2,6 @@ title Ren'Py
 appeared 2004
 type pl
 
-patterns
- hasCentralPackageRepository? false
-
 wikipedia https://en.wikipedia.org/wiki/Ren'Py
  related python cython linux freebsd android ios utf-8
  summary The Ren'Py Visual Novel Engine is a free software engine which facilitates the creation of visual novels, a form of computer-mediated storytelling. Ren'Py is a portmanteau of ren'ai (恋愛), the Japanese word for 'romantic love', a common element of games made using Ren'Py; and Python, the programming language that Ren'Py runs on. Ren'Py has proved attractive to English-language hobbyists; over 1000 games use the Ren'Py engine, nearly all in English.
@@ -91,3 +88,4 @@ linguistGrammarRepo https://github.com/williamd1k0/language-renpy.git
 status active
 fileType text
 isOpenSource true
+centralPackageRepositoryCount 0

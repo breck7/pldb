@@ -2,9 +2,6 @@ title MARK IV
 appeared 1985
 type pl
 
-patterns
- hasCentralPackageRepository? false
-
 wikipedia https://en.wikipedia.org/wiki/MARK_IV_(software)
  related cobol
  summary MARK IV is a Fourth-generation programming language that was created by Informatics, Inc.  in the 1960s. Informatics took advantage of IBM's decision to unbundle their software; MARK IV was the first "software product to have cumulative sales of $10 million". MARK IV was developed for IBM Systems (360 and 370) and for the RCA Spectra 70. Its main benefit was allowing faster application development on the order of 6 to 10 times faster than doing a system using a 3GL, such as COBOL. MARK IV, being an early 4GL, allowed user development of systems related to business. In a 1971 ad by Informatics, there are several quotes from customers, such as:  We conservatively estimate that the benefits derived from the MARK IV System have completely returned  the cost of our investment in a period of less than 3 months. MARK IV runs ... handle Accounts Receivable, Inventory, Sales Analyses, etc. on about 26 different factories.MARK IV went to Sterling Software in 1985 as part of that company's acquisition of Informatics General.  As VISION:BUILDER it is now part of the product suite from Computer Associates.
@@ -20,3 +17,5 @@ country US
 fileType text
 
 hopl 3117
+
+centralPackageRepositoryCount 0

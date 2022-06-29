@@ -9,7 +9,6 @@ patterns
   dec mult : num # num - > num;
   ---xmulty<= ifY=0then0elsexmult(y-1)+x;
  mergesWhitespace? true
- hasCentralPackageRepository? false
  hasPatternMatching? true
  hasInfixNotation? true
   max(10,20) + max(1,max(2,3));
@@ -46,3 +45,4 @@ hopl 810
 rosettaCode Hope
 
 keywords and or not char num div mod dec X # : -> ; --- if then else > <= + ( ) , infix - truval :: nil " <> == in where data ++ lambda
+centralPackageRepositoryCount 0

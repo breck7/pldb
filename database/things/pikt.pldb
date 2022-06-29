@@ -2,9 +2,6 @@ title PIKT
 appeared 1998
 type pl
 
-patterns
- hasCentralPackageRepository? false
-
 wikipedia https://en.wikipedia.org/wiki/PIKT
  related unix linux solaris freebsd
  summary PIKT is cross-categorical, multi-purpose software for global-view, site-at-a-time system and network administration.  Applicability includes system monitoring, configuration management, server and network administration, system security, and many other uses. PIKT consists of a feature-rich file preprocessor; a scripting language; a flexible, centrally directed process scheduler; a customizing file installer; a collection of command-line extensions; and other useful tools. The PIKT binaries are written using a combination of C, lex (flex), and yacc (bison).  PIKT's configuration combines free-form text files, Pikt scripts, and programs written in other popular scripting languages. PIKT is in widespread use at thousands of sites around the world, although its popularity is diminished by the perception that it is complicated to set up and difficult to administer.  Recent changes have mitigated the complexity and difficulty somewhat.  PIKT's user community is low-profile and not very active. PIKT was first released publicly on October 17, 1998, and has undergone numerous revisions since then.  As of 2008, it is still being actively maintained.
@@ -17,3 +14,4 @@ wikipedia https://en.wikipedia.org/wiki/PIKT
 
 status historical
 isOpenSource true
+centralPackageRepositoryCount 0

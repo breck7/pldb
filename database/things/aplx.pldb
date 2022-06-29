@@ -2,9 +2,6 @@ title APLX
 appeared 1985
 type pl
 
-patterns
- hasCentralPackageRepository? false
-
 wikipedia https://en.wikipedia.org/wiki/APLX
  related apl linux xml
  summary APLX is a cross-platform dialect of the programming language APL, created by British company MicroAPL, Ltd. APLX is intended for uses such as financial planning, market research, statistics, management information, and various kinds of scientific and engineering work. APLX is based on IBM's APL2, but includes several extensions. APLX version 3 was released in April and May 2005. It is available on Microsoft Windows, Linux, and macOS. Though APLX keeps APL's extended character set, APLX is a bit more verbose, due to the prevalence of system functions with long names, and the use of structured-control keywords. The use of explicit loops is a major deviation from earlier APL versions and derivatives. Other extensions include:  Object-oriented programming Support for .NET Framework, ActiveX, operating system resources, and connectivity Extensible Markup Language (XML) array conversion primitivesEffective July 11, 2016, MicroAPL withdrew APLX from commercial sale. British firm Dyalog, authors of APL2000, began hosting the APLX Archive website including the download area and documentation.
@@ -16,3 +13,4 @@ wikipedia https://en.wikipedia.org/wiki/APLX
  appeared 2000
 
 status historical
+centralPackageRepositoryCount 0

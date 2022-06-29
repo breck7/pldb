@@ -11,7 +11,6 @@ example
  end
 
 patterns
- hasCentralPackageRepository? false
  hasLineComments? true
   # A comment
 
@@ -45,3 +44,4 @@ projectEuler Unicon
 
 rosettaCode Unicon
 lineCommentKeyword #
+centralPackageRepositoryCount 0

@@ -2,9 +2,6 @@ title Pandas
 appeared 2008
 type library
 
-patterns
- hasCentralPackageRepository? false
-
 wikipedia https://en.wikipedia.org/wiki/Pandas_(software)
  related python cython c matplotlib numpy scipy r scikit-learn
  summary In computer programming, pandas is a software library written for the Python programming language for data manipulation and analysis. In particular, it offers data structures and operations for manipulating numerical tables and time series. It is free software released under the three-clause BSD license. The name is derived from the term "panel data", an econometrics term for multidimensional, structured data sets.
@@ -22,3 +19,4 @@ isOpenSource true
 writtenIn python
 indeedJobs pandas engineer
  2017 341
+centralPackageRepositoryCount 0

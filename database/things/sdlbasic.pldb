@@ -2,9 +2,6 @@ title SdlBasic
 appeared 2002
 type pl
 
-patterns
- hasCentralPackageRepository? false
-
 wikipedia https://en.wikipedia.org/wiki/SdlBasic
  example
   Function swap( a, b )
@@ -27,3 +24,4 @@ wikipedia https://en.wikipedia.org/wiki/SdlBasic
  appeared 2002
 
 status historical
+centralPackageRepositoryCount 0

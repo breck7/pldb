@@ -2,9 +2,6 @@ title SRecode Template
 appeared 2000
 type textMarkup
 
-patterns
- hasCentralPackageRepository? false
-
 description Semantic Recoder (or SRecode) is a template manager and code generator that is a part of CEDET.
 
 githubLanguage SRecode Template
@@ -68,3 +65,4 @@ linguistGrammarRepo https://github.com/textmate/lisp.tmbundle
 reference https://www.gnu.org/software/emacs/manual/html_mono/srecode.html
 status active
 fileType text
+centralPackageRepositoryCount 0

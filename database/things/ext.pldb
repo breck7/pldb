@@ -2,9 +2,6 @@ title Extended file system
 appeared 1992
 type filesystem
 
-patterns
- hasCentralPackageRepository? false
-
 wikipedia https://en.wikipedia.org/wiki/Extended_file_system
  related linux ext2 ext3 ext4
  summary The extended file system, or ext, was implemented in April 1992 as the first file system created specifically for the Linux kernel. It has metadata structure inspired by the traditional Unix File System (UFS) and was designed by Rémy Card to overcome certain limitations of the MINIX file system. It was the first implementation that used the virtual file system (VFS), for which support was added in the Linux kernel in version 0.96c, and it could handle file systems up to 2 gigabytes (GB) in size.ext was the first in the series of extended file systems.  In 1993 it was superseded by both ext2 and xiafs, which competed for a time, but ext2 won because of its long-term viability: ext2 remedied issues with ext, such as the immutability of inodes and fragmentation.
@@ -18,3 +15,4 @@ wikipedia https://en.wikipedia.org/wiki/Extended_file_system
 status historical
 fileType text
 wordRank 5470
+centralPackageRepositoryCount 0

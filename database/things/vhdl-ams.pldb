@@ -2,9 +2,6 @@ title VHDL-AMS
 appeared 1993
 type pl
 
-patterns
- hasCentralPackageRepository? false
-
 description The IEEE 1076.1 language, a hardware description language for the description and the simulation of analog, digital, and mixed-signal systems, is defined in this standard. The language, also informally known as VHDL-AMS, is built on IEEE Std 1076-2008 (VHDL) and extends it with additions and changes to provide capabilities of writing and simulating analog and mixed-signal models.
 
 wikipedia https://en.wikipedia.org/wiki/VHDL-AMS
@@ -39,3 +36,4 @@ wikipedia https://en.wikipedia.org/wiki/VHDL-AMS
 
 reference https://ieeexplore.ieee.org/document/8267464
 status historical
+centralPackageRepositoryCount 0

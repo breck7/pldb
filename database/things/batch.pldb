@@ -3,7 +3,6 @@ appeared 1985
 type pl
 
 patterns
- hasCentralPackageRepository? false
  hasCaseInsensitiveIdentifiers? true
 
 wikipedia https://en.wikipedia.org/wiki/Batch_file
@@ -48,3 +47,5 @@ wordRank 7410
 projectEuler Batch
  memberCount
   2022 9
+
+centralPackageRepositoryCount 0

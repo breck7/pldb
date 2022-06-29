@@ -29,7 +29,6 @@ patterns
   (defmethod collide-with ((x spaceship) (y spaceship))
     ;; deal with spaceship hitting spaceship
     )
- hasCentralPackageRepository? false
  hasComments? true
  hasDirectives? true
  hasMultipleInheritance? true
@@ -89,3 +88,4 @@ indeedJobs "common lisp"
 lineCommentKeyword ;
 visualParadigm false
 jupyterKernel https://github.com/fredokun/cl-jupyter
+centralPackageRepositoryCount 0

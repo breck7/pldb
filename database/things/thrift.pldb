@@ -21,9 +21,6 @@ example
    list<Phone> findAll()
  }
 
-patterns
- hasCentralPackageRepository? false
-
 wikipedia https://en.wikipedia.org/wiki/Apache_Thrift
  example
   enum PhoneType {
@@ -75,3 +72,4 @@ status active
 fileType text
 isOpenSource true
 corporateDevelopers Apache
+centralPackageRepositoryCount 0

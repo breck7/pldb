@@ -2,9 +2,6 @@ title 3APL
 appeared 1998
 type pl
 
-patterns
- hasCentralPackageRepository? false
-
 wikipedia https://en.wikipedia.org/wiki/3APL
  example
   PLANBASE { SetStatus(started); }
@@ -27,3 +24,5 @@ reference https://semanticscholar.org/paper/5167cbb780bac55456a0f69c16f175eb6126
 status historical
 
 hopl 7802
+
+centralPackageRepositoryCount 0

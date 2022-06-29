@@ -4,7 +4,6 @@ type pl
 creators Simon C. Nash
 
 patterns
- hasCentralPackageRepository? false
  hasMultipleInheritance? true
 
 wikipedia https://en.wikipedia.org/wiki/Object_REXX
@@ -26,3 +25,5 @@ fileType text
 tiobe Object Rexx
 
 hopl 3742
+
+centralPackageRepositoryCount 0

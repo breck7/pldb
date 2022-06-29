@@ -2,9 +2,6 @@ title Analytical engine
 appeared 1837
 type computingMachine
 
-patterns
- hasCentralPackageRepository? false
-
 wikipedia https://en.wikipedia.org/wiki/Analytical_engine
  related assembly-language punched-tape
  summary The Analytical Engine was a proposed mechanical general-purpose computer designed by English mathematician and computer pioneer Charles Babbage. It was first described in 1837 as the successor to Babbage's difference engine, a design for a mechanical computer. The Analytical Engine incorporated an arithmetic logic unit, control flow in the form of conditional branching and loops, and integrated memory, making it the first  design for a general-purpose computer that could be described in modern terms as Turing-complete. In other words, the logical structure of the Analytical Engine was essentially the same as that which has dominated computer design in the electronic era.Babbage was never able to complete construction of any of his machines due to conflicts with his chief engineer and inadequate funding. It was not until the late 1940s that the first general-purpose computers were actually built, more than a century after Babbage had proposed the pioneering Analytical Engine in 1837.
@@ -16,3 +13,4 @@ wikipedia https://en.wikipedia.org/wiki/Analytical_engine
  appeared 1991
 
 status historical
+centralPackageRepositoryCount 0

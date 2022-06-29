@@ -2,9 +2,6 @@ title Scsh
 appeared 2002
 type pl
 
-patterns
- hasCentralPackageRepository? false
-
 wikipedia https://en.wikipedia.org/wiki/Scsh
  example
   #!/usr/local/bin/scsh -s
@@ -30,3 +27,5 @@ status historical
 isOpenSource true
 
 hopl 2484
+
+centralPackageRepositoryCount 0

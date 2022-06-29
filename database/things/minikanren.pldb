@@ -2,9 +2,6 @@ title minikanren
 appeared 2013
 type pl
 
-patterns
- hasCentralPackageRepository? false
-
 githubRepo https://github.com/miniKanren/miniKanren
 
 website http://minikanren.org/
@@ -13,3 +10,4 @@ status active
 twitter minikanren
 
 isOpenSource true
+centralPackageRepositoryCount 0

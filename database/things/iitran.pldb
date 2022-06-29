@@ -2,9 +2,6 @@ title IITRAN
 appeared 1969
 type pl
 
-patterns
- hasCentralPackageRepository? false
-
 wikipedia https://en.wikipedia.org/wiki/IITRAN
  related pl-i
  summary IITRAN is a discontinued programming language created in the mid-1960s.  It was designed as a first language for students, and its syntax resembled that of PL/I.  The name derives from Illinois Institute of Technology, where it was developed. The IITRAN language was initially implemented on an IBM System/360 DOS system.  In the early 1970s, the IBM platform proved to be too small for the IIT environment and the hardware was upgraded.  A new version was developed for the Univac 1108 platform.  The language itself did not change but with the new hardware, a new implementation of the IITran software was developed. IITRAN was designed and developed in response to the increasing demand for a computer language which would meet the following specifications:  It should be clear, concise, and easily learned, even for those who have had no previous experience with computers or mathematics; It should bear as close a resemblance as possible to the English language; It should be free of awkward restrictions and limitations; It should be consistent with mathematical and logical foundations; It should allow processing of a great number of individual programs in a very short time; It should serve as a computational tool for students of science and engineering; It should process a clear, easily understood, set of diagnostic error messages.(Bauer, p. V) There was a Spanish language version of IITRAN at IIT as well. It utilized Spanish keywords rather than English ones. For example the keyword read was replaced by leer.
@@ -18,3 +15,5 @@ wikipedia https://en.wikipedia.org/wiki/IITRAN
 status historical
 
 hopl 419
+
+centralPackageRepositoryCount 0

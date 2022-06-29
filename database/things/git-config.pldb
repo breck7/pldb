@@ -8,9 +8,7 @@ example
    ; Don't trust file modes
    filemode = false
 
-patterns
- hasCentralPackageRepository? false
-
 website https://git-scm.com/docs/git-config#_syntax
 status historical
 fileType text
+centralPackageRepositoryCount 0

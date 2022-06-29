@@ -3,7 +3,6 @@ appeared 2011
 type pl
 
 patterns
- hasCentralPackageRepository? false
  hasComments? true
   # this is a comment
  hasBlockComments? false
@@ -133,3 +132,4 @@ stackOverflowSurvey
   medianSalary 80077
   fans 3374
   percentageUsing 0.02
+centralPackageRepositoryCount 0

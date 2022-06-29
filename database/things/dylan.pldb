@@ -4,7 +4,6 @@ type pl
 
 patterns
  hasMultipleDispatch? true
- hasCentralPackageRepository? false
  hasComments? true
  hasMultipleInheritance? true
 
@@ -62,3 +61,4 @@ codeMirror dylan
 rosettaCode Dylan
 
 visualParadigm false
+centralPackageRepositoryCount 0

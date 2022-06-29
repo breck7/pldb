@@ -2,9 +2,6 @@ title SGML
 appeared 1986
 type textMarkup
 
-patterns
- hasCentralPackageRepository? false
-
 wikipedia https://en.wikipedia.org/wiki/Standard_Generalized_Markup_Language
  example
   <lines>
@@ -26,3 +23,5 @@ country US
 fileType text
 
 hopl 1435
+
+centralPackageRepositoryCount 0

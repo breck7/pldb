@@ -7,9 +7,6 @@ example
              |  while <Expression> do <Statements> end
              |  for Id = <Range> do <Statements> end
 
-patterns
- hasCentralPackageRepository? false
-
 wikipedia https://en.wikipedia.org/wiki/GOLD_(parser)
  example
   <Statements>  ::= <Statements> <Statement>
@@ -59,3 +56,4 @@ website http://goldparser.org/
 status historical
 fileType text
 wordRank 740
+centralPackageRepositoryCount 0

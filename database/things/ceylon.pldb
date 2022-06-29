@@ -4,7 +4,6 @@ type pl
 creators Gavin King
 
 patterns
- hasCentralPackageRepository? false
  hasOperatorOverloading? true
  hasStaticTyping? true
  hasTypeInference? true
@@ -92,3 +91,4 @@ corporateDevelopers Red Hat
 writtenIn java
 languageServerProtocolProject https://github.com/jvasileff/vscode-ceylon
  writtenIn ceylon
+centralPackageRepositoryCount 0

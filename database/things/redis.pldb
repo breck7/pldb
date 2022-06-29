@@ -2,9 +2,6 @@ title Redis
 appeared 2009
 type application
 
-patterns
- hasCentralPackageRepository? false
-
 wikipedia https://en.wikipedia.org/wiki/Redis
  related actionscript c csharp clojure common-lisp d dart erlang go haskell haxe io java julia lua objective-c ocaml perl php puredata python r racket ruby rust scala smalltalk tcl aws azure
  summary Redis is an open-source in-memory database project implementing a distributed, in-memory key-value store with optional durability. Redis supports different kinds of abstract data structures, such as strings, lists, maps, sets, sorted sets, hyperloglogs, bitmaps and spatial indexes. The project is mainly developed by Salvatore Sanfilippo and is currently sponsored by Redis Labs. Redis Labs creates and maintains the official Redis Enterprise Pack.
@@ -36,3 +33,4 @@ linkedInSkill redis
  2018 59099
 writtenIn c
 jupyterKernel https://github.com/supercoderz/redis_kernel
+centralPackageRepositoryCount 0

@@ -3,9 +3,6 @@ appeared 1993
 type pl
 creators Urban Müller
 
-patterns
- hasCentralPackageRepository? false
-
 description A nsfw esolang.
 
 wikipedia https://en.wikipedia.org/wiki/Brainfuck
@@ -86,3 +83,4 @@ codeMirror brainfuck
 antlr https://github.com/antlr/grammars-v4/tree/master/brainfuck
 
 jupyterKernel https://github.com/robbielynch/ibrainfuck
+centralPackageRepositoryCount 0

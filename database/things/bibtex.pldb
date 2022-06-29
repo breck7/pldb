@@ -20,9 +20,6 @@ example
    address = {Piscataway, NJ, USA},
   }
 
-patterns
- hasCentralPackageRepository? false
-
 wikipedia https://en.wikipedia.org/wiki/BibTeX
  example
   @Book{abramowitz+stegun,
@@ -60,3 +57,4 @@ website https://www.ctan.org/pkg/bibtex
 status active
 fileExtensions bib
 fileType text
+centralPackageRepositoryCount 0

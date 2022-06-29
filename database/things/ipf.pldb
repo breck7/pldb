@@ -19,9 +19,6 @@ example
  
  :euserdoc.
 
-patterns
- hasCentralPackageRepository? false
-
 wikipedia https://en.wikipedia.org/wiki/Information_Presentation_Facility
  example
   :lm margin=2.:font facename=Helv size=24x10.
@@ -60,3 +57,4 @@ wikipedia https://en.wikipedia.org/wiki/Information_Presentation_Facility
 standsFor Information Presentation Facility
 status historical
 fileType text
+centralPackageRepositoryCount 0

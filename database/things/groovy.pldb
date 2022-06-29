@@ -4,7 +4,6 @@ type pl
 creators James Strachan
 
 patterns
- hasCentralPackageRepository? false
  hasOperatorOverloading? true
  hasLineComments? true
   // A comment
@@ -96,3 +95,4 @@ stackOverflowSurvey
   medianSalary 75002
   fans 1177
   percentageUsing 0.03
+centralPackageRepositoryCount 0

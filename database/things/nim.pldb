@@ -4,7 +4,6 @@ type pl
 creators Andreas Rumpf
 
 patterns
- hasCentralPackageRepository? true
  hasComments? true
  hasMacros? true
   https://hookrace.net/blog/introduction-to-metaprogramming-in-nim/#macros

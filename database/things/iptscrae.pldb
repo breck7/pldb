@@ -2,9 +2,6 @@ title IPTSCRAE
 appeared 1994
 type pl
 
-patterns
- hasCentralPackageRepository? false
-
 wikipedia https://en.wikipedia.org/wiki/IPTSCRAE
  example
   /""s={n++{{" "n itoa&}{" buzz"}n 5%ifelse}{" fizz"}n 3%ifelse s+=}{101n>}while s logmsg
@@ -21,3 +18,5 @@ status historical
 fileType text
 
 rosettaCode Iptscrae
+
+centralPackageRepositoryCount 0

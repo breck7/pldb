@@ -3,7 +3,6 @@ appeared 1998
 type pl
 
 patterns
- hasCentralPackageRepository? false
  hasComments? true
 
 wikipedia https://en.wikipedia.org/wiki/Rlab
@@ -21,3 +20,5 @@ fileType text
 hopl 5721
 
 rosettaCode RLaB
+
+centralPackageRepositoryCount 0

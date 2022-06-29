@@ -3,7 +3,6 @@ appeared 2001
 type pl
 
 patterns
- hasCentralPackageRepository? false
  hasComments? true
 
 wikipedia https://en.wikipedia.org/wiki/Processing_(programming_language)
@@ -134,3 +133,5 @@ projectEuler Processing
   2022 53
 
 rosettaCode Processing
+
+centralPackageRepositoryCount 0

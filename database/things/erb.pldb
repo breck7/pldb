@@ -11,9 +11,6 @@ example
  <% end %>
  </ul>
 
-patterns
- hasCentralPackageRepository? false
-
 description eRuby (Embedded Ruby) is a templating system that embeds Ruby into a text document.
 
 wikipedia https://en.wikipedia.org/wiki/ERuby
@@ -101,3 +98,4 @@ linguistGrammarRepo https://github.com/atom/language-ruby
 
 status active
 fileType text
+centralPackageRepositoryCount 0

@@ -2,9 +2,6 @@ title SIGNAL
 appeared 1982
 type pl
 
-patterns
- hasCentralPackageRepository? false
-
 wikipedia https://en.wikipedia.org/wiki/SIGNAL_(programming_language)
  related esterel lustre simulink isbn
  summary SIGNAL is a programming language based on synchronized data-flow (flows + synchronization): a process is a set of equations on elementary flows describing both data and control. The SIGNAL formal model provides the capability to describe systems with several clocks  (polychronous systems) as relational specifications. Relations are useful as partial specifications and as specifications of non-deterministic devices (for instance a non-deterministic bus) or external processes (for instance an unsafe car driver). Using SIGNAL allows one to specify an application, to design an architecture, to refine detailed components down to RTOS or hardware description. The SIGNAL model supports a design methodology which goes from specification to implementation, from abstraction to concretization, from synchrony to asynchrony. SIGNAL has been mainly developed in INRIAEspresso team since the 1980s, at the same time as similar programming languages, Esterel and Lustre.
@@ -23,3 +20,5 @@ wordRank 2383
 tiobe SIGNAL
 
 hopl 1270
+
+centralPackageRepositoryCount 0

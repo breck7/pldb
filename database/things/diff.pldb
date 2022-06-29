@@ -2,9 +2,6 @@ title Diff
 appeared 1974
 type application
 
-patterns
- hasCentralPackageRepository? false
-
 wikipedia https://en.wikipedia.org/wiki/Diff_utility
  example
   --- /path/to/original	timestamp
@@ -77,3 +74,5 @@ fileType text
 wordRank 2959
 
 codeMirror diff
+
+centralPackageRepositoryCount 0

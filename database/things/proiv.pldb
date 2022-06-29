@@ -2,9 +2,6 @@ title PROIV
 appeared 1976
 type pl
 
-patterns
- hasCentralPackageRepository? false
-
 wikipedia https://en.wikipedia.org/wiki/PROIV
  related abap focus pick-operating-system jvm linux solaris postgresql c
  summary PROIV is a low code development platform, developed and sold by NorthgateArinso, part of the Northgate Information Solutions Group. It has an active community of around 2500 developers and end-users worldwide, ranging from consultants to large multinationals, finance institutions, tax authorities, retailers, engineering companies, media operators and software houses. PROIV's usual application domain is database-centric business applications. PROIV has some similarities to languages such as ABAP, FOCUS and RPG. PROIV programs consist of declarative/non-procedural specifications that control the overall structure of the program and database access and that have an implicit sequence of execution (which PROIV programmers refer to as the timing cycle).  Procedural subroutines can be added by the programmer; these are written in a 3GL-like language which PROIV calls "Logic". Note that in PROIV programs are referred to as "functions", which can be confusing as it differs from the more usual use of that term in programming languages.
@@ -17,3 +14,4 @@ wikipedia https://en.wikipedia.org/wiki/PROIV
 
 status historical
 fileType text
+centralPackageRepositoryCount 0

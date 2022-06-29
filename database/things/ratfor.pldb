@@ -2,9 +2,6 @@ title RATFOR
 appeared 1976
 type pl
 
-patterns
- hasCentralPackageRepository? false
-
 description Ratfor (short for Rational Fortran) is a programming language implemented as a preprocessor for Fortran 66. It provided modern control structures, unavailable in Fortran 66, to replace GOTOs and statement numbers.
 
 wikipedia https://en.wikipedia.org/wiki/Ratfor
@@ -29,3 +26,5 @@ country US
 fileType text
 
 hopl 692
+
+centralPackageRepositoryCount 0

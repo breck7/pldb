@@ -2,9 +2,6 @@ title Metal
 appeared 2014
 type library
 
-patterns
- hasCentralPackageRepository? false
-
 wikipedia https://en.wikipedia.org/wiki/Metal_(API)
  related ios opengl opencl swift objective-c llvmir unity-engine
  summary Metal is a low-level, low-overhead hardware-accelerated 3D graphic and compute shader application programming interface (API) developed by Apple Inc., and which debuted in iOS 8. Metal combines functions similar to OpenGL and OpenCL under one API. It is intended to bring to iOS, macOS, and tvOS apps some of the performance benefits of similar APIs on other platforms, such as Vulkan (which debuted in mid-February 2016) and DirectX 12.  Metal is an object-oriented API that can be invoked using the Swift or Objective-C programming languages.  Full-blown control of the Metal framework (as well as the related MetalKit framework) is accessible via the Metal Unified Graphics and Compute Language. According to Apple promotional materials: "Metal is a C++ based programming language that developers can use to write code that is executed on the GPU for graphics and general-purpose data-parallel computations. Since Metal is based on C++, developers will find it familiar and easy to use. With Metal, both graphics and compute programs can be written with a single, unified language, which allows tighter integration between the two."
@@ -129,3 +126,4 @@ linguistGrammarRepo https://github.com/textmate/c.tmbundle
 status active
 fileType text
 wordRank 1466
+centralPackageRepositoryCount 0

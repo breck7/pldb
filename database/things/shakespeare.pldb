@@ -2,9 +2,6 @@ title Shakespeare
 appeared 1993
 type esolang
 
-patterns
- hasCentralPackageRepository? false
-
 wikipedia https://en.wikipedia.org/wiki/Shakespeare_Programming_Language
  example
   Act II: Behind Hamlet's back.
@@ -137,3 +134,5 @@ fileType text
 wordRank 7050
 
 quineRelay Shakespeare
+
+centralPackageRepositoryCount 0

@@ -3,9 +3,6 @@ appeared 1969
 type notation
 creators Steve Crocker
 
-patterns
- hasCentralPackageRepository? false
-
 wikipedia https://en.wikipedia.org/wiki/Request_for_Comments
  example
   RFC 2046                      Media Types                  November 1996
@@ -33,3 +30,4 @@ standsFor Request for Comments
 status historical
 fileType text
 wordRank 5769
+centralPackageRepositoryCount 0

@@ -2,9 +2,6 @@ title Module Management System
 appeared 2005
 type pl
 
-patterns
- hasCentralPackageRepository? false
-
 description MMK is similar in functionality to Digital's DEC/Module Management System (MMS), and understands a syntax in its description files which is a superset of that which is understood by MMS.
 
 githubLanguage Module Management System
@@ -46,3 +43,4 @@ example
 reference https://github.com/endlesssoftware/mmk
 status active
 fileType text
+centralPackageRepositoryCount 0

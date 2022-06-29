@@ -2,9 +2,6 @@ title FAUST programming language
 appeared 2002
 type pl
 
-patterns
- hasCentralPackageRepository? false
-
 wikipedia https://en.wikipedia.org/wiki/FAUST_(programming_language)
  related linux unix c max haskell
  summary FAUST (Functional AUdio STream) is a domain-specific purely functional programming language for implementing signal processing algorithms in the form of libraries, audio plug-ins, or standalone applications. A FAUST program denotes a signal processor: a mathematical function that is applied to some input signal and then fed out.
@@ -21,3 +18,5 @@ fileType text
 isOpenSource true
 
 rosettaCode FAUST
+
+centralPackageRepositoryCount 0

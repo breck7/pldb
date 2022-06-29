@@ -6,9 +6,6 @@ creators Tom Preston-Werner
 example
  1.5.12
 
-patterns
- hasCentralPackageRepository? false
-
 description Semantic versioning (aka SemVer)[1], currently the best known and most widely adopted version scheme in this category, uses a sequence of three digits (Major.Minor.Patch), an optional prerelease tag and optional build meta tag. In this scheme, risk and functionality are the measures of significance. Breaking changes are indicated by increasing the major number (high risk), new non-breaking features increment the minor number (medium risk) and all other non-breaking changes increment the patch number (lowest risk). The presence of a prerelease tag (-alpha, -beta) indicates substantial risk, as does a major number of zero (0.y.z), which is used to indicate a work-in-progress that may contain any level of potentially breaking changes (highest risk).
 
 githubRepo https://github.com/semver/semver
@@ -26,3 +23,4 @@ aka SemVer semver
 status active
 fileType text
 isOpenSource true
+centralPackageRepositoryCount 0

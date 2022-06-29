@@ -2,9 +2,6 @@ title TCP
 appeared 1974
 type protocol
 
-patterns
- hasCentralPackageRepository? false
-
 wikipedia https://en.wikipedia.org/wiki/Transmission_Control_Protocol
  related udp ftp http smtp tls linux
  summary The Transmission Control Protocol (TCP) is one of the main protocols of the Internet protocol suite. It originated in the initial network implementation in which it complemented the Internet Protocol (IP). Therefore, the entire suite is commonly referred to as TCP/IP. TCP provides reliable, ordered, and error-checked delivery of a stream of octets between applications running on hosts communicating by an IP network. Major Internet applications such as the World Wide Web, email, remote administration, and file transfer rely on TCP. Applications that do not require reliable data stream service may use the User Datagram Protocol (UDP), which provides a connectionless datagram service that emphasizes reduced latency over reliability.
@@ -19,3 +16,4 @@ standsFor Transmission Control Protocol
 status historical
 fileType na
 wordRank 5599
+centralPackageRepositoryCount 0

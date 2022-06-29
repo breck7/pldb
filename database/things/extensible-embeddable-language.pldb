@@ -2,9 +2,6 @@ title Extensible Embeddable Language
 appeared 2005
 type pl
 
-patterns
- hasCentralPackageRepository? false
-
 wikipedia https://en.wikipedia.org/wiki/Extensible_Embeddable_Language
  example
   export function main<args>
@@ -68,3 +65,4 @@ wikipedia https://en.wikipedia.org/wiki/Extensible_Embeddable_Language
 
 status historical
 isOpenSource true
+centralPackageRepositoryCount 0

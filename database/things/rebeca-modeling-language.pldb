@@ -2,9 +2,6 @@ title Rebeca Modeling Language
 appeared 2004
 type pl
 
-patterns
- hasCentralPackageRepository? false
-
 wikipedia https://en.wikipedia.org/wiki/Rebeca_Modeling_Language
  summary Rebeca (acronym for Reactive Objects Language) is an actor-based modeling language with a formal foundation, designed in an effort to bridge the gap between formal verification approaches and real applications. It can be considered as a reference model for concurrent computation, based on an operational interpretation of the actor model. It is also a platform for developing object-based concurrent systems in practice. Besides having an appropriate and efficient way for modeling concurrent and distributed systems, one needs a formal verification approach to ensure their correctness. Rebeca is supported by a set of verification tools. Earlier tools provided a front-end to work with Rebeca code, and to translate the Rebeca code into input languages of well-known and mature model checkers (like SPIN and NuSMV) and thus, were able to verify their properties. Rebeca, since 2005, is supported by a direct model checker based on Modere (the Model checking Engine of Rebeca). Modular verification and abstraction techniques are used to reduce the state space and make it possible to verify complicated reactive systems. Besides these techniques, Modere supports partial order reduction and symmetry reduction.
  created 2017
@@ -15,3 +12,4 @@ wikipedia https://en.wikipedia.org/wiki/Rebeca_Modeling_Language
  appeared 2005
 
 status historical
+centralPackageRepositoryCount 0

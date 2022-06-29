@@ -2,9 +2,6 @@ title Functional Programming
 appeared 1977
 type pl
 
-patterns
- hasCentralPackageRepository? false
-
 wikipedia https://en.wikipedia.org/wiki/FP_(programming_language)
  example
   insert-left  \f       where   \f:〈x〉             =  x
@@ -28,3 +25,5 @@ wordRank 8320
 hopl 759
 
 rosettaCode FP
+
+centralPackageRepositoryCount 0

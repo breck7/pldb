@@ -2,9 +2,6 @@ title Uniface programming language
 appeared 1994
 type pl
 
-patterns
- hasCentralPackageRepository? false
-
 wikipedia https://en.wikipedia.org/wiki/Uniface_(programming_language)
  related mysql smtp c java unix linux sql postgresql
  summary Uniface is a development and deployment platform for enterprise applications that can run in a large range of runtime environments, including mobile, mainframe, web, Service-oriented architecture (SOA), Windows, Java EE and .NET.  Uniface is a model-driven, Rapid Application Development (RAD) environment used to create mission-critical applications. Uniface applications are database- and platform-independent. Uniface provides an integration framework that enables Uniface applications to integrate with all major DBMS products such as Oracle, Microsoft SQL Server, MySQL and IBM DB2. In addition, Uniface also supports file systems such as RMS (HP OpenVMS), Sequential files, operating system text files  and a wide range of other technologies, such as mainframe-based products (CICS, IMS), web services, SMTP and POP email, LDAP directories, .NET, ActiveX, Component Object Model (COM), C(++) programs, and Java. Uniface operates under Microsoft Windows, Windows Mobile, various flavors of Unix and Linux, VMS, IBM iSeries, and  z/OS. Uniface can be used in complex systems that maintain critical enterprise data supporting mission-critical business processes such as point-of sale and web-based online shopping, financial transactions, salary administration, and inventory control. It is currently used by thousands of companies in more than 30 countries, with an effective installed base of millions of end-users. Uniface applications range from client/server to web, and from data entry to workflow, as well as portals that are accessed locally, via intranets and the internet. Originally developed in the Netherlands by Inside Automation, later Uniface B.V., the product and company were acquired by Detroit-based Compuware Corp in 1994, and in 2014 was acquired by Marlin Equity Partners and is now an independent company. Uniface B.V. global headquarters are in Amsterdam.
@@ -23,3 +20,5 @@ twitter uniface
 fileType text
 
 rosettaCode Uniface
+
+centralPackageRepositoryCount 0

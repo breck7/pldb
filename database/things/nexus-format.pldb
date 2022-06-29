@@ -12,9 +12,6 @@ example
    TREE tree1 = ((A,B),C);
  END;
 
-patterns
- hasCentralPackageRepository? false
-
 wikipedia https://en.wikipedia.org/wiki/Nexus_file
  example
   #NEXUS
@@ -37,3 +34,4 @@ wikipedia https://en.wikipedia.org/wiki/Nexus_file
 reference http://wiki.christophchamp.com/index.php/NEXUS_file_format
 status active
 fileType text
+centralPackageRepositoryCount 0

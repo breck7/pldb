@@ -2,9 +2,6 @@ title SQLPL
 appeared 2009
 type pl
 
-patterns
- hasCentralPackageRepository? false
-
 wikipedia https://en.wikipedia.org/wiki/SQL_PL
  related sql sql-psm pl-sql
  summary SQL PL stands for Structured Query Language Procedural Language and was developed by IBM as a set of commands that extend the use of SQL in the IBM DB2 (DB2 UDB Version 7) database system. It provides procedural programmability in addition to the querying commands of SQL. It is a subset of the SQL Persistent Stored Modules (SQL/PSM) language standard. As of DB2 version 9, SQL PL stored procedures can run natively inside the DB2 process (inside the DBM1 address space, more precisely) instead of being fenced in an external process. In DB2 version 9.7 IBM also added a PL/SQL front-end to this infrastructure (called "SQL Unified Runtime Engine"), meaning that procedural SQL using either the ISO standard or Oracle's syntax compile to bytecode running on the same engine in DB2.
@@ -42,3 +39,4 @@ linguistGrammarRepo https://github.com/textmate/sql.tmbundle
 
 status active
 fileType text
+centralPackageRepositoryCount 0

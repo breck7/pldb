@@ -4,7 +4,6 @@ type pl
 creators Giancarlo Niccolai
 
 patterns
- hasCentralPackageRepository? false
  hasComments? true
 
 wikipedia https://en.wikipedia.org/wiki/Falcon_(programming_language)
@@ -37,3 +36,5 @@ tiobe Falcon
 hopl 7122
 
 rosettaCode Falcon
+
+centralPackageRepositoryCount 0

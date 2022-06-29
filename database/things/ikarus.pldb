@@ -2,9 +2,6 @@ title Ikarus Scheme implementation
 appeared 2007
 type pl
 
-patterns
- hasCentralPackageRepository? false
-
 wikipedia https://en.wikipedia.org/wiki/Ikarus_(Scheme_implementation)
  related scheme c llvmir c--
  summary Ikarus Scheme is a free software optimizing incremental compiler for R6RS Scheme that compiles directly to the x86 architecture. Ikarus is the first public implementation of a large part of the R6RS Scheme standard.
@@ -16,3 +13,4 @@ wikipedia https://en.wikipedia.org/wiki/Ikarus_(Scheme_implementation)
 
 status historical
 isOpenSource true
+centralPackageRepositoryCount 0

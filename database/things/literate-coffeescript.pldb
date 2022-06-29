@@ -3,7 +3,6 @@ appeared 2013
 type pl
 
 patterns
- hasCentralPackageRepository? false
  hasSemanticIndentation? true
 
 description
@@ -141,3 +140,4 @@ website https://coffeescript.org/#literate
 reference https://news.ycombinator.com/item?id=5277916
 status active
 fileType text
+centralPackageRepositoryCount 0

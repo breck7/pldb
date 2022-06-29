@@ -3,9 +3,6 @@ appeared 1974
 type pl
 creators Lee E. McMahon
 
-patterns
- hasCentralPackageRepository? false
-
 wikipedia https://en.wikipedia.org/wiki/Sed
  example
   This is my dog, whose name is Frank.
@@ -153,3 +150,5 @@ quineRelay sed
 ubuntuPackage sed
 
 rosettaCode Sed
+
+centralPackageRepositoryCount 0

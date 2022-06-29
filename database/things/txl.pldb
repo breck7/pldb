@@ -2,9 +2,6 @@ title TXL
 appeared 1985
 type pl
 
-patterns
- hasCentralPackageRepository? false
-
 wikipedia https://en.wikipedia.org/wiki/TXL_(programming_language)
  example
   function fact
@@ -132,3 +129,5 @@ status active
 fileType text
 
 hopl 1444
+
+centralPackageRepositoryCount 0

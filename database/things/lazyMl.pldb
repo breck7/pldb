@@ -2,9 +2,6 @@ title Lazy ML
 appeared 1980
 type pl
 
-patterns
- hasCentralPackageRepository? false
-
 wikipedia https://en.wikipedia.org/wiki/Lazy_ML
  example
   let rec fact 0 = 1  ||
@@ -20,3 +17,4 @@ wikipedia https://en.wikipedia.org/wiki/Lazy_ML
 
 status historical
 fileType text
+centralPackageRepositoryCount 0

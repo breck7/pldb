@@ -2,9 +2,6 @@ title Filterscript
 appeared 2012
 type pl
 
-patterns
- hasCentralPackageRepository? false
-
 description A subset of RenderScript
 
 githubLanguage Filterscript
@@ -31,3 +28,4 @@ example
  }
 status historical
 fileType text
+centralPackageRepositoryCount 0

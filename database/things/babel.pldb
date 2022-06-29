@@ -3,7 +3,6 @@ appeared 1990
 type pl
 
 patterns
- hasCentralPackageRepository? false
  hasComments? true
 
 reference https://semanticscholar.org/paper/68794aaac6109aef1a841dd4eb3ee45b93784583
@@ -12,3 +11,5 @@ status historical
 hopl 1537
 
 rosettaCode Babel
+
+centralPackageRepositoryCount 0

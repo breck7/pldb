@@ -2,9 +2,6 @@ title Yoix
 appeared 2000
 type pl
 
-patterns
- hasCentralPackageRepository? false
-
 wikipedia https://en.wikipedia.org/wiki/Yoix
  example
   import yoix.*.*;
@@ -165,3 +162,4 @@ wikipedia https://en.wikipedia.org/wiki/Yoix
 
 status historical
 isOpenSource true
+centralPackageRepositoryCount 0

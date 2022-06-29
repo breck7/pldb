@@ -2,9 +2,6 @@ title QuakeC
 appeared 1996
 type pl
 
-patterns
- hasCentralPackageRepository? false
-
 wikipedia https://en.wikipedia.org/wiki/QuakeC
  related c linux
  summary QuakeC is an interpreted language developed in 1996 by John Carmack of id Software to program parts of the video game Quake. Using QuakeC, a programmer is able to customize Quake to great extents by adding weapons, changing game logic and physics, and programming complex scenarios. It can be used to control many aspects of the game itself, such as parts of the AI, triggers, or changes in the level. The Quake engine was the only game engine to use QuakeC. Following engines used DLL game modules for customization written in C and C++ from id Tech 4 on.
@@ -19,3 +16,5 @@ status historical
 fileType text
 
 rosettaCode QuakeC
+
+centralPackageRepositoryCount 0

@@ -33,7 +33,6 @@ example
             insert.o search.o files.o utils.o
 
 patterns
- hasCentralPackageRepository? false
  hasSemanticIndentation? true
 
 description Lines that begin with TAB are assumed to be part of a recipe (so they are shell scripts and passed to the shell for parsing), and lines that do not begin with TAB cannot be part of a recipe (so they cannot be shell scripts: they must be make syntax).
@@ -95,3 +94,5 @@ rosettaCode Make
 quineRelay Makefile
 
 ubuntuPackage make
+
+centralPackageRepositoryCount 0

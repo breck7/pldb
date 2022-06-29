@@ -7,7 +7,6 @@ subreddit Jai
   2022 1500
 
 patterns
- hasCentralPackageRepository? false
  hasLineComments? true
   // A comment
  hasBlockComments? true
@@ -35,3 +34,4 @@ example
  }
 lineCommentKeyword //
 reference https://twitter.com/Jonathan_Blow/status/1474203662134255618
+centralPackageRepositoryCount 0

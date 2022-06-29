@@ -3,7 +3,6 @@ appeared 2013
 type pl
 
 patterns
- hasCentralPackageRepository? false
  hasComments? true
 
 description <a href='https://futhark-lang.org'>Futhark</a>, a high-performance parallel functional array language targeting GPUs.
@@ -24,3 +23,5 @@ fileType text
 isOpenSource true
 
 rosettaCode Futhark
+
+centralPackageRepositoryCount 0

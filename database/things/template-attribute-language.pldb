@@ -2,9 +2,6 @@ title Template Attribute Language
 appeared 2007
 type template
 
-patterns
- hasCentralPackageRepository? false
-
 wikipedia https://en.wikipedia.org/wiki/Template_Attribute_Language
  example
   <html metal:define-macro="icing">
@@ -29,3 +26,4 @@ wikipedia https://en.wikipedia.org/wiki/Template_Attribute_Language
 
 status historical
 fileType text
+centralPackageRepositoryCount 0

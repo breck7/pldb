@@ -2,9 +2,6 @@ title XPages
 appeared 2008
 type application
 
-patterns
- hasCentralPackageRepository? false
-
 wikipedia https://en.wikipedia.org/wiki/XPages
  related javascript html java
  summary XPages is an IBM extension of Java Server Faces with a server side JavaScript runtime and the built-in NoSQL database IBM Domino. It allows data from IBM Notes and Relational Databases to be displayed to browser clients on all platforms. The programming model is based on web development languages and standards including JavaScript, Ajax, Java, the Dojo Toolkit, Server-side JavaScript and JavaServer Faces. XPages uses IBM Domino, IBM's rapid application development platform, including functionality such as the document-oriented database.
@@ -51,3 +48,4 @@ status active
 twitter xpagesinfo
 
 fileType text
+centralPackageRepositoryCount 0

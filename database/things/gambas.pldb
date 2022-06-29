@@ -3,7 +3,6 @@ appeared 1999
 type pl
 
 patterns
- hasCentralPackageRepository? false
  hasComments? true
 
 wikipedia https://en.wikipedia.org/wiki/Gambas
@@ -55,3 +54,5 @@ status historical
 isOpenSource true
 
 rosettaCode Gambas
+
+centralPackageRepositoryCount 0

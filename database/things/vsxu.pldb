@@ -2,9 +2,6 @@ title VSXu
 appeared 2004
 type visual
 
-patterns
- hasCentralPackageRepository? false
-
 wikipedia https://en.wikipedia.org/wiki/VSXu
  related linux puredata opengl
  summary VSXu (VSX Ultra) is an OpenGL-based (hardware-accelerated), modular programming environment with its main purpose to visualize music/audio data and create 3D effects in real-time. Available for Windows and GNU/Linux. It is currently released as free software under terms of the  GNU General Public License v2 and maintained by Vovoid Media Technologies AB. VSXu is built on a modular plug-in-based architecture so anyone can extend it and or make visualization presets ("visuals" or "states").
@@ -29,3 +26,4 @@ website http://vsxu.com
 status active
 fileType text
 isOpenSource true
+centralPackageRepositoryCount 0

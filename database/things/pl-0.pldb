@@ -2,9 +2,6 @@ title PL/0
 appeared 1976
 type pl
 
-patterns
- hasCentralPackageRepository? false
-
 wikipedia https://en.wikipedia.org/wiki/PL/0
  example
   VAR x, y, z, q, r, n, f;
@@ -85,3 +82,5 @@ country CH
 fileType text
 
 hopl 2592
+
+centralPackageRepositoryCount 0

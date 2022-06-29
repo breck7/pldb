@@ -2,9 +2,6 @@ title kitten
 appeared 2012
 type pl
 
-patterns
- hasCentralPackageRepository? false
-
 description <a href='http://kittenlang.org'>Kitten</a> is a statically typed concatenative language with effect types.
 
 githubRepo https://github.com/evincarofautumn/kitten
@@ -23,3 +20,5 @@ fileType text
 isOpenSource true
 
 rosettaCode Kitten
+
+centralPackageRepositoryCount 0

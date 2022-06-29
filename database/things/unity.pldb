@@ -17,9 +17,6 @@ example
                  if A[i] > A[i+1] > >
  end
 
-patterns
- hasCentralPackageRepository? false
-
 wikipedia https://en.wikipedia.org/wiki/UNITY_(programming_language)
  example
   Program shortestpath2
@@ -47,3 +44,5 @@ fileType text
 wordRank 6887
 
 hopl 1446
+
+centralPackageRepositoryCount 0

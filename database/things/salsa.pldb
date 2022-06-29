@@ -2,9 +2,6 @@ title Simple Actor Language System and Architecture
 appeared 2001
 type pl
 
-patterns
- hasCentralPackageRepository? false
-
 wikipedia https://en.wikipedia.org/wiki/SALSA_(programming_language)
  example
   module demo;
@@ -46,3 +43,4 @@ website http://wcl.cs.rpi.edu/salsa/
 standsFor Simple Actor Language System and Architecture
 status historical
 fileType text
+centralPackageRepositoryCount 0

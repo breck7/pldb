@@ -2,9 +2,6 @@ title LEAP
 appeared 1969
 type pl
 
-patterns
- hasCentralPackageRepository? false
-
 description An ALGOL-based associative language. A high level programming language for large, complex associative structures has been designed and implemented. The underlying data structure has been implemented using a hash-coding technique. The discussion includes a comparison with other work and examples of applications of the language.
 
 wikipedia https://en.wikipedia.org/wiki/LEAP_(programming_language)
@@ -23,3 +20,5 @@ country US
 fileType text
 
 hopl 427
+
+centralPackageRepositoryCount 0

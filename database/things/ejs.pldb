@@ -7,9 +7,6 @@ example
     <h2><%= user.name %></h2>
  <% } %>
 
-patterns
- hasCentralPackageRepository? false
-
 githubLanguage EJS
  fileExtensions ejs
  trendingProjectsCount 0
@@ -48,3 +45,4 @@ linguistGrammarRepo https://github.com/gregory-m/ejs-tmbundle
 status active
 fileType text
 isOpenSource true
+centralPackageRepositoryCount 0

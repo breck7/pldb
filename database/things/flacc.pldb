@@ -2,9 +2,6 @@ title FLACC
 appeared 1977
 type pl
 
-patterns
- hasCentralPackageRepository? false
-
 wikipedia https://en.wikipedia.org/wiki/FLACC
  related algol-68 watfiv
  summary FLACC is an implementation of the ALGOL 68 programming language. Chris Thomson and Colin Broughton founded Chion Corporation which developed and marketed FLACC (Full Language Algol 68 Checkout Compiler). This compiler and run-time system conformed exactly to the Revised Report, ran on IBM 370 and compatible mainframes, and included debugging features derived from WATFIV. It was released in 1977. Chris was a student of Barry J. Mailloux. Barry studied at Amsterdam's Mathematisch Centrum from 1966 under Adriaan van Wijngaarden. Barry's work on the Algol 68 language established the University of Alberta as a center for Algol 68-related activity. According to Thomson decade later:  You know, we only ever got 22 copies installed, and less than 5 of those in North America.  Even though it ran on 370's under MVS, CMS and MTS, and was cheap and reliable.  Talk about a marketing disaster.
@@ -18,3 +15,5 @@ wikipedia https://en.wikipedia.org/wiki/FLACC
 status historical
 
 hopl 4343
+
+centralPackageRepositoryCount 0

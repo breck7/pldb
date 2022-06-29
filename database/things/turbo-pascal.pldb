@@ -3,7 +3,6 @@ appeared 1983
 type compiler
 
 patterns
- hasCentralPackageRepository? false
  hasComments? true
   { within pairs of braces }
   (* left parenthesis/asterisk and asterisk/right parenthesis pairs *)
@@ -43,3 +42,5 @@ country US
 fileType na
 
 hopl 1372
+
+centralPackageRepositoryCount 0

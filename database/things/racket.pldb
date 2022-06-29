@@ -6,7 +6,6 @@ patterns
  isLisp? true
  hasSymbolTables? true
   ;; Some programming languages allow the symbol table to be manipulated at run-time, so that symbols can be added at any time.
- hasCentralPackageRepository? true
  hasComments? true
  hasImports? true
   (require (prefix-in tcp: racket/tcp))

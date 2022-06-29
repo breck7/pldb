@@ -2,9 +2,6 @@ title TELCOMP
 appeared 1966
 type pl
 
-patterns
- hasCentralPackageRepository? false
-
 wikipedia https://en.wikipedia.org/wiki/TELCOMP
  example
   1.04 TYPE #,"ENTER ONE OF THE FOLLOWING:-";MENU
@@ -47,3 +44,5 @@ wikipedia https://en.wikipedia.org/wiki/TELCOMP
 status historical
 
 hopl 478
+
+centralPackageRepositoryCount 0

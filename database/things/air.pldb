@@ -2,9 +2,6 @@ title Assembly Intermediate Representation
 appeared 2016
 type ir
 
-patterns
- hasCentralPackageRepository? false
-
 description Bare Bones Backend / Assembly Intermediate Representation. The B3 compiler comprises two intermediate representations: a higher-level SSA-based representation called B3 IR and a lower-level representation that focuses of machine details, like registers. This lower-level form is called Air (Assembly Intermediate Representation).
 website https://webkit.org/docs/b3/assembly-intermediate-representation.html
 standsFor Assembly Intermediate Representation
@@ -12,3 +9,4 @@ status historical
 fileType text
 wordRank 478
 corporateDevelopers Apple
+centralPackageRepositoryCount 0

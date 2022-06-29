@@ -2,9 +2,6 @@ title Xgboost
 appeared 2014
 type binaryDataFormat
 
-patterns
- hasCentralPackageRepository? false
-
 description The model and data format of XGBoost is exchangeable, which means the model trained by one language can be loaded in another. This means you can train the model using R, while running prediction using Java or C++, which are more common in production systems. You can also train the model using distributed versions, and load them in from Python to do some interactive analysis.
 
 wikipedia https://en.wikipedia.org/wiki/Xgboost
@@ -21,3 +18,4 @@ reference https://rdrr.io/cran/xgboost/man/xgb.dump.html
 status active
 fileExtensions model
 isOpenSource true
+centralPackageRepositoryCount 0

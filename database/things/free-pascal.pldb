@@ -3,7 +3,6 @@ appeared 1997
 type pl
 
 patterns
- hasCentralPackageRepository? false
  hasOperatorOverloading? true
 
 wikipedia https://en.wikipedia.org/wiki/Free_Pascal
@@ -18,3 +17,4 @@ wikipedia https://en.wikipedia.org/wiki/Free_Pascal
 
 status historical
 isOpenSource true
+centralPackageRepositoryCount 0

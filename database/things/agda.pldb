@@ -4,7 +4,6 @@ type pl
 
 patterns
  hasTypedHoles? true
- hasCentralPackageRepository? false
 
 wikipedia https://en.wikipedia.org/wiki/Agda_(programming_language)
  example
@@ -85,3 +84,5 @@ isOpenSource true
 hopl 7860
 
 rosettaCode Agda
+
+centralPackageRepositoryCount 0

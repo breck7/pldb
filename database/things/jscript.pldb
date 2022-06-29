@@ -2,9 +2,6 @@ title JScript
 appeared 1996
 type pl
 
-patterns
- hasCentralPackageRepository? false
-
 wikipedia https://en.wikipedia.org/wiki/JScript
  related javascript ecmascript asp vbscript visual-studio-editor json csharp
  summary JScript is Microsoft's dialect of the ECMAScript standard that is used in Microsoft's Internet Explorer. JScript is implemented as an Active Scripting engine. This means that it can be "plugged in" to OLE Automation applications that support Active Scripting, such as Internet Explorer, Active Server Pages, and Windows Script Host. It also means such applications can use multiple Active Scripting languages, e.g., JScript, VBScript or PerlScript. JScript was first supported in the Internet Explorer 3.0 browser released in August 1996. Its most recent version is JScript 9.0, included in Internet Explorer 9. JScript 10.0 is a separate dialect, also known as JScript .NET, which adds several new features from the abandoned fourth edition of the ECMAScript standard. It must be compiled for .NET Framework version 2 or version 4, but static type annotations are optional.
@@ -24,3 +21,4 @@ fileType text
 tiobe JScript
 
 corporateDevelopers Microsoft
+centralPackageRepositoryCount 0

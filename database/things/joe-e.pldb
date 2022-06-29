@@ -2,9 +2,6 @@ title Joe-E
 appeared 2004
 type pl
 
-patterns
- hasCentralPackageRepository? false
-
 wikipedia https://en.wikipedia.org/wiki/Joe-E
  related java e
  summary Joe-E is a subset of the Java programming language intended to support programming according to object-capability discipline.The language is notable for being an early object-capability subset language.  It has influenced later subset languages, such as ADsafe and Caja/Cajita, subsets of Javascript. It is also notable for allowing methods to be verified as functionally pure, based on their method signatures.The restrictions imposed by the Joe-E verifier include:  Classes may not have mutable static fields, because these create global state. Catching out-of-memory exceptions is prohibited, because doing so allows non-deterministic execution.  For the same reason, finally clauses are not allowed. Methods in the standard library may be blocked if they are deemed unsafe according to taming rules.  For example, the constructor new File(filename) is blocked because it allows unrestricted access to the filesystem.Cup of Joe is slang for coffee, and so serves as a trademark-avoiding reference to Java. Thus, the name Joe-E is intended to suggest an adaptation of ideas from the E programming language to create a variant of the Java language.  Waterken Server is written in Joe-E.
@@ -16,3 +13,4 @@ wikipedia https://en.wikipedia.org/wiki/Joe-E
  appeared 2004
 
 status historical
+centralPackageRepositoryCount 0

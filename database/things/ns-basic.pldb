@@ -2,9 +2,6 @@ title NS Basic
 appeared 1994
 type pl
 
-patterns
- hasCentralPackageRepository? false
-
 wikipedia https://en.wikipedia.org/wiki/NS_Basic
  example
   // in JavaScript
@@ -22,3 +19,4 @@ wikipedia https://en.wikipedia.org/wiki/NS_Basic
 
 status historical
 isOpenSource false
+centralPackageRepositoryCount 0

@@ -2,9 +2,6 @@ title MIMIC
 appeared 1964
 type pl
 
-patterns
- hasCentralPackageRepository? false
-
 wikipedia https://en.wikipedia.org/wiki/MIMIC
  example
   Card columns
@@ -45,3 +42,5 @@ status historical
 fileType text
 
 hopl 294
+
+centralPackageRepositoryCount 0

@@ -2,9 +2,6 @@ title Algebraic Logic Functional
 appeared 1990
 type pl
 
-patterns
- hasCentralPackageRepository? false
-
 wikipedia https://en.wikipedia.org/wiki/Algebraic_Logic_Functional_programming_language
  related c unix
  summary Algebraic Logic Functional programming language, also known as ALF, is a programming language which combines functional and logic programming techniques. Its foundation is Horn clause logic with equality which consists of predicates and Horn clauses for logic programming, and functions and equations for functional programming. ALF was designed to be genuine integration of both programming paradigms, and thus any functional expression can be used in a goal literal and arbitrary predicates can occur in conditions of equations. ALF's operational semantics is based on the resolution rule to solve literals and narrowing to evaluate functional expressions. In order to reduce the number of possible narrowing steps, a leftmost-innermost basic narrowing strategy is used which, it is claimed, can be efficiently implemented. Terms are simplified by rewriting before a narrowing step is applied and equations are rejected if the two sides have different constructors at the top. Rewriting and rejection are supposed to result in a large reduction of the search tree and produce an operational semantics that is more efficient than Prolog's resolution strategy. Similarly to Prolog, ALF uses a backtracking strategy corresponding to a depth-first search in the derivation tree. The ALF system was designed to be an efficient implementation of the combination of resolution, narrowing, rewriting, and rejection. ALF programs are compiled into instructions of an abstract machine. The abstract machine is based on the Warren Abstract Machine (WAM) with several extensions to implement narrowing and rewriting. In the current ALF implementation programs of this abstract machine are executed by an emulator written in C. In the Carnegie Mellon University Artificial Intelligence Repository, ALF is included as an AI programming language, in particular as a functional/logic programming language Prolog implementation. A user manual describing the language and the use of the system is available. The ALF System runs under Unix and is free.
@@ -23,3 +20,4 @@ fileType text
 hopl 1804
 
 visualParadigm false
+centralPackageRepositoryCount 0

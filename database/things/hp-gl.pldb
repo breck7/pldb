@@ -2,9 +2,6 @@ title HP-GL
 appeared 1986
 type pl
 
-patterns
- hasCentralPackageRepository? false
-
 wikipedia https://en.wikipedia.org/wiki/HP-GL
  related ascii basic
  summary HP-GL, short for Hewlett-Packard Graphics Language and often written as HPGL, is a printer control language created by Hewlett-Packard (HP). HP-GL was the primary printer control language used by HP plotters. It later became a standard for almost all plotters. Hewlett-Packard's printers also usually support HP-GL/2 in addition to PCL.
@@ -17,3 +14,5 @@ wikipedia https://en.wikipedia.org/wiki/HP-GL
 status historical
 
 hopl 2094
+
+centralPackageRepositoryCount 0

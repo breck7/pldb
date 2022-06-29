@@ -2,9 +2,6 @@ title SPITBOL
 appeared 1971
 type pl
 
-patterns
- hasCentralPackageRepository? false
-
 wikipedia https://en.wikipedia.org/wiki/SPITBOL
  related snobol sparc
  summary SPITBOL (Speedy Implementation of SNOBOL) is a compiled implementation of the SNOBOL4 programming language. Originally targeted for the IBM System/360 and System/370 family of computers, it has now been ported to most major microprocessors including the SPARC. It was created by Robert Dewar and Ken Belcher, who were then at the Illinois Institute of Technology. Prior to the development of SPITBOL, SNOBOL4 was thought to be slow, memory-intensive, and impossible to compile due to its dynamic nature. While delayed binding prevents everything from being determined at compile time, SPITBOL adopts various strategies for making decisions as early as possible. Recent versions of the SPITBOL compiler are available. Since 2001 the source code for the original SPITBOL 360 compiler has been made available under the GNU General Public License. MACRO SPITBOL is an implementation of SPITBOL written in the 1970s by Robert Dewar and Anthony P. McCann. MACRO SPITBOL is coded in MINIMAL, an assembly language for an abstract machine. The instruction set is carefully defined to allow some latitude in its implementation, so that hardware operations favorable to string processing can be exploited. An implementation of MINIMAL that was designed for interpretation on microcomputers was done by translating MINIMAL into MICRAL using a translator that was itself implemented in SPITBOL. The MICRAL version of MACRO SPITBOL, together with the MICRAL interpreter ran in under 40K bytes. This extreme object code compression of MICRAL is achieved using a set of machine code macro substitutions that minimizes the space required for the object code and macro table. The complexity of known algorithms for an optimal solution to this problem are high, but efficient heuristics attain near-optimal results. The source code for MACRO SPITBOL was released under the GNU General Public License on April 17, 2009.
@@ -20,3 +17,5 @@ country US
 fileType text
 
 hopl 570
+
+centralPackageRepositoryCount 0

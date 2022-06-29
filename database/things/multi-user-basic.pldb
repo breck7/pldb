@@ -2,9 +2,6 @@ title Multi-user BASIC
 appeared 1980
 type pl
 
-patterns
- hasCentralPackageRepository? false
-
 wikipedia https://en.wikipedia.org/wiki/Multi-user_BASIC
  related basic basic-11 basic-plus
  summary Multi-user BASIC was a dialect of the BASIC language for the DEC PDP-11 running the RT-11 operating system.  One or more users were supported in separate address spaces sharing the same language interpreter.  The syntax of the language was similar to but not identical to BASIC-11.  A key language element was the support for virtual files.  These were similar to the virtual arrays in BASIC-PLUS in but more limited.  An array of integers, floatingpoint, or character strings of length 1, 2, 4, 8, 16, 32, or 64 could be placed in file and accessed with a subscript.  The file could actually be opened (or re-opened) with a different definition allowing integers, characters, and floating point numbers to be stored in the same file. Like BASIC-11, Multi-User BASIC provided some support for lab equipment, support for character terminals (LA30, VT100).  Because it was a multi-user system, it did not support real-time data collection.
@@ -16,3 +13,4 @@ wikipedia https://en.wikipedia.org/wiki/Multi-user_BASIC
  appeared 1980
 
 status historical
+centralPackageRepositoryCount 0

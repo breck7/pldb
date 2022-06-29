@@ -3,7 +3,6 @@ appeared 1985
 type pl
 
 patterns
- hasCentralPackageRepository? false
  hasMultipleInheritance? true
 
 wikipedia https://en.wikipedia.org/wiki/EuLisp
@@ -100,3 +99,5 @@ wikipedia https://en.wikipedia.org/wiki/EuLisp
 status historical
 
 hopl 1139
+
+centralPackageRepositoryCount 0

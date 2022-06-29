@@ -11,9 +11,6 @@ example
  # Second item
  ## Sub item
 
-patterns
- hasCentralPackageRepository? false
-
 description Creole is a lightweight markup language, aimed at being a common markup language for wikis, enabling and simplifying the transfer of content between different wiki engines.
 
 wikipedia https://en.wikipedia.org/wiki/Creole_(markup)
@@ -92,3 +89,4 @@ linguistGrammarRepo https://github.com/Siddley/Creole
 
 status active
 fileType text
+centralPackageRepositoryCount 0

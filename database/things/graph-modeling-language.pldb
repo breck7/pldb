@@ -2,9 +2,6 @@ title Graph Modeling Language
 appeared 1997
 type application
 
-patterns
- hasCentralPackageRepository? false
-
 wikipedia https://en.wikipedia.org/wiki/Graph_Modelling_Language
  example
   graph [
@@ -82,3 +79,4 @@ example
 reference http://www.uni-passau.de/fileadmin/files/lehrstuhl/brandenburg/projekte/gml/gml-technical-report.pdf
 status active
 fileType text
+centralPackageRepositoryCount 0

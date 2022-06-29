@@ -2,9 +2,6 @@ title Chipmunk Basic
 appeared 1989
 type pl
 
-patterns
- hasCentralPackageRepository? false
-
 wikipedia https://en.wikipedia.org/wiki/Chipmunk_Basic
  related linux pascal
  summary Chipmunk Basic is a freeware version of the BASIC programming language maintained by developer Ron Nicholson. Chipmunk basic was originally developed for the Apple Macintosh and has been ported to Linux and Windows. The "windowed" Macintosh version includes a wide variety of graphics drawing commands. It also has object-oriented capabilities. The current version of Chipmunk Basic (and its spinoff products for Palm OS, cBasPad and HotPaw BASIC) was based on a public domain, Pascal implementation by David Gillespie, author of the Pascal translation tool p2c. In January 2015, a Cocoa version was released that may lack features from the older Carbon-based OS X port.
@@ -18,3 +15,4 @@ wikipedia https://en.wikipedia.org/wiki/Chipmunk_Basic
 website http://www.nicholson.com/rhn/basic/
 reference http://www.nicholson.com/rhn/basic/basic.man.html
 status historical
+centralPackageRepositoryCount 0

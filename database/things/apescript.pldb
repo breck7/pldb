@@ -2,9 +2,6 @@ title ApeScript
 appeared 1995
 type pl
 
-patterns
- hasCentralPackageRepository? false
-
 wikipedia https://en.wikipedia.org/wiki/ApeScript
  example
   function( being ){
@@ -31,3 +28,4 @@ wikipedia https://en.wikipedia.org/wiki/ApeScript
  appeared 2005
 
 status historical
+centralPackageRepositoryCount 0

@@ -4,7 +4,6 @@ type textMarkup
 creators John Gruber and Aaron Swartz
 
 patterns
- hasCentralPackageRepository? false
  hasSemanticIndentation? true
  hasLineComments? false
 
@@ -70,3 +69,5 @@ status active
 fileType text
 
 codeMirror markdown
+
+centralPackageRepositoryCount 0

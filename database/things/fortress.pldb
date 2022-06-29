@@ -2,9 +2,6 @@ title Fortress
 appeared 2004
 type pl
 
-patterns
- hasCentralPackageRepository? false
-
 wikipedia https://en.wikipedia.org/wiki/Fortress_(programming_language)
  example
   component hello
@@ -38,3 +35,5 @@ tiobe Fortress
 hopl 8170
 
 rosettaCode Fortress
+
+centralPackageRepositoryCount 0

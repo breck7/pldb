@@ -5,7 +5,6 @@ creators John McCarthy
 
 patterns
  isLisp? true
- hasCentralPackageRepository? false
  hasGarbageCollection? true
  hasHomoiconicity? true
 
@@ -60,3 +59,4 @@ stackOverflowSurvey
   medianSalary 75669
   fans 1513
   percentageUsing 0.01
+centralPackageRepositoryCount 0

@@ -2,9 +2,6 @@ title Nomad software
 appeared 1976
 type pl
 
-patterns
- hasCentralPackageRepository? false
-
 wikipedia https://en.wikipedia.org/wiki/Nomad_software
  example
   CHANGE ALL SALARY=SALARY*1.06 WHERE POSITION='ENG' AND AVG(INSTANCE(RATING)) GE 7
@@ -20,3 +17,5 @@ wikipedia https://en.wikipedia.org/wiki/Nomad_software
 status historical
 
 hopl 727
+
+centralPackageRepositoryCount 0

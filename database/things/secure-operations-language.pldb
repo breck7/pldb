@@ -2,9 +2,6 @@ title Secure Operations Language
 appeared 1970
 type pl
 
-patterns
- hasCentralPackageRepository? false
-
 wikipedia https://en.wikipedia.org/wiki/Secure_Operations_Language
  related solidity
  summary The Secure Operations Language (SOL) was developed jointly by the United States Naval Research Laboratory and Utah State University in the United States. SOL is a  domain-specific synchronous programming language for developing distributed applications and is based on software engineering principles developed in the Software Cost Reduction project at the Naval Research Laboratory in the late 1970s and early 1980s. SOL is intended to be a domain-specific language for developing service-based systems. Concurrently, a domain-specific extension of Java (SOLj) is being developed (FTDCS 2007) Application domains include sensor networks, defense and space systems, healthcare delivery, power control, etc. The investigators of the project are Dr. Ramesh Bharadwaj from the Naval Research Laboratory and Dr. Supratik Mukhopadhyay from Utah State University.
@@ -18,3 +15,4 @@ wikipedia https://en.wikipedia.org/wiki/Secure_Operations_Language
 aka sol
 status historical
 fileType text
+centralPackageRepositoryCount 0

@@ -2,9 +2,6 @@ title PBASIC
 appeared 1988
 type pl
 
-patterns
- hasCentralPackageRepository? false
-
 wikipedia https://en.wikipedia.org/wiki/PBASIC
  example
   HIGH 1                 'turn on LED on pin 1
@@ -23,3 +20,5 @@ wikipedia https://en.wikipedia.org/wiki/PBASIC
 status historical
 
 hopl 6747
+
+centralPackageRepositoryCount 0

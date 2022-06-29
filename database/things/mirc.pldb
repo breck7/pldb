@@ -2,9 +2,6 @@ title MIRC scripting language
 appeared 1995
 type pl
 
-patterns
- hasCentralPackageRepository? false
-
 wikipedia https://en.wikipedia.org/wiki/MIRC_scripting_language
  example
   ;Placed in a remote script
@@ -42,3 +39,5 @@ fileType text
 isOpenSource false
 
 codeMirror mirc
+
+centralPackageRepositoryCount 0

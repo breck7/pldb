@@ -2,9 +2,6 @@ title Automatically Programmed Tool
 appeared 1956
 type pl
 
-patterns
- hasCentralPackageRepository? false
-
 wikipedia https://en.wikipedia.org/wiki/APT_(programming_language)
  example
   PARTNO / APT-1
@@ -59,3 +56,5 @@ fileType text
 wordRank 8742
 
 hopl 23
+
+centralPackageRepositoryCount 0

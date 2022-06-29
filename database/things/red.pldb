@@ -4,7 +4,6 @@ type pl
 creators Nenad Rakocevic
 
 patterns
- hasCentralPackageRepository? false
  hasLineComments? true
   ; A comment
 
@@ -195,3 +194,4 @@ writtenIn red
 lineCommentKeyword ;
 languageServerProtocolProject https://github.com/bitbegin/redlangserver
  writtenIn red
+centralPackageRepositoryCount 0

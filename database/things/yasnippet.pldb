@@ -11,9 +11,6 @@ example
  ${1:function-name} :: ${2:type}
  $1 ${3:arguments} $0
 
-patterns
- hasCentralPackageRepository? false
-
 githubLanguage YASnippet
  fileExtensions yasnippet
 
@@ -53,3 +50,4 @@ website http://joaotavora.github.com/yasnippet/
 status active
 fileType text
 isOpenSource true
+centralPackageRepositoryCount 0

@@ -2,9 +2,6 @@ title GDB
 appeared 1986
 type application
 
-patterns
- hasCentralPackageRepository? false
-
 wikipedia https://en.wikipedia.org/wiki/GNU_Debugger
  example
   GNU gdb (GDB) Fedora (7.3.50.20110722-13.fc16)
@@ -89,3 +86,4 @@ quineRelay GDB
 ubuntuPackage gdb
 
 corporateDevelopers GNU Project
+centralPackageRepositoryCount 0

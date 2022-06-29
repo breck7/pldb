@@ -2,9 +2,6 @@ title Atari BASIC
 appeared 1983
 type pl
 
-patterns
- hasCentralPackageRepository? false
-
 wikipedia https://en.wikipedia.org/wiki/Atari_BASIC
  example
   10 REM Opens the cassette device on channel 1 for reading in BASIC
@@ -19,3 +16,4 @@ wikipedia https://en.wikipedia.org/wiki/Atari_BASIC
  appeared 1979
 
 status historical
+centralPackageRepositoryCount 0

@@ -2,9 +2,6 @@ title Swagger
 appeared 2011
 type framework
 
-patterns
- hasCentralPackageRepository? false
-
 wikipedia https://en.wikipedia.org/wiki/Swagger_(software)
  related rest
  summary Swagger is an open source software framework backed by a large ecosystem of tools that helps developers design, build, document, and consume RESTful Web services. While most users identify Swagger by the Swagger UI tool, the Swagger toolset includes support for automated documentation, code generation, and test case generation. Sponsored by SmartBear Software, Swagger has been a strong supporter of Open Source Software and has widespread adoption.
@@ -19,3 +16,4 @@ website http://swagger.io
 status historical
 fileType text
 isOpenSource true
+centralPackageRepositoryCount 0

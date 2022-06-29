@@ -30,9 +30,6 @@ example
     f->Write();
  }
 
-patterns
- hasCentralPackageRepository? false
-
 description A modular scientific software toolkit. It provides all the functionalities needed to deal with big data processing, statistical analysis, visualisation and storage. It is mainly written in C++ but integrated with other languages such as Python and R.
 
 wikipedia https://en.wikipedia.org/wiki/ROOT
@@ -51,3 +48,4 @@ fileType text
 isOpenSource true
 writtenIn cpp
 jupyterKernel https://github.com/root-mirror/root/tree/master/bindings/pyroot/JupyROOT
+centralPackageRepositoryCount 0

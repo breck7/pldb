@@ -68,7 +68,6 @@ patterns
   console.log(`proxy.foo = ${proxy.foo}`);       // "proxy.foo = BAR"
  hasBooleans? true
   const result = true
- hasCentralPackageRepository? true
  hasMethodChaining? true
   "hello world".toString().substr(0, 1).length
  hasClasses? true

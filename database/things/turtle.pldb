@@ -14,9 +14,6 @@ example
      ex:homePage <http://purl.org/net/dajobe/>
    ] .
 
-patterns
- hasCentralPackageRepository? false
-
 wikipedia https://en.wikipedia.org/wiki/Turtle_(syntax)
  example
   <http://www.w3.org/TR/rdf-syntax-grammar> <http://purl.org/dc/elements/1.1/title> "RDF/XML Syntax Specification (Revised)" .
@@ -59,3 +56,4 @@ fileType text
 wordRank 9688
 languageServerProtocolProject https://github.com/stardog-union/stardog-language-servers/tree/master/packages/turtle-language-server
  writtenIn typescript
+centralPackageRepositoryCount 0

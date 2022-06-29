@@ -2,9 +2,6 @@ title Puppet
 appeared 2005
 type pl
 
-patterns
- hasCentralPackageRepository? false
-
 wikipedia https://en.wikipedia.org/wiki/Puppet_(software)
  example
   user { 'harry':
@@ -48,3 +45,4 @@ codeMirror puppet
 
 languageServerProtocolProject https://github.com/lingua-pupuli/puppet-editor-services
  writtenIn ruby
+centralPackageRepositoryCount 0

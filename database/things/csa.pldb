@@ -14,9 +14,7 @@ example
    movq rax,[r13-0x60]
    retl
 
-patterns
- hasCentralPackageRepository? false
-
 reference https://v8.dev/blog/csa
 status active
 fileType text
+centralPackageRepositoryCount 0

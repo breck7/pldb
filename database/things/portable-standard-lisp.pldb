@@ -2,9 +2,6 @@ title Portable Standard Lisp
 appeared 1980
 type pl
 
-patterns
- hasCentralPackageRepository? false
-
 wikipedia https://en.wikipedia.org/wiki/Portable_Standard_Lisp
  related c common-lisp
  summary Portable Standard Lisp (PSL) is a tail-recursive dynamically bound dialect of Lisp inspired by its predecessor, Standard Lisp and the Portable Lisp Compiler. It was developed by researchers at the University of Utah in 1980, which released PSL 3.1; development was handed over to developers at Hewlett-Packard in 1982 who released PSL 3.3 and up. Portable Standard Lisp was available as a kit containing a screen editor, a compiler, and an interpreter for the 68000 processor architecture, DEC-20s, CRAY-1s, and the VAX architecture (among many others). Today, PSL is mainly developed by and available from Konrad-Zuse-Zentrum für Informationstechnik Berlin.  Its main modern use is as underlying language for implementations of Reduce.Like most older lisps, PSL in the first step compiles Lisp to LAP code, which is a platform independent language in its own.  However, where older lisps mostly compiled LAP directly to assembler or some architecture dependent intermediate,  PSL compiles the LAP to C code, which would run in a virtual machine language; so programs written in it in principle are as portable as C itself, which is very portable. The compiler itself was written in PSL or a more primitive dialect dubbed "System Lisp"/"SYSLISP" as "an experiment in writing a production-quality Lisp in Lisp itself as much as possible, with only minor amounts of code written by hand in assembly language or other systems languages", so the whole ensemble could bootstrap itself, and improvements to the compiler improved the compiler itself as well. Some later releases had a compatibility package for Common Lisp, but this is not sustained in the modern versions.
@@ -16,3 +13,4 @@ wikipedia https://en.wikipedia.org/wiki/Portable_Standard_Lisp
  appeared 1980
 
 status historical
+centralPackageRepositoryCount 0

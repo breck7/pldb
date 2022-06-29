@@ -2,9 +2,6 @@ title Basic4ppc
 appeared 2005
 type pl
 
-patterns
- hasCentralPackageRepository? false
-
 wikipedia https://en.wikipedia.org/wiki/Basic4ppc
  example
   Sub App_Start
@@ -25,3 +22,4 @@ wikipedia https://en.wikipedia.org/wiki/Basic4ppc
  appeared 2005
 
 status historical
+centralPackageRepositoryCount 0

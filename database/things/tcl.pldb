@@ -4,7 +4,6 @@ type pl
 creators John Ousterhout
 
 patterns
- hasCentralPackageRepository? false
  hasComments? true
  hasLineComments? true
   # A comment
@@ -176,3 +175,4 @@ rosettaCode Tcl
 lineCommentKeyword #
 visualParadigm false
 jupyterKernel https://github.com/rpep/tcl_kernel
+centralPackageRepositoryCount 0

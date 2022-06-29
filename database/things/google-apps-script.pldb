@@ -2,9 +2,6 @@ title Google Apps Script
 appeared 2009
 type pl
 
-patterns
- hasCentralPackageRepository? false
-
 wikipedia https://en.wikipedia.org/wiki/Google_Apps_Script
  example
   function doGet() {
@@ -22,3 +19,4 @@ wikipedia https://en.wikipedia.org/wiki/Google_Apps_Script
  appeared 2009
 
 status historical
+centralPackageRepositoryCount 0

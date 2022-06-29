@@ -2,9 +2,6 @@ title COMTRAN
 appeared 1957
 type pl
 
-patterns
- hasCentralPackageRepository? false
-
 wikipedia https://en.wikipedia.org/wiki/COMTRAN
  example
   01001 *PROCEDURE
@@ -78,3 +75,5 @@ country US
 fileType text
 
 hopl 387
+
+centralPackageRepositoryCount 0

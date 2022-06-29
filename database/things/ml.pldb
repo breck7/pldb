@@ -4,7 +4,6 @@ type pl
 creators Robin Milner
 
 patterns
- hasCentralPackageRepository? false
  hasGarbageCollection? true
  hasTypeInference? true
  hasLineComments? false
@@ -43,3 +42,4 @@ projectEuler ML
 hopl 620
 
 rosettaCode ML
+centralPackageRepositoryCount 0

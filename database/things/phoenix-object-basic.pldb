@@ -2,9 +2,6 @@ title Phoenix Object Basic
 appeared 2001
 type pl
 
-patterns
- hasCentralPackageRepository? false
-
 wikipedia https://en.wikipedia.org/wiki/Phoenix_Object_Basic
  related linux python perl visual-basic
  summary Phoenix Object Basic is an object-oriented rapid application development tool for Linux. It has object-oriented features such as inheritance and polymorphism as found in languages such as Python and Perl. It also features a similar design environment and compatible syntax to Visual Basic reducing the learning curve for those making a transition from that language to Linux programming. Phoenix includes a full implementation of the BASIC programming language. It was released for download in 2001 and the Linux package is at version 1.5 beta 6 (released October 2004), it also requires the distribution of a small number of runtime library files with complied applications. Phoenix Object Basic is a proprietary tool for cross-platform Linux and Windows application development.   Key attributes:  No longer being actively developed Rapid Application Development for Windows and Linux Short learning curve for VB developers Object-oriented Small executables, Fast execution Cross platform Released as an RPMThe Phoenix source code is not available because it contains proprietary third party components. Phoenix is free of charge and freely distributable.
@@ -16,3 +13,4 @@ wikipedia https://en.wikipedia.org/wiki/Phoenix_Object_Basic
  appeared 2001
 
 status historical
+centralPackageRepositoryCount 0

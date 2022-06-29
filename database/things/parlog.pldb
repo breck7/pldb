@@ -11,9 +11,6 @@ example
  append(SortedLess,[N|SortedMore],Sorted).
  qsort([],[]).
 
-patterns
- hasCentralPackageRepository? false
-
 wikipedia https://en.wikipedia.org/wiki/Parlog
  summary Parlog is a logic programming language designed for efficient utilization of parallel computer architectures. Its semantics is based on first order predicate logic. It expresses concurrency, interprocess communication, indeterminacy and synchronization within the declarative language framework.It was designed at Imperial College, London by Steve Gregory and Keith L. Clark, as a descendant of IC Prolog and Relational Language.
  pageId 31688822
@@ -28,3 +25,5 @@ country GB
 fileType text
 
 hopl 1049
+
+centralPackageRepositoryCount 0

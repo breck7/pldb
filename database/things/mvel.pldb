@@ -2,9 +2,6 @@ title MVEL
 appeared 2003
 type pl
 
-patterns
- hasCentralPackageRepository? false
-
 wikipedia https://en.wikipedia.org/wiki/MVEL
  example
   import java.util.*;
@@ -43,3 +40,4 @@ wikipedia https://en.wikipedia.org/wiki/MVEL
 
 status historical
 isOpenSource true
+centralPackageRepositoryCount 0

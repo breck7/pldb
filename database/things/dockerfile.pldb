@@ -2,9 +2,6 @@ title Dockerfile
 appeared 2013
 type pl
 
-patterns
- hasCentralPackageRepository? false
-
 githubLanguage Dockerfile
  fileExtensions dockerfile
  trendingProjects
@@ -69,3 +66,4 @@ twitter docker
 fileType text
 languageServerProtocolProject https://github.com/rcjsuen/dockerfile-language-server-nodejs
  writtenIn typescript
+centralPackageRepositoryCount 0

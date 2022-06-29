@@ -2,9 +2,6 @@ title Pandoc
 appeared 2006
 type application
 
-patterns
- hasCentralPackageRepository? false
-
 description If you need to convert files from one markup format into another, pandoc is your swiss-army knife.
 
 wikipedia https://en.wikipedia.org/wiki/Pandoc
@@ -22,3 +19,4 @@ status active
 fileType text
 isOpenSource true
 writtenIn haskell
+centralPackageRepositoryCount 0

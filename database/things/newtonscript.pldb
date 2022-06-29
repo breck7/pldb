@@ -2,9 +2,6 @@ title NewtonScript
 appeared 1993
 type pl
 
-patterns
- hasCentralPackageRepository? false
-
 wikipedia https://en.wikipedia.org/wiki/NewtonScript
  related self dylan smalltalk javascript lisp lua io
  summary NewtonScript is a prototype-based programming language created to write programs for the Newton platform. It is heavily influenced by the Self programming language, but modified to be more suited to needs of mobile and embedded devices.
@@ -21,3 +18,5 @@ fileType text
 hopl 1278
 
 rosettaCode NewtonScript
+
+centralPackageRepositoryCount 0

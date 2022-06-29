@@ -2,9 +2,6 @@ title Clausal Language
 appeared 1997
 type pl
 
-patterns
- hasCentralPackageRepository? false
-
 description CL (Clausal Language) is a declarative programming language with the look and feel of a modern functional programming language. CL identifies the domain of symbolic expressions of LISP with the domain of natural numbers.
 website http://ii.fmph.uniba.sk/cl/view.php/
 reference http://dai.fmph.uniba.sk/~voda/
@@ -13,3 +10,5 @@ status historical
 fileType text
 
 hopl 5505
+
+centralPackageRepositoryCount 0

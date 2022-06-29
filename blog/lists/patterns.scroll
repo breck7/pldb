@@ -4,7 +4,7 @@ maxColumns 1
 columnWidth 80
 
 paragraph
- A list of 113 patterns found in programming languages.
+ A list of 112 patterns found in programming languages.
 
 aftertext
  Is PLDB missing a pattern? @@Create a new file@@ in the pattern of `*-pattern.scroll` in the `things` folder and send a pull request.
@@ -27,7 +27,6 @@ pipeTable
  Block Comments|../languages/block-comments-pattern.html||/* a looong comment */|14
  Booleans|../languages/booleans-pattern.html||doBabiesSleep = false|10
  Case Insensitive Identifiers|../languages/case-insensitive-identifiers-pattern.html||AnYcASE = 2|5
- Central Package Repository Pattern|../languages/central-package-repository-pattern.html||npm install lani|50
  Classes|../languages/classes-pattern.html||class Dog {}|3
  Comments|../languages/comment-pattern.html||# a comment|157
  Conditionals|../languages/conditionals-pattern.html||if (isTrue) doSomething()|2

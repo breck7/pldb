@@ -3,9 +3,6 @@ appeared 1977
 type grammarLanguage
 creators Niklaus Wirth
 
-patterns
- hasCentralPackageRepository? false
-
 wikipedia https://en.wikipedia.org/wiki/Extended_Backus–Naur_form
  example
   function application = list( symbol, { expression } );
@@ -56,3 +53,5 @@ fileType text
 hopl 755
 
 codeMirror ebnf
+
+centralPackageRepositoryCount 0

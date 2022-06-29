@@ -9,9 +9,6 @@ example
  Well, {{taxed_value}} dollars, after taxes.
  {{/in_ca}}
 
-patterns
- hasCentralPackageRepository? false
-
 githubRepo https://github.com/mustache/mustache
  firstCommit 2009
  stars 2525
@@ -26,3 +23,4 @@ website http://mustache.github.io/
 status active
 fileType text
 isOpenSource true
+centralPackageRepositoryCount 0

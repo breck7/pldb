@@ -3,7 +3,6 @@ appeared 1987
 type pl
 
 patterns
- hasCentralPackageRepository? false
  hasComments? true
 
 wikipedia https://en.wikipedia.org/wiki/Clean_(programming_language)
@@ -67,3 +66,5 @@ tiobe Clean
 hopl 1305
 
 rosettaCode Clean
+
+centralPackageRepositoryCount 0

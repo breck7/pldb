@@ -4,7 +4,6 @@ type pl
 creators David Madore
 
 patterns
- hasCentralPackageRepository? false
  hasComments? true
 
 wikipedia https://en.wikipedia.org/wiki/Unlambda
@@ -39,3 +38,5 @@ hopl 2598
 quineRelay Unlambda
 
 rosettaCode Unlambda
+
+centralPackageRepositoryCount 0

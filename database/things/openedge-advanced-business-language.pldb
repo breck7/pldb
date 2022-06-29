@@ -2,9 +2,6 @@ title OpenEdge ABL
 appeared 2006
 type pl
 
-patterns
- hasCentralPackageRepository? false
-
 wikipedia https://en.wikipedia.org/wiki/OpenEdge_Advanced_Business_Language
  example
   FOR EACH customer WHERE customer.custno = 14 EXCLUSIVE-LOCK:
@@ -37,3 +34,4 @@ aka abl
 status active
 fileType text
 isOpenSource false
+centralPackageRepositoryCount 0

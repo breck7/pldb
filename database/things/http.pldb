@@ -2,9 +2,6 @@ title HTTP
 appeared 1989
 type protocol
 
-patterns
- hasCentralPackageRepository? false
-
 wikipedia https://en.wikipedia.org/wiki/Hypertext_Transfer_Protocol
  example
   HTTP/1.1 200 OK
@@ -50,3 +47,5 @@ fileType na
 wordRank 4663
 
 codeMirror http
+
+centralPackageRepositoryCount 0

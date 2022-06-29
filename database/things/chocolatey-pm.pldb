@@ -2,9 +2,7 @@ title chocolatey-pm
 appeared 2011
 type packageManager
 
-patterns
- hasCentralPackageRepository? false
-
 description Chocolatey is a package manager for Windows (like apt-get or yum but for Windows).
 website https://chocolatey.org/
 status active
+centralPackageRepositoryCount 0

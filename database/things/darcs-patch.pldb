@@ -2,9 +2,6 @@ title Darcs Advanced Revision Control System
 appeared 2003
 type application
 
-patterns
- hasCentralPackageRepository? false
-
 description Darcs is a distributed version control system created by David Roundy.
 
 githubLanguage Darcs Patch
@@ -15,3 +12,4 @@ reference https://en.wikipedia.org/wiki/Darcs
 standsFor Darcs Advanced Revision Control System
 status active
 fileType text
+centralPackageRepositoryCount 0

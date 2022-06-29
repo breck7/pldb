@@ -2,9 +2,6 @@ title Autocode
 appeared 1954
 type pl
 
-patterns
- hasCentralPackageRepository? false
-
 wikipedia https://en.wikipedia.org/wiki/Autocode
  example
   1     n1 = 1         
@@ -23,3 +20,5 @@ wikipedia https://en.wikipedia.org/wiki/Autocode
 status historical
 
 hopl 5
+
+centralPackageRepositoryCount 0

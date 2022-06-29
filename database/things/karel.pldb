@@ -2,9 +2,6 @@ title Karel
 appeared 1981
 type pl
 
-patterns
- hasCentralPackageRepository? false
-
 wikipedia https://en.wikipedia.org/wiki/Karel_(programming_language)
  example
   BEGINNING-OF-PROGRAM
@@ -40,3 +37,5 @@ country US
 fileType text
 
 hopl 958
+
+centralPackageRepositoryCount 0

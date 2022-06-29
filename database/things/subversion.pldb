@@ -2,9 +2,6 @@ title Subversion
 appeared 2000
 type application
 
-patterns
- hasCentralPackageRepository? false
-
 wikipedia https://en.wikipedia.org/wiki/Apache_Subversion
  example
   componentfoo/
@@ -29,3 +26,4 @@ status active
 fileType text
 isOpenSource true
 corporateDevelopers Apache
+centralPackageRepositoryCount 0

@@ -3,7 +3,6 @@ appeared 2014
 type pl
 
 patterns
- hasCentralPackageRepository? false
  hasLineComments? true
   // A comment
 
@@ -86,3 +85,4 @@ indeedJobs solidity developer
 lineCommentKeyword //
 languageServerProtocolProject https://github.com/CodeChain-io/solidity-language-server
  writtenIn typescript
+centralPackageRepositoryCount 0

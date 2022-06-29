@@ -3,7 +3,6 @@ appeared 1988
 type pl
 
 patterns
- hasCentralPackageRepository? false
  hasComments? true
 
 wikipedia https://en.wikipedia.org/wiki/GNU_Octave
@@ -58,3 +57,4 @@ codeMirror octave
 rosettaCode Octave
 
 jupyterKernel https://github.com/calysto/octave_kernel
+centralPackageRepositoryCount 0

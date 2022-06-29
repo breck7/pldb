@@ -2,9 +2,6 @@ title EXEC
 appeared 1966
 type pl
 
-patterns
- hasCentralPackageRepository? false
-
 wikipedia https://en.wikipedia.org/wiki/CMS_EXEC
  example
   * The following code issues CMS commands to set
@@ -28,3 +25,5 @@ fileType text
 tiobe EXEC
 
 hopl 2023
+
+centralPackageRepositoryCount 0

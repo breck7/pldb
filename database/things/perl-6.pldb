@@ -3,7 +3,6 @@ appeared 2015
 type pl
 
 patterns
- hasCentralPackageRepository? false
  hasMultipleInheritance? true
  hasOperatorOverloading? true
 
@@ -55,3 +54,4 @@ tryItOnline perl6
 fileType text
 isOpenSource true
 visualParadigm false
+centralPackageRepositoryCount 0

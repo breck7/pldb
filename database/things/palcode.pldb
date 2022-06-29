@@ -2,9 +2,6 @@ title PALcode
 appeared 1996
 type isa
 
-patterns
- hasCentralPackageRepository? false
-
 wikipedia https://en.wikipedia.org/wiki/PALcode
  related freebsd linux
  summary In computing, in the Alpha instruction set architecture, PALcode (Privileged Architecture Library code) is the name used by DEC for a set of functions in the SRM or AlphaBIOS firmware, providing a hardware abstraction layer for system software, covering features such as cache management, translation lookaside buffer (TLB) miss handling, interrupt handling and exception handling. PALcode is Alpha machine code, running in a special mode that also allows access to internal registers specific to the particular Alpha processor implementation. It is thus somewhere between the role of microcode and of a hardware emulator. PALcode is operating system-specific; different versions of PALcode are required by OpenVMS, Tru64 UNIX, and Windows NT. Tru64 UNIX PALcode is also used by NetBSD, FreeBSD, OpenBSD and Linux.
@@ -18,3 +15,4 @@ wikipedia https://en.wikipedia.org/wiki/PALcode
 reference http://www.science.unitn.it/~fiorella/guidelinux/tlk/node140.html
 status historical
 fileType na
+centralPackageRepositoryCount 0

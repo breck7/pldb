@@ -2,9 +2,6 @@ title knowledge representation language
 appeared 1976
 type pl
 
-patterns
- hasCentralPackageRepository? false
-
 wikipedia https://en.wikipedia.org/wiki/KRL_(programming_language)
  related kuka
  summary KRL is a knowledge representation language, developed by Daniel G. Bobrow and Terry Winograd while at Xerox PARC and Stanford University, respectively. It is a frame-based language.   KRL was an attempt to produce a language which was nice to read and write for the engineers who had to write programs in it, processed like human memory, so you could have realistic AI programs, had an underlying semantics which was firmly grounded like logic languages, all in one, all in one language. And I think it - again, in hindsight - it just bogged down under the weight of trying to satisfy all those things at once.
@@ -43,3 +40,5 @@ country US
 fileType text
 
 hopl 763
+
+centralPackageRepositoryCount 0

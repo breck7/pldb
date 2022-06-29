@@ -3,7 +3,6 @@ appeared 1993
 type esolang
 
 patterns
- hasCentralPackageRepository? false
  hasComments? true
 
 wikipedia https://en.wikipedia.org/wiki/Befunge
@@ -53,3 +52,5 @@ hopl 1717
 quineRelay Befunge
 
 rosettaCode Befunge
+
+centralPackageRepositoryCount 0

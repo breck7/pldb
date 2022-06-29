@@ -2,9 +2,6 @@ title Function Level
 appeared 1989
 type pl
 
-patterns
- hasCentralPackageRepository? false
-
 wikipedia https://en.wikipedia.org/wiki/FL_(programming_language)
  related fp j ml c
  summary FL (short for Function Level) is a functional programming language created at the IBM Almaden Research Center by John Backus, John Williams, and Edward Wimmers in the 1980s and documented in a report from 1989. FL was designed as a successor of Backus' earlier FP language, providing specific support for what Backus termed function-level programming. FL is a dynamically typed strict functional programming language with throw and catch exception semantics much like in ML. Each function has an implicit history argument which is used for doing things like strictly functional input/output (I/O), but is also used for linking to C code. For doing optimization, there exists a type-system which is an extension of Hindley–Milner type inference. Many of the language’s innovative ideas have since been implemented in Kenneth E. Iverson’s J language.
@@ -22,3 +19,5 @@ fileType text
 wordRank 1468
 
 hopl 1144
+
+centralPackageRepositoryCount 0

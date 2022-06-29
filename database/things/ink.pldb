@@ -23,9 +23,6 @@ example
  - we passed the day in silence.
  - -> END 
 
-patterns
- hasCentralPackageRepository? false
-
 description Ink is inkle's scripting language for writing interactive narrative, both for text-centric games as well as more graphical games that contain highly branching stories.
 
 githubRepo https://github.com/inkle/ink
@@ -46,3 +43,4 @@ twitter inklestudios
 fileType text
 wordRank 3033
 isOpenSource true
+centralPackageRepositoryCount 0

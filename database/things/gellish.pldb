@@ -2,9 +2,6 @@ title Gellish
 appeared 2005
 type textMarkup
 
-patterns
- hasCentralPackageRepository? false
-
 wikipedia https://en.wikipedia.org/wiki/Gellish
  example
   - a UID of the fact that is expressed on this row in the table 
@@ -25,3 +22,4 @@ wikipedia https://en.wikipedia.org/wiki/Gellish
 
 status historical
 fileType text
+centralPackageRepositoryCount 0

@@ -2,9 +2,6 @@ title jq
 appeared 2012
 type queryLanguage
 
-patterns
- hasCentralPackageRepository? false
-
 githubRepo https://github.com/stedolan/jq
  firstCommit 2012
  stars 12935
@@ -28,3 +25,5 @@ projectEuler jq
   2022 5
 
 rosettaCode Jq
+
+centralPackageRepositoryCount 0

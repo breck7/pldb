@@ -2,9 +2,6 @@ title Notepad++
 appeared 2003
 type editor
 
-patterns
- hasCentralPackageRepository? false
-
 wikipedia https://en.wikipedia.org/wiki/Notepad++
  related mediawiki ia-32 c java unix javascript actionscript ada asp assembly-language autoit bash batch csharp caml cmake coffeescript csound d erlang forth fortran freebasic haskell html ini inno-setup json kixtart latex lua makefile objective-c pascal perl php postscript powershell purebasic python r ruby rust scheme smalltalk sql swift tcl tex txt2tags visual-basic vhdl verilog xml yaml ascii utf-8 regex
  summary Notepad++ is a text editor and source code editor for use with Microsoft Windows. It supports tabbed editing, which allows working with multiple open files in a single window. The project's name comes from the C increment operator. Notepad++ is distributed as free software. At first the project was hosted on SourceForge.net, from where it has been downloaded over 28 million times, and twice won the SourceForge Community Choice Award for Best Developer Tool. The project was hosted on TuxFamily from 2010 to 2015; since 2015 Notepad++ has been hosted on GitHub. Notepad++ uses the Scintilla editor component.
@@ -18,3 +15,4 @@ wikipedia https://en.wikipedia.org/wiki/Notepad++
 status historical
 fileType na
 isOpenSource true
+centralPackageRepositoryCount 0

@@ -2,9 +2,6 @@ title oil
 appeared 2016
 type pl
 
-patterns
- hasCentralPackageRepository? false
-
 description Oil is a new Unix shell.
 
 githubRepo https://github.com/oilshell/oil
@@ -29,3 +26,5 @@ isOpenSource true
 subreddit oilshell
  memberCount
   2017 221
+
+centralPackageRepositoryCount 0

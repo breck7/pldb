@@ -30,9 +30,6 @@ example
  
  Whisper my world 
 
-patterns
- hasCentralPackageRepository? false
-
 description Rockstar is a dynamically typed Turing-complete programming language. Rockstar is designed for creating computer programs that are also song lyrics, and is heavily influenced by the lyrical conventions of 1980s hard rock and power ballads.
 
 githubRepo https://github.com/dylanbeattie/rockstar
@@ -53,3 +50,5 @@ fileType text
 isOpenSource true
 
 rosettaCode Rockstar
+
+centralPackageRepositoryCount 0

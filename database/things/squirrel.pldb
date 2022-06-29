@@ -4,7 +4,6 @@ type pl
 creators Alberto Demichelis
 
 patterns
- hasCentralPackageRepository? false
  hasComments? true
 
 wikipedia https://en.wikipedia.org/wiki/Squirrel_(programming_language)
@@ -160,3 +159,4 @@ ubuntuPackage squirrel3
 rosettaCode Squirrel
 
 writtenIn cpp
+centralPackageRepositoryCount 0

@@ -4,7 +4,6 @@ type pl
 creators Mahmoud Fayed
 
 patterns
- hasCentralPackageRepository? false
  hasComments? true
 
 wikipedia https://en.wikipedia.org/wiki/Ring_(programming_language)
@@ -85,3 +84,5 @@ isOpenSource true
 tiobe Ring
 
 rosettaCode Ring
+
+centralPackageRepositoryCount 0

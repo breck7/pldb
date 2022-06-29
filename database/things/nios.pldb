@@ -2,9 +2,6 @@ title Nios II
 appeared 2000
 type isa
 
-patterns
- hasCentralPackageRepository? false
-
 wikipedia https://en.wikipedia.org/wiki/Nios_II
  related c eclipse-editor linux
  summary Nios II is a 32-bit embedded-processor architecture designed specifically for the Altera family of FPGAs. Nios II incorporates many enhancements over the original Nios architecture, making it more suitable for a wider range of embedded computing applications, from DSP to system-control. Nios II is comparable to MicroBlaze, a competing softcore CPU for the Xilinx family of FPGA. Unlike Microblaze, Nios II is licensable for standard-cell ASICs through a third-party IP provider, Synopsys Designware. Through the Designware license, designers can port Nios-based designs from an FPGA-platform to a mass production ASIC-device. Nios II is a successor to Altera's first configurable 16-bit embedded processor Nios.
@@ -17,3 +14,4 @@ wikipedia https://en.wikipedia.org/wiki/Nios_II
 status historical
 fileType na
 corporateDevelopers Altera
+centralPackageRepositoryCount 0

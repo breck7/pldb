@@ -2,9 +2,6 @@ title ZBasic
 appeared 1980
 type pl
 
-patterns
- hasCentralPackageRepository? false
-
 wikipedia https://en.wikipedia.org/wiki/ZBasic
  related basic futurebasic visual-basic
  summary ZBasic is a compiler which was first released by Simutek (Tucson, Arizona) in 1980.  The combined efforts of Andrew Gariepy, Scott Terry, David Overton, Greg Branche, and Halbert Laing led to versions for MS-DOS,  Apple II, Macintosh, CP/M, and TRS-80 computers. ZBasic is a very fast, efficient and quite advanced BASIC compiler with an integrated development environment. It aims to be used as a cross-platform development system, where the same source code can be compiled to different platforms without any modifications. ZBasic features device independent graphics: the same compiled code can work on different display resolutions and colors, and even in text mode. Original PC versions include graphical support up to EGA for MS-DOS. A special feature of ZBasic is BCD (binary coded decimal) math with accuracy up to 54 digits. Another special feature is INDEX$ array, an array of variable length strings that could be easily sorted, searched etc. In 1991, Harry Gish and 32 Bit Software Inc. of Dallas, Texas purchased the MS-DOS version. Nando Favaro expanded it to include 16- and 32-bit-specific machine code as well as VGA and VESA video. Zedcor concentrated on the Apple Macintosh market and renamed it FutureBASIC.
@@ -18,3 +15,5 @@ wikipedia https://en.wikipedia.org/wiki/ZBasic
 status historical
 
 hopl 7002
+
+centralPackageRepositoryCount 0

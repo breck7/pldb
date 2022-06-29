@@ -172,9 +172,6 @@ hasBreakNode
 hasBuiltInRegexNode
  extends abstractPatternNode
  crux hasBuiltInRegex?
-hasCentralPackageRepositoryNode
- extends abstractPatternNode
- crux hasCentralPackageRepository?
 hasCExtensionsNode
  extends abstractPatternNode
  crux hasCExtensions?

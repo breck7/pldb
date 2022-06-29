@@ -2,9 +2,6 @@ title MINC
 appeared 1985
 type pl
 
-patterns
- hasCentralPackageRepository? false
-
 wikipedia https://en.wikipedia.org/wiki/MINC
  related c perl python tcl
  summary MINC ("MINC is not C") is a data specification language written in the mid-1980s by a Princeton University graduate student named Lars Graf. This kind of naming is known as a "recursive acronym".  It contains many (though not all) of the syntactical capabilities of the C programming language, and can be used to implement simple procedural programs that can be executed by a runtime parser (that is to say, MINC does not need to be compiled in any way).  MINC continues to be used only in a handful of programs written in the 1980s (e.g. Real-Time Cmix). It has been for all intents and purposes superseded by modern scripting languages such as Perl, Python, and Tcl. A controversial aspect of the language is whether it is pronounced "mink" or "min-see".
@@ -16,3 +13,4 @@ wikipedia https://en.wikipedia.org/wiki/MINC
  appeared 1980
 
 status historical
+centralPackageRepositoryCount 0

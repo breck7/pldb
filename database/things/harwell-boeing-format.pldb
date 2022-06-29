@@ -2,9 +2,6 @@ title Harwell-Boeing file format
 appeared 1989
 type textDataFormat
 
-patterns
- hasCentralPackageRepository? false
-
 description The Harwell-Boeing format is the most popular mechanism for text-file exchange of sparse matrix data.
 
 wikipedia https://en.wikipedia.org/wiki/Harwell-Boeing_file_format
@@ -19,3 +16,4 @@ wikipedia https://en.wikipedia.org/wiki/Harwell-Boeing_file_format
 reference https://math.nist.gov/MatrixMarket/formats.html#hb
 status active
 fileType text
+centralPackageRepositoryCount 0

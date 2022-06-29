@@ -8,9 +8,6 @@ example
  # Syscall count by process
  dtrace -n 'syscall:::entry { @num[pid,execname] = count(); }'
 
-patterns
- hasCentralPackageRepository? false
-
 description DTrace is a comprehensive dynamic tracing framework created by Sun Microsystems for troubleshooting kernel and application problems on production systems in real time.
 
 wikipedia https://en.wikipedia.org/wiki/DTrace
@@ -83,3 +80,4 @@ linguistGrammarRepo https://github.com/textmate/c.tmbundle
 website http://dtrace.org/
 status active
 fileType text
+centralPackageRepositoryCount 0

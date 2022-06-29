@@ -2,9 +2,6 @@ title Lean
 appeared 2015
 type pl
 
-patterns
- hasCentralPackageRepository? false
-
 githubLanguage Lean
  fileExtensions lean hlean
  trendingProjectsCount 0
@@ -111,3 +108,4 @@ tryItOnline lean
 fileType text
 wordRank 8525
 isOpenSource true
+centralPackageRepositoryCount 0

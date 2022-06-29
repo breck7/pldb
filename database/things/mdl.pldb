@@ -2,9 +2,6 @@ title MDL
 appeared 1971
 type pl
 
-patterns
- hasCentralPackageRepository? false
-
 wikipedia https://en.wikipedia.org/wiki/MDL_(programming_language)
  example
   <DEFINE EXIT-TO (EXITS RMS)
@@ -34,3 +31,5 @@ wikipedia https://en.wikipedia.org/wiki/MDL_(programming_language)
 status historical
 
 rosettaCode MDL
+
+centralPackageRepositoryCount 0

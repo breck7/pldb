@@ -2,9 +2,6 @@ title Apple BASIC
 appeared 1978
 type pl
 
-patterns
- hasCentralPackageRepository? false
-
 wikipedia https://en.wikipedia.org/wiki/Apple_BASIC
  related hp-time-shared-basic applesoft-basic basic microsoft-basic altair-basic assembly-language
  summary Integer BASIC, written by Steve Wozniak, is the BASIC interpreter of the Apple I and original Apple II computers. Originally available on cassette, then included in ROM on the original Apple II computer at release in 1977, it was the first version of BASIC used by many early home computer owners.Integer BASIC was phased out in favor of Applesoft BASIC starting with the Apple II Plus in 1979. This was a licensed but modified version of Microsoft BASIC, which included the floating point support missing in Integer BASIC.
@@ -16,3 +13,4 @@ wikipedia https://en.wikipedia.org/wiki/Apple_BASIC
  appeared 1977
 
 status historical
+centralPackageRepositoryCount 0

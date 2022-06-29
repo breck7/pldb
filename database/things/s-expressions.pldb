@@ -2,9 +2,6 @@ title S-expressions
 appeared 1960
 type metaLanguage
 
-patterns
- hasCentralPackageRepository? false
-
 wikipedia https://en.wikipedia.org/wiki/S-expression
  example
   def parse_sexp(string):
@@ -48,3 +45,5 @@ related i-expressions bayer-expressions
 fileType text
 
 antlr https://github.com/antlr/grammars-v4/tree/master/sexpression
+
+centralPackageRepositoryCount 0

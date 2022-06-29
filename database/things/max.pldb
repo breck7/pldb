@@ -2,9 +2,6 @@ title Max
 appeared 1990
 type jsonFormat
 
-patterns
- hasCentralPackageRepository? false
-
 wikipedia https://en.wikipedia.org/wiki/Max_(software)
  related c linux puredata opengl csound supercollider java javascript
  summary Max, also known as Max/MSP/Jitter, is a visual programming language for music and multimedia developed and maintained by San Francisco-based software company Cycling '74. Over its more than thirty-year history, it has been used by composers, performers, software designers, researchers, and artists to create recordings, performances, and installations.The Max program is modular, with most routines existing as shared libraries. An application programming interface (API) allows third-party development of new routines (named external objects). Thus, Max has a large user base of programmers unaffiliated with Cycling '74 who enhance the software with commercial and non-commercial extensions to the program. Because of this extensible design, which simultaneously represents both the program's structure and its graphical user interface (GUI), Max has been described as the lingua franca for developing interactive music performance software.
@@ -33,3 +30,4 @@ status active
 fileType text
 wordRank 1428
 isOpenSource false
+centralPackageRepositoryCount 0

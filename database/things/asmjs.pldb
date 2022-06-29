@@ -2,9 +2,6 @@ title Asm.js
 appeared 2013
 type ir
 
-patterns
- hasCentralPackageRepository? false
-
 wikipedia https://en.wikipedia.org/wiki/Asm.js
  example
   function strlen(ptr) {
@@ -28,3 +25,4 @@ wikipedia https://en.wikipedia.org/wiki/Asm.js
 website http://asmjs.org/
 status historical
 fileType text
+centralPackageRepositoryCount 0

@@ -3,9 +3,6 @@ appeared 2003
 type library
 creators John D. Hunter
 
-patterns
- hasCentralPackageRepository? false
-
 wikipedia https://en.wikipedia.org/wiki/Matplotlib
  example
   >>> from matplotlib import cm
@@ -44,3 +41,4 @@ website http://matplotlib.org/
 status active
 fileType text
 isOpenSource true
+centralPackageRepositoryCount 0

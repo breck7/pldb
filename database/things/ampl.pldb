@@ -22,9 +22,6 @@ example
                 # Constraint: total of hours used by all
                 # products may not exceed hours available
 
-patterns
- hasCentralPackageRepository? false
-
 wikipedia https://en.wikipedia.org/wiki/AMPL
  example
   set Plants;
@@ -139,3 +136,5 @@ isOpenSource false
 hopl 7232
 
 rosettaCode AMPL
+
+centralPackageRepositoryCount 0

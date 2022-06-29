@@ -2,9 +2,6 @@ title SCM Scheme implementation
 appeared 1990
 type pl
 
-patterns
- hasCentralPackageRepository? false
-
 wikipedia https://en.wikipedia.org/wiki/SCM_(Scheme_implementation)
  related lisp c ia-32 scheme guile linux unix emacs-editor bash
  summary SCM is a programming language, a dialect of the language Scheme. It is written in the  language C, by Aubrey Jaffer, the author of the SLIB Scheme library and the JACAL interactive computer algebra (symbolic mathematics) program. It conforms to the standards R4RS, R5RS, and IEEE P1178. It is free and open-source software released under a GNU Lesser General Public License (LGPL).SCM runs on many different operating systems such as AmigaOS (also emulation), Linux, Atari-ST, macOS (SCM Mac), DOS, OS/2, NOS/VE, Unicos, VMS, Unix, and similar systems. SCM includes Hobbit, a Scheme-to-C compiler written originally in 2002 by Tanel Tammet. It generates C files which binaries can be dynamically or statically linked with an SCM executable. SCM includes linkable modules for SLIB features like sequence comparison, arrays, records, and byte-number conversions, and modules for Portable Operating System Interface (POSIX) system calls and network sockets, Readline, curses, and Xlib. On some platforms, SCM supports unexec (developed for Emacs and bash), which dumps an executable image from a running SCM. This results in a fast startup for SCM. SCM developed from Scheme In One Defun (SIOD) in about 1990. GNU Guile developed from SCM in 1993.
@@ -16,3 +13,4 @@ wikipedia https://en.wikipedia.org/wiki/SCM_(Scheme_implementation)
 
 status historical
 isOpenSource true
+centralPackageRepositoryCount 0

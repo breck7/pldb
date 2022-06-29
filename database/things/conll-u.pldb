@@ -2,9 +2,6 @@ title CoNLL-U
 appeared 2014
 type application
 
-patterns
- hasCentralPackageRepository? false
-
 githubLanguage CoNLL-U
  fileExtensions conllu conll
 
@@ -140,3 +137,4 @@ linguistGrammarRepo https://github.com/odanoburu/conllu-linguist-grammar
 reference http://universaldependencies.org/format.html
 status active
 fileType text
+centralPackageRepositoryCount 0

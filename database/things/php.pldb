@@ -26,7 +26,6 @@ patterns
              E_USER_NOTICE);
          return null;
      }
- hasCentralPackageRepository? true
  hasComments? true
  hasConstructors? true
  hasHereDocs? true

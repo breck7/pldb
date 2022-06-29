@@ -2,9 +2,6 @@ title Atmel AVR instruction set
 appeared 1996
 type isa
 
-patterns
- hasCentralPackageRepository? false
-
 wikipedia https://en.wikipedia.org/wiki/Atmel_AVR_instruction_set
  related atmel-avr
  summary The Atmel AVR instruction set is the machine language for the Atmel AVR, a modified Harvard architecture 8-bit RISC single chip microcontroller which was developed by Atmel in 1996. The AVR was one of the first microcontroller families to use on-chip flash memory for program storage.
@@ -17,3 +14,4 @@ wikipedia https://en.wikipedia.org/wiki/Atmel_AVR_instruction_set
 
 status historical
 fileType na
+centralPackageRepositoryCount 0

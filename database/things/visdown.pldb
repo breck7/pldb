@@ -16,9 +16,6 @@ example
      type: quantitative
   ```
 
-patterns
- hasCentralPackageRepository? false
-
 description Write visualisation using a simple declarative markup like you would write code. Just wrap it in fenced block (three backticks) and mark the language as `vis`.
 
 githubRepo https://github.com/amitkaps/visdown
@@ -35,3 +32,4 @@ website https://visdown.com/
 status active
 fileType text
 isOpenSource true
+centralPackageRepositoryCount 0

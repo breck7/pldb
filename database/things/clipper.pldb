@@ -2,9 +2,6 @@ title Clipper
 appeared 1985
 type pl
 
-patterns
- hasCentralPackageRepository? false
-
 wikipedia https://en.wikipedia.org/wiki/Clipper_(programming_language)
  example
   USE Customer SHARED NEW
@@ -37,3 +34,5 @@ tiobe Clipper
 hopl 1909
 
 rosettaCode Clipper
+
+centralPackageRepositoryCount 0

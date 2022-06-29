@@ -19,9 +19,6 @@ example
  
  }
 
-patterns
- hasCentralPackageRepository? false
-
 wikipedia https://en.wikipedia.org/wiki/CFEngine
  related linux solaris puppet
  summary CFEngine is an open source configuration management system, written by Mark Burgess. Its primary function is to provide automated configuration and maintenance of large-scale computer systems, including the unified management of servers, desktops, consumer and industrial devices, embedded networked devices, mobile smartphones, and tablet computers.
@@ -39,3 +36,4 @@ twitter cfengine
 
 fileType text
 isOpenSource true
+centralPackageRepositoryCount 0

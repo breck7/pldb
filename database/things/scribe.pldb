@@ -5,9 +5,6 @@ type pl
 example
  @MakeSection(tag=beginning, title="The Beginning")
 
-patterns
- hasCentralPackageRepository? false
-
 wikipedia https://en.wikipedia.org/wiki/Scribe_(markup_language)
  example
   @Heading(The Beginning)
@@ -28,3 +25,5 @@ country US
 fileType text
 
 hopl 2481
+
+centralPackageRepositoryCount 0

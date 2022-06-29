@@ -2,9 +2,6 @@ title Visual Studio
 appeared 1997
 type editor
 
-patterns
- hasCentralPackageRepository? false
-
 wikipedia https://en.wikipedia.org/wiki/Microsoft_Visual_Studio
  related visual-studio-code-editor csharp git c visual-basic-dot-net f-sharp javascript typescript xml html css python ruby mumps java jsharp regex uml linq cli-assembly visual-basic visual-foxpro sql asp jvm cil linux vba ml solidity xaml azure microsoft-small-basic
  summary Microsoft Visual Studio is an integrated development environment (IDE) from Microsoft. It is used to develop computer programs, as well as websites, web apps, web services and mobile apps. Visual Studio uses Microsoft software development platforms such as Windows API, Windows Forms, Windows Presentation Foundation, Windows Store and Microsoft Silverlight. It can produce both native code and managed code. Visual Studio includes a code editor supporting IntelliSense (the code completion component) as well as code refactoring. The integrated debugger works both as a source-level debugger and a machine-level debugger. Other built-in tools include a code profiler, forms designer for building GUI applications, web designer, class designer, and database schema designer. It accepts plug-ins that enhance the functionality at almost every level—including adding support for source control systems (like Subversion and Git) and adding new toolsets like editors and visual designers for domain-specific languages or toolsets for other aspects of the software development lifecycle (like the Team Foundation Server client: Team Explorer). Visual Studio supports 36 different programming languages and allows the code editor and debugger to support (to varying degrees) nearly any programming language, provided a language-specific service exists. Built-in languages include C, C++, C++/CLI, Visual Basic .NET, C#, F#, JavaScript, TypeScript, XML, XSLT, HTML, and CSS. Support for other languages such as Python, Ruby, Node.js, and M among others is available via plug-ins. Java (and J#) were supported in the past. The most basic edition of Visual Studio, the Community edition, is available free of charge. The currently supported Visual Studio version is 2017. Microsoft announced 2019 on June 6, 2018, with its release timing to be shared "in the coming months," promising "to deliver ... quickly and iteratively."
@@ -18,3 +15,4 @@ wikipedia https://en.wikipedia.org/wiki/Microsoft_Visual_Studio
 status historical
 fileType na
 isOpenSource true
+centralPackageRepositoryCount 0

@@ -3,9 +3,6 @@ appeared 2008
 type pl
 creators Ola Bini
 
-patterns
- hasCentralPackageRepository? false
-
 wikipedia https://en.wikipedia.org/wiki/Ioke_(programming_language)
  related io smalltalk lisp ruby jruby
  summary Ioke is a dynamic, strongly typed, prototype-based programming language targeting the Java Virtual Machine and the Common Language Runtime. It was designed by Ola Bini, a developer of JRuby. It has a very simple homoiconic syntax, somewhat similar to Io.
@@ -53,3 +50,5 @@ isOpenSource true
 tiobe Ioke
 
 rosettaCode Ioke
+
+centralPackageRepositoryCount 0

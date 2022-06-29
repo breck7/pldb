@@ -4,7 +4,6 @@ type pl
 
 patterns
  hasPointers? true
- hasCentralPackageRepository? false
  hasThreads? true
 
 wikipedia https://en.wikipedia.org/wiki/PL/I
@@ -50,3 +49,4 @@ projectEuler PL/I
 hopl 185
 
 corporateDevelopers IBM
+centralPackageRepositoryCount 0

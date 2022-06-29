@@ -2,9 +2,6 @@ title Atari Microsoft BASIC
 appeared 1981
 type pl
 
-patterns
- hasCentralPackageRepository? false
-
 wikipedia https://en.wikipedia.org/wiki/Atari_Microsoft_BASIC
  related atari-basic microsoft-basic turbo-basic-xl optimized-systems-software
  summary The Atari Microsoft BASIC and Atari Microsoft BASIC II variants of the BASIC programming language were ROM cartridge or floppy disk packaged versions of the Microsoft BASIC dialect ported to the Atari 8-bit machines. Atari originally licensed Microsoft BASIC for use in their 8-bit computers, but were unable to fit it in an 8 KB ROM cartridge, the largest cartridge size available at the time. They outsourced to another company, Shepardson Microsystems Inc. (SMI), who had similar problems fitting the language onto an 8k cartridge. SMI proposed creating an entirely new version of BASIC for the new platforms, and built Atari BASIC instead. Atari Microsoft BASIC, unlike Atari BASIC, didn't allow abbreviations for keywords; keywords had to be fully spelled out. Syntax checking occurred after running a program, not immediately after entering the line. Also, arithmetic operations with integers resulted in an integer result.  Atari Microsoft BASIC came in two packages:  Floppy disk – CX8126 ROM cartridge – RX8035. Since the cartridge could only hold 16 KB, the remaining 11 KB file was included on an "extension" disk. The cartridge version was called Atari Microsoft BASIC II.Although more feature filled than Atari BASIC, Microsoft BASIC never had the popularity that Atari BASIC had. The biggest problems were:  increased memory needed (at least 32 KB) disk drive required performance (faster than Atari BASIC, but slower than Turbo-Basic XL and BASIC XL) not compatible with Atari BASIC added costThe cartridge version eliminated the first two requirements, but a disk drive was needed for all of its features.
@@ -17,3 +14,4 @@ wikipedia https://en.wikipedia.org/wiki/Atari_Microsoft_BASIC
 
 status historical
 isOpenSource false
+centralPackageRepositoryCount 0

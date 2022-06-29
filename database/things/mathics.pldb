@@ -5,9 +5,6 @@ type pl
 example
  StringJoin[Riffle[Map[ToString, Table[Fibonacci[i], {i,16}]], ", "]] <> "..."
 
-patterns
- hasCentralPackageRepository? false
-
 description Mathics is a free, general-purpose online computer algebra system featuring Mathematica-compatible syntax and functions. It is backed by highly extensible Python code, relying on SymPy for most mathematical tasks.
 
 githubRepo https://github.com/mathics/Mathics
@@ -29,3 +26,4 @@ tryItOnline mathics
 fileType text
 isOpenSource true
 jupyterKernel http://nbviewer.ipython.org/gist/sn6uv/8381447
+centralPackageRepositoryCount 0

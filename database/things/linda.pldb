@@ -2,9 +2,6 @@ title Linda
 appeared 1986
 type pl
 
-patterns
- hasCentralPackageRepository? false
-
 wikipedia https://en.wikipedia.org/wiki/Linda_(coordination_language)
  related tuple-space c fortran csharp erlang go java javascript lisp lua prolog python ruby swift ada doi
  summary In computer science, Linda is a model of coordination and communication among several parallel processes operating upon objects stored in and retrieved from shared, virtual, associative memory. It was developed by Sudhir Ahuja at AT&T Bell Laboratories in collaboration with David Gelernter and Nicholas Carriero at Yale University in 1986.
@@ -21,3 +18,5 @@ fileType text
 wordRank 4710
 
 hopl 1159
+
+centralPackageRepositoryCount 0

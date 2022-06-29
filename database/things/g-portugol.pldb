@@ -10,9 +10,6 @@ example
     imprima("Olá, Mundo!");
  fim 
 
-patterns
- hasCentralPackageRepository? false
-
 githubRepo https://github.com/thiago-silva/gpt
  firstCommit 2005
  stars 3
@@ -32,3 +29,5 @@ isOpenSource true
 quineRelay G-Portugol
 
 ubuntuPackage gpt
+
+centralPackageRepositoryCount 0

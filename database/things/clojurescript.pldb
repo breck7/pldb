@@ -2,9 +2,6 @@ title clojurescript
 appeared 2011
 type pl
 
-patterns
- hasCentralPackageRepository? false
-
 githubRepo https://github.com/clojure/clojurescript
  stars 7429
  forks 648
@@ -23,3 +20,4 @@ compilesTo javascript
 isOpenSource true
 cheatSheetUrl http://cljs.info/cheatsheet/
 announcementMethod blogPost
+centralPackageRepositoryCount 0

@@ -2,9 +2,6 @@ title Linotte
 appeared 2005
 type pl
 
-patterns
- hasCentralPackageRepository? false
-
 wikipedia https://en.wikipedia.org/wiki/Linotte
  example
   BonjourLeMonde:
@@ -25,3 +22,4 @@ country FR
 fileType text
 isOpenSource true
 nativeLanguage French
+centralPackageRepositoryCount 0

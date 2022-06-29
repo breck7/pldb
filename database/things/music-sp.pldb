@@ -2,9 +2,6 @@ title MUSIC/SP
 appeared 1972
 type pl
 
-patterns
- hasCentralPackageRepository? false
-
 wikipedia https://en.wikipedia.org/wiki/MUSIC/SP
  related unix watfiv pascal pl-i basic apl algol ibm-rpg gpss rexx multics
  summary MUSIC/SP (Multi-User System for Interactive Computing/System Product; originally "McGill University System for Interactive Computing") was developed at McGill University in the 1970s from an early IBM time-sharing system called RAX (Remote Access Computing System). The system ran on IBM  S/360,  S/370, and  4300-series  mainframe hardware, and offered novel features (for the time) such as file access control and data compression. It was designed to allow academics and students to create and run their programs interactively on  terminals, in an era when most mainframe computing was still being done from punched cards.  Over the years, development continued and the system evolved to embrace email, the Internet and eventually the World Wide Web. At its peak in the late 1980s, there were over 250  universities, colleges and  high school districts that used the system in North and South America, Europe and Asia.
@@ -16,3 +13,4 @@ wikipedia https://en.wikipedia.org/wiki/MUSIC/SP
  appeared 1972
 
 status historical
+centralPackageRepositoryCount 0

@@ -11,9 +11,6 @@ example
  }
  let john as Person be Person("John", "Wall Street", 15, [ "Alice", "Bob" ])
 
-patterns
- hasCentralPackageRepository? false
-
 description A programming language to generate code for multiple platforms
 
 githubRepo https://github.com/Zolang/Zolang
@@ -29,3 +26,4 @@ githubRepo https://github.com/Zolang/Zolang
 status active
 fileType text
 isOpenSource true
+centralPackageRepositoryCount 0

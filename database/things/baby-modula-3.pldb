@@ -2,9 +2,6 @@ title Baby modula-3
 appeared 1993
 type pl
 
-patterns
- hasCentralPackageRepository? false
-
 wikipedia https://en.wikipedia.org/wiki/Baby_modula-3
  related modula-3 ada c
  summary Baby Modula-3 is a functional programming sublanguage of Modula-3 (safe subset) programming language  based on ideals invented by Martín Abadi. It is an object oriented language for studying programming language design; one part of it is implicitly prototype-oriented programming language, and the other is explicitly statically typed designed for studying computer science type theories. It has been checked as a formal language of metaprogramming systems. It comes from the "Scandinavian School" of object-oriented programming languages.   Martín Abadi tried to give an example of pure object-oriented language which would allow the studying of formal semantics of objects. "Baby Modula-3 is defined with a structured operational semantics and with a set of static type rules. A denotational semantics guarantees the soundness of this definition." This object model has been shown to have well definiteness decidability  (a mechanical proof of it isn't known).  The inventor of Baby Modula-3 worked at Systems Research Center (SRC) of Digital Equipment Corporation (DEC) in Palo Alto, California. As DEC was bought by Compaq and Compaq itself was bought by Hewlett-Packard the SRC-report 95 was made available to the public by HP.
@@ -16,3 +13,4 @@ wikipedia https://en.wikipedia.org/wiki/Baby_modula-3
  appeared 1997
 
 status historical
+centralPackageRepositoryCount 0

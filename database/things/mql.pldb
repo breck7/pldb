@@ -2,9 +2,6 @@ title MQL5
 appeared 2005
 type pl
 
-patterns
- hasCentralPackageRepository? false
-
 wikipedia https://en.wikipedia.org/wiki/MetaQuotes_Language_MQL4/MQL5
  summary MQL4 (MetaQuotes Language 4) and MQL5 (MetaQuotes Language 5) are integrated programming languages designed for developing trading robots, technical market indicators, scripts and function libraries within the MetaTrader software. The primary objective of MQL4 and MQL5 is automation of trading and facilitation of operational analysis. MQL4 and MQL5 comprises an extensive codebase source code library used for developing trading robots.
  pageId 44398671
@@ -85,3 +82,4 @@ linguistGrammarRepo https://github.com/mqsoft/MQL5-sublime
 
 status active
 fileType text
+centralPackageRepositoryCount 0

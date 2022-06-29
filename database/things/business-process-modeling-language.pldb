@@ -2,9 +2,6 @@ title Business Process Modeling Language
 appeared 2002
 type pl
 
-patterns
- hasCentralPackageRepository? false
-
 wikipedia https://en.wikipedia.org/wiki/Business_Process_Modeling_Language
  related xml uml bpel bpmn
  summary Business Process Modeling Language (BPML) is an XML-based language for business process modeling. It was maintained by the Business Process Management Initiative (BPMI) until June 2005 when BPMI and OMG (Object Management Group) announced the merger of their respective Business Process Management (BPM) activities to form the Business Modeling and Integration Domain Task Force (BMI DTF)[1]. It is deprecated since 2008. BPML was useful to OMG in order to enrich UML with process notation.
@@ -16,3 +13,4 @@ wikipedia https://en.wikipedia.org/wiki/Business_Process_Modeling_Language
  appeared 2005
 
 status historical
+centralPackageRepositoryCount 0

@@ -2,9 +2,6 @@ title GNU Assembler
 appeared 1986
 type compiler
 
-patterns
- hasCentralPackageRepository? false
-
 wikipedia https://en.wikipedia.org/wiki/GNU_Assembler
  example
   .global	_start
@@ -43,3 +40,4 @@ codeMirror gas
 
 corporateDevelopers GNU Project
 announcementMethod paper
+centralPackageRepositoryCount 0

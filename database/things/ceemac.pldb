@@ -2,9 +2,6 @@ title CEEMAC
 appeared 1980
 type pl
 
-patterns
- hasCentralPackageRepository? false
-
 wikipedia https://en.wikipedia.org/wiki/CEEMAC
  example
   SCORE: KT
@@ -32,3 +29,4 @@ wikipedia https://en.wikipedia.org/wiki/CEEMAC
  appeared 1980
 
 status historical
+centralPackageRepositoryCount 0

@@ -2,9 +2,6 @@ title Extended ML
 appeared 1985
 type pl
 
-patterns
- hasCentralPackageRepository? false
-
 wikipedia https://en.wikipedia.org/wiki/Extended_ML
  related standard-ml
  summary Extended ML is a wide-spectrum language covering both specification and implementation and based on the ML programming language. It extends the syntax of ML to include axioms, which need not be executable but can rigorously specify the behavior of the program. With this addition the language can be used for stepwise refinement, proceeding gradually from an initial formal specification to eventually yield an executable Standard ML program. Correctness of the final executable SML program with respect to the original specification can then be established by proving the correctness of each of the refinement steps. Extended ML is used for research into and teaching of formal program development and specification, and research into automatic program verification. Extended ML is neither related to the programming language Extensible ML (other than being similarly derived from ML), nor to the specification language eXtensible Markup Language.
@@ -19,3 +16,5 @@ status active
 fileType text
 
 hopl 1140
+
+centralPackageRepositoryCount 0

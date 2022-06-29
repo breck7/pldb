@@ -2,9 +2,6 @@ title Eagle
 appeared 1988
 type application
 
-patterns
- hasCentralPackageRepository? false
-
 wikipedia https://en.wikipedia.org/wiki/EAGLE_(program)
  related linux postscript xml arduino kicad
  summary EAGLE is a scriptable electronic design automation (EDA) application with schematic capture, printed circuit board (PCB) layout, auto-router and computer-aided manufacturing (CAM) features. EAGLE stands for Easily Applicable Graphical Layout Editor (German: Einfach Anzuwendender Grafischer Layout-Editor) and is developed by CadSoft Computer GmbH. The company was acquired by Autodesk Inc. in 2016.
@@ -61,3 +58,4 @@ linguistGrammarRepo https://github.com/textmate/xml.tmbundle
 status active
 fileType text
 wordRank 4196
+centralPackageRepositoryCount 0

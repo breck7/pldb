@@ -2,9 +2,6 @@ title Yacc
 appeared 1975
 type grammarLanguage
 
-patterns
- hasCentralPackageRepository? false
-
 wikipedia https://en.wikipedia.org/wiki/Yacc
  related unix b c bison ocaml ratfor ada pascal java python ruby go common-lisp
  summary Yacc (Yet Another Compiler-Compiler) is a computer program for the Unix operating system. It is a Look Ahead Left-to-Right (LALR) parser generator, generating a parser, the part of a compiler that tries to make syntactic sense of the source code, specifically a LALR parser, based on an analytic grammar written in a notation similar to Backus–Naur Form (BNF). Yacc itself used to be available as the default parser generator on most Unix systems, though it has since been supplanted as the default by more recent, largely compatible, programs.
@@ -163,3 +160,4 @@ linkedInSkill yacc
 hopl 704
 
 writtenIn c
+centralPackageRepositoryCount 0

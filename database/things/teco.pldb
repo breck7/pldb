@@ -2,9 +2,6 @@ title TECO
 appeared 1963
 type pl
 
-patterns
- hasCentralPackageRepository? false
-
 wikipedia https://en.wikipedia.org/wiki/TECO_(text_editor)
  example
   0uz                             ! clear repeat flag !
@@ -43,3 +40,5 @@ projectEuler TECO
 hopl 2563
 
 rosettaCode Teco
+
+centralPackageRepositoryCount 0

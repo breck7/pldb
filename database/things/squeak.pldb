@@ -2,9 +2,6 @@ title Squeak
 appeared 1996
 type pl
 
-patterns
- hasCentralPackageRepository? false
-
 wikipedia https://en.wikipedia.org/wiki/Squeak
  related smalltalk newsqueak ios pharo lisp logo simula self etoys scratch linux
  summary The Squeak programming language is a dialect of Smalltalk. It is object-oriented, class-based, and reflective. It was derived directly from Smalltalk-80 by a group at Apple Computer that included some of the original Smalltalk-80 developers. Its development was continued by the same group at Walt Disney Imagineering, where it was intended for use in internal Disney projects. Later on the group moved on to be supported by HP labs, SAP Labs and most recently Y Combinator. Squeak is cross-platform. Programs produced on one platform run bit-identical on all other platforms, and versions are available for many platforms including the obvious Windows/macOS/linux versions. The Squeak system includes code for generating a new version of the virtual machine (VM) on which it runs. It also includes a VM simulator written in Squeak. For these reasons, it is easily ported.
@@ -28,3 +25,5 @@ twitter squeaksmalltalk
 fileType text
 
 tiobe Squeak
+
+centralPackageRepositoryCount 0

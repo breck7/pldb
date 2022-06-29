@@ -2,9 +2,6 @@ title RPM Spec
 appeared 1997
 type application
 
-patterns
- hasCentralPackageRepository? false
-
 githubLanguage RPM Spec
  fileExtensions spec
  trendingProjectsCount 0
@@ -66,3 +63,4 @@ linguistGrammarRepo https://github.com/waveclaw/language-rpm-spec
 reference https://rpm-packaging-guide.github.io/#working-with-spec-files
 status active
 fileType text
+centralPackageRepositoryCount 0

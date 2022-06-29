@@ -2,9 +2,6 @@ title SAM76
 appeared 1970
 type pl
 
-patterns
- hasCentralPackageRepository? false
-
 wikipedia https://en.wikipedia.org/wiki/SAM76
  related forth c unix linux basic pascal lisp logo trac
  summary SAM76 is a macro programming language used from the late 1970s to the present 2007 initially ran on CP/M. The SAM76 language is a list and string processor designed for interactive and user-directed applications, including artificial intelligence programming, and permits high portability from machine to machine. The language shares certain features in common with LISP, Forth, and shell programming languages of the UNIX operating system. Claude A. R. Kagan, the language's developer, sought to combine within a single interpretive processor, the characteristics of two different string and general-purpose macro generators and the provisions to embed multiple infix operator mathematical systems. SAM76 was designed to: be very pure syntactically and semantically; require a minimum of user keyboarding to achieve powerful results; fit in a very small computer system; permit editing, testing, and executing modules interactively; not prevent the user from doing strange things with the syntax of the language yielding, however, predictable results. The language was based around the idea of programming with macros. A user will define a macro (a code word that can be defined by the user to invoke a specific set of instructions to perform a routine within the program) to execute a set of instructions, usually in either machine or assembly language, and use the macro in the program. In this way, a user need only define a routine once and then when that particular operation, or string is required, the user can substitute is with the macro name. Since then the language has been rewritten in C and compiles on Windows, Unix, Linux, and similar operating systems. The source code is available online and still compiles and runs as of 2006.
@@ -20,3 +17,5 @@ country US
 fileType text
 
 hopl 781
+
+centralPackageRepositoryCount 0

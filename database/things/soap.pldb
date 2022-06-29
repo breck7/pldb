@@ -2,9 +2,6 @@ title SOAP
 appeared 1998
 type xmlFormat
 
-patterns
- hasCentralPackageRepository? false
-
 wikipedia https://en.wikipedia.org/wiki/SOAP
  example
   POST /InStock HTTP/1.1
@@ -36,3 +33,4 @@ standsFor Simple Object Access Protocol
 status historical
 fileType text
 wordRank 5253
+centralPackageRepositoryCount 0

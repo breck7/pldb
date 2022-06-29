@@ -15,10 +15,8 @@ example
  }
  'Active Users':= integer 'n' = count .'Users'?'Active'|'Yes'
 
-patterns
- hasCentralPackageRepository? false
-
 website https://alan-platform.com/pages/tuts/introducing.html
 status active
 fileType text
 wordRank 3609
+centralPackageRepositoryCount 0

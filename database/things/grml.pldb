@@ -2,9 +2,6 @@ title GRML
 appeared 2003
 type pl
 
-patterns
- hasCentralPackageRepository? false
-
 wikipedia https://en.wikipedia.org/wiki/GRML
  related html xml
  summary GRML – an acronym for General Reuse Markup Language – is a markup language similar to HTML and XML, using tags to organize data in files and web pages. Data is organized in columns and rows. Tags are used to define forms, images, and hyper-linking. Its syntax, like HTML, is based on a simplified subset of SGML. GRML is not in very wide use as of May 2005.  GRML is a data-oriented format which defines data content rather than data presentation; the file or web browser determines how data is displayed. This is the same goal as HTML's separating CSS from HTML, moving away from <font> tags, but GRML takes it even further. One of the key aims in creating the format was to separate "views" of the data from "forms" used to manipulate it. It is also a common result of a typographical error when attempting to type HTML, because HT and GR are adjacent on a Qwerty keyboard.
@@ -16,3 +13,4 @@ wikipedia https://en.wikipedia.org/wiki/GRML
  appeared 2005
 
 status historical
+centralPackageRepositoryCount 0

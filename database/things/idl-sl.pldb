@@ -2,9 +2,6 @@ title IDL specification language
 appeared 1980
 type idl
 
-patterns
- hasCentralPackageRepository? false
-
 wikipedia https://en.wikipedia.org/wiki/IDL_specification_language
  related idl
  summary IDL (Interface Description Language) is a software interface description language (also referred to as Interface Descriptor Language) created by William Wulf and John Nestor of Carnegie Mellon University and David Lamb of Queen's University, Canada. Like other interface description languages, IDL defined interfaces in a language- and machine- independent way, allowing the specification of interfaces between components written in different languages, and possibly executing on different machines using remote procedure calls. The Karlsruhe Ada compilation system used IDL resp. DIANA and its predecessor AIDA, and for marshalling the vanilla IDL External Representation. BiiN's DBMS used IDL as well, and for marshalling a more compact binary IDL External Representation.
@@ -17,3 +14,4 @@ wikipedia https://en.wikipedia.org/wiki/IDL_specification_language
 
 status historical
 fileType text
+centralPackageRepositoryCount 0

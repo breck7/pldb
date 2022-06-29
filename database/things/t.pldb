@@ -2,9 +2,6 @@ title T
 appeared 1980
 type pl
 
-patterns
- hasCentralPackageRepository? false
-
 wikipedia https://en.wikipedia.org/wiki/T_(programming_language)
  example
   (define-predicate pair?)
@@ -32,3 +29,5 @@ fileType text
 wordRank 140
 
 hopl 1019
+
+centralPackageRepositoryCount 0

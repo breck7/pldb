@@ -2,9 +2,6 @@ title XMTC
 appeared 1990
 type pl
 
-patterns
- hasCentralPackageRepository? false
-
 wikipedia https://en.wikipedia.org/wiki/XMTC
  related c
  summary XMTC (for explicit multi-threading C) is a shared-memory parallel programming language.  It is an extension of the C programming language which strives to enable easy PRAM-like programming based on the explicit multi-threading paradigm.  It is developed as part of the XMT PRAM-On-Chip vision by a research team at the University of Maryland, College Park, led by Dr. Uzi Vishkin.  The philosophy of XMTC and the whole XMT project is that parallel programming is a hard intellectual task and the approach of building a hardware system first and then figuring out how to program them has not had much success.  For that reason a robust algorithmic theory and a reasonably easy hardware abstraction should be the specifications that guide how to build a new parallel architecture and programming language.  For parallel algorithms the algorithmic theory that has the largest body of literature is called PRAM (parallel random-access machine ).  This is not a coincidence, since PRAM is a natural way in which to think algorithmically in parallel.  In the early 1990s the PRAM model was deemed unrealistic because the hardware abstraction it was based on could not be implemented (because of low inter-chip bandwidth and high latency).  Now that multiple processors can be put on a single chip, these limitations are no longer present. The XMT architecture takes advantage of this excess on-chip real estate to implement a PRAM abstraction. The XMTC language is a modest extension of C and a work in progress.  The basic premise is that the programmer is responsible for exposing all the available parallelism.  While this sounds simple and many earlier approaches share this ideal, in practice, if the programmer defines too large a number of parallel tasks and the tasks are short, the program will perform very poorly. The way around that is to combine short parallel tasks into a longer one, which is usually the responsibility of the programmer.  In XMTC it is possible for the language to do that automatically, lifting the burden from the programmer. Software release of XMTC: PRAM-like programming allows experimenting with XMTC programming on standard computers.
@@ -16,3 +13,4 @@ wikipedia https://en.wikipedia.org/wiki/XMTC
  appeared 1990
 
 status historical
+centralPackageRepositoryCount 0

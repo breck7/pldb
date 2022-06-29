@@ -10,7 +10,6 @@ patterns
   (fun-full 2 3)
   (def fun-half (partial fun-full 2))
   (fun-half 3)
- hasCentralPackageRepository? true
  hasComments? true
  hasImports? true
   (load "fun")

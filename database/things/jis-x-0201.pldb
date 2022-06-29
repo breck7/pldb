@@ -2,9 +2,6 @@ title JIS X 0201
 appeared 1969
 type characterEncoding
 
-patterns
- hasCentralPackageRepository? false
-
 wikipedia https://en.wikipedia.org/wiki/JIS_X_0201
  related ascii unicode
  summary JIS X 0201, a Japanese Industrial Standard developed in 1969 (then called JIS C 6220 until the JIS category reform), was the first Japanese electronic character set to become widely used.  It is either 7-bit encoding or 8-bit encoding, although 8-bit encoding is dominant for modern use. The full name of this standard is 7-bit and 8-bit coded character sets for information interchange (7ビット及び8ビットの情報交換用符号化文字集合). The first 96 codes comprise an ISO 646 variant, mostly following ASCII with some differences, while the second 96 character codes represent the phonetic Japanese katakana signs. Since the encoding does not provide any way to express hiragana or kanji, it is only capable of expressing simplified written Japanese. Nevertheless, it is possible to express, at least phonetically, the full range of sounds in the language.  In the 1980s, this was acceptable for media such as text mode computer terminals, telegrams, receipts or other electronically handled data. JIS X 0201 was supplanted by subsequent encodings such as Shift JIS (which combines this standard and JIS X 0208) and later Unicode.
@@ -15,3 +12,4 @@ wikipedia https://en.wikipedia.org/wiki/JIS_X_0201
  appeared 1969
 
 status historical
+centralPackageRepositoryCount 0

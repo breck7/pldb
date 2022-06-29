@@ -2,10 +2,8 @@ title GCC GENERIC
 appeared 2003
 type ir
 
-patterns
- hasCentralPackageRepository? false
-
 description The purpose of GENERIC is simply to provide a language-independent way of representing an entire function in trees. To this end, it was necessary to add a few new tree codes to the backend, but most everything was already there. If you can say it with the codes in gcc/tree.def, it’s GENERIC.
 reference ftp://gcc.gnu.org/pub/gcc/summit/2003/GENERIC%20and%20GIMPLE.pdf
 status historical
 wordRank 3029
+centralPackageRepositoryCount 0

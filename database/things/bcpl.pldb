@@ -14,9 +14,6 @@ example
  
  AND FACT(N) = N = 0 -> 1, N * FACT(N - 1)
 
-patterns
- hasCentralPackageRepository? false
-
 wikipedia https://en.wikipedia.org/wiki/BCPL
  example
   GET "LIBHDR"
@@ -77,3 +74,5 @@ tiobe bc
 hopl 374
 
 rosettaCode BCPL
+
+centralPackageRepositoryCount 0

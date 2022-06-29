@@ -3,9 +3,6 @@ appeared 2012
 type pl
 creators Daan Leijen
 
-patterns
- hasCentralPackageRepository? false
-
 githubRepo https://github.com/koka-lang/koka
  stars 264
  forks 25
@@ -26,3 +23,4 @@ isOpenSource true
 webRepl https://rise4fun.com/koka/
 corporateDevelopers Microsoft
 writtenIn haskell
+centralPackageRepositoryCount 0

@@ -3,7 +3,6 @@ appeared 2001
 type pl
 
 patterns
- hasCentralPackageRepository? false
  hasComments? true
 
 wikipedia https://en.wikipedia.org/wiki/Nullsoft_Scriptable_Install_System
@@ -126,3 +125,5 @@ tiobe NSIS
 codeMirror nsis
 
 rosettaCode NSIS
+
+centralPackageRepositoryCount 0

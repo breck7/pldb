@@ -3,7 +3,6 @@ appeared 1995
 type pl
 
 patterns
- hasCentralPackageRepository? false
  hasConstructors? true
   component {
      // properties
@@ -38,3 +37,5 @@ fileType text
 tiobe CFML
 
 hopl 5234
+
+centralPackageRepositoryCount 0

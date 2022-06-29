@@ -3,7 +3,6 @@ appeared 1990
 type pl
 
 patterns
- hasCentralPackageRepository? false
  hasTypeInference? true
  hasLineComments? false
 
@@ -77,3 +76,4 @@ quineRelay Standard ML
 ubuntuPackage mlton
 
 lineCommentKeyword #
+centralPackageRepositoryCount 0

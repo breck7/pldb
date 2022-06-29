@@ -2,9 +2,6 @@ title AMBIT
 appeared 1964
 type pl
 
-patterns
- hasCentralPackageRepository? false
-
 wikipedia https://en.wikipedia.org/wiki/AMBIT
  related algol-60 snobol
  summary AMBIT is a historical programming language that was introduced by Carlos Christensen of Massachusetts Computer Associates in 1964 for symbolic computation.  The language was influenced by ALGOL 60 and is an early example of a pattern matching language for manipulation of strings (a more popular example from the same time is SNOBOL). The acronym AMBIT stands for "Algebraic Manipulation by Identity Translation", but has also claimed "Acronym May Be Ignored Totally". AMBIT had dialects for manipulation of lists (AMBIT-L) and graphs (AMBIT-G)  Both pioneered with data structure diagrams and visual programming as data and patterns were used to be represented by directed-graph diagrams. AMBIT/L was implemented for a PDP-10 computer and used to implement the interactive algebraic manipulation system IAM.
@@ -18,3 +15,5 @@ wikipedia https://en.wikipedia.org/wiki/AMBIT
 status historical
 
 hopl 194
+
+centralPackageRepositoryCount 0

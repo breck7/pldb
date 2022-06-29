@@ -2,9 +2,6 @@ title Miva
 appeared 1996
 type pl
 
-patterns
- hasCentralPackageRepository? false
-
 wikipedia https://en.wikipedia.org/wiki/MIVA_Script
  related c perl java xml dbase mysql
  summary Miva Script is a proprietary computer scripting language mainly used for internet applications such as e-commerce. As of 2015, it is developed, maintained and owned by Miva Merchant, Inc., based in San Diego, California. Many web hosting companies support Miva Script on their servers, but it is significantly less widespread than other popular web languages.
@@ -22,3 +19,5 @@ fileExtensions mv mvc mvt
 fileType text
 
 tiobe Miva
+
+centralPackageRepositoryCount 0

@@ -2,9 +2,6 @@ title Assembly language
 appeared 1960
 type assembly
 
-patterns
- hasCentralPackageRepository? false
-
 wikipedia https://en.wikipedia.org/wiki/Assembly_language
  example
   include \masm32\include\masm32rt.inc	; use the Masm32 library
@@ -61,3 +58,4 @@ stackOverflowSurvey
   medianSalary 55211
   fans 3578
   percentageUsing 0.06
+centralPackageRepositoryCount 0

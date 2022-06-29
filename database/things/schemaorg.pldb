@@ -2,9 +2,6 @@ title Schema.org
 appeared 2011
 type schema
 
-patterns
- hasCentralPackageRepository? false
-
 wikipedia https://en.wikipedia.org/wiki/Schema.org
  example
   <script type="application/ld+json">
@@ -34,3 +31,4 @@ wikipedia https://en.wikipedia.org/wiki/Schema.org
 website http://schema.org/
 status historical
 fileType text
+centralPackageRepositoryCount 0

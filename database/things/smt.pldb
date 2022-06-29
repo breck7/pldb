@@ -23,9 +23,6 @@ example
   ; ()
  (exit)
 
-patterns
- hasCentralPackageRepository? false
-
 description Common input and output languages for SMT solvers.
 
 githubLanguage SMT
@@ -64,3 +61,4 @@ website http://smtlib.cs.uiowa.edu/language.shtml
 standsFor Satisfiability Modulo Theories
 status active
 fileType text
+centralPackageRepositoryCount 0

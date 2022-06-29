@@ -7,7 +7,6 @@ patterns
  canWriteToDisk? false
  hasBooleans? true
   false
- hasCentralPackageRepository? false
  hasComments? false
  hasLineComments? false
  hasBlockComments? false
@@ -70,3 +69,4 @@ indeedJobs json developer
  2017 5872
 languageServerProtocolProject https://www.npmjs.com/package/vscode-json-languageserver
  writtenIn typescript
+centralPackageRepositoryCount 0

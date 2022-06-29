@@ -2,9 +2,6 @@ title OWL
 appeared 2004
 type xmlFormat
 
-patterns
- hasCentralPackageRepository? false
-
 wikipedia https://en.wikipedia.org/wiki/Web_Ontology_Language
  example
   <http://example.org/tea.owl> rdf:type owl:Ontology .
@@ -84,3 +81,5 @@ status active
 fileType text
 
 hopl 4934
+
+centralPackageRepositoryCount 0

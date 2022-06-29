@@ -26,9 +26,6 @@ example
    </phylogeny>
  </phyloxml>
 
-patterns
- hasCentralPackageRepository? false
-
 wikipedia https://en.wikipedia.org/wiki/PhyloXML
  example
   <phyloxml xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
@@ -65,3 +62,4 @@ wikipedia https://en.wikipedia.org/wiki/PhyloXML
 website http://www.phyloxml.org/
 status historical
 fileType text
+centralPackageRepositoryCount 0

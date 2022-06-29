@@ -2,9 +2,6 @@ title R++
 appeared 1990
 type pl
 
-patterns
- hasCentralPackageRepository? false
-
 wikipedia https://en.wikipedia.org/wiki/R%2B%2B
  summary R++ is a rule-based programming language based on C++. The United States patent describes R++ as follows:  The R++ extension permits rules to be defined as members of C++ classes. The programming system of the invention takes the classes with rules defined using R++ and generates C++ code from them in which the machinery required for the rules is implemented completely as C++ data members and functions of the classes involved in the rules. R++ was developed by Bell Labs in the 1990s, but due to the Bell System divestiture that split the legal rights to the work developed at the Laboratories between AT&T and Lucent, did not see immediate commercial development while the two companies disputed ownership.
  created 2006
@@ -15,3 +12,4 @@ wikipedia https://en.wikipedia.org/wiki/R%2B%2B
  appeared 1990
 
 status historical
+centralPackageRepositoryCount 0

@@ -2,9 +2,6 @@ title Service Modeling Language
 appeared 2009
 type pl
 
-patterns
- hasCentralPackageRepository? false
-
 wikipedia https://en.wikipedia.org/wiki/Service_Modeling_Language
  related xml xpath
  summary Service Modeling Language (SML) and Service Modeling Language Interchange Format (SML-IF) are a pair of XML-based specifications created by leading information technology companies that define a set of XML instance document extensions for expressing links between elements, a set of XML Schema extensions for constraining those links, and a way to associate Schematron rules with global element declarations, global complex type definitions, and/or model documents.  The SML specification defines model concepts, and the SML-IF specification describes a packaging format for exchanging SML-based models. SML and SML-IF were standardized in a W3C working group chartered to produce W3C Recommendations for the Service Modeling Language by refining the “Service Modeling Language” (SML) Member Submission, addressing implementation experience and feedback on the specifications. The submission was from an industry group consisting of representatives from BEA Systems, BMC, CA, Cisco, Dell, EMC, HP, IBM, Intel, Microsoft, and Sun Microsystems. They were published as W3C Recommendations on May 12, 2009. In the market and in applying by vendors, SML is seen as a successor/replacement for earlier developed standards like DCML and Microsoft's (in hindsight) proprietary System Definition Model or SDM. See  for a historically helpful relation between SDM and DCML, and  for the joint pressrelease announcing SML. In the Microsoft section of it the sequel role to SDM is mentioned.
@@ -16,3 +13,4 @@ wikipedia https://en.wikipedia.org/wiki/Service_Modeling_Language
  appeared 2009
 
 status historical
+centralPackageRepositoryCount 0

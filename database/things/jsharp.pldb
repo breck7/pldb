@@ -2,9 +2,6 @@ title J#
 appeared 2002
 type pl
 
-patterns
- hasCentralPackageRepository? false
-
 wikipedia https://en.wikipedia.org/wiki/J_Sharp
  related j java java-bytecode
  summary Visual J# (pronounced "jay-sharp") is an implementation of the J# programming language that was a transitional language for programmers of Java and Visual J++ languages, so they could use their existing knowledge and applications on .NET Framework. It was introduced in 2002 and discontinued in 2007, with support for the final release of the product continuing until October, 2017. J# worked with Java bytecode as well as source so it could be used to transition applications that used third-party libraries even if their original source code was unavailable. It was developed by the Hyderabad-based Microsoft India Development Center at HITEC City in India.
@@ -25,3 +22,4 @@ tiobe J#
 hopl 3718
 
 corporateDevelopers Microsoft
+centralPackageRepositoryCount 0

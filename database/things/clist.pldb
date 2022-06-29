@@ -2,9 +2,6 @@ title CLIST
 appeared 1990
 type pl
 
-patterns
- hasCentralPackageRepository? false
-
 wikipedia https://en.wikipedia.org/wiki/CLIST
  example
   1    /********************************************************************/
@@ -38,3 +35,5 @@ country US
 fileType text
 
 hopl 3423
+
+centralPackageRepositoryCount 0

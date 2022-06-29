@@ -2,9 +2,6 @@ title Unified Parallel C
 appeared 2003
 type pl
 
-patterns
- hasCentralPackageRepository? false
-
 wikipedia https://en.wikipedia.org/wiki/Unified_Parallel_C
  related c split-c cilk chapel x10
  summary Unified Parallel C (UPC) is an extension of the C programming language designed for high-performance computing on large-scale parallel machines, including those with a common global address space (SMP and NUMA) and those with distributed memory (e.g. clusters). The programmer is presented with a single shared, partitioned address space, where variables may be directly read and written by any processor, but each variable is physically associated with a single processor. UPC uses a single program, multiple data (SPMD) model of computation in which the amount of parallelism is fixed at program startup time, typically with a single thread of execution per processor. In order to express parallelism, UPC extends ISO C 99 with the following constructs:  An explicitly parallel execution model A shared address space Synchronization primitives and a memory consistency model Explicit communication primitives, e.g. upc_memput Memory management primitivesThe UPC language evolved from experiences with three other earlier languages that proposed parallel extensions to ISO C 99: AC, Split-C, and Parallel C preprocessor (PCP). UPC is not a superset of these three languages, but rather an attempt to distill the best characteristics of each. UPC combines the programmability advantages of the shared memory programming paradigm and the control over data layout and performance of the message passing programming paradigm.
@@ -30,3 +27,5 @@ status active
 fileType text
 
 hopl 6133
+
+centralPackageRepositoryCount 0

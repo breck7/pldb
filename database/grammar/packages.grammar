@@ -3,6 +3,10 @@ packageRepositoryNode
  crux packageRepository
  description URL to the package repository for this language.
  boolean multipleOk true
+centralPackageRepositoryCountNode
+ extends abstractCountNode
+ crux centralPackageRepositoryCount
+ description If you've searched for a CPM for this language and can't find one, set 0 as the count.
 packageInstallsNode
  description How many packages have been downloaded?
  extends abstractCountNode

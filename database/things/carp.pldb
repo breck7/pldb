@@ -5,7 +5,6 @@ creators Erik Svedäng
 
 patterns
  isLisp? true
- hasCentralPackageRepository? false
  hasGarbageCollection? false
  hasStaticTyping? true
 
@@ -28,3 +27,4 @@ status active
 fileType text
 isOpenSource true
 writtenIn haskell
+centralPackageRepositoryCount 0

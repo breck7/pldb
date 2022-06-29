@@ -2,9 +2,6 @@ title Alpine Abuild
 appeared 2006
 type pl
 
-patterns
- hasCentralPackageRepository? false
-
 githubLanguage Alpine Abuild
  trendingProjectsCount 0
 
@@ -89,3 +86,4 @@ linguistGrammarRepo https://github.com/atom/language-shellscript
 reference https://git.alpinelinux.org/cgit/abuild/tree/sample.APKBUILD
 status active
 fileType text
+centralPackageRepositoryCount 0

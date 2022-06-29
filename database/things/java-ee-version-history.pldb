@@ -2,9 +2,6 @@ title Java EE version history
 appeared 1998
 type pl
 
-patterns
- hasCentralPackageRepository? false
-
 wikipedia https://en.wikipedia.org/wiki/Java_EE_version_history
  example
   @Entity
@@ -55,3 +52,4 @@ wikipedia https://en.wikipedia.org/wiki/Java_EE_version_history
  appeared 1999
 
 status historical
+centralPackageRepositoryCount 0

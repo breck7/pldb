@@ -2,9 +2,6 @@ title Visual Objects
 appeared 1994
 type pl
 
-patterns
- hasCentralPackageRepository? false
-
 wikipedia https://en.wikipedia.org/wiki/Visual_Objects
  related clipper c xbase
  summary Visual Objects is an object-oriented computer programming language that is used to create computer programs that operate primarily under Windows. Although it can be used as a general-purpose programming tool, it is almost exclusively used to create database programs. The original Visual Objects project (code-named Aspen) was started as part of Nantucket's attempts to bring the Clipper language to Windows, and move from the procedural to the object-oriented style. It also converted Clipper from a p-code system to being a true native compiler and introduced more elements of the C language (such as typed variables), while including Windows extensions (such as COM, ODBC, and later ADO). With its symbol datatype, it offers the ability to form name-based linkages, which may be used to connect menu events to object methods or form direct linkages between server columns and controls. The Windows version was finally brought to market by Computer Associates.  Unfortunately it was released before it was market-ready and in almost head-to-head competition with the first release of Borland's Delphi product. The language is still in use however the last release by GrafX Software was in 2012 of version 2.8 sp4 (version number 2838). GrafX announced that after this no new versions would be released. The next incarnation of the Visual Objects language is Vulcan.NET, written by GrafX from scratch to be both Visual Objects compatible and be a true CLS compliant .NET language, taking full advantage of the .NET framework.
@@ -17,3 +14,4 @@ wikipedia https://en.wikipedia.org/wiki/Visual_Objects
 
 reference https://groups.google.com/forum/#!search/$20ca$20%22visual$20objects%22/comp.lang.basic.visual/nZWXZwqt3Lw/TIKnJWhYikgJ
 status historical
+centralPackageRepositoryCount 0

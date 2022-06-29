@@ -3,7 +3,6 @@ appeared 2001
 type pl
 
 patterns
- hasCentralPackageRepository? false
  hasComments? true
 
 wikipedia https://en.wikipedia.org/wiki/LiveCode
@@ -34,3 +33,5 @@ projectEuler LiveCode
   2022 1
 
 rosettaCode LiveCode
+
+centralPackageRepositoryCount 0

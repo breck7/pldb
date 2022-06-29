@@ -2,9 +2,6 @@ title CodeMirror
 appeared 2007
 type editor
 
-patterns
- hasCentralPackageRepository? false
-
 wikipedia https://en.wikipedia.org/wiki/CodeMirror
  related javascript vi-editor emacs-editor
  summary CodeMirror is a JavaScript component that provides a code editor in the browser. It has a rich programming API and a focus on extensibility.
@@ -20,3 +17,4 @@ status historical
 fileType na
 isOpenSource true
 related monaco-editor
+centralPackageRepositoryCount 0

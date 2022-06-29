@@ -2,9 +2,6 @@ title PL/M
 appeared 1973
 type pl
 
-patterns
- hasCentralPackageRepository? false
-
 wikipedia https://en.wikipedia.org/wiki/PL/M
  example
   FIND: PROCEDURE(PA,PB) BYTE;
@@ -42,3 +39,5 @@ country US
 fileType text
 
 hopl 591
+
+centralPackageRepositoryCount 0

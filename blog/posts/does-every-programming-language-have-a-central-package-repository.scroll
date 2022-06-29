@@ -154,12 +154,12 @@ ohayoCode
  html.h1 Does every programming language have a central package repository?
  web.get https://pldb.pub/pldb.csv
   filter.where appeared > 1950
-   columns.keep appeared patterns.hasCentralPackageRepository? title
+   columns.keep appeared packageRepository title
     columns.setType appeared year
-     columns.rename patterns.hasCentralPackageRepository? cpr
+     columns.rename packageRepository cpr
       group.by cpr
        tables.basic
-      filter.where cpr = true
+      filter.where cpr != 
        tables.basic
        group.by appeared
         vega.bar

@@ -3,7 +3,6 @@ appeared 2000
 type pl
 
 patterns
- hasCentralPackageRepository? false
  hasComments? true
 
 wikipedia https://en.wikipedia.org/wiki/ECL,_data-centric_programming_language_for_Big_Data
@@ -76,3 +75,5 @@ fileType text
 codeMirror ecl
 
 rosettaCode ECL
+
+centralPackageRepositoryCount 0

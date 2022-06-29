@@ -7,9 +7,6 @@ example
   new create(env: Env) =>
     env.out.print("Hello, world!")
 
-patterns
- hasCentralPackageRepository? false
-
 githubLanguage Pony
  fileExtensions pony
  trendingProjectsCount 0
@@ -43,3 +40,5 @@ subreddit ponylang
   2017 375
 
 rosettaCode Pony
+
+centralPackageRepositoryCount 0

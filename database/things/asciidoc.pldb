@@ -2,9 +2,6 @@ title AsciiDoc
 appeared 2002
 type textMarkup
 
-patterns
- hasCentralPackageRepository? false
-
 wikipedia https://en.wikipedia.org/wiki/AsciiDoc
  example
   = My Article
@@ -67,3 +64,4 @@ website http://asciidoc.org/
 status active
 fileType text
 isOpenSource true
+centralPackageRepositoryCount 0

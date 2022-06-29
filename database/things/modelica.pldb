@@ -3,7 +3,6 @@ appeared 1997
 type pl
 
 patterns
- hasCentralPackageRepository? false
  hasLineComments? true
   // A comment
  hasUnitsOfMeasure? true
@@ -60,3 +59,4 @@ antlr https://github.com/antlr/grammars-v4/tree/master/modelica
 
 reference https://modelica.readthedocs.io/en/latest/lexical.html
 lineCommentKeyword //
+centralPackageRepositoryCount 0

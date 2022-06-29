@@ -2,9 +2,6 @@ title CHIP
 appeared 1985
 type pl
 
-patterns
- hasCentralPackageRepository? false
-
 wikipedia https://en.wikipedia.org/wiki/CHIP_%28programming_language%29
  related prolog c
  summary CHIP (Constraint Handling in Prolog) is a constraint logic programming language developed by M. Dincbas and alias in 1985 at ECRC, initially using a Prolog language interface. CHIP V5 is the version developed and marketed by COSYTEC in Paris since 1993 with Prolog, using C, C++, or Prolog language interfaces. The commercially successful ILOG Solver is also, partly, an offshoot of ECRC version of CHIP.
@@ -18,3 +15,5 @@ wikipedia https://en.wikipedia.org/wiki/CHIP_%28programming_language%29
 status historical
 
 hopl 1131
+
+centralPackageRepositoryCount 0

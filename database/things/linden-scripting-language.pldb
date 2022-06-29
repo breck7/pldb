@@ -2,9 +2,6 @@ title Linden Scripting Language
 appeared 2003
 type pl
 
-patterns
- hasCentralPackageRepository? false
-
 wikipedia https://en.wikipedia.org/wiki/Linden_Scripting_Language
  related linux linden-scripting-language opengl mysql csharp
  summary Second Life is an online virtual world, developed and owned by the San Francisco-based  firm Linden Lab and launched on June 23, 2003. By 2013, Second Life had approximately one million regular users. In many ways, Second Life is similar to massively multiplayer online role-playing games; however, Linden Lab is emphatic that their creation is not a game: "There is no manufactured conflict, no set objective".The virtual world can be accessed freely via Linden Lab's own client programs or via alternative third-party viewers. Second Life users, also called residents, create virtual representations of themselves, called avatars, and are able to interact with places, objects and other avatars. They can explore the world (known as the grid), meet other residents, socialize, participate in both individual and group activities, build, create, shop, and trade virtual property and services with one another. The platform principally features 3D-based user-generated content. Second Life also has its own virtual currency, the Linden Dollar, which is exchangeable with real world currency.Second Life is intended for people aged 16 and over, with the exception of 13–15-year-old users, who are restricted to the Second Life region of a sponsoring institution (e.g., a school).Built into the software is a 3D modeling tool based on simple geometric shapes that allows residents to build virtual objects. There is also a procedural scripting language, Linden Scripting Language, which can be used to add interactivity to objects.  Sculpted prims (sculpties), mesh, textures for clothing or other objects, animations, and gestures can be created using external software and imported. The Second Life terms of service provide that users retain copyright for any content they create, and the server and client provide simple digital rights management (DRM) functions. However, Linden Lab changed their terms of service in August 2013 to be able to use user-generated content for any purpose. The new terms of service prevent users from using textures from third-party texture services, as some of them pointed out explicitly.
@@ -17,3 +14,4 @@ wikipedia https://en.wikipedia.org/wiki/Linden_Scripting_Language
 
 status historical
 isOpenSource true
+centralPackageRepositoryCount 0

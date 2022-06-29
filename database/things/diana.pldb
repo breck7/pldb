@@ -2,9 +2,6 @@ title Descriptive Intermediate Attributed Notation for Ada
 appeared 1980
 type ir
 
-patterns
- hasCentralPackageRepository? false
-
 wikipedia https://en.wikipedia.org/wiki/DIANA_(intermediate_language)
  related ada pl-sql idl-sl
  summary DIANA, the Descriptive Intermediate Attributed Notation for Ada, is an intermediate language used to represent the semantics of an Ada program. It was originally designed as an interface between the front end (syntactic analysis) and middle (semantic analysis) of the compiler on the one hand and the back end (code generation and optimization) on the other. It is also used as an internal representation by other language tools. DIANA is also used by PL/SQL, which is based on Ada. DIANA is an abstract data type; its concrete implementations are defined using the IDL specification language. DIANA descends from TCOL and AIDA, earlier representations of Ada programs. The Ada-0 subset of Ada at Karlsruhe (1980) was first using AIDA, but later AIDA got replaced by DIANA. The full Karlsruhe Ada compilation system used DIANA as well and the IDL External Representation for marshalling between the middle-end and the code generating back-end.
@@ -22,3 +19,5 @@ fileType text
 wordRank 8178
 
 hopl 949
+
+centralPackageRepositoryCount 0

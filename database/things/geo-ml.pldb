@@ -2,9 +2,6 @@ title Geography Markup Language
 appeared 2000
 type xmlFormat
 
-patterns
- hasCentralPackageRepository? false
-
 wikipedia https://en.wikipedia.org/wiki/Geography_Markup_Language
  example
   <PhotoCollection xmlns="http://www.myphotos.org" xmlns:gml="http://www.opengis.net/gml"
@@ -35,3 +32,4 @@ wikipedia https://en.wikipedia.org/wiki/Geography_Markup_Language
 
 status historical
 fileType text
+centralPackageRepositoryCount 0

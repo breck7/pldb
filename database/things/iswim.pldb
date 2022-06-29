@@ -6,7 +6,6 @@ example
  Print `Hello world'
 
 patterns
- hasCentralPackageRepository? false
  hasSemanticIndentation? true
 
 wikipedia https://en.wikipedia.org/wiki/ISWIM
@@ -25,3 +24,5 @@ country GB
 fileType text
 
 hopl 261
+
+centralPackageRepositoryCount 0

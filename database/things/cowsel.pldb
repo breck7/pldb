@@ -2,9 +2,6 @@ title COWSEL
 appeared 1964
 type pl
 
-patterns
- hasCentralPackageRepository? false
-
 wikipedia https://en.wikipedia.org/wiki/COWSEL
  example
   function member
@@ -27,3 +24,5 @@ country GB
 fileType text
 
 hopl 196
+
+centralPackageRepositoryCount 0

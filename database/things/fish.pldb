@@ -3,7 +3,6 @@ appeared 2005
 type pl
 
 patterns
- hasCentralPackageRepository? false
  hasComments? true
 
 wikipedia https://en.wikipedia.org/wiki/Friendly_interactive_shell
@@ -82,3 +81,5 @@ wordRank 1563
 isOpenSource true
 
 rosettaCode Fish
+
+centralPackageRepositoryCount 0

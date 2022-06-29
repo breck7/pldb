@@ -30,9 +30,6 @@ example
    alert "Hello Alert!"
    addWindowEvent "load" greet
 
-patterns
- hasCentralPackageRepository? false
-
 githubRepo https://github.com/faylang/fay
  firstCommit 2012
  stars 1166
@@ -51,3 +48,4 @@ twitter fayhaskell
 fileType text
 compilesTo javascript
 isOpenSource true
+centralPackageRepositoryCount 0

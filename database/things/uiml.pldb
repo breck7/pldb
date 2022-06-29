@@ -2,9 +2,6 @@ title UIML
 appeared 2005
 type xmlFormat
 
-patterns
- hasCentralPackageRepository? false
-
 wikipedia https://en.wikipedia.org/wiki/UIML
  related xml xaml java
  summary UIML (User Interface Markup Language) is an XML-based user interface markup language for defining user interfaces on computers. Basically UIML tries to reduce the work needed to develop user interfaces. It allows you to describe the user interface in declarative terms (i.e. as text) and abstract it. Abstracting means that you don't exactly specify how the user interface is going to look, but rather what elements are to be shown, and how should they behave. For example, to describe a message window, you could write:  In theory then you could use that description to generate user interfaces for different platforms, like PDAs. In practice, the different capabilities of those different platforms make a complete translation difficult. Other less ambitious domain-specific programming languages attempt only to describe the user interfaces (or other parts of the application or process) in a domain (for example Windows). See for example the Microsoft language XAML. These languages do a better job usually, but are less flexible. Today, UIML is being standardized by OASIS.A separate effort with the same goals as UIML is UsiXML.
@@ -17,3 +14,4 @@ wikipedia https://en.wikipedia.org/wiki/UIML
 
 aka UsiXML
 status historical
+centralPackageRepositoryCount 0

@@ -2,9 +2,6 @@ title Parrot BASIC
 appeared 2009
 type pl
 
-patterns
- hasCentralPackageRepository? false
-
 wikipedia https://en.wikipedia.org/wiki/Parrot_BASIC
  example
   .sub 'main' :main
@@ -29,3 +26,4 @@ wikipedia https://en.wikipedia.org/wiki/Parrot_BASIC
  appeared 2016
 
 status historical
+centralPackageRepositoryCount 0

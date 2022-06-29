@@ -2,9 +2,6 @@ title Plus programming language
 appeared 1976
 type pl
 
-patterns
- hasCentralPackageRepository? false
-
 wikipedia https://en.wikipedia.org/wiki/Plus_(programming_language)
  example
   %Title := "Hello world";
@@ -48,3 +45,5 @@ fileType text
 wordRank 844
 
 rosettaCode PLUS
+
+centralPackageRepositoryCount 0

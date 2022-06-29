@@ -2,9 +2,6 @@ title Assembly CLI
 appeared 2005
 type library
 
-patterns
- hasCentralPackageRepository? false
-
 wikipedia https://en.wikipedia.org/wiki/Assembly_(CLI)
  example
   .method private hidebysig static void  Main(string[] args) cil managed {
@@ -27,3 +24,4 @@ wikipedia https://en.wikipedia.org/wiki/Assembly_(CLI)
 aka cli
 status historical
 fileType text
+centralPackageRepositoryCount 0

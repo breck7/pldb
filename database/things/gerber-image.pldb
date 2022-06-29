@@ -2,9 +2,6 @@ title Gerber Image
 appeared 1980
 type application
 
-patterns
- hasCentralPackageRepository? false
-
 wikipedia https://en.wikipedia.org/wiki/Gerber_format
  example
   D11*
@@ -52,3 +49,4 @@ linguistGrammarRepo https://github.com/Alhadis/language-pcb
 
 status active
 fileType text
+centralPackageRepositoryCount 0

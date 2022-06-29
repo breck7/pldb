@@ -4,7 +4,6 @@ type metaLanguage
 
 patterns
  canWriteToDisk? false
- hasCentralPackageRepository? false
  hasLineComments? false
 
 wikipedia https://en.wikipedia.org/wiki/XML
@@ -54,3 +53,4 @@ languageServerProtocolProject https://github.com/microclimate-devops/xml-languag
  writtenIn java
 languageServerProtocolProject https://github.com/angelozerr/lsp4xml/tree/master/org.eclipse.lsp4xml
  writtenIn java
+centralPackageRepositoryCount 0

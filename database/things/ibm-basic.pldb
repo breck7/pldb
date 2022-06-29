@@ -2,9 +2,6 @@ title IBM BASIC
 appeared 1981
 type pl
 
-patterns
- hasCentralPackageRepository? false
-
 wikipedia https://en.wikipedia.org/wiki/IBM_BASIC
  related microsoft-basic basic gw-basic ascii qbasic quickbasic
  summary The IBM Personal Computer Basic, commonly shortened to IBM BASIC, is a programming language first released by IBM with the IBM Personal Computer (model 5150) in 1981. IBM released four different versions of the Microsoft BASIC interpreter, licensed from Microsoft for the PC and PCjr. They are known as Cassette BASIC, Disk BASIC, Advanced BASIC (BASICA), and Cartridge BASIC. Versions of Disk BASIC and Advanced BASIC were included with IBM PC DOS up to PC DOS 4. In addition to the features of an ANSI standard BASIC, the IBM versions offered support for the graphics and sound hardware of the IBM PC line. Source code could be typed in with a full screen editor, and very limited facilities were provided for rudimentary program debugging. IBM also released a version of the Microsoft BASIC compiler for the PC, concurrently with the release of PC DOS 1.10 in 1982.
@@ -16,3 +13,4 @@ wikipedia https://en.wikipedia.org/wiki/IBM_BASIC
  appeared 1981
 
 status historical
+centralPackageRepositoryCount 0

@@ -6,7 +6,6 @@ creators Ryan Dahl
 patterns
  canWriteToDisk? true
   require("fs").writeFileSync("foo.txt", "foo", "utf8")
- hasCentralPackageRepository? true
  hasImports? true
   const jtree = require("jtree")
  hasStreams? true

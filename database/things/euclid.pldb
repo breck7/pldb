@@ -2,9 +2,6 @@ title Euclid
 appeared 1970
 type pl
 
-patterns
- hasCentralPackageRepository? false
-
 wikipedia https://en.wikipedia.org/wiki/Euclid_(programming_language)
  related pascal mesa turing
  summary Euclid is an imperative programming language for writing verifiable programs. It was designed by Butler Lampson and associates at the Xerox PARC lab in the mid-1970s. The implementation was led by Ric Holt at the University of Toronto and James Cordy was the principal programmer for the first implementation of the compiler. It was originally designed for the Motorola 6809 microprocessor. It was considered innovative for the time; the compiler development team had a $2 million budget over 2 years and was commissioned by the Defense Advanced Research Projects Agency of the U.S. Department of Defense and the Canadian Department of National Defence. It was used for a few years at I. P. Sharp Associates, MITRE Corporation, SRI International and various other international institutes for research in systems programming and secure software systems. Euclid is descended from the Pascal programming language. Functions in Euclid are closed scopes, may not have side effects, and must explicitly declare imports. Euclid also disallows gotos, floating point numbers, global assignments, nested functions and aliases, and none of the actual parameters to a function can refer to the same thing. Euclid implements modules as types. Descendants of Euclid include the Mesa programming language, the Concurrent Euclid programming language and the Turing programming language.
@@ -20,3 +17,5 @@ country CA
 fileType text
 
 hopl 756
+
+centralPackageRepositoryCount 0

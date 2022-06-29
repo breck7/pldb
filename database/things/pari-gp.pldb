@@ -2,9 +2,6 @@ title PARI/GP
 appeared 1985
 type pl
 
-patterns
- hasCentralPackageRepository? false
-
 wikipedia https://en.wikipedia.org/wiki/PARI/GP
  example
   ? \p 212
@@ -69,3 +66,4 @@ quineRelay PARI/GP
 ubuntuPackage pari-gp
 
 jupyterKernel https://github.com/jdemeyer/pari_jupyter
+centralPackageRepositoryCount 0

@@ -9,9 +9,6 @@ example
  __underlined__
  --strike-through--
 
-patterns
- hasCentralPackageRepository? false
-
 wikipedia https://en.wikipedia.org/wiki/Txt2tags
  example
   = Level 1 Header =
@@ -30,3 +27,4 @@ website http://txt2tags.org/
 status historical
 fileType text
 isOpenSource true
+centralPackageRepositoryCount 0

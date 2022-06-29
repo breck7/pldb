@@ -6,7 +6,6 @@ example
  1 2 | 3 +
 
 patterns
- hasCentralPackageRepository? false
  hasGarbageCollection? false
  hasLazyEval? true
  hasLineComments? true
@@ -32,3 +31,4 @@ isOpenSource true
 webRepl http://hackerfoo.com/eval.html
 announcementMethod webpage
 lineCommentKeyword __
+centralPackageRepositoryCount 0

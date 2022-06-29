@@ -9,9 +9,6 @@ example
    optional string email = 3;
  }
 
-patterns
- hasCentralPackageRepository? false
-
 wikipedia https://en.wikipedia.org/wiki/Protocol_Buffers
  example
   // polyline.cpp
@@ -96,3 +93,4 @@ isOpenSource true
 antlr https://github.com/antlr/grammars-v4/tree/master/protobuf3
 
 corporateDevelopers Google
+centralPackageRepositoryCount 0

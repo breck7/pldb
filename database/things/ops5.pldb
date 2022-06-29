@@ -5,9 +5,6 @@ type pl
 example
  (compute 2 + (3 * 4) + 5)
 
-patterns
- hasCentralPackageRepository? false
-
 wikipedia https://en.wikipedia.org/wiki/OPS5
  summary OPS5 is a rule-based or production system computer language, notable as the first such language to be used in a successful expert system, the R1/XCON system used to configure VAX computers. The OPS (said to be short for "Official Production System") family was developed in the late 1970s by Charles Forgy while at Carnegie Mellon University. Allen Newell's research group in artificial intelligence had been working on production systems for some time, but Forgy's implementation, based on his Rete algorithm, was especially efficient, sufficiently so that it was possible to scale up to larger problems involving hundreds or thousands of rules. OPS5 uses a forward chaining inference engine; programs execute by scanning "working memory elements" (which are vaguely object-like, with classes and attributes) looking for matches with the rules in "production memory". Rules have actions that may modify or remove the matched element, create new ones, perform side effects such as output, and so forth. Execution continues until no more matches can be found. In this sense, OPS5 is an execution engine for a Petri net extended with inhibitor arcs. The OPS5 forward chaining process makes it extremely parallelizeable during the matching phase, and several automatic parallelizing compilers were created. OPS4 was an early version, while OPS83 came later. The first implementation of OPS5 was written in Lisp, and later rewritten in BLISS for speed. DEC OPS5 is an extended implementation of the OPS5 language definition, developed for use with the VMS, RISC ULTRIX, and DEC OSF/1 operating systems.
  pageId 475829
@@ -23,3 +20,5 @@ country US
 fileType text
 
 hopl 775
+
+centralPackageRepositoryCount 0

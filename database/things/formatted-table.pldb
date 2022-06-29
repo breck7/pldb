@@ -12,9 +12,6 @@ example
  17JAN1990     24.2-0.3     25.3-0.3     26.5-0.1     28.6 0.3
  24JAN1990     24.4-0.5     25.5-0.4     26.5-0.1     28.4 0.2
 
-patterns
- hasCentralPackageRepository? false
-
 description A simple plain text format for storing tabular data.
 
 githubLanguage Formatted
@@ -48,3 +45,4 @@ example
    20 gatgctagctaggcgatgct             409 20  0 55.00 60.668  7.01  7.53  0.00
 status active
 fileType text
+centralPackageRepositoryCount 0

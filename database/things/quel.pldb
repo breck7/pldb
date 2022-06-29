@@ -9,9 +9,6 @@ example
  (COMP = E.Salary / (E.Age - 18))
  where E.Name = "Jones"
 
-patterns
- hasCentralPackageRepository? false
-
 wikipedia https://en.wikipedia.org/wiki/QUEL_query_languages
  example
   retrieve (a=count(y.i by y.d where y.str = "ii*" or y.str = "foo"),b=max(count(y.i by y.d)))
@@ -26,3 +23,4 @@ wikipedia https://en.wikipedia.org/wiki/QUEL_query_languages
 
 status historical
 fileType text
+centralPackageRepositoryCount 0

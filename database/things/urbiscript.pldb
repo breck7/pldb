@@ -2,9 +2,6 @@ title Urbiscript
 appeared 2003
 type pl
 
-patterns
- hasCentralPackageRepository? false
-
 wikipedia https://en.wikipedia.org/wiki/Urbiscript
  example
   at (x + y == z)
@@ -20,3 +17,4 @@ wikipedia https://en.wikipedia.org/wiki/Urbiscript
 
 status historical
 isOpenSource true
+centralPackageRepositoryCount 0

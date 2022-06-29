@@ -2,9 +2,6 @@ title YAWL
 appeared 2006
 type pl
 
-patterns
- hasCentralPackageRepository? false
-
 wikipedia https://en.wikipedia.org/wiki/YAWL
  related xpath xquery
  summary YAWL (Yet Another Workflow Language) is a workflow language based on workflow patterns. The language is supported by a software system that includes an execution engine, a graphical editor and a worklist handler. The system is available as Open source software under the LGPL license. Production-level uses of the YAWL system include a deployment by first:utility and first:telecom in the UK to automate front-end service processes, and by the Australian film television and radio school to coordinate film shooting processes. The YAWL system has also been used for teaching in more than 20 universities.
@@ -30,3 +27,4 @@ standsFor Yet Another Workflow Language
 status active
 fileType text
 isOpenSource true
+centralPackageRepositoryCount 0

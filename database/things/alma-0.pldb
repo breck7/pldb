@@ -2,9 +2,6 @@ title Alma-0
 appeared 1997
 type pl
 
-patterns
- hasCentralPackageRepository? false
-
 wikipedia https://en.wikipedia.org/wiki/Alma-0
  related modula-2
  summary Alma-0 is a multi-paradigm computer programming language. This language is an augmented version of the imperative Modula-2 language with logic-programming features and convenient backtracking capability. It is small, strongly typed, and combines constraint programming, a limited number of features inspired by logic programming and supports imperative paradigms. The language advocates declarative programming. The designers claim that search-oriented solutions built with it are substantially simpler than their counterparts written in purely imperative or logic programming style. [1] Alma-0 provides natural, high-level constructs for the construction of search trees.
@@ -18,3 +15,4 @@ wikipedia https://en.wikipedia.org/wiki/Alma-0
 website http://www.cwi.nl/en/alma/
 status historical
 fileType text
+centralPackageRepositoryCount 0

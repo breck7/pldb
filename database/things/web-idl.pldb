@@ -2,9 +2,6 @@ title WebIDL
 appeared 2012
 type idl
 
-patterns
- hasCentralPackageRepository? false
-
 wikipedia https://en.wikipedia.org/wiki/Web_IDL
  related idl-sl ecmascript
  summary Web IDL is an interface description language (IDL) format for describing application programming interfaces (APIs) that are intended to be implemented in web browsers.
@@ -55,3 +52,4 @@ linguistGrammarRepo https://github.com/andik/IDL-Syntax
 
 status active
 fileType text
+centralPackageRepositoryCount 0

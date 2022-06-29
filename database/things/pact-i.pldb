@@ -2,9 +2,6 @@ title PACT I
 appeared 1955
 type pl
 
-patterns
- hasCentralPackageRepository? false
-
 wikipedia https://en.wikipedia.org/wiki/PACT_I
  related speedcoding
  summary PACT was a series of compilers for the IBM 701 and IBM 704 scientific computers. Their development was conducted jointly by IBM and a committee of customers starting in 1954. PACT I was developed for the 701, and PACT IA for the 704. The emphasis in that early generation of compilers was minimization of the memory footprint, because memory was a very expensive resource at the time. The word "compiler" was not in widespread use at the time, so most of the 1956 papers described it as an "(automatic) coding system", although the word compiler was also used in some papers.
@@ -18,3 +15,5 @@ wikipedia https://en.wikipedia.org/wiki/PACT_I
 status historical
 
 hopl 103
+
+centralPackageRepositoryCount 0

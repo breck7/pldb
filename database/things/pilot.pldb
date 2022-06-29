@@ -2,9 +2,6 @@ title PILOT
 appeared 1962
 type pl
 
-patterns
- hasCentralPackageRepository? false
-
 wikipedia https://en.wikipedia.org/wiki/PILOT
  example
   R:Call subroutine starting at label *INITIALIZE
@@ -34,3 +31,5 @@ tiobe PILOT
 hopl 341
 
 rosettaCode PILOT
+
+centralPackageRepositoryCount 0

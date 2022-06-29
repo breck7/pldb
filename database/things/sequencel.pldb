@@ -2,9 +2,6 @@ title SequenceL
 appeared 1989
 type pl
 
-patterns
- hasCentralPackageRepository? false
-
 wikipedia https://en.wikipedia.org/wiki/SequenceL
  example
   cmd:>prime(100...200)
@@ -23,3 +20,5 @@ fileType text
 isOpenSource false
 
 rosettaCode SequenceL
+
+centralPackageRepositoryCount 0

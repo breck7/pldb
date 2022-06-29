@@ -10,7 +10,6 @@ patterns
   collide_with(x::Spaceship, y::Spaceship) = ... # deal with spaceship hitting spaceship
  hasUnicodeIdentifiers? true
   δ = 0.00001
- hasCentralPackageRepository? true
  hasComments? true
   # This is a comment
  hasBlockComments? true

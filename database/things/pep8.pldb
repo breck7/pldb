@@ -19,9 +19,6 @@ example
   even_msg: .ASCII "The number is: Even\x00"
   .END
 
-patterns
- hasCentralPackageRepository? false
-
 githubLanguage Pep8
  fileExtensions pep
  trendingProjectsCount 0
@@ -71,3 +68,4 @@ reference http://computersystemsbook.com/4th-edition/pep8/
 status active
 fileType text
 isOpenSource true
+centralPackageRepositoryCount 0

@@ -5,9 +5,6 @@ type textDataFormat
 example
  (A:0.1,B:0.2,(C:0.3,D:0.4):0.5);
 
-patterns
- hasCentralPackageRepository? false
-
 wikipedia https://en.wikipedia.org/wiki/Newick_format
  example
   Tree → RootLeaf ";" | RootInternal ";" | Branch ";"
@@ -24,3 +21,4 @@ wikipedia https://en.wikipedia.org/wiki/Newick_format
 
 status active
 fileType text
+centralPackageRepositoryCount 0

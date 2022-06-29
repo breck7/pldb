@@ -20,9 +20,6 @@ example
       position s f' <0 0 10 0> t;
  } kern;
 
-patterns
- hasCentralPackageRepository? false
-
 description An OpenType feature file is a text file that contains the typographic layout feature specifications for an OpenType font in an easy-to-read format. It may also contain override values for certain fields in the font tables. It is read in during the creation or editing of an OpenType font.
 
 githubLanguage OpenType Feature File
@@ -38,3 +35,4 @@ linguistGrammarRepo https://github.com/Alhadis/language-fontforge
 reference https://en.wikipedia.org/wiki/OpenType
 status active
 fileType text
+centralPackageRepositoryCount 0

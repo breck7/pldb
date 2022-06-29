@@ -2,9 +2,6 @@ title Facelets
 appeared 2005
 type template
 
-patterns
- hasCentralPackageRepository? false
-
 wikipedia https://en.wikipedia.org/wiki/Facelets
  example
   <ui:composition
@@ -28,3 +25,4 @@ wikipedia https://en.wikipedia.org/wiki/Facelets
 
 status historical
 fileType text
+centralPackageRepositoryCount 0

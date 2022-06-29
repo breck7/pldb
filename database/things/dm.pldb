@@ -12,9 +12,6 @@ example
       cry()
          world << "[usr] cries \his heart out."
 
-patterns
- hasCentralPackageRepository? false
-
 description DM is a programming language for the creation of multi-user worlds. By `world' I mean a virtual multi-media environment where people assume personae through which they interact with one another and computer-controlled objects. This could take the form of a competitive game, a role-playing adventure, a discussion board, or something we haven't even imagined.
 
 githubLanguage DM
@@ -124,3 +121,5 @@ fileType text
 wordRank 7101
 
 rosettaCode DM
+
+centralPackageRepositoryCount 0

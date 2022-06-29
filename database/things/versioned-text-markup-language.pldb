@@ -9,10 +9,8 @@ example
  your<!--{/DEL}--> <!--{INS ATT=2}--> my <!--{/DEL}-->
  document.
 
-patterns
- hasCentralPackageRepository? false
-
 description VTML (Versioned Text Markup Language), a markup language for storing document version information. VTML can easily be implemented within a text editor, and provides a notation and semantics for tracking successive revisions to a document. The main purpose of VTML is to allow asynchronous collaboration in the creation and editing of text documents.
 website https://www.w3.org/Conferences/WWW4/Papers/190/
 aka VTML
 status historical
+centralPackageRepositoryCount 0

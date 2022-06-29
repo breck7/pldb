@@ -3,7 +3,6 @@ appeared 2010
 type stylesheetLanguage
 
 patterns
- hasCentralPackageRepository? false
  hasSemanticIndentation? true
 
 wikipedia https://en.wikipedia.org/wiki/Stylus_(stylesheet_language)
@@ -73,3 +72,5 @@ wordRank 6948
 isOpenSource true
 
 codeMirror stylus
+
+centralPackageRepositoryCount 0

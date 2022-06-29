@@ -2,9 +2,6 @@ title JOHNNIAC Open Shop System
 appeared 1966
 type pl
 
-patterns
- hasCentralPackageRepository? false
-
 wikipedia https://en.wikipedia.org/wiki/JOSS
  example
   Form 1: "  L(%.0f,%.0f)  ="
@@ -25,3 +22,5 @@ country US
 fileType text
 
 hopl 200
+
+centralPackageRepositoryCount 0

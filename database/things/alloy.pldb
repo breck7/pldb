@@ -42,9 +42,6 @@ example
  // Now check it for a scope of 5
  check oneLocation for 5
 
-patterns
- hasCentralPackageRepository? false
-
 wikipedia https://en.wikipedia.org/wiki/Alloy_(specification_language)
  related z-notation
  summary In computer science and software engineering, Alloy is a declarative specification language for expressing complex structural constraints and behavior in a software system. Alloy provides a simple structural modeling tool based on first-order logic. Alloy is targeted at the creation of micro-models that can then be automatically checked for correctness. Alloy specifications can be checked using the alloy analyzer. Although Alloy is designed with automatic analysis in mind, Alloy differs from many specification languages designed for model-checking in that it permits the definition of infinite models. The Alloy Analyzer is designed to perform finite scope checks even on infinite models. The Alloy language and analyzer are developed by a team led by Daniel Jackson at the Massachusetts Institute of Technology in the United States.
@@ -131,3 +128,4 @@ website http://alloytools.org/
 status active
 fileType text
 wordRank 9510
+centralPackageRepositoryCount 0

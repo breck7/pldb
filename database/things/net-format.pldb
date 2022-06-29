@@ -30,10 +30,10 @@ example
    gap 10101 8 chrU - 5563946 0 tN 0 qN 0 tR 0 qR 0 tTrf 0 qTrf 0
 
 patterns
- hasCentralPackageRepository? false
  hasSemanticIndentation? true
 
 description The net file format is used to describe the axtNet data that underlie the net alignment annotations in the Genome Browser. In 2016 it was revised so that line indentation level represents the parent/child relationship between records and is a necessary part of the net file format. Child records are indented one space from the parent, as shown in the example net file below.
 reference https://genome.ucsc.edu/goldenPath/help/net.html
 status active
 fileType text
+centralPackageRepositoryCount 0

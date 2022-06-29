@@ -10,12 +10,10 @@ example
  2 2 0 0 2  2  A A  2 2  0 0
  2 3 1 2 1  2  A A  2 2  A A
 
-patterns
- hasCentralPackageRepository? false
-
 description The "ped" file is a commonly used format for holding pedigree and genotype data. Files in this format usually end in ".ped". There are several variants of the format. Used by plink.
 website https://www.cog-genomics.org/plink2/formats#ped
 reference https://www.sciencedirect.com/science/article/pii/S0002929707613524
 status active
 fileExtensions ped
 fileType text
+centralPackageRepositoryCount 0

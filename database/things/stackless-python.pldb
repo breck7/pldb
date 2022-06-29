@@ -2,9 +2,6 @@ title Stackless Python
 appeared 1998
 type interpreter
 
-patterns
- hasCentralPackageRepository? false
-
 wikipedia https://en.wikipedia.org/wiki/Stackless_Python
  related c python linux erlang limbo go
  summary Stackless Python, or Stackless, is a Python programming language interpreter, so named because it avoids depending on the C call stack for its own stack. In practice, Stackless Python uses the C stack, but the stack is cleared between function calls . The most prominent feature of Stackless is microthreads, which avoid much of the overhead associated with usual operating system threads. In addition to Python features, Stackless also adds support for coroutines, communication channels and task serialization.
@@ -17,3 +14,4 @@ wikipedia https://en.wikipedia.org/wiki/Stackless_Python
 
 status historical
 fileType text
+centralPackageRepositoryCount 0

@@ -3,7 +3,6 @@ appeared 1997
 type schema
 
 patterns
- hasCentralPackageRepository? false
  hasTypeInference? true
  hasTriples? true
 
@@ -34,3 +33,4 @@ standsFor Resource Description Framework
 status active
 related json-ld
 fileType text
+centralPackageRepositoryCount 0

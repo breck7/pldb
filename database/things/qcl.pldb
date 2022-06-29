@@ -1,9 +1,8 @@
 title QCL
 type pl
 
-patterns
- hasCentralPackageRepository? false
-
 reference https://github.com/aviggiano/qcl
 
 hopl 8263
+
+centralPackageRepositoryCount 0

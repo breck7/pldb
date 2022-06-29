@@ -3,7 +3,6 @@ appeared 1986
 type pl
 
 patterns
- hasCentralPackageRepository? false
  hasComments? true
 
 wikipedia https://en.wikipedia.org/wiki/GAP_(programming_language)
@@ -80,3 +79,5 @@ projectEuler GAP
 hopl 2668
 
 rosettaCode GAP
+
+centralPackageRepositoryCount 0

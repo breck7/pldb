@@ -2,9 +2,6 @@ title GeoJSON
 appeared 2008
 type jsonFormat
 
-patterns
- hasCentralPackageRepository? false
-
 wikipedia https://en.wikipedia.org/wiki/GeoJSON
  example
   {
@@ -55,3 +52,4 @@ website http://geojson.org/
 reference https://tools.ietf.org/html/rfc7946
 status historical
 fileType text
+centralPackageRepositoryCount 0

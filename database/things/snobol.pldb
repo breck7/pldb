@@ -3,7 +3,6 @@ appeared 1962
 type pl
 
 patterns
- hasCentralPackageRepository? false
  hasLineComments? true
   * A comment
 
@@ -45,3 +44,4 @@ rosettaCode Snobol
 
 antlr https://github.com/antlr/grammars-v4/tree/master/snobol
 lineCommentKeyword *
+centralPackageRepositoryCount 0

@@ -27,11 +27,10 @@ example
               jp      loop        ;Repeat the loop
               end
 
-patterns
- hasCentralPackageRepository? false
-
 reference https://en.wikipedia.org/wiki/Zilog_Z80#Z80_assembly_language
 status historical
 fileType text
 
 codeMirror z80
+
+centralPackageRepositoryCount 0

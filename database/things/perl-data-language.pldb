@@ -2,9 +2,6 @@ title Perl Data Language
 appeared 1996
 type pl
 
-patterns
- hasCentralPackageRepository? false
-
 wikipedia https://en.wikipedia.org/wiki/Perl_Data_Language
  example
   perldl> $x = pdl [[1, 2], [3, 4]];
@@ -29,3 +26,4 @@ wikipedia https://en.wikipedia.org/wiki/Perl_Data_Language
  appeared 1996
 
 status historical
+centralPackageRepositoryCount 0

@@ -5,9 +5,6 @@ type pl
 example
  print "Hello, World!"
 
-patterns
- hasCentralPackageRepository? false
-
 githubLanguage Nit
  fileExtensions nit
  trendingProjectsCount 0
@@ -39,3 +36,5 @@ fileType text
 isOpenSource true
 
 rosettaCode Nit
+
+centralPackageRepositoryCount 0

@@ -11,9 +11,6 @@ example
   services.sshd.enable = true;
  }
 
-patterns
- hasCentralPackageRepository? false
-
 githubLanguage Nix
  fileExtensions nix
  trendingProjects
@@ -117,3 +114,4 @@ fileType text
 rosettaCode Nix
 
 packageCount 49610
+centralPackageRepositoryCount 0

@@ -3,9 +3,6 @@ appeared 1999
 type pl
 creators Leslie Lamport
 
-patterns
- hasCentralPackageRepository? false
-
 description TLA+ is a formal specification and verification language that helps engineers design, specify, reason about and verify complex, real-life algorithms and software or hardware systems. TLA+ has been successfully used by Intel, Compaq and Microsoft in the design of hardware systems, and has started seeing recent use in large software systems, at Microsoft, Oracle, and most famously at Amazon, where engineers use TLA+ to specify and verify many AWS services.
 
 wikipedia https://en.wikipedia.org/wiki/TLA+
@@ -286,3 +283,4 @@ reference https://lamport.azurewebsites.net/tla/tla.html
 status active
 fileType text
 isOpenSource true
+centralPackageRepositoryCount 0

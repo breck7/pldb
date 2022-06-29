@@ -4,7 +4,6 @@ type pl
 
 patterns
  hasPointers? true
- hasCentralPackageRepository? false
  hasComments? true
  hasOperatorOverloading? true
 
@@ -31,3 +30,5 @@ wikipedia https://en.wikipedia.org/wiki/FreeBASIC
 status historical
 
 rosettaCode FreeBASIC
+
+centralPackageRepositoryCount 0

@@ -2,9 +2,6 @@ title Compact Application Solution Language
 appeared 1997
 type pl
 
-patterns
- hasCentralPackageRepository? false
-
 wikipedia https://en.wikipedia.org/wiki/Compact_Application_Solution_Language
  related pascal visual-basic
  summary Compact Application Solution Language (CASL) is a programming language used to create computer programs for Palm OS, and Microsoft Windows desktops, laptops, and Pocket PCs with Windows Mobile.  It is published by WAGWARE Systems, Inc., and Brainyware, LLC. As a language, CASL is similar to Pascal or Visual Basic with object-oriented programming features.  The CASL software development kit (SDK) includes a graphical user interface (GUI) forms editor, an integrated development environment (IDE), and a compiler.  CASL programs can either be run as interpreted applications on target devices (using a small helper binary), or compiled directly to native code (CASLpro).  One of CASL's key features is that the same source can be compiled to Palm OS, Windows, or Pocket PC with Windows Mobile, without changing the code, termed "write once, run all". In July 2005, CASLsoft announced they were discontinuing support for CASL and releasing it as freeware, with version 4.2 as the last official release.  A month later, WAGWARE Systems, Inc. and Brainyware, LLC announced the purchase of CASL, updated the product and continue to release it as commercial software. CASL Version 4.3 was released on 3 July 2006. In January 2007, more libraries were released to support the Janam XP20/XP30 series of barcode devices.  The CASL libraries are also backward compatible with the Symbol SPT series devices.
@@ -17,3 +14,4 @@ wikipedia https://en.wikipedia.org/wiki/Compact_Application_Solution_Language
 
 reference https://groups.google.com/forum/#!search/compact-application-solution-language/alt.sys.pc-clone.gateway2000/OD4BEk8Axls/klFwJw8NXXgJ
 status historical
+centralPackageRepositoryCount 0

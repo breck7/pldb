@@ -2,9 +2,6 @@ title MacroML
 appeared 2001
 type pl
 
-patterns
- hasCentralPackageRepository? false
-
 wikipedia https://en.wikipedia.org/wiki/MacroML
  related scheme
  summary MacroML is an experimental programming language based on the ML programming language family that seeks to reconcile ML's static typing systems, and the types of macro systems more commonly found in dynamically typed languages like Scheme; this reconciliation is difficult as macro transformations are typically Turing-complete and so can break the type safety guarantees static typing is supposed to provide.
@@ -18,3 +15,4 @@ status historical
 firstAnnouncement https://www.cs.indiana.edu/~sabry/papers/macroml.pdf
 fileType text
 announcementMethod paper
+centralPackageRepositoryCount 0

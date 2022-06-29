@@ -2,9 +2,6 @@ title Common Workflow Language
 appeared 2014
 type pl
 
-patterns
- hasCentralPackageRepository? false
-
 description The Common Workflow Language (CWL) is a specification for describing analysis workflows and tools in a way that makes them portable and scalable across a variety of software and hardware environments, from workstations to cluster, cloud, and high performance computing (HPC) environments. CWL is designed to meet the needs of data-intensive science, such as Bioinformatics, Medical Imaging, Astronomy, Physics, and Chemistry.
 
 githubLanguage Common Workflow Language
@@ -71,3 +68,4 @@ reference https://doi.org/10.6084/m9.figshare.3115156.v2
 status active
 fileType text
 isOpenSource true
+centralPackageRepositoryCount 0

@@ -7,9 +7,6 @@ example
  (%$a + %$b)
  (0 + 1)
 
-patterns
- hasCentralPackageRepository? false
-
 description a slightly higher-level language superset of webassembly
 
 githubRepo https://github.com/tmcw/wah
@@ -26,3 +23,4 @@ status active
 fileType text
 compilesTo wasm
 isOpenSource true
+centralPackageRepositoryCount 0

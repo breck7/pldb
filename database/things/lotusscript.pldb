@@ -3,7 +3,6 @@ appeared 1996
 type pl
 
 patterns
- hasCentralPackageRepository? false
  hasComments? true
 
 wikipedia https://en.wikipedia.org/wiki/LotusScript
@@ -23,3 +22,5 @@ tiobe LotusScript
 hopl 3547
 
 rosettaCode LotusScript
+
+centralPackageRepositoryCount 0

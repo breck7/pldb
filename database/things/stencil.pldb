@@ -11,9 +11,6 @@ example
    {% endfor %}
  </ul>
 
-patterns
- hasCentralPackageRepository? false
-
 description Stencil is a simple and powerful template language for Swift. It provides a syntax similar to Django and Mustache.
 
 githubRepo https://github.com/stencilproject/Stencil
@@ -33,3 +30,4 @@ tryItOnline stencil
 
 fileType text
 isOpenSource true
+centralPackageRepositoryCount 0

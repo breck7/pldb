@@ -45,7 +45,6 @@ patterns
   // count|int|function parameter
   // sum|double|block local
   // i|int|for-loop statement
- hasCentralPackageRepository? false
  hasComments? true
   /* hello world */
   // hi
@@ -242,3 +241,4 @@ stackOverflowSurvey
   medianSalary 53184
   fans 9702
   percentageUsing 0.21
+centralPackageRepositoryCount 0

@@ -3,7 +3,6 @@ appeared 1977
 type pl
 
 patterns
- hasCentralPackageRepository? false
  hasComments? true
 
 wikipedia https://en.wikipedia.org/wiki/AWK
@@ -197,3 +196,5 @@ quineRelay Awk
 ubuntuPackage gawk
 
 rosettaCode AWK
+
+centralPackageRepositoryCount 0

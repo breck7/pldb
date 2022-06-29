@@ -16,9 +16,6 @@ example
  7E
  0B
 
-patterns
- hasCentralPackageRepository? false
-
 wikipedia https://en.wikipedia.org/wiki/WebAssembly
  example
   (module
@@ -89,3 +86,4 @@ isOpenSource true
 writtenIn cpp
 indeedJobs webassembly engineer
  2017 5
+centralPackageRepositoryCount 0

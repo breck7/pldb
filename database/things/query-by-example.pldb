@@ -2,9 +2,6 @@ title Query by Example
 appeared 1969
 type pl
 
-patterns
- hasCentralPackageRepository? false
-
 wikipedia https://en.wikipedia.org/wiki/Query_by_Example
  example
   SELECT * FROM Contacts WHERE City='Sampleton' AND Zipcode='12345';
@@ -20,3 +17,5 @@ reference https://semanticscholar.org/paper/f320e453ae65ddf0a3789f4383fa164481c7
 status historical
 
 hopl 3957
+
+centralPackageRepositoryCount 0

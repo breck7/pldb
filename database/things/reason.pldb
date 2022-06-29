@@ -7,7 +7,6 @@ compilesTo ocaml
 related rust elm purescript fable-lang clojurescript swift haxe
 
 patterns
- hasCentralPackageRepository? false
  hasLineComments? true
   // A comment
  hasDestructuring? true
@@ -554,3 +553,4 @@ languageServerProtocolProject https://github.com/jaredly/reason-language-server
  writtenIn ocaml
 
 lineCommentKeyword //
+centralPackageRepositoryCount 0

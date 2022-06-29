@@ -4,7 +4,6 @@ type pl
 creators Ralph Griswold
 
 patterns
- hasCentralPackageRepository? false
  hasLineComments? true
   # A comment
 
@@ -74,3 +73,4 @@ ubuntuPackage icont
 
 rosettaCode Icon
 lineCommentKeyword #
+centralPackageRepositoryCount 0

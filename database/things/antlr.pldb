@@ -3,7 +3,6 @@ appeared 1992
 type grammarLanguage
 
 patterns
- hasCentralPackageRepository? false
  hasLineComments? true
   // A comment
 
@@ -122,3 +121,4 @@ indeedJobs antlr engineer
  2017 7
 
 lineCommentKeyword //
+centralPackageRepositoryCount 0

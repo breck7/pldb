@@ -2,9 +2,6 @@ title X BitMap
 appeared 1989
 type application
 
-patterns
- hasCentralPackageRepository? false
-
 wikipedia https://en.wikipedia.org/wiki/X_BitMap
  example
   #define test_width 16
@@ -71,3 +68,4 @@ linguistGrammarRepo https://github.com/textmate/c.tmbundle
 
 status active
 fileType text
+centralPackageRepositoryCount 0

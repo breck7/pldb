@@ -13,10 +13,8 @@ example
  
  name set + [oe, fred)
 
-patterns
- hasCentralPackageRepository? false
-
 description SSL (Software Specification Language) is a new formalism for the definition of specifications for software systems. The language provides a linear format for the representation of the information normally displayed in a two-dimensional module inter-dependency diagram. In comparing SSL to FORTRAN or ALGOL, it is found to be largely complementary to the algorithmic (procedural) languages. SSL is capable of representing explicitly module interconnections and global data flow, information which is deeply imbedded in the algorithmic languages. On the other hand, SSL is not designed to depict the control flow within modules. The SSL level of software design explicitly depicts intermodule data flow as a functional specification.
 reference https://ntrs.nasa.gov/archive/nasa/casi.ntrs.nasa.gov/19760014843.pdf
 status historical
 fileType text
+centralPackageRepositoryCount 0

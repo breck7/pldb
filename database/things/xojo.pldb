@@ -3,7 +3,6 @@ appeared 1996
 type pl
 
 patterns
- hasCentralPackageRepository? false
  hasComments? true
 
 wikipedia https://en.wikipedia.org/wiki/Xojo
@@ -54,3 +53,5 @@ isOpenSource false
 tiobe Xojo
 
 rosettaCode Xojo
+
+centralPackageRepositoryCount 0

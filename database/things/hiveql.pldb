@@ -9,9 +9,6 @@ example
  7 GROUP BY word
  8 ORDER BY word;
 
-patterns
- hasCentralPackageRepository? false
-
 description SQL-like query language interface called the Hive query language. While based on SQL, HiveQL does not strictly follow the full SQL-92 standard. Internally, a compiler translates HiveQL statements into a directed acyclic graph of MapReduce, Tez, or Spark jobs, which are submitted to Hadoop for execution.
 
 githubLanguage HiveQL
@@ -53,3 +50,4 @@ reference https://en.wikipedia.org/wiki/Apache_Hive#HiveQL
 status active
 fileType text
 jupyterKernel https://github.com/EDS-APHP/HiveQLKernel
+centralPackageRepositoryCount 0

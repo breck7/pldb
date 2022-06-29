@@ -17,9 +17,6 @@ example
    (nets 3)
  ))
 
-patterns
- hasCentralPackageRepository? false
-
 description KiCad writes all files in human readable ASCII. This makes manipulation by hand and scripting very easy.
 
 wikipedia https://en.wikipedia.org/wiki/KiCad
@@ -158,3 +155,4 @@ status active
 fileExtensions sch lib brd kicad_pcb kicad_wks kicad_mod
 fileType text
 isOpenSource true
+centralPackageRepositoryCount 0

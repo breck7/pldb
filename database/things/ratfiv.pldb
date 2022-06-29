@@ -2,9 +2,6 @@ title Ratfiv
 appeared 1980
 type pl
 
-patterns
- hasCentralPackageRepository? false
-
 wikipedia https://en.wikipedia.org/wiki/Ratfiv
  related fortran c ratfor
  summary Ratfiv is an enhanced version of the Ratfor programming language, a preprocessor for Fortran designed to give it C-like capabilities. Fortran was widely used for scientific programming but had very basic control-flow primitives ("do" and "goto") and no "macro" facility which limited its expressiveness. The name of the language is a pun (Ratfor (RATional FORtran) -> "Rat Four" -> "Rat Five" -> RatFiv). Ratfiv was developed by Bill Wood at the Institute for Cancer Research, Philadelphia, PA in the early 1980s and released on several DECUS (Digital Equipment Users Group) SIG (Special Interest Group) tapes.  It is based on the original Ratfor by B. Kernighan and P. J. Plauger, with rewrites and enhancements by David Hanson and friends (U. of Arizona), Joe Sventek and Debbie Scherrer (Lawrence Berkeley National Laboratory). Ratfiv V2.1 was distributed on the DECUS RSX82a SIG tape.
@@ -17,3 +14,4 @@ wikipedia https://en.wikipedia.org/wiki/Ratfiv
 
 status historical
 fileType text
+centralPackageRepositoryCount 0

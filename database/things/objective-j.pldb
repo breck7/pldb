@@ -2,9 +2,6 @@ title Objective-J
 appeared 2008
 type pl
 
-patterns
- hasCentralPackageRepository? false
-
 wikipedia https://en.wikipedia.org/wiki/Objective-J
  example
   @implementation Address : CPObject
@@ -111,3 +108,4 @@ website http://www.cappuccino-project.org/
 status active
 fileType text
 isOpenSource true
+centralPackageRepositoryCount 0

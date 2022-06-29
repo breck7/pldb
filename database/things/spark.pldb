@@ -2,9 +2,6 @@ title SPARK
 appeared 1988
 type pl
 
-patterns
- hasCentralPackageRepository? true
-
 wikipedia https://en.wikipedia.org/wiki/SPARK_(programming_language)
  example
   procedure Increment (X : in out Counter_Type)

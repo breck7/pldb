@@ -4,7 +4,6 @@ type pl
 creators Mike Cowlishaw
 
 patterns
- hasCentralPackageRepository? false
  hasComments? true
   * => 1000000000 */
  hasLineComments? false
@@ -115,3 +114,4 @@ ubuntuPackage regina-rexx
 rosettaCode REXX
 
 corporateDevelopers IBM
+centralPackageRepositoryCount 0

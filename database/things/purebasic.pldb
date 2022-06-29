@@ -3,7 +3,6 @@ appeared 1998
 type pl
 
 patterns
- hasCentralPackageRepository? false
  hasComments? true
 
 wikipedia https://en.wikipedia.org/wiki/PureBasic
@@ -184,3 +183,5 @@ status active
 fileType text
 
 rosettaCode PureBasic
+
+centralPackageRepositoryCount 0

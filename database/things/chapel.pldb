@@ -3,7 +3,6 @@ appeared 2004
 type pl
 
 patterns
- hasCentralPackageRepository? false
  hasComments? true
 
 wikipedia https://en.wikipedia.org/wiki/Chapel_(programming_language)
@@ -67,3 +66,4 @@ rosettaCode Chapel
 corporateDevelopers Cray
 writtenIn chapel
 keywords _ align atomic begin break by class cobegin coforall config const continue delete dmapped do domain else enum export extern for forall if in index inline inout iter label let local module new nil on otherwise out param proc record reduce ref return scan select serial single sparse subdomain sync then type union use var when where while yield zip
+centralPackageRepositoryCount 0

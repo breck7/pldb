@@ -4,7 +4,6 @@ type pl
 
 patterns
  hasPointers? true
- hasCentralPackageRepository? false
 
 githubLanguage BlitzMax
  fileExtensions bmx
@@ -58,3 +57,5 @@ fileType text
 isOpenSource true
 
 rosettaCode BlitzMax
+
+centralPackageRepositoryCount 0

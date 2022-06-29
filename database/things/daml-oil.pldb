@@ -2,9 +2,6 @@ title DAML+OIL
 appeared 2001
 type pl
 
-patterns
- hasCentralPackageRepository? false
-
 wikipedia https://en.wikipedia.org/wiki/DAML+OIL
  related owl
  summary DAML+OIL is a successor language to DAML and OIL that combines features of both. In turn, it was superseded by Web Ontology Language (OWL). DAML stands for DARPA Agent Markup Language. OIL stands for Ontology Inference Layer or Ontology Interchange Language. The DAML program ended in early 2006.
@@ -16,3 +13,5 @@ wikipedia https://en.wikipedia.org/wiki/DAML+OIL
 status historical
 
 hopl 7646
+
+centralPackageRepositoryCount 0

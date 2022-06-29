@@ -2,9 +2,6 @@ title FoxPRO
 appeared 1992
 type pl
 
-patterns
- hasCentralPackageRepository? false
-
 wikipedia https://en.wikipedia.org/wiki/FoxPro
  related visual-foxpro dbase linux freebsd
  summary FoxPro was a text-based procedurally oriented programming language and database management system (DBMS), and it is also an object-oriented programming language, originally published by Fox Software and later by Microsoft, for MS-DOS, Windows, Macintosh, and UNIX. The final published release of FoxPro was 2.6.  Development continued under the Visual FoxPro label, which in turn was discontinued in 2007. FoxPro was derived from FoxBase (Fox Software, Perrysburg, Ohio), which was in turn derived from dBase III (Ashton-Tate) and dBase II.  dBase II was the first commercial version of a database program written by Wayne Ratliff, called Vulcan, running on CP/M. FoxPro is both a DBMS and a relational database management system (RDBMS), since it extensively supports multiple relationships between multiple DBF files (tables).  However it lacks transactional processing. After they acquired Fox Software in its entirety in 1992, FoxPro was sold and supported by Microsoft.  At that time there was an active worldwide community of FoxPro users and programmers. FoxPro 2.6 for UNIX (FPU26) has even been successfully installed on Linux and FreeBSD using the Intel Binary Compatibility Standard (ibcs2) support library.
@@ -20,3 +17,5 @@ country US
 fileType text
 
 hopl 2056
+
+centralPackageRepositoryCount 0

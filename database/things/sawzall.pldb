@@ -2,9 +2,6 @@ title Sawzall programming language
 appeared 2003
 type pl
 
-patterns
- hasCentralPackageRepository? false
-
 wikipedia https://en.wikipedia.org/wiki/Sawzall_(programming_language)
  example
   count: table sum of int;
@@ -25,3 +22,4 @@ wikipedia https://en.wikipedia.org/wiki/Sawzall_(programming_language)
 
 status historical
 fileType text
+centralPackageRepositoryCount 0

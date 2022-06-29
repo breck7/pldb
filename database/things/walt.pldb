@@ -11,9 +11,6 @@ example
   return fibonacci(n - 1) + fibonacci(n - 2);
  }
 
-patterns
- hasCentralPackageRepository? false
-
 description Walt is a JavaScript-like syntax for WebAssembly text format
 
 githubRepo https://github.com/ballercat/walt
@@ -32,3 +29,4 @@ fileType text
 compilesTo wasm
 wordRank 8707
 isOpenSource true
+centralPackageRepositoryCount 0

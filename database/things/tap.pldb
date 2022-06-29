@@ -2,9 +2,6 @@ title Test Anything Protocol
 appeared 1988
 type protocol
 
-patterns
- hasCentralPackageRepository? false
-
 wikipedia https://en.wikipedia.org/wiki/Test_Anything_Protocol
  example
   1..4
@@ -46,3 +43,5 @@ isOpenSource true
 subreddit testanythingprotocol
  memberCount
   2017 37
+
+centralPackageRepositoryCount 0

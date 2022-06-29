@@ -2,9 +2,6 @@ title PL360
 appeared 1967
 type pl
 
-patterns
- hasCentralPackageRepository? false
-
 wikipedia https://en.wikipedia.org/wiki/PL360
  example
   BEGIN INTEGER BUCKET;
@@ -31,3 +28,5 @@ country US
 fileType text
 
 hopl 342
+
+centralPackageRepositoryCount 0

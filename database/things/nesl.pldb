@@ -3,7 +3,6 @@ appeared 1993
 type pl
 
 patterns
- hasCentralPackageRepository? false
  hasComments? true
 
 wikipedia https://en.wikipedia.org/wiki/NESL
@@ -23,3 +22,5 @@ fileType text
 hopl 1740
 
 rosettaCode NESL
+
+centralPackageRepositoryCount 0

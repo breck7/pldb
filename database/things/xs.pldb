@@ -2,9 +2,6 @@ title XS
 appeared 2002
 type pl
 
-patterns
- hasCentralPackageRepository? false
-
 wikipedia https://en.wikipedia.org/wiki/XS_(Perl)
  related perl c pod
  summary XS is a Perl foreign function interface through which a program can call a C or C++ subroutine. XS or xsub is an abbreviation of "eXternal Subroutine", where external refers to programming languages external to Perl. XS also refers to a glue language for specifying calling interfaces supporting such interfaces (see below).
@@ -100,3 +97,5 @@ status active
 fileType text
 
 rosettaCode XS
+
+centralPackageRepositoryCount 0

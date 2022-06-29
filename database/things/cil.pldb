@@ -14,9 +14,6 @@ example
      ret
  }
 
-patterns
- hasCentralPackageRepository? false
-
 wikipedia https://en.wikipedia.org/wiki/Common_Intermediate_Language
  example
   .method assembly static void modopt([mscorlib]System.Runtime.CompilerServices.CallConvCdecl) 
@@ -78,3 +75,4 @@ fileType text
 tiobe CIL
 
 corporateDevelopers Microsoft
+centralPackageRepositoryCount 0

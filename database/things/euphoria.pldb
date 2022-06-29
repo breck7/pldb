@@ -3,7 +3,6 @@ appeared 1993
 type pl
 
 patterns
- hasCentralPackageRepository? false
  hasComments? true
 
 wikipedia https://en.wikipedia.org/wiki/Euphoria_(programming_language)
@@ -51,3 +50,5 @@ projectEuler Euphoria
 hopl 2020
 
 rosettaCode Euphoria
+
+centralPackageRepositoryCount 0

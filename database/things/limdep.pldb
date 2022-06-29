@@ -2,9 +2,6 @@ title LIMDEP
 appeared 1980
 type pl
 
-patterns
- hasCentralPackageRepository? false
-
 wikipedia https://en.wikipedia.org/wiki/LIMDEP
  summary LIMDEP is an econometric and statistical software package with a variety of estimation tools. In addition to the core econometric tools for analysis of cross sections and time series, LIMDEP supports methods for panel data analysis, frontier and efficiency estimation and discrete choice modeling.  The package also provides a programming language to allow the user to specify, estimate and analyze models that are not contained in the built in menus of model forms.
  backlinksCount 103
@@ -16,3 +13,5 @@ reference http://www.limdep.com/features/capabilities/programming/programming_wi
 isOpenSource false
 
 hopl 2167
+
+centralPackageRepositoryCount 0

@@ -2,9 +2,6 @@ title Almquist shell
 appeared 1989
 type pl
 
-patterns
- hasCentralPackageRepository? false
-
 wikipedia https://en.wikipedia.org/wiki/Almquist_shell
  related c bourne-shell bash freebsd korn-shell
  summary Almquist shell (also known as A Shell, ash and sh) is a lightweight Unix shell originally written by Kenneth Almquist in the late 1980s. Initially a clone of the System V.4 variant of the Bourne shell, it replaced the original Bourne shell in the BSD versions of Unix released in the early 1990s.
@@ -16,3 +13,4 @@ wikipedia https://en.wikipedia.org/wiki/Almquist_shell
  appeared 1989
 
 status historical
+centralPackageRepositoryCount 0

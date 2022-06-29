@@ -2,9 +2,6 @@ title ObjectPAL
 appeared 1993
 type pl
 
-patterns
- hasCentralPackageRepository? false
-
 wikipedia https://en.wikipedia.org/wiki/ObjectPAL
  related smalltalk visual-basic
  summary ObjectPAL is short for Object-Oriented Paradox Application Language, which is the programming language used by the Borland Paradox database application (now owned by Corel).  Paradox, now in its 11th version, is a constituent of Corel's Word Perfect X3 office suite, for 32-bit Microsoft Windows.  The language is tightly-bound to the application's forms, and provides a very rapid and robust development environment for creating database applications for Windows.  ObjectPAL is not a full free-standing object-oriented language. It belongs to the family of languages inspired by Hypercard, with influences from PAL (wherever functionality could be kept the same), Smalltalk, and Garnet (a UI language created by Brad Myers).  While its objects do encapsulate source code, there is no support for polymorphism, and only a very limited inheritance concept, which is wedded to objects on a form which can be controlled by code placed on a higher object in a form's object hierarchy.  However, for what it is, ObjectPAL provides a wideranging and versatile language for creating Paradox applications.  The syntax and structure of the language resembles Visual Basic, but knowing Visual Basic would only help someone new to ObjectPAL in the sense that any other programming skill would be transferable to ObjectPAL.  ObjectPAL was the successor to PAL, which was the Paradox for DOS programming language.  With the advent of Paradox for Windows 1.0 in 1993, which was then owned by Borland Corporation, ObjectPAL was born. Version 1.0 was quickly succeeded by version 4.5 that same year. It can be used as such as a web server scripting language when combined with the Corel Web Server Control OCX, which implements a server API similar to the  CGI, and its standalone console, the Corel Web Server.
@@ -17,3 +14,5 @@ wikipedia https://en.wikipedia.org/wiki/ObjectPAL
 status historical
 
 hopl 2297
+
+centralPackageRepositoryCount 0

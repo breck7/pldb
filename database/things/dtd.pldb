@@ -2,9 +2,6 @@ title document type definition
 appeared 1996
 type grammarLanguage
 
-patterns
- hasCentralPackageRepository? false
-
 wikipedia https://en.wikipedia.org/wiki/Document_type_definition
  example
   <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
@@ -35,3 +32,4 @@ wikipedia https://en.wikipedia.org/wiki/Document_type_definition
 standsFor document type definition
 status historical
 fileType text
+centralPackageRepositoryCount 0

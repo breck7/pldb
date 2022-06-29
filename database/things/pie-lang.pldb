@@ -2,9 +2,6 @@ title pie-lang
 appeared 2018
 type pl
 
-patterns
- hasCentralPackageRepository? false
-
 description Pie: A Little Language with Dependent Types. Pie is a Racket language, requiring Racket version 6.5 or newer.
 
 githubRepo https://github.com/the-little-typer/pie
@@ -20,3 +17,4 @@ githubRepo https://github.com/the-little-typer/pie
 website http://thelittletyper.com/
 status active
 isOpenSource true
+centralPackageRepositoryCount 0

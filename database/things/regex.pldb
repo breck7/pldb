@@ -2,9 +2,6 @@ title Regular Expressions
 appeared 1951
 type queryLanguage
 
-patterns
- hasCentralPackageRepository? false
-
 wikipedia https://en.wikipedia.org/wiki/Regular_expression
  example
   Hello World
@@ -34,3 +31,4 @@ linguistGrammarRepo https://github.com/Alhadis/language-regexp
 
 status active
 fileType text
+centralPackageRepositoryCount 0

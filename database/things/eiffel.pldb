@@ -5,7 +5,6 @@ creators Bertrand Meyer
 
 patterns
  hasPointers? true
- hasCentralPackageRepository? false
  hasComments? true
  hasMultipleInheritance? true
  hasOperatorOverloading? true
@@ -116,3 +115,4 @@ codeMirror eiffel
 rosettaCode Eiffel
 reference https://www.eiffel.org/doc/eiffel/Eiffel_programming_language_syntax
 lineCommentKeyword --
+centralPackageRepositoryCount 0

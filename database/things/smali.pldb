@@ -38,9 +38,6 @@ example
   goto :goto_0
  .end method
 
-patterns
- hasCentralPackageRepository? false
-
 githubLanguage Smali
  fileExtensions smali
  trendingProjects
@@ -191,3 +188,4 @@ linguistGrammarRepo https://github.com/ShaneWilton/sublime-smali
 status active
 fileType text
 isOpenSource true
+centralPackageRepositoryCount 0

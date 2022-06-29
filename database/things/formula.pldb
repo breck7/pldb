@@ -6,9 +6,6 @@ example
  FIELD NewDate:=@Today
  FIELD OldDate:=@DeleteField;
 
-patterns
- hasCentralPackageRepository? false
-
 description Formula language is a simple, easy-to-use programming language that can be found in many Lotus products -- such as Lotus 1-2-3 and Lotus Notes. Formula language has been integrated into Lotus Notes since its inception in 1989 and has included numerous enhancements over the years.
 
 wikipedia https://en.wikipedia.org/wiki/Formula_language
@@ -26,3 +23,4 @@ reference https://searchdomino.techtarget.com/tutorial/What-is-Lotus-Formula-lan
 status historical
 fileType text
 wordRank 3630
+centralPackageRepositoryCount 0

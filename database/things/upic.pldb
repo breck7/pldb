@@ -2,9 +2,6 @@ title UPIC
 appeared 2018
 type pl
 
-patterns
- hasCentralPackageRepository? false
-
 wikipedia https://en.wikipedia.org/wiki/UPIC
  related puredata supercollider csound
  summary UPIC (Unité Polyagogique Informatique CEMAMu) is a computerised musical composition tool, devised by the composer Iannis Xenakis. It was developed at the Centre d'Etudes de Mathématique et Automatique Musicales (CEMAMu) in Paris, and was completed in 1977. Xenakis used it on his subsequent piece Mycènes Alpha (1978), and it has been used by composers such as Jean-Claude Risset (on Saxatile (1992)), François-Bernard Mâche (Hypérion (1981), Nocturne (1981), Tithon (1989), Moires (1994), Canopée (2003)), Takehito Shimazu (Illusions in Desolate Fields (1994)),  Mari King, and Curtis Roads. Aphex Twin talked about it in an interview Physically, the UPIC is a digitising tablet linked to a computer, which has a vector display. Its functionality is similar to that of the later Fairlight CMI, in that the user draws waveforms and volume envelopes on the tablet, which are rendered by the computer. Once the waveforms have been stored, the user can compose with them by drawing "compositions" on the tablet, with the X-axis representing time, and the Y-axis representing pitch. The compositions can be stretched in duration from a few seconds to an hour. They can also be transposed, reversed, inverted, and subject to a number of algorithmic transformations. The system allows for real time performance by moving the stylus across the tablet. The UPIC system has subsequently been expanded to allow for digitally sampled waveforms as source material, rather than purely synthesised tones. In 2005, Mode Records of New York released a 2-CD compilation of works composed with the UPIC, entitled Xenakis, UPIC, Continuum, which provides an overview of the machine's sonic possibilities. There were a couple of attempts to reproduce the UPIC system using commodity hardware, for instance Iannix, HighC, UPISketch. IanniX, which has been sponsored by the French Ministry of Culture, is a graphical open-source sequencer which syncs via Open Sound Control events and curves to a real-time environment (like Pure Data, SuperCollider, Csound, MaxMSP and openFrameworks among others). For its part, HighC is currently used as a pedagogical tool in classes ranging from early teens to Master classes in composition, while some contemporary composers, such as George Hatzimichelakis have made it part of their toolset. UPISketch is a pedagogical tool inspired by the UPIC. The first version, released in 2018, runs on OSX and iOS.
@@ -17,3 +14,5 @@ wikipedia https://en.wikipedia.org/wiki/UPIC
 status active
 
 hopl 6473
+
+centralPackageRepositoryCount 0

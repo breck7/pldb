@@ -2,9 +2,6 @@ title UnrealScript
 appeared 1998
 type pl
 
-patterns
- hasCentralPackageRepository? false
-
 wikipedia https://en.wikipedia.org/wiki/UnrealScript
  related linux asmjs javascript webgl android ios java
  summary The Unreal Engine is a game engine developed by Epic Games, first showcased in the 1998 first-person shooter game Unreal. Although primarily developed for first-person shooters, it has been successfully used in a variety of other genres, including stealth, fighting games, MMORPGs, and other RPGs. With its code written in C++, the Unreal Engine features a high degree of portability and is a tool used by many game developers today, with it being source-available. The most recent version is Unreal Engine 4, which was released to the public in 2014.
@@ -40,3 +37,4 @@ linguistGrammarRepo https://github.com/textmate/java.tmbundle
 
 status active
 fileType text
+centralPackageRepositoryCount 0

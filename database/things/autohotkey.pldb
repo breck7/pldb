@@ -3,7 +3,6 @@ appeared 2003
 type pl
 
 patterns
- hasCentralPackageRepository? false
  hasComments? true
  hasCaseInsensitiveIdentifiers? true
 
@@ -66,3 +65,5 @@ projectEuler AutoHotkey
   2022 28
 
 rosettaCode AutoHotkey
+
+centralPackageRepositoryCount 0
