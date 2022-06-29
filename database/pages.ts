@@ -87,9 +87,6 @@ pipeTable
   toScroll() {
     const { typeName, title } = this.file
 
-    const prevFile = this.file.getPrevious()
-    const nextFile = this.file.getNext()
-
     if (title.includes("%20")) throw new Error("bad space in title: " + title)
 
     return `title ${title}
@@ -113,16 +110,18 @@ ${this.trendingRepos}
 
 ${this.hackerNewsTable}
 
-html
- <script>
-  Mousetrap.bind("left", () => {window.location = "${
-    prevFile.primaryKey
-  }.html"})
-  Mousetrap.bind("right", () => {window.location = "${
-    nextFile.primaryKey
-  }.html"})
- </script>
+${this.keyboardNavigation}
 `
+  }
+
+  get keyboardNavigation() {
+    const prevFile = this.file.previousRanked
+    const nextFile = this.file.nextRanked
+    return `html
+ <script>
+  Mousetrap.bind("left", () => {window.location = "${prevFile.primaryKey}.html"})
+  Mousetrap.bind("right", () => {window.location = "${nextFile.primaryKey}.html"})
+ </script>`
   }
 
   get factsSection() {

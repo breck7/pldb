@@ -69,6 +69,14 @@ class PLDBFile extends TreeBaseFile {
     return `patterns ${this.get("patternKeyword")}`
   }
 
+  get previousRanked() {
+    return this.base.getFileAtRank(this.rank - 1)
+  }
+
+  get nextRanked() {
+    return this.base.getFileAtRank(this.rank + 1)
+  }
+
   get _getLanguagesWithThisPatternResearched() {
     const patternKeyword = this.get("patternKeyword")
 
@@ -116,19 +124,23 @@ class PLDBFile extends TreeBaseFile {
   }
 
   get numberOfUsers() {
-    return this.getParent().predictNumberOfUsers(this)
+    return this.base.predictNumberOfUsers(this)
   }
 
   get numberOfJobs() {
-    return this.getParent().predictNumberOfJobs(this)
+    return this.base.predictNumberOfJobs(this)
   }
 
   get percentile() {
-    return this.getParent().predictPercentile(this)
+    return this.base.predictPercentile(this)
   }
 
   get languageRank() {
-    return this.getParent().getLanguageRank(this)
+    return this.base.getLanguageRank(this)
+  }
+
+  get rank() {
+    return this.base.getRank(this)
   }
 
   get extensions() {
@@ -360,14 +372,25 @@ class PLDBBaseFolder extends TreeBaseFolder {
 
   _ranks: any
   _languageRanks: any
+  _inverseRanks: any
   _getRanks(files = this.getChildren()) {
     if (!this._ranks) {
       this._ranks = this._calcRanks(files)
       this._languageRanks = this._calcRanks(
         files.filter(file => file.isLanguage)
       )
+      this._inverseRanks = {}
+      Object.keys(this._ranks).forEach(id => {
+        this._inverseRanks[this._ranks[id]] = id
+      })
     }
     return this._ranks
+  }
+
+  getFileAtRank(rank) {
+    if (rank < 0) rank = this.length - 1
+    if (rank >= this.length) rank = 0
+    return this.getFile(this._inverseRanks[rank])
   }
 
   predictPercentile(file) {
