@@ -1,27 +1,28 @@
 #!/usr/bin/env ts-node
 
-const cachePath =
-  __dirname +
-  "/../cache/stackoverflow.com/stack-overflow-developer-survey-2021/"
-const filepath = cachePath + "survey_results_public.csv"
-const processedPath = cachePath + "processed.json"
-
 import * as fs from "fs"
 import * as path from "path"
 import * as csv from "fast-csv"
 import * as ss from "simple-statistics"
 
 import { jtree } from "jtree"
+import { runCommand } from "../../utils"
+import { PLDBBaseFolder } from "../../PLDBBase"
+
 const lodash = require("lodash")
 const { TreeNode } = jtree
 const { Disk } = require("jtree/products/Disk.node.js")
 
-import { PLDBBaseFolder } from "../../PLDBBase"
 const pldbBase = PLDBBaseFolder.getBase()
 
+const cachePath = __dirname + "/cache/stack-overflow-developer-survey-2021/"
+const filepath = cachePath + "survey_results_public.csv"
+const processedPath = cachePath + "processed.json"
+
+// https://insights.stackoverflow.com/survey
 class StackOverflowDeveloperSurveyImporter {
   users = {}
-  process() {
+  processCsvCommand() {
     pldbBase.loadFolder()
     fs.createReadStream(filepath)
       .pipe(csv.parse({ headers: true }))
@@ -44,7 +45,7 @@ class StackOverflowDeveloperSurveyImporter {
     Disk.write(processedPath, JSON.stringify(this.users, null, 2))
   }
 
-  applyToDatabase() {
+  writeToDatabaseCommand() {
     pldbBase.loadFolder()
     const objects = JSON.parse(Disk.read(processedPath))
     Object.values(objects).forEach((row: any) => {
@@ -104,6 +105,7 @@ stackOverflowSurvey
   }
 }
 
-const so = new StackOverflowDeveloperSurveyImporter()
-//so.process()
-so.applyToDatabase()
+export { StackOverflowDeveloperSurveyImporter }
+
+if (!module.parent)
+  runCommand(new StackOverflowDeveloperSurveyImporter(), process.argv[2])
