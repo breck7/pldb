@@ -8,8 +8,8 @@ patterns
  hasAbstractTypes? false
  hasStatements? true
   let x = 3;
- hasRegularExpressions? true
-  /foobar/
+ hasRegularExpressionsSyntaxSugar? true
+  console.log("Hello World".match(/\w/))
  hasExpressions? true
   1 + 1
  hasAsyncAwait? true

@@ -9,6 +9,7 @@ patterns
    filehandle.write('Hello, world!\n')
  hasDuckTyping? true
  hasSingleDispatch? true
+ hasRegularExpressionsSyntaxSugar? false
  hasBitWiseOperators? true
   x << y
  canDoShebang? true

@@ -94,7 +94,7 @@ pipeTable
  Range Operator|../languages/range-operator-pattern.html||1 ... 10|3
  References|../languages/reference-pattern.html||fn(objPointer)|2
  Refinement Types|../languages/refinement-type-pattern.html||evenInt where int % 2 = 0|1
- Regular Expressions|../languages/regular-expressions-pattern.html||/\w+\d?/|1
+ Regular Expression Syntax Sugar|../languages/regular-expressions-syntax-sugar-pattern.html||/\w+\d?/|3
  Runtime Guards|../languages/runtime-guards-pattern.html||f x &#124; x > 0 = 1 &#124; otherwise = 0|1
  Semantic Indentation|../languages/semantic-indentation-pattern.html||if true(newline/space)print True|51
  Semaphores|../languages/semaphores-pattern.html||singletonIsSet = 0|0

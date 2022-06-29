@@ -4,6 +4,7 @@ type pl
 creators Dennis Ritchie
 
 patterns
+ hasRegularExpressionsSyntaxSugar? false
  hasPointers? true
   int *ptr;
  hasAssertStatements? true

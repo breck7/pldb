@@ -3,6 +3,7 @@ appeared 1985
 type pl
 
 patterns
+ hasRegularExpressionsSyntaxSugar? false
  hasUnaryOperators? true
   int count = 2;
   count++;

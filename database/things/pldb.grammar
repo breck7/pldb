@@ -714,8 +714,8 @@ hasReservedWordsNode
  crux hasReservedWords?
  description Are things like keywords reserved words?
  extends abstractPatternNode
-hasRegularExpressionsNode
- crux hasRegularExpressions?
+hasRegularExpressionsSyntaxSugarNode
+ crux hasRegularExpressionsSyntaxSugar?
  extends abstractPatternNode
 hasHomoiconicityNode
  crux hasHomoiconicity?

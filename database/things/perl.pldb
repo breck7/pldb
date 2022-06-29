@@ -4,6 +4,8 @@ type pl
 creators Larry Wall
 
 patterns
+ hasRegularExpressionsSyntaxSugar? true
+  print "Hello World".match(/\w/)
  hasPartialApplication? true
   sub first-and-last ( $first, $last ) {
      say "Name is $first $last";
