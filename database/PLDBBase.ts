@@ -288,7 +288,7 @@ class PLDBBaseFolder extends TreeBaseFolder {
       const wp = file.wikipediaTitle
       if (wp) map.set(wp, id)
       const aka = file.getAll("aka")
-      if (aka.length) aka.forEach(name => map.set(name, id))
+      if (aka.length) aka.forEach(name => map.set(name.toLowerCase(), id))
     })
     this._searchIndex = map
     return this._searchIndex

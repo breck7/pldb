@@ -1,6 +1,7 @@
 title Unix Assembly
 appeared 1972
 type assembly
+aka x86
 
 patterns
  hasProcessorRegisters? true
@@ -100,3 +101,4 @@ status active
 fileType text
 centralPackageRepositoryCount 0
 gdbSupport true
+rijuRepl https://riju.codes/x86
