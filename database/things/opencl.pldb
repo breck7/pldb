@@ -3,7 +3,6 @@ appeared 2009
 type pl
 
 patterns
- hasGdbSupport? true
 
 wikipedia https://en.wikipedia.org/wiki/OpenCL
  example
@@ -99,3 +98,4 @@ corporateDevelopers Khronos Group
 indeedJobs opencl engineer
  2017 266
 centralPackageRepositoryCount 0
+gdbSupport true

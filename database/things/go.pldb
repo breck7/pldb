@@ -49,7 +49,6 @@ patterns
  hasIncrementAndDecrementOperators? true
  hasLineComments? true
   // A comment
- hasGdbSupport? true
  hasMessagePassing? true
 
 wikipedia https://en.wikipedia.org/wiki/Go_(programming_language)
@@ -225,3 +224,4 @@ stackOverflowSurvey
   fans 15788
   percentageUsing 0.09
 centralPackageRepositoryCount 0
+gdbSupport true

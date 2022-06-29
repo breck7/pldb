@@ -1,0 +1,6 @@
+gdbSupportNode
+ extends abstractBooleanNode
+ description Is the language supported by the GNU Debugger?
+ crux gdbSupport
+ string sourceDomain sourceware.org
+ single

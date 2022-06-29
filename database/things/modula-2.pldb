@@ -6,7 +6,6 @@ creators Niklaus Wirth
 patterns
  hasComments? true
  hasOperatorOverloading? false
- hasGdbSupport? true
 
 wikipedia https://en.wikipedia.org/wiki/Modula-2
  example
@@ -393,3 +392,4 @@ hopl 817
 rosettaCode Modula-2
 
 centralPackageRepositoryCount 0
+gdbSupport true

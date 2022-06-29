@@ -195,7 +195,6 @@ patterns
     }
   };
  hasThreads? true
- hasGdbSupport? true
 
 wikipedia https://en.wikipedia.org/wiki/C++
  example
@@ -336,3 +335,4 @@ stackOverflowSurvey
   fans 15249
   percentageUsing 0.24
 centralPackageRepositoryCount 0
+gdbSupport true

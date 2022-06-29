@@ -19,7 +19,6 @@ patterns
  hasOperatorOverloading? false
  hasLineComments? true
   // A comment
- hasGdbSupport? true
  hasMessagePassing? true
 
 wikipedia https://en.wikipedia.org/wiki/Objective-C
@@ -143,3 +142,4 @@ stackOverflowSurvey
   fans 1400
   percentageUsing 0.03
 packageRepository https://cocoapods.org/
+gdbSupport true

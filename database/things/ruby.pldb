@@ -4,6 +4,45 @@ type pl
 creators Yukihiro Matsumoto
 
 patterns
+ hasDependentTypes? false
+ hasDisposeBlocks? false
+ hasDuckTyping? true
+ hasExceptions? true
+  def hello
+   puts "Hello, World!"
+     # start an exception handler
+     begin
+         raise "This is an exception"
+     rescue => e
+         puts "Exception caught: #{e}"
+     end
+   end
+  hello
+ hasFunctionOverloading? false
+ hasAsyncAwait? false
+ hasConstants? true
+  # Constants in Ruby being with a capital letter. Will throw a warning or error, depending on runtime settings.
+  Name = "John"  
+  # Not a constant
+  name = "John"
+ hasClasses? true
+  # A tiny Person class in Ruby:
+  class Person
+    attr_accessor :name, :age, :   # getter and setter methods
+    def initialize(name, age)
+      @name = name
+      @age = age
+    end
+  end
+  
+  # Create a new Person object:
+  person = Person.new("John", 30)
+  puts person.name
+  puts person.age
+  
+  # Change the age of the person:
+  person.age = 35
+  puts person.age
  hasComments? true
   # This is a single line comment.
  hasBlockComments? true

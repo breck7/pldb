@@ -377,6 +377,12 @@ ${facts.map(fact => ` - ${fact}`).join("\n")}`
         `${title} is written with the native language of ${nativeLanguage}`
       )
 
+    const gdb = file.get("gdbSupport")
+    if (gdb)
+      facts.push(
+        `${title} is supported by the <a href="https://www.sourceware.org/gdb/">GDB</a>`
+      )
+
     const hopl = file.get("hopl")
     if (hopl)
       facts.push(

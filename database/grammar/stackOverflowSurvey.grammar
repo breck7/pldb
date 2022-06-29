@@ -9,7 +9,7 @@ stackOverflowSurveyYearNode
  description Survey results for a particular year.
  cells yearCell
  pattern \d+
- inScope stackOverflowSurveyMedianSalaryNode stackOverflowSurveyFansNode stackOverflowSurveyUsersNode
+ inScope stackOverflowSurveyMedianSalaryNode stackOverflowSurveyFansNode stackOverflowSurveyUsersNode stackOverflowSurveyPercentageUsingNode
 stackOverflowSurveyUsersNode
  crux users
  extends abstractPopulationCountNode
