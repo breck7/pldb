@@ -98,6 +98,8 @@ sourceLink https://github.com/breck7/pldb/blob/main/database/things/${
 
 ${this.descriptionSection}
 
+${this.tryNowRepls}
+
 ${this.kpiBar}
 
 ${this.factsSection}
@@ -323,10 +325,6 @@ ${facts.map(fact => ` - ${fact}`).join("\n")}`
         }`
       )
 
-    const webRepl = file.get("webRepl")
-    if (webRepl)
-      facts.push(`Try ${title} on this <a href="${webRepl}">web repl</a>`)
-
     const subreddit = file.get("subreddit")
     if (subreddit) {
       const peNum = numeral(
@@ -398,18 +396,6 @@ ${facts.map(fact => ` - ${fact}`).join("\n")}`
     else if (tiobe)
       facts.push(
         `${title} appears in the <a href="https://www.tiobe.com/tiobe-index/">TIOBE Index</a>`
-      )
-
-    const tryItOnline = object.tryItOnline
-    if (tryItOnline)
-      facts.push(
-        `tryitonline has an online <a href="https://tio.run/#${tryItOnline}">${title} repl</a>`
-      )
-
-    const replit = object.replit
-    if (replit)
-      facts.push(
-        `replit has an online <a href="https://repl.it/languages/${replit}">${title} repl</a>`
       )
 
     const ubuntu = file.get("ubuntuPackage")
@@ -555,6 +541,33 @@ code
  ${cleanAndRightShift(lodash.escape(example.childrenToString()))}`)
     }
     return exampleSection.join("\n\n")
+  }
+
+  get tryNowRepls() {
+    const { file } = this
+
+    const repls = []
+
+    const webRepl = file.get("webRepl")
+    if (webRepl) repls.push(`<a href="${webRepl}">Web</a>`)
+
+    const rijuRepl = file.get("rijuRepl")
+    if (rijuRepl) repls.push(`<a href="${rijuRepl}">Riju</a>`)
+
+    const tryItOnline = file.get("tryItOnline")
+    if (tryItOnline)
+      repls.push(`<a href="https://tio.run/#${tryItOnline}">TIO</a>`)
+
+    const replit = file.get("replit")
+    if (replit)
+      repls.push(`<a href="https://repl.it/languages/${replit}">Replit</a>`)
+
+    if (!repls.length) return ""
+
+    return (
+      `paragraph
+ Try now: ` + repls.join(" · ")
+    )
   }
 
   get kpiBar() {
