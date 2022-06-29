@@ -717,6 +717,12 @@ hasReservedWordsNode
 hasRegularExpressionsNode
  crux hasRegularExpressions?
  extends abstractPatternNode
+hasHomoiconicityNode
+ crux hasHomoiconicity?
+ extends abstractPatternNode
+hasDestructuringNode
+ crux hasDestructuring?
+ extends abstractPatternNode
 hasRunTimeGuardsNode
  crux hasRunTimeGuards?
  extends abstractPatternNode
@@ -819,9 +825,15 @@ has1DArraysNode
 hasAdditionOperatorNode
  extends abstractPatternNode
  crux hasAdditionOperator?
-hasAlebraicDataTypesNode
+hasAlgebraicTypesNode
  extends abstractPatternNode
- crux hasAlebraicDataTypes?
+ crux hasAlgebraicTypes?
+hasDefaultParametersNode
+ extends abstractPatternNode
+ crux hasDefaultParameters?
+hasVirtualFunctionsNode
+ extends abstractPatternNode
+ crux hasVirtualFunctions?
 hasArraySlicingSyntaxNode
  extends abstractPatternNode
  crux hasArraySlicingSyntax?
@@ -1063,6 +1075,36 @@ hasLinkersNode
 hasListComprehensionNode
  extends abstractPatternNode
  crux hasListComprehension?
+hasMessagePassingNode
+ extends abstractPatternNode
+ crux hasMessagePassing?
+hasRangeOperatorsNode
+ extends abstractPatternNode
+ crux hasRangeOperators?
+hasListsNode
+ extends abstractPatternNode
+ crux hasLists?
+hasBlobsNode
+ extends abstractPatternNode
+ crux hasBlobs?
+hasClobsNode
+ extends abstractPatternNode
+ crux hasClobs?
+hasSExpressionsNode
+ extends abstractPatternNode
+ crux hasSExpressions?
+hasTimestampsNode
+ extends abstractPatternNode
+ crux hasTimestamps?
+hasDecimalsNode
+ extends abstractPatternNode
+ crux hasDecimals?
+hasSymbolsNode
+ extends abstractPatternNode
+ crux hasSymbols?
+hasTypeAnnotationsNode
+ extends abstractPatternNode
+ crux hasTypeAnnotations?
 hasMacrosNode
  extends abstractPatternNode
  crux hasMacros?
@@ -1190,6 +1232,15 @@ letterFirstIdentifiersNode
 hasStreamsNode
  extends abstractPatternNode
  crux hasStreams?
+hasFunctionCompositionNode
+ extends abstractPatternNode
+ crux hasFunctionComposition?
+hasStaticMethodsNode
+ extends abstractPatternNode
+ crux hasStaticMethods?
+hasThreadsNode
+ extends abstractPatternNode
+ crux hasThreads?
 hasStringConcatOperatorNode
  extends abstractPatternNode
  crux hasStringConcatOperator?
@@ -1245,6 +1296,21 @@ hasVariableAssignmentNode
 hasVariableDeclarationsNode
  extends abstractPatternNode
  crux hasVariableDeclarations?
+hasUnitsOfMeasureNode
+ extends abstractPatternNode
+ crux hasUnitsOfMeasure?
+hasMapsNode
+ extends abstractPatternNode
+ crux hasMaps?
+hasSetsNode
+ extends abstractPatternNode
+ crux hasSets?
+hasIdsNode
+ extends abstractPatternNode
+ crux hasIds?
+hasTriplesNode
+ extends abstractPatternNode
+ crux hasTriples?
 hasVariadicFunctionsNode
  extends abstractPatternNode
  crux hasVariadicFunctions?
