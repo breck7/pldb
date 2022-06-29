@@ -5,7 +5,8 @@ import {
   getJoined,
   getPrimaryKey,
   isLanguage,
-  getCleanedId
+  getCleanedId,
+  makeInverseRanks
 } from "./utils"
 
 const lodash = require("lodash")
@@ -69,6 +70,14 @@ class PLDBFile extends TreeBaseFile {
     return `patterns ${this.get("patternKeyword")}`
   }
 
+  get previousRankedPattern() {
+    return this.base.getPatternAtRank(this.base.getPatternRank(this) - 1)
+  }
+
+  get nextRankedPattern() {
+    return this.base.getPatternAtRank(this.base.getPatternRank(this) + 1)
+  }
+
   get previousRanked() {
     return this.base.getFileAtRank(this.rank - 1)
   }
@@ -116,6 +125,10 @@ class PLDBFile extends TreeBaseFile {
 
   get isLanguage() {
     return isLanguage(this.get("type"))
+  }
+
+  get isPattern() {
+    return this.get("type") === "pattern"
   }
 
   get wikipediaTitle() {
@@ -373,24 +386,34 @@ class PLDBBaseFolder extends TreeBaseFolder {
   _ranks: any
   _languageRanks: any
   _inverseRanks: any
+  _patternRanks: any
+  _inversePatternRanks: any
   _getRanks(files = this.getChildren()) {
     if (!this._ranks) {
       this._ranks = this._calcRanks(files)
+      this._inverseRanks = makeInverseRanks(this._ranks)
       this._languageRanks = this._calcRanks(
         files.filter(file => file.isLanguage)
       )
-      this._inverseRanks = {}
-      Object.keys(this._ranks).forEach(id => {
-        this._inverseRanks[this._ranks[id]] = id
-      })
+      this._patternRanks = this._calcRanks(files.filter(file => file.isPattern))
+      this._inversePatternRanks = makeInverseRanks(this._patternRanks)
     }
     return this._ranks
   }
 
+  private _getFileAtRank(rank, ranks) {
+    const count = Object.keys(ranks).length
+    if (rank < 0) rank = count - 1
+    if (rank >= count) rank = 0
+    return this.getFile(ranks[rank])
+  }
+
+  getPatternAtRank(rank) {
+    return this._getFileAtRank(rank, this._inversePatternRanks)
+  }
+
   getFileAtRank(rank) {
-    if (rank < 0) rank = this.length - 1
-    if (rank >= this.length) rank = 0
-    return this.getFile(this._inverseRanks[rank])
+    return this._getFileAtRank(rank, this._inverseRanks)
   }
 
   predictPercentile(file) {
@@ -399,14 +422,18 @@ class PLDBBaseFolder extends TreeBaseFolder {
     return ranks[file.primaryKey] / files.length
   }
 
+  getPatternRank(file) {
+    this._getRanks()
+    return this._patternRanks[file.primaryKey]
+  }
+
   getLanguageRank(file) {
     this._getRanks()
     return this._languageRanks[file.primaryKey]
   }
 
   getRank(file) {
-    const ranks = this._getRanks()
-    return ranks[file.primaryKey]
+    return this._getRanks()[file.primaryKey]
   }
 
   toObjectsForCsv() {

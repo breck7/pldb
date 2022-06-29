@@ -15,7 +15,7 @@ import {
   getATag
 } from "./utils"
 
-const currentYear = parseInt(moment(Date.now()).format("YYYY"))
+const currentYear = new Date().getFullYear()
 
 class LanguagePageTemplate {
   constructor(file: PLDBFile) {
@@ -114,13 +114,19 @@ ${this.keyboardNavigation}
 `
   }
 
+  get prevPage() {
+    return this.file.previousRanked.primaryKey
+  }
+
+  get nextPage() {
+    return this.file.nextRanked.primaryKey
+  }
+
   get keyboardNavigation() {
-    const prevFile = this.file.previousRanked
-    const nextFile = this.file.nextRanked
     return `html
  <script>
-  Mousetrap.bind("left", () => {window.location = "${prevFile.primaryKey}.html"})
-  Mousetrap.bind("right", () => {window.location = "${nextFile.primaryKey}.html"})
+  Mousetrap.bind("left", () => {window.location = "${this.prevPage}.html"})
+  Mousetrap.bind("right", () => {window.location = "${this.nextPage}.html"})
  </script>`
   }
 
@@ -579,6 +585,14 @@ class PatternPageTemplate extends LanguagePageTemplate {
 
     return `kpiTable
  ${currentYear - appeared} Years Old`
+  }
+
+  get prevPage() {
+    return this.file.previousRankedPattern.primaryKey
+  }
+
+  get nextPage() {
+    return this.file.nextRankedPattern.primaryKey
   }
 
   get typeLink() {

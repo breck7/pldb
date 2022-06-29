@@ -1,7 +1,6 @@
 #!/usr/bin/env ts-node
 
 const lodash = require("lodash")
-const moment = require("moment")
 const numeral = require("numeral")
 const fs = require("fs")
 const { jtree } = require("jtree")

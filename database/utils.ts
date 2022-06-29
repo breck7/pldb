@@ -13,6 +13,14 @@ const toCommaList = (arr, conjunction = "and") => {
 
 const getATag = permalink => `<a href="${permalink}.html">${permalink}</a>`
 
+const makeInverseRanks = ranks => {
+  const inverseRanks = {}
+  Object.keys(ranks).forEach(id => {
+    inverseRanks[ranks[id]] = id
+  })
+  return inverseRanks
+}
+
 const runCommand = (instance, command = "") => {
   if (instance[command + "Command"]) return instance[command + "Command"]()
 
@@ -198,5 +206,6 @@ export {
   isLanguage,
   getCleanedId,
   getATag,
-  runCommand
+  runCommand,
+  makeInverseRanks
 }
