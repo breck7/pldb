@@ -17,6 +17,7 @@ standsForNode
  crux standsFor
  single
 akaNode
- description Other names for the language.
+ description Another name for the language. Entries can have multiple aka lines.
  extends abstractStringNode
  crux aka
+ boolean multipleOk true

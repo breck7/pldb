@@ -4,12 +4,7 @@ const { AbstractBuilder } = require("jtree/products/AbstractBuilder.node.js")
 import { WikipediaImporter } from "./wikipedia.org/Wikipedia"
 import { PLDBBaseFolder } from "../PLDBBase"
 
-const thingsFolder = __dirname + "/../things/"
-
-const pldbBase = new (<any>PLDBBaseFolder)(
-  undefined,
-  thingsFolder
-) as PLDBBaseFolder
+const pldbBase = PLDBBaseFolder.getBase()
 
 class Builder extends AbstractBuilder {
   async fetchWikipedia() {

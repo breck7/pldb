@@ -18,11 +18,7 @@ import { PLDBBaseFolder } from "./database/PLDBBase"
 
 const { TreeBaseServer } = require("jtree/products/treeBase.node.js")
 
-const thingsFolder = __dirname + "/database/things/"
-const pldbBase = new (<any>PLDBBaseFolder)(
-  undefined,
-  thingsFolder
-) as PLDBBaseFolder
+const pldbBase = PLDBBaseFolder.getBase()
 const websiteFolder = __dirname + "/pldb.pub"
 const databaseFolderWhenPublishedToWebsite = websiteFolder + "/languages" // Todo: eventually redirect away from /languages?
 const settingsFile = Disk.read(__dirname + "/blog/scroll.settings")
@@ -43,7 +39,7 @@ class Builder extends AbstractBuilder {
     Disk.mkdir(websiteFolder + "/datasets")
     Disk.write(
       websiteFolder + "/datasets/pldb.grammar",
-      Disk.read(thingsFolder + "pldb.grammar")
+      Disk.read(pldbBase.dir + "pldb.grammar")
     )
   }
 
@@ -226,7 +222,7 @@ class Builder extends AbstractBuilder {
       return {
         pattern: file.get("title"),
         patternLink: `../languages/${name}.html`,
-        aka: file.get("aka"),
+        aka: file.getAll("aka").join(" or "),
         languages: file.languagesWithThisPattern.length,
         psuedoExample: (file.get("psuedoExample") || "")
           .replace(/\</g, "&lt;")
@@ -466,7 +462,7 @@ class Builder extends AbstractBuilder {
   buildAcknowledgementsPage() {
     const sources = Array.from(
       new Set(
-        Disk.read(thingsFolder + "pldb.grammar")
+        Disk.read(pldbBase.dir + "pldb.grammar")
           .split("\n")
           .filter(line => line.includes("string sourceDomain"))
           .map(line => line.split("string sourceDomain")[1].trim())
@@ -485,7 +481,7 @@ class Builder extends AbstractBuilder {
   }
 
   buildGrammar() {
-    const outputFilePath = thingsFolder + "pldb.grammar"
+    const outputFilePath = pldbBase.dir + "pldb.grammar"
 
     // Concatenate all files ending in ".grammar" in the "grammar" directory:
     const grammar =

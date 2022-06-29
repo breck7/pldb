@@ -342,6 +342,24 @@ ${facts.map(fact => ` - ${fact}`).join("\n")}`
       )
     }
 
+    const soSurvey = file.getNode("stackOverflowSurvey 2021")
+    if (soSurvey) {
+      let fact = `In the 2021 StackOverflow <a href="https://insights.stackoverflow.com/survey">developer survey</a> ${title} programmers reported a median salary of $${numeral(
+        soSurvey.get("medianSalary")
+      ).format("0,0")}. `
+
+      fact += `${parseFloat(soSurvey.get("percentageUsing")) *
+        100}% of respondents reported using ${title}. `
+
+      fact += `${numeral(soSurvey.get("users")).format(
+        "0,0"
+      )} programmers reported using ${title}, and ${numeral(
+        soSurvey.get("fans")
+      ).format("0,0")} said they wanted to use it`
+
+      facts.push(fact)
+    }
+
     const rosettaCode = file.get("rosettaCode")
     if (rosettaCode)
       facts.push(

@@ -188,6 +188,17 @@ class PLDBFile extends TreeBaseFile {
 }
 
 class PLDBBaseFolder extends TreeBaseFolder {
+  static getBase() {
+    return new (<any>PLDBBaseFolder)(
+      undefined,
+      __dirname + "/things/"
+    ) as PLDBBaseFolder
+  }
+
+  get dir() {
+    return this._getDir()
+  }
+
   createParser() {
     return new TreeNode.Parser(PLDBFile)
   }
@@ -251,6 +262,8 @@ class PLDBBaseFolder extends TreeBaseFolder {
       map.set(file.title, id)
       const wp = file.wikipediaTitle
       if (wp) map.set(wp, id)
+      const aka = file.getAll("aka")
+      if (aka.length) aka.forEach(name => map.set(name, id))
     })
     this._searchIndex = map
     return this._searchIndex
@@ -259,6 +272,10 @@ class PLDBBaseFolder extends TreeBaseFolder {
   searchForEntity(query) {
     const { searchIndex } = this
     return searchIndex.get(query) || searchIndex.get(getCleanedId(query))
+  }
+
+  getFile(id) {
+    return this.getNode(this.dir + id + ".pldb")
   }
 
   predictNumberOfUsers(file) {

@@ -1,0 +1,28 @@
+stackOverflowSurveyNode
+ extends abstractMultiwordGuidNode
+ description StackOverflow does an annual developer survey: https://insights.stackoverflow.com/survey
+ crux stackOverflowSurvey
+ inScope stackOverflowSurveyYearNode
+ string sourceDomain insights.stackoverflow.com
+ single
+stackOverflowSurveyYearNode
+ description Survey results for a particular year.
+ cells yearCell
+ pattern \d+
+ inScope stackOverflowSurveyMedianSalaryNode stackOverflowSurveyFansNode stackOverflowSurveyUsersNode
+stackOverflowSurveyUsersNode
+ crux users
+ extends abstractPopulationCountNode
+ description How many developers reported using this language.
+stackOverflowSurveyMedianSalaryNode
+ crux medianSalary
+ description Median salary reported by developers using this language.
+ extends abstractIntNode
+stackOverflowSurveyFansNode
+ description How many developers reported wanting to learn this language.
+ crux fans
+ extends abstractPopulationCountNode
+stackOverflowSurveyPercentageUsingNode
+ description What percentage of survey respondents report using this language?
+ crux percentageUsing
+ extends abstractDecimalNode

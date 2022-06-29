@@ -1,3 +1,4 @@
+numberCell
 intCell
 populationCountCell
  description A positive integer representing a number of people.
@@ -43,6 +44,10 @@ abstractPermalinkNode
  description Link to other entities on PLDB.
 abstractUrlNode
  cells keywordCell urlCell
+ extends abstractFactNode
+ abstract
+abstractDecimalNode
+ cells keywordCell numberCell
  extends abstractFactNode
  abstract
 abstractIntNode

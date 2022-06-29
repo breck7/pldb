@@ -24,21 +24,21 @@ pipeTable
  html|../languages/html.html|1991|textMarkup|13
  sql|../languages/sql.html|1974|queryLanguage|14
  fortran|../languages/fortran.html|1957|pl|15
- lua|../languages/lua.html|1993|pl|16
- cpp|../languages/cpp.html|1985|pl|17
- haskell|../languages/haskell.html|1990|pl|18
+ cpp|../languages/cpp.html|1985|pl|16
+ haskell|../languages/haskell.html|1990|pl|17
+ lua|../languages/lua.html|1993|pl|18
  cobol|../languages/cobol.html|1959|pl|19
  swift|../languages/swift.html|2014|pl|20
  rust|../languages/rust.html|2010|pl|21
- prolog|../languages/prolog.html|1972|pl|22
- clojure|../languages/clojure.html|2007|pl|23
+ clojure|../languages/clojure.html|2007|pl|22
+ prolog|../languages/prolog.html|1972|pl|23
  erlang|../languages/erlang.html|1986|pl|24
  xml|../languages/xml.html|1996|metaLanguage|25
  css|../languages/css.html|1996|stylesheetLanguage|26
  mysql|../languages/mysql.html|1995|queryLanguage|27
  objective-c|../languages/objective-c.html|1984|pl|28
- mathematica|../languages/mathematica.html|1988|pl|29
- lisp|../languages/lisp.html|1958|pl|30
+ lisp|../languages/lisp.html|1958|pl|29
+ mathematica|../languages/mathematica.html|1988|pl|30
  visual-basic|../languages/visual-basic.html|1991|pl|31
  coffeescript|../languages/coffeescript.html|2009|pl|32
  julia|../languages/julia.html|2012|pl|33
@@ -76,8 +76,8 @@ pipeTable
  smalltalk|../languages/smalltalk.html|1972|pl|65
  uml|../languages/uml.html|1996|xmlFormat|66
  vala|../languages/vala.html|2006|pl|67
- wolfram|../languages/wolfram.html|1988|pl|68
- vba|../languages/vba.html|1993|pl|69
+ vba|../languages/vba.html|1993|pl|68
+ wolfram|../languages/wolfram.html|1988|pl|69
  standard-ml|../languages/standard-ml.html|1990|pl|70
  xojo|../languages/xojo.html|1996|pl|71
  xbase|../languages/xbase.html|1986|pl|72
@@ -110,8 +110,8 @@ pipeTable
  textile|../languages/textile.html|2002|textMarkup|99
  postscript|../languages/postscript.html|1982|textMarkup|100
  systemverilog|../languages/systemverilog.html|2002|pl|101
- z-notation|../languages/z-notation.html|1974|notation|102
- powershell|../languages/powershell.html|2006|pl|103
+ powershell|../languages/powershell.html|2006|pl|102
+ z-notation|../languages/z-notation.html|1974|notation|103
  self|../languages/self.html|1987|pl|104
  unified-parallel-c|../languages/unified-parallel-c.html|2003|pl|105
  sass|../languages/sass.html|2006|stylesheetLanguage|106
@@ -162,8 +162,8 @@ pipeTable
  oz|../languages/oz.html|1991|pl|151
  x86-64-isa|../languages/x86-64-isa.html|2000|isa|152
  unicon|../languages/unicon.html|2008|pl|153
- mumps|../languages/mumps.html|1966|pl|154
- yorick|../languages/yorick.html|1996|pl|155
+ yorick|../languages/yorick.html|1996|pl|154
+ mumps|../languages/mumps.html|1966|pl|155
  pdf|../languages/pdf.html|1993|binaryDataFormat|156
  setl|../languages/setl.html|1969|pl|157
  owl|../languages/owl.html|2004|xmlFormat|158
@@ -210,11 +210,11 @@ pipeTable
  nemerle|../languages/nemerle.html|2003|pl|199
  powerbuilder|../languages/powerbuilder.html|2010|pl|200
  strips|../languages/strips.html|1969|pl|201
- modelica|../languages/modelica.html|1997|pl|202
- pig|../languages/pig.html|2008|queryLanguage|203
- newlisp|../languages/newlisp.html|1991|pl|204
- speedcoding|../languages/speedcoding.html|1953|pl|205
- nodejs|../languages/nodejs.html|2009|pl|206
+ nodejs|../languages/nodejs.html|2009|pl|202
+ modelica|../languages/modelica.html|1997|pl|203
+ pig|../languages/pig.html|2008|queryLanguage|204
+ newlisp|../languages/newlisp.html|1991|pl|205
+ speedcoding|../languages/speedcoding.html|1953|pl|206
  groovy|../languages/groovy.html|2003|pl|207
  ratfor|../languages/ratfor.html|1976|pl|208
  qmake|../languages/qmake.html|2002|pl|209
@@ -230,8 +230,8 @@ pipeTable
  maxima|../languages/maxima.html|1982|pl|219
  oxygene|../languages/oxygene.html|2002|pl|220
  j|../languages/j.html|1990|pl|221
- pharo|../languages/pharo.html|2008|pl|222
- txt2tags|../languages/txt2tags.html|2001|textMarkup|223
+ txt2tags|../languages/txt2tags.html|2001|textMarkup|222
+ pharo|../languages/pharo.html|2008|pl|223
  lolcode|../languages/lolcode.html|2007|esolang|224
  sql-92|../languages/sql-92.html|1992|pl|225
  zpp|../languages/zpp.html|1991|pl|226
@@ -258,4 +258,4 @@ pipeTable
  pari-gp|../languages/pari-gp.html|1985|pl|247
  max|../languages/max.html|1990|jsonFormat|248
  swi-prolog|../languages/swi-prolog.html|1987|pl|249
- idl|../languages/idl.html|1977|pl|250
+ limbo|../languages/limbo.html|1995|pl|250
