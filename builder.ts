@@ -70,9 +70,10 @@ class Builder extends AbstractBuilder {
         const appeared = file.get("appeared")
         const rank = file.languageRank + 1
         const type = file.get("type")
+        const title = file.get("title")
         return {
-          name,
-          nameLink: `../languages/${name}.html`,
+          title,
+          titleLink: `../languages/${name}.html`,
           rank,
           type,
           appeared
@@ -85,8 +86,8 @@ class Builder extends AbstractBuilder {
       page,
       `comment autogenTop`,
       toScrollTable(new TreeNode(files), [
-        "name",
-        "nameLink",
+        "title",
+        "titleLink",
         "appeared",
         "type",
         "rank"
