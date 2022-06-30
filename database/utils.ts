@@ -99,6 +99,30 @@ const isLanguage = type => {
   return nonLanguages[type] ? false : true
 }
 
+interface PoliteCrawlerJob {
+  fetch: Function
+}
+
+class PoliteCrawler {
+  running = 0
+  async _fetchQueue() {
+    if (!this.downloadQueue.length) return
+
+    await this.downloadQueue.pop().fetch()
+    return this._fetchQueue()
+  }
+
+  maxConcurrent = 10
+  downloadQueue: PoliteCrawlerJob[] = []
+  async fetchAll(jobs) {
+    this.downloadQueue = lodash.shuffle(jobs) // Randomize so dont get stuck on one
+    const threads = lodash
+      .range(0, this.maxConcurrent, 1)
+      .map(i => this._fetchQueue())
+    await Promise.all(threads)
+  }
+}
+
 const getPrimaryKey = node =>
   Utils.getFileName(Utils.removeFileExtension(node.getWord(0)))
 
@@ -214,5 +238,6 @@ export {
   getCleanedId,
   getATag,
   runCommand,
-  makeInverseRanks
+  makeInverseRanks,
+  PoliteCrawler
 }

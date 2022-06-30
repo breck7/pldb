@@ -307,7 +307,7 @@ class PLDBBaseFolder extends TreeBaseFolder {
     return searchIndex.get(query) || searchIndex.get(getCleanedId(query))
   }
 
-  getFile(id) {
+  getFile(id: string): PLDBFile | undefined {
     return this.getNode(this.dir + id + ".pldb")
   }
 

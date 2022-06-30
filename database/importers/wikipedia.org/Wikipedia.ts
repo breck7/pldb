@@ -1,7 +1,7 @@
 #!/usr/bin/env ts-node
 
 import { PLDBFile, PLDBBaseFolder } from "../../PLDBBase"
-import { getCleanedId, runCommand } from "../../utils"
+import { getCleanedId, runCommand, PoliteCrawler } from "../../utils"
 const lodash = require("lodash")
 
 const cacheDir = __dirname + "/cache/"
@@ -19,6 +19,9 @@ const jquery = require("jquery")(new JSDOM(`<!DOCTYPE html>`).window)
 const yearRegex = /(released|started|began|published|designed|announced|developed|funded|created|introduced|produced) in ([12][890]\d\d)\D/gi
 const yearRegexRelaxed = /\D(200\d|201\d|199\d|198\d|197\d|196\d|195\d)\D/g
 const withContext = /(\D{3,18}[12][890]\d\d\D{1,18})/gi
+
+pldbBase.loadFolder()
+Disk.mkdir(cacheDir)
 
 class PLDBFileWithWikipedia {
   constructor(file: PLDBFile) {
@@ -125,25 +128,11 @@ class PLDBFileWithWikipedia {
 }
 
 class WikipediaImporter {
-  running = 0
-  async _fetchQueue() {
-    if (!this.downloadQueue.length) return
-
-    await this.downloadQueue.pop().fetch()
-    return this._fetchQueue()
-  }
-
-  maxConcurrent = 10
-  downloadQueue: PLDBFileWithWikipedia[] = []
   async fetchAllCommand() {
-    pldbBase.loadFolder()
-    Disk.mkdir(cacheDir)
-    const files = this.linkedFiles.map(file => new PLDBFileWithWikipedia(file))
-    this.downloadQueue = lodash.shuffle(files) // Randomize so dont get stuck on one
-    const threads = lodash
-      .range(0, this.maxConcurrent, 1)
-      .map(i => this._fetchQueue())
-    await Promise.all(threads)
+    const crawler = new PoliteCrawler()
+    await crawler.fetchAll(
+      this.linkedFiles.map(file => new PLDBFileWithWikipedia(file))
+    )
   }
 
   get linkedFiles() {
