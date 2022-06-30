@@ -1,6 +1,7 @@
-title cell
+title Cell
 appeared 2017
 type pl
+description Cell is a very high-level embeddable language. Cell's data model combines a staple of functional programming, algebraic data types, with relations and other ideas from relational databases.
 
 example
  type AddUser = add_user(
@@ -24,13 +25,35 @@ example
    insert date_of_birth(id, self.date_of_birth) if self.date_of_birth?;
  }
 
+example
+ reactive Thermostat {
+   input:
+     temperature: Float;
+ 
+   output:
+     on: Bool;
+ 
+   state:
+     // When the system is initialized, on is true if
+     // and only if the current temperature exceeds 28°C
+     on: Bool = temperature > 28.0;
+ 
+   rules:
+     // Switching on the air conditioner when
+     // the temperature exceeds 28°C
+     on = true when temperature > 28.0;
+ 
+     // Switching it off when it falls below 24°C
+     on = false when temperature < 24.0;
+ }
+
 githubRepo https://github.com/cell-lang
 
 website http://cell-lang.net/
 status active
 
 twitter cell_lang
-
+lineCommentKeyword //
 fileType text
 wordRank 695
 isOpenSource true
