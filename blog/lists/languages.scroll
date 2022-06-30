@@ -4,7 +4,7 @@ maxColumns 1
 columnWidth 60
 
 paragraph
- Here is the list of all 4,007 languages in PLDB.
+ Here is the list of all 4,009 languages in PLDB.
 
 aftertext
  Add a language by opening a @pull request@ or an issue.
@@ -625,6 +625,7 @@ pipeTable
  cheetah|../languages/cheetah.html|template|2001
  chef|../languages/chef.html|esolang|2002
  chemtrains|../languages/chemtrains.html|pl|1992
+ cheri|../languages/cheri.html|isa|2010
  chicken-lang|../languages/chicken-lang.html|esolang|2013
  chicken|../languages/chicken.html|pl|1994
  chicon|../languages/chicon.html|pl|1998
@@ -1430,6 +1431,7 @@ pipeTable
  grid-notation|../languages/grid-notation.html|textDataFormat|
  grin|../languages/grin.html|pl|1977
  grml|../languages/grml.html|pl|2003
+ groff|../languages/groff.html|textMarkup|1990
  groove|../languages/groove.html|pl|1970
  groovy-server-pages|../languages/groovy-server-pages.html|template|2008
  groovy|../languages/groovy.html|pl|2003
@@ -3683,7 +3685,7 @@ pipeTable
  trio|../languages/trio.html|pl|1990
  triple|../languages/triple.html|pl|2002
  triroff|../languages/triroff.html|pl|1983
- troff|../languages/troff.html|pl|1973
+ troff|../languages/troff.html|textMarkup|1973
  tromp-diagrams|../languages/tromp-diagrams.html|notation|2014
  trs-80-color-computer|../languages/trs-80-color-computer.html|pl|1980
  truck|../languages/truck.html|pl|2019

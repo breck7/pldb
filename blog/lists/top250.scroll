@@ -93,8 +93,8 @@ pipeTable
  stata|../languages/stata.html|1985|pl|82
  sparql|../languages/sparql.html|2008|queryLanguage|83
  simula|../languages/simula.html|1965|pl|84
- transact-sql|../languages/transact-sql.html|1984|queryLanguage|85
- sed|../languages/sed.html|1974|pl|86
+ sed|../languages/sed.html|1974|pl|85
+ transact-sql|../languages/transact-sql.html|1984|queryLanguage|86
  supercollider|../languages/supercollider.html|1996|pl|87
  turbo-pascal|../languages/turbo-pascal.html|1983|compiler|88
  z-shell|../languages/z-shell.html|1990|pl|89
@@ -102,27 +102,27 @@ pipeTable
  visual-foxpro|../languages/visual-foxpro.html|1995|pl|91
  red|../languages/red.html|2011|pl|92
  turing|../languages/turing.html|1982|pl|93
- sagemath|../languages/sagemath.html|2005|pl|94
- twig|../languages/twig.html|2009|template|95
- pascal|../languages/pascal.html|1970|pl|96
- powershell|../languages/powershell.html|2006|pl|97
- postscript|../languages/postscript.html|1982|textMarkup|98
- sass|../languages/sass.html|2006|stylesheetLanguage|99
- url|../languages/url.html|1994|schema|100
- squeak|../languages/squeak.html|1996|pl|101
- textile|../languages/textile.html|2002|textMarkup|102
- spark|../languages/spark.html|1988|pl|103
- systemverilog|../languages/systemverilog.html|2002|pl|104
- unlambda|../languages/unlambda.html|1999|pl|105
- scilab|../languages/scilab.html|1990|pl|106
- z-notation|../languages/z-notation.html|1974|notation|107
- self|../languages/self.html|1987|pl|108
- thrift|../languages/thrift.html|2007|idl|109
- unified-parallel-c|../languages/unified-parallel-c.html|2003|pl|110
- snobol|../languages/snobol.html|1962|pl|111
- ocaml|../languages/ocaml.html|1996|pl|112
- qt|../languages/qt.html|1995|framework|113
- troff|../languages/troff.html|1973|pl|114
+ troff|../languages/troff.html|1973|textMarkup|94
+ sagemath|../languages/sagemath.html|2005|pl|95
+ twig|../languages/twig.html|2009|template|96
+ pascal|../languages/pascal.html|1970|pl|97
+ powershell|../languages/powershell.html|2006|pl|98
+ postscript|../languages/postscript.html|1982|textMarkup|99
+ sass|../languages/sass.html|2006|stylesheetLanguage|100
+ url|../languages/url.html|1994|schema|101
+ squeak|../languages/squeak.html|1996|pl|102
+ textile|../languages/textile.html|2002|textMarkup|103
+ spark|../languages/spark.html|1988|pl|104
+ systemverilog|../languages/systemverilog.html|2002|pl|105
+ unlambda|../languages/unlambda.html|1999|pl|106
+ scilab|../languages/scilab.html|1990|pl|107
+ z-notation|../languages/z-notation.html|1974|notation|108
+ self|../languages/self.html|1987|pl|109
+ thrift|../languages/thrift.html|2007|idl|110
+ unified-parallel-c|../languages/unified-parallel-c.html|2003|pl|111
+ snobol|../languages/snobol.html|1962|pl|112
+ ocaml|../languages/ocaml.html|1996|pl|113
+ qt|../languages/qt.html|1995|framework|114
  nim|../languages/nim.html|2008|pl|115
  symbol|../languages/symbol.html|1971|pl|116
  vrml|../languages/vrml.html|1994|pl|117
@@ -229,25 +229,25 @@ pipeTable
  pod|../languages/pod.html|1997|textMarkup|218
  pharo|../languages/pharo.html|2008|pl|219
  oxygene|../languages/oxygene.html|2002|pl|220
- umple|../languages/umple.html|2008|pl|221
- sql-92|../languages/sql-92.html|1992|pl|222
- http|../languages/http.html|1989|protocol|223
- scribe|../languages/scribe.html|1980|pl|224
- udp|../languages/udp.html|1980|protocol|225
- plpgsql|../languages/plpgsql.html|1998|pl|226
- watfiv|../languages/watfiv.html|1968|pl|227
- tls|../languages/tls.html|1999|protocol|228
- trac|../languages/trac.html|1964|pl|229
- forth|../languages/forth.html|1970|pl|230
+ txt2tags|../languages/txt2tags.html|2001|textMarkup|221
+ umple|../languages/umple.html|2008|pl|222
+ sql-92|../languages/sql-92.html|1992|pl|223
+ http|../languages/http.html|1989|protocol|224
+ scribe|../languages/scribe.html|1980|pl|225
+ udp|../languages/udp.html|1980|protocol|226
+ plpgsql|../languages/plpgsql.html|1998|pl|227
+ watfiv|../languages/watfiv.html|1968|pl|228
+ tls|../languages/tls.html|1999|protocol|229
+ trac|../languages/trac.html|1964|pl|230
  netlogo|../languages/netlogo.html|1999|pl|231
- m4|../languages/m4.html|1977|pl|232
- max|../languages/max.html|1990|jsonFormat|233
- idl|../languages/idl.html|1977|pl|234
- zpp|../languages/zpp.html|1991|pl|235
- x86-isa|../languages/x86-isa.html|1978|isa|236
- xcas|../languages/xcas.html|2001|pl|237
- wsdl|../languages/wsdl.html|2000|xmlFormat|238
- txt2tags|../languages/txt2tags.html|2001|textMarkup|239
+ forth|../languages/forth.html|1970|pl|232
+ m4|../languages/m4.html|1977|pl|233
+ max|../languages/max.html|1990|jsonFormat|234
+ idl|../languages/idl.html|1977|pl|235
+ zpp|../languages/zpp.html|1991|pl|236
+ x86-isa|../languages/x86-isa.html|1978|isa|237
+ xcas|../languages/xcas.html|2001|pl|238
+ wsdl|../languages/wsdl.html|2000|xmlFormat|239
  f-sharp|../languages/f-sharp.html|2005|pl|240
  s-plus|../languages/s-plus.html|1988|pl|241
  windows-powershell|../languages/windows-powershell.html|2006|pl|242

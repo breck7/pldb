@@ -4,7 +4,7 @@ maxColumns 1
 columnWidth 60
 
 aftertext
- Here is the list of all 4,427 entities in the PLDB. You can also download the whole database as a @CSV@.
+ Here is the list of all 4,429 entities in the PLDB. You can also download the whole database as a @CSV@.
  wrap @ a href="../pldb.csv"
 
 aftertext
@@ -667,6 +667,7 @@ pipeTable
  cheetah|../languages/cheetah.html|template|2001
  chef|../languages/chef.html|esolang|2002
  chemtrains|../languages/chemtrains.html|pl|1992
+ cheri|../languages/cheri.html|isa|2010
  chevrotain|../languages/chevrotain.html|library|2015
  chicken-lang|../languages/chicken-lang.html|esolang|2013
  chicken|../languages/chicken.html|pl|1994
@@ -1577,6 +1578,7 @@ pipeTable
  gridstudio-editor|../languages/gridstudio-editor.html|editor|2018
  grin|../languages/grin.html|pl|1977
  grml|../languages/grml.html|pl|2003
+ groff|../languages/groff.html|textMarkup|1990
  groove|../languages/groove.html|pl|1970
  groovy-server-pages|../languages/groovy-server-pages.html|template|2008
  groovy|../languages/groovy.html|pl|2003
@@ -4049,7 +4051,7 @@ pipeTable
  triple-pattern|../languages/triple-pattern.html|pattern|
  triple|../languages/triple.html|pl|2002
  triroff|../languages/triroff.html|pl|1983
- troff|../languages/troff.html|pl|1973
+ troff|../languages/troff.html|textMarkup|1973
  tromp-diagrams|../languages/tromp-diagrams.html|notation|2014
  trs-80-color-computer|../languages/trs-80-color-computer.html|pl|1980
  truck|../languages/truck.html|pl|2019
