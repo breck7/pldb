@@ -4,6 +4,7 @@ related datascript datomic sqlite
 type queryLanguage
 
 githubRepo https://github.com/qpdb/mentat
+ firstCommit 2016
 lineCommentKeyword ;
 example
  {:db/id          :person/email
@@ -14,3 +15,4 @@ example
  {:db/id          :person/friend
   :db/valueType   :db.type/ref
   :db/cardinality :db.cardinality/many}    ; People can have many friends.
+appeared 2016

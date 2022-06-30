@@ -82,10 +82,15 @@ class PLDBFileWithGitHub {
 
 		try {
 			const commit = JSON.parse(Disk.read(this.firstCommitResultPath))
+			const year = moment(commit.commit.author.date).format("YYYY")
 			file.set(
 				firstCommitPath,
-				moment(commit.commit.author.date).format("YYYY")
+				year
 			)
+
+			if (!file.get("appeared"))
+				file.set("appeared", year)
+
 			file.save()
 		} catch (err) {
 			console.error(err)
