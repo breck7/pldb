@@ -45,10 +45,7 @@ patterns
  hasNull? true
   null
  hasStrings? true
-  ""                     // An empty string value
-  " my string "          // A normal string
-  "\""                   // Contains one double-quote character
-  "\uABCD"               // Contains one unicode character
+  "hello world"
  hasBlobs? true
   // In the text format, blob values are denoted as RFC 4648-compliant Base64 text within two pairs of curly braces.
   // A valid blob value with one required padding character.

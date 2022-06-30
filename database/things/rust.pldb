@@ -4,6 +4,8 @@ type pl
 creators Graydon Hoare
 
 patterns
+ hasStrings? true
+  "hello world"
  hasComments? true
   // https://doc.rust-lang.org/reference/comments.html
   // a comment

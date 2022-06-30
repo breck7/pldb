@@ -78,7 +78,7 @@ patterns
      return arg;
   }
  hasStrings? true
-  const greeting = "hello world"
+  "hello world"
  hasTypeInference? true
  hasSingleTypeArrays? true
   const scores: int[]

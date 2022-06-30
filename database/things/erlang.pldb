@@ -3,6 +3,8 @@ appeared 1986
 type pl
 
 patterns
+ hasStrings? true
+  "hello world"
  canDoShebang? true
   #!/usr/bin/env escript
  hasComments? true

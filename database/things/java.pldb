@@ -15,6 +15,8 @@ patterns
   v.add("test");
   Integer i = v.get(0); // (type error)  compilation-time error
  hasSingleDispatch? true
+ hasStrings? true
+  "hello world"
  hasComments? true
  hasConstructors? true
  hasGarbageCollection? true

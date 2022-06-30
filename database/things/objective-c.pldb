@@ -4,6 +4,8 @@ type pl
 creators Brad Cox
 
 patterns
+ hasStrings? true
+  "hello world"
  hasSingleDispatch? true
  hasConstructors? true
  hasGarbageCollection? false

@@ -4,6 +4,8 @@ type pl
 creators Rasmus Lerdorf
 
 patterns
+ hasStrings? true
+  "hello world"
  hasMagicGettersAndSetters? true
       public function __set($name, $value)
      {

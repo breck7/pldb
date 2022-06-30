@@ -4,6 +4,8 @@ type pl
 creators Martin Odersky
 
 patterns
+ hasStrings? true
+  "hello world"
  hasPartialApplication? true
   def add(x: Int, y: Int) = {x+y}; add(1, _: Int)
  hasComments? true

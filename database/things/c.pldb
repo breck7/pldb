@@ -7,6 +7,8 @@ patterns
  hasRegularExpressionsSyntaxSugar? false
  hasPointers? true
   int *ptr;
+ hasStrings? true
+  "hello world"
  hasAssertStatements? true
   #include <assert.h>
   int i, a[10];

@@ -113,7 +113,7 @@ patterns
        def transform(self, x):
            return x * x * x
  hasStrings? true
-  greeting = "hello world"
+  "hello world"
  hasZeroBasedNumbering? true
  hasDisposeBlocks? true
   with resource_context_manager() as resource:

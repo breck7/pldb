@@ -85,6 +85,8 @@ patterns
  hasConstants? true
   int const one = 1;
  hasGarbageCollection? false
+ hasStrings? true
+  "hello world"
  hasGotos? true
   // C/C++ program to check if a number is 
   // even or not using goto statement 

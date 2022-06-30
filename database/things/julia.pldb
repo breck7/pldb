@@ -3,6 +3,8 @@ appeared 2012
 type pl
 
 patterns
+ hasStrings? true
+  "hello world"
  hasMultipleDispatch? true
   collide_with(x::Asteroid, y::Asteroid) = ... # deal with asteroid hitting asteroid
   collide_with(x::Asteroid, y::Spaceship) = ... # deal with asteroid hitting spaceship

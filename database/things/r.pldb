@@ -4,6 +4,8 @@ type pl
 creators Ross Ihaka
 
 patterns
+ hasStrings? true
+  "hello world"
  hasBitWiseOperators? true
   ! x
   x & y

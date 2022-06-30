@@ -3,6 +3,8 @@ appeared 1994
 type pl
 
 patterns
+ hasStrings? true
+  "hello world"
  isLisp? true
  hasSymbolTables? true
   ;; Some programming languages allow the symbol table to be manipulated at run-time, so that symbols can be added at any time.

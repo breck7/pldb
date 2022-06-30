@@ -20,7 +20,7 @@ patterns
            print msg
            print : End of message. 
  hasStrings? true
-  print "Hai, guys!"
+  "hello world"
  hasLineComments? true
   -- A comment
 

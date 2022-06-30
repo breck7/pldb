@@ -4,6 +4,8 @@ type pl
 creators Anders Hejlsberg
 
 patterns
+ hasStrings? true
+  "hello world"
  hasAsyncAwait? true
   public async Task<int> FindPageSize(Uri uri) 
   {

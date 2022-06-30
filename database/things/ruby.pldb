@@ -6,6 +6,8 @@ creators Yukihiro Matsumoto
 patterns
  hasDependentTypes? false
  hasDisposeBlocks? false
+ hasStrings? true
+  "hello world"
  hasRegularExpressionsSyntaxSugar? true
   puts "Hello World".match(/\w/)
  hasDuckTyping? true

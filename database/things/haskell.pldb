@@ -3,6 +3,8 @@ appeared 1990
 type pl
 
 patterns
+ hasStrings? true
+  "hello world"
  hasRunTimeGuards? true
   f x
    | x > 0 = 1

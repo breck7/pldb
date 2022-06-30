@@ -4,6 +4,8 @@ type pl
 creators Chris Lattner
 
 patterns
+ hasStrings? true
+  "hello world"
  hasSingleDispatch? true
  hasComments? true
  hasImports? true

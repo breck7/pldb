@@ -3,6 +3,8 @@ appeared 1984
 type pl
 
 patterns
+ hasStrings? true
+  "hello world"
  hasComments? true
   % This is a comment
  hasBlockComments? true

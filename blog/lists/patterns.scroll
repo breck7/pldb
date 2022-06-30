@@ -20,6 +20,7 @@ pipeTable
  Line Comments|../languages/line-comments-pattern.html||# from here to end of line is a comment|82
  Semantic Indentation|../languages/semantic-indentation-pattern.html||if true(newline/space)print True|51
  Operator Overloading|../languages/operator-overloading-pattern.html||def __add__(): doSomethingDifferent()|30
+ Strings|../languages/strings-pattern.html||"""hi"""|28
  Import Pattern|../languages/import-pattern.html||import package|27
  Directives|../languages/directives-pattern.html||use strict;|18
  Block Comments|../languages/block-comments-pattern.html||/* a looong comment */|14
@@ -30,7 +31,6 @@ pipeTable
  Message Passing|../languages/message-passing-pattern.html||"""get homepage"""|10
  Macros|../languages/macros-pattern.html||#define height 10|10
  Booleans|../languages/booleans-pattern.html||doBabiesSleep = false|10
- Strings|../languages/strings-pattern.html||"""hi"""|9
  Integers|../languages/integers-pattern.html||int score = 28|8
  Static Typing|../languages/static-typing-pattern.html||int score = 100|7
  Single Dispatch|../languages/single-dispatch-pattern.html||person.run()|7

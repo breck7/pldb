@@ -5,6 +5,8 @@ creators Rich Hickey
 
 patterns
  isLisp? true
+ hasStrings? true
+  "hello world"
  hasPartialApplication? true
   (defn fun-full [x y] (+ x y))
   (fun-full 2 3)

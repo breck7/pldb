@@ -4,6 +4,8 @@ type pl
 creators Larry Wall
 
 patterns
+ hasStrings? true
+  "hello world"
  hasRegularExpressionsSyntaxSugar? true
   print "Hello World".match(/\w/)
  hasPartialApplication? true

@@ -4,6 +4,8 @@ type pl
 creators Rob Pike and Ken Thompson and Robert Griesemer
 
 patterns
+ hasStrings? true
+  "hello world"
  hasPointers? true
   package main
   
