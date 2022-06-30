@@ -1,8 +1,11 @@
 title Acknowledgements
 
+subsection Contributors
+
 aftertext
- Thank you to everyone who contributed directly to the PLDB repo: PavelVozenilek, lguzzon, SuperFola, johnwcowan, cgccuser, adityaxdiwakar, stevepeak, yang724687930, StoneCypher, Cyberneticist-UK and jenshaase.
- https://github.com/breck7/pldb/graphs/contributors everyone
+ Thank you to everyone who has contributed directly to the PLDB repo: PavelVozenilek, lguzzon, SuperFola, johnwcowan, cgccuser, adityaxdiwakar, stevepeak, yang724687930, StoneCypher, Cyberneticist-UK and jenshaase.
+ https://github.com/breck7/pldb/graphs/contributors contributed directly
+ https://github.com/breck7/pldb PLDB repo
  https://github.com/PavelVozenilek PavelVozenilek
  https://github.com/lguzzon lguzzon
  https://github.com/SuperFola SuperFola
@@ -14,6 +17,8 @@ aftertext
  https://github.com/StoneCypher StoneCypher
  https://github.com/Cyberneticist-UK Cyberneticist-UK
  https://github.com/jenshaase jenshaase
+
+subsection Sources
 
 aftertext
  The vast majority of the information on this site comes from other websites and should always include a link back to the `source`. Thank you to all of those sites, including:
@@ -41,19 +46,46 @@ list
  - <a href="https://riju.codes">riju.codes</a>
  - <a href="https://rosettacode.org">rosettacode.org</a>
  - <a href="https://sourceware.org">sourceware.org</a>
+ - <a href="https://sr.ht">sr.ht</a>
  - <a href="https://tio.run">tio.run</a>
  - <a href="https://tiobe.com">tiobe.com</a>
  - <a href="https://twitter.com">twitter.com</a>
  - <a href="https://ubuntu.com">ubuntu.com</a>
  - <a href="https://wikipedia.org">wikipedia.org</a>
 
+subsection NPM Packages
+
+aftertext
+ Thank you to the developers building these packages used by PLDB:
+
+comment autogenPackages
+list
+ - <a href="https://www.npmjs.com/package/autocompleter">autocompleter</a>
+ - <a href="https://www.npmjs.com/package/fast-csv">fast-csv</a>
+ - <a href="https://www.npmjs.com/package/jquery">jquery</a>
+ - <a href="https://www.npmjs.com/package/jsdom">jsdom</a>
+ - <a href="https://www.npmjs.com/package/jtree">jtree</a>
+ - <a href="https://www.npmjs.com/package/lodash">lodash</a>
+ - <a href="https://www.npmjs.com/package/moment">moment</a>
+ - <a href="https://www.npmjs.com/package/numeral">numeral</a>
+ - <a href="https://www.npmjs.com/package/pageviews">pageviews</a>
+ - <a href="https://www.npmjs.com/package/repo-first-commit">repo-first-commit</a>
+ - <a href="https://www.npmjs.com/package/scroll-cli">scroll-cli</a>
+ - <a href="https://www.npmjs.com/package/simple-statistics">simple-statistics</a>
+ - <a href="https://www.npmjs.com/package/superagent">superagent</a>
+ - <a href="https://www.npmjs.com/package/wikijs">wikijs</a>
+ - <a href="https://www.npmjs.com/package/yaml">yaml</a>
+subsection Other Open Source Projects
+
 aftertext
  PLDB wouldn't be possible without the people behind hundreds of open source technologies including NodeJS, TypeScript, and many, many more!
  https://nodejs.org/en/ NodeJS
  https://www.typescriptlang.org/ TypeScript
 
+subsection Builders
+
 aftertext
- And of course, thank you to all of the hard working engineers, scientists, mathematicians, hobbyists, and tinkerers out who for millenia have been inventing the things that are the subject of this site.
+ And of course, thank you to all of the hard working programmers, engineers, scientists, mathematicians, hobbyists, and tinkerers who for millennia have been inventing the things that are the subject of this site.
 
 maxColumns 1
 columnWidth 60

@@ -552,10 +552,24 @@ class Builder extends AbstractBuilder {
       sources.map(s => ` - <a href="https://${s}">${s}</a>`).join("\n")
 
     const path = __dirname + "/blog/posts/acknowledgements.scroll"
-    const tree = new TreeNode(Disk.read(path))
-    replaceNext(tree, "comment autogenAcknowledgements", table)
+    const page = new TreeNode(Disk.read(path))
+    replaceNext(page, "comment autogenAcknowledgements", table)
 
-    Disk.write(path, tree.toString())
+    const npmPackages = Object.keys({
+      ...require("./package.json").dependencies,
+      ...require("./database/importers/package.json").dependencies
+    })
+
+    npmPackages.sort()
+
+    const packageTable =
+      `list\n` +
+      npmPackages
+        .map(s => ` - <a href="https://www.npmjs.com/package/${s}">${s}</a>`)
+        .join("\n")
+    replaceNext(page, "comment autogenPackages", packageTable)
+
+    Disk.write(path, page.toString())
   }
 
   buildGrammar() {
