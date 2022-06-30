@@ -109,6 +109,20 @@ a:hover {
 }
 
 .scrollAuthor {
+  font-size: 12px;
   font-style: italic;
   margin: 4px 0;
+  text-align: center;
+}
+
+.citationSection {
+  font-size: 10px;
+}
+.citationSection h4 {
+  text-align: center;
+}
+
+.scrollCiteComponent {
+  overflow: scroll;
+  margin: 6px 0;
 }

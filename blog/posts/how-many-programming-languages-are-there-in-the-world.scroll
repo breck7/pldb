@@ -1,6 +1,8 @@
 title How Many Programming Languages are there in the World?
 date 2017-11-17 12:00:00 -8000
 
+author https://breckyunits.com Breck Yunits
+
 aftertext
  dateline
  ~7,099 spoken languages exist. But how many
@@ -99,6 +101,4 @@ ohayoCode
  web.get https://pldb.pub/pldb.csv
   filter.where type = pl
    show.rowCount
-
-author https://breckyunits.com Breck Yunits
 

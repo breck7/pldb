@@ -33,13 +33,43 @@ aftertext
  by the data here, open an issue and explain what you need.
  https://github.com/breck7/pldb/issues/new open an issue
 
+subsection Open source
+
+aftertext
+ All data and source code used to generate this site are on GitHub.
+ https://github.com/breck7/pldb GitHub
+
+subsection Web server
+
 aftertext
  Information about this web server is available `here`.
  wrap ` a href="about-this-web-server.html"
 
+subsection Acknowledgements
+
 aftertext
  This site is powered by information and software from so many people and organizations, a few of which are listed on the acknowledgements page.
  link acknowledgements.html acknowledgements
+
+subsection Citation
+
+paragraph
+ PLDB content is published to the public domain and you can use it freely. If needed, here are 3 options for citing PLDB:
+
+quote
+ https://pldb.pub
+
+quote
+ Breck Yunits et al. (2022) - "The Programming Language Database". Published online at PLDB.pub. Retrieved from: 'https://pldb.pub' [Online Resource]
+
+code
+ @article{pldb,
+   author = {Breck Yunits et al.},
+   title = {The Programming Language Database},
+   journal = {PLDB},
+   year = {2022},
+   note = {https://pldb.pub}
+  }
 
 maxColumns 1
 columnWidth 60
