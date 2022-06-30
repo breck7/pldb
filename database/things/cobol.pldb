@@ -6,6 +6,8 @@ patterns
  hasPointers? true
  hasComments? true
  hasZeroBasedNumbering? false
+ hasLineComments? true
+  MOVE ABC to XYZ  *> This is a comment.
 
 wikipedia https://en.wikipedia.org/wiki/COBOL
  example
@@ -96,6 +98,8 @@ ubuntuPackage open-cobol
 codeMirror cobol
 
 rosettaCode COBOL
+
+lineCommentKeyword *>
 
 indeedJobs cobol developer
  2017 838

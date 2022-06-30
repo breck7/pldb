@@ -2,6 +2,8 @@ title LLVM IR
 appeared 2003
 type ir
 
+lineCommentKeyword #
+
 wikipedia https://en.wikipedia.org/wiki/LLVM
  example
   @.str = internal constant [14 x i8] c"hello, world\0A\00"

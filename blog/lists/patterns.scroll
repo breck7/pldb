@@ -28,7 +28,7 @@ pipeTable
  Booleans|../languages/booleans-pattern.html||doBabiesSleep = false|10
  Case Insensitive Identifiers|../languages/case-insensitive-identifiers-pattern.html||AnYcASE = 2|5
  Classes|../languages/classes-pattern.html||class Dog {}|4
- Comments|../languages/comment-pattern.html||# a comment|157
+ Comments|../languages/comment-pattern.html||# a comment|158
  Conditionals|../languages/conditionals-pattern.html||if (isTrue) doSomething()|2
  Constants|../languages/constants-pattern.html||const ONE = 1|3
  Constructors|../languages/constructor-pattern.html||Person: constructor(name: string): {}|12
@@ -63,7 +63,7 @@ pipeTable
  Iterators|../languages/iterators-pattern.html||for a in collection()|6
  Lazy Evaluation|../languages/lazy-evaluation-pattern.html||print(range(1000000)[2])|1
  Letter-first Identifiers|../languages/letter-first-identifiers-pattern.html||"seven11 = ""OK"" // 711 = ""ERROR"""|2
- Line Comments|../languages/line-comments-pattern.html||# from here to end of line is a comment|81
+ Line Comments|../languages/line-comments-pattern.html||# from here to end of line is a comment|82
  Lists|../languages/lists-pattern.html|array or vector or sequence|[2, 3, 10]|4
  Macros|../languages/macros-pattern.html||#define height 10|10
  Magic Getters and Setters|../languages/magic-getters-and-setters-pattern.html||get(name) => obj[name]|2

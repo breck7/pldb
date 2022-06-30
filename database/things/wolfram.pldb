@@ -4,6 +4,11 @@ type pl
 creators Stephen Wolfram
 aka wolframlanguage
 
+patterns
+ hasComments? true
+  (* A comment *)
+ hasLineComments? false
+
 wikipedia https://en.wikipedia.org/wiki/Wolfram_Language
  related mathematica-editor apl c lisp pascal prolog simula smalltalk julia mathematica unity-engine
  summary The Wolfram Language, a general multi-paradigm programming language developed by Wolfram Research, is the programming language of mathematical symbolic computation program Mathematica and the Wolfram Programming Cloud. It emphasizes symbolic computation, functional programming, and rule-based programming and can employ arbitrary structures and data. It includes built-in functions for generating and running Turing machines, creating graphics and audio, analyzing 3D models, matrix manipulations, and solving differential equations. It is extensively documented. The Wolfram language was released for the Raspberry Pi in 2013 with the goal of making it free for all Raspberry Pi users. It was controversially included in the recommended software bundle that the Raspberry Pi Foundation provides for beginners. Plans to port the Wolfram language to the Intel Edison were announced after the board's introduction at CES 2014. There was also a short lived proposal to make Wolfram libraries compatible with the Unity game engine, giving game developers access to the language's high level functions.
@@ -36,3 +41,4 @@ corporateDevelopers Wolfram Research
 jupyterKernel https://github.com/mmatera/iwolfram
 centralPackageRepositoryCount 0
 rijuRepl https://riju.codes/wolframlanguage
+webRepl https://www.wolframcloud.com/
