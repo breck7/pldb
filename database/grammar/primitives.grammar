@@ -46,6 +46,9 @@ abstractUrlNode
  cells keywordCell urlCell
  extends abstractFactNode
  abstract
+abstractGitRepoUrlNode
+ extends abstractUrlNode
+ abstract
 abstractDecimalNode
  cells keywordCell numberCell
  extends abstractFactNode
