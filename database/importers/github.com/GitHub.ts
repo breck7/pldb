@@ -23,7 +23,6 @@ const downloadJson = async (url, destination) => {
 const repoPath = "githubRepo"
 const firstCommitPath = `${repoPath} firstCommit`
 
-
 Disk.mkdir(cacheDir)
 Disk.mkdir(firstCommitCache)
 
@@ -49,10 +48,9 @@ class PLDBFileWithGitHub {
 
 		console.log(`Fetching "${file.primaryKey}"`)
 
-		const token = JSON.parse(Disk.read(__dirname + "/ignore/creds.json")).apiToken
-		if (!token)
-			return console.error(`No GitHub token found`)
-
+		const token = JSON.parse(Disk.read(__dirname + "/ignore/creds.json"))
+			.apiToken
+		if (!token) return console.error(`No GitHub token found`)
 
 		const url = file.get(repoPath)
 		const parts = url.split("/")
@@ -78,23 +76,27 @@ class PLDBFileWithGitHub {
 	writeToDatabase() {
 		const { file } = this
 		if (file.get(firstCommitPath) || !Disk.exists(this.firstCommitResultPath))
-			return
+			return this
 
 		try {
 			const commit = JSON.parse(Disk.read(this.firstCommitResultPath))
 			const year = moment(commit.commit.author.date).format("YYYY")
-			file.set(
-				firstCommitPath,
-				year
-			)
-
-			if (!file.get("appeared"))
-				file.set("appeared", year)
-
+			file.set(firstCommitPath, year)
 			file.save()
 		} catch (err) {
 			console.error(err)
 		}
+		return this
+	}
+
+	autocompleteAppeared() {
+		const { file } = this
+		const year = file.get(firstCommitPath)
+		if (!file.get("appeared") && year) {
+			file.set("appeared", year)
+			file.save()
+		}
+		return this
 	}
 }
 
@@ -109,9 +111,9 @@ class GitHubImporter {
 	}
 
 	writeAllCommand() {
-		this.linkedFiles.forEach(file =>
-			new PLDBFileWithGitHub(file).writeToDatabase()
-		)
+		this.linkedFiles.forEach(file => {
+			new PLDBFileWithGitHub(file).writeToDatabase().autocompleteAppeared()
+		})
 	}
 
 	get linkedFiles() {
