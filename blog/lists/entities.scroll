@@ -4,7 +4,7 @@ maxColumns 1
 columnWidth 60
 
 aftertext
- Here is the list of all 4,429 entities in the PLDB. You can also download the whole database as a @CSV@.
+ Here is the list of all 4,431 entities in the PLDB. You can also download the whole database as a @CSV@.
  wrap @ a href="../pldb.csv"
 
 aftertext
@@ -601,6 +601,7 @@ pipeTable
  camil|../languages/camil.html|pl|1978
  caml|../languages/caml.html|pl|1985
  candor|../languages/candor.html|pl|2012
+ candy-codes|../languages/candy-codes.html|barCodeFormat|2022
  canon-capsl|../languages/canon-capsl.html|pl|1989
  cantor|../languages/cantor.html|pl|1987
  capn-proto|../languages/capn-proto.html|idl|2013
@@ -3777,6 +3778,7 @@ pipeTable
  ssi|../languages/ssi.html|template|2004
  ssl-lang|../languages/ssl-lang.html|pl|1976
  ssl|../languages/ssl.html|protocol|1994
+ ssml|../languages/ssml.html|xmlFormat|2010
  stacklang|../languages/stacklang.html|pl|2018
  stackless-python|../languages/stackless-python.html|interpreter|1998
  stage2|../languages/stage2.html|pl|1970

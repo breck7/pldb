@@ -1,0 +1,28 @@
+title Speech Synthesis Markup Language
+type xmlFormat
+appeared 2010
+wikipedia https://en.wikipedia.org/wiki/Speech_Synthesis_Markup_Language
+example
+ <?xml version="1.0"?>
+ <speak xmlns="http://www.w3.org/2001/10/synthesis"
+        xmlns:dc="http://purl.org/dc/elements/1.1/"
+        version="1.0">
+   <metadata>
+     <dc:title xml:lang="en">Telephone Menu: Level 1</dc:title>
+   </metadata>
+ 
+   <p>
+     <s xml:lang="en-US">
+       <voice name="David" gender="male" age="25">
+         For English, press <emphasis>one</emphasis>.
+       </voice>
+     </s>
+     <s xml:lang="es-MX">
+       <voice name="Miguel" gender="male" age="25">
+         Para español, oprima el <emphasis>dos</emphasis>.
+       </voice>
+     </s>
+   </p>
+ 
+ </speak>
+reference https://www.w3.org/TR/speech-synthesis/
