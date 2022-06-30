@@ -4,7 +4,7 @@ maxColumns 1
 columnWidth 60
 
 aftertext
- Here is the list of all 4,432 entities in the PLDB. You can also download the whole database as a @CSV@.
+ Here is the list of all 4,435 entities in the PLDB. You can also download the whole database as a @CSV@.
  wrap @ a href="../pldb.csv"
 
 aftertext
@@ -295,7 +295,7 @@ pipeTable
  ascii|../languages/ascii.html|characterEncoding|1963
  asciidoc|../languages/asciidoc.html|textMarkup|2002
  asciidots|../languages/asciidots.html|esolang|2017
- asciimath|../languages/asciimath.html|textMarkup|
+ asciimath|../languages/asciimath.html|textMarkup|2014
  asf-sdf|../languages/asf-sdf.html|pl|1993
  ashmedai|../languages/ashmedai.html|pl|1967
  asic-programming-language|../languages/asic-programming-language.html|pl|1992
@@ -670,6 +670,7 @@ pipeTable
  chemtrains|../languages/chemtrains.html|pl|1992
  cheri|../languages/cheri.html|isa|2010
  chevrotain|../languages/chevrotain.html|library|2015
+ chibicc|../languages/chibicc.html|compiler|2019
  chicken-lang|../languages/chicken-lang.html|esolang|2013
  chicken|../languages/chicken.html|pl|1994
  chicon|../languages/chicon.html|pl|1998
@@ -687,7 +688,7 @@ pipeTable
  chronolog|../languages/chronolog.html|pl|1985
  chronologmc|../languages/chronologmc.html|pl|1996
  chronologz|../languages/chronologz.html|pl|1993
- chrysaLisp|../languages/chrysaLisp.html|pl|
+ chrysaLisp|../languages/chrysaLisp.html|pl|2015
  chuck|../languages/chuck.html|pl|2003
  ciao-programming-language|../languages/ciao-programming-language.html|pl|1984
  ciao|../languages/ciao.html|pl|2013
@@ -1620,6 +1621,7 @@ pipeTable
  handlebars|../languages/handlebars.html|template|2010
  hank|../languages/hank.html|pl|1996
  harbour|../languages/harbour.html|pl|1999
+ hare|../languages/hare.html|pl|
  harlan|../languages/harlan.html|pl|2011
  harvey|../languages/harvey.html|pl|1972
  harwell-boeing-format|../languages/harwell-boeing-format.html|textDataFormat|1989
@@ -1868,7 +1870,7 @@ pipeTable
  jacl|../languages/jacl.html|pl|
  jade|../languages/jade.html|pl|1996
  jai|../languages/jai.html|pl|2014
- jakt|../languages/jakt.html|pl|
+ jakt|../languages/jakt.html|pl|2022
  jal-compiler|../languages/jal-compiler.html|compiler|2000
  janet|../languages/janet.html|pl|2018
  janus-lang|../languages/janus-lang.html|pl|1982
@@ -1984,6 +1986,7 @@ pipeTable
  kayia|../languages/kayia.html|pl|1999
  kb|../languages/kb.html|pl|1990
  kee|../languages/kee.html|pl|1984
+ kefir|../languages/kefir.html|compiler|
  kei|../languages/kei.html|pl|2019
  kek-nodal|../languages/kek-nodal.html|pl|1985
  keli|../languages/keli.html|pl|2018
@@ -2247,7 +2250,7 @@ pipeTable
  m-lisp|../languages/m-lisp.html|pl|1991
  m-programming-language|../languages/m-programming-language.html|pl|2008
  m2001|../languages/m2001.html|pl|2001
- m3db|../languages/m3db.html|database|
+ m3db|../languages/m3db.html|database|2016
  m4|../languages/m4.html|pl|1977
  m4sugar|../languages/m4sugar.html|pl|2003
  mac|../languages/mac.html|pl|1957
@@ -2632,7 +2635,7 @@ pipeTable
  ngs|../languages/ngs.html|pl|2013
  nhx|../languages/nhx.html|textDataFormat|1999
  nial|../languages/nial.html|pl|1981
- nianiolang|../languages/nianiolang.html|pl|
+ nianiolang|../languages/nianiolang.html|pl|2015
  nice|../languages/nice.html|pl|2006
  nickle|../languages/nickle.html|pl|2001
  nikl|../languages/nikl.html|pl|1986
@@ -2905,7 +2908,7 @@ pipeTable
  pasion|../languages/pasion.html|pl|1986
  pasro|../languages/pasro.html|pl|1985
  passambler|../languages/passambler.html|pl|2015
- pasukon|../languages/pasukon.html|grammarLanguage|
+ pasukon|../languages/pasukon.html|grammarLanguage|2020
  patchwork|../languages/patchwork.html|pl|
  path-pascal|../languages/path-pascal.html|pl|1978
  pattern-matching-pattern|../languages/pattern-matching-pattern.html|pattern|1960
@@ -3125,7 +3128,7 @@ pipeTable
  progres|../languages/progres.html|pl|1991
  progsbase|../languages/progsbase.html|pl|2018
  proiv|../languages/proiv.html|pl|1976
- project-mentat|../languages/project-mentat.html|queryLanguage|
+ project-mentat|../languages/project-mentat.html|queryLanguage|2016
  prolog-d-linda|../languages/prolog-d-linda.html|pl|1990
  prolog-elf|../languages/prolog-elf.html|pl|1985
  prolog-iii|../languages/prolog-iii.html|pl|1984
@@ -3154,7 +3157,7 @@ pipeTable
  providex|../languages/providex.html|pl|1992
  prow|../languages/prow.html|pl|1969
  proxy|../languages/proxy.html|pl|1992
- prql|../languages/prql.html|queryLanguage|
+ prql|../languages/prql.html|queryLanguage|2022
  ps-algol|../languages/ps-algol.html|pl|1981
  psather|../languages/psather.html|pl|1991
  psg|../languages/psg.html|pl|1969
@@ -3900,7 +3903,7 @@ pipeTable
  t2b|../languages/t2b.html|pl|2018
  t3x|../languages/t3x.html|pl|1995
  tab|../languages/tab.html|pl|2015
- tablam|../languages/tablam.html|queryLanguage|
+ tablam|../languages/tablam.html|queryLanguage|2020
  tablatal|../languages/tablatal.html|pl|2017
  tableau-app|../languages/tableau-app.html|application|2003
  tablog|../languages/tablog.html|pl|1984
