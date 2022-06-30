@@ -48,6 +48,7 @@ class Builder extends AbstractBuilder {
     this.buildPatternsPage()
     this.buildLanguagesPage()
     this.buildFileExtensionsPage()
+    this.buildKeywordsPage()
     this.buildAcknowledgementsPage()
     this.buildTopPages()
     this.buildEntitiesPage()
@@ -98,6 +99,76 @@ class Builder extends AbstractBuilder {
   buildTopPages() {
     this._buildTopPages(100)
     this._buildTopPages(250)
+  }
+
+  buildKeywordsPage() {
+    pldbBase.loadFolder()
+    const pagePath = __dirname + "/blog/lists/keywords.scroll"
+    const page = new TreeNode(Disk.read(pagePath))
+
+    const langsWithKeywords = pldbBase.filter(
+      file => file.isLanguage && file.has("keywords")
+    )
+
+    const theWords = {}
+    langsWithKeywords.forEach(file => {
+      const name = file.primaryKey
+      file
+        .get("keywords")
+        .split(" ")
+        .forEach(word => {
+          const escapedWord = "Q" + word.toLowerCase() // b.c. you cannot have a key "constructor" in JS objects.
+
+          if (!theWords[escapedWord])
+            theWords[escapedWord] = {
+              keyword: escapedWord,
+              count: 0,
+              langs: []
+            }
+
+          const entry = theWords[escapedWord]
+
+          entry.langs.push(
+            `<a href='../languages/${file.primaryKey}.html'>${file.primaryKey}</a>`
+          )
+          entry.count++
+        })
+    })
+
+    Object.values(theWords).forEach((word: any) => {
+      word.langs = word.langs.join(" ")
+      word.frequency =
+        Math.round(
+          100 * lodash.round(word.count / langsWithKeywords.length, 2)
+        ) + "%"
+    })
+
+    const sorted = lodash.sortBy(theWords, "count")
+    sorted.reverse()
+
+    const tree = new TreeNode(sorted)
+    tree.forEach(node => {
+      node.set("keyword", node.get("keyword").substr(1))
+    })
+
+    replaceNext(
+      page,
+      "comment autogenKeywords",
+      toScrollTable(tree, ["keyword", "count", "frequency", "langs"])
+    )
+
+    replaceNext(
+      page,
+      "comment autogenAbout",
+      `paragraph
+ Here is the list of ${numeral(Object.keys(theWords).length).format(
+   "0,0"
+ )} keywords for the ${
+        langsWithKeywords.length
+      } languages that PLDB has that information. This list is case insensitive. Refer to the DB for case information.`
+    )
+
+    Disk.write(pagePath, page.toString())
   }
 
   buildFileExtensionsPage() {

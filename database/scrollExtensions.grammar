@@ -32,7 +32,7 @@ tableSearchNode
       $(document).ready( function () {
       const urlSearchParams = new URLSearchParams(window.location.search)
       const params = Object.fromEntries(urlSearchParams.entries())
-      $('table').DataTable({"paging": false,search:{ search: params.filter || ""}});
+      $('table').DataTable({"order": [],"paging": false,search:{ search: params.filter || ""}});
     } );
     </script>`
   }

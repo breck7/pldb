@@ -495,7 +495,7 @@ ${facts.map(fact => ` - ${fact}`).join("\n")}`
   get keywordsSection() {
     const keywords = this.file.get("keywords")
     if (!keywords) return ""
-    return `subsection Keywords in ${this.file.title}
+    return `subsection <a href="../lists/keywords.html?filter=${this.primaryKey}">Keywords</a> in ${this.file.title}
 paragraph
  ${keywords}`
   }
