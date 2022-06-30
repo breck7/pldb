@@ -1,12 +1,71 @@
-title rust-mir
+title Rust MIR
+standsFor Rust Mid-level Intermediate Representation
 appeared 2016
 type ir
-
+webRepl https://play.rust-lang.org/
 githubRepo https://github.com/rust-lang/rust/tree/master/src/librustc_mir
 
-website https://blog.rust-lang.org/2016/04/19/MIR.html
+reference https://rustc-dev-guide.rust-lang.org/hir.html
+reference https://blog.rust-lang.org/2016/04/19/MIR.html
 status active
 fileType text
 compilesTo llvmir
 isOpenSource true
 centralPackageRepositoryCount 0
+related swift-il
+lineCommentKeyword //
+
+example
+ // WARNING: This output format is intended for human consumers only
+ // and is subject to change without notice. Knock yourself out.
+ fn main() -> () {
+     let mut _0: ();                      // return place in scope 0 at src/main.rs:1:11: 1:11
+     let mut _1: std::vec::Vec<i32>;      // in scope 0 at src/main.rs:2:9: 2:16
+     let _2: ();                          // in scope 0 at src/main.rs:3:5: 3:16
+     let mut _3: &mut std::vec::Vec<i32>; // in scope 0 at src/main.rs:3:5: 3:16
+     let _4: ();                          // in scope 0 at src/main.rs:4:5: 4:16
+     let mut _5: &mut std::vec::Vec<i32>; // in scope 0 at src/main.rs:4:5: 4:16
+     scope 1 {
+         debug vec => _1;                 // in scope 1 at src/main.rs:2:9: 2:16
+     }
+ 
+     bb0: {
+         _1 = Vec::<i32>::new() -> bb1;   // scope 0 at src/main.rs:2:19: 2:29
+                                          // mir::Constant
+                                          // + span: src/main.rs:2:19: 2:27
+                                          // + user_ty: UserType(0)
+                                          // + literal: Const { ty: fn() -> Vec<i32> {Vec::<i32>::new}, val: Value(Scalar(<ZST>)) }
+     }
+ 
+     bb1: {
+         _3 = &mut _1;                    // scope 1 at src/main.rs:3:5: 3:16
+         _2 = Vec::<i32>::push(move _3, const 1_i32) -> [return: bb2, unwind: bb5]; // scope 1 at src/main.rs:3:5: 3:16
+                                          // mir::Constant
+                                          // + span: src/main.rs:3:9: 3:13
+                                          // + literal: Const { ty: for<'r> fn(&'r mut Vec<i32>, i32) {Vec::<i32>::push}, val: Value( Scalar(<ZST>)) }
+     }
+ 
+     bb2: {
+         _5 = &mut _1;                    // scope 1 at src/main.rs:4:5: 4:16
+         _4 = Vec::<i32>::push(move _5, const 2_i32) -> [return: bb3, unwind: bb5]; // scope 1 at src/main.rs:4:5: 4:16
+                                          // mir::Constant
+                                          // + span: src/main.rs:4:9: 4:13
+                                          // + literal: Const { ty: for<'r> fn(&'r mut Vec<i32>, i32) {Vec::<i32>::push}, val: Value( Scalar(<ZST>)) }
+     }
+ 
+     bb3: {
+         drop(_1) -> bb4;                 // scope 0 at src/main.rs:5:1: 5:2
+     }
+ 
+     bb4: {
+         return;                          // scope 0 at src/main.rs:5:2: 5:2
+     }
+ 
+     bb5 (cleanup): {
+         drop(_1) -> bb6;                 // scope 0 at src/main.rs:5:1: 5:2
+     }
+ 
+     bb6 (cleanup): {
+         resume;                          // scope 0 at src/main.rs:1:1: 5:2
+     }
+ }

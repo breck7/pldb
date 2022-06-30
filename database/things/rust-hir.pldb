@@ -1,9 +1,18 @@
-title rust-hir
+title Rust HIR
+standsFor Rust High-level Intermediate Representation
 appeared 2015
 type ir
 
-status historical
+status active
 firstAnnouncement https://github.com/rust-lang/rfcs/blob/master/text/1191-hir.md
 fileType text
 announcementMethod rfc
 centralPackageRepositoryCount 0
+related rust-mir swift-il
+webRepl https://play.rust-lang.org/
+example
+ #[prelude_import]
+ use ::std::prelude::rust_2015::*;
+ #[macro_use]
+ extern crate std;
+ fn main() { let mut vec = Vec::new(); vec.push(1); vec.push(2); }
