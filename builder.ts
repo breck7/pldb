@@ -308,10 +308,13 @@ class Builder extends AbstractBuilder {
       }
     })
 
+    const sorted = lodash.sortBy(files, "languages")
+    sorted.reverse()
+
     replaceNext(
       page,
       "comment autogenPatterns",
-      toScrollTable(new TreeNode(files), [
+      toScrollTable(new TreeNode(sorted), [
         "pattern",
         "patternLink",
         "aka",
