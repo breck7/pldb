@@ -192,6 +192,7 @@ rijuReplNode
  crux rijuRepl
  string sourceDomain riju.codes
  single
+ inScope fileExtensionsNode descriptionNode websiteNode githubRepoNode exampleNode
 websiteNode
  description URL of the official homepage for the language project.
  extends abstractUrlNode

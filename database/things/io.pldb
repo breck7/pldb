@@ -50,3 +50,10 @@ lineCommentKeyword //
 visualParadigm false
 centralPackageRepositoryCount 0
 rijuRepl https://riju.codes/io
+ example
+  "Hello, world!" println
+  
+ description Dynamic prototype-based programming language in the same realm as Smalltalk and Self
+ fileExtensions io
+ website https://iolanguage.org/
+ githubRepo https://github.com/IoLanguage/io

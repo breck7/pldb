@@ -38,3 +38,16 @@ githubRepo https://github.com/odin-lang/Odin
 
 website https://odin-lang.org
 rijuRepl https://riju.codes/odin
+ example
+  package main
+  
+  import "core:fmt"
+  
+  main :: proc() {
+      fmt.printf("Hello, world!\n");
+  }
+  
+ description Alternative to C with goals of simplicity, high performance, built for modern systems, and joy of programming
+ fileExtensions odin
+ website https://odin-lang.org/
+ githubRepo https://github.com/odin-lang/Odin

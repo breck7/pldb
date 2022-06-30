@@ -8,3 +8,15 @@ fileType text
 centralPackageRepositoryCount 0
 aka qsharp
 rijuRepl https://riju.codes/qsharp
+ example
+  namespace main {
+  
+      open Microsoft.Quantum.Canon;
+      open Microsoft.Quantum.Intrinsic;
+  
+      @EntryPoint()
+      operation Main() : Unit {
+          Message("Hello, world!");
+      }
+  }
+  

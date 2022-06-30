@@ -40,4 +40,9 @@ rosettaCode Vala
 
 centralPackageRepositoryCount 0
 rijuRepl https://riju.codes/vala
+ example
+  void main () {
+      print("Hello, world!\n");
+  }
+  
 lineCommentKeyword //

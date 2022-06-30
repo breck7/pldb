@@ -91,3 +91,10 @@ jupyterKernel https://github.com/fredokun/cl-jupyter
 centralPackageRepositoryCount 0
 aka commonlisp
 rijuRepl https://riju.codes/commonlisp
+ example
+  (format t "Hello, world!")
+  
+ description Modern, multi-paradigm, high-performance, compiled, ANSI-standardized, most prominent (along with Scheme) descendant of the Lisp family
+ fileExtensions lisp lsp l cl fasl
+ website https://common-lisp.net/
+ githubRepo https://sourceforge.net/p/sbcl/sbcl/ci/master/tree/

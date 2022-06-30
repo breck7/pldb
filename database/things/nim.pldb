@@ -105,3 +105,6 @@ languageServerProtocolProject https://github.com/PMunch/nimlsp
  writtenIn nim
 packageRepository https://nimble.directory/
 rijuRepl https://riju.codes/nim
+ example
+  echo "Hello, world!"
+  

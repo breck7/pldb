@@ -74,3 +74,7 @@ corporateDevelopers REBOL Technologies
 lineCommentKeyword ;
 centralPackageRepositoryCount 0
 rijuRepl https://riju.codes/rebol
+ example
+  REBOL [Title: "Main"]
+  print "Hello, world!"
+  

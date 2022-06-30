@@ -155,3 +155,10 @@ stackOverflowSurvey
   percentageUsing 0.01
 packageRepository https://hex.pm/
 rijuRepl https://riju.codes/erlang
+ example
+  -module(main).
+  -export([main/0]).
+  
+  main() ->
+      io:fwrite("Hello, world!\n").
+  

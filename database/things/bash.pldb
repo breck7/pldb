@@ -84,3 +84,9 @@ stackOverflowSurvey
   percentageUsing 0.27
 packageRepository http://www.bpkg.sh/
 rijuRepl https://riju.codes/bash
+ example
+  echo "Hello, world!"
+  
+ description Unix shell and command language written by Brian Fox for the GNU Project as a free software replacement for the Bourne shell
+ fileExtensions bash sh
+ githubRepo https://savannah.gnu.org/projects/bash/

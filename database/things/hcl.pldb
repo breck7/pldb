@@ -55,3 +55,6 @@ isOpenSource true
 corporateDevelopers HashiCorp
 centralPackageRepositoryCount 0
 rijuRepl https://riju.codes/hcl
+ example
+  output = "Hello, world!"
+  

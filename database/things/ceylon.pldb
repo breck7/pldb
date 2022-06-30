@@ -93,3 +93,12 @@ languageServerProtocolProject https://github.com/jvasileff/vscode-ceylon
  writtenIn ceylon
 centralPackageRepositoryCount 0
 rijuRepl https://riju.codes/ceylon
+ example
+  shared void run() {
+      print("Hello, world!");
+  }
+  
+ description Object-oriented, strongly statically typed programming language with an emphasis on immutability, created by Red Hat
+ fileExtensions ceylon
+ website https://ceylon-lang.org/
+ githubRepo https://ceylon-lang.org/code/source/

@@ -395,3 +395,12 @@ rosettaCode EC
 
 centralPackageRepositoryCount 0
 rijuRepl https://riju.codes/ec
+ example
+  class Main : Application
+  {
+     void Main()
+     {
+        PrintLn("Hello, world!");
+     }
+  }
+  

@@ -46,3 +46,8 @@ antlr https://github.com/antlr/grammars-v4/tree/master/scss
 
 centralPackageRepositoryCount 0
 rijuRepl https://riju.codes/scss
+ example
+  body:before {
+    content: "Hello, world!";
+  }
+  

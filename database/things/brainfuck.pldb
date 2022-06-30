@@ -85,3 +85,36 @@ antlr https://github.com/antlr/grammars-v4/tree/master/brainfuck
 jupyterKernel https://github.com/robbielynch/ibrainfuck
 centralPackageRepositoryCount 0
 rijuRepl https://riju.codes/brainf
+ example
+  ++++++++
+  [
+      >++++
+      [
+          >++
+          >+++
+          >+++
+          >+
+          <<<<-
+      ]
+      >+
+      >+
+      >-
+      >>+
+      [<]
+  
+      <-
+  ]
+  
+  >>.
+  >---.
+  +++++++..+++.
+  >>.
+  <-.
+  <.
+  +++.------.--------.
+  >>+.
+  >++.
+  
+ description Famous esoteric programming language created in 1993 by Urban Müller
+ fileExtensions b bf
+ githubRepo https://github.com/andreabolognani/beef

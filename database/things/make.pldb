@@ -15,3 +15,8 @@ related makefile
 
 centralPackageRepositoryCount 0
 rijuRepl https://riju.codes/make
+ example
+  .PHONY: all
+  all:
+  	@echo "Hello, world!"
+  

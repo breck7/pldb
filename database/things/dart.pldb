@@ -165,3 +165,8 @@ stackOverflowSurvey
   percentageUsing 0.06
 packageRepository https://pub.dartlang.org/
 rijuRepl https://riju.codes/dart
+ example
+  void main() {
+    print('Hello, world!');
+  }
+  

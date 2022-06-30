@@ -72,3 +72,13 @@ fileType text
 centralPackageRepositoryCount 0
 aka objectivecpp
 rijuRepl https://riju.codes/objectivecpp
+ example
+  #import <Foundation/Foundation.h>
+  
+  int main() {
+    NSAutoreleasePool *pool = [[NSAutoreleasePool alloc] init];
+    NSLog(@"Hello, world!");
+    [pool drain];
+    return 0;
+  }
+  

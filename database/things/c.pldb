@@ -246,3 +246,14 @@ stackOverflowSurvey
 centralPackageRepositoryCount 0
 gdbSupport true
 rijuRepl https://riju.codes/c
+ example
+  #include <stdio.h>
+  
+  int main() {
+    printf("Hello, world!\n");
+    return 0;
+  }
+  
+ description General-purpose, procedural computer programming language supporting structured programming, lexical variable scope, and recursion, with a static type system
+ fileExtensions c h
+ githubRepo https://github.com/llvm/llvm-project

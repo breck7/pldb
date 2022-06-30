@@ -179,3 +179,8 @@ keywords ACCESS ACTION ADVANCE ALLOCATABLE ALLOCATE ASSIGN ASSIGNMENT BACKSPACE 
 centralPackageRepositoryCount 0
 gdbSupport true
 rijuRepl https://riju.codes/fortran
+ example
+         PROGRAM hello
+            PRINT *, "Hello, world!"
+         END PROGRAM hello
+  

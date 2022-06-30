@@ -77,3 +77,10 @@ lineCommentKeyword //
 jupyterKernel https://github.com/kevinior/jupyter-pike-kernel
 centralPackageRepositoryCount 0
 rijuRepl https://riju.codes/pike
+ example
+  int main()
+  {
+    write("Hello, world!\n");
+    return 0;
+  }
+  

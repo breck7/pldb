@@ -31,3 +31,10 @@ hopl 911
 
 centralPackageRepositoryCount 0
 rijuRepl https://riju.codes/miranda
+ example
+  main = [Stdout "Hello, world!"]
+  
+ description Pure, non-strict, polymorphic, higher order functional programming language designed by David Turner in 1983-6
+ fileExtensions m
+ website https://www.cs.kent.ac.uk/people/staff/dat/miranda/
+ githubRepo https://www.cs.kent.ac.uk/people/staff/dat/miranda/downloads/

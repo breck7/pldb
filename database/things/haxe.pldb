@@ -92,3 +92,10 @@ languageServerProtocolProject https://github.com/vshaxe/haxe-language-server
 lineCommentKeyword //
 packageRepository https://lib.haxe.org/
 rijuRepl https://riju.codes/haxe
+ example
+  class Main {
+      static public function main() {
+          trace("Hello, world!");
+      }
+  }
+  

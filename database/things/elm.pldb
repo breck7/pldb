@@ -182,3 +182,9 @@ languageServerProtocolProject https://github.com/elm-tooling/elm-language-server
 visualParadigm false
 packageRepository https://package.elm-lang.org/
 rijuRepl https://riju.codes/elm
+ example
+  module Main exposing (..)
+  
+  output : String
+  output = "Hello, world!"
+  

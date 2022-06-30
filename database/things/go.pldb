@@ -228,3 +228,12 @@ stackOverflowSurvey
 centralPackageRepositoryCount 0
 gdbSupport true
 rijuRepl https://riju.codes/go
+ example
+  package main
+  
+  import "fmt"
+  
+  func main() {
+  	fmt.Println("Hello, world!")
+  }
+  

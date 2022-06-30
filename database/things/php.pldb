@@ -254,3 +254,8 @@ stackOverflowSurvey
   percentageUsing 0.22
 packageRepository https://packagist.org/
 rijuRepl https://riju.codes/php
+ example
+  <?php
+  
+  echo "Hello, world!\n";
+  

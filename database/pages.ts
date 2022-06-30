@@ -484,46 +484,62 @@ paragraph
   }
 
   get exampleSection() {
-    const exampleSection = []
-    let example: any = ""
-    let exampleMessage = ""
     const file = this.file
+    const examples = []
 
-    if ((example = file.getNode("example"))) {
-      exampleSection.push(`subsection Example code from the web:
+    file.findNodes("example").forEach(node => {
+      examples.push({
+        code: node.childrenToString(),
+        source: "the web",
+        link: ""
+      })
+    })
+
+    file.findNodes("rijuRepl example").forEach(node => {
+      examples.push({
+        code: node.childrenToString(),
+        source: "Riju",
+        link: file.get("rijuRepl")
+      })
+    })
+
+    file.findNodes("helloWorldCollection").forEach(node => {
+      examples.push({
+        code: node.childrenToString(),
+        source: "the Hello World Collection",
+        link: `http://helloworldcollection.de/#` + node.getWord(1)
+      })
+    })
+
+    const linguist_url = file.get("linguistGrammarRepo")
+    file.findNodes("linguistGrammarRepo example").forEach(node => {
+      examples.push({
+        code: node.childrenToString(),
+        source: "Linguist",
+        link: linguist_url
+      })
+    })
+
+    file.findNodes("wikipedia example").forEach(node => {
+      examples.push({
+        code: node.childrenToString(),
+        source: "Wikipedia",
+        link: file.get("wikipedia")
+      })
+    })
+
+    return examples
+      .map(
+        example =>
+          `subsection Example code from ${
+            !example.link
+              ? example.source
+              : `<a href='${example.link}'>` + example.source + "</a>"
+          }:
 code
- ${cleanAndRightShift(lodash.escape(example.childrenToString()), 1)}`)
-    }
-
-    if ((example = file.getNode("helloWorldCollection"))) {
-      const link = `http://helloworldcollection.de/#` + example.getWord(1)
-
-      exampleMessage = `Example code from the <a href="${link}">Hello World Collection</a>:`
-
-      exampleSection.push(`subsection ${exampleMessage}
-code
- ${cleanAndRightShift(lodash.escape(example.childrenToString()))}`)
-    }
-
-    if ((example = file.getNode("linguistGrammarRepo example"))) {
-      const linguist_url = file.get("linguistGrammarRepo")
-      exampleMessage = `Example code from <a href='${linguist_url}'>Linguist</a>:`
-
-      exampleSection.push(`subsection ${exampleMessage}
-code
- ${cleanAndRightShift(lodash.escape(example.childrenToString()))}`)
-    }
-
-    if ((example = file.getNode("wikipedia example"))) {
-      exampleMessage = `Example code from <a href="${file.get(
-        "wikipedia"
-      )}">Wikipedia</a>:`
-
-      exampleSection.push(`subsection ${exampleMessage}
-code
- ${cleanAndRightShift(lodash.escape(example.childrenToString()))}`)
-    }
-    return exampleSection.join("\n\n")
+ ${cleanAndRightShift(lodash.escape(example.code), 1)}`
+      )
+      .join("\n\n")
   }
 
   get tryNowRepls() {

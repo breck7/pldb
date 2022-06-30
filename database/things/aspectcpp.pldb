@@ -2,3 +2,11 @@ title AspectC++
 type pl
 website http://aspectc.org/
 rijuRepl https://riju.codes/aspectcpp
+ example
+  #include <iostream>
+  
+  int main() {
+    std::cout << "Hello, world!" << std::endl;
+    return 0;
+  }
+  

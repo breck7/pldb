@@ -265,3 +265,10 @@ stackOverflowSurvey
   percentageUsing 0.28
 packageRepository https://www.nuget.org/
 rijuRepl https://riju.codes/csharp
+ example
+  class main {
+      static void Main(string[] args) {
+          System.Console.WriteLine("Hello, world!");
+      }
+  }
+  

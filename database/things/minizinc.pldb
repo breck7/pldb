@@ -28,3 +28,8 @@ rosettaCode MiniZinc
 
 centralPackageRepositoryCount 0
 rijuRepl https://riju.codes/minizinc
+ example
+  solve satisfy;
+  
+  output ["Hello, world!\n"];
+  

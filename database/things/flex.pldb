@@ -70,4 +70,22 @@ hopl 2033
 
 centralPackageRepositoryCount 0
 rijuRepl https://riju.codes/flex
+ example
+  %{
+  #include <stdio.h>
+  %}
+  
+  %%
+  %%
+  
+  int yywrap() {
+    printf("Hello, world!\n");
+    return 1;
+  }
+  
+  int main() {
+    yylex();
+    return 0;
+  }
+  
 reference https://github.com/babyraging/yash

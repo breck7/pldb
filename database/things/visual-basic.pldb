@@ -71,3 +71,10 @@ indeedJobs visual basic engineer
 lineCommentKeyword '
 centralPackageRepositoryCount 0
 rijuRepl https://riju.codes/visualbasic
+ example
+  Module Main
+      Sub Main(args As String())
+          Console.WriteLine("Hello, world!")
+      End Sub
+  End Module
+  

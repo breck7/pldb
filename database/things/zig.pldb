@@ -26,3 +26,14 @@ rosettaCode Zig
 
 centralPackageRepositoryCount 0
 rijuRepl https://riju.codes/zig
+ example
+  const std = @import("std");
+  
+  pub fn main() anyerror!void {
+      std.log.info("Hello, world!", .{});
+  }
+  
+ description General-purpose programming language and toolchain for maintaining robust, optimal, and reusable software
+ fileExtensions zig
+ website https://ziglang.org/
+ githubRepo https://github.com/ziglang/zig

@@ -76,3 +76,8 @@ corporateDevelopers Microsoft
 writtenIn csharp
 centralPackageRepositoryCount 0
 rijuRepl https://riju.codes/dafny
+ example
+  method Main() {
+    print "Hello, world!\n";
+  }
+  

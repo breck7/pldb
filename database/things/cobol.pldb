@@ -112,3 +112,13 @@ stackOverflowSurvey
   percentageUsing 0.01
 centralPackageRepositoryCount 0
 rijuRepl https://riju.codes/cobol
+ example
+  IDENTIFICATION DIVISION.
+  PROGRAM-ID. MAIN.
+  PROCEDURE DIVISION.
+      DISPLAY "Hello, world!".
+      STOP RUN.
+  
+ description Compiled English-like computer programming language designed for business use
+ fileExtensions cbl cob cpy
+ githubRepo https://sourceforge.net/p/gnucobol/_list/svn

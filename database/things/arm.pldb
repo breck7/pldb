@@ -30,4 +30,24 @@ linkedInSkill arm
 jupyterKernel https://github.com/DeepHorizons/iarm
 centralPackageRepositoryCount 0
 rijuRepl https://riju.codes/arm
+ example
+  	.text
+  	.globl main
+  main:
+  	mov r7, #4
+  	mov r0, #1
+  	ldr r1, =message
+  	mov r2, #14
+  	swi 0
+  	mov r7, #1
+  	mov r0, #0
+  	swi 0
+  	.data
+  message:
+  	.string "Hello, world!\n"
+  
+ description Popular RISC architecture used in mobile devices
+ fileExtensions S
+ website https://developer.arm.com/architectures/cpu-architecture
+ githubRepo https://gcc.gnu.org/git.html
 lineCommentKeyword ;

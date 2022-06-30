@@ -183,3 +183,8 @@ stackOverflowSurvey
 packageRepository https://crates.io/
 gdbSupport true
 rijuRepl https://riju.codes/rust
+ example
+  fn main() {
+      println!("Hello, world!");
+  }
+  

@@ -129,3 +129,9 @@ keywords * + - / := < <= <> = > >= and begin boolean break byte continue div do 
 centralPackageRepositoryCount 0
 gdbSupport true
 rijuRepl https://riju.codes/pascal
+ example
+  program Main;
+  begin
+     writeln('Hello, world!');
+  end.
+  

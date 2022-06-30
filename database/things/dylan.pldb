@@ -63,3 +63,14 @@ rosettaCode Dylan
 visualParadigm false
 centralPackageRepositoryCount 0
 rijuRepl https://riju.codes/dylan
+ example
+  Module: main
+  
+  define function main
+      (name :: <string>, arguments :: <vector>)
+    format-out("Hello, world!\n");
+    exit-application(0);
+  end function main;
+  
+  main(application-name(), application-arguments());
+  

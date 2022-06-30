@@ -17,3 +17,19 @@ fileType na
 centralPackageRepositoryCount 0
 aka riscv
 rijuRepl https://riju.codes/riscv
+ example
+  	.text
+  	.global main
+  main:
+  	addi a7, x0, 64
+  	addi a0, x0, 1
+  	la a1, message
+  	addi a2, x0, 14
+  	ecall
+  	addi a7, x0, 93
+  	addi a0, x0, 0
+  	ecall
+  	.data
+  message:
+  	.string "Hello, world!\n"
+  

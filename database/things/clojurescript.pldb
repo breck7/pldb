@@ -22,3 +22,10 @@ cheatSheetUrl http://cljs.info/cheatsheet/
 announcementMethod blogPost
 centralPackageRepositoryCount 0
 rijuRepl https://riju.codes/clojurescript
+ example
+  (println "Hello, world!")
+  
+ description Compiler for Clojure that targets JavaScript
+ fileExtensions cljs
+ website https://clojurescript.org/
+ githubRepo https://github.com/clojure/clojurescript

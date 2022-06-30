@@ -66,3 +66,10 @@ fileType text
 isOpenSource true
 centralPackageRepositoryCount 0
 rijuRepl https://riju.codes/asciidoc
+ example
+  Hello, world!
+  
+ description Human-readable document format, semantically equivalent to DocBook XML, but using plain-text mark-up conventions
+ fileExtensions adoc
+ website https://asciidoc.org/
+ githubRepo https://github.com/asciidoc/asciidoc

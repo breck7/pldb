@@ -11,3 +11,6 @@ status active
 twitter dhall_lang
 
 rijuRepl https://riju.codes/dhall
+ example
+  { output = "Hello, world!" }
+  

@@ -45,3 +45,11 @@ wordRank 3033
 isOpenSource true
 centralPackageRepositoryCount 0
 rijuRepl https://riju.codes/ink
+ example
+  std := load('../../../opt/ink/std')
+  str := load('../../../opt/ink/str')
+  
+  log := std.log
+  
+  log('Hello, world!')
+  

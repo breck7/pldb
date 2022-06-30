@@ -415,3 +415,10 @@ stackOverflowSurvey
 packageRepository https://search.maven.org/
 packageRepository https://mvnrepository.com/popular
 rijuRepl https://riju.codes/java
+ example
+  public class Main {
+      public static void main(String[] args) {
+          System.out.println("Hello, world!");
+      }
+  }
+  

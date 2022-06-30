@@ -157,3 +157,9 @@ stackOverflowSurvey
   percentageUsing 0.02
 packageRepository https://hackage.haskell.org/
 rijuRepl https://riju.codes/haskell
+ example
+  module Main where
+  
+  main :: IO ()
+  main = putStrLn "Hello, world!"
+  

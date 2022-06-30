@@ -213,3 +213,6 @@ stackOverflowSurvey
   percentageUsing 0.01
 packageRepository https://pkg.julialang.org/
 rijuRepl https://riju.codes/julia
+ example
+  println("Hello, world!")
+  

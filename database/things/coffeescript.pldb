@@ -81,3 +81,10 @@ lineCommentKeyword #
 jupyterKernel https://github.com/n-riesco/jp-coffeescript
 centralPackageRepositoryCount 0
 rijuRepl https://riju.codes/coffeescript
+ example
+  console.log "Hello, world!"
+  
+ description Compile-to-JavaScript programming language adding syntactic sugar inspired by Ruby, Python and Haskell in an effort to enhance JavaScript's brevity and readability
+ fileExtensions coffee litcoffee
+ website https://coffeescript.org/
+ githubRepo https://github.com/jashkenas/coffeescript

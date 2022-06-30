@@ -71,3 +71,9 @@ rosettaCode Factor
 
 centralPackageRepositoryCount 0
 rijuRepl https://riju.codes/factor
+ example
+  IN: main
+  USE: io
+  
+  "Hello, world!" print
+  

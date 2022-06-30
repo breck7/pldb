@@ -199,3 +199,15 @@ keywords abort else new return abs elsif not reverse abstract end null accept en
 centralPackageRepositoryCount 0
 gdbSupport true
 rijuRepl https://riju.codes/ada
+ example
+  with Ada.Text_IO;
+  
+  procedure Main is
+  begin
+     Ada.Text_IO.Put_Line("Hello, world!");
+  end Main;
+  
+ description Structured, statically typed, imperative, and object-oriented high-level programming language, extended from Pascal and other languages
+ fileExtensions adb ads
+ website https://www.adaic.org/
+ githubRepo https://gcc.gnu.org/git.html

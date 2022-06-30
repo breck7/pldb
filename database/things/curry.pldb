@@ -26,3 +26,7 @@ rosettaCode Curry
 visualParadigm false
 centralPackageRepositoryCount 0
 rijuRepl https://riju.codes/curry
+ example
+  main :: IO ()
+  main = putStrLn "Hello, world!"
+  

@@ -53,3 +53,16 @@ rosettaCode XSLT
 
 centralPackageRepositoryCount 0
 rijuRepl https://riju.codes/xslt
+ example
+  <?xml-stylesheet type="text/xml" href="#style"?>
+  <main>
+    <xsl:stylesheet xml:id="style"
+                    xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
+                    version="1.0">
+      <xsl:template match="main">
+        <xsl:value-of select="data"/>
+      </xsl:template>
+    </xsl:stylesheet>
+    <data>Hello, world!</data>
+  </main>
+  

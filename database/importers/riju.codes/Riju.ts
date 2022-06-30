@@ -16,10 +16,12 @@ const manualMatches = {
   brainf: "brainfuck"
 }
 
+const scopeName = "rijuRepl"
+
 class RijuImporter {
-  writeToDatabaseCommand() {
+  writeLinksToDatabaseCommand() {
     this.matches.forEach(match => {
-      match.pldbFile.set("rijuRepl", `https://riju.codes/${match.yaml.id}`)
+      match.pldbFile.set(scopeName, `https://riju.codes/${match.yaml.id}`)
       match.pldbFile.save()
     })
   }
@@ -57,16 +59,24 @@ class RijuImporter {
     const object = pldbFile.toObject()
     const { info } = yaml
 
+    const node = pldbFile.getNode(scopeName)
+
+    if (yaml.template) node.appendLineAndChildren("example", yaml.template)
+
     if (info) {
-      if (!object.description) pldbFile.set("description", info.desc)
+      if (info.desc) node.set("description", info.desc)
+      if (info.year && !object.appeared)
+        pldbFile.set("appeared", info.year.toString())
 
-      if (!object.appeared) pldbFile.set("appeared", info.year)
+      if (info.ext)
+        node.set(
+          "fileExtensions",
+          info.ext.join ? info.ext.join(" ") : info.ext
+        )
 
-      if (!object.extensions) pldbFile.set("extensions", info.ext)
+      if (info.web.home) node.set("website", info.web.home)
 
-      if (!object.website) pldbFile.set("website", info.web.home)
-
-      if (!object.githubRepo) pldbFile.set("githubRepo", info.web.source)
+      if (info.web.source) node.set("githubRepo", info.web.source)
     }
 
     pldbFile.save()
@@ -77,7 +87,7 @@ class RijuImporter {
       try {
         this.mergeOne(match)
       } catch (err) {
-        console.error(err)
+        console.error(match.yaml.id, err)
       }
     })
 

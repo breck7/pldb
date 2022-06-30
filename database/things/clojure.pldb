@@ -142,3 +142,10 @@ stackOverflowSurvey
   percentageUsing 0.02
 packageRepository https://clojars.org/
 rijuRepl https://riju.codes/clojure
+ example
+  (println "Hello, world!")
+  
+ description Modern, dynamic, and functional dialect of the Lisp programming language on the Java platform
+ fileExtensions clj cljc edn
+ website https://clojure.org/
+ githubRepo https://github.com/clojure/clojure

@@ -135,3 +135,13 @@ rosettaCode Oz
 visualParadigm false
 centralPackageRepositoryCount 0
 rijuRepl https://riju.codes/oz
+ example
+  functor
+  import
+      Application
+      System
+  define
+      {System.showInfo 'Hello, world!'}
+      {Application.exit 0}
+  end
+  

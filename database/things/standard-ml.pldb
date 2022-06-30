@@ -79,3 +79,6 @@ ubuntuPackage mlton
 lineCommentKeyword #
 centralPackageRepositoryCount 0
 rijuRepl https://riju.codes/standardml
+ example
+  print "Hello, world!\n";
+  

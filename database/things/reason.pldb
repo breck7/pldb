@@ -555,3 +555,6 @@ languageServerProtocolProject https://github.com/jaredly/reason-language-server
 lineCommentKeyword //
 centralPackageRepositoryCount 0
 rijuRepl https://riju.codes/reasonml
+ example
+  print_string("Hello, world!\n");
+  

@@ -147,3 +147,13 @@ packageRepository https://cocoapods.org/
 gdbSupport true
 aka objectivec
 rijuRepl https://riju.codes/objectivec
+ example
+  #import <Foundation/Foundation.h>
+  
+  int main() {
+    NSAutoreleasePool *pool = [[NSAutoreleasePool alloc] init];
+    NSLog(@"Hello, world!");
+    [pool drain];
+    return 0;
+  }
+  

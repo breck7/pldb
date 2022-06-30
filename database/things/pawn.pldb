@@ -67,3 +67,10 @@ fileType text
 isOpenSource true
 centralPackageRepositoryCount 0
 rijuRepl https://riju.codes/pawn
+ example
+  #include <core>
+  
+  main() {
+      print("Hello, world!\n");
+  }
+  

@@ -68,3 +68,13 @@ hopl 1415
 
 centralPackageRepositoryCount 0
 rijuRepl https://riju.codes/oberon
+ example
+  MODULE Main;
+  
+  IMPORT Out;
+  
+  BEGIN
+    Out.String("Hello, world!");
+    Out.Ln;
+  END Main.
+  
