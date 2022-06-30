@@ -303,6 +303,7 @@ class PLDBBaseFolder extends TreeBaseFolder {
   }
 
   searchForEntity(query) {
+    if (query === undefined || query === "") return
     const { searchIndex } = this
     return searchIndex.get(query) || searchIndex.get(getCleanedId(query))
   }

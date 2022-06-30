@@ -22,11 +22,17 @@ const makeInverseRanks = ranks => {
 }
 
 const runCommand = (instance, command = "") => {
-  if (instance[command + "Command"]) return instance[command + "Command"]()
+  const run = name => {
+    console.log(`Running ${name}:`)
+    instance[name]()
+  }
+
+  if (instance[command + "Command"]) return run(command + "Command")
 
   const allCommands = Object.getOwnPropertyNames(
     Object.getPrototypeOf(instance)
   ).filter(word => word.endsWith("Command"))
+  allCommands.sort()
 
   const commandAsNumber = parseInt(command) - 1
 
@@ -35,12 +41,13 @@ const runCommand = (instance, command = "") => {
     !isNaN(commandAsNumber) &&
     allCommands[commandAsNumber]
   )
-    return instance[allCommands[commandAsNumber]]()
+    return run(allCommands[commandAsNumber])
 
-  const commands = allCommands.map(name => name.replace("Command", "")).sort()
   console.log(
     `\n❌ No command provided. Available commands:\n\n` +
-      commands.map((name, index) => `${index + 1}. ${name}`).join("\n") +
+      allCommands
+        .map((name, index) => `${index + 1}. ${name.replace("Command", "")}`)
+        .join("\n") +
       "\n"
   )
 }
