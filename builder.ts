@@ -99,6 +99,8 @@ class Builder extends AbstractBuilder {
   buildTopPages() {
     this._buildTopPages(100)
     this._buildTopPages(250)
+    this._buildTopPages(500)
+    this._buildTopPages(1000)
   }
 
   buildKeywordsPage() {
@@ -252,23 +254,28 @@ class Builder extends AbstractBuilder {
       .map(file => {
         const name = file.primaryKey
         const appeared = file.get("appeared") || ""
+        const rank = file.languageRank + 1
         const type = file.get("type")
         return {
           name,
           nameLink: `../languages/${name}.html`,
           type,
-          appeared
+          appeared,
+          rank
         }
       })
+
+    const sorted = lodash.sortBy(files, "rank")
 
     replaceNext(
       page,
       "comment autogenLanguages",
-      toScrollTable(new TreeNode(files), [
+      toScrollTable(new TreeNode(sorted), [
         "name",
         "nameLink",
         "type",
-        "appeared"
+        "appeared",
+        "rank"
       ])
     )
 
@@ -276,7 +283,7 @@ class Builder extends AbstractBuilder {
       .toString()
       .replace(
         /list of all .+ languages/,
-        `list of all ${numeral(files.length).format("0,0")} languages`
+        `list of all ${numeral(sorted.length).format("0,0")} languages`
       )
 
     Disk.write(pagePath, text)

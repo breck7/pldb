@@ -73,6 +73,7 @@ const getCleanedId = str =>
     .replace(/[^a-zA-Z0-9\-]/g, "")
     .toLowerCase()
 
+// todo: move to grammar
 const isLanguage = type => {
   const nonLanguages = {
     vm: true,
@@ -86,7 +87,13 @@ const isLanguage = type => {
     pattern: true,
     packageManager: true,
     os: true,
-    application: true
+    application: true,
+    framework: true,
+    standard: true,
+    compiler: true,
+    binaryExecutable: true,
+    binaryDataFormat: true,
+    interpreter: true
   }
 
   return nonLanguages[type] ? false : true

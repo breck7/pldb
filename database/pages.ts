@@ -117,11 +117,15 @@ ${this.keyboardNavigation}
   }
 
   get prevPage() {
-    return this.file.previousRanked.primaryKey
+    return this.file.isLanguage
+      ? this.file.previousRankedLanguage.primaryKey
+      : this.file.previousRanked.primaryKey
   }
 
   get nextPage() {
-    return this.file.nextRanked.primaryKey
+    return this.file.isLanguage
+      ? this.file.nextRankedLanguage.primaryKey
+      : this.file.nextRanked.primaryKey
   }
 
   get keyboardNavigation() {
@@ -178,39 +182,11 @@ ${facts.map(fact => ` - ${fact}`).join("\n")}`
  ${longerDescription || description}`
   }
 
-  get rankMessage() {
-    const { file } = this
-    const { isLanguage, percentile, title } = file
-    const bins = [0.01, 0.05, 0.1, 0.25]
-    bins.reverse()
-    let rankMessage = ""
-    const category = isLanguage ? "languages" : "entities on PLDB"
-    if (percentile > 0.25) return ""
-    else {
-      bins.forEach(bin => {
-        if (percentile < bin)
-          rankMessage = `${title} ranks in the top ${bin * 100}% of ${category}`
-      })
-    }
-    return rankMessage
-  }
-
   get facts() {
     const { object, file } = this
     const { title, languageRank } = file
 
     const facts = []
-
-    const rankMessage = this.rankMessage
-    if (languageRank < 101) {
-      facts.push(
-        `${title} <a href="../lists/top100.html">is a top 100</a> language`
-      )
-    } else if (languageRank < 251) {
-      facts.push(
-        `${title} <a href="../lists/top250.html">is a top 250</a> language`
-      )
-    } else if (rankMessage) facts.push(rankMessage)
 
     const website = object.website
     if (website) facts.push(`the <a href="${website}">${title} website</a>`)
@@ -257,6 +233,13 @@ ${facts.map(fact => ` - ${fact}`).join("\n")}`
         .join(" and ")
       facts.push(`${title} is backed by ${corporateDevelopers}`)
     }
+
+    const { numberOfJobs } = file
+    const jobs = numberOfJobs > 10 ? numeral(numberOfJobs).format("0a") : ""
+    if (jobs)
+      facts.push(
+        `PLDB estimates there are currently ${jobs} job openings for ${title} programmers.`
+      )
 
     const { extensions } = file
     if (extensions)
@@ -573,10 +556,13 @@ code
   get kpiBar() {
     const { file, object } = this
     const appeared = object.appeared
-    const { numberOfUsers, numberOfJobs } = file
+    const { numberOfUsers } = file
     const users =
       numberOfUsers > 10 ? numeral(numberOfUsers).format("0.0a") : ""
-    const jobs = numberOfJobs > 10 ? numeral(numberOfJobs).format("0a") : ""
+
+    const rankLine = file.isLanguage
+      ? `#${file.languageRank + 1} on PLDB`
+      : `#${file.rank + 1} on PLDB`
 
     const appearedLine = isNaN(appeared)
       ? ""
@@ -584,14 +570,11 @@ code
     const userLine = users
       ? `${users} <span title="Crude user estimate from a linear model.">Users</span>`
       : ""
-    const jobsLine = jobs
-      ? `${jobs} <span title="Crude jobs estimate from a linear model.">Jobs</span>`
-      : ""
 
     return `kpiTable
+ ${rankLine}
  ${appearedLine}
- ${userLine}
- ${jobsLine}`.trim()
+ ${userLine}`.trim()
   }
 }
 

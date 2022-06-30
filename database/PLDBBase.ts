@@ -78,6 +78,14 @@ class PLDBFile extends TreeBaseFile {
     return this.base.getPatternAtRank(this.base.getPatternRank(this) + 1)
   }
 
+  get previousRankedLanguage() {
+    return this.base.getFileAtLanguageRank(this.languageRank - 1)
+  }
+
+  get nextRankedLanguage() {
+    return this.base.getFileAtLanguageRank(this.languageRank + 1)
+  }
+
   get previousRanked() {
     return this.base.getFileAtRank(this.rank - 1)
   }
@@ -384,8 +392,9 @@ class PLDBBaseFolder extends TreeBaseFolder {
   }
 
   _ranks: any
-  _languageRanks: any
   _inverseRanks: any
+  _languageRanks: any
+  _inverseLanguageRanks: any
   _patternRanks: any
   _inversePatternRanks: any
   _getRanks(files = this.getChildren()) {
@@ -395,6 +404,7 @@ class PLDBBaseFolder extends TreeBaseFolder {
       this._languageRanks = this._calcRanks(
         files.filter(file => file.isLanguage)
       )
+      this._inverseLanguageRanks = makeInverseRanks(this._languageRanks)
       this._patternRanks = this._calcRanks(files.filter(file => file.isPattern))
       this._inversePatternRanks = makeInverseRanks(this._patternRanks)
     }
@@ -410,6 +420,10 @@ class PLDBBaseFolder extends TreeBaseFolder {
 
   getPatternAtRank(rank) {
     return this._getFileAtRank(rank, this._inversePatternRanks)
+  }
+
+  getFileAtLanguageRank(rank) {
+    return this._getFileAtRank(rank, this._inverseLanguageRanks)
   }
 
   getFileAtRank(rank) {
