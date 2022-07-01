@@ -21,49 +21,49 @@ pipeTable
  C#|../languages/csharp.html|2000|pl|10
  Scala|../languages/scala.html|2004|pl|11
  HTML|../languages/html.html|1991|textMarkup|12
- MATLAB|../languages/matlab.html|1984|pl|13
- SQL|../languages/sql.html|1974|queryLanguage|14
+ SQL|../languages/sql.html|1974|queryLanguage|13
+ MATLAB|../languages/matlab.html|1984|pl|14
  Fortran|../languages/fortran.html|1957|pl|15
  Lua|../languages/lua.html|1993|pl|16
- Haskell|../languages/haskell.html|1990|pl|17
- C++|../languages/cpp.html|1985|pl|18
+ C++|../languages/cpp.html|1985|pl|17
+ Haskell|../languages/haskell.html|1990|pl|18
  COBOL|../languages/cobol.html|1959|pl|19
- Swift|../languages/swift.html|2014|pl|20
- Rust|../languages/rust.html|2010|pl|21
+ Rust|../languages/rust.html|2010|pl|20
+ Swift|../languages/swift.html|2014|pl|21
  Clojure|../languages/clojure.html|2007|pl|22
- Prolog|../languages/prolog.html|1972|pl|23
- Erlang|../languages/erlang.html|1986|pl|24
- XML|../languages/xml.html|1996|metaLanguage|25
- Objective-C|../languages/objective-c.html|1984|pl|26
- MySQL|../languages/mysql.html|1995|queryLanguage|27
- CSS|../languages/css.html|1996|stylesheetLanguage|28
+ TypeScript|../languages/typescript.html|2012|pl|23
+ Prolog|../languages/prolog.html|1972|pl|24
+ Erlang|../languages/erlang.html|1986|pl|25
+ XML|../languages/xml.html|1996|metaLanguage|26
+ Objective-C|../languages/objective-c.html|1984|pl|27
+ MySQL|../languages/mysql.html|1995|queryLanguage|28
  Lisp|../languages/lisp.html|1958|pl|29
- Mathematica|../languages/mathematica.html|1988|pl|30
- Visual Basic|../languages/visual-basic.html|1991|pl|31
+ Visual Basic|../languages/visual-basic.html|1991|pl|30
+ CSS|../languages/css.html|1996|stylesheetLanguage|31
  Julia|../languages/julia.html|2012|pl|32
- TypeScript|../languages/typescript.html|2012|pl|33
+ Mathematica|../languages/mathematica.html|1988|pl|33
  PostgreSQL|../languages/postgresql.html|1986|queryLanguage|34
  CoffeeScript|../languages/coffeescript.html|2009|pl|35
  JSON|../languages/json.html|2001|metaLanguage|36
  Scheme|../languages/scheme.html|1970|pl|37
  Racket|../languages/racket.html|1994|pl|38
  Elixir|../languages/elixir.html|2011|pl|39
- Elm|../languages/elm.html|2012|pl|40
- Maple|../languages/maple.html|1982|pl|41
- Delphi|../languages/delphi.html|1995|pl|42
- LLVM IR|../languages/llvmir.html|2003|ir|43
- YAML|../languages/yaml.html|2001|metaLanguage|44
- LabVIEW G|../languages/labview.html|1986|pl|45
+ Delphi|../languages/delphi.html|1995|pl|40
+ Elm|../languages/elm.html|2012|pl|41
+ Maple|../languages/maple.html|1982|pl|42
+ LabVIEW G|../languages/labview.html|1986|pl|43
+ LLVM IR|../languages/llvmir.html|2003|ir|44
+ YAML|../languages/yaml.html|2001|metaLanguage|45
  CUDA|../languages/cuda.html|2007|pl|46
  Common Lisp|../languages/common-lisp.html|1984|pl|47
  Idris|../languages/idris.html|2014|pl|48
  Yacc|../languages/yacc.html|1975|grammarLanguage|49
  ANTLR|../languages/antlr.html|1992|grammarLanguage|50
  OpenCL|../languages/opencl.html|2009|pl|51
- WebAssembly|../languages/wasm.html|2015|bytecode|52
+ Verilog|../languages/verilog.html|1984|hardwareDescriptionLanguage|52
  PL/SQL|../languages/pl-sql.html|1991|pl|53
- Visual Basic .NET|../languages/visual-basic-dot-net.html|2001|pl|54
- Verilog|../languages/verilog.html|1984|hardwareDescriptionLanguage|55
+ WebAssembly|../languages/wasm.html|2015|bytecode|54
+ Visual Basic .NET|../languages/visual-basic-dot-net.html|2001|pl|55
  VHDL|../languages/vhdl.html|1983|hardwareDescriptionLanguage|56
  VBScript|../languages/vbscript.html|1996|pl|57
  ARM|../languages/arm.html|1985|assembly|58
@@ -83,8 +83,8 @@ pipeTable
  SVG|../languages/svg.html|2001|textMarkup|72
  Turtle|../languages/turtle.html|2011|metaLanguage|73
  xBase|../languages/xbase.html|1986|pl|74
- SQLite|../languages/sqlite.html|2000|queryLanguage|75
- Scratch|../languages/scratch.html|2002|visual|76
+ Scratch|../languages/scratch.html|2002|visual|75
+ SQLite|../languages/sqlite.html|2000|queryLanguage|76
  XPath|../languages/xpath.html|1999|queryLanguage|77
  X10|../languages/x10.html|2004|pl|78
  Whitespace|../languages/whitespace.html|2003|esolang|79
@@ -92,8 +92,8 @@ pipeTable
  SPARQL|../languages/sparql.html|2008|queryLanguage|81
  Simula|../languages/simula.html|1965|pl|82
  sed|../languages/sed.html|1974|pl|83
- SuperCollider|../languages/supercollider.html|1996|pl|84
- Transact-SQL|../languages/transact-sql.html|1984|queryLanguage|85
+ Transact-SQL|../languages/transact-sql.html|1984|queryLanguage|84
+ SuperCollider|../languages/supercollider.html|1996|pl|85
  Squirrel|../languages/squirrel.html|2003|pl|86
  Z shell|../languages/z-shell.html|1990|pl|87
  Visual FoxPro|../languages/visual-foxpro.html|1995|pl|88
@@ -103,8 +103,8 @@ pipeTable
  Sage|../languages/sagemath.html|2005|pl|92
  Twig|../languages/twig.html|2009|template|93
  Pascal|../languages/pascal.html|1970|pl|94
- PowerShell|../languages/powershell.html|2006|pl|95
- PostScript|../languages/postscript.html|1982|textMarkup|96
+ PostScript|../languages/postscript.html|1982|textMarkup|95
+ PowerShell|../languages/powershell.html|2006|pl|96
  Sass|../languages/sass.html|2006|stylesheetLanguage|97
  Textile|../languages/textile.html|2002|textMarkup|98
  Squeak|../languages/squeak.html|1996|pl|99

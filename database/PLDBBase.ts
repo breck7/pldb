@@ -321,7 +321,7 @@ class PLDBBaseFolder extends TreeBaseFolder {
     const directs = ["meetup members", "githubRepo stars"]
     const customs = {
       wikipedia: v => 20,
-      packageRepository: v => 1000,
+      packageRepository: v => 1000, // todo: pull author number
       "wikipedia dailyPageViews": count => 100 * (parseInt(count) / 20), // say its 95% bot traffic, and 1% of users visit the wp page daily
       linguistGrammarRepo: c => 200, // According to https://github.com/github/linguist/blob/master/CONTRIBUTING.md, linguist indicates a min of 200 users.
       codeMirror: v => 50,
