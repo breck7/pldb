@@ -9,7 +9,8 @@ import {
   makeInverseRanks,
   Ranking,
   Rankings,
-  InverseRankings
+  InverseRankings,
+  rankSort
 } from "./utils"
 
 const lodash = require("lodash")
@@ -91,7 +92,7 @@ class PLDBFile extends TreeBaseFile {
 
   get langRankDebug() {
     const obj = this.base.getLanguageRankExplanation(this)
-    return `TotalRank: ${obj.totalRank} Jobs: ${obj.jobRank} Users: ${obj.userRank} Facts: ${obj.factCountRank} Links: ${obj.inBoundLinkRank}`
+    return `TotalRank: ${obj.totalRank} Jobs: ${obj.jobsRank} Users: ${obj.usersRank} Facts: ${obj.factsRank} Links: ${obj.inboundLinksRank}`
   }
 
   get previousRanked() {
@@ -357,9 +358,6 @@ class PLDBBaseFolder extends TreeBaseFolder {
     )
   }
 
-  // Rank is:
-  // numberOfUsersRank + numberOfJobsRank + factCountRank + numInboundLinks
-  // todo: add a pagerank like element
   _calcRanks(files: PLDBFile[] = this.getChildren()) {
     const { inboundLinks } = this
     let objects = files.map(file => {
@@ -368,33 +366,23 @@ class PLDBBaseFolder extends TreeBaseFolder {
       object.id = id
       object.jobs = this.predictNumberOfJobs(file)
       object.users = this.predictNumberOfUsers(file)
-      object.factCount = file.length
-      object.inBoundLinkCount = inboundLinks[id].length
+      object.facts = file.length
+      object.inboundLinks = inboundLinks[id].length
       return object
     })
-    objects = lodash.sortBy(objects, ["jobs"])
-    objects.reverse()
-    objects.forEach((obj, rank) => (obj.jobRank = rank))
 
-    objects = lodash.sortBy(objects, ["users"])
-    objects.reverse()
-    objects.forEach((obj, rank) => (obj.userRank = rank))
-
-    objects = lodash.sortBy(objects, ["factCount"])
-    objects.reverse()
-    objects.forEach((obj, rank) => (obj.factCountRank = rank))
-
-    objects = lodash.sortBy(objects, ["inBoundLinkCount"])
-    objects.reverse()
-    objects.forEach((obj, rank) => (obj.inBoundLinkRank = rank))
+    objects = rankSort(objects, "jobs")
+    objects = rankSort(objects, "users")
+    objects = rankSort(objects, "facts")
+    objects = rankSort(objects, "inboundLinks")
 
     objects.forEach((obj, rank) => {
       // Drop the item this does the worst on, as it may be a flaw in PLDB.
       const top3: number[] = [
-        obj.jobRank,
-        obj.userRank,
-        obj.factCountRank,
-        obj.inBoundLinkRank
+        obj.jobsRank,
+        obj.usersRank,
+        obj.factsRank,
+        obj.inboundLinksRank
       ]
       obj.totalRank = lodash.sum(lodash.sortBy(top3).slice(0, 3))
     })

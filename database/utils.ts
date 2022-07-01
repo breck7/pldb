@@ -6,10 +6,10 @@ interface Ranking {
   index: number
   id: string
   totalRank: number
-  jobRank: number
-  factCountRank: number
-  inBoundLinkRank: number
-  userRank: number
+  jobsRank: number
+  factsRank: number
+  inboundLinksRank: number
+  usersRank: number
 }
 
 type Rankings = { [firstWord: string]: Ranking }
@@ -32,6 +32,25 @@ const makeInverseRanks = (ranks: Rankings) => {
     inverseRanks[ranks[id].index] = ranks[id]
   })
   return inverseRanks
+}
+
+const rankSort = (objects: any[], key: string) => {
+  objects = lodash.sortBy(objects, [key])
+  objects.reverse()
+  let lastValue = objects[0][key]
+  let lastRank = 0
+  objects.forEach((obj, rank) => {
+    const theValue = obj[key]
+    if (lastValue === theValue) {
+      // A tie
+      obj[key + "Rank"] = lastRank
+    } else {
+      obj[key + "Rank"] = rank
+      lastRank = rank
+      lastValue = theValue
+    }
+  })
+  return objects
 }
 
 const runCommand = (instance, command = "") => {
@@ -263,5 +282,6 @@ export {
   PoliteCrawler,
   Rankings,
   Ranking,
-  InverseRankings
+  InverseRankings,
+  rankSort
 }
