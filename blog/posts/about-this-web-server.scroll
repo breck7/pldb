@@ -47,12 +47,16 @@ bashCode
  cd
  sudo apt-get install nginx
  # google "digital ocean certbot" and follow instructions.
+ # deploy the site to /var/www/html
  # add the server stats cron job below with:
- crontab -e
+ crontab -e 
+
+subsection Nginx Setup
+
+bashCode
  # Update nginx conf to allow CORS using the snippet below:
  vim /etc/nginx/nginx.conf
  sudo systemctl restart nginx
- # deploy the site to /var/www/html
 
 aftertext
  CORS is enabled by putting the below code in our nginx config.
@@ -62,6 +66,18 @@ nginxConfigCode
  add_header 'Access-Control-Allow-Methods' 'GET, POST, OPTIONS' always;
  add_header 'Access-Control-Allow-Headers' 'DNT,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type,Range' always;
  add_header 'Access-Control-Expose-Headers' 'Content-Length,Content-Range' always;
+
+aftertext
+ The custom 404 page is activated using the code below:
+
+nginxConfigCode
+ error_page 404 /custom_404.html;
+        location = /custom_404.html {
+                root /var/www/html;
+                internal;
+        }
+
+subsection Deploying
 
 aftertext
  PLDB is deployed using rsync.
