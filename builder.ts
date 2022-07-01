@@ -34,10 +34,10 @@ class Builder extends AbstractBuilder {
     // Copy other assets into the root site folder
     shell(`cp ${__dirname}/blog/public/*.* ${websiteFolder}`)
 
-    // Copy grammar to public folder
-    Disk.mkdir(websiteFolder + "/datasets")
+    // Copy grammar to public folder for easy access in things like TN Designer.
+    Disk.mkdir(websiteFolder + "/grammar/")
     Disk.write(
-      websiteFolder + "/datasets/pldb.grammar",
+      websiteFolder + "/grammar/pldb.grammar",
       Disk.read(pldbBase.dir + "pldb.grammar")
     )
   }
