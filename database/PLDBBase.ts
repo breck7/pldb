@@ -6,7 +6,10 @@ import {
   getPrimaryKey,
   isLanguage,
   getCleanedId,
-  makeInverseRanks
+  makeInverseRanks,
+  Ranking,
+  Rankings,
+  InverseRankings
 } from "./utils"
 
 const lodash = require("lodash")
@@ -84,6 +87,11 @@ class PLDBFile extends TreeBaseFile {
 
   get nextRankedLanguage() {
     return this.base.getFileAtLanguageRank(this.languageRank + 1)
+  }
+
+  get langRankDebug() {
+    const obj = this.base.getLanguageRankExplanation(this)
+    return `TotalRank: ${obj.totalRank} Jobs: ${obj.jobRank} Users: ${obj.userRank} Facts: ${obj.factCountRank} Links: ${obj.inBoundLinkRank}`
   }
 
   get previousRanked() {
@@ -228,7 +236,7 @@ class PLDBBaseFolder extends TreeBaseFolder {
     ) as PLDBBaseFolder
   }
 
-  get dir() {
+  get dir(): string {
     return this._getDir()
   }
 
@@ -236,7 +244,7 @@ class PLDBBaseFolder extends TreeBaseFolder {
     return new TreeNode.Parser(PLDBFile)
   }
 
-  get patternFiles() {
+  get patternFiles(): PLDBFile[] {
     return this.filter(file => file.get("type") === "pattern")
   }
 
@@ -249,7 +257,7 @@ class PLDBBaseFolder extends TreeBaseFolder {
     return this._grammarProgramConstructor
   }
 
-  _inboundLinks: any
+  _inboundLinks: { [id: string]: string[] }
   get inboundLinks() {
     if (this._inboundLinks) return this._inboundLinks
 
@@ -302,7 +310,7 @@ class PLDBBaseFolder extends TreeBaseFolder {
     return this._searchIndex
   }
 
-  searchForEntity(query) {
+  searchForEntity(query: string) {
     if (query === undefined || query === "") return
     const { searchIndex } = this
     return searchIndex.get(query) || searchIndex.get(getCleanedId(query))
@@ -312,7 +320,7 @@ class PLDBBaseFolder extends TreeBaseFolder {
     return this.getNode(this.dir + id + ".pldb")
   }
 
-  predictNumberOfUsers(file) {
+  predictNumberOfUsers(file: PLDBFile) {
     const mostRecents = [
       "linkedInSkill",
       "subreddit memberCount",
@@ -342,7 +350,7 @@ class PLDBBaseFolder extends TreeBaseFolder {
     )
   }
 
-  predictNumberOfJobs(file) {
+  predictNumberOfJobs(file: PLDBFile) {
     return (
       Math.round(file.getMostRecentInt("linkedInSkill") * 0.01) +
       file.getMostRecentInt("indeedJobs")
@@ -352,7 +360,7 @@ class PLDBBaseFolder extends TreeBaseFolder {
   // Rank is:
   // numberOfUsersRank + numberOfJobsRank + factCountRank + numInboundLinks
   // todo: add a pagerank like element
-  _calcRanks(files = this.getChildren()) {
+  _calcRanks(files: PLDBFile[] = this.getChildren()) {
     const { inboundLinks } = this
     let objects = files.map(file => {
       const id = file.primaryKey
@@ -380,24 +388,32 @@ class PLDBBaseFolder extends TreeBaseFolder {
     objects.reverse()
     objects.forEach((obj, rank) => (obj.inBoundLinkRank = rank))
 
-    objects.forEach(
-      (obj, rank) =>
-        (obj.totalRank =
-          obj.jobRank + obj.userRank + obj.factCountRank + obj.inBoundLinkRank)
-    )
+    objects.forEach((obj, rank) => {
+      // Drop the item this does the worst on, as it may be a flaw in PLDB.
+      const top3: number[] = [
+        obj.jobRank,
+        obj.userRank,
+        obj.factCountRank,
+        obj.inBoundLinkRank
+      ]
+      obj.totalRank = lodash.sum(lodash.sortBy(top3).slice(0, 3))
+    })
     objects = lodash.sortBy(objects, ["totalRank"])
 
-    const ranks = {}
-    objects.forEach((obj, index) => (ranks[obj.id] = index))
+    const ranks: Rankings = {}
+    objects.forEach((obj, index) => {
+      obj.index = index
+      ranks[obj.id] = obj as Ranking
+    })
     return ranks
   }
 
-  _ranks: any
-  _inverseRanks: any
-  _languageRanks: any
-  _inverseLanguageRanks: any
-  _patternRanks: any
-  _inversePatternRanks: any
+  _ranks: Rankings
+  _inverseRanks: InverseRankings
+  _languageRanks: Rankings
+  _inverseLanguageRanks: InverseRankings
+  _patternRanks: Rankings
+  _inversePatternRanks: InverseRankings
   _getRanks(files = this.getChildren()) {
     if (!this._ranks) {
       this._ranks = this._calcRanks(files)
@@ -412,43 +428,47 @@ class PLDBBaseFolder extends TreeBaseFolder {
     return this._ranks
   }
 
-  private _getFileAtRank(rank, ranks) {
+  private _getFileAtRank(rank: number, ranks: InverseRankings) {
     const count = Object.keys(ranks).length
     if (rank < 0) rank = count - 1
     if (rank >= count) rank = 0
-    return this.getFile(ranks[rank])
+    return this.getFile(ranks[rank].id)
   }
 
-  getPatternAtRank(rank) {
+  getPatternAtRank(rank: number) {
     return this._getFileAtRank(rank, this._inversePatternRanks)
   }
 
-  getFileAtLanguageRank(rank) {
+  getFileAtLanguageRank(rank: number) {
     return this._getFileAtRank(rank, this._inverseLanguageRanks)
   }
 
-  getFileAtRank(rank) {
+  getFileAtRank(rank: number) {
     return this._getFileAtRank(rank, this._inverseRanks)
   }
 
-  predictPercentile(file) {
+  predictPercentile(file: PLDBFile) {
     const files = this.getChildren()
     const ranks = this._getRanks(files)
-    return ranks[file.primaryKey] / files.length
+    return ranks[file.primaryKey].index / files.length
   }
 
-  getPatternRank(file) {
-    this._getRanks()
-    return this._patternRanks[file.primaryKey]
-  }
-
-  getLanguageRank(file) {
-    this._getRanks()
+  getLanguageRankExplanation(file: PLDBFile) {
     return this._languageRanks[file.primaryKey]
   }
 
-  getRank(file) {
-    return this._getRanks()[file.primaryKey]
+  getPatternRank(file: PLDBFile) {
+    this._getRanks()
+    return this._patternRanks[file.primaryKey].index
+  }
+
+  getLanguageRank(file: PLDBFile) {
+    this._getRanks()
+    return this._languageRanks[file.primaryKey].index
+  }
+
+  getRank(file: PLDBFile) {
+    return this._getRanks()[file.primaryKey].index
   }
 
   toObjectsForCsv() {

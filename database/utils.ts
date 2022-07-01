@@ -2,6 +2,19 @@ const lodash = require("lodash")
 const { jtree } = require("jtree")
 const { Utils } = jtree
 
+interface Ranking {
+  index: number
+  id: string
+  totalRank: number
+  jobRank: number
+  factCountRank: number
+  inBoundLinkRank: number
+  userRank: number
+}
+
+type Rankings = { [firstWord: string]: Ranking }
+type InverseRankings = { [firstWord: number]: Ranking }
+
 const cleanAndRightShift = (str, numSpaces = 1) =>
   str.replace(/\r/g, "").replace(/\n/g, "\n" + " ".repeat(numSpaces))
 
@@ -13,10 +26,10 @@ const toCommaList = (arr, conjunction = "and") => {
 
 const getATag = permalink => `<a href="${permalink}.html">${permalink}</a>`
 
-const makeInverseRanks = ranks => {
-  const inverseRanks = {}
+const makeInverseRanks = (ranks: Rankings) => {
+  const inverseRanks: InverseRankings = {}
   Object.keys(ranks).forEach(id => {
-    inverseRanks[ranks[id]] = id
+    inverseRanks[ranks[id].index] = ranks[id]
   })
   return inverseRanks
 }
@@ -246,5 +259,8 @@ export {
   getATag,
   runCommand,
   makeInverseRanks,
-  PoliteCrawler
+  PoliteCrawler,
+  Rankings,
+  Ranking,
+  InverseRankings
 }

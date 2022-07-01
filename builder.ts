@@ -254,12 +254,13 @@ class Builder extends AbstractBuilder {
       .filter(file => file.isLanguage)
       .map(file => {
         const name = file.primaryKey
+        const title = file.get("title")
         const appeared = file.get("appeared") || ""
         const rank = file.languageRank + 1
         const type = file.get("type")
         return {
-          name,
-          nameLink: `../languages/${name}.html`,
+          title,
+          titleLink: `../languages/${name}.html`,
           type,
           appeared,
           rank
@@ -272,8 +273,8 @@ class Builder extends AbstractBuilder {
       page,
       "comment autogenLanguages",
       toScrollTable(new TreeNode(sorted), [
-        "name",
-        "nameLink",
+        "title",
+        "titleLink",
         "type",
         "appeared",
         "rank"

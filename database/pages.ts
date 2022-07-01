@@ -184,7 +184,7 @@ ${facts.map(fact => ` - ${fact}`).join("\n")}`
 
   get facts() {
     const { object, file } = this
-    const { title, languageRank } = file
+    const { title } = file
 
     const facts = []
 
@@ -577,7 +577,9 @@ code
       numberOfUsers > 10 ? numeral(numberOfUsers).format("0.0a") : ""
 
     const rankLine = file.isLanguage
-      ? `#${file.languageRank + 1} on PLDB`
+      ? `#${file.languageRank + 1} <span title="${
+          file.langRankDebug
+        }">on PLDB</span>`
       : `#${file.rank + 1} on PLDB`
 
     const appearedLine = isNaN(appeared)
