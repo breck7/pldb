@@ -1,5 +1,6 @@
 title Bython
 githubRepo https://github.com/mathialo/bython
+ firstCommit 2016
 description Python with braces. Because python is awesome, but whitespace is awful.
 type pl
 rijuRepl https://riju.codes/bython
@@ -16,3 +17,4 @@ example
  if __name__ == "__main__" {
      print_message(10);
  }
+appeared 2016
