@@ -30,7 +30,7 @@ aftertext
  https://goaccess.io/
 
 cronCode
- 0 5 * * * goaccess /var/log/nginx/access.log -o /var/www/html/nginxStats.html --log-format=COMBINED
+ 0 5 * * * zcat -f access.log* | goaccess -o /var/www/html/nginxStats.html --log-format=COMBINED
 
 subsection Server setup
 
