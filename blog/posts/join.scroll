@@ -1,20 +1,24 @@
 title Become an active contributor to the PLDB
 
 aftertext
- Do you seek programming language enlightenment? Why not seek that joyfully with colleagues while serving others, making an impact, and accumulating citations? Become an active contributor to the PLDB!
+ Do you seek programming language enlightenment? Why not seek that joyfully with colleagues while serving others, making an impact, and accumulating internet points? Become an active contributor to the PLDB!
 
 subsection Things you could do
 
 list
  - Write an article
- - Adding or editing languages in the database
- - Adding or editing design patterns and examples in the database
- - Work on a data importer for a source like Wikipedia or Github
- - Discussing and improving the data schema
- - Working on improvements to the website or codebase
+ - Add or edit languages in the database
+ - Add or edit design patterns and examples in the database
+ - Improve or add a data importer for a source like Wikipedia or Github
+ - Discuss and improve the data grammar and ranking algorithm
+ - Improve the website or codebase
 
 aftertext
- To get involved, start submitting pull requests, opening issues, or send an <a href="mailto:feedback@pldb.pub">email</a>.
+ To get involved, say hi <a href="mailto:feedback@pldb.pub">via email</a>, !open an issue!, or %send a pull request%.
+ https://github.com/breck7/pldb
+ wrap % https://github.com/breck7/pldb
+ wrap ! https://github.com/breck7/pldb/issues
+
 
 maxColumns 1
 columnWidth 60
