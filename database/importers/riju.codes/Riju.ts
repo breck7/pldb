@@ -12,10 +12,6 @@ pldbBase.loadFolder()
 
 const cachePath = __dirname + "/cache/riju/langs/"
 
-const manualMatches = {
-  brainf: "brainfuck"
-}
-
 const scopeName = "rijuRepl"
 
 class RijuImporter {
@@ -35,9 +31,7 @@ class RijuImporter {
       .map(yamlFile => {
         const yaml = parse(Disk.read(yamlFile))
         const { id } = yaml
-        const match =
-          pldbBase.searchForEntity(id) ||
-          pldbBase.searchForEntity(manualMatches[id])
+        const match = pldbBase.searchForEntity(id)
         if (match)
           return {
             pldbFile: pldbBase.getFile(match),

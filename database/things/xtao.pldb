@@ -1,0 +1,32 @@
+title xTAO Modeling Language
+aka xTAO
+appeared 2005
+reference https://dl.acm.org/doi/abs/10.1145/1082983.1082968
+description Enabling a declarative approach to the specification of multi-agent systems
+type xmlFormat
+reference https://doi.org/10.1145/1082983.1082968
+related netlogo
+example
+ <Goal>
+  <Name>table_comparison</Name>
+  <DesiredState>
+  <Description>
+  <Name>compareOK</Name>
+  <LanguageName>TAOLanguage</LanguageName>
+  <Data>srcTable EQ destTable |
+  srcTable NEQ destTable | NO</Data>
+  </Description>
+  </DesiredState>
+  <Params>
+  <Description>
+  <Name>srcTable</Name>
+  <LanguageName/>
+  <Data/>
+  </Description>
+  <Description>
+  <Name>destTable</Name>
+  <LanguageName/>
+  <Data/>
+  </Description>
+  </Params>
+ </Goal>
