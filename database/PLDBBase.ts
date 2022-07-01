@@ -165,6 +165,11 @@ class PLDBFile extends TreeBaseFile {
     return this.base.predictPercentile(this)
   }
 
+  get supersetFile(): PLDBFile | undefined {
+    const supersetOf = this.get("supersetOf")
+    return supersetOf ? this.base.getFile(supersetOf) : undefined
+  }
+
   get languageRank() {
     return this.base.getLanguageRank(this)
   }
