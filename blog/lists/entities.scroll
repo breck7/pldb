@@ -4,7 +4,7 @@ maxColumns 1
 columnWidth 60
 
 aftertext
- Here is the list of all 4,435 entities in the PLDB. You can also download the whole database as a @CSV@.
+ Here is the list of all 4,433 entities in the PLDB. You can also download the whole database as a @CSV@.
  wrap @ a href="../pldb.csv"
 
 aftertext
@@ -3343,7 +3343,7 @@ pipeTable
  restructuredtext|../languages/restructuredtext.html|textMarkup|2002
  retroforth|../languages/retroforth.html|pl|2000
  reuse-description-language|../languages/reuse-description-language.html|pl|2005
- reverse-polish-notation|../languages/reverse-polish-notation.html|pl|1953
+ reverse-polish-notation|../languages/reverse-polish-notation.html|notation|1953
  revit-app|../languages/revit-app.html|application|1997
  revolution-programming-language|../languages/revolution-programming-language.html|pl|1993
  rexon|../languages/rexon.html|pl|1978
@@ -3476,7 +3476,6 @@ pipeTable
  sbol|../languages/sbol.html|xmlFormat|
  scala-js|../languages/scala-js.html|pl|2013
  scala|../languages/scala.html|pl|2004
- scalajs|../languages/scalajs.html|pl|
  scalpel|../languages/scalpel.html|pl|1971
  scaml|../languages/scaml.html|template|2010
  scan|../languages/scan.html|pl|1987
@@ -3897,7 +3896,7 @@ pipeTable
  sysml|../languages/sysml.html|pl|2000
  system-v-abi|../languages/system-v-abi.html|binaryExecutable|
  systemverilog|../languages/systemverilog.html|pl|2002
- systemz|../languages/systemz.html|pl|2000
+ systemz|../languages/systemz.html|computingMachine|2000
  t-lang|../languages/t-lang.html|pl|2019
  t|../languages/t.html|pl|1980
  t2b|../languages/t2b.html|pl|2018
@@ -4059,7 +4058,7 @@ pipeTable
  triroff|../languages/triroff.html|pl|1983
  troff|../languages/troff.html|textMarkup|1973
  tromp-diagrams|../languages/tromp-diagrams.html|notation|2014
- trs-80-color-computer|../languages/trs-80-color-computer.html|pl|1980
+ trs-80-color-computer|../languages/trs-80-color-computer.html|computingMachine|1980
  truck|../languages/truck.html|pl|2019
  true-basic|../languages/true-basic.html|pl|1983
  ts|../languages/ts.html|pl|1988
@@ -4290,7 +4289,6 @@ pipeTable
  whois-protocol|../languages/whois-protocol.html|protocol|1970
  winbatch|../languages/winbatch.html|pl|1989
  windev|../languages/windev.html|pl|1993
- windows-powershell|../languages/windows-powershell.html|pl|2006
  windows-registry-entries|../languages/windows-registry-entries.html|application|1992
  winwrap-basic|../languages/winwrap-basic.html|pl|1993
  winxed|../languages/winxed.html|pl|2009

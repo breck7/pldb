@@ -41,7 +41,7 @@ wikipedia https://en.wikipedia.org/wiki/Tcl
   $b eat               → prints "skin now off" and "yummy!"
   fruit destroy
   $b eat               → error "unknown command"
- related awk lisp php tea windows-powershell c python expect unicode regex java unix linux bourne-shell xotcl snit verilog vhdl udp mysql postgresql sqlite
+ related awk lisp php tea powershell c python expect unicode regex java unix linux bourne-shell xotcl snit verilog vhdl udp mysql postgresql sqlite
  summary Tcl (pronounced "tickle" or tee cee ell, ) is a high-level, general-purpose, interpreted, dynamic programming language. It was designed with the goal of being very simple but powerful. Tcl casts everything into the mold of a command, even programming constructs like variable assignment and procedure definition. Tcl supports multiple programming paradigms, including object-oriented, imperative and functional programming or procedural styles. It is commonly used embedded into C applications, for rapid prototyping, scripted applications, GUIs, and testing. Tcl interpreters are available for many operating systems, allowing Tcl code to run on a wide variety of systems. Because Tcl is a very compact language, it is used on embedded systems platforms, both in its full form and in several other small-footprint versions. The popular combination of Tcl with the Tk extension is referred to as Tcl/Tk, and enables building a graphical user interface (GUI) natively in Tcl. Tcl/Tk is included in the standard Python installation in the form of Tkinter.
  pageId 39880682
  dailyPageViews 567

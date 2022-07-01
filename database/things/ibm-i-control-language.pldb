@@ -26,7 +26,7 @@ wikipedia https://en.wikipedia.org/wiki/IBM_i_Control_Language
                MSGTYPE(*COMP)
   
   ENDPGM
- related jcl pl-i windows-powershell unix c
+ related jcl pl-i powershell unix c
  summary The IBM i Control Language (CL) is a scripting language for the IBM's IBM i platform (previously called OS/400 when running on AS/400 systems) bearing a resemblance to the IBM Job Control Language and consisting of an ever-expanding set of command objects (*CMD) used to invoke traditional AS/400 programs and/or get help on what those programs do. CL can also be used to create CL programs (congruent to shell scripts) where there are additional commands that provide program-like functionality (IF/ELSE, variable declaration, file input, etc.) Although CL is a scripting language for system administration, it is used mainly to create compiled programs. The use of interpreted CL scripts through the SBMDBJOB command  is in fact extremely limited. While thousands of commands were written by IBM developers to perform system level tasks like compiling programs, backing up data, changing system configurations, displaying system object details, or deleting them, commands are not limited to systems level concerns and can be drafted for user applications as well.
  created 2014
  backlinksCount 16
