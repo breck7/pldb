@@ -4,16 +4,15 @@ maxColumns 1
 columnWidth 60
 
 paragraph
- Here is the list of all 3,912 languages in PLDB.
+ PLDB currently has 3,912 languages.
 
 aftertext
- Add a language by opening a @pull request@ or an issue.
- wrap @ https://github.com/breck7/pldb
- https://github.com/breck7/pldb/issues/new an issue
+ Anyone can add a language.
+ https://github.com/breck7/pldb/new/main/database/things add a language
 
 aftertext
- You can also download this list as a @CSV@.
- wrap @ a href="../languages.csv"
+ You can also download this list as a CSV file.
+ link ../languages.csv CSV file
 
 tableSearch
 

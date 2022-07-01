@@ -284,8 +284,8 @@ class Builder extends AbstractBuilder {
     const text = page
       .toString()
       .replace(
-        /list of all .+ languages/,
-        `list of all ${numeral(sorted.length).format("0,0")} languages`
+        /currently has .+ languages/,
+        `currently has ${numeral(sorted.length).format("0,0")} languages`
       )
 
     Disk.write(pagePath, text)
