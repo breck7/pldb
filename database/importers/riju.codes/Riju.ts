@@ -23,13 +23,12 @@ class RijuImporter {
   }
 
   get yamlFiles() {
-    return Disk.getFullPaths(cachePath)
+    return Disk.getFullPaths(cachePath).map(path => parse(Disk.read(path)))
   }
 
   get matches() {
     return this.yamlFiles
-      .map(yamlFile => {
-        const yaml = parse(Disk.read(yamlFile))
+      .map(yaml => {
         const { id } = yaml
         const match = pldbBase.searchForEntity(id)
         if (match)
@@ -42,9 +41,21 @@ class RijuImporter {
   }
 
   listMissingCommand() {
-    this.yamlFiles.forEach(yamlFile => {
-      const { id } = parse(Disk.read(yamlFile))
-      if (!pldbBase.searchForEntity(id)) console.log(`Missing language: ${id}`)
+    this.missing.map(yaml => console.log(`Missing language: ${yaml.id}`))
+  }
+
+  get missing() {
+    return this.yamlFiles.filter(yaml => !pldbBase.searchForEntity(yaml.id))
+  }
+
+  addMissingCommand() {
+    this.missing.forEach(yaml => {
+      const type = yaml.info?.category === "esoteric" ? "esolang" : "pl"
+      pldbBase.createFile(
+        yaml.id,
+        `title ${yaml.name}
+type ${type}`
+      )
     })
   }
 
@@ -61,6 +72,9 @@ class RijuImporter {
       if (info.desc) node.set("description", info.desc)
       if (info.year && !object.appeared)
         pldbFile.set("appeared", info.year.toString())
+
+      if (info.web?.esolang && !object.esolang)
+        pldbFile.set("esolang", info.web?.esolang)
 
       if (info.ext)
         node.set(

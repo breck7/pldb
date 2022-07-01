@@ -1,0 +1,18 @@
+title Bython
+githubRepo https://github.com/mathialo/bython
+description Python with braces. Because python is awesome, but whitespace is awful.
+type pl
+rijuRepl https://riju.codes/bython
+ example
+  print("Hello, world!")
+
+example
+ def print_message(num_of_times) {
+     for i in range(num_of_times) {
+         print("Bython is awesome!");
+     }
+ }
+ 
+ if __name__ == "__main__" {
+     print_message(10);
+ }

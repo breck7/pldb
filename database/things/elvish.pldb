@@ -1,0 +1,12 @@
+title Elvish
+type pl
+rijuRepl https://riju.codes/elvish
+ example
+  echo "Hello, world!"
+website https://elv.sh/
+description Elvish is an expressive programming language and a versatile interactive shell, combined into one seamless package. It runs on Linux, BSDs, macOS and Windows.
+example
+ if $true { echo good } else { echo bad }
+webRepl https://try.elv.sh/
+githubRepo https://github.com/elves/elvish
+twitter elvishshell

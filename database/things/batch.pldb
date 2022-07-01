@@ -2,6 +2,15 @@ title Batchfile
 appeared 1985
 type pl
 
+aka cmd
+rijuRepl https://riju.codes/cmd
+ example
+  echo "Hello, world!"
+  
+ description Obsolete (but still default) command-line interpreter for Microsoft Windows
+ fileExtensions bat
+ website https://docs.microsoft.com/en-us/windows-server/administration/windows-commands/windows-commands
+
 patterns
  hasCaseInsensitiveIdentifiers? true
 

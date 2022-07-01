@@ -1,6 +1,10 @@
 title Vim script
 appeared 1991
 type pl
+aka vimscript
+rijuRepl https://riju.codes/vimscript
+ example
+  :echo "Hello, world!"
 
 description Vim script (also called vimscript or VimL) is the scripting language built into Vim.
 

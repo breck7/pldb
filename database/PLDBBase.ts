@@ -464,6 +464,10 @@ class PLDBBaseFolder extends TreeBaseFolder {
     return this._getRanks()[file.primaryKey].index
   }
 
+  createFile(id: string, content: string) {
+    Disk.write(this._getDir() + "/" + id + ".pldb", content)
+  }
+
   toObjectsForCsv() {
     // todo: sort columns by importance
     const program = this.toProgram()

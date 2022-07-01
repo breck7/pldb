@@ -1,0 +1,15 @@
+title Battlestar
+type pl
+rijuRepl https://riju.codes/battlestar
+ example
+  const message = "Hello, world!\n"
+  
+  fun main
+      syscall(1, 1, message, len(message))
+  end
+  
+ description A different take on assembly, with the goal of creating tiny executables
+ fileExtensions bts
+ githubRepo https://github.com/xyproto/battlestar
+appeared 2014
+githubRepo https://github.com/xyproto/battlestar

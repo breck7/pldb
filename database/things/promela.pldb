@@ -1,0 +1,9 @@
+title Promela
+wikipedia https://en.wikipedia.org/wiki/Promela
+type pl
+rijuRepl https://riju.codes/promela
+ example
+  active proctype main() {
+    printf("Hello, world!\n");
+  }
+  
