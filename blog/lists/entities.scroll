@@ -4,7 +4,7 @@ maxColumns 1
 columnWidth 60
 
 aftertext
- Here is the list of all 4,432 entities in the PLDB. You can also download the whole database as a @CSV@.
+ Here is the list of all 4,459 entities in the PLDB. You can also download the whole database as a @CSV@.
  wrap @ a href="../pldb.csv"
 
 aftertext
@@ -415,6 +415,7 @@ pipeTable
  basis-universal-format|../languages/basis-universal-format.html|binaryDataFormat|2019
  batari-basic|../languages/batari-basic.html|pl|2007
  batch|../languages/batch.html|pl|1985
+ battlestar|../languages/battlestar.html|pl|2014
  bawk|../languages/bawk.html|pl|
  bayer-expressions|../languages/bayer-expressions.html|metaLanguage|2018
  bayes-equation|../languages/bayes-equation.html|equation|1763
@@ -435,6 +436,7 @@ pipeTable
  beam-bytecode|../languages/beam-bytecode.html|bytecode|
  beam-vm|../languages/beam-vm.html|vm|2011
  beanshell|../languages/beanshell.html|pl|1999
+ beatnik|../languages/beatnik.html|esolang|2001
  beautiful-report-language|../languages/beautiful-report-language.html|pl|2003
  bed-format|../languages/bed-format.html|textDataFormat|2004
  bedsocs|../languages/bedsocs.html|pl|1973
@@ -465,7 +467,6 @@ pipeTable
  bigwig-programming-language|../languages/bigwig-programming-language.html|pl|1998
  bigwig|../languages/bigwig.html|pl|
  binary-equation|../languages/binary-equation.html|equation|1689
- binary-lambda-calculus|../languages/binary-lambda-calculus.html|pl|2004
  binary-notation|../languages/binary-notation.html|notation|1689
  binary-operators-pattern|../languages/binary-operators-pattern.html|pattern|
  binaryen|../languages/binaryen.html|compiler|2015
@@ -492,6 +493,7 @@ pipeTable
  blank|../languages/blank.html|pl|2018
  blaze-2|../languages/blaze-2.html|pl|1989
  blaze|../languages/blaze.html|pl|1985
+ blc|../languages/blc.html|esolang|2004
  blender-app|../languages/blender-app.html|application|1998
  bliss|../languages/bliss.html|pl|1969
  blitz3d|../languages/blitz3d.html|pl|2001
@@ -565,6 +567,7 @@ pipeTable
  bx|../languages/bx.html|pl|1990
  bytecode-modeling-language|../languages/bytecode-modeling-language.html|bytecode|
  bytelisp|../languages/bytelisp.html|pl|1965
+ bython|../languages/bython.html|pl|2016
  bywater-basic|../languages/bywater-basic.html|pl|1992
  c--|../languages/c--.html|pl|1997
  c-al|../languages/c-al.html|pl|1987
@@ -712,6 +715,7 @@ pipeTable
  clanger|../languages/clanger.html|pl|1995
  clarion|../languages/clarion.html|pl|1986
  clarity|../languages/clarity.html|contractLanguage|2019
+ claro|../languages/claro.html|pl|2021
  clascal|../languages/clascal.html|pl|1983
  clash|../languages/clash.html|pl|2015
  class|../languages/class.html|pl|1970
@@ -830,6 +834,7 @@ pipeTable
  concurrent-prolog|../languages/concurrent-prolog.html|pl|1983
  conditionals-pattern|../languages/conditionals-pattern.html|pattern|
  cone|../languages/cone.html|pl|2017
+ confluence|../languages/confluence.html|textMarkup|2004
  congolog|../languages/congolog.html|pl|1994
  conlan|../languages/conlan.html|pl|1980
  conll-u|../languages/conll-u.html|application|2014
@@ -1068,7 +1073,7 @@ pipeTable
  dogescript|../languages/dogescript.html|pl|2013
  doh|../languages/doh.html|protocol|2018
  doi|../languages/doi.html|schema|2000
- dokuwiki|../languages/dokuwiki.html|application|2004
+ dokuwiki|../languages/dokuwiki.html|wikiMarkup|2004
  dolittle|../languages/dolittle.html|pl|1952
  dollar-sign|../languages/dollar-sign.html|pl|1983
  dolphin|../languages/dolphin.html|pl|1970
@@ -1181,6 +1186,7 @@ pipeTable
  elm|../languages/elm.html|pl|2012
  elmol|../languages/elmol.html|pl|1970
  elpa-pm|../languages/elpa-pm.html|packageManager|
+ elvish|../languages/elvish.html|pl|2013
  elymas|../languages/elymas.html|pl|2012
  emacs-editor|../languages/emacs-editor.html|editor|1976
  emacs-lisp|../languages/emacs-lisp.html|pl|1985
@@ -1202,6 +1208,7 @@ pipeTable
  eno|../languages/eno.html|pl|2018
  enso|../languages/enso.html|pl|2011
  enterprise-mashup-markup-language|../languages/enterprise-mashup-markup-language.html|pl|2001
+ entropy|../languages/entropy.html|esolang|
  envoy-app|../languages/envoy-app.html|application|
  epigram|../languages/epigram.html|pl|2004
  epilog|../languages/epilog.html|pl|1981
@@ -1312,6 +1319,7 @@ pipeTable
  firrtl|../languages/firrtl.html|ir|2015
  first-class-functions-pattern|../languages/first-class-functions-pattern.html|pattern|
  fish|../languages/fish.html|pl|2005
+ fishlang|../languages/fishlang.html|esolang|2009
  fizz|../languages/fizz.html|pl|2017
  fjolnir|../languages/fjolnir.html|pl|1986
  fjs|../languages/fjs.html|pl|2013
@@ -1530,6 +1538,7 @@ pipeTable
  gofer|../languages/gofer.html|pl|1994
  gogs-editor|../languages/gogs-editor.html|editor|
  gold|../languages/gold.html|grammarLanguage|2012
+ golfscript|../languages/golfscript.html|esolang|2007
  golo|../languages/golo.html|pl|2012
  golog|../languages/golog.html|pl|1993
  google-apps-script|../languages/google-apps-script.html|pl|2009
@@ -1672,6 +1681,7 @@ pipeTable
  hla|../languages/hla.html|pl|2011
  hlsl|../languages/hlsl.html|pl|2002
  hlvm|../languages/hlvm.html|vm|2009
+ hmmm|../languages/hmmm.html|assembly|2006
  hmsl|../languages/hmsl.html|pl|
  hobbes|../languages/hobbes.html|pl|2017
  hocon|../languages/hocon.html|metaLanguage|2011
@@ -1899,6 +1909,7 @@ pipeTable
  jedlang|../languages/jedlang.html|pl|2015
  jeebox|../languages/jeebox.html|pl|2012
  jet-propulsion-laboratory-display-information-system|../languages/jet-propulsion-laboratory-display-information-system.html|pl|1973
+ jevko|../languages/jevko.html|metaLanguage|2021
  jflex|../languages/jflex.html|grammarLanguage|2003
  jfugue|../languages/jfugue.html|pl|
  ji|../languages/ji.html|pl|
@@ -1934,6 +1945,7 @@ pipeTable
  jr|../languages/jr.html|pl|2004
  jruby|../languages/jruby.html|pl|2001
  jscript|../languages/jscript.html|pl|1996
+ jsf|../languages/jsf.html|esolang|2012
  jsharp|../languages/jsharp.html|pl|2002
  jsil-compiler|../languages/jsil-compiler.html|compiler|2010
  jsml|../languages/jsml.html|xmlFormat|2001
@@ -1974,6 +1986,7 @@ pipeTable
  kaleidoscope|../languages/kaleidoscope.html|pl|1994
  kaleidoscope90|../languages/kaleidoscope90.html|pl|1990
  kaleidoscope91|../languages/kaleidoscope91.html|pl|1991
+ kalyn|../languages/kalyn.html|pl|2020
  karel|../languages/karel.html|pl|1981
  karl|../languages/karl.html|pl|1993
  kasaya|../languages/kasaya.html|application|2018
@@ -2362,7 +2375,7 @@ pipeTable
  mdx-lang|../languages/mdx-lang.html|queryLanguage|1997
  mdx|../languages/mdx.html|textMarkup|2017
  mech-lang|../languages/mech-lang.html|pl|2018
- mediawiki|../languages/mediawiki.html|application|2002
+ mediawiki|../languages/mediawiki.html|wikiMarkup|2002
  medic|../languages/medic.html|pl|1980
  medusa|../languages/medusa.html|pl|2002
  megalog|../languages/megalog.html|pl|1991
@@ -2595,6 +2608,7 @@ pipeTable
  neeilang|../languages/neeilang.html|pl|2019
  neko|../languages/neko.html|pl|2005
  neliac|../languages/neliac.html|pl|1958
+ nelua|../languages/nelua.html|pl|2019
  nemerle|../languages/nemerle.html|pl|2003
  neovim-editor|../languages/neovim-editor.html|editor|
  neralie-format|../languages/neralie-format.html|timeFormat|2017
@@ -2779,6 +2793,7 @@ pipeTable
  onnx|../languages/onnx.html|binaryDataFormat|2017
  onyx|../languages/onyx.html|pl|1989
  ooc|../languages/ooc.html|pl|2009
+ ook|../languages/ook.html|esolang|
  oolp|../languages/oolp.html|pl|1989
  oopal|../languages/oopal.html|pl|2002
  oops|../languages/oops.html|pl|1986
@@ -3137,6 +3152,7 @@ pipeTable
  prolog|../languages/prolog.html|pl|1972
  prologpp|../languages/prologpp.html|pl|1994
  promal|../languages/promal.html|pl|1986
+ promela|../languages/promela.html|pl|
  prometheus|../languages/prometheus.html|pl|
  prompter|../languages/prompter.html|pl|2011
  promql|../languages/promql.html|queryLanguage|2014
@@ -3159,6 +3175,7 @@ pipeTable
  prql|../languages/prql.html|queryLanguage|2022
  ps-algol|../languages/ps-algol.html|pl|1981
  psather|../languages/psather.html|pl|1991
+ pseint|../languages/pseint.html|pl|
  psg|../languages/psg.html|pl|1969
  psi|../languages/psi.html|pl|
  psl|../languages/psl.html|pl|1979
@@ -3647,6 +3664,7 @@ pipeTable
  slash|../languages/slash.html|pl|2012
  sleuth|../languages/sleuth.html|assembly|1962
  slice|../languages/slice.html|pl|2011
+ slick|../languages/slick.html|pl|2020
  slim-lang|../languages/slim-lang.html|template|2011
  slim-pl|../languages/slim-pl.html|pl|1999
  slim|../languages/slim.html|pl|2010
@@ -3840,6 +3858,7 @@ pipeTable
  stx|../languages/stx.html|pl|1999
  stylus|../languages/stylus.html|stylesheetLanguage|2010
  sub|../languages/sub.html|plzoo|2013
+ subleq|../languages/subleq.html|isa|2009
  sublime-editor|../languages/sublime-editor.html|editor|2008
  sublime-syntax-test|../languages/sublime-syntax-test.html|grammarLanguage|
  sublime-syntax|../languages/sublime-syntax.html|grammarLanguage|
@@ -3905,6 +3924,7 @@ pipeTable
  tablatal|../languages/tablatal.html|pl|2017
  tableau-app|../languages/tableau-app.html|application|2003
  tablog|../languages/tablog.html|pl|1984
+ tabloid|../languages/tabloid.html|esolang|2020
  tabsol|../languages/tabsol.html|pl|1960
  tabtran|../languages/tabtran.html|pl|1967
  tac|../languages/tac.html|pl|1959
@@ -3986,7 +4006,7 @@ pipeTable
  threads-pattern|../languages/threads-pattern.html|pattern|
  thrift|../languages/thrift.html|idl|2007
  tht|../languages/tht.html|pl|2017
- thue-programming-language|../languages/thue-programming-language.html|pl|2004
+ thue-programming-language|../languages/thue-programming-language.html|esolang|2004
  thune|../languages/thune.html|pl|2014
  thymeleaf|../languages/thymeleaf.html|template|2011
  ti-89-basic|../languages/ti-89-basic.html|pl|
@@ -3996,10 +4016,11 @@ pipeTable
  tibet|../languages/tibet.html|framework|1997
  tick-c|../languages/tick-c.html|pl|1997
  tics|../languages/tics.html|pl|1973
- tiddlywiki|../languages/tiddlywiki.html|template|2004
+ tiddlywiki|../languages/tiddlywiki.html|wikiMarkup|2004
  tidyverse|../languages/tidyverse.html|library|2016
  tiff-format|../languages/tiff-format.html|binaryDataFormat|1986
  tiger-basic|../languages/tiger-basic.html|pl|1986
+ tikiwiki|../languages/tikiwiki.html|wikiMarkup|
  tiledb|../languages/tiledb.html|database|2017
  tilton|../languages/tilton.html|pl|2000
  timber-programming-language|../languages/timber-programming-language.html|pl|1999
@@ -4084,6 +4105,7 @@ pipeTable
  tutorial-d|../languages/tutorial-d.html|queryLanguage|1994
  twelf|../languages/twelf.html|pl|2006
  twig|../languages/twig.html|template|2009
+ twiki|../languages/twiki.html|wikiMarkup|
  two-d|../languages/two-d.html|pl|1971
  twoducks|../languages/twoducks.html|esolang|2006
  txl|../languages/txl.html|pl|1985
@@ -4185,6 +4207,7 @@ pipeTable
  vdm-sl|../languages/vdm-sl.html|pl|1996
  vector-pascal|../languages/vector-pascal.html|pl|1998
  vega-editor-app|../languages/vega-editor-app.html|application|2015
+ velato|../languages/velato.html|esolang|
  venus|../languages/venus.html|pl|1967
  verifpal|../languages/verifpal.html|pl|
  verilog|../languages/verilog.html|hardwareDescriptionLanguage|1984
@@ -4203,6 +4226,7 @@ pipeTable
  vim-editor|../languages/vim-editor.html|editor|1991
  vim-script|../languages/vim-script.html|pl|1991
  vim-scripts-pm|../languages/vim-scripts-pm.html|packageManager|
+ vimwiki|../languages/vimwiki.html|wikiMarkup|2008
  viptran|../languages/viptran.html|pl|1973
  viron|../languages/viron.html|pl|1983
  virt|../languages/virt.html|pl|
@@ -4384,6 +4408,7 @@ pipeTable
  xslt|../languages/xslt.html|xmlFormat|1998
  xsv-app|../languages/xsv-app.html|application|2014
  xt3d|../languages/xt3d.html|grammarLanguage|2000
+ xtao|../languages/xtao.html|xmlFormat|2005
  xtclang|../languages/xtclang.html|pl|2015
  xtend|../languages/xtend.html|pl|2011
  xtext|../languages/xtext.html|grammarLanguage|2006
@@ -4439,11 +4464,13 @@ pipeTable
  zipper-pattern|../languages/zipper-pattern.html|pattern|1997
  zl|../languages/zl.html|pl|2012
  zlang|../languages/zlang.html|pl|2017
+ zoem|../languages/zoem.html|pl|2005
  zolang|../languages/zolang.html|pl|2018
  zone|../languages/zone.html|application|2001
  zonnon|../languages/zonnon.html|pl|2003
  zope|../languages/zope.html|application|1999
  zopl|../languages/zopl.html|pl|1979
+ zot|../languages/zot.html|pl|2015
  zpl|../languages/zpl.html|pl|1993
  zpp|../languages/zpp.html|pl|1991
  zz|../languages/zz.html|pl|2019
