@@ -1,9 +1,22 @@
-title Line Delimited JSON
+title JSON Lines
 appeared 2013
 type metaLanguage
+aka newline-delimited JSON
+
+description JSON Lines is a convenient format for storing structured data that may be processed one record at a time. It works well with unix-style text processing tools and shell pipelines. It's a great format for log files. It's also a flexible format for passing messages between cooperating processes.
+
+related json
 
 website http://jsonlines.org/
 reference https://en.wikipedia.org/wiki/JSON_streaming
-status historical
 fileExtensions ldj jsonl
 centralPackageRepositoryCount 0
+
+example
+ ["Name", "Session", "Score", "Completed"]
+ ["Gilbert", "2013", 24, true]
+ ["Alexa", "2013", 29, true]
+ ["May", "2012B", 14, false]
+ ["Deloise", "2012A", 19, true] 
+
+githubRepo https://github.com/wardi/jsonlines

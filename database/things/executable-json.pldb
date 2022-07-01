@@ -1,0 +1,54 @@
+title Executable JSON
+appeared 2013
+type pl
+creators Todd Davies
+website https://gist.github.com/Todd-Davies/7666505#file-executable-json
+hackerNewsDiscussions
+ id|title|time|timestamp|by|comments|score
+ 6804341|Show HN: A programming language with a JSON parsable syntax|2013-11-26 21:26:30 UTC|1385501190|todd-davies|0|3
+
+example
+ [
+     {"x":9},
+     {"y":3},
+     ["print The value of x is: $x"],
+     ["print The value of x is: $y"],
+     ["print Now lets add x and y"],
+     ["add $z $x $y"],
+     ["print The answer is: $z"],
+     ["print Now lets subtract y from x"],
+     ["sub $z $x $y"],
+     ["print The answer is: $z"],
+     ["print Now lets divide x by y"],
+     ["div $z $x $y"],
+     ["print The answer is: $z"],
+     ["print Now lets multiply x by y"],
+     ["mul $z $x $y"],
+     ["print The answer is: $z"],
+     {"myMethod":
+       {
+         "params": [
+           "p1",
+           "p2"
+         ],
+         "body": [
+           {"nestedMethod":
+             {
+               "params": [
+                 "p1"
+               ],
+               "body": [
+                 ["print Methods can be nested, and arguments can be trickled down."],
+                 ["print The result was: $p1"]
+               ]
+             }
+         },
+           ["print You passed me: $p1 and $p2"],
+           ["print Lets add them and pass the result into another method!"],
+           ["add $p2 $p1 $p2"],
+           ["!nestedMethod $p2"]
+         ]
+       }
+   },
+   ["!myMethod $x $y"]
+ ]
