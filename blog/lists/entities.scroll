@@ -4,7 +4,7 @@ maxColumns 1
 columnWidth 60
 
 aftertext
- Here is the list of all 4,436 entities in the PLDB. You can also download the whole database as a @CSV@.
+ Here is the list of all 4,435 entities in the PLDB. You can also download the whole database as a @CSV@.
  wrap @ a href="../pldb.csv"
 
 aftertext
@@ -2968,7 +2968,7 @@ pipeTable
  picasso|../languages/picasso.html|pl|1988
  picat|../languages/picat.html|pl|2012
  piccola|../languages/piccola.html|pl|2002
- pick-operating-system|../languages/pick-operating-system.html|pl|1970
+ pick-operating-system|../languages/pick-operating-system.html|os|1970
  pickle-format|../languages/pickle-format.html|textDataFormat|1995
  pico|../languages/pico.html|pl|1997
  picolisp|../languages/picolisp.html|pl|1988
@@ -4114,7 +4114,6 @@ pipeTable
  ucg|../languages/ucg.html|metaLanguage|2017
  ucl|../languages/ucl.html|metaLanguage|2013
  ucsd-pascal|../languages/ucsd-pascal.html|pl|1978
- udp-protocol|../languages/udp-protocol.html|protocol|1980
  udp|../languages/udp.html|protocol|1980
  ufl|../languages/ufl.html|pl|1986
  ufo|../languages/ufo.html|pl|1992
