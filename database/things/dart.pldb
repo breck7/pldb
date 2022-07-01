@@ -11,7 +11,7 @@ patterns
  hasComments? true
   // Hi
   /* Assume address is not null. */
- hasBlockComments? true
+ hasMultiLineComments? true
   /* a comment
    */
  hasImports? true
@@ -174,3 +174,4 @@ rijuRepl https://riju.codes/dart
     print('Hello, world!');
   }
   
+multiLineCommentKeywords /* */

@@ -17,13 +17,13 @@ comment autogenPatterns
 pipeTable
  pattern|patternLink|aka|psuedoExample|languages
  Comments|../languages/comment-pattern.html||# a comment|158
- Line Comments|../languages/line-comments-pattern.html||# from here to end of line is a comment|82
+ Line Comments|../languages/line-comments-pattern.html||# from here to end of line is a comment|104
  Semantic Indentation|../languages/semantic-indentation-pattern.html||if true(newline/space)print True|51
  Operator Overloading|../languages/operator-overloading-pattern.html||def __add__(): doSomethingDifferent()|30
  Strings|../languages/strings-pattern.html||"""hi"""|29
  Import Pattern|../languages/import-pattern.html||import package|27
+ MultiLine Comments|../languages/multiline-comments-pattern.html||/* a looong comment */|19
  Directives|../languages/directives-pattern.html||use strict;|18
- Block Comments|../languages/block-comments-pattern.html||/* a looong comment */|14
  Multiple Inheritance|../languages/multiple-inheritance-pattern.html||extends parentWhichExtendsSomethingElse|13
  Pointers|../languages/pointers-pattern.html||int *foobar|12
  Constructors|../languages/constructor-pattern.html||Person: constructor(name: string): {}|12

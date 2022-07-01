@@ -33,7 +33,7 @@ patterns
    {- A multiline comment
       which can continue for many lines
    -}
- hasBlockComments? true
+ hasMultiLineComments? true
  hasZippers? true
   -- https://wiki.haskell.org/Zipper_monad/TravelTree
  hasPatternMatching? true
@@ -163,3 +163,4 @@ rijuRepl https://riju.codes/haskell
   main :: IO ()
   main = putStrLn "Hello, world!"
   
+multiLineCommentKeywords {- -}

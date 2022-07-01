@@ -9,7 +9,7 @@ patterns
   #!/usr/bin/env escript
  hasComments? true
   % hello world program
- hasBlockComments? false
+ hasMultiLineComments? false
  hasDirectives? true
   -define(TIMEOUT, 200).
   ...

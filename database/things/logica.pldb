@@ -19,3 +19,6 @@ example
      y != x,
      Mod(x, y) == 0
    );
+patterns
+ hasLineComments? true
+  # A comment

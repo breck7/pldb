@@ -51,3 +51,6 @@ rijuRepl https://riju.codes/arm
  website https://developer.arm.com/architectures/cpu-architecture
  githubRepo https://gcc.gnu.org/git.html
 lineCommentKeyword ;
+patterns
+ hasLineComments? true
+  ; A comment

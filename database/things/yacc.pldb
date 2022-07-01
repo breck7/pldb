@@ -164,3 +164,6 @@ hopl 704
 writtenIn c
 centralPackageRepositoryCount 0
 reference https://github.com/babyraging/yash
+patterns
+ hasLineComments? true
+  // A comment

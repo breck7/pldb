@@ -5,7 +5,7 @@ type pl
 patterns
  hasComments? true
   # this is a comment
- hasBlockComments? false
+ hasMultiLineComments? false
  hasImports? true
   # Alias the module so it can be called as Bar instead of Foo.Bar
   alias Foo.Bar, as: Bar

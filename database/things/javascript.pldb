@@ -76,7 +76,7 @@ patterns
   if (true)
    console.log("hi!")
  hasComments? true
- hasBlockComments? true
+ hasMultiLineComments? true
  hasConstructors? true
   class Person {
    constructor(name) {

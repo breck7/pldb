@@ -4,7 +4,7 @@ type pl
 
 patterns
  hasComments? true
- hasBlockComments? true
+ hasMultiLineComments? true
    /* For example 1 use: x=abc;
     for example 2 use: y=ghi; */
  hasLineComments? true
@@ -92,3 +92,4 @@ rosettaCode SAS
 lineCommentKeyword *
 jupyterKernel https://github.com/sassoftware/sas_kernel
 centralPackageRepositoryCount 0
+multiLineCommentKeywords /* */

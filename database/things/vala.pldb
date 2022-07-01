@@ -46,3 +46,6 @@ rijuRepl https://riju.codes/vala
   }
   
 lineCommentKeyword //
+patterns
+ hasLineComments? true
+  // A comment

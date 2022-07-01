@@ -1,4 +1,4 @@
-title jsonnet
+title Jsonnet
 appeared 2014
 type metaLanguage
 
@@ -18,3 +18,7 @@ githubRepo http://github.com/google/jsonnet
 
 website https://jsonnet.org/
 status active
+supersetOf json
+webRepl https://jsonnet.org/
+multiLineCommentKeywords /* */
+lineCommentKeyword //

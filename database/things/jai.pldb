@@ -9,7 +9,7 @@ subreddit Jai
 patterns
  hasLineComments? true
   // A comment
- hasBlockComments? true
+ hasMultiLineComments? true
   /*
    *  Multiline comment
    */

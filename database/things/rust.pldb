@@ -9,7 +9,7 @@ patterns
  hasComments? true
   // https://doc.rust-lang.org/reference/comments.html
   // a comment
- hasBlockComments? true
+ hasMultiLineComments? true
   // see: https://doc.rust-lang.org/reference/comments.html
   /* a block comment */
  hasDirectives? true
@@ -189,3 +189,4 @@ rijuRepl https://riju.codes/rust
       println!("Hello, world!");
   }
   
+multiLineCommentKeywords /* */

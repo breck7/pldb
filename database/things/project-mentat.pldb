@@ -16,3 +16,6 @@ example
   :db/valueType   :db.type/ref
   :db/cardinality :db.cardinality/many}    ; People can have many friends.
 appeared 2016
+patterns
+ hasLineComments? true
+  ; A comment

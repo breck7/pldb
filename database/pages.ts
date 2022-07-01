@@ -208,6 +208,9 @@ ${facts.map(fact => ` - ${fact}`).join("\n")}`
     const appeared = object.appeared
     if (appeared) facts.push(`${title} first appeared in ${appeared}`)
 
+    const supersetOf = file.get("supersetOf")
+    if (supersetOf) facts.push(`${title} is a superset of ${supersetOf}`)
+
     let creators = object.creators
     if (creators) {
       creators = creators

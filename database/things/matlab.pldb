@@ -7,7 +7,7 @@ patterns
   "hello world"
  hasComments? true
   % This is a comment
- hasBlockComments? true
+ hasMultiLineComments? true
   %{
   Comment block
   %}
@@ -123,3 +123,4 @@ stackOverflowSurvey
   fans 1562
   percentageUsing 0.05
 packageRepository https://www.mathworks.com/matlabcentral/fileexchange/
+multiLineCommentKeywords %{ %}

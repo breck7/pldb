@@ -19,6 +19,8 @@ patterns
   let hello () = print_endline "Hello"
   (* bmodule.ml *)
   Amodule.hello ()
+ hasMultiLineComments? true
+  (* A comment *)
 
 wikipedia https://en.wikipedia.org/wiki/OCaml
  example
@@ -111,3 +113,4 @@ rijuRepl https://riju.codes/ocaml
   ;;
   print_string "Hello, world!\n"
   
+multiLineCommentKeywords (* *)

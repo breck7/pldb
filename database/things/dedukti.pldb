@@ -15,7 +15,7 @@ example
 patterns
  hasComments? true
   (; This is a comment ;)
- hasBlockComments? true
+ hasMultiLineComments? true
   (; This is a comment ;)
 
 githubRepo https://github.com/Deducteam/Dedukti
@@ -29,3 +29,4 @@ githubRepo https://github.com/Deducteam/Dedukti
  issues 34
 
 website https://deducteam.github.io
+multiLineCommentKeywords (; ;)

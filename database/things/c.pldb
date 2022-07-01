@@ -128,6 +128,8 @@ patterns
  hasIncrementAndDecrementOperators? true
  hasLineComments? true
   // A comment
+ hasMultiLineComments? true
+  /* A comment */
 
 wikipedia https://en.wikipedia.org/wiki/C_(programming_language)
  example
@@ -258,3 +260,4 @@ rijuRepl https://riju.codes/c
  description General-purpose, procedural computer programming language supporting structured programming, lexical variable scope, and recursion, with a static type system
  fileExtensions c h
  githubRepo https://github.com/llvm/llvm-project
+multiLineCommentKeywords /* */

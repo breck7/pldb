@@ -49,7 +49,7 @@ patterns
   puts person.age
  hasComments? true
   # This is a single line comment.
- hasBlockComments? true
+ hasMultiLineComments? true
   =begin
   This is a multiline comment and con spwan as many lines as you
   like. But =begin and =end should come in the first line only.
@@ -243,3 +243,4 @@ rijuRepl https://riju.codes/ruby
  example
   puts "Hello, world!"
   
+multiLineCommentKeywords =begin =end

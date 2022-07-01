@@ -26,6 +26,8 @@ patterns
    baz
  hasLineComments? true
   -- A comment
+ hasMultiLineComments? true
+  {- A comment -}
 
 githubLanguage PureScript
  fileExtensions purs
@@ -106,3 +108,4 @@ languageServerProtocolProject https://github.com/nwolverson/purescript-language-
  writtenIn purescript
 jupyterKernel https://github.com/Eoksni/ipurescript
 packageRepository https://pursuit.purescript.org/
+multiLineCommentKeywords {- -}

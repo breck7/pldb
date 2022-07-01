@@ -676,6 +676,45 @@ class Builder extends AbstractBuilder {
       })
     )
   }
+
+  updateAll() {
+    pldbBase.loadFolder()
+    pldbBase
+      .filter(file => file.isLanguage)
+      .filter(
+        file =>
+          file.has("lineCommentKeyword") &&
+          !file.get("patterns hasLineComments?")
+      )
+      .forEach(file => {
+        const kw = file.get("lineCommentKeyword")
+        file.set("patterns hasLineComments?", "true")
+        file
+          .touchNode("patterns hasLineComments?")
+          .setChildren(`${kw} A comment`)
+        file.save()
+      })
+
+    pldbBase
+      .filter(file => file.isLanguage)
+      .filter(
+        file =>
+          file.has("multiLineCommentKeywords") &&
+          !file.get("patterns hasMultiLineComments?")
+      )
+      .forEach(file => {
+        const kws = file.get("multiLineCommentKeywords")
+        file.set("patterns hasMultiLineComments?", "true")
+        const parts = kws.split(" ")
+        const start = parts[0]
+        const end = parts[1] || start
+        file
+          .touchNode("patterns hasMultiLineComments?")
+          .setChildren(`${start} A comment ${end}`)
+
+        file.save()
+      })
+  }
 }
 
 export { Builder }

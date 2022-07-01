@@ -22,7 +22,7 @@ patterns
   These comments will be ignored by the 
   compiler until the next =cut is encountered.
   =cut
- hasBlockComments? true
+ hasMultiLineComments? true
  hasLineComments? true
   # A comment
  hasHereDocs? true
@@ -151,3 +151,4 @@ rijuRepl https://riju.codes/perl
  example
   print("Hello, world!\n");
   
+multiLineCommentKeywords =begin =cut

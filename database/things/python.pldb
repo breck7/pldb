@@ -34,7 +34,7 @@ patterns
    print("Hello world")
  hasComments? true
   # This is a comment
- hasBlockComments? true
+ hasMultiLineComments? true
   '''
   This is a multiline
   comment.
@@ -242,3 +242,4 @@ rijuRepl https://riju.codes/python
  fileExtensions py pyi pyc pyd pyo pyw pyz
  website https://www.python.org/
  githubRepo https://github.com/python/cpython
+multiLineCommentKeywords '''

@@ -60,3 +60,6 @@ rijuRepl https://riju.codes/llvm
       ret i32 0
   }
   
+patterns
+ hasLineComments? true
+  # A comment

@@ -9,7 +9,7 @@ patterns
   (* This is a multi-line comments
    and it will span multiple lines. *)
   { This is a single line comment in pascal }
- hasBlockComments? true
+ hasMultiLineComments? true
   (* This is a multi-line comments
    and it will span multiple lines. *)
  hasLineComments? false

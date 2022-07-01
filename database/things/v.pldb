@@ -33,6 +33,8 @@ rijuRepl https://riju.codes/v
 patterns
  hasStrings? true
   "hello world"
+ hasLineComments? true
+  // A comment
 
 lineCommentKeyword //
 example

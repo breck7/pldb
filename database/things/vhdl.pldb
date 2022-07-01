@@ -4,6 +4,8 @@ type hardwareDescriptionLanguage
 
 patterns
  hasComments? true
+ hasLineComments? true
+  -- A comment
 
 wikipedia https://en.wikipedia.org/wiki/VHDL
  example

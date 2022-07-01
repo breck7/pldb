@@ -13,9 +13,17 @@ keywordsNode
  single
 lineCommentKeywordNode
  extends abstractCommonKeywordNode
- description I define a line comment as a character(s) that starts a comment that cannot be stopped except by a line break character or end of file character.
+ description Defined as a character(s) that can be placed anywhere on a line and starts a comment that cannot be stopped except by a line break character or end of file character.
  crux lineCommentKeyword
  boolean multipleOk true
  example
   javascript
    lineCommentKeyword //
+multiLineCommentKeywordsNode
+ extends abstractCommonKeywordNode
+ description A comment with a start delimiter and end delimiter (which can be the same) that can span multiple lines.
+ crux multiLineCommentKeywords
+ boolean multipleOk true
+ example
+  javascript
+   multiLineCommentKeyword /* */

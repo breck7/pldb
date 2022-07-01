@@ -1,4 +1,4 @@
-title json-graph-spec
+title JSON Graph Spec
 appeared 2013
 type jsonFormat
 
@@ -10,3 +10,27 @@ githubRepo https://github.com/bruth/json-graph-spec
  created 2013
  updated 2019
  description JSON specification for representing a graph structure
+
+example
+ {
+     "nodes": [{
+         "labels": ["Origin"],
+         "props": {
+             "name": "file.csv",
+             "uri": "csv:///path/to/file.csv"
+         },
+         "match": ["uri"]
+     }, {
+         "labels": ["Element"],
+         "props": {
+             "name": "ArtistId",
+             "uri": "csv:///path/to/file.csv/ArtistId"
+         },
+         "match": ["uri"]
+     }],
+     "rels": [{
+         "start": 0,
+         "end": 1,
+         "type": "CONTAINS"
+     }]
+ }

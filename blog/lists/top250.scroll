@@ -26,8 +26,8 @@ pipeTable
  MATLAB|../languages/matlab.html|1984|pl|15
  Scala|../languages/scala.html|2004|pl|16
  MySQL|../languages/mysql.html|1995|queryLanguage|17
- Swift|../languages/swift.html|2014|pl|18
- JSON|../languages/json.html|2001|metaLanguage|19
+ JSON|../languages/json.html|2001|metaLanguage|18
+ Swift|../languages/swift.html|2014|pl|19
  Haskell|../languages/haskell.html|1990|pl|20
  Lua|../languages/lua.html|1993|pl|21
  Fortran|../languages/fortran.html|1957|pl|22
@@ -37,19 +37,19 @@ pipeTable
  Scheme|../languages/scheme.html|1970|pl|26
  Objective-C|../languages/objective-c.html|1984|pl|27
  Clojure|../languages/clojure.html|2007|pl|28
- Lisp|../languages/lisp.html|1958|pl|29
- TypeScript|../languages/typescript.html|2012|pl|30
- PostgreSQL|../languages/postgresql.html|1986|queryLanguage|31
- SAS|../languages/sas.html|1976|pl|32
+ SAS|../languages/sas.html|1976|pl|29
+ Lisp|../languages/lisp.html|1958|pl|30
+ TypeScript|../languages/typescript.html|2012|pl|31
+ PostgreSQL|../languages/postgresql.html|1986|queryLanguage|32
  Erlang|../languages/erlang.html|1986|pl|33
  Prolog|../languages/prolog.html|1972|pl|34
  Mathematica|../languages/mathematica.html|1988|pl|35
  Visual Basic|../languages/visual-basic.html|1991|pl|36
  ARM|../languages/arm.html|1985|assembly|37
  Kotlin|../languages/kotlin.html|2011|pl|38
- Pascal|../languages/pascal.html|1970|pl|39
- ISBN|../languages/isbn.html|1970|schema|40
- Julia|../languages/julia.html|2012|pl|41
+ ISBN|../languages/isbn.html|1970|schema|39
+ Julia|../languages/julia.html|2012|pl|40
+ Pascal|../languages/pascal.html|1970|pl|41
  PowerShell|../languages/powershell.html|2006|pl|42
  Assembly language|../languages/assembly-language.html|1960|assembly|43
  Ada|../languages/ada.html|1980|pl|44
@@ -62,14 +62,14 @@ pipeTable
  Dart|../languages/dart.html|2011|pl|51
  Regular Expressions|../languages/regex.html|1951|queryLanguage|52
  BASIC|../languages/basic.html|1964|pl|53
- F#|../languages/f-sharp.html|2005|pl|54
- Smalltalk|../languages/smalltalk.html|1972|pl|55
+ Smalltalk|../languages/smalltalk.html|1972|pl|54
+ F#|../languages/f-sharp.html|2005|pl|55
  Common Lisp|../languages/common-lisp.html|1984|pl|56
  Bash|../languages/bash.html|1989|pl|57
  Racket|../languages/racket.html|1994|pl|58
  Forth|../languages/forth.html|1970|pl|59
- APL|../languages/apl.html|1964|pl|60
- Maple|../languages/maple.html|1982|pl|61
+ Maple|../languages/maple.html|1982|pl|60
+ APL|../languages/apl.html|1964|pl|61
  HTTP|../languages/http.html|1989|protocol|62
  Crystal|../languages/crystal.html|2014|pl|63
  Nim|../languages/nim.html|2008|pl|64
@@ -85,12 +85,12 @@ pipeTable
  X86|../languages/x86-isa.html|1978|isa|74
  PostScript|../languages/postscript.html|1982|textMarkup|75
  FTP|../languages/ftp.html|1971|protocol|76
- LaTeX|../languages/latex.html|1985|textMarkup|77
- Tex|../languages/tex.html|1978|pl|78
- LabVIEW G|../languages/labview.html|1986|pl|79
- GNU Octave|../languages/octave.html|1988|pl|80
- Solidity|../languages/solidity.html|2014|pl|81
- LLVM IR|../languages/llvmir.html|2003|ir|82
+ LLVM IR|../languages/llvmir.html|2003|ir|77
+ LaTeX|../languages/latex.html|1985|textMarkup|78
+ Tex|../languages/tex.html|1978|pl|79
+ LabVIEW G|../languages/labview.html|1986|pl|80
+ GNU Octave|../languages/octave.html|1988|pl|81
+ Solidity|../languages/solidity.html|2014|pl|82
  TLS|../languages/tls.html|1999|protocol|83
  Node.js|../languages/nodejs.html|2009|pl|84
  Standard ML|../languages/standard-ml.html|1990|pl|85
@@ -104,23 +104,23 @@ pipeTable
  VHDL|../languages/vhdl.html|1983|hardwareDescriptionLanguage|93
  Modula-2|../languages/modula-2.html|1978|pl|94
  SMTP|../languages/smtp.html|1982|protocol|95
- Arduino|../languages/arduino.html|2005|pl|96
- GraphQL|../languages/graphql.html|2012|queryLanguage|97
- Rexx|../languages/rexx.html|1979|pl|98
- MUMPS|../languages/mumps.html|1966|pl|99
- PureScript|../languages/purescript.html|2013|pl|100
- Logo|../languages/logo.html|1967|pl|101
+ PureScript|../languages/purescript.html|2013|pl|96
+ Arduino|../languages/arduino.html|2005|pl|97
+ GraphQL|../languages/graphql.html|2012|queryLanguage|98
+ Rexx|../languages/rexx.html|1979|pl|99
+ MUMPS|../languages/mumps.html|1966|pl|100
+ Yacc|../languages/yacc.html|1975|grammarLanguage|101
  Brainfuck|../languages/brainfuck.html|1993|pl|102
  fish|../languages/fish.html|2005|pl|103
- Scratch|../languages/scratch.html|2002|visual|104
- Reason|../languages/reason.html|2016|pl|105
- Yacc|../languages/yacc.html|1975|grammarLanguage|106
+ Logo|../languages/logo.html|1967|pl|104
+ Scratch|../languages/scratch.html|2002|visual|105
+ Reason|../languages/reason.html|2016|pl|106
  Red|../languages/red.html|2011|pl|107
  VBScript|../languages/vbscript.html|1996|pl|108
  Dylan|../languages/dylan.html|1992|pl|109
  REBOL|../languages/rebol.html|1997|pl|110
- Self|../languages/self.html|1987|pl|111
- Idris|../languages/idris.html|2014|pl|112
+ Idris|../languages/idris.html|2014|pl|111
+ Self|../languages/self.html|1987|pl|112
  SOAP|../languages/soap.html|1998|xmlFormat|113
  MIPS architecture|../languages/mips.html|1985|isa|114
  ANTLR|../languages/antlr.html|1992|grammarLanguage|115
@@ -131,8 +131,8 @@ pipeTable
  PL/SQL|../languages/pl-sql.html|1991|pl|120
  REST|../languages/rest.html|1996|protocol|121
  Oz|../languages/oz.html|1991|pl|122
- Modula-3|../languages/modula-3.html|1986|pl|123
- Simula|../languages/simula.html|1965|pl|124
+ Simula|../languages/simula.html|1965|pl|123
+ Modula-3|../languages/modula-3.html|1986|pl|124
  SVG|../languages/svg.html|2001|textMarkup|125
  Applescript|../languages/applescript.html|1993|pl|126
  BCPL|../languages/bcpl.html|1966|pl|127
@@ -142,13 +142,13 @@ pipeTable
  XQuery|../languages/xquery.html|2007|pl|131
  Io|../languages/io.html|2002|pl|132
  J|../languages/j.html|1990|pl|133
- HAML|../languages/haml.html|2006|template|134
- OpenCL|../languages/opencl.html|2009|pl|135
+ OpenCL|../languages/opencl.html|2009|pl|134
+ HAML|../languages/haml.html|2006|template|135
  URL|../languages/url.html|1994|schema|136
- IDL|../languages/idl.html|1977|pl|137
- Hy|../languages/hy.html|2013|pl|138
- Stata|../languages/stata.html|1985|pl|139
- Vala|../languages/vala.html|2006|pl|140
+ Vala|../languages/vala.html|2006|pl|137
+ IDL|../languages/idl.html|1977|pl|138
+ Hy|../languages/hy.html|2013|pl|139
+ Stata|../languages/stata.html|1985|pl|140
  sed|../languages/sed.html|1974|pl|141
  Hack|../languages/hack.html|2014|pl|142
  MIME|../languages/mime.html|1991|textDataFormat|143
@@ -172,13 +172,13 @@ pipeTable
  PL/I|../languages/pl-i.html|1964|pl|161
  Falcon|../languages/falcon.html|2003|pl|162
  Perl 6|../languages/perl-6.html|2015|pl|163
- SNOBOL|../languages/snobol.html|1962|pl|164
- Processing|../languages/processing.html|2001|pl|165
+ Processing|../languages/processing.html|2001|pl|164
+ SNOBOL|../languages/snobol.html|1962|pl|165
  XPath|../languages/xpath.html|1999|queryLanguage|166
  RFC|../languages/rfc.html|1969|notation|167
  Sass|../languages/sass.html|2006|stylesheetLanguage|168
- Squirrel|../languages/squirrel.html|2003|pl|169
- BEFUNGE|../languages/befunge.html|1993|esolang|170
+ BEFUNGE|../languages/befunge.html|1993|esolang|169
+ Squirrel|../languages/squirrel.html|2003|pl|170
  YARA|../languages/yara.html|2008|pl|171
  Nemerle|../languages/nemerle.html|2003|pl|172
  IA-32|../languages/ia-32.html|1985|isa|173
@@ -186,21 +186,21 @@ pipeTable
  Agda|../languages/agda.html|2007|pl|175
  Occam|../languages/occam.html|1983|pl|176
  Cap'n Proto|../languages/capn-proto.html|2013|idl|177
- Fantom|../languages/fantom.html|2005|pl|178
- Opa|../languages/opa.html|2011|pl|179
- Makefile|../languages/makefile.html|1976|pl|180
+ Makefile|../languages/makefile.html|1976|pl|178
+ Fantom|../languages/fantom.html|2005|pl|179
+ Opa|../languages/opa.html|2011|pl|180
  Factor|../languages/factor.html|2003|pl|181
- Oberon|../languages/oberon.html|1986|pl|182
- ActionScript|../languages/actionscript.html|1998|pl|183
+ ActionScript|../languages/actionscript.html|1998|pl|182
+ Oberon|../languages/oberon.html|1986|pl|183
  NewLisp|../languages/newlisp.html|1991|pl|184
  Wolfram Language|../languages/wolfram.html|1988|pl|185
  MoonScript|../languages/moonscript.html|2011|pl|186
  grep|../languages/grep.html|1974|pl|187
  OWL|../languages/owl.html|2004|xmlFormat|188
  Java Bytecode|../languages/java-bytecode.html|1995|bytecode|189
- PostCSS|../languages/postcss.html|2013|textMarkup|190
- ColdFusion|../languages/coldfusion.html|1995|pl|191
- QBasic|../languages/qbasic.html|1991|pl|192
+ ColdFusion|../languages/coldfusion.html|1995|pl|190
+ QBasic|../languages/qbasic.html|1991|pl|191
+ PostCSS|../languages/postcss.html|2013|textMarkup|192
  Clean|../languages/clean.html|1987|pl|193
  SuperCollider|../languages/supercollider.html|1996|pl|194
  ABC|../languages/abc.html|1980|pl|195
@@ -213,39 +213,39 @@ pipeTable
  Microsoft BASIC|../languages/microsoft-basic.html|1975|pl|202
  Ioke|../languages/ioke.html|2008|pl|203
  Lasso|../languages/lasso.html|1995|pl|204
- Ini|../languages/ini.html|1987|metaLanguage|205
- S-expressions|../languages/s-expressions.html|1960|metaLanguage|206
+ S-expressions|../languages/s-expressions.html|1960|metaLanguage|205
+ Ini|../languages/ini.html|1987|metaLanguage|206
  UNLAMBDA|../languages/unlambda.html|1999|pl|207
  Maxima|../languages/maxima.html|1982|pl|208
  Puppet|../languages/puppet.html|2005|pl|209
- Bourne shell|../languages/bourne-shell.html|1977|pl|210
- XAML|../languages/xaml.html|2008|xmlFormat|211
- ALGOL 60|../languages/algol-60.html|1960|pl|212
+ XAML|../languages/xaml.html|2008|xmlFormat|210
+ ALGOL 60|../languages/algol-60.html|1960|pl|211
+ Bourne shell|../languages/bourne-shell.html|1977|pl|212
  SPARQL|../languages/sparql.html|2008|queryLanguage|213
  ABAP|../languages/abap.html|1983|pl|214
  API Blueprint|../languages/api-blueprint.html|2013|textMarkup|215
- V|../languages/v.html|2019|pl|216
- Org|../languages/org.html|2003|textMarkup|217
- Mercury|../languages/mercury.html|1995|pl|218
- CIL|../languages/cil.html|2000|pl|219
- Rockstar|../languages/rockstar.html|2018|esolang|220
+ Org|../languages/org.html|2003|textMarkup|216
+ Mercury|../languages/mercury.html|1995|pl|217
+ V|../languages/v.html|2019|pl|218
+ Rockstar|../languages/rockstar.html|2018|esolang|219
+ CIL|../languages/cil.html|2000|pl|220
  Slim|../languages/slim-lang.html|2011|template|221
  E|../languages/e.html|1997|pl|222
- Squeak|../languages/squeak.html|1996|pl|223
- Turtle|../languages/turtle.html|2011|metaLanguage|224
+ Turtle|../languages/turtle.html|2011|metaLanguage|223
+ Squeak|../languages/squeak.html|1996|pl|224
  PicoLisp|../languages/picolisp.html|1988|pl|225
- HyperTalk|../languages/hypertalk.html|1987|pl|226
+ Datalog|../languages/datalog.html|1977|pl|226
  INTERCAL|../languages/intercal.html|1972|pl|227
  K|../languages/k.html|1993|pl|228
- FLUX|../languages/flux.html|2014|pl|229
- CSV|../languages/csv.html|1972|metaLanguage|230
- CSP|../languages/csp.html|1978|pl|231
- Terra|../languages/terra.html|2012|pl|232
- Modelica|../languages/modelica.html|1997|pl|233
- X10|../languages/x10.html|2004|pl|234
- LFE|../languages/lfe.html|2008|pl|235
- SYMBOL|../languages/symbol.html|1971|pl|236
- Datalog|../languages/datalog.html|1977|pl|237
+ HyperTalk|../languages/hypertalk.html|1987|pl|229
+ FLUX|../languages/flux.html|2014|pl|230
+ CSV|../languages/csv.html|1972|metaLanguage|231
+ CSP|../languages/csp.html|1978|pl|232
+ Terra|../languages/terra.html|2012|pl|233
+ Modelica|../languages/modelica.html|1997|pl|234
+ X10|../languages/x10.html|2004|pl|235
+ LFE|../languages/lfe.html|2008|pl|236
+ SYMBOL|../languages/symbol.html|1971|pl|237
  wren|../languages/wren.html|2013|pl|238
  SETL|../languages/setl.html|1969|pl|239
  M4|../languages/m4.html|1977|pl|240
@@ -253,9 +253,9 @@ pipeTable
  WSDL|../languages/wsdl.html|2000|xmlFormat|242
  SI|../languages/si.html|1960|notation|243
  LOLCODE|../languages/lolcode.html|2007|esolang|244
- AutoHotkey|../languages/autohotkey.html|2003|pl|245
- Z shell|../languages/z-shell.html|1990|pl|246
- PureBasic|../languages/purebasic.html|1998|pl|247
+ JSON5|../languages/json5.html|2012|metaLanguage|245
+ AutoHotkey|../languages/autohotkey.html|2003|pl|246
+ Z shell|../languages/z-shell.html|1990|pl|247
  MariaDB|../languages/mariadb.html|2009|queryLanguage|248
- Batchfile|../languages/batch.html|1985|pl|249
+ PureBasic|../languages/purebasic.html|1998|pl|249
  AXIOM|../languages/axiom.html|1992|pl|250

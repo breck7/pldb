@@ -69,3 +69,6 @@ example
          resume;                          // scope 0 at src/main.rs:1:1: 5:2
      }
  }
+patterns
+ hasLineComments? true
+  // A comment

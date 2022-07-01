@@ -14,7 +14,7 @@ patterns
   δ = 0.00001
  hasComments? true
   # This is a comment
- hasBlockComments? true
+ hasMultiLineComments? true
   #=
   Comment block
   =#
@@ -217,3 +217,4 @@ rijuRepl https://riju.codes/julia
  example
   println("Hello, world!")
   
+multiLineCommentKeywords #= =#

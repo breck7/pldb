@@ -5,7 +5,7 @@ creators Roberto Ierusalimschy
 
 patterns
  hasComments? true
- hasBlockComments? true
+ hasMultiLineComments? true
   --[[
   print(10)         -- no action (comment)
   --]]
@@ -137,3 +137,4 @@ rijuRepl https://riju.codes/lua
  example
   print("Hello, world!")
   
+multiLineCommentKeywords --[[ --]]

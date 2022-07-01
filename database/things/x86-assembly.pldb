@@ -5,6 +5,8 @@ aka x86
 
 patterns
  hasProcessorRegisters? true
+ hasLineComments? true
+  ; A comment
 
 wikipedia https://en.wikipedia.org/wiki/X86_assembly_language
  example

@@ -30,3 +30,6 @@ example
  
  # Persists Influential as protocol buffer data
  ? Store{data: Influential, path: "influential-entities"};
+patterns
+ hasLineComments? true
+  # A comment

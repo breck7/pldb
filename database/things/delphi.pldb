@@ -4,6 +4,8 @@ type pl
 
 patterns
  hasComments? true
+ hasLineComments? true
+  // A comment
 
 wikipedia https://en.wikipedia.org/wiki/Delphi_(programming_language)
  example

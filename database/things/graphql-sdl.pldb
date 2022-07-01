@@ -33,7 +33,7 @@ example
 
 patterns
  hasComments? true
- hasBlockComments? false
+ hasMultiLineComments? false
  hasLineComments? true
   “”” A comment
 

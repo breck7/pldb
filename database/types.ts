@@ -73,7 +73,7 @@ export interface patternsNode {
   "hasAsyncAwait?"?: any
   "hasBinaryOperators?"?: any
   "hasBitWiseOperators?"?: any
-  "hasBlockComments?"?: any
+  "hasMultiLineComments?"?: any
   "hasBlockScope?"?: any
   "hasBlocks?"?: any
   "hasBooleans?"?: any
@@ -303,7 +303,7 @@ export enum patternsNodeKeywords {
   "hasClasses?" = "hasClasses?",
   "hasConditionals?" = "hasConditionals?",
   "hasComments?" = "hasComments?",
-  "hasBlockComments?" = "hasBlockComments?",
+  "hasMultiLineComments?" = "hasMultiLineComments?",
   "hasDocComments?" = "hasDocComments?",
   "hasImplicitArguments?" = "hasImplicitArguments?",
   "hasComplex?" = "hasComplex?",
