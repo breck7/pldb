@@ -26,7 +26,7 @@ wikipedia https://en.wikipedia.org/wiki/NumPy
   >>> minIdx = np.argmin(np.linalg.norm(points-qPoint,axis=1))  # compute all euclidean distances at once and return the index of the smallest one
   >>> print 'Nearest point to q: ', points[minIdx]
   Nearest point to q:  [3 4 4]
- related python c mathematical-notation jython scipy matlab simulink matplotlib cython
+ related python c jython scipy matlab simulink matplotlib cython
  summary NumPy (pronounced  (NUM-py) or sometimes  (NUM-pee)) is a library for the Python programming language, adding support for large, multi-dimensional arrays and matrices, along with a large collection of high-level mathematical functions to operate on these arrays. The ancestor of NumPy, Numeric, was originally created by Jim Hugunin with contributions from several other developers. In 2005, Travis Oliphant created NumPy by incorporating features of the competing Numarray into Numeric, with extensive modifications. NumPy is open-source software and has many contributors.
  pageId 381782
  dailyPageViews 427
