@@ -77,3 +77,11 @@ rijuRepl https://riju.codes/yaml
  example
   output: "Hello, world!"
   
+dblp https://dblp.org/search?q=$YAML$
+ hits 4
+ publications
+  title|year|doi|url
+  An Effective Seafile Dockerfile for Raspberry Pi to Make Docker YAML Files for Treehouses.|2020|10.1007/978-3-030-74717-6_14|https://dblp.org/rec/conf/smartcom/TerauchiX20
+  Laughter in the Wild: A Study Into DoS Vulnerabilities in YAML Libraries.|2019|10.1109/TRUSTCOM/BIGDATASE.2019.00053|https://dblp.org/rec/conf/trustcom/Rasheed0T19
+  Pipengine: an ultra light YAML-based pipeline execution engine.|2017|10.21105/JOSS.00341|https://dblp.org/rec/journals/jossw/StrozziB17
+  YAML: A Tool for Hardware Design Visualization and Capture.|2000|10.1109/ISSS.2000.874023|https://dblp.org/rec/conf/isss/SinhaDSGLG00

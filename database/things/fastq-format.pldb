@@ -23,3 +23,17 @@ wikipedia https://en.wikipedia.org/wiki/FASTQ_format
 status active
 fileType text
 centralPackageRepositoryCount 0
+dblp https://dblp.org/search?q=$FASTQ$
+ hits 43
+ publications
+  title|year|doi|url
+  CIndex: compressed indexes for fast retrieval of FASTQ files.|2022|10.1093/BIOINFORMATICS/BTAB655|https://dblp.org/rec/journals/bioinformatics/HuoLWJV22
+  FastqCLS: a FASTQ compressor for long-read sequencing via read reordering using a novel scoring model.|2022|10.1093/BIOINFORMATICS/BTAB696|https://dblp.org/rec/journals/bioinformatics/LeeS22
+  Study on reference-based FASTQ genome sequences compression.|2022|10.1145/3523286.3524511|https://dblp.org/rec/conf/bic/LiCL22
+  FQCSpark: Efficient Spark-based Parallel Compression Algorithm for FASTQ Genome Sequences.|2022|10.1109/CSCWD54268.2022.9776028|https://dblp.org/rec/conf/cscwd/JiFYSWFLL22
+  RENANO: a REference-based compressor for NANOpore FASTQ files.|2021|10.1093/BIOINFORMATICS/BTAB437|https://dblp.org/rec/journals/bioinformatics/AlvarezSSSOM21
+  Measuring reproducibility of virus metagenomics analyses using bootstrap samples from FASTQ-files.|2021|10.1093/BIOINFORMATICS/BTAA926|https://dblp.org/rec/journals/bioinformatics/SaremiKLSJ21
+  LFQC: A lossless compression algorithm for FASTQ files.|2021|10.1093/BIOINFORMATICS/BTAA1035|https://dblp.org/rec/journals/bioinformatics/X21a
+  ENANO: Encoder for NANOpore FASTQ files.|2020|10.1093/BIOINFORMATICS/BTAA551|https://dblp.org/rec/journals/bioinformatics/AlvarezSSSOMB20
+  DigestiFlow: from BCL to FASTQ with ease.|2020|10.1093/BIOINFORMATICS/BTZ850|https://dblp.org/rec/journals/bioinformatics/HoltgreweMNB20
+  RaNA-Seq: interactive RNA-Seq analysis from FASTQ files to functional analysis.|2020|10.1093/BIOINFORMATICS/BTZ854|https://dblp.org/rec/journals/bioinformatics/PrietoB20

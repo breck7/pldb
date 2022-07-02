@@ -167,3 +167,17 @@ reference https://github.com/babyraging/yash
 patterns
  hasLineComments? true
   // A comment
+dblp https://dblp.org/search?q=$Yacc$
+ hits 19
+ publications
+  title|year|doi|url
+  Compiler Construction using Java, JavaCC and YaCC, Anthony J. Dos Reis. Wiley (January, 2012), ISBN: 978-0-470-94959-7.|2013|10.1016/J.COSREV.2013.08.001|https://dblp.org/rec/journals/csr/Mahmoud13
+  Yacc is dead|2010||https://dblp.org/rec/journals/corr/abs-1010-5023
+  binpac: a yacc for writing application protocol parsers.|2006|10.1145/1177080.1177119|https://dblp.org/rec/conf/imc/PangPSP06
+  Anti-Yacc: MOF-to-Text.|2002|10.1109/EDOC.2002.1137709|https://dblp.org/rec/conf/edoc/HearndenRS02
+  Very Fast YACC-Compatible Parsers (For Very Little Effort).|1998|10.1002/(SICI)1097-024X(199802)28:2&lt;181::AID-SPE139&gt;3.0.CO;2-4|https://dblp.org/rec/journals/spe/BhamidipatyP98
+  A full-scale YACC-based parallel interpreter of English.|1998|10.1145/275295.275318|https://dblp.org/rec/conf/ACMse/Martin98
+  Parser visualizations for developing grammars with yacc.|1995|10.1145/199688.199855|https://dblp.org/rec/conf/sigcse/LovatoK95
+  Using YACC and Lex with C++.|1994|10.1145/193209.193231|https://dblp.org/rec/journals/sigplan/HahneS94
+  Parsing Non-LK(  k  ) Grammars with Yacc.|1993|10.1002/SPE.4380230803|https://dblp.org/rec/journals/spe/Merrill93
+  Ytracc: a Parse Browser for Yacc Grammars.|1991|10.1002/SPE.4380210202|https://dblp.org/rec/journals/spe/FurutaSO91

@@ -96,7 +96,7 @@ pipeTable
     const { file } = this
     const { title } = file
     const dblp = file.getNode(`dblp`)
-    if (dblp) {
+    if (dblp && dblp.get("hits") !== "0") {
       const tree = TreeNode.fromDelimited(
         dblp.getNode("publications").childrenToString(),
         "|"

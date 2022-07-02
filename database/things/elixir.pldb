@@ -137,3 +137,17 @@ rijuRepl https://riju.codes/elixir
  example
   IO.puts("Hello, world!")
   
+dblp https://dblp.org/search?q=$Elixir$
+ hits 37
+ publications
+  title|year|doi|url
+  Vision for a secure Elixir ecosystem: an empirical study of vulnerabilities in Elixir programs.|2022|10.1145/3476883.3520204|https://dblp.org/rec/conf/ACMse/BoseCR22
+  ELIXIR biovalidator for semantic validation of life science metadata.|2022|10.1093/BIOINFORMATICS/BTAC195|https://dblp.org/rec/journals/bioinformatics/LiyanageBDEFGHJ22
+  A gradual type system for Elixir.|2022|10.1016/J.COLA.2021.101077|https://dblp.org/rec/journals/vlc/CassolaTPV22
+  Code Smells in Elixir: Early Results from a Grey Literature Review.|2022|10.48550/ARXIV.2203.08877|https://dblp.org/rec/journals/corr/abs-2203-08877
+  BRENDA, the ELIXIR core data resource in 2021: new developments and updates.|2021|10.1093/NAR/GKAA1025|https://dblp.org/rec/journals/nar/ChangJUHKSNJS21
+  Session types in Elixir.|2021|10.1145/3486601.3486708|https://dblp.org/rec/conf/agere/TaboneF21
+  Graft: general purpose raft consensus in Elixir.|2021|10.1145/3471871.3472963|https://dblp.org/rec/conf/erlang/BrunAF21
+  Fifteen years of successfully dialyzing Erlang and Elixir code (invited talk).|2021|10.1145/3471871.3480952|https://dblp.org/rec/conf/erlang/Sagonas21
+  ELIXIR: Learning from User Feedback on Explanations to Improve Recommender Models.|2021|10.1145/3442381.3449848|https://dblp.org/rec/conf/www/GhazimatinPRW21
+  ELIXIR: Learning from User Feedback on Explanations to Improve Recommender Models.|2021||https://dblp.org/rec/journals/corr/abs-2102-09388

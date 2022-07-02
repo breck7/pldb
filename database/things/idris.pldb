@@ -126,3 +126,17 @@ rijuRepl https://riju.codes/idris
   main : IO ()
   main = putStrLn "Hello, world!"
   
+dblp https://dblp.org/search?q=$Idris$
+ hits 19
+ publications
+  title|year|doi|url
+  idris-ct: A Library to do Category Theory in Idris.|2019|10.4204/EPTCS.323.16|https://dblp.org/rec/journals/corr/abs-1912-06191
+  Elaborator reflection: extending Idris in Idris.|2016|10.1145/2951913.2951932|https://dblp.org/rec/conf/icfp/ChristiansenB16
+  Idris 2: Quantitative Type Theory in Practice.|2021|10.4230/LIPICS.ECOOP.2021.9|https://dblp.org/rec/conf/ecoop/Brady21
+  Idris 2: Quantitative Type Theory in Practice (Artifact).|2021|10.4230/DARTS.7.2.10|https://dblp.org/rec/journals/darts/Brady21
+  Idris 2: Quantitative Type Theory in Practice.|2021||https://dblp.org/rec/journals/corr/abs-2104-00480
+  Qimaera: Type-safe (Variational) Quantum Programming in Idris.|2021||https://dblp.org/rec/journals/corr/abs-2111-10867
+  Maps of Malaya and Borneo: Discovery, Statehood and Progress: The Collections of H.R.H. Sultan Sharafuddin Idris Shah and Dato&apos; Richard Curtis.|2020|10.3138/CART-2019-0018|https://dblp.org/rec/journals/cartographica/Joll20
+  Type-Driven Development with Idris.|2020|10.1017/S0956796820000143|https://dblp.org/rec/journals/jfp/Muijnck-Hughes20
+  Building a Blockchain Simulation using the Idris Programming Language.|2019|10.1145/3299815.3314456|https://dblp.org/rec/conf/ACMse/PanK19
+  A Dependently Typed Library for Static Information-Flow Control in Idris.|2019|10.1007/978-3-030-17138-4_3|https://dblp.org/rec/conf/post/GregersenTA19

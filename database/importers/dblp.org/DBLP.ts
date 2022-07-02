@@ -38,6 +38,8 @@ class DBLPFile {
     const { file } = this
     const path = this.cachePath
     if (!Disk.exists(path)) return
+    if (file.has("dblp")) return
+
     const parsed = Disk.readJson(path)
     const regex = new RegExp(`\\b${file.title.toLowerCase()}\\b`)
 

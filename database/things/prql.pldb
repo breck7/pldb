@@ -50,3 +50,8 @@ appeared 2022
 patterns
  hasLineComments? true
   # A comment
+dblp https://dblp.org/search?q=$PRQL$
+ hits 1
+ publications
+  title|year|doi|url
+  Cryptanalysis of an RSA variant with moduli N=prql.|2017|10.1515/JMC-2016-0025|https://dblp.org/rec/journals/jmc/LuPS17

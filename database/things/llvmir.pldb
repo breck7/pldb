@@ -63,3 +63,17 @@ rijuRepl https://riju.codes/llvm
 patterns
  hasLineComments? true
   # A comment
+dblp https://dblp.org/search?q=$LLVM IR$
+ hits 22
+ publications
+  title|year|doi|url
+  Modular, compositional, and executable formal semantics for LLVM IR.|2021|10.1145/3473572|https://dblp.org/rec/journals/pacmpl/ZakowskiBYZZZ21
+  Extending LLVM IR for DPC++ Matrix Support: A Case Study with Intel® Advanced Matrix Extensions (Intel® AMX).|2021|10.1109/LLVMHPC54804.2021.00008|https://dblp.org/rec/conf/llvmhpc/KhaldiLYSMG21
+  K-LLVM: A Relatively Complete Semantics of LLVM IR.|2020|10.4230/LIPICS.ECOOP.2020.7|https://dblp.org/rec/conf/ecoop/LiG19
+  SKA: static kernel analysis using LLVM IR.|2015|10.1145/2833157.2833163|https://dblp.org/rec/conf/sc/RamkrishnanBT15
+  An Isabelle/HOL formalization of AProVE&apos;s termination method for LLVM IR.|2021|10.1145/3437992.3439935|https://dblp.org/rec/conf/cpp/HaslbeckT21
+  Raising MIPS Binaries to LLVM IR.|2021|10.1007/978-3-030-92571-0_6|https://dblp.org/rec/conf/iciss/RomanaBKPE21
+  Accurate LLVM IR to Binary CFGs Mapping for Simulation of Optimized Embedded Software.|2021|10.1007/978-3-031-04580-6_1|https://dblp.org/rec/conf/samos/CornagliaVB21
+  LLSC: a parallel symbolic execution compiler for LLVM IR.|2021|10.1145/3468264.3473108|https://dblp.org/rec/conf/sigsoft/0001TBR21
+  An Accurate and Quick ANN-Based System-Level Dynamic Power Estimation Model Using LLVM IR Profiling for FPGA Designs.|2020|10.1109/LES.2019.2935052|https://dblp.org/rec/journals/esl/TripathiR20
+  IR2VEC: LLVM IR Based Scalable Program Embeddings.|2020|10.1145/3418463|https://dblp.org/rec/journals/taco/VenkataKeerthyA20

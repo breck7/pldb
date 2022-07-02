@@ -30,3 +30,17 @@ hopl 2518
 rosettaCode SPARK
 
 packageRepository https://spark-packages.org/
+dblp https://dblp.org/search?q=$SPARK$
+ hits 996
+ publications
+  title|year|doi|url
+  Q-Spark: QoS Aware Micro-batch Stream Processing System Using Spark.|2021|10.1109/ACSOS-C52956.2021.00027|https://dblp.org/rec/conf/acsos/LeeJKP21
+  TRANSMUT-SPARK: Transformation Mutation for Apache Spark.|2021||https://dblp.org/rec/journals/corr/abs-2108-02589
+  Spark-Tuner: An Elastic Auto-Tuner for Apache Spark Streaming.|2020|10.1109/CLOUD49709.2020.00082|https://dblp.org/rec/conf/IEEEcloud/HoseinyFarahabady20
+  HRV-Spark: Computing Heart Rate Variability Measures Using Apache Spark.|2020|10.1109/BIBM49941.2020.9313361|https://dblp.org/rec/conf/bibm/QuWLC20
+  Analyzing Performance of Apache Spark MLlib with Multinode Clusters on Azure HDInsight: Spark-Perf Case Study.|2020|10.1007/978-3-030-54215-3_8|https://dblp.org/rec/conf/isdmci/MinukhinBS20
+  Spark-IDPP: high-throughput and scalable prediction of intrinsically disordered protein regions with Spark clusters on the Cloud.|2019|10.1007/S10586-018-2857-9|https://dblp.org/rec/journals/cluster/Malysiak-Mrozek19
+  spark-crowd: A Spark Package for Learning from Crowdsourced Big Data.|2019||https://dblp.org/rec/journals/jmlr/RodrigoAG19
+  基于RDD非序列化本地存储的Spark存储性能优化 (Optimization of Spark RDD Based on Non-serialization Native Storage).|2019|10.11896/J.ISSN.1002-137X.2019.05.022|https://dblp.org/rec/journals/jsjkx/ZhaoY19
+  基于Spark SQL的分布式全文检索框架的设计与实现 (Design and Implementation of Distributed Full-text Search Framework Based on Spark SQL).|2018|10.11896/J.ISSN.1002-137X.2018.09.016|https://dblp.org/rec/journals/jsjkx/CuiX0YZ18
+  基于Spark平台的并行KNN异常检测算法 (Spark-based Parallel Outlier Detection Algorithm of K-nearest Neighbor).|2018||https://dblp.org/rec/journals/jsjkx/FengZ18

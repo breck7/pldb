@@ -141,3 +141,17 @@ multiLineCommentKeywords --[[ --]]
 goodreads
  title|year|author|goodreadsId|rating|ratings|reviews
  Programming in Lua|2001|Roberto Ierusalimschy|1321894|3.97|323|21
+dblp https://dblp.org/search?q=$Lua$
+ hits 58
+ publications
+  title|year|doi|url
+  Integrating lua into C for embedding lua interpreters in a C application.|2016|10.1145/2851613.2851747|https://dblp.org/rec/conf/sac/TanimuraI16
+  Typed Lua: An Optional Type System for Lua.|2014|10.1145/2617548.2617553|https://dblp.org/rec/conf/pldi/MaidlMI14
+  Game Developers Need Lua AiR - Static Analysis of Lua Using Interface Models.|2012|10.1007/978-3-642-33542-6_69|https://dblp.org/rec/conf/icec/KlintRR12
+  Programming in Lua (2. ed.).|2006||https://dblp.org/rec/books/daglib/0016033
+  OSBF-Lua - A Text Classification Module for Lua: The Importance of the Training Method.|2006||https://dblp.org/rec/conf/trec/Assis06
+  Programming in Lua.|2003||https://dblp.org/rec/books/daglib/0015640
+  A Surprisingly Simple Lua Compiler.|2021|10.1145/3475061.3475077|https://dblp.org/rec/conf/sblp/GualandiI21
+  Pallene: A companion language for Lua.|2020|10.1016/J.SCICO.2020.102393|https://dblp.org/rec/journals/scp/GualandiI20
+  Specifying Route Behaviors of Self-Driving Vehicles in ROS Using Lua Scripting Language with Web Interface.|2020|10.1109/EIT48999.2020.9208285|https://dblp.org/rec/conf/eit/PleunePFC20
+  Understanding Lua&apos;s Garbage Collection: Towards a Formalized Static Analyzer.|2020|10.1145/3414080.3414093|https://dblp.org/rec/conf/ppdp/SoldevilaZF20

@@ -23,3 +23,17 @@ status historical
 fileType text
 corporateDevelopers Nvidia
 centralPackageRepositoryCount 0
+dblp https://dblp.org/search?q=$PTX$
+ hits 15
+ publications
+  title|year|doi|url
+  Integrated Multi-Modal Antenna With Coupled Radiating Structures (I-MARS) for 7T pTx Body MRI.|2022|10.1109/TMI.2021.3103654|https://dblp.org/rec/journals/tmi/DestruelJWLELC22
+  Mixed-proxy extensions for the NVIDIA PTX memory consistency model: industrial product.|2022|10.1145/3470496.3533045|https://dblp.org/rec/conf/isca/LustigCG22
+  LocalityGuru: A PTX Analyzer for Extracting Thread Block-level Locality in GPGPUs.|2021|10.1109/NAS51552.2021.9605411|https://dblp.org/rec/conf/nas/TripathyAF0S21
+  GPU Static Modeling Using PTX and Deep Structured Learning.|2019|10.1109/ACCESS.2019.2951218|https://dblp.org/rec/journals/access/GuerreiroIRT19
+  Support OpenCL 2.0 Compiler on LLVM for PTX Simulators.|2019|10.1007/S11265-018-1377-4|https://dblp.org/rec/journals/vlsisp/YangWHCHL19
+  A Formal Analysis of the NVIDIA PTX Memory Consistency Model.|2019|10.1145/3297858.3304043|https://dblp.org/rec/conf/asplos/LustigSG19
+  OpenCL 2.0 Compiler Adaptation on LLVM for PTX Simulators.|2017|10.1109/ICPPW.2017.21|https://dblp.org/rec/conf/icppw/YangWHCHL17
+  A Distributed PTX Virtual Machine on Hybrid CPU/GPU Clusters.|2016|10.1016/J.SYSARC.2015.10.003|https://dblp.org/rec/journals/jsa/LiangLLC16
+  Preimage Attacks Against Spectral Hash and PTX Functions.|2015||https://dblp.org/rec/journals/tinytocs/Heilman15
+  A Distributed PTX Compilation and Execution System on Hybrid CPU/GPU Clusters.|2014|10.3233/978-1-61499-484-8-1355|https://dblp.org/rec/conf/intcompsymp/LiangLC14
