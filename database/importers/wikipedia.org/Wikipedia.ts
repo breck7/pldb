@@ -101,15 +101,27 @@ class PLDBFileWithWikipedia {
     return JSON.parse(Disk.read(this.cachePath))
   }
 
-  updatePldb() {
-    const { pldbId } = this
+  writeToDb() {
+    const { pldbId, file } = this
     try {
       if (!Disk.exists(this.cachePath)) {
-        console.log(`Wikipedia file for "${pldbId}" not yet downloaded.`)
+        //console.log(`Wikipedia file for "${pldbId}" not yet downloaded.`)
         return 1
       }
-      console.log("extracting wikipedia for " + pldbId)
       const { object } = this
+      const { info } = object
+      const { designer } = info
+      const wpNode = this.file.getNode("wikipedia")
+
+      const designerString = Array.isArray(designer)
+        ? designer.map(name => name.trim()).join(" and ")
+        : designer
+            .split(",")
+            .map(name => name.trim())
+            .join(" and ")
+      if (designer) console.log(designer)
+      if (!file.has("creators")) file.set("creators", designerString)
+      file.save()
 
       // this.getYear(object)
       // this.extractProperty(object, "license")
@@ -132,6 +144,12 @@ class WikipediaImporter {
     const crawler = new PoliteCrawler()
     await crawler.fetchAll(
       this.linkedFiles.map(file => new PLDBFileWithWikipedia(file))
+    )
+  }
+
+  writeToDatabaseCommand() {
+    this.linkedFiles.forEach(file =>
+      new PLDBFileWithWikipedia(file).writeToDb()
     )
   }
 
