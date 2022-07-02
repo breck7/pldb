@@ -145,13 +145,11 @@ ${facts.map(fact => ` - ${fact}`).join("\n")}`
   get description() {
     const { typeName, title } = this.file
     const { object } = this
-    let statusMessage =
-      object.status === "historical"
-        ? getIndefiniteArticle(typeName)
-        : "an actively used"
     let akaMessage = object.standsFor ? `, aka ${object.standsFor},` : ""
     const appeared = object.appeared
-    return `${title}${akaMessage} is ${statusMessage} ${this.typeLink}${
+    return `${title}${akaMessage} is ${getIndefiniteArticle(typeName)} ${
+      this.typeLink
+    }${
       appeared
         ? ` created in <a href="../lists/languages.html?filter=${appeared}">${appeared}</a>`
         : ""
