@@ -21,9 +21,3 @@ rijuRepl https://riju.codes/dhall
  example
   { output = "Hello, world!" }
   
-dblp https://dblp.org/search?q=$dhall$
- hits 2
- publications
-  title|year|doi|url
-  Weak keys and plaintext recovery for the Dhall-Pal Block Cipher.|2015|10.1109/ISCC.2015.7405614|https://dblp.org/rec/conf/iscc/KorstanjeK15
-  Parallel Computing Using the Prefix Problem (S. Lakshmivarahan and Sudarshan K. Dhall).|1995|10.1137/1037144|https://dblp.org/rec/journals/siamrev/Gallopoulos95

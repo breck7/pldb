@@ -33,10 +33,3 @@ rijuRepl https://riju.codes/ratfor
   PRINT *, 'Hello, world!'
   END
   
-dblp https://dblp.org/search?q=$RATFOR$
- hits 3
- publications
-  title|year|doi|url
-  MOUSE4: An Improved Implementation of the RATFOR Preprocessor.|1978|10.1002/SPE.4380080105|https://dblp.org/rec/journals/spe/Comer78
-  Modification and extension to a fortran preprocessor (RATFOR) for compatibility with the Xerox CP-V operating system.|1978|10.1145/503643.503695|https://dblp.org/rec/conf/ACMse/Suber78
-  RATFOR-A Preprocessor for a Rational Fortran.|1975|10.1002/SPE.4380050408|https://dblp.org/rec/journals/spe/Kernighan75

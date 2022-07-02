@@ -31,10 +31,3 @@ rijuRepl https://riju.codes/jq
  example
   "Hello, world!"
   
-dblp https://dblp.org/search?q=$jq$
- hits 3
- publications
-  title|year|doi|url
-  Power Delivered in AC Networks as an Algebraic Sum, P + Q not Phasor Sum, P + jQ when power is expressed as VmIm sin(ωt) sin(ωt - θ).|2021|10.1109/AFRICON51333.2021.9570892|https://dblp.org/rec/conf/africon/Akuon21
-  Just Queueing (JQ): Scheduling Algorithm for the Internet.|2009|10.1109/NETCOM.2009.25|https://dblp.org/rec/conf/netcom/MiajiH09
-  Erdös-Ko-Rado-type results over Jq(n, d), Hq(n, d) and their designs.|1999|10.1016/S0012-365X(98)00171-X|https://dblp.org/rec/journals/dm/Fu99
