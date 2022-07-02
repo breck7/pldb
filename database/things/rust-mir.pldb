@@ -4,6 +4,13 @@ appeared 2016
 type ir
 webRepl https://play.rust-lang.org/
 githubRepo https://github.com/rust-lang/rust/tree/master/src/librustc_mir
+ stars 68300
+ forks 9414
+ subscribers 1465
+ created 2010
+ updated 2022
+ description Empowering everyone to build reliable and efficient software.
+ issues 8710
 
 reference https://rustc-dev-guide.rust-lang.org/hir.html
 reference https://blog.rust-lang.org/2016/04/19/MIR.html
@@ -72,3 +79,4 @@ example
 patterns
  hasLineComments? true
   // A comment
+website https://www.rust-lang.org

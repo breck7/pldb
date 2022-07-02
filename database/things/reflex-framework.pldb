@@ -4,12 +4,12 @@ type framework
 
 githubRepo https://github.com/reflex-frp/reflex
  firstCommit 2015
- stars 771
- forks 106
- subscribers 64
+ stars 990
+ forks 144
+ subscribers 67
  created 2014
- updated 2019
- description Reflex FRP is a composable, cross-platform functional reactive programming framework for Haskell.  It allows you to build interactive components in pure functional style, working in harmony with established Haskell techniques and improving the quality and elegance of your applications.
- issues 61
+ updated 2022
+ description Interactive programs without callbacks or side-effects. Functional Reactive Programming (FRP) uses composable events and time-varying values to describe interactive systems as pure functions. Just like other pure functional code, functional reactive code is easier to get right on the first try, maintain, and reuse.
+ issues 86
 
 website https://reflex-frp.org/

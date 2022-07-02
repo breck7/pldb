@@ -13,14 +13,14 @@ wikipedia https://en.wikipedia.org/wiki/Redis
  appeared 2009
 
 githubRepo https://github.com/antirez/redis
- stars 26566
- forks 10178
- subscribers 2366
+ stars 55750
+ forks 21459
+ subscribers 2609
  created 2009
- updated 2017
+ updated 2022
  firstCommit 2009
- description Redis is an in-memory database that persists on disk. The data model is key-value, but many different kind of values are supported: Strings, Lists, Sets, Sorted Sets, Hashes, HyperLogLogs, Bitmaps.
- issues 1935
+ description Redis is an in-memory database that persists on disk. The data model is key-value, but many different kind of values are supported: Strings, Lists, Sets, Sorted Sets, Hashes, Streams, HyperLogLogs, Bitmaps.
+ issues 2094
 
 website https://redis.io/
 status active

@@ -166,6 +166,7 @@ ${facts.map(fact => ` - ${fact}`).join("\n")}`
     const { file, object, description } = this
     let longerDescription = ""
     const wikipediaSummary = file.get("wikipedia summary")
+    const ghDescription = file.get("githubRepo description")
     const wpLink = file.get(pldbNodeKeywords.wikipedia)
     if (wikipediaSummary)
       longerDescription +=
@@ -178,6 +179,8 @@ ${facts.map(fact => ` - ${fact}`).join("\n")}`
         `. <a href="${wpLink}">Read more on Wikipedia...</a>`
     else if (object.description)
       longerDescription += description + " " + object.description
+    else if (ghDescription)
+      longerDescription += description + " " + ghDescription
     return `paragraph
  ${longerDescription || description}`
   }
@@ -197,10 +200,17 @@ ${facts.map(fact => ` - ${fact}`).join("\n")}`
       facts.push(`the <a href="${wikiLink}">${title} wikipedia page</a>`)
 
     const githubRepo = file.getNode("githubRepo")
-    if (githubRepo)
+    if (githubRepo) {
+      const stars = githubRepo.get("stars")
+      const starMessage = stars
+        ? ` and has ${numeral(stars).format("0,0")} stars`
+        : ""
       facts.push(
-        `${title} is developed on <a href="${githubRepo.getWord(1)}">github</a>`
+        `${title} is developed on <a href="${githubRepo.getWord(
+          1
+        )}">github</a>${starMessage}`
       )
+    }
 
     const gitlabRepo = object.gitlab
     if (gitlabRepo) facts.push(`<a href="${gitlabRepo}">${title} on GitLab</a>`)

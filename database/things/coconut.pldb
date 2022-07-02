@@ -26,14 +26,14 @@ patterns
   addpattern def size(Node(l, r)) = size(l) + size(r)
 
 githubRepo https://github.com/evhub/coconut
- stars 1372
- forks 56
- subscribers 53
+ stars 3495
+ forks 104
+ subscribers 63
  created 2014
- updated 2017
+ updated 2022
  firstCommit 2014
  description Simple, elegant, Pythonic functional programming.
- issues 72
+ issues 71
 
 website http://coconut-lang.org/
 reference https://news.ycombinator.com/item?id=23759721

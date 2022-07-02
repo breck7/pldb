@@ -5,14 +5,14 @@ type pl
 description <a href='https://github.com/ilyash/ngs'>NGS</a> - Next Generation Shell, a language (and a shell in the future) for ops tasks. NGS aims to be an alternative for both bash/Python/Ruby/Perl/Go and configuration management tools. It has syntax for the common operations and libraries (currently only AWS) for idempotent resources manipulation. NGS unique features include built in exit code handling and syntax for run-a-command-and-parse-output.
 
 githubRepo https://github.com/ilyash/ngs
- stars 637
- forks 22
- subscribers 32
+ stars 1151
+ forks 39
+ subscribers 31
  created 2013
- updated 2018
+ updated 2022
  firstCommit 2013
  description Next Generation Shell (NGS)
- issues 163
+ issues 268
 
 standsFor Next Generation Shell
 status active
@@ -22,3 +22,4 @@ isOpenSource true
 rosettaCode NGS
 
 centralPackageRepositoryCount 0
+website https://ngs-lang.org/
