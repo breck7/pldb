@@ -14,7 +14,7 @@ Disk.mkdir(cachePath)
 const getCachePath = file => cachePath + file.get("subreddit") + ".json"
 
 class RedditImporter {
-  writeLinksToDatabaseCommand() {
+  writeToDatabaseCommand() {
     this.matches.forEach(file => {
       try {
         this.writeOne(file)
@@ -29,8 +29,11 @@ class RedditImporter {
     if (!Disk.exists(path)) return
     const parsed = Disk.readJson(path)
     const members = parsed.data.children[0].data.subscribers
-    file.set(`subreddit memberCount 2022`, members.toString())
-    file.save()
+    const key = `subreddit memberCount 2022`
+    if (!file.get(key)) {
+      file.set(key, members.toString())
+      file.save()
+    }
   }
 
   get matches() {
