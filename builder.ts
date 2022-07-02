@@ -340,17 +340,20 @@ class Builder extends AbstractBuilder {
     const page = new TreeNode(Disk.read(pagePath))
 
     const creators = {}
-    pldbBase
-      .filter(file => file.isLanguage)
+
+    lodash
+      .sortBy(
+        pldbBase.filter(file => file.isLanguage && file.has("creators")),
+        "languageRank"
+      )
       .forEach(file => {
-        if (file.has("creators"))
-          file
-            .get("creators")
-            .split(" and ")
-            .forEach(creatorName => {
-              if (!creators[creatorName]) creators[creatorName] = []
-              creators[creatorName].push(file)
-            })
+        file
+          .get("creators")
+          .split(" and ")
+          .forEach(creatorName => {
+            if (!creators[creatorName]) creators[creatorName] = []
+            creators[creatorName].push(file)
+          })
       })
 
     const wikipediaLinks = new TreeNode(
@@ -367,6 +370,12 @@ class Builder extends AbstractBuilder {
         )
         .join(" · ")
       const count = creators[name].length
+      let topRank = 10000
+
+      creators[name].forEach(file => {
+        const { languageRank } = file
+        if (languageRank < topRank) topRank = languageRank
+      })
 
       const person = wikipediaLinks.nodesThatStartWith(name)[0]
       const anchorTag = nameToAnchor(name)
@@ -376,16 +385,21 @@ class Builder extends AbstractBuilder {
             "wikipedia"
           )}'>${name}</a>`
 
-      return { name: wrappedName, languages, count }
+      return {
+        name: wrappedName,
+        languages,
+        count,
+        topRank: topRank + 1
+      }
     })
 
-    const sorted = lodash.sortBy(rows, "count")
-    sorted.reverse()
+    const sorted = lodash.sortBy(rows, "topRank")
 
     const theTable = toScrollTable(new TreeNode(sorted), [
       "name",
       "languages",
-      "count"
+      "count",
+      "topRank"
     ])
 
     replaceNext(page, "comment autogenCreators", theTable)
