@@ -35,9 +35,9 @@ pipeTable
  CSS|../languages/css.html|1996|stylesheetLanguage|24
  COBOL|../languages/cobol.html|1959|pl|25
  Objective-C|../languages/objective-c.html|1984|pl|26
- Scheme|../languages/scheme.html|1970|pl|27
- Clojure|../languages/clojure.html|2007|pl|28
- SAS|../languages/sas.html|1976|pl|29
+ SAS|../languages/sas.html|1976|pl|27
+ Scheme|../languages/scheme.html|1970|pl|28
+ Clojure|../languages/clojure.html|2007|pl|29
  Lisp|../languages/lisp.html|1958|pl|30
  PostgreSQL|../languages/postgresql.html|1986|queryLanguage|31
  TypeScript|../languages/typescript.html|2012|pl|32
@@ -47,65 +47,65 @@ pipeTable
  Visual Basic|../languages/visual-basic.html|1991|pl|36
  ARM|../languages/arm.html|1985|assembly|37
  Kotlin|../languages/kotlin.html|2011|pl|38
- Julia|../languages/julia.html|2012|pl|39
- Elixir|../languages/elixir.html|2011|pl|40
+ Elixir|../languages/elixir.html|2011|pl|39
+ Julia|../languages/julia.html|2012|pl|40
  Pascal|../languages/pascal.html|1970|pl|41
  ISBN|../languages/isbn.html|1970|schema|42
  PowerShell|../languages/powershell.html|2006|pl|43
- Ada|../languages/ada.html|1980|pl|44
- Tcl|../languages/tcl.html|1988|pl|45
+ Tcl|../languages/tcl.html|1988|pl|44
+ Ada|../languages/ada.html|1980|pl|45
  OCaml|../languages/ocaml.html|1996|pl|46
- Assembly language|../languages/assembly-language.html|1960|assembly|47
- Groovy|../languages/groovy.html|2003|pl|48
+ Groovy|../languages/groovy.html|2003|pl|47
+ Assembly language|../languages/assembly-language.html|1960|assembly|48
  D|../languages/d.html|2001|pl|49
- Dart|../languages/dart.html|2011|pl|50
- Smalltalk|../languages/smalltalk.html|1972|pl|51
- CoffeeScript|../languages/coffeescript.html|2009|pl|52
- F#|../languages/f-sharp.html|2005|pl|53
- BASIC|../languages/basic.html|1964|pl|54
- Common Lisp|../languages/common-lisp.html|1984|pl|55
+ Smalltalk|../languages/smalltalk.html|1972|pl|50
+ CoffeeScript|../languages/coffeescript.html|2009|pl|51
+ Dart|../languages/dart.html|2011|pl|52
+ BASIC|../languages/basic.html|1964|pl|53
+ Common Lisp|../languages/common-lisp.html|1984|pl|54
+ F#|../languages/f-sharp.html|2005|pl|55
  Regular Expressions|../languages/regex.html|1951|queryLanguage|56
  Bash|../languages/bash.html|1989|pl|57
  Racket|../languages/racket.html|1994|pl|58
  Nim|../languages/nim.html|2008|pl|59
- Forth|../languages/forth.html|1970|pl|60
- APL|../languages/apl.html|1964|pl|61
+ APL|../languages/apl.html|1964|pl|60
+ Forth|../languages/forth.html|1970|pl|61
  Crystal|../languages/crystal.html|2014|pl|62
  Maple|../languages/maple.html|1982|pl|63
  HTTP|../languages/http.html|1989|protocol|64
  Delphi|../languages/delphi.html|1995|pl|65
- Elm|../languages/elm.html|2012|pl|66
+ awk|../languages/awk.html|1977|pl|66
  Chapel|../languages/chapel.html|2004|pl|67
- awk|../languages/awk.html|1977|pl|68
+ Elm|../languages/elm.html|2012|pl|68
  Solidity|../languages/solidity.html|2014|pl|69
  Verilog|../languages/verilog.html|1984|hardwareDescriptionLanguage|70
- Haxe|../languages/haxe.html|2005|pl|71
- PostScript|../languages/postscript.html|1982|textMarkup|72
+ PostScript|../languages/postscript.html|1982|textMarkup|71
+ Haxe|../languages/haxe.html|2005|pl|72
  Eiffel|../languages/eiffel.html|1986|pl|73
  DOI|../languages/doi.html|2000|schema|74
  PowerPC|../languages/powerpc.html|1992|isa|75
  LLVM IR|../languages/llvmir.html|2003|ir|76
  Reason|../languages/reason.html|2016|pl|77
- Tex|../languages/tex.html|1978|pl|78
- FTP|../languages/ftp.html|1971|protocol|79
+ FTP|../languages/ftp.html|1971|protocol|78
+ GNU Octave|../languages/octave.html|1988|pl|79
  X86|../languages/x86-isa.html|1978|isa|80
- GNU Octave|../languages/octave.html|1988|pl|81
- LaTeX|../languages/latex.html|1985|textMarkup|82
- Node.js|../languages/nodejs.html|2009|pl|83
+ Tex|../languages/tex.html|1978|pl|81
+ Node.js|../languages/nodejs.html|2009|pl|82
+ LaTeX|../languages/latex.html|1985|textMarkup|83
  Emacs Lisp|../languages/emacs-lisp.html|1985|pl|84
  LabVIEW G|../languages/labview.html|1986|pl|85
- Standard ML|../languages/standard-ml.html|1990|pl|86
- CUDA|../languages/cuda.html|2007|pl|87
+ CUDA|../languages/cuda.html|2007|pl|86
+ Standard ML|../languages/standard-ml.html|1990|pl|87
  TLS|../languages/tls.html|1999|protocol|88
  YAML|../languages/yaml.html|2001|metaLanguage|89
- PureScript|../languages/purescript.html|2013|pl|90
- Visual Basic .NET|../languages/visual-basic-dot-net.html|2001|pl|91
- VHDL|../languages/vhdl.html|1983|hardwareDescriptionLanguage|92
- Modula-2|../languages/modula-2.html|1978|pl|93
- fish|../languages/fish.html|2005|pl|94
- Rexx|../languages/rexx.html|1979|pl|95
- UML|../languages/uml.html|1996|xmlFormat|96
+ VHDL|../languages/vhdl.html|1983|hardwareDescriptionLanguage|90
+ PureScript|../languages/purescript.html|2013|pl|91
+ Visual Basic .NET|../languages/visual-basic-dot-net.html|2001|pl|92
+ Rexx|../languages/rexx.html|1979|pl|93
+ Modula-2|../languages/modula-2.html|1978|pl|94
+ UML|../languages/uml.html|1996|xmlFormat|95
+ fish|../languages/fish.html|2005|pl|96
  TCP|../languages/tcp.html|1974|protocol|97
  MUMPS|../languages/mumps.html|1966|pl|98
  SMTP|../languages/smtp.html|1982|protocol|99
- GraphQL|../languages/graphql.html|2012|queryLanguage|100
+ ECMAScript|../languages/ecmascript.html|1997|pl|100

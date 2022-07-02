@@ -45,16 +45,49 @@ class LanguagePageTemplate {
 
       const tree = TreeNode.fromSsv(table.childrenToString())
       tree.forEach(child => {
-        child.set(
-          "repo",
-          `<a href='${child.get("url")}'>${child.get("name")}</a>`
-        )
+        child.set("repo", child.get("name"))
+        child.set("repoLink", child.get("url"))
       })
       return `foldBreak
 subsection Trending <a href="https://github.com/trending/${githubId}?since=monthly">${title} repos</a> on GitHub
 commaTable
- ${cleanAndRightShift(tree.toDelimited(",", ["repo", "stars", "description"]))}
- `
+ ${cleanAndRightShift(
+   tree.toDelimited(",", ["repo", "repoLink", "stars", "description"])
+ )}
+`
+    }
+    return ""
+  }
+
+  get books() {
+    const { file } = this
+    const { title } = file
+    const goodreads = file.getNode(`goodreads`) // todo: the goodreadsIds we have are wrong.
+    if (goodreads) {
+      const tree = TreeNode.fromDelimited(goodreads.childrenToString(), "|")
+      tree.forEach(child => {
+        child.set(
+          "titleLink",
+          `https://www.goodreads.com/search?q=${child.get("title") +
+            " " +
+            child.get("author")}`
+        )
+      })
+      return `foldBreak
+subsection Books about ${title} on goodreads
+pipeTable
+ ${cleanAndRightShift(
+   tree.toDelimited("|", [
+     "title",
+     "titleLink",
+     "author",
+     "year",
+     "reviews",
+     "ratings",
+     "rating"
+   ])
+ )}
+`
     }
     return ""
   }
@@ -109,6 +142,8 @@ ${this.exampleSection}
 ${this.keywordsSection}
 
 ${this.trendingRepos}
+
+${this.books}
 
 ${this.hackerNewsTable}
 
