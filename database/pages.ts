@@ -92,6 +92,34 @@ pipeTable
     return ""
   }
 
+  get publications() {
+    const { file } = this
+    const { title } = file
+    const dblp = file.getNode(`dblp`)
+    if (dblp) {
+      const tree = TreeNode.fromDelimited(
+        dblp.getNode("publications").childrenToString(),
+        "|"
+      )
+      tree.forEach(child => {
+        child.set(
+          "titleLink",
+          child.get("doi")
+            ? `https://doi.org/` + child.get("doi")
+            : child.get("url")
+        )
+      })
+      return `foldBreak
+subsection ${dblp.get(
+        "hits"
+      )} publications about ${title} on <a href="${file.get("dblp")}">DBLP</a>
+pipeTable
+ ${cleanAndRightShift(tree.toDelimited("|", ["title", "titleLink", "year"]))}
+`
+    }
+    return ""
+  }
+
   get hackerNewsTable() {
     const hnTable = this.file
       .getNode(`hackerNewsDiscussions`)
@@ -144,6 +172,8 @@ ${this.keywordsSection}
 ${this.trendingRepos}
 
 ${this.books}
+
+${this.publications}
 
 ${this.hackerNewsTable}
 

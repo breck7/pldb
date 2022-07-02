@@ -1,0 +1,20 @@
+dblpNode
+ boolean fromCrawler true
+ extends abstractFactNode
+ crux dblp
+ description Publications about this language from https://dblp.org/.
+ string sourceDomain dblp.org
+ single
+ inScope dblpPublicationsNode
+dblpPublicationsHitsNode
+ crux hits
+ cells keywordCell countCell
+ description How many matching publications?
+ single
+dblpPublicationsNode
+ crux publications
+ baseNodeType blobNode
+ description An inline PSV table of hits.
+ cells keywordCell
+ boolean includeChildrenInCsv false
+ single

@@ -155,8 +155,9 @@ class PoliteCrawler {
 
   maxConcurrent = 10
   downloadQueue: PoliteCrawlerJob[] = []
+  randomize = true // By default randomizes the queue so dont get stuck on one
   async fetchAll(jobs) {
-    this.downloadQueue = lodash.shuffle(jobs) // Randomize so dont get stuck on one
+    this.downloadQueue = this.randomize ? lodash.shuffle(jobs) : jobs
     const threads = lodash
       .range(0, this.maxConcurrent, 1)
       .map(i => this._fetchQueue())
