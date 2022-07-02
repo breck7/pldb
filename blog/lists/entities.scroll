@@ -4,7 +4,7 @@ maxColumns 1
 columnWidth 60
 
 aftertext
- Here is the list of all 4,460 entities in the PLDB. You can also download the whole database as a @CSV@.
+ Here is the list of all 4,464 entities in the PLDB. You can also download the whole database as a @CSV@.
  wrap @ a href="../pldb.csv"
 
 aftertext
@@ -1713,6 +1713,7 @@ pipeTable
  hsml|../languages/hsml.html|pl|1998
  htel|../languages/htel.html|pl|1999
  html|../languages/html.html|textMarkup|1991
+ htmx|../languages/htmx.html|template|2020
  http-2|../languages/http-2.html|protocol|2015
  http-3|../languages/http-3.html|protocol|2018
  http|../languages/http.html|protocol|1989
@@ -1733,6 +1734,8 @@ pipeTable
  hyperfun|../languages/hyperfun.html|pl|1999
  hyperlisp|../languages/hyperlisp.html|pl|
  hyperlog|../languages/hyperlog.html|pl|1996
+ hyperscript-lang|../languages/hyperscript-lang.html|pl|2020
+ hyperscript|../languages/hyperscript.html|template|2012
  hypertalk|../languages/hypertalk.html|pl|1987
  hyphy|../languages/hyphy.html|pl|2008
  hytime|../languages/hytime.html|pl|1991
@@ -4223,6 +4226,7 @@ pipeTable
  video|../languages/video.html|pl|2016
  vienna-definition-language|../languages/vienna-definition-language.html|pl|1965
  vienna-fortran|../languages/vienna-fortran.html|pl|1992
+ vigil|../languages/vigil.html|esolang|2013
  vilnius-basic|../languages/vilnius-basic.html|pl|1986
  vim-editor|../languages/vim-editor.html|editor|1991
  vim-script|../languages/vim-script.html|pl|1991
