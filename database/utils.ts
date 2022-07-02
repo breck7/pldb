@@ -132,6 +132,7 @@ const isLanguage = type => {
     compiler: true,
     binaryExecutable: true,
     binaryDataFormat: true,
+    equation: true,
     interpreter: true,
     computingMachine: true
   }

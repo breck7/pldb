@@ -339,18 +339,19 @@ class Builder extends AbstractBuilder {
     const pagePath = __dirname + "/blog/lists/creators.scroll"
     const page = new TreeNode(Disk.read(pagePath))
 
-    const entities = {}
-    pldbBase.forEach(file => {
-      const languageId = file.primaryKey
-      if (file.has("creators"))
-        file
-          .get("creators")
-          .split(" and ")
-          .forEach(entity => {
-            if (!entities[entity]) entities[entity] = []
-            entities[entity].push(languageId)
-          })
-    })
+    const creators = {}
+    pldbBase
+      .filter(file => file.isLanguage)
+      .forEach(file => {
+        if (file.has("creators"))
+          file
+            .get("creators")
+            .split(" and ")
+            .forEach(creatorName => {
+              if (!creators[creatorName]) creators[creatorName] = []
+              creators[creatorName].push(file)
+            })
+      })
 
     const wikipediaLinks = new TreeNode(
       page
@@ -358,11 +359,14 @@ class Builder extends AbstractBuilder {
         .childrenToString()
     )
 
-    const rows = Object.keys(entities).map(name => {
-      const languages = entities[name]
-        .map(lang => `<a href='../languages/${lang}.html'>${lang}</a>`)
-        .join(" ")
-      const count = entities[name].length
+    const rows = Object.keys(creators).map(name => {
+      const languages = creators[name]
+        .map(
+          file =>
+            `<a href='../languages/${file.primaryKey}.html'>${file.title}</a>`
+        )
+        .join(" · ")
+      const count = creators[name].length
 
       const person = wikipediaLinks.nodesThatStartWith(name)[0]
       const anchorTag = nameToAnchor(name)
@@ -386,7 +390,7 @@ class Builder extends AbstractBuilder {
 
     replaceNext(page, "comment autogenCreators", theTable)
 
-    const newCount = numeral(Object.values(entities).length).format("0,0")
+    const newCount = numeral(Object.values(creators).length).format("0,0")
     const text = page
       .toString()
       .replace(/list of .+ people/, `list of ${newCount} people`)

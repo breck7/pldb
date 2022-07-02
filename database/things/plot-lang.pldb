@@ -1,6 +1,19 @@
-title Programming Language for Old Timers
+title Plot
+standsFor Programming Language for Old Timers
 appeared 2006
 type pl
 creators David A. Moon
 website http://users.rcn.com/david-moon/PLOT/
 reference http://users.rcn.com/david-moon/PLOT/Moon-ILC09.pdf
+
+lineCommentKeyword ;
+example
+ ;; A silly toy program
+ def response(threat)
+   if threat = #severe
+     run-in-circles()
+     scream-and-shout()
+   elseif threat = #moderate
+     print("Danger Will Robinson")
+   else
+     sleep(1)

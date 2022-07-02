@@ -1,7 +1,9 @@
-title xql-lang
+title XQL
 appeared 1998
 type queryLanguage
 creators Hiroshi Ishikawa and Kazumi Kubota and Yasuhiko Kanemasa
+
+description XQL: A Query Language for XML Data
 
 example
  select result:<$book.title, $book.author>

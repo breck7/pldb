@@ -1,7 +1,9 @@
-title Function Manipulation Language
+title FML
 appeared 2012
 type pl
 creators Joe Groff
+
+standsFor Function Manipulation Language
 
 example
  pad = x flip[stitch] 0, stitch 0, flip[cat] 0, cat 0
