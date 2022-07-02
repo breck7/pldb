@@ -695,6 +695,11 @@ class Builder extends AbstractBuilder {
     )
   }
 
+  update(id: string) {
+    const {PLDBAutocompleter } = require("./database/importers/PLDBAutocompleter.js")
+    new PLDBAutocompleter().update(id)
+  }
+
   updateAll() {
     pldbBase.loadFolder()
     pldbBase

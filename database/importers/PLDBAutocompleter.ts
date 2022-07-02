@@ -1,23 +1,17 @@
 #!/usr/bin/env ts-node
 
-import { PLDBFile, PLDBBaseFolder } from "../PLDBBase"
-import { getCleanedId, runCommand } from "../utils"
-
-const pldbBase = PLDBBaseFolder.getBase()
-pldbBase.loadFolder()
+import { PLDBBaseFolder } from "../PLDBBase"
+import { GitHubImporter } from "./github.com/GitHub"
 
 class PLDBAutocompleter {
-  autocompleteFileCommand(id) {
-    if (!id)
-      return console.error(
-        `❌ Example Usage: ./PLDBAutocompleter.ts javascript`
-      )
+  async update(id: string) {
+    const pldbBase = PLDBBaseFolder.getBase()
+    pldbBase.loadFolder()
     const file = pldbBase.getFile(id)
     if (!file) return console.error(`❌ File '${id}' not found.`)
+
+    new GitHubImporter().runAll(file)
   }
 }
 
 export { PLDBAutocompleter }
-
-if (!module.parent)
-  runCommand(new PLDBAutocompleter().autocompleteFileCommand(process.argv[2]))

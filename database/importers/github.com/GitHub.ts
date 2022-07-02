@@ -1,11 +1,10 @@
 #!/usr/bin/env ts-node
 
 import { PLDBFile, PLDBBaseFolder } from "../../PLDBBase"
-import { getCleanedId, runCommand, PoliteCrawler } from "../../utils"
+import { runCommand, PoliteCrawler } from "../../utils"
 
 import { jtree } from "jtree"
 
-const lodash = require("lodash")
 const cacheDir = __dirname + "/cache/"
 const reposDir = cacheDir + "repos/"
 const firstCommitCache = cacheDir + "firstCommits/"
@@ -215,6 +214,14 @@ class GitHubImporter {
 
 	get linkedFiles() {
 		return pldbBase.filter(file => file.has(repoPath))
+	}
+
+	async runAll(file) {
+		const gitFile = new PLDBFileWithGitHub(file)
+		await gitFile.fetch()
+		gitFile.writeFirstCommitToDatabase()
+		.writeRepoInfoToDatabase()
+		.autocompleteAppeared()
 	}
 }
 
