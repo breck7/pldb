@@ -4,7 +4,7 @@ maxColumns 1
 columnWidth 60
 
 aftertext
- Here is the list of all 4,459 entities in the PLDB. You can also download the whole database as a @CSV@.
+ Here is the list of all 4,462 entities in the PLDB. You can also download the whole database as a @CSV@.
  wrap @ a href="../pldb.csv"
 
 aftertext
@@ -1565,6 +1565,7 @@ pipeTable
  grad-assistant|../languages/grad-assistant.html|pl|1965
  gradle|../languages/gradle.html|application|2008
  grain|../languages/grain.html|pl|2017
+ grammar|../languages/grammar.html|grammarLanguage|2017
  grammatical-framework|../languages/grammatical-framework.html|grammarLanguage|1998
  graph-it|../languages/graph-it.html|pl|2017
  graph-modeling-language|../languages/graph-modeling-language.html|application|1997
@@ -3528,6 +3529,7 @@ pipeTable
  scriptol|../languages/scriptol.html|pl|2001
  scriptx|../languages/scriptx.html|pl|1995
  scroll|../languages/scroll.html|pl|1970
+ scrolldown|../languages/scrolldown.html|textMarkup|2020
  scsh|../languages/scsh.html|pl|2002
  scss|../languages/scss.html|stylesheetLanguage|2006
  sdf-format|../languages/sdf-format.html|xmlFormat|2012
@@ -4066,6 +4068,7 @@ pipeTable
  translang|../languages/translang.html|pl|
  tree-annotation-operator|../languages/tree-annotation-operator.html|metaLanguage|2020
  treelang|../languages/treelang.html|pl|1988
+ treenotation|../languages/treenotation.html|metaLanguage|2017
  treet|../languages/treet.html|pl|1964
  trellis|../languages/trellis.html|pl|1985
  tremor-query|../languages/tremor-query.html|queryLanguage|2019
