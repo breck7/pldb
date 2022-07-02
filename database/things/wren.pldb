@@ -1,8 +1,26 @@
-title wren
+title Wren
 appeared 2013
 type pl
+creators Bob Nystrom
 
 description Wren is a small, fast, class-based concurrent scripting language.
+
+lineCommentKeyword //
+
+example
+ System.print("Hello, world!")
+ 
+ class Wren {
+   flyTo(city) {
+     System.print("Flying to %(city)")
+   }
+ }
+ 
+ var adjectives = Fiber.new {
+   ["small", "clean", "fast"].each {|word| Fiber.yield(word) }
+ }
+ 
+ while (!adjectives.isDone) System.print(adjectives.call())
 
 githubRepo https://github.com/munificent/wren
  stars 5694
@@ -14,7 +32,8 @@ githubRepo https://github.com/munificent/wren
  description The Wren Programming Language. Wren is a small, fast, class-based concurrent scripting language.
  issues 178
 
-website http://wren.io/
+website https://wren.io/
+reference https://news.ycombinator.com/item?id=23660464
 status active
 
 tryItOnline wren
