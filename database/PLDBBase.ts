@@ -144,6 +144,12 @@ class PLDBFile extends TreeBaseFile {
     return isLanguage(this.get("type"))
   }
 
+  get otherReferences() {
+    return this.map(node => node.getLine()).filter(
+      line => line.startsWith("https:") || line.startsWith("http:")
+    )
+  }
+
   get isPattern() {
     return this.get("type") === "pattern"
   }

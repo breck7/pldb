@@ -3,7 +3,7 @@ appeared 1992
 type pl
 
 description In this report we present a new methodology for the performance prediction of parallel programs on parallel platforms ranging from shared-memory to distributed-memory (vector) machines. The complete methodology comprises the concurrent language Pamela (PerformAnce ModEling LAnguage), the program and machine modeling paradigm, and a novel performance analysis method, called "serialization analysis". While Pamela models can be directly executed (i.e., simulated), prior to this ultimate evaluation step, serialization analysis allows for (symbolic) model reduction, which often renders simulation superuous. This analysis method extends conventional parallel program analysis technology by explicitly accounting for the performance degrading eects of resource contention, yet at the low evaluation cost, typical for conventional techniques. It is shown that, where application of conventional techniques may yield serious errors, predictions from serialization analysis remain accurate. Apart from the modeling methodology itself, this low-cost/high-reliability analysis potential makes Pamela a particularly suitable candidate for compile-time application in terms of the performance prediction hierarchy often found in parallel programming environments.
-reference http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.12.9900&rep=rep1&type=pdf
+http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.12.9900&rep=rep1&type=pdf
 status historical
 wordRank 8220
 

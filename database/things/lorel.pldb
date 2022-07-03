@@ -8,4 +8,4 @@ example
     Guide.restaurant(.address)?.zipcode
   where Guide.restaurant.% grep "cheap"
 
-reference http://infolab.stanford.edu/lore/pubs/lorel96.pdf
+http://infolab.stanford.edu/lore/pubs/lorel96.pdf

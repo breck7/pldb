@@ -2,6 +2,6 @@ title Default Parameters Pattern
 type pattern
 psuedoExample say(message = "Hello")
 description Syntactic sugar for setting values for parameters if not defined.
-reference https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/Default_parameters
+https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/Default_parameters
 status active
 patternKeyword hasDefaultParameters?

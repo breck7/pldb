@@ -9,4 +9,4 @@ example
  4 heat mixture at 100 C for 10 s
 
 description This paper introduces BioScript, a domain-specific language (DSL) for programmable biochemistry which executes on emerging microfluidic platforms. The goal of this research is to provide a simple, intuitive, and type-safe DSL that is accessible to life science practitioners. The novel feature of the language is its syntax, which aims to optimize human readability; the technical contributions of the paper include the BioScript type system and relevant portions of its compiler. The type system ensures that certain types of errors, specific to biochemistry, do not occur, including the interaction of chemicals that may be unsafe. The compiler includes novel optimizations that place biochemical operations to execute concurrently on a spatial 2D array platform on the granularity of a control flow graph, as opposed to individual basic blocks. Results are obtained using both a cycle-accurate microfluidic simulator and a software interface to a real-world platform.
-reference https://dl.acm.org/citation.cfm?id=3276498
+https://dl.acm.org/citation.cfm?id=3276498

@@ -2,6 +2,6 @@ title Implicit Arguments
 type pattern
 psuedoExample shout(implicit message: string)
 description Arguments that are not passed by the function caller, but are found in the function caller's scope.
-reference https://docs.scala-lang.org/tour/implicit-parameters.html
+https://docs.scala-lang.org/tour/implicit-parameters.html
 status active
 patternKeyword hasImplicitArguments?

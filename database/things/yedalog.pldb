@@ -3,7 +3,7 @@ type queryLanguage
 description  We introduce Yedalog, a declarative programming language that allows programmers to mix data-parallel pipelines and computation seamlessly in a single language. By contrast, most existing tools for data-parallel computation embed a sublanguage of data-parallel pipelines in a general-purpose language, or vice versa. Yedalog extends Datalog, incorporating not only computational features from logic programming, but also features for working with data structured as nested records. Yedalog programs can run both on a single machine, and distributed across a cluster in batch and interactive modes, allowing programmers to mix different modes of execution easily.
 appeared 2015
 creators Brian Chin and Daniel von Dincklage and Vuk Ercegovac and Peter Hawkins and Mark S. Miller and Franz Och and Chris Olston and Fernando Pereira
-reference https://research.google/pubs/pub43462/
+https://research.google/pubs/pub43462/
 corporateDevelopers Google
 lineCommentKeyword #
 related datalog

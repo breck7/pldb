@@ -1,6 +1,6 @@
 title Typed Holes
 type pattern
 psuedoExample 2 + _ => 2 + [int|float]
-reference https://wiki.haskell.org/GHC/Typed_holes
+https://wiki.haskell.org/GHC/Typed_holes
 status active
 patternKeyword hasTypedHoles?

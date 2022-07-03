@@ -187,11 +187,6 @@ redditDiscussionNode
  extends abstractUrlNode
  crux redditDiscussion
  string sourceDomain reddit.com
-referenceNode
- extends abstractUrlNode
- crux reference
- description A link with more info about this entity.
- boolean multipleOk true
 rijuReplNode
  extends abstractUrlNode
  description A link to try this language on riju.codes
@@ -715,6 +710,12 @@ stackOverflowSurveyPercentageUsingNode
  description What percentage of survey respondents report using this language?
  crux percentageUsing
  extends abstractDecimalNode
+referenceNode
+ extends abstractFactNode
+ cells urlCell
+ pattern ^https?\:
+ description A link to more info about this entity. You can add raw links and then auto "upgrade" them using some of the importer code.
+ boolean multipleOk true
 typeNode
  description Which category in PLDB's subjective ontology does this entity fit into.
  cells keywordCell typeCell
@@ -1434,6 +1435,13 @@ pldbNode
  inScope blankLineNode descriptionNode wikipediaNode equationNode exampleNode fileExtensionsNode githubLanguageNode abstractGitRepoUrlNode helloWorldCollectionNode statusNode creatorsNode appearedNode announcementUrlNode countryNode titleNode wordRankNode standsForNode akaNode psuedoExampleNode patternKeywordNode patternsNode referenceNode relatedNode replitNode tryItOnlineNode twitterNode typeNode websiteNode wikipediaNode fileTypeNode linguistGrammarRepoNode tiobeNode meetupNode webReplNode linkedInSkillNode projectEulerNode hoplNode subredditNode redditDiscussionNode quineRelayNode ubuntuPackageNode codeMirrorNode rosettaCodeNode antlrNode corporateDevelopersNode compilesToNode cheatSheetUrlNode isOpenSourceNode indeedJobsNode hackerNewsDiscussionsNode firstAnnouncementNode announcementMethodNode writtenInNode runsOnVmNode packageCountNode packageInstallsNode packageRepositoryNode packageAuthorsNode packagesIncludingVersionsNode forLanguagesNode subsetOfNode conferenceNode supersetOfNode abstractCommonKeywordNode languageServerProtocolProjectNode abstractParadigmNode latestReleaseNode nativeLanguageNode jupyterKernelsNode keywordsNode stackOverflowSurveyNode centralPackageRepositoryCountNode gdbSupportNode rijuReplNode esolangNode goodreadsNode dblpNode
  pattern [\w-]\.pldb$
  cells fileNameCell
+ example
+  title TunaScript
+  type pl
+  appeared 2017
+  creators Sam Lam
+  example
+   Hello world
 stackOverflowSurveyYearNode
  description Survey results for a particular year.
  cells yearCell

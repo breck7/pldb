@@ -2,6 +2,6 @@ title Destructuring
 type pattern
 psuedoExample {name, age} = person
 description A shorthand assignment method to extract fields from a composite structure.
-reference https://reasonml.github.io/docs/en/destructuring
+https://reasonml.github.io/docs/en/destructuring
 status active
 patternKeyword hasDestructuring?

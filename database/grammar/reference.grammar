@@ -1,5 +1,6 @@
 referenceNode
- extends abstractUrlNode
- crux reference
- description A link with more info about this entity.
+ extends abstractFactNode
+ cells urlCell
+ pattern ^https?\:
+ description A link to more info about this entity. You can add raw links and then auto "upgrade" them using some of the importer code.
  boolean multipleOk true

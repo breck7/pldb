@@ -12,7 +12,8 @@ import {
   getIndefiniteArticle,
   nameToAnchor,
   toCommaList,
-  getATag
+  getATag,
+  linkMany
 } from "./utils"
 
 const currentYear = new Date().getFullYear()
@@ -366,15 +367,6 @@ ${facts.map(fact => ` - ${fact}`).join("\n")}`
       )
     }
 
-    let reference = object.reference
-
-    if (reference?.includes("semanticscholar"))
-      facts.push(
-        `Read more about <a href="${reference}">${title} on Semantic Scholar</a>`
-      )
-    else if (reference)
-      facts.push(`Read more about <a href="${reference}">${title}</a>`)
-
     const firstAnnouncement = file.get("firstAnnouncement")
     const announcementMethod = file.get("announcementMethod")
     if (firstAnnouncement)
@@ -410,8 +402,10 @@ ${facts.map(fact => ` - ${fact}`).join("\n")}`
         soSurvey.get("medianSalary")
       ).format("0,0")}. `
 
-      fact += `${parseFloat(soSurvey.get("percentageUsing")) *
-        100}% of respondents reported using ${title}. `
+      fact += `${lodash.round(
+        parseFloat(soSurvey.get("percentageUsing")) * 100,
+        2
+      )}% of respondents reported using ${title}. `
 
       fact += `${numeral(soSurvey.get("users")).format(
         "0,0"
@@ -456,6 +450,10 @@ ${facts.map(fact => ` - ${fact}`).join("\n")}`
       facts.push(
         `${title} appears in the <a href="https://www.tiobe.com/tiobe-index/">TIOBE Index</a>`
       )
+
+    const esolang = file.get("esolang")
+    if (esolang)
+      facts.push(`${title} is listed on <a href="${esolang}">Esolang</a>`)
 
     const ubuntu = file.get("ubuntuPackage")
     if (ubuntu)
@@ -517,9 +515,7 @@ ${facts.map(fact => ` - ${fact}`).join("\n")}`
       facts.push(
         `There are ${
           packageRepos.length
-        } central package repositories for ${title}: ${packageRepos.map(
-          (i, index) => `<a href="${i}">${index + 1}</a>`
-        )}`
+        } central package repositories for ${title}: ${linkMany(packageRepos)}`
       )
 
     const cheatSheetUrl = file.get("cheatSheetUrl")
@@ -544,6 +540,28 @@ ${facts.map(fact => ` - ${fact}`).join("\n")}`
 
     if (seeAlsoLinks.length)
       facts.push("See also: " + seeAlsoLinks.map(getATag).join(", "))
+
+    const { otherReferences } = file
+
+    const semanticScholarReferences = otherReferences.filter(link =>
+      link.includes("semanticscholar")
+    )
+    const nonSemanticScholarReferences = otherReferences.filter(
+      link => !link.includes("semanticscholar")
+    )
+
+    if (semanticScholarReferences.length)
+      facts.push(
+        `Read more about ${title} on Semantic Scholar: ${linkMany(
+          semanticScholarReferences
+        )}`
+      )
+    if (nonSemanticScholarReferences.length)
+      facts.push(
+        `Read more about ${title} on the web: ${linkMany(
+          nonSemanticScholarReferences
+        )}`
+      )
 
     facts.push(
       `Have a question about ${title} not answered here? <a href="https://github.com/breck7/pldb/issues/new">Open an issue</a> explaining what you need.`

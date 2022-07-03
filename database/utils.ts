@@ -34,6 +34,9 @@ const makeInverseRanks = (ranks: Rankings) => {
   return inverseRanks
 }
 
+const linkMany = (links: string[]) =>
+  links.map((link, index) => `<a href="${link}">${index + 1}</a>`)
+
 const rankSort = (objects: any[], key: string) => {
   objects = lodash.sortBy(objects, [key])
   objects.reverse()
@@ -285,5 +288,6 @@ export {
   Rankings,
   Ranking,
   InverseRankings,
-  rankSort
+  rankSort,
+  linkMany
 }
