@@ -1,0 +1,8 @@
+title FlowNet
+description Ethernet alternative. Like ATM, FlowNet is a switched network based on fixed-size cells. Unlike ATM, FlowNet cells are large--800 bytes instead of 53. This allows room for a 14-byte Ethernet header plus an additional QoS extension. The QoS extension header is 18 bytes, making the full FlowNet header 32 bytes long. The remaining 768 bytes (=256+512) are data payload. FlowNet interoperates with Ethernet through a simple bridge device.
+creators Erann Gat and Mike Ciholas
+appeared 1993
+type protocol
+relatedTo ethernet
+
+https://flownet.com/gat/fnlj.html
