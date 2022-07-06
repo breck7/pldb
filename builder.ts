@@ -368,7 +368,7 @@ class Builder extends AbstractBuilder {
           file =>
             `<a href='../languages/${file.primaryKey}.html'>${file.title}</a>`
         )
-        .join(" · ")
+        .join(" - ")
       const count = creators[name].length
       let topRank = 10000
 
@@ -418,29 +418,40 @@ class Builder extends AbstractBuilder {
     const page = new TreeNode(Disk.read(pagePath))
 
     const entities = {}
-    pldbBase.forEach(file => {
-      const languageId = file.primaryKey
-      if (file.has("corporateDevelopers"))
-        file
-          .get("corporateDevelopers")
-          .split(" and ")
-          .forEach(entity => {
-            if (!entities[entity]) entities[entity] = []
-            entities[entity].push(languageId)
+
+    const files = lodash.sortBy(
+      pldbBase.filter(
+        file => file.isLanguage && file.has("corporateDevelopers")
+      ),
+      "languageRank"
+    )
+
+    files.forEach(file => {
+      file
+        .get("corporateDevelopers")
+        .split(" and ")
+        .forEach(entity => {
+          if (!entities[entity]) entities[entity] = []
+          entities[entity].push({
+            id: file.primaryKey,
+            title: file.title,
+            languageRank: file.languageRank
           })
+        })
     })
 
     const rows = Object.keys(entities).map(name => {
       const languages = entities[name]
-        .map(lang => `<a href='../languages/${lang}.html'>${lang}</a>`)
-        .join(" ")
+        .map(lang => `<a href='../languages/${lang.id}.html'>${lang.title}</a>`)
+        .join(" - ")
       const count = entities[name].length
+      const top = -Math.min(...entities[name].map(lang => lang.languageRank))
 
       const wrappedName = `<a name='${nameToAnchor(name)}' />${name}`
 
-      return { name: wrappedName, languages, count }
+      return { name: wrappedName, languages, count, top }
     })
-    const sorted = lodash.sortBy(rows, "count")
+    const sorted = lodash.sortBy(rows, ["count", "top"])
     sorted.reverse()
 
     const theTable = toScrollTable(new TreeNode(sorted), [
@@ -696,7 +707,9 @@ class Builder extends AbstractBuilder {
   }
 
   update(id: string) {
-    const {PLDBAutocompleter } = require("./database/importers/PLDBAutocompleter.js")
+    const {
+      PLDBAutocompleter
+    } = require("./database/importers/PLDBAutocompleter.js")
     new PLDBAutocompleter().update(id)
   }
 

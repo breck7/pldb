@@ -1,4 +1,4 @@
-title perfectscript
+title Perfectscript
 appeared 1995
 type pl
 
@@ -8,3 +8,9 @@ status historical
 fileType text
 corporateDevelopers Novell
 centralPackageRepositoryCount 0
+
+example
+ Declare Test[10]
+ Test[1] := 5
+
+https://personalpages.bradley.edu/~arn/ime117/psmacros/Chapter_11_toc.htm
