@@ -1,0 +1,22 @@
+title Catala
+website https://catala-lang.org/
+type pl
+githubRepo https://github.com/CatalaLang/catala
+ firstCommit 2019
+ stars 846
+ forks 38
+ subscribers 18
+ created 2020
+ updated 2022
+ description Programming language for literate programming law specification
+ issues 56
+example
+ scope QualifiedEmployeeDiscount :
+  definition qualified_employee_discount
+    under condition is_property consequence
+  equals
+    if employee_discount >$
+      customer_price ×$ gross_profit_percentage
+    then customer_price ×$ gross_profit_percentage
+    else employee_discount
+appeared 2019

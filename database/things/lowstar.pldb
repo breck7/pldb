@@ -1,0 +1,25 @@
+title Low*
+aka low-star
+subsetOf fstar
+type pl
+compilesTo c
+website https://fstarlang.github.io/lowstar/html/LowStar.html
+announcementUrl https://arxiv.org/abs/1703.00053
+announcementMethod paper
+example
+ let chacha20
+  (len: uint32{len ≤ blocklen})
+  (output: bytes{len = output.length})
+  (key: keyBytes)
+  (nonce: nonceBytes{disjoint [output; key; nonce]})
+  (counter: uint32) : Stack unit
+  (requires (λ m0 → output ∈ m0 ∧ key ∈ m0 ∧ nonce ∈ m0))
+  (ensures (λ m0 _m1 → modifies1 output m0 m1 ∧
+  m1.[output] ==
+   Seq.prefix len (Spec.chacha20 m0.[key] m0.[nonce]) counter))) =
+   push_frame ();
+   let state = Buffer.create 0ul 32ul in
+   let block = Buffer.sub state 16ul 16ul in
+   chacha20_init block key nonce counter;
+   chacha20_update output state len;
+   pop_frame ()

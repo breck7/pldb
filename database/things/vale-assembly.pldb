@@ -1,0 +1,47 @@
+title Vale
+related fstar
+standsFor Verified Assembly Language for Everest
+type assembly
+githubRepo https://github.com/project-everest/vale
+ firstCommit 2017
+ stars 217
+ forks 18
+ subscribers 32
+ created 2017
+ updated 2022
+ description Verified Assembly Language for Everest
+ issues 14
+description Vale is a tool for constructing formally verified high-performance assembly language code, with an emphasis on cryptographic code. It uses existing verification frameworks, such as Dafny and F*, for formal verification. It supports multiple architectures, such as x86, x64, and ARM, and multiple platforms, such as Windows, Mac, and Linux. Additional architectures and platforms can be supported with no changes to the Vale tool.
+appeared 2017
+example
+ procedure ReadA(ghost a:seq(uint32),inline b:bool)
+  reads r0; mem;
+  modifies r1;
+  requires
+   length(a) >= 3;
+   a[0] <= 100;
+   a[1] <= 100;
+   forall i :: 0 <= i < length(a) ==>
+    InMem(r0 + 4 * i, mem)
+    && mem[r0 + 4 * i] == a[i];
+  ensures
+   b ==> r1 == a[0] + 1;
+   !b ==> r1 == a[1] + 1;
+ {
+  inline if (b) {
+   LDR(r1, r0, 0); //load memory [r0+0] into r1
+   AddOne(r1);
+  } else {
+   LDR(r1, r0, 4); //load memory [r0+4] into r1
+   AddOne(r1);
+  }
+ }
+ procedure{:recursive} AddNToR7(inline n:nat)
+  modifies r7;
+  requires r7 + n <= 0xffffffff;
+  ensures r7 == old(r7) + n;
+ {
+  inline if (n > 0) {
+   AddOne(r7);
+   AddNToR7(n - 1);
+ }

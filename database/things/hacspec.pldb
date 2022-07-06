@@ -1,0 +1,35 @@
+title hacspec
+description A specification language for crypto primitives and more in Rust.
+githubRepo https://github.com/hacspec/hacspec
+ firstCommit 2020
+ stars 133
+ forks 28
+ subscribers 11
+ created 2020
+ updated 2022
+ description A specification language for cryptography primitives.
+ issues 88
+website https://hacspec.org
+appeared 2018
+announcementUrl https://www.franziskuskiefer.de/publications/hacspec18/
+related rust
+type pl
+example
+ pub type Res = (usize, usize);
+ pub enum ResTyp {
+     Ok(Res),
+ }
+ 
+ pub fn test_simpl_fails() -> Res {
+     match ResTyp::Ok((42, 42)) {
+         ResTyp::Ok(res) => res,
+     }
+ }
+ 
+ #[derive(Clone)]
+ pub struct MyTupleType(u16, u8);
+ 
+ pub fn test_tuple_destructuring() {
+     let tuple = MyTupleType(1u16, 2u8).clone();
+     let MyTupleType(_a, _b) = tuple;
+ }
