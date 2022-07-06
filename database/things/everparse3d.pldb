@@ -2,7 +2,7 @@ title EverParse3D
 corporateDevelopers Microsoft
 creators Nikhil Swamy and Tahina Ramananandro and Aseem Rastogi and Irina Spiridonova and Haobin Ni and Dmitry Malloy and Juan Vazquez and Michael Tang and Omar Cardona and Arti Gupta
 https://www.microsoft.com/en-us/research/publication/hardening-attack-surfaces-with-formally-proven-binary-format-parsers/
-type grammarLanguage
+type idl
 appeared 2022
 compilesTo c
 description Addressing this need, we present EverParse3D, a parser generator for binary message formats that yields performant C code backed by fully automated formal proofs of memory safety, arithmetic safety, functional correctness, and even double-fetch freedom to prevent certain kinds of time-of check/time-of-use errors. This allows systems developers to specify their message formats declaratively and to integrate correct-by-construction C code into their applications, eliminating several classes of bugs. EverParse3D has been in use in the Windows kernel for the past year. Applied primarily to the Hyper-V network virtualization stack, the formats of nearly 100 different messages spanning four protocols have been specified in EverParse3D and the resulting formally proven parsers have replaced prior handwritten code. 
@@ -11,3 +11,4 @@ example
   UINT32 fst;
   UINT32 snd { fst <= snd };
   } OrderedPair;
+related protobuf flatbuffers

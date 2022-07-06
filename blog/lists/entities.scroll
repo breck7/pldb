@@ -4,7 +4,7 @@ maxColumns 1
 columnWidth 60
 
 aftertext
- Here is the list of all 4,465 entities in the PLDB. You can also download the whole database as a @CSV@.
+ Here is the list of all 4,479 entities in the PLDB. You can also download the whole database as a @CSV@.
  wrap @ a href="../pldb.csv"
 
 aftertext
@@ -173,6 +173,7 @@ pipeTable
  alma|../languages/alma.html|pl|1997
  almir|../languages/almir.html|pl|
  almquist-shell|../languages/almquist-shell.html|pl|1989
+ alohanet|../languages/alohanet.html|protocol|1971
  alonzo|../languages/alonzo.html|pl|1994
  alpak|../languages/alpak.html|pl|1963
  alpha-programming-language|../languages/alpha-programming-language.html|pl|1971
@@ -557,6 +558,7 @@ pipeTable
  bugsys|../languages/bugsys.html|pl|1964
  builder-editor|../languages/builder-editor.html|editor|
  bullfrog|../languages/bullfrog.html|esolang|2005
+ bun|../languages/bun.html|vm|2021
  bush|../languages/bush.html|pl|2002
  business-application-language|../languages/business-application-language.html|pl|1974
  business-basic|../languages/business-basic.html|pl|1970
@@ -618,6 +620,7 @@ pipeTable
  casio-basic|../languages/casio-basic.html|pl|2006
  cassandre|../languages/cassandre.html|pl|1967
  cat|../languages/cat.html|pl|2016
+ catala|../languages/catala.html|pl|2019
  catalysis|../languages/catalysis.html|pl|1998
  categorical-query-language|../languages/categorical-query-language.html|queryLanguage|2019
  cayenne|../languages/cayenne.html|pl|1998
@@ -740,6 +743,7 @@ pipeTable
  clisp|../languages/clisp.html|pl|1973
  clist|../languages/clist.html|pl|1990
  clix|../languages/clix.html|xmlFormat|1998
+ cloc|../languages/cloc.html|application|2006
  cloe|../languages/cloe.html|pl|2018
  clojars-pm|../languages/clojars-pm.html|packageManager|
  clojure|../languages/clojure.html|pl|2007
@@ -1229,6 +1233,7 @@ pipeTable
  eta|../languages/eta.html|pl|2017
  etc|../languages/etc.html|pl|1971
  ethereum-vm|../languages/ethereum-vm.html|vm|2015
+ ethernet|../languages/ethernet.html|protocol|1973
  etoys|../languages/etoys.html|pl|1996
  etruscan-numerals|../languages/etruscan-numerals.html|numeralSystem|
  etude|../languages/etude.html|pl|1979
@@ -1243,6 +1248,7 @@ pipeTable
  eurisko|../languages/eurisko.html|pl|1978
  eva|../languages/eva.html|pl|1990
  eve|../languages/eve.html|pl|2016
+ everparse3d|../languages/everparse3d.html|idl|2022
  exapt|../languages/exapt.html|pl|1967
  excel-app|../languages/excel-app.html|application|1987
  exceptions-pattern|../languages/exceptions-pattern.html|pattern|1962
@@ -1345,6 +1351,7 @@ pipeTable
  flowcode|../languages/flowcode.html|pl|2002
  flowgorithm|../languages/flowgorithm.html|visual|
  flowlog|../languages/flowlog.html|pl|2014
+ flownet|../languages/flownet.html|protocol|1993
  flownote|../languages/flownote.html|pl|2019
  flua|../languages/flua.html|pl|2012
  flutter-framework|../languages/flutter-framework.html|framework|2017
@@ -1616,6 +1623,7 @@ pipeTable
  hackage-pm|../languages/hackage-pm.html|packageManager|
  hackett|../languages/hackett.html|pl|2017
  hackppl|../languages/hackppl.html|pl|2019
+ hacspec|../languages/hacspec.html|pl|2018
  haggis|../languages/haggis.html|pl|2010
  hakaru|../languages/hakaru.html|pl|2014
  hal-format|../languages/hal-format.html|binaryDataFormat|2012
@@ -2234,6 +2242,7 @@ pipeTable
  lotis|../languages/lotis.html|pl|1969
  lotos|../languages/lotos.html|pl|1989
  lotusscript|../languages/lotusscript.html|pl|1996
+ lowstar|../languages/lowstar.html|pl|
  lpc|../languages/lpc.html|pl|1995
  lpl|../languages/lpl.html|pl|1973
  lrltran|../languages/lrltran.html|pl|1968
@@ -2971,6 +2980,7 @@ pipeTable
  pgql|../languages/pgql.html|pl|2016
  pharo|../languages/pharo.html|pl|2008
  phel|../languages/phel.html|pl|2020
+ phigs|../languages/phigs.html|library|1988
  phocus|../languages/phocus.html|pl|1987
  phoenix-object-basic|../languages/phoenix-object-basic.html|pl|2001
  phorth|../languages/phorth.html|pl|2016
@@ -3946,6 +3956,7 @@ pipeTable
  tamgu|../languages/tamgu.html|pl|2019
  tampio|../languages/tampio.html|pl|2017
  tangledown|../languages/tangledown.html|template|2011
+ tao-lang|../languages/tao-lang.html||2020
  tao|../languages/tao.html|pl|1983
  tao3d|../languages/tao3d.html|pl|2003
  tap-code|../languages/tap-code.html|notation|1941
@@ -4037,6 +4048,7 @@ pipeTable
  titanium|../languages/titanium.html|pl|1998
  tl|../languages/tl.html|pl|2019
  tla|../languages/tla.html|pl|1999
+ tldr|../languages/tldr.html|application|2013
  tls|../languages/tls.html|protocol|1999
  tmg|../languages/tmg.html|grammarLanguage|1968
  tmlanguage|../languages/tmlanguage.html|grammarLanguage|
@@ -4201,6 +4213,8 @@ pipeTable
  val-ii|../languages/val-ii.html|pl|1983
  val|../languages/val.html|pl|1980
  vala|../languages/vala.html|pl|2006
+ vale-assembly|../languages/vale-assembly.html|assembly|2017
+ vale|../languages/vale.html|pl|2020
  variadic-functions-pattern|../languages/variadic-functions-pattern.html|pattern|
  varlist|../languages/varlist.html|pl|1975
  vba|../languages/vba.html|pl|1993
