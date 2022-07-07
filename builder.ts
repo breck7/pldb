@@ -212,26 +212,32 @@ class Builder extends AbstractBuilder {
     const pagePath = __dirname + "/blog/lists/entities.scroll"
     const page = new TreeNode(Disk.read(pagePath))
 
-    const files = pldbBase.map(file => {
+    let files = pldbBase.map(file => {
       const name = file.primaryKey
-      const appeared = file.get("appeared") || ""
+      const appeared = file.get("appeared")
+      const rank = file.rank + 1
       const type = file.get("type")
+      const title = file.get("title")
       return {
-        name,
-        nameLink: `../languages/${name}.html`,
+        title,
+        titleLink: `../languages/${name}.html`,
+        rank,
         type,
         appeared
       }
     })
 
+    files = lodash.sortBy(files, "rank")
+
     replaceNext(
       page,
       "comment autogenEntities",
       toScrollTable(new TreeNode(files), [
-        "name",
-        "nameLink",
+        "title",
+        "titleLink",
         "type",
-        "appeared"
+        "appeared",
+        "rank"
       ])
     )
 
