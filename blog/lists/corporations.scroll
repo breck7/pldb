@@ -4,7 +4,7 @@ maxColumns 1
 columnWidth 60
 
 paragraph
- Here is the list of 40 corporations who back/backed the development of a language(s) or other thing(s) in the PLDB.
+ Here is the list of 69 corporations who back/backed the development of a language(s) or other thing(s) in the PLDB.
 
 aftertext
  Is PLDB missing the corporate backer(s) of a language? Find the language on the @languages page@ and send a pull request.
@@ -13,20 +13,23 @@ aftertext
 comment autogenCorporations
 pipeTable
  name|languages|count
- <a name='Microsoft' />Microsoft|<a href='../languages/csharp.html'>C#</a> - <a href='../languages/typescript.html'>TypeScript</a> - <a href='../languages/visual-basic.html'>Visual Basic</a> - <a href='../languages/powershell.html'>PowerShell</a> - <a href='../languages/visual-basic-dot-net.html'>Visual Basic .NET</a> - <a href='../languages/vbscript.html'>VBScript</a> - <a href='../languages/vba.html'>VBA</a> - <a href='../languages/cil.html'>CIL</a> - <a href='../languages/dafny.html'>Dafny</a> - <a href='../languages/fstar.html'>F*</a> - <a href='../languages/visual-foxpro.html'>Visual FoxPro</a> - <a href='../languages/jscript.html'>JScript</a> - <a href='../languages/koka.html'>koka</a> - <a href='../languages/linq.html'>LINQ</a> - <a href='../languages/jsharp.html'>J#</a> - <a href='../languages/everparse3d.html'>EverParse3D</a> - <a href='../languages/language-server-protocol.html'>LSP</a>|17
- <a name='IBM' />IBM|<a href='../languages/rexx.html'>Rexx</a> - <a href='../languages/pl-i.html'>PL/I</a> - <a href='../languages/x10.html'>X10</a> - <a href='../languages/jcl.html'>JCL</a> - <a href='../languages/ibm-rpg.html'>RPG</a> - <a href='../languages/ibm-gml.html'>GML</a> - <a href='../languages/informix.html'>IBM Informix-4GL</a> - <a href='../languages/symbolic-assembly.html'>SYMBOLIC ASSEMBLY</a> - <a href='../languages/map.html'>MAP</a>|9
+ <a name='Microsoft' />Microsoft|<a href='../languages/csharp.html'>C#</a> - <a href='../languages/typescript.html'>TypeScript</a> - <a href='../languages/visual-basic.html'>Visual Basic</a> - <a href='../languages/powershell.html'>PowerShell</a> - <a href='../languages/visual-basic-dot-net.html'>Visual Basic .NET</a> - <a href='../languages/vbscript.html'>VBScript</a> - <a href='../languages/vba.html'>VBA</a> - <a href='../languages/cil.html'>CIL</a> - <a href='../languages/dafny.html'>Dafny</a> - <a href='../languages/microsoft-basic.html'>Microsoft BASIC</a> - <a href='../languages/fstar.html'>F*</a> - <a href='../languages/visual-foxpro.html'>Visual FoxPro</a> - <a href='../languages/jscript.html'>JScript</a> - <a href='../languages/koka.html'>koka</a> - <a href='../languages/commodore-basic.html'>Commodore BASIC</a> - <a href='../languages/linq.html'>LINQ</a> - <a href='../languages/microsoft-small-basic.html'>Microsoft Small Basic</a> - <a href='../languages/jsharp.html'>J#</a> - <a href='../languages/mbasic.html'>MBASIC</a> - <a href='../languages/abstract-state-machine-language.html'>Abstract State Machine Language</a> - <a href='../languages/everparse3d.html'>EverParse3D</a> - <a href='../languages/language-server-protocol.html'>LSP</a>|22
+ <a name='IBM' />IBM|<a href='../languages/powerpc.html'>PowerPC</a> - <a href='../languages/rexx.html'>Rexx</a> - <a href='../languages/pl-i.html'>PL/I</a> - <a href='../languages/x10.html'>X10</a> - <a href='../languages/jcl.html'>JCL</a> - <a href='../languages/ibm-rpg.html'>RPG</a> - <a href='../languages/ibm-gml.html'>GML</a> - <a href='../languages/informix.html'>IBM Informix-4GL</a> - <a href='../languages/cms-pipelines.html'>CMS Pipelines</a> - <a href='../languages/symbolic-assembly.html'>SYMBOLIC ASSEMBLY</a> - <a href='../languages/ibm-i-control-language.html'>IBM i Control Language</a> - <a href='../languages/map.html'>MAP</a> - <a href='../languages/pl-i-subset-g.html'>PL/I</a>|13
  <a name='Google' />Google|<a href='../languages/go.html'>Go</a> - <a href='../languages/dart.html'>Dart</a> - <a href='../languages/protobuf.html'>Protocol Buffers</a> - <a href='../languages/flatbuffers.html'>FlatBuffers</a> - <a href='../languages/yedalog.html'>Yedalog</a> - <a href='../languages/soy.html'>Soy</a> - <a href='../languages/lanai.html'>Lanai</a>|7
- <a name='Apple' />Apple|<a href='../languages/swift.html'>Swift</a> - <a href='../languages/applescript.html'>Applescript</a> - <a href='../languages/hypertalk.html'>HyperTalk</a> - <a href='../languages/swift-il.html'>SIL</a> - <a href='../languages/air.html'>AIR</a> - <a href='../languages/b3-ir.html'>B3 IR</a>|6
+ <a name='Apple' />Apple|<a href='../languages/swift.html'>Swift</a> - <a href='../languages/powerpc.html'>PowerPC</a> - <a href='../languages/applescript.html'>Applescript</a> - <a href='../languages/hypertalk.html'>HyperTalk</a> - <a href='../languages/swift-il.html'>SIL</a> - <a href='../languages/air.html'>AIR</a> - <a href='../languages/b3-ir.html'>B3 IR</a>|7
+ <a name='W3C' />W3C|<a href='../languages/html.html'>HTML</a> - <a href='../languages/xquery.html'>XQuery</a> - <a href='../languages/wasm.html'>WebAssembly</a> - <a href='../languages/svg.html'>SVG</a> - <a href='../languages/xpath.html'>XPath</a> - <a href='../languages/sparql.html'>SPARQL</a>|6
  <a name='Oracle' />Oracle|<a href='../languages/java.html'>Java</a> - <a href='../languages/mysql.html'>MySQL</a> - <a href='../languages/pl-sql.html'>PL/SQL</a> - <a href='../languages/javafx-script.html'>JavaFX Script</a> - <a href='../languages/peoplecode.html'>PeopleCode</a>|5
- <a name='W3C' />W3C|<a href='../languages/html.html'>HTML</a> - <a href='../languages/svg.html'>SVG</a> - <a href='../languages/xpath.html'>XPath</a> - <a href='../languages/sparql.html'>SPARQL</a>|4
  <a name='Facebook' />Facebook|<a href='../languages/reason.html'>Reason</a> - <a href='../languages/graphql.html'>GraphQL</a> - <a href='../languages/hack.html'>Hack</a> - <a href='../languages/skip.html'>skip</a>|4
  <a name='Nvidia' />Nvidia|<a href='../languages/cuda.html'>CUDA</a> - <a href='../languages/cg.html'>Cg</a> - <a href='../languages/ptx.html'>PTX</a>|3
  <a name='Apache' />Apache|<a href='../languages/pig.html'>Pig Latin</a> - <a href='../languages/thrift.html'>Thrift</a> - <a href='../languages/apache-velocity.html'>Velocity</a>|3
  <a name='Salesforce' />Salesforce|<a href='../languages/apex.html'>Apex</a> - <a href='../languages/soql.html'>SOQL</a> - <a href='../languages/sosl.html'>SOSL</a>|3
  <a name='MathWorks' />MathWorks|<a href='../languages/matlab.html'>MATLAB</a> - <a href='../languages/simulink.html'>Simulink</a>|2
+ <a name='Mozilla' />Mozilla|<a href='../languages/rust.html'>Rust</a> - <a href='../languages/asmjs.html'>Asm.js</a>|2
  <a name='Wolfram_Research' />Wolfram Research|<a href='../languages/mathematica.html'>Mathematica</a> - <a href='../languages/wolfram.html'>Wolfram Language</a>|2
  <a name='JetBrains' />JetBrains|<a href='../languages/kotlin.html'>Kotlin</a> - <a href='../languages/nemerle.html'>Nemerle</a>|2
  <a name='Adobe' />Adobe|<a href='../languages/postscript.html'>PostScript</a> - <a href='../languages/coldfusion.html'>ColdFusion</a>|2
+ <a name='Motorola' />Motorola|<a href='../languages/powerpc.html'>PowerPC</a> - <a href='../languages/basic09.html'>BASIC09</a>|2
+ <a name='Intel' />Intel|<a href='../languages/x86-isa.html'>X86</a> - <a href='../languages/cilk.html'>CIL</a>|2
  <a name='GNU_Project' />GNU Project|<a href='../languages/emacs-lisp.html'>Emacs Lisp</a> - <a href='../languages/bison.html'>Bison</a>|2
  <a name='Kx_Systems' />Kx Systems|<a href='../languages/k.html'>K</a> - <a href='../languages/q.html'>Q</a>|2
  <a name='RAND' />RAND|<a href='../languages/simscript.html'>SIMSCRIPT</a> - <a href='../languages/relational-data-file.html'>Relational Data File</a>|2
@@ -34,22 +37,48 @@ pipeTable
  <a name='Zend' />Zend|<a href='../languages/php.html'>PHP</a>|1
  <a name='Ericsson' />Ericsson|<a href='../languages/erlang.html'>Erlang</a>|1
  <a name='plataformatec' />plataformatec|<a href='../languages/elixir.html'>Elixir</a>|1
+ <a name='PLT_Inc.' />PLT Inc.|<a href='../languages/racket.html'>Racket</a>|1
  <a name='Cray' />Cray|<a href='../languages/chapel.html'>Chapel</a>|1
+ <a name='Advanced_Micro_Devices' />Advanced Micro Devices|<a href='../languages/x86-isa.html'>X86</a>|1
  <a name='REBOL_Technologies' />REBOL Technologies|<a href='../languages/rebol.html'>REBOL</a>|1
+ <a name='Imagination_Technologies' />Imagination Technologies|<a href='../languages/mips.html'>MIPS architecture</a>|1
+ <a name='MIPS_Technologies' />MIPS Technologies|<a href='../languages/mips.html'>MIPS architecture</a>|1
  <a name='Khronos_Group' />Khronos Group|<a href='../languages/opencl.html'>OpenCL</a>|1
  <a name='StataCorp' />StataCorp|<a href='../languages/stata.html'>Stata</a>|1
+ <a name='Sun_Microsystems' />Sun Microsystems|<a href='../languages/sparc.html'>SPARC</a>|1
  <a name='Red_Hat' />Red Hat|<a href='../languages/ceylon.html'>Ceylon</a>|1
  <a name='HashiCorp' />HashiCorp|<a href='../languages/hcl.html'>HCL</a>|1
+ <a name='SAP' />SAP|<a href='../languages/abap.html'>ABAP</a>|1
+ <a name='Fantaisie_Software' />Fantaisie Software|<a href='../languages/purebasic.html'>PureBasic</a>|1
+ <a name='Hewlett-Packard' />Hewlett-Packard|<a href='../languages/rpl.html'>RPL</a>|1
  <a name='Observable' />Observable|<a href='../languages/observable-lang.html'>Observable</a>|1
+ <a name='Synopsys' />Synopsys|<a href='../languages/systemverilog.html'>SystemVerilog</a>|1
+ <a name='UPC_Consortium' />UPC Consortium|<a href='../languages/unified-parallel-c.html'>UPC</a>|1
+ <a name='System_Development_Corporation' />System Development Corporation|<a href='../languages/jovial.html'>JOVIAL</a>|1
  <a name='Qualcomm' />Qualcomm|<a href='../languages/hexagon.html'>Qualcomm Hexagon</a>|1
+ <a name='Computer_Systems_Laboratory' />Computer Systems Laboratory|<a href='../languages/mesa.html'>Mesa</a>|1
  <a name='TexasInstruments' />TexasInstruments|<a href='../languages/msp430.html'>TI MSP430</a>|1
+ <a name='AT&T_Labs' />AT&T Labs|<a href='../languages/cyclone.html'>Cyclone</a>|1
+ <a name='Honeywell' />Honeywell|<a href='../languages/fact.html'>Fully Automated Compiling Technique</a>|1
+ <a name='Computer_Sciences_Corporation' />Computer Sciences Corporation|<a href='../languages/fact.html'>Fully Automated Compiling Technique</a>|1
  <a name='DEC' />DEC|<a href='../languages/obliq.html'>Obliq</a>|1
+ <a name='ARC_International_PLC' />ARC International PLC|<a href='../languages/arc-isa.html'>ARC processor</a>|1
+ <a name='Digital_Equipment_Corporation' />Digital Equipment Corporation|<a href='../languages/digital-command-language.html'>DIGITAL Command Language</a>|1
+ <a name='Remington_Rand' />Remington Rand|<a href='../languages/math-matic.html'>MATH-MATIC</a>|1
  <a name='Morgan_Stanley' />Morgan Stanley|<a href='../languages/aplus.html'>A+</a>|1
+ <a name='Infocom' />Infocom|<a href='../languages/z-machine.html'>Z-machine</a>|1
  <a name='Altera' />Altera|<a href='../languages/nios.html'>Nios II</a>|1
  <a name='Looker' />Looker|<a href='../languages/lookml.html'>LookML</a>|1
  <a name='Suneido_Software_Corp' />Suneido Software Corp|<a href='../languages/suneido.html'>Suneido</a>|1
+ <a name='ABB_Group' />ABB Group|<a href='../languages/rapid.html'>RAPID</a>|1
  <a name='3MF_Consortium' />3MF Consortium|<a href='../languages/3mf.html'>3D Manufacturing Format</a>|1
  <a name='Novell' />Novell|<a href='../languages/perfectscript.html'>Perfectscript</a>|1
+ <a name='The_Easy_Programming_Language_Company' />The Easy Programming Language Company|<a href='../languages/easy.html'>Easy Programming Language</a>|1
+ <a name='NASA' />NASA|<a href='../languages/plexil.html'>PLEXIL</a>|1
  <a name='Atos' />Atos|<a href='../languages/aqasm.html'>aQasm</a>|1
  <a name='QL2_Software' />QL2 Software|<a href='../languages/webql.html'>webql</a>|1
  <a name='Burroughs_Corporation' />Burroughs Corporation|<a href='../languages/dcalgol.html'>Data Communications ALGOL</a>|1
+ <a name='Precision_Visuals' />Precision Visuals|<a href='../languages/pv-wave.html'>PV-Wave</a>|1
+ <a name='ARINC' />ARINC|<a href='../languages/abbreviated-test-language-for-all-systems.html'>Abbreviated Test Language for All Systems</a>|1
+ <a name='BioWare' />BioWare|<a href='../languages/nwscript.html'>NWScript</a>|1
+ <a name='Ateji' />Ateji|<a href='../languages/optimj.html'>OptimJ</a>|1
