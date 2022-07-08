@@ -653,8 +653,10 @@ forLanguagesNode
  description Which languages is this repository for?
  extends abstractPermalinksNode
  crux forLanguages
-relatedNode
+abstractRelationshipNode
  extends abstractPermalinksNode
+relatedNode
+ extends abstractRelationshipNode
  crux related
  description A catch all to indicate related languages.
 wikipediaRelatedNode
@@ -662,20 +664,28 @@ wikipediaRelatedNode
  extends relatedNode
  crux related
 runsOnVmNode
- extends abstractPermalinksNode
+ extends abstractRelationshipNode
  crux runsOnVm
  description What virtual machine(s) does this language run on? 
+subsetOfNode
+ description Is this language a subset of another?
+ extends abstractRelationshipNode
+ crux subsetOf
 supersetOfNode
  description Is this language a superset of another?
- extends abstractPermalinksNode
+ extends abstractRelationshipNode
  crux supersetOf
 writtenInNode
  description What language is this application written in?
- extends abstractPermalinksNode
+ extends abstractRelationshipNode
  crux writtenIn
+forkOfNode
+ description What language is this language a fork of?
+ extends abstractRelationshipNode
+ crux forkOf
 compilesToNode
  description Which language does this language normally compile to?
- extends abstractPermalinksNode
+ extends abstractRelationshipNode
  crux compilesTo
 abstractParadigmNode
  cells keywordCell boolCell
@@ -698,10 +708,6 @@ abstractPermalinkNode
  cells keywordCell permalinkCell
  extends abstractFactNode
  description Link to other entities on PLDB.
-subsetOfNode
- description Is this language a subset of another?
- extends abstractPermalinkNode
- crux subsetOf
 abstractDecimalNode
  cells keywordCell numberCell
  extends abstractFactNode
@@ -1432,7 +1438,7 @@ pldbNode
  description A database about programming languages and related concepts.
  catchAllNodeType errorNode
  todo Should not have to manually list each node type here, but should be able to mark some tag as inscope
- inScope blankLineNode descriptionNode wikipediaNode equationNode exampleNode fileExtensionsNode githubLanguageNode abstractGitRepoUrlNode helloWorldCollectionNode statusNode creatorsNode appearedNode announcementUrlNode countryNode titleNode wordRankNode standsForNode akaNode psuedoExampleNode patternKeywordNode patternsNode referenceNode relatedNode replitNode tryItOnlineNode twitterNode typeNode websiteNode wikipediaNode fileTypeNode linguistGrammarRepoNode tiobeNode meetupNode webReplNode linkedInSkillNode projectEulerNode hoplNode subredditNode redditDiscussionNode quineRelayNode ubuntuPackageNode codeMirrorNode rosettaCodeNode antlrNode corporateDevelopersNode compilesToNode cheatSheetUrlNode isOpenSourceNode indeedJobsNode hackerNewsDiscussionsNode firstAnnouncementNode announcementMethodNode writtenInNode runsOnVmNode packageCountNode packageInstallsNode packageRepositoryNode packageAuthorsNode packagesIncludingVersionsNode forLanguagesNode subsetOfNode conferenceNode supersetOfNode abstractCommonKeywordNode languageServerProtocolProjectNode abstractParadigmNode latestReleaseNode nativeLanguageNode jupyterKernelsNode keywordsNode stackOverflowSurveyNode centralPackageRepositoryCountNode gdbSupportNode rijuReplNode esolangNode goodreadsNode dblpNode
+ inScope blankLineNode descriptionNode wikipediaNode equationNode exampleNode fileExtensionsNode githubLanguageNode abstractGitRepoUrlNode helloWorldCollectionNode statusNode creatorsNode appearedNode announcementUrlNode countryNode titleNode wordRankNode standsForNode akaNode psuedoExampleNode patternKeywordNode patternsNode referenceNode replitNode tryItOnlineNode twitterNode typeNode websiteNode wikipediaNode fileTypeNode linguistGrammarRepoNode tiobeNode meetupNode webReplNode linkedInSkillNode projectEulerNode hoplNode subredditNode redditDiscussionNode quineRelayNode ubuntuPackageNode codeMirrorNode rosettaCodeNode antlrNode corporateDevelopersNode cheatSheetUrlNode isOpenSourceNode indeedJobsNode hackerNewsDiscussionsNode firstAnnouncementNode announcementMethodNode abstractRelationshipNode packageCountNode packageInstallsNode packageRepositoryNode packageAuthorsNode packagesIncludingVersionsNode forLanguagesNode conferenceNode abstractCommonKeywordNode languageServerProtocolProjectNode abstractParadigmNode latestReleaseNode nativeLanguageNode jupyterKernelsNode keywordsNode stackOverflowSurveyNode centralPackageRepositoryCountNode gdbSupportNode rijuReplNode esolangNode goodreadsNode dblpNode
  pattern [\w-]\.pldb$
  cells fileNameCell
  example

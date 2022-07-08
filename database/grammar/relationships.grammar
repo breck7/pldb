@@ -1,24 +1,30 @@
-relatedNode
+abstractRelationshipNode
  extends abstractPermalinksNode
+relatedNode
+ extends abstractRelationshipNode
  crux related
  description A catch all to indicate related languages.
 runsOnVmNode
- extends abstractPermalinksNode
+ extends abstractRelationshipNode
  crux runsOnVm
  description What virtual machine(s) does this language run on? 
 subsetOfNode
  description Is this language a subset of another?
- extends abstractPermalinkNode
+ extends abstractRelationshipNode
  crux subsetOf
 supersetOfNode
  description Is this language a superset of another?
- extends abstractPermalinksNode
+ extends abstractRelationshipNode
  crux supersetOf
 writtenInNode
  description What language is this application written in?
- extends abstractPermalinksNode
+ extends abstractRelationshipNode
  crux writtenIn
+forkOfNode
+ description What language is this language a fork of?
+ extends abstractRelationshipNode
+ crux forkOf
 compilesToNode
  description Which language does this language normally compile to?
- extends abstractPermalinksNode
+ extends abstractRelationshipNode
  crux compilesTo

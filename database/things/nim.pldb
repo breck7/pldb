@@ -10,6 +10,8 @@ patterns
  hasSemanticIndentation? true
  hasStaticTyping? true
 
+compilesTo c cpp objective-c javascript
+
 description Nim was called Nimrod until 2014. Nimrod is a relatively new programming language that is severely underrated in comparison to other new programming languages, with extensive metaprogramming support, generics and exception tracking built in, optional garbage collection, and rivals C in performance. And it can compile to C, C++, Objective-C, or JavaScript. Nimrod is a statically typed, imperative programming language that tries to give the programmer ultimate power without compromises on runtime efficiency. This means it focuses on compile-time mechanisms in all their various forms.
 
 wikipedia https://en.wikipedia.org/wiki/Nim_(programming_language)
@@ -45,6 +47,8 @@ helloWorldCollection Nim
  # Hello world in Nim
  
  echo "Hello World"
+
+lineCommentKeyword #
 
 linguistGrammarRepo https://github.com/Varriount/NimLime
  firstCommit 2013
