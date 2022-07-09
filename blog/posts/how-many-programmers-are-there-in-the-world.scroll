@@ -8,7 +8,7 @@ aftertext
  link https://www.census.gov/popclock/ 7.574
  dateline
 
-paragraph
+aftertext
  The answer, of course, depends on how you define
  "programmer". But before I define "programmer" and share my
  estimates, let's look at what some other sources say.
@@ -19,14 +19,15 @@ section GitHub - 36 million developer accounts
 
 endSnippet
 
-paragraph
- As of May 2019 GitHub had 36🔗venturebeat.com/2019/05/23/github-adds-donation-button-token-scanning-and-enterprise-tools/ million developer accounts. Now, some of these are inactive, some are
+aftertext
+ As of May 2019 GitHub had 36 million developer accounts. Now, some of these are inactive, some are
  duplicates, and some are owned by people who signed up for
  GitHub but aren't programmers. I myself have at least 2
  GitHub accounts. Some programmers aren't on GitHub--though
  I'm finding that to be increasingly rare.
+ link https://venturebeat.com/2019/05/23/github-adds-donation-button-token-scanning-and-enterprise-tools/ 36
 
-paragraph
+aftertext
  If we guess that 30% of GitHub accounts are for
  non-programmers and 20% are duplicates, and that 90% of
  programmers have a GitHub account, we get an estimate of
@@ -34,29 +35,32 @@ paragraph
 
 section Evans Data Corporation
 
-paragraph
- Evans Data Corporation estimated there were 23🔗evansdata.com/press/viewRelease.php?pressID=268 million
+aftertext
+ Evans Data Corporation estimated there were 23 million
  developers in 2018.
+ link https://evansdata.com/press/viewRelease.php?pressID=268 23
 
 section International Data Corporation
 
-paragraph
- IDC says "there were 22.30🔗www.idc.com/getdoc.jsp?containerId=US44363318 million software developers in
+aftertext
+ IDC says "there were 22.30 million software developers in
  the world at the outset of 2018".
+ link https://www.idc.com/getdoc.jsp?containerId=US44363318 22.30
 
-paragraph
- Daxx created some nice visualizations🔗www.daxx.com/blog/development-trends/number-software-developers-world of both the
+aftertext
+ Daxx created some nice visualizations of both the
  IDC and Evans data.
+ link https://www.daxx.com/blog/development-trends/number-software-developers-world visualizations
 
 question What do I say?
 
-aftertexts
+aftertext
  I will define a programmer as someone who edits a text
  document in a programming language at least once a
  week, on average, in an IDE or text editor.
  link lists/languages.html programming language
 
-paragraph
+aftertext
  My early guess: there were between 10 and 30 million
  programmers in 2018.
 

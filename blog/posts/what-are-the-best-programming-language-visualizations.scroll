@@ -12,43 +12,48 @@ image images/vis1.png
 
 endSnippet
 
-paragraph
- This poster🔗archive.oreilly.com/pub/a/oreilly/news/languageposter_0504.html by O'Reilly is well colored and looks great printed. It's big though. Visualizes 66 languages. Data stops at 2004.
+aftertext
+ This poster by O'Reilly is well colored and looks great printed. It's big though. Visualizes 66 languages. Data stops at 2004.
+ link https://archive.oreilly.com/pub/a/oreilly/news/languageposter_0504.html poster
 
 image images/vis2.png
 
-paragraph
- GitHut's🔗githut.info interactive visualization is fun to explore and contains relatively up to date information on language popularity. I printed a screenshot. Visualizes 49 languages. Data ends in 2014.
+aftertext
+ GitHut's interactive visualization is fun to explore and contains relatively up to date information on language popularity. I printed a screenshot. Visualizes 49 languages. Data ends in 2014.
+ link https://githut.info GitHut's
 
 image images/vis3.png
 
-paragraph
- Exploring Data's D3 interactive visualization🔗exploring-data.com/vis/programming-languages-influence-network-2014 shows related languages and prints are available for purchase. Visualizes 1220 languages. Data up to 2014.
+aftertext
+ Exploring Data's D3 interactive visualization shows related languages and prints are available for purchase. Visualizes 1220 languages. Data up to 2014.
+ link https://exploring-data.com/vis/programming-languages-influence-network-2014 visualization
 
 image images/vis4.png
 
-paragraph
- Sammet's chart🔗www.roundcrisis.com/2016/01/03/Sammett-72/ is one of the first visualizations of the programming language landscape on record. I printed the image. Visualizes 167 languages. Published in 1972.
+aftertext
+ Sammet's chart is one of the first visualizations of the programming language landscape on record. I printed the image. Visualizes 167 languages. Published in 1972.
+ link https://www.roundcrisis.com/2016/01/03/Sammett-72/ chart
 
 image images/vis5.png
 
-paragraph
- Sammet's book cover🔗www.amazon.com/Programming-Languages-Fundamentals-Automatic-Computation/dp/0137299885 is a nice artistic visualization from the early days of programming. I printed the image. Visualizes 117 languages. Published in 1969.
+aftertext
+ Sammet's book cover is a nice artistic visualization from the early days of programming. I printed the image. Visualizes 117 languages. Published in 1969.
+ link https://www.amazon.com/Programming-Languages-Fundamentals-Automatic-Computation/dp/0137299885 cover
 
-paragraph
+aftertext
  Is there a great visualization I am missing? Submit a pull request.
  https://github.com/breck7/pldb/blob/main/blog/posts/what-are-the-best-programming-language-visualizations.scroll pull request
 
 section Reproducibility Notes
 
-paragraph
+aftertext
  This post currently has low
  reproducibility. I do not have an objective measure of
  "best". The data collection procedure employed consisted of
  ad hoc searches through programming books as well as web
  searches.
 
-paragraph
+aftertext
  Data used in this article as csv:
 
 commaTable

@@ -13,12 +13,12 @@ list
  - what spurs the creation of new programming languages?
  - can we predict how many new languages will be released next year? in 5 years? in 10 years?
 
-paragraph
+aftertext
  At the moment I am tracking 533 computer languages and I
  currently have creation years for more than half of those,
  including for 271 of the most popular ones.
 
-paragraph
+aftertext
  Here is a simple line graph of the cumulative number of
  languages I have by year.
 
@@ -26,23 +26,23 @@ image images/programmingLanguagesOverTime.png
 
 endSnippet
 
-paragraph
+aftertext
  I will wait until I have more data to do more serious
  analysis (for example: the dip in the growth rate toward
  the end is likely due to my incomplete dataset and not
  indicative of a trend change).
 
-paragraph
+aftertext
  But until I can provide a more comprehensive analysis, I
  thought I'd share my first look.
 
-paragraph
+aftertext
  Update (12/10/2017): a number of readers have pointed out
  that some of the languages on this list are not programming
  languages. Future posts like this will be sure to exclude
  those.
 
-paragraph
+aftertext
  Data used in this article as csv:
 
 commaTable
@@ -321,7 +321,7 @@ commaTable
 
 section Reproducibility Notes
 
-paragraph
+aftertext
  The data in this post comes from
  the PLDB database. It is possible to build a
  continually updating version of this article that updates

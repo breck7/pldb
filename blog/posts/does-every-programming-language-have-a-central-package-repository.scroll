@@ -12,7 +12,7 @@ aftertext
  https://cran.r-project.org CRAN
  dateline
 
-paragraph
+aftertext
  The other day I was curious: does every programming
  language have one of these? I decided to find out. I
  pointed my crawler and trained a model to check for a
@@ -23,14 +23,14 @@ section ★ Only 1% have them
 
 endSnippet
 
-paragraph
+aftertext
  My model found only 39 languages with central package
  repositories. (For comparison, Wikipedia lists ~20). That's
  just ~1% of languages. I thought it would be higher.
 
 section ★ ~30% of the Top 100 have them
 
-paragraph
+aftertext
  Given that a programming language is very popular and
  appears in my top 100 list, it is about 15 - 30x more
  likely to have a CR. Given a language is not in the top
@@ -38,12 +38,12 @@ paragraph
 
 section ★ 2 Million+ Packages Total
 
-paragraph
+aftertext
  There are over 2,000,000 packages (aka modules or
  libraries) across these CRs. That means there are about
  1,000x more packages than there are programming languages.
 
-paragraph
+aftertext
  With that many packages, name collision is certainly a
  problem (maybe a subject for another post), though not as
  much of a problem as in the domain system where
@@ -59,7 +59,7 @@ aftertext
 
 section ★ GitHub has over 100,000,000 repositories
 
-paragraph
+aftertext
  Given the size of GitHub, and it's growth as somewhat of a
  universal central package repository (though totally
  unmoderated), and given that many (if not the majority) of
@@ -69,7 +69,7 @@ paragraph
 
 section ★ Newer languages are not more likely to have CRs
 
-paragraph
+aftertext
  This surprised me. The median age of a language with a CR
  is 24 (1995). Of the top 5 languages I mentioned above, all
  were created by then. Almost always the creation of the CR

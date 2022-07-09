@@ -9,23 +9,27 @@ aftertext
  programming languages exist?
  link https://www.ethnologue.com/guides/how-many-languages ~7,099
 
-paragraph
+aftertext
  This is one of the questions I aim to answer with PLDB.
  I am building a comprehensive database of programming
  languages.
 
-paragraph
+aftertext
  Spoken languages vary widely in popularity. For example.
- English has 1.5🔗www.statista.com/statistics/266808/the-most-spoken-languages-worldwide/ billion total speakers and 375
- million native speakers. Hawaiian, an endangered🔗www.endangeredlanguages.com language, has only ~26,000🔗en.wikipedia.org/wiki/Hawaiian_language native speakers.
+ English has 1.5 billion total speakers and 375
+ million native speakers. Hawaiian, an endangered language, has only ~26,000 native speakers.
+ link https://www.statista.com/statistics/266808/the-most-spoken-languages-worldwide/ 1.5
+ link https://www.endangeredlanguages.com endangered
+ link https://en.wikipedia.org/wiki/Hawaiian_language ~26,000
 
-paragraph
+aftertext
  Similarly, some programming languages are very popular,
  others are used moderately, and many are completely
  abandoned. Javascript may be the most popular programming
- language, with approximately ~5.3🔗www.linkedin.com/topic/javascript million LinkedIn users claiming it as a skill.
+ language, with approximately ~5.3 million LinkedIn users claiming it as a skill.
+ link https://www.linkedin.com/topic/javascript ~5.3
 
-paragraph
+aftertext
  The number of programming languages in the world depends on
  the rules you establish for deciding whether or not a language counts.
 
@@ -35,38 +39,46 @@ section TIOBE - 250
 
 endSnippet
 
-paragraph
- The TIOBE index🔗www.tiobe.com/tiobe-index/ is one of the best lists of
- popular programming languages and monitors ~250🔗www.tiobe.com/tiobe-index/programming-languages-definition/#instances popular
+aftertext
+ The TIOBE index is one of the best lists of
+ popular programming languages and monitors ~250 popular
  programming languages. TIOBE tracks a
  programming language if it passes 3 tests: it must have its
  own Wikipedia page, it must be Turing complete, and a
  Google search for it must return over 5,000 search results.
+ link https://www.tiobe.com/tiobe-index/ index
+ link https://www.tiobe.com/tiobe-index/programming-languages-definition/#instances ~250
 
 section Wikipedia - 700
 
-paragraph
- Wikipedia has a list whose goal is to include "all notable programming languages in existence", that currently lists over 700🔗en.wikipedia.org/wiki/List_of_programming_languages programming languages. Wikipedia's list excludes certain types of languages such as markup languages.
+aftertext
+ Wikipedia has a list whose goal is to include "all notable programming languages in existence", that currently lists over 700 programming languages. Wikipedia's list excludes certain types of languages such as markup languages.
+ link https://en.wikipedia.org/wiki/List_of_programming_languages 700
 
 section FOLDOC - 1,000
 
-paragraph
- FOLDOC, a 90's era online dictionary of computing, lists over 1,000🔗foldoc.org/contents/language.html programming languages, though that includes aliases.
+aftertext
+ FOLDOC, a 90's era online dictionary of computing, lists over 1,000 programming languages, though that includes aliases.
+ link https://foldoc.org/contents/language.html 1,000
 
 section The Language List - 2,500
 
-paragraph
- The Language List--started in 1991--tracks ~2,500🔗www.info.univ-angers.fr/~gh/hilapr/langlist/langlist.htm computer languages. The Language List includes popular languages as well as many "published languages". If a language was published in a journal it may be on the list, regardless of its implementation history or popularity.
+aftertext
+ The Language List--started in 1991--tracks ~2,500 computer languages. The Language List includes popular languages as well as many "published languages". If a language was published in a journal it may be on the list, regardless of its implementation history or popularity.
+ link https://www.info.univ-angers.fr/~gh/hilapr/langlist/langlist.htm ~2,500
 
 section HOPL - 8,945
 
-paragraph
- HOPL is a collection curated by Diarmuid Pigott. It lists 8,945🔗hopl.info programming languages!
+aftertext
+ HOPL is a collection curated by Diarmuid Pigott. It lists 8,945 programming languages!
+ link https://hopl.info 8,945
 
 section J.E. Sammet - ~165 (In 1971)
 
-paragraph
- Jean Sammet🔗en.wikipedia.org/wiki/Jean_E._Sammet was an early computer pioneer, helping developer the COBOL language. She also was one of the first to start tracking programming languages and as early as 1971 tracked ~165🔗pdfs.semanticscholar.org/48af/15cfd104f7a5d91fef8f3136fe88502ada95.pdf languages.
+aftertext
+ Jean Sammet was an early computer pioneer, helping developer the COBOL language. She also was one of the first to start tracking programming languages and as early as 1971 tracked ~165 languages.
+ link https://en.wikipedia.org/wiki/Jean_E._Sammet Sammet
+ link https://pdfs.semanticscholar.org/48af/15cfd104f7a5d91fef8f3136fe88502ada95.pdf ~165
 
 question What do I say?
 
@@ -78,18 +90,18 @@ aftertext
  estimates.
  link lists/languages.html programming languages
 
-paragraph
+aftertext
  My current estimate for <b>active general purpose programming languages is between 500 and 2,000</b>.
 
-paragraph
+aftertext
  My current estimate for <b>all active computer languages is between 5,000 and 25,000</b>.
 
-paragraph
+aftertext
  As my database improves I will refine my definitions and estimates accordingly.
 
 section Reproducibility notes
 
-paragraph
+aftertext
  A hard count of programming
  languages was made by querying the PLDB database, which
  consists of thousands of human-checked facts about
