@@ -1,8 +1,9 @@
-title heron-lang
+title Heron
 appeared 2016
 type pl
 creators Christopher Diggins
 
+lineCommentKeyword //
 example
  // Named function with statement body
  function sum(xs) {
