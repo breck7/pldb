@@ -1,6 +1,9 @@
-title cuelang
+title Cue
 appeared 2018
 type dataNotation
+
+webRepl https://cuelang.org/play
+twitter cue_lang
 
 githubRepo https://github.com/cuelang/cue
  firstCommit 2018
@@ -13,3 +16,26 @@ githubRepo https://github.com/cuelang/cue
  issues 1
 
 website https://cuelang.org/
+lineCommentKeyword //
+example
+ #Spec: {
+   kind: string
+ 
+   name: {
+     first:   !=""  // must be specified and non-empty
+     middle?: !=""  // optional, but must be non-empty when specified
+     last:    !=""
+   }
+ 
+   // The minimum must be strictly smaller than the maximum and vice versa.
+   minimum?: int & <maximum
+   maximum?: int & >minimum
+ }
+ 
+ // A spec is of type #Spec
+ spec: #Spec
+ spec: {
+   knid: "Homo Sapiens" // error, misspelled field
+ 
+   name: first: "Jane"
+  

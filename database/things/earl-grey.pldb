@@ -1,0 +1,18 @@
+title Earl Grey
+appeared 2014
+creators Olivier Breuleux
+type pl
+website http://breuleux.github.io/earl-grey/repl/
+compilesTo javascript
+example
+ count-words(text) =
+    counts = new Map()
+    words = text.split(R"\W+")
+    words each word ->
+       current-count = counts.get(word) or 0
+       counts.set(word, current-count + 1)
+    consume(counts.entries()).sort(compare) where
+       compare({w1, c1}, {w2, c2}) = c2 - c1
+hackerNewsDiscussions
+ id|title|time|timestamp|by|comments|score
+ 8150346|Show HN: The Earl Grey language – pattern matching, macros, compiles to JS|2014-08-07 22:01:22 UTC|1407448882|breuleux|1|5

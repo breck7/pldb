@@ -1,7 +1,9 @@
-title Universal Configuration Grammar
+title UCG
 appeared 2017
 type dataNotation
 description UCG is a universal grammar for configuration. UCG's goal is not to define a configuration format like JSON, YAML, or TOML. It is not intended to replace the other serialization formats. Instead it is intended to provide a common grammar for generating those formats.
+
+fileExtensions ucg
 
 githubRepo https://github.com/zaphar/ucg
  firstCommit 2017
@@ -16,3 +18,23 @@ githubRepo https://github.com/zaphar/ucg
 website https://ucg.marzhillstudios.com/
 standsFor Universal Configuration Grammar
 status active
+
+compilesTo json yaml toml xml
+writtenIn rust
+
+example
+ let db_confs = import "db/mysql/hosts.ucg";
+ let consul_hosts = import "services/consul/hosts.ucg".host_pool;
+ 
+ let conf = {
+     port = 8888,
+     addr = "0.0.0.0",
+     db = {
+         host = db_confs.host_pool.addr,
+         port = db_confs.host_pool.port,
+         database = "myservicedb",
+     },
+     config_svc = consul_hosts.url,
+ };
+ 
+ out json conf;

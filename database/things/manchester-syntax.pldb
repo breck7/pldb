@@ -1,6 +1,10 @@
-title manchester-syntax
+title Manchester syntax
 appeared 2006
 type dataNotation
+
+patterns
+ hasSemanticIndentation? false
+ hasComments? true
 
 example
  /**

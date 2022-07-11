@@ -1,7 +1,37 @@
-title ren-notation
+title Ren
 appeared 2013
 type dataNotation
 description Ren is a lightweight data-exchange text format. It is programming language independent with familiar conventions. Whitespace separates values, but is not significant beyond that. Ren has two main data structures: An ordered group of values, called a list; A collection of name/value pairs, called a map
 website http://www.ren-data.org/
 http://pointillistic.com/ren/
 fileExtensions ren
+lineCommentKeyword ;
+patterns
+ hasComments? true
+example
+ []			; empty list
+ #()			; empty map
+ [a 1 true #three]	; non-empty list
+ #(a: 1 b: "two")	; non-empty map
+ "Ren Example 1"	; string
+ -42			; number
+ 98.6			; another number
+ true			; literal true
+ false		; literal false
+ none			; literal nil/null/nada
+ #(			; a bigger map
+     quote:	 "禅 saying: ^"仁 rocks!^""
+     utf-8:    "^(CE91) to ^(cf89)"
+     sci-phi:  0.1618e1
+     tax-rate: 3.9%
+     price:    $79.99
+     url:      http://www.ren-data.org/
+     email:    info@ren-data.org
+     hashtag:  #ren
+     date:     2013-04-17/18:37:39-06:00
+     warning:  00:02     ; = 00:00:120.0
+     ip-addr:  127.0.0.1
+     geo-pos:  43.6x116.7x817
+     hex:      16#{DECAFBAD CAFE 00FF}
+     base-64:  64#{UmVuIGlzIGRhdGE=}  
+ )

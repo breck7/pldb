@@ -1,6 +1,8 @@
-title dhall
+title Dhall
 appeared 2017
 type dataNotation
+
+webRepl https://dhall-lang.org/
 
 githubRepo https://github.com/dhall-lang/dhall-lang
  firstCommit 2017
@@ -20,4 +22,45 @@ twitter dhall_lang
 rijuRepl https://riju.codes/dhall
  example
   { output = "Hello, world!" }
-  
+
+
+lineCommentKeyword --
+example
+ -- ./company.dhall
+ 
+ let Prelude =
+       https://prelude.dhall-lang.org/v19.0.0/package.dhall sha256:eb693342eb769f782174157eba9b5924cf8ac6793897fc36a31ccbd6f56dafe2
+ 
+ let companyName = "Example Dot Com"
+ 
+ let User = { name : Text, account : Text, age : Natural }
+ 
+ let users
+     : List User
+     = [ { name = "John Doe", account = "john", age = 23 }
+       , { name = "Jane Smith", account = "jane", age = 29 }
+       , { name = "William Allen", account = "bill", age = 41 }
+       ]
+ 
+ let toEmail = \(user : User) -> "${user.account}@example.com"
+ 
+ let Bio = { name : Text, age : Natural }
+ 
+ let toBio = \(user : User) -> user.(Bio)
+ 
+ let companySize = Prelude.List.length User users
+ 
+ let greetingPage =
+       ''
+       <html>
+       <title>Welcome to ${companyName}!</title>
+       <body>
+       <p>Welcome to our humble company of ${Natural/show companySize} people!</p>
+       </body>
+       </html>
+         ''
+ 
+ in  { emails = Prelude.List.map User Text toEmail users
+     , bios = Prelude.List.map User Bio toBio users
+     , greetingPage = greetingPage
+     }

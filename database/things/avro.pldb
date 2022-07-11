@@ -1,6 +1,6 @@
 title avro
 appeared 2012
-type binaryDataFormat
+type idl
 
 example
  {"namespace": "example.avro",
@@ -17,3 +17,4 @@ website https://avro.apache.org/
 status active
 fileType binary
 centralPackageRepositoryCount 0
+related protobuf thrift
