@@ -1,6 +1,8 @@
-title concise-encoding
+title Concise Encoding
 appeared 2018
 type dataNotation
+creators Karl Stenerud
+description Concise Encoding gives you ease and efficiency with its 1:1 compatible text and binary formats.
 
 githubRepo https://github.com/kstenerud/concise-encoding
  firstCommit 2018
@@ -13,3 +15,161 @@ githubRepo https://github.com/kstenerud/concise-encoding
  issues 23
 
 website https://concise-encoding.org
+
+example
+ c1
+ {
+     "boolean"       = true
+     "binary int"    = -0b10001011
+     "octal int"     = 0o644
+     "decimal int"   = -10000000
+     "hex int"       = 0xfffe0001
+     "very long int" = 100000000000000000000000000000000000009
+     "decimal float" = -14.125
+     "hex float"     = 0x5.1ec4p+20
+     "very long flt" = 4.957234990634579394723460546348e+100000
+     "not-a-number"  = nan
+     "infinity"      = inf
+     "neg infinity"  = -inf
+ }
+
+example
+ c1
+ {
+     "string" = "Strings support escape sequences: \n \t \+1f415."
+     "url"    = @"https://example.com/"
+     "email"  = @"mailto:me@somewhere.com"
+ }
+
+example
+ c1
+ {
+     "uuid"      = f1ce4567-e89b-12d3-a456-426655440000
+     "date"      = 2019-07-01
+     "time"      = 18:04:00.948/Europe/Prague
+     "timestamp" = 2010-07-15/13:28:15.415942344
+     "null"      = null
+     "media"     = |m application/x-sh 23 21 2f 62 69 6e 2f 73 68 0a 0a
+                     65 63 68 6f 20 68 65 6c 6c 6f 20 77 6f 72 6c 64 0a|
+ }
+
+example
+ c1
+ {
+     "list"          = [1 2.5 "a string"]
+     "map"           = {"one"=1 2="two" "today"=2020-09-10}
+     "bytes"         = |u8x 01 ff de ad be ef|
+     "int16 array"   = |i16 7374 17466 -9957|
+     "uint16 hex"    = |u16x 91fe 443a 9c15|
+     "float32 array" = |f32 1.5e10 -8.31e-12|
+ }
+
+example
+ c1
+ [
+     @vehicle<"make"   "model"    "drive" "sunroof">
+     @vehicle("Ford"   "Explorer" "4wd"   true     )
+     @vehicle("Toyota" "Corolla"  "fwd"   false    )
+     @vehicle("Honda"  "Civic"    "fwd"   false    )
+ ]
+
+example
+ c1
+ [
+     {
+         "make" = "Ford"
+         "model" = "Explorer"
+         "drive" = "4wd"
+         "sunroof" = true
+     }
+     {
+         "make" = "Toyota"
+         "model" = "Corolla"
+         "drive" = "fwd"
+         "sunroof" = false
+     }
+     {
+         "make" = "Honda"
+         "model" = "Civic"
+         "drive" = "fwd"
+         "sunroof" = false
+     }
+ ]
+
+example
+ c1
+ //
+ // The tree:
+ //
+ //       2
+ //      / \
+ //     5   7
+ //    /   /|\
+ //   9   6 1 2
+ //  /   / \
+ // 4   8   5
+ //
+ (2
+     (7
+         2
+         1
+         (6
+             5
+             8
+         )
+     )
+     (5
+         (9
+             4
+         )
+     )
+ )
+
+example
+ c1
+ //
+ // The weighted graph:
+ //
+ //     b
+ //    /|\
+ //   4 1 1
+ //  /  |  \
+ // a-3-c-4-d
+ //
+ {
+     "vertices" = [
+         &a:{}
+         &b:{}
+         &c:{}
+         &d:{}
+     ]
+     "edges" = [
+         @($a {"weight"=4 "direction"="both"} $b)
+         @($a {"weight"=3 "direction"="both"} $c)
+         @($b {"weight"=1 "direction"="both"} $c)
+         @($b {"weight"=1 "direction"="both"} $d)
+         @($c {"weight"=4 "direction"="both"} $d)
+     ]
+ }
+
+example
+ c1
+ {
+     // Entire map will be referenced later as $id1
+     "marked object" = &id1:{
+         "recursive" = $id1
+     }
+     "ref1" = $id1
+     "ref2" = $id1
+ 
+     // Reference pointing to part of another document.
+     "outside ref" = $"https://xyz.com/document.cte#some_id"
+ }
+
+example
+ c1
+ {
+     // Custom types are user-defined, with user-supplied codecs.
+     "custom text"   = |c "cplx(2.94+3i)"|
+     "custom binary" = |c 01 f6 28 3c 40 00 00 40 40|
+ }

@@ -1,6 +1,8 @@
-title livr
+title Livr
 appeared 2012
-type dataNotation
+type dataValidationLanguage
+webRepl http://webbylab.github.io/livr-playground/
+standsFor Language Independent Validation Rules
 
 githubRepo https://github.com/koorchik/LIVR
  firstCommit 2012
@@ -13,3 +15,12 @@ githubRepo https://github.com/koorchik/LIVR
  issues 21
 
 website https://livr-spec.org/
+example
+ {
+     name: 'required',
+     phone: {max_length: 10},
+     address: {nested_object: {
+         city: 'required',
+         zip: ['required', 'positive_integer']
+     }}
+ }

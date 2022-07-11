@@ -1,9 +1,12 @@
 title fish
 appeared 2005
 type pl
+standsFor friendly interactive shell
 
 patterns
  hasComments? true
+
+lineCommentKeyword #
 
 wikipedia https://en.wikipedia.org/wiki/Friendly_interactive_shell
  example
