@@ -1,6 +1,6 @@
 title JSON Lines
 appeared 2013
-type metaLanguage
+type dataNotation
 aka newline-delimited JSON
 
 description JSON Lines is a convenient format for storing structured data that may be processed one record at a time. It works well with unix-style text processing tools and shell pipelines. It's a great format for log files. It's also a flexible format for passing messages between cooperating processes.
