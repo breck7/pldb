@@ -1,7 +1,10 @@
-title nymph
+title Nymph
 appeared 2017
 type pl
 creators Brandon Barber
+fileExtensions n
+
+lineCommentKeyword //
 
 githubRepo https://github.com/maelswarm/nymph
  firstCommit 2017
@@ -12,3 +15,24 @@ githubRepo https://github.com/maelswarm/nymph
  updated 2022
  description 🧚 A slightly different version of C.
  issues 0
+
+example
+ #include <stdio.h>
+ #include <stdlib.h>
+ 
+ class Mammal {
+ 
+     + int population = 0;             // Class Variable (+)
+     - int height = 0, weight = 100;   // Object Variable (-)
+ 
+     + Mammal *init(int height, int weight) {  // Class Method (+) Constructor
+         this->height = height;
+         this->weight = weight;
+         Mammal->population++;
+         return this;
+     }
+ 
+     - void print() {                          // Object Method (-)
+         printf("print instance properties...\n");
+     }
+ }
