@@ -1,3 +1,19 @@
-title behavior-markup-language
+title BML
+standsFor Behavior Markup Language
 type xmlFormat
 website http://www.mindmakers.org/projects/bml-1-0/wiki
+appeared 2007
+example
+ <bml>
+  <speech id=”s1” type=”application/ssml+xml”>
+   <text>This is an <mark name=”wb3”> example</text>
+  </speech>
+  <head id=”h1” type=”NOD” stroke=”s1:start”/>
+  <gesture id=”g1” stroke=”s1:wb3” relax=”s1:end” type=”BEAT”>
+   <description level=”1” type=”MURML”>...
+   </description>
+  </gesture>
+   <gaze id=”z1” target=”PERSON1” stroke=”g1:stroke-0.1”/>
+   <body id=”p1” posture=”RELAXED” start=”after(s1:end)”/>
+   <cadia:operate target=”SWITCH1” stroke=”p1:ready”/>
+ </bml> 
