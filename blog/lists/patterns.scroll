@@ -16,9 +16,9 @@ tableSearch
 comment autogenPatterns
 pipeTable
  pattern|patternLink|aka|psuedoExample|languages
- Comments|../languages/comment-pattern.html||# a comment|158
+ Comments|../languages/comment-pattern.html||# a comment|160
  Line Comments|../languages/line-comments-pattern.html||# from here to end of line is a comment|104
- Semantic Indentation|../languages/semantic-indentation-pattern.html||if true(newline/space)print True|52
+ Semantic Indentation|../languages/semantic-indentation-pattern.html||if true(newline/space)print True|53
  Operator Overloading|../languages/operator-overloading-pattern.html||def __add__(): doSomethingDifferent()|30
  Strings|../languages/strings-pattern.html||"""hi"""|29
  Import Pattern|../languages/import-pattern.html||import package|27
