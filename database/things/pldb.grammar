@@ -16,7 +16,7 @@ announcementMethodCell
  description Common ways languages are first announced.
  enum pressRelease paper rfc webpage blogPost interview dissertation
  highlightScope constant.language
-countryWordCell
+countryNameCell
 aliasCell
 numberCell
 intCell
@@ -616,7 +616,8 @@ announcementMethodNode
  single
 countryNode
  description What country was the language first developed in?
- cells keywordCell countryWordCell
+ cells keywordCell
+ catchAllCellType countryNameCell
  extends abstractFactNode
  crux country
 corporateDevelopersNode

@@ -50,10 +50,11 @@ announcementMethodNode
  cells keywordCell announcementMethodCell
  crux announcementMethod
  single
-countryWordCell
+countryNameCell
 countryNode
  description What country was the language first developed in?
- cells keywordCell countryWordCell
+ cells keywordCell
+ catchAllCellType countryNameCell
  extends abstractFactNode
  crux country
 corporateDevelopersNode
