@@ -697,13 +697,17 @@ code
 
 class FeaturePageTemplate extends LanguagePageTemplate {
   get kpiBar() {
+    return ""
+  }
+
+  get description() {
+    const { typeName, title } = this.file
     const { object } = this
-    const appeared = object.appeared
+    const isOrAre = title.endsWith("s") ? "are" : "is"
 
-    if (isNaN(appeared)) return ""
-
-    return `kpiTable
- ${currentYear - appeared} Years Old`
+    return `${title} ${isOrAre} ${getIndefiniteArticle(typeName)} ${
+      this.typeLink
+    }.`
   }
 
   get prevPage() {
