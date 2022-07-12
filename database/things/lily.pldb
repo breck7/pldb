@@ -1,4 +1,4 @@
-title lily
+title Lily
 appeared 2011
 type pl
 
@@ -27,5 +27,23 @@ fileType text
 isOpenSource true
 
 rosettaCode Lily
+webRepl http://lily-lang.org/intro-sandbox.html
 
 centralPackageRepositoryCount 0
+
+example
+ scoped enum Color { Black, Blue, Cyan, Green, Magenta, Red, White, Yellow }
+ 
+ class Terminal(public var @foreground: Color, width_str: String)
+ {
+     public var @width = width_str.parse_i().unwrap_or(80)
+ 
+     public define set_fg(new_color: Color) {
+         @foreground = new_color
+     }
+ }
+ 
+ var terms = [Terminal(Color.White, "A"), Terminal(Color.Red, "40")]
+ 
+ terms.each(|e| e.width += 20 )
+      |> print
