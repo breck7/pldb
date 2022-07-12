@@ -608,6 +608,17 @@ class Builder extends AbstractBuilder {
         .join("\n")
     replaceNext(page, "comment autogenPackages", packageTable)
 
+    // https://api.github.com/repos/breck7/pldb/contributors
+    try {
+      const contributorsTable =
+        `list\n` +
+        JSON.parse(Disk.read(__dirname + "/ignore/contributors.json"))
+          .filter(item => item.login !== "codelani" && item.login !== "breck7")
+          .map(item => ` - <a href="${item.html_url}">${item.login}</a>`)
+          .join("\n")
+      replaceNext(page, "comment autogenContributors", contributorsTable)
+    } catch (err) {}
+
     Disk.write(path, page.toString())
   }
 
