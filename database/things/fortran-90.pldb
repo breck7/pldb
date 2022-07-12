@@ -2,7 +2,7 @@ title Fortran 90
 appeared 1990
 type pl
 
-patterns
+features
  hasPointers? true
   type real_list_t
     real :: sample_data(100)

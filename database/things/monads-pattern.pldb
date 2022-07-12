@@ -1,6 +1,6 @@
 title Monad
 appeared 1980
-type pattern
+type feature
 psuedoExample g >>= f
 description A monad is a datatype that has two operations: >>= (aka bind) and return (aka unit). return takes an arbitrary value and creates an instance of the monad with it. >>= takes an instance of the monad and maps a function over it.
 
@@ -12,4 +12,4 @@ wikipedia https://en.wikipedia.org/wiki/Monad_(functional_programming)
  appeared 1980
 
 status active
-patternKeyword hasMonads?
+featureKeyword hasMonads?

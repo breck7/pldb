@@ -6,7 +6,7 @@ website http://www.ren-data.org/
 http://pointillistic.com/ren/
 fileExtensions ren
 lineCommentKeyword ;
-patterns
+features
  hasComments? true
  hasLineComments? true
   ; A comment

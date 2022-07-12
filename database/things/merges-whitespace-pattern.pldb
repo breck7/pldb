@@ -1,7 +1,7 @@
 title Merges Whitespace
-type pattern
+type feature
 psuedoExample result = 1    +    2
 description Some languages merge repeated whitespace characters into 1 token as one of the first steps in lexing. Others treat whitespace as semantically meaningful and don't change it, but instead lex and parse it into individual structures. If the language supports features like block comments, it might preserve whitespace perfectly inside delimiters while shrinking other whitespace.
 http://wiki.c2.com/?SyntacticallySignificantWhitespaceConsideredHarmful
 status active
-patternKeyword mergesWhitespace?
+featureKeyword mergesWhitespace?

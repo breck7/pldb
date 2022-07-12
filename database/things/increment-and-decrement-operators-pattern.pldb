@@ -1,6 +1,6 @@
 title Increment and decrement operators
 appeared 1969
-type pattern
+type feature
 psuedoExample i++
 description Increment and decrement operators are unary operators that add or subtract one, to or from their operand, respectively.
 
@@ -12,4 +12,4 @@ wikipedia https://en.wikipedia.org/wiki/Increment_and_decrement_operators
  appeared 1969
 
 status active
-patternKeyword hasIncrementAndDecrementOperators?
+featureKeyword hasIncrementAndDecrementOperators?

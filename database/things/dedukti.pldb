@@ -12,7 +12,7 @@ example
  [ n, m ] plus (succ n) m --> succ (plus n m)
  [ n, m ] plus n (succ m) --> succ (plus n m).
 
-patterns
+features
  hasComments? true
   (; This is a comment ;)
  hasMultiLineComments? true

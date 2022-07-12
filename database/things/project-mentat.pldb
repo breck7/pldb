@@ -23,7 +23,7 @@ example
   :db/valueType   :db.type/ref
   :db/cardinality :db.cardinality/many}    ; People can have many friends.
 appeared 2016
-patterns
+features
  hasLineComments? true
   ; A comment
 website https://mentat.rs/

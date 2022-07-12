@@ -1,9 +1,9 @@
 title Homoiconicity
-type pattern
+type feature
 psuedoExample (list ())
 description A language is homoiconic if a program written in it can be manipulated as data using the language, and thus the program's internal representation can be inferred just by reading the program itself.
 
 wikipedia https://en.wikipedia.org/wiki/Homoiconicity
 
 status active
-patternKeyword hasHomoiconicity?
+featureKeyword hasHomoiconicity?

@@ -2,7 +2,7 @@ title Turbo Pascal
 appeared 1983
 type compiler
 
-patterns
+features
  hasComments? true
   { within pairs of braces }
   (* left parenthesis/asterisk and asterisk/right parenthesis pairs *)

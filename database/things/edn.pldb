@@ -6,7 +6,7 @@ aka edn
 example
  {:a 1, "foo" :bar, [1 2 3] four}
 
-patterns
+features
  hasBooleans? true
  hasComments? true
  hasFloats? true

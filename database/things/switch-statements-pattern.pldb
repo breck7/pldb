@@ -1,6 +1,6 @@
 title Switch Statements
 appeared 1952
-type pattern
+type feature
 psuedoExample switch animal: case dog-buy; case cat-sell;
 
 wikipedia https://en.wikipedia.org/wiki/Switch_statement
@@ -11,4 +11,4 @@ wikipedia https://en.wikipedia.org/wiki/Switch_statement
  appeared 1952
 
 status active
-patternKeyword hasSwitch?
+featureKeyword hasSwitch?

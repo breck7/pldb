@@ -3,7 +3,7 @@ appeared 2012
 type pl
 creators Anders Hejlsberg
 
-patterns
+features
  hasStaticMethods? true
   class Person {
     static sayHi() {

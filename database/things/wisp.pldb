@@ -5,7 +5,7 @@ type pl
 example
  (alert "Hello world!")
 
-patterns
+features
  hasSemanticIndentation? true
 
 description A little Clojure-like LISP in JavaScript

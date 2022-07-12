@@ -1,10 +1,10 @@
 title Shebang
 appeared 1979
-type pattern
+type feature
 psuedoExample #! /run
 description In computing, a shebang is the character sequence consisting of the characters number sign and exclamation mark (#!) at the beginning of a script. It is also called sha-bang, hashbang, pound-bang, or hash-pling.
 
 wikipedia https://en.wikipedia.org/wiki/Shebang_(Unix)
 
 status active
-patternKeyword canDoShebang?
+featureKeyword canDoShebang?

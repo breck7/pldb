@@ -1,5 +1,5 @@
 title Message Passing
-type pattern
+type feature
 psuedoExample "get homepage"
 description Message passing is a technique for invoking behavior (i.e., running a program) on a computer. The invoking program sends a message to a process (which may be an actor or object) and relies on that process and its supporting infrastructure to then select and run some appropriate code.
 
@@ -11,4 +11,4 @@ wikipedia https://en.wikipedia.org/wiki/Message_passing
  appeared 1975
 
 status active
-patternKeyword hasMessagePassing?
+featureKeyword hasMessagePassing?

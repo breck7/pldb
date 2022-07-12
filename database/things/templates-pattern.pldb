@@ -1,6 +1,6 @@
 title Templates
 appeared 1995
-type pattern
+type feature
 psuedoExample template TCopy(T) {}
 description Template metaprogramming (TMP) is a metaprogramming technique in which templates are used by a compiler to generate temporary source code, which is merged by the compiler with the rest of the source code and then compiled. The output of these templates include compile-time constants, data structures, and complete functions. The use of templates can be thought of as compile-time execution.
 
@@ -11,4 +11,4 @@ wikipedia https://en.wikipedia.org/wiki/Template_metaprogramming
  dailyPageViews 161
  appeared 1995
 
-patternKeyword hasTemplates?
+featureKeyword hasTemplates?

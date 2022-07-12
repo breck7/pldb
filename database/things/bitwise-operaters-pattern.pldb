@@ -1,5 +1,5 @@
 title Bitwise Operators
-type pattern
+type feature
 psuedoExample 3 == (2 | 1)
 
 wikipedia https://en.wikipedia.org/wiki/Bitwise_operation
@@ -10,4 +10,4 @@ wikipedia https://en.wikipedia.org/wiki/Bitwise_operation
 
 https://en.wikipedia.org/wiki/Bitwise_operations_in_C
 status active
-patternKeyword hasBitWiseOperators?
+featureKeyword hasBitWiseOperators?

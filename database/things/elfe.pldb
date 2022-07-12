@@ -17,7 +17,7 @@ example
  temperature_changed new_temp, last_temp ->
      writeln "Temperature changed from ", last_temp, " to ", new_temp
 
-patterns
+features
  hasSemanticIndentation? true
 
 description ELFE is a very simple and small programming language specifcally designed for everyday programming, notably for the Internet of Things.

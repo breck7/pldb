@@ -1,10 +1,10 @@
 title Exceptions
 appeared 1962
-type pattern
+type feature
 psuedoExample throw new Error("Uh oh")
 description In general, an exception breaks the normal flow of execution and executes a pre-registered exception handler.
 
 wikipedia https://en.wikipedia.org/wiki/Exception_handling
 
 status active
-patternKeyword hasExceptions?
+featureKeyword hasExceptions?

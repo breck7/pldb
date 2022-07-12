@@ -1,9 +1,9 @@
 title Sets
-type pattern
+type feature
 psuedoExample {black, red, yellow}
 description An abstract data type that can store unique values, without any particular order.
 
 wikipedia https://en.wikipedia.org/wiki/Set_(abstract_data_type)
 
 status active
-patternKeyword hasSets?
+featureKeyword hasSets?

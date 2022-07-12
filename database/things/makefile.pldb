@@ -32,7 +32,7 @@ example
          rm edit main.o kbd.o command.o display.o \
             insert.o search.o files.o utils.o
 
-patterns
+features
  hasSemanticIndentation? true
  hasLineComments? true
   # A comment

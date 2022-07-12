@@ -3,7 +3,7 @@ appeared 2011
 type pl
 creators Andrey Breslav
 
-patterns
+features
  hasComments? true
  hasImports? true
   import foo.Bar // Bar is now accessible without qualification

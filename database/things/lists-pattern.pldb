@@ -1,5 +1,5 @@
 title Lists
-type pattern
+type feature
 psuedoExample [2, 3, 10]
 description A list or sequence is an abstract data type that represents a countable number of ordered values, where the same value may occur more than once
 
@@ -9,4 +9,4 @@ aka array
 aka vector
 aka sequence
 status active
-patternKeyword hasLists?
+featureKeyword hasLists?

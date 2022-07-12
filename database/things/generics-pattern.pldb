@@ -1,6 +1,6 @@
 title Generics
 appeared 1973
-type pattern
+type feature
 psuedoExample function identity<T>(arg: T): T
 
 wikipedia https://en.wikipedia.org/wiki/Generic_programming
@@ -10,4 +10,4 @@ wikipedia https://en.wikipedia.org/wiki/Generic_programming
  dailyPageViews 327
  appeared 1977
 
-patternKeyword hasGenerics?
+featureKeyword hasGenerics?

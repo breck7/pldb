@@ -1,10 +1,10 @@
 title Prefix Notation
 appeared 1924
-type pattern
+type feature
 psuedoExample + 1 2
 description A mathematical notation in which operators precede their operands. For example: "+ 3 4"
 
 wikipedia https://en.wikipedia.org/wiki/Polish_notation
 
 status active
-patternKeyword hasPrefixNotation?
+featureKeyword hasPrefixNotation?

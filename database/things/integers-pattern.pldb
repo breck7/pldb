@@ -1,9 +1,9 @@
 title Integers
-type pattern
+type feature
 psuedoExample int score = 28
 description A data type that represents some range of mathematical integers.
 
 wikipedia https://en.wikipedia.org/wiki/Integer_(computer_science)
 
 status active
-patternKeyword hasIntegers?
+featureKeyword hasIntegers?

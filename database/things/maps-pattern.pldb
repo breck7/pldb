@@ -1,5 +1,5 @@
 title Maps
-type pattern
+type feature
 psuedoExample {name: "Mary"}
 description An associative array, map, symbol table, or dictionary is an abstract data type composed of a collection of (key, value) pairs, such that each possible key appears at most once in the collection.
 
@@ -14,4 +14,4 @@ aka hashtable
 aka keyed list
 aka associative array
 status active
-patternKeyword hasMaps?
+featureKeyword hasMaps?

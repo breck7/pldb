@@ -57,7 +57,7 @@ example
  repeat
  until ave_getmessage = 'Q'
 
-patterns
+features
  hasSemanticIndentation? true
   define pythtree ax:real ay:real bx:real by:real depth:int do
      cx = ax-ay+by

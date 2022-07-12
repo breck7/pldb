@@ -12,7 +12,7 @@ example
  ;
  print (abs_div(2,4)); print "\n";
 
-patterns
+features
  hasPointers? true
   var x = 1;
   &x <- 2;

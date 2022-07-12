@@ -1,6 +1,6 @@
 title Namespaces
-type pattern
+type feature
 psuedoExample namespace Stuff {}
 description Most languages have implicit scopes/namespaces, but some also allow for explicit namespacing.
 status active
-patternKeyword hasNamespaces?
+featureKeyword hasNamespaces?

@@ -1,9 +1,9 @@
 title Supports Breakpoints
-type pattern
+type feature
 psuedoExample debugger;
 description In software development, a breakpoint is an intentional stopping or pausing place in a program, put in place for debugging purposes.
 
 wikipedia https://en.wikipedia.org/wiki/Breakpoint
 
 status active
-patternKeyword supportsBreakpoints?
+featureKeyword supportsBreakpoints?

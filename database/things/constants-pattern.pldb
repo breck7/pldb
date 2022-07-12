@@ -1,8 +1,8 @@
 title Constants
-type pattern
+type feature
 psuedoExample const ONE = 1
 description Marking a type or identifier as immutable.
 
 wikipedia https://en.wikipedia.org/wiki/Const_(computer_programming)
 
-patternKeyword hasConstants?
+featureKeyword hasConstants?

@@ -1,6 +1,6 @@
 title Polymorphism
 appeared 1960
-type pattern
+type feature
 psuedoExample a + "b"; 1 + 2
 description In programming languages and type theory, polymorphism is the provision of a single interface to entities of different types or the use of a single symbol to represent multiple different types.
 
@@ -11,4 +11,4 @@ wikipedia https://en.wikipedia.org/wiki/Polymorphism_(computer_science)
  dailyPageViews 957
  appeared 1960
 
-patternKeyword hasPolymorphism?
+featureKeyword hasPolymorphism?

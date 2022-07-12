@@ -28,7 +28,7 @@ example
     else:
       add(fib(sub1(n)), fib(sub(n, 2)))
 
-patterns
+features
  hasSemanticIndentation? true
 
 description an alternate syntax for Racket.

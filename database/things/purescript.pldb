@@ -11,7 +11,7 @@ example
  
  main = log (greet "World")
 
-patterns
+features
  hasComments? true
  hasDocComments? true
   -- https://github.com/purescript/documentation/blob/master/language/Syntax.md

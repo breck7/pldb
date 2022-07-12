@@ -1,9 +1,9 @@
 title Interfaces
-type pattern
+type feature
 psuedoExample interface Sendable
 description Aka Protocol pattern.
 
 wikipedia https://en.wikipedia.org/wiki/Protocol_(object-oriented_programming)
 
 status active
-patternKeyword hasInterfaces?
+featureKeyword hasInterfaces?

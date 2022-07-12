@@ -1,6 +1,6 @@
 title Symbol Tables
 appeared 2004
-type pattern
+type feature
 psuedoExample SymbolName|Type|Scope;bar|function,double|extern
 description A symbol table may only exist in memory during the translation process, or it may be embedded in the output of the translation.
 
@@ -12,4 +12,4 @@ wikipedia https://en.wikipedia.org/wiki/Symbol_table
  appeared 2004
 
 status active
-patternKeyword hasSymbolTables?
+featureKeyword hasSymbolTables?

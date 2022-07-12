@@ -1,6 +1,6 @@
 title Disk Output
-type pattern
+type feature
 psuedoExample write("foobar.txt", "something")
 description Many programming languages have the capability to write to disks using system calls.
 status active
-patternKeyword canWriteToDisk?
+featureKeyword canWriteToDisk?

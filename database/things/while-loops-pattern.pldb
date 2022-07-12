@@ -1,9 +1,9 @@
 title While Loops
-type pattern
+type feature
 psuedoExample while (true) loop()
 description In most computer programming languages, a while loop is a control flow statement that allows code to be executed repeatedly based on a given Boolean condition.
 
 wikipedia https://en.wikipedia.org/wiki/While_loop
 
 status active
-patternKeyword hasWhileLoops?
+featureKeyword hasWhileLoops?

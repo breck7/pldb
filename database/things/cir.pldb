@@ -28,6 +28,6 @@ example
  // Load address from memory at address %0. %3 is used by at least one
  // operation that dereferences a pointer.
  %3 = cir.load deref %0 : cir.ptr <!cir.ptr<i32>>
-patterns
+features
  hasLineComments? true
   // A comment

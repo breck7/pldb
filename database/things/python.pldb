@@ -3,7 +3,7 @@ appeared 1991
 type pl
 creators Guido van Rossum
 
-patterns
+features
  canWriteToDisk? true
   with open('helloworld.txt', 'w') as filehandle:
    filehandle.write('Hello, world!\n')

@@ -2,7 +2,7 @@ title Coconut
 appeared 2014
 type pl
 
-patterns
+features
  hasPatternMatching? true
   match [head] + tail in [0, 1, 2, 3]:
      print(head, tail)

@@ -1,10 +1,10 @@
 title Mixins
 appeared 1980
-type pattern
+type feature
 psuedoExample extends structure, paintable
 description A mixin is a class that contains methods for use by other classes without having to be the parent class of those other classes. How those other classes gain access to the mixin's methods depends on the language. Mixins are sometimes described as being "included" rather than "inherited". A mixin can also be viewed as an interface with implemented methods.
 
 wikipedia https://en.wikipedia.org/wiki/Mixin
 
 status active
-patternKeyword hasMixins?
+featureKeyword hasMixins?

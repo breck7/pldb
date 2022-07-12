@@ -30,7 +30,7 @@ example
  terminal ANY_OTHER: 
      .;
 
-patterns
+features
  hasImports? true
   import "http://www.xtext.org/example/Domainmodel"
   import "http://www.xtext.org/example/Domainmodel" as dmodel

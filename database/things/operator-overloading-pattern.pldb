@@ -1,5 +1,5 @@
 title Operator Overloading
-type pattern
+type feature
 psuedoExample def __add__(): doSomethingDifferent()
 description Where different operators have different implementations depending on their arguments.
 
@@ -7,4 +7,4 @@ wikipedia https://en.wikipedia.org/wiki/Operator_overloading
 
 https://en.wikibooks.org/wiki/Introduction_to_Programming_Languages/Overloading
 status active
-patternKeyword hasOperatorOverloading?
+featureKeyword hasOperatorOverloading?

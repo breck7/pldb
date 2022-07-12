@@ -1,6 +1,6 @@
 title Async Await
 appeared 2007
-type pattern
+type feature
 psuedoExample async doSomething => await somethingElse()
 description A syntactic feature of many programming languages that allows an asynchronous, non-blocking function to be structured in a way similar to an ordinary synchronous function.
 
@@ -12,4 +12,4 @@ wikipedia https://en.wikipedia.org/wiki/Async/await
  appeared 2007
 
 status active
-patternKeyword hasAsyncAwait?
+featureKeyword hasAsyncAwait?

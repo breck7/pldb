@@ -1,5 +1,5 @@
 title Union Types
-type pattern
+type feature
 psuedoExample any = string | number
 description a union type definition will specify which of a number of permitted primitive types may be stored in its instances, e.g., "float or long integer"
 
@@ -9,4 +9,4 @@ wikipedia https://en.wikipedia.org/wiki/Union_type
  pageId 492281
  dailyPageViews 138
 
-patternKeyword hasUnionTypes?
+featureKeyword hasUnionTypes?

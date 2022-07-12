@@ -1,6 +1,6 @@
 title Pattern Matching
 appeared 1960
-type pattern
+type feature
 psuedoExample fib 0 = 1; fib 1 = 1
 
 wikipedia https://en.wikipedia.org/wiki/Pattern_matching
@@ -11,4 +11,4 @@ wikipedia https://en.wikipedia.org/wiki/Pattern_matching
  appeared 1960
 
 status active
-patternKeyword hasPatternMatching?
+featureKeyword hasPatternMatching?

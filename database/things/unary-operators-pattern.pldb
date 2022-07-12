@@ -1,8 +1,8 @@
 title Unary Operators
-type pattern
+type feature
 psuedoExample count++
 description Operators with arity 1.
 
 wikipedia https://en.wikipedia.org/wiki/Unary_operation
 
-patternKeyword hasUnaryOperators?
+featureKeyword hasUnaryOperators?

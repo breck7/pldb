@@ -1,8 +1,8 @@
 title Binary Operators
-type pattern
+type feature
 psuedoExample 1 + 1
 description An operator for operation of arity 2.
 
 wikipedia https://en.wikipedia.org/wiki/Binary_operation
 
-patternKeyword hasBinaryOperators?
+featureKeyword hasBinaryOperators?

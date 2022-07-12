@@ -1,7 +1,7 @@
 title Regular Expression Syntax Sugar
-type pattern
+type feature
 psuedoExample /\w+\d?/
 description Some languages have special syntax for regular expressions.
 https://pldb.pub/languages/regex.html
 status active
-patternKeyword hasRegularExpressionsSyntaxSugar?
+featureKeyword hasRegularExpressionsSyntaxSugar?

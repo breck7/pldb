@@ -30,7 +30,7 @@ example
   # Lazily read words from a file
   .say for '50TB.file.txt'.IO.words;
 
-patterns
+features
  hasRefinementTypes? true
   subset Color of Any where Color | CMYK_Color;
  hasFunctionComposition? true

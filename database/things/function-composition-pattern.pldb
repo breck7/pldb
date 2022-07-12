@@ -1,8 +1,8 @@
 title Function Composition
-type pattern
+type feature
 description In computer science, function composition is an act or mechanism to combine simple functions to build more complicated ones. Like the usual composition of functions in mathematics, the result of each function is passed as the argument of the next, and the result of the last one is the result of the whole.
 
 wikipedia https://en.wikipedia.org/wiki/Function_composition_(computer_science)
 
 status active
-patternKeyword hasFunctionComposition?
+featureKeyword hasFunctionComposition?

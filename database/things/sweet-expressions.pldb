@@ -10,7 +10,7 @@ example
       n              ; Single expr = no new list
       fibup n 2 1 0  ; Simple function calls
 
-patterns
+features
  hasSemanticIndentation? true
 
 description This SRFI describes a set of syntax extensions for Scheme, called sweet-expressions (t-expressions), that has the same descriptive power as s-expressions but is designed to be easier for humans to read.
