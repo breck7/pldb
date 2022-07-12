@@ -58,3 +58,6 @@ rijuRepl https://riju.codes/toml
   output = "Hello, world!"
   
 website https://toml.io
+patterns
+ hasLineComments? true
+  # A comment

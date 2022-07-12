@@ -17,3 +17,6 @@ example
      print("Danger Will Robinson")
    else
      sleep(1)
+patterns
+ hasLineComments? true
+  ; A comment

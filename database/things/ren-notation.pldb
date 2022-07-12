@@ -8,6 +8,8 @@ fileExtensions ren
 lineCommentKeyword ;
 patterns
  hasComments? true
+ hasLineComments? true
+  ; A comment
 example
  []			; empty list
  #()			; empty map

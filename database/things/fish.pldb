@@ -5,6 +5,8 @@ standsFor friendly interactive shell
 
 patterns
  hasComments? true
+ hasLineComments? true
+  # A comment
 
 lineCommentKeyword #
 

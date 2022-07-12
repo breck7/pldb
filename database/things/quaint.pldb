@@ -18,6 +18,8 @@ creators Olivier Breuleux
 writtenIn earl-grey
 patterns
  hasSemanticIndentation? true
+ hasLineComments? true
+  ;; A comment
 example
  ;; Edit me!
  

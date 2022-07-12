@@ -23,3 +23,8 @@ webRepl https://jsonnet.org/
 multiLineCommentKeywords /* */
 lineCommentKeyword //
 creators Dave Cunningham
+patterns
+ hasLineComments? true
+  // A comment
+ hasMultiLineComments? true
+  /* A comment */

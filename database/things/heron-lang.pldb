@@ -26,3 +26,7 @@ githubRepo https://github.com/cdiggins/heron-language
 website https://cdiggins.github.io/heron-language
 
 twitter cdiggins
+
+patterns
+ hasLineComments? true
+  // A comment

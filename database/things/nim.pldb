@@ -9,6 +9,8 @@ patterns
   https://hookrace.net/blog/introduction-to-metaprogramming-in-nim/#macros
  hasSemanticIndentation? true
  hasStaticTyping? true
+ hasLineComments? true
+  # A comment
 
 compilesTo c cpp objective-c javascript
 

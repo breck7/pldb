@@ -64,3 +64,7 @@ example
      , bios = Prelude.List.map User Bio toBio users
      , greetingPage = greetingPage
      }
+
+patterns
+ hasLineComments? true
+  -- A comment

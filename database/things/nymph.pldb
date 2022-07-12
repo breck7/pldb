@@ -36,3 +36,6 @@ example
          printf("print instance properties...\n");
      }
  }
+patterns
+ hasLineComments? true
+  // A comment
