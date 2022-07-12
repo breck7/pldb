@@ -279,7 +279,7 @@ ${facts.map(fact => ` - ${fact}`).join("\n")}`
     const wikipediaLink = file.get("wikipedia")
     const wikiLink = wikipediaLink ? wikipediaLink : ""
     if (wikiLink)
-      facts.push(`the <a href="${wikiLink}">${title} wikipedia page</a>`)
+      facts.push(`the <a href="${wikiLink}">${title} Wikipedia page</a>`)
 
     const githubRepo = file.getNode("githubRepo")
     if (githubRepo) {
@@ -290,7 +290,7 @@ ${facts.map(fact => ` - ${fact}`).join("\n")}`
       facts.push(
         `${title} is developed on <a href="${githubRepo.getWord(
           1
-        )}">github</a>${starMessage}`
+        )}">GitHub</a>${starMessage}`
       )
     }
 
