@@ -62,6 +62,12 @@ features
   template = """This is the first line.
   This is the second line.
   This is the third line."""
+ hasPointers false
+ hasIntegers true
+  foo = 1
+ hasUnitsOfMeasure false
+ hasLists true
+  myList = [1, 2, 3, 4, 5]
  hasMultipleInheritance true
   class Base1:
       pass
@@ -95,6 +101,9 @@ features
   print(ob1 + ob2) 
   print(ob3 + ob4)
  hasSemanticIndentation true
+  class Person (object):
+    def __init__(self, name):
+      self.name = name
  hasInheritance true
   class SumComputer(object):
      def __init__(self, a, b):
@@ -248,3 +257,4 @@ goodreads
  Python: Programming: Your Step By Step Guide To Easily Learn Python in 7 Days (Python for Beginners, Python Programming for Beginners, Learn Python, Python Language)||iCode Academy|54724997|3.76|126|6
  Programming Python|1996|Mark Lutz|77671|3.96|898|23
  Natural Language Processing with Python|2009|Steven    Bird|6581044|4.14|389|34
+githubCopilotOptimized

@@ -32,6 +32,10 @@ abstractSectionNode
  extends abstractFactNode
  boolean padOnFormat true
  single
+abstractFlagNode
+ extends abstractFactNode
+ cells keywordCell
+ single
 abstractPermalinksNode
  abstract
  catchAllCellType permalinkCell

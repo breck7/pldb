@@ -709,30 +709,33 @@ class Builder extends AbstractBuilder {
     pldbBase.loadFolder()
     const { topFeatures } = pldbBase
 
-    pldbBase.topLanguages.slice(0, 100).forEach(file => {
-      const lineCommentKeyword = file.lineCommentKeyword
+    pldbBase.topLanguages
+      .slice(0, 100)
+      .filter(file => file.has("githubCopilotOptimized"))
+      .forEach(file => {
+        const lineCommentKeyword = file.lineCommentKeyword
 
-      const todos = []
-      topFeatures.forEach(feature => {
-        const hit = file.getNode(`features ${feature.path}`)
-        if (hit && hit.getContent() === "false") return
-        if (hit && hit.length)
-          todos.push(
-            `${lineCommentKeyword} A short example of ${feature.feature}(${
-              feature.path
-            }) in ${file.title}:\n${hit.childrenToString()}`
-          )
-        else
-          todos.push(
-            `${lineCommentKeyword} A short example of ${feature.feature}(${feature.path}) in ${file.title}:`
-          )
+        const todos = []
+        topFeatures.forEach(feature => {
+          const hit = file.getNode(`features ${feature.path}`)
+          if (hit && hit.getContent() === "false") return
+          if (hit && hit.length)
+            todos.push(
+              `${lineCommentKeyword} A short example of ${feature.feature}(${
+                feature.path
+              }) in ${file.title}:\n${hit.childrenToString()}`
+            )
+          else
+            todos.push(
+              `${lineCommentKeyword} A short example of ${feature.feature}(${feature.path}) in ${file.title}:`
+            )
+        })
+
+        Disk.write(
+          __dirname + `/ignore/worksheets/${file.id}.${file.fileExtension}`,
+          todos.join("\n\n")
+        )
       })
-
-      Disk.write(
-        __dirname + `/ignore/worksheets/${file.id}.${file.fileExtension}`,
-        todos.join("\n\n")
-      )
-    })
   }
 
   updateAll() {

@@ -11,6 +11,12 @@ features
  hasRegularExpressionsSyntaxSugar true
   puts "Hello World".match(/\w/)
  hasDuckTyping true
+ hasIntegers true
+  score = 100
+ hasBooleans true
+  status = true
+ hasIdentifiers
+  score = 100
  hasExceptions true
   def hello
    puts "Hello, World!"
@@ -244,3 +250,4 @@ rijuRepl https://riju.codes/ruby
   puts "Hello, world!"
   
 multiLineCommentKeywords =begin =end
+githubCopilotOptimized

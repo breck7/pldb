@@ -4,6 +4,18 @@ type pl
 
 features
  hasRegularExpressionsSyntaxSugar false
+ hasSemanticIndentation false
+ hasImports true
+  #include <iostream>
+ hasPointers true
+  int *p;
+ hasBooleans true
+  bool b1 = true;
+ hasIntegers true
+  int i = 0;
+ hasIdentifiers true
+  int i = 0;
+ hasUnitsOfMeasure false
  hasUnaryOperators true
   int count = 2;
   count++;
@@ -353,3 +365,4 @@ rijuRepl https://riju.codes/cpp
  fileExtensions C cc cpp cxx c++ h hh hpp hxx h++
  githubRepo https://github.com/llvm/llvm-project
 creators Bjarne Stroustrup
+githubCopilotOptimized

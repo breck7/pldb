@@ -4,8 +4,23 @@ type pl
 creators Anders Hejlsberg
 
 features
+ hasComments true
+  // This is a comment
  hasStrings true
   "hello world"
+ hasSemanticIndentation false
+ hasBooleans true
+  bool b = true;
+ hasIntegers true
+  int i = 42;
+ hasIdentifiers true
+  int i = 42;
+ hasPrintStatements true
+  Console.WriteLine("This is C#");
+ hasMultiLineComments true
+  /*
+  * This is a multi-line comment
+  */
  hasAsyncAwait true
   public async Task<int> FindPageSize(Uri uri) 
   {
@@ -272,4 +287,4 @@ rijuRepl https://riju.codes/csharp
           System.Console.WriteLine("Hello, world!");
       }
   }
-  
+githubCopilotOptimized

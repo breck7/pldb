@@ -6,6 +6,9 @@ creators Brendan Eich
 features
  hasAccessModifiers false
  hasAbstractTypes false
+ hasSemanticIndentation false
+ hasImports true
+  import { helloWorld } from "./helloWorld.js";
  hasStatements true
   let x = 3;
  hasRegularExpressionsSyntaxSugar true
@@ -25,7 +28,15 @@ features
   if (false)
     debugger
  hasPointers false
+ hasIntegers true
+  const result = 1
+ hasLists true
+  const list = [1,2,3]
  mergesWhitespace true
+ hasMultiLineComments true
+  /* Hello
+     World
+   */
  hasPolymorphism true
   "a" + "b"; 1 + 2
  hasSingleDispatch true
@@ -374,3 +385,4 @@ goodreads
  title|year|author|goodreadsId|rating|ratings|reviews
  Eloquent JavaScript: A Modern Introduction to Programming|2010|Marijn Haverbeke|13787033|4.12|1721|141
  Professional JavaScript for Web Developers|2005|Nicholas C. Zakas|130520|4.14|559|31
+githubCopilotOptimized

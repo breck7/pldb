@@ -26,6 +26,20 @@ features
   
  hasComments true
   // This is a comment
+ hasMultiLineComments true
+  /*
+   A comment
+   */
+ hasBooleans true
+  c := true
+ hasIntegers true
+  i, j := 42, 2701
+ hasPointers true
+  p := &i         // point to i
+ hasIncrementAndDecrementOperators true
+  i := 0
+  i++
+  i--
  hasImports true
   import (
      "fmt"
@@ -37,6 +51,8 @@ features
   import m "math"
  hasOperatorOverloading false
  hasSemanticIndentation false
+ hasLists true
+  myList := []int{1, 2, 3}
  hasTypeInference true
  hasVariadicFunctions true
   // This variadic function takes an arbitrary number of ints as arguments.
@@ -236,4 +252,4 @@ rijuRepl https://riju.codes/go
   func main() {
   	fmt.Println("Hello, world!")
   }
-  
+githubCopilotOptimized
