@@ -24,8 +24,6 @@ const toCommaList = (arr, conjunction = "and") => {
   return arr.join(", ") + ` ${conjunction} ${last}`
 }
 
-const getATag = permalink => `<a href="${permalink}.html">${permalink}</a>`
-
 const makeInverseRanks = (ranks: Rankings) => {
   const inverseRanks: InverseRankings = {}
   Object.keys(ranks).forEach(id => {
@@ -281,7 +279,6 @@ export {
   getPrimaryKey,
   isLanguage,
   getCleanedId,
-  getATag,
   runCommand,
   makeInverseRanks,
   PoliteCrawler,

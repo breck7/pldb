@@ -1,4 +1,4 @@
-title coconut
+title Coconut
 appeared 2014
 type pl
 
@@ -41,11 +41,13 @@ status active
 
 tryItOnline coconut
 
+compilesTo python
 fileType text
 isOpenSource true
 writtenIn python
 jupyterKernel http://coconut-lang.org/
 centralPackageRepositoryCount 0
+webRepl https://cs121-team-panda.github.io/coconut-interpreter/
 rijuRepl https://riju.codes/coconut
  example
   print("Hello, world!")

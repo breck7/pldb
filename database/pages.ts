@@ -12,7 +12,6 @@ import {
   getIndefiniteArticle,
   nameToAnchor,
   toCommaList,
-  getATag,
   linkMany
 } from "./utils"
 
@@ -23,6 +22,11 @@ class LanguagePageTemplate {
     this.file = file
     this.object = file.toObject()
     this.primaryKey = this.file.primaryKey
+  }
+
+  makeATag(permalink) {
+    const file = this.file.base.getFile(permalink)
+    return `<a href="${permalink}.html">${file.title}</a>`
   }
 
   protected object: pldbNode
@@ -331,8 +335,8 @@ ${facts.map(fact => ` - ${fact}`).join("\n")}`
       facts.push(
         `${title} compiles to ${compilesTo
           .split(" ")
-          .map(getATag)
-          .join(" & ")}`
+          .map(link => this.makeATag(link))
+          .join(" or ")}`
       )
 
     const writtenIn = file.get("writtenIn")
@@ -340,7 +344,7 @@ ${facts.map(fact => ` - ${fact}`).join("\n")}`
       facts.push(
         `${title} is written in ${writtenIn
           .split(" ")
-          .map(getATag)
+          .map(link => this.makeATag(link))
           .join(" & ")}`
       )
 
@@ -539,7 +543,9 @@ ${facts.map(fact => ` - ${fact}`).join("\n")}`
     if (related) related.split(" ").forEach(id => seeAlsoLinks.push(id))
 
     if (seeAlsoLinks.length)
-      facts.push("See also: " + seeAlsoLinks.map(getATag).join(", "))
+      facts.push(
+        "See also: " + seeAlsoLinks.map(link => this.makeATag(link)).join(", ")
+      )
 
     const { otherReferences } = file
 
