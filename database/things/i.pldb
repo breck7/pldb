@@ -1,6 +1,7 @@
-title i
+title I
 appeared 2012
 type pl
+writtenIn c
 
 githubRepo https://github.com/mlochbaum/ILanguage
  firstCommit 2012
@@ -11,3 +12,6 @@ githubRepo https://github.com/mlochbaum/ILanguage
  updated 2022
  description An interpreter for a J-inspired language
  issues 0
+
+example
+ 5  - *.o +  4
