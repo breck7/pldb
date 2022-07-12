@@ -88,8 +88,8 @@ pipeTable
  FTP|../languages/ftp.html|1971|protocol|77
  GNU Octave|../languages/octave.html|1988|pl|78
  X86|../languages/x86-isa.html|1978|isa|79
- LLVM IR|../languages/llvmir.html|2003|ir|80
- Tex|../languages/tex.html|1978|pl|81
+ Tex|../languages/tex.html|1978|pl|80
+ LLVM IR|../languages/llvmir.html|2003|ir|81
  Node.js|../languages/nodejs.html|2009|pl|82
  fish|../languages/fish.html|2005|pl|83
  LaTeX|../languages/latex.html|1985|textMarkup|84
@@ -134,10 +134,10 @@ pipeTable
  WebAssembly|../languages/wasm.html|2015|bytecode|123
  Oz|../languages/oz.html|1991|pl|124
  BCPL|../languages/bcpl.html|1966|pl|125
- MIPS architecture|../languages/mips.html|1985|isa|126
- Modula-3|../languages/modula-3.html|1986|pl|127
- XQuery|../languages/xquery.html|2007|pl|128
- Wren|../languages/wren.html|2013|pl|129
+ Wren|../languages/wren.html|2013|pl|126
+ MIPS architecture|../languages/mips.html|1985|isa|127
+ Modula-3|../languages/modula-3.html|1986|pl|128
+ XQuery|../languages/xquery.html|2007|pl|129
  Sage|../languages/sagemath.html|2005|pl|130
  SVG|../languages/svg.html|2001|textMarkup|131
  MediaWiki|../languages/mediawiki.html|2002|wikiMarkup|132
@@ -161,21 +161,21 @@ pipeTable
  Rust MIR|../languages/rust-mir.html|2016|ir|150
  AMPL|../languages/ampl.html|1985|pl|151
  Icon|../languages/icon.html|1977|pl|152
- Pike|../languages/pike.html|1994|pl|153
- SNOBOL|../languages/snobol.html|1962|pl|154
- zig|../languages/zig.html|2015|pl|155
- Perl 6|../languages/perl-6.html|2015|pl|156
- AutoIt|../languages/autoit.html|1999|pl|157
- MIME|../languages/mime.html|1991|textDataFormat|158
- Stata|../languages/stata.html|1985|pl|159
- Limbo|../languages/limbo.html|1995|pl|160
+ TOML|../languages/toml.html|2013|dataNotation|153
+ Pike|../languages/pike.html|1994|pl|154
+ SNOBOL|../languages/snobol.html|1962|pl|155
+ zig|../languages/zig.html|2015|pl|156
+ Perl 6|../languages/perl-6.html|2015|pl|157
+ AutoIt|../languages/autoit.html|1999|pl|158
+ MIME|../languages/mime.html|1991|textDataFormat|159
+ Stata|../languages/stata.html|1985|pl|160
  Arc|../languages/arc.html|2001|pl|161
- Occam|../languages/occam.html|1983|pl|162
- VBA|../languages/vba.html|1993|pl|163
- Xojo|../languages/xojo.html|1996|pl|164
- Reverse Polish notation|../languages/reverse-polish-notation.html|1953|notation|165
- ActionScript|../languages/actionscript.html|1998|pl|166
- TOML|../languages/toml.html|2013|dataNotation|167
+ Limbo|../languages/limbo.html|1995|pl|162
+ Occam|../languages/occam.html|1983|pl|163
+ VBA|../languages/vba.html|1993|pl|164
+ Xojo|../languages/xojo.html|1996|pl|165
+ Reverse Polish notation|../languages/reverse-polish-notation.html|1953|notation|166
+ ActionScript|../languages/actionscript.html|1998|pl|167
  Agda|../languages/agda.html|2007|pl|168
  Befunge|../languages/befunge.html|1993|esolang|169
  SPARC|../languages/sparc.html|1987|isa|170
@@ -184,12 +184,12 @@ pipeTable
  Squirrel|../languages/squirrel.html|2003|pl|173
  Factor|../languages/factor.html|2003|pl|174
  PL/I|../languages/pl-i.html|1964|pl|175
- V|../languages/v.html|2019|pl|176
- Ceylon|../languages/ceylon.html|2011|pl|177
- ClojureScript|../languages/clojurescript.html|2011|pl|178
- Processing|../languages/processing.html|2001|pl|179
- Makefile|../languages/makefile.html|1976|pl|180
- Nemerle|../languages/nemerle.html|2003|pl|181
+ Ceylon|../languages/ceylon.html|2011|pl|176
+ V|../languages/v.html|2019|pl|177
+ Processing|../languages/processing.html|2001|pl|178
+ Makefile|../languages/makefile.html|1976|pl|179
+ Nemerle|../languages/nemerle.html|2003|pl|180
+ ClojureScript|../languages/clojurescript.html|2011|pl|181
  MoonScript|../languages/moonscript.html|2011|pl|182
  Algol|../languages/algol.html|1958|pl|183
  Wolfram Language|../languages/wolfram.html|1988|pl|184
@@ -221,11 +221,11 @@ pipeTable
  Lasso|../languages/lasso.html|1995|pl|210
  PostCSS|../languages/postcss.html|2013|textMarkup|211
  Maxima|../languages/maxima.html|1982|pl|212
- FLUX|../languages/flux.html|2014|pl|213
- Bison|../languages/bison.html|1985|grammarLanguage|214
- xBase|../languages/xbase.html|1986|pl|215
- Seed7|../languages/seed7.html|2005|pl|216
- Batchfile|../languages/batch.html|1985|pl|217
+ Bison|../languages/bison.html|1985|grammarLanguage|213
+ xBase|../languages/xbase.html|1986|pl|214
+ Seed7|../languages/seed7.html|2005|pl|215
+ Batchfile|../languages/batch.html|1985|pl|216
+ FLUX|../languages/flux.html|2014|pl|217
  grep|../languages/grep.html|1974|pl|218
  PicoLisp|../languages/picolisp.html|1988|pl|219
  SETL|../languages/setl.html|1969|pl|220
@@ -257,5 +257,5 @@ pipeTable
  PureBasic|../languages/purebasic.html|1998|pl|246
  Puppet|../languages/puppet.html|2005|pl|247
  M4|../languages/m4.html|1977|pl|248
- Slim|../languages/slim-lang.html|2011|template|249
- Terra|../languages/terra.html|2012|pl|250
+ Terra|../languages/terra.html|2012|pl|249
+ Ninja|../languages/ninja.html|2012|template|250

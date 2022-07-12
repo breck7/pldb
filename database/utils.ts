@@ -124,7 +124,7 @@ const isLanguage = type => {
     cloud: true,
     editor: true,
     filesystem: true,
-    pattern: true,
+    feature: true,
     packageManager: true,
     os: true,
     application: true,

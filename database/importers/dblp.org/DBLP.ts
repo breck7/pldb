@@ -92,7 +92,7 @@ class DBLPImporter {
     const sorted = lodash.sortBy(files, file => file.rank)
 
     sorted.reverse()
-    return sorted.map(file => new DBLPFile(file)) // todo: do patterns as well
+    return sorted.map(file => new DBLPFile(file)) // todo: do features as well
   }
 
   async fetchAllCommand() {
