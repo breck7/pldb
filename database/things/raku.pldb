@@ -31,9 +31,9 @@ example
   .say for '50TB.file.txt'.IO.words;
 
 features
- hasRefinementTypes? true
+ hasRefinementTypes true
   subset Color of Any where Color | CMYK_Color;
- hasFunctionComposition? true
+ hasFunctionComposition true
   my &foo = &f ∘ &g;
 
 wikipedia https://en.wikipedia.org/wiki/Raku_(programming_language)

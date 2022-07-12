@@ -3,11 +3,11 @@ appeared 1983
 type compiler
 
 features
- hasComments? true
+ hasComments true
   { within pairs of braces }
   (* left parenthesis/asterisk and asterisk/right parenthesis pairs *)
   // preceded by two forward slashes
- hasDirectives? true
+ hasDirectives true
   // In Turbo Pascal, directives are called significant comments, because in the language grammar they follow the same syntax as comments.
   // In Turbo Pascal, a significant comment is a comment whose first character is a dollar sign and whose second character is a letter;
   // for example, the equivalent of C's #include "file" directive is the significant comment:

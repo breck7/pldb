@@ -24,7 +24,7 @@ example
   :db/cardinality :db.cardinality/many}    ; People can have many friends.
 appeared 2016
 features
- hasLineComments? true
+ hasLineComments true
   ; A comment
 website https://mentat.rs/
 creators Richard Newman

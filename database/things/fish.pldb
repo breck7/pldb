@@ -4,8 +4,8 @@ type pl
 standsFor friendly interactive shell
 
 features
- hasComments? true
- hasLineComments? true
+ hasComments true
+ hasLineComments true
   # A comment
 
 lineCommentKeyword #

@@ -3,15 +3,15 @@ appeared 1990
 type pl
 
 features
- hasStrings? true
+ hasStrings true
   "hello world"
- hasRunTimeGuards? true
+ hasRunTimeGuards true
   f x
    | x > 0 = 1
    | otherwise = 0
- hasTypedHoles? true
+ hasTypedHoles true
   -- Found hole `_' with type f (Free f b)
- hasMonads? true
+ hasMonads true
   -- https://stackoverflow.com/questions/44965/what-is-a-monad
   parseExpr = parseString <|> parseNumber
   
@@ -24,41 +24,41 @@ features
   parseNumber = do
       num <- many1 digit
       return (NumberValue (read num))
- hasMapFunctions? true
+ hasMapFunctions true
   class Functor f where
      fmap :: (a -> b) -> f a -> f b
      (<$) :: a -> f b -> f a
- hasComments? true
+ hasComments true
    -- a single line comment
    {- A multiline comment
       which can continue for many lines
    -}
- hasMultiLineComments? true
- hasZippers? true
+ hasMultiLineComments true
+ hasZippers true
   -- https://wiki.haskell.org/Zipper_monad/TravelTree
- hasPatternMatching? true
+ hasPatternMatching true
   fib 0 = 1
   fib 1 = 1
   fib n | n >= 2
         = fib (n-1) + fib (n-2)
- hasGarbageCollection? true
- hasDirectives? true
+ hasGarbageCollection true
+ hasDirectives true
   {-# INLINE foo #-}
- hasImports? true
+ hasImports true
   import Data.Maybe
   import Mod as Foo
   import Mod (x,y, (+++))
   import qualified Mod
   import Mod hiding (x,y,(+++))
   import qualified Mod hiding (x,y)
- hasOperatorOverloading? true
- hasSemanticIndentation? true
- hasTypeInference? true
- hasLineComments? true
+ hasOperatorOverloading true
+ hasSemanticIndentation true
+ hasTypeInference true
+ hasLineComments true
   -- A comment
- hasFunctionComposition? true
+ hasFunctionComposition true
   foo = f . g
- hasRangeOperators? true
+ hasRangeOperators true
 
 wikipedia https://en.wikipedia.org/wiki/Haskell_(programming_language)
  example

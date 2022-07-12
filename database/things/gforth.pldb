@@ -3,9 +3,9 @@ appeared 1992
 type pl
 
 features
- hasCaseInsensitiveIdentifiers? true
- hasPostfixNotation? true
- isCaseSensitive? false
+ hasCaseInsensitiveIdentifiers true
+ hasPostfixNotation true
+ isCaseSensitive false
 
 wikipedia https://en.wikipedia.org/wiki/Gforth
  summary Gforth is a free and portable implementation of the Forth programming language for Unix-like systems, Microsoft Windows, and other operating systems. A primary goal of Gforth is to adhere to the ANS Forth standard. Gforth is free software as part of the GNU Project.

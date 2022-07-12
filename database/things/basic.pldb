@@ -4,15 +4,15 @@ type pl
 creators John G. Kemeny and Thomas E. Kurtz
 
 features
- hasComments? true
+ hasComments true
   REM This BASIC program shows the use of the PRINT and GOTO Statements.
- hasGotos? true
+ hasGotos true
   10 REM This BASIC program shows the use of the PRINT and GOTO Statements.
   15 REM It fills the screen with the phrase "HELLO"
   20 PRINT "HELLO"
   30 GOTO 20
- hasOperatorOverloading? false
- hasLineComments? true
+ hasOperatorOverloading false
+ hasLineComments true
   REM A comment
 
 description BASIC (Beginner's All-purpose Symbolic Instruction Code)[1] is a family of general-purpose, high-level programming languages whose design philosophy emphasizes ease of use. In 1964, John G. Kemeny and Thomas E. Kurtz designed the original BASIC language at Dartmouth College. They wanted to enable students in fields other than science and mathematics to use computers. At the time, nearly all use of computers required writing custom software, which was something only scientists and mathematicians tended to learn.

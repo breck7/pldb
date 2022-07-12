@@ -4,22 +4,22 @@ type pl
 creators Matthias Felleisen
 
 features
- hasStrings? true
+ hasStrings true
   "hello world"
- isLisp? true
- hasSymbolTables? true
+ isLisp true
+ hasSymbolTables true
   ;; Some programming languages allow the symbol table to be manipulated at run-time, so that symbols can be added at any time.
- hasComments? true
- hasImports? true
+ hasComments true
+ hasImports true
   (require (prefix-in tcp: racket/tcp))
- hasMacros? true
+ hasMacros true
   https://docs.racket-lang.org/guide/macros.html
- hasMixins? true
+ hasMixins true
   (mixin (interface-expr ...) (interface-expr ...)
    class-clause ...)
- hasPrefixNotation? true
+ hasPrefixNotation true
   (+ 1 2 3)
- hasModules? true
+ hasModules true
   (module nest racket
      (provide (for-syntax meta-eggs)
               (for-meta 1 meta-chicks)
@@ -27,9 +27,9 @@ features
      (define-for-syntax meta-eggs 2)
      (define-for-syntax meta-chicks 3)
      (define num-eggs 2))
- hasLineComments? true
+ hasLineComments true
   ; A comment
- hasHomoiconicity? true
+ hasHomoiconicity true
 
 wikipedia https://en.wikipedia.org/wiki/Racket_(programming_language)
  example

@@ -24,7 +24,7 @@ multiLineCommentKeywords /* */
 lineCommentKeyword //
 creators Dave Cunningham
 features
- hasLineComments? true
+ hasLineComments true
   // A comment
- hasMultiLineComments? true
+ hasMultiLineComments true
   /* A comment */

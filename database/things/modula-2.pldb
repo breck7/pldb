@@ -4,8 +4,8 @@ type pl
 creators Niklaus Wirth
 
 features
- hasComments? true
- hasOperatorOverloading? false
+ hasComments true
+ hasOperatorOverloading false
 
 wikipedia https://en.wikipedia.org/wiki/Modula-2
  example

@@ -6,7 +6,7 @@ example
  def foo(a:String, b:int)
 
 features
- hasComments? true
+ hasComments true
 
 wikipedia https://en.wikipedia.org/wiki/Mirah_(programming_language)
  example

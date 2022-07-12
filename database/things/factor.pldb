@@ -3,9 +3,9 @@ appeared 2003
 type pl
 
 features
- hasComments? true
- hasGarbageCollection? true
- hasMacros? true
+ hasComments true
+ hasGarbageCollection true
+ hasMacros true
 
 wikipedia https://en.wikipedia.org/wiki/Factor_(programming_language)
  example

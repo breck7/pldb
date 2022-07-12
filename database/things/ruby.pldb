@@ -4,14 +4,14 @@ type pl
 creators Yukihiro Matsumoto
 
 features
- hasDependentTypes? false
- hasDisposeBlocks? false
- hasStrings? true
+ hasDependentTypes false
+ hasDisposeBlocks false
+ hasStrings true
   "hello world"
- hasRegularExpressionsSyntaxSugar? true
+ hasRegularExpressionsSyntaxSugar true
   puts "Hello World".match(/\w/)
- hasDuckTyping? true
- hasExceptions? true
+ hasDuckTyping true
+ hasExceptions true
   def hello
    puts "Hello, World!"
      # start an exception handler
@@ -22,14 +22,14 @@ features
      end
    end
   hello
- hasFunctionOverloading? false
- hasAsyncAwait? false
- hasConstants? true
+ hasFunctionOverloading false
+ hasAsyncAwait false
+ hasConstants true
   # Constants in Ruby being with a capital letter. Will throw a warning or error, depending on runtime settings.
   Name = "John"  
   # Not a constant
   name = "John"
- hasClasses? true
+ hasClasses true
   # A tiny Person class in Ruby:
   class Person
     attr_accessor :name, :age, :   # getter and setter methods
@@ -47,15 +47,15 @@ features
   # Change the age of the person:
   person.age = 35
   puts person.age
- hasComments? true
+ hasComments true
   # This is a single line comment.
- hasMultiLineComments? true
+ hasMultiLineComments true
   =begin
   This is a multiline comment and con spwan as many lines as you
   like. But =begin and =end should come in the first line only.
   =end
- hasGarbageCollection? true
- hasGenerators? true
+ hasGarbageCollection true
+ hasGenerators true
   # Generator from an Enumerator object
   chars = Enumerator.new(['A', 'B', 'C', 'Z'])
   
@@ -68,18 +68,18 @@ features
   end
   
   100.times { puts count.next }
- hasHereDocs? true
- hasDirectives? true
+ hasHereDocs true
+ hasDirectives true
   coding: UTF-8
- hasImports? true
+ hasImports true
   load 'filename.rb'
   require 'filename'
   require 'trig.rb'
- hasIterators? true
+ hasIterators true
   (0...42).each do |n|
     puts n
   end
- hasMixins? true
+ hasMixins true
   module A
      def a1
      end
@@ -102,13 +102,13 @@ features
   samp.a1
   samp.a2
   samp.b1
- hasMultilineStrings? true
- hasOperatorOverloading? true
- hasPrintStatements? true
+ hasMultilineStrings true
+ hasOperatorOverloading true
+ hasPrintStatements true
   puts "Hi"
- hasLineComments? true
+ hasLineComments true
   # A comment
- hasRangeOperators? true
+ hasRangeOperators true
   (3...6)
 
 wikipedia https://en.wikipedia.org/wiki/Ruby_(programming_language)

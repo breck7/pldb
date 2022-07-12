@@ -4,13 +4,13 @@ type pl
 creators Anders Hejlsberg
 
 features
- hasStaticMethods? true
+ hasStaticMethods true
   class Person {
     static sayHi() {
       console.log("Hello world")
     }
   }
- hasAccessModifiers? true
+ hasAccessModifiers true
   class Person {
     private _age = 2
     public get age() {
@@ -18,37 +18,37 @@ features
     }
     protected year = 1990
   }
- hasAbstractTypes? true
+ hasAbstractTypes true
   abstract class Animal {}
   class Dog extends Animal
- hasGenerics? true
+ hasGenerics true
   function identity<T>(arg: T): T {
      return arg;
   }
- hasBooleans? true
+ hasBooleans true
   const result = true
- hasClasses? true
+ hasClasses true
   class Person {}
- hasExplicitTypeCasting? true
+ hasExplicitTypeCasting true
   <number>something;
- hasImports? true
+ hasImports true
   import { ZipCodeValidator } from "./ZipCodeValidator";
   /// <reference path="../typings/jquery.d.ts"/>
   /// <reference path="components/someclass.ts"/>
   import moo = module('moo');
   /// <amd-dependency path="legacy/moduleA" name="moduleA"/>
- hasInterfaces? true
+ hasInterfaces true
   // https://www.typescriptlang.org/docs/handbook/interfaces.html
   interface SquareConfig {
      color?: string;
      width?: number;
   }
- hasMixins? true
+ hasMixins true
   // https://www.typescriptlang.org/docs/handbook/mixins.html
   class SmartObject implements Disposable, Activatable {
   }
   // Note: still need to do some runtime ops to make that work.
- hasNamespaces? true
+ hasNamespaces true
   // Typescript even supports splitting namespaces across multiple files:
   // Validation.ts
   namespace Validation {
@@ -66,27 +66,27 @@ features
           }
       }
   }
- hasOperatorOverloading? false
- hasPrintStatements? true
+ hasOperatorOverloading false
+ hasPrintStatements true
   console.log("Hi")
- hasInheritance? true
+ hasInheritance true
   class B {}
   class A extends B {}
- hasStaticTyping? true
- hasTypeParameters? true
+ hasStaticTyping true
+ hasTypeParameters true
   function identity<T>(arg: T): T {
      return arg;
   }
- hasStrings? true
+ hasStrings true
   "hello world"
- hasTypeInference? true
- hasSingleTypeArrays? true
+ hasTypeInference true
+ hasSingleTypeArrays true
   const scores: int[]
- hasUnionTypes? true
+ hasUnionTypes true
   declare type numOrString = string | number
- hasLineComments? true
+ hasLineComments true
   // A comment
- hasAlgebraicTypes? true
+ hasAlgebraicTypes true
   declare type numOrString = string | number
 
 wikipedia https://en.wikipedia.org/wiki/TypeScript

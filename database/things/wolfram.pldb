@@ -8,9 +8,9 @@ subreddit wolframlanguage
   2022 610
 
 features
- hasComments? true
+ hasComments true
   (* A comment *)
- hasLineComments? false
+ hasLineComments false
 
 wikipedia https://en.wikipedia.org/wiki/Wolfram_Language
  related mathematica-editor apl c lisp pascal prolog simula smalltalk julia mathematica unity-engine

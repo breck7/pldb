@@ -4,11 +4,11 @@ type pl
 creators Kenneth E. Iverson
 
 features
- hasComments? true
- hasGarbageCollection? true
- hasLineComments? true
+ hasComments true
+ hasGarbageCollection true
+ hasLineComments true
   ⍝ A comment
- hasFunctionComposition? true
+ hasFunctionComposition true
   foo←f∘g
 
 wikipedia https://en.wikipedia.org/wiki/APL_(programming_language)

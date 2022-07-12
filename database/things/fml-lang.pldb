@@ -41,22 +41,22 @@ example
  ###
 
 features
- hasComments? true
+ hasComments true
   # This is a line comment
   
   ###
   This is a block comment
   ###
- hasDirectives? true
+ hasDirectives true
   # Directives are special lines that have syntax and semantics of their own. Directives all start with a name of the form .foo; new directives may be added by future versions of the language.
   .import math.constants
   area = x * math.constants.Pi, ^ 2
   .from math.constants import Pi, E
   area = x sq, * Pi
   polar = a * [E ^ [b * 0+j1]]
- hasLineComments? true
+ hasLineComments true
   # A comment
- hasMultiLineComments? true
+ hasMultiLineComments true
   ### A comment ###
 
 description fml is an optimizing, function-oriented, array programming language. Unlike other array programming languages, it aims to have a less symbol-heavy but still concise syntax, and non-strict semantics that allow for high-level optimization. Note that fml is not: meant for serious use always faster than systems languages like C/C++/etc. always more expressive than general-purpose languages like Python, Javascript, etc. suitable for cryptography, real-time, or low-level applications that require fine control of time and space complexity

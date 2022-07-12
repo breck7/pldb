@@ -6,8 +6,8 @@ creators Arthur Whitney
 description K is like APL, but K restricts itself to the ASCII character set.
 
 features
- hasComments? true
- hasLineComments? true
+ hasComments true
+ hasLineComments true
   / A comment
 
 wikipedia https://en.wikipedia.org/wiki/K_(programming_language)

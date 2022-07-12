@@ -58,7 +58,7 @@ example
  until ave_getmessage = 'Q'
 
 features
- hasSemanticIndentation? true
+ hasSemanticIndentation true
   define pythtree ax:real ay:real bx:real by:real depth:int do
      cx = ax-ay+by
    end

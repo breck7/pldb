@@ -4,9 +4,9 @@ type pl
 creators Rob Pike and Ken Thompson and Robert Griesemer
 
 features
- hasStrings? true
+ hasStrings true
   "hello world"
- hasPointers? true
+ hasPointers true
   package main
   
   import "fmt"
@@ -24,9 +24,9 @@ features
     fmt.Println(j) // see the new value of j
   }
   
- hasComments? true
+ hasComments true
   // This is a comment
- hasImports? true
+ hasImports true
   import (
      "fmt"
      "math"
@@ -35,10 +35,10 @@ features
   import _ "io"
   import log "github.com/foo/bar"
   import m "math"
- hasOperatorOverloading? false
- hasSemanticIndentation? false
- hasTypeInference? true
- hasVariadicFunctions? true
+ hasOperatorOverloading false
+ hasSemanticIndentation false
+ hasTypeInference true
+ hasVariadicFunctions true
   // This variadic function takes an arbitrary number of ints as arguments.
   func sum(nums ...int) {
     fmt.Print("The sum of ", nums) // Also a variadic function.
@@ -48,10 +48,10 @@ features
     }
     fmt.Println(" is", total) // Also a variadic function.
   }
- hasIncrementAndDecrementOperators? true
- hasLineComments? true
+ hasIncrementAndDecrementOperators true
+ hasLineComments true
   // A comment
- hasMessagePassing? true
+ hasMessagePassing true
 
 wikipedia https://en.wikipedia.org/wiki/Go_(programming_language)
  example

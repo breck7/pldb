@@ -3,9 +3,9 @@ appeared 1977
 type pl
 
 features
- canDoShebang? true
+ canDoShebang true
   #!/bin/sh -x
- hasHereDocs? true
+ hasHereDocs true
 
 wikipedia https://en.wikipedia.org/wiki/Bourne_shell
  related unix algol-68 c almquist-shell bash rc linux

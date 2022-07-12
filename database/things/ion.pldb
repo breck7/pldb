@@ -3,21 +3,21 @@ appeared 2016
 type idl
 
 features
- hasBooleans? true
+ hasBooleans true
   null.bool
   true
   false
- hasComments? true
- hasStructs? true
+ hasComments true
+ hasStructs true
   { first : "Tom" , last: "Riddle" }  // Structure with two fields
   {"first":"Tom","last":"Riddle"}     // The same value with confusing style
   {center:{x:1.0, y:12.5}, radius:3}  // Nested struct
- hasFloats? true
+ hasFloats true
   // http://amzn.github.io/ion-docs/docs/spec.html
   -0.12e4           // Type is float
- hasIdentifiers? true
+ hasIdentifiers true
   // A subset of symbols called identifiers can be denoted in text without single-quotes. 
- hasIntegers? true
+ hasIntegers true
   // http://amzn.github.io/ion-docs/docs/spec.html
   null.int   // A null int value
   0          // Zero.  Surprise!
@@ -29,7 +29,7 @@ features
   1_2_3      // An int with underscores
   0xFA_CE    // An int denoted in hexadecimal with underscores
   0b10_10_10 // An int denoted in binary with underscores
- hasMultilineStrings? true
+ hasMultilineStrings true
   ( '''hello '''     // Sexp with one element
     '''world!'''  )
   
@@ -42,33 +42,33 @@ features
   This is the second line of the string,
   and this is the third line.
   '''
- hasNull? true
+ hasNull true
   null
- hasStrings? true
+ hasStrings true
   "hello world"
- hasBlobs? true
+ hasBlobs true
   // In the text format, blob values are denoted as RFC 4648-compliant Base64 text within two pairs of curly braces.
   // A valid blob value with one required padding character.
   {{ VG8gaW5maW5pdHkuLi4gYW5kIGJleW9uZCE= }}
- hasClobs? true
+ hasClobs true
   // The clob type is similar to blob in that it holds uninterpreted binary data. The difference is that the content is expected to be text, so we use a text notation that’s more readable than Base64.
   // An Ion clob type is similar to the blob type except that the denotation in the Ion text format uses an ASCII-based string notation rather than a base64 encoding to denote its binary value. It is important to make the distinction that clob is a sequence of raw octets and string is a sequence of Unicode code points.
   // The string may only contain legal 7-bit ASCII character
- hasTimestamps? true
+ hasTimestamps true
   // Timestamps represent a specific moment in time, always include a local offset, and are capable of arbitrary precision.
   2007-02-23T12:14Z                // Seconds are optional, but local offset is not
   2007-01-01T00:00-00:00           // Happy New Year in UTC, unknown local offset
- hasDecimals? true
+ hasDecimals true
   null.decimal      // A null decimal value
   0.123             // Type is decimal
   -0.12d4           // Type is decimal
   123_456.789_012   // Decimal with underscores
   -0d-1             // Decimal maintains precision: -0. != -0.0
   -0d0              // Negative zero decimal (distinct from positive zero)
- hasSymbols? true
+ hasSymbols true
   myvar2       // A different symbol
   'hi ho'      // Symbol requiring quotes
- hasTypeAnnotations? true
+ hasTypeAnnotations true
   int32::12                                // Suggests 32 bits as end-user type
   'my.custom.type' :: { x : 12 , y : -1 }  // Gives a struct a user-defined type
   
@@ -78,7 +78,7 @@ features
   bool :: null.int                         // A very misleading annotation on the integer null
   '' :: 1                                  // An empty annotation
   null.symbol :: 1                         // ERROR: type annotation cannot be null 
- hasLists? true
+ hasLists true
   null.list         // A null list value
   []                // An empty list value
   [1, 2, 3]         // List of three ints
@@ -86,7 +86,7 @@ features
   [a , [b]]         // Nested list
   [ 1.2, ]          // Trailing comma is legal in Ion (unlike JSON)
   [ 1, , 2 ]        // ERROR: missing element between commas
- hasSExpressions? true
+ hasSExpressions true
   null.sexp         // A null S-expression value
   ()                // An empty expression value
   (cons 1 2)        // S-expression of three values

@@ -12,21 +12,21 @@ example
  main = log (greet "World")
 
 features
- hasComments? true
- hasDocComments? true
+ hasComments true
+ hasDocComments true
   -- https://github.com/purescript/documentation/blob/master/language/Syntax.md
   -- | `bool` performs case analysis for the `Boolean` data type, like an `if` statement.
   bool :: forall a. Boolean -> a -> a -> a
   bool true x _ = x
   bool false _ x = x
- hasSemanticIndentation? true
+ hasSemanticIndentation true
   -- https://github.com/purescript/documentation/blob/master/language/Syntax.md
   -- Syntax is whitespace sensitive. The general rule of thumb is that declarations which span multiple lines should be indented past the column on which they were first defined on their subsequent lines.
   foo = bar +
    baz
- hasLineComments? true
+ hasLineComments true
   -- A comment
- hasMultiLineComments? true
+ hasMultiLineComments true
   {- A comment -}
 
 githubLanguage PureScript

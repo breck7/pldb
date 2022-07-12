@@ -4,12 +4,12 @@ type pl
 creators Dennis Ritchie
 
 features
- hasRegularExpressionsSyntaxSugar? false
- hasPointers? true
+ hasRegularExpressionsSyntaxSugar false
+ hasPointers true
   int *ptr;
- hasStrings? true
+ hasStrings true
   "hello world"
- hasAssertStatements? true
+ hasAssertStatements true
   #include <assert.h>
   int i, a[10];
   for (i = 0; i < 10; ++i)
@@ -23,10 +23,10 @@ features
     assert(0 <= a[i] && a[i] < 10);
     a[a[i]] = a[i];
     }
- hasBitWiseOperators? true
+ hasBitWiseOperators true
   int i = 4; /* bit pattern equivalent is binary 100 */
   int j = i << 2; /* makes it binary 10000, which multiplies the original number by 4 i.e. 16 */
- hasSymbolTables? true
+ hasSymbolTables true
   // Declare an external function
   extern double bar(double x);
   
@@ -48,18 +48,18 @@ features
   // count|int|function parameter
   // sum|double|block local
   // i|int|for-loop statement
- hasComments? true
+ hasComments true
   /* hello world */
   // hi
- hasStructs? true
+ hasStructs true
   struct account {
     int account_number;
     char *first_name;
     char *last_name;
     float balance;
   };
- hasGarbageCollection? false
- hasGotos? true
+ hasGarbageCollection false
+ hasGotos true
   // C/C++ program to check if a number is 
   // even or not using goto statement 
   #include <iostream> 
@@ -87,7 +87,7 @@ features
       checkEvenOrNot(num); 
       return 0; 
   }
- hasDirectives? true
+ hasDirectives true
   #include <stdio.h>
   #define height 10
   #ifdef
@@ -97,20 +97,20 @@ features
   #ifndef
   #undef
   #pragma
- hasExplicitTypeCasting? true
+ hasExplicitTypeCasting true
   double da = 3.3;
   double db = 3.3;
   double dc = 3.4;
   int result = (int)da + (int)db + (int)dc; //result == 9
- hasImports? true
+ hasImports true
   //  If a header file is included within <>, the preprocessor will search a predetermined directory path to locate the header file. If the header file is enclosed in "", the preprocessor will look for the header file in the same directory as the source file.
   #include <stdio.h>
   #include "stdio.h"
- hasIntegers? true
+ hasIntegers true
   int c = 10;
- hasMacros? true
+ hasMacros true
   https://gcc.gnu.org/onlinedocs/cpp/Macro-Arguments.html
- hasManualMemoryManagement? true
+ hasManualMemoryManagement true
   #include <stdio.h>
   #include <stdlib.h>
   int main(void)
@@ -118,17 +118,17 @@ features
     int *poin = malloc(4);
     free(poin);
   }
- hasOperatorOverloading? false
- hasVariadicFunctions? true
+ hasOperatorOverloading false
+ hasVariadicFunctions true
   double average(int count, ...)
   {
    //
   }
- hasZeroBasedNumbering? true
- hasIncrementAndDecrementOperators? true
- hasLineComments? true
+ hasZeroBasedNumbering true
+ hasIncrementAndDecrementOperators true
+ hasLineComments true
   // A comment
- hasMultiLineComments? true
+ hasMultiLineComments true
   /* A comment */
 
 wikipedia https://en.wikipedia.org/wiki/C_(programming_language)

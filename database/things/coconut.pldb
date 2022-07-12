@@ -3,18 +3,18 @@ appeared 2014
 type pl
 
 features
- hasPatternMatching? true
+ hasPatternMatching true
   match [head] + tail in [0, 1, 2, 3]:
      print(head, tail)
- hasInfixNotation? true
+ hasInfixNotation true
   5 `mod` 3 == 2
- hasAnonymousFunctions? true
+ hasAnonymousFunctions true
   x -> x ** 2
- hasDestructuring? true
+ hasDestructuring true
   {"list": [0] + rest} = {"list": [0, 1, 2, 3]}
- hasFunctionComposition? true
+ hasFunctionComposition true
   (f..g..h)(x, y, z)
- hasAlgebraicTypes? true
+ hasAlgebraicTypes true
   data Empty()
   data Leaf(n)
   data Node(l, r)

@@ -4,22 +4,22 @@ type pl
 creators Xavier Leroy
 
 features
- hasLineComments? false
- hasComments? true
+ hasLineComments false
+ hasComments true
   (* This is a single-line comment. *)
   (* This is a
    * multi-line
    * comment.
    *)
- hasMultipleInheritance? true
- hasTypeInference? true
- hasModules? true
+ hasMultipleInheritance true
+ hasTypeInference true
+ hasModules true
   (* In OCaml, every piece of code is wrapped into a module. *)
   (* amodule.ml *)
   let hello () = print_endline "Hello"
   (* bmodule.ml *)
   Amodule.hello ()
- hasMultiLineComments? true
+ hasMultiLineComments true
   (* A comment *)
 
 wikipedia https://en.wikipedia.org/wiki/OCaml

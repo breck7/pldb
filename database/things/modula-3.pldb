@@ -3,8 +3,8 @@ appeared 1986
 type pl
 
 features
- hasComments? true
- hasLineComments? false
+ hasComments true
+ hasLineComments false
 
 wikipedia https://en.wikipedia.org/wiki/Modula-3
  example

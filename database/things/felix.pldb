@@ -13,20 +13,20 @@ example
  print (abs_div(2,4)); print "\n";
 
 features
- hasPointers? true
+ hasPointers true
   var x = 1;
   &x <- 2;
- hasGenerics? true
+ hasGenerics true
   // generics
   fun g (x) => f (f x);
   println$ g 1, g "hello";
   println$ _map f (1,"hello",2.0);
- hasPolymorphism? true
+ hasPolymorphism true
   // overloads
   fun f (x:double) => x +42.1;
   fun f (x:int) =>  x + 1;
   fun f (x:string) => x + "!";
- hasPatternMatching? true
+ hasPatternMatching true
   match x with
    | Some x => println$ x; 
    | None => println "NONE";

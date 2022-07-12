@@ -4,8 +4,8 @@ type pl
 creators William Gould
 
 features
- hasComments? true
- hasLineComments? true
+ hasComments true
+ hasLineComments true
   // A comment
 
 wikipedia https://en.wikipedia.org/wiki/Stata

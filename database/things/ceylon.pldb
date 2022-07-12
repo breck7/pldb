@@ -4,9 +4,9 @@ type pl
 creators Gavin King
 
 features
- hasOperatorOverloading? true
- hasStaticTyping? true
- hasTypeInference? true
+ hasOperatorOverloading true
+ hasStaticTyping true
+ hasTypeInference true
 
 wikipedia https://en.wikipedia.org/wiki/Ceylon_(programming_language)
  example

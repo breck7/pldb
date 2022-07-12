@@ -4,19 +4,19 @@ type pl
 creators Anders Hejlsberg
 
 features
- hasStrings? true
+ hasStrings true
   "hello world"
- hasAsyncAwait? true
+ hasAsyncAwait true
   public async Task<int> FindPageSize(Uri uri) 
   {
       byte[] data = await new WebClient().DownloadDataTaskAsync(uri);
       return data.Length;
   }
- hasPointers? true
+ hasPointers true
   // Pointers supported only under certain conditions.
   // Get 16 bytes of memory from the process's unmanaged memory
   IntPtr pointer = System.Runtime.InteropServices.Marshal.AllocHGlobal(16);
- hasGenerics? true
+ hasGenerics true
   // Declare the generic class.
   public class GenericList<T>
   {
@@ -40,7 +40,7 @@ features
           list3.Add(new ExampleClass());
       }
   }
- hasConstructors? true
+ hasConstructors true
   public class MyClass
   {
       private int a;
@@ -61,7 +61,7 @@ features
   // Code somewhere
   // Instantiating an object with the constructor above
   MyClass c = new MyClass(42, "string");
- hasGenerators? true
+ hasGenerators true
   // Method that takes an iterable input (possibly an array)
   // and returns all even numbers.
   public static IEnumerable<int> GetEven(IEnumerable<int> numbers) {
@@ -71,7 +71,7 @@ features
           }
       }
   }
- hasDirectives? true
+ hasDirectives true
   #define MAX_CLIENTS 200
   int array[MAX_CLIENTS];
   
@@ -82,7 +82,7 @@ features
   #else
   //code
   #endif
- hasExplicitTypeCasting? true
+ hasExplicitTypeCasting true
   Animal animal = new Cat();
   
   Bulldog b = (Bulldog) animal;   // if (animal is Bulldog), stat.type(animal) is Bulldog, else an exception
@@ -90,7 +90,7 @@ features
   
   animal = null;
   b = animal as Bulldog;          // b == null
- hasImports? true
+ hasImports true
   using static System.Console;
   using static System.Math;
   class Program
@@ -100,7 +100,7 @@ features
           WriteLine(Sqrt(3*3 + 4*4));
       }
   }
- hasNamespaces? true
+ hasNamespaces true
   namespace MyNamespace
   {
       class MyClass
@@ -111,24 +111,24 @@ features
       }
     }
   }
- hasOperatorOverloading? true
- hasModules? true
+ hasOperatorOverloading true
+ hasModules true
   // In C#, namespaces are the semi-equivalent of Java's packages.
   namespace com.test
   {
      class Test {}
   }
- hasDisposeBlocks? true
+ hasDisposeBlocks true
   using (Resource resource = GetResource())
   {
      // Perform actions with the resource.
      ...
   }
- hasLineComments? true
+ hasLineComments true
   // A comment
- hasDefaultParameters? true
+ hasDefaultParameters true
   public void ExampleMethod(string optionalstr = "default string") {}
- hasFunctionComposition? true
+ hasFunctionComposition true
   // Call example:
   //   var c = Compose(f, g);
   //

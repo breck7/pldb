@@ -7,8 +7,8 @@ http://pointillistic.com/ren/
 fileExtensions ren
 lineCommentKeyword ;
 features
- hasComments? true
- hasLineComments? true
+ hasComments true
+ hasLineComments true
   ; A comment
 example
  []			; empty list

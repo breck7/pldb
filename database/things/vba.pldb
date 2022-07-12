@@ -3,8 +3,8 @@ appeared 1993
 type pl
 
 features
- hasComments? true
- hasLineComments? true
+ hasComments true
+ hasLineComments true
   ' A comment
 
 wikipedia https://en.wikipedia.org/wiki/Visual_Basic_for_Applications

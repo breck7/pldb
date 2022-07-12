@@ -15,19 +15,19 @@ example
  file = "payroll.dat"
 
 features
- hasComments? true
+ hasComments true
   # a '#' or ';' character indicates
   ; a comment
- hasEscapeCharacters? true
+ hasEscapeCharacters true
   ; \" \\ \n \t \b
   [section "subsection with \"quotes\""]
- hasIdentifiers? true
+ hasIdentifiers true
   [branch "master"]
   remote = origin
   merge = refs/heads/master
- isCaseSensitive? true
+ isCaseSensitive true
   [subsections "areCaseSensitive"]
- hasLineComments? true
+ hasLineComments true
   ; A comment
 
 wikipedia https://en.wikipedia.org/wiki/INI_file

@@ -3,7 +3,7 @@ appeared 1992
 type grammarLanguage
 
 features
- hasLineComments? true
+ hasLineComments true
   // A comment
 
 example

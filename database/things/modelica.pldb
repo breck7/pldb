@@ -3,9 +3,9 @@ appeared 1997
 type pl
 
 features
- hasLineComments? true
+ hasLineComments true
   // A comment
- hasUnitsOfMeasure? true
+ hasUnitsOfMeasure true
   type SpecificHeatCapacity = Real (
     final quantity="SpecificHeatCapacity",
     final unit="J/(kg.K)"

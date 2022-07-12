@@ -3,33 +3,33 @@ appeared 1986
 type pl
 
 features
- hasStrings? true
+ hasStrings true
   "hello world"
- canDoShebang? true
+ canDoShebang true
   #!/usr/bin/env escript
- hasComments? true
+ hasComments true
   % hello world program
- hasMultiLineComments? false
- hasDirectives? true
+ hasMultiLineComments false
+ hasDirectives true
   -define(TIMEOUT, 200).
   ...
   call(Request) ->
      server:call(refserver, Request, ?TIMEOUT).
   -undef(Macro).
- hasImports? true
+ hasImports true
   -include("my_records.hrl").
   -include("incdir/my_records.hrl").
   -include("/home/user/proj/my_records.hrl").
   -include("$PROJ_ROOT/my_records.hrl").
   -include_lib("kernel/include/file.hrl").
- hasExports? true
+ hasExports true
   -export([start/0, codeswitch/1]).
- hasMacros? true
+ hasMacros true
   -define(Const, Replacement).
   -define(Func(Var1,...,VarN), Replacement).
- hasLineComments? true
+ hasLineComments true
   % A comment
- hasMessagePassing? true
+ hasMessagePassing true
 
 wikipedia https://en.wikipedia.org/wiki/Erlang_(programming_language)
  example

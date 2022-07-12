@@ -4,12 +4,12 @@ type pl
 creators Andreas Rumpf
 
 features
- hasComments? true
- hasMacros? true
+ hasComments true
+ hasMacros true
   https://hookrace.net/blog/introduction-to-metaprogramming-in-nim/#macros
- hasSemanticIndentation? true
- hasStaticTyping? true
- hasLineComments? true
+ hasSemanticIndentation true
+ hasStaticTyping true
+ hasLineComments true
   # A comment
 
 compilesTo c cpp objective-c javascript

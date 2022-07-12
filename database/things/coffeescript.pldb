@@ -4,9 +4,9 @@ type pl
 creators Jeremy Ashkenas
 
 features
- hasComments? true
- hasSemanticIndentation? true
- hasLineComments? true
+ hasComments true
+ hasSemanticIndentation true
+ hasLineComments true
   # A comment
 
 wikipedia https://en.wikipedia.org/wiki/CoffeeScript

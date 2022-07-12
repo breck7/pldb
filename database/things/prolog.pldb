@@ -4,9 +4,9 @@ type pl
 creators Alain Colmerauer
 
 features
- hasComments? true
- hasTypeInference? true
- hasLineComments? true
+ hasComments true
+ hasTypeInference true
+ hasLineComments true
   % A comment
 
 wikipedia https://en.wikipedia.org/wiki/Prolog

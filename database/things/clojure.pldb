@@ -4,16 +4,16 @@ type pl
 creators Rich Hickey
 
 features
- isLisp? true
- hasStrings? true
+ isLisp true
+ hasStrings true
   "hello world"
- hasPartialApplication? true
+ hasPartialApplication true
   (defn fun-full [x y] (+ x y))
   (fun-full 2 3)
   (def fun-half (partial fun-full 2))
   (fun-half 3)
- hasComments? true
- hasImports? true
+ hasComments true
+ hasImports true
   (load "fun")
   (load "files/fun")
   (load-file "./files/fun.clj")
@@ -26,12 +26,12 @@ features
   (java.util.Date.)
   (require 'clojure.contrib.def 'clojure.contrib.except 'clojure.contrib.sql)
   (require '(clojure.contrib def except sql))
- hasMacros? true
+ hasMacros true
   https://clojure.org/reference/macros
- hasOperatorOverloading? true
- hasLineComments? true
+ hasOperatorOverloading true
+ hasLineComments true
   ; A comment
- hasHomoiconicity? true
+ hasHomoiconicity true
 
 wikipedia https://en.wikipedia.org/wiki/Clojure
  example

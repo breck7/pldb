@@ -7,11 +7,11 @@ subreddit node
   2022 213404
 
 features
- canWriteToDisk? true
+ canWriteToDisk true
   require("fs").writeFileSync("foo.txt", "foo", "utf8")
- hasImports? true
+ hasImports true
   const jtree = require("jtree")
- hasStreams? true
+ hasStreams true
   const stream = require('stream');
 
 wikipedia https://en.wikipedia.org/wiki/nodejs

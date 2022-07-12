@@ -3,10 +3,10 @@ appeared 2011
 type pl
 
 features
- hasComments? true
+ hasComments true
   # this is a comment
- hasMultiLineComments? false
- hasImports? true
+ hasMultiLineComments false
+ hasImports true
   # Alias the module so it can be called as Bar instead of Foo.Bar
   alias Foo.Bar, as: Bar
   
@@ -18,10 +18,10 @@ features
   
   # Invokes the custom code defined in Foo as an extension point
   use Foo
- hasSemanticIndentation? true
- hasLineComments? true
+ hasSemanticIndentation true
+ hasLineComments true
   # A comment
- hasMessagePassing? true
+ hasMessagePassing true
 
 wikipedia https://en.wikipedia.org/wiki/Elixir_(programming_language)
  example

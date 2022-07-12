@@ -17,8 +17,8 @@ lineCommentKeyword ;;
 creators Olivier Breuleux
 writtenIn earl-grey
 features
- hasSemanticIndentation? true
- hasLineComments? true
+ hasSemanticIndentation true
+ hasLineComments true
   ;; A comment
 example
  ;; Edit me!

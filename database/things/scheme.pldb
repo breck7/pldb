@@ -5,15 +5,15 @@ type pl
 creators Guy Steele and Gerald Jay Sussman
 
 features
- isLisp? true
- hasComments? true
- hasLineComments? true
+ isLisp true
+ hasComments true
+ hasLineComments true
   ; A comment
- hasMacros? true
+ hasMacros true
   https://en.wikibooks.org/wiki/Scheme_Programming/Macros
- hasPrefixNotation? true
+ hasPrefixNotation true
   (+ 1 2 3)
- hasHomoiconicity? true
+ hasHomoiconicity true
 
 wikipedia https://en.wikipedia.org/wiki/Scheme_(programming_language)
  example

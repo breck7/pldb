@@ -4,9 +4,9 @@ type pl
 creators John McCarthy
 
 features
- isLisp? true
- hasGarbageCollection? true
- hasHomoiconicity? true
+ isLisp true
+ hasGarbageCollection true
+ hasHomoiconicity true
 
 wikipedia https://en.wikipedia.org/wiki/Lisp_(programming_language)
  example

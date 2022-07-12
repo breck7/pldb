@@ -4,30 +4,30 @@ type pl
 creators James Gosling
 
 features
- hasAssertStatements? true
+ hasAssertStatements true
   // By default, assertions are disabled
   // java –enableassertions Test
   int score = 10;
   assert score >= 10 : " Below";
   System.out.println("score is "+score);
- hasGenerics? true
+ hasGenerics true
   List<String> v = new ArrayList<String>();
   v.add("test");
   Integer i = v.get(0); // (type error)  compilation-time error
- hasSingleDispatch? true
- hasStrings? true
+ hasSingleDispatch true
+ hasStrings true
   "hello world"
- hasComments? true
- hasConstructors? true
- hasGarbageCollection? true
- hasImports? true
+ hasComments true
+ hasConstructors true
+ hasGarbageCollection true
+ hasImports true
   import javax.swing.*;
   import javax.swing.JOptionPane;
   // use fully qualified name without import:
   javax.swing.JOptionPane.showMessageDialog(null, "Hi");
   // There are 166 packages containing 3279 classes and interfaces in Java 5.
   // import java.io.*; Input-output classes.
- hasInterfaces? true
+ hasInterfaces true
   interface MyInterface{  
      /* This is a default method so we need not
       * to implement this method in the implementation 
@@ -57,7 +57,7 @@ features
     
       }  
   }
- hasIterators? true
+ hasIterators true
   Iterator iter = list.iterator();
   //Iterator<MyType> iter = list.iterator();    in J2SE 5.0
   while (iter.hasNext()) {
@@ -65,10 +65,10 @@ features
       if (iter.hasNext())
           System.out.print(", ");
   }
- hasMacros? false
- hasOperatorOverloading? false
- hasZeroBasedNumbering? true
- hasModules? true
+ hasMacros false
+ hasOperatorOverloading false
+ hasZeroBasedNumbering true
+ hasModules true
   // Package = directory. Java classes can be grouped together in packages. A package name is the same as the directory (folder) name which contains the .java files. You declare packages when you define your Java program, and you name the packages you want to use from other libraries in an import statement.
   // The first statement, other than comments, in a Java source file, must be the package declaration.
   // Following the optional package declaration, you can have import statements, which allow you to specify classes from other packages that can be referenced without qualifying them with their package.
@@ -78,10 +78,10 @@ features
   public class Drawing {
    // ...
   }
- hasIncrementAndDecrementOperators? true
- hasLineComments? true
+ hasIncrementAndDecrementOperators true
+ hasLineComments true
   // A comment
- hasThreads? true
+ hasThreads true
 
 wikipedia https://en.wikipedia.org/wiki/Java_(programming_language)
  example

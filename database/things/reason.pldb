@@ -7,9 +7,9 @@ compilesTo ocaml
 related rust elm purescript fable-lang clojurescript swift haxe
 
 features
- hasLineComments? true
+ hasLineComments true
   // A comment
- hasDestructuring? true
+ hasDestructuring true
   type person = {name: string, age: int};
   let somePerson = {name: "Guy", age: 30};
   let {name, age} = somePerson;

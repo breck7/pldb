@@ -3,23 +3,23 @@ appeared 2012
 type pl
 
 features
- hasStrings? true
+ hasStrings true
   "hello world"
- hasMultipleDispatch? true
+ hasMultipleDispatch true
   collide_with(x::Asteroid, y::Asteroid) = ... # deal with asteroid hitting asteroid
   collide_with(x::Asteroid, y::Spaceship) = ... # deal with asteroid hitting spaceship
   collide_with(x::Spaceship, y::Asteroid) = ... # deal with spaceship hitting asteroid
   collide_with(x::Spaceship, y::Spaceship) = ... # deal with spaceship hitting spaceship
- hasUnicodeIdentifiers? true
+ hasUnicodeIdentifiers true
   δ = 0.00001
- hasComments? true
+ hasComments true
   # This is a comment
- hasMultiLineComments? true
+ hasMultiLineComments true
   #=
   Comment block
   =#
- hasGarbageCollection? true
- hasImports? true
+ hasGarbageCollection true
+ hasImports true
   # Files and file names are mostly unrelated to modules; modules are associated only with module expressions.
   # One can have multiple files per module, and multiple modules per file:
   using MyModule
@@ -31,7 +31,7 @@ features
   include("file1.jl")
   include("file2.jl")
   end
- hasMixins? true
+ hasMixins true
   # Including the same code in different modules provides mixin-like behavior.
   module Normal
   include("mycode.jl")
@@ -41,10 +41,10 @@ features
   include("safe_operators.jl")
   include("mycode.jl")
   end
- hasPipes? true
+ hasPipes true
   [1,2,3] |> (y -> f(3, y))
- hasSemanticIndentation? false
- hasModules? true
+ hasSemanticIndentation false
+ hasModules true
   module MyModule
   using Lib
   
@@ -63,7 +63,7 @@ features
   
   show(io::IO, a::MyType) = print(io, "MyType $(a.x)")
   end
- hasLineComments? true
+ hasLineComments true
   # A comment
 
 wikipedia https://en.wikipedia.org/wiki/Julia_(programming_language)

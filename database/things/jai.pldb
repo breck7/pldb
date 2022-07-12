@@ -7,9 +7,9 @@ subreddit Jai
   2022 1507
 
 features
- hasLineComments? true
+ hasLineComments true
   // A comment
- hasMultiLineComments? true
+ hasMultiLineComments true
   /*
    *  Multiline comment
    */

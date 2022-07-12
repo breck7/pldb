@@ -3,8 +3,8 @@ appeared 1985
 type pl
 
 features
- hasRegularExpressionsSyntaxSugar? false
- hasUnaryOperators? true
+ hasRegularExpressionsSyntaxSugar false
+ hasUnaryOperators true
   int count = 2;
   count++;
   ++count;
@@ -19,7 +19,7 @@ features
   sizeof count;
   sizeof(int);
   (float)count;
- hasPartialApplication? true
+ hasPartialApplication true
   // http://www.cplusplus.com/reference/functional/bind/
   // bind example
   #include <iostream>     // std::cout
@@ -60,12 +60,12 @@ features
   
     return 0;
   }
- mergesWhitespace? true
- hasSingleDispatch? true
- hasBitWiseOperators? true
- hasMagicGettersAndSetters? false
- hasComments? true
- hasConstructors? true
+ mergesWhitespace true
+ hasSingleDispatch true
+ hasBitWiseOperators true
+ hasMagicGettersAndSetters false
+ hasComments true
+ hasConstructors true
   class Foobar {
    public:
     Foobar(double r = 1.0,
@@ -82,12 +82,12 @@ features
   Foobar a,
          b(3),
          c(5, M_PI/4);
- hasConstants? true
+ hasConstants true
   int const one = 1;
- hasGarbageCollection? false
- hasStrings? true
+ hasGarbageCollection false
+ hasStrings true
   "hello world"
- hasGotos? true
+ hasGotos true
   // C/C++ program to check if a number is 
   // even or not using goto statement 
   #include <iostream> 
@@ -115,14 +115,14 @@ features
       checkEvenOrNot(num); 
       return 0; 
   }
- hasDirectives? true
+ hasDirectives true
   // #pragma once is a non-standard but widely supported preprocessor directive designed to cause the current source file to be included only once in a single compilation.
   #pragma once
   struct foo
   {
      int member;
   };
- hasIterators? true
+ hasIterators true
   std::vector<int> items;
   items.push_back(5);  // Append integer value '5' to vector 'items'.
   items.push_back(2);  // Append integer value '2' to vector 'items'.
@@ -131,10 +131,10 @@ features
   for (auto it = items.begin(); it != items.end(); ++it) {  // Iterate through 'items'.
     std::cout << *it;  // And print value of 'items' for current index.
   }
- hasMacros? true
+ hasMacros true
   https://msdn.microsoft.com/en-us/library/503x3e3s.aspx
- hasManualMemoryManagement? true
- hasFunctionOverloading? true
+ hasManualMemoryManagement true
+ hasFunctionOverloading true
   // volume of a cube
   int volume(const int s) {
    return s*s*s;
@@ -143,7 +143,7 @@ features
   double volume(const double r, const int h) {
     return 3.1415926*r*r*static_cast<double>(h);
   }
- hasNamespaces? true
+ hasNamespaces true
   #include <iostream>
   using namespace std;
   
@@ -164,12 +164,12 @@ features
   using ns_name::name;
   namespace name = qualified-namespace ;
   namespace ns_name::inline(since C++20)(optional) name { declarations } 
- hasMultipleInheritance? true
- hasOperatorOverloading? true
- hasReferences? true
- hasPrintStatements? true
+ hasMultipleInheritance true
+ hasOperatorOverloading true
+ hasReferences true
+ hasPrintStatements true
   cout<<"hello world." << std::endl;
- hasTemplates? true
+ hasTemplates true
   template <int length>
   Vector<length>& Vector<length>::operator+=(const Vector<length>& rhs)
   {
@@ -177,9 +177,9 @@ features
           value[i] += rhs.value[i];
       return *this;
   }
- hasLineComments? true
+ hasLineComments true
   // A comment
- hasVirtualFunctions? true
+ hasVirtualFunctions true
   class Animal {
    public:
     // Intentionally not virtual:
@@ -197,7 +197,7 @@ features
       std::cout << "Llamas eat grass!" << std::endl;
     }
   };
- hasThreads? true
+ hasThreads true
 
 wikipedia https://en.wikipedia.org/wiki/C++
  example

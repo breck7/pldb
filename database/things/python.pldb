@@ -4,65 +4,65 @@ type pl
 creators Guido van Rossum
 
 features
- canWriteToDisk? true
+ canWriteToDisk true
   with open('helloworld.txt', 'w') as filehandle:
    filehandle.write('Hello, world!\n')
- hasDuckTyping? true
- hasSingleDispatch? true
- hasRegularExpressionsSyntaxSugar? false
- hasBitWiseOperators? true
+ hasDuckTyping true
+ hasSingleDispatch true
+ hasRegularExpressionsSyntaxSugar false
+ hasBitWiseOperators true
   x << y
- canDoShebang? true
+ canDoShebang true
   #!/usr/bin/env python
- hasSymbolTables? true
+ hasSymbolTables true
   # https://eli.thegreenplace.net/2010/09/18/python-internals-symbol-tables-part-1
- hasDynamicProperties? true
+ hasDynamicProperties true
   class Person (object):
     def __init__(self, name):
      self.name = name
   
   person = Person("John")
   person.age = 50
- hasBooleans? true
+ hasBooleans true
   result = true
- hasClasses? true
+ hasClasses true
   class Person (object):
     def __init__(self, name):
       self.name = name
- hasConditionals? true
+ hasConditionals true
   if True:
    print("Hello world")
- hasComments? true
+ hasComments true
   # This is a comment
- hasMultiLineComments? true
+ hasMultiLineComments true
   '''
   This is a multiline
   comment.
   '''
- hasConstructors? true
- hasGenerators? true
+ hasConstructors true
+ hasGenerators true
   https://wiki.python.org/moin/Generators
- hasDirectives? true
+ hasDirectives true
   from __future__ import feature
   # coding=<encoding name>
- hasIdentifiers? true
+ hasIdentifiers true
   name = "John"
- hasImports? true
+ hasImports true
   import datetime
   oTime = datetime.datetime.now()
   from my_pkg import my_funcs
- hasInfixNotation? true
+ hasInfixNotation true
   seven = 3 + 4
- hasIterators? true
+ hasIterators true
   https://www.w3schools.com/python/python_iterators.asp
- hasMixins? true
+ hasMixins true
   # https://easyaspython.com/mixins-for-fun-and-profit-cb9962760556
   class EssentialFunctioner(LoggerMixin, object):
- hasMultilineStrings? true
+ hasMultilineStrings true
   template = """This is the first line.
   This is the second line.
   This is the third line."""
- hasMultipleInheritance? true
+ hasMultipleInheritance true
   class Base1:
       pass
   class Base2:
@@ -76,7 +76,7 @@ features
       pass
   class Derived2(Derived1):
       pass
- hasOperatorOverloading? true
+ hasOperatorOverloading true
   # Python Program illustrate how  
   # to overload an binary + operator 
     
@@ -94,8 +94,8 @@ features
     
   print(ob1 + ob2) 
   print(ob3 + ob4)
- hasSemanticIndentation? true
- hasInheritance? true
+ hasSemanticIndentation true
+ hasInheritance true
   class SumComputer(object):
      def __init__(self, a, b):
          self.a = a
@@ -112,16 +112,16 @@ features
    class CubeSumComputer(SumComputer):
        def transform(self, x):
            return x * x * x
- hasStrings? true
+ hasStrings true
   "hello world"
- hasZeroBasedNumbering? true
- hasDisposeBlocks? true
+ hasZeroBasedNumbering true
+ hasDisposeBlocks true
   with resource_context_manager() as resource:
      # Perform actions with the resource.
   # Perform other actions where the resource is guaranteed to be deallocated.
- hasLineComments? true
+ hasLineComments true
   # A comment
- hasThreads? true
+ hasThreads true
 
 wikipedia https://en.wikipedia.org/wiki/Python_(programming_language)
  related jython micropython stackless-python cython abc algol-68 c dylan haskell icon java lisp modula-3 perl boo cobra coffeescript d f-sharp falcon genie go groovy javascript julia nim ruby swift setl unix unicode standard-ml pascal regex csharp common-lisp scheme objective-c numpy mime http sagemath llvmir jvm java-bytecode cil pyrex mercurial python-for-s60 qt django scipy matplotlib gdb freebsd ecmascript ocaml tcl erlang

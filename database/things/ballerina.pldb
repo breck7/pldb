@@ -3,12 +3,12 @@ appeared 2015
 type pl
 
 features
- hasComments? true
+ hasComments true
   // A comment
- hasImports? true
+ hasImports true
   import ballerina/http;
   import ballerina/io;
- hasLineComments? true
+ hasLineComments true
   // A comment
 
 wikipedia https://en.wikipedia.org/wiki/Ballerina_(programming_language)

@@ -7,15 +7,15 @@ subreddit GraphQL
   2022 17480
 
 features
- hasBooleans? true
- hasEnums? true
+ hasBooleans true
+ hasEnums true
   enum Episode {
     NEWHOPE
     EMPIRE
     JEDI
   }
- hasFloats? true
- hasInterfaces? true
+ hasFloats true
+ hasInterfaces true
   interface Character {
    id: ID!
    name: String!
@@ -37,12 +37,12 @@ features
     appearsIn: [Episode]!
     primaryFunction: String
   }
- hasIntegers? true
- hasStrings? true
- hasUnionTypes? true
+ hasIntegers true
+ hasStrings true
+ hasUnionTypes true
   union SearchResult = Human | Droid | Starship
- hasLists? true
- hasIds? true
+ hasLists true
+ hasIds true
   # The ID scalar type represents a unique identifier, often used to refetch an object or as the key for a cache. The ID type is serialized in the same way as a String; however, defining it as an ID signifies that it is not intended to be human‐readable.
   query {
     hero {

@@ -3,7 +3,7 @@ appeared 1990
 type pl
 
 features
- hasPointers? true
+ hasPointers true
   type real_list_t
     real :: sample_data(100)
     type (real_list_t), pointer :: next => null ()

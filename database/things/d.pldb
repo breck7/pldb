@@ -3,11 +3,11 @@ appeared 2001
 type pl
 
 features
- hasPointers? true
- hasComments? true
- hasOperatorOverloading? true
- hasTypeInference? true
- hasTemplates? true
+ hasPointers true
+ hasComments true
+ hasOperatorOverloading true
+ hasTypeInference true
+ hasTemplates true
   template TCopy(T)
   {
       void copy(out T to, T from)
@@ -17,7 +17,7 @@ features
   }
   int i;
   TCopy!(int).copy(i, 3);
- hasLineComments? true
+ hasLineComments true
   // A comment
 
 wikipedia https://en.wikipedia.org/wiki/D_(programming_language)

@@ -3,9 +3,9 @@ appeared 2001
 type pl
 
 features
- hasConstructors? true
- hasOperatorOverloading? true
- hasLineComments? true
+ hasConstructors true
+ hasOperatorOverloading true
+ hasLineComments true
   ' A comment
 
 example

@@ -33,8 +33,8 @@ example
             insert.o search.o files.o utils.o
 
 features
- hasSemanticIndentation? true
- hasLineComments? true
+ hasSemanticIndentation true
+ hasLineComments true
   # A comment
 
 description Lines that begin with TAB are assumed to be part of a recipe (so they are shell scripts and passed to the shell for parsing), and lines that do not begin with TAB cannot be part of a recipe (so they cannot be shell scripts: they must be make syntax).

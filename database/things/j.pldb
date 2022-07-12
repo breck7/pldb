@@ -4,8 +4,8 @@ type pl
 creators Kenneth E. Iverson and Roger Hui
 
 features
- hasComments? true
- hasLineComments? true
+ hasComments true
+ hasLineComments true
   NB. A comment
 
 wikipedia https://en.wikipedia.org/wiki/J_(programming_language)

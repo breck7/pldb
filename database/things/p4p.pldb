@@ -29,7 +29,7 @@ example
       add(fib(sub1(n)), fib(sub(n, 2)))
 
 features
- hasSemanticIndentation? true
+ hasSemanticIndentation true
 
 description an alternate syntax for Racket.
 

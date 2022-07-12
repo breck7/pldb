@@ -3,9 +3,9 @@ appeared 1992
 type pl
 
 features
- hasMultipleDispatch? true
- hasComments? true
- hasMultipleInheritance? true
+ hasMultipleDispatch true
+ hasComments true
+ hasMultipleInheritance true
 
 corporateDevelopers Apple
 webRepl https://play.opendylan.org/

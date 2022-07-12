@@ -4,11 +4,11 @@ type pl
 creators Bertrand Meyer
 
 features
- hasPointers? true
- hasComments? true
- hasMultipleInheritance? true
- hasOperatorOverloading? true
- hasLineComments? true
+ hasPointers true
+ hasComments true
+ hasMultipleInheritance true
+ hasOperatorOverloading true
+ hasLineComments true
   -- A comment
 
 wikipedia https://en.wikipedia.org/wiki/Eiffel_(programming_language)

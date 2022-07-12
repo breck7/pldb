@@ -4,15 +4,15 @@ type pl
 creators Graydon Hoare
 
 features
- hasStrings? true
+ hasStrings true
   "hello world"
- hasComments? true
+ hasComments true
   // https://doc.rust-lang.org/reference/comments.html
   // a comment
- hasMultiLineComments? true
+ hasMultiLineComments true
   // see: https://doc.rust-lang.org/reference/comments.html
   /* a block comment */
- hasDirectives? true
+ hasDirectives true
   // A conditionally-compiled module
   #[cfg(target_os = "linux")]
   mod bar {
@@ -37,25 +37,25 @@ features
     let y = ();
     let z = ();
   }
- hasImports? true
+ hasImports true
   use ::std::fs;  // Imports from the `std` crate, not the module below.
   use self::std::fs as self_fs;  // Imports the module below.
   mod my;
   use self::foo::Zoo as _;
   #[path = "foo.rs"]
   mod c;
- hasIterators? true
+ hasIterators true
   for n in 0..42 {
     println!("{}", n);
   }
- hasMacros? true
+ hasMacros true
   https://doc.rust-lang.org/book/ch19-06-macros.html
- hasOperatorOverloading? true
- hasPrintStatements? true
+ hasOperatorOverloading true
+ hasPrintStatements true
   println!("Hi");
- hasSemanticIndentation? false
- hasTypeInference? true
- hasLineComments? true
+ hasSemanticIndentation false
+ hasTypeInference true
+ hasLineComments true
   // A comment
 
 wikipedia https://en.wikipedia.org/wiki/Rust_(programming_language)

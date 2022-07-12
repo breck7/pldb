@@ -3,12 +3,12 @@ appeared 1972
 type pl
 
 features
- hasMultipleDispatch? true
- hasComments? true
- hasGarbageCollection? true
- hasOperatorOverloading? true
- hasLineComments? false
- hasMessagePassing? true
+ hasMultipleDispatch true
+ hasComments true
+ hasGarbageCollection true
+ hasOperatorOverloading true
+ hasLineComments false
+ hasMessagePassing true
 
 wikipedia https://en.wikipedia.org/wiki/Smalltalk
  example

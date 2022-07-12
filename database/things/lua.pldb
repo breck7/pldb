@@ -4,16 +4,16 @@ type pl
 creators Roberto Ierusalimschy
 
 features
- hasComments? true
- hasMultiLineComments? true
+ hasComments true
+ hasMultiLineComments true
   --[[
   print(10)         -- no action (comment)
   --]]
- hasIdentifiers? true
- hasOperatorOverloading? true
- hasLineComments? true
+ hasIdentifiers true
+ hasOperatorOverloading true
+ hasLineComments true
   -- A comment
- hasMaps? true
+ hasMaps true
   https://www.lua.org/pil/2.5.html
 
 wikipedia https://en.wikipedia.org/wiki/Lua_(programming_language)

@@ -7,14 +7,14 @@ example
  {:a 1, "foo" :bar, [1 2 3] four}
 
 features
- hasBooleans? true
- hasComments? true
- hasFloats? true
- hasIntegers? true
- hasStrings? true
- hasLists? true
- hasMaps? true
- hasSets? true
+ hasBooleans true
+ hasComments true
+ hasFloats true
+ hasIntegers true
+ hasStrings true
+ hasLists true
+ hasMaps true
+ hasSets true
 
 githubLanguage edn
  fileExtensions edn

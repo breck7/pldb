@@ -4,24 +4,24 @@ type pl
 creators Brad Cox
 
 features
- hasStrings? true
+ hasStrings true
   "hello world"
- hasSingleDispatch? true
- hasConstructors? true
- hasGarbageCollection? false
- hasImports? true
+ hasSingleDispatch true
+ hasConstructors true
+ hasGarbageCollection false
+ hasImports true
   // #import ensures that a file is only ever included once so that you never have a problem with recursive includes.
   #import <Foundation/Foundation.h>
   #include <asl.h>
   #include <mach/mach.h>
- hasInterfaces? true
+ hasInterfaces true
   @protocol Printing
      -(void) print;
   @end
- hasOperatorOverloading? false
- hasLineComments? true
+ hasOperatorOverloading false
+ hasLineComments true
   // A comment
- hasMessagePassing? true
+ hasMessagePassing true
 
 wikipedia https://en.wikipedia.org/wiki/Objective-C
  example

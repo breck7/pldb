@@ -4,8 +4,8 @@ type pl
 creators Jean Ichbiah
 
 features
- hasPointers? true
- hasGenerics? true
+ hasPointers true
+ hasGenerics true
   generic
      Max_Size : Natural; -- a generic formal value
      type Element_Type is private; -- a generic formal type; accepts any nonlimited type
@@ -26,10 +26,10 @@ features
         Storage : Vector (1 .. Allocated_Size);
      end record;
   end Stacks;
- hasComments? true
- hasDirectives? true
- hasCaseInsensitiveIdentifiers? true
- hasOperatorOverloading? true
+ hasComments true
+ hasDirectives true
+ hasCaseInsensitiveIdentifiers true
+ hasOperatorOverloading true
 
 wikipedia https://en.wikipedia.org/wiki/Ada_(programming_language)
  example

@@ -4,10 +4,10 @@ type pl
 
 standsFor COmmon Business Oriented Language
 features
- hasPointers? true
- hasComments? true
- hasZeroBasedNumbering? false
- hasLineComments? true
+ hasPointers true
+ hasComments true
+ hasZeroBasedNumbering false
+ hasLineComments true
   MOVE ABC to XYZ  *> This is a comment.
 
 wikipedia https://en.wikipedia.org/wiki/COBOL

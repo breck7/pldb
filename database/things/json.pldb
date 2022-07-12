@@ -4,23 +4,23 @@ type dataNotation
 creators Douglas Crockford
 
 features
- canWriteToDisk? false
- hasBooleans? true
+ canWriteToDisk false
+ hasBooleans true
   false
- hasComments? false
- hasLineComments? false
- hasMultiLineComments? false
- hasFloats? true
+ hasComments false
+ hasLineComments false
+ hasMultiLineComments false
+ hasFloats true
   2.3
- hasImports? false
- hasIntegers? true
+ hasImports false
+ hasIntegers true
   2
- hasMultilineStrings? false
- hasStrings? true
+ hasMultilineStrings false
+ hasStrings true
   "hello world"
- hasMaps? true
+ hasMaps true
   {"name": "Mary"}
- hasLists? true
+ hasLists true
   [1, 2, 3]
 
 wikipedia https://en.wikipedia.org/wiki/JSON

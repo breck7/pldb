@@ -3,8 +3,8 @@ appeared 2011
 type pl
 
 features
- hasStaticTyping? true
- hasTypeInference? true
+ hasStaticTyping true
+ hasTypeInference true
 
 wikipedia https://en.wikipedia.org/wiki/Xtend
  example

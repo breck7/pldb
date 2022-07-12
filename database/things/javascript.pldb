@@ -4,35 +4,35 @@ type pl
 creators Brendan Eich
 
 features
- hasAccessModifiers? false
- hasAbstractTypes? false
- hasStatements? true
+ hasAccessModifiers false
+ hasAbstractTypes false
+ hasStatements true
   let x = 3;
- hasRegularExpressionsSyntaxSugar? true
+ hasRegularExpressionsSyntaxSugar true
   console.log("Hello World".match(/\w/))
- hasExpressions? true
+ hasExpressions true
   1 + 1
- hasAsyncAwait? true
+ hasAsyncAwait true
   async doSomething => await somethingElse()
- hasBinaryOperators? true
+ hasBinaryOperators true
   1 + 1
- hasMapFunctions? true
+ hasMapFunctions true
   [1,2.1].map(Math.round)
- hasPartialApplication? true
+ hasPartialApplication true
   const addNumbers = (num1, num2) => num1 + num2
   const add5 = num => addNumbers(10, num)
- supportsBreakpoints? true
+ supportsBreakpoints true
   if (false)
     debugger
- hasPointers? false
- mergesWhitespace? true
- hasPolymorphism? true
+ hasPointers false
+ mergesWhitespace true
+ hasPolymorphism true
   "a" + "b"; 1 + 2
- hasSingleDispatch? true
- hasMultipleDispatch? false
- hasBitWiseOperators? true
+ hasSingleDispatch true
+ hasMultipleDispatch false
+ hasBitWiseOperators true
   var x = 5 & 1;
- hasSourceMaps? true
+ hasSourceMaps true
   {
    version: 3,
    file: 'min.js',
@@ -41,12 +41,12 @@ features
    sourceRoot: 'http://example.com/www/js/',
    mappings: 'CAAC,IAAI,IAAM,SAAUA,GAClB,OAAOC,IAAID;CCDb,IAAI,IAAM,SAAUE,GAClB,OAAOA'
   };
- hasProcessorRegisters? false
- hasDynamicProperties? true
+ hasProcessorRegisters false
+ hasDynamicProperties true
   class Person {}
   const person = new Person()
   person.age = 50
- hasMagicGettersAndSetters? true
+ hasMagicGettersAndSetters true
   // Can be implemented in ES6 using proxies:
   "use strict";
   if (typeof Proxy == "undefined") {
@@ -66,37 +66,37 @@ features
   });
   console.log(`original.foo = ${original.foo}`); // "original.foo = bar"
   console.log(`proxy.foo = ${proxy.foo}`);       // "proxy.foo = BAR"
- hasBooleans? true
+ hasBooleans true
   const result = true
- hasMethodChaining? true
+ hasMethodChaining true
   "hello world".toString().substr(0, 1).length
- hasClasses? true
+ hasClasses true
   class Person {}
- hasConditionals? true
+ hasConditionals true
   if (true)
    console.log("hi!")
- hasComments? true
- hasMultiLineComments? true
- hasConstructors? true
+ hasComments true
+ hasMultiLineComments true
+ hasConstructors true
   class Person {
    constructor(name) {
      this._name = name
    }
   }
   new Person("Jane")
- hasConstants? true
+ hasConstants true
   const one = 1
- hasDynamicTyping? true
- hasExceptions? true
+ hasDynamicTyping true
+ hasExceptions true
   try {
    undefinedFn()
   } catch (err) {
    console.log(err)
   }
- hasFirstClassFunctions? true
+ hasFirstClassFunctions true
   [2.0,1.1].map(Math.round)
- hasGarbageCollection? true
- hasGenerators? true
+ hasGarbageCollection true
+ hasGenerators true
   function* fibonacci(limit) {
       let [prev, curr] = [0, 1];
       while (!limit || curr <= limit) {
@@ -126,75 +126,75 @@ features
       console.log(n);
       if (n > 10000) break;
   }
- hasDirectives? true
+ hasDirectives true
   "use strict";
   "use asm";
- hasIdentifiers? true
+ hasIdentifiers true
   var name = "John"
- hasImplicitTypeConversions? true
+ hasImplicitTypeConversions true
   console.log("hello " + 2)
- hasInfixNotation? true
+ hasInfixNotation true
   const six = 2 + 2 + 2
- hasAnonymousFunctions? true
+ hasAnonymousFunctions true
   (() => console.log("hello world"))()
- hasMacros? false
- hasFunctionOverloading? false
- hasMultilineStrings? true
+ hasMacros false
+ hasFunctionOverloading false
+ hasMultilineStrings true
   const lines = `one
   two`
- hasMultipleInheritance? false
- hasCaseInsensitiveIdentifiers? false
- hasOperatorOverloading? false
- hasReferences? true
- hasPrintStatements? true
+ hasMultipleInheritance false
+ hasCaseInsensitiveIdentifiers false
+ hasOperatorOverloading false
+ hasReferences true
+ hasPrintStatements true
   console.log("Hi")
- hasInheritance? true
+ hasInheritance true
   class B {}
   class A extends B {}
- letterFirstIdentifiers? true
- hasStrings? true
+ letterFirstIdentifiers true
+ hasStrings true
   "hello world"
- hasSwitch? true
+ hasSwitch true
   var animal = "dog"
   switch (animal) {
    case "dog": console.log("yay"); break;
    case "cat": console.log("oh"); break;
   }
- hasTernaryOperators? true
+ hasTernaryOperators true
   let i = true ? 1 : 0
- hasWhileLoops? true
+ hasWhileLoops true
   let times = 10
   while (times) {times--}
   console.log("done")
- hasZeroBasedNumbering? true
- isCaseSensitive? true
- hasFunctions? true
+ hasZeroBasedNumbering true
+ isCaseSensitive true
+ hasFunctions true
   function helloWorld() {console.log("hi")}
- hasMethods? true
+ hasMethods true
   class Person {
    method1() {}
    method2() {}
   }
- hasIncrementAndDecrementOperators? true
+ hasIncrementAndDecrementOperators true
   let i = 0
   i++
   i--
- hasLineComments? true
+ hasLineComments true
   // A comment
- hasDefaultParameters? true
+ hasDefaultParameters true
   function multiply(a, b = 1) {
    return a * b;
   }
- hasDestructuring? true
+ hasDestructuring true
   const o = {p: 42, q: true};
   const {p, q} = o;
- hasFunctionComposition? true
+ hasFunctionComposition true
   function o(f, g) {
      return function(x) {
          return f(g(x));
      }
   }
- hasSets? true
+ hasSets true
   set = new Set()
   set.add("foo")
 

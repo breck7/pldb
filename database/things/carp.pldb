@@ -4,9 +4,9 @@ type pl
 creators Erik Svedäng
 
 features
- isLisp? true
- hasGarbageCollection? false
- hasStaticTyping? true
+ isLisp true
+ hasGarbageCollection false
+ hasStaticTyping true
 
 githubRepo https://github.com/carp-lang/carp
  stars 4571

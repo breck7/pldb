@@ -4,12 +4,12 @@ type pl
 creators Martin Odersky
 
 features
- hasStrings? true
+ hasStrings true
   "hello world"
- hasPartialApplication? true
+ hasPartialApplication true
   def add(x: Int, y: Int) = {x+y}; add(1, _: Int)
- hasComments? true
- hasImplicitArguments? true
+ hasComments true
+ hasImplicitArguments true
   // https://docs.scala-lang.org/tour/implicit-parameters.html
   abstract class Monoid[A] {
     def add(x: A, y: A): A
@@ -36,11 +36,11 @@ features
       println(sum(List("a", "b", "c"))) // uses stringMonoid implicitly
     }
   }
- hasOperatorOverloading? true
- hasTypeInference? true
- hasLineComments? true
+ hasOperatorOverloading true
+ hasTypeInference true
+ hasLineComments true
   // A comment
- hasMessagePassing? true
+ hasMessagePassing true
 
 wikipedia https://en.wikipedia.org/wiki/Scala_(programming_language)
  example

@@ -654,13 +654,10 @@ class Builder extends AbstractBuilder {
     pldbBase.loadFolder()
     pldbBase.forEach(file => {
       const comment = file.get("lineCommentKeyword")
-      if (comment && !file.getNode("features hasLineComments?")) {
+      if (comment && !file.getNode("features hasLineComments")) {
         file
           .touchNode("features")
-          .appendLineAndChildren(
-            `hasLineComments? true`,
-            `${comment} A comment`
-          )
+          .appendLineAndChildren(`hasLineComments true`, `${comment} A comment`)
 
         file.save()
       }
@@ -732,18 +729,19 @@ class Builder extends AbstractBuilder {
 
   updateAll() {
     pldbBase.loadFolder()
+
     pldbBase
       .filter(file => file.isLanguage)
       .filter(
         file =>
           file.has("lineCommentKeyword") &&
-          !file.get("features hasLineComments?")
+          !file.get("features hasLineComments")
       )
       .forEach(file => {
         const kw = file.get("lineCommentKeyword")
-        file.set("features hasLineComments?", "true")
+        file.set("features hasLineComments", "true")
         file
-          .touchNode("features hasLineComments?")
+          .touchNode("features hasLineComments")
           .setChildren(`${kw} A comment`)
         file.save()
       })
@@ -753,16 +751,16 @@ class Builder extends AbstractBuilder {
       .filter(
         file =>
           file.has("multiLineCommentKeywords") &&
-          !file.get("features hasMultiLineComments?")
+          !file.get("features hasMultiLineComments")
       )
       .forEach(file => {
         const kws = file.get("multiLineCommentKeywords")
-        file.set("features hasMultiLineComments?", "true")
+        file.set("features hasMultiLineComments", "true")
         const parts = kws.split(" ")
         const start = parts[0]
         const end = parts[1] || start
         file
-          .touchNode("features hasMultiLineComments?")
+          .touchNode("features hasMultiLineComments")
           .setChildren(`${start} A comment ${end}`)
 
         file.save()

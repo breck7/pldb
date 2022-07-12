@@ -3,10 +3,10 @@ appeared 2005
 type pl
 
 features
- hasComments? true
- hasStaticTyping? true
- hasTypeInference? true
- hasLineComments? true
+ hasComments true
+ hasStaticTyping true
+ hasTypeInference true
+ hasLineComments true
   // A comment
 
 wikipedia https://en.wikipedia.org/wiki/Haxe

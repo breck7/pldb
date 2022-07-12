@@ -4,25 +4,25 @@ type pl
 creators Ross Ihaka
 
 features
- hasStrings? true
+ hasStrings true
   "hello world"
- hasBitWiseOperators? true
+ hasBitWiseOperators true
   ! x
   x & y
   x && y
   x | y
   x || y
   xor(x, y)
- hasComments? true
- hasImports? true
+ hasComments true
+ hasImports true
   source("filename.r")
- hasLazyEvaluation? true
- hasOperatorOverloading? true
- hasPipes? true
+ hasLazyEvaluation true
+ hasOperatorOverloading true
+ hasPipes true
   # R has pipes via a library like dplyr
   starwars %>% filter(species == "Droid")
- hasZeroBasedNumbering? false
- hasLineComments? true
+ hasZeroBasedNumbering false
+ hasLineComments true
   # A comment
 
 wikipedia https://en.wikipedia.org/wiki/R_(programming_language)

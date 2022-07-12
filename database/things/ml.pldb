@@ -4,9 +4,9 @@ type pl
 creators Robin Milner
 
 features
- hasGarbageCollection? true
- hasTypeInference? true
- hasLineComments? false
+ hasGarbageCollection true
+ hasTypeInference true
+ hasLineComments false
 
 wikipedia https://en.wikipedia.org/wiki/ML_(programming_language)
  example

@@ -4,11 +4,11 @@ type pl
 creators Anthony James Barr
 
 features
- hasComments? true
- hasMultiLineComments? true
+ hasComments true
+ hasMultiLineComments true
    /* For example 1 use: x=abc;
     for example 2 use: y=ghi; */
- hasLineComments? true
+ hasLineComments true
   * A comment
 
 wikipedia https://en.wikipedia.org/wiki/SAS_language

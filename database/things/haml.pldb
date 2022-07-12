@@ -13,8 +13,8 @@ example
     = post.content
 
 features
- canWriteToDisk? false
- hasSemanticIndentation? true
+ canWriteToDisk false
+ hasSemanticIndentation true
 
 wikipedia https://en.wikipedia.org/wiki/Haml
  example

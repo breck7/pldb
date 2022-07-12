@@ -3,16 +3,16 @@ appeared 1986
 type pl
 
 features
- hasConstructors? true
- hasOperatorOverloading? true
- hasComments? true
+ hasConstructors true
+ hasOperatorOverloading true
+ hasComments true
   (* This is a multi-line comments
    and it will span multiple lines. *)
   { This is a single line comment in pascal }
- hasMultiLineComments? true
+ hasMultiLineComments true
   (* This is a multi-line comments
    and it will span multiple lines. *)
- hasLineComments? false
+ hasLineComments false
 
 wikipedia https://en.wikipedia.org/wiki/Object_Pascal
  example

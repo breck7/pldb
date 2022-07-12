@@ -6,7 +6,7 @@ example
  (alert "Hello world!")
 
 features
- hasSemanticIndentation? true
+ hasSemanticIndentation true
 
 description A little Clojure-like LISP in JavaScript
 

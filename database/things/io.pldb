@@ -4,9 +4,9 @@ type pl
 creators Steve Dekorte
 
 features
- hasComments? true
- hasOperatorOverloading? true
- hasLineComments? true
+ hasComments true
+ hasOperatorOverloading true
+ hasLineComments true
   // A comment
 
 wikipedia https://en.wikipedia.org/wiki/Io_(programming_language)

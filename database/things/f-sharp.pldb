@@ -3,12 +3,12 @@ appeared 2005
 type pl
 
 features
- hasComments? true
- hasDocComments? true
+ hasComments true
+ hasDocComments true
   /// Adds 2 numbers
   let rec add x y =
    x + y
- hasDirectives? true
+ hasDirectives true
   #if VERSION1
   let function1 x y =
      printfn "x: %d y: %d" x y
@@ -20,23 +20,23 @@ features
   #endif
   // Line directives as source maps can be used when compiling to F#:
   #line 25 "C:\\Projects\\MyProject\\MyProject\\Script1"
- hasImports? true
+ hasImports true
   open module-or-namespace-name
   open System.IO
   open List
   open Seq
- hasNamespaces? true
+ hasNamespaces true
   namespace Widgets
   type MyWidget1 =
      member this.WidgetName = "Widget1"
   module WidgetsModule =
      let widgetName = "Widget2"
- hasOperatorOverloading? true
- hasSemanticIndentation? true
- hasTypeInference? true
- hasLineComments? true
+ hasOperatorOverloading true
+ hasSemanticIndentation true
+ hasTypeInference true
+ hasLineComments true
   // A comment
- hasUnitsOfMeasure? true
+ hasUnitsOfMeasure true
   // https://fsharpforfunandprofit.com/posts/units-of-measure/
   [<Measure>] type N = kg m/sec^2
   

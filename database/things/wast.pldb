@@ -12,7 +12,7 @@ example
        (f64.const 2))))
 
 features
- hasSemanticIndentation? false
+ hasSemanticIndentation false
 
 description WebAssembly has an S-expression-based textual representation, an intermediate form designed to be exposed in text editors, browser developer tools, etc.
 https://developer.mozilla.org/en-US/docs/WebAssembly/Text_format_to_wasm

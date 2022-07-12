@@ -3,8 +3,8 @@ appeared 2006
 type dataNotation
 
 features
- hasSemanticIndentation? false
- hasComments? true
+ hasSemanticIndentation false
+ hasComments true
 
 example
  /**

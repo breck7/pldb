@@ -4,9 +4,9 @@ type pl
 creators Evan Czaplicki
 
 features
- hasComments? true
- hasTypeInference? true
- hasLineComments? true
+ hasComments true
+ hasTypeInference true
+ hasLineComments true
   -- A comment
 
 wikipedia https://en.wikipedia.org/wiki/Elm_(programming_language)

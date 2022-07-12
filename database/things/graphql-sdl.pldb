@@ -32,9 +32,9 @@ example
  }
 
 features
- hasComments? true
- hasMultiLineComments? false
- hasLineComments? true
+ hasComments true
+ hasMultiLineComments false
+ hasLineComments true
   “”” A comment
 
 description A type definition syntax to the GraphQL specification.

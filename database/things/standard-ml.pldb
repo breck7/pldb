@@ -3,8 +3,8 @@ appeared 1990
 type pl
 
 features
- hasTypeInference? true
- hasLineComments? false
+ hasTypeInference true
+ hasLineComments false
 
 wikipedia https://en.wikipedia.org/wiki/Standard_ML
  example

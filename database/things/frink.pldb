@@ -3,8 +3,8 @@ appeared 2014
 type pl
 
 features
- hasComments? true
- hasUnitsOfMeasure? true
+ hasComments true
+ hasUnitsOfMeasure true
   10 feet 12 feet 8 feet -> gallons
 
 wikipedia https://en.wikipedia.org/wiki/Frink_(programming_language)

@@ -31,10 +31,10 @@ example
      .;
 
 features
- hasImports? true
+ hasImports true
   import "http://www.xtext.org/example/Domainmodel"
   import "http://www.xtext.org/example/Domainmodel" as dmodel
- hasMixins? true
+ hasMixins true
   grammar org.example.domainmodel.Domainmodel
          with org.eclipse.xtext.common.Terminals
 

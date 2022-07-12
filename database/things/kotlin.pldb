@@ -4,12 +4,12 @@ type pl
 creators Andrey Breslav
 
 features
- hasComments? true
- hasImports? true
+ hasComments true
+ hasImports true
   import foo.Bar // Bar is now accessible without qualification
   import foo.* // everything in 'foo' becomes accessible
   import bar.Bar as bBar // bBar stands for 'bar.Bar'
- hasInterfaces? true
+ hasInterfaces true
   interface Named {
      val name: String
   }
@@ -19,11 +19,11 @@ features
       
       override val name: String get() = "$firstName $lastName"
   }
- hasMacros? false
- hasOperatorOverloading? true
- hasSemanticIndentation? false
- hasTypeInference? true
- hasLineComments? true
+ hasMacros false
+ hasOperatorOverloading true
+ hasSemanticIndentation false
+ hasTypeInference true
+ hasLineComments true
   // A comment
 
 wikipedia https://en.wikipedia.org/wiki/Kotlin_(programming_language)

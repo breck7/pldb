@@ -3,9 +3,9 @@ appeared 2004
 type pl
 
 features
- hasPointers? true
- hasComments? true
- hasOperatorOverloading? true
+ hasPointers true
+ hasComments true
+ hasOperatorOverloading true
 
 wikipedia https://en.wikipedia.org/wiki/FreeBASIC
  example

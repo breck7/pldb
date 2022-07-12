@@ -29,5 +29,5 @@ example
  // operation that dereferences a pointer.
  %3 = cir.load deref %0 : cir.ptr <!cir.ptr<i32>>
 features
- hasLineComments? true
+ hasLineComments true
   // A comment

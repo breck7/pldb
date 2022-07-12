@@ -4,13 +4,13 @@ type pl
 creators John Backus
 
 features
- hasReservedWords? false
+ hasReservedWords false
   C Keywords are specifically NOT reserved words. http://fortranwiki.org/fortran/show/Keywords. http://rsusu1.rnd.runnet.ru/develop/fortran/prof77/node46.html
- hasComments? true
+ hasComments true
   C
   C Lines that begin with 'C' (in the first or 'comment' column) are comments
   C
- hasPrintStatements? true
+ hasPrintStatements true
   C     Hello World in Fortran
   
         PROGRAM HELLO
@@ -18,8 +18,8 @@ features
         STOP
     100 FORMAT (' Hello World! ' /)
         END
- hasZeroBasedNumbering? false
- hasModules? true
+ hasZeroBasedNumbering false
+ hasModules true
   module constants  
   implicit none 
   
@@ -51,7 +51,7 @@ features
      print*, "Area of a circle with radius 7.0 = ", area  
      
   end program module_exampl
- hasLineComments? true
+ hasLineComments true
   C A comment
 
 wikipedia https://en.wikipedia.org/wiki/Fortran

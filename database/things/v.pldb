@@ -31,9 +31,9 @@ rijuRepl https://riju.codes/v
  githubRepo https://github.com/vlang/v
 
 features
- hasStrings? true
+ hasStrings true
   "hello world"
- hasLineComments? true
+ hasLineComments true
   // A comment
 
 lineCommentKeyword //

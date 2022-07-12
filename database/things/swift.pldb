@@ -4,17 +4,17 @@ type pl
 creators Chris Lattner
 
 features
- hasStrings? true
+ hasStrings true
   "hello world"
- hasSingleDispatch? true
- hasComments? true
- hasImports? true
+ hasSingleDispatch true
+ hasComments true
+ hasImports true
   import UIKit
   import UIKit.UITableViewController
   let tvc = UITableViewController()
   let vc = UIViewController()
   let label = UILabel()
- hasInterfaces? true
+ hasInterfaces true
   protocol MyProtocol {
   init(parameter: Int)
   var myVariable: Int { get set }
@@ -27,10 +27,10 @@ features
     // implementation goes here
     }
   }
- hasOperatorOverloading? true
- hasSemanticIndentation? false
- hasTypeInference? true
- hasLineComments? true
+ hasOperatorOverloading true
+ hasSemanticIndentation false
+ hasTypeInference true
+ hasLineComments true
   // A comment
 
 wikipedia https://en.wikipedia.org/wiki/Swift_(programming_language)

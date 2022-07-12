@@ -3,22 +3,22 @@ appeared 1978
 type pl
 
 features
- hasUserDefinedOperators? true
+ hasUserDefinedOperators true
   Hope enables us to use a function with two arguments as an infix operator. e must assign it a priority and use it as an infix operator everywhere, including the equations that define it. A bigger number in the infix declaration means a higher priority. Most of Hope's standard functions are supplied as infix operators.
   infix mult 8;
   dec mult : num # num - > num;
   ---xmulty<= ifY=0then0elsexmult(y-1)+x;
- mergesWhitespace? true
- hasPatternMatching? true
- hasInfixNotation? true
+ mergesWhitespace true
+ hasPatternMatching true
+ hasInfixNotation true
   max(10,20) + max(1,max(2,3));
- hasIntegers? true
- hasAnonymousFunctions? true
+ hasIntegers true
+ hasAnonymousFunctions true
   lambda(x,y) => x + y
- letterFirstIdentifiers? true
- hasSingleTypeArrays? true
+ letterFirstIdentifiers true
+ hasSingleTypeArrays true
   [1,2,3]
- hasWhileLoops? false
+ hasWhileLoops false
 
 wikipedia https://en.wikipedia.org/wiki/Hope_(programming_language)
  example

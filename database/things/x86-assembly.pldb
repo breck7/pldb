@@ -4,8 +4,8 @@ type assembly
 aka x86
 
 features
- hasProcessorRegisters? true
- hasLineComments? true
+ hasProcessorRegisters true
+ hasLineComments true
   ; A comment
 
 wikipedia https://en.wikipedia.org/wiki/X86_assembly_language

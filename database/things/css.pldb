@@ -4,12 +4,12 @@ type stylesheetLanguage
 creators Håkon Wium Lie
 
 features
- canWriteToDisk? false
- hasImports? true
+ canWriteToDisk false
+ hasImports true
   @import 'custom.css';
- hasFunctions? false
- hasLineComments? false
- hasComments? true
+ hasFunctions false
+ hasLineComments false
+ hasComments true
   /* This is a single-line comment */ p { color: red; }
 
 wikipedia https://en.wikipedia.org/wiki/Cascading_Style_Sheets

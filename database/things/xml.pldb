@@ -3,8 +3,8 @@ appeared 1996
 type dataNotation
 
 features
- canWriteToDisk? false
- hasLineComments? false
+ canWriteToDisk false
+ hasLineComments false
 
 wikipedia https://en.wikipedia.org/wiki/XML
  example

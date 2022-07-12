@@ -4,17 +4,17 @@ type pl
 creators Larry Wall
 
 features
- hasStrings? true
+ hasStrings true
   "hello world"
- hasRegularExpressionsSyntaxSugar? true
+ hasRegularExpressionsSyntaxSugar true
   print "Hello World".match(/\w/)
- hasPartialApplication? true
+ hasPartialApplication true
   sub first-and-last ( $first, $last ) {
      say "Name is $first $last";
   }
   my &surname-smith = &first-and-last.assuming( *, 'Smith' );
   &surname-smith.( 'Joe' ); # OUTPUT: «Name is Joe Smith␤» 
- hasComments? true
+ hasComments true
   # This is a comment in perl
   =begin comment
   This is all part of multiline comment.
@@ -22,18 +22,18 @@ features
   These comments will be ignored by the 
   compiler until the next =cut is encountered.
   =cut
- hasMultiLineComments? true
- hasLineComments? true
+ hasMultiLineComments true
+ hasLineComments true
   # A comment
- hasHereDocs? true
- hasDirectives? true
+ hasHereDocs true
+ hasDirectives true
   # In Perl, the keyword "use", which imports modules, can also be used to specify directives, such as use strict; or use utf8;
   use utf8;
- hasImports? true
+ hasImports true
   use Digest::MD5 'md5_hex';
- hasMultipleInheritance? true
- hasOperatorOverloading? true
- hasRangeOperators? true
+ hasMultipleInheritance true
+ hasOperatorOverloading true
+ hasRangeOperators true
   # https://users.cs.cf.ac.uk/Dave.Marshall/PERL/node38.html
   @array = (1..10);
 

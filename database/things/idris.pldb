@@ -4,8 +4,8 @@ type pl
 creators Edwin Brady
 
 features
- hasDependentTypes? true
- hasLineComments? true
+ hasDependentTypes true
+ hasLineComments true
   -- A comment
 
 wikipedia https://en.wikipedia.org/wiki/Idris_(programming_language)

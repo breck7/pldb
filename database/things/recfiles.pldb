@@ -31,10 +31,10 @@ example
  Location: home
 
 features
- hasComments? true
+ hasComments true
   # Blah blah…
   # Unlike some file formats, comments in recfiles must be complete lines. You cannot start a comment in the middle of a line.
- hasLineComments? true
+ hasLineComments true
   # A comment
 
 description GNU recutils is a set of tools and libraries to access human-editable, text-based databases called recfiles. The data is stored as a sequence of records, each record containing an arbitrary number of named fields. Advanced capabilities usually found in other data storage systems are supported: data types, data integrity (keys, mandatory fields, etc.) as well as the ability of records to refer to other records (sort of foreign keys). Despite its simplicity, recfiles can be used to store medium-sized databases.

@@ -3,8 +3,8 @@ appeared 1984
 type hardwareDescriptionLanguage
 
 features
- hasComments? true
- hasLineComments? true
+ hasComments true
+ hasLineComments true
   // A comment
 
 wikipedia https://en.wikipedia.org/wiki/Verilog

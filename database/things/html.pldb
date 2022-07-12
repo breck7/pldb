@@ -4,9 +4,9 @@ type textMarkup
 creators Tim Berners-Lee
 
 features
- hasImports? false
- hasLineComments? false
- hasComments? true
+ hasImports false
+ hasLineComments false
+ hasComments true
   <!-- Hello World in HTML -->
 
 wikipedia https://en.wikipedia.org/wiki/HTML

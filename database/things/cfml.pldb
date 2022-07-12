@@ -3,7 +3,7 @@ appeared 1995
 type pl
 
 features
- hasConstructors? true
+ hasConstructors true
   component {
      // properties
      property name="cheeseName";

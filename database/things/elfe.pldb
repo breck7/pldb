@@ -18,7 +18,7 @@ example
      writeln "Temperature changed from ", last_temp, " to ", new_temp
 
 features
- hasSemanticIndentation? true
+ hasSemanticIndentation true
 
 description ELFE is a very simple and small programming language specifcally designed for everyday programming, notably for the Internet of Things.
 

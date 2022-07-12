@@ -3,10 +3,10 @@ appeared 2001
 type dataNotation
 
 features
- hasSemanticIndentation? true
- hasLineComments? true
+ hasSemanticIndentation true
+ hasLineComments true
   # A comment
- hasComments? true
+ hasComments true
 
 wikipedia https://en.wikipedia.org/wiki/YAML
  example

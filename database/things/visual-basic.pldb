@@ -3,12 +3,12 @@ appeared 1991
 type pl
 
 features
- hasDirectives? true
+ hasDirectives true
   Option Explicit On|Off
   Option Compare Binary
- hasOperatorOverloading? false
- hasComments? true
- hasLineComments? true
+ hasOperatorOverloading false
+ hasComments true
+ hasLineComments true
   ' A comment
 
 wikipedia https://en.wikipedia.org/wiki/Visual_Basic

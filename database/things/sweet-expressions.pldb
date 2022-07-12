@@ -11,7 +11,7 @@ example
       fibup n 2 1 0  ; Simple function calls
 
 features
- hasSemanticIndentation? true
+ hasSemanticIndentation true
 
 description This SRFI describes a set of syntax extensions for Scheme, called sweet-expressions (t-expressions), that has the same descriptive power as s-expressions but is designed to be easier for humans to read.
 website https://srfi.schemers.org/srfi-110/srfi-110.html

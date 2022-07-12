@@ -4,9 +4,9 @@ type pl
 creators Niklaus Wirth
 
 features
- hasPolymorphism? true
- hasComments? true
- hasFunctionOverloading? true
+ hasPolymorphism true
+ hasComments true
+ hasFunctionOverloading true
   program Adhoc;
   
   function Add(x, y : Integer) : Integer;
@@ -23,7 +23,7 @@ features
       Writeln(Add(1, 2));                   (* Prints "3"             *)
       Writeln(Add('Hello, ', 'World!'));    (* Prints "Hello, World!" *)
   end.
- hasOperatorOverloading? false
+ hasOperatorOverloading false
 
 wikipedia https://en.wikipedia.org/wiki/Pascal_(programming_language)
  example

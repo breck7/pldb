@@ -8,16 +8,16 @@ subreddit dartlang
   2022 35109
 
 features
- hasComments? true
+ hasComments true
   // Hi
   /* Assume address is not null. */
- hasMultiLineComments? true
+ hasMultiLineComments true
   /* a comment
    */
- hasImports? true
+ hasImports true
   import 'file-system.dart';
   import 'dart:math' as math;
- hasOperatorOverloading? true
+ hasOperatorOverloading true
 
 wikipedia https://en.wikipedia.org/wiki/Dart_(programming_language)
  example

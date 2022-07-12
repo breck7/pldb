@@ -3,7 +3,7 @@ appeared 1986
 type queryLanguage
 
 features
- hasLineComments? true
+ hasLineComments true
   -- A comment
 
 wikipedia https://en.wikipedia.org/wiki/PostgreSQL
