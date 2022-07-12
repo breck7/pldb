@@ -293,8 +293,8 @@ hasForLoopsNode
 hasFunctionScopeNode
  extends abstractFeatureNode
  crux hasFunctionScope
-hasFeatureMatchingNode
- crux hasFeatureMatching
+hasPatternMatchingNode
+ crux hasPatternMatching
  extends abstractFeatureNode
 hasGarbageCollectionNode
  extends abstractFeatureNode
