@@ -1,7 +1,8 @@
-title lorel
+title Lorel
 appeared 1996
 type queryLanguage
 creators Serge Abiteboul and Dallan Quass and Jason McHugh and Jennifer Widom and Janet L. Wiener
+description Lorel Query Language for Semistructured Data
 
 example
  select Guide.restaurant.name,
