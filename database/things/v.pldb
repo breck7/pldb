@@ -79,3 +79,5 @@ example
  fn (mut u User) register() {
      u.is_registered = true
  }
+
+creators Alexander Medvednikov
