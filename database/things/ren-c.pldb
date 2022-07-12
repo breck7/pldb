@@ -1,7 +1,8 @@
-title ren-c
+title Ren-C
 appeared 2012
 type pl
-description C implementation of the "REadable Notation" (a name given to Rebol's file format).
+forkOf rebol
+description Ren-C is a deeply redesigned LGPL 3.0-licensed derivative of the Rebol 3 codebase. It explores solutions to some of the Rebol language's longstanding open questions, adding fundamental new evaluation abilities and API embeddings.
 
 githubRepo https://github.com/metaeducation/ren-c
  firstCommit 2012
@@ -12,5 +13,3 @@ githubRepo https://github.com/metaeducation/ren-c
  updated 2022
  description Library for embedding a Rebol interpreter into C codebases
  issues 105
-
-creators Carl Sassenrath
