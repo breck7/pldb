@@ -16,30 +16,31 @@ tableSearch
 comment autogenFeatures
 pipeTable
  feature|featureLink|aka|psuedoExample|languages
- Comments|../languages/comment-feature.html||# a comment|161
- Line Comments|../languages/line-comments-feature.html||# from here to end of line is a comment|120
+ Comments|../languages/comment-feature.html||# a comment|163
+ Line Comments|../languages/line-comments-feature.html||# from here to end of line is a comment|121
  Semantic Indentation|../languages/semantic-indentation-feature.html||if true(newline/space)print True|53
+ Strings|../languages/strings-feature.html||"""hi"""|30
  Operator Overloading|../languages/operator-overloading-feature.html||def __add__(): doSomethingDifferent()|30
- Strings|../languages/strings-feature.html||"""hi"""|29
- File Imports|../languages/file-imports-feature.html||import package|27
- MultiLine Comments|../languages/multiline-comments-feature.html||/* a looong comment */|20
+ File Imports|../languages/file-imports-feature.html||import package|30
+ MultiLine Comments|../languages/multiline-comments-feature.html||/* a looong comment */|22
  Directives|../languages/directives-feature.html||use strict;|18
+ Integers|../languages/integers-feature.html||int score = 28|16
+ Booleans|../languages/booleans-feature.html||doBabiesSleep = false|15
+ Pointers|../languages/pointers-feature.html||int *foobar|13
  Multiple Inheritance|../languages/multiple-inheritance-feature.html||extends parentWhichExtendsSomethingElse|13
- Pointers|../languages/pointers-feature.html||int *foobar|12
  Constructors|../languages/constructor-feature.html||Person: constructor(name: string): {}|12
  Garbage Collection|../languages/garbage-collection-feature.html||var iDontNeedToFreeThis|11
  Message Passing|../languages/message-passing-feature.html||"""get homepage"""|10
  Macros|../languages/macros-feature.html||#define height 10|10
- Booleans|../languages/booleans-feature.html||doBabiesSleep = false|10
- Integers|../languages/integers-feature.html||int score = 28|8
+ Print Statements|../languages/print-statements-feature.html||"print ""Hi"""|9
+ Identifiers|../languages/identifiers-feature.html||name = Bob|9
  Static Typing|../languages/static-typing-feature.html||int score = 100|7
  Single Dispatch|../languages/single-dispatch-feature.html||person.run()|7
- Print Statements|../languages/print-statements-feature.html||"print ""Hi"""|6
+ Lists|../languages/lists-feature.html|array or vector or sequence|[2, 3, 10]|7
  Module Pattern|../languages/module-feature.html||module Foobar {}|6
  Mixins|../languages/mixin-feature.html||extends structure, paintable|6
  Iterators|../languages/iterators-feature.html||for a in collection()|6
  Interfaces|../languages/interface-feature.html||interface Sendable|6
- Identifiers|../languages/identifiers-feature.html||name = Bob|6
  Function Composition|../languages/function-composition-feature.html|||6
  Units of Measure|../languages/units-of-measure-feature.html||Boston isCapitalOf Massachusetts|5
  Threads|../languages/threads-feature.html||thread1(); thread2();|5
@@ -55,7 +56,6 @@ pipeTable
  Type Casting|../languages/type-casting-feature.html||(float)score;|4
  Namespaces|../languages/namespace-feature.html||namespace Stuff {}|4
  Multiple Dispatch|../languages/multiple-dispatch-feature.html||collide_with(x::Spaceship, y::Spaceship)|4
- Lists|../languages/lists-feature.html|array or vector or sequence|[2, 3, 10]|4
  Infix Notation|../languages/infix-notation-feature.html||1 + 2|4
  Generators|../languages/generators-feature.html||yield 2|4
  Classes|../languages/classes-feature.html||class Dog {}|4
@@ -67,6 +67,7 @@ pipeTable
  Range Operator|../languages/range-operator-feature.html||1 ... 10|3
  Postfix Notation|../languages/postfix-notation-feature.html||2 3 4 + 2 -|3
  Polymorphism|../languages/polymorphism-feature.html||"a + ""b""; 1 + 2"|3
+ Pipes|../languages/pipes-feature.html||ls &#124; wc|3
  Merges Whitespace|../languages/merges-whitespace-feature.html||result = 1    +    2|3
  Maps|../languages/maps-feature.html|dict or dictionary or object or record or struct or hashtable or keyed list or associative array|"{name: ""Mary""}"|3
  Inheritance|../languages/inheritance-feature.html||class Box extends Cube|3
@@ -81,7 +82,6 @@ pipeTable
  Sets|../languages/sets-feature.html||{black, red, yellow}|2
  References|../languages/reference-feature.html||fn(objPointer)|2
  Prefix Notation|../languages/prefix-notation-feature.html||+ 1 2|2
- Pipes|../languages/pipes-feature.html||ls &#124; wc|2
  Map Functions|../languages/map-functions-feature.html||[1,2].map(square)|2
  Manual Memory Management|../languages/manual-memory-management-feature.html||malloc(4);|2
  Magic Getters and Setters|../languages/magic-getters-and-setters-feature.html||get(name) => obj[name]|2
