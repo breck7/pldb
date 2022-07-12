@@ -1,4 +1,4 @@
-title mu
+title Mu
 appeared 2014
 type pl
 
@@ -17,6 +17,27 @@ status active
 fileType text
 wordRank 9065
 isOpenSource true
+fileExtensions mu
 
 centralPackageRepositoryCount 0
 creators Kartik K. Agaram
+
+lineCommentKeyword #
+example
+ # dump stack from bottom to top
+ fn emit-stack-from-bottom _self: (addr grapheme-stack), out: (addr stream byte) {
+   var self/esi: (addr grapheme-stack) <- copy _self
+   var data-ah/edi: (addr handle array code-point-utf8) <- get self, data
+   var _data/eax: (addr array code-point-utf8) <- lookup *data-ah
+   var data/edi: (addr array code-point-utf8) <- copy _data
+   var top-addr/ecx: (addr int) <- get self, top
+   var i/eax: int <- copy 0
+   {
+     compare i, *top-addr
+     break-if->=
+     var g/edx: (addr code-point-utf8) <- index data, i
+     write-code-point-utf8 out, *g
+     i <- increment
+     loop
+   }
+ }

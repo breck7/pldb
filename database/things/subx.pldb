@@ -1,5 +1,15 @@
-title subx
+title SubX
 appeared 2019
 type assembly
+creators Kartik K. Agaram
 description Author of Mu decided this year to switch implementation from C++ to his own x86 assembler subset named SubX.
 https://github.com/akkartik/mu#readme
+fileExtensions subx
+
+lineCommentKeyword #
+example
+ # 0x20-0x7e: basic latin
+ # 0x20 = space
+   08/size
+   00/is-combine
+   00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
