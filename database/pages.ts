@@ -695,7 +695,7 @@ code
   }
 }
 
-class PatternPageTemplate extends LanguagePageTemplate {
+class FeaturePageTemplate extends LanguagePageTemplate {
   get kpiBar() {
     const { object } = this
     const appeared = object.appeared
@@ -707,31 +707,31 @@ class PatternPageTemplate extends LanguagePageTemplate {
   }
 
   get prevPage() {
-    return this.file.previousRankedPattern.primaryKey
+    return this.file.previousRankedFeature.primaryKey
   }
 
   get nextPage() {
-    return this.file.nextRankedPattern.primaryKey
+    return this.file.nextRankedFeature.primaryKey
   }
 
   get typeLink() {
-    return `<a href="../lists/patterns.html">${this.file.typeName}</a>`
+    return `<a href="../lists/features.html">${this.file.typeName}</a>`
   }
 
   get exampleSection() {
     const { file } = this
-    const { title, patternPath } = file
+    const { title, featurePath } = file
 
-    const positives = file.languagesWithThisPattern
-    const negatives = file.languagesWithoutThisPattern
+    const positives = file.languagesWithThisFeature
+    const negatives = file.languagesWithoutThisFeature
 
     const examples = positives
-      .filter(file => file.getNode(patternPath).length)
+      .filter(file => file.getNode(featurePath).length)
       .map(file => {
         return {
           id: file.primaryKey,
           title: file.title,
-          example: file.getNode(patternPath).childrenToString()
+          example: file.getNode(featurePath).childrenToString()
         }
       })
 
@@ -772,4 +772,4 @@ code
   }
 }
 
-export { PatternPageTemplate, LanguagePageTemplate }
+export { FeaturePageTemplate, LanguagePageTemplate }

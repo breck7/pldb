@@ -4,660 +4,660 @@ psuedoExampleNode
  crux psuedoExample
  int sortIndex 610
  single
-patternKeywordNode
- description For "type pattern" only. When building the pattern pages, look for this keyword on each object to see if it follows the pattern or not.
+featureKeywordNode
+ description For "type feature" only. When building the feature pages, look for this keyword on each object to see if it has the feature or not.
  extends abstractWordNode
- crux patternKeyword
-abstractPatternNode
+ crux featureKeyword
+abstractFeatureNode
  cells keywordCell boolCell
  baseNodeType blobNode
  boolean includeChildrenInCsv false
  abstract
-patternsNode
- inScope abstractPatternNode
+featuresNode
+ inScope abstractFeatureNode
  extends abstractSectionNode
- crux patterns
+ crux features
  int sortIndex 600
 hasReservedWordsNode
  crux hasReservedWords?
  description Are things like keywords reserved words?
- extends abstractPatternNode
+ extends abstractFeatureNode
 hasRegularExpressionsSyntaxSugarNode
  crux hasRegularExpressionsSyntaxSugar?
- extends abstractPatternNode
+ extends abstractFeatureNode
 hasHomoiconicityNode
  crux hasHomoiconicity?
- extends abstractPatternNode
+ extends abstractFeatureNode
 hasDestructuringNode
  crux hasDestructuring?
- extends abstractPatternNode
+ extends abstractFeatureNode
 hasRunTimeGuardsNode
  crux hasRunTimeGuards?
- extends abstractPatternNode
+ extends abstractFeatureNode
 hasAbstractTypesNode
- extends abstractPatternNode
+ extends abstractFeatureNode
  crux hasAbstractTypes?
 hasAsyncAwaitNode
- extends abstractPatternNode
+ extends abstractFeatureNode
  crux hasAsyncAwait?
 hasTypedHolesNode
- extends abstractPatternNode
+ extends abstractFeatureNode
  crux hasTypedHoles?
 hasRefinementTypesNode
- extends abstractPatternNode
+ extends abstractFeatureNode
  crux hasRefinementTypes?
 hasMonadsNode
- extends abstractPatternNode
+ extends abstractFeatureNode
  crux hasMonads?
 isLispNode
- extends abstractPatternNode
+ extends abstractFeatureNode
  crux isLisp?
 hasUserDefinedOperatorsNode
- extends abstractPatternNode
+ extends abstractFeatureNode
  crux hasUserDefinedOperators?
 hasBinaryOperatorsNode
- extends abstractPatternNode
+ extends abstractFeatureNode
  crux hasBinaryOperators?
 hasUnaryOperatorsNode
- extends abstractPatternNode
+ extends abstractFeatureNode
  crux hasUnaryOperators?
 hasMapFunctionsNode
- extends abstractPatternNode
+ extends abstractFeatureNode
  crux hasMapFunctions?
 hasPartialApplicationNode
- extends abstractPatternNode
+ extends abstractFeatureNode
  crux hasPartialApplication?
 supportsBreakpointsNode
- extends abstractPatternNode
+ extends abstractFeatureNode
  crux supportsBreakpoints?
 hasPointersNode
- extends abstractPatternNode
+ extends abstractFeatureNode
  crux hasPointers?
 canWriteToDiskNode
- extends abstractPatternNode
+ extends abstractFeatureNode
  crux canWriteToDisk?
 hasDuckTypingNode
- extends abstractPatternNode
+ extends abstractFeatureNode
  crux hasDuckTyping?
 hasAssertStatementsNode
- extends abstractPatternNode
+ extends abstractFeatureNode
  crux hasAssertStatements?
 mergesWhitespaceNode
- extends abstractPatternNode
+ extends abstractFeatureNode
  crux mergesWhitespace?
 hasGenericsNode
- extends abstractPatternNode
+ extends abstractFeatureNode
  crux hasGenerics?
 hasPolymorphismNode
- extends abstractPatternNode
+ extends abstractFeatureNode
  crux hasPolymorphism?
 canBeCompiledToObjectFilesNode
- extends abstractPatternNode
+ extends abstractFeatureNode
  crux canBeCompiledToObjectFiles?
 hasSingleDispatchNode
- extends abstractPatternNode
+ extends abstractFeatureNode
  crux hasSingleDispatch?
 hasMultipleDispatchNode
- extends abstractPatternNode
+ extends abstractFeatureNode
  crux hasMultipleDispatch?
 canDoGoToDefinitionNode
- extends abstractPatternNode
+ extends abstractFeatureNode
  crux canDoGoToDefinition?
 hasBitWiseOperatorsNode
- extends abstractPatternNode
+ extends abstractFeatureNode
  crux hasBitWiseOperators?
 canDoShebangNode
- extends abstractPatternNode
+ extends abstractFeatureNode
  crux canDoShebang?
 canDoFindAllReferencesNode
- extends abstractPatternNode
+ extends abstractFeatureNode
  crux canDoFindAllReferences?
 canDoRenameNode
- extends abstractPatternNode
+ extends abstractFeatureNode
  crux canDoRename?
 canReadCommandLineArgsNode
- extends abstractPatternNode
+ extends abstractFeatureNode
  crux canReadCommandLineArgs?
 canUseQuestionMarksAsPartOfIdentifierNode
- extends abstractPatternNode
+ extends abstractFeatureNode
  crux canUseQuestionMarksAsPartOfIdentifier?
 hasUnicodeIdentifiersNode
- extends abstractPatternNode
+ extends abstractFeatureNode
  crux hasUnicodeIdentifiers?
 doesEndOfLineEqualEndOfStatementNode
- extends abstractPatternNode
+ extends abstractFeatureNode
  crux doesEndOfLineEqualEndOfStatement?
 has1DArraysNode
- extends abstractPatternNode
+ extends abstractFeatureNode
  crux has1DArrays?
 hasAdditionOperatorNode
- extends abstractPatternNode
+ extends abstractFeatureNode
  crux hasAdditionOperator?
 hasAlgebraicTypesNode
- extends abstractPatternNode
+ extends abstractFeatureNode
  crux hasAlgebraicTypes?
 hasDefaultParametersNode
- extends abstractPatternNode
+ extends abstractFeatureNode
  crux hasDefaultParameters?
 hasVirtualFunctionsNode
- extends abstractPatternNode
+ extends abstractFeatureNode
  crux hasVirtualFunctions?
 hasArraySlicingSyntaxNode
- extends abstractPatternNode
+ extends abstractFeatureNode
  crux hasArraySlicingSyntax?
 hasSourceMapsNode
  crux hasSourceMaps?
- extends abstractPatternNode
+ extends abstractFeatureNode
 hasSymbolTablesNode
  crux hasSymbolTables?
- extends abstractPatternNode
+ extends abstractFeatureNode
 hasAssignmentCharacterNode
- extends abstractPatternNode
+ extends abstractFeatureNode
  crux hasAssignmentCharacter?
 hasProcessorRegistersNode
- extends abstractPatternNode
+ extends abstractFeatureNode
  crux hasProcessorRegisters?
 hasAssociativeArraysNode
- extends abstractPatternNode
+ extends abstractFeatureNode
  crux hasAssociativeArrays?
 hasDynamicPropertiesNode
- extends abstractPatternNode
+ extends abstractFeatureNode
  crux hasDynamicProperties?
 hasBlocksNode
- extends abstractPatternNode
+ extends abstractFeatureNode
  crux hasBlocks?
 hasMagicGettersAndSettersNode
- extends abstractPatternNode
+ extends abstractFeatureNode
  crux hasMagicGettersAndSetters?
 hasBlockScopeNode
- extends abstractPatternNode
+ extends abstractFeatureNode
  crux hasBlockScope?
 hasBooleansNode
- extends abstractPatternNode
+ extends abstractFeatureNode
  crux hasBooleans?
 hasBoundedCheckedArraysNode
- extends abstractPatternNode
+ extends abstractFeatureNode
  crux hasBoundedCheckedArrays?
 hasBreakNode
- extends abstractPatternNode
+ extends abstractFeatureNode
  crux hasBreak?
 hasBuiltInRegexNode
- extends abstractPatternNode
+ extends abstractFeatureNode
  crux hasBuiltInRegex?
 hasCExtensionsNode
- extends abstractPatternNode
+ extends abstractFeatureNode
  crux hasCExtensions?
 hasMethodChainingNode
- extends abstractPatternNode
+ extends abstractFeatureNode
  crux hasMethodChaining?
 hasCharsNode
- extends abstractPatternNode
+ extends abstractFeatureNode
  crux hasChars?
 hasClassesNode
- extends abstractPatternNode
+ extends abstractFeatureNode
  crux hasClasses?
 hasConditionalsNode
- extends abstractPatternNode
+ extends abstractFeatureNode
  crux hasConditionals?
 hasCommentsNode
- extends abstractPatternNode
+ extends abstractFeatureNode
  crux hasComments?
 hasLineCommentsNode
- extends abstractPatternNode
+ extends abstractFeatureNode
  description I define a line comment as a character(s) that starts a comment that cannot be stopped except by a line break character or end of file character.
  crux hasLineComments?
 hasMultiLineCommentsNode
- extends abstractPatternNode
+ extends abstractFeatureNode
  crux hasMultiLineComments?
 hasDocCommentsNode
- extends abstractPatternNode
+ extends abstractFeatureNode
  crux hasDocComments?
 hasImplicitArgumentsNode
- extends abstractPatternNode
+ extends abstractFeatureNode
  crux hasImplicitArguments?
 hasComplexNode
- extends abstractPatternNode
+ extends abstractFeatureNode
  crux hasComplex?
 hasCompositeTypesNode
- extends abstractPatternNode
+ extends abstractFeatureNode
  crux hasCompositeTypes?
 hasStructsNode
- extends abstractPatternNode
+ extends abstractFeatureNode
  crux hasStructs?
 hasConstructorsNode
- extends abstractPatternNode
+ extends abstractFeatureNode
  crux hasConstructors?
 hasZippersNode
- extends abstractPatternNode
+ extends abstractFeatureNode
  crux hasZippers?
 hasConstantsNode
- extends abstractPatternNode
+ extends abstractFeatureNode
  crux hasConstants?
 hasContinueNode
- extends abstractPatternNode
+ extends abstractFeatureNode
  crux hasContinue?
 hasDependentTypesNode
- extends abstractPatternNode
+ extends abstractFeatureNode
  crux hasDependentTypes?
 hasDeterminantOperatorNode
- extends abstractPatternNode
+ extends abstractFeatureNode
  crux hasDeterminantOperator?
 hasDictionaryTypeNode
- extends abstractPatternNode
+ extends abstractFeatureNode
  crux hasDictionaryType?
 hasDoWhileLoopsNode
- extends abstractPatternNode
+ extends abstractFeatureNode
  crux hasDoWhileLoops?
 hasDualQuoteEscapingNode
- extends abstractPatternNode
+ extends abstractFeatureNode
  crux hasDualQuoteEscaping?
 hasDynamicSizedArraysNode
- extends abstractPatternNode
+ extends abstractFeatureNode
  crux hasDynamicSizedArrays?
 hasDynamicTypingNode
- extends abstractPatternNode
+ extends abstractFeatureNode
  crux hasDynamicTyping?
 hasEnumsNode
- extends abstractPatternNode
+ extends abstractFeatureNode
  crux hasEnums?
 hasEscapeCharactersNode
- extends abstractPatternNode
+ extends abstractFeatureNode
  crux hasEscapeCharacters?
 hasExceptionsNode
- extends abstractPatternNode
+ extends abstractFeatureNode
  crux hasExceptions?
 hasExpressionsNode
- extends abstractPatternNode
+ extends abstractFeatureNode
  crux hasExpressions?
 hasFileScopeNode
- extends abstractPatternNode
+ extends abstractFeatureNode
  crux hasFileScope?
 hasFinallyNode
- extends abstractPatternNode
+ extends abstractFeatureNode
  crux hasFinally?
 hasFirstClassFunctionsNode
- extends abstractPatternNode
+ extends abstractFeatureNode
  crux hasFirstClassFunctions?
 hasFloatsNode
- extends abstractPatternNode
+ extends abstractFeatureNode
  crux hasFloats?
 hasFnArgumentsNode
- extends abstractPatternNode
+ extends abstractFeatureNode
  crux hasFnArguments?
 hasFnArgumentTypeDeclarationsNode
- extends abstractPatternNode
+ extends abstractFeatureNode
  crux hasFnArgumentTypeDeclarations?
 hasForEachLoopsNode
- extends abstractPatternNode
+ extends abstractFeatureNode
  crux hasForEachLoops?
 hasForLoopsNode
- extends abstractPatternNode
+ extends abstractFeatureNode
  crux hasForLoops?
 hasFunctionScopeNode
- extends abstractPatternNode
+ extends abstractFeatureNode
  crux hasFunctionScope?
-hasPatternMatchingNode
- crux hasPatternMatching?
- extends abstractPatternNode
+hasFeatureMatchingNode
+ crux hasFeatureMatching?
+ extends abstractFeatureNode
 hasGarbageCollectionNode
- extends abstractPatternNode
+ extends abstractFeatureNode
  crux hasGarbageCollection?
 hasGeneratorsNode
- extends abstractPatternNode
+ extends abstractFeatureNode
  crux hasGenerators?
 hasGlobalScopeNode
- extends abstractPatternNode
+ extends abstractFeatureNode
  crux hasGlobalScope?
 hasGotosNode
- extends abstractPatternNode
+ extends abstractFeatureNode
  crux hasGotos?
 hasHereDocsNode
- extends abstractPatternNode
+ extends abstractFeatureNode
  crux hasHereDocs?
 hashHighLevelDataTypesNode
- extends abstractPatternNode
+ extends abstractFeatureNode
  crux hashHighLevelDataTypes?
 hasDirectivesNode
- extends abstractPatternNode
+ extends abstractFeatureNode
  crux hasDirectives?
 hasIdentifiersNode
- extends abstractPatternNode
+ extends abstractFeatureNode
  crux hasIdentifiers?
 hasIfElsesNode
- extends abstractPatternNode
+ extends abstractFeatureNode
  crux hasIfElses?
 hasIfsNode
- extends abstractPatternNode
+ extends abstractFeatureNode
  crux hasIfs?
 hasImplicitTypeConversionsNode
- extends abstractPatternNode
+ extends abstractFeatureNode
  crux hasImplicitTypeConversions?
 hasExplicitTypeCastingNode
- extends abstractPatternNode
+ extends abstractFeatureNode
  crux hasExplicitTypeCasting?
 hasImportsNode
- extends abstractPatternNode
+ extends abstractFeatureNode
  crux hasImports?
 hasExportsNode
- extends abstractPatternNode
+ extends abstractFeatureNode
  crux hasExports?
 hasInfixNotationNode
- extends abstractPatternNode
+ extends abstractFeatureNode
  crux hasInfixNotation?
 hasInterfacesNode
- extends abstractPatternNode
+ extends abstractFeatureNode
  crux hasInterfaces?
 hasInterpolatedStringsNode
- extends abstractPatternNode
+ extends abstractFeatureNode
  crux hasInterpolatedStrings?
 hasIntegersNode
- extends abstractPatternNode
+ extends abstractFeatureNode
  crux hasIntegers?
 hasIteratorsNode
- extends abstractPatternNode
+ extends abstractFeatureNode
  crux hasIterators?
 hasJavaExtensionsNode
- extends abstractPatternNode
+ extends abstractFeatureNode
  crux hasJavaExtensions?
 hasLabelsNode
- extends abstractPatternNode
+ extends abstractFeatureNode
  crux hasLabels?
 hasAnonymousFunctionsNode
- extends abstractPatternNode
+ extends abstractFeatureNode
  crux hasAnonymousFunctions?
 hasLazyEvalNode
- extends abstractPatternNode
+ extends abstractFeatureNode
  crux hasLazyEval?
 hasLazyEvaluationNode
- extends abstractPatternNode
+ extends abstractFeatureNode
  crux hasLazyEvaluation?
 hasLineContinuationsNode
- extends abstractPatternNode
+ extends abstractFeatureNode
  crux hasLineContinuations?
 hasLineContinuatorCharacterNode
- extends abstractPatternNode
+ extends abstractFeatureNode
  crux hasLineContinuatorCharacter?
 hasLinkersNode
- extends abstractPatternNode
+ extends abstractFeatureNode
  crux hasLinkers?
 hasListComprehensionNode
- extends abstractPatternNode
+ extends abstractFeatureNode
  crux hasListComprehension?
 hasMessagePassingNode
- extends abstractPatternNode
+ extends abstractFeatureNode
  crux hasMessagePassing?
 hasRangeOperatorsNode
- extends abstractPatternNode
+ extends abstractFeatureNode
  crux hasRangeOperators?
 hasListsNode
- extends abstractPatternNode
+ extends abstractFeatureNode
  crux hasLists?
 hasBlobsNode
- extends abstractPatternNode
+ extends abstractFeatureNode
  crux hasBlobs?
 hasClobsNode
- extends abstractPatternNode
+ extends abstractFeatureNode
  crux hasClobs?
 hasSExpressionsNode
- extends abstractPatternNode
+ extends abstractFeatureNode
  crux hasSExpressions?
 hasTimestampsNode
- extends abstractPatternNode
+ extends abstractFeatureNode
  crux hasTimestamps?
 hasDecimalsNode
- extends abstractPatternNode
+ extends abstractFeatureNode
  crux hasDecimals?
 hasSymbolsNode
- extends abstractPatternNode
+ extends abstractFeatureNode
  crux hasSymbols?
 hasTypeAnnotationsNode
- extends abstractPatternNode
+ extends abstractFeatureNode
  crux hasTypeAnnotations?
 hasMacrosNode
- extends abstractPatternNode
+ extends abstractFeatureNode
  crux hasMacros?
 hasManualMemoryManagementNode
- extends abstractPatternNode
+ extends abstractFeatureNode
  crux hasManualMemoryManagement?
 hasMathLikeNotationNode
- extends abstractPatternNode
+ extends abstractFeatureNode
  crux hasMathLikeNotation?
 hasMemberVariablesNode
- extends abstractPatternNode
+ extends abstractFeatureNode
  crux hasMemberVariables?
 hasFunctionOverloadingNode
- extends abstractPatternNode
+ extends abstractFeatureNode
  crux hasFunctionOverloading?
 hasMethodOverloadingNode
- extends abstractPatternNode
+ extends abstractFeatureNode
  crux hasMethodOverloading?
 hasMixinsNode
- extends abstractPatternNode
+ extends abstractFeatureNode
  crux hasMixins?
 hasNamespacesNode
- extends abstractPatternNode
+ extends abstractFeatureNode
  crux hasNamespaces?
 hasMultidimensionalArraysNode
- extends abstractPatternNode
+ extends abstractFeatureNode
  crux hasMultidimensionalArrays?
 hasMultilineStringsNode
- extends abstractPatternNode
+ extends abstractFeatureNode
  crux hasMultilineStrings?
 hasMultipleInheritanceNode
- extends abstractPatternNode
+ extends abstractFeatureNode
  crux hasMultipleInheritance?
 hasNestedFunctionsNode
- extends abstractPatternNode
+ extends abstractFeatureNode
  crux hasNestedFunctions?
 hasNoKeywordsNode
- extends abstractPatternNode
+ extends abstractFeatureNode
  crux hasNoKeywords?
 hasNullNode
- extends abstractPatternNode
+ extends abstractFeatureNode
  crux hasNull?
 hasObjectConstructorsNode
- extends abstractPatternNode
+ extends abstractFeatureNode
  crux hasObjectConstructors?
 hasObjectsNode
- extends abstractPatternNode
+ extends abstractFeatureNode
  crux hasObjects?
 hasCaseInsensitiveIdentifiersNode
- extends abstractPatternNode
+ extends abstractFeatureNode
  crux hasCaseInsensitiveIdentifiers?
 hasOperatorOverloadingNode
- extends abstractPatternNode
+ extends abstractFeatureNode
  crux hasOperatorOverloading?
 hasReferencesNode
- extends abstractPatternNode
+ extends abstractFeatureNode
  crux hasReferences?
 hasPassByValueNode
- extends abstractPatternNode
+ extends abstractFeatureNode
  crux hasPassByValue?
 hasPipesNode
- extends abstractPatternNode
+ extends abstractFeatureNode
  crux hasPipes?
 hasPolymorphicListTypeNode
- extends abstractPatternNode
+ extends abstractFeatureNode
  crux hasPolymorphicListType?
 hasPostfixNotationNode
- extends abstractPatternNode
+ extends abstractFeatureNode
  crux hasPostfixNotation?
 hasPrefixNotationNode
- extends abstractPatternNode
+ extends abstractFeatureNode
  crux hasPrefixNotation?
 hasPrintStatementsNode
- extends abstractPatternNode
+ extends abstractFeatureNode
  crux hasPrintStatements?
 hasProtectedNode
- extends abstractPatternNode
+ extends abstractFeatureNode
  crux hasProtected?
 hasQuotedRawStringsNode
- extends abstractPatternNode
+ extends abstractFeatureNode
  crux hasQuotedRawStrings?
 hasQuoteEscapingNode
- extends abstractPatternNode
+ extends abstractFeatureNode
  crux hasQuoteEscaping?
 hasRequiredMainFunctionNode
- extends abstractPatternNode
+ extends abstractFeatureNode
  crux hasRequiredMainFunction?
 hasRunTimeTypingNode
- extends abstractPatternNode
+ extends abstractFeatureNode
  crux hasRunTimeTyping?
 hasSelfOrThisWordNode
- extends abstractPatternNode
+ extends abstractFeatureNode
  crux hasSelfOrThisWord?
 hasSemanticIndentationNode
- extends abstractPatternNode
+ extends abstractFeatureNode
  crux hasSemanticIndentation?
 hasSignificantLinesNode
- extends abstractPatternNode
+ extends abstractFeatureNode
  crux hasSignificantLines?
 hasAccessModifiersNode
- extends abstractPatternNode
+ extends abstractFeatureNode
  crux hasAccessModifiers?
 hasInheritanceNode
- extends abstractPatternNode
+ extends abstractFeatureNode
  crux hasInheritance?
 hasSpecifiableBaseIndexNode
- extends abstractPatternNode
+ extends abstractFeatureNode
  crux hasSpecifiableBaseIndex?
 hasStatementsNode
- extends abstractPatternNode
+ extends abstractFeatureNode
  crux hasStatements?
 hasStatementTerminatorCharacterNode
- extends abstractPatternNode
+ extends abstractFeatureNode
  crux hasStatementTerminatorCharacter?
 hasStaticTypingNode
- extends abstractPatternNode
+ extends abstractFeatureNode
  crux hasStaticTyping?
 hasTypeParametersNode
- extends abstractPatternNode
+ extends abstractFeatureNode
  crux hasTypeParameters?
 letterFirstIdentifiersNode
- extends abstractPatternNode
+ extends abstractFeatureNode
  description Must identifiers start with a letter?
  crux letterFirstIdentifiers?
 hasStreamsNode
- extends abstractPatternNode
+ extends abstractFeatureNode
  crux hasStreams?
 hasFunctionCompositionNode
- extends abstractPatternNode
+ extends abstractFeatureNode
  crux hasFunctionComposition?
 hasStaticMethodsNode
- extends abstractPatternNode
+ extends abstractFeatureNode
  crux hasStaticMethods?
 hasThreadsNode
- extends abstractPatternNode
+ extends abstractFeatureNode
  crux hasThreads?
 hasStringConcatOperatorNode
- extends abstractPatternNode
+ extends abstractFeatureNode
  crux hasStringConcatOperator?
 hasStringsNode
- extends abstractPatternNode
+ extends abstractFeatureNode
  crux hasStrings?
 hasTypeInferenceNode
- extends abstractPatternNode
+ extends abstractFeatureNode
  crux hasTypeInference?
 hasSuperNode
- extends abstractPatternNode
+ extends abstractFeatureNode
  crux hasSuper?
 hasSwitchNode
- extends abstractPatternNode
+ extends abstractFeatureNode
  crux hasSwitch?
 hasSyntaxForMatrixOpsNode
- extends abstractPatternNode
+ extends abstractFeatureNode
  crux hasSyntaxForMatrixOps?
 hasTemplatesNode
- extends abstractPatternNode
+ extends abstractFeatureNode
  crux hasTemplates?
 hasTernaryOperatorsNode
- extends abstractPatternNode
+ extends abstractFeatureNode
  crux hasTernaryOperators?
 hasTransposeOperatorNode
- extends abstractPatternNode
+ extends abstractFeatureNode
  crux hasTransposeOperator?
 hasTryCatchNode
- extends abstractPatternNode
+ extends abstractFeatureNode
  crux hasTryCatch?
 hasSingleTypeArraysNode
- extends abstractPatternNode
+ extends abstractFeatureNode
  description Has an array data structure that only can hold items of the same type.
  crux hasSingleTypeArrays?
 hasTraitsNode
- extends abstractPatternNode
+ extends abstractFeatureNode
  crux hasTraits?
 hasTuplesNode
- extends abstractPatternNode
+ extends abstractFeatureNode
  crux hasTuples?
 hasTypeDeclarationsNode
- extends abstractPatternNode
+ extends abstractFeatureNode
  crux hasTypeDeclarations?
 hasUnionTypesNode
- extends abstractPatternNode
+ extends abstractFeatureNode
  crux hasUnionTypes?
 hasValueReturnedFunctionsNode
- extends abstractPatternNode
+ extends abstractFeatureNode
  crux hasValueReturnedFunctions?
 hasVariableAssignmentNode
- extends abstractPatternNode
+ extends abstractFeatureNode
  crux hasVariableAssignment?
 hasVariableDeclarationsNode
- extends abstractPatternNode
+ extends abstractFeatureNode
  crux hasVariableDeclarations?
 hasUnitsOfMeasureNode
- extends abstractPatternNode
+ extends abstractFeatureNode
  crux hasUnitsOfMeasure?
 hasMapsNode
- extends abstractPatternNode
+ extends abstractFeatureNode
  crux hasMaps?
 hasSetsNode
- extends abstractPatternNode
+ extends abstractFeatureNode
  crux hasSets?
 hasIdsNode
- extends abstractPatternNode
+ extends abstractFeatureNode
  crux hasIds?
 hasTriplesNode
- extends abstractPatternNode
+ extends abstractFeatureNode
  crux hasTriples?
 hasVariadicFunctionsNode
- extends abstractPatternNode
+ extends abstractFeatureNode
  crux hasVariadicFunctions?
 hasVarsNode
- extends abstractPatternNode
+ extends abstractFeatureNode
  crux hasVars?
 hasVectorizedOperationsNode
- extends abstractPatternNode
+ extends abstractFeatureNode
  crux hasVectorizedOperations?
 hasVoidFunctionsNode
- extends abstractPatternNode
+ extends abstractFeatureNode
  crux hasVoidFunctions?
 hasWhileLoopsNode
- extends abstractPatternNode
+ extends abstractFeatureNode
  crux hasWhileLoops?
 hasZeroBasedNumberingNode
- extends abstractPatternNode
+ extends abstractFeatureNode
  crux hasZeroBasedNumbering?
 isInterpretedNode
- extends abstractPatternNode
+ extends abstractFeatureNode
  crux isInterpreted?
 isCaseSensitiveNode
- extends abstractPatternNode
+ extends abstractFeatureNode
  crux isCaseSensitive?
 hasModulesNode
- extends abstractPatternNode
+ extends abstractFeatureNode
  crux hasModules?
 hasDisposeBlocksNode
- extends abstractPatternNode
+ extends abstractFeatureNode
  crux hasDisposeBlocks?
 hasFunctionsNode
- extends abstractPatternNode
+ extends abstractFeatureNode
  crux hasFunctions?
 hasMethodsNode
- extends abstractPatternNode
+ extends abstractFeatureNode
  crux hasMethods?
 hasSemaphoresNode
- extends abstractPatternNode
+ extends abstractFeatureNode
  crux hasSemaphores?
 hasIncrementAndDecrementOperatorsNode
- extends abstractPatternNode
+ extends abstractFeatureNode
  crux hasIncrementAndDecrementOperators?

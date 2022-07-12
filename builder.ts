@@ -12,7 +12,7 @@ const { AbstractBuilder } = require("jtree/products/AbstractBuilder.node.js")
 const { ScrollFolder } = require("scroll-cli")
 const shell = require("child_process").execSync
 
-import { LanguagePageTemplate, PatternPageTemplate } from "./database/pages"
+import { LanguagePageTemplate, FeaturePageTemplate } from "./database/pages"
 import { PLDBBaseFolder } from "./database/PLDBBase"
 
 const { TreeBaseServer } = require("jtree/products/treeBase.node.js")
@@ -45,7 +45,7 @@ class Builder extends AbstractBuilder {
   buildAll() {
     this.buildCreatorsPage()
     this.buildCorporationsPage()
-    this.buildPatternsPage()
+    this.buildFeaturesPage()
     this.buildLanguagesPage()
     this.buildFileExtensionsPage()
     this.buildKeywordsPage()
@@ -180,7 +180,7 @@ class Builder extends AbstractBuilder {
     const page = new TreeNode(Disk.read(pagePath))
 
     const files = pldbBase
-      .filter(file => file.get("type") !== "pattern")
+      .filter(file => file.get("type") !== "feature")
       .map(file => {
         const name = file.primaryKey
         return {
@@ -297,18 +297,18 @@ class Builder extends AbstractBuilder {
     Disk.write(pagePath, text)
   }
 
-  buildPatternsPage() {
+  buildFeaturesPage() {
     pldbBase.loadFolder()
-    const pagePath = __dirname + "/blog/lists/patterns.scroll"
+    const pagePath = __dirname + "/blog/lists/features.scroll"
     const page = new TreeNode(Disk.read(pagePath))
 
-    const files = pldbBase.patternFiles.map(file => {
+    const files = pldbBase.featureFiles.map(file => {
       const name = file.primaryKey
       return {
-        pattern: file.get("title"),
-        patternLink: `../languages/${name}.html`,
+        feature: file.get("title"),
+        featureLink: `../languages/${name}.html`,
         aka: file.getAll("aka").join(" or "),
-        languages: file.languagesWithThisPattern.length,
+        languages: file.languagesWithThisFeature.length,
         psuedoExample: (file.get("psuedoExample") || "")
           .replace(/\</g, "&lt;")
           .replace(/\|/g, "&#124;")
@@ -320,10 +320,10 @@ class Builder extends AbstractBuilder {
 
     replaceNext(
       page,
-      "comment autogenPatterns",
+      "comment autogenFeatures",
       toScrollTable(new TreeNode(sorted), [
-        "pattern",
-        "patternLink",
+        "feature",
+        "featureLink",
         "aka",
         "psuedoExample",
         "languages"
@@ -333,8 +333,8 @@ class Builder extends AbstractBuilder {
     const text = page
       .toString()
       .replace(
-        /A list of .+ patterns/,
-        `A list of ${numeral(files.length).format("0,0")} patterns`
+        /A list of .+ features/,
+        `A list of ${numeral(files.length).format("0,0")} features`
       )
 
     Disk.write(pagePath, text)
@@ -555,8 +555,8 @@ class Builder extends AbstractBuilder {
       const path = `${databaseFolderWhenPublishedToWebsite}/${file.primaryKey}.scroll`
 
       const constructor =
-        file.get("type") === "pattern"
-          ? PatternPageTemplate
+        file.get("type") === "feature"
+          ? FeaturePageTemplate
           : LanguagePageTemplate
 
       Disk.write(path, new constructor(file).toScroll())
@@ -654,9 +654,9 @@ class Builder extends AbstractBuilder {
     pldbBase.loadFolder()
     pldbBase.forEach(file => {
       const comment = file.get("lineCommentKeyword")
-      if (comment && !file.getNode("patterns hasLineComments?")) {
+      if (comment && !file.getNode("features hasLineComments?")) {
         file
-          .touchNode("patterns")
+          .touchNode("features")
           .appendLineAndChildren(
             `hasLineComments? true`,
             `${comment} A comment`
@@ -737,13 +737,13 @@ class Builder extends AbstractBuilder {
       .filter(
         file =>
           file.has("lineCommentKeyword") &&
-          !file.get("patterns hasLineComments?")
+          !file.get("features hasLineComments?")
       )
       .forEach(file => {
         const kw = file.get("lineCommentKeyword")
-        file.set("patterns hasLineComments?", "true")
+        file.set("features hasLineComments?", "true")
         file
-          .touchNode("patterns hasLineComments?")
+          .touchNode("features hasLineComments?")
           .setChildren(`${kw} A comment`)
         file.save()
       })
@@ -753,16 +753,16 @@ class Builder extends AbstractBuilder {
       .filter(
         file =>
           file.has("multiLineCommentKeywords") &&
-          !file.get("patterns hasMultiLineComments?")
+          !file.get("features hasMultiLineComments?")
       )
       .forEach(file => {
         const kws = file.get("multiLineCommentKeywords")
-        file.set("patterns hasMultiLineComments?", "true")
+        file.set("features hasMultiLineComments?", "true")
         const parts = kws.split(" ")
         const start = parts[0]
         const end = parts[1] || start
         file
-          .touchNode("patterns hasMultiLineComments?")
+          .touchNode("features hasMultiLineComments?")
           .setChildren(`${start} A comment ${end}`)
 
         file.save()

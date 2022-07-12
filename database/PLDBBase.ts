@@ -45,7 +45,7 @@ metalanguage
 notation
 os operating system
 packageManager
-pattern design pattern
+feature language feature
 pl programming language
 plzoo minilanguage
 protocol
@@ -70,16 +70,16 @@ class PLDBFile extends TreeBaseFile {
     return `<a href="${this.primaryKey}.html">${this.title}</a>`
   }
 
-  get patternPath() {
-    return `patterns ${this.get("patternKeyword")}`
+  get featurePath() {
+    return `features ${this.get("featureKeyword")}`
   }
 
-  get previousRankedPattern() {
-    return this.base.getPatternAtRank(this.base.getPatternRank(this) - 1)
+  get previousRankedFeature() {
+    return this.base.getFeatureAtRank(this.base.getFeatureRank(this) - 1)
   }
 
-  get nextRankedPattern() {
-    return this.base.getPatternAtRank(this.base.getPatternRank(this) + 1)
+  get nextRankedFeature() {
+    return this.base.getFeatureAtRank(this.base.getFeatureRank(this) + 1)
   }
 
   get previousRankedLanguage() {
@@ -103,25 +103,25 @@ class PLDBFile extends TreeBaseFile {
     return this.base.getFileAtRank(this.rank + 1)
   }
 
-  get _getLanguagesWithThisPatternResearched() {
-    const patternKeyword = this.get("patternKeyword")
+  get _getLanguagesWithThisFeatureResearched() {
+    const featureKeyword = this.get("featureKeyword")
 
     return this.base.filter(file =>
-      file.getNode("patterns")?.has(patternKeyword)
+      file.getNode("features")?.has(featureKeyword)
     )
   }
 
-  get languagesWithThisPattern() {
-    const { patternPath } = this
-    return this._getLanguagesWithThisPatternResearched.filter(
-      file => file.get(patternPath) === "true"
+  get languagesWithThisFeature() {
+    const { featurePath } = this
+    return this._getLanguagesWithThisFeatureResearched.filter(
+      file => file.get(featurePath) === "true"
     )
   }
 
-  get languagesWithoutThisPattern() {
-    const { patternPath } = this
-    return this._getLanguagesWithThisPatternResearched.filter(
-      file => file.get(patternPath) === "false"
+  get languagesWithoutThisFeature() {
+    const { featurePath } = this
+    return this._getLanguagesWithThisFeatureResearched.filter(
+      file => file.get(featurePath) === "false"
     )
   }
 
@@ -150,8 +150,8 @@ class PLDBFile extends TreeBaseFile {
     )
   }
 
-  get isPattern() {
-    return this.get("type") === "pattern"
+  get isFeature() {
+    return this.get("type") === "feature"
   }
 
   get wikipediaTitle() {
@@ -256,8 +256,8 @@ class PLDBBaseFolder extends TreeBaseFolder {
     return new TreeNode.Parser(PLDBFile)
   }
 
-  get patternFiles(): PLDBFile[] {
-    return this.filter(file => file.get("type") === "pattern")
+  get featureFiles(): PLDBFile[] {
+    return this.filter(file => file.get("type") === "feature")
   }
 
   get grammarProgramConstructor() {
@@ -411,8 +411,8 @@ class PLDBBaseFolder extends TreeBaseFolder {
   _inverseRanks: InverseRankings
   _languageRanks: Rankings
   _inverseLanguageRanks: InverseRankings
-  _patternRanks: Rankings
-  _inversePatternRanks: InverseRankings
+  _featureRanks: Rankings
+  _inverseFeatureRanks: InverseRankings
   _getRanks(files = this.getChildren()) {
     if (!this._ranks) {
       this._ranks = this._calcRanks(files)
@@ -421,8 +421,8 @@ class PLDBBaseFolder extends TreeBaseFolder {
         files.filter(file => file.isLanguage)
       )
       this._inverseLanguageRanks = makeInverseRanks(this._languageRanks)
-      this._patternRanks = this._calcRanks(files.filter(file => file.isPattern))
-      this._inversePatternRanks = makeInverseRanks(this._patternRanks)
+      this._featureRanks = this._calcRanks(files.filter(file => file.isFeature))
+      this._inverseFeatureRanks = makeInverseRanks(this._featureRanks)
     }
     return this._ranks
   }
@@ -434,8 +434,8 @@ class PLDBBaseFolder extends TreeBaseFolder {
     return this.getFile(ranks[rank].id)
   }
 
-  getPatternAtRank(rank: number) {
-    return this._getFileAtRank(rank, this._inversePatternRanks)
+  getFeatureAtRank(rank: number) {
+    return this._getFileAtRank(rank, this._inverseFeatureRanks)
   }
 
   getFileAtLanguageRank(rank: number) {
@@ -456,9 +456,9 @@ class PLDBBaseFolder extends TreeBaseFolder {
     return this._languageRanks[file.primaryKey]
   }
 
-  getPatternRank(file: PLDBFile) {
+  getFeatureRank(file: PLDBFile) {
     this._getRanks()
-    return this._patternRanks[file.primaryKey].index
+    return this._featureRanks[file.primaryKey].index
   }
 
   getLanguageRank(file: PLDBFile) {
