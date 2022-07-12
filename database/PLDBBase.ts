@@ -67,7 +67,7 @@ class PLDBFile extends TreeBaseFile {
   }
 
   get link() {
-    return `<a href="${this.primaryKey}.html">${this.primaryKey}</a>`
+    return `<a href="${this.primaryKey}.html">${this.title}</a>`
   }
 
   get patternPath() {
