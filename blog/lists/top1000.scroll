@@ -107,8 +107,8 @@ pipeTable
  TCP|../languages/tcp.html|1974|protocol|96
  Modula-2|../languages/modula-2.html|1978|pl|97
  MUMPS|../languages/mumps.html|1966|pl|98
- SMTP|../languages/smtp.html|1982|protocol|99
- ECMAScript|../languages/ecmascript.html|1997|pl|100
+ ECMAScript|../languages/ecmascript.html|1997|pl|99
+ SMTP|../languages/smtp.html|1982|protocol|100
  Arduino|../languages/arduino.html|2005|pl|101
  REBOL|../languages/rebol.html|1997|pl|102
  Red|../languages/red.html|2011|pl|103
@@ -118,9 +118,9 @@ pipeTable
  VBScript|../languages/vbscript.html|1996|pl|107
  Scratch|../languages/scratch.html|2002|visual|108
  Logo|../languages/logo.html|1967|pl|109
- SPSS|../languages/spss.html|1968|pl|110
- ANTLR|../languages/antlr.html|1992|grammarLanguage|111
- Idris|../languages/idris.html|2014|pl|112
+ Idris|../languages/idris.html|2014|pl|110
+ SPSS|../languages/spss.html|1968|pl|111
+ ANTLR|../languages/antlr.html|1992|grammarLanguage|112
  Markdown|../languages/markdown.html|2004|textMarkup|113
  Brainfuck|../languages/brainfuck.html|1993|pl|114
  Simula|../languages/simula.html|1965|pl|115
@@ -133,17 +133,17 @@ pipeTable
  REST|../languages/rest.html|1996|protocol|122
  WebAssembly|../languages/wasm.html|2015|bytecode|123
  Oz|../languages/oz.html|1991|pl|124
- BCPL|../languages/bcpl.html|1966|pl|125
- Wren|../languages/wren.html|2013|pl|126
- MIPS architecture|../languages/mips.html|1985|isa|127
+ Wren|../languages/wren.html|2013|pl|125
+ MIPS architecture|../languages/mips.html|1985|isa|126
+ BCPL|../languages/bcpl.html|1966|pl|127
  Modula-3|../languages/modula-3.html|1986|pl|128
  XQuery|../languages/xquery.html|2007|pl|129
- Sage|../languages/sagemath.html|2005|pl|130
- SVG|../languages/svg.html|2001|textMarkup|131
- MediaWiki|../languages/mediawiki.html|2002|wikiMarkup|132
- Boo|../languages/boo.html|2003|pl|133
- HAML|../languages/haml.html|2006|template|134
- Hy|../languages/hy.html|2013|pl|135
+ SVG|../languages/svg.html|2001|textMarkup|130
+ HAML|../languages/haml.html|2006|template|131
+ Hy|../languages/hy.html|2013|pl|132
+ MediaWiki|../languages/mediawiki.html|2002|wikiMarkup|133
+ Boo|../languages/boo.html|2003|pl|134
+ Sage|../languages/sagemath.html|2005|pl|135
  OpenCL|../languages/opencl.html|2009|pl|136
  Io|../languages/io.html|2002|pl|137
  IDL|../languages/idl.html|1977|pl|138
@@ -154,9 +154,9 @@ pipeTable
  SQLite|../languages/sqlite.html|2000|queryLanguage|143
  Hack|../languages/hack.html|2014|pl|144
  YARA|../languages/yara.html|2008|pl|145
- ASP|../languages/asp.html|1996|template|146
- sed|../languages/sed.html|1974|pl|147
- Ballerina|../languages/ballerina.html|2015|pl|148
+ Ballerina|../languages/ballerina.html|2015|pl|146
+ ASP|../languages/asp.html|1996|template|147
+ sed|../languages/sed.html|1974|pl|148
  jq|../languages/jq.html|2012|queryLanguage|149
  Rust MIR|../languages/rust-mir.html|2016|ir|150
  AMPL|../languages/ampl.html|1985|pl|151
@@ -173,215 +173,215 @@ pipeTable
  Limbo|../languages/limbo.html|1995|pl|162
  Occam|../languages/occam.html|1983|pl|163
  VBA|../languages/vba.html|1993|pl|164
- Xojo|../languages/xojo.html|1996|pl|165
- Reverse Polish notation|../languages/reverse-polish-notation.html|1953|notation|166
- ActionScript|../languages/actionscript.html|1998|pl|167
- Agda|../languages/agda.html|2007|pl|168
- Befunge|../languages/befunge.html|1993|esolang|169
- SPARC|../languages/sparc.html|1987|isa|170
- JSP|../languages/java-server-pages.html|1999|template|171
- Falcon|../languages/falcon.html|2003|pl|172
- Squirrel|../languages/squirrel.html|2003|pl|173
- Factor|../languages/factor.html|2003|pl|174
- PL/I|../languages/pl-i.html|1964|pl|175
+ Eve|../languages/eve.html|2016|pl|165
+ Xojo|../languages/xojo.html|1996|pl|166
+ Reverse Polish notation|../languages/reverse-polish-notation.html|1953|notation|167
+ ActionScript|../languages/actionscript.html|1998|pl|168
+ Agda|../languages/agda.html|2007|pl|169
+ Befunge|../languages/befunge.html|1993|esolang|170
+ SPARC|../languages/sparc.html|1987|isa|171
+ JSP|../languages/java-server-pages.html|1999|template|172
+ Falcon|../languages/falcon.html|2003|pl|173
+ Squirrel|../languages/squirrel.html|2003|pl|174
+ Factor|../languages/factor.html|2003|pl|175
  Ceylon|../languages/ceylon.html|2011|pl|176
- V|../languages/v.html|2019|pl|177
+ PL/I|../languages/pl-i.html|1964|pl|177
  Processing|../languages/processing.html|2001|pl|178
  Makefile|../languages/makefile.html|1976|pl|179
  Nemerle|../languages/nemerle.html|2003|pl|180
  ClojureScript|../languages/clojurescript.html|2011|pl|181
- MoonScript|../languages/moonscript.html|2011|pl|182
- Algol|../languages/algol.html|1958|pl|183
- Wolfram Language|../languages/wolfram.html|1988|pl|184
- NewLisp|../languages/newlisp.html|1991|pl|185
- Cap'n Proto|../languages/capn-proto.html|2013|idl|186
- Opa|../languages/opa.html|2011|pl|187
- Fantom|../languages/fantom.html|2005|pl|188
- RFC|../languages/rfc.html|1969|notation|189
- XPath|../languages/xpath.html|1999|queryLanguage|190
- Protocol Buffers|../languages/protobuf.html|2008|idl|191
- Scilab|../languages/scilab.html|1990|pl|192
- Sass|../languages/sass.html|2006|stylesheetLanguage|193
- SuperCollider|../languages/supercollider.html|1996|pl|194
- ColdFusion|../languages/coldfusion.html|1995|pl|195
- Clean|../languages/clean.html|1987|pl|196
- Bourne shell|../languages/bourne-shell.html|1977|pl|197
- Oberon|../languages/oberon.html|1986|pl|198
- Dafny|../languages/dafny.html|2009|pl|199
- CIL|../languages/cil.html|2000|pl|200
+ V|../languages/v.html|2019|pl|182
+ MoonScript|../languages/moonscript.html|2011|pl|183
+ Algol|../languages/algol.html|1958|pl|184
+ Wolfram Language|../languages/wolfram.html|1988|pl|185
+ NewLisp|../languages/newlisp.html|1991|pl|186
+ Cap'n Proto|../languages/capn-proto.html|2013|idl|187
+ RFC|../languages/rfc.html|1969|notation|188
+ Opa|../languages/opa.html|2011|pl|189
+ Fantom|../languages/fantom.html|2005|pl|190
+ XPath|../languages/xpath.html|1999|queryLanguage|191
+ Sass|../languages/sass.html|2006|stylesheetLanguage|192
+ Protocol Buffers|../languages/protobuf.html|2008|idl|193
+ Scilab|../languages/scilab.html|1990|pl|194
+ SuperCollider|../languages/supercollider.html|1996|pl|195
+ ColdFusion|../languages/coldfusion.html|1995|pl|196
+ Clean|../languages/clean.html|1987|pl|197
+ Bourne shell|../languages/bourne-shell.html|1977|pl|198
+ Oberon|../languages/oberon.html|1986|pl|199
+ Dafny|../languages/dafny.html|2009|pl|200
  JSON5|../languages/json5.html|2012|dataNotation|201
  XAML|../languages/xaml.html|2008|xmlFormat|202
- HyperTalk|../languages/hypertalk.html|1987|pl|203
- UNLAMBDA|../languages/unlambda.html|1999|pl|204
- IA-32|../languages/ia-32.html|1985|isa|205
- ABC|../languages/abc.html|1980|pl|206
- HCL|../languages/hcl.html|2014|dataNotation|207
- ALGOL 60|../languages/algol-60.html|1960|pl|208
+ CIL|../languages/cil.html|2000|pl|203
+ IA-32|../languages/ia-32.html|1985|isa|204
+ HyperTalk|../languages/hypertalk.html|1987|pl|205
+ UNLAMBDA|../languages/unlambda.html|1999|pl|206
+ ABC|../languages/abc.html|1980|pl|207
+ HCL|../languages/hcl.html|2014|dataNotation|208
  Ioke|../languages/ioke.html|2008|pl|209
  Lasso|../languages/lasso.html|1995|pl|210
- PostCSS|../languages/postcss.html|2013|textMarkup|211
+ ALGOL 60|../languages/algol-60.html|1960|pl|211
  Maxima|../languages/maxima.html|1982|pl|212
- Bison|../languages/bison.html|1985|grammarLanguage|213
- xBase|../languages/xbase.html|1986|pl|214
- Seed7|../languages/seed7.html|2005|pl|215
- Batchfile|../languages/batch.html|1985|pl|216
- FLUX|../languages/flux.html|2014|pl|217
- grep|../languages/grep.html|1974|pl|218
- PicoLisp|../languages/picolisp.html|1988|pl|219
- SETL|../languages/setl.html|1969|pl|220
- Coconut|../languages/coconut.html|2014|pl|221
- SPARQL|../languages/sparql.html|2008|queryLanguage|222
- Org|../languages/org.html|2003|textMarkup|223
- Mercury|../languages/mercury.html|1995|pl|224
- Coq|../languages/coq.html|1989|pl|225
- OWL|../languages/owl.html|2004|xmlFormat|226
- E|../languages/e.html|1997|pl|227
- ABAP|../languages/abap.html|1983|pl|228
- Java Bytecode|../languages/java-bytecode.html|1995|bytecode|229
- QBasic|../languages/qbasic.html|1991|pl|230
- LFE|../languages/lfe.html|2008|pl|231
- LOLCODE|../languages/lolcode.html|2007|esolang|232
- Modelica|../languages/modelica.html|1997|pl|233
- INTERCAL|../languages/intercal.html|1972|pl|234
- K|../languages/k.html|1993|pl|235
- X10|../languages/x10.html|2004|pl|236
- ink|../languages/ink.html|2015|esolang|237
- S-expressions|../languages/s-expressions.html|1960|dataNotation|238
- Datalog|../languages/datalog.html|1977|pl|239
- API Blueprint|../languages/api-blueprint.html|2013|textMarkup|240
- AutoLISP|../languages/autolisp.html|1986|pl|241
- Ini|../languages/ini.html|1987|dataNotation|242
+ PostCSS|../languages/postcss.html|2013|textMarkup|213
+ Batchfile|../languages/batch.html|1985|pl|214
+ Bison|../languages/bison.html|1985|grammarLanguage|215
+ xBase|../languages/xbase.html|1986|pl|216
+ Seed7|../languages/seed7.html|2005|pl|217
+ FLUX|../languages/flux.html|2014|pl|218
+ grep|../languages/grep.html|1974|pl|219
+ Coconut|../languages/coconut.html|2014|pl|220
+ PicoLisp|../languages/picolisp.html|1988|pl|221
+ SETL|../languages/setl.html|1969|pl|222
+ Coq|../languages/coq.html|1989|pl|223
+ SPARQL|../languages/sparql.html|2008|queryLanguage|224
+ Org|../languages/org.html|2003|textMarkup|225
+ Mercury|../languages/mercury.html|1995|pl|226
+ OWL|../languages/owl.html|2004|xmlFormat|227
+ E|../languages/e.html|1997|pl|228
+ ABAP|../languages/abap.html|1983|pl|229
+ Java Bytecode|../languages/java-bytecode.html|1995|bytecode|230
+ QBasic|../languages/qbasic.html|1991|pl|231
+ LFE|../languages/lfe.html|2008|pl|232
+ LOLCODE|../languages/lolcode.html|2007|esolang|233
+ Modelica|../languages/modelica.html|1997|pl|234
+ INTERCAL|../languages/intercal.html|1972|pl|235
+ K|../languages/k.html|1993|pl|236
+ X10|../languages/x10.html|2004|pl|237
+ ink|../languages/ink.html|2015|esolang|238
+ S-expressions|../languages/s-expressions.html|1960|dataNotation|239
+ Datalog|../languages/datalog.html|1977|pl|240
+ Ini|../languages/ini.html|1987|dataNotation|241
+ API Blueprint|../languages/api-blueprint.html|2013|textMarkup|242
  Microsoft BASIC|../languages/microsoft-basic.html|1975|pl|243
- Jinja|../languages/jinja.html|2006|template|244
+ AutoLISP|../languages/autolisp.html|1986|pl|244
  Emojicode|../languages/emojicode.html|2016|pl|245
- PureBasic|../languages/purebasic.html|1998|pl|246
- Puppet|../languages/puppet.html|2005|pl|247
- M4|../languages/m4.html|1977|pl|248
- Terra|../languages/terra.html|2012|pl|249
- Ninja|../languages/ninja.html|2012|template|250
+ Jinja|../languages/jinja.html|2006|template|246
+ PureBasic|../languages/purebasic.html|1998|pl|247
+ Puppet|../languages/puppet.html|2005|pl|248
+ M4|../languages/m4.html|1977|pl|249
+ Terra|../languages/terra.html|2012|pl|250
  Slim|../languages/slim-lang.html|2011|template|251
- Squeak|../languages/squeak.html|1996|pl|252
- F*|../languages/fstar.html|2014|pl|253
- Turtle|../languages/turtle.html|2011|dataNotation|254
- SI|../languages/si.html|1960|notation|255
- CSV|../languages/csv.html|1972|dataNotation|256
+ Ninja|../languages/ninja.html|2012|template|252
+ Squeak|../languages/squeak.html|1996|pl|253
+ F*|../languages/fstar.html|2014|pl|254
+ Turtle|../languages/turtle.html|2011|dataNotation|255
+ SI|../languages/si.html|1960|notation|256
  SYMBOL|../languages/symbol.html|1971|pl|257
- Caml|../languages/caml.html|1985|pl|258
- Dhall|../languages/dhall.html|2017|dataNotation|259
- JCL|../languages/jcl.html|1964|pl|260
- pegjs|../languages/pegjs.html|2010|grammarLanguage|261
- Pug|../languages/pug.html|2010|template|262
- Q|../languages/q.html|2003|pl|263
- CSP|../languages/csp.html|1978|pl|264
- WSDL|../languages/wsdl.html|2000|xmlFormat|265
- Office Open XML|../languages/ooxml.html|2006|xmlFormat|266
- AutoHotkey|../languages/autohotkey.html|2003|pl|267
- AXIOM|../languages/axiom.html|1992|pl|268
- Guile|../languages/guile.html|1993|pl|269
- MDX|../languages/mdx.html|2017|textMarkup|270
+ CSV|../languages/csv.html|1972|dataNotation|258
+ Caml|../languages/caml.html|1985|pl|259
+ Dhall|../languages/dhall.html|2017|dataNotation|260
+ JCL|../languages/jcl.html|1964|pl|261
+ pegjs|../languages/pegjs.html|2010|grammarLanguage|262
+ Pug|../languages/pug.html|2010|template|263
+ Q|../languages/q.html|2003|pl|264
+ CSP|../languages/csp.html|1978|pl|265
+ WSDL|../languages/wsdl.html|2000|xmlFormat|266
+ Office Open XML|../languages/ooxml.html|2006|xmlFormat|267
+ AutoHotkey|../languages/autohotkey.html|2003|pl|268
+ AXIOM|../languages/axiom.html|1992|pl|269
+ MariaDB|../languages/mariadb.html|2009|queryLanguage|270
  Zephir|../languages/zephir.html|2013|pl|271
- MariaDB|../languages/mariadb.html|2009|queryLanguage|272
- Troff|../languages/troff.html|1973|textMarkup|273
- Clipper|../languages/clipper.html|1985|pl|274
- Fortress|../languages/fortress.html|2004|pl|275
- Genie|../languages/genie.html|2008|pl|276
- Joy|../languages/joy.html|2001|pl|277
- PRQL|../languages/prql.html|2022|queryLanguage|278
- Liquid|../languages/liquid.html|2008|template|279
+ Guile|../languages/guile.html|1993|pl|272
+ MDX|../languages/mdx.html|2017|textMarkup|273
+ Troff|../languages/troff.html|1973|textMarkup|274
+ Clipper|../languages/clipper.html|1985|pl|275
+ Fortress|../languages/fortress.html|2004|pl|276
+ Genie|../languages/genie.html|2008|pl|277
+ Joy|../languages/joy.html|2001|pl|278
+ PRQL|../languages/prql.html|2022|queryLanguage|279
  BPMN|../languages/bpmn.html|2004|visual|280
- ISWIM|../languages/iswim.html|1966|pl|281
- Turing|../languages/turing.html|1982|pl|282
- LiveCode|../languages/livecode.html|2001|pl|283
- SISAL|../languages/sisal.html|1983|pl|284
- Z shell|../languages/z-shell.html|1990|pl|285
- x86 Assembly|../languages/x86-assembly.html|1972|assembly|286
- JSON-LD|../languages/json-ld.html|2010|dataValidationLanguage|287
+ Liquid|../languages/liquid.html|2008|template|281
+ Z shell|../languages/z-shell.html|1990|pl|282
+ ISWIM|../languages/iswim.html|1966|pl|283
+ Turing|../languages/turing.html|1982|pl|284
+ LiveCode|../languages/livecode.html|2001|pl|285
+ SISAL|../languages/sisal.html|1983|pl|286
+ x86 Assembly|../languages/x86-assembly.html|1972|assembly|287
  C--|../languages/c--.html|1997|pl|288
- oil|../languages/oil.html|2016|pl|289
- Morse code|../languages/morse-code.html|1837|notation|290
- Cython|../languages/cython.html|2007|pl|291
- Pure Data|../languages/puredata.html|1996|pl|292
- NetLogo|../languages/netlogo.html|1999|pl|293
- RMarkdown|../languages/rmarkdown.html|2014|textMarkup|294
- B|../languages/b.html|1969|pl|295
- Whitespace|../languages/whitespace.html|2003|esolang|296
- FlatBuffers|../languages/flatbuffers.html|2014|idl|297
- EDN|../languages/edn.html|2012|dataNotation|298
- kaitai|../languages/kaitai.html|2016|idl|299
- Semantic Versioning|../languages/semver.html|2011|schema|300
- tornado|../languages/tornado.html|2009|template|301
- Simulink|../languages/simulink.html|1984|pl|302
- HOPE|../languages/hope.html|1978|pl|303
- Korn shell|../languages/korn-shell.html|1983|pl|304
- GW-BASIC|../languages/gw-basic.html|1983|pl|305
- Deno|../languages/deno.html|2018|pl|306
- mathics|../languages/mathics.html|2012|pl|307
- SaltStack|../languages/saltstack.html|2011|pl|308
- Hjson|../languages/hjson.html|2014|dataNotation|309
- Visual FoxPro|../languages/visual-foxpro.html|1995|pl|310
- SGML|../languages/sgml.html|1986|textMarkup|311
- Sather|../languages/sather.html|1990|pl|312
- ASN.1|../languages/asn-1.html|1984|idl|313
- Inform|../languages/inform.html|1993|pl|314
- ATS|../languages/ats.html|2013|pl|315
- KaTeX|../languages/katex.html|2013|textMarkup|316
- RAML|../languages/raml.html|2013|yamlFormat|317
- Lean|../languages/lean.html|2015|pl|318
- EJS|../languages/ejs.html|2010|template|319
+ JSON-LD|../languages/json-ld.html|2010|dataValidationLanguage|289
+ oil|../languages/oil.html|2016|pl|290
+ Morse code|../languages/morse-code.html|1837|notation|291
+ Cython|../languages/cython.html|2007|pl|292
+ B|../languages/b.html|1969|pl|293
+ NetLogo|../languages/netlogo.html|1999|pl|294
+ Pure Data|../languages/puredata.html|1996|pl|295
+ RMarkdown|../languages/rmarkdown.html|2014|textMarkup|296
+ Whitespace|../languages/whitespace.html|2003|esolang|297
+ FlatBuffers|../languages/flatbuffers.html|2014|idl|298
+ EDN|../languages/edn.html|2012|dataNotation|299
+ kaitai|../languages/kaitai.html|2016|idl|300
+ Simulink|../languages/simulink.html|1984|pl|301
+ Semantic Versioning|../languages/semver.html|2011|schema|302
+ GW-BASIC|../languages/gw-basic.html|1983|pl|303
+ HOPE|../languages/hope.html|1978|pl|304
+ Korn shell|../languages/korn-shell.html|1983|pl|305
+ tornado|../languages/tornado.html|2009|template|306
+ Deno|../languages/deno.html|2018|pl|307
+ mathics|../languages/mathics.html|2012|pl|308
+ SaltStack|../languages/saltstack.html|2011|pl|309
+ Hjson|../languages/hjson.html|2014|dataNotation|310
+ Visual FoxPro|../languages/visual-foxpro.html|1995|pl|311
+ SGML|../languages/sgml.html|1986|textMarkup|312
+ Flow|../languages/flow.html|2014|pl|313
+ ASN.1|../languages/asn-1.html|1984|idl|314
+ Sather|../languages/sather.html|1990|pl|315
+ Inform|../languages/inform.html|1993|pl|316
+ ATS|../languages/ats.html|2013|pl|317
+ RAML|../languages/raml.html|2013|yamlFormat|318
+ KaTeX|../languages/katex.html|2013|textMarkup|319
  Z notation|../languages/z-notation.html|1974|notation|320
- DOT|../languages/dot.html|2007|textMarkup|321
- reStructuredText|../languages/restructuredtext.html|2002|textMarkup|322
- CIL|../languages/cilk.html|1994|pl|323
- RPL|../languages/rpl.html|1984|pl|324
- Object Pascal|../languages/object-pascal.html|1986|pl|325
- YASnippet|../languages/yasnippet.html|2008|textMarkup|326
- Stencil|../languages/stencil.html|2018|template|327
- WDL|../languages/wdl.html|2012|pl|328
- CFML|../languages/cfml.html|1995|pl|329
- Csound|../languages/csound.html|1985|pl|330
- muPad|../languages/mupad.html|1997|pl|331
- LPC|../languages/lpc.html|1995|pl|332
- Twig|../languages/twig.html|2009|template|333
- LiveScript|../languages/livescript.html|2011|pl|334
- Pig Latin|../languages/pig.html|2008|queryLanguage|335
- Scala.js|../languages/scala-js.html|2013|pl|336
- Nextflow|../languages/nextflow.html|2013|pl|337
- RPG|../languages/ibm-rpg.html|1959|pl|338
- CLU|../languages/clu.html|1975|pl|339
+ Lean|../languages/lean.html|2015|pl|321
+ EJS|../languages/ejs.html|2010|template|322
+ DOT|../languages/dot.html|2007|textMarkup|323
+ Lily|../languages/lily.html|2011|pl|324
+ reStructuredText|../languages/restructuredtext.html|2002|textMarkup|325
+ CIL|../languages/cilk.html|1994|pl|326
+ RPL|../languages/rpl.html|1984|pl|327
+ YASnippet|../languages/yasnippet.html|2008|textMarkup|328
+ Stencil|../languages/stencil.html|2018|template|329
+ WDL|../languages/wdl.html|2012|pl|330
+ Object Pascal|../languages/object-pascal.html|1986|pl|331
+ CFML|../languages/cfml.html|1995|pl|332
+ Csound|../languages/csound.html|1985|pl|333
+ muPad|../languages/mupad.html|1997|pl|334
+ LPC|../languages/lpc.html|1995|pl|335
+ Twig|../languages/twig.html|2009|template|336
+ LiveScript|../languages/livescript.html|2011|pl|337
+ Pig Latin|../languages/pig.html|2008|queryLanguage|338
+ Scala.js|../languages/scala-js.html|2013|pl|339
  Observable|../languages/observable-lang.html|2017|pl|340
- HyperCard|../languages/hypercard.html|1987|pl|341
- wisp|../languages/wisp.html|2012|pl|342
- unison|../languages/unison.html|2015|pl|343
- CLIPS|../languages/clips.html|1985|pl|344
- walt|../languages/walt.html|2017|pl|345
- MPS|../languages/mps.html|2010|grammarLanguage|346
- Smali|../languages/smali.html|2010|assembly|347
- AsciiDots|../languages/asciidots.html|2017|esolang|348
- JScript|../languages/jscript.html|1996|pl|349
- S|../languages/s.html|1976|pl|350
- Papyrus|../languages/papyrus.html|2015|pl|351
- MMX instruction set|../languages/mmx.html|1997|isa|352
- Fibonacci|../languages/fibonacci.html|1991|pl|353
- G-code|../languages/g-code.html|1950|pl|354
- Textile|../languages/textile.html|2002|textMarkup|355
- ACL2|../languages/acl2.html|1990|pl|356
- eve|../languages/eve.html|2016|pl|357
- PARI/GP|../languages/pari-gp.html|1985|pl|358
- Transact-SQL|../languages/transact-sql.html|1984|queryLanguage|359
- LotusScript|../languages/lotusscript.html|1996|pl|360
- SystemVerilog|../languages/systemverilog.html|2002|pl|361
- flow|../languages/flow.html|2014|pl|362
- Pony|../languages/pony.html|2012|pl|363
- Punched tape|../languages/punched-tape.html|1943|notation|364
+ Nextflow|../languages/nextflow.html|2013|pl|341
+ RPG|../languages/ibm-rpg.html|1959|pl|342
+ CLU|../languages/clu.html|1975|pl|343
+ HyperCard|../languages/hypercard.html|1987|pl|344
+ wisp|../languages/wisp.html|2012|pl|345
+ unison|../languages/unison.html|2015|pl|346
+ CLIPS|../languages/clips.html|1985|pl|347
+ JScript|../languages/jscript.html|1996|pl|348
+ walt|../languages/walt.html|2017|pl|349
+ AsciiDots|../languages/asciidots.html|2017|esolang|350
+ MPS|../languages/mps.html|2010|grammarLanguage|351
+ Smali|../languages/smali.html|2010|assembly|352
+ S|../languages/s.html|1976|pl|353
+ MMX instruction set|../languages/mmx.html|1997|isa|354
+ G-code|../languages/g-code.html|1950|pl|355
+ Papyrus|../languages/papyrus.html|2015|pl|356
+ Textile|../languages/textile.html|2002|textMarkup|357
+ ACL2|../languages/acl2.html|1990|pl|358
+ PARI/GP|../languages/pari-gp.html|1985|pl|359
+ Transact-SQL|../languages/transact-sql.html|1984|queryLanguage|360
+ LotusScript|../languages/lotusscript.html|1996|pl|361
+ Pony|../languages/pony.html|2012|pl|362
+ Punched tape|../languages/punched-tape.html|1943|notation|363
+ SystemVerilog|../languages/systemverilog.html|2002|pl|364
  SPARK|../languages/spark.html|1988|pl|365
- lily|../languages/lily.html|2011|pl|366
- Multics|../languages/multics.html|1967|pl|367
- koka|../languages/koka.html|2012|pl|368
+ Multics|../languages/multics.html|1967|pl|366
+ koka|../languages/koka.html|2012|pl|367
+ Jython|../languages/jython.html|2001|pl|368
  ALGOL 68|../languages/algol-68.html|1968|pl|369
- Jython|../languages/jython.html|2001|pl|370
- BNF|../languages/bnf.html|1956|grammarLanguage|371
+ BNF|../languages/bnf.html|1956|grammarLanguage|370
+ NSIS|../languages/nsis.html|2001|pl|371
  EBNF|../languages/ebnf.html|1977|grammarLanguage|372
- NSIS|../languages/nsis.html|2001|pl|373
+ DTD|../languages/dtd.html|1996|grammarLanguage|373
  Monkey|../languages/monkey.html|2011|pl|374
  Oxygene|../languages/oxygene.html|2002|pl|375
  RATFOR|../languages/ratfor.html|1976|pl|376
@@ -390,67 +390,67 @@ pipeTable
  Curl|../languages/curl.html|1998|pl|379
  Epigram|../languages/epigram.html|2004|pl|380
  Xtext|../languages/xtext.html|2006|grammarLanguage|381
- DTD|../languages/dtd.html|1996|grammarLanguage|382
- Marko|../languages/marko.html|2014|textMarkup|383
- Futhark|../languages/futhark.html|2013|pl|384
- RobotFramework|../languages/robotframework.html|2013|pl|385
- AspectJ|../languages/aspectj.html|2001|pl|386
- DIAGRAM|../languages/diagram.html|1980|pl|387
- Free Pascal|../languages/free-pascal.html|1997|pl|388
- Dogescript|../languages/dogescript.html|2013|pl|389
- Smarty|../languages/smarty.html|2006|template|390
- BETA|../languages/beta.html|1983|pl|391
- Gambas|../languages/gambas.html|1999|pl|392
- JOVIAL|../languages/jovial.html|1960|pl|393
- UPC|../languages/unified-parallel-c.html|2003|pl|394
- FP|../languages/fp.html|1977|pl|395
- GML|../languages/ibm-gml.html|1969|xmlFormat|396
- x86-64|../languages/x86-64-isa.html|2000|isa|397
- Less|../languages/less.html|2009|stylesheetLanguage|398
- Atmel AVR|../languages/atmel-avr.html|1996|pl|399
- carp|../languages/carp.html|2016|pl|400
- Max|../languages/max.html|1990|jsonFormat|401
- FreeBASIC|../languages/freebasic.html|2004|pl|402
- FoxPRO|../languages/foxpro.html|1992|pl|403
- FASTQ|../languages/fastq-format.html|2000|textDataFormat|404
- NATO phonetic alphabet|../languages/nato-phonetic-alphabet.html|1956|notation|405
- Stylus|../languages/stylus.html|2010|stylesheetLanguage|406
- Unicon|../languages/unicon.html|2008|pl|407
- Cg|../languages/cg.html|2003|pl|408
- GLSL|../languages/glsl.html|1992|pl|409
- Object Rexx|../languages/object-rexx.html|1988|pl|410
+ Marko|../languages/marko.html|2014|textMarkup|382
+ Futhark|../languages/futhark.html|2013|pl|383
+ AspectJ|../languages/aspectj.html|2001|pl|384
+ DIAGRAM|../languages/diagram.html|1980|pl|385
+ RobotFramework|../languages/robotframework.html|2013|pl|386
+ Free Pascal|../languages/free-pascal.html|1997|pl|387
+ Dogescript|../languages/dogescript.html|2013|pl|388
+ Smarty|../languages/smarty.html|2006|template|389
+ BETA|../languages/beta.html|1983|pl|390
+ Gambas|../languages/gambas.html|1999|pl|391
+ JOVIAL|../languages/jovial.html|1960|pl|392
+ UPC|../languages/unified-parallel-c.html|2003|pl|393
+ FP|../languages/fp.html|1977|pl|394
+ GML|../languages/ibm-gml.html|1969|xmlFormat|395
+ x86-64|../languages/x86-64-isa.html|2000|isa|396
+ Less|../languages/less.html|2009|stylesheetLanguage|397
+ Atmel AVR|../languages/atmel-avr.html|1996|pl|398
+ Max|../languages/max.html|1990|jsonFormat|399
+ FreeBASIC|../languages/freebasic.html|2004|pl|400
+ carp|../languages/carp.html|2016|pl|401
+ FoxPRO|../languages/foxpro.html|1992|pl|402
+ FASTQ|../languages/fastq-format.html|2000|textDataFormat|403
+ NATO phonetic alphabet|../languages/nato-phonetic-alphabet.html|1956|notation|404
+ Stylus|../languages/stylus.html|2010|stylesheetLanguage|405
+ Unicon|../languages/unicon.html|2008|pl|406
+ Cg|../languages/cg.html|2003|pl|407
+ GLSL|../languages/glsl.html|1992|pl|408
+ Object Rexx|../languages/object-rexx.html|1988|pl|409
+ Malbolge|../languages/malbolge.html|1998|pl|410
  halide|../languages/halide.html|2010|pl|411
- Malbolge|../languages/malbolge.html|1998|pl|412
- Nearley|../languages/nearley.html|2014|grammarLanguage|413
- Miranda|../languages/miranda.html|1985|pl|414
- Mu|../languages/mu.html|2014|pl|415
- OpenSCAD|../languages/openscad.html|2010|pl|416
- PEG|../languages/peg.html|2002|grammarLanguage|417
+ Nearley|../languages/nearley.html|2014|grammarLanguage|412
+ Miranda|../languages/miranda.html|1985|pl|413
+ Mu|../languages/mu.html|2014|pl|414
+ OpenSCAD|../languages/openscad.html|2010|pl|415
+ PEG|../languages/peg.html|2002|grammarLanguage|416
+ Altair BASIC|../languages/altair-basic.html|1975|pl|417
  Thrift|../languages/thrift.html|2007|idl|418
- Altair BASIC|../languages/altair-basic.html|1975|pl|419
- Gosu|../languages/gosu.html|2002|pl|420
- Pharo|../languages/pharo.html|2008|pl|421
- Dc|../languages/dc.html|1978|pl|422
- Ante|../languages/ante.html|2015|pl|423
- JAI|../languages/jai.html|2014|pl|424
- fay|../languages/fay.html|2012|pl|425
- ACT-III|../languages/act-iii.html|1956|pl|426
- CORAL|../languages/coral.html|1964|pl|427
- skulpt|../languages/skulpt.html|2009|pl|428
- DNS|../languages/dns.html|1985|protocol|429
+ Gosu|../languages/gosu.html|2002|pl|419
+ Pharo|../languages/pharo.html|2008|pl|420
+ Dc|../languages/dc.html|1978|pl|421
+ Ante|../languages/ante.html|2015|pl|422
+ JAI|../languages/jai.html|2014|pl|423
+ fay|../languages/fay.html|2012|pl|424
+ ACT-III|../languages/act-iii.html|1956|pl|425
+ CORAL|../languages/coral.html|1964|pl|426
+ skulpt|../languages/skulpt.html|2009|pl|427
+ DNS|../languages/dns.html|1985|protocol|428
+ Jison|../languages/jison.html|2009|pl|429
  Lex|../languages/lex.html|1975|grammarLanguage|430
  Velocity|../languages/apache-velocity.html|2003|template|431
  COMAL|../languages/comal.html|1973|pl|432
- Jison|../languages/jison.html|2009|pl|433
+ Commodore BASIC|../languages/commodore-basic.html|1977|pl|433
  CPL|../languages/cpl.html|1963|pl|434
  JOSS|../languages/joss.html|1966|pl|435
- Commodore BASIC|../languages/commodore-basic.html|1977|pl|436
- Rascal|../languages/rascal.html|2013|grammarLanguage|437
- COMTRAN|../languages/comtran.html|1957|pl|438
- QuickBASIC|../languages/quickbasic.html|1985|pl|439
- LINQ|../languages/linq.html|2007|queryLanguage|440
- Base64|../languages/base64.html|1987|textEncodingFormat|441
- Nial|../languages/nial.html|1981|pl|442
+ Rascal|../languages/rascal.html|2013|grammarLanguage|436
+ COMTRAN|../languages/comtran.html|1957|pl|437
+ QuickBASIC|../languages/quickbasic.html|1985|pl|438
+ LINQ|../languages/linq.html|2007|queryLanguage|439
+ Base64|../languages/base64.html|1987|textEncodingFormat|440
+ Nial|../languages/nial.html|1981|pl|441
+ Fibonacci|../languages/fibonacci.html|1991|pl|442
  Euphoria|../languages/euphoria.html|1993|pl|443
  CWL|../languages/common-workflow-language.html|2014|pl|444
  TLA|../languages/tla.html|1999|pl|445
@@ -464,53 +464,53 @@ pipeTable
  RISC-V|../languages/risc-v.html|2010|isa|453
  RDFa|../languages/rdfa.html|2004|xmlFormat|454
  PIC microcontroller|../languages/pic-microcontroller.html|1975|pl|455
- JADE|../languages/jade.html|1996|pl|456
- SIL|../languages/swift-il.html|2012|ir|457
- Microsoft Macro Assembler|../languages/microsoft-macro-assembler.html|1981|assembly|458
- Alice|../languages/alice.html|2000|pl|459
- Modula|../languages/modula.html|1975|pl|460
- Pop-11|../languages/pop-11.html|1999|pl|461
- Nit|../languages/nit.html|2008|pl|462
- QML|../languages/qml.html|2009|pl|463
- J#|../languages/jsharp.html|2002|pl|464
- ERB|../languages/erb.html|2004|template|465
- Curry|../languages/curry.html|1990|pl|466
- OPS5|../languages/ops5.html|1977|pl|467
- DTrace|../languages/dtrace.html|2005|pl|468
- kitten|../languages/kitten.html|2012|pl|469
- Asm.js|../languages/asmjs.html|2013|ir|470
+ Microsoft Macro Assembler|../languages/microsoft-macro-assembler.html|1981|assembly|456
+ JADE|../languages/jade.html|1996|pl|457
+ SIL|../languages/swift-il.html|2012|ir|458
+ Nit|../languages/nit.html|2008|pl|459
+ Alice|../languages/alice.html|2000|pl|460
+ Modula|../languages/modula.html|1975|pl|461
+ Pop-11|../languages/pop-11.html|1999|pl|462
+ Asm.js|../languages/asmjs.html|2013|ir|463
+ DTrace|../languages/dtrace.html|2005|pl|464
+ kitten|../languages/kitten.html|2012|pl|465
+ QML|../languages/qml.html|2009|pl|466
+ J#|../languages/jsharp.html|2002|pl|467
+ ERB|../languages/erb.html|2004|template|468
+ Curry|../languages/curry.html|1990|pl|469
+ OPS5|../languages/ops5.html|1977|pl|470
  AsciiDoc|../languages/asciidoc.html|2002|textMarkup|471
  NELIAC|../languages/neliac.html|1958|pl|472
- Luna|../languages/luna.html|2015|pl|473
- Ring|../languages/ring.html|2016|pl|474
- Frege|../languages/frege.html|2011|pl|475
- Xtend|../languages/xtend.html|2011|pl|476
- Yorick|../languages/yorick.html|1996|pl|477
- VRML|../languages/vrml.html|1994|pl|478
- SRL|../languages/srl.html|2016|queryLanguage|479
- Cryptol|../languages/cryptol.html|2014|pl|480
- BBCode|../languages/bbcode.html|1998|textMarkup|481
- roy|../languages/roy.html|2011|pl|482
- Ch|../languages/chuck.html|2003|pl|483
+ VRML|../languages/vrml.html|1994|pl|473
+ Luna|../languages/luna.html|2015|pl|474
+ Ring|../languages/ring.html|2016|pl|475
+ Frege|../languages/frege.html|2011|pl|476
+ Xtend|../languages/xtend.html|2011|pl|477
+ Yorick|../languages/yorick.html|1996|pl|478
+ BBCode|../languages/bbcode.html|1998|textMarkup|479
+ SRL|../languages/srl.html|2016|queryLanguage|480
+ Cryptol|../languages/cryptol.html|2014|pl|481
+ Ch|../languages/chuck.html|2003|pl|482
+ roy|../languages/roy.html|2011|pl|483
  MiniZinc|../languages/minizinc.html|2012|pl|484
  Fancy|../languages/fancy.html|2010|pl|485
  Clarion|../languages/clarion.html|1986|pl|486
  GeoJSON|../languages/geojson.html|2008|jsonFormat|487
  Ghostscript|../languages/ghostscript.html|1988|pl|488
- datascript|../languages/datascript.html|2014|queryLanguage|489
- ALGOL 58|../languages/algol-58.html|1958|pl|490
+ ALGOL 58|../languages/algol-58.html|1958|pl|489
+ datascript|../languages/datascript.html|2014|queryLanguage|490
  Qualcomm Hexagon|../languages/hexagon.html|2006|assembly|491
  MBASIC|../languages/mbasic.html|1983|pl|492
- XPL|../languages/xpl.html|1967|pl|493
- Stan|../languages/stan.html|2012|pl|494
- GRASS|../languages/grass.html|1977|pl|495
- NetRexx|../languages/netrexx.html|1996|pl|496
- Interlisp|../languages/interlisp.html|1966|pl|497
- JavaCC|../languages/javacc.html|1996|grammarLanguage|498
+ Stan|../languages/stan.html|2012|pl|493
+ XPL|../languages/xpl.html|1967|pl|494
+ JavaCC|../languages/javacc.html|1996|grammarLanguage|495
+ GRASS|../languages/grass.html|1977|pl|496
+ NetRexx|../languages/netrexx.html|1996|pl|497
+ Interlisp|../languages/interlisp.html|1966|pl|498
  Mirah|../languages/mirah.html|2009|pl|499
  Yacas|../languages/yacas.html|1999|pl|500
- dynamo-visual-language|../languages/dynamo-visual-language.html|2011|visual|501
- KML|../languages/kml.html|2007|xmlFormat|502
+ KML|../languages/kml.html|2007|xmlFormat|501
+ dynamo-visual-language|../languages/dynamo-visual-language.html|2011|visual|502
  Mathcad|../languages/mathcad.html|1986|pl|503
  ooc|../languages/ooc.html|2009|pl|504
  Nu|../languages/nu.html|2007|pl|505
@@ -525,20 +525,20 @@ pipeTable
  MicroPython|../languages/micropython.html|2014|pl|514
  T|../languages/t.html|1980|pl|515
  Expect|../languages/expect.html|1990|pl|516
- mgmt|../languages/mgmt.html|2015|pl|517
- hazel|../languages/hazel.html|2016|pl|518
- PL/pgSQL|../languages/plpgsql.html|1998|pl|519
+ PL/pgSQL|../languages/plpgsql.html|1998|pl|517
+ mgmt|../languages/mgmt.html|2015|pl|518
+ hazel|../languages/hazel.html|2016|pl|519
  TECO|../languages/teco.html|1963|pl|520
  Lingo|../languages/lingo.html|1988|pl|521
  PILOT|../languages/pilot.html|1962|pl|522
  Rockstar|../languages/rockstar.html|2018|esolang|523
  Cue|../languages/cuelang.html|2018|dataNotation|524
- Closure Templates|../languages/closure-templates.html|2009|template|525
- mustache|../languages/mustache.html|2009|template|526
+ mustache|../languages/mustache.html|2009|template|525
+ Closure Templates|../languages/closure-templates.html|2009|template|526
  JFlex|../languages/jflex.html|2003|grammarLanguage|527
  NCAR Command Language|../languages/ncl.html|1994|pl|528
- PowerBuilder|../languages/powerbuilder.html|2010|pl|529
- TI MSP430|../languages/msp430.html|2009|isa|530
+ TI MSP430|../languages/msp430.html|2009|isa|529
+ PowerBuilder|../languages/powerbuilder.html|2010|pl|530
  Latte|../languages/latte.html|2008|template|531
  Alloy|../languages/alloy.html|1997|pl|532
  QMake|../languages/qmake.html|2002|pl|533
@@ -558,23 +558,23 @@ pipeTable
  Apollo Guidance Computer|../languages/apollo-guidance-computer.html|1966|pl|547
  P4|../languages/p4.html|2014|pl|548
  hamler|../languages/hamler.html|2019|pl|549
- BlitzMax|../languages/blitzmax.html|2014|pl|550
- TSV|../languages/tsv.html|1993|dataNotation|551
+ TSV|../languages/tsv.html|1993|dataNotation|550
+ BlitzMax|../languages/blitzmax.html|2014|pl|551
  BlitzBasic|../languages/blitzbasic.html|2000|pl|552
  SQL-92|../languages/sql-92.html|1992|pl|553
- Etoys|../languages/etoys.html|1996|pl|554
- QB64|../languages/qb64.html|2007|pl|555
- Esterel|../languages/esterel.html|1980|pl|556
- Pizza|../languages/pizza.html|2001|pl|557
- Cyclone|../languages/cyclone.html|2001|pl|558
- PLANNER|../languages/planner.html|1969|pl|559
- Scribe|../languages/scribe.html|1980|pl|560
- PL360|../languages/pl360.html|1967|pl|561
- DRAKON|../languages/drakon.html|1996|pl|562
+ QB64|../languages/qb64.html|2007|pl|554
+ Etoys|../languages/etoys.html|1996|pl|555
+ DRAKON|../languages/drakon.html|1996|pl|556
+ Esterel|../languages/esterel.html|1980|pl|557
+ Pizza|../languages/pizza.html|2001|pl|558
+ Cyclone|../languages/cyclone.html|2001|pl|559
+ PLANNER|../languages/planner.html|1969|pl|560
+ Scribe|../languages/scribe.html|1980|pl|561
+ PL360|../languages/pl360.html|1967|pl|562
  Advanced Message Queuing Protocol|../languages/amqp.html|2003|protocol|563
  Qalb|../languages/qalb.html|2012|pl|564
- UCSD Pascal|../languages/ucsd-pascal.html|1978|pl|565
- mermaid|../languages/mermaid.html|2014|textMarkup|566
+ mermaid|../languages/mermaid.html|2014|textMarkup|565
+ UCSD Pascal|../languages/ucsd-pascal.html|1978|pl|566
  eC|../languages/ec.html|2004|pl|567
  Thymeleaf|../languages/thymeleaf.html|2011|template|568
  XSLT|../languages/xslt.html|1998|xmlFormat|569
@@ -582,14 +582,14 @@ pipeTable
  Michigan Algorithm Decoder|../languages/mad.html|1959|pl|571
  Refal|../languages/refal.html|1968|pl|572
  Aldor|../languages/aldor.html|1990|pl|573
- Classroom Object Oriented Language|../languages/cool.html|1996|pl|574
- XS|../languages/xs.html|2002|pl|575
- BeanShell|../languages/beanshell.html|1999|pl|576
- CLISP|../languages/clisp.html|1973|pl|577
- FL|../languages/fl.html|1989|pl|578
- TRAC|../languages/trac.html|1964|pl|579
- Multi-User Forth|../languages/muf.html|1995|pl|580
- SysML|../languages/sysml.html|2000|pl|581
+ SysML|../languages/sysml.html|2000|pl|574
+ Classroom Object Oriented Language|../languages/cool.html|1996|pl|575
+ XS|../languages/xs.html|2002|pl|576
+ BeanShell|../languages/beanshell.html|1999|pl|577
+ CLISP|../languages/clisp.html|1973|pl|578
+ FL|../languages/fl.html|1989|pl|579
+ TRAC|../languages/trac.html|1964|pl|580
+ Multi-User Forth|../languages/muf.html|1995|pl|581
  QR code|../languages/qr-code.html|1994|barCodeFormat|582
  ohm|../languages/ohm.html|2014|grammarLanguage|583
  Netwide Assembler|../languages/nasm.html|1996|assembly|584
@@ -610,8 +610,8 @@ pipeTable
  UrWeb|../languages/urweb.html|2008|pl|599
  JRuby|../languages/jruby.html|2001|pl|600
  TiddlyWiki|../languages/tiddlywiki.html|2004|wikiMarkup|601
- Fully Automated Compiling Technique|../languages/fact.html|1959|pl|602
- Atari BASIC|../languages/atari-basic.html|1983|pl|603
+ Atari BASIC|../languages/atari-basic.html|1983|pl|602
+ Fully Automated Compiling Technique|../languages/fact.html|1959|pl|603
  Applesoft BASIC|../languages/applesoft-basic.html|1979|pl|604
  POPLOG|../languages/poplog.html|1992|pl|605
  SMIL|../languages/synchronized-multimedia-integration-language.html|1997|pl|606
@@ -619,19 +619,19 @@ pipeTable
  PAWN|../languages/pawn.html|2006|pl|608
  Concise Encoding|../languages/concise-encoding.html|2018|dataNotation|609
  TI-BASIC|../languages/ti-basic.html|1970|pl|610
- FLEX|../languages/flex.html|1987|grammarLanguage|611
- dat-protocol|../languages/dat-protocol.html|2013|protocol|612
- mavo|../languages/mavo.html|2015|template|613
+ dat-protocol|../languages/dat-protocol.html|2013|protocol|611
+ mavo|../languages/mavo.html|2015|template|612
+ FLEX|../languages/flex.html|1987|grammarLanguage|613
  docopt|../languages/docopt.html|2012|pl|614
- visdown|../languages/visdown.html|2016|textMarkup|615
- Vimwiki|../languages/vimwiki.html|2008|wikiMarkup|616
+ Vimwiki|../languages/vimwiki.html|2008|wikiMarkup|615
+ visdown|../languages/visdown.html|2016|textMarkup|616
  sizzle|../languages/sizzle.html|2008|queryLanguage|617
  mochi|../languages/mochi.html|2014|pl|618
  MD5|../languages/md5-hash-function.html|1991|hashFunction|619
  edgedb|../languages/edgedb.html|2017|database|620
  SugarSS|../languages/sugarss.html|2016|textMarkup|621
- EML|../languages/mbox.html|1974|textDataFormat|622
- Apex|../languages/apex.html|2007|pl|623
+ Apex|../languages/apex.html|2007|pl|622
+ EML|../languages/mbox.html|1974|textDataFormat|623
  Dartmouth BASIC|../languages/dartmouth-basic.html|1964|pl|624
  noms-db|../languages/noms-db.html|2015|database|625
  SHA-2|../languages/sha-2-hash-function.html|2001|hashFunction|626
@@ -651,54 +651,54 @@ pipeTable
  htmx|../languages/htmx.html|2020|template|640
  SHA-1|../languages/sha-1-hash-function.html||hashFunction|641
  ARexx|../languages/arexx.html|1987|pl|642
- Network Time Protocol|../languages/ntp.html|1981|protocol|643
- Geography Markup Language|../languages/geo-ml.html|2000|xmlFormat|644
+ Geography Markup Language|../languages/geo-ml.html|2000|xmlFormat|643
+ Network Time Protocol|../languages/ntp.html|1981|protocol|644
  FOCUS|../languages/focus.html|1997|pl|645
  Executive Systems Problem Oriented Language|../languages/espol.html|1967|pl|646
  Speakeasy|../languages/speakeasy.html|2006|pl|647
  Euclid|../languages/euclid.html|1970|pl|648
  Txt2tags|../languages/txt2tags.html|2001|textMarkup|649
  SP/k|../languages/sp-k.html|1974|pl|650
- basic calculator|../languages/bc.html|1975|pl|651
- Lightweight Directory Access Protocol|../languages/ldap.html|1997|protocol|652
+ Lightweight Directory Access Protocol|../languages/ldap.html|1997|protocol|651
+ basic calculator|../languages/bc.html|1975|pl|652
  Bucklescript|../languages/bucklescript.html|2010|pl|653
  Telnet|../languages/telnet-protocol.html|1969|protocol|654
  Motif|../languages/motif-software.html|1989|pl|655
- Shakespeare|../languages/shakespeare.html|1993|esolang|656
- Rapira|../languages/rapira.html|1987|pl|657
+ Rapira|../languages/rapira.html|1987|pl|656
+ Shakespeare|../languages/shakespeare.html|1993|esolang|657
  Gentoo Ebuild|../languages/gentoo-ebuild.html|1999|pl|658
  TAP|../languages/tap.html|1988|protocol|659
- Creole|../languages/creole.html|2007|textMarkup|660
- XL|../languages/xl-lang.html|2000|pl|661
- Ragel|../languages/ragel.html|2007|pl|662
- TXL|../languages/txl.html|1985|pl|663
- AIMMS|../languages/aimms.html|1993|pl|664
- Neko|../languages/neko.html|2005|pl|665
- CIR|../languages/cir.html|2020|ir|666
- MAGMA|../languages/magma.html|1993|pl|667
- LUCID|../languages/lucid.html|1976|pl|668
- commonmark|../languages/commonmark.html|2014|textMarkup|669
- MusicXML|../languages/musicxml.html|2004|pl|670
- bosque|../languages/bosque.html|2019|pl|671
- EmberScript|../languages/emberscript.html|2012|pl|672
- ICD-10-CM diagnosis|../languages/icd.html|1983|schema|673
- penrose|../languages/penrose.html|2016|pl|674
+ commonmark|../languages/commonmark.html|2014|textMarkup|660
+ Creole|../languages/creole.html|2007|textMarkup|661
+ MusicXML|../languages/musicxml.html|2004|pl|662
+ bosque|../languages/bosque.html|2019|pl|663
+ XL|../languages/xl-lang.html|2000|pl|664
+ Ragel|../languages/ragel.html|2007|pl|665
+ TXL|../languages/txl.html|1985|pl|666
+ AIMMS|../languages/aimms.html|1993|pl|667
+ Neko|../languages/neko.html|2005|pl|668
+ CIR|../languages/cir.html|2020|ir|669
+ MAGMA|../languages/magma.html|1993|pl|670
+ LUCID|../languages/lucid.html|1976|pl|671
+ ICD-10-CM diagnosis|../languages/icd.html|1983|schema|672
+ penrose|../languages/penrose.html|2016|pl|673
+ EmberScript|../languages/emberscript.html|2012|pl|674
  Hodor|../languages/hodor.html|2015|esolang|675
  Logtalk|../languages/logtalk.html|1998|pl|676
  SCSS|../languages/scss.html|2006|stylesheetLanguage|677
  ISLISP|../languages/islisp.html|2007|pl|678
- Felix|../languages/felix.html|2001|pl|679
- vyper|../languages/vyper.html|2016|pl|680
- MATHLAB|../languages/mathlab.html|1964|pl|681
- hasklig|../languages/hasklig.html|2012|font|682
+ vyper|../languages/vyper.html|2016|pl|679
+ Felix|../languages/felix.html|2001|pl|680
+ hasklig|../languages/hasklig.html|2012|font|681
+ MATHLAB|../languages/mathlab.html|1964|pl|682
  Message Queuing Telemetry Transport|../languages/mqtt.html|1999|protocol|683
- PIR|../languages/parrot-internal-representation.html|2006|pl|684
- ALGOL W|../languages/algol-w.html|1966|pl|685
- Coco/R|../languages/coco-r.html|1990|grammarLanguage|686
- AUTOCODER|../languages/autocoder.html|1955|assembly|687
- skip|../languages/skip.html|2018|pl|688
- Augmented Backus-Naur Form|../languages/abnf.html|2008|grammarLanguage|689
- Elvish|../languages/elvish.html|2013|pl|690
+ Elvish|../languages/elvish.html|2013|pl|684
+ skip|../languages/skip.html|2018|pl|685
+ PIR|../languages/parrot-internal-representation.html|2006|pl|686
+ ALGOL W|../languages/algol-w.html|1966|pl|687
+ Coco/R|../languages/coco-r.html|1990|grammarLanguage|688
+ AUTOCODER|../languages/autocoder.html|1955|assembly|689
+ Augmented Backus-Naur Form|../languages/abnf.html|2008|grammarLanguage|690
  Tap code|../languages/tap-code.html|1941|notation|691
  Euclidean geometry|../languages/euclidean-geometry.html|-300|notation|692
  m3db|../languages/m3db.html|2016|database|693
@@ -707,56 +707,56 @@ pipeTable
  HTTP/2|../languages/http-2.html|2015|protocol|696
  Golo|../languages/golo.html|2012|pl|697
  Property list|../languages/plist.html|2012|textMarkup|698
- comby|../languages/comby.html|2019|grammarLanguage|699
- Cirru|../languages/cirru.html|2012|pl|700
- Parser 3|../languages/parser.html|1997|pl|701
- Binary code|../languages/binary-notation.html|1689|notation|702
- Meson|../languages/meson.html|2013|pl|703
+ Binary code|../languages/binary-notation.html|1689|notation|699
+ comby|../languages/comby.html|2019|grammarLanguage|700
+ Meson|../languages/meson.html|2013|pl|701
+ Cirru|../languages/cirru.html|2012|pl|702
+ Parser 3|../languages/parser.html|1997|pl|703
  gravity|../languages/gravity.html|2017|pl|704
- UCL|../languages/ucl.html|2013|dataNotation|705
- astro|../languages/astro.html|2016|pl|706
- gleam|../languages/gleam.html|2016|pl|707
+ gleam|../languages/gleam.html|2016|pl|705
+ UCL|../languages/ucl.html|2013|dataNotation|706
+ astro|../languages/astro.html|2016|pl|707
  ECL|../languages/ecl.html|2000|pl|708
  PCRE|../languages/pcre.html|1997|queryLanguage|709
- OpenEdge ABL|../languages/openedge-advanced-business-language.html|2006|pl|710
- SHA-3|../languages/sha-3-hash-function.html||hashFunction|711
- Almquist shell|../languages/almquist-shell.html|1989|pl|712
+ SHA-3|../languages/sha-3-hash-function.html||hashFunction|710
+ Almquist shell|../languages/almquist-shell.html|1989|pl|711
+ OpenEdge ABL|../languages/openedge-advanced-business-language.html|2006|pl|712
  chisel|../languages/chisel.html|2015|hardwareDescriptionLanguage|713
- Gwion|../languages/gwion.html|2016|pl|714
- Kodu Game Lab|../languages/kodu-game-lab.html|2009|pl|715
- verona|../languages/verona.html|2019|pl|716
- popr|../languages/popr.html|2012|pl|717
- DM|../languages/dm.html|1994|pl|718
- MAXScript|../languages/maxscript.html|1996|pl|719
- JSON with Comments|../languages/json-with-comments.html|2001|dataNotation|720
- MOO|../languages/moo.html|1993|pl|721
- Frink|../languages/frink.html|2014|pl|722
- Apache Lucene|../languages/lucene-query-syntax.html|1999|queryLanguage|723
- Big Red One|../languages/bro.html|1994|pl|724
- Volt|../languages/volt.html|2011|pl|725
- ARC processor|../languages/arc-isa.html|1995|isa|726
+ Kodu Game Lab|../languages/kodu-game-lab.html|2009|pl|714
+ verona|../languages/verona.html|2019|pl|715
+ Gwion|../languages/gwion.html|2016|pl|716
+ Apache Lucene|../languages/lucene-query-syntax.html|1999|queryLanguage|717
+ popr|../languages/popr.html|2012|pl|718
+ DM|../languages/dm.html|1994|pl|719
+ MAXScript|../languages/maxscript.html|1996|pl|720
+ JSON with Comments|../languages/json-with-comments.html|2001|dataNotation|721
+ MOO|../languages/moo.html|1993|pl|722
+ Frink|../languages/frink.html|2014|pl|723
+ ARC processor|../languages/arc-isa.html|1995|isa|724
+ Big Red One|../languages/bro.html|1994|pl|725
+ Volt|../languages/volt.html|2011|pl|726
  VML|../languages/vml.html|1998|xmlFormat|727
  Umple|../languages/umple.html|2008|pl|728
- Jolie|../languages/jolie.html|2006|pl|729
- Slash|../languages/slash.html|2012|pl|730
- SQLPL|../languages/sqlpl.html|2009|pl|731
- XProc|../languages/xproc.html|1990|pl|732
- ToonTalk|../languages/toontalk.html|1995|pl|733
- Amiga E|../languages/amiga-e.html|1993|pl|734
- SIGNAL|../languages/signal.html|1982|pl|735
- CECIL|../languages/cecil.html|1992|pl|736
- odin|../languages/odin.html|2016|pl|737
- PogoScript|../languages/pogoscript.html|2011|pl|738
- Pan|../languages/pan.html|2011|pl|739
- LOGLAN|../languages/loglan.html|1982|pl|740
+ SQLPL|../languages/sqlpl.html|2009|pl|729
+ Jolie|../languages/jolie.html|2006|pl|730
+ odin|../languages/odin.html|2016|pl|731
+ Slash|../languages/slash.html|2012|pl|732
+ LOGLAN|../languages/loglan.html|1982|pl|733
+ PogoScript|../languages/pogoscript.html|2011|pl|734
+ Pan|../languages/pan.html|2011|pl|735
+ XProc|../languages/xproc.html|1990|pl|736
+ ToonTalk|../languages/toontalk.html|1995|pl|737
+ Amiga E|../languages/amiga-e.html|1993|pl|738
+ SIGNAL|../languages/signal.html|1982|pl|739
+ CECIL|../languages/cecil.html|1992|pl|740
  chaiscript|../languages/chaiscript.html|2009|pl|741
  svgbob|../languages/svgbob.html|2016|textMarkup|742
- True BASIC|../languages/true-basic.html|1983|pl|743
- Turbo Assembler|../languages/turbo-assembler.html|1989|pl|744
- JSON Schema|../languages/json-schema.html|2010|dataValidationLanguage|745
- HLSL|../languages/hlsl.html|2002|pl|746
- manhood|../languages/manhood.html|2014|pl|747
- rant|../languages/rant.html|2014|pl|748
+ Turbo Assembler|../languages/turbo-assembler.html|1989|pl|743
+ JSON Schema|../languages/json-schema.html|2010|dataValidationLanguage|744
+ manhood|../languages/manhood.html|2014|pl|745
+ rant|../languages/rant.html|2014|pl|746
+ True BASIC|../languages/true-basic.html|1983|pl|747
+ HLSL|../languages/hlsl.html|2002|pl|748
  IGOR Pro|../languages/igor-pro.html|1993|pl|749
  Not Quite C|../languages/nqc.html|2017|pl|750
  DIGITAL Command Language|../languages/digital-command-language.html|1997|pl|751
@@ -780,162 +780,162 @@ pipeTable
  Cranelift|../languages/cranelift-ir.html|2016|ir|769
  gluon|../languages/gluon.html|2014|pl|770
  Jargon|../languages/jargon.html|1987|pl|771
- Ren'Py|../languages/renpy.html|2004|pl|772
- DOODLE|../languages/doodle.html|1992|pl|773
+ DOODLE|../languages/doodle.html|1992|pl|772
+ Ren'Py|../languages/renpy.html|2004|pl|773
  Spatial|../languages/spatial.html|2018|pl|774
- Flavors|../languages/flavors.html|1980|pl|775
- Newsqueak|../languages/newsqueak.html|1990|pl|776
- Open Shading Language|../languages/open-shading-language.html|2008|pl|777
+ Open Shading Language|../languages/open-shading-language.html|2008|pl|775
+ Flavors|../languages/flavors.html|1980|pl|776
+ Newsqueak|../languages/newsqueak.html|1990|pl|777
  Vigil|../languages/vigil.html|2013|esolang|778
- A+|../languages/aplus.html|1988|pl|779
- Hyperscript|../languages/hyperscript.html|2012|template|780
+ Hyperscript|../languages/hyperscript.html|2012|template|779
+ A+|../languages/aplus.html|1988|pl|780
  IBM 1620|../languages/1620sps.html|1959|assembly|781
  Newick format|../languages/newick-format.html|1986|textDataFormat|782
- Spin|../languages/spin.html|2006|pl|783
- GEL Genius|../languages/genius-extension-language.html|1997|pl|784
- G-Portugol|../languages/g-portugol.html|2005|pl|785
- False|../languages/false.html|1993|pl|786
- SSI|../languages/ssi.html|2004|template|787
- XHTML|../languages/xhtml.html|2000|dataNotation|788
- Google Apps Script|../languages/google-apps-script.html|2009|pl|789
- Gopher|../languages/gopher-protocol.html|1991|protocol|790
+ XHTML|../languages/xhtml.html|2000|dataNotation|783
+ SSI|../languages/ssi.html|2004|template|784
+ Spin|../languages/spin.html|2006|pl|785
+ GEL Genius|../languages/genius-extension-language.html|1997|pl|786
+ G-Portugol|../languages/g-portugol.html|2005|pl|787
+ False|../languages/false.html|1993|pl|788
+ Gopher|../languages/gopher-protocol.html|1991|protocol|789
+ Google Apps Script|../languages/google-apps-script.html|2009|pl|790
  mlir|../languages/mlir.html|2019|ir|791
  Compiler-Compiler|../languages/compiler-compiler.html|1963|pl|792
  Post Office Protocol|../languages/pop-protocol.html|1957|protocol|793
  Plankalkul|../languages/plankalkul.html|1948|pl|794
  beef-lang|../languages/beef-lang.html|2019|pl|795
  Ron|../languages/ron.html|2015|dataNotation|796
- Cypher Query Language|../languages/cypher.html|2011|queryLanguage|797
- S-PLUS|../languages/s-plus.html|1988|pl|798
- Linda|../languages/linda.html|1986|pl|799
- High Level Assembly|../languages/hla.html|2011|pl|800
- Tea|../languages/tea.html|1997|textMarkup|801
- F|../languages/f.html|1996|pl|802
- JavaFX Script|../languages/javafx-script.html|2005|pl|803
- Yabasic|../languages/yabasic.html|1995|pl|804
- TAL|../languages/tal.html|2008|pl|805
- F-Script|../languages/f-script.html|2009|pl|806
- UBASIC|../languages/ubasic.html|1991|pl|807
- Ease|../languages/ease.html|1991|pl|808
- Irvine Dataflow|../languages/id.html|1975|pl|809
- JOSS Extended and Adapted for Nineteen-hundred|../languages/jean.html|1960|pl|810
- ELAN|../languages/elan.html|1974|pl|811
- QUIKSCRIPT|../languages/quikscript.html|1965|pl|812
- REDUCE|../languages/reduce.html|2011|pl|813
- Grammar|../languages/grammar.html|2017|grammarLanguage|814
- OX|../languages/ox.html|1996|pl|815
- souper|../languages/souper.html|2014|optimizingCompiler|816
+ Grammar|../languages/grammar.html|2017|grammarLanguage|797
+ souper|../languages/souper.html|2014|optimizingCompiler|798
+ OX|../languages/ox.html|1996|pl|799
+ Cypher Query Language|../languages/cypher.html|2011|queryLanguage|800
+ S-PLUS|../languages/s-plus.html|1988|pl|801
+ Linda|../languages/linda.html|1986|pl|802
+ High Level Assembly|../languages/hla.html|2011|pl|803
+ Tea|../languages/tea.html|1997|textMarkup|804
+ F|../languages/f.html|1996|pl|805
+ JavaFX Script|../languages/javafx-script.html|2005|pl|806
+ Yabasic|../languages/yabasic.html|1995|pl|807
+ TAL|../languages/tal.html|2008|pl|808
+ F-Script|../languages/f-script.html|2009|pl|809
+ UBASIC|../languages/ubasic.html|1991|pl|810
+ Ease|../languages/ease.html|1991|pl|811
+ Irvine Dataflow|../languages/id.html|1975|pl|812
+ JOSS Extended and Adapted for Nineteen-hundred|../languages/jean.html|1960|pl|813
+ ELAN|../languages/elan.html|1974|pl|814
+ QUIKSCRIPT|../languages/quikscript.html|1965|pl|815
+ REDUCE|../languages/reduce.html|2011|pl|816
  Jakt|../languages/jakt.html|2022|pl|817
- GraphIt|../languages/graph-it.html|2017|pl|818
- idyll|../languages/idyll.html|2017|pl|819
+ idyll|../languages/idyll.html|2017|pl|818
+ GraphIt|../languages/graph-it.html|2017|pl|819
  SWI-Prolog|../languages/swi-prolog.html|1987|pl|820
  VCF|../languages/vcf-format.html|2011|textDataFormat|821
  plot|../languages/plot.html|2019|template|822
  Visual Prolog|../languages/visual-prolog.html|1996|pl|823
  RoboMind|../languages/robomind.html|2005|pl|824
  Simplified molecular-input line-entry system|../languages/smiles-format.html|1988|textDataFormat|825
- Vim script|../languages/vim-script.html|1991|pl|826
- Harbour|../languages/harbour.html|1999|pl|827
- Game Maker Language|../languages/game-maker-language.html|1999|pl|828
- tcsh|../languages/tcsh.html|1983|pl|829
- CWEB|../languages/cweb.html|1987|pl|830
- Open Database Connectivity|../languages/odbc.html|1990|protocol|831
- Sinclair BASIC|../languages/sinclair-basic.html|1979|pl|832
- PowerBASIC|../languages/powerbasic.html|1989|pl|833
- MQL5|../languages/mql.html|2005|pl|834
- WHOIS|../languages/whois-protocol.html|1970|protocol|835
- DokuWiki|../languages/dokuwiki.html|2004|wikiMarkup|836
- Fennel|../languages/fennel.html|2016|pl|837
+ Open Database Connectivity|../languages/odbc.html|1990|protocol|826
+ Vim script|../languages/vim-script.html|1991|pl|827
+ Sinclair BASIC|../languages/sinclair-basic.html|1979|pl|828
+ PowerBASIC|../languages/powerbasic.html|1989|pl|829
+ Harbour|../languages/harbour.html|1999|pl|830
+ Game Maker Language|../languages/game-maker-language.html|1999|pl|831
+ tcsh|../languages/tcsh.html|1983|pl|832
+ CWEB|../languages/cweb.html|1987|pl|833
+ WHOIS|../languages/whois-protocol.html|1970|protocol|834
+ MQL5|../languages/mql.html|2005|pl|835
+ Fennel|../languages/fennel.html|2016|pl|836
+ DokuWiki|../languages/dokuwiki.html|2004|wikiMarkup|837
  YoptaScript|../languages/yoptascript.html|2016|pl|838
  Wasp|../languages/wasp-lang.html|2019|pl|839
  crush|../languages/crush.html|2020|pl|840
  Strips|../languages/strips.html|1969|pl|841
  tiledb|../languages/tiledb.html|2017|database|842
- XML Binding Language|../languages/xbl.html|2000|xmlFormat|843
- Ternary numeral system|../languages/ternary-notation.html|2001|notation|844
+ Ternary numeral system|../languages/ternary-notation.html|2001|notation|843
+ XML Binding Language|../languages/xbl.html|2000|xmlFormat|844
  Whiley|../languages/whiley.html|2009|pl|845
  zz|../languages/zz.html|2019|pl|846
- Pyrex|../languages/pyrex.html|2002|pl|847
- OpenVera|../languages/openvera.html|2001|pl|848
- GLBasic|../languages/glbasic.html|2003|pl|849
- Action!|../languages/action.html|1983|pl|850
- EXEC 2|../languages/exec-2.html|1970|pl|851
- femtolisp|../languages/femtolisp.html|2008|pl|852
- Script.NET|../languages/ssharp.html|2007|pl|853
- XUML|../languages/xuml.html|2002|pl|854
- Z-machine|../languages/z-machine.html|1980|pl|855
- starlark|../languages/starlark.html|2018|pl|856
+ femtolisp|../languages/femtolisp.html|2008|pl|847
+ XUML|../languages/xuml.html|2002|pl|848
+ Z-machine|../languages/z-machine.html|1980|pl|849
+ Pyrex|../languages/pyrex.html|2002|pl|850
+ OpenVera|../languages/openvera.html|2001|pl|851
+ GLBasic|../languages/glbasic.html|2003|pl|852
+ Action!|../languages/action.html|1983|pl|853
+ EXEC 2|../languages/exec-2.html|1970|pl|854
+ starlark|../languages/starlark.html|2018|pl|855
+ Script.NET|../languages/ssharp.html|2007|pl|856
  kona|../languages/kona.html|2010|pl|857
  WML|../languages/wireless-markup-language.html|1998|xmlFormat|858
  Knitr|../languages/knitr.html|2012|template|859
  Ch computer programming|../languages/ch.html|2001|pl|860
- Opal|../languages/opal.html|1994|pl|861
- SourcePawn|../languages/sourcepawn.html|2014|pl|862
- PIC|../languages/pic.html|1988|textMarkup|863
- HiveQL|../languages/hiveql.html|2011|queryLanguage|864
- JSX|../languages/jsx.html|2013|template|865
- Kit|../languages/kit.html|2012|template|866
- BlooP|../languages/bloop.html|1979|esolang|867
- IBM Informix-4GL|../languages/informix.html|1985|queryLanguage|868
- Mech|../languages/mech-lang.html|2018|pl|869
- PeopleCode|../languages/peoplecode.html|2008|pl|870
- EGL|../languages/egl.html|2008|pl|871
- JSON Lines|../languages/ld-json.html|2013|dataNotation|872
- FaCT|../languages/fact-lang.html|2017|pl|873
- Ezhil|../languages/ezhil.html|2007|pl|874
- monte|../languages/monte.html|2014|pl|875
- knowledge representation language|../languages/krl.html|1976|pl|876
- UCG|../languages/ucg.html|2017|dataNotation|877
- Parenscript|../languages/parenscript.html|2009|pl|878
- Autocode|../languages/autocode.html|1954|pl|879
- chrysaLisp|../languages/chrysaLisp.html|2015|pl|880
+ SourcePawn|../languages/sourcepawn.html|2014|pl|861
+ Opal|../languages/opal.html|1994|pl|862
+ Autocode|../languages/autocode.html|1954|pl|863
+ chrysaLisp|../languages/chrysaLisp.html|2015|pl|864
+ Parenscript|../languages/parenscript.html|2009|pl|865
+ PIC|../languages/pic.html|1988|textMarkup|866
+ HiveQL|../languages/hiveql.html|2011|queryLanguage|867
+ JSX|../languages/jsx.html|2013|template|868
+ Kit|../languages/kit.html|2012|template|869
+ BlooP|../languages/bloop.html|1979|esolang|870
+ IBM Informix-4GL|../languages/informix.html|1985|queryLanguage|871
+ Mech|../languages/mech-lang.html|2018|pl|872
+ PeopleCode|../languages/peoplecode.html|2008|pl|873
+ EGL|../languages/egl.html|2008|pl|874
+ JSON Lines|../languages/ld-json.html|2013|dataNotation|875
+ FaCT|../languages/fact-lang.html|2017|pl|876
+ Ezhil|../languages/ezhil.html|2007|pl|877
+ monte|../languages/monte.html|2014|pl|878
+ knowledge representation language|../languages/krl.html|1976|pl|879
+ UCG|../languages/ucg.html|2017|dataNotation|880
  fetlang|../languages/fetlang.html|2017|esolang|881
  DNS over HTTPS|../languages/doh.html|2018|protocol|882
  MurmurHash|../languages/murmur-hash-function.html|2008|hashFunction|883
  Praat Script|../languages/praat-script.html|1997|pl|884
  dex|../languages/dex.html|2018|pl|885
  Java EE version history|../languages/java-ee-version-history.html|1998|pl|886
- HAL/S|../languages/hal-s.html|1972|assembly|887
- MiniD|../languages/minid.html|2006|pl|888
- Spice Lisp|../languages/spice-lisp.html|1980|pl|889
- Lisaac|../languages/lisaac.html|2003|pl|890
- mun-lang|../languages/mun-lang.html|2019|pl|891
+ mun-lang|../languages/mun-lang.html|2019|pl|887
+ HAL/S|../languages/hal-s.html|1972|assembly|888
+ MiniD|../languages/minid.html|2006|pl|889
+ Spice Lisp|../languages/spice-lisp.html|1980|pl|890
+ Lisaac|../languages/lisaac.html|2003|pl|891
  .QL|../languages/dot-ql.html|2007|pl|892
  harlan|../languages/harlan.html|2011|pl|893
- Structured Query Reporter|../languages/sqr.html|1980|pl|894
- sile|../languages/sile.html|2012|textMarkup|895
- AsciiMath|../languages/asciimath.html|2014|textMarkup|896
+ sile|../languages/sile.html|2012|textMarkup|894
+ AsciiMath|../languages/asciimath.html|2014|textMarkup|895
+ Structured Query Reporter|../languages/sqr.html|1980|pl|896
  MACRO|../languages/macro.html|1979|pl|897
  BASIC Stamp|../languages/basic-stamp.html|1990|pl|898
  Typed Lua|../languages/tl.html|2019|pl|899
  hobbes|../languages/hobbes.html|2017|pl|900
- International System of Quantities|../languages/isq.html|2009|schema|901
- Inno Setup|../languages/inno-setup.html|1997|pl|902
- circle-lang|../languages/circle-lang.html|2019|pl|903
+ circle-lang|../languages/circle-lang.html|2019|pl|901
+ International System of Quantities|../languages/isq.html|2009|schema|902
+ Inno Setup|../languages/inno-setup.html|1997|pl|903
  cityhash-hash-function|../languages/cityhash-hash-function.html|2011|hashFunction|904
  Sam Coupé|../languages/sam-coupe.html|1989|pl|905
  Nios II|../languages/nios.html|2000|isa|906
- son|../languages/son.html|2017|textMarkup|907
- score|../languages/score.html|2013|pl|908
+ score|../languages/score.html|2013|pl|907
+ son|../languages/son.html|2017|textMarkup|908
  Karel|../languages/karel.html|1981|pl|909
  XSD|../languages/xsd.html|2001|dataValidationLanguage|910
  pie-lang|../languages/pie-lang.html|2018|pl|911
  lispyscript|../languages/lispyscript.html|2012|pl|912
- Handlebars|../languages/handlebars.html|2010|template|913
- Automatically Programmed Tool|../languages/apt.html|1956|pl|914
- Oak|../languages/oak.html|1991|pl|915
- Hocon|../languages/hocon.html|2011|dataNotation|916
- JSONiq|../languages/jsoniq.html|2011|queryLanguage|917
- FRACTRAN|../languages/fractran.html|1996|esolang|918
- QuakeC|../languages/quakec.html|1996|pl|919
- CHICKEN|../languages/chicken.html|1994|pl|920
- CLIST|../languages/clist.html|1990|pl|921
- COMIT|../languages/comit.html|1957|pl|922
- Meditech Interpretive Information System|../languages/miis.html|1986|pl|923
- GEORGE|../languages/george.html|1957|pl|924
- Mary|../languages/mary.html|1970|pl|925
- bee|../languages/bee.html|2019|pl|926
- Object Linking and Embedding|../languages/ole-protocol.html|1990|protocol|927
+ bee|../languages/bee.html|2019|pl|913
+ Object Linking and Embedding|../languages/ole-protocol.html|1990|protocol|914
+ Handlebars|../languages/handlebars.html|2010|template|915
+ Automatically Programmed Tool|../languages/apt.html|1956|pl|916
+ Oak|../languages/oak.html|1991|pl|917
+ Hocon|../languages/hocon.html|2011|dataNotation|918
+ JSONiq|../languages/jsoniq.html|2011|queryLanguage|919
+ FRACTRAN|../languages/fractran.html|1996|esolang|920
+ QuakeC|../languages/quakec.html|1996|pl|921
+ CHICKEN|../languages/chicken.html|1994|pl|922
+ CLIST|../languages/clist.html|1990|pl|923
+ COMIT|../languages/comit.html|1957|pl|924
+ Meditech Interpretive Information System|../languages/miis.html|1986|pl|925
+ GEORGE|../languages/george.html|1957|pl|926
+ Mary|../languages/mary.html|1970|pl|927
  fo|../languages/fo.html|2018|pl|928
  clay|../languages/clay.html|2010|pl|929
  Open Data Protcol|../languages/odata.html|2007|protocol|930
@@ -945,29 +945,29 @@ pipeTable
  Confluence|../languages/confluence.html|2004|textMarkup|934
  pyret|../languages/pyret.html|2011|pl|935
  XBRL|../languages/xbrl.html|2003|xmlFormat|936
- Pep8|../languages/pep8.html|2009|assembly|937
- EEX|../languages/eex.html|2012|template|938
- GDScript|../languages/gdscript.html|2008|pl|939
- Gherkin|../languages/gherkin.html|2008|pl|940
- Grace|../languages/grace.html|2010|pl|941
- Literate CoffeeScript|../languages/literate-coffeescript.html|2013|pl|942
- Shen|../languages/shen.html|2011|pl|943
- The Satisfiability Modulo Theories Library|../languages/smt.html|2003|pl|944
- COMPONENT PASCAL|../languages/component-pascal.html|1997|pl|945
- Logos|../languages/logos.html|2010|pl|946
- ROFF|../languages/roff.html|1971|textMarkup|947
- RenderScript|../languages/renderscript.html|2011|pl|948
- Charity|../languages/charity.html|1992|pl|949
- Tandem Advanced Command Language|../languages/tacl.html|1999|pl|950
- Mouse|../languages/mouse.html|1970|pl|951
- RLaB|../languages/rlab.html|1998|pl|952
- CLAIRE|../languages/claire.html|2004|pl|953
- Nickle|../languages/nickle.html|2001|pl|954
- SCROLL|../languages/scroll.html|1970|pl|955
- Cone|../languages/cone.html|2017|pl|956
- BASIC-PLUS|../languages/basic-plus.html|1975|pl|957
- POP-2|../languages/pop-2.html|1967|pl|958
- Committee on Uniform Security Identification Procedures|../languages/cusip.html|1968|schema|959
+ Cone|../languages/cone.html|2017|pl|937
+ Pep8|../languages/pep8.html|2009|assembly|938
+ EEX|../languages/eex.html|2012|template|939
+ GDScript|../languages/gdscript.html|2008|pl|940
+ Gherkin|../languages/gherkin.html|2008|pl|941
+ Grace|../languages/grace.html|2010|pl|942
+ Literate CoffeeScript|../languages/literate-coffeescript.html|2013|pl|943
+ Shen|../languages/shen.html|2011|pl|944
+ The Satisfiability Modulo Theories Library|../languages/smt.html|2003|pl|945
+ COMPONENT PASCAL|../languages/component-pascal.html|1997|pl|946
+ Logos|../languages/logos.html|2010|pl|947
+ ROFF|../languages/roff.html|1971|textMarkup|948
+ RenderScript|../languages/renderscript.html|2011|pl|949
+ Charity|../languages/charity.html|1992|pl|950
+ Tandem Advanced Command Language|../languages/tacl.html|1999|pl|951
+ Mouse|../languages/mouse.html|1970|pl|952
+ RLaB|../languages/rlab.html|1998|pl|953
+ CLAIRE|../languages/claire.html|2004|pl|954
+ Nickle|../languages/nickle.html|2001|pl|955
+ SCROLL|../languages/scroll.html|1970|pl|956
+ Committee on Uniform Security Identification Procedures|../languages/cusip.html|1968|schema|957
+ BASIC-PLUS|../languages/basic-plus.html|1975|pl|958
+ POP-2|../languages/pop-2.html|1967|pl|959
  INTELLECT|../languages/intellect.html|1977|pl|960
  gerbil|../languages/gerbil.html|2016|pl|961
  Connection Machine|../languages/connection-machine.html|1990|pl|962
@@ -975,36 +975,36 @@ pipeTable
  xodio|../languages/xodio.html|2015|visual|964
  kitlang|../languages/kitlang.html|2018|pl|965
  Babylonian numerals|../languages/babylonian-numerals.html|-2000|numeralSystem|966
- SFC|../languages/sequential-function-chart.html|1993|pl|967
- Lisp Machine Lisp|../languages/lisp-machine-lisp.html|1974|pl|968
+ Lisp Machine Lisp|../languages/lisp-machine-lisp.html|1974|pl|967
+ SFC|../languages/sequential-function-chart.html|1993|pl|968
  General feature format|../languages/gff-format.html|2006|textDataFormat|969
  hashlink|../languages/hashlink.html|2015|bytecode|970
- Snap!|../languages/snap.html|2011|pl|971
- Hyperscript|../languages/hyperscript-lang.html|2020|pl|972
+ Hyperscript|../languages/hyperscript-lang.html|2020|pl|971
+ Snap!|../languages/snap.html|2011|pl|972
  International Chemical Identifier|../languages/inchi.html|2005|textDataFormat|973
- BitBake|../languages/bitbake.html|2004|pl|974
- firrtl|../languages/firrtl.html|2015|ir|975
- VSXu|../languages/vsxu.html|2004|visual|976
- KiXtart|../languages/kixtart.html|1991|pl|977
+ firrtl|../languages/firrtl.html|2015|ir|974
+ BitBake|../languages/bitbake.html|2004|pl|975
+ KiXtart|../languages/kixtart.html|1991|pl|976
+ VSXu|../languages/vsxu.html|2004|visual|977
  bloom|../languages/bloom.html|2010|pl|978
  djangoql|../languages/djangoql.html|2017|pl|979
- Rouge|../languages/rouge.html|2012|pl|980
- fe|../languages/fe.html|2019|pl|981
- Perl Data Language|../languages/perl-data-language.html|1996|pl|982
- Atmel AVR instruction set|../languages/avr.html|1996|isa|983
- progsbase|../languages/progsbase.html|2018|pl|984
+ fe|../languages/fe.html|2019|pl|980
+ Perl Data Language|../languages/perl-data-language.html|1996|pl|981
+ progsbase|../languages/progsbase.html|2018|pl|982
+ Rouge|../languages/rouge.html|2012|pl|983
+ Atmel AVR instruction set|../languages/avr.html|1996|isa|984
  Mask|../languages/maskjs.html|2012|template|985
- Nexus file|../languages/nexus-format.html|1997|textDataFormat|986
- QUEL|../languages/quel.html|1976|queryLanguage|987
- Sweave|../languages/sweave.html|2002|template|988
- Newspeak|../languages/newspeak.html|2006|pl|989
- Information Presentation Facility|../languages/ipf.html|1997|pl|990
- FutureBASIC|../languages/futurebasic.html|1992|pl|991
- LISP 2|../languages/lisp-2.html|1963|pl|992
- Zonnon|../languages/zonnon.html|2003|pl|993
- PhyloXML|../languages/phyloxml-format.html|2009|xmlFormat|994
- Cambridge Algebra System|../languages/camal.html|1973|pl|995
- Catala|../languages/catala.html|2019|pl|996
+ Catala|../languages/catala.html|2019|pl|986
+ Nexus file|../languages/nexus-format.html|1997|textDataFormat|987
+ QUEL|../languages/quel.html|1976|queryLanguage|988
+ Sweave|../languages/sweave.html|2002|template|989
+ Newspeak|../languages/newspeak.html|2006|pl|990
+ Information Presentation Facility|../languages/ipf.html|1997|pl|991
+ FutureBASIC|../languages/futurebasic.html|1992|pl|992
+ LISP 2|../languages/lisp-2.html|1963|pl|993
+ Zonnon|../languages/zonnon.html|2003|pl|994
+ PhyloXML|../languages/phyloxml-format.html|2009|xmlFormat|995
+ Cambridge Algebra System|../languages/camal.html|1973|pl|996
  TELOS|../languages/telos.html|1990|pl|997
  storyscript|../languages/storyscript.html|2017|pl|998
  WATFIV|../languages/watfiv.html|1968|pl|999

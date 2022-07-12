@@ -1,18 +1,37 @@
 title Fibonacci
 appeared 1991
 type pl
+creators Antonio Albano and Giorgio Ghelli and and Renzo Orsini
+country Italy
 
-wikipedia https://en.wikipedia.org/wiki/Fibonacci
- summary Fibonacci (c. 1170 – c. 1250) was an Italian mathematician from the Republic of Pisa, considered to be "the most talented Western mathematician of the Middle Ages". The name he is commonly called, "Fibonacci" (Italian: [fiboˈnattʃi]), was made up in 1838 by the Franco-Italian historian Guillaume Libri and is short for filius Bonacci ("son of Bonacci"). He is also known as Leonardo Bonacci, Leonardo of Pisa, or Leonardo Bigollo ("traveller") Pisano.Fibonacci popularized the Hindu–Arabic numeral system in the Western World primarily through his composition in 1202 of Liber Abaci (Book of Calculation).  He also introduced Europe to the sequence of Fibonacci numbers, which he used as an example in Liber Abaci.
- backlinksCount 775
- pageId 17949
- dailyPageViews 1369
- created 2001
- appeared 1973
-
+https://dl.acm.org/doi/pdf/10.5555/615224.615227
 https://semanticscholar.org/paper/3b9aa468a7bd9d75811680a3a3db1a42b73dbdf7
-status historical
+
+description Fibonacci is an object-oriented database programming language characterized by static and strong typing, and by new mechanisms for modeling databases in terms of objects with roles, classes, and associations.
 
 hopl 5759
 
 centralPackageRepositoryCount 0
+
+features
+ hasComments? true
+  (* query examples *)
+
+multiLineCommentKeywords (* *)
+
+example
+ let john = role Person
+  private
+   let address = var ("Darwin road, 123 - London") ;5
+  methods
+   Name = "John Daniels";
+   BirthYear = 1967;
+   Age = currentYear() - me.BirthYear;
+   Address = at (address);
+   modAddress (newAddress: String) =
+       if stringLength(newAddress) <= 0
+       then failwith "incorrect address"
+       else address := newAddress
+   Introduce = "My name is " & me.Name &
+        "and I was born in " ~ intToString(me.BirthYear);
+ end; 

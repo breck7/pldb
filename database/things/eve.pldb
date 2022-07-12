@@ -1,6 +1,8 @@
-title eve
+title Eve
 appeared 2016
 type pl
+
+webRepl http://play.witheve.com/#/examples/quickstart.eve
 
 githubRepo https://github.com/witheve/Eve
  stars 7057
@@ -22,3 +24,14 @@ wordRank 5008
 isOpenSource true
 writtenIn typescript
 centralPackageRepositoryCount 0
+
+lineCommentKeyword //
+
+example
+ // People older than 30
+ [#person age > 30]
+ // The same as above
+ [#person age]
+ age > 30
+ // Also the same as above
+ people = [#person]
