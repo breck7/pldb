@@ -140,8 +140,7 @@ class PLDBFileWithGitHub {
 
 	async fetchFirstCommit() {
 		const { file } = this
-		if (file.get(firstCommitPath) || Disk.exists(this.firstCommitResultPath))
-			return
+		if (Disk.exists(this.firstCommitResultPath)) return
 
 		console.log(`Fetching "${file.primaryKey}"`)
 
@@ -168,8 +167,7 @@ class PLDBFileWithGitHub {
 
 	writeFirstCommitToDatabase() {
 		const { file } = this
-		if (file.get(firstCommitPath) || !Disk.exists(this.firstCommitResultPath))
-			return this
+		if (file.get(firstCommitPath) || !this.firstCommitFetched) return this
 
 		try {
 			const { firstCommit } = this
@@ -182,16 +180,24 @@ class PLDBFileWithGitHub {
 		return this
 	}
 
+	get firstCommitFetched() {
+		return Disk.exists(this.firstCommitResultPath)
+	}
+
 	get firstCommit() {
 		return JSON.parse(Disk.read(this.firstCommitResultPath))
 	}
 
 	autocompleteCreators() {
 		const { file } = this
-		if (!file.get("creators")) {
-			const { firstCommit } = this
-			file.set("creators", firstCommit.commit.author.name)
-			file.save()
+		try {
+			if (!file.get("creators") && this.firstCommitFetched) {
+				const { firstCommit } = this
+				file.set("creators", firstCommit.commit.author.name)
+				file.save()
+			}
+		} catch (err) {
+			console.error(err)
 		}
 		return this
 	}
