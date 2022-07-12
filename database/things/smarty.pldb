@@ -1,8 +1,22 @@
 title Smarty
 appeared 2006
-type pl
+type template
+creators Monte Ohrt and Messju Mohr and Uwe Tews
 
-wikipedia https://en.wikipedia.org/wiki/Smarty
+example
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+    <meta charset="utf-8">
+    <title>{$title_text|escape}</title>
+ </head>
+ 
+ <body> {* This is a little comment that won't be visible in the HTML source *}
+ {$body_html}
+ </body> <!-- this is a little comment that will be seen in the HTML source -->
+ </html>
+
+wikipedia https://en.wikipedia.org/wiki/Smarty_(template_engine)
  example
   define('SMARTY_DIR', 'smarty-2.6.22/');
   require_once(SMARTY_DIR . 'Smarty.class.php');

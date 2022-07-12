@@ -162,6 +162,9 @@ sourceLink https://github.com/breck7/pldb/blob/main/database/things/${
       this.primaryKey
     }.pldb
 
+paragraph
+ ${this.description}
+
 ${this.descriptionSection}
 
 ${this.tryNowRepls}
@@ -217,13 +220,29 @@ ${facts.map(fact => ` - ${fact}`).join("\n")}`
     const { object } = this
     let akaMessage = object.standsFor ? `, aka ${object.standsFor},` : ""
     const appeared = object.appeared
+
+    let creators = object.creators || ""
+    if (creators) {
+      creators =
+        ` by ` +
+        creators
+          .split(" and ")
+          .map(
+            name =>
+              `<a href="../lists/creators.html#${nameToAnchor(
+                name
+              )}">${name}</a>`
+          )
+          .join(" and ")
+    }
+
     return `${title}${akaMessage} is ${getIndefiniteArticle(typeName)} ${
       this.typeLink
     }${
       appeared
         ? ` created in <a href="../lists/languages.html?filter=${appeared}">${appeared}</a>`
         : ""
-    }.`
+    }${creators}.`
   }
 
   get typeLink() {
@@ -231,26 +250,21 @@ ${facts.map(fact => ` - ${fact}`).join("\n")}`
   }
 
   get descriptionSection() {
-    const { file, object, description } = this
-    let longerDescription = ""
+    const { file, object } = this
+    let description = ""
     const wikipediaSummary = file.get("wikipedia summary")
     const ghDescription = file.get("githubRepo description")
     const wpLink = file.get(pldbNodeKeywords.wikipedia)
     if (wikipediaSummary)
-      longerDescription +=
-        description +
-        " " +
+      description =
         wikipediaSummary
           .split(". ")
           .slice(0, 3)
-          .join(". ") +
-        `. <a href="${wpLink}">Read more on Wikipedia...</a>`
-    else if (object.description)
-      longerDescription += description + " " + object.description
-    else if (ghDescription)
-      longerDescription += description + " " + ghDescription
+          .join(". ") + `. <a href="${wpLink}">Read more on Wikipedia...</a>`
+    else if (object.description) description = object.description
+    else if (ghDescription) description = ghDescription
     return `paragraph
- ${longerDescription || description}`
+ ${description}`
   }
 
   get facts() {
@@ -283,23 +297,8 @@ ${facts.map(fact => ` - ${fact}`).join("\n")}`
     const gitlabRepo = object.gitlab
     if (gitlabRepo) facts.push(`<a href="${gitlabRepo}">${title} on GitLab</a>`)
 
-    const appeared = object.appeared
-    if (appeared) facts.push(`${title} first appeared in ${appeared}`)
-
     const supersetOf = file.supersetFile
     if (supersetOf) facts.push(`${title} is a superset of ${supersetOf.link}`)
-
-    let creators = object.creators
-    if (creators) {
-      creators = creators
-        .split(" and ")
-        .map(
-          name =>
-            `<a href="../lists/creators.html#${nameToAnchor(name)}">${name}</a>`
-        )
-        .join(" and ")
-      facts.push(`${title} was created by ${creators}`)
-    }
 
     let corporateDevelopers = file.get("corporateDevelopers")
     if (corporateDevelopers) {
