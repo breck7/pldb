@@ -48,7 +48,7 @@ class PLDBFileWithGitHub {
 	file: PLDBFile
 
 	get firstCommitResultPath() {
-		return firstCommitCache + this.file.primaryKey + ".json"
+		return firstCommitCache + this.file.id + ".json"
 	}
 
 	async fetch() {
@@ -142,7 +142,7 @@ class PLDBFileWithGitHub {
 		const { file } = this
 		if (Disk.exists(this.firstCommitResultPath)) return
 
-		console.log(`Fetching "${file.primaryKey}"`)
+		console.log(`Fetching "${file.id}"`)
 
 		const url = file.get(repoPath)
 		const parts = url.split("/")
@@ -157,7 +157,7 @@ class PLDBFileWithGitHub {
 				//sha: "5.0"
 			})
 
-			console.log(`Success for "${file.primaryKey}"`)
+			console.log(`Success for "${file.id}"`)
 			Disk.write(this.firstCommitResultPath, JSON.stringify(commit, null, 2))
 		} catch (err) {
 			console.log(err)

@@ -62,12 +62,16 @@ webApi
 xmlFormat`).toObject()
 
 class PLDBFile extends TreeBaseFile {
-  get primaryKey() {
+  get id() {
     return getPrimaryKey(this)
   }
 
   get link() {
-    return `<a href="${this.primaryKey}.html">${this.title}</a>`
+    return `<a href="${this.id}.html">${this.title}</a>`
+  }
+
+  get fileExtension() {
+    return this.extensions.split(" ")[0]
   }
 
   get featurePath() {
@@ -88,6 +92,10 @@ class PLDBFile extends TreeBaseFile {
 
   get nextRankedLanguage() {
     return this.base.getFileAtLanguageRank(this.languageRank + 1)
+  }
+
+  get lineCommentKeyword() {
+    return this.get("lineCommentKeyword")
   }
 
   get langRankDebug() {
@@ -136,7 +144,7 @@ class PLDBFile extends TreeBaseFile {
   private _title: string
 
   get title() {
-    if (!this._title) this._title = this.get("title") || this.primaryKey
+    if (!this._title) this._title = this.get("title") || this.id
     return this._title
   }
 
@@ -275,16 +283,16 @@ class PLDBBaseFolder extends TreeBaseFolder {
 
     const inBoundLinks = {}
     this.forEach(file => {
-      inBoundLinks[file.primaryKey] = []
+      inBoundLinks[file.id] = []
     })
 
     this.forEach(file => {
       file.linksToOtherFiles.forEach(link => {
         if (!inBoundLinks[link])
           console.error(
-            `Broken permalink in '${file.primaryKey}': No language "${link}" found`
+            `Broken permalink in '${file.id}': No language "${link}" found`
           )
-        else inBoundLinks[link].push(file.primaryKey)
+        else inBoundLinks[link].push(file.id)
       })
     })
 
@@ -310,8 +318,8 @@ class PLDBBaseFolder extends TreeBaseFolder {
     if (this._searchIndex) return this._searchIndex
     const map = new Map()
     this.forEach(file => {
-      const id = file.primaryKey
-      map.set(file.primaryKey, id)
+      const id = file.id
+      map.set(file.id, id)
       map.set(file.title, id)
       const wp = file.wikipediaTitle
       if (wp) map.set(wp, id)
@@ -330,6 +338,13 @@ class PLDBBaseFolder extends TreeBaseFolder {
 
   getFile(id: string): PLDBFile | undefined {
     return this.getNode(this.dir + id + ".pldb")
+  }
+
+  get topLanguages() {
+    return lodash.sortBy(
+      this.filter(lang => lang.isLanguage),
+      "languageRank"
+    )
   }
 
   predictNumberOfUsers(file: PLDBFile) {
@@ -372,7 +387,7 @@ class PLDBBaseFolder extends TreeBaseFolder {
   _calcRanks(files: PLDBFile[] = this.getChildren()) {
     const { inboundLinks } = this
     let objects = files.map(file => {
-      const id = file.primaryKey
+      const id = file.id
       const object: any = {}
       object.id = id
       object.jobs = this.predictNumberOfJobs(file)
@@ -434,6 +449,27 @@ class PLDBBaseFolder extends TreeBaseFolder {
     return this.getFile(ranks[rank].id)
   }
 
+  get topFeatures() {
+    const files = this.featureFiles.map(file => {
+      const name = file.id
+      return {
+        feature: file.get("title"),
+        featureLink: `../languages/${name}.html`,
+        aka: file.getAll("aka").join(" or "),
+        path: file.get("featureKeyword"),
+        languages: file.languagesWithThisFeature.length,
+        psuedoExample: (file.get("psuedoExample") || "")
+          .replace(/\</g, "&lt;")
+          .replace(/\|/g, "&#124;")
+      }
+    })
+
+    const sorted = lodash.sortBy(files, "languages")
+    sorted.reverse()
+
+    return sorted
+  }
+
   getFeatureAtRank(rank: number) {
     return this._getFileAtRank(rank, this._inverseFeatureRanks)
   }
@@ -449,25 +485,25 @@ class PLDBBaseFolder extends TreeBaseFolder {
   predictPercentile(file: PLDBFile) {
     const files = this.getChildren()
     const ranks = this._getRanks(files)
-    return ranks[file.primaryKey].index / files.length
+    return ranks[file.id].index / files.length
   }
 
   getLanguageRankExplanation(file: PLDBFile) {
-    return this._languageRanks[file.primaryKey]
+    return this._languageRanks[file.id]
   }
 
   getFeatureRank(file: PLDBFile) {
     this._getRanks()
-    return this._featureRanks[file.primaryKey].index
+    return this._featureRanks[file.id].index
   }
 
   getLanguageRank(file: PLDBFile) {
     this._getRanks()
-    return this._languageRanks[file.primaryKey].index
+    return this._languageRanks[file.id].index
   }
 
   getRank(file: PLDBFile) {
-    return this._getRanks()[file.primaryKey].index
+    return this._getRanks()[file.id].index
   }
 
   createFile(id: string, content: string) {

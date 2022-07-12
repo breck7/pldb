@@ -21,7 +21,7 @@ class LanguagePageTemplate {
   constructor(file: PLDBFile) {
     this.file = file
     this.object = file.toObject()
-    this.primaryKey = this.file.primaryKey
+    this.id = this.file.id
   }
 
   makeATag(permalink) {
@@ -31,7 +31,7 @@ class LanguagePageTemplate {
 
   protected object: pldbNode
   protected file: PLDBFile // todo: fix type
-  protected primaryKey: string
+  protected id: string
 
   get trendingRepos() {
     const { file } = this
@@ -44,7 +44,7 @@ class LanguagePageTemplate {
       const githubId = file.get("githubLanguage")
 
       if (!table) {
-        console.log(`Error with ${this.primaryKey}`)
+        console.log(`Error with ${this.id}`)
         return ""
       }
 
@@ -159,7 +159,7 @@ pipeTable
 
 htmlTitle ${title} - ${lodash.upperFirst(typeName)}
 sourceLink https://github.com/breck7/pldb/blob/main/database/things/${
-      this.primaryKey
+      this.id
     }.pldb
 
 paragraph
@@ -191,14 +191,14 @@ ${this.keyboardNavigation}
 
   get prevPage() {
     return this.file.isLanguage
-      ? this.file.previousRankedLanguage.primaryKey
-      : this.file.previousRanked.primaryKey
+      ? this.file.previousRankedLanguage.id
+      : this.file.previousRanked.id
   }
 
   get nextPage() {
     return this.file.isLanguage
-      ? this.file.nextRankedLanguage.primaryKey
-      : this.file.nextRanked.primaryKey
+      ? this.file.nextRankedLanguage.id
+      : this.file.nextRanked.id
   }
 
   get keyboardNavigation() {
@@ -577,7 +577,7 @@ ${facts.map(fact => ` - ${fact}`).join("\n")}`
   get keywordsSection() {
     const keywords = this.file.get("keywords")
     if (!keywords) return ""
-    return `subsection <a href="../lists/keywords.html?filter=${this.primaryKey}">Keywords</a> in ${this.file.title}
+    return `subsection <a href="../lists/keywords.html?filter=${this.id}">Keywords</a> in ${this.file.title}
 paragraph
  ${keywords}`
   }
@@ -711,11 +711,11 @@ class FeaturePageTemplate extends LanguagePageTemplate {
   }
 
   get prevPage() {
-    return this.file.previousRankedFeature.primaryKey
+    return this.file.previousRankedFeature.id
   }
 
   get nextPage() {
-    return this.file.nextRankedFeature.primaryKey
+    return this.file.nextRankedFeature.id
   }
 
   get typeLink() {
@@ -733,7 +733,7 @@ class FeaturePageTemplate extends LanguagePageTemplate {
       .filter(file => file.getNode(featurePath).length)
       .map(file => {
         return {
-          id: file.primaryKey,
+          id: file.id,
           title: file.title,
           example: file.getNode(featurePath).childrenToString()
         }
@@ -743,7 +743,7 @@ class FeaturePageTemplate extends LanguagePageTemplate {
 
     const examplesText = Object.values(grouped)
       .map((group: any) => {
-        const id = file.primaryKey
+        const id = file.id
         const links = group
           .map(hit => `<a href="${hit.id}.html">${hit.title}</a>`)
           .join(", ")

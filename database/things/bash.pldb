@@ -8,7 +8,30 @@ subreddit bash
 creators Brian Fox
 
 features
+ hasComments true
+  # A comment
+ hasLineComments true
+  # A comment
+ hasUnitsOfMeasure false
+ hasSemanticIndentation false
+ hasStrings true
+  FOO="bar"
+ hasMultiLineComments false
+ hasIntegers true
+  NUM=42
  hasHereDocs true
+  cat <<Message
+   Hello world
+  Message
+ hasSets false
+ hasPipes true
+  echo "Hello world" > output.txt
+ hasPrintStatements true
+  echo "Hello World"
+ hasIdentifiers true
+  FOO="bar"
+ hasImports true
+  source ./bash.sh
 
 wikipedia https://en.wikipedia.org/wiki/Bash_(Unix_shell)
  example
@@ -77,6 +100,8 @@ hopl 1851
 quineRelay bash
 
 ubuntuPackage bash
+
+lineCommentKeyword #
 
 languageServerProtocolProject https://github.com/mads-hartmann/bash-language-server
  writtenIn typescript

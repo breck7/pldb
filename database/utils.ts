@@ -200,7 +200,7 @@ const toScrollTable = (tree, header) =>
 
 const nameToAnchor = (name: string) => name.replace(/ /g, "_")
 
-const getJoined = (node, keywords) => {
+const getJoined = (node, keywords): string => {
   const words = keywords
     .map(word => node.get(word) || "")
     .filter(i => i)

@@ -19,6 +19,12 @@ features
   Comment block
   =#
  hasGarbageCollection true
+ hasBooleans true
+  true
+ hasIntegers true
+  1
+ hasPrintStatements true
+  print("hello world")
  hasImports true
   # Files and file names are mostly unrelated to modules; modules are associated only with module expressions.
   # One can have multiple files per module, and multiple modules per file:

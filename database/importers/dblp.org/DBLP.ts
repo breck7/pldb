@@ -67,7 +67,7 @@ class DBLPFile {
   }
 
   get cachePath() {
-    return cachePath + this.file.primaryKey + ".json"
+    return cachePath + this.file.id + ".json"
   }
 
   get parsed() {

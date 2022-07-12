@@ -63,29 +63,25 @@ class Builder extends AbstractBuilder {
     const pagePath = __dirname + `/blog/lists/top${num}.scroll`
     const page = new TreeNode(Disk.read(pagePath))
 
-    let files = pldbBase
-      .filter(lang => lang.isLanguage)
-      .map(file => {
-        const name = file.primaryKey
-        const appeared = file.get("appeared")
-        const rank = file.languageRank + 1
-        const type = file.get("type")
-        const title = file.get("title")
-        return {
-          title,
-          titleLink: `../languages/${name}.html`,
-          rank,
-          type,
-          appeared
-        }
-      })
-
-    files = lodash.sortBy(files, "rank").slice(0, num)
+    const files = pldbBase.topLanguages.map(file => {
+      const name = file.id
+      const appeared = file.get("appeared")
+      const rank = file.languageRank + 1
+      const type = file.get("type")
+      const title = file.get("title")
+      return {
+        title,
+        titleLink: `../languages/${name}.html`,
+        rank,
+        type,
+        appeared
+      }
+    })
 
     replaceNext(
       page,
       `comment autogenTop`,
-      toScrollTable(new TreeNode(files), [
+      toScrollTable(new TreeNode(files.slice(0, num)), [
         "title",
         "titleLink",
         "appeared",
@@ -115,7 +111,7 @@ class Builder extends AbstractBuilder {
 
     const theWords = {}
     langsWithKeywords.forEach(file => {
-      const name = file.primaryKey
+      const name = file.id
       file
         .get("keywords")
         .split(" ")
@@ -132,7 +128,7 @@ class Builder extends AbstractBuilder {
           const entry = theWords[escapedWord]
 
           entry.langs.push(
-            `<a href='../languages/${file.primaryKey}.html'>${file.primaryKey}</a>`
+            `<a href='../languages/${file.id}.html'>${file.id}</a>`
           )
           entry.count++
         })
@@ -182,7 +178,7 @@ class Builder extends AbstractBuilder {
     const files = pldbBase
       .filter(file => file.get("type") !== "feature")
       .map(file => {
-        const name = file.primaryKey
+        const name = file.id
         return {
           name,
           nameLink: `../languages/${name}.html`,
@@ -213,7 +209,7 @@ class Builder extends AbstractBuilder {
     const page = new TreeNode(Disk.read(pagePath))
 
     let files = pldbBase.map(file => {
-      const name = file.primaryKey
+      const name = file.id
       const appeared = file.get("appeared")
       const rank = file.rank + 1
       const type = file.get("type")
@@ -259,7 +255,7 @@ class Builder extends AbstractBuilder {
     const files = pldbBase
       .filter(file => file.isLanguage)
       .map(file => {
-        const name = file.primaryKey
+        const name = file.id
         const title = file.get("title")
         const appeared = file.get("appeared") || ""
         const rank = file.languageRank + 1
@@ -301,27 +297,12 @@ class Builder extends AbstractBuilder {
     pldbBase.loadFolder()
     const pagePath = __dirname + "/blog/lists/features.scroll"
     const page = new TreeNode(Disk.read(pagePath))
-
-    const files = pldbBase.featureFiles.map(file => {
-      const name = file.primaryKey
-      return {
-        feature: file.get("title"),
-        featureLink: `../languages/${name}.html`,
-        aka: file.getAll("aka").join(" or "),
-        languages: file.languagesWithThisFeature.length,
-        psuedoExample: (file.get("psuedoExample") || "")
-          .replace(/\</g, "&lt;")
-          .replace(/\|/g, "&#124;")
-      }
-    })
-
-    const sorted = lodash.sortBy(files, "languages")
-    sorted.reverse()
+    const { topFeatures } = pldbBase
 
     replaceNext(
       page,
       "comment autogenFeatures",
-      toScrollTable(new TreeNode(sorted), [
+      toScrollTable(new TreeNode(topFeatures), [
         "feature",
         "featureLink",
         "aka",
@@ -334,7 +315,7 @@ class Builder extends AbstractBuilder {
       .toString()
       .replace(
         /A list of .+ features/,
-        `A list of ${numeral(files.length).format("0,0")} features`
+        `A list of ${numeral(topFeatures.length).format("0,0")} features`
       )
 
     Disk.write(pagePath, text)
@@ -370,10 +351,7 @@ class Builder extends AbstractBuilder {
 
     const rows = Object.keys(creators).map(name => {
       const languages = creators[name]
-        .map(
-          file =>
-            `<a href='../languages/${file.primaryKey}.html'>${file.title}</a>`
-        )
+        .map(file => `<a href='../languages/${file.id}.html'>${file.title}</a>`)
         .join(" - ")
       const count = creators[name].length
       let topRank = 10000
@@ -439,7 +417,7 @@ class Builder extends AbstractBuilder {
         .forEach(entity => {
           if (!entities[entity]) entities[entity] = []
           entities[entity].push({
-            id: file.primaryKey,
+            id: file.id,
             title: file.title,
             languageRank: file.languageRank
           })
@@ -552,7 +530,7 @@ class Builder extends AbstractBuilder {
 
     pldbBase.loadFolder()
     pldbBase.forEach(file => {
-      const path = `${databaseFolderWhenPublishedToWebsite}/${file.primaryKey}.scroll`
+      const path = `${databaseFolderWhenPublishedToWebsite}/${file.id}.scroll`
 
       const constructor =
         file.get("type") === "feature"
@@ -725,6 +703,36 @@ class Builder extends AbstractBuilder {
       PLDBAutocompleter
     } = require("./database/importers/PLDBAutocompleter.js")
     new PLDBAutocompleter().update(id)
+  }
+
+  generateWorksheets() {
+    pldbBase.loadFolder()
+    const { topFeatures } = pldbBase
+
+    pldbBase.topLanguages.slice(0, 100).forEach(file => {
+      const lineCommentKeyword = file.lineCommentKeyword
+
+      const todos = []
+      topFeatures.forEach(feature => {
+        const hit = file.getNode(`features ${feature.path}`)
+        if (hit && hit.getContent() === "false") return
+        if (hit && hit.length)
+          todos.push(
+            `${lineCommentKeyword} A short example of ${feature.feature}(${
+              feature.path
+            }) in ${file.title}:\n${hit.childrenToString()}`
+          )
+        else
+          todos.push(
+            `${lineCommentKeyword} A short example of ${feature.feature}(${feature.path}) in ${file.title}:`
+          )
+      })
+
+      Disk.write(
+        __dirname + `/ignore/worksheets/${file.id}.${file.fileExtension}`,
+        todos.join("\n\n")
+      )
+    })
   }
 
   updateAll() {
