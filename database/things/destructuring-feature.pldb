@@ -4,4 +4,4 @@ psuedoExample {name, age} = person
 description A shorthand assignment method to extract fields from a composite structure.
 https://reasonml.github.io/docs/en/destructuring
 status active
-featureKeyword hasDestructuring?
+featureKeyword hasDestructuring

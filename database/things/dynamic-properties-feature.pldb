@@ -3,4 +3,4 @@ type feature
 psuedoExample person.age = 50
 description Some OO languages like Python and Javascript allow you to set and access properties on instances at runtime that are not defined in the class definition.
 status active
-featureKeyword hasDynamicProperties?
+featureKeyword hasDynamicProperties

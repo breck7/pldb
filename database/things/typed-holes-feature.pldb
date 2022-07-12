@@ -3,4 +3,4 @@ type feature
 psuedoExample 2 + _ => 2 + [int|float]
 https://wiki.haskell.org/GHC/Typed_holes
 status active
-featureKeyword hasTypedHoles?
+featureKeyword hasTypedHoles

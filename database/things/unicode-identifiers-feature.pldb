@@ -3,4 +3,4 @@ type feature
 psuedoExample δ = 0.00001
 description Many languages only allow a limited character set to be used for identifier names. But some languages allow much of unicode.
 status active
-featureKeyword hasUnicodeIdentifiers?
+featureKeyword hasUnicodeIdentifiers

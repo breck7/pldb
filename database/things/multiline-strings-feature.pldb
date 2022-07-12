@@ -3,4 +3,4 @@ type feature
 psuedoExample hello = """hello\nworld"""
 description Some languages allow strings to span multiple lines.
 status active
-featureKeyword hasMultilineStrings?
+featureKeyword hasMultilineStrings

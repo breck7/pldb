@@ -3,4 +3,4 @@ type feature
 psuedoExample console.log("hello " + 2)
 description Changing an expression from one data type to another automatically.
 https://en.wikipedia.org/wiki/Type_conversion
-featureKeyword hasImplicitTypeConversions?
+featureKeyword hasImplicitTypeConversions
