@@ -172,12 +172,26 @@ class PLDBFileWithGitHub {
 			return this
 
 		try {
-			const commit = JSON.parse(Disk.read(this.firstCommitResultPath))
-			const year = moment(commit.commit.author.date).format("YYYY")
+			const { firstCommit } = this
+			const year = moment(firstCommit.commit.author.date).format("YYYY")
 			file.set(firstCommitPath, year)
 			file.save()
 		} catch (err) {
 			console.error(err)
+		}
+		return this
+	}
+
+	get firstCommit() {
+		return JSON.parse(Disk.read(this.firstCommitResultPath))
+	}
+
+	autocompleteCreators() {
+		const { file } = this
+		if (!file.get("creators")) {
+			const { firstCommit } = this
+			file.set("creators", firstCommit.commit.author.name)
+			file.save()
 		}
 		return this
 	}
@@ -209,6 +223,7 @@ class GitHubImporter {
 				.writeFirstCommitToDatabase()
 				.writeRepoInfoToDatabase()
 				.autocompleteAppeared()
+				.autocompleteCreators()
 		})
 	}
 
@@ -219,9 +234,10 @@ class GitHubImporter {
 	async runAll(file) {
 		const gitFile = new PLDBFileWithGitHub(file)
 		await gitFile.fetch()
-		gitFile.writeFirstCommitToDatabase()
-		.writeRepoInfoToDatabase()
-		.autocompleteAppeared()
+		gitFile
+			.writeFirstCommitToDatabase()
+			.writeRepoInfoToDatabase()
+			.autocompleteAppeared()
 	}
 }
 
