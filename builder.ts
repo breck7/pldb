@@ -128,7 +128,7 @@ class Builder extends AbstractBuilder {
           const entry = theWords[escapedWord]
 
           entry.langs.push(
-            `<a href='../languages/${file.id}.html'>${file.id}</a>`
+            `<a href='../languages/${file.id}.html'>${file.title}</a>`
           )
           entry.count++
         })
@@ -178,26 +178,28 @@ class Builder extends AbstractBuilder {
     const files = pldbBase
       .filter(file => file.get("type") !== "feature")
       .map(file => {
-        const name = file.id
         return {
-          name,
-          nameLink: `../languages/${name}.html`,
+          name: file.title,
+          nameLink: `../languages/${file.id}.html`,
+          rank: file.rank,
           extensions: file.extensions
         }
       })
       .filter(file => file.extensions)
 
+    const sorted = lodash.sortBy(files, "rank")
+
     replaceNext(
       page,
       "comment autogenExtensions",
-      toScrollTable(new TreeNode(files), ["name", "nameLink", "extensions"])
+      toScrollTable(new TreeNode(sorted), ["name", "nameLink", "extensions"])
     )
 
     const text = page
       .toString()
       .replace(
         /list of .+ file extensions/,
-        `list of ${numeral(files.length).format("0,0")} file extensions`
+        `list of ${numeral(sorted.length).format("0,0")} file extensions`
       )
 
     Disk.write(pagePath, text)
