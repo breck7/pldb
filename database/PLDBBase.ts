@@ -497,6 +497,10 @@ class PLDBBaseFolder extends TreeBaseFolder {
     return this._featureRanks[file.id].index
   }
 
+  get grammarPath() {
+    return this.dir + "pldb.grammar"
+  }
+
   getLanguageRank(file: PLDBFile) {
     this._getRanks()
     return this._languageRanks[file.id].index

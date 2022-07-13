@@ -6,7 +6,6 @@ const fs = require("fs")
 const { jtree } = require("jtree")
 const { TreeNode } = jtree
 const { Disk } = require("jtree/products/Disk.node.js")
-const grammarNode = require("jtree/products/grammar.nodejs.js")
 const { CommandLineApp } = require("jtree/products/commandLineApp.node.js")
 const { AbstractBuilder } = require("jtree/products/AbstractBuilder.node.js")
 const { ScrollFolder } = require("scroll-cli")
@@ -603,8 +602,6 @@ class Builder extends AbstractBuilder {
   }
 
   buildGrammar() {
-    const outputFilePath = pldbBase.dir + "pldb.grammar"
-
     // Concatenate all files ending in ".grammar" in the "grammar" directory:
     const grammar =
       `tooling A function generates this grammar by combining all files in the grammar folder.\n` +
@@ -617,17 +614,10 @@ class Builder extends AbstractBuilder {
         .join("\n")
 
     // Write the concatenated grammar
-    Disk.write(outputFilePath, grammar)
-
-    // check grammar for errors
-
-    const grammarErrors = new grammarNode(grammar)
-      .getAllErrors()
-      .map(err => err.toObject())
-    if (grammarErrors.length) console.log(grammarErrors)
+    Disk.write(pldbBase.grammarPath, grammar)
 
     // Format the file:
-    new CommandLineApp().format(outputFilePath)
+    new CommandLineApp().format(pldbBase.grammarPath)
   }
 
   merge() {
@@ -690,14 +680,6 @@ class Builder extends AbstractBuilder {
     pldbBase.loadFolder()
     pldbBase.startListeningForFileChanges()
     new (<any>TreeBaseServer)(pldbBase).listen(port)
-  }
-
-  checkBlog() {
-    console.log(
-      shell(`cd ${websiteFolder}; scroll check; cd lists/; scroll check; `, {
-        encoding: "utf8"
-      })
-    )
   }
 
   update(id: string) {

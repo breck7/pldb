@@ -6,7 +6,8 @@
   "scripts": {
     "build": "jtree build buildAll",
     "cloc": "cloc --vcs git .",
-    "checkLinks": "linkinator -r https://pldb.pub > brokenLinks.txt"
+    "checkLinks": "linkinator -r https://pldb.pub > brokenLinks.txt",
+    "test": "ts-node test.ts"
   },
   "prettier": {
     "semi": false
@@ -33,6 +34,7 @@
     "scroll-cli": "^25.2.1"
   },
   "devDependencies": {
-    "@types/node": "^17.0.8"
+    "@types/node": "^17.0.8",
+    "tap": "^16.3.0"
   }
 }
