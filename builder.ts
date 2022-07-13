@@ -11,8 +11,8 @@ const { AbstractBuilder } = require("jtree/products/AbstractBuilder.node.js")
 const { ScrollFolder } = require("scroll-cli")
 const shell = require("child_process").execSync
 
-import { LanguagePageTemplate, FeaturePageTemplate } from "./database/pages"
-import { PLDBBaseFolder } from "./database/PLDBBase"
+import { LanguagePageTemplate, FeaturePageTemplate } from "./code/pages"
+import { PLDBBaseFolder } from "./code/PLDBBase"
 
 const { TreeBaseServer } = require("jtree/products/treeBase.node.js")
 
@@ -26,7 +26,7 @@ import {
   replaceNext,
   toScrollTable,
   isLanguage
-} from "./database/utils"
+} from "./code/utils"
 
 class Builder extends AbstractBuilder {
   _cpAssets() {
@@ -474,7 +474,7 @@ class Builder extends AbstractBuilder {
 
     Disk.write(
       websiteFolder + "/scrollExtensions.grammar",
-      Disk.read(__dirname + `/database/scrollExtensions.grammar`)
+      this._scrollExtensionsFile
     )
 
     this._cpAssets()
@@ -518,7 +518,7 @@ class Builder extends AbstractBuilder {
 
     Disk.write(
       websiteFolder + "/lists/scrollExtensions.grammar",
-      Disk.read(__dirname + `/database/scrollExtensions.grammar`)
+      this._scrollExtensionsFile
     )
 
     const folder = new ScrollFolder(websiteFolder + "/lists")
@@ -548,11 +548,15 @@ class Builder extends AbstractBuilder {
 
     Disk.write(
       databaseFolderWhenPublishedToWebsite + "/scrollExtensions.grammar",
-      Disk.read(__dirname + `/database/scrollExtensions.grammar`)
+      this._scrollExtensionsFile
     )
 
     const folder = new ScrollFolder(databaseFolderWhenPublishedToWebsite)
     folder.buildSinglePages()
+  }
+
+  get _scrollExtensionsFile() {
+    return Disk.read(__dirname + `/code/scrollExtensions.grammar`)
   }
 
   buildAcknowledgementsPage() {
@@ -575,7 +579,7 @@ class Builder extends AbstractBuilder {
 
     const npmPackages = Object.keys({
       ...require("./package.json").dependencies,
-      ...require("./database/importers/package.json").dependencies
+      ...require("./code/importers/package.json").dependencies
     })
 
     npmPackages.sort()
@@ -661,7 +665,7 @@ class Builder extends AbstractBuilder {
   }
 
   buildTypesFile() {
-    Disk.write(__dirname + "/database/types.ts", pldbBase.typesFile)
+    Disk.write(__dirname + "/code/types.ts", pldbBase.typesFile)
   }
 
   formatDatabase() {
@@ -685,7 +689,7 @@ class Builder extends AbstractBuilder {
   update(id: string) {
     const {
       PLDBAutocompleter
-    } = require("./database/importers/PLDBAutocompleter.js")
+    } = require("./code/importers/PLDBAutocompleter.js")
     new PLDBAutocompleter().update(id)
   }
 

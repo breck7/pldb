@@ -252,7 +252,7 @@ class PLDBBaseFolder extends TreeBaseFolder {
   static getBase() {
     return new (<any>PLDBBaseFolder)(
       undefined,
-      __dirname + "/things/"
+      __dirname + "/../database/things/"
     ) as PLDBBaseFolder
   }
 

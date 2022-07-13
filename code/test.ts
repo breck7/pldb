@@ -4,7 +4,7 @@ const tap = require("tap")
 const grammarNode = require("jtree/products/grammar.nodejs.js")
 const { Disk } = require("jtree/products/Disk.node.js")
 
-import { PLDBBaseFolder } from "./database/PLDBBase"
+import { PLDBBaseFolder } from "./PLDBBase"
 const pldbBase = PLDBBaseFolder.getBase()
 
 const runTree = testTree =>
