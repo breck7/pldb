@@ -1,5 +1,8 @@
-title sublime-syntax-test
+title Sublime Syntax Test Lang
 type grammarLanguage
+appeared 2008
+description A language for testing sublime syntax files.
+related sublime-syntax
 
 example
  // SYNTAX TEST "Packages/C/C.sublime-syntax"

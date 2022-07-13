@@ -1,4 +1,24 @@
-title tmlanguage
+title TextMate Language
 type grammarLanguage
 website https://macromates.com/manual/en/language_grammars
 fileExtensions tmLanguage
+appeared 2004
+example
+ scopeName = 'source.untitled';
+ fileTypes = ( );
+ foldingStartMarker = '\{\s*$';
+ foldingStopMarker = '^\s*\}';
+ patterns = (
+    {  name = 'keyword.control.untitled';
+       match = '\b(if|while|for|return)\b';
+    },
+    {  name = 'string.quoted.double.untitled';
+       begin = '"';
+       end = '"';
+       patterns = ( 
+          {  name = 'constant.character.escape.untitled';
+             match = '\\.';
+          }
+       );
+    },
+ );

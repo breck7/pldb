@@ -1,4 +1,19 @@
-title sublime-syntax
+title Sublime Syntax
 type grammarLanguage
 website https://www.sublimetext.com/docs/3/syntax.html
 fileExtensions sublime-syntax
+description Sublime Syntax files are YAML files with a small header, followed by a list of contexts. Each context has a list of patterns that describe how to highlight text in that context, and how to change the current text.
+related yaml
+appeared 2008
+
+example
+ %YAML 1.2
+ ---
+ name: C
+ file_extensions: [c, h]
+ scope: source.c
+ 
+ contexts:
+   main:
+     - match: \b(if|else|for|while)\b
+       scope: keyword.control.c
