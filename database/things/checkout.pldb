@@ -2,4 +2,4 @@ title checkout
 appeared 2011
 type assembly
 description It is designed to be lower-level than assembler or even machine code, by matching the way modern processors work more closely than machine language does (machine code matches the way processors used to work decades ago, rather than the way they work nowadays). Thus, it makes operations like memory transfers (which take up the most time on a modern processor) explicit; this leads to the language's name, as memory needs to be "checked out" via copy or move instructions in order to be able to use it. The secondary effect of this is that efficient code tends to be shorter and simpler than inefficient code, although it can sometimes be harder to see how it works.
-https://esolangs.org/wiki/Checkout
+reference https://esolangs.org/wiki/Checkout

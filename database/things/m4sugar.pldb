@@ -57,7 +57,7 @@ linguistGrammarRepo https://github.com/Alhadis/language-etc
   	[m4_foreach([item], m4_list_contents([$1]), m4_if(item, [$2], [[$3]], [[$4]]))]
   )])
 
-http://www6.gnu.org/software/autoconf/manual/autoconf.pdf
+reference http://www6.gnu.org/software/autoconf/manual/autoconf.pdf
 status active
 fileType text
 centralPackageRepositoryCount 0

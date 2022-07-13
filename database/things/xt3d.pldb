@@ -13,5 +13,5 @@ example
  </xt3d-output>
 
 description We have designed and implemented xt3d, a highly declarative xml specification language. It demands little more from users than a knowledge of the expected input and desired output. We illustrate the power of xt3d with several examples, including one reminiscent of polytypic programming that greatly simplifies the import of xml values into general-purpose languages. . xt3d is itself an xml language, so users do not need to learn a new surface syntax.  The principal advantage of xt3d over xslt is that it provides an extremely simple, declarative language for describing transformations over xml elements.
-http://cs.brown.edu/people/sk/Publications/Papers/Published/kgg-xt3d/paper.pdf
+reference http://cs.brown.edu/people/sk/Publications/Papers/Published/kgg-xt3d/paper.pdf
 related xslt

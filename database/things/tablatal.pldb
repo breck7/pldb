@@ -12,4 +12,4 @@ example
 
 description This space-sensitive database format is designed to store a list of elements of the same length, accessible by id. The parser is 30 lines long, and allows for human-readable data structures for static sites such as Oscean, also see Indental. In the Tablatal file, the first line declares the key, the spacing between each key defines the length of the parameters for all subsequent lines.
 website https://wiki.xxiivv.com/#tablatal
-https://github.com/XXIIVV/Oscean
+reference https://github.com/XXIIVV/Oscean

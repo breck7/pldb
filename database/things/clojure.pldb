@@ -84,7 +84,7 @@ linguistGrammarRepo https://github.com/atom/language-clojure
     ([n] (* (rand) n)))
 
 website https://clojure.org
-https://download.clojure.org/papers/clojure-hopl-iv-final.pdf
+reference https://download.clojure.org/papers/clojure-hopl-iv-final.pdf
 status active
 
 replit clojure

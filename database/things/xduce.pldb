@@ -13,5 +13,5 @@ example
     tel["123-456-789"]]]
 
 description XDuce is a statically typed programming language for XML processing. Its basic data values are XML documents, and its types (so-called regular expression types) directly correspond to document schemas. XDuce also provides a flexible form of regular expression pattern matching, integrating conditional branching, tag checking, and subtree extraction, as well as dynamic typechecking. We survey the principles of XDuce’s design, develop examples illustrating its key features, describe its foundations in the theory of regular tree automata, and present a complete formal definition of its core, along with a proof of type safety.
-https://www.cis.upenn.edu/~bcpierce/papers/xduce-toit.pdf
+reference https://www.cis.upenn.edu/~bcpierce/papers/xduce-toit.pdf
 related dtd

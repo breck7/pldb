@@ -58,6 +58,6 @@ example
      savefig(output.hist)
 
 description A workflow is defined in a ‘Snakefile’ through a domain-specific language that is close to standard Python syntax. It consists of rules that denote how to create output files from input files. The workflow is implied by dependencies between the rules that arise from one rule needing an output file of another as an input file.
-https://academic.oup.com/bioinformatics/article/28/19/2520/290322
+reference https://academic.oup.com/bioinformatics/article/28/19/2520/290322
 status historical
 centralPackageRepositoryCount 0

@@ -3,7 +3,7 @@ appeared 2008
 type binaryDataFormat
 
 description A simple format for saving numpy arrays to disk with the full information about them. The .npy format is the standard binary file format in NumPy for persisting a single arbitrary NumPy array on disk.
-https://docs.scipy.org/doc/numpy/reference/generated/numpy.lib.format.html#module-numpy.lib.format
+reference https://docs.scipy.org/doc/numpy/reference/generated/numpy.lib.format.html#module-numpy.lib.format
 status active
 fileExtensions npy
 centralPackageRepositoryCount 0

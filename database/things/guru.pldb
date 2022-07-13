@@ -11,5 +11,5 @@ example
  <trie A>.
 
 description  OpTT has been implemented in the GURU verified programming language, which includes a type- and proof-checker, and a compiler to efficient C code. In addition to the core OpTT, GURU implements a number of extensions, including ones for verification of programs using mutable state and input/output. This paper gives an introduction to verified programming in GURU.
-http://homepage.divms.uiowa.edu/~astump/papers/plpv09.pdf
+reference http://homepage.divms.uiowa.edu/~astump/papers/plpv09.pdf
 status historical

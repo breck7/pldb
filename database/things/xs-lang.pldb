@@ -7,4 +7,4 @@ example
  gcd:{([`x`y]):..;if y==0(x)(y gcd x mod y)};
 
 description xs is a dynamically typed, dynamically scoped, concatenative array language inspired by kdb+/q and released into the public domain. The interpreter and builtin functions are written in OCaml. The name “xs” either stands for: eXtra Small or The plural of “x”.
-https://cryptm.org/xs/
+reference https://cryptm.org/xs/

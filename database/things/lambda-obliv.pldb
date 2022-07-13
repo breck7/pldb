@@ -2,4 +2,4 @@ title lambda-obliv
 appeared 2020
 type pl
 description A Language for Probabilistically Oblivious Computation. An oblivious computation is one that is free of direct and indirect information leaks, e.g., due to observable differences in timing and memory access patterns. This paper presents λobliv, a core language whose type system enforces obliviousness. Prior work on type-enforced oblivious computation has focused on deterministic programs. λobliv is new in its consideration of programs that implement probabilistic algorithms, such as those involved in cryptography. λobliv employs a substructural type system and a novel notion of probability region to ensure that information is not leaked via the observed distribution of visible events. Probability regions support reasoning about probabilistic correlation and independence between values, and our use of probability regions is motivated by a source of unsoundness that we discovered in the type system of ObliVM, a language for implementing state of the art oblivious algorithms.
-https://dl.acm.org/doi/pdf/10.1145/3371118?download=true
+reference https://dl.acm.org/doi/pdf/10.1145/3371118?download=true

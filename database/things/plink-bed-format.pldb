@@ -7,7 +7,7 @@ example
 
 description Primary representation of genotype calls at biallelic variants. Do not confuse this with the UCSC Genome Browser's BED format, which is totally different. Used in plink.
 website https://www.cog-genomics.org/plink2/formats#bed
-https://www.sciencedirect.com/science/article/pii/S0002929707613524
+reference https://www.sciencedirect.com/science/article/pii/S0002929707613524
 status active
 fileExtensions bed
 fileType binary

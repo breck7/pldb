@@ -4,7 +4,7 @@ type textDataFormat
 
 description Sample information file accompanying a .bed binary genotype table. The FAM file is just the first six columns of the PED file.
 website https://www.cog-genomics.org/plink2/formats#fam
-https://www.sciencedirect.com/science/article/pii/S0002929707613524
+reference https://www.sciencedirect.com/science/article/pii/S0002929707613524
 status active
 fileExtensions fam
 fileType text

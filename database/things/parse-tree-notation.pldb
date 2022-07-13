@@ -2,4 +2,4 @@ title parse-tree-notation
 appeared 1994
 type grammarLanguage
 description An important aspect of Parse Tree Notation (PTN) is that the data structure being manipulated is the parse tree for the program, not its token list. Pattern matching in PTN is on subtrees of the program's parse tree, using DCG rules to identify the subtrees of interest
-https://dtai.cs.kuleuven.be/projects/ALP/newsletter/archive_93_96/news/tools/grammars/ptn.html
+reference https://dtai.cs.kuleuven.be/projects/ALP/newsletter/archive_93_96/news/tools/grammars/ptn.html

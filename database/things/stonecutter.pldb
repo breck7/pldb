@@ -3,4 +3,4 @@ appeared 2020
 type grammarLanguage
 creators John D. Leidel and David Donofrio and Frank Conlon
 description In this work we introduce the StoneCutter instruction set design language and tool infrastructure. StoneCutter provides a familiar, C-like language construct by which to develop the implementation for individual, programmable instructions. The LLVM-based StoneCutter compiler performs individual instruction and whole-ISA optimizations in order to generate a high performance, Chisel HDL representation of the target design. Utilizing the existing Chisel tools, users can also generate C++ cycle accurate simulation models as well as Verilog representations of the target design. As a result, StoneCutter provides a very rapid design environment for development and experimentation.
-https://dl.acm.org/doi/10.1145/3387902.3394029
+reference https://dl.acm.org/doi/10.1145/3387902.3394029
