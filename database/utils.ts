@@ -194,7 +194,7 @@ const nodeToFlatObject = parentNode => {
 const toScrollTable = (tree, header) =>
   "pipeTable\n " +
   tree
-    .toDelimited("|", header)
+    .toDelimited("|", header, false)
     .replace(/\n/g, "\n ")
     .trim()
 

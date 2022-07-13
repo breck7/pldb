@@ -19,7 +19,7 @@ pipeTable
  Comments|../languages/comment-feature.html||# a comment|163
  Line Comments|../languages/line-comments-feature.html||# from here to end of line is a comment|121
  Semantic Indentation|../languages/semantic-indentation-feature.html||if true(newline/space)print True|53
- Strings|../languages/strings-feature.html||"""hi"""|30
+ Strings|../languages/strings-feature.html||"hi"|30
  Operator Overloading|../languages/operator-overloading-feature.html||def __add__(): doSomethingDifferent()|30
  File Imports|../languages/file-imports-feature.html||import package|30
  MultiLine Comments|../languages/multiline-comments-feature.html||/* a looong comment */|22
@@ -30,9 +30,9 @@ pipeTable
  Multiple Inheritance|../languages/multiple-inheritance-feature.html||extends parentWhichExtendsSomethingElse|13
  Constructors|../languages/constructor-feature.html||Person: constructor(name: string): {}|12
  Garbage Collection|../languages/garbage-collection-feature.html||var iDontNeedToFreeThis|11
- Message Passing|../languages/message-passing-feature.html||"""get homepage"""|10
+ Message Passing|../languages/message-passing-feature.html||"get homepage"|10
  Macros|../languages/macros-feature.html||#define height 10|10
- Print Statements|../languages/print-statements-feature.html||"print ""Hi"""|9
+ Print Statements|../languages/print-statements-feature.html||print "Hi"|9
  Identifiers|../languages/identifiers-feature.html||name = Bob|9
  Static Typing|../languages/static-typing-feature.html||int score = 100|7
  Single Dispatch|../languages/single-dispatch-feature.html||person.run()|7
@@ -46,7 +46,7 @@ pipeTable
  Threads|../languages/threads-feature.html||thread1(); thread2();|5
  Pattern Matching|../languages/pattern-matching-feature.html||fib 0 = 1; fib 1 = 1|5
  Partial Application|../languages/partial-application-feature.html||add5 = num => addNumbers(10, num)|5
- Multiline Strings|../languages/multiline-strings-feature.html||"hello = """"""hello\nworld"""""""|5
+ Multiline Strings|../languages/multiline-strings-feature.html||hello = """hello\nworld"""|5
  Increment and decrement operators|../languages/increment-and-decrement-operators-feature.html||i++|5
  Homoiconicity|../languages/homoiconic-feature.html||(list ())|5
  Generics|../languages/generics-feature.html||function identity&lt;T>(arg: T): T|5
@@ -66,10 +66,10 @@ pipeTable
  Regular Expression Syntax Sugar|../languages/regular-expressions-syntax-sugar-feature.html||/\w+\d?/|3
  Range Operator|../languages/range-operator-feature.html||1 ... 10|3
  Postfix Notation|../languages/postfix-notation-feature.html||2 3 4 + 2 -|3
- Polymorphism|../languages/polymorphism-feature.html||"a + ""b""; 1 + 2"|3
+ Polymorphism|../languages/polymorphism-feature.html||a + "b"; 1 + 2|3
  Pipes|../languages/pipes-feature.html||ls &#124; wc|3
  Merges Whitespace|../languages/merges-whitespace-feature.html||result = 1    +    2|3
- Maps|../languages/maps-feature.html|dict or dictionary or object or record or struct or hashtable or keyed list or associative array|"{name: ""Mary""}"|3
+ Maps|../languages/maps-feature.html|dict or dictionary or object or record or struct or hashtable or keyed list or associative array|{name: "Mary"}|3
  Inheritance|../languages/inheritance-feature.html||class Box extends Cube|3
  Gotos|../languages/gotos-feature.html||goto 10|3
  Destructuring|../languages/destructuring-feature.html||{name, age} = person|3
@@ -85,16 +85,16 @@ pipeTable
  Map Functions|../languages/map-functions-feature.html||[1,2].map(square)|2
  Manual Memory Management|../languages/manual-memory-management-feature.html||malloc(4);|2
  Magic Getters and Setters|../languages/magic-getters-and-setters-feature.html||get(name) => obj[name]|2
- Letter-first Identifiers|../languages/letter-first-identifiers-feature.html||"seven11 = ""OK"" // 711 = ""ERROR"""|2
+ Letter-first Identifiers|../languages/letter-first-identifiers-feature.html||seven11 = "OK" // 711 = "ERROR"|2
  Functions|../languages/functions-feature.html|routines or procedures or methods|function foo() {}|2
  Function Overloading|../languages/function-overloading-feature.html|Ad hoc polymorphism|add(string: str, string2: str)|2
  First-Class Functions|../languages/first-class-functions-feature.html||[2.1].map(Math.round)|2
- Exceptions|../languages/exceptions-feature.html||"throw new Error(""Uh oh"")"|2
+ Exceptions|../languages/exceptions-feature.html||throw new Error("Uh oh")|2
  Dynamic Properties|../languages/dynamic-properties-feature.html||person.age = 50|2
  Duck Typing|../languages/duck-typing-feature.html||length() // makes me an iterator|2
  Dispose Blocks Pattern|../languages/dispose-blocks-feature.html||with something: do something()|2
- Disk Output|../languages/disk-output-feature.html||"write(""foobar.txt"", ""something"")"|2
- Default Parameters Pattern|../languages/default-parameters-feature.html||"say(message = ""Hello"")"|2
+ Disk Output|../languages/disk-output-feature.html||write("foobar.txt", "something")|2
+ Default Parameters Pattern|../languages/default-parameters-feature.html||say(message = "Hello")|2
  Conditionals|../languages/conditionals-feature.html||if (isTrue) doSomething()|2
  Async Await|../languages/async-await-feature.html||async doSomething => await somethingElse()|2
  Assert Statements|../languages/assert-statements-feature.html||assert(isTrue)|2
@@ -121,7 +121,7 @@ pipeTable
  Methods|../languages/methods-feature.html||hi.length|1
  Method Chaining|../languages/method-chaining-feature.html||a.toString().length|1
  Lazy Evaluation|../languages/lazy-evaluation-feature.html||print(range(1000000)[2])|1
- Implicit Type Casting|../languages/implicit-type-casting-feature.html||"console.log(""hello "" + 2)"|1
+ Implicit Type Casting|../languages/implicit-type-casting-feature.html||console.log("hello " + 2)|1
  Implicit Arguments|../languages/implicit-arguments-feature.html||shout(implicit message: string)|1
  Expressions|../languages/expressions-feature.html||(1 + 2)|1
  Binary Operators|../languages/binary-operators-feature.html||1 + 1|1
