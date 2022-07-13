@@ -131,6 +131,7 @@ const isLanguage = type => {
     framework: true,
     standard: true,
     compiler: true,
+    decompiler: true,
     binaryExecutable: true,
     binaryDataFormat: true,
     equation: true,
