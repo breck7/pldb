@@ -27,6 +27,20 @@ a:hover {
 .pldbFooter a:hover {
   color: black;
 }
+.gitHubTopRightLinkComponent {
+  text-align: right;
+  position: absolute;
+  display: block;
+  right: 20px;
+  top: 8px;
+}
+.gitHubTopRightLinkComponent svg {
+  width: 26px;
+  fill: rgba(204, 204, 204, 0.5);
+}
+.gitHubTopRightLinkComponent svg:hover {
+  fill: #333;
+}
 .scrollPage {
   margin: 0;
 }
