@@ -2,7 +2,7 @@ githubLanguageNode
  description GitHub has a set of supported languages.
  extends abstractMultiwordGuidNode
  inScope githubLanguageFileExtensionsNode githubTrendingProjectsNode githubTrendingProjectsCountNode
- crux githubLanguage
+ cruxFromId
  int sortIndex 491
  string sourceDomain github.com
 githubLanguageFileExtensionsNode

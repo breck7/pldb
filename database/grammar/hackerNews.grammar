@@ -1,7 +1,7 @@
 hackerNewsDiscussionsNode
  boolean fromCrawler true
  extends abstractFactNode
- crux hackerNewsDiscussions
+ cruxFromId
  baseNodeType blobNode
  boolean includeChildrenInCsv false
  description Links to Hacker News posts discussing this language.

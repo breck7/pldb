@@ -1,7 +1,7 @@
 rijuReplNode
  extends abstractUrlNode
  description A link to try this language on riju.codes
- crux rijuRepl
+ cruxFromId
  string sourceDomain riju.codes
  single
  inScope fileExtensionsNode descriptionNode websiteNode githubRepoNode exampleNode

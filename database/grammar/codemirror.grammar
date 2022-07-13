@@ -1,5 +1,5 @@
 codeMirrorNode
  extends abstractOneWordGuidNode
  description A link to a CodeMirror syntax highlighting package for this language (https://github.com/codemirror/codemirror5/tree/master/mode/LANGUAGE)
- crux codeMirror
+ cruxFromId
  string sourceDomain codemirror.net

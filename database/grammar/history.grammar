@@ -4,7 +4,7 @@ statusCell
 statusNode
  cells keywordCell statusCell
  extends abstractFactNode
- crux status
+ cruxFromId
  single
 creatorNameCell
  extends stringCell
@@ -13,14 +13,14 @@ creatorsNode
  cells keywordCell
  catchAllCellType creatorNameCell
  extends abstractFactNode
- crux creators
+ cruxFromId
  int sortIndex 800
  single
 appearedNode
  description What year was the language publicly released and/or announced.
  extends abstractYearNode
  int sortIndex 900
- crux appeared
+ cruxFromId
  single
 nativeLanguageWordCell
  description The name of a natural language like English or Japanese.
@@ -28,17 +28,17 @@ nativeLanguageNode
  cells keywordCell nativeLanguageWordCell
  extends abstractFactNode
  description Nearly all programming languages are written in English, but some aren't. Set this field for the ones that are not.
- crux nativeLanguage
+ cruxFromId
 latestReleaseNode
  description The year of the most recent release of the thing.
  extends abstractYearNode
  int sortIndex 899
- crux latestRelease
+ cruxFromId
  single
 firstAnnouncementNode
  description A url announcing the creation or release of a new language
  extends abstractUrlNode
- crux firstAnnouncement
+ cruxFromId
  single
 announcementMethodCell
  description Common ways languages are first announced.
@@ -48,7 +48,7 @@ announcementMethodNode
  description How was the language first announced?
  extends abstractFactNode
  cells keywordCell announcementMethodCell
- crux announcementMethod
+ cruxFromId
  single
 countryNameCell
 countryNode
@@ -56,14 +56,14 @@ countryNode
  cells keywordCell
  catchAllCellType countryNameCell
  extends abstractFactNode
- crux country
+ cruxFromId
 corporateDevelopersNode
  description Which corporation(s) sponsors the development of the project, if any.
  catchAllCellType stringCell
  extends abstractFactNode
- crux corporateDevelopers
+ cruxFromId
 isOpenSourceNode
  description Is it an open source project?
  extends abstractBooleanNode
- crux isOpenSource
+ cruxFromId
  single

@@ -66,79 +66,79 @@ abstractUrlGuidNode
 antlrNode
  extends abstractUrlGuidNode
  description A link to the ANTLR grammar for this language (https://github.com/antlr/grammars-v4/tree/master/LANGUAGE)
- crux antlr
+ cruxFromId
  string sourceDomain antlr.org
-jupyterKernelsNode
+jupyterKernelNode
  extends abstractUrlGuidNode
  boolean multipleOk true
  description A link to a Jupyter Kernel for this language.
- crux jupyterKernel
+ cruxFromId
  string sourceDomain jupyter.org
 codeMirrorNode
  extends abstractOneWordGuidNode
  description A link to a CodeMirror syntax highlighting package for this language (https://github.com/codemirror/codemirror5/tree/master/mode/LANGUAGE)
- crux codeMirror
+ cruxFromId
  string sourceDomain codemirror.net
 hoplNode
  extends abstractOneWordGuidNode
  description The matching language on Diarmuid Pigott's Online Historical Encyclopaedia of Programming Languages site (https://hopl.info/)
- crux hopl
+ cruxFromId
  string sourceDomain hopl.info
  single
 meetupNode
  description Some languages have active meetup groups on Meetup.com 
  extends abstractOneWordGuidNode
- crux meetup
+ cruxFromId
  inScope meetupMemberCountNode meetupGroupCountNode
  string sourceDomain meetup.com
 subredditNode
  extends abstractOneWordGuidNode
- crux subreddit
+ cruxFromId
  inScope subredditMemberCountNode
  string sourceDomain reddit.com
  boolean multipleOk true
 replitNode
  extends abstractOneWordGuidNode
  description A link to try this langunage on replit.com
- crux replit
+ cruxFromId
  string sourceDomain replit.com
  single
 rosettaCodeNode
  extends abstractOneWordGuidNode
  description A link to this language on Rosetta Code - http://www.rosettacode.org/
- crux rosettaCode
+ cruxFromId
  string sourceDomain rosettacode.org
  single
 tryItOnlineNode
  extends abstractOneWordGuidNode
  description A link to try this language on https://tio.run
- crux tryItOnline
+ cruxFromId
  string sourceDomain tio.run
  single
 twitterNode
  extends abstractOneWordGuidNode
  description Official Twitter handle of the entity, if any.
- crux twitter
+ cruxFromId
  inScope twitterFollowersNode
  string sourceDomain twitter.com
 ubuntuPackageNode
  extends abstractOneWordGuidNode
  description The name of an Ubuntu package for the language from https://packages.ubuntu.com/.
  string sourceDomain ubuntu.com
- crux ubuntuPackage
+ cruxFromId
 abstractUrlNode
  cells keywordCell urlCell
  extends abstractFactNode
  abstract
 cheatSheetUrlNode
  extends abstractUrlNode
- crux cheatSheetUrl
+ cruxFromId
  boolean multipleOk true
  description A link to a cheat sheet for this language.
 esolangNode
  extends abstractUrlNode
  description A link to this language on https://esolangs.org/
- crux esolang
+ cruxFromId
  string sourceDomain esolangs.org
  single
 abstractGitRepoUrlNode
@@ -147,7 +147,7 @@ abstractGitRepoUrlNode
 githubRepoNode
  description URL of the official GitHub repo for the project if it hosted there.
  extends abstractGitRepoUrlNode
- crux githubRepo
+ cruxFromId
  inScope abstractGithubYearNode abstractGithubCountNode githubDescriptionNode
  single
  int sortIndex 490
@@ -156,53 +156,53 @@ githubRepoNode
 gitlabRepoNode
  description URL of the official GitLab repo for the language project.
  extends abstractGitRepoUrlNode
- crux gitlabRepo
+ cruxFromId
  single
  string sourceDomain gitlab.com
 sourcehutRepoNode
  description URL of the official sourcehut repo for the project.
  extends abstractGitRepoUrlNode
- crux sourcehutRepo
+ cruxFromId
  single
  string sourceDomain sr.ht
 firstAnnouncementNode
  description A url announcing the creation or release of a new language
  extends abstractUrlNode
- crux firstAnnouncement
+ cruxFromId
  single
 languageServerProtocolProjectNode
  extends abstractUrlNode
  inScope writtenInNode
  boolean multipleOk true
  description A link to a project implementing LSP for this language.
- crux languageServerProtocolProject
+ cruxFromId
  string sourceDomain langserver.org
 packageRepositoryNode
  extends abstractUrlNode
- crux packageRepository
+ cruxFromId
  description URL to the package repository for this language.
  boolean multipleOk true
 redditDiscussionNode
  description A link to a related discussion on reddit.
  extends abstractUrlNode
- crux redditDiscussion
+ cruxFromId
  string sourceDomain reddit.com
 rijuReplNode
  extends abstractUrlNode
  description A link to try this language on riju.codes
- crux rijuRepl
+ cruxFromId
  string sourceDomain riju.codes
  single
  inScope fileExtensionsNode descriptionNode websiteNode githubRepoNode exampleNode
 websiteNode
  description URL of the official homepage for the language project.
  extends abstractUrlNode
- crux website
+ cruxFromId
  single
 webReplNode
  extends abstractUrlNode
  description An online repl for the project.
- crux webRepl
+ cruxFromId
 abstractCommonKeywordNode
  description Most general purpose programming languages implement a set of common keywords for common features like these.
  cells keywordCell
@@ -212,7 +212,7 @@ abstractCommonKeywordNode
 lineCommentKeywordNode
  extends abstractCommonKeywordNode
  description Defined as a character(s) that can be placed anywhere on a line and starts a comment that cannot be stopped except by a line break character or end of file character.
- crux lineCommentKeyword
+ cruxFromId
  boolean multipleOk true
  example
   javascript
@@ -220,7 +220,7 @@ lineCommentKeywordNode
 multiLineCommentKeywordsNode
  extends abstractCommonKeywordNode
  description A comment with a start delimiter and end delimiter (which can be the same) that can span multiple lines.
- crux multiLineCommentKeywords
+ cruxFromId
  boolean multipleOk true
  example
   javascript
@@ -228,7 +228,7 @@ multiLineCommentKeywordsNode
 keywordsNode
  description What are all the keywords in this language?
  extends abstractFactNode
- crux keywords
+ cruxFromId
  catchAllCellType stringCell
  single
 conferenceNode
@@ -236,18 +236,18 @@ conferenceNode
  cells keywordCell urlCell
  catchAllCellType conferenceNameCell
  extends abstractFactNode
- crux conference
+ cruxFromId
 dblpNode
  boolean fromCrawler true
  extends abstractFactNode
- crux dblp
+ cruxFromId
  description Publications about this language from https://dblp.org/.
  string sourceDomain dblp.org
  single
  inScope dblpPublicationsNode
 descriptionNode
  baseNodeType blobNode
- crux description
+ cruxFromId
  extends abstractFactNode
  boolean includeChildrenInCsv false
  int sortIndex 510
@@ -270,17 +270,17 @@ equationNode
  extends abstractCodeNode
  boolean padOnFormat true
  int sortIndex 600
- crux equation
+ cruxFromId
 exampleNode
  description A text block containing a representative snippet of code for the language.
  boolean padOnFormat true
  int sortIndex 600
- crux example
+ cruxFromId
  extends abstractCodeNode
 helloWorldCollectionNode
  description Hello world written in this language from http://helloworldcollection.de/
  extends exampleNode
- crux helloWorldCollection
+ cruxFromId
  boolean padOnFormat true
  int sortIndex 400
  cells keywordCell
@@ -301,25 +301,25 @@ abstractStringNode
 psuedoExampleNode
  description As short an example as possible.
  extends abstractStringNode
- crux psuedoExample
+ cruxFromId
  int sortIndex 610
  single
 titleNode
  int sortIndex 1000
  description The official title of the language
  extends abstractStringNode
- crux title
+ cruxFromId
  single
  required
 standsForNode
  description If the language name is an abbreviation, what does/did it stand for?
  extends abstractStringNode
- crux standsFor
+ cruxFromId
  single
 akaNode
  description Another name for the language. Entries can have multiple aka lines.
  extends abstractStringNode
- crux aka
+ cruxFromId
  boolean multipleOk true
 abstractWordNode
  cells keywordCell stringCell
@@ -328,21 +328,21 @@ abstractWordNode
 featureKeywordNode
  description For "type feature" only. When building the feature pages, look for this keyword on each object to see if it has the feature or not.
  extends abstractWordNode
- crux featureKeyword
+ cruxFromId
 abstractSectionNode
  extends abstractFactNode
  boolean padOnFormat true
  single
 featuresNode
+ cruxFromId
  inScope abstractFeatureNode
  extends abstractSectionNode
- crux features
  int sortIndex 600
 linguistGrammarRepoNode
  description Linguist is a library used by GitHub to syntax highlight files on GitHub via a grammar. The list of languages supported by Linguist and the grammar package used for each language is listed here: https://github.com/github/linguist/blob/master/vendor/README.md. If Linguist has support for a language, it will have a repo on GitHub. Given a language is supported by Linguist, that is a good indication it has at least 200 unique :user/:repo repositories, according to their docs.
  extends abstractSectionNode
  cells keywordCell urlCell
- crux linguistGrammarRepo
+ cruxFromId
  int sortIndex 10
  single
  inScope linguistExampleNode linguistCommitsNode linguistFirstCommitNode linguistLastCommitNode linguistSampleCountNode linguistCommitterCountNode
@@ -350,7 +350,7 @@ linguistGrammarRepoNode
 wikipediaNode
  inScope wikipediaExampleNode wikipediaRelatedNode wikipediaSummaryNode wikipediaCreatedNode wikipediaDailyPageViewsNode wikipediaYearNode wikipediaBacklinksCountNode wikipediaRevisionCountNode wikipediaPageIdNode wikipediaFileExtensionsNode
  extends abstractSectionNode
- crux wikipedia
+ cruxFromId
  int sortIndex 500
  description URL of the entity on Wikipedia, if and only if it has a page dedicated to it.
  cells keywordCell urlCell
@@ -361,7 +361,7 @@ fileExtensionsNode
  catchAllCellType extensionCell
  extends abstractFactNode
  description What are the common file extensions for this language type?
- crux fileExtensions
+ cruxFromId
 githubLanguageFileExtensionsNode
  extends fileExtensionsNode
  description What file extensions does GitHub use for this language type?
@@ -377,7 +377,7 @@ abstractFlagNode
 githubCopilotOptimizedNode
  description Is this language optimized for GitHub copilot? The list is here: https://docs.github.com/en/copilot/overview-of-github-copilot/about-github-copilot
  extends abstractFlagNode
- crux githubCopilotOptimized
+ cruxFromId
  single
 abstractMultiwordGuidNode
  abstract
@@ -390,33 +390,33 @@ githubLanguageNode
  description GitHub has a set of supported languages.
  extends abstractMultiwordGuidNode
  inScope githubLanguageFileExtensionsNode githubTrendingProjectsNode githubTrendingProjectsCountNode
- crux githubLanguage
+ cruxFromId
  int sortIndex 491
  string sourceDomain github.com
 projectEulerNode
  extends abstractMultiwordGuidNode
  description Is this language one of the ones listed on https://projecteuler.net/?
- crux projectEuler
+ cruxFromId
  inScope projectEulerMemberCountNode
  string sourceDomain projecteuler.net
  single
 quineRelayNode
  extends abstractMultiwordGuidNode
  description The Quine Relay project (https://github.com/mame/quine-relay).
- crux quineRelay
+ cruxFromId
  string sourceDomain github.com/mame/quine-relay
  single
 stackOverflowSurveyNode
  extends abstractMultiwordGuidNode
  description StackOverflow does an annual developer survey: https://insights.stackoverflow.com/survey
- crux stackOverflowSurvey
+ cruxFromId
  inScope stackOverflowSurveyYearNode
  string sourceDomain insights.stackoverflow.com
  single
 tiobeNode
  extends abstractMultiwordGuidNode
  description Tiobe maintains a well known ranking of programming languages here: https://www.tiobe.com/tiobe-index/
- crux tiobe
+ cruxFromId
  inScope tiobeCurrentRankNode
  string sourceDomain tiobe.com
  catchAllCellType externalGuidCell
@@ -473,7 +473,7 @@ meetupMemberCountNode
 packageAuthorsNode
  extends abstractPopulationCountNode
  description How many people contribute packages to this cpm?
- crux packageAuthors
+ cruxFromId
 stackOverflowSurveyUsersNode
  crux users
  extends abstractPopulationCountNode
@@ -491,7 +491,7 @@ meetupGroupCountNode
  extends abstractCountNode
 centralPackageRepositoryCountNode
  extends abstractCountNode
- crux centralPackageRepositoryCount
+ cruxFromId
  description If you've searched for a CPM for this language and can't find one, set 0 as the count.
 packageInstallsNode
  description How many packages have been downloaded?
@@ -500,11 +500,11 @@ packageInstallsNode
 packageCountNode
  description How many packages are in the repository? A package is some code with a name and a namespace, shipped as an atomic unit, with an owner(s).
  extends abstractCountNode
- crux packageCount
+ cruxFromId
 packagesIncludingVersionsNode
  description How many packages are in the repository including all versions of a single package?
  extends abstractCountNode
- crux packagesIncludingVersions
+ cruxFromId
 wikipediaDailyPageViewsNode
  extends abstractCountNode
  crux dailyPageViews
@@ -540,13 +540,13 @@ appearedNode
  description What year was the language publicly released and/or announced.
  extends abstractYearNode
  int sortIndex 900
- crux appeared
+ cruxFromId
  single
 latestReleaseNode
  description The year of the most recent release of the thing.
  extends abstractYearNode
  int sortIndex 899
- crux latestRelease
+ cruxFromId
  single
 linguistFirstCommitNode
  description What year was the first commit made?
@@ -567,7 +567,7 @@ wikipediaYearNode
 wordRankNode
  description Some creators use a common English word as their language's name. For these we note how common the word is, where "the" is 1.
  extends abstractIntNode
- crux wordRank
+ cruxFromId
  single
 stackOverflowSurveyMedianSalaryNode
  crux medianSalary
@@ -584,7 +584,7 @@ wikipediaPageIdNode
 goodreadsNode
  boolean fromCrawler true
  extends abstractFactNode
- crux goodreads
+ cruxFromId
  baseNodeType blobNode
  boolean includeChildrenInCsv false
  description Books about this language from Goodreads.
@@ -593,7 +593,7 @@ goodreadsNode
 hackerNewsDiscussionsNode
  boolean fromCrawler true
  extends abstractFactNode
- crux hackerNewsDiscussions
+ cruxFromId
  baseNodeType blobNode
  boolean includeChildrenInCsv false
  description Links to Hacker News posts discussing this language.
@@ -602,38 +602,38 @@ hackerNewsDiscussionsNode
 statusNode
  cells keywordCell statusCell
  extends abstractFactNode
- crux status
+ cruxFromId
  single
 creatorsNode
  description Name(s) of the original creators of the language delimited by " and "
  cells keywordCell
  catchAllCellType creatorNameCell
  extends abstractFactNode
- crux creators
+ cruxFromId
  int sortIndex 800
  single
 nativeLanguageNode
  cells keywordCell nativeLanguageWordCell
  extends abstractFactNode
  description Nearly all programming languages are written in English, but some aren't. Set this field for the ones that are not.
- crux nativeLanguage
+ cruxFromId
 announcementMethodNode
  description How was the language first announced?
  extends abstractFactNode
  cells keywordCell announcementMethodCell
- crux announcementMethod
+ cruxFromId
  single
 countryNode
  description What country was the language first developed in?
  cells keywordCell
  catchAllCellType countryNameCell
  extends abstractFactNode
- crux country
+ cruxFromId
 corporateDevelopersNode
  description Which corporation(s) sponsors the development of the project, if any.
  catchAllCellType stringCell
  extends abstractFactNode
- crux corporateDevelopers
+ cruxFromId
 abstractAnnualPopulationCountNode
  catchAllNodeType annualPopulationCountNode
  description A map of counts, one per year.
@@ -643,13 +643,13 @@ indeedJobsNode
  description How many job descriptions match this query for this language on indeed.com?
  catchAllCellType searchQueryCell
  extends abstractAnnualPopulationCountNode
- crux indeedJobs
+ cruxFromId
  string sourceDomain indeed.com
  single
 linkedInSkillNode
  description How many people list this skill on LinkedIn?
  extends abstractAnnualPopulationCountNode
- crux linkedInSkill
+ cruxFromId
  catchAllCellType searchQueryCell
  inScope linkedInSkillCountNode
  string sourceDomain linkedin.com
@@ -670,12 +670,12 @@ abstractPermalinksNode
 forLanguagesNode
  description Which languages is this repository for?
  extends abstractPermalinksNode
- crux forLanguages
+ cruxFromId
 abstractRelationshipNode
  extends abstractPermalinksNode
+ cruxFromId
 relatedNode
  extends abstractRelationshipNode
- crux related
  description A catch all to indicate related languages.
 wikipediaRelatedNode
  description What languages does Wikipedia have as related?
@@ -683,35 +683,29 @@ wikipediaRelatedNode
  crux related
 runsOnVmNode
  extends abstractRelationshipNode
- crux runsOnVm
  description What virtual machine(s) does this language run on? 
 subsetOfNode
  description Is this language a subset of another?
  extends abstractRelationshipNode
- crux subsetOf
 supersetOfNode
  description Is this language a superset of another?
  extends abstractRelationshipNode
- crux supersetOf
 writtenInNode
  description What language is this application written in?
  extends abstractRelationshipNode
- crux writtenIn
 forkOfNode
  description What language is this language a fork of?
  extends abstractRelationshipNode
- crux forkOf
 compilesToNode
  description Which language does this language normally compile to?
  extends abstractRelationshipNode
- crux compilesTo
 abstractParadigmNode
  cells keywordCell boolCell
  extends abstractFactNode
  abstract
+ cruxFromId
 visualParadigmNode
  extends abstractParadigmNode
- crux visualParadigm
  description Is this a visual programming thing? Sometimes called "no code" or "low code"?
 abstractPermalinkNode
  abstract
@@ -736,7 +730,7 @@ typeNode
  description Which category in PLDB's subjective ontology does this entity fit into.
  cells keywordCell typeCell
  required
- crux type
+ cruxFromId
  int sortIndex 850
  single
  extends abstractFactNode
@@ -744,7 +738,7 @@ fileTypeNode
  description What is the file encoding for programs in this language?
  cells keywordCell fileTypeWordCell
  extends abstractFactNode
- crux fileType
+ cruxFromId
 dblpPublicationsHitsNode
  crux hits
  cells keywordCell intCell
@@ -761,657 +755,447 @@ abstractFeatureNode
  cells keywordCell boolCell
  baseNodeType blobNode
  boolean includeChildrenInCsv false
+ cruxFromId
  abstract
 hasReservedWordsNode
- crux hasReservedWords
  description Are things like keywords reserved words
  extends abstractFeatureNode
 hasRegularExpressionsSyntaxSugarNode
- crux hasRegularExpressionsSyntaxSugar
  extends abstractFeatureNode
 hasHomoiconicityNode
- crux hasHomoiconicity
  extends abstractFeatureNode
 hasDestructuringNode
- crux hasDestructuring
  extends abstractFeatureNode
 hasRunTimeGuardsNode
- crux hasRunTimeGuards
  extends abstractFeatureNode
 hasAbstractTypesNode
  extends abstractFeatureNode
- crux hasAbstractTypes
 hasAsyncAwaitNode
  extends abstractFeatureNode
- crux hasAsyncAwait
 hasTypedHolesNode
  extends abstractFeatureNode
- crux hasTypedHoles
 hasRefinementTypesNode
  extends abstractFeatureNode
- crux hasRefinementTypes
 hasMonadsNode
  extends abstractFeatureNode
- crux hasMonads
 isLispNode
  extends abstractFeatureNode
- crux isLisp
 hasUserDefinedOperatorsNode
  extends abstractFeatureNode
- crux hasUserDefinedOperators
 hasBinaryOperatorsNode
  extends abstractFeatureNode
- crux hasBinaryOperators
 hasUnaryOperatorsNode
  extends abstractFeatureNode
- crux hasUnaryOperators
 hasMapFunctionsNode
  extends abstractFeatureNode
- crux hasMapFunctions
 hasPartialApplicationNode
  extends abstractFeatureNode
- crux hasPartialApplication
 supportsBreakpointsNode
  extends abstractFeatureNode
- crux supportsBreakpoints
 hasPointersNode
  extends abstractFeatureNode
- crux hasPointers
 canWriteToDiskNode
  extends abstractFeatureNode
- crux canWriteToDisk
 hasDuckTypingNode
  extends abstractFeatureNode
- crux hasDuckTyping
 hasAssertStatementsNode
  extends abstractFeatureNode
- crux hasAssertStatements
 mergesWhitespaceNode
  extends abstractFeatureNode
- crux mergesWhitespace
 hasGenericsNode
  extends abstractFeatureNode
- crux hasGenerics
 hasPolymorphismNode
  extends abstractFeatureNode
- crux hasPolymorphism
 canBeCompiledToObjectFilesNode
  extends abstractFeatureNode
- crux canBeCompiledToObjectFiles
 hasSingleDispatchNode
  extends abstractFeatureNode
- crux hasSingleDispatch
 hasMultipleDispatchNode
  extends abstractFeatureNode
- crux hasMultipleDispatch
 canDoGoToDefinitionNode
  extends abstractFeatureNode
- crux canDoGoToDefinition
 hasBitWiseOperatorsNode
  extends abstractFeatureNode
- crux hasBitWiseOperators
 canDoShebangNode
  extends abstractFeatureNode
- crux canDoShebang
 canDoFindAllReferencesNode
  extends abstractFeatureNode
- crux canDoFindAllReferences
 canDoRenameNode
  extends abstractFeatureNode
- crux canDoRename
 canReadCommandLineArgsNode
  extends abstractFeatureNode
- crux canReadCommandLineArgs
 canUseQuestionMarksAsPartOfIdentifierNode
  extends abstractFeatureNode
- crux canUseQuestionMarksAsPartOfIdentifier
 hasUnicodeIdentifiersNode
  extends abstractFeatureNode
- crux hasUnicodeIdentifiers
 doesEndOfLineEqualEndOfStatementNode
  extends abstractFeatureNode
- crux doesEndOfLineEqualEndOfStatement
 has1DArraysNode
  extends abstractFeatureNode
- crux has1DArrays
 hasAdditionOperatorNode
  extends abstractFeatureNode
- crux hasAdditionOperator
 hasAlgebraicTypesNode
  extends abstractFeatureNode
- crux hasAlgebraicTypes
 hasDefaultParametersNode
  extends abstractFeatureNode
- crux hasDefaultParameters
 hasVirtualFunctionsNode
  extends abstractFeatureNode
- crux hasVirtualFunctions
 hasArraySlicingSyntaxNode
  extends abstractFeatureNode
- crux hasArraySlicingSyntax
 hasSourceMapsNode
- crux hasSourceMaps
  extends abstractFeatureNode
 hasSymbolTablesNode
- crux hasSymbolTables
  extends abstractFeatureNode
 hasAssignmentCharacterNode
  extends abstractFeatureNode
- crux hasAssignmentCharacter
 hasProcessorRegistersNode
  extends abstractFeatureNode
- crux hasProcessorRegisters
 hasAssociativeArraysNode
  extends abstractFeatureNode
- crux hasAssociativeArrays
 hasDynamicPropertiesNode
  extends abstractFeatureNode
- crux hasDynamicProperties
 hasBlocksNode
  extends abstractFeatureNode
- crux hasBlocks
 hasMagicGettersAndSettersNode
  extends abstractFeatureNode
- crux hasMagicGettersAndSetters
 hasBlockScopeNode
  extends abstractFeatureNode
- crux hasBlockScope
 hasBooleansNode
  extends abstractFeatureNode
- crux hasBooleans
 hasBoundedCheckedArraysNode
  extends abstractFeatureNode
- crux hasBoundedCheckedArrays
 hasBreakNode
  extends abstractFeatureNode
- crux hasBreak
 hasBuiltInRegexNode
  extends abstractFeatureNode
- crux hasBuiltInRegex
 hasCExtensionsNode
  extends abstractFeatureNode
- crux hasCExtensions
 hasMethodChainingNode
  extends abstractFeatureNode
- crux hasMethodChaining
 hasCharsNode
  extends abstractFeatureNode
- crux hasChars
 hasClassesNode
  extends abstractFeatureNode
- crux hasClasses
 hasConditionalsNode
  extends abstractFeatureNode
- crux hasConditionals
 hasCommentsNode
  extends abstractFeatureNode
- crux hasComments
 hasLineCommentsNode
  extends abstractFeatureNode
  description I define a line comment as a character(s) that starts a comment that cannot be stopped except by a line break character or end of file character.
- crux hasLineComments
 hasMultiLineCommentsNode
  extends abstractFeatureNode
- crux hasMultiLineComments
 hasDocCommentsNode
  extends abstractFeatureNode
- crux hasDocComments
 hasImplicitArgumentsNode
  extends abstractFeatureNode
- crux hasImplicitArguments
 hasCompositeTypesNode
  extends abstractFeatureNode
- crux hasCompositeTypes
 hasStructsNode
  extends abstractFeatureNode
- crux hasStructs
 hasConstructorsNode
  extends abstractFeatureNode
- crux hasConstructors
 hasZippersNode
  extends abstractFeatureNode
- crux hasZippers
 hasConstantsNode
  extends abstractFeatureNode
- crux hasConstants
 hasContinueNode
  extends abstractFeatureNode
- crux hasContinue
 hasDependentTypesNode
  extends abstractFeatureNode
- crux hasDependentTypes
 hasDeterminantOperatorNode
  extends abstractFeatureNode
- crux hasDeterminantOperator
 hasDictionaryTypeNode
  extends abstractFeatureNode
- crux hasDictionaryType
 hasDoWhileLoopsNode
  extends abstractFeatureNode
- crux hasDoWhileLoops
 hasDualQuoteEscapingNode
  extends abstractFeatureNode
- crux hasDualQuoteEscaping
 hasDynamicSizedArraysNode
  extends abstractFeatureNode
- crux hasDynamicSizedArrays
 hasDynamicTypingNode
  extends abstractFeatureNode
- crux hasDynamicTyping
 hasEnumsNode
  extends abstractFeatureNode
- crux hasEnums
 hasEscapeCharactersNode
  extends abstractFeatureNode
- crux hasEscapeCharacters
 hasExceptionsNode
  extends abstractFeatureNode
- crux hasExceptions
 hasExpressionsNode
  extends abstractFeatureNode
- crux hasExpressions
 hasFileScopeNode
  extends abstractFeatureNode
- crux hasFileScope
 hasFinallyNode
  extends abstractFeatureNode
- crux hasFinally
 hasFirstClassFunctionsNode
  extends abstractFeatureNode
- crux hasFirstClassFunctions
 hasFloatsNode
  extends abstractFeatureNode
- crux hasFloats
 hasFnArgumentsNode
  extends abstractFeatureNode
- crux hasFnArguments
 hasFnArgumentTypeDeclarationsNode
  extends abstractFeatureNode
- crux hasFnArgumentTypeDeclarations
 hasForEachLoopsNode
  extends abstractFeatureNode
- crux hasForEachLoops
 hasForLoopsNode
  extends abstractFeatureNode
- crux hasForLoops
 hasFunctionScopeNode
  extends abstractFeatureNode
- crux hasFunctionScope
 hasPatternMatchingNode
- crux hasPatternMatching
  extends abstractFeatureNode
 hasGarbageCollectionNode
  extends abstractFeatureNode
- crux hasGarbageCollection
 hasGeneratorsNode
  extends abstractFeatureNode
- crux hasGenerators
 hasGlobalScopeNode
  extends abstractFeatureNode
- crux hasGlobalScope
 hasGotosNode
  extends abstractFeatureNode
- crux hasGotos
 hasHereDocsNode
  extends abstractFeatureNode
- crux hasHereDocs
 hashHighLevelDataTypesNode
  extends abstractFeatureNode
- crux hashHighLevelDataTypes
 hasDirectivesNode
  extends abstractFeatureNode
- crux hasDirectives
 hasIdentifiersNode
  extends abstractFeatureNode
- crux hasIdentifiers
 hasIfElsesNode
  extends abstractFeatureNode
- crux hasIfElses
 hasIfsNode
  extends abstractFeatureNode
- crux hasIfs
 hasImplicitTypeConversionsNode
  extends abstractFeatureNode
- crux hasImplicitTypeConversions
 hasExplicitTypeCastingNode
  extends abstractFeatureNode
- crux hasExplicitTypeCasting
 hasImportsNode
  extends abstractFeatureNode
- crux hasImports
 hasExportsNode
  extends abstractFeatureNode
- crux hasExports
 hasInfixNotationNode
  extends abstractFeatureNode
- crux hasInfixNotation
 hasInterfacesNode
  extends abstractFeatureNode
- crux hasInterfaces
 hasInterpolatedStringsNode
  extends abstractFeatureNode
- crux hasInterpolatedStrings
 hasIntegersNode
  extends abstractFeatureNode
- crux hasIntegers
 hasIteratorsNode
  extends abstractFeatureNode
- crux hasIterators
 hasJavaExtensionsNode
  extends abstractFeatureNode
- crux hasJavaExtensions
 hasLabelsNode
  extends abstractFeatureNode
- crux hasLabels
 hasAnonymousFunctionsNode
  extends abstractFeatureNode
- crux hasAnonymousFunctions
 hasLazyEvalNode
  extends abstractFeatureNode
- crux hasLazyEval
 hasLazyEvaluationNode
  extends abstractFeatureNode
- crux hasLazyEvaluation
 hasLineContinuationsNode
  extends abstractFeatureNode
- crux hasLineContinuations
 hasLineContinuatorCharacterNode
  extends abstractFeatureNode
- crux hasLineContinuatorCharacter
 hasLinkersNode
  extends abstractFeatureNode
- crux hasLinkers
 hasListComprehensionNode
  extends abstractFeatureNode
- crux hasListComprehension
 hasMessagePassingNode
  extends abstractFeatureNode
- crux hasMessagePassing
 hasRangeOperatorsNode
  extends abstractFeatureNode
- crux hasRangeOperators
 hasListsNode
  extends abstractFeatureNode
- crux hasLists
 hasBlobsNode
  extends abstractFeatureNode
- crux hasBlobs
 hasClobsNode
  extends abstractFeatureNode
- crux hasClobs
 hasSExpressionsNode
  extends abstractFeatureNode
- crux hasSExpressions
 hasTimestampsNode
  extends abstractFeatureNode
- crux hasTimestamps
 hasDecimalsNode
  extends abstractFeatureNode
- crux hasDecimals
 hasSymbolsNode
  extends abstractFeatureNode
- crux hasSymbols
 hasTypeAnnotationsNode
  extends abstractFeatureNode
- crux hasTypeAnnotations
 hasMacrosNode
  extends abstractFeatureNode
- crux hasMacros
 hasManualMemoryManagementNode
  extends abstractFeatureNode
- crux hasManualMemoryManagement
 hasMathLikeNotationNode
  extends abstractFeatureNode
- crux hasMathLikeNotation
 hasMemberVariablesNode
  extends abstractFeatureNode
- crux hasMemberVariables
 hasFunctionOverloadingNode
  extends abstractFeatureNode
- crux hasFunctionOverloading
 hasMethodOverloadingNode
  extends abstractFeatureNode
- crux hasMethodOverloading
 hasMixinsNode
  extends abstractFeatureNode
- crux hasMixins
 hasNamespacesNode
  extends abstractFeatureNode
- crux hasNamespaces
 hasMultidimensionalArraysNode
  extends abstractFeatureNode
- crux hasMultidimensionalArrays
 hasMultilineStringsNode
  extends abstractFeatureNode
- crux hasMultilineStrings
 hasMultipleInheritanceNode
  extends abstractFeatureNode
- crux hasMultipleInheritance
 hasNestedFunctionsNode
  extends abstractFeatureNode
- crux hasNestedFunctions
 hasNoKeywordsNode
  extends abstractFeatureNode
- crux hasNoKeywords
 hasNullNode
  extends abstractFeatureNode
- crux hasNull
 hasObjectConstructorsNode
  extends abstractFeatureNode
- crux hasObjectConstructors
 hasObjectsNode
  extends abstractFeatureNode
- crux hasObjects
 hasCaseInsensitiveIdentifiersNode
  extends abstractFeatureNode
- crux hasCaseInsensitiveIdentifiers
 hasOperatorOverloadingNode
  extends abstractFeatureNode
- crux hasOperatorOverloading
 hasReferencesNode
  extends abstractFeatureNode
- crux hasReferences
 hasPassByValueNode
  extends abstractFeatureNode
- crux hasPassByValue
 hasPipesNode
  extends abstractFeatureNode
- crux hasPipes
 hasPolymorphicListTypeNode
  extends abstractFeatureNode
- crux hasPolymorphicListType
 hasPostfixNotationNode
  extends abstractFeatureNode
- crux hasPostfixNotation
 hasPrefixNotationNode
  extends abstractFeatureNode
- crux hasPrefixNotation
 hasPrintStatementsNode
  extends abstractFeatureNode
- crux hasPrintStatements
 hasProtectedNode
  extends abstractFeatureNode
- crux hasProtected
 hasQuotedRawStringsNode
  extends abstractFeatureNode
- crux hasQuotedRawStrings
 hasQuoteEscapingNode
  extends abstractFeatureNode
- crux hasQuoteEscaping
 hasRequiredMainFunctionNode
  extends abstractFeatureNode
- crux hasRequiredMainFunction
 hasRunTimeTypingNode
  extends abstractFeatureNode
- crux hasRunTimeTyping
 hasSelfOrThisWordNode
  extends abstractFeatureNode
- crux hasSelfOrThisWord
 hasSemanticIndentationNode
  extends abstractFeatureNode
- crux hasSemanticIndentation
 hasSignificantLinesNode
  extends abstractFeatureNode
- crux hasSignificantLines
 hasAccessModifiersNode
  extends abstractFeatureNode
- crux hasAccessModifiers
 hasInheritanceNode
  extends abstractFeatureNode
- crux hasInheritance
 hasSpecifiableBaseIndexNode
  extends abstractFeatureNode
- crux hasSpecifiableBaseIndex
 hasStatementsNode
  extends abstractFeatureNode
- crux hasStatements
 hasStatementTerminatorCharacterNode
  extends abstractFeatureNode
- crux hasStatementTerminatorCharacter
 hasStaticTypingNode
  extends abstractFeatureNode
- crux hasStaticTyping
 hasTypeParametersNode
  extends abstractFeatureNode
- crux hasTypeParameters
 letterFirstIdentifiersNode
  extends abstractFeatureNode
  description Must identifiers start with a letter
- crux letterFirstIdentifiers
 hasStreamsNode
  extends abstractFeatureNode
- crux hasStreams
 hasFunctionCompositionNode
  extends abstractFeatureNode
- crux hasFunctionComposition
 hasStaticMethodsNode
  extends abstractFeatureNode
- crux hasStaticMethods
 hasThreadsNode
  extends abstractFeatureNode
- crux hasThreads
 hasStringConcatOperatorNode
  extends abstractFeatureNode
- crux hasStringConcatOperator
 hasStringsNode
  extends abstractFeatureNode
- crux hasStrings
 hasTypeInferenceNode
  extends abstractFeatureNode
- crux hasTypeInference
 hasSuperNode
  extends abstractFeatureNode
- crux hasSuper
 hasSwitchNode
  extends abstractFeatureNode
- crux hasSwitch
 hasSyntaxForMatrixOpsNode
  extends abstractFeatureNode
- crux hasSyntaxForMatrixOps
 hasTemplatesNode
  extends abstractFeatureNode
- crux hasTemplates
 hasTernaryOperatorsNode
  extends abstractFeatureNode
- crux hasTernaryOperators
 hasTransposeOperatorNode
  extends abstractFeatureNode
- crux hasTransposeOperator
 hasTryCatchNode
  extends abstractFeatureNode
- crux hasTryCatch
 hasSingleTypeArraysNode
  extends abstractFeatureNode
  description Has an array data structure that only can hold items of the same type.
- crux hasSingleTypeArrays
 hasTraitsNode
  extends abstractFeatureNode
- crux hasTraits
 hasTuplesNode
  extends abstractFeatureNode
- crux hasTuples
 hasTypeDeclarationsNode
  extends abstractFeatureNode
- crux hasTypeDeclarations
 hasUnionTypesNode
  extends abstractFeatureNode
- crux hasUnionTypes
 hasValueReturnedFunctionsNode
  extends abstractFeatureNode
- crux hasValueReturnedFunctions
 hasVariableAssignmentNode
  extends abstractFeatureNode
- crux hasVariableAssignment
 hasVariableDeclarationsNode
  extends abstractFeatureNode
- crux hasVariableDeclarations
 hasUnitsOfMeasureNode
  extends abstractFeatureNode
- crux hasUnitsOfMeasure
 hasMapsNode
  extends abstractFeatureNode
- crux hasMaps
 hasSetsNode
  extends abstractFeatureNode
- crux hasSets
 hasIdsNode
  extends abstractFeatureNode
- crux hasIds
 hasTriplesNode
  extends abstractFeatureNode
- crux hasTriples
 hasVariadicFunctionsNode
  extends abstractFeatureNode
- crux hasVariadicFunctions
 hasVarsNode
  extends abstractFeatureNode
- crux hasVars
 hasVectorizedOperationsNode
  extends abstractFeatureNode
- crux hasVectorizedOperations
 hasVoidFunctionsNode
  extends abstractFeatureNode
- crux hasVoidFunctions
 hasWhileLoopsNode
  extends abstractFeatureNode
- crux hasWhileLoops
 hasZeroBasedNumberingNode
  extends abstractFeatureNode
- crux hasZeroBasedNumbering
 isCaseSensitiveNode
  extends abstractFeatureNode
- crux isCaseSensitive
 hasModulesNode
  extends abstractFeatureNode
- crux hasModules
 hasDisposeBlocksNode
  extends abstractFeatureNode
- crux hasDisposeBlocks
 hasFunctionsNode
  extends abstractFeatureNode
- crux hasFunctions
 hasMethodsNode
  extends abstractFeatureNode
- crux hasMethods
 hasSemaphoresNode
  extends abstractFeatureNode
- crux hasSemaphores
 hasIncrementAndDecrementOperatorsNode
  extends abstractFeatureNode
- crux hasIncrementAndDecrementOperators
 abstractBooleanNode
  cells keywordCell boolCell
  abstract
 gdbSupportNode
  extends abstractBooleanNode
  description Is the language supported by the GNU Debugger?
- crux gdbSupport
+ cruxFromId
  string sourceDomain sourceware.org
  single
 isOpenSourceNode
  description Is it an open source project?
  extends abstractBooleanNode
- crux isOpenSource
+ cruxFromId
  single
 githubTrendingProjectsNode
  todo Figure out typings.
@@ -1442,7 +1226,7 @@ pldbNode
  description A database about programming languages and related concepts.
  catchAllNodeType errorNode
  todo Should not have to manually list each node type here, but should be able to mark some tag as inscope
- inScope blankLineNode descriptionNode wikipediaNode equationNode exampleNode fileExtensionsNode githubLanguageNode abstractGitRepoUrlNode helloWorldCollectionNode statusNode creatorsNode appearedNode announcementUrlNode countryNode titleNode wordRankNode standsForNode akaNode psuedoExampleNode featureKeywordNode featuresNode referenceNode replitNode tryItOnlineNode twitterNode typeNode websiteNode wikipediaNode fileTypeNode linguistGrammarRepoNode tiobeNode meetupNode webReplNode linkedInSkillNode projectEulerNode hoplNode subredditNode redditDiscussionNode quineRelayNode ubuntuPackageNode codeMirrorNode rosettaCodeNode antlrNode corporateDevelopersNode cheatSheetUrlNode isOpenSourceNode indeedJobsNode hackerNewsDiscussionsNode firstAnnouncementNode announcementMethodNode abstractRelationshipNode packageCountNode packageInstallsNode packageRepositoryNode packageAuthorsNode packagesIncludingVersionsNode forLanguagesNode conferenceNode abstractCommonKeywordNode languageServerProtocolProjectNode abstractParadigmNode latestReleaseNode nativeLanguageNode jupyterKernelsNode keywordsNode stackOverflowSurveyNode centralPackageRepositoryCountNode gdbSupportNode rijuReplNode esolangNode goodreadsNode dblpNode abstractFlagNode
+ inScope blankLineNode descriptionNode wikipediaNode equationNode exampleNode fileExtensionsNode githubLanguageNode abstractGitRepoUrlNode helloWorldCollectionNode statusNode creatorsNode appearedNode announcementUrlNode countryNode titleNode wordRankNode standsForNode akaNode psuedoExampleNode featureKeywordNode featuresNode referenceNode replitNode tryItOnlineNode twitterNode typeNode websiteNode wikipediaNode fileTypeNode linguistGrammarRepoNode tiobeNode meetupNode webReplNode linkedInSkillNode projectEulerNode hoplNode subredditNode redditDiscussionNode quineRelayNode ubuntuPackageNode codeMirrorNode rosettaCodeNode antlrNode corporateDevelopersNode cheatSheetUrlNode isOpenSourceNode indeedJobsNode hackerNewsDiscussionsNode firstAnnouncementNode announcementMethodNode abstractRelationshipNode packageCountNode packageInstallsNode packageRepositoryNode packageAuthorsNode packagesIncludingVersionsNode forLanguagesNode conferenceNode abstractCommonKeywordNode languageServerProtocolProjectNode abstractParadigmNode latestReleaseNode nativeLanguageNode jupyterKernelNode keywordsNode stackOverflowSurveyNode centralPackageRepositoryCountNode gdbSupportNode rijuReplNode esolangNode goodreadsNode dblpNode abstractFlagNode
  pattern [\w-]\.pldb$
  cells fileNameCell
  example

@@ -5,7 +5,7 @@ typeNode
  description Which category in PLDB's subjective ontology does this entity fit into.
  cells keywordCell typeCell
  required
- crux type
+ cruxFromId
  int sortIndex 850
  single
  extends abstractFactNode
@@ -16,4 +16,4 @@ fileTypeNode
  description What is the file encoding for programs in this language?
  cells keywordCell fileTypeWordCell
  extends abstractFactNode
- crux fileType
+ cruxFromId

@@ -1,7 +1,7 @@
 projectEulerNode
  extends abstractMultiwordGuidNode
  description Is this language one of the ones listed on https://projecteuler.net/?
- crux projectEuler
+ cruxFromId
  inScope projectEulerMemberCountNode
  string sourceDomain projecteuler.net
  single

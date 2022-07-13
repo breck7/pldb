@@ -2,7 +2,7 @@ linguistGrammarRepoNode
  description Linguist is a library used by GitHub to syntax highlight files on GitHub via a grammar. The list of languages supported by Linguist and the grammar package used for each language is listed here: https://github.com/github/linguist/blob/master/vendor/README.md. If Linguist has support for a language, it will have a repo on GitHub. Given a language is supported by Linguist, that is a good indication it has at least 200 unique :user/:repo repositories, according to their docs.
  extends abstractSectionNode
  cells keywordCell urlCell
- crux linguistGrammarRepo
+ cruxFromId
  int sortIndex 10
  single
  inScope linguistExampleNode linguistCommitsNode linguistFirstCommitNode linguistLastCommitNode linguistSampleCountNode linguistCommitterCountNode

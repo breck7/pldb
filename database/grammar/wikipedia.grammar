@@ -1,7 +1,7 @@
 wikipediaNode
  inScope wikipediaExampleNode wikipediaRelatedNode wikipediaSummaryNode wikipediaCreatedNode wikipediaDailyPageViewsNode wikipediaYearNode wikipediaBacklinksCountNode wikipediaRevisionCountNode wikipediaPageIdNode wikipediaFileExtensionsNode
  extends abstractSectionNode
- crux wikipedia
+ cruxFromId
  int sortIndex 500
  description URL of the entity on Wikipedia, if and only if it has a page dedicated to it.
  cells keywordCell urlCell

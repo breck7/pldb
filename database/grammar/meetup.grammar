@@ -1,7 +1,7 @@
 meetupNode
  description Some languages have active meetup groups on Meetup.com 
  extends abstractOneWordGuidNode
- crux meetup
+ cruxFromId
  inScope meetupMemberCountNode meetupGroupCountNode
  string sourceDomain meetup.com
 meetupMemberCountNode

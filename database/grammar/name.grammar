@@ -3,21 +3,21 @@ titleNode
  int sortIndex 1000
  description The official title of the language
  extends abstractStringNode
- crux title
+ cruxFromId
  single
  required
 wordRankNode
  description Some creators use a common English word as their language's name. For these we note how common the word is, where "the" is 1.
  extends abstractIntNode
- crux wordRank
+ cruxFromId
  single
 standsForNode
  description If the language name is an abbreviation, what does/did it stand for?
  extends abstractStringNode
- crux standsFor
+ cruxFromId
  single
 akaNode
  description Another name for the language. Entries can have multiple aka lines.
  extends abstractStringNode
- crux aka
+ cruxFromId
  boolean multipleOk true

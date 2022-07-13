@@ -2,7 +2,7 @@ abstractParadigmNode
  cells keywordCell boolCell
  extends abstractFactNode
  abstract
+ cruxFromId
 visualParadigmNode
  extends abstractParadigmNode
- crux visualParadigm
  description Is this a visual programming thing? Sometimes called "no code" or "low code"?

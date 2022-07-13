@@ -1,6 +1,6 @@
-jupyterKernelsNode
+jupyterKernelNode
  extends abstractUrlGuidNode
  boolean multipleOk true
  description A link to a Jupyter Kernel for this language.
- crux jupyterKernel
+ cruxFromId
  string sourceDomain jupyter.org

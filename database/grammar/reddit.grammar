@@ -1,6 +1,6 @@
 subredditNode
  extends abstractOneWordGuidNode
- crux subreddit
+ cruxFromId
  inScope subredditMemberCountNode
  string sourceDomain reddit.com
  boolean multipleOk true
@@ -11,5 +11,5 @@ subredditMemberCountNode
 redditDiscussionNode
  description A link to a related discussion on reddit.
  extends abstractUrlNode
- crux redditDiscussion
+ cruxFromId
  string sourceDomain reddit.com

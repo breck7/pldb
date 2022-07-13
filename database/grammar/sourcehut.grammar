@@ -1,6 +1,6 @@
 sourcehutRepoNode
  description URL of the official sourcehut repo for the project.
  extends abstractGitRepoUrlNode
- crux sourcehutRepo
+ cruxFromId
  single
  string sourceDomain sr.ht

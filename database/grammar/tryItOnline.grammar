@@ -1,6 +1,6 @@
 tryItOnlineNode
  extends abstractOneWordGuidNode
  description A link to try this language on https://tio.run
- crux tryItOnline
+ cruxFromId
  string sourceDomain tio.run
  single

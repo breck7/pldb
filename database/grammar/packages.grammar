@@ -1,11 +1,11 @@
 packageRepositoryNode
  extends abstractUrlNode
- crux packageRepository
+ cruxFromId
  description URL to the package repository for this language.
  boolean multipleOk true
 centralPackageRepositoryCountNode
  extends abstractCountNode
- crux centralPackageRepositoryCount
+ cruxFromId
  description If you've searched for a CPM for this language and can't find one, set 0 as the count.
 packageInstallsNode
  description How many packages have been downloaded?
@@ -14,16 +14,16 @@ packageInstallsNode
 packageCountNode
  description How many packages are in the repository? A package is some code with a name and a namespace, shipped as an atomic unit, with an owner(s).
  extends abstractCountNode
- crux packageCount
+ cruxFromId
 packageAuthorsNode
  extends abstractPopulationCountNode
  description How many people contribute packages to this cpm?
- crux packageAuthors
+ cruxFromId
 packagesIncludingVersionsNode
  description How many packages are in the repository including all versions of a single package?
  extends abstractCountNode
- crux packagesIncludingVersions
+ cruxFromId
 forLanguagesNode
  description Which languages is this repository for?
  extends abstractPermalinksNode
- crux forLanguages
+ cruxFromId

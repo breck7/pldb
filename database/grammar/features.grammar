@@ -1,657 +1,447 @@
 psuedoExampleNode
  description As short an example as possible.
  extends abstractStringNode
- crux psuedoExample
+ cruxFromId
  int sortIndex 610
  single
 featureKeywordNode
  description For "type feature" only. When building the feature pages, look for this keyword on each object to see if it has the feature or not.
  extends abstractWordNode
- crux featureKeyword
+ cruxFromId
 abstractFeatureNode
  cells keywordCell boolCell
  baseNodeType blobNode
  boolean includeChildrenInCsv false
+ cruxFromId
  abstract
 featuresNode
+ cruxFromId
  inScope abstractFeatureNode
  extends abstractSectionNode
- crux features
  int sortIndex 600
 hasReservedWordsNode
- crux hasReservedWords
  description Are things like keywords reserved words
  extends abstractFeatureNode
 hasRegularExpressionsSyntaxSugarNode
- crux hasRegularExpressionsSyntaxSugar
  extends abstractFeatureNode
 hasHomoiconicityNode
- crux hasHomoiconicity
  extends abstractFeatureNode
 hasDestructuringNode
- crux hasDestructuring
  extends abstractFeatureNode
 hasRunTimeGuardsNode
- crux hasRunTimeGuards
  extends abstractFeatureNode
 hasAbstractTypesNode
  extends abstractFeatureNode
- crux hasAbstractTypes
 hasAsyncAwaitNode
  extends abstractFeatureNode
- crux hasAsyncAwait
 hasTypedHolesNode
  extends abstractFeatureNode
- crux hasTypedHoles
 hasRefinementTypesNode
  extends abstractFeatureNode
- crux hasRefinementTypes
 hasMonadsNode
  extends abstractFeatureNode
- crux hasMonads
 isLispNode
  extends abstractFeatureNode
- crux isLisp
 hasUserDefinedOperatorsNode
  extends abstractFeatureNode
- crux hasUserDefinedOperators
 hasBinaryOperatorsNode
  extends abstractFeatureNode
- crux hasBinaryOperators
 hasUnaryOperatorsNode
  extends abstractFeatureNode
- crux hasUnaryOperators
 hasMapFunctionsNode
  extends abstractFeatureNode
- crux hasMapFunctions
 hasPartialApplicationNode
  extends abstractFeatureNode
- crux hasPartialApplication
 supportsBreakpointsNode
  extends abstractFeatureNode
- crux supportsBreakpoints
 hasPointersNode
  extends abstractFeatureNode
- crux hasPointers
 canWriteToDiskNode
  extends abstractFeatureNode
- crux canWriteToDisk
 hasDuckTypingNode
  extends abstractFeatureNode
- crux hasDuckTyping
 hasAssertStatementsNode
  extends abstractFeatureNode
- crux hasAssertStatements
 mergesWhitespaceNode
  extends abstractFeatureNode
- crux mergesWhitespace
 hasGenericsNode
  extends abstractFeatureNode
- crux hasGenerics
 hasPolymorphismNode
  extends abstractFeatureNode
- crux hasPolymorphism
 canBeCompiledToObjectFilesNode
  extends abstractFeatureNode
- crux canBeCompiledToObjectFiles
 hasSingleDispatchNode
  extends abstractFeatureNode
- crux hasSingleDispatch
 hasMultipleDispatchNode
  extends abstractFeatureNode
- crux hasMultipleDispatch
 canDoGoToDefinitionNode
  extends abstractFeatureNode
- crux canDoGoToDefinition
 hasBitWiseOperatorsNode
  extends abstractFeatureNode
- crux hasBitWiseOperators
 canDoShebangNode
  extends abstractFeatureNode
- crux canDoShebang
 canDoFindAllReferencesNode
  extends abstractFeatureNode
- crux canDoFindAllReferences
 canDoRenameNode
  extends abstractFeatureNode
- crux canDoRename
 canReadCommandLineArgsNode
  extends abstractFeatureNode
- crux canReadCommandLineArgs
 canUseQuestionMarksAsPartOfIdentifierNode
  extends abstractFeatureNode
- crux canUseQuestionMarksAsPartOfIdentifier
 hasUnicodeIdentifiersNode
  extends abstractFeatureNode
- crux hasUnicodeIdentifiers
 doesEndOfLineEqualEndOfStatementNode
  extends abstractFeatureNode
- crux doesEndOfLineEqualEndOfStatement
 has1DArraysNode
  extends abstractFeatureNode
- crux has1DArrays
 hasAdditionOperatorNode
  extends abstractFeatureNode
- crux hasAdditionOperator
 hasAlgebraicTypesNode
  extends abstractFeatureNode
- crux hasAlgebraicTypes
 hasDefaultParametersNode
  extends abstractFeatureNode
- crux hasDefaultParameters
 hasVirtualFunctionsNode
  extends abstractFeatureNode
- crux hasVirtualFunctions
 hasArraySlicingSyntaxNode
  extends abstractFeatureNode
- crux hasArraySlicingSyntax
 hasSourceMapsNode
- crux hasSourceMaps
  extends abstractFeatureNode
 hasSymbolTablesNode
- crux hasSymbolTables
  extends abstractFeatureNode
 hasAssignmentCharacterNode
  extends abstractFeatureNode
- crux hasAssignmentCharacter
 hasProcessorRegistersNode
  extends abstractFeatureNode
- crux hasProcessorRegisters
 hasAssociativeArraysNode
  extends abstractFeatureNode
- crux hasAssociativeArrays
 hasDynamicPropertiesNode
  extends abstractFeatureNode
- crux hasDynamicProperties
 hasBlocksNode
  extends abstractFeatureNode
- crux hasBlocks
 hasMagicGettersAndSettersNode
  extends abstractFeatureNode
- crux hasMagicGettersAndSetters
 hasBlockScopeNode
  extends abstractFeatureNode
- crux hasBlockScope
 hasBooleansNode
  extends abstractFeatureNode
- crux hasBooleans
 hasBoundedCheckedArraysNode
  extends abstractFeatureNode
- crux hasBoundedCheckedArrays
 hasBreakNode
  extends abstractFeatureNode
- crux hasBreak
 hasBuiltInRegexNode
  extends abstractFeatureNode
- crux hasBuiltInRegex
 hasCExtensionsNode
  extends abstractFeatureNode
- crux hasCExtensions
 hasMethodChainingNode
  extends abstractFeatureNode
- crux hasMethodChaining
 hasCharsNode
  extends abstractFeatureNode
- crux hasChars
 hasClassesNode
  extends abstractFeatureNode
- crux hasClasses
 hasConditionalsNode
  extends abstractFeatureNode
- crux hasConditionals
 hasCommentsNode
  extends abstractFeatureNode
- crux hasComments
 hasLineCommentsNode
  extends abstractFeatureNode
  description I define a line comment as a character(s) that starts a comment that cannot be stopped except by a line break character or end of file character.
- crux hasLineComments
 hasMultiLineCommentsNode
  extends abstractFeatureNode
- crux hasMultiLineComments
 hasDocCommentsNode
  extends abstractFeatureNode
- crux hasDocComments
 hasImplicitArgumentsNode
  extends abstractFeatureNode
- crux hasImplicitArguments
 hasCompositeTypesNode
  extends abstractFeatureNode
- crux hasCompositeTypes
 hasStructsNode
  extends abstractFeatureNode
- crux hasStructs
 hasConstructorsNode
  extends abstractFeatureNode
- crux hasConstructors
 hasZippersNode
  extends abstractFeatureNode
- crux hasZippers
 hasConstantsNode
  extends abstractFeatureNode
- crux hasConstants
 hasContinueNode
  extends abstractFeatureNode
- crux hasContinue
 hasDependentTypesNode
  extends abstractFeatureNode
- crux hasDependentTypes
 hasDeterminantOperatorNode
  extends abstractFeatureNode
- crux hasDeterminantOperator
 hasDictionaryTypeNode
  extends abstractFeatureNode
- crux hasDictionaryType
 hasDoWhileLoopsNode
  extends abstractFeatureNode
- crux hasDoWhileLoops
 hasDualQuoteEscapingNode
  extends abstractFeatureNode
- crux hasDualQuoteEscaping
 hasDynamicSizedArraysNode
  extends abstractFeatureNode
- crux hasDynamicSizedArrays
 hasDynamicTypingNode
  extends abstractFeatureNode
- crux hasDynamicTyping
 hasEnumsNode
  extends abstractFeatureNode
- crux hasEnums
 hasEscapeCharactersNode
  extends abstractFeatureNode
- crux hasEscapeCharacters
 hasExceptionsNode
  extends abstractFeatureNode
- crux hasExceptions
 hasExpressionsNode
  extends abstractFeatureNode
- crux hasExpressions
 hasFileScopeNode
  extends abstractFeatureNode
- crux hasFileScope
 hasFinallyNode
  extends abstractFeatureNode
- crux hasFinally
 hasFirstClassFunctionsNode
  extends abstractFeatureNode
- crux hasFirstClassFunctions
 hasFloatsNode
  extends abstractFeatureNode
- crux hasFloats
 hasFnArgumentsNode
  extends abstractFeatureNode
- crux hasFnArguments
 hasFnArgumentTypeDeclarationsNode
  extends abstractFeatureNode
- crux hasFnArgumentTypeDeclarations
 hasForEachLoopsNode
  extends abstractFeatureNode
- crux hasForEachLoops
 hasForLoopsNode
  extends abstractFeatureNode
- crux hasForLoops
 hasFunctionScopeNode
  extends abstractFeatureNode
- crux hasFunctionScope
 hasPatternMatchingNode
- crux hasPatternMatching
  extends abstractFeatureNode
 hasGarbageCollectionNode
  extends abstractFeatureNode
- crux hasGarbageCollection
 hasGeneratorsNode
  extends abstractFeatureNode
- crux hasGenerators
 hasGlobalScopeNode
  extends abstractFeatureNode
- crux hasGlobalScope
 hasGotosNode
  extends abstractFeatureNode
- crux hasGotos
 hasHereDocsNode
  extends abstractFeatureNode
- crux hasHereDocs
 hashHighLevelDataTypesNode
  extends abstractFeatureNode
- crux hashHighLevelDataTypes
 hasDirectivesNode
  extends abstractFeatureNode
- crux hasDirectives
 hasIdentifiersNode
  extends abstractFeatureNode
- crux hasIdentifiers
 hasIfElsesNode
  extends abstractFeatureNode
- crux hasIfElses
 hasIfsNode
  extends abstractFeatureNode
- crux hasIfs
 hasImplicitTypeConversionsNode
  extends abstractFeatureNode
- crux hasImplicitTypeConversions
 hasExplicitTypeCastingNode
  extends abstractFeatureNode
- crux hasExplicitTypeCasting
 hasImportsNode
  extends abstractFeatureNode
- crux hasImports
 hasExportsNode
  extends abstractFeatureNode
- crux hasExports
 hasInfixNotationNode
  extends abstractFeatureNode
- crux hasInfixNotation
 hasInterfacesNode
  extends abstractFeatureNode
- crux hasInterfaces
 hasInterpolatedStringsNode
  extends abstractFeatureNode
- crux hasInterpolatedStrings
 hasIntegersNode
  extends abstractFeatureNode
- crux hasIntegers
 hasIteratorsNode
  extends abstractFeatureNode
- crux hasIterators
 hasJavaExtensionsNode
  extends abstractFeatureNode
- crux hasJavaExtensions
 hasLabelsNode
  extends abstractFeatureNode
- crux hasLabels
 hasAnonymousFunctionsNode
  extends abstractFeatureNode
- crux hasAnonymousFunctions
 hasLazyEvalNode
  extends abstractFeatureNode
- crux hasLazyEval
 hasLazyEvaluationNode
  extends abstractFeatureNode
- crux hasLazyEvaluation
 hasLineContinuationsNode
  extends abstractFeatureNode
- crux hasLineContinuations
 hasLineContinuatorCharacterNode
  extends abstractFeatureNode
- crux hasLineContinuatorCharacter
 hasLinkersNode
  extends abstractFeatureNode
- crux hasLinkers
 hasListComprehensionNode
  extends abstractFeatureNode
- crux hasListComprehension
 hasMessagePassingNode
  extends abstractFeatureNode
- crux hasMessagePassing
 hasRangeOperatorsNode
  extends abstractFeatureNode
- crux hasRangeOperators
 hasListsNode
  extends abstractFeatureNode
- crux hasLists
 hasBlobsNode
  extends abstractFeatureNode
- crux hasBlobs
 hasClobsNode
  extends abstractFeatureNode
- crux hasClobs
 hasSExpressionsNode
  extends abstractFeatureNode
- crux hasSExpressions
 hasTimestampsNode
  extends abstractFeatureNode
- crux hasTimestamps
 hasDecimalsNode
  extends abstractFeatureNode
- crux hasDecimals
 hasSymbolsNode
  extends abstractFeatureNode
- crux hasSymbols
 hasTypeAnnotationsNode
  extends abstractFeatureNode
- crux hasTypeAnnotations
 hasMacrosNode
  extends abstractFeatureNode
- crux hasMacros
 hasManualMemoryManagementNode
  extends abstractFeatureNode
- crux hasManualMemoryManagement
 hasMathLikeNotationNode
  extends abstractFeatureNode
- crux hasMathLikeNotation
 hasMemberVariablesNode
  extends abstractFeatureNode
- crux hasMemberVariables
 hasFunctionOverloadingNode
  extends abstractFeatureNode
- crux hasFunctionOverloading
 hasMethodOverloadingNode
  extends abstractFeatureNode
- crux hasMethodOverloading
 hasMixinsNode
  extends abstractFeatureNode
- crux hasMixins
 hasNamespacesNode
  extends abstractFeatureNode
- crux hasNamespaces
 hasMultidimensionalArraysNode
  extends abstractFeatureNode
- crux hasMultidimensionalArrays
 hasMultilineStringsNode
  extends abstractFeatureNode
- crux hasMultilineStrings
 hasMultipleInheritanceNode
  extends abstractFeatureNode
- crux hasMultipleInheritance
 hasNestedFunctionsNode
  extends abstractFeatureNode
- crux hasNestedFunctions
 hasNoKeywordsNode
  extends abstractFeatureNode
- crux hasNoKeywords
 hasNullNode
  extends abstractFeatureNode
- crux hasNull
 hasObjectConstructorsNode
  extends abstractFeatureNode
- crux hasObjectConstructors
 hasObjectsNode
  extends abstractFeatureNode
- crux hasObjects
 hasCaseInsensitiveIdentifiersNode
  extends abstractFeatureNode
- crux hasCaseInsensitiveIdentifiers
 hasOperatorOverloadingNode
  extends abstractFeatureNode
- crux hasOperatorOverloading
 hasReferencesNode
  extends abstractFeatureNode
- crux hasReferences
 hasPassByValueNode
  extends abstractFeatureNode
- crux hasPassByValue
 hasPipesNode
  extends abstractFeatureNode
- crux hasPipes
 hasPolymorphicListTypeNode
  extends abstractFeatureNode
- crux hasPolymorphicListType
 hasPostfixNotationNode
  extends abstractFeatureNode
- crux hasPostfixNotation
 hasPrefixNotationNode
  extends abstractFeatureNode
- crux hasPrefixNotation
 hasPrintStatementsNode
  extends abstractFeatureNode
- crux hasPrintStatements
 hasProtectedNode
  extends abstractFeatureNode
- crux hasProtected
 hasQuotedRawStringsNode
  extends abstractFeatureNode
- crux hasQuotedRawStrings
 hasQuoteEscapingNode
  extends abstractFeatureNode
- crux hasQuoteEscaping
 hasRequiredMainFunctionNode
  extends abstractFeatureNode
- crux hasRequiredMainFunction
 hasRunTimeTypingNode
  extends abstractFeatureNode
- crux hasRunTimeTyping
 hasSelfOrThisWordNode
  extends abstractFeatureNode
- crux hasSelfOrThisWord
 hasSemanticIndentationNode
  extends abstractFeatureNode
- crux hasSemanticIndentation
 hasSignificantLinesNode
  extends abstractFeatureNode
- crux hasSignificantLines
 hasAccessModifiersNode
  extends abstractFeatureNode
- crux hasAccessModifiers
 hasInheritanceNode
  extends abstractFeatureNode
- crux hasInheritance
 hasSpecifiableBaseIndexNode
  extends abstractFeatureNode
- crux hasSpecifiableBaseIndex
 hasStatementsNode
  extends abstractFeatureNode
- crux hasStatements
 hasStatementTerminatorCharacterNode
  extends abstractFeatureNode
- crux hasStatementTerminatorCharacter
 hasStaticTypingNode
  extends abstractFeatureNode
- crux hasStaticTyping
 hasTypeParametersNode
  extends abstractFeatureNode
- crux hasTypeParameters
 letterFirstIdentifiersNode
  extends abstractFeatureNode
  description Must identifiers start with a letter
- crux letterFirstIdentifiers
 hasStreamsNode
  extends abstractFeatureNode
- crux hasStreams
 hasFunctionCompositionNode
  extends abstractFeatureNode
- crux hasFunctionComposition
 hasStaticMethodsNode
  extends abstractFeatureNode
- crux hasStaticMethods
 hasThreadsNode
  extends abstractFeatureNode
- crux hasThreads
 hasStringConcatOperatorNode
  extends abstractFeatureNode
- crux hasStringConcatOperator
 hasStringsNode
  extends abstractFeatureNode
- crux hasStrings
 hasTypeInferenceNode
  extends abstractFeatureNode
- crux hasTypeInference
 hasSuperNode
  extends abstractFeatureNode
- crux hasSuper
 hasSwitchNode
  extends abstractFeatureNode
- crux hasSwitch
 hasSyntaxForMatrixOpsNode
  extends abstractFeatureNode
- crux hasSyntaxForMatrixOps
 hasTemplatesNode
  extends abstractFeatureNode
- crux hasTemplates
 hasTernaryOperatorsNode
  extends abstractFeatureNode
- crux hasTernaryOperators
 hasTransposeOperatorNode
  extends abstractFeatureNode
- crux hasTransposeOperator
 hasTryCatchNode
  extends abstractFeatureNode
- crux hasTryCatch
 hasSingleTypeArraysNode
  extends abstractFeatureNode
  description Has an array data structure that only can hold items of the same type.
- crux hasSingleTypeArrays
 hasTraitsNode
  extends abstractFeatureNode
- crux hasTraits
 hasTuplesNode
  extends abstractFeatureNode
- crux hasTuples
 hasTypeDeclarationsNode
  extends abstractFeatureNode
- crux hasTypeDeclarations
 hasUnionTypesNode
  extends abstractFeatureNode
- crux hasUnionTypes
 hasValueReturnedFunctionsNode
  extends abstractFeatureNode
- crux hasValueReturnedFunctions
 hasVariableAssignmentNode
  extends abstractFeatureNode
- crux hasVariableAssignment
 hasVariableDeclarationsNode
  extends abstractFeatureNode
- crux hasVariableDeclarations
 hasUnitsOfMeasureNode
  extends abstractFeatureNode
- crux hasUnitsOfMeasure
 hasMapsNode
  extends abstractFeatureNode
- crux hasMaps
 hasSetsNode
  extends abstractFeatureNode
- crux hasSets
 hasIdsNode
  extends abstractFeatureNode
- crux hasIds
 hasTriplesNode
  extends abstractFeatureNode
- crux hasTriples
 hasVariadicFunctionsNode
  extends abstractFeatureNode
- crux hasVariadicFunctions
 hasVarsNode
  extends abstractFeatureNode
- crux hasVars
 hasVectorizedOperationsNode
  extends abstractFeatureNode
- crux hasVectorizedOperations
 hasVoidFunctionsNode
  extends abstractFeatureNode
- crux hasVoidFunctions
 hasWhileLoopsNode
  extends abstractFeatureNode
- crux hasWhileLoops
 hasZeroBasedNumberingNode
  extends abstractFeatureNode
- crux hasZeroBasedNumbering
 isCaseSensitiveNode
  extends abstractFeatureNode
- crux isCaseSensitive
 hasModulesNode
  extends abstractFeatureNode
- crux hasModules
 hasDisposeBlocksNode
  extends abstractFeatureNode
- crux hasDisposeBlocks
 hasFunctionsNode
  extends abstractFeatureNode
- crux hasFunctions
 hasMethodsNode
  extends abstractFeatureNode
- crux hasMethods
 hasSemaphoresNode
  extends abstractFeatureNode
- crux hasSemaphores
 hasIncrementAndDecrementOperatorsNode
  extends abstractFeatureNode
- crux hasIncrementAndDecrementOperators

@@ -1,7 +1,7 @@
 helloWorldCollectionNode
  description Hello world written in this language from http://helloworldcollection.de/
  extends exampleNode
- crux helloWorldCollection
+ cruxFromId
  boolean padOnFormat true
  int sortIndex 400
  cells keywordCell

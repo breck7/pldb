@@ -1,7 +1,7 @@
 dblpNode
  boolean fromCrawler true
  extends abstractFactNode
- crux dblp
+ cruxFromId
  description Publications about this language from https://dblp.org/.
  string sourceDomain dblp.org
  single

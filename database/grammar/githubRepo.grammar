@@ -1,7 +1,7 @@
 githubRepoNode
  description URL of the official GitHub repo for the project if it hosted there.
  extends abstractGitRepoUrlNode
- crux githubRepo
+ cruxFromId
  inScope abstractGithubYearNode abstractGithubCountNode githubDescriptionNode
  single
  int sortIndex 490
