@@ -35,3 +35,6 @@ example
  age > 30
  // Also the same as above
  people = [#person]
+features
+ hasLineComments true
+  // A comment

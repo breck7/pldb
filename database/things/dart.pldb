@@ -19,6 +19,8 @@ features
   import 'file-system.dart';
   import 'dart:math' as math;
  hasOperatorOverloading true
+ hasLineComments true
+  // A comment
 
 wikipedia https://en.wikipedia.org/wiki/Dart_(programming_language)
  example

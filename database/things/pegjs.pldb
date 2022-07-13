@@ -46,3 +46,8 @@ fileType text
 isOpenSource true
 centralPackageRepositoryCount 0
 creators David Majda
+features
+ hasLineComments true
+  // A comment
+ hasMultiLineComments true
+  /* A comment */
