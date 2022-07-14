@@ -624,20 +624,6 @@ class Builder extends AbstractBuilder {
     new CommandLineApp().format(pldbBase.grammarPath)
   }
 
-  merge() {
-    pldbBase.loadFolder()
-    pldbBase.forEach(file => {
-      const comment = file.get("lineCommentKeyword")
-      if (comment && !file.getNode("features hasLineComments")) {
-        file
-          .touchNode("features")
-          .appendLineAndChildren(`hasLineComments true`, `${comment} A comment`)
-
-        file.save()
-      }
-    })
-  }
-
   buildSearchIndex() {
     pldbBase.loadFolder()
     const objects = pldbBase.toObjectsForCsv().map(object => {
@@ -686,13 +672,6 @@ class Builder extends AbstractBuilder {
     new (<any>TreeBaseServer)(pldbBase).listen(port)
   }
 
-  update(id: string) {
-    const {
-      PLDBAutocompleter
-    } = require("./code/importers/PLDBAutocompleter.js")
-    new PLDBAutocompleter().update(id)
-  }
-
   generateWorksheets() {
     pldbBase.loadFolder()
     const { topFeatures } = pldbBase
@@ -723,46 +702,6 @@ class Builder extends AbstractBuilder {
           __dirname + `/ignore/worksheets/${file.id}.${file.fileExtension}`,
           todos.join("\n\n")
         )
-      })
-  }
-
-  updateAll() {
-    pldbBase.loadFolder()
-
-    pldbBase
-      .filter(file => file.isLanguage)
-      .filter(
-        file =>
-          file.has("lineCommentKeyword") &&
-          !file.get("features hasLineComments")
-      )
-      .forEach(file => {
-        const kw = file.get("lineCommentKeyword")
-        file.set("features hasLineComments", "true")
-        file
-          .touchNode("features hasLineComments")
-          .setChildren(`${kw} A comment`)
-        file.save()
-      })
-
-    pldbBase
-      .filter(file => file.isLanguage)
-      .filter(
-        file =>
-          file.has("multiLineCommentKeywords") &&
-          !file.get("features hasMultiLineComments")
-      )
-      .forEach(file => {
-        const kws = file.get("multiLineCommentKeywords")
-        file.set("features hasMultiLineComments", "true")
-        const parts = kws.split(" ")
-        const start = parts[0]
-        const end = parts[1] || start
-        file
-          .touchNode("features hasMultiLineComments")
-          .setChildren(`${start} A comment ${end}`)
-
-        file.save()
       })
   }
 }

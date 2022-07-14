@@ -621,51 +621,7 @@ paragraph
   }
 
   get exampleSection() {
-    const file = this.file
-    const examples = []
-
-    file.findNodes("example").forEach(node => {
-      examples.push({
-        code: node.childrenToString(),
-        source: "the web",
-        link: ""
-      })
-    })
-
-    file.findNodes("rijuRepl example").forEach(node => {
-      examples.push({
-        code: node.childrenToString(),
-        source: "Riju",
-        link: file.get("rijuRepl")
-      })
-    })
-
-    file.findNodes("helloWorldCollection").forEach(node => {
-      examples.push({
-        code: node.childrenToString(),
-        source: "the Hello World Collection",
-        link: `http://helloworldcollection.de/#` + node.getWord(1)
-      })
-    })
-
-    const linguist_url = file.get("linguistGrammarRepo")
-    file.findNodes("linguistGrammarRepo example").forEach(node => {
-      examples.push({
-        code: node.childrenToString(),
-        source: "Linguist",
-        link: linguist_url
-      })
-    })
-
-    file.findNodes("wikipedia example").forEach(node => {
-      examples.push({
-        code: node.childrenToString(),
-        source: "Wikipedia",
-        link: file.get("wikipedia")
-      })
-    })
-
-    return examples
+    return this.file.allExamples
       .map(
         example =>
           `subsection Example code from ${

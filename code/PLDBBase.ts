@@ -30,6 +30,12 @@ interface FeatureSummary {
   psuedoExample: string
 }
 
+interface Example {
+  code: string
+  source: string
+  link: string
+}
+
 const typeNames = new TreeNode(`application
 assembly assembly language
 binaryDataFormat
@@ -118,6 +124,53 @@ class PLDBFile extends TreeBaseFile {
 
   get nextRanked() {
     return this.base.getFileAtRank(this.rank + 1)
+  }
+
+  get allExamples(): Example[] {
+    const examples: Example[] = []
+
+    this.findNodes("example").forEach(node => {
+      examples.push({
+        code: node.childrenToString(),
+        source: "the web",
+        link: ""
+      })
+    })
+
+    this.findNodes("rijuRepl example").forEach(node => {
+      examples.push({
+        code: node.childrenToString(),
+        source: "Riju",
+        link: this.get("rijuRepl")
+      })
+    })
+
+    this.findNodes("helloWorldCollection").forEach(node => {
+      examples.push({
+        code: node.childrenToString(),
+        source: "the Hello World Collection",
+        link: `http://helloworldcollection.de/#` + node.getWord(1)
+      })
+    })
+
+    const linguist_url = this.get("linguistGrammarRepo")
+    this.findNodes("linguistGrammarRepo example").forEach(node => {
+      examples.push({
+        code: node.childrenToString(),
+        source: "Linguist",
+        link: linguist_url
+      })
+    })
+
+    this.findNodes("wikipedia example").forEach(node => {
+      examples.push({
+        code: node.childrenToString(),
+        source: "Wikipedia",
+        link: this.get("wikipedia")
+      })
+    })
+
+    return examples
   }
 
   get _getLanguagesWithThisFeatureResearched() {
