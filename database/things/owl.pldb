@@ -2,6 +2,9 @@ title OWL
 appeared 2004
 type xmlFormat
 
+features
+ hasLineComments false
+
 wikipedia https://en.wikipedia.org/wiki/Web_Ontology_Language
  example
   <http://example.org/tea.owl> rdf:type owl:Ontology .
