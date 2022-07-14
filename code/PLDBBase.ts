@@ -162,9 +162,7 @@ class PLDBFile extends TreeBaseFile {
   }
 
   get otherReferences() {
-    return this.map(node => node.getLine()).filter(
-      line => line.startsWith("https:") || line.startsWith("http:")
-    )
+    return this.findNodes("reference").map(line => line.getContent())
   }
 
   get isFeature() {
