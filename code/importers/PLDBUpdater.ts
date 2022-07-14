@@ -19,7 +19,7 @@ class PLDBUpdater {
     this.update(id)
   }
 
-  scanExamplesCommand() {
+  scanExamplesForCommentsCommand() {
     pldbBase
       .filter(file => file.isLanguage)
       .filter(
@@ -30,13 +30,11 @@ class PLDBUpdater {
       .filter(file => file.allExamples.length)
       .forEach(file => {
         const examples = file.allExamples.map(code => code.code)
+        const commentToken = ";"
         let hit
-        if ((hit = examples.find(code => code.includes("// ")))) {
-          file.set("lineCommentKeyword", "//")
+        if ((hit = examples.find(code => code.includes(`${commentToken} `)))) {
+          file.set("lineCommentKeyword", commentToken)
           file.save()
-        } else if ((hit = examples.find(code => code.includes("# ")))) {
-          // file.set("lineCommentKeyword", "#")
-          //file.save()
         }
       })
   }
