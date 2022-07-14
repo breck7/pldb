@@ -528,7 +528,7 @@ class PLDBBaseFolder extends TreeBaseFolder {
     const ranks = this._getRanks()
     // Add ranks
     objects.forEach(obj => {
-      obj.rank = ranks[obj.id].totalRank
+      obj.rank = ranks[obj.id].index
     })
 
     return lodash.sortBy(objects, "rank")

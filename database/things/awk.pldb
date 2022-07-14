@@ -2,10 +2,14 @@ title awk
 appeared 1977
 type pl
 
+lineCommentKeyword #
+
 subreddit awk
 
 features
  hasComments true
+ hasLineComments true
+  # A comment
 
 wikipedia https://en.wikipedia.org/wiki/AWK
  example

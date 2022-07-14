@@ -2,6 +2,7 @@ title MUMPS
 appeared 1966
 type pl
 creators Neil Pappalardo
+lineCommentKeyword ;
 
 wikipedia https://en.wikipedia.org/wiki/MUMPS
  example
@@ -66,3 +67,6 @@ rijuRepl https://riju.codes/mumps
     write "Hello, world!",!
     quit
   
+features
+ hasLineComments true
+  ; A comment

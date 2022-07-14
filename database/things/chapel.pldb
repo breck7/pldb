@@ -1,6 +1,7 @@
 title Chapel
 appeared 2004
 type pl
+lineCommentKeyword //
 
 subreddit chapel
  memberCount
@@ -8,6 +9,8 @@ subreddit chapel
 
 features
  hasComments true
+ hasLineComments true
+  // A comment
 
 wikipedia https://en.wikipedia.org/wiki/Chapel_(programming_language)
  related ada csharp c fortran java fortress unified-parallel-c x10 isbn

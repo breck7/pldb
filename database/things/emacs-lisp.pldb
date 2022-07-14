@@ -3,9 +3,12 @@ appeared 1985
 type pl
 creators Richard Stallman
 aka emacslisp
+lineCommentKeyword ;
 
 features
  isLisp true
+ hasLineComments true
+  ; A comment
 
 wikipedia https://en.wikipedia.org/wiki/Emacs_Lisp
  example
@@ -52,6 +55,7 @@ linguistGrammarRepo https://github.com/Alhadis/language-emacs-lisp
 status active
 
 tryItOnline emacs-lisp
+replit https://replit.com/languages/elisp
 
 country United States
 fileType text

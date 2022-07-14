@@ -2,6 +2,7 @@ title Ada
 appeared 1980
 type pl
 creators Jean Ichbiah
+lineCommentKeyword --
 
 features
  hasPointers true
@@ -30,6 +31,8 @@ features
  hasDirectives true
  hasCaseInsensitiveIdentifiers true
  hasOperatorOverloading true
+ hasLineComments true
+  -- A comment
 
 wikipedia https://en.wikipedia.org/wiki/Ada_(programming_language)
  example

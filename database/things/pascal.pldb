@@ -6,6 +6,11 @@ creators Niklaus Wirth
 features
  hasPolymorphism true
  hasComments true
+  { This is a single line comment in pascal. But needs to be closed. }
+ hasLineComments false
+ hasMultiLineComments true
+  (* This is a multi-line comments
+   and it will span multiple lines. *)
  hasFunctionOverloading true
   program Adhoc;
   

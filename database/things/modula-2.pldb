@@ -5,8 +5,11 @@ creators Niklaus Wirth
 
 features
  hasComments true
+ hasLineComments false
  hasOperatorOverloading false
-
+ hasMultiLineComments true
+  (* A comment *)
+multiLineCommentKeywords (* *)
 wikipedia https://en.wikipedia.org/wiki/Modula-2
  example
   ABS         EXCL            LONGINT    REAL

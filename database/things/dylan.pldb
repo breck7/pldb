@@ -1,11 +1,14 @@
 title Dylan
 appeared 1992
 type pl
+lineCommentKeyword //
 
 features
  hasMultipleDispatch true
  hasComments true
  hasMultipleInheritance true
+ hasLineComments true
+  // A comment
 
 corporateDevelopers Apple
 webRepl https://play.opendylan.org/
