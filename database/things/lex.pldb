@@ -2,6 +2,35 @@ title Lex
 appeared 1975
 type grammarLanguage
 
+example
+ /*** Definition section ***/
+ 
+ %{
+ /* C code to be copied verbatim */
+ #include <stdio.h>
+ %}
+ 
+ %%
+     /*** Rules section ***/
+ 
+     /* [0-9]+ matches a string of one or more digits */
+ [0-9]+  {
+             /* yytext is a string containing the matched text. */
+             printf("Saw an integer: %s\n", yytext);
+         }
+ 
+ .|\n    {   /* Ignore all other characters. */   }
+ 
+ %%
+ /*** C Code section ***/
+ 
+ int main(void)
+ {
+     /* Call the lexer, then quit. */
+     yylex();
+     return 0;
+ }
+
 wikipedia https://en.wikipedia.org/wiki/Lex_(software)
  example
   Saw an integer: 123
@@ -74,3 +103,4 @@ hopl 680
 
 centralPackageRepositoryCount 0
 reference https://github.com/babyraging/yash
+multiLineCommentKeywords /* */

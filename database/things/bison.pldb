@@ -2,6 +2,21 @@ title Bison
 appeared 1985
 type grammarLanguage
 
+example
+ /* Reverse Polish Notation calculator. */
+ 
+ %{
+   #include <stdio.h>
+   #include <math.h>
+   int yylex (void);
+   void yyerror (char const *);
+ %}
+ 
+ %define api.value.type {double}
+ %token NUM
+ 
+ %% /* Grammar rules and actions follow. */
+
 wikipedia https://en.wikipedia.org/wiki/GNU_bison
  example
   # Makefile
@@ -51,3 +66,5 @@ hopl 4653
 corporateDevelopers GNU Project
 centralPackageRepositoryCount 0
 reference https://github.com/babyraging/yash
+lineCommentKeyword //
+multiLineCommentKeywords /* */
