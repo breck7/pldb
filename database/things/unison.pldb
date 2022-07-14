@@ -47,3 +47,4 @@ rijuRepl https://riju.codes/unison
   main = runProg 'let
     printLine "Hello, world!"
   
+lineCommentKeyword --

@@ -1,0 +1,41 @@
+title Noweb
+appeared 1989
+creators Norman Ramsey
+related cweb
+type textMarkup
+wikipedia https://en.wikipedia.org/wiki/Noweb
+githubRepo https://github.com/nrnrnr/noweb
+website https://www.cs.tufts.edu/~nr/noweb/
+example
+ \section{Hello world}
+ 
+ Today I awoke and decided to write
+ some code, so I started to write Hello World in \textsf C.
+ 
+ <<hello.c>>=
+ /*
+   <<license>>
+ */
+ #include <stdio.h>
+ 
+ int main(int argc, char *argv[]) {
+   printf("Hello World!\n");
+   return 0;
+ }
+ @
+ \noindent \ldots then I did the same in PHP.
+ 
+ <<hello.php>>=
+ <?php
+   /*
+   <<license>>
+   */
+   echo "Hello world!\n";
+ ?>
+ @
+ \section{License}
+ Later the same day some lawyer reminded me about licenses.
+ So, here it is:
+ 
+ <<license>>=
+ This work is placed in the public domain.
