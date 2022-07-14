@@ -25,3 +25,4 @@ example
 description Verifpal is new software for verifying the security of cryptographic protocols. The Verifpal language is meant to illustrate protocols close to how one may describe them in an informal conversation, while still being precise and expressive enough for formal modeling. Verifpal reasons about the protocol model with explicit principals: Alice and Bob exist and have independent states.
 website https://verifpal.com/
 fileExtensions vp
+lineCommentKeyword //
