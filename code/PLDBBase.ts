@@ -21,6 +21,15 @@ const {
 } = require("jtree/products/treeBase.node.js")
 const { Disk } = require("jtree/products/Disk.node.js")
 
+interface FeatureSummary {
+  feature: string
+  featureLink: string
+  aka: string
+  path: string
+  languages: number
+  psuedoExample: string
+}
+
 const typeNames = new TreeNode(`application
 assembly assembly language
 binaryDataFormat
@@ -449,7 +458,16 @@ class PLDBBaseFolder extends TreeBaseFolder {
     return this.getFile(ranks[rank].id)
   }
 
-  get topFeatures() {
+  private _featuresMap = new Map<string, FeatureSummary>()
+  get featuresMap() {
+    if (!this._featuresMap.size)
+      this.topFeatures.forEach(feature => {
+        this._featuresMap.set(feature.path, feature)
+      })
+    return this._featuresMap
+  }
+
+  get topFeatures(): FeatureSummary[] {
     const files = this.featureFiles.map(file => {
       const name = file.id
       return {

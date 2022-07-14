@@ -125,6 +125,42 @@ pipeTable
     return ""
   }
 
+  get featuresTable() {
+    const featuresTable = this.file.getNode(`features`)
+    if (!featuresTable) return ""
+
+    const { featuresMap } = this.file.base
+
+    const table = new TreeNode()
+    featuresTable.forEach(node => {
+      const feature = featuresMap.get(node.getWord(0))
+      if (!feature) {
+        console.log(`${node.getWord(0)} not found`)
+        return
+      }
+
+      table
+        .appendLineAndChildren(
+          `row`,
+          `Feature ${feature.feature}
+FeatureLink ${feature.featureLink}
+Supported ${node.getContent() === "true" ? "✓" : "ϴ"}`
+        )
+        .touchNode("Example")
+        .setChildren(node.childrenToString())
+    })
+
+    return `foldBreak
+subsection Language <a href="../lists/features.html">features</a>
+
+treeTable
+ ${table
+   .sortBy(["Supported", "Example"])
+   .reverse()
+   .toString()
+   .replace(/\n/g, "\n ")}`
+  }
+
   get hackerNewsTable() {
     const hnTable = this.file
       .getNode(`hackerNewsDiscussions`)
@@ -176,6 +212,8 @@ ${this.factsSection}
 ${this.exampleSection}
 
 ${this.keywordsSection}
+
+${this.featuresTable}
 
 ${this.trendingRepos}
 
