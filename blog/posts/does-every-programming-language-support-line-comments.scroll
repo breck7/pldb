@@ -1,0 +1,91 @@
+title Does every programming language have line comments?
+date 2022-07-13
+author https://breckyunits.com Breck Yunits
+
+image line-comments.png
+
+aftertext
+ About 85% of the languages in PLDB have line comments.
+ link ./languages/line-comments-feature.html line comments
+ dateline
+
+endSnippet
+
+aftertext
+ A language supports line comments if it defines a special token (nowadays usually `//` or `#`) where everything after that token until the end of the line becomes a comment. Example:
+ wrapsOn
+
+code
+ print "Hello world" # this is a comment
+
+aftertext
+ These are different from multiline comments which are delimited by a pair of tokens (such as `%{` and `}%`).
+ wrapsOn
+ link languages/multiline-comments-feature.html multiline comments
+
+subsection The majority of languages use // or # to start a line comment
+
+aftertext
+ *38%* of programming languages take after C (1972) and use `//`. *22%* use `#`, which has become very popular thanks to languages like Python, Perl, and Ruby.
+ wrapsOn
+ link languages/c.html C
+ link languages/python.html Python
+ link languages/perl.html Perl
+ link languages/ruby.html Ruby
+
+aftertext
+ The SQL languages all generally use `--`.
+ wrapsOn
+
+aftertext
+ The era of experimentation with line comment tokens appears to be over: the last time a new line comment token appeared in the top 250 was 1993.
+ link lists/top250.html top 250
+
+subsection 15% of languages don't have line comments
+
+aftertext
+ About 15% of the languages in PLDB don't support line comments. These include some of the key markups for the web like HTML, CSS and SVG.
+ link languages/html.html HTML
+ link languages/css.html CSS
+ link languages/svg.html SVG
+
+aftertext
+ JSON famously does not support comments. But a number of its derivatives do, such as <a href="languages/json-with-comments.html">JSON with Comments</a>.
+ link languages/json.html JSON
+
+aftertext
+ A few general purpose languages don't support line comments including Mathematica and OCaml.
+ link languages/mathematica.html Mathematica
+ link languages/ocaml.html OCaml
+
+subsection A few exceptions
+
+aftertext
+ Like everything, there are exceptions to the common cases. A few languages, such as <a href="languages/spss.html">SPSS</a>, have a more restrictive form of line comment where the line comment token has to be the first token on the line.
+
+aftertext
+ A few languages also support multiple line comment tokens. The <a href="./languages/ini.html">Ini config format</a> supports both `;` and `#`.
+ wrapsOn
+
+observable https://observablehq.com/@breck7/line-comments-in-programming-languages
+ 
+ohayoCode
+ html.h1 Line comments
+ web.get https://pldb.pub/languages.csv
+  filter.where rank < 300
+   columns.keep appeared title rank languageRank features.hasLineComments lineCommentKeyword
+    columns.rename features.hasLineComments hasLineComments
+     filter.where hasLineComments != 
+      tables.basic
+       group.by hasLineComments
+        tables.basic
+       filter.where hasLineComments = false
+        tables.basic
+       filter.where lineCommentKeyword != 
+        group.by lineCommentKeyword
+         reduce appeared min firstAppeared
+         roughjs.pie Line comment token usage
+          label lineCommentKeyword
+          value count
+         rows.sortByReverse count
+          tables.basic
