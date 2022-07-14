@@ -22,3 +22,4 @@ example
 description Rosette is a solver-aided programming language that extends Racket with language constructs for program synthesis, verification, and more. To verify or synthesize code, Rosette compiles it to logical constraints solved with off-the-shelf SMT solvers. By combining virtualized access to solvers with Racket’s metaprogramming, Rosette makes it easy to develop synthesis and verification tools for new languages.
 website https://emina.github.io/rosette/
 reference https://homes.cs.washington.edu/~emina/pubs/rosette.onward13.pdf
+lineCommentKeyword ;
