@@ -19,6 +19,28 @@ class PLDBUpdater {
     this.update(id)
   }
 
+  scanExamplesCommand() {
+    pldbBase
+      .filter(file => file.isLanguage)
+      .filter(
+        file =>
+          !file.has("lineCommentKeyword") &&
+          file.get("features hasLineComments") === undefined
+      )
+      .filter(file => file.allExamples.length)
+      .forEach(file => {
+        const examples = file.allExamples.map(code => code.code)
+        let hit
+        if ((hit = examples.find(code => code.includes("// ")))) {
+          file.set("lineCommentKeyword", "//")
+          file.save()
+        } else if ((hit = examples.find(code => code.includes("# ")))) {
+          // file.set("lineCommentKeyword", "#")
+          //file.save()
+        }
+      })
+  }
+
   updateCommentsCommand() {
     pldbBase
       .filter(file => file.isLanguage)
