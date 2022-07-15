@@ -30,3 +30,13 @@ status active
 fileType text
 wordRank 2862
 centralPackageRepositoryCount 0
+lineCommentKeyword #
+example
+ echo "Hello, world!"
+
+example
+ class Square Rectangle (
+ )
+ method Square constructor ( size ) {
+  $super constructor $size $size
+ }
