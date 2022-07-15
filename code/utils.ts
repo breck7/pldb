@@ -268,6 +268,26 @@ const getIndefiniteArticle = phrase => {
   return "a"
 }
 
+let benchmarkResults = ""
+
+const benchmark: MethodDecorator = (
+  target: Object,
+  prop: PropertyKey,
+  descriptor: PropertyDescriptor
+): void => {
+  const method: Function = descriptor.value
+  const meter: any = typeof performance !== "undefined" ? performance : Date
+
+  descriptor.value = function(): any {
+    const action: Function = method.apply.bind(method, this, arguments)
+    const start = meter.now()
+    const result: any = action()
+    const elapsed = lodash.round((meter.now() - start) / 1000, 3)
+    benchmarkResults += `Time for ${String(prop)}: ${elapsed}s\n`
+    return result
+  }
+}
+
 export {
   cleanAndRightShift,
   toCommaList,
@@ -287,5 +307,7 @@ export {
   Ranking,
   InverseRankings,
   rankSort,
-  linkMany
+  linkMany,
+  benchmark,
+  benchmarkResults
 }

@@ -25,7 +25,9 @@ import {
   nameToAnchor,
   replaceNext,
   toScrollTable,
-  isLanguage
+  isLanguage,
+  benchmark,
+  benchmarkResults
 } from "./code/utils"
 
 class Builder extends AbstractBuilder {
@@ -42,6 +44,7 @@ class Builder extends AbstractBuilder {
   }
 
   buildAll() {
+    pldbBase.loadFolder()
     this.buildCreatorsPage()
     this.buildCorporationsPage()
     this.buildFeaturesPage()
@@ -55,6 +58,7 @@ class Builder extends AbstractBuilder {
     this.buildCsvs()
     this.buildSearchIndex()
     this.buildDatabasePages()
+    console.log(benchmarkResults)
   }
 
   _buildTopPages(num) {
@@ -92,6 +96,7 @@ class Builder extends AbstractBuilder {
     Disk.write(pagePath, page.toString())
   }
 
+  @benchmark
   buildTopPages() {
     this._buildTopPages(100)
     this._buildTopPages(250)
@@ -99,6 +104,7 @@ class Builder extends AbstractBuilder {
     this._buildTopPages(1000)
   }
 
+  @benchmark
   buildKeywordsPage() {
     pldbBase.loadFolder()
     const pagePath = __dirname + "/blog/lists/keywords.scroll"
@@ -169,6 +175,7 @@ class Builder extends AbstractBuilder {
     Disk.write(pagePath, page.toString())
   }
 
+  @benchmark
   buildFileExtensionsPage() {
     pldbBase.loadFolder()
     const pagePath = __dirname + "/blog/lists/extensions.scroll"
@@ -203,7 +210,8 @@ class Builder extends AbstractBuilder {
 
     Disk.write(pagePath, text)
   }
-
+  
+  @benchmark
   buildEntitiesPage() {
     pldbBase.loadFolder()
     const pagePath = __dirname + "/blog/lists/entities.scroll"
@@ -248,6 +256,7 @@ class Builder extends AbstractBuilder {
     Disk.write(pagePath, text)
   }
 
+  @benchmark
   buildLanguagesPage() {
     pldbBase.loadFolder()
     const pagePath = __dirname + "/blog/lists/languages.scroll"
@@ -294,6 +303,7 @@ class Builder extends AbstractBuilder {
     Disk.write(pagePath, text)
   }
 
+  @benchmark
   buildFeaturesPage() {
     pldbBase.loadFolder()
     const pagePath = __dirname + "/blog/lists/features.scroll"
@@ -322,6 +332,7 @@ class Builder extends AbstractBuilder {
     Disk.write(pagePath, text)
   }
 
+  @benchmark
   buildCreatorsPage() {
     pldbBase.loadFolder()
     const pagePath = __dirname + "/blog/lists/creators.scroll"
@@ -397,6 +408,7 @@ class Builder extends AbstractBuilder {
     Disk.write(pagePath, text)
   }
 
+  @benchmark
   buildCorporationsPage() {
     pldbBase.loadFolder()
     const pagePath = __dirname + "/blog/lists/corporations.scroll"
@@ -455,6 +467,7 @@ class Builder extends AbstractBuilder {
     Disk.write(pagePath, text)
   }
 
+  @benchmark
   buildBlog() {
     Disk.mkdir(websiteFolder)
     this._cpAssets()
@@ -489,6 +502,7 @@ class Builder extends AbstractBuilder {
     this._buildListsSite()
   }
 
+  @benchmark
   buildRedirects() {
     Disk.mkdir(websiteFolder + "/posts")
     Disk.read(__dirname + "/blog/redirects.txt")
@@ -503,6 +517,7 @@ class Builder extends AbstractBuilder {
   }
 
   // Build all the list pages
+  @benchmark
   _buildListsSite() {
     shell(`cp -R ${__dirname}/blog/lists ${websiteFolder}`)
 
@@ -525,6 +540,7 @@ class Builder extends AbstractBuilder {
     folder.buildSinglePages()
   }
 
+  @benchmark
   buildDatabasePages() {
     this.buildGrammar()
     Disk.mkdir(databaseFolderWhenPublishedToWebsite)
@@ -559,6 +575,7 @@ class Builder extends AbstractBuilder {
     return Disk.read(__dirname + `/code/scrollExtensions.grammar`)
   }
 
+  @benchmark
   buildAcknowledgementsPage() {
     const sources = Array.from(
       new Set(
@@ -605,6 +622,7 @@ class Builder extends AbstractBuilder {
     Disk.write(path, page.toString())
   }
 
+  @benchmark
   buildGrammar() {
     // Concatenate all files ending in ".grammar" in the "grammar" directory:
     const grammar =
@@ -624,6 +642,7 @@ class Builder extends AbstractBuilder {
     new CommandLineApp().format(pldbBase.grammarPath)
   }
 
+  @benchmark
   buildSearchIndex() {
     pldbBase.loadFolder()
     const objects = pldbBase.toObjectsForCsv().map(object => {
@@ -639,6 +658,7 @@ class Builder extends AbstractBuilder {
     )
   }
 
+  @benchmark
   buildCsvs() {
     pldbBase.loadFolder()
     const objects = pldbBase.toObjectsForCsv()

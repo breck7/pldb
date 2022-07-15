@@ -42,7 +42,6 @@ externalGuidCell
  description A GUID from another site.
 fileNameCell
  highlightScope string
-permalinkCell
 blankCell
 typeCell
  enum assembly pl barCodeFormat hardwareDescriptionLanguage knowledgeBase binaryDataFormat contractLanguage timeFormat computingMachine xmlFormat yamlFormat jsonFormat compiler grammarLanguage dataValidationLanguage application ir isa queryLanguage protocol os esolang template textMarkup characterEncoding idl library editor cloud textDataFormat visual plzoo interpreter notation binaryExecutable dataNotation stylesheetLanguage schema bytecode vm filesystem standard linter packageManager framework webApi feature optimizingCompiler numeralSystem hashFunction database font distribution headerLang dataStructure musicalNotation textEncodingFormat equation wikiMarkup decompiler
@@ -714,11 +713,6 @@ abstractParadigmNode
 visualParadigmNode
  extends abstractParadigmNode
  description Is this a visual programming thing? Sometimes called "no code" or "low code"?
-abstractPermalinkNode
- abstract
- cells keywordCell permalinkCell
- extends abstractFactNode
- description Link to other entities on PLDB.
 abstractDecimalNode
  cells keywordCell numberCell
  extends abstractFactNode

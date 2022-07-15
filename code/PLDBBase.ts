@@ -270,10 +270,12 @@ class PLDBFile extends TreeBaseFile {
     return this.getParent() as PLDBBaseFolder
   }
 
+  get parsed() {
+    return this.base.parsed.getNode(this.getWord(0))
+  }
+
   get linksToOtherFiles() {
-    const programParser = this.base.grammarProgramConstructor
-    const program = new programParser(this.childrenToString())
-    return program
+    return this.parsed
       .findAllWordsWithCellType("permalinkCell")
       .map(word => word.word)
   }
@@ -447,7 +449,7 @@ class PLDBBaseFolder extends TreeBaseFolder {
     )
   }
 
-  _calcRanks(files: PLDBFile[] = this.getChildren()) {
+  private calcRanks(files: PLDBFile[] = this.getChildren()) {
     const { inboundLinks } = this
     let objects = files.map(file => {
       const id = file.id
@@ -493,13 +495,13 @@ class PLDBBaseFolder extends TreeBaseFolder {
   _inverseFeatureRanks: InverseRankings
   _getRanks(files = this.getChildren()) {
     if (!this._ranks) {
-      this._ranks = this._calcRanks(files)
+      this._ranks = this.calcRanks(files)
       this._inverseRanks = makeInverseRanks(this._ranks)
-      this._languageRanks = this._calcRanks(
+      this._languageRanks = this.calcRanks(
         files.filter(file => file.isLanguage)
       )
       this._inverseLanguageRanks = makeInverseRanks(this._languageRanks)
-      this._featureRanks = this._calcRanks(files.filter(file => file.isFeature))
+      this._featureRanks = this.calcRanks(files.filter(file => file.isFeature))
       this._inverseFeatureRanks = makeInverseRanks(this._featureRanks)
     }
     return this._ranks
@@ -519,6 +521,13 @@ class PLDBBaseFolder extends TreeBaseFolder {
         this._featuresMap.set(feature.path, feature)
       })
     return this._featuresMap
+  }
+
+  private _parsed: any
+  get parsed() {
+    if (!this._parsed)
+    this._parsed = this.toProgram()
+    return this._parsed
   }
 
   get topFeatures(): FeatureSummary[] {
@@ -588,7 +597,7 @@ class PLDBBaseFolder extends TreeBaseFolder {
 
   toObjectsForCsv() {
     // todo: sort columns by importance
-    const program = this.toProgram()
+    const program = this.parsed
     program.getTopDownArray().forEach(node => {
       if (node.includeChildrenInCsv === false) node.deleteChildren()
       if (node.getNodeTypeId() === "blankLineNode") node.destroy()

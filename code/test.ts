@@ -26,7 +26,7 @@ testTree.ensureNoErrorsInGrammar = areEqual => {
 testTree.ensureNoErrorsInBlog = areEqual => {}
 
 testTree.ensureNoErrorsInDb = areEqual => {
-	const errors = pldbBase.toProgram().getAllErrors()
+	const errors = pldbBase.parsed.getAllErrors()
 	if (errors) console.log(errors)
 	areEqual(errors.length, 0)
 }

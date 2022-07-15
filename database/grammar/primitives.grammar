@@ -24,7 +24,6 @@ errorNode
  baseNodeType errorNode
 fileNameCell
  highlightScope string
-permalinkCell
 abstractFactNode
  abstract
  cells keywordCell
@@ -41,11 +40,6 @@ abstractPermalinksNode
  catchAllCellType permalinkCell
  extends abstractFactNode
  description Links to other entities on PLDB.
-abstractPermalinkNode
- abstract
- cells keywordCell permalinkCell
- extends abstractFactNode
- description Link to other entities on PLDB.
 abstractUrlNode
  cells keywordCell urlCell
  extends abstractFactNode
