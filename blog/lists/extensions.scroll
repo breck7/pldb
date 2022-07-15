@@ -40,8 +40,8 @@ pipeTable
  Fortran|../languages/fortran.html|f for f90 f95 f03 f08 f15 f77 fpp
  CSS|../languages/css.html|css
  Lua|../languages/lua.html|lua fcgi nse p8 pd_lua rbxs wlua
- Rust|../languages/rust.html|rs rlib rsin
  COBOL|../languages/cobol.html|cbl cob cpy ccp cobol
+ Rust|../languages/rust.html|rs rlib rsin
  SAS|../languages/sas.html|sas
  Scheme|../languages/scheme.html|scm ss sch sld sls sps 
  Objective-C|../languages/objective-c.html|h m mm C
@@ -148,20 +148,20 @@ pipeTable
  FLUX|../languages/flux.html|fx flux
  Gnuplot|../languages/gnuplot.html|gp gnu gnuplot plot plt
  SuperCollider|../languages/supercollider.html|sc scd
- Squirrel|../languages/squirrel.html|nut
  Processing|../languages/processing.html|pde
  Nemerle|../languages/nemerle.html|n
+ Squirrel|../languages/squirrel.html|nut
  Ceylon|../languages/ceylon.html|ceylon ceyloncite web
  Makefile|../languages/makefile.html|mak d make mk mkfile
  Scilab|../languages/scilab.html|sci sce tst
  xBase|../languages/xbase.html|prg ch prw
- Factor|../languages/factor.html|factor
  CMake|../languages/cmake.html|cmake cmakein
  NewLisp|../languages/newlisp.html|nl lisp lsp
  Wolfram Language|../languages/wolfram.html|nb m wl
+ Factor|../languages/factor.html|factor
  LFE|../languages/lfe.html|lfe hrl
- Opa|../languages/opa.html|opa
  Stata|../languages/stata.html|do ado doh ihlp mata matah sthlp
+ Opa|../languages/opa.html|opa
  Mercury|../languages/mercury.html|m moo
  Lasso|../languages/lasso.html|lasso LassoApp las lasso8 lasso9 ldml
  API Blueprint|../languages/api-blueprint.html|apib
@@ -194,14 +194,14 @@ pipeTable
  Batchfile|../languages/batch.html|bat cmd
  Terra|../languages/terra.html|t
  Zephir|../languages/zephir.html|zep
- Q|../languages/q.html|q
  Jinja|../languages/jinja.html|jinja jinja2 mustache njk
+ Q|../languages/q.html|q
  Turing|../languages/turing.html|t tu
  NumPy|../languages/numpy.html|numpy numpyw numsc
  Ninja|../languages/ninja.html|ninja
  NetLogo|../languages/netlogo.html|nlogo nlogo3d nls
- Pug|../languages/pug.html|jade pug
  Genie|../languages/genie.html|gs
+ Pug|../languages/pug.html|jade pug
  Slim|../languages/slim-lang.html|slim
  Puppet|../languages/puppet.html|pp
  Smali|../languages/smali.html|smali
@@ -269,8 +269,8 @@ pipeTable
  Metal|../languages/metal.html|metal
  EBNF|../languages/ebnf.html|ebnf
  Xtext|../languages/xtext.html|xtext
- Euphoria|../languages/euphoria.html|e ex exw edb
  NSIS|../languages/nsis.html|nsi nsh
+ Euphoria|../languages/euphoria.html|e ex exw edb
  Thrift|../languages/thrift.html|thrift
  AspectJ|../languages/aspectj.html|aj
  Dogescript|../languages/dogescript.html|djs
@@ -293,29 +293,30 @@ pipeTable
  Gerber Image|../languages/gerber-image.html|gbr gbl gbo gbp gbs gko gpb gpt gtl gto gtp gts
  Clarion|../languages/clarion.html|clw
  Mirah|../languages/mirah.html|druby duby mirah
- Hierarchical Data Format|../languages/hdf.html|hdf h4 hdf4 he2 h5 hdf5 he5
  Click|../languages/click.html|click
+ Hierarchical Data Format|../languages/hdf.html|hdf h4 hdf4 he2 h5 hdf5 he5
  Classroom Object Oriented Language|../languages/cool.html|cl
  Rascal|../languages/rascal.html|rsc
  Parrot|../languages/parrot-vm.html|parrot
  Java Properties|../languages/java-properties.html|properties
  Nu|../languages/nu.html|nu
  Pod|../languages/pod.html|pod
- Zip file format|../languages/zip-format.html|zip
  Ch|../languages/chuck.html|ck
+ Zip file format|../languages/zip-format.html|zip
  DTrace|../languages/dtrace.html|d
  Diff|../languages/diff.html|diff patch
+ Nit|../languages/nit.html|nit
  Objective-J|../languages/objective-j.html|j sj
  QMake|../languages/qmake.html|pro pri
- Nit|../languages/nit.html|nit
  PL/pgSQL|../languages/plpgsql.html|sql
- CWEB|../languages/cweb.html|w
  Fancy|../languages/fancy.html|fy fancypack
+ CWEB|../languages/cweb.html|w
  Easybuild|../languages/easybuild.html|eb
  NCAR Command Language|../languages/ncl.html|ncl
  Stan|../languages/stan.html|stan
  P4|../languages/p4.html|p4
  Ragel|../languages/ragel.html|rl
+ Tea|../languages/tea.html|tea
  XSLT|../languages/xslt.html|xslt xsl
  Wavefront Object|../languages/wavefront-object.html|obj
  IGOR Pro|../languages/igor-pro.html|ipf
@@ -330,8 +331,8 @@ pipeTable
  JFlex|../languages/jflex.html|flex jflex
  CSON|../languages/cson.html|cson
  Shapefile|../languages/shapefile.html|shp shx dbf
- NL|../languages/nl.html|nl
  Filebench WML|../languages/filebench-wml.html|f
+ NL|../languages/nl.html|nl
  Apex|../languages/apex.html|cls
  Eagle|../languages/eagle.html|sch brd
  eC|../languages/ec.html|ec eh
@@ -352,9 +353,9 @@ pipeTable
  Ren'Py|../languages/renpy.html|rpy
  UrWeb|../languages/urweb.html|ur urs
  network embedded systems C|../languages/nesc.html|nc
+ Augmented Backus-Naur Form|../languages/abnf.html|abnf
  Golo|../languages/golo.html|golo
  Cirru|../languages/cirru.html|cirru
- Augmented Backus-Naur Form|../languages/abnf.html|abnf
  DNS Zone|../languages/zone.html|zone arpa
  PIR|../languages/parrot-internal-representation.html|pir
  ECL|../languages/ecl.html|ecl eclxml
@@ -375,16 +376,16 @@ pipeTable
  DIGITAL Command Language|../languages/digital-command-language.html|com
  Creole|../languages/creole.html|creole
  EmberScript|../languages/emberscript.html|em emberscript
+ SQLPL|../languages/sqlpl.html|sql db2
+ Parrot Assembly|../languages/parrot-assembly.html|pasm
  PIC|../languages/pic.html|pic chem
  HiveQL|../languages/hiveql.html|q
  Ezhil|../languages/ezhil.html|n
- SQLPL|../languages/sqlpl.html|sql db2
- Parrot Assembly|../languages/parrot-assembly.html|pasm
  MQL5|../languages/mql.html|mq4 mqh mq5
  Xgboost|../languages/xgboost-model.html|model
  HLSL|../languages/hlsl.html|hlsl cginc fx fxh hlsli
- Tea|../languages/tea.html|tea
  Property list|../languages/plist.html|plist
+ OpenEdge ABL|../languages/openedge-advanced-business-language.html|p cls w
  Jolie|../languages/jolie.html|ol iol
  Opal|../languages/opal.html|opal
  Vim script|../languages/vim-script.html|vim
@@ -394,7 +395,6 @@ pipeTable
  Logos|../languages/logos.html|xm x xi
  tcsh|../languages/tcsh.html|tcsh csh
  Charity|../languages/charity.html|ch
- OpenEdge ABL|../languages/openedge-advanced-business-language.html|p cls w
  Umple|../languages/umple.html|ump
  Big Red One|../languages/bro.html|bro
  Slash|../languages/slash.html|sl
@@ -410,11 +410,12 @@ pipeTable
  Objective C++|../languages/objective-cpp.html|mm
  JSON Lines|../languages/ld-json.html|ldj jsonl
  UCG|../languages/ucg.html|ucg
- beef-lang|../languages/beef-lang.html|bf
  Graph Modeling Language|../languages/graph-modeling-language.html|gml
+ beef-lang|../languages/beef-lang.html|bf
  Smiles|../languages/smiles-format.html|smi
  Inno Setup|../languages/inno-setup.html|iss
  JSONiq|../languages/jsoniq.html|jq
+ GraphIt|../languages/graph-it.html|gt
  BitBake|../languages/bitbake.html|bb
  XPages|../languages/xpages.html|xsp-config xspmetadata
  Mask|../languages/maskjs.html|mask
@@ -431,7 +432,6 @@ pipeTable
  RenderScript|../languages/renderscript.html|rs rsh
  CLAIRE|../languages/claire.html|cl
  Linux Kernel Module|../languages/linux-kernel-module.html|ko mod
- GraphIt|../languages/graph-it.html|gt
  X BitMap|../languages/x-bitmap.html|xbm
  X PixMap|../languages/x-pixmap.html|xpm pm
  SourcePawn|../languages/sourcepawn.html|sp inc sma
