@@ -193,6 +193,11 @@ class Builder extends AbstractBuilder {
       })
       .filter(file => file.extensions)
 
+    const allExtensions = new Set<string>()
+    files.forEach(file => {
+      file.extensions.split(" ").forEach(ext => allExtensions.add(ext))
+    })
+
     const sorted = lodash.sortBy(files, "rank")
 
     replaceNext(
@@ -201,16 +206,20 @@ class Builder extends AbstractBuilder {
       toScrollTable(new TreeNode(sorted), ["name", "nameLink", "extensions"])
     )
 
-    const text = page
-      .toString()
-      .replace(
-        /list of .+ file extensions/,
-        `list of ${numeral(sorted.length).format("0,0")} file extensions`
-      )
+    replaceNext(
+      page,
+      "comment autogenExtensionsMessage",
+      `aftertext
+ Here is the list of ${numeral(allExtensions.size).format(
+   "0,0"
+ )} unique file extensions across ${numeral(sorted.length).format(
+        "0,0"
+      )} languages in the PLDB.`
+    )
 
-    Disk.write(pagePath, text)
+    Disk.write(pagePath, page.toString())
   }
-  
+
   @benchmark
   buildEntitiesPage() {
     pldbBase.loadFolder()
