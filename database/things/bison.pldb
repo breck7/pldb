@@ -68,3 +68,8 @@ centralPackageRepositoryCount 0
 reference https://github.com/babyraging/yash
 lineCommentKeyword //
 multiLineCommentKeywords /* */
+features
+ hasLineComments true
+  // A comment
+ hasMultiLineComments true
+  /* A comment */

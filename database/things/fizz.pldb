@@ -25,3 +25,6 @@ example
 description fizz is an experimental language and runtime environment for the exploration of cognitive architectures and combined Machine Learning (ML) and Machine Reasoning (MR) solutions. It is based primarily on symbolic programming and fuzzy formal logic and it features a distributed (as in heterogeneous computer cluster), concurrent, asynchronous and responsive inference engine.
 website https://f1zz.org/
 lineCommentKeyword //
+features
+ hasLineComments true
+  // A comment

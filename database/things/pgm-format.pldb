@@ -19,3 +19,6 @@ description The PGM format is a lowest common denominator grayscale file format.
 reference https://en.wikipedia.org/wiki/Netpbm_format
 status active
 lineCommentKeyword #
+features
+ hasLineComments true
+  # A comment

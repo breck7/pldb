@@ -5,6 +5,8 @@ type pl
 features
  isLisp true
  hasComments true
+ hasLineComments true
+  # A comment
 
 wikipedia https://en.wikipedia.org/wiki/PicoLisp
  related lisp linux s-expressions common-lisp emacs-lisp prolog c assembly-language java

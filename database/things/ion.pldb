@@ -94,6 +94,8 @@ features
   
   (a+-b)  ( 'a' '+-' 'b' )    // Equivalent; three symbols
   (a.b;)  ( 'a' '.' 'b' ';')  // Equivalent; four symbols
+ hasLineComments true
+  // A comment
 
 example
  /* Ion supports comments. */

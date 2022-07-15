@@ -48,3 +48,6 @@ rijuRepl https://riju.codes/unison
     printLine "Hello, world!"
   
 lineCommentKeyword --
+features
+ hasLineComments true
+  -- A comment

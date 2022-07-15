@@ -86,3 +86,6 @@ description The Ωmega interpreter is styled after the Hugs Haskell Interpreter
 website http://web.cecs.pdx.edu/~sheard/Omega/index.html
 status historical
 lineCommentKeyword --
+features
+ hasLineComments true
+  -- A comment

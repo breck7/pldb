@@ -23,3 +23,6 @@ description Atomese was originally intended to be a language for knowledge repre
 website https://wiki.opencog.org/w/Atomese
 reference https://opencog.org/
 lineCommentKeyword ;
+features
+ hasLineComments true
+  ; A comment

@@ -5,6 +5,8 @@ type pl
 features
  hasMultipleInheritance true
  hasOperatorOverloading true
+ hasLineComments true
+  # A comment
 
 wikipedia https://en.wikipedia.org/wiki/Perl_6
  example

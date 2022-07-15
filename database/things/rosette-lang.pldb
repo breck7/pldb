@@ -23,3 +23,6 @@ description Rosette is a solver-aided programming language that extends Racket w
 website https://emina.github.io/rosette/
 reference https://homes.cs.washington.edu/~emina/pubs/rosette.onward13.pdf
 lineCommentKeyword ;
+features
+ hasLineComments true
+  ; A comment

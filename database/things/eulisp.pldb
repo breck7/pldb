@@ -4,6 +4,8 @@ type pl
 
 features
  hasMultipleInheritance true
+ hasLineComments true
+  ; A comment
 
 wikipedia https://en.wikipedia.org/wiki/EuLisp
  example

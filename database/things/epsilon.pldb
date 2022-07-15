@@ -33,3 +33,6 @@ description EOL is an imperative programming language for creating, querying and
 website https://www.eclipse.org/epsilon/doc/eol/
 fileExtensions eol
 lineCommentKeyword //
+features
+ hasLineComments true
+  // A comment

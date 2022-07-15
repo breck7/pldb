@@ -21,3 +21,6 @@ description The PBM format is a lowest common denominator monochrome file format
 reference http://netpbm.sourceforge.net/doc/pbm.html
 status active
 lineCommentKeyword #
+features
+ hasLineComments true
+  # A comment

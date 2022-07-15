@@ -4,6 +4,8 @@ type pl
 
 features
  hasSemanticIndentation true
+ hasLineComments true
+  # A comment
 
 wikipedia https://en.wikipedia.org/wiki/LiveScript
  related javascript haskell coffeescript f-sharp elixir

@@ -174,3 +174,6 @@ example
      "custom binary" = |c 01 f6 28 3c 40 00 00 40 40|
  }
 lineCommentKeyword //
+features
+ hasLineComments true
+  // A comment

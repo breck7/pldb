@@ -31,6 +31,8 @@ features
    | Some x => println$ x; 
    | None => println "NONE";
    endmatch;
+ hasLineComments true
+  // A comment
 
 githubRepo https://github.com/felix-lang/felix
  firstCommit 2001

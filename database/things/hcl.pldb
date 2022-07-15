@@ -59,3 +59,6 @@ rijuRepl https://riju.codes/hcl
   output = "Hello, world!"
   
 lineCommentKeyword //
+features
+ hasLineComments true
+  // A comment

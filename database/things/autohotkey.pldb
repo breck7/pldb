@@ -5,6 +5,8 @@ type pl
 features
  hasComments true
  hasCaseInsensitiveIdentifiers true
+ hasLineComments true
+  ; A comment
 
 wikipedia https://en.wikipedia.org/wiki/AutoHotkey
  example

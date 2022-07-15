@@ -242,3 +242,6 @@ antlr https://github.com/antlr/grammars-v4/tree/master/abnf
 
 centralPackageRepositoryCount 0
 lineCommentKeyword ;
+features
+ hasLineComments true
+  ; A comment

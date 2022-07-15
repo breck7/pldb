@@ -4,6 +4,8 @@ type pl
 
 features
  hasTypeInference true
+ hasLineComments true
+  -- A comment
 
 wikipedia https://en.wikipedia.org/wiki/Frege_(programming_language)
  example

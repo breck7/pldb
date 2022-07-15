@@ -4,6 +4,8 @@ type textMarkup
 
 features
  hasComments true
+ hasLineComments true
+  % A comment
 
 wikipedia https://en.wikipedia.org/wiki/LaTeX
  example

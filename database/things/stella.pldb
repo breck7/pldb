@@ -18,3 +18,6 @@ description STELLA is a strongly typed, object-oriented, Lisp-like language, des
 website https://www.isi.edu/isd/LOOM/Stella/index.html
 fileExtensions ste
 lineCommentKeyword ;
+features
+ hasLineComments true
+  ; A comment

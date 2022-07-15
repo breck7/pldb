@@ -7,6 +7,8 @@ example
 
 features
  hasSemanticIndentation true
+ hasLineComments true
+  ; A comment
 
 description A little Clojure-like LISP in JavaScript
 
