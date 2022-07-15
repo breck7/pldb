@@ -54,10 +54,10 @@ const rankSort = (objects: any[], key: string) => {
   return objects
 }
 
-const runCommand = (instance, command = "") => {
+const runCommand = (instance, command = "", param = undefined) => {
   const run = name => {
     console.log(`Running ${name}:`)
-    instance[name]()
+    instance[name](param)
   }
 
   if (instance[command + "Command"]) return run(command + "Command")

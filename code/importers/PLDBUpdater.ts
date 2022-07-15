@@ -99,4 +99,5 @@ class PLDBUpdater {
 
 export { PLDBUpdater }
 
-if (!module.parent) runCommand(new PLDBUpdater(), process.argv[2])
+if (!module.parent)
+  runCommand(new PLDBUpdater(), process.argv[2], process.argv[3])
