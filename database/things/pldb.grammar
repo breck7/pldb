@@ -403,6 +403,12 @@ projectEulerNode
  inScope projectEulerMemberCountNode
  string sourceDomain projecteuler.net
  single
+pygmentsHighlighterNode
+ extends abstractMultiwordGuidNode
+ description A link to a Pygments syntax highlighting class for this language (https://pygments.org/)
+ cruxFromId
+ string sourceDomain pygments.org
+ inScope fileExtensionsNode pygmentsFilenameNode
 quineRelayNode
  extends abstractMultiwordGuidNode
  description The Quine Relay project (https://github.com/mame/quine-relay).
@@ -721,6 +727,10 @@ stackOverflowSurveyPercentageUsingNode
  description What percentage of survey respondents report using this language?
  crux percentageUsing
  extends abstractDecimalNode
+pygmentsFilenameNode
+ crux filename
+ extends abstractFactNode
+ cells keywordCell stringCell
 referenceNode
  extends abstractFactNode
  cells keywordCell urlCell

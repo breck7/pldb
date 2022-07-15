@@ -256,6 +256,7 @@ class PLDBFile extends TreeBaseFile {
     return getJoined(this, [
       "fileExtensions",
       "githubLanguage fileExtensions",
+      "pygmentsHighlighter fileExtensions",
       "wikipedia fileExtensions"
     ])
   }
@@ -525,8 +526,7 @@ class PLDBBaseFolder extends TreeBaseFolder {
 
   private _parsed: any
   get parsed() {
-    if (!this._parsed)
-    this._parsed = this.toProgram()
+    if (!this._parsed) this._parsed = this.toProgram()
     return this._parsed
   }
 

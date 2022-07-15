@@ -521,6 +521,14 @@ ${facts.map(fact => ` - ${fact}`).join("\n")}`
         `There is a <a href="codemirror-editor.html">CodeMirror</a> <a href="https://github.com/codemirror/codemirror5/tree/master/mode/${codeMirror}">package</a> for syntax highlighting ${title}`
       )
 
+    const pygmentsHighlighter = file.get("pygmentsHighlighter")
+    if (pygmentsHighlighter)
+      facts.push(
+        `<a href="languages/pygments.html">Pygments</a> supports <a href="https://github.com/pygments/pygments/blob/master/pygments/lexers/${file.get(
+          "pygmentsHighlighter filename"
+        )}">syntax highlighting</a> for ${title}`
+      )
+
     const linguist = file.get("linguistGrammarRepo")
     if (linguist)
       facts.push(

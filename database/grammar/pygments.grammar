@@ -1,0 +1,10 @@
+pygmentsHighlighterNode
+ extends abstractMultiwordGuidNode
+ description A link to a Pygments syntax highlighting class for this language (https://pygments.org/)
+ cruxFromId
+ string sourceDomain pygments.org
+ inScope fileExtensionsNode pygmentsFilenameNode
+pygmentsFilenameNode
+ crux filename
+ extends abstractFactNode
+ cells keywordCell stringCell
