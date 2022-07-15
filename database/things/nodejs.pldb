@@ -57,3 +57,11 @@ packageRepository https://www.npmjs.com/
 goodreads
  title|year|author|goodreadsId|rating|ratings|reviews
  Nodejs Programming by Example|2012|Agus Kurniawan|22023706|3.75|12|0
+leachim6 Node.js
+ filepath n/Node.js.js
+ fileExtensions js
+ example
+  #!/usr/bin/env node
+  
+  console.log('Hello World');
+  

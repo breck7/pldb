@@ -76,3 +76,9 @@ packageRepository https://elpa.gnu.org/
 pygmentsHighlighter EmacsLisp
  filename lisp.py
  fileExtensions el
+leachim6 EmacsLisp
+ filepath e/EmacsLisp.el
+ fileExtensions el
+ example
+  (message "Hello World")
+  

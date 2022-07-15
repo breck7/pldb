@@ -10,3 +10,13 @@ centralPackageRepositoryCount 0
 pygmentsHighlighter Pawn
  filename pawn.py
  fileExtensions p pwn inc
+leachim6 Pawn
+ filepath p/Pawn.p
+ fileExtensions p
+ example
+  #include <core>
+   
+  main(){
+      print("Hello World");   
+  }
+  

@@ -59,3 +59,12 @@ goodreads
  ASP Developer's Guide [With CDROM]|2000|Greg Buczek|418681|3.64|11|0
  ASP 3.0 Programmer's Reference|1999|Richard Anderson|979592|3.64|11|0
  Web Programming with ASP and COM|1999|Matt J. Crouch|4948265|5.00|4|0
+leachim6 ASP
+ filepath a/ASP.asp
+ fileExtensions asp
+ example
+  <%@ Language= "VBScript" %>
+  <%
+      Response.Write("Hello World")
+  %>
+  

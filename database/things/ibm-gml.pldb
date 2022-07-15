@@ -24,3 +24,8 @@ hopl 6352
 antlr https://github.com/antlr/grammars-v4/tree/master/gml
 
 centralPackageRepositoryCount 0
+leachim6 GML
+ filepath g/GML.gml
+ fileExtensions gml
+ example
+  draw_text(1, 1, "Hello World");

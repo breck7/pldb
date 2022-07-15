@@ -175,3 +175,12 @@ goodreads
 pygmentsHighlighter Erlang
  filename erlang.py
  fileExtensions erl hrl es escript
+leachim6 Erlang
+ filepath e/Erlang.erl
+ fileExtensions erl
+ example
+  -module(erlang_hw).
+  -export([start/0]).
+  
+  start() ->
+    io:format("Hello World~n").

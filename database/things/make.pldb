@@ -20,3 +20,10 @@ rijuRepl https://riju.codes/make
   all:
   	@echo "Hello, world!"
   
+leachim6 Make
+ filepath m/Make.makefile
+ fileExtensions makefile
+ example
+  $(info "Hello World")
+  all:
+  

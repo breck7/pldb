@@ -41,3 +41,13 @@ creators Andrew Kelley
 pygmentsHighlighter Zig
  filename zig.py
  fileExtensions zig
+leachim6 Zig
+ filepath z/Zig.zig
+ fileExtensions zig
+ example
+  const std = @import("std");
+  
+  pub fn main() !void {
+      const stdout = std.io.getStdOut().writer();
+      try stdout.print("Hello World", .{});
+  }

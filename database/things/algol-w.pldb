@@ -45,3 +45,10 @@ centralPackageRepositoryCount 0
 goodreads
  title|year|author|goodreadsId|rating|ratings|reviews
  Structured Programming And Problem Solving With Algol W||Richard B. Kieburtz|4755689|0.0|0|0
+leachim6 ALGOL W
+ filepath a/ALGOL W.algol
+ example
+  begin
+      write( "Hello World" )
+  end.
+  

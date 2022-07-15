@@ -95,3 +95,10 @@ rijuRepl https://riju.codes/fish
 pygmentsHighlighter Fish
  filename shell.py
  fileExtensions fish load
+leachim6 Fish
+ filepath f/Fish.fish
+ fileExtensions fish
+ example
+  #!/usr/bin/env fish
+  echo "Hello World"
+  

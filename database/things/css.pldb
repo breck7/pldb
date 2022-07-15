@@ -131,3 +131,11 @@ goodreads
 pygmentsHighlighter CSS
  filename css.py
  fileExtensions css
+leachim6 CSS
+ filepath c/CSS.css
+ fileExtensions css
+ example
+  body::before {
+      content: "Hello World";
+  }
+  

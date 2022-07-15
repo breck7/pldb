@@ -149,3 +149,9 @@ features
 pygmentsHighlighter MoonScript
  filename scripting.py
  fileExtensions moon
+leachim6 Moonscript
+ filepath m/Moonscript.moon
+ fileExtensions moon
+ example
+  print 'Hello World'
+  

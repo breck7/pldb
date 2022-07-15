@@ -34,3 +34,9 @@ centralPackageRepositoryCount 0
 pygmentsHighlighter Maxima
  filename maxima.py
  fileExtensions mac max
+leachim6 Maxima
+ filepath m/Maxima.max
+ fileExtensions max
+ example
+  print("Hello World")$
+  

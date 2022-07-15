@@ -123,3 +123,10 @@ rijuRepl https://riju.codes/bash
 pygmentsHighlighter Bash
  filename shell.py
  fileExtensions sh ksh bash ebuild eclass exheres-0 exlib zsh .bashrc bashrc .bash_* bash_* zshrc .zshrc .kshrc kshrc PKGBUILD
+leachim6 Shell
+ filepath s/Shell.sh
+ fileExtensions sh
+ example
+  #!/bin/sh
+  echo "Hello World"
+  

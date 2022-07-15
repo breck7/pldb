@@ -95,3 +95,11 @@ creators Lutz Mueller
 pygmentsHighlighter NewLisp
  filename lisp.py
  fileExtensions lsp nl kif
+leachim6 NewLISP
+ filepath n/NewLISP.lsp
+ fileExtensions lsp
+ example
+  #!/usr/bin/newlisp
+  (print "Hello World\n")
+  (exit)
+  

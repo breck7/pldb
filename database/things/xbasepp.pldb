@@ -93,3 +93,10 @@ features
   // A comment
  hasComments true
   // A comment
+leachim6 XBase++
+ filepath x/XBase++.prg
+ fileExtensions prg
+ example
+  func Main()
+      Qout("Hello World")
+  return 1

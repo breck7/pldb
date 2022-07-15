@@ -85,3 +85,13 @@ goodreads
  title|year|author|goodreadsId|rating|ratings|reviews
  Advanced Apple Debugging & Reverse Engineering: Exploring Apple code through LLDB, Python and DTrace||Derek Selander|56926999|5.00|2|0
  Advanced Apple Debugging & Reverse Engineering Second Edition: Exploring Apple code through LLDB, Python and DTrace||raywenderlich.com Team|60459566|0.0|0|0
+leachim6 DTrace
+ filepath d/DTrace.d
+ fileExtensions d
+ example
+  #!/usr/sbin/dtrace -qs
+  BEGIN {
+  	printf("Hello World");
+  	exit(0);
+  }
+  

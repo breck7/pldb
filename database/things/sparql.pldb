@@ -62,3 +62,11 @@ centralPackageRepositoryCount 0
 pygmentsHighlighter SPARQL
  filename rdf.py
  fileExtensions rq sparql
+leachim6 SparQL
+ filepath s/SparQL.sparql
+ fileExtensions sparql
+ example
+  SELECT ?h WHERE { 
+    VALUES ?h { "Hello World" } 
+  }
+  

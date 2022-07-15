@@ -22,3 +22,9 @@ hopl 1817
 
 visualParadigm false
 centralPackageRepositoryCount 0
+leachim6 Amiga-E
+ filepath a/Amiga-E.amiga-e
+ fileExtensions amiga-e
+ example
+  PROC main() IS WriteF('Hello World\n')
+  

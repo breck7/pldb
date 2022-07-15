@@ -110,3 +110,11 @@ lineCommentKeyword -#
 pygmentsHighlighter Haml
  filename html.py
  fileExtensions haml
+leachim6 Haml
+ filepath h/Haml.haml
+ fileExtensions haml
+ example
+  %html
+    %title Hello World
+    %body
+      %h1 Hello World 

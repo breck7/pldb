@@ -10,3 +10,11 @@ hackerNewsDiscussions
 pygmentsHighlighter ParaSail
  filename parasail.py
  fileExtensions psi psl
+leachim6 ParaSail
+ filepath p/ParaSail.psi
+ fileExtensions psi
+ example
+  func Hello_World(var IO) is
+      IO.Println("Hello World");
+  end func Hello_World;
+  

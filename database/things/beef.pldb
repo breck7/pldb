@@ -9,3 +9,20 @@ wordRank 5584
 hopl 3356
 
 centralPackageRepositoryCount 0
+leachim6 Beef
+ filepath b/Beef.bf
+ fileExtensions bf
+ example
+  using System;
+  
+  namespace HelloWorld
+  {
+      class Program
+      {
+          static void Main()
+          {
+              Console.WriteLine("Hello World");
+          }
+      }
+  }
+  

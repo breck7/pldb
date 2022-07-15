@@ -72,3 +72,11 @@ features
   // A comment
  hasComments true
   // A comment
+leachim6 XBase
+ filepath x/XBase.dbf
+ fileExtensions dbf
+ example
+  do while .t.
+   ? 'Hello World'
+  enddo
+  

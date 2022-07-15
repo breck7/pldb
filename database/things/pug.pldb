@@ -42,3 +42,13 @@ creators Tj Holowaychuk
 pygmentsHighlighter Pug
  filename html.py
  fileExtensions pug jade
+leachim6 Pug
+ filepath p/Pug.pug
+ fileExtensions pug
+ example
+  doctype html
+  html
+      head
+         title Hello World
+      body
+         h1 Hello World

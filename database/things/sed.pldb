@@ -159,3 +159,12 @@ rijuRepl https://riju.codes/sed
 pygmentsHighlighter Sed
  filename textedit.py
  fileExtensions sed [gs]sed
+leachim6 Sed
+ filepath s/Sed.sed
+ fileExtensions sed
+ example
+  #!/usr/bin/sed -f sed.sed
+  c\
+  Hello World
+  q
+  

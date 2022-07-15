@@ -206,3 +206,9 @@ rijuRepl https://riju.codes/red
 pygmentsHighlighter Red
  filename rebol.py
  fileExtensions red reds
+leachim6 Red
+ filepath r/Red.red
+ fileExtensions red
+ example
+  Red [Needs: 'View]
+  view [text "Hello World"] 

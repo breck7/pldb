@@ -105,3 +105,14 @@ features
 pygmentsHighlighter LSL
  filename scripting.py
  fileExtensions lsl
+leachim6 LSL
+ filepath l/LSL.lsl
+ fileExtensions lsl
+ example
+  default
+  {
+      state_entry()
+      {
+          llSay(0, "Hello World");
+      }
+  }

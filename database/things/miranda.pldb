@@ -39,3 +39,10 @@ rijuRepl https://riju.codes/miranda
  website https://www.cs.kent.ac.uk/people/staff/dat/miranda/
  githubRepo https://www.cs.kent.ac.uk/people/staff/dat/miranda/downloads/
 creators David Turner
+leachim6 Miranda
+ filepath m/Miranda.m
+ fileExtensions m
+ example
+  main :: [sys_message]
+  main = [Stdout "Hello World"]
+  

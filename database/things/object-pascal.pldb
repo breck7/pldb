@@ -45,3 +45,26 @@ hopl 1170
 
 visualParadigm false
 centralPackageRepositoryCount 0
+leachim6 Object Pascal
+ filepath o/Object Pascal.pp
+ example
+  program ObjectPascalExample;
+  
+  type
+     THelloWorld = class
+        procedure Put;
+     end;
+  
+  procedure THelloWorld.Put;
+  begin
+     Writeln('Hello World');
+  end;
+  
+  var
+     HelloWorld: THelloWorld;
+  
+  begin
+     HelloWorld := THelloWorld.Create;
+     HelloWorld.Put;
+     HelloWorld.Free;
+  end.

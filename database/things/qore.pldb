@@ -21,3 +21,21 @@ githubRepo https://github.com/qorelanguage/qore
 website http://qore.org/
 fileExtensions q qm qtest
 creators David Nichols
+leachim6 Qore
+ filepath q/Qore.q
+ fileExtensions q
+ example
+  #!/usr/bin/env qore
+  %exec-class HelloWorld
+  class HelloWorld
+  {
+      constructor()
+      {
+  	    background $.say("Hello World");
+      }
+      private say($arg)
+      {
+  	    printf("%s\n", $arg);
+      }
+  }
+  

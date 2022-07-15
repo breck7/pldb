@@ -190,3 +190,11 @@ goodreads
 pygmentsHighlighter Scala
  filename jvm.py
  fileExtensions scala
+leachim6 Scala
+ filepath s/Scala.scala
+ fileExtensions scala
+ example
+  object HelloWorld extends App {
+    println("Hello World")
+  }
+  

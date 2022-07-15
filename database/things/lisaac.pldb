@@ -21,3 +21,23 @@ rijuRepl https://riju.codes/lisaac
       "Hello, world!\n".print;
     );
   
+leachim6 Lisaac
+ filepath l/Lisaac.li
+ fileExtensions li
+ example
+  // Hello World in Lisaac
+  
+  Section Header
+  	+ name		:= HELLO_WORLD;
+  
+  Section Inherit
+  
+  	- parent_object:OBJECT := OBJECT;
+  
+  Section Public
+  
+  	- main <-
+  	(
+  		"Hello World !\n".print;
+  	);
+  

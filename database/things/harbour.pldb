@@ -95,3 +95,13 @@ features
   // A comment
  hasComments true
   // A comment
+leachim6 Harbour
+ filepath h/Harbour.prg
+ fileExtensions prg
+ example
+  PROCEDURE Main()
+  
+     ? "Hello World"
+  
+     RETURN
+  

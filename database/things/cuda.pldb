@@ -146,3 +146,18 @@ goodreads
 pygmentsHighlighter CUDA
  filename c_like.py
  fileExtensions cu cuh
+leachim6 Cuda
+ filepath c/Cuda.cu
+ fileExtensions cu
+ example
+  #include <stdio.h>
+  
+  __global__ void hello_world(){
+      printf("Hello World\n");
+  }
+  
+  int main() {
+      hello_world<<<1,1>>>();
+      return 0;
+  }
+  

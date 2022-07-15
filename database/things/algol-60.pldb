@@ -52,3 +52,13 @@ goodreads
  Course In Programming Algol 60 (Science Paperbacks)||Michael Wells|9980602|0.0|0|0
  Handbook and Guide for Comparing and Selecting Computer Languages: Basic, FORTRAN, PASCAL, COBOL, PL/1, APL, ALGOL-60, C|1985|James R. Ogden|3280647|0.0|0|0
  Compilers by Programming Language: ALGOL 60 Compilers, Assemblers, Basic Compilers, C++ Compilers, Cfml Compilers, C Compilers|2010|Books Group|15842336|0.0|0|0
+leachim6 ALGOL 60
+ filepath a/ALGOL 60.algol60
+ example
+  BEGIN
+    FILE F(KIND=REMOTE);
+    EBCDIC ARRAY E[0:11];
+    REPLACE E BY "HELLO WORLD";
+    WRITE(F, *, E);
+  END.
+  

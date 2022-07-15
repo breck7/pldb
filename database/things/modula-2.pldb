@@ -399,3 +399,16 @@ gdbSupport true
 pygmentsHighlighter Modula-2
  filename modula2.py
  fileExtensions def mod
+leachim6 Modula 2
+ filepath m/Modula 2.mod
+ example
+  MODULE HelloWorld;
+  
+  FROM Terminal2 IMPORT WriteString, WriteLn;
+  
+  BEGIN
+  
+      WriteString("Hello World");
+      WriteLn;
+      
+  END HelloWorld.

@@ -104,3 +104,9 @@ rijuRepl https://riju.codes/scheme
 pygmentsHighlighter Scheme
  filename lisp.py
  fileExtensions scm ss
+leachim6 Scheme
+ filepath s/Scheme.scm
+ fileExtensions scm
+ example
+  (display "Hello World") (newline)
+  

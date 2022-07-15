@@ -24,3 +24,8 @@ features
   // A comment
  hasComments true
   // A comment
+leachim6 ReScript
+ filepath r/ReScript.res
+ fileExtensions res
+ example
+  Js.log("Hello World")

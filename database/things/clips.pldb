@@ -358,3 +358,16 @@ features
   ; A comment
  hasComments true
   ; A comment
+leachim6 CLIPS
+ filepath c/CLIPS.clips
+ fileExtensions clips
+ example
+  (defrule hw
+      (f ?x)
+  =>
+      (printout t ?x crlf))
+  
+  (assert (f "Hello World"))
+  
+  (run)
+  

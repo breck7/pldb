@@ -264,3 +264,13 @@ multiLineCommentKeywords /* */
 pygmentsHighlighter C
  filename c_cpp.py
  fileExtensions c h idc x[bp]m
+leachim6 C∗
+ filepath c/C∗
+ example
+  #include <stdio.h>
+  
+  main()
+  {
+      printf("Hello World\n");
+  }
+  

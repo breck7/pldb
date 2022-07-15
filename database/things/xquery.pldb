@@ -140,3 +140,10 @@ corporateDevelopers W3C
 pygmentsHighlighter XQuery
  filename webmisc.py
  fileExtensions xqy xquery xq xql xqm
+leachim6 XQuery
+ filepath x/XQuery.xq
+ fileExtensions xq
+ example
+  let $hello := "Hello World"
+  return $hello
+  

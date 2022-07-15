@@ -189,3 +189,11 @@ rosettaCode PureBasic
 centralPackageRepositoryCount 0
 corporateDevelopers Fantaisie Software
 lineCommentKeyword ;
+leachim6 PureBasic
+ filepath p/PureBasic.pb
+ fileExtensions pb
+ example
+  If OpenConsole()
+    PrintN("Hello World")
+  EndIf
+  

@@ -87,3 +87,12 @@ rijuRepl https://riju.codes/pike
 pygmentsHighlighter Pike
  filename c_like.py
  fileExtensions pike pmod
+leachim6 Pike
+ filepath p/Pike.pike
+ fileExtensions pike
+ example
+  int main() {
+      write("Hello World\n");
+      return 0;
+  }
+  

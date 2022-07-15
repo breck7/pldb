@@ -141,3 +141,10 @@ creators José Valim
 pygmentsHighlighter Elixir
  filename erlang.py
  fileExtensions ex eex exs leex
+leachim6 Elixir
+ filepath e/Elixir.exs
+ fileExtensions exs
+ example
+  #!/usr/bin/env elixir
+  IO.puts "Hello World"
+  

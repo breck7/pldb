@@ -14,3 +14,14 @@ wikipedia https://en.wikipedia.org/wiki/CobolScript
 
 status historical
 centralPackageRepositoryCount 0
+leachim6 CobolScript
+ filepath c/CobolScript.cbl
+ fileExtensions cbl
+ example
+  DISPLAY `Content-type: text/html `.
+  DISPLAY LINEFEED.
+  DISPLAY `<HTML><BODY>`.
+  DISPLAY `<CENTER>Hello World</CENTER>`.
+  DISPLAY `</BODY></HTML>`.
+  GOBACK.
+  

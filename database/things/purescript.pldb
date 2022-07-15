@@ -109,3 +109,13 @@ languageServerProtocolProject https://github.com/nwolverson/purescript-language-
 jupyterKernel https://github.com/Eoksni/ipurescript
 packageRepository https://pursuit.purescript.org/
 multiLineCommentKeywords {- -}
+leachim6 PureScript
+ filepath p/PureScript.purs
+ fileExtensions purs
+ example
+  module Main where
+  
+  import Debug.Trace
+  
+  main = trace "Hello World"
+  

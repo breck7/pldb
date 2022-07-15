@@ -88,3 +88,14 @@ features
   // A comment
  hasComments true
   // A comment
+leachim6 BCPL
+ filepath b/BCPL.bcl
+ fileExtensions bcl
+ example
+  GET "LIBHDR"
+  
+  LET START() BE
+  $(
+    WRITES("Hello World*N")
+  $)
+  

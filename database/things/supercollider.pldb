@@ -75,3 +75,9 @@ features
 pygmentsHighlighter SuperCollider
  filename supercollider.py
  fileExtensions sc scd
+leachim6 SuperCollider
+ filepath s/SuperCollider.sc
+ fileExtensions sc
+ example
+  "Hello World".postln;
+  

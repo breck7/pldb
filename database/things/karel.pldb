@@ -40,3 +40,12 @@ hopl 958
 
 centralPackageRepositoryCount 0
 creators Richard E. Pattis
+leachim6 Karel
+ filepath k/Karel.kl
+ fileExtensions kl
+ example
+  PROGRAM hello_world
+  BEGIN
+    WRITE("Hello World", CR)
+  END hello_world
+  

@@ -18,3 +18,9 @@ fileType text
 hopl 1690
 
 centralPackageRepositoryCount 0
+leachim6 ISLISP
+ filepath i/ISLISP.lisp
+ fileExtensions lisp
+ example
+  (format (standard-output) "Hello World")
+  

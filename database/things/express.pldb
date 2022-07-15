@@ -28,3 +28,15 @@ wikipedia https://en.wikipedia.org/wiki/EXPRESS_(data_modeling_language)
  pageId 8075592
  dailyPageViews 168
  appeared 1993
+
+leachim6 Express
+ filepath e/Express.js
+ fileExtensions js
+ example
+  const express = require('express')
+  const app = express()
+  
+  app.get('/', (_, res) => res.send("Hello World"))
+  
+  app.listen(8080)
+  

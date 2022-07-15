@@ -69,3 +69,14 @@ goodreads
  LISP Lore: A Guide to Programming the LISP Machine|1986|Hank Bromley|3724482|4.00|5|0
  LISP 1.5 Programmer's Manual|1962|John McCarthy|4019912|4.43|28|2
  Lisp, Lore, and Logic: An Algebraic View of LISP Programming, Foundations, and Applications|1990|W. Richard Stark|812519|3.50|4|0
+leachim6 Lisp
+ filepath l/Lisp.lsp
+ fileExtensions lsp
+ example
+  ; LISP
+  (DEFUN hello ()
+    (PRINT (LIST 'HELLO 'WORLD))
+  )
+  
+  (hello)
+  

@@ -119,3 +119,19 @@ goodreads
 pygmentsHighlighter HTML
  filename html.py
  fileExtensions html htm xhtml xslt
+leachim6 HTML
+ filepath h/HTML.html
+ fileExtensions html
+ example
+  <!DOCTYPE html>
+  <html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hello World</title>
+  </head>
+  <body>
+    <h1>Hello World</h1>
+  </body>
+  </html>
+  

@@ -18,3 +18,11 @@ hopl 1317
 
 centralPackageRepositoryCount 0
 creators Chris Gray
+leachim6 Draco
+ filepath d/Draco.d
+ fileExtensions d
+ example
+  proc main()void:
+      writeln("Hello World");
+  corp;
+  

@@ -256,3 +256,15 @@ githubCopilotOptimized
 pygmentsHighlighter Go
  filename go.py
  fileExtensions go
+leachim6 Go
+ filepath g/Go.go
+ fileExtensions go
+ example
+  package main
+  
+  import "fmt"
+  
+  func main() {
+    fmt.Println("Hello World")
+  }
+  

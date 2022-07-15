@@ -59,3 +59,9 @@ features
   # A comment
  hasComments true
   # A comment
+leachim6 Starlark
+ filepath s/Starlark.star
+ fileExtensions star
+ example
+  print("Hello World")
+  

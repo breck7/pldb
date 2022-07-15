@@ -77,3 +77,12 @@ wikipedia https://en.wikipedia.org/wiki/Blitz3D
 
 status historical
 centralPackageRepositoryCount 0
+leachim6 Blitz3D
+ filepath b/Blitz3D.bb
+ fileExtensions bb
+ example
+  ;Blitz3D Hello World demo by MANIAK_dobrii
+  Print "Hello World"
+  WaitKey
+  End
+  

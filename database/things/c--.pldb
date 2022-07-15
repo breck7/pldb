@@ -21,3 +21,19 @@ hopl 3733
 
 centralPackageRepositoryCount 0
 creators Simon Peyton Jones
+leachim6 C--
+ filepath c/C--
+ example
+  target byteorder little;
+  import puts;
+  export main;
+  
+  section "data"{
+      s:bits8[] "Hello World\0";
+  }
+  
+  foreign "C" main(){
+      foreign "C" puts("address"s);
+      foreign "C" return(0);
+  }
+  

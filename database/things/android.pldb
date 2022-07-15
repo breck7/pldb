@@ -31,3 +31,24 @@ goodreads
  title|year|author|goodreadsId|rating|ratings|reviews
  Android Application Development For Dummies|2010|Donn Felker|13607110|3.66|130|14
  Android Programming: The Big Nerd Ranch Guide|2012|Brian Hardy|17024214|4.29|405|35
+leachim6 Android
+ filepath a/Android.java
+ fileExtensions java
+ example
+  package com.example.helloworld;
+  
+  import android.app.Activity;
+  import android.os.Bundle;
+  import android.widget.TextView;
+  
+  public class HelloWorld extends Activity {
+  
+     @Override
+     public void onCreate(Bundle savedInstanceState) {
+         super.onCreate(savedInstanceState);
+         TextView tv = new TextView(this);
+         tv.setText("Hello World");
+         setContentView(tv);
+     }
+  }
+  

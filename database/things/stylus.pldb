@@ -75,3 +75,9 @@ codeMirror stylus
 
 centralPackageRepositoryCount 0
 creators TJ Holowaychuk
+leachim6 Stylus
+ filepath s/Stylus.styl
+ fileExtensions styl
+ example
+  body::before
+  	content: "Hello World" 

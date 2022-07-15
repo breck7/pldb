@@ -110,3 +110,11 @@ goodreads
 pygmentsHighlighter Common Lisp
  filename lisp.py
  fileExtensions cl lisp
+leachim6 Common Lisp
+ filepath c/Common Lisp.lisp
+ example
+  (defun hello-world ()
+    (format t "Hello World~%"))
+  
+  (hello-world)
+  

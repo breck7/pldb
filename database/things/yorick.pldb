@@ -44,3 +44,10 @@ rijuRepl https://riju.codes/yorick
  example
   write, "Hello, world!"
   
+leachim6 Yorick
+ filepath y/Yorick.i
+ fileExtensions i
+ example
+  #!/usr/bin/yorick -batch
+  print, "Hello World";
+  

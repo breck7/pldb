@@ -28,3 +28,12 @@ features
   // A comment
  hasComments true
   // A comment
+leachim6 NXC
+ filepath n/NXC.nxc
+ fileExtensions nxc
+ example
+  task main()
+  {
+      TextOut(0, LCD_LINE1, "Hello World");
+  }
+  

@@ -141,3 +141,14 @@ goodreads
 pygmentsHighlighter COBOL
  filename business.py
  fileExtensions cob COB cpy CPY
+leachim6 COBOL
+ filepath c/COBOL.cbl
+ fileExtensions cbl
+ example
+         identification division.
+         program-id. cobol.
+         procedure division.
+         main.
+             display 'Hello World.' end-display.
+             stop run.
+  

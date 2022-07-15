@@ -224,3 +224,10 @@ goodreads
 pygmentsHighlighter Awk
  filename textedit.py
  fileExtensions awk
+leachim6 AWK
+ filepath a/AWK.awk
+ fileExtensions awk
+ example
+  # awk -f awk.awk
+  BEGIN { print "Hello World" }
+  

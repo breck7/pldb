@@ -20,3 +20,10 @@ wikipedia https://en.wikipedia.org/wiki/Google_Apps_Script
 
 status historical
 centralPackageRepositoryCount 0
+leachim6 Google Apps Script
+ filepath g/Google Apps Script.gs
+ example
+  function helloWorld() {
+    Logger.log("Hello World");
+  }
+  

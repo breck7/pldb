@@ -35,3 +35,16 @@ tiobe Oxygene
 rosettaCode Oxygene
 
 centralPackageRepositoryCount 0
+leachim6 Oxygene
+ filepath o/Oxygene.pas
+ fileExtensions pas
+ example
+  implementation
+  
+  class method ConsoleApp.Main;
+  begin
+    Console.WriteLine('Hello World');
+  end;
+  
+  end.
+  

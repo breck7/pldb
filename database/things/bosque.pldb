@@ -13,3 +13,12 @@ githubRepo https://github.com/Microsoft/BosqueLanguage
  issues 4
 
 status active
+leachim6 Bosque
+ filepath b/Bosque.bsq
+ fileExtensions bsq
+ example
+  namespace NSMain;
+  
+  entrypoint function main(): String {  
+      return "Hello World";
+  }

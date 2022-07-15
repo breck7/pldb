@@ -78,3 +78,9 @@ creators David Callahan and Hans Zima and Brad Chamberlain and John Plevyak
 pygmentsHighlighter Chapel
  filename chapel.py
  fileExtensions chpl
+leachim6 Chapel
+ filepath c/Chapel.chpl
+ fileExtensions chpl
+ example
+  writeln("Hello World");
+  

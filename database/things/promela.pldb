@@ -7,3 +7,11 @@ rijuRepl https://riju.codes/promela
     printf("Hello, world!\n");
   }
   
+leachim6 Promela
+ filepath p/Promela.pml
+ fileExtensions pml
+ example
+  active proctype main(){
+    printf("Hello World")
+  }
+  

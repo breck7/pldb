@@ -22,3 +22,12 @@ tryItOnline dyvil
 fileType text
 isOpenSource true
 centralPackageRepositoryCount 0
+leachim6 Dyvil
+ filepath d/Dyvil.dyv
+ fileExtensions dyv
+ example
+  class Dyvil
+  {
+  	static func main(args: [String]) = print 'Hello World'
+  }
+  

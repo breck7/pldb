@@ -219,3 +219,15 @@ rijuRepl https://riju.codes/ada
 pygmentsHighlighter Ada
  filename ada.py
  fileExtensions adb ads ada
+leachim6 Ada
+ filepath a/Ada.adb
+ fileExtensions adb
+ example
+  with Ada.Text_IO;
+  
+  procedure Hello_World is
+     use Ada.Text_IO;
+  begin
+     Put_line ("Hello World");
+  end Hello_World;
+  

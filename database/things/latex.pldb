@@ -66,3 +66,12 @@ rosettaCode LaTeX
 languageServerProtocolProject https://github.com/efoerster/texlab
 centralPackageRepositoryCount 0
 lineCommentKeyword %
+leachim6 LaTeX
+ filepath l/LaTeX.tex
+ fileExtensions tex
+ example
+  \documentclass{article}
+  \begin{document}
+  Hello World
+  \end{document}
+  

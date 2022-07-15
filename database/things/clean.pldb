@@ -90,3 +90,11 @@ lineCommentKeyword //
 pygmentsHighlighter Clean
  filename clean.py
  fileExtensions icl dcl
+leachim6 Clean
+ filepath c/Clean.icl
+ fileExtensions icl
+ example
+  module hello
+  Start :: {#Char}
+  Start = "Hello World"
+  

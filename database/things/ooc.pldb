@@ -34,3 +34,12 @@ creators Amos Wenger
 pygmentsHighlighter Ooc
  filename ooc.py
  fileExtensions ooc
+leachim6 Ooc
+ filepath o/Ooc.ooc
+ fileExtensions ooc
+ example
+  main: func {
+      "Hello World" println()
+  }
+  
+  

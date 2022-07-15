@@ -95,3 +95,12 @@ languageServerProtocolProject https://marketplace.visualstudio.com/items?itemNam
  writtenIn typescript
 centralPackageRepositoryCount 0
 lineCommentKeyword //
+leachim6 Apex
+ filepath a/Apex.cls
+ fileExtensions cls
+ example
+  global with sharing class HelloWorld {
+    global static void main() {
+      System.debug('Hello World');
+    }
+  }

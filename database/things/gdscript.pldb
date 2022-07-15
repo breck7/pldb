@@ -109,3 +109,12 @@ features
 pygmentsHighlighter GDScript
  filename gdscript.py
  fileExtensions gd
+leachim6 GDScript
+ filepath g/GDScript.gd
+ fileExtensions gd
+ example
+  extends Node2D
+  
+  func _ready():
+  	print("Hello World")
+  

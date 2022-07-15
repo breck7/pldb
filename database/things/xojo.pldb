@@ -65,3 +65,13 @@ centralPackageRepositoryCount 0
 lineCommentKeyword //
 
 aka REALbasic
+
+leachim6 RealBasic
+ filepath r/RealBasic.realbasic
+ fileExtensions realbasic
+ example
+  Function Run(args() as String) As Integer
+    Print "Hello World"
+    Quit
+  End Function
+  

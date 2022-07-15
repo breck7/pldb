@@ -23,3 +23,17 @@ hopl 3718
 
 corporateDevelopers Microsoft
 centralPackageRepositoryCount 0
+leachim6 J#
+ filepath j/J#.jsl
+ fileExtensions jsl
+ example
+  package HelloWorld;
+  
+  public class HelloWorld
+  {
+  	public static void main(String[] args)
+  	{
+  		System.Console.Write("Hello World");
+  	}
+  }
+  

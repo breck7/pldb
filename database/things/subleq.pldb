@@ -33,3 +33,16 @@ rijuRepl https://riju.codes/subleq
   
 appeared 2009
 creators David Roberts
+leachim6 SubleQ
+ filepath s/SubleQ.sq
+ fileExtensions sq
+ example
+  loop:       hello (-1)
+              minusOne loop
+              minusOne checkEnd+1
+  checkEnd:   Z hello (-1) 
+              Z Z loop
+  				
+  . minusOne: -1
+  . hello: "Hello World\n" Z: 0
+  

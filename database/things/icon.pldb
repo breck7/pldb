@@ -85,3 +85,10 @@ rijuRepl https://riju.codes/icon
 pygmentsHighlighter Icon
  filename unicon.py
  fileExtensions icon ICON
+leachim6 Icon
+ filepath i/Icon.icn
+ fileExtensions icn
+ example
+  procedure main()
+      write("Hello World");
+  end

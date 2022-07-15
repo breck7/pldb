@@ -107,3 +107,14 @@ features
 pygmentsHighlighter Fantom
  filename fantom.py
  fileExtensions fan
+leachim6 Fantom
+ filepath f/Fantom.fan
+ fileExtensions fan
+ example
+  // Hello from Fantom!
+  class HelloWorld {
+    static Void main() {
+      echo("Hello World")
+    }
+  }
+  

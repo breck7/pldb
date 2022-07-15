@@ -119,3 +119,10 @@ goodreads
  ColdFusion MX for Dummies|2002|John Paul Ashenfelter|614391|4.25|4|0
  Coldfusion 4.5 for Dummies [With CDROM]|2000|Alexis D. Gutzman|1731069|3.00|1|0
  Coldfusion 9 Developer Tutorial|2010|John Farrar|14182329|0.0|0|0
+leachim6 ColdFusion
+ filepath c/ColdFusion.cfm
+ fileExtensions cfm
+ example
+  <cfset message = "Hello World">
+  <cfoutput> #message#</cfoutput>
+  

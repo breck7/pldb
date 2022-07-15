@@ -114,3 +114,8 @@ features
 pygmentsHighlighter AspectJ
  filename jvm.py
  fileExtensions aj
+leachim6 Aspectj
+ filepath a/Aspectj.aj
+ fileExtensions aj
+ example
+  System.out.println("Hello World");

@@ -54,3 +54,13 @@ features
 pygmentsHighlighter Vala
  filename c_like.py
  fileExtensions vala vapi
+leachim6 Vala
+ filepath v/Vala.vala
+ fileExtensions vala
+ example
+  static void main (string[] args)
+  {
+  	stdout.printf ("Hello World\n");
+  }
+  
+  

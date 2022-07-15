@@ -102,3 +102,12 @@ goodreads
 pygmentsHighlighter Prolog
  filename prolog.py
  fileExtensions ecl prolog pro pl
+leachim6 Prolog
+ filepath p/Prolog.pro
+ fileExtensions pro
+ example
+  helloWorld :-
+    write('Hello World').
+  
+  :- helloWorld.
+  

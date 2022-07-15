@@ -21,3 +21,13 @@ isOpenSource true
 rosettaCode WML
 
 centralPackageRepositoryCount 0
+leachim6 WML
+ filepath w/WML.wml
+ fileExtensions wml
+ example
+  #define HELLOWORLD
+    [message]
+      speaker="narrator"
+      message=_"Hello World"
+    [/message]
+  #enddef

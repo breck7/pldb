@@ -62,3 +62,9 @@ lineCommentKeyword //
 pygmentsHighlighter Scilab
  filename matlab.py
  fileExtensions sci sce tst
+leachim6 SCILab
+ filepath s/SCILab.scilab
+ fileExtensions scilab
+ example
+  disp("Hello World")
+  

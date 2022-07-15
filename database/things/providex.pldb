@@ -35,3 +35,11 @@ status historical
 fileType text
 centralPackageRepositoryCount 0
 creators Michael F. King
+leachim6 ProvideX
+ filepath p/ProvideX.vim
+ fileExtensions vim
+ example
+  begin  
+     print "Hello World" 
+  end
+  

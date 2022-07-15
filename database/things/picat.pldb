@@ -18,3 +18,10 @@ example
 website http://www.picat-lang.org/
 reference http://www.hakank.org/picat/
 related prolog
+leachim6 PiCat
+ filepath p/PiCat.pi
+ fileExtensions pi
+ example
+  main =>
+    println("Hello World").
+  

@@ -57,3 +57,10 @@ tiobe MOO
 rosettaCode MOO
 
 centralPackageRepositoryCount 0
+leachim6 Moo
+ filepath m/Moo.moo
+ fileExtensions moo
+ example
+  @program hello:run
+  player:tell("Hello World");
+  .

@@ -8,3 +8,19 @@ wikipedia https://en.wikipedia.org/wiki/Flutter_(software)
  pageId 54699721
  dailyPageViews 534
  appeared 2017
+
+leachim6 Flutter
+ filepath f/Flutter.dart
+ fileExtensions dart
+ example
+  import 'package:flutter/widgets.dart';
+  
+  void main() {
+    runApp(
+      Text(
+        'Hello World',
+        textDirection: TextDirection.ltr,
+      ),
+    );
+  }
+  

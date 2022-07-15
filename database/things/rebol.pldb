@@ -85,3 +85,9 @@ goodreads
 pygmentsHighlighter REBOL
  filename rebol.py
  fileExtensions r r3 reb
+leachim6 Rebol
+ filepath r/Rebol.reb
+ fileExtensions reb
+ example
+  print "Hello World"
+  

@@ -54,3 +54,13 @@ centralPackageRepositoryCount 0
 goodreads
  title|year|author|goodreadsId|rating|ratings|reviews
  IBM Rational Business Developer with EGL|2008|Ben Margolis|6568310|2.00|2|0
+leachim6 Egl
+ filepath e/Egl.egl
+ fileExtensions egl
+ example
+  program HelloWorld
+      function main()
+          SysLib.writeStdout("Hello World");
+      end
+  end
+  

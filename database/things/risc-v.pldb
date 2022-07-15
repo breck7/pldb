@@ -33,3 +33,16 @@ rijuRepl https://riju.codes/riscv
   message:
   	.string "Hello, world!\n"
   
+leachim6 RISC V
+ filepath r/RISC V.s
+ example
+  .data
+  hello_world: .asciiz "Hello World"
+  
+  .text
+  main:   la      a1, hello_world
+          li      a0, 4
+          ecall
+  
+          li      a0, 10
+          ecall

@@ -26,3 +26,11 @@ tiobe Pure Data
 hopl 6444
 
 centralPackageRepositoryCount 0
+leachim6 Pure Data
+ filepath p/Pure Data.pd
+ example
+  #N canvas 1029 457 450 300 10;
+  #X obj 127 132 print;
+  #X msg 127 86 Hello World;
+  #X connect 1 0 0 0;
+  

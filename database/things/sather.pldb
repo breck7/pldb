@@ -52,3 +52,15 @@ rosettaCode Sather
 visualParadigm false
 centralPackageRepositoryCount 0
 lineCommentKeyword --
+leachim6 Sather
+ filepath s/Sather.sa
+ fileExtensions sa
+ example
+  class MAIN is
+     main is 
+        loop 
+           #OUT + "Hello World\n" 
+        end 
+     end
+  end
+  

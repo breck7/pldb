@@ -40,3 +40,19 @@ centralPackageRepositoryCount 0
 goodreads
  title|year|author|goodreadsId|rating|ratings|reviews
  A System Engineer's Guide to Host Configuration and Maintenance using Cfengine (SAGE Short Topics in System Administration, #16)|2007|Mark  Burgess|15031383|0.0|0|0
+leachim6 CFEngine
+ filepath c/CFEngine.cf
+ fileExtensions cf
+ example
+  body common control
+  {
+    bundlesequence => { "run" };
+  }
+  
+  bundle agent run
+  {
+    reports:
+      cfengine::
+        "Hello World";
+  }
+  

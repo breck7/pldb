@@ -53,3 +53,12 @@ features
   // A comment
  hasComments true
   // A comment
+leachim6 Beta
+ filepath b/Beta.bet
+ fileExtensions bet
+ example
+  ORIGIN '~beta/basiclib/betaenv'
+  -- program: Descriptor --
+  (* Hello World in BETA *)
+  (# do 'Hello World' -> putLine #)
+  

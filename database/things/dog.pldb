@@ -2,3 +2,19 @@ title The Dog Programming Language
 type pl
 website https://www.media.mit.edu/projects/the-dog-programming-language/overview/
 reference http://salmanahmad.com/files/Dog-UIST2013.pdf
+leachim6 Dog
+ filepath d/Dog
+ example
+  Day 1
+   Awake
+   food Recipe "Hello World"
+   Bowl food
+   Eat food
+   Outside
+   Walk
+   Poop food
+   Run
+   Inside
+   Sleep
+  EndOf Day 1
+  

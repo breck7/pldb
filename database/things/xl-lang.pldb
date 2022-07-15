@@ -41,3 +41,10 @@ wikipedia https://en.wikipedia.org/wiki/XL_(programming_language)
 website http://xlr.sourceforge.net/
 isOpenSource true
 centralPackageRepositoryCount 0
+leachim6 XL
+ filepath x/XL.xl
+ fileExtensions xl
+ example
+  // XL programming language: http://xlr.sourceforge.net
+  writeln "Hello World"
+  

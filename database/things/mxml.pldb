@@ -27,3 +27,11 @@ centralPackageRepositoryCount 0
 pygmentsHighlighter MXML
  filename actionscript.py
  fileExtensions mxml
+leachim6 MXML
+ filepath m/MXML.mxml
+ fileExtensions mxml
+ example
+  <?xml version="1.0" encoding="utf-8"?>
+  <mx:Application xmlns:mx="http://www.adobe.com/2006/mxml">
+  <mx:Label text="Hello World"/>
+  </mx:Application>

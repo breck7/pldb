@@ -77,3 +77,13 @@ centralPackageRepositoryCount 0
 pygmentsHighlighter Delphi
  filename pascal.py
  fileExtensions pas dpr
+leachim6 Delphi
+ filepath d/Delphi.pas
+ fileExtensions pas
+ example
+  program HelloWorld;
+  {$APPTYPE CONSOLE}
+  
+  begin
+  	WriteLn('Hello World');
+  end.

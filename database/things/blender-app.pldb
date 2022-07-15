@@ -10,3 +10,15 @@ wikipedia https://en.wikipedia.org/wiki/Blender_(software)
  appeared 1998
 
 fileExtensions blend
+leachim6 Blender
+ filepath b/Blender.py
+ fileExtensions py
+ example
+  import Blender
+  from Blender import Scene, Text3d
+  
+  text = Text3d.New("Text")
+  text.setText("Hello World")
+  Scene.GetCurrent().objects.new(text)
+  Blender.Redraw()
+  

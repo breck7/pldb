@@ -31,3 +31,8 @@ isOpenSource true
 cheatSheetUrl http://files.pharo.org/media/pharoCheatSheet.pdf
 jupyterKernel https://github.com/jmari/JupyterTalk
 centralPackageRepositoryCount 0
+leachim6 Pharo
+ filepath p/Pharo.st
+ fileExtensions st
+ example
+  'Hello World' crLog

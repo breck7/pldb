@@ -60,3 +60,15 @@ features
 pygmentsHighlighter ODIN
  filename archetype.py
  fileExtensions odin
+leachim6 Odin
+ filepath o/Odin.odin
+ fileExtensions odin
+ example
+  package main
+  
+  import "core:fmt"
+  
+  main :: proc() {
+    fmt.println("Hello World");
+  }
+  

@@ -563,3 +563,9 @@ rijuRepl https://riju.codes/reasonml
 pygmentsHighlighter ReasonML
  filename ml.py
  fileExtensions re rei
+leachim6 Reason
+ filepath r/Reason.re
+ fileExtensions re
+ example
+  print_string "Hello World"
+  

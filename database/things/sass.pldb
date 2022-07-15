@@ -76,3 +76,10 @@ creators Hampton Catlin
 pygmentsHighlighter Sass
  filename css.py
  fileExtensions sass
+leachim6 Sass
+ filepath s/Sass.sass
+ fileExtensions sass
+ example
+  body::before
+  	content: "Hello World"
+  

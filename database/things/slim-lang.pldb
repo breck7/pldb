@@ -78,3 +78,12 @@ centralPackageRepositoryCount 0
 pygmentsHighlighter Slim
  filename webmisc.py
  fileExtensions slim
+leachim6 Slim
+ filepath s/Slim.slim
+ fileExtensions slim
+ example
+  doctype html
+  head
+    title Hello World
+  body
+    h1 Hello World

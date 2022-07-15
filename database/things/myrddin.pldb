@@ -10,3 +10,14 @@ fileType text
 rosettaCode Myrddin
 
 centralPackageRepositoryCount 0
+leachim6 Myrddin
+ filepath m/Myrddin.myr
+ fileExtensions myr
+ example
+  use std
+  
+  const main = {
+      std.put("Hello World\n")
+  }
+  
+  

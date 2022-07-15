@@ -110,3 +110,11 @@ lineCommentKeyword //
 pygmentsHighlighter Ceylon
  filename jvm.py
  fileExtensions ceylon
+leachim6 Ceylon
+ filepath c/Ceylon.ceylon
+ fileExtensions ceylon
+ example
+  shared void hello() {
+      print("Hello World");
+  }
+  

@@ -19,3 +19,10 @@ wordRank 1838
 isOpenSource true
 corporateDevelopers Facebook
 centralPackageRepositoryCount 0
+leachim6 Skip
+ filepath s/Skip.sk
+ fileExtensions sk
+ example
+  fun main(): void {
+    print_string("Hello World")
+  }

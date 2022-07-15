@@ -22,3 +22,8 @@ creators John Carmack
 goodreads
  title|year|author|goodreadsId|rating|ratings|reviews
  Curly Bracket Programming Languages: C, Java, C++, Perl, JavaScript, PHP, Ruby, Bcpl, awk, Quakec, Objective-C, Cyclone, Pike, Unrealscript, Rc|2010|Books LLC|14292084|3.00|1|0
+leachim6 QuakeC
+ filepath q/QuakeC.qc
+ fileExtensions qc
+ example
+  bprint("Hello World\n");

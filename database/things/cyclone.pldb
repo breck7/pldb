@@ -29,3 +29,13 @@ hopl 3312
 
 centralPackageRepositoryCount 0
 corporateDevelopers AT&T Labs
+leachim6 Cyclone
+ filepath c/Cyclone.cyc
+ fileExtensions cyc
+ example
+  #include <stdio.h>
+  int main() {
+   printf("Hello World\n");
+   return 0;
+  }
+  

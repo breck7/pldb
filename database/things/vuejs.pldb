@@ -98,3 +98,19 @@ fileType text
 isOpenSource true
 languageServerProtocolProject https://github.com/vuejs/vetur
  writtenIn typescript
+leachim6 Vue
+ filepath v/Vue.js
+ fileExtensions js
+ example
+  <div id="app">
+    <p>{{ message }}</p>
+  </div>
+  <script>
+  new Vue({
+    el: '#app',
+    data: {
+      message: 'Hello World'
+    }
+  })
+  </script>
+  

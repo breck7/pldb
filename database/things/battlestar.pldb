@@ -22,3 +22,11 @@ githubRepo https://github.com/xyproto/battlestar
  description :dizzy: A different take on Assembly, with the goal of creating tiny executables.
  issues 0
 creators Alexander Rødseth
+leachim6 Battlestar
+ filepath b/Battlestar.bts
+ fileExtensions bts
+ example
+  #!/usr/bin/bts
+  const hello = "Hello World\n"
+  print(hello)
+  

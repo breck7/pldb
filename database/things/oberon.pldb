@@ -78,3 +78,16 @@ rijuRepl https://riju.codes/oberon
     Out.Ln;
   END Main.
   
+leachim6 Oberon
+ filepath o/Oberon.o
+ fileExtensions o
+ example
+  MODULE HelloWorld;
+  
+  IMPORT Out;
+  
+  BEGIN
+     Out.Open;
+     Out.String('Hello World');
+  END HelloWorld.
+  

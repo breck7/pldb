@@ -57,3 +57,9 @@ centralPackageRepositoryCount 0
 pygmentsHighlighter XML
  filename html.py
  fileExtensions xml xsl rss xslt xsd wsdl wsf
+leachim6 XML
+ filepath x/XML.xml
+ fileExtensions xml
+ example
+  <?xml version="1.0" encoding="UTF-8"?>
+  <text><![CDATA[Hello World]]></text>

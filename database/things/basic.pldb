@@ -81,3 +81,10 @@ rijuRepl https://riju.codes/basic
  description General-purpose, high-level programming language whose design philosophy emphasizes ease of use
  fileExtensions bas
  githubRepo https://sourceforge.net/projects/bwbasic/files/bwbasic/
+leachim6 BASIC
+ filepath b/BASIC.bas
+ fileExtensions bas
+ example
+  10 PRINT "Hello World"
+  20 END
+  

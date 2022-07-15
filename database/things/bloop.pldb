@@ -49,3 +49,12 @@ hopl 844
 rosettaCode BlooP
 
 centralPackageRepositoryCount 0
+leachim6 Bloop
+ filepath b/Bloop.bloop
+ fileExtensions bloop
+ example
+  DEFINE PROCEDURE ''HELLO-WORLD'' [N]:
+  BLOCK 0: BEGIN
+       PRINT['Hello World']
+  BLOCK 0: END.
+  HELLO-WORLD[1]; 

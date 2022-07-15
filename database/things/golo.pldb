@@ -65,3 +65,13 @@ features
 pygmentsHighlighter Golo
  filename jvm.py
  fileExtensions golo
+leachim6 Golo
+ filepath g/Golo.golo
+ fileExtensions golo
+ example
+  module hello.world
+  
+  function main = |args| {
+    println("Hello World")
+  }
+  

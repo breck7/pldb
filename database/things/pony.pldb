@@ -46,3 +46,11 @@ centralPackageRepositoryCount 0
 pygmentsHighlighter Pony
  filename pony.py
  fileExtensions pony
+leachim6 Pony
+ filepath p/Pony.pony
+ fileExtensions pony
+ example
+  actor Main
+    new create(env: Env) =>
+      env.out.print("Hello World")
+  

@@ -41,3 +41,10 @@ goodreads
  title|year|author|goodreadsId|rating|ratings|reviews
  SPSS For Dummies|2007|Arthur Griffith|959353|3.54|67|10
  SPSS Statistics for Dummies|2015|Keith McCormick|45494211|4.10|10|2
+leachim6 SPSS
+ filepath s/SPSS.spss
+ fileExtensions spss
+ example
+  BEGIN PROGRAM.
+  print "Hello World"
+  END PROGRAM.

@@ -91,3 +91,8 @@ lineCommentKeyword ;
 pygmentsHighlighter AutoIt
  filename automation.py
  fileExtensions au3
+leachim6 AutoIt
+ filepath a/AutoIt.au3
+ fileExtensions au3
+ example
+  MsgBox(0, "Message Box", "Hello World")

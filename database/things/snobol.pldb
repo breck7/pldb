@@ -64,3 +64,9 @@ goodreads
 pygmentsHighlighter Snobol
  filename snobol.py
  fileExtensions snobol
+leachim6 SNOBOL
+ filepath s/SNOBOL
+ example
+            OUTPUT = "Hello World"
+  END
+  

@@ -194,3 +194,11 @@ corporateDevelopers Mozilla
 pygmentsHighlighter Rust
  filename rust.py
  fileExtensions rs rs.in
+leachim6 Rust
+ filepath r/Rust.rs
+ fileExtensions rs
+ example
+  fn main() {
+      println!("Hello World");
+  }
+  

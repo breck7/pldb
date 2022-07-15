@@ -414,3 +414,15 @@ features
 pygmentsHighlighter eC
  filename c_like.py
  fileExtensions ec eh
+leachim6 Ec
+ filepath e/Ec.ec
+ fileExtensions ec
+ example
+  class HelloWorldApp : Application
+  {
+     void Main()
+     {
+        PrintLn("Hello World");
+     }
+  }
+  

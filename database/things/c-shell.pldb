@@ -31,3 +31,9 @@ tiobe C shell
 
 centralPackageRepositoryCount 0
 lineCommentKeyword #
+leachim6 C Shell
+ filepath c/C Shell.csh
+ example
+  #!/bin/csh
+  echo "Hello World"
+  

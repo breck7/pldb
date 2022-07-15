@@ -124,3 +124,8 @@ goodreads
 pygmentsHighlighter OCaml
  filename ml.py
  fileExtensions ml mli mll mly
+leachim6 OCaml
+ filepath o/OCaml.ml
+ fileExtensions ml
+ example
+  print_string "Hello World\n"

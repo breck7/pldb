@@ -8,3 +8,11 @@ aka 4D
 hopl 2471
 
 centralPackageRepositoryCount 0
+leachim6 4th Dimension
+ filepath #/4th Dimension.4dd
+ example
+  OPEN WINDOW (10;45;500;330;0;"Hello Window")
+  While (True)
+    MESSAGE ("Hello World")
+  End while
+  

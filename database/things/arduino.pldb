@@ -30,3 +30,16 @@ centralPackageRepositoryCount 0
 pygmentsHighlighter Arduino
  filename c_like.py
  fileExtensions ino
+leachim6 Arduino
+ filepath a/Arduino.ino
+ fileExtensions ino
+ example
+  void setup() {
+    Serial.begin(9600);
+    Serial.println("Hello World");
+  }
+  
+  void loop() {
+  
+  }
+  

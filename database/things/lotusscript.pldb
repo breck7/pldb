@@ -29,3 +29,11 @@ goodreads
  LotusScript for Dummies|1997|James G. Meade|2104599|5.00|1|0
  Inside LotusScript: A Complete Guide to Notes Programming|1997|Joe McGinn|4978354|3.00|2|0
  60 Minute Guide to LotusScript 3 Programming for Lotus Notes 4|1996|Robert Beyer|3306848|4.00|1|0
+leachim6 LotusScript
+ filepath l/LotusScript.lss
+ fileExtensions lss
+ example
+  Sub Initialize
+  	Print "Hello World"
+  End Sub
+  

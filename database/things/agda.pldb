@@ -100,3 +100,12 @@ lineCommentKeyword --
 pygmentsHighlighter Agda
  filename haskell.py
  fileExtensions agda
+leachim6 Agda
+ filepath a/Agda.agda
+ fileExtensions agda
+ example
+  module agda where
+  open import IO
+  
+  main = run (putStrLn "Hello World")
+  

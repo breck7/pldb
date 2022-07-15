@@ -58,3 +58,11 @@ goodreads
 pygmentsHighlighter SCSS
  filename css.py
  fileExtensions scss
+leachim6 SCSS
+ filepath s/SCSS.scss
+ fileExtensions scss
+ example
+  body::before {
+      content: "Hello World";
+  }
+  

@@ -191,3 +191,12 @@ rijuRepl https://riju.codes/elm
 pygmentsHighlighter Elm
  filename elm.py
  fileExtensions elm
+leachim6 Elm
+ filepath e/Elm.elm
+ fileExtensions elm
+ example
+  import Html exposing (text)
+  
+  main =
+    text "Hello World"
+  

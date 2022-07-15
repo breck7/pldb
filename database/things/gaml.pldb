@@ -8,3 +8,16 @@ status historical
 hopl 3529
 
 centralPackageRepositoryCount 0
+leachim6 GAML
+ filepath g/GAML.gaml
+ fileExtensions gaml
+ example
+  model GAML
+  
+  global {
+  	init {
+  		write("Hello World");
+  	}
+  }
+  
+  experiment GAML {}

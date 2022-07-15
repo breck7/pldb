@@ -29,3 +29,10 @@ rijuRepl https://riju.codes/tcsh
 pygmentsHighlighter Tcsh
  filename shell.py
  fileExtensions tcsh csh
+leachim6 TCSH
+ filepath t/TCSH.tcsh
+ fileExtensions tcsh
+ example
+  #!/bin/tcsh
+  echo "Hello World"
+  

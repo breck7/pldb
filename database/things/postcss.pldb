@@ -45,3 +45,10 @@ twitter postcss
 fileType text
 isOpenSource true
 centralPackageRepositoryCount 0
+leachim6 PostCSS
+ filepath p/PostCSS.pcss
+ fileExtensions pcss
+ example
+  body::before {
+      content: "Hello World";
+  }

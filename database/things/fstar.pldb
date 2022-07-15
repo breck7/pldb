@@ -42,3 +42,10 @@ centralPackageRepositoryCount 0
 pygmentsHighlighter FStar
  filename ml.py
  fileExtensions fst fsti
+leachim6 FStar
+ filepath f/FStar.fst
+ fileExtensions fst
+ example
+  module Hello
+  
+  let main = FStar.IO.print_string "Hello World\n"

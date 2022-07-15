@@ -140,3 +140,12 @@ rijuRepl https://riju.codes/pascal
      writeln('Hello, world!');
   end.
   
+leachim6 Pascal
+ filepath p/Pascal.p
+ fileExtensions p
+ example
+  program HelloWorld(output);
+  begin
+          writeln('Hello World');
+  end.
+  

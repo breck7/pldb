@@ -160,3 +160,9 @@ creators Don Syme
 pygmentsHighlighter F#
  filename dotnet.py
  fileExtensions fs fsi
+leachim6 FSharp
+ filepath f/FSharp.fs
+ fileExtensions fs
+ example
+  printfn "Hello World"
+  

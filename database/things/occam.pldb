@@ -53,3 +53,13 @@ creators David May
 goodreads
  title|year|author|goodreadsId|rating|ratings|reviews
  Programming In Occam||Geraint Jones|3878947|3.00|3|1
+leachim6 occam
+ filepath o/occam.occam
+ fileExtensions occam
+ example
+  PROGRAM Hello
+  #USE ioconv
+  
+  SEQ
+    write.full.string(screen,"Hello World")
+  

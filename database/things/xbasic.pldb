@@ -40,3 +40,16 @@ features
   ' A comment
  hasComments true
   ' A comment
+leachim6 XBasic
+ filepath x/XBasic.x
+ fileExtensions x
+ example
+  IMPORT "xst"
+  DECLARE FUNCTION  Hello ()
+  
+  FUNCTION  Hello ()
+   XstDisplayConsole ()
+   PRINT "Hello World"
+  END FUNCTION
+  END PROGRAM
+  

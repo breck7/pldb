@@ -107,3 +107,9 @@ lineCommentKeyword --
 pygmentsHighlighter AppleScript
  filename scripting.py
  fileExtensions applescript
+leachim6 AppleScript
+ filepath a/AppleScript.scpt
+ fileExtensions scpt
+ example
+  display dialog "Hello World"  
+  

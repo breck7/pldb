@@ -81,3 +81,11 @@ creators Doug Coleman
 pygmentsHighlighter Factor
  filename factor.py
  fileExtensions factor
+leachim6 Factor
+ filepath f/Factor.factor
+ fileExtensions factor
+ example
+  USING: io ;
+  "Hello World" print
+  
+  

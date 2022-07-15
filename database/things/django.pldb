@@ -25,3 +25,11 @@ isOpenSource true
 codeMirror django
 
 centralPackageRepositoryCount 0
+leachim6 Django
+ filepath d/Django.py
+ fileExtensions py
+ example
+  from django.http import HttpResponse
+  
+  def index(request):
+      return HttpResponse("Hello World")

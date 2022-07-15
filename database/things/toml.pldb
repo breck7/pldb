@@ -66,3 +66,9 @@ features
 pygmentsHighlighter TOML
  filename configs.py
  fileExtensions toml Pipfile poetry.lock
+leachim6 TOML
+ filepath t/TOML.toml
+ fileExtensions toml
+ example
+  Hello = "World"
+  

@@ -65,3 +65,11 @@ rijuRepl https://riju.codes/less
     content: "Hello, world!";
   }
   
+leachim6 Less
+ filepath l/Less.less
+ fileExtensions less
+ example
+  body::before {
+      content: "Hello World"
+  }
+  

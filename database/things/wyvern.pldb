@@ -20,3 +20,11 @@ githubRepo https://github.com/wyvernlang/wyvern
  issues 61
 
 website http://wyvernlang.github.io/
+leachim6 Wyvern
+ filepath w/Wyvern.wyv
+ fileExtensions wyv
+ example
+  require stdout
+  
+  stdout.print("Hello World")
+  

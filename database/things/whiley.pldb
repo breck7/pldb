@@ -57,3 +57,13 @@ features
 pygmentsHighlighter Whiley
  filename whiley.py
  fileExtensions whiley
+leachim6 Whiley
+ filepath w/Whiley.whiley
+ fileExtensions whiley
+ example
+  import std::ascii
+  import std::io
+  
+  method main(ascii::string[] args):
+      io::println("Hello World")
+  

@@ -132,3 +132,10 @@ corporateDevelopers PLT Inc.
 pygmentsHighlighter Racket
  filename lisp.py
  fileExtensions rkt rktd rktl
+leachim6 Racket
+ filepath r/Racket.rkt
+ fileExtensions rkt
+ example
+  #lang racket
+  "Hello World"
+  

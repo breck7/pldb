@@ -198,3 +198,10 @@ goodreads
 pygmentsHighlighter Fortran
  filename fortran.py
  fileExtensions f03 f90 F03 F90
+leachim6 Fortran
+ filepath f/Fortran.f90
+ fileExtensions f90
+ example
+  print *,'Hello World'
+  end
+  

@@ -31,3 +31,15 @@ rijuRepl https://riju.codes/curry
   main = putStrLn "Hello, world!"
   
 creators Michael Hanus and Sergio Antoy
+leachim6 Curry
+ filepath c/Curry.curry
+ fileExtensions curry
+ example
+  -- "Hello World" demo for the Tcl/Tk library
+  
+  import Tk
+  
+  main = runWidget "Hello"
+            (TkCol [] [TkLabel [TkText "Hello World"],
+                       TkButton tkExit [TkText "Stop"]])
+  

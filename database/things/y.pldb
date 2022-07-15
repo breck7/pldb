@@ -9,3 +9,17 @@ wordRank 382
 hopl 982
 
 centralPackageRepositoryCount 0
+leachim6 Y
+ filepath y/Y.y
+ fileExtensions y
+ example
+  module helloworld
+  
+  	define(EOF,(-1))
+  	
+  	import printf from "ylib.d"
+  
+  	main()
+  		printf("Hello World\n")
+  	end
+  end

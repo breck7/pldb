@@ -78,3 +78,9 @@ goodreads
 pygmentsHighlighter Smalltalk
  filename smalltalk.py
  fileExtensions st
+leachim6 SmallTalk
+ filepath s/SmallTalk.sm
+ fileExtensions sm
+ example
+  Transcript show: 'Hello World'.
+  

@@ -88,3 +88,12 @@ features
   -- A comment
  hasComments true
   -- A comment
+leachim6 PL∕SQL
+ filepath p/PL∕SQL.pls
+ fileExtensions pls
+ example
+  BEGIN
+    dbms_output.put_line('Hello World');
+  END;
+  /
+  

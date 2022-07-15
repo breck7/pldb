@@ -100,3 +100,15 @@ goodreads
 pygmentsHighlighter Solidity
  filename solidity.py
  fileExtensions sol
+leachim6 Solidity
+ filepath s/Solidity.sol
+ fileExtensions sol
+ example
+  pragma solidity ^0.8.9;
+  
+  contract HelloWorld {
+      function render () public pure returns (string memory) {
+          return 'Hello World';
+      }
+  }
+  

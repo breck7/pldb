@@ -21,3 +21,12 @@ status historical
 fileType text
 centralPackageRepositoryCount 0
 corporateDevelopers BioWare
+leachim6 NWScript
+ filepath n/NWScript.nss
+ fileExtensions nss
+ example
+  // Place in the OnClientEnter event of the module's properties
+  {
+      SendMessageToPC(GetEnteringObject(), "Hello World");
+  }
+  

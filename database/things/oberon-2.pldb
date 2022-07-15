@@ -72,3 +72,12 @@ rosettaCode Oberon-2
 
 centralPackageRepositoryCount 0
 creators Niklaus Wirth and Hanspeter Mössenböck
+leachim6 Oberon 2
+ filepath o/Oberon 2.obn
+ example
+  MODULE HelloWorld;                     
+  IMPORT Out;
+  BEGIN
+    Out.String( "Hello World" );
+    Out.Ln;
+  END HelloWorld.

@@ -56,3 +56,9 @@ rijuRepl https://riju.codes/coconut
  fileExtensions coco
  website https://coconut-lang.org/
  githubRepo https://github.com/evhub/coconut
+leachim6 Coconut
+ filepath c/Coconut.coc
+ fileExtensions coc
+ example
+  "Hello World" |> print
+  

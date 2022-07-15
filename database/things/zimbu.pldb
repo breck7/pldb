@@ -22,3 +22,12 @@ wikipedia https://en.wikipedia.org/wiki/Zimbu
 website http://www.zimbu.org/
 status historical
 centralPackageRepositoryCount 0
+leachim6 Zimbu
+ filepath z/Zimbu.zu
+ fileExtensions zu
+ example
+  FUNC Main() int
+    IO.write("Hello World\n")
+    RETURN 0
+  }
+  

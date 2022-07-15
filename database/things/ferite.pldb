@@ -10,3 +10,10 @@ status historical
 rosettaCode Ferite
 
 centralPackageRepositoryCount 0
+leachim6 Ferite
+ filepath f/Ferite.fe
+ fileExtensions fe
+ example
+  uses "console";
+  Console.println( "Hello World" );
+  

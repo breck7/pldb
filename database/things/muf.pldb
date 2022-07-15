@@ -303,3 +303,11 @@ fileType text
 rosettaCode MUF
 
 centralPackageRepositoryCount 0
+leachim6 Muf
+ filepath m/Muf.muf
+ fileExtensions muf
+ example
+  : main
+      me @ "Hello World" notify
+  ;
+  

@@ -31,3 +31,12 @@ tiobe CLU
 hopl 637
 
 centralPackageRepositoryCount 0
+leachim6 CLU
+ filepath c/CLU.clu
+ fileExtensions clu
+ example
+  start_up = proc ()
+      po: stream := stream$primary_output ()
+      stream$putl (po, "Hello World")
+      end start_up
+  

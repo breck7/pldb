@@ -76,3 +76,9 @@ goodreads
 pygmentsHighlighter CMake
  filename make.py
  fileExtensions cmake CMakeLists.txt
+leachim6 CMake
+ filepath c/CMake.cmake
+ fileExtensions cmake
+ example
+  message("Hello World")
+  

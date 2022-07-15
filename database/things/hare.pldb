@@ -18,3 +18,14 @@ example
  		fmt::println(greetings[i])!;
  	};
  };
+
+leachim6 Hare
+ filepath h/Hare.ha
+ fileExtensions ha
+ example
+  use fmt;
+  
+  export fn main() void = {
+  	fmt::println("Hello World")!;
+  };
+  

@@ -97,3 +97,14 @@ lineCommentKeyword //
 pygmentsHighlighter Nemerle
  filename dotnet.py
  fileExtensions n
+leachim6 Nemerle
+ filepath n/Nemerle.n
+ fileExtensions n
+ example
+  class Hello
+  {
+      static Main () : void
+      {
+          System.Console.WriteLine ("Hello World");
+      }
+  }

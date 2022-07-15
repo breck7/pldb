@@ -42,3 +42,11 @@ features
   * A comment
  hasComments true
   * A comment
+leachim6 Refal
+ filepath r/Refal.ref
+ fileExtensions ref
+ example
+  $ENTRY Go { = <Hello>;}
+  Hello {
+     = <Prout 'Hello World'>;
+  }

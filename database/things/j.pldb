@@ -73,3 +73,11 @@ rijuRepl https://riju.codes/j
 pygmentsHighlighter J
  filename j.py
  fileExtensions ijs
+leachim6 J
+ filepath j/J.ijs
+ fileExtensions ijs
+ example
+  #!/opt/local/bin/jc
+  echo 'Hello World'
+  exit ''
+  

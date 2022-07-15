@@ -38,3 +38,9 @@ centralPackageRepositoryCount 0
 pygmentsHighlighter LilyPond
  filename lilypond.py
  fileExtensions ly
+leachim6 LilyPond
+ filepath l/LilyPond.ly
+ fileExtensions ly
+ example
+  \markup { Hello World }
+  

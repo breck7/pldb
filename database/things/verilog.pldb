@@ -152,3 +152,15 @@ goodreads
 pygmentsHighlighter verilog
  filename hdl.py
  fileExtensions v
+leachim6 Verilog
+ filepath v/Verilog.v
+ fileExtensions v
+ example
+  module main;
+    initial
+      begin
+        $display("Hello World");
+        $finish;
+      end
+  endmodule
+  

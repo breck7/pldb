@@ -18,3 +18,11 @@ rosettaCode Zonnon
 
 centralPackageRepositoryCount 0
 creators Jürg Gutknecht
+leachim6 Zonnon
+ filepath z/Zonnon.znn
+ fileExtensions znn
+ example
+  module HelloWorld;
+  begin
+      writeln("Hello World");
+  end HelloWorld.    

@@ -69,3 +69,14 @@ rijuRepl https://riju.codes/xslt
 pygmentsHighlighter XSLT
  filename html.py
  fileExtensions xsl xslt xpl
+leachim6 XSLT
+ filepath x/XSLT.xslt
+ fileExtensions xslt
+ example
+  <?xml version="1.0" encoding="UTF-8"?>
+  <xsl:stylesheet version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
+      <xsl:template match="/">
+          <xsl:text>Hello World</xsl:text>
+      </xsl:template>
+  </xsl:stylesheet>
+  

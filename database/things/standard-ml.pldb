@@ -85,3 +85,10 @@ rijuRepl https://riju.codes/standardml
 pygmentsHighlighter Standard ML
  filename ml.py
  fileExtensions sml sig fun
+leachim6 Standard ML
+ filepath s/Standard ML.sml
+ example
+  fun hello() = print("Hello World\n");
+  
+  hello()
+  

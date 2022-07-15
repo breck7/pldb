@@ -277,3 +277,11 @@ hopl 1411
 rosettaCode Modula-3
 reference https://www.cs.purdue.edu/homes/hosking/m3/reference/syntax.html
 centralPackageRepositoryCount 0
+leachim6 Modula 3
+ filepath m/Modula 3.m3
+ example
+  MODULE HelloWorld;
+  IMPORT Io;
+  BEGIN
+      IO.Put ("Hello World\n")
+  END HelloWorld.

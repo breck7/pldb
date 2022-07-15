@@ -174,3 +174,11 @@ goodreads
 pygmentsHighlighter Haskell
  filename haskell.py
  fileExtensions hs
+leachim6 Haskell
+ filepath h/Haskell.hs
+ fileExtensions hs
+ example
+  module Main where
+  
+  main = putStrLn "Hello World"
+  

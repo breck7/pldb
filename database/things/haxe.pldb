@@ -106,3 +106,12 @@ creators Nicolas Cannasse
 pygmentsHighlighter Haxe
  filename haxe.py
  fileExtensions hx hxsl
+leachim6 Haxe
+ filepath h/Haxe.hx
+ fileExtensions hx
+ example
+  class HelloWorld {
+      static function main() {
+          trace("Hello World");
+      }
+  }

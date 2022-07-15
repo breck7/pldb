@@ -82,3 +82,13 @@ rijuRepl https://riju.codes/dylan
 pygmentsHighlighter Dylan
  filename dylan.py
  fileExtensions dylan dyl intr
+leachim6 Dylan
+ filepath d/Dylan.dl
+ fileExtensions dl
+ example
+  define method main (#rest args)
+    princ("Hello World");
+  end;
+  
+  main();
+  

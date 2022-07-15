@@ -61,3 +61,10 @@ centralPackageRepositoryCount 0
 pygmentsHighlighter Batchfile
  filename shell.py
  fileExtensions bat cmd
+leachim6 Batch
+ filepath b/Batch.bat
+ fileExtensions bat
+ example
+  @echo off
+  echo Hello World
+  

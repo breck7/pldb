@@ -42,3 +42,14 @@ rosettaCode Seed7
 
 centralPackageRepositoryCount 0
 lineCommentKeyword #
+leachim6 Seed7
+ filepath s/Seed7.s7
+ fileExtensions s7
+ example
+  $ include "seed7_05.s7i";
+  
+  const proc: main is func
+    begin
+      writeln("Hello World");
+    end func;
+  

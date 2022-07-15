@@ -118,3 +118,9 @@ goodreads
 pygmentsHighlighter PostScript
  filename graphics.py
  fileExtensions ps eps
+leachim6 PostScript
+ filepath p/PostScript.ps
+ fileExtensions ps
+ example
+  % run> gs -q -sDEVICE=nullpage postscript.ps
+  (Hello World\n) print quit

@@ -7,3 +7,13 @@ wordRank 3322
 hopl 8576
 
 centralPackageRepositoryCount 0
+leachim6 HOP
+ filepath h/HOP
+ example
+  (define-service (hello-world)
+    (<HTML>
+       (<HEAD>
+          (<TITLE> "Hello World"))
+       (<BODY>
+          "Hello World")))
+  

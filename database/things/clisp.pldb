@@ -21,3 +21,8 @@ isOpenSource true
 hopl 604
 
 centralPackageRepositoryCount 0
+leachim6 CLISP
+ filepath c/CLISP.lisp
+ fileExtensions lisp
+ example
+  (write-line "Hello World")

@@ -20,3 +20,17 @@ rijuRepl https://riju.codes/qsharp
       }
   }
   
+leachim6 QSharp
+ filepath q/QSharp.qs
+ fileExtensions qs
+ example
+  ﻿namespace Quantum.HelloWorld {
+      open Microsoft.Quantum.Canon;
+      open Microsoft.Quantum.Intrinsic;
+  
+  
+      operation HelloWorld() : Unit {
+          Message("Hello World");
+      }
+  }
+  

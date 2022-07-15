@@ -131,3 +131,12 @@ rijuRepl https://riju.codes/idris
 pygmentsHighlighter Idris
  filename haskell.py
  fileExtensions idr
+leachim6 Idris
+ filepath i/Idris.idr
+ fileExtensions idr
+ example
+  module Main
+  
+  main : IO ()
+  main = putStrLn "Hello World"
+  

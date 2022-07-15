@@ -79,3 +79,13 @@ languageServerProtocolProject https://github.com/ballerina-platform/ballerina-la
  writtenIn java
 packageRepository https://central.ballerina.io/
 creators Sanjiva Weerawarana and James Clark
+leachim6 Ballerina
+ filepath b/Ballerina.bal
+ fileExtensions bal
+ example
+  import ballerina/io;
+  
+  public function main() {
+      io:println("Hello World");
+  }
+  

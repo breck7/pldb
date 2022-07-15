@@ -34,3 +34,9 @@ features
 pygmentsHighlighter Fennel
  filename lisp.py
  fileExtensions fnl
+leachim6 Fennel
+ filepath f/Fennel.fnl
+ fileExtensions fnl
+ example
+  (print "Hello World")
+  

@@ -16,3 +16,13 @@ status active
 hackerNewsDiscussions
  id|title|time|timestamp|by|comments|score
  19598592|Show HN: Muon, a low-level programming language inspired by C, C# and Go|2019-04-07 18:00:10 UTC|1554660010|nickmqb|114|175
+leachim6 Muon
+ filepath m/Muon.mu
+ fileExtensions mu
+ example
+  printf(fmt cstring) int #Foreign("printf") #VarArgs
+  
+  main() {
+  	printf("Hello World")
+  }
+  

@@ -76,3 +76,10 @@ packageRepository https://ctan.org/
 pygmentsHighlighter TeX
  filename markup.py
  fileExtensions tex aux toc
+leachim6 TeX
+ filepath t/TeX.tex
+ fileExtensions tex
+ example
+  Hello World
+  \bye
+  
