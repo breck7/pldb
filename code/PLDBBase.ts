@@ -176,7 +176,7 @@ class PLDBFile extends TreeBaseFile {
   get _getLanguagesWithThisFeatureResearched() {
     const featureKeyword = this.get("featureKeyword")
 
-    return this.base.filter(file =>
+    return this.base.topLanguages.filter(file =>
       file.getNode("features")?.has(featureKeyword)
     )
   }
@@ -400,11 +400,14 @@ class PLDBBaseFolder extends TreeBaseFolder {
     return this.getNode(this.dir + id + ".pldb")
   }
 
-  get topLanguages() {
-    return lodash.sortBy(
-      this.filter(lang => lang.isLanguage),
-      "languageRank"
-    )
+  private _topLangs: PLDBFile[]
+  get topLanguages(): PLDBFile[] {
+    if (!this._topLangs)
+      this._topLangs = lodash.sortBy(
+        this.filter(lang => lang.isLanguage),
+        "languageRank"
+      )
+    return this._topLangs
   }
 
   predictNumberOfUsers(file: PLDBFile) {

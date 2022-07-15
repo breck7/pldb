@@ -16,16 +16,16 @@ tableSearch
 comment autogenFeatures
 pipeTable
  feature|featureLink|aka|psuedoExample|languages
- Comments|../languages/comment-feature.html||# a comment|492
+ Comments|../languages/comment-feature.html||# a comment|489
  Line Comments|../languages/line-comments-feature.html||# from here to end of line is a comment|436
  Semantic Indentation|../languages/semantic-indentation-feature.html||if true(newline/space)print True|53
  Strings|../languages/strings-feature.html||"hi"|30
  Operator Overloading|../languages/operator-overloading-feature.html||def __add__(): doSomethingDifferent()|30
  File Imports|../languages/file-imports-feature.html||import package|30
  MultiLine Comments|../languages/multiline-comments-feature.html||/* a looong comment */|28
- Directives|../languages/directives-feature.html||use strict;|18
- Integers|../languages/integers-feature.html||int score = 28|16
- Booleans|../languages/booleans-feature.html||doBabiesSleep = false|15
+ Directives|../languages/directives-feature.html||use strict;|17
+ Integers|../languages/integers-feature.html||int score = 28|15
+ Booleans|../languages/booleans-feature.html||doBabiesSleep = false|14
  Pointers|../languages/pointers-feature.html||int *foobar|13
  Multiple Inheritance|../languages/multiple-inheritance-feature.html||extends parentWhichExtendsSomethingElse|13
  Constructors|../languages/constructor-feature.html||Person: constructor(name: string): {}|12
