@@ -1,0 +1,29 @@
+title A Language Without Comments
+date 2022-07-14
+author https://breckyunits.com Breck Yunits
+
+image a-language-without-comments.png
+
+aftertext
+ JSON is the _only_ popular language in the PLDB without comments.
+ link languages/json.html JSON
+ dateline
+ wrapsOn
+
+endSnippet
+
+aftertext
+ Douglas Crockford explained his unique design decision in 2012. He had comments originally but removed them to prevent ecosystem fragmentation:
+
+quote
+ I removed comments from JSON because I saw people were using them to hold parsing directives, a practice which would have destroyed interoperability. I know that the lack of comments makes some people sad, but it shouldn't.
+ 
+ Suppose you are using JSON to keep configuration files, which you would like to annotate. Go ahead and insert all the comments you like. Then pipe it through JSMin before handing it to your JSON parser.
+ 
+ - Douglas Crockford - April 30, 2012 - <a href="https://web.archive.org/web/20141227005220/https://plus.google.com/+DouglasCrockfordEsq/posts/RK8qyGVaGSr">Source</a>
+
+aftertext
+ A number of JSON derivatives added comments back, such as JSON5, Hjson and JSON with Comments.
+ link languages/json5.html JSON5
+ link languages/hjson.html Hjson
+ link languages/json-with-comments.html JSON with Comments
