@@ -321,6 +321,10 @@ akaNode
  extends abstractStringNode
  cruxFromId
  boolean multipleOk true
+oldNameNode
+ description What is the old name of this language?
+ extends abstractStringNode
+ cruxFromId
 abstractWordNode
  cells keywordCell stringCell
  extends abstractFactNode
@@ -686,6 +690,9 @@ runsOnVmNode
  description What virtual machine(s) does this language run on? 
 subsetOfNode
  description Is this language a subset of another?
+ extends abstractRelationshipNode
+renamedToNode
+ description What is the new name of this language?
  extends abstractRelationshipNode
 supersetOfNode
  description Is this language a superset of another?
