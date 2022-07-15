@@ -88,6 +88,8 @@ features
   // A comment
  hasAlgebraicTypes true
   declare type numOrString = string | number
+ hasComments true
+  // A comment
 
 wikipedia https://en.wikipedia.org/wiki/TypeScript
  example

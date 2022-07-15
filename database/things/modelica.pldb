@@ -10,6 +10,8 @@ features
     final quantity="SpecificHeatCapacity",
     final unit="J/(kg.K)"
   );
+ hasComments true
+  // A comment
 
 wikipedia https://en.wikipedia.org/wiki/Modelica
  example

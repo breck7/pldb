@@ -5,6 +5,8 @@ type grammarLanguage
 features
  hasLineComments true
   // A comment
+ hasComments true
+  // A comment
 
 example
  /** Taken from "The Definitive ANTLR 4 Reference" by Terence Parr */

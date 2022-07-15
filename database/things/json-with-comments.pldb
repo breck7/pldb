@@ -42,6 +42,8 @@ features
   // A comment
  hasMultiLineComments true
   /* A comment */
+ hasComments true
+  // A comment
 
 reference https://changelog.com/news/jsonc-is-a-superset-of-json-which-supports-comments-6LwR
 reference https://github.com/Microsoft/node-jsonc-parser

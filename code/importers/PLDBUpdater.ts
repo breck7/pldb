@@ -75,6 +75,25 @@ class PLDBUpdater {
 
         file.save()
       })
+
+    pldbBase
+      .filter(file => file.isLanguage)
+      .filter(
+        file =>
+          !file.get("features hasComments") &&
+          (file.get("features hasMultiLineComments") === "true" ||
+            file.get("features hasLineComments") === "true")
+      )
+      .forEach(file => {
+        const example =
+          file.getNode("features hasLineComments") ||
+          file.getNode("features hasMultiLineComments")
+        file.set("features hasComments", "true")
+        file
+          .touchNode("features hasComments")
+          .setChildren(example.childrenToString())
+        file.save()
+      })
   }
 }
 

@@ -13,6 +13,8 @@ features
   type person = {name: string, age: int};
   let somePerson = {name: "Guy", age: 30};
   let {name, age} = somePerson;
+ hasComments true
+  // A comment
 
 githubLanguage Reason
  fileExtensions re rei
