@@ -155,6 +155,16 @@ class PLDBFile extends TreeBaseFile {
       })
     })
 
+    this.findNodes("leachim6").forEach(node => {
+      examples.push({
+        code: node.getNode("example").childrenToString(),
+        source: "hello-world",
+        link:
+          `https://github.com/leachim6/hello-world/blob/main/` +
+          node.getNode("filepath")
+      })
+    })
+
     this.findNodes("helloWorldCollection").forEach(node => {
       examples.push({
         code: node.childrenToString(),

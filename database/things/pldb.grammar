@@ -396,6 +396,13 @@ githubLanguageNode
  cruxFromId
  int sortIndex 491
  string sourceDomain github.com
+leachim6Node
+ extends abstractMultiwordGuidNode
+ description A link to this language in leachim6's hello-world project.
+ cruxFromId
+ string sourceDomain github.com/leachim6/hello-world
+ single
+ inScope fileExtensionsNode filepathNode exampleNode
 projectEulerNode
  extends abstractMultiwordGuidNode
  description Is this language one of the ones listed on https://projecteuler.net/?
@@ -727,6 +734,11 @@ stackOverflowSurveyPercentageUsingNode
  description What percentage of survey respondents report using this language?
  crux percentageUsing
  extends abstractDecimalNode
+filepathNode
+ crux filepath
+ extends abstractFactNode
+ catchAllCellType stringCell
+ cells keywordCell
 pygmentsFilenameNode
  crux filename
  extends abstractFactNode
@@ -1237,7 +1249,7 @@ pldbNode
  description A database about programming languages and related concepts.
  catchAllNodeType errorNode
  todo Should not have to manually list each node type here, but should be able to mark some tag as inscope
- inScope blankLineNode descriptionNode wikipediaNode equationNode exampleNode fileExtensionsNode githubLanguageNode abstractGitRepoUrlNode helloWorldCollectionNode statusNode creatorsNode appearedNode announcementUrlNode countryNode titleNode wordRankNode standsForNode akaNode psuedoExampleNode featureKeywordNode featuresNode referenceNode replitNode tryItOnlineNode twitterNode typeNode websiteNode wikipediaNode fileTypeNode linguistGrammarRepoNode tiobeNode meetupNode webReplNode linkedInSkillNode projectEulerNode hoplNode subredditNode redditDiscussionNode quineRelayNode ubuntuPackageNode codeMirrorNode rosettaCodeNode antlrNode corporateDevelopersNode cheatSheetUrlNode isOpenSourceNode indeedJobsNode hackerNewsDiscussionsNode firstAnnouncementNode announcementMethodNode abstractRelationshipNode packageCountNode packageInstallsNode packageRepositoryNode packageAuthorsNode packagesIncludingVersionsNode forLanguagesNode conferenceNode abstractCommonKeywordNode languageServerProtocolProjectNode abstractParadigmNode latestReleaseNode nativeLanguageNode jupyterKernelNode keywordsNode stackOverflowSurveyNode centralPackageRepositoryCountNode gdbSupportNode rijuReplNode esolangNode goodreadsNode dblpNode abstractFlagNode oldNameNode pygmentsHighlighterNode
+ inScope blankLineNode descriptionNode wikipediaNode equationNode exampleNode fileExtensionsNode githubLanguageNode abstractGitRepoUrlNode helloWorldCollectionNode statusNode creatorsNode appearedNode announcementUrlNode countryNode titleNode wordRankNode standsForNode akaNode psuedoExampleNode featureKeywordNode featuresNode referenceNode replitNode tryItOnlineNode twitterNode typeNode websiteNode wikipediaNode fileTypeNode linguistGrammarRepoNode tiobeNode meetupNode webReplNode linkedInSkillNode projectEulerNode hoplNode subredditNode redditDiscussionNode quineRelayNode ubuntuPackageNode codeMirrorNode rosettaCodeNode antlrNode corporateDevelopersNode cheatSheetUrlNode isOpenSourceNode indeedJobsNode hackerNewsDiscussionsNode firstAnnouncementNode announcementMethodNode abstractRelationshipNode packageCountNode packageInstallsNode packageRepositoryNode packageAuthorsNode packagesIncludingVersionsNode forLanguagesNode conferenceNode abstractCommonKeywordNode languageServerProtocolProjectNode abstractParadigmNode latestReleaseNode nativeLanguageNode jupyterKernelNode keywordsNode stackOverflowSurveyNode centralPackageRepositoryCountNode gdbSupportNode rijuReplNode esolangNode goodreadsNode dblpNode abstractFlagNode oldNameNode pygmentsHighlighterNode leachim6Node
  pattern [\w-]\.pldb$
  cells fileNameCell
  example

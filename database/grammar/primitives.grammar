@@ -116,3 +116,8 @@ blankLineNode
   stringTemplate 
  pattern ^$
  tags doNotSynthesize
+filepathNode
+ crux filepath
+ extends abstractFactNode
+ catchAllCellType stringCell
+ cells keywordCell
