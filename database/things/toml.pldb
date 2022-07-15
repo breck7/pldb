@@ -63,3 +63,6 @@ features
   # A comment
  hasComments true
   # A comment
+pygmentsHighlighter TOML
+ filename configs.py
+ fileExtensions toml Pipfile poetry.lock

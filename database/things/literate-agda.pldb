@@ -100,3 +100,6 @@ features
   -- A comment
  hasComments true
   -- A comment
+pygmentsHighlighter Literate Agda
+ filename haskell.py
+ fileExtensions lagda

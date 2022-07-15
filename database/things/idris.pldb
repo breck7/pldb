@@ -128,3 +128,6 @@ rijuRepl https://riju.codes/idris
   main : IO ()
   main = putStrLn "Hello, world!"
   
+pygmentsHighlighter Idris
+ filename haskell.py
+ fileExtensions idr

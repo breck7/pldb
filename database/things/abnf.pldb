@@ -247,3 +247,6 @@ features
   ; A comment
  hasComments true
   ; A comment
+pygmentsHighlighter ABNF
+ filename grammar_notation.py
+ fileExtensions abnf

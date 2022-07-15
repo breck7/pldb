@@ -261,3 +261,6 @@ rijuRepl https://riju.codes/c
  fileExtensions c h
  githubRepo https://github.com/llvm/llvm-project
 multiLineCommentKeywords /* */
+pygmentsHighlighter C
+ filename c_cpp.py
+ fileExtensions c h idc x[bp]m
