@@ -586,6 +586,7 @@ class Builder extends AbstractBuilder {
 
   @benchmark
   buildAcknowledgementsPage() {
+    pldbBase.loadFolder()
     const sources = Array.from(
       new Set(
         Disk.read(pldbBase.dir + "pldb.grammar")
@@ -602,6 +603,37 @@ class Builder extends AbstractBuilder {
     const path = __dirname + "/blog/posts/acknowledgements.scroll"
     const page = new TreeNode(Disk.read(path))
     replaceNext(page, "comment autogenAcknowledgements", table)
+
+    let writtenIn = [
+      "javascript",
+      "nodejs",
+      "html",
+      "css",
+      "treenotation",
+      "scrolldown",
+      "grammar",
+      "python",
+      "bash",
+      "markdown",
+      "json",
+      "typescript",
+      "png-format",
+      "svg",
+      "gitignore"
+    ].map(s => pldbBase.getFile(pldbBase.searchForEntity(s)))
+
+    writtenIn = lodash.sortBy(writtenIn, "rank")
+
+    const text = writtenIn
+      .map(file => ` - <a href="languages/${file.id}.html">${file.title}</a>`)
+      .join("\n")
+
+    replaceNext(
+      page,
+      "comment autogenWrittenIn",
+      `list
+${text}`
+    )
 
     const npmPackages = Object.keys({
       ...require("./package.json").dependencies,
