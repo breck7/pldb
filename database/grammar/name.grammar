@@ -21,3 +21,7 @@ akaNode
  extends abstractStringNode
  cruxFromId
  boolean multipleOk true
+oldNameNode
+ description What is the old name of this language?
+ extends abstractStringNode
+ cruxFromId
