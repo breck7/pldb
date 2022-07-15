@@ -126,6 +126,16 @@ class PLDBFile extends TreeBaseFile {
     return this.base.getFileAtRank(this.rank + 1)
   }
 
+  get exampleCount() {
+    return this.allExamples.length + this.feauturesWithExamples.length
+  }
+
+  get feauturesWithExamples() {
+    const featuresTable = this.getNode(`features`)
+    if (!featuresTable) return []
+    return featuresTable.filter(node => node.length)
+  }
+
   get allExamples(): Example[] {
     const examples: Example[] = []
 
@@ -595,6 +605,12 @@ class PLDBBaseFolder extends TreeBaseFolder {
     Disk.write(this._getDir() + "/" + id + ".pldb", content)
   }
 
+  get exampleCounts() {
+    const counts = new Map<string, number>()
+    this.forEach(file => counts.set(file.id, file.exampleCount))
+    return counts
+  }
+
   toObjectsForCsv() {
     // todo: sort columns by importance
     const program = this.parsed
@@ -607,9 +623,11 @@ class PLDBBaseFolder extends TreeBaseFolder {
     })
     const objects = program.map(nodeToFlatObject)
     const ranks = this._getRanks()
+    const { exampleCounts } = this
     // Add ranks
     objects.forEach(obj => {
       obj.rank = ranks[obj.id].index
+      obj.exampleCount = exampleCounts.get(obj.id)
     })
 
     return lodash.sortBy(objects, "rank")
