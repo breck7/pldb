@@ -1,7 +1,11 @@
-title koka
+title Koka
 appeared 2012
 type pl
 creators Daan Leijen
+
+description A strongly typed functional-style language with effect types and handlers.
+
+compilesTo c
 
 githubRepo https://github.com/koka-lang/koka
  stars 2190
@@ -16,6 +20,8 @@ githubRepo https://github.com/koka-lang/koka
 website https://www.microsoft.com/en-us/research/project/koka/?from=http%3A%2F%2Fresearch.microsoft.com%2Fen-us%2Fprojects%2Fkoka
 status active
 
+reference https://koka-lang.github.io/koka/doc/book.html
+
 tryItOnline koka
 
 fileType text
@@ -27,3 +33,11 @@ centralPackageRepositoryCount 0
 pygmentsHighlighter Koka
  filename haskell.py
  fileExtensions kk kki
+
+lineCommentKeyword //
+example
+ fun hello-ten()
+   var i := 0
+   while { i < 10 }
+     println("hello")
+     i := i + 1
