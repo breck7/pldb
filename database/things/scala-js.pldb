@@ -48,3 +48,5 @@ example
   def fullName(): String =
     s"$firstName $lastName"
  }
+features
+ hasPrintDebugging true

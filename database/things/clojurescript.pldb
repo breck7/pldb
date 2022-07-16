@@ -43,3 +43,5 @@ pygmentsHighlighter ClojureScript
  filename jvm.py
  fileExtensions cljs
 printKeyword println
+features
+ hasPrintDebugging true

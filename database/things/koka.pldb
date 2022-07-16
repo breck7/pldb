@@ -42,3 +42,5 @@ example
      println("hello")
      i := i + 1
 printKeyword println
+features
+ hasPrintDebugging true
