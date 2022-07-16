@@ -39,6 +39,23 @@ class PLDBUpdater {
       })
   }
 
+  scanExamplesForPrintKeywordCommand() {
+    const regex = /(\w*print\w*)/i
+    pldbBase
+      .filter(file => file.isLanguage)
+      .filter(file => !file.has("printKeyword"))
+      .filter(file => file.allExamples.length)
+      .forEach(file => {
+        const examples = file.allExamples.map(code => code.code)
+        let hit
+        if ((hit = examples.find(code => code.match(regex)))) {
+          const match = hit.match(regex)
+          file.set("printKeyword", match[1])
+          file.save()
+        }
+      })
+  }
+
   updateCommentsCommand() {
     pldbBase
       .filter(file => file.isLanguage)
