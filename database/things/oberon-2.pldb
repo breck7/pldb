@@ -81,3 +81,4 @@ leachim6 Oberon 2
     Out.String( "Hello World" );
     Out.Ln;
   END HelloWorld.
+printKeyword Out.String

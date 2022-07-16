@@ -46,3 +46,4 @@ leachim6 Miranda
   main :: [sys_message]
   main = [Stdout "Hello World"]
   
+printKeyword Stdout

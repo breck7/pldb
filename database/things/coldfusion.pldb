@@ -126,3 +126,4 @@ leachim6 ColdFusion
   <cfset message = "Hello World">
   <cfoutput> #message#</cfoutput>
   
+printKeyword cfoutput
