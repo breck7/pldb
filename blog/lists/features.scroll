@@ -18,7 +18,7 @@ pipeTable
  feature|featureLink|aka|psuedoExample|languages
  Comments|../languages/comment-feature.html||# a comment|489
  Line Comments|../languages/line-comments-feature.html||# from here to end of line is a comment|436
- Print Debugging|../languages/print-debugging-feature.html||print "Hi"|306
+ Print() Debugging|../languages/print-debugging-feature.html||print "Hi"|306
  Semantic Indentation|../languages/semantic-indentation-feature.html||if true(newline/space)print True|53
  Strings|../languages/strings-feature.html||"hi"|30
  Operator Overloading|../languages/operator-overloading-feature.html||def __add__(): doSomethingDifferent()|30
