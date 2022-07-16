@@ -1,0 +1,68 @@
+title ColdFusion Components
+appeared 1995
+type xmlFormat
+pygmentsHighlighter Coldfusion CFC
+ filename templates.py
+ fileExtensions cfc
+related cfml coldfusion
+reference https://helpx.adobe.com/coldfusion/developing-applications/building-blocks-of-coldfusion-applications/building-and-using-coldfusion-components.html
+reference https://helpx.adobe.com/coldfusion/developing-applications/building-blocks-of-coldfusion-applications/building-and-using-coldfusion-components/cfc-variables-and-scope.html
+example
+ <cfcomponent> 
+ <cffunction name="allemployees" access="public" output="false" 
+ returntype="query"> 
+ <cfset var getNames=""> 
+ <cfquery name="getNames" datasource="cfdocexamples"> 
+ SELECT * FROM Employee 
+ </cfquery> 
+ </cffunction> 
+ <cffunction name="namesalarycontract" access="public" output="false" 
+ returntype="query"> 
+ <cfset var EmpList=""> 
+ <cfquery name="EmpList" datasource="cfdocexamples"> 
+ SELECT Firstname, Lastname, Salary, Contract 
+ FROM Employee 
+ </cfquery> 
+ </cffunction> 
+ <cffunction name="fullname" access="public" output="false" 
+ returntype="query"> 
+ <cfset var engquery=""> 
+ <cfquery name="engquery" datasource="cfdocexamples"> 
+ SELECT FirstName || ' ' || LastName AS FullName 
+ FROM Employee 
+ </cfquery> 
+ </cffunction> 
+ <cffunction name="bydept" access="public" output="false" returntype="query"> 
+ <cfset var deptquery=""> 
+ <cfquery name="deptquery" datasource="cfdocexamples"> 
+ SELECT Dept_ID, FirstName || ' ' || LastName 
+ AS FullName 
+ FROM Employee 
+ ORDER BY Dept_ID 
+ </cfquery> 
+ </cffunction> 
+ <cffunction name="employeebyURLID" access="public" output="false" 
+ returntype="query"> 
+ <cfset var GetRecordtoUpdate=""> 
+ <cfquery name="GetRecordtoUpdate" datasource="cfdocexamples"> 
+ SELECT * FROM Employee 
+ WHERE Emp_ID = #URL.Emp_ID# 
+ </cfquery> 
+ </cffunction> 
+ <cffunction name="deleteemployee" access="public" output="false" 
+ returntype="void"> 
+ <cfset var DeleteEmployee=""> 
+ <cfquery name="DeleteEmployee" datasource="cfdocexamples"> 
+ DELETE FROM Employee 
+ WHERE Emp_ID = #Form.Emp_ID# 
+ </cfquery> 
+ </cffunction> 
+ <cffunction name="distinctlocs"access="public" output="false" 
+ returntype="query"> 
+ <cfset var GetDepartments=""> 
+ <cfquery name="GetDepartments" datasource="cfdocexamples"> 
+ SELECT DISTINCT Location 
+ FROM Departmt 
+ </cfquery> 
+ </cffunction> 
+ </cfcomponent>
