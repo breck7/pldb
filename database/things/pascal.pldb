@@ -29,6 +29,7 @@ features
       Writeln(Add('Hello, ', 'World!'));    (* Prints "Hello, World!" *)
   end.
  hasOperatorOverloading false
+ hasPrintDebugging true
 
 wikipedia https://en.wikipedia.org/wiki/Pascal_(programming_language)
  example

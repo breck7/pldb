@@ -28,3 +28,5 @@ leachim6 QuakeC
  example
   bprint("Hello World\n");
 printKeyword bprint
+features
+ hasPrintDebugging true

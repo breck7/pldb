@@ -157,7 +157,7 @@ features
  hasCaseInsensitiveIdentifiers false
  hasOperatorOverloading false
  hasReferences true
- hasPrintStatements true
+ hasPrintDebugging true
   console.log("Hi")
  hasInheritance true
   class B {}

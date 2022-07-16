@@ -18,6 +18,7 @@ pipeTable
  feature|featureLink|aka|psuedoExample|languages
  Comments|../languages/comment-feature.html||# a comment|489
  Line Comments|../languages/line-comments-feature.html||# from here to end of line is a comment|436
+ Print Debugging|../languages/print-debugging-feature.html||print "Hi"|274
  Semantic Indentation|../languages/semantic-indentation-feature.html||if true(newline/space)print True|53
  Strings|../languages/strings-feature.html||"hi"|30
  Operator Overloading|../languages/operator-overloading-feature.html||def __add__(): doSomethingDifferent()|30
@@ -32,7 +33,6 @@ pipeTable
  Garbage Collection|../languages/garbage-collection-feature.html||var iDontNeedToFreeThis|11
  Message Passing|../languages/message-passing-feature.html||"get homepage"|10
  Macros|../languages/macros-feature.html||#define height 10|10
- Print Statements|../languages/print-statements-feature.html||print "Hi"|9
  Identifiers|../languages/identifiers-feature.html||name = Bob|9
  Static Typing|../languages/static-typing-feature.html||int score = 100|7
  Single Dispatch|../languages/single-dispatch-feature.html||person.run()|7

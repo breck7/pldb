@@ -180,7 +180,7 @@ export interface patternsNode {
   "hasPolymorphism?"?: any
   "hasPostfixNotation?"?: any
   "hasPrefixNotation?"?: any
-  "hasPrintStatements?"?: any
+  "hasPrintDebugging?"?: any
   "hasProcessorRegisters?"?: any
   "hasProtected?"?: any
   "hasQuoteEscaping?"?: any
@@ -386,7 +386,7 @@ export enum patternsNodeKeywords {
   "hasPolymorphicListType?" = "hasPolymorphicListType?",
   "hasPostfixNotation?" = "hasPostfixNotation?",
   "hasPrefixNotation?" = "hasPrefixNotation?",
-  "hasPrintStatements?" = "hasPrintStatements?",
+  "hasPrintDebugging?" = "hasPrintDebugging?",
   "hasProtected?" = "hasProtected?",
   "hasQuotedRawStrings?" = "hasQuotedRawStrings?",
   "hasQuoteEscaping?" = "hasQuoteEscaping?",

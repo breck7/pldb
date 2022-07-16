@@ -8,6 +8,7 @@ features
  hasPostfixNotation true
  hasLineComments true
   % A comment
+ hasPrintDebugging true
 
 description Postscript is a graphical page description language invented by ChuckGetsche and JohnWarnock (the President and CEO of Adobe). Its syntax looks a little bit like Forth, because it is derived from Forth; however, Postscript's internal implementation has nothing to do with Forth.
 

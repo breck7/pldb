@@ -44,6 +44,7 @@ features
   let force2 = 5.0<N>
   
   force1 = force2 // true
+ hasPrintDebugging true
 
 wikipedia https://en.wikipedia.org/wiki/F_Sharp_(programming_language)
  example

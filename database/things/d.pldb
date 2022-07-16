@@ -19,6 +19,7 @@ features
   TCopy!(int).copy(i, 3);
  hasLineComments true
   // A comment
+ hasPrintDebugging true
 
 wikipedia https://en.wikipedia.org/wiki/D_(programming_language)
  example

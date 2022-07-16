@@ -92,3 +92,5 @@ leachim6 Oberon
   END HelloWorld.
   
 printKeyword Out.String
+features
+ hasPrintDebugging true

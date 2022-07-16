@@ -51,7 +51,7 @@ features
  hasMacros true
   https://doc.rust-lang.org/book/ch19-06-macros.html
  hasOperatorOverloading true
- hasPrintStatements true
+ hasPrintDebugging true
   println!("Hi");
  hasSemanticIndentation false
  hasTypeInference true

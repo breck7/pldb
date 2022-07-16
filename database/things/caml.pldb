@@ -41,3 +41,5 @@ leachim6 CAML
   print_endline "Hello World";;
   
 printKeyword print_endline
+features
+ hasPrintDebugging true

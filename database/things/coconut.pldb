@@ -24,6 +24,7 @@ features
   addpattern def size(Leaf(n)) = 1
   
   addpattern def size(Node(l, r)) = size(l) + size(r)
+ hasPrintDebugging true
 
 githubRepo https://github.com/evhub/coconut
  stars 3495

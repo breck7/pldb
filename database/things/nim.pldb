@@ -11,6 +11,7 @@ features
  hasStaticTyping true
  hasLineComments true
   # A comment
+ hasPrintDebugging true
 
 compilesTo c cpp objective-c javascript
 

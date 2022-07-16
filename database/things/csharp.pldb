@@ -15,7 +15,7 @@ features
   int i = 42;
  hasIdentifiers true
   int i = 42;
- hasPrintStatements true
+ hasPrintDebugging true
   Console.WriteLine("This is C#");
  hasMultiLineComments true
   /*

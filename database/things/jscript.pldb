@@ -31,3 +31,5 @@ leachim6 JScript
  example
   WScript.Echo("Hello World");
 printKeyword WScript.Echo
+features
+ hasPrintDebugging true

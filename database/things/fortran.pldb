@@ -10,7 +10,7 @@ features
   C
   C Lines that begin with 'C' (in the first or 'comment' column) are comments
   C
- hasPrintStatements true
+ hasPrintDebugging true
   C     Hello World in Fortran
   
         PROGRAM HELLO

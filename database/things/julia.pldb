@@ -23,7 +23,7 @@ features
   true
  hasIntegers true
   1
- hasPrintStatements true
+ hasPrintDebugging true
   print("hello world")
  hasImports true
   # Files and file names are mostly unrelated to modules; modules are associated only with module expressions.

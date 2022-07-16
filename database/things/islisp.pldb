@@ -25,3 +25,5 @@ leachim6 ISLISP
   (format (standard-output) "Hello World")
   
 printKeyword standard-output
+features
+ hasPrintDebugging true

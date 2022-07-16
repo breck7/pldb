@@ -27,3 +27,5 @@ leachim6 CLISP
  example
   (write-line "Hello World")
 printKeyword write-line
+features
+ hasPrintDebugging true

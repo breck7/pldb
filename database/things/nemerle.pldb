@@ -17,6 +17,7 @@ features
   WriteLine($"Area of 1 cm * 10 m = $x1 m");
  hasLineComments true
   // A comment
+ hasPrintDebugging true
 
 wikipedia https://en.wikipedia.org/wiki/Nemerle
  example

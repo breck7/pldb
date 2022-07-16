@@ -179,7 +179,7 @@ features
  hasMultipleInheritance true
  hasOperatorOverloading true
  hasReferences true
- hasPrintStatements true
+ hasPrintDebugging true
   cout<<"hello world." << std::endl;
  hasTemplates true
   template <int length>

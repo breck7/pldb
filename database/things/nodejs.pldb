@@ -13,6 +13,7 @@ features
   const jtree = require("jtree")
  hasStreams true
   const stream = require('stream');
+ hasPrintDebugging true
 
 wikipedia https://en.wikipedia.org/wiki/nodejs
  related c javascript linux freebsd npm-pm tcp tls udp ecmascript unix coffeescript dart typescript php mps visual-studio-editor eclipse-editor visual-studio-code-editor postgresql mongodb json

@@ -52,3 +52,5 @@ leachim6 Zig
       try stdout.print("Hello World", .{});
   }
 printKeyword stdout.print
+features
+ hasPrintDebugging true

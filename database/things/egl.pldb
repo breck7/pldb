@@ -65,3 +65,5 @@ leachim6 Egl
   end
   
 printKeyword SysLib.writeStdout
+features
+ hasPrintDebugging true

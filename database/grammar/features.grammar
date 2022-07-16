@@ -329,7 +329,7 @@ hasPostfixNotationNode
  extends abstractFeatureNode
 hasPrefixNotationNode
  extends abstractFeatureNode
-hasPrintStatementsNode
+hasPrintDebuggingNode
  extends abstractFeatureNode
 hasProtectedNode
  extends abstractFeatureNode

@@ -67,7 +67,7 @@ features
       }
   }
  hasOperatorOverloading false
- hasPrintStatements true
+ hasPrintDebugging true
   console.log("Hi")
  hasInheritance true
   class B {}

@@ -62,6 +62,19 @@ class PLDBUpdater {
       })
   }
 
+  updatePrintsCommand() {
+    pldbBase
+      .filter(file => file.isLanguage)
+      .filter(
+        file =>
+          file.has("printKeyword") && !file.get("features hasPrintDebugging")
+      )
+      .forEach(file => {
+        file.set("features hasPrintDebugging", "true")
+        file.save()
+      })
+  }
+
   updateCommentsCommand() {
     pldbBase
       .filter(file => file.isLanguage)

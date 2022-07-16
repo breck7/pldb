@@ -117,3 +117,5 @@ leachim6 Lean
  example
   #print "Hello World"
 printKeyword #print
+features
+ hasPrintDebugging true

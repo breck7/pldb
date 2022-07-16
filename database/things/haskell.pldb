@@ -59,6 +59,7 @@ features
  hasFunctionComposition true
   foo = f . g
  hasRangeOperators true
+ hasPrintDebugging true
 
 wikipedia https://en.wikipedia.org/wiki/Haskell_(programming_language)
  example
