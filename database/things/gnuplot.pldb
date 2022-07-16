@@ -1,6 +1,6 @@
 title Gnuplot
 appeared 1986
-type application
+type pl
 
 wikipedia https://en.wikipedia.org/wiki/Gnuplot
  example
@@ -68,3 +68,6 @@ rijuRepl https://riju.codes/gnuplot
 pygmentsHighlighter Gnuplot
  filename graphics.py
  fileExtensions plot plt
+printKeyword print
+features
+ hasPrintDebugging true
