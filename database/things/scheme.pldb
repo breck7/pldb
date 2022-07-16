@@ -15,6 +15,9 @@ features
   (+ 1 2 3)
  hasHomoiconicity true
  hasPrintDebugging true
+ hasMultiLineComments true
+  #| A comment
+  |#
 
 wikipedia https://en.wikipedia.org/wiki/Scheme_(programming_language)
  example

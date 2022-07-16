@@ -4,6 +4,7 @@ type textMarkup
 
 features
  hasComments true
+ hasMultiLineComments false
  hasLineComments true
   % A comment
 

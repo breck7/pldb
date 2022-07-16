@@ -42,6 +42,9 @@ features
   // A comment
  hasMessagePassing true
  hasPrintDebugging true
+ hasMultiLineComments true
+  /* A comment
+  */
 
 wikipedia https://en.wikipedia.org/wiki/Scala_(programming_language)
  example

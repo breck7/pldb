@@ -90,6 +90,9 @@ features
   declare type numOrString = string | number
  hasComments true
   // A comment
+ hasMultiLineComments true
+  /* A comment
+  */
 
 wikipedia https://en.wikipedia.org/wiki/TypeScript
  example

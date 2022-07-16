@@ -8,6 +8,9 @@ features
  hasTypeInference true
  hasLineComments true
   // A comment
+ hasMultiLineComments true
+  /* A comment
+  */
 
 wikipedia https://en.wikipedia.org/wiki/Haxe
  example
@@ -115,3 +118,4 @@ leachim6 Haxe
           trace("Hello World");
       }
   }
+multiLineCommentKeywords /* */

@@ -12,6 +12,9 @@ features
  hasLineComments true
   // A comment
  hasPrintDebugging true
+ hasMultiLineComments true
+  /* A comment
+  */
 
 wikipedia https://en.wikipedia.org/wiki/Chapel_(programming_language)
  related ada csharp c fortran java fortress unified-parallel-c x10 isbn
@@ -86,3 +89,4 @@ leachim6 Chapel
   writeln("Hello World");
   
 printKeyword writeln
+multiLineCommentKeywords /* */
