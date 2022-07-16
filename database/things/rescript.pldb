@@ -29,3 +29,4 @@ leachim6 ReScript
  fileExtensions res
  example
   Js.log("Hello World")
+printKeyword Js.log
