@@ -1,0 +1,30 @@
+title Invisible XML
+description Invisible XML is a language for describing the implicit structure of data, and a set of technologies for making that structure explicit as XML markup. It allows you to write a declarative description of the format of some text and then leverage that format to represent the text as structured information.
+aka ixml
+related xml
+type grammarLanguage
+website https://invisiblexml.org/
+reference https://news.ycombinator.com/item?id=32120230
+appeared 2020
+creators Steven Pemberton
+githubRepo https://github.com/invisiblexml/ixml/
+ stars 15
+ forks 6
+ subscribers 9
+ created 2020
+ updated 2022
+ description Invisible XML
+ issues 7
+example
+ url: scheme, ":", authority, path.
+ 
+ scheme: letter+.
+ 
+ authority: "//", host.
+ host: sub++".".
+ sub: letter+.
+ 
+ path: ("/", seg)+.
+ seg: fletter*.
+ -letter: ["a"-"z"]; ["A"-"Z"]; ["0"-"9"].
+ -fletter: letter; ".".
