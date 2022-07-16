@@ -422,19 +422,20 @@ class PLDBBaseFolder extends TreeBaseFolder {
 
   searchForEntityByFileExtensions(extensions: string[] = []) {
     const { extensionsMap } = this
-    return extensions.find(ext => extensionsMap.get(ext))
+    const hit = extensions.find(ext => extensionsMap.has(ext))
+    return extensionsMap.get(hit)
   }
 
   @imemo
   get extensionsMap() {
     const extensionsMap = new Map<string, string>()
-    this.base.topLanguages
+    this.topLanguages
       .slice(0)
       .reverse()
       .forEach(file => {
         file.extensions
           .split(" ")
-          .forEach(ext => this._extensionsMap.set(ext, file.id))
+          .forEach(ext => extensionsMap.set(ext, file.id))
       })
 
     return extensionsMap

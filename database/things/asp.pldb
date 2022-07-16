@@ -71,3 +71,6 @@ leachim6 ASP
 printKeyword Response.Write
 features
  hasPrintDebugging true
+pygmentsHighlighter aspx-vb
+ filename dotnet.py
+ fileExtensions aspx asax ascx ashx asmx axd

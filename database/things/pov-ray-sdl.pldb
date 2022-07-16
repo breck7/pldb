@@ -1,6 +1,7 @@
 title POV-Ray SDL
 appeared 1991
 type pl
+aka POVRay
 
 githubLanguage POV-Ray SDL
  fileExtensions pov inc
@@ -94,3 +95,6 @@ features
   // A comment
  hasComments true
   // A comment
+pygmentsHighlighter POVRay
+ filename graphics.py
+ fileExtensions pov inc

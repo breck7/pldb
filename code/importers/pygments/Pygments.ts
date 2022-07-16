@@ -15,6 +15,8 @@ class PygmentsImporter {
 	writeAllCommand() {
 		this.matches.forEach(entry => {
 			const { file } = entry
+			if (file.has("pygmentsHighlighter")) return
+
 			file.set("pygmentsHighlighter", entry.name)
 			file.set("pygmentsHighlighter filename", entry.filename)
 
