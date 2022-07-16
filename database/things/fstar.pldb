@@ -49,3 +49,4 @@ leachim6 FStar
   module Hello
   
   let main = FStar.IO.print_string "Hello World\n"
+printKeyword FStar.IO.print_string
