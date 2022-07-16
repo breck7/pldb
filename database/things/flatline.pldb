@@ -2,7 +2,17 @@ title Flatline
 type pl
 description Flatline is a lispy language for the specification of values to be extracted or generated from an input dataset, using a finite sliding window of input rows.
 githubRepo https://github.com/bigmlcom/flatline
+ firstCommit 2013
+ stars 26
+ forks 14
+ subscribers 13
+ created 2013
+ updated 2022
+ description Documentation, examples and utilities for Flatlline, BigML's dataset transformation and generation language
+ issues 0
 pygmentsHighlighter Flatline
  filename dsls.py
 example
  (if (missing? "00000") (random-value "000000") (f "000000"))
+website http://bigmlcom.github.io/flatline
+appeared 2013

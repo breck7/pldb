@@ -1,9 +1,9 @@
 title Tao
 type pl
 githubRepo https://github.com/zesterer/tao
- stars 536
- forks 15
- subscribers 12
+ stars 408
+ forks 13
+ subscribers 10
  created 2020
  updated 2022
  description A statically-typed functional language with generics, typeclasses, sum types, pattern-matching, first-class functions, currying, algebraic effects, associated types, good diagnostics, etc.
@@ -16,3 +16,4 @@ example
  fn factorial =
     | 0 => 1
     \ y ~ x + 1 => y * factorial(x)
+creators Joshua Barretto

@@ -219,7 +219,9 @@ class GitHubImporter {
 		const crawler = new PoliteCrawler()
 		crawler.maxConcurrent = 2
 		await crawler.fetchAll(
-			this.linkedFiles.map(file => new PLDBFileWithGitHub(file))
+			this.linkedFiles
+				.filter(file => !file.getNode("githubRepo").length)
+				.map(file => new PLDBFileWithGitHub(file))
 		)
 	}
 
