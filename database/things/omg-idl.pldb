@@ -1,0 +1,21 @@
+title OMG IDL
+type idl
+standsFor OMG Interface Definition Language
+website https://www.omg.org/spec/IDL/About-IDL/
+pygmentsHighlighter OMG Interface Definition Language
+ filename c_like.py
+ fileExtensions idl pidl
+example
+ interface A {
+     typedef long L1;
+     short opA (in L1 l_1);
+ };
+ interface B {
+     typedef short L1;
+     L1 opB (in long l);
+ };
+ interface C: B, A {
+     typedef L1 L2; // Error: L1 ambiguous
+     typedef A::L1 L3; // A::L1 is OK
+     B::L1 opC (in L3 l_3); // All OK no ambiguities
+ };

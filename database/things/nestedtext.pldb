@@ -1,0 +1,44 @@
+title NestedText
+type dataNotation
+related yaml
+website https://nestedtext.org
+githubRepo https://github.com/KenKundert/nestedtext
+ firstCommit 2020
+ stars 270
+ forks 11
+ subscribers 9
+ created 2020
+ updated 2022
+ description Human Readable and Writable Data Interchange Format
+ issues 3
+pygmentsHighlighter NestedText
+ filename configs.py
+ fileExtensions nt
+lineCommentKeyword #
+example
+ # Contact information for our officers
+ 
+ Katheryn McDaniel:
+     position: president
+     address:
+         > 138 Almond Street
+         > Topeka, Kansas 20697
+     phone:
+         cell: 1-210-555-5297
+         home: 1-210-555-8470
+             # Katheryn prefers that we always call her on her cell phone.
+     email: KateMcD@aol.com
+     additional roles:
+         - board member
+ 
+ Margaret Hodge:
+     position: vice president
+     address:
+         > 2586 Marigold Lane
+         > Topeka, Kansas 20682
+     phone: 1-470-555-0398
+     email: margaret.hodge@ku.edu
+     additional roles:
+         - new membership task force
+         - accounting task force
+appeared 2020

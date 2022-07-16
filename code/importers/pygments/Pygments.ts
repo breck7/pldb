@@ -58,9 +58,12 @@ class PygmentsImporter {
 		this.misses
 			.filter(hit => hit.url)
 			.forEach(miss => {
+				const website = miss.url.includes("github")
+					? `githubRepo ${miss.url}`
+					: `website ${miss.url}`
 				const newFile = pldbBase.createFile(`title ${miss.name}
 type pl
-website ${miss.url}`)
+${website}`)
 				this.writeOne(newFile, miss)
 			})
 	}

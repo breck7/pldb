@@ -1,0 +1,8 @@
+title Procfile
+type pl
+website https://devcenter.heroku.com/articles/procfile#procfile-format
+example
+ web: bundle exec rails server -p $PORT
+pygmentsHighlighter Procfile
+ filename procfile.py
+ fileExtensions Procfile

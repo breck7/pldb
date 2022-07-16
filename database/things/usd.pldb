@@ -1,0 +1,17 @@
+title USD
+standsFor Universal Scene Description
+type pl
+corporateDevelopers Pixar
+website https://graphics.pixar.com/usd/release/index.html
+pygmentsHighlighter USD
+ filename usd.py
+ fileExtensions usd usda
+example
+ #usda 1.0
+ 
+ def Xform "hello"
+ {
+     def Sphere "world"
+     {
+     }
+ }

@@ -1,0 +1,13 @@
+title Kal
+type pl
+description Kal is a highly readable, easy-to-use language that compiles to JavaScript.
+compilesTo javascript
+website http://rzimmerman.github.io/kal
+pygmentsHighlighter Kal
+ filename javascript.py
+ fileExtensions kal
+example
+ task getUserFriends (userName)
+  wait for user from db.users.findOne {name:userName}
+  wait for friends from db.friends.find {userId:user.id}
+  return friends

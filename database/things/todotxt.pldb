@@ -1,0 +1,11 @@
+title Todotxt
+type dataNotation
+website http://todotxt.com/
+example
+ (A) Thank Mom for the meatballs @phone
+ (B) Schedule Goodwill pickup +GarageSale @phone
+ Post signs around the neighborhood +GarageSale
+ @GroceryStore Eskimo pies
+pygmentsHighlighter Todotxt
+ filename textfmts.py
+ fileExtensions todo.txt todotxt

@@ -1,6 +1,6 @@
 title Nginx
 appeared 2004
-type application
+type configFormat
 
 example
  #user  nobody;
@@ -307,3 +307,6 @@ isOpenSource true
 codeMirror nginx
 
 centralPackageRepositoryCount 0
+pygmentsHighlighter Nginx configuration file
+ filename configs.py
+ fileExtensions nginx.conf
