@@ -40,20 +40,21 @@ class PLDBUpdater {
   }
 
   scanExamplesForPrintKeywordCommand() {
-    const regex = /([\w\.\:\$]*out\w*)/i
+    // print put puts out log write
+    const regex = /([\w\.\:\$]*print\w*)/i
     pldbBase
       .filter(file => file.isLanguage)
       .filter(file => !file.has("printKeyword"))
       .filter(file => file.allExamples.length)
       .forEach(file => {
         const examples = file.allExamples
-          .filter(c => c.source === "hello-world")
+          //.filter(c => c.source === "hello-world")
           .map(code => code.code)
         let hit
-        if (!examples[0]) return
-        if (examples[0].split("\n").length > 3) return
-        console.log(file.id, examples[0])
-        return
+        // if (!examples[0]) return
+        // if (examples[0].split("\n").length > 3) return
+        //console.log(file.id, examples[0])
+        //return
         if ((hit = examples.find(code => code.match(regex)))) {
           const match = hit.match(regex)
           file.set("printKeyword", match[1])
