@@ -6,6 +6,7 @@ features
  canWriteToDisk false
  hasLineComments false
 
+multiLineCommentKeywords <!-- -->
 wikipedia https://en.wikipedia.org/wiki/XML
  example
   <?xml version="1.0" encoding="ISO-8859-1" ?>
