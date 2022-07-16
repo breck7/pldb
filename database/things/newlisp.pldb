@@ -5,6 +5,7 @@ type pl
 features
  hasComments true
  hasPrintDebugging true
+ hasSemanticIndentation false
 
 wikipedia https://en.wikipedia.org/wiki/NewLISP
  related lisp common-lisp scheme pascal c tcl s-expressions xml utf-8 tcp udp linux solaris sqlite smtp ftp opengl

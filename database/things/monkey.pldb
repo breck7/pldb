@@ -103,6 +103,7 @@ features
  hasComments true
   ' A comment
  hasPrintDebugging true
+ hasSemanticIndentation false
 pygmentsHighlighter Monkey
  filename basic.py
  fileExtensions monkey

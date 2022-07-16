@@ -147,6 +147,7 @@ features
  hasComments true
   -- A comment
  hasPrintDebugging true
+ hasSemanticIndentation false
 pygmentsHighlighter MoonScript
  filename scripting.py
  fileExtensions moon

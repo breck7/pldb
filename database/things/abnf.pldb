@@ -247,6 +247,7 @@ features
   ; A comment
  hasComments true
   ; A comment
+ hasSemanticIndentation false
 pygmentsHighlighter ABNF
  filename grammar_notation.py
  fileExtensions abnf

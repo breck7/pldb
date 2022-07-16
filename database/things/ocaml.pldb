@@ -23,6 +23,7 @@ features
   (* A comment
   *)
  hasPrintDebugging true
+ hasSemanticIndentation false
 
 wikipedia https://en.wikipedia.org/wiki/OCaml
  example

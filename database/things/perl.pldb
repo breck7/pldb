@@ -37,6 +37,7 @@ features
   # https://users.cs.cf.ac.uk/Dave.Marshall/PERL/node38.html
   @array = (1..10);
  hasPrintDebugging true
+ hasSemanticIndentation false
 
 wikipedia https://en.wikipedia.org/wiki/Perl
  example

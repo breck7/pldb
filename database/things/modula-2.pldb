@@ -11,6 +11,7 @@ features
   (* A comment
   *)
  hasPrintDebugging true
+ hasSemanticIndentation false
 multiLineCommentKeywords (* *)
 wikipedia https://en.wikipedia.org/wiki/Modula-2
  example

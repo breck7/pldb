@@ -60,6 +60,7 @@ features
  hasComments true
   # A comment
  hasPrintDebugging true
+ hasSemanticIndentation false
 leachim6 Starlark
  filepath s/Starlark.star
  fileExtensions star

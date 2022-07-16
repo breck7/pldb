@@ -71,6 +71,7 @@ features
   ; A comment
  hasComments true
   ; A comment
+ hasSemanticIndentation false
 pygmentsHighlighter NASM
  filename asm.py
  fileExtensions asm ASM

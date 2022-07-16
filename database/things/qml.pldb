@@ -214,6 +214,7 @@ features
  hasMultiLineComments true
   /* A comment
   */
+ hasSemanticIndentation false
 pygmentsHighlighter QML
  filename webmisc.py
  fileExtensions qml qbs

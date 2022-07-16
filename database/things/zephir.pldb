@@ -96,6 +96,7 @@ features
  hasMultiLineComments true
   /* A comment
   */
+ hasSemanticIndentation false
 pygmentsHighlighter Zephir
  filename php.py
  fileExtensions zep

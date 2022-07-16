@@ -13,6 +13,7 @@ githubRepo https://github.com/mortie/jcof
 appeared 2022
 features
  hasComments false
+ hasSemanticIndentation false
 example
  Programmer;"age""first-name""full-time""occupation";
  {"people"[(0,iw"Bob"b"Plumber")(0,is"Alice"b,s0)(0,iA"Bernard"n,n)(0,iV"El"B,s0)]}

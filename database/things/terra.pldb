@@ -156,6 +156,7 @@ features
  hasComments true
   -- A comment
  hasPrintDebugging true
+ hasSemanticIndentation false
 leachim6 Terra
  filepath t/Terra.t
  fileExtensions t

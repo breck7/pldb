@@ -18,6 +18,7 @@ features
   # Comments start with a # and continue to the end of the line:
  hasLineComments true
   # A comment
+ hasSemanticIndentation false
 
 wikipedia https://en.wikipedia.org/wiki/RELAX_NG
  summary In computing, RELAX NG (REgular LAnguage for XML Next Generation) is a schema language for XML - a RELAX NG schema specifies a pattern for the structure and content of an XML document. A RELAX NG schema is itself an XML document but RELAX NG also offers a popular compact, non-XML syntax. Compared to other XML schema languages  RELAX NG is considered relatively simple. It was defined by a committee specification of the OASIS RELAX NG technical committee in 2001 and 2002, based on Murata Makoto's RELAX and James Clark's TREX, and also by part two of the international standard ISO/IEC 19757: Document Schema Definition Languages (DSDL). ISO/IEC 19757-2 was developed by ISO/IEC JTC1/SC34 and published in its first version in 2003.

@@ -13,6 +13,7 @@ features
   (* A comment
   *)
  hasLineComments false
+ hasSemanticIndentation false
 
 multiLineCommentKeywords (* *)
 multiLineCommentKeywords { }

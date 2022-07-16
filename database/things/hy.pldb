@@ -81,6 +81,7 @@ features
  hasComments true
   ; A comment
  hasPrintDebugging true
+ hasSemanticIndentation false
 pygmentsHighlighter Hy
  filename lisp.py
  fileExtensions hy

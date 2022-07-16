@@ -7,6 +7,7 @@ features
  hasLineComments true
   -- A comment
  hasPrintDebugging true
+ hasSemanticIndentation false
 
 description SETL is a general-purpose, high-level programming language in which sets and first-order mappings are fundamental to the syntax and semantics of the language. This lends great conciseness and readability to a wide range of applications, from basic data filtering and transformation to the abstract presentation of complex algorithms. SETL is particularly good for software prototyping.
 

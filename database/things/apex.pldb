@@ -6,6 +6,7 @@ features
  hasComments true
  hasLineComments true
   // A comment
+ hasSemanticIndentation false
 
 description Apex is a proprietary programming language provided by the Force.com platform to developers similar to Java and C#. It is a strongly typed, object-oriented, case-insensitive programming language, following a dot-notation and curly-brackets syntax. Apex can be used to execute programmed functions during most processes on the Force.com platform including custom buttons and links, event handlers on record insertion, update, or deletion, via scheduling, or via the custom controllers of Visualforce pages. Due to the multitenant nature of the platform, the language has strictly imposed governor limitations[61] to guard against any code monopolizing shared resources. Salesforce provides a series of asynchronous processing methods for Apex to allow developers to produce longer running and more complex Apex code.
 

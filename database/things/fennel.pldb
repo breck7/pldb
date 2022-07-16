@@ -32,6 +32,7 @@ features
  hasComments true
   ; A comment
  hasPrintDebugging true
+ hasSemanticIndentation false
 pygmentsHighlighter Fennel
  filename lisp.py
  fileExtensions fnl

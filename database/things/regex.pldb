@@ -4,6 +4,7 @@ type queryLanguage
 features
  hasComments false
  hasLineComments false
+ hasSemanticIndentation false
 subreddit regex
  memberCount
   2022 5278

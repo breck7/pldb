@@ -10,6 +10,7 @@ features
  hasComments true
  hasLineComments true
   ; A comment
+ hasSemanticIndentation false
 example
  []			; empty list
  #()			; empty map

@@ -36,6 +36,7 @@ features
  hasMultiLineComments false
  hasLineComments true
   “”” A comment
+ hasSemanticIndentation false
 
 description A type definition syntax to the GraphQL specification.
 reference https://github.com/graphql/graphql-spec/pull/90
