@@ -325,9 +325,9 @@ class Builder extends AbstractBuilder {
       toScrollTable(new TreeNode(topFeatures), [
         "feature",
         "featureLink",
-        "aka",
         "psuedoExample",
-        "languages"
+        "languages",
+        "percentage"
       ])
     )
 
