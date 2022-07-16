@@ -288,6 +288,28 @@ const benchmark: MethodDecorator = (
   }
 }
 
+// Memoization for immutable getters. Run the function once for this instance and cache the result.
+const imemo = <Type>(
+  target: unknown,
+  propertyName: string,
+  descriptor: TypedPropertyDescriptor<Type>
+): void => {
+  const originalFn = descriptor.get!
+  descriptor.get = function(this: Record<string, Type>): Type {
+    const propName = `${propertyName}_memoized`
+    if (this[propName] === undefined) {
+      // Define the prop the long way so we don't enumerate over it
+      Object.defineProperty(this, propName, {
+        configurable: false,
+        enumerable: false,
+        writable: false,
+        value: originalFn.apply(this)
+      })
+    }
+    return this[propName]
+  }
+}
+
 export {
   cleanAndRightShift,
   toCommaList,
@@ -309,5 +331,6 @@ export {
   rankSort,
   linkMany,
   benchmark,
-  benchmarkResults
+  benchmarkResults,
+  imemo
 }

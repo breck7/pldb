@@ -18,9 +18,7 @@ class PygmentsImporter {
 			file.set("pygmentsHighlighter", entry.name)
 			file.set("pygmentsHighlighter filename", entry.filename)
 
-			const extensions = entry.filenames
-				.map(ext => ext.replace("*.", ""))
-				.join(" ")
+			const extensions = entry.extensions.join(" ")
 			if (extensions) file.set("pygmentsHighlighter fileExtensions", extensions)
 			file.save()
 		})
@@ -30,15 +28,34 @@ class PygmentsImporter {
 		return Disk.readJson(outputFile)
 	}
 
+	get match() {
+		return this.data.map(entry => {
+			entry.extensions = entry.filenames.map(ext => ext.replace("*.", ""))
+			entry.filename = entry.filename.split("/").pop()
+			entry.pldbId =
+				pldbBase.searchForEntity(entry.name) ||
+				pldbBase.searchForEntityByFileExtensions(entry.extensions)
+
+			if (entry.pldbId) entry.file = pldbBase.getFile(entry.pldbId)
+			return entry
+		})
+	}
+
 	get matches() {
-		return this.data
-			.map(entry => {
-				entry.pldbId = pldbBase.searchForEntity(entry.name)
-				entry.filename = entry.filename.split("/").pop()
-				if (entry.pldbId) entry.file = pldbBase.getFile(entry.pldbId)
-				return entry
-			})
-			.filter(item => item.pldbId)
+		return this.match.filter(item => item.pldbId)
+	}
+
+	get misses() {
+		return this.match.filter(item => !item.pldbId)
+	}
+
+	listMissesCommand() {
+		console.log(
+			new jtree.TreeNode(this.misses).toDelimited(
+				",",
+				"name,lexer,filename,url".split(",")
+			)
+		)
 	}
 }
 

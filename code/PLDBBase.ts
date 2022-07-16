@@ -10,7 +10,8 @@ import {
   Ranking,
   Rankings,
   InverseRankings,
-  rankSort
+  rankSort,
+  imemo
 } from "./utils"
 
 const lodash = require("lodash")
@@ -417,6 +418,26 @@ class PLDBBaseFolder extends TreeBaseFolder {
     if (query === undefined || query === "") return
     const { searchIndex } = this
     return searchIndex.get(query) || searchIndex.get(getCleanedId(query))
+  }
+
+  searchForEntityByFileExtensions(extensions: string[] = []) {
+    const { extensionsMap } = this
+    return extensions.find(ext => extensionsMap.get(ext))
+  }
+
+  @imemo
+  get extensionsMap() {
+    const extensionsMap = new Map<string, string>()
+    this.base.topLanguages
+      .slice(0)
+      .reverse()
+      .forEach(file => {
+        file.extensions
+          .split(" ")
+          .forEach(ext => this._extensionsMap.set(ext, file.id))
+      })
+
+    return extensionsMap
   }
 
   getFile(id: string): PLDBFile | undefined {
