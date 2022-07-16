@@ -112,6 +112,9 @@ features
  hasComments true
   // A comment
  hasPrintDebugging true
+ hasMultiLineComments true
+  /* A comment
+  */
 pygmentsHighlighter AspectJ
  filename jvm.py
  fileExtensions aj

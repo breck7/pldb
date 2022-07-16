@@ -124,6 +124,9 @@ features
  hasComments true
   // A comment
  hasPrintDebugging true
+ hasMultiLineComments true
+  /* A comment
+  */
 leachim6 AngelScript
  filepath a/AngelScript
  example

@@ -412,6 +412,9 @@ features
  hasComments true
   // A comment
  hasPrintDebugging true
+ hasMultiLineComments true
+  /* A comment
+  */
 pygmentsHighlighter eC
  filename c_like.py
  fileExtensions ec eh

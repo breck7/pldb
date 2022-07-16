@@ -13,3 +13,8 @@ example
                 MySym = 3*L1            ; Symbol definition
         MaSym   = Label                 ; Another symbol
 lineCommentKeyword ;
+features
+ hasLineComments true
+  ; A comment
+ hasComments true
+  ; A comment

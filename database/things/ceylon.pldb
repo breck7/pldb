@@ -12,6 +12,9 @@ features
  hasComments true
   // A comment
  hasPrintDebugging true
+ hasMultiLineComments true
+  /* A comment
+  */
 
 wikipedia https://en.wikipedia.org/wiki/Ceylon_(programming_language)
  example

@@ -95,6 +95,9 @@ features
   // A comment
  hasComments true
   // A comment
+ hasMultiLineComments true
+  /* A comment
+  */
 pygmentsHighlighter POVRay
  filename graphics.py
  fileExtensions pov inc

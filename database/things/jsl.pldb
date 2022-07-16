@@ -11,3 +11,11 @@ reference https://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.433.6634&rep
 example
  a="Hello"; b=" "; c="World"; a||b||c;
  // "Hello World"
+features
+ hasLineComments true
+  // A comment
+ hasMultiLineComments true
+  /* A comment
+  */
+ hasComments true
+  // A comment

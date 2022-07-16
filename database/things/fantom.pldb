@@ -105,6 +105,9 @@ features
  hasComments true
   // A comment
  hasPrintDebugging true
+ hasMultiLineComments true
+  /* A comment
+  */
 pygmentsHighlighter Fantom
  filename fantom.py
  fileExtensions fan

@@ -14,3 +14,11 @@ githubRepo https://github.com/tailscale/hujson
 appeared 2019
 reference https://nigeltao.github.io/blog/2021/json-with-commas-comments.html
 creators David Crawshaw
+features
+ hasLineComments true
+  // A comment
+ hasMultiLineComments true
+  /* A comment
+  */
+ hasComments true
+  // A comment

@@ -96,6 +96,9 @@ features
   (a.b;)  ( 'a' '.' 'b' ';')  // Equivalent; four symbols
  hasLineComments true
   // A comment
+ hasMultiLineComments true
+  /* A comment
+  */
 
 example
  /* Ion supports comments. */

@@ -16,6 +16,9 @@ features
  hasComments true
   // A comment
  hasPrintDebugging true
+ hasMultiLineComments true
+  /* A comment
+  */
 
 githubLanguage Reason
  fileExtensions re rei
