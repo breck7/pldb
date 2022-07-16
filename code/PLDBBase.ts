@@ -633,8 +633,11 @@ class PLDBBaseFolder extends TreeBaseFolder {
     return this._getRanks()[file.id].index
   }
 
-  createFile(id: string, content: string) {
-    Disk.write(this._getDir() + "/" + id + ".pldb", content)
+  createFile(content: string, id?: string) {
+    id = id || getCleanedId(new TreeNode(content).get("title"))
+    const fullPath = this._getDir() + "/" + id + ".pldb"
+    Disk.write(fullPath, content)
+    return this.appendLineAndChildren(fullPath, content)
   }
 
   get exampleCounts() {

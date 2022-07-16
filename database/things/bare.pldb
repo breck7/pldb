@@ -1,0 +1,47 @@
+title BARE
+type idl
+website https://baremessages.org
+pygmentsHighlighter BARE
+ filename bare.py
+ fileExtensions bare
+description BARE is a simple binary representation for structured application data.
+example
+ type PublicKey data[128]
+ type Time str # ISO 8601
+ 
+ type Department enum {
+   ACCOUNTING
+   ADMINISTRATION
+   CUSTOMER_SERVICE
+   DEVELOPMENT
+ 
+   # Reserved for the CEO
+   JSMITH = 99
+ }
+ 
+ type Address list<str>[4] # street, city, state, country
+ 
+ type Customer struct {
+   name: str
+   email: str
+   address: Address
+   orders: list<struct {
+     orderId: i64
+     quantity: i32
+   }>
+   metadata: map<str><data>
+ }
+ 
+ type Employee struct {
+   name: str
+   email: str
+   address: Address
+   department: Department
+   hireDate: Time
+   publicKey: optional<PublicKey>
+   metadata: map<str><data>
+ }
+ 
+ type TerminatedEmployee void
+ 
+ type Person union {Customer | Employee | TerminatedEmployee}

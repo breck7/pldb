@@ -14,16 +14,19 @@ const outputFile = cacheDir + "output.json"
 class PygmentsImporter {
 	writeAllCommand() {
 		this.matches.forEach(entry => {
-			const { file } = entry
-			if (file.has("pygmentsHighlighter")) return
-
-			file.set("pygmentsHighlighter", entry.name)
-			file.set("pygmentsHighlighter filename", entry.filename)
-
-			const extensions = entry.extensions.join(" ")
-			if (extensions) file.set("pygmentsHighlighter fileExtensions", extensions)
-			file.save()
+			this.writeOne(entry.file, entry)
 		})
+	}
+
+	writeOne(file, entry) {
+		if (file.has("pygmentsHighlighter")) return
+
+		file.set("pygmentsHighlighter", entry.name)
+		file.set("pygmentsHighlighter filename", entry.filename)
+
+		const extensions = entry.extensions.join(" ")
+		if (extensions) file.set("pygmentsHighlighter fileExtensions", extensions)
+		file.save()
 	}
 
 	get data() {
@@ -51,13 +54,15 @@ class PygmentsImporter {
 		return this.match.filter(item => !item.pldbId)
 	}
 
-	listMissesCommand() {
-		console.log(
-			new jtree.TreeNode(this.misses).toDelimited(
-				",",
-				"name,lexer,filename,url".split(",")
-			)
-		)
+	addMissesCommand() {
+		this.misses
+			.filter(hit => hit.url)
+			.forEach(miss => {
+				const newFile = pldbBase.createFile(`title ${miss.name}
+type pl
+website ${miss.url}`)
+				this.writeOne(newFile, miss)
+			})
 	}
 }
 

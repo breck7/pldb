@@ -52,9 +52,9 @@ class RijuImporter {
     this.missing.forEach(yaml => {
       const type = yaml.info?.category === "esoteric" ? "esolang" : "pl"
       pldbBase.createFile(
-        yaml.id,
         `title ${yaml.name}
-type ${type}`
+type ${type}`,
+        yaml.id
       )
     })
   }
