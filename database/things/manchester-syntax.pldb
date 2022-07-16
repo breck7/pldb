@@ -5,6 +5,9 @@ type dataNotation
 features
  hasSemanticIndentation false
  hasComments true
+ hasMultiLineComments true
+  /* A comment
+  */
 
 example
  /**

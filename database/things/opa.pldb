@@ -5,6 +5,12 @@ type pl
 features
  hasTypeInference true
  hasPrintDebugging true
+ hasMultiLineComments true
+  /* A comment
+  */
+ hasComments true
+  /* A comment
+  */
 
 wikipedia https://en.wikipedia.org/wiki/Opa_(programming_language)
  example

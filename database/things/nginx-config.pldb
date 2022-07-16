@@ -5,6 +5,10 @@ type configFormat
 lineCommentKeyword #
 features
  hasMultiLineComments false
+ hasLineComments true
+  # A comment
+ hasComments true
+  # A comment
 
 example
  #user  nobody;

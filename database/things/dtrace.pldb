@@ -98,4 +98,10 @@ leachim6 DTrace
 printKeyword printf
 features
  hasPrintDebugging true
+ hasMultiLineComments true
+  /* A comment
+  */
+ hasComments true
+  /* A comment
+  */
 multiLineCommentKeywords /* */

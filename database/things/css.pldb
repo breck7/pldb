@@ -11,6 +11,9 @@ features
  hasLineComments false
  hasComments true
   /* This is a single-line comment */ p { color: red; }
+ hasMultiLineComments true
+  /* A comment
+  */
 
 wikipedia https://en.wikipedia.org/wiki/Cascading_Style_Sheets
  example

@@ -60,3 +60,10 @@ example
 wikipedia https://en.wikipedia.org/wiki/Arden_syntax
 
 multiLineCommentKeywords /* */
+features
+ hasMultiLineComments true
+  /* A comment
+  */
+ hasComments true
+  /* A comment
+  */

@@ -49,4 +49,10 @@ leachim6 B
 printKeyword putchar
 features
  hasPrintDebugging true
+ hasMultiLineComments true
+  /* A comment
+  */
+ hasComments true
+  /* A comment
+  */
 multiLineCommentKeywords /* */

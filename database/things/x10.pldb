@@ -97,4 +97,10 @@ leachim6 X10
 printKeyword Console.OUT.println
 features
  hasPrintDebugging true
+ hasMultiLineComments true
+  /* A comment
+  */
+ hasComments true
+  /* A comment
+  */
 multiLineCommentKeywords /* */

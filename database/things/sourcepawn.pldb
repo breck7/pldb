@@ -122,3 +122,10 @@ pygmentsHighlighter SourcePawn
  filename pawn.py
  fileExtensions sp
 multiLineCommentKeywords /* */
+features
+ hasMultiLineComments true
+  /* A comment
+  */
+ hasComments true
+  /* A comment
+  */
