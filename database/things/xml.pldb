@@ -5,6 +5,10 @@ type dataNotation
 features
  canWriteToDisk false
  hasLineComments false
+ hasMultiLineComments true
+  <!-- A comment
+  -->
+ hasComments true
 
 multiLineCommentKeywords <!-- -->
 wikipedia https://en.wikipedia.org/wiki/XML

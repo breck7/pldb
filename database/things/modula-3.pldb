@@ -5,6 +5,9 @@ type pl
 features
  hasComments true
  hasLineComments false
+ hasMultiLineComments true
+  (* A comment
+  *)
 
 wikipedia https://en.wikipedia.org/wiki/Modula-3
  example

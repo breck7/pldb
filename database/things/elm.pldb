@@ -8,6 +8,9 @@ features
  hasTypeInference true
  hasLineComments true
   -- A comment
+ hasMultiLineComments true
+  {- A comment
+  -}
 
 wikipedia https://en.wikipedia.org/wiki/Elm_(programming_language)
  example

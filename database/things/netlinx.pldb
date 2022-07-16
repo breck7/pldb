@@ -168,4 +168,7 @@ features
   // A comment
  hasComments true
   // A comment
+ hasMultiLineComments true
+  (* A comment
+  *)
 multiLineCommentKeywords (* *)

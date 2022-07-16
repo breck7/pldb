@@ -36,4 +36,10 @@ leachim6 Orc
 printKeyword Println
 features
  hasPrintDebugging true
+ hasMultiLineComments true
+  {- A comment
+  -}
+ hasComments true
+  {- A comment
+  -}
 multiLineCommentKeywords {- -}

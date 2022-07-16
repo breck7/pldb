@@ -12,6 +12,9 @@ features
   (* A comment *)
  hasLineComments false
  hasPrintDebugging true
+ hasMultiLineComments true
+  (* A comment
+  *)
 
 wikipedia https://en.wikipedia.org/wiki/Wolfram_Language
  related mathematica-editor apl c lisp pascal prolog simula smalltalk julia mathematica unity-engine

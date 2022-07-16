@@ -6,6 +6,10 @@ creators Stephen Wolfram
 features
  hasLineComments false
  hasPrintDebugging true
+ hasMultiLineComments true
+  (* A comment
+  *)
+ hasComments true
 
 wikipedia https://en.wikipedia.org/wiki/Mathematica
  related wolfram linux c java modelica sql fortran cuda opencl http eclipse-editor visual-studio-editor haskell applescript racket visual-basic python clojure excel-app matlab sagemath mongodb wsdl labview

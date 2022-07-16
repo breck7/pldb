@@ -84,6 +84,9 @@ features
  hasComments true
   -- A comment
  hasPrintDebugging true
+ hasMultiLineComments true
+  (* A comment
+  *)
 leachim6 Cool
  filepath c/Cool.cl
  fileExtensions cl

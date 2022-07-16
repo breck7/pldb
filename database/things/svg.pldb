@@ -4,6 +4,10 @@ type textMarkup
 
 features
  hasLineComments false
+ hasMultiLineComments true
+  <!-- A comment
+  -->
+ hasComments true
 
 wikipedia https://en.wikipedia.org/wiki/Scalable_Vector_Graphics
  example

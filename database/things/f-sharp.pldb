@@ -45,6 +45,9 @@ features
   
   force1 = force2 // true
  hasPrintDebugging true
+ hasMultiLineComments true
+  (* A comment
+  *)
 
 wikipedia https://en.wikipedia.org/wiki/F_Sharp_(programming_language)
  example
