@@ -51,13 +51,15 @@ class PLDBUpdater {
       .filter(file => file.allExamples.length)
       .forEach(file => {
         const examples = file.allExamples.map(code => code.code)
+        const left = "<!--"
+        const right = "-->"
         let hit
         if (
           (hit = examples.find(
-            code => code.includes(`/*`) && code.includes(`*/`)
+            code => code.includes(left) && code.includes(right)
           ))
         ) {
-          file.set("multiLineCommentKeywords", "/* */")
+          file.set("multiLineCommentKeywords", `${left} ${right}`)
           file.save()
         }
       })
