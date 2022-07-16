@@ -1,0 +1,17 @@
+title ASCII Armor
+appeared 2007
+type textEncodingFormat
+reference https://datatracker.ietf.org/doc/html/rfc4880#page-54
+related base64
+description OpenPGP provides the service of converting the raw 8-bit binary octet stream to a stream of printable ASCII characters, called Radix-64 encoding or ASCII Armor.
+example
+   -----BEGIN PGP MESSAGE-----
+   Version: OpenPrivacy 0.99
+   
+   yDgBO22WxBHv7O8X7O/jygAEzol56iUKiXmV+XmpCtmpqQUKiQrFqclFqUDBovzS
+   vBSFjNSiVHsuAA==
+   =njUN
+   -----END PGP MESSAGE-----
+pygmentsHighlighter ASCII armored
+ filename asc.py
+ fileExtensions asc pem id_dsa id_ecdsa id_ecdsa_sk id_ed25519 id_ed25519_sk id_rsa
