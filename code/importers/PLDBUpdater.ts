@@ -40,7 +40,7 @@ class PLDBUpdater {
   }
 
   scanExamplesForPrintKeywordCommand() {
-    const regex = /([\w\.]*print\w*)/i
+    const regex = /([\w\.\:\$]*print\w*)/i
     pldbBase
       .filter(file => file.isLanguage)
       .filter(file => !file.has("printKeyword"))

@@ -51,3 +51,4 @@ leachim6 Zig
       const stdout = std.io.getStdOut().writer();
       try stdout.print("Hello World", .{});
   }
+printKeyword stdout.print

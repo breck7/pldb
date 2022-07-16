@@ -67,3 +67,4 @@ leachim6 Whiley
   method main(ascii::string[] args):
       io::println("Hello World")
   
+printKeyword io::println

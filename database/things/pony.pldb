@@ -54,3 +54,4 @@ leachim6 Pony
     new create(env: Env) =>
       env.out.print("Hello World")
   
+printKeyword env.out.print

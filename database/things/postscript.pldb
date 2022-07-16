@@ -124,3 +124,4 @@ leachim6 PostScript
  example
   % run> gs -q -sDEVICE=nullpage postscript.ps
   (Hello World\n) print quit
+printKeyword print
