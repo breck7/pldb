@@ -27,3 +27,11 @@ multiLineCommentKeywordsNode
  example
   javascript
    multiLineCommentKeyword /* */
+printKeywordNode
+ extends abstractCommonKeywordNode
+ description What token(s) is used to print a message?
+ cruxFromId
+ boolean multipleOk true
+ example
+  javascript
+   printKeyword console.log
