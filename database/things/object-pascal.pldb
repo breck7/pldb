@@ -10,8 +10,8 @@ features
    and it will span multiple lines. *)
   { This is a single line comment in pascal }
  hasMultiLineComments true
-  (* This is a multi-line comments
-   and it will span multiple lines. *)
+  (* A comment
+  *)
  hasLineComments false
 
 wikipedia https://en.wikipedia.org/wiki/Object_Pascal

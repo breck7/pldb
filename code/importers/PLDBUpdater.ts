@@ -45,8 +45,8 @@ class PLDBUpdater {
       .filter(
         file =>
           !file.has("multiLineCommentKeywords") &&
-          file.get("features hasMultiLineComments") === undefined &&
-          file.get("lineCommentKeyword") === "//"
+          file.get("features hasMultiLineComments") === undefined
+        // && file.get("lineCommentKeyword") === "//"
       )
       .filter(file => file.allExamples.length)
       .forEach(file => {
@@ -130,9 +130,9 @@ class PLDBUpdater {
         const parts = kws.split(" ")
         const start = parts[0]
         const end = parts[1] || start
-        file
-          .touchNode("features hasMultiLineComments")
-          .setChildren(`${start} A comment ${end}`)
+        file.touchNode("features hasMultiLineComments")
+          .setChildren(`${start} A comment
+${end}`)
 
         file.save()
       })

@@ -9,8 +9,8 @@ features
   { This is a single line comment in pascal. But needs to be closed. }
  hasLineComments false
  hasMultiLineComments true
-  (* This is a multi-line comments
-   and it will span multiple lines. *)
+  (* A comment
+  *)
  hasFunctionOverloading true
   program Adhoc;
   

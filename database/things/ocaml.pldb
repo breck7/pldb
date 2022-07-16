@@ -20,7 +20,8 @@ features
   (* bmodule.ml *)
   Amodule.hello ()
  hasMultiLineComments true
-  (* A comment *)
+  (* A comment
+  *)
  hasPrintDebugging true
 
 wikipedia https://en.wikipedia.org/wiki/OCaml

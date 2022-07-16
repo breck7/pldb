@@ -34,9 +34,8 @@ features
   const list = [1,2,3]
  mergesWhitespace true
  hasMultiLineComments true
-  /* Hello
-     World
-   */
+  /* A comment
+  */
  hasPolymorphism true
   "a" + "b"; 1 + 2
  hasSingleDispatch true

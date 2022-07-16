@@ -18,9 +18,8 @@ features
  hasPrintDebugging true
   Console.WriteLine("This is C#");
  hasMultiLineComments true
-  /*
-   * A comment
-   */
+  /* A comment
+  */
  hasAsyncAwait true
   public async Task<int> FindPageSize(Uri uri) 
   {

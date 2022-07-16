@@ -10,9 +10,8 @@ features
   // https://doc.rust-lang.org/reference/comments.html
   // a comment
  hasMultiLineComments true
-  /*
-   * A comment
-   */
+  /* A comment
+  */
  hasDirectives true
   // A conditionally-compiled module
   #[cfg(target_os = "linux")]

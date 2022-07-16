@@ -57,7 +57,9 @@ features
  hasLineComments true
   # A comment
  hasMultiLineComments true
-  ### A comment ###
+  ###
+  A comment
+  ###
 
 description fml is an optimizing, function-oriented, array programming language. Unlike other array programming languages, it aims to have a less symbol-heavy but still concise syntax, and non-strict semantics that allow for high-level optimization. Note that fml is not: meant for serious use always faster than systems languages like C/C++/etc. always more expressive than general-purpose languages like Python, Javascript, etc. suitable for cryptography, real-time, or low-level applications that require fine control of time and space complexity
 reference https://gist.github.com/jckarter/2839239

@@ -27,9 +27,8 @@ features
  hasComments true
   // This is a comment
  hasMultiLineComments true
-  /*
-   * A comment
-   */
+  /* A comment
+  */
  hasBooleans true
   c := true
  hasIntegers true
