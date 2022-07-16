@@ -91,3 +91,4 @@ leachim6 Mercury
   main(!IO) :-
   	io.write_string("Hello World\n", !IO).
   
+printKeyword io.write_string
