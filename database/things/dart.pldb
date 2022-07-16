@@ -13,7 +13,8 @@ features
   // Hi
   /* Assume address is not null. */
  hasMultiLineComments true
-  /* a comment
+  /*
+   * A comment
    */
  hasImports true
   import 'file-system.dart';
