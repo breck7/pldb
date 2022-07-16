@@ -140,3 +140,4 @@ leachim6 Idris
   main : IO ()
   main = putStrLn "Hello World"
   
+printKeyword putStrLn

@@ -18,3 +18,4 @@ leachim6 Emerald
   		stdout.putString["Hello World\n"]
   	end initially
   end mainProgram
+printKeyword stdout.putString
