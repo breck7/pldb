@@ -2,6 +2,10 @@ title Nginx
 appeared 2004
 type configFormat
 
+lineCommentKeyword #
+features
+ hasMultiLineComments false
+
 example
  #user  nobody;
  worker_processes  1;
