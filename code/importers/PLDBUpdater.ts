@@ -46,7 +46,9 @@ class PLDBUpdater {
       .filter(file => !file.has("printKeyword"))
       .filter(file => file.allExamples.length)
       .forEach(file => {
-        const examples = file.allExamples.map(code => code.code)
+        const examples = file.allExamples
+          .filter(c => c.source === "hello-world")
+          .map(code => code.code)
         let hit
         if ((hit = examples.find(code => code.match(regex)))) {
           const match = hit.match(regex)
