@@ -87,7 +87,6 @@ features
   if (true)
    console.log("hi!")
  hasComments true
- hasMultiLineComments true
  hasConstructors true
   class Person {
    constructor(name) {

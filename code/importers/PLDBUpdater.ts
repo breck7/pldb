@@ -39,6 +39,30 @@ class PLDBUpdater {
       })
   }
 
+  scanExamplesForMultiLineCommentsCommand() {
+    pldbBase
+      .filter(file => file.isLanguage)
+      .filter(
+        file =>
+          !file.has("multiLineCommentKeywords") &&
+          file.get("features hasMultiLineComments") === undefined &&
+          file.get("lineCommentKeyword") === "//"
+      )
+      .filter(file => file.allExamples.length)
+      .forEach(file => {
+        const examples = file.allExamples.map(code => code.code)
+        let hit
+        if (
+          (hit = examples.find(
+            code => code.includes(`/*`) && code.includes(`*/`)
+          ))
+        ) {
+          file.set("multiLineCommentKeywords", "/* */")
+          file.save()
+        }
+      })
+  }
+
   scanExamplesForPrintKeywordCommand() {
     // print put puts out log write
     const regex = /([\w\.\:\$]*print\w*)/i
