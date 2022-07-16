@@ -64,3 +64,4 @@ leachim6 Moo
   @program hello:run
   player:tell("Hello World");
   .
+printKeyword player:tell

@@ -51,7 +51,7 @@ class PLDBUpdater {
           .map(code => code.code)
         let hit
         if (!examples[0]) return
-        if (examples[0].split("\n").length > 1) return
+        if (examples[0].split("\n").length > 3) return
         console.log(file.id, examples[0])
         return
         if ((hit = examples.find(code => code.match(regex)))) {
