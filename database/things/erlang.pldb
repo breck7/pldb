@@ -184,3 +184,4 @@ leachim6 Erlang
   
   start() ->
     io:format("Hello World~n").
+printKeyword io:format
