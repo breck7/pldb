@@ -12,6 +12,7 @@ features
  isCaseSensitive false
  hasLineComments true
   \ A comment
+ hasPrintDebugging true
 
 wikipedia https://en.wikipedia.org/wiki/Forth_(programming_language)
  example
@@ -94,3 +95,4 @@ leachim6 Forth
  example
   .( Hello World)
   
+printKeyword .
