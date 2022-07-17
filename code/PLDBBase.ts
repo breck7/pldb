@@ -27,7 +27,8 @@ interface FeatureSummary {
   featureLink: string
   aka: string
   path: string
-  languages: number
+  yes: number
+  no: number
   percentage: string
   psuedoExample: string
 }
@@ -574,7 +575,8 @@ class PLDBBaseFolder extends TreeBaseFolder {
         featureLink: `../languages/${name}.html`,
         aka: file.getAll("aka").join(" or "),
         path: file.get("featureKeyword"),
-        languages: positives,
+        yes: positives,
+        no: negatives,
         percentage:
           measurements < 100
             ? "-"
@@ -585,7 +587,7 @@ class PLDBBaseFolder extends TreeBaseFolder {
       }
     })
 
-    const sorted = lodash.sortBy(files, "languages")
+    const sorted = lodash.sortBy(files, "yes")
     sorted.reverse()
 
     return sorted

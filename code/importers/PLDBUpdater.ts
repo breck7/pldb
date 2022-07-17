@@ -105,12 +105,9 @@ class PLDBUpdater {
   updateSemanticIndentationCommand() {
     pldbBase
       .filter(file => file.isLanguage)
-      .filter(file => file.allExamples.length)
-      .filter(
-        file =>
-          !file.get("features hasSemanticIndentation") &&
-          file.get("features hasComments")
-      )
+      .filter(file => file.allExamples.length > 2)
+      .filter(file => file.rank < 200)
+      .filter(file => !file.get("features hasSemanticIndentation"))
       .forEach(file => {
         file.set("features hasSemanticIndentation", "false")
         file.save()

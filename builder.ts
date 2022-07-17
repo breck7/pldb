@@ -326,7 +326,8 @@ class Builder extends AbstractBuilder {
         "feature",
         "featureLink",
         "psuedoExample",
-        "languages",
+        "yes",
+        "no",
         "percentage"
       ])
     )
