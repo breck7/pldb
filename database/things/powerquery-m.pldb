@@ -1,0 +1,14 @@
+title PowerQuery M
+aka m
+website https://docs.microsoft.com/en-us/powerquery-m/
+description A core capability of Power Query is to filter and combine, that is, to mash-up data from one or more of a rich collection of supported data sources. Any such data mashup is expressed using the Power Query M Formula Language. It's a functional, case sensitive language similar to F#.
+corporateDevelopers Microsoft
+type query Language
+example
+ let Orders = Table.FromRecords({  
+     [OrderID = 1, CustomerID = 1, Item = "fishing rod", Price = 100.0],  
+     [OrderID = 2, CustomerID = 1, Item = "1 lb. worms", Price = 5.0],  
+     [OrderID = 3, CustomerID = 2, Item = "fishing net", Price = 25.0]}),  
+     #"Capitalized Each Word" = Table.TransformColumns(Orders, {"Item", Text.Proper})  
+ in  
+     #"Capitalized Each Word"
