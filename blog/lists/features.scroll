@@ -15,116 +15,116 @@ tableSearch
 
 comment autogenFeatures
 pipeTable
- feature|featureLink|psuedoExample|yes|no|percentage
- Comments|../languages/comment-feature.html|# a comment|537|3|99%
- Line Comments|../languages/line-comments-feature.html|# from here to end of line is a comment|444|21|95%
- Print() Debugging|../languages/print-debugging-feature.html|print "Hi"|309|0|100%
- MultiLine Comments|../languages/multiline-comments-feature.html|/* a looong comment */|150|18|89%
- Semantic Indentation|../languages/semantic-indentation-feature.html|if true(newline/space)print True|54|514|10%
- Strings|../languages/strings-feature.html|"hi"|30|0|-
- Operator Overloading|../languages/operator-overloading-feature.html|def __add__(): doSomethingDifferent()|30|10|-
- File Imports|../languages/file-imports-feature.html|import package|30|2|-
- Directives|../languages/directives-feature.html|use strict;|17|0|-
- Integers|../languages/integers-feature.html|int score = 28|15|0|-
- Booleans|../languages/booleans-feature.html|doBabiesSleep = false|14|0|-
- Pointers|../languages/pointers-feature.html|int *foobar|13|2|-
- Multiple Inheritance|../languages/multiple-inheritance-feature.html|extends parentWhichExtendsSomethingElse|13|1|-
- Constructors|../languages/constructor-feature.html|Person: constructor(name: string): {}|12|0|-
- Garbage Collection|../languages/garbage-collection-feature.html|var iDontNeedToFreeThis|11|5|-
- Message Passing|../languages/message-passing-feature.html|"get homepage"|10|0|-
- Macros|../languages/macros-feature.html|#define height 10|10|3|-
- Identifiers|../languages/identifiers-feature.html|name = Bob|9|0|-
- Static Typing|../languages/static-typing-feature.html|int score = 100|7|0|-
- Single Dispatch|../languages/single-dispatch-feature.html|person.run()|7|0|-
- Lists|../languages/lists-feature.html|[2, 3, 10]|7|0|-
- Module Pattern|../languages/module-feature.html|module Foobar {}|6|0|-
- Mixins|../languages/mixin-feature.html|extends structure, paintable|6|0|-
- Iterators|../languages/iterators-feature.html|for a in collection()|6|0|-
- Interfaces|../languages/interface-feature.html|interface Sendable|6|0|-
- Function Composition|../languages/function-composition-feature.html||6|0|-
- Units of Measure|../languages/units-of-measure-feature.html|Boston isCapitalOf Massachusetts|5|3|-
- Threads|../languages/threads-feature.html|thread1(); thread2();|5|0|-
- Pattern Matching|../languages/pattern-matching-feature.html|fib 0 = 1; fib 1 = 1|5|0|-
- Partial Application|../languages/partial-application-feature.html|add5 = num => addNumbers(10, num)|5|0|-
- Multiline Strings|../languages/multiline-strings-feature.html|hello = """hello\nworld"""|5|1|-
- Increment and decrement operators|../languages/increment-and-decrement-operators-feature.html|i++|5|0|-
- Homoiconicity|../languages/homoiconic-feature.html|(list ())|5|0|-
- Generics|../languages/generics-feature.html|function identity&lt;T>(arg: T): T|5|0|-
- Case Insensitive Identifiers|../languages/case-insensitive-identifiers-feature.html|AnYcASE = 2|5|1|-
- Bitwise Operators|../languages/bitwise-operaters-feature.html|3 == (2 &#124; 1)|5|0|-
- Typed Holes|../languages/typed-holes-feature.html|2 + _ => 2 + [int&#124;float]|4|0|-
- Type Casting|../languages/type-casting-feature.html|(float)score;|4|0|-
- Namespaces|../languages/namespace-feature.html|namespace Stuff {}|4|0|-
- Multiple Dispatch|../languages/multiple-dispatch-feature.html|collide_with(x::Spaceship, y::Spaceship)|4|1|-
- Infix Notation|../languages/infix-notation-feature.html|1 + 2|4|0|-
- Generators|../languages/generators-feature.html|yield 2|4|0|-
- Classes|../languages/classes-feature.html|class Dog {}|4|0|-
- Variadic Functions|../languages/variadic-functions-feature.html|args.map(doSomething)|3|0|-
- Templates|../languages/templates-feature.html|template TCopy(T) {}|3|0|-
- Symbol Tables|../languages/symbol-table-feature.html|SymbolName&#124;Type&#124;Scope;bar&#124;function,double&#124;extern|3|0|-
- Shebang|../languages/shebang-feature.html|#! /run|3|0|-
- Regular Expression Syntax Sugar|../languages/regular-expressions-syntax-sugar-feature.html|/\w+\d?/|3|3|-
- Range Operator|../languages/range-operator-feature.html|1 ... 10|3|0|-
- Postfix Notation|../languages/postfix-notation-feature.html|2 3 4 + 2 -|3|0|-
- Polymorphism|../languages/polymorphism-feature.html|a + "b"; 1 + 2|3|0|-
- Pipes|../languages/pipes-feature.html|ls &#124; wc|3|0|-
- Merges Whitespace|../languages/merges-whitespace-feature.html|result = 1    +    2|3|0|-
- Maps|../languages/maps-feature.html|{name: "Mary"}|3|0|-
- Inheritance|../languages/inheritance-feature.html|class Box extends Cube|3|0|-
- Gotos|../languages/gotos-feature.html|goto 10|3|0|-
- Destructuring|../languages/destructuring-feature.html|{name, age} = person|3|0|-
- Dependent types|../languages/dependent-types-feature.html|sortedList // a list where is sorted is true|3|1|-
- Constants|../languages/constants-feature.html|const ONE = 1|3|0|-
- Anonymous Functions|../languages/anonymous-functions-feature.html|() => doSomething()|3|0|-
- Union Types|../languages/union-types-feature.html|any = string &#124; number|2|0|-
- Structs|../languages/structs-feature.html|struct account { int account_number; char *first_name; float balance; };|2|0|-
- Single-Type Arrays|../languages/single-type-arrays-feature.html|const scores: int[]|2|0|-
- Sets|../languages/sets-feature.html|{black, red, yellow}|2|1|-
- References|../languages/reference-feature.html|fn(objPointer)|2|0|-
- Prefix Notation|../languages/prefix-notation-feature.html|+ 1 2|2|0|-
- Map Functions|../languages/map-functions-feature.html|[1,2].map(square)|2|0|-
- Manual Memory Management|../languages/manual-memory-management-feature.html|malloc(4);|2|0|-
- Magic Getters and Setters|../languages/magic-getters-and-setters-feature.html|get(name) => obj[name]|2|1|-
- Letter-first Identifiers|../languages/letter-first-identifiers-feature.html|seven11 = "OK" // 711 = "ERROR"|2|0|-
- Functions|../languages/functions-feature.html|function foo() {}|2|1|-
- Function Overloading|../languages/function-overloading-feature.html|add(string: str, string2: str)|2|2|-
- First-Class Functions|../languages/first-class-functions-feature.html|[2.1].map(Math.round)|2|0|-
- Exceptions|../languages/exceptions-feature.html|throw new Error("Uh oh")|2|0|-
- Dynamic Properties|../languages/dynamic-properties-feature.html|person.age = 50|2|0|-
- Duck Typing|../languages/duck-typing-feature.html|length() // makes me an iterator|2|0|-
- Dispose Blocks Pattern|../languages/dispose-blocks-feature.html|with something: do something()|2|1|-
- Disk Output|../languages/disk-output-feature.html|write("foobar.txt", "something")|2|4|-
- Default Parameters Pattern|../languages/default-parameters-feature.html|say(message = "Hello")|2|0|-
- Conditionals|../languages/conditionals-feature.html|if (isTrue) doSomething()|2|0|-
- Async Await|../languages/async-await-feature.html|async doSomething => await somethingElse()|2|1|-
- Assert Statements|../languages/assert-statements-feature.html|assert(isTrue)|2|0|-
- Algebraic Data Type|../languages/algebraic-types-feature.html|garageContents = empty &#124; vehicle|2|0|-
- Zippers|../languages/zipper-feature.html|zipper.moveLeft()|1|0|-
- While Loops|../languages/while-loops-feature.html|while (true) loop()|1|1|-
- Virtual function|../languages/virtual-functions-feature.html|virtual Shout();|1|0|-
- Unicode Identifers|../languages/unicode-identifiers-feature.html|δ = 0.00001|1|0|-
- Unary Operators|../languages/unary-operators-feature.html|count++|1|0|-
- Type Parameters|../languages/type-parameters-feature.html|function identity&lt;T>(arg: T): T {return arg}|1|0|-
- Triples|../languages/triple-feature.html|Boston isCapitalOf Massachusetts|1|0|-
- Traits|../languages/traits-feature.html|use redBorder|1|0|-
- Ternary operators|../languages/ternary-operators-feature.html|true ? 1 : 0|1|0|-
- Switch Statements|../languages/switch-statements-feature.html|switch animal: case dog-buy; case cat-sell;|1|0|-
- Supports Breakpoints|../languages/supports-breakpoints-feature.html|debugger;|1|0|-
- Streams|../languages/streams-feature.html|echo 123 &#124; 123.txt|1|0|-
- Static Methods|../languages/static-methods-feature.html|static bark() {}|1|0|-
- Statements|../languages/statements-feature.html|print Hello world|1|0|-
- Source Maps|../languages/sourcemaps-feature.html|{file: 'min.js',sources: ['one.js'], mappings: 'CAAC,IAAI,IAAM'}|1|0|-
- Runtime Guards|../languages/runtime-guards-feature.html|f x &#124; x > 0 = 1 &#124; otherwise = 0|1|0|-
- Refinement Types|../languages/refinement-type-feature.html|evenInt where int % 2 = 0|1|0|-
- Processor Registers|../languages/processor-registers-feature.html|eax 2|1|1|-
- Monad|../languages/monads-feature.html|g >>= f|1|0|-
- Methods|../languages/methods-feature.html|hi.length|1|0|-
- Method Chaining|../languages/method-chaining-feature.html|a.toString().length|1|0|-
- Lazy Evaluation|../languages/lazy-evaluation-feature.html|print(range(1000000)[2])|1|0|-
- Implicit Type Casting|../languages/implicit-type-casting-feature.html|console.log("hello " + 2)|1|0|-
- Implicit Arguments|../languages/implicit-arguments-feature.html|shout(implicit message: string)|1|0|-
- Expressions|../languages/expressions-feature.html|(1 + 2)|1|0|-
- Binary Operators|../languages/binary-operators-feature.html|1 + 1|1|0|-
- Access Modifiers|../languages/access-modifiers-feature.html|class Box { private location }|1|1|-
- Abstract Types|../languages/abstract-types-feature.html|abstract class Div {}|1|1|-
- Semaphores|../languages/semaphores-feature.html|singletonIsSet = 0|0|0|-
+ feature|featureLink|aka|psuedoExample|languages
+ Comments|../languages/comment-feature.html||# a comment|537
+ Line Comments|../languages/line-comments-feature.html||# from here to end of line is a comment|444
+ Print() Debugging|../languages/print-debugging-feature.html||print "Hi"|309
+ MultiLine Comments|../languages/multiline-comments-feature.html||/* a looong comment */|150
+ Semantic Indentation|../languages/semantic-indentation-feature.html||if true(newline/space)print True|54
+ Strings|../languages/strings-feature.html||"hi"|30
+ Operator Overloading|../languages/operator-overloading-feature.html||def __add__(): doSomethingDifferent()|30
+ File Imports|../languages/file-imports-feature.html||import package|30
+ Directives|../languages/directives-feature.html||use strict;|17
+ Integers|../languages/integers-feature.html||int score = 28|15
+ Booleans|../languages/booleans-feature.html||doBabiesSleep = false|14
+ Pointers|../languages/pointers-feature.html||int *foobar|13
+ Multiple Inheritance|../languages/multiple-inheritance-feature.html||extends parentWhichExtendsSomethingElse|13
+ Constructors|../languages/constructor-feature.html||Person: constructor(name: string): {}|12
+ Garbage Collection|../languages/garbage-collection-feature.html||var iDontNeedToFreeThis|11
+ Message Passing|../languages/message-passing-feature.html||"get homepage"|10
+ Macros|../languages/macros-feature.html||#define height 10|10
+ Identifiers|../languages/identifiers-feature.html||name = Bob|9
+ Static Typing|../languages/static-typing-feature.html||int score = 100|7
+ Single Dispatch|../languages/single-dispatch-feature.html||person.run()|7
+ Lists|../languages/lists-feature.html|array or vector or sequence|[2, 3, 10]|7
+ Module Pattern|../languages/module-feature.html||module Foobar {}|6
+ Mixins|../languages/mixin-feature.html||extends structure, paintable|6
+ Iterators|../languages/iterators-feature.html||for a in collection()|6
+ Interfaces|../languages/interface-feature.html||interface Sendable|6
+ Function Composition|../languages/function-composition-feature.html|||6
+ Units of Measure|../languages/units-of-measure-feature.html||Boston isCapitalOf Massachusetts|5
+ Threads|../languages/threads-feature.html||thread1(); thread2();|5
+ Pattern Matching|../languages/pattern-matching-feature.html||fib 0 = 1; fib 1 = 1|5
+ Partial Application|../languages/partial-application-feature.html||add5 = num => addNumbers(10, num)|5
+ Multiline Strings|../languages/multiline-strings-feature.html||hello = """hello\nworld"""|5
+ Increment and decrement operators|../languages/increment-and-decrement-operators-feature.html||i++|5
+ Homoiconicity|../languages/homoiconic-feature.html||(list ())|5
+ Generics|../languages/generics-feature.html||function identity&lt;T>(arg: T): T|5
+ Case Insensitive Identifiers|../languages/case-insensitive-identifiers-feature.html||AnYcASE = 2|5
+ Bitwise Operators|../languages/bitwise-operaters-feature.html||3 == (2 &#124; 1)|5
+ Typed Holes|../languages/typed-holes-feature.html||2 + _ => 2 + [int&#124;float]|4
+ Type Casting|../languages/type-casting-feature.html||(float)score;|4
+ Namespaces|../languages/namespace-feature.html||namespace Stuff {}|4
+ Multiple Dispatch|../languages/multiple-dispatch-feature.html||collide_with(x::Spaceship, y::Spaceship)|4
+ Infix Notation|../languages/infix-notation-feature.html||1 + 2|4
+ Generators|../languages/generators-feature.html||yield 2|4
+ Classes|../languages/classes-feature.html||class Dog {}|4
+ Variadic Functions|../languages/variadic-functions-feature.html||args.map(doSomething)|3
+ Templates|../languages/templates-feature.html||template TCopy(T) {}|3
+ Symbol Tables|../languages/symbol-table-feature.html||SymbolName&#124;Type&#124;Scope;bar&#124;function,double&#124;extern|3
+ Shebang|../languages/shebang-feature.html||#! /run|3
+ Regular Expression Syntax Sugar|../languages/regular-expressions-syntax-sugar-feature.html||/\w+\d?/|3
+ Range Operator|../languages/range-operator-feature.html||1 ... 10|3
+ Postfix Notation|../languages/postfix-notation-feature.html||2 3 4 + 2 -|3
+ Polymorphism|../languages/polymorphism-feature.html||a + "b"; 1 + 2|3
+ Pipes|../languages/pipes-feature.html||ls &#124; wc|3
+ Merges Whitespace|../languages/merges-whitespace-feature.html||result = 1    +    2|3
+ Maps|../languages/maps-feature.html|dict or dictionary or object or record or struct or hashtable or keyed list or associative array|{name: "Mary"}|3
+ Inheritance|../languages/inheritance-feature.html||class Box extends Cube|3
+ Gotos|../languages/gotos-feature.html||goto 10|3
+ Destructuring|../languages/destructuring-feature.html||{name, age} = person|3
+ Dependent types|../languages/dependent-types-feature.html||sortedList // a list where is sorted is true|3
+ Constants|../languages/constants-feature.html||const ONE = 1|3
+ Anonymous Functions|../languages/anonymous-functions-feature.html|Lambdas|() => doSomething()|3
+ Union Types|../languages/union-types-feature.html||any = string &#124; number|2
+ Structs|../languages/structs-feature.html||struct account { int account_number; char *first_name; float balance; };|2
+ Single-Type Arrays|../languages/single-type-arrays-feature.html||const scores: int[]|2
+ Sets|../languages/sets-feature.html||{black, red, yellow}|2
+ References|../languages/reference-feature.html||fn(objPointer)|2
+ Prefix Notation|../languages/prefix-notation-feature.html||+ 1 2|2
+ Map Functions|../languages/map-functions-feature.html||[1,2].map(square)|2
+ Manual Memory Management|../languages/manual-memory-management-feature.html||malloc(4);|2
+ Magic Getters and Setters|../languages/magic-getters-and-setters-feature.html||get(name) => obj[name]|2
+ Letter-first Identifiers|../languages/letter-first-identifiers-feature.html||seven11 = "OK" // 711 = "ERROR"|2
+ Functions|../languages/functions-feature.html|routines or procedures or methods|function foo() {}|2
+ Function Overloading|../languages/function-overloading-feature.html|Ad hoc polymorphism|add(string: str, string2: str)|2
+ First-Class Functions|../languages/first-class-functions-feature.html||[2.1].map(Math.round)|2
+ Exceptions|../languages/exceptions-feature.html||throw new Error("Uh oh")|2
+ Dynamic Properties|../languages/dynamic-properties-feature.html||person.age = 50|2
+ Duck Typing|../languages/duck-typing-feature.html||length() // makes me an iterator|2
+ Dispose Blocks Pattern|../languages/dispose-blocks-feature.html||with something: do something()|2
+ Disk Output|../languages/disk-output-feature.html||write("foobar.txt", "something")|2
+ Default Parameters Pattern|../languages/default-parameters-feature.html||say(message = "Hello")|2
+ Conditionals|../languages/conditionals-feature.html||if (isTrue) doSomething()|2
+ Async Await|../languages/async-await-feature.html||async doSomething => await somethingElse()|2
+ Assert Statements|../languages/assert-statements-feature.html||assert(isTrue)|2
+ Algebraic Data Type|../languages/algebraic-types-feature.html||garageContents = empty &#124; vehicle|2
+ Zippers|../languages/zipper-feature.html||zipper.moveLeft()|1
+ While Loops|../languages/while-loops-feature.html||while (true) loop()|1
+ Virtual function|../languages/virtual-functions-feature.html||virtual Shout();|1
+ Unicode Identifers|../languages/unicode-identifiers-feature.html||δ = 0.00001|1
+ Unary Operators|../languages/unary-operators-feature.html||count++|1
+ Type Parameters|../languages/type-parameters-feature.html||function identity&lt;T>(arg: T): T {return arg}|1
+ Triples|../languages/triple-feature.html||Boston isCapitalOf Massachusetts|1
+ Traits|../languages/traits-feature.html||use redBorder|1
+ Ternary operators|../languages/ternary-operators-feature.html||true ? 1 : 0|1
+ Switch Statements|../languages/switch-statements-feature.html||switch animal: case dog-buy; case cat-sell;|1
+ Supports Breakpoints|../languages/supports-breakpoints-feature.html||debugger;|1
+ Streams|../languages/streams-feature.html||echo 123 &#124; 123.txt|1
+ Static Methods|../languages/static-methods-feature.html||static bark() {}|1
+ Statements|../languages/statements-feature.html||print Hello world|1
+ Source Maps|../languages/sourcemaps-feature.html||{file: 'min.js',sources: ['one.js'], mappings: 'CAAC,IAAI,IAAM'}|1
+ Runtime Guards|../languages/runtime-guards-feature.html||f x &#124; x > 0 = 1 &#124; otherwise = 0|1
+ Refinement Types|../languages/refinement-type-feature.html||evenInt where int % 2 = 0|1
+ Processor Registers|../languages/processor-registers-feature.html||eax 2|1
+ Monad|../languages/monads-feature.html||g >>= f|1
+ Methods|../languages/methods-feature.html||hi.length|1
+ Method Chaining|../languages/method-chaining-feature.html||a.toString().length|1
+ Lazy Evaluation|../languages/lazy-evaluation-feature.html||print(range(1000000)[2])|1
+ Implicit Type Casting|../languages/implicit-type-casting-feature.html||console.log("hello " + 2)|1
+ Implicit Arguments|../languages/implicit-arguments-feature.html||shout(implicit message: string)|1
+ Expressions|../languages/expressions-feature.html||(1 + 2)|1
+ Binary Operators|../languages/binary-operators-feature.html||1 + 1|1
+ Access Modifiers|../languages/access-modifiers-feature.html||class Box { private location }|1
+ Abstract Types|../languages/abstract-types-feature.html||abstract class Div {}|1
+ Semaphores|../languages/semaphores-feature.html||singletonIsSet = 0|0
