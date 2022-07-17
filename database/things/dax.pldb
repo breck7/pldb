@@ -1,6 +1,7 @@
-title Data analysis expressions
+title DAX
 appeared 2009
-type pl
+type queryLanguage
+standsFor Data analysis expressions
 
 wikipedia https://en.wikipedia.org/wiki/Data_analysis_expressions
  related excel-app
@@ -12,5 +13,12 @@ wikipedia https://en.wikipedia.org/wiki/Data_analysis_expressions
  dailyPageViews 76
  appeared 2009
 
-status historical
 centralPackageRepositoryCount 0
+
+corporateDevelopers Microsoft
+website https://docs.microsoft.com/en-us/dax/dax-overview
+description Data Analysis Expressions (DAX) is a formula expression language used in Analysis Services, Power BI, and Power Pivot in Excel. DAX formulas include functions, operators, and values to perform advanced calculations and queries on data in related tables and columns in tabular data models.
+example
+ EVALUATE
+  ( FILTER ( 'DimProduct', [SafetyStockLevel] < 200 ) )
+ ORDER BY [EnglishProductName] ASC
