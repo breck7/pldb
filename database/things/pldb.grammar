@@ -708,6 +708,9 @@ wikipediaRelatedNode
 runsOnVmNode
  extends abstractRelationshipNode
  description What virtual machine(s) does this language run on? 
+influencedByNode
+ description What languages influenced this one?
+ extends abstractRelationshipNode
 subsetOfNode
  description Is this language a subset of another?
  extends abstractRelationshipNode
