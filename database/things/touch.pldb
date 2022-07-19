@@ -1,0 +1,66 @@
+title Touch
+type textMarkup
+related markdown
+githubRepo https://github.com/touchmarine/to
+ firstCommit 2020
+ stars 14
+ forks 0
+ subscribers 1
+ created 2020
+ updated 2022
+ description 📜 Touch Lightweight Markup Language; Familiar, Extendable, Auto-Formattable
+ issues 1
+website http://touchlabs.io/play
+appeared 2020
+example
+ / this is a block comment
+ 
+ = Title
+ _ Subtitle
+ 
+ == h2
+ === h3
+ 
+ / numbered headings (prefixed with 1 and 1.1)
+ ## h2
+ ### h3
+ 
+ > blockquote
+ * note
+ - list
+ 1. numbered list
+ 
+ / code block
+ `js
+ function num() {
+     return 1
+ }
+ `
+ 
+ / preformatted block
+ '
+       ___________________________
+     < I'm an expert in my field. >
+       ---------------------------
+           \   ^__^
+            \  (oo)\_______
+               (__)\       )\/\
+                   ||----w |
+                   ||     ||
+ '
+ / art from https://developer.mozilla.org/en-US/docs/Web/HTML/Element/pre#example
+example
+ // an inline comment //
+ __emphasis__ // italics //
+ **strong**   // bold //
+ ``code``
+ ((link))
+ [[link text]]((link URL))
+ 
+ a \ // line break //
+ b
+ 
+ / autolinks
+ www.example.test
+ http://example.test
+ https://example.test

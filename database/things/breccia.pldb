@@ -1,0 +1,31 @@
+title Breccia
+type textMarkup
+githubRepo https://github.com/Michael-Allan/Breccia
+ firstCommit 2019
+ stars 0
+ forks 0
+ subscribers 0
+ created 2019
+ updated 2021
+ description Lightweight markup for point-form outlining and drafting. (mirror)
+ issues 0
+website http://reluk.ca/project/Breccia/
+appeared 2019
+fileExtensions brec
+example
+ Definition of terms for project Breccia
+ 
+     : see also http://reluk.ca/project/wayic/refractory/index.brec
+ 
+     @
+         - A containment operator.
+         : see `^^containment clause$` @ language_definition.brec
+         : see `^^CS$` @ language_definition.brec
+     alphanumeric
+         - (of a character) Having a Unicode property of `Alphabetic` or `Decimal_Number`.
+             : re `Alphabetic` see https://www.unicode.org/reports/tr44/tr44-26.html#Alphabetic
+             : re `Decimal_Number`
+               see https://www.unicode.org/reports/tr44/tr44-26.html#General_Category_Values
+     .brec
+         - The file extension for Breccia.
+             : see `Filename extension` @ README.html

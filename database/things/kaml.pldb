@@ -1,0 +1,18 @@
+title KAML
+type dataNotation
+supersetOf yaml json
+standsFor KAML ain't markup language
+githubRepo https://github.com/ISLEcode/KAML
+ stars 3
+ forks 0
+ subscribers 2
+ created 2018
+ updated 2020
+ description KAML ain't markup language
+ issues 0
+example
+ title="KAML Example"                    # A simple string
+ author=Jean-Michel\ Marcastel           # Alternate string representation with escaped whitespaces
+ number=1234                             # Numeric value handled as a string
+appeared 2018
+reference https://github.com/ISLEcode/KAML/blob/master/kaml-specifications.md#about
