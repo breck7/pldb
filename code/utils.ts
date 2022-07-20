@@ -176,6 +176,12 @@ const replaceNext = (node, path, newContent) =>
     .getNext()
     .replaceNode(str => newContent)
 
+const replaceNode = (node, path, newContent) =>
+  node
+    .find(node => node.getLine().startsWith(path))
+    .replaceNode(str => newContent)
+
+
 const nodeToFlatObject = parentNode => {
   const delimiter = "."
   let newObject = {}
@@ -323,6 +329,7 @@ export {
   nameToAnchor,
   getIndefiniteArticle,
   replaceNext,
+  replaceNode,
   nodeToFlatObject,
   toScrollTable,
   getJoined,

@@ -1,5 +1,5 @@
 import { PLDBBaseFolder } from "./PLDBBase"
-import { nameToAnchor, replaceNext, toScrollTable } from "./utils"
+import { nameToAnchor, replaceNext, replaceNode, toScrollTable } from "./utils"
 
 const lodash = require("lodash")
 const numeral = require("numeral")
@@ -34,7 +34,7 @@ class ListRoutes {
       }
     })
 
-    replaceNext(
+    replaceNode(
       page,
       `comment autogenTop`,
       toScrollTable(new TreeNode(files.slice(0, num)), [
@@ -114,7 +114,7 @@ class ListRoutes {
       node.set("keyword", node.get("keyword").substr(1))
     })
 
-    replaceNext(
+    replaceNode(
       page,
       "comment autogenKeywords",
       toScrollTable(tree, ["keyword", "count", "frequency", "langs"])
@@ -157,13 +157,7 @@ class ListRoutes {
 
     const sorted = lodash.sortBy(files, "rank")
 
-    replaceNext(
-      page,
-      "comment autogenExtensions",
-      toScrollTable(new TreeNode(sorted), ["name", "nameLink", "extensions"])
-    )
-
-    replaceNext(
+    replaceNode(
       page,
       "comment autogenExtensionsMessage",
       `aftertext
@@ -173,6 +167,13 @@ class ListRoutes {
         "0,0"
       )} languages in the PLDB.`
     )
+
+    replaceNode(
+      page,
+      "comment autogenExtensionsTable",
+      toScrollTable(new TreeNode(sorted), ["name", "nameLink", "extensions"])
+    )
+    
     return page.toString()
   }
 
@@ -197,7 +198,7 @@ class ListRoutes {
 
     files = lodash.sortBy(files, "rank")
 
-    replaceNext(
+    replaceNode(
       page,
       "comment autogenEntities",
       toScrollTable(new TreeNode(files), [
@@ -217,7 +218,7 @@ class ListRoutes {
       )
   }
 
-  get language() {
+  get languages() {
     const pagePath = blogFolder + "/lists/languages.scroll"
     const page = new TreeNode(Disk.read(pagePath))
 
@@ -240,7 +241,7 @@ class ListRoutes {
 
     const sorted = lodash.sortBy(files, "rank")
 
-    replaceNext(
+    replaceNode(
       page,
       "comment autogenLanguages",
       toScrollTable(new TreeNode(sorted), [
@@ -265,7 +266,7 @@ class ListRoutes {
     const page = new TreeNode(Disk.read(pagePath))
     const { topFeatures } = pldbBase
 
-    replaceNext(
+    replaceNode(
       page,
       "comment autogenFeatures",
       toScrollTable(new TreeNode(topFeatures), [
@@ -333,7 +334,7 @@ class ListRoutes {
       "count"
     ])
 
-    replaceNext(page, "comment autogenCorporations", theTable)
+    replaceNode(page, "comment autogenCorporations", theTable)
 
     const newCount = numeral(Object.values(entities).length).format("0,0")
     const text = page
@@ -407,7 +408,7 @@ class ListRoutes {
       "topRank"
     ])
 
-    replaceNext(page, "comment autogenCreators", theTable)
+    replaceNode(page, "comment autogenCreators", theTable)
 
     const newCount = numeral(Object.values(creators).length).format("0,0")
     const text = page

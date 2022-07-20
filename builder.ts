@@ -45,18 +45,37 @@ class Builder extends AbstractBuilder {
   buildAll() {
     this.buildAcknowledgementsPage()
     this.buildBlog()
-    this.buildListRoutes()
     this.buildCsvs()
     this.buildSearchIndex()
     this.buildDatabasePages()
     console.log(benchmarkResults)
   }
 
-  buildListRoutes() {
+  buildListsBlog() {
+    shell(`cp -R ${__dirname}/blog/lists ${websiteFolder}`)
+
+    Disk.write(
+      websiteFolder + "/lists/scroll.settings",
+      settingsFile
+        .replace(/BASE_URL/g, "..")
+        .replace(
+          "GIT_PATH",
+          "https://github.com/breck7/pldb/blob/main/blog/lists/"
+        )
+    )
+
+    Disk.write(
+      websiteFolder + "/lists/scrollExtensions.grammar",
+      this._scrollExtensionsFile
+    )
+
     const listRoutes = new ListRoutes()
     listGetters(listRoutes).forEach(getter => {
-      Disk.write(`${__dirname}/blog/lists/${getter}.scroll`, listRoutes[getter])
+      Disk.write(`${websiteFolder}/lists/${getter}.scroll`, listRoutes[getter])
     })
+
+    const folder = new ScrollFolder(websiteFolder + "/lists")
+    folder.buildSinglePages()
   }
 
   buildBlog() {
@@ -90,32 +109,10 @@ class Builder extends AbstractBuilder {
     folder.buildCssFile()
     folder.buildRssFeed()
 
-    this._buildListsSite()
+    this.buildListsBlog()
   }
 
 
-  // Build all the list pages
-  _buildListsSite() {
-    shell(`cp -R ${__dirname}/blog/lists ${websiteFolder}`)
-
-    Disk.write(
-      websiteFolder + "/lists/scroll.settings",
-      settingsFile
-        .replace(/BASE_URL/g, "..")
-        .replace(
-          "GIT_PATH",
-          "https://github.com/breck7/pldb/blob/main/blog/lists/"
-        )
-    )
-
-    Disk.write(
-      websiteFolder + "/lists/scrollExtensions.grammar",
-      this._scrollExtensionsFile
-    )
-
-    const folder = new ScrollFolder(websiteFolder + "/lists")
-    folder.buildSinglePages()
-  }
 
   buildRedirects() {
     Disk.mkdir(websiteFolder + "/posts")
