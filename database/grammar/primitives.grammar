@@ -98,8 +98,9 @@ abstractOneWordGuidNode
  single
 abstractUrlGuidNode
  abstract
- extends abstractOneWordGuidNode
  cells keywordCell urlCell
+ extends abstractFactNode
+ boolean padOnFormat true
 abstractCodeNode
  abstract
  catchAllNodeType lineOfCodeNode

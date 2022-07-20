@@ -33,8 +33,6 @@ features
   c := true
  hasIntegers true
   i, j := 42, 2701
- hasPointers true
-  p := &i         // point to i
  hasIncrementAndDecrementOperators true
   i := 0
   i++
@@ -63,7 +61,6 @@ features
     }
     fmt.Println(" is", total) // Also a variadic function.
   }
- hasIncrementAndDecrementOperators true
  hasLineComments true
   // A comment
  hasMessagePassing true

@@ -94,6 +94,7 @@ leachim6 Oberon
 printKeyword Out.String
 features
  hasPrintDebugging true
+ hasPointers true
  hasMultiLineComments true
   (* A comment
   *)

@@ -52,16 +52,11 @@ fileTypeWordCell
 abstractFactNode
  abstract
  cells keywordCell
-abstractOneWordGuidNode
- abstract
- cells keywordCell externalGuidCell
- extends abstractFactNode
- boolean padOnFormat true
- single
 abstractUrlGuidNode
  abstract
- extends abstractOneWordGuidNode
  cells keywordCell urlCell
+ extends abstractFactNode
+ boolean padOnFormat true
 antlrNode
  extends abstractUrlGuidNode
  description A link to the ANTLR grammar for this language (https://github.com/antlr/grammars-v4/tree/master/LANGUAGE)
@@ -73,58 +68,6 @@ jupyterKernelNode
  description A link to a Jupyter Kernel for this language.
  cruxFromId
  string sourceDomain jupyter.org
-codeMirrorNode
- extends abstractOneWordGuidNode
- description A link to a CodeMirror syntax highlighting package for this language (https://github.com/codemirror/codemirror5/tree/master/mode/LANGUAGE)
- cruxFromId
- string sourceDomain codemirror.net
-hoplNode
- extends abstractOneWordGuidNode
- description The matching language on Diarmuid Pigott's Online Historical Encyclopaedia of Programming Languages site (https://hopl.info/)
- cruxFromId
- string sourceDomain hopl.info
- single
-meetupNode
- description Some languages have active meetup groups on Meetup.com 
- extends abstractOneWordGuidNode
- cruxFromId
- inScope meetupMemberCountNode meetupGroupCountNode
- string sourceDomain meetup.com
-subredditNode
- extends abstractOneWordGuidNode
- cruxFromId
- inScope subredditMemberCountNode
- string sourceDomain reddit.com
- boolean multipleOk true
-replitNode
- extends abstractOneWordGuidNode
- description A link to try this langunage on replit.com
- cruxFromId
- string sourceDomain replit.com
- single
-rosettaCodeNode
- extends abstractOneWordGuidNode
- description A link to this language on Rosetta Code - http://www.rosettacode.org/
- cruxFromId
- string sourceDomain rosettacode.org
- single
-tryItOnlineNode
- extends abstractOneWordGuidNode
- description A link to try this language on https://tio.run
- cruxFromId
- string sourceDomain tio.run
- single
-twitterNode
- extends abstractOneWordGuidNode
- description Official Twitter handle of the entity, if any.
- cruxFromId
- inScope twitterFollowersNode
- string sourceDomain twitter.com
-ubuntuPackageNode
- extends abstractOneWordGuidNode
- description The name of an Ubuntu package for the language from https://packages.ubuntu.com/.
- string sourceDomain ubuntu.com
- cruxFromId
 abstractUrlNode
  cells keywordCell urlCell
  extends abstractFactNode
@@ -201,6 +144,64 @@ websiteNode
 webReplNode
  extends abstractUrlNode
  description An online repl for the project.
+ cruxFromId
+abstractOneWordGuidNode
+ abstract
+ cells keywordCell externalGuidCell
+ extends abstractFactNode
+ boolean padOnFormat true
+ single
+codeMirrorNode
+ extends abstractOneWordGuidNode
+ description A link to a CodeMirror syntax highlighting package for this language (https://github.com/codemirror/codemirror5/tree/master/mode/LANGUAGE)
+ cruxFromId
+ string sourceDomain codemirror.net
+hoplNode
+ extends abstractOneWordGuidNode
+ description The matching language on Diarmuid Pigott's Online Historical Encyclopaedia of Programming Languages site (https://hopl.info/)
+ cruxFromId
+ string sourceDomain hopl.info
+ single
+meetupNode
+ description Some languages have active meetup groups on Meetup.com 
+ extends abstractOneWordGuidNode
+ cruxFromId
+ inScope meetupMemberCountNode meetupGroupCountNode
+ string sourceDomain meetup.com
+subredditNode
+ extends abstractOneWordGuidNode
+ cruxFromId
+ inScope subredditMemberCountNode
+ string sourceDomain reddit.com
+ boolean multipleOk true
+replitNode
+ extends abstractOneWordGuidNode
+ description A link to try this langunage on replit.com
+ cruxFromId
+ string sourceDomain replit.com
+ single
+rosettaCodeNode
+ extends abstractOneWordGuidNode
+ description A link to this language on Rosetta Code - http://www.rosettacode.org/
+ cruxFromId
+ string sourceDomain rosettacode.org
+ single
+tryItOnlineNode
+ extends abstractOneWordGuidNode
+ description A link to try this language on https://tio.run
+ cruxFromId
+ string sourceDomain tio.run
+ single
+twitterNode
+ extends abstractOneWordGuidNode
+ description Official Twitter handle of the entity, if any.
+ cruxFromId
+ inScope twitterFollowersNode
+ string sourceDomain twitter.com
+ubuntuPackageNode
+ extends abstractOneWordGuidNode
+ description The name of an Ubuntu package for the language from https://packages.ubuntu.com/.
+ string sourceDomain ubuntu.com
  cruxFromId
 abstractCommonKeywordNode
  description Most general purpose programming languages implement a set of common keywords for common features like these.
@@ -785,12 +786,16 @@ dblpPublicationsNode
  cells keywordCell
  boolean includeChildrenInCsv false
  single
+featureExampleCodeNode
+ description Example usage of the feature.
+ baseNodeType blobNode
 abstractFeatureNode
  cells keywordCell boolCell
- baseNodeType blobNode
  boolean includeChildrenInCsv false
  cruxFromId
  abstract
+ single
+ catchAllNodeType featureExampleCodeNode
 hasReservedWordsNode
  description Are things like keywords reserved words
  extends abstractFeatureNode
