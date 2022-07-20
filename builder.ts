@@ -1,7 +1,6 @@
 #!/usr/bin/env ts-node
 
 const lodash = require("lodash")
-const numeral = require("numeral")
 const fs = require("fs")
 const { jtree } = require("jtree")
 const { TreeNode } = jtree
@@ -13,6 +12,7 @@ const shell = require("child_process").execSync
 
 import { LanguagePageTemplate, FeaturePageTemplate } from "./code/pages"
 import { PLDBBaseFolder } from "./code/PLDBBase"
+import { ListRoutes } from "./code/routes"
 
 const { TreeBaseServer } = require("jtree/products/treeBase.node.js")
 
@@ -22,12 +22,11 @@ const databaseFolderWhenPublishedToWebsite = websiteFolder + "/languages" // Tod
 const settingsFile = Disk.read(__dirname + "/blog/scroll.settings")
 
 import {
-  nameToAnchor,
   replaceNext,
-  toScrollTable,
   isLanguage,
   benchmark,
-  benchmarkResults
+  benchmarkResults,
+  listGetters
 } from "./code/utils"
 
 class Builder extends AbstractBuilder {
@@ -44,440 +43,22 @@ class Builder extends AbstractBuilder {
   }
 
   buildAll() {
-    pldbBase.loadFolder()
-    this.buildCreatorsPage()
-    this.buildCorporationsPage()
-    this.buildFeaturesPage()
-    this.buildLanguagesPage()
-    this.buildFileExtensionsPage()
-    this.buildKeywordsPage()
     this.buildAcknowledgementsPage()
-    this.buildTopPages()
-    this.buildEntitiesPage()
     this.buildBlog()
+    this.buildListRoutes()
     this.buildCsvs()
     this.buildSearchIndex()
     this.buildDatabasePages()
     console.log(benchmarkResults)
   }
 
-  _buildTopPages(num) {
-    pldbBase.loadFolder()
-    const pagePath = __dirname + `/blog/lists/top${num}.scroll`
-    const page = new TreeNode(Disk.read(pagePath))
-
-    const files = pldbBase.topLanguages.map(file => {
-      const name = file.id
-      const appeared = file.get("appeared")
-      const rank = file.languageRank + 1
-      const type = file.get("type")
-      const title = file.get("title")
-      return {
-        title,
-        titleLink: `../languages/${name}.html`,
-        rank,
-        type,
-        appeared
-      }
+  buildListRoutes() {
+    const listRoutes = new ListRoutes()
+    listGetters(listRoutes).forEach(getter => {
+      Disk.write(`${__dirname}/blog/lists/${getter}.scroll`, listRoutes[getter])
     })
-
-    replaceNext(
-      page,
-      `comment autogenTop`,
-      toScrollTable(new TreeNode(files.slice(0, num)), [
-        "title",
-        "titleLink",
-        "appeared",
-        "type",
-        "rank"
-      ])
-    )
-
-    Disk.write(pagePath, page.toString())
   }
 
-  @benchmark
-  buildTopPages() {
-    this._buildTopPages(100)
-    this._buildTopPages(250)
-    this._buildTopPages(500)
-    this._buildTopPages(1000)
-  }
-
-  @benchmark
-  buildKeywordsPage() {
-    pldbBase.loadFolder()
-    const pagePath = __dirname + "/blog/lists/keywords.scroll"
-    const page = new TreeNode(Disk.read(pagePath))
-
-    const langsWithKeywords = pldbBase.filter(
-      file => file.isLanguage && file.has("keywords")
-    )
-
-    const theWords = {}
-    langsWithKeywords.forEach(file => {
-      const name = file.id
-      file
-        .get("keywords")
-        .split(" ")
-        .forEach(word => {
-          const escapedWord = "Q" + word.toLowerCase() // b.c. you cannot have a key "constructor" in JS objects.
-
-          if (!theWords[escapedWord])
-            theWords[escapedWord] = {
-              keyword: escapedWord,
-              count: 0,
-              langs: []
-            }
-
-          const entry = theWords[escapedWord]
-
-          entry.langs.push(
-            `<a href='../languages/${file.id}.html'>${file.title}</a>`
-          )
-          entry.count++
-        })
-    })
-
-    Object.values(theWords).forEach((word: any) => {
-      word.langs = word.langs.join(" ")
-      word.frequency =
-        Math.round(
-          100 * lodash.round(word.count / langsWithKeywords.length, 2)
-        ) + "%"
-    })
-
-    const sorted = lodash.sortBy(theWords, "count")
-    sorted.reverse()
-
-    const tree = new TreeNode(sorted)
-    tree.forEach(node => {
-      node.set("keyword", node.get("keyword").substr(1))
-    })
-
-    replaceNext(
-      page,
-      "comment autogenKeywords",
-      toScrollTable(tree, ["keyword", "count", "frequency", "langs"])
-    )
-
-    replaceNext(
-      page,
-      "comment autogenAbout",
-      `paragraph
- Here is the list of ${numeral(Object.keys(theWords).length).format(
-   "0,0"
- )} keywords for the ${
-        langsWithKeywords.length
-      } languages that PLDB has that information. This list is case insensitive. Refer to the DB for case information.`
-    )
-
-    Disk.write(pagePath, page.toString())
-  }
-
-  @benchmark
-  buildFileExtensionsPage() {
-    pldbBase.loadFolder()
-    const pagePath = __dirname + "/blog/lists/extensions.scroll"
-    const page = new TreeNode(Disk.read(pagePath))
-
-    const files = pldbBase
-      .filter(file => file.get("type") !== "feature")
-      .map(file => {
-        return {
-          name: file.title,
-          nameLink: `../languages/${file.id}.html`,
-          rank: file.rank,
-          extensions: file.extensions
-        }
-      })
-      .filter(file => file.extensions)
-
-    const allExtensions = new Set<string>()
-    files.forEach(file => {
-      file.extensions.split(" ").forEach(ext => allExtensions.add(ext))
-    })
-
-    const sorted = lodash.sortBy(files, "rank")
-
-    replaceNext(
-      page,
-      "comment autogenExtensions",
-      toScrollTable(new TreeNode(sorted), ["name", "nameLink", "extensions"])
-    )
-
-    replaceNext(
-      page,
-      "comment autogenExtensionsMessage",
-      `aftertext
- Here is the list of ${numeral(allExtensions.size).format(
-   "0,0"
- )} unique file extensions across ${numeral(sorted.length).format(
-        "0,0"
-      )} languages in the PLDB.`
-    )
-
-    Disk.write(pagePath, page.toString())
-  }
-
-  @benchmark
-  buildEntitiesPage() {
-    pldbBase.loadFolder()
-    const pagePath = __dirname + "/blog/lists/entities.scroll"
-    const page = new TreeNode(Disk.read(pagePath))
-
-    let files = pldbBase.map(file => {
-      const name = file.id
-      const appeared = file.get("appeared")
-      const rank = file.rank + 1
-      const type = file.get("type")
-      const title = file.get("title")
-      return {
-        title,
-        titleLink: `../languages/${name}.html`,
-        rank,
-        type,
-        appeared
-      }
-    })
-
-    files = lodash.sortBy(files, "rank")
-
-    replaceNext(
-      page,
-      "comment autogenEntities",
-      toScrollTable(new TreeNode(files), [
-        "title",
-        "titleLink",
-        "type",
-        "appeared",
-        "rank"
-      ])
-    )
-
-    const text = page
-      .toString()
-      .replace(
-        /list of all .+ entities/,
-        `list of all ${numeral(files.length).format("0,0")} entities`
-      )
-
-    Disk.write(pagePath, text)
-  }
-
-  @benchmark
-  buildLanguagesPage() {
-    pldbBase.loadFolder()
-    const pagePath = __dirname + "/blog/lists/languages.scroll"
-    const page = new TreeNode(Disk.read(pagePath))
-
-    const files = pldbBase
-      .filter(file => file.isLanguage)
-      .map(file => {
-        const name = file.id
-        const title = file.get("title")
-        const appeared = file.get("appeared") || ""
-        const rank = file.languageRank + 1
-        const type = file.get("type")
-        return {
-          title,
-          titleLink: `../languages/${name}.html`,
-          type,
-          appeared,
-          rank
-        }
-      })
-
-    const sorted = lodash.sortBy(files, "rank")
-
-    replaceNext(
-      page,
-      "comment autogenLanguages",
-      toScrollTable(new TreeNode(sorted), [
-        "title",
-        "titleLink",
-        "type",
-        "appeared",
-        "rank"
-      ])
-    )
-
-    const text = page
-      .toString()
-      .replace(
-        /currently has .+ languages/,
-        `currently has ${numeral(sorted.length).format("0,0")} languages`
-      )
-
-    Disk.write(pagePath, text)
-  }
-
-  @benchmark
-  buildFeaturesPage() {
-    pldbBase.loadFolder()
-    const pagePath = __dirname + "/blog/lists/features.scroll"
-    const page = new TreeNode(Disk.read(pagePath))
-    const { topFeatures } = pldbBase
-
-    replaceNext(
-      page,
-      "comment autogenFeatures",
-      toScrollTable(new TreeNode(topFeatures), [
-        "feature",
-        "featureLink",
-        "psuedoExample",
-        "yes",
-        "no",
-        "percentage"
-      ])
-    )
-
-    const text = page
-      .toString()
-      .replace(
-        /A list of .+ features/,
-        `A list of ${numeral(topFeatures.length).format("0,0")} features`
-      )
-
-    Disk.write(pagePath, text)
-  }
-
-  @benchmark
-  buildCreatorsPage() {
-    pldbBase.loadFolder()
-    const pagePath = __dirname + "/blog/lists/creators.scroll"
-    const page = new TreeNode(Disk.read(pagePath))
-
-    const creators = {}
-
-    lodash
-      .sortBy(
-        pldbBase.filter(file => file.isLanguage && file.has("creators")),
-        "languageRank"
-      )
-      .forEach(file => {
-        file
-          .get("creators")
-          .split(" and ")
-          .forEach(creatorName => {
-            if (!creators[creatorName]) creators[creatorName] = []
-            creators[creatorName].push(file)
-          })
-      })
-
-    const wikipediaLinks = new TreeNode(
-      page
-        .find(node => node.getLine().startsWith("comment WikipediaPages"))
-        .childrenToString()
-    )
-
-    const rows = Object.keys(creators).map(name => {
-      const languages = creators[name]
-        .map(file => `<a href='../languages/${file.id}.html'>${file.title}</a>`)
-        .join(" - ")
-      const count = creators[name].length
-      let topRank = 10000
-
-      creators[name].forEach(file => {
-        const { languageRank } = file
-        if (languageRank < topRank) topRank = languageRank
-      })
-
-      const person = wikipediaLinks.nodesThatStartWith(name)[0]
-      const anchorTag = nameToAnchor(name)
-      const wrappedName = !person
-        ? `<a name='${anchorTag}' />${name}`
-        : `<a name='${anchorTag}' href='https://en.wikipedia.org/wiki/${person.get(
-            "wikipedia"
-          )}'>${name}</a>`
-
-      return {
-        name: wrappedName,
-        languages,
-        count,
-        topRank: topRank + 1
-      }
-    })
-
-    const sorted = lodash.sortBy(rows, "topRank")
-
-    const theTable = toScrollTable(new TreeNode(sorted), [
-      "name",
-      "languages",
-      "count",
-      "topRank"
-    ])
-
-    replaceNext(page, "comment autogenCreators", theTable)
-
-    const newCount = numeral(Object.values(creators).length).format("0,0")
-    const text = page
-      .toString()
-      .replace(/list of .+ people/, `list of ${newCount} people`)
-
-    Disk.write(pagePath, text)
-  }
-
-  @benchmark
-  buildCorporationsPage() {
-    pldbBase.loadFolder()
-    const pagePath = __dirname + "/blog/lists/corporations.scroll"
-    const page = new TreeNode(Disk.read(pagePath))
-
-    const entities = {}
-
-    const files = lodash.sortBy(
-      pldbBase.filter(
-        file => file.isLanguage && file.has("corporateDevelopers")
-      ),
-      "languageRank"
-    )
-
-    files.forEach(file => {
-      file
-        .get("corporateDevelopers")
-        .split(" and ")
-        .forEach(entity => {
-          if (!entities[entity]) entities[entity] = []
-          entities[entity].push({
-            id: file.id,
-            title: file.title,
-            languageRank: file.languageRank
-          })
-        })
-    })
-
-    const rows = Object.keys(entities).map(name => {
-      const languages = entities[name]
-        .map(lang => `<a href='../languages/${lang.id}.html'>${lang.title}</a>`)
-        .join(" - ")
-      const count = entities[name].length
-      const top = -Math.min(...entities[name].map(lang => lang.languageRank))
-
-      const wrappedName = `<a name='${nameToAnchor(name)}' />${name}`
-
-      return { name: wrappedName, languages, count, top }
-    })
-    const sorted = lodash.sortBy(rows, ["count", "top"])
-    sorted.reverse()
-
-    const theTable = toScrollTable(new TreeNode(sorted), [
-      "name",
-      "languages",
-      "count"
-    ])
-
-    replaceNext(page, "comment autogenCorporations", theTable)
-
-    const newCount = numeral(Object.values(entities).length).format("0,0")
-    const text = page
-      .toString()
-      .replace(/list of .+ corporations/, `list of ${newCount} corporations`)
-
-    Disk.write(pagePath, text)
-  }
-
-  @benchmark
   buildBlog() {
     Disk.mkdir(websiteFolder)
     this._cpAssets()
@@ -512,22 +93,8 @@ class Builder extends AbstractBuilder {
     this._buildListsSite()
   }
 
-  @benchmark
-  buildRedirects() {
-    Disk.mkdir(websiteFolder + "/posts")
-    Disk.read(__dirname + "/blog/redirects.txt")
-      .split("\n")
-      .forEach(line => {
-        const link = line.split(" ")
-        Disk.write(
-          websiteFolder + "/" + link[0],
-          `<meta http-equiv="Refresh" content="0; url='${link[1]}'" />`
-        )
-      })
-  }
 
   // Build all the list pages
-  @benchmark
   _buildListsSite() {
     shell(`cp -R ${__dirname}/blog/lists ${websiteFolder}`)
 
@@ -548,6 +115,19 @@ class Builder extends AbstractBuilder {
 
     const folder = new ScrollFolder(websiteFolder + "/lists")
     folder.buildSinglePages()
+  }
+
+  buildRedirects() {
+    Disk.mkdir(websiteFolder + "/posts")
+    Disk.read(__dirname + "/blog/redirects.txt")
+      .split("\n")
+      .forEach(line => {
+        const link = line.split(" ")
+        Disk.write(
+          websiteFolder + "/" + link[0],
+          `<meta http-equiv="Refresh" content="0; url='${link[1]}'" />`
+        )
+      })
   }
 
   @benchmark
