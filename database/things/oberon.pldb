@@ -103,7 +103,10 @@ features
   *)
  hasSemanticIndentation false
  hasAssignment true
+ hasStrings true
+  'Hello world'
 multiLineCommentTokens (* *)
 domainName projectoberon.com
  registered 2011
 assignmentToken :=
+stringToken '

@@ -61,3 +61,6 @@ leachim6 Bloop
 printToken PRINT
 features
  hasPrintDebugging true
+ hasStrings true
+  'Hello world'
+stringToken '

@@ -80,6 +80,8 @@ features
   // A comment
  hasPrintDebugging true
  hasSemanticIndentation false
+ hasStrings true
+  'Hello world'
 leachim6 OX
  filepath o/OX.oz
  fileExtensions oz
@@ -89,3 +91,4 @@ leachim6 OX
 printToken Show
 domainName oxmetrics.net
  registered 2002
+stringToken '

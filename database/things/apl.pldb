@@ -11,6 +11,8 @@ features
  hasFunctionComposition true
   foo←f∘g
  hasSemanticIndentation false
+ hasStrings true
+  'Hello world'
 
 wikipedia https://en.wikipedia.org/wiki/APL_(programming_language)
  example
@@ -98,3 +100,4 @@ leachim6 APL
   ⎕←'Hello World'
   
   
+stringToken '

@@ -44,6 +44,8 @@ features
   * A comment
  hasPrintDebugging true
  hasSemanticIndentation false
+ hasStrings true
+  'Hello world'
 leachim6 Refal
  filepath r/Refal.ref
  fileExtensions ref
@@ -55,3 +57,4 @@ leachim6 Refal
 printToken <Prout
 domainName refal.net
  registered 1999
+stringToken '

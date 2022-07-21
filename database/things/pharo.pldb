@@ -39,5 +39,8 @@ leachim6 Pharo
 printToken crLog
 features
  hasPrintDebugging true
+ hasStrings true
+  'Hello world'
 domainName pharo.org
  registered 2008
+stringToken '

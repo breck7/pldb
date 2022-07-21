@@ -7,6 +7,8 @@ features
  hasMultipleInheritance true
  hasPrintDebugging true
  hasSemanticIndentation false
+ hasStrings true
+  'Hello world'
 
 wikipedia https://en.wikipedia.org/wiki/Logtalk_(programming_language)
  example
@@ -68,3 +70,4 @@ leachim6 Logtalk
 printToken write
 domainName logtalk.org
  registered 2002
+stringToken '

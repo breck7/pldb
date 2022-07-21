@@ -51,5 +51,8 @@ leachim6 Oxygene
 printToken Console.WriteLine
 features
  hasPrintDebugging true
+ hasStrings true
+  'Hello world'
 domainName elementscompiler.com
  registered 2014
+stringToken '

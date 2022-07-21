@@ -11,6 +11,8 @@ features
   { A comment
   }
  hasSemanticIndentation false
+ hasStrings true
+  'Hello world'
 
 wikipedia https://en.wikipedia.org/wiki/Delphi_(programming_language)
  example
@@ -93,3 +95,4 @@ leachim6 Delphi
   	WriteLn('Hello World');
   end.
 printToken WriteLn
+stringToken '

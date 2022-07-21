@@ -55,3 +55,7 @@ leachim6 RPG
   dsply 'Hello World';
   return;
   
+stringToken '
+features
+ hasStrings true
+  'Hello world'

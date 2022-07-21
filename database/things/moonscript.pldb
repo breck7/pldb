@@ -148,6 +148,8 @@ features
   -- A comment
  hasPrintDebugging true
  hasSemanticIndentation false
+ hasStrings true
+  'Hello world'
 pygmentsHighlighter MoonScript
  filename scripting.py
  fileExtensions moon
@@ -159,3 +161,4 @@ leachim6 Moonscript
   
 printToken print
 domainName moonscript.org
+stringToken '

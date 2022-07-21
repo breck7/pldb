@@ -6,6 +6,8 @@ features
  hasComments true
  hasPrintDebugging true
  hasSemanticIndentation false
+ hasStrings true
+  'Hello world'
 
 wikipedia https://en.wikipedia.org/wiki/NetRexx
  related pl-i rexx object-rexx java jvm
@@ -36,3 +38,4 @@ leachim6 NetRexx
   say 'Hello World'
   
 printToken say
+stringToken '

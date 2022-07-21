@@ -24,6 +24,8 @@ features
  hasPrintDebugging true
  hasSemanticIndentation false
  hasRegularExpressionsSyntaxSugar true
+ hasStrings true
+  'Hello world'
 
 wikipedia https://en.wikipedia.org/wiki/Dart_(programming_language)
  example
@@ -196,3 +198,4 @@ printToken print
 domainName dartlang.org
  registered 2011
 monaco dart
+stringToken '

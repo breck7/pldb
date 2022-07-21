@@ -54,6 +54,8 @@ features
  hasComments true
   // A comment
  hasSemanticIndentation false
+ hasStrings true
+  'Hello world'
 leachim6 Beta
  filepath b/Beta.bet
  fileExtensions bet
@@ -63,3 +65,4 @@ leachim6 Beta
   (* Hello World in BETA *)
   (# do 'Hello World' -> putLine #)
   
+stringToken '

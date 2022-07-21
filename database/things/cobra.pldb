@@ -6,6 +6,8 @@ creators Charles Esterbrook
 features
  hasSemanticIndentation true
  hasPrintDebugging true
+ hasStrings true
+  'Hello world'
 
 wikipedia https://en.wikipedia.org/wiki/Cobra_(programming_language)
  example
@@ -67,3 +69,4 @@ leachim6 Cobra
 printToken print
 domainName cobra-language.com
  registered 2008
+stringToken '

@@ -114,7 +114,7 @@ class PLDBUpdater {
 
   scanExamplesForStringsCommand() {
     // print put puts out log write
-    const regex = /"Hello world"/i
+    const regex = /'Hello world'/i
     pldbBase
       .filter(file => file.isLanguage)
       .filter(file => !file.has("stringToken"))
@@ -129,7 +129,7 @@ class PLDBUpdater {
         //console.log(file.id, examples[0])
         //return
         if ((hit = examples.find(code => code.match(regex)))) {
-          file.set("stringToken", '"')
+          file.set("stringToken", "'")
           file.save()
         }
       })

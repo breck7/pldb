@@ -76,6 +76,8 @@ features
   /* A comment
   */
  hasSemanticIndentation false
+ hasStrings true
+  'Hello world'
 leachim6 XBase
  filepath x/XBase.dbf
  fileExtensions dbf
@@ -85,3 +87,4 @@ leachim6 XBase
   enddo
   
 multiLineCommentTokens /* */
+stringToken '

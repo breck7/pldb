@@ -9,6 +9,8 @@ features
   NB. A comment
  hasPrintDebugging true
  hasSemanticIndentation false
+ hasStrings true
+  'Hello world'
 
 wikipedia https://en.wikipedia.org/wiki/J_(programming_language)
  example
@@ -86,3 +88,4 @@ leachim6 J
 printToken echo
 domainName jsoftware.com
  registered 1996
+stringToken '

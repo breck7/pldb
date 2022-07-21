@@ -43,5 +43,8 @@ leachim6 Pyret
 printToken print
 features
  hasPrintDebugging true
+ hasStrings true
+  'Hello world'
 domainName pyret.org
  registered 2011
+stringToken '
