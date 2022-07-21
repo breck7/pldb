@@ -21,7 +21,7 @@ features
  hasEscapeCharacters true
   ; \" \\ \n \t \b
   [section "subsection with \"quotes\""]
- hasIdentifiers true
+ hasAssignment true
   [branch "master"]
   remote = origin
   merge = refs/heads/master

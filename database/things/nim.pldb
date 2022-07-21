@@ -15,6 +15,7 @@ features
  hasMultiLineComments true
   #[ A comment
   ]#
+ hasAssignment true
 
 compilesTo c cpp objective-c javascript
 
@@ -128,3 +129,4 @@ printToken echo
 multiLineCommentTokens #[ ]#
 domainName nim-lang.org
  registered 2014
+assignmentToken =

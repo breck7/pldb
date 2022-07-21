@@ -34,3 +34,10 @@ printTokenNode
  example
   javascript
    printToken console.log
+assignmentTokenNode
+ extends abstractCommonTokenNode
+ description What token(s) is used for assignment to an identifier?
+ cruxFromId
+ example
+  javascript
+   assignmentToken =

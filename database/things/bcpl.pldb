@@ -90,6 +90,7 @@ features
   // A comment
  hasPrintDebugging true
  hasSemanticIndentation false
+ hasAssignment true
 leachim6 BCPL
  filepath b/BCPL.bcl
  fileExtensions bcl
@@ -102,3 +103,4 @@ leachim6 BCPL
   $)
   
 printToken WRITES
+assignmentToken :=

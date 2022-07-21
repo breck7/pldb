@@ -28,6 +28,7 @@ features
   # A comment
  hasPrintDebugging true
  hasSemanticIndentation false
+ hasAssignment true
 
 wikipedia https://en.wikipedia.org/wiki/R_(programming_language)
  example
@@ -164,3 +165,4 @@ leachim6 R
 printToken print
 domainName r-project.org
  registered 1999
+assignmentToken =

@@ -15,7 +15,7 @@ features
  hasFloats true
   // http://amzn.github.io/ion-docs/docs/spec.html
   -0.12e4           // Type is float
- hasIdentifiers true
+ hasAssignment true
   // A subset of symbols called identifiers can be denoted in text without single-quotes. 
  hasIntegers true
   // http://amzn.github.io/ion-docs/docs/spec.html

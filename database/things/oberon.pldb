@@ -102,6 +102,8 @@ features
   (* A comment
   *)
  hasSemanticIndentation false
+ hasAssignment true
 multiLineCommentTokens (* *)
 domainName projectoberon.com
  registered 2011
+assignmentToken :=

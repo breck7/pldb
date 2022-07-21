@@ -13,6 +13,7 @@ features
   # A comment
  hasPrintDebugging true
  hasSemanticIndentation false
+ hasAssignment true
 
 wikipedia https://en.wikipedia.org/wiki/PowerShell
  example
@@ -143,3 +144,4 @@ leachim6 PowerShell
   'Hello World'
   
 printToken echo
+assignmentToken =

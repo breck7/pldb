@@ -13,6 +13,7 @@ features
   /* A comment
   */
  hasSemanticIndentation false
+ hasAssignment true
 
 wikipedia https://en.wikipedia.org/wiki/PL/I
  example
@@ -59,3 +60,4 @@ hopl 185
 corporateDevelopers IBM
 centralPackageRepositoryCount 0
 multiLineCommentTokens /* */
+assignmentToken =

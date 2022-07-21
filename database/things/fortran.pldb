@@ -55,6 +55,7 @@ features
  hasLineComments true
   C A comment
  hasSemanticIndentation false
+ hasAssignment true
 
 wikipedia https://en.wikipedia.org/wiki/Fortran
  example
@@ -209,3 +210,4 @@ leachim6 Fortran
   end
   
 printToken print
+assignmentToken =

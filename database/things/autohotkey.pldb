@@ -8,6 +8,7 @@ features
  hasLineComments true
   ; A comment
  hasSemanticIndentation false
+ hasAssignment true
 
 wikipedia https://en.wikipedia.org/wiki/AutoHotkey
  example
@@ -91,3 +92,4 @@ leachim6 AutoHotKey
   
 domainName autohotkey.com
  registered 2003
+assignmentToken :=

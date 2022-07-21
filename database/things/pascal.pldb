@@ -31,6 +31,7 @@ features
  hasOperatorOverloading false
  hasPrintDebugging true
  hasSemanticIndentation false
+ hasAssignment true
 
 wikipedia https://en.wikipedia.org/wiki/Pascal_(programming_language)
  example
@@ -152,3 +153,4 @@ leachim6 Pascal
   end.
   
 printToken writeln
+assignmentToken :=

@@ -3,6 +3,8 @@
 import { PLDBBaseFolder } from "../PLDBBase"
 import { GitHubImporter } from "./github.com/GitHub"
 import { runCommand } from "../utils"
+import { jtree } from "jtree"
+const { Disk } = require("jtree/products/Disk.node.js")
 
 const pldbBase = PLDBBaseFolder.getBase()
 pldbBase.loadFolder()
@@ -17,6 +19,22 @@ class PLDBUpdater {
 
   updateCommand(id: string) {
     this.update(id)
+  }
+
+  importFromCsvCommand(path: string) {
+    jtree.TreeNode.fromCsv(Disk.read(path)).forEach(entry => {
+      entry = entry.toObject()
+      const hit = pldbBase.searchForEntity(entry.query)
+      if (!hit) {
+        console.log(entry.query + " not found")
+        return
+      }
+      const file = pldbBase.getFile(hit)
+
+      delete entry.query
+      Object.keys(entry).forEach(key => file.set(key, entry[key]))
+      file.save()
+    })
   }
 
   scanExamplesForCommentsCommand() {
@@ -98,6 +116,19 @@ class PLDBUpdater {
       )
       .forEach(file => {
         file.set("features hasPrintDebugging", "true")
+        file.save()
+      })
+  }
+
+  updateAssignmentCommand() {
+    pldbBase
+      .filter(file => file.isLanguage)
+      .filter(
+        file =>
+          file.has("assignmentToken") && !file.get("features hasAssignment")
+      )
+      .forEach(file => {
+        file.set("features hasAssignment", "true")
         file.save()
       })
   }

@@ -13,7 +13,7 @@ features
   bool b = true;
  hasIntegers true
   int i = 42;
- hasIdentifiers true
+ hasAssignment true
   int i = 42;
  hasPrintDebugging true
   Console.WriteLine("This is C#");

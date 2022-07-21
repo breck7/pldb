@@ -28,7 +28,7 @@ features
   echo "Hello world" > output.txt
  hasPrintDebugging true
   echo "Hello World"
- hasIdentifiers true
+ hasAssignment true
   FOO="bar"
  hasImports true
   source ./bash.sh
@@ -131,3 +131,4 @@ leachim6 Shell
   echo "Hello World"
   
 printToken echo
+assignmentToken =

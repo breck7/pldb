@@ -10,6 +10,7 @@ features
   // A comment
  hasPrintDebugging true
  hasSemanticIndentation false
+ hasAssignment true
 
 wikipedia https://en.wikipedia.org/wiki/Io_(programming_language)
  example
@@ -72,3 +73,4 @@ leachim6 Io
 printToken print
 domainName iolanguage.org
  registered 2009
+assignmentToken :=

@@ -1,4 +1,4 @@
-title reia
+title Reia
 appeared 2010
 type pl
 website http://reia-lang.org
@@ -7,3 +7,79 @@ hackerNewsDiscussions
  1889905|Reia - Ruby's powerful syntax with Erlang concurrency and fault-tolerance|http://reia-lang.org/|2010-11-10 11:10:55 UTC|1289387455|rubyrescue|1|2
 domainName reia-lang.org
  registered 2008
+lineCommentToken #
+printToken puts
+assignmentToken
+example
+ # Hello, world!
+ "Hello, world!".puts()
+ 
+ # Assignment
+ number = 42
+ opposite = true
+ 
+ # Conditions
+ number = -42 if opposite
+ 
+ # Lists (stored as immutable singly-linked lists)
+ list = [1, 2, 3, 4, 5]
+ 
+ # Tuples (think of them as immutable arrays)
+ tuple = (1, 2, 3, 4, 5)
+ 
+ # Atoms (known as symbols to Ruby people)
+ # Think of them as an open-ended enumeration
+ atom = :up_and_atom
+ 
+ # Dicts (also known as hashes to Ruby people)
+ dict = {:foo => 1, :bar => 2, :baz => 3}
+ 
+ # Strings (unlike Erlang, Reia has a real String type!)
+ string = "I'm a string! Woohoo I'm a string! #{'And I interpolate too!'}"
+ 
+ # Ranges
+ range = 0..42
+ 
+ # Funs (anonymous functions, a.k.a. lambdas, procs, closures, etc.)
+ # Calling me with plustwo(40) would return 42
+ plustwo = fun(n) { n + 2 }
+ 
+ # Modules (collections of functions)
+ # Calling Plusser.addtwo(40) would return 42
+ module Plusser
+   def addtwo(n)
+     n + 2
+   end
+ end
+ 
+ # Classes (of immutable objects. Once created objects can't be changed!)
+ class Adder
+   # Reia supports binding instance variables directly when they're passed
+   # as arguments to initialize
+   def initialize(@n); end
+ 
+   def plus(n)
+     @n + n
+   end
+ end
+ 
+ # Instantiate classes by calling Classname(arg1, arg2, ...)
+ # For you Ruby people who want Classname.new(...) this is coming soon!
+ fortytwo = Adder(40).plus(2)
+ 
+ # Function references can be obtained by omitting parens from a function call,
+ # like JavaScript or Python
+ numbers = [1,2,3]
+ reverser = [1,2,3].reverse
+ 
+ # Function references can be invoked just like lambdas
+ reversed = reverser() # reversed is now [3,2,1]
+ 
+ # You can add a ! to the end of any method to rebind the method receiver to 
+ # the return value of the given method minus the bang.
+ numbers.reverse!() # numbers is now [3,2,1]
+ 
+ # List comprehensions
+ doubled = [n * 2 for n in numbers] # doubled is [6,4,2]
+features
+ hasAssignment true

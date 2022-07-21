@@ -36,6 +36,7 @@ features
   -- A comment
  hasPrintDebugging true
  hasSemanticIndentation false
+ hasAssignment true
 
 wikipedia https://en.wikipedia.org/wiki/Ada_(programming_language)
  example
@@ -237,3 +238,4 @@ leachim6 Ada
 printToken Text_IO.Put_Line
 domainName adaic.org
  registered 1998
+assignmentToken :=

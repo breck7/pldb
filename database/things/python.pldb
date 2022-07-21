@@ -43,7 +43,7 @@ features
  hasDirectives true
   from __future__ import feature
   # coding=<encoding name>
- hasIdentifiers true
+ hasAssignment true
   name = "John"
  hasImports true
   import datetime
@@ -251,6 +251,7 @@ rijuRepl https://riju.codes/python
  website https://www.python.org/
  githubRepo https://github.com/python/cpython
 multiLineCommentTokens '''
+assignmentToken =
 goodreads
  title|year|author|goodreadsId|rating|ratings|reviews
  Python: Programming: Your Step By Step Guide To Easily Learn Python in 7 Days (Python for Beginners, Python Programming for Beginners, Learn Python, Python Language)||iCode Academy|54724997|3.76|126|6

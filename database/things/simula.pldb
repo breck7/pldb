@@ -8,6 +8,7 @@ features
   ! A comment
  hasPrintDebugging true
  hasSemanticIndentation false
+ hasAssignment true
 
 wikipedia https://en.wikipedia.org/wiki/Simula
  example
@@ -102,3 +103,4 @@ leachim6 Simula
      Outimage;
   End;
 printToken OutText
+assignmentToken :=

@@ -10,6 +10,7 @@ features
   # A comment
  hasPrintDebugging true
  hasSemanticIndentation false
+ hasAssignment true
 
 wikipedia https://en.wikipedia.org/wiki/Seed7
  related linux unix pascal modula-2 ada algol-68 c java unicode tls http ftp smtp mysql mariadb sqlite postgresql xml
@@ -57,3 +58,4 @@ leachim6 Seed7
   
 printToken writeln
 domainName seed7.sourceforge.net
+assignmentToken :=

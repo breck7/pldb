@@ -65,6 +65,7 @@ features
   // A comment
  hasMessagePassing true
  hasPrintDebugging true
+ hasAssignment true
 
 wikipedia https://en.wikipedia.org/wiki/Go_(programming_language)
  example
@@ -268,3 +269,4 @@ leachim6 Go
 printToken fmt.Println
 domainName golang.org
  registered 2009
+assignmentToken =

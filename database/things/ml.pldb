@@ -7,6 +7,7 @@ features
  hasGarbageCollection true
  hasTypeInference true
  hasLineComments false
+ hasAssignment true
 
 wikipedia https://en.wikipedia.org/wiki/ML_(programming_language)
  example
@@ -43,3 +44,4 @@ hopl 620
 
 rosettaCode ML
 centralPackageRepositoryCount 0
+assignmentToken :=

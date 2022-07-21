@@ -13,7 +13,7 @@ features
   bool b1 = true;
  hasIntegers true
   int i = 0;
- hasIdentifiers true
+ hasAssignment true
   int i = 0;
  hasUnitsOfMeasure false
  hasUnaryOperators true
@@ -387,3 +387,4 @@ printToken std::cout
 multiLineCommentTokens /* */
 domainName isocpp.org
  registered 2012
+assignmentToken =

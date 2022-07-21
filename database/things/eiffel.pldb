@@ -12,6 +12,7 @@ features
  hasLineComments true
   -- A comment
  hasSemanticIndentation false
+ hasAssignment true
 
 wikipedia https://en.wikipedia.org/wiki/Eiffel_(programming_language)
  example
@@ -146,3 +147,4 @@ leachim6 Eiffel
   
 domainName eiffel.org
  registered 2001
+assignmentToken :=

@@ -10,6 +10,7 @@ features
  hasLineComments true
   // A comment
  hasSemanticIndentation false
+ hasAssignment true
 
 corporateDevelopers Apple
 webRepl https://play.opendylan.org/
@@ -95,3 +96,4 @@ leachim6 Dylan
   
 domainName opendylan.org
  registered 2004
+assignmentToken :=
