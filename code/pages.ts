@@ -1,4 +1,4 @@
-const moment = require("moment")
+const dayjs = require("dayjs")
 const lodash = require("lodash")
 const numeral = require("numeral")
 
@@ -179,7 +179,7 @@ treeTable
         "titleLink",
         `https://news.ycombinator.com/item?id=${row.get("id")}`
       )
-      row.set("date", moment(row.get("time")).format("MM/DD/YYYY"))
+      row.set("date", dayjs(row.get("time")).format("MM/DD/YYYY"))
     })
 
     const delimited = table

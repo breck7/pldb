@@ -14,7 +14,7 @@ const { Disk } = require("jtree/products/Disk.node.js")
 
 const superagent = require("superagent")
 const repoFirstCommit = require("repo-first-commit")
-const moment = require("moment")
+const dayjs = require("dayjs")
 
 const creds = JSON.parse(Disk.read(__dirname + "/ignore/creds.json"))
 const { apiToken, apiUser } = creds
@@ -171,7 +171,7 @@ class PLDBFileWithGitHub {
 
 		try {
 			const { firstCommit } = this
-			const year = moment(firstCommit.commit.author.date).format("YYYY")
+			const year = dayjs(firstCommit.commit.author.date).format("YYYY")
 			file.set(firstCommitPath, year)
 			file.save()
 		} catch (err) {
