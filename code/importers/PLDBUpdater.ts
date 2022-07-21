@@ -112,6 +112,29 @@ class PLDBUpdater {
       })
   }
 
+  scanExamplesForStringsCommand() {
+    // print put puts out log write
+    const regex = /"Hello world"/i
+    pldbBase
+      .filter(file => file.isLanguage)
+      .filter(file => !file.has("stringToken"))
+      .filter(file => file.allExamples.length)
+      .forEach(file => {
+        const examples = file.allExamples
+          //.filter(c => c.source === "hello-world")
+          .map(code => code.code)
+        let hit
+        // if (!examples[0]) return
+        // if (examples[0].split("\n").length > 3) return
+        //console.log(file.id, examples[0])
+        //return
+        if ((hit = examples.find(code => code.match(regex)))) {
+          file.set("stringToken", '"')
+          file.save()
+        }
+      })
+  }
+
   updatePrintsCommand() {
     pldbBase
       .filter(file => file.isLanguage)

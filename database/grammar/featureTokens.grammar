@@ -34,6 +34,14 @@ printTokenNode
  example
   javascript
    printToken console.log
+stringTokenNode
+ extends abstractCommonTokenNode
+ description What token(s) is used to delimite a string?
+ cruxFromId
+ boolean multipleOk true
+ example
+  javascript
+   stringToken "
 assignmentTokenNode
  extends abstractCommonTokenNode
  description What token(s) is used for assignment to an identifier?
