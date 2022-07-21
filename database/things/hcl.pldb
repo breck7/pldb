@@ -67,3 +67,4 @@ features
  hasSemanticIndentation false
 monaco hcl
 multiLineCommentTokens /* */
+keywords var local path for_each any string number bool true false null if  else  endif  for  in endfor

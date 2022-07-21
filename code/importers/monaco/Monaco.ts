@@ -17,32 +17,44 @@ const { Disk } = require("jtree/products/Disk.node.js")
 const monacoFolder = cacheDir + "monaco-editor/src/basic-languages/"
 
 class MonacoImporter {
+	extractComments(match) {
+		const { file } = match
+		const { conf } = require(match.filename)
+		try {
+			if (conf.comments?.lineComment) {
+				const currentToken = file.get("lineCommentToken")
+				const newToken = conf.comments.lineComment
+				if (!currentToken) file.set("lineCommentToken", newToken)
+			}
+
+			if (conf.comments?.blockComment) {
+				const currentToken = file.get("multiLineCommentTokens")
+				const newToken = lodash.uniq(conf.comments.blockComment)
+				if (!currentToken)
+					file.set("multiLineCommentTokens", newToken.join(" "))
+			}
+		} catch (err) {
+			console.error(`Error with comments with ${file.id}`)
+		}
+		file.save()
+	}
+
+	extractKeywords(match) {
+		const { file } = match
+		try {
+			const { language } = require(match.filename)
+			if (language.keywords && !file.has("keywords"))
+				file.set("keywords", language.keywords.join(" "))
+		} catch (err) {
+			console.error(`Error with keywords with ${file.id}`)
+		}
+		file.save()
+	}
+
 	writeAllCommand() {
 		this.matched.forEach(match => {
-			try {
-				const { file } = match
-				const { conf } = require(match.filename)
-
-				if (conf.comments?.lineComment) {
-					const currentToken = file.get("lineCommentToken")
-					const newToken = conf.comments.lineComment
-					if (!currentToken) {
-						file.set("lineCommentToken", newToken)
-						file.save()
-					}
-				}
-
-				if (conf.comments?.blockComment) {
-					const currentToken = file.get("multiLineCommentTokens")
-					const newToken = lodash.uniq(conf.comments.blockComment)
-					if (!currentToken) {
-						file.set("multiLineCommentTokens", newToken.join(" "))
-						file.save()
-					}
-				}
-			} catch (err) {
-				console.error(`Error with ${match.name}`)
-			}
+			//this.extractComments(match)
+			this.extractKeywords(match)
 		})
 	}
 
