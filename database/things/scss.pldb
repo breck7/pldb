@@ -5,6 +5,13 @@ creators Hampton Catlin
 
 features
  hasSemanticIndentation true
+ hasLineComments true
+  // A comment
+ hasMultiLineComments true
+  /* A comment
+  */
+ hasComments true
+  // A comment
 
 githubLanguage SCSS
  fileExtensions scss

@@ -83,3 +83,7 @@ example
  doubled = [n * 2 for n in numbers] # doubled is [6,4,2]
 features
  hasAssignment true
+ hasLineComments true
+  # A comment
+ hasComments true
+  # A comment

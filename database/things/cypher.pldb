@@ -33,3 +33,11 @@ lineCommentToken //
 monaco cypher
 multiLineCommentTokens /* */
 keywords ALL AND AS ASC ASCENDING BY CALL CASE CONTAINS CREATE DELETE DESC DESCENDING DETACH DISTINCT ELSE END ENDS EXISTS IN IS LIMIT MANDATORY MATCH MERGE NOT ON ON OPTIONAL OR ORDER REMOVE RETURN SET SKIP STARTS THEN UNION UNWIND WHEN WHERE WITH XOR YIELD
+features
+ hasLineComments true
+  // A comment
+ hasMultiLineComments true
+  /* A comment
+  */
+ hasComments true
+  // A comment

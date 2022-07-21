@@ -23,3 +23,10 @@ multiLineCommentTokens /* */
 keywords import require export forbid native if else cast unsafe switch default
 features
  hasStrings true
+ hasLineComments true
+  // A comment
+ hasMultiLineComments true
+  /* A comment
+  */
+ hasComments true
+  // A comment

@@ -53,3 +53,10 @@ keywords .data .text syscall trap add addu addi addiu and andi div divu mult mul
 features
  hasStrings true
  hasRegularExpressionsSyntaxSugar true
+ hasLineComments true
+  # A comment
+ hasMultiLineComments true
+  ### A comment
+  ###
+ hasComments true
+  # A comment

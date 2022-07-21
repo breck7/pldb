@@ -81,3 +81,11 @@ domainName lesscss.org
 lineCommentToken //
 monaco less
 multiLineCommentTokens /* */
+features
+ hasLineComments true
+  // A comment
+ hasMultiLineComments true
+  /* A comment
+  */
+ hasComments true
+  // A comment

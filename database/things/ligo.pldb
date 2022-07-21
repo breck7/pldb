@@ -18,3 +18,10 @@ multiLineCommentTokens (* *)
 keywords abs assert block Bytes case Crypto Current else failwith false for fun if in let let%entry let%init List list Map map match match%nat mod not operation Operation of record Set set sender skip source String then to true type with
 features
  hasStrings true
+ hasLineComments true
+  // A comment
+ hasMultiLineComments true
+  (* A comment
+  *)
+ hasComments true
+  // A comment

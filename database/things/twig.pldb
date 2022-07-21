@@ -75,3 +75,10 @@ domainName twig.symfony.com
 monaco twig
 multiLineCommentTokens {# #}
 keywords apply autoescape block deprecated do embed extends flush for from if import include macro sandbox set use verbatim with endapply endautoescape endblock endembed endfor endif endmacro endsandbox endset endwith true false
+features
+ hasMultiLineComments true
+  {# A comment
+  #}
+ hasComments true
+  {# A comment
+  #}

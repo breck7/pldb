@@ -8,6 +8,9 @@ features
   -- A comment
  hasSemanticIndentation false
  hasStrings true
+ hasMultiLineComments true
+  /* A comment
+  */
 
 
 wikipedia https://en.wikipedia.org/wiki/SQL

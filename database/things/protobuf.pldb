@@ -102,6 +102,9 @@ features
   // A comment
  hasSemanticIndentation false
  hasStrings true
+ hasMultiLineComments true
+  /* A comment
+  */
 pygmentsHighlighter Protocol Buffer
  filename dsls.py
  fileExtensions proto

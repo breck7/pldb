@@ -15,3 +15,8 @@ example
  
  User-agent: *                # any robot
  Disallow: /something/        # disallow this directory
+features
+ hasLineComments true
+  # A comment
+ hasComments true
+  # A comment

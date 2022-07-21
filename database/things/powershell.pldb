@@ -15,6 +15,9 @@ features
  hasSemanticIndentation false
  hasAssignment true
  hasStrings true
+ hasMultiLineComments true
+  <# A comment
+  #>
 
 wikipedia https://en.wikipedia.org/wiki/PowerShell
  example

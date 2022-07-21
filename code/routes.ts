@@ -46,7 +46,7 @@ class ListRoutes {
       ])
     )
 
-    return  page.toString()
+    return page.toString()
   }
 
   get top100() {
@@ -63,14 +63,14 @@ class ListRoutes {
 
   get top1000() {
     return this.makeTopPage(1000)
-    }
+  }
 
   get keywords() {
     const pagePath = blogFolder + "/lists/keywords.scroll"
     const page = new TreeNode(Disk.read(pagePath))
 
-    const langsWithKeywords = pldbBase.filter(
-      file => file.isLanguage && file.has("keywords")
+    const langsWithKeywords = pldbBase.topLanguages.filter(file =>
+      file.has("keywords")
     )
 
     const theWords = {}
@@ -173,7 +173,7 @@ class ListRoutes {
       "comment autogenExtensionsTable",
       toScrollTable(new TreeNode(sorted), ["name", "nameLink", "extensions"])
     )
-    
+
     return page.toString()
   }
 
