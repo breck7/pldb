@@ -147,6 +147,12 @@ class WikipediaImporter {
     )
   }
 
+  async updateOneCommand(file: PLDBFile) {
+    const wp = new PLDBFileWithWikipedia(file)
+    await wp.fetch()
+    wp.writeToDb()
+  }
+
   writeToDatabaseCommand() {
     this.linkedFiles.forEach(file =>
       new PLDBFileWithWikipedia(file).writeToDb()

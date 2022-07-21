@@ -7,5 +7,5 @@
     "target": "es2017",
     "experimentalDecorators": true
   },
-  "exclude": ["ignore"]
+  "exclude": ["**/ignore", "**/cache"]
 }

@@ -1,0 +1,19 @@
+title Flow9
+reference https://news.ycombinator.com/item?id=19769410
+githubRepo https://github.com/area9innovation/flow9
+ firstCommit 2018
+ stars 535
+ forks 30
+ subscribers 57
+ created 2018
+ updated 2022
+ description Platform for safe, easy and productive programming of complex, multi-platform apps with a modern user interface
+ issues 41
+type pl
+example
+ import runtime;
+ 
+ main() {
+ 	println("Hello world");
+ }
+appeared 2018
