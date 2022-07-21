@@ -11,6 +11,7 @@ githubRepo https://github.com/Azure/bicep
 description Bicep is a Domain Specific Language (DSL) for deploying Azure resources declaratively.
 corporateDevelopers Microsoft
 compilesTo arm-templates
+type jsonFormat
 reference https://docs.microsoft.com/en-us/azure/azure-resource-manager/bicep/
 example
  @minLength(3)
