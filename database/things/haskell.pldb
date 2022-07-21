@@ -60,6 +60,7 @@ features
   foo = f . g
  hasRangeOperators true
  hasPrintDebugging true
+ isCaseSensitive true
 
 wikipedia https://en.wikipedia.org/wiki/Haskell_(programming_language)
  example

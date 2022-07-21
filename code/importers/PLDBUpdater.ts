@@ -27,17 +27,22 @@ class PLDBUpdater {
   }
 
   importFromCsvCommand(path: string) {
-    jtree.TreeNode.fromCsv(Disk.read(path)).forEach(entry => {
+    const content = Disk.read(path)
+    const rows = jtree.TreeNode.fromCsv(content)
+    const queryColumn = rows.nodeAt(0).getFirstWords()[0]
+    rows.forEach(entry => {
       entry = entry.toObject()
-      const hit = pldbBase.searchForEntity(entry.query)
+      const hit = pldbBase.searchForEntity(entry[queryColumn])
       if (!hit) {
-        console.log(entry.query + " not found")
+        console.log(entry[queryColumn] + " not found")
         return
       }
       const file = pldbBase.getFile(hit)
 
-      delete entry.query
-      Object.keys(entry).forEach(key => file.set(key, entry[key]))
+      delete entry[queryColumn]
+      Object.keys(entry).forEach(key =>
+        file.set(key.replace(".", " "), entry[key])
+      )
       file.save()
     })
   }

@@ -1,0 +1,6 @@
+title Case Sensitive Languages
+type feature
+psuedoExample x != X
+description Most programming languages are case sensitive, so x != X.
+reference https://en.wikipedia.org/wiki/Case_sensitivity
+featureKeyword isCaseSensitive
