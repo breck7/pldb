@@ -107,6 +107,10 @@ a:hover {
 .scrollTableComponent {
   table-layout: auto;
 }
+.scrollTableComponent pre {
+  max-width: 80ch;
+  overflow: scroll;
+}
 .scrollCodeBlockComponent {
   border: 1px solid rgba(204, 204, 204, 0.8);
   border-radius: 3px;
