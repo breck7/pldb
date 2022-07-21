@@ -211,6 +211,8 @@ ${this.descriptionSection}
 
 ${this.tryNowRepls}
 
+${this.monacoEditor}
+
 ${this.kpiBar}
 
 ${this.factsSection}
@@ -231,6 +233,24 @@ ${this.hackerNewsTable}
 
 ${this.keyboardNavigation}
 `
+  }
+
+  get monacoEditor() {
+    const { file } = this
+    const monaco = file.get("monaco")
+    if (!monaco) return ""
+
+    const example = file.allExamples[0]
+      ? file.allExamples[0].code.replace(/\n/g, "\n ")
+      : ""
+
+    if (example.includes("`"))
+      console.error(
+        `WARNING: backtick detected in a monaco example. Not supported yet.`
+      )
+
+    return `monacoEditor ${monaco}
+ ${example}`
   }
 
   get prevPage() {

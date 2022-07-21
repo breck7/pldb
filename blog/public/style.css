@@ -144,3 +144,10 @@ a:hover {
   overflow: scroll;
   margin: 6px 0;
 }
+
+#monacoContainer {
+  display: block;
+  height: 10em;
+  border: 1px solid grey;
+  margin-top: 8px;
+}

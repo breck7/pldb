@@ -131,10 +131,10 @@ class PLDBFile extends TreeBaseFile {
   }
 
   get exampleCount() {
-    return this.allExamples.length + this.feauturesWithExamples.length
+    return this.allExamples.length + this.featuresWithExamples.length
   }
 
-  get feauturesWithExamples() {
+  get featuresWithExamples() {
     const featuresTable = this.getNode(`features`)
     if (!featuresTable) return []
     return featuresTable.filter(node => node.length)

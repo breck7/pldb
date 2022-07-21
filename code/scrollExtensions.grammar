@@ -1,14 +1,14 @@
 foldBreakNode
- crux foldBreak
+ cruxFromId
  extends abstractScrollNode
  description Start a new section.
  javascript
   compile() {
-    return `</div><div class="scrollArticlePageComponent" style="column-width:70ch;column-count:1;max-width:90ch;">`
+   return `</div><div class="scrollArticlePageComponent" style="column-width:70ch;column-count:1;max-width:90ch;">`
   }
 kpiTableNode
  catchAllNodeType rowNode
- crux kpiTable
+ cruxFromId
  extends abstractScrollNode
  javascript
   getTableBody() {
@@ -20,12 +20,12 @@ kpiTableNode
    return `<table class="kpiTable"><tr><tr>${this.getTableBody()}</tr></table>`
   }
 tableSearchNode
- crux tableSearch
+ cruxFromId
  extends abstractScrollNode
  description Add table search to the tables
  javascript
   compile() {
-    return `
+   return `
     <script src="../jquery-3.4.1.min.js"></script>
     <script src="../jquery.dataTables.min.js"></script>
     <script>
@@ -38,16 +38,16 @@ tableSearchNode
   }
 ohayoCodeNode
  extends codeNode
- crux ohayoCode
+ cruxFromId
  description Provide a direct link to analyze this data in Ohayo.
  javascript
   compile() {
    const link = `https://ohayo.computer?filename=${this.getRootNode().permalink}.ohayo&data=${encodeURIComponent(this.childrenToString())}`
-    return `<div class="scrollQuoteComponent">Analyze this data yourself in <a href="${link}">Ohayo</a></div>`
+   return `<div class="scrollQuoteComponent">Analyze this data yourself in <a href="${link}">Ohayo</a></div>`
   }
 observableNode
  extends abstractScrollNode
- crux observable
+ cruxFromId
  cells keywordCell urlCell
  description Provide a direct link to analyze this data in Observable.
  javascript
@@ -56,7 +56,7 @@ observableNode
   }
 authorNode
  extends abstractScrollNode
- crux author
+ cruxFromId
  cells keywordCell urlCell
  catchAllCellType anyCell
  description The author of a post.
@@ -65,13 +65,16 @@ authorNode
    return `<div class="scrollAuthor">by <a href="${this.getWord(1)}">${this.getWordsFrom(2).join(" ")}</a></div>`
   }
 howToCiteNode
- crux howToCite
+ cruxFromId
  extends abstractScrollNode
  description Add a "How to cite" block
  javascript
   compile() {
    const article = this.getParent()
-   const authors = article.getNode("author").getWordsFrom(2).join(" ") // todo: multiple
+   const authors = article
+    .getNode("author")
+    .getWordsFrom(2)
+    .join(" ") // todo: multiple
    const year = new Date(article.get("date")).getFullYear()
    const title = article.get("title")
    const site = "PLDB.pub"
@@ -95,4 +98,42 @@ howToCiteNode
         note = {${url}}
       }
      </div></div>`
+  }
+monacoEditorNode
+ cruxFromId
+ extends abstractScrollNode
+ description A Monaco code editor.
+ example
+  monacoEditor javascript // Hello world
+ javascript
+  compile() {
+   return `<div id="monacoContainer"></div>
+    <script src="../node_modules/monaco-editor/min/vs/loader.js"></script>
+    <script>
+    require.config({ paths: { vs: '../node_modules/monaco-editor/min/vs' } })
+    require(["vs/editor/editor.main"], function() {
+      monaco.editor.create(document.getElementById('monacoContainer'), {
+          value: \`${this.childrenToString().replace(/\n/g, "\\n")}\`,
+          language: '${this.getWord(1)}',
+          minimap: {
+            enabled: false
+        },
+        scrollbar: {
+            vertical:"hidden",
+            horizontal: "hidden",
+            handleMouseWheel:false,
+        },
+        overviewRulerLanes: 0,
+        hideCursorInOverviewRuler: true,
+        overviewRulerBorder: false,
+        wordWrap: 'on',
+        //lineNumbers: 'off',
+      glyphMargin: false,
+      folding: false,
+      // Undocumented see https://github.com/Microsoft/vscode/issues/30795#issuecomment-410998882
+      lineDecorationsWidth: 10,
+      lineNumbersMinChars: 2
+        });
+      });
+    </script>`
   }

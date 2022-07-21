@@ -4,6 +4,7 @@ subsection Contributors
 
 aftertext
  Thank you to everyone who has contributed directly to the PLDB repo:
+ https://github.com/breck7/pldb PLDB repo
 
 comment autogenContributors
 list
@@ -23,7 +24,7 @@ list
 subsection Sources
 
 aftertext
- The vast majority of the information on this site comes from other websites and should always include a link back to the `source`. Thank you to all of those sites, including:
+ The vast majority of the information on this site comes from other websites and projects and should always include a link back to the `source`. Thank you to all of those sites, including:
  wrap ` span title="And if there's a link missing somewhere, please report a bug!"
 
 comment autogenAcknowledgements
@@ -76,6 +77,7 @@ list
  - <a href="https://www.npmjs.com/package/jsdom">jsdom</a>
  - <a href="https://www.npmjs.com/package/jtree">jtree</a>
  - <a href="https://www.npmjs.com/package/lodash">lodash</a>
+ - <a href="https://www.npmjs.com/package/monaco-editor">monaco-editor</a>
  - <a href="https://www.npmjs.com/package/numeral">numeral</a>
  - <a href="https://www.npmjs.com/package/pageviews">pageviews</a>
  - <a href="https://www.npmjs.com/package/repo-first-commit">repo-first-commit</a>
@@ -109,15 +111,11 @@ list
  - <a href="languages/png-format.html">PNG</a>
  - <a href="languages/gitignore.html">gitignore</a>
 
-subsection Other Open Source Projects
+subsection Language Creators
 
 aftertext
- PLDB wouldn't be possible without the people behind hundreds of open source technologies.
-
-subsection Builders
-
-aftertext
- And of course, thank you to all of the hard working programmers, engineers, scientists, mathematicians, hobbyists, and tinkerers who for millennia have been inventing the things that are the subject of this site.
+ And of course, thank you to all of the language creators who created the languages that are the subject of this site.
+ link lists/creators.html language creators
 
 maxColumns 1
 columnWidth 60

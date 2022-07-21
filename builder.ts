@@ -40,6 +40,10 @@ class Builder extends AbstractBuilder {
       websiteFolder + "/grammar/pldb.grammar",
       Disk.read(pldbBase.dir + "pldb.grammar")
     )
+    Disk.mkdir(websiteFolder + "/node_modules/")
+    shell(
+      `cp -R ${__dirname}/node_modules/monaco-editor ${websiteFolder}/node_modules/`
+    )
   }
 
   buildAll() {
