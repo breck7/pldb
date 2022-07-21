@@ -240,6 +240,7 @@ class GitHubImporter {
 	}
 
 	async runAll(file) {
+		if (!file.has(repoPath)) return
 		const gitFile = new PLDBFileWithGitHub(file)
 		await gitFile.fetch()
 		gitFile

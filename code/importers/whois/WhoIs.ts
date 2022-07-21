@@ -38,7 +38,7 @@ class WhoIsImporter {
     }
     const results = await whois(domain, { follow: 10, verbose: true })
     console.log(`fetched ${domain}`)
-    console.log(results)
+    //console.log(results)
     Disk.writeJson(path, results)
     return results
   }
@@ -80,19 +80,21 @@ class WhoIsImporter {
     file.save()
   }
 
-  async doAllCommand() {
+  async updateOne(file) {
+    try {
+      this.extractDomain(file)
+      await this.fetchData(file)
+      this.writeData(file)
+    } catch (err) {
+      console.log(`Error for ${file.get("website")}`)
+      console.log(err)
+    }
+  }
+
+  async updateAllCommand() {
     lodash
       .shuffle(pldbBase.filter(file => file.has("website")))
-      .forEach(async file => {
-        try {
-          this.extractDomain(file)
-          await this.fetchData(file)
-          this.writeData(file)
-        } catch (err) {
-          console.log(`Error for ${file.get("website")}`)
-          console.log(err)
-        }
-      })
+      .forEach(async file => this.updateOne(file))
   }
 }
 

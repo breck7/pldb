@@ -1,0 +1,26 @@
+title Sitemap
+type xmlFormat
+description Sitemaps are an easy way for webmasters to inform search engines about pages on their sites that are available for crawling. In its simplest form, a Sitemap is an XML file that lists URLs for a site along with additional metadata about each URL (when it was last updated, how often it usually changes, and how important it is, relative to other URLs in the site) so that search engines can more intelligently crawl the site.
+website https://sitemaps.org/
+example
+ <?xml version="1.0" encoding="UTF-8"?>
+ 
+ <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+ 
+    <url>
+ 
+       <loc>http://www.example.com/</loc>
+ 
+       <lastmod>2005-01-01</lastmod>
+ 
+       <changefreq>monthly</changefreq>
+ 
+       <priority>0.8</priority>
+ 
+    </url>
+ 
+ </urlset> 
+domainName sitemaps.org
+ registered 2001
+appeared 2001
+reference https://en.wikipedia.org/wiki/Site_map

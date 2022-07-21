@@ -4,6 +4,7 @@ import { PLDBBaseFolder } from "../PLDBBase"
 import { GitHubImporter } from "./github.com/GitHub"
 import { runCommand } from "../utils"
 import { jtree } from "jtree"
+import { WhoIsImporter } from "./whois/WhoIs"
 const { Disk } = require("jtree/products/Disk.node.js")
 
 const pldbBase = PLDBBaseFolder.getBase()
@@ -15,6 +16,8 @@ class PLDBUpdater {
     if (!file) return console.error(`❌ File '${id}' not found.`)
 
     new GitHubImporter().runAll(file)
+    const importer = new WhoIsImporter()
+    await importer.updateOne(file)
   }
 
   updateCommand(id: string) {
