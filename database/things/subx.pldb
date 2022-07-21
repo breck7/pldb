@@ -6,7 +6,7 @@ description Author of Mu decided this year to switch implementation from C++ to 
 reference https://github.com/akkartik/mu#readme
 fileExtensions subx
 
-lineCommentKeyword #
+lineCommentToken #
 example
  # 0x20-0x7e: basic latin
  # 0x20 = space

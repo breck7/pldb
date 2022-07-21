@@ -92,7 +92,7 @@ goodreads
  title|year|author|goodreadsId|rating|ratings|reviews
  Object-Oriented Programming with SIMULA|1989|Bjørn Kirkerud|3923315|0.0|0|0
  Anti-fragile ICT Systems (Simula SpringerBriefs on Computing)||Kjell Jørgen Hole|61222579|3.00|1|0
-lineCommentKeyword !
+lineCommentToken !
 leachim6 Simula
  filepath s/Simula.sim
  fileExtensions sim
@@ -101,4 +101,4 @@ leachim6 Simula
      OutText ("Hello World");
      Outimage;
   End;
-printKeyword OutText
+printToken OutText

@@ -138,7 +138,7 @@ corporateDevelopers Apple
 indeedJobs swift developer
  2017 2043
 
-lineCommentKeyword //
+lineCommentToken //
 languageServerProtocolProject https://github.com/apple/sourcekit-lsp
  writtenIn swift
 visualParadigm false
@@ -163,5 +163,5 @@ leachim6 Swift
  example
   print("Hello World")
   
-printKeyword print
-multiLineCommentKeywords /* */
+printToken print
+multiLineCommentTokens /* */

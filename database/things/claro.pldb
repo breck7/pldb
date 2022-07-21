@@ -24,7 +24,7 @@ githubRepo https://github.com/JasonSteving99/claro-lang
  description Claro Lang
  issues 18
 creators Jason Steving
-lineCommentKeyword #
+lineCommentToken #
 features
  hasLineComments true
   # A comment
@@ -32,4 +32,4 @@ features
   # A comment
  hasPrintDebugging true
  hasSemanticIndentation false
-printKeyword print
+printToken print

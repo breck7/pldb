@@ -94,7 +94,7 @@ rosettaCode Turing
 
 centralPackageRepositoryCount 0
 creators Ric Holt
-lineCommentKeyword %
+lineCommentToken %
 features
  hasLineComments true
   % A comment
@@ -108,4 +108,4 @@ leachim6 Turing
  example
   put "Hello World"
   
-printKeyword put
+printToken put

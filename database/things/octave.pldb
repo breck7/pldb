@@ -69,7 +69,7 @@ rijuRepl https://riju.codes/octave
 goodreads
  title|year|author|goodreadsId|rating|ratings|reviews
  Scientific Computing with MATLAB and Octave|2003|Alfio Quarteroni|312792|4.10|10|0
-lineCommentKeyword %
+lineCommentToken %
 pygmentsHighlighter Octave
  filename matlab.py
  fileExtensions m
@@ -79,4 +79,4 @@ leachim6 Octave
  example
   printf("Hello World");
   
-printKeyword printf
+printToken printf

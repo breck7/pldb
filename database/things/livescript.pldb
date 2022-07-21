@@ -85,7 +85,7 @@ rijuRepl https://riju.codes/livescript
   console.log "Hello, world!"
   
 creators Jeremy Ashkenas and Satoshi Murakami and George Zahariev
-lineCommentKeyword #
+lineCommentToken #
 pygmentsHighlighter LiveScript
  filename javascript.py
  fileExtensions ls
@@ -95,5 +95,5 @@ leachim6 LiveScript
  example
   console.log "Hello World"
   
-printKeyword console.log
-multiLineCommentKeywords /* */
+printToken console.log
+multiLineCommentTokens /* */

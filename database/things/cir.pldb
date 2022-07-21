@@ -19,7 +19,7 @@ githubRepo https://github.com/facebookincubator/clangir
 
 reference https://news.ycombinator.com/item?id=31904624
 reference https://discourse.llvm.org/t/rfc-an-mlir-based-clang-ir-cir/63319
-lineCommentKeyword //
+lineCommentToken //
 
 example
  // Read from local variable, address in %0.

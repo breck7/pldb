@@ -2,8 +2,8 @@ title PEG.js
 appeared 2010
 type grammarLanguage
 webRepl https://pegjs.org/online
-lineCommentKeyword //
-multiLineCommentKeywords /* */
+lineCommentToken //
+multiLineCommentTokens /* */
 compilesTo javascript
 
 example

@@ -104,12 +104,12 @@ projectEuler PureScript
 hackerNewsDiscussions
  id|title|time|timestamp|by|comments|score
  6644685|Show HN: PureScript - a functional language which compiles to Javascript|2013-10-31 01:19:21 UTC|1383182361|paf31|0|2
-lineCommentKeyword --
+lineCommentToken --
 languageServerProtocolProject https://github.com/nwolverson/purescript-language-server
  writtenIn purescript
 jupyterKernel https://github.com/Eoksni/ipurescript
 packageRepository https://pursuit.purescript.org/
-multiLineCommentKeywords {- -}
+multiLineCommentTokens {- -}
 leachim6 PureScript
  filepath p/PureScript.purs
  fileExtensions purs

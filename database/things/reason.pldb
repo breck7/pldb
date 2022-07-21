@@ -559,7 +559,7 @@ writtenIn ocaml
 languageServerProtocolProject https://github.com/jaredly/reason-language-server
  writtenIn ocaml
 
-lineCommentKeyword //
+lineCommentToken //
 centralPackageRepositoryCount 0
 rijuRepl https://riju.codes/reasonml
  example
@@ -574,5 +574,5 @@ leachim6 Reason
  example
   print_string "Hello World"
   
-printKeyword print_string
-multiLineCommentKeywords /* */
+printToken print_string
+multiLineCommentTokens /* */

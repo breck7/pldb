@@ -95,7 +95,7 @@ leachim6 DTrace
   	exit(0);
   }
   
-printKeyword printf
+printToken printf
 features
  hasPrintDebugging true
  hasMultiLineComments true
@@ -105,4 +105,4 @@ features
   /* A comment
   */
  hasSemanticIndentation false
-multiLineCommentKeywords /* */
+multiLineCommentTokens /* */

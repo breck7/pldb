@@ -91,7 +91,7 @@ leachim6 Oberon
      Out.String('Hello World');
   END HelloWorld.
   
-printKeyword Out.String
+printToken Out.String
 features
  hasPrintDebugging true
  hasPointers true
@@ -102,4 +102,4 @@ features
   (* A comment
   *)
  hasSemanticIndentation false
-multiLineCommentKeywords (* *)
+multiLineCommentTokens (* *)

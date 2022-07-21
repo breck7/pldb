@@ -7,7 +7,7 @@ subreddit dartlang
  memberCount
   2022 35109
 
-lineCommentKeyword //
+lineCommentToken //
 features
  hasComments true
   // Hi
@@ -179,7 +179,7 @@ rijuRepl https://riju.codes/dart
     print('Hello, world!');
   }
   
-multiLineCommentKeywords /* */
+multiLineCommentTokens /* */
 pygmentsHighlighter Dart
  filename javascript.py
  fileExtensions dart
@@ -191,4 +191,4 @@ leachim6 Dart
     print('Hello World');
   }
   
-printKeyword print
+printToken print

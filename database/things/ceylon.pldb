@@ -111,7 +111,7 @@ rijuRepl https://riju.codes/ceylon
  fileExtensions ceylon
  website https://ceylon-lang.org/
  githubRepo https://ceylon-lang.org/code/source/
-lineCommentKeyword //
+lineCommentToken //
 pygmentsHighlighter Ceylon
  filename jvm.py
  fileExtensions ceylon
@@ -123,5 +123,5 @@ leachim6 Ceylon
       print("Hello World");
   }
   
-printKeyword print
-multiLineCommentKeywords /* */
+printToken print
+multiLineCommentTokens /* */

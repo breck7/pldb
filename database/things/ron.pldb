@@ -43,7 +43,7 @@ githubRepo https://github.com/ron-rs/ron
  description Rusty Object Notation
  issues 26
 
-lineCommentKeyword //
+lineCommentToken //
 features
  hasLineComments true
   // A comment
@@ -53,4 +53,4 @@ features
   /* A comment
   */
  hasSemanticIndentation false
-multiLineCommentKeywords /* */
+multiLineCommentTokens /* */

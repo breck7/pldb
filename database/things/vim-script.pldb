@@ -122,7 +122,7 @@ leachim6 VimScript
  example
   echo "Hello World"
   
-printKeyword echo
+printToken echo
 features
  hasPrintDebugging true
 pygmentsHighlighter VimL

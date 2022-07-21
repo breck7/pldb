@@ -62,7 +62,7 @@ leachim6 ALGOL 60
     WRITE(F, *, E);
   END.
   
-printKeyword WRITE
+printToken WRITE
 features
  hasPrintDebugging true
  hasSemanticIndentation false

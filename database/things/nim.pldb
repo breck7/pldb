@@ -54,7 +54,7 @@ helloWorldCollection Nim
  
  echo "Hello World"
 
-lineCommentKeyword #
+lineCommentToken #
 
 linguistGrammarRepo https://github.com/Varriount/NimLime
  firstCommit 2013
@@ -124,5 +124,5 @@ leachim6 Nim
  example
   echo("Hello World")
   
-printKeyword echo
-multiLineCommentKeywords #[ ]#
+printToken echo
+multiLineCommentTokens #[ ]#

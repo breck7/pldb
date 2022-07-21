@@ -26,6 +26,6 @@ leachim6 Muon
   	printf("Hello World")
   }
   
-printKeyword printf
+printToken printf
 features
  hasPrintDebugging true

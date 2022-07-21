@@ -81,7 +81,7 @@ codeMirror coffeescript
 
 rosettaCode CoffeeScript
 
-lineCommentKeyword #
+lineCommentToken #
 jupyterKernel https://github.com/n-riesco/jp-coffeescript
 centralPackageRepositoryCount 0
 rijuRepl https://riju.codes/coffeescript
@@ -107,5 +107,5 @@ leachim6 CoffeeScript
  example
   alert "Hello World"
   
-printKeyword console.log
-multiLineCommentKeywords ###
+printToken console.log
+multiLineCommentTokens ###

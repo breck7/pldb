@@ -130,7 +130,7 @@ codeMirror nsis
 rosettaCode NSIS
 
 centralPackageRepositoryCount 0
-lineCommentKeyword ;
+lineCommentToken ;
 pygmentsHighlighter NSIS
  filename installers.py
  fileExtensions nsi nsh

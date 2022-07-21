@@ -52,6 +52,6 @@ leachim6 ALGOL W
       write( "Hello World" )
   end.
   
-printKeyword write
+printToken write
 features
  hasPrintDebugging true

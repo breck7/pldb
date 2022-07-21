@@ -43,6 +43,6 @@ leachim6 Arduino
   
   }
   
-printKeyword Serial.println
+printToken Serial.println
 features
  hasPrintDebugging true

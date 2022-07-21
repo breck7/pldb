@@ -87,7 +87,7 @@ wikipedia https://en.wikipedia.org/wiki/XBase%2B%2B
 
 status historical
 centralPackageRepositoryCount 0
-lineCommentKeyword //
+lineCommentToken //
 features
  hasLineComments true
   // A comment
@@ -102,4 +102,4 @@ leachim6 XBase++
   func Main()
       Qout("Hello World")
   return 1
-printKeyword Qout
+printToken Qout

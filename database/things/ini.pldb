@@ -66,8 +66,8 @@ fileType text
 
 antlr https://github.com/afucher/yaip
 
-lineCommentKeyword #
-lineCommentKeyword ;
+lineCommentToken #
+lineCommentToken ;
 
 centralPackageRepositoryCount 0
 pygmentsHighlighter INI

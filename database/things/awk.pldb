@@ -2,7 +2,7 @@ title awk
 appeared 1977
 type pl
 
-lineCommentKeyword #
+lineCommentToken #
 
 features
  hasComments true
@@ -231,4 +231,4 @@ leachim6 AWK
   # awk -f awk.awk
   BEGIN { print "Hello World" }
   
-printKeyword print
+printToken print

@@ -25,6 +25,6 @@ leachim6 PiCat
   main =>
     println("Hello World").
   
-printKeyword println
+printToken println
 features
  hasPrintDebugging true

@@ -43,7 +43,7 @@ githubRepo https://github.com/ArkScript-lang/Ark
  issues 22
 
 website https://arkscript-lang.github.io
-lineCommentKeyword #
+lineCommentToken #
 features
  hasLineComments true
   # A comment
@@ -57,4 +57,4 @@ leachim6 ArkScript
  example
   (print "Hello World")
   
-printKeyword print
+printToken print

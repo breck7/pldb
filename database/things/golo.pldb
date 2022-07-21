@@ -56,7 +56,7 @@ isOpenSource true
 rosettaCode Golo
 
 centralPackageRepositoryCount 0
-lineCommentKeyword #
+lineCommentToken #
 features
  hasLineComments true
   # A comment
@@ -77,4 +77,4 @@ leachim6 Golo
     println("Hello World")
   }
   
-printKeyword println
+printToken println

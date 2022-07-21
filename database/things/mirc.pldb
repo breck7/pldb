@@ -48,6 +48,6 @@ leachim6 Mirc
  example
   echo -a Hello World
   
-printKeyword echo
+printToken echo
 features
  hasPrintDebugging true

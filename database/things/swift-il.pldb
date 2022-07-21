@@ -14,7 +14,7 @@ centralPackageRepositoryCount 0
 
 description 
 
-lineCommentKeyword //
+lineCommentToken //
 example
  // SIL is reliant on Swift's type system and declarations, so SIL syntax is an extension of Swift's. A .sil file is a Swift source file with added SIL definitions. The Swift source is parsed only for its declarations; Swift func bodies (except for nested declarations) and top-level code are ignored by the SIL parser. In a .sil file, there are no implicit imports; the swift and/or Builtin standard modules must be imported explicitly if used.
  sil_stage canonical
@@ -72,4 +72,4 @@ leachim6 SIL
  example
   print Hello World
   
-printKeyword print
+printToken print

@@ -89,5 +89,5 @@ leachim6 SmallTalk
  example
   Transcript show: 'Hello World'.
   
-printKeyword displayNl
-multiLineCommentKeywords "
+printToken displayNl
+multiLineCommentTokens "

@@ -68,7 +68,7 @@ leachim6 ASP
       Response.Write("Hello World")
   %>
   
-printKeyword Response.Write
+printToken Response.Write
 features
  hasPrintDebugging true
 pygmentsHighlighter aspx-vb

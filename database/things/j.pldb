@@ -64,7 +64,7 @@ hopl 1558
 
 rosettaCode J
 
-lineCommentKeyword NB.
+lineCommentToken NB.
 visualParadigm false
 jupyterKernel https://github.com/martin-saurer/jkernel
 centralPackageRepositoryCount 0
@@ -83,4 +83,4 @@ leachim6 J
   echo 'Hello World'
   exit ''
   
-printKeyword echo
+printToken echo

@@ -206,9 +206,9 @@ rosettaCode Julia
 
 indeedJobs julia engineer
  2017 85
-lineCommentKeyword #
-printKeyword print
-printKeyword println
+lineCommentToken #
+printToken print
+printToken println
 languageServerProtocolProject https://github.com/JuliaEditorSupport/LanguageServer.jl
  writtenIn julia
 visualParadigm false
@@ -225,7 +225,7 @@ rijuRepl https://riju.codes/julia
  example
   println("Hello, world!")
   
-multiLineCommentKeywords #= =#
+multiLineCommentTokens #= =#
 creators Jeff Bezanson and Alan Edelman and Stefan Karpinski and Viral B. Shah
 pygmentsHighlighter Julia
  filename julia.py

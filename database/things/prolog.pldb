@@ -87,7 +87,7 @@ rosettaCode Prolog
 
 antlr https://github.com/antlr/grammars-v4/tree/master/prolog
 
-lineCommentKeyword %
+lineCommentToken %
 jupyterKernel https://github.com/Calysto/calysto_prolog
 packageRepository http://www.swi-prolog.org/pldoc/doc/_SWI_/library/prolog_pack.pl
 rijuRepl https://riju.codes/prolog
@@ -116,5 +116,5 @@ leachim6 Prolog
   
   :- helloWorld.
   
-printKeyword write
-multiLineCommentKeywords /* */
+printToken write
+multiLineCommentTokens /* */

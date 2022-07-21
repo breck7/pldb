@@ -83,11 +83,11 @@ rosettaCode Stata
 
 corporateDevelopers StataCorp
 
-lineCommentKeyword //
+lineCommentToken //
 jupyterKernel https://github.com/TiesdeKok/ipystata
 jupyterKernel https://github.com/kylebarron/stata_kernel
 packageRepository https://www.stata.com/manuals/rssc.pdf
 pygmentsHighlighter Stata
  filename stata.py
  fileExtensions do ado
-multiLineCommentKeywords /* */
+multiLineCommentTokens /* */

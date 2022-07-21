@@ -30,7 +30,7 @@ status active
 fileType text
 wordRank 2862
 centralPackageRepositoryCount 0
-lineCommentKeyword #
+lineCommentToken #
 example
  echo "Hello, world!"
 
@@ -49,7 +49,7 @@ leachim6 Tea
  example
   echo "Hello World"
   
-printKeyword echo
+printToken echo
 features
  hasPrintDebugging true
  hasLineComments true

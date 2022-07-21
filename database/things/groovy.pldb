@@ -95,7 +95,7 @@ rosettaCode Groovy
 languageServerProtocolProject https://github.com/palantir/groovy-language-server/
  writtenIn java
 
-lineCommentKeyword //
+lineCommentToken //
 keywords as assert break case catch class const continue def default do else enum extends false finally for goto if implements import in instanceof interface new null package return super switch this throw throws trait true try while
 stackOverflowSurvey
  2021
@@ -120,5 +120,5 @@ leachim6 Groovy
  example
   println "Hello World"
   
-printKeyword println
-multiLineCommentKeywords /* */
+printToken println
+multiLineCommentTokens /* */

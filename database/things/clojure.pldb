@@ -135,7 +135,7 @@ cheatSheetUrl http://web.csulb.edu/~artg/524/clojure-cheat-sheet-a4-grey.pdf
 indeedJobs clojure engineer
  2017 355
 
-lineCommentKeyword ;
+lineCommentToken ;
 languageServerProtocolProject https://github.com/snoe/clojure-lsp
  writtenIn clojure
 jupyterKernel https://github.com/roryk/clojupyter
@@ -171,5 +171,5 @@ leachim6 Clojure
  example
   (println "Hello World")
   
-printKeyword println
-multiLineCommentKeywords (comment )
+printToken println
+multiLineCommentTokens (comment )

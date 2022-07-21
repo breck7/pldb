@@ -64,6 +64,6 @@ leachim6 Egl
       end
   end
   
-printKeyword SysLib.writeStdout
+printToken SysLib.writeStdout
 features
  hasPrintDebugging true

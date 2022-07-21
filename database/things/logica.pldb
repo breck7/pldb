@@ -4,7 +4,7 @@ type queryLanguage
 description Logica is an open source declarative logic programming language for data manipulation. Logica is a successor to Yedalog, a language created at Google earlier.
 
 compilesTo sql
-lineCommentKeyword #
+lineCommentToken #
 
 example
  # Define natural numbers from 1 to 29.

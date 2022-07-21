@@ -2,7 +2,7 @@ title Ada
 appeared 1980
 type pl
 creators Jean Ichbiah
-lineCommentKeyword --
+lineCommentToken --
 
 features
  hasPointers true
@@ -234,4 +234,4 @@ leachim6 Ada
      Put_line ("Hello World");
   end Hello_World;
   
-printKeyword Text_IO.Put_Line
+printToken Text_IO.Put_Line

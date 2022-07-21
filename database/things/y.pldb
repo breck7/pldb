@@ -23,6 +23,6 @@ leachim6 Y
   		printf("Hello World\n")
   	end
   end
-printKeyword printf
+printToken printf
 features
  hasPrintDebugging true

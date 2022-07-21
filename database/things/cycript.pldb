@@ -62,7 +62,7 @@ reference https://git.saurik.com/cycript.git
 status active
 fileType text
 centralPackageRepositoryCount 0
-lineCommentKeyword //
+lineCommentToken //
 features
  hasLineComments true
   // A comment
@@ -72,4 +72,4 @@ features
   /* A comment
   */
  hasSemanticIndentation false
-multiLineCommentKeywords /* */
+multiLineCommentTokens /* */

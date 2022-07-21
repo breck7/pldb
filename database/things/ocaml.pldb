@@ -116,7 +116,7 @@ rijuRepl https://riju.codes/ocaml
   ;;
   print_string "Hello, world!\n"
   
-multiLineCommentKeywords (* *)
+multiLineCommentTokens (* *)
 goodreads
  title|year|author|goodreadsId|rating|ratings|reviews
  Real World OCaml: Functional programming for the masses|2013|Yaron Minsky|21890163|4.28|88|7
@@ -132,4 +132,4 @@ leachim6 OCaml
  fileExtensions ml
  example
   print_string "Hello World\n"
-printKeyword print_string
+printToken print_string

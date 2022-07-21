@@ -58,7 +58,7 @@ rijuRepl https://riju.codes/hcl
  example
   output = "Hello, world!"
   
-lineCommentKeyword //
+lineCommentToken //
 features
  hasLineComments true
   // A comment

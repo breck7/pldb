@@ -24,7 +24,7 @@ rijuRepl https://riju.codes/dhall
   { output = "Hello, world!" }
 
 
-lineCommentKeyword --
+lineCommentToken --
 example
  -- ./company.dhall
  

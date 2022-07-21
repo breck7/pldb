@@ -94,7 +94,7 @@ rosettaCode Nemerle
 corporateDevelopers JetBrains
 visualParadigm false
 centralPackageRepositoryCount 0
-lineCommentKeyword //
+lineCommentToken //
 pygmentsHighlighter Nemerle
  filename dotnet.py
  fileExtensions n
@@ -109,4 +109,4 @@ leachim6 Nemerle
           System.Console.WriteLine ("Hello World");
       }
   }
-printKeyword System.Console.WriteLine
+printToken System.Console.WriteLine

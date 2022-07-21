@@ -43,7 +43,7 @@ tiobe Seed7
 rosettaCode Seed7
 
 centralPackageRepositoryCount 0
-lineCommentKeyword #
+lineCommentToken #
 leachim6 Seed7
  filepath s/Seed7.s7
  fileExtensions s7
@@ -55,4 +55,4 @@ leachim6 Seed7
       writeln("Hello World");
     end func;
   
-printKeyword writeln
+printToken writeln

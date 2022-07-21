@@ -43,7 +43,7 @@ hopl 291
 rosettaCode Logo
 
 antlr https://github.com/antlr/grammars-v4/tree/master/logo
-lineCommentKeyword ;
+lineCommentToken ;
 centralPackageRepositoryCount 0
 leachim6 Logo
  filepath l/Logo.lg
@@ -51,4 +51,4 @@ leachim6 Logo
  example
   print [Hello World]
   
-printKeyword print
+printToken print

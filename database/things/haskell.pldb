@@ -144,7 +144,7 @@ rosettaCode Haskell
 
 indeedJobs haskell developer
  2017 190
-lineCommentKeyword --
+lineCommentToken --
 languageServerProtocolProject https://github.com/haskell/haskell-ide-engine
  writtenIn haskell
 visualParadigm false
@@ -164,7 +164,7 @@ rijuRepl https://riju.codes/haskell
   main :: IO ()
   main = putStrLn "Hello, world!"
   
-multiLineCommentKeywords {- -}
+multiLineCommentTokens {- -}
 creators Paul Hudak and John Hughes
 goodreads
  title|year|author|goodreadsId|rating|ratings|reviews
@@ -183,4 +183,4 @@ leachim6 Haskell
   
   main = putStrLn "Hello World"
   
-printKeyword putStrLn
+printToken putStrLn

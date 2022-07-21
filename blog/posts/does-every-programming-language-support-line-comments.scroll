@@ -73,7 +73,7 @@ ohayoCode
  html.h1 Line comments
  web.get https://pldb.pub/languages.csv
   filter.where rank < 300
-   columns.keep appeared title rank languageRank features.hasLineComments lineCommentKeyword
+   columns.keep appeared title rank languageRank features.hasLineComments lineCommentToken
     columns.rename features.hasLineComments hasLineComments
      filter.where hasLineComments != 
       tables.basic
@@ -81,11 +81,11 @@ ohayoCode
         tables.basic
        filter.where hasLineComments = false
         tables.basic
-       filter.where lineCommentKeyword != 
-        group.by lineCommentKeyword
+       filter.where lineCommentToken != 
+        group.by lineCommentToken
          reduce appeared min firstAppeared
          roughjs.pie Line comment token usage
-          label lineCommentKeyword
+          label lineCommentToken
           value count
          rows.sortByReverse count
           tables.basic

@@ -21,7 +21,7 @@ features
   *)
  hasSemanticIndentation false
 
-multiLineCommentKeywords (* *)
+multiLineCommentTokens (* *)
 
 example
  let john = role Person

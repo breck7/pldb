@@ -122,7 +122,7 @@ corporateDevelopers plataformatec
 writtenIn elixir
 indeedJobs elixir developer
  2017 214
-lineCommentKeyword #
+lineCommentToken #
 languageServerProtocolProject https://github.com/JakeBecker/elixir-ls
  writtenIn elixir
 visualParadigm false
@@ -149,4 +149,4 @@ leachim6 Elixir
   #!/usr/bin/env elixir
   IO.puts "Hello World"
   
-printKeyword IO.puts
+printToken IO.puts

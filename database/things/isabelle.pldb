@@ -108,7 +108,7 @@ centralPackageRepositoryCount 0
 pygmentsHighlighter Isabelle
  filename theorem.py
  fileExtensions thy
-multiLineCommentKeywords (* *)
+multiLineCommentTokens (* *)
 features
  hasMultiLineComments true
   (* A comment

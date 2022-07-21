@@ -117,7 +117,7 @@ languageServerProtocolProject https://github.com/Pure-D/serve-d
 languageServerProtocolProject https://github.com/d-language-server/dls
  writtenIn d
 
-lineCommentKeyword //
+lineCommentToken //
 visualParadigm false
 packageRepository https://code.dlang.org/
 gdbSupport true
@@ -143,6 +143,6 @@ leachim6 D♭♭
      return 0;
   }
   
-printKeyword printf
-multiLineCommentKeywords /* */
-multiLineCommentKeywords /+ +/
+printToken printf
+multiLineCommentTokens /* */
+multiLineCommentTokens /+ +/

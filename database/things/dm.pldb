@@ -123,7 +123,7 @@ wordRank 7101
 rosettaCode DM
 
 centralPackageRepositoryCount 0
-lineCommentKeyword //
+lineCommentToken //
 features
  hasLineComments true
   // A comment
@@ -133,4 +133,4 @@ features
   /* A comment
   */
  hasSemanticIndentation false
-multiLineCommentKeywords /* */
+multiLineCommentTokens /* */

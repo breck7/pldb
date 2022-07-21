@@ -18,7 +18,7 @@ example
 description The PGM format is a lowest common denominator grayscale file format. It is designed to be extremely easy to learn and write programs for. (It's so simple that most people will simply reverse engineer it because it's easier than reading this specification).
 reference https://en.wikipedia.org/wiki/Netpbm_format
 status active
-lineCommentKeyword #
+lineCommentToken #
 features
  hasLineComments true
   # A comment

@@ -72,7 +72,7 @@ ubuntuPackage pari-gp
 
 jupyterKernel https://github.com/jdemeyer/pari_jupyter
 centralPackageRepositoryCount 0
-multiLineCommentKeywords /* */
+multiLineCommentTokens /* */
 features
  hasMultiLineComments true
   /* A comment

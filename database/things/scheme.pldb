@@ -98,8 +98,8 @@ rosettaCode Scheme
 indeedJobs scheme engineer
  2017 1174
 
-lineCommentKeyword ;
-multiLineCommentKeywords #| |#
+lineCommentToken ;
+multiLineCommentTokens #| |#
 jupyterKernel https://github.com/Calysto/calysto_scheme
 centralPackageRepositoryCount 0
 rijuRepl https://riju.codes/scheme
@@ -116,4 +116,4 @@ leachim6 Scheme
  example
   (display "Hello World") (newline)
   
-printKeyword display
+printToken display

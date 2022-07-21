@@ -37,6 +37,6 @@ leachim6 J#
   	}
   }
   
-printKeyword System.Console.Write
+printToken System.Console.Write
 features
  hasPrintDebugging true

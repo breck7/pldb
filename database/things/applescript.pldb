@@ -108,7 +108,7 @@ goodreads
  AppleScript for Dummies|1995|Tom Trinko|2171980|3.75|4|1
  AppleScript Programming for the Absolute Beginner|2007|Jerry Lee Ford Jr.|3055205|3.20|5|0
  AppleScript Pocket Reference: The Essential AppleScript Language Reference|2006|Matt Neuburg|6294483|0.0|0|0
-lineCommentKeyword --
+lineCommentToken --
 pygmentsHighlighter AppleScript
  filename scripting.py
  fileExtensions applescript
@@ -118,5 +118,5 @@ leachim6 AppleScript
  example
   display dialog "Hello World"  
   
-printKeyword display dialog
-multiLineCommentKeywords (* *)
+printToken display dialog
+multiLineCommentTokens (* *)

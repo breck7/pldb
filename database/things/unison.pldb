@@ -47,7 +47,7 @@ rijuRepl https://riju.codes/unison
   main = runProg 'let
     printLine "Hello, world!"
   
-lineCommentKeyword --
+lineCommentToken --
 features
  hasLineComments true
   -- A comment

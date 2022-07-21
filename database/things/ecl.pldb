@@ -83,8 +83,8 @@ codeMirror ecl
 rosettaCode ECL
 
 centralPackageRepositoryCount 0
-lineCommentKeyword //
+lineCommentToken //
 pygmentsHighlighter ECL
  filename ecl.py
  fileExtensions ecl
-multiLineCommentKeywords /* */
+multiLineCommentTokens /* */

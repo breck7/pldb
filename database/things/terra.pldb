@@ -149,7 +149,7 @@ isOpenSource true
 rosettaCode Terra
 
 centralPackageRepositoryCount 0
-lineCommentKeyword --
+lineCommentToken --
 features
  hasLineComments true
   -- A comment
@@ -163,4 +163,4 @@ leachim6 Terra
  example
   print("Hello World")
   
-printKeyword print
+printToken print

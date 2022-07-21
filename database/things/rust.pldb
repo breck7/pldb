@@ -169,8 +169,8 @@ rosettaCode Rust
 
 indeedJobs rust engineer
  2017 141
-lineCommentKeyword //
-printKeyword println!
+lineCommentToken //
+printToken println!
 languageServerProtocolProject https://github.com/rust-lang-nursery/rls
  writtenIn rust
 visualParadigm false
@@ -190,7 +190,7 @@ rijuRepl https://riju.codes/rust
       println!("Hello, world!");
   }
   
-multiLineCommentKeywords /* */
+multiLineCommentTokens /* */
 corporateDevelopers Mozilla
 pygmentsHighlighter Rust
  filename rust.py

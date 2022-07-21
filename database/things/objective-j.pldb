@@ -109,7 +109,7 @@ status active
 fileType text
 isOpenSource true
 centralPackageRepositoryCount 0
-lineCommentKeyword //
+lineCommentToken //
 features
  hasLineComments true
   // A comment
@@ -125,4 +125,4 @@ leachim6 Objective J
  example
   document.write("Hello World");
   
-printKeyword document.write
+printToken document.write

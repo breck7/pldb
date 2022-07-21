@@ -25,6 +25,6 @@ leachim6 CobolScript
   DISPLAY `</BODY></HTML>`.
   GOBACK.
   
-printKeyword DISPLAY
+printToken DISPLAY
 features
  hasPrintDebugging true

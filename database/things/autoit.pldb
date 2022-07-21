@@ -89,7 +89,7 @@ rosettaCode AutoIt
 
 centralPackageRepositoryCount 0
 creators Jonathan Bennett
-lineCommentKeyword ;
+lineCommentToken ;
 pygmentsHighlighter AutoIt
  filename automation.py
  fileExtensions au3
@@ -98,4 +98,4 @@ leachim6 AutoIt
  fileExtensions au3
  example
   MsgBox(0, "Message Box", "Hello World")
-printKeyword MsgBox
+printToken MsgBox

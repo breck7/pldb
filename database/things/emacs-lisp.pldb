@@ -3,7 +3,7 @@ appeared 1985
 type pl
 creators Richard Stallman
 aka emacslisp
-lineCommentKeyword ;
+lineCommentToken ;
 
 features
  isLisp true
@@ -85,4 +85,4 @@ leachim6 EmacsLisp
  example
   (message "Hello World")
   
-printKeyword print
+printToken print

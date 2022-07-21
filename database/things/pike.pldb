@@ -75,7 +75,7 @@ quineRelay Pike
 ubuntuPackage pike8.0
 
 rosettaCode Pike
-lineCommentKeyword //
+lineCommentToken //
 jupyterKernel https://github.com/kevinior/jupyter-pike-kernel
 centralPackageRepositoryCount 0
 rijuRepl https://riju.codes/pike
@@ -98,4 +98,4 @@ leachim6 Pike
       return 0;
   }
   
-printKeyword write
+printToken write

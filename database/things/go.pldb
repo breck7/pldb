@@ -221,7 +221,7 @@ corporateDevelopers Google
 indeedJobs go engineer
  2017 1284
 
-lineCommentKeyword //
+lineCommentToken //
 languageServerProtocolProject https://github.com/golang/tools/tree/master/gopls
  writtenIn go
 languageServerProtocolProject https://github.com/sourcegraph/go-langserver
@@ -265,4 +265,4 @@ leachim6 Go
     fmt.Println("Hello World")
   }
   
-printKeyword fmt.Println
+printToken fmt.Println

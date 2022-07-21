@@ -74,7 +74,7 @@ rijuRepl https://riju.codes/jasmin
       return
   .end method
   
-lineCommentKeyword ;
+lineCommentToken ;
 features
  hasLineComments true
   ; A comment

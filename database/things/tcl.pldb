@@ -175,7 +175,7 @@ codeMirror tcl
 
 rosettaCode Tcl
 
-lineCommentKeyword #
+lineCommentToken #
 visualParadigm false
 jupyterKernel https://github.com/rpep/tcl_kernel
 centralPackageRepositoryCount 0
@@ -203,4 +203,4 @@ leachim6 Tcl
  fileExtensions tcl
  example
   puts "Hello World"
-printKeyword puts
+printToken puts

@@ -112,8 +112,6 @@ class Builder extends AbstractBuilder {
     this.buildListsBlog()
   }
 
-
-
   buildRedirects() {
     Disk.mkdir(websiteFolder + "/posts")
     Disk.read(__dirname + "/blog/redirects.txt")
@@ -319,7 +317,7 @@ ${text}`
       .slice(0, 100)
       .filter(file => file.has("githubCopilotOptimized"))
       .forEach(file => {
-        const lineCommentKeyword = file.lineCommentKeyword
+        const lineCommentToken = file.lineCommentToken
 
         const todos = []
         topFeatures.forEach(feature => {
@@ -327,13 +325,13 @@ ${text}`
           if (hit && hit.getContent() === "false") return
           if (hit && hit.length)
             todos.push(
-              `${lineCommentKeyword} A short example of ${feature.feature}(${
+              `${lineCommentToken} A short example of ${feature.feature}(${
                 feature.path
               }) in ${file.title}:\n${hit.childrenToString()}`
             )
           else
             todos.push(
-              `${lineCommentKeyword} A short example of ${feature.feature}(${feature.path}) in ${file.title}:`
+              `${lineCommentToken} A short example of ${feature.feature}(${feature.path}) in ${file.title}:`
             )
         })
 

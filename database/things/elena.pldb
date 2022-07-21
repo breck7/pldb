@@ -27,6 +27,6 @@ leachim6 Elena
       console writeLine("Hello World").
   ]
   
-printKeyword writeLine
+printToken writeLine
 features
  hasPrintDebugging true

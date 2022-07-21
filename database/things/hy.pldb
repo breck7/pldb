@@ -74,7 +74,7 @@ rijuRepl https://riju.codes/hy
   (print "Hello, world!")
   
 creators Paul Tagliamonte
-lineCommentKeyword ;
+lineCommentToken ;
 features
  hasLineComments true
   ; A comment
@@ -91,4 +91,4 @@ leachim6 Hy
  example
   (print "Hello World")
   
-printKeyword print
+printToken print

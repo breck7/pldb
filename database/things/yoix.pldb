@@ -164,7 +164,7 @@ status historical
 isOpenSource true
 centralPackageRepositoryCount 0
 creators Rich Drechsler and John Mocenigo
-lineCommentKeyword //
+lineCommentToken //
 features
  hasLineComments true
   // A comment
@@ -180,4 +180,4 @@ leachim6 Yoix
   
   printf("Hello World");
   
-printKeyword printf
+printToken printf

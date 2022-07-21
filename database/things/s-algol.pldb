@@ -75,7 +75,7 @@ status historical
 hopl 869
 
 centralPackageRepositoryCount 0
-lineCommentKeyword !
+lineCommentToken !
 features
  hasLineComments true
   ! A comment
@@ -89,4 +89,4 @@ leachim6 S Algol
   write "Hello World"
   ?
   
-printKeyword write
+printToken write

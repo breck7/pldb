@@ -15,8 +15,8 @@ features
  hasLineComments false
  hasSemanticIndentation false
 
-multiLineCommentKeywords (* *)
-multiLineCommentKeywords { }
+multiLineCommentTokens (* *)
+multiLineCommentTokens { }
 wikipedia https://en.wikipedia.org/wiki/Object_Pascal
  example
   type

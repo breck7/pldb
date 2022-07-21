@@ -82,7 +82,7 @@ rijuRepl https://riju.codes/dafny
   }
   
 creators K. Rustan M. Leino
-lineCommentKeyword //
+lineCommentToken //
 features
  hasLineComments true
   // A comment
@@ -90,4 +90,4 @@ features
   // A comment
  hasPrintDebugging true
  hasSemanticIndentation false
-printKeyword print
+printToken print

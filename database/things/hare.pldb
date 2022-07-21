@@ -29,6 +29,6 @@ leachim6 Hare
   	fmt::println("Hello World")!;
   };
   
-printKeyword fmt::println
+printToken fmt::println
 features
  hasPrintDebugging true

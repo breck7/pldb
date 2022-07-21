@@ -4,7 +4,7 @@ type pl
 creators Brandon Barber
 fileExtensions n
 
-lineCommentKeyword //
+lineCommentToken //
 
 githubRepo https://github.com/maelswarm/nymph
  firstCommit 2017
@@ -43,4 +43,4 @@ features
   // A comment
  hasPrintDebugging true
  hasSemanticIndentation false
-printKeyword printf
+printToken printf

@@ -28,7 +28,7 @@ example
 reference https://godoc.org/github.com/robfig/soy
 fileExtensions soy
 corporateDevelopers Google
-lineCommentKeyword //
+lineCommentToken //
 features
  hasLineComments true
   // A comment
@@ -38,4 +38,4 @@ features
   /* A comment
   */
  hasSemanticIndentation false
-multiLineCommentKeywords /* */
+multiLineCommentTokens /* */

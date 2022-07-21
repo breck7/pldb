@@ -21,7 +21,7 @@ wikipedia https://en.wikipedia.org/wiki/Action_Code_Script
 
 status historical
 centralPackageRepositoryCount 0
-lineCommentKeyword //
+lineCommentToken //
 features
  hasLineComments true
   // A comment
@@ -29,4 +29,4 @@ features
   // A comment
  hasPrintDebugging true
  hasSemanticIndentation false
-printKeyword print
+printToken print

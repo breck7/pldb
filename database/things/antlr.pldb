@@ -126,8 +126,8 @@ antlr https://github.com/antlr/grammars-v4/tree/master/antlr4
 indeedJobs antlr engineer
  2017 7
 
-lineCommentKeyword //
+lineCommentToken //
 centralPackageRepositoryCount 0
 pygmentsHighlighter ANTLR
  filename parsers.py
-multiLineCommentKeywords /* */
+multiLineCommentTokens /* */

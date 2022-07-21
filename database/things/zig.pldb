@@ -54,6 +54,6 @@ leachim6 Zig
       const stdout = std.io.getStdOut().writer();
       try stdout.print("Hello World", .{});
   }
-printKeyword std.debug.print
+printToken std.debug.print
 features
  hasPrintDebugging true

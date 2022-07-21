@@ -144,7 +144,7 @@ antlr https://github.com/antlr/grammars-v4/tree/master/objc
 indeedJobs objective-c engineer
  2017 4276
 
-lineCommentKeyword //
+lineCommentToken //
 keywords auto break case char const continue default do double else enum extern float for goto if inline int long register restrict return short signed sizeof static struct switch typedef union unsigned void volatile while _Bool _Complex _Imaginary BOOL Class bycopy byref id IMP in inout nil NO NULL oneway out Protocol SEL self Super YES @ @interface @end @implementation @protocol @class @public @protected @private @property @try @throw @catch() @finally @synthesize @dynamic @selector atomic nonatomic retain
 stackOverflowSurvey
  2021
@@ -193,5 +193,5 @@ leachim6 Objective C
       NSLog(@"Hello World");
   }
   
-printKeyword printf
-multiLineCommentKeywords /* */
+printToken printf
+multiLineCommentTokens /* */

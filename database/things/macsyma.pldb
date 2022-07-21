@@ -27,6 +27,6 @@ leachim6 Macsyma
  example
   print("Hello World");
   
-printKeyword print
+printToken print
 features
  hasPrintDebugging true

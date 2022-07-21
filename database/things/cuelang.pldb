@@ -16,7 +16,7 @@ githubRepo https://github.com/cuelang/cue
  issues 1
 
 website https://cuelang.org/
-lineCommentKeyword //
+lineCommentToken //
 example
  #Spec: {
    kind: string

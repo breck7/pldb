@@ -22,7 +22,7 @@ wikipedia https://en.wikipedia.org/wiki/Not_eXactly_C
 status historical
 fileType text
 centralPackageRepositoryCount 0
-lineCommentKeyword //
+lineCommentToken //
 features
  hasLineComments true
   // A comment
@@ -39,4 +39,4 @@ leachim6 NXC
       TextOut(0, LCD_LINE1, "Hello World");
   }
   
-printKeyword TextOut
+printToken TextOut

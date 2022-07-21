@@ -53,7 +53,7 @@ githubRepo https://github.com/bazelbuild/starlark
 
 status active
 creators Laurent Le Brun
-lineCommentKeyword #
+lineCommentToken #
 features
  hasLineComments true
   # A comment
@@ -67,4 +67,4 @@ leachim6 Starlark
  example
   print("Hello World")
   
-printKeyword print
+printToken print

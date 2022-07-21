@@ -22,7 +22,7 @@ fileExtensions mu
 centralPackageRepositoryCount 0
 creators Kartik K. Agaram
 
-lineCommentKeyword #
+lineCommentToken #
 example
  # dump stack from bottom to top
  fn emit-stack-from-bottom _self: (addr grapheme-stack), out: (addr stream byte) {

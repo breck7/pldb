@@ -96,7 +96,7 @@ wordRank 6182
 rosettaCode Monkey
 
 centralPackageRepositoryCount 0
-lineCommentKeyword '
+lineCommentToken '
 features
  hasLineComments true
   ' A comment
@@ -112,4 +112,4 @@ leachim6 Monkey
  example
   puts("Hello World")
   
-printKeyword puts
+printToken puts

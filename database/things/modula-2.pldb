@@ -13,7 +13,7 @@ features
   *)
  hasPrintDebugging true
  hasSemanticIndentation false
-multiLineCommentKeywords (* *)
+multiLineCommentTokens (* *)
 wikipedia https://en.wikipedia.org/wiki/Modula-2
  example
   ABS         EXCL            LONGINT    REAL
@@ -416,4 +416,4 @@ leachim6 Modula 2
       WriteLn;
       
   END HelloWorld.
-printKeyword WriteString
+printToken WriteString

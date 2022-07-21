@@ -74,7 +74,7 @@ rosettaCode BASIC
 
 antlr https://github.com/antlr/grammars-v4/tree/master/basic
 
-lineCommentKeyword REM
+lineCommentToken REM
 centralPackageRepositoryCount 0
 rijuRepl https://riju.codes/basic
  example
@@ -90,4 +90,4 @@ leachim6 BASIC
   10 PRINT "Hello World"
   20 END
   
-printKeyword PRINT
+printToken PRINT

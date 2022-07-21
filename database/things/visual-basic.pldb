@@ -72,7 +72,7 @@ corporateDevelopers Microsoft
 indeedJobs visual basic engineer
  2017 3294
 
-lineCommentKeyword '
+lineCommentToken '
 centralPackageRepositoryCount 0
 rijuRepl https://riju.codes/visualbasic
  example
@@ -90,4 +90,4 @@ leachim6 Visual Basic
           MsgBox("Hello World")
       End Sub
   End Module
-printKeyword Console.WriteLine
+printToken Console.WriteLine

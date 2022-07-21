@@ -61,11 +61,11 @@ rijuRepl https://riju.codes/euphoria
   puts(1, "Hello, world!\n")
   
 creators Jeremy Cowgar and Robert Craig and Matt Lewis and Derek Parnell
-lineCommentKeyword --
+lineCommentToken --
 leachim6 Euphoria
  filepath e/Euphoria.ex
  fileExtensions ex
  example
   puts(1, "Hello World")
   
-printKeyword puts
+printToken puts

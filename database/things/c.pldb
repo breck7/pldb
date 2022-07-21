@@ -240,7 +240,7 @@ antlr https://github.com/antlr/grammars-v4/tree/master/c
 cheatSheetUrl https://courses.cs.washington.edu/courses/cse351/14sp/sections/1/Cheatsheet-c.pdf
 indeedJobs c engineer
  2017 23567
-lineCommentKeyword //
+lineCommentToken //
 jupyterKernel https://github.com/brendan-rius/jupyter-c-kernel
 keywords auto break case char const continue default do double else enum extern float for goto if int long register return short signed sizeof static struct switch typedef union unsigned void volatile while
 stackOverflowSurvey
@@ -263,7 +263,7 @@ rijuRepl https://riju.codes/c
  description General-purpose, procedural computer programming language supporting structured programming, lexical variable scope, and recursion, with a static type system
  fileExtensions c h
  githubRepo https://github.com/llvm/llvm-project
-multiLineCommentKeywords /* */
+multiLineCommentTokens /* */
 pygmentsHighlighter C
  filename c_cpp.py
  fileExtensions c h idc x[bp]m
@@ -277,4 +277,4 @@ leachim6 C∗
       printf("Hello World\n");
   }
   
-printKeyword printf
+printToken printf

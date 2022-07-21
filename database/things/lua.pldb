@@ -126,7 +126,7 @@ rosettaCode Lua
 
 antlr https://github.com/antlr/grammars-v4/tree/master/lua
 
-lineCommentKeyword --
+lineCommentToken --
 languageServerProtocolProject https://github.com/Alloyed/lua-lsp
  writtenIn lua
 visualParadigm false
@@ -139,7 +139,7 @@ rijuRepl https://riju.codes/lua
  example
   print("Hello, world!")
   
-multiLineCommentKeywords --[[ --]]
+multiLineCommentTokens --[[ --]]
 goodreads
  title|year|author|goodreadsId|rating|ratings|reviews
  Programming in Lua|2001|Roberto Ierusalimschy|1321894|3.97|323|21
@@ -151,4 +151,4 @@ leachim6 Lua
  fileExtensions lua
  example
   print("Hello World")
-printKeyword print
+printToken print

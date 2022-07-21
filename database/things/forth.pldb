@@ -79,7 +79,7 @@ codeMirror forth
 
 rosettaCode Forth
 
-lineCommentKeyword \
+lineCommentToken \
 jupyterKernel https://github.com/jdfreder/iforth
 jupyterKernel https://github.com/hcchengithub/peforth
 packageRepository https://theforth.net/
@@ -96,4 +96,4 @@ leachim6 Forth
  example
   .( Hello World)
   
-printKeyword .
+printToken .

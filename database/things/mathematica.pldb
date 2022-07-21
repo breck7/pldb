@@ -92,5 +92,5 @@ leachim6 Mathematica
  example
   Print["Hello World"]
   
-printKeyword Print
-multiLineCommentKeywords (* *)
+printToken Print
+multiLineCommentTokens (* *)

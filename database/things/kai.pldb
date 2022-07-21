@@ -25,7 +25,7 @@ githubRepo https://github.com/kai-language/kai
  issues 37
 
 website http://docs.kai-lang.org
-lineCommentKeyword //
+lineCommentToken //
 features
  hasLineComments true
   // A comment
@@ -35,4 +35,4 @@ features
   /* A comment
   */
  hasSemanticIndentation false
-multiLineCommentKeywords /* */
+multiLineCommentTokens /* */

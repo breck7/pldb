@@ -173,8 +173,8 @@ antlr https://github.com/antlr/grammars-v4/tree/master/fortran77
 
 indeedJobs fortran engineer
  2017 447
-lineCommentKeyword C
-lineCommentKeyword !
+lineCommentToken C
+lineCommentToken !
 languageServerProtocolProject https://github.com/hansec/fortran-language-server
  writtenIn python
 visualParadigm false
@@ -208,4 +208,4 @@ leachim6 Fortran
   print *,'Hello World'
   end
   
-printKeyword print
+printToken print

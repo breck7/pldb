@@ -82,7 +82,7 @@ rijuRepl https://riju.codes/objectivecpp
     return 0;
   }
   
-lineCommentKeyword //
+lineCommentToken //
 features
  hasLineComments true
   // A comment
@@ -95,4 +95,4 @@ features
 pygmentsHighlighter Objective-C++
  filename objective.py
  fileExtensions mm hh
-multiLineCommentKeywords /* */
+multiLineCommentTokens /* */

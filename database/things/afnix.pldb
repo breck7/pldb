@@ -10,6 +10,6 @@ rijuRepl https://riju.codes/afnix
  example
   println "Hello, world!"
   
-printKeyword println
+printToken println
 features
  hasPrintDebugging true

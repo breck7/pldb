@@ -89,7 +89,7 @@ rijuRepl https://riju.codes/hack
   }
   
 creators Julien Verlaguet and Alok Menghrajani and Drew Paroski
-lineCommentKeyword //
+lineCommentToken //
 leachim6 Hack
  filepath h/Hack.hh
  fileExtensions hh
@@ -97,5 +97,5 @@ leachim6 Hack
   <?hh 
   echo "Hello World";
   
-printKeyword echo
-multiLineCommentKeywords /* */
+printToken echo
+multiLineCommentTokens /* */

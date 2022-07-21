@@ -20,8 +20,8 @@ website https://jsonnet.org/
 status active
 supersetOf json
 webRepl https://jsonnet.org/
-multiLineCommentKeywords /* */
-lineCommentKeyword //
+multiLineCommentTokens /* */
+lineCommentToken //
 creators Dave Cunningham
 features
  hasLineComments true

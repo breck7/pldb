@@ -51,7 +51,7 @@ rijuRepl https://riju.codes/odin
  fileExtensions odin
  website https://odin-lang.org/
  githubRepo https://github.com/odin-lang/Odin
-lineCommentKeyword //
+lineCommentToken //
 features
  hasLineComments true
   // A comment
@@ -74,4 +74,4 @@ leachim6 Odin
     fmt.println("Hello World");
   }
   
-printKeyword fmt.println
+printToken fmt.println

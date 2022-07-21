@@ -42,11 +42,11 @@ projectEuler Frink
 rosettaCode Frink
 
 centralPackageRepositoryCount 0
-lineCommentKeyword //
+lineCommentToken //
 leachim6 Frink
  filepath f/Frink.frink
  fileExtensions frink
  example
   println["Hello World"]
   
-printKeyword println
+printToken println

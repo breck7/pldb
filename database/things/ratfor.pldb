@@ -39,6 +39,6 @@ leachim6 RatFor
  example
   print *, 'Hello World'
   end
-printKeyword print
+printToken print
 features
  hasPrintDebugging true

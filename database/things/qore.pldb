@@ -39,6 +39,6 @@ leachim6 Qore
       }
   }
   
-printKeyword printf
+printToken printf
 features
  hasPrintDebugging true

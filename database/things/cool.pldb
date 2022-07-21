@@ -77,7 +77,7 @@ fileType text
 wordRank 1457
 centralPackageRepositoryCount 0
 creators Alexander Aiken
-lineCommentKeyword --
+lineCommentToken --
 features
  hasLineComments true
   -- A comment
@@ -98,5 +98,5 @@ leachim6 Cool
      };
   };
   
-printKeyword out_string
-multiLineCommentKeywords (* *)
+printToken out_string
+multiLineCommentTokens (* *)

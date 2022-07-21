@@ -25,7 +25,7 @@ githubRepo https://github.com/bakpakin/fennel
 
 website https://fennel-lang.org/
 creators Calvin Rose
-lineCommentKeyword ;
+lineCommentToken ;
 features
  hasLineComments true
   ; A comment
@@ -42,4 +42,4 @@ leachim6 Fennel
  example
   (print "Hello World")
   
-printKeyword print
+printToken print

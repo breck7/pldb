@@ -126,7 +126,7 @@ fileType text
 wordRank 7173
 isOpenSource true
 centralPackageRepositoryCount 0
-lineCommentKeyword //
+lineCommentToken //
 features
  hasLineComments true
   // A comment
@@ -134,4 +134,4 @@ features
   // A comment
  hasPrintDebugging true
  hasSemanticIndentation false
-printKeyword printf
+printToken printf

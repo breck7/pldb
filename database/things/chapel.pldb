@@ -1,7 +1,7 @@
 title Chapel
 appeared 2004
 type pl
-lineCommentKeyword //
+lineCommentToken //
 
 subreddit chapel
  memberCount
@@ -89,5 +89,5 @@ leachim6 Chapel
  example
   writeln("Hello World");
   
-printKeyword writeln
-multiLineCommentKeywords /* */
+printToken writeln
+multiLineCommentTokens /* */

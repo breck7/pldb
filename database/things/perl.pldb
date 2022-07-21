@@ -134,7 +134,7 @@ rosettaCode Perl
 
 indeedJobs perl engineer
  2017 8795
-lineCommentKeyword #
+lineCommentToken #
 visualParadigm false
 jupyterKernel https://metacpan.org/release/Devel-IPerl
 jupyterKernel https://github.com/gabrielash/p6-net-jupyter
@@ -152,7 +152,7 @@ rijuRepl https://riju.codes/perl
  example
   print("Hello, world!\n");
   
-multiLineCommentKeywords =begin =cut
+multiLineCommentTokens =begin =cut
 goodreads
  title|year|author|goodreadsId|rating|ratings|reviews
  Programming Perl|1991|Tom Christiansen|675275|4.04|2104|52
@@ -171,4 +171,4 @@ leachim6 Perl
   #!/usr/bin/perl
   print "Hello World\n";
   
-printKeyword print
+printToken print

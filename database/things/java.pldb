@@ -407,7 +407,7 @@ corporateDevelopers Oracle
 indeedJobs java engineer
  2017 32645
 
-lineCommentKeyword //
+lineCommentToken //
 languageServerProtocolProject https://github.com/georgewfraser/vscode-javac
  writtenIn java
 visualParadigm false
@@ -445,5 +445,5 @@ leachim6 Java
   	}
   }
   
-printKeyword System.out.println
-multiLineCommentKeywords /* */
+printToken System.out.println
+multiLineCommentTokens /* */

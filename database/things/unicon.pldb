@@ -47,7 +47,7 @@ projectEuler Unicon
   2022 20
 
 rosettaCode Unicon
-lineCommentKeyword #
+lineCommentToken #
 centralPackageRepositoryCount 0
 creators Clint Jeffery
 pygmentsHighlighter Unicon
@@ -61,4 +61,4 @@ leachim6 Unicon
       write("Hello World")
   end
   
-printKeyword write
+printToken write

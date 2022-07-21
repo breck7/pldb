@@ -180,7 +180,7 @@ writtenIn haskell
 indeedJobs elm engineer
  2017 127
 
-lineCommentKeyword --
+lineCommentToken --
 languageServerProtocolProject https://github.com/elm-tooling/elm-language-server
  writtenIn elm
 visualParadigm false
@@ -204,4 +204,4 @@ leachim6 Elm
   main =
     text "Hello World"
   
-multiLineCommentKeywords {- -}
+multiLineCommentTokens {- -}

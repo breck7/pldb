@@ -5,7 +5,7 @@ creators Bob Nystrom
 
 description Wren is a small, fast, class-based concurrent scripting language.
 
-lineCommentKeyword //
+lineCommentToken //
 
 example
  System.print("Hello, world!")
@@ -59,4 +59,4 @@ leachim6 Wren
  example
   IO.print("Hello World")
   
-printKeyword IO.print
+printToken IO.print

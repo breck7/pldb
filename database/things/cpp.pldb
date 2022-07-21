@@ -342,7 +342,7 @@ antlr https://github.com/antlr/grammars-v4/tree/master/cpp
 conference https://cppcon.org CppCon
 indeedJobs c++ engineer
  2017 22237
-lineCommentKeyword //
+lineCommentToken //
 visualParadigm false
 jupyterKernel https://github.com/root-mirror/cling
 jupyterKernel https://github.com/QuantStack/xeus-cling
@@ -383,5 +383,5 @@ leachim6 C++
      std::cout << "Hello World" << std::endl;
   }
   
-printKeyword std::cout
-multiLineCommentKeywords /* */
+printToken std::cout
+multiLineCommentTokens /* */

@@ -137,7 +137,7 @@ antlr https://github.com/antlr/grammars-v4/tree/master/r
 indeedJobs r data scientist
  2017 3912
 
-lineCommentKeyword #
+lineCommentToken #
 languageServerProtocolProject https://github.com/REditorSupport/languageserver
  writtenIn r
 visualParadigm false
@@ -161,4 +161,4 @@ leachim6 R
  example
   cat("Hello World")
   
-printKeyword print
+printToken print

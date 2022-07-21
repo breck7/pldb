@@ -112,8 +112,8 @@ class PLDBFile extends TreeBaseFile {
     return this.base.getFileAtLanguageRank(this.languageRank + 1)
   }
 
-  get lineCommentKeyword() {
-    return this.get("lineCommentKeyword")
+  get lineCommentToken() {
+    return this.get("lineCommentToken")
   }
 
   get langRankDebug() {

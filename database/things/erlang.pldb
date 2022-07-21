@@ -143,7 +143,7 @@ corporateDevelopers Ericsson
 indeedJobs erlang engineer
  2017 183
 
-lineCommentKeyword %
+lineCommentToken %
 languageServerProtocolProject https://github.com/erlang/sourcer
  writtenIn erlang
 visualParadigm false
@@ -186,4 +186,4 @@ leachim6 Erlang
   
   start() ->
     io:format("Hello World~n").
-printKeyword io:format
+printToken io:format

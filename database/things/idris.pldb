@@ -121,7 +121,7 @@ writtenIn haskell
 indeedJobs idris developer
  2017 1
 
-lineCommentKeyword --
+lineCommentToken --
 centralPackageRepositoryCount 0
 rijuRepl https://riju.codes/idris
  example
@@ -142,4 +142,4 @@ leachim6 Idris
   main : IO ()
   main = putStrLn "Hello World"
   
-printKeyword putStrLn
+printToken putStrLn

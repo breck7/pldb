@@ -49,7 +49,7 @@ hopl 7112
 
 rosettaCode Io
 website https://iolanguage.org/
-lineCommentKeyword //
+lineCommentToken //
 visualParadigm false
 centralPackageRepositoryCount 0
 rijuRepl https://riju.codes/io
@@ -69,4 +69,4 @@ leachim6 Io
  example
   "Hello World\n" print
   
-printKeyword print
+printToken print

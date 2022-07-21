@@ -76,7 +76,7 @@ fileType text
 isOpenSource true
 centralPackageRepositoryCount 0
 creators Aseem Kishore
-lineCommentKeyword //
+lineCommentToken //
 features
  hasLineComments true
   // A comment
@@ -86,4 +86,4 @@ features
   /* A comment
   */
  hasSemanticIndentation false
-multiLineCommentKeywords /* */
+multiLineCommentTokens /* */

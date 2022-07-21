@@ -27,6 +27,6 @@ leachim6 Uniface
  fileExtensions uniface
  example
   message "Hello World"
-printKeyword message
+printToken message
 features
  hasPrintDebugging true

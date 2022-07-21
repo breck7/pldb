@@ -26,7 +26,7 @@ githubRepo https://github.com/pawwkm/owen
 
 website http://owen-lang.org
 creators Paw Møller
-lineCommentKeyword //
+lineCommentToken //
 features
  hasLineComments true
   // A comment
@@ -34,4 +34,4 @@ features
   // A comment
  hasPrintDebugging true
  hasSemanticIndentation false
-printKeyword print
+printToken print

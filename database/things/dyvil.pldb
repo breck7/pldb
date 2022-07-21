@@ -31,6 +31,6 @@ leachim6 Dyvil
   	static func main(args: [String]) = print 'Hello World'
   }
   
-printKeyword print
+printToken print
 features
  hasPrintDebugging true

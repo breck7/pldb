@@ -87,7 +87,7 @@ fileType text
 isOpenSource true
 centralPackageRepositoryCount 0
 creators Andres Gutierrez
-lineCommentKeyword //
+lineCommentToken //
 features
  hasLineComments true
   // A comment
@@ -100,4 +100,4 @@ features
 pygmentsHighlighter Zephir
  filename php.py
  fileExtensions zep
-multiLineCommentKeywords /* */
+multiLineCommentTokens /* */

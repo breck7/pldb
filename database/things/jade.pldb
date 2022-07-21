@@ -33,7 +33,7 @@ hopl 2130
 codeMirror jade
 
 centralPackageRepositoryCount 0
-lineCommentKeyword //
+lineCommentToken //
 features
  hasLineComments true
   // A comment
@@ -50,4 +50,4 @@ leachim6 Jade
   begin
      write "Hello World";
   end;
-printKeyword write
+printToken write

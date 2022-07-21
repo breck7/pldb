@@ -42,6 +42,6 @@ goodreads
 pygmentsHighlighter ClojureScript
  filename jvm.py
  fileExtensions cljs
-printKeyword println
+printToken println
 features
  hasPrintDebugging true

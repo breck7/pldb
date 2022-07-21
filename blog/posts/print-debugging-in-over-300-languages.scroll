@@ -158,7 +158,7 @@ commaTable
  output,<a href='languages/quorum.html'>quorum</a>,1
 
 comment
- xsv select title,appeared,type,rank,printKeyword pldb.pub/languages.csv > ignore/printKeywords.csv
+ xsv select title,appeared,type,rank,printToken pldb.pub/languages.csv > ignore/printTokens.csv
 
 comment
   printDebug() {
@@ -172,14 +172,14 @@ comment
     const grouped = {}
     tree.forEach(row => {
       const obj = row.toObject()
-      if (!grouped[obj.printKeyword])
-        grouped[obj.printKeyword] = {
-          Keyword: obj.printKeyword,
+      if (!grouped[obj.printToken])
+        grouped[obj.printToken] = {
+          Keyword: obj.printToken,
           Languages: [],
           topRank: 0 - parseInt(obj.rank)
         }
 
-      grouped[obj.printKeyword].Languages.push(obj.title)
+      grouped[obj.printToken].Languages.push(obj.title)
     })
     const sorted = lodash
       .sortBy(
@@ -207,8 +207,8 @@ ohayoCode
  html.h1 Does every programming language have a central package repository?
  web.get https://pldb.pub/pldb.csv
   tables.basic
-  filter.where printKeyword != 
+  filter.where printToken != 
    tables.basic
-   group.by printKeyword
+   group.by printToken
     rows.sortByReverse count
      tables.basic

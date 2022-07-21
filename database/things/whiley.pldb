@@ -48,7 +48,7 @@ website http://whiley.org/
 status active
 webRepl http://whileylabs.com
 creators David J. Pearce
-lineCommentKeyword //
+lineCommentToken //
 features
  hasLineComments true
   // A comment
@@ -69,4 +69,4 @@ leachim6 Whiley
   method main(ascii::string[] args):
       io::println("Hello World")
   
-printKeyword io::println
+printToken io::println

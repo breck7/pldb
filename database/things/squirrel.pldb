@@ -168,10 +168,10 @@ rijuRepl https://riju.codes/squirrel
  example
   print("Hello, world!\n")
   
-lineCommentKeyword //
+lineCommentToken //
 leachim6 Squirrel
  filepath s/Squirrel.nut
  fileExtensions nut
  example
   print("Hello World");
-printKeyword print
+printToken print

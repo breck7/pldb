@@ -30,6 +30,6 @@ leachim6 JScript
  fileExtensions js
  example
   WScript.Echo("Hello World");
-printKeyword WScript.Echo
+printToken WScript.Echo
 features
  hasPrintDebugging true

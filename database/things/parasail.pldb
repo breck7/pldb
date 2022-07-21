@@ -18,6 +18,6 @@ leachim6 ParaSail
       IO.Println("Hello World");
   end func Hello_World;
   
-printKeyword IO.Println
+printToken IO.Println
 features
  hasPrintDebugging true

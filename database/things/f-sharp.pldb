@@ -145,7 +145,7 @@ quineRelay F#
 
 ubuntuPackage fsharp
 
-lineCommentKeyword //
+lineCommentToken //
 visualParadigm false
 jupyterKernel https://github.com/fsprojects/IfSharp
 stackOverflowSurvey
@@ -170,5 +170,5 @@ leachim6 FSharp
  example
   printfn "Hello World"
   
-printKeyword printfn
-multiLineCommentKeywords (* *)
+printToken printfn
+multiLineCommentTokens (* *)

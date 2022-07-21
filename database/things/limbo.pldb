@@ -120,7 +120,7 @@ leachim6 Limbo
   	sys->print("Hello World\n");
   }
   
-printKeyword sys->print
+printToken sys->print
 features
  hasPrintDebugging true
  hasSemanticIndentation false

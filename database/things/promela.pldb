@@ -15,6 +15,6 @@ leachim6 Promela
     printf("Hello World")
   }
   
-printKeyword printf
+printToken printf
 features
  hasPrintDebugging true

@@ -52,7 +52,7 @@ leachim6 PostCSS
   body::before {
       content: "Hello World";
   }
-multiLineCommentKeywords /* */
+multiLineCommentTokens /* */
 features
  hasMultiLineComments true
   /* A comment

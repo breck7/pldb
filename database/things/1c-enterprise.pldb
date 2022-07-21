@@ -46,6 +46,6 @@ leachim6 1C Enterprise
  example
   Message("Hello World");
   
-printKeyword Message
+printToken Message
 features
  hasPrintDebugging true

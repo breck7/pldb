@@ -76,7 +76,7 @@ rijuRepl https://riju.codes/boo
  fileExtensions boo
  website https://boo-language.github.io/
  githubRepo https://github.com/boo-lang/boo
-lineCommentKeyword #
+lineCommentToken #
 pygmentsHighlighter Boo
  filename dotnet.py
  fileExtensions boo
@@ -86,4 +86,4 @@ leachim6 Boo
  example
   print "Hello World"
   
-printKeyword print
+printToken print

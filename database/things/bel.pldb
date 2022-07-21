@@ -32,8 +32,8 @@ example
                                            (cdr args)))))
 
 website http://paulgraham.com/bel.html
-lineCommentKeyword ;
-printKeyword prn
+lineCommentToken ;
+printToken prn
 features
  hasLineComments true
   ; A comment

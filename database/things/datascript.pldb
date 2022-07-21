@@ -34,7 +34,7 @@ githubRepo https://github.com/tonsky/DataScript
  description Immutable database and Datalog query engine for Clojure, ClojureScript and JS
  issues 75
 
-lineCommentKeyword ;
+lineCommentToken ;
 features
  hasLineComments true
   ; A comment

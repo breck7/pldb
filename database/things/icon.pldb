@@ -76,7 +76,7 @@ quineRelay Icon
 ubuntuPackage icont
 
 rosettaCode Icon
-lineCommentKeyword #
+lineCommentToken #
 centralPackageRepositoryCount 0
 rijuRepl https://riju.codes/icon
  example
@@ -94,4 +94,4 @@ leachim6 Icon
   procedure main()
       write("Hello World");
   end
-printKeyword write
+printToken write

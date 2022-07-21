@@ -58,7 +58,7 @@ centralPackageRepositoryCount 0
 pygmentsHighlighter EBNF
  filename parsers.py
  fileExtensions ebnf
-multiLineCommentKeywords (* *)
+multiLineCommentTokens (* *)
 features
  hasMultiLineComments true
   (* A comment

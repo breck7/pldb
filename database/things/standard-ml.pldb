@@ -78,7 +78,7 @@ quineRelay Standard ML
 
 ubuntuPackage mlton
 
-lineCommentKeyword #
+lineCommentToken #
 centralPackageRepositoryCount 0
 rijuRepl https://riju.codes/standardml
  example
@@ -94,4 +94,4 @@ leachim6 Standard ML
   
   hello()
   
-printKeyword print
+printToken print

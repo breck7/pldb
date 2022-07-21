@@ -106,7 +106,7 @@ rosettaCode COBOL
 
 creators Howard Bromberg and Norman Discount and Vernon Reeves and Jean E. Sammet and William Selden and Gertrude Tierney and Grace Hopper
 
-lineCommentKeyword *>
+lineCommentToken *>
 
 indeedJobs cobol developer
  2017 838
@@ -155,4 +155,4 @@ leachim6 COBOL
              display 'Hello World.' end-display.
              stop run.
   
-printKeyword DISPLAY
+printToken DISPLAY

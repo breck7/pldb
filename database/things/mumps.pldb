@@ -2,7 +2,7 @@ title MUMPS
 appeared 1966
 type pl
 creators Neil Pappalardo
-lineCommentKeyword ;
+lineCommentToken ;
 
 wikipedia https://en.wikipedia.org/wiki/MUMPS
  example
@@ -80,4 +80,4 @@ leachim6 Mumps
  example
    w "Hello World",!
   
-printKeyword w
+printToken w

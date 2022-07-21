@@ -19,6 +19,6 @@ leachim6 A++
  filepath a/A++
  example
   (print "Hello World")
-printKeyword print
+printToken print
 features
  hasPrintDebugging true

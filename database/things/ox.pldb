@@ -72,7 +72,7 @@ isOpenSource false
 hopl 2718
 
 centralPackageRepositoryCount 0
-lineCommentKeyword //
+lineCommentToken //
 features
  hasLineComments true
   // A comment
@@ -86,4 +86,4 @@ leachim6 OX
  example
   {Show 'Hello World'}
   
-printKeyword Show
+printToken Show

@@ -5,7 +5,7 @@ related dot
 reference https://github.com/StoneCypher/jssm
 description Finite State Language, or FSL (pronounced "fossil,") is a programming language to make complex Finite State Machines easy to create and maintain. Finite State Machines can help make your code simpler, easier to test, more provable, and easier to reason about.
 webRepl https://stonecypher.github.io/jssm-viz-demo/graph_explorer.html
-lineCommentKeyword //
+lineCommentToken //
 example
  machine_name: "Traffic light";
  

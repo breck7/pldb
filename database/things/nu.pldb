@@ -47,6 +47,6 @@ leachim6 Nu
  example
   (puts "Hello World")
   
-printKeyword puts
+printToken puts
 features
  hasPrintDebugging true

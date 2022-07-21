@@ -10,7 +10,7 @@ features
  hasPrintDebugging true
  hasSemanticIndentation false
 
-lineCommentKeyword #
+lineCommentToken #
 
 wikipedia https://en.wikipedia.org/wiki/Friendly_interactive_shell
  example
@@ -104,4 +104,4 @@ leachim6 Fish
   #!/usr/bin/env fish
   echo "Hello World"
   
-printKeyword echo
+printToken echo

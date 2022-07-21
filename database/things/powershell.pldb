@@ -115,7 +115,7 @@ corporateDevelopers Microsoft
 languageServerProtocolProject https://github.com/PowerShell/PowerShellEditorServices
  writtenIn csharp
 
-lineCommentKeyword #
+lineCommentToken #
 jupyterKernel https://github.com/vors/jupyter-powershell
 stackOverflowSurvey
  2021
@@ -142,4 +142,4 @@ leachim6 PowerShell
  example
   'Hello World'
   
-printKeyword echo
+printToken echo

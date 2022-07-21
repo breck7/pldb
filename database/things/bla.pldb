@@ -19,7 +19,7 @@ example
                | [h|t] -> h do d:=t
 
 website http://strlen.com/bla-language/
-lineCommentKeyword --
+lineCommentToken --
 features
  hasLineComments true
   -- A comment

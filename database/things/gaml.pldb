@@ -21,6 +21,6 @@ leachim6 GAML
   }
   
   experiment GAML {}
-printKeyword write
+printToken write
 features
  hasPrintDebugging true

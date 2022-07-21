@@ -50,7 +50,7 @@ rijuRepl https://riju.codes/arm
  fileExtensions S
  website https://developer.arm.com/architectures/cpu-architecture
  githubRepo https://gcc.gnu.org/git.html
-lineCommentKeyword ;
+lineCommentToken ;
 features
  hasLineComments true
   ; A comment

@@ -226,7 +226,7 @@ antlr https://github.com/antlr/grammars-v4/tree/master/python
 corporateDevelopers Python Software Foundation
 indeedJobs python engineer
  2017 28965
-lineCommentKeyword #
+lineCommentToken #
 languageServerProtocolProject http://www.pydev.org/vscode/index.html
  writtenIn python
 languageServerProtocolProject https://github.com/palantir/python-language-server
@@ -250,7 +250,7 @@ rijuRepl https://riju.codes/python
  fileExtensions py pyi pyc pyd pyo pyw pyz
  website https://www.python.org/
  githubRepo https://github.com/python/cpython
-multiLineCommentKeywords '''
+multiLineCommentTokens '''
 goodreads
  title|year|author|goodreadsId|rating|ratings|reviews
  Python: Programming: Your Step By Step Guide To Easily Learn Python in 7 Days (Python for Beginners, Python Programming for Beginners, Learn Python, Python Language)||iCode Academy|54724997|3.76|126|6
@@ -260,4 +260,4 @@ githubCopilotOptimized
 pygmentsHighlighter Python
  filename python.py
  fileExtensions py pyw jy sage sc SConstruct SConscript bzl BUCK BUILD BUILD.bazel WORKSPACE tac
-printKeyword print
+printToken print

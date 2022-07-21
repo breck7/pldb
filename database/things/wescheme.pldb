@@ -11,7 +11,7 @@ example
           (on-tick tick 2)) ;; tick every two seconds
 
 website https://www.wescheme.org/
-lineCommentKeyword ;
+lineCommentToken ;
 features
  hasLineComments true
   ; A comment

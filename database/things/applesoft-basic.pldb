@@ -19,6 +19,6 @@ leachim6 Applesoft BASIC
  example
   10 PRINT "HELLO WORLD"
   
-printKeyword PRINT
+printToken PRINT
 features
  hasPrintDebugging true

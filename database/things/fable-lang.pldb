@@ -22,7 +22,7 @@ example
  // For example, the value '(_,Spades)' may indicate
  // a case not covered by the pattern(s).
 
-lineCommentKeyword //
+lineCommentToken //
 features
  hasLineComments true
   // A comment
@@ -30,4 +30,4 @@ features
   // A comment
  hasPrintDebugging true
  hasSemanticIndentation false
-printKeyword printfn
+printToken printfn

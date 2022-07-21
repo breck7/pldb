@@ -205,7 +205,7 @@ standsFor Qt Modeling Language
 status active
 fileType text
 centralPackageRepositoryCount 0
-lineCommentKeyword //
+lineCommentToken //
 features
  hasLineComments true
   // A comment
@@ -218,4 +218,4 @@ features
 pygmentsHighlighter QML
  filename webmisc.py
  fileExtensions qml qbs
-multiLineCommentKeywords /* */
+multiLineCommentTokens /* */

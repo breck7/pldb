@@ -129,7 +129,7 @@ status active
 fileType text
 wordRank 9510
 centralPackageRepositoryCount 0
-lineCommentKeyword //
+lineCommentToken //
 features
  hasLineComments true
   // A comment
@@ -142,4 +142,4 @@ features
 pygmentsHighlighter Alloy
  filename dsls.py
  fileExtensions als
-multiLineCommentKeywords /* */
+multiLineCommentTokens /* */

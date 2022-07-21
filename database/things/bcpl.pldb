@@ -82,7 +82,7 @@ goodreads
  Bcpl: The Language and Its Compiler|1980|M. Richards|3919566|2.00|1|0
  Bcpl On The Bbc Microcomputer User Guide||Chris Jobson|4321106|0.0|0|0
  Curly Bracket Programming Languages: C, Java, C++, Perl, JavaScript, PHP, Ruby, Bcpl, awk, Quakec, Objective-C, Cyclone, Pike, Unrealscript, Rc|2010|Books LLC|14292084|3.00|1|0
-lineCommentKeyword //
+lineCommentToken //
 features
  hasLineComments true
   // A comment
@@ -101,4 +101,4 @@ leachim6 BCPL
     WRITES("Hello World*N")
   $)
   
-printKeyword WRITES
+printToken WRITES

@@ -35,7 +35,7 @@ example
  main :: () {
     print("Hello, World!\n");
  }
-lineCommentKeyword //
+lineCommentToken //
 reference https://twitter.com/Jonathan_Blow/status/1474203662134255618
 centralPackageRepositoryCount 0
 leachim6 Jai
@@ -49,4 +49,4 @@ leachim6 Jai
   	print("Hello World");
   
   }
-printKeyword Print
+printToken Print

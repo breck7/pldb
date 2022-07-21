@@ -27,6 +27,6 @@ leachim6 Google Apps Script
     Logger.log("Hello World");
   }
   
-printKeyword Logger.log
+printToken Logger.log
 features
  hasPrintDebugging true

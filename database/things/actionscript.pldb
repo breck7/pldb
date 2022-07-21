@@ -104,7 +104,7 @@ leachim6 ActionScript
   	}
   }
   
-printKeyword trace
+printToken trace
 features
  hasPrintDebugging true
  hasMultiLineComments true
@@ -114,4 +114,4 @@ features
   /* A comment
   */
  hasSemanticIndentation false
-multiLineCommentKeywords /* */
+multiLineCommentTokens /* */

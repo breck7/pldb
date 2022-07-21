@@ -3,7 +3,7 @@ appeared 2014
 type pl
 creators Ary Borenszweig
 webRepl https://play.crystal-lang.org/#/cr
-lineCommentKeyword #
+lineCommentToken #
 subreddit crystal_programming
  memberCount
   2022 4118
@@ -206,4 +206,4 @@ leachim6 Crystal
  example
   puts "Hello World"
   
-printKeyword puts
+printToken puts

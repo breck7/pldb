@@ -98,7 +98,7 @@ tiobe Fantom
 rosettaCode Fantom
 
 centralPackageRepositoryCount 0
-lineCommentKeyword //
+lineCommentToken //
 features
  hasLineComments true
   // A comment
@@ -123,5 +123,5 @@ leachim6 Fantom
     }
   }
   
-printKeyword echo
-multiLineCommentKeywords /* */
+printToken echo
+multiLineCommentTokens /* */

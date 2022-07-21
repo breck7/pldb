@@ -18,7 +18,7 @@ example
    }
  }
 webRepl https://rescript-lang.org/try
-lineCommentKeyword //
+lineCommentToken //
 features
  hasLineComments true
   // A comment
@@ -31,4 +31,4 @@ leachim6 ReScript
  fileExtensions res
  example
   Js.log("Hello World")
-printKeyword Js.log
+printToken Js.log

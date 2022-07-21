@@ -40,6 +40,6 @@ leachim6 CLU
       stream$putl (po, "Hello World")
       end start_up
   
-printKeyword stream$putl
+printToken stream$putl
 features
  hasPrintDebugging true

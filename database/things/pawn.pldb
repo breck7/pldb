@@ -74,7 +74,7 @@ rijuRepl https://riju.codes/pawn
       print("Hello, world!\n");
   }
   
-lineCommentKeyword //
+lineCommentToken //
 features
  hasLineComments true
   // A comment

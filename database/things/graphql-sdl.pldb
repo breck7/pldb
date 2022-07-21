@@ -40,5 +40,5 @@ features
 
 description A type definition syntax to the GraphQL specification.
 reference https://github.com/graphql/graphql-spec/pull/90
-lineCommentKeyword #
-lineCommentKeyword “””
+lineCommentToken #
+lineCommentToken “””

@@ -3,7 +3,7 @@ appeared 2016
 type pl
 creators Christopher Diggins
 
-lineCommentKeyword //
+lineCommentToken //
 example
  // Named function with statement body
  function sum(xs) {

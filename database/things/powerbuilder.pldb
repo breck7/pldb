@@ -67,7 +67,7 @@ goodreads
  PowerBuilder 4 Programming for Dummies|1995|Ted Coombs|2386887|0.0|0|0
  Powerbuilder For Xbase Programmers||Greg Nunemacher|5513792|0.0|0|0
  Distributed Application Development With Powerbuilder 6 (Powerbuilder Developer's Library)||Michael Barlotta|3930419|0.0|0|0
-lineCommentKeyword //
+lineCommentToken //
 features
  hasLineComments true
   // A comment
@@ -81,4 +81,4 @@ leachim6 PowerBuilder
  example
   MessageBox("Hello World")
   
-printKeyword MessageBox
+printToken MessageBox

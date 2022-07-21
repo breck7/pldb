@@ -190,7 +190,7 @@ rosettaCode PureBasic
 
 centralPackageRepositoryCount 0
 corporateDevelopers Fantaisie Software
-lineCommentKeyword ;
+lineCommentToken ;
 leachim6 PureBasic
  filepath p/PureBasic.pb
  fileExtensions pb
@@ -199,4 +199,4 @@ leachim6 PureBasic
     PrintN("Hello World")
   EndIf
   
-printKeyword PrintN
+printToken PrintN

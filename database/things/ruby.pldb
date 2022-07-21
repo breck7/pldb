@@ -226,7 +226,7 @@ antlr https://github.com/antlr/grammars-v4/tree/master/ruby
 conference https://rubyconf.org RubyConf
 indeedJobs ruby engineer
  2017 8719
-lineCommentKeyword #
+lineCommentToken #
 languageServerProtocolProject https://github.com/castwide/solargraph
  writtenIn ruby
 languageServerProtocolProject https://github.com/mtsmfm/language_server-ruby
@@ -249,8 +249,8 @@ rijuRepl https://riju.codes/ruby
  example
   puts "Hello, world!"
   
-multiLineCommentKeywords =begin =end
-printKeyword puts
+multiLineCommentTokens =begin =end
+printToken puts
 githubCopilotOptimized
 pygmentsHighlighter Ruby
  filename ruby.py

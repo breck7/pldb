@@ -12,7 +12,7 @@ githubRepo https://github.com/qpdb/mentat
  updated 2022
  description A persistent, relational store inspired by Datomic and DataScript.
  issues 299
-lineCommentKeyword ;
+lineCommentToken ;
 example
  {:db/id          :person/email
   :db/valueType   :db.type/string

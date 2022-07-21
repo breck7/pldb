@@ -31,6 +31,6 @@ leachim6 Zimbu
     RETURN 0
   }
   
-printKeyword IO.write
+printToken IO.write
 features
  hasPrintDebugging true

@@ -47,7 +47,7 @@ hopl 171
 rosettaCode Snobol
 
 antlr https://github.com/antlr/grammars-v4/tree/master/snobol
-lineCommentKeyword *
+lineCommentToken *
 centralPackageRepositoryCount 0
 rijuRepl https://riju.codes/snobol
  example
@@ -72,4 +72,4 @@ leachim6 SNOBOL
             OUTPUT = "Hello World"
   END
   
-printKeyword OUTPUT
+printToken OUTPUT

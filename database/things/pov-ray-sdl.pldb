@@ -89,7 +89,7 @@ reference http://www.povray.org/documentation/view/3.6.0/224/
 status active
 fileType text
 centralPackageRepositoryCount 0
-lineCommentKeyword //
+lineCommentToken //
 features
  hasLineComments true
   // A comment
@@ -102,4 +102,4 @@ features
 pygmentsHighlighter POVRay
  filename graphics.py
  fileExtensions pov inc
-multiLineCommentKeywords /* */
+multiLineCommentTokens /* */

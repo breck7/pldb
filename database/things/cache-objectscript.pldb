@@ -29,6 +29,6 @@ leachim6 Cache ObjectScript
     Write "Hello World"
     Quit
   
-printKeyword Write
+printToken Write
 features
  hasPrintDebugging true

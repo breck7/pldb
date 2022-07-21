@@ -114,7 +114,7 @@ rosettaCode MATLAB
 corporateDevelopers MathWorks
 indeedJobs matlab engineer
  2017 6204
-lineCommentKeyword %
+lineCommentToken %
 visualParadigm true
 jupyterKernel https://github.com/imatlab/imatlab
 jupyterKernel https://github.com/calysto/matlab_kernel
@@ -125,7 +125,7 @@ stackOverflowSurvey
   fans 1562
   percentageUsing 0.05
 packageRepository https://www.mathworks.com/matlabcentral/fileexchange/
-multiLineCommentKeywords %{ %}
+multiLineCommentTokens %{ %}
 creators Cleve Moler
 goodreads
  title|year|author|goodreadsId|rating|ratings|reviews
@@ -148,4 +148,4 @@ leachim6 MATLAB
  example
   disp('Hello World')
   
-printKeyword disp
+printToken disp

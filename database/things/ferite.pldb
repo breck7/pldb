@@ -17,6 +17,6 @@ leachim6 Ferite
   uses "console";
   Console.println( "Hello World" );
   
-printKeyword Console.println
+printToken Console.println
 features
  hasPrintDebugging true

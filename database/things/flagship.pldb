@@ -32,7 +32,7 @@ example
  QUIT                        // exit back to command line
 
 website http://www.flagship.de/
-lineCommentKeyword //
+lineCommentToken //
 features
  hasLineComments true
   // A comment

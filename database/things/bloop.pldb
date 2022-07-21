@@ -58,6 +58,6 @@ leachim6 Bloop
        PRINT['Hello World']
   BLOCK 0: END.
   HELLO-WORLD[1]; 
-printKeyword PRINT
+printToken PRINT
 features
  hasPrintDebugging true

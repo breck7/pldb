@@ -51,11 +51,11 @@ wikipedia https://en.wikipedia.org/wiki/Raku_(programming_language)
 
 website https://www.raku.org/
 creators Larry Wall
-lineCommentKeyword #
+lineCommentToken #
 leachim6 Raku
  filepath r/Raku.raku
  fileExtensions raku
  example
   say "Hello World";
   
-printKeyword say
+printToken say

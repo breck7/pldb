@@ -18,7 +18,7 @@ githubRepo https://github.com/google-research/dex-lang
  description Research language for array processing in the Haskell/ML family
  issues 152
 
-lineCommentKeyword --
+lineCommentToken --
 features
  hasLineComments true
   -- A comment

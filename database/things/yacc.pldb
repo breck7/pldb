@@ -12,7 +12,7 @@ wikipedia https://en.wikipedia.org/wiki/Yacc
  revisionCount 347
  appeared 1975
 
-lineCommentKeyword //
+lineCommentToken //
 
 githubLanguage Yacc
  fileExtensions y yacc yy
@@ -173,4 +173,4 @@ features
   /* A comment
   */
  hasSemanticIndentation false
-multiLineCommentKeywords /* */
+multiLineCommentTokens /* */

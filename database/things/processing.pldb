@@ -141,7 +141,7 @@ projectEuler Processing
 rosettaCode Processing
 
 centralPackageRepositoryCount 0
-lineCommentKeyword //
+lineCommentToken //
 leachim6 Processing
  filepath p/Processing.pde
  fileExtensions pde
@@ -152,4 +152,4 @@ leachim6 Processing
   fill(255);
   text("Hello World", width / 2, height / 2);
   
-multiLineCommentKeywords /* */
+multiLineCommentTokens /* */

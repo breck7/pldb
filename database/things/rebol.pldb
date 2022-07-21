@@ -73,7 +73,7 @@ hopl 2438
 rosettaCode REBOL
 
 corporateDevelopers REBOL Technologies
-lineCommentKeyword ;
+lineCommentToken ;
 centralPackageRepositoryCount 0
 rijuRepl https://riju.codes/rebol
  example
@@ -93,4 +93,4 @@ leachim6 Rebol
  example
   print "Hello World"
   
-printKeyword print
+printToken print

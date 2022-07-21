@@ -239,7 +239,7 @@ antlr https://github.com/antlr/grammars-v4/tree/master/php
 corporateDevelopers Zend
 indeedJobs php developer
  2017 9017
-lineCommentKeyword //
+lineCommentToken //
 languageServerProtocolProject https://github.com/bmewburn/vscode-intelephense
  writtenIn typescript
 languageServerProtocolProject https://github.com/felixfbecker/php-language-server
@@ -283,5 +283,5 @@ leachim6 PHP
   
   echo 'Hello World';
   
-printKeyword echo
-multiLineCommentKeywords /* */
+printToken echo
+multiLineCommentTokens /* */

@@ -193,7 +193,7 @@ corporateDevelopers Microsoft
 indeedJobs typescript developer
  2017 1542
 
-lineCommentKeyword //
+lineCommentToken //
 languageServerProtocolProject https://github.com/theia-ide/typescript-language-server
  writtenIn typescript
 jupyterKernel https://github.com/nearbydelta/itypescript
@@ -225,5 +225,5 @@ leachim6 TypeScript
  example
   console.log("Hello World");
   
-printKeyword console.log
-multiLineCommentKeywords /* */
+printToken console.log
+multiLineCommentTokens /* */

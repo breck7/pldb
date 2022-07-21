@@ -42,7 +42,7 @@ isOpenSource true
 centralPackageRepositoryCount 0
 
 creators Martin Odersky
-printKeyword println
+printToken println
 example
  class Person(val firstName: String, val lastName: String) {
   def fullName(): String =

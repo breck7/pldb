@@ -1,7 +1,7 @@
 title PostScript
 appeared 1982
 type textMarkup
-lineCommentKeyword %
+lineCommentToken %
 
 features
  hasComments true
@@ -126,4 +126,4 @@ leachim6 PostScript
  example
   % run> gs -q -sDEVICE=nullpage postscript.ps
   (Hello World\n) print quit
-printKeyword print
+printToken print

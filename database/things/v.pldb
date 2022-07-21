@@ -41,7 +41,7 @@ features
  hasPrintDebugging true
  hasSemanticIndentation false
 
-lineCommentKeyword //
+lineCommentToken //
 example
  import json
  
@@ -92,4 +92,4 @@ leachim6 V
  example
   println("Hello World")
   
-printKeyword println
+printToken println

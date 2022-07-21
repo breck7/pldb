@@ -51,6 +51,6 @@ leachim6 Yorick
   #!/usr/bin/yorick -batch
   print, "Hello World";
   
-printKeyword print
+printToken print
 features
  hasPrintDebugging true

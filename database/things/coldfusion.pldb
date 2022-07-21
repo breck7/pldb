@@ -128,7 +128,7 @@ leachim6 ColdFusion
   <cfset message = "Hello World">
   <cfoutput> #message#</cfoutput>
   
-printKeyword cfoutput
+printToken cfoutput
 pygmentsHighlighter Coldfusion HTML
  filename templates.py
  fileExtensions cfm cfml

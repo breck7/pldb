@@ -49,7 +49,7 @@ example
 website https://www.guixwl.org/
 standsFor Guix Workflow Language
 related scheme
-lineCommentKeyword ;
+lineCommentToken ;
 features
  hasLineComments true
   ; A comment

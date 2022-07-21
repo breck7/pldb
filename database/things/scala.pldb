@@ -165,7 +165,7 @@ antlr https://github.com/antlr/grammars-v4/tree/master/scala
 indeedJobs scala engineer
  2017 3679
 
-lineCommentKeyword //
+lineCommentToken //
 languageServerProtocolProject https://github.com/dragos/dragos-vscode-scala
  writtenIn scala
 languageServerProtocolProject https://github.com/scalameta/metals
@@ -203,5 +203,5 @@ leachim6 Scala
     println("Hello World")
   }
   
-printKeyword println
-multiLineCommentKeywords /* */
+printToken println
+multiLineCommentTokens /* */

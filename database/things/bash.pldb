@@ -101,7 +101,7 @@ quineRelay bash
 
 ubuntuPackage bash
 
-lineCommentKeyword #
+lineCommentToken #
 
 languageServerProtocolProject https://github.com/mads-hartmann/bash-language-server
  writtenIn typescript
@@ -130,4 +130,4 @@ leachim6 Shell
   #!/bin/sh
   echo "Hello World"
   
-printKeyword echo
+printToken echo

@@ -33,7 +33,7 @@ leachim6 Orc
   Println("Hello World") >>
   stop
   
-printKeyword Println
+printToken Println
 features
  hasPrintDebugging true
  hasMultiLineComments true
@@ -43,4 +43,4 @@ features
   {- A comment
   -}
  hasSemanticIndentation false
-multiLineCommentKeywords {- -}
+multiLineCommentTokens {- -}

@@ -93,7 +93,7 @@ rosettaCode Haxe
 languageServerProtocolProject https://github.com/vshaxe/haxe-language-server
  writtenIn haxe
 
-lineCommentKeyword //
+lineCommentToken //
 packageRepository https://lib.haxe.org/
 rijuRepl https://riju.codes/haxe
  example
@@ -119,4 +119,4 @@ leachim6 Haxe
           trace("Hello World");
       }
   }
-multiLineCommentKeywords /* */
+multiLineCommentTokens /* */

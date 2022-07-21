@@ -46,7 +46,7 @@ leachim6 B
       putchar ('Hell'); putchar ('o Wo'); putchar ('rld'); putchar ('*n');
   }
   
-printKeyword putchar
+printToken putchar
 features
  hasPrintDebugging true
  hasMultiLineComments true
@@ -56,4 +56,4 @@ features
   /* A comment
   */
  hasSemanticIndentation false
-multiLineCommentKeywords /* */
+multiLineCommentTokens /* */

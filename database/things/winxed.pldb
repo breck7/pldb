@@ -72,7 +72,7 @@ githubRepo https://github.com/NotFound/winxed
 
 website http://winxed.net/
 fileExtensions winxed
-lineCommentKeyword //
+lineCommentToken //
 features
  hasLineComments true
   // A comment
@@ -82,4 +82,4 @@ features
   /* A comment
   */
  hasSemanticIndentation false
-multiLineCommentKeywords /* */
+multiLineCommentTokens /* */

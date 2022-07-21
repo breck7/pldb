@@ -5,7 +5,7 @@ description Ren is a lightweight data-exchange text format. It is programming la
 website http://www.ren-data.org/
 reference http://pointillistic.com/ren/
 fileExtensions ren
-lineCommentKeyword ;
+lineCommentToken ;
 features
  hasComments true
  hasLineComments true

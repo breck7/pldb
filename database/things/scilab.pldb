@@ -44,7 +44,7 @@ fileType text
 isOpenSource true
 
 rosettaCode Scilab
-printKeyword disp
+printToken disp
 jupyterKernel https://github.com/calysto/scilab_kernel
 centralPackageRepositoryCount 0
 rijuRepl https://riju.codes/scilab
@@ -60,7 +60,7 @@ goodreads
  Introduction to Scilab: For Engineers and Scientists||Sandeep Nagar|58537943|5.00|1|0
  Introduction to Scilab for Scientists and Engineers||John Maclane|57266755|0.0|0|0
  SCILAB (A FREE SOFTWARE TO MATLAB)||ACHUTHSANKAR S.NAIR|44300566|0.0|0|0
-lineCommentKeyword //
+lineCommentToken //
 pygmentsHighlighter Scilab
  filename matlab.py
  fileExtensions sci sce tst

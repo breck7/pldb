@@ -27,6 +27,6 @@ leachim6 Jython
  fileExtensions py
  example
   print "Hello World"
-printKeyword print
+printToken print
 features
  hasPrintDebugging true

@@ -96,7 +96,7 @@ fileType text
 rosettaCode LSL
 
 centralPackageRepositoryCount 0
-lineCommentKeyword //
+lineCommentToken //
 features
  hasLineComments true
   // A comment
@@ -120,4 +120,4 @@ leachim6 LSL
           llSay(0, "Hello World");
       }
   }
-multiLineCommentKeywords /* */
+multiLineCommentTokens /* */
