@@ -51,14 +51,21 @@ class MonacoImporter {
 		file.save()
 	}
 
-	extractStrings(match) {
+	extractMany(match) {
 		const { file } = match
 		try {
 			const { language } = require(match.filename)
-			if (language.tokenizer?.string && !file.get("features hasStrings"))
+			const { tokenizer } = language
+			if (tokenizer.string && !file.get("features hasStrings"))
 				file.set("features hasStrings", "true")
+			if (
+				tokenizer.regexp ||
+				(language.regEx &&
+					!file.get("features hasRegularExpressionsSyntaxSugar"))
+			)
+				file.set("features hasRegularExpressionsSyntaxSugar", "true")
 		} catch (err) {
-			console.error(`Error with strings with ${file.id}`)
+			console.error(`Error with many with ${file.id}`)
 		}
 		file.save()
 	}
@@ -67,7 +74,7 @@ class MonacoImporter {
 		this.matched.forEach(match => {
 			//this.extractComments(match)
 			// this.extractKeywords(match)
-			this.extractStrings(match)
+			this.extractMany(match)
 		})
 	}
 
