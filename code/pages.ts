@@ -126,10 +126,11 @@ pipeTable
   }
 
   get featuresTable() {
-    const featuresTable = this.file.getNode(`features`)
+    const { file } = this
+    const featuresTable = file.getNode(`features`)
     if (!featuresTable) return ""
 
-    const { featuresMap } = this.file.base
+    const { featuresMap } = file.base
 
     const table = new TreeNode()
     featuresTable.forEach(node => {
@@ -139,12 +140,17 @@ pipeTable
         return
       }
 
+      const tokenPath = feature.token
+      const supported = node.getContent() === "true"
+
       table
         .appendLineAndChildren(
           `row`,
           `Feature ${feature.feature}
 FeatureLink ${feature.featureLink}
-Supported ${node.getContent() === "true" ? "✓" : "ϴ"}`
+Supported ${supported ? "✓" : "ϴ"}
+Example
+Token ${supported && tokenPath ? file.get(tokenPath) ?? "" : ""}`
         )
         .touchNode("Example")
         .setChildren(node.childrenToString())

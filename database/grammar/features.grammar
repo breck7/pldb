@@ -4,10 +4,18 @@ psuedoExampleNode
  cruxFromId
  int sortIndex 610
  single
-featureKeywordNode
- description For "type feature" only. When building the feature pages, look for this keyword on each object to see if it has the feature or not.
- extends abstractWordNode
+abstractFeatureGrammarLinkNode
+ todo Should only appear on entries where type=feature.
+ extends abstractFactNode
+ cells keywordCell keywordCell
  cruxFromId
+ single
+featureKeywordNode
+ extends abstractFeatureGrammarLinkNode
+ description Links a feature entry to the related feature keyword in the pldb grammar.
+tokenKeywordNode
+ extends abstractFeatureGrammarLinkNode
+ description Links a feature entry to the related token keyword in the pldb grammar.
 featureExampleCodeNode
  description Example usage of the feature.
  baseNodeType blobNode

@@ -74,10 +74,6 @@ abstractAnnualPopulationCountNode
  abstract
 annualPopulationCountNode
  cells yearCell populationCountCell
-abstractWordNode
- cells keywordCell stringCell
- extends abstractFactNode
- abstract
 abstractBooleanNode
  cells keywordCell boolCell
  abstract

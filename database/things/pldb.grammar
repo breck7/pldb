@@ -204,42 +204,6 @@ ubuntuPackageNode
  description The name of an Ubuntu package for the language from https://packages.ubuntu.com/.
  string sourceDomain ubuntu.com
  cruxFromId
-abstractCommonTokenNode
- description Most general purpose programming languages implement a set of common tokens for common features like these.
- cells keywordCell
- catchAllCellType tokenCell
- extends abstractFactNode
- abstract
-lineCommentTokenNode
- extends abstractCommonTokenNode
- description Defined as a token that can be placed anywhere on a line and starts a comment that cannot be stopped except by a line break character or end of file.
- cruxFromId
- boolean multipleOk true
- example
-  javascript
-   lineCommentToken //
-multiLineCommentTokensNode
- extends abstractCommonTokenNode
- description A comment with a start delimiter and end token (which can be the same) that can span multiple lines.
- cruxFromId
- boolean multipleOk true
- example
-  javascript
-   multiLineCommentTokens /* */
-printTokenNode
- extends abstractCommonTokenNode
- description What token(s) is used to print a message?
- cruxFromId
- boolean multipleOk true
- example
-  javascript
-   printToken console.log
-keywordsNode
- description What are all the keywords in this language?
- extends abstractFactNode
- cruxFromId
- catchAllCellType tokenCell
- single
 conferenceNode
  description Some languages have a recurring conference(s).
  cells keywordCell urlCell
@@ -303,6 +267,42 @@ wikipediaExampleNode
  extends exampleNode
  description Example(s) of this language on the Wikipedia page.
  crux example
+abstractCommonTokenNode
+ description Most general purpose programming languages implement a set of common tokens for common features like these.
+ cells keywordCell
+ catchAllCellType tokenCell
+ extends abstractFactNode
+ abstract
+lineCommentTokenNode
+ extends abstractCommonTokenNode
+ description Defined as a token that can be placed anywhere on a line and starts a comment that cannot be stopped except by a line break character or end of file.
+ cruxFromId
+ boolean multipleOk true
+ example
+  javascript
+   lineCommentToken //
+multiLineCommentTokensNode
+ extends abstractCommonTokenNode
+ description A comment with a start delimiter and end token (which can be the same) that can span multiple lines.
+ cruxFromId
+ boolean multipleOk true
+ example
+  javascript
+   multiLineCommentTokens /* */
+printTokenNode
+ extends abstractCommonTokenNode
+ description What token(s) is used to print a message?
+ cruxFromId
+ boolean multipleOk true
+ example
+  javascript
+   printToken console.log
+keywordsNode
+ description What are all the keywords in this language?
+ extends abstractFactNode
+ cruxFromId
+ catchAllCellType tokenCell
+ single
 abstractStringNode
  catchAllCellType stringCell
  extends abstractFactNode
@@ -334,14 +334,18 @@ oldNameNode
  description What is the old name of this language?
  extends abstractStringNode
  cruxFromId
-abstractWordNode
- cells keywordCell stringCell
+abstractFeatureGrammarLinkNode
+ todo Should only appear on entries where type=feature.
  extends abstractFactNode
- abstract
-featureKeywordNode
- description For "type feature" only. When building the feature pages, look for this keyword on each object to see if it has the feature or not.
- extends abstractWordNode
+ cells keywordCell keywordCell
  cruxFromId
+ single
+featureKeywordNode
+ extends abstractFeatureGrammarLinkNode
+ description Links a feature entry to the related feature keyword in the pldb grammar.
+tokenKeywordNode
+ extends abstractFeatureGrammarLinkNode
+ description Links a feature entry to the related token keyword in the pldb grammar.
 abstractSectionNode
  extends abstractFactNode
  boolean padOnFormat true
@@ -1266,7 +1270,7 @@ pldbNode
  description A database about programming languages and related concepts.
  catchAllNodeType errorNode
  todo Should not have to manually list each node type here, but should be able to mark some tag as inscope
- inScope blankLineNode descriptionNode wikipediaNode equationNode exampleNode fileExtensionsNode githubLanguageNode abstractGitRepoUrlNode helloWorldCollectionNode statusNode creatorsNode appearedNode announcementUrlNode countryNode titleNode wordRankNode standsForNode akaNode psuedoExampleNode featureKeywordNode featuresNode referenceNode replitNode tryItOnlineNode twitterNode typeNode websiteNode wikipediaNode fileTypeNode linguistGrammarRepoNode tiobeNode meetupNode webReplNode linkedInSkillNode projectEulerNode hoplNode subredditNode redditDiscussionNode quineRelayNode ubuntuPackageNode codeMirrorNode rosettaCodeNode antlrNode corporateDevelopersNode cheatSheetUrlNode isOpenSourceNode indeedJobsNode hackerNewsDiscussionsNode firstAnnouncementNode announcementMethodNode abstractRelationshipNode packageCountNode packageInstallsNode packageRepositoryNode packageAuthorsNode packagesIncludingVersionsNode forLanguagesNode conferenceNode abstractCommonTokenNode languageServerProtocolProjectNode abstractParadigmNode latestReleaseNode nativeLanguageNode jupyterKernelNode keywordsNode stackOverflowSurveyNode centralPackageRepositoryCountNode gdbSupportNode rijuReplNode esolangNode goodreadsNode dblpNode abstractFlagNode oldNameNode pygmentsHighlighterNode leachim6Node
+ inScope blankLineNode descriptionNode wikipediaNode equationNode exampleNode fileExtensionsNode githubLanguageNode abstractGitRepoUrlNode helloWorldCollectionNode statusNode creatorsNode appearedNode announcementUrlNode countryNode titleNode wordRankNode standsForNode akaNode psuedoExampleNode abstractFeatureGrammarLinkNode featuresNode referenceNode replitNode tryItOnlineNode twitterNode typeNode websiteNode wikipediaNode fileTypeNode linguistGrammarRepoNode tiobeNode meetupNode webReplNode linkedInSkillNode projectEulerNode hoplNode subredditNode redditDiscussionNode quineRelayNode ubuntuPackageNode codeMirrorNode rosettaCodeNode antlrNode corporateDevelopersNode cheatSheetUrlNode isOpenSourceNode indeedJobsNode hackerNewsDiscussionsNode firstAnnouncementNode announcementMethodNode abstractRelationshipNode packageCountNode packageInstallsNode packageRepositoryNode packageAuthorsNode packagesIncludingVersionsNode forLanguagesNode conferenceNode abstractCommonTokenNode languageServerProtocolProjectNode abstractParadigmNode latestReleaseNode nativeLanguageNode jupyterKernelNode keywordsNode stackOverflowSurveyNode centralPackageRepositoryCountNode gdbSupportNode rijuReplNode esolangNode goodreadsNode dblpNode abstractFlagNode oldNameNode pygmentsHighlighterNode leachim6Node
  pattern [\w-]\.pldb$
  cells fileNameCell
  example

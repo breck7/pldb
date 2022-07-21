@@ -27,6 +27,7 @@ interface FeatureSummary {
   featureLink: string
   aka: string
   path: string
+  token?: string
   yes: number
   no: number
   percentage: string
@@ -575,6 +576,7 @@ class PLDBBaseFolder extends TreeBaseFolder {
         featureLink: `../languages/${name}.html`,
         aka: file.getAll("aka").join(" or "),
         path: file.get("featureKeyword"),
+        token: file.get("tokenKeyword"),
         yes: positives,
         no: negatives,
         percentage:
