@@ -65,6 +65,7 @@ features
  hasComments true
   // A comment
  hasSemanticIndentation false
+ hasStrings true
 monaco hcl
 multiLineCommentTokens /* */
 keywords var local path for_each any string number bool true false null if  else  endif  for  in endfor

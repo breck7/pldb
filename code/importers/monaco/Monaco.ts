@@ -51,10 +51,23 @@ class MonacoImporter {
 		file.save()
 	}
 
+	extractStrings(match) {
+		const { file } = match
+		try {
+			const { language } = require(match.filename)
+			if (language.tokenizer?.string && !file.get("features hasStrings"))
+				file.set("features hasStrings", "true")
+		} catch (err) {
+			console.error(`Error with strings with ${file.id}`)
+		}
+		file.save()
+	}
+
 	writeAllCommand() {
 		this.matched.forEach(match => {
 			//this.extractComments(match)
-			this.extractKeywords(match)
+			// this.extractKeywords(match)
+			this.extractStrings(match)
 		})
 	}
 

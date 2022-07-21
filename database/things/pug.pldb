@@ -56,3 +56,5 @@ domainName pugjs.org
 lineCommentToken //
 monaco pug
 keywords append block case default doctype each else extends for if in include mixin typeof unless var when
+features
+ hasStrings true

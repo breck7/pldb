@@ -27,3 +27,5 @@ lineCommentToken //
 monaco msdax
 multiLineCommentTokens /* */
 keywords VAR RETURN NOT EVALUATE DATATABLE ORDER BY START AT DEFINE MEASURE ASC DESC IN BOOLEAN DOUBLE INTEGER DATETIME CURRENCY STRING
+features
+ hasStrings true
