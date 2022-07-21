@@ -35,6 +35,14 @@ class MonacoImporter {
 		})
 	}
 
+	linkAllCommand() {
+		this.matched.forEach(match => {
+			const { file } = match
+			file.set("monaco", match.name)
+			file.save()
+		})
+	}
+
 	get missing() {
 		return this.paired.filter(pair => !pair.matched)
 	}

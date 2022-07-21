@@ -171,6 +171,14 @@ meetupNode
  cruxFromId
  inScope meetupMemberCountNode meetupGroupCountNode
  string sourceDomain meetup.com
+monacoNode
+ extends abstractOneWordGuidNode
+ description A link to a Monaco syntax highlighting package for this language.
+ cruxFromId
+ example
+  javascript
+   monaco javascript
+ string sourceDomain microsoft.github.io/monaco-editor/
 subredditNode
  extends abstractOneWordGuidNode
  cruxFromId

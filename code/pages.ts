@@ -524,7 +524,13 @@ ${facts.map(fact => ` - ${fact}`).join("\n")}`
     const codeMirror = file.get("codeMirror")
     if (codeMirror)
       facts.push(
-        `There is a <a href="codemirror-editor.html">CodeMirror</a> <a href="https://github.com/codemirror/codemirror5/tree/master/mode/${codeMirror}">package</a> for syntax highlighting ${title}`
+        `There is a <a href="codemirror.html">CodeMirror</a> <a href="https://github.com/codemirror/codemirror5/tree/master/mode/${codeMirror}">package</a> for syntax highlighting ${title}`
+      )
+
+    const monaco = file.get("monaco")
+    if (monaco)
+      facts.push(
+        `There is a <a href="monaco.html">Monaco</a> <a href="https://github.com/microsoft/monaco-editor/tree/main/src/basic-languages/${monaco}">package</a> for syntax highlighting ${title}`
       )
 
     const pygmentsHighlighter = file.get("pygmentsHighlighter")

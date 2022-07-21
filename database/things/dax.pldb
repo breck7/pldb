@@ -24,3 +24,4 @@ example
   ( FILTER ( 'DimProduct', [SafetyStockLevel] < 200 ) )
  ORDER BY [EnglishProductName] ASC
 lineCommentToken //
+monaco msdax

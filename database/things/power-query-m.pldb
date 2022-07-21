@@ -37,3 +37,4 @@ example
      #"Capitalized Each Word" = Table.TransformColumns(Orders, {"Item", Text.Proper})  
  in  
      #"Capitalized Each Word"
+monaco powerquery
