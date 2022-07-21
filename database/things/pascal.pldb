@@ -156,3 +156,4 @@ printToken writeln
 assignmentToken :=
 lineCommentToken //
 monaco pascal
+multiLineCommentTokens { }

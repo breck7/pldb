@@ -5,6 +5,8 @@ import { runCommand } from "../../utils"
 
 import { jtree } from "jtree"
 
+const lodash = require("lodash")
+
 const { TreeNode } = jtree
 
 const cacheDir = __dirname + "/cache/"
@@ -26,6 +28,15 @@ class MonacoImporter {
 					const newToken = conf.comments.lineComment
 					if (!currentToken) {
 						file.set("lineCommentToken", newToken)
+						file.save()
+					}
+				}
+
+				if (conf.comments?.blockComment) {
+					const currentToken = file.get("multiLineCommentTokens")
+					const newToken = lodash.uniq(conf.comments.blockComment)
+					if (!currentToken) {
+						file.set("multiLineCommentTokens", newToken.join(" "))
 						file.save()
 					}
 				}
