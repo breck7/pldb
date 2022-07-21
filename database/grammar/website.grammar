@@ -7,3 +7,16 @@ webReplNode
  extends abstractUrlNode
  description An online repl for the project.
  cruxFromId
+domainNameCell
+ extends stringCell
+domainNameNode
+ description If the project website is on its own domain.
+ cruxFromId
+ cells keywordCell domainNameCell
+ extends abstractFactNode
+ single
+ inScope domainRegisteredNode
+domainRegisteredNode
+ extends abstractYearNode
+ crux registered
+ single

@@ -588,6 +588,14 @@ ${facts.map(fact => ` - ${fact}`).join("\n")}`
       )
     }
 
+    const domainRegistered = file.get("domainName registered")
+    if (domainRegistered)
+      facts.push(
+        `<a href="${object.website}">${file.get(
+          "domainName"
+        )}</a> was registered in ${domainRegistered}`
+      )
+
     const wpRelated = file.get("wikipedia related")
     const seeAlsoLinks = wpRelated ? wpRelated.split(" ") : []
     const related = object.related

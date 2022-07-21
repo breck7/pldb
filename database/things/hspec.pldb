@@ -21,3 +21,4 @@ example
  
      it "throws an exception if used with an empty list" $ do
        evaluate (head []) `shouldThrow` anyException
+domainName hspec.github.io

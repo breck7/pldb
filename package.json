@@ -10,6 +10,7 @@
     "checkLinks": "linkinator -r https://pldb.pub > brokenLinks.txt",
     "deploy": "echo 'Rsyncing the contents of pldb.pub/ to the /var/www/html folder on the PLDB server'; rsync -vr pldb.pub/* pldb@pldb.pub:/var/www/html/",
     "exampleCount": "xsv select title,appeared,type,rank,exampleCount pldb.pub/languages.csv > ignore/exampleCounts.csv",
+    "nulls": "xsv frequency pldb.pub/pldb.csv --limit 1",
     "test": "ts-node code/test.ts"
   },
   "prettier": {
