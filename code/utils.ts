@@ -130,6 +130,7 @@ const isLanguage = type => {
     application: true,
     framework: true,
     standard: true,
+    hashFunction: true,
     compiler: true,
     decompiler: true,
     binaryExecutable: true,
@@ -180,7 +181,6 @@ const replaceNode = (node, path, newContent) =>
   node
     .find(node => node.getLine().startsWith(path))
     .replaceNode(str => newContent)
-
 
 const nodeToFlatObject = parentNode => {
   const delimiter = "."
