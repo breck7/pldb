@@ -32,5 +32,7 @@ leachim6 Hare
 printToken fmt::println
 features
  hasPrintDebugging true
+ hasStrings true
+  "Hello world"
 domainName harelang.org
 stringToken "

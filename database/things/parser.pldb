@@ -42,6 +42,8 @@ features
   # A comment
  hasPrintDebugging true
  hasSemanticIndentation false
+ hasStrings true
+  "Hello world"
 leachim6 Parser
  filepath p/Parser.p
  fileExtensions p

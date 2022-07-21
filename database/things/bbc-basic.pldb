@@ -28,4 +28,6 @@ leachim6 BBC BASIC
 printToken PRINT
 features
  hasPrintDebugging true
+ hasStrings true
+  "Hello world"
 stringToken "

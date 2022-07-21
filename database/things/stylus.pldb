@@ -4,6 +4,8 @@ type stylesheetLanguage
 
 features
  hasSemanticIndentation true
+ hasStrings true
+  "Hello world"
 
 wikipedia https://en.wikipedia.org/wiki/Stylus_(stylesheet_language)
  example

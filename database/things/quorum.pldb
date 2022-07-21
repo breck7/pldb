@@ -12,5 +12,7 @@ leachim6 Quorum
 printToken output
 features
  hasPrintDebugging true
+ hasStrings true
+  "Hello world"
 domainName quorumlanguage.com
 stringToken "

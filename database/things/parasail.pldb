@@ -21,6 +21,8 @@ leachim6 ParaSail
 printToken IO.Println
 features
  hasPrintDebugging true
+ hasStrings true
+  "Hello world"
 domainName parasail-lang.org
  registered 2012
 stringToken "

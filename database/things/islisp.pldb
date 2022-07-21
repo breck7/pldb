@@ -27,4 +27,6 @@ leachim6 ISLISP
 printToken standard-output
 features
  hasPrintDebugging true
+ hasStrings true
+  "Hello world"
 stringToken "

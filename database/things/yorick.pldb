@@ -54,5 +54,7 @@ leachim6 Yorick
 printToken print
 features
  hasPrintDebugging true
+ hasStrings true
+  "Hello world"
 domainName yorick.github.com
 stringToken "

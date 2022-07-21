@@ -25,6 +25,8 @@ features
   
   addpattern def size(Node(l, r)) = size(l) + size(r)
  hasPrintDebugging true
+ hasStrings true
+  "Hello world"
 
 githubRepo https://github.com/evhub/coconut
  stars 3495

@@ -52,6 +52,8 @@ leachim6 Nit
 printToken print
 features
  hasPrintDebugging true
+ hasStrings true
+  "Hello world"
 domainName nitlanguage.org
  registered 2008
 stringToken "

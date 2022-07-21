@@ -106,6 +106,8 @@ features
   /* A comment
   */
  hasSemanticIndentation false
+ hasStrings true
+  "Hello world"
 pygmentsHighlighter LSL
  filename scripting.py
  fileExtensions lsl

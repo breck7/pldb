@@ -13,6 +13,8 @@ features
   *)
  hasPrintDebugging true
  hasSemanticIndentation false
+ hasStrings true
+  "Hello world"
 multiLineCommentTokens (* *)
 wikipedia https://en.wikipedia.org/wiki/Modula-2
  example

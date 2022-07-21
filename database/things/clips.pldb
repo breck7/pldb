@@ -359,6 +359,8 @@ features
  hasComments true
   ; A comment
  hasSemanticIndentation false
+ hasStrings true
+  "Hello world"
 leachim6 CLIPS
  filepath c/CLIPS.clips
  fileExtensions clips

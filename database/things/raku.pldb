@@ -41,6 +41,8 @@ features
   # A comment
  hasPrintDebugging true
  hasSemanticIndentation false
+ hasStrings true
+  "Hello world"
 
 wikipedia https://en.wikipedia.org/wiki/Raku_(programming_language)
  summary Raku is a member of the Perl family of programming languages. Formerly known as Perl 6, it was renamed in October 2019.While historically several interpreter and compiler implementations were being written, today only the Rakudo implementation is in active development. Raku introduces elements of many modern and historical languages. Compatibility with Perl is not a goal, though a compatibility mode is part of the specification. The design process for Raku began in 2000. In February 2015 a post on The Perl Foundation blog stated that "The Perl6 team will attempt to get a development release of version 1.0 available for Larry's birthday in September and a Version 1.0 release by Christmas", and on 25 December 2015, the first stable version of the specification was announced.Development on Pugs, the first high-traction implementation, began in 2005, and there have been multiple Raku implementation projects. Rakudo is based on NQP (Not Quite Perl) and can use MoarVM or the Java Virtual Machine as a runtime environment, and releases a new version every month (including precompiled Linux packages); in July 2010, the project released the first Rakudo Star distribution, a collection of a Raku implementation and related materials. Larry Wall maintains a reference grammar known as STD.pm6, written in Raku and bootstrapped with Perl.

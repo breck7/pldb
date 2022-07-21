@@ -56,6 +56,8 @@ features
   // A comment
  hasPrintDebugging true
  hasSemanticIndentation false
+ hasStrings true
+  "Hello world"
 pygmentsHighlighter Whiley
  filename whiley.py
  fileExtensions whiley

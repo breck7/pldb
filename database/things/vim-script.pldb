@@ -125,6 +125,8 @@ leachim6 VimScript
 printToken echo
 features
  hasPrintDebugging true
+ hasStrings true
+  "Hello world"
 pygmentsHighlighter VimL
  filename textedit.py
  fileExtensions vim .vimrc .exrc .gvimrc _vimrc _exrc _gvimrc vimrc gvimrc

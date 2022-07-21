@@ -74,6 +74,8 @@ features
   // A comment
  hasPrintDebugging true
  hasSemanticIndentation false
+ hasStrings true
+  "Hello world"
 pygmentsHighlighter Vala
  filename c_like.py
  fileExtensions vala vapi

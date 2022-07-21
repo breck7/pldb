@@ -119,5 +119,7 @@ leachim6 Lean
 printToken #print
 features
  hasPrintDebugging true
+ hasStrings true
+  "Hello world"
 domainName leanprover.github.io
 stringToken "

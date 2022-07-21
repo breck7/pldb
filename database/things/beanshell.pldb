@@ -36,6 +36,8 @@ leachim6 Beanshell
 printToken print
 features
  hasPrintDebugging true
+ hasStrings true
+  "Hello world"
 domainName beanshell.org
  registered 1999
 stringToken "

@@ -74,6 +74,8 @@ features
   // A comment
  hasPrintDebugging true
  hasSemanticIndentation false
+ hasStrings true
+  "Hello world"
 pygmentsHighlighter SuperCollider
  filename supercollider.py
  fileExtensions sc scd

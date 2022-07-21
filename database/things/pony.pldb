@@ -57,6 +57,8 @@ leachim6 Pony
 printToken env.out.print
 features
  hasPrintDebugging true
+ hasStrings true
+  "Hello world"
 domainName ponylang.org
  registered 2015
 stringToken "

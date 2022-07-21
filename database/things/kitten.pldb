@@ -36,5 +36,7 @@ leachim6 Kitten
 printToken say
 features
  hasPrintDebugging true
+ hasStrings true
+  "Hello world"
 domainName kittenlang.org
 stringToken "

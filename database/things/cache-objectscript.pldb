@@ -32,4 +32,6 @@ leachim6 Cache ObjectScript
 printToken Write
 features
  hasPrintDebugging true
+ hasStrings true
+  "Hello world"
 stringToken "

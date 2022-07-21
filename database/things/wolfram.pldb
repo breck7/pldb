@@ -16,6 +16,8 @@ features
   (* A comment
   *)
  hasSemanticIndentation false
+ hasStrings true
+  "Hello world"
 
 wikipedia https://en.wikipedia.org/wiki/Wolfram_Language
  related mathematica-editor apl c lisp pascal prolog simula smalltalk julia mathematica unity-engine

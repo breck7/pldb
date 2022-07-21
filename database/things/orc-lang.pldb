@@ -43,6 +43,8 @@ features
   {- A comment
   -}
  hasSemanticIndentation false
+ hasStrings true
+  "Hello world"
 multiLineCommentTokens {- -}
 domainName orc.csres.utexas.edu
 stringToken "

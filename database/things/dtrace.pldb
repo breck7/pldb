@@ -105,6 +105,8 @@ features
   /* A comment
   */
  hasSemanticIndentation false
+ hasStrings true
+  "Hello world"
 multiLineCommentTokens /* */
 domainName dtrace.org
  registered 2010

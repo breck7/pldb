@@ -68,6 +68,8 @@ leachim6 Ioke
 printToken println
 features
  hasPrintDebugging true
+ hasStrings true
+  "Hello world"
 domainName ioke.org
  registered 2008
 stringToken "

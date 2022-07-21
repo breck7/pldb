@@ -29,4 +29,6 @@ leachim6 CLISP
 printToken write-line
 features
  hasPrintDebugging true
+ hasStrings true
+  "Hello world"
 stringToken "

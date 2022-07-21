@@ -39,4 +39,6 @@ leachim6 TCSH
 printToken echo
 features
  hasPrintDebugging true
+ hasStrings true
+  "Hello world"
 stringToken "

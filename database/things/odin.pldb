@@ -59,6 +59,8 @@ features
   // A comment
  hasPrintDebugging true
  hasSemanticIndentation false
+ hasStrings true
+  "Hello world"
 pygmentsHighlighter ODIN
  filename archetype.py
  fileExtensions odin

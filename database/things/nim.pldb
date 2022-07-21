@@ -16,6 +16,8 @@ features
   #[ A comment
   ]#
  hasAssignment true
+ hasStrings true
+  "Hello world"
 
 compilesTo c cpp objective-c javascript
 

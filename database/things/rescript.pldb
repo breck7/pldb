@@ -26,6 +26,8 @@ features
   // A comment
  hasPrintDebugging true
  hasSemanticIndentation false
+ hasStrings true
+  "Hello world"
 leachim6 ReScript
  filepath r/ReScript.res
  fileExtensions res

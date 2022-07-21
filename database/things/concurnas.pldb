@@ -28,6 +28,8 @@ leachim6 Concurnas
 printToken System.out.println
 features
  hasPrintDebugging true
+ hasStrings true
+  "Hello world"
 domainName concurnas.com
  registered 2018
 stringToken "

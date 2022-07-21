@@ -57,6 +57,8 @@ leachim6 Zig
 printToken std.debug.print
 features
  hasPrintDebugging true
+ hasStrings true
+  "Hello world"
 
 domainName ziglang.org
 stringToken "

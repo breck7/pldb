@@ -135,6 +135,22 @@ class PLDBUpdater {
       })
   }
 
+  updateStringsCommand() {
+    pldbBase
+      .filter(file => file.isLanguage)
+      .filter(
+        file => file.has("stringToken") && !file.get("features hasStrings")
+      )
+      .forEach(file => {
+        file.set("features hasStrings", "true")
+        const token = file.get("stringToken")
+        file
+          .touchNode("features hasStrings")
+          .setChildren(`${token}Hello world${token}`)
+        file.save()
+      })
+  }
+
   updatePrintsCommand() {
     pldbBase
       .filter(file => file.isLanguage)

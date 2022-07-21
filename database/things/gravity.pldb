@@ -29,5 +29,7 @@ leachim6 Gravity
 printToken System.print
 features
  hasPrintDebugging true
+ hasStrings true
+  "Hello world"
 domainName gravity-lang.org
 stringToken "

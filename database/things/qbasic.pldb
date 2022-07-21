@@ -40,4 +40,6 @@ leachim6 QBasic
 printToken PRINT
 features
  hasPrintDebugging true
+ hasStrings true
+  "Hello world"
 stringToken "

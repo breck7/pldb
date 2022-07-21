@@ -13,5 +13,7 @@ leachim6 Verve
 printToken print
 features
  hasPrintDebugging true
+ hasStrings true
+  "Hello world"
 domainName verve-lang.org
 stringToken "

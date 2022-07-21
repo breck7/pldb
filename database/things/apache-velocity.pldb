@@ -43,3 +43,6 @@ pygmentsHighlighter Velocity
  fileExtensions vm fhtml
 domainName velocity.apache.org
 stringToken "
+features
+ hasStrings true
+  "Hello world"

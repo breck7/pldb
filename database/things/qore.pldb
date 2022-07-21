@@ -42,6 +42,8 @@ leachim6 Qore
 printToken printf
 features
  hasPrintDebugging true
+ hasStrings true
+  "Hello world"
 domainName qore.org
  registered 2008
 stringToken "

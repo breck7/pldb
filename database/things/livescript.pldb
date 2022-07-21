@@ -12,6 +12,8 @@ features
  hasMultiLineComments true
   /* A comment
   */
+ hasStrings true
+  "Hello world"
 
 wikipedia https://en.wikipedia.org/wiki/LiveScript
  related javascript haskell coffeescript f-sharp elixir

@@ -116,6 +116,8 @@ features
   /* A comment
   */
  hasSemanticIndentation false
+ hasStrings true
+  "Hello world"
 pygmentsHighlighter AspectJ
  filename jvm.py
  fileExtensions aj

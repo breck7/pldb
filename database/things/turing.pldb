@@ -102,6 +102,8 @@ features
   % A comment
  hasPrintDebugging true
  hasSemanticIndentation false
+ hasStrings true
+  "Hello world"
 leachim6 Turing
  filepath t/Turing.t
  fileExtensions t

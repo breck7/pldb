@@ -31,5 +31,7 @@ leachim6 Wyvern
 printToken stdout.print
 features
  hasPrintDebugging true
+ hasStrings true
+  "Hello world"
 domainName wyvernlang.github.io
 stringToken "

@@ -30,6 +30,8 @@ leachim6 Uniface
 printToken message
 features
  hasPrintDebugging true
+ hasStrings true
+  "Hello world"
 domainName uniface.com
  registered 1998
 stringToken "

@@ -52,4 +52,6 @@ leachim6 Karel
 printToken WRITE
 features
  hasPrintDebugging true
+ hasStrings true
+  "Hello world"
 stringToken "

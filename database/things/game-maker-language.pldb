@@ -98,5 +98,7 @@ features
   /* A comment
   */
  hasSemanticIndentation false
+ hasStrings true
+  "Hello world"
 multiLineCommentTokens /* */
 stringToken "

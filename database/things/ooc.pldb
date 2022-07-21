@@ -46,6 +46,8 @@ leachim6 Ooc
 printToken println
 features
  hasPrintDebugging true
+ hasStrings true
+  "Hello world"
 domainName ooc-lang.org
  registered 2009
 stringToken "

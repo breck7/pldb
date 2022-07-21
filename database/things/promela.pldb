@@ -18,4 +18,6 @@ leachim6 Promela
 printToken printf
 features
  hasPrintDebugging true
+ hasStrings true
+  "Hello world"
 stringToken "

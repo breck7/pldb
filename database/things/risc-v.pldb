@@ -47,3 +47,6 @@ leachim6 RISC V
           li      a0, 10
           ecall
 stringToken "
+features
+ hasStrings true
+  "Hello world"

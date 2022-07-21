@@ -46,4 +46,6 @@ leachim6 Arduino
 printToken Serial.println
 features
  hasPrintDebugging true
+ hasStrings true
+  "Hello world"
 stringToken "

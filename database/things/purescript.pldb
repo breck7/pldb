@@ -29,6 +29,8 @@ features
  hasMultiLineComments true
   {- A comment
   -}
+ hasStrings true
+  "Hello world"
 
 githubLanguage PureScript
  fileExtensions purs

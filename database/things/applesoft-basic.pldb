@@ -22,4 +22,6 @@ leachim6 Applesoft BASIC
 printToken PRINT
 features
  hasPrintDebugging true
+ hasStrings true
+  "Hello world"
 stringToken "

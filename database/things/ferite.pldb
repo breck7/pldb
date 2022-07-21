@@ -20,4 +20,6 @@ leachim6 Ferite
 printToken Console.println
 features
  hasPrintDebugging true
+ hasStrings true
+  "Hello world"
 stringToken "

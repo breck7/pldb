@@ -66,4 +66,6 @@ printToken WRITE
 features
  hasPrintDebugging true
  hasSemanticIndentation false
+ hasStrings true
+  "Hello world"
 stringToken "

@@ -33,4 +33,6 @@ leachim6 JScript
 printToken WScript.Echo
 features
  hasPrintDebugging true
+ hasStrings true
+  "Hello world"
 stringToken "
