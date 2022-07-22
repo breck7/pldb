@@ -169,7 +169,7 @@ class PLDBFile extends TreeBaseFile {
         source: "hello-world",
         link:
           `https://github.com/leachim6/hello-world/blob/main/` +
-          node.getNode("filepath")
+          node.get("filepath")
       })
     })
 
