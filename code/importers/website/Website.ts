@@ -60,7 +60,8 @@ class Website {
     })
     //todo: improve
     potentialHits = lodash.uniq(potentialHits)
-    if (potentialHits.length === 1) file.set(`githubRepo`, potentialHits[0])
+    if (potentialHits.length === 1)
+      file.set(`githubRepo`, potentialHits[0].trim())
     return this
   }
 
@@ -80,6 +81,7 @@ class Website {
 
   extractTwitter() {
     const { file } = this
+    if (file.has("twitter")) return
     const str = this.content.toLowerCase()
     const { id } = file
     if (str.includes("twitter")) {
