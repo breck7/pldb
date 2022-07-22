@@ -101,6 +101,87 @@ class PLDBFileWithWikipedia {
     return JSON.parse(Disk.read(this.cachePath))
   }
 
+  // Todo. All of these things could return matches. Use them for conflict resolution.
+  getYear(json) {
+    let year = json.info && json.info.year
+    if (!year) year = json.info && json.info.yearStarted
+    if (!year) year = json.info && json.info.released
+    year = year && year.toString().match(/^\d{4}/) && year
+
+    if (!year && json.rawInfo) {
+      year = json.rawInfo.match(/\{\{Start (date|date and age)\|(\d{4})\D/i)
+      if (year) year = year[2]
+    }
+
+    // This does not seem to hit at all
+    if (!year) {
+      year = json.rawInfo.match(/appeared\<\/th\>\<td\>.(\d{4})/)
+      if (year) year = year[1]
+    }
+
+    if (!year) {
+      let matches
+      let years = []
+
+      while ((matches = yearRegex.exec(json.summary))) {
+        years.push(matches[2])
+      }
+
+      if (!years.length) {
+        while ((matches = yearRegex.exec(json.content))) {
+          years.push(matches[2])
+        }
+      }
+
+      if (!years.length && false) {
+        while ((matches = withContext.exec(json.summary))) {
+          console.log(matches[1])
+        }
+        while ((matches = withContext.exec(json.content))) {
+          console.log(matches[1])
+        }
+      }
+
+      if (!years.length) {
+        while ((matches = yearRegexRelaxed.exec(json.summary))) {
+          years.push(matches[1])
+        }
+
+        if (!years.length) {
+          while ((matches = yearRegexRelaxed.exec(json.content))) {
+            years.push(matches[1])
+          }
+
+          //this was pretty inaccurate:
+          let num
+          if (!years.length) {
+            while ((matches = yearRegexRelaxed.exec(json.rawInfo))) {
+              num = parseInt(matches[1])
+              if (!isNaN(num) && num < 2012) years.push(num)
+            }
+
+            while (
+              (matches = yearRegexRelaxed.exec(Disk.stripHtml(json.html)))
+            ) {
+              num = parseInt(matches[1])
+              if (!isNaN(num) && num < 2012) years.push(num)
+            }
+          }
+        }
+      }
+
+      years = years.map(n => parseInt(n))
+      years.sort()
+
+      if (years.length) year = years[0].toString()
+    }
+
+    // if (year && parseInt(year) < 1995) year = undefined
+    return year.substr(0, 4)
+
+    //if (year) this.getBase().appendUniqueLine(lang, "wikipedia_year " + year.substr(0, 4))
+  }
+
   writeToDb() {
     const { pldbId, file } = this
     try {
@@ -113,17 +194,27 @@ class PLDBFileWithWikipedia {
       const { designer } = info
       const wpNode = this.file.getNode("wikipedia")
 
-      const designerString = Array.isArray(designer)
-        ? designer.map(name => name.trim()).join(" and ")
-        : designer
-            .split(",")
-            .map(name => name.trim())
-            .join(" and ")
-      if (designer) console.log(designer)
-      if (!file.has("creators")) file.set("creators", designerString)
+      try {
+        const designerString = Array.isArray(designer)
+          ? designer.map(name => name.trim()).join(" and ")
+          : designer
+              .split(",")
+              .map(name => name.trim())
+              .join(" and ")
+        if (designer) console.log(designer)
+        if (!file.has("creators")) file.set("creators", designerString)
+      } catch (err) {
+        console.error(`Error with creators for ${pldbId}`)
+      }
+
+      if (!file.has("appeared")) {
+        const year = this.getYear(object)
+        if (year) file.set("appeared", year)
+      }
+
       file.save()
 
-      // this.getYear(object)
+      //
       // this.extractProperty(object, "license")
       // this.extractProperty(object, "status")
       // this.getCount(object, "references")
@@ -148,6 +239,7 @@ class WikipediaImporter {
   }
 
   async updateOneCommand(file: PLDBFile) {
+    if (!file.has("wikipedia")) return
     const wp = new PLDBFileWithWikipedia(file)
     await wp.fetch()
     wp.writeToDb()

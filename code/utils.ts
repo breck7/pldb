@@ -137,7 +137,8 @@ const isLanguage = type => {
     binaryDataFormat: true,
     equation: true,
     interpreter: true,
-    computingMachine: true
+    computingMachine: true,
+    dataStructure: true
   }
 
   return nonLanguages[type] ? false : true

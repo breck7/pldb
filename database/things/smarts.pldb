@@ -1,5 +1,7 @@
 title SMILES arbitrary target specification
 type textDataFormat
+creators David Weininger
+reference https://pubs.acs.org/doi/10.1021/ci00057a005
 
 example
  [$([NH2][CX4]),$([NH]([CX4])[CX4]),$([NX3]([CX4])([CX4])[CX4])]
@@ -10,3 +12,5 @@ wikipedia https://en.wikipedia.org/wiki/SMILES_arbitrary_target_specification
  pageId 14837266
  dailyPageViews -1
  appeared 1962
+
+appeared 1987
