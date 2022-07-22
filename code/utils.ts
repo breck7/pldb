@@ -169,6 +169,12 @@ class PoliteCrawler {
   }
 }
 
+const _re = new RegExp(
+  "(^|[ \t\r\n])((ftp|http|https):(([A-Za-z0-9$_.+!*(),;/?:@&~=-])|%[A-Fa-f0-9]{2}){2,}(#([a-zA-Z0-9][a-zA-Z0-9$_.+!*(),;/?:@&~=%-]*))?([A-Za-z0-9$_+!*();/?:~-]))",
+  "g"
+)
+const getLinks = str => str.match(_re) || []
+
 const getPrimaryKey = node =>
   Utils.getFileName(Utils.removeFileExtension(node.getWord(0)))
 
@@ -348,5 +354,6 @@ export {
   benchmark,
   benchmarkResults,
   imemo,
-  listGetters
+  listGetters,
+  getLinks
 }
