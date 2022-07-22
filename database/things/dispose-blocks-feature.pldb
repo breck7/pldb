@@ -1,6 +1,6 @@
 title Dispose Blocks Pattern
 type feature
-psuedoExample with something: do something()
+psuedoExample with pldb: do computeRanks()
 description To make the safe use of the dispose pattern less verbose, several languages have some kind of built-in support for resources held and released in the same block of code.
 
 wikipedia https://en.wikipedia.org/wiki/Dispose_pattern

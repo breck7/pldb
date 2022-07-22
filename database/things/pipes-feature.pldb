@@ -1,6 +1,6 @@
 title Pipes
 type feature
-psuedoExample ls | wc
+psuedoExample ls pldb | wc
 description In software engineering, a pipeline consists of a chain of processing elements (processes, threads, coroutines, functions, etc.), arranged so that the output of each element is the input of the next; the name is by analogy to a physical pipeline.
 
 wikipedia https://en.wikipedia.org/wiki/Pipeline_(software)

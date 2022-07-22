@@ -1,6 +1,6 @@
 title Destructuring
 type feature
-psuedoExample {name, age} = person
+psuedoExample {title, rank} = pldbFile
 description A shorthand assignment method to extract fields from a composite structure.
 reference https://reasonml.github.io/docs/en/destructuring
 status active

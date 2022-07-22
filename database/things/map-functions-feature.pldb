@@ -1,6 +1,6 @@
 title Map Functions
 type feature
-psuedoExample [1,2].map(square)
+psuedoExample pldbFiles.map(downloadFilesFn)
 description Map is the name of a higher-order function that applies a given function to each element of a functor, e.g. a list, returning a list of results in the same order.
 
 wikipedia https://en.wikipedia.org/wiki/Map_(higher-order_function)
