@@ -26,6 +26,17 @@ class PLDBUpdater {
     this.update(id)
   }
 
+  appearedCommand() {
+    pldbBase.topLanguages
+      .filter(file => !file.has("appeared"))
+      .forEach(file => {
+        new GitHubImporter().runAll(file)
+        new WikipediaImporter().updateOneCommand(file)
+        const importer = new WhoIsImporter()
+        importer.updateOne(file)
+      })
+  }
+
   importFromCsvCommand(path: string) {
     const content = Disk.read(path)
     const rows = jtree.TreeNode.fromCsv(content)
