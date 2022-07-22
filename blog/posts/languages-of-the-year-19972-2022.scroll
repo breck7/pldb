@@ -1,0 +1,145 @@
+title Languages of the year: 1972 - 2022
+date 2022-07-21
+author https://github.com/breck7 Breck Yunits
+
+image langOfYearPast50.png
+
+aftertext
+ 1995 was an exceptional year for programming languages: Java, Javascript, PHP and Ruby were all created in 1995. I was curious what the top language was for each of the past 50 years.
+ link languages/java.html Java
+ link languages/javascript.html Javascript
+ link languages/php.html PHP
+ link languages/ruby.html Ruby
+
+endSnippet
+
+subsection Data used in this post:
+
+commaTable
+ id,title,appeared,rank,also
+ c,C⁺²,1972,3,Prolog Smalltalk
+ ml,ML,1973,156,
+ sql,SQL,1974,8,
+ yacc,Yacc,1975,137,
+ sas,SAS,1976,31,
+ awk,awk,1977,72,
+ tex,Tex,1978,88,
+ rexx,Rexx,1979,101,
+ ada,Ada,1980,44,
+ nial,Nial,1981,389,
+ postscript,PostScript,1982,75,
+ vhdl,VHDL,1983,96,
+ matlab,MATLAB⁺¹,1984,15,Objective-C
+ cpp,C++⁺¹,1985,7,ARM
+ postgresql,PostgreSQL⁺¹,1986,33,Erlang
+ perl,Perl,1987,13,
+ mathematica,Mathematica⁺¹,1988,39,Tcl
+ bash,Bash,1989,56,
+ haskell,Haskell,1990,23,
+ python,Python⁺²,1991,5,HTML Visual Basic
+ dylan,Dylan,1992,104,
+ r,R⁺¹,1993,12,Lua
+ racket,Racket,1994,60,
+ java,Java⁺⁴,1995,1,JavaScript PHP Ruby MySQL
+ xml,XML⁺²,1996,10,CSS OCaml
+ rebol,REBOL,1997,106,
+ actionscript,ActionScript,1998,151,
+ tls,TLS,1999,112,
+ csharp,C#,2000,16,
+ json,JSON,2001,22,
+ scratch,Scratch,2002,141,
+ groovy,Groovy,2003,51,
+ scala,Scala,2004,18,
+ f-sharp,F#,2005,55,
+ powershell,PowerShell,2006,41,
+ clojure,Clojure,2007,32,
+ nim,Nim,2008,70,
+ go,Go,2009,14,
+ rust,Rust,2010,27,
+ kotlin,Kotlin⁺¹,2011,43,Elixir
+ typescript,TypeScript⁺¹,2012,34,Julia
+ purescript,PureScript,2013,132,
+ swift,Swift,2014,19,
+ zig,Zig,2015,138,
+ reason,Reason,2016,103,
+ mdx,MDX,2017,360,
+ deno,Deno,2018,272,
+ v,V,2019,165,
+ bicep,Bicep,2020,616,
+ nimskull,Nimskull,2021,2034,
+
+comment
+ const { jtree } = require("jtree")
+ const { TreeNode } = jtree
+ const { Disk } = require("jtree/products/Disk.node.js")
+ 
+ const data = TreeNode.fromCsv(
+   Disk.read(__dirname + "/../pldb.pub/languages.csv")
+ )
+ 
+ const map = {}
+ 
+ data.forEach(row => {
+   row = row.toObject()
+   row.rank++
+   if (!row.appeared) return
+   const appeared = parseInt(row.appeared)
+   if (appeared < 2022 - 50) return
+   if (appeared === 2022) return
+   if (!map[appeared]) map[appeared] = row
+   else if (parseInt(row.rank) < parseInt(map[appeared].rank))
+     map[appeared] = row
+ })
+ 
+ const runnersUp = []
+ data.forEach(row => {
+   row = row.toObject()
+   const appeared = parseInt(row.appeared)
+   if (appeared < 2022 - 50) return
+   if (appeared === 2022) return
+   if (row.rank < 50 && map[appeared].id !== row.id) {
+     runnersUp.push(row)
+     if (!map[appeared].also) map[appeared].also = row.title
+     else map[appeared].also += " " + row.title
+     if (!map[appeared].alsoCount) map[appeared].alsoCount = 0
+     map[appeared].alsoCount++
+   }
+ })
+ 
+ Object.values(map).forEach(row => {
+   if (row.alsoCount) {
+     const num = { 1: "¹", 2: "²", 3: "³", 4: "⁴" }[row.alsoCount]
+     row.title += `⁺${num}`
+   }
+ })
+ 
+ Disk.write(
+   __dirname + "/last50years.csv",
+   new TreeNode(map).toDelimited(",", [
+     "id",
+     "title",
+     "appeared",
+     "rank",
+     "also"
+   ])
+ )
+ Disk.write(
+   __dirname + "/last50yearsRunnersUp.csv",
+   new TreeNode(runnersUp).toDelimited(",", ["id", "title", "appeared", "rank"])
+ )
+ 
+ runnersUp.forEach(row => (row.runnerUp = 1))
+ Object.values(map).forEach(row => (row.runnerUp = 0))
+ 
+ const combined = Object.values(map).concat(runnersUp)
+ 
+ Disk.write(
+   __dirname + "/last50yearsCombined.csv",
+   new TreeNode(combined).toDelimited(",", [
+     "id",
+     "title",
+     "appeared",
+     "rank",
+     "runnerUp"
+   ])
+ )
