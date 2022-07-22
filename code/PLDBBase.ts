@@ -85,6 +85,10 @@ class PLDBFile extends TreeBaseFile {
     return getPrimaryKey(this)
   }
 
+  get domainName() {
+    return this.get("domainName")
+  }
+
   get link() {
     return `<a href="${this.id}.html">${this.title}</a>`
   }
