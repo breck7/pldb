@@ -74,6 +74,7 @@ abstractAnnualPopulationCountNode
  abstract
 annualPopulationCountNode
  cells yearCell populationCountCell
+ uniqueFirstWord
 abstractBooleanNode
  cells keywordCell boolCell
  abstract
@@ -104,6 +105,7 @@ abstractCodeNode
  catchAllNodeType lineOfCodeNode
  extends abstractFactNode
  boolean includeChildrenInCsv false
+ baseNodeType blobNode
 lineOfCodeNode
  catchAllCellType codeCell
  catchAllNodeType lineOfCodeNode
@@ -115,6 +117,7 @@ blankLineNode
   stringTemplate 
  pattern ^$
  tags doNotSynthesize
+ boolean shouldSerialize false
 filepathNode
  crux filepath
  extends abstractFactNode

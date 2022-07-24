@@ -6,10 +6,12 @@ githubRepoNode
  single
  int sortIndex 490
  boolean padOnFormat true
+ contentKey url
  string sourceDomain github.com
 abstractGithubYearNode
  abstract
  extends abstractYearNode
+ single
 githubCreatedNode
  extends abstractGithubYearNode
  crux created
@@ -25,6 +27,7 @@ githubFirstCommitNode
 abstractGithubCountNode
  abstract
  extends abstractCountNode
+ single
 githubSubscribersNode
  extends abstractGithubCountNode
  crux subscribers
@@ -42,6 +45,7 @@ githubIssuesNode
  crux issues
  description How many isses on the repo?
 githubDescriptionNode
+ single
  extends descriptionNode
  crux description
  description Description of the repo on GitHub.

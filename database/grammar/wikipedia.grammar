@@ -7,6 +7,7 @@ wikipediaNode
  cells keywordCell urlCell
  string sourceDomain wikipedia.org
  single
+ contentKey url
 wikipediaExampleNode
  extends exampleNode
  description Example(s) of this language on the Wikipedia page.

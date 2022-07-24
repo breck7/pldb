@@ -15,6 +15,7 @@ domainNameNode
  cells keywordCell domainNameCell
  extends abstractFactNode
  single
+ contentKey name
  inScope domainRegisteredNode
 domainRegisteredNode
  extends abstractYearNode

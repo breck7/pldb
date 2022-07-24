@@ -50,6 +50,7 @@ class Builder extends AbstractBuilder {
     this.buildAcknowledgementsPage()
     this.buildBlog()
     this.buildCsvs()
+    this.buildJsonFile()
     this.buildSearchIndex()
     this.buildDatabasePages()
     console.log(benchmarkResults)
@@ -289,6 +290,13 @@ ${text}`
       websiteFolder + "/languages.csv",
       new TreeNode(objects.filter(obj => isLanguage(obj.type))).toCsv()
     )
+  }
+
+  buildJsonFile() {
+    pldbBase.loadFolder()
+    const str = JSON.stringify(pldbBase.typedMapShort, null, 2)
+    Disk.write(websiteFolder + "/pldb.json", str)
+    Disk.write(__dirname + "/code/package/pldb.json", str)
   }
 
   buildTypesFile() {

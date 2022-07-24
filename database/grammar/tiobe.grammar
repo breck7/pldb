@@ -5,8 +5,10 @@ tiobeNode
  inScope tiobeCurrentRankNode
  string sourceDomain tiobe.com
  catchAllCellType externalGuidCell
+ contentKey id
  single
 tiobeCurrentRankNode
  description What is the current Tiobe rank of this language?
  extends abstractIntNode
  crux currentRank
+ single

@@ -21,6 +21,8 @@ featureExampleCodeNode
  baseNodeType blobNode
 abstractFeatureNode
  cells keywordCell boolCell
+ contentKey value
+ childrenKey example
  boolean includeChildrenInCsv false
  cruxFromId
  abstract

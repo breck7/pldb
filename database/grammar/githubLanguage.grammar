@@ -4,11 +4,13 @@ githubLanguageNode
  inScope githubLanguageFileExtensionsNode githubTrendingProjectsNode githubTrendingProjectsCountNode
  cruxFromId
  int sortIndex 491
+ contentKey id
  string sourceDomain github.com
 githubLanguageFileExtensionsNode
  extends fileExtensionsNode
  description What file extensions does GitHub use for this language type?
  crux fileExtensions
+ single
 githubTrendingProjectsNode
  todo Figure out typings.
  baseNodeType blobNode
@@ -16,11 +18,13 @@ githubTrendingProjectsNode
  boolean fromCrawler true
  description Projects in this language trending on GitHub.
  crux trendingProjects
+ single
  example
   author name avatar url language languageColor stars forks currentPeriodStars description
   PavelDoGreat WebGL-Fluid-Simulation https://github.com/PavelDoGreat.png https://github.com/PavelDoGreat/WebGL-Fluid-Simulation JavaScript #f1e05a 6010 473 2246 "Play with fluids in your browser (works even on mobile)"
 githubTrendingProjectsCountNode
  boolean fromCrawler true
  extends abstractCountNode
+ single
  crux trendingProjectsCount
  description How many trending repos for this language does GitHub report?

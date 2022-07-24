@@ -3,6 +3,7 @@ linguistGrammarRepoNode
  extends abstractSectionNode
  cells keywordCell urlCell
  cruxFromId
+ contentKey url
  int sortIndex 10
  single
  inScope linguistExampleNode linguistCommitsNode linguistFirstCommitNode linguistLastCommitNode linguistSampleCountNode linguistCommitterCountNode
