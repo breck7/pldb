@@ -13,7 +13,6 @@ example
 wikipedia https://en.wikipedia.org/wiki/undefined
  summary ProbeVue is IBM's implementation of a lightweight dynamic tracing environment introduced in AIX version 6.1. ProbeVue provides the ability to probe running processes in order to provide statistical analysis as well as retrieve data from the probed process. The dynamic nature of ProbeVue allows it to be used as a global system performance tool while retaining the ability to drill into very specific events on a single process or thread. Because modifications are not required of a probed process or system and the lightweight design of ProbeVue as a tracing tool, it is suitable for use in a production environment where previous tracing tools would have been performance prohibitive.
 
-status historical
 fileType text
 cheatSheetUrl http://www.tablespace.net/quicksheet/vue-quicksheet.pdf
 centralPackageRepositoryCount 0

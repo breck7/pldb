@@ -18,7 +18,6 @@ helloWorldCollection Asterisk dialplan
  exten => s,1,NoOp(Hello World)
 
 website https://wiki.asterisk.org/wiki/display/AST/Dialplan
-status historical
 fileType text
 isOpenSource true
 

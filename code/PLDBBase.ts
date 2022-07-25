@@ -308,6 +308,14 @@ class PLDBFile extends TreeBaseFile {
       .map(word => word.word)
   }
 
+  get lastActivity(): number {
+    return lodash.max(
+      this.parsed
+        .findAllWordsWithCellType("yearCell")
+        .map(word => parseInt(word.word))
+    )
+  }
+
   getAll(keyword) {
     return this.findNodes(keyword).map(i => i.getContent())
   }
@@ -670,6 +678,7 @@ class PLDBBaseFolder extends TreeBaseFolder {
     objects.forEach(obj => {
       obj.rank = ranks[obj.id].index
       obj.exampleCount = exampleCounts.get(obj.id)
+      obj.lastActivity = this.getFile(obj.id).lastActivity
     })
 
     return lodash.sortBy(objects, "rank")

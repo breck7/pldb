@@ -1,11 +1,3 @@
-statusCell
- enum historical active
- highlightScope constant.language
-statusNode
- cells keywordCell statusCell
- extends abstractFactNode
- cruxFromId
- single
 creatorNameCell
  extends stringCell
 creatorsNode

@@ -2,5 +2,4 @@ title Typed Holes
 type feature
 psuedoExample 2 + _ => 2 + [int|float]
 reference https://wiki.haskell.org/GHC/Typed_holes
-status active
 featureKeyword hasTypedHoles

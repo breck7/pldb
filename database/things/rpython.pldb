@@ -5,6 +5,5 @@ type pl
 description RPython is a restricted subset of Python that is amenable to static analysis. RPython is a proper subset of Python, is statically typed, and does not allow dynamic modification of class or method definitions; however, it can still take advantage of Python features such as mixins and first-class methods and classes.
 website https://rpython.readthedocs.io/en/latest/rpython.html
 reference https://dl.acm.org/citation.cfm?id=1297091
-status historical
 fileType text
 centralPackageRepositoryCount 0

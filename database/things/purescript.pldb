@@ -89,7 +89,6 @@ linguistGrammarRepo https://github.com/purescript-contrib/atom-language-purescri
     (<+>) :: forall b c. a b c -> a b c -> a b c
 
 website http://functorial.com/purescript
-status active
 
 tryItOnline purescript
 

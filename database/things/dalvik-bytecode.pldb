@@ -4,6 +4,5 @@ type bytecode
 
 description Dalvik bytecode format is still used as a distribution format, but no longer at runtime in newer Android versions
 reference https://source.android.com/devices/tech/dalvik/dalvik-bytecode.html
-status historical
 fileExtensions dex
 centralPackageRepositoryCount 0

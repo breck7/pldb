@@ -95,7 +95,6 @@ linguistGrammarRepo https://github.com/Alhadis/language-grammars
    * so that if will be able to terminate to match the current token (e.g. non-enclosed string) */
   #define YYFILL(n) { if (YYCURSOR > YYLIMIT) return 0
 
-status active
 country United States
 fileType text
 

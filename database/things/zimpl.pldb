@@ -31,7 +31,6 @@ example
     card(TABU[i,j]) - card(TABU[i,j]) * x[i,j] >= sum <m,n> in TABU[i,j] : x[m,n];
 
 website https://zimpl.zib.de/
-status active
 fileType text
 centralPackageRepositoryCount 0
 lineCommentToken #

@@ -3,5 +3,4 @@ type feature
 psuedoExample say(message = "Hello PLDB")
 description Syntactic sugar for setting values for parameters if not defined.
 reference https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/Default_parameters
-status active
 featureKeyword hasDefaultParameters

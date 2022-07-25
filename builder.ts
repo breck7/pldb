@@ -21,6 +21,8 @@ const websiteFolder = __dirname + "/pldb.pub"
 const databaseFolderWhenPublishedToWebsite = websiteFolder + "/languages" // Todo: eventually redirect away from /languages?
 const settingsFile = Disk.read(__dirname + "/blog/scroll.settings")
 
+pldbBase.loadFolder()
+
 import {
   replaceNext,
   isLanguage,
@@ -135,7 +137,6 @@ class Builder extends AbstractBuilder {
     this.buildGrammar()
     Disk.mkdir(databaseFolderWhenPublishedToWebsite)
 
-    pldbBase.loadFolder()
     pldbBase.forEach(file => {
       const path = `${databaseFolderWhenPublishedToWebsite}/${file.id}.scroll`
 
@@ -167,7 +168,6 @@ class Builder extends AbstractBuilder {
 
   @benchmark
   buildAcknowledgementsPage() {
-    pldbBase.loadFolder()
     const sources = Array.from(
       new Set(
         Disk.read(pldbBase.dir + "pldb.grammar")
@@ -266,7 +266,6 @@ ${text}`
 
   @benchmark
   buildSearchIndex() {
-    pldbBase.loadFolder()
     const objects = pldbBase.toObjectsForCsv().map(object => {
       return {
         label: object.title,
@@ -282,7 +281,6 @@ ${text}`
 
   @benchmark
   buildCsvs() {
-    pldbBase.loadFolder()
     const objects = pldbBase.toObjectsForCsv()
 
     Disk.write(websiteFolder + "/pldb.csv", new TreeNode(objects).toCsv())
@@ -293,7 +291,6 @@ ${text}`
   }
 
   buildJsonFile() {
-    pldbBase.loadFolder()
     const str = JSON.stringify(pldbBase.typedMapShort, null, 2)
     Disk.write(websiteFolder + "/pldb.json", str)
     Disk.write(__dirname + "/code/package/pldb.json", str)
@@ -304,7 +301,6 @@ ${text}`
   }
 
   formatDatabase() {
-    pldbBase.loadFolder()
     pldbBase.forEach(file => file.formatAndSave())
   }
 
@@ -316,13 +312,18 @@ ${text}`
   }
 
   startServer(port = 4444) {
-    pldbBase.loadFolder()
     pldbBase.startListeningForFileChanges()
     new (<any>TreeBaseServer)(pldbBase).listen(port)
   }
 
+  do() {
+    pldbBase.forEach(file => {
+      // file.delete("status")
+      // file.save()
+    })
+  }
+
   generateWorksheets() {
-    pldbBase.loadFolder()
     const { topFeatures } = pldbBase
 
     pldbBase.topLanguages

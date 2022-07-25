@@ -52,7 +52,6 @@ linguistGrammarRepo https://github.com/cdibbs/language-jison
   .                           {/* ignore bad characters */}
   <<EOF>>                     {return 'EOF';}
 
-status active
 fileType text
 isOpenSource true
 centralPackageRepositoryCount 0

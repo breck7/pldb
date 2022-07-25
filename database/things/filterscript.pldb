@@ -26,6 +26,5 @@ example
  int __attribute__((kernel)) everything(uint32_t ain, uint32_t x, uint32_t y) {
    return 0;
  }
-status historical
 fileType text
 centralPackageRepositoryCount 0

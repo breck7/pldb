@@ -3,5 +3,4 @@ type feature
 psuedoExample shout(implicit message: string)
 description Arguments that are not passed by the function caller, but are found in the function caller's scope.
 reference https://docs.scala-lang.org/tour/implicit-parameters.html
-status active
 featureKeyword hasImplicitArguments

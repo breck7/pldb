@@ -5,7 +5,6 @@ type binaryDataFormat
 description Apache Arrow is a cross-language development platform for in-memory data. It specifies a standardized language-independent columnar memory format for flat and hierarchical data, organized for efficient analytic operations on modern hardware. It also provides computational libraries and zero-copy streaming messaging and interprocess communication. Languages currently supported include C, C++, Java, JavaScript, Python, and Ruby.
 website https://arrow.apache.org/
 aka feather
-status active
 fileType binary
 centralPackageRepositoryCount 0
 domainName arrow.apache.org
