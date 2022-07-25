@@ -10,6 +10,8 @@ features
   ; A comment
  hasSemanticIndentation false
 
+lineCommentToken ;
+
 wikipedia https://en.wikipedia.org/wiki/EuLisp
  example
   (defmodule hanoi
@@ -101,8 +103,6 @@ wikipedia https://en.wikipedia.org/wiki/EuLisp
  dailyPageViews 14
  appeared 1990
 
-
 hopl 1139
 
 centralPackageRepositoryCount 0
-lineCommentToken ;

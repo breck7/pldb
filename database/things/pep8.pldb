@@ -1,6 +1,7 @@
 title Pep8
 appeared 2009
 type assembly
+reference http://computersystemsbook.com/4th-edition/pep8/
 
 example
   BR main
@@ -19,10 +20,6 @@ example
   even_msg: .ASCII "The number is: Even\x00"
   .END
 
-githubLanguage Pep8
- fileExtensions pep
- trendingProjectsCount 0
-
 githubRepo https://github.com/StanWarford/pep8
  firstCommit 2009
  stars 20
@@ -32,6 +29,10 @@ githubRepo https://github.com/StanWarford/pep8
  updated 2022
  description Pep/8 assembler and simulator for the textbook Computer Systems, J. Stanley Warford, Fourth edition
  issues 0
+
+githubLanguage Pep8
+ fileExtensions pep
+ trendingProjectsCount 0
 
 linguistGrammarRepo https://github.com/R4PaSs/Sublime-Pep8
  firstCommit 2015
@@ -65,7 +66,6 @@ linguistGrammarRepo https://github.com/R4PaSs/Sublime-Pep8
   	.END
   
 
-reference http://computersystemsbook.com/4th-edition/pep8/
 fileType text
 isOpenSource true
 centralPackageRepositoryCount 0

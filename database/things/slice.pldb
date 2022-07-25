@@ -1,6 +1,20 @@
 title Slice
 appeared 2011
 type pl
+reference https://zeroc.com/products/ice
+
+features
+ hasLineComments true
+  // A comment
+ hasComments true
+  // A comment
+ hasMultiLineComments true
+  /* A comment
+  */
+ hasSemanticIndentation false
+
+lineCommentToken //
+multiLineCommentTokens /* */
 
 example
  // YellowPages.ice
@@ -83,17 +97,5 @@ linguistGrammarRepo https://github.com/zeroc-ice/vscode-slice
       }
   }
 
-reference https://zeroc.com/products/ice
 fileType text
 centralPackageRepositoryCount 0
-lineCommentToken //
-features
- hasLineComments true
-  // A comment
- hasComments true
-  // A comment
- hasMultiLineComments true
-  /* A comment
-  */
- hasSemanticIndentation false
-multiLineCommentTokens /* */

@@ -1,6 +1,23 @@
 title Protocol Buffers
 appeared 2008
 type idl
+website https://developers.google.com/protocol-buffers/
+corporateDevelopers Google
+
+features
+ hasLineComments true
+  // A comment
+ hasComments true
+  // A comment
+ hasSemanticIndentation false
+ hasStrings true
+ hasMultiLineComments true
+  /* A comment
+  */
+
+lineCommentToken //
+multiLineCommentTokens /* */
+keywords syntax import weak public package option repeated oneof map reserved to max enum message service rpc stream returns package optional true false
 
 example
  message Person {
@@ -49,6 +66,11 @@ githubLanguage Protocol Buffer
  fileExtensions proto
  trendingProjectsCount 0
 
+antlr https://github.com/antlr/grammars-v4/tree/master/protobuf3
+monaco protobuf
+pygmentsHighlighter Protocol Buffer
+ filename dsls.py
+ fileExtensions proto
 linguistGrammarRepo https://github.com/michaeledgar/protobuf-tmbundle
  firstCommit 2010
  lastCommit 2018
@@ -85,28 +107,6 @@ linguistGrammarRepo https://github.com/michaeledgar/protobuf-tmbundle
   }
   
 
-website https://developers.google.com/protocol-buffers/
 fileType text
 isOpenSource true
-
-antlr https://github.com/antlr/grammars-v4/tree/master/protobuf3
-
-corporateDevelopers Google
 centralPackageRepositoryCount 0
-lineCommentToken //
-features
- hasLineComments true
-  // A comment
- hasComments true
-  // A comment
- hasSemanticIndentation false
- hasStrings true
- hasMultiLineComments true
-  /* A comment
-  */
-pygmentsHighlighter Protocol Buffer
- filename dsls.py
- fileExtensions proto
-monaco protobuf
-multiLineCommentTokens /* */
-keywords syntax import weak public package option repeated oneof map reserved to max enum message service rpc stream returns package optional true false

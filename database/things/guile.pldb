@@ -1,14 +1,25 @@
 title Guile
 appeared 1993
 type pl
+creators Aubrey Jaffer and Tom Lord and Miles Bader
+description Guile is designed to help programmers create flexible applications that can be extended by users or other programmers with plug-ins, modules, or scripts. Guile is an implementation of the Scheme programming language, supporting the Revised5 and most of the Revised6 language reports, as well as many SRFIs. It also comes with a library of modules that offer additional features, like an HTTP server and client, XML parsing, and object-oriented programming.
+website https://www.gnu.org/software/guile/
+standsFor GNU Ubiquitous Intelligent Language for Extensions
+
+features
+ hasLineComments true
+  ; A comment
+ hasComments true
+  ; A comment
+ hasSemanticIndentation false
+
+lineCommentToken ;
 
 example
  ;;; Hello world program
  (define name "World")
  (display (string-append "Hello " name "!"))
  (newline)
-
-description Guile is designed to help programmers create flexible applications that can be extended by users or other programmers with plug-ins, modules, or scripts. Guile is an implementation of the Scheme programming language, supporting the Revised5 and most of the Revised6 language reports, as well as many SRFIs. It also comes with a library of modules that offer additional features, like an HTTP server and client, XML parsing, and object-oriented programming.
 
 wikipedia https://en.wikipedia.org/wiki/GNU_Guile
  related linux scheme lilypond gdb c s-expressions xml emacs-editor emacs-lisp scm tcl
@@ -20,17 +31,7 @@ wikipedia https://en.wikipedia.org/wiki/GNU_Guile
  dailyPageViews 71
  appeared 1993
 
-website https://www.gnu.org/software/guile/
-standsFor GNU Ubiquitous Intelligent Language for Extensions
+jupyterKernel https://github.com/jerry40/guile-kernel
 fileType text
 isOpenSource true
-jupyterKernel https://github.com/jerry40/guile-kernel
 centralPackageRepositoryCount 0
-creators Aubrey Jaffer and Tom Lord and Miles Bader
-lineCommentToken ;
-features
- hasLineComments true
-  ; A comment
- hasComments true
-  ; A comment
- hasSemanticIndentation false

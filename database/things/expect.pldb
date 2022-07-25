@@ -1,6 +1,16 @@
 title Expect
 appeared 1990
 type pl
+website http://core.tcl.tk/expect/index
+
+features
+ hasLineComments true
+  # A comment
+ hasComments true
+  # A comment
+ hasSemanticIndentation false
+
+lineCommentToken #
 
 example
  # Assume $remote_server, $my_user_id, $my_password, and $my_command were read in earlier
@@ -50,18 +60,9 @@ wikipedia https://en.wikipedia.org/wiki/Expect
  dailyPageViews 198
  appeared 1990
 
-website http://core.tcl.tk/expect/index
+hopl 1622
+
 fileType text
 wordRank 2323
 isOpenSource true
-
-hopl 1622
-
 centralPackageRepositoryCount 0
-lineCommentToken #
-features
- hasLineComments true
-  # A comment
- hasComments true
-  # A comment
- hasSemanticIndentation false

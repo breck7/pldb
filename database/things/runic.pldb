@@ -1,6 +1,9 @@
 title runic
 appeared 2017
 type template
+description Runic is a first order templating language operating on arrays of strings.
+website https://wiki.xxiivv.com/#runic
+domainName wiki.xxiivv.com
 
 example
  * Header
@@ -12,7 +15,3 @@ example
  # -- CODE BLOCK
  > -- HTML BLOCK
  λ -- LAIN BLOCK
-
-description Runic is a first order templating language operating on arrays of strings.
-website https://wiki.xxiivv.com/#runic
-domainName wiki.xxiivv.com

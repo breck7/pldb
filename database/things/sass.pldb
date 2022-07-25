@@ -1,11 +1,18 @@
 title Sass
 appeared 2006
 type stylesheetLanguage
+creators Hampton Catlin
+website http://sass-lang.com/
+standsFor syntactically awesome stylesheets
+domainName sass-lang.com
+ registered 2009
 
 features
  hasSemanticIndentation true
  hasStrings true
   "Hello world"
+
+stringToken "
 
 wikipedia https://en.wikipedia.org/wiki/Sass_(stylesheet_language)
  example
@@ -37,6 +44,10 @@ githubLanguage Sass
  fileExtensions sass
  trendingProjectsCount 0
 
+codeMirror sass
+pygmentsHighlighter Sass
+ filename css.py
+ fileExtensions sass
 linguistGrammarRepo https://github.com/nathos/sass-textmate-bundle
  firstCommit 2008
  lastCommit 2017
@@ -57,26 +68,6 @@ linguistGrammarRepo https://github.com/nathos/sass-textmate-bundle
     border-color: $blue
   
 
-website http://sass-lang.com/
-standsFor syntactically awesome stylesheets
-
-twitter sasscss
-
-fileType text
-isOpenSource true
-
-codeMirror sass
-
-centralPackageRepositoryCount 0
-rijuRepl https://riju.codes/sass
- example
-  body:before
-    content: "Hello, world!"
-  
-creators Hampton Catlin
-pygmentsHighlighter Sass
- filename css.py
- fileExtensions sass
 leachim6 Sass
  filepath s/Sass.sass
  fileExtensions sass
@@ -84,6 +75,14 @@ leachim6 Sass
   body::before
   	content: "Hello World"
   
-domainName sass-lang.com
- registered 2009
-stringToken "
+
+rijuRepl https://riju.codes/sass
+ example
+  body:before
+    content: "Hello, world!"
+  
+
+twitter sasscss
+fileType text
+isOpenSource true
+centralPackageRepositoryCount 0

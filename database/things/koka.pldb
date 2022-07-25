@@ -2,10 +2,32 @@ title Koka
 appeared 2012
 type pl
 creators Daan Leijen
-
 description A strongly typed functional-style language with effect types and handlers.
+website https://www.microsoft.com/en-us/research/project/koka/?from=http%3A%2F%2Fresearch.microsoft.com%2Fen-us%2Fprojects%2Fkoka
+webRepl https://rise4fun.com/koka/
+reference https://koka-lang.github.io/koka/doc/book.html
+corporateDevelopers Microsoft
 
 compilesTo c
+writtenIn haskell
+
+features
+ hasPrintDebugging true
+ hasLineComments true
+  // A comment
+ hasComments true
+  // A comment
+ hasSemanticIndentation false
+
+lineCommentToken //
+printToken println
+
+example
+ fun hello-ten()
+   var i := 0
+   while { i < 10 }
+     println("hello")
+     i := i + 1
 
 githubRepo https://github.com/koka-lang/koka
  stars 2190
@@ -17,34 +39,12 @@ githubRepo https://github.com/koka-lang/koka
  description Koka language compiler and interpreter
  issues 123
 
-website https://www.microsoft.com/en-us/research/project/koka/?from=http%3A%2F%2Fresearch.microsoft.com%2Fen-us%2Fprojects%2Fkoka
-
-reference https://koka-lang.github.io/koka/doc/book.html
+pygmentsHighlighter Koka
+ filename haskell.py
+ fileExtensions kk kki
 
 tryItOnline koka
 
 fileType text
 isOpenSource true
-webRepl https://rise4fun.com/koka/
-corporateDevelopers Microsoft
-writtenIn haskell
 centralPackageRepositoryCount 0
-pygmentsHighlighter Koka
- filename haskell.py
- fileExtensions kk kki
-
-lineCommentToken //
-example
- fun hello-ten()
-   var i := 0
-   while { i < 10 }
-     println("hello")
-     i := i + 1
-printToken println
-features
- hasPrintDebugging true
- hasLineComments true
-  // A comment
- hasComments true
-  // A comment
- hasSemanticIndentation false

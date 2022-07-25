@@ -1,6 +1,16 @@
 title Lite-C
 appeared 2007
 type pl
+website http://www.3dgamestudio.de/litec.php
+
+features
+ hasLineComments true
+  // A comment
+ hasComments true
+  // A comment
+ hasSemanticIndentation false
+
+lineCommentToken //
 
 wikipedia https://en.wikipedia.org/wiki/Lite-C
  example
@@ -22,14 +32,6 @@ wikipedia https://en.wikipedia.org/wiki/Lite-C
  dailyPageViews 13
  appeared 2007
 
-website http://www.3dgamestudio.de/litec.php
 fileType text
 isOpenSource true
 centralPackageRepositoryCount 0
-lineCommentToken //
-features
- hasLineComments true
-  // A comment
- hasComments true
-  // A comment
- hasSemanticIndentation false

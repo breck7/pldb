@@ -1,6 +1,7 @@
 title rapidgen-rpl
 appeared 1983
 type pl
+description RapidGen translates the XML into a concise and transparent format of decision tables for decision logic programming —RPL— a rich, purpose-built language developed by the company. Supports high speed execution of decision models. Is capable of processing large data volumes. Preserves traceability to the original DMN model.
 
 example
  Days_leave <- 22
@@ -12,5 +13,3 @@ example
  Days_leave + 5   X X X . . .
  Days_leave + 2   . . . X X .
  Days_leave + 3   . X X . . .
-
-description RapidGen translates the XML into a concise and transparent format of decision tables for decision logic programming —RPL— a rich, purpose-built language developed by the company. Supports high speed execution of decision models. Is capable of processing large data volumes. Preserves traceability to the original DMN model.

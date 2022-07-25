@@ -1,6 +1,23 @@
 title odin
 appeared 2016
 type pl
+website https://odin-lang.org
+domainName odin-lang.org
+ registered 2017
+
+features
+ hasLineComments true
+  // A comment
+ hasComments true
+  // A comment
+ hasPrintDebugging true
+ hasSemanticIndentation false
+ hasStrings true
+  "Hello world"
+
+lineCommentToken //
+printToken fmt.println
+stringToken "
 
 example
  package main
@@ -36,7 +53,23 @@ githubRepo https://github.com/odin-lang/Odin
  description Odin Programming Language
  issues 217
 
-website https://odin-lang.org
+pygmentsHighlighter ODIN
+ filename archetype.py
+ fileExtensions odin
+
+leachim6 Odin
+ filepath o/Odin.odin
+ fileExtensions odin
+ example
+  package main
+  
+  import "core:fmt"
+  
+  main :: proc() {
+    fmt.println("Hello World");
+  }
+  
+
 rijuRepl https://riju.codes/odin
  example
   package main
@@ -51,32 +84,3 @@ rijuRepl https://riju.codes/odin
  fileExtensions odin
  website https://odin-lang.org/
  githubRepo https://github.com/odin-lang/Odin
-lineCommentToken //
-features
- hasLineComments true
-  // A comment
- hasComments true
-  // A comment
- hasPrintDebugging true
- hasSemanticIndentation false
- hasStrings true
-  "Hello world"
-pygmentsHighlighter ODIN
- filename archetype.py
- fileExtensions odin
-leachim6 Odin
- filepath o/Odin.odin
- fileExtensions odin
- example
-  package main
-  
-  import "core:fmt"
-  
-  main :: proc() {
-    fmt.println("Hello World");
-  }
-  
-printToken fmt.println
-domainName odin-lang.org
- registered 2017
-stringToken "

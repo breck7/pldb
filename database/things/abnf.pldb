@@ -1,6 +1,16 @@
 title Augmented Backus-Naur Form
 appeared 2008
 type grammarLanguage
+standsFor Augmented Backus-Naur Form
+
+features
+ hasLineComments true
+  ; A comment
+ hasComments true
+  ; A comment
+ hasSemanticIndentation false
+
+lineCommentToken ;
 
 wikipedia https://en.wikipedia.org/wiki/Augmented_Backus–Naur_form
  example
@@ -35,6 +45,10 @@ githubLanguage ABNF
  fileExtensions abnf
  trendingProjectsCount 0
 
+antlr https://github.com/antlr/grammars-v4/tree/master/abnf
+pygmentsHighlighter ABNF
+ filename grammar_notation.py
+ fileExtensions abnf
 linguistGrammarRepo https://github.com/sanssecours/ABNF.tmbundle
  firstCommit 2016
  lastCommit 2016
@@ -234,19 +248,5 @@ linguistGrammarRepo https://github.com/sanssecours/ABNF.tmbundle
   ; HEXDIG = DIGIT / "A" / "B" / "C" / "D" / "E" / "F"
   
 
-standsFor Augmented Backus-Naur Form
 fileType text
-
-antlr https://github.com/antlr/grammars-v4/tree/master/abnf
-
 centralPackageRepositoryCount 0
-lineCommentToken ;
-features
- hasLineComments true
-  ; A comment
- hasComments true
-  ; A comment
- hasSemanticIndentation false
-pygmentsHighlighter ABNF
- filename grammar_notation.py
- fileExtensions abnf

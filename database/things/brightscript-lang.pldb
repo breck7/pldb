@@ -1,6 +1,8 @@
 title BrightScript
 appeared 2008
 type pl
+description BrightScript is a powerful scripting language for building media and networked applications for embedded devices. This language features integrated support for a lightweight library of BrightScript objects, which are used to expose the API of the platform (device) that is running BrightScript. The BrightScript language connects generalized script functionality with underlying components for networking, media playback, UI screens, and interactive interfaces; BrightScript is optimized for generating user-friendly applications with minimal programmer effort. Now part of Roku.
+website http://docs.brightsign.biz/display/DOC/BrightScript
 
 example
  REM
@@ -24,6 +26,4 @@ example
      End While
  End Sub
 
-description BrightScript is a powerful scripting language for building media and networked applications for embedded devices. This language features integrated support for a lightweight library of BrightScript objects, which are used to expose the API of the platform (device) that is running BrightScript. The BrightScript language connects generalized script functionality with underlying components for networking, media playback, UI screens, and interactive interfaces; BrightScript is optimized for generating user-friendly applications with minimal programmer effort. Now part of Roku.
-website http://docs.brightsign.biz/display/DOC/BrightScript
 centralPackageRepositoryCount 0

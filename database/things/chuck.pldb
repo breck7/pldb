@@ -2,12 +2,18 @@ title Ch
 appeared 2003
 type pl
 creators Ge Wang
+website http://chuck.cs.princeton.edu
+domainName chuck.cs.princeton.edu
+
+visualParadigm false
 
 features
  hasComments true
  hasLineComments true
   // A comment
  hasSemanticIndentation false
+
+lineCommentToken //
 
 wikipedia https://en.wikipedia.org/wiki/ChucK
  example
@@ -47,15 +53,10 @@ linguistGrammarRepo https://github.com/textmate/java.tmbundle
  committerCount 21
  commitCount 283
 
-website http://chuck.cs.princeton.edu
-fileType text
-wordRank 6367
+rosettaCode ChucK
 
 tiobe Ch
 
-rosettaCode ChucK
-
-visualParadigm false
+fileType text
+wordRank 6367
 centralPackageRepositoryCount 0
-lineCommentToken //
-domainName chuck.cs.princeton.edu

@@ -1,6 +1,7 @@
 title Zip file format
 appeared 1989
 type binaryDataFormat
+fileExtensions zip
 
 wikipedia https://en.wikipedia.org/wiki/Zip_(file_format)
  summary ZIP is an archive file format that supports lossless data compression. A ZIP file may contain one or more files or directories that may have been compressed. The ZIP file format permits a number of compression algorithms, though DEFLATE is the most common. This format was originally created in 1989 and was first implemented in PKWARE, Inc.'s PKZIP utility, as a replacement for the previous ARC compression format by Thom Henderson. The ZIP format was then quickly supported by many software utilities other than PKZIP. Microsoft has included built-in ZIP support (under the name "compressed folders") in versions of Microsoft Windows since 1998. Apple has included built-in ZIP support in Mac OS X 10.3 (via BOMArchiveHelper, now Archive Utility) and later. Most free operating systems have built in support for ZIP in similar manners to Windows and Mac OS X. ZIP files generally use the file extensions .zip or .ZIP and the MIME media type application/zip. ZIP is used as a base file format by many programs, usually under a different name. When navigating a file system via a user interface, graphical icons representing ZIP files often appear as a document or other object prominently featuring a zipper.
@@ -8,5 +9,3 @@ wikipedia https://en.wikipedia.org/wiki/Zip_(file_format)
  pageId 188488
  dailyPageViews 906
  appeared 1989
-
-fileExtensions zip

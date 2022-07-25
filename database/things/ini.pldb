@@ -2,18 +2,6 @@ title Ini
 appeared 1987
 type dataNotation
 
-example
- ; last modified 1 April 2001 by John Doe
- [owner]
- name = John Doe
- organization = Acme Widgets Inc.
- 
- [database]
- ; use IP address in case network name resolution is not working
- server = 192.0.2.62     
- port = 143
- file = "payroll.dat"
-
 features
  hasComments true
   # a '#' or ';' character indicates
@@ -32,6 +20,21 @@ features
  hasSemanticIndentation false
  hasStrings true
 
+lineCommentToken #
+lineCommentToken ;
+
+example
+ ; last modified 1 April 2001 by John Doe
+ [owner]
+ name = John Doe
+ organization = Acme Widgets Inc.
+ 
+ [database]
+ ; use IP address in case network name resolution is not working
+ server = 192.0.2.62     
+ port = 143
+ file = "payroll.dat"
+
 wikipedia https://en.wikipedia.org/wiki/INI_file
  example
   GetPrivateProfileString("owner", "name", ... , "c:\\programs\\oldprogram\\dbsettings.ini");
@@ -48,6 +51,11 @@ githubLanguage INI
  fileExtensions ini cfg lektorproject prefs pro properties
  trendingProjectsCount 0
 
+antlr https://github.com/afucher/yaip
+monaco ini
+pygmentsHighlighter INI
+ filename configs.py
+ fileExtensions ini cfg inf .editorconfig service socket device mount automount swap target path timer slice scope
 linguistGrammarRepo https://github.com/textmate/ini.tmbundle
  firstCommit 2005
  lastCommit 2013
@@ -63,14 +71,4 @@ linguistGrammarRepo https://github.com/textmate/ini.tmbundle
   url=http://www.papert.org/
 
 fileType text
-
-antlr https://github.com/afucher/yaip
-
-lineCommentToken #
-lineCommentToken ;
-
 centralPackageRepositoryCount 0
-pygmentsHighlighter INI
- filename configs.py
- fileExtensions ini cfg inf .editorconfig service socket device mount automount swap target path timer slice scope
-monaco ini

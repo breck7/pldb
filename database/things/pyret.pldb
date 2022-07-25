@@ -1,6 +1,19 @@
 title pyret
 appeared 2011
 type pl
+creators Joe Gibbs Politz
+description Pyret is a programming language designed to serve as an outstanding choice for programming education while exploring the confluence of scripting and functional programming. It's under active design and development, and free to use or modify.
+website https://www.pyret.org/
+domainName pyret.org
+ registered 2011
+
+features
+ hasPrintDebugging true
+ hasStrings true
+  'Hello world'
+
+printToken print
+stringToken '
 
 example
  data BinTree:
@@ -20,8 +33,6 @@ example
    tree-sum(node(5, node4, leaf)) is 9
  end
 
-description Pyret is a programming language designed to serve as an outstanding choice for programming education while exploring the confluence of scripting and functional programming. It's under active design and development, and free to use or modify.
-
 githubRepo https://github.com/brownplt/pyret-lang
  firstCommit 2012
  stars 916
@@ -32,19 +43,9 @@ githubRepo https://github.com/brownplt/pyret-lang
  description The Pyret language.
  issues 432
 
-website https://www.pyret.org/
-creators Joe Gibbs Politz
 leachim6 Pyret
  filepath p/Pyret.arr
  fileExtensions arr
  example
   print('Hello World')
   
-printToken print
-features
- hasPrintDebugging true
- hasStrings true
-  'Hello world'
-domainName pyret.org
- registered 2011
-stringToken '

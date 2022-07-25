@@ -1,15 +1,17 @@
 title Afnix
 type pl
-
 reference http://freshmeat.sourceforge.net/projects/afnix
 
-hopl 8506
+features
+ hasPrintDebugging true
 
-centralPackageRepositoryCount 0
+printToken println
+
 rijuRepl https://riju.codes/afnix
  example
   println "Hello, world!"
   
-printToken println
-features
- hasPrintDebugging true
+
+hopl 8506
+
+centralPackageRepositoryCount 0

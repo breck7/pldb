@@ -1,12 +1,20 @@
 title Plot
-standsFor Programming Language for Old Timers
 appeared 2006
 type pl
 creators David A. Moon
 website http://users.rcn.com/david-moon/PLOT/
 reference http://users.rcn.com/david-moon/PLOT/Moon-ILC09.pdf
+standsFor Programming Language for Old Timers
+
+features
+ hasLineComments true
+  ; A comment
+ hasComments true
+  ; A comment
+ hasSemanticIndentation false
 
 lineCommentToken ;
+
 example
  ;; A silly toy program
  def response(threat)
@@ -17,9 +25,3 @@ example
      print("Danger Will Robinson")
    else
      sleep(1)
-features
- hasLineComments true
-  ; A comment
- hasComments true
-  ; A comment
- hasSemanticIndentation false

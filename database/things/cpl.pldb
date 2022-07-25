@@ -1,6 +1,13 @@
 title CPL
 appeared 1963
 type pl
+creators Christopher Strachey
+standsFor Combined Programming Language
+
+features
+ hasAssignment true
+
+assignmentToken :=
 
 wikipedia https://en.wikipedia.org/wiki/CPL_(programming_language)
  example
@@ -20,16 +27,11 @@ wikipedia https://en.wikipedia.org/wiki/CPL_(programming_language)
  dailyPageViews 58
  appeared 1963
 
-standsFor Combined Programming Language
-fileType text
-
-hopl 181
-
-centralPackageRepositoryCount 0
-creators Christopher Strachey
 goodreads
  title|year|author|goodreadsId|rating|ratings|reviews
  Cpl (Programming Language)||Jesse Russell|54888258|0.0|0|0
-assignmentToken :=
-features
- hasAssignment true
+
+hopl 181
+
+fileType text
+centralPackageRepositoryCount 0

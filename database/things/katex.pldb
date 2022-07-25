@@ -1,8 +1,19 @@
 title KaTeX
 appeared 2013
 type textMarkup
-
+creators Emily Eisenberg
 description The fastest math typesetting library for the web.
+website https://katex.org
+domainName katex.org
+
+features
+ hasLineComments true
+  % A comment
+ hasComments true
+  % A comment
+ hasSemanticIndentation false
+
+lineCommentToken %
 
 example
  % \f is defined as #1f(#2) using the macro
@@ -20,16 +31,6 @@ githubRepo https://github.com/Khan/KaTeX
  description Fast math typesetting for the web.
  issues 341
 
-website https://katex.org
 fileType text
 isOpenSource true
 centralPackageRepositoryCount 0
-creators Emily Eisenberg
-lineCommentToken %
-features
- hasLineComments true
-  % A comment
- hasComments true
-  % A comment
- hasSemanticIndentation false
-domainName katex.org

@@ -2,6 +2,12 @@ title Mathematica
 appeared 1988
 type pl
 creators Stephen Wolfram
+website http://www.wolfram.com/mathematica
+aka Wolfram Language
+country United States
+corporateDevelopers Wolfram Research
+
+visualParadigm false
 
 features
  hasLineComments false
@@ -13,6 +19,10 @@ features
  hasSemanticIndentation false
  hasStrings true
   "Hello world"
+
+multiLineCommentTokens (* *)
+printToken Print
+stringToken "
 
 wikipedia https://en.wikipedia.org/wiki/Mathematica
  related wolfram linux c java modelica sql fortran cuda opencl http eclipse-editor visual-studio-editor haskell applescript racket visual-basic python clojure excel-app matlab sagemath mongodb wsdl labview
@@ -31,12 +41,10 @@ githubLanguage Mathematica
   Autodesk maya-usd https://github.com/Autodesk.png https://github.com/Autodesk/maya-usd Mathematica #ccc 97 16 43 "A common USD (Universal Scene Description) plugin for Autodesk Maya"
  trendingProjectsCount 2
 
-helloWorldCollection Mathematica
- (* Hello World in Mathematica *)
- 
- Hello[] := Print["Hello, World!"]
- 
-
+codeMirror mathematica
+pygmentsHighlighter Mathematica
+ filename algebra.py
+ fileExtensions nb cdf nbp ma
 linguistGrammarRepo https://github.com/shadanan/mathematica-tmbundle
  firstCommit 2008
  lastCommit 2018
@@ -47,52 +55,43 @@ linguistGrammarRepo https://github.com/shadanan/mathematica-tmbundle
   Test[1 + 2, 3, TestID -> "One plus two"]
   
 
-website http://www.wolfram.com/mathematica
-aka Wolfram Language
-
-tryItOnline mathematica
-
-country United States
-fileType text
-isOpenSource false
-
-meetup mathematica
- memberCount 1678
- groupCount 11
-
-linkedInSkill mathematica
- 2018 146330
-
 projectEuler Mathematica
  memberCount
   2019 1664
   2022 1757
-
-hopl 1410
-
-codeMirror mathematica
-
-rosettaCode Mathematica
-
-corporateDevelopers Wolfram Research
-indeedJobs mathematica engineer
- 2017 90
-visualParadigm false
-packageRepository http://packagedata.net/
-goodreads
- title|year|author|goodreadsId|rating|ratings|reviews
- Mathematica: A System for Doing Mathematics by Computer|1988|Stephen Wolfram|448090|3.79|19|0
- An Introduction to Programming with Mathematica(r)|2005|Paul R. Wellin|687991|3.67|15|0
- Programming in Mathematica|1989|Roman E. Maeder|687997|4.25|12|1
-pygmentsHighlighter Mathematica
- filename algebra.py
- fileExtensions nb cdf nbp ma
+helloWorldCollection Mathematica
+ (* Hello World in Mathematica *)
+ 
+ Hello[] := Print["Hello, World!"]
+ 
 leachim6 Mathematica
  filepath m/Mathematica.nb
  fileExtensions nb
  example
   Print["Hello World"]
   
-printToken Print
-multiLineCommentTokens (* *)
-stringToken "
+rosettaCode Mathematica
+
+tryItOnline mathematica
+
+indeedJobs mathematica engineer
+ 2017 90
+linkedInSkill mathematica
+ 2018 146330
+
+meetup mathematica
+ memberCount 1678
+ groupCount 11
+
+goodreads
+ title|year|author|goodreadsId|rating|ratings|reviews
+ Mathematica: A System for Doing Mathematics by Computer|1988|Stephen Wolfram|448090|3.79|19|0
+ An Introduction to Programming with Mathematica(r)|2005|Paul R. Wellin|687991|3.67|15|0
+ Programming in Mathematica|1989|Roman E. Maeder|687997|4.25|12|1
+
+hopl 1410
+
+packageRepository http://packagedata.net/
+
+fileType text
+isOpenSource false

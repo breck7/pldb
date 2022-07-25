@@ -1,12 +1,7 @@
 title Filterscript
 appeared 2012
 type pl
-
 description A subset of RenderScript
-
-githubLanguage Filterscript
- fileExtensions fs
- trendingProjectsCount 0
 
 example
  #pragma version(1)
@@ -26,5 +21,10 @@ example
  int __attribute__((kernel)) everything(uint32_t ain, uint32_t x, uint32_t y) {
    return 0;
  }
+
+githubLanguage Filterscript
+ fileExtensions fs
+ trendingProjectsCount 0
+
 fileType text
 centralPackageRepositoryCount 0

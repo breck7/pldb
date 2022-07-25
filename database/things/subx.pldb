@@ -6,16 +6,18 @@ description Author of Mu decided this year to switch implementation from C++ to 
 reference https://github.com/akkartik/mu#readme
 fileExtensions subx
 
-lineCommentToken #
-example
- # 0x20-0x7e: basic latin
- # 0x20 = space
-   08/size
-   00/is-combine
-   00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
 features
  hasLineComments true
   # A comment
  hasComments true
   # A comment
  hasSemanticIndentation false
+
+lineCommentToken #
+
+example
+ # 0x20-0x7e: basic latin
+ # 0x20 = space
+   08/size
+   00/is-combine
+   00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00

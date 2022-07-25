@@ -1,7 +1,12 @@
 title Homebrew
-description The Missing Package Manager for macOS.
+appeared 2009
 type packageManager
+creators Max Howell
+description The Missing Package Manager for macOS.
 website https://brew.sh/
+domainName brew.sh
+ registered 2013
+
 githubRepo https://github.com/Homebrew/brew
  firstCommit 2009
  stars 32650
@@ -11,7 +16,3 @@ githubRepo https://github.com/Homebrew/brew
  updated 2022
  description 🍺 The missing package manager for macOS (or Linux)
  issues 39
-appeared 2009
-creators Max Howell
-domainName brew.sh
- registered 2013

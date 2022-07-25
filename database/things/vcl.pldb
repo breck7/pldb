@@ -1,6 +1,7 @@
 title Varnish Configuration Language
 appeared 2006
 type application
+reference https://en.wikipedia.org/wiki/Varnish_(software)
 
 example
  acl local {
@@ -13,6 +14,9 @@ githubLanguage VCL
  fileExtensions vcl
  trendingProjectsCount 0
 
+pygmentsHighlighter VCL
+ filename varnish.py
+ fileExtensions vcl
 linguistGrammarRepo https://github.com/brandonwamboldt/sublime-varnish
  firstCommit 2014
  lastCommit 2017
@@ -170,9 +174,5 @@ linguistGrammarRepo https://github.com/brandonwamboldt/sublime-varnish
   	return (ok);
   }
 
-reference https://en.wikipedia.org/wiki/Varnish_(software)
 fileType text
 centralPackageRepositoryCount 0
-pygmentsHighlighter VCL
- filename varnish.py
- fileExtensions vcl

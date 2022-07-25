@@ -1,22 +1,18 @@
 title FLUX
 appeared 2014
 type pl
-
+creators Paul O’Shannessy
 description Application Architecture for Building User Interfaces
+website https://facebook.github.io/flux/
 
-githubLanguage FLUX
- fileExtensions fx flux
- trendingProjectsCount 0
+features
+ hasLineComments true
+  // A comment
+ hasComments true
+  // A comment
+ hasSemanticIndentation false
 
-githubRepo https://github.com/facebook/flux
- firstCommit 2014
- stars 17320
- forks 3604
- subscribers 651
- created 2014
- updated 2022
- description Application Architecture for Building User Interfaces
- issues 6
+lineCommentToken //
 
 example
  // concrete node signatures
@@ -58,16 +54,22 @@ example
  atomic Complete:{cache};
  
  
-website https://facebook.github.io/flux/
+
+githubRepo https://github.com/facebook/flux
+ firstCommit 2014
+ stars 17320
+ forks 3604
+ subscribers 651
+ created 2014
+ updated 2022
+ description Application Architecture for Building User Interfaces
+ issues 6
+
+githubLanguage FLUX
+ fileExtensions fx flux
+ trendingProjectsCount 0
+
 fileType text
 wordRank 8630
 isOpenSource true
 centralPackageRepositoryCount 0
-creators Paul O’Shannessy
-lineCommentToken //
-features
- hasLineComments true
-  // A comment
- hasComments true
-  // A comment
- hasSemanticIndentation false

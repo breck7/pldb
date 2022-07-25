@@ -1,6 +1,7 @@
 title OpenEdge ABL
 appeared 2006
 type pl
+aka abl
 
 wikipedia https://en.wikipedia.org/wiki/OpenEdge_Advanced_Business_Language
  example
@@ -20,6 +21,9 @@ githubLanguage OpenEdge ABL
  fileExtensions p cls w
  trendingProjectsCount 0
 
+pygmentsHighlighter OpenEdge ABL
+ filename business.py
+ fileExtensions p cls
 linguistGrammarRepo https://github.com/jfairbank/Sublime-Text-2-OpenEdge-ABL
  firstCommit 2012
  lastCommit 2016
@@ -30,10 +34,6 @@ linguistGrammarRepo https://github.com/jfairbank/Sublime-Text-2-OpenEdge-ABL
   MESSAGE "Hello, world!".
   
 
-aka abl
 fileType text
 isOpenSource false
 centralPackageRepositoryCount 0
-pygmentsHighlighter OpenEdge ABL
- filename business.py
- fileExtensions p cls

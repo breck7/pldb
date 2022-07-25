@@ -2,6 +2,16 @@ title PHP
 appeared 1995
 type pl
 creators Rasmus Lerdorf
+website https://php.net
+reference http://php.net/manual/en/reserved.keywords.php
+standsFor Personal Home Page
+fileExtensions php phtml php3 php4 php5 php7 phps
+country Canada
+corporateDevelopers Zend
+domainName php.net
+ registered 1997
+
+visualParadigm false
 
 features
  hasStrings true
@@ -83,6 +93,22 @@ features
   */
  hasSemanticIndentation false
 
+lineCommentToken //
+multiLineCommentTokens /* */
+printToken echo
+stringToken '
+keywords __CLASS__ __DIR__ __FILE__ __FUNCTION__ __halt_compiler() __LINE__ __METHOD__ __NAMESPACE__ __TRAIT__ abstract and array() as break callable case catch class clone const continue declare default die() do echo else elseif empty() enddeclare endfor endforeach endif endswitch endwhile eval() exit() extends final finally for foreach function global goto if implements include include_once instanceof insteadof interface isset() list() namespace new or print private protected public require require_once return static switch throw trait try unset() use var while xor yield
+
+githubRepo https://github.com/php/php-src
+ firstCommit 1999
+ stars 33991
+ forks 7234
+ subscribers 1441
+ created 2011
+ updated 2022
+ description The PHP Interpreter
+ issues 392
+
 wikipedia https://en.wikipedia.org/wiki/PHP
  example
   class Person
@@ -160,22 +186,12 @@ githubLanguage PHP
   composer composer https://github.com/composer.png https://github.com/composer/composer PHP #4F5D95 20839 5592 354 "Dependency Manager for PHP"
  trendingProjectsCount 26
 
-githubRepo https://github.com/php/php-src
- firstCommit 1999
- stars 33991
- forks 7234
- subscribers 1441
- created 2011
- updated 2022
- description The PHP Interpreter
- issues 392
-
-helloWorldCollection PHP
- <?php
-   // Hello world in PHP
-   echo 'Hello World!';
- ?>
-
+antlr https://github.com/antlr/grammars-v4/tree/master/php
+monaco php
+codeMirror php
+pygmentsHighlighter PHP
+ filename php.py
+ fileExtensions php php[345] inc
 linguistGrammarRepo https://github.com/textmate/php.tmbundle
  firstCommit 2005
  lastCommit 2018
@@ -187,58 +203,6 @@ linguistGrammarRepo https://github.com/textmate/php.tmbundle
   <?php
   
   echo "PHP\n";
-
-website https://php.net
-reference http://php.net/manual/en/reserved.keywords.php
-standsFor Personal Home Page
-
-replit php
-
-tryItOnline php
-
-twitter official_php
-
-country Canada
-fileExtensions php phtml php3 php4 php5 php7 phps
-fileType text
-wordRank 1596
-
-tiobe PHP
- currentRank 8
-
-meetup php
- memberCount 904206
- groupCount 2012
-
-linkedInSkill php
- 2018 2133213
-
-projectEuler PHP
- memberCount
-  2019 3134
-  2022 3210
-
-hopl 2361
-
-subreddit PHP
- memberCount
-  2017 54023
-  2022 150168
-
-quineRelay PHP
-
-ubuntuPackage php-cli
-
-codeMirror php
-
-rosettaCode PHP
-
-antlr https://github.com/antlr/grammars-v4/tree/master/php
-
-corporateDevelopers Zend
-indeedJobs php developer
- 2017 9017
-lineCommentToken //
 languageServerProtocolProject https://github.com/bmewburn/vscode-intelephense
  writtenIn typescript
 languageServerProtocolProject https://github.com/felixfbecker/php-language-server
@@ -247,33 +211,16 @@ languageServerProtocolProject https://gitlab.com/Serenata/Serenata
  writtenIn php
 languageServerProtocolProject https://github.com/phan/phan
  writtenIn php
-visualParadigm false
-jupyterKernel https://github.com/dawehner/ipython-php
-jupyterKernel https://github.com/Litipk/Jupyter-PHP
-keywords __CLASS__ __DIR__ __FILE__ __FUNCTION__ __halt_compiler() __LINE__ __METHOD__ __NAMESPACE__ __TRAIT__ abstract and array() as break callable case catch class clone const continue declare default die() do echo else elseif empty() enddeclare endfor endforeach endif endswitch endwhile eval() exit() extends final finally for foreach function global goto if implements include include_once instanceof insteadof interface isset() list() namespace new or print private protected public require require_once return static switch throw trait try unset() use var while xor yield
-stackOverflowSurvey
- 2021
-  users 18130
-  medianSalary 38916
-  fans 8852
-  percentageUsing 0.22
-packageRepository https://packagist.org/
-rijuRepl https://riju.codes/php
- example
-  <?php
-  
-  echo "Hello, world!\n";
-  
-goodreads
- title|year|author|goodreadsId|rating|ratings|reviews
- Programming PHP|2002|Rasmus Lerdorf|131900|3.92|642|36
- PHP and MySQL Web Development (Developer's Library)|2003|Luke Welling|40127|3.95|854|54
- PHP & MySQL For Dummies|2002|Janet Valade|40136|3.53|186|11
- Professional PHP Programming|1999|Sascha Schumann|1517760|3.95|150|5
- Advanced PHP Programming|2004|George Schlossnagle|503809|3.86|116|11
-pygmentsHighlighter PHP
- filename php.py
- fileExtensions php php[345] inc
+
+projectEuler PHP
+ memberCount
+  2019 3134
+  2022 3210
+helloWorldCollection PHP
+ <?php
+   // Hello world in PHP
+   echo 'Hello World!';
+ ?>
 leachim6 PHP
  filepath p/PHP.php
  fileExtensions php
@@ -282,9 +229,54 @@ leachim6 PHP
   
   echo 'Hello World';
   
-printToken echo
-multiLineCommentTokens /* */
-domainName php.net
- registered 1997
-monaco php
-stringToken '
+rosettaCode PHP
+quineRelay PHP
+
+rijuRepl https://riju.codes/php
+ example
+  <?php
+  
+  echo "Hello, world!\n";
+  
+replit php
+tryItOnline php
+
+indeedJobs php developer
+ 2017 9017
+linkedInSkill php
+ 2018 2133213
+stackOverflowSurvey
+ 2021
+  users 18130
+  medianSalary 38916
+  fans 8852
+  percentageUsing 0.22
+
+subreddit PHP
+ memberCount
+  2017 54023
+  2022 150168
+meetup php
+ memberCount 904206
+ groupCount 2012
+
+goodreads
+ title|year|author|goodreadsId|rating|ratings|reviews
+ Programming PHP|2002|Rasmus Lerdorf|131900|3.92|642|36
+ PHP and MySQL Web Development (Developer's Library)|2003|Luke Welling|40127|3.95|854|54
+ PHP & MySQL For Dummies|2002|Janet Valade|40136|3.53|186|11
+ Professional PHP Programming|1999|Sascha Schumann|1517760|3.95|150|5
+ Advanced PHP Programming|2004|George Schlossnagle|503809|3.86|116|11
+
+tiobe PHP
+ currentRank 8
+hopl 2361
+
+packageRepository https://packagist.org/
+
+twitter official_php
+ubuntuPackage php-cli
+jupyterKernel https://github.com/dawehner/ipython-php
+jupyterKernel https://github.com/Litipk/Jupyter-PHP
+fileType text
+wordRank 1596

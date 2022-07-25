@@ -2,6 +2,17 @@ title Arden syntax
 appeared 1992
 type dataNotation
 
+features
+ hasMultiLineComments true
+  /* A comment
+  */
+ hasComments true
+  /* A comment
+  */
+ hasSemanticIndentation false
+
+multiLineCommentTokens /* */
+
 example
  maintenance:
   title: To check the diastolic blood pressure of the patient;;
@@ -58,13 +69,3 @@ example
  end:
 
 wikipedia https://en.wikipedia.org/wiki/Arden_syntax
-
-multiLineCommentTokens /* */
-features
- hasMultiLineComments true
-  /* A comment
-  */
- hasComments true
-  /* A comment
-  */
- hasSemanticIndentation false

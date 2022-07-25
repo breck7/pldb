@@ -2,6 +2,10 @@ title Lasso
 appeared 1995
 type pl
 creators Kyle Jessup
+website http://www.lassosoft.com
+fileExtensions lasso LassoApp
+domainName lassosoft.com
+ registered 2005
 
 features
  hasComments true
@@ -11,6 +15,9 @@ features
   /* A comment
   */
  hasSemanticIndentation false
+
+lineCommentToken //
+multiLineCommentTokens /* */
 
 wikipedia https://en.wikipedia.org/wiki/Lasso_(programming_language)
  example
@@ -64,11 +71,9 @@ githubLanguage Lasso
   plotly dash-sample-apps https://github.com/plotly.png https://github.com/plotly/dash-sample-apps Lasso #999999 172 186 65 "Apps hosted in the Dash Gallery"
  trendingProjectsCount 2
 
-helloWorldCollection Lasso
- // Hello world in Lasso
- 
- Hello world!
-
+pygmentsHighlighter Lasso
+ filename javascript.py
+ fileExtensions lasso lasso[89]
 linguistGrammarRepo https://github.com/bfad/Sublime-Lasso
  firstCommit 2013
  lastCommit 2014
@@ -291,20 +296,14 @@ linguistGrammarRepo https://github.com/bfad/Sublime-Lasso
   }
   
 
-website http://www.lassosoft.com
-fileExtensions lasso LassoApp
-fileType text
-isOpenSource false
+helloWorldCollection Lasso
+ // Hello world in Lasso
+ 
+ Hello world!
+rosettaCode Lasso
 
 tiobe Lasso
 
-rosettaCode Lasso
-
+fileType text
+isOpenSource false
 centralPackageRepositoryCount 0
-lineCommentToken //
-pygmentsHighlighter Lasso
- filename javascript.py
- fileExtensions lasso lasso[89]
-multiLineCommentTokens /* */
-domainName lassosoft.com
- registered 2005

@@ -2,6 +2,15 @@ title Python
 appeared 1991
 type pl
 creators Guido van Rossum
+website https://www.python.org/
+reference https://www.programiz.com/python-programming/keyword-list
+fileExtensions py pyc pyd pyo
+country Netherlands
+corporateDevelopers Python Software Foundation
+domainName python.org
+ registered 1995
+
+visualParadigm false
 
 features
  canWriteToDisk true
@@ -132,6 +141,12 @@ features
  hasPrintDebugging true
  isCaseSensitive true
 
+lineCommentToken #
+multiLineCommentTokens '''
+printToken print
+assignmentToken =
+keywords and as assert break class continue def del elif else except False finally for from global if import in is lambda None nonlocal not or pass raise return True try while with yield
+
 wikipedia https://en.wikipedia.org/wiki/Python_(programming_language)
  related jython micropython stackless-python cython abc algol-68 c dylan haskell icon java lisp modula-3 perl boo cobra coffeescript d f-sharp falcon genie go groovy javascript julia nim ruby swift setl unix unicode standard-ml pascal regex csharp common-lisp scheme objective-c numpy mime http sagemath llvmir jvm java-bytecode cil pyrex mercurial python-for-s60 qt django scipy matplotlib gdb freebsd ecmascript ocaml tcl erlang
  summary Python is a widely used high-level programming language for general-purpose programming, created by Guido van Rossum and first released in 1991. An interpreted language, Python has a design philosophy that emphasizes code readability (notably using whitespace indentation to delimit code blocks rather than curly brackets or keywords), and a syntax that allows programmers to express concepts in fewer lines of code than might be used in languages such as C++ or Java. It provides constructs that enable clear programming on both small and large scales. Python features a dynamic type system and automatic memory management. It supports multiple programming paradigms, including object-oriented, imperative, functional and procedural, and has a large and comprehensive standard library. Python interpreters are available for many operating systems. CPython, the reference implementation of Python, is open source software and has a community-based development model, as do nearly all of its variant implementations. CPython is managed by the non-profit Python Software Foundation.
@@ -174,74 +189,32 @@ githubLanguage Python
   xingyizhou CenterNet https://github.com/xingyizhou.png https://github.com/xingyizhou/CenterNet Python #3572A5 2194 503 289 "Object detection, 3D detection, and pose estimation using center point detection:"
  trendingProjectsCount 26
 
+antlr https://github.com/antlr/grammars-v4/tree/master/python
+monaco python
+codeMirror python
+pygmentsHighlighter Python
+ filename python.py
+ fileExtensions py pyw jy sage sc SConstruct SConscript bzl BUCK BUILD BUILD.bazel WORKSPACE tac
 linguistGrammarRepo https://github.com/tree-sitter/tree-sitter-python
  sampleCount 20
  example
   #!/usr/bin/env python2.4
   print "Python"
   
-
-website https://www.python.org/
-reference https://www.programiz.com/python-programming/keyword-list
-
-replit python
-
-country Netherlands
-fileExtensions py pyc pyd pyo
-fileType text
-wordRank 4048
-
-tiobe Python
- currentRank 4
-
-meetup python
- memberCount 1424303
- groupCount 1964
-
-linkedInSkill python
- 2018 1801117
-
-projectEuler Python
- memberCount
-  2019 46780
-  2022 60791
-
-hopl 1658
-
-subreddit Python
- memberCount
-  2017 197722
-  2022 979629
-
-quineRelay Python
-
-ubuntuPackage python
-
-codeMirror python
-
-rosettaCode Python
-
-antlr https://github.com/antlr/grammars-v4/tree/master/python
-
-corporateDevelopers Python Software Foundation
-indeedJobs python engineer
- 2017 28965
-lineCommentToken #
 languageServerProtocolProject http://www.pydev.org/vscode/index.html
  writtenIn python
 languageServerProtocolProject https://github.com/palantir/python-language-server
  writtenIn python
 languageServerProtocolProject https://github.com/Microsoft/python-language-server
  writtenIn csharp
-visualParadigm false
-keywords and as assert break class continue def del elif else except False finally for from global if import in is lambda None nonlocal not or pass raise return True try while with yield
-stackOverflowSurvey
- 2021
-  users 39792
-  medianSalary 59454
-  fans 34929
-  percentageUsing 0.48
-packageRepository https://pypi.python.org/pypi
+
+projectEuler Python
+ memberCount
+  2019 46780
+  2022 60791
+rosettaCode Python
+quineRelay Python
+
 rijuRepl https://riju.codes/python
  example
   print("Hello, world!")
@@ -250,18 +223,40 @@ rijuRepl https://riju.codes/python
  fileExtensions py pyi pyc pyd pyo pyw pyz
  website https://www.python.org/
  githubRepo https://github.com/python/cpython
-multiLineCommentTokens '''
-assignmentToken =
+replit python
+
+indeedJobs python engineer
+ 2017 28965
+linkedInSkill python
+ 2018 1801117
+stackOverflowSurvey
+ 2021
+  users 39792
+  medianSalary 59454
+  fans 34929
+  percentageUsing 0.48
+
+subreddit Python
+ memberCount
+  2017 197722
+  2022 979629
+meetup python
+ memberCount 1424303
+ groupCount 1964
+
 goodreads
  title|year|author|goodreadsId|rating|ratings|reviews
  Python: Programming: Your Step By Step Guide To Easily Learn Python in 7 Days (Python for Beginners, Python Programming for Beginners, Learn Python, Python Language)||iCode Academy|54724997|3.76|126|6
  Programming Python|1996|Mark Lutz|77671|3.96|898|23
  Natural Language Processing with Python|2009|Steven    Bird|6581044|4.14|389|34
+
+tiobe Python
+ currentRank 4
+hopl 1658
+
+packageRepository https://pypi.python.org/pypi
+
+ubuntuPackage python
+fileType text
+wordRank 4048
 githubCopilotOptimized
-pygmentsHighlighter Python
- filename python.py
- fileExtensions py pyw jy sage sc SConstruct SConscript bzl BUCK BUILD BUILD.bazel WORKSPACE tac
-printToken print
-domainName python.org
- registered 1995
-monaco python

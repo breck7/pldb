@@ -1,6 +1,23 @@
 title Pig Latin
 appeared 2008
 type queryLanguage
+website https://pig.apache.org/
+aka piglatin
+corporateDevelopers Apache
+domainName pig.apache.org
+
+features
+ hasLineComments true
+  -- A comment
+ hasComments true
+  -- A comment
+ hasMultiLineComments true
+  /* A comment
+  */
+ hasSemanticIndentation false
+
+lineCommentToken --
+multiLineCommentTokens /* */
 
 example
  input_lines = LOAD '/tmp/word.txt' AS (line:chararray);
@@ -44,6 +61,10 @@ githubLanguage PigLatin
  fileExtensions pig
  trendingProjectsCount 0
 
+codeMirror pig
+pygmentsHighlighter Pig
+ filename jvm.py
+ fileExtensions pig
 linguistGrammarRepo https://github.com/goblindegook/sublime-text-pig-latin
  firstCommit 2014
  lastCommit 2016
@@ -63,34 +84,14 @@ linguistGrammarRepo https://github.com/goblindegook/sublime-text-pig-latin
   
   
 
-website https://pig.apache.org/
-aka piglatin
-fileType text
-wordRank 7993
-isOpenSource true
-
-codeMirror pig
-
-corporateDevelopers Apache
-centralPackageRepositoryCount 0
-lineCommentToken --
-features
- hasLineComments true
-  -- A comment
- hasComments true
-  -- A comment
- hasMultiLineComments true
-  /* A comment
-  */
- hasSemanticIndentation false
-pygmentsHighlighter Pig
- filename jvm.py
- fileExtensions pig
 leachim6 Pig
  filepath p/Pig.pig
  fileExtensions pig
  example
   Hello WorldPIGHello World
   
-multiLineCommentTokens /* */
-domainName pig.apache.org
+
+fileType text
+wordRank 7993
+isOpenSource true
+centralPackageRepositoryCount 0

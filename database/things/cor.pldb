@@ -1,6 +1,18 @@
 title cor
 appeared 2016
 type pl
+creators Yosbel Marin
+website http://yosbelms.github.io/cor/
+
+compilesTo javascript
+
+features
+ hasPrintDebugging true
+ hasStrings true
+  "Hello world"
+
+printToken console.log
+stringToken "
 
 githubRepo https://github.com/yosbelms/cor
  stars 52
@@ -12,24 +24,17 @@ githubRepo https://github.com/yosbelms/cor
  description Straightforward language for the Web.
  issues 0
 
-website http://yosbelms.github.io/cor/
-fileType text
-compilesTo javascript
-isOpenSource true
-hackerNewsDiscussions
- id|title|time|timestamp|by|comments|score
- 10555178|Show HN: Cor - the language of the web|2015-11-12 18:41:20 UTC|1447353680|yosbelms|7|4
-centralPackageRepositoryCount 0
-creators Yosbel Marin
 leachim6 Cor
  filepath c/Cor.cor
  fileExtensions cor
  example
   func main() console.log("Hello World")
   
-printToken console.log
-features
- hasPrintDebugging true
- hasStrings true
-  "Hello world"
-stringToken "
+
+hackerNewsDiscussions
+ id|title|time|timestamp|by|comments|score
+ 10555178|Show HN: Cor - the language of the web|2015-11-12 18:41:20 UTC|1447353680|yosbelms|7|4
+
+fileType text
+isOpenSource true
+centralPackageRepositoryCount 0

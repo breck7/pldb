@@ -2,6 +2,29 @@ title Limbo
 appeared 1995
 type pl
 creators Rob Pike
+website http://www.vitanuova.com/inferno/limbo.html
+country United States
+
+features
+ hasPrintDebugging true
+ hasSemanticIndentation false
+
+printToken sys->print
+
+example
+ Lock: module
+ {
+ 	PATH:	con "/dis/lib/lock.dis";
+ 
+ 	Semaphore: adt {
+ 		c: chan of int;
+ 		obtain:	fn(nil: self ref Semaphore);
+ 		release: fn(nil: self ref Semaphore);
+ 		new: fn(): ref Semaphore;
+ 	};
+ 	
+ 	init: fn();
+ };
 
 wikipedia https://en.wikipedia.org/wiki/Limbo_(programming_language)
  example
@@ -30,6 +53,10 @@ githubLanguage Limbo
  fileExtensions b m
  trendingProjectsCount 0
 
+pygmentsHighlighter Limbo
+ filename inferno.py
+ fileExtensions b
+
 helloWorldCollection Limbo
  Hello World in Limbo.
  Limbo is the programming language of the Inferno OS
@@ -50,54 +77,6 @@ helloWorldCollection Limbo
      sys := load Sys Sys->PATH;
      sys->print("Hello World\n");
  }
-
-example
- Lock: module
- {
- 	PATH:	con "/dis/lib/lock.dis";
- 
- 	Semaphore: adt {
- 		c: chan of int;
- 		obtain:	fn(nil: self ref Semaphore);
- 		release: fn(nil: self ref Semaphore);
- 		new: fn(): ref Semaphore;
- 	};
- 	
- 	init: fn();
- };
-
-website http://www.vitanuova.com/inferno/limbo.html
-country United States
-fileType text
-isOpenSource true
-
-tiobe Limbo
-
-hopl 2166
-
-rosettaCode Limbo
-
-centralPackageRepositoryCount 0
-rijuRepl https://riju.codes/limbo
- example
-  implement Cmd;
-  
-  include "sys.m";
-  include "draw.m";
-  
-  Cmd : module {
-      init : fn (ctxt : ref Draw->Context, args : list of string);
-  };
-  
-  init(nil : ref Draw->Context, nil : list of string)
-  {
-      sys := load Sys Sys->PATH;
-      sys->print("Hello, world!\n");
-  }
-  
-pygmentsHighlighter Limbo
- filename inferno.py
- fileExtensions b
 leachim6 Limbo
  filepath l/Limbo.b
  fileExtensions b
@@ -119,7 +98,29 @@ leachim6 Limbo
   	sys->print("Hello World\n");
   }
   
-printToken sys->print
-features
- hasPrintDebugging true
- hasSemanticIndentation false
+rosettaCode Limbo
+
+rijuRepl https://riju.codes/limbo
+ example
+  implement Cmd;
+  
+  include "sys.m";
+  include "draw.m";
+  
+  Cmd : module {
+      init : fn (ctxt : ref Draw->Context, args : list of string);
+  };
+  
+  init(nil : ref Draw->Context, nil : list of string)
+  {
+      sys := load Sys Sys->PATH;
+      sys->print("Hello, world!\n");
+  }
+  
+
+tiobe Limbo
+hopl 2166
+
+fileType text
+isOpenSource true
+centralPackageRepositoryCount 0

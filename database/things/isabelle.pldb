@@ -1,8 +1,22 @@
 title Isabelle
 appeared 1986
 type pl
-
 description Isabelle is a generic proof assistant. It allows mathematical formulas to be expressed in a formal language and provides tools for proving those formulas in a logical calculus. Isabelle was originally developed at the University of Cambridge and Technische Universität München, but now includes numerous contributions from institutions and individuals worldwide.
+website http://isabelle.in.tum.de/
+reference https://books.google.com/books?id=xwdqCQAAQBAJ&dq=isabelle+language+proof&lr=
+fileExtensions ROOT
+domainName isabelle.in.tum.de
+
+features
+ hasMultiLineComments true
+  (* A comment
+  *)
+ hasComments true
+  (* A comment
+  *)
+ hasSemanticIndentation false
+
+multiLineCommentTokens (* *)
 
 wikipedia https://en.wikipedia.org/wiki/Isabelle_(proof_assistant)
  example
@@ -41,6 +55,9 @@ githubLanguage Isabelle
  fileExtensions thy
  trendingProjectsCount 0
 
+pygmentsHighlighter Isabelle
+ filename theorem.py
+ fileExtensions thy
 linguistGrammarRepo https://github.com/lsf37/Isabelle.tmbundle
  firstCommit 2014
  lastCommit 2018
@@ -95,25 +112,9 @@ linguistGrammarRepo https://github.com/lsf37/Isabelle.tmbundle
   
   end
   
-
-website http://isabelle.in.tum.de/
-reference https://books.google.com/books?id=xwdqCQAAQBAJ&dq=isabelle+language+proof&lr=
-fileExtensions ROOT
-fileType text
-isOpenSource true
 languageServerProtocolProject https://isabelle.in.tum.de/repos/isabelle/file/tip/src/Tools/VSCode
  writtenIn scala
+
+fileType text
+isOpenSource true
 centralPackageRepositoryCount 0
-pygmentsHighlighter Isabelle
- filename theorem.py
- fileExtensions thy
-multiLineCommentTokens (* *)
-features
- hasMultiLineComments true
-  (* A comment
-  *)
- hasComments true
-  (* A comment
-  *)
- hasSemanticIndentation false
-domainName isabelle.in.tum.de

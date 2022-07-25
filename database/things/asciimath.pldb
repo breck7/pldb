@@ -1,10 +1,16 @@
 title AsciiMath
+appeared 2014
+type textMarkup
+creators Peter Krautzberger
 description AsciiMath is an easy-to-write markup language for mathematics.
 website http://asciimath.org/
+domainName asciimath.org
+
+related latex
+
 example
  sum_(i=1)^n i^3=((n(n+1))/2)^2
-related latex
-type textMarkup
+
 githubRepo https://github.com/mathjax/asciimathml
  firstCommit 2014
  stars 863
@@ -14,6 +20,3 @@ githubRepo https://github.com/mathjax/asciimathml
  updated 2022
  description A new home for asciimathml
  issues 47
-appeared 2014
-creators Peter Krautzberger
-domainName asciimath.org

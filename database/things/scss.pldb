@@ -2,6 +2,11 @@ title SCSS
 appeared 2006
 type stylesheetLanguage
 creators Hampton Catlin
+website http://sass-lang.com/
+reference https://en.wikipedia.org/wiki/Sass_(stylesheet_language)
+fileExtensions sass scss
+domainName sass-lang.com
+ registered 2009
 
 features
  hasSemanticIndentation true
@@ -15,10 +20,19 @@ features
  hasStrings true
   "Hello world"
 
+lineCommentToken //
+multiLineCommentTokens /* */
+stringToken "
+
 githubLanguage SCSS
  fileExtensions scss
  trendingProjectsCount 0
 
+antlr https://github.com/antlr/grammars-v4/tree/master/scss
+monaco scss
+pygmentsHighlighter SCSS
+ filename css.py
+ fileExtensions scss
 linguistGrammarRepo https://github.com/MarioRicalde/SCSS.tmbundle
  firstCommit 2010
  lastCommit 2015
@@ -42,30 +56,6 @@ linguistGrammarRepo https://github.com/MarioRicalde/SCSS.tmbundle
   }
   
 
-website http://sass-lang.com/
-reference https://en.wikipedia.org/wiki/Sass_(stylesheet_language)
-
-twitter sasscss
-
-fileExtensions sass scss
-fileType text
-
-antlr https://github.com/antlr/grammars-v4/tree/master/scss
-
-centralPackageRepositoryCount 0
-rijuRepl https://riju.codes/scss
- example
-  body:before {
-    content: "Hello, world!";
-  }
-  
-goodreads
- title|year|author|goodreadsId|rating|ratings|reviews
- Advances in Systems, Computing Sciences and Software Engineering: Proceedings of Scss 2005|2006|Tarek Sobh|23111454|0.0|0|0
- Advances in Systems, Computing Sciences and Software Engineering: Proceedings of Scss 2005|2006|Tarek Sobh|369788|0.0|0|0
-pygmentsHighlighter SCSS
- filename css.py
- fileExtensions scss
 leachim6 SCSS
  filepath s/SCSS.scss
  fileExtensions scss
@@ -74,9 +64,19 @@ leachim6 SCSS
       content: "Hello World";
   }
   
-domainName sass-lang.com
- registered 2009
-lineCommentToken //
-monaco scss
-multiLineCommentTokens /* */
-stringToken "
+
+rijuRepl https://riju.codes/scss
+ example
+  body:before {
+    content: "Hello, world!";
+  }
+  
+
+goodreads
+ title|year|author|goodreadsId|rating|ratings|reviews
+ Advances in Systems, Computing Sciences and Software Engineering: Proceedings of Scss 2005|2006|Tarek Sobh|23111454|0.0|0|0
+ Advances in Systems, Computing Sciences and Software Engineering: Proceedings of Scss 2005|2006|Tarek Sobh|369788|0.0|0|0
+
+twitter sasscss
+fileType text
+centralPackageRepositoryCount 0

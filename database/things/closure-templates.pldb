@@ -2,6 +2,17 @@ title Closure Templates
 appeared 2009
 type template
 
+features
+ hasMultiLineComments true
+  /* A comment
+  */
+ hasComments true
+  /* A comment
+  */
+ hasSemanticIndentation false
+
+multiLineCommentTokens /* */
+
 example
  /**
   * Says hello to the world.
@@ -9,10 +20,6 @@ example
  {template .helloWorld}
    Hello world!
  {/template}
-
-githubLanguage Closure Templates
- fileExtensions soy
- trendingProjectsCount 0
 
 githubRepo https://github.com/google/closure-templates
  firstCommit 2009
@@ -23,6 +30,10 @@ githubRepo https://github.com/google/closure-templates
  updated 2022
  description A client- and server-side templating system that helps you dynamically build reusable HTML and UI elements
  issues 118
+
+githubLanguage Closure Templates
+ fileExtensions soy
+ trendingProjectsCount 0
 
 linguistGrammarRepo https://github.com/mthadley/language-closure-templates
  firstCommit 2017
@@ -59,12 +70,3 @@ linguistGrammarRepo https://github.com/mthadley/language-closure-templates
 fileType text
 isOpenSource true
 centralPackageRepositoryCount 0
-multiLineCommentTokens /* */
-features
- hasMultiLineComments true
-  /* A comment
-  */
- hasComments true
-  /* A comment
-  */
- hasSemanticIndentation false

@@ -2,6 +2,18 @@ title EBNF
 appeared 1977
 type grammarLanguage
 creators Niklaus Wirth
+standsFor extended Backus-Naur form
+
+features
+ hasMultiLineComments true
+  (* A comment
+  *)
+ hasComments true
+  (* A comment
+  *)
+ hasSemanticIndentation false
+
+multiLineCommentTokens (* *)
 
 wikipedia https://en.wikipedia.org/wiki/Extended_Backus–Naur_form
  example
@@ -17,6 +29,10 @@ githubLanguage EBNF
  fileExtensions ebnf
  trendingProjectsCount 0
 
+codeMirror ebnf
+pygmentsHighlighter EBNF
+ filename parsers.py
+ fileExtensions ebnf
 linguistGrammarRepo https://github.com/sanssecours/EBNF.tmbundle
  firstCommit 2012
  lastCommit 2016
@@ -46,23 +62,7 @@ linguistGrammarRepo https://github.com/sanssecours/EBNF.tmbundle
   
   
 
-standsFor extended Backus-Naur form
-fileType text
-
 hopl 755
 
-codeMirror ebnf
-
+fileType text
 centralPackageRepositoryCount 0
-pygmentsHighlighter EBNF
- filename parsers.py
- fileExtensions ebnf
-multiLineCommentTokens (* *)
-features
- hasMultiLineComments true
-  (* A comment
-  *)
- hasComments true
-  (* A comment
-  *)
- hasSemanticIndentation false

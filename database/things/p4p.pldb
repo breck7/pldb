@@ -1,6 +1,12 @@
 title p4p
 appeared 2010
 type pl
+description an alternate syntax for Racket.
+website http://shriram.github.com/p4p/
+reference http://shriram.github.io/p4p/
+
+features
+ hasSemanticIndentation true
 
 example
  defvar: m = 10
@@ -28,11 +34,6 @@ example
     else:
       add(fib(sub1(n)), fib(sub(n, 2)))
 
-features
- hasSemanticIndentation true
-
-description an alternate syntax for Racket.
-
 githubRepo https://github.com/shriram/p4p
  firstCommit 2010
  stars 12
@@ -42,6 +43,3 @@ githubRepo https://github.com/shriram/p4p
  updated 2022
  description An alternate syntax for Racket
  issues 0
-
-website http://shriram.github.com/p4p/
-reference http://shriram.github.io/p4p/

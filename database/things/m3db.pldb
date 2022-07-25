@@ -1,6 +1,11 @@
 title m3db
+appeared 2016
 type database
+creators Xi Chen
 description A distributed time series database.
+website https://www.m3db.io/
+domainName m3db.io
+ registered 2018
 
 githubRepo https://github.com/m3db/m3
  firstCommit 2016
@@ -11,9 +16,3 @@ githubRepo https://github.com/m3db/m3
  updated 2022
  description M3 monorepo - Distributed TSDB, Aggregator and Query Engine, Prometheus Sidecar, Graphite Compatible, Metrics Platform
  issues 179
-
-website https://www.m3db.io/
-appeared 2016
-creators Xi Chen
-domainName m3db.io
- registered 2018

@@ -1,6 +1,9 @@
 title LiveCode
 appeared 2001
 type pl
+website https://livecode.org/
+domainName livecode.org
+ registered 2012
 
 features
  hasComments true
@@ -8,6 +11,9 @@ features
   -- A comment
  hasPrintDebugging true
  hasSemanticIndentation false
+
+lineCommentToken --
+printToken answer
 
 wikipedia https://en.wikipedia.org/wiki/LiveCode
  example
@@ -21,33 +27,26 @@ wikipedia https://en.wikipedia.org/wiki/LiveCode
  revisionCount 303
  appeared 2001
 
+projectEuler LiveCode
+ memberCount
+  2022 1
 helloWorldCollection LiveCode
  -- Hello world in LiveCode (formerly called Revolution, formerly called Transcript)
  
  answer "Hello World!"
-
-website https://livecode.org/
-fileType text
-
-tiobe LiveCode
-
-projectEuler LiveCode
- memberCount
-  2022 1
-
-rosettaCode LiveCode
-
-centralPackageRepositoryCount 0
-goodreads
- title|year|author|goodreadsId|rating|ratings|reviews
- Programming Livecode for the Real Beginner||Mark Schonewille|52807550|3.00|1|1
- LiveCode Lite: Computer Programming Made Ridiculously Simple||Stephen Goldberg|55375098|3.00|1|0
-lineCommentToken --
 leachim6 LiveCode
  filepath l/LiveCode
  example
   answer "Hello World!" 
   
-printToken answer
-domainName livecode.org
- registered 2012
+rosettaCode LiveCode
+
+goodreads
+ title|year|author|goodreadsId|rating|ratings|reviews
+ Programming Livecode for the Real Beginner||Mark Schonewille|52807550|3.00|1|1
+ LiveCode Lite: Computer Programming Made Ridiculously Simple||Stephen Goldberg|55375098|3.00|1|0
+
+tiobe LiveCode
+
+fileType text
+centralPackageRepositoryCount 0

@@ -1,6 +1,10 @@
 title PicoLisp
 appeared 1988
 type pl
+creators Alexander Burger
+website https://picolisp.com/
+domainName picolisp.com
+ registered 2007
 
 features
  isLisp true
@@ -8,6 +12,8 @@ features
  hasLineComments true
   # A comment
  hasSemanticIndentation false
+
+lineCommentToken #
 
 wikipedia https://en.wikipedia.org/wiki/PicoLisp
  related lisp linux s-expressions common-lisp emacs-lisp prolog c assembly-language java
@@ -198,16 +204,9 @@ linguistGrammarRepo https://github.com/textmate/lisp.tmbundle
         (prinl) ) )
   
 
-website https://picolisp.com/
+rosettaCode PicoLisp
 
 tryItOnline picolisp
 
 fileType text
-
-rosettaCode PicoLisp
-
 centralPackageRepositoryCount 0
-creators Alexander Burger
-lineCommentToken #
-domainName picolisp.com
- registered 2007

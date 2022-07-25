@@ -1,15 +1,10 @@
 title Keras
 appeared 2015
 type library
-
-wikipedia https://en.wikipedia.org/wiki/Keras
- related python tensorflow ios android
- summary Keras is an open source neural network library written in Python. It is capable of running on top of TensorFlow, Microsoft Cognitive Toolkit, or Theano. Designed to enable fast experimentation with deep neural networks, it focuses on being user-friendly, modular, and extensible. It was developed as part of the research effort of project ONEIROS (Open-ended Neuro-Electronic Intelligent Robot Operating System), and its primary author and maintainer is François Chollet, a Google engineer. In 2017, Google's TensorFlow team decided to support Keras in TensorFlow's core library. Chollet explained that Keras was conceived to be an interface rather than a standalone machine-learning framework. It offers a higher-level, more intuitive set of abstractions that make it easy to develop deep learning models regardless of the computational backend used. Microsoft added a CNTK backend to Keras as well, available as of CNTK v2.0.
- created 2016
- backlinksCount 51
- pageId 51650259
- dailyPageViews 486
- appeared 2015
+creators François Chollet
+website https://keras.io/
+domainName keras.io
+ registered 2015
 
 githubRepo https://github.com/keras-team/keras
  firstCommit 2015
@@ -21,9 +16,14 @@ githubRepo https://github.com/keras-team/keras
  description Deep Learning for humans
  issues 346
 
-website https://keras.io/
+wikipedia https://en.wikipedia.org/wiki/Keras
+ related python tensorflow ios android
+ summary Keras is an open source neural network library written in Python. It is capable of running on top of TensorFlow, Microsoft Cognitive Toolkit, or Theano. Designed to enable fast experimentation with deep neural networks, it focuses on being user-friendly, modular, and extensible. It was developed as part of the research effort of project ONEIROS (Open-ended Neuro-Electronic Intelligent Robot Operating System), and its primary author and maintainer is François Chollet, a Google engineer. In 2017, Google's TensorFlow team decided to support Keras in TensorFlow's core library. Chollet explained that Keras was conceived to be an interface rather than a standalone machine-learning framework. It offers a higher-level, more intuitive set of abstractions that make it easy to develop deep learning models regardless of the computational backend used. Microsoft added a CNTK backend to Keras as well, available as of CNTK v2.0.
+ created 2016
+ backlinksCount 51
+ pageId 51650259
+ dailyPageViews 486
+ appeared 2015
+
 isOpenSource true
 centralPackageRepositoryCount 0
-creators François Chollet
-domainName keras.io
- registered 2015

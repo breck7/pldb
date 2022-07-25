@@ -1,11 +1,18 @@
 title Zig
 appeared 2015
 type pl
-subreddit Zig
- memberCount
-  2022 5511
-
+creators Andrew Kelley
 description A programming language designed for robustness, optimality, and clarity.
+website https://ziglang.org/
+domainName ziglang.org
+
+features
+ hasPrintDebugging true
+ hasStrings true
+  "Hello world"
+
+printToken std.debug.print
+stringToken "
 
 githubRepo https://github.com/ziglang/zig
  firstCommit 2015
@@ -17,16 +24,22 @@ githubRepo https://github.com/ziglang/zig
  description General-purpose programming language and toolchain for maintaining robust, optimal, and reusable software.
  issues 2126
 
-website https://ziglang.org/
+pygmentsHighlighter Zig
+ filename zig.py
+ fileExtensions zig
 
-tryItOnline zig
-
-fileType text
-isOpenSource true
-
+leachim6 Zig
+ filepath z/Zig.zig
+ fileExtensions zig
+ example
+  const std = @import("std");
+  
+  pub fn main() !void {
+      const stdout = std.io.getStdOut().writer();
+      try stdout.print("Hello World", .{});
+  }
 rosettaCode Zig
 
-centralPackageRepositoryCount 0
 rijuRepl https://riju.codes/zig
  example
   const std = @import("std");
@@ -39,25 +52,12 @@ rijuRepl https://riju.codes/zig
  fileExtensions zig
  website https://ziglang.org/
  githubRepo https://github.com/ziglang/zig
-creators Andrew Kelley
-pygmentsHighlighter Zig
- filename zig.py
- fileExtensions zig
-leachim6 Zig
- filepath z/Zig.zig
- fileExtensions zig
- example
-  const std = @import("std");
-  
-  pub fn main() !void {
-      const stdout = std.io.getStdOut().writer();
-      try stdout.print("Hello World", .{});
-  }
-printToken std.debug.print
-features
- hasPrintDebugging true
- hasStrings true
-  "Hello world"
+tryItOnline zig
 
-domainName ziglang.org
-stringToken "
+subreddit Zig
+ memberCount
+  2022 5511
+
+fileType text
+isOpenSource true
+centralPackageRepositoryCount 0

@@ -1,6 +1,7 @@
 title NetRexx
 appeared 1996
 type pl
+creators Mike Cowlishaw
 
 features
  hasComments true
@@ -8,6 +9,9 @@ features
  hasSemanticIndentation false
  hasStrings true
   'Hello world'
+
+printToken say
+stringToken '
 
 wikipedia https://en.wikipedia.org/wiki/NetRexx
  related pl-i rexx object-rexx java jvm
@@ -19,22 +23,19 @@ wikipedia https://en.wikipedia.org/wiki/NetRexx
  dailyPageViews 9
  appeared 1996
 
-fileType text
-
-hopl 2277
-
-rosettaCode NetRexx
-
-centralPackageRepositoryCount 0
-creators Mike Cowlishaw
-goodreads
- title|year|author|goodreadsId|rating|ratings|reviews
- The Netrexx Language|1997|M. F. Cowlishaw|7283371|5.00|1|0
 leachim6 NetRexx
  filepath n/NetRexx.nrx
  fileExtensions nrx
  example
   say 'Hello World'
   
-printToken say
-stringToken '
+rosettaCode NetRexx
+
+goodreads
+ title|year|author|goodreadsId|rating|ratings|reviews
+ The Netrexx Language|1997|M. F. Cowlishaw|7283371|5.00|1|0
+
+hopl 2277
+
+fileType text
+centralPackageRepositoryCount 0

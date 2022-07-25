@@ -2,11 +2,16 @@ title Inform
 appeared 1993
 type pl
 creators Graham Nelson
+website http://inform7.com/
+domainName inform7.com
+ registered 2009
 
 features
  hasSemanticIndentation true
  hasStrings true
   "Hello world"
+
+stringToken "
 
 wikipedia https://en.wikipedia.org/wiki/Inform
  example
@@ -41,13 +46,9 @@ githubLanguage Inform 7
  fileExtensions ni i7x
  trendingProjectsCount 0
 
-helloWorldCollection Inform
- !  "Hello world" in Inform
- [ Main;
-   print "Hello world^";
- ];
- 
-
+pygmentsHighlighter Inform 7
+ filename int_fiction.py
+ fileExtensions ni i7x
 linguistGrammarRepo https://github.com/erkyrath/language-inform7
  firstCommit 2016
  lastCommit 2018
@@ -119,13 +120,12 @@ linguistGrammarRepo https://github.com/erkyrath/language-inform7
    say "A turn passes[one of][or] placidly[or] idly[or] tediously[at random]."
   
 
-website http://inform7.com/
-fileType text
-wordRank 5526
-
-tiobe Inform
-
-centralPackageRepositoryCount 0
+helloWorldCollection Inform
+ !  "Hello world" in Inform
+ [ Main;
+   print "Hello world^";
+ ];
+ 
 leachim6 Inform
  filepath i/Inform.inform
  fileExtensions inform
@@ -136,9 +136,9 @@ leachim6 Inform
   
   When play begins, say "Hello World"
   
-pygmentsHighlighter Inform 7
- filename int_fiction.py
- fileExtensions ni i7x
-domainName inform7.com
- registered 2009
-stringToken "
+
+tiobe Inform
+
+fileType text
+wordRank 5526
+centralPackageRepositoryCount 0

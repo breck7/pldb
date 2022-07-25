@@ -2,6 +2,20 @@ title manool
 appeared 2018
 type pl
 creators Alex Protasov
+description Practical programming language with expressive power, in 10 KLOC in C++11 - "MAnool is Not an Object-Oriented Language!"
+website https://manool.org/
+reference https://www.reddit.com/r/ProgrammingLanguages/comments/ep8pc2/manool_practical_language_with_universal_syntax/
+domainName manool.org
+ registered 2018
+
+features
+ hasLineComments true
+  -- A comment
+ hasComments true
+  -- A comment
+ hasSemanticIndentation false
+
+lineCommentToken --
 
 example
  -- recursive version, MANOOLish "cascading" notation
@@ -17,8 +31,6 @@ example
    Out.WriteLine["Factorial of 10 is "; Fact[10]]
  }
 
-description Practical programming language with expressive power, in 10 KLOC in C++11 - "MAnool is Not an Object-Oriented Language!"
-
 githubRepo https://github.com/rusini/manool
  firstCommit 2019
  stars 56
@@ -28,15 +40,3 @@ githubRepo https://github.com/rusini/manool
  description Fairly readable homoiconic language with primarily value (non-referential) semantics that balances the programmer's productivity with scalability
  forks 3
  issues 0
-
-website https://manool.org/
-reference https://www.reddit.com/r/ProgrammingLanguages/comments/ep8pc2/manool_practical_language_with_universal_syntax/
-lineCommentToken --
-features
- hasLineComments true
-  -- A comment
- hasComments true
-  -- A comment
- hasSemanticIndentation false
-domainName manool.org
- registered 2018

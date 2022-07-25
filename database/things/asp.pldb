@@ -1,6 +1,16 @@
 title ASP
 appeared 1996
 type template
+standsFor Active Server Pages
+country United States
+
+features
+ hasPrintDebugging true
+ hasStrings true
+  "Hello world"
+
+printToken Response.Write
+stringToken "
 
 wikipedia https://en.wikipedia.org/wiki/Active_Server_Pages
  example
@@ -33,31 +43,15 @@ githubLanguage ASP
   koolshare armsoft https://github.com/koolshare.png https://github.com/koolshare/armsoft ASP #6a40fd 107 23 40 "梅林384软件中心 for armv7l架构机型"
  trendingProjectsCount 3
 
+pygmentsHighlighter aspx-vb
+ filename dotnet.py
+ fileExtensions aspx asax ascx ashx asmx axd
 linguistGrammarRepo https://github.com/textmate/asp.tmbundle
  firstCommit 2005
  lastCommit 2015
  committerCount 4
  commitCount 39
 
-standsFor Active Server Pages
-country United States
-fileType text
-wordRank 4194
-isOpenSource false
-
-hopl 5356
-
-rosettaCode ASP
-
-centralPackageRepositoryCount 0
-goodreads
- title|year|author|goodreadsId|rating|ratings|reviews
- Active Server Pages For Dummies|1999|Bill Hatfield|4619106|2.00|2|0
- Programming Active Server Pages|1997|Scot Hillier|2090303|4.50|2|0
- Active Server Pages 2.0 for Dummies [With CDROM]|1999|Bill Hatfield|1505073|3.12|8|2
- ASP Developer's Guide [With CDROM]|2000|Greg Buczek|418681|3.64|11|0
- ASP 3.0 Programmer's Reference|1999|Richard Anderson|979592|3.64|11|0
- Web Programming with ASP and COM|1999|Matt J. Crouch|4948265|5.00|4|0
 leachim6 ASP
  filepath a/ASP.asp
  fileExtensions asp
@@ -67,12 +61,20 @@ leachim6 ASP
       Response.Write("Hello World")
   %>
   
-printToken Response.Write
-features
- hasPrintDebugging true
- hasStrings true
-  "Hello world"
-pygmentsHighlighter aspx-vb
- filename dotnet.py
- fileExtensions aspx asax ascx ashx asmx axd
-stringToken "
+rosettaCode ASP
+
+goodreads
+ title|year|author|goodreadsId|rating|ratings|reviews
+ Active Server Pages For Dummies|1999|Bill Hatfield|4619106|2.00|2|0
+ Programming Active Server Pages|1997|Scot Hillier|2090303|4.50|2|0
+ Active Server Pages 2.0 for Dummies [With CDROM]|1999|Bill Hatfield|1505073|3.12|8|2
+ ASP Developer's Guide [With CDROM]|2000|Greg Buczek|418681|3.64|11|0
+ ASP 3.0 Programmer's Reference|1999|Richard Anderson|979592|3.64|11|0
+ Web Programming with ASP and COM|1999|Matt J. Crouch|4948265|5.00|4|0
+
+hopl 5356
+
+fileType text
+wordRank 4194
+isOpenSource false
+centralPackageRepositoryCount 0

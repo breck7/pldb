@@ -1,6 +1,9 @@
 title Frink
 appeared 2014
 type pl
+website https://frinklang.org/
+domainName frinklang.org
+ registered 2014
 
 features
  hasComments true
@@ -13,6 +16,10 @@ features
  hasStrings true
   "Hello world"
 
+lineCommentToken //
+printToken println
+stringToken "
+
 wikipedia https://en.wikipedia.org/wiki/Frink_(programming_language)
  related jvm java
  summary Frink is a computer programming language. It is, according to creator of the language, "designed to make physical calculations simple, to help ensure that answers come out right, and to make a tool that's really useful in the real world. It tracks units of measure (feet, meters, kilograms, watts, etc.) through all calculations, allowing you to mix units of measure transparently, and helps you easily verify that your answers make sense."
@@ -23,34 +30,23 @@ wikipedia https://en.wikipedia.org/wiki/Frink_(programming_language)
  revisionCount 11
  appeared 2011
 
+projectEuler Frink
+ memberCount
+  2019 14
+  2022 14
 helloWorldCollection Frink programming language
  // Hello World in Frink
  
  println["Hello World!"]
  
-
-website https://frinklang.org/
-
-twitter frinklang
-
-fileType text
-
-projectEuler Frink
- memberCount
-  2019 14
-  2022 14
-
-rosettaCode Frink
-
-centralPackageRepositoryCount 0
-lineCommentToken //
 leachim6 Frink
  filepath f/Frink.frink
  fileExtensions frink
  example
   println["Hello World"]
   
-printToken println
-domainName frinklang.org
- registered 2014
-stringToken "
+rosettaCode Frink
+
+twitter frinklang
+fileType text
+centralPackageRepositoryCount 0

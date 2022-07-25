@@ -1,6 +1,19 @@
 title Ezhil
 appeared 2007
 type pl
+creators Muthu Annamalai
+website http://ezhillang.org
+domainName ezhillang.org
+ registered 2021
+
+features
+ hasLineComments true
+  # A comment
+ hasComments true
+  # A comment
+ hasSemanticIndentation false
+
+lineCommentToken #
 
 wikipedia https://en.wikipedia.org/wiki/Ezhil_(programming_language)
  example
@@ -48,6 +61,10 @@ wikipedia https://en.wikipedia.org/wiki/Ezhil_(programming_language)
  appeared 2007
  fileExtensions n
 
+pygmentsHighlighter Ezhil
+ filename ezhil.py
+ fileExtensions n
+
 helloWorldCollection Ezhil programming language
  # Hello world in Ezhil
  
@@ -55,29 +72,14 @@ helloWorldCollection Ezhil programming language
  பதிப்பி "உலகே வணக்கம்"
  பதிப்பி "******* நன்றி!. *******"
  exit()
-
-website http://ezhillang.org
-fileType text
-isOpenSource true
-
 rosettaCode Ezhil
 
-centralPackageRepositoryCount 0
 rijuRepl https://riju.codes/ezhil
  example
   பதிப்பி "வணக்கம், உலகமே!"
   
-creators Muthu Annamalai
-lineCommentToken #
-features
- hasLineComments true
-  # A comment
- hasComments true
-  # A comment
- hasSemanticIndentation false
-pygmentsHighlighter Ezhil
- filename ezhil.py
- fileExtensions n
-domainName ezhillang.org
- registered 2021
+
 twitter ezhillang
+fileType text
+isOpenSource true
+centralPackageRepositoryCount 0

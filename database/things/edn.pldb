@@ -1,10 +1,8 @@
 title EDN
 appeared 2012
 type dataNotation
+standsFor Extensible Data Notation
 aka edn
-
-example
- {:a 1, "foo" :bar, [1 2 3] four}
 
 features
  hasBooleans true
@@ -17,9 +15,8 @@ features
  hasSets true
  hasSemanticIndentation false
 
-githubLanguage edn
- fileExtensions edn
- trendingProjectsCount 0
+example
+ {:a 1, "foo" :bar, [1 2 3] four}
 
 githubRepo https://github.com/edn-format/edn
  firstCommit 2012
@@ -30,6 +27,10 @@ githubRepo https://github.com/edn-format/edn
  updated 2022
  description Extensible Data Notation
  issues 25
+
+githubLanguage edn
+ fileExtensions edn
+ trendingProjectsCount 0
 
 linguistGrammarRepo https://github.com/atom/language-clojure
  firstCommit 2013
@@ -115,7 +116,6 @@ linguistGrammarRepo https://github.com/atom/language-clojure
     :object/name "Eris"
     :object/meanRadius 1163.0}]
 
-standsFor Extensible Data Notation
 fileType text
 isOpenSource true
 centralPackageRepositoryCount 0

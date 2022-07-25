@@ -1,6 +1,13 @@
 title D
 appeared 2001
 type pl
+creators Walter Bright and Andrei Alexandrescu
+website https://dlang.org
+fileExtensions d
+domainName dlang.org
+ registered 2010
+
+visualParadigm false
 
 features
  hasPointers true
@@ -26,6 +33,12 @@ features
  hasSemanticIndentation false
  hasStrings true
   "Hello world"
+
+lineCommentToken //
+multiLineCommentTokens /* */
+multiLineCommentTokens /+ +/
+printToken printf
+stringToken "
 
 wikipedia https://en.wikipedia.org/wiki/D_(programming_language)
  example
@@ -60,17 +73,10 @@ githubLanguage D
  fileExtensions d di
  trendingProjectsCount 0
 
-helloWorldCollection D
- // Hello World in D
- 
- import std.stdio;
- 
- void main()
- {
-    writefln("Hello World!");
- }
- 
-
+codeMirror d
+pygmentsHighlighter D
+ filename d.py
+ fileExtensions d di
 linguistGrammarRepo https://github.com/textmate/d.tmbundle
  firstCommit 2006
  lastCommit 2018
@@ -82,59 +88,25 @@ linguistGrammarRepo https://github.com/textmate/d.tmbundle
   {
   }
   
-
-website https://dlang.org
-
-tryItOnline d
-
-fileExtensions d
-fileType text
-wordRank 158
-
-tiobe D
- currentRank 26
-
-meetup dpl
- memberCount 1445
- groupCount 7
-
-projectEuler D
- memberCount
-  2019 228
-  2022 243
-
-hopl 3173
-
-quineRelay D
-
-ubuntuPackage gdc
-
-codeMirror d
-
-rosettaCode D
-
 languageServerProtocolProject https://github.com/Pure-D/serve-d
  writtenIn d
 languageServerProtocolProject https://github.com/d-language-server/dls
  writtenIn d
 
-lineCommentToken //
-visualParadigm false
-packageRepository https://code.dlang.org/
-gdbSupport true
-rijuRepl https://riju.codes/d
- example
-  import std.stdio;
-  
-  void main()
-  {
-      writeln("Hello, world!");
-  }
-  
-creators Walter Bright and Andrei Alexandrescu
-pygmentsHighlighter D
- filename d.py
- fileExtensions d di
+projectEuler D
+ memberCount
+  2019 228
+  2022 243
+helloWorldCollection D
+ // Hello World in D
+ 
+ import std.stdio;
+ 
+ void main()
+ {
+    writefln("Hello World!");
+ }
+ 
 leachim6 D♭♭
  filepath d/D♭♭
  example
@@ -144,10 +116,32 @@ leachim6 D♭♭
      return 0;
   }
   
-printToken printf
-multiLineCommentTokens /* */
-multiLineCommentTokens /+ +/
-domainName dlang.org
- registered 2010
-stringToken "
+rosettaCode D
+quineRelay D
+
+rijuRepl https://riju.codes/d
+ example
+  import std.stdio;
+  
+  void main()
+  {
+      writeln("Hello, world!");
+  }
+  
+tryItOnline d
+
+meetup dpl
+ memberCount 1445
+ groupCount 7
+
+tiobe D
+ currentRank 26
+hopl 3173
+
+packageRepository https://code.dlang.org/
+
 twitter d_programming
+ubuntuPackage gdc
+gdbSupport true
+fileType text
+wordRank 158

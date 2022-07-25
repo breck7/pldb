@@ -1,6 +1,24 @@
 title Fennel
 appeared 2016
 type pl
+creators Calvin Rose
+website https://fennel-lang.org/
+domainName fennel-lang.org
+ registered 2018
+
+features
+ hasLineComments true
+  ; A comment
+ hasComments true
+  ; A comment
+ hasPrintDebugging true
+ hasSemanticIndentation false
+ hasStrings true
+  "Hello world"
+
+lineCommentToken ;
+printToken print
+stringToken "
 
 example
  ;; Sample: read the state of the keyboard and move the player accordingly
@@ -23,28 +41,13 @@ githubRepo https://github.com/bakpakin/fennel
  description Lua Lisp Language
  issues 8
 
-website https://fennel-lang.org/
-creators Calvin Rose
-lineCommentToken ;
-features
- hasLineComments true
-  ; A comment
- hasComments true
-  ; A comment
- hasPrintDebugging true
- hasSemanticIndentation false
- hasStrings true
-  "Hello world"
 pygmentsHighlighter Fennel
  filename lisp.py
  fileExtensions fnl
+
 leachim6 Fennel
  filepath f/Fennel.fnl
  fileExtensions fnl
  example
   (print "Hello World")
   
-printToken print
-domainName fennel-lang.org
- registered 2018
-stringToken "

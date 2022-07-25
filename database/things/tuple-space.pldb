@@ -2,6 +2,15 @@ title Tuple space
 appeared 1988
 type pl
 
+features
+ hasLineComments true
+  // A comment
+ hasComments true
+  // A comment
+ hasSemanticIndentation false
+
+lineCommentToken //
+
 wikipedia https://en.wikipedia.org/wiki/Tuple_space
  example
   // Client
@@ -22,14 +31,6 @@ wikipedia https://en.wikipedia.org/wiki/Tuple_space
  dailyPageViews 56
  appeared 1986
 
-
 hopl 1443
 
 centralPackageRepositoryCount 0
-lineCommentToken //
-features
- hasLineComments true
-  // A comment
- hasComments true
-  // A comment
- hasSemanticIndentation false

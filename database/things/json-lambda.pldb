@@ -1,9 +1,11 @@
 title JSON lambda
-aka jl
 appeared 2017
 type queryLanguage
 creators Chris Done
 description jl ("JSON lambda") is a tiny functional language for querying and manipulating JSON.
+aka jl
+
+writtenIn haskell
 
 example
  map (\o -> { sha: o.sha, ps: map _.sha o.parents }) | filter (\o -> length o.ps > 1)
@@ -17,5 +19,3 @@ githubRepo https://github.com/chrisdone/jl
  updated 2022
  description Functional sed for JSON
  issues 5
-
-writtenIn haskell

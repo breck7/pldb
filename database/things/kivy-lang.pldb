@@ -1,6 +1,14 @@
 title kivy-lang
 appeared 2010
 type pl
+description A meta language that look like QML in QT
+reference https://github.com/kivy/kivy/blob/master/kivy/data/style.kv
+
+features
+ hasStrings true
+  "Hello world"
+
+stringToken "
 
 example
  #:kivy 1.0
@@ -10,10 +18,3 @@ example
      Button:
          text: "I'm another label"
          pos: (200, 200)
-
-description A meta language that look like QML in QT
-reference https://github.com/kivy/kivy/blob/master/kivy/data/style.kv
-stringToken "
-features
- hasStrings true
-  "Hello world"

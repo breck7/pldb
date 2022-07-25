@@ -1,6 +1,19 @@
 title Judoscript
 appeared 2001
 type pl
+creators James Jianbo Huang
+
+features
+ hasLineComments true
+  // A comment
+ hasComments true
+  // A comment
+ hasSemanticIndentation false
+ hasStrings true
+  "Hello world"
+
+lineCommentToken //
+stringToken "
 
 wikipedia https://en.wikipedia.org/wiki/Judoscript
  example
@@ -19,24 +32,12 @@ wikipedia https://en.wikipedia.org/wiki/Judoscript
  dailyPageViews 4
  appeared 2001
 
-isOpenSource true
-
-rosettaCode JudoScript
-
-centralPackageRepositoryCount 0
-creators James Jianbo Huang
-lineCommentToken //
-features
- hasLineComments true
-  // A comment
- hasComments true
-  // A comment
- hasSemanticIndentation false
- hasStrings true
-  "Hello world"
 leachim6 JudoScript
  filepath j/JudoScript
  example
   . "Hello World";
   
-stringToken "
+rosettaCode JudoScript
+
+isOpenSource true
+centralPackageRepositoryCount 0

@@ -2,6 +2,20 @@ title JADE
 appeared 1996
 type pl
 
+features
+ hasLineComments true
+  // A comment
+ hasComments true
+  // A comment
+ hasPrintDebugging true
+ hasSemanticIndentation false
+ hasStrings true
+  "Hello world"
+
+lineCommentToken //
+printToken write
+stringToken "
+
 wikipedia https://en.wikipedia.org/wiki/JADE_(programming_language)
  example
   helloWorld();
@@ -18,30 +32,11 @@ wikipedia https://en.wikipedia.org/wiki/JADE_(programming_language)
  revisionCount 172
  appeared 1996
 
+codeMirror jade
+
 helloWorldCollection JADE
  // Hello World in JADE
  write "Hello World";
-
-fileType text
-wordRank 9715
-
-tiobe JADE
-
-hopl 2130
-
-codeMirror jade
-
-centralPackageRepositoryCount 0
-lineCommentToken //
-features
- hasLineComments true
-  // A comment
- hasComments true
-  // A comment
- hasPrintDebugging true
- hasSemanticIndentation false
- hasStrings true
-  "Hello world"
 leachim6 Jade
  filepath j/Jade.jade
  fileExtensions jade
@@ -51,5 +46,10 @@ leachim6 Jade
   begin
      write "Hello World";
   end;
-printToken write
-stringToken "
+
+tiobe JADE
+hopl 2130
+
+fileType text
+wordRank 9715
+centralPackageRepositoryCount 0

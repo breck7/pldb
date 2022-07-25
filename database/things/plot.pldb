@@ -1,6 +1,7 @@
 title plot
 appeared 2019
 type template
+creators John Sundell
 
 example
  let html = HTML(
@@ -25,5 +26,3 @@ githubRepo https://github.com/JohnSundell/Plot
  updated 2022
  description A DSL for writing type-safe HTML, XML and RSS in Swift.
  issues 14
-
-creators John Sundell

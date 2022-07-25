@@ -1,12 +1,15 @@
 title Literate CoffeeScript
 appeared 2013
 type pl
+description
+ Besides being used as an ordinary programming language, CoffeeScript may also be written in “literate” mode. If you name your file with a .litcoffee extension, you can write it as a Markdown document — a document that also happens to be executable CoffeeScript code. The compiler will treat any indented blocks (Markdown’s way of indicating source code) as executable code, and ignore the rest as comments. Code blocks must also be separated from comments by at least one blank line.
+website https://coffeescript.org/#literate
+reference https://news.ycombinator.com/item?id=5277916
+domainName coffeescript.org
+ registered 2009
 
 features
  hasSemanticIndentation true
-
-description
- Besides being used as an ordinary programming language, CoffeeScript may also be written in “literate” mode. If you name your file with a .litcoffee extension, you can write it as a Markdown document — a document that also happens to be executable CoffeeScript code. The compiler will treat any indented blocks (Markdown’s way of indicating source code) as executable code, and ignore the rest as comments. Code blocks must also be separated from comments by at least one blank line.
 
 githubLanguage Literate CoffeeScript
  fileExtensions litcoffee
@@ -136,9 +139,5 @@ linguistGrammarRepo https://github.com/atom/language-coffee-script
         assignedVariables: ->
           "#{v.name} = #{v.type.value}" for v in @variables when v.type.assigned
 
-website https://coffeescript.org/#literate
-reference https://news.ycombinator.com/item?id=5277916
 fileType text
 centralPackageRepositoryCount 0
-domainName coffeescript.org
- registered 2009

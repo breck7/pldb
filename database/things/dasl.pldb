@@ -1,6 +1,7 @@
 title Distributed Application Specification Language
 appeared 1999
 type pl
+standsFor Distributed Application Specification Language
 
 wikipedia https://en.wikipedia.org/wiki/Distributed_Application_Specification_Language
  summary The DASL Programming Language (Distributed Application Specification Language) is a high-level, strongly typed programming language originally developed at Sun Microsystems Laboratories between 1999 and 2003 as part of the Ace Project.  The goals of the project were to enable rapid development of web-based applications based on Sun's J2EE architecture, and to eliminate the steep learning curve of platform-specific details. DASL defines an application as a domain model with one or more logical presentation models, where a logical presentation model consists of a choreography of the domain model objects described in a set of forms with attached actions.  DASL generates the graphical user interface directly from the logical presentation.  DASL is unique among modern application programming languages in its ability to generate a modern graphic user interface for an application without requiring the programmer to define the user interface explicitly, while allowing the programmer to control the look and feel of the generated graphic user interface. The DASL language is partially declarative and partially procedural. Description of object/data structures and persistence, and the description of the logical presentation, are declarative. Basic object constraints and behavior are declarative, while additional object behaviors are specified procedurally as methods. Queries can be defined either declaratively or by writing methods. The language and development environment are a practical realization of the model-driven architecture (MDA) approach. The programmer uses DASL to produce the platform-independent model or PIM, and the language code generators automatically produce and deploy the platform-specific model or PSM. New PSMs may be introduced by writing new code generators.
@@ -11,6 +12,5 @@ wikipedia https://en.wikipedia.org/wiki/Distributed_Application_Specification_La
  dailyPageViews 10
  appeared 1999
 
-standsFor Distributed Application Specification Language
 fileType text
 centralPackageRepositoryCount 0

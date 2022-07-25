@@ -1,18 +1,21 @@
 title Vale
-related fstar
-standsFor Verified Assembly Language for Everest
-type assembly
-githubRepo https://github.com/project-everest/vale
- firstCommit 2017
- stars 217
- forks 18
- subscribers 32
- created 2017
- updated 2022
- description Verified Assembly Language for Everest
- issues 14
-description Vale is a tool for constructing formally verified high-performance assembly language code, with an emphasis on cryptographic code. It uses existing verification frameworks, such as Dafny and F*, for formal verification. It supports multiple architectures, such as x86, x64, and ARM, and multiple platforms, such as Windows, Mac, and Linux. Additional architectures and platforms can be supported with no changes to the Vale tool.
 appeared 2017
+type assembly
+creators Chris Hawblitzel
+description Vale is a tool for constructing formally verified high-performance assembly language code, with an emphasis on cryptographic code. It uses existing verification frameworks, such as Dafny and F*, for formal verification. It supports multiple architectures, such as x86, x64, and ARM, and multiple platforms, such as Windows, Mac, and Linux. Additional architectures and platforms can be supported with no changes to the Vale tool.
+standsFor Verified Assembly Language for Everest
+
+related fstar
+
+features
+ hasLineComments true
+  // A comment
+ hasComments true
+  // A comment
+ hasSemanticIndentation false
+
+lineCommentToken //
+
 example
  procedure ReadA(ghost a:seq(uint32),inline b:bool)
   reads r0; mem;
@@ -45,11 +48,13 @@ example
    AddOne(r7);
    AddNToR7(n - 1);
  }
-creators Chris Hawblitzel
-lineCommentToken //
-features
- hasLineComments true
-  // A comment
- hasComments true
-  // A comment
- hasSemanticIndentation false
+
+githubRepo https://github.com/project-everest/vale
+ firstCommit 2017
+ stars 217
+ forks 18
+ subscribers 32
+ created 2017
+ updated 2022
+ description Verified Assembly Language for Everest
+ issues 14

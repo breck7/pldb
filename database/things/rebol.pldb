@@ -2,6 +2,12 @@ title REBOL
 appeared 1997
 type pl
 creators Carl Sassenrath
+website http://www.rebol.com
+standsFor Relative Expression-Based Object Language
+fileExtensions r reb
+corporateDevelopers REBOL Technologies
+domainName rebol.com
+ registered 1997
 
 features
  hasComments true
@@ -11,6 +17,10 @@ features
  hasSemanticIndentation false
  hasStrings true
   "Hello world"
+
+lineCommentToken ;
+printToken print
+stringToken "
 
 wikipedia https://en.wikipedia.org/wiki/REBOL
  example
@@ -34,11 +44,9 @@ githubLanguage Rebol
  fileExtensions reb r r2 r3 rebol
  trendingProjectsCount 0
 
-helloWorldCollection Relative Expression-Based Object Language
- ; Hello World in REBOL
- 
- print "Hello World!"
-
+pygmentsHighlighter REBOL
+ filename rebol.py
+ fileExtensions r r3 reb
 linguistGrammarRepo https://github.com/Oldes/Sublime-REBOL
  firstCommit 2014
  lastCommit 2015
@@ -53,48 +61,37 @@ linguistGrammarRepo https://github.com/Oldes/Sublime-REBOL
   hello
   
 
-website http://www.rebol.com
-standsFor Relative Expression-Based Object Language
-
-tryItOnline rebol
-
-fileExtensions r reb
-fileType text
-isOpenSource true
-
-tiobe REBOL
-
 projectEuler REBOL
  memberCount
   2019 14
   2022 15
-
-hopl 2438
-
-rosettaCode REBOL
-
-corporateDevelopers REBOL Technologies
-lineCommentToken ;
-centralPackageRepositoryCount 0
-rijuRepl https://riju.codes/rebol
- example
-  REBOL [Title: "Main"]
-  print "Hello, world!"
-  
-goodreads
- title|year|author|goodreadsId|rating|ratings|reviews
- Rebol for Dummies [With Rebol for 37 Systems]|2000|Ralph Roberts|2387078|3.00|5|0
- Rebol Programming||Olivier Auverlot|5823181|0.0|0|0
-pygmentsHighlighter REBOL
- filename rebol.py
- fileExtensions r r3 reb
+helloWorldCollection Relative Expression-Based Object Language
+ ; Hello World in REBOL
+ 
+ print "Hello World!"
 leachim6 Rebol
  filepath r/Rebol.reb
  fileExtensions reb
  example
   print "Hello World"
   
-printToken print
-domainName rebol.com
- registered 1997
-stringToken "
+rosettaCode REBOL
+
+rijuRepl https://riju.codes/rebol
+ example
+  REBOL [Title: "Main"]
+  print "Hello, world!"
+  
+tryItOnline rebol
+
+goodreads
+ title|year|author|goodreadsId|rating|ratings|reviews
+ Rebol for Dummies [With Rebol for 37 Systems]|2000|Ralph Roberts|2387078|3.00|5|0
+ Rebol Programming||Olivier Auverlot|5823181|0.0|0|0
+
+tiobe REBOL
+hopl 2438
+
+fileType text
+isOpenSource true
+centralPackageRepositoryCount 0

@@ -1,20 +1,7 @@
 title NL
 appeared 1993
 type application
-
-wikipedia https://en.wikipedia.org/wiki/Nl_(format)
- related ampl netlib
- summary nl is a file format for presenting and archiving mathematical programming problems. Initially this format has been invented for connecting solvers to AMPL. It has also been adopted by other systems such as COIN-OR (as one of the input formats), FortSP (for interacting with external solvers), and Coopr (as one of its output formats). The nl format supports a wide range of problem types, among them:  Linear programming Quadratic programming Nonlinear programming Mixed-integer programming Mixed-integer quadratic programming with or without convex quadratic constraints Mixed-integer nonlinear programming Second-order cone programming Global optimization Semidefinite programming problems with bilinear matrix inequalities Complementarity problems (MPECs) in discrete or continuous variables Constraint programmingThe nl format is low-level and is designed for compactness, not for readability. It has both binary and textual representation. Most commercial and academic solvers accept this format either directly or through special driver programs. The open-source AMPL Solver Library (ASL) distributed via Netlib  and AMPL/MP library  provide nl parsers that are used in many solvers.
- backlinksCount 59
- pageId 26492433
- created 2010
- revisionCount 38
- dailyPageViews 11
- appeared 1993
-
-githubLanguage NL
- fileExtensions nl
- trendingProjectsCount 0
+reference https://cfwebprod.sandia.gov/cfdocs/CompResearch/docs/nlwrite20051130.pdf
 
 example
  g3 0 1 0	# problem assign0
@@ -103,10 +90,22 @@ example
  8 2
  
 
-reference https://cfwebprod.sandia.gov/cfdocs/CompResearch/docs/nlwrite20051130.pdf
-fileType text
-wordRank 4393
+wikipedia https://en.wikipedia.org/wiki/Nl_(format)
+ related ampl netlib
+ summary nl is a file format for presenting and archiving mathematical programming problems. Initially this format has been invented for connecting solvers to AMPL. It has also been adopted by other systems such as COIN-OR (as one of the input formats), FortSP (for interacting with external solvers), and Coopr (as one of its output formats). The nl format supports a wide range of problem types, among them:  Linear programming Quadratic programming Nonlinear programming Mixed-integer programming Mixed-integer quadratic programming with or without convex quadratic constraints Mixed-integer nonlinear programming Second-order cone programming Global optimization Semidefinite programming problems with bilinear matrix inequalities Complementarity problems (MPECs) in discrete or continuous variables Constraint programmingThe nl format is low-level and is designed for compactness, not for readability. It has both binary and textual representation. Most commercial and academic solvers accept this format either directly or through special driver programs. The open-source AMPL Solver Library (ASL) distributed via Netlib  and AMPL/MP library  provide nl parsers that are used in many solvers.
+ backlinksCount 59
+ pageId 26492433
+ created 2010
+ revisionCount 38
+ dailyPageViews 11
+ appeared 1993
+
+githubLanguage NL
+ fileExtensions nl
+ trendingProjectsCount 0
 
 hopl 5545
 
+fileType text
+wordRank 4393
 centralPackageRepositoryCount 0

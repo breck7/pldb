@@ -1,8 +1,13 @@
 title fetlang
 appeared 2017
 type esolang
-
 description A nsfw esolang.
+
+features
+ hasStrings true
+  "Hello world"
+
+stringToken "
 
 githubRepo https://github.com/Property404/fetlang
  stars 1432
@@ -14,16 +19,13 @@ githubRepo https://github.com/Property404/fetlang
  description Fetish-themed programming language
  issues 9
 
-fileType text
-isOpenSource true
-centralPackageRepositoryCount 0
 leachim6 Fetlang
  filepath f/Fetlang.fet
  fileExtensions fet
  example
   Make slave scream "Hello World"
   
-stringToken "
-features
- hasStrings true
-  "Hello world"
+
+fileType text
+isOpenSource true
+centralPackageRepositoryCount 0

@@ -1,6 +1,7 @@
 title RPM Spec
 appeared 1997
 type application
+reference https://rpm-packaging-guide.github.io/#working-with-spec-files
 
 githubLanguage RPM Spec
  fileExtensions spec
@@ -60,6 +61,5 @@ linguistGrammarRepo https://github.com/waveclaw/language-rpm-spec
   
   %changelog
 
-reference https://rpm-packaging-guide.github.io/#working-with-spec-files
 fileType text
 centralPackageRepositoryCount 0

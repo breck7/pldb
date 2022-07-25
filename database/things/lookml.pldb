@@ -1,6 +1,18 @@
 title LookML
 appeared 2012
 type pl
+website https://docs.looker.com/data-modeling/learning-lookml/what-is-lookml
+reference https://docs.looker.com/relnotes/v1-release-notes#looker_1.10.13
+corporateDevelopers Looker
+
+features
+ hasLineComments true
+  # A comment
+ hasComments true
+  # A comment
+ hasSemanticIndentation false
+
+lineCommentToken #
 
 example
  ######################################
@@ -134,15 +146,5 @@ linguistGrammarRepo https://github.com/atom/language-yaml
         - headlines.name
         - users.id
 
-website https://docs.looker.com/data-modeling/learning-lookml/what-is-lookml
-reference https://docs.looker.com/relnotes/v1-release-notes#looker_1.10.13
 fileType text
-corporateDevelopers Looker
 centralPackageRepositoryCount 0
-lineCommentToken #
-features
- hasLineComments true
-  # A comment
- hasComments true
-  # A comment
- hasSemanticIndentation false

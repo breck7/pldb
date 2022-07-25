@@ -1,11 +1,10 @@
 title Bash
 appeared 1989
 type pl
-subreddit bash
- memberCount
-  2022 54171
-
 creators Brian Fox
+website https://www.gnu.org/software/bash/
+aka Shell
+country United States
 
 features
  hasComments true
@@ -32,6 +31,12 @@ features
   FOO="bar"
  hasImports true
   source ./bash.sh
+
+lineCommentToken #
+printToken echo
+assignmentToken =
+stringToken "
+keywords if then do else elif while until for in esac fi fin fil done exit set unset export function
 
 wikipedia https://en.wikipedia.org/wiki/Bash_(Unix_shell)
  example
@@ -76,52 +81,19 @@ githubLanguage Shell
   ashishb android-security-awesome https://github.com/ashishb.png https://github.com/ashishb/android-security-awesome Shell #89e051 4067 1026 65 "A collection of android security related resources"
  trendingProjectsCount 26
 
+monaco shell
+pygmentsHighlighter Bash
+ filename shell.py
+ fileExtensions sh ksh bash ebuild eclass exheres-0 exlib zsh .bashrc bashrc .bash_* bash_* zshrc .zshrc .kshrc kshrc PKGBUILD
 linguistGrammarRepo https://github.com/atom/language-shellscript
  sampleCount 17
  example
   #!/bin/sh
   echo "sh"
   
-
-website https://www.gnu.org/software/bash/
-aka Shell
-
-tryItOnline bash
-
-country United States
-fileType text
-isOpenSource true
-
-tiobe Bash
-
-hopl 1851
-
-quineRelay bash
-
-ubuntuPackage bash
-
-lineCommentToken #
-
 languageServerProtocolProject https://github.com/mads-hartmann/bash-language-server
  writtenIn typescript
-jupyterKernel https://github.com/takluyver/bash_kernel
-stackOverflowSurvey
- 2021
-  users 22385
-  medianSalary 71340
-  fans 14043
-  percentageUsing 0.27
-packageRepository http://www.bpkg.sh/
-rijuRepl https://riju.codes/bash
- example
-  echo "Hello, world!"
-  
- description Unix shell and command language written by Brian Fox for the GNU Project as a free software replacement for the Bourne shell
- fileExtensions bash sh
- githubRepo https://savannah.gnu.org/projects/bash/
-pygmentsHighlighter Bash
- filename shell.py
- fileExtensions sh ksh bash ebuild eclass exheres-0 exlib zsh .bashrc bashrc .bash_* bash_* zshrc .zshrc .kshrc kshrc PKGBUILD
+
 leachim6 Shell
  filepath s/Shell.sh
  fileExtensions sh
@@ -129,8 +101,34 @@ leachim6 Shell
   #!/bin/sh
   echo "Hello World"
   
-printToken echo
-assignmentToken =
-monaco shell
-keywords if then do else elif while until for in esac fi fin fil done exit set unset export function
-stringToken "
+quineRelay bash
+
+rijuRepl https://riju.codes/bash
+ example
+  echo "Hello, world!"
+  
+ description Unix shell and command language written by Brian Fox for the GNU Project as a free software replacement for the Bourne shell
+ fileExtensions bash sh
+ githubRepo https://savannah.gnu.org/projects/bash/
+tryItOnline bash
+
+stackOverflowSurvey
+ 2021
+  users 22385
+  medianSalary 71340
+  fans 14043
+  percentageUsing 0.27
+
+subreddit bash
+ memberCount
+  2022 54171
+
+tiobe Bash
+hopl 1851
+
+packageRepository http://www.bpkg.sh/
+
+ubuntuPackage bash
+jupyterKernel https://github.com/takluyver/bash_kernel
+fileType text
+isOpenSource true

@@ -1,6 +1,13 @@
 title CSV
 appeared 1972
 type dataNotation
+standsFor comma-separated values
+fileExtensions csv
+
+example
+ Year,Make,Model,Length
+ 1997,Ford,E350,2.34
+ 2000,Mercury,Cougar,2.38
 
 wikipedia https://en.wikipedia.org/wiki/Comma-separated_values
  example
@@ -20,15 +27,7 @@ githubLanguage CSV
  fileExtensions csv
  trendingProjectsCount 0
 
-example
- Year,Make,Model,Length
- 1997,Ford,E350,2.34
- 2000,Mercury,Cougar,2.38
-
-standsFor comma-separated values
-fileExtensions csv
-fileType text
-
 antlr https://github.com/antlr/grammars-v4/tree/master/csv
 
+fileType text
 centralPackageRepositoryCount 0

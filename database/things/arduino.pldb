@@ -2,6 +2,14 @@ title Arduino
 appeared 2005
 type pl
 
+features
+ hasPrintDebugging true
+ hasStrings true
+  "Hello world"
+
+printToken Serial.println
+stringToken "
+
 wikipedia https://en.wikipedia.org/wiki/Arduino
  example
   #define LED_PIN 13                  // Pin number attached to LED.
@@ -25,10 +33,10 @@ wikipedia https://en.wikipedia.org/wiki/Arduino
  dailyPageViews 2640
  appeared 2003
 
-centralPackageRepositoryCount 0
 pygmentsHighlighter Arduino
  filename c_like.py
  fileExtensions ino
+
 leachim6 Arduino
  filepath a/Arduino.ino
  fileExtensions ino
@@ -42,9 +50,5 @@ leachim6 Arduino
   
   }
   
-printToken Serial.println
-features
- hasPrintDebugging true
- hasStrings true
-  "Hello world"
-stringToken "
+
+centralPackageRepositoryCount 0

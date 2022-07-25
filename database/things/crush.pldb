@@ -1,7 +1,11 @@
 title crush
 appeared 2020
 type pl
+creators Axel Liljencrantz
 description Crush is an attempt to make a traditional command line shell that is also a modern programming language. It has the features one would expect from a modern programming language like a type system, closures and lexical scoping, but with a syntax geared toward both batch and interactive shell usage.
+reference https://news.ycombinator.com/item?id=24079001
+
+related powershell
 
 githubRepo https://github.com/liljencrantz/crush
  firstCommit 2019
@@ -12,7 +16,3 @@ githubRepo https://github.com/liljencrantz/crush
  updated 2022
  description Crush is a command line shell that is also a powerful modern programming language.
  issues 18
-
-reference https://news.ycombinator.com/item?id=24079001
-related powershell
-creators Axel Liljencrantz

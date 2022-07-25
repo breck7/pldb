@@ -1,6 +1,7 @@
 title Frege
 appeared 2011
 type pl
+website https://github.com/Frege/frege
 
 features
  hasTypeInference true
@@ -12,6 +13,19 @@ features
   {- A comment
   -}
  hasSemanticIndentation false
+
+lineCommentToken --
+multiLineCommentTokens {- -}
+
+githubRepo https://github.com/frege/frege
+ firstCommit 2011
+ stars 3546
+ forks 146
+ subscribers 154
+ created 2012
+ updated 2022
+ description Frege is a Haskell for the JVM. It brings purely functional programing to the Java platform.
+ issues 45
 
 wikipedia https://en.wikipedia.org/wiki/Frege_(programming_language)
  example
@@ -103,29 +117,13 @@ linguistGrammarRepo https://github.com/atom-haskell/language-haskell
           Thread.sleep 999
                   
 
-website https://github.com/Frege/frege
-
-twitter fregelang
-
-fileType text
-isOpenSource true
-
 projectEuler Frege
  memberCount
   2019 2
   2022 3
-
 rosettaCode Frege
 
+twitter fregelang
+fileType text
+isOpenSource true
 centralPackageRepositoryCount 0
-lineCommentToken --
-multiLineCommentTokens {- -}
-githubRepo https://github.com/frege/frege
- firstCommit 2011
- stars 3546
- forks 146
- subscribers 154
- created 2012
- updated 2022
- description Frege is a Haskell for the JVM. It brings purely functional programing to the Java platform.
- issues 45

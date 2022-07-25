@@ -1,8 +1,18 @@
 title kitten
 appeared 2012
 type pl
-
+creators Jon Purdy
 description <a href='http://kittenlang.org'>Kitten</a> is a statically typed concatenative language with effect types.
+website http://kittenlang.org/
+domainName kittenlang.org
+
+features
+ hasPrintDebugging true
+ hasStrings true
+  "Hello world"
+
+printToken say
+stringToken "
 
 githubRepo https://github.com/evincarofautumn/kitten
  firstCommit 2011
@@ -14,28 +24,19 @@ githubRepo https://github.com/evincarofautumn/kitten
  description A statically typed concatenative systems programming language.
  issues 65
 
-website http://kittenlang.org/
-fileType text
-isOpenSource true
-
-rosettaCode Kitten
-
-centralPackageRepositoryCount 0
-rijuRepl https://riju.codes/kitten
- example
-  "Hello, world!" say
-  
-creators Jon Purdy
 leachim6 Kitten
  filepath k/Kitten.ktn
  fileExtensions ktn
  example
   "Hello World" say
   
-printToken say
-features
- hasPrintDebugging true
- hasStrings true
-  "Hello world"
-domainName kittenlang.org
-stringToken "
+rosettaCode Kitten
+
+rijuRepl https://riju.codes/kitten
+ example
+  "Hello, world!" say
+  
+
+fileType text
+isOpenSource true
+centralPackageRepositoryCount 0

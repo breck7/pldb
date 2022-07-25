@@ -1,6 +1,13 @@
 title RISC-V
 appeared 2010
 type isa
+aka riscv
+
+features
+ hasStrings true
+  "Hello world"
+
+stringToken "
 
 wikipedia https://en.wikipedia.org/wiki/RISC-V
  related linux verilog llvmir freebsd javascript assembly-language mips powerpc sparc x86-isa arm mmx
@@ -12,9 +19,20 @@ wikipedia https://en.wikipedia.org/wiki/RISC-V
  revisionCount 714
  appeared 2010
 
-fileType na
-centralPackageRepositoryCount 0
-aka riscv
+leachim6 RISC V
+ filepath r/RISC V.s
+ example
+  .data
+  hello_world: .asciiz "Hello World"
+  
+  .text
+  main:   la      a1, hello_world
+          li      a0, 4
+          ecall
+  
+          li      a0, 10
+          ecall
+
 rijuRepl https://riju.codes/riscv
  example
   	.text
@@ -32,20 +50,6 @@ rijuRepl https://riju.codes/riscv
   message:
   	.string "Hello, world!\n"
   
-leachim6 RISC V
- filepath r/RISC V.s
- example
-  .data
-  hello_world: .asciiz "Hello World"
-  
-  .text
-  main:   la      a1, hello_world
-          li      a0, 4
-          ecall
-  
-          li      a0, 10
-          ecall
-stringToken "
-features
- hasStrings true
-  "Hello world"
+
+fileType na
+centralPackageRepositoryCount 0

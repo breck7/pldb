@@ -1,6 +1,9 @@
 title Clarion
 appeared 1986
 type pl
+website http://www.softvelocity.com
+domainName softvelocity.com
+ registered 2000
 
 wikipedia https://en.wikipedia.org/wiki/Clarion_(programming_language)
  example
@@ -23,21 +26,6 @@ githubLanguage Clarion
  fileExtensions clw
  trendingProjectsCount 0
 
-helloWorldCollection Clarion
- !Hello World in Clarion 
-  
-   PROGRAM
-  
-  MAP
-  END
-  
-  CODE
-  
-  MESSAGE('Hello World!')
-  
-  RETURN
- 
-
 linguistGrammarRepo https://github.com/fushnisoft/SublimeClarion
  firstCommit 2011
  lastCommit 2018
@@ -56,15 +44,24 @@ linguistGrammarRepo https://github.com/fushnisoft/SublimeClarion
   
     RETURN
 
-website http://www.softvelocity.com
-fileType text
-
-tiobe Clarion
-
-hopl 1903
-
+helloWorldCollection Clarion
+ !Hello World in Clarion 
+  
+   PROGRAM
+  
+  MAP
+  END
+  
+  CODE
+  
+  MESSAGE('Hello World!')
+  
+  RETURN
+ 
 rosettaCode Clarion
 
+tiobe Clarion
+hopl 1903
+
+fileType text
 centralPackageRepositoryCount 0
-domainName softvelocity.com
- registered 2000

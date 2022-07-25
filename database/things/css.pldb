@@ -2,6 +2,8 @@ title CSS
 appeared 1996
 type stylesheetLanguage
 creators Håkon Wium Lie
+reference https://examples.p6c.dev/categories/parsers/CSSGrammar.html
+standsFor Cascading Style Sheets
 
 features
  canWriteToDisk false
@@ -17,6 +19,9 @@ features
  hasSemanticIndentation false
  hasStrings true
   "Hello world"
+
+multiLineCommentTokens /* */
+stringToken "
 
 wikipedia https://en.wikipedia.org/wiki/Cascading_Style_Sheets
  example
@@ -64,13 +69,12 @@ githubLanguage CSS
   kitian616 jekyll-TeXt-theme https://github.com/kitian616.png https://github.com/kitian616/jekyll-TeXt-theme CSS #563d7c 833 788 65 "💎 🐳 A super customizable Jekyll theme for personal site, team site, blog, project, documentation, etc."
  trendingProjectsCount 26
 
-helloWorldCollection Cascading Style Sheets
- /* Hello World in CSS */
- body:before {
-     content: "Hello World";
- }
- 
-
+antlr https://github.com/antlr/grammars-v4/tree/master/css3
+monaco css
+codeMirror css
+pygmentsHighlighter CSS
+ filename css.py
+ fileExtensions css
 linguistGrammarRepo https://github.com/atom/language-css
  firstCommit 2013
  lastCommit 2018
@@ -111,31 +115,12 @@ linguistGrammarRepo https://github.com/atom/language-css
   input[type="search"]::-webkit-search-decoration,input[type="search"]::-webkit-search-cancel-button{-webkit-appearance:none;}
   textarea{overflow:
 
-reference https://examples.p6c.dev/categories/parsers/CSSGrammar.html
-standsFor Cascading Style Sheets
-fileType text
-wordRank 3840
-
-meetup css
- memberCount 608659
- groupCount 963
-
-linkedInSkill css
- 2018 2871891
-
-codeMirror css
-
-antlr https://github.com/antlr/grammars-v4/tree/master/css3
-
-indeedJobs css developer
- 2017 16898
-centralPackageRepositoryCount 0
-goodreads
- title|year|author|goodreadsId|rating|ratings|reviews
- HTML, XHTML & CSS for Dummies|2008|Ed Tittel|2557278|3.55|109|14
-pygmentsHighlighter CSS
- filename css.py
- fileExtensions css
+helloWorldCollection Cascading Style Sheets
+ /* Hello World in CSS */
+ body:before {
+     content: "Hello World";
+ }
+ 
 leachim6 CSS
  filepath c/CSS.css
  fileExtensions css
@@ -144,6 +129,20 @@ leachim6 CSS
       content: "Hello World";
   }
   
-multiLineCommentTokens /* */
-monaco css
-stringToken "
+
+indeedJobs css developer
+ 2017 16898
+linkedInSkill css
+ 2018 2871891
+
+meetup css
+ memberCount 608659
+ groupCount 963
+
+goodreads
+ title|year|author|goodreadsId|rating|ratings|reviews
+ HTML, XHTML & CSS for Dummies|2008|Ed Tittel|2557278|3.55|109|14
+
+fileType text
+wordRank 3840
+centralPackageRepositoryCount 0

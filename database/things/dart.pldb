@@ -2,12 +2,12 @@ title Dart
 appeared 2011
 type pl
 creators Lars Bak
+website http://www.dartlang.org
+fileExtensions dart
+corporateDevelopers Google
+domainName dartlang.org
+ registered 2011
 
-subreddit dartlang
- memberCount
-  2022 35109
-
-lineCommentToken //
 features
  hasComments true
   // Hi
@@ -26,6 +26,12 @@ features
  hasRegularExpressionsSyntaxSugar true
  hasStrings true
   'Hello world'
+
+lineCommentToken //
+multiLineCommentTokens /* */
+printToken print
+stringToken '
+keywords abstract as assert async await break case catch class const continue covariant default deferred do dynamic else enum export extends external factory false final finally for get if implements import in is library new null operator part rethrow return set static super switch sync this throw true try typedef var void while with yield
 
 wikipedia https://en.wikipedia.org/wiki/Dart_(programming_language)
  example
@@ -107,13 +113,11 @@ githubLanguage Dart
   pauldemarco flutter_blue https://github.com/pauldemarco.png https://github.com/pauldemarco/flutter_blue Dart #00B4AB 834 288 67 "Bluetooth plugin for Flutter"
  trendingProjectsCount 26
 
-helloWorldCollection Dart
- // Hello world in Dart
- 
- main() {
-    print('Hello world!');
- }
-
+monaco dart
+codeMirror dart
+pygmentsHighlighter Dart
+ filename javascript.py
+ fileExtensions dart
 linguistGrammarRepo https://github.com/dart-atom/dartlang
  firstCommit 2015
  lastCommit 2018
@@ -141,50 +145,21 @@ linguistGrammarRepo https://github.com/dart-atom/dartlang
     print('distance from p to q = ${p.distanceTo(q)}');
   }
   
-
-website http://www.dartlang.org
-
-tryItOnline dart
-
-fileExtensions dart
-fileType text
-isOpenSource true
-
-tiobe Dart
- currentRank 22
+languageServerProtocolProject https://github.com/dart-lang/sdk
+ writtenIn dart
+languageServerProtocolProject https://github.com/natebosch/dart_language_server
+ writtenIn dart
 
 projectEuler Dart
  memberCount
   2019 22
   2022 54
-
-codeMirror dart
-
-rosettaCode Dart
-
-corporateDevelopers Google
-languageServerProtocolProject https://github.com/dart-lang/sdk
- writtenIn dart
-languageServerProtocolProject https://github.com/natebosch/dart_language_server
- writtenIn dart
-keywords abstract as assert async await break case catch class const continue covariant default deferred do dynamic else enum export extends external factory false final finally for get if implements import in is library new null operator part rethrow return set static super switch sync this throw true try typedef var void while with yield
-stackOverflowSurvey
- 2021
-  users 4965
-  medianSalary 32986
-  fans 7018
-  percentageUsing 0.06
-packageRepository https://pub.dartlang.org/
-rijuRepl https://riju.codes/dart
- example
-  void main() {
-    print('Hello, world!');
-  }
-  
-multiLineCommentTokens /* */
-pygmentsHighlighter Dart
- filename javascript.py
- fileExtensions dart
+helloWorldCollection Dart
+ // Hello world in Dart
+ 
+ main() {
+    print('Hello world!');
+ }
 leachim6 Dart
  filepath d/Dart.dart
  fileExtensions dart
@@ -193,9 +168,32 @@ leachim6 Dart
     print('Hello World');
   }
   
-printToken print
-domainName dartlang.org
- registered 2011
-monaco dart
-stringToken '
+rosettaCode Dart
+
+rijuRepl https://riju.codes/dart
+ example
+  void main() {
+    print('Hello, world!');
+  }
+  
+tryItOnline dart
+
+stackOverflowSurvey
+ 2021
+  users 4965
+  medianSalary 32986
+  fans 7018
+  percentageUsing 0.06
+
+subreddit dartlang
+ memberCount
+  2022 35109
+
+tiobe Dart
+ currentRank 22
+
+packageRepository https://pub.dartlang.org/
+
 twitter dart_lang
+fileType text
+isOpenSource true

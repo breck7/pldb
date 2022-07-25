@@ -1,13 +1,22 @@
 title Nit
 appeared 2008
 type pl
+creators Jean Privat
+website https://nitlanguage.org/
+reference http://nitlanguage.org/nit.git/
+domainName nitlanguage.org
+ registered 2008
+
+features
+ hasPrintDebugging true
+ hasStrings true
+  "Hello world"
+
+printToken print
+stringToken "
 
 example
  print "Hello, World!"
-
-githubLanguage Nit
- fileExtensions nit
- trendingProjectsCount 0
 
 githubRepo https://github.com/nitlang/nit
  firstCommit 2008
@@ -19,6 +28,13 @@ githubRepo https://github.com/nitlang/nit
  description Nit language
  issues 169
 
+githubLanguage Nit
+ fileExtensions nit
+ trendingProjectsCount 0
+
+pygmentsHighlighter Nit
+ filename nit.py
+ fileExtensions nit
 linguistGrammarRepo https://github.com/R4PaSs/Sublime-Nit
  firstCommit 2014
  lastCommit 2015
@@ -29,18 +45,6 @@ linguistGrammarRepo https://github.com/R4PaSs/Sublime-Nit
   print "hello world"
   
 
-website https://nitlanguage.org/
-reference http://nitlanguage.org/nit.git/
-fileType text
-isOpenSource true
-
-rosettaCode Nit
-
-centralPackageRepositoryCount 0
-creators Jean Privat
-pygmentsHighlighter Nit
- filename nit.py
- fileExtensions nit
 leachim6 Nit
  filepath n/Nit.nit
  fileExtensions nit
@@ -48,11 +52,8 @@ leachim6 Nit
   print "Hello World"
   
   
-printToken print
-features
- hasPrintDebugging true
- hasStrings true
-  "Hello world"
-domainName nitlanguage.org
- registered 2008
-stringToken "
+rosettaCode Nit
+
+fileType text
+isOpenSource true
+centralPackageRepositoryCount 0

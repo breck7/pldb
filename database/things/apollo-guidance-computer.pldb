@@ -1,16 +1,16 @@
 title AGC
 appeared 1966
 type assembly
+standsFor Apollo Guidance Computer
 
-wikipedia https://en.wikipedia.org/wiki/Apollo_Guidance_Computer
- related si assembly-language
- summary The Apollo Guidance Computer (AGC) was a digital computer produced for the Apollo program that was installed on board each Apollo Command Module (CM) and Lunar Module (LM). The AGC provided computation and electronic interfaces for guidance, navigation, and control of the spacecraft. The AGC has a 16-bit word length, with 15 data bits and one parity bit. Most of the software on the AGC is stored in a special read-only memory known as core rope memory, fashioned by weaving wires through magnetic cores, though a small amount of read-write core memory is available. Astronauts communicated with the AGC using a numeric display and keyboard called the DSKY (DiSplay&KeYboard, pronounced 'DISS-key'). The AGC and its DSKY user interface were developed in the early 1960s for the Apollo program by the MIT Instrumentation Laboratory and first flew in 1966. The AGC was one of the first integrated circuit-based computers. The computer's performance was comparable to the first generation of home computers from the late 1970s, such as the Apple II, TRS-80, and Commodore PET.
- backlinksCount 174
- pageId 188887
- created 2003
- revisionCount 733
- dailyPageViews 561
- appeared 1966
+features
+ hasLineComments true
+  # A comment
+ hasComments true
+  # A comment
+ hasSemanticIndentation false
+
+lineCommentToken #
 
 example
  SWCHSET     STORE   NOMTPI
@@ -32,7 +32,15 @@ example
          TC  P34/P74A    # PROCEED
          TC  -7      # V32
 
-standsFor Apollo Guidance Computer
+wikipedia https://en.wikipedia.org/wiki/Apollo_Guidance_Computer
+ related si assembly-language
+ summary The Apollo Guidance Computer (AGC) was a digital computer produced for the Apollo program that was installed on board each Apollo Command Module (CM) and Lunar Module (LM). The AGC provided computation and electronic interfaces for guidance, navigation, and control of the spacecraft. The AGC has a 16-bit word length, with 15 data bits and one parity bit. Most of the software on the AGC is stored in a special read-only memory known as core rope memory, fashioned by weaving wires through magnetic cores, though a small amount of read-write core memory is available. Astronauts communicated with the AGC using a numeric display and keyboard called the DSKY (DiSplay&KeYboard, pronounced 'DISS-key'). The AGC and its DSKY user interface were developed in the early 1960s for the Apollo program by the MIT Instrumentation Laboratory and first flew in 1966. The AGC was one of the first integrated circuit-based computers. The computer's performance was comparable to the first generation of home computers from the late 1970s, such as the Apple II, TRS-80, and Commodore PET.
+ backlinksCount 174
+ pageId 188887
+ created 2003
+ revisionCount 733
+ dailyPageViews 561
+ appeared 1966
 
 githubLanguage Apollo Guidance Computer
  fileExtensions agc
@@ -89,17 +97,11 @@ linguistGrammarRepo https://github.com/Alhadis/language-agc
   ## hottest new records. Magnificent Montague was the charismatic voice of
   ## soul music in Chicago, New York, and
 
-fileType text
-centralPackageRepositoryCount 0
 goodreads
  title|year|author|goodreadsId|rating|ratings|reviews
  The Apollo Guidance Computer: Architecture And Operation (Springer Praxis Books / Space Exploration)|2010|Frank O'Brien|10605768|4.26|69|9
  Noise margin testing of the Apollo guidance computer||J.J. Rocchio|16376445|0.0|0|0
  Apollo guidance computer and associated ground support equipment Quarterly technical report, 1 Apr. - 30 Jun. 1964||NoN|16376441|0.0|0|0
-lineCommentToken #
-features
- hasLineComments true
-  # A comment
- hasComments true
-  # A comment
- hasSemanticIndentation false
+
+fileType text
+centralPackageRepositoryCount 0

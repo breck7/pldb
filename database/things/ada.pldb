@@ -2,7 +2,13 @@ title Ada
 appeared 1980
 type pl
 creators Jean Ichbiah
-lineCommentToken --
+website http://www.adaic.org
+fileExtensions adb ads
+country United States
+domainName adaic.org
+ registered 1998
+
+visualParadigm false
 
 features
  hasPointers true
@@ -40,6 +46,12 @@ features
  hasStrings true
   "Hello world"
  isCaseSensitive false
+
+lineCommentToken --
+printToken Text_IO.Put_Line
+assignmentToken :=
+stringToken "
+keywords abort else new return abs elsif not reverse abstract end null accept entry select access exception of separate aliased exit or some all others subtype and for out synchronized array function overriding at tagged generic package task begin goto pragma terminate body private then if procedure type case in protected constant interface until is raise use declare range delay limited record when delta loop rem while digits renames with do mod requeue xor
 
 wikipedia https://en.wikipedia.org/wiki/Ada_(programming_language)
  example
@@ -161,6 +173,19 @@ githubLanguage Ada
  fileExtensions adb ada ads
  trendingProjectsCount 0
 
+pygmentsHighlighter Ada
+ filename ada.py
+ fileExtensions adb ads ada
+linguistGrammarRepo https://github.com/textmate/ada.tmbundle
+ firstCommit 2005
+ lastCommit 2015
+ committerCount 4
+ commitCount 44
+
+projectEuler Ada
+ memberCount
+  2019 120
+  2022 129
 helloWorldCollection Ada
  -- Hello World in Ada
  
@@ -171,44 +196,21 @@ helloWorldCollection Ada
    Text_IO.Put_Line("Hello World!");
  end Hello_World;
  
-
-linguistGrammarRepo https://github.com/textmate/ada.tmbundle
- firstCommit 2005
- lastCommit 2015
- committerCount 4
- commitCount 44
-
-website http://www.adaic.org
-country United States
-fileExtensions adb ads
-fileType text
-wordRank 8040
-
-tiobe Ada
- currentRank 28
-
-projectEuler Ada
- memberCount
-  2019 120
-  2022 129
-
-hopl 840
-
-subreddit ada
- memberCount
-  2017 1092
-  2022 8055
-
+leachim6 Ada
+ filepath a/Ada.adb
+ fileExtensions adb
+ example
+  with Ada.Text_IO;
+  
+  procedure Hello_World is
+     use Ada.Text_IO;
+  begin
+     Put_line ("Hello World");
+  end Hello_World;
+  
+rosettaCode Ada
 quineRelay Ada
 
-ubuntuPackage gnat
-
-rosettaCode Ada
-
-visualParadigm false
-keywords abort else new return abs elsif not reverse abstract end null accept entry select access exception of separate aliased exit or some all others subtype and for out synchronized array function overriding at tagged generic package task begin goto pragma terminate body private then if procedure type case in protected constant interface until is raise use declare range delay limited record when delta loop rem while digits renames with do mod requeue xor
-centralPackageRepositoryCount 0
-gdbSupport true
 rijuRepl https://riju.codes/ada
  example
   with Ada.Text_IO;
@@ -222,23 +224,18 @@ rijuRepl https://riju.codes/ada
  fileExtensions adb ads
  website https://www.adaic.org/
  githubRepo https://gcc.gnu.org/git.html
-pygmentsHighlighter Ada
- filename ada.py
- fileExtensions adb ads ada
-leachim6 Ada
- filepath a/Ada.adb
- fileExtensions adb
- example
-  with Ada.Text_IO;
-  
-  procedure Hello_World is
-     use Ada.Text_IO;
-  begin
-     Put_line ("Hello World");
-  end Hello_World;
-  
-printToken Text_IO.Put_Line
-domainName adaic.org
- registered 1998
-assignmentToken :=
-stringToken "
+
+subreddit ada
+ memberCount
+  2017 1092
+  2022 8055
+
+tiobe Ada
+ currentRank 28
+hopl 840
+
+ubuntuPackage gnat
+gdbSupport true
+fileType text
+wordRank 8040
+centralPackageRepositoryCount 0

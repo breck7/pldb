@@ -1,8 +1,11 @@
 title skulpt
 appeared 2009
 type pl
-
+creators Scott Graham
 description Skulpt is an entirely in-browser implementation of Python.
+website http://www.skulpt.org/
+domainName skulpt.org
+ registered 2009
 
 githubRepo https://github.com/skulpt/skulpt
  firstCommit 2009
@@ -14,11 +17,7 @@ githubRepo https://github.com/skulpt/skulpt
  description Skulpt is a Javascript implementation of the Python programming language
  issues 255
 
-website http://www.skulpt.org/
+jupyterKernel https://github.com/Calysto/skulpt_python
 fileType text
 isOpenSource true
-jupyterKernel https://github.com/Calysto/skulpt_python
 centralPackageRepositoryCount 0
-creators Scott Graham
-domainName skulpt.org
- registered 2009

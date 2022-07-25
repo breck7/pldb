@@ -1,6 +1,8 @@
 title zolang
 appeared 2018
 type pl
+creators Þorvaldur Rúnarsson
+description A programming language to generate code for multiple platforms
 
 example
  describe Person {
@@ -10,8 +12,6 @@ example
   friendNames as list of text
  }
  let john as Person be Person("John", "Wall Street", 15, [ "Alice", "Bob" ])
-
-description A programming language to generate code for multiple platforms
 
 githubRepo https://github.com/Zolang/Zolang
  firstCommit 2018
@@ -26,4 +26,3 @@ githubRepo https://github.com/Zolang/Zolang
 fileType text
 isOpenSource true
 centralPackageRepositoryCount 0
-creators Þorvaldur Rúnarsson

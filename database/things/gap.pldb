@@ -1,12 +1,19 @@
 title GAP
 appeared 1986
 type pl
+website http://www.gap-system.org/
+standsFor Groups, Algorithms and Programming
+country Germany
+domainName gap-system.org
+ registered 2000
 
 features
  hasComments true
  hasLineComments true
   # A comment
  hasSemanticIndentation false
+
+lineCommentToken #
 
 wikipedia https://en.wikipedia.org/wiki/GAP_(programming_language)
  example
@@ -32,6 +39,9 @@ githubLanguage GAP
  fileExtensions g gap gd gi tst
  trendingProjectsCount 0
 
+pygmentsHighlighter GAP
+ filename algebra.py
+ fileExtensions g gd gi gap
 linguistGrammarRepo https://github.com/dhowden/gap-tmbundle
  firstCommit 2010
  lastCommit 2018
@@ -62,34 +72,21 @@ linguistGrammarRepo https://github.com/dhowden/gap-tmbundle
   gap> STOP_TEST( "factor.tst", 10000000);
   
 
-website http://www.gap-system.org/
-standsFor Groups, Algorithms and Programming
-
-tryItOnline gap
-
-twitter gap_system
-
-country Germany
-fileType text
-wordRank 4114
-isOpenSource true
-
 projectEuler GAP
  memberCount
   2022 33
-
-hopl 2668
-
 rosettaCode GAP
 
-centralPackageRepositoryCount 0
 rijuRepl https://riju.codes/gap
  example
   Print("Hello, world!\n");
   
-lineCommentToken #
-pygmentsHighlighter GAP
- filename algebra.py
- fileExtensions g gd gi gap
-domainName gap-system.org
- registered 2000
+tryItOnline gap
+
+hopl 2668
+
+twitter gap_system
+fileType text
+wordRank 4114
+isOpenSource true
+centralPackageRepositoryCount 0

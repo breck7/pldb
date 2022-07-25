@@ -1,6 +1,17 @@
 title ISETL
 appeared 1989
 type pl
+creators Jacob T. Schwartz
+reference https://semanticscholar.org/paper/32550542f523856c16c49b66b1251485e7fe916e
+
+features
+ hasLineComments true
+  -- A comment
+ hasComments true
+  -- A comment
+ hasSemanticIndentation false
+
+lineCommentToken --
 
 wikipedia https://en.wikipedia.org/wiki/ISETL_%28programming_language%29
  example
@@ -16,16 +27,6 @@ wikipedia https://en.wikipedia.org/wiki/ISETL_%28programming_language%29
  dailyPageViews 1
  appeared 1969
 
-reference https://semanticscholar.org/paper/32550542f523856c16c49b66b1251485e7fe916e
-
 hopl 2123
 
 centralPackageRepositoryCount 0
-creators Jacob T. Schwartz
-lineCommentToken --
-features
- hasLineComments true
-  -- A comment
- hasComments true
-  -- A comment
- hasSemanticIndentation false

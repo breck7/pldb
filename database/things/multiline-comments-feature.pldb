@@ -1,7 +1,8 @@
 title MultiLine Comments
 type feature
-psuedoExample /* Hello PLDB */
 description Comments that span multiple lines.
 reference https://en.wikipedia.org/wiki/Comparison_of_programming_languages_(syntax)#Comments
+
+psuedoExample /* Hello PLDB */
 featureKeyword hasMultiLineComments
 tokenKeyword multiLineCommentTokens

@@ -2,6 +2,18 @@ title NS Basic
 appeared 1994
 type pl
 
+features
+ hasLineComments true
+  // A comment
+ hasComments true
+  // A comment
+ hasSemanticIndentation false
+ hasStrings true
+  "Hello world"
+
+lineCommentToken //
+stringToken "
+
 wikipedia https://en.wikipedia.org/wiki/NS_Basic
  example
   // in JavaScript
@@ -19,13 +31,3 @@ wikipedia https://en.wikipedia.org/wiki/NS_Basic
 
 isOpenSource false
 centralPackageRepositoryCount 0
-lineCommentToken //
-features
- hasLineComments true
-  // A comment
- hasComments true
-  // A comment
- hasSemanticIndentation false
- hasStrings true
-  "Hello world"
-stringToken "

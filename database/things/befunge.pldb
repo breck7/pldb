@@ -2,6 +2,7 @@ title Befunge
 appeared 1993
 type esolang
 creators Chris Pressey
+country United States
 
 features
  hasComments true
@@ -25,36 +26,33 @@ githubLanguage Befunge
  fileExtensions befunge
  trendingProjectsCount 0
 
-helloWorldCollection BEFUNGE
- v Hello World in Befunge
- 
- >"dlroW olleH",,,,,,,,,,,@
- 
-
+pygmentsHighlighter Befunge
+ filename esoteric.py
+ fileExtensions befunge
 linguistGrammarRepo https://github.com/johanasplund/sublime-befunge
  firstCommit 2014
  lastCommit 2014
  committerCount 2
  commitCount 20
 
-
-tryItOnline befunge
-
-country United States
-fileType text
-
 projectEuler Befunge
  memberCount
   2019 9
   2022 10
-
-hopl 1717
-
+helloWorldCollection BEFUNGE
+ v Hello World in Befunge
+ 
+ >"dlroW olleH",,,,,,,,,,,@
+ 
+leachim6 Befunge
+ filepath b/Befunge.be
+ fileExtensions be
+ example
+  >"dlroW olleH",,,,,,,,,,,@
+  
+rosettaCode Befunge
 quineRelay Befunge
 
-rosettaCode Befunge
-
-centralPackageRepositoryCount 0
 rijuRepl https://riju.codes/befunge
  example
   64+"!dlrow ,olleH">:#,_@
@@ -63,12 +61,9 @@ rijuRepl https://riju.codes/befunge
  fileExtensions be bf b93 b98 befunge
  website https://catseye.tc/article/Languages.md#befunge-93
  githubRepo https://github.com/amicloud/befunge93
-pygmentsHighlighter Befunge
- filename esoteric.py
- fileExtensions befunge
-leachim6 Befunge
- filepath b/Befunge.be
- fileExtensions be
- example
-  >"dlroW olleH",,,,,,,,,,,@
-  
+tryItOnline befunge
+
+hopl 1717
+
+fileType text
+centralPackageRepositoryCount 0

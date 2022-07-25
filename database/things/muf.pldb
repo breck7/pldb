@@ -1,20 +1,13 @@
 title Multi-User Forth
 appeared 1995
 type pl
+standsFor Multi-User Forth
 
-wikipedia https://en.wikipedia.org/wiki/MUF_(programming_language)
- related muf forth
- summary TinyMUCK or, more broadly, a MUCK, is a type of user-extendable online text-based role-playing game, designed for role playing and social interaction. Backronyms like "Multi-User Chat/Created/Computer/Character/Carnal Kingdom" and "Multi-User Construction Kit" are sometimes cited, but are not the actual origin of the term; "muck" is simply a play on the term MUD.
- pageId 11997162
- created 2004
- backlinksCount 214
- revisionCount 86
- dailyPageViews 2
- appeared 1995
+features
+ hasStrings true
+  "Hello world"
 
-githubLanguage MUF
- fileExtensions muf m
- trendingProjectsCount 0
+stringToken "
 
 example
  $include $lib/strings
@@ -296,12 +289,21 @@ example
     me @ "Check done." notify
  ;
  
-standsFor Multi-User Forth
-fileType text
 
-rosettaCode MUF
+wikipedia https://en.wikipedia.org/wiki/MUF_(programming_language)
+ related muf forth
+ summary TinyMUCK or, more broadly, a MUCK, is a type of user-extendable online text-based role-playing game, designed for role playing and social interaction. Backronyms like "Multi-User Chat/Created/Computer/Character/Carnal Kingdom" and "Multi-User Construction Kit" are sometimes cited, but are not the actual origin of the term; "muck" is simply a play on the term MUD.
+ pageId 11997162
+ created 2004
+ backlinksCount 214
+ revisionCount 86
+ dailyPageViews 2
+ appeared 1995
 
-centralPackageRepositoryCount 0
+githubLanguage MUF
+ fileExtensions muf m
+ trendingProjectsCount 0
+
 leachim6 Muf
  filepath m/Muf.muf
  fileExtensions muf
@@ -310,7 +312,7 @@ leachim6 Muf
       me @ "Hello World" notify
   ;
   
-stringToken "
-features
- hasStrings true
-  "Hello world"
+rosettaCode MUF
+
+fileType text
+centralPackageRepositoryCount 0

@@ -1,14 +1,15 @@
 title PromQL
 appeared 2014
 type queryLanguage
+website https://prometheus.io/docs/prometheus/latest/querying/basics/
+reference https://timber.io/blog/promql-for-humans/
+cheatSheetUrl https://files.timber.io/pdfs/PromQL+Cheatsheet.pdf
 
 example
  topk(3, sum by (app, proc) (rate(instance_cpu_time_ns[5m])))
 
-website https://prometheus.io/docs/prometheus/latest/querying/basics/
-reference https://timber.io/blog/promql-for-humans/
-cheatSheetUrl https://files.timber.io/pdfs/PromQL+Cheatsheet.pdf
-centralPackageRepositoryCount 0
 pygmentsHighlighter PromQL
  filename promql.py
  fileExtensions promql
+
+centralPackageRepositoryCount 0

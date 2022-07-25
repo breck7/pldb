@@ -1,7 +1,11 @@
 title Ballerina
 appeared 2015
 type pl
+creators Sanjiva Weerawarana and James Clark
+website http://ballerina.io/
 webRepl https://play.ballerina.io/
+domainName ballerina.io
+ registered 2017
 
 features
  hasComments true
@@ -15,6 +19,20 @@ features
  hasSemanticIndentation false
  hasStrings true
   "Hello world"
+
+lineCommentToken //
+printToken io:println
+stringToken "
+
+githubRepo https://github.com/ballerina-platform/ballerina-lang
+ firstCommit 2014
+ stars 3093
+ forks 692
+ subscribers 169
+ created 2016
+ updated 2022
+ description The Ballerina Programming Language
+ issues 1709
 
 wikipedia https://en.wikipedia.org/wiki/Ballerina_(programming_language)
  example
@@ -46,16 +64,6 @@ githubLanguage Ballerina
  fileExtensions bal
  trendingProjectsCount 0
 
-githubRepo https://github.com/ballerina-platform/ballerina-lang
- firstCommit 2014
- stars 3093
- forks 692
- subscribers 169
- created 2016
- updated 2022
- description The Ballerina Programming Language
- issues 1709
-
 linguistGrammarRepo https://github.com/ballerina-platform/ballerina-grammar
  firstCommit 2018
  lastCommit 2018
@@ -70,18 +78,9 @@ linguistGrammarRepo https://github.com/ballerina-platform/ballerina-grammar
   }
   
   
-
-website http://ballerina.io/
-
-twitter ballerinalang
-
-fileType text
-isOpenSource true
-lineCommentToken //
 languageServerProtocolProject https://github.com/ballerina-platform/ballerina-lang/tree/master/language-server
  writtenIn java
-packageRepository https://central.ballerina.io/
-creators Sanjiva Weerawarana and James Clark
+
 leachim6 Ballerina
  filepath b/Ballerina.bal
  fileExtensions bal
@@ -92,7 +91,9 @@ leachim6 Ballerina
       io:println("Hello World");
   }
   
-printToken io:println
-domainName ballerina.io
- registered 2017
-stringToken "
+
+packageRepository https://central.ballerina.io/
+
+twitter ballerinalang
+fileType text
+isOpenSource true

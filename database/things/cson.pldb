@@ -1,10 +1,7 @@
 title CSON
 appeared 2011
 type dataNotation
-
-githubLanguage CSON
- fileExtensions cson
- trendingProjectsCount 0
+creators Benjamin Lupton
 
 githubRepo https://github.com/bevry/cson
  firstCommit 2011
@@ -15,6 +12,10 @@ githubRepo https://github.com/bevry/cson
  updated 2022
  description CoffeeScript-Object-Notation. Same as JSON but for CoffeeScript objects.
  issues 11
+
+githubLanguage CSON
+ fileExtensions cson
+ trendingProjectsCount 0
 
 linguistGrammarRepo https://github.com/atom/language-coffee-script
  firstCommit 2013
@@ -35,13 +36,13 @@ linguistGrammarRepo https://github.com/atom/language-coffee-script
     }
   ]
 
-fileType text
-isOpenSource true
-centralPackageRepositoryCount 0
-creators Benjamin Lupton
 leachim6 CSON
  filepath c/CSON.cson
  fileExtensions cson
  example
   {'Hello': 'World'}
   
+
+fileType text
+isOpenSource true
+centralPackageRepositoryCount 0

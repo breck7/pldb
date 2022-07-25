@@ -1,6 +1,15 @@
 title Common Lisp
 appeared 1984
 type pl
+creators Scott Fahlman and Richard P. Gabriel and David A. Moon and Kent Pitman and Guy Steele and Dan Weinreb
+website http://common-lisp.net/
+aka commonlisp
+fileExtensions lisp lsp l cl fasl
+country United States
+domainName common-lisp.net
+ registered 2003
+
+visualParadigm false
 
 features
  isLisp true
@@ -37,6 +46,9 @@ features
  hasPrintDebugging true
  hasSemanticIndentation false
 
+lineCommentToken ;
+printToken PRINT
+
 wikipedia https://en.wikipedia.org/wiki/Common_Lisp
  example
   CL-USER > (available-shells)
@@ -60,6 +72,9 @@ githubLanguage Common Lisp
   dimitri pgloader https://github.com/dimitri.png https://github.com/dimitri/pgloader "Common Lisp" #3fb68b 2221 289 56 "Migrate to PostgreSQL in a single command!"
  trendingProjectsCount 4
 
+pygmentsHighlighter Common Lisp
+ filename lisp.py
+ fileExtensions cl lisp
 linguistGrammarRepo https://github.com/textmate/lisp.tmbundle
  firstCommit 2005
  lastCommit 2018
@@ -71,46 +86,6 @@ linguistGrammarRepo https://github.com/textmate/lisp.tmbundle
     (PRINT 'HELLO))
   
 
-website http://common-lisp.net/
-country United States
-fileExtensions lisp lsp l cl fasl
-fileType text
-
-tiobe Common Lisp
-
-hopl 946
-
-quineRelay Common Lisp
-
-ubuntuPackage clisp
-
-indeedJobs "common lisp"
- 2017 24
-lineCommentToken ;
-visualParadigm false
-jupyterKernel https://github.com/fredokun/cl-jupyter
-centralPackageRepositoryCount 0
-aka commonlisp
-rijuRepl https://riju.codes/commonlisp
- example
-  (format t "Hello, world!")
-  
- description Modern, multi-paradigm, high-performance, compiled, ANSI-standardized, most prominent (along with Scheme) descendant of the Lisp family
- fileExtensions lisp lsp l cl fasl
- website https://common-lisp.net/
- githubRepo https://sourceforge.net/p/sbcl/sbcl/ci/master/tree/
-creators Scott Fahlman and Richard P. Gabriel and David A. Moon and Kent Pitman and Guy Steele and Dan Weinreb
-goodreads
- title|year|author|goodreadsId|rating|ratings|reviews
- Paradigms of Artificial Intelligence Programming: Case Studies in Common LISP|1991|Peter Norvig|80981|4.33|439|9
- Programming In Common Lisp|1985|Rodney A. Brooks|1178516|4.00|1|0
- Common LISP: Common LISP Implementations, Common LISP Publications, Common LISP Software, Cyc, Maxima, Kyoto Common LISP, Acl2, Genera, ACT-R||Source Wikipedia|55083353|0.0|0|0
- A Programmer's Guide To Common Lisp|1987|Deborough G. Tatar|1732767|0.0|0|0
- Common Lisp Programming|2012|Steve Howard|27090533|3.25|4|0
- Object-Oriented Programming in Common LISP: A Programmer's Guide to Clos|1989|Sonya E. Keene|1163506|4.02|48|4
-pygmentsHighlighter Common Lisp
- filename lisp.py
- fileExtensions cl lisp
 leachim6 Common Lisp
  filepath c/Common Lisp.lisp
  example
@@ -119,6 +94,33 @@ leachim6 Common Lisp
   
   (hello-world)
   
-printToken PRINT
-domainName common-lisp.net
- registered 2003
+quineRelay Common Lisp
+
+rijuRepl https://riju.codes/commonlisp
+ example
+  (format t "Hello, world!")
+  
+ description Modern, multi-paradigm, high-performance, compiled, ANSI-standardized, most prominent (along with Scheme) descendant of the Lisp family
+ fileExtensions lisp lsp l cl fasl
+ website https://common-lisp.net/
+ githubRepo https://sourceforge.net/p/sbcl/sbcl/ci/master/tree/
+
+indeedJobs "common lisp"
+ 2017 24
+
+goodreads
+ title|year|author|goodreadsId|rating|ratings|reviews
+ Paradigms of Artificial Intelligence Programming: Case Studies in Common LISP|1991|Peter Norvig|80981|4.33|439|9
+ Programming In Common Lisp|1985|Rodney A. Brooks|1178516|4.00|1|0
+ Common LISP: Common LISP Implementations, Common LISP Publications, Common LISP Software, Cyc, Maxima, Kyoto Common LISP, Acl2, Genera, ACT-R||Source Wikipedia|55083353|0.0|0|0
+ A Programmer's Guide To Common Lisp|1987|Deborough G. Tatar|1732767|0.0|0|0
+ Common Lisp Programming|2012|Steve Howard|27090533|3.25|4|0
+ Object-Oriented Programming in Common LISP: A Programmer's Guide to Clos|1989|Sonya E. Keene|1163506|4.02|48|4
+
+tiobe Common Lisp
+hopl 946
+
+ubuntuPackage clisp
+jupyterKernel https://github.com/fredokun/cl-jupyter
+fileType text
+centralPackageRepositoryCount 0

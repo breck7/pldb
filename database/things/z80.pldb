@@ -1,6 +1,16 @@
 title z80
 appeared 1976
 type assembly
+reference https://en.wikipedia.org/wiki/Zilog_Z80#Z80_assembly_language
+
+features
+ hasLineComments true
+  ; A comment
+ hasComments true
+  ; A comment
+ hasSemanticIndentation false
+
+lineCommentToken ;
 
 example
   ; memcpy --
@@ -27,16 +37,7 @@ example
               jp      loop        ;Repeat the loop
               end
 
-reference https://en.wikipedia.org/wiki/Zilog_Z80#Z80_assembly_language
-fileType text
-
 codeMirror z80
 
+fileType text
 centralPackageRepositoryCount 0
-lineCommentToken ;
-features
- hasLineComments true
-  ; A comment
- hasComments true
-  ; A comment
- hasSemanticIndentation false

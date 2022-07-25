@@ -2,6 +2,9 @@ title pointless
 appeared 2020
 type pl
 creators Avery N. Nortonsmith
+website https://ptls.dev/
+reference https://news.ycombinator.com/item?id=22838255
+domainName ptls.dev
 
 example
  import "chart.ptls" as chart
@@ -25,9 +28,6 @@ githubRepo https://github.com/pointless-lang/pointless
  description Pointless: a scripting language for learning and fun
  issues 6
 
-website https://ptls.dev/
-reference https://news.ycombinator.com/item?id=22838255
 pygmentsHighlighter Pointless
  filename pointless.py
  fileExtensions ptls
-domainName ptls.dev

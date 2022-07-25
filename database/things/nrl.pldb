@@ -1,6 +1,8 @@
 title Namespace Routing Language
 appeared 2003
 type xmlFormat
+reference https://relaxng.org/jclark/nrl.html
+aka nrl
 
 example
  <rules xmlns="http://www.thaiopensource.com/validate/nrl">
@@ -14,6 +16,3 @@ example
  </rules>
 
 wikipedia https://en.wikipedia.org/wiki/Namespace_Routing_Language
-
-reference https://relaxng.org/jclark/nrl.html
-aka nrl

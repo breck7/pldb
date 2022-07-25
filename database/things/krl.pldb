@@ -2,20 +2,20 @@ title KRL
 appeared 1976
 type pl
 creators Daniel G. Bobrow and Terry Winograd
+standsFor knowledge representation language
+country United States
 
-wikipedia https://en.wikipedia.org/wiki/KRL_(programming_language)
- related kuka
- summary KRL is a knowledge representation language, developed by Daniel G. Bobrow and Terry Winograd while at Xerox PARC and Stanford University, respectively. It is a frame-based language.   KRL was an attempt to produce a language which was nice to read and write for the engineers who had to write programs in it, processed like human memory, so you could have realistic AI programs, had an underlying semantics which was firmly grounded like logic languages, all in one, all in one language. And I think it - again, in hindsight - it just bogged down under the weight of trying to satisfy all those things at once.
- pageId 17227
- created 2002
- backlinksCount 18
- revisionCount 38
- dailyPageViews 14
- appeared 1976
+features
+ hasLineComments true
+  // A comment
+ hasComments true
+  // A comment
+ hasSemanticIndentation false
+ hasStrings true
+  "Hello world"
 
-githubLanguage KRL
- fileExtensions krl
- trendingProjectsCount 0
+lineCommentToken //
+stringToken "
 
 example
  ruleset sample {
@@ -35,20 +35,21 @@ example
  }
  
 
-standsFor knowledge representation language
-country United States
-fileType text
+wikipedia https://en.wikipedia.org/wiki/KRL_(programming_language)
+ related kuka
+ summary KRL is a knowledge representation language, developed by Daniel G. Bobrow and Terry Winograd while at Xerox PARC and Stanford University, respectively. It is a frame-based language.   KRL was an attempt to produce a language which was nice to read and write for the engineers who had to write programs in it, processed like human memory, so you could have realistic AI programs, had an underlying semantics which was firmly grounded like logic languages, all in one, all in one language. And I think it - again, in hindsight - it just bogged down under the weight of trying to satisfy all those things at once.
+ pageId 17227
+ created 2002
+ backlinksCount 18
+ revisionCount 38
+ dailyPageViews 14
+ appeared 1976
+
+githubLanguage KRL
+ fileExtensions krl
+ trendingProjectsCount 0
 
 hopl 763
 
+fileType text
 centralPackageRepositoryCount 0
-lineCommentToken //
-features
- hasLineComments true
-  // A comment
- hasComments true
-  // A comment
- hasSemanticIndentation false
- hasStrings true
-  "Hello world"
-stringToken "

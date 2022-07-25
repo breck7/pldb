@@ -1,15 +1,11 @@
 title Catala
-website https://catala-lang.org/
+appeared 2019
 type pl
-githubRepo https://github.com/CatalaLang/catala
- firstCommit 2019
- stars 846
- forks 38
- subscribers 18
- created 2020
- updated 2022
- description Programming language for literate programming law specification
- issues 56
+creators Denis Merigoux
+website https://catala-lang.org/
+domainName catala-lang.org
+ registered 2020
+
 example
  scope QualifiedEmployeeDiscount :
   definition qualified_employee_discount
@@ -19,7 +15,13 @@ example
       customer_price ×$ gross_profit_percentage
     then customer_price ×$ gross_profit_percentage
     else employee_discount
-appeared 2019
-creators Denis Merigoux
-domainName catala-lang.org
- registered 2020
+
+githubRepo https://github.com/CatalaLang/catala
+ firstCommit 2019
+ stars 846
+ forks 38
+ subscribers 18
+ created 2020
+ updated 2022
+ description Programming language for literate programming law specification
+ issues 56

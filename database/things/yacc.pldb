@@ -1,6 +1,24 @@
 title Yacc
 appeared 1975
 type grammarLanguage
+reference https://github.com/babyraging/yash
+standsFor Yet Another Compiler-Compiler
+country United States
+
+writtenIn c
+
+features
+ hasLineComments true
+  // A comment
+ hasComments true
+  // A comment
+ hasMultiLineComments true
+  /* A comment
+  */
+ hasSemanticIndentation false
+
+lineCommentToken //
+multiLineCommentTokens /* */
 
 wikipedia https://en.wikipedia.org/wiki/Yacc
  related unix b c bison ocaml ratfor ada pascal java python ruby go common-lisp
@@ -11,8 +29,6 @@ wikipedia https://en.wikipedia.org/wiki/Yacc
  backlinksCount 358
  revisionCount 347
  appeared 1975
-
-lineCommentToken //
 
 githubLanguage Yacc
  fileExtensions y yacc yy
@@ -149,27 +165,11 @@ linguistGrammarRepo https://github.com/textmate/bison.tmbundle
   }
   
 
-standsFor Yet Another Compiler-Compiler
-country United States
-fileType text
-
-tiobe yacc
-
 linkedInSkill yacc
  2018 1722
 
+tiobe yacc
 hopl 704
 
-writtenIn c
+fileType text
 centralPackageRepositoryCount 0
-reference https://github.com/babyraging/yash
-features
- hasLineComments true
-  // A comment
- hasComments true
-  // A comment
- hasMultiLineComments true
-  /* A comment
-  */
- hasSemanticIndentation false
-multiLineCommentTokens /* */

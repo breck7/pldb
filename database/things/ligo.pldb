@@ -1,21 +1,18 @@
 title Ligo
+appeared 2019
 type contractLanguage
+website https://ligolang.org/
+webRepl https://ide.ligolang.org/
+cheatSheetUrl https://ligolang.org/docs/api/cheat-sheet
 aka jsligo
 aka cameligo
 aka pascaligo
 aka reasonligo
-related solidity pascal reason ocaml
-website https://ligolang.org/
-cheatSheetUrl https://ligolang.org/docs/api/cheat-sheet
-webRepl https://ide.ligolang.org/
-gitlabRepo https://gitlab.com/ligolang/ligo
 domainName ligolang.org
  registered 2019
-appeared 2019
-lineCommentToken //
-monaco pascaligo
-multiLineCommentTokens (* *)
-keywords abs assert block Bytes case Crypto Current else failwith false for fun if in let let%entry let%init List list Map map match match%nat mod not operation Operation of record Set set sender skip source String then to true type with
+
+related solidity pascal reason ocaml
+
 features
  hasStrings true
  hasLineComments true
@@ -25,3 +22,11 @@ features
   *)
  hasComments true
   // A comment
+
+lineCommentToken //
+multiLineCommentTokens (* *)
+keywords abs assert block Bytes case Crypto Current else failwith false for fun if in let let%entry let%init List list Map map match match%nat mod not operation Operation of record Set set sender skip source String then to true type with
+
+gitlabRepo https://gitlab.com/ligolang/ligo
+
+monaco pascaligo

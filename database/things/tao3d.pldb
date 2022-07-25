@@ -2,6 +2,11 @@ title tao3d
 appeared 2003
 type pl
 creators Christophe de Dinechin
+description Tao3D is a programming language for interactive 3D.
+website http://tao3d.sourceforge.net/
+domainName tao3d.sourceforge.net
+
+related xl-lang
 
 example
  import SeasonsGreetingsTheme
@@ -20,8 +25,6 @@ example
      ** "More bullet points"
      *** "Deeper"
 
-description Tao3D is a programming language for interactive 3D.
-
 githubRepo https://github.com/c3d/tao3D
  firstCommit 2003
  stars 167
@@ -32,9 +35,4 @@ githubRepo https://github.com/c3d/tao3D
  description The Art of 3D, a new language for dynamic document description of real-time 3D animations
  issues 5
 
-website http://tao3d.sourceforge.net/
-
 twitter taodyne
-
-related xl-lang
-domainName tao3d.sourceforge.net

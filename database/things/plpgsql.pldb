@@ -1,6 +1,7 @@
 title PL/pgSQL
 appeared 1998
 type pl
+creators Jan Wieck
 
 wikipedia https://en.wikipedia.org/wiki/PL/pgSQL
  related pl-sql ada postgresql sql-psm sql bison
@@ -19,6 +20,8 @@ githubLanguage PLpgSQL
   openmaptiles openmaptiles https://github.com/openmaptiles.png https://github.com/openmaptiles/openmaptiles PLpgSQL #ccc 711 222 26 "OpenMapTiles Vector Tile Schema Implementation"
  trendingProjectsCount 2
 
+pygmentsHighlighter PL/pgSQL
+ filename sql.py
 linguistGrammarRepo https://github.com/textmate/sql.tmbundle
  firstCommit 2005
  lastCommit 2016
@@ -61,6 +64,3 @@ linguistGrammarRepo https://github.com/textmate/sql.tmbundle
 
 fileType text
 centralPackageRepositoryCount 0
-creators Jan Wieck
-pygmentsHighlighter PL/pgSQL
- filename sql.py

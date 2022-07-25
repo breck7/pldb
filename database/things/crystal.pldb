@@ -2,11 +2,11 @@ title Crystal
 appeared 2014
 type pl
 creators Ary Borenszweig
+website https://crystal-lang.org
 webRepl https://play.crystal-lang.org/#/cr
-lineCommentToken #
-subreddit crystal_programming
- memberCount
-  2022 4118
+fileExtensions cr
+domainName crystal-lang.org
+ registered 2013
 
 features
  hasTypeInference true
@@ -19,6 +19,21 @@ features
  hasSemanticIndentation false
  hasStrings true
   "Hello world"
+
+lineCommentToken #
+printToken puts
+stringToken "
+keywords abstract do if nil? self unless alias else in of sizeof until as elsif include out struct when as? end instance_sizeof pointerof super while asm ensure is_a? private then with begin enum lib protected true yield break extend macro require type case false module rescue typeof class for next return uninitialized def fun nil select union
+
+githubRepo https://github.com/crystal-lang/crystal
+ stars 17603
+ forks 1349
+ subscribers 425
+ created 2012
+ updated 2022
+ firstCommit 2012
+ description The Crystal Programming Language
+ issues 1466
 
 wikipedia https://en.wikipedia.org/wiki/Crystal_(programming_language)
  example
@@ -56,21 +71,9 @@ githubLanguage Crystal
   crystal-lang crystal https://github.com/crystal-lang.png https://github.com/crystal-lang/crystal Crystal #000100 13807 1071 172 "The Crystal Programming Language"
  trendingProjectsCount 3
 
-githubRepo https://github.com/crystal-lang/crystal
- stars 17603
- forks 1349
- subscribers 425
- created 2012
- updated 2022
- firstCommit 2012
- description The Crystal Programming Language
- issues 1466
-
-helloWorldCollection Crystal
- # Hello world in Crystal
- 
- puts "Hello World"
-
+pygmentsHighlighter Crystal
+ filename crystal.py
+ fileExtensions cr
 linguistGrammarRepo https://github.com/atom-crystal/language-crystal
  firstCommit 2013
  lastCommit 2018
@@ -158,38 +161,25 @@ linguistGrammarRepo https://github.com/atom-crystal/language-crystal
     end
   end
   
-
-website https://crystal-lang.org
-
-tryItOnline crystal
-
-twitter crystallanguage
-
-fileExtensions cr
-fileType text
-wordRank 2716
-isOpenSource true
-
-tiobe Crystal
- currentRank 24
+languageServerProtocolProject https://github.com/kofno/scry
+ writtenIn crystal
 
 projectEuler Crystal
  memberCount
   2019 5
   2022 14
-
+helloWorldCollection Crystal
+ # Hello world in Crystal
+ 
+ puts "Hello World"
+leachim6 Crystal
+ filepath c/Crystal.cr
+ fileExtensions cr
+ example
+  puts "Hello World"
+  
 rosettaCode Crystal
 
-languageServerProtocolProject https://github.com/kofno/scry
- writtenIn crystal
-keywords abstract do if nil? self unless alias else in of sizeof until as elsif include out struct when as? end instance_sizeof pointerof super while asm ensure is_a? private then with begin enum lib protected true yield break extend macro require type case false module rescue typeof class for next return uninitialized def fun nil select union
-stackOverflowSurvey
- 2021
-  users 466
-  medianSalary 72400
-  fans 790
-  percentageUsing 0.01
-centralPackageRepositoryCount 0
 rijuRepl https://riju.codes/crystal
  example
   puts "Hello, world!"
@@ -198,16 +188,24 @@ rijuRepl https://riju.codes/crystal
  fileExtensions cr
  website https://crystal-lang.org/
  githubRepo https://github.com/crystal-lang/crystal
-pygmentsHighlighter Crystal
- filename crystal.py
- fileExtensions cr
-leachim6 Crystal
- filepath c/Crystal.cr
- fileExtensions cr
- example
-  puts "Hello World"
-  
-printToken puts
-domainName crystal-lang.org
- registered 2013
-stringToken "
+tryItOnline crystal
+
+stackOverflowSurvey
+ 2021
+  users 466
+  medianSalary 72400
+  fans 790
+  percentageUsing 0.01
+
+subreddit crystal_programming
+ memberCount
+  2022 4118
+
+tiobe Crystal
+ currentRank 24
+
+twitter crystallanguage
+fileType text
+wordRank 2716
+isOpenSource true
+centralPackageRepositoryCount 0

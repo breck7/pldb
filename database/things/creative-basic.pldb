@@ -2,6 +2,15 @@ title Creative Basic
 appeared 2008
 type pl
 
+features
+ hasLineComments true
+  ' A comment
+ hasComments true
+  ' A comment
+ hasSemanticIndentation false
+
+lineCommentToken '
+
 wikipedia https://en.wikipedia.org/wiki/Creative_Basic
  example
   def w:WINDOW
@@ -38,10 +47,3 @@ wikipedia https://en.wikipedia.org/wiki/Creative_Basic
  appeared 2008
 
 centralPackageRepositoryCount 0
-lineCommentToken '
-features
- hasLineComments true
-  ' A comment
- hasComments true
-  ' A comment
- hasSemanticIndentation false

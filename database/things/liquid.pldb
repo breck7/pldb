@@ -1,13 +1,8 @@
 title Liquid
 appeared 2008
 type template
-
-githubLanguage Liquid
- fileExtensions liquid
- trendingProjects
-  author name avatar url language languageColor stars forks currentPeriodStars description
-  Shopify Timber https://github.com/Shopify.png https://github.com/Shopify/Timber Liquid #ccc 871 352 6 "The ultimate Shopify theme framework, built by Shopify."
- trendingProjectsCount 2
+creators Tobias Lütke
+website https://shopify.github.io/liquid/
 
 githubRepo https://github.com/Shopify/liquid
  firstCommit 2008
@@ -19,6 +14,17 @@ githubRepo https://github.com/Shopify/liquid
  description Liquid markup language. Safe, customer facing template language for flexible web apps. 
  issues 274
 
+githubLanguage Liquid
+ fileExtensions liquid
+ trendingProjects
+  author name avatar url language languageColor stars forks currentPeriodStars description
+  Shopify Timber https://github.com/Shopify.png https://github.com/Shopify/Timber Liquid #ccc 871 352 6 "The ultimate Shopify theme framework, built by Shopify."
+ trendingProjectsCount 2
+
+monaco liquid
+pygmentsHighlighter liquid
+ filename templates.py
+ fileExtensions liquid
 linguistGrammarRepo https://github.com/bastilian/validcode-textmate-bundles
  firstCommit 2010
  lastCommit 2015
@@ -98,13 +104,7 @@ linguistGrammarRepo https://github.com/bastilian/validcode-textmate-bundles
   </ul>
   
 
-website https://shopify.github.io/liquid/
 fileType text
 wordRank 3533
 isOpenSource true
 centralPackageRepositoryCount 0
-creators Tobias Lütke
-pygmentsHighlighter liquid
- filename templates.py
- fileExtensions liquid
-monaco liquid

@@ -1,8 +1,8 @@
 title Coco/R
 appeared 1990
 type grammarLanguage
-
 description Coco/R is a compiler generator, which takes an attributed grammar of a source language and generates a scanner and a parser for this language. The scanner works as a deterministic finite automaton. The parser uses recursive descent. LL(1) conflicts can be resolved by a multi-symbol lookahead or by semantic checks. Thus the class of accepted grammars is LL(k) for an arbitrary k.
+website http://ssw.jku.at/coco/
 
 wikipedia https://en.wikipedia.org/wiki/Coco/R
  related unicode utf-8 java csharp pascal modula-2 modula-3 codegear-delphi python ruby eclipse-editor antlr javacc
@@ -14,7 +14,6 @@ wikipedia https://en.wikipedia.org/wiki/Coco/R
  dailyPageViews 15
  appeared 1985
 
-website http://ssw.jku.at/coco/
 fileType text
 isOpenSource true
 centralPackageRepositoryCount 0

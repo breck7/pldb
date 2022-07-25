@@ -2,12 +2,19 @@ title Cobra
 appeared 2006
 type pl
 creators Charles Esterbrook
+website http://cobra-language.com/
+fileExtensions cobra
+domainName cobra-language.com
+ registered 2008
 
 features
  hasSemanticIndentation true
  hasPrintDebugging true
  hasStrings true
   'Hello world'
+
+printToken print
+stringToken '
 
 wikipedia https://en.wikipedia.org/wiki/Cobra_(programming_language)
  example
@@ -31,6 +38,10 @@ wikipedia https://en.wikipedia.org/wiki/Cobra_(programming_language)
  appeared 2006
  fileExtensions cobra
 
+projectEuler Cobra
+ memberCount
+  2019 11
+  2022 11
 helloWorldCollection Cobra
  """Hello world in Cobra"""
  
@@ -38,25 +49,6 @@ helloWorldCollection Cobra
  
      def main
          print 'Hello, world.'
-
-website http://cobra-language.com/
-
-tryItOnline cobra
-
-fileExtensions cobra
-fileType text
-isOpenSource true
-
-tiobe Cobra
-
-projectEuler Cobra
- memberCount
-  2019 11
-  2022 11
-
-rosettaCode Cobra
-
-centralPackageRepositoryCount 0
 leachim6 Cobra
  filepath c/Cobra.cobra
  fileExtensions cobra
@@ -65,7 +57,12 @@ leachim6 Cobra
   
       def main
           print 'Hello World'
-printToken print
-domainName cobra-language.com
- registered 2008
-stringToken '
+rosettaCode Cobra
+
+tryItOnline cobra
+
+tiobe Cobra
+
+fileType text
+isOpenSource true
+centralPackageRepositoryCount 0

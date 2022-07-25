@@ -1,7 +1,31 @@
 title Project Mentat
-description Project Mentat is a persistent, embedded knowledge base. It draws heavily on DataScript and Datomic. This project was started by Mozilla, but is no longer being developed or actively maintained by them.
-related datascript datomic sqlite
+appeared 2016
 type queryLanguage
+creators Richard Newman
+description Project Mentat is a persistent, embedded knowledge base. It draws heavily on DataScript and Datomic. This project was started by Mozilla, but is no longer being developed or actively maintained by them.
+website https://mentat.rs/
+domainName mentat.rs
+
+related datascript datomic sqlite
+
+features
+ hasLineComments true
+  ; A comment
+ hasComments true
+  ; A comment
+ hasSemanticIndentation false
+
+lineCommentToken ;
+
+example
+ {:db/id          :person/email
+  :db/valueType   :db.type/string
+  :db/cardinality :db.cardinality/many     ; People can have multiple email addresses.
+  :db/unique      :db.unique/identity      ; For our purposes, each email identifies one person.
+  :db/index       true}                    ; We want fast lookups by email.
+ {:db/id          :person/friend
+  :db/valueType   :db.type/ref
+  :db/cardinality :db.cardinality/many}    ; People can have many friends.
 
 githubRepo https://github.com/qpdb/mentat
  firstCommit 2016
@@ -12,23 +36,3 @@ githubRepo https://github.com/qpdb/mentat
  updated 2022
  description A persistent, relational store inspired by Datomic and DataScript.
  issues 299
-lineCommentToken ;
-example
- {:db/id          :person/email
-  :db/valueType   :db.type/string
-  :db/cardinality :db.cardinality/many     ; People can have multiple email addresses.
-  :db/unique      :db.unique/identity      ; For our purposes, each email identifies one person.
-  :db/index       true}                    ; We want fast lookups by email.
- {:db/id          :person/friend
-  :db/valueType   :db.type/ref
-  :db/cardinality :db.cardinality/many}    ; People can have many friends.
-appeared 2016
-features
- hasLineComments true
-  ; A comment
- hasComments true
-  ; A comment
- hasSemanticIndentation false
-website https://mentat.rs/
-creators Richard Newman
-domainName mentat.rs

@@ -1,16 +1,12 @@
 title TensorFlow
 appeared 2015
 type library
+creators Manjunath Kudlur
+website https://www.tensorflow.org/
+domainName tensorflow.org
+ registered 2015
 
-wikipedia https://en.wikipedia.org/wiki/TensorFlow
- related python cuda linux android ios
- summary TensorFlow is an open-source software library for dataflow programming across a range of tasks. It is a symbolic math library, and also used for machine learning applications such as neural networks. It is used for both research and production at Google,‍   often replacing its closed-source predecessor, DistBelief. TensorFlow was developed by the Google Brain team for internal Google use. It was released under the Apache 2.0 open source license on November 9, 2015.
- pageId 48508507
- dailyPageViews 1652
- created 2015
- backlinksCount 111
- revisionCount 360
- appeared 2015
+writtenIn python cpp cuda
 
 githubRepo https://github.com/tensorflow/tensorflow
  stars 166107
@@ -22,24 +18,28 @@ githubRepo https://github.com/tensorflow/tensorflow
  description An Open Source Machine Learning Framework for Everyone
  issues 2317
 
-website https://www.tensorflow.org/
+wikipedia https://en.wikipedia.org/wiki/TensorFlow
+ related python cuda linux android ios
+ summary TensorFlow is an open-source software library for dataflow programming across a range of tasks. It is a symbolic math library, and also used for machine learning applications such as neural networks. It is used for both research and production at Google,‍   often replacing its closed-source predecessor, DistBelief. TensorFlow was developed by the Google Brain team for internal Google use. It was released under the Apache 2.0 open source license on November 9, 2015.
+ pageId 48508507
+ dailyPageViews 1652
+ created 2015
+ backlinksCount 111
+ revisionCount 360
+ appeared 2015
 
-twitter tensorflow
-
-fileType text
-isOpenSource true
+indeedJobs tensorflow engineer
+ 2017 721
 
 meetup tensorflow
  memberCount 91480
  groupCount 112
 
-writtenIn python cpp cuda
-indeedJobs tensorflow engineer
- 2017 721
-centralPackageRepositoryCount 0
 goodreads
  title|year|author|goodreadsId|rating|ratings|reviews
  TensorFlow For Dummies (For Dummies (Computer/Tech))||Matthew Scarpino|60733334|0.0|0|0
-creators Manjunath Kudlur
-domainName tensorflow.org
- registered 2015
+
+twitter tensorflow
+fileType text
+isOpenSource true
+centralPackageRepositoryCount 0

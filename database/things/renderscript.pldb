@@ -1,22 +1,20 @@
 title RenderScript
 appeared 2011
 type pl
-
 description RenderScript is a component of the Android operating system for mobile devices that offers an API for acceleration that takes advantage of heterogeneous hardware. It allows developers to increase the performance of their applications at the cost of writing more complex (lower-level) code.
+website http://developer.android.com/guide/topics/renderscript/index.html
+reference https://developer.android.com/guide/topics/renderscript/advanced
 
-wikipedia https://en.wikipedia.org/wiki/RenderScript
- related android cuda
- summary RenderScript is a component of the Android operating system for mobile devices that offers an API for acceleration that takes advantage of heterogeneous hardware. It allows developers to increase the performance of their applications at the cost of writing more complex (lower-level) code. It provides the developer three primary tools: A simple 3D rendering API, a compute API similar to CUDA, and a C99-derived language.
- pageId 32576047
- created 2011
- backlinksCount 186
- revisionCount 69
- dailyPageViews 32
- appeared 2011
+features
+ hasMultiLineComments true
+  /* A comment
+  */
+ hasComments true
+  /* A comment
+  */
+ hasSemanticIndentation false
 
-githubLanguage RenderScript
- fileExtensions rs rsh
- trendingProjectsCount 0
+multiLineCommentTokens /* */
 
 example
  /*
@@ -87,20 +85,25 @@ example
      *out = rsPackColorTo8888(p20.r, p20.g, p20.b);
  }
  
-website http://developer.android.com/guide/topics/renderscript/index.html
-reference https://developer.android.com/guide/topics/renderscript/advanced
-fileType text
-centralPackageRepositoryCount 0
+
+wikipedia https://en.wikipedia.org/wiki/RenderScript
+ related android cuda
+ summary RenderScript is a component of the Android operating system for mobile devices that offers an API for acceleration that takes advantage of heterogeneous hardware. It allows developers to increase the performance of their applications at the cost of writing more complex (lower-level) code. It provides the developer three primary tools: A simple 3D rendering API, a compute API similar to CUDA, and a C99-derived language.
+ pageId 32576047
+ created 2011
+ backlinksCount 186
+ revisionCount 69
+ dailyPageViews 32
+ appeared 2011
+
+githubLanguage RenderScript
+ fileExtensions rs rsh
+ trendingProjectsCount 0
+
 goodreads
  title|year|author|goodreadsId|rating|ratings|reviews
  RenderScript: parallel computing on Android, the easy way||Alberto Marchetti|52506360|4.00|1|0
  Renderscript: Parallel Computing on Android, the Easy Way||Alberto Marchetti|51643141|0.0|0|0
-multiLineCommentTokens /* */
-features
- hasMultiLineComments true
-  /* A comment
-  */
- hasComments true
-  /* A comment
-  */
- hasSemanticIndentation false
+
+fileType text
+centralPackageRepositoryCount 0

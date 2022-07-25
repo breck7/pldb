@@ -2,6 +2,24 @@ title Mercury
 appeared 1995
 type pl
 creators Zoltan Somogyi
+website http://www.mercurylang.org
+fileExtensions m
+domainName mercurylang.org
+ registered 2011
+
+features
+ hasLineComments true
+  % A comment
+ hasComments true
+  % A comment
+ hasPrintDebugging true
+ hasSemanticIndentation false
+ hasStrings true
+  "Hello world"
+
+lineCommentToken %
+printToken io.write_string
+stringToken "
 
 wikipedia https://en.wikipedia.org/wiki/Mercury_(programming_language)
  example
@@ -58,29 +76,6 @@ linguistGrammarRepo https://github.com/sebgod/mercury-tmlanguage
   	io.write_string("Hello, world\n", !IO).
   
 
-website http://www.mercurylang.org
-fileExtensions m
-fileType text
-wordRank 4418
-isOpenSource true
-
-tiobe Mercury
-
-hopl 2226
-
-rosettaCode Mercury
-
-centralPackageRepositoryCount 0
-lineCommentToken %
-features
- hasLineComments true
-  % A comment
- hasComments true
-  % A comment
- hasPrintDebugging true
- hasSemanticIndentation false
- hasStrings true
-  "Hello world"
 leachim6 Mercury
  filepath m/Mercury.m
  fileExtensions m
@@ -94,7 +89,12 @@ leachim6 Mercury
   main(!IO) :-
   	io.write_string("Hello World\n", !IO).
   
-printToken io.write_string
-domainName mercurylang.org
- registered 2011
-stringToken "
+rosettaCode Mercury
+
+tiobe Mercury
+hopl 2226
+
+fileType text
+wordRank 4418
+isOpenSource true
+centralPackageRepositoryCount 0

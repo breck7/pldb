@@ -2,6 +2,12 @@ title Squirrel
 appeared 2003
 type pl
 creators Alberto Demichelis
+website http://squirrel-lang.org/
+fileExtensions nut
+domainName squirrel-lang.org
+ registered 2005
+
+writtenIn cpp
 
 features
  hasComments true
@@ -11,6 +17,20 @@ features
  hasSemanticIndentation false
  hasStrings true
   "Hello world"
+
+lineCommentToken //
+printToken print
+stringToken "
+
+githubRepo https://github.com/albertodemichelis/squirrel
+ stars 706
+ forks 145
+ subscribers 61
+ created 2015
+ updated 2022
+ firstCommit 2015
+ description Official repository for the programming language Squirrel
+ issues 80
 
 wikipedia https://en.wikipedia.org/wiki/Squirrel_(programming_language)
  example
@@ -59,21 +79,6 @@ wikipedia https://en.wikipedia.org/wiki/Squirrel_(programming_language)
 githubLanguage Squirrel
  fileExtensions nut
  trendingProjectsCount 0
-
-githubRepo https://github.com/albertodemichelis/squirrel
- stars 706
- forks 145
- subscribers 61
- created 2015
- updated 2022
- firstCommit 2015
- description Official repository for the programming language Squirrel
- issues 80
-
-helloWorldCollection Squirrel
- #!/usr/bin/squirrelsh
- // Hello world in Squirrel
- printl("Hello, world!");
 
 linguistGrammarRepo https://github.com/textmate/c.tmbundle
  firstCommit 2005
@@ -140,42 +145,32 @@ linguistGrammarRepo https://github.com/textmate/c.tmbundle
   newplayer.MoveTo(100,200,300);	
   
 
-website http://squirrel-lang.org/
-
-tryItOnline squirrel
-
-twitter squirrellang
-
-fileExtensions nut
-fileType text
-isOpenSource true
-
-tiobe Squirrel
-
 projectEuler Squirrel
  memberCount
   2019 34
   2022 42
-
-quineRelay Squirrel
-
-ubuntuPackage squirrel3
-
-rosettaCode Squirrel
-
-writtenIn cpp
-centralPackageRepositoryCount 0
-rijuRepl https://riju.codes/squirrel
- example
-  print("Hello, world!\n")
-  
-lineCommentToken //
+helloWorldCollection Squirrel
+ #!/usr/bin/squirrelsh
+ // Hello world in Squirrel
+ printl("Hello, world!");
 leachim6 Squirrel
  filepath s/Squirrel.nut
  fileExtensions nut
  example
   print("Hello World");
-printToken print
-domainName squirrel-lang.org
- registered 2005
-stringToken "
+rosettaCode Squirrel
+quineRelay Squirrel
+
+rijuRepl https://riju.codes/squirrel
+ example
+  print("Hello, world!\n")
+  
+tryItOnline squirrel
+
+tiobe Squirrel
+
+twitter squirrellang
+ubuntuPackage squirrel3
+fileType text
+isOpenSource true
+centralPackageRepositoryCount 0

@@ -1,6 +1,7 @@
 title Case Sensitivity
 type feature
-psuedoExample pldb != PLDB
 description Most programming languages are case sensitive, so x != X.
 reference https://en.wikipedia.org/wiki/Case_sensitivity
+
+psuedoExample pldb != PLDB
 featureKeyword isCaseSensitive

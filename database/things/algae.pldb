@@ -1,20 +1,21 @@
 title Algae
 appeared 1997
 type pl
-
 reference http://algae.sourceforge.net/
 
-hopl 2713
+features
+ hasPrintDebugging true
 
-rosettaCode Algae
+printToken printf
 
-centralPackageRepositoryCount 0
 leachim6 Algae
  filepath a/Algae.algae
  fileExtensions algae
  example
   printf("Hello World\n");
   
-printToken printf
-features
- hasPrintDebugging true
+rosettaCode Algae
+
+hopl 2713
+
+centralPackageRepositoryCount 0

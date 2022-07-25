@@ -1,6 +1,29 @@
 title Fantom
 appeared 2005
 type pl
+website http://www.fantom.org
+domainName fantom.org
+ registered 2003
+
+runsOnVm jvm
+
+features
+ hasLineComments true
+  // A comment
+ hasComments true
+  // A comment
+ hasPrintDebugging true
+ hasMultiLineComments true
+  /* A comment
+  */
+ hasSemanticIndentation false
+ hasStrings true
+  "Hello world"
+
+lineCommentToken //
+multiLineCommentTokens /* */
+printToken echo
+stringToken "
 
 wikipedia https://en.wikipedia.org/wiki/Fantom_(programming_language)
  example
@@ -25,6 +48,9 @@ githubLanguage Fantom
  fileExtensions fan
  trendingProjectsCount 0
 
+pygmentsHighlighter Fantom
+ filename fantom.py
+ fileExtensions fan
 linguistGrammarRepo https://github.com/rkoeninger/sublime-fantom
  firstCommit 2016
  lastCommit 2017
@@ -84,35 +110,6 @@ linguistGrammarRepo https://github.com/rkoeninger/sublime-fantom
   }
   
 
-website http://www.fantom.org
-
-tryItOnline fantom
-
-fileType text
-runsOnVm jvm
-isOpenSource true
-
-tiobe Fantom
-
-rosettaCode Fantom
-
-centralPackageRepositoryCount 0
-lineCommentToken //
-features
- hasLineComments true
-  // A comment
- hasComments true
-  // A comment
- hasPrintDebugging true
- hasMultiLineComments true
-  /* A comment
-  */
- hasSemanticIndentation false
- hasStrings true
-  "Hello world"
-pygmentsHighlighter Fantom
- filename fantom.py
- fileExtensions fan
 leachim6 Fantom
  filepath f/Fantom.fan
  fileExtensions fan
@@ -124,8 +121,12 @@ leachim6 Fantom
     }
   }
   
-printToken echo
-multiLineCommentTokens /* */
-domainName fantom.org
- registered 2003
-stringToken "
+rosettaCode Fantom
+
+tryItOnline fantom
+
+tiobe Fantom
+
+fileType text
+isOpenSource true
+centralPackageRepositoryCount 0

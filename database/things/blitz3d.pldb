@@ -2,6 +2,14 @@ title Blitz3D
 appeared 2001
 type pl
 
+features
+ hasPrintDebugging true
+ hasStrings true
+  "Hello world"
+
+printToken Print
+stringToken "
+
 wikipedia https://en.wikipedia.org/wiki/Blitz3D
  example
   AppTitle = "Binary Clock"
@@ -75,7 +83,6 @@ wikipedia https://en.wikipedia.org/wiki/Blitz3D
  dailyPageViews 11
  appeared 2000
 
-centralPackageRepositoryCount 0
 leachim6 Blitz3D
  filepath b/Blitz3D.bb
  fileExtensions bb
@@ -85,9 +92,5 @@ leachim6 Blitz3D
   WaitKey
   End
   
-printToken Print
-features
- hasPrintDebugging true
- hasStrings true
-  "Hello world"
-stringToken "
+
+centralPackageRepositoryCount 0

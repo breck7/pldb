@@ -1,6 +1,9 @@
 title Sweave
 appeared 2002
 type template
+fileExtensions rnw
+
+compilesTo latex
 
 example
  %-------------------------------------------
@@ -28,6 +31,4 @@ wikipedia https://en.wikipedia.org/wiki/Sweave
  dailyPageViews 26
  appeared 2002
 
-fileExtensions rnw
-compilesTo latex
 centralPackageRepositoryCount 0

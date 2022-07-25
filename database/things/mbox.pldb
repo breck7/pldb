@@ -48,6 +48,9 @@ wikipedia https://en.wikipedia.org/wiki/Mbox
 githubLanguage EML
  fileExtensions eml mbox
 
+pygmentsHighlighter E-mail
+ filename email.py
+ fileExtensions eml
 linguistGrammarRepo https://github.com/mariozaizar/language-eml
  firstCommit 2016
  lastCommit 2018
@@ -127,6 +130,3 @@ linguistGrammarRepo https://github.com/mariozaizar/language-eml
 
 fileType text
 centralPackageRepositoryCount 0
-pygmentsHighlighter E-mail
- filename email.py
- fileExtensions eml

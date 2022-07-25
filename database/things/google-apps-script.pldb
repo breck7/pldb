@@ -2,6 +2,14 @@ title Google Apps Script
 appeared 2009
 type pl
 
+features
+ hasPrintDebugging true
+ hasStrings true
+  "Hello world"
+
+printToken Logger.log
+stringToken "
+
 wikipedia https://en.wikipedia.org/wiki/Google_Apps_Script
  example
   function doGet() {
@@ -18,7 +26,6 @@ wikipedia https://en.wikipedia.org/wiki/Google_Apps_Script
  dailyPageViews 143
  appeared 2009
 
-centralPackageRepositoryCount 0
 leachim6 Google Apps Script
  filepath g/Google Apps Script.gs
  example
@@ -26,9 +33,5 @@ leachim6 Google Apps Script
     Logger.log("Hello World");
   }
   
-printToken Logger.log
-features
- hasPrintDebugging true
- hasStrings true
-  "Hello world"
-stringToken "
+
+centralPackageRepositoryCount 0

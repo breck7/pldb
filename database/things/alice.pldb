@@ -1,6 +1,7 @@
 title Alice
 appeared 2000
 type pl
+website http://www.ps.uni-saarland.de/alice
 
 wikipedia https://en.wikipedia.org/wiki/Alice_(programming_language)
  example
@@ -16,7 +17,12 @@ wikipedia https://en.wikipedia.org/wiki/Alice_(programming_language)
  revisionCount 94
  appeared 2000
 
-website http://www.ps.uni-saarland.de/alice
+leachim6 Alice
+ filepath a/Alice.alice
+ fileExtensions alice
+ example
+  "dlroW olleH"d&O`@
+  
 
 tryItOnline alice
 
@@ -24,9 +30,3 @@ fileType text
 wordRank 5414
 isOpenSource true
 centralPackageRepositoryCount 0
-leachim6 Alice
- filepath a/Alice.alice
- fileExtensions alice
- example
-  "dlroW olleH"d&O`@
-  

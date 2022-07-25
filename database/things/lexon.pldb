@@ -1,8 +1,21 @@
 title Lexon
-related solidity
-website http://lexon.tech/
-type contractLanguage
 appeared 2018
+type contractLanguage
+website http://lexon.tech/
+domainName lexon.tech
+ registered 2018
+
+related solidity
+
+features
+ hasLineComments true
+  COMMENT A comment
+ hasComments true
+  COMMENT A comment
+
+lineCommentToken COMMENT
+keywords lexon lex clause terms contracts may pay pays appoints into to
+
 example
  LEX Escrow.
  
@@ -14,13 +27,5 @@ example
  
  Chapter: Pay Back.
  The Arbiter or the Payee may pay the Escrow to the Payer.
-domainName lexon.tech
- registered 2018
-lineCommentToken COMMENT
+
 monaco lexon
-keywords lexon lex clause terms contracts may pay pays appoints into to
-features
- hasLineComments true
-  COMMENT A comment
- hasComments true
-  COMMENT A comment

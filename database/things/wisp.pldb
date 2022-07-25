@@ -1,9 +1,9 @@
 title wisp
 appeared 2012
 type pl
-
-example
- (alert "Hello world!")
+creators Santosh Rajan
+description A little Clojure-like LISP in JavaScript
+website https://gozala.github.io/wisp/
 
 features
  hasSemanticIndentation true
@@ -14,11 +14,11 @@ features
  hasStrings true
   "Hello world"
 
-description A little Clojure-like LISP in JavaScript
+lineCommentToken ;
+stringToken "
 
-githubLanguage wisp
- fileExtensions wisp
- trendingProjectsCount 0
+example
+ (alert "Hello world!")
 
 githubRepo https://github.com/Gozala/wisp
  firstCommit 2012
@@ -29,6 +29,10 @@ githubRepo https://github.com/Gozala/wisp
  updated 2022
  description A little Clojure-like LISP in JavaScript
  issues 56
+
+githubLanguage wisp
+ fileExtensions wisp
+ trendingProjectsCount 0
 
 linguistGrammarRepo https://github.com/atom/language-clojure
  firstCommit 2013
@@ -101,10 +105,6 @@ linguistGrammarRepo https://github.com/atom/language-clojure
   ;; # Conventions
   ;; Wisp puts a lot of effort in making naming conventions tra
 
-website https://gozala.github.io/wisp/
 fileType text
 isOpenSource true
 centralPackageRepositoryCount 0
-creators Santosh Rajan
-lineCommentToken ;
-stringToken "

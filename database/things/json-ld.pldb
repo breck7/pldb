@@ -1,6 +1,21 @@
 title JSON-LD
 appeared 2010
 type dataValidationLanguage
+creators Dave Longley
+website https://json-ld.org/
+standsFor JavaScript Object Notation for Linked Data
+domainName json-ld.org
+ registered 2010
+
+githubRepo https://github.com/digitalbazaar/jsonld.js
+ firstCommit 2010
+ stars 1425
+ forks 183
+ subscribers 64
+ created 2011
+ updated 2022
+ description A JSON-LD Processor and API implementation in JavaScript
+ issues 118
 
 wikipedia https://en.wikipedia.org/wiki/JSON-LD
  summary JSON-LD (JavaScript Object Notation for Linked Data), is a method of encoding Linked Data using JSON. It was a goal to require as little effort as possible from developers to transform their existing JSON to JSON-LD. This allows data to be serialized in a way that is similar to traditional JSON. It is a World Wide Web Consortium Recommendation. It was initially developed by the JSON for Linking Data Community Group before being transferred to the RDF Working Group for review, improvement, and standardization.
@@ -13,16 +28,9 @@ githubLanguage JSONLD
  fileExtensions jsonld
  trendingProjectsCount 0
 
-githubRepo https://github.com/digitalbazaar/jsonld.js
- firstCommit 2010
- stars 1425
- forks 183
- subscribers 64
- created 2011
- updated 2022
- description A JSON-LD Processor and API implementation in JavaScript
- issues 118
-
+pygmentsHighlighter JSON-LD
+ filename data.py
+ fileExtensions jsonld
 linguistGrammarRepo https://github.com/atom/language-javascript
  firstCommit 2013
  lastCommit 2018
@@ -61,14 +69,6 @@ linguistGrammarRepo https://github.com/atom/language-javascript
     }
   }
 
-website https://json-ld.org/
-standsFor JavaScript Object Notation for Linked Data
 fileType text
 isOpenSource true
 centralPackageRepositoryCount 0
-creators Dave Longley
-pygmentsHighlighter JSON-LD
- filename data.py
- fileExtensions jsonld
-domainName json-ld.org
- registered 2010

@@ -1,6 +1,16 @@
 title zephyr-asdl
 appeared 1997
 type grammarLanguage
+reference https://github.com/python/cpython/blob/master/Parser/Python.asdl
+
+features
+ hasLineComments true
+  -- A comment
+ hasComments true
+  -- A comment
+ hasSemanticIndentation false
+
+lineCommentToken --
 
 example
  -- ASDL's 5 builtin types are:
@@ -105,12 +115,3 @@ example
      withitem = (expr context_expr, expr? optional_vars)
      type_ignore = TypeIgnore(int lineno, string tag)
  }
-
-reference https://github.com/python/cpython/blob/master/Parser/Python.asdl
-lineCommentToken --
-features
- hasLineComments true
-  -- A comment
- hasComments true
-  -- A comment
- hasSemanticIndentation false

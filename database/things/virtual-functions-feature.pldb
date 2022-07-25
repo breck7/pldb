@@ -1,8 +1,8 @@
 title Virtual function
 type feature
-psuedoExample virtual FetchPLDBFile();
 description A virtual function defines a target function to be executed, but the target might not be known at compile time.
 
-wikipedia https://en.wikipedia.org/wiki/Virtual_function
-
+psuedoExample virtual FetchPLDBFile();
 featureKeyword hasVirtualFunctions
+
+wikipedia https://en.wikipedia.org/wiki/Virtual_function

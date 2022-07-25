@@ -1,8 +1,10 @@
 title Troff
 appeared 1973
 type textMarkup
-website https://www.troff.org/
 description The Text Processor for Typesetters
+website https://www.troff.org/
+country United States
+domainName troff.org
 
 wikipedia https://en.wikipedia.org/wiki/Troff
  related unix bcpl assembly-language c latex scheme unicode tex scribe
@@ -14,21 +16,19 @@ wikipedia https://en.wikipedia.org/wiki/Troff
  revisionCount 186
  appeared 1960
 
+codeMirror troff
+
 helloWorldCollection TROFF
  \"	"Hello, world!" in troff
  
  Hello, world!
  
 
-country United States
-fileType text
-
-hopl 2589
-
-codeMirror troff
-
-centralPackageRepositoryCount 0
 goodreads
  title|year|author|goodreadsId|rating|ratings|reviews
  Free Typesetting Software: LaTeX, Troff, Scribus, FIGlet, Lout, Noweb, FreeType, Graphite, Groff,|2010|Books LLC|16221131|0.0|0|0
-domainName troff.org
+
+hopl 2589
+
+fileType text
+centralPackageRepositoryCount 0

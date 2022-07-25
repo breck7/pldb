@@ -1,6 +1,15 @@
 title Draco
 appeared 1987
 type pl
+creators Chris Gray
+
+features
+ hasPrintDebugging true
+ hasStrings true
+  "Hello world"
+
+printToken writeln
+stringToken "
 
 wikipedia https://en.wikipedia.org/wiki/Draco_(programming_language)
  related pascal c
@@ -12,11 +21,6 @@ wikipedia https://en.wikipedia.org/wiki/Draco_(programming_language)
  dailyPageViews 6
  appeared 1987
 
-
-hopl 1317
-
-centralPackageRepositoryCount 0
-creators Chris Gray
 leachim6 Draco
  filepath d/Draco.d
  fileExtensions d
@@ -25,9 +29,7 @@ leachim6 Draco
       writeln("Hello World");
   corp;
   
-printToken writeln
-features
- hasPrintDebugging true
- hasStrings true
-  "Hello world"
-stringToken "
+
+hopl 1317
+
+centralPackageRepositoryCount 0

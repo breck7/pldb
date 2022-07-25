@@ -1,6 +1,18 @@
 title wescheme
 appeared 2009
 type pl
+website https://www.wescheme.org/
+domainName wescheme.org
+ registered 2009
+
+features
+ hasLineComments true
+  ; A comment
+ hasComments true
+  ; A comment
+ hasSemanticIndentation false
+
+lineCommentToken ;
 
 example
  ;; The world is a number
@@ -9,14 +21,3 @@ example
   (add1 world))
  (big-bang 0
           (on-tick tick 2)) ;; tick every two seconds
-
-website https://www.wescheme.org/
-lineCommentToken ;
-features
- hasLineComments true
-  ; A comment
- hasComments true
-  ; A comment
- hasSemanticIndentation false
-domainName wescheme.org
- registered 2009

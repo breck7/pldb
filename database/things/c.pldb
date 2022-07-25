@@ -2,6 +2,9 @@ title C
 appeared 1972
 type pl
 creators Dennis Ritchie
+reference http://www.c4learn.com/c-programming/c-keywords/
+cheatSheetUrl https://courses.cs.washington.edu/courses/cse351/14sp/sections/1/Cheatsheet-c.pdf
+country United States
 
 features
  hasRegularExpressionsSyntaxSugar false
@@ -136,6 +139,12 @@ features
  hasAssignment true
  isCaseSensitive true
 
+lineCommentToken //
+multiLineCommentTokens /* */
+printToken printf
+assignmentToken =
+keywords auto break case char const continue default do double else enum extern float for goto if int long register return short signed sizeof static struct switch typedef union unsigned void volatile while
+
 wikipedia https://en.wikipedia.org/wiki/C_(programming_language)
  example
   #include <stdio.h>
@@ -185,6 +194,11 @@ githubLanguage C
   esp8266 Arduino https://github.com/esp8266.png https://github.com/esp8266/Arduino C #555555 9944 7850 166 "ESP8266 core for Arduino"
  trendingProjectsCount 26
 
+antlr https://github.com/antlr/grammars-v4/tree/master/c
+monaco cpp
+pygmentsHighlighter C
+ filename c_cpp.py
+ fileExtensions c h idc x[bp]m
 linguistGrammarRepo https://github.com/textmate/c.tmbundle
  firstCommit 2005
  lastCommit 2018
@@ -200,58 +214,23 @@ linguistGrammarRepo https://github.com/textmate/c.tmbundle
   #endif
   
 
-reference http://www.c4learn.com/c-programming/c-keywords/
-
-replit c
-
-country United States
-fileType text
-wordRank 81
-
-tiobe C
- currentRank 2
-
-meetup c
- memberCount 69338
- groupCount 204
-
-linkedInSkill c
- 2018 3635195
-
 projectEuler C/C++
  memberCount
   2022 46028
   2019 41087
-
-hopl 577
-
-subreddit C_Programming
- memberCount
-  2017 30709
-  2022 127013
-
+leachim6 C
+ filepath c/C.c
+ example
+  #include <stdio.h>
+  
+  main()
+  {
+      printf("Hello World\n");
+  }
+  
+rosettaCode C
 quineRelay C
 
-ubuntuPackage gcc
-
-rosettaCode C
-
-antlr https://github.com/antlr/grammars-v4/tree/master/c
-
-cheatSheetUrl https://courses.cs.washington.edu/courses/cse351/14sp/sections/1/Cheatsheet-c.pdf
-indeedJobs c engineer
- 2017 23567
-lineCommentToken //
-jupyterKernel https://github.com/brendan-rius/jupyter-c-kernel
-keywords auto break case char const continue default do double else enum extern float for goto if int long register return short signed sizeof static struct switch typedef union unsigned void volatile while
-stackOverflowSurvey
- 2021
-  users 17329
-  medianSalary 53184
-  fans 9702
-  percentageUsing 0.21
-centralPackageRepositoryCount 0
-gdbSupport true
 rijuRepl https://riju.codes/c
  example
   #include <stdio.h>
@@ -264,20 +243,34 @@ rijuRepl https://riju.codes/c
  description General-purpose, procedural computer programming language supporting structured programming, lexical variable scope, and recursion, with a static type system
  fileExtensions c h
  githubRepo https://github.com/llvm/llvm-project
-multiLineCommentTokens /* */
-pygmentsHighlighter C
- filename c_cpp.py
- fileExtensions c h idc x[bp]m
-leachim6 C
- filepath c/C.c
- example
-  #include <stdio.h>
-  
-  main()
-  {
-      printf("Hello World\n");
-  }
-  
-printToken printf
-assignmentToken =
-monaco cpp
+replit c
+
+indeedJobs c engineer
+ 2017 23567
+linkedInSkill c
+ 2018 3635195
+stackOverflowSurvey
+ 2021
+  users 17329
+  medianSalary 53184
+  fans 9702
+  percentageUsing 0.21
+
+subreddit C_Programming
+ memberCount
+  2017 30709
+  2022 127013
+meetup c
+ memberCount 69338
+ groupCount 204
+
+tiobe C
+ currentRank 2
+hopl 577
+
+ubuntuPackage gcc
+gdbSupport true
+jupyterKernel https://github.com/brendan-rius/jupyter-c-kernel
+fileType text
+wordRank 81
+centralPackageRepositoryCount 0

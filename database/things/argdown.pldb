@@ -1,8 +1,25 @@
 title Argdown
 appeared 2014
 type textMarkup
-
+website https://argdown.org/
 webRepl https://argdown.org/sandbox/html
+domainName argdown.org
+ registered 2018
+
+visualParadigm true
+
+features
+ hasSemanticIndentation true
+ hasLineComments true
+  // A comment
+ hasComments true
+  // A comment
+ hasMultiLineComments true
+  <!-- A comment
+  -->
+
+lineCommentToken //
+multiLineCommentTokens <!-- -->
 
 example
   # Welcome to Argdown!
@@ -96,16 +113,6 @@ example
     We can also link to headings: 
     [Back to top](#heading-welcome-to-argdown)
 
-features
- hasSemanticIndentation true
- hasLineComments true
-  // A comment
- hasComments true
-  // A comment
- hasMultiLineComments true
-  <!-- A comment
-  -->
-
 githubRepo https://github.com/christianvoigt/argdown
  firstCommit 2014
  stars 583
@@ -115,10 +122,3 @@ githubRepo https://github.com/christianvoigt/argdown
  updated 2022
  description a simple syntax for complex argumentation
  issues 98
-
-website https://argdown.org/
-visualParadigm true
-lineCommentToken //
-multiLineCommentTokens <!-- -->
-domainName argdown.org
- registered 2018

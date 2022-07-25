@@ -1,6 +1,7 @@
 title QMake
 appeared 2002
 type pl
+reference http://doc.qt.io/archives/qt-4.8/qmake-tutorial.html
 
 example
  CONFIG += qt debug
@@ -40,7 +41,6 @@ linguistGrammarRepo https://github.com/textmate/cpp-qt.tmbundle
   message(This is QMake.)
   
 
-reference http://doc.qt.io/archives/qt-4.8/qmake-tutorial.html
 fileType text
 isOpenSource true
 centralPackageRepositoryCount 0

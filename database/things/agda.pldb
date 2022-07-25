@@ -2,6 +2,8 @@ title Agda
 appeared 2007
 type pl
 creators Ulf Norell and Catarina Coquand
+website http://wiki.portal.chalmers.se/agda
+country Sweden
 
 features
  hasTypedHoles true
@@ -13,6 +15,10 @@ features
  hasSemanticIndentation false
  hasStrings true
   "Hello world"
+
+lineCommentToken --
+printToken putStrLn
+stringToken "
 
 wikipedia https://en.wikipedia.org/wiki/Agda_(programming_language)
  example
@@ -33,6 +39,9 @@ githubLanguage Agda
  fileExtensions agda
  trendingProjectsCount 0
 
+pygmentsHighlighter Agda
+ filename haskell.py
+ fileExtensions agda
 linguistGrammarRepo https://github.com/mokus0/Agda.tmbundle
  firstCommit 2011
  lastCommit 2014
@@ -81,28 +90,6 @@ linguistGrammarRepo https://github.com/mokus0/Agda.tmbundle
   module Nat-EasyCategory = EasyCategory ℕ _≤_ (λ {x}{y}{z} → ≤-trans x y z) ≤-refl same
   
 
-website http://wiki.portal.chalmers.se/agda
-
-tryItOnline agda
-
-country Sweden
-fileType text
-isOpenSource true
-
-hopl 7860
-
-rosettaCode Agda
-
-centralPackageRepositoryCount 0
-goodreads
- title|year|author|goodreadsId|rating|ratings|reviews
- Verified Functional Programming in Agda||Aaron Stump|49396006|4.00|1|0
- Verified Functional Programming in Agda||Aaron Stump|49396007|0.0|0|0
- Programming Language Foundations in Agda||Philip Wadler|66111413|0.0|0|0
-lineCommentToken --
-pygmentsHighlighter Agda
- filename haskell.py
- fileExtensions agda
 leachim6 Agda
  filepath a/Agda.agda
  fileExtensions agda
@@ -112,5 +99,18 @@ leachim6 Agda
   
   main = run (putStrLn "Hello World")
   
-printToken putStrLn
-stringToken "
+rosettaCode Agda
+
+tryItOnline agda
+
+goodreads
+ title|year|author|goodreadsId|rating|ratings|reviews
+ Verified Functional Programming in Agda||Aaron Stump|49396006|4.00|1|0
+ Verified Functional Programming in Agda||Aaron Stump|49396007|0.0|0|0
+ Programming Language Foundations in Agda||Philip Wadler|66111413|0.0|0|0
+
+hopl 7860
+
+fileType text
+isOpenSource true
+centralPackageRepositoryCount 0

@@ -1,7 +1,22 @@
 title Fable
+appeared 2012
 type pl
 description Fable is a compiler that brings F# into the JavaScript ecosystem
 website https://fable.io/
+domainName fable.io
+ registered 2012
+
+features
+ hasLineComments true
+  // A comment
+ hasComments true
+  // A comment
+ hasPrintDebugging true
+ hasSemanticIndentation false
+
+lineCommentToken //
+printToken printfn
+
 example
  type Face =
      | Ace | King | Queen | Jack
@@ -21,16 +36,3 @@ example
  // Incomplete pattern matches on this expression.
  // For example, the value '(_,Spades)' may indicate
  // a case not covered by the pattern(s).
-
-lineCommentToken //
-features
- hasLineComments true
-  // A comment
- hasComments true
-  // A comment
- hasPrintDebugging true
- hasSemanticIndentation false
-printToken printfn
-domainName fable.io
- registered 2012
-appeared 2012

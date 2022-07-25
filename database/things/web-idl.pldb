@@ -2,6 +2,17 @@ title WebIDL
 appeared 2012
 type idl
 
+features
+ hasMultiLineComments true
+  /* A comment
+  */
+ hasComments true
+  /* A comment
+  */
+ hasSemanticIndentation false
+
+multiLineCommentTokens /* */
+
 wikipedia https://en.wikipedia.org/wiki/Web_IDL
  related idl-sl ecmascript
  summary Web IDL is an interface description language (IDL) format for describing application programming interfaces (APIs) that are intended to be implemented in web browsers.
@@ -16,6 +27,9 @@ githubLanguage WebIDL
  fileExtensions webidl
  trendingProjectsCount 0
 
+pygmentsHighlighter Web IDL
+ filename webidl.py
+ fileExtensions webidl
 linguistGrammarRepo https://github.com/andik/IDL-Syntax
  firstCommit 2014
  lastCommit 2015
@@ -52,15 +66,3 @@ linguistGrammarRepo https://github.com/andik/IDL-Syntax
 
 fileType text
 centralPackageRepositoryCount 0
-pygmentsHighlighter Web IDL
- filename webidl.py
- fileExtensions webidl
-multiLineCommentTokens /* */
-features
- hasMultiLineComments true
-  /* A comment
-  */
- hasComments true
-  /* A comment
-  */
- hasSemanticIndentation false

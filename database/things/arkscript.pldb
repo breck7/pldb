@@ -2,6 +2,23 @@ title ArkScript
 appeared 2019
 type pl
 creators Alexandre Plateau and Pierre Pharel and Natendrtfm
+description ArkScript is a small, fast, functional and scripting language for video games.
+website https://arkscript-lang.github.io
+domainName arkscript-lang.github.io
+
+features
+ hasLineComments true
+  # A comment
+ hasComments true
+  # A comment
+ hasPrintDebugging true
+ hasSemanticIndentation false
+ hasStrings true
+  "Hello world"
+
+lineCommentToken #
+printToken print
+stringToken "
 
 example
  {
@@ -30,8 +47,6 @@ example
      (print "You won in " essais " tries")
  }
 
-description ArkScript is a small, fast, functional and scripting language for video games.
-
 githubRepo https://github.com/ArkScript-lang/Ark
  firstCommit 2019
  stars 452
@@ -42,23 +57,9 @@ githubRepo https://github.com/ArkScript-lang/Ark
  description ArkScript is a small, fast, functional and scripting language for C++ projects
  issues 22
 
-website https://arkscript-lang.github.io
-lineCommentToken #
-features
- hasLineComments true
-  # A comment
- hasComments true
-  # A comment
- hasPrintDebugging true
- hasSemanticIndentation false
- hasStrings true
-  "Hello world"
 leachim6 ArkScript
  filepath a/ArkScript.ark
  fileExtensions ark
  example
   (print "Hello World")
   
-printToken print
-domainName arkscript-lang.github.io
-stringToken "

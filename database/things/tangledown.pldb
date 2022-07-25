@@ -1,6 +1,9 @@
 title tangledown
 appeared 2011
 type template
+creators Nicholas Bollweg
+description tangledown combines the simplicity of Markdown syntax with the sexiness of Tangle.js reactive documents and the loveliness of Rickshaw plots
+website http://bollwyvl.github.io/TangleDown/
 
 example
  If you eat t[number](cookies ' cookies'), you consume t[](calories ' calories'). This constitutes t[](dailypercent percent) of a daily intake of t[number](100<dailycalories..100 ' calories').
@@ -21,8 +24,6 @@ example
  #overninek: #calories > 9000
  ~~~~
 
-description tangledown combines the simplicity of Markdown syntax with the sexiness of Tangle.js reactive documents and the loveliness of Rickshaw plots
-
 githubRepo https://github.com/bollwyvl/tangledown
  firstCommit 2011
  stars 30
@@ -32,6 +33,3 @@ githubRepo https://github.com/bollwyvl/tangledown
  updated 2022
  description Markdown + Tangle.js + (someday) SymPy
  issues 1
-
-website http://bollwyvl.github.io/TangleDown/
-creators Nicholas Bollweg

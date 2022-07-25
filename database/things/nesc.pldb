@@ -1,6 +1,17 @@
 title network embedded systems C
 appeared 2002
 type pl
+standsFor network embedded systems C
+
+githubRepo https://github.com/tinyos/nesc
+ firstCommit 2002
+ stars 93
+ forks 58
+ subscribers 31
+ created 2012
+ updated 2022
+ description Master nesc repository
+ issues 11
 
 wikipedia https://en.wikipedia.org/wiki/NesC
  related c
@@ -15,26 +26,15 @@ githubLanguage nesC
  fileExtensions nc
  trendingProjectsCount 0
 
-githubRepo https://github.com/tinyos/nesc
- firstCommit 2002
- stars 93
- forks 58
- subscribers 31
- created 2012
- updated 2022
- description Master nesc repository
- issues 11
-
+pygmentsHighlighter nesC
+ filename c_like.py
+ fileExtensions nc
 linguistGrammarRepo https://github.com/cdwilson/nesC.tmbundle
  firstCommit 2011
  lastCommit 2016
  committerCount 7
  commitCount 24
 
-standsFor network embedded systems C
 fileType text
 isOpenSource true
 centralPackageRepositoryCount 0
-pygmentsHighlighter nesC
- filename c_like.py
- fileExtensions nc

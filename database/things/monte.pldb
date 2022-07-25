@@ -1,6 +1,7 @@
 title monte
 appeared 2014
 type pl
+description <a href='https://github.com/monte-language'>Monte</a> is a dynamic programming language inspired by Python and E.
 
 features
  hasComments true
@@ -9,7 +10,8 @@ features
  hasStrings true
   "Hello world"
 
-description <a href='https://github.com/monte-language'>Monte</a> is a dynamic programming language inspired by Python and E.
+printToken traceln
+stringToken "
 
 githubRepo https://github.com/monte-language/monte
  stars 72
@@ -21,21 +23,19 @@ githubRepo https://github.com/monte-language/monte
  description A dynamic language inspired by Python and E.
  issues 12
 
-fileType text
-wordRank 8540
-isOpenSource true
-
-rosettaCode Monte
-
-centralPackageRepositoryCount 0
 pygmentsHighlighter Monte
  filename monte.py
  fileExtensions mt
+
 leachim6 Monte
  filepath m/Monte.mt
  fileExtensions mt
  example
   traceln("Hello World")
   
-printToken traceln
-stringToken "
+rosettaCode Monte
+
+fileType text
+wordRank 8540
+isOpenSource true
+centralPackageRepositoryCount 0

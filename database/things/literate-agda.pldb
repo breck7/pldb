@@ -1,10 +1,16 @@
 title Literate Agda
 appeared 2009
 type pl
+reference https://link.springer.com/chapter/10.1007/978-3-642-04652-0_5
 
-githubLanguage Literate Agda
- fileExtensions lagda
- trendingProjectsCount 0
+features
+ hasLineComments true
+  -- A comment
+ hasComments true
+  -- A comment
+ hasSemanticIndentation false
+
+lineCommentToken --
 
 example
  \documentclass{article}
@@ -90,16 +96,13 @@ example
  
   \end{document}
 
-reference https://link.springer.com/chapter/10.1007/978-3-642-04652-0_5
-fileType text
-centralPackageRepositoryCount 0
-lineCommentToken --
-features
- hasLineComments true
-  -- A comment
- hasComments true
-  -- A comment
- hasSemanticIndentation false
+githubLanguage Literate Agda
+ fileExtensions lagda
+ trendingProjectsCount 0
+
 pygmentsHighlighter Literate Agda
  filename haskell.py
  fileExtensions lagda
+
+fileType text
+centralPackageRepositoryCount 0

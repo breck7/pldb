@@ -1,6 +1,22 @@
 title LoomScript
 appeared 2013
 type pl
+website http://loomsdk.com/
+domainName loomsdk.com
+ registered 2013
+
+features
+ hasLineComments true
+  // A comment
+ hasComments true
+  // A comment
+ hasMultiLineComments true
+  /* A comment
+  */
+ hasSemanticIndentation false
+
+lineCommentToken //
+multiLineCommentTokens /* */
 
 githubLanguage LoomScript
  fileExtensions ls
@@ -52,19 +68,5 @@ linguistGrammarRepo https://github.com/ambethia/Sublime-Loom
       }
   }
 
-website http://loomsdk.com/
 fileType text
 centralPackageRepositoryCount 0
-lineCommentToken //
-features
- hasLineComments true
-  // A comment
- hasComments true
-  // A comment
- hasMultiLineComments true
-  /* A comment
-  */
- hasSemanticIndentation false
-multiLineCommentTokens /* */
-domainName loomsdk.com
- registered 2013

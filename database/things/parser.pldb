@@ -1,11 +1,25 @@
 title Parser 3
 appeared 1997
 type pl
+creators Konstantin Morshnev
+website http://www.parser.ru/
 aka parser3
+country Russia
+domainName parser.ru
 
-rijuRepl https://riju.codes/parser3
- example
-  $console:line[Hello, world!]
+features
+ hasLineComments true
+  # A comment
+ hasComments true
+  # A comment
+ hasPrintDebugging true
+ hasSemanticIndentation false
+ hasStrings true
+  "Hello world"
+
+lineCommentToken #
+printToken $console:line
+stringToken "
 
 wikipedia https://en.wikipedia.org/wiki/Parser_(CGI_language)
  related xml pcre
@@ -21,28 +35,6 @@ helloWorldCollection Parser 3
  # Hello World in Parser
  
  Hello world!
-
-website http://www.parser.ru/
-fileType text
-isOpenSource true
-country Russia
-
-quineRelay Parser 3
-
-ubuntuPackage parser3-cgi
-
-centralPackageRepositoryCount 0
-creators Konstantin Morshnev
-lineCommentToken #
-features
- hasLineComments true
-  # A comment
- hasComments true
-  # A comment
- hasPrintDebugging true
- hasSemanticIndentation false
- hasStrings true
-  "Hello world"
 leachim6 Parser
  filepath p/Parser.p
  fileExtensions p
@@ -52,6 +44,13 @@ leachim6 Parser
     $hello[Hello World]
     $result[$hello]
   
-printToken $console:line
-domainName parser.ru
-stringToken "
+quineRelay Parser 3
+
+rijuRepl https://riju.codes/parser3
+ example
+  $console:line[Hello, world!]
+
+ubuntuPackage parser3-cgi
+fileType text
+isOpenSource true
+centralPackageRepositoryCount 0

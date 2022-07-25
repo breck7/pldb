@@ -1,8 +1,23 @@
 title PRQL
-description PRQL is a modern language for transforming data — a simple, powerful, pipelined SQL replacement
+appeared 2022
 type queryLanguage
+creators Maximilian Roos
+description PRQL is a modern language for transforming data — a simple, powerful, pipelined SQL replacement
+website https://prql-lang.org/
+reference https://news.ycombinator.com/item?id=31897430
+reference https://news.ycombinator.com/item?id=30060784
 standsFor Pipelined Relational Query Language
+domainName prql-lang.org
+ registered 2022
+
 compilesTo sql
+
+features
+ hasLineComments true
+  # A comment
+ hasComments true
+  # A comment
+ hasSemanticIndentation false
 
 lineCommentToken #
 
@@ -14,7 +29,6 @@ example
    min salary,
    count,                                      # Closing commas are allowed :)
  ]
-
 example
  from employees
  filter start_date > @2021-01-01               # Clear date syntax.
@@ -34,7 +48,6 @@ example
  sort [sum_gross_cost, -country]               # `-country` means descending order.
  take 1..20                                    # Range expressions (also valid here as `take 20`).
 
-website https://prql-lang.org/
 githubRepo https://github.com/prql/prql
  firstCommit 2022
  stars 4261
@@ -44,15 +57,3 @@ githubRepo https://github.com/prql/prql
  updated 2022
  description PRQL is a modern language for transforming data — a simple, powerful, pipelined SQL replacement
  issues 83
-reference https://news.ycombinator.com/item?id=31897430
-reference https://news.ycombinator.com/item?id=30060784
-appeared 2022
-features
- hasLineComments true
-  # A comment
- hasComments true
-  # A comment
- hasSemanticIndentation false
-creators Maximilian Roos
-domainName prql-lang.org
- registered 2022

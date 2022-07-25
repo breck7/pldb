@@ -1,6 +1,10 @@
 title Tex
 appeared 1978
 type pl
+website http://tug.org
+country United States
+domainName tug.org
+ registered 1993
 
 features
  hasLineComments true
@@ -9,6 +13,8 @@ features
  hasComments true
   % A comment
  hasSemanticIndentation false
+
+lineCommentToken %
 
 wikipedia https://en.wikipedia.org/wiki/TeX
  example
@@ -42,12 +48,9 @@ githubLanguage TeX
   rafalab dsbook https://github.com/rafalab.png https://github.com/rafalab/dsbook TeX #3D6117 237 216 28 "Repository for data science book"
  trendingProjectsCount 14
 
-helloWorldCollection Tex
- % Hello World in plain \TeX
- \immediate\write16{Hello World!}
- \end
- 
-
+pygmentsHighlighter TeX
+ filename markup.py
+ fileExtensions tex aux toc
 linguistGrammarRepo https://github.com/textmate/latex.tmbundle
  sampleCount 7
  example
@@ -59,24 +62,11 @@ linguistGrammarRepo https://github.com/textmate/latex.tmbundle
   \endinput
   
 
-website http://tug.org
-
-twitter texusersgroup
-
-country United States
-fileType text
-wordRank 7751
-isOpenSource true
-
-tiobe Tex
-
-hopl 833
-
-lineCommentToken %
-packageRepository https://ctan.org/
-pygmentsHighlighter TeX
- filename markup.py
- fileExtensions tex aux toc
+helloWorldCollection Tex
+ % Hello World in plain \TeX
+ \immediate\write16{Hello World!}
+ \end
+ 
 leachim6 TeX
  filepath t/TeX.tex
  fileExtensions tex
@@ -84,5 +74,13 @@ leachim6 TeX
   Hello World
   \bye
   
-domainName tug.org
- registered 1993
+
+tiobe Tex
+hopl 833
+
+packageRepository https://ctan.org/
+
+twitter texusersgroup
+fileType text
+wordRank 7751
+isOpenSource true

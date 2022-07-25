@@ -1,6 +1,9 @@
 title ACL2
 appeared 1990
 type pl
+creators Robert S. Boyer and J Strother Moore
+standsFor A Computational Logic for Applicative Common Lisp
+country United States
 
 features
  hasComments true
@@ -15,17 +18,14 @@ wikipedia https://en.wikipedia.org/wiki/ACL2
  dailyPageViews 35
  appeared 1990
 
-standsFor A Computational Logic for Applicative Common Lisp
-country United States
-fileType text
-isOpenSource true
-
-hopl 6972
-
 rosettaCode ACL2
 
-centralPackageRepositoryCount 0
-creators Robert S. Boyer and J Strother Moore
 goodreads
  title|year|author|goodreadsId|rating|ratings|reviews
  Computer-Aided Reasoning: Acl2 Case Studies|2000|Matt Kaufmann|13910610|4.00|1|0
+
+hopl 6972
+
+fileType text
+isOpenSource true
+centralPackageRepositoryCount 0

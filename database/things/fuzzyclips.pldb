@@ -2,6 +2,7 @@ title FuzzyCLIPS
 appeared 1995
 type knowledgeBase
 description  The modifications made to CLIPS contain the capability of handling fuzzy concepts and reasoning. It enables domain experts to express rules using their own fuzzy terms. It allows any mix of fuzzy and normal terms, numeric-comparison logic controls, and uncertainties in the rules and facts. Fuzzy sets and relations deal with fuzziness in approximate reasoning, while certainty factors for rules and facts manipulate the uncertainty.
+reference https://github.com/rorchard/FuzzyCLIPS
 
 wikipedia https://en.wikipedia.org/wiki/FuzzyCLIPS
  summary FuzzyCLIPS is a fuzzy logic extension of the CLIPS (C Language Integrated Production System) expert system shell from NASA. It was developed by the Integrated Reasoning Group of the Institute for Information Technology of the National Research Council of Canada and has been widely distributed for a number of years. It enhances CLIPS by providing a fuzzy reasoning capability that is fully integrated with CLIPS facts and inference engine allowing one to represent and manipulate fuzzy facts and rules. FuzzyCLIPS can deal with exact, fuzzy (or inexact), and combined reasoning, allowing fuzzy and normal terms to be freely mixed in the rules and facts of an expert system. The system uses two basic inexact concepts, fuzziness and uncertainty. It has provided a useful environment for developing fuzzy applications but it does require significant effort to update and maintain as new versions of CLIPS are released.
@@ -9,5 +10,3 @@ wikipedia https://en.wikipedia.org/wiki/FuzzyCLIPS
  pageId 5227761
  dailyPageViews 9
  appeared 2011
-
-reference https://github.com/rorchard/FuzzyCLIPS

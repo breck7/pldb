@@ -1,11 +1,17 @@
 title Stylus
 appeared 2010
 type stylesheetLanguage
+creators TJ Holowaychuk
+website http://stylus-lang.com/
+domainName stylus-lang.com
+ registered 2015
 
 features
  hasSemanticIndentation true
  hasStrings true
   "Hello world"
+
+stringToken "
 
 wikipedia https://en.wikipedia.org/wiki/Stylus_(stylesheet_language)
  example
@@ -27,6 +33,7 @@ githubLanguage Stylus
  fileExtensions styl
  trendingProjectsCount 0
 
+codeMirror stylus
 linguistGrammarRepo https://github.com/billymoon/Stylus
  firstCommit 2012
  lastCommit 2017
@@ -67,21 +74,14 @@ linguistGrammarRepo https://github.com/billymoon/Stylus
     @extends $foo
   
 
-website http://stylus-lang.com/
-fileType text
-wordRank 6948
-isOpenSource true
-
-codeMirror stylus
-
-centralPackageRepositoryCount 0
-creators TJ Holowaychuk
 leachim6 Stylus
  filepath s/Stylus.styl
  fileExtensions styl
  example
   body::before
   	content: "Hello World" 
-domainName stylus-lang.com
- registered 2015
-stringToken "
+
+fileType text
+wordRank 6948
+isOpenSource true
+centralPackageRepositoryCount 0

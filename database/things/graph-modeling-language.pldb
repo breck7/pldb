@@ -1,6 +1,31 @@
 title Graph Modeling Language
 appeared 1997
 type application
+reference http://www.uni-passau.de/fileadmin/files/lehrstuhl/brandenburg/projekte/gml/gml-technical-report.pdf
+
+example
+ graph
+ [
+   directed 0
+   node
+   [
+     id 0
+     label "Node 1"
+     value 100
+   ]
+   node
+   [
+     id 1
+     label "Node 2"
+     value 200
+   ]
+   edge
+   [
+     source 1
+     target 0
+   ]
+ ]
+ 
 
 wikipedia https://en.wikipedia.org/wiki/Graph_Modelling_Language
  example
@@ -53,29 +78,5 @@ githubLanguage Graph Modeling Language
  fileExtensions gml
  trendingProjectsCount 0
 
-example
- graph
- [
-   directed 0
-   node
-   [
-     id 0
-     label "Node 1"
-     value 100
-   ]
-   node
-   [
-     id 1
-     label "Node 2"
-     value 200
-   ]
-   edge
-   [
-     source 1
-     target 0
-   ]
- ]
- 
-reference http://www.uni-passau.de/fileadmin/files/lehrstuhl/brandenburg/projekte/gml/gml-technical-report.pdf
 fileType text
 centralPackageRepositoryCount 0

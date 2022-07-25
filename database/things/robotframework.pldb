@@ -1,10 +1,9 @@
 title RobotFramework
 appeared 2013
 type pl
-
-githubLanguage RobotFramework
- fileExtensions robot
- trendingProjectsCount 0
+website http://robotframework.org/
+domainName robotframework.org
+ registered 2007
 
 githubRepo https://github.com/robotframework/robotframework
  stars 7076
@@ -16,6 +15,13 @@ githubRepo https://github.com/robotframework/robotframework
  issues 237
  firstCommit 2013
 
+githubLanguage RobotFramework
+ fileExtensions robot
+ trendingProjectsCount 0
+
+pygmentsHighlighter RobotFramework
+ filename robotframework.py
+ fileExtensions robot resource
 linguistGrammarRepo https://github.com/shellderp/sublime-robot-plugin
  firstCommit 2012
  lastCommit 2016
@@ -58,12 +64,6 @@ linguistGrammarRepo https://github.com/shellderp/sublime-robot-plugin
       Result should be    ${result}
   
 
-website http://robotframework.org/
 fileType text
 isOpenSource true
 centralPackageRepositoryCount 0
-pygmentsHighlighter RobotFramework
- filename robotframework.py
- fileExtensions robot resource
-domainName robotframework.org
- registered 2007

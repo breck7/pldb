@@ -1,6 +1,7 @@
 title Gambas
 appeared 1999
 type pl
+creators Benoît Minisini
 
 features
  hasComments true
@@ -51,13 +52,12 @@ wikipedia https://en.wikipedia.org/wiki/Gambas
  dailyPageViews 93
  appeared 1999
 
-isOpenSource true
-
 rosettaCode Gambas
 
-centralPackageRepositoryCount 0
 rijuRepl https://riju.codes/gambas
  example
   Print "Hello, world!"
   
-creators Benoît Minisini
+
+isOpenSource true
+centralPackageRepositoryCount 0

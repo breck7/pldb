@@ -1,7 +1,8 @@
 title Speech Synthesis Markup Language
-type xmlFormat
 appeared 2010
-wikipedia https://en.wikipedia.org/wiki/Speech_Synthesis_Markup_Language
+type xmlFormat
+reference https://www.w3.org/TR/speech-synthesis/
+
 example
  <?xml version="1.0"?>
  <speak xmlns="http://www.w3.org/2001/10/synthesis"
@@ -25,4 +26,5 @@ example
    </p>
  
  </speak>
-reference https://www.w3.org/TR/speech-synthesis/
+
+wikipedia https://en.wikipedia.org/wiki/Speech_Synthesis_Markup_Language

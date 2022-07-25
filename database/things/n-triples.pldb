@@ -2,6 +2,8 @@ title N-Triples
 appeared 2014
 type dataNotation
 
+related turtle
+
 example
  <http://www.w3.org/2001/sw/RDFCore/ntriples/> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> ↵
     <http://xmlns.com/foaf/0.1/Document> .
@@ -19,5 +21,3 @@ wikipedia https://en.wikipedia.org/wiki/N-Triples
  pageId 15752256
  dailyPageViews 91
  appeared 2014
-
-related turtle

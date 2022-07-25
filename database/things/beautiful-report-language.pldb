@@ -1,6 +1,10 @@
 title beautiful-report-language
 appeared 2003
 type pl
+website http://brl.sourceforge.net/
+reference http://brl.sourceforge.net/brl_toc.html
+aka BRL
+domainName brl.sourceforge.net
 
 example
  [(define myname "Bruce")
@@ -15,8 +19,4 @@ example
  [my] favorite number is [(brl-random 2)].
  </pre>
 
-website http://brl.sourceforge.net/
-reference http://brl.sourceforge.net/brl_toc.html
-aka BRL
 centralPackageRepositoryCount 0
-domainName brl.sourceforge.net

@@ -1,6 +1,19 @@
 title Hocon
 appeared 2011
 type dataNotation
+website https://github.com/lightbend/config/blob/master/HOCON.md
+standsFor Human-Optimized Config Object Notation
+
+supersetOf json
+
+features
+ hasLineComments true
+  // A comment
+ hasComments true
+  // A comment
+ hasSemanticIndentation false
+
+lineCommentToken //
 
 example
  // one array
@@ -21,15 +34,5 @@ wikipedia https://en.wikipedia.org/wiki/HOCON
  revisionCount 17
  dailyPageViews 49
 
-website https://github.com/lightbend/config/blob/master/HOCON.md
-standsFor Human-Optimized Config Object Notation
 fileType text
 centralPackageRepositoryCount 0
-supersetOf json
-lineCommentToken //
-features
- hasLineComments true
-  // A comment
- hasComments true
-  // A comment
- hasSemanticIndentation false

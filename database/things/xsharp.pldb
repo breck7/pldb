@@ -1,6 +1,10 @@
 title xsharp
 appeared 2015
 type pl
+description X# is an open source development language for .NET, based on the xBase language.
+website https://www.xsharp.info
+domainName xsharp.info
+ registered 2015
 
 example
  FUNCTION start AS VOID 
@@ -24,8 +28,3 @@ example
   NEXT 
   ? Seconds() - f, nI
   WAIT
-
-description X# is an open source development language for .NET, based on the xBase language.
-website https://www.xsharp.info
-domainName xsharp.info
- registered 2015

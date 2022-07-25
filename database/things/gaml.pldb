@@ -1,12 +1,16 @@
 title GAML
 appeared 1991
 type pl
-
 reference https://semanticscholar.org/paper/b422464b08a7878c2127165c780df52dc052b2b2
 
-hopl 3529
+features
+ hasPrintDebugging true
+ hasStrings true
+  "Hello world"
 
-centralPackageRepositoryCount 0
+printToken write
+stringToken "
+
 leachim6 GAML
  filepath g/GAML.gaml
  fileExtensions gaml
@@ -20,9 +24,7 @@ leachim6 GAML
   }
   
   experiment GAML {}
-printToken write
-features
- hasPrintDebugging true
- hasStrings true
-  "Hello world"
-stringToken "
+
+hopl 3529
+
+centralPackageRepositoryCount 0

@@ -1,8 +1,8 @@
 title lmdb
 appeared 2011
 type library
-
 description LMDB is a Btree-based database management library modeled loosely on the BerkeleyDB API, but much simplified. The entire database is exposed in a memory map, and all data fetches return data directly from the mapped memory, so no malloc's or memcpy's occur during data fetches. As such, the library is extremely simple because it requires no page caching layer of its own, and it is extremely high performance and memory-efficient. It is also fully transactional with full ACID semantics, and when the memory map is read-only, the database integrity cannot be corrupted by stray pointer writes from application code.
 reference http://www.lmdb.tech/doc/group__mdb.html
+
 fileType text
 centralPackageRepositoryCount 0

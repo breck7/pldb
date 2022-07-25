@@ -35,6 +35,9 @@ githubLanguage ObjDump
  fileExtensions objdump cppobjdump c++-objdump c++objdump cpp-objdump cxx-objdump c-objdump d-objdump
  trendingProjectsCount 0
 
+pygmentsHighlighter objdump
+ filename asm.py
+ fileExtensions objdump
 linguistGrammarRepo https://github.com/nanoant/assembly.tmbundle
  firstCommit 2012
  lastCommit 2014
@@ -43,6 +46,3 @@ linguistGrammarRepo https://github.com/nanoant/assembly.tmbundle
 
 fileType text
 centralPackageRepositoryCount 0
-pygmentsHighlighter objdump
- filename asm.py
- fileExtensions objdump

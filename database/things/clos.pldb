@@ -2,6 +2,15 @@ title CLOS
 appeared 1988
 type pl
 
+features
+ hasLineComments true
+  ; A comment
+ hasComments true
+  ; A comment
+ hasSemanticIndentation false
+
+lineCommentToken ;
+
 wikipedia https://en.wikipedia.org/wiki/CLOS
  example
   ; declare the common argument structure prototype
@@ -25,14 +34,6 @@ wikipedia https://en.wikipedia.org/wiki/CLOS
  dailyPageViews 10
  appeared 1988
 
-
 hopl 1389
 
 centralPackageRepositoryCount 0
-lineCommentToken ;
-features
- hasLineComments true
-  ; A comment
- hasComments true
-  ; A comment
- hasSemanticIndentation false

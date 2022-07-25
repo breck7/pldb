@@ -1,12 +1,12 @@
 title Indental
 appeared 2017
 type dataNotation
+description This space-sensitive database format is designed to store a dictionary of elements, accessible by name. The parser is a mere 50 lines, and allows for human-readable data structures for static sites such as Oscean, also see Tablatal. In the Indental file, an unindented line declares the key to a new root node, children lines can associate either parameters or lists to their parent node, a line divided with a colon will associate a value to a parameter to the parent node, and a sequence of equally indented lines will append to a list.
+website https://wiki.xxiivv.com/#indental
+domainName wiki.xxiivv.com
 
 features
  hasSemanticIndentation true
-
-description This space-sensitive database format is designed to store a dictionary of elements, accessible by name. The parser is a mere 50 lines, and allows for human-readable data structures for static sites such as Oscean, also see Tablatal. In the Indental file, an unindented line declares the key to a new root node, children lines can associate either parameters or lists to their parent node, a line divided with a colon will associate a value to a parameter to the parent node, and a sequence of equally indented lines will append to a list.
-website https://wiki.xxiivv.com/#indental
 
 example
  NAME
@@ -14,7 +14,5 @@ example
      LIST
          ITEM1
          ITEM2
-
 example
  {NAME:{KEY:VALUE,LIST:[ITEM1,ITEM2])}
-domainName wiki.xxiivv.com

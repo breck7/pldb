@@ -1,6 +1,18 @@
 title Mary
 appeared 1970
 type pl
+country Norway
+
+features
+ hasLineComments true
+  % A comment
+ hasComments true
+  % A comment
+ hasSemanticIndentation false
+ hasAssignment true
+
+lineCommentToken %
+assignmentToken :=
 
 wikipedia https://en.wikipedia.org/wiki/Mary_(programming_language)
  example
@@ -29,19 +41,8 @@ wikipedia https://en.wikipedia.org/wiki/Mary_(programming_language)
  dailyPageViews 7
  appeared 1970
 
-country Norway
-fileType text
-wordRank 1514
-
 hopl 647
 
+fileType text
+wordRank 1514
 centralPackageRepositoryCount 0
-lineCommentToken %
-features
- hasLineComments true
-  % A comment
- hasComments true
-  % A comment
- hasSemanticIndentation false
- hasAssignment true
-assignmentToken :=

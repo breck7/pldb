@@ -2,9 +2,9 @@ title JAI
 appeared 2014
 type pl
 creators Jonathan Blow
-subreddit Jai
- memberCount
-  2022 1507
+reference https://inductive.no/jai/
+reference https://github.com/Jai-Community/Jai-Community-Library/wiki
+reference https://twitter.com/Jonathan_Blow/status/1474203662134255618
 
 features
  hasLineComments true
@@ -19,6 +19,16 @@ features
  hasStrings true
   "Hello world"
 
+lineCommentToken //
+printToken Print
+stringToken "
+
+example
+ #import "Basic";
+ main :: () {
+    print("Hello, World!\n");
+ }
+
 wikipedia https://en.wikipedia.org/wiki/JAI_(programming_language)
  summary Jonathan Blow (born 1971) is an American video game designer and programmer, who is best known as the creator of the independent video games Braid (2008) and The Witness (2016), both of which were released to critical acclaim. From 2001 to 2004, Blow wrote the Inner Product column for Game Developer Magazine. He was the primary host of the Experimental Gameplay Workshop each March at the Game Developers Conference, which has become a premier showcase for new ideas in video games.  In addition, Blow was a regular participant in the Indie Game Jam. Blow is also a founding partner of the Indie Fund, an angel investor fund for independent game projects.
  pageId 4018856
@@ -28,17 +38,6 @@ wikipedia https://en.wikipedia.org/wiki/JAI_(programming_language)
  dailyPageViews 7
  appeared 2014
 
-reference https://inductive.no/jai/
-fileType text
-reference https://github.com/Jai-Community/Jai-Community-Library/wiki
-example
- #import "Basic";
- main :: () {
-    print("Hello, World!\n");
- }
-lineCommentToken //
-reference https://twitter.com/Jonathan_Blow/status/1474203662134255618
-centralPackageRepositoryCount 0
 leachim6 Jai
  filepath j/Jai.jai
  fileExtensions jai
@@ -50,5 +49,10 @@ leachim6 Jai
   	print("Hello World");
   
   }
-printToken Print
-stringToken "
+
+subreddit Jai
+ memberCount
+  2022 1507
+
+fileType text
+centralPackageRepositoryCount 0

@@ -1,5 +1,15 @@
 title blz
 type pl
+website https://blazingk.in/blz
+
+features
+ hasLineComments true
+  # A comment
+ hasComments true
+  # A comment
+ hasSemanticIndentation false
+
+lineCommentToken #
 
 example
  import Lists
@@ -8,12 +18,3 @@ example
    evens = range(1000).filter!(x -> x % 2 == 0)
    print(evens.map!(x -> x ** 3)
  end
-
-website https://blazingk.in/blz
-lineCommentToken #
-features
- hasLineComments true
-  # A comment
- hasComments true
-  # A comment
- hasSemanticIndentation false

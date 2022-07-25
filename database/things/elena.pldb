@@ -1,6 +1,18 @@
 title elena
 appeared 2013
 type pl
+creators Alex Rakov
+website http://elenalang.sourceforge.net/
+reference https://news.ycombinator.com/item?id=24222038
+domainName elenalang.sourceforge.net
+
+features
+ hasPrintDebugging true
+ hasStrings true
+  "Hello world"
+
+printToken writeLine
+stringToken "
 
 githubRepo http://github.com/ELENA-LANG/elena-lang
  firstCommit 2013
@@ -12,12 +24,6 @@ githubRepo http://github.com/ELENA-LANG/elena-lang
  description ELENA is a dynamic object-oriented programming language. It features message dispatching, mixins and a script engine
  issues 87
 
-website http://elenalang.sourceforge.net/
-reference https://news.ycombinator.com/item?id=24222038
-
-twitter elena_language
-
-creators Alex Rakov
 leachim6 Elena
  filepath e/Elena.elena
  fileExtensions elena
@@ -27,10 +33,5 @@ leachim6 Elena
       console writeLine("Hello World").
   ]
   
-printToken writeLine
-features
- hasPrintDebugging true
- hasStrings true
-  "Hello world"
-domainName elenalang.sourceforge.net
-stringToken "
+
+twitter elena_language

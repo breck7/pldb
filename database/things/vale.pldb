@@ -1,10 +1,20 @@
 title Vale
+appeared 2020
 type pl
 website https://vale.dev/
+domainName vale.dev
+ registered 2019
+
+features
+ hasPrintDebugging true
+
+printToken println
+
 example
  exported func main() {
    println("Hello world!");
  }
+
 githubRepo https://github.com/ValeLang/Vale
  firstCommit 2020
  stars 716
@@ -14,10 +24,5 @@ githubRepo https://github.com/ValeLang/Vale
  updated 2022
  description Compiler for the Vale programming language - http://vale.dev/
  issues 211
-appeared 2020
-printToken println
-features
- hasPrintDebugging true
-domainName vale.dev
- registered 2019
+
 twitter vale_pl

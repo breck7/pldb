@@ -1,5 +1,11 @@
 title crmsh
+appeared 2008
+type pl
+creators Dejan Muhamedagic
 description crmsh is a cluster management shell for the Pacemaker High Availability stack.
+website http://crmsh.github.io/
+domainName crmsh.github.io
+
 githubRepo https://github.com/ClusterLabs/crmsh
  firstCommit 2008
  stars 115
@@ -9,11 +15,7 @@ githubRepo https://github.com/ClusterLabs/crmsh
  updated 2022
  description Command-line interface for High-Availability cluster management on GNU/Linux systems.
  issues 95
-type pl
-website http://crmsh.github.io/
-appeared 2008
+
 pygmentsHighlighter Crmsh
  filename dsls.py
  fileExtensions crmsh pcmk
-creators Dejan Muhamedagic
-domainName crmsh.github.io

@@ -2,6 +2,13 @@ title Mech
 appeared 2018
 type pl
 creators Corey Montella
+description Mech is a language for developing data-driven, reactive systems like animations, games, and robots. It makes composing, transforming, and distributing data easy, allowing you to focus on the essential complexity of your problem.
+website http://mech-lang.org
+webRepl http://try.mech-lang.org/
+reference https://docs.google.com/spreadsheets/d/12sTu7RT-s_QlAupY1v-3DfI1Mm9NEX5YMWWTDAKHLfc/edit#gid=0
+country United Kingdom
+domainName mech-lang.org
+ registered 2018
 
 example
  # Breakout
@@ -60,8 +67,6 @@ example
    #ball.x{ix} := 20
    #ball.y{ix} := 20
 
-description Mech is a language for developing data-driven, reactive systems like animations, games, and robots. It makes composing, transforming, and distributing data easy, allowing you to focus on the essential complexity of your problem.
-
 githubRepo https://github.com/mech-lang/mech
  firstCommit 2018
  stars 138
@@ -72,12 +77,4 @@ githubRepo https://github.com/mech-lang/mech
  forks 7
  issues 0
 
-website http://mech-lang.org
-reference https://docs.google.com/spreadsheets/d/12sTu7RT-s_QlAupY1v-3DfI1Mm9NEX5YMWWTDAKHLfc/edit#gid=0
-
 twitter MechLang
-
-country United Kingdom
-webRepl http://try.mech-lang.org/
-domainName mech-lang.org
- registered 2018

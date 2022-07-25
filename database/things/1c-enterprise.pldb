@@ -1,8 +1,17 @@
 title 1C Enterprise Script
 appeared 2002
 type pl
-
 description The 1C:Enterprise platform allows for business oriented application development. The software allows work in thick, thin and web clients.[21] It also supports creating mobile applications for Android and iOS in the same environment using the 1C programming language
+reference https://1c-dn.com/library/tutorials/practical_developer_guide_for_1c_enterprise_8_3/
+country Russia
+
+features
+ hasPrintDebugging true
+ hasStrings true
+  "Hello world"
+
+printToken Message
+stringToken "
 
 githubLanguage 1C Enterprise
  fileExtensions bsl os
@@ -36,18 +45,11 @@ linguistGrammarRepo https://github.com/xDrivenDevelopment/atom-language-1c-bsl.g
   
   КонецЦикла;
 
-reference https://1c-dn.com/library/tutorials/practical_developer_guide_for_1c_enterprise_8_3/
-country Russia
-fileType text
-centralPackageRepositoryCount 0
 leachim6 1C Enterprise
  filepath #/1C Enterprise
  example
   Message("Hello World");
   
-printToken Message
-features
- hasPrintDebugging true
- hasStrings true
-  "Hello world"
-stringToken "
+
+fileType text
+centralPackageRepositoryCount 0

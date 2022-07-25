@@ -1,6 +1,19 @@
 title silk
 appeared 2019
 type pl
+website https://ajaymt.github.io/silk/
+reference https://news.ycombinator.com/item?id=22926080
+
+features
+ hasLineComments true
+  // A comment
+ hasComments true
+  // A comment
+ hasPrintDebugging true
+ hasSemanticIndentation false
+
+lineCommentToken //
+printToken printf
 
 example
  // this is a comment
@@ -27,15 +40,3 @@ githubRepo https://github.com/AjayMT/silk
  updated 2022
  description The Silk Programming Language
  issues 1
-
-website https://ajaymt.github.io/silk/
-reference https://news.ycombinator.com/item?id=22926080
-lineCommentToken //
-features
- hasLineComments true
-  // A comment
- hasComments true
-  // A comment
- hasPrintDebugging true
- hasSemanticIndentation false
-printToken printf

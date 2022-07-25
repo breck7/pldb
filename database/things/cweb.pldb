@@ -2,37 +2,8 @@ title CWEB
 appeared 1987
 type textMarkup
 creators Donald Knuth
-
-wikipedia https://en.wikipedia.org/wiki/CWEB
- example
-  % This file is part of CWEB.
-   % This program by Silvio Levy and Donald E. Knuth
-   % is based on a program by Knuth.
-   % It is distributed WITHOUT ANY WARRANTY, express or implied.
-   % Version 3.64 --- January 2002
-   
-   % Copyright (C) 1987,1990,1993,2000 Silvio Levy and Donald E. Knuth 
-   
-   % Permission is granted to make and distribute verbatim copies of this
-   % document provided that the copyright notice and this permission notice
-   % are preserved on all copies.
-   
-   % Permission is granted to copy and distribute modified versions of this
-   % document under the conditions for verbatim copying, provided that the
-   % entire resulting derived work is given a different name and distributed
-   % under the terms of a permission notice identical to this one.
- related tex c java pascal
- summary CWEB is a computer programming system created by Donald Knuth and Silvio Levy as a follow-up to Knuth's WEB literate programming system, using the C programming language (and to a lesser extent the C++ and Java programming languages) instead of Pascal. Like WEB, it consists of two primary programs: CTANGLE, which produces compilable C code from the source texts, and CWEAVE, which produces nicely-formatted printable documentation using TeX.
- pageId 87398
- created 2002
- backlinksCount 94
- revisionCount 73
- dailyPageViews 31
- appeared 1987
-
-githubLanguage CWeb
- fileExtensions w
- trendingProjectsCount 0
+website http://www-cs-faculty.stanford.edu/~uno/cweb.html
+country Netherlands
 
 example
  \datethis
@@ -78,11 +49,39 @@ example
  $$\bar u d_1,\quad
    \bar v d_1,\quad
 
-website http://www-cs-faculty.stanford.edu/~uno/cweb.html
-country Netherlands
-fileType text
-isOpenSource true
+wikipedia https://en.wikipedia.org/wiki/CWEB
+ example
+  % This file is part of CWEB.
+   % This program by Silvio Levy and Donald E. Knuth
+   % is based on a program by Knuth.
+   % It is distributed WITHOUT ANY WARRANTY, express or implied.
+   % Version 3.64 --- January 2002
+   
+   % Copyright (C) 1987,1990,1993,2000 Silvio Levy and Donald E. Knuth 
+   
+   % Permission is granted to make and distribute verbatim copies of this
+   % document provided that the copyright notice and this permission notice
+   % are preserved on all copies.
+   
+   % Permission is granted to copy and distribute modified versions of this
+   % document under the conditions for verbatim copying, provided that the
+   % entire resulting derived work is given a different name and distributed
+   % under the terms of a permission notice identical to this one.
+ related tex c java pascal
+ summary CWEB is a computer programming system created by Donald Knuth and Silvio Levy as a follow-up to Knuth's WEB literate programming system, using the C programming language (and to a lesser extent the C++ and Java programming languages) instead of Pascal. Like WEB, it consists of two primary programs: CTANGLE, which produces compilable C code from the source texts, and CWEAVE, which produces nicely-formatted printable documentation using TeX.
+ pageId 87398
+ created 2002
+ backlinksCount 94
+ revisionCount 73
+ dailyPageViews 31
+ appeared 1987
+
+githubLanguage CWeb
+ fileExtensions w
+ trendingProjectsCount 0
 
 hopl 1939
 
+fileType text
+isOpenSource true
 centralPackageRepositoryCount 0

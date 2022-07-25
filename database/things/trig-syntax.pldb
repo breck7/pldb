@@ -2,6 +2,8 @@ title TriG syntax
 appeared 2007
 type dataNotation
 
+related rdf turtle
+
 example
  @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
   @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
@@ -34,5 +36,3 @@ wikipedia https://en.wikipedia.org/wiki/TriG_(syntax)
  pageId 27937297
  dailyPageViews 53
  appeared 2007
-
-related rdf turtle

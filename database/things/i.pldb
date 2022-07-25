@@ -1,7 +1,12 @@
 title I
 appeared 2012
 type pl
+creators Marshall Lochbaum
+
 writtenIn c
+
+example
+ 5  - *.o +  4
 
 githubRepo https://github.com/mlochbaum/ILanguage
  firstCommit 2012
@@ -12,7 +17,3 @@ githubRepo https://github.com/mlochbaum/ILanguage
  updated 2022
  description An interpreter for a J-inspired language
  issues 0
-
-example
- 5  - *.o +  4
-creators Marshall Lochbaum

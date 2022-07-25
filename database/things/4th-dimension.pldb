@@ -1,13 +1,15 @@
 title 4th Dimension
 appeared 1987
 type pl
-
 reference https://en.wikipedia.org/wiki/4th_Dimension_(software)
 aka 4D
 
-hopl 2471
+features
+ hasStrings true
+  "Hello world"
 
-centralPackageRepositoryCount 0
+stringToken "
+
 leachim6 4th Dimension
  filepath #/4th Dimension.4dd
  example
@@ -16,7 +18,7 @@ leachim6 4th Dimension
     MESSAGE ("Hello World")
   End while
   
-stringToken "
-features
- hasStrings true
-  "Hello world"
+
+hopl 2471
+
+centralPackageRepositoryCount 0

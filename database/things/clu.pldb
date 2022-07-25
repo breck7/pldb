@@ -2,6 +2,16 @@ title CLU
 appeared 1975
 type pl
 creators Barbara Liskov
+website http://www.pmg.lcs.mit.edu/CLU.html
+country United States
+
+features
+ hasPrintDebugging true
+ hasStrings true
+  "Hello world"
+
+printToken stream$putl
+stringToken "
 
 wikipedia https://en.wikipedia.org/wiki/CLU_(programming_language)
  example
@@ -21,15 +31,6 @@ wikipedia https://en.wikipedia.org/wiki/CLU_(programming_language)
  revisionCount 166
  appeared 1975
 
-website http://www.pmg.lcs.mit.edu/CLU.html
-country United States
-fileType text
-
-tiobe CLU
-
-hopl 637
-
-centralPackageRepositoryCount 0
 leachim6 CLU
  filepath c/CLU.clu
  fileExtensions clu
@@ -39,9 +40,9 @@ leachim6 CLU
       stream$putl (po, "Hello World")
       end start_up
   
-printToken stream$putl
-features
- hasPrintDebugging true
- hasStrings true
-  "Hello world"
-stringToken "
+
+tiobe CLU
+hopl 637
+
+fileType text
+centralPackageRepositoryCount 0

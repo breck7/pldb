@@ -1,6 +1,14 @@
 title Org
 appeared 2003
 type textMarkup
+description Org is a mode for keeping notes, maintaining TODO lists, and project planning with a fast and effective plain-text system. It also is an authoring system with unique support for literate programming and reproducible research.
+website https://orgmode.org/
+reference https://orgmode.org/org.html#Document-structure
+domainName orgmode.org
+ registered 2007
+
+features
+ hasSemanticIndentation true
 
 example
  * Top level headline
@@ -11,27 +19,6 @@ example
      more text
  
  * Another top level headline 
-
-features
- hasSemanticIndentation true
-
-description Org is a mode for keeping notes, maintaining TODO lists, and project planning with a fast and effective plain-text system. It also is an authoring system with unique support for literate programming and reproducible research.
-
-wikipedia https://en.wikipedia.org/wiki/Org-mode
- related emacs-editor html latex markdown restructuredtext textile git mediawiki pandoc-app vim-editor sublime-editor
- summary Org-mode (also: Org mode; ) is a document editing, formatting, and organizing mode, designed for notes, planning, and authoring within the free software text editor Emacs. The name is used to encompass plain text files ("org files") that include simple marks to indicate levels of a hierarchy (such as the outline of an essay, a topic list with subtopics, nested computer code, etc.), and an editor with functions that can read the markup and manipulate hierarchy elements (expand/hide elements, move blocks of elements, check off to-do list items, etc.). Org-mode was created by Carsten Dominik in 2003, originally to organize his own life and work, and since the first release numerous other users and developers have contributed to this free software package. Emacs includes Org-mode as a major mode by default. Bastien Guerry is the current maintainer, in cooperation with an active development community. Since its success in Emacs, some other systems have also begun providing functions to work with org files.
- backlinksCount 93
- pageId 24317457
- created 2009
- revisionCount 447
- dailyPageViews 127
- appeared 2003
-
-githubLanguage Org
- fileExtensions org
- trendingProjectsCount 0
-
-
 example
  #+OPTIONS:    H:3 num:nil toc:nil \n:nil @:t ::t |:t ^:t -:t f:t *:t TeX:t LaTeX:t skip:nil d:(HIDE) tags:not-in-toc
  #+STARTUP:    align fold nodlcheck hidestars oddeven lognotestate
@@ -199,21 +186,33 @@ example
    That's all there is to it!
  
 
-website https://orgmode.org/
-reference https://orgmode.org/org.html#Document-structure
-fileType text
-wordRank 4476
-isOpenSource true
-centralPackageRepositoryCount 0
-rijuRepl https://riju.codes/org
- example
-  Hello, world!
-  
+wikipedia https://en.wikipedia.org/wiki/Org-mode
+ related emacs-editor html latex markdown restructuredtext textile git mediawiki pandoc-app vim-editor sublime-editor
+ summary Org-mode (also: Org mode; ) is a document editing, formatting, and organizing mode, designed for notes, planning, and authoring within the free software text editor Emacs. The name is used to encompass plain text files ("org files") that include simple marks to indicate levels of a hierarchy (such as the outline of an essay, a topic list with subtopics, nested computer code, etc.), and an editor with functions that can read the markup and manipulate hierarchy elements (expand/hide elements, move blocks of elements, check off to-do list items, etc.). Org-mode was created by Carsten Dominik in 2003, originally to organize his own life and work, and since the first release numerous other users and developers have contributed to this free software package. Emacs includes Org-mode as a major mode by default. Bastien Guerry is the current maintainer, in cooperation with an active development community. Since its success in Emacs, some other systems have also begun providing functions to work with org files.
+ backlinksCount 93
+ pageId 24317457
+ created 2009
+ revisionCount 447
+ dailyPageViews 127
+ appeared 2003
+
+githubLanguage Org
+ fileExtensions org
+ trendingProjectsCount 0
+
 leachim6 Org-mode
  filepath o/Org-mode.org
  fileExtensions org
  example
   Hello World
   
-domainName orgmode.org
- registered 2007
+
+rijuRepl https://riju.codes/org
+ example
+  Hello, world!
+  
+
+fileType text
+wordRank 4476
+isOpenSource true
+centralPackageRepositoryCount 0

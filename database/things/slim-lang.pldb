@@ -1,6 +1,10 @@
 title Slim
 appeared 2011
 type template
+description A lightweight templating engine
+website http://slim-lang.com/
+domainName slim-lang.com
+ registered 2010
 
 example
  doctype html
@@ -15,12 +19,6 @@ example
    body
      h1 Markup examples
 
-description A lightweight templating engine
-
-githubLanguage Slim
- fileExtensions slim
- trendingProjectsCount 0
-
 githubRepo https://github.com/slim-template/slim
  firstCommit 2010
  stars 5110
@@ -31,6 +29,13 @@ githubRepo https://github.com/slim-template/slim
  description Slim is a template language whose goal is to reduce the syntax to the essential parts without becoming cryptic.
  issues 80
 
+githubLanguage Slim
+ fileExtensions slim
+ trendingProjectsCount 0
+
+pygmentsHighlighter Slim
+ filename webmisc.py
+ fileExtensions slim
 linguistGrammarRepo https://github.com/slim-template/ruby-slim.tmbundle
  firstCommit 2010
  lastCommit 2017
@@ -70,13 +75,6 @@ linguistGrammarRepo https://github.com/slim-template/ruby-slim.tmbundle
         = render 'footer'
         | Copyright © #{year} #{author}
 
-website http://slim-lang.com/
-fileType text
-isOpenSource true
-centralPackageRepositoryCount 0
-pygmentsHighlighter Slim
- filename webmisc.py
- fileExtensions slim
 leachim6 Slim
  filepath s/Slim.slim
  fileExtensions slim
@@ -86,5 +84,7 @@ leachim6 Slim
     title Hello World
   body
     h1 Hello World
-domainName slim-lang.com
- registered 2010
+
+fileType text
+isOpenSource true
+centralPackageRepositoryCount 0

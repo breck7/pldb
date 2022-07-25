@@ -2,7 +2,28 @@ title MUMPS
 appeared 1966
 type pl
 creators Neil Pappalardo
+aka m
+country United States
+
+features
+ hasLineComments true
+  ; A comment
+ hasComments true
+  ; A comment
+ hasPrintDebugging true
+ hasSemanticIndentation false
+ hasStrings true
+  "Hello world"
+
 lineCommentToken ;
+printToken w
+stringToken "
+
+example
+ label1 ; This is a label
+     write "Hello World !",!
+     quit
+ 
 
 wikipedia https://en.wikipedia.org/wiki/MUMPS
  example
@@ -29,57 +50,34 @@ githubLanguage M
  fileExtensions mumps m
  trendingProjectsCount 0
 
-helloWorldCollection MUMPS
- ; Hello World in Mumps-M
-  w !,"Hello World"
-example
- label1 ; This is a label
-     write "Hello World !",!
-     quit
- 
-aka m
-
-tryItOnline mumps
-
-country United States
-fileType text
-
-tiobe MUMPS
+antlr https://github.com/antlr/grammars-v4/tree/master/mumps
+codeMirror mumps
 
 projectEuler MUMPS
  memberCount
   2019 31
   2022 38
-
-hopl 773
-
-codeMirror mumps
-
-rosettaCode MUMPS
-
-antlr https://github.com/antlr/grammars-v4/tree/master/mumps
-
-centralPackageRepositoryCount 0
-rijuRepl https://riju.codes/mumps
- example
-  main()
-    write "Hello, world!",!
-    quit
-  
-features
- hasLineComments true
-  ; A comment
- hasComments true
-  ; A comment
- hasPrintDebugging true
- hasSemanticIndentation false
- hasStrings true
-  "Hello world"
+helloWorldCollection MUMPS
+ ; Hello World in Mumps-M
+  w !,"Hello World"
 leachim6 Mumps
  filepath m/Mumps.m
  fileExtensions m
  example
    w "Hello World",!
   
-printToken w
-stringToken "
+rosettaCode MUMPS
+
+rijuRepl https://riju.codes/mumps
+ example
+  main()
+    write "Hello, world!",!
+    quit
+  
+tryItOnline mumps
+
+tiobe MUMPS
+hopl 773
+
+fileType text
+centralPackageRepositoryCount 0

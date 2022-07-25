@@ -1,6 +1,8 @@
 title HScript
 appeared 1996
 type pl
+description HScript is Houdini’s legacy scripting language.
+reference https://en.wikipedia.org/wiki/Houdini_(software)
 
 example
  if ( $F == 1 ) then
@@ -8,6 +10,3 @@ example
  else
      echo Not Frame One
  endif
-
-description HScript is Houdini’s legacy scripting language.
-reference https://en.wikipedia.org/wiki/Houdini_(software)

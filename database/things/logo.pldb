@@ -1,6 +1,7 @@
 title Logo
 appeared 1967
 type pl
+country United States
 
 features
  hasComments true
@@ -8,6 +9,9 @@ features
   ; A comment
  hasPrintDebugging true
  hasSemanticIndentation false
+
+lineCommentToken ;
+printToken print
 
 wikipedia https://en.wikipedia.org/wiki/Logo_(programming_language)
  related starlogo netlogo smalltalk etoys scratch rebol lisp trs-80-color-computer objectlogo acornsoft-logo python jquery squeak
@@ -19,35 +23,29 @@ wikipedia https://en.wikipedia.org/wiki/Logo_(programming_language)
  revisionCount 1360
  appeared 1967
 
-helloWorldCollection Logo
- ; Hello World in Logo
- 
- DRUCKEZEILE [Hello World!]
- 
-
-country United States
-fileType text
-wordRank 1154
-
-tiobe Logo
- currentRank 36
+antlr https://github.com/antlr/grammars-v4/tree/master/logo
 
 projectEuler Logo
  memberCount
   2019 24
   2022 23
-
-hopl 291
-
-rosettaCode Logo
-
-antlr https://github.com/antlr/grammars-v4/tree/master/logo
-lineCommentToken ;
-centralPackageRepositoryCount 0
+helloWorldCollection Logo
+ ; Hello World in Logo
+ 
+ DRUCKEZEILE [Hello World!]
+ 
 leachim6 Logo
  filepath l/Logo.lg
  fileExtensions lg
  example
   print [Hello World]
   
-printToken print
+rosettaCode Logo
+
+tiobe Logo
+ currentRank 36
+hopl 291
+
+fileType text
+wordRank 1154
+centralPackageRepositoryCount 0

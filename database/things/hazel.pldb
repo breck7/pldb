@@ -1,15 +1,21 @@
 title hazel
 appeared 2016
 type pl
+creators Cyrus Omar
+description Hazel is a live functional programming environment rooted in the principles of type theory.
+website http://hazel.org/
+domainName hazel.org
+ registered 1997
 
-example
- let v = {} in
- v : num
+compilesTo javascript
+writtenIn reason
 
 features
  hasTypedHoles true
 
-description Hazel is a live functional programming environment rooted in the principles of type theory.
+example
+ let v = {} in
+ v : num
 
 githubRepo https://github.com/hazelgrove/hazel
  firstCommit 2017
@@ -21,12 +27,6 @@ githubRepo https://github.com/hazelgrove/hazel
  description Hazel, a live functional programming environment with typed holes
  issues 253
 
-website http://hazel.org/
 fileType text
-compilesTo javascript
 isOpenSource true
-writtenIn reason
 centralPackageRepositoryCount 0
-creators Cyrus Omar
-domainName hazel.org
- registered 1997

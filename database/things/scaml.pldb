@@ -1,11 +1,15 @@
 title Scala Markup Language
 appeared 2010
 type template
+website https://scalate.github.io/scalate/documentation/scaml-reference.html
 
 githubLanguage Scaml
  fileExtensions scaml
  trendingProjectsCount 0
 
+pygmentsHighlighter Scaml
+ filename html.py
+ fileExtensions scaml
 linguistGrammarRepo https://github.com/scalate/Scalate.tmbundle
  firstCommit 2010
  lastCommit 2015
@@ -17,9 +21,5 @@ linguistGrammarRepo https://github.com/scalate/Scalate.tmbundle
     Hello,
     World!
 
-website https://scalate.github.io/scalate/documentation/scaml-reference.html
 fileType text
 centralPackageRepositoryCount 0
-pygmentsHighlighter Scaml
- filename html.py
- fileExtensions scaml

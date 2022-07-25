@@ -2,6 +2,11 @@ title Trex
 appeared 2001
 type grammarLanguage
 creators James Clark
+description TREX is a new language for validating XML documents. A TREX pattern specifies a pattern for the structure and content of an XML document. A TREX pattern thus identifies a class of XML documents consisting of those documents that match the pattern. A TREX pattern is itself an XML document.
+website http://www.thaiopensource.com/trex/
+standsFor Tree Regular Expressions for XML
+
+related dtd
 
 example
  <element name="addressBook">
@@ -16,8 +21,3 @@ example
      </element>
    </zeroOrMore>
  </element>
-
-description TREX is a new language for validating XML documents. A TREX pattern specifies a pattern for the structure and content of an XML document. A TREX pattern thus identifies a class of XML documents consisting of those documents that match the pattern. A TREX pattern is itself an XML document.
-website http://www.thaiopensource.com/trex/
-standsFor Tree Regular Expressions for XML
-related dtd

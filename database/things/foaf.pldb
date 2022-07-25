@@ -1,6 +1,7 @@
 title FOAF
 appeared 2007
 type xmlFormat
+reference http://xmlns.com/foaf/spec/
 
 example
  @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
@@ -24,5 +25,3 @@ example
      rdfs:label "Wikimedia" .
 
 wikipedia https://en.wikipedia.org/wiki/FOAF
-
-reference http://xmlns.com/foaf/spec/

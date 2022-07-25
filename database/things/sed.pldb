@@ -2,6 +2,7 @@ title sed
 appeared 1974
 type pl
 creators Lee E. McMahon
+country United States
 
 wikipedia https://en.wikipedia.org/wiki/Sed
  example
@@ -22,6 +23,9 @@ githubLanguage sed
  fileExtensions sed
  trendingProjectsCount 0
 
+pygmentsHighlighter Sed
+ filename textedit.py
+ fileExtensions sed [gs]sed
 linguistGrammarRepo https://github.com/Alhadis/language-sed
  firstCommit 2018
  lastCommit 2018
@@ -134,30 +138,6 @@ linguistGrammarRepo https://github.com/Alhadis/language-sed
   d
   
 
-
-tryItOnline sed
-
-country United States
-fileType text
-
-tiobe sed
-
-hopl 782
-
-quineRelay sed
-
-ubuntuPackage sed
-
-rosettaCode Sed
-
-centralPackageRepositoryCount 0
-rijuRepl https://riju.codes/sed
- example
-  s/.*/Hello, world!/
-  
-pygmentsHighlighter Sed
- filename textedit.py
- fileExtensions sed [gs]sed
 leachim6 Sed
  filepath s/Sed.sed
  fileExtensions sed
@@ -167,3 +147,18 @@ leachim6 Sed
   Hello World
   q
   
+rosettaCode Sed
+quineRelay sed
+
+rijuRepl https://riju.codes/sed
+ example
+  s/.*/Hello, world!/
+  
+tryItOnline sed
+
+tiobe sed
+hopl 782
+
+ubuntuPackage sed
+fileType text
+centralPackageRepositoryCount 0

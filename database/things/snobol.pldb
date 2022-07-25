@@ -1,6 +1,11 @@
 title SNOBOL
 appeared 1962
 type pl
+creators David J. Farber and Ralph E. Griswold
+website http://www.snobol4.org
+country United States
+domainName snobol4.org
+ registered 2002
 
 features
  hasLineComments true
@@ -11,6 +16,10 @@ features
  hasSemanticIndentation false
  hasStrings true
   "Hello world"
+
+lineCommentToken *
+printToken OUTPUT
+stringToken "
 
 wikipedia https://en.wikipedia.org/wiki/SNOBOL
  example
@@ -33,29 +42,30 @@ wikipedia https://en.wikipedia.org/wiki/SNOBOL
  revisionCount 322
  appeared 1962
 
+antlr https://github.com/antlr/grammars-v4/tree/master/snobol
+pygmentsHighlighter Snobol
+ filename snobol.py
+ fileExtensions snobol
+
 helloWorldCollection SNOBOL
  * Hello World in Snobol
  
          OUTPUT = "Hello World!"
  
-
-website http://www.snobol4.org
-country United States
-fileType text
-
-hopl 171
-
+leachim6 SNOBOL
+ filepath s/SNOBOL
+ example
+            OUTPUT = "Hello World"
+  END
+  
 rosettaCode Snobol
 
-antlr https://github.com/antlr/grammars-v4/tree/master/snobol
-lineCommentToken *
-centralPackageRepositoryCount 0
 rijuRepl https://riju.codes/snobol
  example
    OUTPUT = "Hello, world!"
   END
   
-creators David J. Farber and Ralph E. Griswold
+
 goodreads
  title|year|author|goodreadsId|rating|ratings|reviews
  The Snobol 4 Programming Language||Ralph E. Griswold|4019527|3.80|5|1
@@ -64,16 +74,8 @@ goodreads
  The Programmer's Introduction to Snobol|1976|Ward Douglas Maurer|6455209|0.0|0|0
  Snobol: An Introduction to Programming (Hayden computer programming series)|1975|Peter R Newsted|13307178|2.50|2|1
  Encyclopedia of Microcomputers: Volume 15 - Reporting on Parallel Software to Snobol||Allen Kent|42221988|0.0|0|0
-pygmentsHighlighter Snobol
- filename snobol.py
- fileExtensions snobol
-leachim6 SNOBOL
- filepath s/SNOBOL
- example
-            OUTPUT = "Hello World"
-  END
-  
-printToken OUTPUT
-domainName snobol4.org
- registered 2002
-stringToken "
+
+hopl 171
+
+fileType text
+centralPackageRepositoryCount 0

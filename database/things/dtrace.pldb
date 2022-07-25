@@ -1,14 +1,32 @@
 title DTrace
 appeared 2005
 type pl
+description DTrace is a comprehensive dynamic tracing framework created by Sun Microsystems for troubleshooting kernel and application problems on production systems in real time.
+website http://dtrace.org/
+domainName dtrace.org
+ registered 2010
+
+features
+ hasPrintDebugging true
+ hasMultiLineComments true
+  /* A comment
+  */
+ hasComments true
+  /* A comment
+  */
+ hasSemanticIndentation false
+ hasStrings true
+  "Hello world"
+
+multiLineCommentTokens /* */
+printToken printf
+stringToken "
 
 example
  # Syscall count by syscall
  dtrace -n 'syscall:::entry { @num[probefunc] = count(); }'
  # Syscall count by process
  dtrace -n 'syscall:::entry { @num[pid,execname] = count(); }'
-
-description DTrace is a comprehensive dynamic tracing framework created by Sun Microsystems for troubleshooting kernel and application problems on production systems in real time.
 
 wikipedia https://en.wikipedia.org/wiki/DTrace
  example
@@ -77,13 +95,6 @@ linguistGrammarRepo https://github.com/textmate/c.tmbundle
   
   
 
-website http://dtrace.org/
-fileType text
-centralPackageRepositoryCount 0
-goodreads
- title|year|author|goodreadsId|rating|ratings|reviews
- Advanced Apple Debugging & Reverse Engineering: Exploring Apple code through LLDB, Python and DTrace||Derek Selander|56926999|5.00|2|0
- Advanced Apple Debugging & Reverse Engineering Second Edition: Exploring Apple code through LLDB, Python and DTrace||raywenderlich.com Team|60459566|0.0|0|0
 leachim6 DTrace
  filepath d/DTrace.d
  fileExtensions d
@@ -94,19 +105,11 @@ leachim6 DTrace
   	exit(0);
   }
   
-printToken printf
-features
- hasPrintDebugging true
- hasMultiLineComments true
-  /* A comment
-  */
- hasComments true
-  /* A comment
-  */
- hasSemanticIndentation false
- hasStrings true
-  "Hello world"
-multiLineCommentTokens /* */
-domainName dtrace.org
- registered 2010
-stringToken "
+
+goodreads
+ title|year|author|goodreadsId|rating|ratings|reviews
+ Advanced Apple Debugging & Reverse Engineering: Exploring Apple code through LLDB, Python and DTrace||Derek Selander|56926999|5.00|2|0
+ Advanced Apple Debugging & Reverse Engineering Second Edition: Exploring Apple code through LLDB, Python and DTrace||raywenderlich.com Team|60459566|0.0|0|0
+
+fileType text
+centralPackageRepositoryCount 0

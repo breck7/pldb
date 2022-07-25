@@ -2,6 +2,15 @@ title spiral
 appeared 2017
 type pl
 
+features
+ hasLineComments true
+  // A comment
+ hasComments true
+  // A comment
+ hasSemanticIndentation false
+
+lineCommentToken //
+
 example
  inl x = 2 // Define a 64-bit integer in Spiral.
  inl mult a b = a * b
@@ -17,11 +26,3 @@ githubRepo https://github.com/mrakgr/The-Spiral-Language
  updated 2022
  description Functional language with intensional polymorphism and first-class staging.
  issues 0
-
-lineCommentToken //
-features
- hasLineComments true
-  // A comment
- hasComments true
-  // A comment
- hasSemanticIndentation false

@@ -1,6 +1,13 @@
 title zenscript
 appeared 2014
 type pl
+creators Stan Hebben
+fileExtensions zs
+
+features
+ hasPrintDebugging true
+
+printToken print
 
 example
  var x = 5;
@@ -22,9 +29,3 @@ githubRepo https://github.com/CraftTweaker/ZenScript
  created 2018
  updated 2022
  issues 8
-
-fileExtensions zs
-creators Stan Hebben
-printToken print
-features
- hasPrintDebugging true

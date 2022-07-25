@@ -2,6 +2,19 @@ title spry
 appeared 2015
 type pl
 creators Göran Krampe
+description Spry borrows homoiconicity from Rebol and Lisp, free form syntax from Forth and Rebol, the word of different types from Rebol, good data structure literal support from JavaScript and the general coding experience and style from Smalltalk. It also has a few ideas of its own, like an interesting argument passing mechanism and a relatively novel take on OO.
+website http://sprylang.se/
+aka ni
+domainName sprylang.se
+
+features
+ hasLineComments true
+  # A comment
+ hasComments true
+  # A comment
+ hasSemanticIndentation false
+
+lineCommentToken #
 
 example
  # Let's add a method to:do: that works as in Smalltalk.
@@ -28,8 +41,6 @@ example
  # Then use it to produce [3 4]
  echo ([1 2 3 4] select: [:x > 2])
 
-description Spry borrows homoiconicity from Rebol and Lisp, free form syntax from Forth and Rebol, the word of different types from Rebol, good data structure literal support from JavaScript and the general coding experience and style from Smalltalk. It also has a few ideas of its own, like an interesting argument passing mechanism and a relatively novel take on OO.
-
 githubRepo https://github.com/gokr/spry
  firstCommit 2015
  stars 378
@@ -40,19 +51,9 @@ githubRepo https://github.com/gokr/spry
  description A Smalltalk and Rebol inspired language implemented as an AST interpreter in Nim
  issues 1
 
-website http://sprylang.se/
-aka ni
-lineCommentToken #
-features
- hasLineComments true
-  # A comment
- hasComments true
-  # A comment
- hasSemanticIndentation false
 leachim6 Ni
  filepath n/Ni.nic
  fileExtensions nic
  example
   #48!#65!#6c!#6c!#6f!#20!#57!#6f!#72!#6c!#64!
   
-domainName sprylang.se

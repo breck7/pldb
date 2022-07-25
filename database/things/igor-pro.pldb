@@ -1,6 +1,16 @@
 title IGOR Pro
 appeared 1993
 type pl
+reference https://groups.google.com/forum/#!search/igor-pro/comp.sys.mac.scitech/1QMC8N6AyLw/1Vvaa5rZPBwJ
+
+features
+ hasLineComments true
+  // A comment
+ hasComments true
+  // A comment
+ hasSemanticIndentation false
+
+lineCommentToken //
 
 wikipedia https://en.wikipedia.org/wiki/IGOR_Pro
  related c
@@ -16,6 +26,9 @@ githubLanguage IGOR Pro
  fileExtensions ipf
  trendingProjectsCount 0
 
+pygmentsHighlighter Igor
+ filename igor.py
+ fileExtensions ipf
 linguistGrammarRepo https://github.com/byte-physics/language-igor
  sampleCount 2
  example
@@ -42,16 +55,5 @@ linguistGrammarRepo https://github.com/byte-physics/language-igor
   #endif
   
 
-reference https://groups.google.com/forum/#!search/igor-pro/comp.sys.mac.scitech/1QMC8N6AyLw/1Vvaa5rZPBwJ
 fileType text
 centralPackageRepositoryCount 0
-lineCommentToken //
-features
- hasLineComments true
-  // A comment
- hasComments true
-  // A comment
- hasSemanticIndentation false
-pygmentsHighlighter Igor
- filename igor.py
- fileExtensions ipf

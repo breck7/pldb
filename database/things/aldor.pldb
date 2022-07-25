@@ -1,6 +1,11 @@
 title Aldor
 appeared 1990
 type pl
+creators Richard Dimick Jenks and Barry Trager and Stephen Watt and James Davenport and Robert Sutor and Scott Morrison
+website http://www.aldor.org
+country United Kingdom
+domainName aldor.org
+ registered 2000
 
 features
  hasSemanticIndentation true
@@ -8,6 +13,8 @@ features
   -- A comment
  hasComments true
   -- A comment
+
+lineCommentToken --
 
 wikipedia https://en.wikipedia.org/wiki/Aldor
  example
@@ -55,16 +62,9 @@ wikipedia https://en.wikipedia.org/wiki/Aldor
  dailyPageViews 12
  appeared 1990
 
-website http://www.aldor.org
-country United Kingdom
-fileType text
-isOpenSource true
-
 hopl 6911
 
 jupyterKernel https://github.com/mattpap/IAldor
+fileType text
+isOpenSource true
 centralPackageRepositoryCount 0
-creators Richard Dimick Jenks and Barry Trager and Stephen Watt and James Davenport and Robert Sutor and Scott Morrison
-lineCommentToken --
-domainName aldor.org
- registered 2000

@@ -1,10 +1,19 @@
 title Pug
 appeared 2010
 type template
+creators Tj Holowaychuk
+website https://pugjs.org
+domainName pugjs.org
 
-githubLanguage Pug
- fileExtensions jade pug
- trendingProjectsCount 0
+features
+ hasStrings true
+ hasLineComments true
+  // A comment
+ hasComments true
+  // A comment
+
+lineCommentToken //
+keywords append block case default doctype each else extends for if in include mixin typeof unless var when
 
 githubRepo https://github.com/pugjs/pug
  firstCommit 2010
@@ -16,6 +25,14 @@ githubRepo https://github.com/pugjs/pug
  description Pug – robust, elegant, feature rich template engine for Node.js
  issues 280
 
+githubLanguage Pug
+ fileExtensions jade pug
+ trendingProjectsCount 0
+
+monaco pug
+pygmentsHighlighter Pug
+ filename html.py
+ fileExtensions pug jade
 linguistGrammarRepo https://github.com/davidrios/jade-tmbundle
  firstCommit 2010
  lastCommit 2016
@@ -27,20 +44,6 @@ linguistGrammarRepo https://github.com/davidrios/jade-tmbundle
     Hello,
     World!
 
-website https://pugjs.org
-fileType text
-isOpenSource true
-centralPackageRepositoryCount 0
-rijuRepl https://riju.codes/pug
- example
-  html
-    body
-      p Hello, world!
-  
-creators Tj Holowaychuk
-pygmentsHighlighter Pug
- filename html.py
- fileExtensions pug jade
 leachim6 Pug
  filepath p/Pug.pug
  fileExtensions pug
@@ -51,13 +54,14 @@ leachim6 Pug
          title Hello World
       body
          h1 Hello World
-domainName pugjs.org
-lineCommentToken //
-monaco pug
-keywords append block case default doctype each else extends for if in include mixin typeof unless var when
-features
- hasStrings true
- hasLineComments true
-  // A comment
- hasComments true
-  // A comment
+
+rijuRepl https://riju.codes/pug
+ example
+  html
+    body
+      p Hello, world!
+  
+
+fileType text
+isOpenSource true
+centralPackageRepositoryCount 0

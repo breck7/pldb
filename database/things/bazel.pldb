@@ -1,14 +1,11 @@
 title Bazel
 appeared 2015
 type application
+creators Han-Wen Nienhuys
 description Bazel is an open-source build and test tool similar to Make, Maven, and Gradle. It uses a human-readable, high-level build language. Bazel supports projects in multiple languages and builds outputs for multiple platforms. Bazel supports large codebases across multiple repositories, and large numbers of users. See starlark for the language.
-
-wikipedia https://en.wikipedia.org/wiki/Bazel_(software)
- summary In software development, Bazel is a free software tool that allows for the automation of building and testing of software. The company Google uses the build tool Blaze internally and released an open-sourced part of the Blaze tool as Bazel, named as an anagram of Blaze. Bazel was first released in March 2015 and achieved beta status by September 2015.Similar to build tools like Make, Apache Ant, or Apache Maven, Bazel builds software applications from source code using a set of rules. Rules and macros are created in the Starlark language (previously called Skylark), a dialect of Python. There are built-in rules for building software written in the programming languages of Java, C, C++, Go, Python, Objective-C and Bourne shell scripts. Bazel can produce software application packages suitable for deployment for the Android and iOS operating systems.In designing Bazel, emphasis has been placed on build speed, correctness, and reproducibility. The tool uses parallelization to speed up parts of the build process. It includes a Bazel Query language that can be used to analyze build dependencies in complex build graphs.
- backlinksCount 19
- pageId 50918393
- dailyPageViews 96
- appeared 2019
+website https://bazel.build/
+domainName bazel.build
+ registered 2016
 
 githubRepo https://github.com/bazelbuild/bazel
  firstCommit 2015
@@ -20,10 +17,11 @@ githubRepo https://github.com/bazelbuild/bazel
  description a fast, scalable, multi-language and extensible build system
  issues 2555
 
-website https://bazel.build/
+wikipedia https://en.wikipedia.org/wiki/Bazel_(software)
+ summary In software development, Bazel is a free software tool that allows for the automation of building and testing of software. The company Google uses the build tool Blaze internally and released an open-sourced part of the Blaze tool as Bazel, named as an anagram of Blaze. Bazel was first released in March 2015 and achieved beta status by September 2015.Similar to build tools like Make, Apache Ant, or Apache Maven, Bazel builds software applications from source code using a set of rules. Rules and macros are created in the Starlark language (previously called Skylark), a dialect of Python. There are built-in rules for building software written in the programming languages of Java, C, C++, Go, Python, Objective-C and Bourne shell scripts. Bazel can produce software application packages suitable for deployment for the Android and iOS operating systems.In designing Bazel, emphasis has been placed on build speed, correctness, and reproducibility. The tool uses parallelization to speed up parts of the build process. It includes a Bazel Query language that can be used to analyze build dependencies in complex build graphs.
+ backlinksCount 19
+ pageId 50918393
+ dailyPageViews 96
+ appeared 2019
 
 twitter bazelbuild
-
-creators Han-Wen Nienhuys
-domainName bazel.build
- registered 2016

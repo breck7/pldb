@@ -2,6 +2,13 @@ title Ceylon
 appeared 2011
 type pl
 creators Gavin King
+website http://ceylon-lang.org
+corporateDevelopers Red Hat
+domainName ceylon-lang.org
+ registered 2011
+
+writtenIn java
+runsOnVm jvm
 
 features
  hasOperatorOverloading true
@@ -18,6 +25,21 @@ features
  hasSemanticIndentation false
  hasStrings true
   "Hello world"
+
+lineCommentToken //
+multiLineCommentTokens /* */
+printToken print
+stringToken "
+
+githubRepo https://github.com/eclipse/ceylon
+ stars 387
+ forks 64
+ subscribers 41
+ created 2015
+ updated 2022
+ firstCommit 2017
+ description The Ceylon compiler, language module, and command line tools
+ issues 1027
 
 wikipedia https://en.wikipedia.org/wiki/Ceylon_(programming_language)
  example
@@ -39,21 +61,9 @@ githubLanguage Ceylon
  fileExtensions ceylon
  trendingProjectsCount 0
 
-githubRepo https://github.com/eclipse/ceylon
- stars 387
- forks 64
- subscribers 41
- created 2015
- updated 2022
- firstCommit 2017
- description The Ceylon compiler, language module, and command line tools
- issues 1027
-
-helloWorldCollection Ceylon
- // Hello world in Ceylon
- 
- print("Hello, World!");
-
+pygmentsHighlighter Ceylon
+ filename jvm.py
+ fileExtensions ceylon
 linguistGrammarRepo https://github.com/jeancharles-roger/ceylon-sublimetext
  firstCommit 2013
  lastCommit 2017
@@ -77,31 +87,27 @@ linguistGrammarRepo https://github.com/jeancharles-roger/ceylon-sublimetext
       }
   }
   
-
-website http://ceylon-lang.org
-
-tryItOnline ceylon
-
-twitter ceylonlang
-
-fileType text
-runsOnVm jvm
-isOpenSource true
-
-tiobe Ceylon
+languageServerProtocolProject https://github.com/jvasileff/vscode-ceylon
+ writtenIn ceylon
 
 projectEuler Ceylon
  memberCount
   2019 5
   2022 8
-
+helloWorldCollection Ceylon
+ // Hello world in Ceylon
+ 
+ print("Hello, World!");
+leachim6 Ceylon
+ filepath c/Ceylon.ceylon
+ fileExtensions ceylon
+ example
+  shared void hello() {
+      print("Hello World");
+  }
+  
 rosettaCode Ceylon
 
-corporateDevelopers Red Hat
-writtenIn java
-languageServerProtocolProject https://github.com/jvasileff/vscode-ceylon
- writtenIn ceylon
-centralPackageRepositoryCount 0
 rijuRepl https://riju.codes/ceylon
  example
   shared void run() {
@@ -112,20 +118,11 @@ rijuRepl https://riju.codes/ceylon
  fileExtensions ceylon
  website https://ceylon-lang.org/
  githubRepo https://ceylon-lang.org/code/source/
-lineCommentToken //
-pygmentsHighlighter Ceylon
- filename jvm.py
- fileExtensions ceylon
-leachim6 Ceylon
- filepath c/Ceylon.ceylon
- fileExtensions ceylon
- example
-  shared void hello() {
-      print("Hello World");
-  }
-  
-printToken print
-multiLineCommentTokens /* */
-domainName ceylon-lang.org
- registered 2011
-stringToken "
+tryItOnline ceylon
+
+tiobe Ceylon
+
+twitter ceylonlang
+fileType text
+isOpenSource true
+centralPackageRepositoryCount 0

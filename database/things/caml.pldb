@@ -1,6 +1,21 @@
 title Caml
 appeared 1985
 type pl
+creators Gérard Huet and Guy Cousineau and Ascánder Suárez and Pierre Weis and Michel Mauny
+website https://caml.inria.fr
+standsFor Categorical abstract machine language
+country France
+domainName caml.inria.fr
+
+related ocaml
+
+features
+ hasPrintDebugging true
+ hasStrings true
+  "Hello world"
+
+printToken print_endline
+stringToken "
 
 wikipedia https://en.wikipedia.org/wiki/Caml
  example
@@ -15,34 +30,21 @@ wikipedia https://en.wikipedia.org/wiki/Caml
  revisionCount 124
  appeared 1985
 
-related ocaml
-website https://caml.inria.fr
-standsFor Categorical abstract machine language
-country France
-fileType text
-
-tiobe Caml
-
-hopl 1460
-
-rosettaCode Caml
-
-centralPackageRepositoryCount 0
-creators Gérard Huet and Guy Cousineau and Ascánder Suárez and Pierre Weis and Michel Mauny
-goodreads
- title|year|author|goodreadsId|rating|ratings|reviews
- The Objective Caml Programming Language||Tim Rentsch|14474263|5.00|1|0
- Functional programming using Caml Light||Michel Mauny|58185709|4.00|1|0
 leachim6 CAML
  filepath c/CAML.ml
  fileExtensions ml
  example
   print_endline "Hello World";;
   
-printToken print_endline
-features
- hasPrintDebugging true
- hasStrings true
-  "Hello world"
-domainName caml.inria.fr
-stringToken "
+rosettaCode Caml
+
+goodreads
+ title|year|author|goodreadsId|rating|ratings|reviews
+ The Objective Caml Programming Language||Tim Rentsch|14474263|5.00|1|0
+ Functional programming using Caml Light||Michel Mauny|58185709|4.00|1|0
+
+tiobe Caml
+hopl 1460
+
+fileType text
+centralPackageRepositoryCount 0

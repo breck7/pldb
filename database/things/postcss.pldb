@@ -1,10 +1,23 @@
 title PostCSS
 appeared 2013
 type textMarkup
+website https://postcss.org/
+domainName postcss.org
+ registered 2015
 
-githubLanguage PostCSS
- fileExtensions pcss
- trendingProjectsCount 0
+features
+ hasMultiLineComments true
+  /* A comment
+  */
+ hasComments true
+  /* A comment
+  */
+ hasSemanticIndentation false
+ hasStrings true
+  "Hello world"
+
+multiLineCommentTokens /* */
+stringToken "
 
 githubRepo https://github.com/postcss/postcss
  firstCommit 2013
@@ -15,6 +28,10 @@ githubRepo https://github.com/postcss/postcss
  updated 2022
  description Transforming styles with JS plugins
  issues 12
+
+githubLanguage PostCSS
+ fileExtensions pcss
+ trendingProjectsCount 0
 
 linguistGrammarRepo https://github.com/hudochenkov/Syntax-highlighting-for-PostCSS
  firstCommit 2013
@@ -37,13 +54,6 @@ linguistGrammarRepo https://github.com/hudochenkov/Syntax-highlighting-for-PostC
     }
   }
 
-website https://postcss.org/
-
-twitter postcss
-
-fileType text
-isOpenSource true
-centralPackageRepositoryCount 0
 leachim6 PostCSS
  filepath p/PostCSS.pcss
  fileExtensions pcss
@@ -51,17 +61,8 @@ leachim6 PostCSS
   body::before {
       content: "Hello World";
   }
-multiLineCommentTokens /* */
-features
- hasMultiLineComments true
-  /* A comment
-  */
- hasComments true
-  /* A comment
-  */
- hasSemanticIndentation false
- hasStrings true
-  "Hello world"
-domainName postcss.org
- registered 2015
-stringToken "
+
+twitter postcss
+fileType text
+isOpenSource true
+centralPackageRepositoryCount 0

@@ -2,6 +2,9 @@ title ten
 appeared 2019
 type pl
 creators Ray Stubbs
+website https://ten-lang.io
+fileExtensions ten
+domainName ten-lang.io
 
 example
  each( irange( 1, 101 )
@@ -24,7 +27,3 @@ githubRepo https://github.com/ten-lang/libten
  updated 2022
  description A minimal, consistent, embeddable scripting language.
  issues 1
-
-website https://ten-lang.io
-fileExtensions ten
-domainName ten-lang.io

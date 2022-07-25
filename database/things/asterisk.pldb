@@ -1,6 +1,7 @@
 title Asterisk
 appeared 1999
 type application
+website https://wiki.asterisk.org/wiki/display/AST/Dialplan
 
 wikipedia https://en.wikipedia.org/wiki/Asterisk_(PBX)
  related c linux freebsd solaris
@@ -12,15 +13,13 @@ wikipedia https://en.wikipedia.org/wiki/Asterisk_(PBX)
  revisionCount 1053
  appeared 1999
 
+codeMirror asterisk
+
 helloWorldCollection Asterisk dialplan
  ;; Hello world in Asterisk
  
  exten => s,1,NoOp(Hello World)
 
-website https://wiki.asterisk.org/wiki/display/AST/Dialplan
 fileType text
 isOpenSource true
-
-codeMirror asterisk
-
 centralPackageRepositoryCount 0

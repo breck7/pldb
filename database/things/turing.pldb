@@ -1,6 +1,22 @@
 title Turing
 appeared 1982
 type pl
+creators Ric Holt
+country Canada
+
+features
+ hasLineComments true
+  % A comment
+ hasComments true
+  % A comment
+ hasPrintDebugging true
+ hasSemanticIndentation false
+ hasStrings true
+  "Hello world"
+
+lineCommentToken %
+printToken put
+stringToken "
 
 example
  % Accepts a number and calculates its factorial
@@ -84,30 +100,15 @@ linguistGrammarRepo https://github.com/Alhadis/language-turing
   
   put "The factorial of ", n, " is ", factorial (n)
 
-country Canada
-fileType text
-
-hopl 1023
-
-rosettaCode Turing
-
-centralPackageRepositoryCount 0
-creators Ric Holt
-lineCommentToken %
-features
- hasLineComments true
-  % A comment
- hasComments true
-  % A comment
- hasPrintDebugging true
- hasSemanticIndentation false
- hasStrings true
-  "Hello world"
 leachim6 Turing
  filepath t/Turing.t
  fileExtensions t
  example
   put "Hello World"
   
-printToken put
-stringToken "
+rosettaCode Turing
+
+hopl 1023
+
+fileType text
+centralPackageRepositoryCount 0

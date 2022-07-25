@@ -1,6 +1,7 @@
 title ASN.1
 appeared 1984
 type idl
+country United Kingdom
 
 example
  FooProtocol DEFINITIONS ::= BEGIN
@@ -36,6 +37,7 @@ githubLanguage ASN.1
  fileExtensions asn asn1
  trendingProjectsCount 0
 
+codeMirror asn-1
 linguistGrammarRepo https://github.com/ajLangley12/language-asn1
  firstCommit 2016
  lastCommit 2016
@@ -78,11 +80,7 @@ linguistGrammarRepo https://github.com/ajLangley12/language-asn1
   END
   
 
-country United Kingdom
-fileType text
-
 hopl 1070
 
-codeMirror asn-1
-
+fileType text
 centralPackageRepositoryCount 0

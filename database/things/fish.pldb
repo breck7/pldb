@@ -1,7 +1,10 @@
 title fish
 appeared 2005
 type pl
+website http://fishshell.com/
 standsFor friendly interactive shell
+domainName fishshell.com
+ registered 2010
 
 features
  hasComments true
@@ -13,6 +16,18 @@ features
   "Hello world"
 
 lineCommentToken #
+printToken echo
+stringToken "
+
+githubRepo https://github.com/fish-shell/fish-shell
+ firstCommit 2005
+ stars 19123
+ forks 1569
+ subscribers 268
+ created 2012
+ updated 2022
+ description The user-friendly command line shell.
+ issues 460
 
 wikipedia https://en.wikipedia.org/wiki/Friendly_interactive_shell
  example
@@ -33,16 +48,9 @@ githubLanguage fish
  fileExtensions fish
  trendingProjectsCount 0
 
-githubRepo https://github.com/fish-shell/fish-shell
- firstCommit 2005
- stars 19123
- forks 1569
- subscribers 268
- created 2012
- updated 2022
- description The user-friendly command line shell.
- issues 460
-
+pygmentsHighlighter Fish
+ filename shell.py
+ fileExtensions fish load
 linguistGrammarRepo https://github.com/l15n/fish-tmbundle
  firstCommit 2008
  lastCommit 2014
@@ -80,24 +88,6 @@ linguistGrammarRepo https://github.com/l15n/fish-tmbundle
   end
   
 
-website http://fishshell.com/
-
-tryItOnline fish
-
-fileType text
-wordRank 1563
-isOpenSource true
-
-rosettaCode Fish
-
-centralPackageRepositoryCount 0
-rijuRepl https://riju.codes/fish
- example
-  echo "Hello, world!"
-  
-pygmentsHighlighter Fish
- filename shell.py
- fileExtensions fish load
 leachim6 Fish
  filepath f/Fish.fish
  fileExtensions fish
@@ -105,7 +95,15 @@ leachim6 Fish
   #!/usr/bin/env fish
   echo "Hello World"
   
-printToken echo
-domainName fishshell.com
- registered 2010
-stringToken "
+rosettaCode Fish
+
+rijuRepl https://riju.codes/fish
+ example
+  echo "Hello, world!"
+  
+tryItOnline fish
+
+fileType text
+wordRank 1563
+isOpenSource true
+centralPackageRepositoryCount 0

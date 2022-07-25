@@ -17,6 +17,9 @@ githubLanguage G-code
  fileExtensions g gco gcode
  trendingProjectsCount 0
 
+pygmentsHighlighter g-code
+ filename gcodelexer.py
+ fileExtensions gcode
 linguistGrammarRepo https://github.com/robotmaster/sublime-text-syntax-highlighting
  firstCommit 2014
  lastCommit 2015
@@ -41,6 +44,3 @@ linguistGrammarRepo https://github.com/robotmaster/sublime-text-syntax-highlight
 
 fileType text
 centralPackageRepositoryCount 0
-pygmentsHighlighter g-code
- filename gcodelexer.py
- fileExtensions gcode

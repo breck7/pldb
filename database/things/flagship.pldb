@@ -1,6 +1,20 @@
 title flagship
 appeared 1986
 type pl
+website http://www.flagship.de/
+domainName flagship.de
+
+features
+ hasLineComments true
+  // A comment
+ hasComments true
+  // A comment
+ hasSemanticIndentation false
+ hasStrings true
+  "Hello world"
+
+lineCommentToken //
+stringToken "
 
 example
  ** File: hello1.prg         // your first program
@@ -30,16 +44,3 @@ example
  ENDIF
  BROWSE ()                   // browse/edit
  QUIT                        // exit back to command line
-
-website http://www.flagship.de/
-lineCommentToken //
-features
- hasLineComments true
-  // A comment
- hasComments true
-  // A comment
- hasSemanticIndentation false
- hasStrings true
-  "Hello world"
-domainName flagship.de
-stringToken "

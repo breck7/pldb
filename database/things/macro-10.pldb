@@ -2,6 +2,18 @@ title MACRO-10
 appeared 1978
 type pl
 
+features
+ hasLineComments true
+  ; A comment
+ hasComments true
+  ; A comment
+ hasSemanticIndentation false
+ hasStrings true
+  'Hello world'
+
+lineCommentToken ;
+stringToken '
+
 wikipedia https://en.wikipedia.org/wiki/MACRO-10
  example
   HELLO WORLD     MACRO %53B(1247) 17:29  7-Apr-:9 Page 1
@@ -48,13 +60,3 @@ wikipedia https://en.wikipedia.org/wiki/MACRO-10
  appeared 1978
 
 centralPackageRepositoryCount 0
-lineCommentToken ;
-features
- hasLineComments true
-  ; A comment
- hasComments true
-  ; A comment
- hasSemanticIndentation false
- hasStrings true
-  'Hello world'
-stringToken '

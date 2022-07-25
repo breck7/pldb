@@ -1,6 +1,7 @@
 title X PixMap
 appeared 1989
 type textDataFormat
+fileExtensions xpm
 
 example
  static char* <variable_name>[] = {
@@ -11,5 +12,3 @@ example
  };
 
 wikipedia https://en.wikipedia.org/wiki/X_PixMap
-
-fileExtensions xpm

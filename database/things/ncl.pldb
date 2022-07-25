@@ -1,6 +1,18 @@
 title NCAR Command Language
 appeared 1994
 type pl
+description (The NCAR Command Language (NCL), a product of the Computational & Information Systems Laboratory at the National Center for Atmospheric Research (NCAR) and sponsored by the National Science Foundation, is a free interpreted language designed specifically for scientific data processing and visualization.
+website https://www.ncl.ucar.edu/index.shtml
+standsFor NCAR Command Language
+
+features
+ hasLineComments true
+  ; A comment
+ hasComments true
+  ; A comment
+ hasSemanticIndentation false
+
+lineCommentToken ;
 
 example
  ;-----------------------------------------------------------------
@@ -46,12 +58,6 @@ example
  
  end
 
-description (The NCAR Command Language (NCL), a product of the Computational & Information Systems Laboratory at the National Center for Atmospheric Research (NCAR) and sponsored by the National Science Foundation, is a free interpreted language designed specifically for scientific data processing and visualization.
-
-githubLanguage NCL
- fileExtensions ncl
- trendingProjectsCount 0
-
 githubRepo https://github.com/NCAR/ncl
  firstCommit 1990
  stars 208
@@ -62,6 +68,13 @@ githubRepo https://github.com/NCAR/ncl
  issues 106
  description The NCAR Command Language (NCL) is a scripting language for the analysis and visualization of climate and weather data.
 
+githubLanguage NCL
+ fileExtensions ncl
+ trendingProjectsCount 0
+
+pygmentsHighlighter NCL
+ filename ncl.py
+ fileExtensions ncl
 linguistGrammarRepo https://github.com/rpavlick/language-ncl.git
  firstCommit 2015
  lastCommit 2015
@@ -73,18 +86,6 @@ linguistGrammarRepo https://github.com/rpavlick/language-ncl.git
   a=val/4.
   print(a)
 
-website https://www.ncl.ucar.edu/index.shtml
-standsFor NCAR Command Language
 fileType text
 isOpenSource true
 centralPackageRepositoryCount 0
-lineCommentToken ;
-features
- hasLineComments true
-  ; A comment
- hasComments true
-  ; A comment
- hasSemanticIndentation false
-pygmentsHighlighter NCL
- filename ncl.py
- fileExtensions ncl

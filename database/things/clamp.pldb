@@ -1,6 +1,7 @@
 title Common Lisp with Arc Macros and Procedures
 appeared 2014
 type pl
+standsFor Common Lisp with Arc Macros and Procedures
 
 example
  (map [+ _ 1] '(1 2 3))
@@ -14,5 +15,3 @@ githubRepo https://github.com/malisper/Clamp
  updated 2022
  description Common Lisp with Arc Macros and Procedures
  issues 0
-
-standsFor Common Lisp with Arc Macros and Procedures

@@ -1,7 +1,14 @@
 title Dylan
 appeared 1992
 type pl
-lineCommentToken //
+website http://opendylan.org
+webRepl https://play.opendylan.org/
+country United Kingdom
+corporateDevelopers Apple
+domainName opendylan.org
+ registered 2004
+
+visualParadigm false
 
 features
  hasMultipleDispatch true
@@ -14,8 +21,9 @@ features
  hasStrings true
   "Hello world"
 
-corporateDevelopers Apple
-webRepl https://play.opendylan.org/
+lineCommentToken //
+assignmentToken :=
+stringToken "
 
 wikipedia https://en.wikipedia.org/wiki/Dylan_(programming_language)
  example
@@ -35,6 +43,16 @@ githubLanguage Dylan
  fileExtensions dylan dyl intr lid
  trendingProjectsCount 0
 
+codeMirror dylan
+pygmentsHighlighter Dylan
+ filename dylan.py
+ fileExtensions dylan dyl intr
+linguistGrammarRepo https://github.com/textmate/dylan.tmbundle
+ firstCommit 2005
+ lastCommit 2011
+ committerCount 5
+ commitCount 20
+
 helloWorldCollection Dylan
  module:			hello-world
  author:			Homer
@@ -49,28 +67,18 @@ helloWorldCollection Dylan
  
  main();
  
-
-linguistGrammarRepo https://github.com/textmate/dylan.tmbundle
- firstCommit 2005
- lastCommit 2011
- committerCount 5
- commitCount 20
-
-website http://opendylan.org
-country United Kingdom
-fileType text
-wordRank 9298
-
-tiobe Dylan
-
-hopl 1682
-
-codeMirror dylan
-
+leachim6 Dylan
+ filepath d/Dylan.dl
+ fileExtensions dl
+ example
+  define method main (#rest args)
+    princ("Hello World");
+  end;
+  
+  main();
+  
 rosettaCode Dylan
 
-visualParadigm false
-centralPackageRepositoryCount 0
 rijuRepl https://riju.codes/dylan
  example
   Module: main
@@ -82,20 +90,10 @@ rijuRepl https://riju.codes/dylan
   end function main;
   
   main(application-name(), application-arguments());
-pygmentsHighlighter Dylan
- filename dylan.py
- fileExtensions dylan dyl intr
-leachim6 Dylan
- filepath d/Dylan.dl
- fileExtensions dl
- example
-  define method main (#rest args)
-    princ("Hello World");
-  end;
-  
-  main();
-  
-domainName opendylan.org
- registered 2004
-assignmentToken :=
-stringToken "
+
+tiobe Dylan
+hopl 1682
+
+fileType text
+wordRank 9298
+centralPackageRepositoryCount 0

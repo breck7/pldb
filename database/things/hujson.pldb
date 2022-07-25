@@ -1,7 +1,21 @@
 title HuJSON
-lineCommentToken //
+appeared 2019
 type dataNotation
+creators David Crawshaw
+reference https://nigeltao.github.io/blog/2021/json-with-commas-comments.html
+
+features
+ hasLineComments true
+  // A comment
+ hasMultiLineComments true
+  /* A comment
+  */
+ hasComments true
+  // A comment
+
+lineCommentToken //
 multiLineCommentTokens /* */
+
 githubRepo https://github.com/tailscale/hujson
  firstCommit 2019
  stars 401
@@ -11,14 +25,3 @@ githubRepo https://github.com/tailscale/hujson
  updated 2022
  description HuJSON: JSON for Humans (JWCC: JSON w/ comments and trailing commas)
  issues 2
-appeared 2019
-reference https://nigeltao.github.io/blog/2021/json-with-commas-comments.html
-creators David Crawshaw
-features
- hasLineComments true
-  // A comment
- hasMultiLineComments true
-  /* A comment
-  */
- hasComments true
-  // A comment

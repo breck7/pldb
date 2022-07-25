@@ -1,6 +1,23 @@
 title SPARQL
 appeared 2008
 type queryLanguage
+webRepl https://dbpedia.org/sparql
+reference https://www.w3.org/TR/rdf-sparql-query/
+cheatSheetUrl http://www.iro.umontreal.ca/~lapalme/ift6281/sparql-1_1-cheat-sheet.pdf
+standsFor SPARQL Protocol and RDF Query Language
+corporateDevelopers W3C
+
+features
+ hasLineComments true
+  # A comment
+ hasComments true
+  # A comment
+ hasStrings true
+  "Hello world"
+
+lineCommentToken #
+stringToken "
+keywords add as asc ask base by clear construct copy create data delete desc describe distinct drop false filter from graph group having in insert limit load minus move named not offset optional order prefix reduced select service silent to true undef union using values where with
 
 wikipedia https://en.wikipedia.org/wiki/SPARQL
  example
@@ -27,6 +44,12 @@ githubLanguage SPARQL
  fileExtensions sparql rq
  trendingProjectsCount 0
 
+antlr https://github.com/antlr/grammars-v4/tree/master/sparql
+monaco sparql
+codeMirror sparql
+pygmentsHighlighter SPARQL
+ filename rdf.py
+ fileExtensions rq sparql
 linguistGrammarRepo https://github.com/peta/turtle.tmbundle
  firstCommit 2013
  lastCommit 2015
@@ -42,25 +65,9 @@ linguistGrammarRepo https://github.com/peta/turtle.tmbundle
     ?person foaf:mbox ?email.
   }
   
-
-reference https://www.w3.org/TR/rdf-sparql-query/
-standsFor SPARQL Protocol and RDF Query Language
-fileType text
-webRepl https://dbpedia.org/sparql
-
-codeMirror sparql
-
-antlr https://github.com/antlr/grammars-v4/tree/master/sparql
-
-corporateDevelopers W3C
-cheatSheetUrl http://www.iro.umontreal.ca/~lapalme/ift6281/sparql-1_1-cheat-sheet.pdf
 languageServerProtocolProject https://github.com/stardog-union/stardog-language-servers/tree/master/packages/sparql-language-server
  writtenIn typescript
-jupyterKernel https://github.com/paulovn/sparql-kernel
-centralPackageRepositoryCount 0
-pygmentsHighlighter SPARQL
- filename rdf.py
- fileExtensions rq sparql
+
 leachim6 SparQL
  filepath s/SparQL.sparql
  fileExtensions sparql
@@ -69,14 +76,7 @@ leachim6 SparQL
     VALUES ?h { "Hello World" } 
   }
   
-lineCommentToken #
-monaco sparql
-keywords add as asc ask base by clear construct copy create data delete desc describe distinct drop false filter from graph group having in insert limit load minus move named not offset optional order prefix reduced select service silent to true undef union using values where with
-features
- hasLineComments true
-  # A comment
- hasComments true
-  # A comment
- hasStrings true
-  "Hello world"
-stringToken "
+
+jupyterKernel https://github.com/paulovn/sparql-kernel
+fileType text
+centralPackageRepositoryCount 0

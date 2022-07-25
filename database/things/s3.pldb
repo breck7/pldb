@@ -1,6 +1,12 @@
 title S3
 appeared 1986
 type pl
+country United Kingdom
+
+features
+ hasComments true
+  @ a comment @
+ hasSemanticIndentation false
 
 wikipedia https://en.wikipedia.org/wiki/S3_(programming_language)
  example
@@ -63,13 +69,7 @@ wikipedia https://en.wikipedia.org/wiki/S3_(programming_language)
  dailyPageViews 8
  appeared 1986
 
-country United Kingdom
-fileType text
-
 hopl 2462
 
+fileType text
 centralPackageRepositoryCount 0
-features
- hasComments true
-  @ a comment @
- hasSemanticIndentation false

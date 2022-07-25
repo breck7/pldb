@@ -1,6 +1,23 @@
 title Angelscript
 appeared 2003
 type pl
+website http://angelcode.com/angelscript
+
+features
+ hasLineComments true
+  // A comment
+ hasComments true
+  // A comment
+ hasPrintDebugging true
+ hasMultiLineComments true
+  /* A comment
+  */
+ hasSemanticIndentation false
+
+lineCommentToken //
+multiLineCommentTokens /* */
+printToken print
+keywords and abstract* auto bool break case cast class const continue default do double else enum false final* float for from* funcdef get* if import in inout int interface int8 int16 int32 int64 is mixin namespace not null or out override* private protected return set* shared* super* switch this* true typedef uint uint8 uint16 uint32 uint64 void while xor * ** / % + - <= < >= > ( ) == != ? : = += -= *= /= %= **= ++ -- & , { } ; | ^ ~ << >> >>> &= |= ^= <<= >>= >>>= . && || ! [ ] ^^ @ !is :: 123456789 123.123e123 123.123e123f 0x1234FEDC 0d123987 0o1276 0b1010 'abc' "abc" """heredoc""" _Abc123 // /* */
 
 wikipedia https://en.wikipedia.org/wiki/AngelScript
  related eclipse-editor
@@ -15,11 +32,6 @@ wikipedia https://en.wikipedia.org/wiki/AngelScript
 githubLanguage AngelScript
  fileExtensions as angelscript
  trendingProjectsCount 0
-
-helloWorldCollection Angelscript
- // Hello world in AngelScript
- 
- void main() { print("Hello world\n"); }
 
 linguistGrammarRepo https://github.com/wronex/sublime-angelscript
  firstCommit 2012
@@ -107,30 +119,18 @@ linguistGrammarRepo https://github.com/wronex/sublime-angelscript
   }
   
 
-website http://angelcode.com/angelscript
-fileType text
-
-tiobe Angelscript
-
-rosettaCode AngelScript
-
-keywords and abstract* auto bool break case cast class const continue default do double else enum false final* float for from* funcdef get* if import in inout int interface int8 int16 int32 int64 is mixin namespace not null or out override* private protected return set* shared* super* switch this* true typedef uint uint8 uint16 uint32 uint64 void while xor * ** / % + - <= < >= > ( ) == != ? : = += -= *= /= %= **= ++ -- & , { } ; | ^ ~ << >> >>> &= |= ^= <<= >>= >>>= . && || ! [ ] ^^ @ !is :: 123456789 123.123e123 123.123e123f 0x1234FEDC 0d123987 0o1276 0b1010 'abc' "abc" """heredoc""" _Abc123 // /* */
-centralPackageRepositoryCount 0
-lineCommentToken //
-features
- hasLineComments true
-  // A comment
- hasComments true
-  // A comment
- hasPrintDebugging true
- hasMultiLineComments true
-  /* A comment
-  */
- hasSemanticIndentation false
+helloWorldCollection Angelscript
+ // Hello world in AngelScript
+ 
+ void main() { print("Hello world\n"); }
 leachim6 AngelScript
  filepath a/AngelScript
  example
   void main() { print("Hello World\n"); }
   
-printToken print
-multiLineCommentTokens /* */
+rosettaCode AngelScript
+
+tiobe Angelscript
+
+fileType text
+centralPackageRepositoryCount 0

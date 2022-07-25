@@ -1,6 +1,11 @@
 title RDFa
 appeared 2004
 type xmlFormat
+website http://rdfa.info/
+domainName rdfa.info
+ registered 2006
+
+related json-ld
 
 example
  <div xmlns:dc="http://purl.org/dc/elements/1.1/"
@@ -16,8 +21,3 @@ wikipedia https://en.wikipedia.org/wiki/RDFa
  pageId 4321818
  dailyPageViews 1419
  appeared 2004
-
-website http://rdfa.info/
-related json-ld
-domainName rdfa.info
- registered 2006

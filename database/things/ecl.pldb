@@ -1,6 +1,9 @@
 title ECL
 appeared 2000
 type pl
+website http://hpccsystems.com/
+domainName hpccsystems.com
+ registered 2010
 
 features
  hasComments true
@@ -10,6 +13,9 @@ features
   /* A comment
   */
  hasSemanticIndentation false
+
+lineCommentToken //
+multiLineCommentTokens /* */
 
 wikipedia https://en.wikipedia.org/wiki/ECL,_data-centric_programming_language_for_Big_Data
  example
@@ -27,6 +33,10 @@ githubLanguage ECL
  fileExtensions ecl eclxml
  trendingProjectsCount 0
 
+codeMirror ecl
+pygmentsHighlighter ECL
+ filename ecl.py
+ fileExtensions ecl
 linguistGrammarRepo https://github.com/hpcc-systems/ecl-tmLanguage
  sampleCount 1
  example
@@ -74,18 +84,7 @@ linguistGrammarRepo https://github.com/hpcc-systems/ecl-tmLanguage
   output(join(namesTable, namesTable, left.age between right.age - 10 and right.age +10));
   
 
-website http://hpccsystems.com/
-fileType text
-
-codeMirror ecl
-
 rosettaCode ECL
 
+fileType text
 centralPackageRepositoryCount 0
-lineCommentToken //
-pygmentsHighlighter ECL
- filename ecl.py
- fileExtensions ecl
-multiLineCommentTokens /* */
-domainName hpccsystems.com
- registered 2010

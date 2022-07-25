@@ -1,6 +1,16 @@
 title neut
 appeared 2018
 type pl
+reference https://www.reddit.com/r/ProgrammingLanguages/comments/gprche/neut_a_dependentlytyped_programming_language_with/
+
+features
+ hasLineComments true
+  ; A comment
+ hasComments true
+  ; A comment
+ hasSemanticIndentation false
+
+lineCommentToken ;
 
 example
  ; download the core library
@@ -24,12 +34,3 @@ githubRepo https://github.com/u2zv1wx/neut
  updated 2022
  description A dependently-typed programming language with compile-time malloc/free determination
  issues 3
-
-reference https://www.reddit.com/r/ProgrammingLanguages/comments/gprche/neut_a_dependentlytyped_programming_language_with/
-lineCommentToken ;
-features
- hasLineComments true
-  ; A comment
- hasComments true
-  ; A comment
- hasSemanticIndentation false

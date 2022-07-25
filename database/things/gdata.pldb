@@ -2,11 +2,10 @@ title Google Data Protcol
 appeared 2007
 type protocol
 description The GData Protocol is a REST-inspired technology for reading, writing, and modifying information on the web. It supports two primary modes of access, AtomPub and JSON.
+reference https://groups.google.com/forum/#!forum/google-help-dataapi
 
 wikipedia https://en.wikipedia.org/wiki/GData
  summary GData (Google Data Protocol) provides a simple protocol for reading and writing data on the Internet, designed by Google. GData combines common XML-based syndication formats (Atom and RSS) with a feed-publishing system based on the Atom Publishing Protocol, plus some extensions for handling queries. It relies on XML or JSON as a data format. Google provides GData client libraries for Java, JavaScript, .NET, PHP, Python, and Objective-C.
  backlinksCount 481
  pageId 4992340
  dailyPageViews 47
-
-reference https://groups.google.com/forum/#!forum/google-help-dataapi

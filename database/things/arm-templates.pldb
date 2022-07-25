@@ -1,9 +1,10 @@
 title ARM Templates
+appeared 2017
 type jsonFormat
-corporateDevelopers Microsoft
 description Azure Resource Manager templates are JavaScript Object Notation (JSON) files that define the infrastructure and configuration for your project.
 reference https://docs.microsoft.com/en-us/azure/azure-resource-manager/templates/
-appeared 2017
+corporateDevelopers Microsoft
+
 example
  "properties": {
    "publisher": "Microsoft.Azure.Extensions",

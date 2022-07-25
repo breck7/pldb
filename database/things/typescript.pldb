@@ -2,6 +2,12 @@ title TypeScript
 appeared 2012
 type pl
 creators Anders Hejlsberg
+website http://www.typescriptlang.org/
+webRepl https://www.typescriptlang.org/play/
+fileExtensions ts tsx
+corporateDevelopers Microsoft
+domainName typescriptlang.org
+ registered 2012
 
 features
  hasStaticMethods true
@@ -95,6 +101,11 @@ features
   */
  hasSemanticIndentation false
 
+lineCommentToken //
+multiLineCommentTokens /* */
+printToken console.log
+stringToken "
+
 wikipedia https://en.wikipedia.org/wiki/TypeScript
  example
   class Person {
@@ -153,11 +164,10 @@ githubLanguage TypeScript
   remaxjs remax https://github.com/remaxjs.png https://github.com/remaxjs/remax TypeScript #2b7489 878 46 600 全新的小程序开发体验
  trendingProjectsCount 26
 
-helloWorldCollection TypeScript
- // Hello world in TypeScript
- 
- alert('Hello world!');
-
+monaco typescript
+pygmentsHighlighter TypeScript
+ filename javascript.py
+ fileExtensions ts
 linguistGrammarRepo https://github.com/Microsoft/TypeScript-TmLanguage
  firstCommit 2015
  lastCommit 2018
@@ -167,66 +177,53 @@ linguistGrammarRepo https://github.com/Microsoft/TypeScript-TmLanguage
  example
   console.log("Hello, World!");
   
-
-website http://www.typescriptlang.org/
-
-tryItOnline typescript
-
-twitter typescript
-
-fileExtensions ts tsx
-fileType text
-isOpenSource true
-
-tiobe TypeScript
-
-webRepl https://www.typescriptlang.org/play/
-
-quineRelay TypeScript
-
-ubuntuPackage node-typescript
-
-rosettaCode TypeScript
-
-corporateDevelopers Microsoft
-indeedJobs typescript developer
- 2017 1542
-
-lineCommentToken //
 languageServerProtocolProject https://github.com/theia-ide/typescript-language-server
  writtenIn typescript
-jupyterKernel https://github.com/nearbydelta/itypescript
-stackOverflowSurvey
- 2021
-  users 24909
-  medianSalary 59172
-  fans 26905
-  percentageUsing 0.3
-packageRepository https://npmjs.org/
-rijuRepl https://riju.codes/typescript
- example
-  console.log("Hello, world!");
-  
-subreddit typescript
- memberCount
-  2022 87839
-goodreads
- title|year|author|goodreadsId|rating|ratings|reviews
- TypeScript for C# programmers|2013|Steve  Fenton|18884379|3.67|9|3
- TypeScript for JavaScript Programmers|2012|Steve  Fenton|19315341|3.50|4|1
-githubCopilotOptimized
-pygmentsHighlighter TypeScript
- filename javascript.py
- fileExtensions ts
+
+helloWorldCollection TypeScript
+ // Hello world in TypeScript
+ 
+ alert('Hello world!');
 leachim6 TypeScript
  filepath t/TypeScript.ts
  fileExtensions ts
  example
   console.log("Hello World");
   
-printToken console.log
-multiLineCommentTokens /* */
-domainName typescriptlang.org
- registered 2012
-monaco typescript
-stringToken "
+rosettaCode TypeScript
+quineRelay TypeScript
+
+rijuRepl https://riju.codes/typescript
+ example
+  console.log("Hello, world!");
+  
+tryItOnline typescript
+
+indeedJobs typescript developer
+ 2017 1542
+stackOverflowSurvey
+ 2021
+  users 24909
+  medianSalary 59172
+  fans 26905
+  percentageUsing 0.3
+
+subreddit typescript
+ memberCount
+  2022 87839
+
+goodreads
+ title|year|author|goodreadsId|rating|ratings|reviews
+ TypeScript for C# programmers|2013|Steve  Fenton|18884379|3.67|9|3
+ TypeScript for JavaScript Programmers|2012|Steve  Fenton|19315341|3.50|4|1
+
+tiobe TypeScript
+
+packageRepository https://npmjs.org/
+
+twitter typescript
+ubuntuPackage node-typescript
+jupyterKernel https://github.com/nearbydelta/itypescript
+fileType text
+isOpenSource true
+githubCopilotOptimized

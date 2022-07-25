@@ -1,6 +1,17 @@
 title neeilang
 appeared 2019
 type pl
+creators Neeilan Selvalingam
+reference https://www.reddit.com/r/ProgrammingLanguages/comments/erqm6s/neeilang_a_small_stronglytyped_language_oop/
+
+features
+ hasLineComments true
+  // A comment
+ hasComments true
+  // A comment
+ hasSemanticIndentation false
+
+lineCommentToken //
 
 example
  fn main() : Int {
@@ -37,13 +48,3 @@ githubRepo https://github.com/neeilan/neeilang
  description Fast, type-safe, object-oriented language by yours truly
  forks 2
  issues 0
-
-reference https://www.reddit.com/r/ProgrammingLanguages/comments/erqm6s/neeilang_a_small_stronglytyped_language_oop/
-creators Neeilan Selvalingam
-lineCommentToken //
-features
- hasLineComments true
-  // A comment
- hasComments true
-  // A comment
- hasSemanticIndentation false

@@ -2,6 +2,19 @@ title holyc
 appeared 2005
 type pl
 creators Terry A. Davis
+description HolyC is a variation of C developed by Terry A. Davis. HolyC is the official programming language for The Temple Operating System (TempleOS).
+reference https://web.archive.org/web/20170325000321/http://www.templeos.org/Wb/Doc/HolyC.html
+
+features
+ hasLineComments true
+  // A comment
+ hasComments true
+  // A comment
+ hasPrintDebugging true
+ hasSemanticIndentation false
+
+lineCommentToken //
+printToken Print
 
 example
  U0 Main()
@@ -22,15 +35,3 @@ example
      I32 i5=-0x80000000;
      Print("%X\n",i5>>1);        //Res is 0xFFFFFFFFC0000000
    }
-
-description HolyC is a variation of C developed by Terry A. Davis. HolyC is the official programming language for The Temple Operating System (TempleOS).
-reference https://web.archive.org/web/20170325000321/http://www.templeos.org/Wb/Doc/HolyC.html
-lineCommentToken //
-features
- hasLineComments true
-  // A comment
- hasComments true
-  // A comment
- hasPrintDebugging true
- hasSemanticIndentation false
-printToken Print

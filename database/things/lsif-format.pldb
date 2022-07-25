@@ -1,6 +1,19 @@
 title Language Server Index Format
 appeared 2019
 type jsonFormat
+creators Dan Adler
+website https://lsif.dev/
+standsFor Language Server Index Format
+domainName lsif.dev
+
+features
+ hasLineComments true
+  // A comment
+ hasComments true
+  // A comment
+ hasSemanticIndentation false
+
+lineCommentToken //
 
 example
  // a vertex representing the document
@@ -29,15 +42,3 @@ githubRepo https://github.com/lsif/lsif.github.io
  updated 2022
  description https://lsif.dev
  issues 4
-
-website https://lsif.dev/
-standsFor Language Server Index Format
-creators Dan Adler
-lineCommentToken //
-features
- hasLineComments true
-  // A comment
- hasComments true
-  // A comment
- hasSemanticIndentation false
-domainName lsif.dev

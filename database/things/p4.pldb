@@ -1,6 +1,22 @@
 title P4
 appeared 2014
 type pl
+website http://p4.org
+domainName p4.org
+ registered 2002
+
+features
+ hasLineComments true
+  // A comment
+ hasComments true
+  // A comment
+ hasMultiLineComments true
+  /* A comment
+  */
+ hasSemanticIndentation false
+
+lineCommentToken //
+multiLineCommentTokens /* */
 
 wikipedia https://en.wikipedia.org/wiki/P4_(programming_language)
  related c python
@@ -65,23 +81,7 @@ linguistGrammarRepo https://github.com/TakeshiTseng/atom-language-p4
   }
   
 
-website http://p4.org
-
 twitter p4org
-
 fileType text
 isOpenSource true
 centralPackageRepositoryCount 0
-lineCommentToken //
-features
- hasLineComments true
-  // A comment
- hasComments true
-  // A comment
- hasMultiLineComments true
-  /* A comment
-  */
- hasSemanticIndentation false
-multiLineCommentTokens /* */
-domainName p4.org
- registered 2002

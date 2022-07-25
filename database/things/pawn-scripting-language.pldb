@@ -2,13 +2,21 @@ title Pawn
 appeared 1998
 type pl
 
+features
+ hasPrintDebugging true
+ hasStrings true
+  "Hello world"
+
+printToken print
+stringToken "
+
 wikipedia https://en.wikipedia.org/wiki/Pawn_%28scripting_language%29
  dailyPageViews -1
 
-centralPackageRepositoryCount 0
 pygmentsHighlighter Pawn
  filename pawn.py
  fileExtensions p pwn inc
+
 leachim6 Pawn
  filepath p/Pawn.p
  fileExtensions p
@@ -19,9 +27,5 @@ leachim6 Pawn
       print("Hello World");   
   }
   
-printToken print
-features
- hasPrintDebugging true
- hasStrings true
-  "Hello world"
-stringToken "
+
+centralPackageRepositoryCount 0

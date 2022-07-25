@@ -1,6 +1,16 @@
 title WML
 appeared 2006
 type template
+website http://thewml.org/
+standsFor Website Meta Language
+domainName thewml.org
+ registered 2002
+
+features
+ hasStrings true
+  "Hello world"
+
+stringToken "
 
 wikipedia https://en.wikipedia.org/wiki/Website_Meta_Language
  related wireless-markup-language c perl unix html haml
@@ -12,14 +22,6 @@ wikipedia https://en.wikipedia.org/wiki/Website_Meta_Language
  revisionCount 32
  appeared 2006
 
-website http://thewml.org/
-standsFor Website Meta Language
-fileType text
-isOpenSource true
-
-rosettaCode WML
-
-centralPackageRepositoryCount 0
 leachim6 WML
  filepath w/WML.wml
  fileExtensions wml
@@ -30,9 +32,8 @@ leachim6 WML
       message=_"Hello World"
     [/message]
   #enddef
-domainName thewml.org
- registered 2002
-stringToken "
-features
- hasStrings true
-  "Hello world"
+rosettaCode WML
+
+fileType text
+isOpenSource true
+centralPackageRepositoryCount 0

@@ -1,13 +1,11 @@
 title Regular Expressions
 appeared 1951
 type queryLanguage
+
 features
  hasComments false
  hasLineComments false
  hasSemanticIndentation false
-subreddit regex
- memberCount
-  2022 5278
 
 wikipedia https://en.wikipedia.org/wiki/Regular_expression
  example
@@ -35,6 +33,10 @@ linguistGrammarRepo https://github.com/Alhadis/language-regexp
  example
   \b(\d*1[1-3]th|\d*0th|(?:(?!11st)\d)*1st|\d*2nd|(?:(?!13rd)\d*)3rd|\d*[4-9]th)\b
   
+
+subreddit regex
+ memberCount
+  2022 5278
 
 fileType text
 centralPackageRepositoryCount 0

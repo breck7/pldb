@@ -1,6 +1,16 @@
 title OpenSCAD
 appeared 2010
 type pl
+description OpenSCAD is a 2D/3D and solid modeling program which is based on a Functional programming language used to create models that are previewed on the screen, and rendered into 3D mesh which allows the model to be exported in a variety of 2D/3D file formats. A script in the OpenSCAD language is used to create 2D or 3D models. This script is a free format list of action statements.
+reference https://en.wikipedia.org/wiki/OpenSCAD
+
+features
+ hasComments true
+ hasLineComments true
+  // A comment
+ hasSemanticIndentation false
+
+lineCommentToken //
 
 example
   cube(5);
@@ -9,14 +19,6 @@ example
   translate([10,5]) { circle(5); square(4); }
   rotate(60) color("red") { circle(5); square(4); }
   color("blue") { translate([5,3,0]) sphere(5); rotate([45,0,45]) { cylinder(10); cube([5,6,7]); } }
-
-features
- hasComments true
- hasLineComments true
-  // A comment
- hasSemanticIndentation false
-
-description OpenSCAD is a 2D/3D and solid modeling program which is based on a Functional programming language used to create models that are previewed on the screen, and rendered into 3D mesh which allows the model to be exported in a variety of 2D/3D file formats. A script in the OpenSCAD language is used to create 2D or 3D models. This script is a free format list of action statements.
 
 wikipedia https://en.wikipedia.org/wiki/OpenSCAD
  related opengl linux freebsd ia-32 dxf
@@ -48,15 +50,13 @@ linguistGrammarRepo https://github.com/tbuser/openscad.tmbundle
   sphere( r=10 );
   
 
-reference https://en.wikipedia.org/wiki/OpenSCAD
-fileType text
-isOpenSource true
-
 rosettaCode Openscad
 
-centralPackageRepositoryCount 0
 rijuRepl https://riju.codes/openscad
  example
   echo("Hello, world!");
   
-lineCommentToken //
+
+fileType text
+isOpenSource true
+centralPackageRepositoryCount 0

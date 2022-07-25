@@ -2,12 +2,6 @@ title Thue
 appeared 2004
 type esolang
 
-rijuRepl https://riju.codes/thue
- example
-  a::=~Hello, world!
-  ::=
-  a
-
 wikipedia https://en.wikipedia.org/wiki/Thue_%28programming_language%29
  example
   1_::=1++
@@ -30,7 +24,6 @@ wikipedia https://en.wikipedia.org/wiki/Thue_%28programming_language%29
  dailyPageViews 25
  appeared 2000
 
-centralPackageRepositoryCount 0
 leachim6 Thue
  filepath t/Thue.th
  fileExtensions th
@@ -40,3 +33,11 @@ leachim6 Thue
   a
   
   
+
+rijuRepl https://riju.codes/thue
+ example
+  a::=~Hello, world!
+  ::=
+  a
+
+centralPackageRepositoryCount 0

@@ -2,6 +2,11 @@ title SdlBasic
 appeared 2002
 type pl
 
+features
+ hasPrintDebugging true
+
+printToken print
+
 wikipedia https://en.wikipedia.org/wiki/SdlBasic
  example
   Function swap( a, b )
@@ -24,6 +29,3 @@ wikipedia https://en.wikipedia.org/wiki/SdlBasic
  appeared 2002
 
 centralPackageRepositoryCount 0
-printToken print
-features
- hasPrintDebugging true

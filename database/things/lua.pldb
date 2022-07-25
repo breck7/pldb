@@ -2,6 +2,13 @@ title Lua
 appeared 1993
 type pl
 creators Roberto Ierusalimschy
+website https://www.lua.org/
+reference http://www.lua.org/manual/5.1/manual.html#2.1
+country Brazil
+domainName lua.org
+ registered 2000
+
+visualParadigm false
 
 features
  hasComments true
@@ -18,6 +25,12 @@ features
  hasPrintDebugging true
  hasSemanticIndentation false
  hasStrings true
+
+lineCommentToken --
+multiLineCommentTokens --[[ --]]
+printToken print
+stringToken "
+keywords and break do else elseif end false for function if in local nil not or repeat return then true until while
 
 wikipedia https://en.wikipedia.org/wiki/Lua_(programming_language)
  example
@@ -48,12 +61,12 @@ githubLanguage Lua
   Tencent LuaPanda https://github.com/Tencent.png https://github.com/Tencent/LuaPanda Lua #000080 329 74 48 "Lua Debugger for VS Code"
  trendingProjectsCount 10
 
-helloWorldCollection Lua
- # Hello World in Lua
- 
- print "Hello world"
- 
-
+antlr https://github.com/antlr/grammars-v4/tree/master/lua
+monaco lua
+codeMirror lua
+pygmentsHighlighter Lua
+ filename scripting.py
+ fileExtensions lua wlua
 linguistGrammarRepo https://github.com/textmate/lua.tmbundle
  firstCommit 2006
  lastCommit 2018
@@ -82,77 +95,57 @@ linguistGrammarRepo https://github.com/textmate/lua.tmbundle
   	self.num = f
   end
   
-
-website https://www.lua.org/
-reference http://www.lua.org/manual/5.1/manual.html#2.1
-
-replit lua
-
-tryItOnline lua
-
-country Brazil
-fileType text
-isOpenSource true
-
-tiobe Lua
- currentRank 30
-
-meetup lua
- memberCount 4670
- groupCount 24
-
-linkedInSkill lua
- 2018 36954
+languageServerProtocolProject https://github.com/Alloyed/lua-lsp
+ writtenIn lua
 
 projectEuler Lua
  memberCount
   2019 437
   2022 477
-
-hopl 2196
-
-subreddit lua
- memberCount
-  2017 5571
-  2022 15290
-
-quineRelay Lua
-
-ubuntuPackage lua5.3
-
-codeMirror lua
-
-rosettaCode Lua
-
-antlr https://github.com/antlr/grammars-v4/tree/master/lua
-
-lineCommentToken --
-languageServerProtocolProject https://github.com/Alloyed/lua-lsp
- writtenIn lua
-visualParadigm false
-jupyterKernel https://github.com/pakozm/IPyLua
-jupyterKernel https://github.com/neomantra/lua_ipython_kernel
-jupyterKernel https://github.com/scrapinghub/splash/tree/master/splash/kernel
-keywords and break do else elseif end false for function if in local nil not or repeat return then true until while
-packageRepository https://luarocks.org/
-rijuRepl https://riju.codes/lua
- example
-  print("Hello, world!")
-  
-multiLineCommentTokens --[[ --]]
-goodreads
- title|year|author|goodreadsId|rating|ratings|reviews
- Programming in Lua|2001|Roberto Ierusalimschy|1321894|3.97|323|21
-pygmentsHighlighter Lua
- filename scripting.py
- fileExtensions lua wlua
+helloWorldCollection Lua
+ # Hello World in Lua
+ 
+ print "Hello world"
+ 
 leachim6 Lua
  filepath l/Lua.lua
  fileExtensions lua
  example
   print("Hello World")
-printToken print
-domainName lua.org
- registered 2000
-monaco lua
-stringToken "
+rosettaCode Lua
+quineRelay Lua
+
+rijuRepl https://riju.codes/lua
+ example
+  print("Hello, world!")
+  
+replit lua
+tryItOnline lua
+
+linkedInSkill lua
+ 2018 36954
+
+subreddit lua
+ memberCount
+  2017 5571
+  2022 15290
+meetup lua
+ memberCount 4670
+ groupCount 24
+
+goodreads
+ title|year|author|goodreadsId|rating|ratings|reviews
+ Programming in Lua|2001|Roberto Ierusalimschy|1321894|3.97|323|21
+
+tiobe Lua
+ currentRank 30
+hopl 2196
+
+packageRepository https://luarocks.org/
+
+ubuntuPackage lua5.3
+jupyterKernel https://github.com/pakozm/IPyLua
+jupyterKernel https://github.com/neomantra/lua_ipython_kernel
+jupyterKernel https://github.com/scrapinghub/splash/tree/master/splash/kernel
+fileType text
+isOpenSource true

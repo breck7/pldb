@@ -2,6 +2,10 @@ title Parenscript
 appeared 2009
 type pl
 creators Manuel Odendahl and Edward Marco Baringer
+website https://common-lisp.net/project/parenscript/
+
+compilesTo javascript
+writtenIn common-lisp
 
 features
  isLisp yes
@@ -16,9 +20,6 @@ githubRepo https://github.com/vsedach/Parenscript
  description MOVED TO C-L.NET GITLAB. THIS REPOSITORY WILL BE DELETED
  issues 1
 
-website https://common-lisp.net/project/parenscript/
 fileType text
-compilesTo javascript
 isOpenSource true
-writtenIn common-lisp
 centralPackageRepositoryCount 0

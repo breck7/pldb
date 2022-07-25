@@ -2,6 +2,14 @@ title Clojure
 appeared 2007
 type pl
 creators Rich Hickey
+website https://clojure.org
+reference https://download.clojure.org/papers/clojure-hopl-iv-final.pdf
+cheatSheetUrl http://web.csulb.edu/~artg/524/clojure-cheat-sheet-a4-grey.pdf
+fileExtensions clj cljs cljc edn
+domainName clojure.org
+ registered 2005
+
+runsOnVm jvm
 
 features
  isLisp true
@@ -38,6 +46,11 @@ features
   )
  hasSemanticIndentation false
 
+lineCommentToken ;
+multiLineCommentTokens (comment )
+printToken println
+stringToken "
+
 wikipedia https://en.wikipedia.org/wiki/Clojure
  example
   ([382 318 466 963 619 22 21 273 45 596] [808 639 804 471 394 904 952 75 289 778] ...
@@ -67,14 +80,12 @@ githubLanguage Clojure
   reagent-project reagent https://github.com/reagent-project.png https://github.com/reagent-project/reagent Clojure #db5855 3544 294 48 "A minimalistic ClojureScript interface to React.js"
  trendingProjectsCount 9
 
-helloWorldCollection Clojure
- ; Hello world in Clojure
- 
- (defn hello []
-   (println "Hello world!"))
- 
- (hello)
-
+antlr https://github.com/antlr/grammars-v4/tree/master/clojure
+monaco clojure
+codeMirror clojure
+pygmentsHighlighter Clojure
+ filename jvm.py
+ fileExtensions clj cljc
 linguistGrammarRepo https://github.com/atom/language-clojure
  firstCommit 2013
  lastCommit 2018
@@ -87,65 +98,29 @@ linguistGrammarRepo https://github.com/atom/language-clojure
     n (default 1) (exclusive)."
     ([] (scm* [n] (random-real)))
     ([n] (* (rand) n)))
-
-website https://clojure.org
-reference https://download.clojure.org/papers/clojure-hopl-iv-final.pdf
-
-replit clojure
-
-tryItOnline clojure
-
-fileExtensions clj cljs cljc edn
-fileType text
-runsOnVm jvm
-isOpenSource true
-
-tiobe Clojure
- currentRank 42
-
-meetup clojure
- memberCount 163418
- groupCount 378
-
-linkedInSkill clojure
- 2018 11354
+languageServerProtocolProject https://github.com/snoe/clojure-lsp
+ writtenIn clojure
 
 projectEuler Clojure
  memberCount
   2019 1572
   2022 1655
-
-subreddit Clojure
- memberCount
-  2017 12947
-  2022 29258
-
+helloWorldCollection Clojure
+ ; Hello world in Clojure
+ 
+ (defn hello []
+   (println "Hello world!"))
+ 
+ (hello)
+leachim6 Clojure
+ filepath c/Clojure.clj
+ fileExtensions clj
+ example
+  (println "Hello World")
+  
+rosettaCode Clojure
 quineRelay Clojure
 
-ubuntuPackage clojure
-
-codeMirror clojure
-
-rosettaCode Clojure
-
-antlr https://github.com/antlr/grammars-v4/tree/master/clojure
-
-cheatSheetUrl http://web.csulb.edu/~artg/524/clojure-cheat-sheet-a4-grey.pdf
-indeedJobs clojure engineer
- 2017 355
-
-lineCommentToken ;
-languageServerProtocolProject https://github.com/snoe/clojure-lsp
- writtenIn clojure
-jupyterKernel https://github.com/roryk/clojupyter
-jupyterKernel https://github.com/achesnais/clj-jupyter
-stackOverflowSurvey
- 2021
-  users 1552
-  medianSalary 95000
-  fans 2413
-  percentageUsing 0.02
-packageRepository https://clojars.org/
 rijuRepl https://riju.codes/clojure
  example
   (println "Hello, world!")
@@ -154,6 +129,28 @@ rijuRepl https://riju.codes/clojure
  fileExtensions clj cljc edn
  website https://clojure.org/
  githubRepo https://github.com/clojure/clojure
+replit clojure
+tryItOnline clojure
+
+indeedJobs clojure engineer
+ 2017 355
+linkedInSkill clojure
+ 2018 11354
+stackOverflowSurvey
+ 2021
+  users 1552
+  medianSalary 95000
+  fans 2413
+  percentageUsing 0.02
+
+subreddit Clojure
+ memberCount
+  2017 12947
+  2022 29258
+meetup clojure
+ memberCount 163418
+ groupCount 378
+
 goodreads
  title|year|author|goodreadsId|rating|ratings|reviews
  Programming Clojure|2009|Stuart Halloway|6025753|3.82|559|45
@@ -161,18 +158,14 @@ goodreads
  Clojure Reactive Programming|2015|Leonardo Borges|44920753|3.81|21|1
  Clojure Cookbook: Recipes for Functional Programming|2014|Luke VanderHart|26177078|3.75|55|5
  Clojure High Performance Programming|2013|Shantanu Kumar|26977256|2.84|19|4
-pygmentsHighlighter Clojure
- filename jvm.py
- fileExtensions clj cljc
-leachim6 Clojure
- filepath c/Clojure.clj
- fileExtensions clj
- example
-  (println "Hello World")
-  
-printToken println
-multiLineCommentTokens (comment )
-domainName clojure.org
- registered 2005
-monaco clojure
-stringToken "
+
+tiobe Clojure
+ currentRank 42
+
+packageRepository https://clojars.org/
+
+ubuntuPackage clojure
+jupyterKernel https://github.com/roryk/clojupyter
+jupyterKernel https://github.com/achesnais/clj-jupyter
+fileType text
+isOpenSource true

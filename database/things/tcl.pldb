@@ -2,6 +2,12 @@ title Tcl
 appeared 1988
 type pl
 creators John Ousterhout
+website http://www.tcl.tk
+standsFor Tool Command Language
+fileExtensions tcl tbc
+domainName tcl.tk
+
+visualParadigm false
 
 features
  hasComments true
@@ -12,6 +18,10 @@ features
  hasSemanticIndentation false
  hasStrings true
   "Hello world"
+
+lineCommentToken #
+printToken puts
+stringToken "
 
 wikipedia https://en.wikipedia.org/wiki/Tcl
  example
@@ -60,13 +70,11 @@ githubLanguage Tcl
  fileExtensions tcl adp tm
  trendingProjectsCount 0
 
-helloWorldCollection Tool Command Language
- #!/usr/local/bin/tclsh
- # Hello World in Tcl
- 
- puts "Hello World!"
- 
-
+monaco tcl
+codeMirror tcl
+pygmentsHighlighter Tcl
+ filename tcl.py
+ fileExtensions tcl rvt
 linguistGrammarRepo https://github.com/textmate/tcl.tmbundle
  firstCommit 2005
  lastCommit 2013
@@ -152,38 +160,30 @@ linguistGrammarRepo https://github.com/textmate/tcl.tmbundle
   proc XDG::CONFIG_DIRS {{subdir ""}} {Dirs CONFIG_DIRS $subdir}
   
 
-website http://www.tcl.tk
-standsFor Tool Command Language
-
-tryItOnline tcl
-
-fileExtensions tcl tbc
-fileType text
-isOpenSource true
-
-tiobe Tcl
-
 projectEuler Tcl
  memberCount
   2019 75
   2022 71
-
+helloWorldCollection Tool Command Language
+ #!/usr/local/bin/tclsh
+ # Hello World in Tcl
+ 
+ puts "Hello World!"
+ 
+leachim6 Tcl
+ filepath t/Tcl.tcl
+ fileExtensions tcl
+ example
+  puts "Hello World"
+rosettaCode Tcl
 quineRelay Tcl
 
-ubuntuPackage tcl
-
-codeMirror tcl
-
-rosettaCode Tcl
-
-lineCommentToken #
-visualParadigm false
-jupyterKernel https://github.com/rpep/tcl_kernel
-centralPackageRepositoryCount 0
 rijuRepl https://riju.codes/tcl
  example
   puts {Hello, world!}
   
+tryItOnline tcl
+
 goodreads
  title|year|author|goodreadsId|rating|ratings|reviews
  Practical Programming in TCL & TK|1961|Brent B. Welch|1665118|3.87|55|2
@@ -196,15 +196,11 @@ goodreads
  Tcl/TK: A Developer's Guide|2003|Clif Flynt|19278649|0.0|0|0
  TCL/TK for Dummies?|1997|Tim Webster|2387039|3.50|2|0
  CGI Programming with TCL [With CDROM]|1999|David Maggiano|5169621|0.0|0|0
-pygmentsHighlighter Tcl
- filename tcl.py
- fileExtensions tcl rvt
-leachim6 Tcl
- filepath t/Tcl.tcl
- fileExtensions tcl
- example
-  puts "Hello World"
-printToken puts
-domainName tcl.tk
-monaco tcl
-stringToken "
+
+tiobe Tcl
+
+ubuntuPackage tcl
+jupyterKernel https://github.com/rpep/tcl_kernel
+fileType text
+isOpenSource true
+centralPackageRepositoryCount 0

@@ -2,6 +2,14 @@ title kumir
 appeared 2011
 type pl
 description KuMir, which is used in some Russian schools for education. KuMir" is a game of words, literally “Kumir" means “Idol", but developers of this language say that this is abbreviature: “K" - Set, “u" - of Educational, “Mir" - WORLDs (КуМир - Комплект Учебных МИРов).
+website https://www.niisi.ru/kumir/
+country Russia
+
+features
+ hasStrings true
+  "Hello world"
+
+stringToken "
 
 githubRepo https://github.com/a-a-maly/kumir2
  firstCommit 2011
@@ -13,8 +21,6 @@ githubRepo https://github.com/a-a-maly/kumir2
  description New home for Kumir2.
  issues 23
 
-website https://www.niisi.ru/kumir/
-country Russia
 leachim6 Kumir
  filepath k/Kumir.kum
  fileExtensions kum
@@ -24,7 +30,3 @@ leachim6 Kumir
       вывод "Hello World"
   кон
   
-stringToken "
-features
- hasStrings true
-  "Hello world"

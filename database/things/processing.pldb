@@ -1,6 +1,10 @@
 title Processing
 appeared 2001
 type pl
+website http://processing.org
+fileExtensions pde
+domainName processing.org
+ registered 2003
 
 features
  hasComments true
@@ -12,6 +16,10 @@ features
  hasSemanticIndentation false
  hasStrings true
   "Hello world"
+
+lineCommentToken //
+multiLineCommentTokens /* */
+stringToken "
 
 wikipedia https://en.wikipedia.org/wiki/Processing_(programming_language)
  example
@@ -74,11 +82,6 @@ githubLanguage Processing
   greerviau SnakeAI https://github.com/greerviau.png https://github.com/greerviau/SnakeAI Processing #0096D8 578 133 77 "Train a Neural Network to play Snake using a Genetic Algorithm"
  trendingProjectsCount 2
 
-helloWorldCollection Processing
- // Hello world in Processing
- 
- println( "Hello world!" );
-
 linguistGrammarRepo https://github.com/textmate/processing.tmbundle
  firstCommit 2006
  lastCommit 2015
@@ -124,25 +127,14 @@ linguistGrammarRepo https://github.com/textmate/processing.tmbundle
   
   
 
-website http://processing.org
-
-twitter processingorg
-
-fileExtensions pde
-fileType text
-wordRank 1486
-
-tiobe Processing
-
 projectEuler Processing
  memberCount
   2019 43
   2022 53
-
-rosettaCode Processing
-
-centralPackageRepositoryCount 0
-lineCommentToken //
+helloWorldCollection Processing
+ // Hello world in Processing
+ 
+ println( "Hello world!" );
 leachim6 Processing
  filepath p/Processing.pde
  fileExtensions pde
@@ -153,7 +145,11 @@ leachim6 Processing
   fill(255);
   text("Hello World", width / 2, height / 2);
   
-multiLineCommentTokens /* */
-domainName processing.org
- registered 2003
-stringToken "
+rosettaCode Processing
+
+tiobe Processing
+
+twitter processingorg
+fileType text
+wordRank 1486
+centralPackageRepositoryCount 0

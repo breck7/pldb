@@ -1,6 +1,7 @@
 title OWL
 appeared 2004
 type xmlFormat
+standsFor One World Language
 
 features
  hasLineComments false
@@ -79,13 +80,12 @@ linguistGrammarRepo https://github.com/textmate/xml.tmbundle
                   <owl:someValuesFrom rdf:resource="#TomatoTopping"/>
               </owl:Re
 
-standsFor One World Language
-fileType text
-
-hopl 4934
-
-centralPackageRepositoryCount 0
 goodreads
  title|year|author|goodreadsId|rating|ratings|reviews
  Owl: Representing Information Using the Web Ontology Language|2004|Lee W. Lacy|1653014|3.11|9|0
  OWL : Representing Information Using the Web Ontology Language|2005|Lee W. Lacy|27295675|4.00|1|0
+
+hopl 4934
+
+fileType text
+centralPackageRepositoryCount 0

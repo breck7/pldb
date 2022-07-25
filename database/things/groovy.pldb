@@ -2,6 +2,12 @@ title Groovy
 appeared 2003
 type pl
 creators James Strachan
+website http://groovy-lang.org/
+fileExtensions groovy
+domainName groovy-lang.org
+ registered 2011
+
+runsOnVm jvm
 
 features
  hasOperatorOverloading true
@@ -16,6 +22,12 @@ features
  hasSemanticIndentation false
  hasStrings true
   "Hello world"
+
+lineCommentToken //
+multiLineCommentTokens /* */
+printToken println
+stringToken "
+keywords as assert break case catch class const continue def default do else enum extends false finally for goto if implements import in instanceof interface new null package return super switch this throw throws trait true try while
 
 wikipedia https://en.wikipedia.org/wiki/Groovy_(programming_language)
  example
@@ -40,12 +52,10 @@ githubLanguage Groovy
   ben-manes gradle-versions-plugin https://github.com/ben-manes.png https://github.com/ben-manes/gradle-versions-plugin Groovy #e69f56 2012 111 52 "Gradle plugin to discover dependency updates"
  trendingProjectsCount 3
 
-helloWorldCollection Groovy
- // Hello World in Groovy
- 
- println "Hello World"
- 
-
+codeMirror groovy
+pygmentsHighlighter Groovy
+ filename jvm.py
+ fileExtensions groovy gradle
 linguistGrammarRepo https://github.com/textmate/groovy.tmbundle
  firstCommit 2007
  lastCommit 2014
@@ -56,73 +66,57 @@ linguistGrammarRepo https://github.com/textmate/groovy.tmbundle
   #!/usr/bin/env groovy
   println "Groovy!"
   
-
-website http://groovy-lang.org/
-
-tryItOnline groovy
-
-twitter apachegroovy
-
-fileExtensions groovy
-fileType text
-runsOnVm jvm
-isOpenSource true
-
-tiobe Groovy
- currentRank 29
-
-meetup groovy-programming-language
- memberCount 24522
- groupCount 49
+languageServerProtocolProject https://github.com/palantir/groovy-language-server/
+ writtenIn java
 
 projectEuler Groovy
  memberCount
   2019 114
   2022 121
-
-subreddit groovy
- memberCount
-  2017 1784
-  2022 2900
-
-quineRelay Groovy
-
-ubuntuPackage groovy
-
-codeMirror groovy
-
-rosettaCode Groovy
-
-languageServerProtocolProject https://github.com/palantir/groovy-language-server/
- writtenIn java
-
-lineCommentToken //
-keywords as assert break case catch class const continue def default do else enum extends false finally for goto if implements import in instanceof interface new null package return super switch this throw throws trait true try while
-stackOverflowSurvey
- 2021
-  users 2479
-  medianSalary 75002
-  fans 1177
-  percentageUsing 0.03
-centralPackageRepositoryCount 0
-rijuRepl https://riju.codes/groovy
- example
-  print "Hello, world!";
-  
-goodreads
- title|year|author|goodreadsId|rating|ratings|reviews
- Programming Groovy|2008|Venkat Subramaniam|2695005|3.81|121|13
-pygmentsHighlighter Groovy
- filename jvm.py
- fileExtensions groovy gradle
+helloWorldCollection Groovy
+ // Hello World in Groovy
+ 
+ println "Hello World"
+ 
 leachim6 Groovy
  filepath g/Groovy.groovy
  fileExtensions groovy
  example
   println "Hello World"
   
-printToken println
-multiLineCommentTokens /* */
-domainName groovy-lang.org
- registered 2011
-stringToken "
+rosettaCode Groovy
+quineRelay Groovy
+
+rijuRepl https://riju.codes/groovy
+ example
+  print "Hello, world!";
+  
+tryItOnline groovy
+
+stackOverflowSurvey
+ 2021
+  users 2479
+  medianSalary 75002
+  fans 1177
+  percentageUsing 0.03
+
+subreddit groovy
+ memberCount
+  2017 1784
+  2022 2900
+meetup groovy-programming-language
+ memberCount 24522
+ groupCount 49
+
+goodreads
+ title|year|author|goodreadsId|rating|ratings|reviews
+ Programming Groovy|2008|Venkat Subramaniam|2695005|3.81|121|13
+
+tiobe Groovy
+ currentRank 29
+
+twitter apachegroovy
+ubuntuPackage groovy
+fileType text
+isOpenSource true
+centralPackageRepositoryCount 0

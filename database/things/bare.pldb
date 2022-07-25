@@ -1,10 +1,11 @@
 title BARE
+appeared 2020
 type idl
-website https://baremessages.org
-pygmentsHighlighter BARE
- filename bare.py
- fileExtensions bare
 description BARE is a simple binary representation for structured application data.
+website https://baremessages.org
+domainName baremessages.org
+ registered 2020
+
 example
  type PublicKey data[128]
  type Time str # ISO 8601
@@ -45,6 +46,7 @@ example
  type TerminatedEmployee void
  
  type Person union {Customer | Employee | TerminatedEmployee}
-domainName baremessages.org
- registered 2020
-appeared 2020
+
+pygmentsHighlighter BARE
+ filename bare.py
+ fileExtensions bare

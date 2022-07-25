@@ -1,6 +1,31 @@
 title X10
 appeared 2004
 type pl
+creators Kemal Ebcioğlu and Saravanan Arumugam and Vijay Saraswat and Vivek Sarkar
+website http://x10-lang.org
+fileExtensions x10
+country United States
+corporateDevelopers IBM
+domainName x10-lang.org
+ registered 2008
+
+runsOnVm jvm
+
+features
+ hasPrintDebugging true
+ hasMultiLineComments true
+  /* A comment
+  */
+ hasComments true
+  /* A comment
+  */
+ hasSemanticIndentation false
+ hasStrings true
+  "Hello world"
+
+multiLineCommentTokens /* */
+printToken Console.OUT.println
+stringToken "
 
 wikipedia https://en.wikipedia.org/wiki/X10_(programming_language)
  related linux java chapel fortress unified-parallel-c
@@ -17,6 +42,9 @@ githubLanguage X10
  fileExtensions x10
  trendingProjectsCount 0
 
+pygmentsHighlighter X10
+ filename x10.py
+ fileExtensions x10
 linguistGrammarRepo https://github.com/x10-lang/x10-highlighting
  firstCommit 2015
  lastCommit 2015
@@ -49,25 +77,6 @@ linguistGrammarRepo https://github.com/x10-lang/x10-highlighting
   
   
 
-website http://x10-lang.org
-country United States
-fileExtensions x10
-fileType text
-runsOnVm jvm
-isOpenSource true
-
-tiobe X10
-
-hopl 8172
-
-rosettaCode X10
-
-corporateDevelopers IBM
-centralPackageRepositoryCount 0
-creators Kemal Ebcioğlu and Saravanan Arumugam and Vijay Saraswat and Vivek Sarkar
-pygmentsHighlighter X10
- filename x10.py
- fileExtensions x10
 leachim6 X10
  filepath x/X10.x10
  fileExtensions x10
@@ -93,19 +102,11 @@ leachim6 X10
   
   
   
-printToken Console.OUT.println
-features
- hasPrintDebugging true
- hasMultiLineComments true
-  /* A comment
-  */
- hasComments true
-  /* A comment
-  */
- hasSemanticIndentation false
- hasStrings true
-  "Hello world"
-multiLineCommentTokens /* */
-domainName x10-lang.org
- registered 2008
-stringToken "
+rosettaCode X10
+
+tiobe X10
+hopl 8172
+
+fileType text
+isOpenSource true
+centralPackageRepositoryCount 0

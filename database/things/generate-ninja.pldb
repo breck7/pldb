@@ -2,10 +2,6 @@ title GN
 appeared 2015
 type application
 
-githubLanguage GN
- fileExtensions gn gni
- trendingProjectsCount 0
-
 githubRepo https://github.com/o-lim/generate-ninja
  firstCommit 2015
  stars 74
@@ -15,6 +11,10 @@ githubRepo https://github.com/o-lim/generate-ninja
  updated 2022
  description GN, a meta-build system that generates Ninja build files
  issues 0
+
+githubLanguage GN
+ fileExtensions gn gni
+ trendingProjectsCount 0
 
 linguistGrammarRepo https://github.com/devoncarew/language-gn
  firstCommit 2015

@@ -2,6 +2,12 @@ title Ubercode
 appeared 2005
 type pl
 
+features
+ hasStrings true
+  "Hello world"
+
+stringToken "
+
 wikipedia https://en.wikipedia.org/wiki/Ubercode
  example
   Ubercode 1 class PrePost
@@ -27,7 +33,6 @@ wikipedia https://en.wikipedia.org/wiki/Ubercode
  dailyPageViews 9
  appeared 2005
 
-centralPackageRepositoryCount 0
 leachim6 Ubercode
  filepath u/Ubercode.cls
  fileExtensions cls
@@ -41,7 +46,5 @@ leachim6 Ubercode
   
     end class
   
-stringToken "
-features
- hasStrings true
-  "Hello world"
+
+centralPackageRepositoryCount 0

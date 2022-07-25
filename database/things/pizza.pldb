@@ -1,6 +1,16 @@
 title Pizza
 appeared 2001
 type pl
+website pizzacompiler.sourceforge.net
+country United Kingdom
+
+features
+ hasPrintDebugging true
+ hasStrings true
+  "Hello world"
+
+printToken System.out.println
+stringToken "
 
 wikipedia https://en.wikipedia.org/wiki/Pizza_(programming_language)
  example
@@ -23,14 +33,6 @@ wikipedia https://en.wikipedia.org/wiki/Pizza_(programming_language)
  dailyPageViews 44
  appeared 2001
 
-website pizzacompiler.sourceforge.net
-country United Kingdom
-fileType text
-wordRank 4629
-
-hopl 2376
-
-centralPackageRepositoryCount 0
 leachim6 Pizza
  filepath p/Pizza.pizza
  fileExtensions pizza
@@ -40,9 +42,9 @@ leachim6 Pizza
       System.out.println("Hello World");
     }
   }
-printToken System.out.println
-features
- hasPrintDebugging true
- hasStrings true
-  "Hello world"
-stringToken "
+
+hopl 2376
+
+fileType text
+wordRank 4629
+centralPackageRepositoryCount 0

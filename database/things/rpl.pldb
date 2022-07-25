@@ -1,6 +1,14 @@
 title RPL
 appeared 1984
 type pl
+standsFor Reverse Polish Lisp
+corporateDevelopers Hewlett-Packard
+
+features
+ hasStrings true
+  "Hello world"
+
+stringToken "
 
 wikipedia https://en.wikipedia.org/wiki/RPL_(programming_language)
  example
@@ -20,6 +28,10 @@ wikipedia https://en.wikipedia.org/wiki/RPL_(programming_language)
  revisionCount 164
  appeared 1984
 
+projectEuler RPL
+ memberCount
+  2019 11
+  2022 11
 helloWorldCollection Reverse Polish Lisp
  Hello World in RPL for the HP-28, HP-48, HP-49 and HP-50 series pocket calculators. No comments possible.
  
@@ -29,23 +41,11 @@ helloWorldCollection Reverse Polish Lisp
      60 FREEZE
  >>
  
-
-standsFor Reverse Polish Lisp
-fileType text
-
-projectEuler RPL
- memberCount
-  2019 11
-  2022 11
-
 rosettaCode RPL
 
-centralPackageRepositoryCount 0
 goodreads
  title|year|author|goodreadsId|rating|ratings|reviews
  An Introduction to Hp48 System Rpl & Assembly Language Programming|1995|James Donnelly|20605176|0.0|0|0
-corporateDevelopers Hewlett-Packard
-stringToken "
-features
- hasStrings true
-  "Hello world"
+
+fileType text
+centralPackageRepositoryCount 0

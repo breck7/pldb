@@ -1,6 +1,7 @@
 title General-purpose macro processor
 appeared 1995
 type grammarLanguage
+website http://gema.sourceforge.net/new/index.shtml
 
 example
  gema -match -p 'Title\:*\n=$0@end' foo
@@ -11,5 +12,3 @@ wikipedia https://en.wikipedia.org/wiki/General-purpose_macro_processor
  pageId 3062858
  dailyPageViews 42
  appeared 1960
-
-website http://gema.sourceforge.net/new/index.shtml

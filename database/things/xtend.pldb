@@ -1,6 +1,12 @@
 title Xtend
 appeared 2011
 type pl
+creators Sven Efftinge and Sebastian Zarnekow
+website http://www.xtend-lang.org
+domainName xtend-lang.org
+ registered 2011
+
+runsOnVm jvm
 
 features
  hasStaticTyping true
@@ -12,6 +18,8 @@ features
   /* A comment
   */
  hasSemanticIndentation false
+
+multiLineCommentTokens /* */
 
 wikipedia https://en.wikipedia.org/wiki/Xtend
  example
@@ -31,6 +39,9 @@ githubLanguage Xtend
  fileExtensions xtend
  trendingProjectsCount 0
 
+pygmentsHighlighter Xtend
+ filename jvm.py
+ fileExtensions xtend
 linguistGrammarRepo https://github.com/staltz/SublimeXtend
  firstCommit 2014
  lastCommit 2014
@@ -100,21 +111,9 @@ linguistGrammarRepo https://github.com/staltz/SublimeXtend
   }
   
 
-website http://www.xtend-lang.org
-
-twitter xtendlang
-
-fileType text
-runsOnVm jvm
-isOpenSource true
-
 tiobe Xtend
 
+twitter xtendlang
+fileType text
+isOpenSource true
 centralPackageRepositoryCount 0
-creators Sven Efftinge and Sebastian Zarnekow
-pygmentsHighlighter Xtend
- filename jvm.py
- fileExtensions xtend
-multiLineCommentTokens /* */
-domainName xtend-lang.org
- registered 2011

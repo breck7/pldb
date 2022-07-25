@@ -1,6 +1,9 @@
 title Typed Lua
 appeared 2019
 type pl
+reference https://fosdem.org/2020/schedule/event/minimalistictypedlua/
+
+related lua
 
 githubRepo https://github.com/hishamhm/tl
  firstCommit 2019
@@ -11,6 +14,3 @@ githubRepo https://github.com/hishamhm/tl
  updated 2022
  issues 76
  description The compiler for Teal, a typed dialect of Lua
-
-reference https://fosdem.org/2020/schedule/event/minimalistictypedlua/
-related lua

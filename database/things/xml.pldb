@@ -1,6 +1,7 @@
 title XML
 appeared 1996
 type dataNotation
+standsFor Extensible Markup Language
 
 features
  canWriteToDisk false
@@ -12,6 +13,7 @@ features
  hasSemanticIndentation false
 
 multiLineCommentTokens <!-- -->
+
 wikipedia https://en.wikipedia.org/wiki/XML
  example
   <?xml version="1.0" encoding="ISO-8859-1" ?>
@@ -29,6 +31,12 @@ githubLanguage XML
  fileExtensions xml adml admx ant axml builds ccproj ccxml clixml cproject cscfg csdef csl csproj ct depproj dita ditamap ditaval dllconfig dotsettings filters fsproj fxml glade gml gmx grxml iml ivy jelly jsproj kml launch mdpolicy mjml mm mod mxml natvis ncl ndproj nproj nuspec odd osm pkgproj plist pluginspec proj props ps1xml psc1 pt rdf resx rss sch scxml sfproj shproj srdf storyboard stTheme sublime-snippet targets tmCommand tml tmLanguage tmPreferences tmSnippet tmTheme ts tsx ui urdf ux vbproj vcxproj vsixmanifest vssettings vstemplate vxml wixproj workflow wsdl wsf wxi wxl wxs x3d xacro xaml xib xlf xliff xmi xmldist xproj xsd xspec xul zcml
  trendingProjectsCount 0
 
+antlr https://github.com/antlr/grammars-v4/tree/master/xml
+monaco xml
+codeMirror xml
+pygmentsHighlighter XML
+ filename html.py
+ fileExtensions xml xsl rss xslt xsd wsdl wsf
 linguistGrammarRepo https://github.com/textmate/xml.tmbundle
  firstCommit 2004
  lastCommit 2018
@@ -41,31 +49,23 @@ linguistGrammarRepo https://github.com/textmate/xml.tmbundle
     <gml:pos>52.56 13.29</gml:pos>
   </gml:Point>
   
-
-standsFor Extensible Markup Language
-fileType text
-wordRank 1434
-linkedInSkill xml
- 2018 1902877
-
-hopl 2626
-
-codeMirror xml
-
-antlr https://github.com/antlr/grammars-v4/tree/master/xml
-
 languageServerProtocolProject https://github.com/microclimate-devops/xml-language-server
  writtenIn java
 languageServerProtocolProject https://github.com/angelozerr/lsp4xml/tree/master/org.eclipse.lsp4xml
  writtenIn java
-centralPackageRepositoryCount 0
-pygmentsHighlighter XML
- filename html.py
- fileExtensions xml xsl rss xslt xsd wsdl wsf
+
 leachim6 XML
  filepath x/XML.xml
  fileExtensions xml
  example
   <?xml version="1.0" encoding="UTF-8"?>
   <text><![CDATA[Hello World]]></text>
-monaco xml
+
+linkedInSkill xml
+ 2018 1902877
+
+hopl 2626
+
+fileType text
+wordRank 1434
+centralPackageRepositoryCount 0

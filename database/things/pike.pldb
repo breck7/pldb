@@ -2,6 +2,9 @@ title Pike
 appeared 1994
 type pl
 creators Fredrik Hübinette
+website https://pike.lysator.liu.se/
+country Sweden
+domainName pike.lysator.liu.se
 
 features
  hasComments true
@@ -9,6 +12,9 @@ features
   // A comment
  hasPrintDebugging true
  hasSemanticIndentation false
+
+lineCommentToken //
+printToken write
 
 wikipedia https://en.wikipedia.org/wiki/Pike_(programming_language)
  example
@@ -28,14 +34,9 @@ githubLanguage Pike
  fileExtensions pike pmod
  trendingProjectsCount 0
 
-helloWorldCollection Pike
- // Hello world in Pike (pike.roxen.com)
- 
- int main(){
-         write("Hello World!\n");
- }
- 
-
+pygmentsHighlighter Pike
+ filename c_like.py
+ fileExtensions pike pmod
 linguistGrammarRepo https://github.com/hww3/pike-textmate
  firstCommit 2014
  lastCommit 2014
@@ -51,43 +52,17 @@ linguistGrammarRepo https://github.com/hww3/pike-textmate
   
   
 
-website https://pike.lysator.liu.se/
-
-tryItOnline pike
-
-country Sweden
-fileType text
-wordRank 9961
-isOpenSource true
-
-tiobe Pike
-
 projectEuler Pike
  memberCount
   2019 3
   2022 6
-
-hopl 2369
-
-quineRelay Pike
-
-ubuntuPackage pike8.0
-
-rosettaCode Pike
-lineCommentToken //
-jupyterKernel https://github.com/kevinior/jupyter-pike-kernel
-centralPackageRepositoryCount 0
-rijuRepl https://riju.codes/pike
- example
-  int main()
-  {
-    write("Hello, world!\n");
-    return 0;
-  }
-  
-pygmentsHighlighter Pike
- filename c_like.py
- fileExtensions pike pmod
+helloWorldCollection Pike
+ // Hello world in Pike (pike.roxen.com)
+ 
+ int main(){
+         write("Hello World!\n");
+ }
+ 
 leachim6 Pike
  filepath p/Pike.pike
  fileExtensions pike
@@ -97,5 +72,25 @@ leachim6 Pike
       return 0;
   }
   
-printToken write
-domainName pike.lysator.liu.se
+rosettaCode Pike
+quineRelay Pike
+
+rijuRepl https://riju.codes/pike
+ example
+  int main()
+  {
+    write("Hello, world!\n");
+    return 0;
+  }
+  
+tryItOnline pike
+
+tiobe Pike
+hopl 2369
+
+ubuntuPackage pike8.0
+jupyterKernel https://github.com/kevinior/jupyter-pike-kernel
+fileType text
+wordRank 9961
+isOpenSource true
+centralPackageRepositoryCount 0

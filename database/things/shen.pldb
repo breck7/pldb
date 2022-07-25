@@ -1,16 +1,25 @@
 title Shen
 appeared 2011
 type pl
+website http://shenlanguage.org/
+domainName shenlanguage.org
+ registered 2011
+
+features
+ hasPrintDebugging true
+ hasStrings true
+  "Hello world"
+
+printToken pr
+stringToken "
 
 githubLanguage Shen
  fileExtensions shen
  trendingProjectsCount 0
 
-helloWorldCollection Shen
- \\ Hello world in Shen
- 
- (0-) (pr "hello world")
-
+pygmentsHighlighter Shen
+ filename lisp.py
+ fileExtensions shen
 linguistGrammarRepo https://github.com/rkoeninger/sublime-shen
  firstCommit 2017
  lastCommit 2018
@@ -58,26 +67,17 @@ linguistGrammarRepo https://github.com/rkoeninger/sublime-shen
     (let CharList (explode JSONString)
          CharList))
 
-website http://shenlanguage.org/
-fileType text
-
-rosettaCode Shen
-
-centralPackageRepositoryCount 0
-pygmentsHighlighter Shen
- filename lisp.py
- fileExtensions shen
+helloWorldCollection Shen
+ \\ Hello world in Shen
+ 
+ (0-) (pr "hello world")
 leachim6 Shen
  filepath s/Shen.shen
  fileExtensions shen
  example
   (pr "Hello World")
   
-printToken pr
-features
- hasPrintDebugging true
- hasStrings true
-  "Hello world"
-domainName shenlanguage.org
- registered 2011
-stringToken "
+rosettaCode Shen
+
+fileType text
+centralPackageRepositoryCount 0

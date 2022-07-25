@@ -1,6 +1,16 @@
 title Rc
 appeared 1989
 type pl
+creators Tom Duff
+
+features
+ hasLineComments true
+  # A comment
+ hasComments true
+  # A comment
+ hasSemanticIndentation false
+
+lineCommentToken #
 
 wikipedia https://en.wikipedia.org/wiki/Rc
  example
@@ -16,17 +26,10 @@ wikipedia https://en.wikipedia.org/wiki/Rc
  dailyPageViews 65
  appeared 1989
 
-wordRank 4637
-centralPackageRepositoryCount 0
 rijuRepl https://riju.codes/rc
  example
   echo Hello, world!
   
-creators Tom Duff
-lineCommentToken #
-features
- hasLineComments true
-  # A comment
- hasComments true
-  # A comment
- hasSemanticIndentation false
+
+wordRank 4637
+centralPackageRepositoryCount 0

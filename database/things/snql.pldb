@@ -1,6 +1,7 @@
 title SNQL: A Social Network Query and Transformation Language
 appeared 2011
 type queryLanguage
+reference http://ceur-ws.org/Vol-749/paper18.pdf
 
 example
  CONSTRUCT CP1
@@ -10,5 +11,4 @@ example
   AND (TC(A1, A5, EP3) WITH L1=’John’)
  FROM FriendshipNetwork
 
-reference http://ceur-ws.org/Vol-749/paper18.pdf
 centralPackageRepositoryCount 0

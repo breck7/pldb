@@ -1,5 +1,32 @@
 title Claro
+appeared 2021
 type pl
+creators Jason Steving
+website https://clarolang.com/
+domainName clarolang.com
+ registered 2020
+
+features
+ hasLineComments true
+  # A comment
+ hasComments true
+  # A comment
+ hasPrintDebugging true
+ hasSemanticIndentation false
+
+lineCommentToken #
+printToken print
+
+githubRepo https://github.com/JasonSteving99/claro-lang
+ firstCommit 2020
+ stars 3
+ forks 1
+ subscribers 2
+ created 2020
+ updated 2022
+ description Claro Lang
+ issues 18
+
 rijuRepl https://riju.codes/claro
  example
   # Thanks for trying out Claro during its early development stages!
@@ -12,26 +39,3 @@ rijuRepl https://riju.codes/claro
  fileExtensions claro
  website https://clarolang.com/
  githubRepo https://github.com/JasonSteving99/claro-lang
-appeared 2021
-website https://clarolang.com/
-githubRepo https://github.com/JasonSteving99/claro-lang
- firstCommit 2020
- stars 3
- forks 1
- subscribers 2
- created 2020
- updated 2022
- description Claro Lang
- issues 18
-creators Jason Steving
-lineCommentToken #
-features
- hasLineComments true
-  # A comment
- hasComments true
-  # A comment
- hasPrintDebugging true
- hasSemanticIndentation false
-printToken print
-domainName clarolang.com
- registered 2020

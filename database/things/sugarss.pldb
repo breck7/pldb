@@ -1,10 +1,16 @@
 title SugarSS
 appeared 2016
 type textMarkup
+creators Andrey Sitnik
 
-githubLanguage SugarSS
- fileExtensions sss
- trendingProjectsCount 0
+features
+ hasLineComments true
+  // A comment
+ hasComments true
+  // A comment
+ hasSemanticIndentation false
+
+lineCommentToken //
 
 githubRepo https://github.com/postcss/sugarss
  firstCommit 2016
@@ -15,6 +21,10 @@ githubRepo https://github.com/postcss/sugarss
  updated 2022
  description Indent-based CSS syntax for PostCSS
  issues 1
+
+githubLanguage SugarSS
+ fileExtensions sss
+ trendingProjectsCount 0
 
 linguistGrammarRepo https://github.com/hudochenkov/Syntax-highlighting-for-PostCSS
  firstCommit 2013
@@ -37,11 +47,3 @@ linguistGrammarRepo https://github.com/hudochenkov/Syntax-highlighting-for-PostC
 fileType text
 isOpenSource true
 centralPackageRepositoryCount 0
-creators Andrey Sitnik
-lineCommentToken //
-features
- hasLineComments true
-  // A comment
- hasComments true
-  // A comment
- hasSemanticIndentation false

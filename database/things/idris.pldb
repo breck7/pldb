@@ -2,6 +2,12 @@ title Idris
 appeared 2014
 type pl
 creators Edwin Brady
+website http://idris-lang.org
+fileExtensions idr lidr
+domainName idris-lang.org
+ registered 2010
+
+writtenIn haskell
 
 features
  hasDependentTypes true
@@ -13,6 +19,20 @@ features
  hasSemanticIndentation false
  hasStrings true
   "Hello world"
+
+lineCommentToken --
+printToken putStrLn
+stringToken "
+
+githubRepo https://github.com/idris-lang/Idris-dev
+ stars 3342
+ forks 663
+ subscribers 123
+ created 2011
+ updated 2022
+ firstCommit 2011
+ description A Dependently Typed Functional Programming Language
+ issues 710
 
 wikipedia https://en.wikipedia.org/wiki/Idris_(programming_language)
  example
@@ -34,22 +54,9 @@ githubLanguage Idris
  fileExtensions idr lidr
  trendingProjectsCount 0
 
-githubRepo https://github.com/idris-lang/Idris-dev
- stars 3342
- forks 663
- subscribers 123
- created 2011
- updated 2022
- firstCommit 2011
- description A Dependently Typed Functional Programming Language
- issues 710
-
-helloWorldCollection Idris
- Hello world in Idris
- 
- > main : IO ()
- > main = putStrLn "Hello, World!"
-
+pygmentsHighlighter Idris
+ filename haskell.py
+ fileExtensions idr
 linguistGrammarRepo https://github.com/idris-hackers/idris-sublime.git
  firstCommit 2013
  lastCommit 2017
@@ -101,39 +108,15 @@ linguistGrammarRepo https://github.com/idris-hackers/idris-sublime.git
                 'A', 'B', 'C', 'D', 'E', 'F']
   
 
-website http://idris-lang.org
-
-tryItOnline idris
-
-fileExtensions idr lidr
-fileType text
-isOpenSource true
-
-tiobe Idris
-
 projectEuler Idris
  memberCount
   2019 10
   2022 11
-
-rosettaCode Idris
-
-writtenIn haskell
-indeedJobs idris developer
- 2017 1
-
-lineCommentToken --
-centralPackageRepositoryCount 0
-rijuRepl https://riju.codes/idris
- example
-  module Main
-  
-  main : IO ()
-  main = putStrLn "Hello, world!"
-  
-pygmentsHighlighter Idris
- filename haskell.py
- fileExtensions idr
+helloWorldCollection Idris
+ Hello world in Idris
+ 
+ > main : IO ()
+ > main = putStrLn "Hello, World!"
 leachim6 Idris
  filepath i/Idris.idr
  fileExtensions idr
@@ -143,8 +126,23 @@ leachim6 Idris
   main : IO ()
   main = putStrLn "Hello World"
   
-printToken putStrLn
-domainName idris-lang.org
- registered 2010
-stringToken "
+rosettaCode Idris
+
+rijuRepl https://riju.codes/idris
+ example
+  module Main
+  
+  main : IO ()
+  main = putStrLn "Hello, world!"
+  
+tryItOnline idris
+
+indeedJobs idris developer
+ 2017 1
+
+tiobe Idris
+
 twitter idrislang
+fileType text
+isOpenSource true
+centralPackageRepositoryCount 0

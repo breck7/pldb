@@ -1,6 +1,9 @@
 title UPC
 appeared 2003
 type pl
+website http://upc.lbl.gov/
+corporateDevelopers UPC Consortium
+domainName upc.lbl.gov
 
 wikipedia https://en.wikipedia.org/wiki/Unified_Parallel_C
  related c split-c cilk chapel x10
@@ -22,11 +25,7 @@ linguistGrammarRepo https://github.com/textmate/c.tmbundle
  committerCount 23
  commitCount 359
 
-website http://upc.lbl.gov/
-fileType text
-
 hopl 6133
 
+fileType text
 centralPackageRepositoryCount 0
-corporateDevelopers UPC Consortium
-domainName upc.lbl.gov

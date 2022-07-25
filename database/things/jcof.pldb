@@ -1,6 +1,18 @@
 title JCOF
-standsFor JSON-like Compact Object Format
+appeared 2022
 type dataNotation
+creators Martin Dørum
+reference https://news.ycombinator.com/item?id=32109406
+standsFor JSON-like Compact Object Format
+
+features
+ hasComments false
+ hasSemanticIndentation false
+
+example
+ Programmer;"age""first-name""full-time""occupation";
+ {"people"[(0,iw"Bob"b"Plumber")(0,is"Alice"b,s0)(0,iA"Bernard"n,n)(0,iV"El"B,s0)]}
+
 githubRepo https://github.com/mortie/jcof
  firstCommit 2022
  stars 12
@@ -10,12 +22,3 @@ githubRepo https://github.com/mortie/jcof
  updated 2022
  description An efficient drop-in replacement for JSON.
  issues 0
-appeared 2022
-features
- hasComments false
- hasSemanticIndentation false
-example
- Programmer;"age""first-name""full-time""occupation";
- {"people"[(0,iw"Bob"b"Plumber")(0,is"Alice"b,s0)(0,iA"Bernard"n,n)(0,iV"El"B,s0)]}
-reference https://news.ycombinator.com/item?id=32109406
-creators Martin Dørum

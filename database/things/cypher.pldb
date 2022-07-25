@@ -1,8 +1,21 @@
 title Cypher Query Language
 appeared 2011
 type queryLanguage
-
 description Cypher is a declarative, SQL-inspired language for describing patterns in graphs visually using an ascii-art syntax. It allows us to state what we want to select, insert, update or delete from our graph data without requiring us to describe exactly how to do it. A language with neo4j.
+website https://neo4j.com/developer/cypher-query-language/
+
+features
+ hasLineComments true
+  // A comment
+ hasMultiLineComments true
+  /* A comment
+  */
+ hasComments true
+  // A comment
+
+lineCommentToken //
+multiLineCommentTokens /* */
+keywords ALL AND AS ASC ASCENDING BY CALL CASE CONTAINS CREATE DELETE DESC DESCENDING DETACH DISTINCT ELSE END ENDS EXISTS IN IS LIMIT MANDATORY MATCH MERGE NOT ON ON OPTIONAL OR ORDER REMOVE RETURN SET SKIP STARTS THEN UNION UNWIND WHEN WHERE WITH XOR YIELD
 
 wikipedia https://en.wikipedia.org/wiki/Cypher_Query_Language
  example
@@ -19,24 +32,11 @@ wikipedia https://en.wikipedia.org/wiki/Cypher_Query_Language
  dailyPageViews 79
  appeared 2011
 
-website https://neo4j.com/developer/cypher-query-language/
-fileType text
-
+monaco cypher
 codeMirror cypher
-
-centralPackageRepositoryCount 0
 pygmentsHighlighter Cypher
  filename graph.py
  fileExtensions cyp cypher
-lineCommentToken //
-monaco cypher
-multiLineCommentTokens /* */
-keywords ALL AND AS ASC ASCENDING BY CALL CASE CONTAINS CREATE DELETE DESC DESCENDING DETACH DISTINCT ELSE END ENDS EXISTS IN IS LIMIT MANDATORY MATCH MERGE NOT ON ON OPTIONAL OR ORDER REMOVE RETURN SET SKIP STARTS THEN UNION UNWIND WHEN WHERE WITH XOR YIELD
-features
- hasLineComments true
-  // A comment
- hasMultiLineComments true
-  /* A comment
-  */
- hasComments true
-  // A comment
+
+fileType text
+centralPackageRepositoryCount 0

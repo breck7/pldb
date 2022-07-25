@@ -2,12 +2,10 @@ title Cirru
 appeared 2012
 type pl
 creators ChenYong
-
-example
- set a
-  add
-    number 1
-    number 2
+description Cirru Project helps people code in syntax tree. It offers a tree editor and a text syntax.
+website http://text.cirru.org/
+reference https://github.com/Cirru/cirru-parser/wiki/About-Cirru
+domainName text.cirru.org
 
 features
  hasSemanticIndentation true
@@ -15,12 +13,19 @@ features
     + 1 2
     , 11
 
-description Cirru Project helps people code in syntax tree. It offers a tree editor and a text syntax.
+example
+ set a
+  add
+    number 1
+    number 2
 
 githubLanguage Cirru
  fileExtensions cirru
  trendingProjectsCount 0
 
+pygmentsHighlighter Cirru
+ filename webmisc.py
+ fileExtensions cirru
 linguistGrammarRepo https://github.com/Cirru/sublime-cirru
  firstCommit 2012
  lastCommit 2015
@@ -31,14 +36,6 @@ linguistGrammarRepo https://github.com/Cirru/sublime-cirru
   
   require ./stdio.cr
 
-website http://text.cirru.org/
-reference https://github.com/Cirru/cirru-parser/wiki/About-Cirru
-
 twitter cirrulang
-
 fileType text
 centralPackageRepositoryCount 0
-pygmentsHighlighter Cirru
- filename webmisc.py
- fileExtensions cirru
-domainName text.cirru.org

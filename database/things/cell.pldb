@@ -2,6 +2,18 @@ title Cell
 appeared 2017
 type pl
 description Cell is a very high-level embeddable language. Cell's data model combines a staple of functional programming, algebraic data types, with relations and other ideas from relational databases.
+website http://cell-lang.net/
+domainName cell-lang.net
+ registered 2017
+
+features
+ hasLineComments true
+  // A comment
+ hasComments true
+  // A comment
+ hasSemanticIndentation false
+
+lineCommentToken //
 
 example
  type AddUser = add_user(
@@ -24,7 +36,6 @@ example
    // Setting the date_of_birth attribute, if available
    insert date_of_birth(id, self.date_of_birth) if self.date_of_birth?;
  }
-
 example
  reactive Thermostat {
    input:
@@ -49,19 +60,8 @@ example
 
 githubRepo https://github.com/cell-lang
 
-website http://cell-lang.net/
-
 twitter cell_lang
-lineCommentToken //
 fileType text
 wordRank 695
 isOpenSource true
 centralPackageRepositoryCount 0
-features
- hasLineComments true
-  // A comment
- hasComments true
-  // A comment
- hasSemanticIndentation false
-domainName cell-lang.net
- registered 2017

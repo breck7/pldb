@@ -1,6 +1,15 @@
 title JSONiq
 appeared 2011
 type queryLanguage
+website http://www.jsoniq.org/
+domainName jsoniq.org
+ registered 2011
+
+features
+ hasStrings true
+  "Hello world"
+
+stringToken "
 
 wikipedia https://en.wikipedia.org/wiki/JSONiq
  example
@@ -41,17 +50,11 @@ linguistGrammarRepo https://github.com/wcandillon/language-jsoniq
   catalog:get-data-by-key($id, $part)
   
 
-website http://www.jsoniq.org/
-fileType text
-centralPackageRepositoryCount 0
 leachim6 JSONiq
  filepath j/JSONiq
  example
   "Hello World"
   
-domainName jsoniq.org
- registered 2011
-stringToken "
-features
- hasStrings true
-  "Hello world"
+
+fileType text
+centralPackageRepositoryCount 0

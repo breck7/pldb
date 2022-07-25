@@ -1,6 +1,12 @@
 title Julia
 appeared 2012
 type pl
+creators Jeff Bezanson and Alan Edelman and Stefan Karpinski and Viral B. Shah
+website http://julialang.org/
+fileExtensions jl
+domainName julialang.org
+
+visualParadigm false
 
 features
  hasStrings true
@@ -72,6 +78,13 @@ features
  hasLineComments true
   # A comment
 
+lineCommentToken #
+multiLineCommentTokens #= =#
+printToken print
+printToken println
+stringToken "
+keywords begin while if for try return break continue function macro quote let local global const do struct abstract typealias bitstype type immutable module baremodule using import export importall end else catch finally true false
+
 wikipedia https://en.wikipedia.org/wiki/Julia_(programming_language)
  example
   julia> p(x) = 2x^2 + 1; f(x, y) = 1 + 2p(x)y
@@ -95,11 +108,11 @@ githubLanguage Julia
   JuliaLang IJulia.jl https://github.com/JuliaLang.png https://github.com/JuliaLang/IJulia.jl Julia #a270ba 1780 298 38 "Julia kernel for Jupyter"
  trendingProjectsCount 3
 
-helloWorldCollection Julia
- # Hello world in Julia
- 
- println("Hello, World!")
-
+monaco julia
+codeMirror julia
+pygmentsHighlighter Julia
+ filename julia.py
+ fileExtensions jl
 linguistGrammarRepo https://github.com/JuliaEditorSupport/atom-language-julia
  firstCommit 2015
  lastCommit 2018
@@ -168,74 +181,57 @@ linguistGrammarRepo https://github.com/JuliaEditorSupport/atom-language-julia
   
   print_paths(STDOUT, paths)
   
-
-website http://julialang.org/
-
-tryItOnline julia
-
-fileExtensions jl
-fileType text
-wordRank 7592
-isOpenSource true
-
-tiobe Julia
- currentRank 35
-
-meetup julia
- memberCount 15211
- groupCount 36
+languageServerProtocolProject https://github.com/JuliaEditorSupport/LanguageServer.jl
+ writtenIn julia
 
 projectEuler Julia
  memberCount
   2019 331
   2022 700
-
-subreddit Julia
- memberCount
-  2017 3660
-  2022 20624
-
-quineRelay Julia
-
-ubuntuPackage julia
-
-codeMirror julia
-
-rosettaCode Julia
-
-indeedJobs julia engineer
- 2017 85
-lineCommentToken #
-printToken print
-printToken println
-languageServerProtocolProject https://github.com/JuliaEditorSupport/LanguageServer.jl
- writtenIn julia
-visualParadigm false
-jupyterKernel https://github.com/JuliaLang/IJulia.jl
-keywords begin while if for try return break continue function macro quote let local global const do struct abstract typealias bitstype type immutable module baremodule using import export importall end else catch finally true false
-stackOverflowSurvey
- 2021
-  users 1068
-  medianSalary 65228
-  fans 2445
-  percentageUsing 0.01
-packageRepository https://pkg.julialang.org/
-rijuRepl https://riju.codes/julia
- example
-  println("Hello, world!")
-  
-multiLineCommentTokens #= =#
-creators Jeff Bezanson and Alan Edelman and Stefan Karpinski and Viral B. Shah
-pygmentsHighlighter Julia
- filename julia.py
- fileExtensions jl
+helloWorldCollection Julia
+ # Hello world in Julia
+ 
+ println("Hello, World!")
 leachim6 Julia
  filepath j/Julia.jl
  fileExtensions jl
  example
   println("Hello World")
   
-domainName julialang.org
-monaco julia
-stringToken "
+rosettaCode Julia
+quineRelay Julia
+
+rijuRepl https://riju.codes/julia
+ example
+  println("Hello, world!")
+  
+tryItOnline julia
+
+indeedJobs julia engineer
+ 2017 85
+stackOverflowSurvey
+ 2021
+  users 1068
+  medianSalary 65228
+  fans 2445
+  percentageUsing 0.01
+
+subreddit Julia
+ memberCount
+  2017 3660
+  2022 20624
+meetup julia
+ memberCount 15211
+ groupCount 36
+
+tiobe Julia
+ currentRank 35
+
+packageRepository https://pkg.julialang.org/
+
 twitter julialanguage
+ubuntuPackage julia
+jupyterKernel https://github.com/JuliaLang/IJulia.jl
+fileType text
+wordRank 7592
+isOpenSource true

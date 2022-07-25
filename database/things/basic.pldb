@@ -2,6 +2,9 @@ title BASIC
 appeared 1964
 type pl
 creators John G. Kemeny and Thomas E. Kurtz
+description BASIC (Beginner's All-purpose Symbolic Instruction Code)[1] is a family of general-purpose, high-level programming languages whose design philosophy emphasizes ease of use. In 1964, John G. Kemeny and Thomas E. Kurtz designed the original BASIC language at Dartmouth College. They wanted to enable students in fields other than science and mathematics to use computers. At the time, nearly all use of computers required writing custom software, which was something only scientists and mathematicians tended to learn.
+standsFor Beginner's All-purpose Symbolic Instruction Code
+country United States
 
 features
  hasComments true
@@ -20,7 +23,9 @@ features
   "Hello world"
  isCaseSensitive false
 
-description BASIC (Beginner's All-purpose Symbolic Instruction Code)[1] is a family of general-purpose, high-level programming languages whose design philosophy emphasizes ease of use. In 1964, John G. Kemeny and Thomas E. Kurtz designed the original BASIC language at Dartmouth College. They wanted to enable students in fields other than science and mathematics to use computers. At the time, nearly all use of computers required writing custom software, which was something only scientists and mathematicians tended to learn.
+lineCommentToken REM
+printToken PRINT
+stringToken "
 
 wikipedia https://en.wikipedia.org/wiki/BASIC
  example
@@ -53,38 +58,16 @@ wikipedia https://en.wikipedia.org/wiki/BASIC
  revisionCount 2802
  appeared 1964
 
-helloWorldCollection Beginner's All-purpose Symbolic Instruction Code
- 10 REM Hello World in BASIC
- 20 PRINT "Hello World!"
- 
-
-standsFor Beginner's All-purpose Symbolic Instruction Code
-country United States
-fileType text
-wordRank 945
-
-tiobe Basic
+antlr https://github.com/antlr/grammars-v4/tree/master/basic
 
 projectEuler BASIC
  memberCount
   2019 1334
   2022 1336
-
-hopl 176
-
-rosettaCode BASIC
-
-antlr https://github.com/antlr/grammars-v4/tree/master/basic
-
-lineCommentToken REM
-centralPackageRepositoryCount 0
-rijuRepl https://riju.codes/basic
- example
-  PRINT "Hello, world!"
-  
- description General-purpose, high-level programming language whose design philosophy emphasizes ease of use
- fileExtensions bas
- githubRepo https://sourceforge.net/projects/bwbasic/files/bwbasic/
+helloWorldCollection Beginner's All-purpose Symbolic Instruction Code
+ 10 REM Hello World in BASIC
+ 20 PRINT "Hello World!"
+ 
 leachim6 BASIC
  filepath b/BASIC.bas
  fileExtensions bas
@@ -92,5 +75,19 @@ leachim6 BASIC
   10 PRINT "Hello World"
   20 END
   
-printToken PRINT
-stringToken "
+rosettaCode BASIC
+
+rijuRepl https://riju.codes/basic
+ example
+  PRINT "Hello, world!"
+  
+ description General-purpose, high-level programming language whose design philosophy emphasizes ease of use
+ fileExtensions bas
+ githubRepo https://sourceforge.net/projects/bwbasic/files/bwbasic/
+
+tiobe Basic
+hopl 176
+
+fileType text
+wordRank 945
+centralPackageRepositoryCount 0

@@ -1,6 +1,7 @@
 title DTD
 appeared 1996
 type grammarLanguage
+standsFor document type definition
 
 wikipedia https://en.wikipedia.org/wiki/Document_type_definition
  example
@@ -29,13 +30,14 @@ wikipedia https://en.wikipedia.org/wiki/Document_type_definition
  revisionCount 583
  appeared 2009
 
-standsFor document type definition
-fileType text
-centralPackageRepositoryCount 0
+pygmentsHighlighter DTD
+ filename html.py
+ fileExtensions dtd
+
 goodreads
  title|year|author|goodreadsId|rating|ratings|reviews
  Inside XML DTDs: Scientific and Technical|1999|Simon St. Laurent|2097228|3.00|4|0
  XML Programming Success in a Day: Beginner's Guide to Fast, Easy, and Efficient Learning of XML Programming (XML, XML Programming, Programming, XML Guide, ... XSL, DTD's, Schemas, HTML5, JavaScript)|2015|Sam Key|45569772|3.22|18|3
-pygmentsHighlighter DTD
- filename html.py
- fileExtensions dtd
+
+fileType text
+centralPackageRepositoryCount 0

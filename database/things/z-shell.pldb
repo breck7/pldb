@@ -1,12 +1,20 @@
 title Z shell
 appeared 1990
 type pl
+website http://www.zsh.org/
+aka zsh
+country United States
+domainName zsh.org
+ registered 1998
 
 features
  hasHereDocs true
  hasPrintDebugging true
  hasStrings true
   "Hello world"
+
+printToken echo
+stringToken "
 
 wikipedia https://en.wikipedia.org/wiki/Z_shell
  related c bourne-shell bash korn-shell tcp ftp
@@ -18,35 +26,24 @@ wikipedia https://en.wikipedia.org/wiki/Z_shell
  revisionCount 229
  appeared 1990
 
-website http://www.zsh.org/
-
-tryItOnline zsh
-
-country United States
-fileType text
-isOpenSource true
-
-tiobe Z shell
-
-hopl 2642
-
-quineRelay zsh
-
-ubuntuPackage zsh
-
-centralPackageRepositoryCount 0
-aka zsh
-rijuRepl https://riju.codes/zsh
- example
-  echo "Hello, world!"
-  
 leachim6 Z Shell
  filepath z/Z Shell.zsh
  example
   #!/bin/zsh
   echo "Hello World"
   
-printToken echo
-domainName zsh.org
- registered 1998
-stringToken "
+quineRelay zsh
+
+rijuRepl https://riju.codes/zsh
+ example
+  echo "Hello, world!"
+  
+tryItOnline zsh
+
+tiobe Z shell
+hopl 2642
+
+ubuntuPackage zsh
+fileType text
+isOpenSource true
+centralPackageRepositoryCount 0

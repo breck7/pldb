@@ -33,6 +33,9 @@ githubLanguage Turtle
  fileExtensions ttl
  trendingProjectsCount 0
 
+pygmentsHighlighter Turtle
+ filename rdf.py
+ fileExtensions ttl
 linguistGrammarRepo https://github.com/peta/turtle.tmbundle
  firstCommit 2013
  lastCommit 2015
@@ -50,12 +53,9 @@ linguistGrammarRepo https://github.com/peta/turtle.tmbundle
       ex:fullname "Dave Beckett";
       ex:homePage <http://purl.org/net/dajobe/>
     ] .
+languageServerProtocolProject https://github.com/stardog-union/stardog-language-servers/tree/master/packages/turtle-language-server
+ writtenIn typescript
 
 fileType text
 wordRank 9688
-languageServerProtocolProject https://github.com/stardog-union/stardog-language-servers/tree/master/packages/turtle-language-server
- writtenIn typescript
 centralPackageRepositoryCount 0
-pygmentsHighlighter Turtle
- filename rdf.py
- fileExtensions ttl

@@ -1,11 +1,38 @@
 title Hy
 appeared 2013
 type pl
+creators Paul Tagliamonte
+description A dialect of Lisp that's embedded in Python
+website http://hylang.org/
+domainName hylang.org
+ registered 2013
+
+features
+ hasLineComments true
+  ; A comment
+ hasComments true
+  ; A comment
+ hasPrintDebugging true
+ hasSemanticIndentation false
+ hasStrings true
+  "Hello world"
+
+lineCommentToken ;
+printToken print
+stringToken "
 
 example
  (+ "Hyllo " "World" "!")
 
-description A dialect of Lisp that's embedded in Python
+githubRepo https://github.com/hylang/hy
+ firstCommit 2012
+ stars 4282
+ forks 350
+ subscribers 122
+ created 2012
+ updated 2022
+ description A dialect of Lisp that's embedded in Python
+ issues 68
 
 wikipedia https://en.wikipedia.org/wiki/Hy_(programming_language)
  example
@@ -28,16 +55,9 @@ githubLanguage Hy
  fileExtensions hy
  trendingProjectsCount 0
 
-githubRepo https://github.com/hylang/hy
- firstCommit 2012
- stars 4282
- forks 350
- subscribers 122
- created 2012
- updated 2022
- description A dialect of Lisp that's embedded in Python
- issues 68
-
+pygmentsHighlighter Hy
+ filename lisp.py
+ fileExtensions hy
 linguistGrammarRepo https://github.com/Slowki/hy.tmLanguage.git
  firstCommit 2013
  lastCommit 2018
@@ -56,43 +76,22 @@ linguistGrammarRepo https://github.com/Slowki/hy.tmLanguage.git
       (print (fib x))))
   
 
-website http://hylang.org/
-
-tryItOnline hy
-
-fileType text
-isOpenSource true
-
-rosettaCode Hy
-
-jupyterKernel https://github.com/bollwyvl/hy_kernel/
-jupyterKernel https://github.com/Calysto/calysto_hy
-centralPackageRepositoryCount 0
-rijuRepl https://riju.codes/hy
- example
-  (print "Hello, world!")
-  
-creators Paul Tagliamonte
-lineCommentToken ;
-features
- hasLineComments true
-  ; A comment
- hasComments true
-  ; A comment
- hasPrintDebugging true
- hasSemanticIndentation false
- hasStrings true
-  "Hello world"
-pygmentsHighlighter Hy
- filename lisp.py
- fileExtensions hy
 leachim6 Hy
  filepath h/Hy.hy
  fileExtensions hy
  example
   (print "Hello World")
   
-printToken print
-domainName hylang.org
- registered 2013
-stringToken "
+rosettaCode Hy
+
+rijuRepl https://riju.codes/hy
+ example
+  (print "Hello, world!")
+  
+tryItOnline hy
+
+jupyterKernel https://github.com/bollwyvl/hy_kernel/
+jupyterKernel https://github.com/Calysto/calysto_hy
+fileType text
+isOpenSource true
+centralPackageRepositoryCount 0

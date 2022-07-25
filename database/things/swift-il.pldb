@@ -1,19 +1,26 @@
 title SIL
-standsFor Swift Intermediate Language
 appeared 2012
 type ir
-related cir llvmir
 description SIL is an SSA-form IR with high-level semantic information designed to implement the Swift programming language. In contrast to LLVM IR, SIL is a generally target-independent format representation that can be used for code distribution, but it can also express target-specific concepts as well as LLVM can.
-
-website https://github.com/apple/swift/blob/master/docs/SIL.rst
-fileExtensions sil
-fileType text
-corporateDevelopers Apple
-centralPackageRepositoryCount 0
-
 description 
+website https://github.com/apple/swift/blob/master/docs/SIL.rst
+standsFor Swift Intermediate Language
+fileExtensions sil
+corporateDevelopers Apple
+
+related cir llvmir
+
+features
+ hasLineComments true
+  // A comment
+ hasComments true
+  // A comment
+ hasPrintDebugging true
+ hasSemanticIndentation false
 
 lineCommentToken //
+printToken print
+
 example
  // SIL is reliant on Swift's type system and declarations, so SIL syntax is an extension of Swift's. A .sil file is a Swift source file with added SIL definitions. The Swift source is parsed only for its declarations; Swift func bodies (except for nested declarations) and top-level code are ignored by the SIL parser. In a .sil file, there are no implicit imports; the swift and/or Builtin standard modules must be imported explicitly if used.
  sil_stage canonical
@@ -58,17 +65,13 @@ example
    #Button.onMouseDown: @_TC5norms6Button11onMouseDownfS0_FT_T_
    #Button.onMouseUp: @_TC5norms6Button9onMouseUpfS0_FT_T_
  }
-features
- hasLineComments true
-  // A comment
- hasComments true
-  // A comment
- hasPrintDebugging true
- hasSemanticIndentation false
+
 leachim6 SIL
  filepath s/SIL.SIL
  fileExtensions SIL
  example
   print Hello World
   
-printToken print
+
+fileType text
+centralPackageRepositoryCount 0

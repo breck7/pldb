@@ -1,11 +1,13 @@
 title Low*
-aka low-star
-subsetOf fstar
 type pl
-compilesTo c
 website https://fstarlang.github.io/lowstar/html/LowStar.html
+aka low-star
 firstAnnouncement https://arxiv.org/abs/1703.00053
 announcementMethod paper
+
+compilesTo c
+subsetOf fstar
+
 example
  let chacha20
   (len: uint32{len ≤ blocklen})

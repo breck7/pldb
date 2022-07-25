@@ -1,10 +1,23 @@
 title Zephir
 appeared 2013
 type pl
+creators Andres Gutierrez
+website https://zephir-lang.com/
+domainName zephir-lang.com
+ registered 2013
 
-githubLanguage Zephir
- fileExtensions zep
- trendingProjectsCount 0
+features
+ hasLineComments true
+  // A comment
+ hasComments true
+  // A comment
+ hasMultiLineComments true
+  /* A comment
+  */
+ hasSemanticIndentation false
+
+lineCommentToken //
+multiLineCommentTokens /* */
 
 githubRepo https://github.com/phalcon/zephir
  firstCommit 2013
@@ -16,6 +29,13 @@ githubRepo https://github.com/phalcon/zephir
  description Zephir is a compiled high level language aimed to the creation of C-extensions for PHP.
  issues 94
 
+githubLanguage Zephir
+ fileExtensions zep
+ trendingProjectsCount 0
+
+pygmentsHighlighter Zephir
+ filename php.py
+ fileExtensions zep
 linguistGrammarRepo https://github.com/phalcon/zephir-sublime
  firstCommit 2013
  lastCommit 2017
@@ -78,27 +98,7 @@ linguistGrammarRepo https://github.com/phalcon/zephir-sublime
   }
   
 
-website https://zephir-lang.com/
-
 twitter zephirlang
-
 fileType text
 isOpenSource true
 centralPackageRepositoryCount 0
-creators Andres Gutierrez
-lineCommentToken //
-features
- hasLineComments true
-  // A comment
- hasComments true
-  // A comment
- hasMultiLineComments true
-  /* A comment
-  */
- hasSemanticIndentation false
-pygmentsHighlighter Zephir
- filename php.py
- fileExtensions zep
-multiLineCommentTokens /* */
-domainName zephir-lang.com
- registered 2013

@@ -1,6 +1,8 @@
 title Gzip
 appeared 1992
 type binaryDataFormat
+website http://www.gnu.org/software/gzip/
+corporateDevelopers GNU Project
 
 wikipedia https://en.wikipedia.org/wiki/Gzip
  related c unix freebsd html rfc
@@ -12,14 +14,10 @@ wikipedia https://en.wikipedia.org/wiki/Gzip
  revisionCount 503
  appeared 2016
 
-website http://www.gnu.org/software/gzip/
-fileType binary
-wordRank 9973
-isOpenSource true
-
 quineRelay Gzip
 
 ubuntuPackage gzip
-
-corporateDevelopers GNU Project
+fileType binary
+wordRank 9973
+isOpenSource true
 centralPackageRepositoryCount 0

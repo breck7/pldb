@@ -1,12 +1,17 @@
 title NSIS
 appeared 2001
 type pl
+website http://nsis.sourceforge.net
+standsFor Nullsoft Software Install Script
+domainName nsis.sourceforge.net
 
 features
  hasComments true
  hasLineComments true
   ; A comment
  hasSemanticIndentation false
+
+lineCommentToken ;
 
 wikipedia https://en.wikipedia.org/wiki/Nullsoft_Scriptable_Install_System
  example
@@ -40,18 +45,10 @@ githubLanguage NSIS
  fileExtensions nsi nsh
  trendingProjectsCount 0
 
-helloWorldCollection Nullsoft Software Install Script
- ; Hello World in Nullsoft Software Install Script (NSIS)
- 
- Caption "Hello World!"
- OutFile ".\HelloWorld.exe"
- SilentInstall silent
- 
- Section ""
-         MessageBox MB_OK "Hello World!"
- SectionEnd
- 
-
+codeMirror nsis
+pygmentsHighlighter NSIS
+ filename installers.py
+ fileExtensions nsi nsh
 linguistGrammarRepo https://github.com/github-linguist/NSIS
  firstCommit 2011
  lastCommit 2016
@@ -115,22 +112,21 @@ linguistGrammarRepo https://github.com/github-linguist/NSIS
   !endif # !___X64__NSH___
   
 
-website http://nsis.sourceforge.net
-standsFor Nullsoft Software Install Script
-
-twitter nsis_tweets
-
-fileType text
+helloWorldCollection Nullsoft Software Install Script
+ ; Hello World in Nullsoft Software Install Script (NSIS)
+ 
+ Caption "Hello World!"
+ OutFile ".\HelloWorld.exe"
+ SilentInstall silent
+ 
+ Section ""
+         MessageBox MB_OK "Hello World!"
+ SectionEnd
+ 
+rosettaCode NSIS
 
 tiobe NSIS
 
-codeMirror nsis
-
-rosettaCode NSIS
-
+twitter nsis_tweets
+fileType text
 centralPackageRepositoryCount 0
-lineCommentToken ;
-pygmentsHighlighter NSIS
- filename installers.py
- fileExtensions nsi nsh
-domainName nsis.sourceforge.net

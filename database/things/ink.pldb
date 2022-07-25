@@ -1,6 +1,9 @@
 title ink
 appeared 2015
 type esolang
+creators Joseph Humfrey
+description Ink is inkle's scripting language for writing interactive narrative, both for text-centric games as well as more graphical games that contain highly branching stories.
+website http://www.inklestudios.com/ink
 
 example
  - I looked at Monsieur Fogg 
@@ -23,8 +26,6 @@ example
  - we passed the day in silence.
  - -> END 
 
-description Ink is inkle's scripting language for writing interactive narrative, both for text-centric games as well as more graphical games that contain highly branching stories.
-
 githubRepo https://github.com/inkle/ink
  firstCommit 2015
  stars 3218
@@ -35,14 +36,13 @@ githubRepo https://github.com/inkle/ink
  description inkle's open source scripting language for writing interactive narrative.
  issues 288
 
-website http://www.inklestudios.com/ink
+leachim6 Ink
+ filepath i/Ink.ink
+ fileExtensions ink
+ example
+  Hello World
+  
 
-twitter inklestudios
-
-fileType text
-wordRank 3033
-isOpenSource true
-centralPackageRepositoryCount 0
 rijuRepl https://riju.codes/ink
  example
   std := load('../../../opt/ink/std')
@@ -52,10 +52,9 @@ rijuRepl https://riju.codes/ink
   
   log('Hello, world!')
   
-creators Joseph Humfrey
-leachim6 Ink
- filepath i/Ink.ink
- fileExtensions ink
- example
-  Hello World
-  
+
+twitter inklestudios
+fileType text
+wordRank 3033
+isOpenSource true
+centralPackageRepositoryCount 0

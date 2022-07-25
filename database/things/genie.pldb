@@ -1,6 +1,7 @@
 title Genie
 appeared 2008
 type pl
+creators Jamie McCracken
 
 features
  hasComments true
@@ -8,6 +9,14 @@ features
  hasPrintDebugging true
  hasStrings true
   "Hello world"
+
+printToken print
+stringToken "
+
+example
+ init
+  print( "Hello, World!" )
+ 
 
 wikipedia https://en.wikipedia.org/wiki/Genie_(programming_language)
  example
@@ -33,19 +42,6 @@ githubLanguage Genie
  fileExtensions gs
  trendingProjectsCount 0
 
-example
- init
-  print( "Hello, World!" )
- 
-fileType text
-isOpenSource true
-
-hopl 8118
-
-rosettaCode Genie
-
-centralPackageRepositoryCount 0
-creators Jamie McCracken
 leachim6 Genie
  filepath g/Genie.gs
  fileExtensions gs
@@ -53,5 +49,10 @@ leachim6 Genie
   [indent=2]
   init
     print "Hello World"
-printToken print
-stringToken "
+rosettaCode Genie
+
+hopl 8118
+
+fileType text
+isOpenSource true
+centralPackageRepositoryCount 0

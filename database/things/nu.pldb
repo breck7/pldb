@@ -1,6 +1,15 @@
 title Nu
 appeared 2007
 type pl
+creators Tim Burks
+
+features
+ hasPrintDebugging true
+ hasStrings true
+  "Hello world"
+
+printToken puts
+stringToken "
 
 wikipedia https://en.wikipedia.org/wiki/Nu_(programming_language)
  example
@@ -35,20 +44,14 @@ linguistGrammarRepo https://github.com/jsallis/nu.tmbundle
   (puts "Hello")
   
 
-fileType text
-wordRank 7528
-isOpenSource true
-centralPackageRepositoryCount 0
-creators Tim Burks
 leachim6 Nu
  filepath n/Nu.nu
  fileExtensions nu
  example
   (puts "Hello World")
   
-printToken puts
-features
- hasPrintDebugging true
- hasStrings true
-  "Hello world"
-stringToken "
+
+fileType text
+wordRank 7528
+isOpenSource true
+centralPackageRepositoryCount 0

@@ -1,22 +1,12 @@
 title UCG
 appeared 2017
 type dataNotation
+creators Jeremy Wall
 description UCG is a universal grammar for configuration. UCG's goal is not to define a configuration format like JSON, YAML, or TOML. It is not intended to replace the other serialization formats. Instead it is intended to provide a common grammar for generating those formats.
-
-fileExtensions ucg
-
-githubRepo https://github.com/zaphar/ucg
- firstCommit 2017
- stars 27
- forks 3
- subscribers 4
- created 2017
- updated 2022
- description A Universal Configuration Grammar
- issues 8
-
 website https://ucg.marzhillstudios.com/
 standsFor Universal Configuration Grammar
+fileExtensions ucg
+domainName ucg.marzhillstudios.com
 
 compilesTo json yaml toml xml
 writtenIn rust
@@ -37,5 +27,13 @@ example
  };
  
  out json conf;
-creators Jeremy Wall
-domainName ucg.marzhillstudios.com
+
+githubRepo https://github.com/zaphar/ucg
+ firstCommit 2017
+ stars 27
+ forks 3
+ subscribers 4
+ created 2017
+ updated 2022
+ description A Universal Configuration Grammar
+ issues 8

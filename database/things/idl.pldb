@@ -2,6 +2,10 @@ title IDL
 appeared 1977
 type pl
 creators David Stern
+website http://www.exelisvis.com/ProductsServices/IDL.aspx
+reference https://www.harrisgeospatial.com/Software-Technology/IDL
+standsFor Interactive Data Language
+country United States
 
 features
  hasComments true
@@ -9,6 +13,9 @@ features
  hasSemanticIndentation false
  hasStrings true
   "Hello world"
+
+printToken print
+stringToken "
 
 wikipedia https://en.wikipedia.org/wiki/IDL_(programming_language)
  related gdl pv-wave fortran c unix smalltalk matlab numpy python perl-data-language perl
@@ -24,11 +31,11 @@ githubLanguage IDL
  fileExtensions pro dlm
  trendingProjectsCount 0
 
-helloWorldCollection Interactive Data Language
- IDL> ; Hello World in IDL (Interactive Data Language)
- IDL> print, "Hello World"
- 
-
+antlr https://github.com/antlr/grammars-v4/tree/master/idl
+codeMirror idl
+pygmentsHighlighter IDL
+ filename idl.py
+ fileExtensions pro
 linguistGrammarRepo https://github.com/mgalloy/idl.tmbundle
  firstCommit 2012
  lastCommit 2017
@@ -47,36 +54,26 @@ linguistGrammarRepo https://github.com/mgalloy/idl.tmbundle
   
   
 
-website http://www.exelisvis.com/ProductsServices/IDL.aspx
-reference https://www.harrisgeospatial.com/Software-Technology/IDL
-standsFor Interactive Data Language
-country United States
-fileType text
-
-tiobe IDL
-
-hopl 760
-
-codeMirror idl
-
-rosettaCode IDL
-
-antlr https://github.com/antlr/grammars-v4/tree/master/idl
-
-jupyterKernel https://github.com/lstagner/idl_kernel
-centralPackageRepositoryCount 0
-goodreads
- title|year|author|goodreadsId|rating|ratings|reviews
- An Introduction to Programming with IDL: Interactive Data Language|2005|Kenneth P. Bowman|786937|3.40|5|0
- IDL-- The Interactive Data Language: The Complete Data Analysis and Visualization Environment for Students [With *]||Research Systems|20631577|0.0|0|0
-pygmentsHighlighter IDL
- filename idl.py
- fileExtensions pro
+helloWorldCollection Interactive Data Language
+ IDL> ; Hello World in IDL (Interactive Data Language)
+ IDL> print, "Hello World"
+ 
 leachim6 IDL
  filepath i/IDL
  example
   print, "Hello World"
   end
   
-printToken print
-stringToken "
+rosettaCode IDL
+
+goodreads
+ title|year|author|goodreadsId|rating|ratings|reviews
+ An Introduction to Programming with IDL: Interactive Data Language|2005|Kenneth P. Bowman|786937|3.40|5|0
+ IDL-- The Interactive Data Language: The Complete Data Analysis and Visualization Environment for Students [With *]||Research Systems|20631577|0.0|0|0
+
+tiobe IDL
+hopl 760
+
+jupyterKernel https://github.com/lstagner/idl_kernel
+fileType text
+centralPackageRepositoryCount 0

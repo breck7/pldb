@@ -2,6 +2,8 @@ title ColdFusion
 appeared 1995
 type pl
 creators Joseph J. Allaire
+website https://www.adobe.com/products/coldfusion
+corporateDevelopers Adobe
 
 features
  hasComments true
@@ -9,6 +11,9 @@ features
  hasSemanticIndentation false
  hasStrings true
   "Hello world"
+
+printToken cfoutput
+stringToken "
 
 wikipedia https://en.wikipedia.org/wiki/ColdFusion
  example
@@ -26,13 +31,9 @@ githubLanguage ColdFusion
  fileExtensions cfm cfml
  trendingProjectsCount 0
 
-helloWorldCollection ColdFusion
- <!---Hello world in ColdFusion--->
- 
- <cfset message = "Hello World">
- <cfoutput> #message#</cfoutput>
- 
-
+pygmentsHighlighter Coldfusion HTML
+ filename templates.py
+ fileExtensions cfm cfml
 linguistGrammarRepo https://github.com/SublimeText/ColdFusion
  firstCommit 2012
  lastCommit 2017
@@ -91,26 +92,29 @@ linguistGrammarRepo https://github.com/SublimeText/ColdFusion
   <cfset c = a - b>
   <!--- <!-- another <!--- nested --> ---> comment --->
 
-website https://www.adobe.com/products/coldfusion
-
-twitter coldfusion
-
-fileType text
-isOpenSource false
+projectEuler ColdFusion
+ memberCount
+  2019 9
+  2022 10
+helloWorldCollection ColdFusion
+ <!---Hello world in ColdFusion--->
+ 
+ <cfset message = "Hello World">
+ <cfoutput> #message#</cfoutput>
+ 
+leachim6 ColdFusion
+ filepath c/ColdFusion.cfm
+ fileExtensions cfm
+ example
+  <cfset message = "Hello World">
+  <cfoutput> #message#</cfoutput>
+  
+rosettaCode ColdFusion
 
 meetup coldfusion
  memberCount 7310
  groupCount 22
 
-projectEuler ColdFusion
- memberCount
-  2019 9
-  2022 10
-
-rosettaCode ColdFusion
-
-corporateDevelopers Adobe
-packageRepository https://www.forgebox.io/
 goodreads
  title|year|author|goodreadsId|rating|ratings|reviews
  Programming ColdFusion|2001|Rob Brooks-Bilson|559987|3.86|7|0
@@ -122,15 +126,9 @@ goodreads
  ColdFusion MX for Dummies|2002|John Paul Ashenfelter|614391|4.25|4|0
  Coldfusion 4.5 for Dummies [With CDROM]|2000|Alexis D. Gutzman|1731069|3.00|1|0
  Coldfusion 9 Developer Tutorial|2010|John Farrar|14182329|0.0|0|0
-leachim6 ColdFusion
- filepath c/ColdFusion.cfm
- fileExtensions cfm
- example
-  <cfset message = "Hello World">
-  <cfoutput> #message#</cfoutput>
-  
-printToken cfoutput
-pygmentsHighlighter Coldfusion HTML
- filename templates.py
- fileExtensions cfm cfml
-stringToken "
+
+packageRepository https://www.forgebox.io/
+
+twitter coldfusion
+fileType text
+isOpenSource false

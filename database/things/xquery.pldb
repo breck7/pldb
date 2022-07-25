@@ -1,6 +1,9 @@
 title XQuery
 appeared 2007
 type pl
+website http://www.w3.org/XML/Query/
+fileExtensions xq xql xqm xqy xquery
+corporateDevelopers W3C
 
 features
  hasComments true
@@ -9,6 +12,8 @@ features
  hasSemanticIndentation false
  hasStrings true
   "Hello world"
+
+stringToken "
 
 wikipedia https://en.wikipedia.org/wiki/XQuery
  example
@@ -42,12 +47,10 @@ githubLanguage XQuery
  fileExtensions xquery xq xql xqm xqy
  trendingProjectsCount 0
 
-helloWorldCollection XQuery
- (: Hello World with XQuery :)
- let $i := "Hello World"
- return $i
- 
-
+codeMirror xquery
+pygmentsHighlighter XQuery
+ filename webmisc.py
+ fileExtensions xqy xquery xq xql xqm
 linguistGrammarRepo https://github.com/wcandillon/language-jsoniq
  firstCommit 2015
  lastCommit 2016
@@ -127,21 +130,11 @@ linguistGrammarRepo https://github.com/wcandillon/language-jsoniq
   
   
 
-website http://www.w3.org/XML/Query/
-fileExtensions xq xql xqm xqy xquery
-fileType text
-
-tiobe XQuery
-
-codeMirror xquery
-
-rosettaCode XQuery
-
-centralPackageRepositoryCount 0
-corporateDevelopers W3C
-pygmentsHighlighter XQuery
- filename webmisc.py
- fileExtensions xqy xquery xq xql xqm
+helloWorldCollection XQuery
+ (: Hello World with XQuery :)
+ let $i := "Hello World"
+ return $i
+ 
 leachim6 XQuery
  filepath x/XQuery.xq
  fileExtensions xq
@@ -149,4 +142,9 @@ leachim6 XQuery
   let $hello := "Hello World"
   return $hello
   
-stringToken "
+rosettaCode XQuery
+
+tiobe XQuery
+
+fileType text
+centralPackageRepositoryCount 0

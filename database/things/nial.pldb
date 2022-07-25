@@ -1,6 +1,17 @@
 title Nial
 appeared 1981
 type pl
+creators Mike Jenkins
+standsFor Nested Interactive Array Language
+country Canada
+
+features
+ hasPrintDebugging true
+ hasStrings true
+  'Hello world'
+
+printToken write
+stringToken '
 
 wikipedia https://en.wikipedia.org/wiki/Nial
  example
@@ -20,19 +31,6 @@ wikipedia https://en.wikipedia.org/wiki/Nial
  dailyPageViews 21
  appeared 1981
 
-standsFor Nested Interactive Array Language
-
-tryItOnline nial
-
-country Canada
-fileType text
-
-hopl 1242
-
-rosettaCode Nial
-
-centralPackageRepositoryCount 0
-creators Mike Jenkins
 leachim6 Nial
  filepath n/Nial.ndf
  fileExtensions ndf
@@ -40,9 +38,11 @@ leachim6 Nial
   write 'Hello World';
   bye
   
-printToken write
-features
- hasPrintDebugging true
- hasStrings true
-  'Hello world'
-stringToken '
+rosettaCode Nial
+
+tryItOnline nial
+
+hopl 1242
+
+fileType text
+centralPackageRepositoryCount 0

@@ -1,12 +1,21 @@
 title CWL
 appeared 2014
 type pl
-
+creators Luka Stojanovic
 description The Common Workflow Language (CWL) is a specification for describing analysis workflows and tools in a way that makes them portable and scalable across a variety of software and hardware environments, from workstations to cluster, cloud, and high performance computing (HPC) environments. CWL is designed to meet the needs of data-intensive science, such as Bioinformatics, Medical Imaging, Astronomy, Physics, and Chemistry.
+website https://www.commonwl.org/
+reference https://doi.org/10.6084/m9.figshare.3115156.v2
+domainName commonwl.org
+ registered 2015
 
-githubLanguage Common Workflow Language
- fileExtensions cwl
- trendingProjectsCount 0
+features
+ hasLineComments true
+  # A comment
+ hasComments true
+  # A comment
+ hasSemanticIndentation false
+
+lineCommentToken #
 
 githubRepo https://github.com/common-workflow-language/cwltool
  firstCommit 2014
@@ -17,6 +26,10 @@ githubRepo https://github.com/common-workflow-language/cwltool
  updated 2022
  description Common Workflow Language reference implementation
  issues 396
+
+githubLanguage Common Workflow Language
+ fileExtensions cwl
+ trendingProjectsCount 0
 
 linguistGrammarRepo https://github.com/manabuishii/language-cwl
  firstCommit 2017
@@ -63,19 +76,7 @@ linguistGrammarRepo https://github.com/manabuishii/language-cwl
   stdout: $(inputs.peaks.nameroot).trunked_scores$(inputs.peaks.nameext)
   
 
-website https://www.commonwl.org/
-reference https://doi.org/10.6084/m9.figshare.3115156.v2
+twitter commonwl
 fileType text
 isOpenSource true
 centralPackageRepositoryCount 0
-creators Luka Stojanovic
-lineCommentToken #
-features
- hasLineComments true
-  # A comment
- hasComments true
-  # A comment
- hasSemanticIndentation false
-domainName commonwl.org
- registered 2015
-twitter commonwl

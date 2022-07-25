@@ -1,6 +1,18 @@
 title ldpl
 appeared 2019
 type pl
+creators Martín del Río
+website https://www.ldpl-lang.org
+domainName ldpl-lang.org
+
+features
+ hasLineComments true
+  # A comment
+ hasComments true
+  # A comment
+ hasSemanticIndentation false
+
+lineCommentToken #
 
 example
  # Hello There Example
@@ -22,16 +34,6 @@ githubRepo https://github.com/Lartu/ldpl
  description Compiled programming language for Unix systems, inspired by COBOL and designed to be expressive, fast, readable and easy to learn.
  issues 11
 
-website https://www.ldpl-lang.org
 hackerNewsDiscussions
  id|title|url|time|timestamp|by|comments|score
  19740700|LDPL – A simple programming language in the likeness of COBOL|https://www.ldpl-lang.org/|2019-04-24 17:25:24 UTC|1556126724|lartu|0|1
-creators Martín del Río
-lineCommentToken #
-features
- hasLineComments true
-  # A comment
- hasComments true
-  # A comment
- hasSemanticIndentation false
-domainName ldpl-lang.org

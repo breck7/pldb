@@ -2,7 +2,6 @@ title Nginx
 appeared 2004
 type configFormat
 
-lineCommentToken #
 features
  hasMultiLineComments false
  hasLineComments true
@@ -10,6 +9,8 @@ features
  hasComments true
   # A comment
  hasSemanticIndentation false
+
+lineCommentToken #
 
 example
  #user  nobody;
@@ -58,6 +59,10 @@ githubLanguage Nginx
  fileExtensions nginxconf vhost
  trendingProjectsCount 0
 
+codeMirror nginx
+pygmentsHighlighter Nginx configuration file
+ filename configs.py
+ fileExtensions nginx.conf
 linguistGrammarRepo https://github.com/brandonwamboldt/sublime-nginx
  firstCommit 2014
  lastCommit 2018
@@ -311,10 +316,4 @@ linguistGrammarRepo https://github.com/brandonwamboldt/sublime-nginx
 
 fileType text
 isOpenSource true
-
-codeMirror nginx
-
 centralPackageRepositoryCount 0
-pygmentsHighlighter Nginx configuration file
- filename configs.py
- fileExtensions nginx.conf

@@ -1,6 +1,8 @@
 title emfatic
 appeared 2004
 type pl
+description Emfatic is a language designed to represent EMF Ecore models in a textual form.
+website https://www.eclipse.org/epsilon/doc/articles/emfatic/
 
 example
  package test;
@@ -17,6 +19,3 @@ example
    attr ecore.EString s1;
    attr String s2;
  }
-
-description Emfatic is a language designed to represent EMF Ecore models in a textual form.
-website https://www.eclipse.org/epsilon/doc/articles/emfatic/

@@ -1,20 +1,33 @@
 title Observable
 appeared 2017
 type pl
-
-webRepl https://observablehq.com/@breck7/languages-with-central-package-repositories
-
-description A partially open source derivative of Javascript modified for dataflow that powers the Observable data science web app.
-
-corporateDevelopers Observable
-
 creators Mike Bostock
+description A partially open source derivative of Javascript modified for dataflow that powers the Observable data science web app.
+website https://observablehq.com/
+webRepl https://observablehq.com/@breck7/languages-with-central-package-repositories
+reference https://observablehq.com/@observablehq/observables-not-javascript
+corporateDevelopers Observable
+domainName observablehq.com
+ registered 2017
+
+related javascript
 
 features
  hasComments true
  hasLineComments true
   // A comment
  hasSemanticIndentation false
+
+lineCommentToken //
+
+example
+ {
+  let x = 0;
+  for (let i = 1; i <= 100; ++i) {
+    x += i;
+  }
+  return x;
+ }
 
 githubRepo https://github.com/observablehq/runtime
  firstCommit 2017
@@ -26,23 +39,4 @@ githubRepo https://github.com/observablehq/runtime
  description The Observable dataflow runtime.
  issues 16
 
-website https://observablehq.com/
-
 twitter observablehq
-
-reference https://observablehq.com/@observablehq/observables-not-javascript
-
-related javascript
-
-example
- {
-  let x = 0;
-  for (let i = 1; i <= 100; ++i) {
-    x += i;
-  }
-  return x;
- }
-
-lineCommentToken //
-domainName observablehq.com
- registered 2017

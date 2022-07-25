@@ -1,12 +1,17 @@
 title Occam
 appeared 1983
 type pl
+creators David May
+country United Kingdom
 
 features
  hasSemanticIndentation true
  hasPrintDebugging true
  hasStrings true
   "Hello world"
+
+printToken write.full.string
+stringToken "
 
 wikipedia https://en.wikipedia.org/wiki/Occam_(programming_language)
  example
@@ -40,21 +45,6 @@ helloWorldCollection Occam
  SEQ
    write.full.string(screen,"Hello World!")
  
-
-country United Kingdom
-fileType text
-
-tiobe Occam
-
-hopl 1002
-
-rosettaCode Occam
-
-centralPackageRepositoryCount 0
-creators David May
-goodreads
- title|year|author|goodreadsId|rating|ratings|reviews
- Programming In Occam||Geraint Jones|3878947|3.00|3|1
 leachim6 occam
  filepath o/occam.occam
  fileExtensions occam
@@ -65,5 +55,14 @@ leachim6 occam
   SEQ
     write.full.string(screen,"Hello World")
   
-printToken write.full.string
-stringToken "
+rosettaCode Occam
+
+goodreads
+ title|year|author|goodreadsId|rating|ratings|reviews
+ Programming In Occam||Geraint Jones|3878947|3.00|3|1
+
+tiobe Occam
+hopl 1002
+
+fileType text
+centralPackageRepositoryCount 0

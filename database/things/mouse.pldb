@@ -1,6 +1,19 @@
 title Mouse
 appeared 1970
 type pl
+country United States
+
+features
+ hasLineComments true
+  ~ A comment
+ hasComments true
+  ~ A comment
+ hasSemanticIndentation false
+ hasStrings true
+  "Hello world"
+
+lineCommentToken ~
+stringToken "
 
 wikipedia https://en.wikipedia.org/wiki/Mouse_(programming_language)
  example
@@ -17,25 +30,6 @@ wikipedia https://en.wikipedia.org/wiki/Mouse_(programming_language)
  dailyPageViews 12
  appeared 1970
 
-
-tryItOnline mouse
-
-country United States
-fileType text
-wordRank 2382
-
-hopl 684
-
-centralPackageRepositoryCount 0
-lineCommentToken ~
-features
- hasLineComments true
-  ~ A comment
- hasComments true
-  ~ A comment
- hasSemanticIndentation false
- hasStrings true
-  "Hello world"
 leachim6 Mouse
  filepath m/Mouse.mse
  fileExtensions mse
@@ -44,4 +38,11 @@ leachim6 Mouse
   '! !'
   $
   
-stringToken "
+
+tryItOnline mouse
+
+hopl 684
+
+fileType text
+wordRank 2382
+centralPackageRepositoryCount 0

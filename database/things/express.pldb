@@ -1,6 +1,12 @@
 title EXPRESS
-type dataNotation
 appeared 2004
+type dataNotation
+
+features
+ hasStrings true
+  "Hello world"
+
+stringToken "
 
 example
  SCHEMA Family;
@@ -40,7 +46,3 @@ leachim6 Express
   
   app.listen(8080)
   
-stringToken "
-features
- hasStrings true
-  "Hello world"

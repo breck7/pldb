@@ -1,6 +1,15 @@
 title MIRC scripting language
 appeared 1995
 type pl
+creators Khaled Mardam-Bey
+website http://mirc.com/
+domainName mirc.com
+ registered 1997
+
+features
+ hasPrintDebugging true
+
+printToken echo
 
 wikipedia https://en.wikipedia.org/wiki/MIRC_scripting_language
  example
@@ -33,22 +42,15 @@ wikipedia https://en.wikipedia.org/wiki/MIRC_scripting_language
  revisionCount 313
  appeared 1995
 
-website http://mirc.com/
-fileType text
-isOpenSource false
-
 codeMirror mirc
 
-centralPackageRepositoryCount 0
-creators Khaled Mardam-Bey
 leachim6 Mirc
  filepath m/Mirc.mrc
  fileExtensions mrc
  example
   echo -a Hello World
   
-printToken echo
-features
- hasPrintDebugging true
-domainName mirc.com
- registered 1997
+
+fileType text
+isOpenSource false
+centralPackageRepositoryCount 0

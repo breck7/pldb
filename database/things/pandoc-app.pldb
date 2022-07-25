@@ -1,8 +1,12 @@
 title Pandoc
 appeared 2006
 type application
-
 description If you need to convert files from one markup format into another, pandoc is your swiss-army knife.
+website http://pandoc.org/
+domainName pandoc.org
+ registered 2014
+
+writtenIn haskell
 
 wikipedia https://en.wikipedia.org/wiki/Pandoc
  related haskell markdown html restructuredtext latex org ooxml tex lua bibtex
@@ -14,10 +18,6 @@ wikipedia https://en.wikipedia.org/wiki/Pandoc
  dailyPageViews 75
  appeared 2006
 
-website http://pandoc.org/
 fileType text
 isOpenSource true
-writtenIn haskell
 centralPackageRepositoryCount 0
-domainName pandoc.org
- registered 2014

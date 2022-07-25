@@ -2,9 +2,16 @@ title SourcePawn
 appeared 2014
 type pl
 
-githubLanguage SourcePawn
- fileExtensions sp inc sma
- trendingProjectsCount 0
+features
+ hasMultiLineComments true
+  /* A comment
+  */
+ hasComments true
+  /* A comment
+  */
+ hasSemanticIndentation false
+
+multiLineCommentTokens /* */
 
 githubRepo https://github.com/alliedmodders/sourcepawn
  firstCommit 2014
@@ -16,6 +23,13 @@ githubRepo https://github.com/alliedmodders/sourcepawn
  description A small, statically typed scripting language.
  issues 62
 
+githubLanguage SourcePawn
+ fileExtensions sp inc sma
+ trendingProjectsCount 0
+
+pygmentsHighlighter SourcePawn
+ filename pawn.py
+ fileExtensions sp
 linguistGrammarRepo https://github.com/github-linguist/sublime-sourcepawn
  firstCommit 2013
  lastCommit 2016
@@ -117,15 +131,3 @@ linguistGrammarRepo https://github.com/github-linguist/sublime-sourcepawn
 fileType text
 isOpenSource true
 centralPackageRepositoryCount 0
-pygmentsHighlighter SourcePawn
- filename pawn.py
- fileExtensions sp
-multiLineCommentTokens /* */
-features
- hasMultiLineComments true
-  /* A comment
-  */
- hasComments true
-  /* A comment
-  */
- hasSemanticIndentation false

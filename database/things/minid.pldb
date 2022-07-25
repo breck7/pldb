@@ -1,6 +1,16 @@
 title MiniD
 appeared 2006
 type pl
+website http://www.dsource.org/projects/minid
+
+features
+ hasLineComments true
+  // A comment
+ hasComments true
+  // A comment
+ hasSemanticIndentation false
+
+lineCommentToken //
 
 wikipedia https://en.wikipedia.org/wiki/MiniD
  example
@@ -22,15 +32,8 @@ githubLanguage MiniD
  fileExtensions minid
  trendingProjectsCount 0
 
-website http://www.dsource.org/projects/minid
-fileType text
-centralPackageRepositoryCount 0
-lineCommentToken //
-features
- hasLineComments true
-  // A comment
- hasComments true
-  // A comment
- hasSemanticIndentation false
 pygmentsHighlighter MiniD
  filename d.py
+
+fileType text
+centralPackageRepositoryCount 0

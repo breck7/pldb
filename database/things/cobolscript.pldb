@@ -2,6 +2,11 @@ title CobolScript
 appeared 1999
 type pl
 
+features
+ hasPrintDebugging true
+
+printToken DISPLAY
+
 wikipedia https://en.wikipedia.org/wiki/CobolScript
  related cobol
  summary CobolScript is a programming language created by Matthew Dean and Charles Schereda of Deskware in 1999. The language was intended to provide web-enabled COBOL, and was targeted at businesses using legacy software written in that language.
@@ -12,7 +17,6 @@ wikipedia https://en.wikipedia.org/wiki/CobolScript
  dailyPageViews 6
  appeared 1999
 
-centralPackageRepositoryCount 0
 leachim6 CobolScript
  filepath c/CobolScript.cbl
  fileExtensions cbl
@@ -24,6 +28,5 @@ leachim6 CobolScript
   DISPLAY `</BODY></HTML>`.
   GOBACK.
   
-printToken DISPLAY
-features
- hasPrintDebugging true
+
+centralPackageRepositoryCount 0

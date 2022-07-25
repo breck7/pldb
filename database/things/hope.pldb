@@ -1,6 +1,8 @@
 title HOPE
 appeared 1978
 type pl
+reference https://github.com/dmbaturin/hope
+country United Kingdom
 
 features
  hasUserDefinedOperators true
@@ -25,6 +27,9 @@ features
   --- A comment
  hasSemanticIndentation false
 
+lineCommentToken ---
+keywords and or not char num div mod dec X # : -> ; --- if then else > <= + ( ) , infix - truval :: nil " <> == in where data ++ lambda
+
 wikipedia https://en.wikipedia.org/wiki/Hope_(programming_language)
  example
   dec fact : num -> num;
@@ -39,15 +44,10 @@ wikipedia https://en.wikipedia.org/wiki/Hope_(programming_language)
  revisionCount 77
  appeared 1970
 
-reference https://github.com/dmbaturin/hope
-country United Kingdom
-fileType text
-wordRank 1086
+rosettaCode Hope
 
 hopl 810
 
-rosettaCode Hope
-
-keywords and or not char num div mod dec X # : -> ; --- if then else > <= + ( ) , infix - truval :: nil " <> == in where data ++ lambda
+fileType text
+wordRank 1086
 centralPackageRepositoryCount 0
-lineCommentToken ---

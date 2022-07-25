@@ -2,6 +2,11 @@ title ALGO
 appeared 1958
 type pl
 
+features
+ hasPrintDebugging true
+
+printToken PRINT
+
 wikipedia https://en.wikipedia.org/wiki/ALGO
  example
   1 TITLE TRABB PARDO-KNUTH ALGORITHM
@@ -35,6 +40,3 @@ wikipedia https://en.wikipedia.org/wiki/ALGO
  appeared 1958
 
 centralPackageRepositoryCount 0
-printToken PRINT
-features
- hasPrintDebugging true

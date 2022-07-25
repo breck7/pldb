@@ -15,6 +15,9 @@ wikipedia https://en.wikipedia.org/wiki/Meson_(software)
 githubLanguage Meson
  trendingProjectsCount 0
 
+pygmentsHighlighter Meson
+ filename meson.py
+ fileExtensions meson.build meson_options.txt
 linguistGrammarRepo https://github.com/TingPing/language-meson
  firstCommit 2017
  lastCommit 2018
@@ -29,6 +32,3 @@ linguistGrammarRepo https://github.com/TingPing/language-meson
 fileType text
 isOpenSource true
 centralPackageRepositoryCount 0
-pygmentsHighlighter Meson
- filename meson.py
- fileExtensions meson.build meson_options.txt

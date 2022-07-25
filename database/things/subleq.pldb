@@ -1,5 +1,9 @@
 title Subleq
+appeared 2009
 type isa
+creators David Roberts
+fileExtensions sq
+
 githubRepo https://github.com/davidar/subleq
  firstCommit 2009
  stars 94
@@ -9,7 +13,21 @@ githubRepo https://github.com/davidar/subleq
  updated 2022
  description CPU design and toolchain for a simple computer architecture
  issues 0
-fileExtensions sq
+
+leachim6 SubleQ
+ filepath s/SubleQ.sq
+ fileExtensions sq
+ example
+  loop:       hello (-1)
+              minusOne loop
+              minusOne checkEnd+1
+  checkEnd:   Z hello (-1) 
+              Z Z loop
+  				
+  . minusOne: -1
+  . hello: "Hello World\n" Z: 0
+  
+
 rijuRepl https://riju.codes/subleq
  example
   12 12 3
@@ -30,19 +48,4 @@ rijuRepl https://riju.codes/subleq
   32 119 111
   114 108 100
   33 10 53
-  
-appeared 2009
-creators David Roberts
-leachim6 SubleQ
- filepath s/SubleQ.sq
- fileExtensions sq
- example
-  loop:       hello (-1)
-              minusOne loop
-              minusOne checkEnd+1
-  checkEnd:   Z hello (-1) 
-              Z Z loop
-  				
-  . minusOne: -1
-  . hello: "Hello World\n" Z: 0
   

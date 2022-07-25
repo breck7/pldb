@@ -1,35 +1,15 @@
 title Lily
 appeared 2011
 type pl
+description An interpreted language with a focus on expressiveness and type safety
+website http://lily-lang.org
+webRepl http://lily-lang.org/intro-sandbox.html
+domainName lily-lang.org
+ registered 2016
 
 features
  hasComments true
  hasSemanticIndentation false
-
-description An interpreted language with a focus on expressiveness and type safety
-
-githubRepo https://github.com/FascinatedBox/lily
- firstCommit 2011
- stars 1079
- forks 39
- subscribers 32
- created 2014
- updated 2022
- description Interpreted language focused on expressiveness and type safety.
- issues 0
-
-website http://lily-lang.org
-gitlabRepo https://gitlab.com/FascinatedBox/lily
-
-tryItOnline lily
-
-fileType text
-isOpenSource true
-
-rosettaCode Lily
-webRepl http://lily-lang.org/intro-sandbox.html
-
-centralPackageRepositoryCount 0
 
 example
  scoped enum Color { Black, Blue, Cyan, Green, Magenta, Red, White, Yellow }
@@ -47,5 +27,22 @@ example
  
  terms.each(|e| e.width += 20 )
       |> print
-domainName lily-lang.org
- registered 2016
+
+githubRepo https://github.com/FascinatedBox/lily
+ firstCommit 2011
+ stars 1079
+ forks 39
+ subscribers 32
+ created 2014
+ updated 2022
+ description Interpreted language focused on expressiveness and type safety.
+ issues 0
+gitlabRepo https://gitlab.com/FascinatedBox/lily
+
+rosettaCode Lily
+
+tryItOnline lily
+
+fileType text
+isOpenSource true
+centralPackageRepositoryCount 0

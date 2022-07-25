@@ -1,6 +1,17 @@
 title Uniface
 appeared 1994
 type pl
+website http://uniface.com
+domainName uniface.com
+ registered 1998
+
+features
+ hasPrintDebugging true
+ hasStrings true
+  "Hello world"
+
+printToken message
+stringToken "
 
 wikipedia https://en.wikipedia.org/wiki/Uniface_(programming_language)
  related mysql smtp c java unix linux sql postgresql
@@ -12,25 +23,13 @@ wikipedia https://en.wikipedia.org/wiki/Uniface_(programming_language)
  dailyPageViews 35
  appeared 1994
 
-website http://uniface.com
-
-twitter uniface
-
-fileType text
-
-rosettaCode Uniface
-
-centralPackageRepositoryCount 0
 leachim6 Uniface
  filepath u/Uniface.uniface
  fileExtensions uniface
  example
   message "Hello World"
-printToken message
-features
- hasPrintDebugging true
- hasStrings true
-  "Hello world"
-domainName uniface.com
- registered 1998
-stringToken "
+rosettaCode Uniface
+
+twitter uniface
+fileType text
+centralPackageRepositoryCount 0

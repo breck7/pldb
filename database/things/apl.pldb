@@ -2,6 +2,10 @@ title APL
 appeared 1964
 type pl
 creators Kenneth E. Iverson
+standsFor A Programming Language
+country United States
+
+visualParadigm false
 
 features
  hasComments true
@@ -13,6 +17,9 @@ features
  hasSemanticIndentation false
  hasStrings true
   'Hello world'
+
+lineCommentToken ⍝
+stringToken '
 
 wikipedia https://en.wikipedia.org/wiki/APL_(programming_language)
  example
@@ -31,11 +38,10 @@ githubLanguage APL
  fileExtensions apl dyalog
  trendingProjectsCount 0
 
-helloWorldCollection A Programming Language
- ⍝ Hello World in APL
- 
- ⎕←\'Hello World\'
-
+codeMirror apl
+pygmentsHighlighter APL
+ filename apl.py
+ fileExtensions apl aplf aplo apln aplc apli dyalog
 linguistGrammarRepo https://github.com/Alhadis/language-apl.git
  firstCommit 2016
  lastCommit 2018
@@ -52,46 +58,14 @@ linguistGrammarRepo https://github.com/Alhadis/language-apl.git
   )OFF
   
 
-standsFor A Programming Language
-
-replit apl
-
-country United States
-fileType text
-
-tiobe APL
-
 projectEuler APL/J/K
  memberCount
   2022 2478
   2019 332
-
-hopl 18
-
-codeMirror apl
-
-rosettaCode APL
-
-lineCommentToken ⍝
-visualParadigm false
-jupyterKernel https://github.com/Dyalog/dyalog-jupyter-kernel
-stackOverflowSurvey
- 2021
-  users 536
-  medianSalary 75631
-  fans 568
-  percentageUsing 0.01
-centralPackageRepositoryCount 0
-rijuRepl https://riju.codes/apl
- example
-  'Hello, world!'
-  
- description Array-based programming language using large range of special symbols for concision
- fileExtensions apl
- githubRepo https://savannah.gnu.org/svn/?group=apl
-pygmentsHighlighter APL
- filename apl.py
- fileExtensions apl aplf aplo apln aplc apli dyalog
+helloWorldCollection A Programming Language
+ ⍝ Hello World in APL
+ 
+ ⎕←\'Hello World\'
 leachim6 APL
  filepath a/APL.apl
  fileExtensions apl
@@ -99,4 +73,27 @@ leachim6 APL
   ⎕←'Hello World'
   
   
-stringToken '
+rosettaCode APL
+
+rijuRepl https://riju.codes/apl
+ example
+  'Hello, world!'
+  
+ description Array-based programming language using large range of special symbols for concision
+ fileExtensions apl
+ githubRepo https://savannah.gnu.org/svn/?group=apl
+replit apl
+
+stackOverflowSurvey
+ 2021
+  users 536
+  medianSalary 75631
+  fans 568
+  percentageUsing 0.01
+
+tiobe APL
+hopl 18
+
+jupyterKernel https://github.com/Dyalog/dyalog-jupyter-kernel
+fileType text
+centralPackageRepositoryCount 0

@@ -1,7 +1,8 @@
 title Line Comments
 type feature
-psuedoExample # Hello PLDB
 description Comments that start with a character and continue until end of line.
 reference https://en.wikipedia.org/wiki/Comparison_of_programming_languages_(syntax)#Comments
+
+psuedoExample # Hello PLDB
 featureKeyword hasLineComments
 tokenKeyword lineCommentToken

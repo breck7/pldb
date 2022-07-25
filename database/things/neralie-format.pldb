@@ -1,11 +1,10 @@
 title neralie-format
 appeared 2017
 type timeFormat
+description This decimal clock has two groups of 3 digits, called the beat & the pulse. A beat contains 1000 pulses, and equivalent to 86.4 seconds.
+website https://wiki.xxiivv.com/#neralie
+domainName wiki.xxiivv.com
 
 example
  6:00  250:000 12:00 500:000
  16:00 750:000 Now 384:908
-
-description This decimal clock has two groups of 3 digits, called the beat & the pulse. A beat contains 1000 pulses, and equivalent to 86.4 seconds.
-website https://wiki.xxiivv.com/#neralie
-domainName wiki.xxiivv.com

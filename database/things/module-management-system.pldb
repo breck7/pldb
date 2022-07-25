@@ -1,12 +1,17 @@
 title Module Management System
 appeared 2005
 type pl
-
 description MMK is similar in functionality to Digital's DEC/Module Management System (MMS), and understands a syntax in its description files which is a superset of that which is understood by MMS.
+reference https://github.com/endlesssoftware/mmk
 
-githubLanguage Module Management System
- fileExtensions mms mmk
- trendingProjectsCount 0
+features
+ hasLineComments true
+  ! A comment
+ hasComments true
+  ! A comment
+ hasSemanticIndentation false
+
+lineCommentToken !
 
 example
  !
@@ -40,13 +45,9 @@ example
          del *.obj;*
          del *.exe;*
 
-reference https://github.com/endlesssoftware/mmk
+githubLanguage Module Management System
+ fileExtensions mms mmk
+ trendingProjectsCount 0
+
 fileType text
 centralPackageRepositoryCount 0
-lineCommentToken !
-features
- hasLineComments true
-  ! A comment
- hasComments true
-  ! A comment
- hasSemanticIndentation false

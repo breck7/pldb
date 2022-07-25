@@ -1,6 +1,9 @@
 title Kalyn
-website https://intuitiveexplanations.com/tech/kalyn
 appeared 2020
+type pl
+creators Radon Rosborough
+website https://intuitiveexplanations.com/tech/kalyn
+
 githubRepo https://github.com/radian-software/kalyn
  firstCommit 2020
  stars 117
@@ -10,8 +13,7 @@ githubRepo https://github.com/radian-software/kalyn
  updated 2022
  description ⚗️ Self-hosting compiler from a Haskell-like Lisp directly to x86-64, from scratch.
  issues 20
-creators Radon Rosborough
-type pl
+
 rijuRepl https://riju.codes/kalyn
  example
   (import "/opt/kalyn/Stdlib.kalyn")

@@ -1,14 +1,12 @@
 title Unicon
 appeared 2008
 type pl
+creators Clint Jeffery
+website http://www.unicon.org/
+domainName unicon.org
+ registered 2004
 
-example
- procedure main()
-  w := open("test UNICON window", "g")
-  write(w, "Hello, World!")
-  read(w)
-  close(w)
- end
+related icon
 
 features
  hasLineComments true
@@ -19,6 +17,18 @@ features
  hasSemanticIndentation false
  hasStrings true
   "Hello world"
+
+lineCommentToken #
+printToken write
+stringToken "
+
+example
+ procedure main()
+  w := open("test UNICON window", "g")
+  write(w, "Hello, World!")
+  read(w)
+  close(w)
+ end
 
 wikipedia https://en.wikipedia.org/wiki/Unicon_(programming_language)
  example
@@ -37,23 +47,14 @@ wikipedia https://en.wikipedia.org/wiki/Unicon_(programming_language)
  revisionCount 82
  appeared 2008
 
-related icon
-website http://www.unicon.org/
-fileType text
-isOpenSource true
+pygmentsHighlighter Unicon
+ filename unicon.py
+ fileExtensions icn
 
 projectEuler Unicon
  memberCount
   2019 20
   2022 20
-
-rosettaCode Unicon
-lineCommentToken #
-centralPackageRepositoryCount 0
-creators Clint Jeffery
-pygmentsHighlighter Unicon
- filename unicon.py
- fileExtensions icn
 leachim6 Unicon
  filepath u/Unicon.icn
  fileExtensions icn
@@ -62,7 +63,8 @@ leachim6 Unicon
       write("Hello World")
   end
   
-printToken write
-domainName unicon.org
- registered 2004
-stringToken "
+rosettaCode Unicon
+
+fileType text
+isOpenSource true
+centralPackageRepositoryCount 0

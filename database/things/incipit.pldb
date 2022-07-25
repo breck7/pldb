@@ -1,16 +1,9 @@
 title Incipit
-type textMarkup
-githubRepo https://github.com/phillbush/incipit
- firstCommit 2021
- stars 8
- forks 0
- subscribers 3
- created 2021
- updated 2021
- description the incipit plain text markup language, and some troff macro packages
- issues 0
 appeared 2021
+type textMarkup
+creators Lucas de Sena
 description The ‘Incipit Markup Language’ (or ‘Incipit’, for short) is a plain text markup language that uses Unicode characters and the structure of the text itself to format documents.
+
 example
  .Enumeration incipit.
  Each enumeration item can have a incipit colon, which will be explained
@@ -30,4 +23,13 @@ example
      • Third subitem of third item.
      • Fourth subitem of third item.
  • (D) Fourth item.
-creators Lucas de Sena
+
+githubRepo https://github.com/phillbush/incipit
+ firstCommit 2021
+ stars 8
+ forks 0
+ subscribers 3
+ created 2021
+ updated 2021
+ description the incipit plain text markup language, and some troff macro packages
+ issues 0

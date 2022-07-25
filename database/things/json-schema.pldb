@@ -1,7 +1,14 @@
 title JSON Schema
-description JSON Schema is a vocabulary that allows you to annotate and validate JSON documents.
+appeared 2010
 type dataValidationLanguage
+creators Kris Zyp
+description JSON Schema is a vocabulary that allows you to annotate and validate JSON documents.
+website http://json-schema.org/
+domainName json-schema.org
+ registered 2007
+
 related livr
+
 example
  {
    "$id": "https://example.com/calendar.schema.json",
@@ -50,6 +57,7 @@ example
      }
    }
  }
+
 githubRepo https://github.com/json-schema-org/json-schema-spec
  firstCommit 2010
  stars 2623
@@ -59,8 +67,3 @@ githubRepo https://github.com/json-schema-org/json-schema-spec
  updated 2022
  description The JSON Schema I-D sources
  issues 90
-website http://json-schema.org/
-appeared 2010
-creators Kris Zyp
-domainName json-schema.org
- registered 2007

@@ -1,6 +1,17 @@
 title tht
 appeared 2017
 type pl
+website https://tht-lang.org/
+domainName tht-lang.org
+
+features
+ hasLineComments true
+  // A comment
+ hasComments true
+  // A comment
+ hasSemanticIndentation false
+
+lineCommentToken //
 
 example
  // Familiar variable and List syntax.
@@ -46,15 +57,6 @@ githubRepo https://github.com/joelesko/tht
  description THT Programming Language
  issues 0
 
-website https://tht-lang.org/
 hackerNewsDiscussions
  id|title|time|timestamp|by|comments|score
  15163343|Show HN: THT – a cleaner, safer language that compiles to PHP|2017-09-03 19:29:56 UTC|1504466996|jlesk|0|3
-lineCommentToken //
-features
- hasLineComments true
-  // A comment
- hasComments true
-  // A comment
- hasSemanticIndentation false
-domainName tht-lang.org

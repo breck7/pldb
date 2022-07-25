@@ -1,21 +1,25 @@
 title Tree Notation
+appeared 2017
 type dataNotation
 creators Breck Yunits
-related i-expressions json yaml toml xml haml ini grammar
-appeared 2017
+description A minimalist notation consisting of just the word break rule and the off-side rule.
 website https://treenotation.org/
 webRepl https://jtree.treenotation.org/sandbox/
-description A minimalist notation consisting of just the word break rule and the off-side rule.
+domainName treenotation.org
+ registered 2019
+
+related i-expressions json yaml toml xml haml ini grammar
+
 features
  hasSemanticIndentation true
   example
    title Tree Notation
+
 example
  title Tree Notation
  type dataNotation
  example
   title Tree Notation
   type dataNotation
-domainName treenotation.org
- registered 2019
+
 twitter treenotation

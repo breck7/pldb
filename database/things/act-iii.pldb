@@ -1,6 +1,8 @@
 title ACT-III
 appeared 1956
 type pl
+description The LGP-30 had a high-level language called ACT-III. Every token had to be delimited by an apostrophe, making it hard to read and even harder to prepare tapes.
+country United States
 
 example
  s1'dim'a'500'm'500'q'500''
@@ -13,8 +15,6 @@ example
  s3'sqrt'd.';'sqrd.''
  1'unflo'sqrd.'i/'10';'sqrd''
  2010'print'sqrd.''2000'iprt'sqrd''cr''cr''
-
-description The LGP-30 had a high-level language called ACT-III. Every token had to be delimited by an apostrophe, making it hard to read and even harder to prepare tapes.
 
 wikipedia https://en.wikipedia.org/wiki/LGP-30
  example
@@ -39,9 +39,7 @@ wikipedia https://en.wikipedia.org/wiki/LGP-30
  dailyPageViews 37
  appeared 1956
 
-country United States
-fileType text
-
 hopl 3844
 
+fileType text
 centralPackageRepositoryCount 0

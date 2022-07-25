@@ -1,6 +1,7 @@
 title Gremlin
 appeared 2009
 type queryLanguage
+creators Marko A. Rodriguez
 
 example
  g.V().hasLabel('movie').values('year').min()
@@ -27,4 +28,3 @@ wikipedia https://en.wikipedia.org/wiki/Gremlin_(programming_language)
 fileType text
 isOpenSource true
 centralPackageRepositoryCount 0
-creators Marko A. Rodriguez

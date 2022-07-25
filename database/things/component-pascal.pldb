@@ -1,11 +1,26 @@
 title COMPONENT PASCAL
 appeared 1997
 type pl
+country Switzerland
+
+features
+ hasMultiLineComments true
+  (* A comment
+  *)
+ hasComments true
+  (* A comment
+  *)
+ hasSemanticIndentation false
+
+multiLineCommentTokens (* *)
 
 githubLanguage Component Pascal
  fileExtensions cp cps
  trendingProjectsCount 0
 
+pygmentsHighlighter Component Pascal
+ filename oberon.py
+ fileExtensions cp cps
 linguistGrammarRepo https://github.com/textmate/pascal.tmbundle
  firstCommit 2005
  lastCommit 2016
@@ -85,25 +100,11 @@ linguistGrammarRepo https://github.com/textmate/pascal.tmbundle
   
   END ObxFact.
 
-country Switzerland
-fileType text
-
 projectEuler Component Pascal
  memberCount
   2022 8
 
 hopl 1209
 
+fileType text
 centralPackageRepositoryCount 0
-pygmentsHighlighter Component Pascal
- filename oberon.py
- fileExtensions cp cps
-multiLineCommentTokens (* *)
-features
- hasMultiLineComments true
-  (* A comment
-  *)
- hasComments true
-  (* A comment
-  *)
- hasSemanticIndentation false

@@ -1,6 +1,9 @@
 title RubyGems
 appeared 2018
 type packageManager
+website https://rubygems.org/
+domainName rubygems.org
+ registered 2004
 
 wikipedia https://en.wikipedia.org/wiki/RubyGems
  summary RubyGems is a package manager for the Ruby programming language that provides a standard format for distributing Ruby programs and libraries (in a self-contained format called a "gem"), a tool designed to easily manage the installation of gems, and a server for distributing them. It was created by Chad Fowler and Richard Kilmer during RubyConf 2004.The interface for RubyGems is a command-line tool called gem which can install and manage libraries (the gems). RubyGems integrates with Ruby run-time loader to help find and load installed gems from standardized library folders. Though it is possible to use a private RubyGems repository, the public repository is most commonly used for gem management. The public repository helps users find gems, resolve dependencies and install them. RubyGems is bundled with the standard Ruby package as of Ruby 1.9.
@@ -9,9 +12,6 @@ wikipedia https://en.wikipedia.org/wiki/RubyGems
  dailyPageViews 114
  appeared 2018
 
-website https://rubygems.org/
-forLanguages ruby
 packageCount 154445
 packageInstallCount 30861856790
-domainName rubygems.org
- registered 2004
+forLanguages ruby

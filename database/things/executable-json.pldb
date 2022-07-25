@@ -3,9 +3,6 @@ appeared 2013
 type pl
 creators Todd Davies
 website https://gist.github.com/Todd-Davies/7666505#file-executable-json
-hackerNewsDiscussions
- id|title|time|timestamp|by|comments|score
- 6804341|Show HN: A programming language with a JSON parsable syntax|2013-11-26 21:26:30 UTC|1385501190|todd-davies|0|3
 
 example
  [
@@ -52,3 +49,7 @@ example
    },
    ["!myMethod $x $y"]
  ]
+
+hackerNewsDiscussions
+ id|title|time|timestamp|by|comments|score
+ 6804341|Show HN: A programming language with a JSON parsable syntax|2013-11-26 21:26:30 UTC|1385501190|todd-davies|0|3

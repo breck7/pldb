@@ -1,6 +1,23 @@
 title CLIPS
 appeared 1985
 type pl
+website http://www.clipsrules.net/
+standsFor C Language Integrated Production System
+country United States
+domainName clipsrules.net
+ registered 2016
+
+features
+ hasLineComments true
+  ; A comment
+ hasComments true
+  ; A comment
+ hasSemanticIndentation false
+ hasStrings true
+  "Hello world"
+
+lineCommentToken ;
+stringToken "
 
 example
   (deftemplate car_problem
@@ -337,29 +354,6 @@ linguistGrammarRepo https://github.com/psicomante/CLIPS-sublime
      
   
 
-website http://www.clipsrules.net/
-standsFor C Language Integrated Production System
-
-tryItOnline clips
-
-country United States
-fileType text
-wordRank 2427
-
-hopl 1759
-
-rosettaCode CLIPS
-
-centralPackageRepositoryCount 0
-lineCommentToken ;
-features
- hasLineComments true
-  ; A comment
- hasComments true
-  ; A comment
- hasSemanticIndentation false
- hasStrings true
-  "Hello world"
 leachim6 CLIPS
  filepath c/CLIPS.clips
  fileExtensions clips
@@ -373,6 +367,12 @@ leachim6 CLIPS
   
   (run)
   
-domainName clipsrules.net
- registered 2016
-stringToken "
+rosettaCode CLIPS
+
+tryItOnline clips
+
+hopl 1759
+
+fileType text
+wordRank 2427
+centralPackageRepositoryCount 0

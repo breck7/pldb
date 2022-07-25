@@ -2,6 +2,15 @@ title datascript
 appeared 2014
 type queryLanguage
 
+features
+ hasLineComments true
+  ; A comment
+ hasComments true
+  ; A comment
+ hasSemanticIndentation false
+
+lineCommentToken ;
+
 example
  (require '[datascript.core :as d])
  
@@ -33,11 +42,3 @@ githubRepo https://github.com/tonsky/DataScript
  updated 2022
  description Immutable database and Datalog query engine for Clojure, ClojureScript and JS
  issues 75
-
-lineCommentToken ;
-features
- hasLineComments true
-  ; A comment
- hasComments true
-  ; A comment
- hasSemanticIndentation false

@@ -1,6 +1,18 @@
 title LFE
 appeared 2008
 type pl
+creators Robert Virding
+reference https://lfe.io/
+standsFor Lisp Flavored Erlang
+
+features
+ hasLineComments true
+  ; A comment
+ hasComments true
+  ; A comment
+ hasSemanticIndentation false
+
+lineCommentToken ;
 
 wikipedia https://en.wikipedia.org/wiki/LFE_(programming_language)
  example
@@ -180,19 +192,8 @@ linguistGrammarRepo https://github.com/textmate/lisp.tmbundle
     (get-church (zero) 0 integer))
   
 
-reference https://lfe.io/
-standsFor Lisp Flavored Erlang
-fileType text
-isOpenSource true
-
 rosettaCode LFE
 
+fileType text
+isOpenSource true
 centralPackageRepositoryCount 0
-creators Robert Virding
-lineCommentToken ;
-features
- hasLineComments true
-  ; A comment
- hasComments true
-  ; A comment
- hasSemanticIndentation false

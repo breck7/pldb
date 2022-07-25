@@ -1,6 +1,15 @@
 title Cyclone
 appeared 2001
 type pl
+website http://cyclone.thelanguage.org
+country United States
+corporateDevelopers AT&T Labs
+domainName cyclone.thelanguage.org
+
+features
+ hasPrintDebugging true
+
+printToken printf
 
 wikipedia https://en.wikipedia.org/wiki/Cyclone_(programming_language)
  example
@@ -20,14 +29,6 @@ wikipedia https://en.wikipedia.org/wiki/Cyclone_(programming_language)
  dailyPageViews 43
  appeared 2001
 
-website http://cyclone.thelanguage.org
-country United States
-fileType text
-
-hopl 3312
-
-centralPackageRepositoryCount 0
-corporateDevelopers AT&T Labs
 leachim6 Cyclone
  filepath c/Cyclone.cyc
  fileExtensions cyc
@@ -38,7 +39,8 @@ leachim6 Cyclone
    return 0;
   }
   
-printToken printf
-features
- hasPrintDebugging true
-domainName cyclone.thelanguage.org
+
+hopl 3312
+
+fileType text
+centralPackageRepositoryCount 0

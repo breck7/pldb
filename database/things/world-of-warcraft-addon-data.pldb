@@ -1,6 +1,7 @@
 title World of Warcraft Addon Data
 appeared 2012
 type application
+reference http://wowwiki.wikia.com/wiki/TOC_format
 
 example
  ## Interface: 70300
@@ -29,6 +30,5 @@ linguistGrammarRepo https://github.com/nebularg/language-toc-wow
   Vahevia.xml
   Lotus_Vane.lua
 
-reference http://wowwiki.wikia.com/wiki/TOC_format
 fileType text
 centralPackageRepositoryCount 0

@@ -1,8 +1,26 @@
 title F*
 appeared 2014
 type pl
-corporateDevelopers Microsoft
 description F* is a dependently typed programming language and proof assistant. In practice, rather than a single language, the F* ecosystem is also a collection of domain-specific languages (DSLs). A common use of F* is to embed within it programming languages at different levels of abstraction or for specific programming tasks, and for the embedded language to be engineered with domain-specific reasoning, proof automation, and compilation backends. 
+website https://www.fstar-lang.org/
+corporateDevelopers Microsoft
+domainName fstar-lang.org
+ registered 2014
+
+features
+ hasPrintDebugging true
+
+printToken FStar.IO.print_string
+
+githubRepo https://github.com/FStarLang/FStar
+ stars 2263
+ forks 216
+ subscribers 84
+ created 2014
+ updated 2022
+ firstCommit 2014
+ description A Proof-oriented Programming Language
+ issues 407
 
 wikipedia https://en.wikipedia.org/wiki/F*_(programming_language)
  related linux f-sharp ocaml standard-ml ml c javascript
@@ -18,29 +36,15 @@ wikipedia https://en.wikipedia.org/wiki/F*_(programming_language)
 githubLanguage F*
  fileExtensions fst
 
-githubRepo https://github.com/FStarLang/FStar
- stars 2263
- forks 216
- subscribers 84
- created 2014
- updated 2022
- firstCommit 2014
- description A Proof-oriented Programming Language
- issues 407
-
+pygmentsHighlighter FStar
+ filename ml.py
+ fileExtensions fst fsti
 linguistGrammarRepo https://github.com/FStarLang/atom-fstar
  firstCommit 2015
  lastCommit 2018
  committerCount 8
  commitCount 28
 
-website https://www.fstar-lang.org/
-fileType text
-isOpenSource true
-centralPackageRepositoryCount 0
-pygmentsHighlighter FStar
- filename ml.py
- fileExtensions fst fsti
 leachim6 FStar
  filepath f/FStar.fst
  fileExtensions fst
@@ -48,8 +52,7 @@ leachim6 FStar
   module Hello
   
   let main = FStar.IO.print_string "Hello World\n"
-printToken FStar.IO.print_string
-features
- hasPrintDebugging true
-domainName fstar-lang.org
- registered 2014
+
+fileType text
+isOpenSource true
+centralPackageRepositoryCount 0

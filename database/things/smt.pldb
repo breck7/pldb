@@ -1,6 +1,18 @@
 title SMT
 appeared 2003
 type pl
+description Common input and output languages for SMT solvers.
+website http://smtlib.cs.uiowa.edu/language.shtml
+standsFor Satisfiability Modulo Theories
+
+features
+ hasLineComments true
+  ; A comment
+ hasComments true
+  ; A comment
+ hasSemanticIndentation false
+
+lineCommentToken ;
 
 example
  ; Getting assertions
@@ -22,8 +34,6 @@ example
   (get-assertions)
   ; ()
  (exit)
-
-description Common input and output languages for SMT solvers.
 
 githubLanguage SMT
  fileExtensions smt2 smt
@@ -57,14 +67,5 @@ linguistGrammarRepo https://github.com/SRI-CSL/SMT.tmbundle.git
   (check-sat)
   (exit)
 
-website http://smtlib.cs.uiowa.edu/language.shtml
-standsFor Satisfiability Modulo Theories
 fileType text
 centralPackageRepositoryCount 0
-lineCommentToken ;
-features
- hasLineComments true
-  ; A comment
- hasComments true
-  ; A comment
- hasSemanticIndentation false

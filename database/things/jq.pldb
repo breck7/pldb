@@ -1,6 +1,9 @@
 title jq
 appeared 2012
 type queryLanguage
+creators Stephen Dolan
+website https://stedolan.github.io/jq/
+reference https://jqplay.org/
 
 githubRepo https://github.com/stedolan/jq
  firstCommit 2012
@@ -12,22 +15,16 @@ githubRepo https://github.com/stedolan/jq
  description Command-line JSON processor
  issues 737
 
-website https://stedolan.github.io/jq/
-reference https://jqplay.org/
-
-tryItOnline jq
-
-isOpenSource true
-
 projectEuler jq
  memberCount
   2022 5
-
 rosettaCode Jq
 
-centralPackageRepositoryCount 0
 rijuRepl https://riju.codes/jq
  example
   "Hello, world!"
   
-creators Stephen Dolan
+tryItOnline jq
+
+isOpenSource true
+centralPackageRepositoryCount 0

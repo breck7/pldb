@@ -2,6 +2,10 @@ title Notation3
 appeared 1998
 type dataNotation
 creators Tim Berners-Lee
+reference https://www.w3.org/DesignIssues/N3Resources
+aka n3
+
+related turtle rdf rdfa
 
 example
  @prefix dc: <http://purl.org/dc/elements/1.1/>.
@@ -16,7 +20,3 @@ wikipedia https://en.wikipedia.org/wiki/Notation3
  pageId 2906123
  dailyPageViews 74
  appeared 2008
-
-reference https://www.w3.org/DesignIssues/N3Resources
-aka n3
-related turtle rdf rdfa

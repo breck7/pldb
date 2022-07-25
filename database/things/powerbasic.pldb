@@ -2,6 +2,15 @@ title PowerBASIC
 appeared 1989
 type pl
 
+features
+ hasLineComments true
+  ' A comment
+ hasComments true
+  ' A comment
+ hasSemanticIndentation false
+
+lineCommentToken '
+
 wikipedia https://en.wikipedia.org/wiki/PowerBASIC
  example
   #Compile Exe ' using either PBCC6 or PBWIN10 compiler
@@ -25,14 +34,6 @@ wikipedia https://en.wikipedia.org/wiki/PowerBASIC
  dailyPageViews 43
  appeared 1989
 
-
 rosettaCode PowerBASIC
 
 centralPackageRepositoryCount 0
-lineCommentToken '
-features
- hasLineComments true
-  ' A comment
- hasComments true
-  ' A comment
- hasSemanticIndentation false

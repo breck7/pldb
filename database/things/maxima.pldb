@@ -1,6 +1,8 @@
 title Maxima
 appeared 1982
 type pl
+website http://maxima.sourceforge.net/
+domainName maxima.sourceforge.net
 
 features
  hasComments true
@@ -8,6 +10,9 @@ features
  hasSemanticIndentation false
  hasStrings true
   "Hello world"
+
+printToken print
+stringToken "
 
 wikipedia https://en.wikipedia.org/wiki/Maxima_(software)
  related common-lisp unix linux android algol lisp gnuplot fortran jupyter-editor python qt sagemath r lyx-editor emacs-editor isbn
@@ -19,30 +24,24 @@ wikipedia https://en.wikipedia.org/wiki/Maxima_(software)
  dailyPageViews 134
  appeared 1982
 
-website http://maxima.sourceforge.net/
-
-tryItOnline maxima
-
-fileType text
-isOpenSource true
+pygmentsHighlighter Maxima
+ filename maxima.py
+ fileExtensions mac max
 
 projectEuler Maxima
  memberCount
   2022 19
-
-rosettaCode Maxima
-
-jupyterKernel https://github.com/robert-dodier/maxima-jupyter
-centralPackageRepositoryCount 0
-pygmentsHighlighter Maxima
- filename maxima.py
- fileExtensions mac max
 leachim6 Maxima
  filepath m/Maxima.max
  fileExtensions max
  example
   print("Hello World")$
   
-printToken print
-domainName maxima.sourceforge.net
-stringToken "
+rosettaCode Maxima
+
+tryItOnline maxima
+
+jupyterKernel https://github.com/robert-dodier/maxima-jupyter
+fileType text
+isOpenSource true
+centralPackageRepositoryCount 0

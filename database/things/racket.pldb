@@ -2,6 +2,13 @@ title Racket
 appeared 1994
 type pl
 creators Matthias Felleisen
+website http://racket-lang.org
+fileExtensions rkt rktl rktd scrbl plt ss scm
+corporateDevelopers PLT Inc.
+domainName racket-lang.org
+ registered 2010
+
+visualParadigm false
 
 features
  hasStrings true
@@ -33,6 +40,10 @@ features
  hasPrintDebugging true
  hasSemanticIndentation false
 
+lineCommentToken ;
+printToken display
+stringToken "
+
 wikipedia https://en.wikipedia.org/wiki/Racket_(programming_language)
  example
   #lang typed/racket
@@ -58,12 +69,9 @@ githubLanguage Racket
   salimt Courses- https://github.com/salimt.png https://github.com/salimt/Courses- Racket #3c5caa 43 73 9 "Quiz & Assignment of Coursera"
  trendingProjectsCount 2
 
-helloWorldCollection Racket
- ;; Hello world in Racket
- 
- #lang racket/base
- "Hello, World!"
-
+pygmentsHighlighter Racket
+ filename lisp.py
+ fileExtensions rkt rktd rktl
 linguistGrammarRepo https://github.com/soegaard/racket-highlight-for-github
  firstCommit 2014
  lastCommit 2015
@@ -90,49 +98,15 @@ linguistGrammarRepo https://github.com/soegaard/racket-highlight-for-github
   (displayln "Go to the store and buy some more, 99 bottles of beer on the wall.")
   
 
-website http://racket-lang.org
-
-tryItOnline racket
-
-twitter racketlang
-
-fileExtensions rkt rktl rktd scrbl plt ss scm
-fileType text
-isOpenSource true
-
-tiobe Racket
-
-meetup racket
- memberCount 735
- groupCount 6
-
-linkedInSkill racket
- 2018 4702
-
 projectEuler Racket
  memberCount
   2019 282
   2022 316
-
-rosettaCode Racket
-
-conference https://con.racket-lang.org/ RacketCon
-indeedJobs racket engineer
- 2017 1
-
-lineCommentToken ;
-visualParadigm false
-jupyterKernel https://github.com/rmculpepper/iracket
-packageRepository https://pkgs.racket-lang.org/
-rijuRepl https://riju.codes/racket
- example
-  #lang racket/base
-  (display "Hello, world!\n")
-  
-corporateDevelopers PLT Inc.
-pygmentsHighlighter Racket
- filename lisp.py
- fileExtensions rkt rktd rktl
+helloWorldCollection Racket
+ ;; Hello world in Racket
+ 
+ #lang racket/base
+ "Hello, World!"
 leachim6 Racket
  filepath r/Racket.rkt
  fileExtensions rkt
@@ -140,7 +114,30 @@ leachim6 Racket
   #lang racket
   "Hello World"
   
-printToken display
-domainName racket-lang.org
- registered 2010
-stringToken "
+rosettaCode Racket
+
+rijuRepl https://riju.codes/racket
+ example
+  #lang racket/base
+  (display "Hello, world!\n")
+  
+tryItOnline racket
+
+indeedJobs racket engineer
+ 2017 1
+linkedInSkill racket
+ 2018 4702
+
+meetup racket
+ memberCount 735
+ groupCount 6
+conference https://con.racket-lang.org/ RacketCon
+
+tiobe Racket
+
+packageRepository https://pkgs.racket-lang.org/
+
+twitter racketlang
+jupyterKernel https://github.com/rmculpepper/iracket
+fileType text
+isOpenSource true

@@ -1,13 +1,14 @@
 title Kit
 appeared 2012
 type template
+description HTML template language from CodeKit
+website https://codekitapp.com/help/kit/
+reference https://www.hongkiat.com/blog/kit-language/
 
 example
  <!-- @page_name: Homepage -->
  <!-- @body_class: home blog -->
  <!-- @include inc/opening.kit -->
-
-description HTML template language from CodeKit
 
 githubLanguage Kit
  fileExtensions kit
@@ -29,8 +30,6 @@ linguistGrammarRepo https://github.com/atom/language-html
   	</p>
   </section>
 
-website https://codekitapp.com/help/kit/
-reference https://www.hongkiat.com/blog/kit-language/
 fileType text
 wordRank 1359
 centralPackageRepositoryCount 0

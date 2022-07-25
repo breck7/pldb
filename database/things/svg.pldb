@@ -1,6 +1,8 @@
 title SVG
 appeared 2001
 type textMarkup
+standsFor Scalable Vector Graphics
+corporateDevelopers W3C
 
 features
  hasLineComments false
@@ -9,6 +11,8 @@ features
   -->
  hasComments true
  hasSemanticIndentation false
+
+multiLineCommentTokens <!-- -->
 
 wikipedia https://en.wikipedia.org/wiki/Scalable_Vector_Graphics
  example
@@ -32,6 +36,12 @@ githubLanguage SVG
  fileExtensions svg
  trendingProjectsCount 0
 
+linguistGrammarRepo https://github.com/textmate/xml.tmbundle
+ firstCommit 2004
+ lastCommit 2018
+ committerCount 12
+ commitCount 97
+
 helloWorldCollection Scalable Vector Graphics
  <?xml version="1.0" encoding="utf-8" standalone="no"?>
  <!-- Hello World in SVG -->
@@ -45,21 +55,6 @@ helloWorldCollection Scalable Vector Graphics
      </g>
  </svg>
  
-
-linguistGrammarRepo https://github.com/textmate/xml.tmbundle
- firstCommit 2004
- lastCommit 2018
- committerCount 12
- commitCount 97
-
-standsFor Scalable Vector Graphics
-fileType text
-corporateDevelopers W3C
-centralPackageRepositoryCount 0
-goodreads
- title|year|author|goodreadsId|rating|ratings|reviews
- Svg Programming: The Graphical Web|2002|Kurt Cagle|838716|4.50|4|1
- Fundamentals of SVG Programming|2003|Oswald Campesato|838718|4.00|2|0
 leachim6 SVG
  filepath s/SVG.svg
  fileExtensions svg
@@ -74,4 +69,11 @@ leachim6 SVG
       </g>
   </svg>
   
-multiLineCommentTokens <!-- -->
+
+goodreads
+ title|year|author|goodreadsId|rating|ratings|reviews
+ Svg Programming: The Graphical Web|2002|Kurt Cagle|838716|4.50|4|1
+ Fundamentals of SVG Programming|2003|Oswald Campesato|838718|4.00|2|0
+
+fileType text
+centralPackageRepositoryCount 0

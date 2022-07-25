@@ -2,6 +2,20 @@ title LPC
 appeared 1995
 type pl
 creators Lars Pensjö
+website http://lpmuds.net
+standsFor Lars Pensjö C
+country Sweden
+domainName lpmuds.net
+ registered 2006
+
+features
+ hasLineComments true
+  // A comment
+ hasComments true
+  // A comment
+ hasSemanticIndentation false
+
+lineCommentToken //
 
 wikipedia https://en.wikipedia.org/wiki/LPC_(programming_language)
  example
@@ -25,22 +39,8 @@ helloWorldCollection Lars Pensj%C3%B6 C
         message("info","Hello World!",this_user());
  }
 
-website http://lpmuds.net
-standsFor Lars Pensjö C
-country Sweden
-fileType text
-
 tiobe LPC
-
 hopl 1409
 
+fileType text
 centralPackageRepositoryCount 0
-lineCommentToken //
-features
- hasLineComments true
-  // A comment
- hasComments true
-  // A comment
- hasSemanticIndentation false
-domainName lpmuds.net
- registered 2006

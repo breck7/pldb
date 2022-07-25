@@ -1,6 +1,9 @@
 title Object Pascal
 appeared 1986
 type pl
+country United States
+
+visualParadigm false
 
 features
  hasConstructors true
@@ -19,6 +22,8 @@ features
 
 multiLineCommentTokens (* *)
 multiLineCommentTokens { }
+stringToken '
+
 wikipedia https://en.wikipedia.org/wiki/Object_Pascal
  example
   type
@@ -42,13 +47,6 @@ wikipedia https://en.wikipedia.org/wiki/Object_Pascal
  appeared 1986
  fileExtensions p pp pas
 
-country United States
-fileType text
-
-hopl 1170
-
-visualParadigm false
-centralPackageRepositoryCount 0
 leachim6 Object Pascal
  filepath o/Object Pascal.pp
  example
@@ -72,4 +70,8 @@ leachim6 Object Pascal
      HelloWorld.Put;
      HelloWorld.Free;
   end.
-stringToken '
+
+hopl 1170
+
+fileType text
+centralPackageRepositoryCount 0

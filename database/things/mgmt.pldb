@@ -1,6 +1,18 @@
 title mgmt
 appeared 2015
 type pl
+creators James Shubin
+website https://purpleidea.com/tags/mgmtconfig/
+reference https://fosdem.org/2020/schedule/event/mgmtconfigmore/
+
+features
+ hasLineComments true
+  # A comment
+ hasComments true
+  # A comment
+ hasSemanticIndentation false
+
+lineCommentToken #
 
 example
  import "datetime"
@@ -24,16 +36,4 @@ githubRepo https://github.com/purpleidea/mgmt
  description Next generation distributed, event-driven, parallel config management!
  issues 126
 
-website https://purpleidea.com/tags/mgmtconfig/
-reference https://fosdem.org/2020/schedule/event/mgmtconfigmore/
-
 twitter purpleidea
-
-creators James Shubin
-lineCommentToken #
-features
- hasLineComments true
-  # A comment
- hasComments true
-  # A comment
- hasSemanticIndentation false

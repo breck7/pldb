@@ -1,6 +1,8 @@
 title C shell
 appeared 1978
 type pl
+website http://mx.gw.com
+domainName mx.gw.com
 
 features
  hasHereDocs true
@@ -12,6 +14,10 @@ features
  hasSemanticIndentation false
  hasStrings true
   "Hello world"
+
+lineCommentToken #
+printToken echo
+stringToken "
 
 wikipedia https://en.wikipedia.org/wiki/C_Shell
  example
@@ -26,20 +32,15 @@ wikipedia https://en.wikipedia.org/wiki/C_Shell
  revisionCount 3
  appeared 1978
 
-website http://mx.gw.com
-fileType text
-isOpenSource true
-
-tiobe C shell
-
-centralPackageRepositoryCount 0
-lineCommentToken #
 leachim6 C Shell
  filepath c/C Shell.csh
  example
   #!/bin/csh
   echo "Hello World"
   
-printToken echo
-domainName mx.gw.com
-stringToken "
+
+tiobe C shell
+
+fileType text
+isOpenSource true
+centralPackageRepositoryCount 0

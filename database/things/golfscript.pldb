@@ -1,17 +1,21 @@
 title GolfScript
-type esolang
-rijuRepl https://riju.codes/golfscript
- example
-  'Hello, world!'
-website http://www.golfscript.com/golfscript/
 appeared 2007
+type esolang
+website http://www.golfscript.com/golfscript/
+
+features
+ hasStrings true
+  "Hello world"
+
+stringToken "
+
 leachim6 Golfscript
  filepath g/Golfscript.golfscript
  fileExtensions golfscript
  example
   "Hello World"
   
-stringToken "
-features
- hasStrings true
-  "Hello world"
+
+rijuRepl https://riju.codes/golfscript
+ example
+  'Hello, world!'

@@ -1,6 +1,14 @@
 title Coconut
 appeared 2014
 type pl
+website http://coconut-lang.org/
+webRepl https://cs121-team-panda.github.io/coconut-interpreter/
+reference https://news.ycombinator.com/item?id=23759721
+domainName coconut-lang.org
+ registered 2016
+
+compilesTo python
+writtenIn python
 
 features
  hasPatternMatching true
@@ -28,6 +36,9 @@ features
  hasStrings true
   "Hello world"
 
+printToken print
+stringToken "
+
 githubRepo https://github.com/evhub/coconut
  stars 3495
  forks 104
@@ -38,18 +49,13 @@ githubRepo https://github.com/evhub/coconut
  description Simple, elegant, Pythonic functional programming.
  issues 71
 
-website http://coconut-lang.org/
-reference https://news.ycombinator.com/item?id=23759721
+leachim6 Coconut
+ filepath c/Coconut.coc
+ fileExtensions coc
+ example
+  "Hello World" |> print
+  
 
-tryItOnline coconut
-
-compilesTo python
-fileType text
-isOpenSource true
-writtenIn python
-jupyterKernel http://coconut-lang.org/
-centralPackageRepositoryCount 0
-webRepl https://cs121-team-panda.github.io/coconut-interpreter/
 rijuRepl https://riju.codes/coconut
  example
   print("Hello, world!")
@@ -58,13 +64,9 @@ rijuRepl https://riju.codes/coconut
  fileExtensions coco
  website https://coconut-lang.org/
  githubRepo https://github.com/evhub/coconut
-leachim6 Coconut
- filepath c/Coconut.coc
- fileExtensions coc
- example
-  "Hello World" |> print
-  
-printToken print
-domainName coconut-lang.org
- registered 2016
-stringToken "
+tryItOnline coconut
+
+jupyterKernel http://coconut-lang.org/
+fileType text
+isOpenSource true
+centralPackageRepositoryCount 0

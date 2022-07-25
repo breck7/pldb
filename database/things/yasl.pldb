@@ -1,6 +1,17 @@
 title Yet Another Scripting Language
 appeared 2017
 type pl
+reference https://www.reddit.com/r/ProgrammingLanguages/comments/diiqwt/request_for_feedback_on_pattern_matchingtype/
+standsFor Yet Another Scripting Language
+
+features
+ hasLineComments true
+  # A comment
+ hasComments true
+  # A comment
+ hasSemanticIndentation false
+
+lineCommentToken #
 
 example
  # simple program that iteratively calculates factorials
@@ -38,13 +49,3 @@ githubRepo https://github.com/yasl-lang/yasl
  updated 2022
  description Bytecode Interpreter for Yet Another Scripting Language (YASL).
  issues 62
-
-reference https://www.reddit.com/r/ProgrammingLanguages/comments/diiqwt/request_for_feedback_on_pattern_matchingtype/
-standsFor Yet Another Scripting Language
-lineCommentToken #
-features
- hasLineComments true
-  # A comment
- hasComments true
-  # A comment
- hasSemanticIndentation false

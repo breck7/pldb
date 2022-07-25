@@ -1,13 +1,15 @@
 title wah
 appeared 2017
 type pl
+creators Tom MacWright
+description a slightly higher-level language superset of webassembly
+
+compilesTo wasm
 
 example
  (0 = 1)
  (%$a + %$b)
  (0 + 1)
-
-description a slightly higher-level language superset of webassembly
 
 githubRepo https://github.com/tmcw/wah
  firstCommit 2017
@@ -20,7 +22,5 @@ githubRepo https://github.com/tmcw/wah
  issues 0
 
 fileType text
-compilesTo wasm
 isOpenSource true
 centralPackageRepositoryCount 0
-creators Tom MacWright

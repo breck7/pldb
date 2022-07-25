@@ -1,10 +1,9 @@
 title SaltStack
 appeared 2011
 type pl
-
-githubLanguage SaltStack
- fileExtensions sls
- trendingProjectsCount 0
+creators Thomas S Hatch
+website https://repo.saltstack.com/
+domainName repo.saltstack.com
 
 githubRepo https://github.com/saltstack/salt
  firstCommit 2011
@@ -15,6 +14,10 @@ githubRepo https://github.com/saltstack/salt
  updated 2022
  description Software to automate the management and configuration of any infrastructure or application at scale. Get access to the Salt software package repository here: 
  issues 2964
+
+githubLanguage SaltStack
+ fileExtensions sls
+ trendingProjectsCount 0
 
 linguistGrammarRepo https://github.com/saltstack/atom-salt
  firstCommit 2013
@@ -28,9 +31,6 @@ linguistGrammarRepo https://github.com/saltstack/atom-salt
       - packages
       - coffeestats
 
-website https://repo.saltstack.com/
 fileType text
 isOpenSource true
 centralPackageRepositoryCount 0
-creators Thomas S Hatch
-domainName repo.saltstack.com

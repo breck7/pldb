@@ -1,6 +1,22 @@
 title Lex
 appeared 1975
 type grammarLanguage
+reference https://github.com/babyraging/yash
+country United States
+
+features
+ hasMultiLineComments true
+  /* A comment
+  */
+ hasComments true
+  /* A comment
+  */
+ hasLineComments true
+  // A comment
+ hasSemanticIndentation false
+
+lineCommentToken //
+multiLineCommentTokens /* */
 
 example
  /*** Definition section ***/
@@ -95,22 +111,7 @@ linguistGrammarRepo https://github.com/Alhadis/language-grammars
    * so that if will be able to terminate to match the current token (e.g. non-enclosed string) */
   #define YYFILL(n) { if (YYCURSOR > YYLIMIT) return 0
 
-country United States
-fileType text
-
 hopl 680
 
-lineCommentToken //
+fileType text
 centralPackageRepositoryCount 0
-reference https://github.com/babyraging/yash
-multiLineCommentTokens /* */
-features
- hasMultiLineComments true
-  /* A comment
-  */
- hasComments true
-  /* A comment
-  */
- hasLineComments true
-  // A comment
- hasSemanticIndentation false

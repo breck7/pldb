@@ -2,6 +2,14 @@ title Rust
 appeared 2010
 type pl
 creators Graydon Hoare
+website https://www.rust-lang.org
+reference https://blog.rust-lang.org/2018/11/27/Rust-survey-2018.html
+fileExtensions rs rlib
+corporateDevelopers Mozilla
+domainName rust-lang.org
+ registered 2010
+
+visualParadigm false
 
 features
  hasStrings true
@@ -58,6 +66,12 @@ features
  hasLineComments true
   // A comment
 
+lineCommentToken //
+multiLineCommentTokens /* */
+printToken println!
+stringToken "
+keywords abstract alignof as become box break const continue crate do else enum extern false final fn for if impl in let loop macro match mod move mut offsetof override priv proc pub pure ref return Self self sizeof static struct super trait true type typeof unsafe unsized use virtual where while yield
+
 wikipedia https://en.wikipedia.org/wiki/Rust_(programming_language)
  related linux freebsd android ios alef csharp cyclone erlang haskell haxe limbo newsqueak ruby scheme standard-ml swift crystal elm idris c ml go java ocaml llvmir d nim emacs-editor
  summary Rust is a systems programming language sponsored by Mozilla Research, which describes it as a "safe, concurrent, practical language," supporting functional and imperative-procedural paradigms. Rust is syntactically similar to C++, but its designers intend it to provide better memory safety while maintaining performance. Rust is an open source programming language. Its designers have refined the language through the experiences of writing the Servo web browser layout engine and the Rust compiler. A large portion of current commits to the project are from community members. Rust won first place for "most loved programming language" in the Stack Overflow Developer Survey in 2016 and 2017; it is referenced in The Book of Mozilla as "oxidised metal".
@@ -100,13 +114,11 @@ githubLanguage Rust
   seanmonstar reqwest https://github.com/seanmonstar.png https://github.com/seanmonstar/reqwest Rust #dea584 1782 277 109 "An easy and powerful Rust HTTP Client"
  trendingProjectsCount 26
 
-helloWorldCollection Rust
- // Hello world in Rust
- 
- fn main() {
-     println!("Hello World!");
- }
-
+monaco rust
+codeMirror rust
+pygmentsHighlighter Rust
+ filename rust.py
+ fileExtensions rs rs.in
 linguistGrammarRepo https://github.com/zargony/atom-language-rust
  firstCommit 2014
  lastCommit 2018
@@ -127,73 +139,19 @@ linguistGrammarRepo https://github.com/zargony/atom-language-rust
       panic!("Goodbye")
   }
   
-
-website https://www.rust-lang.org
-reference https://blog.rust-lang.org/2018/11/27/Rust-survey-2018.html
-
-replit rust
-
-tryItOnline rust
-
-twitter rustlang
-
-fileExtensions rs rlib
-fileType text
-isOpenSource true
-
-tiobe Rust
- currentRank 31
-
-meetup rust
- memberCount 29951
- groupCount 122
+languageServerProtocolProject https://github.com/rust-lang-nursery/rls
+ writtenIn rust
 
 projectEuler Rust
  memberCount
   2019 507
   2022 1227
-
-subreddit rust
- memberCount
-  2017 30807
-  2022 186942
-
-quineRelay Rust
-
-ubuntuPackage rustc
-
-codeMirror rust
-
-rosettaCode Rust
-
-indeedJobs rust engineer
- 2017 141
-lineCommentToken //
-printToken println!
-languageServerProtocolProject https://github.com/rust-lang-nursery/rls
- writtenIn rust
-visualParadigm false
-jupyterKernel https://github.com/google/evcxr/tree/master/evcxr_jupyter
-keywords abstract alignof as become box break const continue crate do else enum extern false final fn for if impl in let loop macro match mod move mut offsetof override priv proc pub pure ref return Self self sizeof static struct super trait true type typeof unsafe unsized use virtual where while yield
-stackOverflowSurvey
- 2021
-  users 5799
-  medianSalary 77530
-  fans 15865
-  percentageUsing 0.07
-packageRepository https://crates.io/
-gdbSupport true
-rijuRepl https://riju.codes/rust
- example
-  fn main() {
-      println!("Hello, world!");
-  }
-  
-multiLineCommentTokens /* */
-corporateDevelopers Mozilla
-pygmentsHighlighter Rust
- filename rust.py
- fileExtensions rs rs.in
+helloWorldCollection Rust
+ // Hello world in Rust
+ 
+ fn main() {
+     println!("Hello World!");
+ }
 leachim6 Rust
  filepath r/Rust.rs
  fileExtensions rs
@@ -202,7 +160,43 @@ leachim6 Rust
       println!("Hello World");
   }
   
-domainName rust-lang.org
- registered 2010
-monaco rust
-stringToken "
+rosettaCode Rust
+quineRelay Rust
+
+rijuRepl https://riju.codes/rust
+ example
+  fn main() {
+      println!("Hello, world!");
+  }
+  
+replit rust
+tryItOnline rust
+
+indeedJobs rust engineer
+ 2017 141
+stackOverflowSurvey
+ 2021
+  users 5799
+  medianSalary 77530
+  fans 15865
+  percentageUsing 0.07
+
+subreddit rust
+ memberCount
+  2017 30807
+  2022 186942
+meetup rust
+ memberCount 29951
+ groupCount 122
+
+tiobe Rust
+ currentRank 31
+
+packageRepository https://crates.io/
+
+twitter rustlang
+ubuntuPackage rustc
+gdbSupport true
+jupyterKernel https://github.com/google/evcxr/tree/master/evcxr_jupyter
+fileType text
+isOpenSource true

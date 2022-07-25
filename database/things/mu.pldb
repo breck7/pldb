@@ -1,27 +1,19 @@
 title Mu
 appeared 2014
 type pl
-
-githubRepo https://github.com/akkartik/mu
- stars 1227
- forks 46
- subscribers 38
- created 2014
- updated 2022
- firstCommit 2014
- description Soul of a tiny new machine. More thorough tests → More comprehensible and rewrite-friendly software → More resilient society.
- issues 3
-
+creators Kartik K. Agaram
 website https://github.com/akkartik/mu
-fileType text
-wordRank 9065
-isOpenSource true
 fileExtensions mu
 
-centralPackageRepositoryCount 0
-creators Kartik K. Agaram
+features
+ hasLineComments true
+  # A comment
+ hasComments true
+  # A comment
+ hasSemanticIndentation false
 
 lineCommentToken #
+
 example
  # dump stack from bottom to top
  fn emit-stack-from-bottom _self: (addr grapheme-stack), out: (addr stream byte) {
@@ -40,9 +32,18 @@ example
      loop
    }
  }
-features
- hasLineComments true
-  # A comment
- hasComments true
-  # A comment
- hasSemanticIndentation false
+
+githubRepo https://github.com/akkartik/mu
+ stars 1227
+ forks 46
+ subscribers 38
+ created 2014
+ updated 2022
+ firstCommit 2014
+ description Soul of a tiny new machine. More thorough tests → More comprehensible and rewrite-friendly software → More resilient society.
+ issues 3
+
+fileType text
+wordRank 9065
+isOpenSource true
+centralPackageRepositoryCount 0

@@ -1,6 +1,8 @@
 title Maple
 appeared 1982
 type pl
+website http://www.maplesoft.com/products/maple/
+country Canada
 
 features
  hasComments true
@@ -8,6 +10,9 @@ features
   # A comment
  hasPrintDebugging true
  hasSemanticIndentation false
+
+lineCommentToken #
+printToken printf
 
 wikipedia https://en.wikipedia.org/wiki/Maple_(software)
  example
@@ -22,33 +27,25 @@ wikipedia https://en.wikipedia.org/wiki/Maple_(software)
  revisionCount 776
  appeared 1982
 
+projectEuler Maple
+ memberCount
+  2019 262
+  2022 265
 helloWorldCollection Maple
  # Hello World in Maple
  
  >> printf("Hello World!");
  
-
-website http://www.maplesoft.com/products/maple/
-
-twitter maplesoft
-
-country Canada
-fileType text
-wordRank 6311
-
-tiobe Maple
+rosettaCode Maple
 
 linkedInSkill maple
  2018 51134
 
-projectEuler Maple
- memberCount
-  2019 262
-  2022 265
-
+tiobe Maple
 hopl 909
 
-rosettaCode Maple
-lineCommentToken #
 packageRepository https://www.maplesoft.com/applications/
-printToken printf
+
+twitter maplesoft
+fileType text
+wordRank 6311

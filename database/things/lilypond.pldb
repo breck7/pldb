@@ -1,6 +1,9 @@
 title LilyPond
 appeared 1996
 type pl
+website http://lilypond.org
+domainName lilypond.org
+ registered 1998
 
 features
  hasComments true
@@ -22,27 +25,23 @@ githubLanguage LilyPond
  fileExtensions ly ily
  trendingProjectsCount 0
 
+pygmentsHighlighter LilyPond
+ filename lilypond.py
+ fileExtensions ly
 linguistGrammarRepo https://github.com/textmate/lilypond.tmbundle
  firstCommit 2006
  lastCommit 2012
  committerCount 4
  commitCount 28
 
-website http://lilypond.org
-fileType text
-isOpenSource true
-
-rosettaCode Lilypond
-
-centralPackageRepositoryCount 0
-pygmentsHighlighter LilyPond
- filename lilypond.py
- fileExtensions ly
 leachim6 LilyPond
  filepath l/LilyPond.ly
  fileExtensions ly
  example
   \markup { Hello World }
   
-domainName lilypond.org
- registered 1998
+rosettaCode Lilypond
+
+fileType text
+isOpenSource true
+centralPackageRepositoryCount 0

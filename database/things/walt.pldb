@@ -1,6 +1,10 @@
 title walt
 appeared 2017
 type pl
+description Walt is a JavaScript-like syntax for WebAssembly text format
+website https://ballercat.github.io/walt/
+
+compilesTo wasm
 
 example
  export function fibonacci(n: i32): i32 {
@@ -10,8 +14,6 @@ example
  
   return fibonacci(n - 1) + fibonacci(n - 2);
  }
-
-description Walt is a JavaScript-like syntax for WebAssembly text format
 
 githubRepo https://github.com/ballercat/walt
  firstCommit 2017
@@ -23,9 +25,7 @@ githubRepo https://github.com/ballercat/walt
  description :zap: Walt is a JavaScript-like syntax for WebAssembly text format :zap:
  issues 27
 
-website https://ballercat.github.io/walt/
 fileType text
-compilesTo wasm
 wordRank 8707
 isOpenSource true
 centralPackageRepositoryCount 0

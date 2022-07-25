@@ -1,7 +1,26 @@
 title JSON5
 appeared 2012
 type dataNotation
+creators Aseem Kishore
+description The JSON5 Data Interchange Format (JSON5) is a superset of JSON that aims to alleviate some of the limitations of JSON by expanding its syntax to include some productions from ECMAScript 5.1.
+website https://json5.org/
+domainName json5.org
+ registered 2011
+
 supersetOf json
+
+features
+ hasLineComments true
+  // A comment
+ hasComments true
+  // A comment
+ hasMultiLineComments true
+  /* A comment
+  */
+ hasSemanticIndentation false
+
+lineCommentToken //
+multiLineCommentTokens /* */
 
 example
  {
@@ -17,12 +36,6 @@ example
    "backwardsCompatible": "with JSON",
  } 
 
-description The JSON5 Data Interchange Format (JSON5) is a superset of JSON that aims to alleviate some of the limitations of JSON by expanding its syntax to include some productions from ECMAScript 5.1.
-
-githubLanguage JSON5
- fileExtensions json5
- trendingProjectsCount 0
-
 githubRepo https://github.com/json5/json5
  firstCommit 2012
  stars 5161
@@ -32,6 +45,10 @@ githubRepo https://github.com/json5/json5
  updated 2022
  description JSON5 — JSON for humans
  issues 32
+
+githubLanguage JSON5
+ fileExtensions json5
+ trendingProjectsCount 0
 
 linguistGrammarRepo https://github.com/atom/language-javascript
  firstCommit 2013
@@ -70,21 +87,6 @@ linguistGrammarRepo https://github.com/atom/language-javascript
       ],
   }
 
-website https://json5.org/
 fileType text
 isOpenSource true
 centralPackageRepositoryCount 0
-creators Aseem Kishore
-lineCommentToken //
-features
- hasLineComments true
-  // A comment
- hasComments true
-  // A comment
- hasMultiLineComments true
-  /* A comment
-  */
- hasSemanticIndentation false
-multiLineCommentTokens /* */
-domainName json5.org
- registered 2011

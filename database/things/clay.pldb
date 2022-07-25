@@ -2,6 +2,13 @@ title clay
 appeared 2010
 type pl
 creators KS Sreeram and Joe Groff
+website http://claylabs.com/clay
+reference https://bitbucket.org/kssreeram/clay/src/default/
+
+features
+ hasPrintDebugging true
+
+printToken println
 
 example
  import printer.(println);
@@ -57,17 +64,12 @@ githubRepo https://github.com/jckarter/clay
  description The Clay programming language
  issues 63
 
-website http://claylabs.com/clay
-reference https://bitbucket.org/kssreeram/clay/src/default/
+pygmentsHighlighter Clay
+ filename c_like.py
+ fileExtensions clay
 
 projectEuler Clay
  memberCount
   2022 5
 
-pygmentsHighlighter Clay
- filename c_like.py
- fileExtensions clay
-printToken println
-features
- hasPrintDebugging true
 twitter claylabs

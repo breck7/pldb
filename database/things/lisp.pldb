@@ -2,12 +2,15 @@ title Lisp
 appeared 1958
 type pl
 creators John McCarthy
+country United States
 
 features
  isLisp true
  hasGarbageCollection true
  hasHomoiconicity true
  hasPrintDebugging true
+
+printToken PRINT
 
 wikipedia https://en.wikipedia.org/wiki/Lisp_(programming_language)
  example
@@ -24,51 +27,10 @@ wikipedia https://en.wikipedia.org/wiki/Lisp_(programming_language)
  revisionCount 2307
  appeared 1958
 
-country United States
-fileType text
-
-tiobe Lisp
- currentRank 38
-
-meetup lisp
- memberCount 92994
- groupCount 232
-
-linkedInSkill lisp
- 2018 19133
-
 projectEuler LISP
  memberCount
   2019 1276
   2022 1372
-
-hopl 14
-
-subreddit lisp
- memberCount
-  2017 12216
-  2022 34743
-
-rosettaCode Lisp
-
-conference https://www.european-lisp-symposium.org The European Lisp Symposium
-indeedJobs lisp engineer
- 2017 112
-stackOverflowSurvey
- 2021
-  users 1096
-  medianSalary 75669
-  fans 1513
-  percentageUsing 0.01
-centralPackageRepositoryCount 0
-goodreads
- title|year|author|goodreadsId|rating|ratings|reviews
- Common LISP: The Language|1984|Guy L. Steele Jr.|1529534|4.28|78|3
- An Introduction to Programming in Emacs Lisp||Robert J. Chassell|1162587|3.45|40|4
- Paradigms of Artificial Intelligence Programming: Case Studies in Common LISP|1991|Peter Norvig|80981|4.33|439|9
- LISP Lore: A Guide to Programming the LISP Machine|1986|Hank Bromley|3724482|4.00|5|0
- LISP 1.5 Programmer's Manual|1962|John McCarthy|4019912|4.43|28|2
- Lisp, Lore, and Logic: An Algebraic View of LISP Programming, Foundations, and Applications|1990|W. Richard Stark|812519|3.50|4|0
 leachim6 Lisp
  filepath l/Lisp.lsp
  fileExtensions lsp
@@ -80,4 +42,40 @@ leachim6 Lisp
   
   (hello)
   
-printToken PRINT
+rosettaCode Lisp
+
+indeedJobs lisp engineer
+ 2017 112
+linkedInSkill lisp
+ 2018 19133
+stackOverflowSurvey
+ 2021
+  users 1096
+  medianSalary 75669
+  fans 1513
+  percentageUsing 0.01
+
+subreddit lisp
+ memberCount
+  2017 12216
+  2022 34743
+meetup lisp
+ memberCount 92994
+ groupCount 232
+conference https://www.european-lisp-symposium.org The European Lisp Symposium
+
+goodreads
+ title|year|author|goodreadsId|rating|ratings|reviews
+ Common LISP: The Language|1984|Guy L. Steele Jr.|1529534|4.28|78|3
+ An Introduction to Programming in Emacs Lisp||Robert J. Chassell|1162587|3.45|40|4
+ Paradigms of Artificial Intelligence Programming: Case Studies in Common LISP|1991|Peter Norvig|80981|4.33|439|9
+ LISP Lore: A Guide to Programming the LISP Machine|1986|Hank Bromley|3724482|4.00|5|0
+ LISP 1.5 Programmer's Manual|1962|John McCarthy|4019912|4.43|28|2
+ Lisp, Lore, and Logic: An Algebraic View of LISP Programming, Foundations, and Applications|1990|W. Richard Stark|812519|3.50|4|0
+
+tiobe Lisp
+ currentRank 38
+hopl 14
+
+fileType text
+centralPackageRepositoryCount 0

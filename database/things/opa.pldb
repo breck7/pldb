@@ -1,6 +1,9 @@
 title Opa
 appeared 2011
 type pl
+website http://opalang.org
+domainName opalang.org
+ registered 2010
 
 features
  hasTypeInference true
@@ -14,6 +17,20 @@ features
  hasSemanticIndentation false
  hasStrings true
   "Hello world"
+
+multiLineCommentTokens /* */
+printToken jlog
+stringToken "
+
+githubRepo https://github.com/MLstate/opalang
+ firstCommit 2010
+ stars 1227
+ forks 130
+ subscribers 45
+ created 2011
+ updated 2022
+ description The Opa Language for Web Application Development
+ issues 37
 
 wikipedia https://en.wikipedia.org/wiki/Opa_(programming_language)
  example
@@ -35,16 +52,9 @@ githubLanguage Opa
  fileExtensions opa
  trendingProjectsCount 0
 
-githubRepo https://github.com/MLstate/opalang
- firstCommit 2010
- stars 1227
- forks 130
- subscribers 45
- created 2011
- updated 2022
- description The Opa Language for Web Application Development
- issues 37
-
+pygmentsHighlighter Opa
+ filename ml.py
+ fileExtensions opa
 linguistGrammarRepo https://github.com/mads379/opa.tmbundle
  firstCommit 2011
  lastCommit 2014
@@ -63,26 +73,14 @@ linguistGrammarRepo https://github.com/mads379/opa.tmbundle
   
   
 
-website http://opalang.org
-
-twitter opalang
-
-fileType text
-
-rosettaCode Opa
-
-centralPackageRepositoryCount 0
-pygmentsHighlighter Opa
- filename ml.py
- fileExtensions opa
 leachim6 Opa
  filepath o/Opa.opa
  fileExtensions opa
  example
   jlog("Hello World")
   
-printToken jlog
-multiLineCommentTokens /* */
-domainName opalang.org
- registered 2010
-stringToken "
+rosettaCode Opa
+
+twitter opalang
+fileType text
+centralPackageRepositoryCount 0

@@ -11,6 +11,9 @@ githubLanguage XSLT
  fileExtensions xslt xsl
  trendingProjectsCount 0
 
+pygmentsHighlighter XSLT
+ filename html.py
+ fileExtensions xsl xslt xpl
 linguistGrammarRepo https://github.com/textmate/xml.tmbundle
  firstCommit 2004
  lastCommit 2018
@@ -45,13 +48,19 @@ linguistGrammarRepo https://github.com/textmate/xml.tmbundle
   </xsl:stylesheet>
   
 
-fileType text
-
-hopl 3482
-
+leachim6 XSLT
+ filepath x/XSLT.xslt
+ fileExtensions xslt
+ example
+  <?xml version="1.0" encoding="UTF-8"?>
+  <xsl:stylesheet version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
+      <xsl:template match="/">
+          <xsl:text>Hello World</xsl:text>
+      </xsl:template>
+  </xsl:stylesheet>
+  
 rosettaCode XSLT
 
-centralPackageRepositoryCount 0
 rijuRepl https://riju.codes/xslt
  example
   <?xml-stylesheet type="text/xml" href="#style"?>
@@ -66,17 +75,8 @@ rijuRepl https://riju.codes/xslt
     <data>Hello, world!</data>
   </main>
   
-pygmentsHighlighter XSLT
- filename html.py
- fileExtensions xsl xslt xpl
-leachim6 XSLT
- filepath x/XSLT.xslt
- fileExtensions xslt
- example
-  <?xml version="1.0" encoding="UTF-8"?>
-  <xsl:stylesheet version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
-      <xsl:template match="/">
-          <xsl:text>Hello World</xsl:text>
-      </xsl:template>
-  </xsl:stylesheet>
-  
+
+hopl 3482
+
+fileType text
+centralPackageRepositoryCount 0

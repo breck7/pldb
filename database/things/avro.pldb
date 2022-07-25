@@ -1,6 +1,10 @@
 title avro
 appeared 2012
 type idl
+website https://avro.apache.org/
+domainName avro.apache.org
+
+related protobuf thrift
 
 example
  {"namespace": "example.avro",
@@ -13,8 +17,5 @@ example
   ]
  }
 
-website https://avro.apache.org/
 fileType binary
 centralPackageRepositoryCount 0
-related protobuf thrift
-domainName avro.apache.org

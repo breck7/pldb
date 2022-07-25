@@ -1,8 +1,21 @@
 title Type Language
 appeared 2013
 type pl
-
 description TL (Type Language) serves to describe the used system of types, constructors, and existing functions.
+reference https://core.telegram.org/mtproto/TL
+
+features
+ hasLineComments true
+  // A comment
+ hasComments true
+  // A comment
+ hasMultiLineComments true
+  /* A comment
+  */
+ hasSemanticIndentation false
+
+lineCommentToken //
+multiLineCommentTokens /* */
 
 githubLanguage Type Language
  fileExtensions tl
@@ -55,17 +68,5 @@ linguistGrammarRepo https://github.com/goodmind/language-typelanguage
   getUser#b0f732d5 int = User;
   getUsers#2d84d5f5 (Vector int) = Vector User;
 
-reference https://core.telegram.org/mtproto/TL
 fileType text
 centralPackageRepositoryCount 0
-lineCommentToken //
-features
- hasLineComments true
-  // A comment
- hasComments true
-  // A comment
- hasMultiLineComments true
-  /* A comment
-  */
- hasSemanticIndentation false
-multiLineCommentTokens /* */

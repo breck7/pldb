@@ -1,6 +1,29 @@
 title eC
 appeared 2004
 type pl
+creators Jérôme Jacovella-St-Louis
+website http://ec-lang.org/
+standsFor Ecere C
+domainName ec-lang.org
+ registered 2014
+
+features
+ hasLineComments true
+  // A comment
+ hasComments true
+  // A comment
+ hasPrintDebugging true
+ hasMultiLineComments true
+  /* A comment
+  */
+ hasSemanticIndentation false
+ hasStrings true
+  "Hello world"
+
+lineCommentToken //
+multiLineCommentTokens /* */
+printToken PrintLn
+stringToken "
 
 wikipedia https://en.wikipedia.org/wiki/EC_(programming_language)
  example
@@ -35,6 +58,9 @@ githubLanguage eC
  fileExtensions ec eh
  trendingProjectsCount 0
 
+pygmentsHighlighter eC
+ filename c_like.py
+ fileExtensions ec eh
 linguistGrammarRepo https://github.com/ecere/ec.tmbundle
  firstCommit 2015
  lastCommit 2015
@@ -381,45 +407,6 @@ linguistGrammarRepo https://github.com/ecere/ec.tmbundle
   }
   
 
-website http://ec-lang.org/
-standsFor Ecere C
-
-tryItOnline ec
-
-fileType text
-wordRank 4684
-isOpenSource true
-
-rosettaCode EC
-
-centralPackageRepositoryCount 0
-rijuRepl https://riju.codes/ec
- example
-  class Main : Application
-  {
-     void Main()
-     {
-        PrintLn("Hello, world!");
-     }
-  }
-  
-creators Jérôme Jacovella-St-Louis
-lineCommentToken //
-features
- hasLineComments true
-  // A comment
- hasComments true
-  // A comment
- hasPrintDebugging true
- hasMultiLineComments true
-  /* A comment
-  */
- hasSemanticIndentation false
- hasStrings true
-  "Hello world"
-pygmentsHighlighter eC
- filename c_like.py
- fileExtensions ec eh
 leachim6 Ec
  filepath e/Ec.ec
  fileExtensions ec
@@ -432,8 +419,21 @@ leachim6 Ec
      }
   }
   
-printToken PrintLn
-multiLineCommentTokens /* */
-domainName ec-lang.org
- registered 2014
-stringToken "
+rosettaCode EC
+
+rijuRepl https://riju.codes/ec
+ example
+  class Main : Application
+  {
+     void Main()
+     {
+        PrintLn("Hello, world!");
+     }
+  }
+  
+tryItOnline ec
+
+fileType text
+wordRank 4684
+isOpenSource true
+centralPackageRepositoryCount 0

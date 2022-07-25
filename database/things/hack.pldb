@@ -1,6 +1,11 @@
 title Hack
 appeared 2014
 type pl
+creators Julien Verlaguet and Alok Menghrajani and Drew Paroski
+website http://hacklang.org/
+corporateDevelopers Facebook
+domainName hacklang.org
+ registered 2013
 
 features
  hasFirstClassFunctions true
@@ -15,6 +20,11 @@ features
  hasSemanticIndentation false
  hasStrings true
   "Hello world"
+
+lineCommentToken //
+multiLineCommentTokens /* */
+printToken echo
+stringToken "
 
 wikipedia https://en.wikipedia.org/wiki/Hack_(programming_language)
  example
@@ -39,11 +49,6 @@ githubLanguage Hack
   facebook fbctf https://github.com/facebook.png https://github.com/facebook/fbctf Hack #878787 5992 1205 31 "Platform to host Capture the Flag competitions"
  trendingProjectsCount 2
 
-helloWorldCollection Hack
- <?hh
- // Hello world in Hack
- echo 'Hello World';
-
 linguistGrammarRepo https://github.com/textmate/php.tmbundle
  firstCommit 2005
  lastCommit 2018
@@ -67,30 +72,10 @@ linguistGrammarRepo https://github.com/textmate/php.tmbundle
   }
   
 
-website http://hacklang.org/
-
-twitter hacklang
-
-fileType text
-wordRank 8412
-isOpenSource true
-
-tiobe Hack
- currentRank 33
-
-rosettaCode Hack
-
-corporateDevelopers Facebook
-centralPackageRepositoryCount 0
-rijuRepl https://riju.codes/hack
- example
-  <<__EntryPoint>>
-  function main(): void {
-    echo "Hello, world!\n";
-  }
-  
-creators Julien Verlaguet and Alok Menghrajani and Drew Paroski
-lineCommentToken //
+helloWorldCollection Hack
+ <?hh
+ // Hello world in Hack
+ echo 'Hello World';
 leachim6 Hack
  filepath h/Hack.hh
  fileExtensions hh
@@ -98,8 +83,21 @@ leachim6 Hack
   <?hh 
   echo "Hello World";
   
-printToken echo
-multiLineCommentTokens /* */
-domainName hacklang.org
- registered 2013
-stringToken "
+rosettaCode Hack
+
+rijuRepl https://riju.codes/hack
+ example
+  <<__EntryPoint>>
+  function main(): void {
+    echo "Hello, world!\n";
+  }
+  
+
+tiobe Hack
+ currentRank 33
+
+twitter hacklang
+fileType text
+wordRank 8412
+isOpenSource true
+centralPackageRepositoryCount 0

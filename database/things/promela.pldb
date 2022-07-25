@@ -1,12 +1,16 @@
 title Promela
-wikipedia https://en.wikipedia.org/wiki/Promela
 type pl
-rijuRepl https://riju.codes/promela
- example
-  active proctype main() {
-    printf("Hello, world!\n");
-  }
-  
+
+features
+ hasPrintDebugging true
+ hasStrings true
+  "Hello world"
+
+printToken printf
+stringToken "
+
+wikipedia https://en.wikipedia.org/wiki/Promela
+
 leachim6 Promela
  filepath p/Promela.pml
  fileExtensions pml
@@ -15,9 +19,10 @@ leachim6 Promela
     printf("Hello World")
   }
   
-printToken printf
-features
- hasPrintDebugging true
- hasStrings true
-  "Hello world"
-stringToken "
+
+rijuRepl https://riju.codes/promela
+ example
+  active proctype main() {
+    printf("Hello, world!\n");
+  }
+  

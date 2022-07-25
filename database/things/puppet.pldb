@@ -23,6 +23,10 @@ githubLanguage Puppet
  fileExtensions pp
  trendingProjectsCount 0
 
+codeMirror puppet
+pygmentsHighlighter Puppet
+ filename dsls.py
+ fileExtensions pp
 linguistGrammarRepo https://github.com/russCloak/SublimePuppet
  firstCommit 2013
  lastCommit 2018
@@ -32,16 +36,10 @@ linguistGrammarRepo https://github.com/russCloak/SublimePuppet
  example
   hiera_include('classes')
   
-twitter puppetize
-
-fileType text
-isOpenSource true
-
-codeMirror puppet
-
 languageServerProtocolProject https://github.com/lingua-pupuli/puppet-editor-services
  writtenIn ruby
+
+twitter puppetize
+fileType text
+isOpenSource true
 centralPackageRepositoryCount 0
-pygmentsHighlighter Puppet
- filename dsls.py
- fileExtensions pp

@@ -2,11 +2,11 @@ title DNS over HTTPS
 appeared 2018
 type protocol
 
+related dns
+
 wikipedia https://en.wikipedia.org/wiki/DNS_over_HTTPS
  summary DNS over HTTPS (DoH) is a protocol for performing remote Domain Name System (DNS) resolution via the HTTPS protocol. A goal of the method is to increase user privacy and security by preventing eavesdropping and manipulation of DNS data by man-in-the-middle attacks by using the HTTPS protocol to encrypt the data between the DoH client and the DoH-based DNS resolver.  Encryption by itself does not protect privacy, encryption is simply a method to obfuscate the data.  By March of 2018,  Google and the Mozilla Foundation had started testing versions of DNS over HTTPS. In February 2020, Mozilla launched a version of Firefox that encrypts domain names by default for US-based users.In addition to improving security, another goal of DNS over HTTPS is to improve performance: testing of ISP DNS resolvers has shown that many often have slow response times, a problem that is exacerbated by the need to potentially have to resolve many hostnames when loading a single web page.
  backlinksCount 48
  pageId 56903929
  dailyPageViews 299
  appeared 2018
-
-related dns

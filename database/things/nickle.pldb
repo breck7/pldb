@@ -1,6 +1,9 @@
 title Nickle
 appeared 2001
 type pl
+website http://www.nickle.org/
+domainName nickle.org
+ registered 2000
 
 wikipedia https://en.wikipedia.org/wiki/Nickle_(programming_language)
  related c lisp modula-3 ml java
@@ -12,18 +15,15 @@ wikipedia https://en.wikipedia.org/wiki/Nickle_(programming_language)
  dailyPageViews 7
  appeared 2001
 
-website http://www.nickle.org/
-fileType text
-isOpenSource true
-
-hopl 5675
-
 rosettaCode Nickle
 
-centralPackageRepositoryCount 0
 rijuRepl https://riju.codes/nickle
  example
   printf("Hello, world!\n");
   
-domainName nickle.org
- registered 2000
+
+hopl 5675
+
+fileType text
+isOpenSource true
+centralPackageRepositoryCount 0

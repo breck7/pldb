@@ -2,6 +2,17 @@ title Yorick
 appeared 1996
 type pl
 creators David H. Munro
+website http://yorick.github.com
+fileExtensions i
+domainName yorick.github.com
+
+features
+ hasPrintDebugging true
+ hasStrings true
+  "Hello world"
+
+printToken print
+stringToken "
 
 wikipedia https://en.wikipedia.org/wiki/Yorick_(programming_language)
  example
@@ -23,26 +34,6 @@ wikipedia https://en.wikipedia.org/wiki/Yorick_(programming_language)
  appeared 1996
  fileExtensions i
 
-website http://yorick.github.com
-fileExtensions i
-fileType text
-isOpenSource true
-
-tiobe Yorick
-
-hopl 2637
-
-quineRelay Yorick
-
-ubuntuPackage yorick
-
-rosettaCode Yorick
-
-centralPackageRepositoryCount 0
-rijuRepl https://riju.codes/yorick
- example
-  write, "Hello, world!"
-  
 leachim6 Yorick
  filepath y/Yorick.i
  fileExtensions i
@@ -50,10 +41,18 @@ leachim6 Yorick
   #!/usr/bin/yorick -batch
   print, "Hello World";
   
-printToken print
-features
- hasPrintDebugging true
- hasStrings true
-  "Hello world"
-domainName yorick.github.com
-stringToken "
+rosettaCode Yorick
+quineRelay Yorick
+
+rijuRepl https://riju.codes/yorick
+ example
+  write, "Hello, world!"
+  
+
+tiobe Yorick
+hopl 2637
+
+ubuntuPackage yorick
+fileType text
+isOpenSource true
+centralPackageRepositoryCount 0

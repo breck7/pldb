@@ -2,13 +2,17 @@ title Ferite
 appeared 2000
 type pl
 
+features
+ hasPrintDebugging true
+ hasStrings true
+  "Hello world"
+
+printToken Console.println
+stringToken "
+
 wikipedia https://en.wikipedia.org/wiki/Ferite
  dailyPageViews -1
 
-
-rosettaCode Ferite
-
-centralPackageRepositoryCount 0
 leachim6 Ferite
  filepath f/Ferite.fe
  fileExtensions fe
@@ -16,9 +20,6 @@ leachim6 Ferite
   uses "console";
   Console.println( "Hello World" );
   
-printToken Console.println
-features
- hasPrintDebugging true
- hasStrings true
-  "Hello world"
-stringToken "
+rosettaCode Ferite
+
+centralPackageRepositoryCount 0

@@ -1,6 +1,15 @@
 title BlooP
 appeared 1979
 type esolang
+country United States
+
+features
+ hasPrintDebugging true
+ hasStrings true
+  'Hello world'
+
+printToken PRINT
+stringToken '
 
 wikipedia https://en.wikipedia.org/wiki/BlooP_and_FlooP
  example
@@ -37,17 +46,6 @@ wikipedia https://en.wikipedia.org/wiki/BlooP_and_FlooP
  revisionCount 99
  appeared 1979
 
-
-replit bloop
-
-country United States
-fileType text
-
-hopl 844
-
-rosettaCode BlooP
-
-centralPackageRepositoryCount 0
 leachim6 Bloop
  filepath b/Bloop.bloop
  fileExtensions bloop
@@ -57,9 +55,11 @@ leachim6 Bloop
        PRINT['Hello World']
   BLOCK 0: END.
   HELLO-WORLD[1]; 
-printToken PRINT
-features
- hasPrintDebugging true
- hasStrings true
-  'Hello world'
-stringToken '
+rosettaCode BlooP
+
+replit bloop
+
+hopl 844
+
+fileType text
+centralPackageRepositoryCount 0

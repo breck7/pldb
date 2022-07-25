@@ -1,6 +1,26 @@
 title Opal
 appeared 1994
 type pl
+reference https://link.springer.com/chapter/10.1007%2F3-540-57840-4_34
+
+features
+ hasLineComments true
+  -- A comment
+ hasComments true
+  -- A comment
+ hasSemanticIndentation false
+
+lineCommentToken --
+
+githubRepo https://github.com/TU-Berlin/opal
+ firstCommit 1998
+ stars 6
+ forks 2
+ subscribers 6
+ created 2016
+ updated 2020
+ description Opal - Optimized Applicative Language
+ issues 0
 
 wikipedia https://en.wikipedia.org/wiki/Opal_(programming_language)
  example
@@ -22,16 +42,6 @@ githubLanguage Opal
  fileExtensions opal
  trendingProjectsCount 0
 
-githubRepo https://github.com/TU-Berlin/opal
- firstCommit 1998
- stars 6
- forks 2
- subscribers 6
- created 2016
- updated 2020
- description Opal - Optimized Applicative Language
- issues 0
-
 linguistGrammarRepo https://github.com/artifactz/sublime-opal
  firstCommit 2013
  lastCommit 2017
@@ -49,14 +59,6 @@ linguistGrammarRepo https://github.com/artifactz/sublime-opal
   
   alert starts.sample + middles.sample + qualifiers.sample + finishes.sample
 
-reference https://link.springer.com/chapter/10.1007%2F3-540-57840-4_34
 fileType text
 isOpenSource true
 centralPackageRepositoryCount 0
-lineCommentToken --
-features
- hasLineComments true
-  -- A comment
- hasComments true
-  -- A comment
- hasSemanticIndentation false

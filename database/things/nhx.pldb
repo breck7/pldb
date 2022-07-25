@@ -1,6 +1,9 @@
 title The New Hampshire X Format
 appeared 1999
 type textDataFormat
+reference https://home.cc.umanitoba.ca/~psgendb/doc/atv/NHX.pdf
+standsFor New Hampshire X
+aka NHX
 
 example
  (((ADH2:0.1[&&NHX:S=human:E=1.1.1.1],ADH1:0.11[&&NHX:S=human:E=1.1.1.1]):0
@@ -10,8 +13,5 @@ example
  ADH2:0.12[&&NHX:S=yeast:E=1.1.1.1],ADH1:0.11[&&NHX:S=yeast:E=1.1.1.1]):0.1
  [&&NHX:S=Fungi])[&&NHX:E=1.1.1.1:D=N];
 
-reference https://home.cc.umanitoba.ca/~psgendb/doc/atv/NHX.pdf
-aka NHX
-standsFor New Hampshire X
 fileType text
 centralPackageRepositoryCount 0

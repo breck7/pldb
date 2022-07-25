@@ -1,12 +1,18 @@
 title Zimpl
 appeared 2004
 type pl
-
 description Zimpl is a little language to translate the mathematical model of a problem into a linear or nonlinear (mixed-) integer mathematical program expressed in .lp or .mps file format which can be read and (hopefully) solved by a LP or MIP solver.
+website https://zimpl.zib.de/
+domainName zimpl.zib.de
 
-githubLanguage Zimpl
- fileExtensions zimpl zmpl zpl
- trendingProjectsCount 0
+features
+ hasLineComments true
+  # A comment
+ hasComments true
+  # A comment
+ hasSemanticIndentation false
+
+lineCommentToken #
 
 example
  # $Id: queens3.zpl,v 1.3 2009/09/13 16:15:53 bzfkocht Exp $
@@ -30,14 +36,9 @@ example
  subto c1: forall <i,j> in IxI do
     card(TABU[i,j]) - card(TABU[i,j]) * x[i,j] >= sum <m,n> in TABU[i,j] : x[m,n];
 
-website https://zimpl.zib.de/
+githubLanguage Zimpl
+ fileExtensions zimpl zmpl zpl
+ trendingProjectsCount 0
+
 fileType text
 centralPackageRepositoryCount 0
-lineCommentToken #
-features
- hasLineComments true
-  # A comment
- hasComments true
-  # A comment
- hasSemanticIndentation false
-domainName zimpl.zib.de

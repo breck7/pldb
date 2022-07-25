@@ -1,7 +1,10 @@
 title Zippers
 appeared 1997
 type feature
+reference https://wiki.haskell.org/Zipper
+
 psuedoExample pldbCursor.moveLeft()
+featureKeyword hasZippers
 
 wikipedia https://en.wikipedia.org/wiki/Zipper_(data_structure)
  summary A zipper is a technique of representing an aggregate data structure so that it is convenient for writing programs that traverse the structure arbitrarily and update its contents, especially in purely functional programming languages. The zipper was described by Gérard Huet in 1997. It includes and generalizes the gap buffer technique sometimes used with arrays. The zipper technique is general in the sense that it can be adapted to lists, trees, and other recursively defined data structures. Such modified data structures are usually referred to as "a tree with zipper" or "a list with zipper" to emphasize that the structure is conceptually a tree or list, while the zipper is a detail of the implementation. A layman's explanation for a tree with zipper would be an ordinary computer filesystem with operations to go to parent (often cd ..), and the possibility to go downwards (cd subdirectory). The zipper is the pointer to the current path. Behind the scenes the zippers are efficient when making (functional) changes to a data structure, where a new, slightly changed, data structure is returned from an edit operation (instead of making a change in the current data structure).
@@ -9,6 +12,3 @@ wikipedia https://en.wikipedia.org/wiki/Zipper_(data_structure)
  pageId 7872003
  dailyPageViews 48
  appeared 1997
-
-reference https://wiki.haskell.org/Zipper
-featureKeyword hasZippers

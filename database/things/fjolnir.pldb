@@ -1,6 +1,17 @@
 title Fjölnir
 appeared 1986
 type pl
+creators Snorri Agnarsson
+country Iceland
+
+features
+ hasLineComments true
+  ; A comment
+ hasComments true
+  ; A comment
+ hasSemanticIndentation false
+
+lineCommentToken ;
 
 wikipedia https://en.wikipedia.org/wiki/Fjölnir_(programming_language)
  example
@@ -26,14 +37,5 @@ wikipedia https://en.wikipedia.org/wiki/Fjölnir_(programming_language)
  appeared 1980
  fileExtensions fjo fjv sma ein
 
-country Iceland
 fileType text
 centralPackageRepositoryCount 0
-creators Snorri Agnarsson
-lineCommentToken ;
-features
- hasLineComments true
-  ; A comment
- hasComments true
-  ; A comment
- hasSemanticIndentation false

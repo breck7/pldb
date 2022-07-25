@@ -1,11 +1,17 @@
 title ApacheConf
 appeared 1995
 type application
+website https://httpd.apache.org/
+reference https://en.wikipedia.org/wiki/Apache_HTTP_Server
+domainName httpd.apache.org
 
 githubLanguage ApacheConf
  fileExtensions apacheconf vhost
  trendingProjectsCount 0
 
+pygmentsHighlighter ApacheConf
+ filename configs.py
+ fileExtensions .htaccess apache.conf apache2.conf
 linguistGrammarRepo https://github.com/textmate/apache.tmbundle
  firstCommit 2005
  lastCommit 2016
@@ -32,11 +38,5 @@ linguistGrammarRepo https://github.com/textmate/apache.tmbundle
   </VirtualHost>
   
 
-website https://httpd.apache.org/
-reference https://en.wikipedia.org/wiki/Apache_HTTP_Server
 fileType text
 centralPackageRepositoryCount 0
-pygmentsHighlighter ApacheConf
- filename configs.py
- fileExtensions .htaccess apache.conf apache2.conf
-domainName httpd.apache.org

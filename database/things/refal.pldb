@@ -1,6 +1,25 @@
 title Refal
 appeared 1968
 type pl
+creators Valentin Turchin
+website http://www.refal.net
+country Russia
+domainName refal.net
+ registered 1999
+
+features
+ hasLineComments true
+  * A comment
+ hasComments true
+  * A comment
+ hasPrintDebugging true
+ hasSemanticIndentation false
+ hasStrings true
+  'Hello world'
+
+lineCommentToken *
+printToken <Prout
+stringToken '
 
 wikipedia https://en.wikipedia.org/wiki/Refal
  example
@@ -24,27 +43,6 @@ helloWorldCollection Refal
  Hello {
     = <Prout 'Hello world'>;
  }
-
-website http://www.refal.net
-country Russia
-fileType text
-
-hopl 595
-
-rosettaCode Refal
-
-centralPackageRepositoryCount 0
-creators Valentin Turchin
-lineCommentToken *
-features
- hasLineComments true
-  * A comment
- hasComments true
-  * A comment
- hasPrintDebugging true
- hasSemanticIndentation false
- hasStrings true
-  'Hello world'
 leachim6 Refal
  filepath r/Refal.ref
  fileExtensions ref
@@ -53,7 +51,9 @@ leachim6 Refal
   Hello {
      = <Prout 'Hello World'>;
   }
-printToken <Prout
-domainName refal.net
- registered 1999
-stringToken '
+rosettaCode Refal
+
+hopl 595
+
+fileType text
+centralPackageRepositoryCount 0

@@ -2,6 +2,11 @@ title Self
 appeared 1987
 type pl
 creators David Ungar
+website http://www.selflanguage.org
+reference https://www.youtube.com/watch?v=Ox5P7QyL774
+country United States
+domainName selflanguage.org
+ registered 2009
 
 features
  hasMessagePassing true
@@ -9,6 +14,9 @@ features
  hasSemanticIndentation false
  hasStrings true
   'Hello world'
+
+printToken printLine
+stringToken '
 
 wikipedia https://en.wikipedia.org/wiki/Self_(programming_language)
  example
@@ -33,25 +41,16 @@ helloWorldCollection Self
    hello = (| | 'Hello World!' print)
  |)
  
-
-website http://www.selflanguage.org
-reference https://www.youtube.com/watch?v=Ox5P7QyL774
-country United States
-fileType text
-wordRank 697
-isOpenSource true
-
-hopl 1361
-
-rosettaCode Self
-
-centralPackageRepositoryCount 0
 leachim6 Self
  filepath s/Self.self
  fileExtensions self
  example
   'Hello World' printLine
-printToken printLine
-domainName selflanguage.org
- registered 2009
-stringToken '
+rosettaCode Self
+
+hopl 1361
+
+fileType text
+wordRank 697
+isOpenSource true
+centralPackageRepositoryCount 0

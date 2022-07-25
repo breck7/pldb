@@ -2,14 +2,17 @@ title K
 appeared 1993
 type pl
 creators Arthur Whitney
-
 description K is like APL, but K restricts itself to the ASCII character set.
+country United States
+corporateDevelopers Kx Systems
 
 features
  hasComments true
  hasLineComments true
   / A comment
  hasSemanticIndentation false
+
+lineCommentToken /
 
 wikipedia https://en.wikipedia.org/wiki/K_(programming_language)
  related scheme q apl sql j sql-92 solaris linux
@@ -21,32 +24,27 @@ wikipedia https://en.wikipedia.org/wiki/K_(programming_language)
  revisionCount 221
  appeared 1993
 
-helloWorldCollection K
- / Hello world in K
- 
- "Hello world!"
-
-country United States
-fileType text
-wordRank 381
+pygmentsHighlighter K
+ filename q.py
+ fileExtensions k
 
 projectEuler APL/J/K
  memberCount
   2022 2478
   2019 332
-
-hopl 2142
-
-rosettaCode K
-
-corporateDevelopers Kx Systems
-lineCommentToken /
-centralPackageRepositoryCount 0
-pygmentsHighlighter K
- filename q.py
- fileExtensions k
+helloWorldCollection K
+ / Hello world in K
+ 
+ "Hello world!"
 leachim6 K
  filepath k/K.k
  fileExtensions k
  example
   "Hello World\n"
+rosettaCode K
+
+hopl 2142
+
+fileType text
+wordRank 381
+centralPackageRepositoryCount 0

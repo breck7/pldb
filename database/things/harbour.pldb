@@ -1,6 +1,21 @@
 title Harbour
 appeared 1999
 type pl
+creators Antonio Linares
+website https://harbour.github.io/
+domainName harbour.github.io
+
+features
+ hasLineComments true
+  // A comment
+ hasComments true
+  // A comment
+ hasSemanticIndentation false
+ hasStrings true
+  "Hello world"
+
+lineCommentToken //
+stringToken "
 
 wikipedia https://en.wikipedia.org/wiki/Harbour_(programming_language)
  example
@@ -80,23 +95,6 @@ linguistGrammarRepo https://github.com/hernad/atom-language-harbour
  committerCount 7
  commitCount 157
 
-website https://harbour.github.io/
-fileType text
-isOpenSource true
-
-rosettaCode Harbour
-
-centralPackageRepositoryCount 0
-creators Antonio Linares
-lineCommentToken //
-features
- hasLineComments true
-  // A comment
- hasComments true
-  // A comment
- hasSemanticIndentation false
- hasStrings true
-  "Hello world"
 leachim6 Harbour
  filepath h/Harbour.prg
  fileExtensions prg
@@ -107,5 +105,8 @@ leachim6 Harbour
   
      RETURN
   
-domainName harbour.github.io
-stringToken "
+rosettaCode Harbour
+
+fileType text
+isOpenSource true
+centralPackageRepositoryCount 0

@@ -2,16 +2,10 @@ title Fibonacci
 appeared 1991
 type pl
 creators Antonio Albano and Giorgio Ghelli and and Renzo Orsini
-country Italy
-
+description Fibonacci is an object-oriented database programming language characterized by static and strong typing, and by new mechanisms for modeling databases in terms of objects with roles, classes, and associations.
 reference https://dl.acm.org/doi/pdf/10.5555/615224.615227
 reference https://semanticscholar.org/paper/3b9aa468a7bd9d75811680a3a3db1a42b73dbdf7
-
-description Fibonacci is an object-oriented database programming language characterized by static and strong typing, and by new mechanisms for modeling databases in terms of objects with roles, classes, and associations.
-
-hopl 5759
-
-centralPackageRepositoryCount 0
+country Italy
 
 features
  hasComments true
@@ -39,3 +33,7 @@ example
    Introduce = "My name is " & me.Name &
         "and I was born in " ~ intToString(me.BirthYear);
  end; 
+
+hopl 5759
+
+centralPackageRepositoryCount 0

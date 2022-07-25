@@ -1,13 +1,13 @@
 title Y
 appeared 1981
 type pl
-
 reference https://semanticscholar.org/paper/3c3904c1ebf7883312bdba56e581cb3541fa1c90
-wordRank 382
 
-hopl 982
+features
+ hasPrintDebugging true
 
-centralPackageRepositoryCount 0
+printToken printf
+
 leachim6 Y
  filepath y/Y.y
  fileExtensions y
@@ -22,6 +22,8 @@ leachim6 Y
   		printf("Hello World\n")
   	end
   end
-printToken printf
-features
- hasPrintDebugging true
+
+hopl 982
+
+wordRank 382
+centralPackageRepositoryCount 0

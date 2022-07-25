@@ -1,6 +1,9 @@
 title MAXScript
 appeared 1996
 type pl
+description MAXScript is the built-in scripting language in Autodesk 3ds MAX. It can be used to automate repetitive tasks as well as develop new tools and user interfaces.
+website http://docs.autodesk.com/3DSMAX/14/ENU/MAXScript%20Help%202012/
+reference https://dl.acm.org/citation.cfm?id=522752
 
 features
  hasComments true
@@ -9,7 +12,8 @@ features
  hasStrings true
   "Hello world"
 
-description MAXScript is the built-in scripting language in Autodesk 3ds MAX. It can be used to automate repetitive tasks as well as develop new tools and user interfaces.
+printToken print
+stringToken "
 
 githubLanguage MAXScript
  fileExtensions ms mcr
@@ -46,15 +50,6 @@ linguistGrammarRepo https://github.com/Alhadis/language-maxscript
   )
   
 
-website http://docs.autodesk.com/3DSMAX/14/ENU/MAXScript%20Help%202012/
-reference https://dl.acm.org/citation.cfm?id=522752
-fileType text
-
-tiobe MAXScript
-
-rosettaCode MAXScript
-
-centralPackageRepositoryCount 0
 leachim6 MaxScript
  filepath m/MaxScript.ms
  fileExtensions ms
@@ -67,5 +62,9 @@ leachim6 MaxScript
   -- sufficient to echo it for the reader. Like Haskell, all MAXScript expressions
   -- *must* return values, even if they're unused.
   
-printToken print
-stringToken "
+rosettaCode MAXScript
+
+tiobe MAXScript
+
+fileType text
+centralPackageRepositoryCount 0

@@ -2,6 +2,15 @@ title dex
 appeared 2018
 type pl
 
+features
+ hasLineComments true
+  -- A comment
+ hasComments true
+  -- A comment
+ hasSemanticIndentation false
+
+lineCommentToken --
+
 example
  :p x = 1.                -- let binding
    y = (z = 2.; z + 1.)  -- let binding of a nested let expression
@@ -17,11 +26,3 @@ githubRepo https://github.com/google-research/dex-lang
  updated 2022
  description Research language for array processing in the Haskell/ML family
  issues 152
-
-lineCommentToken --
-features
- hasLineComments true
-  -- A comment
- hasComments true
-  -- A comment
- hasSemanticIndentation false

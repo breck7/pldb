@@ -1,11 +1,19 @@
 title Robots.txt
+appeared 1994
 type configFormat
+creators Martijn Koster
 description A robots.txt file tells search engine crawlers which URLs the crawler can access on your site.
 reference https://developers.google.com/search/docs/advanced/robots/intro
-lineCommentToken #
 reference https://en.wikipedia.org/wiki/Robots_exclusion_standard
-creators Martijn Koster
-appeared 1994
+
+features
+ hasLineComments true
+  # A comment
+ hasComments true
+  # A comment
+
+lineCommentToken #
+
 example
  User-agent: googlebot        # all Google services
  Disallow: /private/          # disallow this directory
@@ -15,8 +23,3 @@ example
  
  User-agent: *                # any robot
  Disallow: /something/        # disallow this directory
-features
- hasLineComments true
-  # A comment
- hasComments true
-  # A comment

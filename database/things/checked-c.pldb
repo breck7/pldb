@@ -1,6 +1,9 @@
 title checked-c
 appeared 2015
 type pl
+creators David Tarditi
+website https://www.microsoft.com/en-us/research/project/checked-c/
+reference https://www.microsoft.com/en-us/research/project/checked-c/
 
 githubRepo https://github.com/Microsoft/checkedc
  firstCommit 2016
@@ -11,7 +14,3 @@ githubRepo https://github.com/Microsoft/checkedc
  updated 2022
  description Checked C is an extension to C that lets programmers write C code that is guaranteed by the compiler to be type-safe.  The goal is to let people easily make their existing C code type-safe and eliminate entire classes of errors. Checked C does not address use-after-free errors. This repo has a wiki for Checked C, sample code, the specification, and test code.
  issues 61
-
-website https://www.microsoft.com/en-us/research/project/checked-c/
-reference https://www.microsoft.com/en-us/research/project/checked-c/
-creators David Tarditi

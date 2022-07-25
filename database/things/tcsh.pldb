@@ -1,33 +1,29 @@
 title tcsh
 appeared 1983
 type pl
+country United States
+
+features
+ hasPrintDebugging true
+ hasStrings true
+  "Hello world"
+
+printToken echo
+stringToken "
 
 githubLanguage Tcsh
  fileExtensions tcsh csh
  trendingProjectsCount 0
 
+pygmentsHighlighter Tcsh
+ filename shell.py
+ fileExtensions tcsh csh
 linguistGrammarRepo https://github.com/atom/language-shellscript
  firstCommit 2013
  lastCommit 2018
  committerCount 31
  commitCount 243
 
-
-tryItOnline tcsh
-
-country United States
-fileType text
-
-hopl 2560
-
-centralPackageRepositoryCount 0
-rijuRepl https://riju.codes/tcsh
- example
-  echo "Hello, world!"
-  
-pygmentsHighlighter Tcsh
- filename shell.py
- fileExtensions tcsh csh
 leachim6 TCSH
  filepath t/TCSH.tcsh
  fileExtensions tcsh
@@ -35,9 +31,14 @@ leachim6 TCSH
   #!/bin/tcsh
   echo "Hello World"
   
-printToken echo
-features
- hasPrintDebugging true
- hasStrings true
-  "Hello world"
-stringToken "
+
+rijuRepl https://riju.codes/tcsh
+ example
+  echo "Hello, world!"
+  
+tryItOnline tcsh
+
+hopl 2560
+
+fileType text
+centralPackageRepositoryCount 0

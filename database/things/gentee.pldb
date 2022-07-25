@@ -1,6 +1,20 @@
 title gentee
 appeared 2018
 type pl
+creators Alexey Krivonogov
+description Script programming language for automation. It uses VM and compiler written in Go (Golang).
+website http://gentee.org/
+domainName gentee.org
+ registered 2001
+
+features
+ hasLineComments true
+  // A comment
+ hasComments true
+  // A comment
+ hasSemanticIndentation false
+
+lineCommentToken //
 
 example
  #!/usr/local/bin/gentee
@@ -31,8 +45,6 @@ example
      }
  }
 
-description Script programming language for automation. It uses VM and compiler written in Go (Golang).
-
 githubRepo https://github.com/gentee/gentee
  firstCommit 2018
  stars 95
@@ -42,15 +54,3 @@ githubRepo https://github.com/gentee/gentee
  updated 2022
  description Gentee - script programming language for automation. It uses VM and compiler written in Go (Golang).
  issues 0
-
-website http://gentee.org/
-creators Alexey Krivonogov
-lineCommentToken //
-features
- hasLineComments true
-  // A comment
- hasComments true
-  // A comment
- hasSemanticIndentation false
-domainName gentee.org
- registered 2001

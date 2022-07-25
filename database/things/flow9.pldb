@@ -1,26 +1,9 @@
 title Flow9
-reference https://news.ycombinator.com/item?id=19769410
-githubRepo https://github.com/area9innovation/flow9
- firstCommit 2018
- stars 535
- forks 30
- subscribers 57
- created 2018
- updated 2022
- description Platform for safe, easy and productive programming of complex, multi-platform apps with a modern user interface
- issues 41
-type pl
-example
- import runtime;
- 
- main() {
- 	println("Hello world");
- }
 appeared 2018
-lineCommentToken //
-monaco flow9
-multiLineCommentTokens /* */
-keywords import require export forbid native if else cast unsafe switch default
+type pl
+creators Dmitry Solomennikov
+reference https://news.ycombinator.com/item?id=19769410
+
 features
  hasStrings true
  hasLineComments true
@@ -30,5 +13,27 @@ features
   */
  hasComments true
   // A comment
+
+lineCommentToken //
+multiLineCommentTokens /* */
 stringToken "
-creators Dmitry Solomennikov
+keywords import require export forbid native if else cast unsafe switch default
+
+example
+ import runtime;
+ 
+ main() {
+ 	println("Hello world");
+ }
+
+githubRepo https://github.com/area9innovation/flow9
+ firstCommit 2018
+ stars 535
+ forks 30
+ subscribers 57
+ created 2018
+ updated 2022
+ description Platform for safe, easy and productive programming of complex, multi-platform apps with a modern user interface
+ issues 41
+
+monaco flow9

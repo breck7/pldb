@@ -1,6 +1,9 @@
 title GOLD
 appeared 2012
 type grammarLanguage
+website http://goldparser.org/
+domainName goldparser.org
+ registered 2011
 
 example
  <Statement> ::= if <Expression> then <Statements> end
@@ -52,9 +55,6 @@ wikipedia https://en.wikipedia.org/wiki/GOLD_(parser)
  revisionCount 67
  appeared 2012
 
-website http://goldparser.org/
 fileType text
 wordRank 740
 centralPackageRepositoryCount 0
-domainName goldparser.org
- registered 2011

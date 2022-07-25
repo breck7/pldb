@@ -1,6 +1,16 @@
 title True BASIC
 appeared 1983
 type pl
+creators John George Kemeny and Thomas Eugene Kurtz
+
+features
+ hasLineComments true
+  ! A comment
+ hasComments true
+  ! A comment
+ hasSemanticIndentation false
+
+lineCommentToken !
 
 wikipedia https://en.wikipedia.org/wiki/True_BASIC
  example
@@ -44,15 +54,6 @@ wikipedia https://en.wikipedia.org/wiki/True_BASIC
  dailyPageViews 23
  appeared 1983
 
-
 hopl 2590
 
 centralPackageRepositoryCount 0
-creators John George Kemeny and Thomas Eugene Kurtz
-lineCommentToken !
-features
- hasLineComments true
-  ! A comment
- hasComments true
-  ! A comment
- hasSemanticIndentation false

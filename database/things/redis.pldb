@@ -1,16 +1,16 @@
 title Redis
 appeared 2009
 type application
+website https://redis.io/
+domainName redis.io
+ registered 2010
 
-wikipedia https://en.wikipedia.org/wiki/Redis
- related actionscript c csharp clojure common-lisp d dart erlang go haskell haxe io java julia lua objective-c ocaml perl php puredata python r racket ruby rust scala smalltalk tcl aws azure
- summary Redis is an open-source in-memory database project implementing a distributed, in-memory key-value store with optional durability. Redis supports different kinds of abstract data structures, such as strings, lists, maps, sets, sorted sets, hyperloglogs, bitmaps and spatial indexes. The project is mainly developed by Salvatore Sanfilippo and is currently sponsored by Redis Labs. Redis Labs creates and maintains the official Redis Enterprise Pack.
- pageId 24956915
- dailyPageViews 707
- created 2009
- backlinksCount 140
- revisionCount 577
- appeared 2009
+writtenIn c
+
+features
+ hasStrings true
+
+keywords APPEND AUTH BGREWRITEAOF BGSAVE BITCOUNT BITFIELD BITOP BITPOS BLPOP BRPOP BRPOPLPUSH CLIENT KILL LIST GETNAME PAUSE REPLY SETNAME CLUSTER ADDSLOTS COUNT-FAILURE-REPORTS COUNTKEYSINSLOT DELSLOTS FAILOVER FORGET GETKEYSINSLOT INFO KEYSLOT MEET NODES REPLICATE RESET SAVECONFIG SET-CONFIG-EPOCH SETSLOT SLAVES SLOTS COMMAND COUNT GETKEYS CONFIG GET REWRITE SET RESETSTAT DBSIZE DEBUG OBJECT SEGFAULT DECR DECRBY DEL DISCARD DUMP ECHO EVAL EVALSHA EXEC EXISTS EXPIRE EXPIREAT FLUSHALL FLUSHDB GEOADD GEOHASH GEOPOS GEODIST GEORADIUS GEORADIUSBYMEMBER GETBIT GETRANGE GETSET HDEL HEXISTS HGET HGETALL HINCRBY HINCRBYFLOAT HKEYS HLEN HMGET HMSET HSET HSETNX HSTRLEN HVALS INCR INCRBY INCRBYFLOAT KEYS LASTSAVE LINDEX LINSERT LLEN LPOP LPUSH LPUSHX LRANGE LREM LSET LTRIM MGET MIGRATE MONITOR MOVE MSET MSETNX MULTI PERSIST PEXPIRE PEXPIREAT PFADD PFCOUNT PFMERGE PING PSETEX PSUBSCRIBE PUBSUB PTTL PUBLISH PUNSUBSCRIBE QUIT RANDOMKEY READONLY READWRITE RENAME RENAMENX RESTORE ROLE RPOP RPOPLPUSH RPUSH RPUSHX SADD SAVE SCARD SCRIPT FLUSH LOAD SDIFF SDIFFSTORE SELECT SETBIT SETEX SETNX SETRANGE SHUTDOWN SINTER SINTERSTORE SISMEMBER SLAVEOF SLOWLOG SMEMBERS SMOVE SORT SPOP SRANDMEMBER SREM STRLEN SUBSCRIBE SUNION SUNIONSTORE SWAPDB SYNC TIME TOUCH TTL TYPE UNSUBSCRIBE UNLINK UNWATCH WAIT WATCH ZADD ZCARD ZCOUNT ZINCRBY ZINTERSTORE ZLEXCOUNT ZRANGE ZRANGEBYLEX ZREVRANGEBYLEX ZRANGEBYSCORE ZRANK ZREM ZREMRANGEBYLEX ZREMRANGEBYRANK ZREMRANGEBYSCORE ZREVRANGE ZREVRANGEBYSCORE ZREVRANK ZSCORE ZUNIONSTORE SCAN SSCAN HSCAN ZSCAN
 
 githubRepo https://github.com/antirez/redis
  stars 55750
@@ -22,28 +22,33 @@ githubRepo https://github.com/antirez/redis
  description Redis is an in-memory database that persists on disk. The data model is key-value, but many different kind of values are supported: Strings, Lists, Sets, Sorted Sets, Hashes, Streams, HyperLogLogs, Bitmaps.
  issues 2094
 
-website https://redis.io/
+wikipedia https://en.wikipedia.org/wiki/Redis
+ related actionscript c csharp clojure common-lisp d dart erlang go haskell haxe io java julia lua objective-c ocaml perl php puredata python r racket ruby rust scala smalltalk tcl aws azure
+ summary Redis is an open-source in-memory database project implementing a distributed, in-memory key-value store with optional durability. Redis supports different kinds of abstract data structures, such as strings, lists, maps, sets, sorted sets, hyperloglogs, bitmaps and spatial indexes. The project is mainly developed by Salvatore Sanfilippo and is currently sponsored by Redis Labs. Redis Labs creates and maintains the official Redis Enterprise Pack.
+ pageId 24956915
+ dailyPageViews 707
+ created 2009
+ backlinksCount 140
+ revisionCount 577
+ appeared 2009
 
-twitter redisfeed
+monaco redis
 
-fileType text
-isOpenSource true
-linkedInSkill redis
- 2018 59099
-writtenIn c
-jupyterKernel https://github.com/supercoderz/redis_kernel
-centralPackageRepositoryCount 0
-rijuRepl https://riju.codes/redis
- example
-  ECHO "Hello, world!"
-  
 leachim6 Redis
  filepath r/Redis
  example
   set Hello World
-domainName redis.io
- registered 2010
-monaco redis
-keywords APPEND AUTH BGREWRITEAOF BGSAVE BITCOUNT BITFIELD BITOP BITPOS BLPOP BRPOP BRPOPLPUSH CLIENT KILL LIST GETNAME PAUSE REPLY SETNAME CLUSTER ADDSLOTS COUNT-FAILURE-REPORTS COUNTKEYSINSLOT DELSLOTS FAILOVER FORGET GETKEYSINSLOT INFO KEYSLOT MEET NODES REPLICATE RESET SAVECONFIG SET-CONFIG-EPOCH SETSLOT SLAVES SLOTS COMMAND COUNT GETKEYS CONFIG GET REWRITE SET RESETSTAT DBSIZE DEBUG OBJECT SEGFAULT DECR DECRBY DEL DISCARD DUMP ECHO EVAL EVALSHA EXEC EXISTS EXPIRE EXPIREAT FLUSHALL FLUSHDB GEOADD GEOHASH GEOPOS GEODIST GEORADIUS GEORADIUSBYMEMBER GETBIT GETRANGE GETSET HDEL HEXISTS HGET HGETALL HINCRBY HINCRBYFLOAT HKEYS HLEN HMGET HMSET HSET HSETNX HSTRLEN HVALS INCR INCRBY INCRBYFLOAT KEYS LASTSAVE LINDEX LINSERT LLEN LPOP LPUSH LPUSHX LRANGE LREM LSET LTRIM MGET MIGRATE MONITOR MOVE MSET MSETNX MULTI PERSIST PEXPIRE PEXPIREAT PFADD PFCOUNT PFMERGE PING PSETEX PSUBSCRIBE PUBSUB PTTL PUBLISH PUNSUBSCRIBE QUIT RANDOMKEY READONLY READWRITE RENAME RENAMENX RESTORE ROLE RPOP RPOPLPUSH RPUSH RPUSHX SADD SAVE SCARD SCRIPT FLUSH LOAD SDIFF SDIFFSTORE SELECT SETBIT SETEX SETNX SETRANGE SHUTDOWN SINTER SINTERSTORE SISMEMBER SLAVEOF SLOWLOG SMEMBERS SMOVE SORT SPOP SRANDMEMBER SREM STRLEN SUBSCRIBE SUNION SUNIONSTORE SWAPDB SYNC TIME TOUCH TTL TYPE UNSUBSCRIBE UNLINK UNWATCH WAIT WATCH ZADD ZCARD ZCOUNT ZINCRBY ZINTERSTORE ZLEXCOUNT ZRANGE ZRANGEBYLEX ZREVRANGEBYLEX ZRANGEBYSCORE ZRANK ZREM ZREMRANGEBYLEX ZREMRANGEBYRANK ZREMRANGEBYSCORE ZREVRANGE ZREVRANGEBYSCORE ZREVRANK ZSCORE ZUNIONSTORE SCAN SSCAN HSCAN ZSCAN
-features
- hasStrings true
+
+rijuRepl https://riju.codes/redis
+ example
+  ECHO "Hello, world!"
+  
+
+linkedInSkill redis
+ 2018 59099
+
+twitter redisfeed
+jupyterKernel https://github.com/supercoderz/redis_kernel
+fileType text
+isOpenSource true
+centralPackageRepositoryCount 0

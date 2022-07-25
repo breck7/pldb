@@ -2,9 +2,10 @@ title GraphQL
 appeared 2012
 type queryLanguage
 creators Lee Byron
-subreddit GraphQL
- memberCount
-  2022 17480
+website http://graphql.org/
+corporateDevelopers Facebook
+domainName graphql.org
+ registered 2015
 
 features
  hasBooleans true
@@ -58,6 +59,10 @@ features
   # A comment
  hasSemanticIndentation false
 
+lineCommentToken #
+stringToken "
+keywords null true false query mutation subscription extend schema directive scalar type interface union enum input implements fragment on
+
 wikipedia https://en.wikipedia.org/wiki/GraphQL
  related javascript ruby scala
  summary GraphQL is a data query language developed internally by Facebook in 2012 before being publicly released in 2015. It provides an alternative to REST and ad-hoc webservice architectures.. It allows clients to define the structure of the data required, and exactly the same structure of the data is returned from the server. It is a strongly typed runtime which allows clients to dictate what data is needed. This avoids both the problems of over-fetching as well as under-fetching of data. Major GraphQL clients include Apollo Client and Relay. GraphQL servers are available for multiple languages, including JavaScript, Python, Ruby, Java, C#, Scala, Go, Elixir, Erlang, PHP, and Clojure.
@@ -72,6 +77,8 @@ githubLanguage GraphQL
  fileExtensions graphql gql
  trendingProjectsCount 0
 
+antlr https://github.com/antlr/grammars-v4/tree/master/graphql
+monaco graphql
 linguistGrammarRepo https://github.com/rmosolgo/language-graphql
  firstCommit 2015
  lastCommit 2018
@@ -130,22 +137,11 @@ linguistGrammarRepo https://github.com/rmosolgo/language-graphql
      | FRAGMENT_SPREAD
      | INLINE_FRAGMENT
   
-
-website http://graphql.org/
-
-twitter graphql
-
-fileType text
-
-antlr https://github.com/antlr/grammars-v4/tree/master/graphql
-
-corporateDevelopers Facebook
 languageServerProtocolProject https://github.com/graphql/graphql-language-service
  writtenIn javascript
 languageServerProtocolProject https://github.com/Mayank1791989/gql-language-server
  writtenIn javascript
-centralPackageRepositoryCount 0
-lineCommentToken #
+
 leachim6 GraphQL
  filepath g/GraphQL.graphql
  fileExtensions graphql
@@ -153,8 +149,11 @@ leachim6 GraphQL
   {
       "Hello World"
   }
-domainName graphql.org
- registered 2015
-monaco graphql
-keywords null true false query mutation subscription extend schema directive scalar type interface union enum input implements fragment on
-stringToken "
+
+subreddit GraphQL
+ memberCount
+  2022 17480
+
+twitter graphql
+fileType text
+centralPackageRepositoryCount 0

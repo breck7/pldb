@@ -1,6 +1,23 @@
 title Classroom Object Oriented Language
 appeared 1996
 type pl
+creators Alexander Aiken
+standsFor Classroom Object Oriented Language
+
+features
+ hasLineComments true
+  -- A comment
+ hasComments true
+  -- A comment
+ hasPrintDebugging true
+ hasMultiLineComments true
+  (* A comment
+  *)
+ hasSemanticIndentation false
+
+lineCommentToken --
+multiLineCommentTokens (* *)
+printToken out_string
 
 wikipedia https://en.wikipedia.org/wiki/Cool_(programming_language)
  example
@@ -71,22 +88,6 @@ linguistGrammarRepo https://github.com/anunayk/cool-tmbundle
   };
   
 
-standsFor Classroom Object Oriented Language
-fileType text
-wordRank 1457
-centralPackageRepositoryCount 0
-creators Alexander Aiken
-lineCommentToken --
-features
- hasLineComments true
-  -- A comment
- hasComments true
-  -- A comment
- hasPrintDebugging true
- hasMultiLineComments true
-  (* A comment
-  *)
- hasSemanticIndentation false
 leachim6 Cool
  filepath c/Cool.cl
  fileExtensions cl
@@ -97,5 +98,7 @@ leachim6 Cool
      };
   };
   
-printToken out_string
-multiLineCommentTokens (* *)
+
+fileType text
+wordRank 1457
+centralPackageRepositoryCount 0

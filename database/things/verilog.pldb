@@ -1,6 +1,8 @@
 title Verilog
 appeared 1984
 type hardwareDescriptionLanguage
+fileExtensions v
+country United States
 
 features
  hasComments true
@@ -14,6 +16,12 @@ features
  hasStrings true
   "Hello world"
  isCaseSensitive true
+
+lineCommentToken //
+multiLineCommentTokens /* */
+printToken $display
+stringToken "
+keywords always assign automatic begin case casex casez cell config deassign default defparam design disable edge else end endcase endconfig endfunction endgenerate endmodule endprimitive endspecify endtable endtask event for force forever fork function generate genvar if ifnone incdir include initial inout input instance join liblist library localparam macromodule module negedge noshowcancelled output parameter posedge primitive pulsestyle_ondetect pulsestyle_onevent reg release repeat scalared showcancelled signed specify specparam strength table task tri tri0 tri1 triand wand trior wor trireg unsigned use vectored wait while wire
 
 wikipedia https://en.wikipedia.org/wiki/Verilog
  example
@@ -46,20 +54,11 @@ githubLanguage Verilog
   cliffordwolf picorv32 https://github.com/cliffordwolf.png https://github.com/cliffordwolf/picorv32 Verilog #b2b7f8 966 254 29 "PicoRV32 - A Size-Optimized RISC-V CPU"
  trendingProjectsCount 3
 
-helloWorldCollection Verilog
- /* Hello World in Verilog. */
- 
- module main;
- 
-  initial
-    begin
-      $display("Hello, World");
-      $finish ;
-    end
- 
-  endmodule
- 
-
+antlr https://github.com/antlr/grammars-v4/tree/master/verilog
+codeMirror verilog
+pygmentsHighlighter verilog
+ filename hdl.py
+ fileExtensions v
 linguistGrammarRepo https://github.com/textmate/verilog.tmbundle
  firstCommit 2008
  lastCommit 2015
@@ -114,51 +113,19 @@ linguistGrammarRepo https://github.com/textmate/verilog.tmbundle
   endmodule
   
 
-country United States
-fileExtensions v
-fileType text
-
-tiobe Verilog
- currentRank 50
-
-hopl 1062
-
-subreddit Verilog
- memberCount
-  2017 552
-  2022 2421
-
-quineRelay Verilog
-
-ubuntuPackage iverilog
-
-codeMirror verilog
-
-rosettaCode Verilog
-
-antlr https://github.com/antlr/grammars-v4/tree/master/verilog
-
-lineCommentToken //
-keywords always assign automatic begin case casex casez cell config deassign default defparam design disable edge else end endcase endconfig endfunction endgenerate endmodule endprimitive endspecify endtable endtask event for force forever fork function generate genvar if ifnone incdir include initial inout input instance join liblist library localparam macromodule module negedge noshowcancelled output parameter posedge primitive pulsestyle_ondetect pulsestyle_onevent reg release repeat scalared showcancelled signed specify specparam strength table task tri tri0 tri1 triand wand trior wor trireg unsigned use vectored wait while wire
-centralPackageRepositoryCount 0
-rijuRepl https://riju.codes/verilog
- example
-  module main;
-  
-  initial begin
-    $display("Hello, world!");
-  end
-  
+helloWorldCollection Verilog
+ /* Hello World in Verilog. */
+ 
+ module main;
+ 
+  initial
+    begin
+      $display("Hello, World");
+      $finish ;
+    end
+ 
   endmodule
-  
-goodreads
- title|year|author|goodreadsId|rating|ratings|reviews
- HDL Programming Fundamentals: VHDL and Verilog [With CD-ROM]|2005|Nazeih M. Botros|382542|4.15|55|5
- Programming Fpgas: Getting Started with Verilog||Simon Monk|50000071|3.89|9|2
- Computer Arithmetic And Verilog Hdl Fundamentals|2009|Joseph Cavanagh|7046981|4.70|10|1
-pygmentsHighlighter verilog
- filename hdl.py
- fileExtensions v
+ 
 leachim6 Verilog
  filepath v/Verilog.v
  fileExtensions v
@@ -171,6 +138,35 @@ leachim6 Verilog
       end
   endmodule
   
-printToken $display
-multiLineCommentTokens /* */
-stringToken "
+rosettaCode Verilog
+quineRelay Verilog
+
+rijuRepl https://riju.codes/verilog
+ example
+  module main;
+  
+  initial begin
+    $display("Hello, world!");
+  end
+  
+  endmodule
+  
+
+subreddit Verilog
+ memberCount
+  2017 552
+  2022 2421
+
+goodreads
+ title|year|author|goodreadsId|rating|ratings|reviews
+ HDL Programming Fundamentals: VHDL and Verilog [With CD-ROM]|2005|Nazeih M. Botros|382542|4.15|55|5
+ Programming Fpgas: Getting Started with Verilog||Simon Monk|50000071|3.89|9|2
+ Computer Arithmetic And Verilog Hdl Fundamentals|2009|Joseph Cavanagh|7046981|4.70|10|1
+
+tiobe Verilog
+ currentRank 50
+hopl 1062
+
+ubuntuPackage iverilog
+fileType text
+centralPackageRepositoryCount 0

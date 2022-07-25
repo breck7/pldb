@@ -1,6 +1,8 @@
 title Genero Business Development Language
 appeared 2010
 type pl
+description Genero Business Development Language (BDL) is a program language designed to write an interactive database application.
+reference https://www.generomobile.com/techdocs/fjs-fgl-manual/#fgl-topics/c_fgl_intro_BDL_002.html
 
 example
  OPTIONS SHORT CIRCUIT 
@@ -32,6 +34,3 @@ example
  REPORT cust_rep(row)
     ...
  END REPORT
-
-description Genero Business Development Language (BDL) is a program language designed to write an interactive database application.
-reference https://www.generomobile.com/techdocs/fjs-fgl-manual/#fgl-topics/c_fgl_intro_BDL_002.html

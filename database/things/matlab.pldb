@@ -1,6 +1,12 @@
 title MATLAB
 appeared 1984
 type pl
+creators Cleve Moler
+website http://mathworks.com/products/matlab
+country United States
+corporateDevelopers MathWorks
+
+visualParadigm true
 
 features
  hasStrings true
@@ -31,6 +37,11 @@ features
  hasPrintDebugging true
  hasSemanticIndentation false
 
+lineCommentToken %
+multiLineCommentTokens %{ %}
+printToken disp
+stringToken '
+
 wikipedia https://en.wikipedia.org/wiki/MATLAB
  example
   [X,Y] = meshgrid(-10:0.25:10,-10:0.25:10);
@@ -58,12 +69,9 @@ githubLanguage Matlab
   AvaisP machine-learning-programming-assignments-coursera-andrew-ng https://github.com/AvaisP.png https://github.com/AvaisP/machine-learning-programming-assignments-coursera-andrew-ng MATLAB #e16737 218 214 14 "Solutions to Andrew NG's machine learning course on Coursera"
  trendingProjectsCount 4
 
-helloWorldCollection MATLAB
- % Hello World in MATLAB.
- 
- disp('Hello World');
- 
-
+pygmentsHighlighter Matlab
+ filename matlab.py
+ fileExtensions m
 linguistGrammarRepo https://github.com/mathworks/MATLAB-Language-grammar
  firstCommit 2017
  lastCommit 2018
@@ -79,53 +87,42 @@ linguistGrammarRepo https://github.com/mathworks/MATLAB-Language-grammar
   end
   
 
-website http://mathworks.com/products/matlab
-
-twitter matlab
-
-country United States
-fileType text
-
-tiobe MATLAB
- currentRank 12
-
-meetup matlab
- memberCount 10609
- groupCount 25
-
-linkedInSkill matlab
- 2018 2602372
-
 projectEuler Matlab
  memberCount
   2019 3028
   2022 3252
-
-hopl 2216
-
-subreddit matlab
- memberCount
-  2017 13222
-  2022 46296
-
+helloWorldCollection MATLAB
+ % Hello World in MATLAB.
+ 
+ disp('Hello World');
+ 
+leachim6 MATLAB
+ filepath m/MATLAB.m
+ fileExtensions m
+ example
+  disp('Hello World')
+  
 rosettaCode MATLAB
 
-corporateDevelopers MathWorks
 indeedJobs matlab engineer
  2017 6204
-lineCommentToken %
-visualParadigm true
-jupyterKernel https://github.com/imatlab/imatlab
-jupyterKernel https://github.com/calysto/matlab_kernel
+linkedInSkill matlab
+ 2018 2602372
 stackOverflowSurvey
  2021
   users 3846
   medianSalary 43948
   fans 1562
   percentageUsing 0.05
-packageRepository https://www.mathworks.com/matlabcentral/fileexchange/
-multiLineCommentTokens %{ %}
-creators Cleve Moler
+
+subreddit matlab
+ memberCount
+  2017 13222
+  2022 46296
+meetup matlab
+ memberCount 10609
+ groupCount 25
+
 goodreads
  title|year|author|goodreadsId|rating|ratings|reviews
  MATLAB Programming for Engineers|1999|Stephen J. Chapman|4467285|4.10|114|6
@@ -138,14 +135,14 @@ goodreads
  An Engineers Guide to MATLAB|2000|Edward B. Magrab|3884382|4.29|7|0
  Essentials of MATLAB Programming|2005|Stephen J. Chapman|1175135|4.00|17|0
  Getting Started with MATLAB 7: A Quick Introduction for Scientists and Engineers|2005|Rudra Pratap|337141|4.03|105|5
-pygmentsHighlighter Matlab
- filename matlab.py
- fileExtensions m
-leachim6 MATLAB
- filepath m/MATLAB.m
- fileExtensions m
- example
-  disp('Hello World')
-  
-printToken disp
-stringToken '
+
+tiobe MATLAB
+ currentRank 12
+hopl 2216
+
+packageRepository https://www.mathworks.com/matlabcentral/fileexchange/
+
+twitter matlab
+jupyterKernel https://github.com/imatlab/imatlab
+jupyterKernel https://github.com/calysto/matlab_kernel
+fileType text

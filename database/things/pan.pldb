@@ -1,6 +1,29 @@
 title Pan
 appeared 2011
 type pl
+creators Charles Loomis
+website http://www.quattor.org/
+domainName quattor.org
+ registered 2003
+
+features
+ hasLineComments true
+  # A comment
+ hasComments true
+  # A comment
+ hasSemanticIndentation false
+
+lineCommentToken #
+
+githubRepo https://github.com/quattor/pan
+ firstCommit 2011
+ stars 10
+ forks 18
+ subscribers 25
+ created 2012
+ updated 2022
+ description Pan Language Compiler and Tools
+ issues 64
 
 wikipedia https://en.wikipedia.org/wiki/Pan_(programming_language)
  example
@@ -19,16 +42,9 @@ githubLanguage Pan
  fileExtensions pan
  trendingProjectsCount 0
 
-githubRepo https://github.com/quattor/pan
- firstCommit 2011
- stars 10
- forks 18
- subscribers 25
- created 2012
- updated 2022
- description Pan Language Compiler and Tools
- issues 64
-
+pygmentsHighlighter Pan
+ filename dsls.py
+ fileExtensions pan
 linguistGrammarRepo https://github.com/quattor/language-pan
  firstCommit 2013
  lastCommit 2018
@@ -52,21 +68,7 @@ linguistGrammarRepo https://github.com/quattor/language-pan
   "/software/components/chkconfig/service/acpid" = dict('on', '', 'startstop', true);
   
 
-website http://www.quattor.org/
 fileType text
 wordRank 3457
 isOpenSource true
 centralPackageRepositoryCount 0
-creators Charles Loomis
-lineCommentToken #
-features
- hasLineComments true
-  # A comment
- hasComments true
-  # A comment
- hasSemanticIndentation false
-pygmentsHighlighter Pan
- filename dsls.py
- fileExtensions pan
-domainName quattor.org
- registered 2003

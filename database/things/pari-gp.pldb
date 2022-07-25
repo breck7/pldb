@@ -1,11 +1,21 @@
 title PARI/GP
 appeared 1985
-aka parigp
 type pl
+website http://pari.math.u-bordeaux.fr/
+aka parigp
+aka PARI/GP
+domainName pari.math.u-bordeaux.fr
 
-rijuRepl https://riju.codes/parigp
- example
-  print("Hello, world!")
+features
+ hasMultiLineComments true
+  /* A comment
+  */
+ hasComments true
+  /* A comment
+  */
+ hasSemanticIndentation false
+
+multiLineCommentTokens /* */
 
 wikipedia https://en.wikipedia.org/wiki/PARI/GP
  example
@@ -53,31 +63,18 @@ wikipedia https://en.wikipedia.org/wiki/PARI/GP
  revisionCount 183
  appeared 1985
 
-aka PARI/GP
-website http://pari.math.u-bordeaux.fr/
-
-tryItOnline pari-gp
-
-fileType text
-isOpenSource true
-
 projectEuler PARI/GP
  memberCount
   2022 123
-
 quineRelay PARI/GP
 
-ubuntuPackage pari-gp
+rijuRepl https://riju.codes/parigp
+ example
+  print("Hello, world!")
+tryItOnline pari-gp
 
+ubuntuPackage pari-gp
 jupyterKernel https://github.com/jdemeyer/pari_jupyter
+fileType text
+isOpenSource true
 centralPackageRepositoryCount 0
-multiLineCommentTokens /* */
-features
- hasMultiLineComments true
-  /* A comment
-  */
- hasComments true
-  /* A comment
-  */
- hasSemanticIndentation false
-domainName pari.math.u-bordeaux.fr

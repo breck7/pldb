@@ -1,9 +1,13 @@
 title Jevko
-website https://jevko.org/
-type dataNotation
 appeared 2021
-related json xml
+type dataNotation
+website https://jevko.org/
 reference https://github.com/jevko/parsejevko.js
+domainName jevko.org
+ registered 2021
+
+related json xml
+
 example
  first name [John]
  last name [Smith]
@@ -27,6 +31,5 @@ example
  ]
  children []
  spouse []
-domainName jevko.org
- registered 2021
+
 twitter jevko1

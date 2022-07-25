@@ -1,8 +1,28 @@
 title Script.NET
 appeared 2007
 type pl
-
 description S# is a weakly-typed dynamic language and runtime infrastructure to make your applications extendable, customizable and highly flexible.
+website http://www.protsyk.com/scriptdotnet/
+aka Script.NET
+
+features
+ hasLineComments true
+  // A comment
+ hasComments true
+  // A comment
+ hasSemanticIndentation false
+
+lineCommentToken //
+
+githubRepo https://github.com/PetroProtsyk/SSharp
+ firstCommit 2010
+ stars 118
+ forks 37
+ subscribers 17
+ created 2010
+ updated 2022
+ description S# is a weakly-typed dynamic language and runtime infrastructure to make your applications extendable, customizable and highly flexible. It allows introducing expressions and large code blocks evaluation within your applications in the similar way Microsoft Office deals with VBScript, gives you possibilities providing rich formula evaluation capabilities like it can be seen in MS Excel and other office applications.
+ issues 16
 
 wikipedia https://en.wikipedia.org/wiki/Script.NET
  example
@@ -50,25 +70,6 @@ wikipedia https://en.wikipedia.org/wiki/Script.NET
  dailyPageViews 23
  appeared 2007
 
-githubRepo https://github.com/PetroProtsyk/SSharp
- firstCommit 2010
- stars 118
- forks 37
- subscribers 17
- created 2010
- updated 2022
- description S# is a weakly-typed dynamic language and runtime infrastructure to make your applications extendable, customizable and highly flexible. It allows introducing expressions and large code blocks evaluation within your applications in the similar way Microsoft Office deals with VBScript, gives you possibilities providing rich formula evaluation capabilities like it can be seen in MS Excel and other office applications.
- issues 16
-
-website http://www.protsyk.com/scriptdotnet/
-aka Script.NET
 fileType text
 isOpenSource true
 centralPackageRepositoryCount 0
-lineCommentToken //
-features
- hasLineComments true
-  // A comment
- hasComments true
-  // A comment
- hasSemanticIndentation false

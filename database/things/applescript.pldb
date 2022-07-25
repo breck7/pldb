@@ -1,6 +1,10 @@
 title Applescript
 appeared 1993
 type pl
+website https://developer.apple.com/library/content/documentation/AppleScript/Conceptual/AppleScriptX/AppleScriptX.html
+fileExtensions scpt scptd AppleScript
+country United States
+corporateDevelopers Apple
 
 features
  hasComments true
@@ -15,6 +19,11 @@ features
  hasSemanticIndentation false
  hasStrings true
   "Hello world"
+
+lineCommentToken --
+multiLineCommentTokens (* *)
+printToken display dialog
+stringToken "
 
 wikipedia https://en.wikipedia.org/wiki/AppleScript
  example
@@ -35,12 +44,9 @@ githubLanguage AppleScript
  fileExtensions applescript scpt
  trendingProjectsCount 0
 
-helloWorldCollection Applescript
- -- "Hello World" in AppleScript:
- 
- display dialog "Hello World"
- 
-
+pygmentsHighlighter AppleScript
+ filename scripting.py
+ fileExtensions applescript
 linguistGrammarRepo https://github.com/textmate/applescript.tmbundle
  firstCommit 2006
  lastCommit 2017
@@ -90,35 +96,28 @@ linguistGrammarRepo https://github.com/textmate/applescript.tmbundle
   	end if
   end tell
 
-website https://developer.apple.com/library/content/documentation/AppleScript/Conceptual/AppleScriptX/AppleScriptX.html
-country United States
-fileExtensions scpt scptd AppleScript
-fileType text
-isOpenSource false
-
-tiobe Applescript
-
-hopl 1830
-
-rosettaCode AppleScript
-
-corporateDevelopers Apple
-centralPackageRepositoryCount 0
-goodreads
- title|year|author|goodreadsId|rating|ratings|reviews
- AppleScript for Dummies|1995|Tom Trinko|2171980|3.75|4|1
- AppleScript Programming for the Absolute Beginner|2007|Jerry Lee Ford Jr.|3055205|3.20|5|0
- AppleScript Pocket Reference: The Essential AppleScript Language Reference|2006|Matt Neuburg|6294483|0.0|0|0
-lineCommentToken --
-pygmentsHighlighter AppleScript
- filename scripting.py
- fileExtensions applescript
+helloWorldCollection Applescript
+ -- "Hello World" in AppleScript:
+ 
+ display dialog "Hello World"
+ 
 leachim6 AppleScript
  filepath a/AppleScript.scpt
  fileExtensions scpt
  example
   display dialog "Hello World"  
   
-printToken display dialog
-multiLineCommentTokens (* *)
-stringToken "
+rosettaCode AppleScript
+
+goodreads
+ title|year|author|goodreadsId|rating|ratings|reviews
+ AppleScript for Dummies|1995|Tom Trinko|2171980|3.75|4|1
+ AppleScript Programming for the Absolute Beginner|2007|Jerry Lee Ford Jr.|3055205|3.20|5|0
+ AppleScript Pocket Reference: The Essential AppleScript Language Reference|2006|Matt Neuburg|6294483|0.0|0|0
+
+tiobe Applescript
+hopl 1830
+
+fileType text
+isOpenSource false
+centralPackageRepositoryCount 0

@@ -1,11 +1,13 @@
 title Futhark
 appeared 2013
 type pl
+description <a href='https://futhark-lang.org'>Futhark</a>, a high-performance parallel functional array language targeting GPUs.
+website https://futhark-lang.org
+domainName futhark-lang.org
+ registered 2016
 
 features
  hasComments true
-
-description <a href='https://futhark-lang.org'>Futhark</a>, a high-performance parallel functional array language targeting GPUs.
 
 githubRepo https://github.com/diku-dk/futhark
  firstCommit 2013
@@ -17,15 +19,12 @@ githubRepo https://github.com/diku-dk/futhark
  description :boom::computer::boom: A data-parallel functional programming language
  issues 53
 
-website https://futhark-lang.org
-fileType text
-isOpenSource true
-
-rosettaCode Futhark
-
-centralPackageRepositoryCount 0
 pygmentsHighlighter Futhark
  filename futhark.py
  fileExtensions fut
-domainName futhark-lang.org
- registered 2016
+
+rosettaCode Futhark
+
+fileType text
+isOpenSource true
+centralPackageRepositoryCount 0

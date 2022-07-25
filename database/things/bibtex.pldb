@@ -1,6 +1,8 @@
 title BibTeX
 appeared 1985
 type application
+website https://www.ctan.org/pkg/bibtex
+fileExtensions bib
 
 example
   @inproceedings{Gousi13,
@@ -40,6 +42,10 @@ wikipedia https://en.wikipedia.org/wiki/BibTeX
  revisionCount 583
  appeared 1985
 
+pygmentsHighlighter BibTeX
+ filename bibtex.py
+ fileExtensions bib
+
 helloWorldCollection BibTeX
  %Hello world in BibTex
  
@@ -53,10 +59,5 @@ helloWorldCollection BibTeX
  READ 
  EXECUTE {hello.world}
 
-website https://www.ctan.org/pkg/bibtex
-fileExtensions bib
 fileType text
 centralPackageRepositoryCount 0
-pygmentsHighlighter BibTeX
- filename bibtex.py
- fileExtensions bib

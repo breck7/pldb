@@ -1,6 +1,23 @@
 title GDScript
 appeared 2008
 type pl
+description GDScript is a high level, dynamically typed programming language used to create content. It uses a syntax similar to Python (blocks are indent-based and many keywords are similar). Its goal is to be optimized for and tightly integrated with Godot Engine, allowing great flexibility for content creation and integration.
+website http://docs.godotengine.org/en/3.0/getting_started/scripting/gdscript/gdscript_basics.html
+reference https://en.wikipedia.org/wiki/Godot_(game_engine)
+
+features
+ hasLineComments true
+  # A comment
+ hasComments true
+  # A comment
+ hasPrintDebugging true
+ hasSemanticIndentation false
+ hasStrings true
+  "Hello world"
+
+lineCommentToken #
+printToken print
+stringToken "
 
 example
  # A file is a class!
@@ -21,8 +38,6 @@ example
  const ANSWER = 42
  const THE_NAME = "Charly"
 
-description GDScript is a high level, dynamically typed programming language used to create content. It uses a syntax similar to Python (blocks are indent-based and many keywords are similar). Its goal is to be optimized for and tightly integrated with Godot Engine, allowing great flexibility for content creation and integration.
-
 githubLanguage GDScript
  fileExtensions gd
  trendingProjects
@@ -30,6 +45,9 @@ githubLanguage GDScript
   godotengine godot-demo-projects https://github.com/godotengine.png https://github.com/godotengine/godot-demo-projects GDScript #355570 846 454 39 "Demonstration and Template Projects"
  trendingProjectsCount 2
 
+pygmentsHighlighter GDScript
+ filename gdscript.py
+ fileExtensions gd
 linguistGrammarRepo https://github.com/beefsack/GDScript-sublime
  firstCommit 2014
  lastCommit 2018
@@ -95,23 +113,6 @@ linguistGrammarRepo https://github.com/beefsack/GDScript-sublime
       var lv = Something.new()
       print(lv.a)
 
-website http://docs.godotengine.org/en/3.0/getting_started/scripting/gdscript/gdscript_basics.html
-reference https://en.wikipedia.org/wiki/Godot_(game_engine)
-fileType text
-centralPackageRepositoryCount 0
-lineCommentToken #
-features
- hasLineComments true
-  # A comment
- hasComments true
-  # A comment
- hasPrintDebugging true
- hasSemanticIndentation false
- hasStrings true
-  "Hello world"
-pygmentsHighlighter GDScript
- filename gdscript.py
- fileExtensions gd
 leachim6 GDScript
  filepath g/GDScript.gd
  fileExtensions gd
@@ -121,5 +122,6 @@ leachim6 GDScript
   func _ready():
   	print("Hello World")
   
-printToken print
-stringToken "
+
+fileType text
+centralPackageRepositoryCount 0

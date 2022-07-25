@@ -2,6 +2,10 @@ title Java
 appeared 1995
 type pl
 creators James Gosling
+website oracle.com/java/
+corporateDevelopers Oracle
+
+visualParadigm false
 
 features
  hasAssertStatements true
@@ -90,6 +94,12 @@ features
  hasSemanticIndentation false
  isCaseSensitive true
 
+lineCommentToken //
+multiLineCommentTokens /* */
+printToken System.out.println
+stringToken "
+keywords abstract continue for new switch assert default goto package synchronized boolean do if private this break double implements protected throw byte else import public throws case enum instanceof return transient catch extends int short try char final interface static void class finally long strictfp volatile const float native super while _
+
 wikipedia https://en.wikipedia.org/wiki/Java_(programming_language)
  example
   // Hello.java (Java SE 5)
@@ -148,16 +158,11 @@ githubLanguage Java
   hankcs HanLP https://github.com/hankcs.png https://github.com/hankcs/HanLP Java #b07219 14671 4174 518 "自然语言处理 中文分词 词性标注 命名实体识别 依存句法分析 新词发现 关键词短语提取 自动摘要 文本分类聚类 拼音简繁"
  trendingProjectsCount 26
 
-helloWorldCollection Java
- // Hello World in Java
- 
- class HelloWorld {
-   static public void main( String args[] ) {
-     System.out.println( "Hello World!" );
-   }
- }
- 
-
+antlr https://github.com/antlr/grammars-v4/tree/master/java
+monaco java
+pygmentsHighlighter Java
+ filename jvm.py
+ fileExtensions java
 linguistGrammarRepo https://github.com/textmate/java.tmbundle
  firstCommit 2004
  lastCommit 2018
@@ -363,78 +368,22 @@ linguistGrammarRepo https://github.com/textmate/java.tmbundle
   }
   
   
-
-website oracle.com/java/
-
-replit java
-
-twitter java
-
-fileType text
-wordRank 1489
-
-tiobe Java
- currentRank 1
-
-meetup java
- memberCount 1162766
- groupCount 2090
-
-linkedInSkill java
- 2018 5256079
+languageServerProtocolProject https://github.com/georgewfraser/vscode-javac
+ writtenIn java
 
 projectEuler Java
  memberCount
   2019 27921
   2022 29675
-
-hopl 2131
-
-subreddit java
- memberCount
-  2017 77297
-  2022 266613
-
-quineRelay Java
-
-ubuntuPackage openjdk-8-jdk
-
-rosettaCode Java
-
-antlr https://github.com/antlr/grammars-v4/tree/master/java
-
-corporateDevelopers Oracle
-indeedJobs java engineer
- 2017 32645
-
-lineCommentToken //
-languageServerProtocolProject https://github.com/georgewfraser/vscode-javac
- writtenIn java
-visualParadigm false
-jupyterKernel https://github.com/SpencerPark/IJava
-keywords abstract continue for new switch assert default goto package synchronized boolean do if private this break double implements protected throw byte else import public throws case enum instanceof return transient catch extends int short try char final interface static void class finally long strictfp volatile const float native super while _
-stackOverflowSurvey
- 2021
-  users 29162
-  medianSalary 51888
-  fans 17222
-  percentageUsing 0.35
-packageRepository https://search.maven.org/
-packageRepository https://mvnrepository.com/popular
-rijuRepl https://riju.codes/java
- example
-  public class Main {
-      public static void main(String[] args) {
-          System.out.println("Hello, world!");
-      }
-  }
-  
-goodreads
- title|year|author|goodreadsId|rating|ratings|reviews
- Effective Java Programming Language Guide|2001|Joshua Bloch|101316|4.48|5484|299
-pygmentsHighlighter Java
- filename jvm.py
- fileExtensions java
+helloWorldCollection Java
+ // Hello World in Java
+ 
+ class HelloWorld {
+   static public void main( String args[] ) {
+     System.out.println( "Hello World!" );
+   }
+ }
+ 
 leachim6 Java
  filepath j/Java.java
  fileExtensions java
@@ -445,7 +394,51 @@ leachim6 Java
   	}
   }
   
-printToken System.out.println
-multiLineCommentTokens /* */
-monaco java
-stringToken "
+rosettaCode Java
+quineRelay Java
+
+rijuRepl https://riju.codes/java
+ example
+  public class Main {
+      public static void main(String[] args) {
+          System.out.println("Hello, world!");
+      }
+  }
+  
+replit java
+
+indeedJobs java engineer
+ 2017 32645
+linkedInSkill java
+ 2018 5256079
+stackOverflowSurvey
+ 2021
+  users 29162
+  medianSalary 51888
+  fans 17222
+  percentageUsing 0.35
+
+subreddit java
+ memberCount
+  2017 77297
+  2022 266613
+meetup java
+ memberCount 1162766
+ groupCount 2090
+
+goodreads
+ title|year|author|goodreadsId|rating|ratings|reviews
+ Effective Java Programming Language Guide|2001|Joshua Bloch|101316|4.48|5484|299
+
+tiobe Java
+ currentRank 1
+hopl 2131
+
+packageRepository https://search.maven.org/
+packageRepository https://mvnrepository.com/popular
+
+twitter java
+ubuntuPackage openjdk-8-jdk
+jupyterKernel https://github.com/SpencerPark/IJava
+fileType text
+wordRank 1489

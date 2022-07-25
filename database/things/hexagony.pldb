@@ -1,6 +1,7 @@
 title hexagony
 appeared 2015
 type esolang
+creators Martin Büttner
 
 githubRepo https://github.com/m-ender/hexagony
  stars 277
@@ -12,12 +13,6 @@ githubRepo https://github.com/m-ender/hexagony
  description A two-dimensional, hexagonal programming language.
  issues 1
 
-
-tryItOnline hexagony
-
-fileType text
-isOpenSource true
-centralPackageRepositoryCount 0
 rijuRepl https://riju.codes/hexagony
  example
      H ; e ;
@@ -28,4 +23,8 @@ rijuRepl https://riju.codes/hexagony
     ; 2 3 < \
      4 ; * /
   
-creators Martin Büttner
+tryItOnline hexagony
+
+fileType text
+isOpenSource true
+centralPackageRepositoryCount 0

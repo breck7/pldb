@@ -1,16 +1,16 @@
 title Qalb
 appeared 2012
 type pl
+creators Ramsey Nasser
+website http://qlb-repl.herokuapp.com/
+nativeLanguage Arabic
+domainName qlb-repl.herokuapp.com
 
-wikipedia https://en.wikipedia.org/wiki/Qalb_(programming_language)
- related scheme lisp
- summary قلب (Levantine Arabic: [ʔalb]), transliterated Qalb, Qlb and Alb, is a functional programming language allowing a programmer to write programs completely in Arabic. Its name means heart and is a recursive acronym in Arabic meaning Qlb: a programming language (قلب: لغة برمجة, Qlb: Lughat Barmajah). It was developed in 2012 by Ramsey Nasser, a computer scientist at the Eyebeam Art + Technology Center in New York City, as both an artistic endeavor and as a response to the Anglophone bias in the vast majority of programming languages, which express their fundamental concepts using English words. The syntax is like that of Lisp or Scheme, consisting of parenthesized lists. All keywords are appropriate Arabic terms, and program text is laid out right-to-left, like all Arabic text. The language provides a minimal set of primitives for defining functions, conditionals, looping, list manipulation, and basic arithmetic expressions. It is Turing-complete, and the Fibonacci sequence and Conway's Game of Life have been implemented. Because all program text is written in Arabic, and the connecting strokes between characters in the Arabic script can be extended to any length, it is possible to align the source code in artistic patterns, in the tradition of Arabic calligraphy. A JavaScript-based interpreter is currently hosted on herokuapp and the project can be forked on GitHub.
- pageId 38441485
- dailyPageViews 20
- created 2013
- backlinksCount 5
- revisionCount 35
- appeared 2012
+features
+ hasStrings true
+  "Hello world"
+
+stringToken "
 
 githubRepo https://github.com/nasser/---
  stars 667
@@ -22,23 +22,27 @@ githubRepo https://github.com/nasser/---
  description قلب: لغة برمجة
  issues 4
 
-website http://qlb-repl.herokuapp.com/
-fileType text
-isOpenSource true
-nativeLanguage Arabic
-centralPackageRepositoryCount 0
-rijuRepl https://riju.codes/qalb
- example
-  (قول "مرحبا يا عالم")
-  
-creators Ramsey Nasser
+wikipedia https://en.wikipedia.org/wiki/Qalb_(programming_language)
+ related scheme lisp
+ summary قلب (Levantine Arabic: [ʔalb]), transliterated Qalb, Qlb and Alb, is a functional programming language allowing a programmer to write programs completely in Arabic. Its name means heart and is a recursive acronym in Arabic meaning Qlb: a programming language (قلب: لغة برمجة, Qlb: Lughat Barmajah). It was developed in 2012 by Ramsey Nasser, a computer scientist at the Eyebeam Art + Technology Center in New York City, as both an artistic endeavor and as a response to the Anglophone bias in the vast majority of programming languages, which express their fundamental concepts using English words. The syntax is like that of Lisp or Scheme, consisting of parenthesized lists. All keywords are appropriate Arabic terms, and program text is laid out right-to-left, like all Arabic text. The language provides a minimal set of primitives for defining functions, conditionals, looping, list manipulation, and basic arithmetic expressions. It is Turing-complete, and the Fibonacci sequence and Conway's Game of Life have been implemented. Because all program text is written in Arabic, and the connecting strokes between characters in the Arabic script can be extended to any length, it is possible to align the source code in artistic patterns, in the tradition of Arabic calligraphy. A JavaScript-based interpreter is currently hosted on herokuapp and the project can be forked on GitHub.
+ pageId 38441485
+ dailyPageViews 20
+ created 2013
+ backlinksCount 5
+ revisionCount 35
+ appeared 2012
+
 leachim6 Qalb
  filepath q/Qalb
  example
   (قول "Hello World")
   
-domainName qlb-repl.herokuapp.com
-stringToken "
-features
- hasStrings true
-  "Hello world"
+
+rijuRepl https://riju.codes/qalb
+ example
+  (قول "مرحبا يا عالم")
+  
+
+fileType text
+isOpenSource true
+centralPackageRepositoryCount 0

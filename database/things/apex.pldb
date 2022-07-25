@@ -1,6 +1,12 @@
 title Apex
 appeared 2007
 type pl
+description Apex is a proprietary programming language provided by the Force.com platform to developers similar to Java and C#. It is a strongly typed, object-oriented, case-insensitive programming language, following a dot-notation and curly-brackets syntax. Apex can be used to execute programmed functions during most processes on the Force.com platform including custom buttons and links, event handlers on record insertion, update, or deletion, via scheduling, or via the custom controllers of Visualforce pages. Due to the multitenant nature of the platform, the language has strictly imposed governor limitations[61] to guard against any code monopolizing shared resources. Salesforce provides a series of asynchronous processing methods for Apex to allow developers to produce longer running and more complex Apex code.
+website https://developer.salesforce.com/docs/atlas.en-us.apexcode.meta/apexcode/apex_intro_what_is_apex.htm
+reference https://en.wikipedia.org/wiki/Salesforce.com#Apex
+corporateDevelopers Salesforce
+firstAnnouncement http://www.zdnet.com/article/inside-the-salesforce-apex-language/
+announcementMethod interview
 
 features
  hasComments true
@@ -12,12 +18,17 @@ features
   /* A comment
   */
 
-description Apex is a proprietary programming language provided by the Force.com platform to developers similar to Java and C#. It is a strongly typed, object-oriented, case-insensitive programming language, following a dot-notation and curly-brackets syntax. Apex can be used to execute programmed functions during most processes on the Force.com platform including custom buttons and links, event handlers on record insertion, update, or deletion, via scheduling, or via the custom controllers of Visualforce pages. Due to the multitenant nature of the platform, the language has strictly imposed governor limitations[61] to guard against any code monopolizing shared resources. Salesforce provides a series of asynchronous processing methods for Apex to allow developers to produce longer running and more complex Apex code.
+lineCommentToken //
+multiLineCommentTokens /* */
+stringToken '
+keywords abstract ABSTRACT Abstract activate ACTIVATE Activate and AND And any ANY Any array ARRAY Array as AS As asc ASC Asc assert ASSERT Assert autonomous AUTONOMOUS Autonomous begin BEGIN Begin bigdecimal BIGDECIMAL Bigdecimal blob BLOB Blob boolean BOOLEAN Boolean break BREAK Break bulk BULK Bulk by BY By case CASE Case cast CAST Cast catch CATCH Catch char CHAR Char class CLASS Class collect COLLECT Collect commit COMMIT Commit const CONST Const continue CONTINUE Continue convertcurrency CONVERTCURRENCY Convertcurrency decimal DECIMAL Decimal default DEFAULT Default delete DELETE Delete desc DESC Desc do DO Do double DOUBLE Double else ELSE Else end END End enum ENUM Enum exception EXCEPTION Exception exit EXIT Exit export EXPORT Export extends EXTENDS Extends false FALSE False final FINAL Final finally FINALLY Finally float FLOAT Float for FOR For from FROM From future FUTURE Future get GET Get global GLOBAL Global goto GOTO Goto group GROUP Group having HAVING Having hint HINT Hint if IF If implements IMPLEMENTS Implements import IMPORT Import in IN In inner INNER Inner insert INSERT Insert instanceof INSTANCEOF Instanceof int INT Int interface INTERFACE Interface into INTO Into join JOIN Join last_90_days LAST_90_DAYS Last_90_days last_month LAST_MONTH Last_month last_n_days LAST_N_DAYS Last_n_days last_week LAST_WEEK Last_week like LIKE Like limit LIMIT Limit list LIST List long LONG Long loop LOOP Loop map MAP Map merge MERGE Merge native NATIVE Native new NEW New next_90_days NEXT_90_DAYS Next_90_days next_month NEXT_MONTH Next_month next_n_days NEXT_N_DAYS Next_n_days next_week NEXT_WEEK Next_week not NOT Not null NULL Null nulls NULLS Nulls number NUMBER Number object OBJECT Object of OF Of on ON On or OR Or outer OUTER Outer override OVERRIDE Override package PACKAGE Package parallel PARALLEL Parallel pragma PRAGMA Pragma private PRIVATE Private protected PROTECTED Protected public PUBLIC Public retrieve RETRIEVE Retrieve return RETURN Return returning RETURNING Returning rollback ROLLBACK Rollback savepoint SAVEPOINT Savepoint search SEARCH Search select SELECT Select set SET Set short SHORT Short sort SORT Sort stat STAT Stat static STATIC Static strictfp STRICTFP Strictfp super SUPER Super switch SWITCH Switch synchronized SYNCHRONIZED Synchronized system SYSTEM System testmethod TESTMETHOD Testmethod then THEN Then this THIS This this_month THIS_MONTH This_month this_week THIS_WEEK This_week throw THROW Throw throws THROWS Throws today TODAY Today tolabel TOLABEL Tolabel tomorrow TOMORROW Tomorrow transaction TRANSACTION Transaction transient TRANSIENT Transient trigger TRIGGER Trigger true TRUE True try TRY Try type TYPE Type undelete UNDELETE Undelete update UPDATE Update upsert UPSERT Upsert using USING Using virtual VIRTUAL Virtual void VOID Void volatile VOLATILE Volatile webservice WEBSERVICE Webservice when WHEN When where WHERE Where while WHILE While yesterday YESTERDAY Yesterday
 
 githubLanguage Apex
  fileExtensions cls
  trendingProjectsCount 0
 
+antlr https://github.com/antlr/grammars-v4/tree/master/apex
+monaco apex
 linguistGrammarRepo https://github.com/textmate/java.tmbundle
  firstCommit 2004
  lastCommit 2018
@@ -80,25 +91,9 @@ linguistGrammarRepo https://github.com/textmate/java.tmbundle
          
   	}
   }
-
-website https://developer.salesforce.com/docs/atlas.en-us.apexcode.meta/apexcode/apex_intro_what_is_apex.htm
-reference https://en.wikipedia.org/wiki/Salesforce.com#Apex
-firstAnnouncement http://www.zdnet.com/article/inside-the-salesforce-apex-language/
-fileType text
-
-tiobe Apex
- currentRank 43
-
-rosettaCode Apex
-
-antlr https://github.com/antlr/grammars-v4/tree/master/apex
-
-corporateDevelopers Salesforce
-announcementMethod interview
 languageServerProtocolProject https://marketplace.visualstudio.com/items?itemName=salesforce.salesforcedx-vscode-apex
  writtenIn typescript
-centralPackageRepositoryCount 0
-lineCommentToken //
+
 leachim6 Apex
  filepath a/Apex.cls
  fileExtensions cls
@@ -108,7 +103,10 @@ leachim6 Apex
       System.debug('Hello World');
     }
   }
-monaco apex
-multiLineCommentTokens /* */
-keywords abstract ABSTRACT Abstract activate ACTIVATE Activate and AND And any ANY Any array ARRAY Array as AS As asc ASC Asc assert ASSERT Assert autonomous AUTONOMOUS Autonomous begin BEGIN Begin bigdecimal BIGDECIMAL Bigdecimal blob BLOB Blob boolean BOOLEAN Boolean break BREAK Break bulk BULK Bulk by BY By case CASE Case cast CAST Cast catch CATCH Catch char CHAR Char class CLASS Class collect COLLECT Collect commit COMMIT Commit const CONST Const continue CONTINUE Continue convertcurrency CONVERTCURRENCY Convertcurrency decimal DECIMAL Decimal default DEFAULT Default delete DELETE Delete desc DESC Desc do DO Do double DOUBLE Double else ELSE Else end END End enum ENUM Enum exception EXCEPTION Exception exit EXIT Exit export EXPORT Export extends EXTENDS Extends false FALSE False final FINAL Final finally FINALLY Finally float FLOAT Float for FOR For from FROM From future FUTURE Future get GET Get global GLOBAL Global goto GOTO Goto group GROUP Group having HAVING Having hint HINT Hint if IF If implements IMPLEMENTS Implements import IMPORT Import in IN In inner INNER Inner insert INSERT Insert instanceof INSTANCEOF Instanceof int INT Int interface INTERFACE Interface into INTO Into join JOIN Join last_90_days LAST_90_DAYS Last_90_days last_month LAST_MONTH Last_month last_n_days LAST_N_DAYS Last_n_days last_week LAST_WEEK Last_week like LIKE Like limit LIMIT Limit list LIST List long LONG Long loop LOOP Loop map MAP Map merge MERGE Merge native NATIVE Native new NEW New next_90_days NEXT_90_DAYS Next_90_days next_month NEXT_MONTH Next_month next_n_days NEXT_N_DAYS Next_n_days next_week NEXT_WEEK Next_week not NOT Not null NULL Null nulls NULLS Nulls number NUMBER Number object OBJECT Object of OF Of on ON On or OR Or outer OUTER Outer override OVERRIDE Override package PACKAGE Package parallel PARALLEL Parallel pragma PRAGMA Pragma private PRIVATE Private protected PROTECTED Protected public PUBLIC Public retrieve RETRIEVE Retrieve return RETURN Return returning RETURNING Returning rollback ROLLBACK Rollback savepoint SAVEPOINT Savepoint search SEARCH Search select SELECT Select set SET Set short SHORT Short sort SORT Sort stat STAT Stat static STATIC Static strictfp STRICTFP Strictfp super SUPER Super switch SWITCH Switch synchronized SYNCHRONIZED Synchronized system SYSTEM System testmethod TESTMETHOD Testmethod then THEN Then this THIS This this_month THIS_MONTH This_month this_week THIS_WEEK This_week throw THROW Throw throws THROWS Throws today TODAY Today tolabel TOLABEL Tolabel tomorrow TOMORROW Tomorrow transaction TRANSACTION Transaction transient TRANSIENT Transient trigger TRIGGER Trigger true TRUE True try TRY Try type TYPE Type undelete UNDELETE Undelete update UPDATE Update upsert UPSERT Upsert using USING Using virtual VIRTUAL Virtual void VOID Void volatile VOLATILE Volatile webservice WEBSERVICE Webservice when WHEN When where WHERE Where while WHILE While yesterday YESTERDAY Yesterday
-stringToken '
+rosettaCode Apex
+
+tiobe Apex
+ currentRank 43
+
+fileType text
+centralPackageRepositoryCount 0

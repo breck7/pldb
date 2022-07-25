@@ -1,6 +1,7 @@
 title git-config
 appeared 2005
 type application
+website https://git-scm.com/docs/git-config#_syntax
 
 example
  # Core variables
@@ -8,6 +9,5 @@ example
    ; Don't trust file modes
    filemode = false
 
-website https://git-scm.com/docs/git-config#_syntax
 fileType text
 centralPackageRepositoryCount 0

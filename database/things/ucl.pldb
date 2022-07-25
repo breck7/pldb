@@ -1,6 +1,7 @@
 title UCL
 appeared 2013
 type dataNotation
+standsFor Universal Configuration Language
 
 example
  param = value;
@@ -33,7 +34,6 @@ githubRepo https://github.com/vstakhov/libucl
  description Universal configuration library parser
  issues 67
 
-standsFor Universal Configuration Language
 fileType text
 isOpenSource true
 centralPackageRepositoryCount 0

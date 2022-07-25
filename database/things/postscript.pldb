@@ -1,7 +1,10 @@
 title PostScript
 appeared 1982
 type textMarkup
-lineCommentToken %
+creators John Warnock and Chuck Geschke and Doug Brotz and Ed Taft and Bill Paxton
+description Postscript is a graphical page description language invented by ChuckGetsche and JohnWarnock (the President and CEO of Adobe). Its syntax looks a little bit like Forth, because it is derived from Forth; however, Postscript's internal implementation has nothing to do with Forth.
+country United States
+corporateDevelopers Adobe
 
 features
  hasComments true
@@ -11,7 +14,8 @@ features
  hasPrintDebugging true
  hasSemanticIndentation false
 
-description Postscript is a graphical page description language invented by ChuckGetsche and JohnWarnock (the President and CEO of Adobe). Its syntax looks a little bit like Forth, because it is derived from Forth; however, Postscript's internal implementation has nothing to do with Forth.
+lineCommentToken %
+printToken print
 
 wikipedia https://en.wikipedia.org/wiki/PostScript
  example
@@ -31,17 +35,9 @@ githubLanguage PostScript
  fileExtensions ps eps pfa
  trendingProjectsCount 0
 
-helloWorldCollection PostScript
- % Hello World in Postscript
- %!PS
- /Palatino-Roman findfont
- 100 scalefont
- setfont
- 100 100 moveto
- (Hello World!) show
- showpage
- 
-
+pygmentsHighlighter PostScript
+ filename graphics.py
+ fileExtensions ps eps
 linguistGrammarRepo https://github.com/textmate/postscript.tmbundle
  firstCommit 2006
  lastCommit 2011
@@ -92,37 +88,38 @@ linguistGrammarRepo https://github.com/textmate/postscript.tmbundle
   %%EOF
   
 
-country United States
-fileType text
-
-tiobe PostScript
-
-hopl 1010
-
-quineRelay PostScript
-
-ubuntuPackage ghostscript
-
-rosettaCode PostScript
-
-corporateDevelopers Adobe
-centralPackageRepositoryCount 0
-rijuRepl https://riju.codes/postscript
- example
-  (Hello, world!) =
-  
-creators John Warnock and Chuck Geschke and Doug Brotz and Ed Taft and Bill Paxton
-goodreads
- title|year|author|goodreadsId|rating|ratings|reviews
- PostScript Language Tutorial and Cookbook|1985|Adobe Systems Inc.|1604758|3.47|15|0
- PostScript Language Reference Manual|1990|Adobe Creative Team|3440124|3.67|9|0
-pygmentsHighlighter PostScript
- filename graphics.py
- fileExtensions ps eps
+helloWorldCollection PostScript
+ % Hello World in Postscript
+ %!PS
+ /Palatino-Roman findfont
+ 100 scalefont
+ setfont
+ 100 100 moveto
+ (Hello World!) show
+ showpage
+ 
 leachim6 PostScript
  filepath p/PostScript.ps
  fileExtensions ps
  example
   % run> gs -q -sDEVICE=nullpage postscript.ps
   (Hello World\n) print quit
-printToken print
+rosettaCode PostScript
+quineRelay PostScript
+
+rijuRepl https://riju.codes/postscript
+ example
+  (Hello, world!) =
+  
+
+goodreads
+ title|year|author|goodreadsId|rating|ratings|reviews
+ PostScript Language Tutorial and Cookbook|1985|Adobe Systems Inc.|1604758|3.47|15|0
+ PostScript Language Reference Manual|1990|Adobe Creative Team|3440124|3.67|9|0
+
+tiobe PostScript
+hopl 1010
+
+ubuntuPackage ghostscript
+fileType text
+centralPackageRepositoryCount 0

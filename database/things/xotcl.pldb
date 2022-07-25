@@ -2,6 +2,14 @@ title XOTcl
 appeared 2000
 type pl
 
+features
+ hasPrintDebugging true
+ hasStrings true
+  "Hello world"
+
+printToken puts
+stringToken "
+
 wikipedia https://en.wikipedia.org/wiki/XOTcl
  related tcl clos
  summary XOTcl is an object-oriented extension for the Tool Command Language created by Gustaf Neumann and Uwe Zdun. It is a derivative of MIT OTcl. XOTcl is based on a dynamic object system with metaclasses which as influenced by CLOS. Class and method definitions are completely dynamic. XOTcl provides language support for design patterns via filters and decorator mixins.
@@ -12,16 +20,11 @@ wikipedia https://en.wikipedia.org/wiki/XOTcl
  dailyPageViews 7
  appeared 2000
 
-centralPackageRepositoryCount 0
 leachim6 XOTcl
  filepath x/XOTcl.xotcl
  fileExtensions xotcl
  example
   puts "Hello World"
   
-printToken puts
-features
- hasPrintDebugging true
- hasStrings true
-  "Hello world"
-stringToken "
+
+centralPackageRepositoryCount 0

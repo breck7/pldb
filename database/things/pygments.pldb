@@ -1,9 +1,16 @@
 title Pygments
-description Pygments is a generic syntax highlighter suitable for use in code hosting, forums, wikis or other applications that need to prettify source code. 
+appeared 2006
 type library
-writtenIn python
+creators Georg Brandl
+description Pygments is a generic syntax highlighter suitable for use in code hosting, forums, wikis or other applications that need to prettify source code. 
 website https://pygments.org/
+webRepl https://pygments.org/demo/
+domainName pygments.org
+ registered 2007
+
+writtenIn python
 related codemirror monaco highlightjs ace sublime-syntax tmlanguage
+
 githubRepo https://github.com/pygments/pygments
  firstCommit 2006
  stars 990
@@ -13,8 +20,3 @@ githubRepo https://github.com/pygments/pygments
  updated 2022
  description Pygments is a generic syntax highlighter written in Python
  issues 385
-appeared 2006
-creators Georg Brandl
-webRepl https://pygments.org/demo/
-domainName pygments.org
- registered 2007

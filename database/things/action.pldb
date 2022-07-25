@@ -11,6 +11,9 @@ features
  hasPrintDebugging true
  hasSemanticIndentation false
 
+lineCommentToken ;
+printToken PRINTF
+
 wikipedia https://en.wikipedia.org/wiki/Action!_(programming_language)
  example
   BYTE RTCLOK=20, ; addr of sys timer
@@ -59,11 +62,10 @@ wikipedia https://en.wikipedia.org/wiki/Action!_(programming_language)
  dailyPageViews 15
  appeared 1983
 
-fileType text
-wordRank 473
-centralPackageRepositoryCount 0
 goodreads
  title|year|author|goodreadsId|rating|ratings|reviews
  Action Programming Languages|1905|Michael Thielscher|22766460|0.0|0|0
-lineCommentToken ;
-printToken PRINTF
+
+fileType text
+wordRank 473
+centralPackageRepositoryCount 0

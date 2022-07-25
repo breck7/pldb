@@ -1,10 +1,18 @@
 title API Blueprint
 appeared 2013
 type pl
+website https://apiblueprint.org
+domainName apiblueprint.org
+ registered 2013
 
-githubLanguage API Blueprint
- fileExtensions apib
- trendingProjectsCount 0
+features
+ hasLineComments true
+  # A comment
+ hasComments true
+  # A comment
+ hasSemanticIndentation false
+
+lineCommentToken #
 
 githubRepo https://github.com/apiaryio/api-blueprint
  firstCommit 2013
@@ -15,6 +23,10 @@ githubRepo https://github.com/apiaryio/api-blueprint
  updated 2022
  description API Blueprint
  issues 64
+
+githubLanguage API Blueprint
+ fileExtensions apib
+ trendingProjectsCount 0
 
 linguistGrammarRepo https://github.com/apiaryio/api-blueprint-sublime-plugin
  firstCommit 2013
@@ -42,19 +54,7 @@ linguistGrammarRepo https://github.com/apiaryio/api-blueprint-sublime-plugin
   
           Hello World!
 
-website https://apiblueprint.org
-
 twitter apiblueprint
-
 fileType text
 isOpenSource true
 centralPackageRepositoryCount 0
-lineCommentToken #
-features
- hasLineComments true
-  # A comment
- hasComments true
-  # A comment
- hasSemanticIndentation false
-domainName apiblueprint.org
- registered 2013

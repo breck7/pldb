@@ -1,6 +1,15 @@
 title Elixir
 appeared 2011
 type pl
+creators José Valim
+website https://elixir-lang.org
+fileExtensions ex exs
+corporateDevelopers plataformatec
+domainName elixir-lang.org
+
+writtenIn elixir
+
+visualParadigm false
 
 features
  hasComments true
@@ -25,6 +34,20 @@ features
  hasPrintDebugging true
  hasStrings true
   "Hello world"
+
+lineCommentToken #
+printToken IO.puts
+stringToken "
+
+githubRepo https://github.com/elixir-lang/elixir
+ stars 20394
+ forks 2911
+ subscribers 680
+ created 2011
+ updated 2022
+ firstCommit 2011
+ description Elixir is a dynamic, functional language designed for building scalable and maintainable applications
+ issues 30
 
 wikipedia https://en.wikipedia.org/wiki/Elixir_(programming_language)
  example
@@ -56,23 +79,10 @@ githubLanguage Elixir
   chrismccord phoenix_live_view_example https://github.com/chrismccord.png https://github.com/chrismccord/phoenix_live_view_example Elixir #6e4a7e 273 91 10
  trendingProjectsCount 10
 
-githubRepo https://github.com/elixir-lang/elixir
- stars 20394
- forks 2911
- subscribers 680
- created 2011
- updated 2022
- firstCommit 2011
- description Elixir is a dynamic, functional language designed for building scalable and maintainable applications
- issues 30
-
-helloWorldCollection Elixir
- # Hello world in Elixir
- 
- defmodule HelloWorld do
-   IO.puts "Hello, World!"
- end
-
+monaco elixir
+pygmentsHighlighter Elixir
+ filename erlang.py
+ fileExtensions ex eex exs leex
 linguistGrammarRepo https://github.com/elixir-lang/elixir-tmbundle
  firstCommit 2011
  lastCommit 2018
@@ -91,58 +101,19 @@ linguistGrammarRepo https://github.com/elixir-lang/elixir-tmbundle
     "poison": {:hex, :poison, "1.3.1"},
     "ranch": {:hex, :ranch, "1.0.0"}}
   
-
-website https://elixir-lang.org
-
-tryItOnline elixir
-
-twitter elixirlang
-
-fileExtensions ex exs
-fileType text
-isOpenSource true
-
-tiobe Elixir
-
-meetup elixir
- memberCount 44835
- groupCount 211
+languageServerProtocolProject https://github.com/JakeBecker/elixir-ls
+ writtenIn elixir
 
 projectEuler Elixir
  memberCount
   2019 129
   2022 173
-
-quineRelay Elixir
-
-ubuntuPackage elixir
-
-rosettaCode Elixir
-
-corporateDevelopers plataformatec
-writtenIn elixir
-indeedJobs elixir developer
- 2017 214
-lineCommentToken #
-languageServerProtocolProject https://github.com/JakeBecker/elixir-ls
- writtenIn elixir
-visualParadigm false
-jupyterKernel https://github.com/pprzetacznik/IElixir
-stackOverflowSurvey
- 2021
-  users 1438
-  medianSalary 80077
-  fans 3374
-  percentageUsing 0.02
-centralPackageRepositoryCount 0
-rijuRepl https://riju.codes/elixir
- example
-  IO.puts("Hello, world!")
-  
-creators José Valim
-pygmentsHighlighter Elixir
- filename erlang.py
- fileExtensions ex eex exs leex
+helloWorldCollection Elixir
+ # Hello world in Elixir
+ 
+ defmodule HelloWorld do
+   IO.puts "Hello, World!"
+ end
 leachim6 Elixir
  filepath e/Elixir.exs
  fileExtensions exs
@@ -150,7 +121,33 @@ leachim6 Elixir
   #!/usr/bin/env elixir
   IO.puts "Hello World"
   
-printToken IO.puts
-domainName elixir-lang.org
-monaco elixir
-stringToken "
+rosettaCode Elixir
+quineRelay Elixir
+
+rijuRepl https://riju.codes/elixir
+ example
+  IO.puts("Hello, world!")
+  
+tryItOnline elixir
+
+indeedJobs elixir developer
+ 2017 214
+stackOverflowSurvey
+ 2021
+  users 1438
+  medianSalary 80077
+  fans 3374
+  percentageUsing 0.02
+
+meetup elixir
+ memberCount 44835
+ groupCount 211
+
+tiobe Elixir
+
+twitter elixirlang
+ubuntuPackage elixir
+jupyterKernel https://github.com/pprzetacznik/IElixir
+fileType text
+isOpenSource true
+centralPackageRepositoryCount 0

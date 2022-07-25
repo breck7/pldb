@@ -1,14 +1,26 @@
 title Pharo
 appeared 2008
 type pl
+description Pharo is a pure object-oriented programming language and a powerful environment, focused on simplicity and immediate feedback (think IDE and OS rolled into one).
+website https://pharo.org/
+reference https://fosdem.org/2020/schedule/event/pharominimalrefllangkernels/
+cheatSheetUrl http://files.pharo.org/media/pharoCheatSheet.pdf
+domainName pharo.org
+ registered 2008
+
+features
+ hasPrintDebugging true
+ hasStrings true
+  'Hello world'
+
+printToken crLog
+stringToken '
 
 example
  Object subclass: #Counter
   instanceVariableNames: ’count initialValue’
   classVariableNames: ’’
   package: ’MyCounter’
-
-description Pharo is a pure object-oriented programming language and a powerful environment, focused on simplicity and immediate feedback (think IDE and OS rolled into one).
 
 wikipedia https://en.wikipedia.org/wiki/Pharo
  related smalltalk linux squeak newspeak visualworks
@@ -20,26 +32,14 @@ wikipedia https://en.wikipedia.org/wiki/Pharo
  dailyPageViews 72
  appeared 2008
 
-website https://pharo.org/
-reference https://fosdem.org/2020/schedule/event/pharominimalrefllangkernels/
-
-twitter pharoproject
-
-fileType text
-isOpenSource true
-cheatSheetUrl http://files.pharo.org/media/pharoCheatSheet.pdf
-jupyterKernel https://github.com/jmari/JupyterTalk
-centralPackageRepositoryCount 0
 leachim6 Pharo
  filepath p/Pharo.st
  fileExtensions st
  example
   'Hello World' crLog
-printToken crLog
-features
- hasPrintDebugging true
- hasStrings true
-  'Hello world'
-domainName pharo.org
- registered 2008
-stringToken '
+
+twitter pharoproject
+jupyterKernel https://github.com/jmari/JupyterTalk
+fileType text
+isOpenSource true
+centralPackageRepositoryCount 0

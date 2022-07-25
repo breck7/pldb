@@ -1,7 +1,9 @@
 title Algebraic Data Type
 type feature
-psuedoExample garageContents = empty | vehicle
 description A kind of composite type, i.e., a type formed by combining other types.
+
+psuedoExample garageContents = empty | vehicle
+featureKeyword hasAlgebraicTypes
 
 wikipedia https://en.wikipedia.org/wiki/Algebraic_data_type
  summary In computer programming, especially functional programming and type theory, an algebraic data type is a kind of composite type, i.e., a type formed by combining other types. Two common classes of algebraic types are product types (i.e., tuples and records) and sum types (i.e., tagged or disjoint unions, coproduct types or variant types).The values of a product type typically contain several values, called fields.  All values of that type have the same combination of field types.  The set of all possible values of a product type is the set-theoretic product, i.e., the Cartesian product, of the sets of all possible values of its field types. The values of a sum type are typically grouped into several classes, called variants.  A value of a variant type is usually created with a quasi-functional entity called a constructor.  Each variant has its own constructor, which takes a specified number of arguments with specified types.  The set of all possible values of a sum type is the set-theoretic sum, i.e., the disjoint union, of the sets of all possible values of its variants. Enumerated types are a special case of sum types in which the constructors take no arguments, as exactly one value is defined for each constructor. Values of algebraic types are analyzed with pattern matching, which identifies a value by its constructor or field names and extracts the data it contains. Algebraic data types were introduced in Hope, a small functional programming language developed in the 1970s at the University of Edinburgh.
@@ -9,5 +11,3 @@ wikipedia https://en.wikipedia.org/wiki/Algebraic_data_type
  pageId 283867
  dailyPageViews 188
  appeared 1970
-
-featureKeyword hasAlgebraicTypes

@@ -2,6 +2,20 @@ title Picat
 appeared 2012
 type pl
 creators Neng-Fa Zhou and Jonathan Fruhman
+website http://www.picat-lang.org/
+reference http://www.hakank.org/picat/
+domainName picat-lang.org
+ registered 2012
+
+related prolog
+
+features
+ hasPrintDebugging true
+ hasStrings true
+  "Hello world"
+
+printToken println
+stringToken "
 
 example
  import util.
@@ -15,9 +29,6 @@ example
   I := I+1
      end.
 
-website http://www.picat-lang.org/
-reference http://www.hakank.org/picat/
-related prolog
 leachim6 PiCat
  filepath p/PiCat.pi
  fileExtensions pi
@@ -25,11 +36,3 @@ leachim6 PiCat
   main =>
     println("Hello World").
   
-printToken println
-features
- hasPrintDebugging true
- hasStrings true
-  "Hello world"
-domainName picat-lang.org
- registered 2012
-stringToken "

@@ -2,6 +2,15 @@ title Pnuts
 appeared 1997
 type pl
 
+features
+ hasLineComments true
+  // A comment
+ hasComments true
+  // A comment
+ hasSemanticIndentation false
+
+lineCommentToken //
+
 wikipedia https://en.wikipedia.org/wiki/Pnuts
  example
   use("pnuts.lib") // Standard module that makes sort, println and other functions available. 
@@ -19,10 +28,3 @@ wikipedia https://en.wikipedia.org/wiki/Pnuts
 
 isOpenSource true
 centralPackageRepositoryCount 0
-lineCommentToken //
-features
- hasLineComments true
-  // A comment
- hasComments true
-  // A comment
- hasSemanticIndentation false

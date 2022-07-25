@@ -1,6 +1,8 @@
 title Structured Control Language
 appeared 1998
 type pl
+reference https://cache.industry.siemens.com/dl/files/188/1137188/att_27471/v1/SCLV4_e.pdf
+standsFor Structured Control Language
 
 example
  CASE TW OF
@@ -15,6 +17,3 @@ example
  ELSE: DISPLAY := 0;
   TW_ERROR := 1;
  END_CASE;
-
-reference https://cache.industry.siemens.com/dl/files/188/1137188/att_27471/v1/SCLV4_e.pdf
-standsFor Structured Control Language

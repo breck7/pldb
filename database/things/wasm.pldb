@@ -1,6 +1,14 @@
 title WebAssembly
 appeared 2015
 type bytecode
+creators Ben Smith
+website http://webassembly.org/
+fileExtensions wasm
+corporateDevelopers W3C
+domainName webassembly.org
+ registered 2015
+
+writtenIn cpp
 
 example
  20 00
@@ -15,6 +23,16 @@ example
  10 00
  7E
  0B
+
+githubRepo https://github.com/WebAssembly/wabt
+ stars 4534
+ forks 525
+ subscribers 152
+ created 2015
+ updated 2022
+ firstCommit 2015
+ description The WebAssembly Binary Toolkit
+ issues 138
 
 wikipedia https://en.wikipedia.org/wiki/WebAssembly
  example
@@ -42,16 +60,9 @@ githubLanguage WebAssembly
   AssemblyScript assemblyscript https://github.com/AssemblyScript.png https://github.com/AssemblyScript/assemblyscript WebAssembly #04133b 6742 263 287 "Definitely not a TypeScript to WebAssembly compiler 🚀"
  trendingProjectsCount 2
 
-githubRepo https://github.com/WebAssembly/wabt
- stars 4534
- forks 525
- subscribers 152
- created 2015
- updated 2022
- firstCommit 2015
- description The WebAssembly Binary Toolkit
- issues 138
-
+pygmentsHighlighter WebAssembly
+ filename webassembly.py
+ fileExtensions wat wast
 linguistGrammarRepo https://github.com/Alhadis/language-webassembly
  firstCommit 2017
  lastCommit 2017
@@ -75,22 +86,6 @@ linguistGrammarRepo https://github.com/Alhadis/language-webassembly
   )
   
 
-website http://webassembly.org/
-
-tryItOnline wasm
-
-fileExtensions wasm
-fileType text
-isOpenSource true
-writtenIn cpp
-indeedJobs webassembly engineer
- 2017 5
-centralPackageRepositoryCount 0
-corporateDevelopers W3C
-creators Ben Smith
-pygmentsHighlighter WebAssembly
- filename webassembly.py
- fileExtensions wat wast
 leachim6 WebAssembly
  filepath w/WebAssembly.wat
  fileExtensions wat
@@ -115,5 +110,12 @@ leachim6 WebAssembly
       )
   )
   
-domainName webassembly.org
- registered 2015
+
+tryItOnline wasm
+
+indeedJobs webassembly engineer
+ 2017 5
+
+fileType text
+isOpenSource true
+centralPackageRepositoryCount 0

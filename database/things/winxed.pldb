@@ -1,6 +1,23 @@
 title winxed
 appeared 2009
 type pl
+website http://winxed.net/
+fileExtensions winxed
+domainName winxed.net
+ registered 2013
+
+features
+ hasLineComments true
+  // A comment
+ hasComments true
+  // A comment
+ hasMultiLineComments true
+  /* A comment
+  */
+ hasSemanticIndentation false
+
+lineCommentToken //
+multiLineCommentTokens /* */
 
 example
  #! winxed
@@ -69,19 +86,3 @@ githubRepo https://github.com/NotFound/winxed
  updated 2018
  description The winxed programming language
  issues 6
-
-website http://winxed.net/
-fileExtensions winxed
-lineCommentToken //
-features
- hasLineComments true
-  // A comment
- hasComments true
-  // A comment
- hasMultiLineComments true
-  /* A comment
-  */
- hasSemanticIndentation false
-multiLineCommentTokens /* */
-domainName winxed.net
- registered 2013

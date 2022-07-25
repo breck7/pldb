@@ -2,6 +2,14 @@ title AMOS
 appeared 1990
 type pl
 
+features
+ hasPrintDebugging true
+ hasStrings true
+  "Hello world"
+
+printToken Print
+stringToken "
+
 wikipedia https://en.wikipedia.org/wiki/AMOS_(programming_language)
  related stos-basic basic blitzbasic arexx
  summary AMOS BASIC is a dialect of the BASIC programming language implemented on the Amiga computer. AMOS BASIC was published by Europress Software and originally written by François Lionet with Constantin Sotiropoulos.
@@ -12,17 +20,12 @@ wikipedia https://en.wikipedia.org/wiki/AMOS_(programming_language)
  dailyPageViews 34
  appeared 1990
 
-fileType text
-isOpenSource true
-centralPackageRepositoryCount 0
 leachim6 Amos
  filepath a/Amos
  example
   Print "Hello World"
   
-printToken Print
-features
- hasPrintDebugging true
- hasStrings true
-  "Hello world"
-stringToken "
+
+fileType text
+isOpenSource true
+centralPackageRepositoryCount 0

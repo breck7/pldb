@@ -1,6 +1,17 @@
 title Logos
 appeared 2010
 type pl
+description Logos is a component of the Theos development suite that allows method hooking code to be written easily and clearly, using a set of special preprocessor directives. Theos is a cross-platform suite of development tools for managing, developing, and deploying iOS software without the use of Xcode. It is an important tool for people building extensions (tweaks) for jailbroken iOS; most extension developers use Theos.
+reference https://github.com/DHowett/theos-logos-examples
+
+features
+ hasLineComments true
+  // A comment
+ hasComments true
+  // A comment
+ hasSemanticIndentation false
+
+lineCommentToken //
 
 example
  %group iOS8
@@ -23,12 +34,13 @@ example
    }
  }
 
-description Logos is a component of the Theos development suite that allows method hooking code to be written easily and clearly, using a set of special preprocessor directives. Theos is a cross-platform suite of development tools for managing, developing, and deploying iOS software without the use of Xcode. It is an important tool for people building extensions (tweaks) for jailbroken iOS; most extension developers use Theos.
-
 githubLanguage Logos
  fileExtensions xm x xi
  trendingProjectsCount 0
 
+pygmentsHighlighter Logos
+ filename objective.py
+ fileExtensions x xi xm xmi
 linguistGrammarRepo https://github.com/Cykey/Sublime-Logos
  firstCommit 2013
  lastCommit 2016
@@ -43,17 +55,6 @@ linguistGrammarRepo https://github.com/Cykey/Sublime-Logos
   return 0
   
 
-reference https://github.com/DHowett/theos-logos-examples
 fileType text
 wordRank 3920
 centralPackageRepositoryCount 0
-lineCommentToken //
-features
- hasLineComments true
-  // A comment
- hasComments true
-  // A comment
- hasSemanticIndentation false
-pygmentsHighlighter Logos
- filename objective.py
- fileExtensions x xi xm xmi

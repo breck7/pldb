@@ -1,6 +1,7 @@
 title alan
 appeared 2018
 type pl
+website https://alan-platform.com/pages/tuts/introducing.html
 
 example
  'Reasons': collection { }
@@ -15,7 +16,6 @@ example
  }
  'Active Users':= integer 'n' = count .'Users'?'Active'|'Yes'
 
-website https://alan-platform.com/pages/tuts/introducing.html
 fileType text
 wordRank 3609
 centralPackageRepositoryCount 0

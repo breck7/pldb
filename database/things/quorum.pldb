@@ -3,16 +3,19 @@ appeared 2013
 type pl
 website https://quorumlanguage.com/
 reference https://bitbucket.org/stefika/quorum-language
+domainName quorumlanguage.com
+
+features
+ hasPrintDebugging true
+ hasStrings true
+  "Hello world"
+
+printToken output
+stringToken "
+
 leachim6 Quorum
  filepath q/Quorum.quorum
  fileExtensions quorum
  example
   output "Hello World"
   
-printToken output
-features
- hasPrintDebugging true
- hasStrings true
-  "Hello world"
-domainName quorumlanguage.com
-stringToken "

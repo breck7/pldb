@@ -1,6 +1,7 @@
 title Wavefront Material
 appeared 1988
 type application
+reference https://github.com/Alhadis/language-wavefront/blob/master/specs/mtl.rst
 
 example
  newmtl flat_green
@@ -32,6 +33,5 @@ linguistGrammarRepo https://github.com/Alhadis/language-wavefront
   	Kd 0.34509805 0.69411767 0.10588236
   	Ks 0.34999999 0.34999999 0.34999999
 
-reference https://github.com/Alhadis/language-wavefront/blob/master/specs/mtl.rst
 fileType text
 centralPackageRepositoryCount 0

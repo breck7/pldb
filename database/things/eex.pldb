@@ -1,6 +1,9 @@
 title EEX
 appeared 2012
 type template
+description EEx stands for Embedded Elixir. It allows you to embed Elixir code inside a string in a robust way.
+website https://hexdocs.pm/eex/EEx.html
+reference https://github.com/elixir-lang/elixir/commits/master/lib/eex/lib/eex.ex
 
 example
  <%= if true do %>
@@ -8,8 +11,6 @@ example
  <% else %>
    This will never appear
  <% end %>
-
-description EEx stands for Embedded Elixir. It allows you to embed Elixir code inside a string in a robust way.
 
 githubLanguage HTML+EEX
  fileExtensions eex
@@ -49,7 +50,5 @@ linguistGrammarRepo https://github.com/elixir-lang/elixir-tmbundle
    
   <%= link "New book", to: book_path(@conn, :new) %>
 
-website https://hexdocs.pm/eex/EEx.html
-reference https://github.com/elixir-lang/elixir/commits/master/lib/eex/lib/eex.ex
 fileType text
 centralPackageRepositoryCount 0

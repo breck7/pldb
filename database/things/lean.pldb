@@ -1,10 +1,16 @@
 title Lean
 appeared 2015
 type pl
+website http://leanprover.github.io/
+domainName leanprover.github.io
 
-githubLanguage Lean
- fileExtensions lean hlean
- trendingProjectsCount 0
+features
+ hasPrintDebugging true
+ hasStrings true
+  "Hello world"
+
+printToken #print
+stringToken "
 
 githubRepo https://github.com/leanprover/lean
  firstCommit 2013
@@ -16,6 +22,13 @@ githubRepo https://github.com/leanprover/lean
  description Lean Theorem Prover
  issues 58
 
+githubLanguage Lean
+ fileExtensions lean hlean
+ trendingProjectsCount 0
+
+pygmentsHighlighter Lean
+ filename theorem.py
+ fileExtensions lean
 linguistGrammarRepo https://github.com/leanprover/Lean.tmbundle
  firstCommit 2015
  lastCommit 2016
@@ -100,7 +113,10 @@ linguistGrammarRepo https://github.com/leanprover/Lean.tmbundle
   end binary
   
 
-website http://leanprover.github.io/
+leachim6 Lean
+ filepath l/Lean
+ example
+  #print "Hello World"
 
 tryItOnline lean
 
@@ -108,17 +124,3 @@ fileType text
 wordRank 8525
 isOpenSource true
 centralPackageRepositoryCount 0
-pygmentsHighlighter Lean
- filename theorem.py
- fileExtensions lean
-leachim6 Lean
- filepath l/Lean
- example
-  #print "Hello World"
-printToken #print
-features
- hasPrintDebugging true
- hasStrings true
-  "Hello world"
-domainName leanprover.github.io
-stringToken "

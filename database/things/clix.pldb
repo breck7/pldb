@@ -1,6 +1,10 @@
 title CLiX markup
 appeared 1998
 type xmlFormat
+description CLiX is a constraint language based on first order logic. It was first specified in 1998, when XML was not yet ubiquitous, in research at University College London. The language has since been developed and taken forward by Systemwire Ltd., a spin-off company that provides rule-based validation products around CLiX. Even though a commercial implementation is available, the language specification is published, and free for anybody to implement. It is hosted at http://www.clixml.org.
+website http://www.clixml.org/
+reference https://www.w3.org/2004/12/rules-ws/paper/24/
+domainName clixml.org
 
 example
  <forall var="dates" in="//fpml:calculationPeriodDates>
@@ -8,14 +12,8 @@ example
          op2="$dates/fpml:terminationDate/fpml:unadjustedDate"/>
  </forall>
 
-description CLiX is a constraint language based on first order logic. It was first specified in 1998, when XML was not yet ubiquitous, in research at University College London. The language has since been developed and taken forward by Systemwire Ltd., a spin-off company that provides rule-based validation products around CLiX. Even though a commercial implementation is available, the language specification is published, and free for anybody to implement. It is hosted at http://www.clixml.org.
-
 wikipedia https://en.wikipedia.org/wiki/CLiX_(markup)
  summary Constraint Language in XML (CLiX) used to constrain the content of XML documents. It is based on first order logic and XPath, and its purpose is to enable the specification of constraints on the structure and content of XML documents. CLiX constraints can be used both to constraint documents internally and to execute inter-document checks between a number of documents.  The goal of CLiX is to enable users and developers to express business properties and complex constraints that cannot be handled in traditional schema languages, and to automate checks that would otherwise have to be hard-coded.
  backlinksCount 2
  pageId 44979100
  dailyPageViews 2
-
-website http://www.clixml.org/
-reference https://www.w3.org/2004/12/rules-ws/paper/24/
-domainName clixml.org

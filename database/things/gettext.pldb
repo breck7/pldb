@@ -1,6 +1,7 @@
 title Gettext Catalog
 appeared 1990
 type textMarkup
+reference https://www.gnu.org/software/gettext/
 
 wikipedia https://en.wikipedia.org/wiki/Gettext
  example
@@ -20,16 +21,15 @@ githubLanguage Gettext Catalog
  fileExtensions po pot
  trendingProjectsCount 0
 
+pygmentsHighlighter Gettext Catalog
+ filename textfmts.py
+ fileExtensions pot po
 linguistGrammarRepo https://github.com/textmate/gettext.tmbundle
  firstCommit 2007
  lastCommit 2014
  committerCount 3
  commitCount 22
 
-reference https://www.gnu.org/software/gettext/
 fileType text
 isOpenSource true
 centralPackageRepositoryCount 0
-pygmentsHighlighter Gettext Catalog
- filename textfmts.py
- fileExtensions pot po

@@ -1,6 +1,10 @@
 title bml
-type dataNotation
 appeared 2014
+type dataNotation
+reference https://news.ycombinator.com/item?id=8645591
+
+features
+ hasSemanticIndentation true
 
 example
  server
@@ -20,8 +24,3 @@ example
    ...
    proxy host="proxy.example.com" port="8080"
      authentication: plain
-
-features
- hasSemanticIndentation true
-
-reference https://news.ycombinator.com/item?id=8645591

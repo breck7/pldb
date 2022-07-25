@@ -1,6 +1,7 @@
 title Formatted Table
 appeared 1990
 type dataNotation
+description A simple plain text format for storing tabular data.
 
 example
  Weekly SST data starts week centered on 3Jan1990
@@ -11,13 +12,6 @@ example
  10JAN1990     23.4-0.8     25.2-0.3     26.6 0.1     28.6 0.3
  17JAN1990     24.2-0.3     25.3-0.3     26.5-0.1     28.6 0.3
  24JAN1990     24.4-0.5     25.5-0.4     26.5-0.1     28.4 0.2
-
-description A simple plain text format for storing tabular data.
-
-githubLanguage Formatted
- fileExtensions for eam.fs
- trendingProjectsCount 0
-
 example
  ACCEPTABLE LEFT PRIMERS
                                    1-based     #                self   self hair-  qual-
@@ -43,5 +37,10 @@ example
    18 atgctagctaggcgatgcta             410 20  0 50.00 59.375 10.59  8.91  0.00  0.625
    19 ctatcatctctgcgcgatcg             360 20  0 55.00 59.347 12.19 12.19 39.07  0.653
    20 gatgctagctaggcgatgct             409 20  0 55.00 60.668  7.01  7.53  0.00
+
+githubLanguage Formatted
+ fileExtensions for eam.fs
+ trendingProjectsCount 0
+
 fileType text
 centralPackageRepositoryCount 0

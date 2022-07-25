@@ -1,6 +1,7 @@
 title X BitMap
 appeared 1989
 type textDataFormat
+description XBM files differ markedly from most image files in that they take the form of C source files.
 
 example
  #define test_width 16
@@ -8,8 +9,6 @@ example
  static char test_bits[] = {
  0x13, 0x00, 0x15, 0x00, 0x93, 0xcd, 0x55, 0xa5, 0x93, 0xc5, 0x00, 0x80,
  0x00, 0x60 };
-
-description XBM files differ markedly from most image files in that they take the form of C source files.
 
 wikipedia https://en.wikipedia.org/wiki/X_BitMap
  summary In computer graphics, the X Window System used X BitMap (XBM), a plain text binary image format, for storing cursor and icon bitmaps used in the X GUI. The XBM format is superseded by XPM, which first appeared for X11 in 1989.

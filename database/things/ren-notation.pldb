@@ -5,12 +5,17 @@ description Ren is a lightweight data-exchange text format. It is programming la
 website http://www.ren-data.org/
 reference http://pointillistic.com/ren/
 fileExtensions ren
-lineCommentToken ;
+domainName ren-data.org
+ registered 2014
+
 features
  hasComments true
  hasLineComments true
   ; A comment
  hasSemanticIndentation false
+
+lineCommentToken ;
+
 example
  []			; empty list
  #()			; empty map
@@ -38,5 +43,3 @@ example
      hex:      16#{DECAFBAD CAFE 00FF}
      base-64:  64#{UmVuIGlzIGRhdGE=}  
  )
-domainName ren-data.org
- registered 2014

@@ -2,6 +2,15 @@ title Grammatical Framework
 appeared 1998
 type grammarLanguage
 
+features
+ hasLineComments true
+  -- A comment
+ hasComments true
+  -- A comment
+ hasSemanticIndentation false
+
+lineCommentToken --
+
 wikipedia https://en.wikipedia.org/wiki/Grammatical_Framework
  example
   > parse -lang=Fre "Marie aime Jean" | align_words -lang=Fre,Dut,Lat -view="eog"
@@ -36,10 +45,3 @@ linguistGrammarRepo https://github.com/atom-haskell/language-haskell
 
 fileType text
 centralPackageRepositoryCount 0
-lineCommentToken --
-features
- hasLineComments true
-  -- A comment
- hasComments true
-  -- A comment
- hasSemanticIndentation false

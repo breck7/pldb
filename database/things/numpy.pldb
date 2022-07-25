@@ -2,6 +2,12 @@ title NumPy
 appeared 1995
 type library
 creators Travis Oliphant
+website http://www.numpy.org/
+aka Numeric
+domainName numpy.org
+ registered 2000
+
+writtenIn python c
 
 wikipedia https://en.wikipedia.org/wiki/NumPy
  example
@@ -39,17 +45,14 @@ githubLanguage NumPy
  fileExtensions numpy numpyw numsc
  trendingProjectsCount 0
 
-website http://www.numpy.org/
-aka Numeric
-fileType text
-isOpenSource true
-writtenIn python c
-centralPackageRepositoryCount 0
+pygmentsHighlighter NumPy
+ filename python.py
+
 goodreads
  title|year|author|goodreadsId|rating|ratings|reviews
  SciPy and NumPy: An Overview for Developers|2012|Eli Bressert|19175991|2.96|47|10
-pygmentsHighlighter NumPy
- filename python.py
-domainName numpy.org
- registered 2000
+
 twitter numpy_team
+fileType text
+isOpenSource true
+centralPackageRepositoryCount 0

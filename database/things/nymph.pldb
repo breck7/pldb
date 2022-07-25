@@ -4,17 +4,16 @@ type pl
 creators Brandon Barber
 fileExtensions n
 
-lineCommentToken //
+features
+ hasLineComments true
+  // A comment
+ hasComments true
+  // A comment
+ hasPrintDebugging true
+ hasSemanticIndentation false
 
-githubRepo https://github.com/maelswarm/nymph
- firstCommit 2017
- stars 173
- forks 6
- subscribers 6
- created 2017
- updated 2022
- description 🧚 A slightly different version of C.
- issues 0
+lineCommentToken //
+printToken printf
 
 example
  #include <stdio.h>
@@ -36,11 +35,13 @@ example
          printf("print instance properties...\n");
      }
  }
-features
- hasLineComments true
-  // A comment
- hasComments true
-  // A comment
- hasPrintDebugging true
- hasSemanticIndentation false
-printToken printf
+
+githubRepo https://github.com/maelswarm/nymph
+ firstCommit 2017
+ stars 173
+ forks 6
+ subscribers 6
+ created 2017
+ updated 2022
+ description 🧚 A slightly different version of C.
+ issues 0

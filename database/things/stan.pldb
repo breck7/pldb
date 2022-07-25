@@ -1,6 +1,10 @@
 title Stan
 appeared 2012
 type pl
+website http://mc-stan.org/
+domainName mc-stan.org
+
+writtenIn cpp
 
 features
  hasTypeInference true
@@ -19,6 +23,9 @@ githubLanguage Stan
  fileExtensions stan
  trendingProjectsCount 0
 
+pygmentsHighlighter Stan
+ filename modeling.py
+ fileExtensions stan
 linguistGrammarRepo https://github.com/jrnold/atom-language-stan
  firstCommit 2015
  lastCommit 2018
@@ -42,16 +49,8 @@ linguistGrammarRepo https://github.com/jrnold/atom-language-stan
   }
   
 
-website http://mc-stan.org/
-
 twitter mcmc_stan
-
 fileType text
 wordRank 9401
 isOpenSource true
-writtenIn cpp
 centralPackageRepositoryCount 0
-pygmentsHighlighter Stan
- filename modeling.py
- fileExtensions stan
-domainName mc-stan.org

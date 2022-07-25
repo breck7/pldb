@@ -1,6 +1,18 @@
 title Netwide Assembler
 appeared 1996
 type assembly
+website http://www.nasm.us
+domainName nasm.us
+ registered 2007
+
+features
+ hasLineComments true
+  ; A comment
+ hasComments true
+  ; A comment
+ hasSemanticIndentation false
+
+lineCommentToken ;
 
 wikipedia https://en.wikipedia.org/wiki/Netwide_Assembler
  example
@@ -60,19 +72,10 @@ wikipedia https://en.wikipedia.org/wiki/Netwide_Assembler
  revisionCount 297
  appeared 2017
 
-website http://www.nasm.us
-fileType text
-isOpenSource true
-centralPackageRepositoryCount 0
-lineCommentToken ;
-features
- hasLineComments true
-  ; A comment
- hasComments true
-  ; A comment
- hasSemanticIndentation false
 pygmentsHighlighter NASM
  filename asm.py
  fileExtensions asm ASM
-domainName nasm.us
- registered 2007
+
+fileType text
+isOpenSource true
+centralPackageRepositoryCount 0

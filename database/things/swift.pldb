@@ -2,6 +2,12 @@ title Swift
 appeared 2014
 type pl
 creators Chris Lattner
+website https://swift.org
+fileExtensions swift
+corporateDevelopers Apple
+domainName swift.org
+
+visualParadigm false
 
 features
  hasStrings true
@@ -38,6 +44,22 @@ features
   */
  isCaseSensitive true
 
+lineCommentToken //
+multiLineCommentTokens /* */
+printToken print
+stringToken "
+keywords associatedtype class deinit enum extension func import init inout internal let operator private protocol public static struct subscript typealias var break case continue default defer do else fallthrough for guard if in repeat return switch where while as catch dynamicType false is nil rethrows super self Self throw throws true try #column #file #function #line #available #column #else#elseif #endif #file #function #if #line #selector associativity convenience dynamic didSet final get infix indirect lazy left mutating none nonmutating optional override postfix precedence prefix Protocol required right set Type unowned weak willSet
+
+githubRepo https://github.com/apple/swift
+ firstCommit 2010
+ stars 60145
+ forks 9678
+ subscribers 2526
+ created 2015
+ updated 2022
+ description The Swift Programming Language
+ issues 5994
+
 wikipedia https://en.wikipedia.org/wiki/Swift_(programming_language)
  example
   var someSortOfPrintableObject: SupportsToString
@@ -52,16 +74,6 @@ wikipedia https://en.wikipedia.org/wiki/Swift_(programming_language)
  revisionCount 1256
  appeared 2014
  fileExtensions swift
-
-githubRepo https://github.com/apple/swift
- firstCommit 2010
- stars 60145
- forks 9678
- subscribers 2526
- created 2015
- updated 2022
- description The Swift Programming Language
- issues 5994
 
 githubLanguage Swift
  fileExtensions swift
@@ -94,11 +106,11 @@ githubLanguage Swift
   mxcl PromiseKit https://github.com/mxcl.png https://github.com/mxcl/PromiseKit Swift #ffac45 11928 1160 135 "Promises for Swift & ObjC."
  trendingProjectsCount 26
 
-helloWorldCollection Swift
- // Hello world in Swift
- 
- println("Hello, world!")
-
+monaco swift
+codeMirror swift
+pygmentsHighlighter Swift
+ filename objective.py
+ fileExtensions swift
 linguistGrammarRepo https://github.com/textmate/swift.tmbundle
  firstCommit 2014
  lastCommit 2018
@@ -108,73 +120,56 @@ linguistGrammarRepo https://github.com/textmate/swift.tmbundle
  example
   println("Hello, world")
   
-
-website https://swift.org
-
-replit swift
-
-twitter swiftlang
-
-fileExtensions swift
-fileType text
-wordRank 9077
-isOpenSource true
-
-tiobe Swift
- currentRank 20
-
-meetup swift-language
- memberCount 154306
- groupCount 375
-
-linkedInSkill swift
- 2018 171143
+languageServerProtocolProject https://github.com/apple/sourcekit-lsp
+ writtenIn swift
 
 projectEuler Swift
  memberCount
   2019 523
   2022 690
-
-subreddit swift
- memberCount
-  2017 29890
-  2022 93491
-
-codeMirror swift
-
-rosettaCode Swift
-
-corporateDevelopers Apple
-indeedJobs swift developer
- 2017 2043
-
-lineCommentToken //
-languageServerProtocolProject https://github.com/apple/sourcekit-lsp
- writtenIn swift
-visualParadigm false
-keywords associatedtype class deinit enum extension func import init inout internal let operator private protocol public static struct subscript typealias var break case continue default defer do else fallthrough for guard if in repeat return switch where while as catch dynamicType false is nil rethrows super self Self throw throws true try #column #file #function #line #available #column #else#elseif #endif #file #function #if #line #selector associativity convenience dynamic didSet final get infix indirect lazy left mutating none nonmutating optional override postfix precedence prefix Protocol required right set Type unowned weak willSet
-stackOverflowSurvey
- 2021
-  users 4204
-  medianSalary 58911
-  fans 6353
-  percentageUsing 0.05
-packageRepository https://cocoapods.org/
-rijuRepl https://riju.codes/swift
- example
-  print("Hello, world!")
-  
-pygmentsHighlighter Swift
- filename objective.py
- fileExtensions swift
+helloWorldCollection Swift
+ // Hello world in Swift
+ 
+ println("Hello, world!")
 leachim6 Swift
  filepath s/Swift.swift
  fileExtensions swift
  example
   print("Hello World")
   
-printToken print
-multiLineCommentTokens /* */
-domainName swift.org
-monaco swift
-stringToken "
+rosettaCode Swift
+
+rijuRepl https://riju.codes/swift
+ example
+  print("Hello, world!")
+  
+replit swift
+
+indeedJobs swift developer
+ 2017 2043
+linkedInSkill swift
+ 2018 171143
+stackOverflowSurvey
+ 2021
+  users 4204
+  medianSalary 58911
+  fans 6353
+  percentageUsing 0.05
+
+subreddit swift
+ memberCount
+  2017 29890
+  2022 93491
+meetup swift-language
+ memberCount 154306
+ groupCount 375
+
+tiobe Swift
+ currentRank 20
+
+packageRepository https://cocoapods.org/
+
+twitter swiftlang
+fileType text
+wordRank 9077
+isOpenSource true

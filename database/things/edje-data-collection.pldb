@@ -1,8 +1,19 @@
 title Edje Data Collection
 appeared 2010
 type jsonFormat
-
 description An Edje Data Collection, it's a plain text file (normally identified with the .edc extension), consisting of instructions for the Edje Compiler.
+reference https://phab.enlightenment.org/w/edjebasics/
+
+features
+ hasMultiLineComments true
+  /* A comment
+  */
+ hasComments true
+  /* A comment
+  */
+ hasSemanticIndentation false
+
+multiLineCommentTokens /* */
 
 githubLanguage Edje Data Collection
  fileExtensions edc
@@ -87,15 +98,5 @@ linguistGrammarRepo https://github.com/textmate/json.tmbundle
   
         pa
 
-reference https://phab.enlightenment.org/w/edjebasics/
 fileType text
 centralPackageRepositoryCount 0
-multiLineCommentTokens /* */
-features
- hasMultiLineComments true
-  /* A comment
-  */
- hasComments true
-  /* A comment
-  */
- hasSemanticIndentation false

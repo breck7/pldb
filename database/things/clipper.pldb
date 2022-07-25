@@ -1,6 +1,20 @@
 title Clipper
 appeared 1985
 type pl
+website http://www.grafxsoft.com/clipper.htm
+country United States
+
+features
+ hasLineComments true
+  // A comment
+ hasComments true
+  // A comment
+ hasSemanticIndentation false
+ hasStrings true
+  "Hello world"
+
+lineCommentToken //
+stringToken "
 
 wikipedia https://en.wikipedia.org/wiki/Clipper_(programming_language)
  example
@@ -23,31 +37,16 @@ helloWorldCollection Clipper
  // Hello World in Clipper
  
  ? "Hello World"
-
-website http://www.grafxsoft.com/clipper.htm
-country United States
-fileType text
-
-tiobe Clipper
-
-hopl 1909
-
-rosettaCode Clipper
-
-centralPackageRepositoryCount 0
-lineCommentToken //
-features
- hasLineComments true
-  // A comment
- hasComments true
-  // A comment
- hasSemanticIndentation false
- hasStrings true
-  "Hello world"
 leachim6 Clipper
  filepath c/Clipper.prg
  fileExtensions prg
  example
   ? "Hello World"
   
-stringToken "
+rosettaCode Clipper
+
+tiobe Clipper
+hopl 1909
+
+fileType text
+centralPackageRepositoryCount 0

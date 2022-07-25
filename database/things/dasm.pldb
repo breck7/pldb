@@ -1,5 +1,9 @@
 title Dasm
+appeared 1988
 type assembly
+website https://dasm-assembler.github.io/
+domainName dasm-assembler.github.io
+
 githubRepo https://github.com/dasm-assembler/dasm
  firstCommit 2019
  stars 148
@@ -9,10 +13,7 @@ githubRepo https://github.com/dasm-assembler/dasm
  updated 2022
  description Macro assembler with support for several 8-bit microprocessors
  issues 43
-appeared 1988
+
 pygmentsHighlighter DASM16
  filename asm.py
  fileExtensions dasm16 dasm
-website https://dasm-assembler.github.io/
-
-domainName dasm-assembler.github.io

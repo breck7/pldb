@@ -1,6 +1,21 @@
 title NetLinx
 appeared 2007
 type pl
+reference http://habitech.s3.amazonaws.com/PDFs/AMX/AMX-FG1906-18/NetLinx.LanguageReferenceGuide.pdf
+fileExtensions axserb axierb
+
+features
+ hasLineComments true
+  // A comment
+ hasComments true
+  // A comment
+ hasMultiLineComments true
+  (* A comment
+  *)
+ hasSemanticIndentation false
+
+lineCommentToken //
+multiLineCommentTokens (* *)
 
 wikipedia https://en.wikipedia.org/wiki/NetLinx
  related c ascii
@@ -157,18 +172,5 @@ linguistGrammarRepo https://github.com/amclain/sublime-netlinx
   #end_if
   
 
-reference http://habitech.s3.amazonaws.com/PDFs/AMX/AMX-FG1906-18/NetLinx.LanguageReferenceGuide.pdf
-fileExtensions axserb axierb
 fileType text
 centralPackageRepositoryCount 0
-lineCommentToken //
-features
- hasLineComments true
-  // A comment
- hasComments true
-  // A comment
- hasMultiLineComments true
-  (* A comment
-  *)
- hasSemanticIndentation false
-multiLineCommentTokens (* *)

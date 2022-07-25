@@ -1,8 +1,10 @@
 title Increment and decrement operators
 appeared 1969
 type feature
-psuedoExample i++
 description Increment and decrement operators are unary operators that add or subtract one, to or from their operand, respectively.
+
+psuedoExample i++
+featureKeyword hasIncrementAndDecrementOperators
 
 wikipedia https://en.wikipedia.org/wiki/Increment_and_decrement_operators
  summary Increment and decrement operators are unary operators that add or subtract one, to or from their operand, respectively. They are commonly implemented in imperative programming languages. C-like languages feature two versions (pre- and post-) of each operator with slightly different semantics. In languages syntactically derived from B (including C and its various derivatives), the increment operator is written as ++ and the decrement operator is written as --.  Several other languages use inc(x) and dec(x) functions. The increment operator increases, and the decrement operator decreases, the value of its operand by 1. The operand must have an arithmetic or pointer data type, and must refer to a modifiable data object. Pointers values are increased (or decreased) by an amount that makes them point to the next (or previous) element adjacent in memory. In languages that support both versions of the operators：  The pre-increment and pre-decrement operators increment (or decrement) their operand by 1, and the value of the expression is the resulting incremented (or decremented) value. The post-increment and post-decrement operators increase (or decrease) the value of their operand by 1, but the value of the expression is the operand's original value prior to the increment (or decrement) operation.In languages where increment/decrement is not an expression (e.g. Go), only one version is needed (in the case of Go, post operators only). Since the increment/decrement operator modifies its operand, use of such an operand more than once within the same expression can produce undefined results. For example, in expressions such as x - ++x, it is not clear in what sequence the subtraction and increment operations should be performed. Such expressions generally invoke undefined behavior, and should be avoided.
@@ -10,5 +12,3 @@ wikipedia https://en.wikipedia.org/wiki/Increment_and_decrement_operators
  pageId 25848376
  dailyPageViews 386
  appeared 1969
-
-featureKeyword hasIncrementAndDecrementOperators

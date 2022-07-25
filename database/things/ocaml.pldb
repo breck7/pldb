@@ -2,6 +2,13 @@ title OCaml
 appeared 1996
 type pl
 creators Xavier Leroy
+website http://ocaml.org
+fileExtensions ml mli
+country France
+domainName ocaml.org
+ registered 2000
+
+visualParadigm false
 
 features
  hasLineComments false
@@ -24,6 +31,9 @@ features
   *)
  hasPrintDebugging true
  hasSemanticIndentation false
+
+multiLineCommentTokens (* *)
+printToken print_string
 
 wikipedia https://en.wikipedia.org/wiki/OCaml
  example
@@ -53,10 +63,9 @@ githubLanguage OCaml
   facebook infer https://github.com/facebook.png https://github.com/facebook/infer OCaml #3be133 10169 1365 134 "A static analyzer for Java, C, C++, and Objective-C"
  trendingProjectsCount 6
 
-helloWorldCollection OCaml
- (* Hello World in OCaml *)
- print_string "Hello World!\n";;
-
+pygmentsHighlighter OCaml
+ filename ml.py
+ fileExtensions ml mli mll mly
 linguistGrammarRepo https://github.com/textmate/ocaml.tmbundle
  firstCommit 2005
  lastCommit 2015
@@ -78,44 +87,32 @@ linguistGrammarRepo https://github.com/textmate/ocaml.tmbundle
       Buffer.contents buf
     end
 
-website http://ocaml.org
-
-tryItOnline ocaml
-
-country France
-fileExtensions ml mli
-fileType text
-isOpenSource true
-
-tiobe OCaml
-
-meetup ocaml-programming
- memberCount 23394
- groupCount 87
-
 projectEuler OCaml
  memberCount
   2019 142
   2022 219
-
-hopl 2294
-
+helloWorldCollection OCaml
+ (* Hello World in OCaml *)
+ print_string "Hello World!\n";;
+leachim6 OCaml
+ filepath o/OCaml.ml
+ fileExtensions ml
+ example
+  print_string "Hello World\n"
+rosettaCode OCaml
 quineRelay OCaml
 
-ubuntuPackage ocaml
-
-rosettaCode OCaml
-
-visualParadigm false
-jupyterKernel https://github.com/andrewray/iocaml
-jupyterKernel https://github.com/akabe/ocaml-jupyter
-packageRepository https://opam.ocaml.org/
 rijuRepl https://riju.codes/ocaml
  example
   ;;
   print_string "Hello, world!\n"
   
-multiLineCommentTokens (* *)
+tryItOnline ocaml
+
+meetup ocaml-programming
+ memberCount 23394
+ groupCount 87
+
 goodreads
  title|year|author|goodreadsId|rating|ratings|reviews
  Real World OCaml: Functional programming for the masses|2013|Yaron Minsky|21890163|4.28|88|7
@@ -123,15 +120,15 @@ goodreads
  Apprendre à programmer avec OCaml|2014|Sylvain Conchon|43307400|4.00|1|0
  Using, Understanding, and Unraveling The OCaml Language: From Practice to Theory and vice versa||Didier Rémy|23588230|5.00|1|0
  Apprendre à programmer avec OCaml: Algorithmes et structures de données (Noire)||Jean-Christophe Filliatre|59798916|0.0|0|0
-pygmentsHighlighter OCaml
- filename ml.py
- fileExtensions ml mli mll mly
-leachim6 OCaml
- filepath o/OCaml.ml
- fileExtensions ml
- example
-  print_string "Hello World\n"
-printToken print_string
-domainName ocaml.org
- registered 2000
+
+tiobe OCaml
+hopl 2294
+
+packageRepository https://opam.ocaml.org/
+
 twitter ocamllang
+ubuntuPackage ocaml
+jupyterKernel https://github.com/andrewray/iocaml
+jupyterKernel https://github.com/akabe/ocaml-jupyter
+fileType text
+isOpenSource true

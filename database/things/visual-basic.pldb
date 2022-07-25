@@ -1,6 +1,11 @@
 title Visual Basic
 appeared 1991
 type pl
+website https://msdn.microsoft.com/en-us/library/windows/desktop/ms788229.aspx
+aka vb
+aka VisualBasic
+country United States
+corporateDevelopers Microsoft
 
 features
  hasDirectives true
@@ -14,6 +19,12 @@ features
  hasPrintDebugging true
  hasSemanticIndentation false
  hasStrings true
+
+lineCommentToken '
+multiLineCommentTokens /* */
+printToken Console.WriteLine
+stringToken "
+keywords AddHandler AddressOf Alias And AndAlso As Async Boolean ByRef Byte ByVal Call Case Catch CBool CByte CChar CDate CDbl CDec Char CInt Class CLng CObj Const Continue CSByte CShort CSng CStr CType CUInt CULng CUShort Date Decimal Declare Default Delegate Dim DirectCast Do Double Each Else ElseIf End EndIf Enum Erase Error Event Exit False Finally For Friend Function Get GetType GetXMLNamespace Global GoSub GoTo Handles If Implements Imports In Inherits Integer Interface Is IsNot Let Lib Like Long Loop Me Mod Module MustInherit MustOverride MyBase MyClass NameOf Namespace Narrowing New Next Not Nothing NotInheritable NotOverridable Object Of On Operator Option Optional Or OrElse Out Overloads Overridable Overrides ParamArray Partial Private Property Protected Public RaiseEvent ReadOnly ReDim RemoveHandler Resume Return SByte Select Set Shadows Shared Short Single Static Step Stop String Structure Sub SyncLock Then Throw To True Try TryCast TypeOf UInteger ULong UShort Using Variant Wend When While Widening With WithEvents WriteOnly Xor
 
 wikipedia https://en.wikipedia.org/wiki/Visual_Basic
  example
@@ -36,52 +47,14 @@ wikipedia https://en.wikipedia.org/wiki/Visual_Basic
  revisionCount 4052
  appeared 1991
 
+antlr https://github.com/antlr/grammars-v4/tree/master/vb6
+monaco vb
 linguistGrammarRepo https://github.com/angryant0007/VBDotNetSyntax
  firstCommit 2012
  lastCommit 2017
  committerCount 4
  commitCount 61
 
-website https://msdn.microsoft.com/en-us/library/windows/desktop/ms788229.aspx
-aka vb
-aka VisualBasic
-country United States
-fileType text
-
-tiobe Visual Basic
- currentRank 17
-
-meetup vb
- memberCount 12487
- groupCount 21
-
-hopl 1374
-
-subreddit visualbasic
- memberCount
-  2017 3474
-  2022 7807
-
-quineRelay Visual Basic
-
-ubuntuPackage mono-vbnc
-
-antlr https://github.com/antlr/grammars-v4/tree/master/vb6
-
-corporateDevelopers Microsoft
-indeedJobs visual basic engineer
- 2017 3294
-
-lineCommentToken '
-centralPackageRepositoryCount 0
-rijuRepl https://riju.codes/visualbasic
- example
-  Module Main
-      Sub Main(args As String())
-          Console.WriteLine("Hello, world!")
-      End Sub
-  End Module
-  
 leachim6 Visual Basic
  filepath v/Visual Basic.vb
  example
@@ -90,8 +63,32 @@ leachim6 Visual Basic
           MsgBox("Hello World")
       End Sub
   End Module
-printToken Console.WriteLine
-monaco vb
-multiLineCommentTokens /* */
-keywords AddHandler AddressOf Alias And AndAlso As Async Boolean ByRef Byte ByVal Call Case Catch CBool CByte CChar CDate CDbl CDec Char CInt Class CLng CObj Const Continue CSByte CShort CSng CStr CType CUInt CULng CUShort Date Decimal Declare Default Delegate Dim DirectCast Do Double Each Else ElseIf End EndIf Enum Erase Error Event Exit False Finally For Friend Function Get GetType GetXMLNamespace Global GoSub GoTo Handles If Implements Imports In Inherits Integer Interface Is IsNot Let Lib Like Long Loop Me Mod Module MustInherit MustOverride MyBase MyClass NameOf Namespace Narrowing New Next Not Nothing NotInheritable NotOverridable Object Of On Operator Option Optional Or OrElse Out Overloads Overridable Overrides ParamArray Partial Private Property Protected Public RaiseEvent ReadOnly ReDim RemoveHandler Resume Return SByte Select Set Shadows Shared Short Single Static Step Stop String Structure Sub SyncLock Then Throw To True Try TryCast TypeOf UInteger ULong UShort Using Variant Wend When While Widening With WithEvents WriteOnly Xor
-stringToken "
+quineRelay Visual Basic
+
+rijuRepl https://riju.codes/visualbasic
+ example
+  Module Main
+      Sub Main(args As String())
+          Console.WriteLine("Hello, world!")
+      End Sub
+  End Module
+  
+
+indeedJobs visual basic engineer
+ 2017 3294
+
+subreddit visualbasic
+ memberCount
+  2017 3474
+  2022 7807
+meetup vb
+ memberCount 12487
+ groupCount 21
+
+tiobe Visual Basic
+ currentRank 17
+hopl 1374
+
+ubuntuPackage mono-vbnc
+fileType text
+centralPackageRepositoryCount 0

@@ -1,9 +1,10 @@
 title Devicetree
+appeared 2009
 type dataNotation
 website https://www.devicetree.org/
-pygmentsHighlighter Devicetree
- filename devicetree.py
- fileExtensions dts dtsi
+domainName devicetree.org
+ registered 2009
+
 example
  soc {
     #address-cells = <1>;
@@ -15,6 +16,7 @@ example
         interrupts = <0xA 0x8>;
         interrupt-parent = <&ipic>;
     };
-domainName devicetree.org
- registered 2009
-appeared 2009
+
+pygmentsHighlighter Devicetree
+ filename devicetree.py
+ fileExtensions dts dtsi

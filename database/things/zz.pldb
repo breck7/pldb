@@ -1,6 +1,13 @@
 title zz
 appeared 2019
 type pl
+creators Arvid E. Picciani
+aka drunk octopus
+
+features
+ hasPrintDebugging true
+
+printToken printf
 
 example
  using <stdio.h>::{printf}
@@ -30,9 +37,3 @@ githubRepo https://github.com/aep/zz
  updated 2022
  description 🍺🐙  ZetZ a zymbolic verifier and tranzpiler to bare metal C
  issues 32
-
-aka drunk octopus
-creators Arvid E. Picciani
-printToken printf
-features
- hasPrintDebugging true

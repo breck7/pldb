@@ -1,6 +1,8 @@
 title HXML
 appeared 2009
 type application
+description Haxe compiler arguments can be stored in a .hxml file and can be executed with haxe <file.hxml>. In hxml it is possible to use newlines and comments which makes it easier to maintain Haxe build configurations. It is possible to supply more arguments after the hxml file, e.g. haxe build.hxml -debug.
+reference https://haxe.org/manual/compiler-usage-hxml.html
 
 example
  -cp src
@@ -21,11 +23,12 @@ example
  -js bin/contact.js
  -main website.ContactPage
 
-description Haxe compiler arguments can be stored in a .hxml file and can be executed with haxe <file.hxml>. In hxml it is possible to use newlines and comments which makes it easier to maintain Haxe build configurations. It is possible to supply more arguments after the hxml file, e.g. haxe build.hxml -debug.
-
 githubLanguage HXML
  fileExtensions hxml
 
+pygmentsHighlighter Hxml
+ filename haxe.py
+ fileExtensions hxml
 linguistGrammarRepo https://github.com/vshaxe/haxe-TmLanguage
  firstCommit 2017
  lastCommit 2018
@@ -44,9 +47,5 @@ linguistGrammarRepo https://github.com/vshaxe/haxe-TmLanguage
   -cmd neko run --default-config resources/default-config.json
   -cmd neko run -c resources/default-config.json
 
-reference https://haxe.org/manual/compiler-usage-hxml.html
 fileType text
 centralPackageRepositoryCount 0
-pygmentsHighlighter Hxml
- filename haxe.py
- fileExtensions hxml

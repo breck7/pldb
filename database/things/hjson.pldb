@@ -1,6 +1,25 @@
 title Hjson
 appeared 2014
 type dataNotation
+creators Christian Zangl
+description Hjson is a syntax extension to JSON. It's NOT a proposal to replace JSON or to incorporate it into the JSON spec itself. It's intended to be used like a user interface for humans, to read and edit before passing the JSON data to the machine.
+website https://hjson.org/
+domainName hjson.org
+ registered 2015
+
+features
+ hasLineComments true
+  # A comment
+ hasComments true
+  # A comment
+ hasMultiLineComments true
+  /* A comment
+  */
+ hasSemanticIndentation false
+
+lineCommentToken //
+lineCommentToken #
+multiLineCommentTokens /* */
 
 example
  {
@@ -17,11 +36,6 @@ example
   # stays in comments ;-}
  }
 
-description Hjson is a syntax extension to JSON. It's NOT a proposal to replace JSON or to incorporate it into the JSON spec itself. It's intended to be used like a user interface for humans, to read and edit before passing the JSON data to the machine.
-
-lineCommentToken //
-lineCommentToken #
-
 githubRepo https://github.com/hjson/hjson
  stars 2414
  forks 59
@@ -32,20 +46,6 @@ githubRepo https://github.com/hjson/hjson
  description Hjson, a user interface for JSON
  issues 19
 
-website https://hjson.org/
 fileType text
 isOpenSource true
 centralPackageRepositoryCount 0
-creators Christian Zangl
-features
- hasLineComments true
-  # A comment
- hasComments true
-  # A comment
- hasMultiLineComments true
-  /* A comment
-  */
- hasSemanticIndentation false
-multiLineCommentTokens /* */
-domainName hjson.org
- registered 2015

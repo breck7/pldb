@@ -2,6 +2,15 @@ title QB64
 appeared 2007
 type pl
 
+features
+ hasLineComments true
+  ' A comment
+ hasComments true
+  ' A comment
+ hasSemanticIndentation false
+
+lineCommentToken '
+
 wikipedia https://en.wikipedia.org/wiki/QB64
  example
   t1 = _FREETIMER
@@ -37,10 +46,3 @@ wikipedia https://en.wikipedia.org/wiki/QB64
 
 isOpenSource true
 centralPackageRepositoryCount 0
-lineCommentToken '
-features
- hasLineComments true
-  ' A comment
- hasComments true
-  ' A comment
- hasSemanticIndentation false

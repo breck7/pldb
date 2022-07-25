@@ -1,8 +1,12 @@
 title Scheme
 appeared 1970
 type pl
-
 creators Guy Steele and Gerald Jay Sussman
+website http://www.scheme-reports.org/
+fileExtensions scm ss
+country United States
+domainName scheme-reports.org
+ registered 2009
 
 features
  isLisp true
@@ -21,6 +25,12 @@ features
  hasSemanticIndentation false
  hasStrings true
   "Hello world"
+
+lineCommentToken ;
+multiLineCommentTokens #| |#
+printToken display
+stringToken "
+keywords case do let loop if else when cons car cdr cond lambda lambda* syntax-rules format set! quote eval append list list? member? load
 
 wikipedia https://en.wikipedia.org/wiki/Scheme_(programming_language)
  example
@@ -48,12 +58,11 @@ githubLanguage Scheme
  fileExtensions scm sch sld sls sps ss
  trendingProjectsCount 0
 
-helloWorldCollection Scheme
- ; Hello World in Scheme
- 
- (display "Hello, world!")
- (newline)
-
+monaco scheme
+codeMirror scheme
+pygmentsHighlighter Scheme
+ filename lisp.py
+ fileExtensions scm ss
 linguistGrammarRepo https://github.com/textmate/scheme.tmbundle
  firstCommit 2006
  lastCommit 2014
@@ -70,56 +79,39 @@ linguistGrammarRepo https://github.com/textmate/scheme.tmbundle
           ))
   
 
-website http://www.scheme-reports.org/
-
-replit scheme
-
-country United States
-fileExtensions scm ss
-fileType text
-wordRank 2803
-
-tiobe Scheme
-
 projectEuler Scheme
  memberCount
   2019 791
   2022 817
-
-hopl 694
-
-quineRelay Scheme
-
-ubuntuPackage guile-2.0
-
-codeMirror scheme
-
-rosettaCode Scheme
-
-indeedJobs scheme engineer
- 2017 1174
-
-lineCommentToken ;
-multiLineCommentTokens #| |#
-jupyterKernel https://github.com/Calysto/calysto_scheme
-centralPackageRepositoryCount 0
-rijuRepl https://riju.codes/scheme
- example
-  (display "Hello, world!")
-  (newline)
-  
-pygmentsHighlighter Scheme
- filename lisp.py
- fileExtensions scm ss
+helloWorldCollection Scheme
+ ; Hello World in Scheme
+ 
+ (display "Hello, world!")
+ (newline)
 leachim6 Scheme
  filepath s/Scheme.scm
  fileExtensions scm
  example
   (display "Hello World") (newline)
   
-printToken display
-domainName scheme-reports.org
- registered 2009
-monaco scheme
-keywords case do let loop if else when cons car cdr cond lambda lambda* syntax-rules format set! quote eval append list list? member? load
-stringToken "
+rosettaCode Scheme
+quineRelay Scheme
+
+rijuRepl https://riju.codes/scheme
+ example
+  (display "Hello, world!")
+  (newline)
+  
+replit scheme
+
+indeedJobs scheme engineer
+ 2017 1174
+
+tiobe Scheme
+hopl 694
+
+ubuntuPackage guile-2.0
+jupyterKernel https://github.com/Calysto/calysto_scheme
+fileType text
+wordRank 2803
+centralPackageRepositoryCount 0

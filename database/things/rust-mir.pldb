@@ -1,24 +1,24 @@
 title Rust MIR
-standsFor Rust Mid-level Intermediate Representation
 appeared 2016
 type ir
+website https://www.rust-lang.org
 webRepl https://play.rust-lang.org/
-githubRepo https://github.com/rust-lang/rust/tree/master/src/librustc_mir
- stars 68300
- forks 9414
- subscribers 1465
- created 2010
- updated 2022
- description Empowering everyone to build reliable and efficient software.
- issues 8710
-
 reference https://rustc-dev-guide.rust-lang.org/hir.html
 reference https://blog.rust-lang.org/2016/04/19/MIR.html
-fileType text
+standsFor Rust Mid-level Intermediate Representation
+domainName rust-lang.org
+ registered 2010
+
 compilesTo llvmir
-isOpenSource true
-centralPackageRepositoryCount 0
 related swift-il
+
+features
+ hasLineComments true
+  // A comment
+ hasComments true
+  // A comment
+ hasSemanticIndentation false
+
 lineCommentToken //
 
 example
@@ -75,12 +75,16 @@ example
          resume;                          // scope 0 at src/main.rs:1:1: 5:2
      }
  }
-features
- hasLineComments true
-  // A comment
- hasComments true
-  // A comment
- hasSemanticIndentation false
-website https://www.rust-lang.org
-domainName rust-lang.org
- registered 2010
+
+githubRepo https://github.com/rust-lang/rust/tree/master/src/librustc_mir
+ stars 68300
+ forks 9414
+ subscribers 1465
+ created 2010
+ updated 2022
+ description Empowering everyone to build reliable and efficient software.
+ issues 8710
+
+fileType text
+isOpenSource true
+centralPackageRepositoryCount 0

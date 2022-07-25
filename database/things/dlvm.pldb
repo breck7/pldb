@@ -1,6 +1,19 @@
 title dlvm
 appeared 2017
 type ir
+description Modern Compiler Infrastructure for Deep Learning Systems
+website http://dlvm.org/
+domainName dlvm.org
+ registered 2022
+
+features
+ hasLineComments true
+  // A comment
+ hasComments true
+  // A comment
+ hasSemanticIndentation false
+
+lineCommentToken //
 
 example
  // Dimension-erased functions are flexible because input shapes are dynamic.
@@ -15,16 +28,5 @@ example
      return %0.2: <_ x _ x f32>
  }
 
-description Modern Compiler Infrastructure for Deep Learning Systems
-website http://dlvm.org/
 fileType text
 centralPackageRepositoryCount 0
-lineCommentToken //
-features
- hasLineComments true
-  // A comment
- hasComments true
-  // A comment
- hasSemanticIndentation false
-domainName dlvm.org
- registered 2022

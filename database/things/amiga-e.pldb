@@ -2,6 +2,15 @@ title Amiga E
 appeared 1993
 type pl
 creators Wouter Van Oortmerssen
+aka AmigaE
+aka E
+
+visualParadigm false
+
+features
+ hasPrintDebugging true
+
+printToken WriteF
 
 wikipedia https://en.wikipedia.org/wiki/Amiga_E
  related e c
@@ -13,20 +22,14 @@ wikipedia https://en.wikipedia.org/wiki/Amiga_E
  dailyPageViews 14
  appeared 1993
 
-aka AmigaE
-aka E
-fileType text
-
-hopl 1817
-
-visualParadigm false
-centralPackageRepositoryCount 0
 leachim6 Amiga-E
  filepath a/Amiga-E.amiga-e
  fileExtensions amiga-e
  example
   PROC main() IS WriteF('Hello World\n')
   
-printToken WriteF
-features
- hasPrintDebugging true
+
+hopl 1817
+
+fileType text
+centralPackageRepositoryCount 0

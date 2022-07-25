@@ -1,10 +1,26 @@
 title PEG.js
 appeared 2010
 type grammarLanguage
+creators David Majda
+description PEG.js is a simple parser generator for JavaScript that produces fast parsers with excellent error reporting. You can use it to process complex data or computer languages and build transformers, interpreters, compilers and other tools easily.
+website https://pegjs.org/
 webRepl https://pegjs.org/online
+domainName pegjs.org
+
+compilesTo javascript
+
+features
+ hasLineComments true
+  // A comment
+ hasMultiLineComments true
+  /* A comment
+  */
+ hasComments true
+  // A comment
+ hasSemanticIndentation false
+
 lineCommentToken //
 multiLineCommentTokens /* */
-compilesTo javascript
 
 example
  start
@@ -25,8 +41,6 @@ example
  integer "integer"
    = digits:[0-9]+ { return parseInt(digits.join(""), 10); }
 
-description PEG.js is a simple parser generator for JavaScript that produces fast parsers with excellent error reporting. You can use it to process complex data or computer languages and build transformers, interpreters, compilers and other tools easily.
-
 githubRepo https://github.com/pegjs/pegjs
  stars 4410
  forks 437
@@ -37,21 +51,7 @@ githubRepo https://github.com/pegjs/pegjs
  description PEG.js: Parser generator for JavaScript
  issues 116
 
-website https://pegjs.org/
-
 twitter pegjs
-
 fileType text
 isOpenSource true
 centralPackageRepositoryCount 0
-creators David Majda
-features
- hasLineComments true
-  // A comment
- hasMultiLineComments true
-  /* A comment
-  */
- hasComments true
-  // A comment
- hasSemanticIndentation false
-domainName pegjs.org

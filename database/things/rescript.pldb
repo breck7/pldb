@@ -1,8 +1,28 @@
 title Rescript
-website https://rescript-lang.org/
-compilesTo javascript
-description ReScript is a robustly typed language that compiles to efficient and human-readable JavaScript. It comes with a lightning fast compiler toolchain that scales to any codebase size.
+appeared 2020
 type pl
+description ReScript is a robustly typed language that compiles to efficient and human-readable JavaScript. It comes with a lightning fast compiler toolchain that scales to any codebase size.
+website https://rescript-lang.org/
+webRepl https://rescript-lang.org/try
+domainName rescript-lang.org
+ registered 2020
+
+compilesTo javascript
+
+features
+ hasLineComments true
+  // A comment
+ hasComments true
+  // A comment
+ hasPrintDebugging true
+ hasSemanticIndentation false
+ hasStrings true
+  "Hello world"
+
+lineCommentToken //
+printToken Js.log
+stringToken "
+
 example
  module Button = {
    @react.component
@@ -17,25 +37,11 @@ example
      <button> {msg->React.string} </button>
    }
  }
-webRepl https://rescript-lang.org/try
-lineCommentToken //
-features
- hasLineComments true
-  // A comment
- hasComments true
-  // A comment
- hasPrintDebugging true
- hasSemanticIndentation false
- hasStrings true
-  "Hello world"
+
 leachim6 ReScript
  filepath r/ReScript.res
  fileExtensions res
  example
   Js.log("Hello World")
-printToken Js.log
-domainName rescript-lang.org
- registered 2020
-stringToken "
-appeared 2020
+
 twitter rescriptlang

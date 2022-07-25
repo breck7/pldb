@@ -2,6 +2,15 @@ title WxBasic
 appeared 2002
 type pl
 
+features
+ hasLineComments true
+  ' A comment
+ hasComments true
+  ' A comment
+ hasSemanticIndentation false
+
+lineCommentToken '
+
 wikipedia https://en.wikipedia.org/wiki/WxBasic
  example
   ' from http://wxbasic.sourceforge.net/phpBB2/viewtopic.php?t=554
@@ -85,10 +94,3 @@ wikipedia https://en.wikipedia.org/wiki/WxBasic
 
 isOpenSource true
 centralPackageRepositoryCount 0
-lineCommentToken '
-features
- hasLineComments true
-  ' A comment
- hasComments true
-  ' A comment
- hasSemanticIndentation false

@@ -1,15 +1,8 @@
 title Carbon
-type pl
-githubRepo https://github.com/carbon-language/carbon-lang
- firstCommit 2020
- stars 1099
- forks 21
- subscribers 31
- created 2020
- updated 2022
- description Carbon language specification and documentation.
- issues 94
 appeared 2020
+type pl
+reference https://news.ycombinator.com/item?id=32151609
+
 example
  package Sorting api;
  
@@ -34,4 +27,13 @@ example
    QuickSort(s[:p - 1]));
    QuickSort(s[p + 1:]));
  }
-reference https://news.ycombinator.com/item?id=32151609
+
+githubRepo https://github.com/carbon-language/carbon-lang
+ firstCommit 2020
+ stars 1099
+ forks 21
+ subscribers 31
+ created 2020
+ updated 2022
+ description Carbon language specification and documentation.
+ issues 94

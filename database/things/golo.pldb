@@ -1,6 +1,23 @@
 title Golo
 appeared 2012
 type pl
+website http://golo-lang.org
+domainName golo-lang.org
+ registered 2012
+
+features
+ hasLineComments true
+  # A comment
+ hasComments true
+  # A comment
+ hasPrintDebugging true
+ hasSemanticIndentation false
+ hasStrings true
+  "Hello world"
+
+lineCommentToken #
+printToken println
+stringToken "
 
 wikipedia https://en.wikipedia.org/wiki/Golo_(programming_language)
  related jvm java
@@ -16,6 +33,9 @@ githubLanguage Golo
  fileExtensions golo
  trendingProjectsCount 0
 
+pygmentsHighlighter Golo
+ filename jvm.py
+ fileExtensions golo
 linguistGrammarRepo https://github.com/TypeUnsafe/sublime-golo
  firstCommit 2013
  lastCommit 2015
@@ -45,29 +65,6 @@ linguistGrammarRepo https://github.com/TypeUnsafe/sublime-golo
   
   
 
-website http://golo-lang.org
-
-twitter golo_lang
-
-fileType text
-isOpenSource true
-
-rosettaCode Golo
-
-centralPackageRepositoryCount 0
-lineCommentToken #
-features
- hasLineComments true
-  # A comment
- hasComments true
-  # A comment
- hasPrintDebugging true
- hasSemanticIndentation false
- hasStrings true
-  "Hello world"
-pygmentsHighlighter Golo
- filename jvm.py
- fileExtensions golo
 leachim6 Golo
  filepath g/Golo.golo
  fileExtensions golo
@@ -78,7 +75,9 @@ leachim6 Golo
     println("Hello World")
   }
   
-printToken println
-domainName golo-lang.org
- registered 2012
-stringToken "
+rosettaCode Golo
+
+twitter golo_lang
+fileType text
+isOpenSource true
+centralPackageRepositoryCount 0

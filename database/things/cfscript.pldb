@@ -2,6 +2,15 @@ title CFScript
 appeared 1999
 type pl
 
+features
+ hasLineComments true
+  // A comment
+ hasComments true
+  // A comment
+ hasSemanticIndentation false
+
+lineCommentToken //
+
 wikipedia https://en.wikipedia.org/wiki/CFScript
  example
   x = 0;
@@ -20,10 +29,3 @@ wikipedia https://en.wikipedia.org/wiki/CFScript
  appeared 2006
 
 centralPackageRepositoryCount 0
-lineCommentToken //
-features
- hasLineComments true
-  // A comment
- hasComments true
-  // A comment
- hasSemanticIndentation false

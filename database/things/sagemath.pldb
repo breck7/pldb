@@ -1,6 +1,19 @@
 title Sage
 appeared 2005
 type pl
+website http://www.sagemath.org/
+aka Sage
+domainName sagemath.org
+ registered 2007
+
+features
+ hasLineComments true
+  # A comment
+ hasComments true
+  # A comment
+ hasSemanticIndentation false
+
+lineCommentToken #
 
 wikipedia https://en.wikipedia.org/wiki/SageMath
  example
@@ -169,31 +182,18 @@ linguistGrammarRepo https://github.com/MagicStack/MagicPython
       return p(x)
   
 
-website http://www.sagemath.org/
-aka Sage
-
-twitter sagemath
-
-fileType text
-isOpenSource true
-
 projectEuler Sage
  memberCount
   2019 268
   2022 312
 
-jupyterKernel http://www.sagemath.org/
-centralPackageRepositoryCount 0
 rijuRepl https://riju.codes/sagemath
  example
   print("Hello, world!")
   
-lineCommentToken #
-features
- hasLineComments true
-  # A comment
- hasComments true
-  # A comment
- hasSemanticIndentation false
-domainName sagemath.org
- registered 2007
+
+twitter sagemath
+jupyterKernel http://www.sagemath.org/
+fileType text
+isOpenSource true
+centralPackageRepositoryCount 0

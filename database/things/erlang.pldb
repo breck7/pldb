@@ -1,6 +1,15 @@
 title Erlang
 appeared 1986
 type pl
+creators Joe Armstrong and Robert Virding and Mike Williams
+website https://www.erlang.org
+fileExtensions erl hrl
+country Sweden
+corporateDevelopers Ericsson
+domainName erlang.org
+ registered 1998
+
+visualParadigm false
 
 features
  hasStrings true
@@ -32,6 +41,10 @@ features
  hasMessagePassing true
  hasPrintDebugging true
  hasSemanticIndentation false
+
+lineCommentToken %
+printToken io:format
+keywords after and andalso begin bnot bor bsl bsr bxor case catch cond div end fun if let not of or orelse receive rem try when xor
 
 wikipedia https://en.wikipedia.org/wiki/Erlang_(programming_language)
  example
@@ -73,17 +86,11 @@ githubLanguage Erlang
   rabbitmq rabbitmq-server https://github.com/rabbitmq.png https://github.com/rabbitmq/rabbitmq-server Erlang #B83998 6212 1921 158 "Open source multi-protocol messaging broker"
  trendingProjectsCount 3
 
-helloWorldCollection Erlang
- %% Hello World in Erlang
- 
- -module(hello).
- 
- -export([hello/0]).
- 
- hello() ->
-    io:format("Hello World!~n", []).
- 
-
+antlr https://github.com/antlr/grammars-v4/tree/master/erlang
+codeMirror erlang
+pygmentsHighlighter Erlang
+ filename erlang.py
+ fileExtensions erl hrl es escript
 linguistGrammarRepo https://github.com/textmate/erlang.tmbundle
  firstCommit 2006
  lastCommit 2018
@@ -96,86 +103,23 @@ linguistGrammarRepo https://github.com/textmate/erlang.tmbundle
   
   main([]) -> io:format("Hello, World!~n").
   
-
-website https://www.erlang.org
-
-twitter erlang_org
-
-country Sweden
-fileExtensions erl hrl
-fileType text
-isOpenSource true
-
-tiobe Erlang
- currentRank 49
-
-meetup erlang-programming
- memberCount 104319
- groupCount 306
-
-linkedInSkill erlang
- 2018 12535
+languageServerProtocolProject https://github.com/erlang/sourcer
+ writtenIn erlang
 
 projectEuler Erlang
  memberCount
   2019 614
   2022 618
-
-hopl 1728
-
-subreddit erlang
- memberCount
-  2017 6019
-  2022 9057
-
-quineRelay Erlang
-
-ubuntuPackage erlang
-
-codeMirror erlang
-
-rosettaCode Erlang
-
-antlr https://github.com/antlr/grammars-v4/tree/master/erlang
-
-corporateDevelopers Ericsson
-indeedJobs erlang engineer
- 2017 183
-
-lineCommentToken %
-languageServerProtocolProject https://github.com/erlang/sourcer
- writtenIn erlang
-visualParadigm false
-jupyterKernel https://github.com/robbielynch/ierlang
-jupyterKernel https://github.com/filmor/ierl
-keywords after and andalso begin bnot bor bsl bsr bxor case catch cond div end fun if let not of or orelse receive rem try when xor
-stackOverflowSurvey
- 2021
-  users 651
-  medianSalary 80077
-  fans 1379
-  percentageUsing 0.01
-packageRepository https://hex.pm/
-rijuRepl https://riju.codes/erlang
- example
-  -module(main).
-  -export([main/0]).
-  
-  main() ->
-      io:fwrite("Hello, world!\n").
-  
-creators Joe Armstrong and Robert Virding and Mike Williams
-goodreads
- title|year|author|goodreadsId|rating|ratings|reviews
- Programming Erlang|2007|Joe Armstrong|794755|3.97|643|34
- ERLANG Programming|2009|Francesco Cesarini|4891279|4.06|190|10
- Concurrent Programming ERLANG|1995|Joe Armstrong|794756|4.00|15|2
- Introducing Erlang: Getting Started in Functional Programming|2012|Simon St. Laurent|21537283|3.95|41|4
- ERLANG and Elixir for Imperative Programmers||Wolfgang Loder|52899452|3.00|1|0
- Concurrent Programming in ERLANG|1993|Joe Armstrong|2594672|4.50|2|1
-pygmentsHighlighter Erlang
- filename erlang.py
- fileExtensions erl hrl es escript
+helloWorldCollection Erlang
+ %% Hello World in Erlang
+ 
+ -module(hello).
+ 
+ -export([hello/0]).
+ 
+ hello() ->
+    io:format("Hello World!~n", []).
+ 
 leachim6 Erlang
  filepath e/Erlang.erl
  fileExtensions erl
@@ -185,6 +129,55 @@ leachim6 Erlang
   
   start() ->
     io:format("Hello World~n").
-printToken io:format
-domainName erlang.org
- registered 1998
+rosettaCode Erlang
+quineRelay Erlang
+
+rijuRepl https://riju.codes/erlang
+ example
+  -module(main).
+  -export([main/0]).
+  
+  main() ->
+      io:fwrite("Hello, world!\n").
+  
+
+indeedJobs erlang engineer
+ 2017 183
+linkedInSkill erlang
+ 2018 12535
+stackOverflowSurvey
+ 2021
+  users 651
+  medianSalary 80077
+  fans 1379
+  percentageUsing 0.01
+
+subreddit erlang
+ memberCount
+  2017 6019
+  2022 9057
+meetup erlang-programming
+ memberCount 104319
+ groupCount 306
+
+goodreads
+ title|year|author|goodreadsId|rating|ratings|reviews
+ Programming Erlang|2007|Joe Armstrong|794755|3.97|643|34
+ ERLANG Programming|2009|Francesco Cesarini|4891279|4.06|190|10
+ Concurrent Programming ERLANG|1995|Joe Armstrong|794756|4.00|15|2
+ Introducing Erlang: Getting Started in Functional Programming|2012|Simon St. Laurent|21537283|3.95|41|4
+ ERLANG and Elixir for Imperative Programmers||Wolfgang Loder|52899452|3.00|1|0
+ Concurrent Programming in ERLANG|1993|Joe Armstrong|2594672|4.50|2|1
+
+tiobe Erlang
+ currentRank 49
+hopl 1728
+
+packageRepository https://hex.pm/
+
+twitter erlang_org
+ubuntuPackage erlang
+jupyterKernel https://github.com/robbielynch/ierlang
+jupyterKernel https://github.com/filmor/ierl
+fileType text
+isOpenSource true

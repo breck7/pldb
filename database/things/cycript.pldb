@@ -1,6 +1,23 @@
 title Cycript
 appeared 2008
 type pl
+website http://www.cycript.org/
+reference https://git.saurik.com/cycript.git
+domainName cycript.org
+ registered 2009
+
+features
+ hasLineComments true
+  // A comment
+ hasComments true
+  // A comment
+ hasMultiLineComments true
+  /* A comment
+  */
+ hasSemanticIndentation false
+
+lineCommentToken //
+multiLineCommentTokens /* */
 
 githubLanguage Cycript
  fileExtensions cy
@@ -57,20 +74,5 @@ linguistGrammarRepo https://github.com/atom/language-javascript
   		var mkdir = @encode(int (const char *, int))(dlsym(RTLD_DEFAULT, "mkdir"));
   		var tempnam = @encode(char *(const char *, const char *))(dlsym(R
 
-website http://www.cycript.org/
-reference https://git.saurik.com/cycript.git
 fileType text
 centralPackageRepositoryCount 0
-lineCommentToken //
-features
- hasLineComments true
-  // A comment
- hasComments true
-  // A comment
- hasMultiLineComments true
-  /* A comment
-  */
- hasSemanticIndentation false
-multiLineCommentTokens /* */
-domainName cycript.org
- registered 2009

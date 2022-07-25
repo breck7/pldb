@@ -1,6 +1,13 @@
 title basic calculator
 appeared 1975
 type pl
+standsFor basic calculator
+
+features
+ hasStrings true
+  "Hello world"
+
+stringToken "
 
 wikipedia https://en.wikipedia.org/wiki/Bc_(programming_language)
  example
@@ -16,31 +23,25 @@ wikipedia https://en.wikipedia.org/wiki/Bc_(programming_language)
  dailyPageViews 84
  appeared 1975
 
-standsFor basic calculator
-
-tryItOnline bc
-
-fileType text
-wordRank 2585
-
-rosettaCode Bc
-
-centralPackageRepositoryCount 0
-rijuRepl https://riju.codes/bc
- example
-  "Hello, world!
-  "
-  
 pygmentsHighlighter BC
  filename algebra.py
  fileExtensions bc
+
 leachim6 BC
  filepath b/BC.bc
  fileExtensions bc
  example
   "Hello World"
   
-stringToken "
-features
- hasStrings true
-  "Hello world"
+rosettaCode Bc
+
+rijuRepl https://riju.codes/bc
+ example
+  "Hello, world!
+  "
+  
+tryItOnline bc
+
+fileType text
+wordRank 2585
+centralPackageRepositoryCount 0

@@ -2,6 +2,14 @@ title muon
 appeared 2019
 type pl
 
+features
+ hasPrintDebugging true
+ hasStrings true
+  "Hello world"
+
+printToken printf
+stringToken "
+
 githubRepo https://github.com/nickmqb/muon
  firstCommit 2019
  stars 758
@@ -12,9 +20,6 @@ githubRepo https://github.com/nickmqb/muon
  description Modern low-level programming language
  issues 9
 
-hackerNewsDiscussions
- id|title|time|timestamp|by|comments|score
- 19598592|Show HN: Muon, a low-level programming language inspired by C, C# and Go|2019-04-07 18:00:10 UTC|1554660010|nickmqb|114|175
 leachim6 Muon
  filepath m/Muon.mu
  fileExtensions mu
@@ -25,9 +30,7 @@ leachim6 Muon
   	printf("Hello World")
   }
   
-printToken printf
-features
- hasPrintDebugging true
- hasStrings true
-  "Hello world"
-stringToken "
+
+hackerNewsDiscussions
+ id|title|time|timestamp|by|comments|score
+ 19598592|Show HN: Muon, a low-level programming language inspired by C, C# and Go|2019-04-07 18:00:10 UTC|1554660010|nickmqb|114|175

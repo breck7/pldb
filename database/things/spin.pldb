@@ -1,6 +1,8 @@
 title Spin
 appeared 2006
 type pl
+description The multicore Propeller microcontroller opens up a new level of invention possibilities for students. Programming it in its native high-level language, Spin, makes optimal use of this unique and powerful multicore microcontroller. Spin's design was inspired by great attributes of three other languages, Delphi, C, and Python, and by envisioning new solutions to common programming problems. Like Python, Spin uses indentation whitespace, rather than curly braces or keywords, to delimit blocks.
+reference https://learn.parallax.com/educators/teach/spin-programming-multicore-propeller
 
 features
  hasSemanticIndentation true
@@ -9,7 +11,7 @@ features
  hasComments true
   ' A comment
 
-description The multicore Propeller microcontroller opens up a new level of invention possibilities for students. Programming it in its native high-level language, Spin, makes optimal use of this unique and powerful multicore microcontroller. Spin's design was inspired by great attributes of three other languages, Delphi, C, and Python, and by envisioning new solutions to common programming problems. Like Python, Spin uses indentation whitespace, rather than curly braces or keywords, to delimit blocks.
+lineCommentToken '
 
 githubLanguage Propeller Spin
  fileExtensions spin
@@ -204,11 +206,8 @@ linguistGrammarRepo https://github.com/bitbased/sublime-spintools
   └──────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┘
   }}  
 
-reference https://learn.parallax.com/educators/teach/spin-programming-multicore-propeller
-fileType text
-wordRank 5184
-
 rosettaCode Spin
 
+fileType text
+wordRank 5184
 centralPackageRepositoryCount 0
-lineCommentToken '

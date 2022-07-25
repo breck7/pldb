@@ -1,6 +1,17 @@
 title taichi
 appeared 2019
 type pl
+description A Language for High-Performance Computation on Spatially Sparse Data Structures
+reference http://taichi.graphics/wp-content/uploads/2019/09/taichi_lang.pdf
+
+features
+ hasLineComments true
+  // A comment
+ hasComments true
+  // A comment
+ hasSemanticIndentation false
+
+lineCommentToken //
 
 example
  // For CPU
@@ -14,13 +25,3 @@ example
  // Cache data into GPU L1 cache
  CacheL1(Expr)
  More discussions on h
-
-description A Language for High-Performance Computation on Spatially Sparse Data Structures
-reference http://taichi.graphics/wp-content/uploads/2019/09/taichi_lang.pdf
-lineCommentToken //
-features
- hasLineComments true
-  // A comment
- hasComments true
-  // A comment
- hasSemanticIndentation false

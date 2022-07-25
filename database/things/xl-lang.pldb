@@ -2,6 +2,19 @@ title XL
 appeared 2000
 type pl
 creators Christophe de Dinechin
+website http://xlr.sourceforge.net/
+reference https://fosdem.org/2020/schedule/event/xllang/
+domainName xlr.sourceforge.net
+
+features
+ hasSemanticIndentation true
+ hasTemplates true
+ hasPrintDebugging true
+ hasStrings true
+  "Hello world"
+
+printToken writeln
+stringToken "
 
 example
  0! is 1
@@ -20,14 +33,6 @@ githubRepo https://github.com/c3d/xl
  description A minimalist, general-purpose programming language based on meta-programming and parse tree rewrites
  issues 45
 
-reference https://fosdem.org/2020/schedule/event/xllang/
-features
- hasSemanticIndentation true
- hasTemplates true
- hasPrintDebugging true
- hasStrings true
-  "Hello world"
-
 wikipedia https://en.wikipedia.org/wiki/XL_(programming_language)
  example
   if true then TrueBody else FalseBody -> TrueBody
@@ -41,9 +46,6 @@ wikipedia https://en.wikipedia.org/wiki/XL_(programming_language)
  dailyPageViews 26
  appeared 2000
 
-website http://xlr.sourceforge.net/
-isOpenSource true
-centralPackageRepositoryCount 0
 leachim6 XL
  filepath x/XL.xl
  fileExtensions xl
@@ -51,6 +53,6 @@ leachim6 XL
   // XL programming language: http://xlr.sourceforge.net
   writeln "Hello World"
   
-printToken writeln
-domainName xlr.sourceforge.net
-stringToken "
+
+isOpenSource true
+centralPackageRepositoryCount 0

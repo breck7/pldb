@@ -1,8 +1,22 @@
 title Livr
 appeared 2012
 type dataValidationLanguage
+creators Viktor Turskyi
+website https://livr-spec.org/
 webRepl http://webbylab.github.io/livr-playground/
 standsFor Language Independent Validation Rules
+domainName livr-spec.org
+ registered 2013
+
+example
+ {
+     name: 'required',
+     phone: {max_length: 10},
+     address: {nested_object: {
+         city: 'required',
+         zip: ['required', 'positive_integer']
+     }}
+ }
 
 githubRepo https://github.com/koorchik/LIVR
  firstCommit 2012
@@ -13,17 +27,3 @@ githubRepo https://github.com/koorchik/LIVR
  updated 2022
  description Language Independent Validation Rules Specification
  issues 21
-
-website https://livr-spec.org/
-example
- {
-     name: 'required',
-     phone: {max_length: 10},
-     address: {nested_object: {
-         city: 'required',
-         zip: ['required', 'positive_integer']
-     }}
- }
-creators Viktor Turskyi
-domainName livr-spec.org
- registered 2013

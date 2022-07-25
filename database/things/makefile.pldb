@@ -1,8 +1,16 @@
 title Makefile
 appeared 1976
 type pl
-
+creators Stuart Feldman
+description Lines that begin with TAB are assumed to be part of a recipe (so they are shell scripts and passed to the shell for parsing), and lines that do not begin with TAB cannot be part of a recipe (so they cannot be shell scripts: they must be make syntax).
 website https://www.gnu.org/software/make/
+
+features
+ hasSemanticIndentation true
+ hasLineComments true
+  # A comment
+ hasComments true
+  # A comment
 
 lineCommentToken #
 
@@ -31,15 +39,6 @@ example
  clean :
          rm edit main.o kbd.o command.o display.o \
             insert.o search.o files.o utils.o
-
-features
- hasSemanticIndentation true
- hasLineComments true
-  # A comment
- hasComments true
-  # A comment
-
-description Lines that begin with TAB are assumed to be part of a recipe (so they are shell scripts and passed to the shell for parsing), and lines that do not begin with TAB cannot be part of a recipe (so they cannot be shell scripts: they must be make syntax).
 
 wikipedia https://en.wikipedia.org/wiki/Makefile
  example
@@ -83,6 +82,9 @@ githubLanguage Makefile
   tomwhite hadoop-book https://github.com/tomwhite.png https://github.com/tomwhite/hadoop-book Makefile #427819 2791 2359 47 "Example source code accompanying O'Reilly's ""Hadoop: The Definitive Guide"" by Tom White"
  trendingProjectsCount 13
 
+pygmentsHighlighter Makefile
+ filename make.py
+ fileExtensions mak mk Makefile makefile Makefile.* GNUmakefile
 linguistGrammarRepo https://github.com/textmate/make.tmbundle
  sampleCount 3
  example
@@ -91,15 +93,11 @@ linguistGrammarRepo https://github.com/textmate/make.tmbundle
   	ls -l
   
 
-fileType text
-tryItOnline make
 rosettaCode Make
 quineRelay Makefile
 
-ubuntuPackage make
+tryItOnline make
 
+ubuntuPackage make
+fileType text
 centralPackageRepositoryCount 0
-creators Stuart Feldman
-pygmentsHighlighter Makefile
- filename make.py
- fileExtensions mak mk Makefile makefile Makefile.* GNUmakefile

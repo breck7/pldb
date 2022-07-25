@@ -1,6 +1,18 @@
 title skip
 appeared 2018
 type pl
+website http://skiplang.com/
+corporateDevelopers Facebook
+domainName skiplang.com
+ registered 2017
+
+features
+ hasPrintDebugging true
+ hasStrings true
+  "Hello world"
+
+printToken print_string
+stringToken "
 
 githubRepo https://github.com/skiplang/skip
  firstCommit 2018
@@ -12,12 +24,6 @@ githubRepo https://github.com/skiplang/skip
  description A programming language to skip the things you have already computed
  issues 46
 
-website http://skiplang.com/
-fileType text
-wordRank 1838
-isOpenSource true
-corporateDevelopers Facebook
-centralPackageRepositoryCount 0
 leachim6 Skip
  filepath s/Skip.sk
  fileExtensions sk
@@ -25,11 +31,8 @@ leachim6 Skip
   fun main(): void {
     print_string("Hello World")
   }
-printToken print_string
-features
- hasPrintDebugging true
- hasStrings true
-  "Hello world"
-domainName skiplang.com
- registered 2017
-stringToken "
+
+fileType text
+wordRank 1838
+isOpenSource true
+centralPackageRepositoryCount 0

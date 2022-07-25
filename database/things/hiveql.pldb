@@ -1,6 +1,19 @@
 title HiveQL
 appeared 2011
 type queryLanguage
+description SQL-like query language interface called the Hive query language. While based on SQL, HiveQL does not strictly follow the full SQL-92 standard. Internally, a compiler translates HiveQL statements into a directed acyclic graph of MapReduce, Tez, or Spark jobs, which are submitted to Hadoop for execution.
+website https://hive.apache.org
+reference https://en.wikipedia.org/wiki/Apache_Hive#HiveQL
+domainName hive.apache.org
+
+features
+ hasLineComments true
+  -- A comment
+ hasComments true
+  -- A comment
+ hasSemanticIndentation false
+
+lineCommentToken --
 
 example
  4 CREATE TABLE word_counts AS
@@ -8,8 +21,6 @@ example
  6 (SELECT explode(split(line, '\s')) AS word FROM docs) temp
  7 GROUP BY word
  8 ORDER BY word;
-
-description SQL-like query language interface called the Hive query language. While based on SQL, HiveQL does not strictly follow the full SQL-92 standard. Internally, a compiler translates HiveQL statements into a directed acyclic graph of MapReduce, Tez, or Spark jobs, which are submitted to Hadoop for execution.
 
 githubLanguage HiveQL
  fileExtensions q
@@ -45,16 +56,6 @@ linguistGrammarRepo https://github.com/adidonato/language-hql
   select * from nzhang_t1;
   select * from nzhang_t2;
 
-website https://hive.apache.org
-reference https://en.wikipedia.org/wiki/Apache_Hive#HiveQL
-fileType text
 jupyterKernel https://github.com/EDS-APHP/HiveQLKernel
+fileType text
 centralPackageRepositoryCount 0
-lineCommentToken --
-features
- hasLineComments true
-  -- A comment
- hasComments true
-  -- A comment
- hasSemanticIndentation false
-domainName hive.apache.org

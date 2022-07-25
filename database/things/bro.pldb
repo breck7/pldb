@@ -1,9 +1,12 @@
 title Bro
 appeared 1994
 type pl
-renamedTo zeek
-
 description Bro's domain-specific scripting language enables site-specific monitoring policies.
+website https://www.bro.org/
+standsFor Big Red One
+renamedTo zeek
+domainName bro.org
+ registered 2002
 
 wikipedia https://en.wikipedia.org/wiki/Bro
  backlinksCount 97
@@ -23,9 +26,5 @@ linguistGrammarRepo https://github.com/bro/bro-sublime
  committerCount 4
  commitCount 32
 
-website https://www.bro.org/
-standsFor Big Red One
 fileType text
 centralPackageRepositoryCount 0
-domainName bro.org
- registered 2002

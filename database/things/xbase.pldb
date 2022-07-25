@@ -1,6 +1,23 @@
 title xBase
 appeared 1986
 type pl
+country United States
+
+features
+ hasLineComments true
+  // A comment
+ hasComments true
+  // A comment
+ hasMultiLineComments true
+  /* A comment
+  */
+ hasSemanticIndentation false
+ hasStrings true
+  'Hello world'
+
+lineCommentToken //
+multiLineCommentTokens /* */
+stringToken '
 
 wikipedia https://en.wikipedia.org/wiki/XBase
  related jet-propulsion-laboratory-display-information-system
@@ -55,28 +72,6 @@ linguistGrammarRepo https://github.com/hernad/atom-language-harbour
   #endif
   
 
-country United States
-fileType text
-
-tiobe xBase
-
-hopl 2621
-
-rosettaCode XBase
-
-centralPackageRepositoryCount 0
-lineCommentToken //
-features
- hasLineComments true
-  // A comment
- hasComments true
-  // A comment
- hasMultiLineComments true
-  /* A comment
-  */
- hasSemanticIndentation false
- hasStrings true
-  'Hello world'
 leachim6 XBase
  filepath x/XBase.dbf
  fileExtensions dbf
@@ -85,5 +80,10 @@ leachim6 XBase
    ? 'Hello World'
   enddo
   
-multiLineCommentTokens /* */
-stringToken '
+rosettaCode XBase
+
+tiobe xBase
+hopl 2621
+
+fileType text
+centralPackageRepositoryCount 0

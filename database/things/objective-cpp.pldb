@@ -1,8 +1,22 @@
 title Objective C++
 appeared 1993
 type pl
-
 description Objective-C++ is simply source code that mixes Objective-C classes and C++ classes.
+reference https://en.wikipedia.org/wiki/Objective-C
+aka objectivecpp
+
+features
+ hasLineComments true
+  // A comment
+ hasComments true
+  // A comment
+ hasMultiLineComments true
+  /* A comment
+  */
+ hasSemanticIndentation false
+
+lineCommentToken //
+multiLineCommentTokens /* */
 
 githubLanguage Objective-C++
  fileExtensions mm
@@ -11,6 +25,9 @@ githubLanguage Objective-C++
   TextureGroup Texture https://github.com/TextureGroup.png https://github.com/TextureGroup/Texture Objective-C++ #6866fb 5856 833 103 "Smooth asynchronous user interfaces for iOS apps."
  trendingProjectsCount 2
 
+pygmentsHighlighter Objective-C++
+ filename objective.py
+ fileExtensions mm hh
 linguistGrammarRepo https://github.com/textmate/objective-c.tmbundle
  firstCommit 2005
  lastCommit 2018
@@ -66,10 +83,6 @@ linguistGrammarRepo https://github.com/textmate/objective-c.tmbundle
   #include "PlatformKeyboardEvent.h"
   #include "Pl
 
-reference https://en.wikipedia.org/wiki/Objective-C
-fileType text
-centralPackageRepositoryCount 0
-aka objectivecpp
 rijuRepl https://riju.codes/objectivecpp
  example
   #import <Foundation/Foundation.h>
@@ -81,17 +94,6 @@ rijuRepl https://riju.codes/objectivecpp
     return 0;
   }
   
-lineCommentToken //
-features
- hasLineComments true
-  // A comment
- hasComments true
-  // A comment
- hasMultiLineComments true
-  /* A comment
-  */
- hasSemanticIndentation false
-pygmentsHighlighter Objective-C++
- filename objective.py
- fileExtensions mm hh
-multiLineCommentTokens /* */
+
+fileType text
+centralPackageRepositoryCount 0

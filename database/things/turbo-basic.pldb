@@ -2,6 +2,15 @@ title Turbo Basic
 appeared 1987
 type pl
 
+features
+ hasLineComments true
+  ' A comment
+ hasComments true
+  ' A comment
+ hasSemanticIndentation false
+
+lineCommentToken '
+
 wikipedia https://en.wikipedia.org/wiki/Turbo_Basic
  example
   #Compile Exe ' using either PBCC6 or PBWIN10 compiler
@@ -26,10 +35,3 @@ wikipedia https://en.wikipedia.org/wiki/Turbo_Basic
  appeared 1989
 
 centralPackageRepositoryCount 0
-lineCommentToken '
-features
- hasLineComments true
-  ' A comment
- hasComments true
-  ' A comment
- hasSemanticIndentation false

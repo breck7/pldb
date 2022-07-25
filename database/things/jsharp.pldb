@@ -1,6 +1,17 @@
 title J#
 appeared 2002
 type pl
+website http://msdn2.microsoft.com/en-us/vjsharp/default.aspx
+country United States
+corporateDevelopers Microsoft
+
+features
+ hasPrintDebugging true
+ hasStrings true
+  "Hello world"
+
+printToken System.Console.Write
+stringToken "
 
 wikipedia https://en.wikipedia.org/wiki/J_Sharp
  related j java java-bytecode
@@ -12,16 +23,6 @@ wikipedia https://en.wikipedia.org/wiki/J_Sharp
  revisionCount 288
  appeared 2002
 
-website http://msdn2.microsoft.com/en-us/vjsharp/default.aspx
-country United States
-fileType text
-
-tiobe J#
-
-hopl 3718
-
-corporateDevelopers Microsoft
-centralPackageRepositoryCount 0
 leachim6 J#
  filepath j/J#.jsl
  fileExtensions jsl
@@ -36,9 +37,9 @@ leachim6 J#
   	}
   }
   
-printToken System.Console.Write
-features
- hasPrintDebugging true
- hasStrings true
-  "Hello world"
-stringToken "
+
+tiobe J#
+hopl 3718
+
+fileType text
+centralPackageRepositoryCount 0

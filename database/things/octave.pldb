@@ -1,6 +1,8 @@
 title GNU Octave
 appeared 1988
 type pl
+website https://gnu.org/software/octave/
+country United States
 
 features
  hasComments true
@@ -10,6 +12,10 @@ features
  hasSemanticIndentation false
  hasStrings true
   "Hello world"
+
+lineCommentToken %
+printToken printf
+stringToken "
 
 wikipedia https://en.wikipedia.org/wiki/GNU_Octave
  example
@@ -31,54 +37,43 @@ wikipedia https://en.wikipedia.org/wiki/GNU_Octave
  revisionCount 653
  appeared 1988
 
-helloWorldCollection GNU Octave
- #Hello World in Octave (http://www.octave.org/)
- printf("Hello World\n");
- 
-
-website https://gnu.org/software/octave/
-
-tryItOnline octave
-
-country United States
-fileType text
-isOpenSource true
-
-tiobe GNU Octave
+codeMirror octave
+pygmentsHighlighter Octave
+ filename matlab.py
+ fileExtensions m
 
 projectEuler Octave
  memberCount
   2019 137
   2022 150
-
-hopl 2302
-
-quineRelay Octave
-
-ubuntuPackage octave
-
-codeMirror octave
-
-rosettaCode Octave
-
-jupyterKernel https://github.com/calysto/octave_kernel
-centralPackageRepositoryCount 0
-rijuRepl https://riju.codes/octave
- example
-  disp("Hello, world!")
-  
-goodreads
- title|year|author|goodreadsId|rating|ratings|reviews
- Scientific Computing with MATLAB and Octave|2003|Alfio Quarteroni|312792|4.10|10|0
-lineCommentToken %
-pygmentsHighlighter Octave
- filename matlab.py
- fileExtensions m
+helloWorldCollection GNU Octave
+ #Hello World in Octave (http://www.octave.org/)
+ printf("Hello World\n");
+ 
 leachim6 Octave
  filepath o/Octave.m
  fileExtensions m
  example
   printf("Hello World");
   
-printToken printf
-stringToken "
+rosettaCode Octave
+quineRelay Octave
+
+rijuRepl https://riju.codes/octave
+ example
+  disp("Hello, world!")
+  
+tryItOnline octave
+
+goodreads
+ title|year|author|goodreadsId|rating|ratings|reviews
+ Scientific Computing with MATLAB and Octave|2003|Alfio Quarteroni|312792|4.10|10|0
+
+tiobe GNU Octave
+hopl 2302
+
+ubuntuPackage octave
+jupyterKernel https://github.com/calysto/octave_kernel
+fileType text
+isOpenSource true
+centralPackageRepositoryCount 0

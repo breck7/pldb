@@ -2,6 +2,15 @@ title ThinBasic
 appeared 2004
 type pl
 
+features
+ hasLineComments true
+  ' A comment
+ hasComments true
+  ' A comment
+ hasSemanticIndentation false
+
+lineCommentToken '
+
 wikipedia https://en.wikipedia.org/wiki/ThinBasic
  example
   ' Specifies program will use functions from console module
@@ -39,10 +48,3 @@ wikipedia https://en.wikipedia.org/wiki/ThinBasic
 
 isOpenSource true
 centralPackageRepositoryCount 0
-lineCommentToken '
-features
- hasLineComments true
-  ' A comment
- hasComments true
-  ' A comment
- hasSemanticIndentation false

@@ -1,17 +1,12 @@
 title HAML
 appeared 2006
 type template
+creators Hampton Catlin
+website http://haml.info/
 webRepl https://haml-multiline--pftg.repl.co/
-subreddit dlang
- memberCount
-  2022 467
-
-example
- %section.container
-  %h1= post.title
-  %h2= post.subtitle
-  .content
-    = post.content
+standsFor HTML Abstraction Markup Language
+domainName haml.info
+ registered 2012
 
 features
  canWriteToDisk false
@@ -20,6 +15,25 @@ features
   -# A comment
  hasComments true
   -# A comment
+
+lineCommentToken -#
+
+example
+ %section.container
+  %h1= post.title
+  %h2= post.subtitle
+  .content
+    = post.content
+
+githubRepo https://github.com/haml/haml
+ firstCommit 2006
+ stars 3653
+ forks 569
+ subscribers 86
+ created 2008
+ updated 2022
+ description HTML Abstraction Markup Language - A Markup Haiku
+ issues 11
 
 wikipedia https://en.wikipedia.org/wiki/Haml
  example
@@ -71,16 +85,10 @@ githubLanguage Haml
  fileExtensions haml hamldeface
  trendingProjectsCount 0
 
-githubRepo https://github.com/haml/haml
- firstCommit 2006
- stars 3653
- forks 569
- subscribers 86
- created 2008
- updated 2022
- description HTML Abstraction Markup Language - A Markup Haiku
- issues 11
-
+codeMirror haml
+pygmentsHighlighter Haml
+ filename html.py
+ fileExtensions haml
 linguistGrammarRepo https://github.com/ezekg/language-haml
  firstCommit 2014
  lastCommit 2018
@@ -93,22 +101,6 @@ linguistGrammarRepo https://github.com/ezekg/language-haml
     World!
   
 
-website http://haml.info/
-standsFor HTML Abstraction Markup Language
-fileType text
-isOpenSource true
-
-codeMirror haml
-
-centralPackageRepositoryCount 0
-creators Hampton Catlin
-goodreads
- title|year|author|goodreadsId|rating|ratings|reviews
- HTML: Hypertext Markup Language, Cascading Style Sheets, Dynamic HTML, Extensible Hypertext Markup Language, Html5, Haml, Webfarbe|2010|Books LLC|14640226|5.00|2|0
-lineCommentToken -#
-pygmentsHighlighter Haml
- filename html.py
- fileExtensions haml
 leachim6 Haml
  filepath h/Haml.haml
  fileExtensions haml
@@ -117,5 +109,15 @@ leachim6 Haml
     %title Hello World
     %body
       %h1 Hello World 
-domainName haml.info
- registered 2012
+
+subreddit dlang
+ memberCount
+  2022 467
+
+goodreads
+ title|year|author|goodreadsId|rating|ratings|reviews
+ HTML: Hypertext Markup Language, Cascading Style Sheets, Dynamic HTML, Extensible Hypertext Markup Language, Html5, Haml, Webfarbe|2010|Books LLC|14640226|5.00|2|0
+
+fileType text
+isOpenSource true
+centralPackageRepositoryCount 0

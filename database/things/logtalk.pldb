@@ -1,6 +1,10 @@
 title Logtalk
 appeared 1998
 type pl
+creators Paulo Moura
+website http://logtalk.org
+domainName logtalk.org
+ registered 2002
 
 features
  hasComments true
@@ -9,6 +13,9 @@ features
  hasSemanticIndentation false
  hasStrings true
   'Hello world'
+
+printToken write
+stringToken '
 
 wikipedia https://en.wikipedia.org/wiki/Logtalk_(programming_language)
  example
@@ -27,6 +34,9 @@ githubLanguage Logtalk
  fileExtensions lgt logtalk
  trendingProjectsCount 0
 
+pygmentsHighlighter Logtalk
+ filename prolog.py
+ fileExtensions lgt logtalk
 linguistGrammarRepo https://github.com/textmate/logtalk.tmbundle
  firstCommit 2005
  lastCommit 2017
@@ -45,28 +55,16 @@ linguistGrammarRepo https://github.com/textmate/logtalk.tmbundle
   :- end_object.
   
 
-website http://logtalk.org
-
-twitter logtalkdotorg
-
-fileType text
-
-hopl 3555
-
-rosettaCode Logtalk
-
-centralPackageRepositoryCount 0
-creators Paulo Moura
-pygmentsHighlighter Logtalk
- filename prolog.py
- fileExtensions lgt logtalk
 leachim6 Logtalk
  filepath l/Logtalk.lgt
  fileExtensions lgt
  example
   write('Hello World')
   
-printToken write
-domainName logtalk.org
- registered 2002
-stringToken '
+rosettaCode Logtalk
+
+hopl 3555
+
+twitter logtalkdotorg
+fileType text
+centralPackageRepositoryCount 0

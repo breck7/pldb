@@ -1,6 +1,10 @@
 title hakaru
 appeared 2014
 type pl
+description Hakaru is a simply-typed probabilistic programming language, designed for easy specification of probabilistic models and inference algorithms. This type of language is useful for the development of machine learning algorithms and stochastic modeling.
+website http://hakaru-dev.github.io/
+reference https://www.reddit.com/r/ProgrammingLanguages/comments/hejono/hakaru_a_simplytyped_probabilistic_programming/
+domainName hakaru-dev.github.io
 
 example
  def pulls(strength real):
@@ -19,8 +23,6 @@ example
  match2 <~ winner(bob, carol)
  match3 <~ winner(alice, carol)
 
-description Hakaru is a simply-typed probabilistic programming language, designed for easy specification of probabilistic models and inference algorithms. This type of language is useful for the development of machine learning algorithms and stochastic modeling.
-
 githubRepo https://github.com/hakaru-dev/hakaru
  firstCommit 2014
  stars 293
@@ -30,7 +32,3 @@ githubRepo https://github.com/hakaru-dev/hakaru
  updated 2022
  description A probabilistic programming language
  issues 41
-
-website http://hakaru-dev.github.io/
-reference https://www.reddit.com/r/ProgrammingLanguages/comments/hejono/hakaru_a_simplytyped_probabilistic_programming/
-domainName hakaru-dev.github.io

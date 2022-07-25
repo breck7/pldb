@@ -2,6 +2,20 @@ title S-algol
 appeared 1979
 type pl
 
+features
+ hasLineComments true
+  ! A comment
+ hasComments true
+  ! A comment
+ hasPrintDebugging true
+ hasSemanticIndentation false
+ hasStrings true
+  "Hello world"
+
+lineCommentToken !
+printToken write
+stringToken "
+
 wikipedia https://en.wikipedia.org/wiki/S-algol
  example
   ! Comments are introduced by an exclamation point and continue until end of line.
@@ -70,25 +84,13 @@ wikipedia https://en.wikipedia.org/wiki/S-algol
  dailyPageViews 9
  appeared 1979
 
-
-hopl 869
-
-centralPackageRepositoryCount 0
-lineCommentToken !
-features
- hasLineComments true
-  ! A comment
- hasComments true
-  ! A comment
- hasPrintDebugging true
- hasSemanticIndentation false
- hasStrings true
-  "Hello world"
 leachim6 S Algol
  filepath s/S Algol
  example
   write "Hello World"
   ?
   
-printToken write
-stringToken "
+
+hopl 869
+
+centralPackageRepositoryCount 0

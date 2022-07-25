@@ -1,10 +1,18 @@
 title UrWeb
 appeared 2008
 type pl
+website http://www.impredicative.com/ur/
 
-githubLanguage UrWeb
- fileExtensions ur urs
- trendingProjectsCount 0
+features
+ hasMultiLineComments true
+  (* A comment
+  *)
+ hasComments true
+  (* A comment
+  *)
+ hasSemanticIndentation false
+
+multiLineCommentTokens (* *)
 
 githubRepo https://github.com/urweb/urweb
  firstCommit 2008
@@ -15,6 +23,10 @@ githubRepo https://github.com/urweb/urweb
  updated 2022
  description The Ur/Web programming language
  issues 52
+
+githubLanguage UrWeb
+ fileExtensions ur urs
+ trendingProjectsCount 0
 
 linguistGrammarRepo https://github.com/gwalborn/UrWeb-Language-Definition.git
  firstCommit 2012
@@ -103,16 +115,6 @@ linguistGrammarRepo https://github.com/gwalborn/UrWeb-Language-Definition.git
         </body>
       </xml>
 
-website http://www.impredicative.com/ur/
 fileType text
 isOpenSource true
 centralPackageRepositoryCount 0
-multiLineCommentTokens (* *)
-features
- hasMultiLineComments true
-  (* A comment
-  *)
- hasComments true
-  (* A comment
-  *)
- hasSemanticIndentation false

@@ -1,6 +1,18 @@
 title dedukti
 appeared 2009
 type pl
+website https://deducteam.github.io
+domainName deducteam.github.io
+
+features
+ hasComments true
+  (; This is a comment ;)
+ hasMultiLineComments true
+  (; A comment
+  ;)
+ hasSemanticIndentation false
+
+multiLineCommentTokens (; ;)
 
 example
  Nat: Type.
@@ -12,14 +24,6 @@ example
  [ n, m ] plus (succ n) m --> succ (plus n m)
  [ n, m ] plus n (succ m) --> succ (plus n m).
 
-features
- hasComments true
-  (; This is a comment ;)
- hasMultiLineComments true
-  (; A comment
-  ;)
- hasSemanticIndentation false
-
 githubRepo https://github.com/Deducteam/Dedukti
  firstCommit 2009
  stars 155
@@ -29,7 +33,3 @@ githubRepo https://github.com/Deducteam/Dedukti
  updated 2022
  description Implementation of the λΠ-calculus modulo rewriting
  issues 35
-
-website https://deducteam.github.io
-multiLineCommentTokens (; ;)
-domainName deducteam.github.io

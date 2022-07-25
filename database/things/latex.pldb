@@ -1,6 +1,10 @@
 title LaTeX
 appeared 1985
 type textMarkup
+website http://latex-project.org/
+country United States
+domainName latex-project.org
+ registered 1998
 
 features
  hasComments true
@@ -8,6 +12,8 @@ features
  hasLineComments true
   % A comment
  hasSemanticIndentation false
+
+lineCommentToken %
 
 wikipedia https://en.wikipedia.org/wiki/LaTeX
  example
@@ -46,6 +52,8 @@ wikipedia https://en.wikipedia.org/wiki/LaTeX
  revisionCount 1914
  appeared 1980
 
+languageServerProtocolProject https://github.com/efoerster/texlab
+
 helloWorldCollection LaTeX
  % Hello World! in LaTeX
  \documentclass{article}
@@ -53,20 +61,6 @@ helloWorldCollection LaTeX
  Hello World!
  \end{document}
  
-
-website http://latex-project.org/
-country United States
-fileType text
-wordRank 5960
-isOpenSource true
-
-hopl 2157
-
-rosettaCode LaTeX
-
-languageServerProtocolProject https://github.com/efoerster/texlab
-centralPackageRepositoryCount 0
-lineCommentToken %
 leachim6 LaTeX
  filepath l/LaTeX.tex
  fileExtensions tex
@@ -76,5 +70,11 @@ leachim6 LaTeX
   Hello World
   \end{document}
   
-domainName latex-project.org
- registered 1998
+rosettaCode LaTeX
+
+hopl 2157
+
+fileType text
+wordRank 5960
+isOpenSource true
+centralPackageRepositoryCount 0

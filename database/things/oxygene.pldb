@@ -1,6 +1,17 @@
 title Oxygene
 appeared 2002
 type pl
+website http://elementscompiler.com
+domainName elementscompiler.com
+ registered 2014
+
+features
+ hasPrintDebugging true
+ hasStrings true
+  'Hello world'
+
+printToken Console.WriteLine
+stringToken '
 
 wikipedia https://en.wikipedia.org/wiki/Oxygene_(programming_language)
  example
@@ -26,14 +37,6 @@ githubLanguage Oxygene
  fileExtensions oxygene
  trendingProjectsCount 0
 
-website http://elementscompiler.com
-fileType text
-
-tiobe Oxygene
-
-rosettaCode Oxygene
-
-centralPackageRepositoryCount 0
 leachim6 Oxygene
  filepath o/Oxygene.pas
  fileExtensions pas
@@ -47,11 +50,9 @@ leachim6 Oxygene
   
   end.
   
-printToken Console.WriteLine
-features
- hasPrintDebugging true
- hasStrings true
-  'Hello world'
-domainName elementscompiler.com
- registered 2014
-stringToken '
+rosettaCode Oxygene
+
+tiobe Oxygene
+
+fileType text
+centralPackageRepositoryCount 0

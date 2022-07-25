@@ -1,11 +1,11 @@
 title bpkg-pm
+appeared 2017
 type packageManager
+creators Joseph Werle
 website http://www.bpkg.sh/
-forLanguages bash
-packageCount 26
 domainName bpkg.sh
  registered 2017
-appeared 2017
+
 githubRepo https://github.com/bpkg/bpkg
  firstCommit 2014
  stars 1665
@@ -15,4 +15,6 @@ githubRepo https://github.com/bpkg/bpkg
  updated 2022
  description Lightweight bash package manager
  issues 31
-creators Joseph Werle
+
+packageCount 26
+forLanguages bash

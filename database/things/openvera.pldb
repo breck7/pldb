@@ -1,6 +1,17 @@
 title OpenVera
 appeared 2001
 type pl
+reference http://wiki.c2.com/?VeraLanguage
+fileExtensions vr
+
+features
+ hasLineComments true
+  // A comment
+ hasComments true
+  // A comment
+ hasSemanticIndentation false
+
+lineCommentToken //
 
 example
  // This Examples shows how random 
@@ -60,14 +71,5 @@ wikipedia https://en.wikipedia.org/wiki/OpenVera
  dailyPageViews 17
  appeared 2008
 
-reference http://wiki.c2.com/?VeraLanguage
-fileExtensions vr
 fileType text
 centralPackageRepositoryCount 0
-lineCommentToken //
-features
- hasLineComments true
-  // A comment
- hasComments true
-  // A comment
- hasSemanticIndentation false

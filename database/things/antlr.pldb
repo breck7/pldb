@@ -1,6 +1,9 @@
 title ANTLR
 appeared 1992
 type grammarLanguage
+website http://www.antlr.org
+domainName antlr.org
+ registered 1997
 
 features
  hasLineComments true
@@ -11,6 +14,9 @@ features
   /* A comment
   */
  hasSemanticIndentation false
+
+lineCommentToken //
+multiLineCommentTokens /* */
 
 example
  /** Taken from "The Definitive ANTLR 4 Reference" by Terence Parr */
@@ -101,34 +107,25 @@ githubLanguage ANTLR
   antlr grammars-v4 https://github.com/antlr.png https://github.com/antlr/grammars-v4 ANTLR #9DC3FF 4119 1736 119 "Grammars written for ANTLR v4; expectation that the grammars are free of actions."
  trendingProjectsCount 2
 
+antlr https://github.com/antlr/grammars-v4/tree/master/antlr4
+pygmentsHighlighter ANTLR
+ filename parsers.py
 linguistGrammarRepo https://github.com/textmate/antlr.tmbundle
  firstCommit 2005
  lastCommit 2018
  committerCount 5
  commitCount 31
 
-website http://www.antlr.org
+rosettaCode ANTLR
 
-twitter the_antlr_guy
-
-fileType text
-isOpenSource true
+indeedJobs antlr engineer
+ 2017 7
 linkedInSkill antlr
  2018 2312
 
 hopl 1825
 
-rosettaCode ANTLR
-
-antlr https://github.com/antlr/grammars-v4/tree/master/antlr4
-
-indeedJobs antlr engineer
- 2017 7
-
-lineCommentToken //
+twitter the_antlr_guy
+fileType text
+isOpenSource true
 centralPackageRepositoryCount 0
-pygmentsHighlighter ANTLR
- filename parsers.py
-multiLineCommentTokens /* */
-domainName antlr.org
- registered 1997

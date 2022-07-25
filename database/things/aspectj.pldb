@@ -1,6 +1,26 @@
 title AspectJ
 appeared 2001
 type pl
+website http://www.eclipse.org/aspectj/
+fileExtensions aj
+
+features
+ hasLineComments true
+  // A comment
+ hasComments true
+  // A comment
+ hasPrintDebugging true
+ hasMultiLineComments true
+  /* A comment
+  */
+ hasSemanticIndentation false
+ hasStrings true
+  "Hello world"
+
+lineCommentToken //
+multiLineCommentTokens /* */
+printToken System.out.println
+stringToken "
 
 wikipedia https://en.wikipedia.org/wiki/AspectJ
  example
@@ -19,6 +39,10 @@ githubLanguage AspectJ
  fileExtensions aj
  trendingProjectsCount 0
 
+antlr https://github.com/antlr/grammars-v4/tree/master/aspectj
+pygmentsHighlighter AspectJ
+ filename jvm.py
+ fileExtensions aj
 linguistGrammarRepo https://github.com/pchaigno/sublime-aspectj
  firstCommit 2015
  lastCommit 2017
@@ -69,24 +93,14 @@ linguistGrammarRepo https://github.com/pchaigno/sublime-aspectj
   }
   
 
-website http://www.eclipse.org/aspectj/
-fileExtensions aj
-fileType text
-isOpenSource true
-
-tiobe AspectJ
-
-hopl 7055
-
+leachim6 Aspectj
+ filepath a/Aspectj.aj
+ fileExtensions aj
+ example
+  System.out.println("Hello World");
+rosettaCode AspectJ
 quineRelay AspectJ
 
-ubuntuPackage aspectj
-
-rosettaCode AspectJ
-
-antlr https://github.com/antlr/grammars-v4/tree/master/aspectj
-
-centralPackageRepositoryCount 0
 rijuRepl https://riju.codes/aspectj
  example
   public class Main {
@@ -95,6 +109,7 @@ rijuRepl https://riju.codes/aspectj
       }
   }
   
+
 goodreads
  title|year|author|goodreadsId|rating|ratings|reviews
  Eclipse AspectJ: Aspect-Oriented Programming with AspectJ and the Eclipse AspectJ Development Tools|2004|Adrian Colyer|974936|3.25|8|0
@@ -104,27 +119,11 @@ goodreads
  Aspect-Oriented Programming with Aspectj|2002|Ivan Kiselev|41635597|0.0|0|0
  Java Programming Language Family: Godiva, Scala, Processing, Aspectj, Groovy, Javafx Script, Einstein, J Sharp, Judoscript, Jasmin, Beanshell|2011|Books LLC|15219374|0.0|0|0
  Logging and Simulation using Aspect Oriented Software: AOP and AspectJ||Mutum Meetei|54120798|0.0|0|0
-lineCommentToken //
-features
- hasLineComments true
-  // A comment
- hasComments true
-  // A comment
- hasPrintDebugging true
- hasMultiLineComments true
-  /* A comment
-  */
- hasSemanticIndentation false
- hasStrings true
-  "Hello world"
-pygmentsHighlighter AspectJ
- filename jvm.py
- fileExtensions aj
-leachim6 Aspectj
- filepath a/Aspectj.aj
- fileExtensions aj
- example
-  System.out.println("Hello World");
-printToken System.out.println
-multiLineCommentTokens /* */
-stringToken "
+
+tiobe AspectJ
+hopl 7055
+
+ubuntuPackage aspectj
+fileType text
+isOpenSource true
+centralPackageRepositoryCount 0

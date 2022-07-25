@@ -2,6 +2,15 @@ title ActiveVFP
 appeared 2001
 type pl
 
+features
+ hasLineComments true
+  * A comment
+ hasComments true
+  * A comment
+ hasSemanticIndentation false
+
+lineCommentToken *
+
 wikipedia https://en.wikipedia.org/wiki/ActiveVFP
  example
   * customers.prg -Customers Controller
@@ -89,10 +98,3 @@ wikipedia https://en.wikipedia.org/wiki/ActiveVFP
 
 isOpenSource true
 centralPackageRepositoryCount 0
-lineCommentToken *
-features
- hasLineComments true
-  * A comment
- hasComments true
-  * A comment
- hasSemanticIndentation false

@@ -3,7 +3,8 @@ appeared 1985
 type pl
 creators Richard Stallman
 aka emacslisp
-lineCommentToken ;
+country United States
+corporateDevelopers GNU Project
 
 features
  isLisp true
@@ -16,6 +17,10 @@ features
  hasSemanticIndentation false
  hasStrings true
   "Hello world"
+
+lineCommentToken ;
+printToken print
+stringToken "
 
 wikipedia https://en.wikipedia.org/wiki/Emacs_Lisp
  example
@@ -49,6 +54,9 @@ githubLanguage Emacs Lisp
   emacs-mirror emacs https://github.com/emacs-mirror.png https://github.com/emacs-mirror/emacs "Emacs Lisp" #c065db 2058 610 28 "Mirror of GNU Emacs"
  trendingProjectsCount 11
 
+pygmentsHighlighter EmacsLisp
+ filename lisp.py
+ fileExtensions el
 linguistGrammarRepo https://github.com/Alhadis/language-emacs-lisp
  firstCommit 2016
  lastCommit 2018
@@ -59,32 +67,22 @@ linguistGrammarRepo https://github.com/Alhadis/language-emacs-lisp
   (print "Dude!")
   
 
-
-tryItOnline emacs-lisp
-replit https://replit.com/languages/elisp
-
-country United States
-fileType text
-isOpenSource true
-
-tiobe Emacs Lisp
-
-hopl 2009
-
-quineRelay Emacs Lisp
-
-ubuntuPackage emacs25
-
-corporateDevelopers GNU Project
-packageRepository https://elpa.gnu.org/
-pygmentsHighlighter EmacsLisp
- filename lisp.py
- fileExtensions el
 leachim6 EmacsLisp
  filepath e/EmacsLisp.el
  fileExtensions el
  example
   (message "Hello World")
   
-printToken print
-stringToken "
+quineRelay Emacs Lisp
+
+replit https://replit.com/languages/elisp
+tryItOnline emacs-lisp
+
+tiobe Emacs Lisp
+hopl 2009
+
+packageRepository https://elpa.gnu.org/
+
+ubuntuPackage emacs25
+fileType text
+isOpenSource true

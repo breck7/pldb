@@ -2,6 +2,7 @@ title Gopher
 appeared 1991
 type protocol
 creators Mark P. McCahill and Farhad Anklesaria and Paul Lindner and Daniel Torrey and Bob Alberti
+reference https://tools.ietf.org/html/rfc1436
 
 wikipedia https://en.wikipedia.org/wiki/Gopher_(protocol)
  summary The Gopher protocol  is a TCP/IP application layer protocol designed for distributing, searching, and retrieving documents over the Internet. The Gopher protocol was strongly oriented towards a menu-document design and presented an alternative to the World Wide Web in its early stages, but ultimately Hypertext Transfer Protocol (HTTP) became the dominant protocol. The Gopher ecosystem is often regarded as the effective predecessor of the World Wide Web.The protocol was invented by a team led by Mark P. McCahill at the University of Minnesota.  It offers some features not natively supported by the Web and imposes a much stronger hierarchy on information stored on it. Its text menu interface is well-suited to computing environments that rely heavily on remote text-oriented computer terminals, which were still common at the time of its creation in 1991, and the simplicity of its protocol facilitated a wide variety of client implementations. More recent Gopher revisions and graphical clients added support for multimedia. Gopher was preferred by many network administrators for using fewer network resources than Web services.Gopher's hierarchical structure provided a platform for the first large-scale electronic library connections. Gopher has been described by some enthusiasts as "faster and more efficient and so much more organized" than today's Web services. The Gopher protocol is still in use by enthusiasts, and although it has been almost entirely supplanted by the Web, a small population of actively-maintained servers remains.
@@ -9,5 +10,3 @@ wikipedia https://en.wikipedia.org/wiki/Gopher_(protocol)
  pageId 12794
  dailyPageViews 495
  appeared 2010
-
-reference https://tools.ietf.org/html/rfc1436

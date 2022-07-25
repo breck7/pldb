@@ -1,6 +1,11 @@
 title Haxe
 appeared 2005
 type pl
+creators Nicolas Cannasse
+website http://haxe.org
+fileExtensions hx hxml
+domainName haxe.org
+ registered 2005
 
 features
  hasComments true
@@ -14,6 +19,20 @@ features
  hasSemanticIndentation false
  hasStrings true
   "Hello world"
+
+lineCommentToken //
+multiLineCommentTokens /* */
+stringToken "
+
+githubRepo https://github.com/HaxeFoundation/haxe
+ firstCommit 2005
+ stars 4955
+ forks 618
+ subscribers 176
+ created 2013
+ updated 2022
+ description Haxe - The Cross-Platform Toolkit
+ issues 1104
 
 wikipedia https://en.wikipedia.org/wiki/Haxe
  example
@@ -46,15 +65,17 @@ githubLanguage Haxe
  fileExtensions hx hxsl
  trendingProjectsCount 0
 
-githubRepo https://github.com/HaxeFoundation/haxe
- firstCommit 2005
- stars 4955
- forks 618
- subscribers 176
- created 2013
- updated 2022
- description Haxe - The Cross-Platform Toolkit
- issues 1104
+codeMirror haxe
+pygmentsHighlighter Haxe
+ filename haxe.py
+ fileExtensions hx hxsl
+linguistGrammarRepo https://github.com/vshaxe/haxe-TmLanguage
+ firstCommit 2017
+ lastCommit 2018
+ committerCount 4
+ commitCount 109
+languageServerProtocolProject https://github.com/vshaxe/haxe-language-server
+ writtenIn haxe
 
 helloWorldCollection Haxe
  // Hello world in Haxe
@@ -64,53 +85,6 @@ helloWorldCollection Haxe
          trace("Hello world!");
      }
  }
-
-linguistGrammarRepo https://github.com/vshaxe/haxe-TmLanguage
- firstCommit 2017
- lastCommit 2018
- committerCount 4
- commitCount 109
-
-website http://haxe.org
-
-tryItOnline haxe
-
-twitter haxe_org
-
-fileExtensions hx hxml
-fileType text
-isOpenSource true
-
-tiobe Haxe
-
-quineRelay Haxe
-
-ubuntuPackage haxe
-
-codeMirror haxe
-
-rosettaCode Haxe
-
-languageServerProtocolProject https://github.com/vshaxe/haxe-language-server
- writtenIn haxe
-
-lineCommentToken //
-packageRepository https://lib.haxe.org/
-rijuRepl https://riju.codes/haxe
- example
-  class Main {
-      static public function main() {
-          trace("Hello, world!");
-      }
-  }
-  
-goodreads
- title|year|author|goodreadsId|rating|ratings|reviews
- Professional haXe and Neko (Programmer to Programmer)|2008|L. McColl-Sylvester|42053093|0.0|0|0
-creators Nicolas Cannasse
-pygmentsHighlighter Haxe
- filename haxe.py
- fileExtensions hx hxsl
 leachim6 Haxe
  filepath h/Haxe.hx
  fileExtensions hx
@@ -120,7 +94,28 @@ leachim6 Haxe
           trace("Hello World");
       }
   }
-multiLineCommentTokens /* */
-domainName haxe.org
- registered 2005
-stringToken "
+rosettaCode Haxe
+quineRelay Haxe
+
+rijuRepl https://riju.codes/haxe
+ example
+  class Main {
+      static public function main() {
+          trace("Hello, world!");
+      }
+  }
+  
+tryItOnline haxe
+
+goodreads
+ title|year|author|goodreadsId|rating|ratings|reviews
+ Professional haXe and Neko (Programmer to Programmer)|2008|L. McColl-Sylvester|42053093|0.0|0|0
+
+tiobe Haxe
+
+packageRepository https://lib.haxe.org/
+
+twitter haxe_org
+ubuntuPackage haxe
+fileType text
+isOpenSource true

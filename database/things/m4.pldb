@@ -1,12 +1,16 @@
 title M4
 appeared 1977
 type pl
+creators Brian Kernighan and Dennis Ritchie
+country United States
 
 features
  hasComments true
  hasLineComments true
   # A comment
  hasSemanticIndentation false
+
+lineCommentToken #
 
 wikipedia https://en.wikipedia.org/wiki/M4_(computer_language)
  example
@@ -27,11 +31,6 @@ wikipedia https://en.wikipedia.org/wiki/M4_(computer_language)
 githubLanguage M4
  fileExtensions m4
  trendingProjectsCount 0
-
-helloWorldCollection M4
- # Hello World for the m4 macro processor
- Hello
- 
 
 linguistGrammarRepo https://github.com/Alhadis/language-etc
  sampleCount 1
@@ -76,31 +75,27 @@ linguistGrammarRepo https://github.com/Alhadis/language-etc
   </HTML>
   
 
-
-tryItOnline m4
-
-country United States
-fileType text
-
-tiobe M4
-
-hopl 766
-
-quineRelay M4
-
-ubuntuPackage m4
-
-rosettaCode M4
-
-centralPackageRepositoryCount 0
-rijuRepl https://riju.codes/m4
- example
-  errprint(`Hello, world!')
-  
-creators Brian Kernighan and Dennis Ritchie
-lineCommentToken #
+helloWorldCollection M4
+ # Hello World for the m4 macro processor
+ Hello
+ 
 leachim6 M4
  filepath m/M4.m4
  fileExtensions m4
  example
   Hello
+rosettaCode M4
+quineRelay M4
+
+rijuRepl https://riju.codes/m4
+ example
+  errprint(`Hello, world!')
+  
+tryItOnline m4
+
+tiobe M4
+hopl 766
+
+ubuntuPackage m4
+fileType text
+centralPackageRepositoryCount 0

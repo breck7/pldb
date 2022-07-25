@@ -2,6 +2,20 @@ title Not eXactly C
 appeared 2006
 type pl
 
+features
+ hasLineComments true
+  // A comment
+ hasComments true
+  // A comment
+ hasPrintDebugging true
+ hasSemanticIndentation false
+ hasStrings true
+  "Hello world"
+
+lineCommentToken //
+printToken TextOut
+stringToken "
+
 wikipedia https://en.wikipedia.org/wiki/Not_eXactly_C
  example
   task main() //sets a new task. main() is compulsory
@@ -19,18 +33,6 @@ wikipedia https://en.wikipedia.org/wiki/Not_eXactly_C
  dailyPageViews 21
  appeared 2006
 
-fileType text
-centralPackageRepositoryCount 0
-lineCommentToken //
-features
- hasLineComments true
-  // A comment
- hasComments true
-  // A comment
- hasPrintDebugging true
- hasSemanticIndentation false
- hasStrings true
-  "Hello world"
 leachim6 NXC
  filepath n/NXC.nxc
  fileExtensions nxc
@@ -40,5 +42,6 @@ leachim6 NXC
       TextOut(0, LCD_LINE1, "Hello World");
   }
   
-printToken TextOut
-stringToken "
+
+fileType text
+centralPackageRepositoryCount 0

@@ -1,11 +1,20 @@
 title ClojureScript
 appeared 2011
 type pl
+website https://clojurescript.org/
 webRepl https://clojurescript.io/
+cheatSheetUrl http://cljs.info/cheatsheet/
+domainName clojurescript.org
+ registered 2011
+firstAnnouncement http://clojure.com/blog/2011/07/22/introducing-clojurescript.html
+announcementMethod blogPost
 
-subreddit Clojurescript
- memberCount
-  2022 2985
+compilesTo javascript
+
+features
+ hasPrintDebugging true
+
+printToken println
 
 githubRepo https://github.com/clojure/clojurescript
  stars 8887
@@ -17,14 +26,10 @@ githubRepo https://github.com/clojure/clojurescript
  description Clojure to JS compiler
  issues 2
 
-website https://clojurescript.org/
-firstAnnouncement http://clojure.com/blog/2011/07/22/introducing-clojurescript.html
-fileType text
-compilesTo javascript
-isOpenSource true
-cheatSheetUrl http://cljs.info/cheatsheet/
-announcementMethod blogPost
-centralPackageRepositoryCount 0
+pygmentsHighlighter ClojureScript
+ filename jvm.py
+ fileExtensions cljs
+
 rijuRepl https://riju.codes/clojurescript
  example
   (println "Hello, world!")
@@ -33,16 +38,17 @@ rijuRepl https://riju.codes/clojurescript
  fileExtensions cljs
  website https://clojurescript.org/
  githubRepo https://github.com/clojure/clojurescript
+
+subreddit Clojurescript
+ memberCount
+  2022 2985
+
 goodreads
  title|year|author|goodreadsId|rating|ratings|reviews
  Clojurescript: Up and Running: Functional Programming for the Web|2015|Stuart Sierra|46459747|4.00|1|0
  Reactive with Clojurescript Recipes: Functional Programming for the Web||Nicolas Modrzyk|57019123|0.0|0|0
  Reactive with ClojureScript Recipes: Functional Programming for the Web||Nicolas Modrzyk|59492133|0.0|0|0
-pygmentsHighlighter ClojureScript
- filename jvm.py
- fileExtensions cljs
-printToken println
-features
- hasPrintDebugging true
-domainName clojurescript.org
- registered 2011
+
+fileType text
+isOpenSource true
+centralPackageRepositoryCount 0

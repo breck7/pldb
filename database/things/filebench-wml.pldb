@@ -1,22 +1,19 @@
 title Filebench WML
 appeared 2011
 type pl
-
+creators Vasily Tarasov
 description Filebench is a file system and storage benchmark that can generate a large variety of workloads. Unlike typical benchmarks it is extremely flexible and allows to specify application's I/O behavior using its extensive Workload Model Language (WML).
+website https://github.com/filebench/filebench/wiki
+reference https://github.com/filebench/filebench/wiki/Workload-model-language
 
-githubLanguage Filebench WML
- fileExtensions f
- trendingProjectsCount 0
+features
+ hasLineComments true
+  # A comment
+ hasComments true
+  # A comment
+ hasSemanticIndentation false
 
-githubRepo https://github.com/filebench/filebench
- stars 257
- forks 96
- subscribers 22
- created 2016
- updated 2022
- description File system and storage benchmark that uses a custom language to generate a large variety of workloads.
- issues 68
- firstCommit 2011
+lineCommentToken #
 
 example
  #
@@ -71,16 +68,21 @@ example
  
  echo  "Copyfiles Version 3.0 personality successfully loaded"
  
-website https://github.com/filebench/filebench/wiki
-reference https://github.com/filebench/filebench/wiki/Workload-model-language
+
+githubRepo https://github.com/filebench/filebench
+ stars 257
+ forks 96
+ subscribers 22
+ created 2016
+ updated 2022
+ description File system and storage benchmark that uses a custom language to generate a large variety of workloads.
+ issues 68
+ firstCommit 2011
+
+githubLanguage Filebench WML
+ fileExtensions f
+ trendingProjectsCount 0
+
 fileType text
 isOpenSource true
 centralPackageRepositoryCount 0
-creators Vasily Tarasov
-lineCommentToken #
-features
- hasLineComments true
-  # A comment
- hasComments true
-  # A comment
- hasSemanticIndentation false

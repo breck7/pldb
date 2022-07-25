@@ -1,6 +1,16 @@
 title gravity
 appeared 2017
 type pl
+website http://gravity-lang.org/
+domainName gravity-lang.org
+
+features
+ hasPrintDebugging true
+ hasStrings true
+  "Hello world"
+
+printToken System.print
+stringToken "
 
 githubRepo https://github.com/marcobambini/gravity
  stars 4033
@@ -12,11 +22,6 @@ githubRepo https://github.com/marcobambini/gravity
  description Gravity Programming Language
  issues 26
 
-website http://gravity-lang.org/
-fileType text
-wordRank 7797
-isOpenSource true
-centralPackageRepositoryCount 0
 leachim6 Gravity
  filepath g/Gravity.gravity
  fileExtensions gravity
@@ -25,10 +30,8 @@ leachim6 Gravity
     System.print("Hello World");
   }
   
-printToken System.print
-features
- hasPrintDebugging true
- hasStrings true
-  "Hello world"
-domainName gravity-lang.org
-stringToken "
+
+fileType text
+wordRank 7797
+isOpenSource true
+centralPackageRepositoryCount 0

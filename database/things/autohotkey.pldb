@@ -1,6 +1,9 @@
 title AutoHotkey
 appeared 2003
 type pl
+website https://autohotkey.com
+domainName autohotkey.com
+ registered 2003
 
 features
  hasComments true
@@ -9,6 +12,9 @@ features
   ; A comment
  hasSemanticIndentation false
  hasAssignment true
+
+lineCommentToken ;
+assignmentToken :=
 
 wikipedia https://en.wikipedia.org/wiki/AutoHotkey
  example
@@ -42,12 +48,9 @@ githubLanguage AutoHotkey
  fileExtensions ahk ahkl
  trendingProjectsCount 0
 
-helloWorldCollection AutoHotkey
- ; Hello World in AutoHotkey
- 
- Msgbox Hello, World!
- 
-
+pygmentsHighlighter autohotkey
+ filename automation.py
+ fileExtensions ahk ahkl
 linguistGrammarRepo https://github.com/ahkscript/SublimeAutoHotkey
  firstCommit 2013
  lastCommit 2018
@@ -58,18 +61,23 @@ linguistGrammarRepo https://github.com/ahkscript/SublimeAutoHotkey
   MsgBox, Hello`, World!
   
 
-website https://autohotkey.com
-fileType text
-isOpenSource true
-
 projectEuler AutoHotkey
  memberCount
   2019 23
   2022 28
-
+helloWorldCollection AutoHotkey
+ ; Hello World in AutoHotkey
+ 
+ Msgbox Hello, World!
+ 
+leachim6 AutoHotKey
+ filepath a/AutoHotKey.ahk
+ fileExtensions ahk
+ example
+  MsgBox, Hello World
+  
 rosettaCode AutoHotkey
 
-centralPackageRepositoryCount 0
 goodreads
  title|year|author|goodreadsId|rating|ratings|reviews
  AutoHotkey Hotkeys: Tips, Tricks, Techniques, and Best Practices for Automating Your Windows Computers (AutoHotkey Tips and Tricks Book 7)||Jack Dunning|56446542|0.0|0|0
@@ -79,16 +87,7 @@ goodreads
  Articles on GUI Automation, Including: AppleScript, Test Automation, Metacard, Automator (Software), Autohotkey, Autokey, HP Winrunner, Silktest, Autoit, Guidancer, Xvt, Visual Test, Selenium (Software), Pigui, List of Pigui Packages|2011|Hephaestus Books|17503124|0.0|0|0
  A Beginner's Guide to AutoHotkey, Absolutely the Best Free Windows Utility Software Ever!: Create Power Tools for Windows XP, Windows Vista, Windows 7 ... 8 (Second Edition) (Windows Tips and Tricks)|2012|Jack Dunning|26886515|3.62|8|0
  A Beginner's Guide to AutoHotkey, Absolutely the Best Free Windows Utility Software Ever! (Third Edition) Create Power Tools for Windows XP, Windows Vista, Windows 7, Windows 8 and Windows 10||Jack Dunning|56218249|0.0|0|0
-lineCommentToken ;
-pygmentsHighlighter autohotkey
- filename automation.py
- fileExtensions ahk ahkl
-leachim6 AutoHotKey
- filepath a/AutoHotKey.ahk
- fileExtensions ahk
- example
-  MsgBox, Hello World
-  
-domainName autohotkey.com
- registered 2003
-assignmentToken :=
+
+fileType text
+isOpenSource true
+centralPackageRepositoryCount 0

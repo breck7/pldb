@@ -2,6 +2,30 @@ title Ioke
 appeared 2008
 type pl
 creators Ola Bini
+website http://ioke.org
+fileExtensions ik
+domainName ioke.org
+ registered 2008
+
+runsOnVm jvm
+
+features
+ hasPrintDebugging true
+ hasStrings true
+  "Hello world"
+
+printToken println
+stringToken "
+
+githubRepo https://github.com/olabini/ioke
+ stars 161
+ forks 24
+ subscribers 13
+ created 2010
+ updated 2022
+ firstCommit 2008
+ description ioke is a new language for the JVM, based on Io and other languages.
+ issues 1
 
 wikipedia https://en.wikipedia.org/wiki/Ioke_(programming_language)
  related io smalltalk lisp ruby jruby
@@ -18,16 +42,9 @@ githubLanguage Ioke
  fileExtensions ik
  trendingProjectsCount 0
 
-githubRepo https://github.com/olabini/ioke
- stars 161
- forks 24
- subscribers 13
- created 2010
- updated 2022
- firstCommit 2008
- description ioke is a new language for the JVM, based on Io and other languages.
- issues 1
-
+pygmentsHighlighter Ioke
+ filename jvm.py
+ fileExtensions ik
 linguistGrammarRepo https://github.com/vic/ioke-outdated
  firstCommit 2008
  lastCommit 2009
@@ -40,35 +57,21 @@ linguistGrammarRepo https://github.com/vic/ioke-outdated
   "Hello world." println
   
 
-website http://ioke.org
-fileExtensions ik
-fileType text
-runsOnVm jvm
-isOpenSource true
-
-tiobe Ioke
-
-rosettaCode Ioke
-
-centralPackageRepositoryCount 0
-rijuRepl https://riju.codes/ioke
- example
-  "Hello, world!" println
-  
-pygmentsHighlighter Ioke
- filename jvm.py
- fileExtensions ik
 leachim6 Ioke
  filepath i/Ioke.ik
  fileExtensions ik
  example
   "Hello World" println
   
-printToken println
-features
- hasPrintDebugging true
- hasStrings true
-  "Hello world"
-domainName ioke.org
- registered 2008
-stringToken "
+rosettaCode Ioke
+
+rijuRepl https://riju.codes/ioke
+ example
+  "Hello, world!" println
+  
+
+tiobe Ioke
+
+fileType text
+isOpenSource true
+centralPackageRepositoryCount 0

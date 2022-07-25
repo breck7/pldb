@@ -1,11 +1,30 @@
 title CIR
-standsFor Clang IR
-type ir
-related llvmir
 appeared 2020
+type ir
 description Clang IR (CIR) is a new IR for Clang.
-
 website https://facebookincubator.github.io/clangir/
+reference https://news.ycombinator.com/item?id=31904624
+reference https://discourse.llvm.org/t/rfc-an-mlir-based-clang-ir-cir/63319
+standsFor Clang IR
+
+related llvmir
+
+features
+ hasLineComments true
+  // A comment
+ hasComments true
+  // A comment
+ hasSemanticIndentation false
+
+lineCommentToken //
+
+example
+ // Read from local variable, address in %0.
+ %1 = cir.load %0 : !cir.ptr<i32>, i32
+ 
+ // Load address from memory at address %0. %3 is used by at least one
+ // operation that dereferences a pointer.
+ %3 = cir.load deref %0 : cir.ptr <!cir.ptr<i32>>
 
 githubRepo https://github.com/facebookincubator/clangir
  firstCommit 2001
@@ -16,21 +35,3 @@ githubRepo https://github.com/facebookincubator/clangir
  updated 2022
  description A new high-level IR for clang.
  issues 0
-
-reference https://news.ycombinator.com/item?id=31904624
-reference https://discourse.llvm.org/t/rfc-an-mlir-based-clang-ir-cir/63319
-lineCommentToken //
-
-example
- // Read from local variable, address in %0.
- %1 = cir.load %0 : !cir.ptr<i32>, i32
- 
- // Load address from memory at address %0. %3 is used by at least one
- // operation that dereferences a pointer.
- %3 = cir.load deref %0 : cir.ptr <!cir.ptr<i32>>
-features
- hasLineComments true
-  // A comment
- hasComments true
-  // A comment
- hasSemanticIndentation false

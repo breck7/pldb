@@ -3,6 +3,8 @@ appeared 2016
 type pl
 creators Erik Svedäng
 
+writtenIn haskell
+
 features
  isLisp true
  hasGarbageCollection false
@@ -15,6 +17,10 @@ features
  hasSemanticIndentation false
  hasStrings true
   "Hello world"
+
+lineCommentToken ;
+printToken println
+stringToken "
 
 githubRepo https://github.com/carp-lang/carp
  stars 4571
@@ -33,8 +39,4 @@ helloWorldCollection carp
 
 fileType text
 isOpenSource true
-writtenIn haskell
 centralPackageRepositoryCount 0
-lineCommentToken ;
-printToken println
-stringToken "

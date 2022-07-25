@@ -1,6 +1,13 @@
 title C++
 appeared 1985
 type pl
+creators Bjarne Stroustrup
+website http://isocpp.org/
+country United States
+domainName isocpp.org
+ registered 2012
+
+visualParadigm false
 
 features
  hasRegularExpressionsSyntaxSugar false
@@ -215,6 +222,13 @@ features
   */
  isCaseSensitive true
 
+lineCommentToken //
+multiLineCommentTokens /* */
+printToken std::cout
+assignmentToken =
+stringToken "
+keywords #define #defined #elif #else #endif #error #if #ifdef #ifndef #include #line #pragma #undef alignas alignof and and_eq asm atomic_cancel atomic_commit atomic_noexcept auto bitand bitor bool break case catch char char16_t char32_t class compl concept const constexpr const_cast continue decltype default delete do double dynamic_cast else enum explicit export extern false final float for friend goto if inline int import long module mutable namespace new noexcept not not_eq nullptr operator or or_eq override private protected public register reinterpret_cast requires return short signed sizeof static static_assert static_cast struct switch synchronized template this thread_local throw transaction_safe transaction_safe_dynamic true try typedef typeid typename union unsigned using virtual void volatile wchar_t while xor xor_eq
+
 wikipedia https://en.wikipedia.org/wiki/C++
  example
   1 #include <iostream>
@@ -279,18 +293,11 @@ githubLanguage C++
   microsoft onnxruntime https://github.com/microsoft.png https://github.com/microsoft/onnxruntime C++ #f34b7d 1113 247 135 "ONNX Runtime: cross-platform, high performance scoring engine for ML models"
  trendingProjectsCount 26
 
-helloWorldCollection C++
- // Hello World in C++ (pre-ISO)
- 
- #include <iostream.h>
- 
- main()
- {
-     cout << "Hello World!" << endl;
-     return 0;
- }
- 
-
+antlr https://github.com/antlr/grammars-v4/tree/master/cpp
+monaco cpp
+pygmentsHighlighter C++
+ filename c_cpp.py
+ fileExtensions cpp hpp c++ h++ cc hh cxx hxx C H cp CPP tpp
 linguistGrammarRepo https://github.com/textmate/c.tmbundle
  sampleCount 49
  example
@@ -302,59 +309,34 @@ linguistGrammarRepo https://github.com/textmate/c.tmbundle
   }
   
 
-website http://isocpp.org/
-
-replit cpp
-
-twitter isocpp
-
-country United States
-fileType text
-
-tiobe C++
- currentRank 3
-
-meetup c
- memberCount 69338
- groupCount 204
-
-linkedInSkill c++
- 2018 3886123
-
 projectEuler C/C++
  memberCount
   2022 46028
   2019 41087
-
-hopl 1202
-
-subreddit cpp
- memberCount
-  2017 56189
-  2022 220359
-
+helloWorldCollection C++
+ // Hello World in C++ (pre-ISO)
+ 
+ #include <iostream.h>
+ 
+ main()
+ {
+     cout << "Hello World!" << endl;
+     return 0;
+ }
+ 
+leachim6 C++
+ filepath c/C++.cpp
+ fileExtensions cpp
+ example
+  #include <iostream>
+  
+  int main()
+  {
+     std::cout << "Hello World" << std::endl;
+  }
+  
 quineRelay C++
 
-ubuntuPackage g++
-
-antlr https://github.com/antlr/grammars-v4/tree/master/cpp
-
-conference https://cppcon.org CppCon
-indeedJobs c++ engineer
- 2017 22237
-lineCommentToken //
-visualParadigm false
-jupyterKernel https://github.com/root-mirror/cling
-jupyterKernel https://github.com/QuantStack/xeus-cling
-keywords #define #defined #elif #else #endif #error #if #ifdef #ifndef #include #line #pragma #undef alignas alignof and and_eq asm atomic_cancel atomic_commit atomic_noexcept auto bitand bitor bool break case catch char char16_t char32_t class compl concept const constexpr const_cast continue decltype default delete do double dynamic_cast else enum explicit export extern false final float for friend goto if inline int import long module mutable namespace new noexcept not not_eq nullptr operator or or_eq override private protected public register reinterpret_cast requires return short signed sizeof static static_assert static_cast struct switch synchronized template this thread_local throw transaction_safe transaction_safe_dynamic true try typedef typeid typename union unsigned using virtual void volatile wchar_t while xor xor_eq
-stackOverflowSurvey
- 2021
-  users 20057
-  medianSalary 54049
-  fans 15249
-  percentageUsing 0.24
-centralPackageRepositoryCount 0
-gdbSupport true
 rijuRepl https://riju.codes/cpp
  example
   #include <iostream>
@@ -367,26 +349,37 @@ rijuRepl https://riju.codes/cpp
  description General-purpose programming language created by Bjarne Stroustrup as an extension of the C programming language
  fileExtensions C cc cpp cxx c++ h hh hpp hxx h++
  githubRepo https://github.com/llvm/llvm-project
-creators Bjarne Stroustrup
+replit cpp
+
+indeedJobs c++ engineer
+ 2017 22237
+linkedInSkill c++
+ 2018 3886123
+stackOverflowSurvey
+ 2021
+  users 20057
+  medianSalary 54049
+  fans 15249
+  percentageUsing 0.24
+
+subreddit cpp
+ memberCount
+  2017 56189
+  2022 220359
+meetup c
+ memberCount 69338
+ groupCount 204
+conference https://cppcon.org CppCon
+
+tiobe C++
+ currentRank 3
+hopl 1202
+
+twitter isocpp
+ubuntuPackage g++
+gdbSupport true
+jupyterKernel https://github.com/root-mirror/cling
+jupyterKernel https://github.com/QuantStack/xeus-cling
+fileType text
 githubCopilotOptimized
-pygmentsHighlighter C++
- filename c_cpp.py
- fileExtensions cpp hpp c++ h++ cc hh cxx hxx C H cp CPP tpp
-leachim6 C++
- filepath c/C++.cpp
- fileExtensions cpp
- example
-  #include <iostream>
-  
-  int main()
-  {
-     std::cout << "Hello World" << std::endl;
-  }
-  
-printToken std::cout
-multiLineCommentTokens /* */
-domainName isocpp.org
- registered 2012
-assignmentToken =
-monaco cpp
-stringToken "
+centralPackageRepositoryCount 0

@@ -1,8 +1,17 @@
 title RATFOR
 appeared 1976
 type pl
-
 description Ratfor (short for Rational Fortran) is a programming language implemented as a preprocessor for Fortran 66. It provided modern control structures, unavailable in Fortran 66, to replace GOTOs and statement numbers.
+website http://sepwww.stanford.edu/doku.php?id=sep:software:ratfor
+country United States
+
+features
+ hasPrintDebugging true
+ hasStrings true
+  'Hello world'
+
+printToken print
+stringToken '
 
 wikipedia https://en.wikipedia.org/wiki/Ratfor
  example
@@ -20,27 +29,20 @@ wikipedia https://en.wikipedia.org/wiki/Ratfor
  dailyPageViews 21
  appeared 1976
 
-website http://sepwww.stanford.edu/doku.php?id=sep:software:ratfor
-country United States
-fileType text
-
-hopl 692
-
-centralPackageRepositoryCount 0
-rijuRepl https://riju.codes/ratfor
- example
-  PRINT *, 'Hello, world!'
-  END
-  
 leachim6 RatFor
  filepath r/RatFor.ratfor
  fileExtensions ratfor
  example
   print *, 'Hello World'
   end
-printToken print
-features
- hasPrintDebugging true
- hasStrings true
-  'Hello world'
-stringToken '
+
+rijuRepl https://riju.codes/ratfor
+ example
+  PRINT *, 'Hello, world!'
+  END
+  
+
+hopl 692
+
+fileType text
+centralPackageRepositoryCount 0

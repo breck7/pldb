@@ -2,6 +2,14 @@ title ALGOL W
 appeared 1966
 type pl
 
+features
+ hasPrintDebugging true
+ hasStrings true
+  "Hello world"
+
+printToken write
+stringToken "
+
 wikipedia https://en.wikipedia.org/wiki/ALGOL_W
  example
   RECORD PERSON (
@@ -36,14 +44,6 @@ wikipedia https://en.wikipedia.org/wiki/ALGOL_W
  dailyPageViews 29
  appeared 1966
 
-fileType text
-
-hopl 243
-
-centralPackageRepositoryCount 0
-goodreads
- title|year|author|goodreadsId|rating|ratings|reviews
- Structured Programming And Problem Solving With Algol W||Richard B. Kieburtz|4755689|0.0|0|0
 leachim6 ALGOL W
  filepath a/ALGOL W.algol
  example
@@ -51,9 +51,12 @@ leachim6 ALGOL W
       write( "Hello World" )
   end.
   
-printToken write
-features
- hasPrintDebugging true
- hasStrings true
-  "Hello world"
-stringToken "
+
+goodreads
+ title|year|author|goodreadsId|rating|ratings|reviews
+ Structured Programming And Problem Solving With Algol W||Richard B. Kieburtz|4755689|0.0|0|0
+
+hopl 243
+
+fileType text
+centralPackageRepositoryCount 0

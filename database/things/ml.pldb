@@ -2,12 +2,16 @@ title ML
 appeared 1973
 type pl
 creators Robin Milner
+standsFor Meta Language
+country United Kingdom
 
 features
  hasGarbageCollection true
  hasTypeInference true
  hasLineComments false
  hasAssignment true
+
+assignmentToken :=
 
 wikipedia https://en.wikipedia.org/wiki/ML_(programming_language)
  example
@@ -27,20 +31,15 @@ wikipedia https://en.wikipedia.org/wiki/ML_(programming_language)
  revisionCount 449
  appeared 1973
 
-standsFor Meta Language
-country United Kingdom
-fileType text
-wordRank 3710
-
-tiobe ML
-
 projectEuler ML
  memberCount
   2019 435
   2022 427
+rosettaCode ML
 
+tiobe ML
 hopl 620
 
-rosettaCode ML
+fileType text
+wordRank 3710
 centralPackageRepositoryCount 0
-assignmentToken :=

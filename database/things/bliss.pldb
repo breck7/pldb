@@ -1,6 +1,17 @@
 title BLISS
 appeared 1969
 type pl
+creators William Wulf
+reference https://semanticscholar.org/paper/4430dfe254804b19bb6a4d9fc10d5bed2932b7cc
+
+features
+ hasLineComments true
+  ! A comment
+ hasComments true
+  ! A comment
+ hasSemanticIndentation false
+
+lineCommentToken !
 
 wikipedia https://en.wikipedia.org/wiki/BLISS
  example
@@ -40,16 +51,6 @@ wikipedia https://en.wikipedia.org/wiki/BLISS
  created 2003
  appeared 1970
 
-reference https://semanticscholar.org/paper/4430dfe254804b19bb6a4d9fc10d5bed2932b7cc
-
 hopl 375
 
 centralPackageRepositoryCount 0
-creators William Wulf
-lineCommentToken !
-features
- hasLineComments true
-  ! A comment
- hasComments true
-  ! A comment
- hasSemanticIndentation false

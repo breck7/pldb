@@ -1,15 +1,10 @@
 title PyTorch
 appeared 2016
 type library
-
-wikipedia https://en.wikipedia.org/wiki/PyTorch
- related python cuda linux numpy
- summary PyTorch is an open-source machine learning library for Python, based on Torch, used for applications such as natural language processing. It is primarily developed by Facebook's artificial-intelligence research group, and Uber's "Pyro" software for probabilistic programming is built on it.PyTorch provides two high-level features: Tensor computation (like NumPy) with strong GPU acceleration Deep Neural Networks built on a tape-based autodiff system
- created 2017
- backlinksCount 41
- pageId 54022970
- dailyPageViews 594
- appeared 2016
+creators Ronan Collobert
+website http://pytorch.org/
+domainName pytorch.org
+ registered 2016
 
 githubRepo https://github.com/pytorch/pytorch
  firstCommit 2012
@@ -21,12 +16,15 @@ githubRepo https://github.com/pytorch/pytorch
  description Tensors and Dynamic neural networks in Python with strong GPU acceleration
  issues 9789
 
-website http://pytorch.org/
+wikipedia https://en.wikipedia.org/wiki/PyTorch
+ related python cuda linux numpy
+ summary PyTorch is an open-source machine learning library for Python, based on Torch, used for applications such as natural language processing. It is primarily developed by Facebook's artificial-intelligence research group, and Uber's "Pyro" software for probabilistic programming is built on it.PyTorch provides two high-level features: Tensor computation (like NumPy) with strong GPU acceleration Deep Neural Networks built on a tape-based autodiff system
+ created 2017
+ backlinksCount 41
+ pageId 54022970
+ dailyPageViews 594
+ appeared 2016
 
 twitter pytorch
-
 isOpenSource true
 centralPackageRepositoryCount 0
-creators Ronan Collobert
-domainName pytorch.org
- registered 2016

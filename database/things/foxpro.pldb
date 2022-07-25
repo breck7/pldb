@@ -1,6 +1,13 @@
 title FoxPRO
 appeared 1992
 type pl
+country United States
+
+features
+ hasStrings true
+  "Hello world"
+
+stringToken "
 
 wikipedia https://en.wikipedia.org/wiki/FoxPro
  related visual-foxpro dbase linux freebsd
@@ -12,12 +19,17 @@ wikipedia https://en.wikipedia.org/wiki/FoxPro
  dailyPageViews 244
  appeared 1992
 
-country United States
-fileType text
+pygmentsHighlighter FoxPro
+ filename foxpro.py
+ fileExtensions PRG prg
 
-hopl 2056
+leachim6 FoxPro
+ filepath f/FoxPro.prg
+ fileExtensions prg
+ example
+  ? "Hello World"
+  
 
-centralPackageRepositoryCount 0
 goodreads
  title|year|author|goodreadsId|rating|ratings|reviews
  Visual FoxPro Programming Basics|1995|Whil Hentzen|3539454|5.00|4|1
@@ -25,16 +37,8 @@ goodreads
  Programmer's Guide to FoxPro 2.6|1994|Howard Dickler|7215033|5.00|1|0
  FoxPro 2.6 for Windows for Dummies|1994|John Kaufeld|2391631|0.0|0|0
  Visual Foxpro 5 for Dummies|1997|Jim Keogh|1377516|0.0|0|0
-pygmentsHighlighter FoxPro
- filename foxpro.py
- fileExtensions PRG prg
-leachim6 FoxPro
- filepath f/FoxPro.prg
- fileExtensions prg
- example
-  ? "Hello World"
-  
-stringToken "
-features
- hasStrings true
-  "Hello world"
+
+hopl 2056
+
+fileType text
+centralPackageRepositoryCount 0

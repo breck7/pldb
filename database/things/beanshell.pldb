@@ -1,6 +1,17 @@
 title BeanShell
 appeared 1999
 type pl
+website http://www.beanshell.org/
+domainName beanshell.org
+ registered 1999
+
+features
+ hasPrintDebugging true
+ hasStrings true
+  "Hello world"
+
+printToken print
+stringToken "
 
 wikipedia https://en.wikipedia.org/wiki/BeanShell
  related java jvm javascript perl
@@ -12,31 +23,23 @@ wikipedia https://en.wikipedia.org/wiki/BeanShell
  dailyPageViews 44
  appeared 1999
 
-website http://www.beanshell.org/
-
-tryItOnline beanshell
-
-fileType text
-isOpenSource true
-centralPackageRepositoryCount 0
-rijuRepl https://riju.codes/beanshell
- example
-  print("Hello, world!");
-  
-goodreads
- title|year|author|goodreadsId|rating|ratings|reviews
- Java Programming Language Family: Godiva, Scala, Processing, Aspectj, Groovy, Javafx Script, Einstein, J Sharp, Judoscript, Jasmin, Beanshell|2011|Books LLC|15219374|0.0|0|0
 leachim6 Beanshell
  filepath b/Beanshell.bsh
  fileExtensions bsh
  example
   print ("Hello World");
   
-printToken print
-features
- hasPrintDebugging true
- hasStrings true
-  "Hello world"
-domainName beanshell.org
- registered 1999
-stringToken "
+
+rijuRepl https://riju.codes/beanshell
+ example
+  print("Hello, world!");
+  
+tryItOnline beanshell
+
+goodreads
+ title|year|author|goodreadsId|rating|ratings|reviews
+ Java Programming Language Family: Godiva, Scala, Processing, Aspectj, Groovy, Javafx Script, Einstein, J Sharp, Judoscript, Jasmin, Beanshell|2011|Books LLC|15219374|0.0|0|0
+
+fileType text
+isOpenSource true
+centralPackageRepositoryCount 0

@@ -1,16 +1,16 @@
 title JSON Lines
 appeared 2013
 type dataNotation
-aka newline-delimited JSON
-
+creators Ian Ward
 description JSON Lines is a convenient format for storing structured data that may be processed one record at a time. It works well with unix-style text processing tools and shell pipelines. It's a great format for log files. It's also a flexible format for passing messages between cooperating processes.
-
-related json
-
 website http://jsonlines.org/
 reference https://en.wikipedia.org/wiki/JSON_streaming
+aka newline-delimited JSON
 fileExtensions ldj jsonl
-centralPackageRepositoryCount 0
+domainName jsonlines.org
+ registered 2013
+
+related json
 
 example
  ["Name", "Session", "Score", "Completed"]
@@ -28,6 +28,5 @@ githubRepo https://github.com/wardi/jsonlines
  updated 2022
  description Documentation for the JSON Lines text file format
  issues 24
-creators Ian Ward
-domainName jsonlines.org
- registered 2013
+
+centralPackageRepositoryCount 0

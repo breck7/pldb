@@ -1,7 +1,9 @@
 title Mscgen
 type textMarkup
-related dot
 website http://www.mcternan.me.uk/mscgen/
+
+related dot
+
 example
  # MSC for some fictional process
  msc {
@@ -24,6 +26,7 @@ example
    b->b [ label = "stalled(...)"];
    a<-b [ label = "ab() = FALSE"];
  }
+
 pygmentsHighlighter Mscgen
  filename dsls.py
  fileExtensions msc

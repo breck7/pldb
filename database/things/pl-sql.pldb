@@ -1,6 +1,23 @@
 title PL/SQL
 appeared 1991
 type pl
+aka PLSQL
+country United States
+corporateDevelopers Oracle
+
+features
+ hasLineComments true
+  -- A comment
+ hasComments true
+  -- A comment
+ hasPrintDebugging true
+ hasSemanticIndentation false
+ hasStrings true
+  'Hello world'
+
+lineCommentToken --
+printToken dbms_output.put_line
+stringToken '
 
 wikipedia https://en.wikipedia.org/wiki/PL/SQL
  example
@@ -26,18 +43,7 @@ githubLanguage PLSQL
  fileExtensions pls bdy ddl fnc pck pkb pks plb plsql prc spc sql tpb tps trg vw
  trendingProjectsCount 0
 
-helloWorldCollection PL%2FSQL
- -- Hello World in Oracle PL/SQL (sqlplus)
- 
- set serveroutput on
- 
- begin
-   dbms_output.enable(10000);
-   dbms_output.put_line('Hello World');
- end;
- /
- 
-
+antlr https://github.com/antlr/grammars-v4/tree/master/plsql
 linguistGrammarRepo https://github.com/textmate/sql.tmbundle
  sampleCount 8
  example
@@ -55,42 +61,17 @@ linguistGrammarRepo https://github.com/textmate/sql.tmbundle
   /
   
 
-aka PLSQL
-country United States
-fileType text
-
-tiobe PL/SQL
- currentRank 18
-
-meetup oracle
- memberCount 78458
- groupCount 276
-
-hopl 7323
-
-antlr https://github.com/antlr/grammars-v4/tree/master/plsql
-
-corporateDevelopers Oracle
-indeedJobs pl/sql developer
- 2017 2972
-centralPackageRepositoryCount 0
-goodreads
- title|year|author|goodreadsId|rating|ratings|reviews
- Advanced Plsql Programming: The Definitive Reference||Boobal Ganesan|58532308|0.0|0|0
- Oracle SQL: Sql-Plsql Concepts, Queries & Tips for All Database Developers & Programmers||Niraj Gupta|55220774|0.0|0|1
- 100 Plus SQL and PLSQL Tips: Useful for Beginner's and Experienced Database Programmers and Developers|2014|Niraj Gupta|45930441|4.00|5|0
- Data-Centric Programming Languages: Mumps, Microsoft Access, Plsql, Transact-SQL, IBM RPG, Visual FoxPro, Jade, K||Source Wikipedia|59365714|0.0|0|0
- Oracle: Oracle Adf, Sun Microsystems, Plsql, Oracle Rac, Larry Ellison, Jdeveloper, BMW Oracle Racing, SQL Developer||Quelle Wikipedia|54064120|0.0|0|0
-lineCommentToken --
-features
- hasLineComments true
-  -- A comment
- hasComments true
-  -- A comment
- hasPrintDebugging true
- hasSemanticIndentation false
- hasStrings true
-  'Hello world'
+helloWorldCollection PL%2FSQL
+ -- Hello World in Oracle PL/SQL (sqlplus)
+ 
+ set serveroutput on
+ 
+ begin
+   dbms_output.enable(10000);
+   dbms_output.put_line('Hello World');
+ end;
+ /
+ 
 leachim6 PL∕SQL
  filepath p/PL∕SQL.pls
  fileExtensions pls
@@ -100,5 +81,25 @@ leachim6 PL∕SQL
   END;
   /
   
-printToken dbms_output.put_line
-stringToken '
+
+indeedJobs pl/sql developer
+ 2017 2972
+
+meetup oracle
+ memberCount 78458
+ groupCount 276
+
+goodreads
+ title|year|author|goodreadsId|rating|ratings|reviews
+ Advanced Plsql Programming: The Definitive Reference||Boobal Ganesan|58532308|0.0|0|0
+ Oracle SQL: Sql-Plsql Concepts, Queries & Tips for All Database Developers & Programmers||Niraj Gupta|55220774|0.0|0|1
+ 100 Plus SQL and PLSQL Tips: Useful for Beginner's and Experienced Database Programmers and Developers|2014|Niraj Gupta|45930441|4.00|5|0
+ Data-Centric Programming Languages: Mumps, Microsoft Access, Plsql, Transact-SQL, IBM RPG, Visual FoxPro, Jade, K||Source Wikipedia|59365714|0.0|0|0
+ Oracle: Oracle Adf, Sun Microsystems, Plsql, Oracle Rac, Larry Ellison, Jdeveloper, BMW Oracle Racing, SQL Developer||Quelle Wikipedia|54064120|0.0|0|0
+
+tiobe PL/SQL
+ currentRank 18
+hopl 7323
+
+fileType text
+centralPackageRepositoryCount 0

@@ -6,8 +6,10 @@ description Implemention of O-Expressions idea in Racket.
 website http://breuleux.net/blog/liso.html
 reference http://breuleux.net/blog/oexprs.html
 aka o-expressions
-writtenIn racket
+
 compilesTo s-expressions
+writtenIn racket
+
 example
  @varsrec
        odd?[n] =

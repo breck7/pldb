@@ -1,6 +1,9 @@
 title Fancy
 appeared 2010
 type pl
+website http://www.fancy-lang.org/
+domainName fancy-lang.org
+ registered 2010
 
 features
  hasComments true
@@ -9,11 +12,8 @@ features
  hasStrings true
   "Hello world"
 
-wikipedia https://en.wikipedia.org/wiki/Fancy_(programming_language)
-
-githubLanguage Fancy
- fileExtensions fy fancypack
- trendingProjectsCount 0
+printToken println
+stringToken "
 
 githubRepo https://github.com/bakkdoor/fancy
  firstCommit 2010
@@ -25,30 +25,30 @@ githubRepo https://github.com/bakkdoor/fancy
  description Fancy is a dynamic, object-oriented programming language inspired by Smalltalk, Ruby, Io and Erlang that runs on the Rubinius VM.
  issues 5
 
+wikipedia https://en.wikipedia.org/wiki/Fancy_(programming_language)
+
+githubLanguage Fancy
+ fileExtensions fy fancypack
+ trendingProjectsCount 0
+
+pygmentsHighlighter Fancy
+ filename ruby.py
+ fileExtensions fy fancypack
 linguistGrammarRepo https://github.com/fancy-lang/fancy-tmbundle
  firstCommit 2010
  lastCommit 2017
  committerCount 6
  commitCount 37
 
-website http://www.fancy-lang.org/
-fileType text
-wordRank 6823
-isOpenSource true
-
-rosettaCode Fancy
-
-centralPackageRepositoryCount 0
-pygmentsHighlighter Fancy
- filename ruby.py
- fileExtensions fy fancypack
 leachim6 Fancy
  filepath f/Fancy.fy
  fileExtensions fy
  example
   "Hello World" println 
   
-printToken println
-domainName fancy-lang.org
- registered 2010
-stringToken "
+rosettaCode Fancy
+
+fileType text
+wordRank 6823
+isOpenSource true
+centralPackageRepositoryCount 0

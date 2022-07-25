@@ -2,6 +2,16 @@ title Bla
 appeared 1994
 type pl
 creators Wouter Van Oortmerssen
+website http://strlen.com/bla-language/
+
+features
+ hasLineComments true
+  -- A comment
+ hasComments true
+  -- A comment
+ hasSemanticIndentation false
+
+lineCommentToken --
 
 example
  map(f,[])    = []
@@ -17,12 +27,3 @@ example
    push(x:T) do d:=[x|d]
    pop():T = d | []    -> nil   -- raise stack_empty
                | [h|t] -> h do d:=t
-
-website http://strlen.com/bla-language/
-lineCommentToken --
-features
- hasLineComments true
-  -- A comment
- hasComments true
-  -- A comment
- hasSemanticIndentation false

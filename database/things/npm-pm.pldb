@@ -1,16 +1,10 @@
 title npm
 appeared 2010
 type packageManager
-
-wikipedia https://en.wikipedia.org/wiki/Npm_(software)
- related javascript php perl json
- summary npm is a package manager for the JavaScript programming language. It is the default package manager for the JavaScript runtime environment Node.js. It consists of a command line client, also called npm, and an online database of public and paid-for private packages, called the npm registry. The registry is accessed via the client, and the available packages can be browsed and searched via the npm website. The package manager and the registry are managed by npm, Inc.
- pageId 32102343
- created 2011
- backlinksCount 158
- revisionCount 231
- dailyPageViews 492
- appeared 2010
+creators Isaac Z. Schlueter
+website http://npmjs.org
+domainName npmjs.org
+ registered 2010
 
 githubRepo https://github.com/npm/npm
  firstCommit 2009
@@ -22,16 +16,21 @@ githubRepo https://github.com/npm/npm
  description This repository is moving to: https://github.com/npm/cli
  issues 2167
 
-website http://npmjs.org
+wikipedia https://en.wikipedia.org/wiki/Npm_(software)
+ related javascript php perl json
+ summary npm is a package manager for the JavaScript programming language. It is the default package manager for the JavaScript runtime environment Node.js. It consists of a command line client, also called npm, and an online database of public and paid-for private packages, called the npm registry. The registry is accessed via the client, and the available packages can be browsed and searched via the npm website. The package manager and the registry are managed by npm, Inc.
+ pageId 32102343
+ created 2011
+ backlinksCount 158
+ revisionCount 231
+ dailyPageViews 492
+ appeared 2010
+
+packageCount 1029249
+packageInstallCount 991954002030
+forLanguages javascript nodejs typescript
 
 twitter npmjs
-
 fileType text
 isOpenSource true
-packageCount 1029249
-forLanguages javascript nodejs typescript
-packageInstallCount 991954002030
 centralPackageRepositoryCount 0
-creators Isaac Z. Schlueter
-domainName npmjs.org
- registered 2010

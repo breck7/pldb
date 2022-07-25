@@ -1,6 +1,21 @@
 title Xbasic
 appeared 1988
 type pl
+creators Max Reason
+
+features
+ hasLineComments true
+  ' A comment
+ hasComments true
+  ' A comment
+ hasPrintDebugging true
+ hasSemanticIndentation false
+ hasStrings true
+  "Hello world"
+
+lineCommentToken '
+printToken PRINT
+stringToken "
 
 wikipedia https://en.wikipedia.org/wiki/Xbasic
  example
@@ -27,22 +42,6 @@ wikipedia https://en.wikipedia.org/wiki/Xbasic
  dailyPageViews 1
  appeared 2002
 
-isOpenSource true
-
-rosettaCode XBasic
-
-centralPackageRepositoryCount 0
-creators Max Reason
-lineCommentToken '
-features
- hasLineComments true
-  ' A comment
- hasComments true
-  ' A comment
- hasPrintDebugging true
- hasSemanticIndentation false
- hasStrings true
-  "Hello world"
 leachim6 XBasic
  filepath x/XBasic.x
  fileExtensions x
@@ -56,5 +55,7 @@ leachim6 XBasic
   END FUNCTION
   END PROGRAM
   
-printToken PRINT
-stringToken "
+rosettaCode XBasic
+
+isOpenSource true
+centralPackageRepositoryCount 0

@@ -2,6 +2,8 @@ title Lava
 appeared 2001
 type pl
 
+visualParadigm true
+
 wikipedia https://en.wikipedia.org/wiki/Lava_(programming_language)
  related linux
  summary Lava is an experimental, visual object-oriented, interpreter-based programming language with an associated programming environment (Lava Programming Environment or LavaPE) that uses structure editors instead of text editors. Only comments, constants, and new identifiers may be entered as text. Declarations are represented in LavaPE as tree structures whose subtrees may be collapsed or expanded. The properties of the declared Lava entities can be edited through pop-up dialogs. Although executable code has a traditional text representation in LavaPE, it can be edited only as complete syntactic units, rather than character by character. If you insert a new syntactic construct, it will typically contain "placeholders" (syntactic variables) that can then be replaced by concrete constructs; the latter may in turn contain syntactic variables, etc. LavaPE provides a tool button for every type of syntactic construct, and a button is enabled only if it is syntactically correct to insert the associated construct at the selected place. Further characteristic properties of Lava and LavaPE include the following:  It provides strict syntactic separation of interface (public) and implementation (private) sections of a Lava class. It distinguishes variable "state objects" from constant "value objects"; the latter cannot be modified any longer after creation/initialization. It supports "virtual types": type parameters of classes and packages (families of related classes). As a consequence, undermining of strong type checks by "type casts" is no longer required. It uses recursion and logical quantifiers instead of traditional loop constructs. It uses single assignment; i.e., a value can be assigned to a variable only once within the same branch of a function. It supports refactoring extensively via the LavaPE structure editors. It distinguishes between constituents (sub-objects) and object acquaintances (pointers to independent objects). Copying and deletion of complex objects is largely facilitated in this way. Since release 0.9.0, LavaPE completely prevents inadvertent access to uninitialized variables and null objects already at programming time by complete static initialization checks.Lava is open source software using the GPL license (see also Lava at the Free Software Foundation and at KDE-Apps.org). It currently runs on Microsoft Windows, Linux and Mac OS X platforms.
@@ -13,5 +15,4 @@ wikipedia https://en.wikipedia.org/wiki/Lava_(programming_language)
  appeared 2001
 
 fileType text
-visualParadigm true
 centralPackageRepositoryCount 0

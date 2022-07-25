@@ -1,6 +1,11 @@
 title LabVIEW G
 appeared 1986
 type pl
+website http://www.ni.com/labview
+aka g
+country United States
+
+visualParadigm true
 
 wikipedia https://en.wikipedia.org/wiki/LabVIEW
  related linux g-code unix matlab fortran c drakon simulink
@@ -22,34 +27,27 @@ linguistGrammarRepo https://github.com/textmate/xml.tmbundle
  committerCount 12
  commitCount 97
 
-website http://www.ni.com/labview
-aka g
-country United States
-fileType text
-isOpenSource false
-
-tiobe LabVIEW
- currentRank 45
-
-meetup labview
- memberCount 548
- groupCount 5
-
 projectEuler LabVIEW
  memberCount
   2019 129
   2022 134
+rosettaCode LabVIEW
 
-hopl 2657
+indeedJobs labview engineer
+ 2017 2012
 
 subreddit LabVIEW
  memberCount
   2017 1558
   2022 5124
+meetup labview
+ memberCount 548
+ groupCount 5
 
-rosettaCode LabVIEW
+tiobe LabVIEW
+ currentRank 45
+hopl 2657
 
-indeedJobs labview engineer
- 2017 2012
-visualParadigm true
+fileType text
+isOpenSource false
 centralPackageRepositoryCount 0

@@ -1,8 +1,27 @@
 title ATS
 appeared 2013
 type pl
+creators Hongwei Xi
+website http://www.ats-lang.org/
+standsFor Applied Type System
 aka ATS/Postiats
 aka Postiats
+domainName ats-lang.org
+ registered 2007
+
+features
+ hasLineComments true
+  // A comment
+ hasComments true
+  // A comment
+ hasMultiLineComments true
+  (* A comment
+  *)
+ hasSemanticIndentation false
+
+lineCommentToken //
+multiLineCommentTokens (* *)
+keywords abstype abst0ype absprop absview absvtype absviewtype absvt0ype absviewt0ype as and assume begin classdec datasort datatype dataprop dataview datavtype dataviewtype do end extern extype extvar exception fn fnx fun prfn prfun praxi castfn if then else ifcase in infix infixl infixr prefix postfix implmnt implement primplmnt primplement import let local macdef macrodef nonfix symelim symintr overload of op rec sif scase sortdef sta stacst stadef static staload dynload try tkindef typedef propdef viewdef vtypedef viewtypedef prval var prvar when where with withtype withprop withview withvtype withviewtype
 
 wikipedia https://en.wikipedia.org/wiki/ATS_(programming_language)
  example
@@ -21,13 +40,7 @@ githubLanguage ATS
  fileExtensions dats hats sats
  trendingProjectsCount 0
 
-helloWorldCollection Applied Type System
- // Hello world in ATS
- 
- implement main () = begin
-   print ("Hello, world!"); print_newline ()
- end
-
+monaco postiats
 linguistGrammarRepo https://github.com/steinwaywhw/ats-mode-sublimetext
  firstCommit 2013
  lastCommit 2016
@@ -80,14 +93,14 @@ linguistGrammarRepo https://github.com/steinwaywhw/ats-mode-sublimetext
   (* end of [DiningPhil2_thread.dats] *)
   
 
-website http://www.ats-lang.org/
-standsFor Applied Type System
-fileType text
-isOpenSource true
-
+helloWorldCollection Applied Type System
+ // Hello world in ATS
+ 
+ implement main () = begin
+   print ("Hello, world!"); print_newline ()
+ end
 rosettaCode ATS
 
-centralPackageRepositoryCount 0
 rijuRepl https://riju.codes/ats
  example
   val _ = print ("Hello, world!\n")
@@ -97,19 +110,7 @@ rijuRepl https://riju.codes/ats
  fileExtensions sats dats cats hats
  website http://www.ats-lang.org/
  githubRepo https://github.com/githwxi/ATS-Postiats
-creators Hongwei Xi
-lineCommentToken //
-features
- hasLineComments true
-  // A comment
- hasComments true
-  // A comment
- hasMultiLineComments true
-  (* A comment
-  *)
- hasSemanticIndentation false
-multiLineCommentTokens (* *)
-domainName ats-lang.org
- registered 2007
-monaco postiats
-keywords abstype abst0ype absprop absview absvtype absviewtype absvt0ype absviewt0ype as and assume begin classdec datasort datatype dataprop dataview datavtype dataviewtype do end extern extype extvar exception fn fnx fun prfn prfun praxi castfn if then else ifcase in infix infixl infixr prefix postfix implmnt implement primplmnt primplement import let local macdef macrodef nonfix symelim symintr overload of op rec sif scase sortdef sta stacst stadef static staload dynload try tkindef typedef propdef viewdef vtypedef viewtypedef prval var prvar when where with withtype withprop withview withvtype withviewtype
+
+fileType text
+isOpenSource true
+centralPackageRepositoryCount 0

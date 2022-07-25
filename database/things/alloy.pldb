@@ -1,6 +1,22 @@
 title Alloy
 appeared 1997
 type pl
+website http://alloytools.org/
+domainName alloytools.org
+ registered 2017
+
+features
+ hasLineComments true
+  // A comment
+ hasComments true
+  // A comment
+ hasMultiLineComments true
+  /* A comment
+  */
+ hasSemanticIndentation false
+
+lineCommentToken //
+multiLineCommentTokens /* */
 
 example
  // A file system object in the file system
@@ -56,6 +72,9 @@ githubLanguage Alloy
  fileExtensions als
  trendingProjectsCount 0
 
+pygmentsHighlighter Alloy
+ filename dsls.py
+ fileExtensions als
 linguistGrammarRepo https://github.com/macekond/Alloy.tmbundle
  firstCommit 2013
  lastCommit 2014
@@ -124,23 +143,6 @@ linguistGrammarRepo https://github.com/macekond/Alloy.tmbundle
   check { OneParent_correctVersion => NoDirAliases } for 5 expect 0
   
 
-website http://alloytools.org/
 fileType text
 wordRank 9510
 centralPackageRepositoryCount 0
-lineCommentToken //
-features
- hasLineComments true
-  // A comment
- hasComments true
-  // A comment
- hasMultiLineComments true
-  /* A comment
-  */
- hasSemanticIndentation false
-pygmentsHighlighter Alloy
- filename dsls.py
- fileExtensions als
-multiLineCommentTokens /* */
-domainName alloytools.org
- registered 2017

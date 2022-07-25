@@ -1,6 +1,7 @@
 title INTERCAL
 appeared 1972
 type pl
+country United States
 
 wikipedia https://en.wikipedia.org/wiki/INTERCAL
  example
@@ -48,44 +49,6 @@ helloWorldCollection INTERCAL
  DO ,1 SUB #13 <- #214
  PLEASE READ OUT ,1
  PLEASE GIVE UP
-
-
-tryItOnline intercal
-
-country United States
-fileType text
-
-tiobe INTERCAL
-
-hopl 585
-
-quineRelay INTERCAL
-
-ubuntuPackage intercal
-
-rosettaCode Intercal
-
-centralPackageRepositoryCount 0
-rijuRepl https://riju.codes/intercal
- example
-  DO ,1 <- #14
-  PLEASE DO ,1 SUB #1 <- #238
-  DO ,1 SUB #2 <- #108
-  DO ,1 SUB #3 <- #112
-  DO ,1 SUB #4 <- #0
-  DO ,1 SUB #5 <- #64
-  DO ,1 SUB #6 <- #194
-  DO ,1 SUB #7 <- #48
-  PLEASE DO ,1 SUB #8 <- #22
-  DO ,1 SUB #9 <- #248
-  DO ,1 SUB #10 <- #168
-  DO ,1 SUB #11 <- #24
-  DO ,1 SUB #12 <- #16
-  PLEASE DO ,1 SUB #13 <- #162
-  DO ,1 SUB #14 <- #52
-  PLEASE READ OUT ,1
-  PLEASE GIVE UP
-  
 leachim6 Intercal
  filepath i/Intercal.i
  fileExtensions i
@@ -107,3 +70,34 @@ leachim6 Intercal
   PLEASE READ OUT ,1
   PLEASE GIVE UP
   
+rosettaCode Intercal
+quineRelay INTERCAL
+
+rijuRepl https://riju.codes/intercal
+ example
+  DO ,1 <- #14
+  PLEASE DO ,1 SUB #1 <- #238
+  DO ,1 SUB #2 <- #108
+  DO ,1 SUB #3 <- #112
+  DO ,1 SUB #4 <- #0
+  DO ,1 SUB #5 <- #64
+  DO ,1 SUB #6 <- #194
+  DO ,1 SUB #7 <- #48
+  PLEASE DO ,1 SUB #8 <- #22
+  DO ,1 SUB #9 <- #248
+  DO ,1 SUB #10 <- #168
+  DO ,1 SUB #11 <- #24
+  DO ,1 SUB #12 <- #16
+  PLEASE DO ,1 SUB #13 <- #162
+  DO ,1 SUB #14 <- #52
+  PLEASE READ OUT ,1
+  PLEASE GIVE UP
+  
+tryItOnline intercal
+
+tiobe INTERCAL
+hopl 585
+
+ubuntuPackage intercal
+fileType text
+centralPackageRepositoryCount 0

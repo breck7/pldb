@@ -1,6 +1,8 @@
 title AsciiDoc
 appeared 2002
 type textMarkup
+website http://asciidoc.org/
+domainName asciidoc.org
 
 wikipedia https://en.wikipedia.org/wiki/AsciiDoc
  example
@@ -60,10 +62,6 @@ linguistGrammarRepo https://github.com/zuckschwerdt/asciidoc.tmbundle
   - Item 3
   
 
-website http://asciidoc.org/
-fileType text
-isOpenSource true
-centralPackageRepositoryCount 0
 rijuRepl https://riju.codes/asciidoc
  example
   Hello, world!
@@ -72,4 +70,7 @@ rijuRepl https://riju.codes/asciidoc
  fileExtensions adoc
  website https://asciidoc.org/
  githubRepo https://github.com/asciidoc/asciidoc
-domainName asciidoc.org
+
+fileType text
+isOpenSource true
+centralPackageRepositoryCount 0

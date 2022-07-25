@@ -2,6 +2,11 @@ title relax
 appeared 2000
 type grammarLanguage
 creators Makoto Murata
+description RELAX (REgular LAnguage description for XML) is a specification for describing XML-based languages. XHTML 1.0, for example, can be described in RELAX. A description written in RELAX is called a RELAX grammar. An XML document can be verified against a RELAX grammar. Compared with DTD(Document Type Definition), RELAX has new features: RELAX grammars are represented in the XML instance syntax. RELAX borrows rich datatypes of XML Schema Part 2. RELAX is namespace-aware
+website http://www.xml.gr.jp/relax/
+country Japan
+
+related dtd
 
 example
  <module
@@ -49,8 +54,3 @@ example
    <tag name="em"/>
  
  </module>
-
-description RELAX (REgular LAnguage description for XML) is a specification for describing XML-based languages. XHTML 1.0, for example, can be described in RELAX. A description written in RELAX is called a RELAX grammar. An XML document can be verified against a RELAX grammar. Compared with DTD(Document Type Definition), RELAX has new features: RELAX grammars are represented in the XML instance syntax. RELAX borrows rich datatypes of XML Schema Part 2. RELAX is namespace-aware
-website http://www.xml.gr.jp/relax/
-related dtd
-country Japan

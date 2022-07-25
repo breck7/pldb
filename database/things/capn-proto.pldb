@@ -2,10 +2,11 @@ title Cap'n Proto
 appeared 2013
 type idl
 creators Kenton Varda
+website https://capnproto.org/
+domainName capnproto.org
+ registered 2013
 
-githubLanguage Cap'n Proto
- fileExtensions capnp
- trendingProjectsCount 0
+related protobuf
 
 githubRepo https://github.com/capnproto/capnproto
  firstCommit 2013
@@ -17,22 +18,20 @@ githubRepo https://github.com/capnproto/capnproto
  description Cap'n Proto serialization/RPC system - core tools and C++ library
  issues 172
 
+githubLanguage Cap'n Proto
+ fileExtensions capnp
+ trendingProjectsCount 0
+
+pygmentsHighlighter Cap'n Proto
+ filename capnproto.py
+ fileExtensions capnp
 linguistGrammarRepo https://github.com/textmate/capnproto.tmbundle
  firstCommit 2013
  lastCommit 2017
  committerCount 2
  commitCount 2
 
-website https://capnproto.org/
-
 twitter capnproto
-
-related protobuf
 fileType text
 isOpenSource true
 centralPackageRepositoryCount 0
-pygmentsHighlighter Cap'n Proto
- filename capnproto.py
- fileExtensions capnp
-domainName capnproto.org
- registered 2013

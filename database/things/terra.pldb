@@ -1,6 +1,23 @@
 title Terra
 appeared 2012
 type pl
+description Terra is a low-level system programming language that is embedded in and meta-programmed by the Lua programming language:
+website http://terralang.org/
+domainName terralang.org
+
+features
+ hasLineComments true
+  -- A comment
+ hasComments true
+  -- A comment
+ hasPrintDebugging true
+ hasSemanticIndentation false
+ hasStrings true
+  "Hello world"
+
+lineCommentToken --
+printToken print
+stringToken "
 
 example
  -- This top-level code is plain Lua code.
@@ -42,12 +59,6 @@ example
  -- and link them into existing programs
  terralib.saveobj("helloterra",{ main = hello })
 
-description Terra is a low-level system programming language that is embedded in and meta-programmed by the Lua programming language:
-
-githubLanguage Terra
- fileExtensions t
- trendingProjectsCount 0
-
 githubRepo https://github.com/zdevito/terra
  firstCommit 2012
  stars 2432
@@ -57,6 +68,10 @@ githubRepo https://github.com/zdevito/terra
  updated 2022
  description Terra is a low-level system programming language that is embedded in and meta-programmed by the Lua programming language.
  issues 110
+
+githubLanguage Terra
+ fileExtensions t
+ trendingProjectsCount 0
 
 linguistGrammarRepo https://github.com/pyk/sublime-terra
  firstCommit 2016
@@ -141,29 +156,14 @@ linguistGrammarRepo https://github.com/pyk/sublime-terra
   end
   assert(tostring(Array(int)) == "Array(int32)")
 
-website http://terralang.org/
-fileType text
-isOpenSource true
-
-rosettaCode Terra
-
-centralPackageRepositoryCount 0
-lineCommentToken --
-features
- hasLineComments true
-  -- A comment
- hasComments true
-  -- A comment
- hasPrintDebugging true
- hasSemanticIndentation false
- hasStrings true
-  "Hello world"
 leachim6 Terra
  filepath t/Terra.t
  fileExtensions t
  example
   print("Hello World")
   
-printToken print
-domainName terralang.org
-stringToken "
+rosettaCode Terra
+
+fileType text
+isOpenSource true
+centralPackageRepositoryCount 0

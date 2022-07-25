@@ -2,6 +2,13 @@ title Q
 appeared 2003
 type pl
 creators Arthur Whitney
+corporateDevelopers Kx Systems
+
+features
+ hasStrings true
+  "Hello world"
+
+stringToken "
 
 wikipedia https://en.wikipedia.org/wiki/Q_(programming_language_from_Kx_Systems)
  example
@@ -28,11 +35,10 @@ wikipedia https://en.wikipedia.org/wiki/Q_(programming_language_from_Kx_Systems)
 githubLanguage q
  fileExtensions q
 
-helloWorldCollection Q
- /* Hello world in Q */
- 
- hello            = writes "Hello, world!\n";
-
+codeMirror q
+pygmentsHighlighter Q
+ filename q.py
+ fileExtensions q
 linguistGrammarRepo https://github.com/komsit37/sublime-q
  firstCommit 2015
  lastCommit 2018
@@ -63,34 +69,26 @@ linguistGrammarRepo https://github.com/komsit37/sublime-q
   http://www.nyxdata.com/Data-Products/Daily-TAQ
   
 
-fileType text
-wordRank 559
-
-tiobe Q
-
 projectEuler Q
  memberCount
   2019 132
   2022 152
-
-codeMirror q
-
-rosettaCode Q
-
-corporateDevelopers Kx Systems
-jupyterKernel https://github.com/jvictorchen/IKdbQ
-jupyterKernel https://github.com/newtux/KdbQ_kernel
-centralPackageRepositoryCount 0
-pygmentsHighlighter Q
- filename q.py
- fileExtensions q
+helloWorldCollection Q
+ /* Hello world in Q */
+ 
+ hello            = writes "Hello, world!\n";
 leachim6 Q
  filepath q/Q.q
  fileExtensions q
  example
   "Hello World"
   
-stringToken "
-features
- hasStrings true
-  "Hello world"
+rosettaCode Q
+
+tiobe Q
+
+jupyterKernel https://github.com/jvictorchen/IKdbQ
+jupyterKernel https://github.com/newtux/KdbQ_kernel
+fileType text
+wordRank 559
+centralPackageRepositoryCount 0

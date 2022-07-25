@@ -1,6 +1,15 @@
 title Caché ObjectScript
 appeared 1997
 type pl
+country United States
+
+features
+ hasPrintDebugging true
+ hasStrings true
+  "Hello world"
+
+printToken Write
+stringToken "
 
 wikipedia https://en.wikipedia.org/wiki/Caché_ObjectScript
  related mumps sql
@@ -12,15 +21,6 @@ wikipedia https://en.wikipedia.org/wiki/Caché_ObjectScript
  dailyPageViews 19
  appeared 1997
 
-country United States
-fileType text
-
-hopl 4987
-
-centralPackageRepositoryCount 0
-goodreads
- title|year|author|goodreadsId|rating|ratings|reviews
- Cache Objectscript and Mumps: Technical Learning Manual|2012|Paul Mike Kadow|23453991|3.29|7|0
 leachim6 Cache ObjectScript
  filepath c/Cache ObjectScript.mac
  example
@@ -28,9 +28,12 @@ leachim6 Cache ObjectScript
     Write "Hello World"
     Quit
   
-printToken Write
-features
- hasPrintDebugging true
- hasStrings true
-  "Hello world"
-stringToken "
+
+goodreads
+ title|year|author|goodreadsId|rating|ratings|reviews
+ Cache Objectscript and Mumps: Technical Learning Manual|2012|Paul Mike Kadow|23453991|3.29|7|0
+
+hopl 4987
+
+fileType text
+centralPackageRepositoryCount 0

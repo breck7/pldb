@@ -1,6 +1,9 @@
 title Ion Schema Language
 appeared 2018
 type grammarLanguage
+reference https://amzn.github.io/ion-schema/docs/spec.html
+
+related ion
 
 example
  type::{
@@ -17,6 +20,3 @@ example
      age: { type: int, valid_values: range::[0, 130] },
    },
  }
-
-reference https://amzn.github.io/ion-schema/docs/spec.html
-related ion

@@ -1,9 +1,8 @@
 title klong
 appeared 2015
 type pl
+description A Simple Array Language. Klong is an array language, like K, but without the ambiguity. If you know K or APL, you may be disappointed by Klong. If you don't know any array languages, it might explode your brain. Use at your own risk!
+website http://t3x.org/klong/
 
 example
  {&/x!:\2+!_x^1%2}
-
-description A Simple Array Language. Klong is an array language, like K, but without the ambiguity. If you know K or APL, you may be disappointed by Klong. If you don't know any array languages, it might explode your brain. Use at your own risk!
-website http://t3x.org/klong/

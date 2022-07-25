@@ -1,8 +1,16 @@
 title Project MAC’s SYmbolic MAnipulator
 appeared 1968
 type pl
-
 description Macsyma (Project MAC’s SYmbolic MAnipulator[1]) is one of the oldest general purpose computer algebra systems which is still widely used. It was originally developed from 1968 to 1982 at MIT's Project MAC.
+country United States
+
+features
+ hasPrintDebugging true
+ hasStrings true
+  "Hello world"
+
+printToken print
+stringToken "
 
 wikipedia https://en.wikipedia.org/wiki/MACSYMA
  related maxima multics fortran latex lisp common-lisp maple mathematica matlab linux
@@ -14,21 +22,14 @@ wikipedia https://en.wikipedia.org/wiki/MACSYMA
  dailyPageViews 2
  appeared 1982
 
-country United States
-fileType text
-
-hopl 431
-
-centralPackageRepositoryCount 0
 leachim6 Macsyma
  filepath m/Macsyma.mac
  fileExtensions mac
  example
   print("Hello World");
   
-printToken print
-features
- hasPrintDebugging true
- hasStrings true
-  "Hello world"
-stringToken "
+
+hopl 431
+
+fileType text
+centralPackageRepositoryCount 0

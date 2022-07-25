@@ -1,10 +1,10 @@
 title RMarkdown
 appeared 2014
 type textMarkup
-
-githubLanguage RMarkdown
- fileExtensions rmd
- trendingProjectsCount 0
+creators JJ Allaire
+website https://rmarkdown.rstudio.com/
+fileExtensions rmd
+domainName rmarkdown.rstudio.com
 
 githubRepo https://github.com/rstudio/rmarkdown
  firstCommit 2014
@@ -15,6 +15,10 @@ githubRepo https://github.com/rstudio/rmarkdown
  updated 2022
  description Dynamic Documents for R
  issues 207
+
+githubLanguage RMarkdown
+ fileExtensions rmd
+ trendingProjectsCount 0
 
 linguistGrammarRepo https://github.com/atom/language-gfm
  firstCommit 2013
@@ -34,14 +38,11 @@ linguistGrammarRepo https://github.com/atom/language-gfm
   hist(rnorm(10000))
   ```
 
-website https://rmarkdown.rstudio.com/
-fileType text
-isOpenSource true
-centralPackageRepositoryCount 0
-creators JJ Allaire
-fileExtensions rmd
 goodreads
  title|year|author|goodreadsId|rating|ratings|reviews
  Bookdown: Authoring Books and Technical Documents with R Markdown||Yihui Xie|54265969|3.67|3|0
  bookdown: Authoring Books and Technical Documents with R Markdown (Chapman & Hall/CRC The R Series)||Yihui Xie|54727209|4.38|8|1
-domainName rmarkdown.rstudio.com
+
+fileType text
+isOpenSource true
+centralPackageRepositoryCount 0

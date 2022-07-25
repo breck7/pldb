@@ -1,18 +1,26 @@
 title Bicep
-githubRepo https://github.com/Azure/bicep
- firstCommit 2020
- stars 2438
- forks 617
- subscribers 116
- created 2020
- updated 2022
- description Bicep is a declarative language for describing and deploying Azure resources
- issues 1060
-description Bicep is a Domain Specific Language (DSL) for deploying Azure resources declaratively.
-corporateDevelopers Microsoft
-compilesTo arm-templates
+appeared 2020
 type jsonFormat
+creators Anthony Martin
+description Bicep is a Domain Specific Language (DSL) for deploying Azure resources declaratively.
 reference https://docs.microsoft.com/en-us/azure/azure-resource-manager/bicep/
+corporateDevelopers Microsoft
+
+compilesTo arm-templates
+
+features
+ hasLineComments true
+  // A comment
+ hasMultiLineComments true
+  /* A comment
+  */
+ hasComments true
+  // A comment
+
+lineCommentToken //
+multiLineCommentTokens /* */
+keywords targetScope resource module param var output for in if existing
+
 example
  @minLength(3)
  @maxLength(11)
@@ -44,17 +52,15 @@ example
  }
  
  output storageEndpoint object = stg.properties.primaryEndpoints
-appeared 2020
-lineCommentToken //
+
+githubRepo https://github.com/Azure/bicep
+ firstCommit 2020
+ stars 2438
+ forks 617
+ subscribers 116
+ created 2020
+ updated 2022
+ description Bicep is a declarative language for describing and deploying Azure resources
+ issues 1060
+
 monaco bicep
-multiLineCommentTokens /* */
-keywords targetScope resource module param var output for in if existing
-features
- hasLineComments true
-  // A comment
- hasMultiLineComments true
-  /* A comment
-  */
- hasComments true
-  // A comment
-creators Anthony Martin

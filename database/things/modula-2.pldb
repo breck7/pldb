@@ -2,6 +2,8 @@ title Modula-2
 appeared 1978
 type pl
 creators Niklaus Wirth
+fileExtensions mod m2 def MOD DEF mi md
+country Switzerland
 
 features
  hasComments true
@@ -15,7 +17,11 @@ features
  hasSemanticIndentation false
  hasStrings true
   "Hello world"
+
 multiLineCommentTokens (* *)
+printToken WriteString
+stringToken "
+
 wikipedia https://en.wikipedia.org/wiki/Modula-2
  example
   ABS         EXCL            LONGINT    REAL
@@ -40,17 +46,9 @@ githubLanguage Modula-2
  fileExtensions mod
  trendingProjectsCount 0
 
-helloWorldCollection Modula-2
- (* Hello World in Modula-2 *)
- 
- MODULE HelloWorld;
- FROM InOut IMPORT WriteString,WriteLn;
- BEGIN
-   WriteString("Hello World!");
-   WriteLn;
- END HelloWorld.
- 
-
+pygmentsHighlighter Modula-2
+ filename modula2.py
+ fileExtensions def mod
 linguistGrammarRepo https://github.com/harogaston/Sublime-Modula-2
  firstCommit 2014
  lastCommit 2015
@@ -389,21 +387,16 @@ linguistGrammarRepo https://github.com/harogaston/Sublime-Modula-2
   END HuffChan.
   
 
-country Switzerland
-fileExtensions mod m2 def MOD DEF mi md
-fileType text
-
-tiobe Modula-2
-
-hopl 817
-
-rosettaCode Modula-2
-
-centralPackageRepositoryCount 0
-gdbSupport true
-pygmentsHighlighter Modula-2
- filename modula2.py
- fileExtensions def mod
+helloWorldCollection Modula-2
+ (* Hello World in Modula-2 *)
+ 
+ MODULE HelloWorld;
+ FROM InOut IMPORT WriteString,WriteLn;
+ BEGIN
+   WriteString("Hello World!");
+   WriteLn;
+ END HelloWorld.
+ 
 leachim6 Modula 2
  filepath m/Modula 2.mod
  example
@@ -417,5 +410,11 @@ leachim6 Modula 2
       WriteLn;
       
   END HelloWorld.
-printToken WriteString
-stringToken "
+rosettaCode Modula-2
+
+tiobe Modula-2
+hopl 817
+
+gdbSupport true
+fileType text
+centralPackageRepositoryCount 0

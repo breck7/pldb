@@ -1,6 +1,8 @@
 title PILOT
 appeared 1962
 type pl
+standsFor Programmed Instruction, Learning, or Teaching
+country United States
 
 wikipedia https://en.wikipedia.org/wiki/PILOT
  example
@@ -19,16 +21,11 @@ helloWorldCollection Programmed Instruction%2C Learning%2C or Teaching
  R:Hello world in PILOT
  T:Hello World!
  
-
-standsFor Programmed Instruction, Learning, or Teaching
-country United States
-fileType text
-wordRank 3447
-
-tiobe PILOT
-
-hopl 341
-
 rosettaCode PILOT
 
+tiobe PILOT
+hopl 341
+
+fileType text
+wordRank 3447
 centralPackageRepositoryCount 0

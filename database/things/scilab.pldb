@@ -11,6 +11,10 @@ features
  hasStrings true
   "Hello world"
 
+lineCommentToken //
+printToken disp
+stringToken "
+
 wikipedia https://en.wikipedia.org/wiki/Scilab
  example
   // A simple plot of z = f(x,y)
@@ -30,6 +34,9 @@ githubLanguage Scilab
  fileExtensions sci sce tst
  trendingProjectsCount 0
 
+pygmentsHighlighter Scilab
+ filename matlab.py
+ fileExtensions sci sce tst
 linguistGrammarRepo https://github.com/textmate/scilab.tmbundle
  firstCommit 2007
  lastCommit 2012
@@ -41,17 +48,19 @@ linguistGrammarRepo https://github.com/textmate/scilab.tmbundle
   
   
 
-fileType text
-isOpenSource true
-
+leachim6 SCILab
+ filepath s/SCILab.scilab
+ fileExtensions scilab
+ example
+  disp("Hello World")
+  
 rosettaCode Scilab
-printToken disp
-jupyterKernel https://github.com/calysto/scilab_kernel
-centralPackageRepositoryCount 0
+
 rijuRepl https://riju.codes/scilab
  example
   disp("Hello, world!")
   
+
 goodreads
  title|year|author|goodreadsId|rating|ratings|reviews
  Engineering and Scientific Computing with Scilab|1998|Claude Gomez|2443580|3.33|3|0
@@ -61,14 +70,8 @@ goodreads
  Introduction to Scilab: For Engineers and Scientists||Sandeep Nagar|58537943|5.00|1|0
  Introduction to Scilab for Scientists and Engineers||John Maclane|57266755|0.0|0|0
  SCILAB (A FREE SOFTWARE TO MATLAB)||ACHUTHSANKAR S.NAIR|44300566|0.0|0|0
-lineCommentToken //
-pygmentsHighlighter Scilab
- filename matlab.py
- fileExtensions sci sce tst
-leachim6 SCILab
- filepath s/SCILab.scilab
- fileExtensions scilab
- example
-  disp("Hello World")
-  
-stringToken "
+
+jupyterKernel https://github.com/calysto/scilab_kernel
+fileType text
+isOpenSource true
+centralPackageRepositoryCount 0

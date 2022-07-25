@@ -1,6 +1,8 @@
 title MiniZinc
 appeared 2012
 type pl
+website http://www.minizinc.org/
+domainName minizinc.org
 
 githubRepo https://github.com/MiniZinc/libminizinc
  firstCommit 2012
@@ -12,24 +14,18 @@ githubRepo https://github.com/MiniZinc/libminizinc
  description The MiniZinc compiler
  issues 59
 
-website http://www.minizinc.org/
-
-twitter minizinc
-
-fileType text
-isOpenSource true
-
+rosettaCode MiniZinc
 quineRelay MiniZinc
 
-ubuntuPackage minizinc
-
-rosettaCode MiniZinc
-
-centralPackageRepositoryCount 0
 rijuRepl https://riju.codes/minizinc
  example
   solve satisfy;
   
   output ["Hello, world!\n"];
   
-domainName minizinc.org
+
+twitter minizinc
+ubuntuPackage minizinc
+fileType text
+isOpenSource true
+centralPackageRepositoryCount 0

@@ -1,6 +1,16 @@
 title Strips
 appeared 1969
 type pl
+reference https://semanticscholar.org/paper/076ae14bfc68acdbaf2ab24913e152d49540e988
+
+features
+ hasLineComments true
+  // A comment
+ hasComments true
+  // A comment
+ hasSemanticIndentation false
+
+lineCommentToken //
 
 wikipedia https://en.wikipedia.org/wiki/STRIPS
  example
@@ -36,16 +46,7 @@ wikipedia https://en.wikipedia.org/wiki/STRIPS
  created 2005
  appeared 1971
 
-reference https://semanticscholar.org/paper/076ae14bfc68acdbaf2ab24913e152d49540e988
-wordRank 9151
-
 hopl 2413
 
+wordRank 9151
 centralPackageRepositoryCount 0
-lineCommentToken //
-features
- hasLineComments true
-  // A comment
- hasComments true
-  // A comment
- hasSemanticIndentation false

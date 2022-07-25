@@ -1,6 +1,17 @@
 title ARM
 appeared 1985
 type assembly
+creators Sophie Wilson and Steve Furber and Acorn Computers
+standsFor Acorn RISC Machine
+
+features
+ hasLineComments true
+  ; A comment
+ hasComments true
+  ; A comment
+ hasSemanticIndentation false
+
+lineCommentToken ;
 
 wikipedia https://en.wikipedia.org/wiki/ARM_architecture
  example
@@ -21,13 +32,6 @@ wikipedia https://en.wikipedia.org/wiki/ARM_architecture
  revisionCount 3920
  appeared 1985
 
-standsFor Acorn RISC Machine
-fileType text
-wordRank 3230
-linkedInSkill arm
- 2018 110713
-jupyterKernel https://github.com/DeepHorizons/iarm
-centralPackageRepositoryCount 0
 rijuRepl https://riju.codes/arm
  example
   	.text
@@ -49,11 +53,11 @@ rijuRepl https://riju.codes/arm
  fileExtensions S
  website https://developer.arm.com/architectures/cpu-architecture
  githubRepo https://gcc.gnu.org/git.html
-lineCommentToken ;
-features
- hasLineComments true
-  ; A comment
- hasComments true
-  ; A comment
- hasSemanticIndentation false
-creators Sophie Wilson and Steve Furber and Acorn Computers
+
+linkedInSkill arm
+ 2018 110713
+
+jupyterKernel https://github.com/DeepHorizons/iarm
+fileType text
+wordRank 3230
+centralPackageRepositoryCount 0

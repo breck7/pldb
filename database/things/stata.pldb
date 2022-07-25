@@ -2,6 +2,11 @@ title Stata
 appeared 1985
 type pl
 creators William Gould
+website https://www.stata.com/
+reference http://www.haghish.com/statistics/stata-blog/stata-programming/ssc_stata_package_list.php
+corporateDevelopers StataCorp
+domainName stata.com
+ registered 1994
 
 features
  hasComments true
@@ -11,6 +16,9 @@ features
   /* A comment
   */
  hasSemanticIndentation false
+
+lineCommentToken //
+multiLineCommentTokens /* */
 
 wikipedia https://en.wikipedia.org/wiki/Stata
  example
@@ -44,15 +52,9 @@ githubLanguage Stata
  fileExtensions do ado doh ihlp mata matah sthlp
  trendingProjectsCount 0
 
-helloWorldCollection Stata
- /* Hello world in Stata */
- 
-  .program hello
-   1. display "Hello, World!"
-   2. end
- .hello
- 
-
+pygmentsHighlighter Stata
+ filename stata.py
+ fileExtensions do ado
 linguistGrammarRepo https://github.com/pschumm/Stata.tmbundle
  firstCommit 2009
  lastCommit 2015
@@ -63,32 +65,26 @@ linguistGrammarRepo https://github.com/pschumm/Stata.tmbundle
   local MAXDIM   800
   
 
-website https://www.stata.com/
-reference http://www.haghish.com/statistics/stata-blog/stata-programming/ssc_stata_package_list.php
-
-twitter stata
-
-fileType text
-isOpenSource false
-
-tiobe Stata
-
 projectEuler Stata
  memberCount
   2019 14
   2022 16
-
+helloWorldCollection Stata
+ /* Hello world in Stata */
+ 
+  .program hello
+   1. display "Hello, World!"
+   2. end
+ .hello
+ 
 rosettaCode Stata
 
-corporateDevelopers StataCorp
+tiobe Stata
 
-lineCommentToken //
+packageRepository https://www.stata.com/manuals/rssc.pdf
+
+twitter stata
 jupyterKernel https://github.com/TiesdeKok/ipystata
 jupyterKernel https://github.com/kylebarron/stata_kernel
-packageRepository https://www.stata.com/manuals/rssc.pdf
-pygmentsHighlighter Stata
- filename stata.py
- fileExtensions do ado
-multiLineCommentTokens /* */
-domainName stata.com
- registered 1994
+fileType text
+isOpenSource false

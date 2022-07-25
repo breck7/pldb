@@ -1,9 +1,13 @@
 title Reason
 appeared 2016
 type pl
+website https://reasonml.github.io/
+aka reasonml
+corporateDevelopers Facebook
+domainName reasonml.github.io
 
 compilesTo ocaml
-
+writtenIn ocaml
 related rust elm purescript fable-lang clojurescript swift haxe
 
 features
@@ -23,19 +27,10 @@ features
  hasStrings true
   "Hello world"
 
-githubLanguage Reason
- fileExtensions re rei
- trendingProjectsCount 0
-
-githubRepo https://github.com/facebook/reason
- stars 9670
- forks 448
- subscribers 188
- created 2015
- updated 2022
- firstCommit 2016
- description Simple, fast & type safe code that leverages the JavaScript & OCaml ecosystems
- issues 474
+lineCommentToken //
+multiLineCommentTokens /* */
+printToken print_string
+stringToken "
 
 example
  type schoolPerson = Teacher | Director | Student(string);
@@ -48,6 +43,23 @@ example
    | Student(anyOtherName) => "Hey, " ++ anyOtherName ++ "."
    };
 
+githubRepo https://github.com/facebook/reason
+ stars 9670
+ forks 448
+ subscribers 188
+ created 2015
+ updated 2022
+ firstCommit 2016
+ description Simple, fast & type safe code that leverages the JavaScript & OCaml ecosystems
+ issues 474
+
+githubLanguage Reason
+ fileExtensions re rei
+ trendingProjectsCount 0
+
+pygmentsHighlighter ReasonML
+ filename ml.py
+ fileExtensions re rei
 linguistGrammarRepo https://github.com/reasonml-editor/language-reason
  firstCommit 2016
  lastCommit 2017
@@ -539,43 +551,28 @@ linguistGrammarRepo https://github.com/reasonml-editor/language-reason
   /* </Foo>; */
   /* let res = <Foo a=10 b=(<Foo a=200 />) />; */
   
-
-website https://reasonml.github.io/
-aka reasonml
-
-tryItOnline reason
-
-fileType text
-wordRank 1246
-isOpenSource true
-
-meetup reasonml
- memberCount 901
- groupCount 11
-
-rosettaCode Reason
-
-corporateDevelopers Facebook
-writtenIn ocaml
 languageServerProtocolProject https://github.com/jaredly/reason-language-server
  writtenIn ocaml
 
-lineCommentToken //
-centralPackageRepositoryCount 0
-rijuRepl https://riju.codes/reasonml
- example
-  print_string("Hello, world!\n");
-  
-pygmentsHighlighter ReasonML
- filename ml.py
- fileExtensions re rei
 leachim6 Reason
  filepath r/Reason.re
  fileExtensions re
  example
   print_string "Hello World"
   
-printToken print_string
-multiLineCommentTokens /* */
-domainName reasonml.github.io
-stringToken "
+rosettaCode Reason
+
+rijuRepl https://riju.codes/reasonml
+ example
+  print_string("Hello, world!\n");
+  
+tryItOnline reason
+
+meetup reasonml
+ memberCount 901
+ groupCount 11
+
+fileType text
+wordRank 1246
+isOpenSource true
+centralPackageRepositoryCount 0

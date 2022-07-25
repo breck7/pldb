@@ -1,14 +1,17 @@
 title Vigil
+appeared 2013
 type esolang
-githubRepo https://github.com/munificent/vigil
- firstCommit 2013
- stars 2574
- forks 64
- subscribers 75
- created 2013
- updated 2022
- description Vigil, the eternal morally vigilant programming language
- issues 21
+creators Bob Nystrom
+
+features
+ hasLineComments true
+  # A comment
+ hasComments true
+  # A comment
+ hasSemanticIndentation false
+
+lineCommentToken #
+
 example
  def fib(n):
   if n < 2:
@@ -18,12 +21,13 @@ example
   # fib() never returns negative number.
   swear result >= 0
   return result
-appeared 2013
-creators Bob Nystrom
-lineCommentToken #
-features
- hasLineComments true
-  # A comment
- hasComments true
-  # A comment
- hasSemanticIndentation false
+
+githubRepo https://github.com/munificent/vigil
+ firstCommit 2013
+ stars 2574
+ forks 64
+ subscribers 75
+ created 2013
+ updated 2022
+ description Vigil, the eternal morally vigilant programming language
+ issues 21

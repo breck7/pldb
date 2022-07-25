@@ -1,8 +1,28 @@
 title PowerQuery M
-aka m
-aka powerquery
 appeared 2015
 type queryLanguage
+description The Power Query M formula language is optimized for building highly flexible data mashup queries. It's a functional, case sensitive language similar to F#.
+website https://docs.microsoft.com/en-us/powerquery-m/
+reference https://docs.microsoft.com/en-us/powerquery-m/power-query-m-type-system
+aka m
+aka powerquery
+corporateDevelopers Microsoft
+
+features
+ hasLineComments true
+  // A comment
+ hasComments true
+  // A comment
+ hasSemanticIndentation false
+ hasStrings true
+ hasMultiLineComments true
+  /* A comment
+  */
+
+lineCommentToken //
+multiLineCommentTokens /* */
+stringToken "
+keywords as each else error false if in is let meta otherwise section shared then true try type
 
 example
  "Hello World"             // a text value 
@@ -15,23 +35,6 @@ example
  if 2 > 1 then 2 else 1    // a conditional expression 
  let x = 1 + 1  in x * 2   // a let expression 
  error "A"                 // error with message "A"
-
-description The Power Query M formula language is optimized for building highly flexible data mashup queries. It's a functional, case sensitive language similar to F#.
-reference https://docs.microsoft.com/en-us/powerquery-m/power-query-m-type-system
-centralPackageRepositoryCount 0
-lineCommentToken //
-features
- hasLineComments true
-  // A comment
- hasComments true
-  // A comment
- hasSemanticIndentation false
- hasStrings true
- hasMultiLineComments true
-  /* A comment
-  */
-website https://docs.microsoft.com/en-us/powerquery-m/
-corporateDevelopers Microsoft
 example
  let Orders = Table.FromRecords({  
      [OrderID = 1, CustomerID = 1, Item = "fishing rod", Price = 100.0],  
@@ -40,7 +43,7 @@ example
      #"Capitalized Each Word" = Table.TransformColumns(Orders, {"Item", Text.Proper})  
  in  
      #"Capitalized Each Word"
+
 monaco powerquery
-multiLineCommentTokens /* */
-keywords as each else error false if in is let meta otherwise section shared then true try type
-stringToken "
+
+centralPackageRepositoryCount 0

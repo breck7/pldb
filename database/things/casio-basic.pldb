@@ -2,6 +2,12 @@ title Casio BASIC
 appeared 2006
 type pl
 
+features
+ hasStrings true
+  "Hello world"
+
+stringToken "
+
 wikipedia https://en.wikipedia.org/wiki/Casio_BASIC
  related basic
  summary Casio BASIC is a programming language used in the Casio calculators such as the Classpad, fx-9860G Series, and CFX graphing calculators. The language is a linear structured, BASIC-based programming language. It was devised to allow users to program in commonly performed calculations, such as the Pythagorean theorem and complex trigonometric calculations. Output from the program can be in the form of scrolling or located text, graphs, or by writing data to lists in the calculator memory. Casio also makes label printers which can be used with rolls of paper for the Casio BASIC calculators, and programmes, variables, data, and other items can be exchanged from one calculator to another and to and from a computer via the same kind of cable and audio-type plug used by the TI graphing calculators and/or the same type of cable and mini-USB plug used on HP calculators from the HP48 and many cellular telephones; several models of Casio graphing calculators have both portsThe Casio calculators, as with those of many of the other big three manufacturers' machines, can acquire data from instruments via a data logger to which probes for temperature, light intensity, pH, sound intensity (dBA), voltage and other electrical parameters, as well as other readings, and custom probes to attach to the data logger  can be built and configured for use with the data logger and calculator. Existing instruments can also be modified to interface with the calculator-data logger, in order to collect such data including such things as weather instruments and means of collecting data such as pulse, blood pressure, galvanic skin resistance, EKG and so on. Numerical data can be stored in the lists and matrices available on Casio calculators. This data can be used to create sprites for non-text programs. In this way, the language can also be used to create games, such as Pong, Monopoly and role-playing games.
@@ -11,13 +17,10 @@ wikipedia https://en.wikipedia.org/wiki/Casio_BASIC
  revisionCount 57
  dailyPageViews 26
 
-centralPackageRepositoryCount 0
 leachim6 Casio BASIC
  filepath c/Casio BASIC
  example
   "Hello World"
   
-stringToken "
-features
- hasStrings true
-  "Hello world"
+
+centralPackageRepositoryCount 0

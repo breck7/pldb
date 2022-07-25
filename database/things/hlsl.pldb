@@ -1,6 +1,7 @@
 title HLSL
 appeared 2002
 type pl
+reference https://docs.microsoft.com/en-us/windows/desktop/direct3dhlsl/dx-graphics-hlsl
 
 wikipedia https://en.wikipedia.org/wiki/High-Level_Shading_Language
  related opengl cg
@@ -16,6 +17,9 @@ githubLanguage HLSL
  fileExtensions hlsl cginc fx fxh hlsli
  trendingProjectsCount 0
 
+pygmentsHighlighter HLSL
+ filename graphics.py
+ fileExtensions hlsl hlsli
 linguistGrammarRepo https://github.com/tgjones/shaders-tmLanguage
  firstCommit 2017
  lastCommit 2017
@@ -66,14 +70,11 @@ linguistGrammarRepo https://github.com/tgjones/shaders-tmLanguage
   }
   
 
-reference https://docs.microsoft.com/en-us/windows/desktop/direct3dhlsl/dx-graphics-hlsl
-fileType text
-centralPackageRepositoryCount 0
 goodreads
  title|year|author|goodreadsId|rating|ratings|reviews
  HLSL and Pixel Shaders for XAML Developers|2012|Walt Ritscher|19180540|3.57|7|2
  Hlsl and Pixel Shaders for Xaml Developers|2012|Walt Ritscher|41933416|0.0|0|0
  Real-Time 3D Rendering with DirectX and HLSL: A Practical Guide to Graphics Programming (Game Design)|2014|Paul Varcholik|26545302|4.50|2|0
-pygmentsHighlighter HLSL
- filename graphics.py
- fileExtensions hlsl hlsli
+
+fileType text
+centralPackageRepositoryCount 0

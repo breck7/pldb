@@ -2,10 +2,11 @@ title Wolfram Language
 appeared 1988
 type pl
 creators Stephen Wolfram
+website https://www.wolfram.com/language/
+webRepl https://www.wolframcloud.com/
 aka wolframlanguage
-subreddit wolframlanguage
- memberCount
-  2022 610
+fileExtensions nb m wl
+corporateDevelopers Wolfram Research
 
 features
  hasComments true
@@ -18,6 +19,10 @@ features
  hasSemanticIndentation false
  hasStrings true
   "Hello world"
+
+multiLineCommentTokens (* *)
+printToken Print
+stringToken "
 
 wikipedia https://en.wikipedia.org/wiki/Wolfram_Language
  related mathematica-editor apl c lisp pascal prolog simula smalltalk julia mathematica unity-engine
@@ -34,36 +39,33 @@ helloWorldCollection Wolfram
  (* Hello world in Wolfram Language *)
  
  CloudDeploy["Hello World"]
-
-website https://www.wolfram.com/language/
-fileExtensions nb m wl
-fileType text
-isOpenSource false
-
-tiobe Wolfram
-
-meetup wolfram
- memberCount 721
- groupCount 4
-
-corporateDevelopers Wolfram Research
-jupyterKernel https://github.com/mmatera/iwolfram
-centralPackageRepositoryCount 0
-rijuRepl https://riju.codes/wolframlanguage
- example
-  Print["Hello, world!"]
-  
-webRepl https://www.wolframcloud.com/
-goodreads
- title|year|author|goodreadsId|rating|ratings|reviews
- An Elementary Introduction to the Wolfram Language|2015|Stephen Wolfram|47752634|4.22|63|9
- Hands-On Start to Wolfram Mathematica: And Programming with the Wolfram Language|2015|Cliff Hastings|46155341|4.29|14|2
 leachim6 WolframLanguage
  filepath w/WolframLanguage.wl
  fileExtensions wl
  example
   Print["Hello World"];
   
-printToken Print
-multiLineCommentTokens (* *)
-stringToken "
+
+rijuRepl https://riju.codes/wolframlanguage
+ example
+  Print["Hello, world!"]
+  
+
+subreddit wolframlanguage
+ memberCount
+  2022 610
+meetup wolfram
+ memberCount 721
+ groupCount 4
+
+goodreads
+ title|year|author|goodreadsId|rating|ratings|reviews
+ An Elementary Introduction to the Wolfram Language|2015|Stephen Wolfram|47752634|4.22|63|9
+ Hands-On Start to Wolfram Mathematica: And Programming with the Wolfram Language|2015|Cliff Hastings|46155341|4.29|14|2
+
+tiobe Wolfram
+
+jupyterKernel https://github.com/mmatera/iwolfram
+fileType text
+isOpenSource false
+centralPackageRepositoryCount 0

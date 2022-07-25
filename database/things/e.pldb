@@ -2,6 +2,25 @@ title E
 appeared 1997
 type pl
 creators Mark S. Miller
+description E is an object-oriented programming language for secure distributed computing.
+website http://erights.org/
+domainName erights.org
+ registered 1998
+
+visualParadigm false
+
+features
+ hasComments true
+ hasLineComments true
+  # A comment
+ hasPrintDebugging true
+ hasSemanticIndentation false
+ hasStrings true
+  "Hello world"
+
+lineCommentToken #
+printToken println
+stringToken "
 
 example
  def factorial(n :int) :int {
@@ -13,17 +32,17 @@ example
      throw("invalid argument to factorial: "+n)
    }
  }
-
-features
- hasComments true
- hasLineComments true
-  # A comment
- hasPrintDebugging true
- hasSemanticIndentation false
- hasStrings true
-  "Hello world"
-
-description E is an object-oriented programming language for secure distributed computing.
+example
+ # E snippet from
+ # http://wiki.erights.org/wiki/Walnut/Distributed_Computing/Promises
+ when (tempVow) -> {
+     #...use tempVow
+ } catch prob {
+     #.... report problem
+ } finally {
+     #....log event
+ }
+ 
 
 wikipedia https://en.wikipedia.org/wiki/E_(programming_language)
  example
@@ -61,36 +80,17 @@ githubLanguage E
  fileExtensions E
  trendingProjectsCount 0
 
-example
- # E snippet from
- # http://wiki.erights.org/wiki/Walnut/Distributed_Computing/Promises
- when (tempVow) -> {
-     #...use tempVow
- } catch prob {
-     #.... report problem
- } finally {
-     #....log event
- }
- 
-website http://erights.org/
-fileType text
-wordRank 82
-isOpenSource true
-
-hopl 1990
-
-rosettaCode E
-
-visualParadigm false
-centralPackageRepositoryCount 0
-lineCommentToken #
 leachim6 E
  filepath e/E.e
  fileExtensions e
  example
   println("Hello World")
   
-printToken println
-domainName erights.org
- registered 1998
-stringToken "
+rosettaCode E
+
+hopl 1990
+
+fileType text
+wordRank 82
+isOpenSource true
+centralPackageRepositoryCount 0

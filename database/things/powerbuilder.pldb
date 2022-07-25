@@ -2,22 +2,19 @@ title PowerBuilder
 appeared 2010
 type pl
 
-wikipedia https://en.wikipedia.org/wiki/PowerBuilder
- example
-  UPDATE my_employee SET STATUS = 'A';
-   IF sqlca.sqlcode<>0 THEN ...
- related csharp json xml sql
- summary PowerBuilder is an integrated development environment owned by SAP since the acquisition of Sybase in 2010.  On July 5, 2016, SAP and Appeon entered into an agreement whereby Appeon would be responsible for developing, selling, and supporting PowerBuilder.PowerBuilder has been in use since 1991, peaking around 1998 with around 100,000 users. While PowerBuilder's market share has declined over the years, many applications created with it are still in use today.  Over the years, PowerBuilder has been updated with new standards.  In 2010, a major upgrade of PowerBuilder was released to provide support for the Microsoft .NET Framework.  In 2014, support was added for OData, dockable windows, and 64-bit native applications.  In 2017, support was added for iOS and Android app development.PowerBuilder 2018 provides new targets to enable developers to rapidly create RESTful Web APIs and non-visual .NET assemblies, in a test-driven manner, with the native PowerBuilder IDE and C#. A preview version is currently available for select customers.
- pageId 1611118
- created 2005
- backlinksCount 65
- revisionCount 539
- dailyPageViews 189
- appeared 2010
+features
+ hasLineComments true
+  // A comment
+ hasComments true
+  // A comment
+ hasPrintDebugging true
+ hasSemanticIndentation false
+ hasStrings true
+  "Hello world"
 
-githubLanguage PowerBuilder
- fileExtensions pbt sra sru srw
- trendingProjectsCount 0
+lineCommentToken //
+printToken MessageBox
+stringToken "
 
 example
  // The MIT License (MIT)
@@ -53,11 +50,31 @@ example
  LibList "myproject\\myproject.pbl;myproject\\lib\\logger\\logger.pbl;myproject\\lib\\payroll\\payroll.pbl;myproject\\lib\\contract\\contract.pbl;myproject\\lib\\common\\common.pbl;";
  type "pb";
 
-fileType text
+wikipedia https://en.wikipedia.org/wiki/PowerBuilder
+ example
+  UPDATE my_employee SET STATUS = 'A';
+   IF sqlca.sqlcode<>0 THEN ...
+ related csharp json xml sql
+ summary PowerBuilder is an integrated development environment owned by SAP since the acquisition of Sybase in 2010.  On July 5, 2016, SAP and Appeon entered into an agreement whereby Appeon would be responsible for developing, selling, and supporting PowerBuilder.PowerBuilder has been in use since 1991, peaking around 1998 with around 100,000 users. While PowerBuilder's market share has declined over the years, many applications created with it are still in use today.  Over the years, PowerBuilder has been updated with new standards.  In 2010, a major upgrade of PowerBuilder was released to provide support for the Microsoft .NET Framework.  In 2014, support was added for OData, dockable windows, and 64-bit native applications.  In 2017, support was added for iOS and Android app development.PowerBuilder 2018 provides new targets to enable developers to rapidly create RESTful Web APIs and non-visual .NET assemblies, in a test-driven manner, with the native PowerBuilder IDE and C#. A preview version is currently available for select customers.
+ pageId 1611118
+ created 2005
+ backlinksCount 65
+ revisionCount 539
+ dailyPageViews 189
+ appeared 2010
 
+githubLanguage PowerBuilder
+ fileExtensions pbt sra sru srw
+ trendingProjectsCount 0
+
+leachim6 PowerBuilder
+ filepath p/PowerBuilder.psr
+ fileExtensions psr
+ example
+  MessageBox("Hello World")
+  
 rosettaCode Powerbuilder
 
-centralPackageRepositoryCount 0
 goodreads
  title|year|author|goodreadsId|rating|ratings|reviews
  PowerBuilder 5.0: Secrets of the PowerBuilder Masters: PowerBuilder Developer's Journal|1996|Michael MacDonald|16267172|0.0|0|0
@@ -66,21 +83,6 @@ goodreads
  PowerBuilder 4 Programming for Dummies|1995|Ted Coombs|2386887|0.0|0|0
  Powerbuilder For Xbase Programmers||Greg Nunemacher|5513792|0.0|0|0
  Distributed Application Development With Powerbuilder 6 (Powerbuilder Developer's Library)||Michael Barlotta|3930419|0.0|0|0
-lineCommentToken //
-features
- hasLineComments true
-  // A comment
- hasComments true
-  // A comment
- hasPrintDebugging true
- hasSemanticIndentation false
- hasStrings true
-  "Hello world"
-leachim6 PowerBuilder
- filepath p/PowerBuilder.psr
- fileExtensions psr
- example
-  MessageBox("Hello World")
-  
-printToken MessageBox
-stringToken "
+
+fileType text
+centralPackageRepositoryCount 0

@@ -1,6 +1,7 @@
 title Tandem Advanced Command Language
 appeared 1999
 type pl
+standsFor Tandem Advanced Command Language
 
 wikipedia https://en.wikipedia.org/wiki/TACL
  example
@@ -22,11 +23,8 @@ helloWorldCollection Tandem Advanced Command Language
  
  #OUTPUT Hello world
 
-standsFor Tandem Advanced Command Language
-fileType text
-
 tiobe TACL
-
 hopl 1368
 
+fileType text
 centralPackageRepositoryCount 0

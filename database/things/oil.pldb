@@ -1,8 +1,11 @@
 title oil
 appeared 2016
 type pl
-
 description Oil is a new Unix shell.
+website http://www.oilshell.org/
+aka OSH
+domainName oilshell.org
+ registered 2016
 
 githubRepo https://github.com/oilshell/oil
  firstCommit 2016
@@ -14,19 +17,12 @@ githubRepo https://github.com/oilshell/oil
  description Oil is a new Unix shell.  It's our upgrade path from bash to a better language and runtime.  It's also for Python and JavaScript users who avoid shell!
  issues 421
 
-website http://www.oilshell.org/
-aka OSH
-
-twitter oilshellblog
-
-wordRank 981
-isOpenSource true
-
 subreddit oilshell
  memberCount
   2017 221
   2022 436
 
+twitter oilshellblog
+wordRank 981
+isOpenSource true
 centralPackageRepositoryCount 0
-domainName oilshell.org
- registered 2016

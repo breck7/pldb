@@ -1,6 +1,9 @@
 title Xojo
 appeared 1996
 type pl
+website http://xojo.com
+aka REALbasic
+domainName xojo.com
 
 features
  hasComments true
@@ -10,6 +13,10 @@ features
  hasSemanticIndentation false
  hasStrings true
   "Hello world"
+
+lineCommentToken //
+printToken Print
+stringToken "
 
 wikipedia https://en.wikipedia.org/wiki/Xojo
  example
@@ -53,22 +60,6 @@ linguistGrammarRepo https://github.com/angryant0007/VBDotNetSyntax
   #tag EndToolbar
   
 
-website http://xojo.com
-
-twitter xojo
-
-fileType text
-isOpenSource false
-
-tiobe Xojo
-
-rosettaCode Xojo
-
-centralPackageRepositoryCount 0
-lineCommentToken //
-
-aka REALbasic
-
 leachim6 RealBasic
  filepath r/RealBasic.realbasic
  fileExtensions realbasic
@@ -78,6 +69,11 @@ leachim6 RealBasic
     Quit
   End Function
   
-printToken Print
-domainName xojo.com
-stringToken "
+rosettaCode Xojo
+
+tiobe Xojo
+
+twitter xojo
+fileType text
+isOpenSource false
+centralPackageRepositoryCount 0

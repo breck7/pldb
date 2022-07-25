@@ -1,6 +1,7 @@
 title CodeStudAssembler
 appeared 2017
 type assembly
+reference https://v8.dev/blog/csa
 
 example
    test al,0x1
@@ -14,6 +15,5 @@ example
    movq rax,[r13-0x60]
    retl
 
-reference https://v8.dev/blog/csa
 fileType text
 centralPackageRepositoryCount 0

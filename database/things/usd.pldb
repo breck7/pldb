@@ -1,11 +1,9 @@
 title USD
-standsFor Universal Scene Description
 type pl
-corporateDevelopers Pixar
 website https://graphics.pixar.com/usd/release/index.html
-pygmentsHighlighter USD
- filename usd.py
- fileExtensions usd usda
+standsFor Universal Scene Description
+corporateDevelopers Pixar
+
 example
  #usda 1.0
  
@@ -15,3 +13,7 @@ example
      {
      }
  }
+
+pygmentsHighlighter USD
+ filename usd.py
+ fileExtensions usd usda

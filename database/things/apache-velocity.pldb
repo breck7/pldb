@@ -1,6 +1,16 @@
 title Velocity
 appeared 2003
 type template
+website http://velocity.apache.org/
+aka Velocity
+corporateDevelopers Apache
+domainName velocity.apache.org
+
+features
+ hasStrings true
+  "Hello world"
+
+stringToken "
 
 wikipedia https://en.wikipedia.org/wiki/Apache_Velocity
  example
@@ -18,6 +28,11 @@ wikipedia https://en.wikipedia.org/wiki/Apache_Velocity
  revisionCount 133
  appeared 2003
 
+codeMirror velocity
+pygmentsHighlighter Velocity
+ filename templates.py
+ fileExtensions vm fhtml
+
 helloWorldCollection Apache Velocity
  <HTML>
  <!-- Hello World in Velocity -->
@@ -28,20 +43,6 @@ helloWorldCollection Apache Velocity
  </HTML>
  
 
-website http://velocity.apache.org/
-aka Velocity
 fileType text
 isOpenSource true
-
-codeMirror velocity
-
-corporateDevelopers Apache
 centralPackageRepositoryCount 0
-pygmentsHighlighter Velocity
- filename templates.py
- fileExtensions vm fhtml
-domainName velocity.apache.org
-stringToken "
-features
- hasStrings true
-  "Hello world"

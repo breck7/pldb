@@ -1,13 +1,12 @@
 title mimix-stream-language
 appeared 2018
 type pl
+description MSL is built from Lisp style s-expressions. MSL differs from Lisp in the way it processes functions and arguments, so Lisp expressions cannot be directly included inside MSL nor vice-versa. MSL code can only contain other MSL.
+reference https://mimix.io/wp-content/uploads/2020/01/MSL-Specifications-2020.pdf
+aka msl
 
 example
  (@lonely-planet Lonely Planet (@Hawaii)
  (@intro The goddess (@Pele) …)
  (@chapter 1 (@p1 When the ancient (@Hawaii Hawaiians)…) (@p2 ...))
  (@chapter 2 …)))
-
-description MSL is built from Lisp style s-expressions. MSL differs from Lisp in the way it processes functions and arguments, so Lisp expressions cannot be directly included inside MSL nor vice-versa. MSL code can only contain other MSL.
-reference https://mimix.io/wp-content/uploads/2020/01/MSL-Specifications-2020.pdf
-aka msl

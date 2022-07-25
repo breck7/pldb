@@ -1,12 +1,15 @@
 title Lingo
 appeared 1988
 type pl
+country United States
 
 features
  hasComments true
  hasSemanticIndentation false
  hasStrings true
   "Hello world"
+
+stringToken "
 
 wikipedia https://en.wikipedia.org/wiki/Lingo_(programming_language)
  related smalltalk hypertalk javascript actionscript
@@ -25,17 +28,6 @@ helloWorldCollection Lingo
    alert "Hello World" 
  end
  
-
-country United States
-fileType text
-
-tiobe Lingo
-
-hopl 1640
-
-rosettaCode Lingo
-
-centralPackageRepositoryCount 0
 leachim6 Lingo
  filepath l/Lingo.lg4
  fileExtensions lg4
@@ -44,4 +36,10 @@ leachim6 Lingo
     alert "Hello World"
   end
   
-stringToken "
+rosettaCode Lingo
+
+tiobe Lingo
+hopl 1640
+
+fileType text
+centralPackageRepositoryCount 0

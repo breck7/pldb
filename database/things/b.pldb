@@ -2,6 +2,20 @@ title B
 appeared 1969
 type pl
 creators Ken Thompson and Dennis Ritchie
+country United States
+
+features
+ hasPrintDebugging true
+ hasMultiLineComments true
+  /* A comment
+  */
+ hasComments true
+  /* A comment
+  */
+ hasSemanticIndentation false
+
+multiLineCommentTokens /* */
+printToken putchar
 
 wikipedia https://en.wikipedia.org/wiki/B_(programming_language)
  example
@@ -28,15 +42,6 @@ wikipedia https://en.wikipedia.org/wiki/B_(programming_language)
  appeared 1969
  fileExtensions b
 
-country United States
-fileType text
-wordRank 124
-
-hopl 492
-
-rosettaCode B
-
-centralPackageRepositoryCount 0
 leachim6 B
  filepath b/B.b
  fileExtensions b
@@ -45,14 +50,10 @@ leachim6 B
       putchar ('Hell'); putchar ('o Wo'); putchar ('rld'); putchar ('*n');
   }
   
-printToken putchar
-features
- hasPrintDebugging true
- hasMultiLineComments true
-  /* A comment
-  */
- hasComments true
-  /* A comment
-  */
- hasSemanticIndentation false
-multiLineCommentTokens /* */
+rosettaCode B
+
+hopl 492
+
+fileType text
+wordRank 124
+centralPackageRepositoryCount 0

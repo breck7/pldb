@@ -1,6 +1,16 @@
 title XBLite
 appeared 2001
 type pl
+creators David Szafranski
+
+features
+ hasLineComments true
+  ' A comment
+ hasComments true
+  ' A comment
+ hasSemanticIndentation false
+
+lineCommentToken '
 
 wikipedia https://en.wikipedia.org/wiki/XBLite
  example
@@ -25,11 +35,3 @@ wikipedia https://en.wikipedia.org/wiki/XBLite
  appeared 2001
 
 centralPackageRepositoryCount 0
-creators David Szafranski
-lineCommentToken '
-features
- hasLineComments true
-  ' A comment
- hasComments true
-  ' A comment
- hasSemanticIndentation false

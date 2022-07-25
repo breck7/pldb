@@ -1,12 +1,16 @@
 title Miranda
 appeared 1985
 type pl
+creators David Turner
 
 features
  hasSemanticIndentation true
  hasPrintDebugging true
  hasStrings true
   "Hello world"
+
+printToken Stdout
+stringToken "
 
 wikipedia https://en.wikipedia.org/wiki/Miranda_(programming_language)
  example
@@ -27,11 +31,14 @@ wikipedia https://en.wikipedia.org/wiki/Miranda_(programming_language)
  dailyPageViews 56
  appeared 1985
 
-fileType text
+leachim6 Miranda
+ filepath m/Miranda.m
+ fileExtensions m
+ example
+  main :: [sys_message]
+  main = [Stdout "Hello World"]
+  
 
-hopl 911
-
-centralPackageRepositoryCount 0
 rijuRepl https://riju.codes/miranda
  example
   main = [Stdout "Hello, world!"]
@@ -40,13 +47,8 @@ rijuRepl https://riju.codes/miranda
  fileExtensions m
  website https://www.cs.kent.ac.uk/people/staff/dat/miranda/
  githubRepo https://www.cs.kent.ac.uk/people/staff/dat/miranda/downloads/
-creators David Turner
-leachim6 Miranda
- filepath m/Miranda.m
- fileExtensions m
- example
-  main :: [sys_message]
-  main = [Stdout "Hello World"]
-  
-printToken Stdout
-stringToken "
+
+hopl 911
+
+fileType text
+centralPackageRepositoryCount 0

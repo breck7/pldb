@@ -2,6 +2,8 @@ title Knitr
 appeared 2012
 type template
 
+compilesTo latex
+
 wikipedia https://en.wikipedia.org/wiki/Knitr
  example
   The Wilcoxon Sign test was applied as statistical comparison of the average of two dependent samples above. 
@@ -17,6 +19,5 @@ wikipedia https://en.wikipedia.org/wiki/Knitr
  dailyPageViews 48
  appeared 2012
 
-compilesTo latex
 isOpenSource true
 centralPackageRepositoryCount 0

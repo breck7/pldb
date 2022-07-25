@@ -1,6 +1,8 @@
 title srv
 appeared 2010
 type idl
+website http://wiki.ros.org/srv
+fileExtensions srv
 
 example
  #request constants
@@ -16,6 +18,3 @@ example
  another_pkg/YetAnotherMessage val
  CustomMessageDefinedInThisPackage value
  uint32 an_integer
-
-website http://wiki.ros.org/srv
-fileExtensions srv

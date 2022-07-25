@@ -1,6 +1,13 @@
 title NWScript
 appeared 2004
 type pl
+corporateDevelopers BioWare
+
+features
+ hasStrings true
+  "Hello world"
+
+stringToken "
 
 wikipedia https://en.wikipedia.org/wiki/NWScript
  example
@@ -17,9 +24,6 @@ wikipedia https://en.wikipedia.org/wiki/NWScript
  dailyPageViews 11
  appeared 1975
 
-fileType text
-centralPackageRepositoryCount 0
-corporateDevelopers BioWare
 leachim6 NWScript
  filepath n/NWScript.nss
  fileExtensions nss
@@ -29,7 +33,6 @@ leachim6 NWScript
       SendMessageToPC(GetEnteringObject(), "Hello World");
   }
   
-stringToken "
-features
- hasStrings true
-  "Hello world"
+
+fileType text
+centralPackageRepositoryCount 0

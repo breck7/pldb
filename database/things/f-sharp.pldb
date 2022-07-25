@@ -1,6 +1,15 @@
 title F#
 appeared 2005
 type pl
+creators Don Syme
+website http://fsharp.org
+reference https://docs.microsoft.com/en-us/dotnet/fsharp/language-reference/index
+aka f#
+aka fsharp
+fileExtensions fs fsi fsx fsscript
+domainName fsharp.org
+
+visualParadigm false
 
 features
  hasComments true
@@ -50,6 +59,12 @@ features
   *)
  hasStrings true
 
+lineCommentToken //
+multiLineCommentTokens (* *)
+printToken printfn
+stringToken "
+keywords abstract and atomic as assert asr base begin break checked component const constraint constructor continue class default delegate do done downcast downto elif else end exception eager event external extern false finally for fun function fixed functor global if in include inherit inline interface internal land lor lsl lsr lxor lazy let match member mod module mutable namespace method mixin new not null of open or object override private parallel process protected pure public rec return static sealed struct sig then to true tailcall trait try type upcast use val void virtual volatile when while with yield
+
 wikipedia https://en.wikipedia.org/wiki/F_Sharp_(programming_language)
  example
   /// A simple prime number detector
@@ -89,11 +104,10 @@ githubLanguage F#
   dotnet fsharp https://github.com/dotnet.png https://github.com/dotnet/fsharp F# #b845fc 1919 476 39 "The F# compiler, FSharp.Core library, and tools for F#"
  trendingProjectsCount 2
 
-helloWorldCollection F#
- (* Hello World in F# *)
- 
- printf "Hello World!\n"
-
+monaco fsharp
+pygmentsHighlighter F#
+ filename dotnet.py
+ fileExtensions fs fsi
 linguistGrammarRepo https://github.com/fsprojects/atom-fsharp
  firstCommit 2015
  lastCommit 2017
@@ -118,61 +132,45 @@ linguistGrammarRepo https://github.com/fsprojects/atom-fsharp
       |> String.concat ","
   
 
-website http://fsharp.org
-reference https://docs.microsoft.com/en-us/dotnet/fsharp/language-reference/index
-aka f#
-
-replit fsharp
-
-fileExtensions fs fsi fsx fsscript
-fileType text
-isOpenSource true
-
-tiobe F#
-
-meetup f-programming
- memberCount 37224
- groupCount 128
-
 projectEuler F#
  memberCount
   2019 1199
   2022 1245
-
-hopl 3716
-
-quineRelay F#
-
-ubuntuPackage fsharp
-
-lineCommentToken //
-visualParadigm false
-jupyterKernel https://github.com/fsprojects/IfSharp
-stackOverflowSurvey
- 2021
-  users 804
-  medianSalary 81037
-  fans 2157
-  percentageUsing 0.01
-packageRepository https://www.nuget.org/
-aka fsharp
-rijuRepl https://riju.codes/fsharp
- example
-  printfn "Hello, world!"
-  
-creators Don Syme
-pygmentsHighlighter F#
- filename dotnet.py
- fileExtensions fs fsi
+helloWorldCollection F#
+ (* Hello World in F# *)
+ 
+ printf "Hello World!\n"
 leachim6 FSharp
  filepath f/FSharp.fs
  fileExtensions fs
  example
   printfn "Hello World"
   
-printToken printfn
-multiLineCommentTokens (* *)
-domainName fsharp.org
-monaco fsharp
-keywords abstract and atomic as assert asr base begin break checked component const constraint constructor continue class default delegate do done downcast downto elif else end exception eager event external extern false finally for fun function fixed functor global if in include inherit inline interface internal land lor lsl lsr lxor lazy let match member mod module mutable namespace method mixin new not null of open or object override private parallel process protected pure public rec return static sealed struct sig then to true tailcall trait try type upcast use val void virtual volatile when while with yield
-stringToken "
+quineRelay F#
+
+rijuRepl https://riju.codes/fsharp
+ example
+  printfn "Hello, world!"
+  
+replit fsharp
+
+stackOverflowSurvey
+ 2021
+  users 804
+  medianSalary 81037
+  fans 2157
+  percentageUsing 0.01
+
+meetup f-programming
+ memberCount 37224
+ groupCount 128
+
+tiobe F#
+hopl 3716
+
+packageRepository https://www.nuget.org/
+
+ubuntuPackage fsharp
+jupyterKernel https://github.com/fsprojects/IfSharp
+fileType text
+isOpenSource true

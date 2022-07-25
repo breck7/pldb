@@ -2,6 +2,12 @@ title bosque
 appeared 2019
 type pl
 
+features
+ hasStrings true
+  "Hello world"
+
+stringToken "
+
 githubRepo https://github.com/Microsoft/BosqueLanguage
  firstCommit 2019
  stars 5294
@@ -21,7 +27,3 @@ leachim6 Bosque
   entrypoint function main(): String {  
       return "Hello World";
   }
-stringToken "
-features
- hasStrings true
-  "Hello world"

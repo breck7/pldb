@@ -2,7 +2,20 @@ title Bel
 appeared 2019
 type pl
 creators Paul Graham
+website http://paulgraham.com/bel.html
+
 related arc
+
+features
+ hasLineComments true
+  ; A comment
+ hasComments true
+  ; A comment
+ hasPrintDebugging true
+ hasSemanticIndentation false
+
+lineCommentToken ;
+printToken prn
 
 example
  ; Bel in Bel. 9 October 2019, 9:14 GMT
@@ -30,14 +43,3 @@ example
                        (cons (car (car args))
                              (apply append (cdr (car args))
                                            (cdr args)))))
-
-website http://paulgraham.com/bel.html
-lineCommentToken ;
-printToken prn
-features
- hasLineComments true
-  ; A comment
- hasComments true
-  ; A comment
- hasPrintDebugging true
- hasSemanticIndentation false

@@ -1,16 +1,11 @@
 title MongoDB
 appeared 2009
 type application
+website https://www.mongodb.com/
+domainName mongodb.com
+ registered 2008
 
-wikipedia https://en.wikipedia.org/wiki/MongoDB
- related c javascript linux solaris freebsd json nginx-config sql
- summary MongoDB (from humongous) is a free and open-source cross-platform document-oriented database program. Classified as a NoSQL database program, MongoDB uses JSON-like documents with schemas. MongoDB is developed by MongoDB Inc., and is published under a combination of the GNU Affero General Public License and the Apache License.
- pageId 21855450
- dailyPageViews 1760
- created 2009
- backlinksCount 348
- revisionCount 1385
- appeared 2007
+writtenIn cpp c javascript
 
 githubRepo https://github.com/mongodb/mongo
  stars 22031
@@ -22,23 +17,30 @@ githubRepo https://github.com/mongodb/mongo
  description The MongoDB Database
  issues 57
 
-website https://www.mongodb.com/
+wikipedia https://en.wikipedia.org/wiki/MongoDB
+ related c javascript linux solaris freebsd json nginx-config sql
+ summary MongoDB (from humongous) is a free and open-source cross-platform document-oriented database program. Classified as a NoSQL database program, MongoDB uses JSON-like documents with schemas. MongoDB is developed by MongoDB Inc., and is published under a combination of the GNU Affero General Public License and the Apache License.
+ pageId 21855450
+ dailyPageViews 1760
+ created 2009
+ backlinksCount 348
+ revisionCount 1385
+ appeared 2007
 
-twitter mongodb
-
-fileType text
-isOpenSource true
-linkedInSkill MongoDB
- 2018 254440
-writtenIn cpp c javascript
-centralPackageRepositoryCount 0
 rijuRepl https://riju.codes/mongodb
  example
   print("Hello, world!")
   
+
+linkedInSkill MongoDB
+ 2018 254440
+
 goodreads
  title|year|author|goodreadsId|rating|ratings|reviews
  50 Tips and Tricks for MongoDB Developers|2011|Kristina Chodorow|16286777|3.63|60|5
  Mongodb (Programming)|2014|Paula Drew|42282006|3.00|2|0
-domainName mongodb.com
- registered 2008
+
+twitter mongodb
+fileType text
+isOpenSource true
+centralPackageRepositoryCount 0

@@ -2,6 +2,9 @@ title Rexx
 appeared 1979
 type pl
 creators Mike Cowlishaw
+fileExtensions cmd exec rexx rex
+country United Kingdom
+corporateDevelopers IBM
 
 features
  hasComments true
@@ -14,6 +17,10 @@ features
  hasSemanticIndentation false
  hasStrings true
   "Hello world"
+
+multiLineCommentTokens /* */
+printToken say
+stringToken "
 
 wikipedia https://en.wikipedia.org/wiki/REXX
  example
@@ -35,6 +42,9 @@ githubLanguage REXX
  fileExtensions rexx pprx rex
  trendingProjectsCount 0
 
+pygmentsHighlighter Rexx
+ filename scripting.py
+ fileExtensions rexx rex rx arexx
 linguistGrammarRepo https://github.com/mblocker/rexx-sublime
  firstCommit 2014
  lastCommit 2017
@@ -97,34 +107,26 @@ linguistGrammarRepo https://github.com/mblocker/rexx-sublime
         end
   return
 
-
-tryItOnline rexx
-
-country United Kingdom
-fileExtensions cmd exec rexx rex
-fileType text
-
-tiobe REXX
-
 projectEuler Rexx
  memberCount
   2019 11
   2022 11
-
-hopl 868
-
+leachim6 Rexx
+ filepath r/Rexx.rexx
+ fileExtensions rexx
+ example
+  <<hello.rexx>>=
+  Say "Hello World"
+  
+rosettaCode REXX
 quineRelay REXX
 
-ubuntuPackage regina-rexx
-
-rosettaCode REXX
-
-corporateDevelopers IBM
-centralPackageRepositoryCount 0
 rijuRepl https://riju.codes/rexx
  example
   say "Hello, world!"
   
+tryItOnline rexx
+
 goodreads
  title|year|author|goodreadsId|rating|ratings|reviews
  Programming In Rexx|1992|Charles Daney|1795698|4.40|5|0
@@ -135,16 +137,10 @@ goodreads
  Rexx: Advanced Techniques For Programmers|1992|Peter C. Kiesel|13267128|3.00|2|0
  The REXX Language on TSO|2012|Gabriel F. Gargiulo|27149752|4.00|3|0
  Object-Oriented Programming with REXX|1997|Thomas Ender|7323905|0.0|0|0
-pygmentsHighlighter Rexx
- filename scripting.py
- fileExtensions rexx rex rx arexx
-leachim6 Rexx
- filepath r/Rexx.rexx
- fileExtensions rexx
- example
-  <<hello.rexx>>=
-  Say "Hello World"
-  
-printToken say
-multiLineCommentTokens /* */
-stringToken "
+
+tiobe REXX
+hopl 868
+
+ubuntuPackage regina-rexx
+fileType text
+centralPackageRepositoryCount 0

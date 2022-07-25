@@ -1,6 +1,12 @@
 title Perl 6
 appeared 2015
 type pl
+creators Larry Wall
+website https://perl6.org/
+aka Raku perl6
+domainName perl6.org
+
+visualParadigm false
 
 features
  hasMultipleInheritance true
@@ -10,6 +16,8 @@ features
  hasComments true
   # A comment
  hasSemanticIndentation false
+
+lineCommentToken #
 
 wikipedia https://en.wikipedia.org/wiki/Perl_6
  example
@@ -50,19 +58,13 @@ linguistGrammarRepo https://github.com/perl6/atom-language-perl6
   # vim: ft=perl6
   
 
-website https://perl6.org/
-aka Raku perl6
-
 tryItOnline perl6
 
-fileType text
-isOpenSource true
-visualParadigm false
-centralPackageRepositoryCount 0
-creators Larry Wall
 goodreads
  title|year|author|goodreadsId|rating|ratings|reviews
  Think Perl 6: How to Think Like a Computer Scientist|2017|Laurent Rosenfeld|54910137|4.00|2|0
  Learning to program with Perl 6: First Steps: Getting into programming without leaving the command line.||J.J. Merelo|56847882|3.50|2|0
-lineCommentToken #
-domainName perl6.org
+
+fileType text
+isOpenSource true
+centralPackageRepositoryCount 0

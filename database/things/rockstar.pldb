@@ -1,6 +1,18 @@
 title Rockstar
 appeared 2018
 type esolang
+description Rockstar is a dynamically typed Turing-complete programming language. Rockstar is designed for creating computer programs that are also song lyrics, and is heavily influenced by the lyrical conventions of 1980s hard rock and power ballads.
+website https://codewithrockstar.com/
+domainName codewithrockstar.com
+ registered 2018
+
+features
+ hasPrintDebugging true
+ hasStrings true
+  "Hello world"
+
+printToken Scream
+stringToken "
 
 example
  Midnight takes your heart and your soul
@@ -30,8 +42,6 @@ example
  
  Whisper my world 
 
-description Rockstar is a dynamically typed Turing-complete programming language. Rockstar is designed for creating computer programs that are also song lyrics, and is heavily influenced by the lyrical conventions of 1980s hard rock and power ballads.
-
 githubRepo https://github.com/dylanbeattie/rockstar
  firstCommit 2018
  stars 63
@@ -42,27 +52,16 @@ githubRepo https://github.com/dylanbeattie/rockstar
  description The Rockstar programming language specification
  issues 0
 
-
-tryItOnline rockstar
-
-fileType text
-isOpenSource true
-
-rosettaCode Rockstar
-
-centralPackageRepositoryCount 0
-website https://codewithrockstar.com/
 leachim6 Rockstar
  filepath r/Rockstar.rock
  fileExtensions rock
  example
   Scream "Hello World"
   
-printToken Scream
-features
- hasPrintDebugging true
- hasStrings true
-  "Hello world"
-domainName codewithrockstar.com
- registered 2018
-stringToken "
+rosettaCode Rockstar
+
+tryItOnline rockstar
+
+fileType text
+isOpenSource true
+centralPackageRepositoryCount 0

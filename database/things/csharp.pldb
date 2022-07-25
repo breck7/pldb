@@ -2,6 +2,12 @@ title C#
 appeared 2000
 type pl
 creators Anders Hejlsberg
+website https://docs.microsoft.com/dotnet/csharp/language-reference/
+fileExtensions cs
+country United States
+corporateDevelopers Microsoft
+
+visualParadigm false
 
 features
  hasComments true
@@ -152,6 +158,12 @@ features
   Func<TIn, TOut> Compose<TIn, TMid, TOut>(Func<TMid, TOut> f, Func<TIn, TMid> g) => _ => f(g(_));
  isCaseSensitive true
 
+lineCommentToken //
+multiLineCommentTokens /* */
+printToken Console.WriteLine
+stringToken "
+keywords abstract add alias as ascending async await base bool break byte case catch char checked class const continue decimal default delegate descending do double dynamic else enum event explicit extern false finally fixed float for foreach from get global goto group if implicit in int interface internal into is join let lock long namespace new null object operator orderby out override params partial private protected public readonly ref remove return sbyte sealed select set short sizeof stackalloc static string struct switch this throw true try typeof uint ulong unchecked unsafe ushort using value var virtual void volatile where while yield
+
 wikipedia https://en.wikipedia.org/wiki/C_Sharp_(programming_language)
  example
   using System.Windows.Forms;
@@ -205,6 +217,11 @@ githubLanguage C#
   GoogleCloudPlatform microservices-demo https://github.com/GoogleCloudPlatform.png https://github.com/GoogleCloudPlatform/microservices-demo C# #178600 5767 865 372 "Sample cloud-native application with 10 microservices showcasing Kubernetes, Istio, gRPC and OpenCensus. Provided for illustration and demo purposes."
  trendingProjectsCount 26
 
+antlr https://github.com/antlr/grammars-v4/tree/master/csharp
+monaco csharp
+pygmentsHighlighter C#
+ filename dotnet.py
+ fileExtensions cs
 linguistGrammarRepo https://github.com/atom/language-csharp
  firstCommit 2014
  lastCommit 2018
@@ -232,54 +249,20 @@ linguistGrammarRepo https://github.com/atom/language-csharp
           }
       }
   }
-
-website https://docs.microsoft.com/dotnet/csharp/language-reference/
-
-replit csharp
-
-country United States
-fileExtensions cs
-fileType text
-
-tiobe C#
- currentRank 5
-
-meetup csharp
- memberCount 351091
- groupCount 802
+languageServerProtocolProject https://github.com/OmniSharp/csharp-language-server-protocol
+ writtenIn csharp
 
 projectEuler C#
  memberCount
   2019 13078
   2022 14113
+leachim6 CSharp
+ filepath c/CSharp.cs
+ fileExtensions cs
+ example
+  System.Console.WriteLine("Hello World");
+  
 
-hopl 3445
-
-subreddit csharp
- memberCount
-  2017 46616
-  2022 202070
-
-antlr https://github.com/antlr/grammars-v4/tree/master/csharp
-
-corporateDevelopers Microsoft
-indeedJobs c# developer
- 2017 19747
-
-lineCommentToken //
-printToken Console.WriteLine
-languageServerProtocolProject https://github.com/OmniSharp/csharp-language-server-protocol
- writtenIn csharp
-visualParadigm false
-jupyterKernel https://github.com/zabirauf/icsharp
-keywords abstract add alias as ascending async await base bool break byte case catch char checked class const continue decimal default delegate descending do double dynamic else enum event explicit extern false finally fixed float for foreach from get global goto group if implicit in int interface internal into is join let lock long namespace new null object operator orderby out override params partial private protected public readonly ref remove return sbyte sealed select set short sizeof stackalloc static string struct switch this throw true try typeof uint ulong unchecked unsafe ushort using value var virtual void volatile where while yield
-stackOverflowSurvey
- 2021
-  users 22984
-  medianSalary 58368
-  fans 17999
-  percentageUsing 0.28
-packageRepository https://www.nuget.org/
 rijuRepl https://riju.codes/csharp
  example
   class main {
@@ -287,16 +270,31 @@ rijuRepl https://riju.codes/csharp
           System.Console.WriteLine("Hello, world!");
       }
   }
+replit csharp
+
+indeedJobs c# developer
+ 2017 19747
+stackOverflowSurvey
+ 2021
+  users 22984
+  medianSalary 58368
+  fans 17999
+  percentageUsing 0.28
+
+subreddit csharp
+ memberCount
+  2017 46616
+  2022 202070
+meetup csharp
+ memberCount 351091
+ groupCount 802
+
+tiobe C#
+ currentRank 5
+hopl 3445
+
+packageRepository https://www.nuget.org/
+
+jupyterKernel https://github.com/zabirauf/icsharp
+fileType text
 githubCopilotOptimized
-pygmentsHighlighter C#
- filename dotnet.py
- fileExtensions cs
-leachim6 CSharp
- filepath c/CSharp.cs
- fileExtensions cs
- example
-  System.Console.WriteLine("Hello World");
-  
-monaco csharp
-multiLineCommentTokens /* */
-stringToken "

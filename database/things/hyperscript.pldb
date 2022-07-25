@@ -1,14 +1,8 @@
 title Hyperscript
+appeared 2012
 type template
-githubRepo https://github.com/hyperhype/hyperscript
- firstCommit 2012
- stars 2389
- forks 112
- subscribers 48
- created 2013
- updated 2022
- description Create HyperText with JavaScript.
- issues 41
+creators Dominic Tarr
+
 example
  var h = require('hyperscript')
  h('div#page',
@@ -26,5 +20,13 @@ example
      h('p',
        "the intention is for this to be used to create\n",
        "reusable, interactive html widgets. "))
-appeared 2012
-creators Dominic Tarr
+
+githubRepo https://github.com/hyperhype/hyperscript
+ firstCommit 2012
+ stars 2389
+ forks 112
+ subscribers 48
+ created 2013
+ updated 2022
+ description Create HyperText with JavaScript.
+ issues 41

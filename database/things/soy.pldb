@@ -1,7 +1,23 @@
 title Soy
 appeared 2008
 type template
+reference https://godoc.org/github.com/robfig/soy
 aka Google Closure Templates
+fileExtensions soy
+corporateDevelopers Google
+
+features
+ hasLineComments true
+  // A comment
+ hasComments true
+  // A comment
+ hasMultiLineComments true
+  /* A comment
+  */
+ hasSemanticIndentation false
+
+lineCommentToken //
+multiLineCommentTokens /* */
 
 example
  /**
@@ -24,18 +40,3 @@ example
      No additional people to greet.
    {/foreach}
  {/template}
-
-reference https://godoc.org/github.com/robfig/soy
-fileExtensions soy
-corporateDevelopers Google
-lineCommentToken //
-features
- hasLineComments true
-  // A comment
- hasComments true
-  // A comment
- hasMultiLineComments true
-  /* A comment
-  */
- hasSemanticIndentation false
-multiLineCommentTokens /* */

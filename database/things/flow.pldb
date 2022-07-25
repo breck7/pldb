@@ -1,6 +1,20 @@
 title Flow
 appeared 2014
 type pl
+description Javascript with static type checking.
+website https://flow.org/
+webRepl https://flow.org/try/
+domainName flow.org
+ registered 2002
+
+features
+ hasLineComments true
+  // A comment
+ hasComments true
+  // A comment
+ hasSemanticIndentation false
+
+lineCommentToken //
 
 example
  // @flow
@@ -9,8 +23,6 @@ example
  }
  
  square("2"); // Error!
-
-description Javascript with static type checking.
 
 githubRepo https://github.com/facebook/flow
  firstCommit 2014
@@ -22,17 +34,4 @@ githubRepo https://github.com/facebook/flow
  description Adds static typing to JavaScript to improve developer productivity and code quality.
  issues 2478
 
-website https://flow.org/
-webRepl https://flow.org/try/
-
 twitter flowtype
-
-lineCommentToken //
-features
- hasLineComments true
-  // A comment
- hasComments true
-  // A comment
- hasSemanticIndentation false
-domainName flow.org
- registered 2002

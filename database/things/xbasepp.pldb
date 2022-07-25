@@ -2,6 +2,20 @@ title XBase++
 appeared 1997
 type pl
 
+features
+ hasLineComments true
+  // A comment
+ hasComments true
+  // A comment
+ hasPrintDebugging true
+ hasSemanticIndentation false
+ hasStrings true
+  "Hello world"
+
+lineCommentToken //
+printToken Qout
+stringToken "
+
 wikipedia https://en.wikipedia.org/wiki/XBase%2B%2B
  example
   #include "class.ch"
@@ -85,17 +99,6 @@ wikipedia https://en.wikipedia.org/wiki/XBase%2B%2B
  dailyPageViews 19
  appeared 2000
 
-centralPackageRepositoryCount 0
-lineCommentToken //
-features
- hasLineComments true
-  // A comment
- hasComments true
-  // A comment
- hasPrintDebugging true
- hasSemanticIndentation false
- hasStrings true
-  "Hello world"
 leachim6 XBase++
  filepath x/XBase++.prg
  fileExtensions prg
@@ -103,5 +106,5 @@ leachim6 XBase++
   func Main()
       Qout("Hello World")
   return 1
-printToken Qout
-stringToken "
+
+centralPackageRepositoryCount 0

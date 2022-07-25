@@ -2,6 +2,14 @@ title F
 appeared 1996
 type pl
 
+features
+ hasPrintDebugging true
+ hasStrings true
+  "Hello world"
+
+printToken print
+stringToken "
+
 wikipedia https://en.wikipedia.org/wiki/F_(programming_language)
  example
   program main
@@ -15,14 +23,6 @@ wikipedia https://en.wikipedia.org/wiki/F_(programming_language)
  revisionCount 59
  dailyPageViews 52
 
-fileType text
-wordRank 213
-
-hopl 3460
-
-rosettaCode F
-
-centralPackageRepositoryCount 0
 leachim6 F
  filepath f/F.f95
  fileExtensions f95
@@ -31,9 +31,10 @@ leachim6 F
      print *, "Hello World"
   end program hello
   
-printToken print
-features
- hasPrintDebugging true
- hasStrings true
-  "Hello world"
-stringToken "
+rosettaCode F
+
+hopl 3460
+
+fileType text
+wordRank 213
+centralPackageRepositoryCount 0

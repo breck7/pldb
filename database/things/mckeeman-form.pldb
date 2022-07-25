@@ -1,6 +1,10 @@
 title mckeeman-form
 type grammarLanguage
 creators Bill McKeeman
+reference https://www.youtube.com/watch?v=RGizBNflVKw
+
+features
+ hasSemanticIndentation true
 
 example
  json
@@ -104,8 +108,3 @@ example
   '000A' ws
   '000D' ws
   '0009' ws
-
-features
- hasSemanticIndentation true
-
-reference https://www.youtube.com/watch?v=RGizBNflVKw

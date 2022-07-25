@@ -1,12 +1,11 @@
 title ColdFusion Components
 appeared 1995
 type xmlFormat
-pygmentsHighlighter Coldfusion CFC
- filename templates.py
- fileExtensions cfc
-related cfml coldfusion
 reference https://helpx.adobe.com/coldfusion/developing-applications/building-blocks-of-coldfusion-applications/building-and-using-coldfusion-components.html
 reference https://helpx.adobe.com/coldfusion/developing-applications/building-blocks-of-coldfusion-applications/building-and-using-coldfusion-components/cfc-variables-and-scope.html
+
+related cfml coldfusion
+
 example
  <cfcomponent> 
  <cffunction name="allemployees" access="public" output="false" 
@@ -66,3 +65,7 @@ example
  </cfquery> 
  </cffunction> 
  </cfcomponent>
+
+pygmentsHighlighter Coldfusion CFC
+ filename templates.py
+ fileExtensions cfc

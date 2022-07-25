@@ -1,11 +1,8 @@
 title RAML
-standsFor RESTful API Modeling Language
 appeared 2013
 type yamlFormat
-
-githubLanguage RAML
- fileExtensions raml
- trendingProjectsCount 0
+website http://raml.org/spec.html
+standsFor RESTful API Modeling Language
 
 githubRepo https://github.com/raml-org/raml-spec
  firstCommit 2013
@@ -16,6 +13,10 @@ githubRepo https://github.com/raml-org/raml-spec
  updated 2022
  description RAML Specification
  issues 223
+
+githubLanguage RAML
+ fileExtensions raml
+ trendingProjectsCount 0
 
 linguistGrammarRepo https://github.com/atom/language-yaml
  firstCommit 2013
@@ -63,9 +64,8 @@ linguistGrammarRepo https://github.com/atom/language-yaml
       delete:
         description: |
           This method will *delete* an **individual song**
+languageServerProtocolProject https://github.com/raml-org/raml-language-server
 
-website http://raml.org/spec.html
 fileType text
 isOpenSource true
-languageServerProtocolProject https://github.com/raml-org/raml-language-server
 centralPackageRepositoryCount 0

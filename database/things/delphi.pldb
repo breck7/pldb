@@ -1,6 +1,12 @@
 title Delphi
 appeared 1995
 type pl
+website https://www.embarcadero.com/products/delphi
+reference http://delphi.wikia.com/wiki/Delphi_File_Extensions
+aka Embarcadero Delphi
+country United States
+
+visualParadigm false
 
 features
  hasComments true
@@ -13,6 +19,11 @@ features
  hasSemanticIndentation false
  hasStrings true
   'Hello world'
+
+lineCommentToken //
+multiLineCommentTokens { }
+printToken WriteLn
+stringToken '
 
 wikipedia https://en.wikipedia.org/wiki/Delphi_(programming_language)
  example
@@ -28,7 +39,15 @@ wikipedia https://en.wikipedia.org/wiki/Delphi_(programming_language)
  backlinksCount 303
  revisionCount 3
  appeared 2006
-multiLineCommentTokens { }
+
+pygmentsHighlighter Delphi
+ filename pascal.py
+ fileExtensions pas dpr
+
+projectEuler Delphi
+ memberCount
+  2019 482
+  2022 481
 helloWorldCollection Delphi%2FObject Pascal
  // Hello World in Delphi
  Program Hello_World;
@@ -39,50 +58,6 @@ helloWorldCollection Delphi%2FObject Pascal
    WriteLn('Hello World');
  End.
  
-
-website https://www.embarcadero.com/products/delphi
-reference http://delphi.wikia.com/wiki/Delphi_File_Extensions
-aka Embarcadero Delphi
-country United States
-fileType text
-isOpenSource false
-
-tiobe Delphi/Object Pascal
- currentRank 9
-
-meetup delphi
- memberCount 2368
- groupCount 24
-
-projectEuler Delphi
- memberCount
-  2019 482
-  2022 481
-
-hopl 1963
-
-subreddit delphi
- memberCount
-  2017 1085
-  2022 3238
-
-rosettaCode Delphi
-
-indeedJobs delphi engineer
- 2017 181
-
-lineCommentToken //
-visualParadigm false
-stackOverflowSurvey
- 2021
-  users 1731
-  medianSalary 46704
-  fans 975
-  percentageUsing 0.02
-centralPackageRepositoryCount 0
-pygmentsHighlighter Delphi
- filename pascal.py
- fileExtensions pas dpr
 leachim6 Delphi
  filepath d/Delphi.pas
  fileExtensions pas
@@ -93,5 +68,29 @@ leachim6 Delphi
   begin
   	WriteLn('Hello World');
   end.
-printToken WriteLn
-stringToken '
+rosettaCode Delphi
+
+indeedJobs delphi engineer
+ 2017 181
+stackOverflowSurvey
+ 2021
+  users 1731
+  medianSalary 46704
+  fans 975
+  percentageUsing 0.02
+
+subreddit delphi
+ memberCount
+  2017 1085
+  2022 3238
+meetup delphi
+ memberCount 2368
+ groupCount 24
+
+tiobe Delphi/Object Pascal
+ currentRank 9
+hopl 1963
+
+fileType text
+isOpenSource false
+centralPackageRepositoryCount 0

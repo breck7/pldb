@@ -1,6 +1,30 @@
 title Tea
 appeared 1997
 type pl
+website http://www2.pdmfc.com/tea
+
+features
+ hasPrintDebugging true
+ hasLineComments true
+  # A comment
+ hasComments true
+  # A comment
+ hasSemanticIndentation false
+ hasStrings true
+  "Hello world"
+
+lineCommentToken #
+printToken echo
+stringToken "
+
+example
+ echo "Hello, world!"
+example
+ class Square Rectangle (
+ )
+ method Square constructor ( size ) {
+  $super constructor $size $size
+ }
 
 wikipedia https://en.wikipedia.org/wiki/Tea_(programming_language)
  related tcl java scheme xml jvm
@@ -16,6 +40,9 @@ githubLanguage Tea
  fileExtensions tea
  trendingProjectsCount 0
 
+pygmentsHighlighter Tea
+ filename templates.py
+ fileExtensions tea
 linguistGrammarRepo https://github.com/pferruggiaro/sublime-tea
  firstCommit 2012
  lastCommit 2015
@@ -25,37 +52,13 @@ linguistGrammarRepo https://github.com/pferruggiaro/sublime-tea
  example
   <% template foo() %>
 
-website http://www2.pdmfc.com/tea
-fileType text
-wordRank 2862
-centralPackageRepositoryCount 0
-lineCommentToken #
-example
- echo "Hello, world!"
-
-example
- class Square Rectangle (
- )
- method Square constructor ( size ) {
-  $super constructor $size $size
- }
-pygmentsHighlighter Tea
- filename templates.py
- fileExtensions tea
 leachim6 Tea
  filepath t/Tea.tea
  fileExtensions tea
  example
   echo "Hello World"
   
-printToken echo
-features
- hasPrintDebugging true
- hasLineComments true
-  # A comment
- hasComments true
-  # A comment
- hasSemanticIndentation false
- hasStrings true
-  "Hello world"
-stringToken "
+
+fileType text
+wordRank 2862
+centralPackageRepositoryCount 0

@@ -2,6 +2,7 @@ title PL/I
 appeared 1964
 type pl
 standsFor Programming Language One
+corporateDevelopers IBM
 
 features
  hasPointers true
@@ -14,6 +15,9 @@ features
   */
  hasSemanticIndentation false
  hasAssignment true
+
+multiLineCommentTokens /* */
+assignmentToken =
 
 wikipedia https://en.wikipedia.org/wiki/PL/I
  example
@@ -46,17 +50,12 @@ wikipedia https://en.wikipedia.org/wiki/PL/I
  revisionCount 1138
  appeared 1964
 
-fileType text
-
-tiobe PL/I
-
 projectEuler PL/I
  memberCount
   2022 1
 
+tiobe PL/I
 hopl 185
 
-corporateDevelopers IBM
+fileType text
 centralPackageRepositoryCount 0
-multiLineCommentTokens /* */
-assignmentToken =

@@ -2,6 +2,15 @@ title Parrot BASIC
 appeared 2009
 type pl
 
+features
+ hasLineComments true
+  # A comment
+ hasComments true
+  # A comment
+ hasSemanticIndentation false
+
+lineCommentToken #
+
 wikipedia https://en.wikipedia.org/wiki/Parrot_BASIC
  example
   .sub 'main' :main
@@ -26,10 +35,3 @@ wikipedia https://en.wikipedia.org/wiki/Parrot_BASIC
  appeared 2016
 
 centralPackageRepositoryCount 0
-lineCommentToken #
-features
- hasLineComments true
-  # A comment
- hasComments true
-  # A comment
- hasSemanticIndentation false

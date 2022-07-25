@@ -1,13 +1,18 @@
 title ISWIM
 appeared 1966
 type pl
-
-example
- Print `Hello world'
+creators Peter Landin
+standsFor If you See What I Mean
+country United Kingdom
 
 features
  hasSemanticIndentation true
  hasPrintDebugging true
+
+printToken Print
+
+example
+ Print `Hello world'
 
 wikipedia https://en.wikipedia.org/wiki/ISWIM
  related algol-60 lisp haskell clean lucid krc hope miranda
@@ -19,12 +24,7 @@ wikipedia https://en.wikipedia.org/wiki/ISWIM
  dailyPageViews 24
  appeared 1966
 
-standsFor If you See What I Mean
-country United Kingdom
-fileType text
-
 hopl 261
 
+fileType text
 centralPackageRepositoryCount 0
-creators Peter Landin
-printToken Print

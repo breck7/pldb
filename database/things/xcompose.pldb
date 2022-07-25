@@ -1,6 +1,7 @@
 title XCompose
 appeared 2006
 type application
+reference https://wiki.debian.org/XCompose
 
 example
  include "%L"
@@ -56,6 +57,5 @@ linguistGrammarRepo https://github.com/samcv/language-xcompose
   <Multi_key> <minus> <2> <M>	 	 : "⸺" U2E3A # TWO-EM DASH
   <M
 
-reference https://wiki.debian.org/XCompose
 fileType text
 centralPackageRepositoryCount 0

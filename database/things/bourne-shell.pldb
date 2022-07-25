@@ -1,6 +1,7 @@
 title Bourne shell
 appeared 1977
 type pl
+country United States
 
 features
  canDoShebang true
@@ -17,19 +18,17 @@ wikipedia https://en.wikipedia.org/wiki/Bourne_shell
  revisionCount 420
  appeared 1977
 
-country United States
-fileType text
-
-tiobe Bourne shell
-
 projectEuler Bourne Shell
  memberCount
   2022 85
 
-hopl 3931
-
-centralPackageRepositoryCount 0
 goodreads
  title|year|author|goodreadsId|rating|ratings|reviews
  Portable Shell Programming: An Extensive Collection of Bourne Shell Examples|1995|Bruce Blinn|592781|4.18|11|3
  Text-Oriented Programming Languages: Perl, Python, awk, sed, Bash, TCL, Snobol, Icon, Bourne Shell, Text Editor and Corrector, C Shell, Tcsh|2011|Source Wikipedia|18993822|0.0|0|0
+
+tiobe Bourne shell
+hopl 3931
+
+fileType text
+centralPackageRepositoryCount 0

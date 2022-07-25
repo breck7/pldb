@@ -1,5 +1,7 @@
 title multicodec
+appeared 2015
 type standard
+creators Juan Batiz-Benet
 
 githubRepo https://github.com/multiformats/multicodec
  firstCommit 2015
@@ -10,6 +12,3 @@ githubRepo https://github.com/multiformats/multicodec
  updated 2022
  description Compact self-describing codecs. Save space by using predefined multicodec tables.
  issues 64
-
-appeared 2015
-creators Juan Batiz-Benet

@@ -1,12 +1,12 @@
 title Bitwise Operators
 type feature
+reference https://en.wikipedia.org/wiki/Bitwise_operations_in_C
+
 psuedoExample 3 == (2 | 1)
+featureKeyword hasBitWiseOperators
 
 wikipedia https://en.wikipedia.org/wiki/Bitwise_operation
  summary In digital computer programming, a bitwise operation operates on one or more bit patterns or binary numerals at the level of their individual bits. It is a fast and simple action, directly supported by the processor, and is used to manipulate values for comparisons and calculations. On simple low-cost processors, typically, bitwise operations are substantially faster than division, several times faster than multiplication, and sometimes significantly faster than addition. While modern processors usually perform addition and multiplication just as fast as bitwise operations due to their longer instruction pipelines and other architectural design choices, bitwise operations do commonly use less power because of the reduced use of resources.
  backlinksCount 319
  pageId 264399
  dailyPageViews 1490
-
-reference https://en.wikipedia.org/wiki/Bitwise_operations_in_C
-featureKeyword hasBitWiseOperators

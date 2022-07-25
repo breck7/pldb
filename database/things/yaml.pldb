@@ -1,12 +1,16 @@
 title YAML
 appeared 2001
 type dataNotation
+website http://www.yaml.org/spec/1.2/spec.html#Introduction
+standsFor YAML Ain't Markup Language
 
 features
  hasSemanticIndentation true
  hasLineComments true
   # A comment
  hasComments true
+
+lineCommentToken #
 
 wikipedia https://en.wikipedia.org/wiki/YAML
  example
@@ -34,6 +38,11 @@ githubLanguage YAML
  fileExtensions yml mir reek rviz sublime-syntax syntax yaml yaml-tmlanguage ymlmysql
  trendingProjectsCount 0
 
+monaco yaml
+codeMirror yaml
+pygmentsHighlighter YAML
+ filename data.py
+ fileExtensions yaml yml
 linguistGrammarRepo https://github.com/atom/language-yaml
  firstCommit 2013
  lastCommit 2018
@@ -58,30 +67,22 @@ linguistGrammarRepo https://github.com/atom/language-yaml
     - include: source.r
   keyEquivalent: ^~R
   
-
-website http://www.yaml.org/spec/1.2/spec.html#Introduction
-standsFor YAML Ain't Markup Language
-fileType text
-linkedInSkill yaml
- 2018 6065
-
-codeMirror yaml
-
-lineCommentToken #
-
 languageServerProtocolProject https://github.com/redhat-developer/yaml-language-server
  writtenIn typescript
-centralPackageRepositoryCount 0
-rijuRepl https://riju.codes/yaml
- example
-  output: "Hello, world!"
-  
-pygmentsHighlighter YAML
- filename data.py
- fileExtensions yaml yml
+
 leachim6 YAML
  filepath y/YAML.yaml
  fileExtensions yaml
  example
   hello: world
-monaco yaml
+
+rijuRepl https://riju.codes/yaml
+ example
+  output: "Hello, world!"
+  
+
+linkedInSkill yaml
+ 2018 6065
+
+fileType text
+centralPackageRepositoryCount 0

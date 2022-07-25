@@ -1,6 +1,23 @@
 title Objective-J
 appeared 2008
 type pl
+website http://www.cappuccino-project.org/
+domainName cappuccino-project.org
+ registered 2011
+
+features
+ hasLineComments true
+  // A comment
+ hasComments true
+  // A comment
+ hasPrintDebugging true
+ hasSemanticIndentation false
+ hasStrings true
+  "Hello world"
+
+lineCommentToken //
+printToken document.write
+stringToken "
 
 wikipedia https://en.wikipedia.org/wiki/Objective-J
  example
@@ -49,6 +66,9 @@ githubLanguage Objective-J
  fileExtensions j sj
  trendingProjectsCount 0
 
+pygmentsHighlighter Objective-J
+ filename javascript.py
+ fileExtensions j
 linguistGrammarRepo https://github.com/textmate/javascript-objective-j.tmbundle
  firstCommit 2008
  lastCommit 2014
@@ -104,29 +124,12 @@ linguistGrammarRepo https://github.com/textmate/javascript-objective-j.tmbundle
   
   @end
 
-website http://www.cappuccino-project.org/
-fileType text
-isOpenSource true
-centralPackageRepositoryCount 0
-lineCommentToken //
-features
- hasLineComments true
-  // A comment
- hasComments true
-  // A comment
- hasPrintDebugging true
- hasSemanticIndentation false
- hasStrings true
-  "Hello world"
-pygmentsHighlighter Objective-J
- filename javascript.py
- fileExtensions j
 leachim6 Objective J
  filepath o/Objective J.j
  example
   document.write("Hello World");
   
-printToken document.write
-domainName cappuccino-project.org
- registered 2011
-stringToken "
+
+fileType text
+isOpenSource true
+centralPackageRepositoryCount 0

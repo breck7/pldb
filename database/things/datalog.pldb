@@ -1,12 +1,25 @@
 title Datalog
 appeared 1977
 type pl
+reference http://www.learndatalogtoday.org/
+reference http://datalog.sourceforge.net/datalog.html
+reference https://percival.jake.tl/
+country Italy
+
+related datomic
+
+features
+ hasLineComments true
+  % A comment
+ hasComments true
+  % A comment
+ hasSemanticIndentation false
+
+lineCommentToken %
 
 example
  parent(john, douglas). % store some data
  parent(john, douglas)? % run a query
-
-lineCommentToken %
 
 wikipedia https://en.wikipedia.org/wiki/Datalog
  example
@@ -21,21 +34,9 @@ wikipedia https://en.wikipedia.org/wiki/Datalog
  revisionCount 376
  appeared 1977
 
-country Italy
-fileType text
+rosettaCode Datalog
 
 hopl 3793
 
-rosettaCode Datalog
-reference http://www.learndatalogtoday.org/
-related datomic
-reference http://datalog.sourceforge.net/datalog.html
-reference https://percival.jake.tl/
-
+fileType text
 centralPackageRepositoryCount 0
-features
- hasLineComments true
-  % A comment
- hasComments true
-  % A comment
- hasSemanticIndentation false

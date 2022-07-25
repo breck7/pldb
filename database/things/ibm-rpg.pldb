@@ -1,6 +1,14 @@
 title RPG
 appeared 1959
 type pl
+standsFor Report Program Generator
+corporateDevelopers IBM
+
+features
+ hasStrings true
+  'Hello world'
+
+stringToken '
 
 wikipedia https://en.wikipedia.org/wiki/IBM_RPG
  example
@@ -35,17 +43,6 @@ wikipedia https://en.wikipedia.org/wiki/IBM_RPG
  revisionCount 549
  appeared 1959
 
-standsFor Report Program Generator
-fileType text
-wordRank 7279
-
-tiobe RPG (OS/400)
- currentRank 47
-
-hopl 207
-
-corporateDevelopers IBM
-centralPackageRepositoryCount 0
 leachim6 RPG
  filepath r/RPG.rpgle
  fileExtensions rpgle
@@ -54,7 +51,11 @@ leachim6 RPG
   dsply 'Hello World';
   return;
   
-stringToken '
-features
- hasStrings true
-  'Hello world'
+
+tiobe RPG (OS/400)
+ currentRank 47
+hopl 207
+
+fileType text
+wordRank 7279
+centralPackageRepositoryCount 0

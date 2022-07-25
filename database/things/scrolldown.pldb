@@ -1,10 +1,22 @@
 title Scrolldown
-aka scroll
 appeared 2020
 type textMarkup
 creators Breck Yunits
-related markdown treenotation grammar
+description An extensible alternative to Markdown built on Tree Notation.
 website https://scroll.pub/
+webRepl https://try.scroll.pub/
+aka scroll
+domainName scroll.pub
+ registered 2021
+
+related markdown treenotation grammar
+
+example
+ title This is Scroll. The keyword for title is title.
+ 
+ paragraph
+  Scroll is an extensible alternative to Markdown.
+
 githubRepo https://github.com/breck7/scroll
  firstCommit 2019
  stars 268
@@ -14,12 +26,3 @@ githubRepo https://github.com/breck7/scroll
  updated 2022
  description The extensible alternative to Markdown.
  issues 6
-description An extensible alternative to Markdown built on Tree Notation.
-webRepl https://try.scroll.pub/
-example
- title This is Scroll. The keyword for title is title.
- 
- paragraph
-  Scroll is an extensible alternative to Markdown.
-domainName scroll.pub
- registered 2021

@@ -1,6 +1,9 @@
 title mythryl
 appeared 2006
 type pl
+website https://mythryl.org
+domainName mythryl.org
+ registered 2006
 
 example
  fun qsort [] => [];  qsort (x!xs) => qsort (filter {. #a < x; } xs) @ [x] @ qsort (filter {. #a >= x; } xs);  end;
@@ -14,7 +17,3 @@ githubRepo https://github.com/mythryl/mythryl
  updated 2022
  description The Mythryl programming language
  issues 6
-
-website https://mythryl.org
-domainName mythryl.org
- registered 2006

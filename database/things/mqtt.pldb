@@ -1,6 +1,10 @@
 title Message Queuing Telemetry Transport
 appeared 1999
 type protocol
+website http://mqtt.org/
+standsFor Message Queuing Telemetry Transport
+domainName mqtt.org
+ registered 2004
 
 wikipedia https://en.wikipedia.org/wiki/MQTT
  summary MQTT (Message Queuing Telemetry Transport) is an ISO standard (ISO/IEC PRF 20922) publish-subscribe-based messaging protocol. It works on top of the TCP/IP protocol. It is designed for connections with remote locations where a "small code footprint" is required or the network bandwidth is limited. The publish-subscribe messaging pattern requires a message broker. Andy Stanford-Clark of IBM and Arlen Nipper of Cirrus Link authored the first version of the protocol in 1999.In 2013, IBM submitted MQTT v3.1 to the OASIS specification body with a charter that ensured only minor changes to the specification could be accepted. MQTT-SN is a variation of the main protocol aimed at embedded devices on non-TCP/IP networks, such as Zigbee. Historically, the "MQ" in "MQTT" came from the IBM MQ (then 'MQSeries') message queuing product line. However, queuing itself is not required to be supported as a standard feature in all situations.Alternative message-oriented middleware includes the  Advanced Message Queuing Protocol (AMQP),  Streaming Text Oriented Messaging Protocol (STOMP), the IETF Constrained Application Protocol, XMPP, DDS, OPC UA, and Web Application Messaging Protocol (WAMP).
@@ -8,8 +12,3 @@ wikipedia https://en.wikipedia.org/wiki/MQTT
  pageId 32695816
  dailyPageViews 1128
  appeared 1999
-
-website http://mqtt.org/
-standsFor Message Queuing Telemetry Transport
-domainName mqtt.org
- registered 2004

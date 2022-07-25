@@ -1,6 +1,19 @@
 title Jinja
 appeared 2006
 type template
+creators Armin Ronacher
+website http://jinja.pocoo.org/
+domainName jinja.pocoo.org
+
+githubRepo https://github.com/pallets/jinja
+ firstCommit 2007
+ stars 8593
+ forks 1492
+ subscribers 256
+ created 2010
+ updated 2022
+ description A very fast and expressive template engine.
+ issues 40
 
 wikipedia https://en.wikipedia.org/wiki/Jinja_(template_engine)
  example
@@ -29,16 +42,6 @@ wikipedia https://en.wikipedia.org/wiki/Jinja_(template_engine)
 githubLanguage HTML+Django
  fileExtensions jinja jinja2 mustache njk
  trendingProjectsCount 0
-
-githubRepo https://github.com/pallets/jinja
- firstCommit 2007
- stars 8593
- forks 1492
- subscribers 256
- created 2010
- updated 2022
- description A very fast and expressive template engine.
- issues 40
 
 linguistGrammarRepo https://github.com/textmate/python-django.tmbundle
  firstCommit 2005
@@ -87,9 +90,6 @@ linguistGrammarRepo https://github.com/textmate/python-django.tmbundle
   </table>
   
 
-website http://jinja.pocoo.org/
 fileType text
 isOpenSource true
 centralPackageRepositoryCount 0
-creators Armin Ronacher
-domainName jinja.pocoo.org

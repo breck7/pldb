@@ -3,10 +3,9 @@ appeared 1996
 type queryLanguage
 creators Serge Abiteboul and Dallan Quass and Jason McHugh and Jennifer Widom and Janet L. Wiener
 description Lorel Query Language for Semistructured Data
+reference http://infolab.stanford.edu/lore/pubs/lorel96.pdf
 
 example
  select Guide.restaurant.name,
     Guide.restaurant(.address)?.zipcode
   where Guide.restaurant.% grep "cheap"
-
-reference http://infolab.stanford.edu/lore/pubs/lorel96.pdf

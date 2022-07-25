@@ -79,6 +79,9 @@ githubLanguage BlitzBasic
  fileExtensions bb decls
  trendingProjectsCount 0
 
+pygmentsHighlighter BlitzBasic
+ filename basic.py
+ fileExtensions bb decls
 linguistGrammarRepo https://github.com/textmate/blitzmax.tmbundle
  firstCommit 2009
  lastCommit 2016
@@ -155,6 +158,3 @@ linguistGrammarRepo https://github.com/textmate/blitzmax.tmbundle
 
 fileType text
 centralPackageRepositoryCount 0
-pygmentsHighlighter BlitzBasic
- filename basic.py
- fileExtensions bb decls

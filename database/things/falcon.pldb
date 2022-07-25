@@ -2,6 +2,11 @@ title Falcon
 appeared 2003
 type pl
 creators Giancarlo Niccolai
+website http://falconpl.org
+fileExtensions ftd fal fam
+country Italy
+domainName falconpl.org
+ registered 2005
 
 features
  hasComments true
@@ -10,6 +15,9 @@ features
  hasSemanticIndentation false
  hasStrings true
   "Hello world"
+
+lineCommentToken //
+stringToken "
 
 wikipedia https://en.wikipedia.org/wiki/Falcon_(programming_language)
  example
@@ -29,20 +37,6 @@ helloWorldCollection Falcon
  // Hello World in Falcon
  
  > "Hello World!"
-
-website http://falconpl.org
-country Italy
-fileExtensions ftd fal fam
-fileType text
-
-tiobe Falcon
-
-hopl 7122
-
-rosettaCode Falcon
-
-centralPackageRepositoryCount 0
-lineCommentToken //
 leachim6 Falcon
  filepath f/Falcon.fal
  fileExtensions fal
@@ -51,6 +45,10 @@ leachim6 Falcon
   
   > "Hello World"
   
-domainName falconpl.org
- registered 2005
-stringToken "
+rosettaCode Falcon
+
+tiobe Falcon
+hopl 7122
+
+fileType text
+centralPackageRepositoryCount 0

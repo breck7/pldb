@@ -1,6 +1,9 @@
 title C--
 appeared 1997
 type pl
+creators Simon Peyton Jones
+website http://www.cs.tufts.edu/~nr/c--/index.html
+country United States
 
 wikipedia https://en.wikipedia.org/wiki/C--
  related c ascii assembly-language modula-3 bcpl llvmir
@@ -12,14 +15,6 @@ wikipedia https://en.wikipedia.org/wiki/C--
  revisionCount 148
  appeared 1997
 
-website http://www.cs.tufts.edu/~nr/c--/index.html
-country United States
-fileType text
-
-hopl 3733
-
-centralPackageRepositoryCount 0
-creators Simon Peyton Jones
 leachim6 C--
  filepath c/C--
  example
@@ -36,3 +31,8 @@ leachim6 C--
       foreign "C" return(0);
   }
   
+
+hopl 3733
+
+fileType text
+centralPackageRepositoryCount 0

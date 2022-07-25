@@ -3,6 +3,8 @@ appeared 2014
 type template
 creators Chris Done
 
+writtenIn haskell
+
 example
  table_ [rows_ "2"]
         (tr_ (do td_ [class_ "top",colspan_ "2",style_ "color:red"]
@@ -18,5 +20,3 @@ githubRepo https://github.com/chrisdone/lucid
  updated 2022
  description Clear to write, read and edit DSL for writing HTML
  issues 0
-
-writtenIn haskell

@@ -1,11 +1,17 @@
 title NewLisp
 appeared 1991
 type pl
+creators Lutz Mueller
+website http://www.newlisp.org/
+domainName newlisp.org
+ registered 1999
 
 features
  hasComments true
  hasPrintDebugging true
  hasSemanticIndentation false
+
+printToken print
 
 wikipedia https://en.wikipedia.org/wiki/NewLISP
  related lisp common-lisp scheme pascal c tcl s-expressions xml utf-8 tcp udp linux solaris sqlite smtp ftp opengl
@@ -21,6 +27,9 @@ githubLanguage NewLisp
  fileExtensions nl lisp lsp
  trendingProjectsCount 0
 
+pygmentsHighlighter NewLisp
+ filename lisp.py
+ fileExtensions lsp nl kif
 linguistGrammarRepo https://github.com/textmate/lisp.tmbundle
  firstCommit 2005
  lastCommit 2018
@@ -78,24 +87,9 @@ linguistGrammarRepo https://github.com/textmate/lisp.tmbundle
   (println (length solutions))
   ;;(exit)
 
-website http://www.newlisp.org/
-
-twitter newlisp
-
-fileType text
-isOpenSource true
-
 projectEuler newLISP
  memberCount
   2022 1
-
-rosettaCode NewLISP
-
-centralPackageRepositoryCount 0
-creators Lutz Mueller
-pygmentsHighlighter NewLisp
- filename lisp.py
- fileExtensions lsp nl kif
 leachim6 NewLISP
  filepath n/NewLISP.lsp
  fileExtensions lsp
@@ -104,6 +98,9 @@ leachim6 NewLISP
   (print "Hello World\n")
   (exit)
   
-printToken print
-domainName newlisp.org
- registered 1999
+rosettaCode NewLISP
+
+twitter newlisp
+fileType text
+isOpenSource true
+centralPackageRepositoryCount 0

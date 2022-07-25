@@ -1,16 +1,19 @@
 title Korn shell
 appeared 1983
 type pl
-
-subreddit ksh
- memberCount
-  2022 1839
+website http://www.kornshell.org/
+aka ksh
+domainName kornshell.org
+ registered 2005
 
 features
  hasHereDocs true
  hasPrintDebugging true
  hasStrings true
   "Hello world"
+
+printToken echo
+stringToken "
 
 wikipedia https://en.wikipedia.org/wiki/KornShell
  related c unix bourne-shell emacs-editor vi-editor bash motif-software tcl arexx
@@ -22,19 +25,6 @@ wikipedia https://en.wikipedia.org/wiki/KornShell
  revisionCount 351
  appeared 1983
 
-website http://www.kornshell.org/
-fileType text
-
-tiobe Korn shell
-
-hopl 3481
-
-centralPackageRepositoryCount 0
-aka ksh
-rijuRepl https://riju.codes/ksh
- example
-  echo "Hello, world!"
-  
 leachim6 KSH
  filepath k/KSH.ksh
  fileExtensions ksh
@@ -42,7 +32,18 @@ leachim6 KSH
   #!/bin/ksh
   echo "Hello World"
   
-printToken echo
-domainName kornshell.org
- registered 2005
-stringToken "
+
+rijuRepl https://riju.codes/ksh
+ example
+  echo "Hello, world!"
+  
+
+subreddit ksh
+ memberCount
+  2022 1839
+
+tiobe Korn shell
+hopl 3481
+
+fileType text
+centralPackageRepositoryCount 0

@@ -1,6 +1,7 @@
 title jcard
 appeared 2014
 type jsonFormat
+reference https://en.wikipedia.org/wiki/VCard
 
 example
  ["vcard",
@@ -27,5 +28,3 @@ example
      ["rev", {}, "timestamp", "2008-04-24T19:52:43Z"]
    ]
  ]
-
-reference https://en.wikipedia.org/wiki/VCard

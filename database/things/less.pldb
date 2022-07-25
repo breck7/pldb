@@ -2,6 +2,24 @@ title Less
 appeared 2009
 type stylesheetLanguage
 creators Alexis Sellier
+website http://lesscss.org
+domainName lesscss.org
+ registered 2009
+
+features
+ hasLineComments true
+  // A comment
+ hasMultiLineComments true
+  /* A comment
+  */
+ hasComments true
+  // A comment
+ hasStrings true
+  "Hello world"
+
+lineCommentToken //
+multiLineCommentTokens /* */
+stringToken "
 
 wikipedia https://en.wikipedia.org/wiki/Less_(stylesheet_language)
  example
@@ -27,6 +45,11 @@ githubLanguage Less
  fileExtensions less
  trendingProjectsCount 0
 
+antlr https://github.com/antlr/grammars-v4/tree/master/less
+monaco less
+pygmentsHighlighter LessCss
+ filename css.py
+ fileExtensions less
 linguistGrammarRepo https://github.com/atom/language-less.git
  firstCommit 2013
  lastCommit 2018
@@ -50,20 +73,6 @@ linguistGrammarRepo https://github.com/atom/language-less.git
   }
   
 
-website http://lesscss.org
-fileType text
-wordRank 535
-isOpenSource true
-
-antlr https://github.com/antlr/grammars-v4/tree/master/less
-
-centralPackageRepositoryCount 0
-rijuRepl https://riju.codes/less
- example
-  body:before {
-    content: "Hello, world!";
-  }
-  
 leachim6 Less
  filepath l/Less.less
  fileExtensions less
@@ -72,22 +81,15 @@ leachim6 Less
       content: "Hello World"
   }
   
-pygmentsHighlighter LessCss
- filename css.py
- fileExtensions less
-domainName lesscss.org
- registered 2009
-lineCommentToken //
-monaco less
-multiLineCommentTokens /* */
-features
- hasLineComments true
-  // A comment
- hasMultiLineComments true
-  /* A comment
-  */
- hasComments true
-  // A comment
- hasStrings true
-  "Hello world"
-stringToken "
+
+rijuRepl https://riju.codes/less
+ example
+  body:before {
+    content: "Hello, world!";
+  }
+  
+
+fileType text
+wordRank 535
+isOpenSource true
+centralPackageRepositoryCount 0

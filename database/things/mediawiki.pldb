@@ -1,6 +1,7 @@
 title MediaWiki
 appeared 2002
 type wikiMarkup
+website https://en.wikipedia.org/wiki/MediaWiki#Markup
 
 wikipedia https://en.wikipedia.org/wiki/MediaWiki
  example
@@ -123,14 +124,15 @@ linguistGrammarRepo https://github.com/textmate/mediawiki.tmbundle
   This document is maintained in a collaborative wiki.  If you wish to update or modify this document please visit [http://wiki.eclipse.org/index.php/Linux_Tools_Project/GDB_Tracepoint_Analysis/User_Guide http://wiki.eclipse.org/Linux_Tools_Project/GDB_Tracepoint_Analysis/User_Guide]
   
 
-website https://en.wikipedia.org/wiki/MediaWiki#Markup
-fileType text
-wordRank 9998
-isOpenSource true
-linkedInSkill mediawiki
- 2018 3862
-centralPackageRepositoryCount 0
 rijuRepl https://riju.codes/mediawiki
  example
   Hello, world!
   
+
+linkedInSkill mediawiki
+ 2018 3862
+
+fileType text
+wordRank 9998
+isOpenSource true
+centralPackageRepositoryCount 0

@@ -1,6 +1,8 @@
 title quicklisp-pm
 appeared 2010
 type packageManager
+creators Zach Beane
+website https://www.quicklisp.org/beta/
 
 githubRepo https://github.com/quicklisp/quicklisp-client
  firstCommit 2010
@@ -12,10 +14,7 @@ githubRepo https://github.com/quicklisp/quicklisp-client
  description Quicklisp client.
  issues 72
 
-website https://www.quicklisp.org/beta/
+packageCount 1500
+forLanguages common-lisp
 
 twitter quicklisp
-
-forLanguages common-lisp
-packageCount 1500
-creators Zach Beane

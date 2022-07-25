@@ -1,15 +1,12 @@
 title EJS
 appeared 2010
 type template
+creators Tj Holowaychuk
 
 example
  <% if (user) { %>
     <h2><%= user.name %></h2>
  <% } %>
-
-githubLanguage EJS
- fileExtensions ejs
- trendingProjectsCount 0
 
 githubRepo https://github.com/tj/ejs
  firstCommit 2010
@@ -20,6 +17,10 @@ githubRepo https://github.com/tj/ejs
  updated 2022
  description Embedded JavaScript templates for node
  issues 104
+
+githubLanguage EJS
+ fileExtensions ejs
+ trendingProjectsCount 0
 
 linguistGrammarRepo https://github.com/gregory-m/ejs-tmbundle
  firstCommit 2011
@@ -45,4 +46,3 @@ linguistGrammarRepo https://github.com/gregory-m/ejs-tmbundle
 fileType text
 isOpenSource true
 centralPackageRepositoryCount 0
-creators Tj Holowaychuk

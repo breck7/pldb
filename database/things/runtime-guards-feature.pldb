@@ -1,8 +1,8 @@
 title Runtime Guards
 type feature
-psuedoExample f x | x > 0 = 1 | otherwise = 0
 description Guards can easily be implemented using conditions (if !x: return;), but some languages include syntax and semantics specifically for guards.
 
-wikipedia https://en.wikipedia.org/wiki/Guard_(computer_science)
-
+psuedoExample f x | x > 0 = 1 | otherwise = 0
 featureKeyword hasRunTimeGuards
+
+wikipedia https://en.wikipedia.org/wiki/Guard_(computer_science)

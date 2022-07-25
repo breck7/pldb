@@ -2,6 +2,10 @@ title Objective-C
 appeared 1984
 type pl
 creators Brad Cox
+website https://developer.apple.com/library/content/documentation/Cocoa/Conceptual/ProgrammingWithObjectiveC/Introduction/Introduction.html
+aka objectivec
+fileExtensions h m mm C
+country United States
 
 features
  hasStrings true
@@ -30,6 +34,12 @@ features
   /* A comment
   */
  hasSemanticIndentation false
+
+lineCommentToken //
+multiLineCommentTokens /* */
+printToken printf
+stringToken "
+keywords auto break case char const continue default do double else enum extern float for goto if inline int long register restrict return short signed sizeof static struct switch typedef union unsigned void volatile while _Bool _Complex _Imaginary BOOL Class bycopy byref id IMP in inout nil NO NULL oneway out Protocol SEL self Super YES @ @interface @end @implementation @protocol @class @public @protected @private @property @try @throw @catch() @finally @synthesize @dynamic @selector atomic nonatomic retain
 
 wikipedia https://en.wikipedia.org/wiki/Objective-C
  example
@@ -75,6 +85,30 @@ githubLanguage Objective-C
   uber ios-snapshot-test-case https://github.com/uber.png https://github.com/uber/ios-snapshot-test-case Objective-C #438eff 977 99 26 "Snapshot view unit tests for iOS"
  trendingProjectsCount 26
 
+antlr https://github.com/antlr/grammars-v4/tree/master/objc
+monaco objective-c
+pygmentsHighlighter Objective-C
+ filename objective.py
+ fileExtensions m h
+linguistGrammarRepo https://github.com/textmate/objective-c.tmbundle
+ firstCommit 2005
+ lastCommit 2018
+ committerCount 14
+ commitCount 499
+ sampleCount 22
+ example
+  #import "Foo.h"
+  
+  
+  @implementation Foo
+  
+  @end
+  
+
+projectEuler Objective-C
+ memberCount
+  2019 66
+  2022 60
 helloWorldCollection Objective-C
  /* Hello World in Objective-C.
  ** Since the standard implementation is identical to K&R C,
@@ -92,88 +126,6 @@ helloWorldCollection Objective-C
      return 0;
  }
  
-
-linguistGrammarRepo https://github.com/textmate/objective-c.tmbundle
- firstCommit 2005
- lastCommit 2018
- committerCount 14
- commitCount 499
- sampleCount 22
- example
-  #import "Foo.h"
-  
-  
-  @implementation Foo
-  
-  @end
-  
-
-website https://developer.apple.com/library/content/documentation/Cocoa/Conceptual/ProgrammingWithObjectiveC/Introduction/Introduction.html
-country United States
-fileExtensions h m mm C
-fileType text
-
-tiobe Objective-C
- currentRank 19
-
-meetup objective-c
- memberCount 235352
- groupCount 445
-
-projectEuler Objective-C
- memberCount
-  2019 66
-  2022 60
-
-hopl 1247
-
-subreddit ObjectiveC
- memberCount
-  2017 5468
-  2022 6609
-
-quineRelay Objective-C
-
-ubuntuPackage gobjc
-
-rosettaCode Objective-C
-
-antlr https://github.com/antlr/grammars-v4/tree/master/objc
-
-indeedJobs objective-c engineer
- 2017 4276
-
-lineCommentToken //
-keywords auto break case char const continue default do double else enum extern float for goto if inline int long register restrict return short signed sizeof static struct switch typedef union unsigned void volatile while _Bool _Complex _Imaginary BOOL Class bycopy byref id IMP in inout nil NO NULL oneway out Protocol SEL self Super YES @ @interface @end @implementation @protocol @class @public @protected @private @property @try @throw @catch() @finally @synthesize @dynamic @selector atomic nonatomic retain
-stackOverflowSurvey
- 2021
-  users 2310
-  medianSalary 64859
-  fans 1400
-  percentageUsing 0.03
-packageRepository https://cocoapods.org/
-gdbSupport true
-aka objectivec
-rijuRepl https://riju.codes/objectivec
- example
-  #import <Foundation/Foundation.h>
-  
-  int main() {
-    NSAutoreleasePool *pool = [[NSAutoreleasePool alloc] init];
-    NSLog(@"Hello, world!");
-    [pool drain];
-    return 0;
-  }
-  
-goodreads
- title|year|author|goodreadsId|rating|ratings|reviews
- Programming in Objective C|1999|Stephen G. Kochan|116159|3.96|445|21
- Programming in Objective-C 2.0|2008|Stephen G. Kochan|3467967|3.85|370|16
- Objective-C Programming: The Big Nerd Ranch Guide|2011|Aaron Hillegass|14382053|4.17|634|41
- The Objective-C Programming Language||Apple Inc.|15769650|3.62|24|0
-pygmentsHighlighter Objective-C
- filename objective.py
- fileExtensions m h
 leachim6 Objective C
  filepath o/Objective C.m
  example
@@ -192,7 +144,51 @@ leachim6 Objective C
       NSLog(@"Hello World");
   }
   
-printToken printf
-multiLineCommentTokens /* */
-monaco objective-c
-stringToken "
+rosettaCode Objective-C
+quineRelay Objective-C
+
+rijuRepl https://riju.codes/objectivec
+ example
+  #import <Foundation/Foundation.h>
+  
+  int main() {
+    NSAutoreleasePool *pool = [[NSAutoreleasePool alloc] init];
+    NSLog(@"Hello, world!");
+    [pool drain];
+    return 0;
+  }
+  
+
+indeedJobs objective-c engineer
+ 2017 4276
+stackOverflowSurvey
+ 2021
+  users 2310
+  medianSalary 64859
+  fans 1400
+  percentageUsing 0.03
+
+subreddit ObjectiveC
+ memberCount
+  2017 5468
+  2022 6609
+meetup objective-c
+ memberCount 235352
+ groupCount 445
+
+goodreads
+ title|year|author|goodreadsId|rating|ratings|reviews
+ Programming in Objective C|1999|Stephen G. Kochan|116159|3.96|445|21
+ Programming in Objective-C 2.0|2008|Stephen G. Kochan|3467967|3.85|370|16
+ Objective-C Programming: The Big Nerd Ranch Guide|2011|Aaron Hillegass|14382053|4.17|634|41
+ The Objective-C Programming Language||Apple Inc.|15769650|3.62|24|0
+
+tiobe Objective-C
+ currentRank 19
+hopl 1247
+
+packageRepository https://cocoapods.org/
+
+ubuntuPackage gobjc
+gdbSupport true
+fileType text

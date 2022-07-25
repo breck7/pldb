@@ -1,6 +1,21 @@
 title QML
 appeared 2009
 type pl
+website http://qt-project.org/doc/qt-5/qmlapplications.html
+standsFor Qt Modeling Language
+
+features
+ hasLineComments true
+  // A comment
+ hasComments true
+  // A comment
+ hasMultiLineComments true
+  /* A comment
+  */
+ hasSemanticIndentation false
+
+lineCommentToken //
+multiLineCommentTokens /* */
 
 example
  Item {
@@ -36,6 +51,9 @@ githubLanguage QML
   Swordfish90 cool-retro-term https://github.com/Swordfish90.png https://github.com/Swordfish90/cool-retro-term QML #44a51c 11081 489 197 "A good looking terminal emulator which mimics the old cathode display..."
  trendingProjectsCount 2
 
+pygmentsHighlighter QML
+ filename webmisc.py
+ fileExtensions qml qbs
 linguistGrammarRepo https://github.com/skozlovf/Sublime-QML
  firstCommit 2013
  lastCommit 2014
@@ -200,21 +218,5 @@ linguistGrammarRepo https://github.com/skozlovf/Sublime-QML
   }
   
 
-website http://qt-project.org/doc/qt-5/qmlapplications.html
-standsFor Qt Modeling Language
 fileType text
 centralPackageRepositoryCount 0
-lineCommentToken //
-features
- hasLineComments true
-  // A comment
- hasComments true
-  // A comment
- hasMultiLineComments true
-  /* A comment
-  */
- hasSemanticIndentation false
-pygmentsHighlighter QML
- filename webmisc.py
- fileExtensions qml qbs
-multiLineCommentTokens /* */

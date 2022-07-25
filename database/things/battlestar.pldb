@@ -1,5 +1,32 @@
 title Battlestar
+appeared 2014
 type pl
+creators Alexander Rødseth
+
+features
+ hasPrintDebugging true
+
+printToken print
+
+githubRepo https://github.com/xyproto/battlestar
+ firstCommit 2014
+ stars 70
+ forks 5
+ subscribers 3
+ created 2014
+ updated 2022
+ description :dizzy: A different take on Assembly, with the goal of creating tiny executables.
+ issues 0
+
+leachim6 Battlestar
+ filepath b/Battlestar.bts
+ fileExtensions bts
+ example
+  #!/usr/bin/bts
+  const hello = "Hello World\n"
+  print(hello)
+  
+
 rijuRepl https://riju.codes/battlestar
  example
   const message = "Hello, world!\n"
@@ -11,25 +38,3 @@ rijuRepl https://riju.codes/battlestar
  description A different take on assembly, with the goal of creating tiny executables
  fileExtensions bts
  githubRepo https://github.com/xyproto/battlestar
-appeared 2014
-githubRepo https://github.com/xyproto/battlestar
- firstCommit 2014
- stars 70
- forks 5
- subscribers 3
- created 2014
- updated 2022
- description :dizzy: A different take on Assembly, with the goal of creating tiny executables.
- issues 0
-creators Alexander Rødseth
-leachim6 Battlestar
- filepath b/Battlestar.bts
- fileExtensions bts
- example
-  #!/usr/bin/bts
-  const hello = "Hello World\n"
-  print(hello)
-  
-printToken print
-features
- hasPrintDebugging true

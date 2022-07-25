@@ -1,6 +1,11 @@
 title Factor
 appeared 2003
 type pl
+creators Doug Coleman
+website https://factorcode.org/
+reference https://docs.google.com/document/d/17IddUbocCQhmx_mCcycij6Dmmn-c0ReZqLWzY-idt-Q/edit
+domainName factorcode.org
+ registered 2005
 
 features
  hasComments true
@@ -10,6 +15,19 @@ features
  hasSemanticIndentation false
  hasStrings true
   "Hello world"
+
+printToken print
+stringToken "
+
+githubRepo https://github.com/factor/factor
+ stars 1282
+ forks 159
+ subscribers 61
+ created 2009
+ updated 2022
+ firstCommit 2007
+ description Factor programming language
+ issues 622
 
 wikipedia https://en.wikipedia.org/wiki/Factor_(programming_language)
  example
@@ -34,56 +52,20 @@ githubLanguage Factor
  fileExtensions factor
  trendingProjectsCount 0
 
-githubRepo https://github.com/factor/factor
- stars 1282
- forks 159
- subscribers 61
- created 2009
- updated 2022
- firstCommit 2007
- description Factor programming language
- issues 622
-
+codeMirror factor
+pygmentsHighlighter Factor
+ filename factor.py
+ fileExtensions factor
 linguistGrammarRepo https://github.com/slavapestov/factor
  firstCommit 2007
  lastCommit 2016
  committerCount 124
  commitCount 28257
 
-website https://factorcode.org/
-reference https://docs.google.com/document/d/17IddUbocCQhmx_mCcycij6Dmmn-c0ReZqLWzY-idt-Q/edit
-
-tryItOnline factor
-
-twitter factorbuilds
-
-fileType text
-wordRank 2090
-isOpenSource true
-
-tiobe Factor
-
 projectEuler Factor
  memberCount
   2019 48
   2022 50
-
-codeMirror factor
-
-rosettaCode Factor
-
-centralPackageRepositoryCount 0
-rijuRepl https://riju.codes/factor
- example
-  IN: main
-  USE: io
-  
-  "Hello, world!" print
-  
-creators Doug Coleman
-pygmentsHighlighter Factor
- filename factor.py
- fileExtensions factor
 leachim6 Factor
  filepath f/Factor.factor
  fileExtensions factor
@@ -92,7 +74,21 @@ leachim6 Factor
   "Hello World" print
   
   
-printToken print
-domainName factorcode.org
- registered 2005
-stringToken "
+rosettaCode Factor
+
+rijuRepl https://riju.codes/factor
+ example
+  IN: main
+  USE: io
+  
+  "Hello, world!" print
+  
+tryItOnline factor
+
+tiobe Factor
+
+twitter factorbuilds
+fileType text
+wordRank 2090
+isOpenSource true
+centralPackageRepositoryCount 0

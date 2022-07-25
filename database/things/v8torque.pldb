@@ -1,6 +1,9 @@
 title v8torque
 appeared 2018
 type pl
+reference https://v8project.blogspot.com/2018/09/dataview.html
+
+compilesTo csa
 
 example
   macro LoadDataViewUint32(buffer: JSArrayBuffer, offset: intptr,
@@ -23,7 +26,5 @@ example
    return convert<Number>(result);
  }
 
-reference https://v8project.blogspot.com/2018/09/dataview.html
 fileType text
-compilesTo csa
 centralPackageRepositoryCount 0

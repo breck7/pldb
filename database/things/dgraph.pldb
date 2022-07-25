@@ -1,6 +1,10 @@
 title dgraph
 appeared 2015
 type application
+website https://dgraph.io
+domainName dgraph.io
+
+related graphql-plus-minus
 
 githubRepo https://github.com/dgraph-io/dgraph
  firstCommit 2015
@@ -12,9 +16,4 @@ githubRepo https://github.com/dgraph-io/dgraph
  description Native GraphQL Database with graph backend
  issues 114
 
-website https://dgraph.io
-
 twitter dgraphlabs
-
-related graphql-plus-minus
-domainName dgraph.io

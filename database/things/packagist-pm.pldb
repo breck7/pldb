@@ -1,6 +1,10 @@
 title packagist-pm
 appeared 2011
 type packageManager
+creators Jordi Boggiano
+website https://packagist.org/
+domainName packagist.org
+ registered 2011
 
 githubRepo https://github.com/composer/packagist
  firstCommit 2011
@@ -12,13 +16,8 @@ githubRepo https://github.com/composer/packagist
  description Package Repository Website - try https://packagist.com if you need your own -
  issues 58
 
-website https://packagist.org/
-
-twitter packagist
-
-forLanguages php
 packageCount 211636
 packageInstallCount 12906177931
-creators Jordi Boggiano
-domainName packagist.org
- registered 2011
+forLanguages php
+
+twitter packagist

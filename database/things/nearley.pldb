@@ -1,10 +1,19 @@
 title Nearley
 appeared 2014
 type grammarLanguage
+website https://nearley.js.org/
+domainName nearley.js.org
 
-githubLanguage Nearley
- fileExtensions ne nearley
- trendingProjectsCount 0
+writtenIn javascript
+
+features
+ hasLineComments true
+  # A comment
+ hasComments true
+  # A comment
+ hasSemanticIndentation false
+
+lineCommentToken #
 
 githubRepo https://github.com/Hardmath123/nearley
  stars 3231
@@ -15,6 +24,10 @@ githubRepo https://github.com/Hardmath123/nearley
  firstCommit 2014
  description 📜🔜🌲 Simple, fast, powerful parser toolkit for JavaScript.
  issues 176
+
+githubLanguage Nearley
+ fileExtensions ne nearley
+ trendingProjectsCount 0
 
 linguistGrammarRepo https://github.com/Hardmath123/sublime-nearley
  firstCommit 2017
@@ -130,16 +143,6 @@ linguistGrammarRepo https://github.com/Hardmath123/sublime-nearley
   commentchars -> null
                 | commentchars [^\n]
 
-website https://nearley.js.org/
 fileType text
 isOpenSource true
-writtenIn javascript
 centralPackageRepositoryCount 0
-lineCommentToken #
-features
- hasLineComments true
-  # A comment
- hasComments true
-  # A comment
- hasSemanticIndentation false
-domainName nearley.js.org

@@ -1,6 +1,32 @@
 title Dafny
 appeared 2009
 type pl
+creators K. Rustan M. Leino
+website https://www.microsoft.com/en-us/research/project/dafny-a-language-and-program-verifier-for-functional-correctness/
+corporateDevelopers Microsoft
+
+writtenIn csharp
+
+features
+ hasLineComments true
+  // A comment
+ hasComments true
+  // A comment
+ hasPrintDebugging true
+ hasSemanticIndentation false
+
+lineCommentToken //
+printToken print
+
+githubRepo https://github.com/Microsoft/dafny
+ stars 1714
+ forks 206
+ subscribers 76
+ created 2016
+ updated 2022
+ firstCommit 2009
+ description Dafny is a verification-aware programming language
+ issues 550
 
 wikipedia https://en.wikipedia.org/wiki/Dafny_(programming_language)
  example
@@ -41,52 +67,24 @@ wikipedia https://en.wikipedia.org/wiki/Dafny_(programming_language)
  dailyPageViews 1
  appeared 2009
 
-githubRepo https://github.com/Microsoft/dafny
- stars 1714
- forks 206
- subscribers 76
- created 2016
- updated 2022
- firstCommit 2009
- description Dafny is a verification-aware programming language
- issues 550
-
 helloWorldCollection Dafny
  // Hello world in Dafny
  
  method Main() {
    print "Hello, World!\n";
  }
-
-website https://www.microsoft.com/en-us/research/project/dafny-a-language-and-program-verifier-for-functional-correctness/
-
-tryItOnline dafny
-
-fileType text
-isOpenSource true
-
+rosettaCode Dafny
 quineRelay Dafny
 
-ubuntuPackage dafny
-
-rosettaCode Dafny
-
-corporateDevelopers Microsoft
-writtenIn csharp
-centralPackageRepositoryCount 0
 rijuRepl https://riju.codes/dafny
  example
   method Main() {
     print "Hello, world!\n";
   }
   
-creators K. Rustan M. Leino
-lineCommentToken //
-features
- hasLineComments true
-  // A comment
- hasComments true
-  // A comment
- hasPrintDebugging true
- hasSemanticIndentation false
-printToken print
+tryItOnline dafny
+
+ubuntuPackage dafny
+fileType text
+isOpenSource true
+centralPackageRepositoryCount 0

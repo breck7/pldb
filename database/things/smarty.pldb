@@ -2,6 +2,9 @@ title Smarty
 appeared 2006
 type template
 creators Monte Ohrt and Messju Mohr and Uwe Tews
+website http://www.smarty.net
+domainName smarty.net
+ registered 2002
 
 example
  <!DOCTYPE html>
@@ -51,23 +54,18 @@ githubLanguage Smarty
   fluxcd flux-get-started https://github.com/fluxcd.png https://github.com/fluxcd/flux-get-started Smarty #ccc 32 631 6 "Getting started with Flux and the Helm Operator"
  trendingProjectsCount 8
 
+codeMirror smarty
+pygmentsHighlighter Smarty
+ filename templates.py
+ fileExtensions tpl
 linguistGrammarRepo https://github.com/textmate/php-smarty.tmbundle
  firstCommit 2005
  lastCommit 2018
  committerCount 8
  commitCount 34
 
-website http://www.smarty.net
-fileType text
-isOpenSource true
-
 tiobe Smarty
 
-codeMirror smarty
-
+fileType text
+isOpenSource true
 centralPackageRepositoryCount 0
-pygmentsHighlighter Smarty
- filename templates.py
- fileExtensions tpl
-domainName smarty.net
- registered 2002

@@ -2,6 +2,14 @@ title Cesil
 appeared 1974
 type pl
 
+features
+ hasPrintDebugging true
+ hasStrings true
+  "Hello world"
+
+printToken PRINT
+stringToken "
+
 wikipedia https://en.wikipedia.org/wiki/Cesil
  example
   LOAD    0
@@ -33,7 +41,6 @@ wikipedia https://en.wikipedia.org/wiki/Cesil
  revisionCount 1
  dailyPageViews 3
 
-centralPackageRepositoryCount 0
 leachim6 CESIL
  filepath c/CESIL.cesil
  fileExtensions cesil
@@ -42,9 +49,5 @@ leachim6 CESIL
           HALT
   %
   *
-printToken PRINT
-features
- hasPrintDebugging true
- hasStrings true
-  "Hello world"
-stringToken "
+
+centralPackageRepositoryCount 0

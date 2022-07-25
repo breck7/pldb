@@ -1,6 +1,8 @@
 title strudel
 appeared 2011
 type textDataFormat
+description Strudel is our graphical tool for visualizing genetic and physical maps of genomes for comparative purposes. The Strudel data format is tab delimited text with all features, homologs and potential reference URLs included in the same file.
+reference http://bioinf.scri.ac.uk/strudel/help/data.shtml
 
 example
  feature  Rice  1 LOC_Os05g01020  gene  1903    "TBC domain containing protein, expressed"
@@ -12,6 +14,3 @@ example
  homolog Barley  11_11223  Rice  LOC_Os09g20010  6.00E-50    
  chromosome  Barley  1H  #593423       
  URL Rice  http://rice.plantbiology.msu.edu/cgi-bin/gbrowse/rice/?name=
-
-description Strudel is our graphical tool for visualizing genetic and physical maps of genomes for comparative purposes. The Strudel data format is tab delimited text with all features, homologs and potential reference URLs included in the same file.
-reference http://bioinf.scri.ac.uk/strudel/help/data.shtml

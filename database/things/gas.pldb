@@ -1,6 +1,9 @@
 title GNU Assembler
 appeared 1986
 type compiler
+corporateDevelopers GNU Project
+firstAnnouncement http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.32.4503&rep=rep1&type=pdf
+announcementMethod paper
 
 wikipedia https://en.wikipedia.org/wiki/GNU_Assembler
  example
@@ -30,16 +33,12 @@ wikipedia https://en.wikipedia.org/wiki/GNU_Assembler
  revisionCount 228
  appeared 2016
 
-firstAnnouncement http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.32.4503&rep=rep1&type=pdf
-fileType na
-wordRank 1119
-isOpenSource true
-
 codeMirror gas
-
-corporateDevelopers GNU Project
-announcementMethod paper
-centralPackageRepositoryCount 0
 pygmentsHighlighter GAS
  filename asm.py
  fileExtensions s S
+
+fileType na
+wordRank 1119
+isOpenSource true
+centralPackageRepositoryCount 0

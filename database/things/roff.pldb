@@ -1,6 +1,9 @@
 title ROFF
 appeared 1971
 type textMarkup
+country United States
+
+related troff
 
 githubLanguage Roff
  fileExtensions roff 1 1in 1m 1x 2 3 3in 3m 3qt 3x 4 5 6 7 8 9 l man mdoc me ms n nr rno tmac
@@ -28,15 +31,13 @@ linguistGrammarRepo https://github.com/Alhadis/language-roff
   bar baz.
   
 
-country United States
-fileType text
-
-hopl 2453
-
-centralPackageRepositoryCount 0
 rijuRepl https://riju.codes/roff
  example
   .PP
   Hello, world!
   
-related troff
+
+hopl 2453
+
+fileType text
+centralPackageRepositoryCount 0

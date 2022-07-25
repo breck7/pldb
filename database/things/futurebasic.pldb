@@ -2,6 +2,15 @@ title FutureBASIC
 appeared 1992
 type pl
 
+features
+ hasLineComments true
+  // A comment
+ hasComments true
+  // A comment
+ hasSemanticIndentation false
+
+lineCommentToken //
+
 wikipedia https://en.wikipedia.org/wiki/FutureBASIC
  example
   BeginCFunction
@@ -35,15 +44,7 @@ wikipedia https://en.wikipedia.org/wiki/FutureBASIC
  dailyPageViews 11
  appeared 2016
 
-isOpenSource true
-
 rosettaCode FutureBasic
 
+isOpenSource true
 centralPackageRepositoryCount 0
-lineCommentToken //
-features
- hasLineComments true
-  // A comment
- hasComments true
-  // A comment
- hasSemanticIndentation false

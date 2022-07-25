@@ -1,6 +1,21 @@
 title Yoix
 appeared 2000
 type pl
+creators Rich Drechsler and John Mocenigo
+
+features
+ hasLineComments true
+  // A comment
+ hasComments true
+  // A comment
+ hasPrintDebugging true
+ hasSemanticIndentation false
+ hasStrings true
+  "Hello world"
+
+lineCommentToken //
+printToken printf
+stringToken "
 
 wikipedia https://en.wikipedia.org/wiki/Yoix
  example
@@ -160,19 +175,6 @@ wikipedia https://en.wikipedia.org/wiki/Yoix
  dailyPageViews 9
  appeared 2000
 
-isOpenSource true
-centralPackageRepositoryCount 0
-creators Rich Drechsler and John Mocenigo
-lineCommentToken //
-features
- hasLineComments true
-  // A comment
- hasComments true
-  // A comment
- hasPrintDebugging true
- hasSemanticIndentation false
- hasStrings true
-  "Hello world"
 leachim6 Yoix
  filepath y/Yoix.yx
  fileExtensions yx
@@ -181,5 +183,6 @@ leachim6 Yoix
   
   printf("Hello World");
   
-printToken printf
-stringToken "
+
+isOpenSource true
+centralPackageRepositoryCount 0

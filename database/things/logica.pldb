@@ -1,9 +1,21 @@
-website https://logica.dev/
 title Logica
+appeared 2020
 type queryLanguage
+creators Evgeny Skvortsov
 description Logica is an open source declarative logic programming language for data manipulation. Logica is a successor to Yedalog, a language created at Google earlier.
+website https://logica.dev/
+domainName logica.dev
+ registered 2020
 
 compilesTo sql
+
+features
+ hasLineComments true
+  # A comment
+ hasComments true
+  # A comment
+ hasSemanticIndentation false
+
 lineCommentToken #
 
 example
@@ -19,15 +31,7 @@ example
      y != x,
      Mod(x, y) == 0
    );
-features
- hasLineComments true
-  # A comment
- hasComments true
-  # A comment
- hasSemanticIndentation false
-domainName logica.dev
- registered 2020
-appeared 2020
+
 githubRepo https://github.com/evgskv/logica
  firstCommit 2020
  stars 1440
@@ -37,4 +41,3 @@ githubRepo https://github.com/evgskv/logica
  updated 2022
  description Logica is a logic programming language that compiles to StandardSQL and runs on Google BigQuery.
  issues 23
-creators Evgeny Skvortsov

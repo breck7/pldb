@@ -2,9 +2,15 @@ title mint
 appeared 2018
 type pl
 website https://www.mint-lang.com
-hackerNewsDiscussions
- id|title|url|time|timestamp|by|comments|score
- 17161533|Mint-lang: a language for the front-end web|https://www.mint-lang.com/|2018-05-26 11:47:36 UTC|1527335256|galfarragem|106|112
+domainName mint-lang.com
+ registered 2018
+
+features
+ hasStrings true
+  "Hello world"
+
+stringToken "
+
 leachim6 Mint
  filepath m/Mint.mint
  fileExtensions mint
@@ -15,10 +21,9 @@ leachim6 Mint
     }
   }
   
-domainName mint-lang.com
- registered 2018
-stringToken "
-features
- hasStrings true
-  "Hello world"
+
+hackerNewsDiscussions
+ id|title|url|time|timestamp|by|comments|score
+ 17161533|Mint-lang: a language for the front-end web|https://www.mint-lang.com/|2018-05-26 11:47:36 UTC|1527335256|galfarragem|106|112
+
 twitter mint_lang

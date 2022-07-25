@@ -1,6 +1,15 @@
 title EGL
 appeared 2008
 type pl
+standsFor Enterprise Generation Language
+
+features
+ hasPrintDebugging true
+ hasStrings true
+  "Hello world"
+
+printToken SysLib.writeStdout
+stringToken "
 
 wikipedia https://en.wikipedia.org/wiki/EGL_(programming_language)
  example
@@ -40,19 +49,6 @@ wikipedia https://en.wikipedia.org/wiki/EGL_(programming_language)
  revisionCount 104
  appeared 2008
 
-standsFor Enterprise Generation Language
-fileType text
-
-tiobe EGL
-
-hopl 7930
-
-rosettaCode EGL
-
-centralPackageRepositoryCount 0
-goodreads
- title|year|author|goodreadsId|rating|ratings|reviews
- IBM Rational Business Developer with EGL|2008|Ben Margolis|6568310|2.00|2|0
 leachim6 Egl
  filepath e/Egl.egl
  fileExtensions egl
@@ -63,9 +59,14 @@ leachim6 Egl
       end
   end
   
-printToken SysLib.writeStdout
-features
- hasPrintDebugging true
- hasStrings true
-  "Hello world"
-stringToken "
+rosettaCode EGL
+
+goodreads
+ title|year|author|goodreadsId|rating|ratings|reviews
+ IBM Rational Business Developer with EGL|2008|Ben Margolis|6568310|2.00|2|0
+
+tiobe EGL
+hopl 7930
+
+fileType text
+centralPackageRepositoryCount 0

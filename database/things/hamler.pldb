@@ -1,5 +1,12 @@
 title hamler
+appeared 2019
 type pl
+creators Feng Lee
+description Hamler is a strongly-typed language with compile-time typechecking and built-in support for concurrency and distribution.
+website https://www.hamler-lang.org/
+reference https://news.ycombinator.com/item?id=23491516
+domainName hamler-lang.org
+ registered 2020
 
 example
  module Main where
@@ -7,8 +14,6 @@ example
  import System.IO
  
  main = print "Hello, World!"
-
-description Hamler is a strongly-typed language with compile-time typechecking and built-in support for concurrency and distribution.
 
 githubRepo https://github.com/hamler-lang/hamler
  firstCommit 2019
@@ -20,12 +25,4 @@ githubRepo https://github.com/hamler-lang/hamler
  description Haskell-style functional programming language running on Erlang VM.
  issues 35
 
-website https://www.hamler-lang.org/
-reference https://news.ycombinator.com/item?id=23491516
-
 twitter hamlerlang
-
-appeared 2019
-creators Feng Lee
-domainName hamler-lang.org
- registered 2020

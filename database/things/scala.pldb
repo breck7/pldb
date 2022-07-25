@@ -2,6 +2,16 @@ title Scala
 appeared 2004
 type pl
 creators Martin Odersky
+website http://www.scala-lang.org
+webRepl https://scastie.scala-lang.org/
+fileExtensions scala sc
+country Switzerland
+domainName scala-lang.org
+ registered 2007
+
+runsOnVm jvm
+
+visualParadigm false
 
 features
  hasStrings true
@@ -46,6 +56,12 @@ features
   /* A comment
   */
  hasSemanticIndentation false
+
+lineCommentToken //
+multiLineCommentTokens /* */
+printToken println
+stringToken "
+keywords abstract case catch class def do else extends false final finally for forSome if implicit import lazy match new null object override package private protected return sealed super this throw trait try true type val var while with yield
 
 wikipedia https://en.wikipedia.org/wiki/Scala_(programming_language)
  example
@@ -93,13 +109,11 @@ githubLanguage Scala
   gitbucket gitbucket https://github.com/gitbucket.png https://github.com/gitbucket/gitbucket Scala #c22d40 7803 1077 53 "A Git platform powered by Scala with easy installation, high extensibility & GitHub API compatibility"
  trendingProjectsCount 21
 
-helloWorldCollection Scala
- // Hello world in Scala
- 
- object HelloWorld extends App {
-   println("Hello world!")
- }
-
+antlr https://github.com/antlr/grammars-v4/tree/master/scala
+monaco scala
+pygmentsHighlighter Scala
+ filename jvm.py
+ fileExtensions scala
 linguistGrammarRepo https://github.com/scala/vscode-scala-syntax
  firstCommit 2018
  lastCommit 2018
@@ -117,83 +131,21 @@ linguistGrammarRepo https://github.com/scala/vscode-scala-syntax
     }
   }
   
-
-website http://www.scala-lang.org
-
-tryItOnline scala
-
-twitter scala_lang
-
-country Switzerland
-fileExtensions scala sc
-fileType text
-runsOnVm jvm
-isOpenSource true
-
-tiobe Scala
- currentRank 39
-
-meetup scala
- memberCount 369728
- groupCount 624
-
-webRepl https://scastie.scala-lang.org/
-linkedInSkill scala
- 2018 84552
+languageServerProtocolProject https://github.com/dragos/dragos-vscode-scala
+ writtenIn scala
+languageServerProtocolProject https://github.com/scalameta/metals
+ writtenIn scala
 
 projectEuler Scala
  memberCount
   2019 1908
   2022 1985
-
-hopl 6814
-
-subreddit scala
- memberCount
-  2017 15219
-  2022 46218
-
-quineRelay Scala
-
-ubuntuPackage scala
-
-rosettaCode Scala
-
-antlr https://github.com/antlr/grammars-v4/tree/master/scala
-
-indeedJobs scala engineer
- 2017 3679
-
-lineCommentToken //
-languageServerProtocolProject https://github.com/dragos/dragos-vscode-scala
- writtenIn scala
-languageServerProtocolProject https://github.com/scalameta/metals
- writtenIn scala
-visualParadigm false
-jupyterKernel https://github.com/mattpap/IScala
-jupyterKernel https://github.com/alexarchambault/jupyter-scala
-keywords abstract case catch class def do else extends false final finally for forSome if implicit import lazy match new null object override package private protected return sealed super this throw trait try true type val var while with yield
-stackOverflowSurvey
- 2021
-  users 2148
-  medianSalary 77832
-  fans 3165
-  percentageUsing 0.03
-packageRepository https://index.scala-lang.org/
-centralPackageRepositoryCount 0
-rijuRepl https://riju.codes/scala
- example
-  println("Hello, world!")
-  
-goodreads
- title|year|author|goodreadsId|rating|ratings|reviews
- Programming in Scala|2008|Martin Odersky|5852455|4.19|1325|87
- Functional Programming in Scala|2013|Rúnar Bjarnason|19105535|4.44|486|45
- Programming Scala|2009|Venkat Subramaniam|6163823|3.29|100|10
- Programming Scala: Scalability = Functional Programming + Objects|2009|Dean Wampler|6724274|3.68|204|21
-pygmentsHighlighter Scala
- filename jvm.py
- fileExtensions scala
+helloWorldCollection Scala
+ // Hello world in Scala
+ 
+ object HelloWorld extends App {
+   println("Hello world!")
+ }
 leachim6 Scala
  filepath s/Scala.scala
  fileExtensions scala
@@ -202,9 +154,51 @@ leachim6 Scala
     println("Hello World")
   }
   
-printToken println
-multiLineCommentTokens /* */
-domainName scala-lang.org
- registered 2007
-monaco scala
-stringToken "
+rosettaCode Scala
+quineRelay Scala
+
+rijuRepl https://riju.codes/scala
+ example
+  println("Hello, world!")
+  
+tryItOnline scala
+
+indeedJobs scala engineer
+ 2017 3679
+linkedInSkill scala
+ 2018 84552
+stackOverflowSurvey
+ 2021
+  users 2148
+  medianSalary 77832
+  fans 3165
+  percentageUsing 0.03
+
+subreddit scala
+ memberCount
+  2017 15219
+  2022 46218
+meetup scala
+ memberCount 369728
+ groupCount 624
+
+goodreads
+ title|year|author|goodreadsId|rating|ratings|reviews
+ Programming in Scala|2008|Martin Odersky|5852455|4.19|1325|87
+ Functional Programming in Scala|2013|Rúnar Bjarnason|19105535|4.44|486|45
+ Programming Scala|2009|Venkat Subramaniam|6163823|3.29|100|10
+ Programming Scala: Scalability = Functional Programming + Objects|2009|Dean Wampler|6724274|3.68|204|21
+
+tiobe Scala
+ currentRank 39
+hopl 6814
+
+packageRepository https://index.scala-lang.org/
+
+twitter scala_lang
+ubuntuPackage scala
+jupyterKernel https://github.com/mattpap/IScala
+jupyterKernel https://github.com/alexarchambault/jupyter-scala
+fileType text
+isOpenSource true
+centralPackageRepositoryCount 0

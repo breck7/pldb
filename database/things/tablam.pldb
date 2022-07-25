@@ -1,5 +1,10 @@
 title tablam
+appeared 2020
 type queryLanguage
+creators Mario Montoya
+website http://www.tablam.org/
+domainName tablam.org
+ registered 2014
 
 example
  city ?where .population > 100_000 ?select .name, .country
@@ -14,9 +19,3 @@ githubRepo https://github.com/Tablam/TablaM
  updated 2022
  description The practical relational programing language for data-oriented applications
  issues 2
-
-website http://www.tablam.org/
-appeared 2020
-creators Mario Montoya
-domainName tablam.org
- registered 2014

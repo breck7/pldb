@@ -1,6 +1,18 @@
 title NetLogo
 appeared 1999
 type pl
+creators Uri Wilensky
+website http://ccl.northwestern.edu/netlogo/
+country United States
+
+features
+ hasLineComments true
+  ; A comment
+ hasComments true
+  ; A comment
+ hasSemanticIndentation false
+
+lineCommentToken ;
 
 wikipedia https://en.wikipedia.org/wiki/NetLogo
  related starlogo logo isbn scala java
@@ -81,24 +93,11 @@ linguistGrammarRepo https://github.com/textmate/lisp.tmbundle
   
   
 
-website http://ccl.northwestern.edu/netlogo/
-
-twitter netlogo
-
-country United States
-fileType text
-isOpenSource true
+rosettaCode NetLogo
 
 hopl 7674
 
-rosettaCode NetLogo
-
+twitter netlogo
+fileType text
+isOpenSource true
 centralPackageRepositoryCount 0
-creators Uri Wilensky
-lineCommentToken ;
-features
- hasLineComments true
-  ; A comment
- hasComments true
-  ; A comment
- hasSemanticIndentation false

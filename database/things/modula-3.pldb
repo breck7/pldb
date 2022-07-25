@@ -1,7 +1,11 @@
 title Modula-3
 appeared 1986
 type pl
+website http://www.modula3.org
+reference https://www.cs.purdue.edu/homes/hosking/m3/reference/syntax.html
 aka m3
+domainName modula3.org
+ registered 2007
 
 features
  hasComments true
@@ -10,6 +14,9 @@ features
   (* A comment
   *)
  hasSemanticIndentation false
+
+multiLineCommentTokens (* *)
+keywords AND ANY ARRAY AS BEGIN BITS BRANDED BY CASE CONST DIV DO ELSE ELSIF END EVAL EXCEPT EXCEPTION EXIT EXPORTS FINALLY FOR FROM GENERIC IF IMPORT IN INTERFACE LOCK LOOP METHODS MOD MODULE NOT OBJECT OF OR OVERRIDES PROCEDURE RAISE RAISES READONLY RECORD REF REPEAT RETURN REVEAL SET THEN TO TRY TYPE TYPECASE UNSAFE UNTIL UNTRACED VALUE VAR WHILE WITH
 
 wikipedia https://en.wikipedia.org/wiki/Modula-3
  example
@@ -50,17 +57,7 @@ wikipedia https://en.wikipedia.org/wiki/Modula-3
 githubLanguage Modula-3
  fileExtensions i3 ig m3 mg
 
-helloWorldCollection Modula-3
- (* Hello World in Modula-3 *)
- 
- MODULE Hello EXPORTS Main;
- 
- IMPORT IO;
- 
- BEGIN
-  IO.Put("Hello World!\n");
- END Hello.
-
+monaco m3
 linguistGrammarRepo https://github.com/newgrammars/m3
  firstCommit 2018
  lastCommit 2018
@@ -270,17 +267,16 @@ linguistGrammarRepo https://github.com/newgrammars/m3
   
   
 
-website http://www.modula3.org
-fileType text
-isOpenSource true
-
-tiobe Modula-3
-
-hopl 1411
-
-rosettaCode Modula-3
-reference https://www.cs.purdue.edu/homes/hosking/m3/reference/syntax.html
-centralPackageRepositoryCount 0
+helloWorldCollection Modula-3
+ (* Hello World in Modula-3 *)
+ 
+ MODULE Hello EXPORTS Main;
+ 
+ IMPORT IO;
+ 
+ BEGIN
+  IO.Put("Hello World!\n");
+ END Hello.
 leachim6 Modula 3
  filepath m/Modula 3.m3
  example
@@ -289,8 +285,11 @@ leachim6 Modula 3
   BEGIN
       IO.Put ("Hello World\n")
   END HelloWorld.
-multiLineCommentTokens (* *)
-domainName modula3.org
- registered 2007
-monaco m3
-keywords AND ANY ARRAY AS BEGIN BITS BRANDED BY CASE CONST DIV DO ELSE ELSIF END EVAL EXCEPT EXCEPTION EXIT EXPORTS FINALLY FOR FROM GENERIC IF IMPORT IN INTERFACE LOCK LOOP METHODS MOD MODULE NOT OBJECT OF OR OVERRIDES PROCEDURE RAISE RAISES READONLY RECORD REF REPEAT RETURN REVEAL SET THEN TO TRY TYPE TYPECASE UNSAFE UNTIL UNTRACED VALUE VAR WHILE WITH
+rosettaCode Modula-3
+
+tiobe Modula-3
+hopl 1411
+
+fileType text
+isOpenSource true
+centralPackageRepositoryCount 0

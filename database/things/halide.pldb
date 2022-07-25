@@ -1,6 +1,20 @@
 title halide
 appeared 2010
 type pl
+description a language for fast, portable computation on images and tensors
+website http://halide-lang.org/
+reference https://news.ycombinator.com/item?id=7544855
+domainName halide-lang.org
+ registered 2012
+
+features
+ hasLineComments true
+  // A comment
+ hasComments true
+  // A comment
+ hasSemanticIndentation false
+
+lineCommentToken //
 
 example
  Func blur_3x3(Func input) {
@@ -19,8 +33,6 @@ example
   return blur_y;
  }
 
-description a language for fast, portable computation on images and tensors
-
 githubRepo https://github.com/halide/Halide
  firstCommit 2010
  stars 4985
@@ -31,16 +43,5 @@ githubRepo https://github.com/halide/Halide
  description a language for fast, portable data-parallel computation
  issues 769
 
-website http://halide-lang.org/
-reference https://news.ycombinator.com/item?id=7544855
 isOpenSource true
 centralPackageRepositoryCount 0
-lineCommentToken //
-features
- hasLineComments true
-  // A comment
- hasComments true
-  // A comment
- hasSemanticIndentation false
-domainName halide-lang.org
- registered 2012

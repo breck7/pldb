@@ -1,53 +1,7 @@
 title GAMS
 appeared 1963
 type pl
-
-wikipedia https://en.wikipedia.org/wiki/General_Algebraic_Modeling_System
- example
-  Sets
-        i   canning plants   / seattle, san-diego /
-        j   markets          / new-york, Chicago, topeka / ;
-   Parameters
-        a(i)  capacity of plant i in cases
-          /    seattle     350
-               san-diego   600  /
-        b(j)  demand at market j in cases
-          /    new-york    325
-               Chicago     300
-               topeka      275  / ;
-   Table d(i,j)  distance in thousands of miles
-                     new-york       Chicago      topeka
-       seattle          2.5           1.7          1.8
-       san-diego        2.5           1.8          1.4  ;
-   Scalar f  freight in dollars per case per thousand miles  /90/ ;
-   Parameter c(i,j)  transport cost in thousands of dollars per case ;
-             c(i,j) = f * d(i,j) / 1000 ;
-   Variables
-        x(i,j)  shipment quantities in cases
-        z       total transportation costs in thousands of dollars ;
-   Positive Variable x ;
-   Equations
-        cost        define objective function
-        supply(i)   observe supply limit at plant i
-        demand(j)   satisfy demand at market j ;
-   cost ..        z  =e=  sum((i,j), c(i,j)*x(i,j)) ;
-   supply(i) ..   sum(j, x(i,j))  =l=  a(i) ;
-   demand(j) ..   sum(i, x(i,j))  =g=  b(j) ;
-   Model transport /all/ ;
-   Solve transport using lp minimizing z ;
-   Display x.l, x.m ;
- related algebraic-modeling-language
- summary The General Algebraic Modeling System (GAMS) is a high-level modeling system for mathematical optimization. GAMS is designed for modeling and solving linear, nonlinear, and mixed-integer optimization problems. The system is tailored for complex, large-scale modeling applications and allows the user to build large maintainable models that can be adapted to new situations. The system is available for use on various computer platforms. Models are portable from one platform to another. GAMS was the first algebraic modeling language (AML) and is formally similar to commonly used fourth-generation programming languages. GAMS contains an integrated development environment (IDE) and is connected to a group of third-party optimization solvers. Among these solvers are BARON, COIN-OR solvers, CONOPT, CPLEX, DICOPT, Gurobi, MOSEK, SNOPT, SULUM, and XPRESS. GAMS allows the users to implement a sort of hybrid algorithm combining different solvers. Models are described in concise, human-readable algebraic statements. GAMS is among the most popular input formats for the NEOS Server. Although initially designed for applications related to economics and management science, it has a community of users from various backgrounds of engineering and science.
- pageId 1438314
- created 2005
- backlinksCount 91
- revisionCount 416
- dailyPageViews 89
- appeared 1963
-
-githubLanguage GAMS
- fileExtensions gms
- trendingProjectsCount 0
+aka gams
 
 example
  *Basic example of transport model from GAMS model library
@@ -127,7 +81,53 @@ example
  
  $offtext
 
-aka gams
+wikipedia https://en.wikipedia.org/wiki/General_Algebraic_Modeling_System
+ example
+  Sets
+        i   canning plants   / seattle, san-diego /
+        j   markets          / new-york, Chicago, topeka / ;
+   Parameters
+        a(i)  capacity of plant i in cases
+          /    seattle     350
+               san-diego   600  /
+        b(j)  demand at market j in cases
+          /    new-york    325
+               Chicago     300
+               topeka      275  / ;
+   Table d(i,j)  distance in thousands of miles
+                     new-york       Chicago      topeka
+       seattle          2.5           1.7          1.8
+       san-diego        2.5           1.8          1.4  ;
+   Scalar f  freight in dollars per case per thousand miles  /90/ ;
+   Parameter c(i,j)  transport cost in thousands of dollars per case ;
+             c(i,j) = f * d(i,j) / 1000 ;
+   Variables
+        x(i,j)  shipment quantities in cases
+        z       total transportation costs in thousands of dollars ;
+   Positive Variable x ;
+   Equations
+        cost        define objective function
+        supply(i)   observe supply limit at plant i
+        demand(j)   satisfy demand at market j ;
+   cost ..        z  =e=  sum((i,j), c(i,j)*x(i,j)) ;
+   supply(i) ..   sum(j, x(i,j))  =l=  a(i) ;
+   demand(j) ..   sum(i, x(i,j))  =g=  b(j) ;
+   Model transport /all/ ;
+   Solve transport using lp minimizing z ;
+   Display x.l, x.m ;
+ related algebraic-modeling-language
+ summary The General Algebraic Modeling System (GAMS) is a high-level modeling system for mathematical optimization. GAMS is designed for modeling and solving linear, nonlinear, and mixed-integer optimization problems. The system is tailored for complex, large-scale modeling applications and allows the user to build large maintainable models that can be adapted to new situations. The system is available for use on various computer platforms. Models are portable from one platform to another. GAMS was the first algebraic modeling language (AML) and is formally similar to commonly used fourth-generation programming languages. GAMS contains an integrated development environment (IDE) and is connected to a group of third-party optimization solvers. Among these solvers are BARON, COIN-OR solvers, CONOPT, CPLEX, DICOPT, Gurobi, MOSEK, SNOPT, SULUM, and XPRESS. GAMS allows the users to implement a sort of hybrid algorithm combining different solvers. Models are described in concise, human-readable algebraic statements. GAMS is among the most popular input formats for the NEOS Server. Although initially designed for applications related to economics and management science, it has a community of users from various backgrounds of engineering and science.
+ pageId 1438314
+ created 2005
+ backlinksCount 91
+ revisionCount 416
+ dailyPageViews 89
+ appeared 1963
+
+githubLanguage GAMS
+ fileExtensions gms
+ trendingProjectsCount 0
+
 fileType text
 isOpenSource false
 centralPackageRepositoryCount 0

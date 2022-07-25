@@ -1,14 +1,11 @@
 title myrddin
 appeared 2016
 type pl
-
 description <a href='https://myrlang.org'>Myrddin</a> is a systems programming language. Myrddin emphasizes control, simplicity, a clear mental model and predictable, transparent behavior. It features strong type checking, generics, type inference, closures, and traits. It aims to fit a similar niche as C, but with fewer bullets in your feet.
 website https://myrlang.org
-fileType text
+domainName myrlang.org
+ registered 2016
 
-rosettaCode Myrddin
-
-centralPackageRepositoryCount 0
 leachim6 Myrddin
  filepath m/Myrddin.myr
  fileExtensions myr
@@ -20,5 +17,7 @@ leachim6 Myrddin
   }
   
   
-domainName myrlang.org
- registered 2016
+rosettaCode Myrddin
+
+fileType text
+centralPackageRepositoryCount 0

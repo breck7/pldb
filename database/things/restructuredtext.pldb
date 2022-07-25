@@ -1,11 +1,11 @@
 title reStructuredText
 appeared 2002
 type textMarkup
+description "reStructuredText" is ONE word, not two! reStructuredText is an easy-to-read, what-you-see-is-what-you-get plaintext markup syntax and parser system. It is useful for in-line program documentation (such as Python docstrings), for quickly creating simple web pages, and for standalone documents. reStructuredText is designed for extensibility for specific application domains. The reStructuredText parser is a component of Docutils. reStructuredText is a revision and reinterpretation of the StructuredText and Setext lightweight markup systems.
+reference http://docutils.sourceforge.net/rst.html
 
 features
  hasSemanticIndentation true
-
-description "reStructuredText" is ONE word, not two! reStructuredText is an easy-to-read, what-you-see-is-what-you-get plaintext markup syntax and parser system. It is useful for in-line program documentation (such as Python docstrings), for quickly creating simple web pages, and for standalone documents. reStructuredText is designed for extensibility for specific application domains. The reStructuredText parser is a component of Docutils. reStructuredText is a revision and reinterpretation of the StructuredText and Setext lightweight markup systems.
 
 wikipedia https://en.wikipedia.org/wiki/ReStructuredText
  example
@@ -33,6 +33,10 @@ githubLanguage reStructuredText
  fileExtensions rst rest resttxt rsttxt
  trendingProjectsCount 0
 
+monaco restructuredtext
+pygmentsHighlighter reStructuredText
+ filename markup.py
+ fileExtensions rst rest
 linguistGrammarRepo https://github.com/Lukasa/language-restructuredtext
  firstCommit 2014
  lastCommit 2018
@@ -77,16 +81,6 @@ linguistGrammarRepo https://github.com/Lukasa/language-restructuredtext
   Assuming the outcome of the discussion on the mailing list is positive and you
   have a function or piece of code that does what you nee
 
-reference http://docutils.sourceforge.net/rst.html
-fileType text
-centralPackageRepositoryCount 0
-rijuRepl https://riju.codes/restructuredtext
- example
-  Hello, world!
-  
-pygmentsHighlighter reStructuredText
- filename markup.py
- fileExtensions rst rest
 leachim6 reStructuredText
  filepath r/reStructuredText.rst
  fileExtensions rst
@@ -96,4 +90,11 @@ leachim6 reStructuredText
   ============
   
   
-monaco restructuredtext
+
+rijuRepl https://riju.codes/restructuredtext
+ example
+  Hello, world!
+  
+
+fileType text
+centralPackageRepositoryCount 0

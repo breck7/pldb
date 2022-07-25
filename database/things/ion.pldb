@@ -1,6 +1,11 @@
 title Ion
 appeared 2016
 type idl
+description Amazon Ion is a richly-typed, self-describing, hierarchical data serialization format offering interchangeable binary and text representations. The text format (a superset of JSON) is easy to read and author, supporting rapid prototyping. The binary representation is efficient to store, transmit, and skip-scan parse.
+reference https://amzn.github.io/ion-docs/
+aka Amazon Ion
+
+related protobuf
 
 features
  hasBooleans true
@@ -101,6 +106,9 @@ features
   */
  hasSemanticIndentation false
 
+lineCommentToken //
+multiLineCommentTokens /* */
+
 example
  /* Ion supports comments. */
  // Here is a struct, which is similar to a JSON object
@@ -129,10 +137,3 @@ example
    // base64-encoded in Ion text encoding
    buzz: {{VG8gaW5maW5pdHkuLi4gYW5kIGJleW9uZCE=}},
  }
-
-description Amazon Ion is a richly-typed, self-describing, hierarchical data serialization format offering interchangeable binary and text representations. The text format (a superset of JSON) is easy to read and author, supporting rapid prototyping. The binary representation is efficient to store, transmit, and skip-scan parse.
-aka Amazon Ion
-reference https://amzn.github.io/ion-docs/
-related protobuf
-lineCommentToken //
-multiLineCommentTokens /* */

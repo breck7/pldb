@@ -1,6 +1,8 @@
 title OpenRC runscript
 appeared 2007
 type application
+description OpenRC is basically an interpreter for shell scripts which provides an easy interface to the often complex system commands and daemons. When a service runs a command it first loads its multiplexed configuration file, then its master configuration file, then /etc/rc.conf and finally the script itself. At this point then runs the command given.
+reference http://www.linuxhowtos.org/manpages/8/openrc-run.htm
 
 example
  #!/sbin/openrc-run
@@ -115,8 +117,6 @@ example
      einfo "Foo has eaten: `service_get_value ate`"
  }
 
-description OpenRC is basically an interpreter for shell scripts which provides an easy interface to the often complex system commands and daemons. When a service runs a command it first loads its multiplexed configuration file, then its master configuration file, then /etc/rc.conf and finally the script itself. At this point then runs the command given.
-
 githubLanguage OpenRC runscript
  trendingProjectsCount 0
 
@@ -148,6 +148,5 @@ linguistGrammarRepo https://github.com/atom/language-shellscript
   }
   
 
-reference http://www.linuxhowtos.org/manpages/8/openrc-run.htm
 fileType text
 centralPackageRepositoryCount 0

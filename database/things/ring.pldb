@@ -2,6 +2,10 @@ title Ring
 appeared 2016
 type pl
 creators Mahmoud Fayed
+website http://ring-lang.net
+fileExtensions ring rh rform
+domainName ring-lang.net
+ registered 2016
 
 features
  hasComments true
@@ -10,6 +14,9 @@ features
  hasSemanticIndentation false
  hasStrings true
   "Hello world"
+
+lineCommentToken #
+stringToken "
 
 wikipedia https://en.wikipedia.org/wiki/Ring_(programming_language)
  related c linux lua python ruby csharp basic qml xbase
@@ -79,23 +86,16 @@ linguistGrammarRepo https://github.com/MahmoudFayed/atom-language-ring
                           the=0
   
 
-website http://ring-lang.net
-fileExtensions ring rh rform
-fileType text
-wordRank 1517
-isOpenSource true
-
-tiobe Ring
-
-rosettaCode Ring
-
-centralPackageRepositoryCount 0
-lineCommentToken #
 leachim6 Ring
  filepath r/Ring.ring
  fileExtensions ring
  example
   see "Hello World" 
-domainName ring-lang.net
- registered 2016
-stringToken "
+rosettaCode Ring
+
+tiobe Ring
+
+fileType text
+wordRank 1517
+isOpenSource true
+centralPackageRepositoryCount 0

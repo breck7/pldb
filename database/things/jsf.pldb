@@ -1,10 +1,17 @@
 title JSFuck
-website http://www.jsfuck.com/
+appeared 2012
 type esolang
+creators Martin Kleppe
 description JSFuck is an esoteric and educational programming style based on the atomic parts of JavaScript. It uses only six different characters to write and execute code.
+website http://www.jsfuck.com/
+domainName jsfuck.com
+ registered 2012
+
 githubRepo http://github.com/aemkei/jsfuck
  firstCommit 2012
+
 wikipedia https://en.wikipedia.org/wiki/JSFuck
+
 rijuRepl https://riju.codes/jsf
  example
   [][(![]+[])[+[]]+(![]+[])[!![]+!![]]+(![]+[])[+!![]]+(!![]+[])[+[]]][([]+[][(![]
@@ -141,7 +148,3 @@ rijuRepl https://riju.codes/jsf
   (!![]+[][(![]+[])[+[]]+(![]+[])[!![]+!![]]+(![]+[])[+!![]]+(!![]+[])[+[]]])[+!![
   ]+[+[]]]+(!![]+[])[+!![]]]()[+!![]+[!![]+!![]]])())
   
-appeared 2012
-creators Martin Kleppe
-domainName jsfuck.com
- registered 2012

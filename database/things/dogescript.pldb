@@ -1,20 +1,17 @@
 title Dogescript
 appeared 2013
 type pl
+creators Zach Bruggeman
+website http://dogescript.io
+domainName dogescript.io
 
-githubLanguage Dogescript
- fileExtensions djs
- trendingProjectsCount 0
+features
+ hasPrintDebugging true
+ hasStrings true
+  "Hello world"
 
-githubRepo https://github.com/dogescript/dogescript
- firstCommit 2013
- stars 1327
- forks 100
- subscribers 28
- created 2013
- updated 2022
- description wow so syntax very doge much future
- issues 8
+printToken console.loge
+stringToken "
 
 example
  quiet
@@ -33,18 +30,21 @@ example
  wow
  
  module.exports is language
-website http://dogescript.io
 
-twitter dogescript
+githubRepo https://github.com/dogescript/dogescript
+ firstCommit 2013
+ stars 1327
+ forks 100
+ subscribers 28
+ created 2013
+ updated 2022
+ description wow so syntax very doge much future
+ issues 8
 
-fileType text
-isOpenSource true
-centralPackageRepositoryCount 0
-rijuRepl https://riju.codes/dogescript
- example
-  plz console.loge with "Hello, world!"
-  
-creators Zach Bruggeman
+githubLanguage Dogescript
+ fileExtensions djs
+ trendingProjectsCount 0
+
 leachim6 DogeScript
  filepath d/DogeScript.djs
  fileExtensions djs
@@ -53,10 +53,13 @@ leachim6 DogeScript
   
   plz console.loge with "Hello World"
   
-printToken console.loge
-features
- hasPrintDebugging true
- hasStrings true
-  "Hello world"
-domainName dogescript.io
-stringToken "
+
+rijuRepl https://riju.codes/dogescript
+ example
+  plz console.loge with "Hello, world!"
+  
+
+twitter dogescript
+fileType text
+isOpenSource true
+centralPackageRepositoryCount 0

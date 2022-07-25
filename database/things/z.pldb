@@ -1,4 +1,11 @@
 title Z
+appeared 2019
+type pl
+website https://zlanguage.github.io/
+domainName zlanguage.github.io
+
+compilesTo javascript
+
 githubRepo https://github.com/zlanguage/zcomp
  firstCommit 2019
  stars 46
@@ -8,8 +15,3 @@ githubRepo https://github.com/zlanguage/zcomp
  updated 2022
  description The compiler for the Z programming language - a procedural and functional language that transpiles to JavaScript. It integrates syntactic sugar like pattern matching, operator overloading, and macros while still remaining compatible with the existing JavaScript ecosystem. 
  issues 19
-website https://zlanguage.github.io/
-type pl
-compilesTo javascript
-appeared 2019
-domainName zlanguage.github.io

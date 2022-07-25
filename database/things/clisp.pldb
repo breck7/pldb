@@ -1,6 +1,15 @@
 title CLISP
 appeared 1973
 type pl
+reference https://semanticscholar.org/paper/4fa23aa15e2d62ee9f3a4091d8b05b1fe4dcd1ac
+
+features
+ hasPrintDebugging true
+ hasStrings true
+  "Hello world"
+
+printToken write-line
+stringToken "
 
 wikipedia https://en.wikipedia.org/wiki/CLISP
  related common-lisp unix c
@@ -11,23 +20,15 @@ wikipedia https://en.wikipedia.org/wiki/CLISP
  created 2004
  appeared 1987
 
-reference https://semanticscholar.org/paper/4fa23aa15e2d62ee9f3a4091d8b05b1fe4dcd1ac
-
-tryItOnline clisp
-
-isOpenSource true
-
-hopl 604
-
-centralPackageRepositoryCount 0
 leachim6 CLISP
  filepath c/CLISP.lisp
  fileExtensions lisp
  example
   (write-line "Hello World")
-printToken write-line
-features
- hasPrintDebugging true
- hasStrings true
-  "Hello world"
-stringToken "
+
+tryItOnline clisp
+
+hopl 604
+
+isOpenSource true
+centralPackageRepositoryCount 0

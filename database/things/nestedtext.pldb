@@ -1,20 +1,21 @@
 title NestedText
+appeared 2020
 type dataNotation
-related yaml
+creators Ken Kundert
 website https://nestedtext.org
-githubRepo https://github.com/KenKundert/nestedtext
- firstCommit 2020
- stars 270
- forks 11
- subscribers 9
- created 2020
- updated 2022
- description Human Readable and Writable Data Interchange Format
- issues 3
-pygmentsHighlighter NestedText
- filename configs.py
- fileExtensions nt
+domainName nestedtext.org
+
+related yaml
+
+features
+ hasLineComments true
+  # A comment
+ hasComments true
+  # A comment
+ hasSemanticIndentation false
+
 lineCommentToken #
+
 example
  # Contact information for our officers
  
@@ -41,12 +42,17 @@ example
      additional roles:
          - new membership task force
          - accounting task force
-appeared 2020
-creators Ken Kundert
-features
- hasLineComments true
-  # A comment
- hasComments true
-  # A comment
- hasSemanticIndentation false
-domainName nestedtext.org
+
+githubRepo https://github.com/KenKundert/nestedtext
+ firstCommit 2020
+ stars 270
+ forks 11
+ subscribers 9
+ created 2020
+ updated 2022
+ description Human Readable and Writable Data Interchange Format
+ issues 3
+
+pygmentsHighlighter NestedText
+ filename configs.py
+ fileExtensions nt

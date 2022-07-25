@@ -2,12 +2,19 @@ title TOML
 appeared 2013
 type dataNotation
 creators Tom Preston-Werner
+website https://toml.io
+standsFor Tom's Obvious, Minimal Language
+domainName toml.io
+ registered 2015
 
+features
+ hasLineComments true
+  # A comment
+ hasComments true
+  # A comment
+ hasSemanticIndentation false
 
 lineCommentToken #
-githubLanguage TOML
- fileExtensions toml
- trendingProjectsCount 0
 
 githubRepo https://github.com/toml-lang/toml
  stars 17151
@@ -19,6 +26,13 @@ githubRepo https://github.com/toml-lang/toml
  description Tom's Obvious, Minimal Language
  issues 40
 
+githubLanguage TOML
+ fileExtensions toml
+ trendingProjectsCount 0
+
+pygmentsHighlighter TOML
+ filename configs.py
+ fileExtensions toml Pipfile poetry.lock
 linguistGrammarRepo https://github.com/textmate/toml.tmbundle
  firstCommit 2013
  lastCommit 2018
@@ -48,29 +62,18 @@ linguistGrammarRepo https://github.com/textmate/toml.tmbundle
     solver-name = "gps-cdcl"
     solver-version = 1
 
-standsFor Tom's Obvious, Minimal Language
-fileType text
-isOpenSource true
-centralPackageRepositoryCount 0
-rijuRepl https://riju.codes/toml
- example
-  output = "Hello, world!"
-  
-website https://toml.io
-features
- hasLineComments true
-  # A comment
- hasComments true
-  # A comment
- hasSemanticIndentation false
-pygmentsHighlighter TOML
- filename configs.py
- fileExtensions toml Pipfile poetry.lock
 leachim6 TOML
  filepath t/TOML.toml
  fileExtensions toml
  example
   Hello = "World"
   
-domainName toml.io
- registered 2015
+
+rijuRepl https://riju.codes/toml
+ example
+  output = "Hello, world!"
+  
+
+fileType text
+isOpenSource true
+centralPackageRepositoryCount 0

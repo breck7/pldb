@@ -2,6 +2,8 @@ title Prolog
 appeared 1972
 type pl
 creators Alain Colmerauer
+fileExtensions pl pro P
+country France
 
 features
  hasComments true
@@ -16,6 +18,11 @@ features
  hasStrings true
   'Hello world'
  isCaseSensitive true
+
+lineCommentToken %
+multiLineCommentTokens /* */
+printToken write
+stringToken '
 
 wikipedia https://en.wikipedia.org/wiki/Prolog
  example
@@ -35,12 +42,10 @@ githubLanguage Prolog
  fileExtensions pl pro prolog yap
  trendingProjectsCount 0
 
-helloWorldCollection Prolog
- % Hello World in Prolog
- 
- hello :- display('Hello World!') , nl .
- 
-
+antlr https://github.com/antlr/grammars-v4/tree/master/prolog
+pygmentsHighlighter Prolog
+ filename prolog.py
+ fileExtensions ecl prolog pro pl
 linguistGrammarRepo https://github.com/alnkpa/sublimeprolog
  firstCommit 2012
  lastCommit 2018
@@ -55,60 +60,15 @@ linguistGrammarRepo https://github.com/alnkpa/sublimeprolog
   	bagof(Subset, subset(Set, Subset), Subset).
   
 
-country France
-fileExtensions pl pro P
-fileType text
-
-tiobe Prolog
- currentRank 41
-
-meetup prolog
- memberCount 3771
- groupCount 8
-
-linkedInSkill prolog
- 2018 36743
-
 projectEuler Prolog
  memberCount
   2019 143
   2022 156
-
-hopl 562
-
-subreddit prolog
- memberCount
-  2017 1756
-  2022 7884
-
-quineRelay Prolog
-
-ubuntuPackage swi-prolog
-
-rosettaCode Prolog
-
-antlr https://github.com/antlr/grammars-v4/tree/master/prolog
-
-lineCommentToken %
-jupyterKernel https://github.com/Calysto/calysto_prolog
-packageRepository http://www.swi-prolog.org/pldoc/doc/_SWI_/library/prolog_pack.pl
-rijuRepl https://riju.codes/prolog
- example
-  :- initialization main.
-  
-  main :-
-      write("Hello, world!"), nl.
-  
-goodreads
- title|year|author|goodreadsId|rating|ratings|reviews
- PROLOG: Programming for Artificial Intelligence|1986|Ivan Bratko|2059933|3.75|166|4
- Programming in PROLOG: Using the ISO Standard|1981|William F. Clocksin|1601676|3.57|83|4
- The Art of Prolog: Advanced Programming Techniques|1994|Leon Sterling|2365132|3.91|22|2
- The Art Of Prolog: Advanced Programming Techniques|1986|Leon Sterling|1710377|3.79|43|2
- Logic Programming with PROLOG|2005|Max Bramer|2069010|3.56|16|0
-pygmentsHighlighter Prolog
- filename prolog.py
- fileExtensions ecl prolog pro pl
+helloWorldCollection Prolog
+ % Hello World in Prolog
+ 
+ hello :- display('Hello World!') , nl .
+ 
 leachim6 Prolog
  filepath p/Prolog.pro
  fileExtensions pro
@@ -118,6 +78,42 @@ leachim6 Prolog
   
   :- helloWorld.
   
-printToken write
-multiLineCommentTokens /* */
-stringToken '
+rosettaCode Prolog
+quineRelay Prolog
+
+rijuRepl https://riju.codes/prolog
+ example
+  :- initialization main.
+  
+  main :-
+      write("Hello, world!"), nl.
+  
+
+linkedInSkill prolog
+ 2018 36743
+
+subreddit prolog
+ memberCount
+  2017 1756
+  2022 7884
+meetup prolog
+ memberCount 3771
+ groupCount 8
+
+goodreads
+ title|year|author|goodreadsId|rating|ratings|reviews
+ PROLOG: Programming for Artificial Intelligence|1986|Ivan Bratko|2059933|3.75|166|4
+ Programming in PROLOG: Using the ISO Standard|1981|William F. Clocksin|1601676|3.57|83|4
+ The Art of Prolog: Advanced Programming Techniques|1994|Leon Sterling|2365132|3.91|22|2
+ The Art Of Prolog: Advanced Programming Techniques|1986|Leon Sterling|1710377|3.79|43|2
+ Logic Programming with PROLOG|2005|Max Bramer|2069010|3.56|16|0
+
+tiobe Prolog
+ currentRank 41
+hopl 562
+
+packageRepository http://www.swi-prolog.org/pldoc/doc/_SWI_/library/prolog_pack.pl
+
+ubuntuPackage swi-prolog
+jupyterKernel https://github.com/Calysto/calysto_prolog
+fileType text

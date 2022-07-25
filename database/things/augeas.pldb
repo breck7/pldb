@@ -1,6 +1,9 @@
 title Augeas
 appeared 2007
 type pl
+website http://augeas.net/
+domainName augeas.net
+ registered 2008
 
 wikipedia https://en.wikipedia.org/wiki/Augeas_(software)
  related c xml xpath python ruby ocaml perl haskell java php tcl puppet
@@ -16,12 +19,10 @@ githubLanguage Augeas
  fileExtensions aug
  trendingProjectsCount 0
 
-website http://augeas.net/
-fileType text
-isOpenSource true
-centralPackageRepositoryCount 0
 pygmentsHighlighter Augeas
  filename configs.py
  fileExtensions aug
-domainName augeas.net
- registered 2008
+
+fileType text
+isOpenSource true
+centralPackageRepositoryCount 0

@@ -3,6 +3,19 @@ appeared 2007
 type textMarkup
 aka Graphviz DOT
 
+features
+ hasLineComments true
+  // A comment
+ hasComments true
+  // A comment
+ hasMultiLineComments true
+  /* A comment
+  */
+ hasSemanticIndentation false
+
+lineCommentToken //
+multiLineCommentTokens /* */
+
 example
   // The graph name and the semicolons are optional
  graph graphname {
@@ -39,6 +52,10 @@ githubLanguage Graphviz (DOT)
  fileExtensions dot gv
  trendingProjectsCount 0
 
+antlr https://github.com/antlr/grammars-v4/tree/master/dot
+pygmentsHighlighter Graphviz
+ filename graphviz.py
+ fileExtensions gv dot
 linguistGrammarRepo https://github.com/textmate/graphviz.tmbundle
  firstCommit 2005
  lastCommit 2015
@@ -97,24 +114,7 @@ linguistGrammarRepo https://github.com/textmate/graphviz.tmbundle
       47 -> 29 -> 16 -> GFWYBD -> WYBD -> BD -> D [label=1];
   }
 
+jupyterKernel https://github.com/laixintao/jupyter-dot-kernel
 fileType text
 wordRank 2930
-
-antlr https://github.com/antlr/grammars-v4/tree/master/dot
-
-jupyterKernel https://github.com/laixintao/jupyter-dot-kernel
 centralPackageRepositoryCount 0
-lineCommentToken //
-features
- hasLineComments true
-  // A comment
- hasComments true
-  // A comment
- hasMultiLineComments true
-  /* A comment
-  */
- hasSemanticIndentation false
-pygmentsHighlighter Graphviz
- filename graphviz.py
- fileExtensions gv dot
-multiLineCommentTokens /* */

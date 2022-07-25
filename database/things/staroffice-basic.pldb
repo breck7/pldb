@@ -2,6 +2,15 @@ title StarOffice Basic
 appeared 2000
 type pl
 
+features
+ hasLineComments true
+  ' A comment
+ hasComments true
+  ' A comment
+ hasSemanticIndentation false
+
+lineCommentToken '
+
 wikipedia https://en.wikipedia.org/wiki/StarOffice_Basic
  example
   Sub ParaCount
@@ -37,10 +46,3 @@ wikipedia https://en.wikipedia.org/wiki/StarOffice_Basic
  dailyPageViews 5
 
 centralPackageRepositoryCount 0
-lineCommentToken '
-features
- hasLineComments true
-  ' A comment
- hasComments true
-  ' A comment
- hasSemanticIndentation false

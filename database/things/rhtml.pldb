@@ -1,6 +1,8 @@
 title RHTML
 appeared 2004
 type template
+description RHTML is HTML mixed with Ruby, using HTML tags. All of Ruby is available for programming along with HTML.
+reference https://www.tutorialspoint.com/ruby-on-rails/rails-and-rhtml.htm
 
 example
  <ul>
@@ -9,21 +11,18 @@ example
    <% end %>
  </ul>
 
-description RHTML is HTML mixed with Ruby, using HTML tags. All of Ruby is available for programming along with HTML.
-
 githubLanguage RHTML
  fileExtensions rhtml
  trendingProjectsCount 0
 
+pygmentsHighlighter RHTML
+ filename templates.py
+ fileExtensions rhtml
 linguistGrammarRepo https://github.com/atom/language-ruby
  firstCommit 2013
  lastCommit 2018
  committerCount 76
  commitCount 458
 
-reference https://www.tutorialspoint.com/ruby-on-rails/rails-and-rhtml.htm
 fileType text
 centralPackageRepositoryCount 0
-pygmentsHighlighter RHTML
- filename templates.py
- fileExtensions rhtml

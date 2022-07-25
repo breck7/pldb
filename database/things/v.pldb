@@ -1,35 +1,11 @@
 title V
 appeared 2019
 type pl
-oldName volt
-subreddit vlang
- memberCount
-  2022 1547
-
-githubRepo https://github.com/vlang/v
- firstCommit 2019
- stars 29603
- forks 1818
- subscribers 470
- created 2019
- updated 2022
- description Simple, fast, safe, compiled language for developing maintainable software. Compiles itself in <1s with zero library dependencies. Supports automatic C => V translation. https://vlang.io
- issues 753
-
+creators Alexander Medvednikov
 website https://vlang.io/
-
-twitter v_language
-
-rijuRepl https://riju.codes/v
- example
-  fn main() {
-  	println('Hello, world!')
-  }
-  
- description Simple, statically-typed compiled programming language designed for building maintainable software
- fileExtensions v
- website https://vlang.io/
- githubRepo https://github.com/vlang/v
+oldName volt
+domainName vlang.io
+ registered 2019
 
 features
  hasStrings true
@@ -42,6 +18,9 @@ features
  hasSemanticIndentation false
 
 lineCommentToken //
+printToken println
+stringToken "
+
 example
  import json
  
@@ -85,14 +64,36 @@ example
      u.is_registered = true
  }
 
-creators Alexander Medvednikov
+githubRepo https://github.com/vlang/v
+ firstCommit 2019
+ stars 29603
+ forks 1818
+ subscribers 470
+ created 2019
+ updated 2022
+ description Simple, fast, safe, compiled language for developing maintainable software. Compiles itself in <1s with zero library dependencies. Supports automatic C => V translation. https://vlang.io
+ issues 753
+
 leachim6 V
  filepath v/V.v
  fileExtensions v
  example
   println("Hello World")
   
-printToken println
-domainName vlang.io
- registered 2019
-stringToken "
+
+rijuRepl https://riju.codes/v
+ example
+  fn main() {
+  	println('Hello, world!')
+  }
+  
+ description Simple, statically-typed compiled programming language designed for building maintainable software
+ fileExtensions v
+ website https://vlang.io/
+ githubRepo https://github.com/vlang/v
+
+subreddit vlang
+ memberCount
+  2022 1547
+
+twitter v_language

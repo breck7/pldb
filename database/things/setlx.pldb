@@ -2,6 +2,7 @@ title setlx
 appeared 2011
 type pl
 description setlX is an interpreter for the high level programming language SetlX (set language extended). The most distinguishing feature of this language is the support it offers for sets and lists. As set theory is the language of mathematics, many mathematical algorithms that are formulated in terms of set theory have very straightforward implementations in SetlX. Designed mostly by Karl Stroetmann, the SetlX language is an evolution of Setl by Jack Schwartz. It was specifically conceived to make the unique features of Setl more accessible to today's computer science students. This interpreter is currently the SetlX reference implementation.
+website https://randoom.org/Software/SetlX/
 
 githubRepo https://github.com/herrmanntom/setlX
  firstCommit 2011
@@ -12,5 +13,3 @@ githubRepo https://github.com/herrmanntom/setlX
  updated 2022
  description setlX is an interpreter for the high level programming-language SetlX (set language extended).
  issues 1
-
-website https://randoom.org/Software/SetlX/

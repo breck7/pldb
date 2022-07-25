@@ -1,6 +1,9 @@
 title Velocity Template Language
 appeared 2000
 type template
+description Velocity is a Java-based template engine. It permits web page designers to reference methods defined in Java code.
+reference https://velocity.apache.org/engine/1.7/user-guide.html#what-is-velocity
+standsFor Velocity Template Language
 
 example
  <html>
@@ -20,9 +23,4 @@ example
    </body>
  </html>
 
-description Velocity is a Java-based template engine. It permits web page designers to reference methods defined in Java code.
-
 wikipedia https://en.wikipedia.org/wiki/Apache_Velocity
-
-reference https://velocity.apache.org/engine/1.7/user-guide.html#what-is-velocity
-standsFor Velocity Template Language

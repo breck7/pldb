@@ -2,6 +2,8 @@ title Icon
 appeared 1977
 type pl
 creators Ralph Griswold
+website http://www.cs.arizona.edu/icon
+country United States
 
 features
  hasLineComments true
@@ -12,6 +14,10 @@ features
  hasSemanticIndentation false
  hasStrings true
   "Hello world"
+
+lineCommentToken #
+printToken write
+stringToken "
 
 wikipedia https://en.wikipedia.org/wiki/Icon_(programming_language)
  example
@@ -52,6 +58,10 @@ wikipedia https://en.wikipedia.org/wiki/Icon_(programming_language)
  revisionCount 184
  appeared 1977
 
+pygmentsHighlighter Icon
+ filename unicon.py
+ fileExtensions icon ICON
+
 helloWorldCollection Icon
  # Hello world in Icon (http://www.cs.arizona.edu/icon/)
  
@@ -59,35 +69,6 @@ helloWorldCollection Icon
      write("Hello world")
  end
  
-
-website http://www.cs.arizona.edu/icon
-
-tryItOnline icon
-
-country United States
-fileType text
-wordRank 2368
-
-tiobe Icon
-
-hopl 510
-
-quineRelay Icon
-
-ubuntuPackage icont
-
-rosettaCode Icon
-lineCommentToken #
-centralPackageRepositoryCount 0
-rijuRepl https://riju.codes/icon
- example
-  procedure main ()
-      write("Hello, world!")
-  end
-  
-pygmentsHighlighter Icon
- filename unicon.py
- fileExtensions icon ICON
 leachim6 Icon
  filepath i/Icon.icn
  fileExtensions icn
@@ -95,5 +76,21 @@ leachim6 Icon
   procedure main()
       write("Hello World");
   end
-printToken write
-stringToken "
+rosettaCode Icon
+quineRelay Icon
+
+rijuRepl https://riju.codes/icon
+ example
+  procedure main ()
+      write("Hello, world!")
+  end
+  
+tryItOnline icon
+
+tiobe Icon
+hopl 510
+
+ubuntuPackage icont
+fileType text
+wordRank 2368
+centralPackageRepositoryCount 0

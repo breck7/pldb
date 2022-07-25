@@ -1,36 +1,15 @@
 title Aheui
 appeared 2012
 type pl
-
+country Korea
 nativeLanguage Korean
 
 githubRepo https://github.com/aheui
 
-
-tryItOnline aheui
-
-country Korea
-fileType text
-isOpenSource true
-
-quineRelay Aheui
-
-centralPackageRepositoryCount 0
-rijuRepl https://riju.codes/aheui
- example
-  밤밣따빠밣밟따뿌
-  빠맣파빨받밤뚜뭏
-  돋밬탕빠맣붏두붇
-  볻뫃박발뚷투뭏붖
-  뫃도뫃희멓뭏뭏붘
-  뫃봌토범더벌뿌뚜
-  뽑뽀멓멓더벓뻐뚠
-  뽀덩벐멓뻐덕더벅
-  
-esolang https://esolangs.org/wiki/Aheui
 pygmentsHighlighter Aheui
  filename esoteric.py
  fileExtensions aheui
+
 leachim6 Aheui
  filepath a/Aheui.aheui
  fileExtensions aheui
@@ -44,3 +23,23 @@ leachim6 Aheui
   뽑뽀멓멓더벓뻐뚠
   뽀덩벐멓뻐덕더벅
   
+quineRelay Aheui
+
+rijuRepl https://riju.codes/aheui
+ example
+  밤밣따빠밣밟따뿌
+  빠맣파빨받밤뚜뭏
+  돋밬탕빠맣붏두붇
+  볻뫃박발뚷투뭏붖
+  뫃도뫃희멓뭏뭏붘
+  뫃봌토범더벌뿌뚜
+  뽑뽀멓멓더벓뻐뚠
+  뽀덩벐멓뻐덕더벅
+  
+tryItOnline aheui
+
+esolang https://esolangs.org/wiki/Aheui
+
+fileType text
+isOpenSource true
+centralPackageRepositoryCount 0

@@ -1,12 +1,21 @@
 title Standard ML
 appeared 1990
 type pl
+website http://sml-family.org
+aka sml
+aka standardml
+fileExtensions sml
+domainName sml-family.org
+ registered 2014
 
 features
  hasTypeInference true
  hasLineComments false
  hasPrintDebugging true
  hasSemanticIndentation false
+
+lineCommentToken #
+printToken print
 
 wikipedia https://en.wikipedia.org/wiki/Standard_ML
  example
@@ -29,6 +38,9 @@ githubLanguage Standard ML
   komeiji-satori Dress https://github.com/komeiji-satori.png https://github.com/komeiji-satori/Dress "Standard ML" #dc566d 11618 1639 636 "好耶 是女装"
  trendingProjectsCount 2
 
+pygmentsHighlighter Standard ML
+ filename ml.py
+ fileExtensions sml sig fun
 linguistGrammarRepo https://github.com/textmate/standard-ml.tmbundle
  firstCommit 2006
  lastCommit 2015
@@ -65,27 +77,6 @@ linguistGrammarRepo https://github.com/textmate/standard-ml.tmbundle
      end
   
 
-website http://sml-family.org
-aka sml
-aka standardml
-fileExtensions sml
-fileType text
-
-tiobe Standard ML
-
-quineRelay Standard ML
-
-ubuntuPackage mlton
-
-lineCommentToken #
-centralPackageRepositoryCount 0
-rijuRepl https://riju.codes/standardml
- example
-  print "Hello, world!\n";
-  
-pygmentsHighlighter Standard ML
- filename ml.py
- fileExtensions sml sig fun
 leachim6 Standard ML
  filepath s/Standard ML.sml
  example
@@ -93,6 +84,15 @@ leachim6 Standard ML
   
   hello()
   
-printToken print
-domainName sml-family.org
- registered 2014
+quineRelay Standard ML
+
+rijuRepl https://riju.codes/standardml
+ example
+  print "Hello, world!\n";
+  
+
+tiobe Standard ML
+
+ubuntuPackage mlton
+fileType text
+centralPackageRepositoryCount 0

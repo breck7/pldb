@@ -1,11 +1,32 @@
 title Linden Scripting Language
 appeared 2003
 type pl
+reference http://wiki.secondlife.com/wiki/LSL_Portal
+standsFor Linden Scripting Language
+
+features
+ hasLineComments true
+  // A comment
+ hasComments true
+  // A comment
+ hasMultiLineComments true
+  /* A comment
+  */
+ hasSemanticIndentation false
+ hasStrings true
+  "Hello world"
+
+lineCommentToken //
+multiLineCommentTokens /* */
+stringToken "
 
 githubLanguage LSL
  fileExtensions lsl lslp
  trendingProjectsCount 0
 
+pygmentsHighlighter LSL
+ filename scripting.py
+ fileExtensions lsl
 linguistGrammarRepo https://github.com/textmate/secondlife-lsl.tmbundle
  firstCommit 2007
  lastCommit 2017
@@ -88,28 +109,6 @@ linguistGrammarRepo https://github.com/textmate/secondlife-lsl.tmbundle
       }
   }
 
-reference http://wiki.secondlife.com/wiki/LSL_Portal
-standsFor Linden Scripting Language
-fileType text
-
-rosettaCode LSL
-
-centralPackageRepositoryCount 0
-lineCommentToken //
-features
- hasLineComments true
-  // A comment
- hasComments true
-  // A comment
- hasMultiLineComments true
-  /* A comment
-  */
- hasSemanticIndentation false
- hasStrings true
-  "Hello world"
-pygmentsHighlighter LSL
- filename scripting.py
- fileExtensions lsl
 leachim6 LSL
  filepath l/LSL.lsl
  fileExtensions lsl
@@ -121,5 +120,7 @@ leachim6 LSL
           llSay(0, "Hello World");
       }
   }
-multiLineCommentTokens /* */
-stringToken "
+rosettaCode LSL
+
+fileType text
+centralPackageRepositoryCount 0

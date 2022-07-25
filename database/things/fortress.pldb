@@ -1,6 +1,20 @@
 title Fortress
 appeared 2004
 type pl
+website http://projectfortress.java.net/
+country United States
+domainName projectfortress.java.net
+
+features
+ hasMultiLineComments true
+  (* A comment
+  *)
+ hasComments true
+  (* A comment
+  *)
+ hasSemanticIndentation false
+
+multiLineCommentTokens (* *)
 
 wikipedia https://en.wikipedia.org/wiki/Fortress_(programming_language)
  example
@@ -23,26 +37,11 @@ helloWorldCollection Fortress
  export Executable
  run(args) = print "Hello, world!"
  
-
-website http://projectfortress.java.net/
-country United States
-fileType text
-isOpenSource true
-
-tiobe Fortress
-
-hopl 8170
-
 rosettaCode Fortress
 
+tiobe Fortress
+hopl 8170
+
+fileType text
+isOpenSource true
 centralPackageRepositoryCount 0
-multiLineCommentTokens (* *)
-features
- hasMultiLineComments true
-  (* A comment
-  *)
- hasComments true
-  (* A comment
-  *)
- hasSemanticIndentation false
-domainName projectfortress.java.net

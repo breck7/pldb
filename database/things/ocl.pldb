@@ -1,12 +1,22 @@
 title OCL
 appeared 1997
 type pl
+description The Object Constraint Language (OCL) is a textual sublanguage of the Unified Modelling Language (UML). It can be used to express additional constraints on UML models that cannot be expressed, or are very difficult to express, with the graphical means provided by UML. OCL is based on first-order predicate logic but it uses a syntax similar to programming languages and closely related to the syntax of UML. It is, thus, more adequate for every-day modelling than pure first-order predicate logic.
+reference http://www-st.inf.tu-dresden.de/ocl/
+reference https://www.omg.org/spec/OCL/2.2/PDF
+
+features
+ hasLineComments true
+  -- A comment
+ hasComments true
+  -- A comment
+ hasSemanticIndentation false
+
+lineCommentToken --
 
 example
  context Person inv: self.age >=0
  context Person inv: self.age<18 implies self.cars->isEmpty()
-
-description The Object Constraint Language (OCL) is a textual sublanguage of the Unified Modelling Language (UML). It can be used to express additional constraints on UML models that cannot be expressed, or are very difficult to express, with the graphical means provided by UML. OCL is based on first-order predicate logic but it uses a syntax similar to programming languages and closely related to the syntax of UML. It is, thus, more adequate for every-day modelling than pure first-order predicate logic.
 
 wikipedia https://en.wikipedia.org/wiki/Object_Constraint_Language
  summary The Object Constraint Language (OCL) is a declarative language describing rules applying to Unified Modeling Language (UML) models developed at IBM and is now part of the UML standard. Initially, OCL was merely a formal specification language extension for UML. OCL may now be used with any Meta-Object Facility (MOF) Object Management Group (OMG) meta-model, including UML. The Object Constraint Language is a precise text language that provides constraint and object query expressions on any MOF model or meta-model that cannot otherwise be expressed by diagrammatic notation. OCL is a key component of the new OMG standard recommendation for transforming models, the Queries/Views/Transformations (QVT) specification.
@@ -14,13 +24,3 @@ wikipedia https://en.wikipedia.org/wiki/Object_Constraint_Language
  pageId 409006
  dailyPageViews 186
  appeared 2008
-
-reference http://www-st.inf.tu-dresden.de/ocl/
-reference https://www.omg.org/spec/OCL/2.2/PDF
-lineCommentToken --
-features
- hasLineComments true
-  -- A comment
- hasComments true
-  -- A comment
- hasSemanticIndentation false

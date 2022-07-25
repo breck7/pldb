@@ -1,10 +1,16 @@
 title PAWN
 appeared 2006
 type pl
+website https://www.compuphase.com/pawn/pawn.htm
 
-githubLanguage PAWN
- fileExtensions pwn inc
- trendingProjectsCount 0
+features
+ hasLineComments true
+  // A comment
+ hasComments true
+  // A comment
+ hasSemanticIndentation false
+
+lineCommentToken //
 
 githubRepo https://github.com/compuphase/pawn
  firstCommit 2006
@@ -15,6 +21,10 @@ githubRepo https://github.com/compuphase/pawn
  updated 2022
  description Pawn is a quick and small scripting language that requires few resources.
  issues 37
+
+githubLanguage PAWN
+ fileExtensions pwn inc
+ trendingProjectsCount 0
 
 linguistGrammarRepo https://github.com/Southclaw/pawn-sublime-language.git
  firstCommit 2014
@@ -61,10 +71,6 @@ linguistGrammarRepo https://github.com/Southclaw/pawn-sublime-language.git
   
   
 
-website https://www.compuphase.com/pawn/pawn.htm
-fileType text
-isOpenSource true
-centralPackageRepositoryCount 0
 rijuRepl https://riju.codes/pawn
  example
   #include <core>
@@ -73,10 +79,7 @@ rijuRepl https://riju.codes/pawn
       print("Hello, world!\n");
   }
   
-lineCommentToken //
-features
- hasLineComments true
-  // A comment
- hasComments true
-  // A comment
- hasSemanticIndentation false
+
+fileType text
+isOpenSource true
+centralPackageRepositoryCount 0

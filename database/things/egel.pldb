@@ -1,8 +1,9 @@
 title egel
 appeared 2016
 type interpreter
-
 description <a href='https://egel-lang.github.io/'>Egel</a> An interpreter for eager untyped combinator rewriting implemented in C++.
+website https://egel-lang.github.io/
+domainName egel-lang.github.io
 
 githubRepo https://github.com/egel-lang/egel
  firstCommit 2016
@@ -14,15 +15,11 @@ githubRepo https://github.com/egel-lang/egel
  description The Egel Programming Language
  issues 2
 
-website https://egel-lang.github.io/
+rosettaCode Egel
 
 tryItOnline egel
 
+twitter egel_language
 fileType text
 isOpenSource true
-
-rosettaCode Egel
-
 centralPackageRepositoryCount 0
-domainName egel-lang.github.io
-twitter egel_language

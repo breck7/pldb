@@ -1,6 +1,8 @@
 title Large-scale Atomic/Molecular Massively Parallel Simulator Format
 appeared 1995
 type application
+reference https://en.wikipedia.org/wiki/LAMMPS
+standsFor Large-scale Atomic/Molecular Massively Parallel Simulator Format
 
 example
  # 2d LJ crack simulation
@@ -81,6 +83,4 @@ example
  
  run   5000
 
-reference https://en.wikipedia.org/wiki/LAMMPS
-standsFor Large-scale Atomic/Molecular Massively Parallel Simulator Format
 centralPackageRepositoryCount 0

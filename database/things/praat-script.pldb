@@ -1,16 +1,18 @@
 title Praat Script
 appeared 1997
 type pl
+description The language is bundled with Praat, a speech analysis tool, to execute menu and action commands.
 website https://www.fon.hum.uva.nl/praat/manual/Praat_script.html
-githubRepo https://github.com/praat/praat
- firstCommit 2005
- stars 915
- forks 195
- subscribers 44
- created 2014
- updated 2022
- description Praat: Doing Phonetics By Computer
- issues 50
+
+features
+ hasLineComments true
+  # A comment
+ hasComments true
+  # A comment
+ hasSemanticIndentation false
+
+lineCommentToken #
+
 example
  clearinfo
  # print fizzbuzz result
@@ -29,12 +31,13 @@ example
  for i from 1 to 100
  	@fizzbuzz: i
  endfor
-description The language is bundled with Praat, a speech analysis tool, to execute menu and action commands.
 
-lineCommentToken #
-features
- hasLineComments true
-  # A comment
- hasComments true
-  # A comment
- hasSemanticIndentation false
+githubRepo https://github.com/praat/praat
+ firstCommit 2005
+ stars 915
+ forks 195
+ subscribers 44
+ created 2014
+ updated 2022
+ description Praat: Doing Phonetics By Computer
+ issues 50

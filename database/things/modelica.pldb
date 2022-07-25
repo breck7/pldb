@@ -1,6 +1,11 @@
 title Modelica
 appeared 1997
 type pl
+website http://www.modelica.org/
+reference https://marcobonvini.com/modelica/2020/06/29/all-about-modelica.html
+reference https://modelica.readthedocs.io/en/latest/lexical.html
+domainName modelica.org
+ registered 1998
 
 features
  hasLineComments true
@@ -13,6 +18,8 @@ features
  hasComments true
   // A comment
  hasSemanticIndentation false
+
+lineCommentToken //
 
 wikipedia https://en.wikipedia.org/wiki/Modelica
  example
@@ -37,6 +44,11 @@ githubLanguage Modelica
  fileExtensions mo
  trendingProjectsCount 0
 
+antlr https://github.com/antlr/grammars-v4/tree/master/modelica
+codeMirror modelica
+pygmentsHighlighter Modelica
+ filename modeling.py
+ fileExtensions mo
 linguistGrammarRepo https://github.com/BorisChumichev/modelicaSublimeTextPackage
  firstCommit 2013
  lastCommit 2017
@@ -49,24 +61,11 @@ linguistGrammarRepo https://github.com/BorisChumichev/modelicaSublimeTextPackage
   end PackageExamples;
   
 
-website http://www.modelica.org/
-reference https://marcobonvini.com/modelica/2020/06/29/all-about-modelica.html
-fileType text
-
-hopl 4965
-
-codeMirror modelica
-
-antlr https://github.com/antlr/grammars-v4/tree/master/modelica
-
-reference https://modelica.readthedocs.io/en/latest/lexical.html
-lineCommentToken //
-centralPackageRepositoryCount 0
 goodreads
  title|year|author|goodreadsId|rating|ratings|reviews
  Introduction to Modeling and Simulation of Technical and Physical Systems with Modelica|2011|Peter Fritzson|19472408|3.00|2|0
-pygmentsHighlighter Modelica
- filename modeling.py
- fileExtensions mo
-domainName modelica.org
- registered 1998
+
+hopl 4965
+
+fileType text
+centralPackageRepositoryCount 0

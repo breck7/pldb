@@ -1,6 +1,10 @@
 title llhd
 appeared 2016
 type hardwareDescriptionLanguage
+website http://llhd.io/
+reference https://www.reddit.com/r/ProgrammingLanguages/comments/envhl5/llhd_low_level_hardware_description/
+domainName llhd.io
+ registered 2016
 
 example
  proc %Accumulator.always_comb.227.0 (i1$ %0, i16$ %1, i16$ %2) -> (i16$ %3) {
@@ -57,8 +61,3 @@ example
      inst %Accumulator.always_comb.227.0 (i1$ %direction, i16$ %increment, i16$ %result) -> (i16$ %next)
      inst %Accumulator.always_ff.228.0 (i1$ %clk, i16$ %next) -> (i16$ %result)
  }
-
-website http://llhd.io/
-reference https://www.reddit.com/r/ProgrammingLanguages/comments/envhl5/llhd_low_level_hardware_description/
-domainName llhd.io
- registered 2016

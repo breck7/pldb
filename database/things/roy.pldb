@@ -1,6 +1,17 @@
 title roy
 appeared 2011
 type pl
+creators Brian McKenna
+website http://roy.brianmckenna.org/
+domainName roy.brianmckenna.org
+
+features
+ hasPrintDebugging true
+ hasStrings true
+  "Hello world"
+
+printToken console.log
+stringToken "
 
 githubRepo https://github.com/puffnfresh/roy
  firstCommit 2011
@@ -12,27 +23,17 @@ githubRepo https://github.com/puffnfresh/roy
  description Small functional language that compiles to JavaScript.
  issues 64
 
-website http://roy.brianmckenna.org/
-
-replit roy
-
-twitter roylangjs
-
-fileType text
-wordRank 5386
-isOpenSource true
-centralPackageRepositoryCount 0
-creators Brian McKenna
 leachim6 Roy
  filepath r/Roy.roy
  fileExtensions roy
  example
   console.log "Hello World"
   
-printToken console.log
-features
- hasPrintDebugging true
- hasStrings true
-  "Hello world"
-domainName roy.brianmckenna.org
-stringToken "
+
+replit roy
+
+twitter roylangjs
+fileType text
+wordRank 5386
+isOpenSource true
+centralPackageRepositoryCount 0

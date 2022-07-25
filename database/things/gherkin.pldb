@@ -1,6 +1,18 @@
 title Gherkin
 appeared 2008
 type pl
+description Executable specifications
+website https://docs.cucumber.io/gherkin/
+reference https://docs.cucumber.io/gherkin/reference/
+
+features
+ hasLineComments true
+  # A comment
+ hasComments true
+  # A comment
+ hasSemanticIndentation false
+
+lineCommentToken #
 
 example
  Feature: Guess the word
@@ -16,29 +28,18 @@ example
     When the Breaker joins the Maker's game
     Then the Breaker must guess a word with 5 characters
 
-description Executable specifications
-
 githubLanguage Gherkin
  fileExtensions feature
  trendingProjectsCount 0
 
+pygmentsHighlighter Gherkin
+ filename testing.py
+ fileExtensions feature
 linguistGrammarRepo https://github.com/cucumber/cucumber-tmbundle
  firstCommit 2008
  lastCommit 2017
  committerCount 35
  commitCount 261
 
-website https://docs.cucumber.io/gherkin/
-reference https://docs.cucumber.io/gherkin/reference/
 fileType text
 centralPackageRepositoryCount 0
-lineCommentToken #
-features
- hasLineComments true
-  # A comment
- hasComments true
-  # A comment
- hasSemanticIndentation false
-pygmentsHighlighter Gherkin
- filename testing.py
- fileExtensions feature

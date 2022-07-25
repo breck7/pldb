@@ -1,11 +1,16 @@
 title Chapel
 appeared 2004
 type pl
-lineCommentToken //
+creators David Callahan and Hans Zima and Brad Chamberlain and John Plevyak
+website https://chapel-lang.org/
+reference https://ieeexplore.ieee.org/document/1299190
+fileExtensions chpl
+country United States
+corporateDevelopers Cray
+domainName chapel-lang.org
+ registered 2014
 
-subreddit chapel
- memberCount
-  2022 12989
+writtenIn chapel
 
 features
  hasComments true
@@ -18,6 +23,22 @@ features
  hasSemanticIndentation false
  hasStrings true
   "Hello world"
+
+lineCommentToken //
+multiLineCommentTokens /* */
+printToken writeln
+stringToken "
+keywords _ align atomic begin break by class cobegin coforall config const continue delete dmapped do domain else enum export extern for forall if in index inline inout iter label let local module new nil on otherwise out param proc record reduce ref return scan select serial single sparse subdomain sync then type union use var when where while yield zip
+
+githubRepo https://github.com/chapel-lang/chapel
+ stars 1454
+ forks 390
+ subscribers 60
+ created 2014
+ updated 2022
+ firstCommit 2009
+ description a Productive Parallel Programming Language
+ issues 2459
 
 wikipedia https://en.wikipedia.org/wiki/Chapel_(programming_language)
  related ada csharp c fortran java fortress unified-parallel-c x10 isbn
@@ -34,16 +55,9 @@ githubLanguage Chapel
  fileExtensions chpl
  trendingProjectsCount 0
 
-githubRepo https://github.com/chapel-lang/chapel
- stars 1454
- forks 390
- subscribers 60
- created 2014
- updated 2022
- firstCommit 2009
- description a Productive Parallel Programming Language
- issues 2459
-
+pygmentsHighlighter Chapel
+ filename chapel.py
+ fileExtensions chpl
 linguistGrammarRepo https://github.com/chapel-lang/chapel-tmbundle
  firstCommit 2011
  lastCommit 2018
@@ -54,44 +68,28 @@ linguistGrammarRepo https://github.com/chapel-lang/chapel-tmbundle
   writeln("Hello, world!");    // print 'Hello, world!' to the console
   
 
-website https://chapel-lang.org/
-reference https://ieeexplore.ieee.org/document/1299190
-
-tryItOnline chapel
-
-twitter ChapelLanguage
-
-country United States
-fileExtensions chpl
-fileType text
-wordRank 6683
-isOpenSource true
-
 projectEuler Chapel
  memberCount
   2019 8
   2022 11
-
-hopl 8171
-
-rosettaCode Chapel
-
-corporateDevelopers Cray
-writtenIn chapel
-keywords _ align atomic begin break by class cobegin coforall config const continue delete dmapped do domain else enum export extern for forall if in index inline inout iter label let local module new nil on otherwise out param proc record reduce ref return scan select serial single sparse subdomain sync then type union use var when where while yield zip
-centralPackageRepositoryCount 0
-creators David Callahan and Hans Zima and Brad Chamberlain and John Plevyak
-pygmentsHighlighter Chapel
- filename chapel.py
- fileExtensions chpl
 leachim6 Chapel
  filepath c/Chapel.chpl
  fileExtensions chpl
  example
   writeln("Hello World");
   
-printToken writeln
-multiLineCommentTokens /* */
-domainName chapel-lang.org
- registered 2014
-stringToken "
+rosettaCode Chapel
+
+tryItOnline chapel
+
+subreddit chapel
+ memberCount
+  2022 12989
+
+hopl 8171
+
+twitter ChapelLanguage
+fileType text
+wordRank 6683
+isOpenSource true
+centralPackageRepositoryCount 0

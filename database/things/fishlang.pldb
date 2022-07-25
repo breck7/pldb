@@ -1,5 +1,20 @@
 title ><>
+appeared 2009
 type esolang
+
+features
+ hasStrings true
+  "Hello world"
+
+stringToken "
+
+leachim6 ><>
+ filepath #/><>
+ example
+  "Hello World"r\
+            o;!?l<
+  
+
 rijuRepl https://riju.codes/fishlang
  example
   "Hello, world!"r\
@@ -8,15 +23,5 @@ rijuRepl https://riju.codes/fishlang
  description Stack-based, reflective, two-dimensional esoteric programming language
  fileExtensions fish
  githubRepo https://gist.github.com/anonymous/6392418
-appeared 2009
+
 esolang https://esolangs.org/wiki/Fish
-leachim6 ><>
- filepath #/><>
- example
-  "Hello World"r\
-            o;!?l<
-  
-stringToken "
-features
- hasStrings true
-  "Hello world"

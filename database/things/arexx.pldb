@@ -2,6 +2,17 @@ title ARexx
 appeared 1987
 type pl
 
+features
+ hasMultiLineComments true
+  /* A comment
+  */
+ hasComments true
+  /* A comment
+  */
+ hasSemanticIndentation false
+
+multiLineCommentTokens /* */
+
 wikipedia https://en.wikipedia.org/wiki/ARexx
  example
   /* Alarm.rexx */
@@ -21,20 +32,11 @@ wikipedia https://en.wikipedia.org/wiki/ARexx
  dailyPageViews 23
  appeared 1987
 
-fileType text
-
-hopl 8017
-
-centralPackageRepositoryCount 0
 goodreads
  title|year|author|goodreadsId|rating|ratings|reviews
  The Arexx Cookbook: A Tutorial Guide To The Arexx Language On The Commodore Amiga Personal Computer||Merrill Callaway|3720368|3.00|1|0
-multiLineCommentTokens /* */
-features
- hasMultiLineComments true
-  /* A comment
-  */
- hasComments true
-  /* A comment
-  */
- hasSemanticIndentation false
+
+hopl 8017
+
+fileType text
+centralPackageRepositoryCount 0

@@ -9,6 +9,9 @@ features
  hasStrings true
   "Hello world"
 
+printToken Print
+stringToken "
+
 wikipedia https://en.wikipedia.org/wiki/LotusScript
  related visual-basic
  summary LotusScript is an object oriented programming language used by Lotus Notes (since version 4.0) and other IBM Lotus Software products. LotusScript is similar to Visual Basic. Developers familiar with one can easily understand the syntax and structure of code in the other. The major differences between the two are in their respective Integrated Development Environments and in the product-specific object classes provided in each language that are included. VB includes a richer set of classes for UI manipulation, whereas LotusScript includes a richer set of application-specific classes for Lotus Notes, Lotus Word Pro and Lotus 1-2-3. In the case of Lotus Notes, there are classes to work with Notes databases, documents (records) in those databases, etc. These classes can also be used as OLE Automation objects outside of the Lotus Notes environment, from Visual Basic. LotusScript also allows the definition of user-defined types and classes, although it is not possible to inherit from the product-specific classes.
@@ -18,20 +21,6 @@ wikipedia https://en.wikipedia.org/wiki/LotusScript
  backlinksCount 99
  revisionCount 50
 
-fileType text
-
-tiobe LotusScript
-
-hopl 3547
-
-rosettaCode LotusScript
-
-centralPackageRepositoryCount 0
-goodreads
- title|year|author|goodreadsId|rating|ratings|reviews
- LotusScript for Dummies|1997|James G. Meade|2104599|5.00|1|0
- Inside LotusScript: A Complete Guide to Notes Programming|1997|Joe McGinn|4978354|3.00|2|0
- 60 Minute Guide to LotusScript 3 Programming for Lotus Notes 4|1996|Robert Beyer|3306848|4.00|1|0
 leachim6 LotusScript
  filepath l/LotusScript.lss
  fileExtensions lss
@@ -40,5 +29,16 @@ leachim6 LotusScript
   	Print "Hello World"
   End Sub
   
-printToken Print
-stringToken "
+rosettaCode LotusScript
+
+goodreads
+ title|year|author|goodreadsId|rating|ratings|reviews
+ LotusScript for Dummies|1997|James G. Meade|2104599|5.00|1|0
+ Inside LotusScript: A Complete Guide to Notes Programming|1997|Joe McGinn|4978354|3.00|2|0
+ 60 Minute Guide to LotusScript 3 Programming for Lotus Notes 4|1996|Robert Beyer|3306848|4.00|1|0
+
+tiobe LotusScript
+hopl 3547
+
+fileType text
+centralPackageRepositoryCount 0

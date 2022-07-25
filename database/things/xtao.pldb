@@ -1,11 +1,13 @@
 title xTAO Modeling Language
-aka xTAO
 appeared 2005
-reference https://dl.acm.org/doi/abs/10.1145/1082983.1082968
-description Enabling a declarative approach to the specification of multi-agent systems
 type xmlFormat
+description Enabling a declarative approach to the specification of multi-agent systems
+reference https://dl.acm.org/doi/abs/10.1145/1082983.1082968
 reference https://doi.org/10.1145/1082983.1082968
+aka xTAO
+
 related netlogo
+
 example
  <Goal>
   <Name>table_comparison</Name>

@@ -1,6 +1,23 @@
 title BETA
 appeared 1983
 type pl
+creators Bent Bruun Kristensen and Ole Lehrmann Madsen and Birger Møller-Pedersen and Kristen Nygaard
+website http://cs.au.dk/~beta
+country Norway
+
+visualParadigm false
+
+features
+ hasLineComments true
+  // A comment
+ hasComments true
+  // A comment
+ hasSemanticIndentation false
+ hasStrings true
+  'Hello world'
+
+lineCommentToken //
+stringToken '
 
 wikipedia https://en.wikipedia.org/wiki/BETA_(programming_language)
  example
@@ -31,30 +48,6 @@ helloWorldCollection BETA
       'Hello World!'->putLine
  #)
  
-
-website http://cs.au.dk/~beta
-country Norway
-fileType text
-wordRank 2635
-
-tiobe BETA
-
-hopl 1032
-
-rosettaCode Beta
-
-visualParadigm false
-centralPackageRepositoryCount 0
-creators Bent Bruun Kristensen and Ole Lehrmann Madsen and Birger Møller-Pedersen and Kristen Nygaard
-lineCommentToken //
-features
- hasLineComments true
-  // A comment
- hasComments true
-  // A comment
- hasSemanticIndentation false
- hasStrings true
-  'Hello world'
 leachim6 Beta
  filepath b/Beta.bet
  fileExtensions bet
@@ -64,4 +57,11 @@ leachim6 Beta
   (* Hello World in BETA *)
   (# do 'Hello World' -> putLine #)
   
-stringToken '
+rosettaCode Beta
+
+tiobe BETA
+hopl 1032
+
+fileType text
+wordRank 2635
+centralPackageRepositoryCount 0

@@ -2,6 +2,10 @@ title ELFE
 appeared 2003
 type pl
 creators Christophe de Dinechin
+description ELFE is a very simple and small programming language specifcally designed for everyday programming, notably for the Internet of Things.
+
+features
+ hasSemanticIndentation true
 
 example
  invoke "sensor.corp.net",
@@ -16,11 +20,6 @@ example
          last_temperature := T
  temperature_changed new_temp, last_temp ->
      writeln "Temperature changed from ", last_temp, " to ", new_temp
-
-features
- hasSemanticIndentation true
-
-description ELFE is a very simple and small programming language specifcally designed for everyday programming, notably for the Internet of Things.
 
 githubRepo https://github.com/c3d/elfe
  firstCommit 2003

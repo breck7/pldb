@@ -1,6 +1,17 @@
 title Embedded Crystal
 appeared 2016
 type template
+description Embedded Crystal (ECR) is a template language for embedding Crystal code into other text, that includes but is not limited to HTML. The template is read and transformed at compile time and then embedded into the binary.
+website https://crystal-lang.org/api/0.22.0/ECR.html
+
+features
+ hasLineComments true
+  # A comment
+ hasComments true
+  # A comment
+ hasSemanticIndentation false
+
+lineCommentToken #
 
 example
  # greeting.ecr
@@ -11,8 +22,6 @@ example
  <%- end -%>
  
  Greeting.new(nil).to_s #=> Greeting!
-
-description Embedded Crystal (ECR) is a template language for embedding Crystal code into other text, that includes but is not limited to HTML. The template is read and transformed at compile time and then embedded into the binary.
 
 githubLanguage HTML+ECR
  fileExtensions ecr
@@ -31,13 +40,5 @@ linguistGrammarRepo https://github.com/atom-crystal/language-crystal
     Greeting!
   <% end %>
 
-website https://crystal-lang.org/api/0.22.0/ECR.html
 fileType text
 centralPackageRepositoryCount 0
-lineCommentToken #
-features
- hasLineComments true
-  # A comment
- hasComments true
-  # A comment
- hasSemanticIndentation false

@@ -1,7 +1,9 @@
 title Generics
 appeared 1973
 type feature
+
 psuedoExample function identity<T>(arg: T): T
+featureKeyword hasGenerics
 
 wikipedia https://en.wikipedia.org/wiki/Generic_programming
  summary Generic programming is a style of computer programming in which algorithms are written in terms of types to-be-specified-later that are then instantiated when needed for specific types provided as parameters. This approach, pioneered by ML in 1973, permits writing common functions or types that differ only in the set of types on which they operate when used, thus reducing duplication. Such software entities are known as generics in Python, Ada, C#, Delphi, Eiffel, F#, Java, Rust, Swift, TypeScript and Visual Basic .NET. They are known as parametric polymorphism in ML, Scala, Haskell (the Haskell community also uses the term "generic" for a related but somewhat different concept) and Julia; templates in C++ and D; and parameterized types in the influential 1994 book Design Patterns.The term "generic programming" was originally coined by David Musser and Alexander Stepanov in a more specific sense than the above, to describe a programming paradigm whereby fundamental requirements on types are abstracted from across concrete examples of algorithms and data structures and formalized as concepts, with generic functions implemented in terms of these concepts, typically using language genericity mechanisms as described above.
@@ -9,5 +11,3 @@ wikipedia https://en.wikipedia.org/wiki/Generic_programming
  pageId 105837
  dailyPageViews 327
  appeared 1977
-
-featureKeyword hasGenerics

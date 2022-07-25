@@ -1,6 +1,16 @@
 title Dockerfile
 appeared 2013
 type pl
+website https://docs.docker.com/engine/reference/builder/
+
+features
+ hasLineComments true
+  # A comment
+ hasComments true
+  # A comment
+ hasSemanticIndentation false
+
+lineCommentToken #
 
 githubLanguage Dockerfile
  fileExtensions dockerfile
@@ -20,6 +30,7 @@ githubLanguage Dockerfile
   nicolaka netshoot https://github.com/nicolaka.png https://github.com/nicolaka/netshoot Dockerfile #384d54 1168 173 69 "a Docker + Kubernetes network trouble-shooting swiss-army container"
  trendingProjectsCount 13
 
+monaco dockerfile
 linguistGrammarRepo https://github.com/asbjornenge/Docker.tmbundle
  firstCommit 2014
  lastCommit 2017
@@ -57,20 +68,9 @@ linguistGrammarRepo https://github.com/asbjornenge/Docker.tmbundle
   run	cd /go/src/github.com/dotcloud/docker/docker && go install -ldflags "-X main.GITCOMMIT '??' -d -w"
   env	PATH	/usr/local/go/bin:/go/bin:/usr/local/bin:/usr/local/sbin:/usr/bin:/usr/sbin:/bin:/sbin
   cmd	["docker"]
-
-website https://docs.docker.com/engine/reference/builder/
-
-twitter docker
-
-fileType text
 languageServerProtocolProject https://github.com/rcjsuen/dockerfile-language-server-nodejs
  writtenIn typescript
+
+twitter docker
+fileType text
 centralPackageRepositoryCount 0
-lineCommentToken #
-features
- hasLineComments true
-  # A comment
- hasComments true
-  # A comment
- hasSemanticIndentation false
-monaco dockerfile

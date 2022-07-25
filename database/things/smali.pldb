@@ -2,6 +2,18 @@ title Smali
 appeared 2010
 type assembly
 
+features
+ hasLineComments true
+  # A comment
+ hasComments true
+  # A comment
+ hasSemanticIndentation false
+ hasStrings true
+  "Hello world"
+
+lineCommentToken #
+stringToken "
+
 example
  .method public getTokens(I)I
   .locals 2
@@ -38,14 +50,6 @@ example
   goto :goto_0
  .end method
 
-githubLanguage Smali
- fileExtensions smali
- trendingProjects
-  author name avatar url language languageColor stars forks currentPeriodStars description
-  AhMyth AhMyth-Android-RAT https://github.com/AhMyth.png https://github.com/AhMyth/AhMyth-Android-RAT Smali #ccc 1554 764 152 "Android Remote Administration Tool"
-  phhusson treble_experimentations https://github.com/phhusson.png https://github.com/phhusson/treble_experimentations Smali #ccc 827 200 36 "Notes about tinkering with Android Project Treble"
- trendingProjectsCount 3
-
 githubRepo https://github.com/JesusFreke/smali
  firstCommit 2009
  stars 5465
@@ -56,6 +60,17 @@ githubRepo https://github.com/JesusFreke/smali
  description smali/baksmali
  issues 121
 
+githubLanguage Smali
+ fileExtensions smali
+ trendingProjects
+  author name avatar url language languageColor stars forks currentPeriodStars description
+  AhMyth AhMyth-Android-RAT https://github.com/AhMyth.png https://github.com/AhMyth/AhMyth-Android-RAT Smali #ccc 1554 764 152 "Android Remote Administration Tool"
+  phhusson treble_experimentations https://github.com/phhusson.png https://github.com/phhusson/treble_experimentations Smali #ccc 827 200 36 "Notes about tinkering with Android Project Treble"
+ trendingProjectsCount 3
+
+pygmentsHighlighter Smali
+ filename dalvik.py
+ fileExtensions smali
 linguistGrammarRepo https://github.com/ShaneWilton/sublime-smali
  firstCommit 2013
  lastCommit 2016
@@ -185,21 +200,6 @@ linguistGrammarRepo https://github.com/ShaneWilton/sublime-smali
   
       fil
 
-fileType text
-isOpenSource true
-centralPackageRepositoryCount 0
-lineCommentToken #
-features
- hasLineComments true
-  # A comment
- hasComments true
-  # A comment
- hasSemanticIndentation false
- hasStrings true
-  "Hello world"
-pygmentsHighlighter Smali
- filename dalvik.py
- fileExtensions smali
 leachim6 Smali
  filepath s/Smali.smali
  fileExtensions smali
@@ -220,4 +220,7 @@ leachim6 Smali
       return-void
   .end method
   
-stringToken "
+
+fileType text
+isOpenSource true
+centralPackageRepositoryCount 0

@@ -1,20 +1,22 @@
 title QCL
 type pl
-
 reference https://github.com/aviggiano/qcl
 
-hopl 8263
+features
+ hasPrintDebugging true
+ hasStrings true
+  "Hello world"
 
-centralPackageRepositoryCount 0
+printToken print
+stringToken "
+
 leachim6 QCL
  filepath q/QCL.qcl
  fileExtensions qcl
  example
   print "Hello World";
   
-printToken print
-features
- hasPrintDebugging true
- hasStrings true
-  "Hello world"
-stringToken "
+
+hopl 8263
+
+centralPackageRepositoryCount 0

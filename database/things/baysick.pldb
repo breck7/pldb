@@ -1,6 +1,13 @@
 title baysick
 appeared 2009
 type esolang
+creators Michael Fogus
+website http://blog.fogus.me/2009/03/26/baysick-a-scala-dsl-implementing-basic/
+
+features
+ hasPrintDebugging true
+
+printToken PRINT
 
 example
  object SquareRoot extends Baysick {
@@ -23,11 +30,4 @@ githubRepo https://github.com/fogus/baysick
  description An embedded Insane-specific Language for Scala implementing the BASIC programming language
  issues 5
 
-website http://blog.fogus.me/2009/03/26/baysick-a-scala-dsl-implementing-basic/
-
 twitter fogus
-
-creators Michael Fogus
-printToken PRINT
-features
- hasPrintDebugging true

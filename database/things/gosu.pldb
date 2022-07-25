@@ -1,6 +1,18 @@
 title Gosu
 appeared 2002
 type pl
+website http://gosu-lang.org/
+fileExtensions gs gsp gst gsx
+domainName gosu-lang.org
+ registered 2009
+
+features
+ hasPrintDebugging true
+ hasStrings true
+  "Hello world"
+
+printToken print
+stringToken "
 
 wikipedia https://en.wikipedia.org/wiki/Gosu_(programming_language)
  example
@@ -21,6 +33,9 @@ githubLanguage Gosu
  fileExtensions gs gst gsx vark
  trendingProjectsCount 0
 
+pygmentsHighlighter Gosu
+ filename jvm.py
+ fileExtensions gs gsx gsp vark
 linguistGrammarRepo https://github.com/jpcamara/Textmate-Gosu-Bundle
  firstCommit 2011
  lastCommit 2014
@@ -32,30 +47,16 @@ linguistGrammarRepo https://github.com/jpcamara/Textmate-Gosu-Bundle
     print("hello")
   }
 
-website http://gosu-lang.org/
-fileExtensions gs gsp gst gsx
-fileType text
-isOpenSource true
-
-tiobe Gosu
-
-rosettaCode Gosu
-
-centralPackageRepositoryCount 0
-pygmentsHighlighter Gosu
- filename jvm.py
- fileExtensions gs gsx gsp vark
 leachim6 Gosu
  filepath g/Gosu.gs
  fileExtensions gs
  example
   print("Hello World")
   
-printToken print
-features
- hasPrintDebugging true
- hasStrings true
-  "Hello world"
-domainName gosu-lang.org
- registered 2009
-stringToken "
+rosettaCode Gosu
+
+tiobe Gosu
+
+fileType text
+isOpenSource true
+centralPackageRepositoryCount 0

@@ -2,12 +2,16 @@ title AmbientTalk
 type pl
 website https://code.google.com/p/ambienttalk
 country Belgium
-example
- when: ChatService discovered: { |chatService| when: chatService<-login(roomID, username) becomes: { |chatRoom| chatRoom<-chat("hello world"); // async message send whenever: chatRoom disconnected: { system.println("you're offline"); }; whenever: chatRoom reconnected: { system.println("you're online again"); }; }; };
-pygmentsHighlighter AmbientTalk
- filename ambient.py
- fileExtensions at
-stringToken "
+
 features
  hasStrings true
   "Hello world"
+
+stringToken "
+
+example
+ when: ChatService discovered: { |chatService| when: chatService<-login(roomID, username) becomes: { |chatRoom| chatRoom<-chat("hello world"); // async message send whenever: chatRoom disconnected: { system.println("you're offline"); }; whenever: chatRoom reconnected: { system.println("you're online again"); }; }; };
+
+pygmentsHighlighter AmbientTalk
+ filename ambient.py
+ fileExtensions at

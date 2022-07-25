@@ -1,6 +1,25 @@
 title Orc
 appeared 2004
 type pl
+creators Jayadev Misra
+website http://orc.csres.utexas.edu/
+domainName orc.csres.utexas.edu
+
+features
+ hasPrintDebugging true
+ hasMultiLineComments true
+  {- A comment
+  -}
+ hasComments true
+  {- A comment
+  -}
+ hasSemanticIndentation false
+ hasStrings true
+  "Hello world"
+
+multiLineCommentTokens {- -}
+printToken Println
+stringToken "
 
 wikipedia https://en.wikipedia.org/wiki/Orc_(programming_language)
  related haskell ml oz smalltalk
@@ -12,11 +31,6 @@ wikipedia https://en.wikipedia.org/wiki/Orc_(programming_language)
  dailyPageViews 13
  appeared 2004
 
-website http://orc.csres.utexas.edu/
-fileType text
-isOpenSource true
-centralPackageRepositoryCount 0
-creators Jayadev Misra
 leachim6 Orc
  filepath o/Orc.orc
  fileExtensions orc
@@ -32,18 +46,7 @@ leachim6 Orc
   Println("Hello World") >>
   stop
   
-printToken Println
-features
- hasPrintDebugging true
- hasMultiLineComments true
-  {- A comment
-  -}
- hasComments true
-  {- A comment
-  -}
- hasSemanticIndentation false
- hasStrings true
-  "Hello world"
-multiLineCommentTokens {- -}
-domainName orc.csres.utexas.edu
-stringToken "
+
+fileType text
+isOpenSource true
+centralPackageRepositoryCount 0

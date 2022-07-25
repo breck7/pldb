@@ -1,10 +1,18 @@
 title Jison
 appeared 2009
 type pl
+website http://zaa.ch/jison/
 
-githubLanguage Jison
- fileExtensions jison
- trendingProjectsCount 0
+features
+ hasMultiLineComments true
+  /* A comment
+  */
+ hasComments true
+  /* A comment
+  */
+ hasSemanticIndentation false
+
+multiLineCommentTokens /* */
 
 githubRepo https://github.com/zaach/jison
  stars 4136
@@ -15,6 +23,10 @@ githubRepo https://github.com/zaach/jison
  firstCommit 2009
  description Bison in JavaScript.
  issues 156
+
+githubLanguage Jison
+ fileExtensions jison
+ trendingProjectsCount 0
 
 linguistGrammarRepo https://github.com/cdibbs/language-jison
  firstCommit 2014
@@ -107,16 +119,6 @@ linguistGrammarRepo https://github.com/cdibbs/language-jison
       | LPAREN e RPAREN
       ;
 
-website http://zaa.ch/jison/
 fileType text
 isOpenSource true
 centralPackageRepositoryCount 0
-multiLineCommentTokens /* */
-features
- hasMultiLineComments true
-  /* A comment
-  */
- hasComments true
-  /* A comment
-  */
- hasSemanticIndentation false

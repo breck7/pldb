@@ -1,6 +1,17 @@
 title ctalk-lang
 appeared 1989
 type pl
+description The CTalk programming language: a strategic evolution of APL
+reference http://kiwi.emse.fr/JJG/INTALK/ctalk.txt
+
+features
+ hasLineComments true
+  // A comment
+ hasComments true
+  // A comment
+ hasSemanticIndentation false
+
+lineCommentToken //
 
 example
  // When working with the CTalk interpreter,
@@ -15,13 +26,3 @@ example
  // = 2
  // = 3
  // = 5
-
-description The CTalk programming language: a strategic evolution of APL
-reference http://kiwi.emse.fr/JJG/INTALK/ctalk.txt
-lineCommentToken //
-features
- hasLineComments true
-  // A comment
- hasComments true
-  // A comment
- hasSemanticIndentation false

@@ -1,8 +1,9 @@
 title BEAM Erlang virtual machine
 appeared 2011
 type vm
-standsFor Bogdan's Erlang Abstract Machine
 creators Bogumil Hausman
+reference https://www.erlang.org/blog/a-brief-beam-primer/
+standsFor Bogdan's Erlang Abstract Machine
 
 wikipedia https://en.wikipedia.org/wiki/BEAM_(Erlang_virtual_machine)
  summary BEAM is the virtual machine at the core of the Erlang Open Telecom Platform (OTP). BEAM is part of the Erlang Run-Time System (ERTS), which compiles Erlang and Elixir source code into bytecode, which is then executed on the BEAM. BEAM bytecode files have the .beam file extension.Originally BEAM was short for Bogdan's Erlang Abstract Machine, named after Bogumil "Bogdan" Hausman, who wrote the original version, but the name may also be referred to as Björn's Erlang Abstract Machine, after Björn Gustavsson, who wrote and maintains the current version. Both developers worked on the system while at Ericsson.
@@ -10,4 +11,3 @@ wikipedia https://en.wikipedia.org/wiki/BEAM_(Erlang_virtual_machine)
  pageId 57341082
  dailyPageViews 49
  appeared 2011
-reference https://www.erlang.org/blog/a-brief-beam-primer/

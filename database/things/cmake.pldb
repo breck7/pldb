@@ -1,6 +1,12 @@
 title CMake
 appeared 2000
 type application
+website https://cmake.org/
+reference https://www.jetbrains.com/help/clion/cmakelists-txt-file.html
+domainName cmake.org
+ registered 2001
+
+gitlabRepo https://gitlab.kitware.com/cmake/cmake
 
 wikipedia https://en.wikipedia.org/wiki/CMake
  related c visual-studio-editor eclipse-editor linux ninja unix falcon kicad llvmir mysql mariadb qt amqp root-lib meson qmake
@@ -21,12 +27,10 @@ githubLanguage CMake
   ultralight-ux Ultralight https://github.com/ultralight-ux.png https://github.com/ultralight-ux/Ultralight CMake #ccc 1145 65 95 "Ultralight— a lightweight, pure-GPU, HTML UI renderer for native apps."
  trendingProjectsCount 4
 
-helloWorldCollection CMake
- # Hello World in CMake
- 
- message(STATUS "Hello World!")
- 
-
+codeMirror cmake
+pygmentsHighlighter CMake
+ filename make.py
+ fileExtensions cmake CMakeLists.txt
 linguistGrammarRepo https://github.com/textmate/cmake.tmbundle
  firstCommit 2008
  lastCommit 2015
@@ -51,35 +55,31 @@ linguistGrammarRepo https://github.com/textmate/cmake.tmbundle
   target_link_libraries(foo ${ssl_LIBRARY})
   
 
-website https://cmake.org/
-gitlabRepo https://gitlab.kitware.com/cmake/cmake
-reference https://www.jetbrains.com/help/clion/cmakelists-txt-file.html
-fileType text
-isOpenSource true
-
-codeMirror cmake
-
-rosettaCode CMake
-
-centralPackageRepositoryCount 0
-rijuRepl https://riju.codes/cmake
- example
-  message("Hello, world!")
-  
-goodreads
- title|year|author|goodreadsId|rating|ratings|reviews
- CMake Cookbook: Over 40 recipes enabling you to build, test, and package software for distribution using the CMake suite||Radovan Bast;Roberto Di Remigio|63961172|0.0|0|0
- CMake Cookbook: Over 40 recipes enabling you to build, test, and package software for distribution using the CMake suite||Radovan Bast|61191205|0.0|0|0
- Building C++ Software with CMake (Software Tools Series Book 1)|2014|Chris Weed|42501938|5.00|2|0
- Using CMake to Manage Project - A Demo (Linux Software Development)||Jie Deng|52502246|0.0|0|0
-pygmentsHighlighter CMake
- filename make.py
- fileExtensions cmake CMakeLists.txt
+helloWorldCollection CMake
+ # Hello World in CMake
+ 
+ message(STATUS "Hello World!")
+ 
 leachim6 CMake
  filepath c/CMake.cmake
  fileExtensions cmake
  example
   message("Hello World")
   
-domainName cmake.org
- registered 2001
+rosettaCode CMake
+
+rijuRepl https://riju.codes/cmake
+ example
+  message("Hello, world!")
+  
+
+goodreads
+ title|year|author|goodreadsId|rating|ratings|reviews
+ CMake Cookbook: Over 40 recipes enabling you to build, test, and package software for distribution using the CMake suite||Radovan Bast;Roberto Di Remigio|63961172|0.0|0|0
+ CMake Cookbook: Over 40 recipes enabling you to build, test, and package software for distribution using the CMake suite||Radovan Bast|61191205|0.0|0|0
+ Building C++ Software with CMake (Software Tools Series Book 1)|2014|Chris Weed|42501938|5.00|2|0
+ Using CMake to Manage Project - A Demo (Linux Software Development)||Jie Deng|52502246|0.0|0|0
+
+fileType text
+isOpenSource true
+centralPackageRepositoryCount 0

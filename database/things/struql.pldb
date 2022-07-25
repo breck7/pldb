@@ -2,6 +2,17 @@ title StruQL
 appeared 1999
 type queryLanguage
 creators Mary Fernández and Dan Suciu and and Igor Tatarinov
+description A StruQL query is a function from a set of input graphs to an output graph.
+reference https://www.usenix.org/legacy/events/dsl99/full_papers/fernandez/fernandez.pdf
+
+features
+ hasLineComments true
+  // A comment
+ hasComments true
+  // A comment
+ hasSemanticIndentation false
+
+lineCommentToken //
 
 example
   // Link root page to page of all accounts
@@ -28,13 +39,3 @@ example
    link Info(acct) -> "Alias" -> alias
    }
    }
-
-description A StruQL query is a function from a set of input graphs to an output graph.
-reference https://www.usenix.org/legacy/events/dsl99/full_papers/fernandez/fernandez.pdf
-lineCommentToken //
-features
- hasLineComments true
-  // A comment
- hasComments true
-  // A comment
- hasSemanticIndentation false

@@ -1,6 +1,8 @@
 title mermaid
 appeared 2014
 type textMarkup
+website https://mermaidjs.github.io/
+domainName mermaidjs.github.io
 
 example
  gitGraph:
@@ -29,6 +31,3 @@ githubRepo https://github.com/mermaid-js/mermaid
  updated 2022
  description Generation of diagram and flowchart from text in a similar manner as markdown
  issues 730
-
-website https://mermaidjs.github.io/
-domainName mermaidjs.github.io

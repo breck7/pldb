@@ -1,10 +1,11 @@
 title Sublime Syntax
+appeared 2008
 type grammarLanguage
+description Sublime Syntax files are YAML files with a small header, followed by a list of contexts. Each context has a list of patterns that describe how to highlight text in that context, and how to change the current text.
 website https://www.sublimetext.com/docs/3/syntax.html
 fileExtensions sublime-syntax
-description Sublime Syntax files are YAML files with a small header, followed by a list of contexts. Each context has a list of patterns that describe how to highlight text in that context, and how to change the current text.
+
 related yaml tmlanguage
-appeared 2008
 
 example
  %YAML 1.2

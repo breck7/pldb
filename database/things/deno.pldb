@@ -2,6 +2,25 @@ title Deno
 appeared 2018
 type pl
 creators Ryan Dahl
+website https://deno.land/
+domainName deno.land
+ registered 2018
+
+related javascript typescript
+
+features
+ hasLineComments true
+  // A comment
+ hasComments true
+  // A comment
+ hasPrintDebugging true
+ hasSemanticIndentation false
+ hasStrings true
+  "Hello world"
+
+lineCommentToken //
+printToken console.log
+stringToken "
 
 example
  // Imports `serve` from the remote Deno standard library, using URL.
@@ -14,31 +33,15 @@ example
 
 wikipedia https://en.wikipedia.org/wiki/Deno_(software)
 
-website https://deno.land/
-related javascript typescript
-
-lineCommentToken //
-features
- hasLineComments true
-  // A comment
- hasComments true
-  // A comment
- hasPrintDebugging true
- hasSemanticIndentation false
- hasStrings true
-  "Hello world"
-
-subreddit Deno
- memberCount
-  2022 8226
 leachim6 Deno
  filepath d/Deno.ts
  fileExtensions ts
  example
   console.log("Hello World");
   
-printToken console.log
-domainName deno.land
- registered 2018
-stringToken "
+
+subreddit Deno
+ memberCount
+  2022 8226
+
 twitter deno_land

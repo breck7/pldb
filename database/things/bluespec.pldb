@@ -2,6 +2,17 @@ title Bluespec
 appeared 2000
 type pl
 
+features
+ hasMultiLineComments true
+  (* A comment
+  *)
+ hasComments true
+  (* A comment
+  *)
+ hasSemanticIndentation false
+
+multiLineCommentTokens (* *)
+
 wikipedia https://en.wikipedia.org/wiki/Bluespec
  related haskell systemverilog
  summary Bluespec, Inc. is a semiconductor tool design company co-founded by Prof. Arvind of MIT in June 2003. Arvind had previously founded Sandburst in 2000, which specialized in producing chips for 10G-bit Ethernet routers; for this task, Arvind had developed the Bluespec language, a high-level functional hardware description programming language which was essentially Haskell extended to handle chip design and electronic design automation in general. The main designer and implementor of Bluespec was Lennart Augustsson. Bluespec is partially evaluated (to convert the Haskell parts) and compiled to the term rewriting system (TRS). It comes with a SystemVerilog frontend.Bluespec has two product lines. Primarily for ASIC and FPGA hardware designers and architects, Bluespec supplies high-level synthesis (ESL logic synthesis) with RTL.  The first Bluespec workshop [1] was held on August 13, 2007 at MIT.
@@ -136,12 +147,3 @@ linguistGrammarRepo https://github.com/thotypous/sublime-bsv
 
 fileType text
 centralPackageRepositoryCount 0
-multiLineCommentTokens (* *)
-features
- hasMultiLineComments true
-  (* A comment
-  *)
- hasComments true
-  (* A comment
-  *)
- hasSemanticIndentation false

@@ -1,6 +1,19 @@
 title latino
 appeared 2015
 type pl
+creators Primitivo R. Montero
+website https://lenguaje-latino.org/
+nativeLanguage Spanish
+domainName lenguaje-latino.org
+ registered 2022
+
+features
+ hasPrintDebugging true
+ hasStrings true
+  "Hello world"
+
+printToken escribir
+stringToken "
 
 githubRepo https://github.com/primitivorm/latino
  stars 11
@@ -12,24 +25,14 @@ githubRepo https://github.com/primitivorm/latino
  description Lenguaje de programación de código abierto para latinos y de habla hispana.
  issues 0
 
-website https://lenguaje-latino.org/
-fileType text
-wordRank 7415
-isOpenSource true
-nativeLanguage Spanish
-centralPackageRepositoryCount 0
-creators Primitivo R. Montero
 leachim6 Latino
  filepath l/Latino.lat
  fileExtensions lat
  example
   escribir("Hello World")
   
-printToken escribir
-features
- hasPrintDebugging true
- hasStrings true
-  "Hello world"
-domainName lenguaje-latino.org
- registered 2022
-stringToken "
+
+fileType text
+wordRank 7415
+isOpenSource true
+centralPackageRepositoryCount 0

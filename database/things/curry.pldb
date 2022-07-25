@@ -1,11 +1,18 @@
 title Curry
 appeared 1990
 type pl
+creators Michael Hanus and Sergio Antoy
+
+related haskell
+
+visualParadigm false
 
 features
  hasSemanticIndentation true
  hasStrings true
   "Hello world"
+
+stringToken "
 
 wikipedia https://en.wikipedia.org/wiki/Curry_(programming_language)
  example
@@ -20,18 +27,6 @@ wikipedia https://en.wikipedia.org/wiki/Curry_(programming_language)
  dailyPageViews 51
  appeared 1990
 
-fileType text
-
-rosettaCode Curry
-related haskell
-visualParadigm false
-centralPackageRepositoryCount 0
-rijuRepl https://riju.codes/curry
- example
-  main :: IO ()
-  main = putStrLn "Hello, world!"
-  
-creators Michael Hanus and Sergio Antoy
 leachim6 Curry
  filepath c/Curry.curry
  fileExtensions curry
@@ -44,4 +39,13 @@ leachim6 Curry
             (TkCol [] [TkLabel [TkText "Hello World"],
                        TkButton tkExit [TkText "Stop"]])
   
-stringToken "
+rosettaCode Curry
+
+rijuRepl https://riju.codes/curry
+ example
+  main :: IO ()
+  main = putStrLn "Hello, world!"
+  
+
+fileType text
+centralPackageRepositoryCount 0

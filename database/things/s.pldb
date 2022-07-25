@@ -1,6 +1,7 @@
 title S
 appeared 1976
 type pl
+website http://ect.bell-labs.com/sl/S/
 
 wikipedia https://en.wikipedia.org/wiki/S_(programming_language)
  related r s-plus c apl polymorphic-programming-language fortran unix postscript
@@ -12,14 +13,13 @@ wikipedia https://en.wikipedia.org/wiki/S_(programming_language)
  revisionCount 164
  appeared 1976
 
-website http://ect.bell-labs.com/sl/S/
-fileType text
-wordRank 90
-
-tiobe S
-
-hopl 1117
-centralPackageRepositoryCount 0
 pygmentsHighlighter S
  filename r.py
  fileExtensions S R .Rhistory .Rprofile .Renviron
+
+tiobe S
+hopl 1117
+
+fileType text
+wordRank 90
+centralPackageRepositoryCount 0

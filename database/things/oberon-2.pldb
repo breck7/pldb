@@ -1,6 +1,8 @@
 title Oberon-2
 appeared 1991
 type pl
+creators Niklaus Wirth and Hanspeter Mössenböck
+reference https://semanticscholar.org/paper/0279ae521a3f0c16e53259cf62f83739931fbc50
 
 features
  hasComments true
@@ -8,6 +10,9 @@ features
  hasSemanticIndentation false
  hasStrings true
   "Hello world"
+
+printToken Out.String
+stringToken "
 
 wikipedia https://en.wikipedia.org/wiki/Oberon-2
  example
@@ -67,14 +72,6 @@ wikipedia https://en.wikipedia.org/wiki/Oberon-2
  created 2004
  appeared 1991
 
-reference https://semanticscholar.org/paper/0279ae521a3f0c16e53259cf62f83739931fbc50
-
-hopl 1647
-
-rosettaCode Oberon-2
-
-centralPackageRepositoryCount 0
-creators Niklaus Wirth and Hanspeter Mössenböck
 leachim6 Oberon 2
  filepath o/Oberon 2.obn
  example
@@ -84,5 +81,8 @@ leachim6 Oberon 2
     Out.String( "Hello World" );
     Out.Ln;
   END HelloWorld.
-printToken Out.String
-stringToken "
+rosettaCode Oberon-2
+
+hopl 1647
+
+centralPackageRepositoryCount 0

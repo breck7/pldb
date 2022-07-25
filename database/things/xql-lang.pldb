@@ -2,14 +2,12 @@ title XQL
 appeared 1998
 type queryLanguage
 creators Hiroshi Ishikawa and Kazumi Kubota and Yasuhiko Kanemasa
-
 description XQL: A Query Language for XML Data
+reference https://www.w3.org/TandS/QL/QL98/pp/flab.txt
+country Japan
 
 example
  select result:<$book.title, $book.author>
  from bib:URL "www.a.b.c/bib.xml", book:$bib.book
  where $book.publisher.name ="Addison-Wesley"
  groupby $book.title
-
-reference https://www.w3.org/TandS/QL/QL98/pp/flab.txt
-country Japan

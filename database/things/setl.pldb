@@ -1,6 +1,10 @@
 title SETL
 appeared 1969
 type pl
+creators Jacob T. Schwartz
+description SETL is a general-purpose, high-level programming language in which sets and first-order mappings are fundamental to the syntax and semantics of the language. This lends great conciseness and readability to a wide range of applications, from basic data filtering and transformation to the abstract presentation of complex algorithms. SETL is particularly good for software prototyping.
+website http://setl.org/setl/
+country United States
 
 features
  hasComments true
@@ -9,7 +13,8 @@ features
  hasPrintDebugging true
  hasSemanticIndentation false
 
-description SETL is a general-purpose, high-level programming language in which sets and first-order mappings are fundamental to the syntax and semantics of the language. This lends great conciseness and readability to a wide range of applications, from basic data filtering and transformation to the abstract presentation of complex algorithms. SETL is particularly good for software prototyping.
+lineCommentToken --
+printToken print
 
 wikipedia https://en.wikipedia.org/wiki/SETL
  example
@@ -25,20 +30,13 @@ wikipedia https://en.wikipedia.org/wiki/SETL
  dailyPageViews 34
  appeared 1969
 
-website http://setl.org/setl/
-country United States
-fileType text
-
-hopl 1268
-
 rosettaCode SETL
 
-centralPackageRepositoryCount 0
 rijuRepl https://riju.codes/setl
  example
   print("Hello, world!");
   
-creators Jacob T. Schwartz
+
 goodreads
  title|year|author|goodreadsId|rating|ratings|reviews
  Programming with Sets: An Introduction to Setl|1986|Jacob T. Schwartz|1634697|4.50|2|0
@@ -46,5 +44,8 @@ goodreads
  The Setl Project Master Catalog. a Comprehensive Listing of Reports, Working Papers, and Computer Readable Document and Program Files Pertaining to Work at Nyu on the Setl Set-Theoretic Programming Language||Robert Abes|47398006|0.0|0|0
  The Setl Project Master Catalog: A Comprehensive Listing of Reports, Working Papers, and Computer Readable Document and Program Files Pertaining to Work at New York University on the Setl Set-Theoretic Programming Language (Classic Reprint)||Robert Abes|65986497|0.0|0|0
  Recursive Data Types in Setl: Automatic Determination, Data Language Description, and Efficient Implementation (Classic Reprint)|2015|Gerald Weiss|46378170|0.0|0|0
-lineCommentToken --
-printToken print
+
+hopl 1268
+
+fileType text
+centralPackageRepositoryCount 0

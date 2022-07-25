@@ -1,7 +1,18 @@
 title htmx
-website https://htmx.org/
+appeared 2020
 type template
 description htmx gives you access to AJAX, CSS Transitions, WebSockets and Server Sent Events directly in HTML, using attributes, so you can build modern user interfaces with the simplicity and power of hypertext
+website https://htmx.org/
+domainName htmx.org
+ registered 2020
+
+example
+ <script src="https://unpkg.com/htmx.org@1.7.0"></script>
+ <!-- have a button POST a click via AJAX -->
+ <button hx-post="/clicked" hx-swap="outerHTML">
+   Click Me
+ </button>
+
 githubRepo https://github.com/bigskysoftware/htmx
  firstCommit 2020
  stars 7059
@@ -11,12 +22,3 @@ githubRepo https://github.com/bigskysoftware/htmx
  updated 2022
  description </> htmx - high power tools for HTML
  issues 114
-example
- <script src="https://unpkg.com/htmx.org@1.7.0"></script>
- <!-- have a button POST a click via AJAX -->
- <button hx-post="/clicked" hx-swap="outerHTML">
-   Click Me
- </button>
-appeared 2020
-domainName htmx.org
- registered 2020

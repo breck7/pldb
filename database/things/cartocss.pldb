@@ -1,6 +1,20 @@
 title CartoCSS
 appeared 2010
 type pl
+reference https://blog.mapbox.com/the-end-of-cartocss-da2d7427cf1
+
+features
+ hasLineComments true
+  // A comment
+ hasComments true
+  // A comment
+ hasMultiLineComments true
+  /* A comment
+  */
+ hasSemanticIndentation false
+
+lineCommentToken //
+multiLineCommentTokens /* */
 
 githubLanguage CartoCSS
  fileExtensions mss
@@ -89,17 +103,5 @@ linguistGrammarRepo https://github.com/yohanboniface/carto-atom
     [feature = 'amenity_cafe'][zoom >= 17] {
       point-file: url('symbols/cafe.p.1
 
-reference https://blog.mapbox.com/the-end-of-cartocss-da2d7427cf1
 fileType text
 centralPackageRepositoryCount 0
-lineCommentToken //
-features
- hasLineComments true
-  // A comment
- hasComments true
-  // A comment
- hasMultiLineComments true
-  /* A comment
-  */
- hasSemanticIndentation false
-multiLineCommentTokens /* */

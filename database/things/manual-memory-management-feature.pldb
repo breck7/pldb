@@ -1,8 +1,8 @@
 title Manual Memory Management
 type feature
-psuedoExample malloc(4);
 description In computer science, manual memory management refers to the usage of manual instructions by the programmer to identify and deallocate unused objects, or garbage.
 
-wikipedia https://en.wikipedia.org/wiki/Manual_memory_management
-
+psuedoExample malloc(4);
 featureKeyword hasManualMemoryManagement
+
+wikipedia https://en.wikipedia.org/wiki/Manual_memory_management

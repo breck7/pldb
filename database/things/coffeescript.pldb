@@ -1,8 +1,14 @@
 title CoffeeScript
 appeared 2009
 type pl
-aka coffee
 creators Jeremy Ashkenas
+website http://coffeescript.org
+aka coffee
+fileExtensions coffee litcoffee
+domainName coffeescript.org
+ registered 2009
+
+compilesTo javascript
 
 features
  hasComments true
@@ -15,6 +21,12 @@ features
   ###
  hasStrings true
  hasRegularExpressionsSyntaxSugar true
+
+lineCommentToken #
+multiLineCommentTokens ###
+printToken console.log
+stringToken "
+keywords and or is isnt not on yes @ no off true false null this new delete typeof in instanceof return throw break continue debugger if else switch for while do try catch finally class extends super undefined then unless until loop of by when
 
 wikipedia https://en.wikipedia.org/wiki/CoffeeScript
  example
@@ -44,11 +56,11 @@ githubLanguage CoffeeScript
   philc vimium https://github.com/philc.png https://github.com/philc/vimium CoffeeScript #244776 11430 1380 164 "The hacker's browser."
  trendingProjectsCount 7
 
-helloWorldCollection CoffeeScript
- // Hello world in CoffeeScript
- 
- alert "Hello, World!"
-
+monaco coffee
+codeMirror coffeescript
+pygmentsHighlighter CoffeeScript
+ filename javascript.py
+ fileExtensions coffee
 linguistGrammarRepo https://github.com/atom/language-coffee-script
  firstCommit 2013
  lastCommit 2018
@@ -59,33 +71,19 @@ linguistGrammarRepo https://github.com/atom/language-coffee-script
   console.log "Hello, World!"
   
 
-website http://coffeescript.org
-
-replit coffeescript
-
-tryItOnline coffeescript
-
-fileExtensions coffee litcoffee
-fileType text
-compilesTo javascript
-isOpenSource true
-
-tiobe CoffeeScript
-
-linkedInSkill coffeescript
- 2018 21574
-
+helloWorldCollection CoffeeScript
+ // Hello world in CoffeeScript
+ 
+ alert "Hello, World!"
+leachim6 CoffeeScript
+ filepath c/CoffeeScript.coffee
+ fileExtensions coffee
+ example
+  alert "Hello World"
+  
+rosettaCode CoffeeScript
 quineRelay CoffeeScript
 
-ubuntuPackage coffeescript
-
-codeMirror coffeescript
-
-rosettaCode CoffeeScript
-
-lineCommentToken #
-jupyterKernel https://github.com/n-riesco/jp-coffeescript
-centralPackageRepositoryCount 0
 rijuRepl https://riju.codes/coffeescript
  example
   console.log "Hello, world!"
@@ -94,25 +92,23 @@ rijuRepl https://riju.codes/coffeescript
  fileExtensions coffee litcoffee
  website https://coffeescript.org/
  githubRepo https://github.com/jashkenas/coffeescript
+replit coffeescript
+tryItOnline coffeescript
+
+linkedInSkill coffeescript
+ 2018 21574
+
 goodreads
  title|year|author|goodreadsId|rating|ratings|reviews
  Programming in CoffeeScript (Developer's Library)|2012|Mark Bates|19193715|3.50|22|2
  Coffeescript Programming with Jquery, Rails, and Node.Js|2012|Michael Erasmus|23544945|3.50|10|2
  Programming in Coffeescript|2012|Mark Bates|46311721|0.0|0|0
  Programming in Coffeescript|2012|Mark Bates|46311722|0.0|0|0
-pygmentsHighlighter CoffeeScript
- filename javascript.py
- fileExtensions coffee
-leachim6 CoffeeScript
- filepath c/CoffeeScript.coffee
- fileExtensions coffee
- example
-  alert "Hello World"
-  
-printToken console.log
-multiLineCommentTokens ###
-domainName coffeescript.org
- registered 2009
-monaco coffee
-keywords and or is isnt not on yes @ no off true false null this new delete typeof in instanceof return throw break continue debugger if else switch for while do try catch finally class extends super undefined then unless until loop of by when
-stringToken "
+
+tiobe CoffeeScript
+
+ubuntuPackage coffeescript
+jupyterKernel https://github.com/n-riesco/jp-coffeescript
+fileType text
+isOpenSource true
+centralPackageRepositoryCount 0

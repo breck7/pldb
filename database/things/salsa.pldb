@@ -1,6 +1,19 @@
 title Simple Actor Language System and Architecture
 appeared 2001
 type pl
+website http://wcl.cs.rpi.edu/salsa/
+standsFor Simple Actor Language System and Architecture
+
+features
+ hasMultiLineComments true
+  /* A comment
+  */
+ hasComments true
+  /* A comment
+  */
+ hasSemanticIndentation false
+
+multiLineCommentTokens /* */
 
 wikipedia https://en.wikipedia.org/wiki/SALSA_(programming_language)
  example
@@ -39,16 +52,5 @@ wikipedia https://en.wikipedia.org/wiki/SALSA_(programming_language)
  appeared 2001
  fileExtensions salsa
 
-website http://wcl.cs.rpi.edu/salsa/
-standsFor Simple Actor Language System and Architecture
 fileType text
 centralPackageRepositoryCount 0
-multiLineCommentTokens /* */
-features
- hasMultiLineComments true
-  /* A comment
-  */
- hasComments true
-  /* A comment
-  */
- hasSemanticIndentation false

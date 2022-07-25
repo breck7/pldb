@@ -2,6 +2,13 @@ title The Dog Programming Language
 type pl
 website https://www.media.mit.edu/projects/the-dog-programming-language/overview/
 reference http://salmanahmad.com/files/Dog-UIST2013.pdf
+
+features
+ hasStrings true
+  "Hello world"
+
+stringToken "
+
 leachim6 Dog
  filepath d/Dog
  example
@@ -18,7 +25,3 @@ leachim6 Dog
    Sleep
   EndOf Day 1
   
-stringToken "
-features
- hasStrings true
-  "Hello world"

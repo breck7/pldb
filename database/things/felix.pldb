@@ -2,15 +2,8 @@ title Felix
 appeared 2001
 type pl
 creators John Skaller
-
-example
- #import <flx.flxh>
- fun abs_div(a:int, b:int when b!=0)
-   expect result >=0
- =>
-   abs(a/b)
- ;
- print (abs_div(2,4)); print "\n";
+website http://felix-lang.github.io/felix/
+reference http://web.archive.org/web/20080415185225/http://felix-lang.org/
 
 features
  hasPointers true
@@ -40,6 +33,19 @@ features
  hasStrings true
   "Hello world"
 
+lineCommentToken //
+printToken println
+stringToken "
+
+example
+ #import <flx.flxh>
+ fun abs_div(a:int, b:int when b!=0)
+   expect result >=0
+ =>
+   abs(a/b)
+ ;
+ print (abs_div(2,4)); print "\n";
+
 githubRepo https://github.com/felix-lang/felix
  firstCommit 2001
  stars 685
@@ -50,21 +56,19 @@ githubRepo https://github.com/felix-lang/felix
  description The Felix Programming Language
  issues 37
 
-website http://felix-lang.github.io/felix/
-reference http://web.archive.org/web/20080415185225/http://felix-lang.org/
-hackerNewsDiscussions
- id|title|url|time|timestamp|by|comments|score
- 5007674|Felix - a fast scripting language|http://felix-lang.org|2013-01-04 14:17:49 UTC|1357309069|nmcfarl|83|107
-centralPackageRepositoryCount 0
-lineCommentToken //
 pygmentsHighlighter Felix
  filename felix.py
  fileExtensions flx flxh
+
 leachim6 Felix
  filepath f/Felix.flx
  fileExtensions flx
  example
   println$ "Hello World";
   
-printToken println
-stringToken "
+
+hackerNewsDiscussions
+ id|title|url|time|timestamp|by|comments|score
+ 5007674|Felix - a fast scripting language|http://felix-lang.org|2013-01-04 14:17:49 UTC|1357309069|nmcfarl|83|107
+
+centralPackageRepositoryCount 0

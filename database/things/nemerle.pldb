@@ -1,6 +1,13 @@
 title Nemerle
 appeared 2003
 type pl
+website http://nemerle.org
+fileExtensions n
+corporateDevelopers JetBrains
+domainName nemerle.org
+ registered 2003
+
+visualParadigm false
 
 features
  hasComments true
@@ -20,6 +27,10 @@ features
  hasPrintDebugging true
  hasStrings true
   "Hello world"
+
+lineCommentToken //
+printToken System.Console.WriteLine
+stringToken "
 
 wikipedia https://en.wikipedia.org/wiki/Nemerle
  example
@@ -54,12 +65,9 @@ githubLanguage Nemerle
  fileExtensions n
  trendingProjectsCount 0
 
-helloWorldCollection Nemerle
- // Hello World in Nemerle (a functional programming language for .NET)
- 
- System.Console.WriteLine("Hello World");
- 
-
+pygmentsHighlighter Nemerle
+ filename dotnet.py
+ fileExtensions n
 linguistGrammarRepo https://github.com/textmate/nemerle.tmbundle
  firstCommit 2006
  lastCommit 2012
@@ -77,28 +85,15 @@ linguistGrammarRepo https://github.com/textmate/nemerle.tmbundle
      }
   }
 
-website http://nemerle.org
-fileExtensions n
-fileType text
-
-tiobe Nemerle
-
 projectEuler Nemerle
  memberCount
   2019 9
   2022 10
-
-hopl 8336
-
-rosettaCode Nemerle
-
-corporateDevelopers JetBrains
-visualParadigm false
-centralPackageRepositoryCount 0
-lineCommentToken //
-pygmentsHighlighter Nemerle
- filename dotnet.py
- fileExtensions n
+helloWorldCollection Nemerle
+ // Hello World in Nemerle (a functional programming language for .NET)
+ 
+ System.Console.WriteLine("Hello World");
+ 
 leachim6 Nemerle
  filepath n/Nemerle.n
  fileExtensions n
@@ -110,7 +105,10 @@ leachim6 Nemerle
           System.Console.WriteLine ("Hello World");
       }
   }
-printToken System.Console.WriteLine
-domainName nemerle.org
- registered 2003
-stringToken "
+rosettaCode Nemerle
+
+tiobe Nemerle
+hopl 8336
+
+fileType text
+centralPackageRepositoryCount 0

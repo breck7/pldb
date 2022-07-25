@@ -2,6 +2,12 @@ title Red
 appeared 2011
 type pl
 creators Nenad Rakocevic
+website http://www.red-lang.org/
+fileExtensions red reds
+domainName red-lang.org
+ registered 2010
+
+writtenIn red
 
 features
  hasLineComments true
@@ -11,6 +17,19 @@ features
  hasSemanticIndentation false
  hasStrings true
   "Hello world"
+
+lineCommentToken ;
+stringToken "
+
+githubRepo https://github.com/red/red
+ stars 4845
+ forks 407
+ subscribers 209
+ created 2011
+ updated 2022
+ firstCommit 2011
+ description Red is a next-generation programming language strongly inspired by Rebol, but with a broader field of usage thanks to its native-code compiler, from system programming to high-level scripting and cross-platform reactive GUI, while providing modern support for concurrency, all in a zero-install, zero-config, single 1MB file! 
+ issues 543
 
 wikipedia https://en.wikipedia.org/wiki/Red_(programming_language)
  example
@@ -36,16 +55,9 @@ githubLanguage Red
  fileExtensions red reds
  trendingProjectsCount 0
 
-githubRepo https://github.com/red/red
- stars 4845
- forks 407
- subscribers 209
- created 2011
- updated 2022
- firstCommit 2011
- description Red is a next-generation programming language strongly inspired by Rebol, but with a broader field of usage thanks to its native-code compiler, from system programming to high-level scripting and cross-platform reactive GUI, while providing modern support for concurrency, all in a zero-install, zero-config, single 1MB file! 
- issues 543
-
+pygmentsHighlighter Red
+ filename rebol.py
+ fileExtensions red reds
 linguistGrammarRepo https://github.com/Oldes/Sublime-Red
  firstCommit 2014
  lastCommit 2015
@@ -177,43 +189,29 @@ linguistGrammarRepo https://github.com/Oldes/Sublime-Red
   ]
   push CATCH_ALL                              ;-- exceptions root barrier
   push 0                                      ;-- keep stack aligned on 64-bit
-
-website http://www.red-lang.org/
-
-tryItOnline red
-
-twitter red_lang
-
-fileExtensions red reds
-fileType text
-wordRank 554
-isOpenSource true
-
-tiobe Red
-
-rosettaCode Red
-
-writtenIn red
-
-lineCommentToken ;
 languageServerProtocolProject https://github.com/bitbegin/redlangserver
  writtenIn red
-centralPackageRepositoryCount 0
-rijuRepl https://riju.codes/red
- example
-  Red [Title: "Main"]
-  
-  print "Hello, world!"
-  
-pygmentsHighlighter Red
- filename rebol.py
- fileExtensions red reds
+
 leachim6 Red
  filepath r/Red.red
  fileExtensions red
  example
   Red [Needs: 'View]
   view [text "Hello World"] 
-domainName red-lang.org
- registered 2010
-stringToken "
+rosettaCode Red
+
+rijuRepl https://riju.codes/red
+ example
+  Red [Title: "Main"]
+  
+  print "Hello, world!"
+  
+tryItOnline red
+
+tiobe Red
+
+twitter red_lang
+fileType text
+wordRank 554
+isOpenSource true
+centralPackageRepositoryCount 0

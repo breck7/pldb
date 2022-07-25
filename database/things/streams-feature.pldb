@@ -1,8 +1,8 @@
 title Streams
 type feature
-psuedoExample echo 123 | 123.txt
 description In computer science, a stream is a sequence of data elements made available over time. A stream can be thought of as items on a conveyor belt being processed one at a time rather than in large batches.
 
-wikipedia https://en.wikipedia.org/wiki/Stream_(computing)
-
+psuedoExample echo 123 | 123.txt
 featureKeyword hasStreams
+
+wikipedia https://en.wikipedia.org/wiki/Stream_(computing)

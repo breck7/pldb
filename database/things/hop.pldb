@@ -1,12 +1,13 @@
 title hop
 type pl
-
 reference https://www.lri.fr/~conchon/TER/2012/3/dls06.pdf
-wordRank 3322
 
-hopl 8576
+features
+ hasStrings true
+  "Hello world"
 
-centralPackageRepositoryCount 0
+stringToken "
+
 leachim6 HOP
  filepath h/HOP
  example
@@ -17,7 +18,8 @@ leachim6 HOP
        (<BODY>
           "Hello World")))
   
-stringToken "
-features
- hasStrings true
-  "Hello world"
+
+hopl 8576
+
+wordRank 3322
+centralPackageRepositoryCount 0

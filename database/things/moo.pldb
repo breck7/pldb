@@ -1,6 +1,7 @@
 title MOO
 appeared 1993
 type pl
+standsFor MUD, object-oriented
 
 features
  hasComments true
@@ -8,6 +9,17 @@ features
  hasSemanticIndentation false
  hasStrings true
   "Hello world"
+
+printToken player:tell
+stringToken "
+
+example
+ @program toy:wind
+ this.wound = this.wound + 2;
+ player:tell("You wind up the ", this.name,".");
+ player.location:announce(player.name, " winds up the ", this.name,".");
+ .
+ 
 
 wikipedia https://en.wikipedia.org/wiki/MOO_(programming_language)
  example
@@ -44,22 +56,6 @@ helloWorldCollection MUD%2C object-oriented
  "Hello World in MOO";
  
  player.location:announce_all("Hello, world!");
-
-example
- @program toy:wind
- this.wound = this.wound + 2;
- player:tell("You wind up the ", this.name,".");
- player.location:announce(player.name, " winds up the ", this.name,".");
- .
- 
-standsFor MUD, object-oriented
-fileType text
-
-tiobe MOO
-
-rosettaCode MOO
-
-centralPackageRepositoryCount 0
 leachim6 Moo
  filepath m/Moo.moo
  fileExtensions moo
@@ -67,5 +63,9 @@ leachim6 Moo
   @program hello:run
   player:tell("Hello World");
   .
-printToken player:tell
-stringToken "
+rosettaCode MOO
+
+tiobe MOO
+
+fileType text
+centralPackageRepositoryCount 0

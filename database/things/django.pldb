@@ -12,18 +12,13 @@ wikipedia https://en.wikipedia.org/wiki/Django_(web_framework)
  revisionCount 1048
  appeared 2003
 
+codeMirror django
 linguistGrammarRepo https://github.com/textmate/python-django.tmbundle
  firstCommit 2005
  lastCommit 2014
  committerCount 6
  commitCount 40
 
-fileType text
-isOpenSource true
-
-codeMirror django
-
-centralPackageRepositoryCount 0
 leachim6 Django
  filepath d/Django.py
  fileExtensions py
@@ -32,3 +27,7 @@ leachim6 Django
   
   def index(request):
       return HttpResponse("Hello World")
+
+fileType text
+isOpenSource true
+centralPackageRepositoryCount 0

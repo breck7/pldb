@@ -3,13 +3,6 @@ appeared 1985
 type pl
 aka bat
 aka cmd
-rijuRepl https://riju.codes/cmd
- example
-  echo "Hello, world!"
-  
- description Obsolete (but still default) command-line interpreter for Microsoft Windows
- fileExtensions bat
- website https://docs.microsoft.com/en-us/windows-server/administration/windows-commands/windows-commands
 
 features
  hasCaseInsensitiveIdentifiers true
@@ -19,6 +12,9 @@ features
   REM A comment
  hasComments true
   REM A comment
+
+lineCommentToken REM
+printToken echo
 
 wikipedia https://en.wikipedia.org/wiki/Batch_file
  example
@@ -49,23 +45,19 @@ githubLanguage Batchfile
   FQrabbit SSTap-Rule https://github.com/FQrabbit.png https://github.com/FQrabbit/SSTap-Rule Batchfile #C1F12E 2367 613 195 支持更多游戏规则，让SSTap成为真正的“网游加速器”
  trendingProjectsCount 8
 
+monaco bat
+pygmentsHighlighter Batchfile
+ filename shell.py
+ fileExtensions bat cmd
 linguistGrammarRepo https://github.com/mmims/language-batchfile
  firstCommit 2014
  lastCommit 2018
  committerCount 3
  commitCount 55
 
-fileType text
-wordRank 7410
-
 projectEuler Batch
  memberCount
   2022 9
-
-centralPackageRepositoryCount 0
-pygmentsHighlighter Batchfile
- filename shell.py
- fileExtensions bat cmd
 leachim6 Batch
  filepath b/Batch.bat
  fileExtensions bat
@@ -73,6 +65,15 @@ leachim6 Batch
   @echo off
   echo Hello World
   
-printToken echo
-lineCommentToken REM
-monaco bat
+
+rijuRepl https://riju.codes/cmd
+ example
+  echo "Hello, world!"
+  
+ description Obsolete (but still default) command-line interpreter for Microsoft Windows
+ fileExtensions bat
+ website https://docs.microsoft.com/en-us/windows-server/administration/windows-commands/windows-commands
+
+fileType text
+wordRank 7410
+centralPackageRepositoryCount 0

@@ -1,6 +1,7 @@
 title Crystallographic Information File
 appeared 1991
 type textDataFormat
+reference https://www.iucr.org/resources/cif/spec/version1.1/cifsyntax
 
 wikipedia https://en.wikipedia.org/wiki/Crystallographic_Information_File
  summary Crystallographic Information File (CIF) is a standard text file format for representing crystallographic information, promulgated by the International Union of Crystallography (IUCr). CIF was developed by the IUCr Working Party on Crystallographic Information in an effort sponsored by the IUCr Commission on Crystallographic Data and the IUCr Commission on Journals. The file format was initially published by Hall, Allen, and Brown and has since been revised, most recently version 1.1. Full specifications for the format are available at the IUCr website. Many computer programs for molecular viewing are compatible with this format, including Jmol.  Closely related is mmCIF, macromolecular CIF, which is intended as an alternative to the Protein Data Bank (PDB) format. Also closely related is Crystallographic Information Framework, a broader system of exchange protocols based on data dictionaries and relational rules expressible in different machine-readable manifestations, including, but not restricted to, Crystallographic Information File and XML.
@@ -8,5 +9,3 @@ wikipedia https://en.wikipedia.org/wiki/Crystallographic_Information_File
  pageId 6100843
  dailyPageViews 41
  appeared 1991
-
-reference https://www.iucr.org/resources/cif/spec/version1.1/cifsyntax

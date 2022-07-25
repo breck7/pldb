@@ -2,28 +2,16 @@ title False
 appeared 1993
 type pl
 creators Wouter Van Oortmerssen
-
-example
- { writes all prime numbers between 0 and 100 }
- 99 9[1-$][$@$@$@$@/*=[1-$$[%1-$@]?0[$.' ,]?]?]#
+website http://www.strlen.com/false-language/
 
 features
  hasComments true
  hasSemanticIndentation false
 
-website http://www.strlen.com/false-language/
+example
+ { writes all prime numbers between 0 and 100 }
+ 99 9[1-$][$@$@$@$@/*=[1-$$[%1-$@]?0[$.' ,]?]?]#
 
-tryItOnline false
-
-wordRank 2392
-
-rosettaCode FALSE
-
-centralPackageRepositoryCount 0
-rijuRepl https://riju.codes/false
- example
-  "Hello, world!"
-  
 leachim6 False
  filepath f/False.f
  fileExtensions f
@@ -31,3 +19,13 @@ leachim6 False
   "Hello World
   "
   
+rosettaCode FALSE
+
+rijuRepl https://riju.codes/false
+ example
+  "Hello, world!"
+  
+tryItOnline false
+
+wordRank 2392
+centralPackageRepositoryCount 0

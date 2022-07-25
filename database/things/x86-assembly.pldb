@@ -11,6 +11,8 @@ features
   ; A comment
  hasSemanticIndentation false
 
+lineCommentToken ;
+
 wikipedia https://en.wikipedia.org/wiki/X86_assembly_language
  example
   cmp	eax, ebx
@@ -102,9 +104,6 @@ linguistGrammarRepo https://github.com/calculuswhiz/Assembly-Syntax-Definition
   LEFDE1:
    .subsections_via_symbols
 
-fileType text
-centralPackageRepositoryCount 0
-gdbSupport true
 rijuRepl https://riju.codes/x86
  example
   	.text
@@ -122,4 +121,7 @@ rijuRepl https://riju.codes/x86
   message:
   	.string "Hello, world!\n"
   
-lineCommentToken ;
+
+gdbSupport true
+fileType text
+centralPackageRepositoryCount 0

@@ -2,6 +2,20 @@ title Plus
 appeared 1976
 type pl
 
+features
+ hasMultiLineComments true
+  /* A comment
+  */
+ hasComments true
+  /* A comment
+  */
+ hasSemanticIndentation false
+ hasStrings true
+  "Hello world"
+
+multiLineCommentTokens /* */
+stringToken "
+
 wikipedia https://en.wikipedia.org/wiki/Plus_(programming_language)
  example
   %Title := "Hello world";
@@ -40,21 +54,8 @@ wikipedia https://en.wikipedia.org/wiki/Plus_(programming_language)
  dailyPageViews 8
  appeared 1976
 
-fileType text
-wordRank 844
-
 rosettaCode PLUS
 
+fileType text
+wordRank 844
 centralPackageRepositoryCount 0
-multiLineCommentTokens /* */
-features
- hasMultiLineComments true
-  /* A comment
-  */
- hasComments true
-  /* A comment
-  */
- hasSemanticIndentation false
- hasStrings true
-  "Hello world"
-stringToken "

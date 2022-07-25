@@ -1,7 +1,9 @@
 title Sublime Syntax Test Lang
-type grammarLanguage
 appeared 2008
+type grammarLanguage
 description A language for testing sublime syntax files.
+website https://www.sublimetext.com/docs/3/syntax.html#testing
+
 related sublime-syntax
 
 example
@@ -35,5 +37,3 @@ example
  "Hello, World! // not a comment";
  // ^ string.quoted.double
  //                  ^ string.quoted.double - comment
-
-website https://www.sublimetext.com/docs/3/syntax.html#testing

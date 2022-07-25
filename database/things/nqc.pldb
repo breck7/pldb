@@ -1,6 +1,27 @@
 title Not Quite C
 appeared 2017
 type pl
+creators Nora Sandler
+standsFor Not Quite C
+
+features
+ hasLineComments true
+  // A comment
+ hasComments true
+  // A comment
+ hasSemanticIndentation false
+
+lineCommentToken //
+
+githubRepo https://github.com/nlsandler/nqcc
+ firstCommit 2017
+ stars 204
+ forks 11
+ subscribers 15
+ created 2017
+ updated 2022
+ description A compiler for a tiny (but growing!) subset of C, written in OCaml.
+ issues 5
 
 wikipedia https://en.wikipedia.org/wiki/Not_Quite_C
  example
@@ -17,25 +38,6 @@ wikipedia https://en.wikipedia.org/wiki/Not_Quite_C
  revisionCount 60
  dailyPageViews 11
 
-githubRepo https://github.com/nlsandler/nqcc
- firstCommit 2017
- stars 204
- forks 11
- subscribers 15
- created 2017
- updated 2022
- description A compiler for a tiny (but growing!) subset of C, written in OCaml.
- issues 5
-
-standsFor Not Quite C
 fileType text
 isOpenSource true
 centralPackageRepositoryCount 0
-creators Nora Sandler
-lineCommentToken //
-features
- hasLineComments true
-  // A comment
- hasComments true
-  // A comment
- hasSemanticIndentation false

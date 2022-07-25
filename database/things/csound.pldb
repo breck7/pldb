@@ -1,6 +1,19 @@
 title Csound
 appeared 1985
 type pl
+website http://csound.com
+fileExtensions csd sco
+domainName csound.com
+ registered 2008
+
+features
+ hasLineComments true
+  ; A comment
+ hasComments true
+  ; A comment
+ hasSemanticIndentation false
+
+lineCommentToken ;
 
 wikipedia https://en.wikipedia.org/wiki/Csound
  example
@@ -42,6 +55,9 @@ githubLanguage Csound
  fileExtensions orc udo
  trendingProjectsCount 0
 
+pygmentsHighlighter Csound Document
+ filename csound.py
+ fileExtensions csd
 linguistGrammarRepo https://github.com/nwhetsell/language-csound
  firstCommit 2015
  lastCommit 2018
@@ -64,28 +80,14 @@ linguistGrammarRepo https://github.com/nwhetsell/language-csound
   endin
   
 
-website http://csound.com
-fileExtensions csd sco
-fileType text
-isOpenSource true
-
-hopl 5383
-
-centralPackageRepositoryCount 0
 goodreads
  title|year|author|goodreadsId|rating|ratings|reviews
  The Csound Book: Perspectives in Software Synthesis, Sound Design, Signal Processing, and Programming|2000|Richard Boulanger|154554|4.02|46|2
  Programming digital music with Csound|2014|Peter Fitton|39833906|4.00|1|0
  Csound: A Sound and Music Computing System||Victor Lazzarini|51915844|5.00|2|0
-lineCommentToken ;
-features
- hasLineComments true
-  ; A comment
- hasComments true
-  ; A comment
- hasSemanticIndentation false
-pygmentsHighlighter Csound Document
- filename csound.py
- fileExtensions csd
-domainName csound.com
- registered 2008
+
+hopl 5383
+
+fileType text
+isOpenSource true
+centralPackageRepositoryCount 0

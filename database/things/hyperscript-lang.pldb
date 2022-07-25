@@ -1,18 +1,14 @@
 title Hyperscript
-aka _hyperscript
-website https://hyperscript.org/
-description _hyperscript is a small, open scripting language inspired by hypertalk
-githubRepo https://github.com/bigskysoftware/_hyperscript
- firstCommit 2020
- stars 863
- forks 58
- subscribers 14
- created 2020
- updated 2022
- description a small scripting language for the web
- issues 57
-related hypertalk
+appeared 2020
 type pl
+description _hyperscript is a small, open scripting language inspired by hypertalk
+website https://hyperscript.org/
+aka _hyperscript
+domainName hyperscript.org
+ registered 2020
+
+related hypertalk
+
 example
  <script src="https://unpkg.com/hyperscript.org@0.9.5"></script>
  
@@ -30,6 +26,13 @@ example
                call anotherJavascriptFunction()">
             Do some stuff
  </div>
-appeared 2020
-domainName hyperscript.org
- registered 2020
+
+githubRepo https://github.com/bigskysoftware/_hyperscript
+ firstCommit 2020
+ stars 863
+ forks 58
+ subscribers 14
+ created 2020
+ updated 2022
+ description a small scripting language for the web
+ issues 57

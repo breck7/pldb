@@ -1,18 +1,20 @@
 title rbscript
 appeared 1996
 type pl
-
-example
- Dim years, days As Integer
- years = Val(Input("")) // Prompt the user to enter a value
- days = years * 365
-
 reference https://docs.xojo.com/index.php/RBScript
-centralPackageRepositoryCount 0
-lineCommentToken //
+
 features
  hasLineComments true
   // A comment
  hasComments true
   // A comment
  hasSemanticIndentation false
+
+lineCommentToken //
+
+example
+ Dim years, days As Integer
+ years = Val(Input("")) // Prompt the user to enter a value
+ days = years * 365
+
+centralPackageRepositoryCount 0

@@ -1,6 +1,15 @@
 title Zonnon
 appeared 2003
 type pl
+creators Jürg Gutknecht
+
+features
+ hasPrintDebugging true
+ hasStrings true
+  "Hello world"
+
+printToken writeln
+stringToken "
 
 wikipedia https://en.wikipedia.org/wiki/Zonnon
  related oberon pascal modula
@@ -12,11 +21,6 @@ wikipedia https://en.wikipedia.org/wiki/Zonnon
  dailyPageViews 7
  appeared 2013
 
-
-rosettaCode Zonnon
-
-centralPackageRepositoryCount 0
-creators Jürg Gutknecht
 leachim6 Zonnon
  filepath z/Zonnon.znn
  fileExtensions znn
@@ -25,9 +29,6 @@ leachim6 Zonnon
   begin
       writeln("Hello World");
   end HelloWorld.    
-printToken writeln
-features
- hasPrintDebugging true
- hasStrings true
-  "Hello world"
-stringToken "
+rosettaCode Zonnon
+
+centralPackageRepositoryCount 0

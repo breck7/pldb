@@ -1,6 +1,11 @@
 title SRL
 appeared 2016
 type queryLanguage
+creators Karim Geiger
+website https://simple-regex.com/
+standsFor Simple Regex Language
+domainName simple-regex.com
+ registered 2016
 
 example
  begin with any of (digit, letter, one of "._%+-") once or more,
@@ -20,12 +25,6 @@ githubRepo https://github.com/SimpleRegex/SRL-PHP
  description Simple Regex Language
  issues 11
 
-website https://simple-regex.com/
-standsFor Simple Regex Language
 fileType text
 isOpenSource true
-
 centralPackageRepositoryCount 0
-creators Karim Geiger
-domainName simple-regex.com
- registered 2016

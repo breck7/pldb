@@ -1,6 +1,24 @@
 title Charity
 appeared 1992
 type pl
+website http://pll.cpsc.ucalgary.ca/charity1/www/home.html
+
+features
+ hasLineComments true
+  % A comment
+ hasComments true
+  % A comment
+ hasSemanticIndentation false
+
+lineCommentToken %
+
+example
+ %
+ %   Some very badly written Charity
+ %
+ 
+ data LA(A) -> D = ss: A -> D
+                 | ff: -> D.
 
 wikipedia https://en.wikipedia.org/wiki/Charity_(programming_language)
  related linux ml
@@ -16,24 +34,8 @@ githubLanguage Charity
  fileExtensions ch
  trendingProjectsCount 0
 
-example
- %
- %   Some very badly written Charity
- %
- 
- data LA(A) -> D = ss: A -> D
-                 | ff: -> D.
-website http://pll.cpsc.ucalgary.ca/charity1/www/home.html
-fileType text
-wordRank 4766
-
 hopl 1540
 
+fileType text
+wordRank 4766
 centralPackageRepositoryCount 0
-lineCommentToken %
-features
- hasLineComments true
-  % A comment
- hasComments true
-  % A comment
- hasSemanticIndentation false

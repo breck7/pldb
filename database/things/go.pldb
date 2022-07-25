@@ -2,6 +2,15 @@ title Go
 appeared 2009
 type pl
 creators Rob Pike and Ken Thompson and Robert Griesemer
+website https://golang.org
+webRepl https://play.golang.org/
+aka golang
+fileExtensions go
+corporateDevelopers Google
+domainName golang.org
+ registered 2009
+
+visualParadigm false
 
 features
  hasStrings true
@@ -67,6 +76,13 @@ features
  hasPrintDebugging true
  hasAssignment true
  isCaseSensitive true
+
+lineCommentToken //
+multiLineCommentTokens /* */
+printToken fmt.Println
+assignmentToken =
+stringToken "
+keywords break case chan const continue default defer else fallthrough for func go goto if import interface map package range return select struct switch type var
 
 wikipedia https://en.wikipedia.org/wiki/Go_(programming_language)
  example
@@ -144,15 +160,12 @@ githubLanguage Go
   aquasecurity trivy https://github.com/aquasecurity.png https://github.com/aquasecurity/trivy Go #00ADD8 2130 148 443 "A Simple and Comprehensive Vulnerability Scanner for Containers, Suitable for CI"
  trendingProjectsCount 26
 
-helloWorldCollection Go
- // Hello world in Go
- 
- package main
- import "fmt"
- func main() {
-  fmt.Printf("Hello World\n")
- }
-
+antlr https://github.com/antlr/grammars-v4/tree/master/golang
+monaco go
+codeMirror go
+pygmentsHighlighter Go
+ filename go.py
+ fileExtensions go
 linguistGrammarRepo https://github.com/AlanQuatermain/go-tmbundle
  firstCommit 2009
  lastCommit 2013
@@ -179,81 +192,23 @@ linguistGrammarRepo https://github.com/AlanQuatermain/go-tmbundle
   func init() {
   }
   
-
-website https://golang.org
-aka golang
-
-replit go
-
-tryItOnline go
-
-fileExtensions go
-fileType text
-wordRank 123
-isOpenSource true
-
-tiobe Go
- currentRank 14
-
-meetup golang
- memberCount 147668
- groupCount 315
-
-webRepl https://play.golang.org/
-linkedInSkill go
- 2018 511898
+languageServerProtocolProject https://github.com/golang/tools/tree/master/gopls
+ writtenIn go
+languageServerProtocolProject https://github.com/sourcegraph/go-langserver
+ writtenIn go
 
 projectEuler Go
  memberCount
   2019 1313
   2022 1768
-
-quineRelay Go
-
-ubuntuPackage golang
-
-codeMirror go
-
-rosettaCode Go
-
-antlr https://github.com/antlr/grammars-v4/tree/master/golang
-
-corporateDevelopers Google
-indeedJobs go engineer
- 2017 1284
-
-lineCommentToken //
-languageServerProtocolProject https://github.com/golang/tools/tree/master/gopls
- writtenIn go
-languageServerProtocolProject https://github.com/sourcegraph/go-langserver
- writtenIn go
-visualParadigm false
-jupyterKernel https://github.com/yunabe/lgo
-jupyterKernel https://github.com/takluyver/igo
-jupyterKernel https://github.com/fabian-z/gopherlab
-jupyterKernel https://github.com/gopherdata/gophernotes
-keywords break case chan const continue default defer else fallthrough for func go goto if import interface map package range return select struct switch type var
-stackOverflowSurvey
- 2021
-  users 7879
-  medianSalary 75669
-  fans 15788
-  percentageUsing 0.09
-centralPackageRepositoryCount 0
-gdbSupport true
-rijuRepl https://riju.codes/go
- example
-  package main
-  
-  import "fmt"
-  
-  func main() {
-  	fmt.Println("Hello, world!")
-  }
-githubCopilotOptimized
-pygmentsHighlighter Go
- filename go.py
- fileExtensions go
+helloWorldCollection Go
+ // Hello world in Go
+ 
+ package main
+ import "fmt"
+ func main() {
+  fmt.Printf("Hello World\n")
+ }
 leachim6 Go
  filepath g/Go.go
  fileExtensions go
@@ -266,11 +221,48 @@ leachim6 Go
     fmt.Println("Hello World")
   }
   
-printToken fmt.Println
-domainName golang.org
- registered 2009
-assignmentToken =
-monaco go
-multiLineCommentTokens /* */
-stringToken "
+rosettaCode Go
+quineRelay Go
+
+rijuRepl https://riju.codes/go
+ example
+  package main
+  
+  import "fmt"
+  
+  func main() {
+  	fmt.Println("Hello, world!")
+  }
+replit go
+tryItOnline go
+
+indeedJobs go engineer
+ 2017 1284
+linkedInSkill go
+ 2018 511898
+stackOverflowSurvey
+ 2021
+  users 7879
+  medianSalary 75669
+  fans 15788
+  percentageUsing 0.09
+
+meetup golang
+ memberCount 147668
+ groupCount 315
+
+tiobe Go
+ currentRank 14
+
 twitter golang
+ubuntuPackage golang
+gdbSupport true
+jupyterKernel https://github.com/yunabe/lgo
+jupyterKernel https://github.com/takluyver/igo
+jupyterKernel https://github.com/fabian-z/gopherlab
+jupyterKernel https://github.com/gopherdata/gophernotes
+fileType text
+wordRank 123
+isOpenSource true
+githubCopilotOptimized
+centralPackageRepositoryCount 0

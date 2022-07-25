@@ -1,6 +1,23 @@
 title CIL
 appeared 2000
 type pl
+standsFor Common Intermediate Language
+aka Microsoft Intermediate Language MSIL
+corporateDevelopers Microsoft
+
+features
+ hasLineComments true
+  // A comment
+ hasComments true
+  // A comment
+ hasPrintDebugging true
+ hasSemanticIndentation false
+ hasStrings true
+  "Hello world"
+
+lineCommentToken //
+printToken call void [mscorlib]System.Console::WriteLine
+stringToken "
 
 example
  .assembly Hello {}
@@ -67,41 +84,6 @@ wikipedia https://en.wikipedia.org/wiki/Common_Intermediate_Language
  revisionCount 342
  appeared 2005
 
-aka Microsoft Intermediate Language MSIL
-standsFor Common Intermediate Language
-fileType text
-
-tiobe CIL
-
-corporateDevelopers Microsoft
-centralPackageRepositoryCount 0
-rijuRepl https://riju.codes/cil
- example
-  .assembly main {}
-  .class Main
-  {
-    .method static void Main() cil managed
-    {
-      .entrypoint
-      ldstr "Hello, world!"
-      call void [mscorlib]System.Console::WriteLine(string)
-      ret
-    }
-  }
-  
-goodreads
- title|year|author|goodreadsId|rating|ratings|reviews
- CIL Programming: Under the Hood of .Net|2002|Jason Bock|253979|3.50|2|0
-lineCommentToken //
-features
- hasLineComments true
-  // A comment
- hasComments true
-  // A comment
- hasPrintDebugging true
- hasSemanticIndentation false
- hasStrings true
-  "Hello world"
 leachim6 Cil
  filepath c/Cil.il
  fileExtensions il
@@ -117,5 +99,27 @@ leachim6 Cil
        ret
   }
   
-printToken call void [mscorlib]System.Console::WriteLine
-stringToken "
+
+rijuRepl https://riju.codes/cil
+ example
+  .assembly main {}
+  .class Main
+  {
+    .method static void Main() cil managed
+    {
+      .entrypoint
+      ldstr "Hello, world!"
+      call void [mscorlib]System.Console::WriteLine(string)
+      ret
+    }
+  }
+  
+
+goodreads
+ title|year|author|goodreadsId|rating|ratings|reviews
+ CIL Programming: Under the Hood of .Net|2002|Jason Bock|253979|3.50|2|0
+
+tiobe CIL
+
+fileType text
+centralPackageRepositoryCount 0

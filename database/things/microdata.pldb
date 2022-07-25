@@ -1,6 +1,9 @@
 title Microdata HTML
 appeared 2013
 type schema
+reference https://www.w3.org/TR/microdata/
+
+related rdf json-ld
 
 example
  <div itemscope itemtype="http://schema.org/RentalCarReservation">
@@ -82,6 +85,3 @@ wikipedia https://en.wikipedia.org/wiki/Microdata_(HTML)
  pageId 25817778
  dailyPageViews 172
  appeared 2013
-
-reference https://www.w3.org/TR/microdata/
-related rdf json-ld

@@ -1,6 +1,16 @@
 title Adventure Game Studio Script
 appeared 2001
 type pl
+website http://www.adventuregamestudio.co.uk/site/ags/tutorial/scripting/1/
+
+features
+ hasLineComments true
+  // A comment
+ hasComments true
+  // A comment
+ hasSemanticIndentation false
+
+lineCommentToken //
 
 example
  function hDoor_Look()
@@ -24,13 +34,5 @@ linguistGrammarRepo https://github.com/textmate/c.tmbundle
   // place import definitions and #define names here to be used by all
   // scripts.
 
-website http://www.adventuregamestudio.co.uk/site/ags/tutorial/scripting/1/
 fileType text
 centralPackageRepositoryCount 0
-lineCommentToken //
-features
- hasLineComments true
-  // A comment
- hasComments true
-  // A comment
- hasSemanticIndentation false

@@ -1,4 +1,21 @@
 title YoptaScript
+appeared 2016
+type pl
+creators Sam Gozman
+website https://yopta.space/
+nativeLanguage Russian
+domainName yopta.space
+
+compilesTo javascript
+
+features
+ hasPrintDebugging true
+ hasStrings true
+  "Hello world"
+
+printToken ксива.малява
+stringToken "
+
 githubRepo https://github.com/samgozman/YoptaScript
  firstCommit 2016
  stars 1675
@@ -8,10 +25,13 @@ githubRepo https://github.com/samgozman/YoptaScript
  updated 2022
  description Скриптовый язык программирования для гопников и реальных пацанов
  issues 15
-website https://yopta.space/
-nativeLanguage Russian
-compilesTo javascript
-type pl
+
+leachim6 YoptaScript
+ filepath y/YoptaScript
+ example
+  ксива.малява("Hello World") нах
+  
+
 rijuRepl https://riju.codes/yoptascript
  example
   красноглазое.чмо("Привет мир!") нах
@@ -20,17 +40,3 @@ rijuRepl https://riju.codes/yoptascript
  fileExtensions yopta
  website https://yopta.space/
  githubRepo https://github.com/samgozman/YoptaScript
-appeared 2016
-creators Sam Gozman
-leachim6 YoptaScript
- filepath y/YoptaScript
- example
-  ксива.малява("Hello World") нах
-  
-printToken ксива.малява
-features
- hasPrintDebugging true
- hasStrings true
-  "Hello world"
-domainName yopta.space
-stringToken "

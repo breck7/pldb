@@ -2,9 +2,8 @@ title Markdown
 appeared 2004
 type textMarkup
 creators John Gruber and Aaron Swartz
-subreddit Markdown
- memberCount
-  2022 2463
+
+compilesTo html
 
 features
  hasSemanticIndentation true
@@ -56,6 +55,11 @@ githubLanguage Markdown
  fileExtensions md markdown mdown mdwn mkd mkdn mkdown ronn workbook
  trendingProjectsCount 0
 
+monaco markdown
+codeMirror markdown
+pygmentsHighlighter Markdown
+ filename markup.py
+ fileExtensions md markdown
 linguistGrammarRepo https://github.com/atom/language-gfm
  firstCommit 2013
  lastCommit 2018
@@ -67,22 +71,20 @@ linguistGrammarRepo https://github.com/atom/language-gfm
   ======
   
 
-compilesTo html
-fileType text
-
-codeMirror markdown
-
-centralPackageRepositoryCount 0
-rijuRepl https://riju.codes/markdown
- example
-  Hello, world!
-pygmentsHighlighter Markdown
- filename markup.py
- fileExtensions md markdown
 leachim6 Markdown
  filepath m/Markdown.md
  fileExtensions md
  example
   Hello World
   
-monaco markdown
+
+rijuRepl https://riju.codes/markdown
+ example
+  Hello, world!
+
+subreddit Markdown
+ memberCount
+  2022 2463
+
+fileType text
+centralPackageRepositoryCount 0

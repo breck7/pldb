@@ -2,6 +2,20 @@ title Monkey
 appeared 2011
 type pl
 
+features
+ hasLineComments true
+  ' A comment
+ hasComments true
+  ' A comment
+ hasPrintDebugging true
+ hasSemanticIndentation false
+ hasStrings true
+  "Hello world"
+
+lineCommentToken '
+printToken puts
+stringToken "
+
 wikipedia https://en.wikipedia.org/wiki/Monkey_(programming_language)
  example
   ' The 'Player' class, as referenced previously (Placement does not matter):
@@ -52,6 +66,9 @@ githubLanguage Monkey
  fileExtensions monkey monkey2
  trendingProjectsCount 0
 
+pygmentsHighlighter Monkey
+ filename basic.py
+ fileExtensions monkey
 linguistGrammarRepo https://github.com/gingerbeardman/monkey.tmbundle
  firstCommit 2011
  lastCommit 2016
@@ -89,29 +106,13 @@ linguistGrammarRepo https://github.com/gingerbeardman/monkey.tmbundle
   	Field depth := 0
   End
 
-fileType text
-wordRank 6182
-
-rosettaCode Monkey
-
-centralPackageRepositoryCount 0
-lineCommentToken '
-features
- hasLineComments true
-  ' A comment
- hasComments true
-  ' A comment
- hasPrintDebugging true
- hasSemanticIndentation false
- hasStrings true
-  "Hello world"
-pygmentsHighlighter Monkey
- filename basic.py
- fileExtensions monkey
 leachim6 Monkey
  filepath m/Monkey
  example
   puts("Hello World")
   
-printToken puts
-stringToken "
+rosettaCode Monkey
+
+fileType text
+wordRank 6182
+centralPackageRepositoryCount 0

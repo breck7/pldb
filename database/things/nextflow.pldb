@@ -1,10 +1,20 @@
 title Nextflow
 appeared 2013
 type pl
+website http://nextflow.io
+domainName nextflow.io
+ registered 2014
 
-githubLanguage Nextflow
- fileExtensions nf
- trendingProjectsCount 0
+features
+ hasMultiLineComments true
+  /* A comment
+  */
+ hasComments true
+  /* A comment
+  */
+ hasSemanticIndentation false
+
+multiLineCommentTokens /* */
 
 githubRepo https://github.com/nextflow-io/nextflow
  firstCommit 2013
@@ -15,6 +25,10 @@ githubRepo https://github.com/nextflow-io/nextflow
  updated 2022
  description A DSL for data-driven computational pipelines
  issues 264
+
+githubLanguage Nextflow
+ fileExtensions nf
+ trendingProjectsCount 0
 
 linguistGrammarRepo https://github.com/nextflow-io/atom-language-nextflow
  firstCommit 2018
@@ -91,21 +105,7 @@ linguistGrammarRepo https://github.com/nextflow-io/atom-language-nextflow
       """
   }
 
-website http://nextflow.io
-
 twitter nextflowio
-
 fileType text
 isOpenSource true
 centralPackageRepositoryCount 0
-multiLineCommentTokens /* */
-features
- hasMultiLineComments true
-  /* A comment
-  */
- hasComments true
-  /* A comment
-  */
- hasSemanticIndentation false
-domainName nextflow.io
- registered 2014

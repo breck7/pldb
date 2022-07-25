@@ -2,6 +2,13 @@ title R
 appeared 1993
 type pl
 creators Ross Ihaka
+website https://www.r-project.org
+fileExtensions r R RData rds rda
+country United States
+domainName r-project.org
+ registered 1999
+
+visualParadigm false
 
 features
  hasStrings true
@@ -29,6 +36,12 @@ features
  hasPrintDebugging true
  hasSemanticIndentation false
  hasAssignment true
+
+lineCommentToken #
+printToken print
+assignmentToken =
+stringToken "
+keywords if else repeat while function for in next break TRUE FALSE NULL Inf NaN NA NA_integer_ NA_real_ NA_complex_ NA_character_ ...
 
 wikipedia https://en.wikipedia.org/wiki/R_(programming_language)
  example
@@ -72,11 +85,9 @@ githubLanguage R
   satijalab seurat https://github.com/satijalab.png https://github.com/satijalab/seurat R #198CE7 540 326 25 "R toolkit for single cell genomics"
  trendingProjectsCount 9
 
-helloWorldCollection R
- # Hello World in R
- cat("Hello world\n")
- 
-
+antlr https://github.com/antlr/grammars-v4/tree/master/r
+monaco r
+codeMirror r
 linguistGrammarRepo https://github.com/textmate/r.tmbundle
  firstCommit 2005
  lastCommit 2016
@@ -89,81 +100,61 @@ linguistGrammarRepo https://github.com/textmate/r.tmbundle
   }
   hello()
   
-
-website https://www.r-project.org
-
-tryItOnline r
-
-twitter _r_foundation
-
-country United States
-fileExtensions r R RData rds rda
-fileType text
-wordRank 179
-isOpenSource true
-
-tiobe R
- currentRank 11
-
-meetup r-programming-language
- memberCount 26230
- groupCount 84
-
-linkedInSkill r
- 2018 1026107
+languageServerProtocolProject https://github.com/REditorSupport/languageserver
+ writtenIn r
 
 projectEuler R
  memberCount
   2019 1115
   2022 1329
-
-hopl 2426
-
-subreddit Rlanguage
- memberCount
-  2017 12731
-  2022 29980
-
-quineRelay R
-
-ubuntuPackage r-base
-
-codeMirror r
-
-rosettaCode R
-
-antlr https://github.com/antlr/grammars-v4/tree/master/r
-
-indeedJobs r data scientist
- 2017 3912
-
-lineCommentToken #
-languageServerProtocolProject https://github.com/REditorSupport/languageserver
- writtenIn r
-visualParadigm false
-jupyterKernel http://irkernel.github.io/
-keywords if else repeat while function for in next break TRUE FALSE NULL Inf NaN NA NA_integer_ NA_real_ NA_complex_ NA_character_ ...
-stackOverflowSurvey
- 2021
-  users 4185
-  medianSalary 59454
-  fans 4015
-  percentageUsing 0.05
-packageRepository https://cran.r-project.org/
-packageRepository http://bioconductor.org/
-rijuRepl https://riju.codes/r
- example
-  print("Hello, world!")
-  
+helloWorldCollection R
+ # Hello World in R
+ cat("Hello world\n")
+ 
 leachim6 R
  filepath r/R.R
  fileExtensions R
  example
   cat("Hello World")
   
-printToken print
-domainName r-project.org
- registered 1999
-assignmentToken =
-monaco r
-stringToken "
+rosettaCode R
+quineRelay R
+
+rijuRepl https://riju.codes/r
+ example
+  print("Hello, world!")
+  
+tryItOnline r
+
+indeedJobs r data scientist
+ 2017 3912
+linkedInSkill r
+ 2018 1026107
+stackOverflowSurvey
+ 2021
+  users 4185
+  medianSalary 59454
+  fans 4015
+  percentageUsing 0.05
+
+subreddit Rlanguage
+ memberCount
+  2017 12731
+  2022 29980
+meetup r-programming-language
+ memberCount 26230
+ groupCount 84
+
+tiobe R
+ currentRank 11
+hopl 2426
+
+packageRepository https://cran.r-project.org/
+packageRepository http://bioconductor.org/
+
+twitter _r_foundation
+ubuntuPackage r-base
+jupyterKernel http://irkernel.github.io/
+fileType text
+wordRank 179
+isOpenSource true

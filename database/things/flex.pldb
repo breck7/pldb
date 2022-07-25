@@ -1,6 +1,20 @@
 title FLEX
 appeared 1987
 type grammarLanguage
+creators Vern Paxson
+website https://github.com/westes/flex
+reference https://github.com/babyraging/yash
+country Canada
+
+githubRepo https://github.com/westes/flex
+ firstCommit 1987
+ stars 2618
+ forks 454
+ subscribers 72
+ created 2013
+ updated 2022
+ description The Fast Lexical Analyzer - scanner generator for lexing in C and C++
+ issues 154
 
 wikipedia https://en.wikipedia.org/wiki/Flex_(lexical_analyser_generator)
  example
@@ -59,15 +73,6 @@ wikipedia https://en.wikipedia.org/wiki/Flex_(lexical_analyser_generator)
  revisionCount 253
  appeared 1987
 
-website https://github.com/westes/flex
-country Canada
-fileType text
-wordRank 9114
-isOpenSource true
-
-hopl 2033
-
-centralPackageRepositoryCount 0
 rijuRepl https://riju.codes/flex
  example
   %{
@@ -87,18 +92,15 @@ rijuRepl https://riju.codes/flex
     return 0;
   }
   
-reference https://github.com/babyraging/yash
+
 goodreads
  title|year|author|goodreadsId|rating|ratings|reviews
  Programming Flex 2|2007|Chafic Kazoun|559921|3.31|35|4
  Programming Flex 3|2008|Chafic Kazoun|2557355|3.44|9|1
-githubRepo https://github.com/westes/flex
- firstCommit 1987
- stars 2618
- forks 454
- subscribers 72
- created 2013
- updated 2022
- description The Fast Lexical Analyzer - scanner generator for lexing in C and C++
- issues 154
-creators Vern Paxson
+
+hopl 2033
+
+fileType text
+wordRank 9114
+isOpenSource true
+centralPackageRepositoryCount 0

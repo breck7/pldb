@@ -1,6 +1,19 @@
 title carth
 appeared 2018
 type pl
+creators Johan Johansson
+description Purely functional programming with lisp-syntax. Less infix, more parens!
+website https://carth.jo.zone/
+domainName carth.jo.zone
+
+features
+ hasLineComments true
+  ; A comment
+ hasComments true
+  ; A comment
+ hasSemanticIndentation false
+
+lineCommentToken ;
 
 example
  ;; Note that many of these functions are/will be in the standard
@@ -90,8 +103,6 @@ example
  (extern display-inline (Fun Str Unit))
  (extern -str-append (Fun (Pair Str Str) Str))
 
-description Purely functional programming with lisp-syntax. Less infix, more parens!
-
 githubRepo https://github.com/bryal/carth
  firstCommit 2018
  stars 20
@@ -101,14 +112,3 @@ githubRepo https://github.com/bryal/carth
  updated 2022
  description The Carth programming language. Mirror of https://sr.ht/~jojo/Carth/
  issues 0
-
-website https://carth.jo.zone/
-creators Johan Johansson
-lineCommentToken ;
-features
- hasLineComments true
-  ; A comment
- hasComments true
-  ; A comment
- hasSemanticIndentation false
-domainName carth.jo.zone

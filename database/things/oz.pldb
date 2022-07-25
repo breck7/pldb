@@ -2,12 +2,19 @@ title Oz
 appeared 1991
 type pl
 creators Gert Smolka
+website http://mozart.github.io
+country Germany
+domainName mozart.github.io
+
+visualParadigm false
 
 features
  hasComments true
  hasLineComments true
   % A comment
  hasSemanticIndentation false
+
+lineCommentToken %
 
 wikipedia https://en.wikipedia.org/wiki/Oz_(programming_language)
  example
@@ -42,18 +49,7 @@ githubLanguage Oz
  fileExtensions oz
  trendingProjectsCount 0
 
-helloWorldCollection Oz
- % Hello World in Oz
- 
- functor
- import
-   System
-   Application
- define
-   {System.showInfo "Hello World!"}
-   {Application.exit 0}
- end
-
+codeMirror oz
 linguistGrammarRepo https://github.com/eregon/oz-tmbundle
  firstCommit 2010
  lastCommit 2012
@@ -115,27 +111,23 @@ linguistGrammarRepo https://github.com/eregon/oz-tmbundle
   end
   
 
-website http://mozart.github.io
-country Germany
-fileType text
-wordRank 2692
-isOpenSource true
-
-tiobe Oz
-
 projectEuler Oz
  memberCount
   2019 4
   2022 4
-
-hopl 2327
-
-codeMirror oz
-
+helloWorldCollection Oz
+ % Hello World in Oz
+ 
+ functor
+ import
+   System
+   Application
+ define
+   {System.showInfo "Hello World!"}
+   {Application.exit 0}
+ end
 rosettaCode Oz
 
-visualParadigm false
-centralPackageRepositoryCount 0
 rijuRepl https://riju.codes/oz
  example
   functor
@@ -147,5 +139,11 @@ rijuRepl https://riju.codes/oz
       {Application.exit 0}
   end
   
-lineCommentToken %
-domainName mozart.github.io
+
+tiobe Oz
+hopl 2327
+
+fileType text
+wordRank 2692
+isOpenSource true
+centralPackageRepositoryCount 0

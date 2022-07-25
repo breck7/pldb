@@ -1,6 +1,8 @@
 title Pure Data
 appeared 1996
 type pl
+website http://puredata.info/
+domainName puredata.info
 
 wikipedia https://en.wikipedia.org/wiki/Pure_Data
  related linux ios android freebsd max opengl c python scheme lua tcl
@@ -16,15 +18,6 @@ githubLanguage Pure Data
  fileExtensions pd
  trendingProjectsCount 0
 
-website http://puredata.info/
-fileType text
-isOpenSource true
-
-tiobe Pure Data
-
-hopl 6444
-
-centralPackageRepositoryCount 0
 leachim6 Pure Data
  filepath p/Pure Data.pd
  example
@@ -33,4 +26,10 @@ leachim6 Pure Data
   #X msg 127 86 Hello World;
   #X connect 1 0 0 0;
   
-domainName puredata.info
+
+tiobe Pure Data
+hopl 6444
+
+fileType text
+isOpenSource true
+centralPackageRepositoryCount 0

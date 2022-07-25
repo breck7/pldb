@@ -1,6 +1,15 @@
 title QBasic
 appeared 1991
 type pl
+standsFor Quick Beginners All purpose Symbolic Instruction Code
+
+features
+ hasPrintDebugging true
+ hasStrings true
+  "Hello world"
+
+printToken PRINT
+stringToken "
 
 wikipedia https://en.wikipedia.org/wiki/QBasic
  related quickbasic gw-basic qb64 microsoft-small-basic linux freebsd
@@ -12,23 +21,10 @@ wikipedia https://en.wikipedia.org/wiki/QBasic
  revisionCount 921
  appeared 1991
 
-standsFor Quick Beginners All purpose Symbolic Instruction Code
-
-replit qbasic
-
-fileType text
-isOpenSource false
-
-rosettaCode QBasic
-
-centralPackageRepositoryCount 0
-goodreads
- title|year|author|goodreadsId|rating|ratings|reviews
- QBASIC Programming for Dummies|1994|Douglas Hergert|223808|4.33|6|1
- QBASIC Programming|1991|Peter Norton|2177275|4.00|1|0
 pygmentsHighlighter QBasic
  filename basic.py
  fileExtensions BAS bas
+
 leachim6 QBasic
  filepath q/QBasic.bas
  fileExtensions bas
@@ -36,9 +32,15 @@ leachim6 QBasic
   
   PRINT "Hello World"
   
-printToken PRINT
-features
- hasPrintDebugging true
- hasStrings true
-  "Hello world"
-stringToken "
+rosettaCode QBasic
+
+replit qbasic
+
+goodreads
+ title|year|author|goodreadsId|rating|ratings|reviews
+ QBASIC Programming for Dummies|1994|Douglas Hergert|223808|4.33|6|1
+ QBASIC Programming|1991|Peter Norton|2177275|4.00|1|0
+
+fileType text
+isOpenSource false
+centralPackageRepositoryCount 0

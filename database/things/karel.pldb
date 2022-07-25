@@ -1,6 +1,16 @@
 title Karel
 appeared 1981
 type pl
+creators Richard E. Pattis
+country United States
+
+features
+ hasPrintDebugging true
+ hasStrings true
+  "Hello world"
+
+printToken WRITE
+stringToken "
 
 wikipedia https://en.wikipedia.org/wiki/Karel_(programming_language)
  example
@@ -32,13 +42,6 @@ wikipedia https://en.wikipedia.org/wiki/Karel_(programming_language)
  revisionCount 205
  appeared 1981
 
-country United States
-fileType text
-
-hopl 958
-
-centralPackageRepositoryCount 0
-creators Richard E. Pattis
 leachim6 Karel
  filepath k/Karel.kl
  fileExtensions kl
@@ -48,9 +51,8 @@ leachim6 Karel
     WRITE("Hello World", CR)
   END hello_world
   
-printToken WRITE
-features
- hasPrintDebugging true
- hasStrings true
-  "Hello world"
-stringToken "
+
+hopl 958
+
+fileType text
+centralPackageRepositoryCount 0

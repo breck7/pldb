@@ -1,13 +1,18 @@
 title Vim script
 appeared 1991
 type pl
+description Vim script (also called vimscript or VimL) is the scripting language built into Vim.
 aka vimscript
 aka VimL
-rijuRepl https://riju.codes/vimscript
- example
-  :echo "Hello, world!"
+aka vimscript viml
 
-description Vim script (also called vimscript or VimL) is the scripting language built into Vim.
+features
+ hasPrintDebugging true
+ hasStrings true
+  "Hello world"
+
+printToken echo
+stringToken "
 
 wikipedia https://en.wikipedia.org/wiki/Vim_script
  example
@@ -58,6 +63,9 @@ githubLanguage Vim script
   mattn emmet-vim https://github.com/mattn.png https://github.com/mattn/emmet-vim "Vim script" #199f4b 4782 358 44 "emmet for vim: http://emmet.io/"
  trendingProjectsCount 24
 
+pygmentsHighlighter VimL
+ filename textedit.py
+ fileExtensions vim .vimrc .exrc .gvimrc _vimrc _exrc _gvimrc vimrc gvimrc
 linguistGrammarRepo https://github.com/Alhadis/language-viml
  firstCommit 2014
  lastCommit 2018
@@ -111,22 +119,17 @@ linguistGrammarRepo https://github.com/Alhadis/language-viml
   "
   " 1.  Download and install Tim Pope's
 
-aka vimscript viml
-fileType text
-isOpenSource true
-centralPackageRepositoryCount 0
 leachim6 VimScript
  filepath v/VimScript.vim
  fileExtensions vim
  example
   echo "Hello World"
   
-printToken echo
-features
- hasPrintDebugging true
- hasStrings true
-  "Hello world"
-pygmentsHighlighter VimL
- filename textedit.py
- fileExtensions vim .vimrc .exrc .gvimrc _vimrc _exrc _gvimrc vimrc gvimrc
-stringToken "
+
+rijuRepl https://riju.codes/vimscript
+ example
+  :echo "Hello, world!"
+
+fileType text
+isOpenSource true
+centralPackageRepositoryCount 0

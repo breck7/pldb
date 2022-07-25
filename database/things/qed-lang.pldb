@@ -1,6 +1,8 @@
 title qed-lang
 appeared 2015
 type pl
+website https://qed-lang.org
+domainName qed-lang.org
 
 example
  void Button(string text) {
@@ -13,8 +15,4 @@ example
  Button("Quit");
  return(0);
 
-website https://qed-lang.org
-
 twitter qedlang
-
-domainName qed-lang.org

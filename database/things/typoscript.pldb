@@ -1,16 +1,19 @@
 title Typoscript
-description TypoScript is a syntax for defining information in a hierarchical structure using simple ASCII text content.
+appeared 1998
 type dataNotation
+description TypoScript is a syntax for defining information in a hierarchical structure using simple ASCII text content.
 website http://docs.typo3.org/typo3cms/TyposcriptReference/
+reference https://en.wikipedia.org/wiki/TYPO3
+
 writtenIn php
+
 example
  asdf {
   zxcvbnm = uiop
   backgroundColor = blue
   backgroundColor.transparency = 95%
  }
-reference https://en.wikipedia.org/wiki/TYPO3
-appeared 1998
+
 pygmentsHighlighter TypoScript
  filename typoscript.py
  fileExtensions typoscript

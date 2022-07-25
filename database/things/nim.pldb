@@ -2,6 +2,16 @@ title Nim
 appeared 2008
 type pl
 creators Andreas Rumpf
+description Nim was called Nimrod until 2014. Nimrod is a relatively new programming language that is severely underrated in comparison to other new programming languages, with extensive metaprogramming support, generics and exception tracking built in, optional garbage collection, and rivals C in performance. And it can compile to C, C++, Objective-C, or JavaScript. Nimrod is a statically typed, imperative programming language that tries to give the programmer ultimate power without compromises on runtime efficiency. This means it focuses on compile-time mechanisms in all their various forms.
+website https://nim-lang.org/
+reference https://irclogs.nim-lang.org/01-07-2012.html
+aka nimrod
+fileExtensions nim
+domainName nim-lang.org
+ registered 2014
+
+compilesTo c cpp objective-c javascript
+writtenIn nim
 
 features
  hasComments true
@@ -19,9 +29,21 @@ features
  hasStrings true
   "Hello world"
 
-compilesTo c cpp objective-c javascript
+lineCommentToken #
+multiLineCommentTokens #[ ]#
+printToken echo
+assignmentToken =
+stringToken "
 
-description Nim was called Nimrod until 2014. Nimrod is a relatively new programming language that is severely underrated in comparison to other new programming languages, with extensive metaprogramming support, generics and exception tracking built in, optional garbage collection, and rivals C in performance. And it can compile to C, C++, Objective-C, or JavaScript. Nimrod is a statically typed, imperative programming language that tries to give the programmer ultimate power without compromises on runtime efficiency. This means it focuses on compile-time mechanisms in all their various forms.
+githubRepo https://github.com/nim-lang/Nim
+ stars 13062
+ forks 1318
+ subscribers 304
+ created 2010
+ updated 2022
+ firstCommit 2008
+ description Nim is a statically typed compiled systems programming language. It combines successful concepts from mature languages like Python, Ada and Modula. Its design focuses on efficiency, expressiveness, and elegance (in that order of priority).
+ issues 2287
 
 wikipedia https://en.wikipedia.org/wiki/Nim_(programming_language)
  example
@@ -41,23 +63,6 @@ wikipedia https://en.wikipedia.org/wiki/Nim_(programming_language)
 githubLanguage Nim
  fileExtensions nim nimrod
  trendingProjectsCount 0
-
-githubRepo https://github.com/nim-lang/Nim
- stars 13062
- forks 1318
- subscribers 304
- created 2010
- updated 2022
- firstCommit 2008
- description Nim is a statically typed compiled systems programming language. It combines successful concepts from mature languages like Python, Ada and Modula. Its design focuses on efficiency, expressiveness, and elegance (in that order of priority).
- issues 2287
-
-helloWorldCollection Nim
- # Hello world in Nim
- 
- echo "Hello World"
-
-lineCommentToken #
 
 linguistGrammarRepo https://github.com/Varriount/NimLime
  firstCommit 2013
@@ -86,49 +91,37 @@ linguistGrammarRepo https://github.com/Varriount/NimLime
   define:booting
   define:noDocgen
   
-
-website https://nim-lang.org/
-reference https://irclogs.nim-lang.org/01-07-2012.html
-aka nimrod
-
-tryItOnline nim
-
-twitter nim_lang
-
-fileExtensions nim
-fileType text
-isOpenSource true
-
-tiobe Nim
+languageServerProtocolProject https://github.com/PMunch/nimlsp
+ writtenIn nim
 
 projectEuler Nim
  memberCount
   2019 10
   2022 36
-
-quineRelay Nim
-
-ubuntuPackage nim
-
-rosettaCode Nim
-
-writtenIn nim
-languageServerProtocolProject https://github.com/PMunch/nimlsp
- writtenIn nim
-packageRepository https://nimble.directory/
-rijuRepl https://riju.codes/nim
- example
-  echo "Hello, world!"
-  
+helloWorldCollection Nim
+ # Hello world in Nim
+ 
+ echo "Hello World"
 leachim6 Nim
  filepath n/Nim.nim
  fileExtensions nim
  example
   echo("Hello World")
   
-printToken echo
-multiLineCommentTokens #[ ]#
-domainName nim-lang.org
- registered 2014
-assignmentToken =
-stringToken "
+rosettaCode Nim
+quineRelay Nim
+
+rijuRepl https://riju.codes/nim
+ example
+  echo "Hello, world!"
+  
+tryItOnline nim
+
+tiobe Nim
+
+packageRepository https://nimble.directory/
+
+twitter nim_lang
+ubuntuPackage nim
+fileType text
+isOpenSource true

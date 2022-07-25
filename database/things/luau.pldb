@@ -1,6 +1,17 @@
 title luau
 appeared 2020
 type pl
+description Luau is a fast, small, safe, gradually typed embeddable scripting language derived from Lua. It is used by Roblox game developers to write game code, as well as by Roblox engineers to implement large parts of the user-facing application code as well as portions of the editor (Roblox Studio) as plugins.
+website https://roblox.github.io/luau/
+
+features
+ hasLineComments true
+  -- A comment
+ hasComments true
+  -- A comment
+ hasSemanticIndentation false
+
+lineCommentToken --
 
 example
  type Point = { x: number, y: number }
@@ -9,13 +20,3 @@ example
  
  print(p.x, p.y)
  -- print(p.z) results in a type error
-
-description Luau is a fast, small, safe, gradually typed embeddable scripting language derived from Lua. It is used by Roblox game developers to write game code, as well as by Roblox engineers to implement large parts of the user-facing application code as well as portions of the editor (Roblox Studio) as plugins.
-website https://roblox.github.io/luau/
-lineCommentToken --
-features
- hasLineComments true
-  -- A comment
- hasComments true
-  -- A comment
- hasSemanticIndentation false

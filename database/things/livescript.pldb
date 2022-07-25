@@ -1,6 +1,7 @@
 title LiveScript
 appeared 2011
 type pl
+creators Jeremy Ashkenas and Satoshi Murakami and George Zahariev
 
 features
  hasSemanticIndentation true
@@ -14,6 +15,11 @@ features
   */
  hasStrings true
   "Hello world"
+
+lineCommentToken #
+multiLineCommentTokens /* */
+printToken console.log
+stringToken "
 
 wikipedia https://en.wikipedia.org/wiki/LiveScript
  related javascript haskell coffeescript f-sharp elixir
@@ -30,6 +36,9 @@ githubLanguage LiveScript
  fileExtensions ls _ls
  trendingProjectsCount 0
 
+pygmentsHighlighter LiveScript
+ filename javascript.py
+ fileExtensions ls
 linguistGrammarRepo https://github.com/paulmillr/LiveScript.tmbundle
  firstCommit 2010
  lastCommit 2017
@@ -74,28 +83,20 @@ linguistGrammarRepo https://github.com/paulmillr/LiveScript.tmbundle
   /* Comment */
   
 
-fileType text
-isOpenSource true
-
-rosettaCode LiveScript
-
-jupyterKernel https://github.com/p2edwards/jp-livescript
-centralPackageRepositoryCount 0
-rijuRepl https://riju.codes/livescript
- example
-  console.log "Hello, world!"
-  
-creators Jeremy Ashkenas and Satoshi Murakami and George Zahariev
-lineCommentToken #
-pygmentsHighlighter LiveScript
- filename javascript.py
- fileExtensions ls
 leachim6 LiveScript
  filepath l/LiveScript.ls
  fileExtensions ls
  example
   console.log "Hello World"
   
-printToken console.log
-multiLineCommentTokens /* */
-stringToken "
+rosettaCode LiveScript
+
+rijuRepl https://riju.codes/livescript
+ example
+  console.log "Hello, world!"
+  
+
+jupyterKernel https://github.com/p2edwards/jp-livescript
+fileType text
+isOpenSource true
+centralPackageRepositoryCount 0

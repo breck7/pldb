@@ -2,6 +2,9 @@ title Arc
 appeared 2001
 type pl
 creators Paul Graham and Robert Morris
+webRepl http://tryarc.org/
+country United States
+
 related bel
 
 features
@@ -9,6 +12,9 @@ features
  hasPrintDebugging true
  hasStrings true
   "Hello world"
+
+printToken prn
+stringToken "
 
 wikipedia https://en.wikipedia.org/wiki/Arc_(programming_language)
  example
@@ -29,24 +35,17 @@ githubLanguage Arc
  fileExtensions arc
  trendingProjectsCount 0
 
-country United States
-fileType text
-wordRank 5327
-
-tiobe Arc
-
-webRepl http://tryarc.org/
-
-hopl 3986
-
-rosettaCode Arc
-
-centralPackageRepositoryCount 0
 leachim6 ARC
  filepath a/ARC.arc
  fileExtensions arc
  example
   (prn "Hello World")
   
-printToken prn
-stringToken "
+rosettaCode Arc
+
+tiobe Arc
+hopl 3986
+
+fileType text
+wordRank 5327
+centralPackageRepositoryCount 0

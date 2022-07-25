@@ -1,5 +1,19 @@
 title Virgil
+appeared 2006
 type pl
+creators Ben L. Titzer
+reference https://news.ycombinator.com/item?id=31954053
+
+features
+ hasPrintDebugging true
+
+printToken System.puts
+
+example
+ def main() {
+    System.puts("Hello World!\n");
+ }
+
 githubRepo https://github.com/titzer/virgil
  firstCommit 2012
  stars 323
@@ -9,13 +23,7 @@ githubRepo https://github.com/titzer/virgil
  updated 2022
  description A fast and lightweight native programming language
  issues 5
-appeared 2006
-creators Ben L. Titzer
-example
- def main() {
-    System.puts("Hello World!\n");
- }
-reference https://news.ycombinator.com/item?id=31954053
+
 leachim6 Virgil
  filepath v/Virgil.v3
  fileExtensions v3
@@ -24,6 +32,3 @@ leachim6 Virgil
           System.puts("Hello World\n");
    }
   
-printToken System.puts
-features
- hasPrintDebugging true

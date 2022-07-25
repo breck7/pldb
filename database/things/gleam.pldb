@@ -1,7 +1,12 @@
 title gleam
 appeared 2016
 type pl
+creators Louis Pilfold
 description Gleam is a statically typed functional programming language for building scalable concurrent systems. It compiles to Erlang and has straightforward interop with other BEAM languages such as Erlang, Elixir and LFE.
+website https://gleam.run/
+reference https://news.ycombinator.com/item?id=22902462
+domainName gleam.run
+ registered 2019
 
 githubRepo https://github.com/lpil/gleam
  firstCommit 2016
@@ -12,9 +17,3 @@ githubRepo https://github.com/lpil/gleam
  updated 2022
  description ⭐️ A friendly language for building type-safe, scalable systems!
  issues 79
-
-website https://gleam.run/
-reference https://news.ycombinator.com/item?id=22902462
-creators Louis Pilfold
-domainName gleam.run
- registered 2019

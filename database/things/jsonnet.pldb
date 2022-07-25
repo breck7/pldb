@@ -1,6 +1,26 @@
 title Jsonnet
 appeared 2014
 type dataNotation
+creators Dave Cunningham
+website https://jsonnet.org/
+webRepl https://jsonnet.org/
+domainName jsonnet.org
+ registered 2015
+
+supersetOf json
+
+features
+ hasLineComments true
+  // A comment
+ hasMultiLineComments true
+  /* A comment
+  */
+ hasComments true
+  // A comment
+ hasSemanticIndentation false
+
+lineCommentToken //
+multiLineCommentTokens /* */
 
 example
  // A function that returns an object.
@@ -15,21 +35,3 @@ example
 
 githubRepo http://github.com/google/jsonnet
  firstCommit 2014
-
-website https://jsonnet.org/
-supersetOf json
-webRepl https://jsonnet.org/
-multiLineCommentTokens /* */
-lineCommentToken //
-creators Dave Cunningham
-features
- hasLineComments true
-  // A comment
- hasMultiLineComments true
-  /* A comment
-  */
- hasComments true
-  // A comment
- hasSemanticIndentation false
-domainName jsonnet.org
- registered 2015

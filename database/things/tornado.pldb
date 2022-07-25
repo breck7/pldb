@@ -1,6 +1,8 @@
 title tornado
 appeared 2009
 type template
+website http://www.tornadoweb.org/en/stable/guide/templates.html
+corporateDevelopers Facebook
 
 example
  <html>
@@ -26,11 +28,8 @@ githubRepo https://github.com/tornadoweb/tornado
  description Tornado is a Python web framework and asynchronous networking library, originally developed at FriendFeed.
  issues 230
 
-website http://www.tornadoweb.org/en/stable/guide/templates.html
-fileType text
-isOpenSource true
-
 codeMirror tornado
 
+fileType text
+isOpenSource true
 centralPackageRepositoryCount 0
-corporateDevelopers Facebook

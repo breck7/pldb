@@ -2,24 +2,14 @@ title Lisaac
 appeared 2003
 type pl
 
+features
+ hasPrintDebugging true
+
+printToken .print
+
 wikipedia https://en.wikipedia.org/wiki/Lisaac
  dailyPageViews -1
 
-
-rosettaCode Lisaac
-
-centralPackageRepositoryCount 0
-rijuRepl https://riju.codes/lisaac
- example
-  Section Header
-    + name := MAIN;
-  
-  Section Public
-    - main <-
-    (
-      "Hello, world!\n".print;
-    );
-  
 leachim6 Lisaac
  filepath l/Lisaac.li
  fileExtensions li
@@ -40,6 +30,18 @@ leachim6 Lisaac
   		"Hello World !\n".print;
   	);
   
-printToken .print
-features
- hasPrintDebugging true
+rosettaCode Lisaac
+
+rijuRepl https://riju.codes/lisaac
+ example
+  Section Header
+    + name := MAIN;
+  
+  Section Public
+    - main <-
+    (
+      "Hello, world!\n".print;
+    );
+  
+
+centralPackageRepositoryCount 0

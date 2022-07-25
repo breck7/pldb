@@ -1,6 +1,13 @@
 title Euphoria
 appeared 1993
 type pl
+creators Jeremy Cowgar and Robert Craig and Matt Lewis and Derek Parnell
+website http://openeuphoria.org
+standsFor End User Programming Hierarchial Objects for Robust Interpreted Applications
+fileExtensions e ex exw edb
+country Canada
+domainName openeuphoria.org
+ registered 2007
 
 features
  hasComments true
@@ -10,6 +17,10 @@ features
  hasSemanticIndentation false
  hasStrings true
   "Hello world"
+
+lineCommentToken --
+printToken puts
+stringToken "
 
 wikipedia https://en.wikipedia.org/wiki/Euphoria_(programming_language)
  example
@@ -32,44 +43,31 @@ wikipedia https://en.wikipedia.org/wiki/Euphoria_(programming_language)
  appeared 1993
  fileExtensions e ex exw edb
 
+projectEuler Euphoria
+ memberCount
+  2019 3
+  2022 8
 helloWorldCollection End User Programming Hierarchial Objects for Robust Interpreted Applications
  -- Hello World in Euphoria
  
  puts(1, "Hello World!\n")
  
-
-website http://openeuphoria.org
-standsFor End User Programming Hierarchial Objects for Robust Interpreted Applications
-country Canada
-fileExtensions e ex exw edb
-fileType text
-isOpenSource true
-
-tiobe Euphoria
-
-projectEuler Euphoria
- memberCount
-  2019 3
-  2022 8
-
-hopl 2020
-
-rosettaCode Euphoria
-
-centralPackageRepositoryCount 0
-rijuRepl https://riju.codes/euphoria
- example
-  puts(1, "Hello, world!\n")
-  
-creators Jeremy Cowgar and Robert Craig and Matt Lewis and Derek Parnell
-lineCommentToken --
 leachim6 Euphoria
  filepath e/Euphoria.ex
  fileExtensions ex
  example
   puts(1, "Hello World")
   
-printToken puts
-domainName openeuphoria.org
- registered 2007
-stringToken "
+rosettaCode Euphoria
+
+rijuRepl https://riju.codes/euphoria
+ example
+  puts(1, "Hello, world!\n")
+  
+
+tiobe Euphoria
+hopl 2020
+
+fileType text
+isOpenSource true
+centralPackageRepositoryCount 0

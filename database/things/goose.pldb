@@ -1,6 +1,8 @@
 title goose
 appeared 2018
 type pl
+description Goose is a programming language in development that aims at being (yet another) c++ alternative.
+reference https://www.reddit.com/r/ProgrammingLanguages/comments/ex7hpp/february_2020_monthly_what_are_you_working_on/fgdshb4/
 
 example
  uint(32) lomarf( uint(32) a, uint(32) b )
@@ -9,6 +11,3 @@ example
  {
      return a - b
  }
-
-description Goose is a programming language in development that aims at being (yet another) c++ alternative.
-reference https://www.reddit.com/r/ProgrammingLanguages/comments/ex7hpp/february_2020_monthly_what_are_you_working_on/fgdshb4/

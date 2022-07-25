@@ -1,6 +1,14 @@
 title Gnuplot
 appeared 1986
 type pl
+website http://gnuplot.info/
+domainName gnuplot.info
+ registered 2002
+
+features
+ hasPrintDebugging true
+
+printToken print
 
 wikipedia https://en.wikipedia.org/wiki/Gnuplot
  example
@@ -22,6 +30,9 @@ githubLanguage Gnuplot
  fileExtensions gp gnu gnuplot plot plt
  trendingProjectsCount 0
 
+pygmentsHighlighter Gnuplot
+ filename graphics.py
+ fileExtensions plot plt
 linguistGrammarRepo https://github.com/mattfoster/gnuplot-tmbundle
  firstCommit 2007
  lastCommit 2015
@@ -45,30 +56,17 @@ linguistGrammarRepo https://github.com/mattfoster/gnuplot-tmbundle
   plot 'rates100.dat' pt 7 notitle
   
 
-website http://gnuplot.info/
-
-tryItOnline gnuplot
-
-fileType text
-isOpenSource true
-
+rosettaCode Gnuplot
 quineRelay Gnuplot
 
-ubuntuPackage gnuplot
-
-rosettaCode Gnuplot
-
-jupyterKernel https://github.com/has2k1/gnuplot_kernel
-centralPackageRepositoryCount 0
 rijuRepl https://riju.codes/gnuplot
  example
   print "Hello, world!"
   
-pygmentsHighlighter Gnuplot
- filename graphics.py
- fileExtensions plot plt
-printToken print
-features
- hasPrintDebugging true
-domainName gnuplot.info
- registered 2002
+tryItOnline gnuplot
+
+ubuntuPackage gnuplot
+jupyterKernel https://github.com/has2k1/gnuplot_kernel
+fileType text
+isOpenSource true
+centralPackageRepositoryCount 0

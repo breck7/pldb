@@ -1,6 +1,10 @@
 title Clean
 appeared 1987
 type pl
+website http://clean.cs.ru.nl
+fileExtensions icl dcl abc sapl
+country Netherlands
+domainName clean.cs.ru.nl
 
 features
  hasComments true
@@ -9,6 +13,9 @@ features
  hasSemanticIndentation false
  hasStrings true
   "Hello world"
+
+lineCommentToken //
+stringToken "
 
 wikipedia https://en.wikipedia.org/wiki/Clean_(programming_language)
  example
@@ -29,15 +36,9 @@ githubLanguage Clean
  fileExtensions icl dcl
  trendingProjectsCount 0
 
-helloWorldCollection Clean
- // Hello World in Clean
- 
- module hello
- 
- Start :: String
- Start = "Hello World!\n"
- 
-
+pygmentsHighlighter Clean
+ filename clean.py
+ fileExtensions icl dcl
 linguistGrammarRepo https://github.com/timjs/atom-language-clean.git
  firstCommit 2016
  lastCommit 2017
@@ -56,22 +57,24 @@ linguistGrammarRepo https://github.com/timjs/atom-language-clean.git
   
   
 
-website http://clean.cs.ru.nl
-
-tryItOnline clean
-
-country Netherlands
-fileExtensions icl dcl abc sapl
-fileType text
-wordRank 1809
-
-tiobe Clean
-
-hopl 1305
-
+helloWorldCollection Clean
+ // Hello World in Clean
+ 
+ module hello
+ 
+ Start :: String
+ Start = "Hello World!\n"
+ 
+leachim6 Clean
+ filepath c/Clean.icl
+ fileExtensions icl
+ example
+  module hello
+  Start :: {#Char}
+  Start = "Hello World"
+  
 rosettaCode Clean
 
-centralPackageRepositoryCount 0
 rijuRepl https://riju.codes/clean
  example
   module main
@@ -88,17 +91,11 @@ rijuRepl https://riju.codes/clean
  fileExtensions icl dcl abc
  website https://clean.cs.ru.nl/Clean
  githubRepo https://gitlab.science.ru.nl/clean-compiler-and-rts/compiler
-lineCommentToken //
-pygmentsHighlighter Clean
- filename clean.py
- fileExtensions icl dcl
-leachim6 Clean
- filepath c/Clean.icl
- fileExtensions icl
- example
-  module hello
-  Start :: {#Char}
-  Start = "Hello World"
-  
-domainName clean.cs.ru.nl
-stringToken "
+tryItOnline clean
+
+tiobe Clean
+hopl 1305
+
+fileType text
+wordRank 1809
+centralPackageRepositoryCount 0

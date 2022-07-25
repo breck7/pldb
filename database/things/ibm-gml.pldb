@@ -2,6 +2,17 @@ title GML
 appeared 1969
 type xmlFormat
 creators Charles Goldfarb and Edward Mosher and Raymond Lorie
+standsFor IBM Generalised Markup Language
+country United States
+corporateDevelopers IBM
+
+features
+ hasPrintDebugging true
+ hasStrings true
+  "Hello world"
+
+printToken draw_text
+stringToken "
 
 wikipedia https://en.wikipedia.org/wiki/IBM_Generalized_Markup_Language
  related script sgml xml ipf
@@ -13,24 +24,15 @@ wikipedia https://en.wikipedia.org/wiki/IBM_Generalized_Markup_Language
  revisionCount 56
  appeared 1969
 
-standsFor IBM Generalised Markup Language
-country United States
-fileType text
-corporateDevelopers IBM
-
-hopl 6352
-
 antlr https://github.com/antlr/grammars-v4/tree/master/gml
 
-centralPackageRepositoryCount 0
 leachim6 GML
  filepath g/GML.gml
  fileExtensions gml
  example
   draw_text(1, 1, "Hello World");
-printToken draw_text
-features
- hasPrintDebugging true
- hasStrings true
-  "Hello world"
-stringToken "
+
+hopl 6352
+
+fileType text
+centralPackageRepositoryCount 0

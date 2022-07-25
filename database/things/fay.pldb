@@ -1,6 +1,10 @@
 title fay
 appeared 2012
 type pl
+creators Chris Done
+website https://github.com/faylang/fay/wiki
+
+compilesTo javascript
 
 example
  {-# LANGUAGE EmptyDataDecls #-}
@@ -40,12 +44,7 @@ githubRepo https://github.com/faylang/fay
  description A proper subset of Haskell that compiles to JavaScript
  issues 24
 
-website https://github.com/faylang/fay/wiki
-
 twitter fayhaskell
-
 fileType text
-compilesTo javascript
 isOpenSource true
 centralPackageRepositoryCount 0
-creators Chris Done

@@ -3,4 +3,5 @@ appeared 2015
 type ir
 description Abstract. SPIR-V is a new platform-independent intermediate language. It is a self-contained, fully specified, binary format for representing graphical-shader stages and compute kernels for multiple APIs. Physically, it is a stream of 32-bit words. Logically, it is a header and a linear stream of instructions. These encode, first, a set of annotations and decorations, and second a collection of functions. Each function encodes a control-flow graph (CFG) of basic blocks, with additional instructions to preserve source-code structured flow control. Load/store instructions are used to access declared variables, which includes all input/output (IO). Intermediate results bypassing load/store use single static-assignment (SSA) representation. Data objects are represented logically, with hierarchical type information: There is no flattening of aggregates or assignment to physical register banks, etc. Selectable addressing models establish whether general pointers may be used, or if memory access is purely logical.
 reference https://www.khronos.org/registry/spir-v/papers/WhitePaper.html
+
 related spir

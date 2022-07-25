@@ -1,6 +1,13 @@
 title NewtonScript
 appeared 1993
 type pl
+creators Walter Smith
+
+features
+ hasStrings true
+  "Hello world"
+
+stringToken "
 
 wikipedia https://en.wikipedia.org/wiki/NewtonScript
  related self dylan smalltalk javascript lisp lua io
@@ -12,19 +19,6 @@ wikipedia https://en.wikipedia.org/wiki/NewtonScript
  dailyPageViews 16
  appeared 1993
 
-fileType text
-
-hopl 1278
-
-rosettaCode NewtonScript
-
-centralPackageRepositoryCount 0
-creators Walter Smith
-goodreads
- title|year|author|goodreadsId|rating|ratings|reviews
- Programming for the Newton: Software Development with Newtonscript|1994|Julie McKeehan|2172147|0.0|0|0
- Programming for the Newton®: Software Development with Newtonscript™||Julie McKeehan|59333740|0.0|0|0
- Prototype-Based Programming: Prototype-Based Programming Languages, JavaScript, Self, Rebol, Newtonscript, Lua, Moo, ActionScript, Falcon|2011|Source Wikipedia|17750077|0.0|0|0
 leachim6 NewtonScript
  filepath n/NewtonScript.nwt
  fileExtensions nwt
@@ -45,7 +39,15 @@ leachim6 NewtonScript
       debug: "textview"
      };
   
-stringToken "
-features
- hasStrings true
-  "Hello world"
+rosettaCode NewtonScript
+
+goodreads
+ title|year|author|goodreadsId|rating|ratings|reviews
+ Programming for the Newton: Software Development with Newtonscript|1994|Julie McKeehan|2172147|0.0|0|0
+ Programming for the Newton®: Software Development with Newtonscript™||Julie McKeehan|59333740|0.0|0|0
+ Prototype-Based Programming: Prototype-Based Programming Languages, JavaScript, Self, Rebol, Newtonscript, Lua, Moo, ActionScript, Falcon|2011|Source Wikipedia|17750077|0.0|0|0
+
+hopl 1278
+
+fileType text
+centralPackageRepositoryCount 0

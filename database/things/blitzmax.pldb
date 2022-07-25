@@ -5,10 +5,6 @@ type pl
 features
  hasPointers true
 
-githubLanguage BlitzMax
- fileExtensions bmx
- trendingProjectsCount 0
-
 githubRepo https://github.com/blitz-research/blitzmax
  firstCommit 2014
  stars 141
@@ -19,6 +15,13 @@ githubRepo https://github.com/blitz-research/blitzmax
  description BlitzMax
  issues 7
 
+githubLanguage BlitzMax
+ fileExtensions bmx
+ trendingProjectsCount 0
+
+pygmentsHighlighter BlitzMax
+ filename basic.py
+ fileExtensions bmx
 linguistGrammarRepo https://github.com/textmate/blitzmax.tmbundle
  firstCommit 2009
  lastCommit 2016
@@ -52,17 +55,14 @@ linguistGrammarRepo https://github.com/textmate/blitzmax.tmbundle
   	my.A()
   ?
 
-fileType text
-isOpenSource true
-
 rosettaCode BlitzMax
 
-centralPackageRepositoryCount 0
 goodreads
  title|year|author|goodreadsId|rating|ratings|reviews
  Blitzmax for Absolute Beginners: Games Programming for the Absolute Beginner||Sloan Kelly|53255227|0.0|0|0
  Games Programming For The Absolute Beginner With Blitzmax||Sloan Kelly|2493016|0.0|0|0
  Games Programming for the Absolute Beginner with BlitzMax Kindle Edition|2011|Sloan Kelly|27446641|5.00|1|0
-pygmentsHighlighter BlitzMax
- filename basic.py
- fileExtensions bmx
+
+fileType text
+isOpenSource true
+centralPackageRepositoryCount 0

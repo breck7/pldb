@@ -2,6 +2,14 @@ title Basic-256
 appeared 2007
 type pl
 
+features
+ hasPrintDebugging true
+ hasStrings true
+  "Hello world"
+
+printToken Print
+stringToken "
+
 wikipedia https://en.wikipedia.org/wiki/Basic-256
  related basic
  summary Basic-256 is a project to learn the basics of computer programming. The project started in 2007 inspired by the article “Why Johnny can't code” by David Brin. Its main focus is to provide a simple and comprehensive environment for middle/high school students to learn the basics of computer programming. Basic-256 is a simple version of BASIC, the code editor, text output window and graphics editor window are all visible in the same screen. However the successive versions haven been adding new features, namely:  Files (Eof, Size)- Version 9.4d Mouse events - Version 9.4d Sprites handling - Version 0.9.6n Database functions - Version 0.9.6y Network - Version 0.9.6.31 Real Functions and Subroutines - Version 0.9.9.1Complete documentation is available in English, Russian, Dutch, Spanish and Portuguese.
@@ -12,16 +20,11 @@ wikipedia https://en.wikipedia.org/wiki/Basic-256
  dailyPageViews 9
  appeared 2014
 
-isOpenSource true
-centralPackageRepositoryCount 0
 leachim6 BASIC 256
  filepath b/BASIC 256.kbs
  example
   Print "Hello World"
   
-printToken Print
-features
- hasPrintDebugging true
- hasStrings true
-  "Hello world"
-stringToken "
+
+isOpenSource true
+centralPackageRepositoryCount 0

@@ -2,6 +2,10 @@ title JSON
 appeared 2001
 type dataNotation
 creators Douglas Crockford
+website https://www.json.org/
+reference https://twobithistory.org/2017/09/21/the-rise-and-rise-of-json.html
+domainName json.org
+ registered 2000
 
 features
  canWriteToDisk false
@@ -42,6 +46,10 @@ githubLanguage JSON
  fileExtensions json avsc geojson gltf JSON-tmLanguage jsonl tfstate tfstatebackup topojson webapp webmanifest yy yyp
  trendingProjectsCount 0
 
+antlr https://github.com/antlr/grammars-v4/tree/master/json
+pygmentsHighlighter JSON
+ filename data.py
+ fileExtensions json Pipfile.lock
 linguistGrammarRepo https://github.com/textmate/json.tmbundle
  firstCommit 2007
  lastCommit 2016
@@ -56,28 +64,20 @@ linguistGrammarRepo https://github.com/textmate/json.tmbundle
           "tags": ["Bar","Eek"],
           "stock": { "warehouse":300, "retail":20 }
   }
-
-website https://www.json.org/
-reference https://twobithistory.org/2017/09/21/the-rise-and-rise-of-json.html
-fileType text
-linkedInSkill json
- 2018 335550
-
-antlr https://github.com/antlr/grammars-v4/tree/master/json
-
-indeedJobs json developer
- 2017 5872
 languageServerProtocolProject https://www.npmjs.com/package/vscode-json-languageserver
  writtenIn typescript
-centralPackageRepositoryCount 0
-pygmentsHighlighter JSON
- filename data.py
- fileExtensions json Pipfile.lock
+
 leachim6 JSON
  filepath j/JSON.json
  fileExtensions json
  example
   { "hello": "world" }
   
-domainName json.org
- registered 2000
+
+indeedJobs json developer
+ 2017 5872
+linkedInSkill json
+ 2018 335550
+
+fileType text
+centralPackageRepositoryCount 0

@@ -1,12 +1,20 @@
 title JFlex
 appeared 2003
 type grammarLanguage
-
 description JFlex is a lexical analyzer generator (also known as scanner generator) for Java, written in Java.
+website http://jflex.de/
+domainName jflex.de
 
-githubLanguage JFlex
- fileExtensions flex jflex
- trendingProjectsCount 0
+features
+ hasMultiLineComments true
+  /* A comment
+  */
+ hasComments true
+  /* A comment
+  */
+ hasSemanticIndentation false
+
+multiLineCommentTokens /* */
 
 githubRepo https://github.com/jflex-de/jflex
  firstCommit 2003
@@ -17,6 +25,10 @@ githubRepo https://github.com/jflex-de/jflex
  updated 2022
  description The fast scanner generator for Java™ with full Unicode support
  issues 49
+
+githubLanguage JFlex
+ fileExtensions flex jflex
+ trendingProjectsCount 0
 
 linguistGrammarRepo https://github.com/jflex-de/jflex.tmbundle.git
  firstCommit 2015
@@ -101,17 +113,6 @@ linguistGrammarRepo https://github.com/jflex-de/jflex.tmbundle.git
   /* comments */
   Comment = {Tradi
 
-website http://jflex.de/
 fileType text
 isOpenSource true
 centralPackageRepositoryCount 0
-multiLineCommentTokens /* */
-features
- hasMultiLineComments true
-  /* A comment
-  */
- hasComments true
-  /* A comment
-  */
- hasSemanticIndentation false
-domainName jflex.de

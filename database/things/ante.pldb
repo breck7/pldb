@@ -1,8 +1,16 @@
 title Ante
 appeared 2015
 type pl
-
+creators Jake Fecher
 description <a href='https://github.com/jfecher/ante'>Ante</a> is a compiled systems language focusing on providing extreme extensibility through the use of a compile-time API. Using such an API, compiler extensions can be created within the program itself, allowing for the addition of a garbage collector, ownership system, type system changes, etc.
+website http://antelang.org
+domainName antelang.org
+ registered 2018
+
+features
+ hasPrintDebugging true
+
+printToken print
 
 githubRepo https://github.com/jfecher/ante
  stars 1420
@@ -14,26 +22,19 @@ githubRepo https://github.com/jfecher/ante
  description A safe, easy systems language
  issues 17
 
-website http://antelang.org
-
-tryItOnline ante
-
-fileType text
-isOpenSource true
-centralPackageRepositoryCount 0
-rijuRepl https://riju.codes/ante
- example
-  print "Hello, world!"
-  
-creators Jake Fecher
 leachim6 Ante
  filepath a/Ante.ante
  fileExtensions ante
  example
   9♦8♥J♦A♦2♣3♥7♠J♦A♦7♦J♦J♦A♦3♦J♦5♥6♦4♥J♥A♥6♠6♠J♥A♦8♦J♦A♦8♠J♦A♦3♦J♦A♦6♠J♦A♦8♠J♦A♥3♦2♠J♥A♥2♣6♠J♥
   
-printToken print
-features
- hasPrintDebugging true
-domainName antelang.org
- registered 2018
+
+rijuRepl https://riju.codes/ante
+ example
+  print "Hello, world!"
+  
+tryItOnline ante
+
+fileType text
+isOpenSource true
+centralPackageRepositoryCount 0

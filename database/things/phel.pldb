@@ -2,6 +2,11 @@ title Phel
 appeared 2020
 type pl
 creators Jens Haase
+website https://phel-lang.org/
+domainName phel-lang.org
+ registered 2020
+
+compilesTo php
 
 example
   (ns hello-world\boot)
@@ -17,8 +22,5 @@ githubRepo https://github.com/phel-lang/phel-lang
  updated 2022
  description Phel is a functional programming language that compiles to PHP. It is a dialect of Lisp inspired by Clojure and Janet.
  issues 16
-compilesTo php
-website https://phel-lang.org/
-domainName phel-lang.org
- registered 2020
+
 twitter phel_lang

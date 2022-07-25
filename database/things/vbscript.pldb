@@ -1,12 +1,18 @@
 title VBScript
 appeared 1996
 type pl
+website https://msdn.microsoft.com/en-us/library/t0aew7h6.aspx
+fileExtensions vbs vbe wsf wsc
+country United States
+corporateDevelopers Microsoft
 
 features
  hasComments true
  hasLineComments true
   ' A comment
  hasSemanticIndentation false
+
+lineCommentToken '
 
 wikipedia https://en.wikipedia.org/wiki/VBScript
  example
@@ -38,38 +44,31 @@ wikipedia https://en.wikipedia.org/wiki/VBScript
  appeared 1996
  fileExtensions vbs vbe wsf wsc
 
+codeMirror vbscript
+pygmentsHighlighter VBScript
+ filename basic.py
+ fileExtensions vbs VBS
+
 helloWorldCollection VBScript
  ' Hello World in VBScript (Windows Scripting Host)
  msgbox "Hello, World!"
  
-
-website https://msdn.microsoft.com/en-us/library/t0aew7h6.aspx
-country United States
-fileExtensions vbs vbe wsf wsc
-fileType text
-
-tiobe VBScript
- currentRank 34
-
-hopl 5226
+rosettaCode VBScript
 
 subreddit vbscript
  memberCount
   2017 231
   2022 916
 
-codeMirror vbscript
-
-rosettaCode VBScript
-
-corporateDevelopers Microsoft
-lineCommentToken '
-centralPackageRepositoryCount 0
 goodreads
  title|year|author|goodreadsId|rating|ratings|reviews
  Vbscript Programmer's Reference|2004|Adrian W. Kingsley-Hughes|1634718|3.62|37|2
  Microsoft Wsh and VBScript Programming for the Absolute Beginner|2003|Jerry Lee Ford Jr.|6400783|3.22|32|3
  VBScript for Dummies|1996|John Walkenbach|2376231|0.0|0|0
-pygmentsHighlighter VBScript
- filename basic.py
- fileExtensions vbs VBS
+
+tiobe VBScript
+ currentRank 34
+hopl 5226
+
+fileType text
+centralPackageRepositoryCount 0

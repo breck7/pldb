@@ -1,6 +1,20 @@
 title Ninja
 appeared 2012
 type template
+creators Evan Martin
+website https://ninja-build.org/
+domainName ninja-build.org
+ registered 2014
+
+githubRepo https://github.com/ninja-build/ninja
+ firstCommit 2010
+ stars 8228
+ forks 1307
+ subscribers 249
+ created 2011
+ updated 2022
+ description a small build system with a focus on speed
+ issues 336
 
 wikipedia https://en.wikipedia.org/wiki/Ninja_(build_system)
  related python cmake meson
@@ -16,26 +30,12 @@ githubLanguage Ninja
  fileExtensions ninja
  trendingProjectsCount 0
 
-githubRepo https://github.com/ninja-build/ninja
- firstCommit 2010
- stars 8228
- forks 1307
- subscribers 249
- created 2011
- updated 2022
- description a small build system with a focus on speed
- issues 336
-
 linguistGrammarRepo https://github.com/khyo/language-ninja
  firstCommit 2015
  lastCommit 2016
  committerCount 3
  commitCount 20
 
-website https://ninja-build.org/
 fileType text
 isOpenSource true
 centralPackageRepositoryCount 0
-creators Evan Martin
-domainName ninja-build.org
- registered 2014

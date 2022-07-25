@@ -1,6 +1,16 @@
 title OptimJ
 appeared 2006
 type pl
+corporateDevelopers Ateji
+
+features
+ hasLineComments true
+  // A comment
+ hasComments true
+  // A comment
+ hasSemanticIndentation false
+
+lineCommentToken //
 
 wikipedia https://en.wikipedia.org/wiki/OptimJ
  example
@@ -16,11 +26,3 @@ wikipedia https://en.wikipedia.org/wiki/OptimJ
  appeared 2006
 
 centralPackageRepositoryCount 0
-corporateDevelopers Ateji
-lineCommentToken //
-features
- hasLineComments true
-  // A comment
- hasComments true
-  // A comment
- hasSemanticIndentation false

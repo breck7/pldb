@@ -1,6 +1,19 @@
 title Vue
 appeared 2014
 type framework
+website https://vuejs.org
+domainName vuejs.org
+ registered 2013
+
+githubRepo https://github.com/vuejs/vue
+ firstCommit 2016
+ stars 197318
+ forks 32394
+ subscribers 6120
+ created 2013
+ updated 2022
+ description 🖖 Vue.js is a progressive, incrementally-adoptable JavaScript framework for building UI on the web.
+ issues 568
 
 wikipedia https://en.wikipedia.org/wiki/Vue.js
  example
@@ -49,16 +62,6 @@ githubLanguage Vue
   hinesboy mavonEditor https://github.com/hinesboy.png https://github.com/hinesboy/mavonEditor Vue #2c3e50 2991 496 138 "mavonEditor - A markdown editor based on Vue that supports a variety of personalized features"
  trendingProjectsCount 26
 
-githubRepo https://github.com/vuejs/vue
- firstCommit 2016
- stars 197318
- forks 32394
- subscribers 6120
- created 2013
- updated 2022
- description 🖖 Vue.js is a progressive, incrementally-adoptable JavaScript framework for building UI on the web.
- issues 568
-
 linguistGrammarRepo https://github.com/vuejs/vue-syntax-highlight
  firstCommit 2014
  lastCommit 2018
@@ -88,15 +91,9 @@ linguistGrammarRepo https://github.com/vuejs/vue-syntax-highlight
   }
   </script>
   
-
-website https://vuejs.org
-
-twitter vuejs
-
-fileType text
-isOpenSource true
 languageServerProtocolProject https://github.com/vuejs/vetur
  writtenIn typescript
+
 leachim6 Vue
  filepath v/Vue.js
  fileExtensions js
@@ -113,5 +110,7 @@ leachim6 Vue
   })
   </script>
   
-domainName vuejs.org
- registered 2013
+
+twitter vuejs
+fileType text
+isOpenSource true

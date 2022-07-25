@@ -1,6 +1,21 @@
 title lispyscript
 appeared 2012
 type pl
+creators Santosh Rajan
+description A javascript With Lispy Syntax And Macros!
+website http://lispyscript.com
+reference http://web.archive.org/web/20180123072250/http://lispyscript.com/
+domainName lispyscript.com
+ registered 2021
+
+features
+ hasLineComments true
+  ; A comment
+ hasComments true
+  ; A comment
+ hasSemanticIndentation false
+
+lineCommentToken ;
 
 example
  ;; test with and without the "./"
@@ -14,8 +29,6 @@ example
  ;;(var k (require "./square"))
  (console.log (k 10))
 
-description A javascript With Lispy Syntax And Macros!
-
 githubRepo https://github.com/santoshrajan/lispyscript
  firstCommit 2012
  stars 565
@@ -25,16 +38,3 @@ githubRepo https://github.com/santoshrajan/lispyscript
  updated 2022
  description A javascript with Lispy syntax and macros
  issues 18
-
-website http://lispyscript.com
-reference http://web.archive.org/web/20180123072250/http://lispyscript.com/
-creators Santosh Rajan
-lineCommentToken ;
-features
- hasLineComments true
-  ; A comment
- hasComments true
-  ; A comment
- hasSemanticIndentation false
-domainName lispyscript.com
- registered 2021

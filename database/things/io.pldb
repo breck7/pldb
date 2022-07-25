@@ -2,6 +2,12 @@ title Io
 appeared 2002
 type pl
 creators Steve Dekorte
+website https://iolanguage.org/
+reference https://news.ycombinator.com/item?id=8867575
+domainName iolanguage.org
+ registered 2009
+
+visualParadigm false
 
 features
  hasComments true
@@ -11,6 +17,10 @@ features
  hasPrintDebugging true
  hasSemanticIndentation false
  hasAssignment true
+
+lineCommentToken //
+printToken print
+assignmentToken :=
 
 wikipedia https://en.wikipedia.org/wiki/Io_(programming_language)
  example
@@ -32,26 +42,23 @@ githubLanguage Io
  fileExtensions io
  trendingProjectsCount 0
 
+pygmentsHighlighter Io
+ filename iolang.py
+ fileExtensions io
 linguistGrammarRepo https://github.com/textmate/io.tmbundle
  firstCommit 2005
  lastCommit 2014
  committerCount 6
  commitCount 33
 
-reference https://news.ycombinator.com/item?id=8867575
-
-tryItOnline io
-
-fileType text
-wordRank 9022
-
-hopl 7112
-
+leachim6 Io
+ filepath i/Io.Io
+ fileExtensions Io
+ example
+  "Hello World\n" print
+  
 rosettaCode Io
-website https://iolanguage.org/
-lineCommentToken //
-visualParadigm false
-centralPackageRepositoryCount 0
+
 rijuRepl https://riju.codes/io
  example
   "Hello, world!" println
@@ -60,17 +67,11 @@ rijuRepl https://riju.codes/io
  fileExtensions io
  website https://iolanguage.org/
  githubRepo https://github.com/IoLanguage/io
-pygmentsHighlighter Io
- filename iolang.py
- fileExtensions io
-leachim6 Io
- filepath i/Io.Io
- fileExtensions Io
- example
-  "Hello World\n" print
-  
-printToken print
-domainName iolanguage.org
- registered 2009
-assignmentToken :=
+tryItOnline io
+
+hopl 7112
+
 twitter iolanguage
+fileType text
+wordRank 9022
+centralPackageRepositoryCount 0

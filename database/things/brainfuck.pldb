@@ -2,9 +2,8 @@ title Brainfuck
 appeared 1993
 type pl
 creators Urban Müller
-aka brainf
-
 description A nsfw esolang.
+aka brainf
 
 wikipedia https://en.wikipedia.org/wiki/Brainfuck
  example
@@ -50,12 +49,11 @@ githubLanguage Brainfuck
  fileExtensions b bf
  trendingProjectsCount 0
 
-helloWorldCollection Brainfuck
- Hello World in Brainfuck
- 
- ++++++++++[>+++++++>++++++++++>+++<<<-]>++.>+.+++++++
- ..+++.>++.<<+++++++++++++++.>.+++.------.--------.>+.
-
+antlr https://github.com/antlr/grammars-v4/tree/master/brainfuck
+codeMirror brainfuck
+pygmentsHighlighter Brainfuck
+ filename esoteric.py
+ fileExtensions bf b
 linguistGrammarRepo https://github.com/Drako/SublimeBrainfuck
  firstCommit 2013
  lastCommit 2017
@@ -67,23 +65,18 @@ linguistGrammarRepo https://github.com/Drako/SublimeBrainfuck
   
   ++++++++[>++++[>++>+++>+++>+<<<<-]>+>+>->>+[<]<-]>>.>---.+++++++..+++.>>.<-.<.+++.------.--------.>>+.>++.
 
-
-replit brainfuck
-
-tryItOnline brainfuck
-
-fileType text
-
+helloWorldCollection Brainfuck
+ Hello World in Brainfuck
+ 
+ ++++++++++[>+++++++>++++++++++>+++<<<-]>++.>+.+++++++
+ ..+++.>++.<<+++++++++++++++.>.+++.------.--------.>+.
+leachim6 Brainfuck
+ filepath b/Brainfuck.bf
+ fileExtensions bf
+ example
+  -[------->+<]>-.-[->+++++<]>++.+++++++..+++.[--->+<]>-----.---[->+++<]>.-[--->+<]>---.+++.------.--------.
 quineRelay Brainfuck
 
-ubuntuPackage bf
-
-codeMirror brainfuck
-
-antlr https://github.com/antlr/grammars-v4/tree/master/brainfuck
-
-jupyterKernel https://github.com/robbielynch/ibrainfuck
-centralPackageRepositoryCount 0
 rijuRepl https://riju.codes/brainf
  example
   ++++++++
@@ -118,11 +111,10 @@ rijuRepl https://riju.codes/brainf
  description Famous esoteric programming language created in 1993 by Urban Müller
  fileExtensions b bf
  githubRepo https://github.com/andreabolognani/beef
-pygmentsHighlighter Brainfuck
- filename esoteric.py
- fileExtensions bf b
-leachim6 Brainfuck
- filepath b/Brainfuck.bf
- fileExtensions bf
- example
-  -[------->+<]>-.-[->+++++<]>++.+++++++..+++.[--->+<]>-----.---[->+++<]>.-[--->+<]>---.+++.------.--------.
+replit brainfuck
+tryItOnline brainfuck
+
+ubuntuPackage bf
+jupyterKernel https://github.com/robbielynch/ibrainfuck
+fileType text
+centralPackageRepositoryCount 0

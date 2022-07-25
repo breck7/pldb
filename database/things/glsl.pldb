@@ -16,6 +16,9 @@ githubLanguage GLSL
  fileExtensions glsl fp frag frg fs fsh fshader geo geom glslv gshader shader tesc tese vert vrx vsh vshader
  trendingProjectsCount 0
 
+pygmentsHighlighter GLSL
+ filename graphics.py
+ fileExtensions vert frag geo
 linguistGrammarRepo https://github.com/euler0/sublime-glsl
  firstCommit 2012
  lastCommit 2017
@@ -29,16 +32,12 @@ linguistGrammarRepo https://github.com/euler0/sublime-glsl
   {
   	gl_FragColor = v_color;
   }
-
-fileType text
-
-tiobe GLSL
+languageServerProtocolProject https://github.com/svenstaro/glsl-language-server
+ writtenIn cpp
 
 rosettaCode GLSL
 
-languageServerProtocolProject https://github.com/svenstaro/glsl-language-server
- writtenIn cpp
+tiobe GLSL
+
+fileType text
 centralPackageRepositoryCount 0
-pygmentsHighlighter GLSL
- filename graphics.py
- fileExtensions vert frag geo

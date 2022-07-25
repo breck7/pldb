@@ -1,13 +1,13 @@
 title Emerald
 appeared 1987
 type pl
-
 reference https://semanticscholar.org/paper/c58d5d68aff6a596c5aade80fe87c2ea9074d8f2
-wordRank 9032
 
-hopl 1320
+features
+ hasPrintDebugging true
 
-centralPackageRepositoryCount 0
+printToken stdout.putString
+
 leachim6 Emerald
  filepath e/Emerald.m
  fileExtensions m
@@ -17,6 +17,8 @@ leachim6 Emerald
   		stdout.putString["Hello World\n"]
   	end initially
   end mainProgram
-printToken stdout.putString
-features
- hasPrintDebugging true
+
+hopl 1320
+
+wordRank 9032
+centralPackageRepositoryCount 0

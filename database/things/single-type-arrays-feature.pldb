@@ -1,6 +1,7 @@
 title Single-Type Arrays
 type feature
-psuedoExample const pldbRanks: int[]
 description An array data structure that only can hold items of the same type.
 reference https://en.wikipedia.org/wiki/Array_data_structure
+
+psuedoExample const pldbRanks: int[]
 featureKeyword hasSingleTypeArrays

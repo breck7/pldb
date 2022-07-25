@@ -1,13 +1,13 @@
 title IBM Informix-4GL
 appeared 1985
 type queryLanguage
+description It includes embedded SQL, a report writer language, a form language, and a limited set of imperative capabilities (functions, if and while statements, and supports arrays etc.). The language is particularly close to a natural language and is easy to learn and use.
+corporateDevelopers IBM
 
 example
  SELECT UNIQUE city, state, zipcode, sname
  FROM customer, state
  WHERE customer.state = state.code
-
-description It includes embedded SQL, a report writer language, a form language, and a limited set of imperative capabilities (functions, if and while statements, and supports arrays etc.). The language is particularly close to a natural language and is easy to learn and use.
 
 wikipedia https://en.wikipedia.org/wiki/IBM_Informix-4GL
  related java
@@ -19,13 +19,12 @@ wikipedia https://en.wikipedia.org/wiki/IBM_Informix-4GL
  dailyPageViews 29
  appeared 1985
 
-fileType text
-
-hopl 3472
-
-corporateDevelopers IBM
-centralPackageRepositoryCount 0
 goodreads
  title|year|author|goodreadsId|rating|ratings|reviews
  Advanced Informix-4gl Programming|1995|Art Taylor|4510392|0.0|0|0
  Building Datablades for Informix Universal Server [With Contains Informix Datablades Developer's Kit]||Michael Keeler|20855954|0.0|0|0
+
+hopl 3472
+
+fileType text
+centralPackageRepositoryCount 0

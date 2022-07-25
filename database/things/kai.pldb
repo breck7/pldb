@@ -1,6 +1,22 @@
 title kai
 appeared 2016
 type pl
+description An expressive low level programming language
+website http://docs.kai-lang.org
+domainName docs.kai-lang.org
+
+features
+ hasLineComments true
+  // A comment
+ hasComments true
+  // A comment
+ hasMultiLineComments true
+  /* A comment
+  */
+ hasSemanticIndentation false
+
+lineCommentToken //
+multiLineCommentTokens /* */
 
 example
  /* // github.com/kai-language/issues/116
@@ -12,8 +28,6 @@ example
      a := bitcast(A) x
  } */
 
-description An expressive low level programming language
-
 githubRepo https://github.com/kai-language/kai
  firstCommit 2016
  stars 68
@@ -23,17 +37,3 @@ githubRepo https://github.com/kai-language/kai
  updated 2020
  description An expressive low level programming language
  issues 37
-
-website http://docs.kai-lang.org
-lineCommentToken //
-features
- hasLineComments true
-  // A comment
- hasComments true
-  // A comment
- hasMultiLineComments true
-  /* A comment
-  */
- hasSemanticIndentation false
-multiLineCommentTokens /* */
-domainName docs.kai-lang.org

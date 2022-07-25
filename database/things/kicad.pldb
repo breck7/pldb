@@ -1,6 +1,9 @@
 title KiCad Legacy Layout
 appeared 1992
 type application
+description KiCad writes all files in human readable ASCII. This makes manipulation by hand and scripting very easy.
+reference http://kicad-pcb.org/help/file-formats/d
+fileExtensions sch lib brd kicad_pcb kicad_wks kicad_mod
 
 example
  (kicad_pcb (version 3)
@@ -16,8 +19,6 @@ example
    (modules 2)
    (nets 3)
  ))
-
-description KiCad writes all files in human readable ASCII. This makes manipulation by hand and scripting very easy.
 
 wikipedia https://en.wikipedia.org/wiki/KiCad
  related linux freebsd gerber-image eagle opengl java vrml
@@ -150,8 +151,6 @@ linguistGrammarRepo https://github.com/Alhadis/language-pcb
   $EQUIPOT
   Na 9 "
 
-reference http://kicad-pcb.org/help/file-formats/d
-fileExtensions sch lib brd kicad_pcb kicad_wks kicad_mod
 fileType text
 isOpenSource true
 centralPackageRepositoryCount 0

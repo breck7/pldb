@@ -3,6 +3,17 @@ appeared 1995
 type schema
 standsFor Object Exchange Model
 
+related rdf
+
+features
+ hasLineComments true
+  // A comment
+ hasComments true
+  // A comment
+ hasSemanticIndentation false
+
+lineCommentToken //
+
 example
  <DB:: Eats { // A Sample Database
  <Restaurant {
@@ -26,12 +37,3 @@ wikipedia https://en.wikipedia.org/wiki/Object_Exchange_Model
  pageId 6366963
  dailyPageViews 6
  appeared 1995
-
-related rdf
-lineCommentToken //
-features
- hasLineComments true
-  // A comment
- hasComments true
-  // A comment
- hasSemanticIndentation false

@@ -1,29 +1,19 @@
 title Dhall
 appeared 2017
 type dataNotation
-
-webRepl https://dhall-lang.org/
-
-githubRepo https://github.com/dhall-lang/dhall-lang
- firstCommit 2017
- stars 3577
- forks 162
- subscribers 67
- created 2017
- updated 2022
- description Maintainable configuration files
- issues 127
-
 website https://dhall-lang.org/
+webRepl https://dhall-lang.org/
+domainName dhall-lang.org
 
-twitter dhall_lang
-
-rijuRepl https://riju.codes/dhall
- example
-  { output = "Hello, world!" }
-
+features
+ hasLineComments true
+  -- A comment
+ hasComments true
+  -- A comment
+ hasSemanticIndentation false
 
 lineCommentToken --
+
 example
  -- ./company.dhall
  
@@ -64,10 +54,18 @@ example
      , greetingPage = greetingPage
      }
 
-features
- hasLineComments true
-  -- A comment
- hasComments true
-  -- A comment
- hasSemanticIndentation false
-domainName dhall-lang.org
+githubRepo https://github.com/dhall-lang/dhall-lang
+ firstCommit 2017
+ stars 3577
+ forks 162
+ subscribers 67
+ created 2017
+ updated 2022
+ description Maintainable configuration files
+ issues 127
+
+rijuRepl https://riju.codes/dhall
+ example
+  { output = "Hello, world!" }
+
+twitter dhall_lang

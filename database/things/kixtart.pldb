@@ -1,6 +1,18 @@
 title KiXtart
 appeared 1991
 type pl
+website http://www.kixtart.org/
+domainName kixtart.org
+ registered 1999
+
+features
+ hasLineComments true
+  ; A comment
+ hasComments true
+  ; A comment
+ hasSemanticIndentation false
+
+lineCommentToken ;
 
 wikipedia https://en.wikipedia.org/wiki/KiXtart
  example
@@ -26,15 +38,5 @@ wikipedia https://en.wikipedia.org/wiki/KiXtart
  dailyPageViews 27
  appeared 1991
 
-website http://www.kixtart.org/
 fileType text
 centralPackageRepositoryCount 0
-lineCommentToken ;
-features
- hasLineComments true
-  ; A comment
- hasComments true
-  ; A comment
- hasSemanticIndentation false
-domainName kixtart.org
- registered 1999

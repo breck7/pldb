@@ -1,6 +1,19 @@
 title Cg
 appeared 2003
 type pl
+reference https://arxiv.org/pdf/cs/0302013.pdf
+standsFor C for Graphics
+country United States
+corporateDevelopers Nvidia
+
+features
+ hasLineComments true
+  // A comment
+ hasComments true
+  // A comment
+ hasSemanticIndentation false
+
+lineCommentToken //
 
 wikipedia https://en.wikipedia.org/wiki/Cg_(programming_language)
  example
@@ -33,22 +46,9 @@ wikipedia https://en.wikipedia.org/wiki/Cg_(programming_language)
  revisionCount 233
  appeared 2012
 
-reference https://arxiv.org/pdf/cs/0302013.pdf
-standsFor C for Graphics
-country United States
-fileType text
-wordRank 7928
-
 tiobe cg
-
 hopl 6204
 
-corporateDevelopers Nvidia
+fileType text
+wordRank 7928
 centralPackageRepositoryCount 0
-lineCommentToken //
-features
- hasLineComments true
-  // A comment
- hasComments true
-  // A comment
- hasSemanticIndentation false

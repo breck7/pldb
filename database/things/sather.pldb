@@ -2,6 +2,10 @@ title Sather
 appeared 1990
 type pl
 creators Steve Omohundro
+website https://www.gnu.org/software/sather/
+country United States
+
+visualParadigm false
 
 features
  hasComments true
@@ -9,6 +13,9 @@ features
   -- A comment
  hasPrintDebugging true
  hasSemanticIndentation false
+
+lineCommentToken --
+printToken #OUT
 
 wikipedia https://en.wikipedia.org/wiki/Sather
  example
@@ -39,20 +46,6 @@ helloWorldCollection Sather
         main is #OUT + "Hello World!\n" end
      end
  
-
-website https://www.gnu.org/software/sather/
-country United States
-fileType text
-
-tiobe Sather
-
-hopl 1659
-
-rosettaCode Sather
-
-visualParadigm false
-centralPackageRepositoryCount 0
-lineCommentToken --
 leachim6 Sather
  filepath s/Sather.sa
  fileExtensions sa
@@ -65,4 +58,10 @@ leachim6 Sather
      end
   end
   
-printToken #OUT
+rosettaCode Sather
+
+tiobe Sather
+hopl 1659
+
+fileType text
+centralPackageRepositoryCount 0

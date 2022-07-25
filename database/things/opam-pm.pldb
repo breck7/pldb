@@ -2,7 +2,8 @@ title opam-pm
 appeared 2012
 type packageManager
 website https://opam.ocaml.org/
-forLanguages ocaml
+domainName opam.ocaml.org
+
 packageCount 2224
 packageInstallCount 10000000
-domainName opam.ocaml.org
+forLanguages ocaml

@@ -2,14 +2,20 @@ title Reia
 appeared 2010
 type pl
 website http://reia-lang.org
-hackerNewsDiscussions
- id|title|url|time|timestamp|by|comments|score
- 1889905|Reia - Ruby's powerful syntax with Erlang concurrency and fault-tolerance|http://reia-lang.org/|2010-11-10 11:10:55 UTC|1289387455|rubyrescue|1|2
 domainName reia-lang.org
  registered 2008
+
+features
+ hasAssignment true
+ hasLineComments true
+  # A comment
+ hasComments true
+  # A comment
+
 lineCommentToken #
 printToken puts
 assignmentToken =
+
 example
  # Hello, world!
  "Hello, world!".puts()
@@ -81,9 +87,7 @@ example
  
  # List comprehensions
  doubled = [n * 2 for n in numbers] # doubled is [6,4,2]
-features
- hasAssignment true
- hasLineComments true
-  # A comment
- hasComments true
-  # A comment
+
+hackerNewsDiscussions
+ id|title|url|time|timestamp|by|comments|score
+ 1889905|Reia - Ruby's powerful syntax with Erlang concurrency and fault-tolerance|http://reia-lang.org/|2010-11-10 11:10:55 UTC|1289387455|rubyrescue|1|2

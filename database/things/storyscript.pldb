@@ -1,6 +1,19 @@
 title storyscript
 appeared 2017
 type pl
+description Storyscript is a language, editor, database, infra and community all-in-one. Create holistic apps, tools and workflows blazing fast that power your business.
+website https://storyscript.com/
+domainName storyscript.com
+ registered 2010
+
+features
+ hasLineComments true
+  # A comment
+ hasComments true
+  # A comment
+ hasSemanticIndentation false
+
+lineCommentToken #
 
 example
  ### 
@@ -54,8 +67,6 @@ example
  name(input:1)
  # >>> 1
 
-description Storyscript is a language, editor, database, infra and community all-in-one. Create holistic apps, tools and workflows blazing fast that power your business.
-
 githubRepo https://github.com/storyscript
  firstCommit 2017
  stars 303
@@ -66,16 +77,4 @@ githubRepo https://github.com/storyscript
  description The polyglot, cloud-native programming language for zero-devops deployments into Kubernetes.
  issues 169
 
-website https://storyscript.com/
-
 twitter storyscript_
-
-lineCommentToken #
-features
- hasLineComments true
-  # A comment
- hasComments true
-  # A comment
- hasSemanticIndentation false
-domainName storyscript.com
- registered 2010

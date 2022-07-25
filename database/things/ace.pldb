@@ -1,8 +1,14 @@
 title Ace Editor
-related codemirror monaco highlightjs pygments
+appeared 2010
 type editor
-webRepl https://ace.c9.io/build/kitchen-sink.html
+creators Fabian Jakobs
 description Ace is an embeddable code editor written in JavaScript. It matches the features and performance of native editors such as Sublime, Vim and TextMate. It can be easily embedded in any web page and JavaScript application. Ace is maintained as the primary editor for Cloud9 IDE and is the successor of the Mozilla Skywriter (Bespin) project.
+website https://ace.c9.io
+webRepl https://ace.c9.io/build/kitchen-sink.html
+domainName ace.c9.io
+
+related codemirror monaco highlightjs pygments
+
 githubRepo https://github.com/ajaxorg/ace
  firstCommit 2010
  stars 24621
@@ -12,7 +18,3 @@ githubRepo https://github.com/ajaxorg/ace
  updated 2022
  description Ace (Ajax.org Cloud9 Editor)
  issues 210
-website https://ace.c9.io
-appeared 2010
-creators Fabian Jakobs
-domainName ace.c9.io

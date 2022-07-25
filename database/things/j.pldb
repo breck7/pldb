@@ -2,6 +2,12 @@ title J
 appeared 1990
 type pl
 creators Kenneth E. Iverson and Roger Hui
+website http://www.jsoftware.com
+country United States
+domainName jsoftware.com
+ registered 1996
+
+visualParadigm false
 
 features
  hasComments true
@@ -11,6 +17,10 @@ features
  hasSemanticIndentation false
  hasStrings true
   'Hello world'
+
+lineCommentToken NB.
+printToken echo
+stringToken '
 
 wikipedia https://en.wikipedia.org/wiki/J_(programming_language)
  example
@@ -29,10 +39,9 @@ githubLanguage J
  fileExtensions ijs
  trendingProjectsCount 0
 
-helloWorldCollection J
- NB. Hello World in J
- 'Hello World' 1!:2(2)
-
+pygmentsHighlighter J
+ filename j.py
+ fileExtensions ijs
 linguistGrammarRepo https://github.com/tikkanz/JSyntax
  firstCommit 2014
  lastCommit 2018
@@ -45,37 +54,13 @@ linguistGrammarRepo https://github.com/tikkanz/JSyntax
   exit ''
   
 
-website http://www.jsoftware.com
-
-tryItOnline j
-
-country United States
-fileType text
-wordRank 417
-isOpenSource true
-
-tiobe J
-
 projectEuler APL/J/K
  memberCount
   2022 2478
   2019 332
-
-hopl 1558
-
-rosettaCode J
-
-lineCommentToken NB.
-visualParadigm false
-jupyterKernel https://github.com/martin-saurer/jkernel
-centralPackageRepositoryCount 0
-rijuRepl https://riju.codes/j
- example
-  echo 'Hello, world!'
-  
-pygmentsHighlighter J
- filename j.py
- fileExtensions ijs
+helloWorldCollection J
+ NB. Hello World in J
+ 'Hello World' 1!:2(2)
 leachim6 J
  filepath j/J.ijs
  fileExtensions ijs
@@ -84,7 +69,19 @@ leachim6 J
   echo 'Hello World'
   exit ''
   
-printToken echo
-domainName jsoftware.com
- registered 1996
-stringToken '
+rosettaCode J
+
+rijuRepl https://riju.codes/j
+ example
+  echo 'Hello, world!'
+  
+tryItOnline j
+
+tiobe J
+hopl 1558
+
+jupyterKernel https://github.com/martin-saurer/jkernel
+fileType text
+wordRank 417
+isOpenSource true
+centralPackageRepositoryCount 0

@@ -1,6 +1,23 @@
 title Bison
 appeared 1985
 type grammarLanguage
+website https://www.gnu.org/software/bison/
+reference https://github.com/babyraging/yash
+country United States
+corporateDevelopers GNU Project
+
+features
+ hasLineComments true
+  // A comment
+ hasMultiLineComments true
+  /* A comment
+  */
+ hasComments true
+  // A comment
+ hasSemanticIndentation false
+
+lineCommentToken //
+multiLineCommentTokens /* */
 
 example
  /* Reverse Polish Notation calculator. */
@@ -55,24 +72,8 @@ linguistGrammarRepo https://github.com/textmate/bison.tmbundle
  committerCount 2
  commitCount 2
 
-website https://www.gnu.org/software/bison/
-country United States
-fileType text
-isOpenSource true
-
 hopl 4653
 
-corporateDevelopers GNU Project
+fileType text
+isOpenSource true
 centralPackageRepositoryCount 0
-reference https://github.com/babyraging/yash
-lineCommentToken //
-multiLineCommentTokens /* */
-features
- hasLineComments true
-  // A comment
- hasMultiLineComments true
-  /* A comment
-  */
- hasComments true
-  // A comment
- hasSemanticIndentation false

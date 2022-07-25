@@ -2,6 +2,11 @@ title Eiffel
 appeared 1986
 type pl
 creators Bertrand Meyer
+website https://www.eiffel.org/
+reference https://www.eiffel.org/doc/eiffel/Eiffel_programming_language_syntax
+fileExtensions e
+domainName eiffel.org
+ registered 2001
 
 features
  hasPointers true
@@ -15,6 +20,10 @@ features
  hasAssignment true
  hasStrings true
   "Hello world"
+
+lineCommentToken --
+assignmentToken :=
+stringToken "
 
 wikipedia https://en.wikipedia.org/wiki/Eiffel_(programming_language)
  example
@@ -42,17 +51,10 @@ githubLanguage Eiffel
  fileExtensions e
  trendingProjectsCount 0
 
-helloWorldCollection Eiffel
- note "Hello World in Eiffel"
- class HELLO
- create run
- feature run
-        do
-                print ("Hello World!%N")
-        end
- end
- 
-
+codeMirror eiffel
+pygmentsHighlighter Eiffel
+ filename eiffel.py
+ fileExtensions e
 linguistGrammarRepo https://github.com/textmate/eiffel.tmbundle
  firstCommit 2006
  lastCommit 2011
@@ -103,26 +105,16 @@ linguistGrammarRepo https://github.com/textmate/eiffel.tmbundle
   end
   
 
-website https://www.eiffel.org/
-
-twitter eiffel_language
-
-fileExtensions e
-fileType text
-
-tiobe Eiffel
-
-hopl 1220
-
-codeMirror eiffel
-
-rosettaCode Eiffel
-reference https://www.eiffel.org/doc/eiffel/Eiffel_programming_language_syntax
-lineCommentToken --
-centralPackageRepositoryCount 0
-pygmentsHighlighter Eiffel
- filename eiffel.py
- fileExtensions e
+helloWorldCollection Eiffel
+ note "Hello World in Eiffel"
+ class HELLO
+ create run
+ feature run
+        do
+                print ("Hello World!%N")
+        end
+ end
+ 
 leachim6 Eiffel
  filepath e/Eiffel.eiff
  fileExtensions eiff
@@ -146,7 +138,11 @@ leachim6 Eiffel
   		end; -- run
   end; -- class HELLO
   
-domainName eiffel.org
- registered 2001
-assignmentToken :=
-stringToken "
+rosettaCode Eiffel
+
+tiobe Eiffel
+hopl 1220
+
+twitter eiffel_language
+fileType text
+centralPackageRepositoryCount 0

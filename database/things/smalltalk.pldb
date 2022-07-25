@@ -1,6 +1,8 @@
 title Smalltalk
 appeared 1972
 type pl
+creators Alan Kay and Dan Ingalls and Adele Goldberg
+country United States
 
 features
  hasMultipleDispatch true
@@ -17,6 +19,11 @@ features
  hasAssignment true
  hasStrings true
   'Hello world'
+
+multiLineCommentTokens "
+printToken displayNl
+assignmentToken :=
+stringToken '
 
 wikipedia https://en.wikipedia.org/wiki/Smalltalk
  example
@@ -38,6 +45,11 @@ githubLanguage Smalltalk
  fileExtensions st cs
  trendingProjectsCount 0
 
+antlr https://github.com/antlr/grammars-v4/tree/master/smalltalk
+codeMirror smalltalk
+pygmentsHighlighter Smalltalk
+ filename smalltalk.py
+ fileExtensions st
 linguistGrammarRepo https://github.com/tomas-stefano/smalltalk-tmbundle
  firstCommit 2011
  lastCommit 2017
@@ -49,49 +61,34 @@ linguistGrammarRepo https://github.com/tomas-stefano/smalltalk-tmbundle
   dataFunction
   	^ 'bars'
 
-country United States
-fileType text
-
-tiobe Smalltalk
-
 projectEuler Smalltalk
  memberCount
   2019 104
   2022 111
-
-hopl 828
-
-quineRelay Smalltalk
-
-ubuntuPackage gnu-smalltalk
-
-codeMirror smalltalk
-
-rosettaCode Smalltalk
-
-antlr https://github.com/antlr/grammars-v4/tree/master/smalltalk
-
-packageRepository http://smalltalkhub.com/
-rijuRepl https://riju.codes/smalltalk
- example
-  'Hello, world!' displayNl !
-  
-creators Alan Kay and Dan Ingalls and Adele Goldberg
-goodreads
- title|year|author|goodreadsId|rating|ratings|reviews
- SmallTalk 80: The Language|1989|Adele Goldberg|924473|4.20|40|3
- SmallTalk 80 Language: The Language and Its Implementation|1983|Adele Goldberg|1831608|4.68|37|0
- SmallTalk-80: The Interactive Programming Environment|1983|Adele Goldberg|1831611|4.33|6|0
-pygmentsHighlighter Smalltalk
- filename smalltalk.py
- fileExtensions st
 leachim6 SmallTalk
  filepath s/SmallTalk.sm
  fileExtensions sm
  example
   Transcript show: 'Hello World'.
   
-printToken displayNl
-multiLineCommentTokens "
-assignmentToken :=
-stringToken '
+rosettaCode Smalltalk
+quineRelay Smalltalk
+
+rijuRepl https://riju.codes/smalltalk
+ example
+  'Hello, world!' displayNl !
+  
+
+goodreads
+ title|year|author|goodreadsId|rating|ratings|reviews
+ SmallTalk 80: The Language|1989|Adele Goldberg|924473|4.20|40|3
+ SmallTalk 80 Language: The Language and Its Implementation|1983|Adele Goldberg|1831608|4.68|37|0
+ SmallTalk-80: The Interactive Programming Environment|1983|Adele Goldberg|1831611|4.33|6|0
+
+tiobe Smalltalk
+hopl 828
+
+packageRepository http://smalltalkhub.com/
+
+ubuntuPackage gnu-smalltalk
+fileType text

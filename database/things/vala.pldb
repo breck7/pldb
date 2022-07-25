@@ -1,10 +1,26 @@
 title Vala
 appeared 2006
 type pl
-compilesTo c
-
+website https://wiki.gnome.org/Projects/Vala
 reference https://vala.dev/
 reference https://news.ycombinator.com/item?id=32113825
+
+compilesTo c
+
+features
+ hasLineComments true
+  // A comment
+ hasComments true
+  // A comment
+ hasPrintDebugging true
+ hasSemanticIndentation false
+ hasStrings true
+  "Hello world"
+
+lineCommentToken //
+printToken stdout.printf
+stringToken "
+
 example
  int main (string[] args) {
     var app = new Gtk.Application(
@@ -43,41 +59,15 @@ githubLanguage Vala
  fileExtensions vala vapi
  trendingProjectsCount 0
 
+pygmentsHighlighter Vala
+ filename c_like.py
+ fileExtensions vala vapi
 linguistGrammarRepo https://github.com/technosophos/Vala-TMBundle
  firstCommit 2010
  lastCommit 2016
  committerCount 6
  commitCount 23
 
-website https://wiki.gnome.org/Projects/Vala
-
-tryItOnline vala
-
-fileType text
-isOpenSource true
-
-rosettaCode Vala
-
-centralPackageRepositoryCount 0
-rijuRepl https://riju.codes/vala
- example
-  void main () {
-      print("Hello, world!\n");
-  }
-  
-lineCommentToken //
-features
- hasLineComments true
-  // A comment
- hasComments true
-  // A comment
- hasPrintDebugging true
- hasSemanticIndentation false
- hasStrings true
-  "Hello world"
-pygmentsHighlighter Vala
- filename c_like.py
- fileExtensions vala vapi
 leachim6 Vala
  filepath v/Vala.vala
  fileExtensions vala
@@ -88,6 +78,17 @@ leachim6 Vala
   }
   
   
-printToken stdout.printf
-stringToken "
+rosettaCode Vala
+
+rijuRepl https://riju.codes/vala
+ example
+  void main () {
+      print("Hello, world!\n");
+  }
+  
+tryItOnline vala
+
 twitter vala_lang
+fileType text
+isOpenSource true
+centralPackageRepositoryCount 0

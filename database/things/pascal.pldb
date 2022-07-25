@@ -2,6 +2,7 @@ title Pascal
 appeared 1970
 type pl
 creators Niklaus Wirth
+fileExtensions pp pas inc
 
 features
  hasPolymorphism true
@@ -34,6 +35,13 @@ features
  hasAssignment true
  hasStrings true
  isCaseSensitive false
+
+lineCommentToken //
+multiLineCommentTokens { }
+printToken writeln
+assignmentToken :=
+stringToken '
+keywords * + - / := < <= <> = > >= and begin boolean break byte continue div do double else end false if integer longint mod not or repeat shl shortint shr single then true until while word xor
 
 wikipedia https://en.wikipedia.org/wiki/Pascal_(programming_language)
  example
@@ -68,15 +76,9 @@ githubLanguage Pascal
   stascorp rdpwrap https://github.com/stascorp.png https://github.com/stascorp/rdpwrap Pascal #E3F171 5646 1029 162 "RDP Wrapper Library"
  trendingProjectsCount 3
 
-helloWorldCollection Pascal
- {Hello World in Pascal}
- 
- program HelloWorld(output);
- begin
-   WriteLn('Hello World!');
- end.
- 
-
+antlr https://github.com/antlr/grammars-v4/tree/master/pascal
+monaco pascal
+codeMirror pascal
 linguistGrammarRepo https://github.com/textmate/pascal.tmbundle
  firstCommit 2005
  lastCommit 2016
@@ -112,38 +114,18 @@ linguistGrammarRepo https://github.com/textmate/pascal.tmbundle
   
   
 
-fileExtensions pp pas inc
-fileType text
-
-tiobe Pascal
-
 projectEuler Pascal
  memberCount
   2019 708
   2022 710
-
-hopl 520
-
-quineRelay Pascal
-
-ubuntuPackage fp-compiler
-
-codeMirror pascal
-
-rosettaCode Pascal
-
-antlr https://github.com/antlr/grammars-v4/tree/master/pascal
-
-keywords * + - / := < <= <> = > >= and begin boolean break byte continue div do double else end false if integer longint mod not or repeat shl shortint shr single then true until while word xor
-centralPackageRepositoryCount 0
-gdbSupport true
-rijuRepl https://riju.codes/pascal
- example
-  program Main;
-  begin
-     writeln('Hello, world!');
-  end.
-  
+helloWorldCollection Pascal
+ {Hello World in Pascal}
+ 
+ program HelloWorld(output);
+ begin
+   WriteLn('Hello World!');
+ end.
+ 
 leachim6 Pascal
  filepath p/Pascal.p
  fileExtensions p
@@ -153,9 +135,21 @@ leachim6 Pascal
           writeln('Hello World');
   end.
   
-printToken writeln
-assignmentToken :=
-lineCommentToken //
-monaco pascal
-multiLineCommentTokens { }
-stringToken '
+rosettaCode Pascal
+quineRelay Pascal
+
+rijuRepl https://riju.codes/pascal
+ example
+  program Main;
+  begin
+     writeln('Hello, world!');
+  end.
+  
+
+tiobe Pascal
+hopl 520
+
+ubuntuPackage fp-compiler
+gdbSupport true
+fileType text
+centralPackageRepositoryCount 0

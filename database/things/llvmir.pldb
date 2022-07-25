@@ -1,6 +1,15 @@
 title LLVM IR
 appeared 2003
 type ir
+website http://llvm.org/docs/LangRef.html
+aka llvm
+
+features
+ hasLineComments true
+  # A comment
+ hasComments true
+  # A comment
+ hasSemanticIndentation false
 
 lineCommentToken #
 
@@ -32,42 +41,10 @@ githubLanguage LLVM
   llvm-mirror llvm https://github.com/llvm-mirror.png https://github.com/llvm-mirror/llvm LLVM #185619 4073 1911 87 "Mirror of official llvm git repository located at http://llvm.org/git/llvm. Updated every five minutes."
  trendingProjectsCount 2
 
-website http://llvm.org/docs/LangRef.html
-
-tryItOnline llvm
-
-fileType text
-isOpenSource true
-linkedInSkill llvm
- 2018 2326
-
-quineRelay LLVM asm
-
-ubuntuPackage llvm
-
-centralPackageRepositoryCount 0
-aka llvm
-rijuRepl https://riju.codes/llvm
- example
-  @.str = private unnamed_addr constant [13 x i8] c"Hello, world!"
-  
-  declare i32 @puts(i8* nocapture) nounwind
-  
-  define i32 @main() {
-      %cast210 = getelementptr [13 x i8],[13 x i8]* @.str, i64 0, i64 0
-      call i32 @puts(i8* %cast210)
-      ret i32 0
-  }
-  
-features
- hasLineComments true
-  # A comment
- hasComments true
-  # A comment
- hasSemanticIndentation false
 pygmentsHighlighter LLVM
  filename asm.py
  fileExtensions ll
+
 leachim6 LLVM
  filepath l/LLVM.ll
  fileExtensions ll
@@ -83,3 +60,26 @@ leachim6 LLVM
   	ret i32 0
   }
   
+quineRelay LLVM asm
+
+rijuRepl https://riju.codes/llvm
+ example
+  @.str = private unnamed_addr constant [13 x i8] c"Hello, world!"
+  
+  declare i32 @puts(i8* nocapture) nounwind
+  
+  define i32 @main() {
+      %cast210 = getelementptr [13 x i8],[13 x i8]* @.str, i64 0, i64 0
+      call i32 @puts(i8* %cast210)
+      ret i32 0
+  }
+  
+tryItOnline llvm
+
+linkedInSkill llvm
+ 2018 2326
+
+ubuntuPackage llvm
+fileType text
+isOpenSource true
+centralPackageRepositoryCount 0

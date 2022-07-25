@@ -1,6 +1,10 @@
 title Simula
 appeared 1965
 type pl
+creators Ole-Johan Dahl
+country Norway
+
+visualParadigm false
 
 features
  hasComments true
@@ -11,6 +15,11 @@ features
  hasAssignment true
  hasStrings true
   "Hello world"
+
+lineCommentToken !
+printToken OutText
+assignmentToken :=
+stringToken "
 
 wikipedia https://en.wikipedia.org/wiki/Simula
  example
@@ -74,27 +83,6 @@ helloWorldCollection Simula
      OutImage;
  END
  
-
-
-tryItOnline simula
-
-country Norway
-fileType text
-
-tiobe Simula
-
-hopl 170
-
-rosettaCode Simula
-
-visualParadigm false
-centralPackageRepositoryCount 0
-creators Ole-Johan Dahl
-goodreads
- title|year|author|goodreadsId|rating|ratings|reviews
- Object-Oriented Programming with SIMULA|1989|Bjørn Kirkerud|3923315|0.0|0|0
- Anti-fragile ICT Systems (Simula SpringerBriefs on Computing)||Kjell Jørgen Hole|61222579|3.00|1|0
-lineCommentToken !
 leachim6 Simula
  filepath s/Simula.sim
  fileExtensions sim
@@ -103,6 +91,17 @@ leachim6 Simula
      OutText ("Hello World");
      Outimage;
   End;
-printToken OutText
-assignmentToken :=
-stringToken "
+rosettaCode Simula
+
+tryItOnline simula
+
+goodreads
+ title|year|author|goodreadsId|rating|ratings|reviews
+ Object-Oriented Programming with SIMULA|1989|Bjørn Kirkerud|3923315|0.0|0|0
+ Anti-fragile ICT Systems (Simula SpringerBriefs on Computing)||Kjell Jørgen Hole|61222579|3.00|1|0
+
+tiobe Simula
+hopl 170
+
+fileType text
+centralPackageRepositoryCount 0

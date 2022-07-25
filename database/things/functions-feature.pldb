@@ -1,7 +1,12 @@
 title Functions
 appeared 2007
 type feature
+aka routines
+aka procedures
+aka methods
+
 psuedoExample function computePLDBRanks() {}
+featureKeyword hasFunctions
 
 wikipedia https://en.wikipedia.org/wiki/Subroutine
  summary In computer programming, a subroutine is a sequence of program instructions that performs a specific task, packaged as a unit. This unit can then be used in programs wherever that particular task should be performed. Subprograms may be defined within programs, or separately in libraries that can be used by many programs.  In different programming languages, a subroutine may be called a procedure, a function, a routine, a method, or a subprogram.  The generic term  callable unit is sometimes used.The name subprogram suggests a subroutine behaves in much the same way as a computer program that is used as one step in a larger program or another subprogram. A subroutine is often coded so that it can be started several times and from several places during one execution of the program, including from other subroutines, and then branch back (return) to the next instruction after the call, once the subroutine's task is done. The idea of a subroutine was initially conceived by John Mauchly during his work on ENIAC, and recorded in a Harvard symposium in January of 1947 entitled 'Preparation of Problems for EDVAC-type Machines'.. Maurice Wilkes, David Wheeler, and Stanley Gill are generally credited with the formal invention of this concept, which they termed a closed subroutine, contrasted with an open subroutine or macro.Subroutines are a powerful programming tool, and the syntax of many programming languages includes support for writing and using them. Judicious use of subroutines (for example, through the structured programming approach) will often substantially reduce the cost of developing and maintaining a large program, while increasing its quality and reliability. Subroutines, often collected into libraries, are an important mechanism for sharing and trading software. The discipline of object-oriented programming is based on objects and methods (which are subroutines attached to these objects or object classes). In the compiling method called threaded code, the executable program is basically a sequence of subroutine calls.
@@ -9,8 +14,3 @@ wikipedia https://en.wikipedia.org/wiki/Subroutine
  pageId 32177451
  dailyPageViews 524
  appeared 2007
-
-aka routines
-aka procedures
-aka methods
-featureKeyword hasFunctions

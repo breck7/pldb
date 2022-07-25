@@ -2,6 +2,15 @@ title MVEL
 appeared 2003
 type pl
 
+features
+ hasLineComments true
+  // A comment
+ hasComments true
+  // A comment
+ hasSemanticIndentation false
+
+lineCommentToken //
+
 wikipedia https://en.wikipedia.org/wiki/MVEL
  example
   import java.util.*;
@@ -40,10 +49,3 @@ wikipedia https://en.wikipedia.org/wiki/MVEL
 
 isOpenSource true
 centralPackageRepositoryCount 0
-lineCommentToken //
-features
- hasLineComments true
-  // A comment
- hasComments true
-  // A comment
- hasSemanticIndentation false

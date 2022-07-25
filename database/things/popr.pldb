@@ -1,9 +1,15 @@
 title popr
 appeared 2012
 type pl
+description <a href='https://github.com/HackerFoo/poprc'>Popr</a> applies concatenative programming to types as well as values, striving for purity and correctness, and efficient execution.
+website https://popr.dev
+webRepl http://hackerfoo.com/eval.html
+domainName popr.dev
+ registered 2019
+firstAnnouncement http://hackerfoo.com/presentations/ttpl_slides.html
+announcementMethod webpage
 
-example
- 1 2 | 3 +
+compilesTo c
 
 features
  hasGarbageCollection false
@@ -14,7 +20,10 @@ features
   __ A comment
  hasSemanticIndentation false
 
-description <a href='https://github.com/HackerFoo/poprc'>Popr</a> applies concatenative programming to types as well as values, striving for purity and correctness, and efficient execution.
+lineCommentToken __
+
+example
+ 1 2 | 3 +
 
 githubRepo https://github.com/HackerFoo/poprc
  stars 194
@@ -26,14 +35,6 @@ githubRepo https://github.com/HackerFoo/poprc
  description A Compiler for the Popr Language
  issues 0
 
-firstAnnouncement http://hackerfoo.com/presentations/ttpl_slides.html
 fileType text
-compilesTo c
 isOpenSource true
-webRepl http://hackerfoo.com/eval.html
-announcementMethod webpage
-lineCommentToken __
 centralPackageRepositoryCount 0
-website https://popr.dev
-domainName popr.dev
- registered 2019

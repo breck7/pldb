@@ -1,10 +1,9 @@
 title Gradle
 appeared 2008
 type application
-
-githubLanguage Gradle
- fileExtensions gradle
- trendingProjectsCount 0
+website https://gradle.org
+domainName gradle.org
+ registered 2007
 
 githubRepo https://github.com/gradle/gradle
  firstCommit 2008
@@ -15,6 +14,10 @@ githubRepo https://github.com/gradle/gradle
  updated 2022
  description Adaptable, fast automation for all
  issues 1950
+
+githubLanguage Gradle
+ fileExtensions gradle
+ trendingProjectsCount 0
 
 linguistGrammarRepo https://github.com/alkemist/gradle.tmbundle
  firstCommit 2011
@@ -44,12 +47,7 @@ linguistGrammarRepo https://github.com/alkemist/gradle.tmbundle
       String greeter
   }
 
-website https://gradle.org
-
 twitter gradle
-
 fileType text
 isOpenSource true
 centralPackageRepositoryCount 0
-domainName gradle.org
- registered 2007

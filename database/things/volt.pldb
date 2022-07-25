@@ -1,12 +1,21 @@
 title Volt
 appeared 2011
 type pl
-
 description Volt is a C-inspired programming language that toes the line between expressiveness and control.
+website http://www.volt-lang.org/
+domainName volt-lang.org
+ registered 2013
 
-githubLanguage Volt
- fileExtensions volt
- trendingProjectsCount 0
+features
+ hasLineComments true
+  // A comment
+ hasComments true
+  // A comment
+ hasPrintDebugging true
+ hasSemanticIndentation false
+
+lineCommentToken //
+printToken printf
 
 githubRepo https://github.com/VoltLang/Volta
  firstCommit 2011
@@ -17,6 +26,10 @@ githubRepo https://github.com/VoltLang/Volta
  updated 2022
  description Compiler for the Volt Programming Language 
  issues 9
+
+githubLanguage Volt
+ fileExtensions volt
+ trendingProjectsCount 0
 
 linguistGrammarRepo https://github.com/textmate/d.tmbundle
  firstCommit 2006
@@ -120,19 +133,7 @@ linguistGrammarRepo https://github.com/textmate/d.tmbundle
   }
   
 
-website http://www.volt-lang.org/
 fileType text
 wordRank 7173
 isOpenSource true
 centralPackageRepositoryCount 0
-lineCommentToken //
-features
- hasLineComments true
-  // A comment
- hasComments true
-  // A comment
- hasPrintDebugging true
- hasSemanticIndentation false
-printToken printf
-domainName volt-lang.org
- registered 2013

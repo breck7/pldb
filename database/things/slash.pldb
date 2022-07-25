@@ -1,10 +1,8 @@
 title Slash
 appeared 2012
 type pl
-
-githubLanguage Slash
- fileExtensions sl
- trendingProjectsCount 0
+website http://slash-lang.org/
+domainName slash-lang.org
 
 githubRepo https://github.com/slash-lang/slash
  firstCommit 2012
@@ -16,6 +14,13 @@ githubRepo https://github.com/slash-lang/slash
  description A new language for the web
  issues 13
 
+githubLanguage Slash
+ fileExtensions sl
+ trendingProjectsCount 0
+
+pygmentsHighlighter Slash
+ filename slash.py
+ fileExtensions sla
 linguistGrammarRepo https://github.com/slash-lang/Slash.tmbundle
  firstCommit 2013
  lastCommit 2014
@@ -152,11 +157,6 @@ linguistGrammarRepo https://github.com/slash-lang/Slash.tmbundle
   ast.eval(Env.new);
   
 
-website http://slash-lang.org/
 fileType text
 isOpenSource true
 centralPackageRepositoryCount 0
-pygmentsHighlighter Slash
- filename slash.py
- fileExtensions sla
-domainName slash-lang.org

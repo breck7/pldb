@@ -1,18 +1,32 @@
 title Pony
 appeared 2012
 type pl
+website https://www.ponylang.org/
+domainName ponylang.org
+ registered 2015
+
+features
+ hasPrintDebugging true
+ hasStrings true
+  "Hello world"
+
+printToken env.out.print
+stringToken "
 
 example
  actor Main
   new create(env: Env) =>
     env.out.print("Hello, world!")
 
+githubRepo https://github.com/ponylang/
+
 githubLanguage Pony
  fileExtensions pony
  trendingProjectsCount 0
 
-githubRepo https://github.com/ponylang/
-
+pygmentsHighlighter Pony
+ filename pony.py
+ fileExtensions pony
 linguistGrammarRepo https://github.com/CausalityLtd/sublime-pony
  firstCommit 2014
  lastCommit 2018
@@ -25,26 +39,6 @@ linguistGrammarRepo https://github.com/CausalityLtd/sublime-pony
       env.out.print("Hello, world.")
   
 
-website https://www.ponylang.org/
-
-tryItOnline pony
-
-twitter ponylang
-
-fileType text
-isOpenSource true
-
-subreddit ponylang
- memberCount
-  2017 375
-  2022 672
-
-rosettaCode Pony
-
-centralPackageRepositoryCount 0
-pygmentsHighlighter Pony
- filename pony.py
- fileExtensions pony
 leachim6 Pony
  filepath p/Pony.pony
  fileExtensions pony
@@ -53,11 +47,16 @@ leachim6 Pony
     new create(env: Env) =>
       env.out.print("Hello World")
   
-printToken env.out.print
-features
- hasPrintDebugging true
- hasStrings true
-  "Hello world"
-domainName ponylang.org
- registered 2015
-stringToken "
+rosettaCode Pony
+
+tryItOnline pony
+
+subreddit ponylang
+ memberCount
+  2017 375
+  2022 672
+
+twitter ponylang
+fileType text
+isOpenSource true
+centralPackageRepositoryCount 0

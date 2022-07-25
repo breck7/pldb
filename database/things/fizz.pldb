@@ -1,6 +1,19 @@
 title fizz
 appeared 2017
 type pl
+description fizz is an experimental language and runtime environment for the exploration of cognitive architectures and combined Machine Learning (ML) and Machine Reasoning (MR) solutions. It is based primarily on symbolic programming and fuzzy formal logic and it features a distributed (as in heterogeneous computer cluster), concurrent, asynchronous and responsive inference engine.
+website https://f1zz.org/
+domainName f1zz.org
+ registered 2017
+
+features
+ hasLineComments true
+  // A comment
+ hasComments true
+  // A comment
+ hasSemanticIndentation false
+
+lineCommentToken //
 
 example
  // Code ----------------------------------------------------------------------------------------------------------------------------------
@@ -21,15 +34,3 @@ example
                              sum(:l.n,:r.n,1,:n);
  
  }
-
-description fizz is an experimental language and runtime environment for the exploration of cognitive architectures and combined Machine Learning (ML) and Machine Reasoning (MR) solutions. It is based primarily on symbolic programming and fuzzy formal logic and it features a distributed (as in heterogeneous computer cluster), concurrent, asynchronous and responsive inference engine.
-website https://f1zz.org/
-lineCommentToken //
-features
- hasLineComments true
-  // A comment
- hasComments true
-  // A comment
- hasSemanticIndentation false
-domainName f1zz.org
- registered 2017

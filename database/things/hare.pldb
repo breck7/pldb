@@ -1,8 +1,19 @@
 title Hare
-description Hare is a systems programming language designed to be simple, stable, and robust. Hare uses a static type system, manual memory management, and a minimal runtime. It is well-suited to writing operating systems, system tools, compilers, networking software, and other low-level, high performance tasks.
+appeared 2020
 type pl
-sourcehutRepo https://git.sr.ht/~sircmpwn/hare
+description Hare is a systems programming language designed to be simple, stable, and robust. Hare uses a static type system, manual memory management, and a minimal runtime. It is well-suited to writing operating systems, system tools, compilers, networking software, and other low-level, high performance tasks.
 website https://harelang.org/
+domainName harelang.org
+ registered 2020
+
+features
+ hasPrintDebugging true
+ hasStrings true
+  "Hello world"
+
+printToken fmt::println
+stringToken "
+
 example
  use fmt;
  
@@ -19,6 +30,8 @@ example
  	};
  };
 
+sourcehutRepo https://git.sr.ht/~sircmpwn/hare
+
 leachim6 Hare
  filepath h/Hare.ha
  fileExtensions ha
@@ -29,12 +42,3 @@ leachim6 Hare
   	fmt::println("Hello World")!;
   };
   
-printToken fmt::println
-features
- hasPrintDebugging true
- hasStrings true
-  "Hello world"
-domainName harelang.org
- registered 2020
-stringToken "
-appeared 2020

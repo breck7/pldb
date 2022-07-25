@@ -1,6 +1,8 @@
 title AutoIt
 appeared 1999
 type pl
+creators Jonathan Bennett
+website http://www.autoitscript.com/autoit3/
 
 features
  hasComments true
@@ -10,6 +12,10 @@ features
  hasSemanticIndentation false
  hasStrings true
   "Hello world"
+
+lineCommentToken ;
+printToken MsgBox
+stringToken "
 
 wikipedia https://en.wikipedia.org/wiki/AutoIt
  example
@@ -66,38 +72,29 @@ githubLanguage AutoIt
  fileExtensions au3
  trendingProjectsCount 0
 
+pygmentsHighlighter AutoIt
+ filename automation.py
+ fileExtensions au3
 linguistGrammarRepo https://github.com/AutoIt/SublimeAutoItScript
  firstCommit 2013
  lastCommit 2018
  committerCount 11
  commitCount 88
 
-website http://www.autoitscript.com/autoit3/
-
-twitter autoitconsult
-
-fileType text
-isOpenSource true
-
-tiobe AutoIt
-
 projectEuler AutoIt
  memberCount
   2019 7
   2022 12
-
-rosettaCode AutoIt
-
-centralPackageRepositoryCount 0
-creators Jonathan Bennett
-lineCommentToken ;
-pygmentsHighlighter AutoIt
- filename automation.py
- fileExtensions au3
 leachim6 AutoIt
  filepath a/AutoIt.au3
  fileExtensions au3
  example
   MsgBox(0, "Message Box", "Hello World")
-printToken MsgBox
-stringToken "
+rosettaCode AutoIt
+
+tiobe AutoIt
+
+twitter autoitconsult
+fileType text
+isOpenSource true
+centralPackageRepositoryCount 0

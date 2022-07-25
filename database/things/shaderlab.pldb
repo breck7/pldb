@@ -1,6 +1,16 @@
 title ShaderLab
 appeared 2000
 type pl
+reference https://docs.unity3d.com/Manual/SL-Shader.html
+
+features
+ hasLineComments true
+  // A comment
+ hasComments true
+  // A comment
+ hasSemanticIndentation false
+
+lineCommentToken //
 
 githubLanguage ShaderLab
  fileExtensions shader
@@ -113,13 +123,5 @@ linguistGrammarRepo https://github.com/tgjones/shaders-tmLanguage
       FallBack Off
   }
 
-reference https://docs.unity3d.com/Manual/SL-Shader.html
 fileType text
 centralPackageRepositoryCount 0
-lineCommentToken //
-features
- hasLineComments true
-  // A comment
- hasComments true
-  // A comment
- hasSemanticIndentation false

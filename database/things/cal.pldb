@@ -1,6 +1,7 @@
 title CAL Actor Language
 appeared 2001
 type pl
+reference https://ptolemy.berkeley.edu/projects/embedded/caltrop/language.html
 
 wikipedia https://en.wikipedia.org/wiki/CAL_Actor_Language
  summary CAL (the Cal Actor Language) is a high-level programming language for writing (dataflow) actors, which are stateful operators that transform input streams of data objects (tokens) into output streams. CAL has been compiled to a variety of target platforms, including single-core processors, multicore processors, and programmable hardware. It has been used in several application areas, including video and processing, compression and cryptography. The MPEG Reconfigurable Video Coding (RVC) working group has adopted CAL as part of their standardization efforts.
@@ -8,5 +9,3 @@ wikipedia https://en.wikipedia.org/wiki/CAL_Actor_Language
  pageId 26018004
  dailyPageViews 9
  appeared 2001
-
-reference https://ptolemy.berkeley.edu/projects/embedded/caltrop/language.html

@@ -1,8 +1,30 @@
 title DAX
 appeared 2009
 type queryLanguage
+description Data Analysis Expressions (DAX) is a formula expression language used in Analysis Services, Power BI, and Power Pivot in Excel. DAX formulas include functions, operators, and values to perform advanced calculations and queries on data in related tables and columns in tabular data models.
+website https://docs.microsoft.com/en-us/dax/dax-overview
 standsFor Data analysis expressions
 aka msdax
+corporateDevelopers Microsoft
+
+features
+ hasStrings true
+ hasLineComments true
+  // A comment
+ hasMultiLineComments true
+  /* A comment
+  */
+ hasComments true
+  // A comment
+
+lineCommentToken //
+multiLineCommentTokens /* */
+keywords VAR RETURN NOT EVALUATE DATATABLE ORDER BY START AT DEFINE MEASURE ASC DESC IN BOOLEAN DOUBLE INTEGER DATETIME CURRENCY STRING
+
+example
+ EVALUATE
+  ( FILTER ( 'DimProduct', [SafetyStockLevel] < 200 ) )
+ ORDER BY [EnglishProductName] ASC
 
 wikipedia https://en.wikipedia.org/wiki/Data_analysis_expressions
  related excel-app
@@ -14,25 +36,6 @@ wikipedia https://en.wikipedia.org/wiki/Data_analysis_expressions
  dailyPageViews 76
  appeared 2009
 
-centralPackageRepositoryCount 0
-
-corporateDevelopers Microsoft
-website https://docs.microsoft.com/en-us/dax/dax-overview
-description Data Analysis Expressions (DAX) is a formula expression language used in Analysis Services, Power BI, and Power Pivot in Excel. DAX formulas include functions, operators, and values to perform advanced calculations and queries on data in related tables and columns in tabular data models.
-example
- EVALUATE
-  ( FILTER ( 'DimProduct', [SafetyStockLevel] < 200 ) )
- ORDER BY [EnglishProductName] ASC
-lineCommentToken //
 monaco msdax
-multiLineCommentTokens /* */
-keywords VAR RETURN NOT EVALUATE DATATABLE ORDER BY START AT DEFINE MEASURE ASC DESC IN BOOLEAN DOUBLE INTEGER DATETIME CURRENCY STRING
-features
- hasStrings true
- hasLineComments true
-  // A comment
- hasMultiLineComments true
-  /* A comment
-  */
- hasComments true
-  // A comment
+
+centralPackageRepositoryCount 0

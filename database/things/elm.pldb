@@ -2,6 +2,16 @@ title Elm
 appeared 2012
 type pl
 creators Evan Czaplicki
+website http://elm-lang.org
+webRepl http://elm-lang.org/try
+fileExtensions elm
+domainName elm-lang.org
+ registered 2011
+
+compilesTo javascript
+writtenIn haskell
+
+visualParadigm false
 
 features
  hasComments true
@@ -14,6 +24,20 @@ features
  hasSemanticIndentation false
  hasStrings true
   "Hello world"
+
+lineCommentToken --
+multiLineCommentTokens {- -}
+stringToken "
+
+githubRepo https://github.com/elm-lang/elm-compiler
+ stars 6875
+ forks 630
+ subscribers 208
+ created 2012
+ updated 2022
+ firstCommit 2012
+ description Compiler for Elm, a functional language for reliable webapps.
+ issues 281
 
 wikipedia https://en.wikipedia.org/wiki/Elm_(programming_language)
  example
@@ -101,23 +125,10 @@ githubLanguage Elm
  fileExtensions elm
  trendingProjectsCount 0
 
-githubRepo https://github.com/elm-lang/elm-compiler
- stars 6875
- forks 630
- subscribers 208
- created 2012
- updated 2022
- firstCommit 2012
- description Compiler for Elm, a functional language for reliable webapps.
- issues 281
-
-helloWorldCollection Elm
- -- Hello world in Elm
- 
- import Text
- 
- main = Text.plainText "Hello, world!"
-
+codeMirror elm
+pygmentsHighlighter Elm
+ filename elm.py
+ fileExtensions elm
 linguistGrammarRepo https://github.com/elm-community/Elm.tmLanguage
  firstCommit 2013
  lastCommit 2017
@@ -158,44 +169,18 @@ linguistGrammarRepo https://github.com/elm-community/Elm.tmLanguage
   
   ----------------------}
   
-
-website http://elm-lang.org
-fileExtensions elm
-fileType text
-compilesTo javascript
-isOpenSource true
-
-tiobe Elm
-
-webRepl http://elm-lang.org/try
+languageServerProtocolProject https://github.com/elm-tooling/elm-language-server
+ writtenIn elm
 
 projectEuler Elm
  memberCount
   2022 4
-
-codeMirror elm
-
-rosettaCode Elm
-
-writtenIn haskell
-indeedJobs elm engineer
- 2017 127
-
-lineCommentToken --
-languageServerProtocolProject https://github.com/elm-tooling/elm-language-server
- writtenIn elm
-visualParadigm false
-packageRepository https://package.elm-lang.org/
-rijuRepl https://riju.codes/elm
- example
-  module Main exposing (..)
-  
-  output : String
-  output = "Hello, world!"
-  
-pygmentsHighlighter Elm
- filename elm.py
- fileExtensions elm
+helloWorldCollection Elm
+ -- Hello world in Elm
+ 
+ import Text
+ 
+ main = Text.plainText "Hello, world!"
 leachim6 Elm
  filepath e/Elm.elm
  fileExtensions elm
@@ -205,8 +190,23 @@ leachim6 Elm
   main =
     text "Hello World"
   
-multiLineCommentTokens {- -}
-domainName elm-lang.org
- registered 2011
-stringToken "
+rosettaCode Elm
+
+rijuRepl https://riju.codes/elm
+ example
+  module Main exposing (..)
+  
+  output : String
+  output = "Hello, world!"
+  
+
+indeedJobs elm engineer
+ 2017 127
+
+tiobe Elm
+
+packageRepository https://package.elm-lang.org/
+
 twitter elmlang
+fileType text
+isOpenSource true

@@ -2,6 +2,17 @@ title Action Code Script
 appeared 2004
 type pl
 
+features
+ hasLineComments true
+  // A comment
+ hasComments true
+  // A comment
+ hasPrintDebugging true
+ hasSemanticIndentation false
+
+lineCommentToken //
+printToken print
+
 wikipedia https://en.wikipedia.org/wiki/Action_Code_Script
  example
   1  // Similar to C's stdio.h, ACS has its own library of basic functions
@@ -20,12 +31,3 @@ wikipedia https://en.wikipedia.org/wiki/Action_Code_Script
  dailyPageViews 7
 
 centralPackageRepositoryCount 0
-lineCommentToken //
-features
- hasLineComments true
-  // A comment
- hasComments true
-  // A comment
- hasPrintDebugging true
- hasSemanticIndentation false
-printToken print

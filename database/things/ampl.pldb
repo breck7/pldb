@@ -2,6 +2,22 @@ title AMPL
 appeared 1985
 type pl
 creators Robert Fourer and David Gay and Brian Kernighan
+website https://ampl.com/
+standsFor A Mathematical Programming Language
+country United States
+domainName ampl.com
+ registered 1995
+
+features
+ hasLineComments true
+  # A comment
+ hasComments true
+  # A comment
+ hasSemanticIndentation false
+ hasAssignment true
+
+lineCommentToken #
+assignmentToken :=
 
 example
  set PROD;  # products
@@ -90,6 +106,9 @@ githubLanguage AMPL
  fileExtensions ampl mod
  trendingProjectsCount 0
 
+pygmentsHighlighter Ampl
+ filename ampl.py
+ fileExtensions run
 linguistGrammarRepo https://github.com/ampl/sublime-ampl
  firstCommit 2013
  lastCommit 2013
@@ -124,20 +143,8 @@ linguistGrammarRepo https://github.com/ampl/sublime-ampl
   param KnapsackBound := 102;
   
 
-website https://ampl.com/
-standsFor A Mathematical Programming Language
-
-twitter amplopt
-
-country United States
-fileType text
-isOpenSource false
-
-hopl 7232
-
 rosettaCode AMPL
 
-centralPackageRepositoryCount 0
 goodreads
  title|year|author|goodreadsId|rating|ratings|reviews
  Ampl: A Modeling Language for Mathematical Programming|1993|Robert Fourer|2176571|4.00|17|0
@@ -146,17 +153,10 @@ goodreads
  Ampl: A Modeling Language for Math Programming Package (with User Guide)|1999|Robert Fourer|20874765|2.00|1|0
  Ampl: A Molding Language for Mathematical Programming/Book & IBM 5 1/4 Disk|1991|Robert Fourer|2247991|0.0|0|0
  Mathematical Optimization Software: Mathematica, General Algebraic Modeling System, Propt, Ioso, Mps, Ampl, Apmonitor, Tomsym, Worhp, Dido|2011|Source Wikipedia|15185414|0.0|0|0
-lineCommentToken #
-features
- hasLineComments true
-  # A comment
- hasComments true
-  # A comment
- hasSemanticIndentation false
- hasAssignment true
-pygmentsHighlighter Ampl
- filename ampl.py
- fileExtensions run
-domainName ampl.com
- registered 1995
-assignmentToken :=
+
+hopl 7232
+
+twitter amplopt
+fileType text
+isOpenSource false
+centralPackageRepositoryCount 0

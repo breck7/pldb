@@ -1,24 +1,22 @@
 title Q#
 appeared 2017
 type pl
-
 website https://docs.microsoft.com/en-us/quantum/quantum-qr-intro?view=qsharp-preview
-fileType text
-centralPackageRepositoryCount 0
 aka qsharp
-rijuRepl https://riju.codes/qsharp
- example
-  namespace main {
-  
-      open Microsoft.Quantum.Canon;
-      open Microsoft.Quantum.Intrinsic;
-  
-      @EntryPoint()
-      operation Main() : Unit {
-          Message("Hello, world!");
-      }
-  }
-  
+
+features
+ hasStrings true
+ hasLineComments true
+  // A comment
+ hasComments true
+  // A comment
+
+lineCommentToken //
+stringToken "
+keywords namespace open as operation function body adjoint newtype controlled if elif else repeat until fixup for in while return fail within apply Adjoint Controlled Adj Ctl is self auto distribute invert intrinsic let set w/ new not and or use borrow using borrowing mutable
+
+monaco qsharp
+
 leachim6 QSharp
  filepath q/QSharp.qs
  fileExtensions qs
@@ -33,13 +31,20 @@ leachim6 QSharp
       }
   }
   
-lineCommentToken //
-monaco qsharp
-keywords namespace open as operation function body adjoint newtype controlled if elif else repeat until fixup for in while return fail within apply Adjoint Controlled Adj Ctl is self auto distribute invert intrinsic let set w/ new not and or use borrow using borrowing mutable
-features
- hasStrings true
- hasLineComments true
-  // A comment
- hasComments true
-  // A comment
-stringToken "
+
+rijuRepl https://riju.codes/qsharp
+ example
+  namespace main {
+  
+      open Microsoft.Quantum.Canon;
+      open Microsoft.Quantum.Intrinsic;
+  
+      @EntryPoint()
+      operation Main() : Unit {
+          Message("Hello, world!");
+      }
+  }
+  
+
+fileType text
+centralPackageRepositoryCount 0

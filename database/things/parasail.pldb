@@ -4,12 +4,21 @@ type pl
 creators Seth Tucker Taft
 description ParaSail is a new parallel programming language designed to support the development of inherently safe and secure, highly parallel applications that can be mapped to multicore, manycore, heterogeneous, or distributed architectures.
 website http://parasail-lang.org
-hackerNewsDiscussions
- id|title|url|time|timestamp|by|comments|score
- 19121947|ParaSail Programming Language: parallel programming language|http://parasail-lang.org/|2019-02-09 12:26:40 UTC|1549715200|based2|19|97
+domainName parasail-lang.org
+ registered 2012
+
+features
+ hasPrintDebugging true
+ hasStrings true
+  "Hello world"
+
+printToken IO.Println
+stringToken "
+
 pygmentsHighlighter ParaSail
  filename parasail.py
  fileExtensions psi psl
+
 leachim6 ParaSail
  filepath p/ParaSail.psi
  fileExtensions psi
@@ -18,11 +27,7 @@ leachim6 ParaSail
       IO.Println("Hello World");
   end func Hello_World;
   
-printToken IO.Println
-features
- hasPrintDebugging true
- hasStrings true
-  "Hello world"
-domainName parasail-lang.org
- registered 2012
-stringToken "
+
+hackerNewsDiscussions
+ id|title|url|time|timestamp|by|comments|score
+ 19121947|ParaSail Programming Language: parallel programming language|http://parasail-lang.org/|2019-02-09 12:26:40 UTC|1549715200|based2|19|97

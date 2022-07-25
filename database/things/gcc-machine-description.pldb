@@ -1,6 +1,16 @@
 title GCC Machine Description
 appeared 2001
 type pl
+reference https://en.wikipedia.org/wiki/Register_transfer_language
+
+features
+ hasLineComments true
+  ; A comment
+ hasComments true
+  ; A comment
+ hasSemanticIndentation false
+
+lineCommentToken ;
 
 githubLanguage GCC Machine Description
  fileExtensions md
@@ -77,13 +87,5 @@ linguistGrammarRepo https://github.com/textmate/lisp.tmbundle
   ;;	FADR, FADRI, FADRM, FADRB, DFAD, GFAD,
   ;;	FSBR, FSBRI, FSBRM, FSBRB, DFSB,
 
-reference https://en.wikipedia.org/wiki/Register_transfer_language
 fileType text
 centralPackageRepositoryCount 0
-lineCommentToken ;
-features
- hasLineComments true
-  ; A comment
- hasComments true
-  ; A comment
- hasSemanticIndentation false

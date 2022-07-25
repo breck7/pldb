@@ -1,6 +1,11 @@
 title A+
 appeared 1988
 type pl
+creators Arthur Whitney
+website http://www.aplusdev.org/
+country United States
+corporateDevelopers Morgan Stanley
+domainName aplusdev.org
 
 wikipedia https://en.wikipedia.org/wiki/A+_(programming_language)
  related apl k unix linux j
@@ -12,18 +17,13 @@ wikipedia https://en.wikipedia.org/wiki/A+_(programming_language)
  dailyPageViews 57
  appeared 1988
 
-corporateDevelopers Morgan Stanley
-website http://www.aplusdev.org/
-country United States
-fileType text
-isOpenSource true
-
-hopl 1531
-
-centralPackageRepositoryCount 0
 rijuRepl https://riju.codes/aplus
  example
   'Hello, world!'
   
-creators Arthur Whitney
-domainName aplusdev.org
+
+hopl 1531
+
+fileType text
+isOpenSource true
+centralPackageRepositoryCount 0

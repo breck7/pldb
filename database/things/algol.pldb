@@ -2,6 +2,11 @@ title Algol
 appeared 1958
 type pl
 
+features
+ hasAssignment true
+
+assignmentToken :=
+
 wikipedia https://en.wikipedia.org/wiki/ALGOL
  example
   'BEGIN'
@@ -16,15 +21,8 @@ wikipedia https://en.wikipedia.org/wiki/ALGOL
  revisionCount 865
  appeared 1958
 
-fileType text
-
-tiobe Algol
-
-hopl 2966
-
 rosettaCode ALGOL
 
-centralPackageRepositoryCount 0
 rijuRepl https://riju.codes/algol
  example
   print(("Hello, world!",new line))
@@ -33,6 +31,7 @@ rijuRepl https://riju.codes/algol
  fileExtensions alg
  website http://algol68.sourceforge.net/
  githubRepo https://jmvdveer.home.xs4all.nl/en.algol-68-genie.html
+
 goodreads
  title|year|author|goodreadsId|rating|ratings|reviews
  primer of ALGOL 60 programming.|1962|Edsger W. Dijkstra|3175934|4.25|4|1
@@ -42,6 +41,9 @@ goodreads
  Introductory Algol 68 Programming|1979|D. F Brailsford|3545644|0.0|0|0
  Programming: ALGOL,|1969|D.J. Malcolme-Lawes|5752079|0.0|0|0
  Programming In Algol|1970|J.S. Rohl|3934447|0.0|0|0
-assignmentToken :=
-features
- hasAssignment true
+
+tiobe Algol
+hopl 2966
+
+fileType text
+centralPackageRepositoryCount 0

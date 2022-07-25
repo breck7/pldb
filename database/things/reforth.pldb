@@ -1,6 +1,7 @@
 title reforth
 appeared 2013
 type pl
+description Reforth tries to solve my gripes without fundamentally changing Forth's elegance and simplicity.
 
 example
  begin
@@ -19,8 +20,6 @@ example
          leave
      end
  end
-
-description Reforth tries to solve my gripes without fundamentally changing Forth's elegance and simplicity.
 
 githubRepo https://github.com/seanpringle/reforth
  firstCommit 2013

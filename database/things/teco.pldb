@@ -1,6 +1,8 @@
 title TECO
 appeared 1963
 type pl
+standsFor Text editor character oriented
+country United States
 
 wikipedia https://en.wikipedia.org/wiki/TECO_(text_editor)
  example
@@ -20,29 +22,25 @@ wikipedia https://en.wikipedia.org/wiki/TECO_(text_editor)
  revisionCount 331
  appeared 1962
 
+projectEuler TECO
+ memberCount
+  2019 7
+  2022 8
 helloWorldCollection Text editor character oriented
  !Hello World in TECO
  !The $ symbol below wouldn't actually be a printing character -
  !it's the [escape] character, \u001b!
  FTHello World$
  
-
-standsFor Text editor character oriented
-country United States
-fileType text
-
-projectEuler TECO
- memberCount
-  2019 7
-  2022 8
-
-hopl 2563
-
 rosettaCode Teco
 
-centralPackageRepositoryCount 0
 rijuRepl https://riju.codes/teco
  example
   IHello, world!
   $HT$$
   
+
+hopl 2563
+
+fileType text
+centralPackageRepositoryCount 0

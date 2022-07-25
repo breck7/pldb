@@ -1,6 +1,13 @@
 title U
-website http://www.math.bas.bg/bantchev/place/u.html
+appeared 2013
+type pl
+creators Yassen Bantchev
 description U is a small functional programming language, designed mainly for explorational and educational uses. Both its syntax and its operational rules are very simple and regular. U can be considered a functional-style calculator for several useful types of data, preloaded with a large number of built-in operators and extensible through defining new ones.
+website http://www.math.bas.bg/bantchev/place/u.html
+webRepl http://yassenb.github.io/u/dist/web/index.html
+
+influencedBy apl j k nial
+
 githubRepo https://github.com/yassenb/u
  firstCommit 2013
  stars 3
@@ -10,8 +17,3 @@ githubRepo https://github.com/yassenb/u
  updated 2021
  description Implementation of the U programming language
  issues 0
-appeared 2013
-webRepl http://yassenb.github.io/u/dist/web/index.html
-type pl
-influencedBy apl j k nial
-creators Yassen Bantchev

@@ -1,6 +1,15 @@
 title toy-lang
 appeared 2018
 type pl
+creators Kayne Ruse
+website https://toylang.com/
+domainName toylang.com
+ registered 2019
+
+features
+ hasPrintDebugging true
+
+printToken print
 
 example
  if (1 < 2) {
@@ -18,11 +27,3 @@ githubRepo https://github.com/Ratstail91/Toy
  description A toy programming language.
  forks 1
  issues 0
-
-website https://toylang.com/
-creators Kayne Ruse
-printToken print
-features
- hasPrintDebugging true
-domainName toylang.com
- registered 2019

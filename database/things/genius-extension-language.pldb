@@ -1,6 +1,8 @@
 title GEL Genius
 appeared 1997
 type pl
+website http://www.jirka.org/genius.html
+aka GEL
 
 example
  function f(x) = (
@@ -27,17 +29,14 @@ wikipedia https://en.wikipedia.org/wiki/Genius_(mathematics_software)
  revisionCount 33
  appeared 1997
 
-website http://www.jirka.org/genius.html
-aka GEL
-fileType text
-isOpenSource true
-
 quineRelay GEL (Genius)
 
-ubuntuPackage genius
-
-centralPackageRepositoryCount 0
 rijuRepl https://riju.codes/gel
  example
   print("Hello, world!")
   
+
+ubuntuPackage genius
+fileType text
+isOpenSource true
+centralPackageRepositoryCount 0

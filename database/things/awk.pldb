@@ -1,8 +1,10 @@
 title awk
 appeared 1977
 type pl
-
-lineCommentToken #
+creators Alfred Aho and Peter J. Weinberger
+website http://www.cs.princeton.edu/~bwk/btl.mirror/
+standsFor Aho, Weinberger, Kernighan
+country United States
 
 features
  hasComments true
@@ -12,6 +14,10 @@ features
  hasSemanticIndentation false
  hasStrings true
   "Hello world"
+
+lineCommentToken #
+printToken print
+stringToken "
 
 wikipedia https://en.wikipedia.org/wiki/AWK
  example
@@ -39,13 +45,9 @@ githubLanguage Awk
  fileExtensions awk auk gawk mawk nawk
  trendingProjectsCount 0
 
-helloWorldCollection Aho%2C Weinberger%2C Kernighan
- # Hello world in AWK
- 
- BEGIN {
-   print "Hello World!"
- }
-
+pygmentsHighlighter Awk
+ filename textedit.py
+ fileExtensions awk
 linguistGrammarRepo https://github.com/github-linguist/awk-sublime
  firstCommit 2012
  lastCommit 2016
@@ -176,36 +178,26 @@ linguistGrammarRepo https://github.com/github-linguist/awk-sublime
   }
   
 
-website http://www.cs.princeton.edu/~bwk/btl.mirror/
-standsFor Aho, Weinberger, Kernighan
-
-tryItOnline awk
-
-country United States
-fileType text
-
-tiobe Awk
- currentRank 37
-
 projectEuler AWK
  memberCount
   2019 9
   2022 14
-
-hopl 1844
-
-subreddit awk
- memberCount
-  2017 720
-  2022 1929
-
+helloWorldCollection Aho%2C Weinberger%2C Kernighan
+ # Hello world in AWK
+ 
+ BEGIN {
+   print "Hello World!"
+ }
+leachim6 AWK
+ filepath a/AWK.awk
+ fileExtensions awk
+ example
+  # awk -f awk.awk
+  BEGIN { print "Hello World" }
+  
+rosettaCode AWK
 quineRelay Awk
 
-ubuntuPackage gawk
-
-rosettaCode AWK
-
-centralPackageRepositoryCount 0
 rijuRepl https://riju.codes/awk
  example
   BEGIN { print "Hello, world!" }
@@ -213,7 +205,13 @@ rijuRepl https://riju.codes/awk
  description Domain-specific language designed for text processing and typically used as a data extraction and reporting tool
  fileExtensions awk
  githubRepo https://savannah.gnu.org/git/?group=gawk
-creators Alfred Aho and Peter J. Weinberger
+tryItOnline awk
+
+subreddit awk
+ memberCount
+  2017 720
+  2022 1929
+
 goodreads
  title|year|author|goodreadsId|rating|ratings|reviews
  The AWK Programming Language|1988|Alfred V. Aho|689393|4.25|142|11
@@ -222,15 +220,11 @@ goodreads
  AWK Programming: Questions and Answers|2014|George Duckett|43826300|0.0|0|0
  awk Programmer's Toolbox: Advanced awk and Unix Shell Scripting Examples and Techniques|2013|Steve Myers|27006436|5.00|1|0
  Awk Programming (2 Days)||Sim McNally|5706968|0.0|0|0
-pygmentsHighlighter Awk
- filename textedit.py
- fileExtensions awk
-leachim6 AWK
- filepath a/AWK.awk
- fileExtensions awk
- example
-  # awk -f awk.awk
-  BEGIN { print "Hello World" }
-  
-printToken print
-stringToken "
+
+tiobe Awk
+ currentRank 37
+hopl 1844
+
+ubuntuPackage gawk
+fileType text
+centralPackageRepositoryCount 0

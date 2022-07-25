@@ -2,6 +2,12 @@ title MXML
 appeared 2004
 type xmlFormat
 
+features
+ hasStrings true
+  "Hello world"
+
+stringToken "
+
 wikipedia https://en.wikipedia.org/wiki/MXML
  example
   <?xml version="1.0" encoding="utf-8"?>
@@ -22,10 +28,10 @@ wikipedia https://en.wikipedia.org/wiki/MXML
  dailyPageViews 32
  appeared 2002
 
-centralPackageRepositoryCount 0
 pygmentsHighlighter MXML
  filename actionscript.py
  fileExtensions mxml
+
 leachim6 MXML
  filepath m/MXML.mxml
  fileExtensions mxml
@@ -34,7 +40,5 @@ leachim6 MXML
   <mx:Application xmlns:mx="http://www.adobe.com/2006/mxml">
   <mx:Label text="Hello World"/>
   </mx:Application>
-stringToken "
-features
- hasStrings true
-  "Hello world"
+
+centralPackageRepositoryCount 0

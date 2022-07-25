@@ -2,6 +2,23 @@ title OX
 appeared 1996
 type pl
 creators Jurgen A. Doornik
+website http://www.oxmetrics.net/
+domainName oxmetrics.net
+ registered 2002
+
+features
+ hasLineComments true
+  // A comment
+ hasComments true
+  // A comment
+ hasPrintDebugging true
+ hasSemanticIndentation false
+ hasStrings true
+  'Hello world'
+
+lineCommentToken //
+printToken Show
+stringToken '
 
 wikipedia https://en.wikipedia.org/wiki/Ox_(programming_language)
  related linux r
@@ -64,30 +81,15 @@ linguistGrammarRepo https://github.com/andreashetland/sublime-text-ox
   }
   
 
-website http://www.oxmetrics.net/
-fileType text
-isOpenSource false
-
-hopl 2718
-
-centralPackageRepositoryCount 0
-lineCommentToken //
-features
- hasLineComments true
-  // A comment
- hasComments true
-  // A comment
- hasPrintDebugging true
- hasSemanticIndentation false
- hasStrings true
-  'Hello world'
 leachim6 OX
  filepath o/OX.oz
  fileExtensions oz
  example
   {Show 'Hello World'}
   
-printToken Show
-domainName oxmetrics.net
- registered 2002
-stringToken '
+
+hopl 2718
+
+fileType text
+isOpenSource false
+centralPackageRepositoryCount 0

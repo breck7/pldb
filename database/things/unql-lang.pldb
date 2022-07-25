@@ -2,10 +2,9 @@ title UnQL
 appeared 2011
 type queryLanguage
 creators Richard Hipp and Damien Katz
-
-example
- SELECT {articleout:cool_nosql_collection.docNumber} FROM cool_nosql_collection
-
 description UnQL is a database query language, akin to SQL, but designed for modern document-oriented databases. SQL assumes a rigidly defined data schema. Each table has a fixed number of columns and each column has a defined datatype. UnQL assumes a more flexible approach to storing data. Instead of "tables", UnQL uses "collections". (The concept is the same, but the name is changed since "tables" are square whereas "collections" can be of varying shape.) Each collection consists of zero or more documents represented as JSON strings. A document in UnQL corresponds to a row in SQL
 reference http://unql.sqlite.org/index.html/timeline?y=w
 standsFor Unstructured Query Language
+
+example
+ SELECT {articleout:cool_nosql_collection.docNumber} FROM cool_nosql_collection

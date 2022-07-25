@@ -1,6 +1,20 @@
 title CIL
 appeared 1994
 type pl
+website http://www.cilk.com/
+country United States
+corporateDevelopers Intel
+domainName cilk.com
+ registered 1999
+
+features
+ hasLineComments true
+  // A comment
+ hasComments true
+  // A comment
+ hasSemanticIndentation false
+
+lineCommentToken //
 
 wikipedia https://en.wikipedia.org/wiki/Cilk
  example
@@ -20,24 +34,10 @@ wikipedia https://en.wikipedia.org/wiki/Cilk
  revisionCount 211
  appeared 1994
 
-website http://www.cilk.com/
-country United States
-fileType text
-
-tiobe CIL
-
-hopl 1899
-
 rosettaCode Cilk
 
+tiobe CIL
+hopl 1899
+
+fileType text
 centralPackageRepositoryCount 0
-corporateDevelopers Intel
-lineCommentToken //
-features
- hasLineComments true
-  // A comment
- hasComments true
-  // A comment
- hasSemanticIndentation false
-domainName cilk.com
- registered 1999

@@ -2,6 +2,15 @@ title S-PLUS
 appeared 1988
 type pl
 
+features
+ hasLineComments true
+  # A comment
+ hasComments true
+  # A comment
+ hasSemanticIndentation false
+
+lineCommentToken #
+
 wikipedia https://en.wikipedia.org/wiki/S-PLUS
  related unix linux s excel-app spss solaris eclipse-editor r
  summary S-PLUS is a commercial implementation of the S programming language sold by TIBCO Software Inc.. It features object-oriented programming capabilities and advanced analytical algorithms.
@@ -17,16 +26,8 @@ helloWorldCollection S-PLUS
  cat("Hello world\n")
  
 
-fileType text
-isOpenSource false
-
 tiobe S-PLUS
 
+fileType text
+isOpenSource false
 centralPackageRepositoryCount 0
-lineCommentToken #
-features
- hasLineComments true
-  # A comment
- hasComments true
-  # A comment
- hasSemanticIndentation false

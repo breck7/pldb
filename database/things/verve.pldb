@@ -2,19 +2,23 @@ title verve
 appeared 2017
 type pl
 website https://verve-lang.org
-hackerNewsDiscussions
- id|title|url|time|timestamp|by|comments|score
- 15809432|Verve – a functional language for the working hacker|https://verve-lang.org/|2017-11-29 18:30:55 UTC|1511980255|kasbah|0|2
+domainName verve-lang.org
+ registered 2020
+
+features
+ hasPrintDebugging true
+ hasStrings true
+  "Hello world"
+
+printToken print
+stringToken "
+
 leachim6 Verve
  filepath v/Verve.vrv
  fileExtensions vrv
  example
   print("Hello World")
-printToken print
-features
- hasPrintDebugging true
- hasStrings true
-  "Hello world"
-domainName verve-lang.org
- registered 2020
-stringToken "
+
+hackerNewsDiscussions
+ id|title|url|time|timestamp|by|comments|score
+ 15809432|Verve – a functional language for the working hacker|https://verve-lang.org/|2017-11-29 18:30:55 UTC|1511980255|kasbah|0|2

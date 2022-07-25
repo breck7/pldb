@@ -1,6 +1,9 @@
 title BNF
 appeared 1956
 type grammarLanguage
+creators John Backus and Peter Naur
+standsFor Backus–Naur Form
+country United States
 
 wikipedia https://en.wikipedia.org/wiki/Backus–Naur_form
  example
@@ -29,17 +32,12 @@ wikipedia https://en.wikipedia.org/wiki/Backus–Naur_form
  backlinksCount 130
  appeared 1956
 
-standsFor Backus–Naur Form
-country United States
-fileType text
-
-creators John Backus and Peter Naur
-
-hopl 1865
-
 antlr https://github.com/antlr/grammars-v4/tree/master/bnf
-
-centralPackageRepositoryCount 0
 pygmentsHighlighter BNF
  filename grammar_notation.py
  fileExtensions bnf
+
+hopl 1865
+
+fileType text
+centralPackageRepositoryCount 0

@@ -2,6 +2,13 @@ title Perl
 appeared 1987
 type pl
 creators Larry Wall
+website https://www.perl.org
+fileExtensions pl pm t pod
+country United States
+domainName perl.org
+ registered 1995
+
+visualParadigm false
 
 features
  hasStrings true
@@ -38,6 +45,11 @@ features
   @array = (1..10);
  hasPrintDebugging true
  hasSemanticIndentation false
+
+lineCommentToken #
+multiLineCommentTokens =begin =cut
+printToken print
+keywords __DATA__ else lock qw __END__ elsif lt qx __FILE__ eq m s __LINE__ exp ne sub __PACKAGE__ for no tr and foreach or unless cmp ge package until continue gt q while CORE if qq xor do le qr y
 
 wikipedia https://en.wikipedia.org/wiki/Perl
  example
@@ -79,12 +91,11 @@ githubLanguage Perl
   sullo nikto https://github.com/sullo.png https://github.com/sullo/nikto Perl #0298c3 3232 542 81 "Nikto web server scanner"
  trendingProjectsCount 6
 
-helloWorldCollection Perl
- # Hello world in perl
- 
- print "Hello World!\n";
- 
-
+monaco perl
+codeMirror perl
+pygmentsHighlighter Perl
+ filename perl.py
+ fileExtensions pl pm t perl
 linguistGrammarRepo https://github.com/textmate/perl.tmbundle
  firstCommit 2005
  lastCommit 2018
@@ -96,62 +107,49 @@ linguistGrammarRepo https://github.com/textmate/perl.tmbundle
   print "Perl\n"
   
 
-website https://www.perl.org
-
-tryItOnline perl6
-
-country United States
-fileExtensions pl pm t pod
-fileType text
-wordRank 3152
-
-tiobe Perl
- currentRank 15
-
-meetup perl
- memberCount 28878
- groupCount 83
-
-linkedInSkill perl
- 2018 468708
-
 projectEuler Perl
  memberCount
   2019 2439
   2022 2433
-
-hopl 2355
-
-subreddit perl
- memberCount
-  2017 10666
-  2022 15510
-
-codeMirror perl
-
+helloWorldCollection Perl
+ # Hello world in perl
+ 
+ print "Hello World!\n";
+ 
+leachim6 Perl
+ filepath p/Perl.pl
+ fileExtensions pl
+ example
+  #!/usr/bin/perl
+  print "Hello World\n";
+  
 rosettaCode Perl
+
+rijuRepl https://riju.codes/perl
+ example
+  print("Hello, world!\n");
+  
+tryItOnline perl6
 
 indeedJobs perl engineer
  2017 8795
-lineCommentToken #
-visualParadigm false
-jupyterKernel https://metacpan.org/release/Devel-IPerl
-jupyterKernel https://github.com/gabrielash/p6-net-jupyter
-jupyterKernel https://github.com/timo/iperl6kernel
-jupyterKernel https://github.com/bduggan/p6-jupyter-kernel
-keywords __DATA__ else lock qw __END__ elsif lt qx __FILE__ eq m s __LINE__ exp ne sub __PACKAGE__ for no tr and foreach or unless cmp ge package until continue gt q while CORE if qq xor do le qr y
+linkedInSkill perl
+ 2018 468708
 stackOverflowSurvey
  2021
   users 2028
   medianSalary 80000
   fans 1175
   percentageUsing 0.02
-packageRepository https://www.cpan.org/
-rijuRepl https://riju.codes/perl
- example
-  print("Hello, world!\n");
-  
-multiLineCommentTokens =begin =cut
+
+subreddit perl
+ memberCount
+  2017 10666
+  2022 15510
+meetup perl
+ memberCount 28878
+ groupCount 83
+
 goodreads
  title|year|author|goodreadsId|rating|ratings|reviews
  Programming Perl|1991|Tom Christiansen|675275|4.04|2104|52
@@ -160,17 +158,16 @@ goodreads
  Perl for Dummies|1997|Paul E.  Hoffman|1015718|3.42|48|5
  The Perl CD Bookshelf: Perl in a Nutshell/Programming Perl, 2nd Edition/Perl Cookbook/Advanced Perl Programming/Learning Perl, 2nd Edition/Learning Perl on WIN32 Systems|1999|O'Reilly Media Inc.|570491|4.11|27|0
  Programming the Perl DBI|2000|Tim Bunce|620583|3.47|77|3
-pygmentsHighlighter Perl
- filename perl.py
- fileExtensions pl pm t perl
-leachim6 Perl
- filepath p/Perl.pl
- fileExtensions pl
- example
-  #!/usr/bin/perl
-  print "Hello World\n";
-  
-printToken print
-domainName perl.org
- registered 1995
-monaco perl
+
+tiobe Perl
+ currentRank 15
+hopl 2355
+
+packageRepository https://www.cpan.org/
+
+jupyterKernel https://metacpan.org/release/Devel-IPerl
+jupyterKernel https://github.com/gabrielash/p6-net-jupyter
+jupyterKernel https://github.com/timo/iperl6kernel
+jupyterKernel https://github.com/bduggan/p6-jupyter-kernel
+fileType text
+wordRank 3152

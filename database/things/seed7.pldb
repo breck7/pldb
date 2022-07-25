@@ -2,6 +2,9 @@ title Seed7
 appeared 2005
 type pl
 creators Thomas Mertes
+website http://seed7.sourceforge.net
+fileExtensions sd7 s7i
+domainName seed7.sourceforge.net
 
 features
  hasComments true
@@ -13,6 +16,11 @@ features
  hasAssignment true
  hasStrings true
   "Hello world"
+
+lineCommentToken #
+printToken writeln
+assignmentToken :=
+stringToken "
 
 wikipedia https://en.wikipedia.org/wiki/Seed7
  related linux unix pascal modula-2 ada algol-68 c java unicode tls http ftp smtp mysql mariadb sqlite postgresql xml
@@ -35,17 +43,6 @@ helloWorldCollection Seed7
      writeln("Hello World!");
    end func;
  
-
-website http://seed7.sourceforge.net
-fileExtensions sd7 s7i
-fileType text
-
-tiobe Seed7
-
-rosettaCode Seed7
-
-centralPackageRepositoryCount 0
-lineCommentToken #
 leachim6 Seed7
  filepath s/Seed7.s7
  fileExtensions s7
@@ -57,7 +54,9 @@ leachim6 Seed7
       writeln("Hello World");
     end func;
   
-printToken writeln
-domainName seed7.sourceforge.net
-assignmentToken :=
-stringToken "
+rosettaCode Seed7
+
+tiobe Seed7
+
+fileType text
+centralPackageRepositoryCount 0

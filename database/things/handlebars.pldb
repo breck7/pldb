@@ -1,6 +1,9 @@
 title Handlebars
 appeared 2010
 type template
+website http://handlebarsjs.com/
+domainName handlebarsjs.com
+ registered 2011
 
 example
  <div class="entry">
@@ -14,6 +17,10 @@ githubLanguage Handlebars
  fileExtensions handlebars hbs
  trendingProjectsCount 0
 
+monaco handlebars
+codeMirror handlebars
+pygmentsHighlighter Handlebars
+ filename templates.py
 linguistGrammarRepo https://github.com/daaain/Handlebars
  firstCommit 2012
  lastCommit 2017
@@ -28,14 +35,5 @@ linguistGrammarRepo https://github.com/daaain/Handlebars
     </div>
   </div>
 
-website http://handlebarsjs.com/
 fileType text
-
-codeMirror handlebars
-
 centralPackageRepositoryCount 0
-pygmentsHighlighter Handlebars
- filename templates.py
-domainName handlebarsjs.com
- registered 2011
-monaco handlebars

@@ -1,6 +1,7 @@
 title ERB
 appeared 2004
 type template
+description eRuby (Embedded Ruby) is a templating system that embeds Ruby into a text document.
 
 example
  <ul>
@@ -10,8 +11,6 @@ example
  
  <% end %>
  </ul>
-
-description eRuby (Embedded Ruby) is a templating system that embeds Ruby into a text document.
 
 wikipedia https://en.wikipedia.org/wiki/ERuby
  example
@@ -49,6 +48,8 @@ githubLanguage HTML+ERB
  fileExtensions erb erbdeface
  trendingProjectsCount 0
 
+pygmentsHighlighter ERB
+ filename templates.py
 linguistGrammarRepo https://github.com/atom/language-ruby
  firstCommit 2013
  lastCommit 2018
@@ -98,5 +99,3 @@ linguistGrammarRepo https://github.com/atom/language-ruby
 
 fileType text
 centralPackageRepositoryCount 0
-pygmentsHighlighter ERB
- filename templates.py

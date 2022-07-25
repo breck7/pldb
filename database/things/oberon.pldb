@@ -2,6 +2,29 @@ title Oberon
 appeared 1986
 type pl
 creators Niklaus Wirth
+website http://www.projectoberon.com/
+country Switzerland
+domainName projectoberon.com
+ registered 2011
+
+features
+ hasPrintDebugging true
+ hasPointers true
+ hasMultiLineComments true
+  (* A comment
+  *)
+ hasComments true
+  (* A comment
+  *)
+ hasSemanticIndentation false
+ hasAssignment true
+ hasStrings true
+  'Hello world'
+
+multiLineCommentTokens (* *)
+printToken Out.String
+assignmentToken :=
+stringToken '
 
 wikipedia https://en.wikipedia.org/wiki/Oberon_(programming_language)
  example
@@ -52,31 +75,10 @@ wikipedia https://en.wikipedia.org/wiki/Oberon_(programming_language)
  revisionCount 388
  appeared 1986
 
-website http://www.projectoberon.com/
-country Switzerland
-fileType text
-
-tiobe Oberon
-
 projectEuler Oberon
  memberCount
   2019 2
   2022 3
-
-hopl 1415
-
-centralPackageRepositoryCount 0
-rijuRepl https://riju.codes/oberon
- example
-  MODULE Main;
-  
-  IMPORT Out;
-  
-  BEGIN
-    Out.String("Hello, world!");
-    Out.Ln;
-  END Main.
-  
 leachim6 Oberon
  filepath o/Oberon.o
  fileExtensions o
@@ -90,22 +92,21 @@ leachim6 Oberon
      Out.String('Hello World');
   END HelloWorld.
   
-printToken Out.String
-features
- hasPrintDebugging true
- hasPointers true
- hasMultiLineComments true
-  (* A comment
-  *)
- hasComments true
-  (* A comment
-  *)
- hasSemanticIndentation false
- hasAssignment true
- hasStrings true
-  'Hello world'
-multiLineCommentTokens (* *)
-domainName projectoberon.com
- registered 2011
-assignmentToken :=
-stringToken '
+
+rijuRepl https://riju.codes/oberon
+ example
+  MODULE Main;
+  
+  IMPORT Out;
+  
+  BEGIN
+    Out.String("Hello, world!");
+    Out.Ln;
+  END Main.
+  
+
+tiobe Oberon
+hopl 1415
+
+fileType text
+centralPackageRepositoryCount 0

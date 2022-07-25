@@ -1,15 +1,9 @@
 title PureScript
 appeared 2013
 type pl
+website http://functorial.com/purescript
 
-example
- import Prelude
- import Effect.Console (log)
- 
- greet :: String -> String
- greet name = "Hello, " <> name <> "!"
- 
- main = log (greet "World")
+compilesTo javascript
 
 features
  hasComments true
@@ -32,9 +26,18 @@ features
  hasStrings true
   "Hello world"
 
-githubLanguage PureScript
- fileExtensions purs
- trendingProjectsCount 0
+lineCommentToken --
+multiLineCommentTokens {- -}
+stringToken "
+
+example
+ import Prelude
+ import Effect.Console (log)
+ 
+ greet :: String -> String
+ greet name = "Hello, " <> name <> "!"
+ 
+ main = log (greet "World")
 
 githubRepo https://github.com/purescript/purescript
  firstCommit 2013
@@ -45,6 +48,10 @@ githubRepo https://github.com/purescript/purescript
  updated 2022
  description A strongly-typed language that compiles to JavaScript
  issues 269
+
+githubLanguage PureScript
+ fileExtensions purs
+ trendingProjectsCount 0
 
 linguistGrammarRepo https://github.com/purescript-contrib/atom-language-purescript
  firstCommit 2014
@@ -87,30 +94,12 @@ linguistGrammarRepo https://github.com/purescript-contrib/atom-language-purescri
   
   class ArrowPlus a where
     (<+>) :: forall b c. a b c -> a b c -> a b c
-
-website http://functorial.com/purescript
-
-tryItOnline purescript
-
-twitter purescript
-
-fileType text
-compilesTo javascript
-isOpenSource true
+languageServerProtocolProject https://github.com/nwolverson/purescript-language-server
+ writtenIn purescript
 
 projectEuler PureScript
  memberCount
   2022 4
-
-hackerNewsDiscussions
- id|title|time|timestamp|by|comments|score
- 6644685|Show HN: PureScript - a functional language which compiles to Javascript|2013-10-31 01:19:21 UTC|1383182361|paf31|0|2
-lineCommentToken --
-languageServerProtocolProject https://github.com/nwolverson/purescript-language-server
- writtenIn purescript
-jupyterKernel https://github.com/Eoksni/ipurescript
-packageRepository https://pursuit.purescript.org/
-multiLineCommentTokens {- -}
 leachim6 PureScript
  filepath p/PureScript.purs
  fileExtensions purs
@@ -121,4 +110,16 @@ leachim6 PureScript
   
   main = trace "Hello World"
   
-stringToken "
+
+tryItOnline purescript
+
+hackerNewsDiscussions
+ id|title|time|timestamp|by|comments|score
+ 6644685|Show HN: PureScript - a functional language which compiles to Javascript|2013-10-31 01:19:21 UTC|1383182361|paf31|0|2
+
+packageRepository https://pursuit.purescript.org/
+
+twitter purescript
+jupyterKernel https://github.com/Eoksni/ipurescript
+fileType text
+isOpenSource true

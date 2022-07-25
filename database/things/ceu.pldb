@@ -1,6 +1,16 @@
 title ceu
 appeared 2011
 type pl
+website http://www.ceu-lang.org
+reference http://www.ceu-lang.org/chico/ceu_sensys11.pdf
+country Brazil
+domainName ceu-lang.org
+ registered 2012
+
+features
+ hasPrintDebugging true
+
+printToken _printf
 
 example
  input int KEY;  
@@ -11,12 +21,3 @@ example
  with  
    await KEY;  
  end
-
-website http://www.ceu-lang.org
-reference http://www.ceu-lang.org/chico/ceu_sensys11.pdf
-country Brazil
-printToken _printf
-features
- hasPrintDebugging true
-domainName ceu-lang.org
- registered 2012

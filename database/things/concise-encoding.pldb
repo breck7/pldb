@@ -3,18 +3,18 @@ appeared 2018
 type dataNotation
 creators Karl Stenerud
 description Concise Encoding gives you ease and efficiency with its 1:1 compatible text and binary formats.
-
-githubRepo https://github.com/kstenerud/concise-encoding
- firstCommit 2018
- stars 225
- forks 5
- subscribers 5
- created 2018
- updated 2022
- description The secure data format for a  modern world
- issues 23
-
 website https://concise-encoding.org
+domainName concise-encoding.org
+ registered 2019
+
+features
+ hasLineComments true
+  // A comment
+ hasComments true
+  // A comment
+ hasSemanticIndentation false
+
+lineCommentToken //
 
 example
  c1
@@ -32,7 +32,6 @@ example
      "infinity"      = inf
      "neg infinity"  = -inf
  }
-
 example
  c1
  {
@@ -40,7 +39,6 @@ example
      "url"    = @"https://example.com/"
      "email"  = @"mailto:me@somewhere.com"
  }
-
 example
  c1
  {
@@ -52,7 +50,6 @@ example
      "media"     = |m application/x-sh 23 21 2f 62 69 6e 2f 73 68 0a 0a
                      65 63 68 6f 20 68 65 6c 6c 6f 20 77 6f 72 6c 64 0a|
  }
-
 example
  c1
  {
@@ -63,7 +60,6 @@ example
      "uint16 hex"    = |u16x 91fe 443a 9c15|
      "float32 array" = |f32 1.5e10 -8.31e-12|
  }
-
 example
  c1
  [
@@ -72,7 +68,6 @@ example
      @vehicle("Toyota" "Corolla"  "fwd"   false    )
      @vehicle("Honda"  "Civic"    "fwd"   false    )
  ]
-
 example
  c1
  [
@@ -95,7 +90,6 @@ example
          "sunroof" = false
      }
  ]
-
 example
  c1
  //
@@ -124,7 +118,6 @@ example
          )
      )
  )
-
 example
  c1
  //
@@ -151,7 +144,6 @@ example
          @($c {"weight"=4 "direction"="both"} $d)
      ]
  }
-
 example
  c1
  {
@@ -165,7 +157,6 @@ example
      // Reference pointing to part of another document.
      "outside ref" = $"https://xyz.com/document.cte#some_id"
  }
-
 example
  c1
  {
@@ -173,12 +164,13 @@ example
      "custom text"   = |c "cplx(2.94+3i)"|
      "custom binary" = |c 01 f6 28 3c 40 00 00 40 40|
  }
-lineCommentToken //
-features
- hasLineComments true
-  // A comment
- hasComments true
-  // A comment
- hasSemanticIndentation false
-domainName concise-encoding.org
- registered 2019
+
+githubRepo https://github.com/kstenerud/concise-encoding
+ firstCommit 2018
+ stars 225
+ forks 5
+ subscribers 5
+ created 2018
+ updated 2022
+ description The secure data format for a  modern world
+ issues 23

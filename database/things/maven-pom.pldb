@@ -1,8 +1,9 @@
 title Apache Maven
 appeared 2004
 type application
-
 description Apache Maven is a software project management and comprehension tool. Based on the concept of a project object model (POM), Maven can manage a project's build, reporting and documentation from a central piece of information.
+website http://maven.apache.org/
+domainName maven.apache.org
 
 wikipedia https://en.wikipedia.org/wiki/Apache_Maven
  example
@@ -247,8 +248,6 @@ linguistGrammarRepo https://github.com/textmate/maven.tmbundle
   </project>
   
 
-website http://maven.apache.org/
 fileType text
 isOpenSource true
 centralPackageRepositoryCount 0
-domainName maven.apache.org

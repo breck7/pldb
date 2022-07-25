@@ -36,25 +36,15 @@ githubLanguage HTTP
  fileExtensions http
  trendingProjectsCount 0
 
+codeMirror http
+pygmentsHighlighter HTTP
+ filename textfmts.py
 linguistGrammarRepo https://github.com/samsalisbury/Sublime-HTTP
  firstCommit 2014
  lastCommit 2015
  committerCount 1
  commitCount 3
 
-fileType na
-wordRank 4663
-
-codeMirror http
-
-centralPackageRepositoryCount 0
-goodreads
- title|year|author|goodreadsId|rating|ratings|reviews
- HTTP Developer's Handbook|2003|Chris Shiflett|1015229|3.78|18|1
- What Every Web Developer Should Know About HTTP (OdeToCode, #1)|2012|K. Scott Allen|26214178|4.07|351|29
- HTTP Programming Recipes for C# Bots|2007|Jeff Heaton|2344177|3.25|8|1
-pygmentsHighlighter HTTP
- filename textfmts.py
 leachim6 HTTP
  filepath h/HTTP.py
  fileExtensions py
@@ -74,3 +64,13 @@ leachim6 HTTP
   httpd = socketserver.TCPServer(('', 8000), Handler)
   httpd.serve_forever()
   
+
+goodreads
+ title|year|author|goodreadsId|rating|ratings|reviews
+ HTTP Developer's Handbook|2003|Chris Shiflett|1015229|3.78|18|1
+ What Every Web Developer Should Know About HTTP (OdeToCode, #1)|2012|K. Scott Allen|26214178|4.07|351|29
+ HTTP Programming Recipes for C# Bots|2007|Jeff Heaton|2344177|3.25|8|1
+
+fileType na
+wordRank 4663
+centralPackageRepositoryCount 0

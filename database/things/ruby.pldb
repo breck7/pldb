@@ -2,6 +2,12 @@ title Ruby
 appeared 1995
 type pl
 creators Yukihiro Matsumoto
+website www.ruby-lang.org
+reference https://stackoverflow.com/questions/9446150/where-are-keywords-defined-in-ruby
+fileExtensions rb
+country Japan
+
+visualParadigm false
 
 features
  hasDependentTypes false
@@ -118,6 +124,12 @@ features
  hasSemanticIndentation false
  isCaseSensitive true
 
+lineCommentToken #
+multiLineCommentTokens =begin =end
+printToken puts
+stringToken "
+keywords __ENCODING__ __FILE__ __LINE__ alias and BEGIN begin break case class def defined do else elsif END end ensure false for if in module next nil not or redo rescue retry return self super then true undef unless until when while yield
+
 wikipedia https://en.wikipedia.org/wiki/Ruby_(programming_language)
  example
   "Hello, World!".in_blue
@@ -163,11 +175,12 @@ githubLanguage Ruby
   sinatra sinatra https://github.com/sinatra.png https://github.com/sinatra/sinatra Ruby #701516 10680 1923 60 "Classy web-development dressed in a DSL (official / canonical repo)"
  trendingProjectsCount 26
 
-helloWorldCollection Ruby
- # Hello World in Ruby
- puts "Hello World!"
- 
-
+antlr https://github.com/antlr/grammars-v4/tree/master/ruby
+monaco ruby
+codeMirror ruby
+pygmentsHighlighter Ruby
+ filename ruby.py
+ fileExtensions rb rbw Rakefile rake gemspec rbx duby Gemfile Vagrantfile
 linguistGrammarRepo https://github.com/atom/language-ruby
  firstCommit 2013
  lastCommit 2018
@@ -178,55 +191,6 @@ linguistGrammarRepo https://github.com/atom/language-ruby
   module Foo
   end
   
-
-website www.ruby-lang.org
-reference https://stackoverflow.com/questions/9446150/where-are-keywords-defined-in-ruby
-
-replit ruby
-
-tryItOnline ruby
-
-country Japan
-fileExtensions rb
-fileType text
-wordRank 5813
-
-tiobe Ruby
- currentRank 13
-
-meetup ruby
- memberCount 705060
- groupCount 932
-
-linkedInSkill ruby
- 2018 271878
-
-projectEuler Ruby
- memberCount
-  2019 5407
-  2022 5435
-
-hopl 2458
-
-subreddit ruby
- memberCount
-  2017 36676
-  2022 75926
-
-quineRelay Ruby
-
-ubuntuPackage ruby
-
-codeMirror ruby
-
-rosettaCode Ruby
-
-antlr https://github.com/antlr/grammars-v4/tree/master/ruby
-
-conference https://rubyconf.org RubyConf
-indeedJobs ruby engineer
- 2017 8719
-lineCommentToken #
 languageServerProtocolProject https://github.com/castwide/solargraph
  writtenIn ruby
 languageServerProtocolProject https://github.com/mtsmfm/language_server-ruby
@@ -235,26 +199,15 @@ languageServerProtocolProject https://github.com/swistak35/orbacle
  writtenIn ruby
 languageServerProtocolProject https://github.com/kwerle/ruby_language_server
  writtenIn ruby
-visualParadigm false
-jupyterKernel https://github.com/SciRuby/iruby
-keywords __ENCODING__ __FILE__ __LINE__ alias and BEGIN begin break case class def defined do else elsif END end ensure false for if in module next nil not or redo rescue retry return self super then true undef unless until when while yield
-stackOverflowSurvey
- 2021
-  users 5569
-  medianSalary 80000
-  fans 4942
-  percentageUsing 0.07
-packageRepository https://rubygems.org/
-rijuRepl https://riju.codes/ruby
- example
-  puts "Hello, world!"
-  
-multiLineCommentTokens =begin =end
-printToken puts
-githubCopilotOptimized
-pygmentsHighlighter Ruby
- filename ruby.py
- fileExtensions rb rbw Rakefile rake gemspec rbx duby Gemfile Vagrantfile
+
+projectEuler Ruby
+ memberCount
+  2019 5407
+  2022 5435
+helloWorldCollection Ruby
+ # Hello World in Ruby
+ puts "Hello World!"
+ 
 leachim6 Ruby
  filepath r/Ruby.rb
  fileExtensions rb
@@ -262,5 +215,44 @@ leachim6 Ruby
   #!/usr/bin/env ruby
   print "Hello World"
   
-monaco ruby
-stringToken "
+rosettaCode Ruby
+quineRelay Ruby
+
+rijuRepl https://riju.codes/ruby
+ example
+  puts "Hello, world!"
+  
+replit ruby
+tryItOnline ruby
+
+indeedJobs ruby engineer
+ 2017 8719
+linkedInSkill ruby
+ 2018 271878
+stackOverflowSurvey
+ 2021
+  users 5569
+  medianSalary 80000
+  fans 4942
+  percentageUsing 0.07
+
+subreddit ruby
+ memberCount
+  2017 36676
+  2022 75926
+meetup ruby
+ memberCount 705060
+ groupCount 932
+conference https://rubyconf.org RubyConf
+
+tiobe Ruby
+ currentRank 13
+hopl 2458
+
+packageRepository https://rubygems.org/
+
+ubuntuPackage ruby
+jupyterKernel https://github.com/SciRuby/iruby
+fileType text
+wordRank 5813
+githubCopilotOptimized

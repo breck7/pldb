@@ -1,13 +1,18 @@
 title Yacas
 appeared 1999
 type pl
+description a general-purpose computer algebra system. The name is an acronym for Yet Another Computer Algebra System.
+website http://www.yacas.org/
+standsFor Yet Another Computer Algebra System
+domainName yacas.org
+ registered 2015
+
+writtenIn cpp
 
 example
  record["name"]:="Isaia";
  record["occupation"]:="prophet";
  record["is alive"]:=False;
-
-description a general-purpose computer algebra system. The name is an acronym for Yet Another Computer Algebra System.
 
 wikipedia https://en.wikipedia.org/wiki/Yacas
  related ascii
@@ -19,17 +24,11 @@ wikipedia https://en.wikipedia.org/wiki/Yacas
  dailyPageViews 12
  appeared 1999
 
-website http://www.yacas.org/
-standsFor Yet Another Computer Algebra System
-fileType text
-isOpenSource true
+rosettaCode Yacas
 
 hopl 593
 
-rosettaCode Yacas
-
-writtenIn cpp
 jupyterKernel https://github.com/grzegorzmazur/yacas_kernel
+fileType text
+isOpenSource true
 centralPackageRepositoryCount 0
-domainName yacas.org
- registered 2015

@@ -2,6 +2,17 @@ title Handel-C
 appeared 1996
 type pl
 
+features
+ hasMultiLineComments true
+  /* A comment
+  */
+ hasComments true
+  /* A comment
+  */
+ hasSemanticIndentation false
+
+multiLineCommentTokens /* */
+
 wikipedia https://en.wikipedia.org/wiki/Handel-C
  example
   int a;
@@ -29,12 +40,3 @@ wikipedia https://en.wikipedia.org/wiki/Handel-C
  appeared 1996
 
 centralPackageRepositoryCount 0
-multiLineCommentTokens /* */
-features
- hasMultiLineComments true
-  /* A comment
-  */
- hasComments true
-  /* A comment
-  */
- hasSemanticIndentation false

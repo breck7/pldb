@@ -1,6 +1,22 @@
 title SuperCollider
 appeared 1996
 type pl
+website http://supercollider.github.io
+domainName supercollider.github.io
+
+features
+ hasLineComments true
+  // A comment
+ hasComments true
+  // A comment
+ hasPrintDebugging true
+ hasSemanticIndentation false
+ hasStrings true
+  "Hello world"
+
+lineCommentToken //
+printToken postln
+stringToken "
 
 wikipedia https://en.wikipedia.org/wiki/SuperCollider
  example
@@ -19,11 +35,9 @@ githubLanguage SuperCollider
  fileExtensions sc scd
  trendingProjectsCount 0
 
-helloWorldCollection SuperCollider
- // Hello World in SuperCollider
- 
- "Hello, world!".postln;
-
+pygmentsHighlighter SuperCollider
+ filename supercollider.py
+ fileExtensions sc scd
 linguistGrammarRepo https://github.com/supercollider/language-supercollider
  firstCommit 2014
  lastCommit 2017
@@ -51,39 +65,25 @@ linguistGrammarRepo https://github.com/supercollider/language-supercollider
   	}
   }
 
-website http://supercollider.github.io
-fileType text
-isOpenSource true
-
-tiobe SuperCollider
-
-hopl 6465
-
-rosettaCode SuperCollider
-
-centralPackageRepositoryCount 0
-goodreads
- title|year|author|goodreadsId|rating|ratings|reviews
- Programming digital music with SuperCollider|2014|Peter Fitton|40386468|4.00|3|0
-lineCommentToken //
-features
- hasLineComments true
-  // A comment
- hasComments true
-  // A comment
- hasPrintDebugging true
- hasSemanticIndentation false
- hasStrings true
-  "Hello world"
-pygmentsHighlighter SuperCollider
- filename supercollider.py
- fileExtensions sc scd
+helloWorldCollection SuperCollider
+ // Hello World in SuperCollider
+ 
+ "Hello, world!".postln;
 leachim6 SuperCollider
  filepath s/SuperCollider.sc
  fileExtensions sc
  example
   "Hello World".postln;
   
-printToken postln
-domainName supercollider.github.io
-stringToken "
+rosettaCode SuperCollider
+
+goodreads
+ title|year|author|goodreadsId|rating|ratings|reviews
+ Programming digital music with SuperCollider|2014|Peter Fitton|40386468|4.00|3|0
+
+tiobe SuperCollider
+hopl 6465
+
+fileType text
+isOpenSource true
+centralPackageRepositoryCount 0

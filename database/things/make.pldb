@@ -2,23 +2,10 @@ title Make
 appeared 1977
 type application
 description Make — a program for maintaining computer programs
-
 reference https://semanticscholar.org/paper/40cf2b47de20d0b930cd4b5184febe40bdc681c8
-
-wordRank 132
-
-hopl 768
 
 related makefile
 
-
-centralPackageRepositoryCount 0
-rijuRepl https://riju.codes/make
- example
-  .PHONY: all
-  all:
-  	@echo "Hello, world!"
-  
 leachim6 Make
  filepath m/Make.makefile
  fileExtensions makefile
@@ -26,3 +13,15 @@ leachim6 Make
   $(info "Hello World")
   all:
   
+
+rijuRepl https://riju.codes/make
+ example
+  .PHONY: all
+  all:
+  	@echo "Hello, world!"
+  
+
+hopl 768
+
+wordRank 132
+centralPackageRepositoryCount 0

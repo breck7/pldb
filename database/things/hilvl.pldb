@@ -1,6 +1,17 @@
 title hilvl
 appeared 2015
 type pl
+creators Holger Ludvigsen
+description Hilvl is a programming language that is versatile but with a very small syntax. All code in hilvl are single-argument invocations of actions that belong to services. Services are the fundamental building blocks of a hilvl program. And the name hilvl reflects how this is a higher level of abstraction than objects and functions.
+
+features
+ hasLineComments true
+  // A comment
+ hasComments true
+  // A comment
+ hasSemanticIndentation false
+
+lineCommentToken //
 
 example
  @ var foo = 42
@@ -28,8 +39,6 @@ example
     
  MyService myAction (@ . foo) // foo is now 6, and this returns 16
 
-description Hilvl is a programming language that is versatile but with a very small syntax. All code in hilvl are single-argument invocations of actions that belong to services. Services are the fundamental building blocks of a hilvl program. And the name hilvl reflects how this is a higher level of abstraction than objects and functions.
-
 githubRepo https://github.com/holgerl/hilvl
  firstCommit 2015
  stars 6
@@ -39,12 +48,3 @@ githubRepo https://github.com/holgerl/hilvl
  description The hilvl programming language
  issues 9
  forks 0
-
-creators Holger Ludvigsen
-lineCommentToken //
-features
- hasLineComments true
-  // A comment
- hasComments true
-  // A comment
- hasSemanticIndentation false

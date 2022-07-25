@@ -2,6 +2,17 @@ title Kotlin
 appeared 2011
 type pl
 creators Andrey Breslav
+website https://kotlinlang.org
+reference https://steve-yegge.blogspot.co.nz/2017/05/why-kotlin-is-better-than-whatever-dumb.html
+cheatSheetUrl https://www.ekito.fr/people/wp-content/uploads/2016/11/Kotlin-Cheat-Sheet-by-ekito-1.2.pdf
+fileExtensions kt kts
+corporateDevelopers JetBrains
+domainName kotlinlang.org
+ registered 2013
+
+runsOnVm jvm
+
+visualParadigm false
 
 features
  hasComments true
@@ -30,6 +41,12 @@ features
   /* A comment
   */
  hasStrings true
+
+lineCommentToken //
+multiLineCommentTokens /* */
+printToken println
+stringToken "
+keywords as as? break class continue do else false for fun if in !in interface is !is null object package return super this throw true try typealias val var when while by catch constructor delegate dynamic field file finally get import init param property receiver set setparam where actual abstract annotation companion const crossinline data enum expect external final infix inline inner internal lateinit noinline open operator out override private protected public reified sealed suspend tailrec vararg field it + - * / % * = += -= *= /= %= ++ -- && || ! == != === !== < > <= >= [ ] !! ?. ?: :: .. : ? ->; @ ; $ _
 
 wikipedia https://en.wikipedia.org/wiki/Kotlin_(programming_language)
  example
@@ -80,13 +97,11 @@ githubLanguage Kotlin
   kittinunf fuel https://github.com/kittinunf.png https://github.com/kittinunf/fuel Kotlin #F18E33 3012 316 88 "The easiest HTTP networking library for Kotlin/Android"
  trendingProjectsCount 26
 
-helloWorldCollection Kotlin
- // Hello world in Kotlin
- 
- fun main(args : Array<String>) {
-     println("Hello, world!")
- }
-
+antlr https://github.com/antlr/grammars-v4/tree/master/kotlin
+monaco kotlin
+pygmentsHighlighter Kotlin
+ filename jvm.py
+ fileExtensions kt kts
 linguistGrammarRepo https://github.com/nishtahir/language-kotlin
  firstCommit 2018
  lastCommit 2018
@@ -142,69 +157,16 @@ linguistGrammarRepo https://github.com/nishtahir/language-kotlin
   
   class Country(val name : String)
 
-website https://kotlinlang.org
-reference https://steve-yegge.blogspot.co.nz/2017/05/why-kotlin-is-better-than-whatever-dumb.html
-
-replit kotlin
-
-tryItOnline kotlin
-
-twitter kotlin
-
-fileExtensions kt kts
-fileType text
-runsOnVm jvm
-isOpenSource true
-
-tiobe Kotlin
- currentRank 48
-
-meetup kotlin
- memberCount 33854
- groupCount 138
-
 projectEuler Kotlin
  memberCount
   2019 80
   2022 275
-
-subreddit Kotlin
- memberCount
-  2017 6987
-  2022 61654
-
-rosettaCode Kotlin
-
-antlr https://github.com/antlr/grammars-v4/tree/master/kotlin
-
-corporateDevelopers JetBrains
-cheatSheetUrl https://www.ekito.fr/people/wp-content/uploads/2016/11/Kotlin-Cheat-Sheet-by-ekito-1.2.pdf
-lineCommentToken //
-visualParadigm false
-jupyterKernel https://github.com/ligee/kotlin-jupyter
-keywords as as? break class continue do else false for fun if in !in interface is !is null object package return super this throw true try typealias val var when while by catch constructor delegate dynamic field file finally get import init param property receiver set setparam where actual abstract annotation companion const crossinline data enum expect external final infix inline inner internal lateinit noinline open operator out override private protected public reified sealed suspend tailrec vararg field it + - * / % * = += -= *= /= %= ++ -- && || ! == != === !== < > <= >= [ ] !! ?. ?: :: .. : ? ->; @ ; $ _
-stackOverflowSurvey
- 2021
-  users 6866
-  medianSalary 55071
-  fans 10691
-  percentageUsing 0.08
-centralPackageRepositoryCount 0
-rijuRepl https://riju.codes/kotlin
- example
-  println("Hello, world!")
-  
-goodreads
- title|year|author|goodreadsId|rating|ratings|reviews
- Kotlin for Android Developers: Learn Kotlin the easy way while developing an Android App||Antonio Leiva|50360838|3.81|117|17
- Programming Kotlin||Stephen Samuel|55025626|3.96|27|4
- Kotlin Apprentice: Beginning Programming with Kotlin||raywenderlich.com Team|63806537|0.0|0|0
- Reactive Programming in Kotlin: Design and build non-blocking, asynchronous Kotlin applications with RXKotlin, Reactor-Kotlin, Android, and Spring||Rivu Chakraborty|57362464|3.93|14|2
- Programming Kotlin||Venkat Subramaniam|66381682|5.00|1|0
- Kotlin Programming: The Big Nerd Ranch Guide||Matthew Mathias|58631045|0.0|0|0
-pygmentsHighlighter Kotlin
- filename jvm.py
- fileExtensions kt kts
+helloWorldCollection Kotlin
+ // Hello world in Kotlin
+ 
+ fun main(args : Array<String>) {
+     println("Hello, world!")
+ }
 leachim6 Kotlin
  filepath k/Kotlin.kt
  fileExtensions kt
@@ -213,9 +175,44 @@ leachim6 Kotlin
     println("Hello World")
   }
   
-printToken println
-multiLineCommentTokens /* */
-domainName kotlinlang.org
- registered 2013
-monaco kotlin
-stringToken "
+rosettaCode Kotlin
+
+rijuRepl https://riju.codes/kotlin
+ example
+  println("Hello, world!")
+  
+replit kotlin
+tryItOnline kotlin
+
+stackOverflowSurvey
+ 2021
+  users 6866
+  medianSalary 55071
+  fans 10691
+  percentageUsing 0.08
+
+subreddit Kotlin
+ memberCount
+  2017 6987
+  2022 61654
+meetup kotlin
+ memberCount 33854
+ groupCount 138
+
+goodreads
+ title|year|author|goodreadsId|rating|ratings|reviews
+ Kotlin for Android Developers: Learn Kotlin the easy way while developing an Android App||Antonio Leiva|50360838|3.81|117|17
+ Programming Kotlin||Stephen Samuel|55025626|3.96|27|4
+ Kotlin Apprentice: Beginning Programming with Kotlin||raywenderlich.com Team|63806537|0.0|0|0
+ Reactive Programming in Kotlin: Design and build non-blocking, asynchronous Kotlin applications with RXKotlin, Reactor-Kotlin, Android, and Spring||Rivu Chakraborty|57362464|3.93|14|2
+ Programming Kotlin||Venkat Subramaniam|66381682|5.00|1|0
+ Kotlin Programming: The Big Nerd Ranch Guide||Matthew Mathias|58631045|0.0|0|0
+
+tiobe Kotlin
+ currentRank 48
+
+twitter kotlin
+jupyterKernel https://github.com/ligee/kotlin-jupyter
+fileType text
+isOpenSource true
+centralPackageRepositoryCount 0

@@ -1,6 +1,15 @@
 title Frost
 appeared 2017
 type pl
+creators Ethan Nicholas
+website https://www.frostlang.org/
+domainName frostlang.org
+ registered 2019
+
+features
+ hasPrintDebugging true
+
+printToken Console.printLine
 
 example
  ========================================================
@@ -45,11 +54,3 @@ githubRepo https://github.com/ethannicholas/Frost
  updated 2022
  description Frost is a powerful, general purpose, multi-paradigm programming language
  issues 0
-
-website https://www.frostlang.org/
-creators Ethan Nicholas
-printToken Console.printLine
-features
- hasPrintDebugging true
-domainName frostlang.org
- registered 2019

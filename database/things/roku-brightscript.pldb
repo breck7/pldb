@@ -1,6 +1,16 @@
 title Brightscript
 appeared 2010
 type pl
+reference https://medium.com/float-left-insights/what-makes-roku-brightscript-a-powerful-scripting-language-5f46532f496d
+
+features
+ hasLineComments true
+  ' A comment
+ hasComments true
+  ' A comment
+ hasSemanticIndentation false
+
+lineCommentToken '
 
 githubLanguage Brightscript
  fileExtensions brs
@@ -73,13 +83,5 @@ linguistGrammarRepo https://github.com/cmink/BrightScript.tmbundle
       theme.GridScreenDescriptionTitleColor    = "#001090"
       theme.GridScreenDescriptionDateColor     = "
 
-reference https://medium.com/float-left-insights/what-makes-roku-brightscript-a-powerful-scripting-language-5f46532f496d
 fileType text
 centralPackageRepositoryCount 0
-lineCommentToken '
-features
- hasLineComments true
-  ' A comment
- hasComments true
-  ' A comment
- hasSemanticIndentation false

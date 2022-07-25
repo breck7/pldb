@@ -1,6 +1,7 @@
 title Nix
 appeared 2003
 type packageManager
+reference https://nixos.org/
 
 example
  {
@@ -19,6 +20,9 @@ githubLanguage Nix
   rycee home-manager https://github.com/rycee.png https://github.com/rycee/home-manager Nix #7e7eff 712 225 38 "Manage a user environment using Nix"
  trendingProjectsCount 3
 
+pygmentsHighlighter Nix
+ filename nix.py
+ fileExtensions nix
 linguistGrammarRepo https://github.com/wmertens/sublime-nix
  firstCommit 2014
  lastCommit 2017
@@ -107,13 +111,9 @@ linguistGrammarRepo https://github.com/wmertens/sublime-nix
     };
   }
 
-reference https://nixos.org/
-fileType text
-
 rosettaCode Nix
 
 packageCount 49610
+
+fileType text
 centralPackageRepositoryCount 0
-pygmentsHighlighter Nix
- filename nix.py
- fileExtensions nix

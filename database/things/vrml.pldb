@@ -2,6 +2,12 @@ title VRML
 appeared 1994
 type pl
 
+features
+ hasStrings true
+  "Hello world"
+
+stringToken "
+
 wikipedia https://en.wikipedia.org/wiki/VRML
  related java ecmascript gzip collada webgl
  summary VRML (Virtual Reality Modeling Language, pronounced vermal or by its initials, originally—before 1995—known as the Virtual Reality Markup Language) is a standard file format for representing 3-dimensional (3D) interactive vector graphics, designed particularly with the World Wide Web in mind. It has been superseded by X3D.
@@ -12,12 +18,6 @@ wikipedia https://en.wikipedia.org/wiki/VRML
  dailyPageViews 170
  appeared 1995
 
-
-hopl 3756
-
-rosettaCode VRML
-
-centralPackageRepositoryCount 0
 leachim6 VRML
  filepath v/VRML.wrl
  fileExtensions wrl
@@ -28,7 +28,8 @@ leachim6 VRML
           string "Hello World"
       }
   }
-stringToken "
-features
- hasStrings true
-  "Hello world"
+rosettaCode VRML
+
+hopl 3756
+
+centralPackageRepositoryCount 0

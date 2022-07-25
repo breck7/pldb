@@ -1,20 +1,10 @@
 title CSVw
 appeared 2014
 type dataValidationLanguage
+creators Ivan Herman
 description The CSV on the Web Working Group has developed standard ways to express useful metadata about CSV files and other kinds of tabular data.
-standsFor CSV on the Web
-
-githubRepo https://github.com/w3c/csvw
- firstCommit 2014
- stars 145
- forks 53
- subscribers 54
- created 2014
- updated 2022
- description Documents produced by the CSV on the Web Working Group
- issues 35
-
 reference https://www.w3.org/TR/tabular-data-primer/
+standsFor CSV on the Web
 
 example
  {
@@ -45,4 +35,13 @@ example
      }]
    }
  }
-creators Ivan Herman
+
+githubRepo https://github.com/w3c/csvw
+ firstCommit 2014
+ stars 145
+ forks 53
+ subscribers 54
+ created 2014
+ updated 2022
+ description Documents produced by the CSV on the Web Working Group
+ issues 35

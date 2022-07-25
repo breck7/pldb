@@ -1,13 +1,17 @@
 title Mirah
 appeared 2009
 type pl
-
-example
- def foo(a:String, b:int)
+creators Charles Oliver Nutter
+website http://www.mirah.org
+domainName mirah.org
+ registered 2010
 
 features
  hasComments true
  hasSemanticIndentation false
+
+example
+ def foo(a:String, b:int)
 
 wikipedia https://en.wikipedia.org/wiki/Mirah_(programming_language)
  example
@@ -37,13 +41,8 @@ linguistGrammarRepo https://github.com/atom/language-ruby
  committerCount 76
  commitCount 458
 
-website http://www.mirah.org
-fileType text
-isOpenSource true
-
 rosettaCode Mirah
 
+fileType text
+isOpenSource true
 centralPackageRepositoryCount 0
-creators Charles Oliver Nutter
-domainName mirah.org
- registered 2010

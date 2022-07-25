@@ -2,6 +2,15 @@ title MQL5
 appeared 2005
 type pl
 
+features
+ hasLineComments true
+  // A comment
+ hasComments true
+  // A comment
+ hasSemanticIndentation false
+
+lineCommentToken //
+
 wikipedia https://en.wikipedia.org/wiki/MetaQuotes_Language_MQL4/MQL5
  summary MQL4 (MetaQuotes Language 4) and MQL5 (MetaQuotes Language 5) are integrated programming languages designed for developing trading robots, technical market indicators, scripts and function libraries within the MetaTrader software. The primary objective of MQL4 and MQL5 is automation of trading and facilitation of operational analysis. MQL4 and MQL5 comprises an extensive codebase source code library used for developing trading robots.
  pageId 44398671
@@ -15,6 +24,9 @@ githubLanguage MQL4
  fileExtensions mq4 mqh mq5 mqh
  trendingProjectsCount 0
 
+pygmentsHighlighter MQL
+ filename c_like.py
+ fileExtensions mq4 mq5 mqh
 linguistGrammarRepo https://github.com/mqsoft/MQL5-sublime
  firstCommit 2016
  lastCommit 2016
@@ -80,8 +92,6 @@ linguistGrammarRepo https://github.com/mqsoft/MQL5-sublime
   //+------------------------------------------------------------------+
   
 
-fileType text
-centralPackageRepositoryCount 0
 goodreads
  title|year|author|goodreadsId|rating|ratings|reviews
  Expert Advisor Programming: Creating Automated Trading Systems in MQL for Metatrader 4|2009|Andrew R. Young|11791642|3.65|17|1
@@ -93,13 +103,6 @@ goodreads
  Expert Advisor Programming for Metatrader 5: Creating Automated Trading Systems in the Mql5 Language|2013|Andrew R. Young|23933556|3.83|6|0
  Introduction to MetaTrader 5 and Programming with MQL5 : Create your 1st Investment Robot with MQL5 step by step from ZERO.||Rafael F. V. C. Santos|63495915|1.00|1|0
  MQL5 programming language: Advanced use of the trading platform MetaTrader 5: Creating trading robots and indicators||Timur Mashnin|54147063|3.00|1|0
-lineCommentToken //
-features
- hasLineComments true
-  // A comment
- hasComments true
-  // A comment
- hasSemanticIndentation false
-pygmentsHighlighter MQL
- filename c_like.py
- fileExtensions mq4 mq5 mqh
+
+fileType text
+centralPackageRepositoryCount 0

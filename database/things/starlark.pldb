@@ -1,6 +1,22 @@
 title starlark
 appeared 2018
 type pl
+creators Laurent Le Brun
+description The language used in Bazel. Starlark is designed to be small, simple, and thread-safe. Although it is inspired from Python, it is not a general-purpose language and most Python features are not included. Starlark is syntactically a subset of Python 3
+
+features
+ hasLineComments true
+  # A comment
+ hasComments true
+  # A comment
+ hasPrintDebugging true
+ hasSemanticIndentation false
+ hasStrings true
+  "Hello world"
+
+lineCommentToken #
+printToken print
+stringToken "
 
 example
  # Define a number
@@ -39,8 +55,6 @@ example
  
  fizz_buzz(20)
 
-description The language used in Bazel. Starlark is designed to be small, simple, and thread-safe. Although it is inspired from Python, it is not a general-purpose language and most Python features are not included. Starlark is syntactically a subset of Python 3
-
 githubRepo https://github.com/bazelbuild/starlark
  firstCommit 2018
  stars 1416
@@ -51,22 +65,9 @@ githubRepo https://github.com/bazelbuild/starlark
  description Starlark Language
  issues 65
 
-creators Laurent Le Brun
-lineCommentToken #
-features
- hasLineComments true
-  # A comment
- hasComments true
-  # A comment
- hasPrintDebugging true
- hasSemanticIndentation false
- hasStrings true
-  "Hello world"
 leachim6 Starlark
  filepath s/Starlark.star
  fileExtensions star
  example
   print("Hello World")
   
-printToken print
-stringToken "

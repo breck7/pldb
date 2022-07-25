@@ -1,6 +1,9 @@
 title CFEngine
 appeared 1993
 type application
+website https://cfengine.com
+domainName cfengine.com
+ registered 2001
 
 example
  #!/var/cfengine/bin/cf-agent --no-lock
@@ -29,16 +32,6 @@ wikipedia https://en.wikipedia.org/wiki/CFEngine
  dailyPageViews 56
  appeared 1993
 
-website https://cfengine.com
-
-twitter cfengine
-
-fileType text
-isOpenSource true
-centralPackageRepositoryCount 0
-goodreads
- title|year|author|goodreadsId|rating|ratings|reviews
- A System Engineer's Guide to Host Configuration and Maintenance using Cfengine (SAGE Short Topics in System Administration, #16)|2007|Mark  Burgess|15031383|0.0|0|0
 leachim6 CFEngine
  filepath c/CFEngine.cf
  fileExtensions cf
@@ -55,5 +48,12 @@ leachim6 CFEngine
         "Hello World";
   }
   
-domainName cfengine.com
- registered 2001
+
+goodreads
+ title|year|author|goodreadsId|rating|ratings|reviews
+ A System Engineer's Guide to Host Configuration and Maintenance using Cfengine (SAGE Short Topics in System Administration, #16)|2007|Mark  Burgess|15031383|0.0|0|0
+
+twitter cfengine
+fileType text
+isOpenSource true
+centralPackageRepositoryCount 0

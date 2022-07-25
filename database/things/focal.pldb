@@ -1,6 +1,14 @@
 title Formulating On-Line Calculations in Algebraic Language
 appeared 1968
 type pl
+creators Richard Merrill
+standsFor Formulating On-Line Calculations in Algebraic Language
+
+features
+ hasStrings true
+  "Hello world"
+
+stringToken "
 
 wikipedia https://en.wikipedia.org/wiki/FOCAL_(programming_language)
  example
@@ -27,26 +35,18 @@ wikipedia https://en.wikipedia.org/wiki/FOCAL_(programming_language)
  dailyPageViews 18
  appeared 1968
 
-standsFor Formulating On-Line Calculations in Algebraic Language
-
-tryItOnline focal
-
-fileType text
-wordRank 9081
-
-hopl 406
-
-rosettaCode FOCAL
-
-centralPackageRepositoryCount 0
-creators Richard Merrill
 leachim6 Focal
  filepath f/Focal.fc
  fileExtensions fc
  example
   0.1.0.1 TYPE "HELLO WORLD" , !
   
-stringToken "
-features
- hasStrings true
-  "Hello world"
+rosettaCode FOCAL
+
+tryItOnline focal
+
+hopl 406
+
+fileType text
+wordRank 9081
+centralPackageRepositoryCount 0

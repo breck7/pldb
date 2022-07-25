@@ -1,6 +1,7 @@
 title Assert Statements
 type feature
-psuedoExample assert(isTrue)
 description Assert Statements can be built into the language or included in a standard library.
 reference https://en.wikipedia.org/wiki/Debug_code#Assert_Statements
+
+psuedoExample assert(isTrue)
 featureKeyword hasAssertStatements

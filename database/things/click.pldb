@@ -2,9 +2,14 @@ title Click
 appeared 1999
 type pl
 
-githubLanguage Click
- fileExtensions click
- trendingProjectsCount 0
+features
+ hasLineComments true
+  // A comment
+ hasComments true
+  // A comment
+ hasSemanticIndentation false
+
+lineCommentToken //
 
 githubRepo https://github.com/kohler/click
  firstCommit 1999
@@ -15,6 +20,10 @@ githubRepo https://github.com/kohler/click
  updated 2022
  description The Click modular router: fast modular packet processing and analysis
  issues 140
+
+githubLanguage Click
+ fileExtensions click
+ trendingProjectsCount 0
 
 linguistGrammarRepo https://github.com/stenverbois/language-click.git
  firstCommit 2015
@@ -162,10 +171,3 @@ fileType text
 wordRank 94
 isOpenSource true
 centralPackageRepositoryCount 0
-lineCommentToken //
-features
- hasLineComments true
-  // A comment
- hasComments true
-  // A comment
- hasSemanticIndentation false

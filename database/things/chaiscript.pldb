@@ -1,6 +1,9 @@
 title chaiscript
 appeared 2009
 type pl
+website http://chaiscript.com/
+domainName chaiscript.com
+ registered 2009
 
 example
  #include <chaiscript/chaiscript.hpp>
@@ -25,9 +28,6 @@ githubRepo https://github.com/ChaiScript/ChaiScript
  description Embedded Scripting Language Designed for C++
  issues 114
 
-website http://chaiscript.com/
 pygmentsHighlighter ChaiScript
  filename scripting.py
  fileExtensions chai
-domainName chaiscript.com
- registered 2009

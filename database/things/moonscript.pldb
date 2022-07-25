@@ -1,6 +1,26 @@
 title MoonScript
 appeared 2011
 type pl
+website http://moonscript.org/
+webRepl http://moonscript.org/compiler/
+domainName moonscript.org
+
+compilesTo lua
+writtenIn lua
+
+features
+ hasLineComments true
+  -- A comment
+ hasComments true
+  -- A comment
+ hasPrintDebugging true
+ hasSemanticIndentation false
+ hasStrings true
+  'Hello world'
+
+lineCommentToken --
+printToken print
+stringToken '
 
 example
  class Thing
@@ -13,10 +33,6 @@ example
    .name = "MoonScript"
    \say_name!
 
-githubLanguage MoonScript
- fileExtensions moon
- trendingProjectsCount 0
-
 githubRepo https://github.com/leafo/moonscript
  stars 2801
  forks 194
@@ -27,6 +43,13 @@ githubRepo https://github.com/leafo/moonscript
  description :crescent_moon: A language that compiles to Lua
  issues 181
 
+githubLanguage MoonScript
+ fileExtensions moon
+ trendingProjectsCount 0
+
+pygmentsHighlighter MoonScript
+ filename scripting.py
+ fileExtensions moon
 linguistGrammarRepo https://github.com/leafo/moonscript-tmbundle
  firstCommit 2011
  lastCommit 2015
@@ -126,38 +149,16 @@ linguistGrammarRepo https://github.com/leafo/moonscript-tmbundle
         @listen "continue", ->
           unless continue_name
 
-website http://moonscript.org/
-
-tryItOnline moonscript
-
-fileType text
-compilesTo lua
-isOpenSource true
-webRepl http://moonscript.org/compiler/
-
-rosettaCode MoonScript
-
-writtenIn lua
-centralPackageRepositoryCount 0
-lineCommentToken --
-features
- hasLineComments true
-  -- A comment
- hasComments true
-  -- A comment
- hasPrintDebugging true
- hasSemanticIndentation false
- hasStrings true
-  'Hello world'
-pygmentsHighlighter MoonScript
- filename scripting.py
- fileExtensions moon
 leachim6 Moonscript
  filepath m/Moonscript.moon
  fileExtensions moon
  example
   print 'Hello World'
   
-printToken print
-domainName moonscript.org
-stringToken '
+rosettaCode MoonScript
+
+tryItOnline moonscript
+
+fileType text
+isOpenSource true
+centralPackageRepositoryCount 0

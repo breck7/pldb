@@ -2,8 +2,17 @@ title Heron
 appeared 2016
 type pl
 creators Christopher Diggins
+website https://cdiggins.github.io/heron-language
+
+features
+ hasLineComments true
+  // A comment
+ hasComments true
+  // A comment
+ hasSemanticIndentation false
 
 lineCommentToken //
+
 example
  // Named function with statement body
  function sum(xs) {
@@ -23,13 +32,4 @@ githubRepo https://github.com/cdiggins/heron-language
  description A pure functional type-inferred language based on JavaScript
  issues 0
 
-website https://cdiggins.github.io/heron-language
-
 twitter cdiggins
-
-features
- hasLineComments true
-  // A comment
- hasComments true
-  // A comment
- hasSemanticIndentation false

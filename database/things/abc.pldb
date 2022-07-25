@@ -1,12 +1,16 @@
 title ABC
 appeared 1980
 type pl
+country Netherlands
 
 features
  hasSemanticIndentation true
  hasPrintDebugging true
  hasStrings true
   "Hello world"
+
+printToken WRITE
+stringToken "
 
 wikipedia https://en.wikipedia.org/wiki/ABC_(programming_language)
  example
@@ -30,28 +34,22 @@ helloWorldCollection ABC
  \ Hello world in ABC
  
  WRITE "Hello, World!" /
-
-
-tryItOnline abc
-
-country Netherlands
-fileType text
-wordRank 4100
-
-tiobe ABC
-
-hopl 1290
-
-centralPackageRepositoryCount 0
-rijuRepl https://riju.codes/abc
- example
-  WRITE "Hello, world!" /
-  
 leachim6 ABC
  filepath a/ABC.abc
  fileExtensions abc
  example
   WRITE "Hello World"
   
-printToken WRITE
-stringToken "
+
+rijuRepl https://riju.codes/abc
+ example
+  WRITE "Hello, world!" /
+  
+tryItOnline abc
+
+tiobe ABC
+hopl 1290
+
+fileType text
+wordRank 4100
+centralPackageRepositoryCount 0

@@ -2,10 +2,8 @@ title PowerShell
 appeared 2006
 type pl
 creators Jeffrey Snover
-
-subreddit PowerShell
- memberCount
-  2022 201622
+website http://microsoft.com/powershell
+corporateDevelopers Microsoft
 
 features
  hasComments true
@@ -18,6 +16,13 @@ features
  hasMultiLineComments true
   <# A comment
   #>
+
+lineCommentToken #
+multiLineCommentTokens <# #>
+printToken echo
+assignmentToken =
+stringToken '
+keywords begin break catch class continue data define do dynamicparam else elseif end exit filter finally for foreach from function if in param process return switch throw trap try until using var while workflow parallel sequence inlinescript configuration
 
 wikipedia https://en.wikipedia.org/wiki/PowerShell
  example
@@ -61,12 +66,10 @@ githubLanguage PowerShell
   MicrosoftDocs appcenter-docs https://github.com/MicrosoftDocs.png https://github.com/MicrosoftDocs/appcenter-docs PowerShell #012456 51 186 1 "content repo for Visual Studio App Center on docs.microsoft.com"
  trendingProjectsCount 24
 
-helloWorldCollection PowerShell
- # Hello World in Microsoft Powershell
- 
- 'Hello World!'
- 
-
+monaco powershell
+pygmentsHighlighter PowerShell
+ filename shell.py
+ fileExtensions ps1 psm1
 linguistGrammarRepo https://github.com/PowerShell/EditorSyntax
  firstCommit 2016
  lastCommit 2018
@@ -96,59 +99,54 @@ linguistGrammarRepo https://github.com/PowerShell/EditorSyntax
       Invoke-Test
   }
   
-
-website http://microsoft.com/powershell
-
-tryItOnline powershell
-
-twitter powershell_team
-
-fileType text
-isOpenSource true
-
-tiobe PowerShell
+languageServerProtocolProject https://github.com/PowerShell/PowerShellEditorServices
+ writtenIn csharp
 
 projectEuler PowerShell
  memberCount
   2019 134
   2022 159
-
-rosettaCode PowerShell
-
-corporateDevelopers Microsoft
-languageServerProtocolProject https://github.com/PowerShell/PowerShellEditorServices
- writtenIn csharp
-
-lineCommentToken #
-jupyterKernel https://github.com/vors/jupyter-powershell
-stackOverflowSurvey
- 2021
-  users 8871
-  medianSalary 68824
-  fans 4896
-  percentageUsing 0.11
-packageRepository https://www.powershellgallery.com/
-rijuRepl https://riju.codes/powershell
- example
-  Write-Host "Hello, world!"
-  
-goodreads
- title|year|author|goodreadsId|rating|ratings|reviews
- Windows PowerShell for Developers|2012|Douglas Finke|19180557|3.70|64|7
- Powershell: Comprehensive Beginner's Guide to Learn Powershell Programming||Daniel Jones|57036557|1.00|2|0
- Windows PowerShell 2 for Dummies|2009|Steve Seguis|7014705|3.94|18|1
-pygmentsHighlighter PowerShell
- filename shell.py
- fileExtensions ps1 psm1
+helloWorldCollection PowerShell
+ # Hello World in Microsoft Powershell
+ 
+ 'Hello World!'
+ 
 leachim6 PowerShell
  filepath p/PowerShell.ps1
  fileExtensions ps1
  example
   'Hello World'
   
-printToken echo
-assignmentToken =
-monaco powershell
-multiLineCommentTokens <# #>
-keywords begin break catch class continue data define do dynamicparam else elseif end exit filter finally for foreach from function if in param process return switch throw trap try until using var while workflow parallel sequence inlinescript configuration
-stringToken '
+rosettaCode PowerShell
+
+rijuRepl https://riju.codes/powershell
+ example
+  Write-Host "Hello, world!"
+  
+tryItOnline powershell
+
+stackOverflowSurvey
+ 2021
+  users 8871
+  medianSalary 68824
+  fans 4896
+  percentageUsing 0.11
+
+subreddit PowerShell
+ memberCount
+  2022 201622
+
+goodreads
+ title|year|author|goodreadsId|rating|ratings|reviews
+ Windows PowerShell for Developers|2012|Douglas Finke|19180557|3.70|64|7
+ Powershell: Comprehensive Beginner's Guide to Learn Powershell Programming||Daniel Jones|57036557|1.00|2|0
+ Windows PowerShell 2 for Dummies|2009|Steve Seguis|7014705|3.94|18|1
+
+tiobe PowerShell
+
+packageRepository https://www.powershellgallery.com/
+
+twitter powershell_team
+jupyterKernel https://github.com/vors/jupyter-powershell
+fileType text
+isOpenSource true

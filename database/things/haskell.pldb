@@ -1,6 +1,13 @@
 title Haskell
 appeared 1990
 type pl
+creators Paul Hudak and John Hughes
+website https://www.haskell.org
+fileExtensions hs lhs
+domainName haskell.org
+ registered 1996
+
+visualParadigm false
 
 features
  hasStrings true
@@ -62,6 +69,12 @@ features
  hasPrintDebugging true
  isCaseSensitive true
 
+lineCommentToken --
+multiLineCommentTokens {- -}
+printToken putStrLn
+stringToken "
+keywords ! ' '' - -< -<< -> :: ; <- , = => > ? # \* @ [|, |] \ \_ ` {, } {-, -} | ~ as case of class data family instance default deriving do forall foreign hiding if then else import infix infixl infixr let in mdo module newtype proc qualified rec type where
+
 wikipedia https://en.wikipedia.org/wiki/Haskell_(programming_language)
  example
   $ ghci
@@ -89,12 +102,10 @@ githubLanguage Haskell
   unisonweb unison https://github.com/unisonweb.png https://github.com/unisonweb/unison Haskell #5e5086 2110 92 208 "Next generation programming language, currently in development"
  trendingProjectsCount 4
 
-helloWorldCollection Haskell
- -- Hello World in Haskell
-  
- main = putStrLn "Hello World"
- 
-
+codeMirror haskell
+pygmentsHighlighter Haskell
+ filename haskell.py
+ fileExtensions hs
 linguistGrammarRepo https://github.com/atom-haskell/language-haskell
  firstCommit 2014
  lastCommit 2018
@@ -108,73 +119,18 @@ linguistGrammarRepo https://github.com/atom-haskell/language-haskell
   main = do
   	let hello = "hello world"
   	putStrLn $ map toUpper hello
-
-website https://www.haskell.org
-
-replit haskell
-
-tryItOnline haskell
-
-fileExtensions hs lhs
-fileType text
-
-tiobe Haskell
-
-meetup haskell
- memberCount 115163
- groupCount 311
-
-linkedInSkill haskell
- 2018 30472
+languageServerProtocolProject https://github.com/haskell/haskell-ide-engine
+ writtenIn haskell
 
 projectEuler Haskell
  memberCount
   2019 6635
   2022 7098
-
-hopl 1555
-
-quineRelay Haskell
-
-ubuntuPackage ghc
-
-codeMirror haskell
-
-rosettaCode Haskell
-
-indeedJobs haskell developer
- 2017 190
-lineCommentToken --
-languageServerProtocolProject https://github.com/haskell/haskell-ide-engine
- writtenIn haskell
-visualParadigm false
-jupyterKernel https://github.com/gibiansky/IHaskell
-keywords ! ' '' - -< -<< -> :: ; <- , = => > ? # \* @ [|, |] \ \_ ` {, } {-, -} | ~ as case of class data family instance default deriving do forall foreign hiding if then else import infix infixl infixr let in mdo module newtype proc qualified rec type where
-stackOverflowSurvey
- 2021
-  users 1749
-  medianSalary 67021
-  fans 3453
-  percentageUsing 0.02
-packageRepository https://hackage.haskell.org/
-rijuRepl https://riju.codes/haskell
- example
-  module Main where
+helloWorldCollection Haskell
+ -- Hello World in Haskell
   
-  main :: IO ()
-  main = putStrLn "Hello, world!"
-  
-multiLineCommentTokens {- -}
-creators Paul Hudak and John Hughes
-goodreads
- title|year|author|goodreadsId|rating|ratings|reviews
- Programming in Haskell|2006|Graham  Hutton|897319|3.98|306|28
- Haskell Programming From First Principles|2015|Christopher    Allen|45391585|4.55|130|22
- Haskell: The Craft of Functional Programming|1996|Simon Thompson|943123|3.53|159|8
- The Haskell Road to Logic, Maths and Programming|2004|Kees Doets|463917|3.67|110|5
-pygmentsHighlighter Haskell
- filename haskell.py
- fileExtensions hs
+ main = putStrLn "Hello World"
+ 
 leachim6 Haskell
  filepath h/Haskell.hs
  fileExtensions hs
@@ -183,7 +139,46 @@ leachim6 Haskell
   
   main = putStrLn "Hello World"
   
-printToken putStrLn
-domainName haskell.org
- registered 1996
-stringToken "
+rosettaCode Haskell
+quineRelay Haskell
+
+rijuRepl https://riju.codes/haskell
+ example
+  module Main where
+  
+  main :: IO ()
+  main = putStrLn "Hello, world!"
+  
+replit haskell
+tryItOnline haskell
+
+indeedJobs haskell developer
+ 2017 190
+linkedInSkill haskell
+ 2018 30472
+stackOverflowSurvey
+ 2021
+  users 1749
+  medianSalary 67021
+  fans 3453
+  percentageUsing 0.02
+
+meetup haskell
+ memberCount 115163
+ groupCount 311
+
+goodreads
+ title|year|author|goodreadsId|rating|ratings|reviews
+ Programming in Haskell|2006|Graham  Hutton|897319|3.98|306|28
+ Haskell Programming From First Principles|2015|Christopher    Allen|45391585|4.55|130|22
+ Haskell: The Craft of Functional Programming|1996|Simon Thompson|943123|3.53|159|8
+ The Haskell Road to Logic, Maths and Programming|2004|Kees Doets|463917|3.67|110|5
+
+tiobe Haskell
+hopl 1555
+
+packageRepository https://hackage.haskell.org/
+
+ubuntuPackage ghc
+jupyterKernel https://github.com/gibiansky/IHaskell
+fileType text

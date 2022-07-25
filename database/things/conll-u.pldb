@@ -1,6 +1,7 @@
 title CoNLL-U
 appeared 2014
 type application
+reference http://universaldependencies.org/format.html
 
 githubLanguage CoNLL-U
  fileExtensions conllu conll
@@ -134,6 +135,5 @@ linguistGrammarRepo https://github.com/odanoburu/conllu-linguist-grammar
   6	engine	engine	NOUN	NN	Number=Sing	0	root	0:root	SpaceAfter=No
   7	.	.	PUNCT	.	_	6	punct	6:punct	_
 
-reference http://universaldependencies.org/format.html
 fileType text
 centralPackageRepositoryCount 0

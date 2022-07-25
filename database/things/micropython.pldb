@@ -1,6 +1,12 @@
 title MicroPython
 appeared 2014
 type pl
+creators Damien P. George
+website https://micropython.org/
+domainName micropython.org
+ registered 2013
+
+githubRepo https://github.com/MicroPython
 
 wikipedia https://en.wikipedia.org/wiki/MicroPython
  related c arduino python arm
@@ -12,17 +18,6 @@ wikipedia https://en.wikipedia.org/wiki/MicroPython
  dailyPageViews 132
  appeared 2013
 
-githubRepo https://github.com/MicroPython
-
-website https://micropython.org/
-
-twitter micropython
-
-fileType text
-isOpenSource true
-jupyterKernel https://github.com/goatchurchprime/jupyter_micropython_kernel/
-centralPackageRepositoryCount 0
-creators Damien P. George
 goodreads
  title|year|author|goodreadsId|rating|ratings|reviews
  PROGRAMMING IN MICROPYTHON||SEPP MAHLER|58245376|1.00|1|0
@@ -36,5 +31,9 @@ goodreads
  Programming with Micropython: Embedded Programming with Microcontrollers and Python||Nicholas H Tollervey|58550341|0.0|0|0
  MicroPython for the Internet of Things: A Beginner’s Guide to Programming with Python on Microcontrollers||Charles Bell|59119023|0.0|0|0
  Micropython for the Internet of Things: A Beginner's Guide to Programming with Python on Microcontrollers||Charles Bell|58627905|0.0|0|0
-domainName micropython.org
- registered 2013
+
+twitter micropython
+jupyterKernel https://github.com/goatchurchprime/jupyter_micropython_kernel/
+fileType text
+isOpenSource true
+centralPackageRepositoryCount 0

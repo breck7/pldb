@@ -1,13 +1,12 @@
 title Zeek
 appeared 1994
-oldName bro
 type pl
-
 description Zeek's domain-specific scripting language enables site-specific monitoring policies.
-
 website https://zeek.org/
+oldName bro
+domainName zeek.org
+ registered 2017
+
 pygmentsHighlighter Zeek
  filename dsls.py
  fileExtensions zeek bro
-domainName zeek.org
- registered 2017

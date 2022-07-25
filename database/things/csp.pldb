@@ -1,6 +1,10 @@
 title CSP
 appeared 1978
 type pl
+standsFor Communicating Sequential Processes
+country United Kingdom
+
+keywords 
 
 example
  COPY = *[c:character; west?c → east!c]
@@ -15,16 +19,14 @@ wikipedia https://en.wikipedia.org/wiki/Communicating_sequential_processes
  dailyPageViews 281
  appeared 2002
 
-standsFor Communicating Sequential Processes
-country United Kingdom
-fileType text
+monaco csp
 
-hopl 795
-
-centralPackageRepositoryCount 0
 goodreads
  title|year|author|goodreadsId|rating|ratings|reviews
  Csp: A Developer's Guide|1992|Shashi Malik|5518824|0.0|0|0
  CSP as a Coordination Language||Kleine Moritz|51931033|0.0|0|0
-monaco csp
-keywords 
+
+hopl 795
+
+fileType text
+centralPackageRepositoryCount 0

@@ -1,6 +1,17 @@
 title Dc
 appeared 1978
 type pl
+standsFor desk calculator
+country United States
+
+features
+ hasLineComments true
+  # A comment
+ hasComments true
+  # A comment
+ hasSemanticIndentation false
+
+lineCommentToken #
 
 wikipedia https://en.wikipedia.org/wiki/Dc_(computer_program)
  example
@@ -55,30 +66,6 @@ wikipedia https://en.wikipedia.org/wiki/Dc_(computer_program)
  dailyPageViews 36
  appeared 1971
 
-standsFor desk calculator
-
-tryItOnline dc
-
-country United States
-fileType text
-wordRank 1109
-
-hopl 1957
-
-rosettaCode Dc
-
-centralPackageRepositoryCount 0
-rijuRepl https://riju.codes/dc
- example
-  [Hello, world!] p
-  
-lineCommentToken #
-features
- hasLineComments true
-  # A comment
- hasComments true
-  # A comment
- hasSemanticIndentation false
 leachim6 Dc
  filepath d/Dc.dc
  fileExtensions dc
@@ -86,3 +73,16 @@ leachim6 Dc
   [Hello World
   ]n
   
+rosettaCode Dc
+
+rijuRepl https://riju.codes/dc
+ example
+  [Hello, world!] p
+  
+tryItOnline dc
+
+hopl 1957
+
+fileType text
+wordRank 1109
+centralPackageRepositoryCount 0

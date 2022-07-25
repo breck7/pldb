@@ -1,6 +1,7 @@
 title WebGPU Shading Language
 appeared 2020
 type pl
+reference https://gpuweb.github.io/gpuweb/wgsl.html
 
 example
  [[location 0]] var<out> gl_FragColor : vec4<f32>;
@@ -9,5 +10,3 @@ example
      return;
  }
  entry_point fragment = main;
-
-reference https://gpuweb.github.io/gpuweb/wgsl.html

@@ -1,30 +1,16 @@
 title Ragel
 appeared 2007
 type pl
+website http://complang.org/ragel/
 
-wikipedia https://en.wikipedia.org/wiki/Ragel
- related c d go ruby java regex ascii xuml umple
- summary Ragel is a finite-state machine compiler and a parser generator. Initially Ragel supported output for C, C++ and Assembly source code,. Although subsequently extended to support several other languages (said to be Objective C, D, Go, Ruby, and Java) this support of other languages was withdrawn .  It supports the generation of table or control flow driven state machines from regular expressions and/or state charts and can also build lexical analysers via the longest-match method. Ragel specifically targets text parsing and input validation.
- created 2006
- pageId 8052388
- backlinksCount 21
- revisionCount 88
- dailyPageViews 29
- appeared 2017
+features
+ hasLineComments true
+  # A comment
+ hasComments true
+  # A comment
+ hasSemanticIndentation false
 
-githubLanguage Ragel
- fileExtensions rl
- trendingProjectsCount 0
-
-githubRepo https://github.com/bnoordhuis/ragel
- firstCommit 2007
- stars 152
- forks 18
- subscribers 5
- created 2013
- updated 2022
- description Ragel State Machine Compiler - http://www.complang.org/ragel/
- issues 1
+lineCommentToken #
 
 example
  =begin
@@ -97,16 +83,33 @@ example
  s = SimpleScanner.new ARGV[0]
  s.perform
 
-website http://complang.org/ragel/
+githubRepo https://github.com/bnoordhuis/ragel
+ firstCommit 2007
+ stars 152
+ forks 18
+ subscribers 5
+ created 2013
+ updated 2022
+ description Ragel State Machine Compiler - http://www.complang.org/ragel/
+ issues 1
+
+wikipedia https://en.wikipedia.org/wiki/Ragel
+ related c d go ruby java regex ascii xuml umple
+ summary Ragel is a finite-state machine compiler and a parser generator. Initially Ragel supported output for C, C++ and Assembly source code,. Although subsequently extended to support several other languages (said to be Objective C, D, Go, Ruby, and Java) this support of other languages was withdrawn .  It supports the generation of table or control flow driven state machines from regular expressions and/or state charts and can also build lexical analysers via the longest-match method. Ragel specifically targets text parsing and input validation.
+ created 2006
+ pageId 8052388
+ backlinksCount 21
+ revisionCount 88
+ dailyPageViews 29
+ appeared 2017
+
+githubLanguage Ragel
+ fileExtensions rl
+ trendingProjectsCount 0
+
+pygmentsHighlighter Ragel
+ filename parsers.py
+
 fileType text
 isOpenSource true
 centralPackageRepositoryCount 0
-lineCommentToken #
-features
- hasLineComments true
-  # A comment
- hasComments true
-  # A comment
- hasSemanticIndentation false
-pygmentsHighlighter Ragel
- filename parsers.py

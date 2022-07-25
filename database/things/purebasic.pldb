@@ -1,6 +1,10 @@
 title PureBasic
 appeared 1998
 type pl
+website http://www.purebasic.com
+corporateDevelopers Fantaisie Software
+domainName purebasic.com
+ registered 2000
 
 features
  hasComments true
@@ -10,6 +14,10 @@ features
  hasSemanticIndentation false
  hasStrings true
   "Hello world"
+
+lineCommentToken ;
+printToken PrintN
+stringToken "
 
 wikipedia https://en.wikipedia.org/wiki/PureBasic
  example
@@ -184,14 +192,6 @@ linguistGrammarRepo https://github.com/telnet23/language-basic
   ; EnableXP
   
 
-website http://www.purebasic.com
-fileType text
-
-rosettaCode PureBasic
-
-centralPackageRepositoryCount 0
-corporateDevelopers Fantaisie Software
-lineCommentToken ;
 leachim6 PureBasic
  filepath p/PureBasic.pb
  fileExtensions pb
@@ -200,7 +200,7 @@ leachim6 PureBasic
     PrintN("Hello World")
   EndIf
   
-printToken PrintN
-domainName purebasic.com
- registered 2000
-stringToken "
+rosettaCode PureBasic
+
+fileType text
+centralPackageRepositoryCount 0

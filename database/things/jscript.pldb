@@ -1,6 +1,17 @@
 title JScript
 appeared 1996
 type pl
+website msdn.microsoft.com/library/hbxc2t98.aspx
+fileExtensions js jse wsf wsc
+corporateDevelopers Microsoft
+
+features
+ hasPrintDebugging true
+ hasStrings true
+  "Hello world"
+
+printToken WScript.Echo
+stringToken "
 
 wikipedia https://en.wikipedia.org/wiki/JScript
  related javascript ecmascript asp vbscript visual-studio-editor json csharp
@@ -13,25 +24,17 @@ wikipedia https://en.wikipedia.org/wiki/JScript
  appeared 1996
  fileExtensions js jse wsf wsc
 
-website msdn.microsoft.com/library/hbxc2t98.aspx
-fileExtensions js jse wsf wsc
-fileType text
-
-tiobe JScript
-
-corporateDevelopers Microsoft
-centralPackageRepositoryCount 0
-goodreads
- title|year|author|goodreadsId|rating|ratings|reviews
- JScript? .Net Programming|2001|Essam Ahmed|83357|3.00|1|1
 leachim6 JScript
  filepath j/JScript.js
  fileExtensions js
  example
   WScript.Echo("Hello World");
-printToken WScript.Echo
-features
- hasPrintDebugging true
- hasStrings true
-  "Hello world"
-stringToken "
+
+goodreads
+ title|year|author|goodreadsId|rating|ratings|reviews
+ JScript? .Net Programming|2001|Essam Ahmed|83357|3.00|1|1
+
+tiobe JScript
+
+fileType text
+centralPackageRepositoryCount 0

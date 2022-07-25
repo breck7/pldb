@@ -1,16 +1,8 @@
 title Impala
 appeared 2012
 type queryLanguage
-
-wikipedia https://en.wikipedia.org/wiki/Apache_Impala
- related java sql pig aws
- summary Apache Impala is an open source massively parallel processing (MPP) SQL query engine for data stored in a computer cluster running Apache Hadoop. Impala has been described as the open-source equivalent of Google F1, which inspired its development in 2012.
- backlinksCount 174
- pageId 40147148
- created 2013
- revisionCount 62
- dailyPageViews 120
- appeared 2018
+website https://impala.apache.org
+domainName impala.apache.org
 
 githubRepo https://github.com/apache/impala
  firstCommit 2011
@@ -22,11 +14,17 @@ githubRepo https://github.com/apache/impala
  description Apache Impala
  issues 4
 
-website https://impala.apache.org
+wikipedia https://en.wikipedia.org/wiki/Apache_Impala
+ related java sql pig aws
+ summary Apache Impala is an open source massively parallel processing (MPP) SQL query engine for data stored in a computer cluster running Apache Hadoop. Impala has been described as the open-source equivalent of Google F1, which inspired its development in 2012.
+ backlinksCount 174
+ pageId 40147148
+ created 2013
+ revisionCount 62
+ dailyPageViews 120
+ appeared 2018
 
 twitter apacheimpala
-
 fileType text
 isOpenSource true
 centralPackageRepositoryCount 0
-domainName impala.apache.org

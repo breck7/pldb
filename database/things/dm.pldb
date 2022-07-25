@@ -1,6 +1,23 @@
 title DM
 appeared 1994
 type pl
+description DM is a programming language for the creation of multi-user worlds. By `world' I mean a virtual multi-media environment where people assume personae through which they interact with one another and computer-controlled objects. This could take the form of a competitive game, a role-playing adventure, a discussion board, or something we haven't even imagined.
+website http://www.byond.com/docs/guide/
+reference http://www.byond.com/developer
+fileExtensions dm dmf
+
+features
+ hasLineComments true
+  // A comment
+ hasComments true
+  // A comment
+ hasMultiLineComments true
+  /* A comment
+  */
+ hasSemanticIndentation false
+
+lineCommentToken //
+multiLineCommentTokens /* */
 
 example
  mob
@@ -11,8 +28,6 @@ example
          world << "[usr] giggles."
       cry()
          world << "[usr] cries \his heart out."
-
-description DM is a programming language for the creation of multi-user worlds. By `world' I mean a virtual multi-media environment where people assume personae through which they interact with one another and computer-controlled objects. This could take the form of a competitive game, a role-playing adventure, a discussion board, or something we haven't even imagined.
 
 githubLanguage DM
  fileExtensions dm
@@ -113,23 +128,8 @@ linguistGrammarRepo https://github.com/PJB3005/atomic-dreams
   
   #undef PI // Undefine PI
 
-website http://www.byond.com/docs/guide/
-reference http://www.byond.com/developer
-fileExtensions dm dmf
-fileType text
-wordRank 7101
-
 rosettaCode DM
 
+fileType text
+wordRank 7101
 centralPackageRepositoryCount 0
-lineCommentToken //
-features
- hasLineComments true
-  // A comment
- hasComments true
-  // A comment
- hasMultiLineComments true
-  /* A comment
-  */
- hasSemanticIndentation false
-multiLineCommentTokens /* */

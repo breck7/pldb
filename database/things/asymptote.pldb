@@ -1,6 +1,7 @@
 title Asymptote
 appeared 2004
 type application
+creators Andy Hammerlindl and John C. Bowman and Tom Prince
 
 features
  hasComments true
@@ -39,21 +40,22 @@ wikipedia https://en.wikipedia.org/wiki/Asymptote_(vector_graphics_language)
  revisionCount 136
  appeared 2004
 
-fileType text
-isOpenSource true
+pygmentsHighlighter Asymptote
+ filename graphics.py
+ fileExtensions asy
 
 rosettaCode Asymptote
 
-centralPackageRepositoryCount 0
 rijuRepl https://riju.codes/asymptote
  example
   write("Hello, world!");
   
-creators Andy Hammerlindl and John C. Bowman and Tom Prince
+
 goodreads
  title|year|author|goodreadsId|rating|ratings|reviews
  Asymptote (Vector Graphics Language)|2012|Jesse Russell|22967337|0.0|0|0
  Asymptote: The Vector Graphics Language|2014|Andy Hammerlindl|41384552|0.0|0|0
-pygmentsHighlighter Asymptote
- filename graphics.py
- fileExtensions asy
+
+fileType text
+isOpenSource true
+centralPackageRepositoryCount 0

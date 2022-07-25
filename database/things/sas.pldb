@@ -2,6 +2,11 @@ title SAS
 appeared 1976
 type pl
 creators Anthony James Barr
+website https://www.sas.com
+standsFor Statistical Analysis System
+country United States
+domainName sas.com
+ registered 1990
 
 features
  hasComments true
@@ -11,6 +16,9 @@ features
  hasLineComments true
   * A comment
  hasSemanticIndentation false
+
+lineCommentToken *
+multiLineCommentTokens /* */
 
 wikipedia https://en.wikipedia.org/wiki/SAS_language
  related html linux
@@ -26,16 +34,9 @@ githubLanguage SAS
  fileExtensions sas
  trendingProjectsCount 0
 
-helloWorldCollection Statistical Analysis System
- /* Hello world in SAS */
- 
- * Writes as output title;
- TITLE "Hello World!";
- * writes to the log;
- data _null_;
-     PUT "Hello world!";
- run;
-
+pygmentsHighlighter SAS
+ filename sas.py
+ fileExtensions SAS sas
 linguistGrammarRepo https://github.com/rpardee/sas.tmbundle
  firstCommit 2010
  lastCommit 2018
@@ -61,46 +62,19 @@ linguistGrammarRepo https://github.com/rpardee/sas.tmbundle
   	if ImportantVariable = . then MissingFlag = 1;
   run;
 
-website https://www.sas.com
-standsFor Statistical Analysis System
-
-twitter sassoftware
-
-country United States
-fileType text
-wordRank 8860
-
-tiobe SAS
- currentRank 21
-
-linkedInSkill sas
- 2018 352164
-
 projectEuler SAS
  memberCount
   2019 49
   2022 54
-
-hopl 733
-
-subreddit sas
- memberCount
-  2017 2538
-  2022 7963
-
-rosettaCode SAS
-
-lineCommentToken *
-jupyterKernel https://github.com/sassoftware/sas_kernel
-centralPackageRepositoryCount 0
-multiLineCommentTokens /* */
-goodreads
- title|year|author|goodreadsId|rating|ratings|reviews
- Learning SAS by Example: A Programmer's Guide|2007|Ron Cody|1320285|4.29|127|9
- SAS For Dummies|2007|Stephen McDaniel|970688|3.57|28|4
-pygmentsHighlighter SAS
- filename sas.py
- fileExtensions SAS sas
+helloWorldCollection Statistical Analysis System
+ /* Hello world in SAS */
+ 
+ * Writes as output title;
+ TITLE "Hello World!";
+ * writes to the log;
+ data _null_;
+     PUT "Hello world!";
+ run;
 leachim6 Sas
  filepath s/Sas.sas
  fileExtensions sas
@@ -111,5 +85,27 @@ leachim6 Sas
   
   %putit(string=Hello World)
   
-domainName sas.com
- registered 1990
+rosettaCode SAS
+
+linkedInSkill sas
+ 2018 352164
+
+subreddit sas
+ memberCount
+  2017 2538
+  2022 7963
+
+goodreads
+ title|year|author|goodreadsId|rating|ratings|reviews
+ Learning SAS by Example: A Programmer's Guide|2007|Ron Cody|1320285|4.29|127|9
+ SAS For Dummies|2007|Stephen McDaniel|970688|3.57|28|4
+
+tiobe SAS
+ currentRank 21
+hopl 733
+
+twitter sassoftware
+jupyterKernel https://github.com/sassoftware/sas_kernel
+fileType text
+wordRank 8860
+centralPackageRepositoryCount 0

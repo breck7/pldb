@@ -2,6 +2,7 @@ title Forth
 appeared 1970
 type pl
 creators Charles H. Moore
+country United States
 
 features
  hasComments true
@@ -14,6 +15,9 @@ features
   \ A comment
  hasPrintDebugging true
  hasSemanticIndentation false
+
+lineCommentToken \
+printToken .
 
 wikipedia https://en.wikipedia.org/wiki/Forth_(programming_language)
  example
@@ -35,11 +39,10 @@ githubLanguage Forth
  fileExtensions fth 4th f for forth fr frt fs
  trendingProjectsCount 0
 
-helloWorldCollection Forth
- ' Hello world in Forth
- 
- ." Hello World" CR
-
+codeMirror forth
+pygmentsHighlighter Forth
+ filename forth.py
+ fileExtensions frt fs
 linguistGrammarRepo https://github.com/textmate/forth.tmbundle
  firstCommit 2008
  lastCommit 2016
@@ -54,45 +57,36 @@ linguistGrammarRepo https://github.com/textmate/forth.tmbundle
   
   
 
-
-replit forth
-
-country United States
-fileType text
-wordRank 3664
-
-tiobe Forth
-
 projectEuler Forth
  memberCount
   2019 56
   2022 63
-
-hopl 182
-
-quineRelay Forth
-
-ubuntuPackage gforth
-
-codeMirror forth
-
-rosettaCode Forth
-
-lineCommentToken \
-jupyterKernel https://github.com/jdfreder/iforth
-jupyterKernel https://github.com/hcchengithub/peforth
-packageRepository https://theforth.net/
-rijuRepl https://riju.codes/forth
- example
-  ." Hello, world!" CR
-  
-pygmentsHighlighter Forth
- filename forth.py
- fileExtensions frt fs
+helloWorldCollection Forth
+ ' Hello world in Forth
+ 
+ ." Hello World" CR
 leachim6 Forth
  filepath f/Forth.fth
  fileExtensions fth
  example
   .( Hello World)
   
-printToken .
+rosettaCode Forth
+quineRelay Forth
+
+rijuRepl https://riju.codes/forth
+ example
+  ." Hello, world!" CR
+  
+replit forth
+
+tiobe Forth
+hopl 182
+
+packageRepository https://theforth.net/
+
+ubuntuPackage gforth
+jupyterKernel https://github.com/jdfreder/iforth
+jupyterKernel https://github.com/hcchengithub/peforth
+fileType text
+wordRank 3664

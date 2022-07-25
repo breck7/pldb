@@ -1,6 +1,7 @@
 title Shakespeare
 appeared 1993
 type esolang
+website http://shakespearelang.sourceforge.net/report/shakespeare/
 
 wikipedia https://en.wikipedia.org/wiki/Shakespeare_Programming_Language
  example
@@ -127,14 +128,8 @@ helloWorldCollection Shakespeare
  
  [Exeunt]
  
-
-website http://shakespearelang.sourceforge.net/report/shakespeare/
-fileType text
-wordRank 7050
-
 quineRelay Shakespeare
 
-centralPackageRepositoryCount 0
 rijuRepl https://riju.codes/shakespeare
  example
   The Infamous Hello World Program.
@@ -227,3 +222,7 @@ rijuRepl https://riju.codes/shakespeare
   
   [Exeunt]
   
+
+fileType text
+wordRank 7050
+centralPackageRepositoryCount 0

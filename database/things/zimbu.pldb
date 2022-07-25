@@ -2,6 +2,13 @@ title Zimbu
 appeared 2009
 type pl
 creators Bram Moolenaar
+website http://www.zimbu.org/
+domainName zimbu.org
+
+features
+ hasPrintDebugging true
+
+printToken IO.write
 
 example
  FUNC Main() int
@@ -19,8 +26,6 @@ wikipedia https://en.wikipedia.org/wiki/Zimbu
  dailyPageViews 1
  appeared 1961
 
-website http://www.zimbu.org/
-centralPackageRepositoryCount 0
 leachim6 Zimbu
  filepath z/Zimbu.zu
  fileExtensions zu
@@ -30,7 +35,5 @@ leachim6 Zimbu
     RETURN 0
   }
   
-printToken IO.write
-features
- hasPrintDebugging true
-domainName zimbu.org
+
+centralPackageRepositoryCount 0

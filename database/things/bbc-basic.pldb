@@ -2,6 +2,14 @@ title BBC BASIC
 appeared 1981
 type pl
 
+features
+ hasPrintDebugging true
+ hasStrings true
+  "Hello world"
+
+printToken PRINT
+stringToken "
+
 wikipedia https://en.wikipedia.org/wiki/BBC_BASIC
  example
   IF INSTR(REPORT$,"VI") THEN PRINT "BASIC64" ELSE PRINT "BASIC"
@@ -14,19 +22,15 @@ wikipedia https://en.wikipedia.org/wiki/BBC_BASIC
  dailyPageViews 63
  appeared 1981
 
-isOpenSource false
-centralPackageRepositoryCount 0
 pygmentsHighlighter BBC Basic
  filename basic.py
  fileExtensions bbc
+
 leachim6 BBC BASIC
  filepath b/BBC BASIC.bbc
  example
   PRINT "Hello World"
   
-printToken PRINT
-features
- hasPrintDebugging true
- hasStrings true
-  "Hello world"
-stringToken "
+
+isOpenSource false
+centralPackageRepositoryCount 0

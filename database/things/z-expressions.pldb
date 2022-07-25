@@ -2,6 +2,11 @@ title Z
 appeared 2012
 type pl
 creators Chris Done
+website http://chrisdone.com/z/
+reference https://news.ycombinator.com/item?id=20557363
+fileExtensions zz
+
+writtenIn haskell
 
 features
  hasComments true
@@ -24,6 +29,8 @@ features
  hasLineComments true
   -- A comment
 
+lineCommentToken --
+
 githubRepo https://github.com/chrisdone/z
  firstCommit 2012
  stars 277
@@ -33,9 +40,3 @@ githubRepo https://github.com/chrisdone/z
  updated 2022
  description A strict, impure, curried, partially applied programming language with rather peculiar syntax. 
  issues 0
-
-website http://chrisdone.com/z/
-reference https://news.ycombinator.com/item?id=20557363
-fileExtensions zz
-writtenIn haskell
-lineCommentToken --

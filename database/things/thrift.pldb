@@ -1,6 +1,9 @@
 title Thrift
 appeared 2007
 type idl
+website http://thrift.apache.org/
+corporateDevelopers Apache
+domainName thrift.apache.org
 
 example
  enum PhoneType {
@@ -53,6 +56,9 @@ githubLanguage Thrift
  fileExtensions thrift
  trendingProjectsCount 0
 
+pygmentsHighlighter Thrift
+ filename dsls.py
+ fileExtensions thrift
 linguistGrammarRepo https://github.com/textmate/thrift.tmbundle
  firstCommit 2008
  lastCommit 2014
@@ -67,12 +73,6 @@ linguistGrammarRepo https://github.com/textmate/thrift.tmbundle
   
   
 
-website http://thrift.apache.org/
 fileType text
 isOpenSource true
-corporateDevelopers Apache
 centralPackageRepositoryCount 0
-pygmentsHighlighter Thrift
- filename dsls.py
- fileExtensions thrift
-domainName thrift.apache.org

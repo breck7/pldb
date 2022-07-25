@@ -1,6 +1,9 @@
 title Scratch
 appeared 2002
 type visual
+website https://scratch.mit.edu/
+fileExtensions scratch sb sprite sb2 sprite2
+domainName scratch.mit.edu
 
 wikipedia https://en.wikipedia.org/wiki/Scratch_(programming_language)
  related squeak actionscript linux logo smalltalk hypercard starlogo etoys snap android python java basic arduino javascript blockly kodu-game-lab microsoft-small-basic
@@ -13,30 +16,24 @@ wikipedia https://en.wikipedia.org/wiki/Scratch_(programming_language)
  appeared 2002
  fileExtensions scratch sb sprite sb2 sprite2
 
-website https://scratch.mit.edu/
-fileExtensions scratch sb sprite sb2 sprite2
-fileType text
-wordRank 7665
-isOpenSource true
-
-tiobe Scratch
- currentRank 16
-
-meetup scratch
- memberCount 6590
- groupCount 47
-
 projectEuler Scratch
  memberCount
   2019 63
   2022 98
+rosettaCode Scratch
 
 subreddit scratch
  memberCount
   2017 1072
   2022 10081
+meetup scratch
+ memberCount 6590
+ groupCount 47
 
-rosettaCode Scratch
+tiobe Scratch
+ currentRank 16
 
+fileType text
+wordRank 7665
+isOpenSource true
 centralPackageRepositoryCount 0
-domainName scratch.mit.edu

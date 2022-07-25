@@ -1,6 +1,12 @@
 title Interactive C Interpreter
 appeared 1980
 type pl
+standsFor Interactive C Interpreter
+
+features
+ hasPrintDebugging true
+
+printToken printf
 
 wikipedia https://en.wikipedia.org/wiki/ICI_(programming_language)
  related c perl regex tcl
@@ -12,17 +18,13 @@ wikipedia https://en.wikipedia.org/wiki/ICI_(programming_language)
  dailyPageViews 5
  appeared 1980
 
-standsFor Interactive C Interpreter
-fileType text
-
-hopl 2104
-
-centralPackageRepositoryCount 0
 leachim6 ICI
  filepath i/ICI.ici
  fileExtensions ici
  example
   printf("Hello World\n");
-printToken printf
-features
- hasPrintDebugging true
+
+hopl 2104
+
+fileType text
+centralPackageRepositoryCount 0

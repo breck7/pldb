@@ -1,13 +1,16 @@
 title BEEF
 appeared 1961
 type pl
-
 reference https://semanticscholar.org/paper/cc99ab4b69a92f11fdf90f40e3fed8e6fae361bd
-wordRank 5584
 
-hopl 3356
+features
+ hasPrintDebugging true
+ hasStrings true
+  "Hello world"
 
-centralPackageRepositoryCount 0
+printToken Console.WriteLine
+stringToken "
+
 leachim6 Beef
  filepath b/Beef.bf
  fileExtensions bf
@@ -25,9 +28,8 @@ leachim6 Beef
       }
   }
   
-printToken Console.WriteLine
-features
- hasPrintDebugging true
- hasStrings true
-  "Hello world"
-stringToken "
+
+hopl 3356
+
+wordRank 5584
+centralPackageRepositoryCount 0

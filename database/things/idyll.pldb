@@ -1,6 +1,19 @@
 title idyll
 appeared 2017
 type pl
+description Idyll is a markup language and toolkit for writing interactive articles. Idyll's reactive document model and standard component library decrease the amount of code needed to create high quality multimedia narratives. Idyll uses web standards to produce output that will load quickly in any web browser and is fully extensible. Idyll enables collaboration between programmers and journalists, researchers and designers. Those familiar with JavaScript can write custom components using tools like D3 or React.
+website https://idyll-lang.org/
+domainName idyll-lang.org
+ registered 2017
+
+features
+ hasLineComments true
+  // A comment
+ hasComments true
+  // A comment
+ hasSemanticIndentation false
+
+lineCommentToken //
 
 example
  [meta
@@ -335,8 +348,6 @@ example
  
  [analytics google:"UA-108267630-1" /]
 
-description Idyll is a markup language and toolkit for writing interactive articles. Idyll's reactive document model and standard component library decrease the amount of code needed to create high quality multimedia narratives. Idyll uses web standards to produce output that will load quickly in any web browser and is fully extensible. Idyll enables collaboration between programmers and journalists, researchers and designers. Those familiar with JavaScript can write custom components using tools like D3 or React.
-
 githubRepo https://github.com/idyll-lang/idyll
  firstCommit 2017
  stars 1892
@@ -347,17 +358,8 @@ githubRepo https://github.com/idyll-lang/idyll
  description Create explorable explanations and interactive essays.
  issues 46
 
-website https://idyll-lang.org/
 hackerNewsDiscussions
  id|title|url|time|timestamp|by|comments|score
  15204241|Idyll: Interactive Document Language|https://idyll-lang.github.io/|2017-09-08 21:55:53 UTC|1504907753|abhirag|18|195
-lineCommentToken //
-features
- hasLineComments true
-  // A comment
- hasComments true
-  // A comment
- hasSemanticIndentation false
-domainName idyll-lang.org
- registered 2017
+
 twitter idyll_lang

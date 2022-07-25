@@ -1,6 +1,9 @@
 title METAPOST
 appeared 1994
 type pl
+creators John D. Hobby
+description A graphics language that can output PostScript, SVG, and some other formats.
+reference https://www.tug.org/docs/metapost/mpman.pdf#targetText=MetaPost%20is%20a%20programming%20language,for%20creating%20and%20manipulating%20pictures.
 
 example
  beginfig(2);
@@ -12,8 +15,6 @@ example
  endfor
  endfig
 
-description A graphics language that can output PostScript, SVG, and some other formats.
-
 wikipedia https://en.wikipedia.org/wiki/MetaPost
  summary MetaPost refers to both a programming language and the interpreter of the MetaPost programming language. Both are derived from Donald Knuth's Metafont language and interpreter. MetaPost produces vector graphic diagrams from a geometric/algebraic description. The language shares Metafont's declarative syntax for manipulating lines, curves, points and geometric transformations. However,  Metafont is set up to produce fonts, in the form of image files (in .gf format) with associated font metric files (in .tfm format), whereas MetaPost produces EPS, SVG, or PNG files The output of Metafont consists of the fonts at a fixed resolution in a raster-based format, whereas MetaPost's output is vector-based graphics (lines, Bézier curves) Metafont output is monochrome, whereas MetaPost uses RGB or CMYK colors. The MetaPost language can include text labels on the diagrams, either strings from a specified font, or anything else that can be typeset with TeX. Starting with version 1.8, Metapost allows floating-point arithmetic with 64 bits (default: 32 bit fixed-point arithmetic)Many of the limitations of MetaPost derive from features of Metafont. For instance, MetaPost does not support all features of PostScript. Most notably, paths can have only one segment (so that regions are simply connected), and regions can be filled only with uniform colours. PostScript level 1 supports tiled patterns and PostScript 3 supports Gouraud shading.
  backlinksCount 173
@@ -21,8 +22,4 @@ wikipedia https://en.wikipedia.org/wiki/MetaPost
  dailyPageViews 38
  appeared 1994
 
-reference https://www.tug.org/docs/metapost/mpman.pdf#targetText=MetaPost%20is%20a%20programming%20language,for%20creating%20and%20manipulating%20pictures.
-
 hopl 5681
-
-creators John D. Hobby

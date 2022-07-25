@@ -2,6 +2,11 @@ title 05AB1E
 appeared 2015
 type esolang
 
+features
+ hasPrintDebugging true
+
+printToken "
+
 example
  PUSH 4
  PUSH 5
@@ -21,6 +26,3 @@ leachim6 05AB1E
  filepath #/05AB1E
  example
   "Hello World
-printToken "
-features
- hasPrintDebugging true

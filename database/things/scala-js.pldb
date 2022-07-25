@@ -1,9 +1,33 @@
 title Scala.js
 appeared 2013
 type pl
-subreddit scalajs
- memberCount
-  2022 181
+creators Martin Odersky
+website https://www.scala-js.org/
+domainName scala-js.org
+ registered 2013
+
+compilesTo javascript
+
+features
+ hasPrintDebugging true
+
+printToken println
+
+example
+ class Person(val firstName: String, val lastName: String) {
+  def fullName(): String =
+    s"$firstName $lastName"
+ }
+
+githubRepo https://github.com/scala-js/scala-js
+ stars 4324
+ forks 379
+ subscribers 157
+ created 2013
+ updated 2022
+ firstCommit 2013
+ description Scala.js, the Scala to JavaScript compiler
+ issues 31
 
 wikipedia https://en.wikipedia.org/wiki/Scala.js_(programming_language)
  example
@@ -24,30 +48,10 @@ wikipedia https://en.wikipedia.org/wiki/Scala.js_(programming_language)
  dailyPageViews 2
  appeared 2004
 
-githubRepo https://github.com/scala-js/scala-js
- stars 4324
- forks 379
- subscribers 157
- created 2013
- updated 2022
- firstCommit 2013
- description Scala.js, the Scala to JavaScript compiler
- issues 31
+subreddit scalajs
+ memberCount
+  2022 181
 
-website https://www.scala-js.org/
 fileType text
-compilesTo javascript
 isOpenSource true
 centralPackageRepositoryCount 0
-
-creators Martin Odersky
-printToken println
-example
- class Person(val firstName: String, val lastName: String) {
-  def fullName(): String =
-    s"$firstName $lastName"
- }
-features
- hasPrintDebugging true
-domainName scala-js.org
- registered 2013

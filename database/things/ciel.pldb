@@ -1,6 +1,17 @@
 title Ciel
+appeared 2010
 type pl
+creators Ron Garret
 description Ciel is a lisp-like language implemented in C++.  What Clojure is to Java, Ciel is designed to be to C++.
+
+writtenIn cpp
+
+example
+ (set lambda fn)
+ (set def set)
+ (def vector (lambda x x))
+ (vector 1 2 3)
+
 githubRepo https://github.com/rongarret/ciel
  firstCommit 2010
  stars 71
@@ -10,11 +21,3 @@ githubRepo https://github.com/rongarret/ciel
  updated 2022
  description A Lisp-like language implemented in C++
  issues 0
-appeared 2010
-writtenIn cpp
-example
- (set lambda fn)
- (set def set)
- (def vector (lambda x x))
- (vector 1 2 3)
-creators Ron Garret

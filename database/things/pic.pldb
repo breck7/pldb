@@ -1,6 +1,16 @@
 title PIC
 appeared 1988
 type textMarkup
+country United States
+
+features
+ hasLineComments true
+  # A comment
+ hasComments true
+  # A comment
+ hasSemanticIndentation false
+
+lineCommentToken #
 
 wikipedia https://en.wikipedia.org/wiki/Pic_(programming_language)
  related diagram troff tex linux
@@ -38,17 +48,8 @@ linguistGrammarRepo https://github.com/Alhadis/language-roff
   .cend
   
 
-country United States
-fileType text
-wordRank 2402
-
 hopl 1007
 
+fileType text
+wordRank 2402
 centralPackageRepositoryCount 0
-lineCommentToken #
-features
- hasLineComments true
-  # A comment
- hasComments true
-  # A comment
- hasSemanticIndentation false

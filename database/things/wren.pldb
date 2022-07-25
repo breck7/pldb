@@ -2,10 +2,27 @@ title Wren
 appeared 2013
 type pl
 creators Bob Nystrom
-
 description Wren is a small, fast, class-based concurrent scripting language.
+website https://wren.io/
+reference https://news.ycombinator.com/item?id=23660464
+country United States
+domainName wren.io
+
+writtenIn c
+
+features
+ hasLineComments true
+  // A comment
+ hasComments true
+  // A comment
+ hasPrintDebugging true
+ hasSemanticIndentation false
+ hasStrings true
+  "Hello world"
 
 lineCommentToken //
+printToken IO.print
+stringToken "
 
 example
  System.print("Hello, world!")
@@ -32,34 +49,16 @@ githubRepo https://github.com/munificent/wren
  description The Wren Programming Language. Wren is a small, fast, class-based concurrent scripting language.
  issues 178
 
-website https://wren.io/
-reference https://news.ycombinator.com/item?id=23660464
-
-tryItOnline wren
-
-country United States
-fileType text
-isOpenSource true
-
-rosettaCode Wren
-
-writtenIn c
-centralPackageRepositoryCount 0
-features
- hasLineComments true
-  // A comment
- hasComments true
-  // A comment
- hasPrintDebugging true
- hasSemanticIndentation false
- hasStrings true
-  "Hello world"
 leachim6 Wren
  filepath w/Wren.wren
  fileExtensions wren
  example
   IO.print("Hello World")
   
-printToken IO.print
-domainName wren.io
-stringToken "
+rosettaCode Wren
+
+tryItOnline wren
+
+fileType text
+isOpenSource true
+centralPackageRepositoryCount 0

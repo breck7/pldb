@@ -1,12 +1,9 @@
 title Easybuild
 appeared 2014
 type application
-
+creators Kenneth Hoste
 description EasyBuild is a software build and installation framework that allows you to manage (scientific) software on High Performance Computing (HPC) systems in an efficient way.
-
-githubLanguage Easybuild
- fileExtensions eb
- trendingProjectsCount 0
+website http://easybuilders.github.io/easybuild/
 
 githubRepo https://github.com/easybuilders/easybuild
  stars 377
@@ -17,6 +14,10 @@ githubRepo https://github.com/easybuilders/easybuild
  description EasyBuild - building software with ease
  issues 93
  firstCommit 2012
+
+githubLanguage Easybuild
+ fileExtensions eb
+ trendingProjectsCount 0
 
 linguistGrammarRepo https://github.com/MagicStack/MagicPython
  firstCommit 2015
@@ -47,8 +48,6 @@ linguistGrammarRepo https://github.com/MagicStack/MagicPython
   moduleclass = 'tools'
   
 
-website http://easybuilders.github.io/easybuild/
 fileType text
 isOpenSource true
 centralPackageRepositoryCount 0
-creators Kenneth Hoste

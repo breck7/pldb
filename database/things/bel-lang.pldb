@@ -1,13 +1,12 @@
 title Biological Expression Language
 appeared 2003
 type textDataFormat
-
-example
- r(HGNC:CFTR, var("r.1653_1655delcuu"))
- r(REF:"NM_000492.3", var("r.1653_1655delcuu"))
-
 website http://openbel.org/
 reference https://github.com/OpenBEL/language
 standsFor Biological Expression Language
 domainName openbel.org
  registered 2011
+
+example
+ r(HGNC:CFTR, var("r.1653_1655delcuu"))
+ r(REF:"NM_000492.3", var("r.1653_1655delcuu"))

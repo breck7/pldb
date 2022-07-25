@@ -1,6 +1,18 @@
 title taf
 appeared 2012
 type pl
+creators Manuel Simoni
+description A Lisp with row polymorphism, delimited continuations, and hygienic macros. [vaporware]
+reference http://www.manuelsimoni.net/taf/doc/plan.html
+
+features
+ hasLineComments true
+  ; A comment
+ hasComments true
+  ; A comment
+ hasSemanticIndentation false
+
+lineCommentToken ;
 
 example
  (define (make-person name email)
@@ -13,8 +25,6 @@ example
  (to-string (make-person "Manuel" "msimoni@gmail.com"))
  ; ==> "Manuel <msimoni@gmail.com>"
 
-description A Lisp with row polymorphism, delimited continuations, and hygienic macros. [vaporware]
-
 githubRepo https://github.com/manuel/taf
  firstCommit 2012
  stars 56
@@ -24,13 +34,3 @@ githubRepo https://github.com/manuel/taf
  updated 2022
  description A Lisp with row polymorphism, delimited continuations, and hygienic macros. [vaporware]
  issues 0
-
-reference http://www.manuelsimoni.net/taf/doc/plan.html
-creators Manuel Simoni
-lineCommentToken ;
-features
- hasLineComments true
-  ; A comment
- hasComments true
-  ; A comment
- hasSemanticIndentation false

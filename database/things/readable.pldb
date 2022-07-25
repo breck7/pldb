@@ -1,22 +1,13 @@
 title Readable
 appeared 2018
 type textMarkup
-writtenIn red
-
+creators Lépine Kong
 description The ReAdABLE Human Format aims at Agile Documentation by making WRITING and READING document easier for End User and Developer alike, while allowing a high degree of flexibility. Its primary goal is to generate Markdown (and conversion to other formats in the future) while being even simpler (less code to memorize) and richer (adding meta-data is straightforward and creating new semantics is easy).
-
-githubRepo https://github.com/lepinekong/readablehumanformat
- firstCommit 2018
- stars 7
- forks 1
- subscribers 4
- created 2018
- updated 2021
- description ReAdABLE Human Format
- issues 9
-
 website https://readablehumanformat.com/
 reference https://readable.red/
+domainName readablehumanformat.com
+
+writtenIn red
 
 example
  Red [
@@ -206,5 +197,13 @@ example
      .copy-file %howtowritegoodarticle.red 
      .copy-file %howtowritegoodarticle.md 
  ]
-creators Lépine Kong
-domainName readablehumanformat.com
+
+githubRepo https://github.com/lepinekong/readablehumanformat
+ firstCommit 2018
+ stars 7
+ forks 1
+ subscribers 4
+ created 2018
+ updated 2021
+ description ReAdABLE Human Format
+ issues 9
