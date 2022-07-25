@@ -4,6 +4,7 @@ creatorsNode
  description Name(s) of the original creators of the language delimited by " and "
  cells keywordCell
  catchAllCellType creatorNameCell
+ contentDelimiter  and 
  extends abstractFactNode
  cruxFromId
  int sortIndex 800
@@ -49,11 +50,13 @@ countryNode
  catchAllCellType countryNameCell
  extends abstractFactNode
  cruxFromId
+ single false
 corporateDevelopersNode
  description Which corporation(s) sponsors the development of the project, if any.
  catchAllCellType stringCell
  extends abstractFactNode
  cruxFromId
+ single false
 isOpenSourceNode
  description Is it an open source project?
  extends abstractBooleanNode

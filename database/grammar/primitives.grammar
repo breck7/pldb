@@ -32,6 +32,7 @@ abstractFactNode
 abstractSectionNode
  extends abstractFactNode
  boolean padOnFormat true
+ cruxFromId
  single
 abstractFlagNode
  extends abstractFactNode
@@ -40,6 +41,7 @@ abstractFlagNode
 abstractPermalinksNode
  abstract
  catchAllCellType permalinkCell
+ contentDelimiter  
  extends abstractFactNode
  description Links to other entities on PLDB.
 abstractUrlNode
@@ -121,8 +123,3 @@ blankLineNode
  pattern ^$
  tags doNotSynthesize
  boolean shouldSerialize false
-filepathNode
- crux filepath
- extends abstractFactNode
- catchAllCellType stringCell
- cells keywordCell

@@ -3,12 +3,14 @@ abstractCommonTokenNode
  cells keywordCell
  catchAllCellType tokenCell
  extends abstractFactNode
+ contentDelimiter  
  abstract
 keywordsNode
  description What are all the keywords in this language?
  extends abstractFactNode
  cruxFromId
  catchAllCellType tokenCell
+ contentDelimiter  
  single
 lineCommentTokenNode
  extends abstractCommonTokenNode

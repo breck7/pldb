@@ -4,6 +4,7 @@ abstractRelationshipNode
 relatedNode
  extends abstractRelationshipNode
  description A catch all to indicate related languages.
+ single
 runsOnVmNode
  extends abstractRelationshipNode
  description What virtual machine(s) does this language run on? 

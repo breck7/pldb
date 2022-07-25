@@ -144,6 +144,14 @@ class PLDBFile extends TreeBaseFile {
     return featuresTable.filter(node => node.length)
   }
 
+  get corporateDevelopers(): string[] {
+    return this.getAll("corporateDevelopers")
+  }
+
+  get creators(): string[] {
+    return this.get("creators").split(" and ")
+  }
+
   get allExamples(): Example[] {
     const examples: Example[] = []
 

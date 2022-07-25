@@ -9,7 +9,7 @@ domainName reia-lang.org
  registered 2008
 lineCommentToken #
 printToken puts
-assignmentToken
+assignmentToken =
 example
  # Hello, world!
  "Hello, world!".puts()

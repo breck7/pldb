@@ -295,23 +295,20 @@ class ListRoutes {
 
     const files = lodash.sortBy(
       pldbBase.filter(
-        file => file.isLanguage && file.has("corporateDevelopers")
+        file => file.isLanguage && file.corporateDevelopers.length
       ),
       "languageRank"
     )
 
     files.forEach(file => {
-      file
-        .get("corporateDevelopers")
-        .split(" and ")
-        .forEach(entity => {
-          if (!entities[entity]) entities[entity] = []
-          entities[entity].push({
-            id: file.id,
-            title: file.title,
-            languageRank: file.languageRank
-          })
+      file.corporateDevelopers.forEach(entity => {
+        if (!entities[entity]) entities[entity] = []
+        entities[entity].push({
+          id: file.id,
+          title: file.title,
+          languageRank: file.languageRank
         })
+      })
     })
 
     const rows = Object.keys(entities).map(name => {
@@ -356,13 +353,10 @@ class ListRoutes {
         "languageRank"
       )
       .forEach(file => {
-        file
-          .get("creators")
-          .split(" and ")
-          .forEach(creatorName => {
-            if (!creators[creatorName]) creators[creatorName] = []
-            creators[creatorName].push(file)
-          })
+        file.creators.forEach(creatorName => {
+          if (!creators[creatorName]) creators[creatorName] = []
+          creators[creatorName].push(file)
+        })
       })
 
     const wikipediaLinks = new TreeNode(

@@ -280,17 +280,16 @@ ${facts.map(fact => ` - ${fact}`).join("\n")}`
   }
 
   get description() {
-    const { typeName, title } = this.file
+    const { typeName, title, creators } = this.file
     const { object } = this
     let akaMessage = object.standsFor ? `, aka ${object.standsFor},` : ""
     const appeared = object.appeared
 
-    let creators = object.creators || ""
+    let creatorsStr = ""
     if (creators) {
-      creators =
+      creatorsStr =
         ` by ` +
         creators
-          .split(" and ")
           .map(
             name =>
               `<a href="../lists/creators.html#${nameToAnchor(
@@ -306,7 +305,7 @@ ${facts.map(fact => ` - ${fact}`).join("\n")}`
       appeared
         ? ` created in <a href="../lists/languages.html?filter=${appeared}">${appeared}</a>`
         : ""
-    }${creators}.`
+    }${creatorsStr}.`
   }
 
   get typeLink() {
@@ -364,10 +363,10 @@ ${facts.map(fact => ` - ${fact}`).join("\n")}`
     const supersetOf = file.supersetFile
     if (supersetOf) facts.push(`${title} is a superset of ${supersetOf.link}`)
 
-    let corporateDevelopers = file.get("corporateDevelopers")
+    let { corporateDevelopers } = file
+    let corporateDevelopersStr = ""
     if (corporateDevelopers) {
-      corporateDevelopers = corporateDevelopers
-        .split(" and ")
+      corporateDevelopersStr = corporateDevelopers
         .map(
           name =>
             `<a href="../lists/corporations.html#${nameToAnchor(
@@ -375,7 +374,7 @@ ${facts.map(fact => ` - ${fact}`).join("\n")}`
             )}">${name}</a>`
         )
         .join(" and ")
-      facts.push(`${title} is backed by ${corporateDevelopers}`)
+      facts.push(`${title} is backed by ${corporateDevelopersStr}`)
     }
 
     const { numberOfJobs } = file

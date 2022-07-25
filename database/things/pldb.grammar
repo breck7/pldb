@@ -1,4 +1,5 @@
 tooling A function generates this grammar by combining all files in the grammar folder.
+todo Scoping by file in Grammar lang would be really useful for this file. Also, multiple inheritance or mixins.
 conferenceNameCell
  extends stringCell
 extensionCell
@@ -268,6 +269,7 @@ helloWorldCollectionNode
  string sourceDomain helloworldcollection.de
 leachim6ExampleNode
  extends exampleNode
+ crux example
  single
 linguistExampleNode
  description An example snippet from the relevant Linguist Grammar package.
@@ -277,11 +279,13 @@ wikipediaExampleNode
  extends exampleNode
  description Example(s) of this language on the Wikipedia page.
  crux example
+ single false
 abstractCommonTokenNode
  description Most general purpose programming languages implement a set of common tokens for common features like these.
  cells keywordCell
  catchAllCellType tokenCell
  extends abstractFactNode
+ contentDelimiter  
  abstract
 lineCommentTokenNode
  extends abstractCommonTokenNode
@@ -327,6 +331,7 @@ keywordsNode
  extends abstractFactNode
  cruxFromId
  catchAllCellType tokenCell
+ contentDelimiter  
  single
 abstractStringNode
  catchAllCellType stringCell
@@ -374,9 +379,9 @@ tokenKeywordNode
 abstractSectionNode
  extends abstractFactNode
  boolean padOnFormat true
+ cruxFromId
  single
 featuresNode
- cruxFromId
  inScope abstractFeatureNode
  extends abstractSectionNode
  int sortIndex 600
@@ -384,25 +389,22 @@ linguistGrammarRepoNode
  description Linguist is a library used by GitHub to syntax highlight files on GitHub via a grammar. The list of languages supported by Linguist and the grammar package used for each language is listed here: https://github.com/github/linguist/blob/master/vendor/README.md. If Linguist has support for a language, it will have a repo on GitHub. Given a language is supported by Linguist, that is a good indication it has at least 200 unique :user/:repo repositories, according to their docs.
  extends abstractSectionNode
  cells keywordCell urlCell
- cruxFromId
  contentKey url
  int sortIndex 10
- single
  inScope linguistExampleNode linguistCommitsNode linguistFirstCommitNode linguistLastCommitNode linguistSampleCountNode linguistCommitterCountNode
  string sourceDomain github.com
 wikipediaNode
  inScope wikipediaExampleNode wikipediaRelatedNode wikipediaSummaryNode wikipediaCreatedNode wikipediaDailyPageViewsNode wikipediaYearNode wikipediaBacklinksCountNode wikipediaRevisionCountNode wikipediaPageIdNode wikipediaFileExtensionsNode
  extends abstractSectionNode
- cruxFromId
  int sortIndex 500
  description URL of the entity on Wikipedia, if and only if it has a page dedicated to it.
  cells keywordCell urlCell
  string sourceDomain wikipedia.org
- single
  contentKey url
 fileExtensionsNode
  cells keywordCell
  catchAllCellType extensionCell
+ contentDelimiter  
  extends abstractFactNode
  description What are the common file extensions for this language type?
  cruxFromId
@@ -415,6 +417,7 @@ wikipediaFileExtensionsNode
  description If there's specifically identified file extensions on Wikipedia for this language.
  extends fileExtensionsNode
  crux fileExtensions
+ single
 abstractFlagNode
  extends abstractFactNode
  cells keywordCell
@@ -444,7 +447,7 @@ leachim6Node
  description A link to this language in leachim6's hello-world project.
  string sourceDomain github.com/leachim6/hello-world
  contentKey id
- inScope fileExtensionsNode filepathNode exampleNode
+ inScope fileExtensionsNode filepathNode leachim6ExampleNode
 projectEulerNode
  extends abstractMultiwordGuidNode
  description Is this language one of the ones listed on https://projecteuler.net/?
@@ -567,14 +570,17 @@ wikipediaDailyPageViewsNode
  extends abstractCountNode
  crux dailyPageViews
  description How many page views per day does this Wikipedia page get? Useful as a signal for rankings. Available via WP api.
+ single
 wikipediaBacklinksCountNode
  extends abstractCountNode
  crux backlinksCount
  description How many pages on WP link to this page?
+ single
 wikipediaRevisionCountNode
  extends abstractCountNode
  crux revisionCount
  description How many revisions does this page have?
+ single
 abstractYearNode
  cells keywordCell yearCell
  extends abstractIntNode
@@ -623,10 +629,12 @@ wikipediaCreatedNode
  extends abstractYearNode
  crux created
  description When was the *Wikipedia page* for this entity created?
+ single
 wikipediaYearNode
  extends abstractYearNode
  crux appeared
  description When does Wikipedia claim this entity first appeared?
+ single
 wordRankNode
  description Some creators use a common English word as their language's name. For these we note how common the word is, where "the" is 1.
  extends abstractIntNode
@@ -646,6 +654,7 @@ wikipediaPageIdNode
  extends abstractIntNode
  crux pageId
  description Waht is the internal ID for this entity on WP?
+ single
 goodreadsNode
  boolean fromCrawler true
  extends abstractFactNode
@@ -668,6 +677,7 @@ creatorsNode
  description Name(s) of the original creators of the language delimited by " and "
  cells keywordCell
  catchAllCellType creatorNameCell
+ contentDelimiter  and 
  extends abstractFactNode
  cruxFromId
  int sortIndex 800
@@ -689,11 +699,13 @@ countryNode
  catchAllCellType countryNameCell
  extends abstractFactNode
  cruxFromId
+ single false
 corporateDevelopersNode
  description Which corporation(s) sponsors the development of the project, if any.
  catchAllCellType stringCell
  extends abstractFactNode
  cruxFromId
+ single false
 abstractAnnualPopulationCountMapNode
  catchAllNodeType annualPopulationCountNode
  description A map of counts, one per year.
@@ -722,9 +734,16 @@ subredditMemberCountNode
  extends abstractAnnualPopulationCountMapNode
  crux memberCount
  description How many members in this subreddit.
+filepathNode
+ cruxFromId
+ extends abstractFactNode
+ catchAllCellType stringCell
+ cells keywordCell
+ single
 abstractPermalinksNode
  abstract
  catchAllCellType permalinkCell
+ contentDelimiter  
  extends abstractFactNode
  description Links to other entities on PLDB.
 forLanguagesNode
@@ -737,6 +756,7 @@ abstractRelationshipNode
 relatedNode
  extends abstractRelationshipNode
  description A catch all to indicate related languages.
+ single
 wikipediaRelatedNode
  description What languages does Wikipedia have as related?
  extends relatedNode
@@ -782,11 +802,6 @@ stackOverflowSurveyPercentageUsingNode
  crux percentageUsing
  extends abstractDecimalNode
  single
-filepathNode
- crux filepath
- extends abstractFactNode
- catchAllCellType stringCell
- cells keywordCell
 pygmentsFilenameNode
  crux filename
  extends abstractFactNode

@@ -2,6 +2,7 @@ extensionCell
 fileExtensionsNode
  cells keywordCell
  catchAllCellType extensionCell
+ contentDelimiter  
  extends abstractFactNode
  description What are the common file extensions for this language type?
  cruxFromId

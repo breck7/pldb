@@ -1,21 +1,22 @@
+todo Scoping by file in Grammar lang would be really useful for this file. Also, multiple inheritance or mixins.
 wikipediaNode
  inScope wikipediaExampleNode wikipediaRelatedNode wikipediaSummaryNode wikipediaCreatedNode wikipediaDailyPageViewsNode wikipediaYearNode wikipediaBacklinksCountNode wikipediaRevisionCountNode wikipediaPageIdNode wikipediaFileExtensionsNode
  extends abstractSectionNode
- cruxFromId
  int sortIndex 500
  description URL of the entity on Wikipedia, if and only if it has a page dedicated to it.
  cells keywordCell urlCell
  string sourceDomain wikipedia.org
- single
  contentKey url
 wikipediaExampleNode
  extends exampleNode
  description Example(s) of this language on the Wikipedia page.
  crux example
+ single false
 wikipediaFileExtensionsNode
  description If there's specifically identified file extensions on Wikipedia for this language.
  extends fileExtensionsNode
  crux fileExtensions
+ single
 wikipediaRelatedNode
  description What languages does Wikipedia have as related?
  extends relatedNode
@@ -28,23 +29,29 @@ wikipediaCreatedNode
  extends abstractYearNode
  crux created
  description When was the *Wikipedia page* for this entity created?
+ single
 wikipediaYearNode
  extends abstractYearNode
  crux appeared
  description When does Wikipedia claim this entity first appeared?
+ single
 wikipediaDailyPageViewsNode
  extends abstractCountNode
  crux dailyPageViews
  description How many page views per day does this Wikipedia page get? Useful as a signal for rankings. Available via WP api.
+ single
 wikipediaBacklinksCountNode
  extends abstractCountNode
  crux backlinksCount
  description How many pages on WP link to this page?
+ single
 wikipediaRevisionCountNode
  extends abstractCountNode
  crux revisionCount
  description How many revisions does this page have?
+ single
 wikipediaPageIdNode
  extends abstractIntNode
  crux pageId
  description Waht is the internal ID for this entity on WP?
+ single
