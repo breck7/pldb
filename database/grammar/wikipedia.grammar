@@ -2,7 +2,6 @@ todo Scoping by file in Grammar lang would be really useful for this file. Also,
 wikipediaNode
  inScope wikipediaExampleNode wikipediaRelatedNode wikipediaSummaryNode wikipediaCreatedNode wikipediaDailyPageViewsNode wikipediaYearNode wikipediaBacklinksCountNode wikipediaRevisionCountNode wikipediaPageIdNode wikipediaFileExtensionsNode
  extends abstractSectionNode
- int sortIndex 500
  description URL of the entity on Wikipedia, if and only if it has a page dedicated to it.
  cells keywordCell urlCell
  string sourceDomain wikipedia.org

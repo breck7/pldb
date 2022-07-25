@@ -2,8 +2,6 @@ helloWorldCollectionNode
  description Hello world written in this language from http://helloworldcollection.de/
  extends exampleNode
  cruxFromId
- boolean padOnFormat true
- int sortIndex 400
  cells keywordCell
  catchAllCellType helloWorldCollectionIdCell
  string sourceDomain helloworldcollection.de

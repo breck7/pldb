@@ -7,12 +7,10 @@ creatorsNode
  contentDelimiter  and 
  extends abstractFactNode
  cruxFromId
- int sortIndex 800
  single
 appearedNode
  description What year was the language publicly released and/or announced.
  extends abstractYearNode
- int sortIndex 900
  cruxFromId
  single
 nativeLanguageWordCell
@@ -25,7 +23,6 @@ nativeLanguageNode
 latestReleaseNode
  description The year of the most recent release of the thing.
  extends abstractYearNode
- int sortIndex 899
  cruxFromId
  single
 firstAnnouncementNode

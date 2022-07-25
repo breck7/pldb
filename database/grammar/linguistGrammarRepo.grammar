@@ -3,7 +3,6 @@ linguistGrammarRepoNode
  extends abstractSectionNode
  cells keywordCell urlCell
  contentKey url
- int sortIndex 10
  inScope linguistExampleNode linguistCommitsNode linguistFirstCommitNode linguistLastCommitNode linguistSampleCountNode linguistCommitterCountNode
  string sourceDomain github.com
 linguistExampleNode

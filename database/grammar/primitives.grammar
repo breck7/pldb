@@ -31,7 +31,6 @@ abstractFactNode
  cells keywordCell
 abstractSectionNode
  extends abstractFactNode
- boolean padOnFormat true
  cruxFromId
  single
 abstractFlagNode
@@ -91,20 +90,17 @@ abstractMultiwordGuidNode
  cells keywordCell
  catchAllCellType externalGuidCell
  extends abstractFactNode
- boolean padOnFormat true
  single
 abstractOneWordGuidNode
  abstract
  cells keywordCell externalGuidCell
  extends abstractFactNode
- boolean padOnFormat true
  single
  cruxFromId
 abstractUrlGuidNode
  abstract
  cells keywordCell urlCell
  extends abstractFactNode
- boolean padOnFormat true
 abstractCodeNode
  abstract
  catchAllNodeType lineOfCodeNode

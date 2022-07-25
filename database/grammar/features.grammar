@@ -2,7 +2,6 @@ psuedoExampleNode
  description As short an example as possible.
  extends abstractStringNode
  cruxFromId
- int sortIndex 610
  single
 abstractFeatureGrammarLinkNode
  todo Should only appear on entries where type=feature.
@@ -31,7 +30,6 @@ abstractFeatureNode
 featuresNode
  inScope abstractFeatureNode
  extends abstractSectionNode
- int sortIndex 600
 hasReservedWordsNode
  description Are things like keywords reserved words
  extends abstractFeatureNode

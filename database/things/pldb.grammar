@@ -57,7 +57,6 @@ abstractUrlGuidNode
  abstract
  cells keywordCell urlCell
  extends abstractFactNode
- boolean padOnFormat true
 antlrNode
  extends abstractUrlGuidNode
  description A link to the ANTLR grammar for this language (https://github.com/antlr/grammars-v4/tree/master/LANGUAGE)
@@ -93,8 +92,6 @@ githubRepoNode
  cruxFromId
  inScope abstractGithubYearNode abstractGithubCountNode githubDescriptionNode
  single
- int sortIndex 490
- boolean padOnFormat true
  contentKey url
  string sourceDomain github.com
 gitlabRepoNode
@@ -158,7 +155,6 @@ abstractOneWordGuidNode
  abstract
  cells keywordCell externalGuidCell
  extends abstractFactNode
- boolean padOnFormat true
  single
  cruxFromId
 codeMirrorNode
@@ -229,7 +225,6 @@ descriptionNode
  cruxFromId
  extends abstractFactNode
  boolean includeChildrenInCsv false
- int sortIndex 510
  single
 githubDescriptionNode
  single
@@ -249,21 +244,15 @@ abstractCodeNode
 equationNode
  description A text block containing a LaTeX snippet of a formula.
  extends abstractCodeNode
- boolean padOnFormat true
- int sortIndex 600
  cruxFromId
 exampleNode
  description A text block containing a representative snippet of code for the language.
- boolean padOnFormat true
- int sortIndex 600
  cruxFromId
  extends abstractCodeNode
 helloWorldCollectionNode
  description Hello world written in this language from http://helloworldcollection.de/
  extends exampleNode
  cruxFromId
- boolean padOnFormat true
- int sortIndex 400
  cells keywordCell
  catchAllCellType helloWorldCollectionIdCell
  string sourceDomain helloworldcollection.de
@@ -341,10 +330,8 @@ psuedoExampleNode
  description As short an example as possible.
  extends abstractStringNode
  cruxFromId
- int sortIndex 610
  single
 titleNode
- int sortIndex 1000
  description The official title of the language
  extends abstractStringNode
  cruxFromId
@@ -378,25 +365,21 @@ tokenKeywordNode
  description Links a feature entry to the related token keyword in the pldb grammar.
 abstractSectionNode
  extends abstractFactNode
- boolean padOnFormat true
  cruxFromId
  single
 featuresNode
  inScope abstractFeatureNode
  extends abstractSectionNode
- int sortIndex 600
 linguistGrammarRepoNode
  description Linguist is a library used by GitHub to syntax highlight files on GitHub via a grammar. The list of languages supported by Linguist and the grammar package used for each language is listed here: https://github.com/github/linguist/blob/master/vendor/README.md. If Linguist has support for a language, it will have a repo on GitHub. Given a language is supported by Linguist, that is a good indication it has at least 200 unique :user/:repo repositories, according to their docs.
  extends abstractSectionNode
  cells keywordCell urlCell
  contentKey url
- int sortIndex 10
  inScope linguistExampleNode linguistCommitsNode linguistFirstCommitNode linguistLastCommitNode linguistSampleCountNode linguistCommitterCountNode
  string sourceDomain github.com
 wikipediaNode
  inScope wikipediaExampleNode wikipediaRelatedNode wikipediaSummaryNode wikipediaCreatedNode wikipediaDailyPageViewsNode wikipediaYearNode wikipediaBacklinksCountNode wikipediaRevisionCountNode wikipediaPageIdNode wikipediaFileExtensionsNode
  extends abstractSectionNode
- int sortIndex 500
  description URL of the entity on Wikipedia, if and only if it has a page dedicated to it.
  cells keywordCell urlCell
  string sourceDomain wikipedia.org
@@ -433,13 +416,11 @@ abstractMultiwordGuidNode
  cells keywordCell
  catchAllCellType externalGuidCell
  extends abstractFactNode
- boolean padOnFormat true
  single
 githubLanguageNode
  description GitHub has a set of supported languages.
  extends abstractMultiwordGuidNode
  inScope githubLanguageFileExtensionsNode githubTrendingProjectsNode githubTrendingProjectsCountNode
- int sortIndex 491
  contentKey id
  string sourceDomain github.com
 leachim6Node
@@ -604,13 +585,11 @@ githubFirstCommitNode
 appearedNode
  description What year was the language publicly released and/or announced.
  extends abstractYearNode
- int sortIndex 900
  cruxFromId
  single
 latestReleaseNode
  description The year of the most recent release of the thing.
  extends abstractYearNode
- int sortIndex 899
  cruxFromId
  single
 linguistFirstCommitNode
@@ -680,7 +659,6 @@ creatorsNode
  contentDelimiter  and 
  extends abstractFactNode
  cruxFromId
- int sortIndex 800
  single
 nativeLanguageNode
  cells keywordCell nativeLanguageWordCell
@@ -811,7 +789,6 @@ typeNode
  cells keywordCell typeCell
  required
  cruxFromId
- int sortIndex 850
  single
  extends abstractFactNode
 fileTypeNode

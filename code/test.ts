@@ -1,6 +1,5 @@
 #!/usr/bin/env ts-node
 
-const lodash = require("lodash")
 const tap = require("tap")
 const grammarNode = require("jtree/products/grammar.nodejs.js")
 const { Disk } = require("jtree/products/Disk.node.js")
@@ -42,7 +41,16 @@ testTree.ensurePrettifiedCausesNoSemanticChanges = areEqual => {
 
 	// Assert
 	const post = pldbBase.typedMapShort
-	lodash.isEqual(pre, post)
+	areEqual(pre, post)
+
+	// Assure prettify is stable
+	const onceString = pldbBase.toString()
+
+	// Act
+	pldbBase.forEach(file => file.prettify())
+
+	// Assert
+	areEqual(onceString, pldbBase.toString())
 }
 
 if (module && !module.parent) runTree(testTree)

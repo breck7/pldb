@@ -330,24 +330,39 @@ class PLDBFile extends TreeBaseFile {
 
   // todo: move upstream to Grammar
   prettify() {
+    const diskTemplate = Disk.read(__dirname + "/sortTemplate.tree")
+    const sortIndices = new Map()
+    diskTemplate.split("\n").forEach((word, index) => {
+      sortIndices.set(word, index)
+    })
+
     const original = this.childrenToString()
     const noBlankLines = original.replace(/\n\n+/g, "\n")
     const programParser = this.base.grammarProgramConstructor
     const program = new programParser(noBlankLines)
 
     program.sort((nodeA, nodeB) => {
-      const a = nodeA.sortIndex ?? 0
-      const b = nodeB.sortIndex ?? 0
-      return a > b ? -1 : a < b ? 1 : nodeA.getLine() > nodeB.getLine()
+      const a = sortIndices.get(nodeA.getFirstWord()) ?? 1000
+      const b = sortIndices.get(nodeB.getFirstWord()) ?? 1000
+      return a > b ? 1 : a < b ? -1 : nodeA.getLine() > nodeB.getLine()
     })
 
     // pad sections
-    program
-      .filter(node => node.padOnFormat)
-      .forEach(node => {
-        if (node.getPrevious().getLine() !== "") node.prependSibling("")
-        if (node.getNext().getLine() !== "") node.appendSibling("")
+    const sections = new Map()
+    diskTemplate.split("#").forEach((section, sectionIndex) => {
+      section.split("\n").forEach(word => {
+        sections.set(word, sectionIndex)
       })
+    })
+    let currentSection = 0
+    program.forEach(node => {
+      const nodeSection = sections.get(node.getFirstWord())
+      const sectionHasAdvanced = nodeSection > currentSection
+      if (sectionHasAdvanced) {
+        currentSection = nodeSection
+        node.prependSibling("") // Put a blank line before this section
+      }
+    })
 
     this.setChildren(program.toString())
   }
