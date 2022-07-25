@@ -306,8 +306,14 @@ class PLDBFile extends TreeBaseFile {
     return this.getParent() as PLDBBaseFolder
   }
 
+  @imemo
   get parsed() {
     return this.base.parsed.getNode(this.getWord(0))
+  }
+
+  @imemo
+  get factCount() {
+    return this.parsed.filter(node => node.shouldSerialize !== false).length
   }
 
   get linksToOtherFiles() {
@@ -536,7 +542,7 @@ class PLDBBaseFolder extends TreeBaseFolder {
       object.id = id
       object.jobs = this.predictNumberOfJobs(file)
       object.users = this.predictNumberOfUsers(file)
-      object.facts = file.length
+      object.facts = file.factCount
       object.inboundLinks = inboundLinks[id].length
       return object
     })
