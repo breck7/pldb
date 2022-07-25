@@ -329,7 +329,7 @@ class PLDBFile extends TreeBaseFile {
   }
 
   // todo: move upstream to Grammar
-  formatAndSave() {
+  prettify() {
     const original = this.childrenToString()
     const noBlankLines = original.replace(/\n\n+/g, "\n")
     const programParser = this.base.grammarProgramConstructor
@@ -350,7 +350,6 @@ class PLDBFile extends TreeBaseFile {
       })
 
     this.setChildren(program.toString())
-    this.save()
   }
 }
 

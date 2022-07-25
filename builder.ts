@@ -301,7 +301,10 @@ ${text}`
   }
 
   formatDatabase() {
-    pldbBase.forEach(file => file.formatAndSave())
+    pldbBase.forEach(file => {
+      file.prettify()
+      file.save()
+    })
   }
 
   serveFolder(port = 3030) {
