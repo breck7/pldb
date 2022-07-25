@@ -149,7 +149,7 @@ class PLDBFile extends TreeBaseFile {
   }
 
   get creators(): string[] {
-    return this.get("creators").split(" and ")
+    return this.get("creators")?.split(" and ") ?? []
   }
 
   get allExamples(): Example[] {
