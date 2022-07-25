@@ -50,6 +50,8 @@ abstractUrlNode
 abstractGitRepoUrlNode
  extends abstractUrlNode
  abstract
+ single
+ cruxFromId
 abstractDecimalNode
  cells keywordCell numberCell
  extends abstractFactNode

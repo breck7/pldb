@@ -307,6 +307,12 @@ ${text}`
     })
   }
 
+  formatOne(id) {
+    const file = pldbBase.getFile(id)
+    file.prettify()
+    file.save()
+  }
+
   serveFolder(port = 3030) {
     const express = require("express")
     const app = express()

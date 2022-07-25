@@ -330,20 +330,28 @@ class PLDBFile extends TreeBaseFile {
 
   // todo: move upstream to Grammar
   prettify() {
-    const diskTemplate = Disk.read(__dirname + "/sortTemplate.tree")
+    const diskTemplate = Disk.read(__dirname + "/sortTemplate.tree").replace(
+      /\n\n/,
+      "\n"
+    )
     const sortIndices = new Map()
     diskTemplate.split("\n").forEach((word, index) => {
       sortIndices.set(word, index)
     })
 
     const original = this.childrenToString()
-    const noBlankLines = original.replace(/\n\n+/g, "\n")
+    const noBlankLines = original.replace(/\n\n+/g, "\n").replace(/\n$/, "")
     const programParser = this.base.grammarProgramConstructor
     const program = new programParser(noBlankLines)
 
     program.sort((nodeA, nodeB) => {
-      const a = sortIndices.get(nodeA.getFirstWord()) ?? 1000
-      const b = sortIndices.get(nodeB.getFirstWord()) ?? 1000
+      const aIndex = sortIndices.get(nodeA.getFirstWord())
+      const bIndex = sortIndices.get(nodeB.getFirstWord())
+      if (aIndex === undefined) {
+        console.error(`sortTemplate is missing "${nodeA.getFirstWord()}"`)
+      }
+      const a = aIndex ?? 1000
+      const b = bIndex ?? 1000
       return a > b ? 1 : a < b ? -1 : nodeA.getLine() > nodeB.getLine()
     })
 

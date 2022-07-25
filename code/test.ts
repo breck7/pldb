@@ -1,6 +1,7 @@
 #!/usr/bin/env ts-node
 
 const tap = require("tap")
+const lodash = require("lodash")
 const grammarNode = require("jtree/products/grammar.nodejs.js")
 const { Disk } = require("jtree/products/Disk.node.js")
 
@@ -37,20 +38,21 @@ testTree.ensurePrettifiedCausesNoSemanticChanges = areEqual => {
 	const pre = pldbBase.typedMapShort
 
 	// Act
-	pldbBase.forEach(file => file.prettify())
+	pldbBase.forEach(file => {
+		file.prettify()
+		const result = file.toString()
+		file.prettify()
+		const result2 = file.toString()
+		areEqual(result, result2, `prettify is stable`)
+	})
 
 	// Assert
 	const post = pldbBase.typedMapShort
-	areEqual(pre, post)
-
-	// Assure prettify is stable
-	const onceString = pldbBase.toString()
-
-	// Act
-	pldbBase.forEach(file => file.prettify())
-
-	// Assert
-	areEqual(onceString, pldbBase.toString())
+	areEqual(
+		lodash.isEqual(pre, post),
+		true,
+		"typed map doesnt change after prettify"
+	)
 }
 
 if (module && !module.parent) runTree(testTree)

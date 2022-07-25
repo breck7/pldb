@@ -2,12 +2,42 @@ title
 appeared
 type
 creators
+description
 website
+webRepl
 reference
+cheatSheetUrl
+standsFor
+oldName
+renamedTo
 aka
+fileExtensions
 country
-related
+nativeLanguage
+corporateDevelopers
 domainName
+equation
+firstAnnouncement
+announcementMethod
+latestRelease
+
+#
+psuedoExample
+featureKeyword
+tokenKeyword
+
+#
+compilesTo
+forkOf
+subsetOf
+supersetOf
+writtenIn
+runsOnVm
+related
+influencedBy
+
+#
+visualParadigm
 
 #
 features
@@ -24,6 +54,11 @@ keywords
 example
 
 #
+githubRepo
+sourcehutRepo
+gitlabRepo
+
+#
 wikipedia
 
 #
@@ -35,6 +70,7 @@ monaco
 codeMirror
 pygmentsHighlighter
 linguistGrammarRepo
+languageServerProtocolProject
 
 #
 projectEuler
@@ -46,6 +82,7 @@ quineRelay
 #
 rijuRepl
 replit
+tryItOnline
 
 #
 indeedJobs
@@ -55,19 +92,34 @@ stackOverflowSurvey
 #
 subreddit
 meetup
-twitter
+conference
 
 #
 goodreads
 
 #
-tiobe
-hopl
+hackerNewsDiscussions
+redditDiscussion
 
 #
-ubuntuPackage
-jupyterKernel
+tiobe
+hopl
+esolang
+
+#
 packageRepository
+packageCount
+packageAuthors
+packageInstallCount
+forLanguages
+
+#
+twitter
+ubuntuPackage
+gdbSupport
+jupyterKernel
 fileType
 wordRank
+isOpenSource
 githubCopilotOptimized
+centralPackageRepositoryCount

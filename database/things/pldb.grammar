@@ -86,25 +86,21 @@ esolangNode
 abstractGitRepoUrlNode
  extends abstractUrlNode
  abstract
+ single
+ cruxFromId
 githubRepoNode
  description URL of the official GitHub repo for the project if it hosted there.
  extends abstractGitRepoUrlNode
- cruxFromId
  inScope abstractGithubYearNode abstractGithubCountNode githubDescriptionNode
- single
  contentKey url
  string sourceDomain github.com
 gitlabRepoNode
  description URL of the official GitLab repo for the language project.
  extends abstractGitRepoUrlNode
- cruxFromId
- single
  string sourceDomain gitlab.com
 sourcehutRepoNode
  description URL of the official sourcehut repo for the project.
  extends abstractGitRepoUrlNode
- cruxFromId
- single
  string sourceDomain sr.ht
 firstAnnouncementNode
  description A url announcing the creation or release of a new language
