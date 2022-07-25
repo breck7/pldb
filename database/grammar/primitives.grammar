@@ -67,11 +67,12 @@ abstractYearNode
  cells keywordCell yearCell
  extends abstractIntNode
  abstract
-abstractAnnualPopulationCountNode
+abstractAnnualPopulationCountMapNode
  catchAllNodeType annualPopulationCountNode
  description A map of counts, one per year.
  extends abstractFactNode
  abstract
+ single
 annualPopulationCountNode
  cells yearCell populationCountCell
  uniqueFirstWord

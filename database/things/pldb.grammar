@@ -532,10 +532,12 @@ stackOverflowSurveyUsersNode
  crux users
  extends abstractPopulationCountNode
  description How many developers reported using this language.
+ single
 stackOverflowSurveyFansNode
  description How many developers reported wanting to learn this language.
  crux fans
  extends abstractPopulationCountNode
+ single
 twitterFollowersNode
  description How many followers the linked account has.
  extends abstractPopulationCountNode
@@ -634,6 +636,7 @@ stackOverflowSurveyMedianSalaryNode
  crux medianSalary
  description Median salary reported by developers using this language.
  extends abstractIntNode
+ single
 tiobeCurrentRankNode
  description What is the current Tiobe rank of this language?
  extends abstractIntNode
@@ -691,33 +694,32 @@ corporateDevelopersNode
  catchAllCellType stringCell
  extends abstractFactNode
  cruxFromId
-abstractAnnualPopulationCountNode
+abstractAnnualPopulationCountMapNode
  catchAllNodeType annualPopulationCountNode
  description A map of counts, one per year.
  extends abstractFactNode
  abstract
+ single
 indeedJobsNode
  description How many job descriptions match this query for this language on indeed.com?
  catchAllCellType searchQueryCell
- extends abstractAnnualPopulationCountNode
+ extends abstractAnnualPopulationCountMapNode
  contentKey query
  cruxFromId
  string sourceDomain indeed.com
- single
 linkedInSkillNode
  description How many people list this skill on LinkedIn?
- extends abstractAnnualPopulationCountNode
+ extends abstractAnnualPopulationCountMapNode
  cruxFromId
  catchAllCellType searchQueryCell
  contentKey id
  string sourceDomain linkedin.com
- single
 projectEulerMemberCountNode
  crux memberCount
  description How many project euler members use this language.
- extends abstractAnnualPopulationCountNode
+ extends abstractAnnualPopulationCountMapNode
 subredditMemberCountNode
- extends abstractAnnualPopulationCountNode
+ extends abstractAnnualPopulationCountMapNode
  crux memberCount
  description How many members in this subreddit.
 abstractPermalinksNode
@@ -779,6 +781,7 @@ stackOverflowSurveyPercentageUsingNode
  description What percentage of survey respondents report using this language?
  crux percentageUsing
  extends abstractDecimalNode
+ single
 filepathNode
  crux filepath
  extends abstractFactNode

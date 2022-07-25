@@ -5,7 +5,7 @@ subredditNode
  contentKey id
  single false
 subredditMemberCountNode
- extends abstractAnnualPopulationCountNode
+ extends abstractAnnualPopulationCountMapNode
  crux memberCount
  description How many members in this subreddit.
 redditDiscussionNode

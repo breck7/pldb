@@ -13,15 +13,19 @@ stackOverflowSurveyUsersNode
  crux users
  extends abstractPopulationCountNode
  description How many developers reported using this language.
+ single
 stackOverflowSurveyMedianSalaryNode
  crux medianSalary
  description Median salary reported by developers using this language.
  extends abstractIntNode
+ single
 stackOverflowSurveyFansNode
  description How many developers reported wanting to learn this language.
  crux fans
  extends abstractPopulationCountNode
+ single
 stackOverflowSurveyPercentageUsingNode
  description What percentage of survey respondents report using this language?
  crux percentageUsing
  extends abstractDecimalNode
+ single
