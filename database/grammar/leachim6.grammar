@@ -1,10 +1,8 @@
 leachim6Node
  extends abstractMultiwordGuidNode
  description A link to this language in leachim6's hello-world project.
- cruxFromId
  string sourceDomain github.com/leachim6/hello-world
  contentKey id
- single
  inScope fileExtensionsNode filepathNode exampleNode
 leachim6ExampleNode
  extends exampleNode

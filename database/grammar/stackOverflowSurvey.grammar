@@ -1,10 +1,8 @@
 stackOverflowSurveyNode
  extends abstractMultiwordGuidNode
  description StackOverflow does an annual developer survey: https://insights.stackoverflow.com/survey
- cruxFromId
  inScope stackOverflowSurveyYearNode
  string sourceDomain insights.stackoverflow.com
- single
 stackOverflowSurveyYearNode
  description Survey results for a particular year.
  cells yearCell

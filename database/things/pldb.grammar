@@ -426,6 +426,7 @@ githubCopilotOptimizedNode
  single
 abstractMultiwordGuidNode
  abstract
+ cruxFromId
  cells keywordCell
  catchAllCellType externalGuidCell
  extends abstractFactNode
@@ -435,55 +436,42 @@ githubLanguageNode
  description GitHub has a set of supported languages.
  extends abstractMultiwordGuidNode
  inScope githubLanguageFileExtensionsNode githubTrendingProjectsNode githubTrendingProjectsCountNode
- cruxFromId
  int sortIndex 491
  contentKey id
  string sourceDomain github.com
 leachim6Node
  extends abstractMultiwordGuidNode
  description A link to this language in leachim6's hello-world project.
- cruxFromId
  string sourceDomain github.com/leachim6/hello-world
  contentKey id
- single
  inScope fileExtensionsNode filepathNode exampleNode
 projectEulerNode
  extends abstractMultiwordGuidNode
  description Is this language one of the ones listed on https://projecteuler.net/?
- cruxFromId
  inScope projectEulerMemberCountNode
  string sourceDomain projecteuler.net
  contentKey id
- single
 pygmentsHighlighterNode
  extends abstractMultiwordGuidNode
  description A link to a Pygments syntax highlighting class for this language (https://pygments.org/)
- cruxFromId
  string sourceDomain pygments.org
  inScope fileExtensionsNode pygmentsFilenameNode
  contentKey id
 quineRelayNode
  extends abstractMultiwordGuidNode
  description The Quine Relay project (https://github.com/mame/quine-relay).
- cruxFromId
  string sourceDomain github.com/mame/quine-relay
- single
 stackOverflowSurveyNode
  extends abstractMultiwordGuidNode
  description StackOverflow does an annual developer survey: https://insights.stackoverflow.com/survey
- cruxFromId
  inScope stackOverflowSurveyYearNode
  string sourceDomain insights.stackoverflow.com
- single
 tiobeNode
  extends abstractMultiwordGuidNode
  description Tiobe maintains a well known ranking of programming languages here: https://www.tiobe.com/tiobe-index/
- cruxFromId
  inScope tiobeCurrentRankNode
  string sourceDomain tiobe.com
- catchAllCellType externalGuidCell
  contentKey id
- single
 abstractIntNode
  cells keywordCell intCell
  extends abstractFactNode
