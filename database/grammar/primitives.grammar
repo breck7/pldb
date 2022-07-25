@@ -95,6 +95,7 @@ abstractOneWordGuidNode
  extends abstractFactNode
  boolean padOnFormat true
  single
+ cruxFromId
 abstractUrlGuidNode
  abstract
  cells keywordCell urlCell

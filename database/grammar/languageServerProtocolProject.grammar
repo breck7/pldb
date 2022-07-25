@@ -1,7 +1,7 @@
 languageServerProtocolProjectNode
  extends abstractUrlNode
  inScope writtenInNode
- boolean multipleOk true
+ single false
  description A link to a project implementing LSP for this language.
  cruxFromId
  string sourceDomain langserver.org

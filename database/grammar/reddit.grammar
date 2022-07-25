@@ -1,10 +1,9 @@
 subredditNode
  extends abstractOneWordGuidNode
- cruxFromId
  inScope subredditMemberCountNode
  string sourceDomain reddit.com
- boolean multipleOk true
  contentKey id
+ single false
 subredditMemberCountNode
  extends abstractAnnualPopulationCountNode
  crux memberCount
@@ -14,4 +13,4 @@ redditDiscussionNode
  extends abstractUrlNode
  cruxFromId
  string sourceDomain reddit.com
- boolean multipleOk true
+ single false

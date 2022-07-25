@@ -1,7 +1,6 @@
 twitterNode
  extends abstractOneWordGuidNode
  description Official Twitter handle of the entity, if any.
- cruxFromId
  inScope twitterFollowersNode
  string sourceDomain twitter.com
 twitterFollowersNode

@@ -20,7 +20,7 @@ akaNode
  description Another name for the language. Entries can have multiple aka lines.
  extends abstractStringNode
  cruxFromId
- boolean multipleOk true
+ single false
 oldNameNode
  description What is the old name of this language?
  extends abstractStringNode

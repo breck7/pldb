@@ -2,7 +2,7 @@ packageRepositoryNode
  extends abstractUrlNode
  cruxFromId
  description URL to the package repository for this language.
- boolean multipleOk true
+ single false
 centralPackageRepositoryCountNode
  extends abstractCountNode
  cruxFromId

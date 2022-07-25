@@ -1,6 +1,5 @@
 hoplNode
  extends abstractOneWordGuidNode
+ cells keywordCell intCell
  description The matching language on Diarmuid Pigott's Online Historical Encyclopaedia of Programming Languages site (https://hopl.info/)
- cruxFromId
  string sourceDomain hopl.info
- single
