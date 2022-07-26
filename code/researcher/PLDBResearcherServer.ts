@@ -33,7 +33,7 @@ class PLDBResearcherServer extends TreeBaseServer {
 
 	indexCommand() {
 		return `${header}
-<p>PLDB Researcher is a simple web app for adding and editing content on <a href="https://pldb.pub/">The Programming Language Database</a>.</p>
+<p>PLDB Researcher is a simple web app for quickly adding and editing content on <a href="https://pldb.pub/">The Programming Language Database</a>.</p>
 <div style="white-space:pre;">
 -- Folder: '${this._folder._getDir()}'
 -- Grammars: '${this._folder._getGrammarPaths().join(",")}'
