@@ -14,6 +14,7 @@ import {
   imemo
 } from "./utils"
 
+const path = require("path")
 const lodash = require("lodash")
 const { TreeNode } = jtree
 const {
@@ -39,6 +40,8 @@ interface Example {
   source: string
   link: string
 }
+
+const databaseFolder = path.join(__dirname, "..", "database")
 
 const typeNames = new TreeNode(`application
 assembly assembly language
@@ -336,10 +339,9 @@ class PLDBFile extends TreeBaseFile {
 
   // todo: move upstream to Grammar
   prettify() {
-    const diskTemplate = Disk.read(__dirname + "/sortTemplate.tree").replace(
-      /\n\n/,
-      "\n"
-    )
+    const diskTemplate = Disk.read(
+      path.join(databaseFolder, "sortTemplate.txt")
+    ).replace(/\n\n/, "\n")
     const sortIndices = new Map()
     diskTemplate.split("\n").forEach((word, index) => {
       sortIndices.set(word, index)
@@ -386,7 +388,7 @@ class PLDBBaseFolder extends TreeBaseFolder {
   static getBase() {
     return new (<any>PLDBBaseFolder)(
       undefined,
-      __dirname + "/../database/things/"
+      path.join(databaseFolder, "things")
     ) as PLDBBaseFolder
   }
 
