@@ -15,8 +15,6 @@ import { LanguagePageTemplate, FeaturePageTemplate } from "./code/pages"
 import { PLDBBaseFolder } from "./code/PLDBBase"
 import { ListRoutes } from "./code/routes"
 
-const { TreeBaseServer } = require("jtree/products/treeBase.node.js")
-
 const pldbBase = PLDBBaseFolder.getBase()
 const websiteFolder = __dirname + "/pldb.pub"
 const databaseFolderWhenPublishedToWebsite = websiteFolder + "/languages" // Todo: eventually redirect away from /languages?
@@ -306,18 +304,6 @@ ${text}`
       file.prettify()
       file.save()
     })
-  }
-
-  serveFolder(port = 3030) {
-    const express = require("express")
-    const app = express()
-    app.use(express.static(__dirname + "/pldb.pub"))
-    app.listen(port)
-  }
-
-  startServer(port = 4444) {
-    pldbBase.startListeningForFileChanges()
-    new (<any>TreeBaseServer)(pldbBase).listen(port)
   }
 
   do() {
