@@ -43,6 +43,11 @@ node ./code/researcher/PLDBResearcherServer.js startDevServer 80
 sudo snap install core; sudo snap refresh core
 sudo snap install --classic certbot
 sudo certbot certonly --standalone
+mkdir ignore
+sudo cp /etc/letsencrypt/live/researcher.pldb.pub/privkey.pem ignore
+sudo cp /etc/letsencrypt/live/researcher.pldb.pub/fullchain.pem ignore
+sudo chown pldb:pldb ignore/privkey.pem
+sudo chown pldb:pldb ignore/fullchain.pem
 # Now start with pm2 over http2
 pm2 start ./code/researcher/PLDBResearcherServer.js -- startProdServer
 pm2 startup systemd

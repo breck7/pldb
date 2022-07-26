@@ -114,10 +114,10 @@ class PLDBResearcherServer extends TreeBaseServer {
 
 	listenProd() {
 		const key = fs.readFileSync(
-			"/etc/letsencrypt/live/researcher.pldb.pub/privkey.pem"
+			path.join(__dirname, "..", "..", "ignore", "privkey.pem")
 		)
 		const cert = fs.readFileSync(
-			"/etc/letsencrypt/live/researcher.pldb.pub/fullchain.pem"
+			path.join(__dirname, "..", "..", "ignore", "fullchain.pem")
 		)
 		const port = 443
 		https
@@ -135,22 +135,21 @@ class PLDBResearcherServer extends TreeBaseServer {
 }
 
 class PLDBResearcherServerCommands {
-	startDevServerCommand(port) {
+	get server() {
 		const pldbBase = PLDBBaseFolder.getBase()
 		pldbBase.loadFolder()
 		pldbBase.startListeningForFileChanges()
 		const server = new (<any>PLDBResearcherServer)(pldbBase)
 		server.addRoutes()
-		server.listen(port)
+		return server
+	}
+
+	startDevServerCommand(port) {
+		this.server.listen(port)
 	}
 
 	startProdServerCommand() {
-		const pldbBase = PLDBBaseFolder.getBase()
-		pldbBase.loadFolder()
-		pldbBase.startListeningForFileChanges()
-		const server = new (<any>PLDBResearcherServer)(pldbBase)
-		server.addRoutes()
-		server.listenProd()
+		this.server.listenProd()
 	}
 
 	serveFolderCommand(
