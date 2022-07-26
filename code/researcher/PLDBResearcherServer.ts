@@ -7,8 +7,8 @@ const { TreeBaseServer } = require("jtree/products/treeBase.node.js")
 import { PLDBBaseFolder } from "../PLDBBase"
 import { runCommand } from "../utils"
 
-const header = `<title>PLDB Editor</title><div>
-<a href="/"><b>PLDB Editor</b></a> | <a href="/edit">List all</a> | <a href="/create">Create</a>
+const header = `<title>PLDB Researcher</title><div>
+<a href="/"><b>PLDB Researcher</b></a> | <a href="/edit">List all</a> | <a href="/create">Create</a>
 </div><br>`
 
 const editForm = (content = "") =>
@@ -26,13 +26,14 @@ const keyboardNav = file => `<script src="/libs.js"></script>
   Mousetrap.bind("right", () => {window.location = "${file.nextRanked.id}"})
  </script>`
 
-class PLDBServer extends TreeBaseServer {
+class PLDBResearcherServer extends TreeBaseServer {
 	checkAndPrettifySubmission(content: string) {
 		return this._folder.prettifyContent(content)
 	}
 
 	indexCommand() {
 		return `${header}
+<p>PLDB Researcher is a simple web app for adding and editing content on <a href="https://pldb.pub/">The Programming Language Database</a>.</p>
 <div style="white-space:pre;">
 -- Folder: '${this._folder._getDir()}'
 -- Grammars: '${this._folder._getGrammarPaths().join(",")}'
@@ -110,12 +111,12 @@ class PLDBServer extends TreeBaseServer {
 	}
 }
 
-class PLDBServerCommands {
+class PLDBResearcherServerCommands {
 	launchServerCommand(port) {
 		const pldbBase = PLDBBaseFolder.getBase()
 		pldbBase.loadFolder()
 		pldbBase.startListeningForFileChanges()
-		const server = new (<any>PLDBServer)(pldbBase)
+		const server = new (<any>PLDBResearcherServer)(pldbBase)
 		server.addRoutes()
 		server.listen(port)
 	}
@@ -131,7 +132,11 @@ class PLDBServerCommands {
 	}
 }
 
-export { PLDBServer }
+export { PLDBResearcherServer }
 
 if (!module.parent)
-	runCommand(new PLDBServerCommands(), process.argv[2], process.argv[3])
+	runCommand(
+		new PLDBResearcherServerCommands(),
+		process.argv[2],
+		process.argv[3]
+	)
