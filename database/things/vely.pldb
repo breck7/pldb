@@ -1,0 +1,38 @@
+title Vely
+appeared 2022
+type pl
+description Vely is an embedded programming language with C as a host language. It's precompiled into C, creating a native executable.
+website https://vely.dev/
+reference https://news.ycombinator.com/item?id=32231417
+domainName vely.dev
+ registered 2022
+
+example
+ void list_employees() {
+     out-header default
+     @<html><body>
+ 
+     char *header = make_header(); // write any C code
+     p-out header
+ 
+     // Create report in outmsg string and fill it with database query result
+     write-string define outmsg
+         // Get data from the database
+         run-query#get_emp@db="select name, salary from employees order by name" output name, salary
+             @Name: <<query-result#get_emp, name>>
+             @<br/>
+             @Salary: <<query-result#get_emp, salary>>
+             @<br/><br/>
+         end-query
+     end-write-string
+ 
+     // Write report to a file and then to the client
+     write-file "employees" from outmsg status define st
+     if (st<0) {
+         @Error in writing file (<<pf-out "%lld", st>>)
+         exit-request
+     } else {
+         p-out outmsg
+     }
+     @</body></html>
+ }

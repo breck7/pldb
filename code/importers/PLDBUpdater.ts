@@ -20,6 +20,8 @@ class PLDBUpdater {
     new WikipediaImporter().updateOneCommand(file)
     const importer = new WhoIsImporter()
     importer.updateOne(file)
+    file.prettify()
+    file.save()
   }
 
   updateCommand(id: string) {
