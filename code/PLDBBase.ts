@@ -337,50 +337,10 @@ class PLDBFile extends TreeBaseFile {
     return this.findNodes(keyword).map(i => i.getContent())
   }
 
-  // todo: move upstream to Grammar
+  // todo: move upstream to TreeBase or Grammar
   prettify() {
-    const diskTemplate = Disk.read(
-      path.join(databaseFolder, "sortTemplate.txt")
-    ).replace(/\n\n/, "\n")
-    const sortIndices = new Map()
-    diskTemplate.split("\n").forEach((word, index) => {
-      sortIndices.set(word, index)
-    })
-
-    const original = this.childrenToString()
-    const noBlankLines = original.replace(/\n\n+/g, "\n").replace(/\n$/, "")
-    const programParser = this.base.grammarProgramConstructor
-    const program = new programParser(noBlankLines)
-
-    program.sort((nodeA, nodeB) => {
-      const aIndex = sortIndices.get(nodeA.getFirstWord())
-      const bIndex = sortIndices.get(nodeB.getFirstWord())
-      if (aIndex === undefined) {
-        console.error(`sortTemplate is missing "${nodeA.getFirstWord()}"`)
-      }
-      const a = aIndex ?? 1000
-      const b = bIndex ?? 1000
-      return a > b ? 1 : a < b ? -1 : nodeA.getLine() > nodeB.getLine()
-    })
-
-    // pad sections
-    const sections = new Map()
-    diskTemplate.split("#").forEach((section, sectionIndex) => {
-      section.split("\n").forEach(word => {
-        sections.set(word, sectionIndex)
-      })
-    })
-    let currentSection = 0
-    program.forEach(node => {
-      const nodeSection = sections.get(node.getFirstWord())
-      const sectionHasAdvanced = nodeSection > currentSection
-      if (sectionHasAdvanced) {
-        currentSection = nodeSection
-        node.prependSibling("") // Put a blank line before this section
-      }
-    })
-
-    this.setChildren(program.toString())
+    const str = this.base.prettifyContent(this.childrenToString())
+    this.setChildren(str)
   }
 }
 
@@ -687,8 +647,13 @@ class PLDBBaseFolder extends TreeBaseFolder {
   }
 
   createFile(content: string, id?: string) {
-    id = id || getCleanedId(new TreeNode(content).get("title"))
-    const fullPath = this._getDir() + "/" + id + ".pldb"
+    if (id === undefined) {
+      const title = new TreeNode(content).get("title")
+      if (!title)
+        throw new Error(`A "title" must be provided when creating a new file`)
+      id = getCleanedId(title)
+    }
+    const fullPath = path.join(this._getDir(), id + ".pldb")
     Disk.write(fullPath, content)
     return this.appendLineAndChildren(fullPath, content)
   }
@@ -720,6 +685,68 @@ class PLDBBaseFolder extends TreeBaseFolder {
     })
 
     return lodash.sortBy(objects, "rank")
+  }
+
+  get sortTemplate() {
+    return Disk.read(path.join(databaseFolder, "sortTemplate.txt")).replace(
+      /\n\n/,
+      "\n"
+    )
+  }
+
+  @imemo
+  get sortIndices() {
+    const sortIndices = new Map()
+    this.sortTemplate.split("\n").forEach((word, index) => {
+      sortIndices.set(word, index)
+    })
+    return sortIndices
+  }
+
+  @imemo
+  get sortSections() {
+    const sections = new Map()
+    this.sortTemplate.split("#").forEach((section, sectionIndex) => {
+      section.split("\n").forEach(word => {
+        sections.set(word, sectionIndex)
+      })
+    })
+    return sections
+  }
+
+  // todo: move upstream to TreeBase or Grammar
+  prettifyContent(original: string) {
+    const { sortIndices, sortSections } = this
+    const noReturnChars = original.replace(/\r/g, "")
+    const noBlankLines = noReturnChars
+      .replace(/\n\n+/g, "\n")
+      .replace(/\n$/, "")
+    const programParser = this.grammarProgramConstructor
+    const program = new programParser(noBlankLines)
+
+    program.sort((nodeA, nodeB) => {
+      const aIndex = sortIndices.get(nodeA.getFirstWord())
+      const bIndex = sortIndices.get(nodeB.getFirstWord())
+      if (aIndex === undefined) {
+        console.error(`sortTemplate is missing "${nodeA.getFirstWord()}"`)
+      }
+      const a = aIndex ?? 1000
+      const b = bIndex ?? 1000
+      return a > b ? 1 : a < b ? -1 : nodeA.getLine() > nodeB.getLine()
+    })
+
+    // pad sections
+    let currentSection = 0
+    program.forEach(node => {
+      const nodeSection = sortSections.get(node.getFirstWord())
+      const sectionHasAdvanced = nodeSection > currentSection
+      if (sectionHasAdvanced) {
+        currentSection = nodeSection
+        node.prependSibling("") // Put a blank line before this section
+      }
+    })
+
+    return program.toString()
   }
 }
 

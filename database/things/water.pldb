@@ -1,5 +1,10 @@
-title water
+title Water
 appeared 2002
-type pl
+type template
 description Water is a new native Web service programming language with a ConciseXML syntax. Data, logic, and presentation have a uniform XML representation in Water. Read how Water simplifies the creation of new Web services and programs.
 reference http://www.informit.com/articles/article.aspx?p=27567
+
+example
+ <set the_date=
+      <HTML> Today is <datetime.today/> </HTML>
+ />
