@@ -18,6 +18,7 @@ class WhoIsImporter {
   extractDomain(file) {
     if (file.domainName) return this
     const website = file.get("website")
+    if (!website) return this
     const uri = new URL(website)
     let webDomain = uri.hostname
     const path = uri.pathname

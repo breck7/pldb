@@ -16,10 +16,13 @@ class PLDBUpdater {
     const file = pldbBase.getFile(id)
     if (!file) return console.error(`❌ File '${id}' not found.`)
 
-    new GitHubImporter().runAll(file)
-    new WikipediaImporter().updateOneCommand(file)
     const importer = new WhoIsImporter()
-    importer.updateOne(file)
+    const promises = [
+      new GitHubImporter().runAll(file),
+      new WikipediaImporter().updateOneCommand(file),
+      importer.updateOne(file)
+    ]
+    await Promise.all(promises)
     file.prettify()
     file.save()
   }
