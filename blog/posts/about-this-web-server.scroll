@@ -22,15 +22,16 @@ aftertext
 subsection Analytics
 
 aftertext
- This site does not use cookies or include any tracking scripts. You can view a report of web traffic to this site <a href="nginxStats.html">here</a>.
+ This site does not use cookies or include any tracking scripts. You can view a report of web traffic to this site <a href="nginxDaily.html">here</a>.
  https://www.nginx.com/ NGINX
 
 aftertext
- The log reports are generated using goaccess and is run once daily via the cron job below.
+ The log reports are generated using goaccess and is run once daily via the cron jobs below.
  https://goaccess.io/
 
 cronCode
- 0 5 * * * zcat -f /var/log/nginx/access.log* | goaccess -o /var/www/html/nginxStats.html --log-format=COMBINED
+ 0 5 * * * goaccess /var/log/nginx/access.log -o /var/www/html/nginxDaily.html --log-format=COMBINED
+ 0 5 * * * zcat -f /var/log/nginx/access.log* | goaccess -o /var/www/html/nginxDailyAll.html --log-format=COMBINED
 
 subsection Server setup
 
@@ -49,7 +50,7 @@ bashCode
  # google "digital ocean certbot" and follow instructions.
  # deploy the site to /var/www/html
  # add the server stats cron job below with:
- crontab -e 
+ crontab -e
 
 subsection Nginx Setup
 

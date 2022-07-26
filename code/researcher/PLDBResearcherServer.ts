@@ -1,6 +1,8 @@
 #!/usr/bin/env ts-node
 
 const path = require("path")
+const fs = require("fs")
+const https = require("https")
 const express = require("express")
 const { Disk } = require("jtree/products/Disk.node.js")
 const { TreeBaseServer } = require("jtree/products/treeBase.node.js")
@@ -109,16 +111,46 @@ class PLDBResearcherServer extends TreeBaseServer {
 			}
 		})
 	}
+
+	listenProd() {
+		const key = fs.readFileSync(
+			"/etc/letsencrypt/live/researcher.pldb.pub/privkey.pem"
+		)
+		const cert = fs.readFileSync(
+			"/etc/letsencrypt/live/researcher.pldb.pub/fullchain.pem"
+		)
+		const port = 443
+		https
+			.createServer(
+				{
+					key,
+					cert
+				},
+				this._app
+			)
+			.listen(port)
+
+		return this
+	}
 }
 
 class PLDBResearcherServerCommands {
-	launchServerCommand(port) {
+	startDevServerCommand(port) {
 		const pldbBase = PLDBBaseFolder.getBase()
 		pldbBase.loadFolder()
 		pldbBase.startListeningForFileChanges()
 		const server = new (<any>PLDBResearcherServer)(pldbBase)
 		server.addRoutes()
 		server.listen(port)
+	}
+
+	startProdServerCommand() {
+		const pldbBase = PLDBBaseFolder.getBase()
+		pldbBase.loadFolder()
+		pldbBase.startListeningForFileChanges()
+		const server = new (<any>PLDBResearcherServer)(pldbBase)
+		server.addRoutes()
+		server.listenProd()
 	}
 
 	serveFolderCommand(
