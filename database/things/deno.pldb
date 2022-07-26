@@ -6,6 +6,7 @@ website https://deno.land/
 domainName deno.land
  registered 2018
 
+writtenIn rust
 related javascript typescript
 
 features
@@ -30,6 +31,16 @@ example
  for await (const req of serve({ port: 8000 })) {
      req.respond({ body: "Hello, World!\n" });
  }
+
+githubRepo https://github.com/denoland/deno
+ firstCommit 2018
+ stars 84234
+ forks 4546
+ subscribers 1540
+ created 2018
+ updated 2022
+ description A modern runtime for JavaScript and TypeScript.
+ issues 924
 
 wikipedia https://en.wikipedia.org/wiki/Deno_(software)
 

@@ -1,6 +1,7 @@
 #!/usr/bin/env ts-node
 
 const lodash = require("lodash")
+const simpleGit = require("simple-git")
 const fs = require("fs")
 const { jtree } = require("jtree")
 const { TreeNode } = jtree
@@ -324,6 +325,20 @@ ${text}`
       // file.delete("status")
       // file.save()
     })
+  }
+
+  async formatAndCheckChanged() {
+    // git diff --name-only --cached
+    const git = simpleGit(__dirname)
+    const changed = await git.diff({ "--name-only": null, "--cached": null })
+    changed
+      .split("\n")
+      .filter(file => file.endsWith(".pldb"))
+      .forEach(path => {
+        const file = pldbBase.getFile(path)
+        file.prettify()
+        file.save()
+      })
   }
 
   generateWorksheets() {
