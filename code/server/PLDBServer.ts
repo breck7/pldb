@@ -7,10 +7,12 @@ const { TreeBaseServer } = require("jtree/products/treeBase.node.js")
 import { PLDBBaseFolder } from "../PLDBBase"
 import { runCommand } from "../utils"
 
+const header = `<title>PLDB Editor</title><div>
+<a href="/"><b>PLDB Editor</b></a> | <a href="/edit">List all</a> | <a href="/create">Create</a>
+</div><br>`
+
 const editForm = (content = "") =>
-	`<div>
-<a href="/create">Create</a> | <a href="/edit">List all</a>
-</div><br>
+	`${header}
 <form method="POST"><textarea name="content" style="width: 50%; height: 80%;">${htmlEscaped(
 		content
 	)}</textarea><br><br><input type="submit" value="Save" id="submitButton"/></form>`
@@ -27,6 +29,17 @@ const keyboardNav = file => `<script src="/libs.js"></script>
 class PLDBServer extends TreeBaseServer {
 	checkAndPrettifySubmission(content: string) {
 		return this._folder.prettifyContent(content)
+	}
+
+	indexCommand() {
+		return `${header}
+<div style="white-space:pre;">
+-- Folder: '${this._folder._getDir()}'
+-- Grammars: '${this._folder._getGrammarPaths().join(",")}'
+-- Files: ${this._folder.length}
+-- Bytes: ${this._folder.toString().length}
+</pre>
+<a href="errors.html">Errors (HTML)</a> | <a href="errors.csv">Errors (CSV)</a>`
 	}
 
 	addRoutes() {
@@ -64,9 +77,10 @@ class PLDBServer extends TreeBaseServer {
 
 		app.get("/edit", (req, res) =>
 			res.send(
-				this._folder.topLanguages
-					.map(file => `<a href="edit/${file.id}">${file.getFileName()}</a>`)
-					.join("<br>")
+				header +
+					this._folder.topLanguages
+						.map(file => `<a href="edit/${file.id}">${file.getFileName()}</a>`)
+						.join("<br>")
 			)
 		)
 
