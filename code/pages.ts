@@ -286,7 +286,7 @@ ${facts.map(fact => ` - ${fact}`).join("\n")}`
     const appeared = object.appeared
 
     let creatorsStr = ""
-    if (creators) {
+    if (creators.length) {
       creatorsStr =
         ` by ` +
         creators
@@ -363,9 +363,9 @@ ${facts.map(fact => ` - ${fact}`).join("\n")}`
     const supersetOf = file.supersetFile
     if (supersetOf) facts.push(`${title} is a superset of ${supersetOf.link}`)
 
-    let { corporateDevelopers } = file
+    const { corporateDevelopers } = file
     let corporateDevelopersStr = ""
-    if (corporateDevelopers) {
+    if (corporateDevelopers.length) {
       corporateDevelopersStr = corporateDevelopers
         .map(
           name =>
