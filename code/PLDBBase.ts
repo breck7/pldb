@@ -11,7 +11,8 @@ import {
   Rankings,
   InverseRankings,
   rankSort,
-  imemo
+  imemo,
+  clearMemos
 } from "./utils"
 
 const path = require("path")
@@ -534,24 +535,24 @@ class PLDBBaseFolder extends TreeBaseFolder {
     return ranks
   }
 
-  _ranks: Rankings
-  _inverseRanks: InverseRankings
-  _languageRanks: Rankings
-  _inverseLanguageRanks: InverseRankings
-  _featureRanks: Rankings
-  _inverseFeatureRanks: InverseRankings
-  _getRanks(files = this.getChildren()) {
-    if (!this._ranks) {
-      this._ranks = this.calcRanks(files)
-      this._inverseRanks = makeInverseRanks(this._ranks)
-      this._languageRanks = this.calcRanks(
-        files.filter(file => file.isLanguage)
-      )
-      this._inverseLanguageRanks = makeInverseRanks(this._languageRanks)
-      this._featureRanks = this.calcRanks(files.filter(file => file.isFeature))
-      this._inverseFeatureRanks = makeInverseRanks(this._featureRanks)
+  @imemo
+  get rankings() {
+    const files = this.getChildren()
+    const ranks = this.calcRanks(files)
+    const inverseRanks = makeInverseRanks(ranks)
+    const languageRanks = this.calcRanks(files.filter(file => file.isLanguage))
+    const inverseLanguageRanks = makeInverseRanks(languageRanks)
+    const featureRanks = this.calcRanks(files.filter(file => file.isFeature))
+    const inverseFeatureRanks = makeInverseRanks(featureRanks)
+
+    return {
+      ranks,
+      inverseRanks,
+      languageRanks,
+      inverseLanguageRanks,
+      featureRanks,
+      inverseFeatureRanks
     }
-    return this._ranks
   }
 
   private _getFileAtRank(rank: number, ranks: InverseRankings) {
@@ -568,6 +569,10 @@ class PLDBBaseFolder extends TreeBaseFolder {
       featuresMap.set(feature.path, feature)
     })
     return featuresMap
+  }
+
+  clearMemos() {
+    clearMemos(this)
   }
 
   @imemo
@@ -607,30 +612,29 @@ class PLDBBaseFolder extends TreeBaseFolder {
   }
 
   getFeatureAtRank(rank: number) {
-    return this._getFileAtRank(rank, this._inverseFeatureRanks)
+    return this._getFileAtRank(rank, this.rankings.inverseFeatureRanks)
   }
 
   getFileAtLanguageRank(rank: number) {
-    return this._getFileAtRank(rank, this._inverseLanguageRanks)
+    return this._getFileAtRank(rank, this.rankings.inverseLanguageRanks)
   }
 
   getFileAtRank(rank: number) {
-    return this._getFileAtRank(rank, this._inverseRanks)
+    return this._getFileAtRank(rank, this.rankings.inverseRanks)
   }
 
   predictPercentile(file: PLDBFile) {
     const files = this.getChildren()
-    const ranks = this._getRanks(files)
+    const { ranks } = this.rankings
     return ranks[file.id].index / files.length
   }
 
   getLanguageRankExplanation(file: PLDBFile) {
-    return this._languageRanks[file.id]
+    return this.rankings.languageRanks[file.id]
   }
 
   getFeatureRank(file: PLDBFile) {
-    this._getRanks()
-    return this._featureRanks[file.id].index
+    return this.rankings.featureRanks[file.id].index
   }
 
   get grammarPath() {
@@ -638,12 +642,24 @@ class PLDBBaseFolder extends TreeBaseFolder {
   }
 
   getLanguageRank(file: PLDBFile) {
-    this._getRanks()
-    return this._languageRanks[file.id].index
+    return this.rankings.languageRanks[file.id].index
   }
 
   getRank(file: PLDBFile) {
-    return this._getRanks()[file.id].index
+    return this.rankings.ranks[file.id].index
+  }
+
+  makeId(title: string) {
+    let id = getCleanedId(title)
+    let newId = id
+    if (!this.getFile(newId)) return newId
+
+    newId = id + "-lang"
+    if (!this.getFile(newId)) return newId
+
+    throw new Error(
+      `Already language with id: "${id}". Are you sure this is a new language? Perhaps update the title to something more unique, then update title back`
+    )
   }
 
   createFile(content: string, id?: string) {
@@ -651,7 +667,8 @@ class PLDBBaseFolder extends TreeBaseFolder {
       const title = new TreeNode(content).get("title")
       if (!title)
         throw new Error(`A "title" must be provided when creating a new file`)
-      id = getCleanedId(title)
+
+      id = this.makeId(title)
     }
     const fullPath = path.join(this._getDir(), id + ".pldb")
     Disk.write(fullPath, content)
@@ -675,7 +692,7 @@ class PLDBBaseFolder extends TreeBaseFolder {
       node.set("id", getPrimaryKey(node))
     })
     const objects = program.map(nodeToFlatObject)
-    const ranks = this._getRanks()
+    const { ranks } = this.rankings
     const { exampleCounts } = this
     // Add ranks
     objects.forEach(obj => {

@@ -60,6 +60,7 @@ class PLDBResearcherServer extends TreeBaseServer {
 				const newFile = pldbBase.createFile(
 					this.checkAndPrettifySubmission(req.body.content)
 				)
+				pldbBase.clearMemos()
 				res.redirect("edit/" + newFile.id)
 			} catch (err) {
 				errorForm(req.body.content, err, res)
