@@ -1,5 +1,7 @@
-title static-typescript
+title Static Typescript
 appeared 2019
 type pl
 description We present Static TypeScript (STS), a subset of TypeScript (itself, a gradually typed superset of JavaScript), and its compiler/linker toolchain, which is implemented fully in TypeScript and runs in the web browser.
 reference https://www.microsoft.com/en-us/research/publication/static-typescript/
+
+subsetOf typescript
