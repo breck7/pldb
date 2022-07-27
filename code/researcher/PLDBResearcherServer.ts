@@ -210,7 +210,6 @@ class PLDBResearcherServer extends TreeBaseServer {
 		const cert = fs.readFileSync(
 			path.join(__dirname, "..", "..", "ignore", "fullchain.pem")
 		)
-		const port = 443
 		https
 			.createServer(
 				{
@@ -219,8 +218,13 @@ class PLDBResearcherServer extends TreeBaseServer {
 				},
 				this._app
 			)
-			.listen(port)
+			.listen(443)
 
+		const redirectApp = express()
+		redirectApp.use((req, res) =>
+			res.redirect(301, `https://${req.headers.host}${req.url}`)
+		)
+		redirectApp.listen(80, () => console.log(`Running redirect app`))
 		return this
 	}
 }
