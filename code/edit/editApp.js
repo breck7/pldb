@@ -4,6 +4,18 @@ class EditApp {
 	start() {
 		if (document.getElementById("previousFile")) this.startNav()
 		if (document.getElementById("submitButton")) this.startForm()
+
+		const urlParams = new URLSearchParams(window.location.hash.replace("#", ""))
+		const commit = urlParams.get("commit")
+
+		if (commit) {
+			const base = "https://github.com/breck7/pldb/commit/"
+			document.getElementById(
+				"successLink"
+			).innerHTML = `<a target="_pldb" href="${base +
+				commit}">Success! Changes published as ${commit.substring(0, 7)}</a>`
+			window.location.hash = ""
+		}
 	}
 
 	startForm() {
