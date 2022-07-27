@@ -26,6 +26,7 @@ sudo npm install -g n
 sudo npm install -g ts-node
 sudo npm install -g pm2
 sudo npm install -g typescript
+sudo npm install -g jtree
 # Allow non-root to bind to 80:
 exit
 echo 'net.ipv4.ip_unprivileged_port_start=80' > /etc/sysctl.d/50-unprivileged-ports.conf
