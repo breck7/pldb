@@ -247,16 +247,6 @@ class PLDBEditServerCommands {
 	startProdServerCommand() {
 		this.server.listenProd()
 	}
-
-	serveFolderCommand(
-		port = 3030,
-		folder = path.join(__dirname, "..", "..", "pldb.pub")
-	) {
-		const app = express()
-		app.use(express.static(folder))
-		app.listen(port)
-		console.log(`Serving '${folder}'. cmd+dblclick: http://localhost:${port}/`)
-	}
 }
 
 export { PLDBEditServer }
