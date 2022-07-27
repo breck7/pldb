@@ -254,15 +254,11 @@ ${this.keyboardNavigation}
   }
 
   get prevPage() {
-    return this.file.isLanguage
-      ? this.file.previousRankedLanguage.id
-      : this.file.previousRanked.id
+    return this.file.previousRanked.id
   }
 
   get nextPage() {
-    return this.file.isLanguage
-      ? this.file.nextRankedLanguage.id
-      : this.file.nextRanked.id
+    return this.file.nextRanked.id
   }
 
   get keyboardNavigation() {

@@ -25,6 +25,7 @@ class EditApp {
 			return false
 		})
 		this.updateAuthor()
+		this.updateQuickLinks()
 	}
 
 	updateAuthor() {
@@ -67,6 +68,37 @@ class EditApp {
 		)
 		if (newValue === "") this.setAuthor(defaultAuthor)
 		if (newValue) this.setAuthor(newValue)
+	}
+
+	updateQuickLinks() {
+		const content = document.getElementById("content").value
+		if (!content) return
+		const tree = new jtree.TreeNode(content)
+		const id = tree.get("title")
+		const references = tree
+			.findNodes("reference")
+			.map(node => node.getContent())
+		const links = [
+			tree.get("website"),
+			tree.get("githubRepo"),
+			tree.get("wikipedia"),
+			...references
+		]
+			.filter(i => i)
+			.join("<br>")
+
+		const html =
+			TreeUtils.linkify(`${links}<br><br>
+Google<br>
+Search: https://www.google.com/search?q=${id}+programming+language<br>
+W/time: https://www.google.com/search?q=${id}+programming+language&tbs=cdr%3A1%2Ccd_min%3A1%2F1%2F1980%2Ccd_max%3A12%2F31%2F1995&tbm=<br>
+Scholar: https://scholar.google.com/scholar?q=${id}<br>
+Groups: https://groups.google.com/forum/#!search/${id}<br>
+Trends: https://trends.google.com/trends/explore?date=all&q=${id}<br>
+<br>
+DDG: https://duckduckgo.com/?q=${id}<br>`) +
+			`Wayback: <a target="_blank" href="https://web.archive.org/web/20220000000000*/${id}">https://web.archive.org/web/20220000000000*/${id}</a>`
+		document.getElementById("quickLinks").innerHTML = html
 	}
 }
 

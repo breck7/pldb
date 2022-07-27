@@ -113,14 +113,6 @@ class PLDBFile extends TreeBaseFile {
     return this.base.getFeatureAtRank(this.base.getFeatureRank(this) + 1)
   }
 
-  get previousRankedLanguage() {
-    return this.base.getFileAtLanguageRank(this.languageRank - 1)
-  }
-
-  get nextRankedLanguage() {
-    return this.base.getFileAtLanguageRank(this.languageRank + 1)
-  }
-
   get lineCommentToken() {
     return this.get("lineCommentToken")
   }
@@ -131,11 +123,15 @@ class PLDBFile extends TreeBaseFile {
   }
 
   get previousRanked() {
-    return this.base.getFileAtRank(this.rank - 1)
+    return this.isLanguage
+      ? this.base.getFileAtLanguageRank(this.languageRank - 1)
+      : this.base.getFileAtRank(this.rank - 1)
   }
 
   get nextRanked() {
-    return this.base.getFileAtRank(this.rank + 1)
+    return this.isLanguage
+      ? this.base.getFileAtLanguageRank(this.languageRank + 1)
+      : this.base.getFileAtRank(this.rank + 1)
   }
 
   get exampleCount() {

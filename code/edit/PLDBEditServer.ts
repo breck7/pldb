@@ -11,9 +11,12 @@ import { runCommand } from "../utils"
 import simpleGit, { SimpleGit } from "simple-git"
 
 const editForm = (content = "") =>
-	`<form method="POST" id="editForm"><textarea name="content">${htmlEscaped(
-		content
-	)}</textarea><br><br><input type="hidden" name="author" id="author"><input type="submit" value="Save" id="submitButton"/></form>
+	`<form method="POST" id="editForm">
+<textarea name="content" id="content">${htmlEscaped(content)}</textarea>
+<div id="quickLinks"></div>
+<br><br>
+<input type="hidden" name="author" id="author"><input type="submit" value="Save" id="submitButton"/>
+</form>
 <div>
 Submitting as: <span id="authorLabel"></span> <a href="#" onClick="app.changeAuthor()">change</a>
 </div>`
@@ -24,6 +27,7 @@ const template = bodyContent => `<!doctype html>
 <head>
 <script src="/libs.js" ></script>
 <script src="/editApp.js" ></script>
+<script src="/jtree.browser.js"></script>
 <link rel="stylesheet" type="text/css" href="/editApp.css"></link>
 <title>PLDB Edit</title>
 </head>
@@ -154,6 +158,11 @@ class PLDBEditServer extends TreeBaseServer {
 
 		app.use(express.static(__dirname))
 		app.use(express.static(publicFolder))
+		app.use(
+			express.static(
+				path.join(__dirname, "..", "..", "node_modules", "jtree", "products")
+			)
+		)
 
 		app.get("/create", (req, res) => res.send(template(editForm())))
 
