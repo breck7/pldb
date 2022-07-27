@@ -39,18 +39,18 @@ example
        a[i] := a[j]
        a [j] : .. temp
       FI
+      i +- 1
+    OD
+    IF switched .. false THEN RETURN FI
+   END sort
+ GLOBAL
+  main PROCEDURE
+   ENTRY
+    sort (10)
+    printarray(ta[O] 10)
+   END main
+ END bubble sort
 
 hopl 865
 
 centralPackageRepositoryCount 0
-		    i +- 1
-    OD
-	   IF switched .. false THEN RETURN FI
-   END sort
- GLOBAL
-	 main PROCEDURE
- 		ENTRY
-			 sort (10)
-			 printarray(ta[O] 10)
-   END main
- END bubble sort
