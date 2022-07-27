@@ -52,3 +52,13 @@ sudo chown pldb:pldb ignore/fullchain.pem
 pm2 start ./code/researcher/PLDBResearcherServer.js -- startProdServer
 pm2 startup systemd
 ```
+
+## Prod deploying
+
+```
+ssh pldb@researcher.pldb.pub
+cd pldb
+git pull
+tsc
+pm2 restart 0
+```

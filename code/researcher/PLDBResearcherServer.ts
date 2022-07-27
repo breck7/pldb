@@ -8,6 +8,7 @@ const { Disk } = require("jtree/products/Disk.node.js")
 const { TreeBaseServer } = require("jtree/products/treeBase.node.js")
 import { PLDBBaseFolder } from "../PLDBBase"
 import { runCommand } from "../utils"
+import simpleGit, { SimpleGit } from "simple-git"
 
 const header = `<title>PLDB Researcher</title><div>
 <a href="/"><b>PLDB Researcher</b></a> | <a href="/edit">List all</a> | <a href="/create">Create</a>
@@ -28,9 +29,87 @@ const keyboardNav = file => `<script src="/libs.js"></script>
   Mousetrap.bind("right", () => {window.location = "${file.nextRanked.id}"})
  </script>`
 
+export const GIT_DEFAULT_USERNAME: string = "Anon"
+export const GIT_DEFAULT_EMAIL: string = "anon@pldb.pub"
+
 class PLDBResearcherServer extends TreeBaseServer {
 	checkAndPrettifySubmission(content: string) {
 		return this._folder.prettifyContent(content)
+	}
+
+	private _git?: SimpleGit
+	private get git() {
+		if (!this._git)
+			this._git = simpleGit({
+				baseDir: this._folder.dir,
+				binary: "git",
+				maxConcurrentProcesses: 1,
+				// Needed since git won't let you commit if there's no user name config present (i.e. CI), even if you always
+				// specify `author=` in every command. See https://stackoverflow.com/q/29685337/10670163 for example.
+				config: [
+					`user.name='${GIT_DEFAULT_USERNAME}'`,
+					`user.email='${GIT_DEFAULT_EMAIL}'`
+				]
+			})
+		return this._git
+	}
+
+	private async commitFile(
+		filename: string,
+		commitMessage: string,
+		authorName = GIT_DEFAULT_USERNAME,
+		authorEmail = GIT_DEFAULT_EMAIL
+	) {
+		const { git } = this
+		try {
+			// Do a pull _after_ the write. This ensures that, if we intend to overwrite a file
+			// that has been changed on the server, we'll end up with an intentional merge conflict.
+			await this.autopull()
+			const pull = await this.autopull()
+			if (!pull.success && pull) throw (<any>pull).error
+
+			await git.add(filename)
+			await git.commit(commitMessage, filename, {
+				"--author": `${authorName} <${authorEmail}>`
+			})
+
+			if (this.gitOn) await git.push()
+
+			return { success: true }
+		} catch (error) {
+			const err = error as Error
+			return { success: false, error: err.toString() }
+		}
+	}
+
+	// Pull changes before making changes. However, only pull if an upstream branch is set up.
+	private async autopull() {
+		const res = await this.pullCommand()
+		if (!res.success) {
+			const err = res.error as string | undefined
+			if (
+				err?.includes(
+					"There is no tracking information for the current branch." // local-only branch
+				) ||
+				err?.includes("You are not currently on a branch.") // detached HEAD
+			)
+				return { success: true }
+		}
+		return res
+	}
+
+	private async pullCommand() {
+		try {
+			const res = await this.git.pull()
+			return {
+				success: true,
+				stdout: JSON.stringify(res.summary, null, 2)
+			}
+		} catch (error) {
+			const err = error as Error
+			console.log(err)
+			return { success: false, error: err.toString() }
+		}
 	}
 
 	indexCommand() {
@@ -55,11 +134,15 @@ class PLDBResearcherServer extends TreeBaseServer {
 
 		app.get("/create", (req, res) => res.send(editForm()))
 
-		app.post("/create", (req, res) => {
+		app.post("/create", async (req, res) => {
 			try {
 				const newFile = pldbBase.createFile(
 					this.checkAndPrettifySubmission(req.body.content)
 				)
+
+				if (this.gitOn)
+					await this.commitFile(newFile.getWord(0), `Added '${newFile.id}'`)
+
 				pldbBase.clearMemos()
 				res.redirect("edit/" + newFile.id)
 			} catch (err) {
@@ -98,7 +181,7 @@ class PLDBResearcherServer extends TreeBaseServer {
 			res.send(editForm(file.childrenToString()) + keyboardNav(file))
 		})
 
-		app.post("/edit/:id", (req, res) => {
+		app.post("/edit/:id", async (req, res) => {
 			const { id } = req.params
 			const file = pldbBase.getFile(id)
 			if (!file) return notFound(id, res)
@@ -106,6 +189,10 @@ class PLDBResearcherServer extends TreeBaseServer {
 			try {
 				file.setChildren(this.checkAndPrettifySubmission(req.body.content))
 				file.save()
+
+				if (this.gitOn)
+					await this.commitFile(file.getWord(0), `Updated '${file.id}'`)
+
 				res.redirect(id)
 			} catch (err) {
 				errorForm(req.body.content, err, res)
@@ -113,7 +200,10 @@ class PLDBResearcherServer extends TreeBaseServer {
 		})
 	}
 
+	gitOn = false
+
 	listenProd() {
+		this.gitOn = true
 		const key = fs.readFileSync(
 			path.join(__dirname, "..", "..", "ignore", "privkey.pem")
 		)
@@ -146,7 +236,8 @@ class PLDBResearcherServerCommands {
 	}
 
 	startDevServerCommand(port) {
-		this.server.listen(port)
+		const { server } = this
+		server.listen(port)
 	}
 
 	startProdServerCommand() {
