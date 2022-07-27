@@ -9,7 +9,7 @@ on PLDB.
 git clone https://github.com/breck7/pldb
 cd pldb
 npm install .
-./code/researcher/PLDBEditServer.ts startDevServer
+./code/edit/PLDBEditServer.ts startDevServer
 ```
 
 ## Prod setup
@@ -40,7 +40,7 @@ cd pldb
 npm install .
 tsc
 # Test that it works over http
-node ./code/researcher/PLDBEditServer.js startDevServer 80
+node ./code/edit/PLDBEditServer.js startDevServer 80
 # Now get SSL cert for https
 sudo snap install core; sudo snap refresh core
 sudo snap install --classic certbot
@@ -51,7 +51,7 @@ sudo cp /etc/letsencrypt/live/edit.pldb.pub/fullchain.pem ignore
 sudo chown pldb:pldb ignore/privkey.pem
 sudo chown pldb:pldb ignore/fullchain.pem
 # Now start with pm2 over http2
-pm2 start ./code/researcher/PLDBEditServer.js -- startProdServer
+pm2 start ./code/edit/PLDBEditServer.js -- startProdServer
 pm2 startup systemd
 ```
 
