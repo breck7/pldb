@@ -17,9 +17,16 @@ body {
 	height: 80%;
 }
 
+.cell {
+	width: 48%;
+	display: inline-block;
+	vertical-align: top;
+}
+#quickLinks {
+	font-size: 80%;
+}
+
 #editForm textarea {
-	width: 50%;
-	height: 80%;
 }
 
 .gitHubTopRightLinkComponent {
@@ -37,11 +44,4 @@ body {
 	fill: #333;
 }
 #successLink {
-}
-
-#quickLinks {
-	display: inline-block;
-	width: 40%;
-	vertical-align: top;
-	font-size: 80%;
 }

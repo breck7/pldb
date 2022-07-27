@@ -4,6 +4,7 @@ class EditApp {
 	start() {
 		if (document.getElementById("previousFile")) this.startNav()
 		if (document.getElementById("submitButton")) this.startForm()
+		if (this.route === "create") this.startCreateForm()
 
 		const urlParams = new URLSearchParams(window.location.hash.replace("#", ""))
 		const commit = urlParams.get("commit")
@@ -26,6 +27,33 @@ class EditApp {
 		})
 		this.updateAuthor()
 		this.updateQuickLinks()
+		this.startCodeMirror()
+	}
+
+	startCreateForm() {
+		document.getElementById(
+			"exampleSection"
+		).innerHTML = `Example:<br><pre>title Ruby
+appeared 1995
+type pl
+creators Yukihiro Matsumoto
+website https://www.ruby-lang.org</pre>`
+	}
+
+	async startCodeMirror() {
+		this.codeMirrorInstance = new jtree.TreeNotationCodeMirrorMode(
+			"custom",
+			() => pldbNode,
+			undefined,
+			CodeMirror
+		)
+			.register()
+			.fromTextAreaWithAutocomplete(document.getElementById("content"), {
+				lineWrapping: false,
+				lineNumbers: true
+			})
+		this.codeMirrorInstance.setSize(window.innerWidth / 2 - 50, 500)
+		// this.codeMirrorInstance.on("keyup", () => this._onCodeKeyUp())
 	}
 
 	updateAuthor() {
@@ -70,8 +98,16 @@ class EditApp {
 		if (newValue) this.setAuthor(newValue)
 	}
 
+	get content() {
+		return document.getElementById("content").value
+	}
+
+	get route() {
+		return location.pathname.split("/").pop()
+	}
+
 	updateQuickLinks() {
-		const content = document.getElementById("content").value
+		const { content } = this
 		if (!content) return
 		const tree = new jtree.TreeNode(content)
 		const id = tree.get("title")
@@ -87,7 +123,7 @@ class EditApp {
 			.filter(i => i)
 			.join("<br>")
 
-		const permalink = location.pathname.split("/").pop()
+		const permalink = this.route
 		const html =
 			TreeUtils.linkify(`${links}<br><br>
 Google<br>

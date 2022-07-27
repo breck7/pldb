@@ -4,6 +4,7 @@ const path = require("path")
 const fs = require("fs")
 const https = require("https")
 const express = require("express")
+const { jtree } = require("jtree")
 const { Disk } = require("jtree/products/Disk.node.js")
 const { TreeBaseServer } = require("jtree/products/treeBase.node.js")
 import { PLDBBaseFolder } from "../PLDBBase"
@@ -12,8 +13,13 @@ import simpleGit, { SimpleGit } from "simple-git"
 
 const editForm = (content = "") =>
 	`<form method="POST" id="editForm">
+<div class="cell">
 <textarea name="content" id="content">${htmlEscaped(content)}</textarea>
+</div>
+<div class="cell">
 <div id="quickLinks"></div>
+<div id="exampleSection"></div>
+</div>
 <br><br>
 <div>
 Submitting as: <span id="authorLabel"></span> <a href="#" onClick="app.changeAuthor()">change</a>
@@ -29,6 +35,11 @@ const template = bodyContent => `<!doctype html>
 <script src="/libs.js" ></script>
 <script src="/editApp.js" ></script>
 <script src="/jtree.browser.js"></script>
+<script src="/pldb.browser.js"></script>
+<link rel="stylesheet" type="text/css" href="/codemirror.css" />
+<link rel="stylesheet" type="text/css" href="/codemirror.show-hint.css" />
+<script type="text/javascript" src="/codemirror.js"></script>
+<script type="text/javascript" src="/show-hint.js"></script>
 <link rel="stylesheet" type="text/css" href="/editApp.css"></link>
 <title>PLDB Edit</title>
 </head>
@@ -50,6 +61,15 @@ const GIT_DEFAULT_AUTHOR = `${GIT_DEFAULT_USERNAME} <${GIT_DEFAULT_EMAIL}>`
 class PLDBEditServer extends TreeBaseServer {
 	checkAndPrettifySubmission(content: string) {
 		return this._folder.prettifyContent(content)
+	}
+
+	compileGrammar() {
+		// todo: cleanup
+		jtree.compileGrammarForBrowser(
+			path.join(__dirname, "..", "..", "pldb.pub", "grammar", "pldb.grammar"),
+			__dirname + "/",
+			false
+		)
 	}
 
 	private _git?: SimpleGit
@@ -162,6 +182,19 @@ class PLDBEditServer extends TreeBaseServer {
 		app.use(
 			express.static(
 				path.join(__dirname, "..", "..", "node_modules", "jtree", "products")
+			)
+		)
+		app.use(
+			express.static(
+				path.join(
+					__dirname,
+					"..",
+					"..",
+					"node_modules",
+					"jtree",
+					"sandbox",
+					"lib"
+				)
 			)
 		)
 
@@ -303,12 +336,12 @@ class PLDBEditServerCommands {
 		pldbBase.startListeningForFileChanges()
 		const server = new (<any>PLDBEditServer)(pldbBase)
 		server.addRoutes()
+		server.compileGrammar()
 		return server
 	}
 
 	startDevServerCommand(port) {
-		const { server } = this
-		server.listen(port)
+		this.server.listen(port)
 	}
 
 	startProdServerCommand() {
