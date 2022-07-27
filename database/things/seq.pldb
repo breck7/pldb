@@ -5,3 +5,13 @@ description A High-Performance Language for Bioinformatics. Here, we introduce S
 reference http://cb.csail.mit.edu/cb/seq/oopsla19-paper34.pdf
 
 subsetOf python
+
+example
+ from sys import argv
+ from genomeindex import *
+ 
+ # index and process 20-mers
+ def process(kmer: k20, index: GenomeIndex[k20]):
+  prefetch index[kmer], index[~kmer]
+  hits_fwd = index[kmer]
+  hits_rev = index[~kmer]
