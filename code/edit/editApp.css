@@ -1,0 +1,23 @@
+html {
+	font-family: Helvetica;
+	height: 100%;
+}
+
+body {
+	height: 100%;
+}
+
+#previousFile,
+#nextFile {
+	display: none;
+}
+
+#editForm {
+	width: 50%;
+	height: 80%;
+}
+
+#editForm textarea {
+	width: 100%;
+	height: 80%;
+}

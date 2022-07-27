@@ -10,27 +10,33 @@ import { PLDBBaseFolder } from "../PLDBBase"
 import { runCommand } from "../utils"
 import simpleGit, { SimpleGit } from "simple-git"
 
-const header = `<title>PLDB Edit</title><div>
-<a href="/"><b>PLDB Edit</b></a> | <a href="/edit">List all</a> | <a href="/create">Create</a>
-</div><br>`
-
 const editForm = (content = "") =>
-	`${header}
-<form method="POST"><textarea name="content" style="width: 50%; height: 80%;">${htmlEscaped(
+	`<form method="POST" id="editForm"><textarea name="content">${htmlEscaped(
 		content
-	)}</textarea><br><br><input type="submit" value="Save" id="submitButton"/></form>`
+	)}</textarea><br><br><input type="hidden" name="author" id="author"><input type="submit" value="Save" id="submitButton"/></form>
+<div>
+Submitting as: <span id="authorLabel"></span> <a href="#" onClick="app.changeAuthor()">change</a>
+</div>`
 
 const htmlEscaped = (content: string) => content.replace(/</g, "&lt;")
 
-const keyboardNav = file => `<script src="/libs.js"></script>
- <script>
-  Mousetrap.bind("mod+s", (evt) => {document.getElementById("submitButton").click(); evt.preventDefault(); return false;})
-  Mousetrap.bind("left", () => {window.location = "${file.previousRanked.id}"})
-  Mousetrap.bind("right", () => {window.location = "${file.nextRanked.id}"})
- </script>`
+const template = bodyContent => `<!doctype html>
+<head>
+<script src="/libs.js" ></script>
+<script src="/editApp.js" ></script>
+<link rel="stylesheet" type="text/css" href="/editApp.css"></link>
+</head>
+<body>
+<title>PLDB Edit</title><div>
+<a href="/"><b>PLDB Edit</b></a> | <a href="/edit">List all</a> | <a href="/create">Create</a>
+</div><br>
+${bodyContent}
+</body>
+</html>`
 
-export const GIT_DEFAULT_USERNAME: string = "Anon"
-export const GIT_DEFAULT_EMAIL: string = "anon@pldb.pub"
+const GIT_DEFAULT_USERNAME = "Anon"
+const GIT_DEFAULT_EMAIL = "anon@pldb.pub"
+const GIT_DEFAULT_AUTHOR = `${GIT_DEFAULT_USERNAME} <${GIT_DEFAULT_EMAIL}>`
 
 class PLDBEditServer extends TreeBaseServer {
 	checkAndPrettifySubmission(content: string) {
@@ -57,10 +63,16 @@ class PLDBEditServer extends TreeBaseServer {
 	private async commitFile(
 		filename: string,
 		commitMessage: string,
-		authorName = GIT_DEFAULT_USERNAME,
-		authorEmail = GIT_DEFAULT_EMAIL
+		authorName: string,
+		authorEmail: string
 	) {
 		const { git } = this
+		if (!this.gitOn) {
+			console.log(
+				`Would commit "${filename}" with message "${commitMessage}" as author "${authorName} <${authorEmail}>"`
+			)
+			return
+		}
 		try {
 			// Do a pull _after_ the write. This ensures that, if we intend to overwrite a file
 			// that has been changed on the server, we'll end up with an intentional merge conflict.
@@ -73,7 +85,7 @@ class PLDBEditServer extends TreeBaseServer {
 				"--author": `${authorName} <${authorEmail}>`
 			})
 
-			if (this.gitOn) await git.push()
+			await git.push()
 
 			return { success: true }
 		} catch (error) {
@@ -113,15 +125,14 @@ class PLDBEditServer extends TreeBaseServer {
 	}
 
 	indexCommand() {
-		return `${header}
-<p>PLDB Edit is a simple web app for quickly adding and editing content on <a href="https://pldb.pub/">The Programming Language Database</a>.</p>
+		return template(`<p>PLDB Edit is a simple web app for quickly adding and editing content on <a href="https://pldb.pub/">The Programming Language Database</a>.</p>
 <div style="white-space:pre;">
 -- Folder: '${this._folder._getDir()}'
 -- Grammars: '${this._folder._getGrammarPaths().join(",")}'
 -- Files: ${this._folder.length}
 -- Bytes: ${this._folder.toString().length}
 </pre>
-<a href="errors.html">Errors (HTML)</a> | <a href="errors.csv">Errors (CSV)</a>`
+<a href="errors.html">Errors (HTML)</a> | <a href="errors.csv">Errors (CSV)</a>`)
 	}
 
 	addRoutes() {
@@ -130,9 +141,10 @@ class PLDBEditServer extends TreeBaseServer {
 
 		const publicFolder = path.join(__dirname, "..", "..", "blog", "public")
 
+		app.use(express.static(__dirname))
 		app.use(express.static(publicFolder))
 
-		app.get("/create", (req, res) => res.send(editForm()))
+		app.get("/create", (req, res) => res.send(template(editForm())))
 
 		app.post("/create", async (req, res) => {
 			try {
@@ -140,8 +152,14 @@ class PLDBEditServer extends TreeBaseServer {
 					this.checkAndPrettifySubmission(req.body.content)
 				)
 
-				if (this.gitOn)
-					await this.commitFile(newFile.getWord(0), `Added '${newFile.id}'`)
+				const { authorName, authorEmail } = this.parseGitAuthor(req.body.author)
+
+				await this.commitFile(
+					newFile.getWord(0),
+					`Added '${newFile.id}'`,
+					authorName,
+					authorEmail
+				)
 
 				pldbBase.clearMemos()
 				res.redirect("edit/" + newFile.id)
@@ -153,21 +171,24 @@ class PLDBEditServer extends TreeBaseServer {
 		const errorForm = (submission, err, res) => {
 			res.status(500)
 			res.send(
-				`<div style="color: red;">Error: ${err}</div>` + editForm(submission)
+				template(
+					`<div style="color: red;">Error: ${err}</div>` + editForm(submission)
+				)
 			)
 		}
 
 		const notFound = (id, res) => {
 			res.status(500)
-			return res.send(`"${htmlEscaped(id)}" not found`)
+			return res.send(template(`"${htmlEscaped(id)}" not found`))
 		}
 
 		app.get("/edit", (req, res) =>
 			res.send(
-				header +
+				template(
 					this._folder.topLanguages
 						.map(file => `<a href="edit/${file.id}">${file.getFileName()}</a>`)
 						.join("<br>")
+				)
 			)
 		)
 
@@ -178,7 +199,10 @@ class PLDBEditServer extends TreeBaseServer {
 			const file = pldbBase.getFile(id)
 			if (!file) return notFound(id, res)
 
-			res.send(editForm(file.childrenToString()) + keyboardNav(file))
+			const keyboardNav = `<a href="${file.previousRanked.id}" id="previousFile">previous</a>
+<a href="${file.nextRanked.id}" id="nextFile">next</a>`
+
+			res.send(template(editForm(file.childrenToString()) + keyboardNav))
 		})
 
 		app.post("/edit/:id", async (req, res) => {
@@ -190,14 +214,32 @@ class PLDBEditServer extends TreeBaseServer {
 				file.setChildren(this.checkAndPrettifySubmission(req.body.content))
 				file.save()
 
-				if (this.gitOn)
-					await this.commitFile(file.getWord(0), `Updated '${file.id}'`)
+				const { authorName, authorEmail } = this.parseGitAuthor(req.body.author)
+
+				await this.commitFile(
+					file.getWord(0),
+					`Updated '${file.id}'`,
+					authorName,
+					authorEmail
+				)
 
 				res.redirect(id)
 			} catch (err) {
 				errorForm(req.body.content, err, res)
 			}
 		})
+	}
+
+	parseGitAuthor(field = GIT_DEFAULT_AUTHOR) {
+		const authorName = field.split("<")[0].trim()
+		const authorEmail = field
+			.split("<")[1]
+			.replace(">", "")
+			.trim()
+		return {
+			authorName,
+			authorEmail
+		}
 	}
 
 	gitOn = false
