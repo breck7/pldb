@@ -35,7 +35,7 @@ cd
 # Generate keys
 ssh-keygen -t rsa
 # Get pldb
-git clone git@github.com:pldbbot/pldb.git
+git clone git@github.com:breck7/pldb.git
 cd pldb
 npm install .
 tsc
