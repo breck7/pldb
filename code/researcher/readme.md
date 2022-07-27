@@ -32,8 +32,10 @@ echo 'net.ipv4.ip_unprivileged_port_start=80' > /etc/sysctl.d/50-unprivileged-po
 sysctl --system
 su pldb
 cd
+# Generate keys
+ssh-keygen -t rsa
 # Get pldb
-git clone https://github.com/breck7/pldb
+git clone git@github.com:pldbbot/pldb.git
 cd pldb
 npm install .
 tsc
