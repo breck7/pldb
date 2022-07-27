@@ -10,8 +10,8 @@ import { PLDBBaseFolder } from "../PLDBBase"
 import { runCommand } from "../utils"
 import simpleGit, { SimpleGit } from "simple-git"
 
-const header = `<title>PLDB Researcher</title><div>
-<a href="/"><b>PLDB Researcher</b></a> | <a href="/edit">List all</a> | <a href="/create">Create</a>
+const header = `<title>PLDB Edit</title><div>
+<a href="/"><b>PLDB Edit</b></a> | <a href="/edit">List all</a> | <a href="/create">Create</a>
 </div><br>`
 
 const editForm = (content = "") =>
@@ -32,7 +32,7 @@ const keyboardNav = file => `<script src="/libs.js"></script>
 export const GIT_DEFAULT_USERNAME: string = "Anon"
 export const GIT_DEFAULT_EMAIL: string = "anon@pldb.pub"
 
-class PLDBResearcherServer extends TreeBaseServer {
+class PLDBEditServer extends TreeBaseServer {
 	checkAndPrettifySubmission(content: string) {
 		return this._folder.prettifyContent(content)
 	}
@@ -114,7 +114,7 @@ class PLDBResearcherServer extends TreeBaseServer {
 
 	indexCommand() {
 		return `${header}
-<p>PLDB Researcher is a simple web app for quickly adding and editing content on <a href="https://pldb.pub/">The Programming Language Database</a>.</p>
+<p>PLDB Edit is a simple web app for quickly adding and editing content on <a href="https://pldb.pub/">The Programming Language Database</a>.</p>
 <div style="white-space:pre;">
 -- Folder: '${this._folder._getDir()}'
 -- Grammars: '${this._folder._getGrammarPaths().join(",")}'
@@ -229,12 +229,12 @@ class PLDBResearcherServer extends TreeBaseServer {
 	}
 }
 
-class PLDBResearcherServerCommands {
+class PLDBEditServerCommands {
 	get server() {
 		const pldbBase = PLDBBaseFolder.getBase()
 		pldbBase.loadFolder()
 		pldbBase.startListeningForFileChanges()
-		const server = new (<any>PLDBResearcherServer)(pldbBase)
+		const server = new (<any>PLDBEditServer)(pldbBase)
 		server.addRoutes()
 		return server
 	}
@@ -259,11 +259,7 @@ class PLDBResearcherServerCommands {
 	}
 }
 
-export { PLDBResearcherServer }
+export { PLDBEditServer }
 
 if (!module.parent)
-	runCommand(
-		new PLDBResearcherServerCommands(),
-		process.argv[2],
-		process.argv[3]
-	)
+	runCommand(new PLDBEditServerCommands(), process.argv[2], process.argv[3])

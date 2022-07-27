@@ -1,6 +1,6 @@
-# PLDB Researcher
+# PLDB Edit
 
-PLDB Researcher is a web server and frontend end for adding and editing content
+PLDB Edit is a web server and frontend end for adding and editing content
 on PLDB.
 
 ## Local usage
@@ -9,12 +9,12 @@ on PLDB.
 git clone https://github.com/breck7/pldb
 cd pldb
 npm install .
-./code/researcher/PLDBResearcherServer.ts startDevServer
+./code/researcher/PLDBEditServer.ts startDevServer
 ```
 
 ## Prod setup
 
-https://researcher.pldb.pub is hosted on the smallest Digital Ocean droplet.
+https://edit.pldb.pub is hosted on the smallest Digital Ocean droplet.
 
 Follow the same setup instructions as here (stopping before Nginx installation): https://pldb.pub/about-this-web-server.html
 
@@ -40,25 +40,25 @@ cd pldb
 npm install .
 tsc
 # Test that it works over http
-node ./code/researcher/PLDBResearcherServer.js startDevServer 80
+node ./code/researcher/PLDBEditServer.js startDevServer 80
 # Now get SSL cert for https
 sudo snap install core; sudo snap refresh core
 sudo snap install --classic certbot
 sudo certbot certonly --standalone
 mkdir ignore
-sudo cp /etc/letsencrypt/live/researcher.pldb.pub/privkey.pem ignore
-sudo cp /etc/letsencrypt/live/researcher.pldb.pub/fullchain.pem ignore
+sudo cp /etc/letsencrypt/live/edit.pldb.pub/privkey.pem ignore
+sudo cp /etc/letsencrypt/live/edit.pldb.pub/fullchain.pem ignore
 sudo chown pldb:pldb ignore/privkey.pem
 sudo chown pldb:pldb ignore/fullchain.pem
 # Now start with pm2 over http2
-pm2 start ./code/researcher/PLDBResearcherServer.js -- startProdServer
+pm2 start ./code/researcher/PLDBEditServer.js -- startProdServer
 pm2 startup systemd
 ```
 
 ## Prod deploying
 
 ```
-ssh pldb@researcher.pldb.pub
+ssh pldb@edit.pldb.pub
 cd pldb
 git pull
 tsc
