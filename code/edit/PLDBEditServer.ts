@@ -34,8 +34,8 @@ ${bodyContent}
 </body>
 </html>`
 
-const GIT_DEFAULT_USERNAME = "Anon"
-const GIT_DEFAULT_EMAIL = "anon@pldb.pub"
+const GIT_DEFAULT_USERNAME = "PLDBBot"
+const GIT_DEFAULT_EMAIL = "bot@pldb.pub"
 const GIT_DEFAULT_AUTHOR = `${GIT_DEFAULT_USERNAME} <${GIT_DEFAULT_EMAIL}>`
 
 class PLDBEditServer extends TreeBaseServer {
