@@ -15,11 +15,12 @@ const editForm = (content = "") =>
 <textarea name="content" id="content">${htmlEscaped(content)}</textarea>
 <div id="quickLinks"></div>
 <br><br>
-<input type="hidden" name="author" id="author"><input type="submit" value="Save" id="submitButton"/>
-</form>
 <div>
 Submitting as: <span id="authorLabel"></span> <a href="#" onClick="app.changeAuthor()">change</a>
-</div>`
+</div>
+<br>
+<input type="hidden" name="author" id="author"><input type="submit" value="Save" id="submitButton"/>
+</form>`
 
 const htmlEscaped = (content: string) => content.replace(/</g, "&lt;")
 

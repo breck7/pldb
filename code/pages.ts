@@ -652,6 +652,9 @@ ${facts.map(fact => ` - ${fact}`).join("\n")}`
     facts.push(
       `Have a question about ${title} not answered here? <a href="https://github.com/breck7/pldb/issues/new">Open an issue</a> explaining what you need.`
     )
+    facts.push(
+      `<a href="https://edit.pldb.pub/edit/${file.id}">Edit this page</a>`
+    )
     return facts
   }
 

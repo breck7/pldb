@@ -87,6 +87,7 @@ class EditApp {
 			.filter(i => i)
 			.join("<br>")
 
+		const permalink = location.pathname.split("/").pop()
 		const html =
 			TreeUtils.linkify(`${links}<br><br>
 Google<br>
@@ -97,7 +98,10 @@ Groups: https://groups.google.com/forum/#!search/${id}<br>
 Trends: https://trends.google.com/trends/explore?date=all&q=${id}<br>
 <br>
 DDG: https://duckduckgo.com/?q=${id}<br>`) +
-			`Wayback: <a target="_blank" href="https://web.archive.org/web/20220000000000*/${id}">https://web.archive.org/web/20220000000000*/${id}</a>`
+			`Wayback: <a target="_blank" href="https://web.archive.org/web/20220000000000*/${id}">https://web.archive.org/web/20220000000000*/${id}</a>` +
+			TreeUtils.linkify(`<br><br>
+https://pldb.pub/languages/${permalink}.html<br>
+https://github.com/breck7/pldb/blob/main/database/things/${permalink}.pldb`)
 		document.getElementById("quickLinks").innerHTML = html
 	}
 }
