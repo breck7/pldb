@@ -1,7 +1,10 @@
 title PLZ
 appeared 1979
 type pl
+description PLZ/SYS is intended to aid the implementation of system programs for microcomputers. PLZ/SYS is a synthesis of concepts from contemporary programming languages and compilers--the language Pascal has had the most notable influence on the overall design and implementation of PLZ/SYS. 
 reference https://semanticscholar.org/paper/a6f73d43d666ff8763b9cc97ce408243c9b95038
+
+influencedBy pascal
 
 example
  bubble sort MODULE
