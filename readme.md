@@ -1,5 +1,7 @@
 # The Programming Language Database
 
+PLDB is a public domain database and blog containing over 100,000 facts about over 3,000 programming languages.
+
 This repo contains the entire database, blog, and code for https://pldb.pub.
 
 The most important folder is `database/things/`, which contains a file for each entity.
@@ -7,6 +9,12 @@ The most important folder is `database/things/`, which contains a file for each 
 The blog content is in the `blog` folder.
 
 The `code` folder contains importer scripts and other code for the database and site.
+
+## Getting the data
+
+As CSV: https://pldb.pub/pldb.csv
+As JSON: https://pldb.pub/pldb.json
+As an npm package: `npm install pldb`
 
 ## To add a new language
 
