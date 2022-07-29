@@ -9,6 +9,7 @@ features
  hasComments true
   // A comment
  hasSemanticIndentation false
+ hasFunctions true
 
 lineCommentToken //
 keywords override ThreadSafe MultiThread static Proc Picture Prompt DoPrompt macro window function end Structure EndStructure EndMacro Menu SubMenu

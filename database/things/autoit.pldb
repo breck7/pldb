@@ -12,6 +12,8 @@ features
  hasSemanticIndentation false
  hasStrings true
   "Hello world"
+ hasWhileLoops true
+ hasConditionals true
 
 lineCommentToken ;
 printToken MsgBox

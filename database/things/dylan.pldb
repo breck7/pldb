@@ -20,6 +20,8 @@ features
  hasAssignment true
  hasStrings true
   "Hello world"
+ hasWhileLoops true
+ hasConditionals true
 
 lineCommentToken //
 assignmentToken :=

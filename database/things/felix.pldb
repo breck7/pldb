@@ -32,6 +32,7 @@ features
  hasSemanticIndentation false
  hasStrings true
   "Hello world"
+ hasConditionals true
 
 lineCommentToken //
 printToken println

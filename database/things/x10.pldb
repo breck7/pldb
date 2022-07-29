@@ -22,10 +22,20 @@ features
  hasSemanticIndentation false
  hasStrings true
   "Hello world"
+ hasImports true
+  import x10.io.Console;
+ hasWhileLoops true
+ hasClasses true
+ hasExceptions true
+ hasFunctions true
+ hasSwitch true
+ hasAsyncAwait true
+ hasConditionals true
 
 multiLineCommentTokens /* */
 printToken Console.OUT.println
 stringToken "
+includeToken import
 keywords as assert async at athome ateach atomic break case catch class clocked continue def default do else final finally finish for goto haszero here if import in instanceof interface isref new offer operator package return struct switch throw try type val var when while
 
 wikipedia https://en.wikipedia.org/wiki/X10_(programming_language)

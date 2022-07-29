@@ -17,6 +17,8 @@ features
  hasSemanticIndentation false
  hasStrings true
   "Hello world"
+ hasFunctions true
+ hasConditionals true
 
 multiLineCommentTokens /* */
 printToken jlog

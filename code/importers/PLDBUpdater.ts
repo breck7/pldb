@@ -162,44 +162,52 @@ class PLDBUpdater {
     this.makePredictions("hasImports", "includeToken")
   }
 
-  scanWhileLoopsCommand() {
+  scanForWhileLoopsCommand() {
     this.makePredictions("hasWhileLoops")
   }
 
-  scanClassesCommand() {
+  scanForClassesCommand() {
     this.makePredictions("hasClasses")
   }
 
-  scanConstantsCommand() {
+  scanForConstantsCommand() {
     this.makePredictions("hasConstants")
   }
 
-  scanExceptionsCommand() {
+  scanForExceptionsCommand() {
     this.makePredictions("hasExceptions")
   }
 
-  scanFunctionsCommand() {
+  scanForFunctionsCommand() {
     this.makePredictions("hasFunctions")
   }
 
-  scanSwitchCommand() {
+  scanForSwitchCommand() {
     this.makePredictions("hasSwitch")
   }
 
-  scanAccessModifiersCommand() {
+  scanForAccessModifiersCommand() {
     this.makePredictions("hasAccessModifiers")
   }
 
-  scanInheritanceCommand() {
+  scanForInheritanceCommand() {
     this.makePredictions("hasInheritance")
   }
 
-  scanAsyncAwaitCommand() {
+  scanForAsyncAwaitCommand() {
     this.makePredictions("hasAsyncAwait")
   }
 
-  scanConditionalsCommand() {
+  scanForConditionalsCommand() {
     this.makePredictions("hasConditionals")
+  }
+
+  scanAllCommand() {
+    Object.getOwnPropertyNames(Object.getPrototypeOf(this))
+      .filter(word => word.startsWith("scanFor"))
+      .forEach(word => {
+        this[word]()
+      })
   }
 
   scanExamplesForStringsCommand() {

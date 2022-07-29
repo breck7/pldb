@@ -27,6 +27,11 @@ features
  hasStrings true
   "Hello world"
  hasBooleans true
+ hasWhileLoops true
+ hasClasses true
+ hasFunctions true
+ hasSwitch true
+ hasConditionals true
 
 lineCommentToken //
 multiLineCommentTokens /* */

@@ -18,6 +18,9 @@ features
  hasComments true
   // A comment
  hasSemanticIndentation false
+ hasFunctions true
+ hasAccessModifiers true
+ hasConditionals true
 
 lineCommentToken //
 printToken println

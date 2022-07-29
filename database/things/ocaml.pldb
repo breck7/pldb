@@ -31,9 +31,15 @@ features
   *)
  hasPrintDebugging true
  hasSemanticIndentation false
+ hasBooleans true
+ hasWhileLoops true
+ hasClasses true
+ hasFunctions true
+ hasConditionals true
 
 multiLineCommentTokens (* *)
 printToken print_string
+booleanTokens true false
 keywords as assert begin class constraint do done downto else end exception external false for fun function functor if in include inherit initializer lazy let match method module mutable new object of open private raise rec sig struct then to true try type value val virtual when while with
 
 wikipedia https://en.wikipedia.org/wiki/OCaml
