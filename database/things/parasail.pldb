@@ -16,6 +16,7 @@ features
  hasIntegers true
  hasBinaryNumbers true
  hasLineComments true
+ hasComments true
 
 printToken IO.Println
 stringToken "

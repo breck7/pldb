@@ -8,6 +8,7 @@ domainName makotemplates.org
 
 features
  hasMultiLineComments true
+ hasComments true
 
 example
  <%inherit file="base.html"/>

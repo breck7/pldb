@@ -4,6 +4,7 @@ website https://www.archlinux.org/pacman/pacman.conf.5.html
 
 features
  hasLineComments true
+ hasComments true
 
 pygmentsHighlighter PacmanConf
  filename configs.py

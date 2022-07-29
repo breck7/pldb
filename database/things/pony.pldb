@@ -14,6 +14,7 @@ features
  hasIntegers true
  hasLineComments true
  hasMultiLineComments true
+ hasComments true
 
 printToken env.out.print
 stringToken "

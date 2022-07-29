@@ -9,6 +9,7 @@ features
  hasFloats true
  hasIntegers true
  hasLineComments true
+ hasComments true
 
 example
  topk(3, sum by (app, proc) (rate(instance_cpu_time_ns[5m])))

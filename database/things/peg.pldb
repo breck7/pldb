@@ -5,6 +5,7 @@ standsFor parsing expression grammar
 
 features
  hasLineComments true
+ hasComments true
 
 example
  Expr    ← Sum
