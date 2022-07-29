@@ -15,6 +15,7 @@ features
  hasBooleans true
 
 multiLineCommentTokens /* */
+booleanTokens true false
 
 example
  /*
@@ -180,4 +181,3 @@ hackerNewsDiscussions
  7698827|Show HN: BlockML – A markup language for scientific documents|2014-05-05 14:47:24 UTC|1399301244|Lindemann|0|3
 
 twitter awwapps
-booleanTokens true false

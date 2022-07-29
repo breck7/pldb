@@ -42,6 +42,7 @@ multiLineCommentTokens { }
 printToken writeln
 assignmentToken :=
 stringToken '
+booleanTokens true false
 keywords * + - / := < <= <> = > >= and begin boolean break byte continue div do double else end false if integer longint mod not or repeat shl shortint shr single then true until while word xor
 
 wikipedia https://en.wikipedia.org/wiki/Pascal_(programming_language)
@@ -154,4 +155,3 @@ ubuntuPackage fp-compiler
 gdbSupport true
 fileType text
 centralPackageRepositoryCount 0
-booleanTokens true false

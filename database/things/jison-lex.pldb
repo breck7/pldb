@@ -3,6 +3,11 @@ appeared 2013
 type pl
 creators Zachary Carter
 
+features
+ hasBooleans true
+
+booleanTokens true false
+
 githubRepo https://github.com/zaach/jison-lex
  firstCommit 2013
  stars 50
@@ -56,6 +61,3 @@ linguistGrammarRepo https://github.com/cdibbs/language-jison
 fileType text
 isOpenSource true
 centralPackageRepositoryCount 0
-features
- hasBooleans true
-booleanTokens true false

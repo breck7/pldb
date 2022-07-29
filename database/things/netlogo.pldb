@@ -14,6 +14,7 @@ features
  hasBooleans true
 
 lineCommentToken ;
+booleanTokens true false
 
 wikipedia https://en.wikipedia.org/wiki/NetLogo
  related starlogo logo isbn scala java
@@ -102,4 +103,3 @@ twitter netlogo
 fileType text
 isOpenSource true
 centralPackageRepositoryCount 0
-booleanTokens true false

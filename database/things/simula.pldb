@@ -21,6 +21,7 @@ lineCommentToken !
 printToken OutText
 assignmentToken :=
 stringToken "
+booleanTokens True False
 
 wikipedia https://en.wikipedia.org/wiki/Simula
  example
@@ -106,4 +107,3 @@ hopl 170
 
 fileType text
 centralPackageRepositoryCount 0
-booleanTokens True False

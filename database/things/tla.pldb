@@ -18,6 +18,7 @@ features
 
 lineCommentToken \*
 multiLineCommentTokens (* *)
+booleanTokens TRUE FALSE
 
 wikipedia https://en.wikipedia.org/wiki/TLA+
  example
@@ -301,4 +302,3 @@ goodreads
 fileType text
 isOpenSource true
 centralPackageRepositoryCount 0
-booleanTokens TRUE FALSE

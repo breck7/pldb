@@ -31,6 +31,7 @@ lineCommentToken --
 multiLineCommentTokens --[[ --]]
 printToken print
 stringToken "
+booleanTokens true false
 keywords and break do else elseif end false for function if in local nil not or repeat return then true until while
 
 wikipedia https://en.wikipedia.org/wiki/Lua_(programming_language)
@@ -150,4 +151,3 @@ jupyterKernel https://github.com/neomantra/lua_ipython_kernel
 jupyterKernel https://github.com/scrapinghub/splash/tree/master/splash/kernel
 fileType text
 isOpenSource true
-booleanTokens true false

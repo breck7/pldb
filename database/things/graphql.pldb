@@ -61,6 +61,7 @@ features
 
 lineCommentToken #
 stringToken "
+booleanTokens true false
 keywords null true false query mutation subscription extend schema directive scalar type interface union enum input implements fragment on
 
 wikipedia https://en.wikipedia.org/wiki/GraphQL
@@ -157,4 +158,3 @@ subreddit GraphQL
 twitter graphql
 fileType text
 centralPackageRepositoryCount 0
-booleanTokens true false

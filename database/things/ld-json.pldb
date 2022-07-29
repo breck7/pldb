@@ -12,6 +12,11 @@ domainName jsonlines.org
 
 related json
 
+features
+ hasBooleans true
+
+booleanTokens true false
+
 example
  ["Name", "Session", "Score", "Completed"]
  ["Gilbert", "2013", 24, true]
@@ -30,6 +35,3 @@ githubRepo https://github.com/wardi/jsonlines
  issues 24
 
 centralPackageRepositoryCount 0
-features
- hasBooleans true
-booleanTokens true false

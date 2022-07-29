@@ -2,6 +2,11 @@ title Jupyter Notebook
 appeared 2014
 type jsonFormat
 
+features
+ hasBooleans true
+
+booleanTokens true false
+
 githubLanguage Jupyter Notebook
  fileExtensions ipynb
  trendingProjects
@@ -84,6 +89,3 @@ linguistGrammarRepo https://github.com/textmate/json.tmbundle
 
 fileType text
 centralPackageRepositoryCount 0
-features
- hasBooleans true
-booleanTokens true false

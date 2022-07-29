@@ -16,6 +16,7 @@ features
  hasBooleans true
 
 lineCommentToken ;
+booleanTokens true false
 
 example
  []			; empty list
@@ -44,4 +45,3 @@ example
      hex:      16#{DECAFBAD CAFE 00FF}
      base-64:  64#{UmVuIGlzIGRhdGE=}  
  )
-booleanTokens true false

@@ -15,6 +15,7 @@ features
  hasBooleans true
 
 lineCommentToken //
+booleanTokens true false
 
 example
  // Code ----------------------------------------------------------------------------------------------------------------------------------
@@ -35,4 +36,3 @@ example
                              sum(:l.n,:r.n,1,:n);
  
  }
-booleanTokens true false

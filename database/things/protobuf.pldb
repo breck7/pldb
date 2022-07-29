@@ -18,6 +18,7 @@ features
 
 lineCommentToken //
 multiLineCommentTokens /* */
+booleanTokens true false
 keywords syntax import weak public package option repeated oneof map reserved to max enum message service rpc stream returns package optional true false
 
 example
@@ -111,4 +112,3 @@ linguistGrammarRepo https://github.com/michaeledgar/protobuf-tmbundle
 fileType text
 isOpenSource true
 centralPackageRepositoryCount 0
-booleanTokens true false

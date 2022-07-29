@@ -15,6 +15,7 @@ features
  hasBooleans true
 
 lineCommentToken //
+booleanTokens true false
 
 example
  type AddUser = add_user(
@@ -66,4 +67,3 @@ fileType text
 wordRank 695
 isOpenSource true
 centralPackageRepositoryCount 0
-booleanTokens true false

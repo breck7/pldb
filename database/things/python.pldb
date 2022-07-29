@@ -144,6 +144,7 @@ lineCommentToken #
 multiLineCommentTokens '''
 printToken print
 assignmentToken =
+booleanTokens True False
 keywords and as assert break class continue def del elif else except False finally for from global if import in is lambda None nonlocal not or pass raise return True try while with yield
 
 wikipedia https://en.wikipedia.org/wiki/Python_(programming_language)
@@ -259,4 +260,3 @@ ubuntuPackage python
 fileType text
 wordRank 4048
 githubCopilotOptimized
-booleanTokens True False

@@ -144,7 +144,7 @@ class PLDBUpdater {
         if (prediction) {
           file.set(`features ${featureName}`, prediction.value.toString())
           file.set(tokenProperty, prediction.token)
-          file.save()
+          file.prettifyAndSave()
         }
       })
   }

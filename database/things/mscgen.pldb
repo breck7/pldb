@@ -4,6 +4,11 @@ website http://www.mcternan.me.uk/mscgen/
 
 related dot
 
+features
+ hasBooleans true
+
+booleanTokens TRUE FALSE
+
 example
  # MSC for some fictional process
  msc {
@@ -30,6 +35,3 @@ example
 pygmentsHighlighter Mscgen
  filename dsls.py
  fileExtensions msc
-features
- hasBooleans true
-booleanTokens TRUE FALSE

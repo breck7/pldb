@@ -18,6 +18,7 @@ features
 
 lineCommentToken #
 stringToken "
+booleanTokens true false
 keywords add as asc ask base by clear construct copy create data delete desc describe distinct drop false filter from graph group having in insert limit load minus move named not offset optional order prefix reduced select service silent to true undef union using values where with
 
 wikipedia https://en.wikipedia.org/wiki/SPARQL
@@ -81,4 +82,3 @@ leachim6 SparQL
 jupyterKernel https://github.com/paulovn/sparql-kernel
 fileType text
 centralPackageRepositoryCount 0
-booleanTokens true false

@@ -19,6 +19,7 @@ features
 
 lineCommentToken //
 multiLineCommentTokens /* */
+booleanTokens true false
 keywords contract library entrypoint function stateful state hash signature tuple list address string bool int record datatype type option oracle oracle_query Call Bits Bytes Oracle String Crypto Address Auth Chain None Some bits bytes event let map private public true false var if else throw
 
 githubRepo https://github.com/aeternity/aesophia
@@ -32,4 +33,3 @@ githubRepo https://github.com/aeternity/aesophia
  issues 42
 
 monaco sophia
-booleanTokens true false

@@ -16,6 +16,7 @@ features
 lineCommentToken !
 printToken write
 stringToken "
+booleanTokens true false
 
 wikipedia https://en.wikipedia.org/wiki/S-algol
  example
@@ -95,4 +96,3 @@ leachim6 S Algol
 hopl 869
 
 centralPackageRepositoryCount 0
-booleanTokens true false

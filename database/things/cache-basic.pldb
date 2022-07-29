@@ -15,6 +15,7 @@ features
 
 lineCommentToken '
 printToken println
+booleanTokens True False
 
 example
  ' RightTriangle compute area and hypotenuse of a right triangle
@@ -83,4 +84,3 @@ example
  end function
 
 centralPackageRepositoryCount 0
-booleanTokens True False

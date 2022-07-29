@@ -19,6 +19,7 @@ features
 
 lineCommentToken //
 multiLineCommentTokens /* */
+booleanTokens true false
 
 wikipedia https://en.wikipedia.org/wiki/Lasso_(programming_language)
  example
@@ -308,4 +309,3 @@ tiobe Lasso
 fileType text
 isOpenSource false
 centralPackageRepositoryCount 0
-booleanTokens true false

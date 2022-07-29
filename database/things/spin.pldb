@@ -13,6 +13,7 @@ features
  hasBooleans true
 
 lineCommentToken '
+booleanTokens true false
 
 githubLanguage Propeller Spin
  fileExtensions spin
@@ -212,4 +213,3 @@ rosettaCode Spin
 fileType text
 wordRank 5184
 centralPackageRepositoryCount 0
-booleanTokens true false

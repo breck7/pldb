@@ -11,6 +11,7 @@ features
  hasBooleans true
 
 lineCommentToken //
+booleanTokens true false
 
 githubRepo https://github.com/kohler/click
  firstCommit 1999
@@ -172,4 +173,3 @@ fileType text
 wordRank 94
 isOpenSource true
 centralPackageRepositoryCount 0
-booleanTokens true false

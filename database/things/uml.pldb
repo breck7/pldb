@@ -5,6 +5,11 @@ standsFor Unified Modeling Language
 
 visualParadigm true
 
+features
+ hasBooleans true
+
+booleanTokens true false
+
 example
  <?xml version="1.0"?>
  <XMI xmi.version="1.2" xmlns:UML="org.omg/UML/1.4">
@@ -63,6 +68,3 @@ hopl 7130
 
 fileType text
 centralPackageRepositoryCount 0
-features
- hasBooleans true
-booleanTokens true false

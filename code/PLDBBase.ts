@@ -385,6 +385,12 @@ class PLDBFile extends TreeBaseFile {
     const str = this.base.prettifyContent(this.childrenToString())
     this.setChildren(str)
   }
+
+  prettifyAndSave() {
+    this.prettify()
+    this.save()
+    return this
+  }
 }
 
 class PLDBBaseFolder extends TreeBaseFolder {

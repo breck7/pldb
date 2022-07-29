@@ -19,6 +19,7 @@ features
 lineCommentToken --
 printToken dbms_output.put_line
 stringToken '
+booleanTokens TRUE FALSE
 
 wikipedia https://en.wikipedia.org/wiki/PL/SQL
  example
@@ -104,4 +105,3 @@ hopl 7323
 
 fileType text
 centralPackageRepositoryCount 0
-booleanTokens TRUE FALSE

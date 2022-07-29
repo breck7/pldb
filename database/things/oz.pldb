@@ -16,6 +16,7 @@ features
  hasBooleans true
 
 lineCommentToken %
+booleanTokens true false
 
 wikipedia https://en.wikipedia.org/wiki/Oz_(programming_language)
  example
@@ -148,4 +149,3 @@ fileType text
 wordRank 2692
 isOpenSource true
 centralPackageRepositoryCount 0
-booleanTokens true false

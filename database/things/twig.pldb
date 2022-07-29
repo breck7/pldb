@@ -14,6 +14,7 @@ features
  hasBooleans true
 
 multiLineCommentTokens {# #}
+booleanTokens true false
 keywords apply autoescape block deprecated do embed extends flush for from if import include macro sandbox set use verbatim with endapply endautoescape endblock endembed endfor endif endmacro endsandbox endset endwith true false
 
 example
@@ -82,4 +83,3 @@ linguistGrammarRepo https://github.com/Anomareh/PHP-Twig.tmbundle
 fileType text
 isOpenSource true
 centralPackageRepositoryCount 0
-booleanTokens true false

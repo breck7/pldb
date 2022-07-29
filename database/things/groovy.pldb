@@ -28,6 +28,7 @@ lineCommentToken //
 multiLineCommentTokens /* */
 printToken println
 stringToken "
+booleanTokens true false
 keywords as assert break case catch class const continue def default do else enum extends false finally for goto if implements import in instanceof interface new null package return super switch this throw throws trait true try while
 
 wikipedia https://en.wikipedia.org/wiki/Groovy_(programming_language)
@@ -121,4 +122,3 @@ ubuntuPackage groovy
 fileType text
 isOpenSource true
 centralPackageRepositoryCount 0
-booleanTokens true false

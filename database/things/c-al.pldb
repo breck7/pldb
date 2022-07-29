@@ -3,6 +3,11 @@ appeared 1987
 type pl
 creators Michael Nielsen
 
+features
+ hasBooleans true
+
+booleanTokens TRUE FALSE
+
 wikipedia https://en.wikipedia.org/wiki/C/AL
  example
   Item.RESET;
@@ -25,6 +30,3 @@ wikipedia https://en.wikipedia.org/wiki/C/AL
  appeared 1958
 
 centralPackageRepositoryCount 0
-features
- hasBooleans true
-booleanTokens TRUE FALSE

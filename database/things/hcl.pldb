@@ -19,6 +19,7 @@ features
 
 lineCommentToken //
 multiLineCommentTokens /* */
+booleanTokens true false
 keywords var local path for_each any string number bool true false null if  else  endif  for  in endfor
 
 example
@@ -74,4 +75,3 @@ rijuRepl https://riju.codes/hcl
 fileType text
 isOpenSource true
 centralPackageRepositoryCount 0
-booleanTokens true false

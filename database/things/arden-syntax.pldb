@@ -13,6 +13,7 @@ features
  hasBooleans true
 
 multiLineCommentTokens /* */
+booleanTokens true false
 
 example
  maintenance:
@@ -70,4 +71,3 @@ example
  end:
 
 wikipedia https://en.wikipedia.org/wiki/Arden_syntax
-booleanTokens true false

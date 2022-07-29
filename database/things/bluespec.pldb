@@ -13,6 +13,7 @@ features
  hasBooleans true
 
 multiLineCommentTokens (* *)
+booleanTokens True False
 
 wikipedia https://en.wikipedia.org/wiki/Bluespec
  related haskell systemverilog
@@ -148,4 +149,3 @@ linguistGrammarRepo https://github.com/thotypous/sublime-bsv
 
 fileType text
 centralPackageRepositoryCount 0
-booleanTokens True False

@@ -19,6 +19,7 @@ features
 lineCommentToken --
 multiLineCommentTokens (* *)
 printToken out_string
+booleanTokens true false
 
 wikipedia https://en.wikipedia.org/wiki/Cool_(programming_language)
  example
@@ -103,4 +104,3 @@ leachim6 Cool
 fileType text
 wordRank 1457
 centralPackageRepositoryCount 0
-booleanTokens true false

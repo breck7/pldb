@@ -12,6 +12,7 @@ features
  hasBooleans true
 
 lineCommentToken ;
+booleanTokens true false
 
 wikipedia https://en.wikipedia.org/wiki/Augmented_Backus–Naur_form
  example
@@ -251,4 +252,3 @@ linguistGrammarRepo https://github.com/sanssecours/ABNF.tmbundle
 
 fileType text
 centralPackageRepositoryCount 0
-booleanTokens true false

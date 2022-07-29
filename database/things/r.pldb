@@ -42,6 +42,7 @@ lineCommentToken #
 printToken print
 assignmentToken =
 stringToken "
+booleanTokens TRUE FALSE
 keywords if else repeat while function for in next break TRUE FALSE NULL Inf NaN NA NA_integer_ NA_real_ NA_complex_ NA_character_ ...
 
 wikipedia https://en.wikipedia.org/wiki/R_(programming_language)
@@ -159,4 +160,3 @@ jupyterKernel http://irkernel.github.io/
 fileType text
 wordRank 179
 isOpenSource true
-booleanTokens TRUE FALSE

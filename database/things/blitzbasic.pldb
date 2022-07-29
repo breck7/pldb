@@ -2,6 +2,11 @@ title BlitzBasic
 appeared 2000
 type pl
 
+features
+ hasBooleans true
+
+booleanTokens True False
+
 wikipedia https://en.wikipedia.org/wiki/Blitz_BASIC
  example
   AppTitle = "Binary Clock"
@@ -158,6 +163,3 @@ linguistGrammarRepo https://github.com/textmate/blitzmax.tmbundle
 
 fileType text
 centralPackageRepositoryCount 0
-features
- hasBooleans true
-booleanTokens True False

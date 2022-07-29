@@ -27,6 +27,7 @@ lineCommentToken #
 multiLineCommentTokens ###
 printToken console.log
 stringToken "
+booleanTokens true false
 keywords and or is isnt not on yes @ no off true false null this new delete typeof in instanceof return throw break continue debugger if else switch for while do try catch finally class extends super undefined then unless until loop of by when
 
 wikipedia https://en.wikipedia.org/wiki/CoffeeScript
@@ -113,4 +114,3 @@ jupyterKernel https://github.com/n-riesco/jp-coffeescript
 fileType text
 isOpenSource true
 centralPackageRepositoryCount 0
-booleanTokens true false

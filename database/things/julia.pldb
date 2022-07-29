@@ -82,6 +82,7 @@ multiLineCommentTokens #= =#
 printToken print
 printToken println
 stringToken "
+booleanTokens true false
 keywords begin while if for try return break continue function macro quote let local global const do struct abstract typealias bitstype type immutable module baremodule using import export importall end else catch finally true false
 
 wikipedia https://en.wikipedia.org/wiki/Julia_(programming_language)
@@ -234,4 +235,3 @@ jupyterKernel https://github.com/JuliaLang/IJulia.jl
 fileType text
 wordRank 7592
 isOpenSource true
-booleanTokens true false

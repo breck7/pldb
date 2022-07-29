@@ -25,6 +25,7 @@ lineCommentToken //
 multiLineCommentTokens /* */
 printToken PrintLn
 stringToken "
+booleanTokens true false
 
 wikipedia https://en.wikipedia.org/wiki/EC_(programming_language)
  example
@@ -438,4 +439,3 @@ fileType text
 wordRank 4684
 isOpenSource true
 centralPackageRepositoryCount 0
-booleanTokens true false

@@ -6,6 +6,11 @@ reference https://semanticscholar.org/paper/a6f73d43d666ff8763b9cc97ce408243c9b9
 
 influencedBy pascal
 
+features
+ hasBooleans true
+
+booleanTokens true false
+
 example
  bubble sort MODULE
  
@@ -54,6 +59,3 @@ example
 hopl 865
 
 centralPackageRepositoryCount 0
-features
- hasBooleans true
-booleanTokens true false

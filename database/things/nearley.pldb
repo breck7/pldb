@@ -15,6 +15,7 @@ features
  hasBooleans true
 
 lineCommentToken #
+booleanTokens true false
 
 githubRepo https://github.com/Hardmath123/nearley
  stars 3231
@@ -147,4 +148,3 @@ linguistGrammarRepo https://github.com/Hardmath123/sublime-nearley
 fileType text
 isOpenSource true
 centralPackageRepositoryCount 0
-booleanTokens true false

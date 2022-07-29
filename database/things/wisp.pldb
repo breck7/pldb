@@ -17,6 +17,7 @@ features
 
 lineCommentToken ;
 stringToken "
+booleanTokens true false
 
 example
  (alert "Hello world!")
@@ -109,4 +110,3 @@ linguistGrammarRepo https://github.com/atom/language-clojure
 fileType text
 isOpenSource true
 centralPackageRepositoryCount 0
-booleanTokens true false

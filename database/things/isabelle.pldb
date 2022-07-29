@@ -18,6 +18,7 @@ features
  hasBooleans true
 
 multiLineCommentTokens (* *)
+booleanTokens True False
 
 wikipedia https://en.wikipedia.org/wiki/Isabelle_(proof_assistant)
  example
@@ -119,4 +120,3 @@ languageServerProtocolProject https://isabelle.in.tum.de/repos/isabelle/file/tip
 fileType text
 isOpenSource true
 centralPackageRepositoryCount 0
-booleanTokens True False

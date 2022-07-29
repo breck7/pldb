@@ -62,6 +62,7 @@ lineCommentToken //
 multiLineCommentTokens /* */
 printToken println
 stringToken "
+booleanTokens true false
 keywords abstract case catch class def do else extends false final finally for forSome if implicit import lazy match new null object override package private protected return sealed super this throw trait try true type val var while with yield
 
 wikipedia https://en.wikipedia.org/wiki/Scala_(programming_language)
@@ -203,4 +204,3 @@ jupyterKernel https://github.com/alexarchambault/jupyter-scala
 fileType text
 isOpenSource true
 centralPackageRepositoryCount 0
-booleanTokens true false

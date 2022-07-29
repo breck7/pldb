@@ -64,6 +64,7 @@ lineCommentToken //
 multiLineCommentTokens (* *)
 printToken printfn
 stringToken "
+booleanTokens true false
 keywords abstract and atomic as assert asr base begin break checked component const constraint constructor continue class default delegate do done downcast downto elif else end exception eager event external extern false finally for fun function fixed functor global if in include inherit inline interface internal land lor lsl lsr lxor lazy let match member mod module mutable namespace method mixin new not null of open or object override private parallel process protected pure public rec return static sealed struct sig then to true tailcall trait try type upcast use val void virtual volatile when while with yield
 
 wikipedia https://en.wikipedia.org/wiki/F_Sharp_(programming_language)
@@ -175,4 +176,3 @@ ubuntuPackage fsharp
 jupyterKernel https://github.com/fsprojects/IfSharp
 fileType text
 isOpenSource true
-booleanTokens true false

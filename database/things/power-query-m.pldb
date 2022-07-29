@@ -23,6 +23,7 @@ features
 lineCommentToken //
 multiLineCommentTokens /* */
 stringToken "
+booleanTokens true false
 keywords as each else error false if in is let meta otherwise section shared then true try type
 
 example
@@ -48,4 +49,3 @@ example
 monaco powerquery
 
 centralPackageRepositoryCount 0
-booleanTokens true false

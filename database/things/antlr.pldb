@@ -18,6 +18,7 @@ features
 
 lineCommentToken //
 multiLineCommentTokens /* */
+booleanTokens true false
 
 example
  /** Taken from "The Definitive ANTLR 4 Reference" by Terence Parr */
@@ -130,4 +131,3 @@ twitter the_antlr_guy
 fileType text
 isOpenSource true
 centralPackageRepositoryCount 0
-booleanTokens true false

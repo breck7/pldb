@@ -16,6 +16,7 @@ features
 
 printToken writeln
 stringToken "
+booleanTokens True False
 
 example
  0! is 1
@@ -57,4 +58,3 @@ leachim6 XL
 
 isOpenSource true
 centralPackageRepositoryCount 0
-booleanTokens True False

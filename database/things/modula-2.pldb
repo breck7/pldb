@@ -22,6 +22,7 @@ features
 multiLineCommentTokens (* *)
 printToken WriteString
 stringToken "
+booleanTokens TRUE FALSE
 
 wikipedia https://en.wikipedia.org/wiki/Modula-2
  example
@@ -419,4 +420,3 @@ hopl 817
 gdbSupport true
 fileType text
 centralPackageRepositoryCount 0
-booleanTokens TRUE FALSE

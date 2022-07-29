@@ -22,6 +22,7 @@ features
 lineCommentToken --
 printToken print
 stringToken '
+booleanTokens true false
 
 example
  class Thing
@@ -163,4 +164,3 @@ tryItOnline moonscript
 fileType text
 isOpenSource true
 centralPackageRepositoryCount 0
-booleanTokens true false

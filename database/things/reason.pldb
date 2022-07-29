@@ -32,6 +32,7 @@ lineCommentToken //
 multiLineCommentTokens /* */
 printToken print_string
 stringToken "
+booleanTokens true false
 
 example
  type schoolPerson = Teacher | Director | Student(string);
@@ -577,4 +578,3 @@ fileType text
 wordRank 1246
 isOpenSource true
 centralPackageRepositoryCount 0
-booleanTokens true false
