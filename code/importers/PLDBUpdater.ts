@@ -170,6 +170,10 @@ class PLDBUpdater {
     this.makePredictions("hasClasses")
   }
 
+  scanConstantsCommand() {
+    this.makePredictions("hasConstants")
+  }
+
   scanExamplesForStringsCommand() {
     // print put puts out log write
     const regex = /'Hello world'/i

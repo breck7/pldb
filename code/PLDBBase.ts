@@ -239,6 +239,10 @@ class PLDBFile extends TreeBaseFile {
     return this.makeSimpleKeywordPrediction("class")
   }
 
+  get hasConstantsPrediction() {
+    return this.makeSimpleKeywordPrediction("const")
+  }
+
   get allExamples(): Example[] {
     const examples: Example[] = []
 
