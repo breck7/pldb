@@ -13,10 +13,13 @@ features
   */
  hasComments true
   // A comment
+ hasImports true
+  import runtime;
 
 lineCommentToken //
 multiLineCommentTokens /* */
 stringToken "
+includeToken import
 keywords import require export forbid native if else cast unsafe switch default
 
 example

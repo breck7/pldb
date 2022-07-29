@@ -20,11 +20,14 @@ features
  hasStrings true
   "Hello world"
  hasBooleans true
+ hasImports true
+  require "../../spec_helper"
 
 lineCommentToken #
 printToken puts
 stringToken "
 booleanTokens true false
+includeToken require
 keywords abstract do if nil? self unless alias else in of sizeof until as elsif include out struct when as? end instance_sizeof pointerof super while asm ensure is_a? private then with begin enum lib protected true yield break extend macro require type case false module rescue typeof class for next return uninitialized def fun nil select union
 
 githubRepo https://github.com/crystal-lang/crystal

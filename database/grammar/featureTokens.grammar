@@ -50,3 +50,9 @@ booleanTokensNode
  example
   javascript
    booleanToken true false
+includeTokenNode
+ extends abstractCommonTokenNode
+ description What token(s) is used for including another file?
+ example
+  nodejs
+   includeToken require

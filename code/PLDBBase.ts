@@ -39,6 +39,7 @@ interface FeatureSummary {
 interface FeaturePrediction {
   value: boolean
   token: string
+  example?: string
 }
 
 interface Example {
@@ -193,9 +194,32 @@ class PLDBFile extends TreeBaseFile {
         }
     })
 
-    if (hit) return hit
+    return hit
+  }
 
-    return undefined
+  get hasImportsPrediction(): FeaturePrediction {
+    const { keywords } = this
+
+    const words = ["import", "include", "require"]
+
+    for (let word of words) {
+      if (keywords.includes(word)) {
+        const example = this.allExamples.find(code => code.code.includes(word))
+
+        if (example) {
+          const exampleLine = example.code
+            .split("\n")
+            .filter(line => line.includes(word))[0]
+          return {
+            value: true,
+            token: word,
+            example: exampleLine
+          }
+        } else {
+          console.log(`No example found for ${this.id}`)
+        }
+      }
+    }
   }
 
   get allExamples(): Example[] {
