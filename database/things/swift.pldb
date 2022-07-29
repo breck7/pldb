@@ -50,6 +50,10 @@ features
  hasSwitch true
  hasAccessModifiers true
  hasConditionals true
+ hasOctals true
+  // 0o[0-7_]+
+ hasHexadecimals true
+  // 0x[0-9a-fA-F_]+
 
 lineCommentToken //
 multiLineCommentTokens /* */

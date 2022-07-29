@@ -14,6 +14,10 @@ features
   "Hello world"
  hasWhileLoops true
  hasConditionals true
+ hasOctals true
+  ; 0\d+
+ hasHexadecimals true
+  ; 0[xX][a-fA-F0-9]+
 
 lineCommentToken ;
 printToken MsgBox

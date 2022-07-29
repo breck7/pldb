@@ -210,6 +210,10 @@ features
  hasSets true
   set = new Set()
   set.add("foo")
+ hasOctals true
+  // 0[oO]?[0-7]+n?
+ hasHexadecimals true
+  // 0[xX][0-9a-fA-F]+n?
 
 lineCommentToken //
 multiLineCommentTokens /* */

@@ -9,6 +9,8 @@ features
   -- A comment
  hasSemanticIndentation false
  hasBooleans true
+ hasHexadecimals true
+  -- 0x[0-9a-f]+
 
 lineCommentToken --
 booleanTokens TRUE FALSE

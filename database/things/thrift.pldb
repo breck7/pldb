@@ -5,6 +5,9 @@ website http://thrift.apache.org/
 corporateDevelopers Apache
 domainName thrift.apache.org
 
+features
+ hasHexadecimals true
+
 example
  enum PhoneType {
   HOME,

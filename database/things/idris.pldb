@@ -19,6 +19,8 @@ features
  hasSemanticIndentation false
  hasStrings true
   "Hello world"
+ hasHexadecimals true
+  -- 0[xX][\da-fA-F]+
 
 lineCommentToken --
 printToken putStrLn

@@ -25,6 +25,8 @@ features
  hasSemanticIndentation false
  hasStrings true
   "Hello world"
+ hasHexadecimals true
+  // #([0-9a-fA-F]{4})(_[0-9a-fA-F]{4})+
 
 lineCommentToken //
 multiLineCommentTokens /* */

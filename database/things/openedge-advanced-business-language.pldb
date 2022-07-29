@@ -3,6 +3,9 @@ appeared 2006
 type pl
 aka abl
 
+features
+ hasHexadecimals true
+
 wikipedia https://en.wikipedia.org/wiki/OpenEdge_Advanced_Business_Language
  example
   FOR EACH customer WHERE customer.custno = 14 EXCLUSIVE-LOCK:

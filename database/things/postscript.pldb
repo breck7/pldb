@@ -13,6 +13,10 @@ features
   % A comment
  hasPrintDebugging true
  hasSemanticIndentation false
+ hasOctals true
+  % [0-9]+\#(\-|\+)?([0-9]+\.?|[0-9]*\.[0-9]+|[0-9]+\.[0-9]*)((e|E)[0-9]+)?(?=[()<>\[\]{}/%\s])
+ hasHexadecimals true
+  % <[0-9A-Fa-f]+>(?=[()<>\[\]{}/%\s])
 
 lineCommentToken %
 printToken print

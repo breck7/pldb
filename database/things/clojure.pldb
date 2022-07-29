@@ -45,6 +45,8 @@ features
   (comment A comment
   )
  hasSemanticIndentation false
+ hasHexadecimals true
+  ; 0x-?[abcdef\d]+
 
 lineCommentToken ;
 multiLineCommentTokens (comment )

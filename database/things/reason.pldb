@@ -32,6 +32,10 @@ features
  hasFunctions true
  hasSwitch true
  hasConditionals true
+ hasOctals true
+  // 0[oO][0-7][0-7_]*
+ hasHexadecimals true
+  // 0[xX][\da-fA-F][\da-fA-F_]*
 
 lineCommentToken //
 multiLineCommentTokens /* */

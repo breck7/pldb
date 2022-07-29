@@ -11,6 +11,7 @@ features
  hasPrintDebugging true
  hasStrings true
   "Hello world"
+ hasHexadecimals true
 
 printToken IO.Println
 stringToken "

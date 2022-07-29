@@ -27,6 +27,10 @@ features
  hasClasses true
  hasConstants true
  hasConditionals true
+ hasOctals true
+  // 0[oO][0-7]+
+ hasHexadecimals true
+  // 0[xX][0-9a-fA-F]+
 
 lineCommentToken //
 multiLineCommentTokens /* */

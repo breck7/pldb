@@ -2,6 +2,10 @@ title Puppet
 appeared 2005
 type pl
 
+features
+ hasOctals true
+ hasHexadecimals true
+
 wikipedia https://en.wikipedia.org/wiki/Puppet_(software)
  example
   user { 'harry':

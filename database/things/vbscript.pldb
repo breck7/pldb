@@ -11,6 +11,8 @@ features
  hasLineComments true
   ' A comment
  hasSemanticIndentation false
+ hasHexadecimals true
+  ' &h[0-9a-f]+
 
 lineCommentToken '
 

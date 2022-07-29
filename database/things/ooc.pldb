@@ -10,6 +10,8 @@ features
  hasPrintDebugging true
  hasStrings true
   "Hello world"
+ hasOctals true
+ hasHexadecimals true
 
 printToken println
 stringToken "

@@ -65,6 +65,10 @@ features
  hasFunctions true
  hasAccessModifiers true
  hasConditionals true
+ hasOctals true
+  // 0[oO][0-7][0-7_]*[uU]?[yslLn]?
+ hasHexadecimals true
+  // 0[xX][\da-fA-F][\da-fA-F_]*[uU]?[yslLn]?[fF]?
 
 lineCommentToken //
 multiLineCommentTokens (* *)

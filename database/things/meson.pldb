@@ -2,6 +2,10 @@ title Meson
 appeared 2013
 type pl
 
+features
+ hasOctals true
+ hasHexadecimals true
+
 wikipedia https://en.wikipedia.org/wiki/Meson_(software)
  related python unix c d java rust vala visual-studio-editor cmake ninja
  summary Meson (/ˈmɛ.sɒn/) is a software tool for automating the building (compiling) of software. The overall goal for Meson is to promote programmer productivity.Meson is free and open-source software written in Python 3 and subject to the terms of the Apache 2.0 License.

@@ -36,6 +36,8 @@ features
  hasClasses true
  hasFunctions true
  hasConditionals true
+ hasOctals true
+ hasHexadecimals true
 
 multiLineCommentTokens (* *)
 printToken print_string

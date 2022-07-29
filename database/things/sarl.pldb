@@ -5,6 +5,9 @@ website http://www.sarl.io
 domainName sarl.io
  registered 2013
 
+features
+ hasHexadecimals true
+
 pygmentsHighlighter SARL
  filename jvm.py
  fileExtensions sarl

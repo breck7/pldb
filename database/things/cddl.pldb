@@ -5,6 +5,10 @@ description Concise Data Definition Language (CDDL): A Notational Convention to 
 reference https://tools.ietf.org/html/draft-ietf-cbor-cddl-00
 standsFor CBOR data definition language
 
+features
+ hasOctals true
+ hasHexadecimals true
+
 example
  pii = (
    age: int,

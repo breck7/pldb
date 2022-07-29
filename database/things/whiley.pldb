@@ -17,6 +17,8 @@ features
  hasSemanticIndentation false
  hasStrings true
   "Hello world"
+ hasHexadecimals true
+  // 0x[0-9a-fA-F]+
 
 lineCommentToken //
 printToken io::println

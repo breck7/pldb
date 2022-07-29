@@ -47,6 +47,10 @@ features
  hasSemanticIndentation false
  hasWhileLoops true
  hasConditionals true
+ hasOctals true
+  # 0_?[0-7]+(_[0-7]+)*
+ hasHexadecimals true
+  # 0x[0-9A-Fa-f]+(_[0-9A-Fa-f]+)*
 
 lineCommentToken #
 multiLineCommentTokens =begin =cut

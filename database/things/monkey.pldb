@@ -11,6 +11,8 @@ features
  hasSemanticIndentation false
  hasStrings true
   "Hello world"
+ hasHexadecimals true
+  ' \$[0-9a-fA-Z]+
 
 lineCommentToken '
 printToken puts

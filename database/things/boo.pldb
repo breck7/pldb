@@ -14,6 +14,10 @@ features
  hasPrintDebugging true
  hasStrings true
   "Hello world"
+ hasOctals true
+  # 0\d+
+ hasHexadecimals true
+  # 0x[a-fA-F0-9]+
 
 lineCommentToken #
 printToken print

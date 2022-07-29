@@ -50,6 +50,8 @@ features
  hasWhileLoops true
  hasFunctions true
  hasConditionals true
+ hasHexadecimals true
+  -- [0-9_]+#[0-9a-f_\.]+#
 
 lineCommentToken --
 printToken Text_IO.Put_Line

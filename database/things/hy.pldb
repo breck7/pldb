@@ -16,6 +16,10 @@ features
  hasSemanticIndentation false
  hasStrings true
   "Hello world"
+ hasOctals true
+  ; 0[0-7]+j?
+ hasHexadecimals true
+  ; 0[xX][a-fA-F0-9]+
 
 lineCommentToken ;
 printToken print

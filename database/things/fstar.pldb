@@ -12,6 +12,8 @@ features
  hasBooleans true
  hasFunctions true
  hasConditionals true
+ hasOctals true
+ hasHexadecimals true
 
 printToken FStar.IO.print_string
 booleanTokens true false

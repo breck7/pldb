@@ -6,6 +6,10 @@ website http://breuleux.github.io/earl-grey/repl/
 
 compilesTo javascript
 
+features
+ hasOctals true
+ hasHexadecimals true
+
 example
  count-words(text) =
     counts = new Map()

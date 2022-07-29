@@ -5,6 +5,9 @@ website http://chaiscript.com/
 domainName chaiscript.com
  registered 2009
 
+features
+ hasHexadecimals true
+
 example
  #include <chaiscript/chaiscript.hpp>
  std::string helloWorld(const std::string &t_name) {

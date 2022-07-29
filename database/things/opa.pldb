@@ -19,6 +19,8 @@ features
   "Hello world"
  hasFunctions true
  hasConditionals true
+ hasOctals true
+ hasHexadecimals true
 
 multiLineCommentTokens /* */
 printToken jlog

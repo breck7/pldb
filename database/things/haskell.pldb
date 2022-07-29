@@ -70,6 +70,10 @@ features
  isCaseSensitive true
  hasClasses true
  hasConditionals true
+ hasOctals true
+  -- 0[oO]_*[0-7](_*[0-7])*
+ hasHexadecimals true
+  -- 0[xX]_*[\da-fA-F](_*[\da-fA-F])*
 
 lineCommentToken --
 multiLineCommentTokens {- -}

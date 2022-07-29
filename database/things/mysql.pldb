@@ -18,6 +18,8 @@ features
  hasSemanticIndentation false
  hasStrings true
  hasBooleans true
+ hasHexadecimals true
+  -- x'([0-9a-f]{2})+'
 
 lineCommentToken --
 multiLineCommentTokens /* */

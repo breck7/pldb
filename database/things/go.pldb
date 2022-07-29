@@ -79,6 +79,10 @@ features
  hasConstants true
  hasSwitch true
  hasConditionals true
+ hasOctals true
+  // 0[0-7]+
+ hasHexadecimals true
+  // 0[xX][0-9a-fA-F]+
 
 lineCommentToken //
 multiLineCommentTokens /* */

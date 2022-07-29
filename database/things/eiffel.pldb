@@ -20,6 +20,10 @@ features
  hasAssignment true
  hasStrings true
   "Hello world"
+ hasOctals true
+  -- 0[cC][0-7]+
+ hasHexadecimals true
+  -- 0[xX][a-fA-F0-9]+
 
 lineCommentToken --
 assignmentToken :=

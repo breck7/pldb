@@ -13,6 +13,7 @@ features
  hasPrintDebugging true
  hasStrings true
   "Hello world"
+ hasHexadecimals true
 
 printToken println
 stringToken "

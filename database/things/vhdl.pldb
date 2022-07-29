@@ -16,6 +16,10 @@ features
  hasWhileLoops true
  hasFunctions true
  hasConditionals true
+ hasOctals true
+  -- O"[0-7_]+"
+ hasHexadecimals true
+  -- X"[0-9a-f_]+"
 
 lineCommentToken --
 printToken write

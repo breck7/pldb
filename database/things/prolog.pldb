@@ -18,6 +18,10 @@ features
  hasStrings true
   'Hello world'
  isCaseSensitive true
+ hasOctals true
+  % 0o[0-7]+
+ hasHexadecimals true
+  % 0x[0-9a-fA-F]+
 
 lineCommentToken %
 multiLineCommentTokens /* */

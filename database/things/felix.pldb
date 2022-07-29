@@ -33,6 +33,10 @@ features
  hasStrings true
   "Hello world"
  hasConditionals true
+ hasOctals true
+  // 0[0-7_]+([tTsSiIlLvV]|ll|LL|([iIuU])(8|16|32|64))?
+ hasHexadecimals true
+  // 0[xX][0-9a-fA-F_]+([tTsSiIlLvV]|ll|LL|([iIuU])(8|16|32|64))?
 
 lineCommentToken //
 printToken println

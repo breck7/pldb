@@ -16,6 +16,8 @@ features
   *)
  hasSemanticIndentation false
  hasBooleans true
+ hasOctals true
+ hasHexadecimals true
 
 multiLineCommentTokens (* *)
 booleanTokens True False

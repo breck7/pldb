@@ -102,6 +102,10 @@ features
  hasAccessModifiers true
  hasInheritance true
  hasConditionals true
+ hasOctals true
+  // 0[0-7_]+[lL]?
+ hasHexadecimals true
+  // 0[xX][0-9a-fA-F][0-9a-fA-F_]*[lL]?
 
 lineCommentToken //
 multiLineCommentTokens /* */

@@ -21,6 +21,8 @@ features
  hasFunctions true
  hasAccessModifiers true
  hasConditionals true
+ hasHexadecimals true
+  // 0[xX][0-9a-fA-F]+
 
 lineCommentToken //
 printToken println

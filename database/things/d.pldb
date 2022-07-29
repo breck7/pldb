@@ -33,6 +33,10 @@ features
  hasSemanticIndentation false
  hasStrings true
   "Hello world"
+ hasOctals true
+  // 0[0-7_]+
+ hasHexadecimals true
+  // 0[xX][0-9a-fA-F_]+
 
 lineCommentToken //
 multiLineCommentTokens /* */

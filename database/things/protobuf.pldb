@@ -16,6 +16,10 @@ features
   */
  hasBooleans true
  hasAccessModifiers true
+ hasOctals true
+  // 0[0-7]+[LlUu]*
+ hasHexadecimals true
+  // 0x[0-9a-fA-F]+[LlUu]*
 
 lineCommentToken //
 multiLineCommentTokens /* */

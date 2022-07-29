@@ -9,6 +9,8 @@ features
  hasComments true
   # A comment
  hasSemanticIndentation false
+ hasHexadecimals true
+  # 0x[0-9A-Fa-f]+
 
 lineCommentToken #
 

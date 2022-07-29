@@ -5,6 +5,9 @@ website http://rzimmerman.github.io/kal
 
 compilesTo javascript
 
+features
+ hasHexadecimals true
+
 example
  task getUserFriends (userName)
   wait for user from db.users.findOne {name:userName}

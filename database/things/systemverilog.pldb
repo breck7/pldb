@@ -19,6 +19,10 @@ features
  hasFunctions true
  hasInheritance true
  hasConditionals true
+ hasOctals true
+  // ([1-9][_0-9]*)?\s*\'[sS]?[oO]\s*[xXzZ?0-7][_xXzZ?0-7]*
+ hasHexadecimals true
+  // ([1-9][_0-9]*)?\s*\'[sS]?[hH]\s*[xXzZ?0-9a-fA-F][_xXzZ?0-9a-fA-F]*
 
 lineCommentToken //
 multiLineCommentTokens /* */

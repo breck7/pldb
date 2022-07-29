@@ -19,6 +19,10 @@ features
  hasWhileLoops true
  hasFunctions true
  hasConditionals true
+ hasOctals true
+  // ([0-9]+)|(\'o)[0-7]+
+ hasHexadecimals true
+  // ([0-9]+)|(\'h)[0-9a-fA-F]+
 
 lineCommentToken //
 multiLineCommentTokens /* */
