@@ -186,6 +186,10 @@ class PLDBUpdater {
     this.makePredictions("hasSwitch")
   }
 
+  scanAccessModifiersCommand() {
+    this.makePredictions("hasAccessModifiers")
+  }
+
   scanExamplesForStringsCommand() {
     // print put puts out log write
     const regex = /'Hello world'/i

@@ -251,6 +251,10 @@ class PLDBFile extends TreeBaseFile {
     return this.makeSimpleKeywordPrediction("switch")
   }
 
+  get hasAccessModifiersPrediction() {
+    return this.makeSimpleKeywordPrediction("public")
+  }
+
   get hasFunctionsPrediction() {
     return (
       this.makeSimpleKeywordPrediction("function") ||
