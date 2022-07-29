@@ -45,6 +45,7 @@ features
   @array = (1..10);
  hasPrintDebugging true
  hasSemanticIndentation false
+ hasWhileLoops true
 
 lineCommentToken #
 multiLineCommentTokens =begin =cut

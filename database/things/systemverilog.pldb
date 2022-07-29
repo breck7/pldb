@@ -13,6 +13,7 @@ features
  hasMultiLineComments true
   /* A comment
   */
+ hasWhileLoops true
 
 lineCommentToken //
 multiLineCommentTokens /* */

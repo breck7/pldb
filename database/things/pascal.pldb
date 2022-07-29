@@ -36,6 +36,7 @@ features
  hasStrings true
  isCaseSensitive false
  hasBooleans true
+ hasWhileLoops true
 
 lineCommentToken //
 multiLineCommentTokens { }

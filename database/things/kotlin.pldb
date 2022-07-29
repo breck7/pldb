@@ -42,6 +42,7 @@ features
   */
  hasStrings true
  hasBooleans true
+ hasWhileLoops true
 
 lineCommentToken //
 multiLineCommentTokens /* */

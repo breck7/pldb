@@ -38,7 +38,7 @@ interface FeatureSummary {
 
 interface FeaturePrediction {
   value: boolean
-  token: string
+  token?: string
   example?: string
 }
 
@@ -220,6 +220,15 @@ class PLDBFile extends TreeBaseFile {
         }
       }
     }
+  }
+
+  get hasWhileLoopsPrediction(): FeaturePrediction {
+    const { keywords } = this
+
+    if (keywords.includes("while"))
+      return {
+        value: true
+      }
   }
 
   get allExamples(): Example[] {

@@ -16,6 +16,7 @@ features
  hasStrings true
   "Hello world"
  isCaseSensitive true
+ hasWhileLoops true
 
 lineCommentToken //
 multiLineCommentTokens /* */

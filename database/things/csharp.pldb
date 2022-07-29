@@ -156,6 +156,7 @@ features
   
   Func<TIn, TOut> Compose<TIn, TMid, TOut>(Func<TMid, TOut> f, Func<TIn, TMid> g) => _ => f(g(_));
  isCaseSensitive true
+ hasWhileLoops true
 
 lineCommentToken //
 multiLineCommentTokens /* */

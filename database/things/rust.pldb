@@ -66,6 +66,7 @@ features
  hasLineComments true
   // A comment
  hasBooleans true
+ hasWhileLoops true
 
 lineCommentToken //
 multiLineCommentTokens /* */

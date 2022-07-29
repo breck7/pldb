@@ -133,18 +133,20 @@ class PLDBUpdater {
       })
   }
 
-  makePredictions(featureName, tokenProperty) {
+  makePredictions(featureName, tokenProperty?: string) {
     const featurePath = `features ${featureName}`
     pldbBase
       .filter(file => file.isLanguage)
       .filter(
-        file => !file.has(tokenProperty) && file.get(featurePath) === undefined
+        file =>
+          file.get(featurePath) === undefined &&
+          (!file.has(tokenProperty) || !tokenProperty)
       )
       .forEach(file => {
         const prediction = file[featureName + "Prediction"]
         if (prediction) {
           file.set(featurePath, prediction.value.toString())
-          file.set(tokenProperty, prediction.token)
+          if (prediction.token) file.set(tokenProperty, prediction.token)
           if (prediction.example)
             file.touchNode(featurePath).setChildren(prediction.example)
           file.prettifyAndSave()
@@ -158,6 +160,10 @@ class PLDBUpdater {
 
   scanForImportsCommand() {
     this.makePredictions("hasImports", "includeToken")
+  }
+
+  scanWhileLoopsCommand() {
+    this.makePredictions("hasWhileLoops", "includeToken")
   }
 
   scanExamplesForStringsCommand() {

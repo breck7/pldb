@@ -47,6 +47,7 @@ features
   "Hello world"
  isCaseSensitive false
  hasBooleans true
+ hasWhileLoops true
 
 lineCommentToken --
 printToken Text_IO.Put_Line

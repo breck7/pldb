@@ -76,6 +76,7 @@ features
   end
  hasLineComments true
   # A comment
+ hasWhileLoops true
 
 lineCommentToken #
 multiLineCommentTokens #= =#
