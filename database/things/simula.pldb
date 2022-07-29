@@ -15,6 +15,7 @@ features
  hasAssignment true
  hasStrings true
   "Hello world"
+ hasBooleans true
 
 lineCommentToken !
 printToken OutText
@@ -105,3 +106,4 @@ hopl 170
 
 fileType text
 centralPackageRepositoryCount 0
+booleanTokens True False

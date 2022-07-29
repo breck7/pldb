@@ -12,6 +12,7 @@ features
  hasComments true
   // A comment
  hasSemanticIndentation false
+ hasBooleans true
 
 lineCommentToken //
 
@@ -363,3 +364,4 @@ hackerNewsDiscussions
  15204241|Idyll: Interactive Document Language|https://idyll-lang.github.io/|2017-09-08 21:55:53 UTC|1504907753|abhirag|18|195
 
 twitter idyll_lang
+booleanTokens true false

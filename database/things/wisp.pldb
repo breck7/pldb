@@ -13,6 +13,7 @@ features
   ; A comment
  hasStrings true
   "Hello world"
+ hasBooleans true
 
 lineCommentToken ;
 stringToken "
@@ -108,3 +109,4 @@ linguistGrammarRepo https://github.com/atom/language-clojure
 fileType text
 isOpenSource true
 centralPackageRepositoryCount 0
+booleanTokens true false

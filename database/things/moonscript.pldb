@@ -17,6 +17,7 @@ features
  hasSemanticIndentation false
  hasStrings true
   'Hello world'
+ hasBooleans true
 
 lineCommentToken --
 printToken print
@@ -162,3 +163,4 @@ tryItOnline moonscript
 fileType text
 isOpenSource true
 centralPackageRepositoryCount 0
+booleanTokens true false

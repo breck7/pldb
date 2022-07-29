@@ -56,3 +56,6 @@ linguistGrammarRepo https://github.com/cdibbs/language-jison
 fileType text
 isOpenSource true
 centralPackageRepositoryCount 0
+features
+ hasBooleans true
+booleanTokens true false

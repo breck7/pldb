@@ -164,26 +164,36 @@ class PLDBFile extends TreeBaseFile {
 
   get hasBooleansPrediction(): FeaturePrediction {
     const { keywords } = this
-    if (keywords.includes("true") && keywords.includes("false")) {
-      return {
-        value: true,
-        token: "true false"
-      }
-    }
 
-    if (keywords.includes("TRUE") && keywords.includes("FALSE")) {
-      return {
-        value: true,
-        token: "TRUE FALSE"
-      }
-    }
+    const pairs = ["true false", "TRUE FALSE", "True False"]
 
-    if (keywords.includes("True") && keywords.includes("False")) {
-      return {
-        value: true,
-        token: "True False"
-      }
-    }
+    let hit
+    pairs.forEach(pair => {
+      const parts = pair.split(" ")
+      if (keywords.includes(parts[0]) && keywords.includes(parts[1]))
+        hit = {
+          value: true,
+          token: pair
+        }
+    })
+
+    if (hit) return hit
+
+    const examples = this.allExamples.map(code => code.code)
+    pairs.forEach(pair => {
+      const parts = pair.split(" ")
+
+      const hasTrue = examples.some(code => code.includes(parts[0]))
+      const hasFalse = examples.some(code => code.includes(parts[1]))
+
+      if (hasTrue && hasFalse)
+        hit = {
+          value: true,
+          token: pair
+        }
+    })
+
+    if (hit) return hit
 
     return undefined
   }

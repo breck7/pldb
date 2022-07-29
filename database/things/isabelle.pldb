@@ -15,6 +15,7 @@ features
   (* A comment
   *)
  hasSemanticIndentation false
+ hasBooleans true
 
 multiLineCommentTokens (* *)
 
@@ -118,3 +119,4 @@ languageServerProtocolProject https://isabelle.in.tum.de/repos/isabelle/file/tip
 fileType text
 isOpenSource true
 centralPackageRepositoryCount 0
+booleanTokens True False

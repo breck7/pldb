@@ -10,6 +10,7 @@ features
   ' A comment
  hasComments true
   ' A comment
+ hasBooleans true
 
 lineCommentToken '
 
@@ -211,3 +212,4 @@ rosettaCode Spin
 fileType text
 wordRank 5184
 centralPackageRepositoryCount 0
+booleanTokens true false

@@ -11,6 +11,7 @@ features
  hasComments true
   ; A comment
  hasSemanticIndentation false
+ hasBooleans true
 
 lineCommentToken ;
 
@@ -101,3 +102,4 @@ twitter netlogo
 fileType text
 isOpenSource true
 centralPackageRepositoryCount 0
+booleanTokens true false

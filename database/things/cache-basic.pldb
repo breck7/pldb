@@ -11,6 +11,7 @@ features
   ' A comment
  hasPrintDebugging true
  hasSemanticIndentation false
+ hasBooleans true
 
 lineCommentToken '
 printToken println
@@ -82,3 +83,4 @@ example
  end function
 
 centralPackageRepositoryCount 0
+booleanTokens True False

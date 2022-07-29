@@ -11,6 +11,7 @@ features
  hasSemanticIndentation false
  hasStrings true
   "Hello world"
+ hasBooleans true
 
 lineCommentToken !
 printToken write
@@ -94,3 +95,4 @@ leachim6 S Algol
 hopl 869
 
 centralPackageRepositoryCount 0
+booleanTokens true false

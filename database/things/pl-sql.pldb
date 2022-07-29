@@ -14,6 +14,7 @@ features
  hasSemanticIndentation false
  hasStrings true
   'Hello world'
+ hasBooleans true
 
 lineCommentToken --
 printToken dbms_output.put_line
@@ -103,3 +104,4 @@ hopl 7323
 
 fileType text
 centralPackageRepositoryCount 0
+booleanTokens TRUE FALSE

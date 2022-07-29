@@ -10,6 +10,7 @@ features
   (* A comment
   *)
  hasSemanticIndentation false
+ hasBooleans true
 
 multiLineCommentTokens (* *)
 
@@ -147,3 +148,4 @@ linguistGrammarRepo https://github.com/thotypous/sublime-bsv
 
 fileType text
 centralPackageRepositoryCount 0
+booleanTokens True False

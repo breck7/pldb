@@ -8,6 +8,7 @@ features
   ; A comment
  hasComments true
   ; A comment
+ hasBooleans true
 
 lineCommentToken ;
 
@@ -53,3 +54,4 @@ wikipedia https://en.wikipedia.org/wiki/PROMAL
 hopl 1261
 
 centralPackageRepositoryCount 0
+booleanTokens TRUE FALSE

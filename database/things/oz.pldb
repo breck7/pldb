@@ -13,6 +13,7 @@ features
  hasLineComments true
   % A comment
  hasSemanticIndentation false
+ hasBooleans true
 
 lineCommentToken %
 
@@ -147,3 +148,4 @@ fileType text
 wordRank 2692
 isOpenSource true
 centralPackageRepositoryCount 0
+booleanTokens true false

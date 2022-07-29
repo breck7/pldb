@@ -13,6 +13,7 @@ features
  hasComments true
   // A comment
  hasSemanticIndentation false
+ hasBooleans true
 
 lineCommentToken //
 
@@ -174,3 +175,4 @@ githubRepo https://github.com/kstenerud/concise-encoding
  updated 2022
  description The secure data format for a  modern world
  issues 23
+booleanTokens true false

@@ -61,3 +61,6 @@ example
      inst %Accumulator.always_comb.227.0 (i1$ %direction, i16$ %increment, i16$ %result) -> (i16$ %next)
      inst %Accumulator.always_ff.228.0 (i1$ %clk, i16$ %next) -> (i16$ %result)
  }
+features
+ hasBooleans true
+booleanTokens true false

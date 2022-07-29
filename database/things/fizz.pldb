@@ -12,6 +12,7 @@ features
  hasComments true
   // A comment
  hasSemanticIndentation false
+ hasBooleans true
 
 lineCommentToken //
 
@@ -34,3 +35,4 @@ example
                              sum(:l.n,:r.n,1,:n);
  
  }
+booleanTokens true false

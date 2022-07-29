@@ -10,6 +10,7 @@ features
   ; A comment
  hasPrintDebugging true
  hasSemanticIndentation false
+ hasBooleans true
 
 lineCommentToken ;
 printToken PRINTF
@@ -69,3 +70,4 @@ goodreads
 fileType text
 wordRank 473
 centralPackageRepositoryCount 0
+booleanTokens True False

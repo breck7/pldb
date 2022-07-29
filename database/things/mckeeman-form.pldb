@@ -5,6 +5,7 @@ reference https://www.youtube.com/watch?v=RGizBNflVKw
 
 features
  hasSemanticIndentation true
+ hasBooleans true
 
 example
  json
@@ -108,3 +109,4 @@ example
   '000A' ws
   '000D' ws
   '0009' ws
+booleanTokens true false

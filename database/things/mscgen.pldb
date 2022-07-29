@@ -30,3 +30,6 @@ example
 pygmentsHighlighter Mscgen
  filename dsls.py
  fileExtensions msc
+features
+ hasBooleans true
+booleanTokens TRUE FALSE

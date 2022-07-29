@@ -13,6 +13,7 @@ features
  hasStrings true
   'Hello world'
  isCaseSensitive false
+ hasBooleans true
 
 lineCommentToken *
 stringToken '
@@ -310,3 +311,4 @@ tiobe ABAP
 
 fileType text
 centralPackageRepositoryCount 0
+booleanTokens true false

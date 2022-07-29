@@ -13,6 +13,7 @@ features
  hasLineComments true
   ; A comment
  hasSemanticIndentation false
+ hasBooleans true
 
 lineCommentToken ;
 
@@ -43,3 +44,4 @@ example
      hex:      16#{DECAFBAD CAFE 00FF}
      base-64:  64#{UmVuIGlzIGRhdGE=}  
  )
+booleanTokens true false

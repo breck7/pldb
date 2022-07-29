@@ -15,6 +15,7 @@ features
  hasSemanticIndentation false
  hasStrings true
   "Hello world"
+ hasBooleans true
 
 lineCommentToken #
 printToken print
@@ -63,3 +64,4 @@ leachim6 ArkScript
  example
   (print "Hello World")
   
+booleanTokens true false

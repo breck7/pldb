@@ -9,6 +9,7 @@ features
  hasComments true
   ; A comment
  hasSemanticIndentation false
+ hasBooleans true
 
 lineCommentToken ;
 
@@ -250,3 +251,4 @@ linguistGrammarRepo https://github.com/sanssecours/ABNF.tmbundle
 
 fileType text
 centralPackageRepositoryCount 0
+booleanTokens true false

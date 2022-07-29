@@ -12,6 +12,7 @@ features
  hasPrintDebugging true
  hasStrings true
   "Hello world"
+ hasBooleans true
 
 printToken writeln
 stringToken "
@@ -56,3 +57,4 @@ leachim6 XL
 
 isOpenSource true
 centralPackageRepositoryCount 0
+booleanTokens True False

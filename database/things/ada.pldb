@@ -46,6 +46,7 @@ features
  hasStrings true
   "Hello world"
  isCaseSensitive false
+ hasBooleans true
 
 lineCommentToken --
 printToken Text_IO.Put_Line
@@ -239,3 +240,4 @@ gdbSupport true
 fileType text
 wordRank 8040
 centralPackageRepositoryCount 0
+booleanTokens True False

@@ -12,6 +12,7 @@ features
  hasComments true
   ; A comment
  hasSemanticIndentation false
+ hasBooleans true
 
 lineCommentToken ;
 
@@ -112,3 +113,4 @@ githubRepo https://github.com/bryal/carth
  updated 2022
  description The Carth programming language. Mirror of https://sr.ht/~jojo/Carth/
  issues 0
+booleanTokens true false

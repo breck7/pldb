@@ -17,6 +17,7 @@ features
  hasSemanticIndentation false
  hasStrings true
   "Hello world"
+ hasBooleans true
 
 multiLineCommentTokens (* *)
 printToken WriteString
@@ -418,3 +419,4 @@ hopl 817
 gdbSupport true
 fileType text
 centralPackageRepositoryCount 0
+booleanTokens TRUE FALSE

@@ -12,6 +12,7 @@ features
  hasComments true
   # A comment
  hasSemanticIndentation false
+ hasBooleans true
 
 lineCommentToken #
 
@@ -146,3 +147,4 @@ linguistGrammarRepo https://github.com/Hardmath123/sublime-nearley
 fileType text
 isOpenSource true
 centralPackageRepositoryCount 0
+booleanTokens true false

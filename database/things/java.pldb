@@ -93,6 +93,7 @@ features
   */
  hasSemanticIndentation false
  isCaseSensitive true
+ hasBooleans true
 
 lineCommentToken //
 multiLineCommentTokens /* */
@@ -442,3 +443,4 @@ ubuntuPackage openjdk-8-jdk
 jupyterKernel https://github.com/SpencerPark/IJava
 fileType text
 wordRank 1489
+booleanTokens true false
