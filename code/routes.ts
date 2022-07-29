@@ -76,26 +76,23 @@ class ListRoutes {
     const theWords = {}
     langsWithKeywords.forEach(file => {
       const name = file.id
-      file
-        .get("keywords")
-        .split(" ")
-        .forEach(word => {
-          const escapedWord = "Q" + word.toLowerCase() // b.c. you cannot have a key "constructor" in JS objects.
+      file.keywords.forEach(word => {
+        const escapedWord = "Q" + word.toLowerCase() // b.c. you cannot have a key "constructor" in JS objects.
 
-          if (!theWords[escapedWord])
-            theWords[escapedWord] = {
-              keyword: escapedWord,
-              count: 0,
-              langs: []
-            }
+        if (!theWords[escapedWord])
+          theWords[escapedWord] = {
+            keyword: escapedWord,
+            count: 0,
+            langs: []
+          }
 
-          const entry = theWords[escapedWord]
+        const entry = theWords[escapedWord]
 
-          entry.langs.push(
-            `<a href='../languages/${file.id}.html'>${file.title}</a>`
-          )
-          entry.count++
-        })
+        entry.langs.push(
+          `<a href='../languages/${file.id}.html'>${file.title}</a>`
+        )
+        entry.count++
+      })
     })
 
     Object.values(theWords).forEach((word: any) => {

@@ -26,7 +26,6 @@ features
   =#
  hasGarbageCollection true
  hasBooleans true
-  true
  hasIntegers true
   1
  hasPrintDebugging true
@@ -235,3 +234,4 @@ jupyterKernel https://github.com/JuliaLang/IJulia.jl
 fileType text
 wordRank 7592
 isOpenSource true
+booleanTokens true false

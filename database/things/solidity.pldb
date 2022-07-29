@@ -17,6 +17,7 @@ features
  hasMultiLineComments true
   /* A comment
   */
+ hasBooleans true
 
 lineCommentToken //
 multiLineCommentTokens /* */
@@ -124,3 +125,4 @@ twitter solidity_lang
 fileType text
 isOpenSource true
 centralPackageRepositoryCount 0
+booleanTokens true false

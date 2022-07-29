@@ -22,6 +22,7 @@ features
   *)
  hasComments true
   // A comment
+ hasBooleans true
 
 lineCommentToken //
 multiLineCommentTokens (* *)
@@ -30,3 +31,4 @@ keywords abs assert block Bytes case Crypto Current else failwith false for fun 
 gitlabRepo https://gitlab.com/ligolang/ligo
 
 monaco pascaligo
+booleanTokens true false

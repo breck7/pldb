@@ -19,6 +19,7 @@ features
  hasSemanticIndentation false
  hasStrings true
   "Hello world"
+ hasBooleans true
 
 lineCommentToken #
 printToken puts
@@ -209,3 +210,4 @@ fileType text
 wordRank 2716
 isOpenSource true
 centralPackageRepositoryCount 0
+booleanTokens true false

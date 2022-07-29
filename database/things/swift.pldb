@@ -43,6 +43,7 @@ features
   /* A comment
   */
  isCaseSensitive true
+ hasBooleans true
 
 lineCommentToken //
 multiLineCommentTokens /* */
@@ -173,3 +174,4 @@ twitter swiftlang
 fileType text
 wordRank 9077
 isOpenSource true
+booleanTokens true false

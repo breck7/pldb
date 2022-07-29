@@ -22,6 +22,7 @@ features
  hasSemanticIndentation false
  hasStrings true
   "Hello world"
+ hasBooleans true
 
 lineCommentToken //
 multiLineCommentTokens /* */
@@ -120,3 +121,4 @@ ubuntuPackage groovy
 fileType text
 isOpenSource true
 centralPackageRepositoryCount 0
+booleanTokens true false

@@ -25,6 +25,7 @@ features
  hasPrintDebugging true
  hasSemanticIndentation false
  hasStrings true
+ hasBooleans true
 
 lineCommentToken --
 multiLineCommentTokens --[[ --]]
@@ -149,3 +150,4 @@ jupyterKernel https://github.com/neomantra/lua_ipython_kernel
 jupyterKernel https://github.com/scrapinghub/splash/tree/master/splash/kernel
 fileType text
 isOpenSource true
+booleanTokens true false

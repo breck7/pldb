@@ -35,6 +35,7 @@ features
  hasAssignment true
  hasStrings true
  isCaseSensitive false
+ hasBooleans true
 
 lineCommentToken //
 multiLineCommentTokens { }
@@ -153,3 +154,4 @@ ubuntuPackage fp-compiler
 gdbSupport true
 fileType text
 centralPackageRepositoryCount 0
+booleanTokens true false

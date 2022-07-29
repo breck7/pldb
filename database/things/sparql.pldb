@@ -14,6 +14,7 @@ features
   # A comment
  hasStrings true
   "Hello world"
+ hasBooleans true
 
 lineCommentToken #
 stringToken "
@@ -80,3 +81,4 @@ leachim6 SparQL
 jupyterKernel https://github.com/paulovn/sparql-kernel
 fileType text
 centralPackageRepositoryCount 0
+booleanTokens true false

@@ -17,6 +17,7 @@ features
  hasMultiLineComments true
   /* A comment
   */
+ hasBooleans true
 
 lineCommentToken //
 multiLineCommentTokens /* */
@@ -110,3 +111,4 @@ tiobe Apex
 
 fileType text
 centralPackageRepositoryCount 0
+booleanTokens true false

@@ -21,6 +21,7 @@ features
   ###
  hasStrings true
  hasRegularExpressionsSyntaxSugar true
+ hasBooleans true
 
 lineCommentToken #
 multiLineCommentTokens ###
@@ -112,3 +113,4 @@ jupyterKernel https://github.com/n-riesco/jp-coffeescript
 fileType text
 isOpenSource true
 centralPackageRepositoryCount 0
+booleanTokens true false

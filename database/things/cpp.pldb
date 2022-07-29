@@ -17,7 +17,6 @@ features
  hasPointers true
   int *p;
  hasBooleans true
-  bool b1 = true;
  hasIntegers true
   int i = 0;
  hasAssignment true
@@ -383,3 +382,4 @@ jupyterKernel https://github.com/QuantStack/xeus-cling
 fileType text
 githubCopilotOptimized
 centralPackageRepositoryCount 0
+booleanTokens true false

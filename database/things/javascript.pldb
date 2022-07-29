@@ -82,7 +82,6 @@ features
   console.log(`original.foo = ${original.foo}`); // "original.foo = bar"
   console.log(`proxy.foo = ${proxy.foo}`);       // "proxy.foo = BAR"
  hasBooleans true
-  const result = true
  hasMethodChaining true
   "hello world".toString().substr(0, 1).length
  hasClasses true
@@ -393,3 +392,4 @@ jupyterKernel https://github.com/n-riesco/ijavascript
 fileType text
 wordRank 3002
 githubCopilotOptimized
+booleanTokens true false

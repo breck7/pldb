@@ -36,6 +36,11 @@ interface FeatureSummary {
   psuedoExample: string
 }
 
+interface FeaturePrediction {
+  value: boolean
+  token: string
+}
+
 interface Example {
   code: string
   source: string
@@ -101,6 +106,11 @@ class PLDBFile extends TreeBaseFile {
     return this.extensions.split(" ")[0]
   }
 
+  get keywords() {
+    const kw = this.get("keywords")
+    return kw ? kw.split(" ") : []
+  }
+
   get featurePath() {
     return `features ${this.get("featureKeyword")}`
   }
@@ -150,6 +160,18 @@ class PLDBFile extends TreeBaseFile {
 
   get creators(): string[] {
     return this.get("creators")?.split(" and ") ?? []
+  }
+
+  get hasBooleansPrediction(): FeaturePrediction {
+    const { keywords } = this
+    if (keywords.includes("true") && keywords.includes("false")) {
+      return {
+        value: true,
+        token: "true false"
+      }
+    }
+
+    return undefined
   }
 
   get allExamples(): Example[] {

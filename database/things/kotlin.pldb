@@ -41,6 +41,7 @@ features
   /* A comment
   */
  hasStrings true
+ hasBooleans true
 
 lineCommentToken //
 multiLineCommentTokens /* */
@@ -216,3 +217,4 @@ jupyterKernel https://github.com/ligee/kotlin-jupyter
 fileType text
 isOpenSource true
 centralPackageRepositoryCount 0
+booleanTokens true false

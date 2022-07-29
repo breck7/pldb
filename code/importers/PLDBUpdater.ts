@@ -133,6 +133,26 @@ class PLDBUpdater {
       })
   }
 
+  makePredictions(featureName, tokenProperty) {
+    pldbBase
+      .filter(file => file.isLanguage)
+      .filter(
+        file => !file.has(tokenProperty) && file.get(featureName) === undefined
+      )
+      .forEach(file => {
+        const prediction = file[featureName + "Prediction"]
+        if (prediction) {
+          file.set(`features ${featureName}`, prediction.value.toString())
+          file.set(tokenProperty, prediction.token)
+          file.save()
+        }
+      })
+  }
+
+  scanForBooleansCommand() {
+    this.makePredictions("hasBooleans", "booleanTokens")
+  }
+
   scanExamplesForStringsCommand() {
     // print put puts out log write
     const regex = /'Hello world'/i

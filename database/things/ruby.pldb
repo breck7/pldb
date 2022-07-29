@@ -20,7 +20,6 @@ features
  hasIntegers true
   score = 100
  hasBooleans true
-  status = true
  hasAssignment true
   score = 100
  hasExceptions true
@@ -256,3 +255,4 @@ jupyterKernel https://github.com/SciRuby/iruby
 fileType text
 wordRank 5813
 githubCopilotOptimized
+booleanTokens true false

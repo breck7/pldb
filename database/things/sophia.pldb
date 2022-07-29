@@ -15,6 +15,7 @@ features
   */
  hasComments true
   // A comment
+ hasBooleans true
 
 lineCommentToken //
 multiLineCommentTokens /* */
@@ -31,3 +32,4 @@ githubRepo https://github.com/aeternity/aesophia
  issues 42
 
 monaco sophia
+booleanTokens true false

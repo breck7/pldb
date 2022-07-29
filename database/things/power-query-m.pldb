@@ -18,6 +18,7 @@ features
  hasMultiLineComments true
   /* A comment
   */
+ hasBooleans true
 
 lineCommentToken //
 multiLineCommentTokens /* */
@@ -47,3 +48,4 @@ example
 monaco powerquery
 
 centralPackageRepositoryCount 0
+booleanTokens true false

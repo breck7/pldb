@@ -1,10 +1,3 @@
-abstractCommonTokenNode
- description Most general purpose programming languages implement a set of common tokens for common features like these.
- cells keywordCell
- catchAllCellType tokenCell
- extends abstractFactNode
- contentDelimiter  
- abstract
 keywordsNode
  description What are all the keywords in this language?
  extends abstractFactNode
@@ -12,42 +5,48 @@ keywordsNode
  catchAllCellType tokenCell
  contentDelimiter  
  single
+abstractCommonTokenNode
+ description Most general purpose programming languages implement a set of common tokens for common features like these.
+ cells keywordCell
+ catchAllCellType tokenCell
+ extends abstractFactNode
+ contentDelimiter  
+ cruxFromId
+ single false
+ abstract
 lineCommentTokenNode
  extends abstractCommonTokenNode
  description Defined as a token that can be placed anywhere on a line and starts a comment that cannot be stopped except by a line break character or end of file.
- cruxFromId
- single false
  example
   javascript
    lineCommentToken //
 multiLineCommentTokensNode
  extends abstractCommonTokenNode
  description A comment with a start delimiter and end token (which can be the same) that can span multiple lines.
- cruxFromId
- single false
  example
   javascript
    multiLineCommentTokens /* */
 printTokenNode
  extends abstractCommonTokenNode
  description What token(s) is used to print a message?
- cruxFromId
- single false
  example
   javascript
    printToken console.log
 stringTokenNode
  extends abstractCommonTokenNode
  description What token(s) is used to delimite a string?
- cruxFromId
- single false
  example
   javascript
    stringToken "
 assignmentTokenNode
  extends abstractCommonTokenNode
  description What token(s) is used for assignment to an identifier?
- cruxFromId
  example
   javascript
    assignmentToken =
+booleanTokensNode
+ extends abstractCommonTokenNode
+ description What token(s) is used for true and false?
+ example
+  javascript
+   booleanToken true false

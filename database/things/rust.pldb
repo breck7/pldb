@@ -65,6 +65,7 @@ features
  hasTypeInference true
  hasLineComments true
   // A comment
+ hasBooleans true
 
 lineCommentToken //
 multiLineCommentTokens /* */
@@ -200,3 +201,4 @@ gdbSupport true
 jupyterKernel https://github.com/google/evcxr/tree/master/evcxr_jupyter
 fileType text
 isOpenSource true
+booleanTokens true false

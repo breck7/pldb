@@ -58,6 +58,7 @@ features
   (* A comment
   *)
  hasStrings true
+ hasBooleans true
 
 lineCommentToken //
 multiLineCommentTokens (* *)
@@ -174,3 +175,4 @@ ubuntuPackage fsharp
 jupyterKernel https://github.com/fsprojects/IfSharp
 fileType text
 isOpenSource true
+booleanTokens true false

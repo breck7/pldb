@@ -16,7 +16,6 @@ features
   "hello world"
  hasSemanticIndentation false
  hasBooleans true
-  bool b = true;
  hasIntegers true
   int i = 42;
  hasAssignment true
@@ -298,3 +297,4 @@ packageRepository https://www.nuget.org/
 jupyterKernel https://github.com/zabirauf/icsharp
 fileType text
 githubCopilotOptimized
+booleanTokens true false
