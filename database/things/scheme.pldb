@@ -25,6 +25,7 @@ features
  hasSemanticIndentation false
  hasStrings true
   "Hello world"
+ hasConditionals true
 
 lineCommentToken ;
 multiLineCommentTokens #| |#

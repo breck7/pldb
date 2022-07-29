@@ -49,6 +49,7 @@ features
  hasBooleans true
  hasWhileLoops true
  hasFunctions true
+ hasConditionals true
 
 lineCommentToken --
 printToken Text_IO.Put_Line

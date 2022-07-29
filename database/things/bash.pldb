@@ -33,6 +33,7 @@ features
   source ./bash.sh
  hasWhileLoops true
  hasFunctions true
+ hasConditionals true
 
 lineCommentToken #
 printToken echo

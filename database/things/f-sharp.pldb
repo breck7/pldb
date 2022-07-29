@@ -64,6 +64,7 @@ features
  hasConstants true
  hasFunctions true
  hasAccessModifiers true
+ hasConditionals true
 
 lineCommentToken //
 multiLineCommentTokens (* *)

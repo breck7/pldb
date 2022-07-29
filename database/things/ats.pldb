@@ -19,6 +19,7 @@ features
   *)
  hasSemanticIndentation false
  hasFunctions true
+ hasConditionals true
 
 lineCommentToken //
 multiLineCommentTokens (* *)

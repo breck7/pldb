@@ -198,6 +198,10 @@ class PLDBUpdater {
     this.makePredictions("hasAsyncAwait")
   }
 
+  scanConditionalsCommand() {
+    this.makePredictions("hasConditionals")
+  }
+
   scanExamplesForStringsCommand() {
     // print put puts out log write
     const regex = /'Hello world'/i

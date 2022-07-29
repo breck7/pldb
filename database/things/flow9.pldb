@@ -16,6 +16,7 @@ features
  hasImports true
   import runtime;
  hasSwitch true
+ hasConditionals true
 
 lineCommentToken //
 multiLineCommentTokens /* */

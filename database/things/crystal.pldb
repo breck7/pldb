@@ -24,6 +24,7 @@ features
   require "../../spec_helper"
  hasClasses true
  hasFunctions true
+ hasConditionals true
 
 lineCommentToken #
 printToken puts

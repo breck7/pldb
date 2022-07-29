@@ -42,6 +42,7 @@ features
  hasPrintDebugging true
  hasSemanticIndentation false
  hasFunctions true
+ hasConditionals true
 
 lineCommentToken %
 printToken io:format

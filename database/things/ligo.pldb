@@ -24,6 +24,7 @@ features
   // A comment
  hasBooleans true
  hasFunctions true
+ hasConditionals true
 
 lineCommentToken //
 multiLineCommentTokens (* *)

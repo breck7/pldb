@@ -26,6 +26,7 @@ features
  hasComments true
   --- A comment
  hasSemanticIndentation false
+ hasConditionals true
 
 lineCommentToken ---
 keywords and or not char num div mod dec X # : -> ; --- if then else > <= + ( ) , infix - truval :: nil " <> == in where data ++ lambda
