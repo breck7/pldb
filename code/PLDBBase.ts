@@ -255,6 +255,10 @@ class PLDBFile extends TreeBaseFile {
     return this.makeSimpleKeywordPrediction("public")
   }
 
+  get hasInheritancePrediction() {
+    return this.makeSimpleKeywordPrediction("extends")
+  }
+
   get hasFunctionsPrediction() {
     return (
       this.makeSimpleKeywordPrediction("function") ||

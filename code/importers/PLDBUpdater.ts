@@ -190,6 +190,10 @@ class PLDBUpdater {
     this.makePredictions("hasAccessModifiers")
   }
 
+  scanInheritanceCommand() {
+    this.makePredictions("hasInheritance")
+  }
+
   scanExamplesForStringsCommand() {
     // print put puts out log write
     const regex = /'Hello world'/i
