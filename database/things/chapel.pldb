@@ -35,6 +35,8 @@ features
   // (\d*\.\d+)([eE][+-]?[0-9]+)?i?
  hasIntegers true
   // [0-9]+
+ hasBinaryNumbers true
+  // 0[bB][01]+
 
 lineCommentToken //
 multiLineCommentTokens /* */

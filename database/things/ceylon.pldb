@@ -31,6 +31,8 @@ features
   // \d{1,3}(_\d{3})+\.\d{1,3}(_\d{3})+[kMGTPmunpf]?
  hasIntegers true
   // \d{1,3}(_\d{3})+[kMGTP]?
+ hasBinaryNumbers true
+  // \$([01]{4})(_[01]{4})+
 
 lineCommentToken //
 multiLineCommentTokens /* */

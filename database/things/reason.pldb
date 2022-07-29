@@ -40,6 +40,8 @@ features
   // -?\d[\d_]*(.[\d_]*)?([eE][+\-]?\d[\d_]*)
  hasIntegers true
   // \d[\d_]*
+ hasBinaryNumbers true
+  // 0[bB][01][01_]*
 
 lineCommentToken //
 multiLineCommentTokens /* */

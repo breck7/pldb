@@ -256,6 +256,8 @@ hasOctalsNode
  extends abstractFeatureNode
 hasHexadecimalsNode
  extends abstractFeatureNode
+hasBinaryNumbersNode
+ extends abstractFeatureNode
 hasIteratorsNode
  extends abstractFeatureNode
 hasJavaExtensionsNode

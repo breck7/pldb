@@ -86,6 +86,8 @@ features
   # 0x[a-fA-F0-9]+((_[a-fA-F0-9]+)+)?
  hasFloats true
   # (\d+((_\d+)+)?\.(?!\.)(\d+((_\d+)+)?)?|\.\d+((_\d+)+)?)([eEf][+-]?[0-9]+)?
+ hasBinaryNumbers true
+  # 0b[01]+((_[01]+)+)?
 
 lineCommentToken #
 multiLineCommentTokens #= =#

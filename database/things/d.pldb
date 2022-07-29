@@ -41,6 +41,8 @@ features
   // 0[xX]([0-9a-fA-F_]*\.[0-9a-fA-F_]+|[0-9a-fA-F_]+)[pP][+\-]?[0-9_]+[fFL]?[i]?
  hasIntegers true
   // (0|[1-9][0-9_]*)([LUu]|Lu|LU|uL|UL)?
+ hasBinaryNumbers true
+  // 0[Bb][01_]+
 
 lineCommentToken //
 multiLineCommentTokens /* */

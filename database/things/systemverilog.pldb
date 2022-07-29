@@ -27,6 +27,8 @@ features
   // (\d+\.\d*|\.\d+|\d+)[eE][+-]?\d+[lL]?
  hasIntegers true
   // ([1-9][_0-9]*)?\s*\'[sS]?[dD]\s*[xXzZ?0-9][_xXzZ?0-9]*
+ hasBinaryNumbers true
+  // ([1-9][_0-9]*)?\s*\'[sS]?[bB]\s*[xXzZ?01][_xXzZ?01]*
 
 lineCommentToken //
 multiLineCommentTokens /* */

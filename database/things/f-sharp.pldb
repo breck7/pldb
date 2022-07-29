@@ -73,6 +73,8 @@ features
   // -?\d[\d_]*(.[\d_]*)?([eE][+\-]?\d[\d_]*)[fFmM]?
  hasIntegers true
   // \d[\d_]*[uU]?[yslLnQRZINGmM]?
+ hasBinaryNumbers true
+  // 0[bB][01][01_]*[uU]?[yslLn]?
 
 lineCommentToken //
 multiLineCommentTokens (* *)

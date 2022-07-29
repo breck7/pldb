@@ -58,7 +58,7 @@ for entry in all_lexers:
         'hexadecimals': getNums(lexer_cls, Number.Hex),
         'floats': getNums(lexer_cls, Number.Float),
         'integers': getNums(lexer_cls, Number.Integer),
-        #'binaryNumbers': getNums(lexer_cls, Number.Bin),
+        'binarynumbers': getNums(lexer_cls, Number.Bin),
     	'url': lexer_cls.url}
 	)
 

@@ -24,6 +24,8 @@ features
   -- (\d+\.\d*|\.\d+|\d+)E[+-]?\d+
  hasIntegers true
   -- \d{1,2}#[0-9a-f_]+#?
+ hasBinaryNumbers true
+  -- B"[01_]+"
 
 lineCommentToken --
 printToken write

@@ -16,6 +16,7 @@ features
  hasHexadecimals true
  hasFloats true
  hasIntegers true
+ hasBinaryNumbers true
 
 printToken FStar.IO.print_string
 booleanTokens true false

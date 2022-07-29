@@ -55,6 +55,8 @@ features
   # (?i)(\d*(_\d*)*\.\d+(_\d*)*|\d+(_\d*)*\.\d+(_\d*)*)(e[+-]?\d+)?
  hasIntegers true
   # \d+(_\d+)*
+ hasBinaryNumbers true
+  # 0b[01]+(_[01]+)*
 
 lineCommentToken #
 multiLineCommentTokens =begin =cut

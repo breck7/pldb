@@ -26,6 +26,8 @@ features
   % (\d+\.\d*|\d*\.\d+)([eE][+-]?[0-9]+)?
  hasIntegers true
   % \d\d?\'[a-zA-Z0-9]+
+ hasBinaryNumbers true
+  % 0b[01]+
 
 lineCommentToken %
 multiLineCommentTokens /* */

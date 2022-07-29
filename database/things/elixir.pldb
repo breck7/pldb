@@ -42,6 +42,8 @@ features
   # \d(_?\d)*\.\d(_?\d)*([eE][-+]?\d(_?\d)*)?
  hasIntegers true
   # \d(_?\d)*
+ hasBinaryNumbers true
+  # 0b[01]+
 
 lineCommentToken #
 printToken IO.puts

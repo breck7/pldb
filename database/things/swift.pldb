@@ -58,6 +58,8 @@ features
   // [0-9][0-9_]*(\.[0-9_]+[eE][+\-]?[0-9_]+|\.[0-9_]*|[eE][+\-]?[0-9_]+)
  hasIntegers true
   // [0-9][0-9_]*
+ hasBinaryNumbers true
+  // 0b[01_]+
 
 lineCommentToken //
 multiLineCommentTokens /* */
