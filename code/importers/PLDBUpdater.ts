@@ -163,7 +163,11 @@ class PLDBUpdater {
   }
 
   scanWhileLoopsCommand() {
-    this.makePredictions("hasWhileLoops", "includeToken")
+    this.makePredictions("hasWhileLoops")
+  }
+
+  scanClassesCommand() {
+    this.makePredictions("hasClasses")
   }
 
   scanExamplesForStringsCommand() {

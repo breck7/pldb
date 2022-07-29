@@ -222,13 +222,21 @@ class PLDBFile extends TreeBaseFile {
     }
   }
 
-  get hasWhileLoopsPrediction(): FeaturePrediction {
+  makeSimpleKeywordPrediction(theWord: string): FeaturePrediction {
     const { keywords } = this
 
-    if (keywords.includes("while"))
+    if (keywords.includes(theWord))
       return {
         value: true
       }
+  }
+
+  get hasWhileLoopsPrediction() {
+    return this.makeSimpleKeywordPrediction("while")
+  }
+
+  get hasClassesPrediction() {
+    return this.makeSimpleKeywordPrediction("class")
   }
 
   get allExamples(): Example[] {

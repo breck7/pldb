@@ -22,6 +22,7 @@ features
  hasBooleans true
  hasImports true
   require "../../spec_helper"
+ hasClasses true
 
 lineCommentToken #
 printToken puts
