@@ -41,6 +41,7 @@ features
  hasMessagePassing true
  hasPrintDebugging true
  hasSemanticIndentation false
+ hasFunctions true
 
 lineCommentToken %
 printToken io:format

@@ -48,6 +48,7 @@ features
  isCaseSensitive false
  hasBooleans true
  hasWhileLoops true
+ hasFunctions true
 
 lineCommentToken --
 printToken Text_IO.Put_Line

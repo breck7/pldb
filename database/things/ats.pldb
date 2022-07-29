@@ -18,6 +18,7 @@ features
   (* A comment
   *)
  hasSemanticIndentation false
+ hasFunctions true
 
 lineCommentToken //
 multiLineCommentTokens (* *)

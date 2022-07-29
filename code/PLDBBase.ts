@@ -247,6 +247,14 @@ class PLDBFile extends TreeBaseFile {
     return this.makeSimpleKeywordPrediction("throw")
   }
 
+  get hasFunctionsPrediction() {
+    return (
+      this.makeSimpleKeywordPrediction("function") ||
+      this.makeSimpleKeywordPrediction("fun") ||
+      this.makeSimpleKeywordPrediction("def")
+    )
+  }
+
   get allExamples(): Example[] {
     const examples: Example[] = []
 
