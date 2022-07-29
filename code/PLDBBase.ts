@@ -171,6 +171,20 @@ class PLDBFile extends TreeBaseFile {
       }
     }
 
+    if (keywords.includes("TRUE") && keywords.includes("FALSE")) {
+      return {
+        value: true,
+        token: "TRUE FALSE"
+      }
+    }
+
+    if (keywords.includes("True") && keywords.includes("False")) {
+      return {
+        value: true,
+        token: "True False"
+      }
+    }
+
     return undefined
   }
 
