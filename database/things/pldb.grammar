@@ -1004,6 +1004,8 @@ hasFirstClassFunctionsNode
  extends abstractFeatureNode
 hasFloatsNode
  extends abstractFeatureNode
+hasFloatsNode
+ extends abstractFeatureNode
 hasFnArgumentsNode
  extends abstractFeatureNode
 hasFnArgumentTypeDeclarationsNode

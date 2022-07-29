@@ -56,6 +56,9 @@ for entry in all_lexers:
         'keywords': kwords,
         'octals': getNums(lexer_cls, Number.Oct),
         'hexadecimals': getNums(lexer_cls, Number.Hex),
+        'floats': getNums(lexer_cls, Number.Float),
+        'integers': getNums(lexer_cls, Number.Integer),
+        #'binaryNumbers': getNums(lexer_cls, Number.Bin),
     	'url': lexer_cls.url}
 	)
 
