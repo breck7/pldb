@@ -15,6 +15,7 @@ features
   MOVE ABC to XYZ  *> This is a comment.
  hasPrintDebugging true
  hasSemanticIndentation false
+ hasBooleans true
 
 lineCommentToken *>
 printToken DISPLAY
@@ -148,3 +149,4 @@ hopl 139
 ubuntuPackage open-cobol
 fileType text
 centralPackageRepositoryCount 0
+booleanTokens TRUE FALSE

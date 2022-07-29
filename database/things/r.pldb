@@ -36,6 +36,7 @@ features
  hasPrintDebugging true
  hasSemanticIndentation false
  hasAssignment true
+ hasBooleans true
 
 lineCommentToken #
 printToken print
@@ -158,3 +159,4 @@ jupyterKernel http://irkernel.github.io/
 fileType text
 wordRank 179
 isOpenSource true
+booleanTokens TRUE FALSE

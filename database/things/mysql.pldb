@@ -17,6 +17,7 @@ features
   */
  hasSemanticIndentation false
  hasStrings true
+ hasBooleans true
 
 lineCommentToken --
 multiLineCommentTokens /* */
@@ -71,3 +72,4 @@ fileType text
 wordRank 3351
 isOpenSource true
 centralPackageRepositoryCount 0
+booleanTokens TRUE FALSE

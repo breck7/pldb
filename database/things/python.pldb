@@ -33,7 +33,6 @@ features
   person = Person("John")
   person.age = 50
  hasBooleans true
-  result = true
  hasClasses true
   class Person (object):
     def __init__(self, name):
@@ -260,3 +259,4 @@ ubuntuPackage python
 fileType text
 wordRank 4048
 githubCopilotOptimized
+booleanTokens True False

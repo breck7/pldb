@@ -15,6 +15,7 @@ features
   */
  hasComments true
   -- A comment
+ hasBooleans true
 
 lineCommentToken --
 multiLineCommentTokens /* */
@@ -23,3 +24,4 @@ keywords AES128 AES256 ALL ALLOWOVERWRITE ANALYSE ANALYZE AND ANY ARRAY AS ASC A
 wikipedia https://en.wikipedia.org/wiki/Amazon_Redshift
 
 monaco redshift
+booleanTokens TRUE FALSE
