@@ -21,6 +21,7 @@ features
 
 lineCommentToken //
 printToken println
+keywords infix infixr infixl type cotype rectype alias struct con fun function val var external if then else elif return match private public private module import as include inline rec try yield enum interface instance
 
 example
  fun hello-ten()

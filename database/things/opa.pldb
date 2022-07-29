@@ -21,6 +21,7 @@ features
 multiLineCommentTokens /* */
 printToken jlog
 stringToken "
+keywords and as begin case client css database db do else end external forall function if import match module or package parser rec server then type val with xml_parser
 
 githubRepo https://github.com/MLstate/opalang
  firstCommit 2010

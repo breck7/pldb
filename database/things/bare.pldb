@@ -6,6 +6,8 @@ website https://baremessages.org
 domainName baremessages.org
  registered 2020
 
+keywords type enum u8 u16 u32 u64 uint i8 i16 i32 i64 int f32 f64 bool void data string optional map
+
 example
  type PublicKey data[128]
  type Time str # ISO 8601

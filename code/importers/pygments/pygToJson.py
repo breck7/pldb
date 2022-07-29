@@ -8,6 +8,12 @@ all_lexers = sorted(pygments.lexers.get_all_lexers(plugins=False), key=lambda x:
 lexer_name_url = []
 for entry in all_lexers:
     lexer_cls = pygments.lexers.find_lexer_class(entry[0])
+
+    try:
+        kwords = list(lexer_cls.keywords)
+    except:
+        kwords = []
+
     lexer_name_url.append(
     	{'name': entry[0],
     	'lexer': lexer_cls.__name__,
@@ -15,6 +21,7 @@ for entry in all_lexers:
     	'aliases': lexer_cls.aliases,
     	'filenames': lexer_cls.filenames,
     	'mimetypes': lexer_cls.mimetypes,
+        'keywords': kwords,
     	'url': lexer_cls.url}
 	)
 

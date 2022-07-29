@@ -24,6 +24,7 @@ features
 lineCommentToken //
 assignmentToken :=
 stringToken "
+keywords local in end below until from then for use case elseif else by cleanup finally when begin above select let if otherwise signal afterwards unless while define rename create to export
 
 wikipedia https://en.wikipedia.org/wiki/Dylan_(programming_language)
  example

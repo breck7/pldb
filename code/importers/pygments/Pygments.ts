@@ -12,10 +12,23 @@ const { Disk } = require("jtree/products/Disk.node.js")
 const outputFile = cacheDir + "output.json"
 
 class PygmentsImporter {
-	writeAllCommand() {
+	linkAllCommand() {
 		this.matches.forEach(entry => {
 			this.writeOne(entry.file, entry)
 		})
+	}
+
+	extractDataCommand() {
+		this.matches.forEach(entry => {
+			this.extractData(entry.file, entry)
+		})
+	}
+
+	extractData(file, entry) {
+		if (!file.has("pygmentsHighlighter")) return
+		if (!file.has("keywords") && entry.keywords.length)
+			file.set("keywords", entry.keywords.join(" "))
+		file.prettifyAndSave()
 	}
 
 	writeOne(file, entry) {

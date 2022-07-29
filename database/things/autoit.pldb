@@ -16,6 +16,7 @@ features
 lineCommentToken ;
 printToken MsgBox
 stringToken "
+keywords #include-once #include #endregion #forcedef #forceref #region and byref case continueloop dim do else elseif endfunc endif endselect exit exitloop for func global if local next not or return select step then to until wend while exit
 
 wikipedia https://en.wikipedia.org/wiki/AutoIt
  example

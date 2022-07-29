@@ -3,6 +3,8 @@ appeared 2003
 type packageManager
 reference https://nixos.org/
 
+keywords rec with let in inherit assert if else then ...
+
 example
  {
   boot.loader.grub.device = "/dev/sda";
