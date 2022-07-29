@@ -1,0 +1,8 @@
+title Octals
+type feature
+description Base-8 number system, and uses the digits 0 to 7. Often represented by putting a "0" before the number (or -0 for negative octals). So 010 = 8, 0100 = 64. 
+
+psuedoExample eight = 010
+featureKeyword hasOctals
+
+wikipedia https://en.wikipedia.org/wiki/Octal

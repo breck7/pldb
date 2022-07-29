@@ -252,6 +252,10 @@ hasInterpolatedStringsNode
  extends abstractFeatureNode
 hasIntegersNode
  extends abstractFeatureNode
+hasOctalsNode
+ extends abstractFeatureNode
+hasHexadecimalsNode
+ extends abstractFeatureNode
 hasIteratorsNode
  extends abstractFeatureNode
 hasJavaExtensionsNode

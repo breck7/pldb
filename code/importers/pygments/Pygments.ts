@@ -28,6 +28,20 @@ class PygmentsImporter {
 		if (!file.has("pygmentsHighlighter")) return
 		if (!file.has("keywords") && entry.keywords.length)
 			file.set("keywords", entry.keywords.join(" "))
+
+		const nums = ["Octals", "Hexadecimals"]
+
+		nums.forEach(num => {
+			const path = `features has${num}`
+			const value = entry[num.toLowerCase()]
+			const { lineCommentToken } = file
+			if (file.get(path) === undefined && value) {
+				file.set(path, "true")
+				if (lineCommentToken)
+					file.touchNode(path).setChildren(lineCommentToken + " " + value)
+			}
+		})
+
 		file.prettifyAndSave()
 	}
 

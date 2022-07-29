@@ -1,0 +1,8 @@
+title Hexadecimals
+type feature
+description Base-16 number system that uses the digits 0-9+A-F. Often represented by putting a "0x" before the number. So 15 === 0xF and 256 === 0X100.
+
+psuedoExample sixteen = 0x10
+featureKeyword hasHexadecimals
+
+wikipedia https://en.wikipedia.org/wiki/Hexadecimal
