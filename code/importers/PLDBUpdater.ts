@@ -182,6 +182,10 @@ class PLDBUpdater {
     this.makePredictions("hasFunctions")
   }
 
+  scanSwitchCommand() {
+    this.makePredictions("hasSwitch")
+  }
+
   scanExamplesForStringsCommand() {
     // print put puts out log write
     const regex = /'Hello world'/i
