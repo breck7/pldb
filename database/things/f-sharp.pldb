@@ -69,6 +69,10 @@ features
   // 0[oO][0-7][0-7_]*[uU]?[yslLn]?
  hasHexadecimals true
   // 0[xX][\da-fA-F][\da-fA-F_]*[uU]?[yslLn]?[fF]?
+ hasFloats true
+  // -?\d[\d_]*(.[\d_]*)?([eE][+\-]?\d[\d_]*)[fFmM]?
+ hasIntegers true
+  // \d[\d_]*[uU]?[yslLnQRZINGmM]?
 
 lineCommentToken //
 multiLineCommentTokens (* *)

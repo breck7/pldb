@@ -15,6 +15,10 @@ features
  hasSemanticIndentation false
  hasStrings true
   "Hello world"
+ hasFloats true
+  ; -?\d+\.\d+
+ hasIntegers true
+  ; -?\d+
 
 lineCommentToken ;
 printToken print

@@ -24,6 +24,10 @@ features
  hasSemanticIndentation false
  hasStrings true
   "Hello world"
+ hasFloats true
+  -- _?\d+\.(?=\d+)
+ hasIntegers true
+  -- _?\d+
 
 lineCommentToken --
 multiLineCommentTokens {- -}

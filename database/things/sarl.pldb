@@ -7,6 +7,8 @@ domainName sarl.io
 
 features
  hasHexadecimals true
+ hasFloats true
+ hasIntegers true
 
 pygmentsHighlighter SARL
  filename jvm.py

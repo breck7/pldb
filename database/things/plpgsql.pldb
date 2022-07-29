@@ -3,6 +3,10 @@ appeared 1998
 type pl
 creators Jan Wieck
 
+features
+ hasFloats true
+ hasIntegers true
+
 wikipedia https://en.wikipedia.org/wiki/PL/pgSQL
  related pl-sql ada postgresql sql-psm sql bison
  summary PL/pgSQL (Procedural Language/PostgreSQL) is a procedural programming language supported by the PostgreSQL ORDBMS.  It closely resembles Oracle's PL/SQL language. Implemented by Jan Wieck, PL/pgSQL first appeared with PostgreSQL 6.4, released on October 30, 1998. Version 9 also implements some ISO SQL/PSM features, like overloading of SQL-invoked functions and procedures.PL/pgSQL, as a fully featured programming language, allows much more procedural control than SQL, including the ability to use loops and other control structures. SQL statements and triggers can call functions created in the PL/pgSQL language. The design of PL/pgSQL aimed to allow PostgreSQL users to perform more complex operations and computations than SQL, while providing ease of use. The language is able to be defined as trusted by the server.PL/pgSQL is one of the programming languages included in the standard PostgreSQL distribution, the others being PL/Tcl, PL/Perl and PL/Python. In addition many others are available from third parties, including PL/Java, PL/pgPSM, PL/php, PL/R,  PL/Ruby,PL/sh,  PL/Lua and PL/v8.  PostgreSQL uses Bison as its parser, making it easy to port many open-source languages, as well as to reuse code.

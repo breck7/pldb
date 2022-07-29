@@ -2,6 +2,9 @@ title Procfile
 type pl
 website https://devcenter.heroku.com/articles/procfile#procfile-format
 
+features
+ hasIntegers true
+
 example
  web: bundle exec rails server -p $PORT
 

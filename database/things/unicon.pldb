@@ -19,6 +19,10 @@ features
   "Hello world"
  hasHexadecimals true
   # \b([+-]?([2-9]|[12][0-9]|3[0-6])[rR][0-9a-zA-Z]+)\b
+ hasFloats true
+  # [+-]?[0-9]*\.([0-9]*)([Ee][+-]?[0-9]*)?
+ hasIntegers true
+  # \b([+-]?[0-9]+[KMGTPkmgtp]?)\b
 
 lineCommentToken #
 printToken write

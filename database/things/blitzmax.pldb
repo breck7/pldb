@@ -5,6 +5,8 @@ type pl
 features
  hasPointers true
  hasHexadecimals true
+ hasFloats true
+ hasIntegers true
 
 githubRepo https://github.com/blitz-research/blitzmax
  firstCommit 2014

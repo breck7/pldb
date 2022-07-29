@@ -74,6 +74,10 @@ features
   -- 0[oO]_*[0-7](_*[0-7])*
  hasHexadecimals true
   -- 0[xX]_*[\da-fA-F](_*[\da-fA-F])*
+ hasFloats true
+  -- 0[xX]_*[\da-fA-F](_*[\da-fA-F])*_*[pP][+-]?\d(_*\d)*
+ hasIntegers true
+  -- \d(_*\d)*
 
 lineCommentToken --
 multiLineCommentTokens {- -}

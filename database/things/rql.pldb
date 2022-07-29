@@ -2,6 +2,9 @@ title RQL
 type pl
 website http://www.logilab.org/project/rql
 
+features
+ hasIntegers true
+
 pygmentsHighlighter RQL
  filename sql.py
  fileExtensions rql

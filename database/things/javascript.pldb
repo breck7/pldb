@@ -214,6 +214,8 @@ features
   // 0[oO]?[0-7]+n?
  hasHexadecimals true
   // 0[xX][0-9a-fA-F]+n?
+ hasFloats true
+  // (\.[0-9]+|[0-9]+\.[0-9]*|[0-9]+)([eE][-+]?[0-9]+)?
 
 lineCommentToken //
 multiLineCommentTokens /* */

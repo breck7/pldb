@@ -11,6 +11,8 @@ features
  hasSemanticIndentation false
  hasStrings true
   "Hello world"
+ hasFloats true
+ hasIntegers true
 
 printToken println
 stringToken "

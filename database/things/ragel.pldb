@@ -11,6 +11,8 @@ features
  hasSemanticIndentation false
  hasHexadecimals true
   # 0x[0-9A-Fa-f]+
+ hasIntegers true
+  # [+-]?[0-9]+
 
 lineCommentToken #
 

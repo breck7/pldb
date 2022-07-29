@@ -3,6 +3,9 @@ appeared 2003
 type packageManager
 reference https://nixos.org/
 
+features
+ hasIntegers true
+
 keywords rec with let in inherit assert if else then ...
 
 example

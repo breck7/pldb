@@ -38,6 +38,10 @@ features
   # 0o[0-7]+
  hasHexadecimals true
   # 0x[\da-fA-F]+
+ hasFloats true
+  # \d(_?\d)*\.\d(_?\d)*([eE][-+]?\d(_?\d)*)?
+ hasIntegers true
+  # \d(_?\d)*
 
 lineCommentToken #
 printToken IO.puts

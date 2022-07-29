@@ -14,6 +14,8 @@ compilesTo javascript
 features
  hasPrintDebugging true
  hasHexadecimals true
+ hasFloats true
+ hasIntegers true
 
 printToken println
 

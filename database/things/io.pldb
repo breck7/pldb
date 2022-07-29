@@ -17,6 +17,10 @@ features
  hasPrintDebugging true
  hasSemanticIndentation false
  hasAssignment true
+ hasFloats true
+  // (\d+\.?\d*|\d*\.\d+)([eE][+-]?[0-9]+)?
+ hasIntegers true
+  // \d+
 
 lineCommentToken //
 printToken print

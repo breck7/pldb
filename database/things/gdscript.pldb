@@ -16,6 +16,10 @@ features
   "Hello world"
  hasHexadecimals true
   # 0[xX][a-fA-F0-9]+
+ hasFloats true
+  # (\d+\.\d*|\d*\.\d+)([eE][+-]?[0-9]+)?j?
+ hasIntegers true
+  # \d+j?
 
 lineCommentToken #
 printToken print

@@ -9,6 +9,8 @@ compilesTo javascript
 features
  hasOctals true
  hasHexadecimals true
+ hasFloats true
+ hasIntegers true
 
 example
  count-words(text) =

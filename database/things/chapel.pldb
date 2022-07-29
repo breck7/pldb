@@ -31,6 +31,10 @@ features
   // 0[oO][0-7]+
  hasHexadecimals true
   // 0[xX][0-9a-fA-F]+
+ hasFloats true
+  // (\d*\.\d+)([eE][+-]?[0-9]+)?i?
+ hasIntegers true
+  // [0-9]+
 
 lineCommentToken //
 multiLineCommentTokens /* */

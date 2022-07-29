@@ -2,6 +2,10 @@ title Turtle
 appeared 2011
 type dataNotation
 
+features
+ hasFloats true
+ hasIntegers true
+
 example
  @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
  @prefix dc: <http://purl.org/dc/elements/1.1/> .

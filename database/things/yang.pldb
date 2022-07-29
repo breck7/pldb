@@ -4,6 +4,10 @@ type application
 creators Tom Nadeau
 reference https://tools.ietf.org/html/rfc7950
 
+features
+ hasFloats true
+ hasIntegers true
+
 githubRepo https://github.com/YangModels/yang
  firstCommit 2014
  stars 1206

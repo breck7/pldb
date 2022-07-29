@@ -20,6 +20,10 @@ features
   -- O"[0-7_]+"
  hasHexadecimals true
   -- X"[0-9a-f_]+"
+ hasFloats true
+  -- (\d+\.\d*|\.\d+|\d+)E[+-]?\d+
+ hasIntegers true
+  -- \d{1,2}#[0-9a-f_]+#?
 
 lineCommentToken --
 printToken write

@@ -8,6 +8,8 @@ standsFor CBOR data definition language
 features
  hasOctals true
  hasHexadecimals true
+ hasFloats true
+ hasIntegers true
 
 example
  pii = (

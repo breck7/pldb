@@ -29,7 +29,7 @@ class PygmentsImporter {
 		if (!file.has("keywords") && entry.keywords.length)
 			file.set("keywords", entry.keywords.join(" "))
 
-		const nums = ["Octals", "Hexadecimals"]
+		const nums = ["Octals", "Hexadecimals", "Floats", "Integers"]
 
 		nums.forEach(num => {
 			const path = `features has${num}`

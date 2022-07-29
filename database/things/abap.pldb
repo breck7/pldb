@@ -21,6 +21,8 @@ features
  hasSwitch true
  hasAccessModifiers true
  hasConditionals true
+ hasIntegers true
+  * [0-9]+
 
 lineCommentToken *
 stringToken '

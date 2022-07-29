@@ -47,6 +47,10 @@ features
  hasSemanticIndentation false
  hasHexadecimals true
   ; 0x-?[abcdef\d]+
+ hasFloats true
+  ; -?\d+\.\d+
+ hasIntegers true
+  ; -?\d+
 
 lineCommentToken ;
 multiLineCommentTokens (comment )

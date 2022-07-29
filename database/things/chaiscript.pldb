@@ -7,6 +7,8 @@ domainName chaiscript.com
 
 features
  hasHexadecimals true
+ hasFloats true
+ hasIntegers true
 
 example
  #include <chaiscript/chaiscript.hpp>

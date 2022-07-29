@@ -2,6 +2,10 @@ title Easytrieve
 appeared 1969
 type pl
 
+features
+ hasFloats true
+ hasIntegers true
+
 wikipedia https://en.wikipedia.org/wiki/Easytrieve
  example
   FILE PERSNL FB(150 1800)           } LIBRARY DEFINITION

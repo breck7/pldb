@@ -5,6 +5,8 @@ type pl
 features
  hasBooleans true
  hasHexadecimals true
+ hasFloats true
+ hasIntegers true
 
 booleanTokens True False
 

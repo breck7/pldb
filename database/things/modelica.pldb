@@ -18,6 +18,10 @@ features
  hasComments true
   // A comment
  hasSemanticIndentation false
+ hasFloats true
+  // \d+(\.?\d*[eE][-+]?\d+|\.\d*)
+ hasIntegers true
+  // \d+
 
 lineCommentToken //
 

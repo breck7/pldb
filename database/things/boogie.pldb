@@ -4,6 +4,9 @@ description The Boogie IVL (intermediate verification language) is a simple lang
 website https://boogie-docs.readthedocs.io/en/latest/
 corporateDevelopers Microsoft
 
+features
+ hasIntegers true
+
 example
  // Variable a is a nested map that maps
  // integers to a map that maps 32-bit wide bitvectors

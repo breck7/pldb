@@ -21,6 +21,8 @@ features
  hasConditionals true
  hasOctals true
  hasHexadecimals true
+ hasFloats true
+ hasIntegers true
 
 multiLineCommentTokens /* */
 printToken jlog

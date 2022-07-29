@@ -19,6 +19,10 @@ features
   "Hello world"
  hasHexadecimals true
   // 0x[0-9a-fA-F]+
+ hasFloats true
+  // [0-9]+\.[0-9]+
+ hasIntegers true
+  // [0-9]+
 
 lineCommentToken //
 printToken io::println

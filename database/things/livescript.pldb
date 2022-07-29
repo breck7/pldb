@@ -15,6 +15,10 @@ features
   */
  hasStrings true
   "Hello world"
+ hasFloats true
+  # [0-9]+\.[0-9]+([eE][0-9]+)?[fd]?(?:[a-zA-Z_]+)?
+ hasIntegers true
+  # [0-9]+(~[0-9a-z]+)?(?:[a-zA-Z_]+)?
 
 lineCommentToken #
 multiLineCommentTokens /* */

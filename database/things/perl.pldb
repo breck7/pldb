@@ -51,6 +51,10 @@ features
   # 0_?[0-7]+(_[0-7]+)*
  hasHexadecimals true
   # 0x[0-9A-Fa-f]+(_[0-9A-Fa-f]+)*
+ hasFloats true
+  # (?i)(\d*(_\d*)*\.\d+(_\d*)*|\d+(_\d*)*\.\d+(_\d*)*)(e[+-]?\d+)?
+ hasIntegers true
+  # \d+(_\d+)*
 
 lineCommentToken #
 multiLineCommentTokens =begin =cut

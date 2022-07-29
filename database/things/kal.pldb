@@ -7,6 +7,8 @@ compilesTo javascript
 
 features
  hasHexadecimals true
+ hasFloats true
+ hasIntegers true
 
 example
  task getUserFriends (userName)

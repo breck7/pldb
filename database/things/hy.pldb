@@ -20,6 +20,10 @@ features
   ; 0[0-7]+j?
  hasHexadecimals true
   ; 0[xX][a-fA-F0-9]+
+ hasFloats true
+  ; -?\d+\.\d+
+ hasIntegers true
+  ; -?\d+
 
 lineCommentToken ;
 printToken print

@@ -23,6 +23,10 @@ features
   // ([0-9]+)|(\'o)[0-7]+
  hasHexadecimals true
   // ([0-9]+)|(\'h)[0-9a-fA-F]+
+ hasFloats true
+  // (\d+\.\d*|\.\d+|\d+)[eE][+-]?\d+[lL]?
+ hasIntegers true
+  // ([0-9]+)|(\'d)[0-9]+
 
 lineCommentToken //
 multiLineCommentTokens /* */

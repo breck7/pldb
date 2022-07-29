@@ -15,6 +15,10 @@ features
   # A comment
  hasSemanticIndentation false
  hasAssignment true
+ hasFloats true
+  # (\d+\.(?!\.)\d*|\.(?!.)\d+)([eE][+-]?\d+)?
+ hasIntegers true
+  # \d+([eE][+-]?\d+)?
 
 lineCommentToken #
 assignmentToken :=

@@ -18,6 +18,10 @@ features
   # 0[0-7]+j?
  hasHexadecimals true
   # 0[xX][a-fA-F0-9]+
+ hasFloats true
+  # -?[\d_]*\.[\d_]*([eE][+-]?\d[\d_]*)?F?
+ hasIntegers true
+  # -?\d[\d_]*
 
 lineCommentToken #
 printToken println

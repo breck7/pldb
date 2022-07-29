@@ -17,6 +17,10 @@ features
  hasSemanticIndentation false
  hasStrings true
   'Hello world'
+ hasFloats true
+  NB. _?\d+\.(?=\d+)
+ hasIntegers true
+  NB. _?\d+
 
 lineCommentToken NB.
 printToken echo

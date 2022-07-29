@@ -8,6 +8,7 @@ features
  hasPrintDebugging true
  hasStrings true
   "Hello world"
+ hasIntegers true
 
 printToken #print
 stringToken "

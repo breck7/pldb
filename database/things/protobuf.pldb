@@ -20,6 +20,10 @@ features
   // 0[0-7]+[LlUu]*
  hasHexadecimals true
   // 0x[0-9a-fA-F]+[LlUu]*
+ hasFloats true
+  // (\d+\.\d*|\.\d+|\d+)[eE][+-]?\d+[LlUu]*
+ hasIntegers true
+  // \d+[LlUu]*
 
 lineCommentToken //
 multiLineCommentTokens /* */

@@ -12,6 +12,8 @@ features
  hasStrings true
   "Hello world"
  hasHexadecimals true
+ hasFloats true
+ hasIntegers true
 
 printToken print
 stringToken "

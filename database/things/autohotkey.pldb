@@ -16,6 +16,10 @@ features
   ; 0\d+
  hasHexadecimals true
   ; 0[xX][a-fA-F0-9]+
+ hasFloats true
+  ; (\d+\.\d*|\d*\.\d+)([eE][+-]?[0-9]+)?
+ hasIntegers true
+  ; \d+
 
 lineCommentToken ;
 assignmentToken :=

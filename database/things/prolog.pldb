@@ -22,6 +22,10 @@ features
   % 0o[0-7]+
  hasHexadecimals true
   % 0x[0-9a-fA-F]+
+ hasFloats true
+  % (\d+\.\d*|\d*\.\d+)([eE][+-]?[0-9]+)?
+ hasIntegers true
+  % \d\d?\'[a-zA-Z0-9]+
 
 lineCommentToken %
 multiLineCommentTokens /* */

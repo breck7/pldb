@@ -84,6 +84,8 @@ features
   # 0o[0-7]+((_[0-7]+)+)?
  hasHexadecimals true
   # 0x[a-fA-F0-9]+((_[a-fA-F0-9]+)+)?
+ hasFloats true
+  # (\d+((_\d+)+)?\.(?!\.)(\d+((_\d+)+)?)?|\.\d+((_\d+)+)?)([eEf][+-]?[0-9]+)?
 
 lineCommentToken #
 multiLineCommentTokens #= =#

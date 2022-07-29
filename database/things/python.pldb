@@ -145,6 +145,8 @@ features
   # 0[oO](?:_?[0-7])+
  hasHexadecimals true
   # 0[xX](?:_?[a-fA-F0-9])+
+ hasFloats true
+  # (\d(?:_?\d)*\.(?:\d(?:_?\d)*)?|(?:\d(?:_?\d)*)?\.\d(?:_?\d)*)([eE][+-]?\d(?:_?\d)*)?
 
 lineCommentToken #
 multiLineCommentTokens '''

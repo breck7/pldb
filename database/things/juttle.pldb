@@ -3,6 +3,10 @@ appeared 2014
 type pl
 website http://www.jut.io/play
 
+features
+ hasFloats true
+ hasIntegers true
+
 pygmentsHighlighter Juttle
  filename javascript.py
  fileExtensions juttle

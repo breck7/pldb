@@ -17,6 +17,10 @@ features
   "Hello world"
  hasHexadecimals true
   -- 0[xX][\da-fA-F]+
+ hasFloats true
+  -- \d+[eE][+-]?\d+
+ hasIntegers true
+  -- \d+
 
 lineCommentToken --
 printToken putStrLn

@@ -15,6 +15,10 @@ features
  hasStrings true
   "Hello world"
  hasBooleans true
+ hasFloats true
+  # [+\-]?(\d+\.\d*[eE][+-]?\d+|\.?\d+[eE][+-]?\d+)
+ hasIntegers true
+  # [+\-]?\d+
 
 lineCommentToken #
 stringToken "

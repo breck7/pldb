@@ -10,6 +10,8 @@ features
  hasPrintDebugging true
  hasStrings true
   "Hello world"
+ hasFloats true
+ hasIntegers true
 
 printToken print
 stringToken "

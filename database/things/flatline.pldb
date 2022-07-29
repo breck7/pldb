@@ -6,6 +6,8 @@ website http://bigmlcom.github.io/flatline
 
 features
  hasHexadecimals true
+ hasFloats true
+ hasIntegers true
 
 example
  (if (missing? "00000") (random-value "000000") (f "000000"))
