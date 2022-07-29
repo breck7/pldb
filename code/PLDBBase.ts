@@ -259,6 +259,10 @@ class PLDBFile extends TreeBaseFile {
     return this.makeSimpleKeywordPrediction("extends")
   }
 
+  get hasAsyncAwaitPrediction() {
+    return this.makeSimpleKeywordPrediction("async")
+  }
+
   get hasFunctionsPrediction() {
     return (
       this.makeSimpleKeywordPrediction("function") ||

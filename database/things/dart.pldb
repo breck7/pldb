@@ -33,6 +33,7 @@ features
  hasExceptions true
  hasSwitch true
  hasInheritance true
+ hasAsyncAwait true
 
 lineCommentToken //
 multiLineCommentTokens /* */

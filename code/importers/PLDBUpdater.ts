@@ -194,6 +194,10 @@ class PLDBUpdater {
     this.makePredictions("hasInheritance")
   }
 
+  scanAsyncAwaitCommand() {
+    this.makePredictions("hasAsyncAwait")
+  }
+
   scanExamplesForStringsCommand() {
     // print put puts out log write
     const regex = /'Hello world'/i
