@@ -8,6 +8,7 @@ cheatSheetUrl https://files.timber.io/pdfs/PromQL+Cheatsheet.pdf
 features
  hasFloats true
  hasIntegers true
+ hasLineComments true
 
 example
  topk(3, sum by (app, proc) (rate(instance_cpu_time_ns[5m])))

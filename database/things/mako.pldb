@@ -6,6 +6,9 @@ website https://www.makotemplates.org/
 domainName makotemplates.org
  registered 2006
 
+features
+ hasMultiLineComments true
+
 example
  <%inherit file="base.html"/>
  <%

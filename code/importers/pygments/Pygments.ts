@@ -48,6 +48,17 @@ class PygmentsImporter {
 			}
 		})
 
+		const features = ["hasLineComments", "hasMultiLineComments"]
+
+		features.forEach(feature => {
+			const path = `features ${feature}`
+			const value = entry[feature]
+			const { lineCommentToken } = file
+			if (file.get(path) === undefined && value) {
+				file.set(path, "true")
+			}
+		})
+
 		file.prettifyAndSave()
 	}
 

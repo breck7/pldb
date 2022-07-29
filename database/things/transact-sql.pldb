@@ -15,6 +15,7 @@ features
   -- [0-9]+\.[0-9]*(e[+-]?[0-9]+)?
  hasIntegers true
   -- [0-9]+
+ hasMultiLineComments true
 
 lineCommentToken --
 booleanTokens TRUE FALSE

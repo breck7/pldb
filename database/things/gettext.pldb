@@ -3,6 +3,9 @@ appeared 1990
 type textMarkup
 reference https://www.gnu.org/software/gettext/
 
+features
+ hasLineComments true
+
 wikipedia https://en.wikipedia.org/wiki/Gettext
  example
   #: src/name.c:36

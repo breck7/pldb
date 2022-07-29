@@ -7,6 +7,8 @@ domainName spicelang.com
 
 features
  hasIntegers true
+ hasLineComments true
+ hasMultiLineComments true
 
 pygmentsHighlighter Spice
  filename spice.py

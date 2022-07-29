@@ -24,6 +24,7 @@ features
   ; -?\d+\.\d+
  hasIntegers true
   ; -?\d+
+ hasMultiLineComments true
 
 lineCommentToken ;
 printToken print

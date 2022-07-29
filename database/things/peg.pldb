@@ -3,6 +3,9 @@ appeared 2002
 type grammarLanguage
 standsFor parsing expression grammar
 
+features
+ hasLineComments true
+
 example
  Expr    ← Sum
  Sum     ← Product (('+' / '-') Product)*

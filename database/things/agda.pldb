@@ -21,6 +21,7 @@ features
   -- \d+[eE][+-]?\d+
  hasIntegers true
   -- \d+
+ hasMultiLineComments true
 
 lineCommentToken --
 printToken putStrLn

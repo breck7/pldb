@@ -13,6 +13,7 @@ features
   "Hello world"
  hasFloats true
  hasIntegers true
+ hasLineComments true
 
 printToken println
 stringToken "

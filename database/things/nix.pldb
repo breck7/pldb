@@ -5,6 +5,8 @@ reference https://nixos.org/
 
 features
  hasIntegers true
+ hasLineComments true
+ hasMultiLineComments true
 
 keywords rec with let in inherit assert if else then ...
 

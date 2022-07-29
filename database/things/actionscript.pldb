@@ -17,6 +17,7 @@ features
  hasHexadecimals true
  hasFloats true
  hasIntegers true
+ hasLineComments true
 
 multiLineCommentTokens /* */
 printToken trace

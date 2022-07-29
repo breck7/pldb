@@ -6,6 +6,9 @@ website https://ptls.dev/
 reference https://news.ycombinator.com/item?id=22838255
 domainName ptls.dev
 
+features
+ hasLineComments true
+
 example
  import "chart.ptls" as chart
   

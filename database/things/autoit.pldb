@@ -22,6 +22,7 @@ features
   ; (\d+\.\d*|\d*\.\d+)([eE][+-]?[0-9]+)?
  hasIntegers true
   ; \d+
+ hasMultiLineComments true
 
 lineCommentToken ;
 printToken MsgBox

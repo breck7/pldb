@@ -19,6 +19,7 @@ features
   # (\d+\.(?!\.)\d*|\.(?!.)\d+)([eE][+-]?\d+)?
  hasIntegers true
   # \d+([eE][+-]?\d+)?
+ hasMultiLineComments true
 
 lineCommentToken #
 assignmentToken :=

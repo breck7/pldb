@@ -25,6 +25,7 @@ features
   // [0-9]+
  hasBinaryNumbers true
   // [01]+b
+ hasMultiLineComments true
 
 lineCommentToken //
 printToken io::println

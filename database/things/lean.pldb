@@ -9,6 +9,7 @@ features
  hasStrings true
   "Hello world"
  hasIntegers true
+ hasLineComments true
 
 printToken #print
 stringToken "

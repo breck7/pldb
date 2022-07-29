@@ -9,6 +9,8 @@ features
  hasPrintDebugging true
  hasHexadecimals true
  hasIntegers true
+ hasLineComments true
+ hasMultiLineComments true
 
 printToken println
 

@@ -1,6 +1,9 @@
 title Smithy
 type pl
 
+features
+ hasMultiLineComments true
+
 githubRepo https://awslabs.github.io/smithy/
 
 pygmentsHighlighter Smithy

@@ -19,6 +19,7 @@ features
   ' [0-9]+
  hasBinaryNumbers true
   ' \%[10]+
+ hasMultiLineComments true
 
 lineCommentToken '
 printToken puts
