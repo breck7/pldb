@@ -181,6 +181,9 @@ subredditNode
  string sourceDomain reddit.com
  contentKey id
  single false
+ description Name of a subreddit(s) for this language.
+ example
+  subreddit php
 replitNode
  extends abstractOneWordGuidNode
  description A link to try this langunage on replit.com
