@@ -1,8 +1,10 @@
 title FCL
-standsFor Flow chart language
-type pl
-related dot
 appeared 1989
+type pl
+standsFor Flow chart language
+
+related dot
+
 example
  (n)
  (init)
@@ -19,6 +21,6 @@ example
        n = -(n 1)
  
        if >(n 2) then fib else exit
- 
-exit: return x2
+ exit: return x2
+
 wikipedia https://en.wikipedia.org/wiki/Flow_chart_language
