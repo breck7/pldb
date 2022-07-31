@@ -1,0 +1,11 @@
+title Link
+type pl
+fileExtensions link
+
+example
+ save x, text 10 # create
+ save y, move x # move
+ save z, loan y # borrow
+ save w, read z # copy
+
+githubRepo https://github.com/teamdrumwork/base
