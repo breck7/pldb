@@ -17,7 +17,7 @@ const runTree = testTree =>
 const testTree: any = {}
 
 testTree.ensureNoErrorsInGrammar = areEqual => {
-	const grammarErrors = new grammarNode(Disk.read(pldbBase.grammarPath))
+	const grammarErrors = new grammarNode(pldbBase.grammarCode)
 		.getAllErrors()
 		.map(err => err.toObject())
 	if (grammarErrors.length) console.log(grammarErrors)

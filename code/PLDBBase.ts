@@ -478,23 +478,12 @@ class PLDBBaseFolder extends TreeBaseFolder {
     ) as PLDBBaseFolder
   }
 
-  get dir(): string {
-    return this._getDir()
-  }
-
   createParser() {
     return new TreeNode.Parser(PLDBFile)
   }
 
   get featureFiles(): PLDBFile[] {
     return this.filter(file => file.get("type") === "feature")
-  }
-
-  @imemo
-  get grammarProgramConstructor() {
-    return new jtree.HandGrammarProgram(
-      Disk.read(this._getDir() + "pldb.grammar")
-    ).compileAndReturnRootConstructor()
   }
 
   @imemo
@@ -574,7 +563,7 @@ class PLDBBaseFolder extends TreeBaseFolder {
 
   getFile(id: string): PLDBFile | undefined {
     if (id.includes("/")) id = Disk.getFileName(id).replace(".pldb", "")
-    return this.getNode(this.dir + id + ".pldb")
+    return this.getNode(this.makePath(id))
   }
 
   @imemo
@@ -762,10 +751,6 @@ class PLDBBaseFolder extends TreeBaseFolder {
     return this.rankings.featureRanks[file.id].index
   }
 
-  get grammarPath() {
-    return this.dir + "pldb.grammar"
-  }
-
   getLanguageRank(file: PLDBFile) {
     return this.rankings.languageRanks[file.id].index
   }
@@ -787,6 +772,10 @@ class PLDBBaseFolder extends TreeBaseFolder {
     )
   }
 
+  makePath(id: string) {
+    return path.join(this.dir, id + ".pldb")
+  }
+
   createFile(content: string, id?: string) {
     if (id === undefined) {
       const title = new TreeNode(content).get("title")
@@ -795,7 +784,7 @@ class PLDBBaseFolder extends TreeBaseFolder {
 
       id = this.makeId(title)
     }
-    const fullPath = path.join(this._getDir(), id + ".pldb")
+    const fullPath = this.makePath(id)
     Disk.write(fullPath, content)
     return this.appendLineAndChildren(fullPath, content)
   }

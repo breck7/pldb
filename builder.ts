@@ -3,6 +3,7 @@
 const lodash = require("lodash")
 const simpleGit = require("simple-git")
 const fs = require("fs")
+const path = require("path")
 const { jtree } = require("jtree")
 const { TreeNode } = jtree
 const { Disk } = require("jtree/products/Disk.node.js")
@@ -37,10 +38,7 @@ class Builder extends AbstractBuilder {
 
     // Copy grammar to public folder for easy access in things like TN Designer.
     Disk.mkdir(websiteFolder + "/grammar/")
-    Disk.write(
-      websiteFolder + "/grammar/pldb.grammar",
-      Disk.read(pldbBase.dir + "pldb.grammar")
-    )
+    Disk.write(websiteFolder + "/grammar/pldb.grammar", pldbBase.grammarCode)
     Disk.mkdir(websiteFolder + "/node_modules/")
     shell(
       `cp -R ${__dirname}/node_modules/monaco-editor ${websiteFolder}/node_modules/`
@@ -169,7 +167,7 @@ class Builder extends AbstractBuilder {
   buildAcknowledgementsPage() {
     const sources = Array.from(
       new Set(
-        Disk.read(pldbBase.dir + "pldb.grammar")
+        pldbBase.grammarCode
           .split("\n")
           .filter(line => line.includes("string sourceDomain"))
           .map(line => line.split("string sourceDomain")[1].trim())
@@ -241,26 +239,6 @@ ${text}`
     } catch (err) {}
 
     Disk.write(path, page.toString())
-  }
-
-  @benchmark
-  buildGrammar() {
-    // Concatenate all files ending in ".grammar" in the "grammar" directory:
-    const grammar =
-      `tooling A function generates this grammar by combining all files in the grammar folder.\n` +
-      fs
-        .readdirSync(__dirname + "/database/grammar")
-        .filter(file => file.endsWith(".grammar"))
-        .map(file =>
-          fs.readFileSync(__dirname + "/database/grammar/" + file, "utf8")
-        )
-        .join("\n")
-
-    // Write the concatenated grammar
-    Disk.write(pldbBase.grammarPath, grammar)
-
-    // Format the file:
-    new CommandLineApp().format(pldbBase.grammarPath)
   }
 
   @benchmark
