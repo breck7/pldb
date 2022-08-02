@@ -3,6 +3,7 @@
 const lodash = require("lodash")
 const simpleGit = require("simple-git")
 const fs = require("fs")
+const path = require("path")
 const { jtree } = require("jtree")
 const { TreeNode } = jtree
 const { Disk } = require("jtree/products/Disk.node.js")
@@ -16,9 +17,12 @@ import { PLDBBaseFolder } from "./code/PLDBBase"
 import { ListRoutes } from "./code/routes"
 
 const pldbBase = PLDBBaseFolder.getBase()
-const websiteFolder = __dirname + "/pldb.pub"
-const databaseFolderWhenPublishedToWebsite = websiteFolder + "/languages" // Todo: eventually redirect away from /languages?
-const settingsFile = Disk.read(__dirname + "/blog/scroll.settings")
+const websiteFolder = path.join(__dirname, "pldb.pub")
+const databaseFolderWhenPublishedToWebsite = path.join(
+  websiteFolder,
+  "languages"
+) // Todo: eventually redirect away from /languages?
+const settingsFile = Disk.read(path.join(__dirname, "blog", "scroll.settings"))
 
 pldbBase.loadFolder()
 
@@ -33,15 +37,18 @@ import {
 class Builder extends AbstractBuilder {
   _cpAssets() {
     // Copy other assets into the root site folder
-    shell(`cp ${__dirname}/blog/public/*.* ${websiteFolder}`)
+    const publicFolder = path.join(__dirname, "blog", "public")
+    shell(`cp ${publicFolder}/*.* ${websiteFolder}`)
 
     // Copy grammar to public folder for easy access in things like TN Designer.
-    Disk.mkdir(websiteFolder + "/grammar/")
+    Disk.mkdir(path.join(websiteFolder, "grammar"))
     Disk.write(
-      websiteFolder + "/grammar/pldb.grammar",
-      Disk.read(pldbBase.dir + "pldb.grammar")
+      path.join(websiteFolder, "grammar", "pldb.grammar"),
+      pldbBase.grammarCode
     )
-    Disk.mkdir(websiteFolder + "/node_modules/")
+
+    // Copy Monaco assets
+    Disk.mkdir(path.join(websiteFolder, "node_modules"))
     shell(
       `cp -R ${__dirname}/node_modules/monaco-editor ${websiteFolder}/node_modules/`
     )
@@ -61,7 +68,7 @@ class Builder extends AbstractBuilder {
     shell(`cp -R ${__dirname}/blog/lists ${websiteFolder}`)
 
     Disk.write(
-      websiteFolder + "/lists/scroll.settings",
+      path.join(websiteFolder, "lists", "scroll.settings"),
       settingsFile
         .replace(/BASE_URL/g, "..")
         .replace(
@@ -71,13 +78,16 @@ class Builder extends AbstractBuilder {
     )
 
     Disk.write(
-      websiteFolder + "/lists/scrollExtensions.grammar",
+      path.join(websiteFolder, "lists", "scrollExtensions.grammar"),
       this._scrollExtensionsFile
     )
 
     const listRoutes = new ListRoutes()
     listGetters(listRoutes).forEach(getter => {
-      Disk.write(`${websiteFolder}/lists/${getter}.scroll`, listRoutes[getter])
+      Disk.write(
+        path.join(websiteFolder, "lists", `${getter}.scroll`),
+        listRoutes[getter]
+      )
     })
 
     const folder = new ScrollFolder(websiteFolder + "/lists")
@@ -133,7 +143,6 @@ class Builder extends AbstractBuilder {
 
   @benchmark
   buildDatabasePages() {
-    this.buildGrammar()
     Disk.mkdir(databaseFolderWhenPublishedToWebsite)
 
     pldbBase.forEach(file => {
@@ -169,7 +178,7 @@ class Builder extends AbstractBuilder {
   buildAcknowledgementsPage() {
     const sources = Array.from(
       new Set(
-        Disk.read(pldbBase.dir + "pldb.grammar")
+        pldbBase.grammarCode
           .split("\n")
           .filter(line => line.includes("string sourceDomain"))
           .map(line => line.split("string sourceDomain")[1].trim())
@@ -244,26 +253,6 @@ ${text}`
   }
 
   @benchmark
-  buildGrammar() {
-    // Concatenate all files ending in ".grammar" in the "grammar" directory:
-    const grammar =
-      `tooling A function generates this grammar by combining all files in the grammar folder.\n` +
-      fs
-        .readdirSync(__dirname + "/database/grammar")
-        .filter(file => file.endsWith(".grammar"))
-        .map(file =>
-          fs.readFileSync(__dirname + "/database/grammar/" + file, "utf8")
-        )
-        .join("\n")
-
-    // Write the concatenated grammar
-    Disk.write(pldbBase.grammarPath, grammar)
-
-    // Format the file:
-    new CommandLineApp().format(pldbBase.grammarPath)
-  }
-
-  @benchmark
   buildSearchIndex() {
     const objects = pldbBase.toObjectsForCsv().map(object => {
       return {
@@ -290,7 +279,7 @@ ${text}`
   }
 
   buildJson() {
-    const str = JSON.stringify(pldbBase.typedMapShort, null, 2)
+    const str = JSON.stringify(pldbBase.typedMap, null, 2)
     Disk.write(websiteFolder + "/pldb.json", str)
     Disk.write(__dirname + "/code/package/pldb.json", str)
   }

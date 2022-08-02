@@ -17,7 +17,7 @@ const runTree = testTree =>
 const testTree: any = {}
 
 testTree.ensureNoErrorsInGrammar = areEqual => {
-	const grammarErrors = new grammarNode(Disk.read(pldbBase.grammarPath))
+	const grammarErrors = new grammarNode(pldbBase.grammarCode)
 		.getAllErrors()
 		.map(err => err.toObject())
 	if (grammarErrors.length) console.log(grammarErrors)
@@ -28,7 +28,7 @@ testTree.ensureNoErrorsInGrammar = areEqual => {
 testTree.ensureNoErrorsInBlog = areEqual => {}
 
 testTree.ensureNoErrorsInDb = areEqual => {
-	const errors = pldbBase.parsed.getAllErrors()
+	const { errors } = pldbBase
 	if (errors.length) console.log(errors)
 	areEqual(errors.length, 0)
 }
@@ -38,7 +38,8 @@ testTree.ensurePrettifiedCausesNoSemanticChanges = areEqual => {
 	const pre = pldbBase.typedMapShort
 
 	// Act
-	pldbBase.forEach(file => {
+	pldbBase.forEach((file, index) => {
+		if (index > 10) return
 		file.prettify()
 		const result = file.toString()
 		file.prettify()

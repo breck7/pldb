@@ -3,7 +3,6 @@ import { pldbNodeKeywords } from "./types"
 import {
   nodeToFlatObject,
   getJoined,
-  getPrimaryKey,
   isLanguage,
   getCleanedId,
   makeInverseRanks,
@@ -91,10 +90,6 @@ webApi
 xmlFormat`).toObject()
 
 class PLDBFile extends TreeBaseFile {
-  get id() {
-    return getPrimaryKey(this)
-  }
-
   get domainName() {
     return this.get("domainName")
   }
@@ -431,7 +426,7 @@ class PLDBFile extends TreeBaseFile {
 
   @imemo
   get parsed() {
-    return this.base.parsed.getNode(this.getWord(0))
+    return super.parsed
   }
 
   @imemo
@@ -471,15 +466,10 @@ class PLDBFile extends TreeBaseFile {
 }
 
 class PLDBBaseFolder extends TreeBaseFolder {
-  static getBase() {
-    return new (<any>PLDBBaseFolder)(
-      undefined,
-      path.join(databaseFolder, "things")
-    ) as PLDBBaseFolder
-  }
-
-  get dir(): string {
-    return this._getDir()
+  static getBase(): PLDBBaseFolder {
+    return new PLDBBaseFolder()
+      .setDir(path.join(databaseFolder, "things"))
+      .setGrammarDir(path.join(databaseFolder, "grammar"))
   }
 
   createParser() {
@@ -488,13 +478,6 @@ class PLDBBaseFolder extends TreeBaseFolder {
 
   get featureFiles(): PLDBFile[] {
     return this.filter(file => file.get("type") === "feature")
-  }
-
-  @imemo
-  get grammarProgramConstructor() {
-    return new jtree.HandGrammarProgram(
-      Disk.read(this._getDir() + "pldb.grammar")
-    ).compileAndReturnRootConstructor()
   }
 
   @imemo
@@ -574,7 +557,7 @@ class PLDBBaseFolder extends TreeBaseFolder {
 
   getFile(id: string): PLDBFile | undefined {
     if (id.includes("/")) id = Disk.getFileName(id).replace(".pldb", "")
-    return this.getNode(this.dir + id + ".pldb")
+    return this.getNode(id)
   }
 
   @imemo
@@ -701,11 +684,6 @@ class PLDBBaseFolder extends TreeBaseFolder {
   }
 
   @imemo
-  get parsed() {
-    return this.toProgram()
-  }
-
-  @imemo
   get topFeatures(): FeatureSummary[] {
     const files = this.featureFiles.map(file => {
       const name = file.id
@@ -762,10 +740,6 @@ class PLDBBaseFolder extends TreeBaseFolder {
     return this.rankings.featureRanks[file.id].index
   }
 
-  get grammarPath() {
-    return this.dir + "pldb.grammar"
-  }
-
   getLanguageRank(file: PLDBFile) {
     return this.rankings.languageRanks[file.id].index
   }
@@ -795,9 +769,8 @@ class PLDBBaseFolder extends TreeBaseFolder {
 
       id = this.makeId(title)
     }
-    const fullPath = path.join(this._getDir(), id + ".pldb")
-    Disk.write(fullPath, content)
-    return this.appendLineAndChildren(fullPath, content)
+    Disk.write(this.makeFilePath(id), content)
+    return this.appendLineAndChildren(id, content)
   }
 
   get exampleCounts() {
@@ -808,22 +781,22 @@ class PLDBBaseFolder extends TreeBaseFolder {
 
   toObjectsForCsv() {
     // todo: sort columns by importance
-    const program = this.parsed
-    program.getTopDownArray().forEach(node => {
-      if (node.includeChildrenInCsv === false) node.deleteChildren()
-      if (node.getNodeTypeId() === "blankLineNode") node.destroy()
-    })
-    program.forEach(node => {
-      node.set("id", getPrimaryKey(node))
-    })
-    const objects = program.map(nodeToFlatObject)
-    const { ranks } = this.rankings
-    const { exampleCounts } = this
-    // Add ranks
-    objects.forEach(obj => {
-      obj.rank = ranks[obj.id].index
-      obj.exampleCount = exampleCounts.get(obj.id)
-      obj.lastActivity = this.getFile(obj.id).lastActivity
+    const objects = this.map(file => {
+      const clone = file.parsed.clone()
+      clone.getTopDownArray().forEach(node => {
+        if (node.includeChildrenInCsv === false) node.deleteChildren()
+        if (node.getNodeTypeId() === "blankLineNode") node.destroy()
+      })
+      const { lastActivity, exampleCount } = file
+
+      clone.set("id", file.id)
+      clone.set("rank", file.rank.toString())
+
+      if (exampleCount) clone.set("exampleCount", exampleCount.toString())
+
+      if (lastActivity) clone.set("lastActivity", lastActivity.toString())
+
+      return nodeToFlatObject(clone)
     })
 
     return lodash.sortBy(objects, "rank")

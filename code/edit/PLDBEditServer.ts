@@ -161,12 +161,13 @@ class PLDBEditServer extends TreeBaseServer {
 	}
 
 	indexCommand() {
+		const folder = this._folder
 		return template(`<p>PLDB Edit is a simple web app for quickly adding and editing content on <a href="https://pldb.pub/">The Programming Language Database</a>.</p>
 <div style="white-space:pre;">
--- Folder: '${this._folder._getDir()}'
--- Grammars: '${this._folder._getGrammarPaths().join(",")}'
--- Files: ${this._folder.length}
--- Bytes: ${this._folder.toString().length}
+-- Folder: '${folder.dir}'
+-- Grammars: '${folder.grammarFilePaths.join(",")}'
+-- Files: ${folder.length}
+-- Bytes: ${folder.toString().length}
 </pre>
 <a href="errors.html">Errors (HTML)</a> | <a href="errors.csv">Errors (CSV)</a>`)
 	}

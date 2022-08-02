@@ -175,9 +175,6 @@ const _re = new RegExp(
 )
 const getLinks = str => str.match(_re) || []
 
-const getPrimaryKey = node =>
-  Utils.getFileName(Utils.removeFileExtension(node.getWord(0)))
-
 const replaceNext = (node, path, newContent) =>
   node
     .find(node => node.getLine().startsWith(path))
@@ -334,9 +331,7 @@ const imemo = <Type>(
     return this[propName]
   }
 }
-
 const listMemos = (instance: any) => instance[memoKeys]
-
 const clearMemos = (instance: any) =>
   listMemos(instance).forEach(key => (instance[key] = undefined))
 
@@ -350,7 +345,6 @@ export {
   nodeToFlatObject,
   toScrollTable,
   getJoined,
-  getPrimaryKey,
   isLanguage,
   getCleanedId,
   runCommand,

@@ -11,8 +11,7 @@ githubLanguageFileExtensionsNode
  single
 githubTrendingProjectsNode
  todo Figure out typings.
- baseNodeType blobNode
- boolean includeChildrenInCsv false
+ extends abstractDelimitedBlobNode
  boolean fromCrawler true
  description Projects in this language trending on GitHub.
  crux trendingProjects

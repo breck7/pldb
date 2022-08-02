@@ -31,7 +31,7 @@ class PLDBFileWithWikipedia {
   file: PLDBFile
 
   get pldbId() {
-    return this.file.getPrimaryKey()
+    return this.file.id
   }
 
   get cacheFilename() {

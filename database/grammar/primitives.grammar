@@ -109,6 +109,11 @@ abstractCodeNode
  extends abstractFactNode
  boolean includeChildrenInCsv false
  baseNodeType blobNode
+abstractDelimitedBlobNode
+ abstract
+ baseNodeType blobNode
+ boolean includeChildrenInCsv false
+ extends abstractFactNode
 lineOfCodeNode
  catchAllCellType codeCell
  catchAllNodeType lineOfCodeNode

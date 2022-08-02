@@ -1,9 +1,7 @@
 goodreadsNode
  boolean fromCrawler true
- extends abstractFactNode
  cruxFromId
- baseNodeType blobNode
- boolean includeChildrenInCsv false
+ extends abstractDelimitedBlobNode
  description Books about this language from Goodreads.
  string sourceDomain goodreads.com
  single

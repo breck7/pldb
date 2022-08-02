@@ -13,8 +13,7 @@ dblpPublicationsHitsNode
  single
 dblpPublicationsNode
  crux publications
- baseNodeType blobNode
+ extends abstractDelimitedBlobNode
  description An inline PSV table of hits.
  cells keywordCell
- boolean includeChildrenInCsv false
  single
