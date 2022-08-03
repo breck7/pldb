@@ -62,6 +62,7 @@ pm2 startup systemd
 ssh pldb@edit.pldb.pub
 cd pldb
 git pull
+npm install .
 tsc
 pm2 restart 0
 ```
