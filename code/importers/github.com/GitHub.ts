@@ -5,12 +5,13 @@ import { runCommand, PoliteCrawler } from "../../utils"
 
 import { jtree } from "jtree"
 
+const { Disk } = require("jtree/products/Disk.node.js")
+
 const cacheDir = __dirname + "/cache/"
 const reposDir = cacheDir + "repos/"
 const firstCommitCache = cacheDir + "firstCommits/"
 const pldbBase = PLDBBaseFolder.getBase()
 pldbBase.loadFolder()
-const { Disk } = require("jtree/products/Disk.node.js")
 
 const superagent = require("superagent")
 const repoFirstCommit = require("repo-first-commit")

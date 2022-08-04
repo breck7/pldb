@@ -1,5 +1,7 @@
 numberCell
 intCell
+rankCell
+ extends intCell
 populationCountCell
  description A positive integer representing a number of people.
  extends intCell
@@ -76,6 +78,15 @@ abstractAnnualPopulationCountMapNode
  extends abstractFactNode
  abstract
  single
+abstractAnnualRankMapNode
+ catchAllNodeType annualRankNode
+ description A map of ranks, one per year.
+ extends abstractFactNode
+ abstract
+ single
+annualRankNode
+ cells yearCell rankCell
+ uniqueFirstWord
 annualPopulationCountNode
  cells yearCell populationCountCell
  uniqueFirstWord

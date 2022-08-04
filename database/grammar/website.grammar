@@ -16,8 +16,13 @@ domainNameNode
  extends abstractFactNode
  single
  contentKey name
- inScope domainRegisteredNode
+ inScope domainRegisteredNode awisRankNode
 domainRegisteredNode
  extends abstractYearNode
  crux registered
  single
+awisRankNode
+ cruxFromId
+ extends abstractAnnualRankMapNode
+ description Alexa Web Information Service (AWIS) domain ranking.
+ string sourceDomain aws.amazon.com

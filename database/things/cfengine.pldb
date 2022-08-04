@@ -4,6 +4,8 @@ type application
 website https://cfengine.com
 domainName cfengine.com
  registered 2001
+ awisRank
+  2022 1520855
 
 example
  #!/var/cfengine/bin/cf-agent --no-lock
