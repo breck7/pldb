@@ -16,15 +16,13 @@ import { LanguagePageTemplate, FeaturePageTemplate } from "./code/pages"
 import { PLDBBaseFolder } from "./code/PLDBBase"
 import { ListRoutes } from "./code/routes"
 
-const pldbBase = PLDBBaseFolder.getBase()
+const pldbBase = PLDBBaseFolder.getBase().loadFolder()
 const websiteFolder = path.join(__dirname, "pldb.pub")
 const databaseFolderWhenPublishedToWebsite = path.join(
   websiteFolder,
   "languages"
 ) // Todo: eventually redirect away from /languages?
 const settingsFile = Disk.read(path.join(__dirname, "blog", "scroll.settings"))
-
-pldbBase.loadFolder()
 
 import {
   replaceNext,
