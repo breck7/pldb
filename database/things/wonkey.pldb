@@ -1,0 +1,16 @@
+title Wonkey
+type pl
+description Wonkey is an open-source cross-platform programming language.
+website https://wonkey-coders.github.io/
+reference https://news.ycombinator.com/item?id=32360952
+
+example
+ Function Add( a:Int, b:Int )
+     Return a + b
+ End
+ 
+ Function Add( a:Float, b:Float )
+     Return a + b
+ End
+
+githubRepo https://github.com/wonkey-coders/wonkey
