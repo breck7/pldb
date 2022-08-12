@@ -1,0 +1,22 @@
+title Objective-S
+type pl
+website https://objective.st/
+reference https://news.ycombinator.com/item?id=32444300
+
+example
+ -<void>deleteFile:filename {
+    thumbs := self thumbsView subviews.
+    viewsToRemove := thumbs selectWhereValueForKey:'filename' isEqual:filename.
+    aView := viewsToRemove firstObject.
+ 
+    UIView animateWithDuration:0.4
+           animations: { aView setAlpha: 0.0. }
+           completion: { aView removeFromSuperview. 
+                         UIView animateWithDuration: 0.2
+                                animations: { self thumbsView layoutSubviews. }
+                                completion: { 3 }. 
+                       }.
+    url := self urlForFile:aFilename.
+    NSFileManager defaultManager removeItemAtURL:url  error:nil.
+    self thumbsView afterDelay:0.4 | setNeedsLayout.
+ }
