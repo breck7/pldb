@@ -39,6 +39,7 @@ ssh-keygen -t rsa
 git clone git@github.com:breck7/pldb.git
 cd pldb
 npm install .
+cd code
 tsc
 # Test that it works over http
 node ./code/edit/PLDBEditServer.js startDevServer 80
@@ -63,6 +64,7 @@ ssh pldb@edit.pldb.pub
 cd pldb
 git pull
 npm install .
+cd code
 tsc
 pm2 restart 0
 ```
