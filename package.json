@@ -3,8 +3,8 @@
   "version": "5.0.0",
   "description": "The Programming Language Database",
   "scripts": {
-    "build": "jtree build buildAll",
-    "clean": "tsc --build --clean",
+    "build": "./code/builder.ts buildAll",
+    "clean": "cd code; tsc --build --clean",
     "cloc": "cloc --vcs git .",
     "checkLinks": "linkinator -r https://pldb.pub > ignore/brokenLinks.txt",
     "deploy": "echo 'Rsyncing the contents of pldb.pub/ to the /var/www/html folder on the PLDB server'; rsync -vr pldb.pub/* pldb@pldb.pub:/var/www/html/",
@@ -37,7 +37,8 @@
     "monaco-editor": "^0.33.0",
     "numeral": "^2.0.6",
     "scroll-cli": "^25.5.1",
-    "simple-git": "^3.10.0"
+    "simple-git": "^3.10.0",
+    "ts-node": "^10.9.1"
   },
   "devDependencies": {
     "@types/node": "^17.0.8",

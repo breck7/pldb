@@ -12,17 +12,20 @@ const { AbstractBuilder } = require("jtree/products/AbstractBuilder.node.js")
 const { ScrollFolder } = require("scroll-cli")
 const shell = require("child_process").execSync
 
-import { LanguagePageTemplate, FeaturePageTemplate } from "./code/pages"
-import { PLDBBaseFolder } from "./code/PLDBBase"
-import { ListRoutes } from "./code/routes"
+import { LanguagePageTemplate, FeaturePageTemplate } from "./pages"
+import { PLDBBaseFolder } from "./PLDBBase"
+import { ListRoutes } from "./routes"
 
 const pldbBase = PLDBBaseFolder.getBase().loadFolder()
-const websiteFolder = path.join(__dirname, "pldb.pub")
+const codeDir = __dirname
+const rootDir = path.join(codeDir, "..")
+const blogDir = path.join(rootDir, "blog")
+const websiteFolder = path.join(rootDir, "pldb.pub")
 const databaseFolderWhenPublishedToWebsite = path.join(
   websiteFolder,
   "languages"
 ) // Todo: eventually redirect away from /languages?
-const settingsFile = Disk.read(path.join(__dirname, "blog", "scroll.settings"))
+const settingsFile = Disk.read(path.join(blogDir, "scroll.settings"))
 
 import {
   replaceNext,
@@ -30,12 +33,12 @@ import {
   benchmark,
   benchmarkResults,
   listGetters
-} from "./code/utils"
+} from "./utils"
 
 class Builder extends AbstractBuilder {
   _cpAssets() {
     // Copy other assets into the root site folder
-    const publicFolder = path.join(__dirname, "blog", "public")
+    const publicFolder = path.join(blogDir, "public")
     shell(`cp ${publicFolder}/*.* ${websiteFolder}`)
 
     // Copy grammar to public folder for easy access in things like TN Designer.
@@ -48,7 +51,7 @@ class Builder extends AbstractBuilder {
     // Copy Monaco assets
     Disk.mkdir(path.join(websiteFolder, "node_modules"))
     shell(
-      `cp -R ${__dirname}/node_modules/monaco-editor ${websiteFolder}/node_modules/`
+      `cp -R ${rootDir}/node_modules/monaco-editor ${websiteFolder}/node_modules/`
     )
   }
 
@@ -63,7 +66,7 @@ class Builder extends AbstractBuilder {
   }
 
   buildListsBlog() {
-    shell(`cp -R ${__dirname}/blog/lists ${websiteFolder}`)
+    shell(`cp -R ${blogDir}/lists ${websiteFolder}`)
 
     Disk.write(
       path.join(websiteFolder, "lists", "scroll.settings"),
@@ -97,7 +100,7 @@ class Builder extends AbstractBuilder {
     this._cpAssets()
 
     // Copy posts dir into root site folder
-    shell(`cp -R ${__dirname}/blog/posts/* ${websiteFolder}`)
+    shell(`cp -R ${blogDir}/posts/* ${websiteFolder}`)
 
     Disk.write(
       websiteFolder + "/scroll.settings",
@@ -128,7 +131,7 @@ class Builder extends AbstractBuilder {
 
   buildRedirects() {
     Disk.mkdir(websiteFolder + "/posts")
-    Disk.read(__dirname + "/blog/redirects.txt")
+    Disk.read(path.join(blogDir, "redirects.txt"))
       .split("\n")
       .forEach(line => {
         const link = line.split(" ")
@@ -169,7 +172,7 @@ class Builder extends AbstractBuilder {
   }
 
   get _scrollExtensionsFile() {
-    return Disk.read(__dirname + `/code/scrollExtensions.grammar`)
+    return Disk.read(path.join(codeDir, `scrollExtensions.grammar`))
   }
 
   @benchmark
@@ -187,8 +190,8 @@ class Builder extends AbstractBuilder {
       `list\n` +
       sources.map(s => ` - <a href="https://${s}">${s}</a>`).join("\n")
 
-    const path = __dirname + "/blog/posts/acknowledgements.scroll"
-    const page = new TreeNode(Disk.read(path))
+    const ackPath = path.join(blogDir, "posts", "acknowledgements.scroll")
+    const page = new TreeNode(Disk.read(ackPath))
     replaceNext(page, "comment autogenAcknowledgements", table)
 
     let writtenIn = [
@@ -223,8 +226,8 @@ ${text}`
     )
 
     const npmPackages = Object.keys({
-      ...require("./package.json").dependencies,
-      ...require("./code/importers/package.json").dependencies
+      ...require("../package.json").dependencies,
+      ...require("./importers/package.json").dependencies
     })
 
     npmPackages.sort()
@@ -240,14 +243,14 @@ ${text}`
     try {
       const contributorsTable =
         `list\n` +
-        JSON.parse(Disk.read(__dirname + "/ignore/contributors.json"))
+        JSON.parse(Disk.read(path.join(rootDir, "ignore", "contributors.json")))
           .filter(item => item.login !== "codelani" && item.login !== "breck7")
           .map(item => ` - <a href="${item.html_url}">${item.login}</a>`)
           .join("\n")
       replaceNext(page, "comment autogenContributors", contributorsTable)
     } catch (err) {}
 
-    Disk.write(path, page.toString())
+    Disk.write(ackPath, page.toString())
   }
 
   @benchmark
@@ -278,12 +281,12 @@ ${text}`
 
   buildJson() {
     const str = JSON.stringify(pldbBase.typedMap, null, 2)
-    Disk.write(websiteFolder + "/pldb.json", str)
-    Disk.write(__dirname + "/code/package/pldb.json", str)
+    Disk.write(path.join(websiteFolder, "pldb.json"), str)
+    Disk.write(path.join(codeDir, "package", "pldb.json"), str)
   }
 
   buildTypesFile() {
-    Disk.write(__dirname + "/code/types.ts", pldbBase.typesFile)
+    Disk.write(path.join(codeDir, "types.ts"), pldbBase.typesFile)
   }
 
   formatDatabase() {
@@ -302,7 +305,7 @@ ${text}`
 
   async formatAndCheckChanged() {
     // git diff --name-only --cached
-    const git = simpleGit(__dirname)
+    const git = simpleGit(rootDir)
     const changed = await git.diff({ "--name-only": null, "--cached": null })
     changed
       .split("\n")
@@ -340,7 +343,12 @@ ${text}`
         })
 
         Disk.write(
-          __dirname + `/ignore/worksheets/${file.id}.${file.fileExtension}`,
+          path.join(
+            rootDir,
+            "ignore",
+            "worksheets",
+            `${file.id}.${file.fileExtension}`
+          ),
           todos.join("\n\n")
         )
       })
