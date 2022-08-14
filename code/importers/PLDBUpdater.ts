@@ -8,8 +8,7 @@ import { WhoIsImporter } from "./whois/WhoIs"
 import { WikipediaImporter } from "./wikipedia.org/Wikipedia"
 const { Disk } = require("jtree/products/Disk.node.js")
 
-const pldbBase = PLDBBaseFolder.getBase()
-pldbBase.loadFolder()
+const pldbBase = PLDBBaseFolder.getBase().loadFolder()
 
 class PLDBUpdater {
   async update(id: string) {
