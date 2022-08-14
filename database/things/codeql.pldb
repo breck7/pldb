@@ -1,0 +1,16 @@
+title CodeQL
+type queryLanguage
+description CodeQL let's you query code as if it were data.
+website https://codeql.github.com/
+fileExtensions ql
+corporateDevelopers GitHub
+
+example
+ from DataFlow::PathNode source, DataFlow::PathNode sink, UnsafeDeserializationConfig conf
+   
+           where conf.hasFlowPath(source, sink)
+   
+           select sink.getNode().(UnsafeDeserializationSink).getMethodAccess(), source, sink,
+       "Unsafe deserialization of $@.", source.getNode(), "user input"
+
+githubRepo https://github.com/github/codeql
