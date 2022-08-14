@@ -1,0 +1,20 @@
+title Numba
+type compiler
+description Numba is an open source JIT compiler that translates a subset of Python and NumPy code into fast machine code.
+website http://numba.pydata.org/
+
+example
+ from numba import njit
+ import random
+ 
+ @njit
+ def monte_carlo_pi(nsamples):
+     acc = 0
+     for i in range(nsamples):
+         x = random.random()
+         y = random.random()
+         if (x ** 2 + y ** 2) < 1.0:
+             acc += 1
+     return 4.0 * acc / nsamples
+
+githubRepo https://github.com/numba/numba
