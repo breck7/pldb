@@ -1,0 +1,16 @@
+title Other sites that rank programming languages
+
+aftertext
+ PLDB is not the only site that publishes rankings of programming languages. Below is a list of the other ones. Wikipedia has a page on the concept.
+ link https://en.wikipedia.org/wiki/Measuring_programming_language_popularity concept
+ https://pldb.pub/lists/top500.html rankings of programming languages
+
+pipeTable
+ Site|SiteLink
+ TIOBE Index|https://www.tiobe.com/tiobe-index/
+ PYPL PopularitY of Programming Language Index|https://pypl.github.io/PYPL.html
+ IEEE Top Programming Languages|https://spectrum.ieee.org/top-programming-languages/
+
+maxColumns 1
+columnWidth 60
+skipIndexPage
