@@ -21,6 +21,7 @@ const codeDir = __dirname
 const rootDir = path.join(codeDir, "..")
 const blogDir = path.join(rootDir, "blog")
 const websiteFolder = path.join(rootDir, "pldb.pub")
+const docsDir = path.join(websiteFolder, "docs")
 const databaseFolderWhenPublishedToWebsite = path.join(
   websiteFolder,
   "languages"
@@ -32,7 +33,8 @@ import {
   isLanguage,
   benchmark,
   benchmarkResults,
-  listGetters
+  listGetters,
+  cleanAndRightShift
 } from "./utils"
 
 class Builder extends AbstractBuilder {
@@ -41,12 +43,7 @@ class Builder extends AbstractBuilder {
     const publicFolder = path.join(blogDir, "public")
     shell(`cp ${publicFolder}/*.* ${websiteFolder}`)
 
-    // Copy grammar to public folder for easy access in things like TN Designer.
-    Disk.mkdir(path.join(websiteFolder, "grammar"))
-    Disk.write(
-      path.join(websiteFolder, "grammar", "pldb.grammar"),
-      pldbBase.grammarCode
-    )
+    this.buildDocs()
 
     // Copy Monaco assets
     Disk.mkdir(path.join(websiteFolder, "node_modules"))
@@ -277,6 +274,63 @@ ${text}`
       websiteFolder + "/languages.csv",
       new TreeNode(objects.filter(obj => isLanguage(obj.type))).toCsv()
     )
+
+    this.buildDocs()
+  }
+
+  buildDocs() {
+    const grammarPath = path.join(docsDir, "pldb.grammar")
+    Disk.mkdir(docsDir)
+
+    // Todo: clean up scroll.settings so we can remove this junk.
+    try {
+      Disk.rm(grammarPath)
+    } catch (err) {}
+
+    Disk.write(
+      path.join(docsDir, "scroll.settings"),
+      settingsFile
+        .replace(/BASE_URL/g, "..")
+        .replace("GIT_PATH", "https://github.com/breck7/pldb/blob/main/")
+    )
+    Disk.write(
+      path.join(docsDir, "scrollExtensions.grammar"),
+      this._scrollExtensionsFile
+    )
+
+    const { docsTable } = pldbBase
+
+    Disk.write(
+      path.join(docsDir, "columns.scroll"),
+      `title PLDB.csv column documentation
+skipIndexPage
+maxColumns 1
+columnWidth 80
+tableSearch
+
+aftertext
+ \`pldb.csv\` contains ${pldbBase.length} rows and ${docsTable.length} columns.
+ wrapsOn
+ link https://pldb.pub/pldb.csv pldb.csv
+
+pipeTable
+ ${cleanAndRightShift(
+   new TreeNode(docsTable).toDelimited("|", [
+     "Column",
+     "Values",
+     "Coverage",
+     "Description",
+     "Source",
+     "SourceLink"
+   ])
+ )}`
+    )
+
+    const folder = new ScrollFolder(docsDir)
+    folder.buildSinglePages()
+
+    // Copy grammar to public folder for easy access in things like TN Designer.
+    Disk.write(grammarPath, pldbBase.grammarCode)
   }
 
   buildJson() {

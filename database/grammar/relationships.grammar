@@ -3,7 +3,7 @@ abstractRelationshipNode
  cruxFromId
 relatedNode
  extends abstractRelationshipNode
- description A catch all to indicate related languages.
+ description What languages are related? This serves as a catch all, and it is better to use a more specific relationship node such as "supersetOf".
  single
 runsOnVmNode
  extends abstractRelationshipNode

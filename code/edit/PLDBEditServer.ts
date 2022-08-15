@@ -66,7 +66,7 @@ class PLDBEditServer extends TreeBaseServer {
 	compileGrammar() {
 		// todo: cleanup
 		jtree.compileGrammarForBrowser(
-			path.join(__dirname, "..", "..", "pldb.pub", "grammar", "pldb.grammar"),
+			path.join(__dirname, "..", "..", "pldb.pub", "docs", "pldb.grammar"),
 			__dirname + "/",
 			false
 		)

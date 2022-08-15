@@ -35,7 +35,7 @@ testTree.ensureNoErrorsInDb = areEqual => {
 
 testTree.ensurePrettifiedCausesNoSemanticChanges = areEqual => {
 	// Arrange
-	const pre = pldbBase.typedMapShort
+	const pre = pldbBase.typedMap
 
 	// Act
 	pldbBase.forEach((file, index) => {
@@ -48,7 +48,7 @@ testTree.ensurePrettifiedCausesNoSemanticChanges = areEqual => {
 	})
 
 	// Assert
-	const post = pldbBase.typedMapShort
+	const post = pldbBase.typedMap
 	areEqual(
 		lodash.isEqual(pre, post),
 		true,
