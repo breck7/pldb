@@ -58,9 +58,13 @@ class PLDBFileForBooks {
 		return JSON.parse(Disk.read(this.cacheFilePath))
 	}
 
+	get exists() {
+		return Disk.exists(this.cacheFilePath)
+	}
+
 	async fetch() {
 		const { cacheFilePath } = this
-		if (Disk.exists(cacheFilePath)) return true
+		if (this.exists) return true
 		try {
 			await downloadJson(
 				`https://api2.isbndb.com/books/${this.query}?pageSize=1000&column=title`,
@@ -92,6 +96,8 @@ class PLDBFileForBooks {
 	}
 
 	writeBooks() {
+		if (!this.exists) return true
+
 		const { hits, file } = this
 		const keyInfo = hits.map(book => {
 			const { title, date_published, publisher, isbn13, authors } = book
@@ -99,11 +105,15 @@ class PLDBFileForBooks {
 				year: date_published,
 				publisher,
 				title,
-				authors: authors.join(" and "),
+				authors: authors ? authors.join(" and ") : "",
 				isbn13
 			}
 		})
-		file.touchNode("isbndb").setChildren(new TreeNode(keyInfo).toDelimited("|"))
+		const count = hits.length
+		file.set("isbndb", `${count}`)
+
+		if (count)
+			file.getNode("isbndb").setChildren(new TreeNode(keyInfo).toDelimited("|"))
 		file.save()
 	}
 }
@@ -112,14 +122,14 @@ class ISBNdbImporter {
 	async fetchAllCommand() {
 		console.log(`Fetching all...`)
 		const crawler = new PoliteCrawler()
-		crawler.maxConcurrent = 2
+		crawler.maxConcurrent = 1
 		await crawler.fetchAll(
 			this.filesWithBooks.map(file => new PLDBFileForBooks(file))
 		)
 	}
 
 	get filesWithBooks() {
-		return pldbBase.topLanguages.slice(0, 3)
+		return pldbBase.topLanguages.slice(0, 300)
 	}
 
 	writeAllCommand() {

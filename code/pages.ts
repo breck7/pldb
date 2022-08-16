@@ -64,21 +64,41 @@ commaTable
     return ""
   }
 
-  get books() {
+  get isbndb() {
+    const { file } = this
+    const { title } = file
+    const isbndb = file.getNode(`isbndb`)
+    if (!isbndb) return ""
+
+    const tree = TreeNode.fromDelimited(isbndb.childrenToString(), "|")
+    tree.forEach(child => {
+      child.set("titleLink", `https://isbndb.com/book/${child.get("isbn13")}`)
+    })
+    return `foldBreak
+subsection Books about ${title} from ISBNdb.com.
+pipeTable
+ ${cleanAndRightShift(
+   tree.toDelimited("|", ["title", "titleLink", "authors", "year", "publisher"])
+ )}
+`
+  }
+
+  get goodreads() {
     const { file } = this
     const { title } = file
     const goodreads = file.getNode(`goodreads`) // todo: the goodreadsIds we have are wrong.
-    if (goodreads) {
-      const tree = TreeNode.fromDelimited(goodreads.childrenToString(), "|")
-      tree.forEach(child => {
-        child.set(
-          "titleLink",
-          `https://www.goodreads.com/search?q=${child.get("title") +
-            " " +
-            child.get("author")}`
-        )
-      })
-      return `foldBreak
+    if (!goodreads) return ""
+
+    const tree = TreeNode.fromDelimited(goodreads.childrenToString(), "|")
+    tree.forEach(child => {
+      child.set(
+        "titleLink",
+        `https://www.goodreads.com/search?q=${child.get("title") +
+          " " +
+          child.get("author")}`
+      )
+    })
+    return `foldBreak
 subsection Books about ${title} on goodreads
 pipeTable
  ${cleanAndRightShift(
@@ -93,8 +113,6 @@ pipeTable
    ])
  )}
 `
-    }
-    return ""
   }
 
   get publications() {
@@ -225,7 +243,9 @@ ${this.featuresTable}
 
 ${this.trendingRepos}
 
-${this.books}
+${this.goodreads}
+
+${this.isbndb}
 
 ${this.publications}
 

@@ -1,0 +1,7 @@
+isbndbNode
+ boolean fromCrawler true
+ cruxFromId
+ extends abstractDelimitedBlobNode
+ description Books about this language from ISBNdb.
+ string sourceDomain isbndb.com
+ single

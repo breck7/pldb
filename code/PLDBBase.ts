@@ -101,8 +101,11 @@ class PLDBFile extends TreeBaseFile {
 
   get bookCount() {
     const gr = this.getNode(`goodreads`)?.length
-    if (gr) return gr - 1
-    return 0
+    const isbndb = this.getNode(`isbndb`)?.length
+    let count = 0
+    if (gr) count += gr - 1
+    if (isbndb) count += isbndb - 1
+    return count
   }
 
   get paperCount() {
