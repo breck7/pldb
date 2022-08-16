@@ -15,6 +15,7 @@ const pldbBase = PLDBBaseFolder.getBase().loadFolder()
 
 const superagent = require("superagent")
 const path = require("path")
+const dayjs = require("dayjs")
 
 const creds = JSON.parse(
 	Disk.read(path.join(__dirname, "ignore", "creds.json"))
@@ -34,6 +35,10 @@ const downloadJson = async (url, destination) => {
 }
 
 Disk.mkdir(cacheDir)
+
+const falsePositives = new Set(
+	Disk.read(path.join(__dirname, "falsePositives.txt")).split("\n")
+)
 
 class PLDBFileForBooks {
 	constructor(file: PLDBFile) {
@@ -77,20 +82,27 @@ class PLDBFileForBooks {
 	}
 
 	get hits() {
+		const { file } = this
 		const langTitle = this.file.title.toLowerCase()
 		return this.parsed.books.filter(book => {
-			const { title } = book
+			const { title, date_published, isbn13 } = book
 			const titleContainsExactMatch = title
 				.split(" ")
 				.some(word => word.toLowerCase() === langTitle)
 			if (!titleContainsExactMatch) return false
 
+			if (falsePositives.has(isbn13)) return false
+			// todo: some books are technical but we are matching against the wrong language. So
+			// we need to have a falsePositivesForLanguage map as well.
+
+			if (title.toLowerCase().includes("programming")) return true
+
 			if (book.subjects?.includes("Computer Science")) return true
 
-			const isTechnical = new TreeNode(book)
-				.toString()
-				.toLowerCase()
-				.includes("programming")
+			const content = new TreeNode(book).toString().toLowerCase()
+
+			const isTechnical = content.includes("programming")
+
 			return isTechnical
 		})
 	}
@@ -129,7 +141,7 @@ class ISBNdbImporter {
 	}
 
 	get filesWithBooks() {
-		return pldbBase.topLanguages.slice(0, 300)
+		return pldbBase.topLanguages
 	}
 
 	writeAllCommand() {

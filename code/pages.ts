@@ -70,6 +70,8 @@ commaTable
     const isbndb = file.getNode(`isbndb`)
     if (!isbndb) return ""
 
+    if (isbndb.getContent() === "0") return ""
+
     const tree = TreeNode.fromDelimited(isbndb.childrenToString(), "|")
     tree.forEach(child => {
       child.set("titleLink", `https://isbndb.com/book/${child.get("isbn13")}`)
@@ -749,7 +751,7 @@ code
       users
         ? `${users} <span title="Crude user estimate from a linear model.">Users</span>`
         : "",
-      bookCount
+      file.isLanguage
         ? `${bookCount} <span title="Books about or leveraging ${file.title}">Books</span>`
         : "",
       paperCount
