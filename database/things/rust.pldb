@@ -275,3 +275,42 @@ isbndb 65
  43607|Packt Publishing|The Complete Rust Programming Reference Guide|Rahul Sharma; Vesa Kaihlavirta; Claus Matzinger|9781838826383
  21-01-2022|Packt Publishing|Speed Up Your Python with Rust|Maxwell Flitton|9781801812320
  25-01-2019|Packt Publishing|Hands-On Data Structures and Algorithms with Rust|Claus Matzinger|9781788991490
+
+semanticScholar 36
+ year|title|doi|citations|influentialCitations|authors|paperId
+ 2014|The rust language|10.1145/2663171.2663188|238|25|Nicholas D. Matsakis and Felix S. Klock|50eba68089cf51323d95631c2f59ff916848863f
+ 2017|RustBelt: securing the foundations of the rust programming language|10.1145/3158154|192|23|Ralf Jung and Jacques-Henri Jourdan and R. Krebbers and Derek Dreyer|6a8ceba15f95d03617e79aaba35515776c4bc4d9
+ 2020|Is Rust Used Safely by Software Developers?|10.1145/3377811.3380413|23|5|A. Evans and Bradford Campbell and M. Soffa|8f564873814a12526a844d69c216ba2b599bdf9a
+ 2020|Understanding memory and thread safety practices and issues in real-world Rust programs|10.1145/3385412.3386036|23|5|Boqin Qin and Yilun Chen and Zeming Yu and Linhai Song and Yiying Zhang|d536933053c16f6ab16f92468542084630e72f55
+ 2017|POSTER: Rust SGX SDK: Towards Memory Safety in Intel SGX Enclave|10.1145/3133956.3138824|21|4|Yu Ding and Ran Duan and Long Li and Yueqiang Cheng and Yulong Zhang and Tanghui Chen and Tao Wei and Huibo Wang|187e2d1c888c5c0529e5a50c8c90efe9889cbd69
+ 2017|Sandcrust: Automatic Sandboxing of Unsafe Components in Rust|10.1145/3144555.3144562|20|3|Benjamin Lamowski and C. Weinhold and A. Lackorzynski and Hermann Härtig|2b7bd2b93f5aa66a65d9cfc7f0222a16d3aca007
+ 2018|Verifying Rust Programs with SMACK|10.1007/978-3-030-01090-4_32|20|1|Marek S. Baranowski and Shaobo He and Z. Rakamaric|350795523676e071a64d8d60acd30252db2c7eec
+ 2021|Safe systems programming in Rust|10.1145/3418295|17|0|Ralf Jung and Jacques-Henri Jourdan and R. Krebbers and Derek Dreyer|01bd07b28877e088aefc9a54ba842b8aa3b804f5
+ 2018|KRust: A Formal Executable Semantics of Rust|10.1109/TASE.2018.00014|12|1|Feng Wang and Fu Song and Min Zhang and Xiaoran Zhu and Jun Zhang|dc734f8a1e20f7de5dbbe8c668c0683381bbcb1a
+ 2019|Exploring Rust for Unikernel Development|10.1145/3365137.3365395|12|0|Stefan Lankes and J. Breitbart and Simon Pickartz|efa6eb7b43f19f8b072f9323ac2e838618537932
+ 2020|Understanding and evolving the Rust programming language|10.22028/D291-31946|11|1|Ralf Jung|37d7114d5a9bc202742bd0c248fe8af1a689d1b6
+ 2018|Fidelius Charm: Isolating Unsafe Rust Code|10.1145/3176258.3176330|8|2|Hussain M. J. Almohri and David Evans|d72458f9501963670b50ee9fe78e622425955630
+ 2020|Design of a DSL for Converting Rust Programming Language into RTL|10.1007/978-3-030-39746-3_36|8|0|K. Takano and Tetsuya Oda and M. Kohata|aaf8eeb909892036436dff4bef41a0924e730d6c
+ 2019|Identifying Barriers to Adoption for Rust through Online Discourse|10.4230/OASIcs.PLATEAU.2018.5|7|0|Anna Zeng and Will Crichton|6f6a28a3115e147e443a545fd8f75cf7a3babf1b
+ 2020|Memory-Safety Challenge Considered Solved? An In-Depth Study with All Rust CVEs|10.1145/3466642|6|1|Hui Xu and Zhuangbin Chen and Mingshen Sun and Yangfan Zhou and Michael R. Lyu|164b3187c0d904f04e96ac5f0d5b9fdeab0da547
+ 2020|Securing UnSafe Rust Programs with XRust|10.1145/3377811.3380325|6|2|Peiming Liu and Gang Zhao and Jeff Huang|f3b75979611c111233c9cd5e6674e71be83b6f13
+ 2021|GhostCell: separating permissions from data in Rust|10.1145/3473597|5|1|Joshua Yanovski and Hoang-Hai Dang and Ralf Jung and Derek Dreyer|c2e188799c7bdca68f6334b329682e12b1d58da9
+ 2021|A Lightweight Formalism for Reference Lifetimes and Borrowing in Rust|10.1145/3443420|5|0|David J. Pearce|fede987ed6b38a516655cc05c3ed55a19068b1a9
+ 2016|What can the programming language Rust do for astrophysics?|10.1017/S1743921316013168|5|0|S. Blanco-Cuaresma and É. Bolmont|4567c1f22d80334eade2ceb396d43ae8e895b131
+ 2017|On utilizing rust programming language for Internet of Things|10.1109/CICN.2017.8319363|4|0|Tunç Uzlu and E. Saykol|c9cb48a5680fe6911ca620897980c51a8aa5f9a6
+ 2019|Structured Stream Parallelism for Rust|10.1145/3355378.3355384|3|0|Ricardo Pieper and Dalvan Griebler and L. G. Fernandes|2739f9c914bb01de599f4549b0e847b10c83c3df
+ 2021|Keeping Safe Rust Safe with Galeed|10.1145/3485832.3485903|3|0|Elijah Rivera and Samuel Mergendahl and Howie Shrobe and H. Okhravi and N. Burow|ff3de8816bc7685668a56da5c30eecc76c817558
+ 2022|RustHornBelt: a semantic foundation for functional verification of Rust programs with unsafe code|10.1145/3519939.3523704|2|0|Yusuke Matsushita and Xavier Denis and Jacques-Henri Jourdan and Derek Dreyer|36674fd3bc28fd3f01711de8785171c720a97a25
+ 2020|Towards Profile-Guided Optimization for Safe and Efficient Parallel Stream Processing in Rust|10.1109/SBAC-PAD49847.2020.00047|2|0|Stefan Sydow and Mohannad Nabelsee and S. Glesner and Paula Herber|336759267740e25049691e8f74374721dc4718a4
+ 2021|Rudra: Finding Memory Safety Bugs in Rust at the Ecosystem Scale|10.1145/3477132.3483570|2|1|Yechan Bae and Youngsuk Kim and Ammar Askar and Jungwon Lim and Taesoo Kim|57b463af9a5699fb4011435cee3429f51ce86113
+ 2018|Detecting Unsafe Raw Pointer Dereferencing Behavior in Rust|10.1587/TRANSINF.2018EDL8040|1|0|Zhijian Huang and Y. Wang and J. Liu|0dd40638f259c5b99cab356706943ee7697c811d
+ 2019|Basics of Rust|10.1007/978-1-4842-5121-8_1|1|0|J. Bhattacharjee|cc5c9f522aa65cb5ddb5f2dae650a3e7a0739b03
+ 2019|Devise Rust Compiler Optimizations on RISC-V Architectures with SIMD Instructions|10.1145/3339186.3339193|1|0|Heng Lin and Piyo Chen and Yuan-Shin Hwang and Jenq-Kuen Lee|fcee0c1a34783b7f7253dfccae2f29af38dd3259
+ 2019|Verification of Safety Functions Implemented in Rust - a Symbolic Execution based approach|10.1109/INDIN41052.2019.8972014|1|0|Marcus Lindner and Nils Fitinghoff and Johan Eriksson and P. Lindgren|f17890851dcaa805c0d47cc084113626c298382b
+ 2022|Verifying Dynamic Trait Objects in Rust|10.1109/ICSE-SEIP55303.2022.9794041|1|0|Alexa VanHattum and Daniel Schwartz-Narbonne and Nathan Chong and Adrian Sampson|1ff44db7ee219174273efba0e4a42bf24c1807cf
+ 2021|SafeDrop: Detecting Memory Deallocation Bugs of Rust Programs via Static Data-Flow Analysis|10.1145/3542948|1|0|Mohan Cui and Chengjun Chen and Hui Xu and Yangfan Zhou|9d0046724361849d494d42338bbb77874dd0bdf4
+ 2020|VRLifeTime -- An IDE Tool to Avoid Concurrency and Memory Bugs in Rust|10.1145/3372297.3420024|1|0|Ziyi Zhang and Boqin Qin and Yilun Chen and Linhai Song and Yiying Zhang|38a0f156a77cdac95dbac2affdeb3b9e91cc531c
+ 2020|Approach of a Coding Conventions for Warning and Suggestion in Transpiler for Rust Convert to RTL|10.1109/GCCE50665.2020.9292032|1|0|K. Takano and Tetsuya Oda and M. Kohata|9046c775dcb9ad9e21eaece1f90537f9741acf51
+ 2021|Translating C to safer Rust|10.1145/3485498|1|0|Mehmet Emre and Ryan Schroeder and Kyle Dewey and B. Hardekopf|d0fb133db727fc51913e623041a6e86eb99e8c6c
+ 2021|Performance vs Programming Effort between Rust and C on Multicore Architectures: Case Study in N-Body|10.1109/CLEI53233.2021.9640225|1|0|Manuel Costanzo and Enzo Rucci and M. Naiouf and A. D. Giusti|74dfb86326be51d0cc2d0aee69d3266d8994ea31
+ 2019|On Evaluating Rust as a Programming Language for the Future of Massive Agent-Based Simulations|10.1007/978-981-15-1078-6_2|1|0|Alessia Antelmi and G. Cordasco and Matteo D'Auria and Daniele De Vinco and A. Negro and Carmine Spagnuolo|f57083b736fa347d6e48d09bdc09a308df017eeb

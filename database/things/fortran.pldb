@@ -528,3 +528,43 @@ isbndb 313
  1972|Anaheim Pub Co|Introduction To Computer Programming-basic Fortran 4: A Practical Approach|William J. Keys and Thomas J. Cashman|9780882361512
  |Wiley|Digital Computing: Fortran Iv And Its Applications In Behavioral Science|Lehman, Richard S.|9780471524007
  1988|Blackwell Scientific Publications|An Introduction to Programming in Fortran 77 (Computer Science Texts)|J. L. Schonfelder and J. S. Morgan|9780632011841
+
+semanticScholar 37
+ year|title|doi|citations|influentialCitations|authors|paperId
+ 1993|The High Performance Fortran Handbook|10.1063/1.4823319|791|62|C. Koelbel and D. Loveman and R. Schreiber and G. Steele and M. Zosel|e6731a83852d4a41e7266b31eb32276538514e93
+ 1992|Programming in Vienna Fortran|10.1155/1992/258136|312|24|B. Chapman and P. Mehrotra and H. Zima|b83462be97a6abe11d6fc619c6f7d516f2af3976
+ 1995|Fortran M: A Language for Modular Parallel Programming|10.1006/jpdc.1995.1044|224|4|Ian T Foster and K. M. Chandy|a6156d35c6e4249c6ab847d5642a0a7631ab2c59
+ 2009|F2PY: a tool for connecting Fortran and Python programs|10.1504/IJCSE.2009.029165|204|9|Pearu Peterson|4990d2b5e21f09aab3853dcc1cecb8e352fd07f9
+ 2003|Object-oriented programming via Fortran 90/95|10.1017/CBO9780511530111|62|5|E. Akin|2f0678d064dfb69117ddd8d5e74e521559758a5c
+ 2014|OpenCoarrays: Open-source Transport Layers Supporting Coarray Fortran Compilers|10.1145/2676870.2676876|55|3|A. Fanfarillo and T. Burnus and V. Cardellini and S. Filippone and D. Nagle and D. Rouson|2b34906590cc30a403ab786b189ad3acfa8b0223
+ 2011|Modern Fortran Explained|10.1093/oso/9780198811893.001.0001|55|4|M. Metcalf and J. Reid and Malcolm Cohen|dcd889084d2cc3d344dc0f8d780d126b1f02bb85
+ 1899|An experiment comparing Fortran programming times with the software physics hypothesis|10.1145/1499799.1499927|33|0|R. D. Gordon and M. Halstead|279ffcb7eeba3b0c49e97b40474da69a6550183d
+ 2011|Implementation and Performance Evaluation of the HPC Challenge Benchmarks in Coarray Fortran 2.0|10.1109/IPDPS.2011.104|28|0|G. Jin and J. Mellor-Crummey and L. Adhianto and William N. Scherer and Chaoran Yang|a0ba323d58a1879fb877cc92293ed0f631317af4
+ 1964|FORTRAN vs. Basic FORTRAN: a programming language for informational processing on automatic data processing systems|10.1145/364888.876694|23|0|S. Gorn|decdb3f767c8f01e22323c2eec9f95f42a81bf83
+ 2015|Introduction to programming with Fortran - with coverage of Fortran 90, 95, 2003, and 77|10.1007/b137984|21|0|I. Chivers and J. Sleightholme|8d271c4cc16fb945842724ca643db4b61958b3b7
+ 2012|Modern Fortran in Practice|10.5860/choice.50-3308|20|3|A. Markus|46a2996de87826ddcf521db03f8e838a7bba4976
+ 1996|On parallel object oriented programming in Fortran 90|10.1145/240732.240742|15|0|C. Norton and V. Decyk and B. Szymanski|e92d269aec928aff306edcb1cd7bc81cf3106c41
+ 1975|On extending Fortran control structures to facilitate structured programming|10.1145/987316.987320|14|0|L. Meissner|a766af23f9f729cdbbed698f6cbbb0a1827cba54
+ 2006|Introduction to Programming with Fortran|10.1007/978-3-319-75502-1|12|1|I. Chivers and J. Sleightholme|7d299d93a5e89892168c7251972e6e722c229cea
+ 1995|A Comparison of C++, FORTRAN 90 and Oberon-2 for Scientific Programming|10.1007/978-3-642-79958-7_103|11|0|Bernd Mösli|52f40ca6a6598c1dbedf83fa45d3b0f972914634
+ 1977|Teaching problem solving and structured programming in FORTRAN|10.1145/800104.803360|11|0|F. Friedman and Elliot B. Koffman|77b6e137a0f12af5cb3ec0c83e1bb9810f8db606
+ 2012|Introduction to Programming with Fortran|10.1007/978-0-85729-233-9|11|2|I. Chivers and J. Sleightholme|6ea9437fdde5f60c5ce03bcc7de3fc8698618299
+ 1978|A comparison of PASCAL and FORTRAN as introductory programming languages|10.1145/953422.953425|10|0|G. Nutt|631aa27149f2daf7d85253f96769a09a380944d1
+ 2002|Efficient parallel programming on scalable shared memory systems with High Performance Fortran|10.1002/cpe.649|10|0|S. Benkner and T. Brandes|53b26b8e6bbecfcf6f4cfd79167023035b5e19cf
+ 2013|Numerical Computing with Modern Fortran|10.1137/1.9781611973129|9|0|R. Hanson and T. Hopkins|daf758e2f494238f7369ffd67b5476a31e870798
+ 1995|Vienna Fortran 90 - An Advanced Data Parallel Language|10.1007/3-540-60222-4_104|8|0|S. Benkner|b0184143f4380bcba956cf37739cfb2b79764b63
+ 1975|Teaching structured programming in FORTRAN with IFTRAN|10.1145/800284.811158|7|0|William R. Bezanson|85b81c77157355c69dc66d87704b114fb79b038d
+ 1994|The Cray Research MPP Fortran Programming Model|10.1007/978-3-0348-8534-8_1|7|0|T. MacDonald and Z. Sekera|9e4bb3e613e502b9345e979e8bf202fd4db106ef
+ 2014|SPOT: A DSL for Extending Fortran Programs with Metaprogramming|10.1155/2014/917327|6|2|Songqing Yue and J. Gray|870ff05f103598190090abfde3276218ce78bc46
+ 2009|Guide to Fortran 2003 Programming|10.1007/978-1-84882-543-7|6|0|W. Brainerd|92437cc86aec82abe9003d7de5bfe52003c74553
+ 2011|ForOpenCL: transformations exploiting array syntax in Fortran for accelerator programming|10.1504/IJCSE.2013.052113|6|0|M. Sottile and C. Rasmussen and W. Weseloh and R. Robey and D. Quinlan and J. Overbey|1d12ce860badedaf289bd67534c1af5a44427851
+ 1984|Status of work toward revision of programming language Fortran|10.1145/1040943.1040946|6|0|J. Wagener|eb8f514ad41d7a0be76ce5c7c6b9dafa460b6f30
+ 2006|Generic programming in Fortran|10.1145/1111542.1111564|5|0|Martin Erwig and Zhe Fu and Ben Pflaum|b252d7ae875b3864f4101805ba64ee287b1417f3
+ 2015|Guide to Fortran 2008 Programming|10.1007/978-1-4471-6759-4|5|0|W. Brainerd|760a34beb9d7321cef88185a384ab7eb34da782a
+ 2015|Preliminary Implementation of Coarray Fortran Translator Based on Omni XcalableMP|10.1109/PGAS.2015.15|4|0|H. Iwashita and M. Nakao and M. Sato|3ab6cdb478dcf00ab41aebb01d149f7a2fd90672
+ 2020|History of coarrays and SPMD parallelism in Fortran|10.1145/3386322|4|0|J. Reid and Bill Long and Jon L. Steidel|27a343885943e58d59cf539ec1d01705dabc177e
+ 2001|Up-to-Date International Standards of the Fortran Programming Language|10.1023/A:1012710502032|3|0|A. Gorelik|486e3f45d22ce981b0c25470a4b765c3a539b1c3
+ 1982|The Fortran programming language: recent developments and a view of the future|10.1145/1040091.1040092|3|0|L. Meissner|677ab875d35a9b20493b4b9741c8123c7a7f8daf
+ 1989|Aftran: Array Fortran programming language|10.1109/PARBSE.1990.77218|2|0|G. A. Riccardi and U. Chandra and J. C. Vagi|6c2f56c3ca6fb4470da97f6a0d55f811b14768b7
+ 2007|Fortran programming language and Scientific Programming: 50 Years of mutual growth|10.1155/2007/979872|2|0|B. Szymanski|7a6ac390da0ff74c0318e1d937e138bd817c4b1a
+ 1982|The fortran programming language, recent developments and a view of the future|10.1109/MCS.1982.1103762|2|0|L. Meissner|1fe3c69dba68ef694a5ad378a160ad8f2772a1a3

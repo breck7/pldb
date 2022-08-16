@@ -341,3 +341,32 @@ isbndb 126
  20121105|Taylor & Francis|Introduction to the Art of Programming Using Scala|Mark C. Lewis|9781466558724
  20170106|Taylor & Francis|Object-Orientation, Abstraction, and Data Structures Using Scala|Mark C. Lewis; Lisa L. Lacher|9781498732192
  20121105|Taylor & Francis|Introduction to the Art of Programming Using Scala|Mark C. Lewis|9781498759687
+
+semanticScholar 26
+ year|title|doi|citations|influentialCitations|authors|paperId
+ 2012|Chisel: Constructing hardware in a Scala embedded language|10.1145/2228360.2228584|597|85|J. Bachrach and H. Vo and B. Richards and Yunsup Lee and Andrew Waterman and R. Avizienis and J. Wawrzynek and K. Asanović|021464b67bb87cf6132b2eb5b0c4a61f31ec2775
+ 2014|Unifying functional and object-oriented programming with Scala|10.1145/2591013|50|6|Martin Odersky and Tiark Rompf|ac6a6e4601cd33d43cc71e8c1f6998d19228da64
+ 2011|Scala to the Power of Z3: Integrating SMT and Programming|10.1007/978-3-642-22438-6_30|40|0|A. Köksal and Viktor Kuncak and Philippe Suter|4a0eb42ded1878f39539aceca207f55dea2d8fbe
+ 2011|Closing the Gap Between Specification and Programming: VDM++ and Scala|10.29007/2w2f|12|3|K. Havelund|bf49af99588dcf766f2964ed2f0c7a6a526b2b92
+ 2010|Named and default arguments for polymorphic object-oriented languages: a discussion on the design implemented in the Scala language|10.1145/1774088.1774529|7|0|Lukas Rytz and Martin Odersky|d1d423354d12e5bca47e8aad6d0374d772b3acfb
+ 2016|Lightweight Session Programming in Scala (Artifact)|10.4230/DARTS.2.1.11|6|0|A. Scalas and N. Yoshida|62eb6ce864f9f5a03de6814e0d07cfbbfefea67d
+ 2016|A scalable infrastructure for teaching concepts of programming languages in Scala with WebLab: an experience report|10.1145/2998392.2998402|4|0|T. V. D. Lippe and Thomas Smith and Daniël A. A. Pelsmaeker and E. Visser|00ae557f0b8b87cb0fbb51b9f09858f2ce7df2e7
+ 2017|Introduction to the Art of Programming Using Scala|10.5860/choice.50-5635|4|0|Mark C. Lewis|adf89c24062d6bfde6d410687db812d3b62364fc
+ 2018|The Scala Language|10.1007/978-1-4842-3108-1_1|4|1|T. Weston|d37fe7e79b56102ee8ad9e5ae6e88142ffa11546
+ 2018|Scalagna 0.1: towards multi-tier programming with Scala and Scala.js|10.1145/3191697.3191731|4|0|Bob Reynders and Michael Greefs and D. Devriese and F. Piessens|54eb28a939999162d48773b236679fb40969b5bd
+ 2019|Scala implicits are everywhere: a large-scale study of the use of Scala implicits in the wild|10.1145/3360589|3|1|Filip Krikava and H. Miller and J. Vitek|f251ead7ee9604c89ac9e961bf82c61387003a8d
+ 2013|What are the Odds?: probabilistic programming in Scala|10.1145/2489837.2489848|3|0|Sandro Stucki and Nada Amin and Manohar Jonnalagedda and Tiark Rompf|dbf9f9b4d9345da707ddf3ffb4c699f09e45479f
+ 2021|Integrated Modeling and Development of Component-Based Embedded Software in Scala|10.1007/978-3-030-89159-6_16|3|0|K. Havelund and R. Bocchino|9578f08a6492ad0b8de98f42040e2ca633d36b9e
+ 2015|Associated types and constraint propagation for generic programming in Scala|10.1134/S0361768815040064|3|0|Artem Pelenitsyn|bc8f8736fa0e350445fae4f75fb4fd6dd9cf30d6
+ 2015|Distributed programming in Scala with APGAS|10.1145/2774975.2774977|2|1|Philippe Suter and O. Tardieu and Josh Milthorpe|1b566c35d3f4ed8850cf08eac619b0626c469142
+ 2016|Scowl: a Scala DSL for programming with the OWL API|10.21105/JOSS.00023|2|0|J. Balhoff|0e163b6bea8cd698c47661936fee17f6b061f637
+ 2012|Towards an agent-oriented programming language based on Scala|10.1063/1.4756170|2|0|Dejan Mitrovic and M. Ivanović and Z. Budimac|8265cc5bd3c727b6beb0f1c3cd477db425a3c12c
+ 2020|Implementing a Language for Distributed Systems: Choices and Experiences with Type Level and Macro Programming in Scala|10.22152/programming-journal.org/2020/4/17|2|0|P. Weisenburger and G. Salvaneschi|fa594cdb544a7d4f08d9d8246a810ae0e45ebc63
+ 2010|Extension of scala language by distributed and parallel computing tools with Linda coordination system|10.1007/S10559-010-9238-6|1|0|M. Glybovets and S. S. Gorohovskiy and M. S. Stukalo|97733d941f73d4f7b738b1285c4a3f0156bfd225
+ 2019|A tool written in Scala for preparation and analysis in MD simulation and 3D-RISM calculation of biomolecules|10.2142/biophysico.16.0_485|1|0|I. Onishi and Hiroto Tsuji and M. Irisa|12d2edebec462ed4571dc0aadea5991d54281802
+ 2019|Hybrid Taint Flow Analysis in Scala|10.1109/SSCI44817.2019.9002738|1|0|Mohammadreza Ashouri and C. Kreitz|38f3bd7f797332a97c4a5e2fa05e2aa9704a02e1
+ 2020|Kaizen: a scalable concolic fuzzing tool for Scala|10.1145/3426426.3428487|1|0|Mohammadreza Ashouri|6d04b9af1801e0ac90e04f238a23c3c5357b55d6
+ 2020|A Study of Big Data Analytics using Apache Spark with Python and Scala|10.1109/ICISS49785.2020.9315863|1|0|Y. Gupta and Surbhi Kumari|b932ecaf6825fb5a8b838dab9a0e66e7cea3eabf
+ 2015|Programming in Scala|10.1007/978-1-4842-0964-6_2|1|0|M. Guller|c70cd8d8c27808f6118bdd1bfd1d52fa13b8a6e8
+ 2019|Programming Behavioral Test Models for SMT Solving in Scala|10.1109/ICSTW.2019.00032|1|0|B. Aichernig and Benedikt Maderbacher and Stefan Tiran|d5130df1d0dffd54c5eba84255ef93804324de92
+ 2017|Implementation of a MIX Emulator: A Case Study of the Scala Programming Language Facilities|10.1515/acss-2017-0017|1|0|R. Batdalov and O. Ņikiforova|9d0840c9135fb1092d4ef9f0c59aaee46e371964

@@ -265,3 +265,40 @@ isbndb 66
  20150217|O'Reilly Media, Inc.|Developing Web Apps with Haskell and Yesod|Michael Snoyman|9781491915554
  1992|Cambridge University Press|Introduction To Functional Programming Systems Using Haskell (cambridge Computer Science Texts)|Antony J. T. Davie|9780521258302
  ||JAVA BY DISSECTION The Essentials of Java Programming - Javaplace Edition with Haskell - The Craft of Functional Programming|Pohl and Ira|9780582849426
+
+semanticScholar 34
+ year|title|doi|citations|influentialCitations|authors|paperId
+ 2002|Template meta-programming for Haskell|10.1145/581690.581691|527|62|T. Sheard and S. Jones|9cf2790a364e5c14fb37bbd8026902712ac6b2aa
+ 2011|Accelerating Haskell array codes with multicore GPUs|10.1145/1926354.1926358|254|33|M. Chakravarty and G. Keller and Sean Lee and T. L. McDonell and Vinod Grover|4726ec683a7db8e97ebd845b98e294ead537888a
+ 1999|The Haskell School of Expression: Learning Functional Programming through Multimedia|10.1017/CBO9780511818073|199|16|P. Hudak|41cb1636d156537ead0a6b8045b26a00864bfae4
+ 2008|Comparing libraries for generic programming in haskell|10.1145/1411286.1411301|84|4|A. R. Yakushev and J. Jeuring and Patrik Jansson and Alex Gerdes and O. Kiselyov and B. C. Oliveira|51eb0e70ed65f59141a17d29b3790aab08b12e58
+ 2017|Ask-Elle: an Adaptable Programming Tutor for Haskell Giving Automated Feedback|10.1007/s40593-015-0080-x|70|9|Alex Gerdes and B. Heeren and J. Jeuring and L. T. V. Binsbergen|90a7ef598330801986e41e5ae185276329b42825
+ 2013|Hasochism: the pleasure and pain of dependently typed haskell programming|10.1145/2503778.2503786|54|3|S. Lindley and Conor McBride|9ff209527963fb71d3a2452dd3512158639993fb
+ 2000|FranTk - a declarative GUI language for Haskell|10.1145/351240.351250|50|3|M. Sage|0a0976e003e205c4dc2551f7b557b0dcb08082fc
+ 2009|Attribute grammars fly first-class: how to do aspect oriented programming in Haskell|10.1145/1596550.1596586|50|3|Marcos Viera and S. Swierstra and W. Swierstra|51fcb83978c204f062d6b86b367495752c607f09
+ 2003|Polytypic Programming in Haskell|10.1007/978-3-540-27861-0_11|36|7|U. Norell and Patrik Jansson|ba46a21d4c8471664326927ed813ad78f1d48355
+ 2015|A typechecker plugin for units of measure: domain-specific constraint solving in GHC Haskell|10.1145/2804302.2804305|29|1|Adam Gundry|d963e1217287c00d732f5204d20a3873f5db09e9
+ 2000|Distributed Programming in Haskell with Ports|10.1007/3-540-45361-X_7|25|3|F. Huch and U. Norbisrath|a1a9747208e4e2b403e2d07334ef04f2e648ce89
+ 2014|Promoting functions to type families in Haskell|10.1145/2775050.2633361|25|1|R. Eisenberg and Jan Stolarek|d3f760683b98a6c662cd5e515c54c082ab63b920
+ 2011|Eden - Parallel Functional Programming with Haskell|10.1007/978-3-642-32096-5_4|24|4|R. Loogen|32feaf7dc73338e84c7e0ce92bb50f8a160a245b
+ 2013|An EDSL approach to high performance Haskell programming|10.1145/2503778.2503789|22|3|J. Ankner and Josef Svenningsson|a9feb2a0dd2dd85def2084ac9785f41795932f09
+ 2017|Session Types with Linearity in Haskell|10.13052/RP-9788793519817|21|1|Dominic A. Orchard and N. Yoshida|7c3e5bdff48b2830a35a0087e3610d09b93dd96a
+ 2015|Haskell clone detection using pattern comparing algorithm|10.1109/EMES.2015.7158423|15|0|Sergej Chodarev and E. Pietriková and J. Kollár|8cbcff03c1119ed4f8355f40dd9e767081492cc6
+ 2010|Generic programming with C++ concepts and Haskell type classes—a comparison|10.1017/S095679681000016X|13|0|Jean-Philippe Bernardy and Patrik Jansson and Marcin Zalewski and S. Schupp|ba21705e0ce61b899205260d78fad259acab811d
+ 2015|Understanding beginners' mistakes with Haskell|10.1017/S0956796815000179|12|1|V. Tirronen and Samuel Uusi-Mäkelä and Ville Isomöttönen|62f3eaec30521360445110584271e36880563f69
+ 2012|Haskell vs. f# vs. scala: a high-level language features and parallelism support comparison|10.1145/2364474.2364483|8|1|Prabhat Totoo and Pantazis Deligiannis and Hans-Wolfgang Loidl|170ac8c4d10a9bfae6da19fb21933cfb561ace73
+ 2016|Composable scheduler activations for Haskell|10.1017/S0956796816000071|7|0|K. Sivaramakrishnan and T. Harris and S. Marlow and S. Jones|302eefdee1e482e1d31aa6f7a8c767f5e0b29747
+ 2012|Deterministic Parallel Programming with Haskell|10.1109/MCSE.2012.68|7|0|Duncan Coutts and Andres Löh|b88bde4843d794fe6380a78a9d0e642e0e0ee2e9
+ 2015|Polymonad programming in Haskell|10.1145/2897336.2897340|7|2|J. Bracker and H. Nilsson|34b9460068fdb7e19b1d12cc5d678313d6198e33
+ 1994|Programming Reactive Systems in Haskell|10.1007/978-1-4471-3573-9_4|6|1|Sigbjørn Finne and S. Jones|80d85b3350baa9acbcdaa740bca45d5aba1db637
+ 2017|Hardware software co-design in Haskell|10.1145/3122955.3122970|6|0|M. Aronsson and M. Sheeran|938b3f682f74c26274e52344b51e3cc1725b72bf
+ 2012|Parallel programming in Haskell almost for free: an embedding of intel's array building blocks|10.1145/2364474.2364477|6|0|Bo Joel Svensson and M. Sheeran|2fb44d66edcae5096dc546d0e5a25a0b5b1ca97e
+ 2020|Algorithm Design with Haskell|10.1017/9781108869041|6|1|R. Bird and J. Gibbons|6b01a61e5af971986f78c51a6605a0adf8a7cbb3
+ 1991|TIP in Haskell - another Exercise in Functional Programming|10.1007/978-1-4471-3196-0_22|5|0|C. Runciman|4cabdf996a1376e623040ab79e539f8debf01de9
+ 2006|GenI: natural language generation in Haskell|10.1145/1159842.1159858|5|1|Eric Kow|e903da230650b20c7116e0b4b07e7bd533c60af7
+ 2005|Functional programming languages for verification tools: a comparison of Standard ML and Haskell|10.1007/s10009-004-0184-3|4|0|M. Leucker and T. Noll and P. Stevens and Michael Weber|bb7c485843e97b376ef02d71798cee12daa04178
+ 2016|High-performance client-side web applications through Haskell EDSLs|10.1145/2976002.2976015|3|0|A. Ekblad|465b59bf4909f9ef5040da20b1d084e02005bb07
+ 2008|A Library for Processing Ad hoc Data in Haskell - Embedding a Data Description Language|10.1007/978-3-642-24452-0_10|3|0|Yan Wang and Verónica Gaspes|b533fb5e42edd7234991be0fdde794bc683836ab
+ 2018|A Purely Functional Computer Algebra System Embedded in Haskell|10.1007/978-3-319-99639-4|3|0|Hiromi Ishii|313e883a7f66075b6573704768f7790e568c1ded
+ 2014|Learn Physics by Programming in Haskell|10.4204/EPTCS.170.5|3|0|S. Walck|f7a8926d40dada932192f465709deb970f245d3f
+ 2020|Towards secure IoT programming in Haskell|10.1145/3406088.3409027|2|0|Nachiappan Valliappan and Robert Krook and Alejandro Russo and K. Claessen|19aa46db9aca26b92d479332dab89584e61ef93a

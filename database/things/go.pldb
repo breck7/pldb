@@ -286,3 +286,32 @@ isbndb 5
  2013|Apress|TouchDevelop: Programming on the Go (Expert's Voice in Web Development)|Horspool, Nigel and Tillmann, Nikolai and Bishop, Judith|9781430261360
  2016|Manning Publications|Go Web Programming|Chang, Sau Sheong|9781617292569
  2015|Packt Publishing|Go Programming Blueprints|Ryer, Mat|9781783988020
+
+semanticScholar 26
+ year|title|doi|citations|influentialCitations|authors|paperId
+ 1974|Structured Programming with go to Statements|10.1145/356635.356640|685|25|D. Knuth|3fdae4603265209ddf420cfaa9cbd0286c567c6c
+ 2008|When good instructions go bad: generalizing return-oriented programming to RISC|10.1145/1455770.1455776|403|28|E. Buchanan and Ryan Roemer and H. Shacham and S. Savage|bc6be5f3f1cf582c3613e3c7de6a793947335854
+ 2014|The Go Programming Language|10.1109/MS.2014.127|278|7|Jeffrey H. Meyerson|e2c3ace95d91ea0d25abce56d7c3e71201c87229
+ 2016|Static deadlock detection for concurrent go by global session graph synthesis|10.1145/2892208.2892232|54|2|Nicholas Ng and N. Yoshida|f3902b140f40cf972cb4f3a5489c9ca45b9ed867
+ 2018|A Static Verification Framework for Message Passing in Go Using Behavioural Types|10.1145/3180155.3180157|50|2|J. Lange and Nicholas Ng and Bernardo Toninho and N. Yoshida|e1a8c301be733b9a413dc21c45c1f013c5f81f94
+ 2019|Understanding Real-World Concurrency Bugs in Go|10.1145/3297858.3304069|45|4|Tengfei Tu and Xiaoyu Liu and Linhai Song and Yiying Zhang|246a2af5c477396f52a7af39e3c6a26049ae3310
+ 2010|GoHotDraw: evaluating the Go programming language with design patterns|10.1145/1937117.1937127|23|1|Frank Schmager and N. Cameron and J. Noble|ae564736323308356b53aefc2afc67a0764555f2
+ 2012|Go at Google|10.1145/2384716.2384720|22|0|R. Pike|8d058d199185c3cbb9446a4ce486a765bd242aa2
+ 2019|An Empirical Study of Messaging Passing Concurrency in Go Projects|10.1109/SANER.2019.8668036|22|1|Nicolas Dilley and J. Lange|a7029d89d1032c66412872fd17caa45ae635d6f6
+ 2020|Here We Go Again: Why Is It Difficult for Developers to Learn Another Programming Language?|10.1145/3377811.3380352|19|1|Nischal Shrestha and Colton Botta and Titus Barik and Chris Parnin|112353453760498067a78e5e53220b7a11df9db4
+ 2014|Concurrency in Go and Java: Performance analysis|10.1109/ICIST.2014.6920368|16|4|Naohiro Togashi and V. Klyuev|4b73e80c19f9cbb3881379f73e4bb134ea9d3cf8
+ 2014|Architecture-Based Code Generation: From π-ADL Architecture Descriptions to Implementations in the Go Language|10.1007/978-3-319-09970-5_13|14|1|Everton Cavalcante and F. Oquendo and T. Batista|b52c76f904dfd05395d17e2489614bc59ca99f29
+ 2014|bíogo: a simple high-performance bioinformatics toolkit for the Go language|10.1101/005033|12|1|R. Kortschak and Josh Bleecher Snyder and Manolis Maragkakis and D. Adelson|92c2f9e43a3799392a963d437adf3901ea6dc3d1
+ 2011|Deferred gratification: engineering for high performance garbage collection from the get go|10.1145/1988915.1988930|11|0|Ivan Jibaja and S. Blackburn and M. Haghighat and K. McKinley|6d712e3ccc708a2e7bcda5c2056ccfab43af8270
+ 2017|FML-based Dynamic Assessment Agent for Human-Machine Cooperative System on Game of Go|10.1142/S0218488517500295|11|0|Chang-Shing Lee and Mei-Hui Wang and Sheng-Chi Yang and Pi-Hsia Hung and Su-Wei Lin and Nan Shuo and N. Kubota and Chun-Hsun Chou and P. Chou and Chia-Hsiu Kao|2e99badd048590ded429bb08889538270241bbfd
+ 2020|Static Race Detection and Mutex Safety and Liveness for Go Programs (Artifact)|10.4230/DARTS.6.2.12|10|1|Julia Gabet and N. Yoshida|a5c89ffa3121aec2eace5f64cb75d915ee12a21c
+ 2020|goDASH — GO Accelerated HAS Framework for Rapid Prototyping|10.1109/QoMEX48832.2020.9123103|7|0|Darijo Raca and Maëlle Manifacier and Jason J. Quinlan|90e3d263241111cff7064037a0ade6b00323bb80
+ 2021|GoBench: A Benchmark Suite of Real-World Go Concurrency Bugs|10.1109/CGO51591.2021.9370317|7|3|Ting Yuan and Guangwei Li and Jie Lu and Chen Liu and Lian Li and Jingling Xue|c1bcb1da18bda80a92790a79bdff362980f731fd
+ 2018|Two-Phase Dynamic Analysis of Message-Passing Go Programs Based on Vector Clocks|10.1145/3236950.3236959|6|0|M. Sulzmann and K. Stadtmüller|e1116fdac1e58415c62e21c83f2d6bc5aab08035
+ 2017|Trace-Based Run-Time Analysis of Message-Passing Go Programs|10.1007/978-3-319-70389-3_6|5|1|M. Sulzmann and K. Stadtmüller|8185a6664d62ae017910c8960c302ed7ffac8e40
+ 2020|Bounded verification of message-passing concurrency in Go using Promela and Spin|10.4204/EPTCS.314.4|4|0|Nicolas Dilley and J. Lange|d98f1cf4376c7de5e65391c3d1fa372b03540b49
+ 2015|PARAGON: an approach for parallelization of power system contingency analysis using Go programming language|10.1002/ETEP.1999|4|1|S. Khaitan and J. McCalley|aec59c18d84b2544e119a6ad663b4c5865cca060
+ 2020|Static Race Detection and Mutex Safety and Liveness for Go Programs (extended version)|10.4230/LIPIcs.ECOOP.2020.4|3|1|Julia Gabet and N. Yoshida|6eef6ecf97976770bc407850aeb6f47ee8ccb19c
+ 2017|Overview of the Go Language|10.1007/978-1-4842-2692-6_2|3|1|J. Newmarch|e8230750cd61b5972228841186cacfdb856fa4d1
+ 2011|Pattern matching for object-like structures in the Go programming language|10.1145/2069172.2069180|2|0|Chanwit Kaewkasi and Pitchaya Kaewkasi|1787cbbc350b8f812633b14dba353cc4659bccfa
+ null|Evaluating the GO Programming Language with Design Patterns|10.26686/wgtn.16984801|1|0|Frank Schmager|ab5a1cf83194c5180bf9d0d992fe2514dfd54fe3

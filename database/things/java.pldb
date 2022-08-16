@@ -865,3 +865,43 @@ isbndb 400
  20061107|Springer Nature|The Definitive Guide to Building Java Robots|Scott Preston|9781430200888
  2013|Cengage Learning|Bundle: Java Programming, 7th + Coursemate Printed Access Card|Joyce Farrell|9781285999722
  2002|Cengage Learning|Java With Object-oriented Programming (non-infotrac Version)|Paul S. Wang|9780534391447
+
+semanticScholar 37
+ year|title|doi|citations|influentialCitations|authors|paperId
+ 1998|Making the future safe for the past: adding genericity to the Java programming language|10.1145/286936.286957|594|44|Gilad Bracha and Martin Odersky and David Stoutamire and P. Wadler|7862ab20bf14ff78eb74c5b17fd52a4d498eaec2
+ 1998|Compatible genericity with run-time types for the Java programming language|10.1145/286936.286958|150|13|Robert Cartwright and G. Steele|fb892076f2b162d2c061bfefdad88158cf522b99
+ 2008|Session-Based Distributed Programming in Java|10.1007/978-3-540-70592-5_22|149|19|Raymond Hu and N. Yoshida and Kohei Honda|1c657b0b5a77b302493a69820540d418ba18ba47
+ 2004|Adding wildcards to the Java programming language|10.1145/967900.968162|137|13|Mads Torgersen and Erik Ernst and Christian Plesner Hansen and P. Ahé and Gilad Bracha and N. Gafter|cec77c48196c68ae617911e7b316612396ad27ec
+ 2000|Java programming for high-performance numerical computing|10.1147/SJ.391.0021|117|8|J. Moreira and S. Midkiff and Manish Gupta and Pedro V. Artigas and M. Snir and Richard D. Lawrence|e6ba2aae171aaadf0d4648cbd254f279c5b92566
+ 2014|Mining billions of AST nodes to study actual and potential usage of Java language features|10.1145/2568225.2568295|97|7|Robert Dyer and Hridesh Rajan and H. Nguyen and T. Nguyen|d5fd3931b0f0492bd543aac33c953aa541f2d03c
+ 2011|ContextJ: Context-oriented Programming with Java|10.11185/IMT.6.399|95|9|M. Appeltauer and R. Hirschfeld and M. Haupt and Hidehiko Masuhara|6472be8854d79560923461f32c36026ebc97f883
+ 2000|NaturalJava: a natural language interface for programming in Java|10.1145/325737.325845|93|5|D. Price and E. Riloff and J. Zachary and Brandon Harvey|a11513ce3256ebea0eec68b38acbd8275723050d
+ 2013|Maxine: An approachable virtual machine for, and in, java|10.1145/2400682.2400689|89|12|Christian Wimmer and M. Haupt and M. V. D. Vanter and Mick J. Jordan and L. Daynès and Doug Simon|3a54e9d683c172acf9d2a503754f1c68b7daf611
+ 1998|Java as first programming language: a critical evaluation|10.1145/292422.292440|87|6|Said Hadjerrouit|2f80cbad16b5945f2f5029012999aeff12efd51d
+ 2007|Keyword programming in Java|10.1007/s10515-008-0041-9|78|3|Greg Little and Rob Miller|6f6c15e91faf8afa4ad9b48c224350f1bf135054
+ 2007|Interface-based programming assignments and automatic grading of java programs|10.1145/1268784.1268805|64|7|Michael T. Helmick|48142625261b1cca94ab650a6ccf10706e830f49
+ 2017|Investigating Static Analysis Errors in Student Java Programs|10.1145/3105726.3106182|62|2|S. Edwards and Nischel Kandru and Mukund B. M. Rajagopal|f0552a483f71919a32365012de15051c206c00ad
+ 2001|Concurrent Programming: The Java Programming Language|10.12694/scpe.v4i2.230|62|5|G. Gagne|fcfd49bdf3cecf170a4bf5974bdfa2abcd250397
+ 2000|A Java programming tool for students with visual disabilities|10.1145/354324.354356|58|3|Ann C. Smith and J. Francioni and Sam D. Matzek|8892647a286cd2141d5d18c1a9b00fc2e1c58ff4
+ 2017|Understanding the use of lambda expressions in Java|10.1145/3133909|56|8|D. Mazinanian and Ameya Ketkar and Nikolaos Tsantalis and Danny Dig|f3047998ef0ab6ffffe617397cf8efe99bd34b80
+ 2014|LeakWatch: Estimating Information Leakage from Java Programs|10.1007/978-3-319-11212-1_13|50|4|Tom Chothia and Yusuke Kawamoto and Chris Novakovic|c72cea83ed4b4649251f54a83adc18124f42de55
+ 2014|DeltaJ 1.5: delta-oriented programming for Java 1.5|10.1145/2647508.2647512|50|5|J. Koscielny and Sönke Holthusen and I. Schaefer and Sandro Schulze and Lorenzo Bettini and F. Damiani|777b8c22184ce1b10a56730d594adae962f10cbc
+ 2008|Caching and incrementalisation in the java query language|10.1145/1449764.1449766|40|10|Darren Willis and David J. Pearce and J. Noble|1ef340939607eaf1361c9da010da9c3c12dcde42
+ 2015|Genetic Algorithms in Java Basics|10.1007/978-1-4842-0328-6|40|3|Lee Jacobson and B. Kanber|94ebd1b97887bd36ca54d93581ac83b2911157b4
+ 2012|Using mobile phone programming to teach Java and advanced programming to computer scientists|10.1145/2157136.2157292|39|5|D. Riley|d6b50fc7e13a1057b077ab3bd48f87271d9af8b8
+ 2002|Language-specific make technology for the Java programming language|10.1145/582419.582453|39|3|M. Dmitriev|c6db9561b9769a5fc1618e1fe29ee3b7851555a1
+ 2010|Programming Finite Elements in Java|10.1007/978-1-84882-972-5|34|2|G. Nikishkov|a8f6e0d60e1364333694ccc60cb04d5cf5f44374
+ 2011|Safe Parallel Programming with Session Java|10.1007/978-3-642-21464-6_8|30|0|Nicholas Ng and N. Yoshida and Olivier Pernet and Raymond Hu and Yiannos Kryftis|870662bb6c66a2069a7392e2ad2bb67f9a65dd94
+ 2012|A machine-checked, type-safe model of Java concurrency: language, virtual machine, memory model, and verified compiler|10.5445/KSP/1000028867|30|2|Andreas Lochbihler|c36ff13c201aa3caaa8ed1179b206023fdd194ed
+ 1997|The Case for Java as a Programming Language|10.1109/4236.585172|30|2|A. Hoff|2aed90d637971b96a891f79187f3e6e92736b925
+ 1998|Concurrent programming: the Java programming language|10.5860/choice.36-1006|30|1|Stephen J. Hartley|f3919013a32e7236f1235dc39b085e8fa3357be4
+ 2002|Evaluation of Assertion Support for the Java Programming Language|10.5381/jot.2002.1.3.a1|28|0|Reinhold Plösch|0e6ee9ce96b9f5aae32f1da6fbf21a44d7ee198b
+ 2010|Web-Based Multiplayer Online Role Playing Game (MORPG) for Assessing Students' Java Programming Knowledge and Skills|10.1109/DIGITEL.2010.20|22|0|Maiga Chang and Kinshuk|c6446458e72ce254305ef3cd4eeb0fc62c71cb4e
+ 2012|Modeling the Knowledge Domain of the Java Programming Language as an Ontology|10.1007/978-3-642-33642-3_16|21|1|Aggeliki Kouneli and G. Solomou and C. Pierrakeas and A. Kameas|3915703932e988d909d0a9251009fa6c5933290e
+ 1997|Improving the interactivity and functionality of Web-based radiology teaching files with the Java programming language.|10.1148/RADIOGRAPHICS.17.6.9397464|20|2|J. Eng|09501e85462489a754a1cab8eafd9ccb759f8234
+ 2003|Assessment of the Java programming language for use in high integrity systems|10.1145/844091.844099|19|1|J. Kwon and A. Wellings and S. King|90b925874632d2a11c9d3ada8c963e899e363c4e
+ 1998|Applications of JAVA programming language to database management|10.1145/273244.273254|13|0|Bradley F. Burton and V. Marek|e502374c91f0b196836e965cf0ac88002d642bb3
+ 1999|SQLJ Part 1: SQL routines using the Java programming language|10.1145/344816.344864|13|1|A. Eisenberg and Jim Melton|75aac5614558f08595d4b737c075e89e47040337
+ 2018|Comparison of garbage collectors in Java programming language|10.23919/MIPRO.2018.8400277|12|0|H. Grgic and B. Mihaljević and A. Radovan|090173690ad7bcf3c2d83f840db65872d0d66b5f
+ 2018|Java Programming Language|10.1007/978-3-030-02619-6_35|1|0|Gerard O'Regan|6bffc1a6dff69fc47734945adfc4e04775d3b139
+ 1996|Java Programming Language|10.32388/4ejcag|1|0|D. Friedel and Anthony P. Potts|6e0f1aacb150c00ef2c9ad638c7fa495332086fa

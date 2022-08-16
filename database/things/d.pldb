@@ -162,3 +162,10 @@ isbndb 2
  year|publisher|title|authors|isbn13
  2010|Addison-Wesley Professional|The D Programming Language|Alexandrescu, Andrei|9780321635365
  2014|Packt Publishing|D Cookbook|Ruppe, Adam D.|9781783287215
+
+semanticScholar 4
+ year|title|doi|citations|influentialCitations|authors|paperId
+ 2016|Implementation of a Compressible-Flow Simulation Code in the D Programming Language|10.4028/www.scientific.net/AMM.846.54|32|1|P. Jacobs and R. Gollan|4a2307395444e248678c23e1fec141fc94adf8e7
+ 2005|Incorporation Of A 3 D Interactive Graphics Programming Language Into An Introductory Engineering Course|10.18260/1-2--14454|11|0|J. Snook and V. Lohani and J. Lo and Kishore Sirvole and Jennifer Mullins and J. Kaeli and H. Griffin|373be4fc8edbef8d94f798f1421f3220a7d1b906
+ 2020|Origins of the D programming language|10.1145/3386323|6|1|W. Bright and Andrei Alexandrescu and M. Parker|fe48fe677461e2e7c9ff850ab12123ef684715d3
+ 2013|Parallelizing power system contingency analysis using D programming language|10.1109/PESMG.2013.6672115|5|0|S. Khaitan and J. McCalley|785686884b47bed2f4bb0574477b46ef204752fc
