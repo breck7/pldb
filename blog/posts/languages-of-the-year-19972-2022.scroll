@@ -75,7 +75,7 @@ comment
  const { Disk } = require("jtree/products/Disk.node.js")
  
  const data = TreeNode.fromCsv(
-   Disk.read(__dirname + "/../pldb.pub/languages.csv")
+   Disk.read(__dirname + "/../pldb.local/languages.csv")
  )
  
  const map = {}

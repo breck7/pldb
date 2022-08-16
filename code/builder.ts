@@ -20,7 +20,7 @@ const pldbBase = PLDBBaseFolder.getBase().loadFolder()
 const codeDir = __dirname
 const rootDir = path.join(codeDir, "..")
 const blogDir = path.join(rootDir, "blog")
-const websiteFolder = path.join(rootDir, "pldb.pub")
+const websiteFolder = path.join(rootDir, "pldb.local")
 const docsDir = path.join(websiteFolder, "docs")
 const databaseFolderWhenPublishedToWebsite = path.join(
   websiteFolder,

@@ -35,7 +35,7 @@ git clone https://github.com/breck7/pldb
 cd pldb
 npm install .
 npm run build
-open pldb.pub/index.html
+open pldb.local/index.html
 ```
 
 ## To explore this repo

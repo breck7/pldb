@@ -7,10 +7,10 @@
     "clean": "cd code; tsc --build --clean",
     "cloc": "cloc --vcs git .",
     "checkLinks": "linkinator -r https://pldb.pub > ignore/brokenLinks.txt",
-    "deploy": "echo 'Rsyncing the contents of pldb.pub/ to the /var/www/html folder on the PLDB server'; rsync -vr pldb.pub/* pldb@pldb.pub:/var/www/html/",
-    "exampleCount": "xsv select title,appeared,type,rank,exampleCount pldb.pub/languages.csv > ignore/exampleCounts.csv",
+    "deploy": "echo 'Rsyncing the contents of pldb.local/ to the /var/www/html folder on the PLDB server'; rsync -vr pldb.local/* pldb@pldb.pub:/var/www/html/",
+    "exampleCount": "xsv select title,appeared,type,rank,exampleCount pldb.local/languages.csv > ignore/exampleCounts.csv",
     "jtreeBeta": "cp -R ~/jtree node_modules",
-    "nulls": "xsv frequency pldb.pub/pldb.csv --limit 1",
+    "nulls": "xsv frequency pldb.local/pldb.csv --limit 1",
     "test": "ts-node code/test.ts",
     "update": "ts-node code/importers/PLDBUpdater.ts update"
   },

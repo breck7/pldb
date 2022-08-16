@@ -158,7 +158,7 @@ commaTable
  output,<a href='languages/quorum.html'>quorum</a>,1
 
 comment
- xsv select title,appeared,type,rank,printToken pldb.pub/languages.csv > ignore/printTokens.csv
+ xsv select title,appeared,type,rank,printToken pldb.local/languages.csv > ignore/printTokens.csv
 
 comment
   printDebug() {
