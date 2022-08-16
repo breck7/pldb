@@ -160,14 +160,6 @@ meetup clojure
  memberCount 163418
  groupCount 378
 
-goodreads
- title|year|author|goodreadsId|rating|ratings|reviews
- Programming Clojure|2009|Stuart Halloway|6025753|3.82|559|45
- Clojure Programming|2011|Chas Emerick|15799459|4.18|423|30
- Clojure Reactive Programming|2015|Leonardo Borges|44920753|3.81|21|1
- Clojure Cookbook: Recipes for Functional Programming|2014|Luke VanderHart|26177078|3.75|55|5
- Clojure High Performance Programming|2013|Shantanu Kumar|26977256|2.84|19|4
-
 tiobe Clojure
  currentRank 42
 
@@ -178,6 +170,15 @@ jupyterKernel https://github.com/roryk/clojupyter
 jupyterKernel https://github.com/achesnais/clj-jupyter
 fileType text
 isOpenSource true
+
+goodreads
+ title|year|author|goodreadsId|rating|ratings|reviews
+ Programming Clojure|2009|Stuart Halloway|6025753|3.82|559|45
+ Clojure Programming|2011|Chas Emerick|15799459|4.18|423|30
+ Clojure Reactive Programming|2015|Leonardo Borges|44920753|3.81|21|1
+ Clojure Cookbook: Recipes for Functional Programming|2014|Luke VanderHart|26177078|3.75|55|5
+ Clojure High Performance Programming|2013|Shantanu Kumar|26977256|2.84|19|4
+
 isbndb 55
  year|publisher|title|authors|isbn13
  2015|Packt Publishing|Clojure Reactive Programming|Borges, Leonardo|9781783986668

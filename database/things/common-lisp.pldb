@@ -111,6 +111,14 @@ rijuRepl https://riju.codes/commonlisp
 indeedJobs "common lisp"
  2017 24
 
+tiobe Common Lisp
+hopl 946
+
+ubuntuPackage clisp
+jupyterKernel https://github.com/fredokun/cl-jupyter
+fileType text
+centralPackageRepositoryCount 0
+
 goodreads
  title|year|author|goodreadsId|rating|ratings|reviews
  Paradigms of Artificial Intelligence Programming: Case Studies in Common LISP|1991|Peter Norvig|80981|4.33|439|9
@@ -120,11 +128,4 @@ goodreads
  Common Lisp Programming|2012|Steve Howard|27090533|3.25|4|0
  Object-Oriented Programming in Common LISP: A Programmer's Guide to Clos|1989|Sonya E. Keene|1163506|4.02|48|4
 
-tiobe Common Lisp
-hopl 946
-
-ubuntuPackage clisp
-jupyterKernel https://github.com/fredokun/cl-jupyter
-fileType text
-centralPackageRepositoryCount 0
 isbndb 0

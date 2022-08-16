@@ -115,13 +115,6 @@ tryItOnline coffeescript
 linkedInSkill coffeescript
  2018 21574
 
-goodreads
- title|year|author|goodreadsId|rating|ratings|reviews
- Programming in CoffeeScript (Developer's Library)|2012|Mark Bates|19193715|3.50|22|2
- Coffeescript Programming with Jquery, Rails, and Node.Js|2012|Michael Erasmus|23544945|3.50|10|2
- Programming in Coffeescript|2012|Mark Bates|46311721|0.0|0|0
- Programming in Coffeescript|2012|Mark Bates|46311722|0.0|0|0
-
 tiobe CoffeeScript
 
 ubuntuPackage coffeescript
@@ -129,6 +122,14 @@ jupyterKernel https://github.com/n-riesco/jp-coffeescript
 fileType text
 isOpenSource true
 centralPackageRepositoryCount 0
+
+goodreads
+ title|year|author|goodreadsId|rating|ratings|reviews
+ Programming in CoffeeScript (Developer's Library)|2012|Mark Bates|19193715|3.50|22|2
+ Coffeescript Programming with Jquery, Rails, and Node.Js|2012|Michael Erasmus|23544945|3.50|10|2
+ Programming in Coffeescript|2012|Mark Bates|46311721|0.0|0|0
+ Programming in Coffeescript|2012|Mark Bates|46311722|0.0|0|0
+
 isbndb 13
  year|publisher|title|authors|isbn13
  2013|Packt Publishing|CoffeeScript Application Development|Young, Ian|9781782162667

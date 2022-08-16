@@ -170,12 +170,6 @@ subreddit Verilog
   2017 552
   2022 2421
 
-goodreads
- title|year|author|goodreadsId|rating|ratings|reviews
- HDL Programming Fundamentals: VHDL and Verilog [With CD-ROM]|2005|Nazeih M. Botros|382542|4.15|55|5
- Programming Fpgas: Getting Started with Verilog||Simon Monk|50000071|3.89|9|2
- Computer Arithmetic And Verilog Hdl Fundamentals|2009|Joseph Cavanagh|7046981|4.70|10|1
-
 tiobe Verilog
  currentRank 50
 hopl 1062
@@ -183,6 +177,13 @@ hopl 1062
 ubuntuPackage iverilog
 fileType text
 centralPackageRepositoryCount 0
+
+goodreads
+ title|year|author|goodreadsId|rating|ratings|reviews
+ HDL Programming Fundamentals: VHDL and Verilog [With CD-ROM]|2005|Nazeih M. Botros|382542|4.15|55|5
+ Programming Fpgas: Getting Started with Verilog||Simon Monk|50000071|3.89|9|2
+ Computer Arithmetic And Verilog Hdl Fundamentals|2009|Joseph Cavanagh|7046981|4.70|10|1
+
 isbndb 31
  year|publisher|title|authors|isbn13
  2016|McGraw Hill TAB|Programming FPGAs: Getting Started with Verilog|Monk, Simon|9781259643767

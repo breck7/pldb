@@ -446,10 +446,6 @@ meetup java
  memberCount 1162766
  groupCount 2090
 
-goodreads
- title|year|author|goodreadsId|rating|ratings|reviews
- Effective Java Programming Language Guide|2001|Joshua Bloch|101316|4.48|5484|299
-
 tiobe Java
  currentRank 1
 hopl 2131
@@ -462,6 +458,11 @@ ubuntuPackage openjdk-8-jdk
 jupyterKernel https://github.com/SpencerPark/IJava
 fileType text
 wordRank 1489
+
+goodreads
+ title|year|author|goodreadsId|rating|ratings|reviews
+ Effective Java Programming Language Guide|2001|Joshua Bloch|101316|4.48|5484|299
+
 isbndb 400
  year|publisher|title|authors|isbn13
  2017|Pearson|Java Software Solutions|Lewis, John and Loftus, William|9780134462028

@@ -127,6 +127,13 @@ rijuRepl https://riju.codes/rexx
   
 tryItOnline rexx
 
+tiobe REXX
+hopl 868
+
+ubuntuPackage regina-rexx
+fileType text
+centralPackageRepositoryCount 0
+
 goodreads
  title|year|author|goodreadsId|rating|ratings|reviews
  Programming In Rexx|1992|Charles Daney|1795698|4.40|5|0
@@ -138,12 +145,6 @@ goodreads
  The REXX Language on TSO|2012|Gabriel F. Gargiulo|27149752|4.00|3|0
  Object-Oriented Programming with REXX|1997|Thomas Ender|7323905|0.0|0|0
 
-tiobe REXX
-hopl 868
-
-ubuntuPackage regina-rexx
-fileType text
-centralPackageRepositoryCount 0
 isbndb 11
  year|publisher|title|authors|isbn13
  1990T|McGraw-Hill|Programming in REXX|Daney, Charles|9780070153059

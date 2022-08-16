@@ -79,12 +79,6 @@ rijuRepl https://riju.codes/smalltalk
   'Hello, world!' displayNl !
   
 
-goodreads
- title|year|author|goodreadsId|rating|ratings|reviews
- SmallTalk 80: The Language|1989|Adele Goldberg|924473|4.20|40|3
- SmallTalk 80 Language: The Language and Its Implementation|1983|Adele Goldberg|1831608|4.68|37|0
- SmallTalk-80: The Interactive Programming Environment|1983|Adele Goldberg|1831611|4.33|6|0
-
 tiobe Smalltalk
 hopl 828
 
@@ -92,6 +86,13 @@ packageRepository http://smalltalkhub.com/
 
 ubuntuPackage gnu-smalltalk
 fileType text
+
+goodreads
+ title|year|author|goodreadsId|rating|ratings|reviews
+ SmallTalk 80: The Language|1989|Adele Goldberg|924473|4.20|40|3
+ SmallTalk 80 Language: The Language and Its Implementation|1983|Adele Goldberg|1831608|4.68|37|0
+ SmallTalk-80: The Interactive Programming Environment|1983|Adele Goldberg|1831611|4.33|6|0
+
 isbndb 29
  year|publisher|title|authors|isbn13
  1997|Addison-Wesley|On to Smalltalk|Winston, Patrick Henry|9780201498271

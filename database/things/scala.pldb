@@ -192,13 +192,6 @@ meetup scala
  memberCount 369728
  groupCount 624
 
-goodreads
- title|year|author|goodreadsId|rating|ratings|reviews
- Programming in Scala|2008|Martin Odersky|5852455|4.19|1325|87
- Functional Programming in Scala|2013|Rúnar Bjarnason|19105535|4.44|486|45
- Programming Scala|2009|Venkat Subramaniam|6163823|3.29|100|10
- Programming Scala: Scalability = Functional Programming + Objects|2009|Dean Wampler|6724274|3.68|204|21
-
 tiobe Scala
  currentRank 39
 hopl 6814
@@ -212,6 +205,14 @@ jupyterKernel https://github.com/alexarchambault/jupyter-scala
 fileType text
 isOpenSource true
 centralPackageRepositoryCount 0
+
+goodreads
+ title|year|author|goodreadsId|rating|ratings|reviews
+ Programming in Scala|2008|Martin Odersky|5852455|4.19|1325|87
+ Functional Programming in Scala|2013|Rúnar Bjarnason|19105535|4.44|486|45
+ Programming Scala|2009|Venkat Subramaniam|6163823|3.29|100|10
+ Programming Scala: Scalability = Functional Programming + Objects|2009|Dean Wampler|6724274|3.68|204|21
+
 isbndb 126
  year|publisher|title|authors|isbn13
  2016|Artima Press|Programming in Scala: Updated for Scala 2.12|Odersky, Martin and Spoon, Lex and Venners, Bill|9780981531687

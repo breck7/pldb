@@ -86,17 +86,18 @@ rijuRepl https://riju.codes/rebol
   
 tryItOnline rebol
 
-goodreads
- title|year|author|goodreadsId|rating|ratings|reviews
- Rebol for Dummies [With Rebol for 37 Systems]|2000|Ralph Roberts|2387078|3.00|5|0
- Rebol Programming||Olivier Auverlot|5823181|0.0|0|0
-
 tiobe REBOL
 hopl 2438
 
 fileType text
 isOpenSource true
 centralPackageRepositoryCount 0
+
+goodreads
+ title|year|author|goodreadsId|rating|ratings|reviews
+ Rebol for Dummies [With Rebol for 37 Systems]|2000|Ralph Roberts|2387078|3.00|5|0
+ Rebol Programming||Olivier Auverlot|5823181|0.0|0|0
+
 isbndb 1
  year|publisher|title|authors|isbn13
  |Wiley Technology Publishing|Rebol Programming|Olivier Auverlot|9780470846759

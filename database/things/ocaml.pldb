@@ -128,14 +128,6 @@ meetup ocaml-programming
  memberCount 23394
  groupCount 87
 
-goodreads
- title|year|author|goodreadsId|rating|ratings|reviews
- Real World OCaml: Functional programming for the masses|2013|Yaron Minsky|21890163|4.28|88|7
- Unix System Programming in OCaml|1994|Xavier Leroy|43400023|4.00|1|0
- Apprendre à programmer avec OCaml|2014|Sylvain Conchon|43307400|4.00|1|0
- Using, Understanding, and Unraveling The OCaml Language: From Practice to Theory and vice versa||Didier Rémy|23588230|5.00|1|0
- Apprendre à programmer avec OCaml: Algorithmes et structures de données (Noire)||Jean-Christophe Filliatre|59798916|0.0|0|0
-
 tiobe OCaml
 hopl 2294
 
@@ -147,6 +139,15 @@ jupyterKernel https://github.com/andrewray/iocaml
 jupyterKernel https://github.com/akabe/ocaml-jupyter
 fileType text
 isOpenSource true
+
+goodreads
+ title|year|author|goodreadsId|rating|ratings|reviews
+ Real World OCaml: Functional programming for the masses|2013|Yaron Minsky|21890163|4.28|88|7
+ Unix System Programming in OCaml|1994|Xavier Leroy|43400023|4.00|1|0
+ Apprendre à programmer avec OCaml|2014|Sylvain Conchon|43307400|4.00|1|0
+ Using, Understanding, and Unraveling The OCaml Language: From Practice to Theory and vice versa||Didier Rémy|23588230|5.00|1|0
+ Apprendre à programmer avec OCaml: Algorithmes et structures de données (Noire)||Jean-Christophe Filliatre|59798916|0.0|0|0
+
 isbndb 6
  year|publisher|title|authors|isbn13
  2021|Wiley-ISTE|Concepts and Semantics of Programming Languages 1: A Semantical Approach with OCaml and Python|Hardin, The¿re¿se and Jaume, Mathieu and Pessaux, François and Viguie Donzeau-Gouge, Ve¿ronique|9781786305305

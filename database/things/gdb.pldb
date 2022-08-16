@@ -85,14 +85,14 @@ rijuRepl https://riju.codes/gdb
   p "Hello, world!"
   
 
+ubuntuPackage gdb
+fileType text
+isOpenSource true
+centralPackageRepositoryCount 0
+
 goodreads
  title|year|author|goodreadsId|rating|ratings|reviews
  C Prog - Using gdb (C Programming)||Subbu Dykes|48953553|0.0|0|0
  Linux Embedded Programming: Using Gcc & Gdb|2001|Robert Wehrli|21076724|0.0|0|0
  Accelerated Linux Core Dump Analysis: Training Course Transcript with GDB Practice Exercises (Pattern-Oriented Software Diagnostics, Forensics, Prognostics, Root Cause Analysis, Debugging Courses)||Dmitry Vostokov|53944849|0.0|0|0
  Accelerated Mac OS X Core Dump Analysis, Second Edition: Training Course Transcript with GDB and LLDB Practice Exercises (Pattern-Oriented Software Diagnostics, ... Root Cause Analysis, Debugging Courses)||Dmitry Vostokov|60311040|0.0|0|0
-
-ubuntuPackage gdb
-fileType text
-isOpenSource true
-centralPackageRepositoryCount 0

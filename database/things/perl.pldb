@@ -164,15 +164,6 @@ meetup perl
  memberCount 28878
  groupCount 83
 
-goodreads
- title|year|author|goodreadsId|rating|ratings|reviews
- Programming Perl|1991|Tom Christiansen|675275|4.04|2104|52
- Advanced Perl Programming (Perl Series)|1997|Sriram Srinivasan|570466|3.93|201|1
- Effective Perl Programming|1997|Joseph Hall|931057|4.22|103|10
- Perl for Dummies|1997|Paul E.  Hoffman|1015718|3.42|48|5
- The Perl CD Bookshelf: Perl in a Nutshell/Programming Perl, 2nd Edition/Perl Cookbook/Advanced Perl Programming/Learning Perl, 2nd Edition/Learning Perl on WIN32 Systems|1999|O'Reilly Media Inc.|570491|4.11|27|0
- Programming the Perl DBI|2000|Tim Bunce|620583|3.47|77|3
-
 tiobe Perl
  currentRank 15
 hopl 2355
@@ -185,6 +176,16 @@ jupyterKernel https://github.com/timo/iperl6kernel
 jupyterKernel https://github.com/bduggan/p6-jupyter-kernel
 fileType text
 wordRank 3152
+
+goodreads
+ title|year|author|goodreadsId|rating|ratings|reviews
+ Programming Perl|1991|Tom Christiansen|675275|4.04|2104|52
+ Advanced Perl Programming (Perl Series)|1997|Sriram Srinivasan|570466|3.93|201|1
+ Effective Perl Programming|1997|Joseph Hall|931057|4.22|103|10
+ Perl for Dummies|1997|Paul E.  Hoffman|1015718|3.42|48|5
+ The Perl CD Bookshelf: Perl in a Nutshell/Programming Perl, 2nd Edition/Perl Cookbook/Advanced Perl Programming/Learning Perl, 2nd Edition/Learning Perl on WIN32 Systems|1999|O'Reilly Media Inc.|570491|4.11|27|0
+ Programming the Perl DBI|2000|Tim Bunce|620583|3.47|77|3
+
 isbndb 270
  year|publisher|title|authors|isbn13
  2007|Prentice Hall|Perl by Example (4th Edition)|Quigley, Ellie|9780132381826

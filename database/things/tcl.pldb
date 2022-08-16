@@ -186,6 +186,14 @@ rijuRepl https://riju.codes/tcl
   
 tryItOnline tcl
 
+tiobe Tcl
+
+ubuntuPackage tcl
+jupyterKernel https://github.com/rpep/tcl_kernel
+fileType text
+isOpenSource true
+centralPackageRepositoryCount 0
+
 goodreads
  title|year|author|goodreadsId|rating|ratings|reviews
  Practical Programming in TCL & TK|1961|Brent B. Welch|1665118|3.87|55|2
@@ -199,13 +207,6 @@ goodreads
  TCL/TK for Dummies?|1997|Tim Webster|2387039|3.50|2|0
  CGI Programming with TCL [With CDROM]|1999|David Maggiano|5169621|0.0|0|0
 
-tiobe Tcl
-
-ubuntuPackage tcl
-jupyterKernel https://github.com/rpep/tcl_kernel
-fileType text
-isOpenSource true
-centralPackageRepositoryCount 0
 isbndb 16
  year|publisher|title|authors|isbn13
  1997|Addison-Wesley Professional|Effective Tcl/TK Programming: Writing Better Programs with TCL and TK|Harrison, Mark and McLennan, Michael|9780201634747

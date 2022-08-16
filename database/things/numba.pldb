@@ -1,5 +1,7 @@
 title Numba
+appeared 2012
 type compiler
+creators Travis E. Oliphant
 description Numba is an open source JIT compiler that translates a subset of Python and NumPy code into fast machine code.
 website http://numba.pydata.org/
 
@@ -26,5 +28,3 @@ githubRepo https://github.com/numba/numba
  updated 2022
  description NumPy aware dynamic Python compiler using LLVM
  issues 1548
-appeared 2012
-creators Travis E. Oliphant

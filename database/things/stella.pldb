@@ -25,4 +25,5 @@ example
      (4 (return "STELLA::NULL-4D-ARRAY"))
      (5 (return "STELLA::NULL-5D-ARRAY"))
      (otherwise (return "STELLA::NULL"))))
+
 isbndb 0

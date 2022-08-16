@@ -97,11 +97,6 @@ subreddit sas
   2017 2538
   2022 7963
 
-goodreads
- title|year|author|goodreadsId|rating|ratings|reviews
- Learning SAS by Example: A Programmer's Guide|2007|Ron Cody|1320285|4.29|127|9
- SAS For Dummies|2007|Stephen McDaniel|970688|3.57|28|4
-
 tiobe SAS
  currentRank 21
 hopl 733
@@ -111,6 +106,12 @@ jupyterKernel https://github.com/sassoftware/sas_kernel
 fileType text
 wordRank 8860
 centralPackageRepositoryCount 0
+
+goodreads
+ title|year|author|goodreadsId|rating|ratings|reviews
+ Learning SAS by Example: A Programmer's Guide|2007|Ron Cody|1320285|4.29|127|9
+ SAS For Dummies|2007|Stephen McDaniel|970688|3.57|28|4
+
 isbndb 94
  year|publisher|title|authors|isbn13
  2005|Pearson|Applied Statistics and the SAS Programming Language|Cody, Ron and Smith, Jeffrey|9780131465329

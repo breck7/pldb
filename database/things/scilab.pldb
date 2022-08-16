@@ -65,6 +65,11 @@ rijuRepl https://riju.codes/scilab
   disp("Hello, world!")
   
 
+jupyterKernel https://github.com/calysto/scilab_kernel
+fileType text
+isOpenSource true
+centralPackageRepositoryCount 0
+
 goodreads
  title|year|author|goodreadsId|rating|ratings|reviews
  Engineering and Scientific Computing with Scilab|1998|Claude Gomez|2443580|3.33|3|0
@@ -75,10 +80,6 @@ goodreads
  Introduction to Scilab for Scientists and Engineers||John Maclane|57266755|0.0|0|0
  SCILAB (A FREE SOFTWARE TO MATLAB)||ACHUTHSANKAR S.NAIR|44300566|0.0|0|0
 
-jupyterKernel https://github.com/calysto/scilab_kernel
-fileType text
-isOpenSource true
-centralPackageRepositoryCount 0
 isbndb 8
  year|publisher|title|authors|isbn13
  20140203|Springer Nature|Praktische Mathematik mit MATLAB, Scilab und Octave|Frank Thuselt; Felix Paul Gennrich|9783642258251

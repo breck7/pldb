@@ -28,12 +28,12 @@ helloWorldCollection Structured Query Reporter
     print 'Hello, World.' (1,1)
  end-program
 
-goodreads
- title|year|author|goodreadsId|rating|ratings|reviews
- SQR Programmer Reference: SQR Language Version 2.x-5.x|2000|Don Mellen|41708101|4.00|1|0
- SQR Programmer Reference-Second Edition|2002|Don Mellen|41391721|0.0|0|0
-
 tiobe SQR
 
 fileType text
 centralPackageRepositoryCount 0
+
+goodreads
+ title|year|author|goodreadsId|rating|ratings|reviews
+ SQR Programmer Reference: SQR Language Version 2.x-5.x|2000|Don Mellen|41708101|4.00|1|0
+ SQR Programmer Reference-Second Edition|2002|Don Mellen|41391721|0.0|0|0

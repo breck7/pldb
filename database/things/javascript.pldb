@@ -386,11 +386,6 @@ meetup javascript
  memberCount 3151948
  groupCount 5270
 
-goodreads
- title|year|author|goodreadsId|rating|ratings|reviews
- Eloquent JavaScript: A Modern Introduction to Programming|2010|Marijn Haverbeke|13787033|4.12|1721|141
- Professional JavaScript for Web Developers|2005|Nicholas C. Zakas|130520|4.14|559|31
-
 tiobe JavaScript
  currentRank 6
 hopl 2133
@@ -402,6 +397,12 @@ jupyterKernel https://github.com/n-riesco/ijavascript
 fileType text
 wordRank 3002
 githubCopilotOptimized
+
+goodreads
+ title|year|author|goodreadsId|rating|ratings|reviews
+ Eloquent JavaScript: A Modern Introduction to Programming|2010|Marijn Haverbeke|13787033|4.12|1721|141
+ Professional JavaScript for Web Developers|2005|Nicholas C. Zakas|130520|4.14|559|31
+
 isbndb 349
  year|publisher|title|authors|isbn13
  2014|Wiley|JavaScript and JQuery: Interactive Front-End Web Development|Duckett, Jon|9781118531648

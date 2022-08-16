@@ -181,13 +181,6 @@ meetup haskell
  memberCount 115163
  groupCount 311
 
-goodreads
- title|year|author|goodreadsId|rating|ratings|reviews
- Programming in Haskell|2006|Graham  Hutton|897319|3.98|306|28
- Haskell Programming From First Principles|2015|Christopher    Allen|45391585|4.55|130|22
- Haskell: The Craft of Functional Programming|1996|Simon Thompson|943123|3.53|159|8
- The Haskell Road to Logic, Maths and Programming|2004|Kees Doets|463917|3.67|110|5
-
 tiobe Haskell
 hopl 1555
 
@@ -196,6 +189,14 @@ packageRepository https://hackage.haskell.org/
 ubuntuPackage ghc
 jupyterKernel https://github.com/gibiansky/IHaskell
 fileType text
+
+goodreads
+ title|year|author|goodreadsId|rating|ratings|reviews
+ Programming in Haskell|2006|Graham  Hutton|897319|3.98|306|28
+ Haskell Programming From First Principles|2015|Christopher    Allen|45391585|4.55|130|22
+ Haskell: The Craft of Functional Programming|1996|Simon Thompson|943123|3.53|159|8
+ The Haskell Road to Logic, Maths and Programming|2004|Kees Doets|463917|3.67|110|5
+
 isbndb 66
  year|publisher|title|authors|isbn13
  2016|Cambridge University Press|Programming in Haskell|Hutton, Graham|9781316626221

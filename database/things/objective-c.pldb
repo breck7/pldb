@@ -180,13 +180,6 @@ meetup objective-c
  memberCount 235352
  groupCount 445
 
-goodreads
- title|year|author|goodreadsId|rating|ratings|reviews
- Programming in Objective C|1999|Stephen G. Kochan|116159|3.96|445|21
- Programming in Objective-C 2.0|2008|Stephen G. Kochan|3467967|3.85|370|16
- Objective-C Programming: The Big Nerd Ranch Guide|2011|Aaron Hillegass|14382053|4.17|634|41
- The Objective-C Programming Language||Apple Inc.|15769650|3.62|24|0
-
 tiobe Objective-C
  currentRank 19
 hopl 1247
@@ -196,6 +189,14 @@ packageRepository https://cocoapods.org/
 ubuntuPackage gobjc
 gdbSupport true
 fileType text
+
+goodreads
+ title|year|author|goodreadsId|rating|ratings|reviews
+ Programming in Objective C|1999|Stephen G. Kochan|116159|3.96|445|21
+ Programming in Objective-C 2.0|2008|Stephen G. Kochan|3467967|3.85|370|16
+ Objective-C Programming: The Big Nerd Ranch Guide|2011|Aaron Hillegass|14382053|4.17|634|41
+ The Objective-C Programming Language||Apple Inc.|15769650|3.62|24|0
+
 isbndb 11
  year|publisher|title|authors|isbn13
  2012|Addison-Wesley Professional|Programming in Objective-C (Developer's Library)|Kochan, Stephen G.|9780321887283

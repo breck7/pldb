@@ -193,6 +193,15 @@ subreddit fortran
   2017 1573
   2022 6269
 
+tiobe Fortran
+ currentRank 32
+hopl 8
+
+gdbSupport true
+jupyterKernel https://github.com/sourceryinstitute/jupyter-CAF-kernel
+fileType text
+centralPackageRepositoryCount 0
+
 goodreads
  title|year|author|goodreadsId|rating|ratings|reviews
  Fortran 90/95 For Scientists And Engineers|1997|Stephen J. Chapman|1130565|4.07|41|3
@@ -204,14 +213,6 @@ goodreads
  Schaum's Outline of Programming with FORTRAN Including Structured FORTRAN|1978|Seymour Lipschutz|1475892|0.0|0|0
  Fortran 77 Programming: With An Introduction To Fortran 90 Standard|1990|T.M.R. Ellis|1315546|4.50|2|0
 
-tiobe Fortran
- currentRank 32
-hopl 8
-
-gdbSupport true
-jupyterKernel https://github.com/sourceryinstitute/jupyter-CAF-kernel
-fileType text
-centralPackageRepositoryCount 0
 isbndb 313
  year|publisher|title|authors|isbn13
  2007|McGraw-Hill Education|Fortran 95/2003 for Scientists & Engineers|Chapman, Stephen|9780073191577

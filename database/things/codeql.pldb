@@ -1,5 +1,7 @@
 title CodeQL
+appeared 2018
 type queryLanguage
+creators Pavel Avgustinov
 description CodeQL let's you query code as if it were data.
 website https://codeql.github.com/
 reference https://www.cyberark.com/resources/threat-research-blog/make-memcpy-safe-again-codeql
@@ -23,5 +25,3 @@ githubRepo https://github.com/github/codeql
  updated 2022
  description CodeQL: the libraries and queries that power security researchers around the world, as well as code scanning in GitHub Advanced Security (code scanning), LGTM.com, and LGTM Enterprise
  issues 736
-appeared 2018
-creators Pavel Avgustinov

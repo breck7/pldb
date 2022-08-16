@@ -272,14 +272,6 @@ meetup php
  memberCount 904206
  groupCount 2012
 
-goodreads
- title|year|author|goodreadsId|rating|ratings|reviews
- Programming PHP|2002|Rasmus Lerdorf|131900|3.92|642|36
- PHP and MySQL Web Development (Developer's Library)|2003|Luke Welling|40127|3.95|854|54
- PHP & MySQL For Dummies|2002|Janet Valade|40136|3.53|186|11
- Professional PHP Programming|1999|Sascha Schumann|1517760|3.95|150|5
- Advanced PHP Programming|2004|George Schlossnagle|503809|3.86|116|11
-
 tiobe PHP
  currentRank 8
 hopl 2361
@@ -292,6 +284,15 @@ jupyterKernel https://github.com/dawehner/ipython-php
 jupyterKernel https://github.com/Litipk/Jupyter-PHP
 fileType text
 wordRank 1596
+
+goodreads
+ title|year|author|goodreadsId|rating|ratings|reviews
+ Programming PHP|2002|Rasmus Lerdorf|131900|3.92|642|36
+ PHP and MySQL Web Development (Developer's Library)|2003|Luke Welling|40127|3.95|854|54
+ PHP & MySQL For Dummies|2002|Janet Valade|40136|3.53|186|11
+ Professional PHP Programming|1999|Sascha Schumann|1517760|3.95|150|5
+ Advanced PHP Programming|2004|George Schlossnagle|503809|3.86|116|11
+
 isbndb 269
  year|publisher|title|authors|isbn13
  2009|O'Reilly Media|Head First PHP & MySQL: A Brain-Friendly Guide|Lynn Beighley and Michael Morrison|9780596006303

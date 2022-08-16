@@ -140,10 +140,6 @@ meetup lua
  memberCount 4670
  groupCount 24
 
-goodreads
- title|year|author|goodreadsId|rating|ratings|reviews
- Programming in Lua|2001|Roberto Ierusalimschy|1321894|3.97|323|21
-
 tiobe Lua
  currentRank 30
 hopl 2196
@@ -156,6 +152,11 @@ jupyterKernel https://github.com/neomantra/lua_ipython_kernel
 jupyterKernel https://github.com/scrapinghub/splash/tree/master/splash/kernel
 fileType text
 isOpenSource true
+
+goodreads
+ title|year|author|goodreadsId|rating|ratings|reviews
+ Programming in Lua|2001|Roberto Ierusalimschy|1321894|3.97|323|21
+
 isbndb 34
  year|publisher|title|authors|isbn13
  2013|Packt Publishing|LÖVE for Lua Game Programming|Akinlaja, Darmie|9781782161608

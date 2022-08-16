@@ -121,17 +121,18 @@ rijuRepl https://riju.codes/postscript
   (Hello, world!) =
   
 
-goodreads
- title|year|author|goodreadsId|rating|ratings|reviews
- PostScript Language Tutorial and Cookbook|1985|Adobe Systems Inc.|1604758|3.47|15|0
- PostScript Language Reference Manual|1990|Adobe Creative Team|3440124|3.67|9|0
-
 tiobe PostScript
 hopl 1010
 
 ubuntuPackage ghostscript
 fileType text
 centralPackageRepositoryCount 0
+
+goodreads
+ title|year|author|goodreadsId|rating|ratings|reviews
+ PostScript Language Tutorial and Cookbook|1985|Adobe Systems Inc.|1604758|3.47|15|0
+ PostScript Language Reference Manual|1990|Adobe Creative Team|3440124|3.67|9|0
+
 isbndb 11
  year|publisher|title|authors|isbn13
  1991|Peachpit Press Publications|Inside PostScript|Frank Braswell|9780938151104
