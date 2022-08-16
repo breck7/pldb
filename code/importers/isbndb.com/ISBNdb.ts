@@ -134,7 +134,8 @@ class ISBNdbImporter {
 	async fetchAllCommand() {
 		console.log(`Fetching all...`)
 		const crawler = new PoliteCrawler()
-		crawler.maxConcurrent = 1
+		crawler.maxConcurrent = 3
+		crawler.msDelayBetweenRequests = 500
 		await crawler.fetchAll(
 			this.filesWithBooks.map(file => new PLDBFileForBooks(file))
 		)

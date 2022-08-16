@@ -153,10 +153,31 @@ class PoliteCrawler {
   async _fetchQueue() {
     if (!this.downloadQueue.length) return
 
+    await this.awaitScheduledTime()
+
     await this.downloadQueue.pop().fetch()
     return this._fetchQueue()
   }
 
+  async awaitScheduledTime() {
+    if (!this.msDelayBetweenRequests) return
+
+    if (!this._nextOpenTime) {
+      this._nextOpenTime = Date.now() + this.msDelayBetweenRequests
+      return
+    }
+
+    const awaitTimeInMs = this._nextOpenTime - Date.now()
+    if (awaitTimeInMs < 1) {
+      this._nextOpenTime = Date.now() + this.msDelayBetweenRequests
+      return
+    }
+    this._nextOpenTime = this._nextOpenTime + this.msDelayBetweenRequests
+    await new Promise(r => setTimeout(r, awaitTimeInMs))
+  }
+
+  _nextOpenTime = 0
+  msDelayBetweenRequests = 0
   maxConcurrent = 10
   downloadQueue: PoliteCrawlerJob[] = []
   randomize = true // By default randomizes the queue so dont get stuck on one
