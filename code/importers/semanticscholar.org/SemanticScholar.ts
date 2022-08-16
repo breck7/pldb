@@ -113,6 +113,7 @@ class PLDBFileForSemanticScholar {
 				title,
 				year,
 				externalIds,
+				paperId,
 				citationCount,
 				influentialCitationCount,
 				authors
@@ -123,7 +124,8 @@ class PLDBFileForSemanticScholar {
 				doi: externalIds.DOI,
 				citations: citationCount,
 				influentialCitations: influentialCitationCount,
-				authors: authors.map(author => author.name).join(" and ")
+				authors: authors.map(author => author.name).join(" and "),
+				paperId
 			}
 		})
 		const count = hits.length
@@ -151,7 +153,7 @@ class SemanticScholarImporter {
 	}
 
 	get filesWithPapers() {
-		return pldbBase.topLanguages.slice(0, 10)
+		return pldbBase.topLanguages
 	}
 
 	writeAllCommand() {

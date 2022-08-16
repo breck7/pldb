@@ -64,6 +64,37 @@ commaTable
     return ""
   }
 
+  get semanticScholar() {
+    const { file } = this
+    const { title } = file
+    const items = file.getNode(`semanticScholar`)
+    if (!items) return ""
+
+    if (items.getContent() === "0") return ""
+
+    const tree = TreeNode.fromDelimited(items.childrenToString(), "|")
+    tree.forEach(child => {
+      child.set(
+        "titleLink",
+        `https://www.semanticscholar.org/paper/${child.get("paperId")}`
+      )
+    })
+    return `foldBreak
+subsection Publications about ${title} from Semantic Scholar.
+pipeTable
+ ${cleanAndRightShift(
+   tree.toDelimited("|", [
+     "title",
+     "titleLink",
+     "authors",
+     "year",
+     "citations",
+     "influentialCitations"
+   ])
+ )}
+`
+  }
+
   get isbndb() {
     const { file } = this
     const { title } = file
@@ -248,6 +279,8 @@ ${this.trendingRepos}
 ${this.goodreads}
 
 ${this.isbndb}
+
+${this.semanticScholar}
 
 ${this.publications}
 

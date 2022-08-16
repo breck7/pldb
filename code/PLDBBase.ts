@@ -109,7 +109,11 @@ class PLDBFile extends TreeBaseFile {
   }
 
   get paperCount() {
-    return 0
+    const ss = this.getNode(`semanticScholar`)?.length
+
+    let count = 0
+    if (ss) count += ss - 1
+    return count
   }
 
   get fileExtension() {
