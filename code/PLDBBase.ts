@@ -99,6 +99,16 @@ class PLDBFile extends TreeBaseFile {
     return `<a href="${this.id}.html">${this.title}</a>`
   }
 
+  get bookCount() {
+    const gr = this.getNode(`goodreads`)?.length
+    if (gr) return gr - 1
+    return 0
+  }
+
+  get paperCount() {
+    return 0
+  }
+
   get fileExtension() {
     return this.extensions.split(" ")[0]
   }

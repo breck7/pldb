@@ -207,13 +207,13 @@ sourceLink https://github.com/breck7/pldb/blob/main/database/things/${
 paragraph
  ${this.description}
 
-${this.descriptionSection}
+${this.kpiBar}
 
 ${this.tryNowRepls}
 
 ${this.monacoEditor}
 
-${this.kpiBar}
+${this.descriptionSection}
 
 ${this.factsSection}
 
@@ -711,27 +711,36 @@ code
   get kpiBar() {
     const { file, object } = this
     const appeared = object.appeared
-    const { numberOfUsers } = file
+    const { numberOfUsers, bookCount, paperCount } = file
     const users =
-      numberOfUsers > 10 ? numeral(numberOfUsers).format("0.0a") : ""
+      numberOfUsers > 10
+        ? numberOfUsers < 1000
+          ? numeral(numberOfUsers).format("0")
+          : numeral(numberOfUsers).format("0.0a")
+        : ""
 
-    const rankLine = file.isLanguage
-      ? `#${file.languageRank + 1} <span title="${
-          file.langRankDebug
-        }">on PLDB</span>`
-      : `#${file.rank + 1} on PLDB`
-
-    const appearedLine = isNaN(appeared)
-      ? ""
-      : `${currentYear - appeared} Years Old`
-    const userLine = users
-      ? `${users} <span title="Crude user estimate from a linear model.">Users</span>`
-      : ""
+    const lines = [
+      file.isLanguage
+        ? `#${file.languageRank + 1} <span title="${
+            file.langRankDebug
+          }">on PLDB</span>`
+        : `#${file.rank + 1} on PLDB`,
+      isNaN(appeared) ? "" : `${currentYear - appeared} Years Old`,
+      users
+        ? `${users} <span title="Crude user estimate from a linear model.">Users</span>`
+        : "",
+      bookCount
+        ? `${bookCount} <span title="Books about or leveraging ${file.title}">Books</span>`
+        : "",
+      paperCount
+        ? `${paperCount} <span title="Academic papers about or leveraging ${file.title}">Papers</span>`
+        : ""
+    ]
+      .filter(i => i)
+      .join("\n ")
 
     return `kpiTable
- ${rankLine}
- ${appearedLine}
- ${userLine}`.trim()
+ ${lines}`
   }
 }
 

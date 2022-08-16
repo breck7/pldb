@@ -11,13 +11,20 @@ kpiTableNode
  cruxFromId
  extends abstractScrollNode
  javascript
-  getTableBody() {
-   return this.getTopDownArray()
-    .map(node => `<td>${node.getWord(0)}<span>${node.getContent()}</span></td>`)
-    .join("\n")
+  get tableBody() {
+   const items = this.getTopDownArray()
+   let str = ""
+   for (let i = 0; i < items.length; i = i + 3) {
+      str += this.makeRow(items.slice(i, i + 3))
+   }
+   return str
+  }
+  makeRow(items) {
+    return `<tr>` + items.map(node => `<td>${node.getWord(0)}<span>${node.getContent()}</span></td>`)
+    .join("\n") + `</tr>\n`
   }
   compile() {
-   return `<table class="kpiTable"><tr><tr>${this.getTableBody()}</tr></table>`
+   return `<table class="kpiTable">${this.tableBody}</table>`
   }
 tableSearchNode
  cruxFromId
