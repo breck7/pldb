@@ -77,7 +77,6 @@ howToCiteNode
     .join(" ") // todo: multiple
    const year = new Date(article.get("date")).getFullYear()
    const title = article.get("title")
-   const site = "PLDB.pub"
    const siteName = "PLDB"
    const permalink = this.getRootNode().permalink
    const url = "https://pldb.pub/" + permalink + ".html"
@@ -87,7 +86,7 @@ howToCiteNode
       <p>PLDB content is published to the public domain and can be used freely. If needed, here are 3 options for citing PLDB:</p>
       <div class="scrollCiteComponent">${url}</div>
      <div class="scrollCiteComponent">
-      ${authors} (${year}) - "${title}". Published online at ${site}. Retrieved from: '${url}' [Online Resource]
+      ${authors} (${year}) - "${title}". Retrieved from: '${url}' [Online Resource]
      </div>
      <div class="scrollCiteComponent">
      @article{${permalink},

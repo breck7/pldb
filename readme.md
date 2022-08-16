@@ -55,7 +55,7 @@ https://pldb.pub
 ```
 
 ```
-Breck Yunits et al. (2022) - "The Programming Language Database". Published online at PLDB.pub. Retrieved from: 'https://pldb.pub' [Online Resource]
+Breck Yunits et al. (2022) - "The Programming Language Database". Retrieved from: 'https://pldb.pub' [Online Resource]
 ```
 
 ```
