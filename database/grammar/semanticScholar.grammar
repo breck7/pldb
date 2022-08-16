@@ -1,0 +1,7 @@
+semanticScholarNode
+ boolean fromCrawler true
+ cruxFromId
+ extends abstractDelimitedBlobNode
+ description Papers about this language from Semantic Scholar.
+ string sourceDomain semanticscholar.org
+ single

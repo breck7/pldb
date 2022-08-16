@@ -1,11 +1,14 @@
 #!/usr/bin/env ts-node
 
+// Docs: https://api.semanticscholar.org/api-docs/graph#tag/Paper-Data/operation/get_graph_get_paper_search
+
 import { PLDBFile, PLDBBaseFolder } from "../../PLDBBase"
 import { runCommand, PoliteCrawler, getCleanedId } from "../../utils"
 
 import { jtree } from "jtree"
 
 const { Disk } = require("jtree/products/Disk.node.js")
+const lodash = require("lodash")
 
 const { TreeNode } = jtree
 
@@ -17,30 +20,16 @@ const superagent = require("superagent")
 const path = require("path")
 const dayjs = require("dayjs")
 
-const creds = JSON.parse(
-	Disk.read(path.join(__dirname, "ignore", "creds.json"))
-)
-
-const { restKey } = creds
-if (!restKey) {
-	console.error(`No restKey found`)
-	process.exit()
-}
-
 const downloadJson = async (url, destination) => {
 	const agent = superagent.agent()
 	console.log(`downloading ${url}`)
-	const res = await agent.get(url).set("Authorization", `${restKey}`)
+	const res = await agent.get(url)
 	Disk.writeJson(destination, res.body || res.text || "")
 }
 
 Disk.mkdir(cacheDir)
 
-const falsePositives = new Set(
-	Disk.read(path.join(__dirname, "falsePositives.txt")).split("\n")
-)
-
-class PLDBFileForBooks {
+class PLDBFileForSemanticScholar {
 	constructor(file: PLDBFile) {
 		this.file = file
 	}
@@ -56,7 +45,7 @@ class PLDBFileForBooks {
 	}
 
 	get query() {
-		return this.file.title
+		return this.file.title + " programming language"
 	}
 
 	get parsed() {
@@ -70,9 +59,10 @@ class PLDBFileForBooks {
 	async fetch() {
 		const { cacheFilePath } = this
 		if (this.exists) return true
+		const fields = `title,authors,abstract,year,citationCount,influentialCitationCount,publicationTypes,referenceCount,fieldsOfStudy,journal,externalIds`
 		try {
 			await downloadJson(
-				`https://api2.isbndb.com/books/${this.query}?pageSize=1000&column=title`,
+				`http://api.semanticscholar.org/graph/v1/paper/search?query=${this.query}&limit=100&fields=${fields}`,
 				cacheFilePath
 			)
 		} catch (err) {
@@ -84,22 +74,29 @@ class PLDBFileForBooks {
 	get hits() {
 		const { file } = this
 		const langTitle = this.file.title.toLowerCase()
-		return this.parsed.books.filter(book => {
-			const { title, date_published, isbn13 } = book
+		return this.parsed.data.filter(paper => {
+			const {
+				title,
+				abstract,
+				citationCount,
+				influentialCitationCount,
+				year,
+				externalIds
+			} = paper
 			const titleContainsExactMatch = title
 				.split(" ")
 				.some(word => word.toLowerCase() === langTitle)
 			if (!titleContainsExactMatch) return false
 
-			if (falsePositives.has(isbn13)) return false
-			// todo: some books are technical but we are matching against the wrong language. So
-			// we need to have a falsePositivesForLanguage map as well.
+			if (!citationCount) return false
+
+			if (!externalIds.DOI) return false
 
 			if (title.toLowerCase().includes("programming")) return true
 
-			if (book.subjects?.includes("Computer Science")) return true
+			if (paper.fieldsOfStudy?.includes("Computer Science")) return true
 
-			const content = new TreeNode(book).toString().toLowerCase()
+			const content = new TreeNode(paper).toString().toLowerCase()
 
 			const isTechnical = content.includes("programming")
 
@@ -107,49 +104,63 @@ class PLDBFileForBooks {
 		})
 	}
 
-	writeBooks() {
+	writePapers() {
 		if (!this.exists) return true
 
 		const { hits, file } = this
-		const keyInfo = hits.map(book => {
-			const { title, date_published, publisher, isbn13, authors } = book
-			return {
-				year: date_published,
-				publisher,
+		const keyInfo = hits.map(paper => {
+			const {
 				title,
-				authors: authors ? authors.join(" and ") : "",
-				isbn13
+				year,
+				externalIds,
+				citationCount,
+				influentialCitationCount,
+				authors
+			} = paper
+			return {
+				year,
+				title,
+				doi: externalIds.DOI,
+				citations: citationCount,
+				influentialCitations: influentialCitationCount,
+				authors: authors.map(author => author.name).join(" and ")
 			}
 		})
 		const count = hits.length
-		file.set("isbndb", `${count}`)
+		file.set("semanticScholar", `${count}`)
+
+		const sorted = lodash.sortBy(keyInfo, ["citations"]).reverse()
 
 		if (count)
-			file.getNode("isbndb").setChildren(new TreeNode(keyInfo).toDelimited("|"))
+			file
+				.getNode("semanticScholar")
+				.setChildren(new TreeNode(sorted).toDelimited("|"))
 		file.prettifyAndSave()
 	}
 }
 
-class ISBNdbImporter {
+class SemanticScholarImporter {
 	async fetchAllCommand() {
 		console.log(`Fetching all...`)
 		const crawler = new PoliteCrawler()
-		crawler.maxConcurrent = 3
-		crawler.msDelayBetweenRequests = 500
+		crawler.maxConcurrent = 2
+		crawler.msDelayBetweenRequests = 3000
 		await crawler.fetchAll(
-			this.filesWithBooks.map(file => new PLDBFileForBooks(file))
+			this.filesWithPapers.map(file => new PLDBFileForSemanticScholar(file))
 		)
 	}
 
-	get filesWithBooks() {
-		return pldbBase.topLanguages
+	get filesWithPapers() {
+		return pldbBase.topLanguages.slice(0, 10)
 	}
 
 	writeAllCommand() {
-		this.filesWithBooks.forEach(file => new PLDBFileForBooks(file).writeBooks())
+		this.filesWithPapers.forEach(file =>
+			new PLDBFileForSemanticScholar(file).writePapers()
+		)
 	}
 }
 
-export { ISBNdbImporter }
+export { SemanticScholarImporter }
 
-if (!module.parent) runCommand(new ISBNdbImporter(), process.argv[2])
+if (!module.parent) runCommand(new SemanticScholarImporter(), process.argv[2])
