@@ -9,3 +9,4 @@ example
  select Guide.restaurant.name,
     Guide.restaurant(.address)?.zipcode
   where Guide.restaurant.% grep "cheap"
+isbndb 0

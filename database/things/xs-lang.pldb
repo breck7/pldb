@@ -7,3 +7,4 @@ reference https://cryptm.org/xs/
 
 example
  gcd:{([`x`y]):..;if y==0(x)(y gcd x mod y)};
+isbndb 0

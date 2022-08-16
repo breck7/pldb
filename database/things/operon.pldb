@@ -11,3 +11,4 @@ example
      $a + $b
  End
  Select [1 ... 5] => array:Reduce(mySum($a, $b))
+isbndb 0
