@@ -2,29 +2,29 @@
 
 PLDB is a public domain database and blog containing over 100,000 facts about over 3,000 programming languages.
 
-This repo contains the entire database, blog, and code for https://pldb.pub.
+This repo contains the entire database, blog, and code for https://pldb.com.
 
 ## To analyze the data
 
 The PLDB database is freely available:
 
-- As CSV: https://pldb.pub/pldb.csv
-- As JSON: https://pldb.pub/pldb.json
+- As CSV: https://pldb.com/pldb.csv
+- As JSON: https://pldb.com/pldb.json
 - The JSON file is also available via npm:
   -- `npm install pldb`
   -- `console.log(require("pldb").javascript.appeared)`
 
-Documentation for the columns is available here: https://pldb.pub/docs/columns.html.
+Documentation for the columns is available here: https://pldb.com/docs/columns.html.
 
 ## To add a new language
 
-Easy method: https://edit.pldb.pub/create
+Easy method: https://edit.pldb.com/create
 
 Advanced method: Create a new file in `database/things` with a unique URL friendly filename ending in `.pldb` and send a pull request.
 
 ## To update a language
 
-Easy method: https://edit.pldb.pub/edit
+Easy method: https://edit.pldb.com/edit
 
 Advanced method: Edit the corresponding `database/things/*.pldb` file and send a pull request.
 
@@ -51,11 +51,11 @@ The `code` folder contains importer scripts and other code for the database and 
 PLDB content is published to the public domain and you can use it freely. If needed, here are 3 options for citing PLDB:
 
 ```
-https://pldb.pub
+https://pldb.com
 ```
 
 ```
-Breck Yunits et al. (2022) - "The Programming Language Database". Retrieved from: 'https://pldb.pub' [Online Resource]
+Breck Yunits et al. (2022) - "The Programming Language Database". Retrieved from: 'https://pldb.com' [Online Resource]
 ```
 
 ```
@@ -64,8 +64,8 @@ Breck Yunits et al. (2022) - "The Programming Language Database". Retrieved from
   title = {The Programming Language Database},
   journal = {PLDB},
   year = {2022},
-  note = {https://pldb.pub}
+  note = {https://pldb.com}
  }
 ```
 
-All sources for PLDB can be found here: https://pldb.pub/acknowledgements.html
+All sources for PLDB can be found here: https://pldb.com/acknowledgements.html

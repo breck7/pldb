@@ -22,8 +22,8 @@ console.log(
 
 ## Also available on the web and as CSV:
 
-https://pldb.pub/pldb.json
+https://pldb.com/pldb.json
 
 OR:
 
-https://pldb.pub/pldb.csv
+https://pldb.com/pldb.csv

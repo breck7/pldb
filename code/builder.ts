@@ -311,7 +311,7 @@ tableSearch
 aftertext
  \`pldb.csv\` contains ${pldbBase.length} rows and ${docsTable.length} columns.
  wrapsOn
- link https://pldb.pub/pldb.csv pldb.csv
+ link https://pldb.com/pldb.csv pldb.csv
 
 pipeTable
  ${cleanAndRightShift(

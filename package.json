@@ -6,8 +6,8 @@
     "build": "./code/builder.ts buildAll",
     "clean": "cd code; tsc --build --clean",
     "cloc": "cloc --vcs git .",
-    "checkLinks": "linkinator -r https://pldb.pub > ignore/brokenLinks.txt",
-    "deploy": "echo 'Rsyncing the contents of pldb.local/ to the /var/www/html folder on the PLDB server'; rsync -vr pldb.local/* pldb@pldb.pub:/var/www/html/",
+    "checkLinks": "linkinator -r https://pldb.com > ignore/brokenLinks.txt",
+    "deploy": "echo 'Rsyncing the contents of pldb.local/ to the /var/www/html folder on the PLDB server'; rsync -vr pldb.local/* pldb@pldb.com:/var/www/html/",
     "exampleCount": "xsv select title,appeared,type,rank,exampleCount pldb.local/languages.csv > ignore/exampleCounts.csv",
     "jtreeBeta": "cp -R ~/jtree node_modules",
     "nulls": "xsv frequency pldb.local/pldb.csv --limit 1",
@@ -28,7 +28,7 @@
   "bugs": {
     "url": "https://github.com/breck7/pldb/issues"
   },
-  "homepage": "https://pldb.pub",
+  "homepage": "https://pldb.com",
   "dependencies": {
     "autocompleter": "^6.1.3",
     "dayjs": "^1.11.4",

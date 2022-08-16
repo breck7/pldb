@@ -14,9 +14,9 @@ npm install .
 
 ## Prod setup
 
-https://edit.pldb.pub is hosted on the smallest Digital Ocean droplet.
+https://edit.pldb.com is hosted on the smallest Digital Ocean droplet.
 
-Follow the same setup instructions as here (stopping before Nginx installation): https://pldb.pub/about-this-web-server.html
+Follow the same setup instructions as here (stopping before Nginx installation): https://pldb.com/about-this-web-server.html
 
 ```
 sudo apt-get install git
@@ -48,8 +48,8 @@ sudo snap install core; sudo snap refresh core
 sudo snap install --classic certbot
 sudo certbot certonly --standalone
 mkdir ignore
-sudo cp /etc/letsencrypt/live/edit.pldb.pub/privkey.pem ignore
-sudo cp /etc/letsencrypt/live/edit.pldb.pub/fullchain.pem ignore
+sudo cp /etc/letsencrypt/live/edit.pldb.com/privkey.pem ignore
+sudo cp /etc/letsencrypt/live/edit.pldb.com/fullchain.pem ignore
 sudo chown pldb:pldb ignore/privkey.pem
 sudo chown pldb:pldb ignore/fullchain.pem
 # Now start with pm2 over http2
@@ -60,7 +60,7 @@ pm2 startup systemd
 ## Prod deploying
 
 ```
-ssh pldb@edit.pldb.pub
+ssh pldb@edit.pldb.com
 cd pldb
 git pull
 npm install .

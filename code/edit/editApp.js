@@ -1,4 +1,4 @@
-const defaultAuthor = "Anon <anon@pldb.pub>"
+const defaultAuthor = "Anon <anon@pldb.com>"
 const htmlEscaped = content => content.replace(/</g, "&lt;")
 class EditApp {
 	start() {
@@ -136,7 +136,7 @@ Trends: https://trends.google.com/trends/explore?date=all&q=${id}<br>
 DDG: https://duckduckgo.com/?q=${id}<br>`) +
 			`Wayback: <a target="_blank" href="https://web.archive.org/web/20220000000000*/${id}">https://web.archive.org/web/20220000000000*/${id}</a>` +
 			TreeUtils.linkify(`<br><br>
-https://pldb.pub/languages/${permalink}.html<br>
+https://pldb.com/languages/${permalink}.html<br>
 https://github.com/breck7/pldb/blob/main/database/things/${permalink}.pldb`)
 		document.getElementById("quickLinks").innerHTML = html
 	}

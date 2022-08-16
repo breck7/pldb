@@ -55,7 +55,7 @@ ${bodyContent}
 </html>`
 
 const GIT_DEFAULT_USERNAME = "PLDBBot"
-const GIT_DEFAULT_EMAIL = "bot@pldb.pub"
+const GIT_DEFAULT_EMAIL = "bot@pldb.com"
 const GIT_DEFAULT_AUTHOR = `${GIT_DEFAULT_USERNAME} <${GIT_DEFAULT_EMAIL}>`
 
 class PLDBEditServer extends TreeBaseServer {
@@ -162,7 +162,7 @@ class PLDBEditServer extends TreeBaseServer {
 
 	indexCommand() {
 		const folder = this._folder
-		return template(`<p>PLDB Edit is a simple web app for quickly adding and editing content on <a href="https://pldb.pub/">The Programming Language Database</a>.</p>
+		return template(`<p>PLDB Edit is a simple web app for quickly adding and editing content on <a href="https://pldb.com/">The Programming Language Database</a>.</p>
 <div style="white-space:pre;">
 -- Folder: '${folder.dir}'
 -- Grammars: '${folder.grammarFilePaths.join(",")}'

@@ -37,12 +37,12 @@ cronCode
 subsection Server setup
 
 bashCode
- ssh root@pldb.pub
+ ssh root@pldb.com
  apt-get update
  apt-get upgrade
  reboot
  # Log back in:
- ssh root@pldb.pub
+ ssh root@pldb.com
  adduser pldb
  usermod -aG sudo pldb
  su pldb

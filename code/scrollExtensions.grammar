@@ -79,7 +79,7 @@ howToCiteNode
    const title = article.get("title")
    const siteName = "PLDB"
    const permalink = this.getRootNode().permalink
-   const url = "https://pldb.pub/" + permalink + ".html"
+   const url = "https://pldb.com/" + permalink + ".html"
    return `
       <div class="citationSection">
       <h4>How to cite</h4>
