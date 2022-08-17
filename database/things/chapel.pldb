@@ -115,3 +115,25 @@ isbndb 2
  year|publisher|title|authors|isbn13
  2008|Springer|Languages And Compilers For Parallel Computing: 11th International Workshop, Lcpc'98, Chapel Hill, Nc, Usa, August 7-9, 1998, Proceedings (lecture Notes In Computer Science)|Chatterjee and J.f.|9783540664260
  2014|William Morrow|The Hydra Protocol: A Jim Chapel Mission (Jim Chapel Missions)|Wellington, David|9780062248800
+
+semanticScholar 19
+ year|title|doi|citations|influentialCitations|authors|paperId
+ 2007|Parallel Programmability and the Chapel Language|10.1177/1094342007078442|948|67|B. Chamberlain and D. Callahan and H. Zima|24f093129e03eb7e8911d9556d70d90153e81584
+ 2012|Performance Portability with the Chapel Language|10.1109/IPDPS.2012.60|46|2|A. Sidelnik and Saeed Maleki and B. Chamberlain and M. Garzarán and D. Padua|96973447980a120734a8b1368b566eb159b87b70
+ 2012|Global Data Re-allocation via Communication Aggregation in Chapel|10.1109/SBAC-PAD.2012.18|21|3|Alberto Sanz and R. Asenjo and Juan López and R. Larrosa and A. Navarro and V. Litvinov and Sung-Eun Choi and B. Chamberlain|aba4addd7f8317e721eba2cffcd124a1dd55f38b
+ 2006|Iterators in Chapel|10.1109/IPDPS.2006.1639499|17|1|Mackale Joyner and B. Chamberlain and Steven J. Deitz|f9d65fcdcb1bf8fa7b1de7c6e1b8398132f2d37c
+ 2012|An Empirical Performance Study of Chapel Programming Language|10.1109/IPDPSW.2012.64|13|1|N. Dun and K. Taura|66b83390781ac875d253f48c219db3d0939493c1
+ 2013|Automated Verification of Chapel Programs Using Model Checking and Symbolic Execution|10.1007/978-3-642-38088-4_14|11|1|Timothy K. Zirkel and Stephen F. Siegel and Timothy McClory|ab3d61bcf5bab68d67814c101e13e68777008f18
+ 2017|Comparative Performance and Optimization of Chapel in Modern Manycore Architectures|10.1109/IPDPSW.2017.126|9|1|Engin Kayraklioglu and Wo Chang and T. El-Ghazawi|2013fa22a8f0dd21d543b1198696e85cb38a7548
+ 2014|Affine Loop Optimization Based on Modulo Unrolling in Chapel|10.1145/2676870.2676877|8|0|Aroon Sharma and Darren Smith and Joshua Koehler and R. Barua and Michael P. Ferguson|4cd64ddd973fcec98e20062ac2b1fd5ee8e47794
+ 2016|PGAS Access Overhead Characterization in Chapel|10.1109/IPDPSW.2016.193|7|0|Engin Kayraklioglu and O. Serres and Ahmad Anbar and Hashem Elezabi and T. El-Ghazawi|cdc0d2b153f15c52367e319ddb34acbbf4b57e1b
+ 2020|Development of Parallel CFD Applications with the Chapel Programming Language|10.2514/6.2021-0749|7|0|M. Parenteau and S. Bourgault-Cote and Frédéric Plante and Engin Kayraklioglu and E. Laurendeau|0db7434a6fb2dfb0bfb674b9865d5bdafcff07c2
+ 2017|Data Centric Performance Measurement Techniques for Chapel Programs|10.1109/IPDPS.2017.37|6|0|Hui Zhang and J. Hollingsworth|2342215a29e15e7d2c9ac9eb63ca5db4a87cac3a
+ 2015|Assessing Memory Access Performance of Chapel through Synthetic Benchmarks|10.1109/CCGrid.2015.157|3|0|Engin Kayraklioglu and T. El-Ghazawi|797dfc31a180c9b3de24b3f587292e201c7f7e42
+ 2017|Scheduling Chapel Tasks with Qthreads on Manycore: A Tale of Two Schedulers|10.1145/3095770.3095774|3|0|N. Evans and Stephen L. Olivier and R. Barrett and George Stelle|10858d712705556b133407d1434352c42d0cfba6
+ 2017|Towards a GraphBLAS Library in Chapel|10.1109/IPDPSW.2017.118|3|0|A. Azad and A. Buluç|79ad275569d313354c203623eb321817542de819
+ 2016|Transparently Resilient Task Parallelism for Chapel|10.1109/IPDPSW.2016.102|2|0|Konstantina Panagiotopoulou and Hans-Wolfgang Loidl|2edf5b50f4845936aab09ecfa806219cd14437b7
+ 2011|Translating Chapel to Use FREERIDE: A Case Study in Using an HPC Language for Data-Intensive Computing|10.1109/IPDPS.2011.266|2|0|Bin Ren and G. Agrawal and B. Chamberlain and Steven J. Deitz|2d2a24c4a338f0d65d74e6b283c026ab093ff857
+ 2019|Graph Algorithms in PGAS: Chapel and UPC++|10.1109/HPEC.2019.8916309|2|0|Louis Jenkins and J. Firoz and Marcin Zalewski and C. Joslyn and Mark Raugas|cf83d871185279c6b4108126b5710fc1cfd70376
+ 2021|Towards High Productivity and Performance for Irregular Applications in Chapel|10.1109/SCWS55283.2021.00012|2|0|Thomas B. Rolinger and Joseph Craft and Christopher D. Krieger and A. Sussman|8b1fb263b1e8b7ae3edf81ac2b2d3a13d18be553
+ 2018|ChplBlamer: A Data-centric and Code-centric Combined Profiler for Multi-locale Chapel Programs|10.1145/3205289.3205314|1|0|Hui Zhang and J. Hollingsworth|4fe4bc6f6332e63b653b1f4ffe73efedec7bdc6c
