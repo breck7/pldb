@@ -53,3 +53,36 @@ isbndb 22
  2016|Packt Publishing|Fast Data Processing with Spark 2 - Third Edition|Sankar, Krishna|9781785882968
  2017|Packt Publishing|Apache Spark 2.x Cookbook: Cloud-ready recipes for analytics and data science|Yadav, Rishi|9781787127517
  2018|Packt Publishing|Scala Programming Projects: Build real world projects using popular Scala frameworks like Play, Akka, and Spark|Valot, Mikael and Jorand, Nicolas|9781788397643
+
+semanticScholar 30
+ year|title|doi|citations|influentialCitations|authors|paperId
+ 2015|Spark SQL: Relational Data Processing in Spark|10.1145/2723372.2742797|1155|207|Michael Armbrust and Reynold Xin and Cheng Lian and Yin Huai and Davies Liu and Joseph K. Bradley and X. Meng and Tomer Kaftan and M. Franklin and A. Ghodsi and M. Zaharia|ada0b87cd5c30d31186c38fb12e631d29426a3bf
+ 2016|Big data analytics on Apache Spark|10.1007/s41060-016-0027-9|154|9|Salman Salloum and Ruslan Dautov and Xiaojun Chen and P. Peng and J. Huang|ac11fc3acdf5233bda411dee6d72a424e0b33c4e
+ 2016|SparkR: Scaling R Programs with Spark|10.1145/2882903.2903740|64|6|S. Venkataraman and Zongheng Yang and Davies Liu and Eric Liang and H. Falaki and X. Meng and Reynold Xin and A. Ghodsi and M. Franklin and I. Stoica and M. Zaharia|e15af92a24901d442e04cfc302cfd97690c76567
+ 2015|Big Data Analytics with Spark|10.1007/978-1-4842-0964-6|46|3|M. Guller|25f55b9bf29625ba1ea3195954bc4e13896218c0
+ 2016|An Apache Spark Implementation for Sentiment Analysis on Twitter Data|10.1007/978-3-319-57045-7_2|28|1|Alexandros Baltas and Andreas Kanavos and A. Tsakalidis|33a041e8f6e5f535967963744df2944ea055f73f
+ 2015|Collaborative filtering recommendation algorithm based on Hadoop and Spark|10.1109/ICIT.2015.7125310|24|1|B. Kupisz and O. Unold|a8cfb27e02c645844e52a0b1e4cc8223a14df450
+ 2014|Verification and testing of mobile robot navigation algorithms: A case study in SPARK|10.1109/IROS.2014.6942753|16|0|P. Trojanek and K. Eder|1f7f84ca0cf9f80ada0171b7688333f0f767ce1f
+ 2019|Accelerating Apache Spark with FPGAs|10.1002/cpe.4222|15|1|Ehsan Ghasemi and P. Chow|5c9632977246f144e7ded8aa0434f346b3954f0b
+ 2016|Accelerating Apache Spark Big Data Analysis with FPGAs|10.1109/UIC-ATC-ScalCom-CBDCom-IoP-SmartWorld.2016.0119|9|1|Ehsan Ghasemi and P. Chow|64bc5eaea64aff8058389fc99ae9bbc028cbb752
+ 2016|Processing large-scale data with Apache Spark|10.5351/KJAS.2016.29.6.1077|7|0|Seyoon Ko and Joong-Ho Won|6cc2ec3e364f5e43d007aac98dad5a699deab269
+ 2017|A comparative between hadoop mapreduce and apache Spark on HDFS|10.1145/3109761.3109775|7|1|Mohamed Saouabi and Abdellah Ezzati|658dc31f6816c51eba77bf82ca1eab4a25812deb
+ 2015|Vispark: GPU-accelerated distributed visual computing using spark|10.1137/15M1026407|5|0|Woohyuk Choi and Sumin Hong and W. Jeong|2d8d418428b4136b16bd19b2cde9f9687f7a0493
+ 2016|Accelerating Apache Spark Big Data Analysis with FPGAs|10.1109/FCCM.2016.33|5|0|Ehsan Ghasemi and P. Chow|9490f7fef5e522a37325d2ac93a9e90b4dfe0847
+ 2018|Property-Based Testing for Spark Streaming|10.1017/S1471068419000012|5|0|A. Riesco and J. Rodríguez-Hortalá|3cae1a0770719faee2ac310fce3caba8809baa6e
+ 2019|Practical Application of SPARK to OpenUxAS|10.1007/978-3-030-30942-8_45|4|0|M. Aiello and Claire Dross and P. Rogers and Laura R. Humphrey and James Hamil|9318d3a58cc12d1f805081980d9544f5af6e3e21
+ 2011|Software vulnerabilities precluded by spark|10.1145/2070337.2070356|3|0|Joyce L. Tokar and F. D. Jones and P. Black and Chris E. Dupilka|7e7088d89c49024a330ec2be2ba3d53dc65bde23
+ 2019|SWRL Parallel Reasoning Method with Spark SQL|10.1109/icis46139.2019.8940207|3|0|Wan Li and Huaai Kang and Dongbo Ma and Weiwei Wei|fd6f4d41bf848523ab01b02e0d3438a4aec0fa50
+ 2020|SWRL Parallel Reasoning Implementation with Spark SQL|10.1088/1757-899X/719/1/012020|3|0|Wan Li and Huaai Kang and Dongbo Ma and Weiwei Wei|a84fa79f3f38fa34859e323e092d24b19467278b
+ 2016|DatalogRA: datalog with recursive aggregation in the spark RDD model|10.1145/2960414.2960417|2|0|Marek Rogala and J. Hidders and J. Sroka|1deb70b80cdbc0b1847816d0a945e202c3d0755e
+ 2016|Optimized Parallelization of Binary Classification Algorithms Based on Spark|10.1109/ISCID.2016.2028|2|0|Yushui Geng and Jianguo Zhang|85a2aec6505a0f356c0abe323937b43fe0719d17
+ 2016|Large-Scale Text Similarity Computing with Spark|10.14257/IJGDC.2016.9.4.09|2|0|Xiaoan Bao and Dai Shichao and N. Zhang and Chenghai Yu|ca1ca96b823cca3696db83ad1dd4b36c79060390
+ 2018|Performance Analysis Using Apriori Algorithm Along with Spark and Python|10.1145/3277104.3277108|2|0|F. Gao and C. Bhowmick and Jiangjiang Liu|042691aff45e64f931394ab5fc810c93cc165e97
+ 2019|Teaching Deductive Verification Through Frama-C and SPARK for Non Computer Scientists|10.1007/978-3-030-32441-4_2|2|0|Léo Creuse and Claire Dross and C. Garion and J. Hugues and Joffrey Huguet|fdbc7321e5bed553d0971d3420a9a4b40aff23d4
+ 2020|Performance evaluation of Apache Hadoop and Apache Spark for parallelization of compute-intensive tasks|10.1145/3428757.3429121|2|0|Alexander Döschl and Max-Emanuel Keller and P. Mandl|c5721b160564d5fa45473020874189c5db20ae9a
+ 2017|Spark and Scala (keynote)|10.1145/3136000.3148042|1|0|Reynold Xin|f793547799d7d6fb7470ccc879bf2735bb34315b
+ 2019|Processing Large Raster and Vector Data in Apache Spark|10.18420/btw2019-43|1|0|Stefan Hagedorn and O. Birli and K. Sattler|c03fd819fe32f9aebe52e97a1a6fa836be4474bf
+ 2020|Comparison of MPI and Spark for Data Science Applications|10.1109/ipdpsw50202.2020.00123|1|0|Manvi Saxena and S. Jha and Saba Khan and John Rodgers and P. Lindner and E. Gabriel|786aaf60ab08643849817b57914cac8fdd33e6b4
+ 2020|Translation of Array-Based Loops to Spark SQL|10.1109/BigData50022.2020.9378136|1|0|Md Hasanuzzaman Noor and L. Fegaras|234ba3a287178ddce5af915d5c16950d3e0a4064
+ 2020|A Study of Big Data Analytics using Apache Spark with Python and Scala|10.1109/ICISS49785.2020.9315863|1|0|Y. Gupta and Surbhi Kumari|b932ecaf6825fb5a8b838dab9a0e66e7cea3eabf
+ 2021|Integration of Cassandra and Spark in Computer Aided Drug Design|10.32628/CSEIT217112|1|0|R. NithaV|c558ef5553fdf5eaaac4c69fbaa6e631f53159c9

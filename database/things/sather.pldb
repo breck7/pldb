@@ -69,3 +69,9 @@ centralPackageRepositoryCount 0
 isbndb 1
  year|publisher|title|authors|isbn13
  2010||Class-based Programming Languages: Java, C++, Python, Eiffel, Smalltalk, Ruby, Simula, Common Lisp, Oberon, Clu, Objective-c, Squeak, Sather|Books and LLC|9781156829424
+
+semanticScholar 3
+ year|title|doi|citations|influentialCitations|authors|paperId
+ 1994|Engineering a Programming Language: The Type and Class System of Sather|10.1007/3-540-57840-4_33|89|5|C. Szyperski and S. Omohundro and S. Murer|47859a3e075dddf97b090c2316b67bc591783c14
+ 1992|Sather Provides Nonproprietary Access to Object‐Oriented Programming|10.1063/1.4823098|9|0|S. Omohundro|d09b97715cb4b8a58cb8a16973406210394dd422
+ 1997|Efficient Extensible Synchronization in Sather|10.1007/3-540-63827-X_45|7|0|Jürgen Quittek and B. Weissman|a081fa7ad5c7a3bccb2baf18077bffd1fa36bbfe

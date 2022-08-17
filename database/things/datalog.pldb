@@ -46,3 +46,42 @@ isbndb 3
  1985|Cygnus|Datalog 2|R. Porkess|9780948506000
  20151113|Springer Nature|Datalog and Logic Databases|Sergio Greco; Cristian Molinaro|9783031018541
  20151101|Morgan & Claypool Publishers|Datalog and Logic Databases|Sergio Greco; Cristian Molinaro|9781627051149
+
+semanticScholar 36
+ year|title|doi|citations|influentialCitations|authors|paperId
+ 1989|What you Always Wanted to Know About Datalog (And Never Dared to Ask)|10.1109/69.43410|659|70|S. Ceri and G. Gottlob and L. Tanca|fa1570dc4e7853c2c6d0ff21a1ac8327e4ebe4b5
+ 1997|Disjunctive datalog|10.1145/261124.261126|517|36|Thomas Eiter and G. Gottlob and H. Mannila|d445c88e0333ba617771cf24e71691eac85a483c
+ 2006|codeQuest: Scalable Source Code Queries with Datalog|10.1007/11785477_2|211|10|Elnar Hajiyev and M. Verbaere and O. Moor|95816cc9b43d53d23cce83c42e648699156aa031
+ 2010|Dedalus: Datalog in Time and Space|10.1007/978-3-642-24206-9_16|138|15|P. Alvaro and William R. Marczak and Neil Conway and J. Hellerstein and D. Maier and R. Sears|bc2a9f8ca02b809230a6b6e0c670c5837a73d011
+ 2013|SociaLite: Datalog extensions for efficient social network analysis|10.1109/ICDE.2013.6544832|101|16|Jiwon Seo and Stephen Guo and M. Lam|94057235c4bdea2c4df6304ed98ca23e77749893
+ 1999|Workflow, transactions and datalog|10.1145/303976.304005|77|10|A. Bonner|e601c809f7bc8dbaee66cdd5666c0898dd070fbd
+ 2016|From Datalog to flix: a declarative language for fixed points on lattices|10.1145/2908080.2908096|72|11|Magnus Madsen and Ming-Ho Yee and O. Lhoták|50e8b66fad4dd05e1e5e776ffc08b2d4c80b5a3f
+ 2010|The Disjunctive Datalog System DLV|10.1007/978-3-642-24206-9_17|69|4|Mario Alviano and Wolfgang Faber and N. Leone and S. Perri and G. Pfeifer and G. Terracina|fb0aed07aedabb52489e7b2cf3766b00691d7225
+ 2010|Dyna: Extending Datalog for Modern AI|10.1007/978-3-642-24206-9_11|61|1|Jason Eisner and N. Filardo|8b3bfe03e36ab65d48655813586b43fc8ca3e9b0
+ 2005|CodeQuest: querying source code with datalog|10.1145/1094855.1094884|39|4|Elnar Hajiyev and M. Verbaere and O. Moor and K. Volder|df5328296c7c57b4bfefb20e97ece73dae86ad1b
+ 2011|Functional description of geoprocessing services as conjunctive datalog queries|10.1007/s10707-009-0093-4|34|5|D. Fitzner and J. Hoffmann and E. Klien|0e4370dbc008651b01fb96a0a1f761a78a685aa7
+ 2015|SociaLite: An Efficient Graph Query Language Based on Datalog|10.1109/TKDE.2015.2405562|34|3|Jiwon Seo and Stephen Guo and M. Lam|f61c359ecc37e9efeef3e3582170d2b13e753027
+ 2008|A Theoretical Framework for the Declarative Debugging of Datalog Programs|10.1007/978-3-540-88594-8_8|33|0|R. Caballero and Y. García-Ruiz and F. Sáenz-Pérez|02addce453fcfe5e5b73cfafa4f470d81ce461a9
+ 2019|Synthesizing Datalog Programs Using Numerical Relaxation|10.24963/ijcai.2019/847|32|2|X. Si and Mukund Raghothaman and K. Heo and M. Naik|6a2106628da2710b7a79f35f66dfd1cc015f14ae
+ 2012|Disjunctive datalog with existential quantifiers: Semantics, decidability, and complexity issues|10.1017/S1471068412000257|30|5|Mario Alviano and Wolfgang Faber and N. Leone and M. Manna|c5002f1933d1bdf9fbe36a92e92cfcda2f434739
+ 2016|Datafun: a functional Datalog|10.1145/2951913.2951948|22|2|Michael Arntzenius and N. Krishnaswami|9bc736e2d6e8cf97b0aff0d5cb448fe601bf3bab
+ 2015|Datalog and Logic Databases|10.2200/S00648ED1V01Y201505DTM041|20|1|S. Greco and Cristian Molinaro|87f8328daeb5f9a46a7e98d8065b8d180fe34615
+ 2012|Datalog in Academia and Industry|10.1007/978-3-642-32925-8|10|1|P. Barceló and R. Pichler|eb88ca35cacb9e17983fd1d11915c90e58cc8dbe
+ 2020|Fixpoints for the masses: programming with first-class Datalog constraints|10.1145/3428193|8|0|Magnus Madsen and O. Lhoták|4f982bf2c66f2c454fa66699b5546576b7d2dcad
+ 2017|Pipelined Bottom-Up Evaluation of Datalog Programs: The Push Method|10.1007/978-3-319-74313-4_4|7|0|Stefan Brass and H. Stephan|6707e67733af705f3fc2f383a96a702bae150091
+ 2018|Stratified Negation in Limit Datalog Programs|10.24963/ijcai.2018/259|7|0|M. Kaminski and B. C. Grau and Egor V. Kostylev and B. Motik and I. Horrocks|9da8b2dbb33ef494fc202131bff91fd052380a45
+ 2018|A Fuzzy Datalog Deductive Database System|10.1109/TFUZZ.2018.2806923|7|0|Pascual Julián-Iranzo and F. Sáenz-Pérez|cc3b9486bb908b6672f25d723011316603971f85
+ 2020|Generative Datalog with Continuous Distributions|10.1145/3375395.3387659|7|0|Martin Grohe and Benjamin Lucien Kaminski and J. Katoen and P. Lindner|090c51bb1dd57916289b2cce38c13336544f39bf
+ 2020|Formulog: Datalog for SMT-based static analysis|10.1145/3428209|7|1|Aaron Bembenek and M. Greenberg and Stephen Chong|dcaddf07fa88f656ee815db9fccaf35b6c004dd6
+ 2015|Debugging of wrong and missing answers for datalog programs with constraint handling rules|10.1145/2790449.2790522|6|0|R. Caballero and Y. García-Ruiz and F. Sáenz-Pérez|8f4a2fbd0542a13b5301ffb770a38d3afa4164fa
+ 2019|Declarative Programming for Microcontrollers - Datalog on Arduino|10.1007/978-3-030-46714-2_9|6|0|Mario Wenzel and Stefan Brass|146aa8fd69bdcc9cbb970cc2d2b638196930b333
+ 2018|SolverBlox: algebraic modeling in datalog|10.1145/3191315.3191322|5|0|Conrado Borraz-Sánchez and D. Klabjan and E. Pasalic and M. Aref|8d5b48a00215f42bca10a2b6c4bc902d2e78ade1
+ 2006|Datalog as a pointcut language in aspect-oriented programming|10.1145/1176617.1176664|4|0|Elnar Hajiyev and Neil Ongkingco and Pavel Avgustinov and O. Moor and D. Sereni and J. Tibble and M. Verbaere|2b2d76ca65a6412ddcb7692b7e73b89d33e5f1e6
+ 2016|Precise complexity guarantees for pointer analysis via Datalog with extensions*|10.1017/S1471068416000405|3|0|K. T. Tekle and Yanhong A. Liu|e07a2804422ff6f66ba866d9380278c94143a3b1
+ 2016|From Datalog to flix: a declarative language for fixed points on lattices|10.1145/2980983.2908096|3|0|MadsenMagnus and YeeMing-Ho and LhotákOndřej|b493eeb971c48cf9973a551e240d805f65e7a542
+ 2016|DatalogRA: datalog with recursive aggregation in the spark RDD model|10.1145/2960414.2960417|2|0|Marek Rogala and J. Hidders and J. Sroka|1deb70b80cdbc0b1847816d0a945e202c3d0755e
+ 2021|A process framework for inducing and explaining Datalog theories|10.1007/s11634-020-00422-7|2|0|Mark Gromowski and M. Siebers and Ute Schmid|3acdc461e5a20e4ceed01b88c67e90825f0c8b3f
+ 2015|Extending Datalog Intelligence|10.1007/978-3-319-22002-4_1|1|0|B. Kimelfeld|a88be1d7f844ed52bfb37e0da7bb948f504b4ba8
+ 2010|Informing Datalog through Language Intelligence - A Personal Perspective|10.1007/978-3-642-24206-9_10|1|0|V. Dahl|93740c09536c6d9cdeecd5ff86bc51e552fb97e8
+ 2020|A Counterexample-Guided Debugger for Non-recursive Datalog|10.1007/978-3-030-64437-6_17|1|0|Van-Dang Tran and H. Kato and Zhenjiang Hu|48cf4ae27adb305e54448a18bef1e2f9d5cd3f14
+ 2021|Integrity Constraints for Microcontroller Programming in Datalog|10.1007/978-3-030-82472-3_12|1|0|Stefan Brass and Mario Wenzel|6148460c9227b477a438c739f7b615a88b533b23

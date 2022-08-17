@@ -47,3 +47,12 @@ isOpenSource true
 centralPackageRepositoryCount 0
 
 isbndb 0
+
+semanticScholar 6
+ year|title|doi|citations|influentialCitations|authors|paperId
+ 2005|Parallel Programming and Parallel Abstractions in Fortress|10.1109/PACT.2005.34|35|0|G. Steele|2fb5a5cfe833a7c8a1c072ae50beb92f5631e7d5
+ 2006|Parallel programming and code selection in fortress|10.1145/1122971.1122972|19|0|G. Steele|b658729a9b7ba4ab68db8c38c467984649230670
+ 2009|Parsing Fortress syntax|10.1145/1596655.1596667|13|2|S. Ryu|b3aa9613a3e9fb7a1da38a1aa08d95a6984282dc
+ 2010|Generators-of-Generators Library with Optimization Capabilities in Fortress|10.1007/978-3-642-15291-7_4|10|0|Kento Emoto and Zhenjiang Hu and K. Kakehi and Kiminori Matsuzaki and M. Takeichi|aa59501d1da60d3df90d648cbb531feda99acaf3
+ 2011|Coq Mechanization of Featherweight Fortress with Multiple Dispatch and Multiple Inheritance|10.1007/978-3-642-25379-9_20|3|1|Jieung Kim and S. Ryu|ffc4aadeab17411ebe95ea93dc7946ce75694bda
+ 2016|Scalable framework for parsing: from Fortress to JavaScript|10.1002/spe.2380|3|0|S. Ryu|45aad1146bc018df0ce85cfdae156ebb5a91c498

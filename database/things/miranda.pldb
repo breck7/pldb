@@ -57,3 +57,13 @@ isbndb 2
  year|publisher|title|authors|isbn13
  1991-09-20T00:00:01Z|Taylor & Francis Books Ltd|Functional Programming with Miranda|Hoyler, Ian|9780273034537
  1995|Prentice Hall|Programming With Miranda|Clack, Chris and Myers, Colin and Poon, Ellen|9780131925922
+
+semanticScholar 7
+ year|title|doi|citations|influentialCitations|authors|paperId
+ 1986|An overview of Miranda|10.1145/15042.15053|247|19|D. Turner|35306f7f53096a62cc087655f6f6e1e21d5100ac
+ 1986|Laws in Miranda|10.1145/319838.319839|35|1|S. Thompson|ff17127456c7e6156c744d0b7df8c60f9e150ba3
+ 1993|Using Miranda as a first programming language|10.1017/S0956796800000575|20|3|Tim Lambert and P. Lindsay and K. Robinson|216f9a40d8dfe5d8c775a3e5fe17972ecc7fb1b3
+ 1994|A visual Miranda machine|10.1109/SEDC.1994.475337|14|3|M. Auguston and J. Reinfelds|57a92013fe97eab9d2fcdab1c94ae1b2cf640d0f
+ 1989|A logic for Miranda|10.1007/BF01887213|12|0|S. Thompson|f24a5b82c29d8e207368c9e1533fdf5ff953fd29
+ 1991|Using XView/X11 from Miranda|10.1007/978-1-4471-3196-0_30|7|0|Satnam Singh|6f11dc39c5a2eafae616c00be5f44e596bc8eecd
+ 1996|SNACC: a parser generator for use with Miranda|10.1145/331119.331416|2|0|D. Turner|3f44c9986b64c301c4014527782743a052d10196

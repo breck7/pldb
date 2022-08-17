@@ -49,3 +49,18 @@ isOpenSource true
 centralPackageRepositoryCount 0
 
 isbndb 0
+
+semanticScholar 12
+ year|title|doi|citations|influentialCitations|authors|paperId
+ 2016|Automatically scheduling halide image processing pipelines|10.1145/2897824.2925952|133|17|Ravi Teja Mullapudi and Andrew Adams and Dillon Sharlet and Jonathan Ragan-Kelley and Kayvon Fatahalian|9b240a87b11d085641d6640f73cc3cc2d678e305
+ 2019|Learning to optimize halide with tree search and random programs|10.1145/3306346.3322967|128|19|Andrew Adams and Karima Ma and Luke Anderson and Riyadh Baghdadi and Tzu-Mao Li and Michaël Gharbi and Benoit Steiner and Steven Johnson and Kayvon Fatahalian and F. Durand and Jonathan Ragan-Kelley|f90a7bc396e205b204d5d6066a10162f84b128f9
+ 2018|Differentiable programming for image processing and deep learning in halide|10.1145/3197517.3201383|78|8|Tzu-Mao Li and Michaël Gharbi and Andrew Adams and F. Durand and Jonathan Ragan-Kelley|c1c8d15520d84ed6d9a701e18627ded4d8f1eb2a
+ 2017|Halide|10.1145/3150211|48|0|Jonathan Ragan-Kelley and Andrew Adams and Dillon Sharlet and Connelly Barnes and Sylvain Paris and M. Levoy and S. Amarasinghe and F. Durand|93bb58cfdd34521c59e593d8f4332a75a18e3448
+ 2015|Helium: lifting high-performance stencil kernels from stripped x86 binaries to halide DSL code|10.1145/2737924.2737974|28|3|Charith Mendis and Jeffrey Bosboom and Kevin Wu and S. Kamil and Jonathan Ragan-Kelley and Sylvain Paris and Qin Zhao and Saman P. Amarasinghe|62e3781d9aa0a2dc5845f5cb06466ba9e83f9241
+ 2019|Automatically translating image processing libraries to halide|10.1145/3355089.3356549|21|1|Maaz Bin Safeer Ahmad and Jonathan Ragan-Kelley and Alvin Cheung and S. Kamil|8a52c0852c1a38c9f24a14704e1fb749b55ddbba
+ 2017|Extending Halide to Improve Software Development for Imaging DSPs|10.1145/3106343|8|0|Sander Vocke and H. Corporaal and Roel Jordans and R. Corvino and Rick J. M. Nas|213533b755b70e4754b2f11f39c766db17aa71a9
+ 2014|Easy optimization of image transformation using sFFT algorithm with HALIDE language|10.1109/IC3I.2014.7019723|7|0|C. Thirumoorthi and T. Karthikeyan|cc86e7bc4031e7ce45d3af516ba15c7345e146b4
+ 2019|Accelerate DNN Performance with Sparse Matrix Compression in Halide|10.1145/3339186.3339194|6|0|Chao-Lin Lee and Chen-Ting Chao and Jenq-Kuen Lee and Ming-Yu Hung and Chung-Wen Huang|0056c33177043161aaf81565191dac14bb8c5c6a
+ 2016|Locality-Aware Scheduling for Stencil Code in Halide|10.1109/ICPPW.2016.26|3|0|Shih-Wei Liao and Sheng-Jun Tsai and Chieh-Hsun Yang and C. Lo|58f7375ba591a446d5ff44d08cf9aaf143441d8b
+ 2019|Sparse-Matrix Compression Primitives with OpenCL Framework to Support Halide|10.1145/3318170.3318179|3|0|Chao-Lin Lee and Chen-Ting Chao and Jenq-Kuen Lee and Chung-Wen Huang and Ming-Yu Hung|2fa067b5a7bccbb6abcd5a813416fee9202f2989
+ 2020|Halide and OpenMP for generating high-performance recursive filters|10.1117/12.2566537|1|0|Yuta Tsuji and Norishige Fukushima|e14b46621e0c04bd4b877e11a71d76b56e1396d7
