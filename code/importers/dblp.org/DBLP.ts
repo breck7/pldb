@@ -98,7 +98,6 @@ class DBLPImporter {
   async fetchAllCommand() {
     console.log(`Fetching all...`)
     const crawler = new PoliteCrawler()
-    crawler.randomize = false
     crawler.maxConcurrent = 2
     await crawler.fetchAll(this.matches)
   }

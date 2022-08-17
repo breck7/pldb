@@ -80,7 +80,7 @@ commaTable
       )
     })
     return `foldBreak
-subsection Publications about ${title} from Semantic Scholar.
+subsection Publications about ${title} from Semantic Scholar
 pipeTable
  ${cleanAndRightShift(
    tree.toDelimited("|", [
@@ -108,7 +108,7 @@ pipeTable
       child.set("titleLink", `https://isbndb.com/book/${child.get("isbn13")}`)
     })
     return `foldBreak
-subsection Books about ${title} from ISBNdb.com.
+subsection Books about ${title} from ISBNdb
 pipeTable
  ${cleanAndRightShift(
    tree.toDelimited("|", ["title", "titleLink", "authors", "year", "publisher"])

@@ -180,7 +180,7 @@ class PoliteCrawler {
   msDelayBetweenRequests = 0
   maxConcurrent = 10
   downloadQueue: PoliteCrawlerJob[] = []
-  randomize = true // By default randomizes the queue so dont get stuck on one
+  randomize = false // Can randomize the queue so dont get stuck on one
   async fetchAll(jobs) {
     this.downloadQueue = this.randomize ? lodash.shuffle(jobs) : jobs
     const threads = lodash

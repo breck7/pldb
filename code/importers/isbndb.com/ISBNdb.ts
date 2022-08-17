@@ -136,17 +136,19 @@ class ISBNdbImporter {
 		const crawler = new PoliteCrawler()
 		crawler.maxConcurrent = 3
 		crawler.msDelayBetweenRequests = 500
-		await crawler.fetchAll(
-			this.filesWithBooks.map(file => new PLDBFileForBooks(file))
-		)
+		await crawler.fetchAll(this.unfetched)
 	}
 
-	get filesWithBooks() {
-		return pldbBase.topLanguages
+	get files() {
+		return pldbBase.topLanguages.map(file => new PLDBFileForBooks(file))
+	}
+
+	get unfetched() {
+		return this.files.filter(file => !file.exists).reverse()
 	}
 
 	writeAllCommand() {
-		this.filesWithBooks.forEach(file => new PLDBFileForBooks(file).writeBooks())
+		this.files.forEach(file => file.writeBooks())
 	}
 }
 

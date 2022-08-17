@@ -147,19 +147,21 @@ class SemanticScholarImporter {
 		const crawler = new PoliteCrawler()
 		crawler.maxConcurrent = 2
 		crawler.msDelayBetweenRequests = 3000
-		await crawler.fetchAll(
-			this.filesWithPapers.map(file => new PLDBFileForSemanticScholar(file))
+		await crawler.fetchAll(this.unfetched)
+	}
+
+	get files() {
+		return pldbBase.topLanguages.map(
+			file => new PLDBFileForSemanticScholar(file)
 		)
 	}
 
-	get filesWithPapers() {
-		return pldbBase.topLanguages
+	get unfetched() {
+		return this.files.filter(file => !file.exists).reverse()
 	}
 
 	writeAllCommand() {
-		this.filesWithPapers.forEach(file =>
-			new PLDBFileForSemanticScholar(file).writePapers()
-		)
+		this.files.forEach(file => file.writePapers())
 	}
 }
 
