@@ -852,27 +852,34 @@ class PLDBBaseFolder extends TreeBaseFolder {
 
   @imemo
   get nodesForCsv() {
+    const runTimeProps = [
+      "id",
+      "rank",
+      "lastActivity",
+      "exampleCount",
+      "bookCount",
+      "paperCount"
+    ]
     return this.map(file => {
       const clone = file.parsed.clone()
       clone.getTopDownArray().forEach(node => {
         if (node.includeChildrenInCsv === false) node.deleteChildren()
         if (node.getNodeTypeId() === "blankLineNode") node.destroy()
       })
-      const { lastActivity, exampleCount } = file
 
-      clone.set("id", file.id)
-      clone.set("rank", file.rank.toString())
-
-      if (exampleCount) clone.set("exampleCount", exampleCount.toString())
-
-      if (lastActivity) clone.set("lastActivity", lastActivity.toString())
+      runTimeProps.forEach(prop => {
+        const value = file[prop]
+        if (value !== undefined) clone.set(prop, value.toString())
+      })
 
       return clone
     })
   }
 
   toObjectsForCsv() {
-    return lodash.sortBy(this.nodesForCsv.map(nodeToFlatObject), "rank")
+    return lodash.sortBy(this.nodesForCsv.map(nodeToFlatObject), item =>
+      parseInt(item.rank)
+    )
   }
 
   get sortTemplate() {
