@@ -577,6 +577,7 @@ class PLDBBaseFolder extends TreeBaseFolder {
   }
 
   getFile(id: string): PLDBFile | undefined {
+    if (id === undefined) return undefined
     if (id.includes("/")) id = Disk.getFileName(id).replace(".pldb", "")
     return this.getNode(id)
   }
