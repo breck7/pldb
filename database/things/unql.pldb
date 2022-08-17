@@ -9,3 +9,7 @@ example
  query Q1 :=
   select {result: E}
   where {country: {name: "France", people: {ethnicGroup: E}}} in db
+
+semanticScholar 1
+ year|title|doi|citations|influentialCitations|authors|paperId
+ 2015|Iteration Algebras for UnQL Graphs and Completeness for Bisimulation|10.4204/EPTCS.191.8|3|0|Makoto Hamana|00b6072ba7ecf7d1281c1aaa7bac7a82bc6a277e

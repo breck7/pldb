@@ -156,3 +156,20 @@ isbndb 6
  20080103|Springer Nature|Practical OCaml|Joshua B. Smith|9781430202448
  20220526|Springer Nature|OCaml Scientific Computing|Liang Wang; Jianxin Zhao; Richard Mortier|9783030976453
  2010||Ocaml Programming Language Family: Ocaml Software, Objective Caml, Marionnet, Fftw, Mldonkey, Unison, Frama-c, Hol Light, Coq, Geneweb|Books Llc and Books and LLC|9781158073269
+
+semanticScholar 14
+ year|title|doi|citations|influentialCitations|authors|paperId
+ 2000|Using, Understanding, and Unraveling the OCaml Language. From Practice to Theory and Vice Versa|10.1007/3-540-45699-6_9|42|2|Didier Rémy|dbf92034106f3c26488946a043a48c9187bc0821
+ 2006|Type-safe distributed programming for OCaml|10.1145/1159876.1159881|25|2|John N. Billings and Peter Sewell and Mark R. Shinwell and Rok Strnisa|7a3fe7e9246140a6e07aeb07841a8b052d0784b5
+ 2018|Typed Embedding of a Relational Language in OCaml|10.4204/EPTCS.285.1|14|2|D. Kosarev and D. Boulytchev|f11043b0ebaa3923e39d3e1010fd8f87bda5552e
+ 2021|Retrofitting effect handlers onto OCaml|10.1145/3453483.3454039|13|2|K. Sivaramakrishnan and Stephen Dolan and Leo White and T. Kelly and S. Jaffer and A. Madhavapeddy|fbf84ef1173647b7bdf7f674c8acff9f61180728
+ 2018|Merlin: a language server for OCaml (experience report)|10.1145/3236798|12|0|Frédéric Bour and Thomas Refis and G. Scherer|83af07fe7334441c22973321127459731403cfa6
+ 2019|GOSPEL - Providing OCaml with a Formal Specification Language|10.1007/978-3-030-30942-8_29|8|0|A. Charguéraud and J. Filliâtre and C. Lourenço and Mário Pereira|96745e021ccaeb721d1854b7dea4eceb75d71357
+ 2014|GPGPU Composition with OCaml|10.1145/2627373.2627379|4|0|M. Bourgoin and E. Chailloux|3a54d960ab04fddb451800a65b55970a1c2e4382
+ 2015|Improving Type Error Messages in OCaml|10.4204/EPTCS.198.4|4|0|A. Charguéraud|8d994f1118904a90ede5abefec8c8b8c0ba5ab6e
+ 2008|Caml-Shcaml: an ocaml library for unix shell programming|10.1145/1411304.1411316|4|1|A. Heller and Jesse A. Tov|4ec33572f58d0f2a0411abdc88e483a7bdc9fde7
+ 2019|Chemoinformatics and structural bioinformatics in OCaml|10.1186/s13321-019-0332-0|4|0|F. Berenger and Kam Y. J. Zhang and Yoshihiro Yamanishi|b10743378eabcbc7d3415e4c43c6dcad192604f2
+ 2020|Retrofitting parallelism onto OCaml|10.1145/3408995|4|1|K. Sivaramakrishnan and Stephen Dolan and Leo White and S. Jaffer and T. Kelly and Anmol Sahoo and S. Parimala and Atul Dhiman and A. Madhavapeddy|0202d541aadfe56d9cce09c1c5c609098778b908
+ 2019|WCET of OCaml Bytecode on Microcontrollers: An Automated Method and Its Formalisation|10.4230/OASIcs.WCET.2019.5|2|0|S. Varoumas and T. Crolard|8b3c59637fb8f5c4d181125aa03b9fe48792a4c8
+ 2011|Using camlp4 for presenting dynamic mathematics on the web: DynaMoW, an OCaml language extension for the run-time generation of mathematical contents and their presentation on the web|10.1145/2034773.2034809|1|0|F. Chyzak and Alexis Darrasse|2fbcc662edca887550e0ce0463695b3ecfcf0381
+ 2021|Cameleer: a Deductive Verification Tool for OCaml|10.1007/978-3-030-81688-9_31|1|0|Mário Pereira and A. Ravara|00ba0130dc4666ce2b3aa584dbf32ec325cbd0ba

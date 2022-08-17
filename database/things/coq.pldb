@@ -95,3 +95,33 @@ isbndb 3
  2013-12-06T00:00:01Z|The MIT Press|Certified Programming with Dependent Types: A Pragmatic Introduction to the Coq Proof Assistant (The MIT Press)|Chlipala, Adam|9780262026659
  2022|MIT Press|Certified Programming with Dependent Types: A Pragmatic Introduction to the Coq Proof Assistant|Chlipala, Adam|9780262545747
  2017|ISTE Press - Elsevier|Computer Arithmetic and Formal Proofs: Verifying Floating-point Algorithms with the Coq System (Computer Engineering)|Boldo, Sylvie and Melquiond, Guillaume|9780081011706
+
+semanticScholar 27
+ year|title|doi|citations|influentialCitations|authors|paperId
+ 2010|Extending Coq with Imperative Features and Its Application to SAT Verification|10.1007/978-3-642-14052-5_8|76|6|Michaël Armand and B. Grégoire and A. Spiwack and Laurent Théry|62a54d650f4e872c333164a03a02809bb5033c8b
+ 2012|Strongly Typed Term Representations in Coq|10.1007/s10817-011-9219-0|74|3|Nick Benton and C. Hur and A. Kennedy and Conor McBride|addf7c769cc3b08ed853e76605c266ab51010fdb
+ 2013|Canonical Structures for the Working Coq User|10.1007/978-3-642-39634-2_5|55|0|A. Mahboubi and E. Tassi|1f151ce64779eb673b5b06a4211480968e211452
+ 2018|Œuf: minimizing the Coq extraction TCB|10.1145/3167089|35|1|Eric Mullen and Stuart Pernsteiner and James R. Wilcox and Zachary Tatlock and D. Grossman|ef537a2cd3b2a2d28e8ec07195265a61a9ad4c26
+ 2017|Weak Call-by-Value Lambda Calculus as a Model of Computation in Coq|10.1007/978-3-319-66107-0_13|34|3|Y. Forster and G. Smolka|adba80bbf7c50743fda436ef1919baff64fb1bf7
+ 2011|Verification of PLC Properties Based on Formal Semantics in Coq|10.1007/978-3-642-24690-6_6|32|1|J. Blech and Sidi Ould Biha|d30c9e9c8749b7e5e408804ae4ce9a446ea1c725
+ 2011|Verifying Object-Oriented Programs with Higher-Order Separation Logic in Coq|10.1007/978-3-642-22863-6_5|31|3|J. Bengtson and J. B. Jensen and Filip Sieczkowski and L. Birkedal|b6d3405002dcd052327c7052e83753a407477a59
+ 2013|Aliasing Restrictions of C11 Formalized in Coq|10.1007/978-3-319-03545-1_4|27|1|R. Krebbers|7ecd6f0e29de44baa17072f68225349c90c39871
+ 2018|Mtac2: typed tactics for backward reasoning in Coq|10.1145/3236773|24|1|Jan-Oliver Kaiser and Beta Ziliani and R. Krebbers and Y. Régis-Gianas and Derek Dreyer|d6b3a74639659f59cf6e36a653669fee84dd1aef
+ 2010|An Introduction to Programming and Proving with Dependent Types in Coq|10.6092/issn.1972-5787/1978|21|0|A. Chlipala|6ca05b1d04e65c1c34eb0565ec44ce47605efed3
+ 2019|ConCert: a smart contract certification framework in Coq|10.1145/3372885.3373829|21|2|D. Annenkov and Bas Spitters|4d656733e7205530d78a8887d429b41f9c789be0
+ 2017|Calculating Parallel Programs in Coq Using List Homomorphisms|10.1007/s10766-016-0415-8|16|1|F. Loulergue and Wadoud Bousdira and J. Tesson|adb8b0667728336d881a19f6c7defe51deb1c642
+ 2020|Verified programming of Turing machines in Coq|10.1145/3372885.3373816|16|0|Y. Forster and F. Kunze and Maximilian Wuttke|5ad36475e45e3f17be1d5cd5a77154cfba2a6994
+ 2011|A Formalization of the C99 Standard in HOL, Isabelle and Coq|10.1007/978-3-642-22673-1_28|14|0|R. Krebbers and F. Wiedijk|4f5516f1cc9d97769e44abc5ea6250e050174839
+ 2013|Computational Verification of Network Programs in Coq|10.1007/978-3-319-03545-1_3|13|1|Gordon Stewart|0549085a388b2772b3eedb8a62c3efd5654d4a1c
+ 2015|A unification algorithm for Coq featuring universe polymorphism and overloading|10.1145/2784731.2784751|12|0|Beta Ziliani and Matthieu Sozeau|61664cd31fa465ababe6c1ce8e0d10d2a15bb0b9
+ 2014|Bringing Coq into the World of GCM Distributed Applications|10.1007/s10766-013-0264-7|11|1|Nuno Gaspar and L. Henrio and E. Madelaine|0e8ec78725517d4cbfc667b04a8f6f16bed1c9e9
+ 2019|A Hybrid Formal Verification System in Coq for Ensuring the Reliability and Security of Ethereum-Based Service Smart Contracts|10.1109/ACCESS.2020.2969437|11|0|Zheng Yang and Hang Lei and Weizhong Qian|29f39232b4fdd69f22c9212d41bdc2e14690a22c
+ 2014|30 years of research and development around Coq|10.1145/2578855.2537848|10|0|G. Huet and Hugo Herbelin|b46004f9d17e3720845c833fbb05c012c9134df3
+ 2018|Call-by-Value Lambda Calculus as a Model of Computation in Coq|10.1007/s10817-018-9484-2|7|0|Y. Forster and G. Smolka|95dba68b129ba0a617ca4f328420f8f9259af4b0
+ 2013|An operational foundation for the tactic language of Coq|10.1145/2505879.2505890|7|0|Wojciech Jedynak and Malgorzata Biernacka and Dariusz Biernacki|b32892ebcba24dc35ca26bfce86f45fd216888ef
+ 2013|Translating Higher-Order Specifications to Coq Libraries Supporting Hybrid Proofs|10.29007/jqtz|3|0|Nada Habli and A. Felty|037ea8aa6131e318d4c9732a8f6f3c251f3301c6
+ 2020|Coq à la carte: a practical approach to modular syntax with binders|10.1145/3372885.3373817|3|0|Y. Forster and Kathrin Stark|3a0e6a70d01db87f52ba81100d4ade869aac6a9a
+ 2012|Towards a Framework for Building Formally Verified Supercompilers in Coq|10.1007/978-3-642-40447-4_9|1|0|D. Krustev|e56ffb2a1acae3e4d6a9bafd206d33068cfb562f
+ 2008|Programming with Effects in Coq|10.1007/978-3-540-70594-9_3|1|0|J. G. Morrisett|c890394f4a24dafbaae3546839efb5bc3ba15106
+ 2018|Type- Theoretical Foundations of the Derivation System in Coq|10.1109/SAIC.2018.8516885|1|0|Vasyl Lenko and V. Pasichnyk and N. Kunanets and Y. Shcherbyna|c22ba6504f78cedede886be7bee43165da9f58fa
+ 2015|Interactive typed tactic programming in the Coq proof assistant|10.22028/D291-26598|1|0|Beta Ziliani|4b34dede898a0e7108beb16f1e0aba20bd16d4f5

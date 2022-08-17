@@ -205,3 +205,45 @@ isbndb 47
  2012|Springer-Verlag New York, LLC|Formal Semantics and Proof Techniques for Optimizing VHDL Models|Kothanda Umamageswaran and Sheetanshu L. Pandey and Philip A. Wilsey|9781461373315
  1998|Not Avail|Contemporary Logic Design 32703 And Vhdl For Programming Logic Package|Katz|9780201308624
  2002||Design Automation. Behavioural Languages. Vhdl Multilogic System For Model Interoperability|British Standards Institute Staff|9780580392665
+
+semanticScholar 39
+ year|title|doi|citations|influentialCitations|authors|paperId
+ 2000|HML, a novel hardware description language and its translation to VHDL|10.1109/92.820756|53|5|Yanbing Li and M. Leeser|d171064b70be10228ba7e60166178338eca52e33
+ 1992|A Guide to VHDL|10.1007/978-1-4757-2114-0|48|2|S. Mazor and Patricia Langstraat|bc6cb7714dd879a58faaf0fc43b0afa6a25ee747
+ 1995|HML: an innovative hardware description language and its translation to VHDL|10.1109/ASPDAC.1995.486388|36|6|Yanbing Li and M. Leeser|5f4ae80a4ebc9b1b9220b5bbd15545b9d1e5d502
+ 2016|VHDL Descriptions for the FPGA Implementation of PWL-Function-Based Multi-Scroll Chaotic Oscillators|10.1371/journal.pone.0168300|26|0|E. Tlelo-Cuautle and A. Quintas-Valles and L. G. de la Fraga and J. Rangel-Magdaleno|1c0543b665dc8cc209d7aa2fa24b8e771baa0af0
+ 1995|A simple denotational semantics, proof theory and a validation condition generator for unit-delay VHDL|10.1007/BF01383872|22|2|Peter T. Breuer and Luis Sánchez-Fernández and C. D. Kloos|97ff0ba97f9aab90c3174a0b378d9fc254ddc1a3
+ 1989|A VHDL compiler based on attribute grammar methodology|10.1145/73141.74829|19|0|Rodney Farrow and A. Stanculescu|e853bf2bec84a2d6ce9fab94e926c95728d6df9a
+ 1997|A refinement calculus for the synthesis of verified hardware descriptions in VHDL|10.1145/262004.262007|18|1|Peter T. Breuer and C. D. Kloos and Andrés Marín López and N. M. Madrid and Luis Sánchez-Fernández|f50caba2299a8bf297514ae2905d4c42530fcaed
+ 2001|An educational environment for VHDL hardware description language using the WWW and specific workbench|10.1109/FIE.2001.963876|17|0|A. Etxebarria and I. Oleagordía and M. Sanchez|89b28bbfc98b8e80ca2f252a61b9308ff5e3f334
+ 2001|VHDL Standards|10.1109/54.953280|15|1|P. Ashenden|7c22efdebce1575636a6a95679cb7e9d2d7633ba
+ 2010|Fuzzy logic controller implementation on a FPGA using VHDL|10.1109/NAFIPS.2010.5548192|14|1|Davi Nunes Oliveira and Arthur Plínio De Souza Braga and Otacílio da Mota Almeida|5c673b78d1e63ac6f73f1fb15b22553283684b07
+ 1995|Denotational semantics of a synchronous VHDL subset|10.1007/BF01383873|11|0|D. Borrione and A. Salem|b3319c892c5b0aa69e41336736ba99dcac9f378c
+ 1997|Source level optimisation of VHDL for behavioural synthesis|10.1049/IP-CDT:19970631|11|1|T.P.K. Nijhar and A. D. Brown|9827364efb7a253c1a87cc62ba4afee22fa17fe4
+ 2003|Transformation of VHDL descriptions into DEVS models for fault modeling|10.1109/ICSMC.2003.1244575|11|0|L. Capocchi and F. Bernardi and D. Federici and P. Bisgambiglia|4bcf61f8160baf127294d5ffc953e13a860b7d49
+ 2010|Design and implementation of a Mamdani Fuzzy Inference System on an FPGA using VHDL|10.1109/NAFIPS.2010.5548190|10|0|Davi Nunes Oliveira and Gustavo Alves de Lima Henn and Otacílio da Mota Almeida|4ee9497b4f706152da5636a3987af3bc8e4bd3bc
+ 2012|Design of FPGA based 8-bit RISC controller IP core using VHDL|10.1109/INDCON.2012.6420656|10|0|R. P. Aneesh and K. Jiju|62bd019dba43b3f6b3b5cab7334d72b362504650
+ 2012|A plug-in to Eclipse for VHDL source codes: functionalities|10.1117/12.2005981|10|0|B. Niton and K. Pozniak and R. Romaniuk|0ba95c75ef89ebce2659c69d6f3c16ed745ea947
+ 1986|VHDL Critique|10.1109/MDT.1986.294917|8|0|J. Nash and Larry F. Saunders|10ba492a9ded9528ca7f5b4d6df99bce5eb0430b
+ 2014|VHDL implementation of IEEE 754 floating point unit|10.1109/ICICES.2014.7033999|8|1|Anjana Sasidharan and P. Nagarajan|afe2bd78298d7258f69eb1581ae6eb7e27d686d8
+ 1998|Application of VHDL to software radio technology|10.1109/IVC.1998.660686|7|0|J. Mccloskey|927431223f02e58668a914d55d6faa4b08e05b4e
+ 2009|Automatic generation of VHDL code from traditional ladder diagrams applying a model-driven engineering approach|10.1109/IECON.2009.5415234|6|0|D. Alonso and J. Suardíaz and P. Navarro and P. Alcover and J.A. Lopez|12b965d688d8e375aef891f3e2e2622ddb1c0684
+ 2010|C to VHDL compiler|10.1117/12.872194|6|0|Piotr P. Berdychowski and Wojciech Zabolotny|bea42052cbc824efc37434c44b6323b7534cd0f5
+ 2016|VHDL models e-assessment in Moodle environment|10.1109/ICETA.2016.7802048|6|0|K. Jelemenska and P. Cicak and M. Gazik|e913e62d72a68bd16d56634dbfef1d1a46eed2d6
+ 1997|ADVISE. Performance evaluation of parallel VHDL simulation|10.1109/SIMSYM.1997.586510|5|0|Wilco Van Hoogstraeten and H. Corporaal|619d7479d26d842136db0820e702e753c867ca60
+ 2013|Combining Software and Hardware Test Generation Methods to Verify VHDL Models|10.5755/j01.itc.42.4.4261|5|0|V. Jusas and Tomas Neverdauskas|c3949af30fa7264f3bd729071d4100878231c350
+ 2013|VHDL Design and Synthesis of 64 bit RISC Processor System on Chip (SoC)|10.9790/4200-0353142|5|1|Navneet Kaur|821c2318b84642225f7331d29696557ea593c591
+ 2018|Designing Digital Systems Using Cartesian Genetic Programming and VHDL|10.1007/978-3-319-67997-6_3|5|0|B. Henson and James Alfred Walker and M. Trefzer and A. Tyrrell|ba08c62f55a4419829df71ed00d91ec02bfc4379
+ 2006|VHDL Implementation of a (255,191) Reed Solomon Coder for DVB-H|10.1109/ISCE.2006.1689531|4|0|M. Mehnert and D.F. von Droste and D. Schiel|a84c91e63422218fbcd63c5ddcf0b7997e489fdb
+ 2017|FPGA implementation of RS codec with interleaver in DVB-T using VHDL|10.14419/IJET.V6I4.8205|4|0|Sara Kamar and Abdelmoniem Fouda and A. Zekry and Abdelmoniem Elmahdy|9fcc6c848e25e67caae95cd73981816adf525ac6
+ 1992|Incremental Design—Application of a Software-based Method for High-level Hardware Design with VHDL|10.1007/978-1-4615-3562-1_19|3|0|A. Hohl|4324a5fd9e183857e2e91c26ba378118687524c4
+ 1998|Modeling digital systems using VHDL|10.1109/45.666643|3|0|P. Ashenden|e3d647aeda4ca7b3e1750fdf67e375b70a6cffbc
+ 2017|VHDL based circuits design and synthesis on FPGA: A dice game example for education|10.1109/SIPROCESS.2017.8124575|3|0|Sarah Toonsi and Miznan G. Behri and S. Qaisar and Enas Melibari and Sarah Alolyan|ef425611ac69bf5c274d1dae140e5310dc19a901
+ 2004|A Small, Effective Vhdl Subset For The Digital Systems Course|10.18260/1-2--14054|2|0|P. Chu|2925c4b23f4999b7dd0f7bfb3e0785788a963be9
+ 2006|Design and Implementation of ARP Functionality Based on VHDL|10.1109/ITST.2006.288751|2|0|Liu Tian-hua and Zhu Hong-feng and Liu Jun and Zhou Chuan-sheng and Chang Gui-ran|d3256a02faa4ef6e74bc14d39a1c39eb29c80cd9
+ 2011|Diseño de un codificador y decodificador digital Reed-Solomon usando programación en VHDL|10.5377/NEXO.V21I01.393|2|0|C. Sandoval and A. Fedón|e8a949fc5db30c8c50626484b32fc063a8e486ae
+ 1999|Adaptive microphone array beamforming for teleconferencing using VHDL and parallel architectures|10.1109/EMPDP.1999.746639|1|0|Tony P. W. Price and D. Howard and A. Lewis and A. Tyrrell|8f65de0ae2550eaee525474b7f1715ed7c9b705e
+ 1991|Switch-Level Modeling in VHDL|10.1007/978-1-4615-3964-3_1|1|0|A. Stanculescu|fdd422be9e2a8914b714d3e459724cd73d6e05fe
+ 2013|Novel Method to Generate Tests for VHDL|10.1007/978-3-642-41947-8_31|1|0|V. Jusas and Tomas Neverdauskas|b1d27adda018659ac9677eb7ed9611680b6408cc
+ 2016|FBDtoVHDL: An Automatic Translation from FBD into VHDL for FPGA Development|10.5626/JOK.2016.43.5.569|1|0|Jaeyeob Kim and Eui-Sub Kim and Junbeom Yoo and Young Jun Lee and J. Choi|b0e3a7ef375095f962ecfcf7f1c604e7a1e042c4
+ 2018|Electronic Circuit and System Design using Python and VHDL|10.1109/ECTICON.2018.8620048|1|0|I. Grout|f502562d4a5352a7ca67872a30fb187587da7712

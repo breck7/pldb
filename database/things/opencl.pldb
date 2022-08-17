@@ -140,3 +140,52 @@ isbndb 14
  2011|Morgan Kaufmann|Heterogeneous Computing with OpenCL|Gaster, Benedict and Howes, Lee and Kaeli, David R. and Mistry, Perhaad and Schaa, Dana|9780123877666
  2011|Manning|OpenCL in Action: How to accelerate graphics and computations|Scarpino, Matthew|9781638352389
  2013-08-26|Packt Publishing|OpenCL Parallel Programming Development Cookbook|Raymond Tay|9781849694537
+
+semanticScholar 46
+ year|title|doi|citations|influentialCitations|authors|paperId
+ 2009|The OpenCL specification|10.1109/HOTCHIPS.2009.7478342|958|97|A. Munshi|d0dd928da77a5510f67dc114b86c677f4502654a
+ 2013|Portable mapping of data parallel programs to OpenCL for heterogeneous systems|10.1109/CGO.2013.6494993|139|13|Dominik Grewe and Zheng Wang and M. O’Boyle|03028a78daf97a01a26975a72c59c8d97cb18810
+ 2012|clSpMV: A Cross-Platform OpenCL SpMV Framework on GPUs|10.1145/2304576.2304624|125|10|Bor-Yiing Su and K. Keutzer|11fa55df451335b846a56c6b295738c32506adeb
+ 2015|Generating performance portable code using rewrite rules: from high-level functional expressions to high-performance OpenCL code|10.1145/2784731.2784754|117|6|Michel Steuwer and Christian Fensch and S. Lindley and Christophe Dubach|8095a0dc01a3f75f85b0baa7890e2fa3463170c4
+ 2012|accULL: An OpenACC Implementation with CUDA and OpenCL Support|10.1007/978-3-642-32820-6_86|84|2|Ruymán Reyes and I. López-Rodríguez and J. Fumero and F. Sande|871d9641582562f9a83ed785ce3051f3e9e95483
+ 2013|HadoopCL: MapReduce on Distributed Heterogeneous Platforms through Seamless Integration of Hadoop and OpenCL|10.1109/IPDPSW.2013.246|54|6|M. Grossman and M. Breternitz and Vivek Sarkar|097ca69fda44a3499771bb2ece41ab5fb561cc6c
+ 2012|Portable LDPC Decoding on Multicores Using OpenCL [Applications Corner]|10.1109/MSP.2012.2192212|47|5|G. F. P. Fernandes and V. Silva and L. Sousa and J. Andrade|9c4b1c13a2d8c7753a90ce6a348a8a49efcc59b5
+ 2015|Comparative analysis of OpenCL vs. HDL with image-processing kernels on Stratix-V FPGA|10.1109/ASAP.2015.7245733|46|2|K. Hill and S. Craciun and A. George and H. Lam|1d7e4503882e2d2972186acacfb547ab4dc23b20
+ 2013|Exploiting the parallelism of heterogeneous systems using dataflow graphs on top of OpenCL|10.1109/ESTIMedia.2013.6704502|31|4|Lars Schor and Andreas Tretter and T. Scherer and L. Thiele|0b7174a7d444c248a11e8a4a8a847c595241cc15
+ 2013|OpenCL Performance Evaluation on Modern Multi Core CPUs|10.1109/IPDPSW.2013.141|28|4|Joo Hwan Lee and Kaushik Patel and Nimit Nigania and Hyojong Kim and Hyesoon Kim|38c71451c23a13460b6c6d6bc3e7e39e36e3cc74
+ 2016|Boost.Compute: A parallel computing library for C++ based on OpenCL|10.1145/2909437.2909454|24|0|J. Szuppe|6f7d9e7ae7deee07d41e8663607fe270d3f66977
+ 2010|OpenCL - An effective programming model for data parallel computations at the Cell Broadband Engine|10.1109/IPDPSW.2010.5470823|21|2|J. Breitbart and Claudia Fohry|90c4de6bea1bd4368b47fff147e10129543639e1
+ 2017|Implementation of Sobel Edge Detection on FPGA based on OpenCL|10.1109/CYBER.2017.8446103|16|1|Baoshan You and W. Sheng and Hongwei Ma and Ye Gu and Yinglin Qin|4885f993418b97b8aa223c63387715adf92598b2
+ 2015|Execution of Dataflow Process Networks on OpenCL Platforms|10.1109/PDP.2015.29|15|0|Wictor Lund and Sudeep Kanur and Johan Ersfolk and Leonidas Tsiopoulos and J. Lilius and Joakim Haldin and U. Falk|21b000428fea4824751d8c3ef8c5a693f6aed498
+ 2015|Evaluating vector data type usage in OpenCL kernels|10.1002/cpe.3424|14|0|Jianbin Fang and A. Varbanescu and Xiangke Liao and H. Sips|d17e5ac835b5744b70652888daef880af44c3c4d
+ 2018|FCLNN: A Flexible Framework for Fast CNN Prototyping on FPGA with OpenCL and Caffe|10.1109/FPT.2018.00043|13|3|Xianchao Xu and Brian Liu|dd4923ad4de0aa2b9e57bdf28d2bf2c28f74d93e
+ 2016|FPGA-based deep-pipelined architecture for FDTD acceleration using OpenCL|10.1109/ICIS.2016.7550742|12|1|H. M. Waidyasooriya and M. Hariyama|947cebc22fc52d3a03fc97cb6d16f8ba795f29a2
+ 2017|Implementation of a performance optimized database join operation on FPGA-GPU platforms using OpenCL|10.1109/NORCHIP.2017.8124981|12|2|Mehdi Roozmeh and L. Lavagno|8b002593453bff7acc5418e225ecb7662964de45
+ 2010|A Hybrid Programming Model for Compressible Gas Dynamics Using OpenCL|10.1109/ICPPW.2010.60|10|0|B. Bergen and Marcus G. Daniels and Paul M. Weber|4fddc1f60a15f4e1c42f971db70f9a339ceccb83
+ 2016|Automatic OpenCL Task Adaptation for Heterogeneous Architectures|10.1007/978-3-319-43659-3_50|8|2|Pierre Huchant and M. Counilh and Denis Barthou|d5622368919f78945272390c0fa1bae819ad8bea
+ 2011|GPU programming for EDA with OpenCL|10.1109/ICCAD.2011.6105306|7|0|R. Topaloglu and Benedict R. Gaster|a65360befbae04151b19ab8d55ced61669cf2965
+ 2020|A Heterogeneous Implementation of the Sobel Edge Detection Filter Using OpenCL|10.1109/MOCAST49295.2020.9200249|7|0|Theodora Sanida and Argyrios Sideris and M. Dasygenis|535b8d4a2681f58923303c177e770d29845fa98a
+ 2018|OpenCL-Darknet: An OpenCL Implementation for Object Detection|10.1109/BigComp.2018.00112|5|0|Yongbon Koo and Chayoung You and Sunghoon Kim|3ff3517534b97dbe8ae11c8fc3d8742ff8499191
+ 2019|OpenCL Implementation of FPGA-Based Signal Generation and Measurement|10.1109/ACCESS.2019.2910391|5|1|I. Firmansyah and Y. Yamaguchi|e54c1eb3136d82938a55c7839ed84aedf12c8da5
+ 2020|Is OpenCL Driven Reconfigurable Hardware Suitable for Virtualising 5G Infrastructure?|10.1109/TNSM.2020.2964392|5|0|F. Civerchia and M. Pelcat and Luca Maggiani and K. Kondepu and P. Castoldi and L. Valcarenghi|159d1bb3f664517eae9882eb06b3c2d350d3517b
+ 2015|Parallel Programming in Actor-Based Applications via OpenCL|10.1145/2814576.2814732|5|0|P. Harvey and Kristian Hentschel and J. Sventek|9a6ae216341217e62269824e5a239b4cc5970314
+ 2017|Implementing and Evaluating OpenCL on an ARMv8 Multi-Core CPU|10.1109/ISPA/IUCC.2017.00131|4|0|Jianbin Fang and P. Zhang and T. Tang and Chun Huang and Canqun Yang|d619f88777cffa7ab32a2edc5a60f5e9887555cb
+ 2018|Parallel implementation of cryptographic algorithm: AES using OpenCL on GPUs|10.1109/ICISC.2018.8398949|4|2|Govardhana Rao Inampudi and K. Shyamala and S. Ramachandram|14d8c6ae902e3ef975eb334f0d4620e8ffcacf4b
+ 2019|A High Performance Parallel Ranking SVM with OpenCL on Multi-core and Many-core Platforms|10.4018/IJGHPC.2019010102|4|0|Huming Zhu and Peidao Li and P. Zhang and Zheng Luo|8ce003a66ffeb58385d8a472231436cebf51b9af
+ 2020|Design and Preliminary Evaluation of OpenACC Compiler for FPGA with OpenCL and Stream Processing DSL|10.1145/3373271.3373274|4|0|Yutaka Watanabe and Jinpil Lee and K. Sano and T. Boku and M. Sato|5bc6a4f0e608a608d7b51dbcb058412d62e3c9a4
+ 2017|Performance-Power Evaluation of an OpenCL Implementation of the Simplex Growing Algorithm for Hyperspectral Unmixing|10.1109/LGRS.2016.2635585|3|0|S. Bernabé and G. Botella and J. Navarro and Carlos Orueta and F. Igual and Manuel Prieto-Matias and A. Plaza|0ec3100e86a7d6ae68301b7d68c1cb0f717852fe
+ 2018|OpenCL Superpixel Implementation on a General Purpose Multi-core CPU|10.1109/IST.2018.8577083|3|0|Hana Haseljic and Emir Cogo and Irfan Prazina and Razija Turcinhodzic and E. Buza and Amila Akagic|5084ea6f4af3eea78e7dc109cd77011ea2066654
+ 2019|Sparse-Matrix Compression Primitives with OpenCL Framework to Support Halide|10.1145/3318170.3318179|3|0|Chao-Lin Lee and Chen-Ting Chao and Jenq-Kuen Lee and Chung-Wen Huang and Ming-Yu Hung|2fa067b5a7bccbb6abcd5a813416fee9202f2989
+ 2020|POCL-R: Distributed OpenCL Runtime for Low Latency Remote Offloading|10.1145/3388333.3388642|3|0|Jan Solanti and Michal Babej and Julius Ikkala and P. Jääskeläinen|edd6701938abde27e38de9f1e8174bb6f04bd0e2
+ 2017|On Coding Techniques for Targeting FPGAs via OpenCL|10.3233/978-1-61499-843-3-652|2|0|N. Paulino and Luís Reis and João MP Cardoso|48fa6e3dd8dc1cdfca0e9b2b3e70e01b3cb5ccef
+ 2017|Hierarchical Read/Write Analysis for Pointer-Based OpenCL Programs on RRAM|10.1109/ICPPW.2017.20|2|0|Lin-Ya Yu and Shao-Chung Wang and Jenq-Kuen Lee|7a79da2046a52253cf8a32b31ac6d8d6beb03955
+ 2018|Towards Dynamic Multi-task Schedulling of OpenCL Programs on Emerging CPU-GPU-FPGA Heterogeneous Platforms: A Fuzzy Logic Approach|10.1109/CloudCom2018.2018.00055|2|0|Ahmad Al-Zoubi and K. Tatas and C. Kyriacou|f7d9d3c51484cfe6864a7d79ea024de35bc28794
+ 2018|2D Stencil Computation on Cyclone V SoC FPGA using OpenCL|10.1109/ICRAMET.2018.8683924|2|0|I. Firmansyah and Y. N. Wijayanto and Y. Yamaguchi|2e21c365d01b9437065c6fa6c75c280cb236098b
+ 2019|"Effective Implementation of ""Kuznyechik"" Block Cipher on FPGA with OpenCL Platform"|10.1109/EICONRUS.2019.8656872|2|0|A. Korobeynikov|5fbf1051badadcccbacb6a25c54848d0b153af9d
+ 2019|Mapping a Guided Image Filter on the HARP Reconfigurable Architecture Using OpenCL|10.3390/A12080149|2|0|Thomas Faict and E. D'Hollander and B. Goossens|3b5beb6639597a451c31fc086b2b6c5d328260b1
+ 2020|Accelerating the AES Algorithm using OpenCL|10.1109/MOCAST49295.2020.9200240|2|0|Theodora Sanida and Argyrios Sideris and M. Dasygenis|1f14f32cf73879a5180be2bce1406d5a89ff5e93
+ 2021|Impact of CUDA and OpenCL on Parallel and Distributed Computing|10.1109/ICEEE52452.2021.9415927|2|0|A. Asaduzzaman and Alec Trent and S. Osborne and C. Aldershof and F. Sibai|b8dd58407502f25fdc07b2ae83659e247c4b1f9b
+ 2020|The C++ for OpenCL Programming Language|10.1145/3388333.3388647|2|0|Anastasia Stulova and N. Hickey and S. V. Haastregt and M. Antognini and Kevin Petit|7aa05827d60185f3792c448075b0562fc15af045
+ 2017|Compiler Techniques for Efficient MATLAB to OpenCL Code Generation|10.1145/3078155.3078186|1|0|Luís Reis and João Bispo and João MP Cardoso|fbbda14de83443327ab0eeb149d1a452152f05e2
+ 2018|Implementation of a C-V2X Receiver on an Over-the-Air Software-Defined-Radio Platform with OpenCL|10.1109/NGCAS.2018.8572101|1|0|Ming-Hsuan Lai and T. Chiueh|93256643b4c58199d0291af1897fa385f1faca9d
+ 2019|Support OpenCL 2.0 Compiler on LLVM for PTX Simulators|10.1007/S11265-018-1377-4|1|0|Chun-Chieh Yang and Shao-Chung Wang and Min-Yih Hsu and Yuan-Ming Chang and Yuan-Shin Hwang and Jenq-Kuen Lee|be47a5bfa6ab236beecf15fed673466f87b56232

@@ -8,3 +8,7 @@ standsFor Unstructured Query Language
 
 example
  SELECT {articleout:cool_nosql_collection.docNumber} FROM cool_nosql_collection
+
+semanticScholar 1
+ year|title|doi|citations|influentialCitations|authors|paperId
+ 2015|Iteration Algebras for UnQL Graphs and Completeness for Bisimulation|10.4204/EPTCS.191.8|3|0|Makoto Hamana|00b6072ba7ecf7d1281c1aaa7bac7a82bc6a277e

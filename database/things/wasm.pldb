@@ -146,3 +146,31 @@ isbndb 13
  44386|Packt Publishing|Blazor WebAssembly by Example|Toi B. Wright; Scott Hanselman|9781800563933
  29-04-2022|Packt Publishing|Game Development with Rust and WebAssembly|Eric Smith|9781801074995
  14-05-2021|Packt Publishing|Creative DIY Microcontroller Projects with TinyGo and WebAssembly|Tobias Theel|9781800563599
+
+semanticScholar 25
+ year|title|doi|citations|influentialCitations|authors|paperId
+ 2017|Bringing the web up to speed with WebAssembly|10.1145/3062341.3062363|307|64|Andreas Haas and Andreas Rossberg and Derek L. Schuff and Ben L. Titzer and Michael Holman and D. Gohman and Luke Wagner and Alon Zakai and J. Bastien|f9420023ec1ee6d7d61d8f61f3c7df33b59afe61
+ 2018|Mechanising and verifying the WebAssembly specification|10.1145/3167082|45|2|C. Watt|8dafcb807d8d2b1f613043069af51ba63ef5d474
+ 2018|Wasabi: A Framework for Dynamically Analyzing WebAssembly|10.1145/3297858.3304068|27|1|Daniel Lehmann and Michael Pradel|4c2d6e7037ba8c4118eb1d2fe25de910871314c9
+ 2019|Weakening WebAssembly|10.1145/3360559|18|3|C. Watt and Andreas Rossberg and Jean Pichon-Pharabod|6fb0698434403b0caa9a32133ad0f90efb36d9cd
+ 2021|An Empirical Study of Real-World WebAssembly Binaries: Security, Languages, Use Cases|10.1145/3442381.3450138|17|3|Aaron Hilbig and Daniel Lehmann and Michael Pradel|53859511943c1cc1da713b436cea1f502ce64c10
+ 2019|Formally Verified Cryptographic Web Applications in WebAssembly|10.1109/SP.2019.00064|17|2|Jonathan Protzenko and Benjamin Beurdouche and Denis Merigoux and K. Bhargavan|f39df8f217036d1fd3e5e44385291f02258a5a7f
+ 2019|WARDuino: a dynamic WebAssembly virtual machine for programming microcontrollers|10.1145/3357390.3361029|16|2|Robbert Gurdeep Singh and Christophe Scholliers|668338ad3648e7540c1718ba94a409cceefc9d3d
+ 2017|Accelerate JavaScript applications by cross-compiling to WebAssembly|10.1145/3141871.3141873|15|1|M. Reiser and Luc Bläser|373cea7cdd706641f4795fb3ff777fb23ace30c8
+ 2018|Virtual Machine Execution for Wearables Based on WebAssembly|10.1007/978-3-030-29897-5_33|11|1|M. Jacobsson and Jonas Willén|c32344f4f80d5d545abeaedb544933a12d0230fe
+ 2018|FAUST Domain Specific Audio DSP Language Compiled to WebAssembly|10.1145/3184558.3185970|8|0|S. Letz and Y. Orlarey and D. Fober|010c899740f3cc29d6dc26ab4065fdc6b9875956
+ 2020|Compositional Information Flow Analysis for WebAssembly Programs|10.1109/SCAM51674.2020.00007|7|0|Quentin Stiévenart and Coen De Roover|854c5480cbb67ae0558d81ce1a25a6778a1b84df
+ 2018|Bringing the web up to speed with WebAssembly|10.1145/3282510|7|0|Andreas Rossberg and Ben L. Titzer and Andreas Haas and Derek L. Schuff and D. Gohman and Luke Wagner and Alon Zakai and J. Bastien and Michael Holman|377c29add6290cc6d4ac30e3571010f3fc987e2c
+ 2018|Sparse matrices on the web: characterizing the performance and optimal format selection of sparse matrix-vector multiplication in javascript and webassembly|10.1145/3237009.3237020|6|0|Prabhjot Sandhu and D. Herrera and L. Hendren|89428a2534ebfc5ae593c22587ca5991f5d33c56
+ 2020|Wasmachine: Bring the Edge up to Speed with A WebAssembly OS|10.1109/CLOUD49709.2020.00056|3|0|Elliott Wen and Gerald Weber|a6580cf09f8153cb59f2935a9f53d9bd7c92aefc
+ 2021|Understanding the performance of webassembly applications|10.1145/3487552.3487827|3|0|Yutian Yan and Tengfei Tu and Lijian Zhao and Yuchen Zhou and Weihang Wang|30f7df3054343ee487d52e94ab7760262ec5958f
+ 2019|SELWasm: A Code Protection Mechanism for WebAssembly|10.1109/ISPA-BDCloud-SustainCom-SocialCom48970.2019.00157|3|0|Jian Sun and Dingyuan Cao and Ximing Liu and Ziyi Zhao and Wenwen Wang and Xiaoli Gong and Jin Zhang|a53f209c578bceeff3f14ea9cf5d431d91f8961f
+ 2020|WASim: Understanding WebAssembly Applications through Classification|10.1145/3324884.3415293|3|0|Alan Romano and Weihang Wang|fbe367aa92c17b5fbc4b439b9d3ed05cddeb17a8
+ 2020|TruffleWasm: a WebAssembly interpreter on GraalVM|10.1145/3381052.3381325|3|1|Salim S. Salim and A. Nisbet and M. Luján|d6fcc99b621cb2156537b94ab1d9034ae682f803
+ 2021|An Empirical Study of Bugs in WebAssembly Compilers|10.1109/ASE51524.2021.9678776|3|0|Alan Romano and Xinyue Liu and Yonghwi Kwon and Weihang Wang|9d75f907e65b5b74d90e8c6d9bdf968288331121
+ 2022|Wobfuscator: Obfuscating JavaScript Malware via Opportunistic Translation to WebAssembly|10.1109/sp46214.2022.9833626|2|0|Alan Romano and Daniel Lehmann and Michael Pradel and Weihang Wang|f041c9d54534217e888eee2f9aba22f682048a69
+ 2020|Superoptimization of WebAssembly bytecode|10.1145/3397537.3397567|2|0|Javier Cabrera-Arteaga and Shrinish Donde and Jian Gu and Orestis Floros and Lucas Satabin and B. Baudry and Monperrus Martin|7f9ad986365a726a97a79cf606c8db9303b1effc
+ 2020|Analysis of WebAssembly as a Strategy to Improve JavaScript Performance on IoT Environments|10.5753/sbesc_estendido.2020.13102|2|0|F. Oliveira and J. Mattos|e72c81c91e2c3f3259a9a28f5157ed132c01f698
+ 2019|Towards a WebAssembly standalone runtime on GraalVM|10.1145/3359061.3362780|1|0|Salim S. Salim and A. Nisbet and M. Luján|79c2622251cf1d7bcd0d266253ccc69da749eb59
+ 2022|Static Stack-Preserving Intra-Procedural Slicing of WebAssembly Binaries|10.1145/3510003.3510070|1|0|Quentin Stiévenart and D. Binkley and Coen De Roover|743067aed49d0f62682d11d2db96bf3f62c969ba
+ 2021|Bringing WebAssembly up to speed with dynamic linking|10.1145/3412841.3442045|1|0|Niko Mäkitalo and Victor Bankowski and Paulius Daubaris and R. Mikkola and Oleg Beletski and T. Mikkonen|85c19f3e93d649ce229ff07daa8ae36e7a1a56bf

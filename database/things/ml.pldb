@@ -79,3 +79,36 @@ isbndb 33
  20120917|De Gruyter|Programmierung - eine Einführung in die Informatik mit Standard ML|Gert Smolka|9783486719734
  20090101|De Gruyter|Programmierung - eine Einführung in die Informatik mit Standard ML|Gert Smolka|9783486595345
  1991|Chapman & Hall|Applicative High Order Programming: Standard Ml In Practice (chapman And Hall Computing Series)|S. Sokolowski|9780442308384
+
+semanticScholar 30
+ year|title|doi|citations|influentialCitations|authors|paperId
+ 1990|Definition of standard ML|10.7551/mitpress/2319.001.0001|2479|100|R. Milner and M. Tofte and R. Harper|37e634588f112478e145fa522a4afb2a40a2d250
+ 1999|Concurrent programming in ML|10.1017/cbo9780511574962|304|35|J. Reppy|ee041315f66165e43199893d511e4887c4a22824
+ 1999|Recursion and dynamic data-structures in bounded space: towards embedded ML programming|10.1145/317636.317785|147|7|John Hughes and L. Pareto|79ee2551ee77ab4323e9eaf52bbd642d6f4d37c9
+ 1998|From ML to Ada: Strongly-typed language interoperability via source translation|10.1017/S0956796898003086|109|10|A. Tolmach and D. Oliva|fd383081c14938ba1f38e5fc385b0a76db90bfea
+ 1994|Programming Objects with ML-ART, an Extension to ML with Abstract and Record Types|10.1007/3-540-57887-0_102|91|3|Didier Rémy|6a424575907fa91582d830a23696ec7a29d0bc2f
+ 2007|Dependent ML An approach to practical programming with dependent types|10.1017/S0956796806006216|83|6|H. Xi|e9a621f0da90fa13e7d48bd98c548657bb5b1896
+ 2012|Resource Aware ML|10.1007/978-3-642-31424-7_64|78|7|Jan Hoffmann and Klaus Aehlig and M. Hofmann|901ad3ea56ae97530cb15c7f761f9e1e026131cd
+ 2014|Proof-producing translation of higher-order logic into pure and stateful ML|10.1017/S0956796813000282|52|7|Magnus O. Myreen and Scott Owens|5b203abc65643b5237ffb703e01ff5ae080b35fe
+ 2017|Programming by Examples: PL Meets ML|10.1007/978-3-319-71237-6_1|39|2|Sumit Gulwani and Prateek Jain|8c9d778a6380f7a5d1f4a04f341215024ed3f90d
+ 1997|ML for the Working Programmer (2nd edition) by L. C. Paulson, Cambridge University Press, 1996. A Practical Course in Functional Programming Using Standard ML by R. Bosworth, McGraw Hill, 1996.|10.1017/S0956796897002761|34|2|C. Reade|cd28200fcc479cafc07a383660766e28acfb97d3
+ 2012|Proof-producing synthesis of ML from higher-order logic|10.1145/2364527.2364545|30|3|Magnus O. Myreen and Scott Owens|58bb00b882700d67779871a6208f288f68a0b71c
+ 1994|Programming with Behaviors in an ML Framework - The Syntax and Semantics of LCS|10.1007/3-540-57880-3_6|27|3|B. Berthomieu and T. Sergent|fb1838077df3bd2bb17ad5a48574e74a1ed2d52f
+ 2011|Making standard ML a practical database programming language|10.1145/2034773.2034815|27|1|A. Ohori and Katsuhiro Ueno|2a2430b6607a077eabac54a8339c1d6b2f2687b7
+ 2016|Eliom: A Core ML Language for Tierless Web Programming|10.1007/978-3-319-47958-3_20|22|4|Gabriel Radanne and Jérôme Vouillon and V. Balat|c68561486aa1eb715b2fd02cb0170f1535670b48
+ 2017|FabULous Interoperability for ML and a Linear Language|10.1007/978-3-319-89366-2_8|13|0|G. Scherer and Max S. New and Nick Rioux and A. Ahmed|33354f7006a13cfac99e3d521127bc2c30f908b1
+ 2010|Functional Parallel Programming with Revised Bulk Synchronous Parallel ML|10.1109/IC-NC.2010.57|11|1|Wadoud Bousdira and F. Gava and Louis Gesbert and F. Loulergue and Guillaume Petiot|8dc34822905f7833306a4f82f8c9e78a2f91f6de
+ 2016|ML Pattern-Matching, Recursion, and Rewriting: From FoCaLiZe to Dedukti|10.1007/978-3-319-46750-4_26|7|0|Raphaël Cauderlier and Catherine Dubois|208552e5bc4a53766f932c3d02bb135e3786246c
+ 2017|Multi-ML: Programming Multi-BSP Algorithms in ML|10.1007/s10766-016-0417-6|7|0|Victor Allombert and F. Gava and J. Tesson|2bf244eb59500a9ee58210232074e74334376bc5
+ 2017|Program generation for ML modules (short paper)|10.1145/3162072|6|0|Takahisa Watanabe and Yukiyoshi Kameyama|6b327154ea724fb75639bff85f2263c8adaa7496
+ 2020|The history of Standard ML|10.1145/3386336|5|0|David B. MacQueen and R. Harper and J. Reppy|d90fe939342b472ce4344c7b437abe9f108e020a
+ 2005|Functional programming languages for verification tools: a comparison of Standard ML and Haskell|10.1007/s10009-004-0184-3|4|0|M. Leucker and T. Noll and P. Stevens and Michael Weber|bb7c485843e97b376ef02d71798cee12daa04178
+ 2017|Implementing Algorithmic Skeletons with Bulk Synchronous Parallel ML|10.1109/PDCAT.2017.00079|4|0|F. Loulergue|a1717062000e907819d70bbc1f2508a6580737fe
+ 1993|Categorical ML — Category-theoretic modular programming|10.1007/BF01212406|3|0|E. Dennis-Jones and D. Rydeheard|dfef120a8a6b7c4e4519f6d9a0171eb5fe689e2b
+ 2017|A BSPlib-style API for Bulk Synchronous Parallel ML|10.12694/scpe.v18i3.1306|2|0|F. Loulergue|6d2c6381ea8e94589fbbe73d65df7ac265295f9f
+ 2018|An ML Implementation of the MULTI-BSP Model|10.1109/HPCS.2018.00085|2|0|Victor Allombert and F. Gava|b883f7f2b598baab7ff13ac9514b65e4c26d4b53
+ 2018|Programming bsp and multi-bsp algorithms in ml|10.1007/s11227-019-02822-9|2|0|Victor Allombert and F. Gava|8c290e8b9393c9f74916203d234ee7315b925fa4
+ 2006|ML grid programming with ConCert|10.1145/1159876.1159879|1|0|Tom Murphy Vii|5ae7538beaa255cede9fac93c2116ef39be77b67
+ 2006|ML grid programming with ConCert|10.1145/1159876.1159879|1|0|Tom Murphy|6172de57616b3faa82b722f86e66136dca3e9694
+ 2019|PML2: Integrated Program Verification in ML|10.4230/LIPIcs.TYPES.2017.5|1|0|Rodolphe Lepigre|0071469f766abf45de3746ad76867ecaa1418c88
+ 2010|Functional Programming in ML|10.1081/E-ESE-120044136|1|0|Lawrence Charles Paulson|3562eb30e03c871a954b47247077e8b6b62d57a5

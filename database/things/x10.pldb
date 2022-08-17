@@ -129,3 +129,45 @@ centralPackageRepositoryCount 0
 isbndb 1
  year|publisher|title|authors|isbn13
  2010||X10 (programming Language)|Surhone and Lambert M. and Timpledon and Miriam T. and Marseken and Susan F.|9786130368838
+
+semanticScholar 39
+ year|title|doi|citations|influentialCitations|authors|paperId
+ 2011|Habanero-Java: the new adventures of old X10|10.1145/2093157.2093165|245|26|Vincent Cavé and Jisheng Zhao and J. Shirako and Vivek Sarkar|8368d2fc947cf6ac46a1d251d1895f2f87c7d498
+ 2007|May-happen-in-parallel analysis of X10 programs|10.1145/1229428.1229471|96|8|Shivali Agarwal and R. Barik and Vivek Sarkar and R. Shyamasundar|7b83b2cc9b4d5c0ce578b96c2508b0aa926fefda
+ 2011|GPU programming in a high level language: compiling X10 to CUDA|10.1145/2212736.2212744|59|8|D. Cunningham and R. Bordawekar and V. Saraswat|c0f1c45ef7c9fb9751fdcc268daac62b70a7bd78
+ 2016|X10 and APGAS at Petascale|10.1145/2894746|38|8|O. Tardieu and Benjamin Herta and D. Cunningham and D. Grove and P. Kambadur and V. Saraswat and Avraham Shinnar and Mikio Takeuchi and M. Vaziri|200de04ff121efa826e2ac653a5f7f60edf9e98c
+ 2011|Resource-aware programming and simulation of MPSoC architectures through extension of X10|10.1145/1988932.1988941|38|0|Frank Hannig and Sascha Roloff and G. Snelting and J. Teich and Andreas Zwinkau|c228daa13e097978c58ac08f08a15c5923f50999
+ 2011|A performance model for X10 applications: what's going on under the hood?|10.1145/2212736.2212737|32|5|D. Grove and O. Tardieu and D. Cunningham and Benjamin Herta and Igor Peshansky and V. Saraswat|7a7e3f0465f888be4d4f373800a1c8ec648fae8e
+ 2013|Towards highly scalable pregel-based graph processing platform with x10|10.1145/2487788.2487984|32|4|Nguyen Thien Bao and T. Suzumura|be79b13765c272635225c517e8fe37b808d77ff7
+ 2011|Communication Optimizations for Distributed-Memory X10 Programs|10.1109/IPDPS.2011.105|30|3|R. Barik and Jisheng Zhao and D. Grove and Igor Peshansky and Zoran Budimlic and Vivek Sarkar|11e2f90c671800107219aca7d69e2e80e2161e16
+ 2009|Towards concurrency refactoring for x10|10.1145/1504176.1504226|22|0|Shane Markstrum and Robert M. Fuhrer and T. Millstein|37c91ce6523af0a1c7d3664b941de14a6f030f49
+ 2014|X10 and APGAS at Petascale|10.1145/2555243.2555245|16|2|O. Tardieu and Benjamin Herta and D. Cunningham and D. Grove and P. Kambadur and V. Saraswat and Avraham Shinnar and Mikio Takeuchi and M. Vaziri|261ebca508a91d71bdedd30872af434b5f67fa6d
+ 2011|Using the Cowichan problems to investigate the programmability of X10 programming system|10.1145/2212736.2212740|16|0|Jeeva Paudel and J. N. Amaral|eeaef2919b123569021297ce09d793c56a5320d8
+ 2012|Object Initialization in X10|10.1007/978-3-642-31057-7_10|15|2|Yoav Zibin and D. Cunningham and Igor Peshansky and V. Saraswat|072a35321e8f95a3cd44a065bb90168062a927c3
+ 2011|Compiling X10 to Java|10.1145/2212736.2212739|14|1|Mikio Takeuchi and Yukifumi Makino and Kiyokuni Kawachiya and H. Horii and T. Suzumura and Toshio Suganuma and Tamiya Onodera|0fdb97e262a15c21b997a654ca3b15455de2517e
+ 2012|StreamX10: a stream programming framework on X10|10.1145/2246056.2246057|13|0|Haitao Wei and Hongshi Tan and Xiaoxian Liu and Junqing Yu|549d0c4b493eb1d3f0dfe638410dbaa617980470
+ 2017|A Malleable and Fault-Tolerant Task Pool Framework for X10|10.1109/CLUSTER.2017.27|12|0|Marco Bungart and Claudia Fohry|35a2d77c89762b824faf3bde9b1211faf7c200dc
+ 2019|Failure Recovery in Resilient X10|10.1145/3332372|12|1|D. Grove and S. Hamouda and Benjamin Herta and A. Iyengar and Kiyokuni Kawachiya and Josh Milthorpe and V. Saraswat and Avraham Shinnar and Mikio Takeuchi and O. Tardieu|61e9054ef9e0cb459350040aae5647a58806f406
+ 2014|Supporting Array Programming in X10|10.1145/2627373.2627380|12|0|D. Grove and Josh Milthorpe and O. Tardieu|997112abeb5b671ef78a903b459e82414906c8a7
+ 2011|Evaluating the Performance and Scalability of MapReduce Applications on X10|10.1007/978-3-642-24151-2_4|8|0|Chao Zhang and Chenning Xie and Zhiwei Xiao and Haibo Chen|19732da7af58cafd4246ec2cb39fba0a9fc528d7
+ 2012|Distributed garbage collection for managed X10|10.1145/2246056.2246061|7|0|Kiyokuni Kawachiya and Mikio Takeuchi and Salikh Zakirov and Tamiya Onodera|e227480bd8c5d4b7f36ab8614398afec9f12dd02
+ 2014|PGAS‐FMM: Implementing a distributed fast multipole method using the X10 programming language|10.1002/cpe.3039|7|0|Josh Milthorpe and A. Rendell and T. Huber|ee8f4acebb70619d1c1bad0bff61d12b1c96ea0f
+ 2017|High-Performance Graph Data Management and Mining in Cloud Environments with X10|10.1007/978-3-319-54645-2_7|6|0|Miyuru Dayarathna and T. Suzumura|8f8bb61eec1488be8ed042c9f174df8d332bce4e
+ 2014|Massively Parallel Reasoning under the Well-Founded Semantics Using X10|10.1109/ICTAI.2014.33|5|1|Ilias Tachmazidis and Long Cheng and S. Kotoulas and G. Antoniou and T. Ward|a7012b1d97d8585d5740aaa856842983cbc988e2
+ 2013|Achieving load-balancing in power system parallel contingency analysis using X10 programming language|10.1145/2481268.2481275|5|0|S. Khaitan and J. McCalley|22affef8e888b99bf726d43f25cb09681a84913f
+ 2012|Towards highly scalable X10 based spectral clustering|10.1109/HiPC.2012.6507522|4|1|Hidefumi Ogata and Miyuru Dayarathna and T. Suzumura|cbd7cdf964fe9e27e03783afef0359529ec00f05
+ 2013|Java interoperability in managed X10|10.1145/2481268.2481278|4|0|Mikio Takeuchi and D. Cunningham and D. Grove and V. Saraswat|e7cf1e2a1c701c786bc18b6b44942e9dd00a0cc2
+ 2014|Improving the Performance of X10 Programs by Clock Removal|10.1007/978-3-642-54807-9_7|4|1|P. Feautrier and E. Violard and A. Ketterlin|7fd7896a880aab358d795f331af77a02f4e2dda3
+ 2015|Optimization of x10 programs with ROSE compiler infrastructure|10.1145/2771774.2771777|4|2|Michihiro Horie and Mikio Takeuchi and Kiyokuni Kawachiya and D. Grove|8c5711f6827e384f2eb21662acfca9bd6fb4582c
+ 2016|A memory model for X10|10.1145/2931028.2931031|4|1|Andreas Zwinkau|0e685e55e0e8fc8610b0e56ac4694af7e632a45d
+ 2014|Optimizing shared data accesses in distributed-memory X10 systems|10.1109/HiPC.2014.7116889|3|0|Jeeva Paudel and O. Tardieu and J. N. Amaral|3081628da81f625f8abdcd20b81e4454189e2ba3
+ 2018|Optimizing remote data transfers in X10|10.1145/3243176.3243209|3|0|A. Thangamani and V. K. Nandivada|ff7e5746eabf4a8570c992cea7eff46ca807dec3
+ 2013|Towards Parallel Constraint-Based Local Search with the X10 Language|10.1007/978-3-319-08909-6_11|3|0|Danny Múnera and Daniel Diaz and Salvador Abreu|ce0f8fe37680885ef18741a5beae16571533a324
+ 2010|Programming Experiences Using the X10 Language|10.1109/MCSE.2010.138|3|0|M. Tajchman|25b6ba3575dd762e7cbca1eed7c5ae7e6c816973
+ 2014|Resolutions of the Coulomb operator: VIII. Parallel implementation using the modern programming language X10|10.1002/jcc.23720|3|0|T. Limpanuparb and Josh Milthorpe and A. Rendell|d61f2b302642d05ae8ca07a85c395935ca7712c7
+ 2009|A comparative study and empirical evaluation of global view High performance Linpack program in X10|10.1145/1809961.1809970|2|0|Ganesh Bikshandi and G. Almási and Sreedhar B. Kodali and Igor Peshansky and V. Saraswat and S. Sur|36258502767e958eaf6d5a13dba381703e57a5cf
+ 2011|X10 implementation of parallel option pricing with BSDE method|10.1145/2212736.2212741|2|0|Hui Liu and Ying Peng and Daizhen Wei and Bin Dai|df6a941760a40328637a29224002f43dc71750ce
+ 2012|Characterization of Smith-Waterman sequence database search in X10|10.1145/2246056.2246058|1|0|Y. Ji and Li Liu and Guangwen Yang|5f6d4070aee2cb36da7fa13e1e8962ae3a606a09
+ 2015|Replicating Data for Better Performances in X10|10.1007/978-3-319-27810-0_12|1|0|Marina Andric and R. Nicola and Alberto Lluch-Lafuente|ba74df6fd230291da5c3df42078819c6c187f133
+ 2016|Control structure overloading in X10|10.1145/2931028.2931032|1|0|Louis Mandel and Josh Milthorpe and O. Tardieu|f5a1217bf2a904bced4b8d1c904f977a339974ff
+ 2015|DPX10: An Efficient X10 Framework for Dynamic Programming Applications|10.1109/ICPP.2015.96|1|0|Chen Wang and Ce Yu and Ji-zhou Sun and X. Meng|f96f73ddb3243bdbc4865d393bc09389af56ba19

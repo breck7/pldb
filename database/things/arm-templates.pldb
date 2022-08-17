@@ -20,3 +20,5 @@ example
      "commandToExecute": "[concat('sh install_lamp.sh ', parameters('mySqlPassword'))]"
    }
  }
+
+semanticScholar 0
