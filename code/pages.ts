@@ -787,8 +787,8 @@ code
       file.isLanguage
         ? `${bookCount} <span title="Books about or leveraging ${file.title}">Books</span>`
         : "",
-      paperCount
-        ? `${paperCount} <span title="Academic papers about or leveraging ${file.title}">Papers</span>`
+      file.isLanguage
+        ? `${paperCount} <span title="Academic publications about or leveraging ${file.title}">Papers</span>`
         : ""
     ]
       .filter(i => i)
