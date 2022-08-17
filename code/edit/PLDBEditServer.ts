@@ -11,6 +11,11 @@ import { PLDBBaseFolder } from "../PLDBBase"
 import { runCommand } from "../utils"
 import simpleGit, { SimpleGit } from "simple-git"
 
+const ignoreFolder = path.join(__dirname, "..", "..", "ignore")
+
+const logPath = path.join(ignoreFolder, "editServerLog.tree")
+Disk.touch(logPath)
+
 const editForm = (content = "") =>
 	`<form method="POST" id="editForm">
 <div class="cell">
@@ -172,6 +177,20 @@ class PLDBEditServer extends TreeBaseServer {
 <a href="errors.html">Errors (HTML)</a> | <a href="errors.csv">Errors (CSV)</a>`)
 	}
 
+	appendToPostLog(route, author, content) {
+		// Write to log for backup in case something goes wrong.
+		Disk.append(
+			logPath,
+			`post
+ route ${route}
+ time ${new Date().toString()}
+ author
+  ${author.replace(/\n/g, "\n ")}
+ content
+  ${content.replace(/\n/g, "\n ")}\n`
+		)
+	}
+
 	addRoutes() {
 		const app = this._app
 		const pldbBase = this._folder
@@ -202,12 +221,14 @@ class PLDBEditServer extends TreeBaseServer {
 		app.get("/create", (req, res) => res.send(template(editForm())))
 
 		app.post("/create", async (req, res) => {
+			const { content, author } = req.body
 			try {
+				this.appendToPostLog("create", author, content)
 				const newFile = pldbBase.createFile(
-					this.checkAndPrettifySubmission(req.body.content)
+					this.checkAndPrettifySubmission(content)
 				)
 
-				const { authorName, authorEmail } = this.parseGitAuthor(req.body.author)
+				const { authorName, authorEmail } = this.parseGitAuthor(author)
 
 				await this.commitFile(
 					newFile.getWord(0),
@@ -221,7 +242,7 @@ class PLDBEditServer extends TreeBaseServer {
 				pldbBase.clearMemos()
 				res.redirect("edit/" + newFile.id + `#commit=${commit}`)
 			} catch (err) {
-				errorForm(req.body.content, err, res)
+				errorForm(content, err, res)
 			}
 		})
 
@@ -266,12 +287,14 @@ class PLDBEditServer extends TreeBaseServer {
 			const { id } = req.params
 			const file = pldbBase.getFile(id)
 			if (!file) return notFound(id, res)
+			const { content, author } = req.body
 
 			try {
-				file.setChildren(this.checkAndPrettifySubmission(req.body.content))
-				file.save()
+				this.appendToPostLog(id, author, content)
+				file.setChildren(this.checkAndPrettifySubmission(content))
+				file.prettifyAndSave()
 
-				const { authorName, authorEmail } = this.parseGitAuthor(req.body.author)
+				const { authorName, authorEmail } = this.parseGitAuthor(author)
 
 				await this.commitFile(
 					file.getWord(0),
@@ -284,7 +307,7 @@ class PLDBEditServer extends TreeBaseServer {
 
 				res.redirect(id + `#commit=${commit}`)
 			} catch (err) {
-				errorForm(req.body.content, err, res)
+				errorForm(content, err, res)
 			}
 		})
 	}
@@ -305,12 +328,8 @@ class PLDBEditServer extends TreeBaseServer {
 
 	listenProd() {
 		this.gitOn = true
-		const key = fs.readFileSync(
-			path.join(__dirname, "..", "..", "ignore", "privkey.pem")
-		)
-		const cert = fs.readFileSync(
-			path.join(__dirname, "..", "..", "ignore", "fullchain.pem")
-		)
+		const key = fs.readFileSync(path.join(ignoreFolder, "privkey.pem"))
+		const cert = fs.readFileSync(path.join(ignoreFolder, "fullchain.pem"))
 		https
 			.createServer(
 				{
