@@ -8,3 +8,12 @@ description Rise is a functional pattern-based language in the style of Lift. Ri
      B |> map(fun(bcol =>
       zip(arow, bcol) |> map(*) |> reduce(+, 0) )) ))))
 reference https://michel.steuwer.info/files/publications/2020/accML.pdf
+
+semanticScholar 6
+ year|title|doi|citations|influentialCitations|authors|paperId
+ 2007|The rise and fall of High Performance Fortran: an historical object lesson|10.1145/1238844.1238851|127|13|K. Kennedy and C. Koelbel and H. Zima|73bf064ce3156572ce7909c2a1553f1fc4d08e35
+ 2015|Perceptions of non-CS majors in intro programming: The rise of the conversational programmer|10.1109/VLHCC.2015.7357224|42|5|Parmit K. Chilana and C. Alcock and Shruti Dembla and Anson Ho and A. Hurst and Brett Armstrong and Philip J. Guo|7b03e7fb24102b8bdb440693db048f3dde29156a
+ 2006|Flow Diagrams: Rise and Fall of the First Software Engineering Notation|10.1007/11783183_17|21|1|S. Morris and O. Gotel|682940be02444ad4d3aa068779ad6c416b68318e
+ 2016|Jolie Community on the Rise|10.1109/SOCA.2016.16|12|0|Alexey Bandura and N. Kurilenko and M. Mazzara and V. Rivera and Larisa Safina and Alexander Tchitchigin|6f65dfa3f92c14e3a224e6a08cc1148729f68b47
+ 2015|A Cultural Diffusion Model for the Rise and Fall of Programming Languages|10.13110/humanbiology.87.3.0224|6|1|S. Valverde and R. Solé|e056673e911bcbedc1b1a8217bcfafe179669509
+ 2018|The Rise of U.S. Spanish-Language Radio|10.1080/00947679.2018.12059208|1|0|Andrew Paxman|e6e77d925695352bce5cd67c18001f09bec2fd8a
