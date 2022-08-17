@@ -48,8 +48,10 @@ class BigQueryImporter {
 	writeAllCommand() {
 		this.matched.forEach(pair => {
 			const { file, row } = pair
+			file.set("githubBigQuery", row.language)
 			file.set("githubBigQuery repos", row.repos)
 			file.set("githubBigQuery users", row.users)
+			file.prettifyAndSave()
 		})
 	}
 

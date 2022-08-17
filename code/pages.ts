@@ -476,6 +476,16 @@ ${facts.map(fact => ` - ${fact}`).join("\n")}`
       )
     }
 
+    const githubBigQuery = file.getNode("githubBigQuery")
+    if (githubBigQuery) {
+      const url = `https://api.github.com/search/repositories?q=language:${githubBigQuery.getContent()}`
+      const userCount = numeral(githubBigQuery.get("users")).format("0a")
+      const repoCount = numeral(githubBigQuery.get("repos")).format("0a")
+      facts.push(
+        `${userCount} users are using ${title} in at least ${repoCount} repos on <a href="${url}">GitHub</a>`
+      )
+    }
+
     const meetup = file.get("meetup")
     if (meetup) {
       const groupCount = numeral(file.get("meetup groupCount")).format("0,0")

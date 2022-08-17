@@ -1,0 +1,16 @@
+githubBigQueryNode
+ cruxFromId
+ description Google BigQuery Public Datasets has a dataset with info on GitHub repos: https://cloud.google.com/blog/topics/public-datasets/github-on-bigquery-analyze-all-the-open-source-code
+ extends abstractOneWordGuidNode
+ contentKey id
+ inScope ghBqUserCountNode ghBqRepoCountNode
+ todo Anon node types would be useful here
+ string sourceDomain cloud.google.com
+ghBqUserCountNode
+ crux users
+ extends abstractPopulationCountNode
+ single
+ghBqRepoCountNode
+ crux repos
+ extends abstractCountNode
+ single

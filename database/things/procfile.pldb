@@ -8,6 +8,10 @@ features
 example
  web: bundle exec rails server -p $PORT
 
+githubBigQuery Procfile
+ repos 1041
+ users 904
+
 pygmentsHighlighter Procfile
  filename procfile.py
  fileExtensions Procfile
