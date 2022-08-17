@@ -541,6 +541,13 @@ class PLDBBaseFolder extends TreeBaseFolder {
       const id = file.id
       map.set(file.id, id)
       map.set(file.title, id)
+
+      const standsFor = file.get("standsFor")
+      if (standsFor) map.set(standsFor, id)
+
+      const githubLanguage = file.get("githubLanguage")
+      if (githubLanguage) map.set(githubLanguage, id)
+
       const wp = file.wikipediaTitle
       if (wp) map.set(wp, id)
       const aka = file.getAll("aka")

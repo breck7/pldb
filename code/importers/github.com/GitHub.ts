@@ -6,6 +6,8 @@ import { runCommand, PoliteCrawler } from "../../utils"
 import { jtree } from "jtree"
 
 const { Disk } = require("jtree/products/Disk.node.js")
+const { TreeNode } = jtree
+const YAML = require("yaml")
 
 const cacheDir = __dirname + "/cache/"
 const reposDir = cacheDir + "repos/"
@@ -16,6 +18,7 @@ pldbBase.loadFolder()
 const superagent = require("superagent")
 const repoFirstCommit = require("repo-first-commit")
 const dayjs = require("dayjs")
+const path = require("path")
 
 const creds = JSON.parse(Disk.read(__dirname + "/ignore/creds.json"))
 const { apiToken, apiUser } = creds
@@ -234,6 +237,58 @@ class GitHubImporter {
 				.autocompleteAppeared()
 				.autocompleteCreators()
 		})
+	}
+
+	get langs() {
+		const map = this.yamlMap
+		return Object.keys(map).map(key => {
+			const value = map[key]
+			value.title = key
+			return value
+		})
+	}
+
+	get yamlMap() {
+		return YAML.parse(Disk.read(path.join(cacheDir, "languages.yml")))
+	}
+
+	async writeLanguagesCommand() {
+		console.log(
+			"Make sure to download https://raw.githubusercontent.com/github/linguist/master/lib/linguist/languages.yml to cacheDir"
+		)
+		console.log(this.langs)
+	}
+
+	get pairs() {
+		return this.langs.map(lang => {
+			const id = pldbBase.searchForEntity(lang.title)
+			return { file: pldbBase.getFile(id), lang }
+		})
+	}
+
+	get matched() {
+		return this.pairs.filter(row => row.file)
+	}
+
+	get unmatched() {
+		return this.pairs
+			.filter(row => row.file === undefined)
+			.map(item => item.lang)
+	}
+
+	listOutdatedCommand() {
+		const map = this.yamlMap
+		pldbBase.forEach(file => {
+			const title = file.get("githubLanguage")
+			if (title && !map[title])
+				console.log(`Outdated: "${file.id}" has "${title}"`)
+		})
+	}
+
+	listUnmatchedCommand() {
+		const missingPath = path.join(cacheDir, "missingLangs.json")
+		Disk.write(missingPath, JSON.stringify(this.unmatched, null, 2))
+		console.log(`Wrote ${this.unmatched.length} missing to: ${missingPath}`)
 	}
 
 	get linkedFiles() {
