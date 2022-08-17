@@ -11,6 +11,9 @@ runsOnVmNode
 influencedByNode
  description What languages influenced this one?
  extends abstractRelationshipNode
+successorOfNode
+ description Was this language launched as the success of another?
+ extends abstractRelationshipNode
 subsetOfNode
  description Is this language a subset of another?
  extends abstractRelationshipNode
