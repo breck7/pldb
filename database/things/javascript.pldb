@@ -35,7 +35,7 @@ features
     debugger
  hasPointers false
  hasIntegers true
-  const pldb = 80766866
+  80766866
  hasLists true
   const list = [1,2,3]
  mergesWhitespace true
@@ -213,12 +213,16 @@ features
   set.add("foo")
  hasOctals true
   // 0[oO]?[0-7]+n?
+  0o464063622
  hasHexadecimals true
   // 0[xX][0-9a-fA-F]+n?
+  0x4D06792
  hasFloats true
   // (\.[0-9]+|[0-9]+\.[0-9]*|[0-9]+)([eE][-+]?[0-9]+)?
+  80766866.0
  hasBinaryNumbers true
   // 0[bB][01]+n?
+  0b100110100000110011110010010
 
 lineCommentToken //
 multiLineCommentTokens /* */
