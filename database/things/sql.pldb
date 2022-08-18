@@ -17,6 +17,7 @@ features
  hasBooleans true
  hasIntegers true
   -- [0-9]+
+ hasFixedPoint true
 
 lineCommentToken --
 multiLineCommentTokens /* */

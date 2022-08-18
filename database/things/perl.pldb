@@ -59,6 +59,7 @@ features
   # \d+(_\d+)*
  hasBinaryNumbers true
   # 0b[01]+(_[01]+)*
+ hasScientificNotation true
 
 lineCommentToken #
 multiLineCommentTokens =begin =cut

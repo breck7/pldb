@@ -58,7 +58,7 @@ class PLDBUpdater {
       Object.keys(entry).forEach(key =>
         file.set(key.replace(".", " "), entry[key])
       )
-      file.save()
+      file.prettifyAndSave()
     })
   }
 

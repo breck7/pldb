@@ -64,6 +64,8 @@ features
  hasStrings true
   'Hello world'
  isCaseSensitive false
+ hasFixedPoint false
+ hasScientificNotation true
 
 lineCommentToken C
 lineCommentToken !

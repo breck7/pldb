@@ -143,6 +143,8 @@ features
  hasConstants true
  hasSwitch true
  hasConditionals true
+ hasFixedPoint false
+ hasScientificNotation true
 
 lineCommentToken //
 multiLineCommentTokens /* */

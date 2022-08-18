@@ -223,6 +223,7 @@ features
  hasBinaryNumbers true
   // 0[bB][01]+n?
   0b100110100000110011110010010
+ hasScientificNotation true
 
 lineCommentToken //
 multiLineCommentTokens /* */

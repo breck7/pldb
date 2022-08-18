@@ -14,6 +14,7 @@ features
   // (\d+\.\d*|\d*\.\d+)([eEf][+-]?[0-9]+)?
  hasIntegers true
   // \d+
+ hasScientificNotation true
 
 lineCommentToken //
 printToken disp

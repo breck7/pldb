@@ -16,6 +16,7 @@ features
  hasPrintDebugging true
  hasSemanticIndentation false
  hasBooleans true
+ hasFixedPoint true
 
 lineCommentToken *>
 printToken DISPLAY

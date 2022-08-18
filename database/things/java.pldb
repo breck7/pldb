@@ -112,6 +112,7 @@ features
   // 0|[1-9][0-9_]*[lL]?
  hasBinaryNumbers true
   // 0[bB][01][01_]*[lL]?
+ hasScientificNotation true
 
 lineCommentToken //
 multiLineCommentTokens /* */

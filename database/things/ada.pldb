@@ -58,6 +58,8 @@ features
   -- [0-9_]+\.[0-9_]*
  hasIntegers true
   -- [0-9_]+
+ hasFixedPoint true
+ hasScientificNotation true
 
 lineCommentToken --
 printToken Text_IO.Put_Line
