@@ -18,10 +18,10 @@ features
   puts "Hello World".match(/\w/)
  hasDuckTyping true
  hasIntegers true
-  score = 100
+  pldb = 80766866
  hasBooleans true
  hasAssignment true
-  score = 100
+  pldb = 80766866
  hasExceptions true
   def hello
    puts "Hello, World!"
