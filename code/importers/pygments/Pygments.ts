@@ -6,8 +6,7 @@ import { runCommand } from "../../utils"
 import { jtree } from "jtree"
 
 const cacheDir = __dirname + "/cache/"
-const pldbBase = PLDBBaseFolder.getBase()
-pldbBase.loadFolder()
+const pldbBase = PLDBBaseFolder.getBase().loadFolder()
 const { Disk } = require("jtree/products/Disk.node.js")
 const outputFile = cacheDir + "output.json"
 

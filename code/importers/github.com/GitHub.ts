@@ -12,8 +12,7 @@ const YAML = require("yaml")
 const cacheDir = __dirname + "/cache/"
 const reposDir = cacheDir + "repos/"
 const firstCommitCache = cacheDir + "firstCommits/"
-const pldbBase = PLDBBaseFolder.getBase()
-pldbBase.loadFolder()
+const pldbBase = PLDBBaseFolder.getBase().loadFolder()
 
 const superagent = require("superagent")
 const repoFirstCommit = require("repo-first-commit")

@@ -9,8 +9,7 @@ const whois = require("whois-json")
 const lodash = require("lodash")
 
 const cacheDir = __dirname + "/cache/"
-const pldbBase = PLDBBaseFolder.getBase()
-pldbBase.loadFolder()
+const pldbBase = PLDBBaseFolder.getBase().loadFolder()
 const { Disk } = require("jtree/products/Disk.node.js")
 Disk.mkdir(cacheDir)
 

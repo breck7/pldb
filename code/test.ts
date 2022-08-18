@@ -6,8 +6,7 @@ const grammarNode = require("jtree/products/grammar.nodejs.js")
 const { Disk } = require("jtree/products/Disk.node.js")
 
 import { PLDBBaseFolder } from "./PLDBBase"
-const pldbBase = PLDBBaseFolder.getBase()
-pldbBase.loadFolder()
+const pldbBase = PLDBBaseFolder.getBase().loadFolder()
 
 const runTree = testTree =>
 	Object.keys(testTree).forEach(key => {
@@ -30,7 +29,7 @@ testTree.ensureNoErrorsInBlog = areEqual => {}
 testTree.ensureNoErrorsInDb = areEqual => {
 	const { errors } = pldbBase
 	if (errors.length) console.log(errors)
-	areEqual(errors.length, 0)
+	areEqual(errors.length, 0, "no errors in db")
 }
 
 testTree.ensurePrettifiedCausesNoSemanticChanges = areEqual => {

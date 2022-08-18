@@ -344,8 +344,7 @@ class PLDBEditServer extends TreeBaseServer {
 
 class PLDBEditServerCommands {
 	get server() {
-		const pldbBase = PLDBBaseFolder.getBase()
-		pldbBase.loadFolder()
+		const pldbBase = PLDBBaseFolder.getBase().loadFolder()
 		pldbBase.startListeningForFileChanges()
 		const server = new (<any>PLDBEditServer)(pldbBase)
 		server.addRoutes()

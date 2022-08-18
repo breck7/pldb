@@ -10,8 +10,7 @@ const lodash = require("lodash")
 const { TreeNode } = jtree
 
 const cacheDir = __dirname + "/cache/"
-const pldbBase = PLDBBaseFolder.getBase()
-pldbBase.loadFolder()
+const pldbBase = PLDBBaseFolder.getBase().loadFolder()
 const { Disk } = require("jtree/products/Disk.node.js")
 
 const monacoFolder = cacheDir + "monaco-editor/src/basic-languages/"

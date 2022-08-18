@@ -6,8 +6,6 @@ const lodash = require("lodash")
 
 const cacheDir = __dirname + "/cache/"
 
-const pldbBase = PLDBBaseFolder.getBase()
-
 const { Disk } = require("jtree/products/Disk.node.js")
 
 const wiki = require("wikijs").default
@@ -20,7 +18,7 @@ const yearRegex = /(released|started|began|published|designed|announced|develope
 const yearRegexRelaxed = /\D(200\d|201\d|199\d|198\d|197\d|196\d|195\d)\D/g
 const withContext = /(\D{3,18}[12][890]\d\d\D{1,18})/gi
 
-pldbBase.loadFolder()
+const pldbBase = PLDBBaseFolder.getBase().loadFolder()
 Disk.mkdir(cacheDir)
 
 class PLDBFileWithWikipedia {

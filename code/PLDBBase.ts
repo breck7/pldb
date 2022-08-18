@@ -50,6 +50,7 @@ interface Example {
 
 const databaseFolder = path.join(__dirname, "..", "database")
 
+// Todo: move to Grammar with an enum concept?
 const typeNames = new TreeNode(`application
 assembly assembly language
 binaryDataFormat
@@ -90,7 +91,21 @@ vm virtual machine
 webApi
 xmlFormat`).toObject()
 
+const runtimeCsvProps = {}
+const includeInCsv = <Type>(
+  target: unknown,
+  propertyName: string,
+  descriptor: TypedPropertyDescriptor<Type>
+): void => {
+  runtimeCsvProps[propertyName] = ""
+}
+
 class PLDBFile extends TreeBaseFile {
+  @includeInCsv
+  get pldbId() {
+    return this.id
+  }
+
   get domainName() {
     return this.get("domainName")
   }
@@ -99,6 +114,7 @@ class PLDBFile extends TreeBaseFile {
     return `<a href="${this.id}.html">${this.title}</a>`
   }
 
+  @includeInCsv
   get bookCount() {
     const gr = this.getNode(`goodreads`)?.length
     const isbndb = this.getNode(`isbndb`)?.length
@@ -108,6 +124,7 @@ class PLDBFile extends TreeBaseFile {
     return count
   }
 
+  @includeInCsv
   get paperCount() {
     const ss = this.getNode(`semanticScholar`)?.length
 
@@ -158,6 +175,7 @@ class PLDBFile extends TreeBaseFile {
       : this.base.getFileAtRank(this.rank + 1)
   }
 
+  @includeInCsv
   get exampleCount() {
     return this.allExamples.length + this.featuresWithExamples.length
   }
@@ -398,10 +416,12 @@ class PLDBFile extends TreeBaseFile {
     return wp ? wp.replace("https://en.wikipedia.org/wiki/", "").trim() : ""
   }
 
+  @includeInCsv
   get numberOfUsers() {
     return this.base.predictNumberOfUsers(this)
   }
 
+  @includeInCsv
   get numberOfJobs() {
     return this.base.predictNumberOfJobs(this)
   }
@@ -415,10 +435,12 @@ class PLDBFile extends TreeBaseFile {
     return supersetOf ? this.base.getFile(supersetOf) : undefined
   }
 
+  @includeInCsv
   get languageRank() {
-    return this.base.getLanguageRank(this)
+    return this.isLanguage ? this.base.getLanguageRank(this) : undefined
   }
 
+  @includeInCsv
   get rank() {
     return this.base.getRank(this)
   }
@@ -447,6 +469,7 @@ class PLDBFile extends TreeBaseFile {
     return super.parsed
   }
 
+  @includeInCsv
   @imemo
   get factCount() {
     return this.parsed.filter(node => node.shouldSerialize !== false).length
@@ -458,6 +481,7 @@ class PLDBFile extends TreeBaseFile {
       .map(word => word.word)
   }
 
+  @includeInCsv
   get lastActivity(): number {
     return lodash.max(
       this.parsed
@@ -820,7 +844,14 @@ class PLDBBaseFolder extends TreeBaseFolder {
     return map
   }
 
-  get docsTable() {
+  get colNamesForCsv() {
+    return this.columnDocumentation.map(col => col.Column)
+  }
+
+  @imemo
+  get columnDocumentation() {
+    // Return columns with documentation sorted in the most interesting order.
+
     const { colNameToGrammarDefMap } = this
     const objects = this.toObjectsForCsv()
     const colNames = new TreeNode(objects)
@@ -855,19 +886,44 @@ class PLDBBaseFolder extends TreeBaseFolder {
       })
       .filter(col => col.Values)
 
-    return lodash.sortBy(cols, "Column")
+    const sortTemplate = `title
+appeared
+type
+pldbId
+rank
+languageRank
+factCount
+lastActivity
+exampleCount
+bookCount
+paperCount
+numberOfUsers
+numberOfJobs
+githubBigQuery.repos
+creators
+githubRepo
+website
+wikipedia`.split("\n")
+
+    const sortedCols = []
+    sortTemplate.forEach(colName => {
+      const hit = cols.find(col => col.Column === colName)
+      sortedCols.push(hit)
+    })
+
+    lodash
+      .sortBy(cols, "Values")
+      .reverse()
+      .forEach(col => {
+        if (!sortTemplate.includes(col.Column)) sortedCols.push(col)
+      })
+
+    return sortedCols
   }
 
   @imemo
   get nodesForCsv() {
-    const runTimeProps = [
-      "id",
-      "rank",
-      "lastActivity",
-      "exampleCount",
-      "bookCount",
-      "paperCount"
-    ]
+    const runTimeProps = Object.keys(runtimeCsvProps)
     return this.map(file => {
       const clone = file.parsed.clone()
       clone.getTopDownArray().forEach(node => {

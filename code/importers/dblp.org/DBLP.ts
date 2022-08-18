@@ -7,8 +7,7 @@ import { jtree } from "jtree"
 
 const { Disk } = require("jtree/products/Disk.node.js")
 
-const pldbBase = PLDBBaseFolder.getBase()
-pldbBase.loadFolder()
+const pldbBase = PLDBBaseFolder.getBase().loadFolder()
 
 const cachePath = __dirname + "/cache/"
 Disk.mkdir(cachePath)

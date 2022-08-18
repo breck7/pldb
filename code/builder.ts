@@ -277,11 +277,18 @@ ${text}`
   @benchmark
   buildCsvs() {
     const objects = pldbBase.toObjectsForCsv()
+    const { colNamesForCsv } = pldbBase
 
-    Disk.write(websiteFolder + "/pldb.csv", new TreeNode(objects).toCsv())
+    Disk.write(
+      websiteFolder + "/pldb.csv",
+      new TreeNode(objects).toDelimited(",", colNamesForCsv)
+    )
     Disk.write(
       websiteFolder + "/languages.csv",
-      new TreeNode(objects.filter(obj => isLanguage(obj.type))).toCsv()
+      new TreeNode(objects.filter(obj => isLanguage(obj.type))).toDelimited(
+        ",",
+        colNamesForCsv
+      )
     )
 
     this.buildDocs()
@@ -307,7 +314,7 @@ ${text}`
       this._scrollExtensionsFile
     )
 
-    const { docsTable } = pldbBase
+    const { columnDocumentation } = pldbBase
 
     Disk.write(
       path.join(docsDir, "columns.scroll"),
@@ -318,13 +325,15 @@ columnWidth 80
 tableSearch
 
 aftertext
- \`pldb.csv\` contains ${pldbBase.length} rows and ${docsTable.length} columns.
+ \`pldb.csv\` contains ${pldbBase.length} rows and ${
+        columnDocumentation.length
+      } columns.
  wrapsOn
  link https://pldb.com/pldb.csv pldb.csv
 
 pipeTable
  ${cleanAndRightShift(
-   new TreeNode(docsTable).toDelimited("|", [
+   new TreeNode(columnDocumentation).toDelimited("|", [
      "Column",
      "Values",
      "Coverage",

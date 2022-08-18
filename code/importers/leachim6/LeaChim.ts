@@ -9,8 +9,7 @@ const { TreeNode } = jtree
 
 const cacheDir = __dirname + "/cache/"
 const hwDir = cacheDir + "hello-world/"
-const pldbBase = PLDBBaseFolder.getBase()
-pldbBase.loadFolder()
+const pldbBase = PLDBBaseFolder.getBase().loadFolder()
 const { Disk } = require("jtree/products/Disk.node.js")
 
 const skips = [`MOONBlock`, "Executable", "Scratch ", "Pxem", "Piet"]
