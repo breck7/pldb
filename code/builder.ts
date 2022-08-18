@@ -39,8 +39,8 @@ import {
 } from "./utils"
 
 const lastHash = lastCommitHashInFolder()
-const builtOn = dayjs().format("MMMM D, YYYY")
-const version = `<a title="This page built on ${builtOn} from commit ${lastHash}" href="https://github.com/breck7/pldb/commit/${lastHash}">${builtOn}</a>`
+const builtOn = dayjs().format("YYYY")
+const version = `<a title="This page was built in ${builtOn} from commit ${lastHash}" href="https://github.com/breck7/pldb/commit/${lastHash}">v${builtOn}</a>`
 const settingsFile = Disk.read(path.join(blogDir, "scroll.settings")).replace(
   /PLDB_BUILT_ON/g,
   version
