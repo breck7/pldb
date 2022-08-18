@@ -196,6 +196,14 @@ const _re = new RegExp(
 )
 const getLinks = str => str.match(_re) || []
 
+const lastCommitHashInFolder = (cwd = __dirname) =>
+  require("child_process")
+    .execSync("git rev-parse HEAD", {
+      cwd
+    })
+    .toString()
+    .trim()
+
 const replaceNext = (node, path, newContent) =>
   node
     .find(node => node.getLine().startsWith(path))
@@ -382,5 +390,6 @@ export {
   clearMemos,
   listMemos,
   listGetters,
-  getLinks
+  getLinks,
+  lastCommitHashInFolder
 }

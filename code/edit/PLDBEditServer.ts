@@ -8,7 +8,7 @@ const { jtree } = require("jtree")
 const { Disk } = require("jtree/products/Disk.node.js")
 const { TreeBaseServer } = require("jtree/products/treeBase.node.js")
 import { PLDBBaseFolder } from "../PLDBBase"
-import { runCommand } from "../utils"
+import { runCommand, lastCommitHashInFolder } from "../utils"
 import simpleGit, { SimpleGit } from "simple-git"
 
 const ignoreFolder = path.join(__dirname, "..", "..", "ignore")
@@ -92,13 +92,6 @@ class PLDBEditServer extends TreeBaseServer {
 				]
 			})
 		return this._git
-	}
-
-	private async lastCommitHash() {
-		return require("child_process")
-			.execSync("git rev-parse HEAD")
-			.toString()
-			.trim()
 	}
 
 	private async commitFile(
@@ -237,7 +230,7 @@ class PLDBEditServer extends TreeBaseServer {
 					authorEmail
 				)
 
-				const commit = await this.lastCommitHash()
+				const commit = lastCommitHashInFolder()
 
 				pldbBase.clearMemos()
 				res.redirect("edit/" + newFile.id + `#commit=${commit}`)
@@ -303,7 +296,7 @@ class PLDBEditServer extends TreeBaseServer {
 					authorEmail
 				)
 
-				const commit = await this.lastCommitHash()
+				const commit = lastCommitHashInFolder()
 
 				res.redirect(id + `#commit=${commit}`)
 			} catch (err) {

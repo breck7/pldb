@@ -22,11 +22,11 @@ const rootDir = path.join(codeDir, "..")
 const blogDir = path.join(rootDir, "blog")
 const websiteFolder = path.join(rootDir, "pldb.local")
 const docsDir = path.join(websiteFolder, "docs")
+const dayjs = require("dayjs")
 const databaseFolderWhenPublishedToWebsite = path.join(
   websiteFolder,
   "languages"
 ) // Todo: eventually redirect away from /languages?
-const settingsFile = Disk.read(path.join(blogDir, "scroll.settings"))
 
 import {
   replaceNext,
@@ -34,8 +34,17 @@ import {
   benchmark,
   benchmarkResults,
   listGetters,
-  cleanAndRightShift
+  cleanAndRightShift,
+  lastCommitHashInFolder
 } from "./utils"
+
+const lastHash = lastCommitHashInFolder()
+const builtOn = dayjs().format("MMMM D, YYYY")
+const version = `<a title="This page built on ${builtOn} from commit ${lastHash}" href="https://github.com/breck7/pldb/commit/${lastHash}">${builtOn}</a>`
+const settingsFile = Disk.read(path.join(blogDir, "scroll.settings")).replace(
+  /PLDB_BUILT_ON/g,
+  version
+)
 
 class Builder extends AbstractBuilder {
   _cpAssets() {
