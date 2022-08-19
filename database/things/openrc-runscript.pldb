@@ -123,6 +123,7 @@ githubLanguage OpenRC runscript
  group Shell
  aliases
   openrc
+ interpreters openrc-run
 
 linguistGrammarRepo https://github.com/atom/language-shellscript
  firstCommit 2013

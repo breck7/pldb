@@ -17,6 +17,10 @@ githubLanguageFilenamesNode
  extends abstractGitHubLanguageNode
  description An Array of filenames commonly associated with the language.
  crux filenames
+githubLanguageInterpretersNode
+ extends abstractGitHubLanguageNode
+ description An Array of associated interpreters
+ crux interpreters
 githubLanguageAliasesNode
  extends abstractGitHubLanguageNode
  description An Array of additional aliases (implicitly includes name.downcase).
