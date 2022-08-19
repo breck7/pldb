@@ -135,6 +135,10 @@ githubLanguage Fortran
  trendingProjectsCount 3
  type programming
  group Fortran
+ ace_mode text
+ codemirror_mode fortran
+ codemirror_mime_type text/x-fortran
+ tm_scope source.fortran
 githubBigQuery Fortran
  repos 2820
  users 2446

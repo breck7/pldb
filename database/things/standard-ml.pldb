@@ -42,6 +42,10 @@ githubLanguage Standard ML
  type programming
  aliases
   sml
+ ace_mode text
+ codemirror_mode mllike
+ codemirror_mime_type text/x-ocaml
+ tm_scope source.ml
 githubBigQuery Standard ML
  repos 2390
  users 2046

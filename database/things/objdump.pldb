@@ -35,6 +35,8 @@ githubLanguage ObjDump
  fileExtensions objdump
  trendingProjectsCount 0
  type data
+ ace_mode assembly_x86
+ tm_scope objdump.x86asm
 
 pygmentsHighlighter objdump
  filename asm.py

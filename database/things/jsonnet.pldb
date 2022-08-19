@@ -41,6 +41,8 @@ githubRepo http://github.com/google/jsonnet
 githubLanguage Jsonnet
  type programming
  fileExtensions jsonnet libsonnet
+ ace_mode text
+ tm_scope source.jsonnet
 githubBigQuery Jsonnet
  repos 190
  users 104

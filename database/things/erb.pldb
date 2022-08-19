@@ -53,6 +53,10 @@ githubLanguage HTML+ERB
   erb
   rhtml
   html+ruby
+ ace_mode text
+ codemirror_mode htmlembedded
+ codemirror_mime_type application/x-erb
+ tm_scope text.html.erb
 
 pygmentsHighlighter ERB
  filename templates.py

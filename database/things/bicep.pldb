@@ -67,6 +67,8 @@ githubRepo https://github.com/Azure/bicep
 githubLanguage Bicep
  type programming
  fileExtensions bicep
+ ace_mode text
+ tm_scope source.bicep
 githubBigQuery Bicep
  repos 17
  users 13

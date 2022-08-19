@@ -29,6 +29,8 @@ githubLanguage Gerber Image
  aliases
   rs-274x
  interpreters gerbv gerbview
+ ace_mode text
+ tm_scope source.gerber
 
 linguistGrammarRepo https://github.com/Alhadis/language-pcb
  firstCommit 2017

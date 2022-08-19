@@ -41,6 +41,10 @@ githubLanguage YAML
  filenames .clang-format .clang-tidy .gemrc CITATION.cff glide.lock yarn.lock
  aliases
   yml
+ ace_mode yaml
+ codemirror_mode yaml
+ codemirror_mime_type text/x-yaml
+ tm_scope source.yaml
 githubBigQuery YAML
  repos 13
  users 12

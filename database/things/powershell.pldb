@@ -76,6 +76,10 @@ githubLanguage PowerShell
   posh
   pwsh
  interpreters pwsh
+ ace_mode powershell
+ codemirror_mode powershell
+ codemirror_mime_type application/x-powershell
+ tm_scope source.powershell
 githubBigQuery PowerShell
  repos 33120
  users 24804

@@ -23,6 +23,8 @@ githubRepo https://github.com/lpil/gleam
 githubLanguage Gleam
  type programming
  fileExtensions gleam
+ ace_mode text
+ tm_scope source.gleam
 githubBigQuery Gleam
  repos 2
  users 2

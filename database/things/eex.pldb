@@ -21,6 +21,10 @@ githubLanguage HTML+EEX
   eex
   heex
   leex
+ ace_mode text
+ codemirror_mode htmlmixed
+ codemirror_mime_type text/html
+ tm_scope text.html.elixir
 
 linguistGrammarRepo https://github.com/elixir-lang/elixir-tmbundle
  firstCommit 2011

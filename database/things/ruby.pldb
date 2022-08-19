@@ -186,6 +186,10 @@ githubLanguage Ruby
   rb
   rbx
  interpreters ruby macruby rake jruby rbx
+ ace_mode ruby
+ codemirror_mode ruby
+ codemirror_mime_type text/x-ruby
+ tm_scope source.ruby
 githubBigQuery Ruby
  repos 374367
  users 185514

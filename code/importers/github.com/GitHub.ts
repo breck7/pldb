@@ -276,6 +276,13 @@ class GitHubImporter {
 
 			if (aliases) ghNode.touchNode("aliases").setChildren(aliases.join("\n"))
 
+			"ace_mode,codemirror_mode,codemirror_mime_type,tm_scope"
+				.split(",")
+				.forEach(key => {
+					const value = lang[key]
+					if (value) ghNode.set(key, value)
+				})
+
 			if (group) {
 				ghNode.set("group", group)
 				// const pldbId = pldbBase.searchForEntity(group)

@@ -18,6 +18,10 @@ githubLanguage GN
  type data
  filenames .gn
  interpreters gn
+ ace_mode python
+ codemirror_mode python
+ codemirror_mime_type text/x-python
+ tm_scope source.gn
 
 linguistGrammarRepo https://github.com/devoncarew/language-gn
  firstCommit 2015

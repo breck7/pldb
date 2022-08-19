@@ -50,6 +50,10 @@ githubLanguage Cython
  type programming
  aliases
   pyrex
+ ace_mode text
+ codemirror_mode python
+ codemirror_mime_type text/x-cython
+ tm_scope source.cython
 githubBigQuery Cython
  repos 580
  users 528

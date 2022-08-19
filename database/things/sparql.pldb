@@ -50,6 +50,10 @@ githubLanguage SPARQL
  fileExtensions sparql rq
  trendingProjectsCount 0
  type data
+ ace_mode text
+ codemirror_mode sparql
+ codemirror_mime_type application/sparql-query
+ tm_scope source.sparql
 
 antlr https://github.com/antlr/grammars-v4/tree/master/sparql
 monaco sparql

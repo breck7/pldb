@@ -37,6 +37,10 @@ githubLanguage TOML
  trendingProjectsCount 0
  type data
  filenames Cargo.lock Gopkg.lock Pipfile poetry.lock
+ ace_mode toml
+ codemirror_mode toml
+ codemirror_mime_type text/x-toml
+ tm_scope source.toml
 
 pygmentsHighlighter TOML
  filename configs.py

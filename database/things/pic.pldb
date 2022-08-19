@@ -27,6 +27,10 @@ githubLanguage Pic
  trendingProjectsCount 0
  type markup
  group Roff
+ ace_mode text
+ codemirror_mode troff
+ codemirror_mime_type text/troff
+ tm_scope source.pic
 
 linguistGrammarRepo https://github.com/Alhadis/language-roff
  firstCommit 2016

@@ -127,6 +127,10 @@ githubLanguage F#
  type programming
  aliases
   fsharp
+ ace_mode text
+ codemirror_mode mllike
+ codemirror_mime_type text/x-fsharp
+ tm_scope source.fsharp
 githubBigQuery F#
  repos 5877
  users 3845

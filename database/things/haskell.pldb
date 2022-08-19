@@ -117,6 +117,10 @@ githubLanguage Haskell
  trendingProjectsCount 4
  type programming
  interpreters runghc runhaskell runhugs
+ ace_mode haskell
+ codemirror_mode haskell
+ codemirror_mime_type text/x-haskell
+ tm_scope source.haskell
 githubBigQuery Haskell
  repos 29991
  users 12846

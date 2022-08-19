@@ -6,6 +6,10 @@ reference https://en.wikipedia.org/wiki/Windows_Registry
 githubLanguage Windows Registry Entries
  fileExtensions reg
  type data
+ ace_mode ini
+ codemirror_mode properties
+ codemirror_mime_type text/x-properties
+ tm_scope source.reg
 
 linguistGrammarRepo https://github.com/bsara/language-reg
  firstCommit 2015

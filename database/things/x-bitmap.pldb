@@ -24,6 +24,10 @@ githubLanguage X BitMap
  group C
  aliases
   xbm
+ ace_mode c_cpp
+ codemirror_mode clike
+ codemirror_mime_type text/x-csrc
+ tm_scope source.c
 
 linguistGrammarRepo https://github.com/textmate/c.tmbundle
  firstCommit 2005

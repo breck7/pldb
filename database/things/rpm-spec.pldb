@@ -9,6 +9,10 @@ githubLanguage RPM Spec
  type data
  aliases
   specfile
+ ace_mode text
+ codemirror_mode rpm
+ codemirror_mime_type text/x-rpm-spec
+ tm_scope source.rpm-spec
 
 linguistGrammarRepo https://github.com/waveclaw/language-rpm-spec
  firstCommit 2015

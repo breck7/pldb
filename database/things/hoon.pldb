@@ -22,6 +22,8 @@ example
 githubLanguage hoon
  type programming
  fileExtensions hoon
+ ace_mode text
+ tm_scope source.hoon
 githubBigQuery hoon
  repos 3
  users 3

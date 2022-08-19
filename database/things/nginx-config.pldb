@@ -62,6 +62,10 @@ githubLanguage Nginx
  filenames nginx.conf
  aliases
   nginx configuration file
+ ace_mode text
+ codemirror_mode nginx
+ codemirror_mime_type text/x-nginx-conf
+ tm_scope source.nginx
 githubBigQuery Nginx
  repos 8529
  users 7652

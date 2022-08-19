@@ -58,6 +58,10 @@ githubLanguage Diff
  type data
  aliases
   udiff
+ ace_mode diff
+ codemirror_mode diff
+ codemirror_mime_type text/x-diff
+ tm_scope source.diff
 githubBigQuery Diff
  repos 561
  users 477

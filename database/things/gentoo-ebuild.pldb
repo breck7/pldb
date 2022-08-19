@@ -42,6 +42,10 @@ githubLanguage Gentoo Ebuild
  trendingProjectsCount 0
  type programming
  group Shell
+ ace_mode sh
+ codemirror_mode shell
+ codemirror_mime_type text/x-sh
+ tm_scope source.shell
 
 linguistGrammarRepo https://github.com/atom/language-shellscript
  firstCommit 2013

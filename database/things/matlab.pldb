@@ -72,6 +72,10 @@ githubLanguage Matlab
  type programming
  aliases
   octave
+ ace_mode matlab
+ codemirror_mode octave
+ codemirror_mime_type text/x-octave
+ tm_scope source.matlab
 githubBigQuery MATLAB
  repos 2791
  users 2497

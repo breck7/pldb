@@ -91,6 +91,10 @@ githubLanguage Clojure
  type programming
  filenames riemann.config
  interpreters bb
+ ace_mode clojure
+ codemirror_mode clojure
+ codemirror_mime_type text/x-clojure
+ tm_scope source.clojure
 githubBigQuery Clojure
  repos 25889
  users 13795

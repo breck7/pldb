@@ -91,6 +91,10 @@ githubLanguage Shell
   bash
   zsh
  interpreters ash bash dash ksh mksh pdksh rc sh zsh
+ ace_mode sh
+ codemirror_mode shell
+ codemirror_mime_type text/x-sh
+ tm_scope source.shell
 githubBigQuery Shell
  repos 640005
  users 358317

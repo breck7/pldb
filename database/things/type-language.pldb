@@ -23,6 +23,8 @@ githubLanguage Type Language
  type data
  aliases
   tl
+ ace_mode text
+ tm_scope source.tl
 
 linguistGrammarRepo https://github.com/goodmind/language-typelanguage
  firstCommit 2017

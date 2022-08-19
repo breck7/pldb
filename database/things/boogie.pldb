@@ -20,6 +20,8 @@ githubLanguage Boogie
  type programming
  fileExtensions bpl
  interpreters boogie
+ ace_mode text
+ tm_scope source.boogie
 githubBigQuery Boogie
  repos 4
  users 4

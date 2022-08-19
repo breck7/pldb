@@ -88,6 +88,10 @@ githubLanguage Makefile
   make
   mf
  interpreters make
+ ace_mode makefile
+ codemirror_mode cmake
+ codemirror_mime_type text/x-cmake
+ tm_scope source.makefile
 githubBigQuery Makefile
  repos 250693
  users 152971

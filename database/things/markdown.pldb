@@ -60,6 +60,10 @@ githubLanguage Markdown
  filenames contents.lr
  aliases
   pandoc
+ ace_mode markdown
+ codemirror_mode gfm
+ codemirror_mime_type text/x-gfm
+ tm_scope source.gfm
 githubBigQuery Markdown
  repos 8
  users 8

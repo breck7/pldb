@@ -39,6 +39,10 @@ githubLanguage JSON with Comments
  filenames .babelrc .devcontainer.json .eslintrc.json .jscsrc .jshintrc .jslintrc api-extractor.json devcontainer.json jsconfig.json language-configuration.json tsconfig.json tslint.json
  aliases
   jsonc
+ ace_mode javascript
+ codemirror_mode javascript
+ codemirror_mime_type text/javascript
+ tm_scope source.js
 
 linguistGrammarRepo https://github.com/atom/language-javascript
  firstCommit 2013

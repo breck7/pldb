@@ -52,6 +52,8 @@ githubLanguage fish
  type programming
  group Shell
  interpreters fish
+ ace_mode text
+ tm_scope source.fish
 
 pygmentsHighlighter Fish
  filename shell.py

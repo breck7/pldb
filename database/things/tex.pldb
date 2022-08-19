@@ -54,6 +54,10 @@ githubLanguage TeX
  type markup
  aliases
   latex
+ ace_mode tex
+ codemirror_mode stex
+ codemirror_mime_type text/x-stex
+ tm_scope text.tex.latex
 githubBigQuery TeX
  repos 31515
  users 24476

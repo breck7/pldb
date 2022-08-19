@@ -96,6 +96,10 @@ githubLanguage Erlang
  type programming
  filenames Emakefile rebar.config rebar.config.lock rebar.lock
  interpreters escript
+ ace_mode erlang
+ codemirror_mode erlang
+ codemirror_mime_type text/x-erlang
+ tm_scope source.erlang
 githubBigQuery Erlang
  repos 14920
  users 9214

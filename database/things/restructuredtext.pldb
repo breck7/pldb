@@ -35,6 +35,10 @@ githubLanguage reStructuredText
  type prose
  aliases
   rst
+ ace_mode text
+ codemirror_mode rst
+ codemirror_mime_type text/x-rst
+ tm_scope text.restructuredtext
 
 monaco restructuredtext
 pygmentsHighlighter reStructuredText

@@ -44,6 +44,10 @@ githubLanguage Asymptote
  type programming
  fileExtensions asy
  interpreters asy
+ ace_mode c_cpp
+ codemirror_mode clike
+ codemirror_mime_type text/x-kotlin
+ tm_scope source.c++
 githubBigQuery Asymptote
  repos 25
  users 23

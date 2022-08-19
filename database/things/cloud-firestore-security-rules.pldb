@@ -6,6 +6,10 @@ reference https://firebase.google.com/docs/reference/rules/rules
 githubLanguage Cloud Firestore Security Rules
  type data
  filenames firestore.rules
+ ace_mode less
+ codemirror_mode css
+ codemirror_mime_type text/css
+ tm_scope source.firestore
 
 linguistGrammarRepo https://github.com/jaysquared/atom-firestore-grammar
  firstCommit 2017

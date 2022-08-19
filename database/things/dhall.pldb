@@ -69,6 +69,10 @@ githubRepo https://github.com/dhall-lang/dhall-lang
 githubLanguage Dhall
  type programming
  fileExtensions dhall
+ ace_mode haskell
+ codemirror_mode haskell
+ codemirror_mime_type text/x-haskell
+ tm_scope source.haskell
 githubBigQuery Dhall
  repos 60
  users 46

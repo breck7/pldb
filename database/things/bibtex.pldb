@@ -46,6 +46,10 @@ githubLanguage BibTeX
  type markup
  fileExtensions bib bibtex
  group TeX
+ ace_mode tex
+ codemirror_mode stex
+ codemirror_mime_type text/x-stex
+ tm_scope text.bibtex
 
 pygmentsHighlighter BibTeX
  filename bibtex.py

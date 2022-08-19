@@ -17,6 +17,10 @@ githubLanguage Tcsh
  type programming
  group Shell
  interpreters tcsh csh
+ ace_mode sh
+ codemirror_mode shell
+ codemirror_mime_type text/x-sh
+ tm_scope source.shell
 
 pygmentsHighlighter Tcsh
  filename shell.py

@@ -57,6 +57,10 @@ githubRepo https://github.com/pegjs/pegjs
 githubLanguage PEG.js
  type programming
  fileExtensions pegjs
+ ace_mode javascript
+ codemirror_mode javascript
+ codemirror_mime_type text/javascript
+ tm_scope source.pegjs
 githubBigQuery PEG.js
  repos 63
  users 63

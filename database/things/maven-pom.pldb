@@ -34,6 +34,10 @@ githubLanguage Maven POM
  type data
  group XML
  filenames pom.xml
+ ace_mode xml
+ codemirror_mode xml
+ codemirror_mime_type text/xml
+ tm_scope text.xml.pom
 
 linguistGrammarRepo https://github.com/textmate/maven.tmbundle
  firstCommit 2007

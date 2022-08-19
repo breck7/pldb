@@ -36,6 +36,10 @@ githubLanguage Common Workflow Language
  aliases
   cwl
  interpreters cwl-runner
+ ace_mode yaml
+ codemirror_mode yaml
+ codemirror_mime_type text/x-yaml
+ tm_scope source.cwl
 githubBigQuery Common Workflow Language
  repos 75
  users 57

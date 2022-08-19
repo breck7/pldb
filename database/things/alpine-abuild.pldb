@@ -20,6 +20,10 @@ githubLanguage Alpine Abuild
  aliases
   abuild
   apkbuild
+ ace_mode sh
+ codemirror_mode shell
+ codemirror_mime_type text/x-sh
+ tm_scope source.shell
 
 linguistGrammarRepo https://github.com/atom/language-shellscript
  firstCommit 2013

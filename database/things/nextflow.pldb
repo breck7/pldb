@@ -34,6 +34,8 @@ githubLanguage Nextflow
  type programming
  filenames nextflow.config
  interpreters nextflow
+ ace_mode groovy
+ tm_scope source.nextflow
 githubBigQuery Nextflow
  repos 62
  users 46

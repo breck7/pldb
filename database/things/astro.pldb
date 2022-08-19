@@ -17,6 +17,10 @@ githubRepo https://github.com/AppCypher/Astro
 githubLanguage Astro
  type markup
  fileExtensions astro
+ ace_mode html
+ codemirror_mode jsx
+ codemirror_mime_type text/jsx
+ tm_scope source.astro
 githubBigQuery Astro
  repos 4
  users 4

@@ -37,6 +37,10 @@ githubLanguage Closure Templates
  type markup
  aliases
   soy
+ ace_mode soy_template
+ codemirror_mode soy
+ codemirror_mime_type text/x-soy
+ tm_scope text.html.soy
 githubBigQuery Closure Templates
  repos 25
  users 18

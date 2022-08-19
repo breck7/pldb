@@ -65,6 +65,10 @@ githubLanguage Pod
  trendingProjectsCount 0
  type prose
  interpreters perl
+ ace_mode perl
+ codemirror_mode perl
+ codemirror_mime_type text/x-perl
+ tm_scope none
 
 linguistGrammarRepo https://github.com/perl6/atom-language-perl6
  sampleCount 3

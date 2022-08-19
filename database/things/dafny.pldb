@@ -71,6 +71,8 @@ githubLanguage Dafny
  type programming
  fileExtensions dfy
  interpreters dafny
+ ace_mode text
+ tm_scope text.dfy.dafny
 githubBigQuery Dafny
  repos 1
  users 1

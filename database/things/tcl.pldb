@@ -74,6 +74,10 @@ githubLanguage Tcl
  type programming
  filenames owh starfield
  interpreters tclsh wish
+ ace_mode tcl
+ codemirror_mode tcl
+ codemirror_mime_type text/x-tcl
+ tm_scope source.tcl
 githubBigQuery Tcl
  repos 8111
  users 7067

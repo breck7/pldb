@@ -56,6 +56,10 @@ githubLanguage HCL
  aliases
   HashiCorp Configuration Language
   terraform
+ ace_mode ruby
+ codemirror_mode ruby
+ codemirror_mime_type text/x-ruby
+ tm_scope source.terraform
 githubBigQuery HCL
  repos 2995
  users 2307

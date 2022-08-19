@@ -37,6 +37,8 @@ githubRepo https://github.com/tensorflow/mlir
 githubLanguage MLIR
  type programming
  fileExtensions mlir
+ ace_mode text
+ tm_scope source.mlir
 githubBigQuery MLIR
  repos 30
  users 27

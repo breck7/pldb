@@ -37,6 +37,10 @@ githubLanguage Turtle
  fileExtensions ttl
  trendingProjectsCount 0
  type data
+ ace_mode text
+ codemirror_mode turtle
+ codemirror_mime_type text/turtle
+ tm_scope source.turtle
 
 pygmentsHighlighter Turtle
  filename rdf.py

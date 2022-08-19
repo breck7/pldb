@@ -44,6 +44,10 @@ githubLanguage ReScript
  type programming
  fileExtensions res
  interpreters ocaml
+ ace_mode rust
+ codemirror_mode rust
+ codemirror_mime_type text/x-rustsrc
+ tm_scope source.rescript
 githubBigQuery ReScript
  repos 54
  users 52

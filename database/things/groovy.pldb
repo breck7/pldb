@@ -67,6 +67,10 @@ githubLanguage Groovy
  type programming
  filenames Jenkinsfile
  interpreters groovy
+ ace_mode groovy
+ codemirror_mode groovy
+ codemirror_mime_type text/x-groovy
+ tm_scope source.groovy
 githubBigQuery Groovy
  repos 27223
  users 19506

@@ -20,6 +20,8 @@ githubLanguage Literate CoffeeScript
  group CoffeeScript
  aliases
   litcoffee
+ ace_mode text
+ tm_scope source.litcoffee
 
 linguistGrammarRepo https://github.com/atom/language-coffee-script
  firstCommit 2013

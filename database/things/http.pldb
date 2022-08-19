@@ -36,6 +36,10 @@ githubLanguage HTTP
  fileExtensions http
  trendingProjectsCount 0
  type data
+ ace_mode text
+ codemirror_mode http
+ codemirror_mime_type message/http
+ tm_scope source.httpspec
 
 codeMirror http
 pygmentsHighlighter HTTP
