@@ -261,7 +261,7 @@ ${text}`
 
   @benchmark
   buildSearchIndex() {
-    const objects = pldbBase.toObjectsForCsv().map(object => {
+    const objects = pldbBase.objectsForCsv.map(object => {
       return {
         label: object.title,
         appeared: object.appeared,
@@ -276,19 +276,17 @@ ${text}`
 
   @benchmark
   buildCsvs() {
-    const objects = pldbBase.toObjectsForCsv()
-    const { colNamesForCsv } = pldbBase
+    const { colNamesForCsv, objectsForCsv } = pldbBase
 
     Disk.write(
       websiteFolder + "/pldb.csv",
-      new TreeNode(objects).toDelimited(",", colNamesForCsv)
+      new TreeNode(objectsForCsv).toDelimited(",", colNamesForCsv)
     )
     Disk.write(
       websiteFolder + "/languages.csv",
-      new TreeNode(objects.filter(obj => isLanguage(obj.type))).toDelimited(
-        ",",
-        colNamesForCsv
-      )
+      new TreeNode(
+        objectsForCsv.filter(obj => isLanguage(obj.type))
+      ).toDelimited(",", colNamesForCsv)
     )
 
     this.buildDocs()

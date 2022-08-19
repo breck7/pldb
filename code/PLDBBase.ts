@@ -133,6 +133,17 @@ class PLDBFile extends TreeBaseFile {
     return count
   }
 
+  get names() {
+    return [
+      this.id,
+      this.title,
+      this.get("standsFor"),
+      this.get("githubLanguage"),
+      this.wikipediaTitle,
+      ...this.getAll("aka")
+    ].filter(i => i)
+  }
+
   get fileExtension() {
     return this.extensions.split(" ")[0]
   }
@@ -562,20 +573,8 @@ class PLDBBaseFolder extends TreeBaseFolder {
   get searchIndex(): Map<string, string> {
     const map = new Map()
     this.forEach(file => {
-      const id = file.id
-      map.set(file.id, id)
-      map.set(file.title, id)
-
-      const standsFor = file.get("standsFor")
-      if (standsFor) map.set(standsFor, id)
-
-      const githubLanguage = file.get("githubLanguage")
-      if (githubLanguage) map.set(githubLanguage, id)
-
-      const wp = file.wikipediaTitle
-      if (wp) map.set(wp, id)
-      const aka = file.getAll("aka")
-      if (aka.length) aka.forEach(name => map.set(name.toLowerCase(), id))
+      const { id } = file
+      file.names.forEach(name => map.set(name.toLowerCase(), id))
     })
     return map
   }
@@ -852,16 +851,15 @@ class PLDBBaseFolder extends TreeBaseFolder {
   get columnDocumentation() {
     // Return columns with documentation sorted in the most interesting order.
 
-    const { colNameToGrammarDefMap } = this
-    const objects = this.toObjectsForCsv()
-    const colNames = new TreeNode(objects)
+    const { colNameToGrammarDefMap, objectsForCsv } = this
+    const colNames = new TreeNode(objectsForCsv)
       .toCsv()
       .split("\n")[0]
       .split(",")
       .map(col => {
         return { name: col }
       })
-    const table = new Table(objects, colNames, undefined, false) // todo: fix jtable or switch off
+    const table = new Table(objectsForCsv, colNames, undefined, false) // todo: fix jtable or switch off
     const cols = table
       .getColumnsArray()
       .map(col => {
@@ -946,7 +944,8 @@ wikipedia`.split("\n")
     })
   }
 
-  toObjectsForCsv() {
+  @imemo
+  get objectsForCsv() {
     return lodash.sortBy(this.nodesForCsv.map(nodeToFlatObject), item =>
       parseInt(item.rank)
     )

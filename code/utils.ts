@@ -319,6 +319,8 @@ const getIndefiniteArticle = phrase => {
   return "a"
 }
 
+const htmlEscaped = (content: string) => content.replace(/</g, "&lt;")
+
 let benchmarkResults = ""
 
 const benchmark: MethodDecorator = (
@@ -397,5 +399,6 @@ export {
   listGetters,
   getLinks,
   lastCommitHashInFolder,
-  ensureDelimiterNotFound
+  ensureDelimiterNotFound,
+  htmlEscaped
 }

@@ -1,14 +1,84 @@
 import { PLDBBaseFolder } from "./PLDBBase"
-import { nameToAnchor, replaceNext, replaceNode, toScrollTable } from "./utils"
+import {
+  nameToAnchor,
+  replaceNext,
+  replaceNode,
+  toScrollTable,
+  htmlEscaped
+} from "./utils"
 
 const lodash = require("lodash")
 const numeral = require("numeral")
+const path = require("path")
 const { jtree } = require("jtree")
 const { TreeNode } = jtree
 const { Disk } = require("jtree/products/Disk.node.js")
 
 const pldbBase = PLDBBaseFolder.getBase()
-const blogFolder = __dirname + "/../blog"
+const blogFolder = path.join(__dirname, "..", "blog")
+
+class SearchRoutes {
+  constructor() {
+    pldbBase.loadFolder()
+  }
+  search(query, format, url = ""): string {
+    const regex = new RegExp(query, "i")
+    const escapedQuery = htmlEscaped(query)
+    const hits = pldbBase.filter(file => file.toString().match(regex))
+
+    const nameHits = pldbBase.filter(file =>
+      file.names.some(name => name.match(regex))
+    )
+
+    const ids = new Set(hits.map(file => file.id))
+
+    if (format === "json") {
+      const { typedMap } = pldbBase
+      const rows = Array.from(ids).map((id: string) => typedMap[id])
+      return JSON.stringify(rows, null, 2)
+    }
+
+    if (format === "csv") {
+      const { colNamesForCsv, objectsForCsv } = pldbBase
+      const rows = objectsForCsv.filter(item => ids.has(item.pldbId))
+      return new TreeNode(rows).toDelimited(",", colNamesForCsv)
+    }
+
+    // Todo: need to programmtically create ScrollFiles.
+    const baseUrl = "https://pldb.com/languages/"
+
+    const highlightHit = file => {
+      const line = file
+        .toString()
+        .split("\n")
+        .find(line => line.match(regex))
+      return line.replace(query, `<b>${query}</b>`)
+    }
+    const searchResults = hits
+      .map(
+        file =>
+          `<a href="${baseUrl}${file.id}.html">${file.title}</a> - ${file.get(
+            "type"
+          )} #${file.rank} - ${highlightHit(file)}`
+      )
+      .join("<br>")
+
+    const nameResults = nameHits
+      .map(
+        file =>
+          `<a href="${baseUrl}${file.id}.html">${file.title}</a> - ${file.get(
+            "type"
+          )} #${file.rank}`
+      )
+      .join("<br>")
+
+    return `<p>${nameHits.length} name matches for "${escapedQuery}" shown below.</p>
+    ${nameResults}<br><br>
+<p>${hits.length} full text matches for "${escapedQuery}" shown below. <a href="${url}&format=csv">CSV</a> | <a href="${url}&format=json">JSON</a></p>
+
+${searchResults}`
+  }
+}
 
 class ListRoutes {
   constructor() {
@@ -410,4 +480,4 @@ class ListRoutes {
   }
 }
 
-export { ListRoutes }
+export { ListRoutes, SearchRoutes }
