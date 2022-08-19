@@ -265,7 +265,7 @@ ${text}`
       return {
         label: object.title,
         appeared: object.appeared,
-        id: object.id
+        id: object.pldbId
       }
     })
     Disk.write(

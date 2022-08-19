@@ -5,8 +5,8 @@ document.addEventListener("DOMContentLoaded", function(event) {
     minLength: 1,
     emptyMsg: "No matching entities found",
     preventSubmit: true,
-    fetch: async (text, update) => {
-      text = text.toLowerCase()
+    fetch: async (query, update) => {
+      text = query.toLowerCase()
       // you can also use AJAX requests instead of preloaded data
 
       if (!searchIndex) {
@@ -17,8 +17,24 @@ document.addEventListener("DOMContentLoaded", function(event) {
       const suggestions = searchIndex.filter(entity =>
         entity.label.toLowerCase().startsWith(text)
       )
-      update(suggestions)
+
+      if (suggestions.length > 0) update(suggestions)
+      else
+        update([
+          {
+            label: `Full text search for "${query.replace(/</g, "&lt;")}"`,
+            appeared: "",
+            id: ""
+          }
+        ])
     },
-    onSelect: item => (window.location = "/languages/" + item.id + ".html")
+    onSelect: item => {
+      const { id } = item
+      if (id) window.location = "/languages/" + id + ".html"
+      else
+        window.location = `https://edit.pldb.com/search?q=${
+          document.getElementById("searchBox").value
+        }`
+    }
   })
 })
