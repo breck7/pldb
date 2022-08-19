@@ -316,27 +316,39 @@ ${text}`
 
     const { columnDocumentation } = pldbBase
 
+    const langCount = pldbBase.topLanguages.length
+    const colCount = columnDocumentation.length
+
+    // todo: add linkify to scrolldown
     Disk.write(
       path.join(docsDir, "columns.scroll"),
-      `title PLDB.csv column documentation
+      `title PLDB CSV File Documentation
 skipIndexPage
 maxColumns 1
 columnWidth 80
 tableSearch
 
 aftertext
- \`pldb.csv\` contains ${pldbBase.length} rows and ${
-        columnDocumentation.length
-      } columns.
- wrapsOn
- link https://pldb.com/pldb.csv pldb.csv
+ PLDB builds two CSV files:
+ <br><br>
+ - The primary file is https://pldb.com/languages.csv which contains ${langCount} rows and ${colCount} columns. Every row is a language.
+ <br>
+ - The secondary file is https://pldb.com/pldb.csv which contains all entities in PLDB (things like operating systems and features) and is ${
+   pldbBase.length
+ } rows.
+ https://pldb.com/languages.csv https://pldb.com/languages.csv
+ https://pldb.com/pldb.csv https://pldb.com/pldb.csv
+
+section Column Documentation
 
 pipeTable
  ${cleanAndRightShift(
    new TreeNode(columnDocumentation).toDelimited("|", [
+     "Index",
      "Column",
      "Values",
      "Coverage",
+     "Example",
      "Description",
      "Source",
      "SourceLink"

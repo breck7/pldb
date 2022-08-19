@@ -868,6 +868,7 @@ class PLDBBaseFolder extends TreeBaseFolder {
         const reductions = col.getReductions()
         const Column = col.getColumnName()
         const colDef = colNameToGrammarDefMap.get(Column)
+        const Example = reductions.mode
         const Description = colDef.get("description")
         const Source = colDef.getFrom("string sourceDomain")
         const SourceLink = Source ? `https://${Source}` : ""
@@ -879,6 +880,7 @@ class PLDBBaseFolder extends TreeBaseFolder {
               (100 * reductions.count) /
                 (reductions.count + reductions.incompleteCount)
             ) + "%",
+          Example,
           Source,
           SourceLink,
           Description
@@ -917,6 +919,10 @@ wikipedia`.split("\n")
       .forEach(col => {
         if (!sortTemplate.includes(col.Column)) sortedCols.push(col)
       })
+
+    sortedCols.forEach((col, index) => {
+      col.Index = index + 1
+    })
 
     return sortedCols
   }
