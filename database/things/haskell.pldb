@@ -108,7 +108,7 @@ wikipedia https://en.wikipedia.org/wiki/Haskell_(programming_language)
  fileExtensions hs lhs
 
 githubLanguage Haskell
- fileExtensions hs hsc
+ fileExtensions hs hs-boot hsc
  trendingProjects
   author name avatar url language languageColor stars forks currentPeriodStars description
   koalaman shellcheck https://github.com/koalaman.png https://github.com/koalaman/shellcheck Haskell #5e5086 16292 821 422 "ShellCheck, a static analysis tool for shell scripts"

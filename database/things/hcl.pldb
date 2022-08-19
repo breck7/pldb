@@ -43,7 +43,7 @@ githubRepo https://github.com/hashicorp/hcl
  issues 162
 
 githubLanguage HCL
- fileExtensions hcl tf tfvars workflow
+ fileExtensions hcl nomad tf tfvars workflow
  trendingProjects
   author name avatar url language languageColor stars forks currentPeriodStars description
   terraform-google-modules terraform-google-kubernetes-engine https://github.com/terraform-google-modules.png https://github.com/terraform-google-modules/terraform-google-kubernetes-engine HCL #ccc 146 113 18 "A Terraform module for configuring GKE clusters."
