@@ -255,7 +255,7 @@ class GitHubImporter {
 	async writeLanguageDataCommand() {
 		this.matched.forEach(match => {
 			const { file, lang } = match
-			const { type, title, extensions, group, filenames } = lang
+			const { type, title, extensions, group, filenames, aliases } = lang
 			const ghNode = file.touchNode("githubLanguage")
 			if (!ghNode.getContent()) ghNode.setContent(title)
 			ghNode.set("type", type)
@@ -263,6 +263,8 @@ class GitHubImporter {
 				ghNode.set("fileExtensions", extensions.join(" ").replace(/\./g, ""))
 
 			if (filenames) ghNode.set("filenames", filenames.join(" "))
+
+			if (aliases) ghNode.touchNode("aliases").setChildren(aliases.join("\n"))
 
 			if (group) {
 				ghNode.set("group", group)

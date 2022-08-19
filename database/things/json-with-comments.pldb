@@ -37,6 +37,8 @@ githubLanguage JSON with Comments
  type data
  group JSON
  filenames .babelrc .devcontainer.json .eslintrc.json .jscsrc .jshintrc .jslintrc api-extractor.json devcontainer.json jsconfig.json language-configuration.json tsconfig.json tslint.json
+ aliases
+  jsonc
 
 linguistGrammarRepo https://github.com/atom/language-javascript
  firstCommit 2013

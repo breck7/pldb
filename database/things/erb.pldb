@@ -49,6 +49,10 @@ githubLanguage HTML+ERB
  trendingProjectsCount 0
  type markup
  group HTML
+ aliases
+  erb
+  rhtml
+  html+ruby
 
 pygmentsHighlighter ERB
  filename templates.py

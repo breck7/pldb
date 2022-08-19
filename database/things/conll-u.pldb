@@ -6,6 +6,9 @@ reference http://universaldependencies.org/format.html
 githubLanguage CoNLL-U
  fileExtensions conllu conll
  type data
+ aliases
+  CoNLL
+  CoNLL-X
 
 linguistGrammarRepo https://github.com/odanoburu/conllu-linguist-grammar
  firstCommit 2018

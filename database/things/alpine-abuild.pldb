@@ -17,6 +17,9 @@ githubLanguage Alpine Abuild
  type programming
  group Shell
  filenames APKBUILD
+ aliases
+  abuild
+  apkbuild
 
 linguistGrammarRepo https://github.com/atom/language-shellscript
  firstCommit 2013
