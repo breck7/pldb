@@ -217,7 +217,7 @@ class PLDBFileWithGitHub {
 }
 
 class GitHubImporter {
-	async fetchAllCommand() {
+	async fetchAllRepoDataCommand() {
 		console.log(`Fetching all...`)
 		const crawler = new PoliteCrawler()
 		crawler.maxConcurrent = 2
@@ -228,7 +228,7 @@ class GitHubImporter {
 		)
 	}
 
-	writeAllCommand() {
+	writeAllRepoDataCommand() {
 		this.linkedFiles.forEach(file => {
 			new PLDBFileWithGitHub(file)
 				.writeFirstCommitToDatabase()
@@ -251,10 +251,8 @@ class GitHubImporter {
 		return YAML.parse(Disk.read(path.join(cacheDir, "languages.yml")))
 	}
 
-	async writeLanguagesCommand() {
-		console.log(
-			"Make sure to download https://raw.githubusercontent.com/github/linguist/master/lib/linguist/languages.yml to cacheDir"
-		)
+	// Make sure to download https://raw.githubusercontent.com/github/linguist/master/lib/linguist/languages.yml to cacheDir
+	async writeLanguageDataCommand() {
 		this.matched.forEach(match => {
 			const { file, lang } = match
 			const { type, title } = lang
@@ -294,7 +292,7 @@ class GitHubImporter {
 			.map(item => item.lang)
 	}
 
-	listOutdatedCommand() {
+	listOutdatedLangsCommand() {
 		const map = this.yamlMap
 		pldbBase.forEach(file => {
 			const title = file.get("githubLanguage")
@@ -303,7 +301,7 @@ class GitHubImporter {
 		})
 	}
 
-	listUnmatchedCommand() {
+	listUnmatchedLangsCommand() {
 		const missingPath = path.join(cacheDir, "missingLangs.json")
 		Disk.write(missingPath, JSON.stringify(this.unmatched, null, 2))
 		console.log(`Wrote ${this.unmatched.length} missing to: ${missingPath}`)

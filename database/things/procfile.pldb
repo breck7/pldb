@@ -9,6 +9,7 @@ example
  web: bundle exec rails server -p $PORT
 
 githubLanguage Procfile
+ type programming
 githubBigQuery Procfile
  repos 1041
  users 904
