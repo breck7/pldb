@@ -8,6 +8,7 @@ features
 example
  web: bundle exec rails server -p $PORT
 
+githubLanguage Procfile
 githubBigQuery Procfile
  repos 1041
  users 904

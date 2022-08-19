@@ -6,8 +6,13 @@ githubLanguageNode
  string sourceDomain github.com
 githubLanguageFileExtensionsNode
  extends fileExtensionsNode
- description What file extensions does GitHub use for this language type?
+ description An Array of associated extensions (the first one is considered the primary extension, the others should be listed alphabetically).
  crux fileExtensions
+ single
+githubLanguageTypeNode
+ extends abstractFactNode
+ description Either data, programming, markup, prose, or nil.
+ crux languageType
  single
 githubTrendingProjectsNode
  todo Figure out typings.

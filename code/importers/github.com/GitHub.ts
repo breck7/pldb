@@ -255,7 +255,26 @@ class GitHubImporter {
 		console.log(
 			"Make sure to download https://raw.githubusercontent.com/github/linguist/master/lib/linguist/languages.yml to cacheDir"
 		)
-		console.log(this.langs)
+		this.matched.forEach(match => {
+			const { file, lang } = match
+			const { type, title } = lang
+			const ghNode = file.touchNode("githubLanguage")
+			if (!ghNode.getContent()) ghNode.setContent(title)
+			ghNode.set("type", type)
+			file.prettifyAndSave()
+		})
+	}
+
+	async writeLinksCommand() {
+		this.matched.forEach(match => {
+			const { file, lang } = match
+			const { type, title } = lang
+			const ghNode = file.touchNode("githubLanguage")
+			if (!ghNode.getContent()) {
+				ghNode.setContent(title)
+				file.prettifyAndSave()
+			}
+		})
 	}
 
 	get pairs() {
