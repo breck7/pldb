@@ -68,6 +68,7 @@ githubRepo https://github.com/bazelbuild/starlark
 githubLanguage Starlark
  type programming
  fileExtensions bzl star
+ filenames BUCK BUILD BUILD.bazel Tiltfile WORKSPACE
 githubBigQuery Starlark
  repos 1141
  users 562

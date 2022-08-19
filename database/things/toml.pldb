@@ -36,6 +36,7 @@ githubLanguage TOML
  fileExtensions toml
  trendingProjectsCount 0
  type data
+ filenames Cargo.lock Gopkg.lock Pipfile poetry.lock
 
 pygmentsHighlighter TOML
  filename configs.py

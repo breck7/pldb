@@ -13,6 +13,10 @@ githubLanguageFileExtensionsNode
  description An Array of associated extensions (the first one is considered the primary extension, the others should be listed alphabetically).
  crux fileExtensions
  single
+githubLanguageFilenamesNode
+ extends abstractGitHubLanguageNode
+ description An Array of filenames commonly associated with the language.
+ crux filenames
 githubLanguageTypeNode
  extends abstractGitHubLanguageNode
  description Either data, programming, markup, prose, or nil.

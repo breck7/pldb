@@ -13,6 +13,7 @@ githubLanguage Git Config
  type data
  fileExtensions gitconfig
  group INI
+ filenames .gitconfig .gitmodules
 
 fileType text
 centralPackageRepositoryCount 0
