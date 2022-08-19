@@ -328,6 +328,18 @@ maxColumns 1
 columnWidth 80
 tableSearch
 
+html
+ <style>
+  .scrollTableComponent td {
+    max-width: 30ch;
+  }
+  .scrollTableComponent td:nth-child(5) {
+    max-width: 20ch;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+  }
+  </style>
+
 aftertext
  PLDB builds two CSV files:
  <br><br>
