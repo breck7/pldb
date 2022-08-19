@@ -29,6 +29,10 @@ githubLanguageTmScopeNode
  extends abstractGitHubLanguageNode
  description The TextMate scope that represents this programming language. This should match one of the scopes listed in the grammars.yml file. Use "none" if there is no grammar for this language.
  crux tm_scope
+githubLanguageWrapNode
+ extends abstractGitHubLanguageNode
+ description Boolean wrap to enable line wrapping (default: false)
+ crux wrap
 githubLanguageFilenamesNode
  extends abstractGitHubLanguageNode
  description An Array of filenames commonly associated with the language.

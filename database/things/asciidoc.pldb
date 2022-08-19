@@ -44,6 +44,7 @@ githubLanguage AsciiDoc
  type prose
  ace_mode asciidoc
  tm_scope text.html.asciidoc
+ wrap true
 
 linguistGrammarRepo https://github.com/zuckschwerdt/asciidoc.tmbundle
  firstCommit 2008

@@ -19,6 +19,7 @@ githubLanguage RDoc
  type prose
  ace_mode rdoc
  tm_scope text.rdoc
+ wrap true
 
 linguistGrammarRepo https://github.com/joshaven/RDoc.tmbundle
  firstCommit 2009

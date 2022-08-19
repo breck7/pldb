@@ -276,11 +276,11 @@ class GitHubImporter {
 
 			if (aliases) ghNode.touchNode("aliases").setChildren(aliases.join("\n"))
 
-			"ace_mode,codemirror_mode,codemirror_mime_type,tm_scope"
+			"ace_mode,codemirror_mode,codemirror_mime_type,tm_scope,wrap"
 				.split(",")
 				.forEach(key => {
 					const value = lang[key]
-					if (value) ghNode.set(key, value)
+					if (value) ghNode.set(key, value.toString())
 				})
 
 			if (group) {

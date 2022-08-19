@@ -32,6 +32,7 @@ githubLanguage Creole
  type prose
  ace_mode text
  tm_scope text.html.creole
+ wrap true
 
 linguistGrammarRepo https://github.com/Siddley/Creole
  firstCommit 2012
