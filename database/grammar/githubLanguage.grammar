@@ -1,19 +1,26 @@
 githubLanguageNode
  description GitHub has a set of supported languages as defined here: https://raw.githubusercontent.com/github/linguist/master/lib/linguist/languages.yml
  extends abstractMultiwordGuidNode
- inScope githubLanguageFileExtensionsNode githubTrendingProjectsNode githubTrendingProjectsCountNode
+ inScope githubLanguageFileExtensionsNode githubTrendingProjectsNode githubTrendingProjectsCountNode abstractGitHubLanguageNode
  contentKey id
  string sourceDomain github.com
+abstractGitHubLanguageNode
+ extends abstractFactNode
+ abstract
+ single
 githubLanguageFileExtensionsNode
  extends fileExtensionsNode
  description An Array of associated extensions (the first one is considered the primary extension, the others should be listed alphabetically).
  crux fileExtensions
  single
 githubLanguageTypeNode
- extends abstractFactNode
+ extends abstractGitHubLanguageNode
  description Either data, programming, markup, prose, or nil.
  crux languageType
- single
+githubLanguageGroupNode
+ extends abstractGitHubLanguageNode
+ description Name of the parent language. Languages in a group are counted in the statistics as the parent language.
+ crux group
 githubTrendingProjectsNode
  todo Figure out typings.
  extends abstractDelimitedBlobNode
