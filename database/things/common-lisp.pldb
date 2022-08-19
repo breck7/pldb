@@ -75,13 +75,12 @@ githubLanguage Common Lisp
   dimitri pgloader https://github.com/dimitri.png https://github.com/dimitri/pgloader "Common Lisp" #3fb68b 2221 289 56 "Migrate to PostgreSQL in a single command!"
  trendingProjectsCount 4
  type programming
- aliases
-  lisp
  interpreters lisp sbcl ccl clisp ecl
  ace_mode lisp
  codemirror_mode commonlisp
  codemirror_mime_type text/x-common-lisp
  tm_scope source.lisp
+ aliases lisp
 githubBigQuery Common Lisp
  repos 5678
  users 3752

@@ -35,11 +35,9 @@ githubRepo https://github.com/joaotavora/yasnippet
 githubLanguage YASnippet
  fileExtensions yasnippet
  type markup
- aliases
-  snippet
-  yas
  ace_mode text
  tm_scope source.yasnippet
+ aliases snippet or yas
 githubBigQuery YASnippet
  repos 264
  users 261

@@ -1,7 +1,7 @@
 #!/usr/bin/env ts-node
 
 import { PLDBFile, PLDBBaseFolder } from "../../PLDBBase"
-import { runCommand, PoliteCrawler } from "../../utils"
+import { runCommand, PoliteCrawler, ensureDelimiterNotFound } from "../../utils"
 
 import { jtree } from "jtree"
 
@@ -251,7 +251,6 @@ class GitHubImporter {
 		return YAML.parse(Disk.read(path.join(cacheDir, "languages.yml")))
 	}
 
-	// Make sure to download https://raw.githubusercontent.com/github/linguist/master/lib/linguist/languages.yml to cacheDir
 	async writeLanguageDataCommand() {
 		this.matched.forEach(match => {
 			const { file, lang } = match
@@ -274,7 +273,13 @@ class GitHubImporter {
 
 			if (interpreters) ghNode.set("interpreters", interpreters.join(" "))
 
-			if (aliases) ghNode.touchNode("aliases").setChildren(aliases.join("\n"))
+			if (aliases) {
+				ghNode.delete("aliases")
+
+				const delimiter = " or "
+				ensureDelimiterNotFound(aliases, delimiter)
+				ghNode.set("aliases", aliases.join(delimiter))
+			}
 
 			"ace_mode,codemirror_mode,codemirror_mime_type,tm_scope,wrap"
 				.split(",")

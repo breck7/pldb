@@ -83,15 +83,12 @@ githubLanguage Makefile
  trendingProjectsCount 13
  type programming
  filenames BSDmakefile GNUmakefile Kbuild Makefile Makefile.am Makefile.boot Makefile.frag Makefile.in Makefile.inc Makefile.wat makefile makefile.sco mkfile
- aliases
-  bsdmake
-  make
-  mf
  interpreters make
  ace_mode makefile
  codemirror_mode cmake
  codemirror_mime_type text/x-cmake
  tm_scope source.makefile
+ aliases bsdmake or make or mf
 githubBigQuery Makefile
  repos 250693
  users 152971

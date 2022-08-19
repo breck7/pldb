@@ -64,14 +64,12 @@ wikipedia https://en.wikipedia.org/wiki/Raku_(programming_language)
 githubLanguage Raku
  type programming
  fileExtensions 6pl 6pm nqp p6 p6l p6m pl pl6 pm pm6 raku rakumod t
- aliases
-  perl6
-  perl-6
  interpreters perl6 raku rakudo
  ace_mode perl
  codemirror_mode perl
  codemirror_mime_type text/x-perl
  tm_scope source.raku
+ aliases perl6 or perl-6
 githubBigQuery Raku
  repos 589
  users 497

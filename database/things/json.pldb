@@ -50,14 +50,11 @@ githubLanguage JSON
  trendingProjectsCount 0
  type data
  filenames .arcconfig .auto-changelog .c8rc .htmlhintrc .imgbotconfig .nycrc .tern-config .tern-project .watchmanconfig Pipfile.lock composer.lock mcmod.info
- aliases
-  geojson
-  jsonl
-  topojson
  ace_mode json
  codemirror_mode javascript
  codemirror_mime_type application/json
  tm_scope source.json
+ aliases geojson or jsonl or topojson
 githubBigQuery JSON
  repos 6
  users 6

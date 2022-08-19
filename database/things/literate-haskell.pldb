@@ -9,13 +9,11 @@ githubLanguage Literate Haskell
  trendingProjectsCount 0
  type programming
  group Haskell
- aliases
-  lhaskell
-  lhs
  ace_mode text
  codemirror_mode haskell-literate
  codemirror_mime_type text/x-literate-haskell
  tm_scope text.tex.latex.haskell
+ aliases lhaskell or lhs
 
 pygmentsHighlighter Literate Haskell
  filename haskell.py

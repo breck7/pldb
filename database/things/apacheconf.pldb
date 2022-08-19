@@ -10,11 +10,9 @@ githubLanguage ApacheConf
  trendingProjectsCount 0
  type data
  filenames .htaccess apache2.conf httpd.conf
- aliases
-  aconf
-  apache
  ace_mode apache_conf
  tm_scope source.apache-config
+ aliases aconf or apache
 githubBigQuery ApacheConf
  repos 68565
  users 55081

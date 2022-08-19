@@ -69,13 +69,11 @@ githubLanguage Starlark
  type programming
  fileExtensions bzl star
  filenames BUCK BUILD BUILD.bazel Tiltfile WORKSPACE
- aliases
-  bazel
-  bzl
  ace_mode python
  codemirror_mode python
  codemirror_mime_type text/x-python
  tm_scope source.python
+ aliases bazel or bzl
 githubBigQuery Starlark
  repos 1141
  users 562

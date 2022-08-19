@@ -72,14 +72,12 @@ githubLanguage PowerShell
   MicrosoftDocs appcenter-docs https://github.com/MicrosoftDocs.png https://github.com/MicrosoftDocs/appcenter-docs PowerShell #012456 51 186 1 "content repo for Visual Studio App Center on docs.microsoft.com"
  trendingProjectsCount 24
  type programming
- aliases
-  posh
-  pwsh
  interpreters pwsh
  ace_mode powershell
  codemirror_mode powershell
  codemirror_mime_type application/x-powershell
  tm_scope source.powershell
+ aliases posh or pwsh
 githubBigQuery PowerShell
  repos 33120
  users 24804

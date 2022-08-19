@@ -107,13 +107,12 @@ githubLanguage Perl
  trendingProjectsCount 6
  type programming
  filenames Makefile.PL Rexfile ack cpanfile
- aliases
-  cperl
  interpreters cperl perl
  ace_mode perl
  codemirror_mode perl
  codemirror_mime_type text/x-perl
  tm_scope source.perl
+ aliases cperl
 githubBigQuery Perl
  repos 101542
  users 69499

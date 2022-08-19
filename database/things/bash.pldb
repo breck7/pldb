@@ -85,16 +85,12 @@ githubLanguage Shell
  trendingProjectsCount 26
  type programming
  filenames .bash_aliases .bash_history .bash_logout .bash_profile .bashrc .cshrc .env .env.example .flaskenv .kshrc .login .profile .zlogin .zlogout .zprofile .zshenv .zshrc 9fs PKGBUILD bash_aliases bash_logout bash_profile bashrc cshrc gradlew kshrc login man profile zlogin zlogout zprofile zshenv zshrc
- aliases
-  sh
-  shell-script
-  bash
-  zsh
  interpreters ash bash dash ksh mksh pdksh rc sh zsh
  ace_mode sh
  codemirror_mode shell
  codemirror_mime_type text/x-sh
  tm_scope source.shell
+ aliases sh or shell-script or bash or zsh
 githubBigQuery Shell
  repos 640005
  users 358317

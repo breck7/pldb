@@ -25,10 +25,9 @@ wikipedia https://en.wikipedia.org/wiki/Coccinelle_(software)
 githubLanguage SmPL
  type programming
  fileExtensions cocci
- aliases
-  coccinelle
  ace_mode text
  tm_scope source.smpl
+ aliases coccinelle
 githubBigQuery SmPL
  repos 120
  users 114

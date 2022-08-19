@@ -33,14 +33,11 @@ githubLanguage XML
  trendingProjectsCount 0
  type data
  filenames .classpath .cproject .project App.config NuGet.config Settings.StyleCop Web.Debug.config Web.Release.config Web.config packages.config
- aliases
-  rss
-  xsd
-  wsdl
  ace_mode xml
  codemirror_mode xml
  codemirror_mime_type text/xml
  tm_scope text.xml
+ aliases rss or xsd or wsdl
 githubBigQuery XML
  repos 2700
  users 2314

@@ -32,6 +32,11 @@ const makeInverseRanks = (ranks: Rankings) => {
   return inverseRanks
 }
 
+const ensureDelimiterNotFound = (strings: string[], delimiter: string) => {
+  const hit = strings.find(word => word.includes(delimiter))
+  if (hit) throw `Delimiter "${delimiter}" found in hit`
+}
+
 const linkMany = (links: string[]) =>
   links.map((link, index) => `<a href="${link}">${index + 1}</a>`)
 
@@ -391,5 +396,6 @@ export {
   listMemos,
   listGetters,
   getLinks,
-  lastCommitHashInFolder
+  lastCommitHashInFolder,
+  ensureDelimiterNotFound
 }

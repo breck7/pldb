@@ -336,14 +336,12 @@ githubLanguage JavaScript
  trendingProjectsCount 26
  type programming
  filenames Jakefile
- aliases
-  js
-  node
  interpreters chakra d8 gjs js node nodejs qjs rhino v8 v8-shell
  ace_mode javascript
  codemirror_mode javascript
  codemirror_mime_type text/javascript
  tm_scope source.js
+ aliases js or node
 githubBigQuery JavaScript
  repos 1099879
  users 566345

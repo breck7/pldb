@@ -58,11 +58,9 @@ githubRepo https://github.com/odin-lang/Odin
 githubLanguage Odin
  type programming
  fileExtensions odin
- aliases
-  odinlang
-  odin-lang
  ace_mode text
  tm_scope source.odin
+ aliases odinlang or odin-lang
 githubBigQuery Odin
  repos 6
  users 5

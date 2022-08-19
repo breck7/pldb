@@ -33,13 +33,12 @@ githubLanguage reStructuredText
  fileExtensions rst rest resttxt rsttxt
  trendingProjectsCount 0
  type prose
- aliases
-  rst
  ace_mode text
  codemirror_mode rst
  codemirror_mime_type text/x-rst
  tm_scope text.restructuredtext
  wrap true
+ aliases rst
 
 monaco restructuredtext
 pygmentsHighlighter reStructuredText

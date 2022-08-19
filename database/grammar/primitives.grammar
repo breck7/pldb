@@ -7,6 +7,8 @@ populationCountCell
  extends intCell
 stringCell
  highlightScope string
+fileExtensionCell
+ extends stringCell
 boolCell
 codeCell
  highlightScope comment
@@ -39,11 +41,16 @@ abstractFlagNode
  extends abstractFactNode
  cells keywordCell
  single
+abstractArrayNode
+ abstract
+ extends abstractFactNode
+ catchAllCellType stringCell
+ cells keywordCell
+ contentDelimiter  
 abstractPermalinksNode
  abstract
  catchAllCellType permalinkCell
- contentDelimiter  
- extends abstractFactNode
+ extends abstractArrayNode
  description Links to other entities on PLDB.
 abstractUrlNode
  cells keywordCell urlCell

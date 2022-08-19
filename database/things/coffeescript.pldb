@@ -74,14 +74,12 @@ githubLanguage CoffeeScript
  trendingProjectsCount 7
  type programming
  filenames Cakefile
- aliases
-  coffee
-  coffee-script
  interpreters coffee
  ace_mode coffee
  codemirror_mode coffeescript
  codemirror_mime_type text/x-coffeescript
  tm_scope source.coffee
+ aliases coffee or coffee-script
 githubBigQuery CoffeeScript
  repos 68631
  users 44937

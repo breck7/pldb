@@ -10,20 +10,12 @@ githubLanguage Roff
  trendingProjectsCount 0
  type markup
  filenames eqnrc mmn mmt troffrc troffrc-end
- aliases
-  groff
-  man
-  manpage
-  man page
-  man-page
-  mdoc
-  nroff
-  troff
  ace_mode text
  codemirror_mode troff
  codemirror_mime_type text/troff
  tm_scope text.roff
  wrap true
+ aliases groff or man or manpage or man page or man-page or mdoc or nroff or troff
 githubBigQuery Roff
  repos 12001
  users 10595

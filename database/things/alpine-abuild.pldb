@@ -17,13 +17,11 @@ githubLanguage Alpine Abuild
  type programming
  group Shell
  filenames APKBUILD
- aliases
-  abuild
-  apkbuild
  ace_mode sh
  codemirror_mode shell
  codemirror_mime_type text/x-sh
  tm_scope source.shell
+ aliases abuild or apkbuild
 
 linguistGrammarRepo https://github.com/atom/language-shellscript
  firstCommit 2013

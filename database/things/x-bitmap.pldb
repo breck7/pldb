@@ -22,12 +22,11 @@ githubLanguage X BitMap
  fileExtensions xbm
  type data
  group C
- aliases
-  xbm
  ace_mode c_cpp
  codemirror_mode clike
  codemirror_mime_type text/x-csrc
  tm_scope source.c
+ aliases xbm
 
 linguistGrammarRepo https://github.com/textmate/c.tmbundle
  firstCommit 2005

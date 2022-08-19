@@ -49,14 +49,11 @@ githubLanguage HTML+ERB
  trendingProjectsCount 0
  type markup
  group HTML
- aliases
-  erb
-  rhtml
-  html+ruby
  ace_mode text
  codemirror_mode htmlembedded
  codemirror_mime_type application/x-erb
  tm_scope text.html.erb
+ aliases erb or rhtml or html+ruby
 
 pygmentsHighlighter ERB
  filename templates.py

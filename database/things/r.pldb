@@ -94,15 +94,12 @@ githubLanguage R
  trendingProjectsCount 9
  type programming
  filenames .Rprofile expr-dist
- aliases
-  R
-  Rscript
-  splus
  interpreters Rscript
  ace_mode r
  codemirror_mode r
  codemirror_mime_type text/x-rsrc
  tm_scope source.r
+ aliases R or Rscript or splus
 githubBigQuery R
  repos 29347
  users 20273

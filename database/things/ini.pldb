@@ -53,12 +53,11 @@ githubLanguage INI
  trendingProjectsCount 0
  type data
  filenames .coveragerc .flake8 .pylintrc buildozer.spec pylintrc
- aliases
-  dosini
  ace_mode ini
  codemirror_mode properties
  codemirror_mime_type text/x-properties
  tm_scope source.ini
+ aliases dosini
 githubBigQuery INI
  repos 1
  users 1

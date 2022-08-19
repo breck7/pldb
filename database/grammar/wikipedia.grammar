@@ -1,6 +1,6 @@
 todo Scoping by file in Grammar lang would be really useful for this file. Also, multiple inheritance or mixins.
 wikipediaNode
- inScope wikipediaExampleNode wikipediaRelatedNode wikipediaSummaryNode wikipediaCreatedNode wikipediaDailyPageViewsNode wikipediaYearNode wikipediaBacklinksCountNode wikipediaRevisionCountNode wikipediaPageIdNode wikipediaFileExtensionsNode
+ inScope wikipediaExampleNode wikipediaRelatedNode wikipediaSummaryNode wikipediaCreatedNode wikipediaDailyPageViewsNode wikipediaYearNode wikipediaBacklinksCountNode wikipediaRevisionCountNode wikipediaPageIdNode fileExtensionsNode
  extends abstractSectionNode
  description URL of the entity on Wikipedia, if and only if it has a page dedicated to it.
  cells keywordCell urlCell
@@ -11,11 +11,6 @@ wikipediaExampleNode
  description Example(s) of this language on the Wikipedia page.
  crux example
  single false
-wikipediaFileExtensionsNode
- description If there's specifically identified file extensions on Wikipedia for this language.
- extends fileExtensionsNode
- crux fileExtensions
- single
 wikipediaRelatedNode
  description What languages does Wikipedia have as related?
  extends abstractPermalinksNode

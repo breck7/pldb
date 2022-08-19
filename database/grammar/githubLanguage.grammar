@@ -1,18 +1,22 @@
 githubLanguageNode
  description GitHub has a set of supported languages as defined here: https://raw.githubusercontent.com/github/linguist/master/lib/linguist/languages.yml
  extends abstractMultiwordGuidNode
- inScope githubLanguageFileExtensionsNode githubTrendingProjectsNode githubTrendingProjectsCountNode abstractGitHubLanguageNode
+ inScope githubLanguageFileExtensionsNode fileNamesNode githubTrendingProjectsNode githubTrendingProjectsCountNode abstractGitHubLanguageNode abstractGitHubLanguageArrayNode githubLanguageGroupNode githubLanguageAliasesNode
  contentKey id
  string sourceDomain github.com
 abstractGitHubLanguageNode
  extends abstractFactNode
+ cells keywordCell stringCell
+ abstract
+ single
+abstractGitHubLanguageArrayNode
+ extends abstractArrayNode
  abstract
  single
 githubLanguageFileExtensionsNode
  extends fileExtensionsNode
- description An Array of associated extensions (the first one is considered the primary extension, the others should be listed alphabetically).
  crux fileExtensions
- single
+ description An Array of associated extensions (the first one is considered the primary extension, the others should be listed alphabetically).
 githubLanguageAceModeNode
  extends abstractGitHubLanguageNode
  description A String name of the Ace Mode used for highlighting whenever a file is edited. This must match one of the filenames in http://git.io/3XO_Cg. Use "text" if a mode does not exist.
@@ -27,30 +31,31 @@ githubLanguageCodemirrorMimeTypeNode
  crux codemirror_mime_type
 githubLanguageTmScopeNode
  extends abstractGitHubLanguageNode
+ cells keywordCell
+ catchAllCellType externalGuidCell
  description The TextMate scope that represents this programming language. This should match one of the scopes listed in the grammars.yml file. Use "none" if there is no grammar for this language.
  crux tm_scope
 githubLanguageWrapNode
  extends abstractGitHubLanguageNode
  description Boolean wrap to enable line wrapping (default: false)
+ cells keywordCell boolCell
  crux wrap
-githubLanguageFilenamesNode
- extends abstractGitHubLanguageNode
- description An Array of filenames commonly associated with the language.
- crux filenames
 githubLanguageInterpretersNode
- extends abstractGitHubLanguageNode
+ extends abstractGitHubLanguageArrayNode
  description An Array of associated interpreters
  crux interpreters
 githubLanguageAliasesNode
- extends abstractGitHubLanguageNode
+ extends abstractGitHubLanguageArrayNode
  description An Array of additional aliases (implicitly includes name.downcase).
  crux aliases
+ contentDelimiter  or 
 githubLanguageTypeNode
  extends abstractGitHubLanguageNode
  description Either data, programming, markup, prose, or nil.
- crux languageType
+ crux type
 githubLanguageGroupNode
- extends abstractGitHubLanguageNode
+ cells keywordCell
+ catchAllCellType externalGuidCell
  description Name of the parent language. Languages in a group are counted in the statistics as the parent language.
  crux group
 githubTrendingProjectsNode

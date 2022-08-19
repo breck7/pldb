@@ -65,13 +65,12 @@ githubLanguage DTrace
  fileExtensions d
  trendingProjectsCount 0
  type programming
- aliases
-  dtrace-script
  interpreters dtrace
  ace_mode c_cpp
  codemirror_mode clike
  codemirror_mime_type text/x-csrc
  tm_scope source.c
+ aliases dtrace-script
 githubBigQuery DTrace
  repos 2080
  users 1907

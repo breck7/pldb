@@ -34,12 +34,9 @@ githubLanguage Unix Assembly
  trendingProjectsCount 0
  type programming
  group Assembly
- aliases
-  gas
-  gnu asm
-  unix asm
  ace_mode assembly_x86
  tm_scope source.x86
+ aliases gas or gnu asm or unix asm
 
 linguistGrammarRepo https://github.com/calculuswhiz/Assembly-Syntax-Definition
  firstCommit 2014
