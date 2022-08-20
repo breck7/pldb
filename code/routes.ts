@@ -44,7 +44,6 @@ class SearchRoutes {
       return new TreeNode(rows).toDelimited(",", colNamesForCsv)
     }
 
-    // Todo: need to programmtically create ScrollFiles.
     const baseUrl = "https://pldb.com/languages/"
 
     const highlightHit = file => {
@@ -57,26 +56,32 @@ class SearchRoutes {
     const searchResults = hits
       .map(
         file =>
-          `<a href="${baseUrl}${file.id}.html">${file.title}</a> - ${file.get(
+          ` <a href="${baseUrl}${file.id}.html">${file.title}</a> - ${file.get(
             "type"
           )} #${file.rank} - ${highlightHit(file)}`
       )
-      .join("<br>")
+      .join("<br>\n")
 
     const nameResults = nameHits
       .map(
         file =>
-          `<a href="${baseUrl}${file.id}.html">${file.title}</a> - ${file.get(
+          ` <a href="${baseUrl}${file.id}.html">${file.title}</a> - ${file.get(
             "type"
           )} #${file.rank}`
       )
-      .join("<br>")
+      .join("<br>\n")
 
-    return `<p>${nameHits.length} name matches for "${escapedQuery}" shown below.</p>
-    ${nameResults}<br><br>
-<p>${hits.length} full text matches for "${escapedQuery}" shown below. <a href="${url}&format=csv">CSV</a> | <a href="${url}&format=json">JSON</a></p>
+    return `paragraph
+ ${nameHits.length} name matches for "${escapedQuery}" shown below.
 
-${searchResults}`
+html
+${nameResults}
+
+paragraph
+ ${hits.length} full text matches for "${escapedQuery}" shown below. <a href="${url}&format=csv">CSV</a> | <a href="${url}&format=json">JSON</a>
+
+html
+ ${searchResults}`
   }
 }
 

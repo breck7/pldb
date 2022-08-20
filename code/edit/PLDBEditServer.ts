@@ -4,60 +4,75 @@ const path = require("path")
 const fs = require("fs")
 const https = require("https")
 const express = require("express")
+const numeral = require("numeral")
 const { jtree } = require("jtree")
-const { TreeNode } = jtree
 const { Disk } = require("jtree/products/Disk.node.js")
 const { TreeBaseServer } = require("jtree/products/treeBase.node.js")
+const { ScrollPage } = require("/Users/breck/scroll/scroll.js")
 import { PLDBBaseFolder } from "../PLDBBase"
 import { runCommand, lastCommitHashInFolder, htmlEscaped } from "../utils"
 import simpleGit, { SimpleGit } from "simple-git"
 import { SearchRoutes } from "../routes"
+import { makeScrollSettings } from "../ScrollSettings"
 
-const ignoreFolder = path.join(__dirname, "..", "..", "ignore")
+const baseFolder = path.join(__dirname, "..", "..")
+const ignoreFolder = path.join(baseFolder, "ignore")
+const publishedFolder = path.join(baseFolder, "pldb.local")
+const csvFileLength = Disk.read(path.join(publishedFolder, "pldb.csv")).length
+
+const scrollSettings = makeScrollSettings("https://pldb.com")
 
 const logPath = path.join(ignoreFolder, "editServerLog.tree")
 Disk.touch(logPath)
 
-const editForm = (content = "") =>
-	`<form method="POST" id="editForm">
-<div class="cell">
-<textarea name="content" id="content">${htmlEscaped(content)}</textarea>
-</div>
-<div class="cell">
-<div id="quickLinks"></div>
-<div id="exampleSection"></div>
-</div>
-<br><br>
-<div>
-Submitting as: <span id="authorLabel"></span> <a href="#" onClick="app.changeAuthor()">change</a>
-</div>
-<br>
-<input type="hidden" name="author" id="author"><input type="submit" value="Save" id="submitButton"/>
-</form>`
+const editForm = (content = "", title = "") =>
+	`${title ? `title ${title}` : ""}
+html
+ <form method="POST" id="editForm">
+ <div class="cell">
+ <textarea name="content" id="content">${htmlEscaped(content).replace(
+		/\n/g,
+		"\n "
+ )}</textarea>
+ </div>
+ <div class="cell">
+ <div id="quickLinks"></div>
+ <div id="exampleSection"></div>
+ </div>
+ <br><br>
+ <div>
+ Submitting as: <span id="authorLabel"></span> <a href="#" onClick="app.changeAuthor()">change</a>
+ </div>
+ <br>
+ <input type="hidden" name="author" id="author"><input type="submit" value="Save" id="submitButton"/>
+ </form>`
 
-const template = bodyContent => `<!doctype html>
-<head>
-<script src="/libs.js" ></script>
-<script src="/editApp.js" ></script>
-<script src="/jtree.browser.js"></script>
-<script src="/pldb.browser.js"></script>
-<link rel="stylesheet" type="text/css" href="/codemirror.css" />
-<link rel="stylesheet" type="text/css" href="/codemirror.show-hint.css" />
-<script type="text/javascript" src="/codemirror.js"></script>
-<script type="text/javascript" src="/show-hint.js"></script>
-<link rel="stylesheet" type="text/css" href="/editApp.css"></link>
-<title>PLDB Edit</title>
-</head>
-<body>
-<a class="gitHubTopRightLinkComponent" href="https://github.com/breck7/pldb"><svg role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>GitHub icon</title><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg></a>
-<div>
-<a href="/"><b>PLDB Edit</b></a> | <a href="/edit">List all</a> | <a href="/create">Create</a> | <form style="display:inline-block;" method="get" action="/search"><input type="search" placeholder="Search" name="q"/></form>
-</div>
-<br>
-<div id="successLink"></div>
-${bodyContent}
-</body>
-</html>`
+const cssLibs = "node_modules/jtree/sandbox/lib/codemirror.css node_modules/jtree/sandbox/lib/codemirror.show-hint.css editApp.css"
+	.split(" ")
+	.map(name => ` <link rel="stylesheet" type="text/css" href="/${name}" />`)
+	.join("\n")
+
+const scripts = "libs.js editApp.js node_modules/jtree/products/jtree.browser.js pldb.browser.js node_modules/jtree/sandbox/lib/codemirror.js node_modules/jtree/sandbox/lib/show-hint.js"
+	.split(" ")
+	.map(name => ` <script src="/${name}"></script>`)
+	.join("\n")
+
+const scrollToHtml = scrollContent =>
+	new ScrollPage(
+		`maxColumns 1
+columnWidth 200
+
+html
+${cssLibs}
+${scripts}
+
+html
+ <div id="successLink"></div>
+
+${scrollContent}
+`,
+		scrollSettings
+	).html
 
 const GIT_DEFAULT_USERNAME = "PLDBBot"
 const GIT_DEFAULT_EMAIL = "bot@pldb.com"
@@ -71,7 +86,7 @@ class PLDBEditServer extends TreeBaseServer {
 	compileGrammar() {
 		// todo: cleanup
 		jtree.compileGrammarForBrowser(
-			path.join(__dirname, "..", "..", "pldb.local", "docs", "pldb.grammar"),
+			path.join(baseFolder, "pldb.local", "docs", "pldb.grammar"),
 			__dirname + "/",
 			false
 		)
@@ -160,14 +175,29 @@ class PLDBEditServer extends TreeBaseServer {
 
 	indexCommand() {
 		const folder = this._folder
-		return template(`<p>PLDB Edit is a simple web app for quickly adding and editing content on <a href="https://pldb.com/">The Programming Language Database</a>.</p>
-<div style="white-space:pre;">
--- Folder: '${folder.dir}'
--- Grammars: '${folder.grammarFilePaths.join(",")}'
--- Files: ${folder.length}
--- Bytes: ${folder.toString().length}
-</pre>
-<a href="errors.html">Errors (HTML)</a> | <a href="errors.csv">Errors (CSV)</a>`)
+		const { errors } = folder
+
+		const listAll = this._folder.topLanguages
+			.map(file => `<a href="edit/${file.id}">${file.id}</a>`)
+			.join(" · ")
+
+		return scrollToHtml(`
+html
+ <pre>
+ - Entities: ${folder.length} files in ${folder.dir}
+ - Grammar: ${folder.grammarFilePaths.length} grammar files in ${
+			folder.grammarDir
+		}
+ - TreeBase Bytes: ${numeral(folder.toString().length).format("0.0b")}
+ - CSV Bytes: ${numeral(csvFileLength).format("0.0b")}
+ - Errors: ${errors.length ? `<a href="errors.csv">${errors.length}</a>` : `0`} 
+ </pre>
+
+section Edit a language:
+
+html
+ ${listAll}
+ `)
 	}
 
 	appendToPostLog(route, author, content) {
@@ -188,30 +218,12 @@ class PLDBEditServer extends TreeBaseServer {
 		const app = this._app
 		const pldbBase = this._folder
 
-		const publicFolder = path.join(__dirname, "..", "..", "blog", "public")
-
 		app.use(express.static(__dirname))
-		app.use(express.static(publicFolder))
-		app.use(
-			express.static(
-				path.join(__dirname, "..", "..", "node_modules", "jtree", "products")
-			)
-		)
-		app.use(
-			express.static(
-				path.join(
-					__dirname,
-					"..",
-					"..",
-					"node_modules",
-					"jtree",
-					"sandbox",
-					"lib"
-				)
-			)
-		)
+		app.use(express.static(publishedFolder))
 
-		app.get("/create", (req, res) => res.send(template(editForm())))
+		app.get("/create", (req, res) =>
+			res.send(scrollToHtml(editForm(undefined, "Add a language")))
+		)
 
 		app.post("/create", async (req, res) => {
 			const { content, author } = req.body
@@ -242,32 +254,27 @@ class PLDBEditServer extends TreeBaseServer {
 		const errorForm = (submission, err, res) => {
 			res.status(500)
 			res.send(
-				template(
-					`<div style="color: red;">Error: ${err}</div>` + editForm(submission)
+				scrollToHtml(
+					`html
+ <div style="color: red;">Error: ${err}</div>
+${editForm(submission, "Error")}`
 				)
 			)
 		}
 
 		const notFound = (id, res) => {
 			res.status(500)
-			return res.send(template(`"${htmlEscaped(id)}" not found`))
-		}
-
-		app.get("/edit", (req, res) =>
-			res.send(
-				template(
-					this._folder.topLanguages
-						.map(file => `<a href="edit/${file.id}">${file.getFileName()}</a>`)
-						.join("<br>")
-				)
+			return res.send(
+				scrollToHtml(`paragraph
+ "${htmlEscaped(id)}" not found`)
 			)
-		)
+		}
 
 		app.get("/search", (req, res) => {
 			const { q, format } = req.query
 			const results = new SearchRoutes().search(q, format, req.originalUrl)
 			if (format) res.send(results)
-			else res.send(template(results))
+			else res.send(scrollToHtml(results))
 		})
 
 		app.get("/edit/:id", (req, res) => {
@@ -277,10 +284,16 @@ class PLDBEditServer extends TreeBaseServer {
 			const file = pldbBase.getFile(id)
 			if (!file) return notFound(id, res)
 
-			const keyboardNav = `<a href="${file.previousRanked.id}" id="previousFile">previous</a>
-<a href="${file.nextRanked.id}" id="nextFile">next</a>`
+			const keyboardNav = `
 
-			res.send(template(editForm(file.childrenToString()) + keyboardNav))
+html
+ <a href="${file.previousRanked.id}" id="previousFile">previous</a><a href="${file.nextRanked.id}" id="nextFile">next</a>`
+
+			res.send(
+				scrollToHtml(
+					editForm(file.childrenToString(), `Editing ${file.id}`) + keyboardNav
+				)
+			)
 		})
 
 		app.post("/edit/:id", async (req, res) => {

@@ -2,12 +2,10 @@
 
 const lodash = require("lodash")
 const simpleGit = require("simple-git")
-const fs = require("fs")
 const path = require("path")
 const { jtree } = require("jtree")
 const { TreeNode } = jtree
 const { Disk } = require("jtree/products/Disk.node.js")
-const { CommandLineApp } = require("jtree/products/commandLineApp.node.js")
 const { AbstractBuilder } = require("jtree/products/AbstractBuilder.node.js")
 const { ScrollFolder } = require("scroll-cli")
 const shell = require("child_process").execSync
@@ -15,6 +13,7 @@ const shell = require("child_process").execSync
 import { LanguagePageTemplate, FeaturePageTemplate } from "./pages"
 import { PLDBBaseFolder } from "./PLDBBase"
 import { ListRoutes } from "./routes"
+import { makeScrollSettings } from "./ScrollSettings"
 
 const pldbBase = PLDBBaseFolder.getBase().loadFolder()
 const codeDir = __dirname
@@ -22,7 +21,6 @@ const rootDir = path.join(codeDir, "..")
 const blogDir = path.join(rootDir, "blog")
 const websiteFolder = path.join(rootDir, "pldb.local")
 const docsDir = path.join(websiteFolder, "docs")
-const dayjs = require("dayjs")
 const databaseFolderWhenPublishedToWebsite = path.join(
   websiteFolder,
   "languages"
@@ -34,17 +32,8 @@ import {
   benchmark,
   benchmarkResults,
   listGetters,
-  cleanAndRightShift,
-  lastCommitHashInFolder
+  cleanAndRightShift
 } from "./utils"
-
-const lastHash = lastCommitHashInFolder()
-const builtOn = dayjs().format("YYYY")
-const version = `<a title="This page was built in ${builtOn} from commit ${lastHash}" href="https://github.com/breck7/pldb/commit/${lastHash}">v${builtOn}</a>`
-const settingsFile = Disk.read(path.join(blogDir, "scroll.settings")).replace(
-  /PLDB_BUILT_ON/g,
-  version
-)
 
 class Builder extends AbstractBuilder {
   _cpAssets() {
@@ -54,11 +43,12 @@ class Builder extends AbstractBuilder {
 
     this.buildDocs()
 
-    // Copy Monaco assets
+    // Copy node module assets
     Disk.mkdir(path.join(websiteFolder, "node_modules"))
     shell(
       `cp -R ${rootDir}/node_modules/monaco-editor ${websiteFolder}/node_modules/`
     )
+    shell(`cp -R ${rootDir}/node_modules/jtree ${websiteFolder}/node_modules/`)
   }
 
   buildAll() {
@@ -76,12 +66,10 @@ class Builder extends AbstractBuilder {
 
     Disk.write(
       path.join(websiteFolder, "lists", "scroll.settings"),
-      settingsFile
-        .replace(/BASE_URL/g, "..")
-        .replace(
-          "GIT_PATH",
-          "https://github.com/breck7/pldb/blob/main/blog/lists/"
-        )
+      makeScrollSettings(
+        "..",
+        "https://github.com/breck7/pldb/blob/main/blog/lists/"
+      )
     )
 
     Disk.write(
@@ -110,12 +98,10 @@ class Builder extends AbstractBuilder {
 
     Disk.write(
       websiteFolder + "/scroll.settings",
-      settingsFile
-        .replace(/BASE_URL/g, ".")
-        .replace(
-          "GIT_PATH",
-          "https://github.com/breck7/pldb/blob/main/blog/posts/"
-        )
+      makeScrollSettings(
+        ".",
+        "https://github.com/breck7/pldb/blob/main/blog/posts/"
+      )
     )
 
     Disk.write(
@@ -165,7 +151,7 @@ class Builder extends AbstractBuilder {
 
     Disk.write(
       databaseFolderWhenPublishedToWebsite + "/scroll.settings",
-      settingsFile.replace(/BASE_URL/g, "..")
+      makeScrollSettings("..")
     )
 
     Disk.write(
@@ -301,12 +287,7 @@ ${text}`
       Disk.rm(grammarPath)
     } catch (err) {}
 
-    Disk.write(
-      path.join(docsDir, "scroll.settings"),
-      settingsFile
-        .replace(/BASE_URL/g, "..")
-        .replace("GIT_PATH", "https://github.com/breck7/pldb/blob/main/")
-    )
+    Disk.write(path.join(docsDir, "scroll.settings"), makeScrollSettings(".."))
     Disk.write(
       path.join(docsDir, "scrollExtensions.grammar"),
       this._scrollExtensionsFile
