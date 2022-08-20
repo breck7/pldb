@@ -20,8 +20,6 @@ const ignoreFolder = path.join(baseFolder, "ignore")
 const publishedFolder = path.join(baseFolder, "pldb.local")
 const csvFileLength = Disk.read(path.join(publishedFolder, "pldb.csv")).length
 
-const scrollSettings = makeScrollSettings("https://pldb.com")
-
 const logPath = path.join(ignoreFolder, "editServerLog.tree")
 Disk.touch(logPath)
 
@@ -57,9 +55,26 @@ const scripts = "libs.js editApp.js node_modules/jtree/products/jtree.browser.js
 	.map(name => ` <script src="/${name}"></script>`)
 	.join("\n")
 
-const scrollToHtml = scrollContent =>
-	new ScrollPage(
-		`maxColumns 1
+const GIT_DEFAULT_USERNAME = "PLDBBot"
+const GIT_DEFAULT_EMAIL = "bot@pldb.com"
+const GIT_DEFAULT_AUTHOR = `${GIT_DEFAULT_USERNAME} <${GIT_DEFAULT_EMAIL}>`
+
+class PLDBEditServer extends TreeBaseServer {
+	checkAndPrettifySubmission(content: string) {
+		return this._folder.prettifyContent(content)
+	}
+
+	get scrollSettings() {
+		return makeScrollSettings(
+			this.isProd ? "https://pldb.com" : "",
+			undefined,
+			this.isProd ? undefined : "/"
+		)
+	}
+
+	scrollToHtml(scrollContent) {
+		return new ScrollPage(
+			`maxColumns 1
 columnWidth 200
 
 html
@@ -71,16 +86,8 @@ html
 
 ${scrollContent}
 `,
-		scrollSettings
-	).html
-
-const GIT_DEFAULT_USERNAME = "PLDBBot"
-const GIT_DEFAULT_EMAIL = "bot@pldb.com"
-const GIT_DEFAULT_AUTHOR = `${GIT_DEFAULT_USERNAME} <${GIT_DEFAULT_EMAIL}>`
-
-class PLDBEditServer extends TreeBaseServer {
-	checkAndPrettifySubmission(content: string) {
-		return this._folder.prettifyContent(content)
+			this.scrollSettings
+		).html
 	}
 
 	compileGrammar() {
@@ -181,7 +188,7 @@ class PLDBEditServer extends TreeBaseServer {
 			.map(file => `<a href="edit/${file.id}">${file.id}</a>`)
 			.join(" · ")
 
-		return scrollToHtml(`
+		return this.scrollToHtml(`
 html
  <pre>
  - Entities: ${folder.length} files in ${folder.dir}
@@ -222,7 +229,7 @@ html
 		app.use(express.static(publishedFolder))
 
 		app.get("/create", (req, res) =>
-			res.send(scrollToHtml(editForm(undefined, "Add a language")))
+			res.send(this.scrollToHtml(editForm(undefined, "Add a language")))
 		)
 
 		app.post("/create", async (req, res) => {
@@ -254,7 +261,7 @@ html
 		const errorForm = (submission, err, res) => {
 			res.status(500)
 			res.send(
-				scrollToHtml(
+				this.scrollToHtml(
 					`html
  <div style="color: red;">Error: ${err}</div>
 ${editForm(submission, "Error")}`
@@ -265,7 +272,7 @@ ${editForm(submission, "Error")}`
 		const notFound = (id, res) => {
 			res.status(500)
 			return res.send(
-				scrollToHtml(`paragraph
+				this.scrollToHtml(`paragraph
  "${htmlEscaped(id)}" not found`)
 			)
 		}
@@ -274,7 +281,7 @@ ${editForm(submission, "Error")}`
 			const { q, format } = req.query
 			const results = new SearchRoutes().search(q, format, req.originalUrl)
 			if (format) res.send(results)
-			else res.send(scrollToHtml(results))
+			else res.send(this.scrollToHtml(results))
 		})
 
 		app.get("/edit/:id", (req, res) => {
@@ -290,7 +297,7 @@ html
  <a href="${file.previousRanked.id}" id="previousFile">previous</a><a href="${file.nextRanked.id}" id="nextFile">next</a>`
 
 			res.send(
-				scrollToHtml(
+				this.scrollToHtml(
 					editForm(file.childrenToString(), `Editing ${file.id}`) + keyboardNav
 				)
 			)
@@ -338,9 +345,11 @@ html
 	}
 
 	gitOn = false
+	isProd = false
 
 	listenProd() {
 		this.gitOn = true
+		this.isProd = true
 		const key = fs.readFileSync(path.join(ignoreFolder, "privkey.pem"))
 		const cert = fs.readFileSync(path.join(ignoreFolder, "fullchain.pem"))
 		https

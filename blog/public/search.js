@@ -30,7 +30,8 @@ document.addEventListener("DOMContentLoaded", function(event) {
     },
     onSelect: item => {
       const { id } = item
-      if (id) window.location = "/languages/" + id + ".html"
+      // todo: make work on local dev server too
+      if (id) window.location = "https://pldb.com/languages/" + id + ".html"
       else
         window.location = `https://edit.pldb.com/search?q=${
           document.getElementById("searchBox").value

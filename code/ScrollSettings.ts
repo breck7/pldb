@@ -14,7 +14,12 @@ const settingsFile = Disk.read(
 
 const makeScrollSettings = (
   baseUrl = "",
-  gitPath = "https://github.com/breck7/pldb/"
-) => settingsFile.replace(/BASE_URL/g, baseUrl).replace("GIT_PATH", gitPath)
+  gitPath = "https://github.com/breck7/pldb/",
+  editUrl = "https://edit.pldb.com"
+) =>
+  settingsFile
+    .replace(/BASE_URL/g, baseUrl)
+    .replace(/GIT_PATH/g, gitPath)
+    .replace(/EDIT_URL/g, editUrl)
 
 export { makeScrollSettings }
