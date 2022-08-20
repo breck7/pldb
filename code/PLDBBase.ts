@@ -582,7 +582,11 @@ class PLDBBaseFolder extends TreeBaseFolder {
   searchForEntity(query: string) {
     if (query === undefined || query === "") return
     const { searchIndex } = this
-    return searchIndex.get(query) || searchIndex.get(getCleanedId(query))
+    return (
+      searchIndex.get(query) ||
+      searchIndex.get(query.toLowerCase()) ||
+      searchIndex.get(getCleanedId(query))
+    )
   }
 
   searchForEntityByFileExtensions(extensions: string[] = []) {

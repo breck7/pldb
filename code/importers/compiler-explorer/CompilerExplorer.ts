@@ -102,7 +102,6 @@ class CompilerExplorerImporter {
 	}
 
 	listUnmatchedLangsCommand() {
-		console.log(this.languages)
 		const missingPath = path.join(cacheDir, "missingLangs.json")
 		Disk.write(missingPath, JSON.stringify(this.unmatched, null, 2))
 		console.log(`Wrote ${this.unmatched.length} missing to: ${missingPath}`)
