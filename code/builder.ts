@@ -40,9 +40,11 @@ class Builder extends AbstractBuilder {
     // Copy other assets into the root site folder
     const publicFolder = path.join(blogDir, "public")
     shell(`cp ${publicFolder}/*.* ${websiteFolder}`)
-
+    this.copyNpmAssets()
     this.buildDocs()
+  }
 
+  copyNpmAssets() {
     // Copy node module assets
     Disk.mkdir(path.join(websiteFolder, "node_modules"))
     shell(
