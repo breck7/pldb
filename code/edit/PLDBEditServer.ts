@@ -8,7 +8,7 @@ const numeral = require("numeral")
 const { jtree } = require("jtree")
 const { Disk } = require("jtree/products/Disk.node.js")
 const { TreeBaseServer } = require("jtree/products/treeBase.node.js")
-const { ScrollPage } = require("/Users/breck/scroll/scroll.js")
+const { ScrollPage } = require("scroll-cli")
 import { PLDBBaseFolder } from "../PLDBBase"
 import { runCommand, lastCommitHashInFolder, htmlEscaped } from "../utils"
 import simpleGit, { SimpleGit } from "simple-git"
