@@ -328,6 +328,14 @@ class PLDBFile extends TreeBaseFile {
       })
     })
 
+    this.findNodes("compilerExplorer example").forEach(node => {
+      examples.push({
+        code: node.childrenToString(),
+        source: "Compiler Explorer",
+        link: `https://godbolt.org/`
+      })
+    })
+
     this.findNodes("rijuRepl example").forEach(node => {
       examples.push({
         code: node.childrenToString(),

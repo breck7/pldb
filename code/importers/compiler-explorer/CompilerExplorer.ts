@@ -23,6 +23,7 @@ const langPath = path.join(
 )
 
 const prepLangFile = () => {
+	// todo: path.join(__dirname + '/../../../examples', key, 'default' + lang.extensions[0]),
 	const content =
 		Disk.read(langPath)
 			.replace(
@@ -40,10 +41,12 @@ const _ = require('underscore');`
 }
 
 class PLDBFileWithCompilerExplorer {
-	constructor(file: PLDBFile) {
+	constructor(file: PLDBFile, lang) {
 		this.file = file
+		this.lang = lang
 	}
 
+	lang: any
 	file: PLDBFile
 
 	get compilerExplorerNode() {
@@ -51,8 +54,12 @@ class PLDBFileWithCompilerExplorer {
 	}
 
 	writeInfo() {
-		const { file, compilerExplorerNode } = this
-		//file.prettifyAndSave()
+		const { file, compilerExplorerNode, lang } = this
+		const { example } = lang
+
+		if (example) compilerExplorerNode.touchNode("example").setChildren(example)
+
+		file.prettifyAndSave()
 		return this
 	}
 }
@@ -66,9 +73,9 @@ class CompilerExplorerImporter {
 		return require(langPath).languages
 	}
 
-	writeAllRepoDataCommand() {
-		this.linkedFiles.forEach(file =>
-			new PLDBFileWithCompilerExplorer(file).writeInfo()
+	writeDataCommand() {
+		this.matched.forEach(pair =>
+			new PLDBFileWithCompilerExplorer(pair.file, pair.lang).writeInfo()
 		)
 	}
 
@@ -105,10 +112,6 @@ class CompilerExplorerImporter {
 		const missingPath = path.join(cacheDir, "missingLangs.json")
 		Disk.write(missingPath, JSON.stringify(this.unmatched, null, 2))
 		console.log(`Wrote ${this.unmatched.length} missing to: ${missingPath}`)
-	}
-
-	get linkedFiles() {
-		return pldbBase.filter(file => file.has(compilerExplorerKey))
 	}
 }
 
