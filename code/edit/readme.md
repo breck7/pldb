@@ -39,6 +39,7 @@ ssh-keygen -t rsa
 git clone git@github.com:breck7/pldb.git
 cd pldb
 npm install .
+npm run build
 cd code
 tsc
 # Test that it works over http
@@ -64,6 +65,7 @@ ssh pldb@edit.pldb.com
 cd pldb
 git pull
 npm install .
+npm run build
 cd code
 tsc
 pm2 restart 0
