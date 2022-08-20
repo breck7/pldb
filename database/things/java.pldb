@@ -427,6 +427,13 @@ rosettaCode Java
 quineRelay Java
 
 compilerExplorer Java
+ example
+  // Type your code here, or load an example.
+  class Square {
+      static int square(int num) {
+          return num * num;
+      }
+  }
 rijuRepl https://riju.codes/java
  example
   public class Main {

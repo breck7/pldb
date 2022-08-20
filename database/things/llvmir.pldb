@@ -69,6 +69,12 @@ leachim6 LLVM
 quineRelay LLVM asm
 
 compilerExplorer LLVM IR
+ example
+  define i32 @square(i32) local_unnamed_addr #0 {
+      %2 = mul nsw i32 %0, %0
+      ret i32 %2
+  }
+  
 rijuRepl https://riju.codes/llvm
  example
   @.str = private unnamed_addr constant [13 x i8] c"Hello, world!"

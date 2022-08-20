@@ -166,6 +166,13 @@ rosettaCode Haskell
 quineRelay Haskell
 
 compilerExplorer Haskell
+ example
+  module Example where
+  
+  sumOverArray :: [Int] -> Int
+  sumOverArray (x:xs) = x + sumOverArray xs
+  sumOverArray [] =  0
+  
 rijuRepl https://riju.codes/haskell
  example
   module Main where

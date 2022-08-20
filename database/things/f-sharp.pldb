@@ -179,6 +179,11 @@ leachim6 FSharp
 quineRelay F#
 
 compilerExplorer F#
+ example
+  module Program
+  
+  let square num = num * num
+  
 rijuRepl https://riju.codes/fsharp
  example
   printfn "Hello, world!"

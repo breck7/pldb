@@ -72,6 +72,13 @@ leachim6 Visual Basic
 quineRelay Visual Basic
 
 compilerExplorer Visual Basic
+ example
+  Module Program
+      Function Square(num As Integer) As Integer
+          Return num * num
+      End Function
+  End Module
+  
 rijuRepl https://riju.codes/visualbasic
  example
   Module Main

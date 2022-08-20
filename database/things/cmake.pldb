@@ -80,6 +80,13 @@ leachim6 CMake
 rosettaCode CMake
 
 compilerExplorer CMake
+ example
+  project(default)
+  
+  add_compile_options(-Werror -Wall -Wextra -g)
+  
+  add_executable(output.s example.cpp)
+  
 rijuRepl https://riju.codes/cmake
  example
   message("Hello, world!")

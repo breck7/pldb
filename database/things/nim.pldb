@@ -122,6 +122,11 @@ rosettaCode Nim
 quineRelay Nim
 
 compilerExplorer Nim
+ example
+  # Type your code here, or load an example.
+  proc square(num: int): int {.exportc.} =
+    num * num
+  
 rijuRepl https://riju.codes/nim
  example
   echo "Hello, world!"

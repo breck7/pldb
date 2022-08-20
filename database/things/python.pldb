@@ -241,6 +241,10 @@ rosettaCode Python
 quineRelay Python
 
 compilerExplorer Python
+ example
+  def square(num):
+      return num * num
+  
 rijuRepl https://riju.codes/python
  example
   print("Hello, world!")

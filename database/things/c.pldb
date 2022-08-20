@@ -248,6 +248,11 @@ rosettaCode C
 quineRelay C
 
 compilerExplorer C
+ example
+  // Type your code here, or load an example.
+  int square(int num) {
+      return num * num;
+  }
 rijuRepl https://riju.codes/c
  example
   #include <stdio.h>

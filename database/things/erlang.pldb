@@ -151,6 +151,12 @@ rosettaCode Erlang
 quineRelay Erlang
 
 compilerExplorer Erlang
+ example
+  -module(square).
+  -export([square/1]).
+  
+  square(A) -> A*A.
+  
 rijuRepl https://riju.codes/erlang
  example
   -module(main).

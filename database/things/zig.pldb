@@ -59,6 +59,12 @@ leachim6 Zig
 rosettaCode Zig
 
 compilerExplorer Zig
+ example
+  // Type your code here, or load an example.
+  export fn square(num: i32) i32 {
+      return num * num;
+  }
+  
 rijuRepl https://riju.codes/zig
  example
   const std = @import("std");

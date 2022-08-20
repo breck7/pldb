@@ -280,6 +280,12 @@ leachim6 CSharp
   
 
 compilerExplorer C#
+ example
+  class Program
+  {
+      static int Square(int num) => num * num;
+  }
+  
 rijuRepl https://riju.codes/csharp
  example
   class main {

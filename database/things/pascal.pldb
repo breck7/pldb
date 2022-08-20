@@ -153,6 +153,24 @@ rosettaCode Pascal
 quineRelay Pascal
 
 compilerExplorer Pascal
+ example
+  unit output;
+  
+  interface
+  
+  function Square(const num: Integer): Integer;
+  
+  implementation
+  
+  // Type your code here, or load an example.
+  
+  function Square(const num: Integer): Integer;
+  begin
+      Square := num * num;
+  end;
+  
+  end.
+  
 rijuRepl https://riju.codes/pascal
  example
   program Main;

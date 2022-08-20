@@ -40,5 +40,14 @@ leachim6 Jakt
   
 
 compilerExplorer Jakt
+ example
+  function square(num: i32) -> i32 {
+      return num * num
+  }
+  
+  function main() {
+      return square(num: 3)
+  }
+  
 
 isbndb 0

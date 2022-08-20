@@ -177,6 +177,13 @@ rosettaCode Scala
 quineRelay Scala
 
 compilerExplorer Scala
+ example
+  // Type your code here, or load an example.
+  object Square {
+      def square(num: Int): Int =
+          num * num
+  }
+  
 rijuRepl https://riju.codes/scala
  example
   println("Hello, world!")

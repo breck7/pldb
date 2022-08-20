@@ -233,6 +233,11 @@ rosettaCode Ruby
 quineRelay Ruby
 
 compilerExplorer Ruby
+ example
+  # Type your code here, or load an example.
+  def square(num)
+    num * num
+  end
 rijuRepl https://riju.codes/ruby
  example
   puts "Hello, world!"

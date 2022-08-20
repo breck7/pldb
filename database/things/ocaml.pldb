@@ -127,6 +127,9 @@ rosettaCode OCaml
 quineRelay OCaml
 
 compilerExplorer OCaml
+ example
+  let square x = x * x
+  
 rijuRepl https://riju.codes/ocaml
  example
   ;;

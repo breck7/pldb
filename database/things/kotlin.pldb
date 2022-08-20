@@ -198,6 +198,10 @@ leachim6 Kotlin
 rosettaCode Kotlin
 
 compilerExplorer Kotlin
+ example
+  // Type your code here, or load an example.
+  fun square(num: Int): Int = num * num
+  
 rijuRepl https://riju.codes/kotlin
  example
   println("Hello, world!")

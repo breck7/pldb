@@ -202,6 +202,13 @@ leachim6 Crystal
 rosettaCode Crystal
 
 compilerExplorer Crystal
+ example
+  # Type your code here, or load an example.
+  
+  # compile with --prelude=empty
+  fun square(num : Int32) : Int32
+    num &* num
+  end
 rijuRepl https://riju.codes/crystal
  example
   puts "Hello, world!"

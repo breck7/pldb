@@ -61,6 +61,12 @@ projectEuler Assembly
   2022 223
 
 compilerExplorer Assembly
+ example
+  infiniteLoop:
+      jmp main
+  main:
+      jmp infiniteLoop
+  
 
 stackOverflowSurvey
  2021

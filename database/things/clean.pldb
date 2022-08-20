@@ -85,6 +85,17 @@ leachim6 Clean
 rosettaCode Clean
 
 compilerExplorer Clean
+ example
+  module example
+  
+  import StdInt
+  
+  square :: Int -> Int
+  square n = n * n
+  
+  Start :: Int
+  Start = square 3
+  
 rijuRepl https://riju.codes/clean
  example
   module main

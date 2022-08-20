@@ -169,6 +169,11 @@ leachim6 Swift
 rosettaCode Swift
 
 compilerExplorer Swift
+ example
+  // Type your code here, or load an example.
+  func square(n: Int) -> Int {
+      return n * n
+  }
 rijuRepl https://riju.codes/swift
  example
   print("Hello, world!")

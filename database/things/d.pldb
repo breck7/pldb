@@ -141,6 +141,12 @@ rosettaCode D
 quineRelay D
 
 compilerExplorer D
+ example
+  // Type your code here, or load an example.
+  int square(int num) {
+      return num * num;
+  }
+  
 rijuRepl https://riju.codes/d
  example
   import std.stdio;
