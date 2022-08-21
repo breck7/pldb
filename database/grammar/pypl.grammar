@@ -1,0 +1,6 @@
+pyplNode
+ extends abstractMultiwordGuidNode
+ description This language's id on https://pypl.github.io
+ cruxFromId
+ string sourceDomain pypl.github.io
+ single
