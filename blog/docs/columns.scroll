@@ -1,0 +1,32 @@
+title PLDB CSV File Documentation
+skipIndexPage
+maxColumns 1
+columnWidth 80
+tableSearch
+
+html
+ <style>
+  .scrollTableComponent td {
+    max-width: 30ch;
+  }
+  .scrollTableComponent td:nth-child(5) {
+    max-width: 20ch;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+  }
+  </style>
+
+aftertext
+ PLDB builds two CSV files:
+ <br><br>
+ - The primary file is https://pldb.com/languages.csv which contains LANG_COUNT rows and COL_COUNT columns. Every row is a language and every language is one row.
+ <br>
+ - The secondary file is https://pldb.com/pldb.csv which contains everything in `languages.csv` and all other entities in the PLDB—such as operating systems and editors—and has ENTITY_COUNT total rows.
+ https://pldb.com/languages.csv https://pldb.com/languages.csv
+ https://pldb.com/pldb.csv https://pldb.com/pldb.csv
+ wrapsOn
+
+section Column Documentation
+
+comment autogenColumnDocs
+pipeTable

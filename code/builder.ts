@@ -299,60 +299,37 @@ ${text}`
 
     const langCount = pldbBase.topLanguages.length
     const colCount = columnDocumentation.length
+    const entityCount = pldbBase.length
+
+    const columnTable =
+      `pipeTable\n ` +
+      new TreeNode(columnDocumentation)
+        .toDelimited("|", [
+          "Index",
+          "Column",
+          "Values",
+          "Coverage",
+          "Example",
+          "Description",
+          "Source",
+          "SourceLink"
+        ])
+        .replace(/\n/g, "\n ")
 
     // todo: add linkify to scrolldown
-    Disk.write(
-      path.join(docsDir, "columns.scroll"),
-      `title PLDB CSV File Documentation
-skipIndexPage
-maxColumns 1
-columnWidth 80
-tableSearch
-
-html
- <style>
-  .scrollTableComponent td {
-    max-width: 30ch;
-  }
-  .scrollTableComponent td:nth-child(5) {
-    max-width: 20ch;
-    white-space: nowrap;
-    text-overflow: ellipsis;
-  }
-  </style>
-
-aftertext
- PLDB builds two CSV files:
- <br><br>
- - The primary file is https://pldb.com/languages.csv which contains ${langCount} rows and ${colCount} columns. Every row is a language.
- <br>
- - The secondary file is https://pldb.com/pldb.csv which contains all entities in PLDB (things like operating systems and features) and is ${
-   pldbBase.length
- } rows.
- https://pldb.com/languages.csv https://pldb.com/languages.csv
- https://pldb.com/pldb.csv https://pldb.com/pldb.csv
-
-section Column Documentation
-
-pipeTable
- ${cleanAndRightShift(
-   new TreeNode(columnDocumentation).toDelimited("|", [
-     "Index",
-     "Column",
-     "Values",
-     "Coverage",
-     "Example",
-     "Description",
-     "Source",
-     "SourceLink"
-   ])
- )}`
+    const page = new TreeNode(
+      Disk.read(path.join(blogDir, "docs", "columns.scroll"))
+        .replace("LANG_COUNT", langCount)
+        .replace("COL_COUNT", colCount)
+        .replace("ENTITY_COUNT", entityCount)
     )
+    replaceNext(page, "comment autogenColumnDocs", columnTable)
+    Disk.write(path.join(docsDir, "columns.scroll"), page.toString())
 
     const folder = new ScrollFolder(docsDir)
     folder.buildSinglePages()
 
-    // Copy grammar to public folder for easy access in things like TN Designer.
+    // Copy grammar to docs public folder for easy access in things like TN Designer.
     Disk.write(grammarPath, pldbBase.grammarCode)
   }
 
