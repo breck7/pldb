@@ -19,6 +19,16 @@ features
  hasSemanticIndentation false
  hasStrings true
   "Hello world"
+ hasSwitch true
+ 	Switch[expr,
+  	pattern1, code1,
+   pattern2, code2,
+   pattern3, code3
+  ]
+ hasOperatorOverloading true
+ 	f[x_Integer] := x^2;
+  f[x_String] := "not a number";
+  f[x_Symbol] := x^2;
 
 multiLineCommentTokens (* *)
 printToken Print
