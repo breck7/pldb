@@ -3,14 +3,18 @@
 import { runCommand } from "../../utils"
 import { PLDBBaseFolder } from "../../PLDBBase"
 
+const path = require("path")
+const dayjs = require("dayjs")
+
 const { Disk } = require("jtree/products/Disk.node.js")
 
 const pldbBase = PLDBBaseFolder.getBase().loadFolder()
 
-const cachePath = __dirname + "/cache/"
+const cachePath = path.join(__dirname, "cache")
 Disk.mkdir(cachePath)
 
-const getCachePath = file => cachePath + file.get("subreddit") + ".json"
+const getCachePath = file =>
+  path.join(cachePath, file.get("subreddit") + ".json")
 
 class RedditImporter {
   writeToDatabaseCommand() {
@@ -46,6 +50,38 @@ class RedditImporter {
       "subreddit"
     )}`
     await Disk.downloadJson(url, path)
+  }
+
+  get announcements() {
+    return this.posts.filter(
+      post => post.link_flair_text === "Language announcement"
+    )
+  }
+
+  findLangsCommand() {}
+
+  get posts() {
+    return Disk.getFullPaths(path.join(cachePath, "ProgrammingLanguages"))
+      .filter(name => name.endsWith(".json"))
+      .map(name => Disk.readJson(name))
+  }
+
+  createFromAnnouncementsCommand() {
+    this.announcements.forEach(post => {
+      const title = ""
+      const { url, created_utc, permalink } = post
+      pldbBase.searchForEntity(title)
+      if (!title) {
+        const type = "pl"
+        const appeared = dayjs(created_utc).format("YYYY")
+        const newFile = pldbBase.createFile(`title ${title}
+type ${type}
+appeared ${appeared}
+reference ${url}
+reference https://reddit.com${permalink}
+`)
+      }
+    })
   }
 
   fetchAllCommand() {
