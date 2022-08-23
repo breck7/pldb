@@ -122,58 +122,28 @@ ${scrollContent}
 		authorName: string,
 		authorEmail: string
 	) {
-		const { git } = this
 		if (!this.gitOn) {
 			console.log(
 				`Would commit "${filename}" with message "${commitMessage}" as author "${authorName} <${authorEmail}>"`
 			)
 			return
 		}
+		const { git } = this
 		try {
-			// Do a pull _after_ the write. This ensures that, if we intend to overwrite a file
-			// that has been changed on the server, we'll end up with an intentional merge conflict.
-			await this.autopull()
-			const pull = await this.autopull()
-			if (!pull.success && pull) throw (<any>pull).error
+			// git add
+			// git commit
+			// git pull --rebase
+			// git push
 
 			await git.add(filename)
 			const commitResult = await git.commit(commitMessage, filename, {
 				"--author": `${authorName} <${authorEmail}>`
 			})
 
+			await this.git.pull()
 			await git.push()
 
 			return { success: true }
-		} catch (error) {
-			const err = error as Error
-			console.error(err)
-			return { success: false, error: err.toString() }
-		}
-	}
-
-	// Pull changes before making changes. However, only pull if an upstream branch is set up.
-	private async autopull() {
-		const res = await this.pullCommand()
-		if (!res.success) {
-			const err = res.error as string | undefined
-			if (
-				err?.includes(
-					"There is no tracking information for the current branch." // local-only branch
-				) ||
-				err?.includes("You are not currently on a branch.") // detached HEAD
-			)
-				return { success: true }
-		}
-		return res
-	}
-
-	private async pullCommand() {
-		try {
-			const res = await this.git.pull()
-			return {
-				success: true,
-				stdout: JSON.stringify(res.summary, null, 2)
-			}
 		} catch (error) {
 			const err = error as Error
 			console.error(err)
