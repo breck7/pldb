@@ -146,6 +146,7 @@ ${scrollContent}
 			return { success: true }
 		} catch (error) {
 			const err = error as Error
+			console.error(err)
 			return { success: false, error: err.toString() }
 		}
 	}
@@ -175,7 +176,7 @@ ${scrollContent}
 			}
 		} catch (error) {
 			const err = error as Error
-			console.log(err)
+			console.error(err)
 			return { success: false, error: err.toString() }
 		}
 	}
@@ -254,6 +255,7 @@ html
 				pldbBase.clearMemos()
 				res.redirect("edit/" + newFile.id + `#commit=${commit}`)
 			} catch (err) {
+				console.error(err)
 				errorForm(content, err, res)
 			}
 		})
@@ -327,6 +329,7 @@ html
 
 				res.redirect(id + `#commit=${commit}`)
 			} catch (err) {
+				console.error(err)
 				errorForm(content, err, res)
 			}
 		})
