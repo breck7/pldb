@@ -1,5 +1,8 @@
 const defaultAuthor = "Anon <anon@pldb.com>"
 const htmlEscaped = content => content.replace(/</g, "&lt;")
+function capitalizeFirstLetter(string) {
+	return string.charAt(0).toUpperCase() + string.slice(1)
+}
 class EditApp {
 	start() {
 		if (document.getElementById("previousFile")) this.startNav()
@@ -113,32 +116,30 @@ website https://www.ruby-lang.org</pre>`
 		const id = tree.get("title")
 		const references = tree
 			.findNodes("reference")
-			.map(node => node.getContent())
-		const links = [
-			tree.get("website"),
-			tree.get("githubRepo"),
-			tree.get("wikipedia"),
-			...references
-		]
-			.filter(i => i)
-			.join("<br>")
+			.map(node => "Reference: " + node.getContent())
+
+		const links = ["website", "githubRepo", "wikipedia"]
+			.filter(key => tree.has(key))
+			.map(key => `${capitalizeFirstLetter(key)}: ${tree.get(key)}`)
 
 		const permalink = this.route
-		const html =
-			TreeUtils.linkify(`${links}<br><br>
-Google<br>
-Search: https://www.google.com/search?q=${id}+programming+language<br>
-W/time: https://www.google.com/search?q=${id}+programming+language&tbs=cdr%3A1%2Ccd_min%3A1%2F1%2F1980%2Ccd_max%3A12%2F31%2F1995&tbm=<br>
-Scholar: https://scholar.google.com/scholar?q=${id}<br>
-Groups: https://groups.google.com/forum/#!search/${id}<br>
-Trends: https://trends.google.com/trends/explore?date=all&q=${id}<br>
-<br>
+		document.getElementById("quickLinks").innerHTML =
+			TreeUtils.linkify(`<b>PLDB on ${id}:</b><br>
+Git: https://github.com/breck7/pldb/blob/main/database/things/${permalink}.pldb<br>
+HTML page: https://pldb.com/languages/${permalink}.html
+<br><br>
+<b>Links about ${id}:</b><br>
+${links.join("<br>")}
+${references.join("<br>")}<br><br>
+
+<b>Search for more information about ${id}:</b><br>
+Google: https://www.google.com/search?q=${id}+programming+language<br>
+Google w/time: https://www.google.com/search?q=${id}+programming+language&tbs=cdr%3A1%2Ccd_min%3A1%2F1%2F1980%2Ccd_max%3A12%2F31%2F1995&tbm=<br>
+Google Scholar: https://scholar.google.com/scholar?q=${id}<br>
+Google Groups: https://groups.google.com/forum/#!search/${id}<br>
+Google Trends: https://trends.google.com/trends/explore?date=all&q=${id}<br>
 DDG: https://duckduckgo.com/?q=${id}<br>`) +
-			`Wayback: <a target="_blank" href="https://web.archive.org/web/20220000000000*/${id}">https://web.archive.org/web/20220000000000*/${id}</a>` +
-			TreeUtils.linkify(`<br><br>
-https://pldb.com/languages/${permalink}.html<br>
-https://github.com/breck7/pldb/blob/main/database/things/${permalink}.pldb`)
-		document.getElementById("quickLinks").innerHTML = html
+			`Wayback Machine: <a target="_blank" href="https://web.archive.org/web/20220000000000*/${id}">https://web.archive.org/web/20220000000000*/${id}</a>`
 	}
 }
 
