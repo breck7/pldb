@@ -81,6 +81,10 @@ class RedditImporter {
       const { url, created_utc, permalink, title } = post
       const handTitle = getTitle(post)
       if (!handTitle) return
+
+      const hit = pldbBase.searchForEntity(handTitle)
+      if (hit) return
+
       const type = "pl"
       const appeared = dayjs(created_utc * 1000).format("YYYY")
       let link = ""

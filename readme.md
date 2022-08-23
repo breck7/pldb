@@ -1,6 +1,6 @@
 # The Programming Language Database
 
-PLDB is a public domain database and blog containing over 100,000 facts about over 3,000 programming languages.
+PLDB is a public domain database and blog containing over 100,000 facts about over 4,000 programming languages.
 
 This repo contains the entire database, blog, and code for https://pldb.com.
 
@@ -11,8 +11,11 @@ The PLDB database is freely available:
 - As CSV: https://pldb.com/pldb.csv
 - As JSON: https://pldb.com/pldb.json
 - The JSON file is also available via npm:
-  -- `npm install pldb`
-  -- `console.log(require("pldb").javascript.appeared)`
+
+```
+// npm install pldb
+console.log(require("pldb").javascript.appeared)
+```
 
 Documentation for the columns is available here: https://pldb.com/docs/columns.html.
 
