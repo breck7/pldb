@@ -13,7 +13,7 @@ const pldbBase = PLDBBaseFolder.getBase().loadFolder()
 const cachePath = path.join(__dirname, "cache")
 Disk.mkdir(cachePath)
 
-import { getTitle } from "./getTitle"
+import { getTitle, handTitles } from "./getTitle"
 
 const getCachePath = file =>
   path.join(cachePath, file.get("subreddit") + ".json")
@@ -69,9 +69,8 @@ class RedditImporter {
   }
 
   printAnnouncementsCommand() {
-    const handTitles = {}
     this.announcements.forEach(post => {
-      handTitles[post.permalink] = post.title
+      if (!handTitles[post.permalink]) handTitles[post.permalink] = post.title
     })
     console.log(JSON.stringify(handTitles, null, 2))
   }
