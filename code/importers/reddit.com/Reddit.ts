@@ -13,6 +13,8 @@ const pldbBase = PLDBBaseFolder.getBase().loadFolder()
 const cachePath = path.join(__dirname, "cache")
 Disk.mkdir(cachePath)
 
+import { getTitle } from "./getTitle"
+
 const getCachePath = file =>
   path.join(cachePath, file.get("subreddit") + ".json")
 
@@ -66,21 +68,32 @@ class RedditImporter {
       .map(name => Disk.readJson(name))
   }
 
+  printAnnouncementsCommand() {
+    const handTitles = {}
+    this.announcements.forEach(post => {
+      handTitles[post.permalink] = post.title
+    })
+    console.log(JSON.stringify(handTitles, null, 2))
+  }
+
   createFromAnnouncementsCommand() {
     this.announcements.forEach(post => {
-      const title = ""
-      const { url, created_utc, permalink } = post
-      pldbBase.searchForEntity(title)
-      if (!title) {
-        const type = "pl"
-        const appeared = dayjs(created_utc).format("YYYY")
-        const newFile = pldbBase.createFile(`title ${title}
+      const { url, created_utc, permalink, title } = post
+      const handTitle = getTitle(post)
+      if (!handTitle) return
+      const type = "pl"
+      const appeared = dayjs(created_utc * 1000).format("YYYY")
+      let link = ""
+      if (url.includes("github.com")) link = `githubRepo ${url}`
+      else if (!url.includes(permalink)) link = `reference ${url}`
+
+      const newFile = pldbBase.createFile(`title ${handTitle}
+description ${title}
 type ${type}
 appeared ${appeared}
-reference ${url}
 reference https://reddit.com${permalink}
+${link}
 `)
-      }
     })
   }
 
