@@ -1,0 +1,17 @@
+title Gren
+type pl
+description A programming language for simple and correct applications
+website https://gren-lang.org/
+fileExtensions gren
+
+example
+ module Main exposing (main)
+ 
+ import Html exposing (Html)
+ 
+ main : Html a
+ main =
+   Html.text "Hello, world!"
+ 
+
+githubRepo https://github.com/gren-lang/compiler
