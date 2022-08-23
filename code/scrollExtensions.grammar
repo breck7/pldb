@@ -61,6 +61,15 @@ observableNode
   compile() {
    return `<div class="scrollQuoteComponent">Analyze this data yourself in <a href="${this.getWord(1)}">Observable</a></div>`
   }
+exampleCodeHeaderNode
+ todo Could ditch this if Scroll supported HAML style class tags
+ cruxFromId
+ catchAllCellType stringCell
+ extends abstractScrollNode
+ javascript
+  compile() {
+   return `<div class="exampleCodeHeader">${this.getContent()}</div>`
+  }
 authorNode
  extends abstractScrollNode
  cruxFromId

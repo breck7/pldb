@@ -267,7 +267,7 @@ ${this.monacoEditor}
 ${this.descriptionSection}
 
 ${this.factsSection}
-
+<br>
 ${this.exampleSection}
 
 ${this.keywordsSection}
@@ -735,7 +735,7 @@ paragraph
     return this.file.allExamples
       .map(
         example =>
-          `subsection Example code from ${
+          `exampleCodeHeader Example from ${
             !example.link
               ? example.source
               : `<a href='${example.link}'>` + example.source + "</a>"
@@ -861,7 +861,7 @@ class FeaturePageTemplate extends LanguagePageTemplate {
         const links = group
           .map(hit => `<a href="${hit.id}.html">${hit.title}</a>`)
           .join(", ")
-        return `subsection Example from ${links}:
+        return `exampleCodeHeader Example from ${links}:
 
 code
  ${cleanAndRightShift(lodash.escape(group[0].example), 1)}`
