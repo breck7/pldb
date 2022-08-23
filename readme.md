@@ -27,7 +27,7 @@ Advanced method: Create a new file in `database/things` with a unique URL friend
 
 ## To update a language
 
-Easy method: https://edit.pldb.com/edit
+Easy method: https://edit.pldb.com/
 
 Advanced method: Edit the corresponding `database/things/*.pldb` file and send a pull request.
 
