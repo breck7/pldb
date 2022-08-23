@@ -214,7 +214,7 @@ html
 				const { authorName, authorEmail } = this.parseGitAuthor(author)
 
 				await this.commitFile(
-					newFile.getWord(0),
+					newFile.filename,
 					`Added '${newFile.id}'`,
 					authorName,
 					authorEmail
@@ -289,7 +289,7 @@ html
 				const { authorName, authorEmail } = this.parseGitAuthor(author)
 
 				await this.commitFile(
-					file.getWord(0),
+					file.filename,
 					`Updated '${file.id}'`,
 					authorName,
 					authorEmail

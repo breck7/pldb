@@ -133,6 +133,10 @@ class PLDBFile extends TreeBaseFile {
     return count
   }
 
+  get filename() {
+    return this.id + ".pldb"
+  }
+
   get names() {
     return [
       this.id,
