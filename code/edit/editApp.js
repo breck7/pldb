@@ -5,7 +5,6 @@ function capitalizeFirstLetter(string) {
 }
 class EditApp {
 	start() {
-		if (document.getElementById("previousFile")) this.startNav()
 		if (document.getElementById("submitButton")) this.startForm()
 		if (this.route === "create") this.startCreateForm()
 
@@ -62,13 +61,6 @@ website https://www.ruby-lang.org</pre>`
 	updateAuthor() {
 		document.getElementById("authorLabel").innerHTML = htmlEscaped(this.author)
 		document.getElementById("author").value = this.author
-	}
-
-	startNav() {
-		Mousetrap.bind("left", () =>
-			document.getElementById("previousFile").click()
-		)
-		Mousetrap.bind("right", () => document.getElementById("nextFile").click())
 	}
 
 	get store() {

@@ -110,8 +110,12 @@ class PLDBFile extends TreeBaseFile {
     return this.get("domainName")
   }
 
+  get permalink() {
+    return this.id + ".html"
+  }
+
   get link() {
-    return `<a href="${this.id}.html">${this.title}</a>`
+    return `<a href="${this.permalink}">${this.title}</a>`
   }
 
   @includeInCsv
@@ -760,7 +764,7 @@ class PLDBBaseFolder extends TreeBaseFolder {
       const measurements = positives + negatives
       return {
         feature: file.get("title"),
-        featureLink: `../languages/${name}.html`,
+        featureLink: `../languages/${file.permalink}`,
         aka: file.getAll("aka").join(" or "),
         path: file.get("featureKeyword"),
         token: file.get("tokenKeyword"),

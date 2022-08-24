@@ -24,9 +24,9 @@ class LanguagePageTemplate {
     this.id = this.file.id
   }
 
-  makeATag(permalink) {
-    const file = this.file.base.getFile(permalink)
-    return `<a href="${permalink}.html">${file.title}</a>`
+  makeATag(id) {
+    const file = this.file.base.getFile(id)
+    return `<a href="${file.permalink}">${file.title}</a>`
   }
 
   protected object: pldbNode
@@ -286,7 +286,7 @@ ${this.publications}
 
 ${this.hackerNewsTable}
 
-${this.keyboardNavigation}
+keyboardNav ${this.prevPage} ${this.nextPage}
 `
   }
 
@@ -309,19 +309,11 @@ ${this.keyboardNavigation}
   }
 
   get prevPage() {
-    return this.file.previousRanked.id
+    return this.file.previousRanked.permalink
   }
 
   get nextPage() {
-    return this.file.nextRanked.id
-  }
-
-  get keyboardNavigation() {
-    return `html
- <script>
-  Mousetrap.bind("left", () => {window.location = "${this.prevPage}.html"})
-  Mousetrap.bind("right", () => {window.location = "${this.nextPage}.html"})
- </script>`
+    return this.file.nextRanked.permalink
   }
 
   get factsSection() {
@@ -825,11 +817,11 @@ class FeaturePageTemplate extends LanguagePageTemplate {
   }
 
   get prevPage() {
-    return this.file.previousRankedFeature.id
+    return this.file.previousRankedFeature.permalink
   }
 
   get nextPage() {
-    return this.file.nextRankedFeature.id
+    return this.file.nextRankedFeature.permalink
   }
 
   get typeLink() {

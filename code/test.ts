@@ -4,6 +4,7 @@ const tap = require("tap")
 const lodash = require("lodash")
 const grammarNode = require("jtree/products/grammar.nodejs.js")
 const { Disk } = require("jtree/products/Disk.node.js")
+const { ScrollFolder } = require("scroll-cli")
 
 import { PLDBBaseFolder } from "./PLDBBase"
 const pldbBase = PLDBBaseFolder.getBase().loadFolder()
@@ -20,7 +21,14 @@ testTree.ensureNoErrorsInGrammar = areEqual => {
 		.getAllErrors()
 		.map(err => err.toObject())
 	if (grammarErrors.length) console.log(grammarErrors)
-	areEqual(grammarErrors.length, 0)
+	areEqual(grammarErrors.length, 0, "no errors in pldb grammar")
+}
+
+testTree.ensureNoErrorsInScrollExtensions = areEqual => {
+	const scrollFolder = new ScrollFolder(__dirname)
+	const { grammarErrors } = scrollFolder
+	if (grammarErrors.length) console.log(grammarErrors)
+	areEqual(grammarErrors.length, 0, "no errors in scroll extensions")
 }
 
 // todo

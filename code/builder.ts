@@ -19,6 +19,7 @@ const pldbBase = PLDBBaseFolder.getBase().loadFolder()
 const codeDir = __dirname
 const rootDir = path.join(codeDir, "..")
 const blogDir = path.join(rootDir, "blog")
+const publicFolder = path.join(blogDir, "public")
 const websiteFolder = path.join(rootDir, "pldb.local")
 const docsDir = path.join(websiteFolder, "docs")
 const databaseFolderWhenPublishedToWebsite = path.join(
@@ -36,14 +37,6 @@ import {
 } from "./utils"
 
 class Builder extends AbstractBuilder {
-  _cpAssets() {
-    // Copy other assets into the root site folder
-    const publicFolder = path.join(blogDir, "public")
-    shell(`cp ${publicFolder}/*.* ${websiteFolder}`)
-    this.copyNpmAssets()
-    this.buildDocs()
-  }
-
   copyNpmAssets() {
     // Copy node module assets
     Disk.mkdir(path.join(websiteFolder, "node_modules"))
@@ -93,13 +86,16 @@ class Builder extends AbstractBuilder {
 
   buildBlog() {
     Disk.mkdir(websiteFolder)
-    this._cpAssets()
+    // Copy other assets into the root site folder
+    shell(`cp ${publicFolder}/*.* ${websiteFolder}`)
+    this.copyNpmAssets()
+    this.buildDocs()
 
     // Copy posts dir into root site folder
     shell(`cp -R ${blogDir}/posts/* ${websiteFolder}`)
 
     Disk.write(
-      websiteFolder + "/scroll.settings",
+      path.join(websiteFolder, "scroll.settings"),
       makeScrollSettings(
         ".",
         "https://github.com/breck7/pldb/blob/main/blog/posts/"
@@ -107,11 +103,9 @@ class Builder extends AbstractBuilder {
     )
 
     Disk.write(
-      websiteFolder + "/scrollExtensions.grammar",
+      path.join(websiteFolder, "scrollExtensions.grammar"),
       this._scrollExtensionsFile
     )
-
-    this._cpAssets()
 
     const folder = new ScrollFolder(websiteFolder)
     folder.buildSinglePages()
@@ -209,7 +203,7 @@ class Builder extends AbstractBuilder {
     writtenIn = lodash.sortBy(writtenIn, "rank")
 
     const text = writtenIn
-      .map(file => ` - <a href="languages/${file.id}.html">${file.title}</a>`)
+      .map(file => ` - <a href="languages/${file.permalink}">${file.title}</a>`)
       .join("\n")
 
     replaceNext(

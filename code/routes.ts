@@ -56,18 +56,18 @@ class SearchRoutes {
     const searchResults = hits
       .map(
         file =>
-          ` <a href="${baseUrl}${file.id}.html">${file.title}</a> - ${file.get(
-            "type"
-          )} #${file.rank} - ${highlightHit(file)}`
+          ` <a href="${baseUrl}${file.permalink}">${
+            file.title
+          }</a> - ${file.get("type")} #${file.rank} - ${highlightHit(file)}`
       )
       .join("<br>\n")
 
     const nameResults = nameHits
       .map(
         file =>
-          ` <a href="${baseUrl}${file.id}.html">${file.title}</a> - ${file.get(
-            "type"
-          )} #${file.rank}`
+          ` <a href="${baseUrl}${file.permalink}">${
+            file.title
+          }</a> - ${file.get("type")} #${file.rank}`
       )
       .join("<br>\n")
 
@@ -95,14 +95,13 @@ class ListRoutes {
     const page = new TreeNode(Disk.read(pagePath))
 
     const files = pldbBase.topLanguages.map(file => {
-      const name = file.id
       const appeared = file.get("appeared")
       const rank = file.languageRank + 1
       const type = file.get("type")
       const title = file.get("title")
       return {
         title,
-        titleLink: `../languages/${name}.html`,
+        titleLink: `../languages/${file.permalink}`,
         rank,
         type,
         appeared
@@ -150,7 +149,6 @@ class ListRoutes {
 
     const theWords = {}
     langsWithKeywords.forEach(file => {
-      const name = file.id
       file.keywords.forEach(word => {
         const escapedWord = "Q" + word.toLowerCase() // b.c. you cannot have a key "constructor" in JS objects.
 
@@ -164,7 +162,7 @@ class ListRoutes {
         const entry = theWords[escapedWord]
 
         entry.langs.push(
-          `<a href='../languages/${file.id}.html'>${file.title}</a>`
+          `<a href='../languages/${file.permalink}'>${file.title}</a>`
         )
         entry.count++
       })
@@ -215,7 +213,7 @@ class ListRoutes {
       .map(file => {
         return {
           name: file.title,
-          nameLink: `../languages/${file.id}.html`,
+          nameLink: `../languages/${file.permalink}`,
           rank: file.rank,
           extensions: file.extensions
         }
@@ -254,14 +252,13 @@ class ListRoutes {
     const page = new TreeNode(Disk.read(pagePath))
 
     let files = pldbBase.map(file => {
-      const name = file.id
       const appeared = file.get("appeared")
       const rank = file.rank + 1
       const type = file.get("type")
       const title = file.get("title")
       return {
         title,
-        titleLink: `../languages/${name}.html`,
+        titleLink: `../languages/${file.permalink}`,
         rank,
         type,
         appeared
@@ -297,14 +294,13 @@ class ListRoutes {
     const files = pldbBase
       .filter(file => file.isLanguage)
       .map(file => {
-        const name = file.id
         const title = file.get("title")
         const appeared = file.get("appeared") || ""
         const rank = file.languageRank + 1
         const type = file.get("type")
         return {
           title,
-          titleLink: `../languages/${name}.html`,
+          titleLink: `../languages/${file.permalink}`,
           type,
           appeared,
           rank
@@ -385,7 +381,9 @@ class ListRoutes {
 
     const rows = Object.keys(entities).map(name => {
       const languages = entities[name]
-        .map(lang => `<a href='../languages/${lang.id}.html'>${lang.title}</a>`)
+        .map(
+          lang => `<a href='../languages/${lang.permalink}'>${lang.title}</a>`
+        )
         .join(" - ")
       const count = entities[name].length
       const top = -Math.min(...entities[name].map(lang => lang.languageRank))
@@ -439,7 +437,9 @@ class ListRoutes {
 
     const rows = Object.keys(creators).map(name => {
       const languages = creators[name]
-        .map(file => `<a href='../languages/${file.id}.html'>${file.title}</a>`)
+        .map(
+          file => `<a href='../languages/${file.permalink}'>${file.title}</a>`
+        )
         .join(" - ")
       const count = creators[name].length
       let topRank = 10000

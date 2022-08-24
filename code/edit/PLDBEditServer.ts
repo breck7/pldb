@@ -263,14 +263,10 @@ ${editForm(submission, "Error")}`
 			const file = pldbBase.getFile(id)
 			if (!file) return notFound(id, res)
 
-			const keyboardNav = `
-
-html
- <a href="${file.previousRanked.id}" id="previousFile">previous</a><a href="${file.nextRanked.id}" id="nextFile">next</a>`
-
 			res.send(
 				this.scrollToHtml(
-					editForm(file.childrenToString(), `Editing ${file.id}`) + keyboardNav
+					editForm(file.childrenToString(), `Editing ${file.id}`) +
+						`\nkeyboardNav ${file.previousRanked.id} ${file.nextRanked.id}`
 				)
 			)
 		})
