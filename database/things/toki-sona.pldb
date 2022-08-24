@@ -1,8 +1,11 @@
 title toki sona
-description `toki pona` is a constructed human language with 140 words: Introducing`toki sona` a toki pona inspired programming language with 14 tokens and a 1000 character interpreter
-type pl
 appeared 2021
+type pl
+creators Dylan Madisetti
+description `toki pona` is a constructed human language with 140 words: Introducing`toki sona` a toki pona inspired programming language with 14 tokens and a 1000 character interpreter
+website https://observablehq.com/@dmadisetti/sona
 reference https://reddit.com/r/ProgrammingLanguages/comments/pph5c3/toki_pona_is_a_constructed_human_language_with/
+
 githubRepo https://github.com/dmadisetti/sona.js
  firstCommit 2021
  stars 57
@@ -12,6 +15,3 @@ githubRepo https://github.com/dmadisetti/sona.js
  updated 2022
  description a simple language with a 1000 character interpreter inspired by toki pona
  issues 2
-
-website https://observablehq.com/@dmadisetti/sona
-creators Dylan Madisetti
