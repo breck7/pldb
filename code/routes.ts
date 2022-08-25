@@ -91,7 +91,7 @@ class ListRoutes {
   }
 
   private makeTopPage(num) {
-    const pagePath = blogFolder + `/lists/top${num}.scroll`
+    const pagePath = path.join(blogFolder, `lists`, `top${num}.scroll`)
     const page = new TreeNode(Disk.read(pagePath))
 
     const files = pldbBase.topLanguages.map(file => {
@@ -140,7 +140,7 @@ class ListRoutes {
   }
 
   get keywords() {
-    const pagePath = blogFolder + "/lists/keywords.scroll"
+    const pagePath = path.join(blogFolder, "lists", "keywords.scroll")
     const page = new TreeNode(Disk.read(pagePath))
 
     const langsWithKeywords = pldbBase.topLanguages.filter(file =>
@@ -205,7 +205,7 @@ class ListRoutes {
   }
 
   get extensions() {
-    const pagePath = blogFolder + "/lists/extensions.scroll"
+    const pagePath = path.join(blogFolder, "lists", "extensions.scroll")
     const page = new TreeNode(Disk.read(pagePath))
 
     const files = pldbBase
@@ -248,7 +248,7 @@ class ListRoutes {
   }
 
   get entities() {
-    const pagePath = blogFolder + "/lists/entities.scroll"
+    const pagePath = path.join(blogFolder, "lists", "entities.scroll")
     const page = new TreeNode(Disk.read(pagePath))
 
     let files = pldbBase.map(file => {
@@ -288,7 +288,7 @@ class ListRoutes {
   }
 
   get languages() {
-    const pagePath = blogFolder + "/lists/languages.scroll"
+    const pagePath = path.join(blogFolder, "lists", "languages.scroll")
     const page = new TreeNode(Disk.read(pagePath))
 
     const files = pldbBase
@@ -330,7 +330,7 @@ class ListRoutes {
   }
 
   get features() {
-    const pagePath = blogFolder + "/lists/features.scroll"
+    const pagePath = path.join(blogFolder, "lists", "features.scroll")
     const page = new TreeNode(Disk.read(pagePath))
     const { topFeatures } = pldbBase
 
@@ -356,7 +356,7 @@ class ListRoutes {
   }
 
   get corporations() {
-    const pagePath = blogFolder + "/lists/corporations.scroll"
+    const pagePath = path.join(blogFolder, "lists", "corporations.scroll")
     const page = new TreeNode(Disk.read(pagePath))
 
     const entities = {}
@@ -412,7 +412,7 @@ class ListRoutes {
   }
 
   get creators() {
-    const pagePath = blogFolder + "/lists/creators.scroll"
+    const pagePath = path.join(blogFolder, "lists", "creators.scroll")
     const page = new TreeNode(Disk.read(pagePath))
 
     const creators = {}

@@ -4,6 +4,7 @@ const lodash = require("lodash")
 const simpleGit = require("simple-git")
 const path = require("path")
 const { jtree } = require("jtree")
+const dayjs = require("dayjs")
 const { TreeNode } = jtree
 const { Disk } = require("jtree/products/Disk.node.js")
 const { AbstractBuilder } = require("jtree/products/AbstractBuilder.node.js")
@@ -13,19 +14,18 @@ const shell = require("child_process").execSync
 import { LanguagePageTemplate, FeaturePageTemplate } from "./pages"
 import { PLDBBaseFolder } from "./PLDBBase"
 import { ListRoutes } from "./routes"
-import { makeScrollSettings } from "./ScrollSettings"
 
 const pldbBase = PLDBBaseFolder.getBase().loadFolder()
 const codeDir = __dirname
 const rootDir = path.join(codeDir, "..")
 const blogDir = path.join(rootDir, "blog")
-const publicFolder = path.join(blogDir, "public")
-const websiteFolder = path.join(rootDir, "pldb.local")
-const docsDir = path.join(websiteFolder, "docs")
-const databaseFolderWhenPublishedToWebsite = path.join(
-  websiteFolder,
-  "languages"
-) // Todo: eventually redirect away from /languages?
+const settingsFilePath = path.join(blogDir, "settings.scroll")
+const publishedRootFolder = path.join(rootDir, "pldb.local")
+const publishedDocsFolder = path.join(publishedRootFolder, "docs")
+const publishedPagesFolder = path.join(publishedRootFolder, "pages")
+const publishedListsFolder = path.join(publishedRootFolder, "lists")
+const publishedPostsFolder = path.join(publishedRootFolder, "posts")
+const publishedLanguagesFolder = path.join(publishedRootFolder, "languages") // Todo: eventually redirect away from /languages?
 
 import {
   replaceNext,
@@ -33,22 +33,32 @@ import {
   benchmark,
   benchmarkResults,
   listGetters,
-  cleanAndRightShift
+  cleanAndRightShift,
+  lastCommitHashInFolder
 } from "./utils"
 
 class Builder extends AbstractBuilder {
   copyNpmAssets() {
     // Copy node module assets
-    Disk.mkdir(path.join(websiteFolder, "node_modules"))
+    Disk.mkdir(path.join(publishedRootFolder, "node_modules"))
     shell(
-      `cp -R ${rootDir}/node_modules/monaco-editor ${websiteFolder}/node_modules/`
+      `cp -R ${rootDir}/node_modules/monaco-editor ${publishedRootFolder}/node_modules/`
     )
-    shell(`cp -R ${rootDir}/node_modules/jtree ${websiteFolder}/node_modules/`)
+    shell(
+      `cp -R ${rootDir}/node_modules/jtree ${publishedRootFolder}/node_modules/`
+    )
   }
 
   buildAll() {
+    Disk.mkdir(publishedRootFolder)
+    shell(`cp ${blogDir}/*.* ${publishedRootFolder}`)
+    this.copyNpmAssets()
+    this.buildSettingsFile()
     this.buildAcknowledgementsPage()
-    this.buildBlog()
+    this.buildPages()
+    this.buildLists()
+    this.buildPosts()
+    this.buildHomepage()
     this.buildCsvs()
     this.buildJson()
     this.buildSearchIndex()
@@ -56,114 +66,81 @@ class Builder extends AbstractBuilder {
     console.log(benchmarkResults)
   }
 
-  buildListsBlog() {
-    shell(`cp -R ${blogDir}/lists ${websiteFolder}`)
+  buildSettingsFile() {
+    // todo: can we refactor scroll settings so we no longer need this?
+    const lastHash = lastCommitHashInFolder()
+    const builtOn = dayjs().format("YYYY")
+    const tree = new TreeNode(Disk.read(settingsFilePath))
+
+    tree.getNodeByColumns("define", "LAST_HASH").setWord(2, lastHash)
+    tree.getNodeByColumns("define", "BUILT_ON").setWord(2, builtOn)
 
     Disk.write(
-      path.join(websiteFolder, "lists", "scroll.settings"),
-      makeScrollSettings(
-        "..",
-        "https://github.com/breck7/pldb/blob/main/blog/lists/"
-      )
+      path.join(publishedRootFolder, "settings.scroll"),
+      tree.toString()
     )
+  }
 
-    Disk.write(
-      path.join(websiteFolder, "lists", "scrollExtensions.grammar"),
-      this._scrollExtensionsFile
-    )
-
+  buildLists() {
     const listRoutes = new ListRoutes()
     listGetters(listRoutes).forEach(getter => {
       Disk.write(
-        path.join(websiteFolder, "lists", `${getter}.scroll`),
+        path.join(publishedRootFolder, "lists", `${getter}.scroll`),
         listRoutes[getter]
       )
     })
-
-    const folder = new ScrollFolder(websiteFolder + "/lists")
+    const folder = new ScrollFolder(publishedListsFolder)
     folder.buildSinglePages()
   }
 
-  buildBlog() {
-    Disk.mkdir(websiteFolder)
-    // Copy other assets into the root site folder
-    shell(`cp ${publicFolder}/*.* ${websiteFolder}`)
-    this.copyNpmAssets()
-    this.buildDocs()
+  buildHomepage() {
+    const folder = new ScrollFolder(publishedRootFolder)
+    folder.buildSnippetsPage("index.html")
+    folder.buildCssFile()
+  }
 
-    // Copy posts dir into root site folder
-    shell(`cp -R ${blogDir}/posts/* ${websiteFolder}`)
+  buildPages() {
+    const folder = new ScrollFolder(publishedPagesFolder)
+    folder.buildSinglePages()
+  }
 
-    Disk.write(
-      path.join(websiteFolder, "scroll.settings"),
-      makeScrollSettings(
-        ".",
-        "https://github.com/breck7/pldb/blob/main/blog/posts/"
-      )
-    )
-
-    Disk.write(
-      path.join(websiteFolder, "scrollExtensions.grammar"),
-      this._scrollExtensionsFile
-    )
-
-    const folder = new ScrollFolder(websiteFolder)
+  buildPosts() {
+    const folder = new ScrollFolder(publishedPostsFolder)
     folder.buildSinglePages()
     folder.buildIndexPage("full.html")
     folder.buildSnippetsPage("index.html")
-    folder.buildCssFile()
     folder.buildRssFeed()
-
-    this.buildListsBlog()
   }
 
   buildRedirects() {
-    Disk.mkdir(websiteFolder + "/posts")
+    return "" // todo: update
     Disk.read(path.join(blogDir, "redirects.txt"))
       .split("\n")
       .forEach(line => {
         const link = line.split(" ")
         Disk.write(
-          websiteFolder + "/" + link[0],
+          publishedRootFolder + "/" + link[0],
           `<meta http-equiv="Refresh" content="0; url='${link[1]}'" />`
         )
       })
   }
 
-  @benchmark
   buildDatabasePages() {
-    Disk.mkdir(databaseFolderWhenPublishedToWebsite)
-
     pldbBase.forEach(file => {
-      const path = `${databaseFolderWhenPublishedToWebsite}/${file.id}.scroll`
+      const filePath = path.join(publishedLanguagesFolder, `${file.id}.scroll`)
 
       const constructor =
         file.get("type") === "feature"
           ? FeaturePageTemplate
           : LanguagePageTemplate
 
-      Disk.write(path, new constructor(file).toScroll())
+      Disk.write(filePath, new constructor(file).toScroll())
     })
 
-    Disk.write(
-      databaseFolderWhenPublishedToWebsite + "/scroll.settings",
-      makeScrollSettings("..")
-    )
-
-    Disk.write(
-      databaseFolderWhenPublishedToWebsite + "/scrollExtensions.grammar",
-      this._scrollExtensionsFile
-    )
-
-    const folder = new ScrollFolder(databaseFolderWhenPublishedToWebsite)
+    const folder = new ScrollFolder(publishedLanguagesFolder)
     folder.buildSinglePages()
   }
 
-  get _scrollExtensionsFile() {
-    return Disk.read(path.join(codeDir, `scrollExtensions.grammar`))
-  }
-
-  @benchmark
   buildAcknowledgementsPage() {
     const sources = Array.from(
       new Set(
@@ -178,7 +155,7 @@ class Builder extends AbstractBuilder {
       `list\n` +
       sources.map(s => ` - <a href="https://${s}">${s}</a>`).join("\n")
 
-    const ackPath = path.join(blogDir, "posts", "acknowledgements.scroll")
+    const ackPath = path.join(blogDir, "pages", "acknowledgements.scroll")
     const page = new TreeNode(Disk.read(ackPath))
     replaceNext(page, "comment autogenAcknowledgements", table)
 
@@ -241,7 +218,6 @@ ${text}`
     Disk.write(ackPath, page.toString())
   }
 
-  @benchmark
   buildSearchIndex() {
     const objects = pldbBase.objectsForCsv.map(object => {
       return {
@@ -251,44 +227,27 @@ ${text}`
       }
     })
     Disk.write(
-      websiteFolder + "/searchIndex.json",
+      path.join(publishedRootFolder, "searchIndex.json"),
       JSON.stringify(objects, null, 2)
     )
   }
 
-  @benchmark
   buildCsvs() {
     const { colNamesForCsv, objectsForCsv } = pldbBase
 
     Disk.write(
-      websiteFolder + "/pldb.csv",
+      path.join(publishedRootFolder, "pldb.csv"),
       new TreeNode(objectsForCsv).toDelimited(",", colNamesForCsv)
     )
     Disk.write(
-      websiteFolder + "/languages.csv",
+      path.join(publishedRootFolder, "languages.csv"),
       new TreeNode(
         objectsForCsv.filter(obj => isLanguage(obj.type))
       ).toDelimited(",", colNamesForCsv)
     )
-
-    this.buildDocs()
   }
 
   buildDocs() {
-    const grammarPath = path.join(docsDir, "pldb.grammar")
-    Disk.mkdir(docsDir)
-
-    // Todo: clean up scroll.settings so we can remove this junk.
-    try {
-      Disk.rm(grammarPath)
-    } catch (err) {}
-
-    Disk.write(path.join(docsDir, "scroll.settings"), makeScrollSettings(".."))
-    Disk.write(
-      path.join(docsDir, "scrollExtensions.grammar"),
-      this._scrollExtensionsFile
-    )
-
     const { columnDocumentation } = pldbBase
 
     const langCount = pldbBase.topLanguages.length
@@ -318,22 +277,29 @@ ${text}`
         .replace("ENTITY_COUNT", entityCount)
     )
     replaceNext(page, "comment autogenColumnDocs", columnTable)
-    Disk.write(path.join(docsDir, "columns.scroll"), page.toString())
+    Disk.write(
+      path.join(publishedDocsFolder, "columns.scroll"),
+      page.toString()
+    )
 
-    const folder = new ScrollFolder(docsDir)
+    const folder = new ScrollFolder(publishedDocsFolder)
     folder.buildSinglePages()
 
-    // Copy grammar to docs public folder for easy access in things like TN Designer.
-    Disk.write(grammarPath, pldbBase.grammarCode)
+    // Copy grammar to docs folder for easy access in things like TN Designer.
+    Disk.write(
+      path.join(publishedDocsFolder, "pldb.grammar"),
+      pldbBase.grammarCode
+    )
   }
 
   buildJson() {
     const str = JSON.stringify(pldbBase.typedMap, null, 2)
-    Disk.write(path.join(websiteFolder, "pldb.json"), str)
+    Disk.write(path.join(publishedRootFolder, "pldb.json"), str)
     Disk.write(path.join(codeDir, "package", "pldb.json"), str)
   }
 
   buildTypesFile() {
+    // todo: update/remove?
     Disk.write(path.join(codeDir, "types.ts"), pldbBase.typesFile)
   }
 
@@ -341,13 +307,6 @@ ${text}`
     pldbBase.forEach(file => {
       file.prettify()
       file.save()
-    })
-  }
-
-  do() {
-    pldbBase.forEach(file => {
-      // file.delete("status")
-      // file.save()
     })
   }
 

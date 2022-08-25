@@ -13,7 +13,6 @@ import { PLDBBaseFolder } from "../PLDBBase"
 import { runCommand, lastCommitHashInFolder, htmlEscaped } from "../utils"
 import simpleGit, { SimpleGit } from "simple-git"
 import { SearchRoutes } from "../routes"
-import { makeScrollSettings } from "../ScrollSettings"
 
 const baseFolder = path.join(__dirname, "..", "..")
 const ignoreFolder = path.join(baseFolder, "ignore")
@@ -59,22 +58,20 @@ const GIT_DEFAULT_USERNAME = "PLDBBot"
 const GIT_DEFAULT_EMAIL = "bot@pldb.com"
 const GIT_DEFAULT_AUTHOR = `${GIT_DEFAULT_USERNAME} <${GIT_DEFAULT_EMAIL}>`
 
+const scrollSettings = Disk.read(path.join(publishedFolder, "settings.scroll"))
+
 class PLDBEditServer extends TreeBaseServer {
 	checkAndPrettifySubmission(content: string) {
 		return this._folder.prettifyContent(content)
 	}
 
-	get scrollSettings() {
-		return makeScrollSettings(
-			this.isProd ? "https://pldb.com" : "",
-			undefined,
-			this.isProd ? undefined : "/"
-		)
-	}
-
 	scrollToHtml(scrollContent) {
 		return new ScrollPage(
-			`maxColumns 1
+			`define BASE_URL ${this.isProd ? "https://pldb.com" : ""}
+define EDIT_URL ${this.isProd ? "https://edit.pldb.com" : "/"}
+
+${scrollSettings}
+maxColumns 1
 columnWidth 200
 
 html
@@ -85,8 +82,7 @@ html
  <div id="successLink"></div>
 
 ${scrollContent}
-`,
-			this.scrollSettings
+`
 		).html
 	}
 

@@ -71,4 +71,4 @@ Breck Yunits et al. (2022) - "The Programming Language Database". Retrieved from
  }
 ```
 
-All sources for PLDB can be found here: https://pldb.com/acknowledgements.html
+All sources for PLDB can be found here: https://pldb.com/pages/acknowledgements.html
