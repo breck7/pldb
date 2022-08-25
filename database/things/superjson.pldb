@@ -1,0 +1,16 @@
+title Superjson
+type dataNotation
+description A superset of JSON adding: undefined bigint Date RegExp Set Map Error
+
+supersetOf json
+
+example
+ const object = {
+   normal: 'string',
+   timestamp: new Date(),
+   test: /superjson/,
+ };
+ 
+ const { json, meta } = serialize(object);
+
+githubRepo https://github.com/blitz-js/superjson
