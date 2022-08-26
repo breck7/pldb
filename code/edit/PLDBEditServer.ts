@@ -67,8 +67,8 @@ class PLDBEditServer extends TreeBaseServer {
 
 	scrollToHtml(scrollContent) {
 		return new ScrollPage(
-			`define BASE_URL ${this.isProd ? "https://pldb.com" : ""}
-define EDIT_URL ${this.isProd ? "https://edit.pldb.com" : "/"}
+			`replace BASE_URL ${this.isProd ? "https://pldb.com" : ""}
+replace EDIT_URL ${this.isProd ? "https://edit.pldb.com" : "/"}
 
 ${scrollSettings}
 maxColumns 1

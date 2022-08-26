@@ -1,5 +1,6 @@
 importOnly
 
-define BASE_URL ..
+rssFeedUrl feed.xml
+replace BASE_URL ..
 
 import ../settings.scroll

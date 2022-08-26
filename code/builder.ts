@@ -72,8 +72,8 @@ class Builder extends AbstractBuilder {
     const builtOn = dayjs().format("YYYY")
     const tree = new TreeNode(Disk.read(settingsFilePath))
 
-    tree.getNodeByColumns("define", "LAST_HASH").setWord(2, lastHash)
-    tree.getNodeByColumns("define", "BUILT_ON").setWord(2, builtOn)
+    tree.getNodeByColumns("replace", "LAST_HASH").setWord(2, lastHash)
+    tree.getNodeByColumns("replace", "BUILT_ON").setWord(2, builtOn)
 
     Disk.write(
       path.join(publishedRootFolder, "settings.scroll"),
