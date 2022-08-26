@@ -1,8 +1,5 @@
 title About
-
 import settings.scroll
-
-keyboardNav
 
 aftertext
  Welcome to PLDB--the Programming Language Database!
@@ -80,7 +77,3 @@ code
    year = {2022},
    note = {https://pldb.com}
   }
-
-maxColumns 1
-columnWidth 60
-skipIndexPage

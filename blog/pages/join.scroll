@@ -1,6 +1,5 @@
 title Become an active contributor to the PLDB
 import settings.scroll
-keyboardNav
 
 aftertext
  Do you seek programming language enlightenment? Why not seek that joyfully with colleagues while serving others, making an impact, and accumulating internet points? Become an active contributor to the PLDB!
@@ -21,8 +20,3 @@ aftertext
  https://github.com/breck7/pldb
  wrap % https://github.com/breck7/pldb
  wrap ! https://github.com/breck7/pldb/issues
-
-
-maxColumns 1
-columnWidth 60
-skipIndexPage

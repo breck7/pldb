@@ -1,6 +1,5 @@
 title The PLDB Rankings Algorithm
 import settings.scroll
-keyboardNav
 
 aftertext
  The PLDB rankings algorithm is:
@@ -26,7 +25,3 @@ aftertext
 aftertext
  Along those lines, improvements to the rankings system make the site better, and therefore I am rather frequently trying to add more signals and improve the algorithm. 100% of the data and code produced by PLDB is open source, public domain, and published to git, so it can be a team effort to continuously build better rankings.
  https://github.com/breck7/pldb published to git
-
-maxColumns 1
-columnWidth 60
-skipIndexPage

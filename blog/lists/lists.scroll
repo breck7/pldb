@@ -1,7 +1,6 @@
 title Lists
-skipIndexPage
-
-keyboardNav
+import settings.scroll
+columnWidth 60
 
 pipeTable
  List|ListLink
@@ -23,6 +22,3 @@ pipeTable
  Programming Language Book Publishers|./publishers.html
  Programming Competitions|./competitions.html
  Other Programming Language Rankings Sites|./rankings-sites.html
-
-maxColumns 1
-columnWidth 60

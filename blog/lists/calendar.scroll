@@ -1,7 +1,6 @@
 title Calendar
-skipIndexPage
-
-keyboardNav
+import settings.scroll
+columnWidth 120
 
 aftertext
  A list of conferences of interest to programming language designers. @Edit this file@.
@@ -77,6 +76,3 @@ pipeTable
  Compilers Calls For Papers|https://www.wikicfp.com/cfp/call?conference=compilers
  Programming Languages Calls For Papers|https://www.wikicfp.com/cfp/call?conference=programming%20languages
  CPP Links: Conferences|https://github.com/MattPD/cpplinks/blob/master/compilers.md#conferences
-
-maxColumns 1
-columnWidth 120

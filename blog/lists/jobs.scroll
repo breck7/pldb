@@ -1,7 +1,6 @@
 title Jobs
-skipIndexPage
-
-keyboardNav
+import settings.scroll
+columnWidth 60
 
 aftertext
  Looking for a programming job? Here are some sites for finding one.
@@ -31,7 +30,3 @@ pipeTable
  Work At a Startup|https://www.workatastartup.com/
  Working Nomads|https://www.workingnomads.co/jobs
  ZipRecruiter|https://www.ziprecruiter.com/
-
-
-maxColumns 1
-columnWidth 50

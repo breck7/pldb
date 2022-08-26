@@ -1,9 +1,6 @@
 title Everything in the PLDB
-skipIndexPage
-maxColumns 1
+import settings.scroll
 columnWidth 60
-
-keyboardNav
 
 aftertext
  Here is the list of all 4,569 entities in the PLDB. You can also download the whole database as a @CSV@.

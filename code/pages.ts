@@ -250,10 +250,8 @@ pipeTable
 
     return `title ${title}
 
+import settings.scroll
 htmlTitle ${title} - ${lodash.upperFirst(typeName)}
-sourceLink https://github.com/breck7/pldb/blob/main/database/things/${
-      this.id
-    }.pldb
 
 paragraph
  ${this.description}

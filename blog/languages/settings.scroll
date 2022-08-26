@@ -1,5 +1,7 @@
 importOnly
 
 replace BASE_URL ..
-
 import ../settings.scroll
+
+viewSourceBaseUrl https://github.com/breck7/pldb/blob/main/database/things/
+keyboardNav

@@ -1,7 +1,6 @@
 title Programming Language Academic Journals
-skipIndexPage
-
-keyboardNav
+import settings.scroll
+columnWidth 120
 
 aftertext
  A list of academic journals about programming language theory and design.
@@ -20,6 +19,3 @@ pipeTable
  Journal of Functional Programming|https://www.cambridge.org/core/journals/journal-of-functional-programming|1991|Journal_of_Functional_Programming|https://en.wikipedia.org/wiki/Journal_of_Functional_Programming||bimonthly||
  International Journal of Programming Languages and Applications|http://airccse.org/journal/ijpla/ijpla.html|2011||||variable||IJPLA
  Proceedings of the ACM on Programming Languages|https://dl.acm.org/journal/pacmpl|2017||||variable|yes|
-
-maxColumns 1
-columnWidth 120
