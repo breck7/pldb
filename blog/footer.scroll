@@ -1,0 +1,22 @@
+importOnly
+scrollFooter
+ div
+  class pldbFooter
+  a PLDB
+   href BASE_URL/index.html
+   class logoFont
+  span - Build the next great programming language · <a title="This page was built in BUILT_ON from commit LAST_HASH" href="https://github.com/breck7/pldb/commit/LAST_HASH">vBUILT_ON</a> · 
+  a Docs
+   href BASE_URL/docs/columns.html
+  span ·
+  a Editor
+   href EDIT_URL
+  span ·
+  a Acknowledgements
+   href BASE_URL/pages/acknowledgements.html
+  span ·
+  a Email
+   href mailto:feedback@pldb.com
+  span ·
+  a GitHub
+   href https://github.com/breck7/pldb

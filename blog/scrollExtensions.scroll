@@ -1,0 +1,156 @@
+importOnly
+
+foldBreakNode
+ cruxFromId
+ extends abstractScrollNode
+ description Start a new section.
+ javascript
+  compile() {
+   return `</div><div class="scrollFilePageComponent" style="column-width:70ch;column-count:1;max-width:90ch;">`
+  }
+kpiTableNode
+ catchAllNodeType rowNode
+ cruxFromId
+ extends abstractScrollNode
+ javascript
+  get tableBody() {
+   const items = this.getTopDownArray()
+   let str = ""
+   for (let i = 0; i < items.length; i = i + 3) {
+      str += this.makeRow(items.slice(i, i + 3))
+   }
+   return str
+  }
+  makeRow(items) {
+    return `<tr>` + items.map(node => `<td>${node.getWord(0)}<span>${node.getContent()}</span></td>`)
+    .join("\n") + `</tr>\n`
+  }
+  compile() {
+   return `<table class="kpiTable">${this.tableBody}</table>`
+  }
+tableSearchNode
+ cruxFromId
+ extends abstractScrollNode
+ description Add table search to the tables
+ javascript
+  compile() {
+   return `
+    <script src="../jquery-3.4.1.min.js"></script>
+    <script src="../jquery.dataTables.min.js"></script>
+    <script>
+      $(document).ready( function () {
+      const urlSearchParams = new URLSearchParams(window.location.search)
+      const params = Object.fromEntries(urlSearchParams.entries())
+      $('table').DataTable({"order": [],"paging": false,search:{ search: params.filter || ""}});
+    } );
+    </script>`
+  }
+ohayoCodeNode
+ extends codeNode
+ cruxFromId
+ description Provide a direct link to analyze this data in Ohayo.
+ javascript
+  compile() {
+   const link = `https://ohayo.computer?filename=${this.getRootNode().permalink}.ohayo&data=${encodeURIComponent(this.childrenToString())}`
+   return `<div class="scrollQuoteComponent">Analyze this data yourself in <a href="${link}">Ohayo</a></div>`
+  }
+observableNode
+ extends abstractScrollNode
+ cruxFromId
+ cells keywordCell urlCell
+ description Provide a direct link to analyze this data in Observable.
+ javascript
+  compile() {
+   return `<div class="scrollQuoteComponent">Analyze this data yourself in <a href="${this.getWord(1)}">Observable</a></div>`
+  }
+exampleCodeHeaderNode
+ todo Could ditch this if Scroll supported HAML style class tags
+ cruxFromId
+ catchAllCellType stringCell
+ extends abstractScrollNode
+ javascript
+  compile() {
+   return `<div class="exampleCodeHeader">${this.getContent()}</div>`
+  }
+authorNode
+ extends abstractScrollNode
+ cruxFromId
+ cells keywordCell urlCell
+ catchAllCellType anyCell
+ description The author of a post.
+ javascript
+  compile() {
+   return `<div class="scrollAuthor">by <a href="${this.getWord(1)}">${this.getWordsFrom(2).join(" ")}</a></div>`
+  }
+howToCiteNode
+ cruxFromId
+ extends abstractScrollNode
+ description Add a "How to cite" block
+ javascript
+  compile() {
+   const article = this.getParent()
+   const authors = article
+    .getNode("author")
+    .getWordsFrom(2)
+    .join(" ") // todo: multiple
+   const year = new Date(article.get("date")).getFullYear()
+   const title = article.get("title")
+   const siteName = "PLDB"
+   const permalink = this.getRootNode().permalink
+   const url = "https://pldb.com/" + permalink + ".html"
+   return `
+      <div class="citationSection">
+      <h4>How to cite</h4>
+      <p>PLDB content is published to the public domain and can be used freely. If needed, here are 3 options for citing PLDB:</p>
+      <div class="scrollCiteComponent">${url}</div>
+     <div class="scrollCiteComponent">
+      ${authors} (${year}) - "${title}". Retrieved from: '${url}' [Online Resource]
+     </div>
+     <div class="scrollCiteComponent">
+     @article{${permalink},
+        author = {${authors}},
+        title = {${title}},
+        journal = {${siteName}},
+        year = {${year}},
+        note = {${url}}
+      }
+     </div></div>`
+  }
+monacoEditorNode
+ cruxFromId
+ extends abstractScrollNode
+ description A Monaco code editor.
+ example
+  monacoEditor javascript // Hello world
+ javascript
+  compile() {
+   return `<div id="monacoContainer"></div>
+    <script src="../node_modules/monaco-editor/min/vs/loader.js"></script>
+    <script>
+    require.config({ paths: { vs: '../node_modules/monaco-editor/min/vs' } })
+    require(["vs/editor/editor.main"], function() {
+      monaco.editor.create(document.getElementById('monacoContainer'), {
+          value: \`${this.childrenToString().replace(/\n/g, "\\n")}\`,
+          language: '${this.getWord(1)}',
+          minimap: {
+            enabled: false
+        },
+        scrollbar: {
+            vertical:"hidden",
+            horizontal: "hidden",
+            handleMouseWheel:false,
+        },
+        overviewRulerLanes: 0,
+        hideCursorInOverviewRuler: true,
+        overviewRulerBorder: false,
+        wordWrap: 'on',
+        //lineNumbers: 'off',
+      glyphMargin: false,
+      folding: false,
+      // Undocumented see https://github.com/Microsoft/vscode/issues/30795#issuecomment-410998882
+      lineDecorationsWidth: 10,
+      lineNumbersMinChars: 2
+        });
+      });
+    </script>`
+  }
