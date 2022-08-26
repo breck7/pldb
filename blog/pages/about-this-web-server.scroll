@@ -75,8 +75,8 @@ aftertext
  The custom 404 page is activated using the code below:
 
 nginxConfigCode
- error_page 404 /custom_404.html;
-        location = /custom_404.html {
+ error_page 404 /pages/custom_404.html;
+        location = /pages/custom_404.html {
                 root /var/www/html;
                 internal;
         }
