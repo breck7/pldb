@@ -50,8 +50,7 @@ class Builder extends AbstractBuilder {
   }
 
   buildAll() {
-    Disk.mkdir(publishedRootFolder)
-    shell(`cp ${blogDir}/*.* ${publishedRootFolder}`)
+    shell(`cp -R ${blogDir} ${publishedRootFolder}`)
     this.copyNpmAssets()
     this.buildSettingsFile()
     this.buildAcknowledgementsPage()
