@@ -89,27 +89,19 @@ class Builder extends AbstractBuilder {
         listRoutes[getter]
       )
     })
-    const folder = new ScrollFolder(publishedListsFolder)
-    folder.buildSinglePages()
+    new ScrollFolder(publishedListsFolder).buildFiles()
   }
 
   buildHomepage() {
-    const folder = new ScrollFolder(publishedRootFolder)
-    folder.buildSnippetsPage("index.html")
-    folder.buildCssFile()
+    new ScrollFolder(publishedRootFolder).buildFiles()
   }
 
   buildPages() {
-    const folder = new ScrollFolder(publishedPagesFolder)
-    folder.buildSinglePages()
+    new ScrollFolder(publishedPagesFolder).buildFiles()
   }
 
   buildPosts() {
-    const folder = new ScrollFolder(publishedPostsFolder)
-    folder.buildSinglePages()
-    folder.buildIndexPage("full.html")
-    folder.buildSnippetsPage("index.html")
-    folder.buildRssFeed()
+    new ScrollFolder(publishedPostsFolder).buildFiles()
   }
 
   buildRedirects() {
@@ -137,8 +129,7 @@ class Builder extends AbstractBuilder {
       Disk.write(filePath, new constructor(file).toScroll())
     })
 
-    const folder = new ScrollFolder(publishedLanguagesFolder)
-    folder.buildSinglePages()
+    new ScrollFolder(publishedLanguagesFolder).buildFiles()
   }
 
   buildAcknowledgementsPage() {
