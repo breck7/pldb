@@ -1,6 +1,17 @@
-title gerbil
+title Gerbil Scheme
 appeared 2016
 type pl
+website https://cons.io/
+
+features
+ isLisp true
+ hasComments true
+ hasLineComments true
+  ; A comment
+ hasMacros true
+ 
+
+lineCommentToken ;
 
 githubRepo https://github.com/vyzo/gerbil
  firstCommit 2016
