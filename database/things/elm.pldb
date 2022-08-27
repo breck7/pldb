@@ -24,7 +24,7 @@ features
  hasMultiLineComments true
   {- A comment
   -}
- hasSemanticIndentation false
+ hasSemanticIndentation true
  hasStrings true
   "Hello world"
  hasFloats true
