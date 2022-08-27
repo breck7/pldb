@@ -1,0 +1,18 @@
+title Copilot
+type pl
+description Copilot is a realtime programming language and Runtime Verification framework. It allows users to write concise programs in a simple but powerful way using a stream-based approach. Programs can be interpreted for testing, or translated C99 code to be incorporated in a project, or as a standalone application. The C99 backend ensures us that the output is constant in memory and time, making it suitable for systems with hard realtime requirements.
+website https://copilot-language.github.io/
+
+example
+ -- Raw temperature from sensor, range -50.0C to 100.0C.
+ temp :: Stream Word8
+ temp = extern "temperature" Nothing
+ 
+ -- Transform the temperature to Celsius.
+ ctemp :: Stream Float
+ ctemp = (unsafeCast temp) * (150.0 / 255.0) - 50.0
+ 
+ -- Bind two triggers with a 3.0C hysteresis.
+ spec = do
+   trigger "heaton"  (ctemp < 18.0) [arg ctemp]
+   trigger "heatoff" (ctemp > 21.0) [arg ctemp]
