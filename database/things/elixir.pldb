@@ -14,6 +14,10 @@ writtenIn elixir
 visualParadigm false
 
 features
+ canDoShebang true
+  #!/usr/bin/env elixir
+ canWriteToDisk true
+  File.write!("helloworld.txt", "Hello, world!\n")
  hasComments true
   # this is a comment
  hasMultiLineComments false
@@ -29,11 +33,28 @@ features
   
   # Invokes the custom code defined in Foo as an extension point
   use Foo
+ hasAssignment true
+  name = "John"
  hasSemanticIndentation false
+ hasConditionals true
+  if true do
+    IO.puts("Hello world")
+  end
+ hasDefaultParameters true
+  def multiply(a, b \\ 1) do
+    a * b
+  end
  hasLineComments true
   # A comment
  hasMessagePassing true
+  send(pid, :ping)
  hasPrintDebugging true
+ hasRegularExpressionsSyntaxSugar true
+  ~r/integer: \d+/
+ hasPointers false
+ hasUnitsOfMeasure false
+ hasLists true
+  my_list = [1, 2, 3, 4, 5]
  hasStrings true
   "Hello world"
  hasOctals true
@@ -46,10 +67,53 @@ features
   # \d(_?\d)*
  hasBinaryNumbers true
   # 0b[01]+
+ hasBooleans true
+ hasMaps true
+  %{key: "value"}
+ hasSingleDispatch true
+ hasMultipleDispatch false
+ hasRangeOperators true
+  1..3
+ hasPolymorphism true
+  https://hexdocs.pm/elixir/Protocol.html
+ hasMacros true
+  https://hexdocs.pm/elixir/Macro.html
+ hasStreams true
+  https://hexdocs.pm/elixir/Stream.html
+ hasPipes true
+  "Elixir" |> String.graphemes() |> Enum.frequencies()
+ hasAnonymousFunctions true
+  fn -> IO.puts("hello world") end
+ hasScientificNotation true
+  1.23e45
+ hasInfixNotation true
+  seven = 3 + 4
+ hasMultilineStrings true
+  template = """
+  This is the first line.
+  This is the second line.
+  This is the third line.
+  """
+ hasGarbageCollection true
+ hasRunTimeGuards true
+  def abs(number) when number > 0, do: number
+  def abs(number), do: -number
+ hasPatternMatching true
+  def fib(0), do: 1
+  def fib(1), do: 1
+  def fib(n) when n >= 2, do: fib(n-1) + fib(n-2)
+ hasExceptions true
+  raise "oops, something went wrong"
+ isCaseSensitive true
+ hasCaseInsensitiveIdentifiers false
+ hasUnicodeIdentifiers true
+  δ = 0.00001
 
 lineCommentToken #
 printToken IO.puts
 stringToken "
+booleanTokens true false
+keywords after and catch do else end false fn in nil not or rescue true when
 
 githubRepo https://github.com/elixir-lang/elixir
  stars 20394
