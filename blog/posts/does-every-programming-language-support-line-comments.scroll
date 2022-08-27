@@ -28,9 +28,15 @@ aftertext
 subsection The majority of languages use // or # to start a line comment
 
 aftertext
- *38%* of programming languages take after C (1972) and use `//`. *22%* use `#`, which has become very popular thanks to languages like Python, Perl, and Ruby.
+ *38%* of programming languages follow C and use `//`. C (1972) follows B (1969) which follows BCPL (1966).
  wrapsOn
  link BASE_URL/languages/c.html C
+ link BASE_URL/languages/b.html B
+ link BASE_URL/languages/bcpl.html BCPL
+
+aftertext
+ *22%* use `#`, which has become very popular thanks to languages like Python, Perl, and Ruby.
+ wrapsOn
  link BASE_URL/languages/python.html Python
  link BASE_URL/languages/perl.html Perl
  link BASE_URL/languages/ruby.html Ruby
