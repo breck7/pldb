@@ -1,6 +1,5 @@
 title Oops! - Page not found
 import settings.scroll
-replace BASE_URL /
 maxColumns 1
 columnWidth 60
 
@@ -8,5 +7,5 @@ aftertext
  Sorry but we cannot find the requested page on the Programming Language Database.
 
 aftertext
- You can report a broken link on the GitHub.
+ You can report a broken link on the PLDB GitHub.
  https://github.com/breck7/pldb/issues report a broken link
