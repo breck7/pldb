@@ -201,7 +201,6 @@ ${text}`
         .join("\n")
     replaceNext(page, "comment autogenPackages", packageTable)
 
-    // https://api.github.com/repos/breck7/pldb/contributors
     try {
       const contributorsTable =
         `list\n` +
