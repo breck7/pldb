@@ -8,26 +8,6 @@ foldBreakNode
   compile() {
    return `</div><div class="scrollFilePageComponent" style="column-width:70ch;column-count:1;max-width:90ch;">`
   }
-kpiTableNode
- catchAllNodeType rowNode
- cruxFromId
- extends abstractScrollNode
- javascript
-  get tableBody() {
-   const items = this.getTopDownArray()
-   let str = ""
-   for (let i = 0; i < items.length; i = i + 3) {
-      str += this.makeRow(items.slice(i, i + 3))
-   }
-   return str
-  }
-  makeRow(items) {
-    return `<tr>` + items.map(node => `<td>${node.getWord(0)}<span>${node.getContent()}</span></td>`)
-    .join("\n") + `</tr>\n`
-  }
-  compile() {
-   return `<table class="kpiTable">${this.tableBody}</table>`
-  }
 tableSearchNode
  cruxFromId
  extends abstractScrollNode
@@ -71,16 +51,6 @@ exampleCodeHeaderNode
  javascript
   compile() {
    return `<div class="exampleCodeHeader">${this.getContent()}</div>`
-  }
-authorNode
- extends abstractScrollNode
- cruxFromId
- cells keywordCell urlCell
- catchAllCellType anyCell
- description The author of a post.
- javascript
-  compile() {
-   return `<div class="scrollAuthor">by <a href="${this.getWord(1)}">${this.getWordsFrom(2).join(" ")}</a></div>`
   }
 howToCiteNode
  cruxFromId

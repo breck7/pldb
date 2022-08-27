@@ -101,23 +101,6 @@ a:hover {
   font-size: 36px;
 }
 
-.kpiTable {
-  width: 100%;
-  font-size: 30px;
-  text-align: center;
-  font-weight: bold;
-  break-inside: avoid;
-  margin-top: 8px;
-  margin-bottom: 8px;
-}
-.kpiTable td {
-  width: 33.3%;
-  border: 1px solid #e8e8e8;
-}
-.kpiTable span {
-  font-size: 20px;
-  display: block;
-}
 .scrollTableComponent {
   table-layout: auto;
 }
@@ -138,13 +121,6 @@ a:hover {
   text-align: right;
   margin-top: 8px;
   margin-bottom: 8px;
-}
-
-.scrollAuthor {
-  font-size: 12px;
-  font-style: italic;
-  margin: 4px 0;
-  text-align: center;
 }
 
 .citationSection {
