@@ -172,7 +172,10 @@ class Builder extends AbstractBuilder {
     writtenIn = lodash.sortBy(writtenIn, "rank")
 
     const text = writtenIn
-      .map(file => ` - <a href="languages/${file.permalink}">${file.title}</a>`)
+      .map(
+        file =>
+          ` - <a href="BASE_URL/languages/${file.permalink}">${file.title}</a>`
+      )
       .join("\n")
 
     replaceNext(

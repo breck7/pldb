@@ -108,24 +108,24 @@ aftertext
 
 comment autogenWrittenIn
 list
- - <a href="languages/javascript.html">JavaScript</a>
- - <a href="languages/python.html">Python</a>
- - <a href="languages/html.html">HTML</a>
- - <a href="languages/json.html">JSON</a>
- - <a href="languages/css.html">CSS</a>
- - <a href="languages/typescript.html">TypeScript</a>
- - <a href="languages/bash.html">Bash</a>
- - <a href="languages/nodejs.html">Node.js</a>
- - <a href="languages/markdown.html">Markdown</a>
- - <a href="languages/svg.html">SVG</a>
- - <a href="languages/treenotation.html">Tree Notation</a>
- - <a href="languages/grammar.html">Grammar</a>
- - <a href="languages/scrolldown.html">Scrolldown</a>
- - <a href="languages/png-format.html">PNG</a>
- - <a href="languages/gitignore.html">gitignore</a>
+ - <a href="BASE_URL/languages/javascript.html">JavaScript</a>
+ - <a href="BASE_URL/languages/python.html">Python</a>
+ - <a href="BASE_URL/languages/html.html">HTML</a>
+ - <a href="BASE_URL/languages/json.html">JSON</a>
+ - <a href="BASE_URL/languages/css.html">CSS</a>
+ - <a href="BASE_URL/languages/typescript.html">TypeScript</a>
+ - <a href="BASE_URL/languages/bash.html">Bash</a>
+ - <a href="BASE_URL/languages/nodejs.html">Node.js</a>
+ - <a href="BASE_URL/languages/markdown.html">Markdown</a>
+ - <a href="BASE_URL/languages/svg.html">SVG</a>
+ - <a href="BASE_URL/languages/treenotation.html">Tree Notation</a>
+ - <a href="BASE_URL/languages/grammar.html">Grammar</a>
+ - <a href="BASE_URL/languages/scroll.html">Scroll</a>
+ - <a href="BASE_URL/languages/png-format.html">PNG</a>
+ - <a href="BASE_URL/languages/gitignore.html">gitignore</a>
 
 subsection Language Creators
 
 aftertext
  And of course, thank you to all of the language creators who created the languages that are the subject of this site.
- link lists/creators.html language creators
+ link BASE_URL/lists/creators.html language creators
