@@ -60,6 +60,7 @@ class Builder extends AbstractBuilder {
     this.buildHomepage()
     this.buildCsvs()
     this.buildJson()
+    this.buildRedirects()
     this.buildSearchIndex()
     this.buildDatabasePages()
     this.buildDocs()
@@ -105,13 +106,13 @@ class Builder extends AbstractBuilder {
   }
 
   buildRedirects() {
-    return "" // todo: update
     Disk.read(path.join(blogDir, "redirects.txt"))
       .split("\n")
       .forEach(line => {
         const link = line.split(" ")
+        const oldFile = path.join(publishedRootFolder, link[0])
         Disk.write(
-          publishedRootFolder + "/" + link[0],
+          oldFile,
           `<meta http-equiv="Refresh" content="0; url='${link[1]}'" />`
         )
       })
