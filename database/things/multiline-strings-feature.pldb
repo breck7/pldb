@@ -2,5 +2,5 @@ title Multiline Strings
 type feature
 description Some languages allow strings to span multiple lines.
 
-psuedoExample hello = """Hello\nPLDB"""
+pseudoExample hello = """Hello\nPLDB"""
 featureKeyword hasMultilineStrings

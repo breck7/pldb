@@ -3,5 +3,5 @@ type feature
 description A shorthand assignment method to extract fields from a composite structure.
 reference https://reasonml.github.io/docs/en/destructuring
 
-psuedoExample {title, rank} = pldbFile
+pseudoExample {title, rank} = pldbFile
 featureKeyword hasDestructuring

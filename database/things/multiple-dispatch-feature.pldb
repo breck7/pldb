@@ -3,7 +3,7 @@ appeared 2007
 type feature
 description The choice of which version of a method to call may be based either on a single object, or on a combination of objects. Multiple dispatch is when it is based on multiple objects. Function names are usually selected so as to be descriptive of the function's purpose. It is sometimes desirable to give several functions the same name, often because they perform conceptually similar tasks, but operate on different types of input data. In such cases, the name reference at the function call site is not sufficient for identifying the block of code to be executed. Instead, the number and type of the arguments to the function call are also used to select among several function implementations.
 
-psuedoExample collide_with(x::Spaceship, y::Spaceship)
+pseudoExample collide_with(x::Spaceship, y::Spaceship)
 featureKeyword hasMultipleDispatch
 
 wikipedia https://en.wikipedia.org/wiki/Multiple_dispatch

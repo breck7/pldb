@@ -3,7 +3,7 @@ appeared 2004
 type feature
 description A symbol table may only exist in memory during the translation process, or it may be embedded in the output of the translation.
 
-psuedoExample SymbolName|Type|Scope;bar|function,double|extern
+pseudoExample SymbolName|Type|Scope;bar|function,double|extern
 featureKeyword hasSymbolTables
 
 wikipedia https://en.wikipedia.org/wiki/Symbol_table
