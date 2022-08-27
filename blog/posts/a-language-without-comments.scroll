@@ -7,7 +7,7 @@ author https://github.com/breck7 Breck Yunits
 image a-language-without-comments.png
 
 aftertext
- <a href="languages/json.html">JSON</a> is the _only_ popular language in the PLDB without comments.
+ <a href="BASE_URL/languages/json.html">JSON</a> is the _only_ popular language in the PLDB without comments.
  dateline
  wrapsOn
 
@@ -25,6 +25,6 @@ quote
 
 aftertext
  A number of JSON derivatives added comments back, such as JSON5, Hjson and JSON with Comments.
- link languages/json5.html JSON5
- link languages/hjson.html Hjson
- link languages/json-with-comments.html JSON with Comments
+ link BASE_URL/languages/json5.html JSON5
+ link BASE_URL/languages/hjson.html Hjson
+ link BASE_URL/languages/json-with-comments.html JSON with Comments

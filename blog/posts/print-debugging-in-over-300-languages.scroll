@@ -9,8 +9,8 @@ image print-debugging.png
 aftertext
  Paul Graham—creator of Arc and Bel—started an interesting thread last month about "print() debugging".
  https://twitter.com/paulg/status/1532448988766650385 interesting thread
- link languages/arc.html Arc
- link languages/bel.html Bel
+ link BASE_URL/languages/arc.html Arc
+ link BASE_URL/languages/bel.html Bel
  wrapsOn
  dateline
 
@@ -29,7 +29,7 @@ aftertext
 aftertext
  There is also a long tail distribution of how languages let you do it. Some have special syntactic sugar, such as the code golf esolang 05AB1E (`"hello world`).
  wrapsOn
- link ./languages/05AB1E.html 05AB1E
+ link BASE_URL/languages/05AB1E.html 05AB1E
 
 aftertext
  Below is a table of over 100 keyword(s) used to "print() debug" in over 300 languages.

@@ -8,7 +8,7 @@ author https://github.com/breck7 Breck Yunits
 aftertext
  dateline
  Python, as one of the top 10 programming languages in the world, is the most popular programming language that treats indentation as significant. In these offside languages, programmers indent their code blocks instead of using braces, brackets, or other visible characters.
- link languages/python.html Python
+ link BASE_URL/languages/python.html Python
  link https://en.wikipedia.org/wiki/Off-side_rule offside
 
 aftertext
@@ -32,42 +32,42 @@ aftertext
 
 aftertext
  abc, aldor, boo, buddyscript, cobra, coffeescript, csl, curry, elixir, f-sharp, genie, haml, haskell, inform, iswim, literate-coffeescript, livescript, madcap, madcap-vi, makefile, markdown, miranda, nemerle, net-format, nim, occam, org, promal, python, restructuredtext, sass, scss, spin, stylus, xl-programming-language and yaml.
- link languages/abc.html abc
- link languages/aldor.html aldor
- link languages/boo.html boo
- link languages/buddyscript.html buddyscript
- link languages/cobra.html cobra
- link languages/coffeescript.html coffeescript
- link languages/csl.html csl
- link languages/curry.html curry
- link languages/elixir.html elixir
- link languages/f-sharp.html f-sharp
- link languages/genie.html genie
- link languages/haml.html haml
- link languages/haskell.html haskell
- link languages/inform.html inform
- link languages/iswim.html iswim
- link languages/literate-coffeescript.html literate-coffeescript
- link languages/livescript.html livescript
- link languages/madcap-vi.html madcap-vi
- link languages/madcap.html madcap
- link languages/makefile.html makefile
- link languages/markdown.html markdown
- link languages/miranda.html miranda
- link languages/nemerle.html nemerle
- link languages/net-format.html net-format
- link languages/nim.html nim
- link languages/occam.html occam
- link languages/org.html org
- link languages/promal.html promal
- link languages/python.html python
- link languages/restructuredtext.html restructuredtext
- link languages/sass.html sass
- link languages/scss.html scss
- link languages/spin.html spin
- link languages/stylus.html stylus
- link languages/xl-programming-language.html xl-programming-language
- link languages/yaml.html yaml
+ link BASE_URL/languages/abc.html abc
+ link BASE_URL/languages/aldor.html aldor
+ link BASE_URL/languages/boo.html boo
+ link BASE_URL/languages/buddyscript.html buddyscript
+ link BASE_URL/languages/cobra.html cobra
+ link BASE_URL/languages/coffeescript.html coffeescript
+ link BASE_URL/languages/csl.html csl
+ link BASE_URL/languages/curry.html curry
+ link BASE_URL/languages/elixir.html elixir
+ link BASE_URL/languages/f-sharp.html f-sharp
+ link BASE_URL/languages/genie.html genie
+ link BASE_URL/languages/haml.html haml
+ link BASE_URL/languages/haskell.html haskell
+ link BASE_URL/languages/inform.html inform
+ link BASE_URL/languages/iswim.html iswim
+ link BASE_URL/languages/literate-coffeescript.html literate-coffeescript
+ link BASE_URL/languages/livescript.html livescript
+ link BASE_URL/languages/madcap-vi.html madcap-vi
+ link BASE_URL/languages/madcap.html madcap
+ link BASE_URL/languages/makefile.html makefile
+ link BASE_URL/languages/markdown.html markdown
+ link BASE_URL/languages/miranda.html miranda
+ link BASE_URL/languages/nemerle.html nemerle
+ link BASE_URL/languages/net-format.html net-format
+ link BASE_URL/languages/nim.html nim
+ link BASE_URL/languages/occam.html occam
+ link BASE_URL/languages/org.html org
+ link BASE_URL/languages/promal.html promal
+ link BASE_URL/languages/python.html python
+ link BASE_URL/languages/restructuredtext.html restructuredtext
+ link BASE_URL/languages/sass.html sass
+ link BASE_URL/languages/scss.html scss
+ link BASE_URL/languages/spin.html spin
+ link BASE_URL/languages/stylus.html stylus
+ link BASE_URL/languages/xl-programming-language.html xl-programming-language
+ link BASE_URL/languages/yaml.html yaml
 
 aftertext
  According to my present database, languages that strip indentation are about <b>70x</b> more common than languages that employ it.
@@ -94,8 +94,8 @@ aftertext
 
 aftertext
  UPDATE: masonic on HackerNews pointed out that COBOL should be included on this list. The column position of tokens is indeed significant in COBOL (and FORTRAN too), so perhaps in the next update I'll clarify this categorization to adhere more closely to the offside rule, or will include a broader definition of significant indentation that includes some of these additional languages
- link languages/cobol.html COBOL
- link languages/fortran.html FORTRAN
+ link BASE_URL/languages/cobol.html COBOL
+ link BASE_URL/languages/fortran.html FORTRAN
 
 ohayoCode
  html.h1 Which programming languages use indentation?
