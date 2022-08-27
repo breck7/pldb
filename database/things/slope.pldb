@@ -2,9 +2,29 @@ title Slope
 appeared 2021
 type pl
 creators Sloum
+description A small s-expression based programming language
 website https://slope.colorfield.space
+standsFor sloum's programming environment 
 
 writtenIn go
 influencedBy scheme
+
+features
+ hasBitWiseOperators true
+ hasBooleans true
+ hasLineComments true
+ hasComments true
+ hasBuiltInRegex true
+ hasNamespaces true
+ canUseQuestionMarksAsPartOfIdentifier true
+ 
+
+lineCommentToken ;
+
+example
+ ; hello world
+ (define greeting "Hello")
+ (display greeting ", world!\n")
+ 
 
 packageRepository https://git.rawtext.club/slope-lang/packages
