@@ -1,15 +1,27 @@
-title SCROLL
-appeared 1970
-type pl
-description A pattern recording language.
-reference https://semanticscholar.org/paper/06a2ad826a19844977fa42f5e7081fbbff967a15
+title Scroll
+appeared 2020
+type textMarkup
+creators Breck Yunits
+description An extensible alternative to Markdown built on Tree Notation.
+website https://scroll.pub/
+webRepl https://try.scroll.pub/
+domainName scroll.pub
+ registered 2021
 
-related troff
+related markdown treenotation grammar
 
 example
- A$/BCD$IEF$
+ title This is Scroll. The keyword for title is title.
+ 
+ paragraph
+  Scroll is an extensible alternative to Markdown.
 
-hopl 530
-
-wordRank 6842
-centralPackageRepositoryCount 0
+githubRepo https://github.com/breck7/scroll
+ firstCommit 2019
+ stars 268
+ forks 5
+ subscribers 7
+ created 2019
+ updated 2022
+ description The extensible alternative to Markdown.
+ issues 6

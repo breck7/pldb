@@ -157,7 +157,7 @@ class Builder extends AbstractBuilder {
       "html",
       "css",
       "treenotation",
-      "scrolldown",
+      "scroll",
       "grammar",
       "python",
       "bash",
@@ -264,7 +264,7 @@ ${text}`
         ])
         .replace(/\n/g, "\n ")
 
-    // todo: add linkify to scrolldown
+    // todo: add linkify to scroll
     const page = new TreeNode(
       Disk.read(path.join(blogDir, "docs", "columns.scroll"))
         .replace("LANG_COUNT", langCount)
