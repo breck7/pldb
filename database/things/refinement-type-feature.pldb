@@ -2,7 +2,7 @@ title Refinement Types
 type feature
 description A type endowed with a predicate which is assumed to hold for any element of the refined type.
 
-psuedoExample evenInt where int % 2 = 0
+pseudoExample evenInt where int % 2 = 0
 featureKeyword hasRefinementTypes
 
 wikipedia https://en.wikipedia.org/wiki/Refinement_type

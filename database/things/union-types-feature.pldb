@@ -2,7 +2,7 @@ title Union Types
 type feature
 description a union type definition will specify which of a number of permitted primitive types may be stored in its instances, e.g., "float or long integer"
 
-psuedoExample any = string | number
+pseudoExample any = string | number
 featureKeyword hasUnionTypes
 
 wikipedia https://en.wikipedia.org/wiki/Union_type

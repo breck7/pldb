@@ -2,7 +2,7 @@ title Generics
 appeared 1973
 type feature
 
-psuedoExample function identity<T>(arg: T): T
+pseudoExample function identity<T>(arg: T): T
 featureKeyword hasGenerics
 
 wikipedia https://en.wikipedia.org/wiki/Generic_programming

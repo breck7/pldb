@@ -3,7 +3,7 @@ appeared 2007
 type feature
 description A syntactic feature of many programming languages that allows an asynchronous, non-blocking function to be structured in a way similar to an ordinary synchronous function.
 
-psuedoExample async downloadPldb => await getFiles()
+pseudoExample async downloadPldb => await getFiles()
 featureKeyword hasAsyncAwait
 
 wikipedia https://en.wikipedia.org/wiki/Async/await

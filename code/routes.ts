@@ -340,7 +340,7 @@ class ListRoutes {
       toScrollTable(new TreeNode(topFeatures), [
         "feature",
         "featureLink",
-        "psuedoExample",
+        "pseudoExample",
         "yes",
         "no",
         "percentage"

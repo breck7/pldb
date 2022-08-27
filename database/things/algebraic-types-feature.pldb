@@ -2,7 +2,7 @@ title Algebraic Data Type
 type feature
 description A kind of composite type, i.e., a type formed by combining other types.
 
-psuedoExample garageContents = empty | vehicle
+pseudoExample garageContents = empty | vehicle
 featureKeyword hasAlgebraicTypes
 
 wikipedia https://en.wikipedia.org/wiki/Algebraic_data_type

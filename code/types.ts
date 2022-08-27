@@ -509,7 +509,7 @@ export interface pldbNode {
   meetup?: meetupNode
   patternKeyword?: any // For "type pattern" only. When building the pattern pages, look for this keyword on each object to see if it follows the pattern or not.
   patterns?: patternsNode
-  psuedoExample?: any // As short an example as possible.
+  pseudoExample?: any // As short an example as possible.
   reference?: any // A link with more info about this entity.
   related?: any // What languages does Wikipedia have as related?
   replit?: any // A link to try this langunage on replit.com
@@ -543,7 +543,7 @@ export enum pldbNodeKeywords {
   title = "title",
   standsFor = "standsFor",
   aka = "aka",
-  psuedoExample = "psuedoExample",
+  pseudoExample = "pseudoExample",
   meetup = "meetup",
   replit = "replit",
   tiobe = "tiobe",

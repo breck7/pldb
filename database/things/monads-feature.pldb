@@ -3,7 +3,7 @@ appeared 1980
 type feature
 description A monad is a datatype that has two operations: >>= (aka bind) and return (aka unit). return takes an arbitrary value and creates an instance of the monad with it. >>= takes an instance of the monad and maps a function over it.
 
-psuedoExample g >>= f
+pseudoExample g >>= f
 featureKeyword hasMonads
 
 wikipedia https://en.wikipedia.org/wiki/Monad_(functional_programming)

@@ -33,7 +33,7 @@ interface FeatureSummary {
   yes: number
   no: number
   percentage: string
-  psuedoExample: string
+  pseudoExample: string
 }
 
 interface FeaturePrediction {
@@ -774,7 +774,7 @@ class PLDBBaseFolder extends TreeBaseFolder {
           measurements < 100
             ? "-"
             : lodash.round((100 * positives) / measurements, 0) + "%",
-        psuedoExample: (file.get("psuedoExample") || "")
+        pseudoExample: (file.get("pseudoExample") || "")
           .replace(/\</g, "&lt;")
           .replace(/\|/g, "&#124;")
       }

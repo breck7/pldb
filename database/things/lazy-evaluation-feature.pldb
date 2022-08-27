@@ -2,7 +2,7 @@ title Lazy Evaluation
 type feature
 description An evaluation strategy which delays the evaluation of an expression until its value is needed.
 
-psuedoExample print(range(1000000)[2])
+pseudoExample print(range(1000000)[2])
 featureKeyword hasLazyEvaluation
 
 wikipedia https://en.wikipedia.org/wiki/Lazy_evaluation
