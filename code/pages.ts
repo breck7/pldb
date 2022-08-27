@@ -244,7 +244,7 @@ pipeTable
   }
 
   toScroll() {
-    const { typeName, title } = this.file
+    const { typeName, title, id } = this.file
 
     if (title.includes("%20")) throw new Error("bad space in title: " + title)
 
@@ -252,6 +252,8 @@ pipeTable
 
 import settings.scroll
 htmlTitle ${title} - ${lodash.upperFirst(typeName)}
+
+viewSourceUrl https://github.com/breck7/pldb/blob/main/database/things/${id}.pldb
 
 paragraph
  ${this.description}
