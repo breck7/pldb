@@ -8,7 +8,7 @@ const numeral = require("numeral")
 const { jtree } = require("jtree")
 const { Disk } = require("jtree/products/Disk.node.js")
 const { TreeBaseServer } = require("jtree/products/treeBase.node.js")
-const { ScrollPage } = require("scroll-cli")
+const { ScrollPage, getFullyExpandedFile } = require("scroll-cli")
 import { PLDBBaseFolder } from "../PLDBBase"
 import { runCommand, lastCommitHashInFolder, htmlEscaped } from "../utils"
 import simpleGit, { SimpleGit } from "simple-git"
@@ -58,7 +58,9 @@ const GIT_DEFAULT_USERNAME = "PLDBBot"
 const GIT_DEFAULT_EMAIL = "bot@pldb.com"
 const GIT_DEFAULT_AUTHOR = `${GIT_DEFAULT_USERNAME} <${GIT_DEFAULT_EMAIL}>`
 
-const scrollSettings = Disk.read(path.join(publishedFolder, "settings.scroll"))
+const scrollSettings = getFullyExpandedFile(
+	path.join(publishedFolder, "settings.scroll")
+)
 
 class PLDBEditServer extends TreeBaseServer {
 	checkAndPrettifySubmission(content: string) {
