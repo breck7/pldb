@@ -1,5 +1,6 @@
 importOnly
-
-replace BASE_URL ..
-
 import ../settings.scroll
+replace BASE_URL ..
+maxColumns 1
+columnWidth 80
+viewSourceBaseUrl https://github.com/breck7/pldb/blob/main/blog/docs/

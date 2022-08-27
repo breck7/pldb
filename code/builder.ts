@@ -62,6 +62,7 @@ class Builder extends AbstractBuilder {
     this.buildJson()
     this.buildSearchIndex()
     this.buildDatabasePages()
+    this.buildDocs()
     console.log(benchmarkResults)
   }
 
@@ -272,8 +273,7 @@ ${text}`
       page.toString()
     )
 
-    const folder = new ScrollFolder(publishedDocsFolder)
-    folder.buildSinglePages()
+    new ScrollFolder(publishedDocsFolder).buildFiles()
 
     // Copy grammar to docs folder for easy access in things like TN Designer.
     Disk.write(

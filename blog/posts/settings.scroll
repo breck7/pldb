@@ -1,7 +1,5 @@
 importOnly
-
-rssFeedUrl feed.xml
-replace BASE_URL ..
-
 import ../settings.scroll
+replace BASE_URL ..
+rssFeedUrl feed.xml
 keyboardNav
