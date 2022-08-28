@@ -10,6 +10,10 @@ domainName scroll.pub
 
 related markdown treenotation grammar
 
+features
+ hasImports true
+  import settings.scroll
+
 example
  title This is Scroll. The keyword for title is title.
  
