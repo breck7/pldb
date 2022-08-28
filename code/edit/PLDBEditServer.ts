@@ -8,7 +8,7 @@ const numeral = require("numeral")
 const { jtree } = require("jtree")
 const { Disk } = require("jtree/products/Disk.node.js")
 const { TreeBaseServer } = require("jtree/products/treeBase.node.js")
-const { ScrollPage, getFullyExpandedFile } = require("scroll-cli")
+const { ScrollFile, getFullyExpandedFile } = require("scroll-cli")
 import { PLDBBaseFolder } from "../PLDBBase"
 import { runCommand, lastCommitHashInFolder, htmlEscaped } from "../utils"
 import simpleGit, { SimpleGit } from "simple-git"
@@ -68,7 +68,7 @@ class PLDBEditServer extends TreeBaseServer {
 	}
 
 	scrollToHtml(scrollContent) {
-		return new ScrollPage(
+		return new ScrollFile(
 			`replace BASE_URL ${this.isProd ? "https://pldb.com" : ""}
 replace EDIT_URL ${this.isProd ? "https://edit.pldb.com" : "/"}
 
