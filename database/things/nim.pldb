@@ -31,12 +31,18 @@ features
  hasAssignment true
  hasStrings true
   "Hello world"
+ hasBooleans true
+   let res = true
+ hasGotos false
+ hasUnicodeIdentifiers true
+ 		let δ = 0.00001
 
 lineCommentToken #
 multiLineCommentTokens #[ ]#
 printToken echo
 assignmentToken =
 stringToken "
+booleanTokens true false on off
 
 githubRepo https://github.com/nim-lang/Nim
  stars 13062
