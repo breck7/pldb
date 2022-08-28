@@ -17,7 +17,6 @@ features
  hasBuiltInRegex true
  hasNamespaces true
  canUseQuestionMarksAsPartOfIdentifier true
- 
 
 lineCommentToken ;
 
@@ -25,6 +24,5 @@ example
  ; hello world
  (define greeting "Hello")
  (display greeting ", world!\n")
- 
 
 packageRepository https://git.rawtext.club/slope-lang/packages
