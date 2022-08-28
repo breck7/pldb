@@ -1,4 +1,4 @@
-title boron
+title Boron
 appeared 2009
 type pl
 creators Karl Robillard
@@ -13,6 +13,10 @@ features
  canWriteToDisk true
   write %helloworld.txt "Hello, world!^/"
  hasComments true
+ hasExceptions true
+  catch [throw 22 print "You'll never see this."]
+
+  if error? try [read %does_not_exist] [print "File not found"]
  hasGarbageCollection true
  hasHomoiconicity true
  hasLineComments true

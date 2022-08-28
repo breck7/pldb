@@ -15,6 +15,10 @@ features
  canWriteToDisk true
   write %helloworld.txt "Hello, world!^/"
  hasComments true
+ hasExceptions true
+  catch [throw 22 print "You'll never see this."]
+
+  try/except [read %does_not_exist] [print "File not found"]
  hasGarbageCollection true
  hasHomoiconicity true
  hasLineComments true
