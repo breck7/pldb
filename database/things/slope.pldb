@@ -17,15 +17,26 @@ features
  isLisp true
  hasMacros true
  hasPrefixNotation true
+  (+ 1 2)
  hasBitWiseOperators true
+  (& 0xFF 0x1B)
  hasBooleans true
-  #t #f
+  (define open? #t)
  hasLineComments true
+  ; I am a comment
  hasComments true
-   ; I am a comment
+  ; I am a comment
  hasBuiltInRegex true
  hasNamespaces true
+  (ns-create 'hello-world)
+  (ns-define
+    'hello-world
+    'print
+    (lambda ()
+      (display "hello world!\n")))
+  (hello-world::print)
  canUseQuestionMarksAsPartOfIdentifier true
+  (define yes? #t)
  hasSemanticIndentation false
  hasStrings true
   "hello world"
@@ -33,6 +44,7 @@ features
  hasGotos false
  hasImports true
   (load-mod my-module)
+  (load "examples/test.slo")
  isCaseSensitive true
  hasVariadicFunctions true
   (lambda (...) (apply + ...))
@@ -44,6 +56,7 @@ features
  hasZeroBasedNumbering true
  hasIncrementAndDecrementOperators false
  hasConditionals true
+  (if positive? 1 -1)
 
 lineCommentToken ;
 printToken display
