@@ -4,25 +4,53 @@ type pl
 creators Sloum
 description A small s-expression based programming language
 website https://slope.colorfield.space
-standsFor sloum's programming environment 
+standsFor SLOum's Programming Environment
+fileExtensions slo
+country United States
 
 writtenIn go
 influencedBy scheme
 
+visualParadigm false
+
 features
  hasBitWiseOperators true
  hasBooleans true
+  #t #f
  hasLineComments true
  hasComments true
+   ; I am a comment
  hasBuiltInRegex true
  hasNamespaces true
  canUseQuestionMarksAsPartOfIdentifier true
+ hasSemanticIndentation false
+ hasStrings true
+  "hello world"
+ hasGarbageCollection true
+ hasGotos false
+ hasImports true
+  (load-mod my-module)
+ hasVariadicFunctions true
+ isCaseSensitive true
+ hasVariadicFunctions true
+  (lambda (...) (apply + ...))
+ hasSwitch true
+  (case my-num
+    (5 (display "Five!"))
+    (0 (display "Zero!"))
+    (else (display "Not an option")))
+ hasZeroBasedNumbering true
+ hasIncrementAndDecrementOperators false
+ hasConditionals true
+ 
 
 lineCommentToken ;
+booleanTokens #t #f
 
 example
  ; hello world
  (define greeting "Hello")
  (display greeting ", world!\n")
+ 
 
 packageRepository https://git.rawtext.club/slope-lang/packages
