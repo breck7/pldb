@@ -12,17 +12,25 @@ domainName rebol.com
   2022 1353792
 
 features
+ canWriteToDisk true
+  write %helloworld.txt "Hello, world!^/"
  hasComments true
+ hasGarbageCollection true
+ hasHomoiconicity true
  hasLineComments true
   ; A comment
+ hasLists true
+  my-list: [1 two 3.0 "four"]
  hasPrintDebugging true
  hasSemanticIndentation false
  hasStrings true
   "Hello world"
+  {He said "That looks good!"}
 
+booleanToken true false
 lineCommentToken ;
-printToken print
-stringToken "
+printToken print probe
+stringToken " { }
 
 wikipedia https://en.wikipedia.org/wiki/REBOL
  example
