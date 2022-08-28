@@ -33,7 +33,6 @@ features
  hasGotos false
  hasImports true
   (load-mod my-module)
- hasVariadicFunctions true
  isCaseSensitive true
  hasVariadicFunctions true
   (lambda (...) (apply + ...))
@@ -45,7 +44,6 @@ features
  hasZeroBasedNumbering true
  hasIncrementAndDecrementOperators false
  hasConditionals true
- 
 
 lineCommentToken ;
 printToken display

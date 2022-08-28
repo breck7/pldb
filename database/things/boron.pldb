@@ -33,13 +33,13 @@ features
   {He said "That looks good!"}
  hasThreads true
 
-booleanToken true false
+booleanTokens true false
 lineCommentToken ;
 multiLineCommentTokens /* */
 printToken print probe
 stringToken " { } {{ }}
 
-fileType text binary
+fileType text
 isOpenSource true
 
 semanticScholar 0

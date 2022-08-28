@@ -49,7 +49,7 @@ booleanTokensNode
  description What token(s) is used for true and false?
  example
   javascript
-   booleanToken true false
+   booleanTokens true false
 includeTokenNode
  extends abstractCommonTokenNode
  description What token(s) is used for including another file?
