@@ -35,11 +35,12 @@ class EditApp {
 	startCreateForm() {
 		document.getElementById(
 			"exampleSection"
-		).innerHTML = `Example:<br><pre>title Ruby
-appeared 1995
+		).innerHTML = `Example:<br><pre>title Elixir
+appeared 2011
 type pl
-creators Yukihiro Matsumoto
-website https://www.ruby-lang.org</pre>`
+creators José Valim
+website https://elixir-lang.org/
+githubRepo https://github.com/elixir-lang/elixir</pre>`
 	}
 
 	async startCodeMirror() {
