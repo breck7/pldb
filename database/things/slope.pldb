@@ -14,6 +14,9 @@ influencedBy scheme
 visualParadigm false
 
 features
+ isLisp true
+ hasMacros true
+ hasPrefixNotation true
  hasBitWiseOperators true
  hasBooleans true
   #t #f
@@ -45,7 +48,10 @@ features
  
 
 lineCommentToken ;
+printToken display
+stringToken "
 booleanTokens #t #f
+keywords define set! lambda cond case if for load load-mod load-mod-file usage macro eval apply and or begin begin0 exists coeval
 
 example
  ; hello world
