@@ -1,16 +1,16 @@
-title X
+title Jule
 appeared 2021
 type pl
 creators Mertcan Davulcu
 description Simple, efficent and compiled system programming language.
-website https://the-xlang.github.io/website/
+website https://jule.dev
 
 example
- main() {
-  outln("Hello, GitHub!")
+ fn main() {
+     outln("Hello, GitHub!")
  }
 
-githubRepo https://github.com/the-xlang/xxc
+githubRepo https://github.com/jule-lang/jule
  firstCommit 2021
  stars 28
  forks 4
