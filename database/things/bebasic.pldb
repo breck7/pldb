@@ -3,3 +3,28 @@ appeared 2009
 type pl
 creators BBK
 website https://github.com/wenerme/bbvm
+
+example
+ ; ____________________
+ ; \______   \______   \___  _______
+ ;  |    |  _/|    |  _/\  \/ /     \
+ ;  |    |   \|    |   \ \   /  Y Y  \
+ ;  |______  /|______  /  \_/|__|_|  /
+ ;         \/        \/            \/
+ 
+ JMP CODE
+ DATA STR CHAR "Hello, BBvm",0
+ CODE:
+ 
+ OUT 1, STR
+ EXIT
+
+githubRepo https://github.com/wenerme/bbvm
+ firstCommit 2014
+ stars 12
+ forks 1
+ subscribers 2
+ created 2014
+ updated 2022
+ description BeBasic Virtual Machine
+ issues 0
