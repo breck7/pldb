@@ -403,6 +403,17 @@ ${facts.map(fact => ` - ${fact}`).join("\n")}`
     const gitlabRepo = object.gitlab
     if (gitlabRepo) facts.push(`<a href="${gitlabRepo}">${title} on GitLab</a>`)
 
+    const githubRepoCount = file.get("githubLanguage repos")
+    if (githubRepoCount) {
+      const url = `https://github.com/search?q=language:${file.get(
+        "githubLanguage"
+      )}`
+      const repoCount = numeral(githubRepoCount).format("0,0")
+      facts.push(
+        `There are at least ${repoCount} ${title} repos on <a href="${url}">GitHub</a>`
+      )
+    }
+
     const supersetOf = file.supersetFile
     if (supersetOf) facts.push(`${title} is a superset of ${supersetOf.link}`)
 
@@ -468,24 +479,13 @@ ${facts.map(fact => ` - ${fact}`).join("\n")}`
       )
     }
 
-    const githubRepoCount = file.get("githubLanguage repos")
-    if (githubRepoCount) {
-      const url = `https://api.github.com/search/repositories?q=language:${file.get(
-        "githubLanguage"
-      )}`
-      const repoCount = numeral(githubRepoCount).format("0,0")
-      facts.push(
-        `There are at least ${repoCount} ${title} repos on <a href="${url}">GitHub</a>`
-      )
-    }
-
     const githubBigQuery = file.getNode("githubBigQuery")
     if (githubBigQuery) {
       const url = `https://api.github.com/search/repositories?q=language:${githubBigQuery.getContent()}`
       const userCount = numeral(githubBigQuery.get("users")).format("0a")
       const repoCount = numeral(githubBigQuery.get("repos")).format("0a")
       facts.push(
-        `The  Google BigQuery Public Dataset GitHub snapshot shows $ ${userCount} users using ${title} in ${repoCount} repos on <a href="${url}">GitHub</a>`
+        `The  Google BigQuery Public Dataset GitHub snapshot shows ${userCount} users using ${title} in ${repoCount} repos on <a href="${url}">GitHub</a>`
       )
     }
 
