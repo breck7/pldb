@@ -19,6 +19,7 @@ const pldbBase = PLDBBaseFolder.getBase().loadFolder()
 const codeDir = __dirname
 const rootDir = path.join(codeDir, "..")
 const blogDir = path.join(rootDir, "blog")
+const pagesDir = path.join(blogDir, "pages")
 const settingsFilePath = path.join(blogDir, "settings.scroll")
 const publishedRootFolder = path.join(rootDir, "pldb.local")
 const publishedDocsFolder = path.join(publishedRootFolder, "docs")
@@ -149,7 +150,7 @@ class Builder extends AbstractBuilder {
       `list\n` +
       sources.map(s => ` - <a href="https://${s}">${s}</a>`).join("\n")
 
-    const ackPath = path.join(blogDir, "pages", "acknowledgements.scroll")
+    const ackPath = path.join(pagesDir, "acknowledgements.scroll")
     const page = new TreeNode(Disk.read(ackPath))
     replaceNext(page, "comment autogenAcknowledgements", table)
 
@@ -204,7 +205,7 @@ ${text}`
     try {
       const contributorsTable =
         `list\n` +
-        JSON.parse(Disk.read(path.join(rootDir, "ignore", "contributors.json")))
+        JSON.parse(Disk.read(path.join(pagesDir, "contributors.json")))
           .filter(item => item.login !== "codelani" && item.login !== "breck7")
           .map(item => ` - <a href="${item.html_url}">${item.login}</a>`)
           .join("\n")
