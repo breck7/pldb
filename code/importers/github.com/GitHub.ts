@@ -2,25 +2,24 @@
 
 import { PLDBFile, PLDBBaseFolder } from "../../PLDBBase"
 import { runCommand, PoliteCrawler, ensureDelimiterNotFound } from "../../utils"
-
 import { jtree } from "jtree"
-
-const { Disk } = require("jtree/products/Disk.node.js")
-const { TreeNode } = jtree
-const YAML = require("yaml")
-
-const cacheDir = __dirname + "/cache/"
-const reposDir = cacheDir + "repos/"
-const firstCommitCache = cacheDir + "firstCommits/"
-const pldbBase = PLDBBaseFolder.getBase().loadFolder()
 
 const superagent = require("superagent")
 const repoFirstCommit = require("repo-first-commit")
 const dayjs = require("dayjs")
 const path = require("path")
+const YAML = require("yaml")
+const { Disk } = require("jtree/products/Disk.node.js")
 
-const creds = JSON.parse(Disk.read(__dirname + "/ignore/creds.json"))
+const cacheDir = path.join(__dirname, "cache")
+const reposDir = path.join(cacheDir, "repos")
+const repoCountCache = path.join(cacheDir, "repoCount")
+const firstCommitCache = path.join(cacheDir, "firstCommits")
+const credsPath = path.join(__dirname, "ignore", "creds.json")
+const creds = JSON.parse(Disk.read(credsPath))
 const { apiToken, apiUser } = creds
+const pldbBase = PLDBBaseFolder.getBase().loadFolder()
+
 if (!apiToken) {
 	console.error(`No GitHub token found`)
 	process.exit()
@@ -38,10 +37,12 @@ const downloadJson = async (url, destination) => {
 
 const repoPath = "githubRepo"
 const firstCommitPath = `${repoPath} firstCommit`
+const githubLanguageKey = "githubLanguage"
 
 Disk.mkdir(cacheDir)
 Disk.mkdir(reposDir)
 Disk.mkdir(firstCommitCache)
+Disk.mkdir(repoCountCache)
 
 class PLDBFileWithGitHub {
 	constructor(file: PLDBFile) {
@@ -73,8 +74,42 @@ class PLDBFileWithGitHub {
 		}
 	}
 
+	get githubLanguageId() {
+		return this.languageNode.getContent()
+	}
+
+	get repoCountPath() {
+		return path.join(repoCountCache, `${this.githubLanguageId}.json`)
+	}
+
+	async fetchRepoCounts() {
+		const { githubLanguageId, repoCountPath } = this
+		if (Disk.exists(repoCountPath)) return
+		try {
+			await downloadJson(
+				`https://api.github.com/search/repositories?q=language:${githubLanguageId}&per_page=1`,
+				repoCountPath
+			)
+		} catch (err) {
+			//Disk.write(repoFilePath, JSON.stringify(err))
+			console.error(err)
+		}
+	}
+
+	writeRepoCounts() {
+		const { repoCountPath, languageNode, file } = this
+		if (!Disk.exists(repoCountPath)) return this
+		const obj = Disk.readJson(repoCountPath)
+		languageNode.set("repos", obj.total_count.toString())
+		file.prettifyAndSave()
+	}
+
 	get githubNode() {
 		return this.file.getNode(repoPath)
+	}
+
+	get languageNode() {
+		return this.file.getNode(githubLanguageKey)
 	}
 
 	get githubRepo() {
@@ -111,7 +146,7 @@ class PLDBFileWithGitHub {
 	}
 
 	get repoFilePath() {
-		return `${reposDir}/${this.userId}-${this.repoId}.json`
+		return path.join(reposDir, `${this.userId}-${this.repoId}.json`)
 	}
 
 	writeRepoInfoToDatabase() {
@@ -225,6 +260,33 @@ class GitHubImporter {
 			this.linkedFiles
 				.filter(file => !file.getNode("githubRepo").length)
 				.map(file => new PLDBFileWithGitHub(file))
+		)
+	}
+
+	get githubOfficiallySupportedLanguages() {
+		// https://raw.githubusercontent.com/github/linguist/master/lib/linguist/languages.yml
+		return pldbBase
+			.filter(file => file.has(githubLanguageKey))
+			.map(file => new PLDBFileWithGitHub(file))
+	}
+
+	async fetchAllRepoCountsCommand() {
+		const { githubOfficiallySupportedLanguages } = this
+		console.log(
+			`Fetching repo counts for all ${githubOfficiallySupportedLanguages.length} languages supported by GitHub...`
+		)
+		const crawler = new PoliteCrawler()
+		crawler.maxConcurrent = 1
+		crawler.msDelayBetweenRequests = 500
+		await crawler.fetchAll(
+			githubOfficiallySupportedLanguages,
+			"fetchRepoCounts"
+		)
+	}
+
+	writeAllRepoCountsCommand() {
+		this.githubOfficiallySupportedLanguages.forEach(file =>
+			file.writeRepoCounts()
 		)
 	}
 

@@ -74,3 +74,9 @@ githubTrendingProjectsCountNode
  single
  crux trendingProjectsCount
  description How many trending repos for this language does GitHub report?
+githubRepoCountNode
+ boolean fromCrawler true
+ extends abstractCountNode
+ single
+ crux repos
+ description How many repos for this language does GitHub report?

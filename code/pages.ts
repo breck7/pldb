@@ -768,7 +768,15 @@ code
   get kpiBar() {
     const { file, object } = this
     const appeared = object.appeared
-    const { numberOfUsers, bookCount, paperCount } = file
+    const {
+      numberOfUsers,
+      bookCount,
+      paperCount,
+      numberOfRepos,
+      title,
+      isLanguage,
+      languageRank
+    } = file
     const users =
       numberOfUsers > 10
         ? numberOfUsers < 1000
@@ -777,8 +785,8 @@ code
         : ""
 
     const lines = [
-      file.isLanguage
-        ? `#${file.languageRank + 1} <span title="${
+      isLanguage
+        ? `#${languageRank + 1} <span title="${
             file.langRankDebug
           }">on PLDB</span>`
         : `#${file.rank + 1} on PLDB`,
@@ -786,11 +794,14 @@ code
       users
         ? `${users} <span title="Crude user estimate from a linear model.">Users</span>`
         : "",
-      file.isLanguage
-        ? `${bookCount} <span title="Books about or leveraging ${file.title}">Books</span>`
+      isLanguage
+        ? `${bookCount} <span title="Books about or leveraging ${title}">Books</span>`
         : "",
-      file.isLanguage
-        ? `${paperCount} <span title="Academic publications about or leveraging ${file.title}">Papers</span>`
+      isLanguage
+        ? `${paperCount} <span title="Academic publications about or leveraging ${title}">Papers</span>`
+        : "",
+      numberOfRepos
+        ? `${numberOfRepos} <span title="${title} repos on GitHub.">Repos</span>`
         : ""
     ]
       .filter(i => i)

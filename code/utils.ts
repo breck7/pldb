@@ -155,13 +155,13 @@ interface PoliteCrawlerJob {
 
 class PoliteCrawler {
   running = 0
-  async _fetchQueue() {
+  async _fetchQueue(methodName = "fetch") {
     if (!this.downloadQueue.length) return
 
     await this.awaitScheduledTime()
 
-    await this.downloadQueue.pop().fetch()
-    return this._fetchQueue()
+    await this.downloadQueue.pop()[methodName]()
+    return this._fetchQueue(methodName)
   }
 
   async awaitScheduledTime() {
@@ -186,11 +186,11 @@ class PoliteCrawler {
   maxConcurrent = 10
   downloadQueue: PoliteCrawlerJob[] = []
   randomize = false // Can randomize the queue so dont get stuck on one
-  async fetchAll(jobs) {
+  async fetchAll(jobs, methodName = "fetch") {
     this.downloadQueue = this.randomize ? lodash.shuffle(jobs) : jobs
     const threads = lodash
       .range(0, this.maxConcurrent, 1)
-      .map(i => this._fetchQueue())
+      .map(i => this._fetchQueue(methodName))
     await Promise.all(threads)
   }
 }

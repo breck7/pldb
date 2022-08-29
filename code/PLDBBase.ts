@@ -449,6 +449,11 @@ class PLDBFile extends TreeBaseFile {
   }
 
   @includeInCsv
+  get numberOfRepos() {
+    return this.get("githubLanguage repos")
+  }
+
+  @includeInCsv
   get numberOfJobs() {
     return this.base.predictNumberOfJobs(this)
   }
