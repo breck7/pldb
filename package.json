@@ -1,6 +1,6 @@
 {
   "name": "pldb",
-  "description": "The Programming Language Database",
+  "description": "PLDB: a Programming Language Database",
   "scripts": {
     "build": "./code/builder.ts buildAll",
     "clean": "cd code; tsc --build --clean",

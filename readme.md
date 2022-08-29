@@ -1,4 +1,4 @@
-# The Programming Language Database
+# PLDB: a Programming Language Database
 
 PLDB is a public domain database and blog containing over 100,000 facts about over 4,000 programming languages.
 
@@ -58,13 +58,13 @@ https://pldb.com
 ```
 
 ```
-Breck Yunits et al. (2022) - "The Programming Language Database". Retrieved from: 'https://pldb.com' [Online Resource]
+Breck Yunits et al. (2022) - "PLDB: a Programming Language Database". Retrieved from: 'https://pldb.com' [Online Resource]
 ```
 
 ```
 @article{pldb,
   author = {Breck Yunits et al.},
-  title = {The Programming Language Database},
+  title = {PLDB: a Programming Language Database},
   journal = {PLDB},
   year = {2022},
   note = {https://pldb.com}

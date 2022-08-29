@@ -52,40 +52,6 @@ exampleCodeHeaderNode
   compile() {
    return `<div class="exampleCodeHeader">${this.getContent()}</div>`
   }
-howToCiteNode
- cruxFromId
- extends abstractScrollNode
- description Add a "How to cite" block
- javascript
-  compile() {
-   const article = this.getParent()
-   const authors = article
-    .getNode("author")
-    .getWordsFrom(2)
-    .join(" ") // todo: multiple
-   const year = new Date(article.get("date")).getFullYear()
-   const title = article.get("title")
-   const siteName = "PLDB"
-   const permalink = this.getRootNode().permalink
-   const url = "https://pldb.com/" + permalink + ".html"
-   return `
-      <div class="citationSection">
-      <h4>How to cite</h4>
-      <p>PLDB content is published to the public domain and can be used freely. If needed, here are 3 options for citing PLDB:</p>
-      <div class="scrollCiteComponent">${url}</div>
-     <div class="scrollCiteComponent">
-      ${authors} (${year}) - "${title}". Retrieved from: '${url}' [Online Resource]
-     </div>
-     <div class="scrollCiteComponent">
-     @article{${permalink},
-        author = {${authors}},
-        title = {${title}},
-        journal = {${siteName}},
-        year = {${year}},
-        note = {${url}}
-      }
-     </div></div>`
-  }
 monacoEditorNode
  cruxFromId
  extends abstractScrollNode
