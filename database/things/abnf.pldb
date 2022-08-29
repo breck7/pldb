@@ -49,6 +49,7 @@ githubLanguage ABNF
  type data
  ace_mode text
  tm_scope source.abnf
+ repos 1
 
 antlr https://github.com/antlr/grammars-v4/tree/master/abnf
 pygmentsHighlighter ABNF
