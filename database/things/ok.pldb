@@ -1,0 +1,19 @@
+title OK
+type pl
+
+example
+ let divide = fn(a, b) {
+   return switch b {
+     case 0: [NO!, "cannot divide by zero"];
+     default: [a / b, ""];
+   };
+ };
+ 
+ result = divide(5, 0)
+ switch result[1] {
+   case "": puts(result[0])
+   default: puts(result[1]) // prints "cannot divide by zero"
+ }
+ 
+
+githubRepo https://github.com/jesseduffield/OK
