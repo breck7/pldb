@@ -7,7 +7,6 @@ const { jtree } = require("jtree")
 const dayjs = require("dayjs")
 const { TreeNode } = jtree
 const { Disk } = require("jtree/products/Disk.node.js")
-const { AbstractBuilder } = require("jtree/products/AbstractBuilder.node.js")
 const { ScrollFolder } = require("scroll-cli")
 const shell = require("child_process").execSync
 
@@ -31,15 +30,14 @@ const publishedLanguagesFolder = path.join(publishedRootFolder, "languages") // 
 import {
   replaceNext,
   isLanguage,
-  benchmark,
   benchmarkResults,
   listGetters,
-  cleanAndRightShift,
-  lastCommitHashInFolder
+  lastCommitHashInFolder,
+  runCommand
 } from "./utils"
 
-class Builder extends AbstractBuilder {
-  copyNpmAssets() {
+class SiteBuilder {
+  copyNpmAssetsCommand() {
     // Copy node module assets
     Disk.mkdir(path.join(publishedRootFolder, "node_modules"))
     shell(
@@ -50,27 +48,27 @@ class Builder extends AbstractBuilder {
     )
   }
 
-  buildAll() {
+  buildAllCommand() {
     shell(
       `rm -rf ${publishedRootFolder}; cp -R ${blogDir} ${publishedRootFolder}`
     )
-    this.copyNpmAssets()
-    this.buildSettingsFile()
-    this.buildAcknowledgementsPage()
-    this.buildPages()
-    this.buildLists()
-    this.buildPosts()
-    this.buildHomepage()
-    this.buildCsvs()
-    this.buildJson()
-    this.buildRedirects()
-    this.buildSearchIndex()
-    this.buildDatabasePages()
-    this.buildDocs()
+    this.copyNpmAssetsCommand()
+    this.buildSettingsFileCommand()
+    this.buildAcknowledgementsPageCommand()
+    this.buildPagesCommand()
+    this.buildListsCommand()
+    this.buildPostsCommand()
+    this.buildHomepageCommand()
+    this.buildCsvsCommand()
+    this.buildJsonCommand()
+    this.buildRedirectsCommand()
+    this.buildSearchIndexCommand()
+    this.buildDatabasePagesCommand()
+    this.buildDocsCommand()
     console.log(benchmarkResults)
   }
 
-  buildSettingsFile() {
+  buildSettingsFileCommand() {
     // todo: can we refactor scroll settings so we no longer need this?
     const lastHash = lastCommitHashInFolder()
     const builtOn = dayjs().format("YYYY")
@@ -85,7 +83,7 @@ class Builder extends AbstractBuilder {
     )
   }
 
-  buildLists() {
+  buildListsCommand() {
     const listRoutes = new ListRoutes()
     listGetters(listRoutes).forEach(getter => {
       Disk.write(
@@ -96,19 +94,19 @@ class Builder extends AbstractBuilder {
     new ScrollFolder(publishedListsFolder).buildFiles()
   }
 
-  buildHomepage() {
+  buildHomepageCommand() {
     new ScrollFolder(publishedRootFolder).buildFiles()
   }
 
-  buildPages() {
+  buildPagesCommand() {
     new ScrollFolder(publishedPagesFolder).buildFiles()
   }
 
-  buildPosts() {
+  buildPostsCommand() {
     new ScrollFolder(publishedPostsFolder).buildFiles()
   }
 
-  buildRedirects() {
+  buildRedirectsCommand() {
     Disk.read(path.join(blogDir, "redirects.txt"))
       .split("\n")
       .forEach(line => {
@@ -121,7 +119,7 @@ class Builder extends AbstractBuilder {
       })
   }
 
-  buildDatabasePages() {
+  buildDatabasePagesCommand() {
     pldbBase.forEach(file => {
       const filePath = path.join(publishedLanguagesFolder, `${file.id}.scroll`)
 
@@ -136,7 +134,7 @@ class Builder extends AbstractBuilder {
     new ScrollFolder(publishedLanguagesFolder).buildFiles()
   }
 
-  buildAcknowledgementsPage() {
+  buildAcknowledgementsPageCommand() {
     const sources = Array.from(
       new Set(
         pldbBase.grammarCode
@@ -215,7 +213,7 @@ ${text}`
     Disk.write(ackPath, page.toString())
   }
 
-  buildSearchIndex() {
+  buildSearchIndexCommand() {
     const objects = pldbBase.objectsForCsv.map(object => {
       return {
         label: object.title,
@@ -229,9 +227,8 @@ ${text}`
     )
   }
 
-  buildCsvs() {
+  buildCsvsCommand() {
     const { colNamesForCsv, objectsForCsv } = pldbBase
-
     Disk.write(
       path.join(publishedRootFolder, "pldb.csv"),
       new TreeNode(objectsForCsv).toDelimited(",", colNamesForCsv)
@@ -244,9 +241,8 @@ ${text}`
     )
   }
 
-  buildDocs() {
+  buildDocsCommand() {
     const { columnDocumentation } = pldbBase
-
     const langCount = pldbBase.topLanguages.length
     const colCount = columnDocumentation.length
     const entityCount = pldbBase.length
@@ -288,22 +284,19 @@ ${text}`
     )
   }
 
-  buildJson() {
+  buildJsonCommand() {
     const str = JSON.stringify(pldbBase.typedMap, null, 2)
     Disk.write(path.join(publishedRootFolder, "pldb.json"), str)
     Disk.write(path.join(codeDir, "package", "pldb.json"), str)
   }
 
-  buildTypesFile() {
-    // todo: update/remove?
-    Disk.write(path.join(codeDir, "types.ts"), pldbBase.typesFile)
-  }
+  // buildTypesFile() {
+  //   // todo: update/remove?
+  //   Disk.write(path.join(codeDir, "types.ts"), pldbBase.typesFile)
+  // }
 
-  formatDatabase() {
-    pldbBase.forEach(file => {
-      file.prettify()
-      file.save()
-    })
+  formatDatabaseCommand() {
+    pldbBase.forEach(file => file.prettifyAndSave())
   }
 
   async formatAndCheckChanged() {
@@ -313,14 +306,10 @@ ${text}`
     changed
       .split("\n")
       .filter(file => file.endsWith(".pldb"))
-      .forEach(path => {
-        const file = pldbBase.getFile(path)
-        file.prettify()
-        file.save()
-      })
+      .forEach(filePath => pldbBase.getFile(filePath).prettifyAndSave())
   }
 
-  generateWorksheets() {
+  generateWorksheetsForAiCommand() {
     const { topFeatures } = pldbBase
 
     pldbBase.topLanguages
@@ -358,7 +347,7 @@ ${text}`
   }
 }
 
-export { Builder }
+export { SiteBuilder }
 
 if (!module.parent)
-  new Builder().main(process.argv[2], process.argv[3], process.argv[4])
+  runCommand(new SiteBuilder(), process.argv[2], process.argv[3])

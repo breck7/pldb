@@ -2,7 +2,7 @@
   "name": "pldb",
   "description": "PLDB: a Programming Language Database",
   "scripts": {
-    "build": "./code/builder.ts buildAll",
+    "build": "./code/SiteBuilder.ts buildAll",
     "clean": "cd code; tsc --build --clean",
     "cloc": "cloc --vcs git .",
     "checkLinks": "linkinator -r https://pldb.com > ignore/brokenLinks.txt",
@@ -12,7 +12,7 @@
     "scrollBeta": "npm install ~/scroll",
     "nulls": "xsv frequency pldb.local/pldb.csv --limit 1",
     "test": "ts-node code/test.ts",
-    "fetchAcknowledgements": "wget -O blog/pages/contributors.json https://api.github.com/repos/breck7/pldb/contributors",
+    "fetchContributors": "wget -O blog/pages/contributors.json https://api.github.com/repos/breck7/pldb/contributors",
     "update": "ts-node code/importers/PLDBUpdater.ts update"
   },
   "prettier": {
