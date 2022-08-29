@@ -31,10 +31,10 @@ features
   "Hello world"
   {He said "That looks good!"}
 
-booleanTokens true false
 lineCommentToken ;
 printToken print probe
 stringToken " { }
+booleanTokens true false
 
 wikipedia https://en.wikipedia.org/wiki/REBOL
  example
@@ -60,6 +60,7 @@ githubLanguage Rebol
  type programming
  ace_mode text
  tm_scope source.rebol
+ repos 30469
 githubBigQuery Rebol
  repos 1647
  users 1543

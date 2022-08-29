@@ -265,9 +265,10 @@ class GitHubImporter {
 
 	get githubOfficiallySupportedLanguages() {
 		// https://raw.githubusercontent.com/github/linguist/master/lib/linguist/languages.yml
-		return pldbBase
+		return pldbBase.topLanguages
 			.filter(file => file.has(githubLanguageKey))
 			.map(file => new PLDBFileWithGitHub(file))
+			.reverse()
 	}
 
 	async fetchAllRepoCountsCommand() {
@@ -277,7 +278,7 @@ class GitHubImporter {
 		)
 		const crawler = new PoliteCrawler()
 		crawler.maxConcurrent = 1
-		crawler.msDelayBetweenRequests = 500
+		crawler.msDelayBetweenRequests = 100
 		await crawler.fetchAll(
 			githubOfficiallySupportedLanguages,
 			"fetchRepoCounts"
