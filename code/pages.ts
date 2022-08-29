@@ -468,13 +468,24 @@ ${facts.map(fact => ` - ${fact}`).join("\n")}`
       )
     }
 
+    const githubRepoCount = file.get("githubLanguage repos")
+    if (githubRepoCount) {
+      const url = `https://api.github.com/search/repositories?q=language:${file.get(
+        "githubLanguage"
+      )}`
+      const repoCount = numeral(githubRepoCount).format("0,0")
+      facts.push(
+        `There are at least ${repoCount} ${title} repos on <a href="${url}">GitHub</a>`
+      )
+    }
+
     const githubBigQuery = file.getNode("githubBigQuery")
     if (githubBigQuery) {
       const url = `https://api.github.com/search/repositories?q=language:${githubBigQuery.getContent()}`
       const userCount = numeral(githubBigQuery.get("users")).format("0a")
       const repoCount = numeral(githubBigQuery.get("repos")).format("0a")
       facts.push(
-        `${userCount} users are using ${title} in at least ${repoCount} repos on <a href="${url}">GitHub</a>`
+        `The  Google BigQuery Public Dataset GitHub snapshot shows $ ${userCount} users using ${title} in ${repoCount} repos on <a href="${url}">GitHub</a>`
       )
     }
 
