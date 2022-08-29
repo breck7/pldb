@@ -160,7 +160,9 @@ class PoliteCrawler {
 
     await this.awaitScheduledTime()
 
-    await this.downloadQueue.pop()[methodName]()
+    const nextItem = this.downloadQueue.pop()
+    if (!nextItem) return
+    await nextItem[methodName]()
     return this._fetchQueue(methodName)
   }
 
