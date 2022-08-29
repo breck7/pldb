@@ -801,7 +801,9 @@ code
         ? `${paperCount} <span title="Academic publications about or leveraging ${title}">Papers</span>`
         : "",
       numberOfRepos
-        ? `${numberOfRepos} <span title="${title} repos on GitHub.">Repos</span>`
+        ? `${numeral(numberOfRepos).format(
+            "0.0a"
+          )} <span title="${title} repos on GitHub.">Repos</span>`
         : ""
     ]
       .filter(i => i)
