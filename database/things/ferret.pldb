@@ -5,6 +5,21 @@ website http://ferret-lang.org
 domainName ferret-lang.org
  registered 2017
 
+example
+ ;;; lazy-sum.clj
+ (defn positive-numbers
+   ([]
+    (positive-numbers 1))
+   ([n]
+    (cons n (lazy-seq (positive-numbers (inc n))))))
+ 
+ (println (->> (positive-numbers)
+               (take 5)
+               (apply +)))
+ 
+
+githubRepo https://github.com/nakkaya/ferret
+
 hackerNewsDiscussions
  id|title|url|time|timestamp|by|comments|score
  14951116|Ferret – A free software Clojure implementation|http://ferret-lang.org/|2017-08-07 20:45:21 UTC|1502138721|greydius|79|266
