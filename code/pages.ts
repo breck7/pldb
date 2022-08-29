@@ -802,7 +802,7 @@ code
         : "",
       numberOfRepos
         ? `${numeral(numberOfRepos).format(
-            "0.0a"
+            "0a"
           )} <span title="${title} repos on GitHub.">Repos</span>`
         : ""
     ]
