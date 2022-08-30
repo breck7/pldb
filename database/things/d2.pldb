@@ -1,0 +1,27 @@
+title D2
+type textMarkup
+description D2 is a domain-specific language (DSL) that stands for Declarative Diagramming. Declarative, as in, you write in text what you want diagrammed, we generate it.
+website https://d2-lang.com/
+reference https://news.ycombinator.com/item?id=32652291
+standsFor Declarative Diagramming
+
+related dot
+
+example
+ aws: {
+   load_balancer -> api
+   api -> db
+ }
+ gcloud: {
+   auth -> db
+ }
+ 
+ gcloud -> aws
+ 
+ explanation: |md
+   # Why do we use AWS?
+   - It has more uptime than GCloud
+   - We have free credits
+ | {
+   near: aws
+ }
