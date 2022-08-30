@@ -24,16 +24,18 @@ aftertext
 subsection Analytics
 
 aftertext
- This site does not use cookies or include any tracking scripts. You can view a report of web traffic to this site <a href="https://pldb.com/nginxDaily.html">here</a>.
+ This site does not use cookies or include any tracking scripts. Server logs are kept and used primarily for catching broken links and other QA. You can view the daily log and ~ past two weeks.
  https://www.nginx.com/ NGINX
+ https://pldb.com/nginxDaily.html daily
+ https://pldb.com/nginxDailyAll.html two weeks
 
 aftertext
- The log reports are generated using goaccess and is run once daily via the cron jobs below.
+ The log reports are generated using goaccess and is run once daily via the cron jobs below. Be sure privileges are correct or goaccess can hang.
  https://goaccess.io/
 
 cronCode
- 0 5 * * * goaccess /var/log/nginx/access.log -o /var/www/html/nginxDaily.html --log-format=COMBINED
- 0 5 * * * zcat -f /var/log/nginx/access.log* | goaccess -o /var/www/html/nginxDailyAll.html --log-format=COMBINED
+ 0 5 * * * goaccess /var/log/nginx/access.log -o /var/www/html/nginxDaily.html --log-format=COMBINED --anonymize-ip
+ 0 5 * * * zcat -f /var/log/nginx/access.log* | goaccess -o /var/www/html/nginxDailyAll.html --log-format=COMBINED --anonymize-ip
 
 subsection Server setup
 
