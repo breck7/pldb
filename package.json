@@ -2,7 +2,8 @@
   "name": "pldb",
   "description": "PLDB: a Programming Language Database",
   "scripts": {
-    "build": "./code/SiteBuilder.ts buildAll",
+    "build": "chmod +x ./code/SiteBuilder.js; ./code/SiteBuilder.js buildAll",
+    "profileBuild": "time node --cpu-prof --cpu-prof-name=ignore/pldbBuildNodePerf.cpuprofile ./code/SiteBuilder.js buildAll",
     "clean": "cd code; tsc --build --clean",
     "cloc": "cloc --vcs git . --read-lang-def=code/clocLangs.txt",
     "checkLinks": "linkinator -r https://pldb.com > ignore/brokenLinks.txt",
@@ -13,6 +14,7 @@
     "nulls": "xsv frequency pldb.local/pldb.csv --limit 1",
     "test": "ts-node code/test.ts",
     "fetchContributors": "wget -O blog/pages/contributors.json https://api.github.com/repos/breck7/pldb/contributors",
+    "tsc": "cd code; tsc",
     "update": "ts-node code/importers/PLDBUpdater.ts update"
   },
   "prettier": {

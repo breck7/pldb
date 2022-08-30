@@ -37,6 +37,7 @@ Advanced method: Edit the corresponding `database/things/*.pldb` file and send a
 git clone https://github.com/breck7/pldb
 cd pldb
 npm install .
+npm run tsc
 npm run build
 open pldb.local/index.html
 ```
