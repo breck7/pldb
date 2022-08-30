@@ -48,6 +48,7 @@ class EditApp {
 
 		const urlParams = new URLSearchParams(window.location.hash.replace("#", ""))
 		const commit = urlParams.get("commit")
+		const errorMessage = urlParams.get("errorMessage")
 
 		if (commit) {
 			const base = "https://github.com/breck7/pldb/commit/"
@@ -55,8 +56,13 @@ class EditApp {
 				"successLink"
 			).innerHTML = `<a target="_pldb" href="${base +
 				commit}">Success! Changes published as ${commit.substring(0, 7)}</a>`
-			window.location.hash = ""
 		}
+		if (errorMessage)
+			document.getElementById(
+				"errorMessageDisplay"
+			).innerHTML = `Error: ${htmlEscaped(errorMessage)}`
+
+		window.location.hash = ""
 	}
 
 	startForm() {

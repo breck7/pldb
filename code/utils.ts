@@ -197,6 +197,15 @@ class PoliteCrawler {
   }
 }
 
+// https://stackoverflow.com/questions/46155/how-can-i-validate-an-email-address-in-javascript
+const isValidEmail = email => {
+  return String(email)
+    .toLowerCase()
+    .match(
+      /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/
+    )
+}
+
 const _re = new RegExp(
   "(^|[ \t\r\n])((ftp|http|https):(([A-Za-z0-9$_.+!*(),;/?:@&~=-])|%[A-Fa-f0-9]{2}){2,}(#([a-zA-Z0-9][a-zA-Z0-9$_.+!*(),;/?:@&~=%-]*))?([A-Za-z0-9$_+!*();/?:~-]))",
   "g"
@@ -402,5 +411,6 @@ export {
   getLinks,
   lastCommitHashInFolder,
   ensureDelimiterNotFound,
-  htmlEscaped
+  htmlEscaped,
+  isValidEmail
 }

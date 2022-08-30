@@ -9,8 +9,13 @@ const { jtree } = require("jtree")
 const { Disk } = require("jtree/products/Disk.node.js")
 const { TreeBaseServer } = require("jtree/products/treeBase.node.js")
 const { ScrollFile, getFullyExpandedFile } = require("scroll-cli")
-import { PLDBBaseFolder } from "../PLDBBase"
-import { runCommand, lastCommitHashInFolder, htmlEscaped } from "../utils"
+import { PLDBBaseFolder, PLDBFile } from "../PLDBBase"
+import {
+	runCommand,
+	lastCommitHashInFolder,
+	htmlEscaped,
+	isValidEmail
+} from "../utils"
 import simpleGit, { SimpleGit } from "simple-git"
 import { SearchRoutes } from "../routes"
 
@@ -58,13 +63,58 @@ const GIT_DEFAULT_USERNAME = "PLDBBot"
 const GIT_DEFAULT_EMAIL = "bot@pldb.com"
 const GIT_DEFAULT_AUTHOR = `${GIT_DEFAULT_USERNAME} <${GIT_DEFAULT_EMAIL}>`
 
+const parseGitAuthor = (field = GIT_DEFAULT_AUTHOR) => {
+	const authorName = field
+		.split("<")[0]
+		.trim()
+		.replace(/[^a-zA-Z \.]/g, "")
+		.substr(0, 32)
+	const authorEmail = field
+		.split("<")[1]
+		.replace(">", "")
+		.trim()
+	return {
+		authorName,
+		authorEmail
+	}
+}
+
 const scrollSettings = getFullyExpandedFile(
 	path.join(publishedFolder, "settings.scroll")
 ).code
 
 class PLDBEditServer extends TreeBaseServer {
-	checkAndPrettifySubmission(content: string) {
-		return this._folder.prettifyContent(content)
+	validateSubmission(content: string, fileBeingEdited?: PLDBFile) {
+		// Run some simple sanity checks.
+		if (content.length > 200000) throw new Error(`Submission too large`)
+
+		// Remove all return characters
+		content = content.replace(/\r/g, "")
+
+		const pldbBase = this._folder
+		const programParser = pldbBase.grammarProgramConstructor
+		const parsed = new programParser(content)
+
+		const errs = parsed.getAllErrors()
+
+		if (errs.length > 3)
+			throw new Error(
+				`Too many errors detected in submission: ${JSON.stringify(
+					errs.map(err => err.toObject())
+				)}`
+			)
+
+		const { scopeErrors } = parsed
+		if (scopeErrors.length > 3)
+			throw new Error(
+				`Too many scope errors detected in submission: ${JSON.stringify(
+					scopeErrors.map(err => err.toObject())
+				)}`
+			)
+
+		return {
+			content: this._folder.prettifyContent(content)
+		}
 	}
 
 	scrollToHtml(scrollContent) {
@@ -82,6 +132,7 @@ ${scripts}
 
 html
  <div id="successLink"></div>
+ <div id="errorMessage" style="color: red;"></div>
 
 ${scrollContent}
 `
@@ -114,7 +165,7 @@ ${scrollContent}
 		return this._git
 	}
 
-	private async commitFile(
+	private async commitFilePullAndPush(
 		filename: string,
 		commitMessage: string,
 		authorName: string,
@@ -124,7 +175,10 @@ ${scrollContent}
 			console.log(
 				`Would commit "${filename}" with message "${commitMessage}" as author "${authorName} <${authorEmail}>"`
 			)
-			return
+			return {
+				success: true,
+				commitHash: `pretendCommitHash`
+			}
 		}
 		const { git } = this
 		try {
@@ -132,6 +186,9 @@ ${scrollContent}
 			// git commit
 			// git pull --rebase
 			// git push
+
+			if (!isValidEmail(authorEmail))
+				throw new Error(`Invalid email: ${authorEmail}`)
 
 			await git.add(filename)
 			const commitResult = await git.commit(commitMessage, filename, {
@@ -141,11 +198,19 @@ ${scrollContent}
 			await this.git.pull()
 			await git.push()
 
-			return { success: true }
+			// todo: verify that this is the users commit
+			const commitHash = lastCommitHashInFolder()
+
+			return {
+				success: true,
+				commitHash
+			}
 		} catch (error) {
-			const err = error as Error
-			console.error(err)
-			return { success: false, error: err.toString() }
+			console.error(error)
+			return {
+				success: false,
+				error
+			}
 		}
 	}
 
@@ -201,33 +266,6 @@ html
 			res.send(this.scrollToHtml(editForm(undefined, "Add a language")))
 		)
 
-		app.post("/create", async (req, res) => {
-			const { content, author } = req.body
-			try {
-				this.appendToPostLog("create", author, content)
-				const newFile = pldbBase.createFile(
-					this.checkAndPrettifySubmission(content)
-				)
-
-				const { authorName, authorEmail } = this.parseGitAuthor(author)
-
-				await this.commitFile(
-					newFile.filename,
-					`Added '${newFile.id}'`,
-					authorName,
-					authorEmail
-				)
-
-				const commit = lastCommitHashInFolder()
-
-				pldbBase.clearMemos()
-				res.redirect("edit/" + newFile.id + `#commit=${commit}`)
-			} catch (err) {
-				console.error(err)
-				errorForm(content, err, res)
-			}
-		})
-
 		const errorForm = (submission, err, res) => {
 			res.status(500)
 			res.send(
@@ -269,6 +307,39 @@ ${editForm(submission, "Error")}`
 			)
 		})
 
+		app.post("/create", async (req, res) => {
+			const { content, author } = req.body
+			try {
+				this.appendToPostLog("create", author, content)
+
+				// todo: audit
+				const validateSubmissionResults = this.validateSubmission(content)
+				const newFile = pldbBase.createFile(validateSubmissionResults.content)
+
+				const { authorName, authorEmail } = parseGitAuthor(author)
+
+				// todo: audit
+				const commitResult = await this.commitFilePullAndPush(
+					newFile.filename,
+					`Added '${newFile.id}'`,
+					authorName,
+					authorEmail
+				)
+
+				if (!commitResult.success)
+					return res.redirect(
+						`edit/${newFile.id}#errorMessage=${commitResult.error.message}`
+					)
+
+				// todo: cleanup cacheing issues
+				pldbBase.clearMemos()
+				res.redirect(`edit/${newFile.id}#commit=${commitResult.commitHash}`)
+			} catch (err) {
+				console.error(err)
+				errorForm(content, err, res)
+			}
+		})
+
 		app.post("/edit/:id", async (req, res) => {
 			const { id } = req.params
 			const file = pldbBase.getFile(id)
@@ -277,38 +348,35 @@ ${editForm(submission, "Error")}`
 
 			try {
 				this.appendToPostLog(id, author, content)
-				file.setChildren(this.checkAndPrettifySubmission(content))
+
+				const validateSubmissionResults = this.validateSubmission(content, file)
+
+				file.setChildren(validateSubmissionResults.content)
 				file.prettifyAndSave()
 
-				const { authorName, authorEmail } = this.parseGitAuthor(author)
+				const { authorName, authorEmail } = parseGitAuthor(author)
 
-				await this.commitFile(
+				isValidEmail(authorEmail)
+
+				// todo: audit
+				const commitResult = await this.commitFilePullAndPush(
 					file.filename,
 					`Updated '${file.id}'`,
 					authorName,
 					authorEmail
 				)
 
-				const commit = lastCommitHashInFolder()
+				if (!commitResult.success)
+					return res.redirect(
+						`${id}#errorMessage=${commitResult.error.message}`
+					)
 
-				res.redirect(id + `#commit=${commit}`)
+				res.redirect(`${id}#commit=${commitResult.commitHash}`)
 			} catch (err) {
 				console.error(err)
 				errorForm(content, err, res)
 			}
 		})
-	}
-
-	parseGitAuthor(field = GIT_DEFAULT_AUTHOR) {
-		const authorName = field.split("<")[0].trim()
-		const authorEmail = field
-			.split("<")[1]
-			.replace(">", "")
-			.trim()
-		return {
-			authorName,
-			authorEmail
-		}
 	}
 
 	gitOn = false
