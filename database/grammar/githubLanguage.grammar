@@ -1,7 +1,7 @@
 githubLanguageNode
  description GitHub has a set of supported languages as defined here: https://raw.githubusercontent.com/github/linguist/master/lib/linguist/languages.yml
  extends abstractMultiwordGuidNode
- inScope githubLanguageFileExtensionsNode fileNamesNode githubTrendingProjectsNode githubTrendingProjectsCountNode abstractGitHubLanguageNode abstractGitHubLanguageArrayNode githubLanguageGroupNode githubLanguageAliasesNode
+ inScope githubRepoCountNode githubLanguageFileExtensionsNode fileNamesNode githubTrendingProjectsNode githubTrendingProjectsCountNode abstractGitHubLanguageNode abstractGitHubLanguageArrayNode githubLanguageGroupNode githubLanguageAliasesNode
  contentKey id
  string sourceDomain github.com
 abstractGitHubLanguageNode

@@ -56,8 +56,10 @@ monacoEditorNode
  cruxFromId
  extends abstractScrollNode
  description A Monaco code editor.
+ baseNodeType blobNode
  example
-  monacoEditor javascript // Hello world
+  monacoEditor javascript
+   // Hello world
  javascript
   compile() {
    return `<div id="monacoContainer"></div>
