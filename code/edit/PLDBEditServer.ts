@@ -60,7 +60,7 @@ const GIT_DEFAULT_AUTHOR = `${GIT_DEFAULT_USERNAME} <${GIT_DEFAULT_EMAIL}>`
 
 const scrollSettings = getFullyExpandedFile(
 	path.join(publishedFolder, "settings.scroll")
-)
+).code
 
 class PLDBEditServer extends TreeBaseServer {
 	checkAndPrettifySubmission(content: string) {
