@@ -5,6 +5,7 @@ const simpleGit = require("simple-git")
 const path = require("path")
 const { jtree } = require("jtree")
 const dayjs = require("dayjs")
+const numeral = require("numeral")
 const { TreeNode } = jtree
 const { Disk } = require("jtree/products/Disk.node.js")
 const { ScrollFolder } = require("scroll-cli")
@@ -64,7 +65,6 @@ class SiteBuilder {
     this.buildRedirectsCommand()
     this.buildSearchIndexCommand()
     this.buildDatabasePagesCommand()
-    this.buildDocsCommand()
     console.log(benchmarkResults)
   }
 
@@ -228,24 +228,15 @@ ${text}`
   }
 
   buildCsvsCommand() {
-    const { colNamesForCsv, objectsForCsv } = pldbBase
-    Disk.write(
-      path.join(publishedRootFolder, "pldb.csv"),
-      new TreeNode(objectsForCsv).toDelimited(",", colNamesForCsv)
-    )
-    Disk.write(
-      path.join(publishedRootFolder, "languages.csv"),
-      new TreeNode(
-        objectsForCsv.filter(obj => isLanguage(obj.type))
-      ).toDelimited(",", colNamesForCsv)
-    )
-  }
+    const { colNamesForCsv, objectsForCsv, columnDocumentation } = pldbBase
 
-  buildDocsCommand() {
-    const { columnDocumentation } = pldbBase
-    const langCount = pldbBase.topLanguages.length
-    const colCount = columnDocumentation.length
-    const entityCount = pldbBase.length
+    const pldbCsv = new TreeNode(objectsForCsv).toDelimited(",", colNamesForCsv)
+    Disk.write(path.join(publishedRootFolder, "pldb.csv"), pldbCsv)
+
+    const langsCsv = new TreeNode(
+      objectsForCsv.filter(obj => isLanguage(obj.type))
+    ).toDelimited(",", colNamesForCsv)
+    Disk.write(path.join(publishedRootFolder, "languages.csv"), langsCsv)
 
     const columnTable =
       `pipeTable\n ` +
@@ -264,19 +255,26 @@ ${text}`
 
     // todo: add linkify to scroll
     const page = new TreeNode(
-      Disk.read(path.join(blogDir, "docs", "columns.scroll"))
-        .replace("LANG_COUNT", langCount)
-        .replace("COL_COUNT", colCount)
-        .replace("ENTITY_COUNT", entityCount)
+      Disk.read(path.join(blogDir, "docs", "csv.scroll"))
+        // todo use scroll vars
+        .replace("LANG_COUNT", pldbBase.topLanguages.length)
+        .replace("COL_COUNT", columnDocumentation.length)
+        .replace("ENTITY_COUNT", pldbBase.length)
+        .replace(
+          "ENTITIES_FILE_SIZE_UNCOMPRESSED",
+          numeral(pldbCsv.length).format("0.0b")
+        )
+        .replace(
+          "LANGS_FILE_SIZE_UNCOMPRESSED",
+          numeral(langsCsv.length).format("0.0b")
+        )
     )
     replaceNext(page, "comment autogenColumnDocs", columnTable)
-    Disk.write(
-      path.join(publishedDocsFolder, "columns.scroll"),
-      page.toString()
-    )
+    Disk.write(path.join(publishedDocsFolder, "csv.scroll"), page.toString())
 
     new ScrollFolder(publishedDocsFolder).buildFiles()
 
+    // todo: remove?
     // Copy grammar to docs folder for easy access in things like TN Designer.
     Disk.write(
       path.join(publishedDocsFolder, "pldb.grammar"),

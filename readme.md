@@ -17,7 +17,7 @@ The PLDB database is freely available:
 console.log(require("pldb").javascript.appeared)
 ```
 
-Documentation for the columns is available here: https://pldb.com/docs/columns.html.
+Documentation for the CSV is available here: https://pldb.com/docs/csv.html.
 
 ## To add a new language
 
