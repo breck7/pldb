@@ -112,6 +112,9 @@ class PLDBEditServer extends TreeBaseServer {
 				)}`
 			)
 
+		if (parsed.length < 3)
+			throw new Error(`Must provide at least 3 facts about the language.`)
+
 		return {
 			content: this._folder.prettifyContent(content)
 		}
@@ -266,12 +269,12 @@ html
 			res.send(this.scrollToHtml(editForm(undefined, "Add a language")))
 		)
 
-		const errorForm = (submission, err, res) => {
+		const errorForm = (submission, error, res) => {
 			res.status(500)
 			res.send(
 				this.scrollToHtml(
 					`html
- <div style="color: red;">Error: ${err}</div>
+ <div style="color: red;">${error}</div>
 ${editForm(submission, "Error")}`
 				)
 			)
@@ -334,9 +337,9 @@ ${editForm(submission, "Error")}`
 				// todo: cleanup cacheing issues
 				pldbBase.clearMemos()
 				res.redirect(`edit/${newFile.id}#commit=${commitResult.commitHash}`)
-			} catch (err) {
-				console.error(err)
-				errorForm(content, err, res)
+			} catch (error) {
+				console.error(error)
+				errorForm(content, error, res)
 			}
 		})
 
@@ -372,9 +375,9 @@ ${editForm(submission, "Error")}`
 					)
 
 				res.redirect(`${id}#commit=${commitResult.commitHash}`)
-			} catch (err) {
-				console.error(err)
-				errorForm(content, err, res)
+			} catch (error) {
+				console.error(error)
+				errorForm(content, error, res)
 			}
 		})
 	}
