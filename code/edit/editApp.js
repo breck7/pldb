@@ -130,7 +130,7 @@ githubRepo https://github.com/elixir-lang/elixir</pre>`
 
 	changeAuthor() {
 		const newValue = prompt(
-			`Enter author name formatted like "Breck Yunits <breck7@gmail.com>". This information be recorded in the public Git log."`,
+			`Enter author name and email formatted like "Breck Yunits <by@breckyunits.com>". This information is recorded in the public Git log."`,
 			this.author
 		)
 		if (newValue === "") this.saveAuthor(defaultAuthor)
