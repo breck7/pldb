@@ -4,7 +4,7 @@
   "scripts": {
     "build": "./code/SiteBuilder.ts buildAll",
     "clean": "cd code; tsc --build --clean",
-    "cloc": "cloc --vcs git .",
+    "cloc": "cloc --vcs git . --read-lang-def=code/clocLangs.txt",
     "checkLinks": "linkinator -r https://pldb.com > ignore/brokenLinks.txt",
     "deploy": "echo 'Rsyncing the contents of pldb.local/ to the /var/www/html folder on the PLDB server'; rsync -vr pldb.local/* pldb@pldb.com:/var/www/html/",
     "exampleCount": "xsv select title,appeared,type,rank,exampleCount pldb.local/languages.csv > ignore/exampleCounts.csv",
