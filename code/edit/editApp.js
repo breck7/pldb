@@ -1,9 +1,47 @@
-const defaultAuthor = "Anon <anon@pldb.com>"
 const htmlEscaped = content => content.replace(/</g, "&lt;")
-function capitalizeFirstLetter(string) {
-	return string.charAt(0).toUpperCase() + string.slice(1)
+const capitalizeFirstLetter = string =>
+	string.charAt(0).toUpperCase() + string.slice(1)
+// generate a random alpha numeric hash:
+const getRandomCharacters = length => {
+	const characters =
+		"ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789"
+	let result = ""
+	for (let i = 0; i < length; i++) {
+		result += characters.charAt(Math.floor(Math.random() * characters.length))
+	}
+	return result
 }
+const genDefaultAuthor = () => {
+	let user = "region.platform.vendor"
+	try {
+		const region = Intl.DateTimeFormat().resolvedOptions().timeZone ?? ""
+		const platform =
+			navigator.userAgentData?.platform ?? navigator.platform ?? ""
+		const vendor = navigator.vendor ?? ""
+		// make sure email address is not too long. i think 64 is the limit.
+		// so here length is max 45 + 7 + 4 + 4.
+		user = [region, platform, vendor]
+			.map(str => str.replace(/[^a-zA-Z]/g, "").substr(0, 15))
+			.join(".")
+	} catch (err) {
+		console.error(err)
+	}
+	const hash = getRandomCharacters(7)
+	return `Anon <${`anon.${user}.${hash}`}@pldb.com>`
+}
+const defaultAuthor = genDefaultAuthor()
+
 class EditApp {
+	get author() {
+		try {
+			return this.store.getItem("author") || defaultAuthor
+		} catch (err) {
+			console.error(err)
+		}
+
+		return defaultAuthor
+	}
+
 	start() {
 		if (document.getElementById("submitButton")) this.startForm()
 		if (this.route === "create") this.startCreateForm()
@@ -68,30 +106,30 @@ githubRepo https://github.com/elixir-lang/elixir</pre>`
 		return window.localStorage
 	}
 
-	get author() {
-		let author = defaultAuthor
-
+	saveAuthorIfUnsaved() {
 		try {
-			const changedAuthor = this.store.getItem("author")
-			author = changedAuthor ?? author
+			if (!this.store.getItem("author")) this.saveAuthor(defaultAuthor)
 		} catch (err) {
 			console.error(err)
 		}
-		return author
 	}
 
-	setAuthor(name) {
-		this.store.setItem("author", name)
-		this.updateAuthor()
+	saveAuthor(name) {
+		try {
+			this.store.setItem("author", name)
+		} catch (err) {
+			console.error(err)
+		}
 	}
 
 	changeAuthor() {
 		const newValue = prompt(
-			`Enter new author name in format like ${defaultAuthor}`,
-			this.author || defaultAuthor
+			`Enter author name formatted like "Breck Yunits <breck7@gmail.com>". This information be recorded in the public Git log."`,
+			this.author
 		)
-		if (newValue === "") this.setAuthor(defaultAuthor)
-		if (newValue) this.setAuthor(newValue)
+		if (newValue === "") this.saveAuthor(defaultAuthor)
+		if (newValue) this.saveAuthor(newValue)
+		this.updateAuthor()
 	}
 
 	get content() {

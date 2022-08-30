@@ -41,7 +41,7 @@ html
  Submitting as: <span id="authorLabel"></span> <a href="#" onClick="app.changeAuthor()">change</a>
  </div>
  <br>
- <input type="hidden" name="author" id="author"><input type="submit" value="Save" id="submitButton"/>
+ <input type="hidden" name="author" id="author"><input type="submit" value="Save" id="submitButton" onClick="app.saveAuthorIfUnsaved()"/>
  </form>`
 
 const cssLibs = "node_modules/jtree/sandbox/lib/codemirror.css node_modules/jtree/sandbox/lib/codemirror.show-hint.css editApp.css"
