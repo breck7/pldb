@@ -1,5 +1,7 @@
 title Superjson
+appeared 2014
 type dataNotation
+creators Matthew Mueller
 description A superset of JSON adding: undefined bigint Date RegExp Set Map Error
 
 supersetOf json
@@ -22,5 +24,3 @@ githubRepo https://github.com/blitz-js/superjson
  updated 2022
  description Safely serialize JavaScript expressions to a superset of JSON, which includes Dates, BigInts, and more.
  issues 18
-appeared 2014
-creators Matthew Mueller

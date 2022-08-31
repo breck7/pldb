@@ -5,6 +5,7 @@ creators Karl Robillard
 description Boron is a scripting language similar to REBOL. The interpreter is a C library which may be copied under the terms of the LGPLv3.
 website http://urlan.sourceforge.net/boron/
 fileExtensions b sb
+
 influencedBy rebol
 
 features
@@ -37,11 +38,11 @@ features
   {He said "That looks good!"}
  hasThreads true
 
-booleanTokens true false
 lineCommentToken ;
 multiLineCommentTokens /* */
 printToken print probe
 stringToken " { } {{ }}
+booleanTokens true false
 
 fileType text
 isOpenSource true

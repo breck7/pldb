@@ -1,6 +1,7 @@
 title Taichi
 appeared 2019
 type pl
+creators Yuanming Hu
 description Taichi Lang is an open-source, imperative, parallel programming language for high-performance numerical computation. It is embedded in Python and uses just-in-time (JIT) compiler frameworks, for example LLVM, to offload the compute-intensive Python code to the native GPU or CPU instructions.
 website https://taichi-lang.org/
 reference http://taichi.graphics/wp-content/uploads/2019/09/taichi_lang.pdf
@@ -36,4 +37,3 @@ githubRepo https://github.com/taichi-dev/taichi
  updated 2022
  description Productive & portable high-performance programming in Python.
  issues 581
-creators Yuanming Hu
