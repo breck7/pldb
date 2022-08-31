@@ -222,6 +222,7 @@ ${scrollContent}
 		const { errors } = folder
 
 		const listAll = this._folder.topLanguages
+			.slice(0, 100)
 			.map(file => `<a href="edit/${file.id}">${file.id}</a>`)
 			.join(" · ")
 
