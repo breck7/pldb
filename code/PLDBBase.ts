@@ -501,9 +501,9 @@ class PLDBFile extends TreeBaseFile {
     ])
   }
 
-    @imemo
+  @imemo
   get typeName() {
-    let {type} = this
+    let { type } = this
     type = typeNames[type] || type
     return lodash.startCase(type).toLowerCase()
   }
@@ -877,6 +877,24 @@ class PLDBBaseFolder extends TreeBaseFolder {
     return this.columnDocumentation.map(col => col.Column)
   }
 
+  // todo: is there already a way to do this in jtree?
+  getFilePathWhereGrammarNodeIsDefined(nodeTypeId: string) {
+    const { grammarFileMap } = this
+    const regex = new RegExp(`^${nodeTypeId}`, "gm")
+    return Object.keys(grammarFileMap).find(grammarFilePath => {
+      if (grammarFileMap[grammarFilePath].match(regex)) return grammarFilePath
+    })
+  }
+
+  @imemo
+  get grammarFileMap() {
+    const map = {}
+    this.grammarFilePaths.forEach(filepath => {
+      map[filepath] = Disk.read(filepath)
+    })
+    return map
+  }
+
   @imemo
   get columnDocumentation() {
     // Return columns with documentation sorted in the most interesting order.
@@ -899,6 +917,10 @@ class PLDBBaseFolder extends TreeBaseFolder {
         const Example = reductions.mode
         const Description = colDef.get("description")
         const Source = colDef.getFrom("string sourceDomain")
+        const Definition = path.basename(
+          this.getFilePathWhereGrammarNodeIsDefined(colDef.getLine())
+        )
+        const DefinitionLink = `https://github.com/breck7/pldb/blob/main/database/grammar/${Definition}`
         const SourceLink = Source ? `https://${Source}` : ""
         return {
           Column,
@@ -911,7 +933,9 @@ class PLDBBaseFolder extends TreeBaseFolder {
           Example,
           Source,
           SourceLink,
-          Description
+          Description,
+          Definition,
+          DefinitionLink
         }
       })
       .filter(col => col.Values)

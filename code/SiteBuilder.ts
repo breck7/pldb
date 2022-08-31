@@ -244,7 +244,9 @@ ${text}`
       "Example",
       "Description",
       "Source",
-      "SourceLink"
+      "SourceLink",
+      "Definition",
+      "DefinitionLink"
     ]
 
     Disk.write(
