@@ -15,7 +15,7 @@ html
   </style>
 
 aftertext
- Download: https://pldb.com/languages.csv
+ Download it from https://pldb.com/languages.csv
  https://pldb.com/languages.csv https://pldb.com/languages.csv
 
 aftertext
@@ -24,12 +24,12 @@ aftertext
 
 section Column Documentation
 
-aftertext
- Information about every column is in table below and also available as csv.
- link BASE_URL/columns.csv csv
-
 comment autogenColumnDocs
 pipeTable
+
+aftertext
+ The table above is also available as csv.
+ link BASE_URL/columns.csv csv
 
 section pldb.csv file
 

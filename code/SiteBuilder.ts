@@ -291,11 +291,6 @@ ${text}`
     Disk.write(path.join(codeDir, "package", "pldb.json"), str)
   }
 
-  // buildTypesFile() {
-  //   // todo: update/remove?
-  //   Disk.write(path.join(codeDir, "types.ts"), pldbBase.typesFile)
-  // }
-
   formatDatabaseCommand() {
     pldbBase.forEach(file => file.prettifyAndSave())
   }

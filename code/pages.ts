@@ -4,7 +4,6 @@ const numeral = require("numeral")
 
 import { jtree } from "jtree"
 const { TreeNode } = jtree
-import { pldbNode, pldbNodeKeywords } from "./types"
 import { PLDBFile } from "./PLDBBase"
 
 import {
@@ -20,7 +19,6 @@ const currentYear = new Date().getFullYear()
 class LanguagePageTemplate {
   constructor(file: PLDBFile) {
     this.file = file
-    this.object = file.toObject()
     this.id = this.file.id
   }
 
@@ -29,16 +27,13 @@ class LanguagePageTemplate {
     return `<a href="${file.permalink}">${file.title}</a>`
   }
 
-  protected object: pldbNode
   protected file: PLDBFile // todo: fix type
   protected id: string
 
   get trendingRepos() {
     const { file } = this
     const { title } = file
-    const count = file.get(
-      `${pldbNodeKeywords.githubLanguage} trendingProjectsCount`
-    )
+    const count = file.get(`$githubLanguage trendingProjectsCount`)
     if (parseInt(count) > 0) {
       const table = file.getNode("githubLanguage trendingProjects")
       const githubId = file.get("githubLanguage")
@@ -326,10 +321,10 @@ ${facts.map(fact => ` - ${fact}`).join("\n")}`
   }
 
   get description() {
-    const { typeName, title, creators } = this.file
-    const { object } = this
-    let akaMessage = object.standsFor ? `, aka ${object.standsFor},` : ""
-    const appeared = object.appeared
+    const {file} = this
+    const { typeName, title, creators, appeared } = file
+    const standsFor = file.get("standsFor")
+    let akaMessage = standsFor ? `, aka ${standsFor},` : ""
 
     let creatorsStr = ""
     if (creators.length) {
@@ -355,34 +350,33 @@ ${facts.map(fact => ` - ${fact}`).join("\n")}`
   }
 
   get typeLink() {
-    return `<a href="../lists/languages.html?filter=${this.object.type}">${this.file.typeName}</a>`
+    return `<a href="../lists/languages.html?filter=${this.file.type}">${this.file.typeName}</a>`
   }
 
   get descriptionSection() {
-    const { file, object } = this
+    const { file } = this
     let description = ""
+    const authoredDescription = file.get("description")
     const wikipediaSummary = file.get("wikipedia summary")
     const ghDescription = file.get("githubRepo description")
-    const wpLink = file.get(pldbNodeKeywords.wikipedia)
+    const wpLink = file.get(`wikipedia`)
     if (wikipediaSummary)
       description =
         wikipediaSummary
           .split(". ")
           .slice(0, 3)
           .join(". ") + `. <a href="${wpLink}">Read more on Wikipedia...</a>`
-    else if (object.description) description = object.description
+    else if (authoredDescription) description = authoredDescription
     else if (ghDescription) description = ghDescription
     return `paragraph
  ${description}`
   }
 
   get facts() {
-    const { object, file } = this
-    const { title } = file
+    const { file } = this
+    const { title, website } = file
 
     const facts = []
-
-    const website = object.website
     if (website) facts.push(`the <a href="${website}">${title} website</a>`)
 
     const wikipediaLink = file.get("wikipedia")
@@ -403,7 +397,7 @@ ${facts.map(fact => ` - ${fact}`).join("\n")}`
       )
     }
 
-    const gitlabRepo = object.gitlab
+    const gitlabRepo = file.get("gitlabRepo")
     if (gitlabRepo) facts.push(`<a href="${gitlabRepo}">${title} on GitLab</a>`)
 
     const githubRepoCount = file.get("githubLanguage repos")
@@ -467,7 +461,7 @@ ${facts.map(fact => ` - ${fact}`).join("\n")}`
           .join(" & ")}`
       )
 
-    const twitter = object.twitter
+    const twitter = file.get("twitter")
     if (twitter)
       facts.push(
         `the ${title} team is on <a href="https://twitter.com/${twitter}">Twitter</a>`
@@ -683,14 +677,14 @@ ${facts.map(fact => ` - ${fact}`).join("\n")}`
     const domainRegistered = file.get("domainName registered")
     if (domainRegistered)
       facts.push(
-        `<a href="${object.website}">${file.get(
+        `<a href="${website}">${file.get(
           "domainName"
         )}</a> was registered in ${domainRegistered}`
       )
 
     const wpRelated = file.get("wikipedia related")
     const seeAlsoLinks = wpRelated ? wpRelated.split(" ") : []
-    const related = object.related
+    const related = file.get("related")
     if (related) related.split(" ").forEach(id => seeAlsoLinks.push(id))
 
     if (seeAlsoLinks.length)
@@ -780,9 +774,9 @@ code
   }
 
   get kpiBar() {
-    const { file, object } = this
-    const appeared = object.appeared
+    const { file } = this
     const {
+      appeared,
       numberOfUsers,
       bookCount,
       paperCount,
@@ -804,7 +798,7 @@ code
             file.langRankDebug
           }">on PLDB</span>`
         : `#${file.rank + 1} on PLDB`,
-      isNaN(appeared) ? "" : `${currentYear - appeared} Years Old`,
+      appeared ? `${currentYear - appeared} Years Old` : "",
       users
         ? `${users} <span title="Crude user estimate from a linear model.">Users</span>`
         : "",
@@ -835,7 +829,6 @@ class FeaturePageTemplate extends LanguagePageTemplate {
 
   get description() {
     const { typeName, title } = this.file
-    const { object } = this
     const isOrAre = title.endsWith("s") ? "are" : "is"
 
     return `${title} ${isOrAre} ${getIndefiniteArticle(typeName)} ${
