@@ -20,6 +20,7 @@ Follow the same setup instructions as here (stopping before Nginx installation):
 
 ```
 sudo apt-get install git
+sudo apt-get install git cloc
 sudo curl -L https://raw.githubusercontent.com/tj/n/master/bin/n -o n
 sudo bash n lts
 sudo npm install -g n
