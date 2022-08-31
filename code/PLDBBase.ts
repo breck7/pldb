@@ -878,12 +878,20 @@ class PLDBBaseFolder extends TreeBaseFolder {
   }
 
   // todo: is there already a way to do this in jtree?
-  getFilePathWhereGrammarNodeIsDefined(nodeTypeId: string) {
+  getFilePathAndLineNumberWhereGrammarNodeIsDefined(nodeTypeId: string) {
     const { grammarFileMap } = this
     const regex = new RegExp(`^${nodeTypeId}`, "gm")
-    return Object.keys(grammarFileMap).find(grammarFilePath => {
-      if (grammarFileMap[grammarFilePath].match(regex)) return grammarFilePath
+    let filePath
+    let lineNumber
+    Object.keys(grammarFileMap).some(grammarFilePath => {
+      const code = grammarFileMap[grammarFilePath]
+      if (grammarFileMap[grammarFilePath].match(regex)) {
+        filePath = grammarFilePath
+        lineNumber = code.split("\n").indexOf(nodeTypeId)
+        return true
+      }
     })
+    return { filePath, lineNumber }
   }
 
   @imemo
@@ -917,10 +925,12 @@ class PLDBBaseFolder extends TreeBaseFolder {
         const Example = reductions.mode
         const Description = colDef.get("description")
         const Source = colDef.getFrom("string sourceDomain")
-        const Definition = path.basename(
-          this.getFilePathWhereGrammarNodeIsDefined(colDef.getLine())
+        const sourceLocation = this.getFilePathAndLineNumberWhereGrammarNodeIsDefined(
+          colDef.getLine()
         )
-        const DefinitionLink = `https://github.com/breck7/pldb/blob/main/database/grammar/${Definition}`
+        const Definition = path.basename(sourceLocation.filePath)
+        const DefinitionLink = `https://github.com/breck7/pldb/blob/main/database/grammar/${Definition}#L${sourceLocation.lineNumber +
+          1}`
         const SourceLink = Source ? `https://${Source}` : ""
         return {
           Column,
