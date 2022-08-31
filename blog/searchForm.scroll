@@ -1,0 +1,11 @@
+importOnly
+
+css
+ .scrollFilePageComponent { text-align: center;}
+ 
+
+html
+ <div class="pldbSearchForm"><form style="display:inline;" method="get" action="https://edit.pldb.com/search"><input name="q" placeholder="Search" autocomplete="off" type="search" id="searchFormInput"><input class="pldbSearchButton" type="submit" value="Search"></form></div>
+
+html
+ <script>document.addEventListener("DOMContentLoaded", evt => initSearchAutocomplete("searchFormInput"))</script>

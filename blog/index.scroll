@@ -1,3 +1,27 @@
-template blank
+import settings.scroll
+import searchForm.scroll
+
+replace BASE_URL .
+
+import whatsNew.scroll
+
 html
- <meta http-equiv="Refresh" content="0; url='posts/index.html" />
+ <a class="pldbHomepageLink" href="./lists/top500.html">Top Languages</a>
+
+paragraph
+ TOP_LANGS
+
+html
+ <br><br><br>
+
+html
+ <a class="pldbHomepageLink" href="./posts/index.html">New Posts</a>
+
+paragraph
+ NEW_POSTS
+
+html
+ <br><br><br>
+
+maxColumns 1
+columnWidth 160

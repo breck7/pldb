@@ -141,3 +141,39 @@ a:hover {
   border: 1px solid grey;
   margin-top: 8px;
 }
+
+.pldbSearchForm {
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
+
+.pldbSearchForm #searchFormInput {
+  width: 500px;
+  height: 50px;
+  border: 0;
+  border-radius: 3px;
+  font-size: 16px;
+}
+
+.pldbSearchForm .pldbSearchButton {
+  height: 50px;
+  font-size: 16px;
+  border: 0;
+  color: rgb(11, 11, 11);
+  cursor: pointer;
+  background-color: rgb(237, 237, 237);
+}
+
+.pldbSearchForm .pldbSearchButton:hover {
+  background-color: rgb(207, 207, 207);
+}
+
+.pldbSearchForm .pldbSearchButton:active {
+  background-color: rgb(187, 187, 187);
+}
+
+.pldbHomepageLink {
+  color: #000;
+  text-decoration: none;
+  display: block;
+}

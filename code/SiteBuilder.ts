@@ -34,6 +34,7 @@ import {
   benchmarkResults,
   listGetters,
   lastCommitHashInFolder,
+  imemo,
   runCommand
 } from "./utils"
 
@@ -46,6 +47,7 @@ class SiteBuilder {
     this.buildPagesCommand()
     this.buildListsCommand()
     this.buildPostsCommand()
+    this.buildWhatsNewComponent()
     this.buildHomepageCommand()
     this.buildSingleGrammarFile()
     this.buildCsvsCommand()
@@ -124,6 +126,32 @@ class SiteBuilder {
     new ScrollFolder(publishedListsFolder).buildFiles()
   }
 
+  @imemo get postsScroll() {
+    return new ScrollFolder(publishedPostsFolder)
+  }
+
+  @benchmark
+  buildWhatsNewComponent() {
+    const { postsScroll } = this
+
+    const topLangs = pldbBase.topLanguages
+      .slice(0, 10)
+      .map(file => file.link)
+      .join(" · ")
+
+    const newPosts = postsScroll.files
+      .slice(0, 5)
+      .map(file => `<a href="./posts/${file.permalink}">${file.title}</a>`)
+      .join("<br>")
+
+    Disk.write(
+      path.join(publishedRootFolder, "whatsNew.scroll"),
+      `importOnly
+replace TOP_LANGS ${topLangs}
+replace NEW_POSTS ${newPosts}`
+    )
+  }
+
   @benchmark
   buildHomepageCommand() {
     new ScrollFolder(publishedRootFolder).buildFiles()
@@ -136,7 +164,7 @@ class SiteBuilder {
 
   @benchmark
   buildPostsCommand() {
-    new ScrollFolder(publishedPostsFolder).buildFiles()
+    this.postsScroll.buildFiles()
   }
 
   @benchmark

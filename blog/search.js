@@ -1,7 +1,8 @@
 let searchIndex = false
-document.addEventListener("DOMContentLoaded", function(event) {
+
+const initSearchAutocomplete = elementId => {
   autocomplete({
-    input: document.getElementById("searchBox"),
+    input: document.getElementById(elementId),
     minLength: 1,
     emptyMsg: "No matching entities found",
     preventSubmit: true,
@@ -38,4 +39,8 @@ document.addEventListener("DOMContentLoaded", function(event) {
         }`
     }
   })
-})
+}
+
+document.addEventListener("DOMContentLoaded", evt =>
+  initSearchAutocomplete("searchBox")
+)

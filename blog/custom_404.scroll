@@ -6,11 +6,11 @@ columnWidth 60
 aftertext
  Sorry but we cannot find the requested page on PLDB: a Programming Language Database.
 
-html
- <div>Search PLDB for <form style="display:inline;" method="get" action="https://edit.pldb.com/search"><input name="q" placeholder="Search" autocomplete="off" type="search" id="notFoundSearchLink"><input type="submit" value="Search"></form></div>
- <script>document.getElementById("notFoundSearchLink").value = (window.location.pathname + "").split("/").pop().replace(/\.[^\.]+$/, "").replace(/</g, "&lt;")
- </script>
+import searchForm.scroll
 
+html
+ <script>document.getElementById("searchFormInput").value = (window.location.pathname + "").split("/").pop().replace(/\.[^\.]+$/, "").replace(/</g, "&lt;")
+ </script>
 
 aftertext
  You can report a broken link on the PLDB GitHub.
