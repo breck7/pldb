@@ -145,7 +145,7 @@ ${scrollContent}
 	compileGrammar() {
 		// todo: cleanup
 		jtree.compileGrammarForBrowser(
-			path.join(baseFolder, "pldb.local", "docs", "pldb.grammar"),
+			path.join(baseFolder, "pldb.local", "pldb.grammar"),
 			__dirname + "/",
 			false
 		)
