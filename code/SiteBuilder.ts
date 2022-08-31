@@ -233,20 +233,26 @@ ${text}`
     ).toDelimited(",", colNamesForCsv)
     Disk.write(path.join(publishedRootFolder, "languages.csv"), langsCsv)
 
+    const columnsTree = new TreeNode(columnDocumentation)
+    const columnColumns = [
+      "Index",
+      "Column",
+      "Values",
+      "Coverage",
+      "Example",
+      "Description",
+      "Source",
+      "SourceLink"
+    ]
+
+    Disk.write(
+      path.join(publishedRootFolder, "columns.csv"),
+      columnsTree.toDelimited(",", columnColumns)
+    )
+
     const columnTable =
       `pipeTable\n ` +
-      new TreeNode(columnDocumentation)
-        .toDelimited("|", [
-          "Index",
-          "Column",
-          "Values",
-          "Coverage",
-          "Example",
-          "Description",
-          "Source",
-          "SourceLink"
-        ])
-        .replace(/\n/g, "\n ")
+      columnsTree.toDelimited("|", columnColumns).replace(/\n/g, "\n ")
 
     // todo: add linkify to scroll
     const page = new TreeNode(

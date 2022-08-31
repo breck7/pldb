@@ -31,6 +31,10 @@ Easy method: https://edit.pldb.com/
 
 Advanced method: Edit the corresponding `database/things/*.pldb` file and send a pull request.
 
+## To add a new column
+
+Advanced method: Edit or create a new file in `database/grammar` and add at least 1 example to an entity in `database/things` and send a pull request.
+
 ## To build the full site locally
 
 ```
