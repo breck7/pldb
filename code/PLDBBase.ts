@@ -922,15 +922,23 @@ class PLDBBaseFolder extends TreeBaseFolder {
         const reductions = col.getReductions()
         const Column = col.getColumnName()
         const colDef = colNameToGrammarDefMap.get(Column)
+        const colDefId = colDef.getLine()
         const Example = reductions.mode
-        const Description = colDef.get("description")
+        const Description =
+          colDefId !== "errorNode" ? colDef.get("description") : "computed"
         const Source = colDef.getFrom("string sourceDomain")
         const sourceLocation = this.getFilePathAndLineNumberWhereGrammarNodeIsDefined(
-          colDef.getLine()
+          colDefId
         )
-        const Definition = path.basename(sourceLocation.filePath)
-        const DefinitionLink = `https://github.com/breck7/pldb/blob/main/database/grammar/${Definition}#L${sourceLocation.lineNumber +
-          1}`
+        const Definition =
+          colDefId !== "errorNode"
+            ? path.basename(sourceLocation.filePath)
+            : "A computed value"
+        const DefinitionLink =
+          colDefId !== "errorNode"
+            ? `https://github.com/breck7/pldb/blob/main/database/grammar/${Definition}#L${sourceLocation.lineNumber +
+                1}`
+            : ""
         const SourceLink = Source ? `https://${Source}` : ""
         return {
           Column,
