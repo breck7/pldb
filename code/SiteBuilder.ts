@@ -75,11 +75,13 @@ class SiteBuilder {
   buildSettingsFileCommand() {
     // todo: can we refactor scroll settings so we no longer need this?
     const lastHash = lastCommitHashInFolder()
-    const builtOn = dayjs().format("YYYY")
+    const builtOnYear = dayjs().format("YYYY")
+    const builtOnDay = dayjs().format("MM/DD/YYYY")
     const tree = new TreeNode(Disk.read(settingsFilePath))
 
     tree.getNodeByColumns("replace", "LAST_HASH").setWord(2, lastHash)
-    tree.getNodeByColumns("replace", "BUILT_ON").setWord(2, builtOn)
+    tree.getNodeByColumns("replace", "BUILT_IN_YEAR").setWord(2, builtOnYear)
+    tree.getNodeByColumns("replace", "BUILT_ON_DAY").setWord(2, builtOnDay)
 
     Disk.write(
       path.join(publishedRootFolder, "settings.scroll"),

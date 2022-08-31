@@ -52,6 +52,19 @@ exampleCodeHeaderNode
   compile() {
    return `<div class="exampleCodeHeader">${this.getContent()}</div>`
   }
+bashNode
+ cruxFromId
+ description Run a bash oneliner via nodejs and dumps stdout to pre tag.
+ catchAllCellType stringCell
+ extends abstractScrollNode
+ javascript
+  compile() {
+   const command = this.getContent()
+   const file = this.getRootNode().file
+   const cwd = file.folder.folder
+   const output = require("child_process").execSync(command, {cwd})
+   return `<div class="exampleCodeHeader">${command}</div><code class="scrollCodeBlockComponent">${output.toString().trim()}</code>`
+  }
 monacoEditorNode
  cruxFromId
  extends abstractScrollNode

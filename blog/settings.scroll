@@ -2,7 +2,8 @@ importOnly
 
 replaceDefault BASE_URL 
 replaceDefault EDIT_URL https://edit.pldb.com
-replace BUILT_ON 2022
+replace BUILT_IN_YEAR 2022
+replace BUILT_ON_DAY 8/30/2022
 replace LAST_HASH 95cae71030d020676f0c3e88802c8bc214549383
 
 siteTitle PLDB

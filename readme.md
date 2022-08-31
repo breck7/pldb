@@ -54,27 +54,7 @@ The blog content is in the `blog` folder.
 
 The `code` folder contains importer scripts and other code for the database and site.
 
-You can see language stats for this repo by running `npm run cloc`. As of 8/29/2022:
-
-```
--------------------------------------------------------------------------------
-Language                     files          blank        comment           code
--------------------------------------------------------------------------------
-PLDB                          4664          21608              0         129094
-TypeScript                      27           1028            118           5912
-Scroll                          61            416              0           2671
-Grammar                         58              0              0           1455
-JSON                             6              0              0            739
-JavaScript                       6             25             19            338
-CSS                              3              6              0            150
-Markdown                         6             52              0            146
-Python                           2             17              6             68
-Bourne Shell                    10              2              4             41
-SVG                              1              0              0              1
--------------------------------------------------------------------------------
-SUM:                          4844          23154            147         140615
--------------------------------------------------------------------------------
-```
+You can see the `cloc` language stats on this repo at https://pldb.com/pages/about.html.
 
 ## To cite PLDB
 

@@ -58,6 +58,15 @@ aftertext
  This site is powered by information and software from so many people and organizations, a few of which are listed on the acknowledgements page.
  link acknowledgements.html acknowledgements
 
+subsection Cloc Stats
+
+aftertext
+ Below are the cloc stats for the pldb repo as of BUILT_ON_DAY.
+ link BASE_URL/languages/cloc.html cloc
+ https://github.com/breck7/pldb pldb repo
+
+bash cd ..; cd ..; cloc --quiet --vcs git . --read-lang-def=code/clocLangs.txt
+
 subsection Citation
 
 aftertext
