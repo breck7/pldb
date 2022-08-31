@@ -31,7 +31,6 @@ errorNode
 fileNameCell
  highlightScope string
 abstractFactNode
- abstract
  cells keywordCell
 abstractSectionNode
  extends abstractFactNode
@@ -42,54 +41,43 @@ abstractFlagNode
  cells keywordCell
  single
 abstractArrayNode
- abstract
  extends abstractFactNode
  catchAllCellType stringCell
  cells keywordCell
  contentDelimiter  
 abstractPermalinksNode
- abstract
  catchAllCellType permalinkCell
  extends abstractArrayNode
  description Links to other entities on PLDB.
 abstractUrlNode
  cells keywordCell urlCell
  extends abstractFactNode
- abstract
 abstractGitRepoUrlNode
  extends abstractUrlNode
- abstract
  single
  cruxFromId
 abstractDecimalNode
  cells keywordCell numberCell
  extends abstractFactNode
- abstract
 abstractIntNode
  cells keywordCell intCell
  extends abstractFactNode
- abstract
 abstractCountNode
- abstract
  extends abstractIntNode
 abstractPopulationCountNode
- abstract
  extends abstractCountNode
 abstractYearNode
  cells keywordCell yearCell
  extends abstractIntNode
- abstract
 abstractAnnualPopulationCountMapNode
  catchAllNodeType annualPopulationCountNode
  description A map of counts, one per year.
  extends abstractFactNode
- abstract
  single
 abstractAnnualRankMapNode
  catchAllNodeType annualRankNode
  description A map of ranks, one per year.
  extends abstractFactNode
- abstract
  single
 annualRankNode
  cells yearCell rankCell
@@ -99,36 +87,29 @@ annualPopulationCountNode
  uniqueFirstWord
 abstractBooleanNode
  cells keywordCell boolCell
- abstract
 abstractStringNode
  catchAllCellType stringCell
  extends abstractFactNode
- abstract
 abstractMultiwordGuidNode
- abstract
  cruxFromId
  cells keywordCell
  catchAllCellType externalGuidCell
  extends abstractFactNode
  single
 abstractOneWordGuidNode
- abstract
  cells keywordCell externalGuidCell
  extends abstractFactNode
  single
  cruxFromId
 abstractUrlGuidNode
- abstract
  cells keywordCell urlCell
  extends abstractFactNode
 abstractCodeNode
- abstract
  catchAllNodeType lineOfCodeNode
  extends abstractFactNode
  boolean includeChildrenInCsv false
  baseNodeType blobNode
 abstractDelimitedBlobNode
- abstract
  baseNodeType blobNode
  boolean includeChildrenInCsv false
  extends abstractFactNode

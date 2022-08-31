@@ -7,11 +7,9 @@ githubLanguageNode
 abstractGitHubLanguageNode
  extends abstractFactNode
  cells keywordCell stringCell
- abstract
  single
 abstractGitHubLanguageArrayNode
  extends abstractArrayNode
- abstract
  single
 githubLanguageFileExtensionsNode
  extends fileExtensionsNode
