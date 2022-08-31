@@ -433,7 +433,7 @@ class PLDBFile extends TreeBaseFile {
 
   @imemo
   get website(): string {
-    return this.get("website") || this.id
+    return this.get("website")
   }
 
   @imemo

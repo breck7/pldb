@@ -136,7 +136,7 @@ class SiteBuilder {
 
     const topLangs = pldbBase.topLanguages
       .slice(0, 10)
-      .map(file => file.link)
+      .map(file => `<a href="./languages/${file.permalink}">${file.title}</a>`)
       .join(" · ")
 
     const newPosts = postsScroll.files
