@@ -74,11 +74,7 @@ const runCommand = (instance, command = "", param = undefined) => {
 
   const commandAsNumber = parseInt(command) - 1
 
-  if (
-    command.match(/^\d$/) &&
-    !isNaN(commandAsNumber) &&
-    allCommands[commandAsNumber]
-  )
+  if (command.match(/^\d+$/) && allCommands[commandAsNumber])
     return run(allCommands[commandAsNumber])
 
   console.log(
@@ -332,7 +328,7 @@ const getIndefiniteArticle = phrase => {
 
 const htmlEscaped = (content: string) => content.replace(/</g, "&lt;")
 
-let benchmarkResults = ""
+const benchmarkResults = []
 
 const benchmark: MethodDecorator = (
   target: Object,
@@ -347,7 +343,10 @@ const benchmark: MethodDecorator = (
     const start = meter.now()
     const result: any = action()
     const elapsed = lodash.round((meter.now() - start) / 1000, 3)
-    benchmarkResults += `Time for ${String(prop)}: ${elapsed}s\n`
+    benchmarkResults.push({
+      methodName: String(prop),
+      timeInSeconds: elapsed
+    })
     return result
   }
 }

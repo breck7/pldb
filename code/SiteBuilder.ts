@@ -30,6 +30,7 @@ const publishedLanguagesFolder = path.join(publishedRootFolder, "languages") // 
 import {
   replaceNext,
   isLanguage,
+  benchmark,
   benchmarkResults,
   listGetters,
   lastCommitHashInFolder,
@@ -51,9 +52,20 @@ class SiteBuilder {
     this.buildRedirectsCommand()
     this.buildSearchIndexCommand()
     this.buildDatabasePagesCommand()
-    console.log(benchmarkResults)
+    this._printBenchmarkResults()
   }
 
+  _printBenchmarkResults() {
+    const sorted = lodash.sortBy(benchmarkResults, "timeInSeconds").reverse()
+    console.log(new TreeNode(sorted).toFormattedTable(60))
+  }
+
+  formatDatabaseCommand() {
+    this._formatDatabase()
+    this._printBenchmarkResults()
+  }
+
+  @benchmark
   copyNpmAssetsCommand() {
     // Copy node module assets
     Disk.mkdir(path.join(publishedRootFolder, "node_modules"))
@@ -65,12 +77,14 @@ class SiteBuilder {
     )
   }
 
+  @benchmark
   copyBlogFolderCommand() {
     shell(
       `rm -rf ${publishedRootFolder}; cp -R ${blogDir} ${publishedRootFolder}`
     )
   }
 
+  @benchmark
   buildSettingsFileCommand() {
     // todo: can we refactor scroll settings so we no longer need this?
     const lastHash = lastCommitHashInFolder()
@@ -88,6 +102,7 @@ class SiteBuilder {
     )
   }
 
+  @benchmark
   buildListsCommand() {
     const listRoutes = new ListRoutes()
     listGetters(listRoutes).forEach(getter => {
@@ -99,18 +114,22 @@ class SiteBuilder {
     new ScrollFolder(publishedListsFolder).buildFiles()
   }
 
+  @benchmark
   buildHomepageCommand() {
     new ScrollFolder(publishedRootFolder).buildFiles()
   }
 
+  @benchmark
   buildPagesCommand() {
     new ScrollFolder(publishedPagesFolder).buildFiles()
   }
 
+  @benchmark
   buildPostsCommand() {
     new ScrollFolder(publishedPostsFolder).buildFiles()
   }
 
+  @benchmark
   buildRedirectsCommand() {
     Disk.read(path.join(blogDir, "redirects.txt"))
       .split("\n")
@@ -124,6 +143,7 @@ class SiteBuilder {
       })
   }
 
+  @benchmark
   buildDatabasePagesCommand() {
     pldbBase.forEach(file => {
       const filePath = path.join(publishedLanguagesFolder, `${file.id}.scroll`)
@@ -139,6 +159,7 @@ class SiteBuilder {
     new ScrollFolder(publishedLanguagesFolder).buildFiles()
   }
 
+  @benchmark
   buildAcknowledgementsPageCommand() {
     const { sources } = pldbBase
     const table =
@@ -209,6 +230,7 @@ ${text}`
     Disk.write(ackPath, page.toString())
   }
 
+  @benchmark
   buildSearchIndexCommand() {
     const objects = pldbBase.objectsForCsv.map(object => {
       return {
@@ -223,6 +245,7 @@ ${text}`
     )
   }
 
+  @benchmark
   buildCsvsCommand() {
     const { colNamesForCsv, objectsForCsv, columnDocumentation } = pldbBase
 
@@ -286,13 +309,15 @@ ${text}`
     )
   }
 
+  @benchmark
   buildJsonCommand() {
     const str = JSON.stringify(pldbBase.typedMap, null, 2)
     Disk.write(path.join(publishedRootFolder, "pldb.json"), str)
     Disk.write(path.join(codeDir, "package", "pldb.json"), str)
   }
 
-  formatDatabaseCommand() {
+  @benchmark
+  _formatDatabase() {
     pldbBase.forEach(file => file.prettifyAndSave())
   }
 }
