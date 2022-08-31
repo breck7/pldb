@@ -49,10 +49,14 @@ class SiteBuilder {
     )
   }
 
-  buildAllCommand() {
+  copyBlogFolderCommand() {
     shell(
       `rm -rf ${publishedRootFolder}; cp -R ${blogDir} ${publishedRootFolder}`
     )
+  }
+
+  buildAllCommand() {
+    this.copyBlogFolderCommand()
     this.copyNpmAssetsCommand()
     this.buildSettingsFileCommand()
     this.buildAcknowledgementsPageCommand()
@@ -135,15 +139,7 @@ class SiteBuilder {
   }
 
   buildAcknowledgementsPageCommand() {
-    const sources = Array.from(
-      new Set(
-        pldbBase.grammarCode
-          .split("\n")
-          .filter(line => line.includes("string sourceDomain"))
-          .map(line => line.split("string sourceDomain")[1].trim())
-      )
-    )
-    sources.sort()
+    const { sources } = pldbBase
     const table =
       `list\n` +
       sources.map(s => ` - <a href="https://${s}">${s}</a>`).join("\n")
@@ -190,7 +186,6 @@ ${text}`
       ...require("../package.json").dependencies,
       ...require("./importers/package.json").dependencies
     })
-
     npmPackages.sort()
 
     const packageTable =

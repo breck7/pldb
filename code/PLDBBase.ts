@@ -1003,6 +1003,18 @@ wikipedia`.split("\n")
     return sections
   }
 
+  get sources() {
+    const sources = Array.from(
+      new Set(
+        this.grammarCode
+          .split("\n")
+          .filter(line => line.includes("string sourceDomain"))
+          .map(line => line.split("string sourceDomain")[1].trim())
+      )
+    )
+    return sources.sort()
+  }
+
   // todo: move upstream to TreeBase or Grammar
   prettifyContent(original: string) {
     const { sortIndices, sortSections } = this
