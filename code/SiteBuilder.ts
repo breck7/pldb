@@ -50,6 +50,7 @@ class SiteBuilder {
     this.buildWhatsNewComponent()
     this.buildHomepageCommand()
     this.buildSingleGrammarFile()
+    this.buildKeywordsOneHot()
     this.buildCsvsCommand()
     this.buildJsonCommand()
     this.buildRedirectsCommand()
@@ -280,6 +281,14 @@ ${text}`
     Disk.write(
       path.join(publishedRootFolder, "searchIndex.json"),
       JSON.stringify(objects, null, 2)
+    )
+  }
+
+  @benchmark
+  buildKeywordsOneHot() {
+    Disk.write(
+      path.join(publishedRootFolder, "keywordsOneHot.csv"),
+      new TreeNode(pldbBase.keywordsOneHot).toCsv()
     )
   }
 

@@ -140,65 +140,30 @@ class ListRoutes {
   }
 
   get keywords() {
-    const pagePath = path.join(blogFolder, "lists", "keywords.scroll")
-    const page = new TreeNode(Disk.read(pagePath))
-
-    const langsWithKeywords = pldbBase.topLanguages.filter(file =>
-      file.has("keywords")
+    const { keywordsTable } = pldbBase
+    const { rows, langsWithKeywordsCount } = keywordsTable
+    const page = new TreeNode(
+      Disk.read(path.join(blogFolder, "lists", "keywords.scroll"))
     )
-
-    const theWords = {}
-    langsWithKeywords.forEach(file => {
-      file.keywords.forEach(word => {
-        const escapedWord = "Q" + word.toLowerCase() // b.c. you cannot have a key "constructor" in JS objects.
-
-        if (!theWords[escapedWord])
-          theWords[escapedWord] = {
-            keyword: escapedWord,
-            count: 0,
-            langs: []
-          }
-
-        const entry = theWords[escapedWord]
-
-        entry.langs.push(
-          `<a href='../languages/${file.permalink}'>${file.title}</a>`
-        )
-        entry.count++
-      })
-    })
-
-    Object.values(theWords).forEach((word: any) => {
-      word.langs = word.langs.join(" ")
-      word.frequency =
-        Math.round(
-          100 * lodash.round(word.count / langsWithKeywords.length, 2)
-        ) + "%"
-    })
-
-    const sorted = lodash.sortBy(theWords, "count")
-    sorted.reverse()
-
-    const tree = new TreeNode(sorted)
-    tree.forEach(node => {
-      node.set("keyword", node.get("keyword").substr(1))
-    })
 
     replaceNode(
       page,
       "comment autogenKeywords",
-      toScrollTable(tree, ["keyword", "count", "frequency", "langs"])
+      toScrollTable(new TreeNode(rows), [
+        "keyword",
+        "count",
+        "frequency",
+        "langs"
+      ])
     )
 
     replaceNext(
       page,
       "comment autogenAbout",
       `paragraph
- Here is the list of ${numeral(Object.keys(theWords).length).format(
+ Here is the list of ${numeral(rows.length).format(
    "0,0"
- )} keywords for the ${
-        langsWithKeywords.length
-      } languages that PLDB has that information. This list is case insensitive. Refer to the DB for case information.`
+ )} keywords for the ${langsWithKeywordsCount} languages that PLDB has that information. This list is case insensitive. Refer to the DB for case information.`
     )
 
     return page.toString()

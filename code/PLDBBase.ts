@@ -1028,6 +1028,7 @@ wikipedia`.split("\n")
     )
   }
 
+  @imemo
   get csvBuildOutput() {
     const { colNamesForCsv, objectsForCsv, columnDocumentation } = this
 
@@ -1102,6 +1103,71 @@ wikipedia`.split("\n")
       )
     )
     return sources.sort()
+  }
+
+  @imemo
+  get keywordsOneHot() {
+    const { keywordsTable } = this
+    const allKeywords = keywordsTable.rows.map(row => row.keyword)
+    const langsWithKeywords = this.topLanguages.filter(file =>
+      file.has("keywords")
+    )
+    const headerRow = allKeywords.slice()
+    headerRow.unshift("pldbId")
+    const rows = langsWithKeywords.map(file => {
+      const row = [file.id]
+      const keywords = new Set(file.keywords)
+      allKeywords.forEach(keyword => {
+        row.push(keywords.has(keyword) ? 1 : 0)
+      })
+      return row
+    })
+    rows.unshift(headerRow)
+    return rows
+  }
+
+  @imemo
+  get keywordsTable() {
+    const langsWithKeywords = this.topLanguages.filter(file =>
+      file.has("keywords")
+    )
+    const langsWithKeywordsCount = langsWithKeywords.length
+
+    const keywordsMap = {}
+    langsWithKeywords.forEach(file => {
+      file.keywords.forEach(keyword => {
+        const keywordKey = "Q" + keyword // b.c. you cannot have a key "constructor" in JS objects.
+
+        if (!keywordsMap[keywordKey])
+          keywordsMap[keywordKey] = {
+            keyword,
+            ids: []
+          }
+
+        const row = keywordsMap[keywordKey]
+
+        row.ids.push(file.id)
+      })
+    })
+
+    const rows = Object.values(keywordsMap)
+    rows.forEach((row: any) => {
+      row.count = row.ids.length
+      row.langs = row.ids
+        .map(id => {
+          const file = this.getFile(id)
+          return `<a href='../languages/${file.permalink}'>${file.title}</a>`
+        })
+        .join(" ")
+      row.frequency =
+        Math.round(100 * lodash.round(row.count / langsWithKeywordsCount, 2)) +
+        "%"
+    })
+
+    return {
+      langsWithKeywordsCount,
+      rows: lodash.sortBy(rows, "count").reverse()
+    }
   }
 
   // todo: move upstream to TreeBase or Grammar
