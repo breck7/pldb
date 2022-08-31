@@ -1,7 +1,6 @@
 #!/usr/bin/env ts-node
 
 const lodash = require("lodash")
-const simpleGit = require("simple-git")
 const path = require("path")
 const { jtree } = require("jtree")
 const dayjs = require("dayjs")
@@ -38,23 +37,6 @@ import {
 } from "./utils"
 
 class SiteBuilder {
-  copyNpmAssetsCommand() {
-    // Copy node module assets
-    Disk.mkdir(path.join(publishedRootFolder, "node_modules"))
-    shell(
-      `cp -R ${rootDir}/node_modules/monaco-editor ${publishedRootFolder}/node_modules/`
-    )
-    shell(
-      `cp -R ${rootDir}/node_modules/jtree ${publishedRootFolder}/node_modules/`
-    )
-  }
-
-  copyBlogFolderCommand() {
-    shell(
-      `rm -rf ${publishedRootFolder}; cp -R ${blogDir} ${publishedRootFolder}`
-    )
-  }
-
   buildAllCommand() {
     this.copyBlogFolderCommand()
     this.copyNpmAssetsCommand()
@@ -70,6 +52,23 @@ class SiteBuilder {
     this.buildSearchIndexCommand()
     this.buildDatabasePagesCommand()
     console.log(benchmarkResults)
+  }
+
+  copyNpmAssetsCommand() {
+    // Copy node module assets
+    Disk.mkdir(path.join(publishedRootFolder, "node_modules"))
+    shell(
+      `cp -R ${rootDir}/node_modules/monaco-editor ${publishedRootFolder}/node_modules/`
+    )
+    shell(
+      `cp -R ${rootDir}/node_modules/jtree ${publishedRootFolder}/node_modules/`
+    )
+  }
+
+  copyBlogFolderCommand() {
+    shell(
+      `rm -rf ${publishedRootFolder}; cp -R ${blogDir} ${publishedRootFolder}`
+    )
   }
 
   buildSettingsFileCommand() {
@@ -295,53 +294,6 @@ ${text}`
 
   formatDatabaseCommand() {
     pldbBase.forEach(file => file.prettifyAndSave())
-  }
-
-  async formatAndCheckChanged() {
-    // git diff --name-only --cached
-    const git = simpleGit(rootDir)
-    const changed = await git.diff({ "--name-only": null, "--cached": null })
-    changed
-      .split("\n")
-      .filter(file => file.endsWith(".pldb"))
-      .forEach(filePath => pldbBase.getFile(filePath).prettifyAndSave())
-  }
-
-  generateWorksheetsForAiCommand() {
-    const { topFeatures } = pldbBase
-
-    pldbBase.topLanguages
-      .slice(0, 100)
-      .filter(file => file.has("githubCopilotOptimized"))
-      .forEach(file => {
-        const lineCommentToken = file.lineCommentToken
-
-        const todos = []
-        topFeatures.forEach(feature => {
-          const hit = file.getNode(`features ${feature.path}`)
-          if (hit && hit.getContent() === "false") return
-          if (hit && hit.length)
-            todos.push(
-              `${lineCommentToken} A short example of ${feature.feature}(${
-                feature.path
-              }) in ${file.title}:\n${hit.childrenToString()}`
-            )
-          else
-            todos.push(
-              `${lineCommentToken} A short example of ${feature.feature}(${feature.path}) in ${file.title}:`
-            )
-        })
-
-        Disk.write(
-          path.join(
-            rootDir,
-            "ignore",
-            "worksheets",
-            `${file.id}.${file.fileExtension}`
-          ),
-          todos.join("\n\n")
-        )
-      })
   }
 }
 
