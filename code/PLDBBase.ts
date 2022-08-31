@@ -523,10 +523,15 @@ class PLDBFile extends TreeBaseFile {
     return this.parsed.filter(node => node.shouldSerialize !== false).length
   }
 
+  @imemo
   get linksToOtherFiles() {
-    return this.parsed
-      .findAllWordsWithCellType("permalinkCell")
-      .map(word => word.word)
+    return lodash.uniq(
+      this.parsed
+        .getTopDownArray()
+        .filter(node => node.providesPermalinks)
+        .map(node => node.getWords().slice(1))
+        .flat()
+    )
   }
 
   @includeInCsv

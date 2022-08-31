@@ -3,7 +3,7 @@
   "description": "PLDB: a Programming Language Database",
   "scripts": {
     "build": "chmod +x ./code/SiteBuilder.js; ./code/SiteBuilder.js buildAll",
-    "profileBuild": "time node --cpu-prof --cpu-prof-name=ignore/pldbBuildNodePerf.cpuprofile ./code/SiteBuilder.js buildAll",
+    "perfBuild": "time node --cpu-prof --cpu-prof-name=ignore/pldbBuildNodePerf.cpuprofile ./code/SiteBuilder.js buildAll",
     "clean": "cd code; tsc --build --clean",
     "cloc": "cloc --vcs git . --read-lang-def=code/clocLangs.txt",
     "checkLinks": "linkinator -r https://pldb.com > ignore/brokenLinks.txt",

@@ -49,6 +49,7 @@ abstractPermalinksNode
  catchAllCellType permalinkCell
  extends abstractArrayNode
  description Links to other entities on PLDB.
+ boolean providesPermalinks true
 abstractUrlNode
  cells keywordCell urlCell
  extends abstractFactNode
