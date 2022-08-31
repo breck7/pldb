@@ -30,8 +30,8 @@ aftertext
  https://pldb.com/nginxDailyAll.html traffic for the last two weeks
 
 aftertext
- goaccess generates these reports. It runs every hour thanks to the `cron` jobs listed below. When setting up, be sure privileges are correct or goaccess can hang.
- https://goaccess.io/ goaccess
+ GoAccess generates these reports. It runs every hour thanks to the `cron` jobs listed below. When you set it up make sure your privileges are correct or GoAccess may hang.
+ https://goaccess.io/ GoAccess
 
 cronCode
  0 * * * * goaccess /var/log/nginx/access.log -o /var/www/html/nginxDaily.html --log-format=COMBINED --anonymize-ip
