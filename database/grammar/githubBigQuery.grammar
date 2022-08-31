@@ -3,14 +3,15 @@ githubBigQueryNode
  description Google BigQuery Public Datasets has a dataset with info on GitHub repos: https://cloud.google.com/blog/topics/public-datasets/github-on-bigquery-analyze-all-the-open-source-code
  extends abstractMultiwordGuidNode
  contentKey id
- inScope ghBqUserCountNode ghBqRepoCountNode
+ inScope githubBigQueryUserCountNode githubBigQueryRepoCountNode
  todo Anon node types would be useful here
  string sourceDomain cloud.google.com
-ghBqUserCountNode
+githubBigQueryUserCountNode
  crux users
  extends abstractPopulationCountNode
  single
-ghBqRepoCountNode
+githubBigQueryRepoCountNode
+ description How many repos for this language are listed in Google's BigQuery Public GitHub Dataset snapshot.
  crux repos
  extends abstractCountNode
  single
