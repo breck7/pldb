@@ -1028,6 +1028,43 @@ wikipedia`.split("\n")
     )
   }
 
+  get csvBuildOutput() {
+    const { colNamesForCsv, objectsForCsv, columnDocumentation } = this
+
+    const pldbCsv = new TreeNode(objectsForCsv).toDelimited(",", colNamesForCsv)
+
+    const langsCsv = new TreeNode(
+      objectsForCsv.filter(obj => isLanguage(obj.type))
+    ).toDelimited(",", colNamesForCsv)
+
+    const columnsMetadataTree = new TreeNode(columnDocumentation)
+    const columnMetadataColumnNames = [
+      "Index",
+      "Column",
+      "Values",
+      "Coverage",
+      "Example",
+      "Description",
+      "Source",
+      "SourceLink",
+      "Definition",
+      "DefinitionLink"
+    ]
+
+    const columnsCsv = columnsMetadataTree.toDelimited(
+      ",",
+      columnMetadataColumnNames
+    )
+
+    return {
+      pldbCsv,
+      langsCsv,
+      columnsCsv,
+      columnsMetadataTree,
+      columnMetadataColumnNames
+    }
+  }
+
   get sortTemplate() {
     return Disk.read(path.join(databaseFolder, "sortTemplate.txt")).replace(
       /\n\n/,

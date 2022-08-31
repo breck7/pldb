@@ -47,6 +47,7 @@ class SiteBuilder {
     this.buildListsCommand()
     this.buildPostsCommand()
     this.buildHomepageCommand()
+    this.buildSingleGrammarFile()
     this.buildCsvsCommand()
     this.buildJsonCommand()
     this.buildRedirectsCommand()
@@ -81,6 +82,15 @@ class SiteBuilder {
   copyBlogFolderCommand() {
     shell(
       `rm -rf ${publishedRootFolder}; cp -R ${blogDir} ${publishedRootFolder}`
+    )
+  }
+
+  @benchmark
+  buildSingleGrammarFile() {
+    // Copy grammar to docs folder for easy access in things like TN Designer.
+    Disk.write(
+      path.join(publishedRootFolder, "pldb.grammar"),
+      pldbBase.grammarCode
     )
   }
 
@@ -247,45 +257,32 @@ ${text}`
 
   @benchmark
   buildCsvsCommand() {
-    const { colNamesForCsv, objectsForCsv, columnDocumentation } = pldbBase
+    const { csvBuildOutput } = pldbBase
+    const {
+      pldbCsv,
+      langsCsv,
+      columnsCsv,
+      columnMetadataColumnNames,
+      columnsMetadataTree
+    } = csvBuildOutput
 
-    const pldbCsv = new TreeNode(objectsForCsv).toDelimited(",", colNamesForCsv)
     Disk.write(path.join(publishedRootFolder, "pldb.csv"), pldbCsv)
-
-    const langsCsv = new TreeNode(
-      objectsForCsv.filter(obj => isLanguage(obj.type))
-    ).toDelimited(",", colNamesForCsv)
     Disk.write(path.join(publishedRootFolder, "languages.csv"), langsCsv)
-
-    const columnsTree = new TreeNode(columnDocumentation)
-    const columnColumns = [
-      "Index",
-      "Column",
-      "Values",
-      "Coverage",
-      "Example",
-      "Description",
-      "Source",
-      "SourceLink",
-      "Definition",
-      "DefinitionLink"
-    ]
-
-    Disk.write(
-      path.join(publishedRootFolder, "columns.csv"),
-      columnsTree.toDelimited(",", columnColumns)
-    )
+    Disk.write(path.join(publishedRootFolder, "columns.csv"), columnsCsv)
 
     const columnTable =
       `pipeTable\n ` +
-      columnsTree.toDelimited("|", columnColumns).replace(/\n/g, "\n ")
+      columnsMetadataTree
+        .toDelimited("|", columnMetadataColumnNames)
+        .replace(/\n/g, "\n ")
 
+    // Build documentation page
     // todo: add linkify to scroll
     const page = new TreeNode(
       Disk.read(path.join(blogDir, "docs", "csv.scroll"))
         // todo use scroll vars
         .replace("LANG_COUNT", pldbBase.topLanguages.length)
-        .replace("COL_COUNT", columnDocumentation.length)
+        .replace("COL_COUNT", columnMetadataColumnNames.length)
         .replace("ENTITY_COUNT", pldbBase.length)
         .replace(
           "ENTITIES_FILE_SIZE_UNCOMPRESSED",
@@ -298,15 +295,7 @@ ${text}`
     )
     replaceNext(page, "comment autogenColumnDocs", columnTable)
     Disk.write(path.join(publishedDocsFolder, "csv.scroll"), page.toString())
-
     new ScrollFolder(publishedDocsFolder).buildFiles()
-
-    // todo: remove?
-    // Copy grammar to docs folder for easy access in things like TN Designer.
-    Disk.write(
-      path.join(publishedDocsFolder, "pldb.grammar"),
-      pldbBase.grammarCode
-    )
   }
 
   @benchmark
