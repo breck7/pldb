@@ -2,8 +2,12 @@ title Communities
 import settings.scroll
 columnWidth 120
 
+groups index
+
 aftertext
  A list of active Programming Language Design Communities
+
+endSnippet
 
 pipeTable
  name|nameLink|description

@@ -2,6 +2,8 @@ title Calendar
 import settings.scroll
 columnWidth 120
 
+groups index
+
 aftertext
  A list of conferences of interest to programming language designers. @Edit this file@.
  wrap @ https://github.com/breck7/pldb/blob/main/blog/lists/calendar.scroll
@@ -15,6 +17,8 @@ pipeTable
  Strange Loop 2022|StangeLoop|September|22|2022|09/04/22|Union Station, St. Louis, Missouri|USA|https://www.thestrangeloop.com/|strangeloop_stl
  RacketCon 2022|RacketCon|October|28|2022|10/30/22|Providence, Rhode Island|USA|https://con.racket-lang.org/|
  Systems, Programming, Languages and Applications: Software for Humanity 2021|SPLASH|December|5|2022|12/10/22|Milford Sound|New Zealand|https://2022.splashcon.org/|splashcon
+
+endSnippet
 
 section Past Conferences
 

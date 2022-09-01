@@ -1,5 +1,6 @@
 title Top 100 Programming Languages
 import settings.scroll
+import topLangsImports.scroll
 maxColumns 2
 
 aftertext
@@ -7,5 +8,6 @@ aftertext
  link ./languages.html all the languages 
  link ../pages/the-rankings-algorithm.html explained here
 
-import topLangsImports.scroll
+groups index
+endSnippet
 TOP_100

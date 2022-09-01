@@ -5,11 +5,7 @@ columnWidth 60
 aftertext
  A list of publishers who publish books about programming languages.
 
-aftertext
- Is PLDB missing a publisher? @Edit this file@ and send a pull request.
- wrap @ https://github.com/breck7/pldb/blob/main/lists/publishers.scroll
-
-section Publishers
+groups index
 
 pipeTable
  name|nameLink|founded|location|wikipedia|wikipediaLink|founders
