@@ -1062,7 +1062,8 @@ wikipedia`.split("\n")
       langsCsv,
       columnsCsv,
       columnsMetadataTree,
-      columnMetadataColumnNames
+      columnMetadataColumnNames,
+      colNamesForCsv
     }
   }
 

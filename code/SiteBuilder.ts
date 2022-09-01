@@ -300,18 +300,13 @@ ${text}`
       langsCsv,
       columnsCsv,
       columnMetadataColumnNames,
-      columnsMetadataTree
+      columnsMetadataTree,
+      colNamesForCsv
     } = csvBuildOutput
 
     Disk.write(path.join(publishedRootFolder, "pldb.csv"), pldbCsv)
     Disk.write(path.join(publishedRootFolder, "languages.csv"), langsCsv)
     Disk.write(path.join(publishedRootFolder, "columns.csv"), columnsCsv)
-
-    const columnTable =
-      `pipeTable\n ` +
-      columnsMetadataTree
-        .toDelimited("|", columnMetadataColumnNames)
-        .replace(/\n/g, "\n ")
 
     // Build documentation page
     // todo: add linkify to scroll
@@ -319,7 +314,7 @@ ${text}`
       Disk.read(path.join(blogDir, "docs", "csv.scroll"))
         // todo use scroll vars
         .replace("LANG_COUNT", pldbBase.topLanguages.length)
-        .replace("COL_COUNT", columnMetadataColumnNames.length)
+        .replace("COL_COUNT", colNamesForCsv.length)
         .replace("ENTITY_COUNT", pldbBase.length)
         .replace(
           "ENTITIES_FILE_SIZE_UNCOMPRESSED",
@@ -330,6 +325,13 @@ ${text}`
           numeral(langsCsv.length).format("0.0b")
         )
     )
+
+    const columnTable =
+      `pipeTable\n ` +
+      columnsMetadataTree
+        .toDelimited("|", columnMetadataColumnNames)
+        .replace(/\n/g, "\n ")
+
     replaceNext(page, "comment autogenColumnDocs", columnTable)
     Disk.write(path.join(publishedDocsFolder, "csv.scroll"), page.toString())
     new ScrollFolder(publishedDocsFolder).buildFiles()
