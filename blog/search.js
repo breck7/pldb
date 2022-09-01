@@ -35,7 +35,7 @@ const initSearchAutocomplete = elementId => {
       if (id) window.location = "https://pldb.com/languages/" + id + ".html"
       else
         window.location = `https://edit.pldb.com/search?q=${
-          document.getElementById("searchBox").value
+          document.getElementById(elementId).value
         }`
     }
   })
