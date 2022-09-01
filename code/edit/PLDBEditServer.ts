@@ -21,8 +21,8 @@ import simpleGit, { SimpleGit } from "simple-git"
 
 const baseFolder = path.join(__dirname, "..", "..")
 const ignoreFolder = path.join(baseFolder, "ignore")
-const publishedFolder = path.join(baseFolder, "pldb.local")
-const csvFileLength = Disk.read(path.join(publishedFolder, "pldb.csv")).length
+const builtSiteFolder = path.join(baseFolder, "site")
+const csvFileLength = Disk.read(path.join(builtSiteFolder, "pldb.csv")).length
 
 const logPath = path.join(ignoreFolder, "editServerLog.tree")
 Disk.touch(logPath)
@@ -80,7 +80,7 @@ const parseGitAuthor = (field = GIT_DEFAULT_AUTHOR) => {
 }
 
 const scrollSettings = getFullyExpandedFile(
-	path.join(publishedFolder, "settings.scroll")
+	path.join(builtSiteFolder, "settings.scroll")
 ).code
 
 class PLDBEditServer {
@@ -149,7 +149,7 @@ html
 		})
 
 		app.use(express.static(__dirname))
-		app.use(express.static(publishedFolder))
+		app.use(express.static(builtSiteFolder))
 
 		app.get("/create", (req, res) =>
 			res.send(this.scrollToHtml(editForm(undefined, "Add a language")))
@@ -408,7 +408,7 @@ ${scrollContent}
 	compileGrammarForInBrowserCodeMirrorEditor() {
 		// todo: cleanup
 		jtree.compileGrammarForBrowser(
-			path.join(publishedFolder, "pldb.grammar"),
+			path.join(builtSiteFolder, "pldb.grammar"),
 			__dirname + "/",
 			false
 		)
