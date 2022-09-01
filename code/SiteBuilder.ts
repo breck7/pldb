@@ -565,7 +565,7 @@ class SiteBuilder {
 
   @buildAll
   @benchmark
-  buildScrolls() {
+  buildScrollsCommand() {
     new ScrollFolder(listsFolder).buildFiles()
     new ScrollFolder(siteFolder).buildFiles()
     new ScrollFolder(publishedPagesFolder).buildFiles()

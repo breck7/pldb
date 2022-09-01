@@ -1,0 +1,14 @@
+title Write for PLDB
+import settings.scroll
+groups index
+
+section Interesting Articles Wanted
+
+aftertext
+ Email your article ideas to <a href="mailto:breck@pldb.com">breck@pldb.com</a> as a 4 liner using the template below:
+
+code
+ title [what might a title be for your post]
+ openingParagraph [what might the first sentence(s) be for your post]
+ tableDescription [describe what the columns that might be in the csv[s] in your post]
+ dataVisDescription [describe what an interesting visualization of that data above might be for your post]
