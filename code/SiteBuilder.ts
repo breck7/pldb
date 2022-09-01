@@ -168,10 +168,6 @@ class SiteBuilder {
   @buildAll
   buildAcknowledgementsImportsCommand() {
     const { sources } = pldbBase
-    const sourcesTable =
-      `list\n` +
-      sources.map(s => ` - <a href="https://${s}">${s}</a>`).join("\n")
-
     let writtenIn = [
       "javascript",
       "nodejs",
@@ -190,42 +186,34 @@ class SiteBuilder {
       "gitignore"
     ].map(s => pldbBase.getFile(pldbBase.searchForEntity(s)))
 
-    writtenIn = lodash.sortBy(writtenIn, "rank")
-
-    const writtenInTable = writtenIn
-      .map(
-        file =>
-          ` - <a href="BASE_URL/languages/${file.permalink}">${file.title}</a>`
-      )
-      .join("\n")
-
     const npmPackages = Object.keys({
       ...require("../package.json").dependencies,
       ...require("./importers/package.json").dependencies
     })
     npmPackages.sort()
 
-    const packageTable =
-      `list\n` +
-      npmPackages
-        .map(s => ` - <a href="https://www.npmjs.com/package/${s}">${s}</a>`)
-        .join("\n")
-
-    let contributorsTable = ""
-    try {
-      contributorsTable =
-        `list\n` +
-        JSON.parse(Disk.read(path.join(pagesDir, "contributors.json")))
-          .filter(item => item.login !== "codelani" && item.login !== "breck7")
-          .map(item => ` - <a href="${item.html_url}">${item.login}</a>`)
-          .join("\n")
-    } catch (err) {}
-
-    buildImportsFile(path.join(listsFolder, "acknowledgementsImports.scroll"), {
-      WRITTEN_IN_TABLE: writtenInTable,
-      PACKAGES_TABLE: packageTable,
-      SOURCES_TABLE: sourcesTable,
-      CONTRIBUTORS_TABLE: contributorsTable
+    buildImportsFile(path.join(pagesDir, "acknowledgementsImports.scroll"), {
+      WRITTEN_IN_TABLE: lodash
+        .sortBy(writtenIn, "rank")
+        .map(
+          file =>
+            `<li><a href="BASE_URL/languages/${file.permalink}">${file.title}</a></li>`
+        )
+        .join(""),
+      PACKAGES_TABLE: npmPackages
+        .map(
+          s => `<li><a href="https://www.npmjs.com/package/${s}">${s}</a></li>`
+        )
+        .join(""),
+      SOURCES_TABLE: sources
+        .map(s => `<li><a href="https://${s}">${s}</a></li>`)
+        .join(""),
+      CONTRIBUTORS_TABLE: JSON.parse(
+        Disk.read(path.join(pagesDir, "contributors.json"))
+      )
+        .filter(item => item.login !== "codelani" && item.login !== "breck7")
+        .map(item => `<li><a href="${item.html_url}">${item.login}</a></li>`)
+        .join("")
     })
   }
 
