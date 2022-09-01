@@ -175,12 +175,9 @@ ${editForm(submission, "Error")}`
 			)
 		}
 
-		app.get("/search", (req, res) => {
-			const { q, format } = req.query
-			const results = new SearchRoutes().search(q, format, req.originalUrl)
-			if (format) res.send(results)
-			else res.send(this.scrollToHtml(results))
-		})
+		app.get("/search", (req, res) => 
+			res.send(this.scrollToHtml(new SearchRoutes().search(this.folder, req.query.q)))
+		)
 
 		app.get("/edit/:id", (req, res) => {
 			const { id } = req.params

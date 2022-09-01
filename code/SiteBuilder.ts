@@ -117,7 +117,7 @@ class SiteBuilder {
 
   @benchmark
   buildListsCommand() {
-    const listRoutes = new ListRoutes()
+    const listRoutes = new ListRoutes(pldbBase)
     listGetters(listRoutes).forEach(getter => {
       Disk.write(
         path.join(publishedRootFolder, "lists", `${getter}.scroll`),

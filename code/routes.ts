@@ -14,14 +14,10 @@ const { jtree } = require("jtree")
 const { TreeNode } = jtree
 const { Disk } = require("jtree/products/Disk.node.js")
 
-const pldbBase = PLDBBaseFolder.getBase()
 const blogFolder = path.join(__dirname, "..", "blog")
 
 class SearchRoutes {
-  constructor() {
-    pldbBase.loadFolder()
-  }
-  search(query, format, url = ""): string {
+  search(pldbBase, query): string {
     const regex = new RegExp(query, "i")
     const escapedQuery = htmlEscaped(query)
     const hits = pldbBase.filter(file => file.toString().match(regex))
@@ -29,20 +25,6 @@ class SearchRoutes {
     const nameHits = pldbBase.filter(file =>
       file.names.some(name => name.match(regex))
     )
-
-    const ids = new Set(hits.map(file => file.id))
-
-    if (format === "json") {
-      const { typedMap } = pldbBase
-      const rows = Array.from(ids).map((id: string) => typedMap[id])
-      return JSON.stringify(rows, null, 2)
-    }
-
-    if (format === "csv") {
-      const { colNamesForCsv, objectsForCsv } = pldbBase
-      const rows = objectsForCsv.filter(item => ids.has(item.pldbId))
-      return new TreeNode(rows).toDelimited(",", colNamesForCsv)
-    }
 
     const baseUrl = "https://pldb.com/languages/"
 
@@ -78,7 +60,7 @@ html
 ${nameResults}
 
 paragraph
- ${hits.length} full text matches for "${escapedQuery}" shown below. <a href="${url}&format=csv">CSV</a> | <a href="${url}&format=json">JSON</a>
+ ${hits.length} full text matches for "${escapedQuery}" shown below.
 
 html
  ${searchResults}`
@@ -86,15 +68,17 @@ html
 }
 
 class ListRoutes {
-  constructor() {
-    pldbBase.loadFolder()
+  constructor(pldbBase) {
+    this.pldbBase = pldbBase
   }
+
+  pldbBase: PLDBBaseFolder
 
   private makeTopPage(num) {
     const pagePath = path.join(blogFolder, `lists`, `top${num}.scroll`)
     const page = new TreeNode(Disk.read(pagePath))
 
-    const files = pldbBase.topLanguages.map(file => {
+    const files = this.pldbBase.topLanguages.map(file => {
       const appeared = file.get("appeared")
       const rank = file.languageRank + 1
       const type = file.get("type")
@@ -140,7 +124,7 @@ class ListRoutes {
   }
 
   get keywords() {
-    const { keywordsTable } = pldbBase
+    const { keywordsTable } = this.pldbBase
     const { rows, langsWithKeywordsCount } = keywordsTable
     const page = new TreeNode(
       Disk.read(path.join(blogFolder, "lists", "keywords.scroll"))
@@ -173,7 +157,7 @@ class ListRoutes {
     const pagePath = path.join(blogFolder, "lists", "extensions.scroll")
     const page = new TreeNode(Disk.read(pagePath))
 
-    const files = pldbBase
+    const files = this.pldbBase
       .filter(file => file.get("type") !== "feature")
       .map(file => {
         return {
@@ -216,7 +200,7 @@ class ListRoutes {
     const pagePath = path.join(blogFolder, "lists", "entities.scroll")
     const page = new TreeNode(Disk.read(pagePath))
 
-    let files = pldbBase.map(file => {
+    let files = this.pldbBase.map(file => {
       const appeared = file.get("appeared")
       const rank = file.rank + 1
       const type = file.get("type")
@@ -256,7 +240,7 @@ class ListRoutes {
     const pagePath = path.join(blogFolder, "lists", "languages.scroll")
     const page = new TreeNode(Disk.read(pagePath))
 
-    const files = pldbBase
+    const files = this.pldbBase
       .filter(file => file.isLanguage)
       .map(file => {
         const title = file.get("title")
@@ -297,7 +281,7 @@ class ListRoutes {
   get features() {
     const pagePath = path.join(blogFolder, "lists", "features.scroll")
     const page = new TreeNode(Disk.read(pagePath))
-    const { topFeatures } = pldbBase
+    const { topFeatures } = this.pldbBase
 
     replaceNode(
       page,
@@ -327,7 +311,7 @@ class ListRoutes {
     const entities = {}
 
     const files = lodash.sortBy(
-      pldbBase.filter(
+      this.pldbBase.filter(
         file => file.isLanguage && file.corporateDevelopers.length
       ),
       "languageRank"
@@ -384,7 +368,7 @@ class ListRoutes {
 
     lodash
       .sortBy(
-        pldbBase.filter(file => file.isLanguage && file.has("creators")),
+        this.pldbBase.filter(file => file.isLanguage && file.has("creators")),
         "languageRank"
       )
       .forEach(file => {
