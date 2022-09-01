@@ -3,7 +3,7 @@ importOnly
 replaceDefault BASE_URL 
 replaceDefault EDIT_URL https://edit.pldb.com
 
-import buildLog.scroll
+import buildLogImports.scroll
 
 siteTitle PLDB
 siteDescription PLDB: a Programming Language Database. Build the next great programming language.
