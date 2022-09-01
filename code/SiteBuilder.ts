@@ -114,7 +114,7 @@ class SiteBuilder {
     buildImportsFile(path.join(siteFolder, "buildLogImports.scroll"), {
       LAST_HASH: lastCommitHashInFolder(),
       BUILT_IN_YEAR: dayjs().format("YYYY"),
-      builtOnDay: dayjs().format("MM/DD/YYYY")
+      BUILT_ON_DAY: dayjs().format("MM/DD/YYYY")
     })
   }
 
