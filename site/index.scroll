@@ -3,7 +3,7 @@ import searchForm.scroll
 
 replace BASE_URL .
 
-import whatsNew.scroll
+import homepageImports.scroll
 
 html
  <a class="pldbHomepageLink" href="./lists/top500.html">Top Languages</a>

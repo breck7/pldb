@@ -33,7 +33,6 @@ import {
   listGetters,
   lastCommitHashInFolder,
   imemo,
-  toScrollTable,
   runCommand
 } from "./utils"
 
@@ -52,8 +51,19 @@ const buildImportsFile = (filepath, varMap) => {
     `importOnly\n` +
       Object.keys(varMap)
         .map(key => {
-          const value = varMap[key].toString()
-          if (!value.includes("\n")) return `replace ${key} ${value}`
+          let value = varMap[key]
+
+          if (value.rows)
+            return `replace ${key}
+ pipeTable
+  ${new TreeNode(value.rows)
+    .toDelimited("|", value.header, false)
+    .replace(/\n/g, "\n  ")}`
+
+          value = value.toString()
+
+          if (value.includes("\n")) return `replace ${key} ${value}`
+
           return `replace ${key}
  ${value.replace(/\n/g, "\n ")}`
         })
@@ -117,12 +127,10 @@ class SiteBuilder {
     buildImportsFile(path.join(listsFolder, "keywordsImports.scroll"), {
       NUM_KEYWORDS: numeral(rows.length).format("0,0"),
       LANGS_WITH_KEYWORD_DATA: langsWithKeywordsCount,
-      KEYWORDS_TABLE: toScrollTable(new TreeNode(rows), [
-        "keyword",
-        "count",
-        "frequency",
-        "langs"
-      ])
+      KEYWORDS_TABLE: {
+        rows,
+        header: ["keyword", "count", "frequency", "langs"]
+      }
     })
   }
 
@@ -269,10 +277,10 @@ class SiteBuilder {
       ENTITY_COUNT: pldbBase.length,
       ENTITIES_FILE_SIZE_UNCOMPRESSED: numeral(pldbCsv.length).format("0.0b"),
       LANGS_FILE_SIZE_UNCOMPRESSED: numeral(langsCsv.length).format("0.0b"),
-      COLUMN_METADATA_TABLE: `pipeTable
-  ${columnsMetadataTree
-    .toDelimited("|", columnMetadataColumnNames)
-    .replace(/\n/g, "\n  ")}`
+      COLUMN_METADATA_TABLE: {
+        header: columnMetadataColumnNames,
+        rows: columnsMetadataTree
+      }
     })
   }
 
@@ -308,15 +316,13 @@ class SiteBuilder {
 
     const vars = {}
     const pages = [100, 250, 500, 1000]
+    const header = ["title", "titleLink", "appeared", "type", "rank"]
     pages.forEach(
       num =>
-        (vars[`TOP_${num}`] = toScrollTable(new TreeNode(files.slice(0, num)), [
-          "title",
-          "titleLink",
-          "appeared",
-          "type",
-          "rank"
-        ]))
+        (vars[`TOP_${num}`] = {
+          header,
+          rows: files.slice(0, num)
+        })
     )
 
     buildImportsFile(path.join(listsFolder, "topLangsImports.scroll"), vars)
@@ -342,16 +348,14 @@ class SiteBuilder {
       file.extensions.split(" ").forEach(ext => allExtensions.add(ext))
     )
 
-    const sorted = lodash.sortBy(files, "rank")
-    const TABLE = toScrollTable(new TreeNode(sorted), [
-      "name",
-      "nameLink",
-      "extensions"
-    ])
+    const rows = lodash.sortBy(files, "rank")
 
     buildImportsFile(path.join(listsFolder, "extensionsImports.scroll"), {
       EXTENSION_COUNT: numeral(allExtensions.size).format("0,0"),
-      TABLE,
+      TABLE: {
+        rows,
+        header: ["name", "nameLink", "extensions"]
+      },
       LANG_WITH_DATA_COUNT: files.length
     })
   }
@@ -373,19 +377,12 @@ class SiteBuilder {
       }
     })
 
-    files = lodash.sortBy(files, "rank")
-
-    const TABLE = toScrollTable(new TreeNode(files), [
-      "title",
-      "titleLink",
-      "type",
-      "appeared",
-      "rank"
-    ])
-
     buildImportsFile(path.join(listsFolder, "entitiesImports.scroll"), {
       COUNT: numeral(Object.values(files).length).format("0,0"),
-      TABLE
+      TABLE: {
+        rows: lodash.sortBy(files, "rank"),
+        header: ["title", "titleLink", "type", "appeared", "rank"]
+      }
     })
   }
 
@@ -408,19 +405,12 @@ class SiteBuilder {
         }
       })
 
-    const sorted = lodash.sortBy(files, "rank")
-
-    const TABLE = toScrollTable(new TreeNode(sorted), [
-      "title",
-      "titleLink",
-      "type",
-      "appeared",
-      "rank"
-    ])
-
     buildImportsFile(path.join(listsFolder, "languagesImports.scroll"), {
-      COUNT: numeral(Object.values(sorted).length).format("0,0"),
-      TABLE
+      COUNT: numeral(Object.values(files).length).format("0,0"),
+      TABLE: {
+        rows: lodash.sortBy(files, "rank"),
+        header: ["title", "titleLink", "type", "appeared", "rank"]
+      }
     })
   }
 
@@ -429,18 +419,19 @@ class SiteBuilder {
   buildFeaturesImports() {
     const { topFeatures } = pldbBase
 
-    const TABLE = toScrollTable(new TreeNode(topFeatures), [
-      "feature",
-      "featureLink",
-      "pseudoExample",
-      "yes",
-      "no",
-      "percentage"
-    ])
-
     buildImportsFile(path.join(listsFolder, "featuresImports.scroll"), {
       COUNT: numeral(Object.values(topFeatures).length).format("0,0"),
-      TABLE
+      TABLE: {
+        rows: topFeatures,
+        header: [
+          "feature",
+          "featureLink",
+          "pseudoExample",
+          "yes",
+          "no",
+          "percentage"
+        ]
+      }
     })
   }
 
@@ -483,19 +474,13 @@ class SiteBuilder {
     const sorted = lodash.sortBy(rows, ["count", "top"])
     sorted.reverse()
 
-    const theTable = toScrollTable(new TreeNode(sorted), [
-      "name",
-      "languages",
-      "count"
-    ])
-
-    Disk.write(
-      path.join(listsFolder, "corporationsImports.scroll"),
-      `importOnly
-replace COUNT ${numeral(Object.values(entities).length).format("0,0")}
-replace TABLE
- ${theTable}`
-    )
+    buildImportsFile(path.join(listsFolder, "corporationsImports.scroll"), {
+      TABLE: {
+        rows: sorted,
+        header: ["name", "languages", "count"]
+      },
+      COUNT: numeral(Object.values(entities).length).format("0,0")
+    })
   }
 
   @benchmark
@@ -551,25 +536,21 @@ replace TABLE
 
     const sorted = lodash.sortBy(rows, "topRank")
 
-    const TABLE = toScrollTable(new TreeNode(sorted), [
-      "name",
-      "languages",
-      "count",
-      "topRank"
-    ])
-
-    buildImportsFile(path.join(listsFolder, "corporationsImports.scroll"), {
-      TABLE,
+    buildImportsFile(path.join(listsFolder, "creatorsImports.scroll"), {
+      TABLE: {
+        rows: sorted,
+        header: ["name", "languages", "count", "topRank"]
+      },
       COUNT: numeral(Object.values(creators).length).format("0,0")
     })
   }
 
   @benchmark
   @buildAll
-  buildHomepageFeedImportsCommand() {
+  buildHomepageImportsCommand() {
     const postsScroll = new ScrollFolder(publishedPostsFolder)
 
-    buildImportsFile(path.join(siteFolder, "homepageFeedImports.scroll"), {
+    buildImportsFile(path.join(siteFolder, "homepageImports.scroll"), {
       TOP_LANGS: pldbBase.topLanguages
         .slice(0, 10)
         .map(

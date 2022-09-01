@@ -237,13 +237,6 @@ const nodeToFlatObject = parentNode => {
   return newObject
 }
 
-const toScrollTable = (tree, header) =>
-  "pipeTable\n " +
-  tree
-    .toDelimited("|", header, false)
-    .replace(/\n/g, "\n ")
-    .trim()
-
 const nameToAnchor = (name: string) => name.replace(/ /g, "_")
 
 const getJoined = (node, keywords): string => {
@@ -379,7 +372,6 @@ export {
   getIndefiniteArticle,
   replaceNode,
   nodeToFlatObject,
-  toScrollTable,
   getJoined,
   isLanguage,
   getCleanedId,
