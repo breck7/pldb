@@ -49,7 +49,7 @@ html
  <input type="hidden" name="author" id="author"><input type="submit" value="Save" id="submitButton" onClick="app.saveAuthorIfUnsaved()"/>
  </form>`
 
-const cssLibs = "node_modules/jtree/sandbox/lib/codemirror.css node_modules/jtree/sandbox/lib/codemirror.show-hint.css editApp.css"
+const cssLibs = "node_modules/jtree/sandbox/lib/codemirror.css node_modules/jtree/sandbox/lib/codemirror.show-hint.css"
 	.split(" ")
 	.map(name => ` <link rel="stylesheet" type="text/css" href="/${name}" />`)
 	.join("\n")
@@ -132,6 +132,21 @@ columnWidth 200
 html
 ${cssLibs}
 ${scripts}
+
+css
+ #editForm {
+  width: 100%;
+  height: 80%;
+ }
+ .cell {
+   width: 48%;
+   display: inline-block;
+   vertical-align: top;
+ }
+ #quickLinks {
+   font-size: 80%;
+ }
+
 
 html
  <div id="successLink"></div>

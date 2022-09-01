@@ -1,20 +1,10 @@
-# PLDB Edit
+# PLDBEditServer
 
-PLDB Edit is a web server and frontend end for adding and editing content
-on PLDB.
-
-## Local usage
-
-```
-git clone https://github.com/breck7/pldb
-cd pldb
-npm install .
-./code/edit/PLDBEditServer.ts startDevServer
-```
+PLDBEditServer is a web server and JS frontend end for adding and editing content on PLDB.
 
 ## Prod setup
 
-https://edit.pldb.com is hosted on the smallest Digital Ocean droplet.
+https://edit.pldb.com is hosted on a small Digital Ocean droplet.
 
 Follow the same setup instructions as here (stopping before Nginx installation): https://pldb.com/about-this-web-server.html
 
@@ -42,8 +32,6 @@ cd pldb
 npm install .
 npm run tsc
 npm run build
-cd code
-tsc
 # Test that it works over http
 node ./code/edit/PLDBEditServer.js startDevServer 80
 # Now get SSL cert for https
