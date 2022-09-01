@@ -1,0 +1,39 @@
+title PLDB CSV File Documentation
+import settings.scroll
+import csvImports.scroll
+tableSearch
+
+html
+ <style>
+  .scrollTableComponent td {
+    max-width: 30ch;
+  }
+  .scrollTableComponent td:nth-child(5) {
+    max-width: 20ch;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+  }
+  </style>
+
+aftertext
+ Download it from https://pldb.com/languages.csv
+ https://pldb.com/languages.csv https://pldb.com/languages.csv
+
+aftertext
+ PLDB builds one main CSV file. `languages.csv` contains LANG_COUNT rows and COL_COUNT columns and is LANGS_FILE_SIZE_UNCOMPRESSED uncompressed. Every row is a language and every language is one row.
+ wrapsOn
+
+section Column Documentation
+
+COLUMN_METADATA_TABLE
+
+aftertext
+ The table above is also available as csv.
+ link BASE_URL/columns.csv csv
+
+section pldb.csv file
+
+aftertext
+ PLDB also builds https://pldb.com/pldb.csv which contains the same rows and columns as `languages.csv` and a row for each non-language entity in the PLDB—such as operating systems and editors—and has ENTITY_COUNT total rows and is ENTITIES_FILE_SIZE_UNCOMPRESSED uncompressed.
+ wrapsOn
+ https://pldb.com/pldb.csv https://pldb.com/pldb.csv

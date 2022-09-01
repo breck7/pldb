@@ -1,0 +1,89 @@
+title About
+import settings.scroll
+groups index
+
+aftertext
+ Welcome to PLDB: a Programming Language Database!
+
+aftertext
+ PLDB is a comprehensive database of programming
+ languages and their features. The focus is on
+ *programming languages*, but the database also
+ includes other languages and entities one degree away--from
+ popular high level plain text formats to binary
+ specifications and beyond.
+ wrapsOn
+
+aftertext
+ PLDB is for two groups of people:
+
+aftertext
+ 1. <b>Programming language creators.</b> PLDB is organized big data
+ to help you create great new languages, and improve
+ existing ones. When making design decisions, quickly look up
+ what features other languages have tried. Benefit from the experiences
+ of thousands that have built languages before you. If you are researching something and can't
+ find what you need here, open an issue and explain what you need.
+ https://github.com/breck7/pldb/issues/new open an issue
+
+aftertext
+ 2. <b>Programming language users.</b> PLDB provides a
+ data-driven view of the programming language universe, to
+ demystify the world of programming languages for you, and
+ provide sound strategic and tactical advice to help you in
+ your projects and your career. If you have a question not answered
+ by the data here, open an issue and explain what you need.
+ https://github.com/breck7/pldb/issues/new open an issue
+
+subsection Join!
+
+aftertext
+ Want to get involved? Read more here.
+ link join.html here
+
+subsection Open source
+
+aftertext
+ All data and source code used to generate this site are on GitHub.
+ https://github.com/breck7/pldb GitHub
+
+subsection Web server
+
+aftertext
+ Information about this web server is available `here`.
+ wrap ` a href="about-this-web-server.html"
+
+subsection Acknowledgements
+
+aftertext
+ This site is powered by information and software from so many people and organizations, a few of which are listed on the acknowledgements page.
+ link acknowledgements.html acknowledgements
+
+subsection Cloc Stats
+
+aftertext
+ Below are the cloc stats for the pldb repo as of BUILT_ON_DAY.
+ link BASE_URL/languages/cloc.html cloc
+ https://github.com/breck7/pldb pldb repo
+
+bash cd ..; cd ..; cloc --quiet --vcs git . --read-lang-def=code/clocLangs.txt
+
+subsection Citation
+
+aftertext
+ PLDB content is published to the public domain and you can use it freely. If needed, here are 3 options for citing PLDB:
+
+quote
+ https://pldb.com
+
+quote
+ Breck Yunits et al. (2022) - "PLDB: a Programming Language Database". Retrieved from: 'https://pldb.com' [Online Resource]
+
+code
+ @article{pldb,
+   author = {Breck Yunits et al.},
+   title = {PLDB: a Programming Language Database},
+   journal = {PLDB},
+   year = {2022},
+   note = {https://pldb.com}
+  }

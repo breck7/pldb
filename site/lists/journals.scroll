@@ -1,0 +1,17 @@
+title Programming Language Academic Journals
+import settings.scroll
+columnWidth 120
+
+aftertext
+ A list of academic journals about programming language theory and design.
+
+pipeTable
+ name|nameLink|firstPublished|wikipedia|wikipediaLink|impactFactor|frequency|openAccess|aka
+ Journal of Automata, Languages and Combinatorics|http://www.jalc.de/|1965|Journal_of_Automata,_Languages_and_Combinatorics|https://en.wikipedia.org/wiki/Journal_of_Automata,_Languages_and_Combinatorics||quarterly||
+ ACM Transactions on Programming Languages and Systems|https://dl.acm.org/journal/toplas|1979|ACM_Transactions_on_Programming_Languages_and_Systems|https://en.wikipedia.org/wiki/ACM_Transactions_on_Programming_Languages_and_Systems||bimonthly||TOPLAS
+ Information Systems Journal|https://onlinelibrary.wiley.com/journal/13652575|1991|Information_Systems_Journal|https://en.wikipedia.org/wiki/Information_Systems_Journal|4.267|bimonthly||
+ Journal of Functional Programming|https://www.cambridge.org/core/journals/journal-of-functional-programming|1991|Journal_of_Functional_Programming|https://en.wikipedia.org/wiki/Journal_of_Functional_Programming||bimonthly||
+ International Journal of Programming Languages and Applications|http://airccse.org/journal/ijpla/ijpla.html|2011||||variable||IJPLA
+ Proceedings of the ACM on Programming Languages|https://dl.acm.org/journal/pacmpl|2017||||variable|yes|
+
+groups index

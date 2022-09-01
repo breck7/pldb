@@ -216,12 +216,6 @@ const lastCommitHashInFolder = (cwd = __dirname) =>
     .toString()
     .trim()
 
-const replaceNext = (node, path, newContent) =>
-  node
-    .find(node => node.getLine().startsWith(path))
-    .getNext()
-    .replaceNode(str => newContent)
-
 const replaceNode = (node, path, newContent) =>
   node
     .find(node => node.getLine().startsWith(path))
@@ -242,13 +236,6 @@ const nodeToFlatObject = parentNode => {
   })
   return newObject
 }
-
-const toScrollTable = (tree, header) =>
-  "pipeTable\n " +
-  tree
-    .toDelimited("|", header, false)
-    .replace(/\n/g, "\n ")
-    .trim()
 
 const nameToAnchor = (name: string) => name.replace(/ /g, "_")
 
@@ -383,10 +370,8 @@ export {
   toCommaList,
   nameToAnchor,
   getIndefiniteArticle,
-  replaceNext,
   replaceNode,
   nodeToFlatObject,
-  toScrollTable,
   getJoined,
   isLanguage,
   getCleanedId,

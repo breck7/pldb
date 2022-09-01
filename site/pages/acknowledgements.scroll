@@ -1,0 +1,40 @@
+title Acknowledgements
+import settings.scroll
+groups index
+
+subsection Contributors
+
+aftertext
+ Thank you to everyone who has contributed directly to the PLDB repo:
+ https://github.com/breck7/pldb PLDB repo
+ https://api.github.com/repos/breck7/pldb/contributors everyone
+
+CONTRIBUTORS_TABLE
+
+subsection Sources
+
+aftertext
+ The vast majority of the information on this site comes from other websites and projects and should always include a link back to the `source`. Thank you to all of those sites, including:
+ wrap ` span title="And if there's a link missing somewhere, please report a bug!"
+
+SOURCES_TABLE
+
+subsection NPM Packages
+
+aftertext
+ Thank you to the developers building these packages used by PLDB:
+
+PACKAGES_TABLE
+
+subsection Written In
+
+aftertext
+ PLDB itself is written in a number of languages including:
+
+WRITTEN_IN_TABLE
+
+subsection Language Creators
+
+aftertext
+ And of course, thank you to all of the language creators who created the languages that are the subject of this site.
+ link BASE_URL/lists/creators.html language creators

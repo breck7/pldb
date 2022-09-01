@@ -12,25 +12,23 @@ const shell = require("child_process").execSync
 
 import { LanguagePageTemplate, FeaturePageTemplate } from "./pages"
 import { PLDBBaseFolder } from "./PLDBBase"
-import { ListRoutes } from "./routes"
 
 const pldbBase = PLDBBaseFolder.getBase().loadFolder()
 const codeDir = __dirname
 const rootDir = path.join(codeDir, "..")
-const blogDir = path.join(rootDir, "blog")
-const pagesDir = path.join(blogDir, "pages")
-const settingsFilePath = path.join(blogDir, "settings.scroll")
-const publishedRootFolder = path.join(rootDir, "pldb.local")
-const publishedDocsFolder = path.join(publishedRootFolder, "docs")
-const publishedPagesFolder = path.join(publishedRootFolder, "pages")
-const publishedListsFolder = path.join(publishedRootFolder, "lists")
-const publishedPostsFolder = path.join(publishedRootFolder, "posts")
-const publishedLanguagesFolder = path.join(publishedRootFolder, "languages") // Todo: eventually redirect away from /languages?
+const siteFolder = path.join(rootDir, "site")
+const settingsFilePath = path.join(siteFolder, "settings.scroll")
+const pagesDir = path.join(siteFolder, "pages")
+const publishedDocsFolder = path.join(siteFolder, "docs")
+const publishedPagesFolder = path.join(siteFolder, "pages")
+const listsFolder = path.join(siteFolder, "lists")
+const publishedPostsFolder = path.join(siteFolder, "posts")
+const publishedLanguagesFolder = path.join(siteFolder, "languages") // Todo: eventually redirect away from /languages?
 
 import {
-  replaceNext,
   isLanguage,
   benchmark,
+  nameToAnchor,
   benchmarkResults,
   listGetters,
   lastCommitHashInFolder,
@@ -38,24 +36,47 @@ import {
   runCommand
 } from "./utils"
 
+const buildAllList = []
+const buildAll: MethodDecorator = (
+  target: Object,
+  prop: PropertyKey,
+  descriptor: PropertyDescriptor
+): void => {
+  buildAllList.push(prop)
+}
+
+const buildImportsFile = (filepath, varMap) => {
+  Disk.write(
+    filepath,
+    `importOnly\n` +
+      Object.keys(varMap)
+        .map(key => {
+          let value = varMap[key]
+
+          if (value.rows)
+            return `replace ${key}
+ pipeTable
+  ${new TreeNode(value.rows)
+    .toDelimited("|", value.header, false)
+    .replace(/\n/g, "\n  ")}`
+
+          value = value.toString()
+
+          if (value.includes("\n")) return `replace ${key} ${value}`
+
+          return `replace ${key}
+ ${value.replace(/\n/g, "\n ")}`
+        })
+        .join("\n")
+  )
+}
+
 class SiteBuilder {
   buildAllCommand() {
-    this.copyBlogFolderCommand()
-    this.copyNpmAssetsCommand()
-    this.buildSettingsFileCommand()
-    this.buildAcknowledgementsPageCommand()
-    this.buildPagesCommand()
-    this.buildListsCommand()
-    this.buildPostsCommand()
-    this.buildWhatsNewComponent()
-    this.buildHomepageCommand()
-    this.buildSingleGrammarFile()
-    this.buildKeywordsOneHot()
-    this.buildCsvsCommand()
-    this.buildJsonCommand()
-    this.buildRedirectsCommand()
-    this.buildSearchIndexCommand()
-    this.buildDatabasePagesCommand()
+    buildAllList.forEach(methodName => {
+      console.log(methodName)
+      this[methodName]()
+    })
     this._printBenchmarkResults()
   }
 
@@ -70,111 +91,57 @@ class SiteBuilder {
   }
 
   @benchmark
+  @buildAll
   copyNpmAssetsCommand() {
     // Copy node module assets
-    Disk.mkdir(path.join(publishedRootFolder, "node_modules"))
+    Disk.mkdir(path.join(siteFolder, "node_modules"))
     shell(
-      `cp -R ${rootDir}/node_modules/monaco-editor ${publishedRootFolder}/node_modules/`
+      `cp -R ${rootDir}/node_modules/monaco-editor ${siteFolder}/node_modules/`
     )
-    shell(
-      `cp -R ${rootDir}/node_modules/jtree ${publishedRootFolder}/node_modules/`
-    )
+    shell(`cp -R ${rootDir}/node_modules/jtree ${siteFolder}/node_modules/`)
   }
 
   @benchmark
-  copyBlogFolderCommand() {
-    shell(
-      `rm -rf ${publishedRootFolder}; cp -R ${blogDir} ${publishedRootFolder}`
-    )
-  }
-
-  @benchmark
+  @buildAll
   buildSingleGrammarFile() {
     // Copy grammar to docs folder for easy access in things like TN Designer.
-    Disk.write(
-      path.join(publishedRootFolder, "pldb.grammar"),
-      pldbBase.grammarCode
-    )
+    Disk.write(path.join(siteFolder, "pldb.grammar"), pldbBase.grammarCode)
   }
 
   @benchmark
-  buildSettingsFileCommand() {
-    // todo: can we refactor scroll settings so we no longer need this?
-    const lastHash = lastCommitHashInFolder()
-    const builtOnYear = dayjs().format("YYYY")
-    const builtOnDay = dayjs().format("MM/DD/YYYY")
-    const tree = new TreeNode(Disk.read(settingsFilePath))
-
-    tree.getNodeByColumns("replace", "LAST_HASH").setWord(2, lastHash)
-    tree.getNodeByColumns("replace", "BUILT_IN_YEAR").setWord(2, builtOnYear)
-    tree.getNodeByColumns("replace", "BUILT_ON_DAY").setWord(2, builtOnDay)
-
-    Disk.write(
-      path.join(publishedRootFolder, "settings.scroll"),
-      tree.toString()
-    )
-  }
-
-  @benchmark
-  buildListsCommand() {
-    const listRoutes = new ListRoutes(pldbBase)
-    listGetters(listRoutes).forEach(getter => {
-      Disk.write(
-        path.join(publishedRootFolder, "lists", `${getter}.scroll`),
-        listRoutes[getter]
-      )
+  @buildAll
+  buildBuildLogImportsCommand() {
+    buildImportsFile(path.join(siteFolder, "buildLogImports.scroll"), {
+      LAST_HASH: lastCommitHashInFolder(),
+      BUILT_IN_YEAR: dayjs().format("YYYY"),
+      builtOnDay: dayjs().format("MM/DD/YYYY")
     })
-    new ScrollFolder(publishedListsFolder).buildFiles()
-  }
-
-  @imemo get postsScroll() {
-    return new ScrollFolder(publishedPostsFolder)
   }
 
   @benchmark
-  buildWhatsNewComponent() {
-    const { postsScroll } = this
+  @buildAll
+  buildKeywordsImportsCommand() {
+    const { keywordsTable } = pldbBase
+    const { rows, langsWithKeywordsCount } = keywordsTable
 
-    const topLangs = pldbBase.topLanguages
-      .slice(0, 10)
-      .map(file => `<a href="./languages/${file.permalink}">${file.title}</a>`)
-      .join(" · ")
-
-    const newPosts = postsScroll.files
-      .slice(0, 5)
-      .map(file => `<a href="./posts/${file.permalink}">${file.title}</a>`)
-      .join("<br>")
-
-    Disk.write(
-      path.join(publishedRootFolder, "whatsNew.scroll"),
-      `importOnly
-replace TOP_LANGS ${topLangs}
-replace NEW_POSTS ${newPosts}`
-    )
+    buildImportsFile(path.join(listsFolder, "keywordsImports.scroll"), {
+      NUM_KEYWORDS: numeral(rows.length).format("0,0"),
+      LANGS_WITH_KEYWORD_DATA: langsWithKeywordsCount,
+      KEYWORDS_TABLE: {
+        rows,
+        header: ["keyword", "count", "frequency", "langs"]
+      }
+    })
   }
 
   @benchmark
-  buildHomepageCommand() {
-    new ScrollFolder(publishedRootFolder).buildFiles()
-  }
-
-  @benchmark
-  buildPagesCommand() {
-    new ScrollFolder(publishedPagesFolder).buildFiles()
-  }
-
-  @benchmark
-  buildPostsCommand() {
-    this.postsScroll.buildFiles()
-  }
-
-  @benchmark
+  @buildAll
   buildRedirectsCommand() {
-    Disk.read(path.join(blogDir, "redirects.txt"))
+    Disk.read(path.join(siteFolder, "redirects.txt"))
       .split("\n")
       .forEach(line => {
         const link = line.split(" ")
-        const oldFile = path.join(publishedRootFolder, link[0])
+        const oldFile = path.join(siteFolder, link[0])
         Disk.write(
           oldFile,
           `<meta http-equiv="Refresh" content="0; url='${link[1]}'" />`
@@ -183,6 +150,7 @@ replace NEW_POSTS ${newPosts}`
   }
 
   @benchmark
+  @buildAll
   buildDatabasePagesCommand() {
     pldbBase.forEach(file => {
       const filePath = path.join(publishedLanguagesFolder, `${file.id}.scroll`)
@@ -194,20 +162,15 @@ replace NEW_POSTS ${newPosts}`
 
       Disk.write(filePath, new constructor(file).toScroll())
     })
-
-    new ScrollFolder(publishedLanguagesFolder).buildFiles()
   }
 
   @benchmark
-  buildAcknowledgementsPageCommand() {
+  @buildAll
+  buildAcknowledgementsImportsCommand() {
     const { sources } = pldbBase
-    const table =
+    const sourcesTable =
       `list\n` +
       sources.map(s => ` - <a href="https://${s}">${s}</a>`).join("\n")
-
-    const ackPath = path.join(pagesDir, "acknowledgements.scroll")
-    const page = new TreeNode(Disk.read(ackPath))
-    replaceNext(page, "comment autogenAcknowledgements", table)
 
     let writtenIn = [
       "javascript",
@@ -229,19 +192,12 @@ replace NEW_POSTS ${newPosts}`
 
     writtenIn = lodash.sortBy(writtenIn, "rank")
 
-    const text = writtenIn
+    const writtenInTable = writtenIn
       .map(
         file =>
           ` - <a href="BASE_URL/languages/${file.permalink}">${file.title}</a>`
       )
       .join("\n")
-
-    replaceNext(
-      page,
-      "comment autogenWrittenIn",
-      `list
-${text}`
-    )
 
     const npmPackages = Object.keys({
       ...require("../package.json").dependencies,
@@ -254,22 +210,27 @@ ${text}`
       npmPackages
         .map(s => ` - <a href="https://www.npmjs.com/package/${s}">${s}</a>`)
         .join("\n")
-    replaceNext(page, "comment autogenPackages", packageTable)
 
+    let contributorsTable = ""
     try {
-      const contributorsTable =
+      contributorsTable =
         `list\n` +
         JSON.parse(Disk.read(path.join(pagesDir, "contributors.json")))
           .filter(item => item.login !== "codelani" && item.login !== "breck7")
           .map(item => ` - <a href="${item.html_url}">${item.login}</a>`)
           .join("\n")
-      replaceNext(page, "comment autogenContributors", contributorsTable)
     } catch (err) {}
 
-    Disk.write(ackPath, page.toString())
+    buildImportsFile(path.join(listsFolder, "acknowledgementsImports.scroll"), {
+      WRITTEN_IN_TABLE: writtenInTable,
+      PACKAGES_TABLE: packageTable,
+      SOURCES_TABLE: sourcesTable,
+      CONTRIBUTORS_TABLE: contributorsTable
+    })
   }
 
   @benchmark
+  @buildAll
   buildSearchIndexCommand() {
     const objects = pldbBase.objectsForCsv.map(object => {
       return {
@@ -279,21 +240,23 @@ ${text}`
       }
     })
     Disk.write(
-      path.join(publishedRootFolder, "searchIndex.json"),
+      path.join(siteFolder, "searchIndex.json"),
       JSON.stringify(objects, null, 2)
     )
   }
 
   @benchmark
+  @buildAll
   buildKeywordsOneHot() {
     Disk.write(
-      path.join(publishedRootFolder, "keywordsOneHot.csv"),
+      path.join(siteFolder, "keywordsOneHot.csv"),
       new TreeNode(pldbBase.keywordsOneHot).toCsv()
     )
   }
 
   @benchmark
-  buildCsvsCommand() {
+  @buildAll
+  buildCsvImportsCommand() {
     const { csvBuildOutput } = pldbBase
     const {
       pldbCsv,
@@ -304,49 +267,317 @@ ${text}`
       colNamesForCsv
     } = csvBuildOutput
 
-    Disk.write(path.join(publishedRootFolder, "pldb.csv"), pldbCsv)
-    Disk.write(path.join(publishedRootFolder, "languages.csv"), langsCsv)
-    Disk.write(path.join(publishedRootFolder, "columns.csv"), columnsCsv)
+    Disk.write(path.join(siteFolder, "pldb.csv"), pldbCsv)
+    Disk.write(path.join(siteFolder, "languages.csv"), langsCsv)
+    Disk.write(path.join(siteFolder, "columns.csv"), columnsCsv)
 
-    // Build documentation page
-    // todo: add linkify to scroll
-    const page = new TreeNode(
-      Disk.read(path.join(blogDir, "docs", "csv.scroll"))
-        // todo use scroll vars
-        .replace("LANG_COUNT", pldbBase.topLanguages.length)
-        .replace("COL_COUNT", colNamesForCsv.length)
-        .replace("ENTITY_COUNT", pldbBase.length)
-        .replace(
-          "ENTITIES_FILE_SIZE_UNCOMPRESSED",
-          numeral(pldbCsv.length).format("0.0b")
-        )
-        .replace(
-          "LANGS_FILE_SIZE_UNCOMPRESSED",
-          numeral(langsCsv.length).format("0.0b")
-        )
-    )
-
-    const columnTable =
-      `pipeTable\n ` +
-      columnsMetadataTree
-        .toDelimited("|", columnMetadataColumnNames)
-        .replace(/\n/g, "\n ")
-
-    replaceNext(page, "comment autogenColumnDocs", columnTable)
-    Disk.write(path.join(publishedDocsFolder, "csv.scroll"), page.toString())
-    new ScrollFolder(publishedDocsFolder).buildFiles()
+    buildImportsFile(path.join(publishedDocsFolder, "csvImports.scroll"), {
+      LANG_COUNT: pldbBase.topLanguages.length,
+      COL_COUNT: colNamesForCsv.length,
+      ENTITY_COUNT: pldbBase.length,
+      ENTITIES_FILE_SIZE_UNCOMPRESSED: numeral(pldbCsv.length).format("0.0b"),
+      LANGS_FILE_SIZE_UNCOMPRESSED: numeral(langsCsv.length).format("0.0b"),
+      COLUMN_METADATA_TABLE: {
+        header: columnMetadataColumnNames,
+        rows: columnsMetadataTree
+      }
+    })
   }
 
   @benchmark
+  @buildAll
   buildJsonCommand() {
     const str = JSON.stringify(pldbBase.typedMap, null, 2)
-    Disk.write(path.join(publishedRootFolder, "pldb.json"), str)
+    Disk.write(path.join(siteFolder, "pldb.json"), str)
     Disk.write(path.join(codeDir, "package", "pldb.json"), str)
   }
 
   @benchmark
   _formatDatabase() {
     pldbBase.forEach(file => file.prettifyAndSave())
+  }
+
+  @benchmark
+  @buildAll
+  buildTopListImports() {
+    const files = pldbBase.topLanguages.map(file => {
+      const appeared = file.get("appeared")
+      const rank = file.languageRank + 1
+      const type = file.get("type")
+      const title = file.get("title")
+      return {
+        title,
+        titleLink: `../languages/${file.permalink}`,
+        rank,
+        type,
+        appeared
+      }
+    })
+
+    const vars = {}
+    const pages = [100, 250, 500, 1000]
+    const header = ["title", "titleLink", "appeared", "type", "rank"]
+    pages.forEach(
+      num =>
+        (vars[`TOP_${num}`] = {
+          header,
+          rows: files.slice(0, num)
+        })
+    )
+
+    buildImportsFile(path.join(listsFolder, "topLangsImports.scroll"), vars)
+  }
+
+  @benchmark
+  @buildAll
+  buildExtensionsImports() {
+    const files = pldbBase
+      .filter(file => file.get("type") !== "feature")
+      .map(file => {
+        return {
+          name: file.title,
+          nameLink: `../languages/${file.permalink}`,
+          rank: file.rank,
+          extensions: file.extensions
+        }
+      })
+      .filter(file => file.extensions)
+
+    const allExtensions = new Set<string>()
+    files.forEach(file =>
+      file.extensions.split(" ").forEach(ext => allExtensions.add(ext))
+    )
+
+    const rows = lodash.sortBy(files, "rank")
+
+    buildImportsFile(path.join(listsFolder, "extensionsImports.scroll"), {
+      EXTENSION_COUNT: numeral(allExtensions.size).format("0,0"),
+      TABLE: {
+        rows,
+        header: ["name", "nameLink", "extensions"]
+      },
+      LANG_WITH_DATA_COUNT: files.length
+    })
+  }
+
+  @benchmark
+  @buildAll
+  buildEntitiesImports() {
+    let files = pldbBase.map(file => {
+      const appeared = file.get("appeared")
+      const rank = file.rank + 1
+      const type = file.get("type")
+      const title = file.get("title")
+      return {
+        title,
+        titleLink: `../languages/${file.permalink}`,
+        rank,
+        type,
+        appeared
+      }
+    })
+
+    buildImportsFile(path.join(listsFolder, "entitiesImports.scroll"), {
+      COUNT: numeral(Object.values(files).length).format("0,0"),
+      TABLE: {
+        rows: lodash.sortBy(files, "rank"),
+        header: ["title", "titleLink", "type", "appeared", "rank"]
+      }
+    })
+  }
+
+  @benchmark
+  @buildAll
+  buildLanguagesImports() {
+    const files = pldbBase
+      .filter(file => file.isLanguage)
+      .map(file => {
+        const title = file.get("title")
+        const appeared = file.get("appeared") || ""
+        const rank = file.languageRank + 1
+        const type = file.get("type")
+        return {
+          title,
+          titleLink: `../languages/${file.permalink}`,
+          type,
+          appeared,
+          rank
+        }
+      })
+
+    buildImportsFile(path.join(listsFolder, "languagesImports.scroll"), {
+      COUNT: numeral(Object.values(files).length).format("0,0"),
+      TABLE: {
+        rows: lodash.sortBy(files, "rank"),
+        header: ["title", "titleLink", "type", "appeared", "rank"]
+      }
+    })
+  }
+
+  @benchmark
+  @buildAll
+  buildFeaturesImports() {
+    const { topFeatures } = pldbBase
+
+    buildImportsFile(path.join(listsFolder, "featuresImports.scroll"), {
+      COUNT: numeral(Object.values(topFeatures).length).format("0,0"),
+      TABLE: {
+        rows: topFeatures,
+        header: [
+          "feature",
+          "featureLink",
+          "pseudoExample",
+          "yes",
+          "no",
+          "percentage"
+        ]
+      }
+    })
+  }
+
+  @benchmark
+  @buildAll
+  buildCorporationsImports() {
+    const entities = {}
+
+    const files = lodash.sortBy(
+      pldbBase.filter(
+        file => file.isLanguage && file.corporateDevelopers.length
+      ),
+      "languageRank"
+    )
+
+    files.forEach(file => {
+      file.corporateDevelopers.forEach(entity => {
+        if (!entities[entity]) entities[entity] = []
+        entities[entity].push({
+          id: file.id,
+          title: file.title,
+          languageRank: file.languageRank
+        })
+      })
+    })
+
+    const rows = Object.keys(entities).map(name => {
+      const languages = entities[name]
+        .map(
+          lang => `<a href='../languages/${lang.permalink}'>${lang.title}</a>`
+        )
+        .join(" - ")
+      const count = entities[name].length
+      const top = -Math.min(...entities[name].map(lang => lang.languageRank))
+
+      const wrappedName = `<a name='${nameToAnchor(name)}' />${name}`
+
+      return { name: wrappedName, languages, count, top }
+    })
+    const sorted = lodash.sortBy(rows, ["count", "top"])
+    sorted.reverse()
+
+    buildImportsFile(path.join(listsFolder, "corporationsImports.scroll"), {
+      TABLE: {
+        rows: sorted,
+        header: ["name", "languages", "count"]
+      },
+      COUNT: numeral(Object.values(entities).length).format("0,0")
+    })
+  }
+
+  @benchmark
+  @buildAll
+  buildCreatorsImports() {
+    const creators = {}
+
+    lodash
+      .sortBy(
+        pldbBase.filter(file => file.isLanguage && file.has("creators")),
+        "languageRank"
+      )
+      .forEach(file => {
+        file.creators.forEach(creatorName => {
+          if (!creators[creatorName]) creators[creatorName] = []
+          creators[creatorName].push(file)
+        })
+      })
+
+    const wikipediaLinks = new TreeNode(
+      Disk.read(path.join(listsFolder, "creators.tree"))
+    )
+
+    const rows = Object.keys(creators).map(name => {
+      const languages = creators[name]
+        .map(
+          file => `<a href='../languages/${file.permalink}'>${file.title}</a>`
+        )
+        .join(" - ")
+      const count = creators[name].length
+      let topRank = 10000
+
+      creators[name].forEach(file => {
+        const { languageRank } = file
+        if (languageRank < topRank) topRank = languageRank
+      })
+
+      const person = wikipediaLinks.nodesThatStartWith(name)[0]
+      const anchorTag = nameToAnchor(name)
+      const wrappedName = !person
+        ? `<a name='${anchorTag}' />${name}`
+        : `<a name='${anchorTag}' href='https://en.wikipedia.org/wiki/${person.get(
+            "wikipedia"
+          )}'>${name}</a>`
+
+      return {
+        name: wrappedName,
+        languages,
+        count,
+        topRank: topRank + 1
+      }
+    })
+
+    const sorted = lodash.sortBy(rows, "topRank")
+
+    buildImportsFile(path.join(listsFolder, "creatorsImports.scroll"), {
+      TABLE: {
+        rows: sorted,
+        header: ["name", "languages", "count", "topRank"]
+      },
+      COUNT: numeral(Object.values(creators).length).format("0,0")
+    })
+  }
+
+  @benchmark
+  @buildAll
+  buildHomepageImportsCommand() {
+    const postsScroll = new ScrollFolder(publishedPostsFolder)
+
+    buildImportsFile(path.join(siteFolder, "homepageImports.scroll"), {
+      TOP_LANGS: pldbBase.topLanguages
+        .slice(0, 10)
+        .map(
+          file => `<a href="./languages/${file.permalink}">${file.title}</a>`
+        )
+        .join(" · "),
+      NEW_POSTS: postsScroll.files
+        .slice(0, 5)
+        .map(file => `<a href="./posts/${file.permalink}">${file.title}</a>`)
+        .join("<br>")
+    })
+  }
+
+  @benchmark
+  buildDatabasePagesScrollCommand() {
+    new ScrollFolder(publishedLanguagesFolder).buildFiles()
+  }
+
+  @buildAll
+  @benchmark
+  buildScrolls() {
+    new ScrollFolder(listsFolder).buildFiles()
+    new ScrollFolder(siteFolder).buildFiles()
+    new ScrollFolder(publishedPagesFolder).buildFiles()
+    new ScrollFolder(publishedDocsFolder).buildFiles()
+    new ScrollFolder(publishedPostsFolder).buildFiles()
+    this.buildDatabasePagesScrollCommand()
   }
 }
 

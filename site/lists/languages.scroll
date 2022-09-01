@@ -1,0 +1,22 @@
+title All Languages
+import settings.scroll
+import languagesImports.scroll
+columnWidth 60
+
+aftertext
+ PLDB currently has COUNT languages.
+
+aftertext
+ Add a language.
+ https://edit.pldb.com/create Add a language
+
+aftertext
+ You can also download this list as a CSV file.
+ link ../languages.csv CSV file
+
+groups index
+endSnippet
+
+TABLE
+
+tableSearch

@@ -1,0 +1,27 @@
+title Communities
+import settings.scroll
+columnWidth 120
+
+groups index
+
+aftertext
+ A list of active Programming Language Design Communities
+
+endSnippet
+
+pipeTable
+ name|nameLink|description
+ Proceedings of the ACM on Programming Languages (PACMPL)|http://pacmpl.acm.org/|Publishes research on all aspects of programming languages
+ Special Interest Group on Programming Languages (SIGPLAN)|http://sigplan.org/|Explores programming language concepts and tools, focusing on design, implementation, practice, and theory.
+ Programming Research Laboratory|http://prl.ccs.neu.edu/|Research Group at Northeastern University in Boston, MA
+ Programming Language Subreddit|https://www.reddit.com/r/ProgrammingLanguages/|Subreddit about programming language design
+ Programming Language Design on Quora|https://quora.com/topic/Programming-Language-Design|Quora questions tagged with Programming-Language-Design
+ Language Design questions on StackOverflow|https://stackoverflow.com/questions/tagged/language-design|StackOverflow questions tagged with language-design
+ Lambda the Ultimate|http://lambda-the-ultimate.org|Blog, comments and forums about language design
+ ProgLangDesign|http://proglangdesign.net|A website for the #proglangdesign community on freenode
+ HackerNews|http://news.ycombinator.com|HackerNews often contains posts about language design issues
+ Psychology of Programming Interest Group|http://www.ppig.org/|Gathers people from diverse communities to explore common interests in the psychological aspects of programming and in the computational aspects of psychology.|
+ LangJam|https://github.com/langjam/langjam|In Lang Jam, you and your teammates will create a programming language based on the theme for that jam.
+ CHM|https://computerhistory.org/|Computer History Museum
+ DBLP|https://dblp.org/|dblp computer science bibliography
+ Shape of Code|https://www.shape-of-code.com/|Evidence-based software engineering blog and book

@@ -18,12 +18,11 @@ import {
 	isValidEmail
 } from "../utils"
 import simpleGit, { SimpleGit } from "simple-git"
-import { SearchRoutes } from "../routes"
 
 const baseFolder = path.join(__dirname, "..", "..")
 const ignoreFolder = path.join(baseFolder, "ignore")
-const publishedFolder = path.join(baseFolder, "pldb.local")
-const csvFileLength = Disk.read(path.join(publishedFolder, "pldb.csv")).length
+const builtSiteFolder = path.join(baseFolder, "site")
+const csvFileLength = Disk.read(path.join(builtSiteFolder, "pldb.csv")).length
 
 const logPath = path.join(ignoreFolder, "editServerLog.tree")
 Disk.touch(logPath)
@@ -81,7 +80,7 @@ const parseGitAuthor = (field = GIT_DEFAULT_AUTHOR) => {
 }
 
 const scrollSettings = getFullyExpandedFile(
-	path.join(publishedFolder, "settings.scroll")
+	path.join(builtSiteFolder, "settings.scroll")
 ).code
 
 class PLDBEditServer {
@@ -150,7 +149,7 @@ html
 		})
 
 		app.use(express.static(__dirname))
-		app.use(express.static(publishedFolder))
+		app.use(express.static(builtSiteFolder))
 
 		app.get("/create", (req, res) =>
 			res.send(this.scrollToHtml(editForm(undefined, "Add a language")))
@@ -175,8 +174,8 @@ ${editForm(submission, "Error")}`
 			)
 		}
 
-		app.get("/search", (req, res) => 
-			res.send(this.scrollToHtml(new SearchRoutes().search(this.folder, req.query.q)))
+		app.get("/search", (req, res) =>
+			res.send(this.scrollToHtml(this.search(req.query.q)))
 		)
 
 		app.get("/edit/:id", (req, res) => {
@@ -266,6 +265,56 @@ ${editForm(submission, "Error")}`
 				errorForm(content, error, res)
 			}
 		})
+	}
+
+	search(query): string {
+		const pldbBase = this.folder
+		const regex = new RegExp(query, "i")
+		const escapedQuery = htmlEscaped(query)
+		const hits = pldbBase.filter(file => file.toString().match(regex))
+
+		const nameHits = pldbBase.filter(file =>
+			file.names.some(name => name.match(regex))
+		)
+
+		const baseUrl = "https://pldb.com/languages/"
+
+		const highlightHit = file => {
+			const line = file
+				.toString()
+				.split("\n")
+				.find(line => line.match(regex))
+			return line.replace(query, `<b>${query}</b>`)
+		}
+		const searchResults = hits
+			.map(
+				file =>
+					` <a href="${baseUrl}${file.permalink}">${
+						file.title
+					}</a> - ${file.get("type")} #${file.rank} - ${highlightHit(file)}`
+			)
+			.join("<br>\n")
+
+		const nameResults = nameHits
+			.map(
+				file =>
+					` <a href="${baseUrl}${file.permalink}">${
+						file.title
+					}</a> - ${file.get("type")} #${file.rank}`
+			)
+			.join("<br>\n")
+
+		return `paragraph
+ ${nameHits.length} name matches for "${escapedQuery}" shown below.
+
+html
+${nameResults}
+
+paragraph
+ ${hits.length} full text matches for "${escapedQuery}" shown below.
+
+html
+ ${searchResults}`
 	}
 
 	listen(port = 4444) {
@@ -359,7 +408,7 @@ ${scrollContent}
 	compileGrammarForInBrowserCodeMirrorEditor() {
 		// todo: cleanup
 		jtree.compileGrammarForBrowser(
-			path.join(publishedFolder, "pldb.grammar"),
+			path.join(builtSiteFolder, "pldb.grammar"),
 			__dirname + "/",
 			false
 		)

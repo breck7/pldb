@@ -1,0 +1,82 @@
+title Calendar
+import settings.scroll
+columnWidth 120
+
+groups index
+
+aftertext
+ A list of conferences of interest to programming language designers. @Edit this file@.
+ wrap @ https://github.com/breck7/pldb/blob/main/blog/lists/calendar.scroll
+
+section Upcoming Conferences
+
+pipeTable
+ title|series|month|day|year|ends|location|country|titleLink|twitter
+ Psychology of Programming Interest Group 2022|PPIG|September|5|2022|9/09/22|Milton Keynes|UK|https://ppig.org/workshops/2022-annual-workshop/|
+ International Conference on Functional Programming 2022|ICFP|September|11|2022|9/16/22|Ljubljana|Slovenia|https://icfp22.sigplan.org/|
+ Strange Loop 2022|StangeLoop|September|22|2022|09/04/22|Union Station, St. Louis, Missouri|USA|https://www.thestrangeloop.com/|strangeloop_stl
+ RacketCon 2022|RacketCon|October|28|2022|10/30/22|Providence, Rhode Island|USA|https://con.racket-lang.org/|
+ Systems, Programming, Languages and Applications: Software for Humanity 2021|SPLASH|December|5|2022|12/10/22|Milford Sound|New Zealand|https://2022.splashcon.org/|splashcon
+
+endSnippet
+
+section Past Conferences
+
+pipeTable
+ title|series|month|day|year|ends|location|country|titleLink|twitter
+ Balisage: The Markup Conference 2022|Balisage|August|1|2022|8/5/22|Online|Online|http://www.balisage.net/|
+ Programming Language Design and Implementation 2022|PLDI|June|15|2022|6/17/22|San Diego|USA|https://conf.researchr.org/home/pldi-2022|
+ RacketCon 2021|RacketCon|November|5|2021|11/07/21|Online|Online|https://con.racket-lang.org/2021/|
+ Systems, Programming, Languages and Applications: Software for Humanity 2021|SPLASH|October|17|2021|10/22/21|Chicago, Illinois|USA|https://2021.splashcon.org/|splashcon
+ Strange Loop 2021|StangeLoop|September|30|2021|10/02/21|Union Station, St. Louis, Missouri|USA|https://www.thestrangeloop.com/|strangeloop_stl
+ International Conference on Functional Programming 2021|ICFP|August|22|2021|8/28/21|Online|Online|https://icfp21.sigplan.org/|
+ Balisage: The Markup Conference 2021|Balisage|August|2|2021|8/6/21|Washington, D.C.|USA|http://www.balisage.net/|
+ Psychology of Programming Interest Group 2021|PPIG|June|21|2021|6/25/21|Online|Online|https://ppig.org/workshops/2021-annual-workshop/|
+ History of Programming Languages IV|HOPL|June|20|2021|6/22/21|Online|Online|https://hopl4.sigplan.org/|
+ Programming Language Design and Implementation 2021|PLDI|June|20|2021|6/22/21|Online|Online|https://conf.researchr.org/home/pldi-2021|
+ Systems, Programming, Languages and Applications: Software for Humanity 2020|SPLASH|November|15|2020|11/20/20|Online|Online|https://2020.splashcon.org/|splashcon
+ RacketCon 2020|RacketCon|October|17|2020|10/18/20|Online|Online|https://con.racket-lang.org/|
+ Strange Loop 2020|StangeLoop|October|1|2020|10/03/20|Stifel Theatre, St. Louis, MO, USA|USA|https://www.thestrangeloop.com/|strangeloop_stl
+ International Conference on Functional Programming 2020|ICFP|August|24|2020|8/26/20|Online|Online|https://icfp19.sigplan.org/home/icfp-2020|
+ Psychology of Programming Interest Group 2020|PPIG|July|29|2020|7/31/20|Online|Online|http://www.ppig.org/upcoming/ppig-2020|
+ Balisage: The Markup Conference 2020|Balisage|July|28|2020|7/31/20|Rockville, Maryland|USA|http://www.balisage.net/|
+ Programming Language Design and Implementation 2020|PLDI|June|15|2020|6/20/20|Online|Online|https://conf.researchr.org/home/pldi-2020|
+ 42nd International Conference on Software Engineering|ICSE|May|23|2020|5/29/20|Online|Online|https://conf.researchr.org/home/icse-2020|
+ 2020 ACM CHI Conference on Human Factors in Computing Systems|CHI|April|25|2020|4/30/20|Honolulu, Hawaii|USA|http://www.ppig.org/upcoming/chi-2020|
+ ‹Programming›|ICASEP|March|23|2020|3/26/20|Online|Online|https://2020.programming-conference.org/|programmingconf
+ Psychology of Programming Interest Group Work-in-Progress 2020|PPIGWIP|February|17|2020|2/18/20|Sheffield Hallam University, Sheffield|UK|http://www.ppig.org/upcoming/ppig-wip-2020|
+ Principles of Programming Languages 2020|POPL|January|19|2020|1/25/19|New Orleans, Louisiana|United States|https://popl20.sigplan.org/|
+ Systems, Programming, Languages and Applications: Software for Humanity 2019|SPLASH|October|20|2019|10/25/19|Athens, Greece|Greece|https://conf.researchr.org/home/splash-2019|
+ Strange Loop 2019|StangeLoop|September|12|2019|9/14/19|Stifel Theatre, St. Louis, MO, USA|USA|https://www.thestrangeloop.com/|
+ Psychology of Programming Interest Group|PPIG|August|28|2019|8/30/19|School of Computing, Urban Sciences Building, Newcastle University, Newcastle, UK|UK|http://www.ppig.org/workshops/ppig-2019-30th-annual-workshop|
+ International Conference on Functional Programming 2019|ICFP|August|19|2019|8/21/19|Berlin, Germany|Germany|https://icfp19.sigplan.org/|
+ Second International Summer School on Metaprogramming|ISSMP|August|11|2019|8/16/19|Schloss Dagstuhl, Germany|Germany|https://www.cl.cam.ac.uk/events/metaprog/2019/|
+ Balisage: The Markup Conference 2019|Balisage|July|29|2019|8/2/19|Rockville, Maryland, USA|USA|http://www.balisage.net/|
+ RacketCon 2019|RacketCon|July|13|2019|7/14/19|University of Utah, Salt Lake City, Utah, USA|USA|https://con.racket-lang.org/|
+ Programming Language Design and Implementation 2019|PLDI|June|24|2019|6/26/19|Phoenix, AZ, USA|USA|https://pldi19.sigplan.org/home|
+ Oregon Programming Languages Summer School 2019|OPLSS|June|17|2019|6/29/19|Eugene, OR, USA|USA|https://www.cs.uoregon.edu/research/summerschool/summer19/|
+ Principles of Programming Languages 2019|POPL|January|13|2019|1/19/19|Lisbon, Portugal|Portugal|https://popl19.sigplan.org/|
+ Code Mesh 2018|CodeMesh|November|8|2018|11/9/18|London, UK|UK|https://codesync.global/conferences/code-mesh-2018/|codemeshio
+ Systems, Programming, Languages and Applications: Software for Humanity 2018|SPLASH|November|4|2018|11/9/18|Boston, MA, USA|USA|https://conf.researchr.org/track/splash-2018/splash-2018-OOPSLA|
+ International Conference on Functional Programming 2018|ICFP|October|23|2018|10/29/18|St. Louis, Missouri, USA|USA|https://conf.researchr.org/home/icfp-2018|
+ Strange Loop 2018|StangeLoop|September|26|2018|9/28/18|St. Louis, MO, USA|USA|https://www.thestrangeloop.com/|
+ Programming Language Design and Implementation 2018|PLDI|June|18|2018|6/22/18|Philadelphia, PA, USA|USA|http://pldi18.sigplan.org/|
+ CRAFT 2018|CRAFT|May|8|2018|5/11/18|Budapest|Hungary|https://craft-conf.com/|
+ 2018 ACM CHI Conference on Human Factors in Computing Systems|CHI|April|21|2018|4/26/18|Montreal|Canada|https://chi2018.acm.org/|
+ Principles of Programming Languages 2018|POPL|January|10|2018|1/12/18|Los Angeles, CA, USA|USA|https://popl18.sigplan.org/|
+ Code Mesh 2017|CodeMesh|November|7|2017|11/9/17|London, UK|UK|http://www.codemesh.io/|codemeshio
+ Systems, Programming, Languages and Applications: Software for Humanity 2017|SPLASH|October|22|2017|10/27/17|Vancouver, Canada|Canada|https://2017.splashcon.org/|
+ Strange Loop 2017|StangeLoop|September|28|2017|9/30/17|Peabody Opera House, St. Louis, MO, USA|USA|https://www.thestrangeloop.com/|
+ History of Programming Languages III|HOPL|June|9|2007|6/10/07|San Diego, CA, USA|USA|http://research.ihost.com/hopl/HOPL-III.html|
+
+
+section Other Event Pages
+
+pipeTable
+ name|nameLink
+ SIGPLAN Conferences|https://sigplan.org/Conferences
+ PRL Seminars|https://prl.ccs.neu.edu/seminars.html
+ Wikipedia list of PL Conferences|https://en.wikipedia.org/wiki/Category:Programming_languages_conferences
+ Compilers Calls For Papers|https://www.wikicfp.com/cfp/call?conference=compilers
+ Programming Languages Calls For Papers|https://www.wikicfp.com/cfp/call?conference=programming%20languages
+ CPP Links: Conferences|https://github.com/MattPD/cpplinks/blob/master/compilers.md#conferences

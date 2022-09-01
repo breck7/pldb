@@ -2,4 +2,11 @@
 ignore/
 node_modules/
 package-lock.json
-pldb.local
+site/languages/*.scroll
+*Imports.scroll
+site/pldb.grammar
+site/scroll.css
+*.html
+*.csv
+*.json
+*.xml

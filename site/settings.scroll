@@ -1,0 +1,18 @@
+importOnly
+
+replaceDefault BASE_URL 
+replaceDefault EDIT_URL https://edit.pldb.com
+
+import buildLogImports.scroll
+
+siteTitle PLDB
+siteDescription PLDB: a Programming Language Database. Build the next great programming language.
+github https://github.com/breck7/pldb
+viewSourceBaseUrl https://github.com/breck7/pldb/blob/main/blog/
+email feedback@pldb.com
+baseUrl https://pldb.com/
+scrollCss 
+maxColumns 2
+import header.scroll
+import footer.scroll
+import scrollExtensions.scroll

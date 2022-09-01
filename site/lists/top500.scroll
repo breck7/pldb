@@ -1,0 +1,13 @@
+title Top 500 Programming Languages
+import settings.scroll
+import topLangsImports.scroll
+maxColumns 2
+
+aftertext
+ Here are the top 500 programming languages in the PLDB. You can also view all the languages in the PLDB. Rankings are explained here.
+ link ./languages.html all the languages 
+ link ../pages/the-rankings-algorithm.html explained here
+
+groups index
+endSnippet
+TOP_500
