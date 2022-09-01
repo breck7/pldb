@@ -350,8 +350,9 @@ class SiteBuilder {
     ])
 
     buildImportsFile(path.join(listsFolder, "extensionsImports.scroll"), {
-      COUNT: numeral(allExtensions.size).format("0,0"),
-      TABLE
+      EXTENSION_COUNT: numeral(allExtensions.size).format("0,0"),
+      TABLE,
+      LANG_WITH_DATA_COUNT: files.length
     })
   }
 

@@ -1,8 +1,10 @@
 title List of File Extensions
 import settings.scroll
+import extensionsImports.scroll
 columnWidth 60
 
-comment autogenExtensionsMessage
+aftertext
+ Here is the list of EXTENSION_COUNT unique file extensions across LANG_WITH_DATA_COUNT languages in the PLDB.
 
 aftertext
  Is PLDB missing the extension(s) of a language? Find the language on the @languages page@ and send a pull request.
@@ -10,4 +12,4 @@ aftertext
 
 tableSearch
 
-comment autogenExtensionsTable
+TABLE
