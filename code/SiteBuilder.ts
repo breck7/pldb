@@ -37,33 +37,19 @@ import {
   runCommand
 } from "./utils"
 
+const buildAllList = []
+const buildAll: MethodDecorator = (
+  target: Object,
+  prop: PropertyKey,
+  descriptor: PropertyDescriptor
+): void => {
+  buildAllList.push(prop)
+}
+
 class SiteBuilder {
   buildAllCommand() {
-    this.copyNpmAssetsCommand()
-    this.buildBuildLogImportsCommand()
-    this.buildAcknowledgementsImportsCommand()
-    this.buildKeywordsImportsCommand()
-    this.buildTopListImports()
-    this.buildHomepageFeedImportsCommand()
-    this.buildSingleGrammarFile()
-    this.buildKeywordsOneHot()
-    this.buildCsvImportsCommand()
-    this.buildJsonCommand()
-    this.buildRedirectsCommand()
-    this.buildSearchIndexCommand()
-    this.buildDatabasePagesCommand()
-    this.buildScrolls()
-
+    buildAllList.forEach(methodName => this[methodName]())
     this._printBenchmarkResults()
-  }
-
-  @benchmark buildScrolls() {
-    new ScrollFolder(listsFolder).buildFiles()
-    new ScrollFolder(siteFolder).buildFiles()
-    new ScrollFolder(publishedPagesFolder).buildFiles()
-    new ScrollFolder(publishedDocsFolder).buildFiles()
-    this.postsScroll.buildFiles()
-    this.buildDatabasePagesScrollCommand()
   }
 
   _printBenchmarkResults() {
@@ -77,6 +63,7 @@ class SiteBuilder {
   }
 
   @benchmark
+  @buildAll
   copyNpmAssetsCommand() {
     // Copy node module assets
     Disk.mkdir(path.join(siteFolder, "node_modules"))
@@ -87,12 +74,14 @@ class SiteBuilder {
   }
 
   @benchmark
+  @buildAll
   buildSingleGrammarFile() {
     // Copy grammar to docs folder for easy access in things like TN Designer.
     Disk.write(path.join(siteFolder, "pldb.grammar"), pldbBase.grammarCode)
   }
 
   @benchmark
+  @buildAll
   buildBuildLogImportsCommand() {
     const lastHash = lastCommitHashInFolder()
     const builtOnYear = dayjs().format("YYYY")
@@ -107,6 +96,7 @@ class SiteBuilder {
   }
 
   @benchmark
+  @buildAll
   buildKeywordsImportsCommand() {
     const { keywordsTable } = pldbBase
     const { rows, langsWithKeywordsCount } = keywordsTable
@@ -130,6 +120,7 @@ replace KEYWORDS_TABLE
   }
 
   @benchmark
+  @buildAll
   buildHomepageFeedImportsCommand() {
     const { postsScroll } = this
 
@@ -152,6 +143,7 @@ replace NEW_POSTS ${newPosts}`
   }
 
   @benchmark
+  @buildAll
   buildRedirectsCommand() {
     Disk.read(path.join(siteFolder, "redirects.txt"))
       .split("\n")
@@ -166,6 +158,7 @@ replace NEW_POSTS ${newPosts}`
   }
 
   @benchmark
+  @buildAll
   buildDatabasePagesCommand() {
     pldbBase.forEach(file => {
       const filePath = path.join(publishedLanguagesFolder, `${file.id}.scroll`)
@@ -180,11 +173,13 @@ replace NEW_POSTS ${newPosts}`
   }
 
   @benchmark
+  @buildAll
   buildDatabasePagesScrollCommand() {
     new ScrollFolder(publishedLanguagesFolder).buildFiles()
   }
 
   @benchmark
+  @buildAll
   buildAcknowledgementsImportsCommand() {
     const { sources } = pldbBase
     const sourcesTable =
@@ -255,6 +250,7 @@ replace CONTRIBUTORS_TABLE
   }
 
   @benchmark
+  @buildAll
   buildSearchIndexCommand() {
     const objects = pldbBase.objectsForCsv.map(object => {
       return {
@@ -270,6 +266,7 @@ replace CONTRIBUTORS_TABLE
   }
 
   @benchmark
+  @buildAll
   buildKeywordsOneHot() {
     Disk.write(
       path.join(siteFolder, "keywordsOneHot.csv"),
@@ -278,6 +275,7 @@ replace CONTRIBUTORS_TABLE
   }
 
   @benchmark
+  @buildAll
   buildCsvImportsCommand() {
     const { csvBuildOutput } = pldbBase
     const {
@@ -313,6 +311,7 @@ replace COLUMN_METADATA_TABLE
   }
 
   @benchmark
+  @buildAll
   buildJsonCommand() {
     const str = JSON.stringify(pldbBase.typedMap, null, 2)
     Disk.write(path.join(siteFolder, "pldb.json"), str)
@@ -325,6 +324,7 @@ replace COLUMN_METADATA_TABLE
   }
 
   @benchmark
+  @buildAll
   buildTopListImports() {
     const files = pldbBase.topLanguages.map(file => {
       const appeared = file.get("appeared")
@@ -359,6 +359,7 @@ ${vars}`
   }
 
   @benchmark
+  @buildAll
   buildExtensionsImports() {
     const files = pldbBase
       .filter(file => file.get("type") !== "feature")
@@ -394,6 +395,7 @@ replace TABLE
   }
 
   @benchmark
+  @buildAll
   buildEntitiesImports() {
     let files = pldbBase.map(file => {
       const appeared = file.get("appeared")
@@ -429,6 +431,7 @@ replace TABLE
   }
 
   @benchmark
+  @buildAll
   buildLanguagesImports() {
     const files = pldbBase
       .filter(file => file.isLanguage)
@@ -466,6 +469,7 @@ replace TABLE
   }
 
   @benchmark
+  @buildAll
   buildFeaturesImports() {
     const { topFeatures } = pldbBase
 
@@ -488,6 +492,7 @@ replace TABLE
   }
 
   @benchmark
+  @buildAll
   buildCorporationsImports() {
     const entities = {}
 
@@ -541,6 +546,7 @@ replace TABLE
   }
 
   @benchmark
+  @buildAll
   buildCreatorsImports() {
     const creators = {}
 
@@ -606,6 +612,17 @@ replace COUNT ${numeral(Object.values(creators).length).format("0,0")}
 replace TABLE
  ${theTable}`
     )
+  }
+
+  @buildAll
+  @benchmark
+  buildScrolls() {
+    new ScrollFolder(listsFolder).buildFiles()
+    new ScrollFolder(siteFolder).buildFiles()
+    new ScrollFolder(publishedPagesFolder).buildFiles()
+    new ScrollFolder(publishedDocsFolder).buildFiles()
+    this.postsScroll.buildFiles()
+    this.buildDatabasePagesScrollCommand()
   }
 }
 
