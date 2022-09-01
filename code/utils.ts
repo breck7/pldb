@@ -377,9 +377,6 @@ const imemo = <Type>(
     return this[propName]
   }
 }
-const listMemos = (instance: any) => instance[memoKeys]
-const clearMemos = (instance: any) =>
-  listMemos(instance).forEach(key => (instance[key] = undefined))
 
 export {
   cleanAndRightShift,
@@ -404,8 +401,6 @@ export {
   benchmark,
   benchmarkResults,
   imemo,
-  clearMemos,
-  listMemos,
   listGetters,
   getLinks,
   lastCommitHashInFolder,

@@ -4,11 +4,12 @@ const path = require("path")
 const fs = require("fs")
 const https = require("https")
 const express = require("express")
+const bodyParser = require("body-parser")
 const numeral = require("numeral")
 const { jtree } = require("jtree")
 const { Disk } = require("jtree/products/Disk.node.js")
-const { TreeBaseServer } = require("jtree/products/treeBase.node.js")
 const { ScrollFile, getFullyExpandedFile } = require("scroll-cli")
+
 import { PLDBBaseFolder, PLDBFile } from "../PLDBBase"
 import {
 	runCommand,
@@ -83,7 +84,208 @@ const scrollSettings = getFullyExpandedFile(
 	path.join(publishedFolder, "settings.scroll")
 ).code
 
-class PLDBEditServer extends TreeBaseServer {
+class PLDBEditServer {
+	folder: PLDBBaseFolder
+	app: any
+	homepage = ""
+	reloadBase() {
+		this.folder = PLDBBaseFolder.getBase().loadFolder()
+		const folder = this.folder
+		const { cachedErrors } = folder
+
+		const listAll = folder.topLanguages
+			.slice(0, 100)
+			.map(file => `<a href="edit/${file.id}">${file.id}</a>`)
+			.join(" · ")
+
+		this.homepage = this.scrollToHtml(`
+html
+ <pre>
+ - Entities: ${folder.length} files in ${folder.dir}
+ - Grammar: ${folder.grammarFilePaths.length} grammar files in ${
+			folder.grammarDir
+		}
+ - TreeBase Bytes: ${numeral(folder.bytes).format("0.0b")}
+ - CSV Bytes: ${numeral(csvFileLength).format("0.0b")}
+ - Errors: ${
+		cachedErrors.length
+			? `<a href="errors.csv">${cachedErrors.length}</a>`
+			: `0`
+ } 
+ </pre>
+
+section Edit a language:
+
+html
+ ${listAll}
+ `)
+	}
+	constructor() {
+		this.reloadBase()
+		this.compileGrammarForInBrowserCodeMirrorEditor()
+
+		const app = express()
+		this.app = app
+		app.use(bodyParser.urlencoded({ extended: false }))
+		app.use(bodyParser.json())
+		app.use((req: any, res: any, next: any) => {
+			res.setHeader("Access-Control-Allow-Origin", "*")
+			res.setHeader(
+				"Access-Control-Allow-Methods",
+				"GET, POST, OPTIONS, PUT, PATCH, DELETE"
+			)
+			res.setHeader(
+				"Access-Control-Allow-Headers",
+				"X-Requested-With,content-type"
+			)
+			res.setHeader("Access-Control-Allow-Credentials", true)
+			next()
+		})
+
+		app.get("/", (req: any, res: any) => res.send(this.homepage))
+
+		app.get("/errors.csv", (req: any, res: any) => {
+			res.setHeader("Content-Type", "text/plain")
+			res.send(this.errorsToCsvCommand())
+		})
+
+		app.use(express.static(__dirname))
+		app.use(express.static(publishedFolder))
+
+		app.get("/create", (req, res) =>
+			res.send(this.scrollToHtml(editForm(undefined, "Add a language")))
+		)
+
+		const errorForm = (submission, error, res) => {
+			res.status(500)
+			res.send(
+				this.scrollToHtml(
+					`html
+ <div style="color: red;">${error}</div>
+${editForm(submission, "Error")}`
+				)
+			)
+		}
+
+		const notFound = (id, res) => {
+			res.status(500)
+			return res.send(
+				this.scrollToHtml(`paragraph
+ "${htmlEscaped(id)}" not found`)
+			)
+		}
+
+		app.get("/search", (req, res) => {
+			const { q, format } = req.query
+			const results = new SearchRoutes().search(q, format, req.originalUrl)
+			if (format) res.send(results)
+			else res.send(this.scrollToHtml(results))
+		})
+
+		app.get("/edit/:id", (req, res) => {
+			const { id } = req.params
+			if (id.endsWith(".pldb")) return res.redirect(id.replace(".pldb", ""))
+
+			const file = this.folder.getFile(id)
+			if (!file) return notFound(id, res)
+
+			res.send(
+				this.scrollToHtml(
+					editForm(file.childrenToString(), `Editing ${file.id}`) +
+						`\nkeyboardNav ${file.previousRanked.id} ${file.nextRanked.id}`
+				)
+			)
+		})
+
+		app.post("/create", async (req, res) => {
+			const { content, author } = req.body
+			try {
+				this.appendToPostLog("create", author, content)
+
+				// todo: audit
+				const validateSubmissionResults = this.validateSubmission(content)
+				const newFile = this.folder.createFile(
+					validateSubmissionResults.content
+				)
+
+				const { authorName, authorEmail } = parseGitAuthor(author)
+
+				const commitResult = await this.commitFilePullAndPush(
+					newFile.filename,
+					`Added '${newFile.id}'`,
+					authorName,
+					authorEmail
+				)
+
+				if (!commitResult.success)
+					return res.redirect(
+						`edit/${newFile.id}#errorMessage=${commitResult.error.message}`
+					)
+
+				this.reloadBase()
+
+				res.redirect(`edit/${newFile.id}#commit=${commitResult.commitHash}`)
+			} catch (error) {
+				console.error(error)
+				errorForm(content, error, res)
+			}
+		})
+
+		app.post("/edit/:id", async (req, res) => {
+			const { id } = req.params
+			const file = this.folder.getFile(id)
+			if (!file) return notFound(id, res)
+			const { content, author } = req.body
+
+			try {
+				this.appendToPostLog(id, author, content)
+
+				const validateSubmissionResults = this.validateSubmission(content, file)
+
+				file.setChildren(validateSubmissionResults.content)
+				file.prettifyAndSave()
+
+				const { authorName, authorEmail } = parseGitAuthor(author)
+
+				isValidEmail(authorEmail)
+
+				const commitResult = await this.commitFilePullAndPush(
+					file.filename,
+					`Updated '${file.id}'`,
+					authorName,
+					authorEmail
+				)
+
+				if (!commitResult.success)
+					return res.redirect(
+						`${id}#errorMessage=${commitResult.error.message}`
+					)
+
+				this.reloadBase()
+
+				res.redirect(`${id}#commit=${commitResult.commitHash}`)
+			} catch (error) {
+				console.error(error)
+				errorForm(content, error, res)
+			}
+		})
+	}
+
+	listen(port = 4444) {
+		this.app.listen(port, () =>
+			console.log(
+				`PLDBEditServer server running: \ncmd+dblclick: http://localhost:${port}/`
+			)
+		)
+		return this
+	}
+
+	errorsToCsvCommand() {
+		return new jtree.TreeNode(
+			this.folder.errors.map((err: any) => err.toObject())
+		).toCsv()
+	}
+
 	validateSubmission(content: string, fileBeingEdited?: PLDBFile) {
 		// Run some simple sanity checks.
 		if (content.length > 200000) throw new Error(`Submission too large`)
@@ -91,7 +293,7 @@ class PLDBEditServer extends TreeBaseServer {
 		// Remove all return characters
 		content = content.replace(/\r/g, "")
 
-		const pldbBase = this._folder
+		const pldbBase = this.folder
 		const programParser = pldbBase.grammarProgramConstructor
 		const parsed = new programParser(content)
 
@@ -116,7 +318,7 @@ class PLDBEditServer extends TreeBaseServer {
 			throw new Error(`Must provide at least 3 facts about the language.`)
 
 		return {
-			content: this._folder.prettifyContent(content)
+			content: this.folder.prettifyContent(content)
 		}
 	}
 
@@ -157,10 +359,10 @@ ${scrollContent}
 		).html
 	}
 
-	compileGrammar() {
+	compileGrammarForInBrowserCodeMirrorEditor() {
 		// todo: cleanup
 		jtree.compileGrammarForBrowser(
-			path.join(baseFolder, "pldb.local", "pldb.grammar"),
+			path.join(publishedFolder, "pldb.grammar"),
 			__dirname + "/",
 			false
 		)
@@ -170,7 +372,7 @@ ${scrollContent}
 	private get git() {
 		if (!this._git)
 			this._git = simpleGit({
-				baseDir: this._folder.dir,
+				baseDir: this.folder.dir,
 				binary: "git",
 				maxConcurrentProcesses: 1,
 				// Needed since git won't let you commit if there's no user name config present (i.e. CI), even if you always
@@ -232,34 +434,6 @@ ${scrollContent}
 		}
 	}
 
-	indexCommand() {
-		const folder = this._folder
-		const { errors } = folder
-
-		const listAll = this._folder.topLanguages
-			.slice(0, 100)
-			.map(file => `<a href="edit/${file.id}">${file.id}</a>`)
-			.join(" · ")
-
-		return this.scrollToHtml(`
-html
- <pre>
- - Entities: ${folder.length} files in ${folder.dir}
- - Grammar: ${folder.grammarFilePaths.length} grammar files in ${
-			folder.grammarDir
-		}
- - TreeBase Bytes: ${numeral(folder.toString().length).format("0.0b")}
- - CSV Bytes: ${numeral(csvFileLength).format("0.0b")}
- - Errors: ${errors.length ? `<a href="errors.csv">${errors.length}</a>` : `0`} 
- </pre>
-
-section Edit a language:
-
-html
- ${listAll}
- `)
-	}
-
 	appendToPostLog(route, author, content) {
 		// Write to log for backup in case something goes wrong.
 		Disk.append(
@@ -272,130 +446,6 @@ html
  content
   ${content.replace(/\n/g, "\n ")}\n`
 		)
-	}
-
-	addRoutes() {
-		const app = this._app
-		const pldbBase = this._folder
-
-		app.use(express.static(__dirname))
-		app.use(express.static(publishedFolder))
-
-		app.get("/create", (req, res) =>
-			res.send(this.scrollToHtml(editForm(undefined, "Add a language")))
-		)
-
-		const errorForm = (submission, error, res) => {
-			res.status(500)
-			res.send(
-				this.scrollToHtml(
-					`html
- <div style="color: red;">${error}</div>
-${editForm(submission, "Error")}`
-				)
-			)
-		}
-
-		const notFound = (id, res) => {
-			res.status(500)
-			return res.send(
-				this.scrollToHtml(`paragraph
- "${htmlEscaped(id)}" not found`)
-			)
-		}
-
-		app.get("/search", (req, res) => {
-			const { q, format } = req.query
-			const results = new SearchRoutes().search(q, format, req.originalUrl)
-			if (format) res.send(results)
-			else res.send(this.scrollToHtml(results))
-		})
-
-		app.get("/edit/:id", (req, res) => {
-			const { id } = req.params
-			if (id.endsWith(".pldb")) return res.redirect(id.replace(".pldb", ""))
-
-			const file = pldbBase.getFile(id)
-			if (!file) return notFound(id, res)
-
-			res.send(
-				this.scrollToHtml(
-					editForm(file.childrenToString(), `Editing ${file.id}`) +
-						`\nkeyboardNav ${file.previousRanked.id} ${file.nextRanked.id}`
-				)
-			)
-		})
-
-		app.post("/create", async (req, res) => {
-			const { content, author } = req.body
-			try {
-				this.appendToPostLog("create", author, content)
-
-				// todo: audit
-				const validateSubmissionResults = this.validateSubmission(content)
-				const newFile = pldbBase.createFile(validateSubmissionResults.content)
-
-				const { authorName, authorEmail } = parseGitAuthor(author)
-
-				// todo: audit
-				const commitResult = await this.commitFilePullAndPush(
-					newFile.filename,
-					`Added '${newFile.id}'`,
-					authorName,
-					authorEmail
-				)
-
-				if (!commitResult.success)
-					return res.redirect(
-						`edit/${newFile.id}#errorMessage=${commitResult.error.message}`
-					)
-
-				// todo: cleanup cacheing issues
-				pldbBase.clearMemos()
-				res.redirect(`edit/${newFile.id}#commit=${commitResult.commitHash}`)
-			} catch (error) {
-				console.error(error)
-				errorForm(content, error, res)
-			}
-		})
-
-		app.post("/edit/:id", async (req, res) => {
-			const { id } = req.params
-			const file = pldbBase.getFile(id)
-			if (!file) return notFound(id, res)
-			const { content, author } = req.body
-
-			try {
-				this.appendToPostLog(id, author, content)
-
-				const validateSubmissionResults = this.validateSubmission(content, file)
-
-				file.setChildren(validateSubmissionResults.content)
-				file.prettifyAndSave()
-
-				const { authorName, authorEmail } = parseGitAuthor(author)
-
-				isValidEmail(authorEmail)
-
-				// todo: audit
-				const commitResult = await this.commitFilePullAndPush(
-					file.filename,
-					`Updated '${file.id}'`,
-					authorName,
-					authorEmail
-				)
-
-				if (!commitResult.success)
-					return res.redirect(
-						`${id}#errorMessage=${commitResult.error.message}`
-					)
-
-				res.redirect(`${id}#commit=${commitResult.commitHash}`)
-			} catch (error) {
-				console.error(error)
-				errorForm(content, error, res)
-			}
-		})
 	}
 
 	gitOn = false
@@ -412,7 +462,7 @@ ${editForm(submission, "Error")}`
 					key,
 					cert
 				},
-				this._app
+				this.app
 			)
 			.listen(443)
 
@@ -426,21 +476,12 @@ ${editForm(submission, "Error")}`
 }
 
 class PLDBEditServerCommands {
-	get server() {
-		const pldbBase = PLDBBaseFolder.getBase().loadFolder()
-		pldbBase.startListeningForFileChanges()
-		const server = new (<any>PLDBEditServer)(pldbBase)
-		server.addRoutes()
-		server.compileGrammar()
-		return server
-	}
-
 	startDevServerCommand(port) {
-		this.server.listen(port)
+		new PLDBEditServer().listen(port)
 	}
 
 	startProdServerCommand() {
-		this.server.listenProd()
+		new PLDBEditServer().listenProd()
 	}
 }
 

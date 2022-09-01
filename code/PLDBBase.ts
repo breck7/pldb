@@ -9,8 +9,7 @@ import {
   Rankings,
   InverseRankings,
   rankSort,
-  imemo,
-  clearMemos
+  imemo
 } from "./utils"
 
 const path = require("path")
@@ -766,10 +765,6 @@ class PLDBBaseFolder extends TreeBaseFolder {
     return featuresMap
   }
 
-  clearMemos() {
-    clearMemos(this)
-  }
-
   @imemo
   get topFeatures(): FeatureSummary[] {
     const files = this.featureFiles.map(file => {
@@ -1125,6 +1120,16 @@ wikipedia`.split("\n")
     })
     rows.unshift(headerRow)
     return rows
+  }
+
+  @imemo
+  get bytes() {
+    return this.toString().length
+  }
+
+  @imemo
+  get cachedErrors() {
+    return this.errors
   }
 
   @imemo
