@@ -46,6 +46,21 @@ const buildAll: MethodDecorator = (
   buildAllList.push(prop)
 }
 
+const buildImportsFile = (filepath, varMap) => {
+  Disk.write(
+    filepath,
+    `importOnly\n` +
+      Object.keys(varMap)
+        .map(key => {
+          const value = varMap[key]
+          if (!value.includes("\n")) return `replace ${key} ${value}`
+          return `replace ${key}
+ ${value.replace(/\n/g, "\n ")}`
+        })
+        .join("\n")
+  )
+}
+
 class SiteBuilder {
   buildAllCommand() {
     buildAllList.forEach(methodName => this[methodName]())
@@ -83,16 +98,11 @@ class SiteBuilder {
   @benchmark
   @buildAll
   buildBuildLogImportsCommand() {
-    const lastHash = lastCommitHashInFolder()
-    const builtOnYear = dayjs().format("YYYY")
-    const builtOnDay = dayjs().format("MM/DD/YYYY")
-    const tree = new TreeNode(Disk.read(settingsFilePath))
-
-    tree.getNodeByColumns("replace", "LAST_HASH").setWord(2, lastHash)
-    tree.getNodeByColumns("replace", "BUILT_IN_YEAR").setWord(2, builtOnYear)
-    tree.getNodeByColumns("replace", "BUILT_ON_DAY").setWord(2, builtOnDay)
-
-    Disk.write(path.join(siteFolder, "buildLogImports.scroll"), tree.toString())
+    buildImportsFile(path.join(siteFolder, "buildLogImports.scroll"), {
+      LAST_HASH: lastCommitHashInFolder(),
+      BUILT_IN_YEAR: dayjs().format("YYYY"),
+      builtOnDay: dayjs().format("MM/DD/YYYY")
+    })
   }
 
   @benchmark
@@ -100,19 +110,17 @@ class SiteBuilder {
   buildKeywordsImportsCommand() {
     const { keywordsTable } = pldbBase
     const { rows, langsWithKeywordsCount } = keywordsTable
-    Disk.write(
-      path.join(listsFolder, "keywordsImports.scroll"),
-      `importOnly
-replace NUM_KEYWORDS ${numeral(rows.length).format("0,0")}
-replace LANGS_WITH_KEYWORD_DATA ${langsWithKeywordsCount}
-replace KEYWORDS_TABLE
- ${toScrollTable(new TreeNode(rows), [
-   "keyword",
-   "count",
-   "frequency",
-   "langs"
- ])}`
-    )
+
+    buildImportsFile(path.join(listsFolder, "keywordsImports.scroll"), {
+      NUM_KEYWORDS: numeral(rows.length).format("0,0"),
+      LANGS_WITH_KEYWORD_DATA: langsWithKeywordsCount,
+      KEYWORDS_TABLE: toScrollTable(new TreeNode(rows), [
+        "keyword",
+        "count",
+        "frequency",
+        "langs"
+      ])
+    })
   }
 
   @imemo get postsScroll() {
@@ -124,22 +132,18 @@ replace KEYWORDS_TABLE
   buildHomepageFeedImportsCommand() {
     const { postsScroll } = this
 
-    const topLangs = pldbBase.topLanguages
-      .slice(0, 10)
-      .map(file => `<a href="./languages/${file.permalink}">${file.title}</a>`)
-      .join(" · ")
-
-    const newPosts = postsScroll.files
-      .slice(0, 5)
-      .map(file => `<a href="./posts/${file.permalink}">${file.title}</a>`)
-      .join("<br>")
-
-    Disk.write(
-      path.join(siteFolder, "homepageFeedImports.scroll"),
-      `importOnly
-replace TOP_LANGS ${topLangs}
-replace NEW_POSTS ${newPosts}`
-    )
+    buildImportsFile(path.join(siteFolder, "homepageFeedImports.scroll"), {
+      TOP_LANGS: pldbBase.topLanguages
+        .slice(0, 10)
+        .map(
+          file => `<a href="./languages/${file.permalink}">${file.title}</a>`
+        )
+        .join(" · "),
+      NEW_POSTS: postsScroll.files
+        .slice(0, 5)
+        .map(file => `<a href="./posts/${file.permalink}">${file.title}</a>`)
+        .join("<br>")
+    })
   }
 
   @benchmark
@@ -235,18 +239,12 @@ replace NEW_POSTS ${newPosts}`
           .join("\n")
     } catch (err) {}
 
-    Disk.write(
-      path.join(listsFolder, "acknowledgementsImports.scroll"),
-      `importOnly
-replace WRITTEN_IN_TABLE
- ${writtenInTable}
-replace PACKAGES_TABLE
- ${packageTable}
-replace SOURCES_TABLE
- ${sourcesTable}
-replace CONTRIBUTORS_TABLE
- ${contributorsTable}`
-    )
+    buildImportsFile(path.join(listsFolder, "acknowledgementsImports.scroll"), {
+      WRITTEN_IN_TABLE: writtenInTable,
+      PACKAGES_TABLE: packageTable,
+      SOURCES_TABLE: sourcesTable,
+      CONTRIBUTORS_TABLE: contributorsTable
+    })
   }
 
   @benchmark
@@ -291,23 +289,17 @@ replace CONTRIBUTORS_TABLE
     Disk.write(path.join(siteFolder, "languages.csv"), langsCsv)
     Disk.write(path.join(siteFolder, "columns.csv"), columnsCsv)
 
-    const csvImports = `importOnly
-
-replace LANG_COUNT ${pldbBase.topLanguages.length}
-replace COL_COUNT ${colNamesForCsv.length}
-replace ENTITY_COUNT ${pldbBase.length}
-replace ENTITIES_FILE_SIZE_UNCOMPRESSED ${numeral(pldbCsv.length).format(
-      "0.0b"
-    )}
-replace LANGS_FILE_SIZE_UNCOMPRESSED ${numeral(langsCsv.length).format("0.0b")}
-replace COLUMN_METADATA_TABLE
- pipeTable
+    buildImportsFile(path.join(publishedDocsFolder, "csvImports.scroll"), {
+      LANG_COUNT: pldbBase.topLanguages.length,
+      COL_COUNT: colNamesForCsv.length,
+      ENTITY_COUNT: pldbBase.length,
+      ENTITIES_FILE_SIZE_UNCOMPRESSED: numeral(pldbCsv.length).format("0.0b"),
+      LANGS_FILE_SIZE_UNCOMPRESSED: numeral(langsCsv.length).format("0.0b"),
+      COLUMN_METADATA_TABLE: `pipeTable
   ${columnsMetadataTree
     .toDelimited("|", columnMetadataColumnNames)
-    .replace(/\n/g, "\n  ")}
-`
-
-    Disk.write(path.join(publishedDocsFolder, "csvImports.scroll"), csvImports)
+    .replace(/\n/g, "\n  ")}`
+    })
   }
 
   @benchmark
@@ -340,22 +332,20 @@ replace COLUMN_METADATA_TABLE
       }
     })
 
-    const vars = [100, 250, 500, 1000].map(
-      num => `replace TOP_${num}\n
-${toScrollTable(new TreeNode(files.slice(0, num)), [
-  "title",
-  "titleLink",
-  "appeared",
-  "type",
-  "rank"
-])}`
+    const vars = {}
+    const pages = [100, 250, 500, 1000]
+    pages.forEach(
+      num =>
+        (vars[`TOP_${num}`] = toScrollTable(new TreeNode(files.slice(0, num)), [
+          "title",
+          "titleLink",
+          "appeared",
+          "type",
+          "rank"
+        ]))
     )
 
-    Disk.write(
-      path.join(listsFolder, "topLangsImports.scroll"),
-      `importOnly
-${vars}`
-    )
+    buildImportsFile(path.join(listsFolder, "topLangsImports.scroll"), vars)
   }
 
   @benchmark
@@ -379,19 +369,16 @@ ${vars}`
     )
 
     const sorted = lodash.sortBy(files, "rank")
-    const table = toScrollTable(new TreeNode(sorted), [
+    const TABLE = toScrollTable(new TreeNode(sorted), [
       "name",
       "nameLink",
       "extensions"
     ])
 
-    Disk.write(
-      path.join(listsFolder, "extensionsImports.scroll"),
-      `importOnly
-replace EXTENSION_COUNT ${numeral(allExtensions.size).format("0,0")}
-replace TABLE
- ${table}`
-    )
+    buildImportsFile(path.join(listsFolder, "extensionsImports.scroll"), {
+      COUNT: numeral(allExtensions.size).format("0,0"),
+      TABLE
+    })
   }
 
   @benchmark
@@ -413,7 +400,7 @@ replace TABLE
 
     files = lodash.sortBy(files, "rank")
 
-    const entitiesTable = toScrollTable(new TreeNode(files), [
+    const TABLE = toScrollTable(new TreeNode(files), [
       "title",
       "titleLink",
       "type",
@@ -421,13 +408,10 @@ replace TABLE
       "rank"
     ])
 
-    Disk.write(
-      path.join(listsFolder, "entitiesImports.scroll"),
-      `importOnly
-replace COUNT ${numeral(Object.values(files).length).format("0,0")}
-replace TABLE
- ${entitiesTable}`
-    )
+    buildImportsFile(path.join(listsFolder, "entitiesImports.scroll"), {
+      COUNT: numeral(Object.values(files).length).format("0,0"),
+      TABLE
+    })
   }
 
   @benchmark
@@ -451,7 +435,7 @@ replace TABLE
 
     const sorted = lodash.sortBy(files, "rank")
 
-    const langsTable = toScrollTable(new TreeNode(sorted), [
+    const TABLE = toScrollTable(new TreeNode(sorted), [
       "title",
       "titleLink",
       "type",
@@ -459,13 +443,10 @@ replace TABLE
       "rank"
     ])
 
-    Disk.write(
-      path.join(listsFolder, "languagesImports.scroll"),
-      `importOnly
-replace COUNT ${numeral(Object.values(sorted).length).format("0,0")}
-replace TABLE
- ${langsTable}`
-    )
+    buildImportsFile(path.join(listsFolder, "languagesImports.scroll"), {
+      COUNT: numeral(Object.values(sorted).length).format("0,0"),
+      TABLE
+    })
   }
 
   @benchmark
@@ -473,7 +454,7 @@ replace TABLE
   buildFeaturesImports() {
     const { topFeatures } = pldbBase
 
-    const featuresTable = toScrollTable(new TreeNode(topFeatures), [
+    const TABLE = toScrollTable(new TreeNode(topFeatures), [
       "feature",
       "featureLink",
       "pseudoExample",
@@ -482,13 +463,10 @@ replace TABLE
       "percentage"
     ])
 
-    Disk.write(
-      path.join(listsFolder, "featuresImports.scroll"),
-      `importOnly
-replace COUNT ${numeral(Object.values(topFeatures).length).format("0,0")}
-replace TABLE
- ${featuresTable}`
-    )
+    buildImportsFile(path.join(listsFolder, "featuresImports.scroll"), {
+      COUNT: numeral(Object.values(topFeatures).length).format("0,0"),
+      TABLE
+    })
   }
 
   @benchmark
@@ -598,20 +576,17 @@ replace TABLE
 
     const sorted = lodash.sortBy(rows, "topRank")
 
-    const theTable = toScrollTable(new TreeNode(sorted), [
+    const TABLE = toScrollTable(new TreeNode(sorted), [
       "name",
       "languages",
       "count",
       "topRank"
     ])
 
-    Disk.write(
-      path.join(listsFolder, "corporationsImports.scroll"),
-      `importOnly
-replace COUNT ${numeral(Object.values(creators).length).format("0,0")}
-replace TABLE
- ${theTable}`
-    )
+    buildImportsFile(path.join(listsFolder, "corporationsImports.scroll"), {
+      TABLE,
+      COUNT: numeral(Object.values(creators).length).format("0,0")
+    })
   }
 
   @buildAll
