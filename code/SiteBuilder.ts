@@ -153,14 +153,15 @@ class SiteBuilder {
   @buildAll
   buildDatabasePagesCommand() {
     pldbBase.forEach(file => {
-      const filePath = path.join(publishedLanguagesFolder, `${file.id}.scroll`)
-
       const constructor =
         file.get("type") === "feature"
           ? FeaturePageTemplate
           : LanguagePageTemplate
 
-      Disk.write(filePath, new constructor(file).toScroll())
+      Disk.write(
+        path.join(publishedLanguagesFolder, `${file.id}.scroll`),
+        new constructor(file).toScroll()
+      )
     })
   }
 

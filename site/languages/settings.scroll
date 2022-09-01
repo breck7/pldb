@@ -1,0 +1,5 @@
+importOnly
+import ../settings.scroll
+replace BASE_URL ..
+viewSourceBaseUrl https://github.com/breck7/pldb/blob/main/database/things/
+baseUrl https://pldb.com/languages/
