@@ -11,6 +11,7 @@
     "jtreeBeta": "npm install ~/jtree",
     "scrollBeta": "npm install ~/scroll",
     "test": "ts-node code/test.ts",
+    "format": "./code/SiteBuilder.js formatDatabase",
     "fetchContributors": "wget -O site/pages/contributors.json https://api.github.com/repos/breck7/pldb/contributors",
     "fetchEditLogs": "scp file edit.pldb.com:/home/pldb/pldb/ignore/editServerLog.tree ignore/",
     "tsc": "cd code; tsc",
