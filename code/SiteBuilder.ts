@@ -52,7 +52,7 @@ const buildImportsFile = (filepath, varMap) => {
     `importOnly\n` +
       Object.keys(varMap)
         .map(key => {
-          const value = varMap[key]
+          const value = varMap[key].toString()
           if (!value.includes("\n")) return `replace ${key} ${value}`
           return `replace ${key}
  ${value.replace(/\n/g, "\n ")}`
@@ -63,7 +63,10 @@ const buildImportsFile = (filepath, varMap) => {
 
 class SiteBuilder {
   buildAllCommand() {
-    buildAllList.forEach(methodName => this[methodName]())
+    buildAllList.forEach(methodName => {
+      console.log(methodName)
+      this[methodName]()
+    })
     this._printBenchmarkResults()
   }
 
@@ -123,29 +126,6 @@ class SiteBuilder {
     })
   }
 
-  @imemo get postsScroll() {
-    return new ScrollFolder(publishedPostsFolder)
-  }
-
-  @benchmark
-  @buildAll
-  buildHomepageFeedImportsCommand() {
-    const { postsScroll } = this
-
-    buildImportsFile(path.join(siteFolder, "homepageFeedImports.scroll"), {
-      TOP_LANGS: pldbBase.topLanguages
-        .slice(0, 10)
-        .map(
-          file => `<a href="./languages/${file.permalink}">${file.title}</a>`
-        )
-        .join(" · "),
-      NEW_POSTS: postsScroll.files
-        .slice(0, 5)
-        .map(file => `<a href="./posts/${file.permalink}">${file.title}</a>`)
-        .join("<br>")
-    })
-  }
-
   @benchmark
   @buildAll
   buildRedirectsCommand() {
@@ -174,12 +154,6 @@ class SiteBuilder {
 
       Disk.write(filePath, new constructor(file).toScroll())
     })
-  }
-
-  @benchmark
-  @buildAll
-  buildDatabasePagesScrollCommand() {
-    new ScrollFolder(publishedLanguagesFolder).buildFiles()
   }
 
   @benchmark
@@ -589,6 +563,30 @@ replace TABLE
     })
   }
 
+  @benchmark
+  @buildAll
+  buildHomepageFeedImportsCommand() {
+    const postsScroll = new ScrollFolder(publishedPostsFolder)
+
+    buildImportsFile(path.join(siteFolder, "homepageFeedImports.scroll"), {
+      TOP_LANGS: pldbBase.topLanguages
+        .slice(0, 10)
+        .map(
+          file => `<a href="./languages/${file.permalink}">${file.title}</a>`
+        )
+        .join(" · "),
+      NEW_POSTS: postsScroll.files
+        .slice(0, 5)
+        .map(file => `<a href="./posts/${file.permalink}">${file.title}</a>`)
+        .join("<br>")
+    })
+  }
+
+  @benchmark
+  buildDatabasePagesScrollCommand() {
+    new ScrollFolder(publishedLanguagesFolder).buildFiles()
+  }
+
   @buildAll
   @benchmark
   buildScrolls() {
@@ -596,7 +594,7 @@ replace TABLE
     new ScrollFolder(siteFolder).buildFiles()
     new ScrollFolder(publishedPagesFolder).buildFiles()
     new ScrollFolder(publishedDocsFolder).buildFiles()
-    this.postsScroll.buildFiles()
+    new ScrollFolder(publishedPostsFolder).buildFiles()
     this.buildDatabasePagesScrollCommand()
   }
 }
