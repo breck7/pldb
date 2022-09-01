@@ -1,5 +1,6 @@
 title PLDB CSV File Documentation
 import settings.scroll
+import csvImports.scroll
 tableSearch
 
 html
@@ -24,8 +25,7 @@ aftertext
 
 section Column Documentation
 
-comment autogenColumnDocs
-pipeTable
+COLUMN_METADATA_TABLE
 
 aftertext
  The table above is also available as csv.

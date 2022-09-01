@@ -3,7 +3,7 @@ import settings.scroll
 columnWidth 120
 
 aftertext
- A list of 112 features found in programming languages.
+ A list of COUNT features found in programming languages.
 
 aftertext
  Is PLDB missing a feature? @@Create a new file@@ with a name like `*-feature.pldb` in the `things` folder and send a pull request.
@@ -12,4 +12,4 @@ aftertext
 
 tableSearch
 
-comment autogenFeatures
+TABLE

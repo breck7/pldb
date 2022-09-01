@@ -3,7 +3,7 @@ import settings.scroll
 columnWidth 60
 
 aftertext
- PLDB currently has 3,983 languages.
+ PLDB currently has COUNT languages.
 
 aftertext
  Add a language.
@@ -15,4 +15,4 @@ aftertext
 
 tableSearch
 
-comment autogenLanguages
+TABLE

@@ -216,12 +216,6 @@ const lastCommitHashInFolder = (cwd = __dirname) =>
     .toString()
     .trim()
 
-const replaceNext = (node, path, newContent) =>
-  node
-    .find(node => node.getLine().startsWith(path))
-    .getNext()
-    .replaceNode(str => newContent)
-
 const replaceNode = (node, path, newContent) =>
   node
     .find(node => node.getLine().startsWith(path))
@@ -383,7 +377,6 @@ export {
   toCommaList,
   nameToAnchor,
   getIndefiniteArticle,
-  replaceNext,
   replaceNode,
   nodeToFlatObject,
   toScrollTable,
