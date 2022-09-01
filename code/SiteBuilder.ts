@@ -211,7 +211,12 @@ class SiteBuilder {
       CONTRIBUTORS_TABLE: JSON.parse(
         Disk.read(path.join(pagesDir, "contributors.json"))
       )
-        .filter(item => item.login !== "codelani" && item.login !== "breck7")
+        .filter(
+          item =>
+            item.login !== "codelani" &&
+            item.login !== "breck7" &&
+            item.login !== "pldbbot"
+        )
         .map(item => `<li><a href="${item.html_url}">${item.login}</a></li>`)
         .join("")
     })
