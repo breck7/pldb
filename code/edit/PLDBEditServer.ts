@@ -1,5 +1,3 @@
-#!/usr/bin/env ts-node
-
 const path = require("path")
 const fs = require("fs")
 const https = require("https")

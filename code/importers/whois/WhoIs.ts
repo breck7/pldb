@@ -1,5 +1,3 @@
-#!/usr/bin/env ts-node
-
 import { PLDBFile, PLDBBaseFolder } from "../../PLDBBase"
 import { runCommand } from "../../utils"
 

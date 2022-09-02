@@ -1,5 +1,3 @@
-#!/usr/bin/env ts-node
-
 import { runCommand, PoliteCrawler } from "../../utils"
 import { PLDBBaseFolder, PLDBFile } from "../../PLDBBase"
 const lodash = require("lodash")

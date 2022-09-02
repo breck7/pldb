@@ -1,5 +1,3 @@
-#!/usr/bin/env ts-node
-
 import { parse } from "yaml"
 
 import { runCommand } from "../../utils"

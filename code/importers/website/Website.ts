@@ -1,5 +1,3 @@
-#!/usr/bin/env ts-node
-
 const cheerio = require("cheerio")
 
 import { PLDBFile, PLDBBaseFolder } from "../../PLDBBase"

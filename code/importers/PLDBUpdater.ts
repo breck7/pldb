@@ -1,5 +1,3 @@
-#!/usr/bin/env ts-node
-
 import { PLDBBaseFolder } from "../PLDBBase"
 import { GitHubImporter } from "./github.com/GitHub"
 import { runCommand } from "../utils"

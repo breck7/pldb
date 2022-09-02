@@ -1,5 +1,3 @@
-#!/usr/bin/env ts-node
-
 const lodash = require("lodash")
 const path = require("path")
 const { jtree } = require("jtree")

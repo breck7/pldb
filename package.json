@@ -11,12 +11,12 @@
     "deploy": "echo 'Rsyncing the contents of site/ to the /var/www/html folder on the PLDB server'; rsync -vr site/* pldb@pldb.com:/var/www/html/",
     "jtreeBeta": "npm install ~/jtree",
     "scrollBeta": "npm install ~/scroll",
-    "test": "ts-node code/test.ts",
+    "test": "./code/test.js",
     "format": "./code/SiteBuilder.js formatDatabase",
     "fetchContributors": "wget -O site/pages/contributors.json https://api.github.com/repos/breck7/pldb/contributors",
     "fetchEditLogs": "scp file edit.pldb.com:/home/pldb/pldb/ignore/editServerLog.tree ignore/",
     "tsc": "cd code; tsc",
-    "update": "ts-node code/importers/PLDBUpdater.ts update"
+    "update": "./code/importers/PLDBUpdater.js update"
   },
   "prettier": {
     "semi": false
@@ -41,8 +41,7 @@
     "monaco-editor": "^0.33.0",
     "numeral": "^2.0.6",
     "scroll-cli": "^31.2.0",
-    "simple-git": "^3.10.0",
-    "ts-node": "^10.9.1"
+    "simple-git": "^3.10.0"
   },
   "devDependencies": {
     "@types/node": "^17.0.8",
