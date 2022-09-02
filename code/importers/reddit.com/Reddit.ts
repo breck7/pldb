@@ -48,9 +48,7 @@ class RedditImporter {
   async fetchOne(file) {
     const path = getCachePath(file)
     if (Disk.exists(path)) return this
-    const url = `https://www.reddit.com/subreddits/search.json?q=${file.get(
-      "subreddit"
-    )}`
+    const url = `https://www.reddit.com/subreddits/search.json?q=${file.subredditId}`
     await Disk.downloadJson(url, path)
   }
 
