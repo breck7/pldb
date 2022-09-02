@@ -116,6 +116,10 @@ class PLDBFile extends TreeBaseFile {
     return `<a href="${this.permalink}">${this.title}</a>`
   }
 
+  get subredditId() {
+    return this.get("subreddit")?.replace("https://reddit.com/r/", "")
+  }
+
   @includeInCsv
   get bookCount() {
     const gr = this.getNode(`goodreads`)?.length

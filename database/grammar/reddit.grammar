@@ -1,10 +1,11 @@
 subredditNode
- extends abstractOneWordGuidNode
+ extends abstractUrlGuidNode
  inScope subredditMemberCountNode
  string sourceDomain reddit.com
- contentKey id
+ contentKey url
  single false
- description Name of a subreddit(s) for this language.
+ cruxFromId
+ description Url of a subreddit(s) for this language.
  example
   subreddit php
 subredditMemberCountNode

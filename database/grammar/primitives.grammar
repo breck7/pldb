@@ -92,12 +92,14 @@ abstractStringNode
  catchAllCellType stringCell
  extends abstractFactNode
 abstractMultiwordGuidNode
+ todo Remove if we can in favor of URL guids
  cruxFromId
  cells keywordCell
  catchAllCellType externalGuidCell
  extends abstractFactNode
  single
 abstractOneWordGuidNode
+ todo Remove if we can in favor of URL guids
  cells keywordCell externalGuidCell
  extends abstractFactNode
  single

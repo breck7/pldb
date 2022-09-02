@@ -321,7 +321,7 @@ ${facts.map(fact => ` - ${fact}`).join("\n")}`
   }
 
   get description() {
-    const {file} = this
+    const { file } = this
     const { typeName, title, creators, appeared } = file
     const standsFor = file.get("standsFor")
     let akaMessage = standsFor ? `, aka ${standsFor},` : ""
@@ -509,7 +509,7 @@ ${facts.map(fact => ` - ${fact}`).join("\n")}`
         file.getMostRecentInt("subreddit memberCount")
       ).format("0,0")
       facts.push(
-        `There are ${peNum} members in the <a href="https://reddit.com/r/${subreddit}">${title} subreddit</a>`
+        `There are ${peNum} members in the <a href="${subreddit}">${title} subreddit</a>`
       )
     }
 
