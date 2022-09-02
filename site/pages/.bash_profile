@@ -25,6 +25,6 @@ alias listenToYourUsers="sudo tail -f /var/log/nginx/access.log"
 # cd pldb
 # gs
 
-# On pldb.com on login go straight to /var/www/html folder and show version that is live:
+# On pldb.com on login go straight to /var/www/html folder and see what's going on:
 # cd /var/www/html
-# cat buildLogImports.scroll
+# listenToYourUsers
