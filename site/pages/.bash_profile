@@ -21,3 +21,10 @@ alias qa="git commit -m 'qa'"
 #See what's users want in realtime on nginx server
 alias listenToYourUsers="sudo tail -f /var/log/nginx/access.log"
 
+# On edit.pldb.com on login go straight to pldb/ git repo and show git status:
+# cd pldb
+# gs
+
+# On pldb.com on login go straight to /var/www/html folder and show version that is live:
+# cd /var/www/html
+# cat buildLogImports.scroll
