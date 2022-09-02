@@ -1,3 +1,5 @@
+#!/usr/bin/env node
+
 import { PLDBFile, PLDBBaseFolder } from "../../PLDBBase"
 import { getCleanedId, runCommand, PoliteCrawler } from "../../utils"
 const lodash = require("lodash")

@@ -1,3 +1,5 @@
+#!/usr/bin/env node
+
 import { PLDBFile, PLDBBaseFolder } from "../../PLDBBase"
 import { runCommand } from "../../utils"
 

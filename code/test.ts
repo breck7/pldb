@@ -1,3 +1,5 @@
+#!/usr/bin/env node
+
 const tap = require("tap")
 const lodash = require("lodash")
 const grammarNode = require("jtree/products/grammar.nodejs.js")

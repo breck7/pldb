@@ -1,3 +1,5 @@
+#!/usr/bin/env node
+
 // Docs: https://api.semanticscholar.org/api-docs/graph#tag/Paper-Data/operation/get_graph_get_paper_search
 
 import { PLDBFile, PLDBBaseFolder } from "../../PLDBBase"

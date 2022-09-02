@@ -1,3 +1,5 @@
+#!/usr/bin/env node
+
 import { PLDBFile, PLDBBaseFolder } from "../../PLDBBase"
 import { runCommand, PoliteCrawler, getCleanedId } from "../../utils"
 

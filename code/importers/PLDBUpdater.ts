@@ -1,3 +1,5 @@
+#!/usr/bin/env node
+
 import { PLDBBaseFolder } from "../PLDBBase"
 import { GitHubImporter } from "./github.com/GitHub"
 import { runCommand } from "../utils"

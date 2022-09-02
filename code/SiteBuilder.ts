@@ -1,3 +1,5 @@
+#!/usr/bin/env node
+
 const lodash = require("lodash")
 const path = require("path")
 const { jtree } = require("jtree")

@@ -1,3 +1,5 @@
+#!/usr/bin/env node
+
 import { parse } from "yaml"
 
 import { runCommand } from "../../utils"
