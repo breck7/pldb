@@ -15,7 +15,8 @@
     "format": "./code/SiteBuilder.js formatDatabase",
     "fetchContributors": "wget -O site/pages/contributors.json https://api.github.com/repos/breck7/pldb/contributors",
     "fetchEditLogs": "scp file edit.pldb.com:/home/pldb/pldb/ignore/editServerLog.tree ignore/",
-    "tsc": "cd code; tsc; cd ../; chmod u+x code/**/*.js; chmod u-x code/edit/editApp.js; chmod u-x code/package/index.js;",
+    "tsc": "cd code; tsc; cd ..; npm run makeExecutables",
+    "plusX": "chmod u+x code/**/*.js; chmod u+x code/**/**/*.js; chmod u-x code/edit/editApp.js; chmod u-x code/package/index.js;",
     "update": "./code/importers/PLDBUpdater.js update"
   },
   "prettier": {
