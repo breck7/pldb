@@ -28,13 +28,19 @@ const initSearchAutocomplete = elementId => {
       update(suggestions)
     },
     onSelect: item => {
+      const isLocalHost =
+        location.hostname === "localhost" || location.hostname === "127.0.0.1"
+
       const { id } = item
-      // todo: make work on local dev server too
-      if (id) window.location = "https://pldb.com/languages/" + id + ".html"
-      else
-        window.location = `https://edit.pldb.com/search?q=${
-          document.getElementById(elementId).value
-        }`
+      const goToUrl = `/languages/${id}.html`
+      if (id)
+        window.location = isLocalHost ? goToUrl : `https://pldb.com${goToUrl}`
+      else {
+        const goToUrl = `/search?q=${document.getElementById(elementId).value}`
+        window.location = isLocalHost
+          ? goToUrl
+          : `https://edit.pldb.com${goToUrl}`
+      }
     }
   })
 }
