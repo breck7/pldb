@@ -17,6 +17,7 @@ alias branches="git branch --sort=-committerdate"
 alias gr="git reset --soft HEAD~1" # Reset one commit back
 alias gru="git reset 'HEAD@{1}'" # Undo reset
 alias qa="git commit -m 'qa'"
+alias stats="sudo goaccess /var/log/nginx/access.log -o /var/www/html/nginxDaily.html --log-format=COMBINED --anonymize-ip;sudo zcat -f /var/log/nginx/access.log* | goaccess -o /var/www/html/nginxDailyAll.html --log-format=COMBINED --anonymize-ip"
 
 #See what's users want in realtime on nginx server
 alias listenToYourUsers="sudo tail -f /var/log/nginx/access.log"
