@@ -1,4 +1,8 @@
 import settings.scroll
+
+css
+ .scrollFilePageComponent { text-align: center;}
+
 import searchForm.scroll
 
 replace BASE_URL .

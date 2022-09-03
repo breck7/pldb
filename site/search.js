@@ -1,8 +1,12 @@
 let searchIndex = false
 
 const initSearchAutocomplete = elementId => {
+  const input = document.getElementById(elementId)
+  const urlParams = new URLSearchParams(window.location.search)
+  const query = urlParams.get("q")
+  if (query) input.value = query
   autocomplete({
-    input: document.getElementById(elementId),
+    input,
     minLength: 1,
     emptyMsg: "No matching entities found",
     preventSubmit: true,

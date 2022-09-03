@@ -6,6 +6,9 @@ columnWidth 60
 aftertext
  Sorry but we cannot find the requested page on PLDB: a Programming Language Database.
 
+css
+ .scrollFilePageComponent { text-align: center;}
+
 import searchForm.scroll
 
 html

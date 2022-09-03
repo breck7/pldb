@@ -268,6 +268,7 @@ ${editForm(submission, "Error")}`
 	}
 
 	search(query): string {
+		const startTime = Date.now()
 		const pldbBase = this.folder
 		const regex = new RegExp(query, "i")
 		const escapedQuery = htmlEscaped(query)
@@ -284,37 +285,56 @@ ${editForm(submission, "Error")}`
 				.toString()
 				.split("\n")
 				.find(line => line.match(regex))
-			return line.replace(query, `<b>${query}</b>`)
+			return line.replace(query, `<span style="highlightHit">${query}</span>`)
 		}
-		const searchResults = hits
+		const fullTextSearchResults = hits
 			.map(
 				file =>
-					` <a href="${baseUrl}${file.permalink}">${
-						file.title
-					}</a> - ${file.get("type")} #${file.rank} - ${highlightHit(file)}`
+					` <div class="searchResultFullText"><a href="${baseUrl}${
+						file.permalink
+					}">${file.title}</a> - ${file.get("type")} #${
+						file.rank
+					} - ${highlightHit(file)}</div>`
 			)
-			.join("<br>\n")
+			.join("\n")
 
 		const nameResults = nameHits
 			.map(
 				file =>
-					` <a href="${baseUrl}${file.permalink}">${
-						file.title
-					}</a> - ${file.get("type")} #${file.rank}`
+					` <div class="searchResultName"><a href="${baseUrl}${
+						file.permalink
+					}">${file.title}</a> - ${file.get("type")} #${file.rank}</div>`
 			)
-			.join("<br>\n")
+			.join("\n")
 
-		return `paragraph
- ${nameHits.length} name matches for "${escapedQuery}" shown below.
+		const time = numeral((Date.now() - startTime) / 1000).format("0.00")
+		return `
+html
+ <div class="pldbSearchForm"><form style="display:inline;" method="get" action="https://edit.pldb.com/search"><input name="q" placeholder="Search" autocomplete="off" type="search" id="searchFormInput"><input class="pldbSearchButton" type="submit" value="Search"></form></div>
+ <script>document.addEventListener("DOMContentLoaded", evt => initSearchAutocomplete("searchFormInput"))</script>
+
+paragraph
+ <p class="searchResultsHeader">Searched ${numeral(pldbBase.length).format(
+		"0,0"
+ )} languages and entities for "${escapedQuery}" in ${time}s.</p>
+ <hr>
+
+html
+ <p class="searchResultsHeader">Showing ${
+		nameHits.length
+ } files whose name or aliases matched.</p>
 
 html
 ${nameResults}
+<hr>
 
 paragraph
- ${hits.length} full text matches for "${escapedQuery}" shown below.
+ <p class="searchResultsHeader">Showing ${
+		hits.length
+ } files who matched on a full text search.</p>
 
 html
- ${searchResults}`
+ ${fullTextSearchResults}`
 	}
 
 	listen(port = 4444) {
