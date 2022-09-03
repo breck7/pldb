@@ -7,6 +7,7 @@ const express = require("express")
 const bodyParser = require("body-parser")
 const numeral = require("numeral")
 const { jtree } = require("jtree")
+const { TreeNode } = jtree
 const { Disk } = require("jtree/products/Disk.node.js")
 const { ScrollFile, getFullyExpandedFile } = require("scroll-cli")
 
@@ -24,8 +25,10 @@ const ignoreFolder = path.join(baseFolder, "ignore")
 const builtSiteFolder = path.join(baseFolder, "site")
 const csvFileLength = Disk.read(path.join(builtSiteFolder, "pldb.csv")).length
 
-const logPath = path.join(ignoreFolder, "editServerLog.tree")
-Disk.touch(logPath)
+const editLogPath = path.join(ignoreFolder, "editServerLog.tree")
+const searchLogPath = path.join(ignoreFolder, "searchLog.tree")
+Disk.touch(editLogPath)
+Disk.touch(searchLogPath)
 
 const editForm = (content = "", title = "") =>
 	`${title ? `title ${title}` : ""}
@@ -174,9 +177,16 @@ ${editForm(submission, "Error")}`
 			)
 		}
 
-		app.get("/search", (req, res) =>
-			res.send(this.scrollToHtml(this.search(req.query.q)))
-		)
+		app.get("/search", (req, res) => {
+			const tree = `search
+ time ${Date.now()}
+ ip ${req.ip}
+ query
+  ${req.query.q.replace(/\n/g, "\n  ")} 
+`
+			fs.appendFile(searchLogPath, tree, function() {})
+			res.send(this.scrollToHtml(this.search(decodeURIComponent(req.query.q))))
+		})
 
 		app.get("/edit/:id", (req, res) => {
 			const { id } = req.params
@@ -270,21 +280,19 @@ ${editForm(submission, "Error")}`
 	search(query): string {
 		const startTime = Date.now()
 		const pldbBase = this.folder
-		const regex = new RegExp(query, "i")
+		// Todo: allow advanced search. case sensitive/insensitive, regex, et cetera.
+		const testFn = str => str.includes(query)
+
 		const escapedQuery = htmlEscaped(query)
-		const hits = pldbBase.filter(file => file.toString().match(regex))
-
-		const nameHits = pldbBase.filter(file =>
-			file.names.some(name => name.match(regex))
-		)
-
+		const hits = pldbBase.filter(file => testFn(file.toString()))
+		const nameHits = pldbBase.filter(file => file.names.some(testFn))
 		const baseUrl = "https://pldb.com/languages/"
 
 		const highlightHit = file => {
 			const line = file
 				.toString()
 				.split("\n")
-				.find(line => line.match(regex))
+				.find(line => testFn(line))
 			return line.replace(query, `<span style="highlightHit">${query}</span>`)
 		}
 		const fullTextSearchResults = hits
@@ -504,7 +512,7 @@ ${scrollContent}
 	appendToPostLog(route, author, content) {
 		// Write to log for backup in case something goes wrong.
 		Disk.append(
-			logPath,
+			editLogPath,
 			`post
  route ${route}
  time ${new Date().toString()}

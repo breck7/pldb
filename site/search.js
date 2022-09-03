@@ -40,7 +40,9 @@ const initSearchAutocomplete = elementId => {
       if (id)
         window.location = isLocalHost ? goToUrl : `https://pldb.com${goToUrl}`
       else {
-        const goToUrl = `/search?q=${document.getElementById(elementId).value}`
+        const goToUrl = `/search?q=${encodeURIComponent(
+          document.getElementById(elementId).value
+        )}`
         window.location = isLocalHost
           ? goToUrl
           : `https://edit.pldb.com${goToUrl}`
