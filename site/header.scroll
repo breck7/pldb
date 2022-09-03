@@ -21,7 +21,7 @@ scrollHeader
    style display:inline-block;
    input
     type search
-    id searchBox
+    id headerSearch
     placeholder Search
     autocomplete off
   a Languages

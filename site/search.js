@@ -19,15 +19,13 @@ const initSearchAutocomplete = elementId => {
         entity.label.toLowerCase().startsWith(text)
       )
 
-      if (suggestions.length > 0) update(suggestions)
-      else
-        update([
-          {
-            label: `Full text search for "${query.replace(/</g, "&lt;")}"`,
-            appeared: "",
-            id: ""
-          }
-        ])
+      suggestions.push({
+        label: `Full text search for "${query.replace(/</g, "&lt;")}"`,
+        appeared: "",
+        id: ""
+      })
+
+      update(suggestions)
     },
     onSelect: item => {
       const { id } = item
@@ -42,5 +40,5 @@ const initSearchAutocomplete = elementId => {
 }
 
 document.addEventListener("DOMContentLoaded", evt =>
-  initSearchAutocomplete("searchBox")
+  initSearchAutocomplete("headerSearch")
 )
