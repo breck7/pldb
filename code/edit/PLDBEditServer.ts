@@ -31,7 +31,7 @@ const editForm = (content = "", title = "") =>
 	`${title ? `title ${title}` : ""}
 html
  <form method="POST" id="editForm">
- <div class="cell">
+ <div class="cell" id="leftCell">
  <textarea name="content" id="content">${htmlEscaped(content).replace(
 		/\n/g,
 		"\n "
@@ -390,6 +390,7 @@ css
    width: 48%;
    display: inline-block;
    vertical-align: top;
+   padding: 5px;
  }
  #quickLinks {
    font-size: 80%;

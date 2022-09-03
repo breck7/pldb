@@ -99,8 +99,13 @@ githubRepo https://github.com/elixir-lang/elixir</pre>`
 				lineWrapping: false,
 				lineNumbers: true
 			})
-		this.codeMirrorInstance.setSize(window.innerWidth / 2 - 50, 500)
+
+		this.codeMirrorInstance.setSize(this.codeMirrorWidth, 500)
 		// this.codeMirrorInstance.on("keyup", () => this._onCodeKeyUp())
+	}
+
+	get codeMirrorWidth() {
+		return document.getElementById("leftCell").width
 	}
 
 	updateAuthor() {
