@@ -400,6 +400,10 @@ ${facts.map(fact => ` - ${fact}`).join("\n")}`
     const gitlabRepo = file.get("gitlabRepo")
     if (gitlabRepo) facts.push(`<a href="${gitlabRepo}">${title} on GitLab</a>`)
 
+    const documentation = file.get("documentation")
+    if (documentation)
+      facts.push(`the <a href="${documentation}">${title} docs</a>`)
+
     const githubRepoCount = file.get("githubLanguage repos")
     if (githubRepoCount) {
       const url = `https://github.com/search?q=language:${file.get(
