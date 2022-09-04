@@ -10,7 +10,8 @@ const { Disk } = require("jtree/products/Disk.node.js")
 const { ScrollFolder } = require("scroll-cli")
 const shell = require("child_process").execSync
 
-import { LanguagePageTemplate, FeaturePageTemplate } from "./pages"
+import { LanguagePageTemplate } from "./LanguagePage"
+import { FeaturePageTemplate } from "./FeaturePage"
 import { PLDBBaseFolder } from "./PLDBBase"
 
 const pldbBase = PLDBBaseFolder.getBase().loadFolder()
