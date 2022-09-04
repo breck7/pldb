@@ -25,10 +25,10 @@ aftertext
 subsection Analytics
 
 aftertext
- This site does not use cookies or include any tracking scripts. Server logs are kept and used primarily for catching broken links and other QA. You can view daily traffic and/or traffic for the last two weeks.
+ This site does not use cookies or include any tracking scripts. Server logs are kept and used primarily for catching broken links, broken scripts, and other QA. If you need even more privacy, you can run the site locally or on your own servers. You can view traffic today and/or traffic trends for the last two weeks.
  https://www.nginx.com/ NGINX
- https://pldb.com/nginxDaily.html daily traffic
- https://pldb.com/nginxDailyAll.html traffic for the last two weeks
+ https://pldb.com/nginxDaily.html traffic today
+ https://pldb.com/nginxDailyAll.html traffic trends
 
 aftertext
  GoAccess generates these reports. It runs every hour thanks to the `cron` jobs listed below. When you set it up make sure your privileges are correct or GoAccess may hang.
