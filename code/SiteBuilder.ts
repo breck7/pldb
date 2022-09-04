@@ -185,6 +185,7 @@ class SiteBuilder {
       "typescript",
       "png-format",
       "svg",
+      "explorer",
       "gitignore"
     ].map(s => pldbBase.getFile(pldbBase.searchForEntity(s)))
 
