@@ -13,6 +13,7 @@ jobs:
       - name: Install and Build
         run: |
           rm .gitignore
+          sudo apt-get install cloc
           npm install .
           npm run tsc
           npm run build

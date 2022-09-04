@@ -21,6 +21,7 @@ jobs:
         with:
           node-version: ${{ matrix.node-version }}
       - run: |
+          sudo apt-get install cloc
           npm install .
           npm run tsc
           npm run build
