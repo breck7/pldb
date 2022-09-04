@@ -200,7 +200,7 @@ class SiteBuilder {
         .sortBy(writtenIn, "rank")
         .map(
           file =>
-            `<li><a href="BASE_URL/languages/${file.permalink}">${file.title}</a></li>`
+            `<li><a href="../languages/${file.permalink}">${file.title}</a></li>`
         )
         .join(""),
       PACKAGES_TABLE: npmPackages
