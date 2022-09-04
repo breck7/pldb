@@ -1,0 +1,18 @@
+title Mirrors
+import settings.scroll
+groups index
+
+* The <a href="../languages/url.html">URL</a> for the official PLDB site is <a href="https://pldb.com">https://pldb.com</a>. <a href="../languages/dns.html">DNS</a> will take that domain name and send your browser an <a href="../languages/ipv4.html">IPv4</a> address. Your browser will send a request to that address which will reach our virtual server running Nginx (nicknamed _Marconi_) running in a Digital Ocean datacenter. _Marconi_ will send you the HTML, CSS, Javascript, PNGs, SVGs and JSON that make up the built website.
+
+* In case there's a problem with _Marconi_, you should be able to access the exact same site served from GitHub's servers here: <a href="https://github.pldb.com">https://github.pldb.com</a>.
+
+* If _Marconi_ AND GitHub were to go down at the same time...well that's why it's good to regularly download the entire source code of the site to your own machine! You can do that with:
+
+bashCode
+ git clone https://github.com/breck7/pldb.git
+ # Then to keep it updated:
+ cd pldb
+ git pull
+
+* We have another server running at Digital Ocean currently nicknamed _Wobbly_ that serves <a href="https://edit.pldb.com">edit.pldb.com</a>. _Wobbly_ serves the site and also let's you easily edit the database right in your web browser. But _Wobbly_ is still wobbily and goes down a lot and is slow. Until we get that code up to par, it's often easier to just submit your changes to the <a href="https://github.com/breck7/pldb">PLDB repo</a> using the normal GitHub UI.
+
