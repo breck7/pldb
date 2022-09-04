@@ -239,9 +239,12 @@ pipeTable
   }
 
   toScroll() {
-    const { typeName, title, id } = this.file
+    const { file } = this
+    const { typeName, title, id } = file
 
     if (title.includes("%20")) throw new Error("bad space in title: " + title)
+
+    const screenshot = file.get("screenshot")
 
     return `title ${title}
 
@@ -258,6 +261,15 @@ ${this.kpiBar}
 ${this.tryNowRepls}
 
 ${this.monacoEditor}
+
+${
+  screenshot
+    ? `image ${screenshot.replace(
+        "https://pldb.com/",
+        "../"
+      )}\n caption A screenshot of ${title}.`
+    : ""
+}
 
 ${this.descriptionSection}
 
