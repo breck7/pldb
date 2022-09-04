@@ -1,0 +1,14 @@
+title Alumina
+type pl
+webRepl https://play.alumina-lang.net/
+reference https://www.reddit.com/r/ProgrammingLanguages/comments/x4xhdj/alumina_programming_language/
+
+compilesTo c
+influencedBy rust
+
+example
+ fn main() {
+     println!("Hello, world!");
+ }
+
+githubRepo https://github.com/tibordp/alumina
