@@ -1,0 +1,20 @@
+title Ohayo
+type pl
+description Ohayo is a fast and free tool for data science. Ohayo consists of a very high level programming language and a visual web studio for that language. The goal of Ohayo is to enable people to do data science at the speed of voice.
+website https://ohayo.computer/
+webRepl https://ohayo.computer/
+
+related r
+
+features
+ hasSemanticIndentation true
+
+example
+ web.get ohayo/packages/samples/welcome.md
+  parser text
+  hidden
+  markdown.toHtml
+ templates.list
+ challenge.list
+
+githubRepo https://github.com/breck7/ohayo
