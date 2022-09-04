@@ -20,6 +20,9 @@ jobs:
         uses: actions/setup-node@v1
         with:
           node-version: ${{ matrix.node-version }}
-      - run: npm install
-      - run: npm run test
+        run: |
+          npm install .
+          npm run tsc
+          npm run build
+          npm run test
       # - run: npm run buildCoverageReport
