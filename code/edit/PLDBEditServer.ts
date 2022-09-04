@@ -30,7 +30,7 @@ const searchLogPath = path.join(ignoreFolder, "searchLog.tree")
 Disk.touch(editLogPath)
 Disk.touch(searchLogPath)
 
-const editForm = (content = "", title = "") =>
+const editForm = (content = "", title = "", missingRecommendedColumns = []) =>
 	`${title ? `title ${title}` : ""}
 html
  <form method="POST" id="editForm">
@@ -42,6 +42,13 @@ html
  </div>
  <div class="cell">
  <div id="quickLinks"></div>
+ <div class="missingRecommendedColumns">${
+		missingRecommendedColumns.length
+			? `<br><b>Missing columns:</b><br>${missingRecommendedColumns
+					.map(col => col.Column)
+					.join("<br>")}`
+			: ""
+ }</div>
  <div id="exampleSection"></div>
  </div>
  <br><br>
@@ -197,8 +204,11 @@ ${editForm(submission, "Error")}`
 
 			res.send(
 				this.scrollToHtml(
-					editForm(file.childrenToString(), `Editing ${file.id}`) +
-						`\nkeyboardNav ${file.previousRanked.id} ${file.nextRanked.id}`
+					editForm(
+						file.childrenToString(),
+						`Editing ${file.id}`,
+						file.missingRecommendedColumns
+					) + `\nkeyboardNav ${file.previousRanked.id} ${file.nextRanked.id}`
 				)
 			)
 		})
@@ -420,7 +430,7 @@ css
    vertical-align: top;
    padding: 5px;
  }
- #quickLinks {
+ #quickLinks, .missingRecommendedColumns {
    font-size: 80%;
  }
 

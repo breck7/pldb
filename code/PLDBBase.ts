@@ -104,6 +104,23 @@ class PLDBFile extends TreeBaseFile {
     return this.id
   }
 
+  get missingColumns() {
+    return this.base.columnDocumentation
+      .filter(col => col.Description !== "computed")
+      .filter(col => !col.Column.includes("."))
+      .filter(col => !this.has(col.Column))
+  }
+
+  get missingRecommendedColumns() {
+    return this.missingColumns.filter(col => col.Recommended === true)
+  }
+
+  // todo:refactor columnDocumentation
+  // @includeInCsv
+  // get missingColumnsCount() {
+  //   return this.missingColumns.length
+  // }
+
   get domainName() {
     return this.get("domainName")
   }
@@ -957,7 +974,9 @@ class PLDBBaseFolder extends TreeBaseFolder {
           SourceLink,
           Description,
           Definition,
-          DefinitionLink
+          DefinitionLink,
+          Recommended:
+            colDef && colDef.getFrom("boolean alwaysRecommended") === "true"
         }
       })
       .filter(col => col.Values)

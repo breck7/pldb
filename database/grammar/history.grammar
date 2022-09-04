@@ -1,6 +1,7 @@
 creatorNameCell
  extends stringCell
 creatorsNode
+ boolean alwaysRecommended true
  description Name(s) of the original creators of the language delimited by " and "
  cells keywordCell
  catchAllCellType creatorNameCell
@@ -43,6 +44,7 @@ announcementMethodNode
 countryNameCell
 countryNode
  description What country was the language first developed in?
+ boolean alwaysRecommended true
  cells keywordCell
  catchAllCellType countryNameCell
  extends abstractFactNode
@@ -55,6 +57,7 @@ corporateDevelopersNode
  cruxFromId
  single false
 isOpenSourceNode
+ boolean alwaysRecommended true
  description Is it an open source project?
  extends abstractBooleanNode
  cruxFromId
