@@ -416,6 +416,10 @@ ${facts.map(fact => ` - ${fact}`).join("\n")}`
     if (documentation)
       facts.push(`the <a href="${documentation}">${title} docs</a>`)
 
+    const demoVideo = file.get("demoVideo")
+    if (demoVideo)
+      facts.push(`A <a href="${demoVideo}">video demo of ${title}</a>`)
+
     const githubRepoCount = file.get("githubLanguage repos")
     if (githubRepoCount) {
       const url = `https://github.com/search?q=language:${file.get(
