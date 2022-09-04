@@ -1,0 +1,39 @@
+selection	Total					
+title	Where are the most programming languages created?					
+subtitle	Every programming language was created in a country (or countries). C launched from the United States, Python from the Netherlands, and Ruby from Japan. At the moment, it appears the United States produces the most programming languages—more than all others combined, in fact. But PLDB is missing the `country` field for 3,780 languages. Perhaps when the dataset is a lot more complete the picture will look different. The data comes from https://pldb.com/languages.csv and is public domain and freely available. The chart was made with Our World In Data's Grapher which is open source software available at https://github.com/owid/owid-grapher					
+type	WorldMap					
+hasMapTab	false					
+hideControls	true					
+ySlugs	Languages					
+columns						
+	slug	type	name			
+	Year	Year	Year			
+	Country	EntityName	EntityName			
+	Languages	Numeric	Languages			
+					
+table						
+	Country	Languages	Year			
+	United States	171	2022			
+	Netherlands	4	2022			
+	Switzerland	8	2022			
+	Canada	13	2022			
+	Japan	7	2022			
+	Brazil	2	2022			
+	Sweden	4	2022			
+	France	11	2022			
+	United Kingdom	24	2022			
+	Norway	4	2022			
+	Germany	7	2022			
+	Italy	4	2022			
+	Russia	7	2022			
+	Denmark	1	2022			
+	Australia	2	2022			
+	Nigeria	1	2022			
+	Israel	2	2022			
+	Korea	1	2022			
+	Portugal	1	2022			
+	Poland	1	2022			
+	Iceland	1	2022			
+	Belgium	2	2022			
+	China	1	2022			
+	Czech Republic	1	2022

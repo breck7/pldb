@@ -1,0 +1,17 @@
+title Where are the most programming languages created?
+import settings.scroll
+groups index
+date 9/3/2022
+maxColumns 1
+columnWidth 200
+openGraphImage https://pldb.com/posts/images/originCountries.png
+
+author https://github.com/breck7 Breck Yunits
+
+aftertext
+ dateline
+
+image images/originCountries.svg
+ caption The above SVG is also available as a <a href="images/originCountries.png">png</a>.
+
+* <a href="explorers/originCountries.explorer">The code</a> for the visualization above was written in the <a href="BASE_URL/languages/explorer.html">Explorer language</a>.
