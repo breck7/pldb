@@ -267,7 +267,7 @@ ${
     ? `image ${screenshot.replace(
         "https://pldb.com/",
         "../"
-      )}\n caption A screenshot of ${title}.`
+      )}\n caption A screenshot of the <a href="../lists/languages.html?filter=visual">visual language</a> ${title}.`
     : ""
 }
 
