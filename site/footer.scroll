@@ -6,6 +6,9 @@ scrollFooter
    href BASE_URL/index.html
    class logoFont
   span - Build the next great programming language · <a title="This page was built in BUILT_IN_YEAR from commit LAST_HASH" href="https://github.com/breck7/pldb/commit/LAST_HASH">vBUILT_IN_YEAR</a> · 
+  a Day DAYS_SINCE_LAUNCH
+   href BASE_URL/pages/about.html
+  span ·
   a Docs
    href BASE_URL/docs/csv.html
   span ·

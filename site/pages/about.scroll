@@ -73,6 +73,11 @@ aftertext
 
 bash cd ..; cd ..; cloc --quiet --vcs git . --read-lang-def=code/clocLangs.txt
 
+subsection History
+
+* PLDB.com <a href="https://github.com/breck7/pldb/commit/95ff2c2e69d77ecc89a3ac58e71b353e9485dc81">came online</a> DAYS_ONLINE days ago. PLDB.com <a href="https://news.ycombinator.com/item?id=32619671">launched</a> DAYS_SINCE_LAUNCH days ago. PLDB began as an anonymous <a href="../languages/jekyll.html">Jekyll</a> blog on <a href="../posts/hello-world.html">November 18, 2017</a>. The blog was migrated to <a href="../languages/scroll.html">Scroll</a> and the name changed from <a href="https://github.com/breck7/pldb/commit/273f34a8620111e326a49332761e2c01823b58ef">CodeLani to PLDB</a> on June 27, 2022.
+* The site owes its existence to a kind (_but firm_) Internet commenter who told <a href="https://breckyunits.com">Breck Yunits</a> to `learn to research properly` if he wanted to make his languages any good.
+
 subsection Citation
 
 aftertext
