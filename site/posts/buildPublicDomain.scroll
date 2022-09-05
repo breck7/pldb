@@ -1,0 +1,57 @@
+title #BuildPublicDomain
+date 09-04-2022
+
+html
+ <center>
+
+* It all started with <a href="https://archive.org/details/1983-30sec">1984</a>.
+
+html
+ <video controls>
+  <source src="videos/1983_30sec.mp4" type="video/mp4">
+ </video>
+
+* Tech used to have a message that sent a chill up your spine.
+
+html
+ <video controls>
+  <source src="videos/crazyOnes.mp4" type="video/mp4">
+ </video>
+
+* It's been too long since we had one.
+
+* We may not have a big production budget. But we do have _you_. And _you_ know how to build. We've committed v1. We need you to commit v2.
+
+* Today is the dawn of a new message:
+
+html
+ <br><br>
+
+html
+ <h1 style="font-family: italics; text-align: center;">#BuildPublicDomain</h1>
+
+html
+ <br><br>
+
+html
+ <!-- link coming at halftime --!>
+ <figure class="scrollImageComponent"><img src="images/buildPublicDomain.png" width="1884" height="1048" loading="lazy"/></figure>
+
+html
+ <i>Premiering tonight.</i>
+
+openGraphImage https://pldb.com/posts/images/buildPublicDomain.png
+
+groups index
+
+html
+ <br><br></center>
+
+import settings.scroll
+groups index
+scrollHeader
+scrollFooter
+maxColumns 1
+columnWidth 53
+keyboardNav
+scrollCss ../scroll.css
