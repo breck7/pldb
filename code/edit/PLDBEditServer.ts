@@ -500,7 +500,7 @@ ${scrollContent}
 				"--author": `${authorName} <${authorEmail}>`
 			})
 
-			await this.git.pull()
+			await this.git.pull("origin", "main")
 			await git.push()
 
 			// todo: verify that this is the users commit
