@@ -758,7 +758,7 @@ paragraph
       .findNodes("funFact")
       .map(
         fact =>
-          `exampleCodeHeader ${`<a href='${fact.getContent()}'>Fun fact</a>"`}:
+          `exampleCodeHeader ${`<a href='${fact.getContent()}'>Fun fact</a>`}:
 code
  ${cleanAndRightShift(lodash.escape(fact.childrenToString()), 1)}`
       )
