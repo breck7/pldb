@@ -1,5 +1,12 @@
 originCommunityNode
  description In what community(ies) did the language first originate?
+ boolean alwaysRecommended true
+ todo Make origin community name the url for the community, not the name.
+ example
+  originCommunity Microsoft
+  originCommunity futureofcoding
+  originCommunity /r/programminglanguages
+  originCommunity news.ycombinator.com
  catchAllCellType stringCell
  extends abstractFactNode
  cruxFromId
