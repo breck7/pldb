@@ -1,0 +1,30 @@
+title PML
+type textMarkup
+creators Christian Neumanns
+website https://www.pml-lang.dev/
+standsFor Practical Markup Language
+
+example
+ [doc [title PML Demo]
+ 
+     [ch [title Introduction]
+         This is a [i simple] example.
+ 
+         You can add images, audio, and videos:
+         [image (
+             source = images/strawberries.jpg
+              width = 300
+              align = center
+         )]
+     ]
+ 
+     [ch [title Source Code]
+         You can show highlighted source code:
+         [code (lang=java)
+             // Simple Java example
+             public static void sayHello ( String name ) {
+                 System.out.println ( "Hello " + name );
+             }        
+         code]
+     ]
+ ]
