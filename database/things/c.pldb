@@ -6,9 +6,6 @@ reference http://www.c4learn.com/c-programming/c-keywords/
 cheatSheetUrl https://courses.cs.washington.edu/courses/cse351/14sp/sections/1/Cheatsheet-c.pdf
 country United States
 
-funFact https://news.ycombinator.com/item?id=32621392
-  C gets credit for the // comments, starting in 1972, but that's not really accurate. BCPL -- which begat B which begat C -- had // comments but they were not included in C until C99. C++ (which isn't included in their top 30 languages) brought back // comments from BCPL sometime between 1979 and 1985 (the first public release of cfront). Many C compilers included // comments as an extension prior to C99 but those were inspired by C++
-
 features
  hasRegularExpressionsSyntaxSugar false
  hasBooleans true
@@ -154,6 +151,9 @@ multiLineCommentTokens /* */
 printToken printf
 assignmentToken =
 keywords auto break case char const continue default do double else enum extern float for goto if int long register return short signed sizeof static struct switch typedef union unsigned void volatile while
+
+funFact https://news.ycombinator.com/item?id=32621392
+  C gets credit for the // comments, starting in 1972, but that's not really accurate. BCPL -- which begat B which begat C -- had // comments but they were not included in C until C99. C++ (which isn't included in their top 30 languages) brought back // comments from BCPL sometime between 1979 and 1985 (the first public release of cfront). Many C compilers included // comments as an extension prior to C99 but those were inspired by C++
 
 wikipedia https://en.wikipedia.org/wiki/C_(programming_language)
  example
