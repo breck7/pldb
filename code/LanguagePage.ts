@@ -280,6 +280,8 @@ html
 
 ${this.exampleSection}
 
+${this.funFactSection}
+
 ${this.keywordsSection}
 
 ${this.featuresTable}
@@ -749,6 +751,18 @@ ${facts.map(fact => ` - ${fact}`).join("\n")}`
     return `subsection <a href="../lists/keywords.html?filter=${this.id}">Keywords</a> in ${this.file.title}
 paragraph
  ${keywords}`
+  }
+
+  get funFactSection() {
+    return this.file
+      .findNodes("funFact")
+      .map(
+        fact =>
+          `exampleCodeHeader ${`<a href='${fact.getContent()}'>Fun fact</a>"`}:
+code
+ ${cleanAndRightShift(lodash.escape(fact.childrenToString()), 1)}`
+      )
+      .join("\n\n")
   }
 
   get exampleSection() {
