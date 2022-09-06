@@ -50,12 +50,6 @@ countryNode
  extends abstractFactNode
  cruxFromId
  single false
-corporateDevelopersNode
- description Which corporation(s) sponsors the development of the project, if any.
- catchAllCellType stringCell
- extends abstractFactNode
- cruxFromId
- single false
 isOpenSourceNode
  boolean alwaysRecommended true
  description Is it an open source project?

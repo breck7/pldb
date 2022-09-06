@@ -437,18 +437,16 @@ class SiteBuilder {
 
   @benchmark
   @buildAll
-  buildCorporationsImports() {
+  buildOriginCommunitiesImports() {
     const entities = {}
 
     const files = lodash.sortBy(
-      pldbBase.filter(
-        file => file.isLanguage && file.corporateDevelopers.length
-      ),
+      pldbBase.filter(file => file.isLanguage && file.originCommunity.length),
       "languageRank"
     )
 
     files.forEach(file => {
-      file.corporateDevelopers.forEach(entity => {
+      file.originCommunity.forEach(entity => {
         if (!entities[entity]) entities[entity] = []
         entities[entity].push({
           id: file.id,
@@ -474,13 +472,16 @@ class SiteBuilder {
     const sorted = lodash.sortBy(rows, ["count", "top"])
     sorted.reverse()
 
-    buildImportsFile(path.join(listsFolder, "corporationsImports.scroll"), {
-      TABLE: {
-        rows: sorted,
-        header: ["name", "languages", "count"]
-      },
-      COUNT: numeral(Object.values(entities).length).format("0,0")
-    })
+    buildImportsFile(
+      path.join(listsFolder, "originCommunitiesImports.scroll"),
+      {
+        TABLE: {
+          rows: sorted,
+          header: ["name", "languages", "count"]
+        },
+        COUNT: numeral(Object.values(entities).length).format("0,0")
+      }
+    )
   }
 
   @benchmark

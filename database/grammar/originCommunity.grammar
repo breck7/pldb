@@ -1,0 +1,6 @@
+originCommunityNode
+ description In what community(ies) did the language first originate?
+ catchAllCellType stringCell
+ extends abstractFactNode
+ cruxFromId
+ single false

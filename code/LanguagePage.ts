@@ -436,18 +436,18 @@ ${facts.map(fact => ` - ${fact}`).join("\n")}`
     const supersetOf = file.supersetFile
     if (supersetOf) facts.push(`${title} is a superset of ${supersetOf.link}`)
 
-    const { corporateDevelopers } = file
-    let corporateDevelopersStr = ""
-    if (corporateDevelopers.length) {
-      corporateDevelopersStr = corporateDevelopers
+    const { originCommunity } = file
+    let originCommunityStr = ""
+    if (originCommunity.length) {
+      originCommunityStr = originCommunity
         .map(
           name =>
-            `<a href="../lists/corporations.html#${nameToAnchor(
+            `<a href="../lists/originCommunities.html#${nameToAnchor(
               name
             )}">${name}</a>`
         )
         .join(" and ")
-      facts.push(`${title} is backed by ${corporateDevelopersStr}`)
+      facts.push(`${title} first developed in ${originCommunityStr}`)
     }
 
     const { numberOfJobs } = file
