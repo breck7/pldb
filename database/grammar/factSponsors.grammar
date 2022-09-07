@@ -8,7 +8,7 @@ factSponsorNode
  cells intCell transactionIdCell urlCell
  catchAllCellType stringCell
 factSponsorsNode
- description Sponsor a fact(s) and PLDB will prioritize research into this language or column type.
+ description Sponsor a fact(s) and PLDB will prioritize research into this language or column type. If you are not 100% satisfied with the research that is done you get a full refund, no questions asked, no expiration.
  cruxFromId
  extends abstractFactNode
  catchAllNodeType factSponsorNode
