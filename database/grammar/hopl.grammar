@@ -1,5 +1,5 @@
 hoplNode
- extends abstractOneWordGuidNode
- cells keywordCell intCell
+ extends abstractUrlGuidNode
+ cells keywordCell urlCell
  description The matching language on Diarmuid Pigott's Online Historical Encyclopaedia of Programming Languages site (https://hopl.info/)
  string sourceDomain hopl.info

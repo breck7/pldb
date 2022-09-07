@@ -584,10 +584,7 @@ ${facts.map(fact => ` - ${fact}`).join("\n")}`
       )
 
     const hopl = file.get("hopl")
-    if (hopl)
-      facts.push(
-        `${title} is listed on <a href="https://hopl.info/showlanguage.prx?exp=${hopl}">HOPL</a>`
-      )
+    if (hopl) facts.push(`${title} is listed on <a href="${hopl}">HOPL</a>`)
 
     const tiobe = file.get("tiobe")
     const tiobeRank = file.get("tiobe currentRank")
