@@ -125,6 +125,10 @@ class PLDBFile extends TreeBaseFile {
     return this.get("domainName")
   }
 
+  get factSponsors() {
+    return this.getNode("factSponsors")
+  }
+
   get permalink() {
     return this.id + ".html"
   }

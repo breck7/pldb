@@ -1,0 +1,16 @@
+transactionIdCell
+ extends stringCell
+factSponsorNode
+ description The number of cells sponsored, the transaction id, the sponsor's url and the sponsor's name.
+ example
+  2 982m320sd https://breckyunits.com Breck Yunits
+  10 abcfde2 https://mozilla.org Mozilla
+ cells intCell transactionIdCell urlCell
+ catchAllCellType
+factSponsorsNode
+ description Sponsor a fact(s) and PLDB will prioritize research into this language or column type.
+ cruxFromId
+ extends abstractFactNode
+ inScope factSponsorNode
+ boolean includeChildrenInCsv false
+ single
