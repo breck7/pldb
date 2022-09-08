@@ -56,7 +56,10 @@ html
  Submitting as: <span id="authorLabel"></span> <a href="#" onClick="app.changeAuthor()">change</a>
  </div>
  <br>
- <input type="hidden" name="author" id="author"><input type="submit" value="Save" id="submitButton" onClick="app.saveAuthorIfUnsaved()"/>
+ <input type="hidden" name="author" id="author">
+ <input type="button" value="Save" onClick="alert('You have no call sign set. Build.PLDB.com is temporarily limited while we resolve traffic issues. Please email breck@pldb.com if you want a call sign.'"
+ <p>Remember, you can also always submit updates to this file using the traditional GitHub Pull Request flow.</p>
+ <!-- <input type="submit" value="Save" id="submitButton" onClick="app.saveAuthorIfUnsaved()"/> --!>
  </form>`
 
 const cssLibs = "node_modules/jtree/sandbox/lib/codemirror.css node_modules/jtree/sandbox/lib/codemirror.show-hint.css"
@@ -64,7 +67,7 @@ const cssLibs = "node_modules/jtree/sandbox/lib/codemirror.css node_modules/jtre
 	.map(name => ` <link rel="stylesheet" type="text/css" href="/${name}" />`)
 	.join("\n")
 
-const scripts = "libs.js editApp.js node_modules/jtree/products/jtree.browser.js pldb.browser.js node_modules/jtree/sandbox/lib/codemirror.js node_modules/jtree/sandbox/lib/show-hint.js"
+const scripts = "libs.js buildApp.js node_modules/jtree/products/jtree.browser.js pldb.browser.js node_modules/jtree/sandbox/lib/codemirror.js node_modules/jtree/sandbox/lib/show-hint.js"
 	.split(" ")
 	.map(name => ` <script src="/${name}"></script>`)
 	.join("\n")
