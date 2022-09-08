@@ -43,8 +43,7 @@ subsection Server setup
 bashCode
  apt update
  apt upgrade
- apt install nginx
- apt install certbot python3-certbot-nginx
+ apt install nginx goaccess certbot python3-certbot-nginx
  reboot
  # deploy the site to /var/www/html
  # google "digital ocean certbot" and follow instructions. not all steps are necessary.
