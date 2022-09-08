@@ -260,7 +260,7 @@ ${editForm(submission, "Error")}`
 		})
 	}
 
-	create(content, author) {
+	async create(content, author) {
 		try {
 			this.appendToPostLog("create", author, content)
 
