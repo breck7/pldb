@@ -5,28 +5,22 @@ date 2018-10-28 12:00:00 -8000
 
 author https://github.com/breck7 Breck Yunits
 
-aftertext
- Each programming language was created in a place (or perhaps, in a set of distributed places) and I am attempting to collect that data.
+* Each programming language was created in a place (or perhaps, in a set of distributed places) and I am attempting to collect that data.
  dateline
 
-aftertext
- Currently I have the country of birth for about 260 of the over 1,000 languages I track.
+* Currently I have the country of birth for about 260 of the over 1,000 languages I track.
 
-aftertext
- In my data so far, the US has birthed more languages than all other countries combined.
+* In my data so far, the US has birthed more languages than all other countries combined.
 
-aftertext
- After the U.S. comes the UK, Canada, France, and China, in that order.
+* After the U.S. comes the UK, Canada, France, and China, in that order.
 
-aftertext
- There could be bias in my dataset, of course, as I haven't yet added country for most languages. Things will clarify as the database continues to mature.
+* There could be bias in my dataset, of course, as I haven't yet added country for most languages. Things will clarify as the database continues to mature.
 
 image images/countries.png
 
 endSnippet
 
-aftertext
- Data used for this chart:
+* Data used for this chart:
 
 commaTable
  country,count

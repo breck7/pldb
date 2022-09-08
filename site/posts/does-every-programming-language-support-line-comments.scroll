@@ -6,73 +6,61 @@ author https://github.com/breck7 Breck Yunits
 
 image line-comments.png
 
-aftertext
- About 85% of the languages in PLDB have line comments.
+* About 85% of the languages in PLDB have line comments.
  link BASE_URL/languages/line-comments-feature.html line comments
  dateline
 
 endSnippet
 
-aftertext
- A language supports line comments if it defines a special token (nowadays usually `//` or `#`) where everything after that token until the end of the line becomes a comment. Example:
+* A language supports line comments if it defines a special token (nowadays usually `//` or `#`) where everything after that token until the end of the line becomes a comment. Example:
  wrapsOn
 
 code
  print "Hello world" # this is a comment
 
-aftertext
- These are different from multiline comments which are delimited by a pair of tokens (such as `%{` and `}%`).
+* These are different from multiline comments which are delimited by a pair of tokens (such as `%{` and `}%`).
  wrapsOn
  link BASE_URL/languages/multiline-comments-feature.html multiline comments
 
 subsection The majority of languages use // or # to start a line comment
 
-aftertext
- *38%* of programming languages follow C and use `//`. C (1972) follows B (1969) which follows BCPL (1966).
+* *38%* of programming languages follow C and use `//`. C (1972) follows B (1969) which follows BCPL (1966).
  wrapsOn
  link BASE_URL/languages/c.html C
  link BASE_URL/languages/b.html B
  link BASE_URL/languages/bcpl.html BCPL
 
-aftertext
- *22%* use `#`, which has become very popular thanks to languages like Python, Perl, and Ruby.
+* *22%* use `#`, which has become very popular thanks to languages like Python, Perl, and Ruby.
  wrapsOn
  link BASE_URL/languages/python.html Python
  link BASE_URL/languages/perl.html Perl
  link BASE_URL/languages/ruby.html Ruby
 
-aftertext
- The SQL languages all generally use `--`.
+* The SQL languages all generally use `--`.
  wrapsOn
 
-aftertext
- The era of experimentation with line comment tokens appears to be over: the last time a new line comment token appeared in the top 250 was 1993.
+* The era of experimentation with line comment tokens appears to be over: the last time a new line comment token appeared in the top 250 was 1993.
  link BASE_URL/lists/top250.html top 250
 
 subsection 15% of languages don't have line comments
 
-aftertext
- About 15% of the languages in PLDB don't support line comments. These include some of the key markups for the web like HTML, CSS and SVG.
+* About 15% of the languages in PLDB don't support line comments. These include some of the key markups for the web like HTML, CSS and SVG.
  link BASE_URL/languages/html.html HTML
  link BASE_URL/languages/css.html CSS
  link BASE_URL/languages/svg.html SVG
 
-aftertext
- JSON famously does not support comments. But a number of its derivatives do, such as <a href="BASE_URL/languages/json-with-comments.html">JSON with Comments</a>.
+* JSON famously does not support comments. But a number of its derivatives do, such as <a href="BASE_URL/languages/json-with-comments.html">JSON with Comments</a>.
  link BASE_URL/languages/json.html JSON
 
-aftertext
- A few general purpose languages don't support line comments including Mathematica and OCaml.
+* A few general purpose languages don't support line comments including Mathematica and OCaml.
  link BASE_URL/languages/mathematica.html Mathematica
  link BASE_URL/languages/ocaml.html OCaml
 
 subsection A few exceptions
 
-aftertext
- Like everything, there are exceptions to the common cases. A few languages, such as <a href="BASE_URL/languages/spss.html">SPSS</a>, have a more restrictive form of line comment where the line comment token has to be the first token on the line.
+* Like everything, there are exceptions to the common cases. A few languages, such as <a href="BASE_URL/languages/spss.html">SPSS</a>, have a more restrictive form of line comment where the line comment token has to be the first token on the line.
 
-aftertext
- A few languages also support multiple line comment tokens. The <a href="BASE_URL/languages/ini.html">Ini config format</a> supports both `;` and `#`.
+* A few languages also support multiple line comment tokens. The <a href="BASE_URL/languages/ini.html">Ini config format</a> supports both `;` and `#`.
  wrapsOn
 
 observable https://observablehq.com/@breck7/line-comments-in-programming-languages

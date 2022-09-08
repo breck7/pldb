@@ -2,11 +2,9 @@ title About
 import settings.scroll
 groups index
 
-aftertext
- Welcome to PLDB: a Programming Language Database!
+* Welcome to PLDB: a Programming Language Database!
 
-aftertext
- PLDB is a comprehensive database of programming
+* PLDB is a comprehensive database of programming
  languages and their features. The focus is on
  *programming languages*, but the database also
  includes other languages and entities one degree away--from
@@ -14,11 +12,9 @@ aftertext
  specifications and beyond.
  wrapsOn
 
-aftertext
- PLDB is for two groups of people:
+* PLDB is for two groups of people:
 
-aftertext
- 1. <b>Programming language creators.</b> PLDB is organized big data
+* 1. <b>Programming language creators.</b> PLDB is organized big data
  to help you create great new languages, and improve
  existing ones. When making design decisions, quickly look up
  what features other languages have tried. Benefit from the experiences
@@ -26,8 +22,7 @@ aftertext
  find what you need here, open an issue and explain what you need.
  https://github.com/breck7/pldb/issues/new open an issue
 
-aftertext
- 2. <b>Programming language users.</b> PLDB provides a
+* 2. <b>Programming language users.</b> PLDB provides a
  data-driven view of the programming language universe, to
  demystify the world of programming languages for you, and
  provide sound strategic and tactical advice to help you in
@@ -37,8 +32,7 @@ aftertext
 
 subsection Join!
 
-aftertext
- Want to get involved? Read more here.
+* Want to get involved? Read more here.
  link join.html here
 
 subsection Open source
@@ -53,14 +47,12 @@ subsection Web server
 
 subsection Acknowledgements
 
-aftertext
- This site is powered by information and software from so many people and organizations, a few of which are listed on the acknowledgements page.
+* This site is powered by information and software from so many people and organizations, a few of which are listed on the acknowledgements page.
  link acknowledgements.html acknowledgements
 
 subsection Cloc Stats
 
-aftertext
- Below are the cloc stats for the pldb repo as of BUILT_ON_DAY.
+* Below are the cloc stats for the pldb repo as of BUILT_ON_DAY.
  link BASE_URL/languages/cloc.html cloc
  https://github.com/breck7/pldb pldb repo
 
@@ -73,8 +65,7 @@ subsection History
 
 subsection Citation
 
-aftertext
- PLDB content is published to the public domain and you can use it freely. If needed, here are 3 options for citing PLDB:
+* PLDB content is published to the public domain and you can use it freely. If needed, here are 3 options for citing PLDB:
 
 quote
  https://pldb.com

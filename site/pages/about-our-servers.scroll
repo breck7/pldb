@@ -2,19 +2,16 @@ title About this web server
 import settings.scroll
 groups index
 
-aftertext
- You can download all the source code for this site and browse it completely offline from GitHub.
+* You can download all the source code for this site and browse it completely offline from GitHub.
  https://github.com/breck7/pldb source code
 
 section Domains and DNS
 
-aftertext
- Most PLDB domains are registered with Google Domains and PLDB uses Google Domains and Digital Ocean for DNS.
+* Most PLDB domains are registered with Google Domains and PLDB uses Google Domains and Digital Ocean for DNS.
  https://domains.google/ Google Domains
  https://www.digitalocean.com/ Digital Ocean
 
-aftertext
- This site is served using NGINX on Ubuntu 20 running on a Digital Ocean droplet. SSL certificate is generated using certbot.
+* This site is served using NGINX on Ubuntu 20 running on a Digital Ocean droplet. SSL certificate is generated using certbot.
  https://releases.ubuntu.com/20.04/ Ubuntu 20
  https://www.nginx.com/ NGINX
  https://www.digitalocean.com/ Digital Ocean
@@ -24,14 +21,12 @@ aftertext
 
 subsection Analytics
 
-aftertext
- This site does not use cookies or include any tracking scripts. Server logs are kept and used primarily for catching broken links, broken scripts, and other QA. If you need even more privacy, you can run the site locally or on your own servers. You can view traffic today and/or traffic trends for the last two weeks.
+* This site does not use cookies or include any tracking scripts. Server logs are kept and used primarily for catching broken links, broken scripts, and other QA. If you need even more privacy, you can run the site locally or on your own servers. You can view traffic today and/or traffic trends for the last two weeks.
  https://www.nginx.com/ NGINX
  https://pldb.com/nginxDaily.html traffic today
  https://pldb.com/nginxDailyAll.html traffic trends
 
-aftertext
- GoAccess generates these reports. It runs every hour thanks to the `cron` jobs listed below.
+* GoAccess generates these reports. It runs every hour thanks to the `cron` jobs listed below.
  https://goaccess.io/ GoAccess
 
 cronCode
@@ -62,8 +57,7 @@ bashCode
  sudo systemctl restart nginx
  # Test that it worked here, swapping XXX with IP address of server: https://v20.ohayo.computer/?filename=testcorsonpldb&nodeBreakSymbol=%7E&edgeSymbol=_&data=web.get_http%253A%252F%252FXXX.XXX.XXX.XXX%252Fpldb.csv%7E_tables.basic
 
-aftertext
- The custom 404 page is activated using the code below (line 142 seems to work):
+* The custom 404 page is activated using the code below (line 142 seems to work):
 
 bashCode
  vim /etc/nginx/sites-enabled/default
@@ -79,11 +73,9 @@ nginxConfigCode
 
 subsection Deploying
 
-aftertext
- PLDB is deployed using rsync.
+* PLDB is deployed using rsync.
  https://linux.die.net/man/1/rsync rsync
 
 subsection Logo and favicons
 
-aftertext
- Favicon designed with <a href="https://formito.com/tools/favicon">this</a> and favicon files generated with <a href="https://favicon.io/">this</a>.
+* Favicon designed with <a href="https://formito.com/tools/favicon">this</a> and favicon files generated with <a href="https://favicon.io/">this</a>.

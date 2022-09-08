@@ -6,15 +6,13 @@ author https://github.com/breck7 Breck Yunits
 
 image a-language-without-comments.png
 
-aftertext
- <a href="BASE_URL/languages/json.html">JSON</a> is the _only_ popular language in the PLDB without comments.
+* <a href="BASE_URL/languages/json.html">JSON</a> is the _only_ popular language in the PLDB without comments.
  dateline
  wrapsOn
 
 endSnippet
 
-aftertext
- Douglas Crockford explained his unique design decision in 2012. He had comments originally but removed them to prevent ecosystem fragmentation:
+* Douglas Crockford explained his unique design decision in 2012. He had comments originally but removed them to prevent ecosystem fragmentation:
 
 quote
  I removed comments from JSON because I saw people were using them to hold parsing directives, a practice which would have destroyed interoperability. I know that the lack of comments makes some people sad, but it shouldn't.
@@ -23,8 +21,7 @@ quote
  
  - Douglas Crockford - April 30, 2012 - <a href="https://web.archive.org/web/20141227005220/https://plus.google.com/+DouglasCrockfordEsq/posts/RK8qyGVaGSr">Source</a>
 
-aftertext
- A number of JSON derivatives added comments back, such as JSON5, Hjson and JSON with Comments.
+* A number of JSON derivatives added comments back, such as JSON5, Hjson and JSON with Comments.
  link BASE_URL/languages/json5.html JSON5
  link BASE_URL/languages/hjson.html Hjson
  link BASE_URL/languages/json-with-comments.html JSON with Comments

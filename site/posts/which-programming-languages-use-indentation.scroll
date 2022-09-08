@@ -5,14 +5,12 @@ date 2019-01-21 12:00:00 -8000
 
 author https://github.com/breck7 Breck Yunits
 
-aftertext
- dateline
+* dateline
  Python, as one of the top 10 programming languages in the world, is the most popular programming language that treats indentation as significant. In these offside languages, programmers indent their code blocks instead of using braces, brackets, or other visible characters.
  link BASE_URL/languages/python.html Python
  link https://en.wikipedia.org/wiki/Off-side_rule offside
 
-aftertext
- I was curious about how common these languages were so I did some brief analysis to answer these questions:
+* I was curious about how common these languages were so I did some brief analysis to answer these questions:
 
 orderedList
  1. How common is this type of language?
@@ -27,11 +25,9 @@ endSnippet
 
 section 2) Only 36 out of 2,500 programming languages in my database use indentation
 
-aftertext
- These languages use indentation:
+* These languages use indentation:
 
-aftertext
- abc, aldor, boo, buddyscript, cobra, coffeescript, csl, curry, elixir, f-sharp, genie, haml, haskell, inform, iswim, literate-coffeescript, livescript, madcap, madcap-vi, makefile, markdown, miranda, nemerle, net-format, nim, occam, org, promal, python, restructuredtext, sass, scss, spin, stylus, xl-programming-language and yaml.
+* abc, aldor, boo, buddyscript, cobra, coffeescript, csl, curry, elixir, f-sharp, genie, haml, haskell, inform, iswim, literate-coffeescript, livescript, madcap, madcap-vi, makefile, markdown, miranda, nemerle, net-format, nim, occam, org, promal, python, restructuredtext, sass, scss, spin, stylus, xl-programming-language and yaml.
  link BASE_URL/languages/abc.html abc
  link BASE_URL/languages/aldor.html aldor
  link BASE_URL/languages/boo.html boo
@@ -69,11 +65,9 @@ aftertext
  link BASE_URL/languages/xl-programming-language.html xl-programming-language
  link BASE_URL/languages/yaml.html yaml
 
-aftertext
- According to my present database, languages that strip indentation are about <b>70x</b> more common than languages that employ it.
+* According to my present database, languages that strip indentation are about <b>70x</b> more common than languages that employ it.
 
-aftertext
- My methods and models are not yet perfect and may have missed some indentation languages. If my models missed ~80% of the languages, that would still be a 10x difference between the two classes of languages. If you know of a missing language, please open an issue or send a pull request.
+* My methods and models are not yet perfect and may have missed some indentation languages. If my models missed ~80% of the languages, that would still be a 10x difference between the two classes of languages. If you know of a missing language, please open an issue or send a pull request.
  https://github.com/breck7/pldb/issues/new open an issue
  https://github.com/breck7/pldb pull request
 
@@ -81,19 +75,15 @@ section 3) The creation of indentation sensitive languages has ticked up, but no
 
 image images/indentation-time.png
 
-aftertext
- While there have been some notable new languages using significant indentation in the 2000's, some of the biggest new languages don't, including Go, Swift, Rust, TypeScript, Julia and Kotlin.
+* While there have been some notable new languages using significant indentation in the 2000's, some of the biggest new languages don't, including Go, Swift, Rust, TypeScript, Julia and Kotlin.
 
-aftertext
- Takeaway: According to my current data, there has not been a significant increase in new languages using significant indentation.
+* Takeaway: According to my current data, there has not been a significant increase in new languages using significant indentation.
 
 section Future Work
 
-aftertext
- I would like to expand upon this to help language designers answer the question: will adding significant indentation increase the odds of my language becoming successful? I will continue to invest in my data collection and mining efforts to ensure I am not missing accurate information about the lesser documented languages.
+* I would like to expand upon this to help language designers answer the question: will adding significant indentation increase the odds of my language becoming successful? I will continue to invest in my data collection and mining efforts to ensure I am not missing accurate information about the lesser documented languages.
 
-aftertext
- UPDATE: masonic on HackerNews pointed out that COBOL should be included on this list. The column position of tokens is indeed significant in COBOL (and FORTRAN too), so perhaps in the next update I'll clarify this categorization to adhere more closely to the offside rule, or will include a broader definition of significant indentation that includes some of these additional languages
+* UPDATE: masonic on HackerNews pointed out that COBOL should be included on this list. The column position of tokens is indeed significant in COBOL (and FORTRAN too), so perhaps in the next update I'll clarify this categorization to adhere more closely to the offside rule, or will include a broader definition of significant indentation that includes some of these additional languages
  link BASE_URL/languages/cobol.html COBOL
  link BASE_URL/languages/fortran.html FORTRAN
 

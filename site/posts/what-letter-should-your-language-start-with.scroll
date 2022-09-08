@@ -5,8 +5,7 @@ date 2018-10-25 12:00:00 -8000
 
 author https://github.com/breck7 Breck Yunits
 
-aftertext
- As the chart below shows, the number of programming
+* As the chart below shows, the number of programming
  languages beginning with a certain letter varies as much as
  10x by letter.
  dateline
@@ -15,16 +14,13 @@ image images/firstLetter.png
 
 endSnippet
 
-aftertext
- Below is the same list, sorted by popularity.
+* Below is the same list, sorted by popularity.
 
 image images/firstLetter-sorted.png
 
-aftertext
- A curious observation: why are A and C both ~3x more popular than B?
+* A curious observation: why are A and C both ~3x more popular than B?
 
-aftertext
- Data used for these charts:
+* Data used for these charts:
 
 commaTable
  firstLetter,count

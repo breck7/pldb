@@ -7,24 +7,21 @@ columnWidth 60
 
 author https://github.com/breck7 Breck Yunits
 
-aftertext
- dateline
+* dateline
  I have done many problems on Project Euler but I've
  never participated in competitive programming.
  The other day I got curious, what does the competitive programming landscape look like?
  https://projecteuler.net Project Euler
  https://en.wikipedia.org/wiki/Competitive_programming competitive programming
 
-aftertext
- I started my quest by watching a great interview with a competitive programmer. Then
+* I started my quest by watching a great interview with a competitive programmer. Then
  I did some searching. Below are my results.
  https://www.youtube.com/watch?v=F4rykKLcduI interview
  https://www.youtube.com/channel/UCBr_Fu6q9iHYQCh13jmpbrg competitive programmer
 
 section There are 16 major programming competitions
 
-aftertext
- The first one started in 1970. A few of the newer ones are online only.
+* The first one started in 1970. A few of the newer ones are online only.
 
 section Most of them started or are hosted in the USA
 
@@ -34,22 +31,19 @@ endSnippet
 
 section The List
 
-aftertext
- Below is the up-to-date list. You can contribute to it on the GitHub.
+* Below is the up-to-date list. You can contribute to it on the GitHub.
  link ../lists/competitions.html list
 
 import ../lists/competitionsData.scroll
 
 section Gennady Korotkevich
 
-aftertext
- I came across one interesting stat in my research. Gennady Korotkevich is a programmer who is currently the highest rated programmer on <i>all</i> 5 of the major competitive programming sites!
+* I came across one interesting stat in my research. Gennady Korotkevich is a programmer who is currently the highest rated programmer on <i>all</i> 5 of the major competitive programming sites!
  https://en.wikipedia.org/wiki/Gennady_Korotkevich Gennady Korotkevich
 
 section Future work
 
-aftertext
- It would be interesting to see trends in the number of
+* It would be interesting to see trends in the number of
  participants and prize amounts in these competitions over
  time. I'm curious if eSports
  with prizes in the millions, will sap people away from

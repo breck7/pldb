@@ -3,8 +3,7 @@ import settings.scroll
 maxColumns 1
 columnWidth 60
 
-aftertext
- Sorry but we cannot find the requested page on PLDB: a Programming Language Database.
+* Sorry but we cannot find the requested page on PLDB: a Programming Language Database.
 
 css
  .scrollFilePageComponent { text-align: center;}
@@ -15,6 +14,5 @@ html
  <script>document.getElementById("searchFormInput").value = (window.location.pathname + "").split("/").pop().replace(/\.[^\.]+$/, "").replace(/</g, "&lt;")
  </script>
 
-aftertext
- You can report a broken link on the PLDB GitHub.
+* You can report a broken link on the PLDB GitHub.
  https://github.com/breck7/pldb/issues report a broken link

@@ -6,8 +6,7 @@ author https://github.com/breck7 Breck Yunits
 
 image print-debugging.png
 
-aftertext
- Paul Graham—creator of Arc and Bel—started an interesting thread last month about "print() debugging".
+* Paul Graham—creator of Arc and Bel—started an interesting thread last month about "print() debugging".
  https://twitter.com/paulg/status/1532448988766650385 interesting thread
  link BASE_URL/languages/arc.html Arc
  link BASE_URL/languages/bel.html Bel
@@ -16,27 +15,21 @@ aftertext
 
 endSnippet
 
-aftertext
- Both experts and beginners frequently use "print() debugging".
+* Both experts and beginners frequently use "print() debugging".
 
-aftertext
- Support for "print() debugging" is near-universal in high level programming languages. Implementations vary.
+* Support for "print() debugging" is near-universal in high level programming languages. Implementations vary.
 
-aftertext
- Different languages use different commands. There are a few popular patterns. Many languages have a simple global keyword like `print` or `echo` or `puts`. Many others don't use the global namespace and you "print() debug" via a call like `console.log`. Many provide multiple keywords, such as `print` and `println`—the latter a shortcut for printing a string followed by a `\n`.
+* Different languages use different commands. There are a few popular patterns. Many languages have a simple global keyword like `print` or `echo` or `puts`. Many others don't use the global namespace and you "print() debug" via a call like `console.log`. Many provide multiple keywords, such as `print` and `println`—the latter a shortcut for printing a string followed by a `\n`.
  wrapsOn
 
-aftertext
- There is also a long tail distribution of how languages let you do it. Some have special syntactic sugar, such as the code golf esolang 05AB1E (`"hello world`).
+* There is also a long tail distribution of how languages let you do it. Some have special syntactic sugar, such as the code golf esolang 05AB1E (`"hello world`).
  wrapsOn
  link BASE_URL/languages/05AB1E.html 05AB1E
 
-aftertext
- Below is a table of over 100 keyword(s) used to "print() debug" in over 300 languages.
+* Below is a table of over 100 keyword(s) used to "print() debug" in over 300 languages.
  wrapsOn
 
-aftertext
- You may notice there is a lack of representation of assembly languages in this list. It is often _much_ harder to "print() debug" in low level languages than simply writing `print`.
+* You may notice there is a lack of representation of assembly languages in this list. It is often _much_ harder to "print() debug" in low level languages than simply writing `print`.
  wrapsOn
 
 commaTable

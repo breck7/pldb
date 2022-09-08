@@ -5,8 +5,7 @@ date 2019-02-04 12:00:00 -8000
 
 author https://github.com/breck7 Breck Yunits
 
-aftertext
- Like millions of other programmers, every day I depend on
+* Like millions of other programmers, every day I depend on
  central package repositories (CR) like npm, PyPI
  and CRAN.
  https://npmjs.org npm
@@ -14,8 +13,7 @@ aftertext
  https://cran.r-project.org CRAN
  dateline
 
-aftertext
- The other day I was curious: does every programming
+* The other day I was curious: does every programming
  language have one of these? I decided to find out. I
  pointed my crawler and trained a model to check for a
  package repository for every one of the 3,006 languages I
@@ -25,44 +23,38 @@ section ★ Only 1% have them
 
 endSnippet
 
-aftertext
- My model found only 39 languages with central package
+* My model found only 39 languages with central package
  repositories. (For comparison, Wikipedia lists ~20). That's
  just ~1% of languages. I thought it would be higher.
 
 section ★ ~30% of the Top 100 have them
 
-aftertext
- Given that a programming language is very popular and
+* Given that a programming language is very popular and
  appears in my top 100 list, it is about 15 - 30x more
  likely to have a CR. Given a language is not in the top
  100, <1% will have a CR.
 
 section ★ 2 Million+ Packages Total
 
-aftertext
- There are over 2,000,000 packages (aka modules or
+* There are over 2,000,000 packages (aka modules or
  libraries) across these CRs. That means there are about
  1,000x more packages than there are programming languages.
 
-aftertext
- With that many packages, name collision is certainly a
+* With that many packages, name collision is certainly a
  problem (maybe a subject for another post), though not as
  much of a problem as in the domain system where
  130,000,000+ ".coms" alone are registered.
 
 section ★ The top 5 account for ~80% of all packages
 
-aftertext
- At over 900,000, Javascript's npm has almost more packages
+* At over 900,000, Javascript's npm has almost more packages
  than all other CRs combined. Javascript, Java, PHP, Perl,
  and Python account for about 80% of packages.
  https://npmjs.org npm
 
 section ★ GitHub has over 100,000,000 repositories
 
-aftertext
- Given the size of GitHub, and it's growth as somewhat of a
+* Given the size of GitHub, and it's growth as somewhat of a
  universal central package repository (though totally
  unmoderated), and given that many (if not the majority) of
  the packages in these CRs are also listed on GitHub, it's
@@ -71,8 +63,7 @@ aftertext
 
 section ★ Newer languages are not more likely to have CRs
 
-aftertext
- This surprised me. The median age of a language with a CR
+* This surprised me. The median age of a language with a CR
  is 24 (1995). Of the top 5 languages I mentioned above, all
  were created by then. Almost always the creation of the CR
  follows the launch of the language, sometimes by months or
@@ -88,8 +79,7 @@ image images/packages-repos.png
 
 section ★ The List
 
-aftertext
- Here's my list of the main central package repositories for
+* Here's my list of the main central package repositories for
  languages that have them. I cut the list a bit to only
  include CRs with more than 100 packages available. As
  always, open an issue if you spot any omissions or mistakes!
@@ -134,22 +124,19 @@ pipeTable
 
 subsection Updates
 
-aftertext
- As Jay18001 pointed out, a few of these repositories
+* As Jay18001 pointed out, a few of these repositories
  serve packages for more than one language. Cocoapods =>
  Objective-C, and Nuget => F# and other .Net langs. In this
  post I collapsed things so each repo only has 1 language.
 
-aftertext
- Update: 8/26/2019. Multiple readers pointed out that my
+* Update: 8/26/2019. Multiple readers pointed out that my
  stat for Ruby was off by 10x. I used the # I found on this
  page, which turned out to be
  just the gems beginning with the letter A. I apologize for
  the mistake and am very grateful for the corrections.
  https://rubygems.org/gems page
 
-aftertext
- Thanks to PallHaraldsson for reviewing this post and encouraging it to get updated.
+* Thanks to PallHaraldsson for reviewing this post and encouraging it to get updated.
  https://github.com/PallHaraldsson PallHaraldsson
 
 observable https://observablehq.com/@breck7/languages-with-central-package-repositories

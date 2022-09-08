@@ -3,12 +3,10 @@ import settings.scroll
 import entitiesImports.scroll
 columnWidth 60
 
-aftertext
- Here is the list of all COUNT entities in the PLDB. You can also download the whole database as a @CSV@.
+* Here is the list of all COUNT entities in the PLDB. You can also download the whole database as a @CSV@.
  wrap @ a href="../pldb.csv"
 
-aftertext
- PLDB is focused on general purpose high-level programming languages, but also includes low-level languages and some notable markup languages, protocols, file formats, libraries, and applications.
+* PLDB is focused on general purpose high-level programming languages, but also includes low-level languages and some notable markup languages, protocols, file formats, libraries, and applications.
 
 groups index
 endSnippet

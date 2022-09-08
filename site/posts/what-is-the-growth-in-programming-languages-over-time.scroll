@@ -5,8 +5,7 @@ date 2017-12-09 12:00:00 -8000
 
 author https://github.com/breck7 Breck Yunits
 
-aftertext
- As I build up my database of programming languages I hope to
+* As I build up my database of programming languages I hope to
  be able to answer questions like:
  dateline
 
@@ -15,37 +14,31 @@ list
  - what spurs the creation of new programming languages?
  - can we predict how many new languages will be released next year? in 5 years? in 10 years?
 
-aftertext
- At the moment I am tracking 533 computer languages and I
+* At the moment I am tracking 533 computer languages and I
  currently have creation years for more than half of those,
  including for 271 of the most popular ones.
 
-aftertext
- Here is a simple line graph of the cumulative number of
+* Here is a simple line graph of the cumulative number of
  languages I have by year.
 
 image images/programmingLanguagesOverTime.png
 
 endSnippet
 
-aftertext
- I will wait until I have more data to do more serious
+* I will wait until I have more data to do more serious
  analysis (for example: the dip in the growth rate toward
  the end is likely due to my incomplete dataset and not
  indicative of a trend change).
 
-aftertext
- But until I can provide a more comprehensive analysis, I
+* But until I can provide a more comprehensive analysis, I
  thought I'd share my first look.
 
-aftertext
- Update (12/10/2017): a number of readers have pointed out
+* Update (12/10/2017): a number of readers have pointed out
  that some of the languages on this list are not programming
  languages. Future posts like this will be sure to exclude
  those.
 
-aftertext
- Data used in this article as csv:
+* Data used in this article as csv:
 
 commaTable
  language,releaseYear
@@ -323,8 +316,7 @@ commaTable
 
 section Reproducibility Notes
 
-aftertext
- The data in this post comes from
+* The data in this post comes from
  the PLDB database. It is possible to build a
  continually updating version of this article that updates
  as more data comes in.

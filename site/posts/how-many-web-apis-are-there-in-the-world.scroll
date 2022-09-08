@@ -5,16 +5,14 @@ date 2017-11-22 12:00:00 -8000
 
 author https://github.com/breck7 Breck Yunits
 
-aftertext
- Last week I explored the question "how many programming
+* Last week I explored the question "how many programming
  languages are there in the world?". My current
  estimate is between 5,000 and 25,000 active computer
  languages.
  link how-many-programming-languages-are-there-in-the-world.html question
  dateline
 
-aftertext
- But perhaps the number is higher, if you include all active
+* But perhaps the number is higher, if you include all active
  external web APIs.
 
 question What do other people say?
@@ -23,16 +21,14 @@ section Programmable Web - 18,409
 
 endSnippet
 
-aftertext
- The site Programmable Web lists 18,409 web APIs.
+* The site Programmable Web lists 18,409 web APIs.
  But figuring out which ones are used most is a work in progress.
  link https://www.programmableweb.com/category/all/apis 18,409
  link https://www.programmableweb.com/news/which-are-developers-favorite-apis/research/2017/09/01 most
 
 section RapidAPI - 7,500
 
-aftertext
- RapidAPI lists over 500 APIs, but that should
+* RapidAPI lists over 500 APIs, but that should
  expand as it completes its acquisition of the Mashape
  Marketplace, which listed over 7,500 APIs.
  link https://rapidapi.com 500
@@ -41,14 +37,12 @@ aftertext
 
 section Zapier - 750+
 
-aftertext
- Zapier lists over 750 APIs.
+* Zapier lists over 750 APIs.
  link https://zapier.com/zapbook 750
 
 section Other Lists
 
-aftertext
- On GitHub user abhishekbanthia maintains a popular list of
+* On GitHub user abhishekbanthia maintains a popular list of
  about 300 apis. Wikipedia has a small list of
  about 30 APIs.
  link https://github.com/abhishekbanthia/Public-APIs 300
@@ -56,12 +50,10 @@ aftertext
 
 question What do I say?
 
-aftertext
- My estimate is: <b>between 2,000 and 25,000 active public facing web APIs</b>.
+* My estimate is: <b>between 2,000 and 25,000 active public facing web APIs</b>.
 
 section Reproducibility Notes: 
 
-aftertext
- My ad hoc estimates are based on
+* My ad hoc estimates are based on
  checking the PLDB database, the datasets listed above,
  and additional web sources.
