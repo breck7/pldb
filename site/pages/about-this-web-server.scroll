@@ -46,7 +46,7 @@ bashCode
  apt install nginx goaccess certbot python3-certbot-nginx
  reboot
  # deploy the site to /var/www/html
- # google "digital ocean certbot" and follow instructions. not all steps are necessary.
+ sudo certbot --nginx -d pldb.com
  # add the server stats cron job below with:
  crontab -e
 
@@ -67,14 +67,10 @@ nginxConfigCode
  add_header 'Access-Control-Expose-Headers' 'Content-Length,Content-Range' always;
 
 aftertext
- The custom 404 page is activated using the code below:
+ The custom 404 page is activated using the code below (line ?? not sure where is best):
 
 nginxConfigCode
- error_page 404 /pages/custom_404.html;
-        location = /pages/custom_404.html {
-                root /var/www/html;
-                internal;
-        }
+ error_page 404 /pages/custom_404.html; location = /pages/custom_404.html { root /var/www/html; internal; }
 
 subsection Deploying
 
