@@ -1,7 +1,7 @@
 importOnly
 
 replaceDefault BASE_URL 
-replaceDefault EDIT_URL https://edit.pldb.com
+replaceDefault BUILD_URL https://build.pldb.com
 
 import buildLogImports.scroll
 

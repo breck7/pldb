@@ -1,12 +1,12 @@
-# PLDBEditServer
+# PLDBBuildServer
 
-PLDBEditServer is a web server and JS frontend end for adding and editing content on PLDB.
+PLDBBuildServer is a web server and JS frontend end for adding and editing content on PLDB.
 
 ## Prod setup
 
-https://edit.pldb.com is hosted on a small Digital Ocean droplet.
+https://build.pldb.com is hosted on a small Digital Ocean droplet.
 
-Follow the same setup instructions as here (stopping before Nginx installation): https://pldb.com/about-this-web-server.html
+Follow the same setup instructions as here (stopping before Nginx installation): https://pldb.com/about-our-servers.html
 
 ```
 sudo apt-get install git
@@ -32,25 +32,25 @@ npm install .
 npm run tsc
 npm run build
 # Test that it works over http
-node ./code/edit/PLDBEditServer.js startDevServer 80
+node ./code/build/PLDBBuildServer.js startDevServer 80
 # Now get SSL cert for https
 sudo snap install core; sudo snap refresh core
 sudo snap install --classic certbot
 sudo certbot certonly --standalone
 mkdir ignore
-sudo cp /etc/letsencrypt/live/edit.pldb.com/privkey.pem ignore
-sudo cp /etc/letsencrypt/live/edit.pldb.com/fullchain.pem ignore
+sudo cp /etc/letsencrypt/live/build.pldb.com/privkey.pem ignore
+sudo cp /etc/letsencrypt/live/build.pldb.com/fullchain.pem ignore
 sudo chown pldb:pldb ignore/privkey.pem
 sudo chown pldb:pldb ignore/fullchain.pem
 # Now start with pm2 over http2
-pm2 start ./code/edit/PLDBEditServer.js -- startProdServer
+pm2 start ./code/build/PLDBBuildServer.js -- startProdServer
 pm2 startup systemd
 ```
 
 ## Prod deploying
 
 ```
-ssh pldb@edit.pldb.com
+ssh pldb@build.pldb.com
 cd pldb
 git pull
 npm install .

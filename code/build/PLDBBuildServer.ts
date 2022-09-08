@@ -25,7 +25,7 @@ const ignoreFolder = path.join(baseFolder, "ignore")
 const builtSiteFolder = path.join(baseFolder, "site")
 const csvFileLength = Disk.read(path.join(builtSiteFolder, "pldb.csv")).length
 
-const editLogPath = path.join(ignoreFolder, "editServerLog.tree")
+const editLogPath = path.join(ignoreFolder, "buildServerLog.tree")
 const searchLogPath = path.join(ignoreFolder, "searchLog.tree")
 Disk.touch(editLogPath)
 Disk.touch(searchLogPath)
@@ -93,7 +93,7 @@ const scrollSettings = getFullyExpandedFile(
 	path.join(builtSiteFolder, "settings.scroll")
 ).code
 
-class PLDBEditServer {
+class PLDBBuildServer {
 	folder: PLDBBaseFolder
 	app: any
 	homepage = ""
@@ -368,7 +368,7 @@ html
 	listen(port = 4444) {
 		this.app.listen(port, () =>
 			console.log(
-				`PLDBEditServer server running: \ncmd+dblclick: http://localhost:${port}/`
+				`PLDBBuildServer server running: \ncmd+dblclick: http://localhost:${port}/`
 			)
 		)
 		return this
@@ -419,7 +419,7 @@ html
 	scrollToHtml(scrollContent) {
 		return new ScrollFile(
 			`replace BASE_URL ${this.isProd ? "https://pldb.com" : ""}
-replace EDIT_URL ${this.isProd ? "https://edit.pldb.com" : "/"}
+replace BUILD_URL ${this.isProd ? "https://build.pldb.com" : "/"}
 
 ${scrollSettings}
 maxColumns 1
@@ -570,17 +570,17 @@ ${scrollContent}
 	}
 }
 
-class PLDBEditServerCommands {
+class PLDBBuildServerCommands {
 	startDevServerCommand(port) {
-		new PLDBEditServer().listen(port)
+		new PLDBBuildServer().listen(port)
 	}
 
 	startProdServerCommand() {
-		new PLDBEditServer().listenProd()
+		new PLDBBuildServer().listenProd()
 	}
 }
 
-export { PLDBEditServer }
+export { PLDBBuildServer }
 
 if (!module.parent)
-	runCommand(new PLDBEditServerCommands(), process.argv[2], process.argv[3])
+	runCommand(new PLDBBuildServerCommands(), process.argv[2], process.argv[3])

@@ -38,7 +38,7 @@ cronCode
  0 * * * * goaccess /var/log/nginx/access.log -o /var/www/html/nginxDaily.html --log-format=COMBINED --anonymize-ip
  0 * * * * zcat -f /var/log/nginx/access.log* | goaccess -o /var/www/html/nginxDailyAll.html --log-format=COMBINED --anonymize-ip
 
-subsection Server setup
+subsection Marconi server setup
 
 bashCode
  apt update

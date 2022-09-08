@@ -45,7 +45,7 @@ const initSearchAutocomplete = elementId => {
         )}`
         window.location = isLocalHost
           ? goToUrl
-          : `https://edit.pldb.com${goToUrl}`
+          : `https://build.pldb.com${goToUrl}`
       }
     }
   })
