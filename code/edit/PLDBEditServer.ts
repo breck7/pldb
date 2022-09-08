@@ -215,36 +215,9 @@ ${editForm(submission, "Error")}`
 
 		app.post("/create", async (req, res) => {
 			const { content, author } = req.body
-			try {
-				this.appendToPostLog("create", author, content)
-
-				// todo: audit
-				const validateSubmissionResults = this.validateSubmission(content)
-				const newFile = this.folder.createFile(
-					validateSubmissionResults.content
-				)
-
-				const { authorName, authorEmail } = parseGitAuthor(author)
-
-				const commitResult = await this.commitFilePullAndPush(
-					newFile.filename,
-					`Added '${newFile.id}'`,
-					authorName,
-					authorEmail
-				)
-
-				if (!commitResult.success)
-					return res.redirect(
-						`edit/${newFile.id}#errorMessage=${commitResult.error.message}`
-					)
-
-				this.reloadBase()
-
-				res.redirect(`edit/${newFile.id}#commit=${commitResult.commitHash}`)
-			} catch (error) {
-				console.error(error)
-				errorForm(content, error, res)
-			}
+			const result = this.create(content, author)
+			if (result.success) res.redirect(result.redirectUrl)
+			else errorForm(content, result.error, res)
 		})
 
 		app.post("/edit/:id", async (req, res) => {
@@ -285,6 +258,43 @@ ${editForm(submission, "Error")}`
 				errorForm(content, error, res)
 			}
 		})
+	}
+
+	create(content, author) {
+		try {
+			this.appendToPostLog("create", author, content)
+
+			// todo: audit
+			const validateSubmissionResults = this.validateSubmission(content)
+			const newFile = this.folder.createFile(validateSubmissionResults.content)
+
+			const { authorName, authorEmail } = parseGitAuthor(author)
+
+			const commitResult = await this.commitFilePullAndPush(
+				newFile.filename,
+				`Added '${newFile.id}'`,
+				authorName,
+				authorEmail
+			)
+
+			if (!commitResult.success)
+				return {
+					success: true,
+					redirectUrl: `edit/${newFile.id}#errorMessage=${commitResult.error.message}`
+				}
+
+			this.reloadBase()
+
+			return {
+				success: true,
+				redirectUrl: `edit/${newFile.id}#commit=${commitResult.commitHash}`
+			}
+		} catch (error) {
+			console.error(error)
+			return {
+				error
+			}
+		}
 	}
 
 	search(query): string {
