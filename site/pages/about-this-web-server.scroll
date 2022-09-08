@@ -52,19 +52,14 @@ bashCode
 
 subsection Nginx Setup
 
+nginxConfigCode
+ add_header 'Access-Control-Allow-Origin' '*' always; add_header 'Access-Control-Allow-Methods' 'GET, POST, OPTIONS' always; add_header 'Access-Control-Allow-Headers' 'DNT,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type,Range' always; add_header 'Access-Control-Expose-Headers' 'Content-Length,Content-Range' always;
+
 bashCode
- # Update nginx conf to allow CORS using the snippet below:
+ # Update nginx conf to allow CORS using the snippet above:
  vim /etc/nginx/nginx.conf
  sudo systemctl restart nginx
-
-aftertext
- CORS is enabled by putting the below code in our nginx config.
-
-nginxConfigCode
- add_header 'Access-Control-Allow-Origin' '*' always;
- add_header 'Access-Control-Allow-Methods' 'GET, POST, OPTIONS' always;
- add_header 'Access-Control-Allow-Headers' 'DNT,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type,Range' always;
- add_header 'Access-Control-Expose-Headers' 'Content-Length,Content-Range' always;
+ # Test that it worked here, swapping XXX with IP address of server: https://v20.ohayo.computer/?filename=testcorsonpldb&nodeBreakSymbol=%7E&edgeSymbol=_&data=web.get_http%253A%252F%252FXXX.XXX.XXX.XXX%252Fpldb.csv%7E_tables.basic
 
 aftertext
  The custom 404 page is activated using the code below (line ?? not sure where is best):
