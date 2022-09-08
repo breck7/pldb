@@ -62,9 +62,11 @@ stringToken "
 
 wikipedia https://en.wikipedia.org/wiki/Clojure
  example
-  ([382 318 466 963 619 22 21 273 45 596] [808 639 804 471 394 904 952 75 289 778] ...
-  [484 216 622 139 651 592 379 228 242 355])
-  Distinct: 1000
+  ;; A typical entry point of a Clojure program:
+  ;;   `-main` function
+  (defn -main ; name
+    [& args] ; (variable) parameters
+    (println "Hello, World!")) ; body
  related jvm csharp common-lisp erlang haskell mathematica ml prolog scheme java racket ruby elixir lisp maven-pom s-expressions csp actionscript python unicode
  summary Clojure ( , like "closure") is a dialect of the Lisp programming language. Clojure is a general-purpose programming language with an emphasis on functional programming. It runs on the Java virtual machine and the Common Language Runtime. Like other Lisps, Clojure treats code as data and has a macro system. The current development process is community-driven, overseen by Rich Hickey as its benevolent dictator for life (BDFL). Clojure encourages immutability and immutable data structures. While its type system is entirely dynamic, recent efforts have also sought the implementation of gradual typing. Clojure encourages programmers to be explicit about managing state and identity. This focus on programming with immutable values and explicit progression-of-time constructs is intended to facilitate developing more robust programs, especially multithreaded ones. Clojure is used in industry by firms such as Funding Circle, Walmart, Puppet, and other large software firms. Commercial support for Clojure is provided by Cognitect. Annual Clojure conferences are organised every year across the globe, the most famous of them being Clojure/conj (US east coast), Clojure/West (US west coast), and EuroClojure (Europe). The latest stable version of Clojure is 1.8, released on January 19, 2016. The first stable release was version 1.0, released on May 4, 2009. Clojure is free software released under the Eclipse Public License.
  pageId 16561990
