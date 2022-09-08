@@ -84,7 +84,9 @@ bashCode
  apt install git cloc
  curl -L https://raw.githubusercontent.com/tj/n/master/bin/n -o n
  bash n lts
- npm install -g n pm2 typescript jtree
+ # Now node and npm are available
+ npm install -g n
+ npm install -g pm2 typescript jtree
  # Generate keys
  # ssh-keygen -t rsa
  # Get pldb
