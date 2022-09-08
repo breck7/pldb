@@ -8,7 +8,7 @@
     "clean": "cd code; tsc --build --clean",
     "cloc": "cloc --vcs git . --read-lang-def=code/clocLangs.txt",
     "checkLinks": "linkinator -r https://pldb.com > ignore/brokenLinks.txt",
-    "deploy": "echo 'Rsyncing the contents of site/ to the /var/www/html folder on the PLDB server'; rsync -vr site/* pldb@pldb.com:/var/www/html/",
+    "deploy": "echo 'Rsyncing site/ to /var/www/html on Marconi'; rsync -vr site/* pldb.com:/var/www/html/",
     "jtreeBeta": "npm install ~/jtree",
     "scrollBeta": "npm install ~/scroll",
     "test": "./code/test.js",
