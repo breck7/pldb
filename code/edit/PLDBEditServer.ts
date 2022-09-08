@@ -215,7 +215,7 @@ ${editForm(submission, "Error")}`
 
 		app.post("/create", async (req, res) => {
 			const { content, author } = req.body
-			const result = this.create(content, author)
+			const result = await this.create(content, author)
 			if (result.success) res.redirect(result.redirectUrl)
 			else errorForm(content, result.error, res)
 		})
