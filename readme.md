@@ -23,13 +23,13 @@ Documentation for the CSV is available here: https://pldb.com/docs/csv.html.
 
 ## To add a new language
 
-Easy method: https://edit.pldb.com/create
+Easy method: https://build.pldb.com/create
 
 Advanced method: Create a new file in `database/things` with a unique URL friendly filename ending in `.pldb` and send a pull request.
 
 ## To update a language
 
-Easy method: https://edit.pldb.com/
+Easy method: https://build.pldb.com/
 
 Advanced method: Edit the corresponding `database/things/*.pldb` file and send a pull request.
 

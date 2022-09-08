@@ -14,5 +14,5 @@ bashCode
  cd pldb
  git pull
 
-* We have another server running at Digital Ocean currently nicknamed _Wobbles_ that serves <a href="https://edit.pldb.com">edit.pldb.com</a>. _Wobbles_ serves the site and also let's you easily edit the database right in your web browser. But _Wobbles_ is still wobbily and goes down a lot and is slow. Until we get that code up to par, it's often easier to just submit your changes to the <a href="https://github.com/breck7/pldb">PLDB repo</a> using the normal GitHub UI.
+* We have another server running at Digital Ocean named _Build_ that serves <a href="https://build.pldb.com">build.pldb.com</a>. _Build_ serves the site and also let's you easily edit the database right in your web browser. If _Build_ is at all flakey, it's recommended you just submit your changes to the <a href="https://github.com/breck7/pldb">PLDB repo</a> using the normal GitHub UI.
 

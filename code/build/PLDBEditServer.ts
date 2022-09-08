@@ -338,7 +338,7 @@ ${editForm(submission, "Error")}`
 		const time = numeral((Date.now() - startTime) / 1000).format("0.00")
 		return `
 html
- <div class="pldbSearchForm"><form style="display:inline;" method="get" action="https://edit.pldb.com/search"><input name="q" placeholder="Search" autocomplete="off" type="search" id="searchFormInput"><input class="pldbSearchButton" type="submit" value="Search"></form></div>
+ <div class="pldbSearchForm"><form style="display:inline;" method="get" action="https://build.pldb.com/search"><input name="q" placeholder="Search" autocomplete="off" type="search" id="searchFormInput"><input class="pldbSearchButton" type="submit" value="Search"></form></div>
  <script>document.addEventListener("DOMContentLoaded", evt => initSearchAutocomplete("searchFormInput"))</script>
 
 paragraph
