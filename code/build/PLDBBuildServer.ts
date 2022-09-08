@@ -56,8 +56,10 @@ html
  Submitting as: <span id="authorLabel"></span> <a href="#" onClick="app.changeAuthor()">change</a>
  </div>
  <br>
+ <div>
  <input type="hidden" name="author" id="author">
- <input type="button" value="Save" onClick="alert('You have no call sign set. Build.PLDB.com is temporarily limited while we resolve traffic issues. Please email breck@pldb.com if you want a call sign.'"
+ <input type="button" value="Save" onClick="alert('You have no call sign set. Build.PLDB.com is temporarily limited while we resolve traffic issues. Please email breck@pldb.com if you want a call sign.'" />
+ </div>
  <p>Remember, you can also always submit updates to this file using the traditional GitHub Pull Request flow.</p>
  <!-- <input type="submit" value="Save" id="submitButton" onClick="app.saveAuthorIfUnsaved()"/> --!>
  </form>`
