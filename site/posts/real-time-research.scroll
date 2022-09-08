@@ -1,0 +1,39 @@
+title Real Time Research
+date 09-08-2022
+
+html
+ <center>
+
+* John Snow is dead.
+
+* But his ideas live on.
+
+* And his relentless spirit flows strong at Public Domain Publishing.
+ https://publicdomaincompany.com/ Public Domain Publishing 
+
+image images/john-snow.jpeg
+
+section Announcing Real-Time Research
+
+* Research is all fun and games for us researchers. But for our neighbors, friends, and families, sometimes it's a matter of life and death. And every moment counts.
+
+* That's why today we announce the launch of _real-time research_.
+
+* v1 Ships in the next 60 minutes.
+ build.pldb.com
+
+openGraphImage https://pldb.com/posts/images/johnSnow.png
+
+groups index
+
+html
+ <br><br></center>
+
+import settings.scroll
+groups index
+scrollHeader
+scrollFooter
+maxColumns 1
+columnWidth 53
+keyboardNav
+scrollCss ../scroll.css
