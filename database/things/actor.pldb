@@ -1,6 +1,7 @@
 title Actor
 appeared 1988
 type pl
+originCommunity The Whitewater Group
 
 wikipedia https://en.wikipedia.org/wiki/Actor_(programming_language)
  summary The Actor programming language was invented by Charles Duff of The Whitewater Group in 1988. It was an offshoot of some object-oriented extensions to the Forth language he had been working on. Actor would be categorized as a pure object-oriented language in the style of Smalltalk. Like Smalltalk, everything was an object, including small integers. A Baker semi-space garbage collector was used, along with (in memory-constrained Windows 2.1 days) a software virtual memory system that swapped objects. A token threaded interpreter, written in 16-bit x86 assembly language, was the execution mechanism for compiled code. Actor only was released on the Microsoft Windows 2.1 and 3.0 operating system. Actor used perhaps the first pure object-oriented framework over native operating system calls as its basic GUI architecture. This allowed an Actor application to look and feel exactly like a Windows application written in C, but with all the advantages of an interactive Smalltalk-like development environment. Both a downside and upside to this architecture was a tight coupling to the Windows OS architecture, with a thin abstraction layer into objects. This allowed direct use of the rich Windows OS API, but also made it nearly impossible to support any other OS without a significant rewrite of the application framework.
