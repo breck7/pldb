@@ -45,6 +45,7 @@ cd pldb
 npm install .
 npm run tsc
 npm run build
+(Optional run TESTS): npm run test
 open site/index.html
 ```
 
