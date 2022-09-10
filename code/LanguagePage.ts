@@ -485,9 +485,7 @@ ${facts.map(fact => ` - ${fact}`).join("\n")}`
 
     const twitter = file.get("twitter")
     if (twitter)
-      facts.push(
-        `the ${title} team is on <a href="https://twitter.com/${twitter}">Twitter</a>`
-      )
+      facts.push(`the ${title} team is on <a href="${twitter}">Twitter</a>`)
 
     const conferences = file.getNodesByGlobPath("conference")
     if (conferences.length) {

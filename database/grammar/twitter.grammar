@@ -1,8 +1,9 @@
 twitterNode
- extends abstractOneWordGuidNode
+ extends abstractUrlGuidNode
  description Official Twitter handle of the entity, if any.
  inScope twitterFollowersNode
  string sourceDomain twitter.com
+ cruxFromId
 twitterFollowersNode
  description How many followers the linked account has.
  extends abstractPopulationCountNode

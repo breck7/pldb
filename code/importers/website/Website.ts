@@ -84,6 +84,7 @@ class Website {
     const str = this.content.toLowerCase()
     const { id } = file
     if (str.includes("twitter")) {
+      // todo: update
       const matches = str.match(/twitter\.com\/([^"\/ \?\']+)/g)
 
       if (matches) {

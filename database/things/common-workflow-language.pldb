@@ -89,7 +89,7 @@ linguistGrammarRepo https://github.com/manabuishii/language-cwl
   stdout: $(inputs.peaks.nameroot).trunked_scores$(inputs.peaks.nameext)
   
 
-twitter commonwl
+twitter https://twitter.com/commonwl
 fileType text
 isOpenSource true
 centralPackageRepositoryCount 0
