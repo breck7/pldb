@@ -19,7 +19,7 @@ author https://github.com/breck7 Breck Yunits
  package repository for every one of the 3,006 languages I
  am tracking. The results surprised me.
 
-section ★ Only 1% have them
+# ★ Only 1% have them
 
 endSnippet
 
@@ -27,14 +27,14 @@ endSnippet
  repositories. (For comparison, Wikipedia lists ~20). That's
  just ~1% of languages. I thought it would be higher.
 
-section ★ ~30% of the Top 100 have them
+# ★ ~30% of the Top 100 have them
 
 * Given that a programming language is very popular and
  appears in my top 100 list, it is about 15 - 30x more
  likely to have a CR. Given a language is not in the top
  100, <1% will have a CR.
 
-section ★ 2 Million+ Packages Total
+# ★ 2 Million+ Packages Total
 
 * There are over 2,000,000 packages (aka modules or
  libraries) across these CRs. That means there are about
@@ -45,14 +45,14 @@ section ★ 2 Million+ Packages Total
  much of a problem as in the domain system where
  130,000,000+ ".coms" alone are registered.
 
-section ★ The top 5 account for ~80% of all packages
+# ★ The top 5 account for ~80% of all packages
 
 * At over 900,000, Javascript's npm has almost more packages
  than all other CRs combined. Javascript, Java, PHP, Perl,
  and Python account for about 80% of packages.
  https://npmjs.org npm
 
-section ★ GitHub has over 100,000,000 repositories
+# ★ GitHub has over 100,000,000 repositories
 
 * Given the size of GitHub, and it's growth as somewhat of a
  universal central package repository (though totally
@@ -61,7 +61,7 @@ section ★ GitHub has over 100,000,000 repositories
  conceivable that GitHub is the largest CR and that the
  number of packages out there is easily 10x bigger than 2M.
 
-section ★ Newer languages are not more likely to have CRs
+# ★ Newer languages are not more likely to have CRs
 
 * This surprised me. The median age of a language with a CR
  is 24 (1995). Of the top 5 languages I mentioned above, all
@@ -72,12 +72,12 @@ section ★ Newer languages are not more likely to have CRs
  languages like Rust and Julia have CRs, others like Go and
  Kotlin do not.
 
-section ★ A Visual
+# ★ A Visual
 
 image images/packages-repos.png
  caption Languages with web package managers plotted by year and number of published packages.
 
-section ★ The List
+# ★ The List
 
 * Here's my list of the main central package repositories for
  languages that have them. I cut the list a bit to only

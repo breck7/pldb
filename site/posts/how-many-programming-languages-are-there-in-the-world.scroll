@@ -32,7 +32,7 @@ author https://github.com/breck7 Breck Yunits
 
 question What do other people say?
 
-section TIOBE - 250
+# TIOBE - 250
 
 endSnippet
 
@@ -45,27 +45,27 @@ endSnippet
  link https://www.tiobe.com/tiobe-index/ index
  link https://www.tiobe.com/tiobe-index/programming-languages-definition/#instances ~250
 
-section Wikipedia - 700
+# Wikipedia - 700
 
 * Wikipedia has a list whose goal is to include "all notable programming languages in existence", that currently lists over 700 programming languages. Wikipedia's list excludes certain types of languages such as markup languages.
  link https://en.wikipedia.org/wiki/List_of_programming_languages 700
 
-section FOLDOC - 1,000
+# FOLDOC - 1,000
 
 * FOLDOC, a 90's era online dictionary of computing, lists over 1,000 programming languages, though that includes aliases.
  link https://foldoc.org/contents/language.html 1,000
 
-section The Language List - 2,500
+# The Language List - 2,500
 
 * The Language List--started in 1991--tracks ~2,500 computer languages. The Language List includes popular languages as well as many "published languages". If a language was published in a journal it may be on the list, regardless of its implementation history or popularity.
  link https://www.info.univ-angers.fr/~gh/hilapr/langlist/langlist.htm ~2,500
 
-section HOPL - 8,945
+# HOPL - 8,945
 
 * HOPL is a collection curated by Diarmuid Pigott. It lists 8,945 programming languages!
  link https://hopl.info 8,945
 
-section J.E. Sammet - ~165 (In 1971)
+# J.E. Sammet - ~165 (In 1971)
 
 * Jean Sammet was an early computer pioneer, helping developer the COBOL language. She also was one of the first to start tracking programming languages and as early as 1971 tracked ~165 languages.
  link https://en.wikipedia.org/wiki/Jean_E._Sammet Sammet
@@ -86,7 +86,7 @@ question What do I say?
 
 * As my database improves I will refine my definitions and estimates accordingly.
 
-section Reproducibility notes
+# Reproducibility notes
 
 * A hard count of programming
  languages was made by querying the PLDB database, which

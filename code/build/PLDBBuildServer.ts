@@ -128,7 +128,7 @@ html
  } 
  </pre>
 
-section Edit a language:
+# Edit a language:
 
 html
  ${listAll}

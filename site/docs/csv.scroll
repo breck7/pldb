@@ -23,14 +23,14 @@ html
 * PLDB builds one main CSV file. `languages.csv` contains LANG_COUNT rows and COL_COUNT columns and is LANGS_FILE_SIZE_UNCOMPRESSED uncompressed. Every row is a language and every language is one row.
  wrapsOn
 
-section Column Documentation
+# Column Documentation
 
 COLUMN_METADATA_TABLE
 
 * The table above is also available as csv.
  link BASE_URL/columns.csv csv
 
-section pldb.csv file
+# pldb.csv file
 
 * PLDB also builds https://pldb.com/pldb.csv which contains the same rows and columns as `languages.csv` and a row for each non-language entity in the PLDB—such as operating systems and editors—and has ENTITY_COUNT total rows and is ENTITIES_FILE_SIZE_UNCOMPRESSED uncompressed.
  wrapsOn

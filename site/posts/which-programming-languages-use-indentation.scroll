@@ -17,13 +17,13 @@ orderedList
  2. How many languages use significant indentation?
  3. Are new indentation languages on the rise?
 
-section 1) Fewer than 2% of programming languages have significant indentation
+# 1) Fewer than 2% of programming languages have significant indentation
 
 image images/fractions-indentation.png
 
 endSnippet
 
-section 2) Only 36 out of 2,500 programming languages in my database use indentation
+# 2) Only 36 out of 2,500 programming languages in my database use indentation
 
 * These languages use indentation:
 
@@ -71,7 +71,7 @@ section 2) Only 36 out of 2,500 programming languages in my database use indenta
  https://github.com/breck7/pldb/issues/new open an issue
  https://github.com/breck7/pldb pull request
 
-section 3) The creation of indentation sensitive languages has ticked up, but not by much
+# 3) The creation of indentation sensitive languages has ticked up, but not by much
 
 image images/indentation-time.png
 
@@ -79,7 +79,7 @@ image images/indentation-time.png
 
 * Takeaway: According to my current data, there has not been a significant increase in new languages using significant indentation.
 
-section Future Work
+# Future Work
 
 * I would like to expand upon this to help language designers answer the question: will adding significant indentation increase the odds of my language becoming successful? I will continue to invest in my data collection and mining efforts to ensure I am not missing accurate information about the lesser documented languages.
 
