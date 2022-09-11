@@ -22,7 +22,7 @@ wikipedia https://en.wikipedia.org/wiki/ML_(programming_language)
           fun succ(Rat(a,b)) = Rat( a+b , b  );
           fun sum (Rat(a,b),  Rat(c,d)) = Rat(a*d+ c*b  , b*d) : t ;
   end
- related standard-ml caml iswim clojure coq cyclone elm f-sharp fstar haskell idris miranda nemerle ocaml opa erlang rust scala lisp ats alice dependent-ml lazyMl clean
+ related standard-ml caml iswim clojure coq cyclone elm f-sharp fstar haskell idris miranda nemerle ocaml opa erlang rust scala lisp ats alice dependent-ml lazyml clean
  summary ML ('Meta Language') is a general-purpose functional programming language. It has roots in Lisp, and has been characterized as "Lisp with types". It is known for its use of the polymorphic Hindley–Milner type system, which automatically assigns the types of most expressions without requiring explicit type annotations, and ensures type safety – there is a formal proof that a well-typed ML program does not cause runtime type errors. ML provides pattern matching for function arguments, garbage collection, imperative programming, call-by-value and currying. It is used heavily in programming language research and is one of the few languages to be completely specified and verified using formal semantics. Its types and pattern matching make it well-suited and commonly used to operate on other formal languages, such as in compiler writing, automated theorem proving and formal verification.
  pageId 20607
  dailyPageViews 541
