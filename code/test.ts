@@ -34,6 +34,14 @@ testTree.ensureNoErrorsInScrollExtensions = areEqual => {
 // todo
 testTree.ensureNoErrorsInBlog = areEqual => {}
 
+testTree.ensureNoBrokenPermalinks = areEqual => {
+	areEqual(
+		!!pldbBase.inboundLinks,
+		true,
+		"should not throw because of broken permalink"
+	)
+}
+
 testTree.ensureNoErrorsInDb = areEqual => {
 	const { errors } = pldbBase
 	if (errors.length) console.log(errors)

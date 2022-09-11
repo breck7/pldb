@@ -617,10 +617,11 @@ class PLDBBaseFolder extends TreeBaseFolder {
     this.forEach(file => {
       file.linksToOtherFiles.forEach(link => {
         if (!inBoundLinks[link])
-          console.error(
+          throw new Error(
             `Broken permalink in '${file.id}': No language "${link}" found`
           )
-        else inBoundLinks[link].push(file.id)
+
+        inBoundLinks[link].push(file.id)
       })
     })
 
