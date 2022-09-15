@@ -273,6 +273,7 @@ class SiteBuilder {
 
     buildImportsFile(path.join(publishedDocsFolder, "csvImports.scroll"), {
       LANG_COUNT: pldbBase.topLanguages.length,
+      FACT_COUNT: numeral(pldbBase.factCount).format("0,0a"),
       COL_COUNT: colNamesForCsv.length,
       ENTITY_COUNT: pldbBase.length,
       ENTITIES_FILE_SIZE_UNCOMPRESSED: numeral(pldbCsv.length).format("0.0b"),

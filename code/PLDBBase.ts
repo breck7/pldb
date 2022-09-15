@@ -1169,6 +1169,11 @@ wikipedia`.split("\n")
   }
 
   @imemo
+  get factCount() {
+    return lodash.sum(this.map(file => file.factCount))
+  }
+
+  @imemo
   get keywordsTable() {
     const langsWithKeywords = this.topLanguages.filter(file =>
       file.has("keywords")
