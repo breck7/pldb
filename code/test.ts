@@ -7,6 +7,9 @@ const { Disk } = require("jtree/products/Disk.node.js")
 const { ScrollFolder } = require("scroll-cli")
 
 import { PLDBBaseFolder } from "./PLDBBase"
+
+import { scrollFolders } from "./utils"
+
 const pldbBase = PLDBBaseFolder.getBase().loadFolder()
 
 const runTree = testTree =>
@@ -32,7 +35,19 @@ testTree.ensureNoErrorsInScrollExtensions = areEqual => {
 }
 
 // todo
-testTree.ensureNoErrorsInBlog = areEqual => {}
+testTree.ensureNoErrorsInBlog = areEqual => {
+	const checkScroll = folderPath => {
+		const folder = new ScrollFolder(folderPath)
+		areEqual(
+			folder.grammarErrors.length,
+			0,
+			`no grammarErrors in ${folderPath}`
+		)
+		areEqual(folder.errors.length, 0, `no errors in ${folderPath}`)
+	}
+
+	scrollFolders().map(checkScroll)
+}
 
 testTree.ensureNoBrokenPermalinks = areEqual => {
 	areEqual(
@@ -40,6 +55,13 @@ testTree.ensureNoBrokenPermalinks = areEqual => {
 		true,
 		"should not throw because of broken permalink"
 	)
+}
+
+testTree.ensureFieldsAreTrimmed = areEqual => {
+	const scrollFolder = new ScrollFolder(__dirname)
+	const { grammarErrors } = scrollFolder
+	if (grammarErrors.length) console.log(grammarErrors)
+	areEqual(grammarErrors.length, 0, "no errors in scroll extensions")
 }
 
 testTree.ensureNoErrorsInDb = areEqual => {
