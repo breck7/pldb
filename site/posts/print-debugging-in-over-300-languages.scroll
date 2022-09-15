@@ -173,7 +173,6 @@ comment
           Languages: [],
           topRank: 0 - parseInt(obj.rank)
         }
-
       grouped[obj.printToken].Languages.push(obj.title)
     })
     const sorted = lodash
