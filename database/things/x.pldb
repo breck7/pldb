@@ -178,7 +178,6 @@ features
       obj.lock()
   }
  isLisp false
- hasBitWiseOperators true
  hasArraySlicingSyntax true
   my_array_or_slice[start_index:end_index]
  hasExplicitTypeCasting true
