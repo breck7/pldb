@@ -58,9 +58,9 @@ class BuildApp {
 				commit}">Success! Changes published as ${commit.substring(0, 7)}</a>`
 		}
 		if (errorMessage)
-			document.getElementById(
-				"errorMessageDisplay"
-			).innerHTML = `Error: ${htmlEscaped(errorMessage)}`
+			document.getElementById("errorMessage").innerHTML = `Error: ${htmlEscaped(
+				errorMessage
+			)}`
 
 		window.location.hash = ""
 	}
