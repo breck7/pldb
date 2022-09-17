@@ -20,7 +20,7 @@ html
 * Download it from https://pldb.com/languages.csv
  https://pldb.com/languages.csv https://pldb.com/languages.csv
 
-* PLDB builds one main CSV file. `languages.csv` contains over FACT_COUNT facts across LANG_COUNT rows and COL_COUNT columns and is LANGS_FILE_SIZE_UNCOMPRESSED uncompressed. Every row is a language and every language is one row.
+* PLDB builds one main CSV file. `languages.csv` contains over APPROXIMATE_FACT_COUNT facts across LANG_COUNT rows and COL_COUNT columns and is LANGS_FILE_SIZE_UNCOMPRESSED uncompressed. Every row is a language and every language is one row.
  wrapsOn
 
 # Column Documentation

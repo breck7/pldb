@@ -552,7 +552,9 @@ class PLDBFile extends TreeBaseFile {
   @includeInCsv
   @imemo
   get factCount() {
-    return this.parsed.filter(node => node.shouldSerialize !== false).length
+    return this.parsed
+      .getTopDownArray()
+      .filter(node => node.shouldSerialize !== false).length
   }
 
   @imemo
