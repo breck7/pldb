@@ -8,7 +8,7 @@ const { ScrollFolder } = require("scroll-cli")
 
 import { PLDBBaseFolder } from "./PLDBBase"
 
-import { scrollFolders } from "./utils"
+import { scrollFolders, getCleanedId } from "./utils"
 
 const pldbBase = PLDBBaseFolder.getBase().loadFolder()
 
@@ -47,6 +47,12 @@ testTree.ensureNoErrorsInBlog = areEqual => {
 	}
 
 	scrollFolders().map(checkScroll)
+}
+
+testTree.ensureGoodFilenames = areEqual => {
+	pldbBase.forEach(file =>
+		areEqual(file.id, getCleanedId(file.id), "file name is clean")
+	)
 }
 
 testTree.ensureNoBrokenPermalinks = areEqual => {
