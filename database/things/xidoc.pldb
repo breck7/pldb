@@ -2,13 +2,10 @@ title Xidoc
 appeared 2021
 type textMarkup
 creators Adam Blažek
+description A consistent markup language
 website https://xidoc.nim.town/
-
 country Czech Republic
 originCommunity Adam Blažek
-
-githubRepo https://github.com/xigoi/xidoc
-description A consistent markup language
 
 example
  [section HTML;
@@ -24,6 +21,8 @@ example
      and different syntaxes for different things.
    ]
  ]
+
+githubRepo https://github.com/xigoi/xidoc
 
 fileType text
 isOpenSource true

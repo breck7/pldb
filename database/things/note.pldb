@@ -4,7 +4,6 @@ type dataNotation
 creators Breck Yunits
 description Note is a structured, human readable, concise language for encoding data.
 reference https://breckyunits.com/introducing-note.html
-githubRepo https://github.com/breck7/note
 
 features
  hasSemanticIndentation true
@@ -14,3 +13,5 @@ features
 example
  settings
   title Note
+
+githubRepo https://github.com/breck7/note
