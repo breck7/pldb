@@ -14,5 +14,8 @@ alias gr="git reset --soft HEAD~1" # Reset one commit back
 alias gru="git reset 'HEAD@{1}'" # Undo reset
 alias qa="git commit -m 'qa'"
 
+# Npm
+alias x="npm run"
+
 cd pldb
 gs

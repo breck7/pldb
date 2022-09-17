@@ -2,6 +2,7 @@ importOnly
 
 replaceDefault BASE_URL 
 replaceDefault BUILD_URL https://build.pldb.com
+replaceDefault FACT_PRICE $10
 
 import buildLogImports.scroll
 

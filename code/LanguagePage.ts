@@ -839,7 +839,7 @@ code
         ? `${paperCount} <span title="Academic publications about or leveraging ${title}">Papers</span>`
         : "",
       factSponsors
-        ? `${factSponsors.length} <span title="Number of people who have sponsored research on this file for $5 per fact.">Sponsors</span>`
+        ? `${factSponsors.length} <span title="Number of people who have sponsored research on this file for $10 per fact.">Sponsors</span>`
         : "",
       numberOfRepos
         ? `${numeral(numberOfRepos).format(
