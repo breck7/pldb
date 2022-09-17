@@ -2,20 +2,249 @@ title Jule
 appeared 2021
 type pl
 creators Mertcan Davulcu
-description Simple, efficent and compiled system programming language.
+description Jule is the simple, efficient, statically typed and compiled system programming language.
 website https://jule.dev
+documentation https://jule.dev/pages/docs.html
+fileExtensions .jule
+nativeLanguage false
+domainName jule.dev
+ registered 2022
+
+features
+ hasStrings true
+  "Jule String Literal"
+  `Raw String literal of Jule.`
+ hasLineComments true
+  // A comment
+ hasComments true
+  // A comment
+  /* A comment */
+ hasMultiLineComments true
+  /*
+    A multi line comment
+  */
+ hasPrintDebugging true
+ hasSemanticIndentation false
+ hasPointers true
+  let ptr: *int = nil
+ hasFunctions true
+  fn a_function() {
+      // ...
+  }
+ hasFunctionOverloading false
+ hasMethods true
+ hasMethodOverloading false
+ hasVariableDeclarations true
+ hasUnicodeIdentifiers true
+ hasMaps true
+  [int:str] {
+      0: "Key 0",
+      1: "Key 1",
+      2: "Key 2",
+  }
+ hasTraits true
+  trait Person {
+      fn full_name(self) str
+      fn age() byte
+  }
+ hasGenerics true
+  type[T]
+  fn generic_function(s: []T) {
+      // ...
+  }
+ hasBooleans true
+  true false
+ hasConstants true
+  const PI = 3.14159265359
+ hasGarbageCollection false
+ hasNull true
+  nil
+ hasAnonymousFunctions true
+  let anonymous = fn() {
+      outln("Anonymous Function")
+  }
+  anonymous()
+ hasBreak true
+ hasContinue true
+ hasEnums true
+  enum ExitCode {
+      Success = 0,
+      Failure = 1
+  }
+ hasFloats true
+ hasIntegers true
+ hasStructs true
+  struct Employee {
+      first_name: str
+      last_name: str
+      salary: f32
+  }
+ hasHexadecimals true
+  0xDFF90
+ hasOctals true
+  0455
+ hasDecimals true
+  12345
+ hasBinaryNumbers true
+  0b0001010101
+ hasVoidFunctions true
+  fn a_void_function() {
+      // ...
+  }
+ hasScientificNotation true
+  1E2
+  .12345E+6
+  1.e+0
+  0x15e-2
+  0x2.p10
+  0X.8p-0
+  0x1.Fp+0
+  0x1fffp-16
+  0x1p-2
+ hasValueReturnedFunctions true
+  fn pi_number() f64 {
+      ret 3.14159265359
+  }
+ hasDirectives true
+ hasBitWiseOperators true
+  & | ^ << >>
+ hasVariableAssignment true
+ hasOperatorOverloading false
+ hasAssertStatements true
+  use std::debug
+  use std::debug::assert::{assert}
+  
+  fn main() {
+      std::debug::ENABLE = true
+      let x = 200
+      assert(x < 200)
+  }
+ hasVariadicFunctions true
+  fn average(x: ...f64) f64 {
+      // ...
+  }
+ hasUnaryOperators true
+  * & - + ^ !
+ hasDependentTypes true
+  int uint uintptr
+ hasFnArguments true
+ isCaseSensitive true
+ canReadCommandLineArgs true
+  use std::os::{ARGS}
+  
+  fn main() {
+      outln(ARGS)
+  }
+ hasForEachLoops true
+  for x, y in my_enumerable {
+      // ...
+  }
+ hasForLoops true
+  for let mut i = 0; i < 10; i++ {
+      // ...
+  }
+ hasWhileLoops true
+  for my_condition {
+      // ...
+  }
+ hasDocComments true
+ hasIfs true
+ hasIfElses true
+ hasSwitch true
+ hasDynamicSizedArrays true
+  let mut a_slice = []int{1, 2, 3, 4, 5, 6}
+  a_slice = append(a_slice, 7, 8, 9, 10)
+ hasLabels true
+  a_label:
+ hasGotos true
+  goto a_label
+ hasRequiredMainFunction true
+ hasSelfOrThisWord true
+  self
+ hasBoundedCheckedArrays true
+ hasTypeAnnotations true
+  let x: f64 = 89
+ hasAccessModifiers true
+  pub
+ hasAsyncAwait false
+ hasTryCatch false
+ hasMemberVariables true
+ hasVars true
+ hasRegularExpressionsSyntaxSugar false
+ hasReservedWords true
+ hasDuckTyping true
+  type[T]
+  fn lock_object(obj: T) {
+      obj.lock()
+  }
+ isLisp false
+ hasBitWiseOperators true
+ hasArraySlicingSyntax true
+  my_array_or_slice[start_index:end_index]
+ hasExplicitTypeCasting true
+  let x = (int)(3.14)
+ hasManualMemoryManagement true
+  use std::mem::c::{malloc, free}
+  
+  fn main() {
+      let mut ptr = malloc(8)
+      free(ptr)
+      ptr = nil
+  }
+ hasConditionals true
+ hasImports true
+  use std::mem
+  use std::mem::{size_of, align_of, self}
+  use std::mem::*
+
+lineCommentToken //
+multiLineCommentTokens /* */
+printToken outln
+assignmentToken =
+stringToken "
+booleanTokens true false
+includeToken use
+keywords fn pub struct enum unsafe const let mut self match case default if else for in impl trait break continue goto cpp i8 i16 i32 i64 u8 u16 u32 u64 f32 f64 str int uint type any true false bool ret fallthrough nil uintptr co
 
 example
+ fn quicksort(mut s: []int) {
+     if s.len <= 1 {
+         ret
+     }
+     let mut i = 0
+     unsafe {
+         for i < s.len-1 {
+             let (mut x, mut y) = &s[i], &s[i+1]
+             if *x > *y {
+                 *x, *y = *y, *x
+             }
+             i++
+         }
+     }
+     quicksort(s[:i])
+     quicksort(s[i+1:])
+ }
+ 
  fn main() {
-     outln("Hello, GitHub!")
+     let mut my_slice = []int{1, 9, -2, 25, -24, 4623, 0, -1, 0xFD2}
+     outln(my_slice)
+     quicksort(my_slice)
+     outln(my_slice)
+ }
+example
+ fn main() {
+     outln("Hello World")
  }
 
 githubRepo https://github.com/jule-lang/jule
  firstCommit 2021
- stars 28
- forks 4
- subscribers 4
+ stars 32
+ forks 5
+ subscribers 5
  created 2021
  updated 2022
- description Simple, efficient, statically typed and compiled programming language that focusing system programming.
+ description Jule is the simple, efficient, statically typed and compiled system programming language.
  issues 0
+
+fileType text
+isOpenSource true
