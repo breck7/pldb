@@ -974,11 +974,9 @@ class PLDBBaseFolder extends TreeBaseFolder {
         const Column = col.getColumnName()
         const colDef = colNameToGrammarDefMap.get(Column)
         let colDefId
-        if (colDef) {
-          colDefId = colDef.getLine()
-        } else {
-          colDefId = ""
-        }
+        if (colDef) colDefId = colDef.getLine()
+        else colDefId = ""
+        
 
         const Example = reductions.mode
         const Description =
@@ -986,11 +984,9 @@ class PLDBBaseFolder extends TreeBaseFolder {
             ? colDef.get("description")
             : "computed"
         let Source
-        if (colDef) {
-          Source = colDef.getFrom("string sourceDomain")
-        } else {
-          Source = ""
-        }
+        if (colDef) Source = colDef.getFrom("string sourceDomain")
+        else Source = ""
+        
         const sourceLocation = this.getFilePathAndLineNumberWhereGrammarNodeIsDefined(
           colDefId
         )
