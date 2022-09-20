@@ -11,16 +11,16 @@ const { TreeNode } = jtree
 const { Disk } = require("jtree/products/Disk.node.js")
 const { ScrollFile, getFullyExpandedFile } = require("scroll-cli")
 
-import { PLDBBaseFolder, PLDBFile } from "../PLDBBase"
+import { PLDBBaseFolder, PLDBFile } from "./PLDBBase"
 import {
 	runCommand,
 	lastCommitHashInFolder,
 	htmlEscaped,
 	isValidEmail
-} from "../utils"
+} from "./utils"
 import simpleGit, { SimpleGit } from "simple-git"
 
-const baseFolder = path.join(__dirname, "..", "..")
+const baseFolder = path.join(__dirname, "..")
 const ignoreFolder = path.join(baseFolder, "ignore")
 const builtSiteFolder = path.join(baseFolder, "site")
 const csvFileLength = Disk.read(path.join(builtSiteFolder, "pldb.csv")).length
@@ -98,7 +98,7 @@ const scrollSettings = getFullyExpandedFile(
 	path.join(builtSiteFolder, "settings.scroll")
 ).code
 
-class PLDBBuildServer {
+class BuildServer {
 	folder: PLDBBaseFolder
 	app: any
 	homepage = ""
@@ -373,7 +373,7 @@ html
 	listen(port = 4444) {
 		this.app.listen(port, () =>
 			console.log(
-				`PLDBBuildServer server running: \ncmd+dblclick: http://localhost:${port}/`
+				`BuildServer server running: \ncmd+dblclick: http://localhost:${port}/`
 			)
 		)
 		return this
@@ -575,17 +575,17 @@ ${scrollContent}
 	}
 }
 
-class PLDBBuildServerCommands {
+class BuildServerCommands {
 	startDevServerCommand(port) {
-		new PLDBBuildServer().listen(port)
+		new BuildServer().listen(port)
 	}
 
 	startProdServerCommand() {
-		new PLDBBuildServer().listenProd()
+		new BuildServer().listenProd()
 	}
 }
 
-export { PLDBBuildServer }
+export { BuildServer }
 
 if (!module.parent)
-	runCommand(new PLDBBuildServerCommands(), process.argv[2], process.argv[3])
+	runCommand(new BuildServerCommands(), process.argv[2], process.argv[3])

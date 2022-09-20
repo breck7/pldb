@@ -16,7 +16,7 @@
     "fetchContributors": "wget -O site/pages/contributors.json https://api.github.com/repos/breck7/pldb/contributors",
     "fetchBuildLogs": "scp file build.pldb.com:/home/pldb/pldb/ignore/buildServerLog.tree ignore/",
     "tsc": "cd code; tsc; cd ..; npm run plusX",
-    "plusX": "chmod u+x code/*.js; chmod u+x code/**/*.js; chmod u+x code/**/*.js; chmod u+x code/**/**/*.js; chmod u-x code/build/buildApp.js; chmod u-x code/package/index.js;",
+    "plusX": "chmod u+x code/*.js; chmod u+x code/**/*.js; chmod u+x code/**/*.js; chmod u+x code/**/**/*.js; chmod u-x code/buildApp.js; chmod u-x code/package/index.js;",
     "update": "./code/importers/PLDBUpdater.js update"
   },
   "prettier": {
