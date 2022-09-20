@@ -26,7 +26,7 @@ class Crawler {
     file.save()
   }
 
-  updateCommand(id: string) {
+  crawlCommand(id: string) {
     this.update(id)
   }
 

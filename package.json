@@ -17,7 +17,7 @@
     "fetchBuildLogs": "scp file build.pldb.com:/home/pldb/pldb/ignore/buildServerLog.tree ignore/",
     "tsc": "cd code; tsc; cd ..; npm run plusX",
     "plusX": "chmod u+x code/*.js; chmod u+x code/**/*.js; chmod u+x code/**/*.js; chmod u+x code/**/**/*.js; chmod u-x code/buildApp.js; chmod u-x code/package/index.js;",
-    "update": "./code/importers/Crawler.js update"
+    "crawl": "./code/importers/Crawler.js crawl"
   },
   "prettier": {
     "semi": false
