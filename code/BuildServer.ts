@@ -305,20 +305,21 @@ ${editForm(submission, "Error")}`
 	search(query): string {
 		const startTime = Date.now()
 		const pldbBase = this.folder
+		const lowerCaseQuery = query.toLowerCase()
 		// Todo: allow advanced search. case sensitive/insensitive, regex, et cetera.
-		const testFn = str => str.includes(query)
+		const testFn = str => str.includes(lowerCaseQuery)
 
-		const escapedQuery = htmlEscaped(query)
-		const hits = pldbBase.filter(file => testFn(file.toString()))
-		const nameHits = pldbBase.filter(file => file.names.some(testFn))
+		const escapedQuery = htmlEscaped(lowerCaseQuery)
+		const hits = pldbBase.filter(file => testFn(file.lowercase))
+		const nameHits = pldbBase.filter(file => file.lowercaseNames.some(testFn))
 		const baseUrl = "https://pldb.com/languages/"
 
 		const highlightHit = file => {
-			const line = file
-				.toString()
-				.split("\n")
-				.find(line => testFn(line))
-			return line.replace(query, `<span style="highlightHit">${query}</span>`)
+			const line = file.lowercase.split("\n").find(line => testFn(line))
+			return line.replace(
+				lowerCaseQuery,
+				`<span style="highlightHit">${lowerCaseQuery}</span>`
+			)
 		}
 		const fullTextSearchResults = hits
 			.map(

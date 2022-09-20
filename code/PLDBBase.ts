@@ -160,6 +160,21 @@ class PLDBFile extends TreeBaseFile {
     return count
   }
 
+  @imemo
+  get lowercase() {
+    return this.toString().toLowerCase()
+  }
+
+  @imemo
+  get lowercaseNames() {
+    return this.names.map(name => name.toLowerCase())
+  }
+
+  @imemo
+  get lowercaseTitle() {
+    return this.toString().toLowerCase()
+  }
+
   @includeInCsv
   get hoplId() {
     return this.get("hopl")?.replace(
@@ -957,25 +972,25 @@ class PLDBBaseFolder extends TreeBaseFolder {
       .map(col => {
         const reductions = col.getReductions()
         const Column = col.getColumnName()
-	const colDef = colNameToGrammarDefMap.get(Column)
-	let colDefId
-	if (colDef) {
-	  colDefId = colDef.getLine()
-	}	
-	else {
-         colDefId = ""
-	}
+        const colDef = colNameToGrammarDefMap.get(Column)
+        let colDefId
+        if (colDef) {
+          colDefId = colDef.getLine()
+        } else {
+          colDefId = ""
+        }
 
         const Example = reductions.mode
         const Description =
-	colDefId !== "" && colDefId !== "errorNode" ? colDef.get("description") : "computed"
+          colDefId !== "" && colDefId !== "errorNode"
+            ? colDef.get("description")
+            : "computed"
         let Source
-        if (colDef){
-	    Source	= colDef.getFrom("string sourceDomain")
-	}
-        else {
-	   Source = ""
-        }	   
+        if (colDef) {
+          Source = colDef.getFrom("string sourceDomain")
+        } else {
+          Source = ""
+        }
         const sourceLocation = this.getFilePathAndLineNumberWhereGrammarNodeIsDefined(
           colDefId
         )
