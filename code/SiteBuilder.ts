@@ -195,7 +195,7 @@ class SiteBuilder {
 
     const npmPackages = Object.keys({
       ...require("../package.json").dependencies,
-      ...require("./importers/package.json").dependencies
+      ...require("./crawlers/package.json").dependencies
     })
     npmPackages.sort()
 
