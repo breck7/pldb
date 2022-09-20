@@ -10,7 +10,7 @@ const { Disk } = require("jtree/products/Disk.node.js")
 
 const pldbBase = PLDBBaseFolder.getBase().loadFolder()
 
-class PLDBUpdater {
+class Crawler {
   async update(id: string) {
     const file = pldbBase.getFile(id)
     if (!file) return console.error(`❌ File '${id}' not found.`)
@@ -343,7 +343,6 @@ ${end}`)
   }
 }
 
-export { PLDBUpdater }
+export { Crawler }
 
-if (!module.parent)
-  runCommand(new PLDBUpdater(), process.argv[2], process.argv[3])
+if (!module.parent) runCommand(new Crawler(), process.argv[2], process.argv[3])
