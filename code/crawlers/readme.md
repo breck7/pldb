@@ -1,8 +1,8 @@
-# PLDB Importers
+# Crawlers
 
 This folder contains the scripts for importing data automatically from the web.
 
-Importers generally:
+Crawlers generally:
 
 1. Match - match entity ids from the source to PLDB ids
 2. Fetch - fetch content from the source site and save to disk cache
