@@ -1,6 +1,7 @@
 #!/usr/bin/env node
 
-import { PLDBFile, PLDBBaseFolder } from "../../PLDBBase"
+import { PLDBFolder } from "../../Folder"
+import { PLDBFile } from "../../File"
 import { runCommand, PoliteCrawler } from "../../utils"
 
 import { jtree } from "jtree"
@@ -10,7 +11,7 @@ const path = require("path")
 const awis = require("awis")
 
 const cacheDir = path.join(__dirname, "cache")
-const pldbBase = PLDBBaseFolder.getBase().loadFolder()
+const pldbBase = PLDBFolder.getBase().loadFolder()
 Disk.mkdir(cacheDir)
 
 const creds = JSON.parse(

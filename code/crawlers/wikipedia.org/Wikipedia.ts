@@ -1,6 +1,7 @@
 #!/usr/bin/env node
 
-import { PLDBFile, PLDBBaseFolder } from "../../PLDBBase"
+import { PLDBFolder } from "../../Folder"
+import { PLDBFile } from "../../File"
 import { getCleanedId, runCommand, PoliteCrawler } from "../../utils"
 const lodash = require("lodash")
 
@@ -18,7 +19,7 @@ const yearRegex = /(released|started|began|published|designed|announced|develope
 const yearRegexRelaxed = /\D(200\d|201\d|199\d|198\d|197\d|196\d|195\d)\D/g
 const withContext = /(\D{3,18}[12][890]\d\d\D{1,18})/gi
 
-const pldbBase = PLDBBaseFolder.getBase().loadFolder()
+const pldbBase = PLDBFolder.getBase().loadFolder()
 Disk.mkdir(cacheDir)
 
 class PLDBFileWithWikipedia {

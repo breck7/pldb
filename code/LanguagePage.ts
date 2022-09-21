@@ -4,7 +4,7 @@ const numeral = require("numeral")
 
 import { jtree } from "jtree"
 const { TreeNode } = jtree
-import { PLDBFile } from "./PLDBBase"
+import { PLDBFile } from "./File"
 
 import {
   cleanAndRightShift,

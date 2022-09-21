@@ -2,7 +2,8 @@
 
 const cheerio = require("cheerio")
 
-import { PLDBFile, PLDBBaseFolder } from "../../PLDBBase"
+import { PLDBFolder } from "../../Folder"
+import { PLDBFile } from "../../File"
 import { runCommand, getLinks } from "../../utils"
 
 import { jtree } from "jtree"
@@ -10,7 +11,7 @@ import { jtree } from "jtree"
 const lodash = require("lodash")
 
 const cacheDir = __dirname + "/cache/"
-const pldbBase = PLDBBaseFolder.getBase().loadFolder()
+const pldbBase = PLDBFolder.getBase().loadFolder()
 const { Disk } = require("jtree/products/Disk.node.js")
 Disk.mkdir(cacheDir)
 

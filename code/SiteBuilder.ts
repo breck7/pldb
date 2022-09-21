@@ -12,9 +12,9 @@ const shell = require("child_process").execSync
 
 import { LanguagePageTemplate } from "./LanguagePage"
 import { FeaturePageTemplate } from "./FeaturePage"
-import { PLDBBaseFolder } from "./PLDBBase"
+import { PLDBFolder } from "./Folder"
 
-const pldbBase = PLDBBaseFolder.getBase().loadFolder()
+const pldbBase = PLDBFolder.getBase().loadFolder()
 const codeDir = __dirname
 const rootDir = path.join(codeDir, "..")
 const siteFolder = path.join(rootDir, "site")

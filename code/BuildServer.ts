@@ -11,7 +11,8 @@ const { TreeNode } = jtree
 const { Disk } = require("jtree/products/Disk.node.js")
 const { ScrollFile, getFullyExpandedFile } = require("scroll-cli")
 
-import { PLDBBaseFolder, PLDBFile } from "./PLDBBase"
+import { PLDBFolder } from "./Folder"
+import { PLDBFile } from "./File"
 import {
 	runCommand,
 	lastCommitHashInFolder,
@@ -99,11 +100,11 @@ const scrollSettings = getFullyExpandedFile(
 ).code
 
 class BuildServer {
-	folder: PLDBBaseFolder
+	folder: PLDBFolder
 	app: any
 	homepage = ""
 	reloadBase() {
-		this.folder = PLDBBaseFolder.getBase().loadFolder()
+		this.folder = PLDBFolder.getBase().loadFolder()
 		const folder = this.folder
 		const { cachedErrors } = folder
 

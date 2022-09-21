@@ -7,13 +7,13 @@ import * as ss from "simple-statistics"
 
 import { jtree } from "jtree"
 import { runCommand } from "../../utils"
-import { PLDBBaseFolder } from "../../PLDBBase"
+import { PLDBFolder } from "../../Folder"
 
 const lodash = require("lodash")
 const { TreeNode } = jtree
 const { Disk } = require("jtree/products/Disk.node.js")
 
-const pldbBase = PLDBBaseFolder.getBase()
+const pldbBase = PLDBFolder.getBase()
 
 const cachePath = __dirname + "/cache/stack-overflow-developer-survey-2021/"
 const filepath = cachePath + "survey_results_public.csv"

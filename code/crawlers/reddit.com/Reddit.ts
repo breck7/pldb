@@ -1,14 +1,14 @@
 #!/usr/bin/env node
 
 import { runCommand } from "../../utils"
-import { PLDBBaseFolder } from "../../PLDBBase"
+import { PLDBFolder } from "../../Folder"
 
 const path = require("path")
 const dayjs = require("dayjs")
 
 const { Disk } = require("jtree/products/Disk.node.js")
 
-const pldbBase = PLDBBaseFolder.getBase().loadFolder()
+const pldbBase = PLDBFolder.getBase().loadFolder()
 
 const cachePath = path.join(__dirname, "cache")
 Disk.mkdir(cachePath)

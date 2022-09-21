@@ -6,11 +6,11 @@ const grammarNode = require("jtree/products/grammar.nodejs.js")
 const { Disk } = require("jtree/products/Disk.node.js")
 const { ScrollFolder } = require("scroll-cli")
 
-import { PLDBBaseFolder } from "./PLDBBase"
+import { PLDBFolder } from "./Folder"
 
 import { scrollFolders, getCleanedId } from "./utils"
 
-const pldbBase = PLDBBaseFolder.getBase().loadFolder()
+const pldbBase = PLDBFolder.getBase().loadFolder()
 
 const runTree = testTree =>
 	Object.keys(testTree).forEach(key => {

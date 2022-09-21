@@ -1,6 +1,7 @@
 #!/usr/bin/env node
 
-import { PLDBFile, PLDBBaseFolder } from "../../PLDBBase"
+import { PLDBFolder } from "../../Folder"
+import { PLDBFile } from "../../File"
 import { runCommand, PoliteCrawler, ensureDelimiterNotFound } from "../../utils"
 import { jtree } from "jtree"
 
@@ -18,7 +19,7 @@ const firstCommitCache = path.join(cacheDir, "firstCommits")
 const credsPath = path.join(__dirname, "ignore", "creds.json")
 const creds = JSON.parse(Disk.read(credsPath))
 const { apiToken, apiUser } = creds
-const pldbBase = PLDBBaseFolder.getBase().loadFolder()
+const pldbBase = PLDBFolder.getBase().loadFolder()
 
 if (!apiToken) {
 	console.error(`No GitHub token found`)

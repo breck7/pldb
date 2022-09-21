@@ -3,11 +3,11 @@
 import { parse } from "yaml"
 
 import { runCommand } from "../../utils"
-import { PLDBBaseFolder } from "../../PLDBBase"
+import { PLDBFolder } from "../../Folder"
 
 const { Disk } = require("jtree/products/Disk.node.js")
 
-const pldbBase = PLDBBaseFolder.getBase().loadFolder()
+const pldbBase = PLDBFolder.getBase().loadFolder()
 
 const cachePath = __dirname + "/cache/riju/langs/"
 

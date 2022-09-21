@@ -1,13 +1,14 @@
 #!/usr/bin/env node
 
 import { runCommand, PoliteCrawler } from "../../utils"
-import { PLDBBaseFolder, PLDBFile } from "../../PLDBBase"
+import { PLDBFolder } from "../../Folder"
+import { PLDBFile } from "../../File"
 const lodash = require("lodash")
 import { jtree } from "jtree"
 
 const { Disk } = require("jtree/products/Disk.node.js")
 
-const pldbBase = PLDBBaseFolder.getBase().loadFolder()
+const pldbBase = PLDBFolder.getBase().loadFolder()
 
 const cachePath = __dirname + "/cache/"
 Disk.mkdir(cachePath)
