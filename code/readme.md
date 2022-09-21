@@ -2,6 +2,8 @@
 
 ## Over 100,000 facts on over 4,000 languages in 1 typed JSON file with 0 dependencies
 
+This is the readme for the npm distribution of `pldb.json`.
+
 Installing:
 
 ```console

@@ -290,7 +290,7 @@ class SiteBuilder {
   buildJsonCommand() {
     const str = JSON.stringify(pldbBase.typedMap, null, 2)
     Disk.write(path.join(siteFolder, "pldb.json"), str)
-    Disk.write(path.join(codeDir, "package", "pldb.json"), str)
+    Disk.write(path.join(codeDir, "pldb.json"), str)
   }
 
   @benchmark

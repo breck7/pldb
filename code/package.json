@@ -1,8 +1,8 @@
 {
   "name": "pldb",
-  "version": "1.6.0",
+  "version": "2.0.0",
   "description": "PLDB: a Programming Language Database",
-  "main": "index.js",
+  "main": "pldb.json",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/breck7/pldb.git"
@@ -16,5 +16,9 @@
   "bugs": {
     "url": "https://github.com/breck7/pldb/issues"
   },
-  "homepage": "https://github.com/breck7/pldb/tree/main/code/package"
+  "homepage": "https://github.com/breck7/pldb/tree/main/code/package",
+  "files": [
+    "pldb.json",
+    "package.json"
+  ]
 }
