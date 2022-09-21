@@ -18,7 +18,8 @@
     "tsc": "cd code; tsc; cd ..; npm run plusX",
     "plusX": "chmod u+x code/*.js; chmod u+x code/**/*.js; chmod u+x code/**/*.js; chmod u+x code/**/**/*.js; chmod u-x code/buildApp.js",
     "crawl": "./code/crawlers/Crawler.js crawl",
-    "publish": "cd code; npm publish"
+    "publish": "cd code; npm publish",
+    "open": "open site/index.html"
   },
   "prettier": {
     "semi": false
