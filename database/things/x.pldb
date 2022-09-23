@@ -10,10 +10,15 @@ nativeLanguage false
 domainName jule.dev
  registered 2022
 
+writtenIn Go, C++
+influencedBy Assembly, C, C++, Rust, Go
+
+visualParadigm false
+
 features
  hasStrings true
   "Jule String Literal"
-  `Raw String literal of Jule.`
+  `Jule Raw String Literal`
  hasLineComments true
   // A comment
  hasComments true
@@ -65,7 +70,11 @@ features
   }
   anonymous()
  hasBreak true
+  break
+  break a_label
  hasContinue true
+  continue
+  continue a_label
  hasEnums true
   enum ExitCode {
       Success = 0,
@@ -101,6 +110,8 @@ features
   0x1.Fp+0
   0x1fffp-16
   0x1p-2
+ hasPolymorphism false
+ hasGlobalScope true
  hasValueReturnedFunctions true
   fn pi_number() f64 {
       ret 3.14159265359
@@ -109,7 +120,10 @@ features
  hasBitWiseOperators true
   & | ^ << >>
  hasVariableAssignment true
+  let mut x = 10
+  x = 100
  hasOperatorOverloading false
+ hasUserDefinedOperators false
  hasAssertStatements true
   use std::debug
   use std::debug::assert::{assert}
@@ -148,11 +162,13 @@ features
       // ...
   }
  hasDocComments true
+  // Documentation comment for a_function
+  fn a_function() {}
  hasIfs true
  hasIfElses true
  hasSwitch true
  hasDynamicSizedArrays true
-  let mut a_slice = []int{1, 2, 3, 4, 5, 6}
+  let mut a_slice = [1, 2, 3, 4, 5, 6]
   a_slice = append(a_slice, 7, 8, 9, 10)
  hasLabels true
   a_label:
@@ -179,7 +195,7 @@ features
   }
  isLisp false
  hasArraySlicingSyntax true
-  my_array_or_slice[start_index:end_index]
+  sliceable_expression[start_index:to_index]
  hasExplicitTypeCasting true
   let x = (int)(3.14)
  hasManualMemoryManagement true
@@ -225,7 +241,7 @@ example
  }
  
  fn main() {
-     let mut my_slice = []int{1, 9, -2, 25, -24, 4623, 0, -1, 0xFD2}
+     let mut my_slice = [1, 9, -2, 25, -24, 4623, 0, -1, 0xFD2]
      outln(my_slice)
      quicksort(my_slice)
      outln(my_slice)
@@ -233,6 +249,41 @@ example
 example
  fn main() {
      outln("Hello World")
+ }
+ 
+example
+ use std::math::{PI}
+ 
+ trait Shape {
+     fn area(self) int
+ }
+ 
+ struct Rectangle {
+     width: int
+     height: int
+ }
+ 
+ impl Shape for Rectangle {
+     fn area(self) int {
+         ret self.width * self.height
+     }
+ }
+ 
+ struct Circle {
+     r: f32
+ }
+ 
+ impl Shape for Circle {
+     fn area(self) int {
+         ret PI * self.r * self.r
+     }
+ }
+ 
+ fn main() {
+     let rect: Shape = Rectangle{90, 5}
+     let circ: Shape = Circle{90.5}
+     outln(rect.area())
+     outln(circ.area())
  }
 
 githubRepo https://github.com/jule-lang/jule
@@ -245,5 +296,6 @@ githubRepo https://github.com/jule-lang/jule
  description Jule is the simple, efficient, statically typed and compiled system programming language.
  issues 0
 
+gdbSupport false
 fileType text
 isOpenSource true
