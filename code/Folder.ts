@@ -695,7 +695,7 @@ wikipedia`.split("\n")
       if (node.getWords().length > 2) node.setLine(node.getLine().trim())
     })
 
-    return program.toString()
+    return program.toString().replace(/\n+$/, "") + "\n" // always end with a newline
   }
 }
 
