@@ -1,8 +1,8 @@
 title blz
 type pl
 website https://blazingk.in/blz
-githubRepo https://github.com/blazingkin
-country United States 
+country United States
+
 features
  hasLineComments true
   # A comment
@@ -19,3 +19,5 @@ example
    evens = range(1000).filter!(x -> x % 2 == 0)
    print(evens.map!(x -> x ** 3)
  end
+
+githubRepo https://github.com/blazingkin
