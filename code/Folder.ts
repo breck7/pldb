@@ -1,6 +1,11 @@
 import { jtree } from "jtree"
 import { PLDBFile, runtimeCsvProps } from "./File"
-import { FeatureSummary, InverseRankings, StringMap } from "./Interfaces"
+import {
+  FeatureSummary,
+  FolderInterface,
+  InverseRankings,
+  StringMap
+} from "./Interfaces"
 import { computeRankings } from "./Rankings"
 import { nodeToFlatObject, isLanguage, getCleanedId, imemo } from "./utils"
 
@@ -148,7 +153,11 @@ class PLDBFolder extends TreeBaseFolder {
 
   @imemo
   get rankings() {
-    return computeRankings(this)
+    // Todo: once jtree is cleaned up, we should be able to remove this.
+    // the problem is this class does implement FolderInterface, but Typescript doesn't know that
+    // because it misses the inherited methods (filter and getChildren).
+    const folder: FolderInterface = <any>this
+    return computeRankings(folder)
   }
 
   private _getFileAtRank(rank: number, ranks: InverseRankings) {
