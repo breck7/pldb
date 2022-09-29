@@ -148,7 +148,7 @@ class PLDBFolder extends TreeBaseFolder {
 
   @imemo
   get rankings() {
-    return computeRankings(this.getChildren())
+    return computeRankings(this)
   }
 
   private _getFileAtRank(rank: number, ranks: InverseRankings) {
