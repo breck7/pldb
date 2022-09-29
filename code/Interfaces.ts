@@ -22,7 +22,10 @@ interface Example {
   link: string
 }
 
-interface FileInterface {}
+interface FileInterface {
+  id: string
+  factCount: number
+}
 
 interface FolderInterface {
   prettifyContent: Function
@@ -40,12 +43,34 @@ interface FolderInterface {
   getLanguageRank: Function
   getFile: Function
   featuresMap: any
+  inboundLinks: StringMap
+  getChildren: () => FileInterface[]
+  filter: (predicate: Function) => FileInterface[]
 }
+
+interface Ranking {
+  index: number
+  id: string
+  totalRank: number
+  jobsRank: number
+  factsRank: number
+  inboundLinksRank: number
+  usersRank: number
+}
+
+type Rankings = { [firstWord: string]: Ranking }
+type InverseRankings = { [firstWord: number]: Ranking }
+
+type StringMap = { [id: string]: string[] }
 
 export {
   FeatureSummary,
   FeaturePrediction,
   Example,
   FolderInterface,
-  FileInterface
+  FileInterface,
+  Ranking,
+  Rankings,
+  InverseRankings,
+  StringMap
 }

@@ -1,17 +1,8 @@
 import { jtree } from "jtree"
 import { PLDBFile, runtimeCsvProps } from "./File"
-import { FeatureSummary } from "./Interfaces"
-import {
-  nodeToFlatObject,
-  isLanguage,
-  getCleanedId,
-  makeInverseRanks,
-  Ranking,
-  Rankings,
-  InverseRankings,
-  rankSort,
-  imemo
-} from "./utils"
+import { FeatureSummary, InverseRankings, StringMap } from "./Interfaces"
+import { computeRankings } from "./Rankings"
+import { nodeToFlatObject, isLanguage, getCleanedId, imemo } from "./utils"
 
 const path = require("path")
 const lodash = require("lodash")
@@ -38,7 +29,7 @@ class PLDBFolder extends TreeBaseFolder {
   }
 
   @imemo
-  get inboundLinks(): { [id: string]: string[] } {
+  get inboundLinks(): StringMap {
     const inBoundLinks = {}
     this.forEach(file => {
       inBoundLinks[file.id] = []
@@ -155,62 +146,9 @@ class PLDBFolder extends TreeBaseFolder {
     )
   }
 
-  private calcRanks(files: PLDBFile[] = this.getChildren()) {
-    const { inboundLinks } = this
-    let objects = files.map(file => {
-      const id = file.id
-      const object: any = {}
-      object.id = id
-      object.jobs = this.predictNumberOfJobs(file)
-      object.users = this.predictNumberOfUsers(file)
-      object.facts = file.factCount
-      object.inboundLinks = inboundLinks[id].length
-      return object
-    })
-
-    objects = rankSort(objects, "jobs")
-    objects = rankSort(objects, "users")
-    objects = rankSort(objects, "facts")
-    objects = rankSort(objects, "inboundLinks")
-
-    objects.forEach((obj, rank) => {
-      // Drop the item this does the worst on, as it may be a flaw in PLDB.
-      const top3: number[] = [
-        obj.jobsRank,
-        obj.usersRank,
-        obj.factsRank,
-        obj.inboundLinksRank
-      ]
-      obj.totalRank = lodash.sum(lodash.sortBy(top3).slice(0, 3))
-    })
-    objects = lodash.sortBy(objects, ["totalRank"])
-
-    const ranks: Rankings = {}
-    objects.forEach((obj, index) => {
-      obj.index = index
-      ranks[obj.id] = obj as Ranking
-    })
-    return ranks
-  }
-
   @imemo
   get rankings() {
-    const files = this.getChildren()
-    const ranks = this.calcRanks(files)
-    const inverseRanks = makeInverseRanks(ranks)
-    const languageRanks = this.calcRanks(files.filter(file => file.isLanguage))
-    const inverseLanguageRanks = makeInverseRanks(languageRanks)
-    const featureRanks = this.calcRanks(files.filter(file => file.isFeature))
-    const inverseFeatureRanks = makeInverseRanks(featureRanks)
-
-    return {
-      ranks,
-      inverseRanks,
-      languageRanks,
-      inverseLanguageRanks,
-      featureRanks,
-      inverseFeatureRanks
-    }
+    return computeRankings(this.getChildren())
   }
 
   private _getFileAtRank(rank: number, ranks: InverseRankings) {
