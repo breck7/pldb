@@ -16,7 +16,7 @@ import { PLDBFolder } from "./Folder"
 
 const pldbBase = PLDBFolder.getBase().loadFolder()
 const codeDir = __dirname
-const rootDir = path.join(codeDir, "..")
+const rootDir = path.join(codeDir, "..") 
 const siteFolder = path.join(rootDir, "site")
 const settingsFilePath = path.join(siteFolder, "settings.scroll")
 const pagesDir = path.join(siteFolder, "pages")
@@ -332,6 +332,8 @@ class SiteBuilder {
   @benchmark
   @buildAll
   buildExtensionsImports() {
+
+    console.log('.....', pldbBase)
     const files = pldbBase
       .filter(file => file.get("type") !== "feature")
       .map(file => {
