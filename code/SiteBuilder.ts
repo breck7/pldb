@@ -16,7 +16,7 @@ import { PLDBFolder } from "./Folder"
 
 const pldbBase = PLDBFolder.getBase().loadFolder()
 const codeDir = __dirname
-const rootDir = path.join(codeDir, "..") 
+const rootDir = path.join(codeDir, "..")
 const siteFolder = path.join(rootDir, "site")
 const settingsFilePath = path.join(siteFolder, "settings.scroll")
 const pagesDir = path.join(siteFolder, "pages")
@@ -50,25 +50,25 @@ const buildImportsFile = (filepath, varMap) => {
   Disk.write(
     filepath,
     `importOnly\n` +
-      Object.keys(varMap)
-        .map(key => {
-          let value = varMap[key]
+    Object.keys(varMap)
+      .map(key => {
+        let value = varMap[key]
 
-          if (value.rows)
-            return `replace ${key}
+        if (value.rows)
+          return `replace ${key}
  pipeTable
   ${new TreeNode(value.rows)
-    .toDelimited("|", value.header, false)
-    .replace(/\n/g, "\n  ")}`
+              .toDelimited("|", value.header, false)
+              .replace(/\n/g, "\n  ")}`
 
-          value = value.toString()
+        value = value.toString()
 
-          if (value.includes("\n")) return `replace ${key} ${value}`
+        if (value.includes("\n")) return `replace ${key} ${value}`
 
-          return `replace ${key}
+        return `replace ${key}
  ${value.replace(/\n/g, "\n ")}`
-        })
-        .join("\n")
+      })
+      .join("\n")
   )
 }
 
@@ -320,10 +320,10 @@ class SiteBuilder {
     const header = ["title", "titleLink", "appeared", "type", "rank"]
     pages.forEach(
       num =>
-        (vars[`TOP_${num}`] = {
-          header,
-          rows: files.slice(0, num)
-        })
+      (vars[`TOP_${num}`] = {
+        header,
+        rows: files.slice(0, num)
+      })
     )
 
     buildImportsFile(path.join(listsFolder, "topLangsImports.scroll"), vars)
@@ -333,7 +333,6 @@ class SiteBuilder {
   @buildAll
   buildExtensionsImports() {
 
-    console.log('.....', pldbBase)
     const files = pldbBase
       .filter(file => file.get("type") !== "feature")
       .map(file => {
@@ -531,8 +530,8 @@ class SiteBuilder {
       const wrappedName = !person
         ? `<a name='${anchorTag}' />${name}`
         : `<a name='${anchorTag}' href='https://en.wikipedia.org/wiki/${person.get(
-            "wikipedia"
-          )}'>${name}</a>`
+          "wikipedia"
+        )}'>${name}</a>`
 
       return {
         name: wrappedName,
