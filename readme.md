@@ -47,6 +47,7 @@ npm run tsc
 npm run build
 (Optional run TESTS): npm run test
 open site/index.html
+(Following updates): npm run format
 ```
 
 ## To explore this repo
