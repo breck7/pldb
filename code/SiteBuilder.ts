@@ -332,7 +332,6 @@ class SiteBuilder {
   @benchmark
   @buildAll
   buildExtensionsImports() {
-
     const files = pldbBase
       .filter(file => file.get("type") !== "feature")
       .map(file => {
