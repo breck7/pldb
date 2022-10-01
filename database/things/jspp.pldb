@@ -4,10 +4,33 @@ type pl
 creators Roger Poon and Anton Rapetov
 website https://onux.com/jspp/
 country United Kingdom
-compilesTo JavaScript
+
+compilesTo javascript
+
+features
+ hasComments true
+ hasSemanticIndentation false
+ hasLineComments true
+  // A comment
+ hasPrintDebugging true
+ hasMultiLineComments true
+  /* A comment
+  */
+ hasStrings true
+ hasRegularExpressionsSyntaxSugar true
+ hasBooleans true
+ hasWhileLoops true
+ hasClasses true
+ hasSwitch true
+ hasInheritance true
+ hasConditionals true
+ hasHexadecimals true
+ hasFloats true
+ hasIntegers true
+ hasGarbageCollection true
 
 lineCommentToken //
-multiLineCommentToken /* */
+multiLineCommentTokens /* */
 printToken console.log
 assignmentToken =
 stringToken "
@@ -19,3 +42,5 @@ wikipedia https://en.wikipedia.org/wiki/JS%2B%2B
   1 int x = 1; // declares the variable x with an "internal type" (JS++ type)
   2 var y = 2; // declares the variable y with an "external type" (JavaScript type)
   3 bool z = true; // declares the variable z with an "internal type" (JS++ type)
+
+fileExtensions jspp
