@@ -3,6 +3,7 @@ appeared 2011
 type pl
 creators Roger Poon and Anton Rapetov
 website https://onux.com/jspp/
+fileExtensions jspp
 country United Kingdom
 
 compilesTo javascript
@@ -42,5 +43,3 @@ wikipedia https://en.wikipedia.org/wiki/JS%2B%2B
   1 int x = 1; // declares the variable x with an "internal type" (JS++ type)
   2 var y = 2; // declares the variable y with an "external type" (JavaScript type)
   3 bool z = true; // declares the variable z with an "internal type" (JS++ type)
-
-fileExtensions jspp
