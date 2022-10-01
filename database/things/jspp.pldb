@@ -1,0 +1,21 @@
+title JS++
+appeared 2011
+type pl
+creators Roger Poon and Anton Rapetov
+website https://onux.com/jspp/
+country United Kingdom
+compilesTo JavaScript
+
+lineCommentToken //
+multiLineCommentToken /* */
+printToken console.log
+assignmentToken =
+stringToken "
+booleanTokens true false
+keywords abstract auto break bool byte catch char class continue debugger delete do double else enum external false final finally float for foreach function if import in instanceof int interface long module new null override overwrite private protected property public return short signed string super switch static this true try typeid typeof undefined unsigned var virtual void while with yield
+
+wikipedia https://en.wikipedia.org/wiki/JS%2B%2B
+ example
+  1 int x = 1; // declares the variable x with an "internal type" (JS++ type)
+  2 var y = 2; // declares the variable y with an "external type" (JavaScript type)
+  3 bool z = true; // declares the variable z with an "internal type" (JS++ type)
