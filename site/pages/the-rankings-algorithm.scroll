@@ -9,7 +9,7 @@ quote
  sortDesc(sumOfBest3(NumberOfEstimatedJobsRank, NumberOfEstimatedUsersRank,  NumberOfFactsInPLDBRank, NumberOfInboundLinksInPLDBRank))
 
 * You can verify this yourself by reading the source code.
- https://github.com/breck7/pldb/blob/2006c89fb95be74123da4b85852e22b32569ceee/code/Folder.ts#L537 source code
+ https://github.com/breck7/pldb/blob/main/code/Rankings.ts#L537 source code
 
 * Each one of the four main inputs is composed from many sources and well over 100 signals go into calculating the rankings.
  link acknowledgements.html sources
