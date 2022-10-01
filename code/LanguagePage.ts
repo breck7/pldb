@@ -244,8 +244,6 @@ pipeTable
 
     if (title.includes("%20")) throw new Error("bad space in title: " + title)
 
-    const screenshot = file.get("screenshot")
-
     return `title ${title}
 
 import settings.scroll
@@ -262,14 +260,7 @@ ${this.tryNowRepls}
 
 ${this.monacoEditor}
 
-${
-  screenshot
-    ? `image ${screenshot.replace(
-        "https://pldb.com/",
-        "../"
-      )}\n caption A screenshot of the <a href="../lists/languages.html?filter=visual">visual language</a> ${title}.`
-    : ""
-}
+${this.image}
 
 ${this.descriptionSection}
 
@@ -300,6 +291,24 @@ ${this.hackerNewsTable}
 
 keyboardNav ${this.prevPage} ${this.nextPage}
 `
+  }
+
+  get image() {
+    const { file } = this
+    const { title } = file
+
+    let image = file.get("screenshot")
+    let caption = `A screenshot of the <a href="../lists/languages.html?filter=visual">visual language</a> ${title}.`
+    if (!image) {
+      image = file.get("photo")
+      caption = `A photo of ${title}.`
+    }
+
+    if (!image) return ""
+
+    return `openGraphImage image
+image ${image.replace("https://pldb.com/", "../")}
+ caption ${caption}`
   }
 
   get monacoEditor() {
