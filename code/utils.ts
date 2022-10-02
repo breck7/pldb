@@ -70,8 +70,8 @@ const getCleanedId = str =>
     .replace(/\!$/g, "-bang")
     .replace(/\!/g, "-bang-")
     .replace(/\&/g, "-n-")
-    .replace(/[\+\. ]/g, "-")
-    .replace(/[^a-zA-Z0-9\-]/g, "")
+    .replace(/[\+ ]/g, "-")
+    .replace(/[^a-zA-Z0-9\-\.]/g, "")
     .toLowerCase()
 
 // todo: move to grammar

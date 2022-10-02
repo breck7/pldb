@@ -47,7 +47,7 @@ wikipedia https://en.wikipedia.org/wiki/AutoHotkey
   
   ; Ctrl+Shift+r
   ^+r::Send revert edits by [[Special:Contributions/%edit%|%edit%]] to last version by %last%
- related emacs-editor c excel-app autoit visual-basic-dot-net csharp lua lisp vbscript jscript kixtart winbatch
+ related emacs-editor c excel-app autoit visual-basic.net csharp lua lisp vbscript jscript kixtart winbatch
  summary AutoHotkey is a free, open-source custom scripting language for Microsoft Windows, initially aimed at providing easy keyboard shortcuts or hotkeys, fast macro-creation and software automation that allows users of most levels of computer skill to automate repetitive tasks in any Windows application. User interfaces can easily be extended or modified by AutoHotkey (for example, overriding the default Windows control key commands with their Emacs equivalents). The AutoHotkey installation includes its own extensive help file with an always updated web-based version.
  pageId 1485612
  dailyPageViews 308
