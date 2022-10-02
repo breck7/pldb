@@ -98,7 +98,9 @@ class PLDBFile extends TreeBaseFile {
   }
 
   get subredditId() {
-    return this.get("subreddit")?.replace("https://reddit.com/r/", "")
+    return this.get("subreddit")
+      ?.split("/")
+      .pop()
   }
 
   @includeInCsv

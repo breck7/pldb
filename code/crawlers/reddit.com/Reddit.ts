@@ -15,8 +15,8 @@ Disk.mkdir(cachePath)
 
 import { getTitle, handTitles } from "./getTitle"
 
-const getCachePath = file =>
-  path.join(cachePath, file.get("subreddit") + ".json")
+const subredditKeyword = "subreddit"
+const getCachePath = file => path.join(cachePath, file.subredditId + ".json")
 
 class RedditImporter {
   writeToDatabaseCommand() {
@@ -30,11 +30,11 @@ class RedditImporter {
   }
 
   writeOne(file) {
-    const path = getCachePath(file)
-    if (!Disk.exists(path)) return
-    const parsed = Disk.readJson(path)
+    const cachePath = getCachePath(file)
+    if (!Disk.exists(cachePath)) return
+    const parsed = Disk.readJson(cachePath)
     const members = parsed.data.children[0].data.subscribers
-    const key = `subreddit memberCount 2022`
+    const key = `${subredditKeyword} memberCount 2022`
     if (!file.get(key)) {
       file.set(key, members.toString())
       file.save()
@@ -42,14 +42,14 @@ class RedditImporter {
   }
 
   get matches() {
-    return pldbBase.filter(file => file.has("subreddit"))
+    return pldbBase.filter(file => file.has(subredditKeyword))
   }
 
   async fetchOne(file) {
-    const path = getCachePath(file)
-    if (Disk.exists(path)) return this
+    const cachePath = getCachePath(file)
+    if (Disk.exists(cachePath)) return this
     const url = `https://www.reddit.com/subreddits/search.json?q=${file.subredditId}`
-    await Disk.downloadJson(url, path)
+    await Disk.downloadJson(url, cachePath)
   }
 
   get announcements() {
