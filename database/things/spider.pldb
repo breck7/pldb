@@ -6,6 +6,8 @@ website http://spiderlang.org/
 fileExtensions spider
 country Unknown
 
+compilesTo javascript
+
 features
  hasInheritance true
 
@@ -16,4 +18,3 @@ githubRepo https://github.com/alongubkin/spider
  created 2014
  updated 2017
  description Unsurprising JavaScript - No longer active
-compilesTo javascript
