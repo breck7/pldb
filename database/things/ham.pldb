@@ -3,12 +3,12 @@ appeared 2013
 type pl
 creators James Keane
 website https://github.com/jameskeane/ham-script
-country Canada
 fileExtensions ham
+country Canada
+
+writtenIn javascript
 
 keywords class else extends false from if import is isnt new null number string operator or return true var
-transpilesTo javascript
-writtenIn javascript
 
 githubRepo https://github.com/jameskeane/ham-script
  stars 31
@@ -17,4 +17,4 @@ githubRepo https://github.com/jameskeane/ham-script
  created 2013
  updated 2013
  description An altJS language for the web
-
+compilesTo javascript

@@ -1,11 +1,9 @@
 title RamdaScript
 appeared 2016
 type pl
-website https://yosbelms.github.io/ramdascript/
 creators Yosbel Marín
+website https://yosbelms.github.io/ramdascript/
 country United States
-
-transpilesIn javascript
 
 githubRepo https://github.com/yosbelms/ramdascript
  stars 132
@@ -14,4 +12,4 @@ githubRepo https://github.com/yosbelms/ramdascript
  created 2016
  updated 2018
  description ram Lisp that compiles to JavaScript in the Ramda way
-
+compilesIn javascript

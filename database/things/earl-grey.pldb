@@ -6,15 +6,6 @@ website https://web.archive.org/web/20200813015200/http://www.earl-grey.io/
 
 compilesTo javascript
 
-githubRepo https://github.com/breuleux/earl-grey
- stars 473
- forks 11
- subscribers 17
- created 2014
- updated 2017
- description Programming language compiling to JavaScript
-
-
 features
  hasOctals true
  hasHexadecimals true
@@ -31,6 +22,14 @@ example
        counts.set(word, current-count + 1)
     consume(counts.entries()).sort(compare) where
        compare({w1, c1}, {w2, c2}) = c2 - c1
+
+githubRepo https://github.com/breuleux/earl-grey
+ stars 473
+ forks 11
+ subscribers 17
+ created 2014
+ updated 2017
+ description Programming language compiling to JavaScript
 
 pygmentsHighlighter Earl Grey
  filename javascript.py

@@ -1,15 +1,15 @@
 title SpiderBasic
 appeared 2015
 type pl
-originCommunity Fantaisie Software
 website https://www.spiderbasic.com/
 fileExtensions pb
 country France
-
-keywords And Array Bool Break CallDebugger Case ClearStructure CompilerCase CompilerElse CompilerElseIf CompilerEndIf CompilerEndSelect CompilerIf CompilerSelect Continue CopyStructure Data DataSection Debug DebugLevel Declare DeclareModule Default Define Defined Dim DisableExplicit DisableDebugger DisableJS Else ElseIf EnableASM EnableExplicit EnableDebugger EnableJS End EndDataSection EndDeclareModule EndEnumeration EndIf EndImport EndInterface EndMacro EndModule EndProcedure EndSelect EndStructure EndWith Enumeration Extends For ForEach Forever Global Import IncludeFile IncludePath Interface List Macro MacroExpandedCount Map Module NewList NewMap Next Not OffsetOf Or Procedure ProcedureReturn Protected Prototype Read ReDim Repeat Restore Runtime Select Shared SizeOf Static Step Structure Subsystem Swap To TypeOf UndefineMacro Until UnuseModule UseModule Wend With While XIncludeFile XOr
+originCommunity Fantaisie Software
 
 features
  hasInheritance true
+
+keywords And Array Bool Break CallDebugger Case ClearStructure CompilerCase CompilerElse CompilerElseIf CompilerEndIf CompilerEndSelect CompilerIf CompilerSelect Continue CopyStructure Data DataSection Debug DebugLevel Declare DeclareModule Default Define Defined Dim DisableExplicit DisableDebugger DisableJS Else ElseIf EnableASM EnableExplicit EnableDebugger EnableJS End EndDataSection EndDeclareModule EndEnumeration EndIf EndImport EndInterface EndMacro EndModule EndProcedure EndSelect EndStructure EndWith Enumeration Extends For ForEach Forever Global Import IncludeFile IncludePath Interface List Macro MacroExpandedCount Map Module NewList NewMap Next Not OffsetOf Or Procedure ProcedureReturn Protected Prototype Read ReDim Repeat Restore Runtime Select Shared SizeOf Static Step Structure Subsystem Swap To TypeOf UndefineMacro Until UnuseModule UseModule Wend With While XIncludeFile XOr
 
 githubRepo https://github.com/fantaisie-software/purebasic
  stars 72
@@ -18,4 +18,3 @@ githubRepo https://github.com/fantaisie-software/purebasic
  created 2019
  updated 2022
  description PureBasic OpenSource Projects
-

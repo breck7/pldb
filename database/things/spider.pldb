@@ -1,15 +1,13 @@
 title spider
 appeared 2014
 type pl
-website http://spiderlang.org/
 creators Alon Gubkin
+website http://spiderlang.org/
 fileExtensions spider
 country Unknown
 
 features
  hasInheritance true
-
-transpilesTo javascript
 
 githubRepo https://github.com/alongubkin/spider
  stars 1300
@@ -18,4 +16,4 @@ githubRepo https://github.com/alongubkin/spider
  created 2014
  updated 2017
  description Unsurprising JavaScript - No longer active
-
+compilesTo javascript
