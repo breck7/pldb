@@ -1,0 +1,22 @@
+title JLang
+appeared 2016
+type pl
+creators Joao Marcelo Brito
+website https://github.com/jmbrito01/jlang
+country Brazil
+
+example
+ func test param {
+     this.id = 0;
+     ret this;
+ }
+ var testObj = test();
+ i = testObj.id;
+
+githubRepo https://github.com/jmbrito01/jlang
+ stars 3
+ forks 0
+ subscribers 2
+ created 2016
+ updated 2016
+ description Just another programming language
