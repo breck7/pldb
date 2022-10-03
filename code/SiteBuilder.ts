@@ -564,10 +564,6 @@ class SiteBuilder {
         )
         .join(" · "),
       NEW_POSTS: postsScroll.files
-        .filter(
-          file =>
-            !file.scrollScriptProgram.toString().includes("publicDomainCompany")
-        ) // keep front page posts focused on pls
         .slice(0, 5)
         .map(file => `<a href="./posts/${file.permalink}">${file.title}</a>`)
         .join("<br>")
