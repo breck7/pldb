@@ -1,0 +1,38 @@
+title Alma
+appeared 2014
+type pl
+creators Carl Mäsak
+description Alma is a small language created as a testbed for Raku macros.
+website http://masak.github.io/alma/
+aka 007
+country Unknown
+
+example
+ macro swap(a, b) {
+     return quasi {
+         my t = {{{a}}};
+         {{{a}}} = {{{b}}};
+         {{{b}}} = t;
+     };
+ }
+ func gcd(a, b) {
+     if b {
+         return gcd(b, a % b);
+     }
+     return a.abs();
+ }
+ my bigger = +prompt("Enter the bigger integer: ");
+ my smaller = +prompt("Enter the smaller integer: ");
+ if bigger < smaller {
+     swap(bigger, smaller);
+ }
+ say();
+ say("Greatest common denominator: ", gcd(bigger, smaller));
+
+githubRepo https://github.com/masak/alma
+ stars 130
+ forks 14
+ subscribers 1
+ created 2014
+ updated 2021
+ description ALgoloid with MAcros -- a language with Algol-family syntax where macros take center stage

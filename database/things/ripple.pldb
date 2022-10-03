@@ -1,0 +1,31 @@
+title Ripple
+appeared 2014
+type pl
+creators Yuya Watari
+description Ripple is a programming language which is well designed for numerical simulations.
+website https://github.com/Ripple-Lang/Ripple
+country Unknown
+
+example
+ // Stage
+ //   - A target object of this simulation
+ stage n as long; // the number of mice
+ // Parameter
+ param c as int;  // the number of mice which one mouse gives birth to
+ // Initialization
+ init {
+     n<0> = 2; // n<0> means the value of n when time is 0
+ }
+ // Operation
+ //   - Code which is executed every time (like recurrence formula)
+ operation {
+     n<next> = n<now> * c; // "now" and "next" are keywords in Ripple. next == now + 1.
+ }
+
+githubRepo https://github.com/Ripple-Lang/Ripple
+ stars 2
+ forks 0
+ subscribers 2
+ created 2014
+ updated 2017
+ description Programming Language "Ripple"
