@@ -7,13 +7,9 @@ website https://github.com/tj/luna
 country United Kingdom
 
 example
- public class HelloCi
- {
-     public static string GetMessage()
-     {
-         return "Hello, world!";
-     }
- }
+ def greet(name:string)
+   return "Hello " + name
+ end
 
 githubRepo https://github.com/tj/luna
  stars 2400
