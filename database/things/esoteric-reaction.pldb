@@ -1,0 +1,16 @@
+title Esoteric Reaction
+appeared 2020
+type pl
+
+example
+  <code>	   ::= <equation> | <equation> <code>
+  <equation> ::= <reagent> <rhs> | <COMMENT> | <reagent> <rhs> <COMMENT>
+
+githubRepo https://github.com/bigyihsuan/EsotericReaction
+ stars 3
+ forks 0
+ subscribers 1
+ created 2020
+ updated 2022
+ description Esolang using chemical "formulas" as code
+ issues 0

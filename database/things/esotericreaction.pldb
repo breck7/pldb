@@ -1,9 +1,0 @@
-title Esoteric Reaction
-appeared 2020
-githubRepo https://github.com/bigyihsuan/EsotericReaction
-  stars 3
-  forks 0
-
-example
-  <code>	   ::= <equation> | <equation> <code>
-  <equation> ::= <reagent> <rhs> | <COMMENT> | <reagent> <rhs> <COMMENT>
