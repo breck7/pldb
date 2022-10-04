@@ -1,0 +1,10 @@
+title Join(SQL)
+type feature
+description A join clause in SQL – corresponding to a join operation in relational algebra – combines columns from one or more tables into a new table. Informally, a join stitches two tables and puts on the same row records with matching fields on the join condition.
+
+pseudoExample INNER JOIN
+featureKeyword JOIN
+
+wikipedia https://en.wikipedia.org/wiki/Join_(SQL)
+
+  
