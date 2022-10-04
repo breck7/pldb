@@ -1,9 +1,37 @@
 title abs
 appeared 2018
 type pl
+creators Alessandro Nadalin
+description ABS is a programming language that works best when you're scripting on your terminal. It tries to combine the elegance of languages such as Python, or Ruby with the convenience of Bash.
 website https://www.abs-lang.org
+country United Arab Emirates
 domainName abs-lang.org
  registered 2018
+
+example
+ r = $(curl "http://data.nba.net/prod/v1/20170201/0021600732_boxscore.json" -H 'DNT: 1' -H 'Accept-Encoding: gzip, deflate, sdch' -H 'Accept-Language: en' -H 'User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.133 Safari/537.36' -H 'Accept: */*' -H 'Referer: http://stats.nba.com/' -H 'Connection: keep-alive' --compressed);
+ if !r.ok {
+     echo("Could not fetch game data. Bummer!")
+     exit(1)
+ }
+ doc = r.json()
+ arena = doc.basicGameData.arena.name
+ city = doc.basicGameData.arena.city
+ echo("The game was played at the %s in %s", arena, city)
+ highlight = doc.basicGameData.nugget.text
+ if highlight.len() {
+     echo("The press said: \"%s\"", highlight)
+ }
+ # The game was played at the TD Garden in Boston
+ # The press said: "Thomas scores 19 of 44 points in 4th quarter"
+
+githubRepo https://github.com/abs-lang/abs
+ stars 461
+ forks 33
+ subscribers 12
+ created 2018
+ updated 2022
+ description Home of the ABS programming language: the joy of shell scripting.
 
 hackerNewsDiscussions
  id|title|url|time|timestamp|by|comments|score
