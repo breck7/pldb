@@ -20,6 +20,7 @@
     "crawl": "./code/crawlers/Crawler.js crawl",
     "publish": "cd code; npm publish",
     "open": "open site/index.html",
+    "local": "./code/BuildServer.js startDevServer",
     "restart": "pm2 restart 0"
   },
   "prettier": {
