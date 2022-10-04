@@ -2,15 +2,15 @@
 
 const tap = require("tap")
 const lodash = require("lodash")
+const path = require("path")
 const grammarNode = require("jtree/products/grammar.nodejs.js")
-const { Disk } = require("jtree/products/Disk.node.js")
-const { ScrollFolder } = require("scroll-cli")
+const { ScrollFolder, ScrollCli } = require("scroll-cli")
 
 import { PLDBFolder } from "./Folder"
-
-import { scrollFolders, getCleanedId } from "./utils"
+import { getCleanedId } from "./utils"
 
 const pldbBase = PLDBFolder.getBase().loadFolder()
+const rootDir = path.join(__dirname, "..")
 
 const runTree = testTree =>
 	Object.keys(testTree).forEach(key => {
@@ -46,7 +46,9 @@ testTree.ensureNoErrorsInBlog = areEqual => {
 		//areEqual(folder.errors.length, 0, `no errors in ${folderPath}`)
 	}
 
-	scrollFolders().map(checkScroll)
+	Object.keys(new ScrollCli().findScrollsInDirRecursive(rootDir)).map(
+		checkScroll
+	)
 }
 
 testTree.ensureGoodFilenames = areEqual => {

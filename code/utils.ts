@@ -1,6 +1,4 @@
 const lodash = require("lodash")
-const path = require("path")
-const shell = require("child_process").execSync
 
 const cleanAndRightShift = (str, numSpaces = 1) =>
   str.replace(/\r/g, "").replace(/\n/g, "\n" + " ".repeat(numSpaces))
@@ -199,15 +197,6 @@ const nodeToFlatObject = parentNode => {
 
 const nameToAnchor = (name: string) => name.replace(/ /g, "_")
 
-const scrollFolders = () =>
-  lodash.uniq(
-    shell(`git ls-tree -r main --name-only`)
-      .toString()
-      .split("\n")
-      .filter(line => line)
-      .map(file => path.dirname(file))
-  )
-
 const getJoined = (node, keywords): string => {
   const words = keywords
     .map(word => node.get(word) || "")
@@ -351,7 +340,6 @@ export {
   benchmarkResults,
   imemo,
   listGetters,
-  scrollFolders,
   getLinks,
   lastCommitHashInFolder,
   ensureDelimiterNotFound,
