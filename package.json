@@ -20,6 +20,7 @@
     "crawl": "./code/crawlers/Crawler.js crawl",
     "publish": "cd code; npm publish",
     "open": "open site/index.html",
+    "local": "./code/BuildServer.js startDevServer",
     "restart": "pm2 restart 0"
   },
   "prettier": {
@@ -48,7 +49,7 @@
     "lodash": "^4.17.21",
     "monaco-editor": "^0.33.0",
     "numeral": "^2.0.6",
-    "scroll-cli": "^31.6.0",
+    "scroll-cli": "^34.2.0",
     "simple-git": "^3.10.0",
     "simple-statistics": "latest",
     "typescript": ">=3.7.2"

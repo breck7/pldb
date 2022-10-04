@@ -1,21 +1,6 @@
 const lodash = require("lodash")
-const { jtree } = require("jtree")
 const path = require("path")
 const shell = require("child_process").execSync
-const { Utils } = jtree
-
-interface Ranking {
-  index: number
-  id: string
-  totalRank: number
-  jobsRank: number
-  factsRank: number
-  inboundLinksRank: number
-  usersRank: number
-}
-
-type Rankings = { [firstWord: string]: Ranking }
-type InverseRankings = { [firstWord: number]: Ranking }
 
 const cleanAndRightShift = (str, numSpaces = 1) =>
   str.replace(/\r/g, "").replace(/\n/g, "\n" + " ".repeat(numSpaces))
@@ -26,14 +11,6 @@ const toCommaList = (arr, conjunction = "and") => {
   return arr.join(", ") + ` ${conjunction} ${last}`
 }
 
-const makeInverseRanks = (ranks: Rankings) => {
-  const inverseRanks: InverseRankings = {}
-  Object.keys(ranks).forEach(id => {
-    inverseRanks[ranks[id].index] = ranks[id]
-  })
-  return inverseRanks
-}
-
 const ensureDelimiterNotFound = (strings: string[], delimiter: string) => {
   const hit = strings.find(word => word.includes(delimiter))
   if (hit) throw `Delimiter "${delimiter}" found in hit`
@@ -41,25 +18,6 @@ const ensureDelimiterNotFound = (strings: string[], delimiter: string) => {
 
 const linkMany = (links: string[]) =>
   links.map((link, index) => `<a href="${link}">${index + 1}</a>`)
-
-const rankSort = (objects: any[], key: string) => {
-  objects = lodash.sortBy(objects, [key])
-  objects.reverse()
-  let lastValue = objects[0][key]
-  let lastRank = 0
-  objects.forEach((obj, rank) => {
-    const theValue = obj[key]
-    if (lastValue === theValue) {
-      // A tie
-      obj[key + "Rank"] = lastRank
-    } else {
-      obj[key + "Rank"] = rank
-      lastRank = rank
-      lastValue = theValue
-    }
-  })
-  return objects
-}
 
 const runCommand = (instance, command = "", param = undefined) => {
   const run = name => {
@@ -112,8 +70,8 @@ const getCleanedId = str =>
     .replace(/\!$/g, "-bang")
     .replace(/\!/g, "-bang-")
     .replace(/\&/g, "-n-")
-    .replace(/[\+\. ]/g, "-")
-    .replace(/[^a-zA-Z0-9\-]/g, "")
+    .replace(/[\+ ]/g, "-")
+    .replace(/[^a-zA-Z0-9\-\.]/g, "")
     .toLowerCase()
 
 // todo: move to grammar
@@ -387,12 +345,7 @@ export {
   isLanguage,
   getCleanedId,
   runCommand,
-  makeInverseRanks,
   PoliteCrawler,
-  Rankings,
-  Ranking,
-  InverseRankings,
-  rankSort,
   linkMany,
   benchmark,
   benchmarkResults,

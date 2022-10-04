@@ -1,8 +1,19 @@
 title albatross
 appeared 2015
 type pl
+description Albatross is A Programming Language with Static Verification: You can develop programs and algorithms and prove them to be correct in Albatross
 website http://albatross-lang.sourceforge.net
 domainName albatross-lang.sourceforge.net
+
+example
+ use alba.base.boolean
+ end
+ all (a:BOOLEAN)
+ require
+     a
+ ensure
+     a
+ end
 
 hackerNewsDiscussions
  id|title|url|time|timestamp|by|comments|score

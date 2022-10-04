@@ -349,13 +349,18 @@ class SiteBuilder {
       file.extensions.split(" ").forEach(ext => allExtensions.add(ext))
     )
 
+    files.forEach(file => {
+      let extensionsLength: number = file.extensions.split(" ").length
+      file.numberOfExtensions = extensionsLength
+    })
+
     const rows = lodash.sortBy(files, "rank")
 
     buildImportsFile(path.join(listsFolder, "extensionsImports.scroll"), {
       EXTENSION_COUNT: numeral(allExtensions.size).format("0,0"),
       TABLE: {
         rows,
-        header: ["name", "nameLink", "extensions"]
+        header: ["name", "nameLink", "extensions", "numberOfExtensions"]
       },
       LANG_WITH_DATA_COUNT: files.length
     })
@@ -449,19 +454,18 @@ class SiteBuilder {
     files.forEach(file => {
       file.originCommunity.forEach(entity => {
         if (!entities[entity]) entities[entity] = []
+        const { id, title, languageRank } = file
         entities[entity].push({
-          id: file.id,
-          title: file.title,
-          languageRank: file.languageRank
+          id,
+          title,
+          languageRank
         })
       })
     })
 
     const rows = Object.keys(entities).map(name => {
       const languages = entities[name]
-        .map(
-          lang => `<a href='../languages/${lang.permalink}'>${lang.title}</a>`
-        )
+        .map(lang => `<a href='../languages/${lang.id}.html'>${lang.title}</a>`)
         .join(" - ")
       const count = entities[name].length
       const top = -Math.min(...entities[name].map(lang => lang.languageRank))
@@ -560,10 +564,6 @@ class SiteBuilder {
         )
         .join(" · "),
       NEW_POSTS: postsScroll.files
-        .filter(
-          file =>
-            !file.scrollScriptProgram.toString().includes("publicDomainCompany")
-        ) // keep front page posts focused on pls
         .slice(0, 5)
         .map(file => `<a href="./posts/${file.permalink}">${file.title}</a>`)
         .join("<br>")

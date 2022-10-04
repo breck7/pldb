@@ -1,10 +1,10 @@
 title chain-format
 appeared 2013
 type textDataFormat
-originCommunity University of California, Santa Cruz
-country United States 
 description The chain format describes a pairwise alignment that allow gaps in both sequences simultaneously. Each set of chain alignments starts with a header line, contains one or more alignment data lines, and terminates with a blank line. The format is deliberately quite dense.
 reference https://genome.ucsc.edu/goldenPath/help/chain.html
+country United States
+originCommunity University of California, Santa Cruz
 
 example
  chain 4900 chrY 58368225 + 25985403 25985638 chr5 151006098 - 43257292 43257528 1
