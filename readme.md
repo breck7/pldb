@@ -69,12 +69,12 @@ https://pldb.com
 ```
 
 ```
-Breck Yunits et al. (2022) - "PLDB: a Programming Language Database". Retrieved from: 'https://pldb.com' [Online Resource]
+PLDB contributors. (2022) - "PLDB: a Programming Language Database". Retrieved from: 'https://pldb.com' [Online Resource]
 ```
 
 ```
 @article{pldb,
-  author = {Breck Yunits et al.},
+  author = {PLDB contributors},
   title = {PLDB: a Programming Language Database},
   journal = {PLDB},
   year = {2022},
