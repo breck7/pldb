@@ -1,0 +1,19 @@
+importOnly
+replace LANG_COUNT
+ 4115
+replace APPROXIMATE_FACT_COUNT
+ 138k
+replace COL_COUNT
+ 331
+replace ENTITY_COUNT
+ 4729
+replace ENTITIES_FILE_SIZE_UNCOMPRESSED
+ 4.2MB
+replace LANGS_FILE_SIZE_UNCOMPRESSED
+ 3.7MB
+replace COLUMN_METADATA_TABLE
+ pipeTable
+  Index|Column|Values|Coverage|Example|Description|Source|SourceLink|Definition|DefinitionLink
+  
+  35|originCommunity|800|17%|Microsoft|In what community(ies) did the language first originate?|||originCommunity.grammar|https://github.com/breck7/pldb/blob/main/database/grammar/originCommunity.grammar#L1
+  

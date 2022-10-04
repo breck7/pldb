@@ -1,0 +1,22 @@
+title PLDB CSV File Documentation | Origin Community
+import settings.scroll
+import originImports.scroll
+columnWidth 200
+
+
+html
+ <style>
+  .scrollTableComponent td {
+    max-width: 30ch;
+  }
+  .scrollTableComponent td:nth-child(5) {
+    max-width: 20ch;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+  }
+  </style>
+
+
+# Column Documentation
+
+COLUMN_METADATA_TABLE
