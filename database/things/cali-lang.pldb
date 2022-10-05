@@ -1,0 +1,56 @@
+title Cali-Lang
+appeared 2015
+type pl
+description Cali is an object oriented interpreted programming language written in Java. It is an efficiency (glue) language that is loosely typed. Cali has it's own standard library but anyone can create external Java modules to extend Cali. In fact, the entire standard library was written by wrapping Java code.
+website https://web.archive.org/web/20160820093952/http://cali-lang.com/
+country Unknown
+originCommunity https://github.com/cali-lang
+
+example
+ include console;
+ include net.rpc;
+ include rpcDemoObj;        // Include demo object.
+ class rpcDemoServer : rpcServer
+ {
+     public main(args)
+     {
+         rd = new rpcDemoServer();
+         console
+             .println('Starting up rpcDemoServer on localhost:9090')
+             .println('Hit ctrl-c to kill the server.')
+             .println('Waiting for calls ...\n')
+         ;
+         rd.start();
+     }
+     cart = [];
+     public rpcDemoServer()
+     {
+         this    // Hosted methods
+             .add('addToCart')
+             .add('getCart')
+         ;
+     }
+     public addToCart(object Item)
+     {
+         if(Item instanceof 'rpcDemoObj')
+         {
+             console.println("Adding item '" + Item.getModelName() + "' to cart.");
+             this.cart @= Item;
+             return true;
+         }
+         else { throw "Unexpected object found."; }
+     }
+     public getCart()
+     {
+         console.println('Returning shopping cart.');
+         return this.cart;
+     }
+ }
+
+githubRepo https://github.com/cali-lang/cali.lang.base
+ stars 1
+ forks 0
+ subscribers 2
+ created 2017
+ updated 2021
+ description Base implementation of Cali interpreter.

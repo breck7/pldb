@@ -1,0 +1,54 @@
+title Adept
+appeared 2018
+type pl
+creators Isaac Shelton
+description A blazing fast language for general purpose programming.
+website https://github.com/AdeptLanguage/Adept
+country Unknown
+originCommunity https://github.com/AdeptLanguage/
+
+example
+ /*
+     For values that use ownership-based memory management
+     (e.g. String, List, Grid)
+     we must transfer ownership if we want to keep them
+     alive for longer than their owner's scope
+ */
+ import basics
+ func main {
+     everyone <String> List = getEveryoneAttending()
+     each fullname String in everyone {
+         print("=> " + fullname)
+     }
+ }
+ func getEveryoneAttending() <String> List {
+     everyone <String> List
+     person1 String = getFullnameReturnImmediately("Alice", "Golden")
+     person2 String = getFullnameStoreAndThenLaterReturn("Bob", "Johnson")
+     // Commit ownership of strings held by 'person1' and 'person2'
+     // to be managed by the list
+     everyone.add(person1.commit())
+     everyone.add(person2.commit())
+     // Commit ownership of the list to the caller
+     return everyone.commit()
+ }
+ func getFullnameReturnImmediately(firstname, lastname String) String {
+     // '.commit()' is not necessary here
+     return firstname + " " + lastname
+ }
+ func getFullnameStoreAndThenLaterReturn(firstname, lastname String) String {
+     fullname String = firstname + " " + lastname
+     // Ownership of the result is held by 'fullname',
+     // so we must transfer ownership to the caller in order
+     // to keep it alive after this function returns
+     // '.commit()' is necessary here
+     return fullname.commit()
+ }
+
+githubRepo https://github.com/AdeptLanguage/Adept
+ stars 78
+ forks 3
+ subscribers 4
+ created 2018
+ updated 2022
+ description The Adept Programming Language
