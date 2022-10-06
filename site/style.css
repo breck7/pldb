@@ -74,6 +74,8 @@ a:hover {
   line-height: 1.5;
 }
 
+/*START_AUTOCOMPLETE*/
+/*CSS for autocomplete library https://kraaden.github.io/autocomplete/*/
 .autocomplete {
   background: #fff;
   z-index: 1000;
@@ -85,17 +87,21 @@ a:hover {
 .autocomplete * {
   font: inherit;
 }
-.autocomplete > div {
+.autocomplete > a {
   padding: 3px 4px;
+  display: block;
+  color: black;
+  text-decoration: none;
 }
 .autocomplete .group {
   background: #eee;
 }
-.autocomplete > div.selected,
-.autocomplete > div:hover:not(.group) {
+.autocomplete > a.selected,
+.autocomplete > a:hover:not(.group) {
   background: #e3e3e3;
   cursor: pointer;
 }
+/*END_AUTOCOMPLETE*/
 
 .scrollFilePageTitle {
   font-size: 36px;

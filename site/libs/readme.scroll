@@ -1,0 +1,15 @@
+# Libs Folder
+
+* This folder contains 3rd party JS libs used by our site.
+
+## Autocomplete by kraaden
+
+https://github.com/kraaden/autocomplete
+
+- Copy the CSS from https://github.com/kraaden/autocomplete/blob/master/autocomplete.css into `style.css`
+- Download https://github.com/kraaden/autocomplete/blob/master/autocomplete.js to `autocomplete.js`
+
+# Building the combined file:
+
+bashCode
+ npm run combineLibs

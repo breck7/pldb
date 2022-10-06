@@ -3,6 +3,7 @@
   "description": "PLDB: a Programming Language Database",
   "scripts": {
     "build": "chmod +x ./code/SiteBuilder.js; ./code/SiteBuilder.js buildAll",
+    "combineLibs": "cat site/libs/mousetrap.js > site/libs/combined.js; echo '\n\n' >> site/libs/combined.js; cat site/libs/autocomplete.js >> site/libs/combined.js",
     "scrolls": "./code/SiteBuilder.js buildScrolls",
     "perfBuild": "time node --cpu-prof --cpu-prof-name=ignore/pldbBuildNodePerf.cpuprofile ./code/SiteBuilder.js buildAll",
     "clean": "cd code; tsc --build --clean",

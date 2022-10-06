@@ -76,7 +76,7 @@ const cssLibs = "node_modules/jtree/sandbox/lib/codemirror.css node_modules/jtre
 	.map(name => ` <link rel="stylesheet" type="text/css" href="/${name}" />`)
 	.join("\n")
 
-const scripts = "libs.js buildApp.js node_modules/jtree/products/jtree.browser.js pldb.browser.js node_modules/jtree/sandbox/lib/codemirror.js node_modules/jtree/sandbox/lib/show-hint.js"
+const scripts = "libs/combined.js buildApp.js node_modules/jtree/products/jtree.browser.js pldb.browser.js node_modules/jtree/sandbox/lib/codemirror.js node_modules/jtree/sandbox/lib/show-hint.js"
 	.split(" ")
 	.map(name => ` <script src="/${name}"></script>`)
 	.join("\n")

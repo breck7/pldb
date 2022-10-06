@@ -236,7 +236,8 @@ class SiteBuilder {
       return {
         label: object.title,
         appeared: object.appeared,
-        id: object.pldbId
+        id: object.pldbId,
+        url: `/languages/${object.pldbId}.html`
       }
     })
     Disk.write(
