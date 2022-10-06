@@ -40,7 +40,6 @@ features
  hasMethods true
  hasMethodOverloading false
  hasVariableDeclarations true
- hasUnicodeIdentifiers true
  hasMaps true
   [int:str] {
       0: "Key 0",
@@ -50,7 +49,7 @@ features
  hasTraits true
   trait Person {
       fn full_name(self) str
-      fn age() byte
+      fn age(self) byte
   }
  hasGenerics true
   type[T]
@@ -207,6 +206,14 @@ features
       ptr = nil
   }
  hasConditionals true
+ canUseQuestionMarksAsPartOfIdentifier false
+ hasIncrementAndDecrementOperators true
+  ++
+  --
+ hasStaticTyping true
+ hasStringConcatOperator true
+  +
+ hasMultilineStrings true
  hasImports true
   use std::mem
   use std::mem::{size_of, align_of, self}
@@ -250,7 +257,6 @@ example
  fn main() {
      outln("Hello World")
  }
- 
 example
  use std::math::{PI}
  
@@ -288,7 +294,7 @@ example
 
 githubRepo https://github.com/jule-lang/jule
  firstCommit 2021
- stars 32
+ stars 34
  forks 5
  subscribers 5
  created 2021
@@ -299,3 +305,4 @@ githubRepo https://github.com/jule-lang/jule
 gdbSupport false
 fileType text
 isOpenSource true
+centralPackageRepositoryCount 0
