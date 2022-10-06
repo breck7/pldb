@@ -1200,7 +1200,9 @@
       var render = function(item, currentValue) {
         var itemElement = doc.createElement(ITEM_TAG)
         itemElement.textContent = item.label || ""
-        itemElement.href = IS_LOCALHOST ? item.url : `https://pldb.com${url}`
+        itemElement.href = IS_LOCALHOST
+          ? item.url
+          : `https://pldb.com${item.url}`
         return itemElement
       }
       if (settings.render) {
