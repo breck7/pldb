@@ -6,12 +6,9 @@ columnWidth 60
 * Here is the list of COUNT people who created a language(s) in the PLDB.
 
 groups index
-endSnippet
 
-comment
- Todo:
- Name | Wikipedia | Website | GitHub
-
-TABLE
-
-tableSearch
+pipeTable
+  name|wikipedia|wikipediaLink|website|github
+  Yukihiro Matsumoto|Yukihiro_Matsumoto|https://en.wikipedia.org/wiki/Yukihiro_Matsumoto|https://www.tut.ac.jp/english/schools/faculty/eiiris/656.html|https://github.com/matz
+  Martin Odersky|Martin_Odersky|https://en.wikipedia.org/wiki/Martin_Odersky|https://lampwww.epfl.ch/~odersky/|https://github.com/odersky
+  Graydon Hoare|Graydon_Hoare|https://en.wikipedia.org/wiki/Graydon_Hoare|https://www.crunchbase.com/person/graydon-hoare|https://github.com/graydon
