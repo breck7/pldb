@@ -6,7 +6,24 @@ domainName pandas.pydata.org
 
 writtenIn python
 
-wikipedia https://en.wikipedia.org/wiki/Pandas_(software)
+features 
+ hasLineComments true
+ hasFloats true
+ hasIntegers true
+
+wikipedia https://pandas.pydata.org/docs/user_guide/10min.html
+ example
+  >>>import pandas as pd
+  Series
+  >>>s = pd.Series([1, 3, 5, np.nan, 6, 8])
+  DataFrame
+  >>> import pandas as pd
+  >>>df = pd.DataFrame(np.random.randn(6, 4), index=dates, columns=list("ABCD"))
+  >>> df.head()
+  >>>df.tail()
+  Quick Statistics summary of data
+  >>> df.describe()
+  Indexing
  related python cython c matplotlib numpy scipy r scikit-learn
  summary In computer programming, pandas is a software library written for the Python programming language for data manipulation and analysis. In particular, it offers data structures and operations for manipulating numerical tables and time series. It is free software released under the three-clause BSD license. The name is derived from the term "panel data", an econometrics term for multidimensional, structured data sets.
  pageId 38833779
@@ -23,3 +40,9 @@ twitter https://twitter.com/pandas_dev
 fileType text
 isOpenSource true
 centralPackageRepositoryCount 0
+
+goodreads
+ title|year|author|goodreadsId|rating|ratings|reviews
+ Pandas for Everyone: Python Data Analysis (Addison-Wesley Data & Analytics Series)|2017|Daniel Y. Chen|37559100|3.98|46|4
+ Python Pandas: The Hands-On, Example-Rich Introduction to Pandas Data Analysis in Python|2019|Pandas Publishing|48658135|3.86|7|1
+ Play with csv Files using Python : pandas|2021|Pandas Publishing|59410781|3.00|1|0
