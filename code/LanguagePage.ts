@@ -708,6 +708,7 @@ ${facts.map(fact => ` - ${fact}`).join("\n")}`
         )}</a> was registered in ${domainRegistered}`
       )
 
+
     const wpRelated = file.get("wikipedia related")
     const seeAlsoLinks = wpRelated ? wpRelated.split(" ") : []
     const related = file.get("related")
@@ -715,7 +716,7 @@ ${facts.map(fact => ` - ${fact}`).join("\n")}`
 
     if (seeAlsoLinks.length)
       facts.push(
-        "See also: " + seeAlsoLinks.map(link => this.makeATag(link)).join(", ")
+        "See also: "+`(${seeAlsoLinks.length} related languages)` + seeAlsoLinks.map(link => this.makeATag(link)).join(", ")
       )
 
     const { otherReferences } = file
