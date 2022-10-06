@@ -1247,7 +1247,7 @@
           empty.className = "empty"
           empty.textContent = settings.emptyMsg
 
-          const fullUrl = url + encodeURIComponent(input.value)
+          const fullUrl = "/search?q=" + encodeURIComponent(input.value)
           empty.href = IS_LOCALHOST
             ? fullUrl
             : `https://build.pldb.com${fullUrl}`
