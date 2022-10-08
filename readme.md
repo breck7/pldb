@@ -46,10 +46,14 @@ npm install .
 npm i -g cloc
 npm run tsc
 npm run build
-(Optional run TESTS): npm run test
-Local Instance type : static site/search will not work :: open site/index.html
-Local Instance type : Express app running on localhost with search :: npm run local
-(Following updates,but before submitting contributions back to pldb): npm run format
+# Run tests (optional)
+npm run test
+# Open the static site in your browser (without full text search)
+open site/index.html
+# Start the dev server to also have full text search running:
+npm run local
+# After you make changes and before you commit make sure to run:
+npm run format
 ```
 
 ## To build the full site in docker
@@ -69,7 +73,6 @@ npm run build
 npm run local
 -- navigate site in --> http://localhost:4444/index.html
 ```
-
 
 ## To explore this repo
 
