@@ -54,6 +54,7 @@ Local Instance type : Express app running on localhost with search :: npm run lo
 
 ## To build the full site in docker
 
+```
 -- Run PLDB in docker
 docker run -it -d -v /c/AndelaWork/pldb:/app -p 4444:4444 --name pldbnode node:16 bash
 -- into docker interactive session run the follow:
@@ -67,6 +68,7 @@ npm run build
 (Following updates): npm run format
 npm run local
 -- navigate site in --> http://localhost:4444/index.html
+```
 
 
 ## To explore this repo
