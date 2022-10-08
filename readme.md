@@ -43,12 +43,31 @@ Advanced method: Edit or create a new file in `database/grammar` and add at leas
 git clone https://github.com/breck7/pldb
 cd pldb
 npm install .
+npm i -g cloc
 npm run tsc
 npm run build
 (Optional run TESTS): npm run test
-open site/index.html
-(Following updates): npm run format
+Local Instance type : static site/search will not work :: open site/index.html
+Local Instance type : Express app running on localhost with search :: npm run local
+(Following updates,but before submitting contributions back to pldb): npm run format
 ```
+
+## To build the full site in docker
+
+-- Run PLDB in docker
+docker run -it -d -v /c/AndelaWork/pldb:/app -p 4444:4444 --name pldbnode node:16 bash
+-- into docker interactive session run the follow:
+git clone https://github.com/breck7/pldb
+cd pldb
+npm install .
+npm run tsc
+npm i -g cloc
+npm run build
+(Optional run TESTS): npm run test
+(Following updates): npm run format
+npm run local
+-- navigate site in --> http://localhost:4444/index.html
+
 
 ## To explore this repo
 
