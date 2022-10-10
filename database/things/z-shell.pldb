@@ -1,9 +1,16 @@
 title Z shell
 appeared 1990
 type pl
+screenshot https://commons.wikimedia.org/wiki/File:Zsh_5.8_screenshot.png
+demoVideo https://www.youtube.com/watch?v=MSPu-lYF-A8
+creators Paul Falstad
 website http://www.zsh.org/
+documentation https://zsh.sourceforge.io/Doc/Release/Introduction.html
+reference https://zsh.sourceforge.io/Guide/
 aka zsh
+fileExtensions .ZSH
 country United States
+originCommunity Princeton University
 domainName zsh.org
  registered 1998
  awisRank
@@ -15,8 +22,11 @@ features
  hasStrings true
   "Hello world"
 
+lineCommentToken #
 printToken echo
 stringToken "
+
+githubRepo https://git.code.sf.net/p/zsh/code
 
 wikipedia https://en.wikipedia.org/wiki/Z_shell
  related c bourne-shell bash korn-shell tcp ftp
@@ -40,7 +50,7 @@ rijuRepl https://riju.codes/zsh
  example
   echo "Hello, world!"
   
-tryItOnline zsh
+tryItOnline https://rootnroll.com/d/oh-my-zsh/
 
 tiobe Z shell
 hopl https://hopl.info/showlanguage.prx?exp=2642
