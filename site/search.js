@@ -22,7 +22,7 @@ const initSearchAutocomplete = elementId => {
       }
 
       const suggestions = searchIndex.filter(entity =>
-        entity.label.toLowerCase().startsWith(text)
+        entity.label.toLowerCase().replace(/\s+/g, '.+').match(text)
       )
 
       suggestions.push({
