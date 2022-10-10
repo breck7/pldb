@@ -43,11 +43,35 @@ Advanced method: Edit or create a new file in `database/grammar` and add at leas
 git clone https://github.com/breck7/pldb
 cd pldb
 npm install .
+npm i -g cloc
 npm run tsc
 npm run build
-(Optional run TESTS): npm run test
+# Run tests (optional)
+npm run test
+# Open the static site in your browser (without full text search)
 open site/index.html
+# Start the dev server to also have full text search running:
+npm run local
+# After you make changes and before you commit make sure to run:
+npm run format
+```
+
+## To build the full site in docker
+
+```
+-- Run PLDB in docker
+docker run -it -d -v /c/AndelaWork/pldb:/app -p 4444:4444 --name pldbnode node:16 bash
+-- into docker interactive session run the follow:
+git clone https://github.com/breck7/pldb
+cd pldb
+npm install .
+npm run tsc
+npm i -g cloc
+npm run build
+(Optional run TESTS): npm run test
 (Following updates): npm run format
+npm run local
+-- navigate site in --> http://localhost:4444/index.html
 ```
 
 ## To explore this repo
@@ -69,12 +93,12 @@ https://pldb.com
 ```
 
 ```
-Breck Yunits et al. (2022) - "PLDB: a Programming Language Database". Retrieved from: 'https://pldb.com' [Online Resource]
+PLDB contributors. (2022) - "PLDB: a Programming Language Database". Retrieved from: 'https://pldb.com' [Online Resource]
 ```
 
 ```
 @article{pldb,
-  author = {Breck Yunits et al.},
+  author = {PLDB contributors},
   title = {PLDB: a Programming Language Database},
   journal = {PLDB},
   year = {2022},

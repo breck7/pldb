@@ -4,6 +4,8 @@ const initSearchAutocomplete = elementId => {
   const input = document.getElementById(elementId)
   const urlParams = new URLSearchParams(window.location.search)
   const query = urlParams.get("q")
+  const IS_LOCALHOST =
+    location.hostname === "localhost" || location.hostname === "127.0.0.1"
   if (query) input.value = query
   autocomplete({
     input,
@@ -26,26 +28,20 @@ const initSearchAutocomplete = elementId => {
       suggestions.push({
         label: `Full text search for "${query.replace(/</g, "&lt;")}"`,
         appeared: "",
-        id: ""
+        id: "",
+        url: "/search?q="
       })
 
       update(suggestions)
     },
     onSelect: item => {
-      const isLocalHost =
-        location.hostname === "localhost" || location.hostname === "127.0.0.1"
-
-      const { id } = item
-      const goToUrl = `/languages/${id}.html`
-      if (id)
-        window.location = isLocalHost ? goToUrl : `https://pldb.com${goToUrl}`
+      const { url, id } = item
+      if (id) window.location = IS_LOCALHOST ? url : `https://pldb.com${url}`
       else {
-        const goToUrl = `/search?q=${encodeURIComponent(
-          document.getElementById(elementId).value
-        )}`
-        window.location = isLocalHost
-          ? goToUrl
-          : `https://build.pldb.com${goToUrl}`
+        const fullUrl = url + encodeURIComponent(input.value)
+        window.location = IS_LOCALHOST
+          ? fullUrl
+          : `https://build.pldb.com${fullUrl}`
       }
     }
   })

@@ -5,6 +5,7 @@ creators Anthony M. Cook
 description blacklight is a general-pupose multithreading concatenative stack-based programming language with first-class queues and objects with delegation.
 website http://blog.anthonymcook.com/blacklight/
 country Unknown
+originCommunity http://anthonymcook.com/
 
 example
  newq newq                ;; create send and receive queues
