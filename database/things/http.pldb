@@ -73,7 +73,7 @@ leachim6 HTTP
   httpd = socketserver.TCPServer(('', 8000), Handler)
   httpd.serve_forever()
   
-indeedJobs bash developer
+indeedJobs http developer
  2022 771996 
 
 fileType na
