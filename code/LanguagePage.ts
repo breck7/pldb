@@ -423,9 +423,15 @@ ${facts.map(fact => ` - ${fact}`).join("\n")}`
     const gitlabRepo = file.get("gitlabRepo")
     if (gitlabRepo) facts.push(`<a href="${gitlabRepo}">${title} on GitLab</a>`)
 
-    const documentation = file.get("documentation")
-    if (documentation)
-      facts.push(`the <a href="${documentation}">${title} docs</a>`)
+
+     const documentation = file.getAll("documentation");
+        if (documentation){
+            if (documentation.length ===1)
+                facts.push(`the <a href="${documentation[0]}">${title} docs</a>`);
+            else if(documentation.length >1)
+                facts.push(`there are ${documentation.length} Docs for ${title}: ${documentation.map((i, index) => `<a href="${i}">${index + 1}</a>`)}`);
+
+        }
 
     const demoVideo = file.get("demoVideo")
     if (demoVideo)
