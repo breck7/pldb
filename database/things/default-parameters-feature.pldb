@@ -2,6 +2,8 @@ title Default Parameters Pattern
 type feature
 description Syntactic sugar for setting values for parameters if not defined.
 reference https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/Default_parameters
+country United States
+originCommunity The Mozilla Foundation
 
 pseudoExample say(message = "Hello PLDB")
 featureKeyword hasDefaultParameters
