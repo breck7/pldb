@@ -72,9 +72,9 @@ leachim6 HTTP
   
   httpd = socketserver.TCPServer(('', 8000), Handler)
   httpd.serve_forever()
-  
+
 indeedJobs http developer
- 2022 771996 
+ 2022 771996
 
 fileType na
 wordRank 4663
