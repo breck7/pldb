@@ -74,7 +74,14 @@ testTree.ensureFieldsAreTrimmed = areEqual => {
 
 testTree.ensureNoErrorsInDb = areEqual => {
 	const { errors } = pldbBase
-	if (errors.length) console.log(errors)
+	if (errors.length)
+		errors.forEach(err =>
+			console.log(
+				err._node.getRootNode().get("title"),
+				err._node.getFirstWordPath(),
+				err
+			)
+		)
 	areEqual(errors.length, 0, "no errors in db")
 }
 
