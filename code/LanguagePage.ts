@@ -11,7 +11,8 @@ import {
   getIndefiniteArticle,
   nameToAnchor,
   toCommaList,
-  linkMany
+  linkMany,
+  makePrettyUrlLink
 } from "./utils"
 
 const currentYear = new Date().getFullYear()
@@ -423,15 +424,17 @@ ${facts.map(fact => ` - ${fact}`).join("\n")}`
     const gitlabRepo = file.get("gitlabRepo")
     if (gitlabRepo) facts.push(`<a href="${gitlabRepo}">${title} on GitLab</a>`)
 
-
-     const documentation = file.getAll("documentation");
-        if (documentation){
-            if (documentation.length ===1)
-                facts.push(`the <a href="${documentation[0]}">${title} docs</a>`);
-            else if(documentation.length >1)
-                facts.push(`there are ${documentation.length} Docs for ${title}: ${documentation.map((i, index) => `<a href="${i}">${index + 1}</a>`)}`);
-
-        }
+    const documentationLinks = file.getAll("documentation")
+    if (documentationLinks.length === 1)
+      facts.push(`the <a href="${documentationLinks[0]}">${title} docs</a>`)
+    else if (documentationLinks.length > 1)
+      facts.push(
+        `PLDB has ${
+          documentationLinks.length
+        } documentation sites for ${title}: ${documentationLinks
+          .map(makePrettyUrlLink)
+          .join(", ")}`
+      )
 
     const demoVideo = file.get("demoVideo")
     if (demoVideo)
@@ -672,11 +675,11 @@ ${facts.map(fact => ` - ${fact}`).join("\n")}`
       )
     else if (jupyters.length > 1)
       facts.push(
-        `There are ${
+        `PLDB has ${
           jupyters.length
-        } <a href="jupyter-notebook.html">Jupyter</a> Kernels for ${title}: ${jupyters.map(
-          (i, index) => `<a href="${i}">${index + 1}</a>`
-        )}`
+        } <a href="jupyter-notebook.html">Jupyter</a> Kernels for ${title}: ${jupyters
+          .map(makePrettyUrlLink)
+          .join(", ")}`
       )
 
     const packageRepos = file.getAll("packageRepository")
@@ -714,7 +717,6 @@ ${facts.map(fact => ` - ${fact}`).join("\n")}`
         )}</a> was registered in ${domainRegistered}`
       )
 
-
     const wpRelated = file.get("wikipedia related")
     const seeAlsoLinks = wpRelated ? wpRelated.split(" ") : []
     const related = file.get("related")
@@ -722,7 +724,9 @@ ${facts.map(fact => ` - ${fact}`).join("\n")}`
 
     if (seeAlsoLinks.length)
       facts.push(
-        "See also: "+`(${seeAlsoLinks.length} related languages)` + seeAlsoLinks.map(link => this.makeATag(link)).join(", ")
+        "See also: " +
+          `(${seeAlsoLinks.length} related languages)` +
+          seeAlsoLinks.map(link => this.makeATag(link)).join(", ")
       )
 
     const { otherReferences } = file

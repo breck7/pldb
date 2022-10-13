@@ -411,9 +411,7 @@ wikipedia`.split("\n")
         if (!sortTemplate.includes(col.Column)) sortedCols.push(col)
       })
 
-    sortedCols.forEach((col, index) => {
-      col.Index = index + 1
-    })
+    sortedCols.forEach((col, index) => (col.Index = index + 1))
 
     return sortedCols
   }

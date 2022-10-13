@@ -151,6 +151,8 @@ class PoliteCrawler {
   }
 }
 
+const makePrettyUrlLink = url => `<a href="${url}">${new URL(url).hostname}</a>`
+
 // https://stackoverflow.com/questions/46155/how-can-i-validate-an-email-address-in-javascript
 const isValidEmail = email => {
   return String(email)
@@ -344,5 +346,6 @@ export {
   lastCommitHashInFolder,
   ensureDelimiterNotFound,
   htmlEscaped,
-  isValidEmail
+  isValidEmail,
+  makePrettyUrlLink
 }
