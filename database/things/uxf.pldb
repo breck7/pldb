@@ -11,6 +11,8 @@ originCommunity Qtrac Ltd
 domainName qtrac.eu
 latestRelease 2022
 
+related python rust scheme
+
 features
  hasBooleans true
  hasComments true
@@ -30,8 +32,6 @@ example
    {<Point> [1.4 9.8 -0.7 3.0 2.1 -6.3]}
    <TrafficLightGreen> <TrafficLightAmber> <TrafficLightRed>
  ]
-
-related python rust scheme
 
 githubRepo https://github.com/mark-summerfield/uxf
  firstCommit 2022
