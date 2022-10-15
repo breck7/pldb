@@ -36,7 +36,7 @@ class MonacoImporter {
 		} catch (err) {
 			console.error(`Error with comments with ${file.id}`)
 		}
-		file.save()
+		file.prettifyAndSave()
 	}
 
 	extractKeywords(match) {
@@ -48,7 +48,7 @@ class MonacoImporter {
 		} catch (err) {
 			console.error(`Error with keywords with ${file.id}`)
 		}
-		file.save()
+		file.prettifyAndSave()
 	}
 
 	extractMany(match) {
@@ -67,7 +67,7 @@ class MonacoImporter {
 		} catch (err) {
 			console.error(`Error with many with ${file.id}`)
 		}
-		file.save()
+		file.prettifyAndSave()
 	}
 
 	writeAllCommand() {
@@ -82,7 +82,7 @@ class MonacoImporter {
 		this.matched.forEach(match => {
 			const { file } = match
 			file.set("monaco", match.name)
-			file.save()
+			file.prettifyAndSave()
 		})
 	}
 

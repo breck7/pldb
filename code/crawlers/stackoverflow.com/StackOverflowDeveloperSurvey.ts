@@ -58,7 +58,7 @@ class StackOverflowDeveloperSurveyImporter {
  fans ${row.fans}
  percentageUsing ${row.percentageUsing}`
       )
-      file.save()
+      file.prettifyAndSave()
     })
     /*
 stackOverflowSurvey

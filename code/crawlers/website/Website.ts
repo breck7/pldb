@@ -31,7 +31,7 @@ class Website {
     this.extractGitHub()
     //this.extractTitle()
     //this.extractText()
-    file.save()
+    file.prettifyAndSave()
   }
 
   get path() {

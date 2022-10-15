@@ -22,8 +22,7 @@ class Crawler {
       importer.updateOne(file)
     ]
     await Promise.all(promises)
-    file.prettify()
-    file.save()
+    file.prettifyAndSave()
   }
 
   crawlCommand(id: string) {
@@ -77,7 +76,7 @@ class Crawler {
         let hit
         if ((hit = examples.find(code => code.includes(`${commentToken} `)))) {
           file.set("lineCommentToken", commentToken)
-          file.save()
+          file.prettifyAndSave()
         }
       })
   }
@@ -103,7 +102,7 @@ class Crawler {
           ))
         ) {
           file.set("multiLineCommentTokens", `${left} ${right}`)
-          file.save()
+          file.prettifyAndSave()
         }
       })
   }
@@ -127,7 +126,7 @@ class Crawler {
         if ((hit = examples.find(code => code.match(regex)))) {
           const match = hit.match(regex)
           file.set("printToken", match[1])
-          file.save()
+          file.prettifyAndSave()
         }
       })
   }
@@ -227,7 +226,7 @@ class Crawler {
         //return
         if ((hit = examples.find(code => code.match(regex)))) {
           file.set("stringToken", "'")
-          file.save()
+          file.prettifyAndSave()
         }
       })
   }
@@ -244,7 +243,7 @@ class Crawler {
         file
           .touchNode("features hasStrings")
           .setChildren(`${token}Hello world${token}`)
-        file.save()
+        file.prettifyAndSave()
       })
   }
 
@@ -257,7 +256,7 @@ class Crawler {
       )
       .forEach(file => {
         file.set("features hasPrintDebugging", "true")
-        file.save()
+        file.prettifyAndSave()
       })
   }
 
@@ -270,7 +269,7 @@ class Crawler {
       )
       .forEach(file => {
         file.set("features hasAssignment", "true")
-        file.save()
+        file.prettifyAndSave()
       })
   }
 
@@ -282,7 +281,7 @@ class Crawler {
       .filter(file => !file.get("features hasSemanticIndentation"))
       .forEach(file => {
         file.set("features hasSemanticIndentation", "false")
-        file.save()
+        file.prettifyAndSave()
       })
   }
 
@@ -299,7 +298,7 @@ class Crawler {
         file
           .touchNode("features hasLineComments")
           .setChildren(`${kw} A comment`)
-        file.save()
+        file.prettifyAndSave()
       })
 
     pldbBase
@@ -319,7 +318,7 @@ class Crawler {
           .setChildren(`${start} A comment
 ${end}`)
 
-        file.save()
+        file.prettifyAndSave()
       })
 
     pldbBase
@@ -338,7 +337,7 @@ ${end}`)
         file
           .touchNode("features hasComments")
           .setChildren(example.childrenToString())
-        file.save()
+        file.prettifyAndSave()
       })
   }
 }

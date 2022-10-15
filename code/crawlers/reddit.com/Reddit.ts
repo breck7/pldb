@@ -37,7 +37,7 @@ class RedditImporter {
     const key = `${subredditKeyword} memberCount 2022`
     if (!file.get(key)) {
       file.set(key, members.toString())
-      file.save()
+      file.prettifyAndSave()
     }
   }
 

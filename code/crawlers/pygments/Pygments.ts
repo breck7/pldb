@@ -70,7 +70,7 @@ class PygmentsImporter {
 
 		const extensions = entry.extensions.join(" ")
 		if (extensions) file.set("pygmentsHighlighter fileExtensions", extensions)
-		file.save()
+		file.prettifyAndSave()
 	}
 
 	get data() {

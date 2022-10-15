@@ -76,7 +76,7 @@ code
 				"example",
 				hit.getNode("code").childrenToString()
 			)
-			file.save()
+			file.prettifyAndSave()
 		})
 	}
 

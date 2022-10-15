@@ -36,7 +36,7 @@ class AwisFile {
     const rank = awis.trafficData.rank
     if (rank) {
       file.set(`domainName awisRank ${year}`, rank.toString())
-      file.save()
+      file.prettifyAndSave()
     }
   }
 

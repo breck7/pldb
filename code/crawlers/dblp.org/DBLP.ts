@@ -63,7 +63,7 @@ class DBLPFile {
         "publications",
         new jtree.TreeNode(table.slice(0, 10)).toDelimited("|")
       )
-    file.save()
+    file.prettifyAndSave()
   }
 
   get cachePath() {

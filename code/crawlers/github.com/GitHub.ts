@@ -134,7 +134,7 @@ class PLDBFileWithGitHub {
 			})
 			githubNode.appendLineAndChildren("githubTrending", data.toSsv())
 			//console.log(data.toSsv())
-			file.save()
+			file.prettifyAndSave()
 		})
 	}
 
@@ -173,7 +173,7 @@ class PLDBFileWithGitHub {
 			// githubHasWiki: obj.hasWiki,
 		})
 
-		file.save()
+		file.prettifyAndSave()
 		return this
 	}
 
@@ -212,7 +212,7 @@ class PLDBFileWithGitHub {
 			const { firstCommit } = this
 			const year = dayjs(firstCommit.commit.author.date).format("YYYY")
 			file.set(firstCommitPath, year)
-			file.save()
+			file.prettifyAndSave()
 		} catch (err) {
 			console.error(err)
 		}
@@ -233,7 +233,7 @@ class PLDBFileWithGitHub {
 			if (!file.get("creators") && this.firstCommitFetched) {
 				const { firstCommit } = this
 				file.set("creators", firstCommit.commit.author.name)
-				file.save()
+				file.prettifyAndSave()
 			}
 		} catch (err) {
 			console.error(err)
@@ -246,7 +246,7 @@ class PLDBFileWithGitHub {
 		const year = file.get(firstCommitPath)
 		if (!file.get("appeared") && year) {
 			file.set("appeared", year)
-			file.save()
+			file.prettifyAndSave()
 		}
 		return this
 	}

@@ -211,7 +211,7 @@ class PLDBFileWithWikipedia {
         if (year) file.set("appeared", year)
       }
 
-      file.save()
+      file.prettifyAndSave()
 
       //
       // this.extractProperty(object, "license")

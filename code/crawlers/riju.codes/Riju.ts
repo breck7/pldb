@@ -17,7 +17,7 @@ class RijuImporter {
   writeLinksToDatabaseCommand() {
     this.matches.forEach(match => {
       match.pldbFile.set(scopeName, `https://riju.codes/${match.yaml.id}`)
-      match.pldbFile.save()
+      match.pldbFile.prettifyAndSave()
     })
   }
 
@@ -86,7 +86,7 @@ type ${type}`,
       if (info.web.source) node.set("githubRepo", info.web.source)
     }
 
-    pldbFile.save()
+    pldbFile.prettifyAndSave()
   }
 
   mergeInfoCommand() {
