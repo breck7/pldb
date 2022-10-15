@@ -11,12 +11,27 @@ originCommunity Qtrac Ltd
 domainName qtrac.eu
 latestRelease 2022
 
+features
+ hasBooleans true
+ hasComments true
+  # <This is a comment>
+ hasStrings true
+  <Hello world>
+ hasLists true
+  [1 2]
+ hasIntegers true
+  80766866
+ hasLineComments true
+  #<A comment>
+
 example
  uxf 1
  [
    {<Point> [1.4 9.8 -0.7 3.0 2.1 -6.3]}
    <TrafficLightGreen> <TrafficLightAmber> <TrafficLightRed>
  ]
+
+related python rust scheme
 
 githubRepo https://github.com/mark-summerfield/uxf
  firstCommit 2022
