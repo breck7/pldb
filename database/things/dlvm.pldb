@@ -3,6 +3,9 @@ appeared 2017
 type ir
 description Modern Compiler Infrastructure for Deep Learning Systems
 website http://dlvm.org/
+reference https://dlvm-team.github.io/
+country United States
+originCommunity University of Illinois at Urbana-Champaign and Purdue University
 domainName dlvm.org
  registered 2022
  awisRank
@@ -29,6 +32,8 @@ example
      %0.2 = add %0.0: <_ x _ x f32>, %0.1: <1 x _ x f32>
      return %0.2: <_ x _ x f32>
  }
+
+githubRepo https://github.com/dlvm-team/swift
 
 fileType text
 centralPackageRepositoryCount 0
