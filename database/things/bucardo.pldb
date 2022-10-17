@@ -15,7 +15,7 @@ githubRepo https://github.com/bucardo/bucardo
  description Bucardo multimaster and master/slave Postgres replication
  issues 72
 
-wikipedia https://en.wikipedia.org/wiki/Slony-I
+wikipedia https://wiki.postgresql.org/wiki/Bucardo
  related postgresql sql plpgsql perl
  summary Bucardo is a replication system for Postgres that supports any number of sources and targets (aka masters and slaves). It is asynchronous and trigger based.
  
