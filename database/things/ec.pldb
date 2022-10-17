@@ -4,6 +4,8 @@ type pl
 creators Jérôme Jacovella-St-Louis
 website http://ec-lang.org/
 standsFor Ecere C
+country Canada
+originCommunity Ecere Corporation
 domainName ec-lang.org
  registered 2014
  awisRank
@@ -28,6 +30,8 @@ multiLineCommentTokens /* */
 printToken PrintLn
 stringToken "
 booleanTokens true false
+
+githubRepo https://github.com/ecere/ecere-sdk/
 
 wikipedia https://en.wikipedia.org/wiki/EC_(programming_language)
  example
