@@ -16,7 +16,7 @@ githubRepo https://github.com/ssinger/slony1-engine
  issues 01
 
 wikipedia https://en.wikipedia.org/wiki/Slony-I
- related c postgres linux sql plpgsql pl-sql perl javascript
+ related c postgresql linux sql plpgsql pl-sql perl javascript
  summary Slony-I is an asynchronous master-slave replication system for the PostgreSQL DBMS, providing support for cascading and failover. Asynchronous means that when a database transaction has been committed to the master server, it is not yet guaranteed to be available in slaves. Cascading means that replicas can be created (and updated) via other replicas, i.e. they needn't directly connect to the master.
  pageId 15462886
  dailyPageViews 2
