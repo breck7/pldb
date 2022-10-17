@@ -2,10 +2,12 @@ title Eiffel
 appeared 1986
 type pl
 creators Bertrand Meyer
-website https://www.eiffel.org/
+website https://dev.eiffel.com/Main_Page
 documentation https://www.eiffel.org/documentation
 reference https://www.eiffel.org/doc/eiffel/Eiffel_programming_language_syntax
 fileExtensions e
+country Various
+originCommunity Eiffel Software
 domainName eiffel.org
  registered 2001
  awisRank
@@ -37,6 +39,8 @@ features
 lineCommentToken --
 assignmentToken :=
 stringToken "
+
+githubRepo https://github.com/EiffelSoftware
 
 wikipedia https://en.wikipedia.org/wiki/Eiffel_(programming_language)
  example
