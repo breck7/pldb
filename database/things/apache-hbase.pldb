@@ -1,0 +1,31 @@
+title Apache Hbase
+appeared 2008
+type application
+website https://hbase.apache.org/
+documentation https://hbase.apache.org/book.html
+originCommunity https://github.com/apache/hbase
+domainName hbase.apache.org
+
+writtenIn java
+
+githubRepo https://github.com/apache/hbase
+ stars 4700
+ forks 3100
+ updated 2022
+ description Apache HBase [1] is an open-source, distributed, versioned, column-oriented store modeled after Google' Bigtable: A Distributed Storage System for Structured Data by Chang et al.[2]  Just as Bigtable leverages the distributed data storage provided by the Google File System, HBase provides Bigtable-like capabilities on top of Apache Hadoop [3]..
+ issues 275
+
+wikipedia https://en.wikipedia.org/wiki/Apache_HBase
+ related java linux json sql mongodb couchdb postgresql
+ summary HBase is an open-source non-relational distributed database modeled after Google's Bigtable and written in Java. It is developed as part of Apache Software Foundation's Apache Hadoop project and runs on top of HDFS (Hadoop Distributed File System) or Alluxio, providing Bigtable-like capabilities for Hadoop.
+ pageId 16266878
+ dailyPageViews 106
+ appeared 2008
+
+indeedJobs hbase developer
+ 2022 65
+
+goodreads
+ title|year|author|goodreadsId|rating|ratings|reviews
+ Learning HBase|2010|Shashwat Shriparv|24529152|4.57|7|3
+ HBase: The Definitive Guide|2011|Lars George|10316770|3.74|121|7
