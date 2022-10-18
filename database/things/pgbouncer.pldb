@@ -1,0 +1,22 @@
+title PgBouncer
+type application
+creators Frank McGeough
+description PgBouncer is an open-source, lightweight, single-binary connection pooler for PostgreSQL. It can pool connections to one or more databases (on possibly different servers) and serve clients over TCP and Unix domain socket.
+website https://www.pgbouncer.org/
+reference https://wiki.postgresql.org/wiki/PgBouncer
+documentation https://www.pgbouncer.org/faq.html
+country unknown
+originCommunity https://github.com/pgbouncer/pgbouncer
+domainName pgbouncer.org
+
+githubRepo https://github.com/pgbouncer/pgbouncer
+ stars 18000
+ forks 348
+ updated 2022
+ description Lightweight connection pooler for PostgreSQL
+ issues 141
+
+related c postgresql sql plpgsql
+summary PgBouncer is a lightweight connection pooler for PostgreSQL.
+
+isOpenSource true
