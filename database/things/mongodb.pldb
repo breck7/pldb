@@ -2,12 +2,22 @@ title MongoDB
 appeared 2009
 type application
 website https://www.mongodb.com/
+documentation https://www.mongodb.com/docs/
+originCommunity https://www.mongodb.com/community/forums/
 domainName mongodb.com
  registered 2008
  awisRank
   2022 1421
 
 writtenIn cpp c javascript
+
+features
+ hasComments true
+  $comment: "A comment"
+ hasStrings true
+ hasBooleans true
+
+keywords find findOne drop createIndex
 
 githubRepo https://github.com/mongodb/mongo
  stars 22031
@@ -31,9 +41,10 @@ wikipedia https://en.wikipedia.org/wiki/MongoDB
 
 rijuRepl https://riju.codes/mongodb
  example
-  print("Hello, world!")
-  
+  db.collection.find()  
 
+indeedJobs mongodb developer and dba
+ 2022 1243
 linkedInSkill MongoDB
  2018 254440
 
