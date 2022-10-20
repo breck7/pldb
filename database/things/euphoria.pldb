@@ -6,6 +6,7 @@ website http://openeuphoria.org
 standsFor End User Programming Hierarchial Objects for Robust Interpreted Applications
 fileExtensions e ex exw edb
 country Canada
+originCommunity Rapid Deployment Software
 domainName openeuphoria.org
  registered 2007
  awisRank
@@ -23,6 +24,8 @@ features
 lineCommentToken --
 printToken puts
 stringToken "
+
+githubRepo https://github.com/OpenEuphoria/euphoria
 
 wikipedia https://en.wikipedia.org/wiki/Euphoria_(programming_language)
  example
