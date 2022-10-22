@@ -296,7 +296,25 @@ class SiteBuilder {
 
   @benchmark
   _formatDatabase() {
-    pldbBase.forEach(file => file.prettifyAndSave())
+       pldbBase.forEach(file => {
+            const errors = file.prettifyAndSave();
+            if (file.grammarDir)
+                var file_path=path.join(file.grammarDir,file.filename)
+            else
+                var file_path=file.filename
+
+            if (errors) {
+                if (errors.length) {
+                    //TODO add better error handling for prettifyAndSave HERE
+		    void(0)
+                    //console.log("Error in file: " + file_path + "::" + String(errors));
+                }
+                if (0 == errors.length) {
+			void(0)
+                   // console.log("No error in file:" + file_path);
+                }
+            }
+    })	  
   }
 
   @benchmark
