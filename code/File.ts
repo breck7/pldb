@@ -64,6 +64,10 @@ class PLDBFile extends TreeBaseFile {
     return this.id
   }
 
+  get filePath() {
+    return this._getFilePath()
+  }
+
   get missingColumns() {
     return this.base.columnDocumentation
       .filter(col => col.Description !== "computed")

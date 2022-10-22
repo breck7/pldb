@@ -178,12 +178,17 @@ pipeTable
     if (!featuresTable) return ""
 
     const { featuresMap } = file.base
+    const { pldbId } = file
 
     const table = new TreeNode()
     featuresTable.forEach(node => {
       const feature = featuresMap.get(node.getWord(0))
       if (!feature) {
-        console.log(`${node.getWord(0)} not found`)
+        console.log(
+          `warning: we need a features page for feature '${node.getWord(
+            0
+          )}' found in '${pldbId}'`
+        )
         return
       }
 
