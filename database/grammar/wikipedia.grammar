@@ -17,7 +17,10 @@ wikipediaRelatedNode
  crux related
 wikipediaSummaryNode
  description What is the text summary of the language from the Wikipedia page?
- extends descriptionNode
+ extends abstractFactNode
+ baseNodeType blobNode
+ boolean includeChildrenInCsv false
+ single
  crux summary
 wikipediaCreatedNode
  extends abstractYearNode
