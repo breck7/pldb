@@ -1,0 +1,25 @@
+title hurl
+appeared 2020
+type application
+screenshot https://raw.githubusercontent.com/Orange-OpenSource/hurl/master/docs/assets/img/hurl-html-file.png
+photo https://raw.githubusercontent.com/Orange-OpenSource/hurl/master/docs/assets/img/hurl-html-report.png
+demoVideo https://hurl.dev/#also-an-http-test-tool
+creators Orange S.A
+description Hurl is a command line tool that runs HTTP requests defined in a simple plain text format. It can perform requests, capture values and evaluate queries on headers and body response. Hurl is very versatile: it can be used for both fetching data and testing HTTP sessions
+website https://hurl.dev/
+documentation https://hurl.dev/docs/manual.html
+reference https://hurl.dev/docs/running-tests.html
+cheatSheetUrl https://hurl.dev/docs/samples.html
+standsFor The name Hurl is a tribute to the awesome curl, with a focus on the HTTP protocol.
+country France
+originCommunity https://github.com/Orange-OpenSource
+domainName hurl.dev
+latestRelease 2022
+
+supersetOf curl
+related curl
+influencedBy curl
+
+githubRepo https://github.com/Orange-OpenSource/hurl
+
+isOpenSource Yes
