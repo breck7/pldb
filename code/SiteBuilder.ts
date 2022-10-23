@@ -296,9 +296,7 @@ class SiteBuilder {
 
   @benchmark
   _formatDatabase() {
-    var pretty_file_counter=0; 	  
-    pldbBase.forEach(file => {pretty_file_counter++;file.prettifyAndSave()})
-    console.log("Prettified "+String(pretty_file_counter)+" files.")
+    pldbBase.forEach(file => file.prettifyAndSave())
   }
 
   @benchmark
