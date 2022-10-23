@@ -11,6 +11,7 @@
     "checkLinks": "linkinator -r https://pldb.com > ignore/brokenLinks.txt",
     "deploy": "echo 'Rsyncing site/ to /var/www/html on Marconi'; rsync -vr site/* pldb.com:/var/www/html/",
     "jtreeBeta": "npm install ~/jtree",
+    "githubs": "./code/crawlers/github.com/GitHub.js fetchAllRepoData && ./code/crawlers/github.com/GitHub.js writeAllRepoData",
     "scrollBeta": "npm install ~/scroll",
     "test": "./code/test.js",
     "format": "./code/SiteBuilder.js formatDatabase",
