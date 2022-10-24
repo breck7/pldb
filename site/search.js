@@ -29,7 +29,7 @@ const initSearchAutocomplete = elementId => {
         label: `Full text search for "${query.replace(/</g, "&lt;")}"`,
         appeared: "",
         id: "",
-        url: "/search?q="
+        url: "/search?q="${query.replace(/</g, "&lt;")}"`
       })
 
       update(suggestions)
