@@ -129,7 +129,8 @@ class PLDBFolder extends TreeBaseFolder {
       codeMirror: v => 50,
       website: v => 1,
       githubRepo: v => 1,
-      "githubRepo forks": v => v * 3
+      "githubRepo forks": v => v * 3,
+      annualReport: v =>1000
     }
 
     return Math.round(
