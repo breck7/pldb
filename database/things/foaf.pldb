@@ -2,6 +2,8 @@ title FOAF
 appeared 2007
 type xmlFormat
 reference http://xmlns.com/foaf/spec/
+country Various
+originCommunity http://rdfweb.org/mailman/listinfo/rdfweb-dev
 
 example
  @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
