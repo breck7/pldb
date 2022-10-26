@@ -1,5 +1,27 @@
 let searchIndex = false
 
+const SearchSuggestionInterface = {
+  label: "string",
+  appeared: "number",
+  id: "string",
+  url: "string"
+}
+
+const tinyTypeScript = (items, expectedInterface) =>
+  items.forEach(item => {
+    Object.keys(item).forEach(key => {
+      const value = item[key]
+      const actualType = typeof item[key]
+      const expectedType = expectedInterface[key]
+      const passed = actualType === expectedType
+      console.assert(passed)
+      if (!passed)
+        console.error(
+          `For key '${key}' object had type '${actualType}' but expected '${expectedType}'. Value was '${value}'`
+        )
+    })
+  })
+
 const initSearchAutocomplete = elementId => {
   const input = document.getElementById(elementId)
   const urlParams = new URLSearchParams(window.location.search)
@@ -25,24 +47,25 @@ const initSearchAutocomplete = elementId => {
         entity.label.toLowerCase().startsWith(text)
       )
 
+      const htmlEncodedQuery = query.replace(/</g, "&lt;")
+
       suggestions.push({
-        label: `Full text search for "${query.replace(/</g, "&lt;")}"`,
-        appeared: "",
+        label: `Full text search for "${htmlEncodedQuery}"`,
+        appeared: 2022,
         id: "",
-        url: "/search?q="${query.replace(/</g, "&lt;")}"`
+        url: `/search?q=${htmlEncodedQuery}`
       })
+      tinyTypeScript(suggestions, SearchSuggestionInterface)
 
       update(suggestions)
     },
     onSelect: item => {
       const { url, id } = item
       if (id) window.location = IS_LOCALHOST ? url : `https://pldb.com${url}`
-      else {
-        const fullUrl = url + encodeURIComponent(input.value)
+      else
         window.location = IS_LOCALHOST
           ? fullUrl
           : `https://build.pldb.com${fullUrl}`
-      }
     }
   })
 }

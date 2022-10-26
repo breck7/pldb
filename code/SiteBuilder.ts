@@ -235,7 +235,7 @@ class SiteBuilder {
     const objects = pldbBase.objectsForCsv.map(object => {
       return {
         label: object.title,
-        appeared: object.appeared,
+        appeared: parseInt(object.appeared),
         id: object.pldbId,
         url: `/languages/${object.pldbId}.html`
       }

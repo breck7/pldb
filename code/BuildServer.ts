@@ -196,15 +196,27 @@ ${editForm(submission, "Error")}`
 			)
 		}
 
+		const searchCache = {}
+
 		app.get("/search", (req, res) => {
+			const originalQuery = req.query.q ?? ""
 			const tree = `search
  time ${Date.now()}
  ip ${req.ip}
  query
-  ${req.query.q.replace(/\n/g, "\n  ")} 
+  ${originalQuery.replace(/\n/g, "\n  ")} 
 `
 			fs.appendFile(searchLogPath, tree, function() {})
-			res.send(this.scrollToHtml(this.search(decodeURIComponent(req.query.q))))
+
+			if (searchCache[originalQuery]) {
+				res.send(searchCache[originalQuery])
+				return
+			}
+			searchCache[originalQuery] = this.scrollToHtml(
+				this.search(decodeURIComponent(originalQuery))
+			)
+
+			res.send(searchCache[originalQuery])
 		})
 
 		app.get("/edit/:id", (req, res) => {
