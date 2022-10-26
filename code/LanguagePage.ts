@@ -699,6 +699,13 @@ ${facts.map(fact => ` - ${fact}`).join("\n")}`
         } central package repositories for ${title}: ${linkMany(packageRepos)}`
       )
 
+    const annualReport = file.getAll("annualReports")
+    
+    if (annualReport.length === 1)
+      facts.push(
+        `Annual Reports for ${title}<a href="${annualReport[0]}">(Link)</a>`
+      )
+
     const cheatSheetUrl = file.get("cheatSheetUrl")
     if (cheatSheetUrl)
       facts.push(`${title} <a href="${cheatSheetUrl}">cheat sheet</a>`)
