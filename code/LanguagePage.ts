@@ -441,6 +441,18 @@ ${facts.map(fact => ` - ${fact}`).join("\n")}`
           .join(", ")}`
       )
 
+      const specLinks = file.getAll("spec")
+      if (specLinks.length === 1)
+        facts.push(`the <a href="${specLinks[0]}">${title} specs</a>`)
+      else if (specLinks.length > 1)
+        facts.push(
+          `PLDB has ${
+            specLinks.length
+          } specification sites for ${title}: ${specLinks
+            .map(makePrettyUrlLink)
+            .join(", ")}`
+        )
+
     const demoVideo = file.get("demoVideo")
     if (demoVideo)
       facts.push(`A <a href="${demoVideo}">video demo of ${title}</a>`)
