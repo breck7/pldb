@@ -1,5 +1,5 @@
 importOnly
-subsection Marconi server setup
+## Marconi server setup
 
 bashCode
  apt update
@@ -9,7 +9,7 @@ bashCode
  # deploy the site to /var/www/html
  sudo certbot --nginx -d pldb.com
 
-subsection Nginx Setup
+## Nginx Setup
 
 nginxConfigCode
  add_header 'Access-Control-Allow-Origin' '*' always; add_header 'Access-Control-Allow-Methods' 'GET, POST, OPTIONS' always; add_header 'Access-Control-Allow-Headers' 'DNT,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type,Range' always; add_header 'Access-Control-Expose-Headers' 'Content-Length,Content-Range' always;
@@ -35,12 +35,12 @@ nginxConfigCode
        internal;
  }
 
-subsection Deploying
+## Deploying
 
 * Marconi is deployed using rsync.
  https://linux.die.net/man/1/rsync rsync
 
-subsection Analytics
+## Analytics
 
 * This site does not use cookies or include any tracking scripts. Server logs are kept and used primarily for catching broken links, broken scripts, and other QA. If you need even more privacy, you can run the site locally or on your own servers. You can view traffic today and/or traffic trends for the last two weeks.
  https://www.nginx.com/ NGINX

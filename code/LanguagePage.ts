@@ -50,7 +50,7 @@ class LanguagePageTemplate {
         child.set("repoLink", child.get("url"))
       })
       return `foldBreak
-subsection Trending <a href="https://github.com/trending/${githubId}?since=monthly">${title} repos</a> on GitHub
+## Trending <a href="https://github.com/trending/${githubId}?since=monthly">${title} repos</a> on GitHub
 commaTable
  ${cleanAndRightShift(
    tree.toDelimited(",", ["repo", "repoLink", "stars", "description"])
@@ -76,7 +76,7 @@ commaTable
       )
     })
     return `foldBreak
-subsection Publications about ${title} from Semantic Scholar
+## Publications about ${title} from Semantic Scholar
 pipeTable
  ${cleanAndRightShift(
    tree.toDelimited("|", [
@@ -104,7 +104,7 @@ pipeTable
       child.set("titleLink", `https://isbndb.com/book/${child.get("isbn13")}`)
     })
     return `foldBreak
-subsection Books about ${title} from ISBNdb
+## Books about ${title} from ISBNdb
 pipeTable
  ${cleanAndRightShift(
    tree.toDelimited("|", ["title", "titleLink", "authors", "year", "publisher"])
@@ -128,7 +128,7 @@ pipeTable
       )
     })
     return `foldBreak
-subsection Books about ${title} on goodreads
+## Books about ${title} on goodreads
 pipeTable
  ${cleanAndRightShift(
    tree.toDelimited("|", [
@@ -162,9 +162,9 @@ pipeTable
         )
       })
       return `foldBreak
-subsection ${dblp.get(
-        "hits"
-      )} publications about ${title} on <a href="${file.get("dblp")}">DBLP</a>
+## ${dblp.get("hits")} publications about ${title} on <a href="${file.get(
+        "dblp"
+      )}">DBLP</a>
 pipeTable
  ${cleanAndRightShift(tree.toDelimited("|", ["title", "titleLink", "year"]))}
 `
@@ -209,7 +209,7 @@ Token ${supported && tokenPath ? file.get(tokenPath) ?? "" : ""}`
     })
 
     return `foldBreak
-subsection Language <a href="../lists/features.html">features</a>
+## Language <a href="../lists/features.html">features</a>
 
 treeTable
  ${table
@@ -257,8 +257,7 @@ htmlTitle ${title} - ${lodash.upperFirst(typeName)}
 
 viewSourceUrl https://github.com/breck7/pldb/blob/main/database/things/${id}.pldb
 
-paragraph
- ${this.description}
+* ${this.description}
 
 ${this.kpiBar}
 
@@ -397,8 +396,7 @@ ${facts.map(fact => ` - ${fact}`).join("\n")}`
           .join(". ") + `. <a href="${wpLink}">Read more on Wikipedia...</a>`
     else if (authoredDescription) description = authoredDescription
     else if (ghDescription) description = ghDescription
-    return `paragraph
- ${description}`
+    return `* ${description}`
   }
 
   get facts() {
@@ -700,7 +698,7 @@ ${facts.map(fact => ` - ${fact}`).join("\n")}`
       )
 
     const annualReport = file.getAll("annualReports")
-    
+
     if (annualReport.length === 1)
       facts.push(
         `Annual Reports for ${title}<a href="${annualReport[0]}">(Link)</a>`
@@ -776,8 +774,7 @@ ${facts.map(fact => ` - ${fact}`).join("\n")}`
     const keywords = this.file.get("keywords")
     if (!keywords) return ""
     return `subsection <a href="../lists/keywords.html?filter=${this.id}">Keywords</a> in ${this.file.title}
-paragraph
- ${keywords}`
+* ${keywords}`
   }
 
   get funFactSection() {
@@ -828,10 +825,7 @@ code
 
     if (!repls.length) return ""
 
-    return (
-      `paragraph
- Try now: ` + repls.join(" · ")
-    )
+    return `* Try now: ` + repls.join(" · ")
   }
 
   get kpiBar() {

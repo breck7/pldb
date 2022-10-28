@@ -22,7 +22,7 @@ code
  wrapsOn
  link BASE_URL/languages/multiline-comments-feature.html multiline comments
 
-subsection The majority of languages use // or # to start a line comment
+## The majority of languages use // or # to start a line comment
 
 * *38%* of programming languages follow C and use `//`. C (1972) follows B (1969) which follows BCPL (1966).
  wrapsOn
@@ -42,7 +42,7 @@ subsection The majority of languages use // or # to start a line comment
 * The era of experimentation with line comment tokens appears to be over: the last time a new line comment token appeared in the top 250 was 1993.
  link BASE_URL/lists/top250.html top 250
 
-subsection 15% of languages don't have line comments
+## 15% of languages don't have line comments
 
 * About 15% of the languages in PLDB don't support line comments. These include some of the key markups for the web like HTML, CSS and SVG.
  link BASE_URL/languages/html.html HTML
@@ -56,7 +56,7 @@ subsection 15% of languages don't have line comments
  link BASE_URL/languages/mathematica.html Mathematica
  link BASE_URL/languages/ocaml.html OCaml
 
-subsection A few exceptions
+## A few exceptions
 
 * Like everything, there are exceptions to the common cases. A few languages, such as <a href="BASE_URL/languages/spss.html">SPSS</a>, have a more restrictive form of line comment where the line comment token has to be the first token on the line.
 

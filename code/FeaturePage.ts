@@ -62,8 +62,7 @@ code
       .join("\n\n")
 
     const negativeText = negatives.length
-      ? `paragraph
- Languages <b>without</b> ${title} include ${negatives
+      ? `* Languages *without* ${title} include ${negatives
           .map(file => file.link)
           .join(", ")}
 
@@ -72,8 +71,7 @@ code
 
     return (
       negativeText +
-      `paragraph
- Languages <b>with</b> ${title} include ${positives
+      `* Languages *with* ${title} include ${positives
         .map(file => file.link)
         .join(", ")}
 

@@ -1,6 +1,6 @@
 importOnly
 
-subsection Build Server Setup
+## Build Server Setup
 
 bashCode
  apt update
@@ -34,7 +34,7 @@ bashCode
  pm2 start ./code/BuildServer.js -- startProdServer
  pm2 startup systemd
 
-subsection Deploying Build Server
+## Deploying Build Server
 
 bashCode
  ssh root@build.pldb.com

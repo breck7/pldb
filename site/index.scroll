@@ -12,14 +12,12 @@ import homepageImports.scroll
 html
  <a class="pldbHomepageLink" href="./lists/top500.html">Top Languages</a>
 
-paragraph
- TOP_LANGS
+* TOP_LANGS
 
 html
  <br><a class="pldbHomepageLink" href="./posts/index.html">New Posts</a>
 
-paragraph
- NEW_POSTS
+* NEW_POSTS
 
 html
  <br><a href="./pages/grunt-work-for-pldb.html">Grunt work for PLDB</a>

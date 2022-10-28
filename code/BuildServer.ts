@@ -190,10 +190,7 @@ ${editForm(submission, "Error")}`
 
 		const notFound = (id, res) => {
 			res.status(500)
-			return res.send(
-				this.scrollToHtml(`paragraph
- "${htmlEscaped(id)}" not found`)
-			)
+			return res.send(this.scrollToHtml(`* "${htmlEscaped(id)}" not found`))
 		}
 
 		const searchCache = {}
@@ -366,10 +363,9 @@ html
  <div class="pldbSearchForm"><form style="display:inline;" method="get" action="https://build.pldb.com/search"><input name="q" placeholder="Search" autocomplete="off" type="search" id="searchFormInput"><input class="pldbSearchButton" type="submit" value="Search"></form></div>
  <script>document.addEventListener("DOMContentLoaded", evt => initSearchAutocomplete("searchFormInput"))</script>
 
-paragraph
- <p class="searchResultsHeader">Searched ${numeral(pldbBase.length).format(
-		"0,0"
- )} languages and entities for "${escapedQuery}" in ${time}s.</p>
+* <p class="searchResultsHeader">Searched ${numeral(pldbBase.length).format(
+			"0,0"
+		)} languages and entities for "${escapedQuery}" in ${time}s.</p>
  <hr>
 
 html
@@ -381,10 +377,9 @@ html
 ${nameResults}
 <hr>
 
-paragraph
- <p class="searchResultsHeader">Showing ${
-		hits.length
- } files who matched on a full text search.</p>
+* <p class="searchResultsHeader">Showing ${
+			hits.length
+		} files who matched on a full text search.</p>
 
 html
  ${fullTextSearchResults}`
