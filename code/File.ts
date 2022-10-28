@@ -19,44 +19,44 @@ const includeInCsv = <Type>(
 
 // Todo: move to Grammar with an enum concept?
 const typeNames = new TreeNode(`application
-  assembly assembly language
-  binaryDataFormat
-  binaryExecutable binary executable format
-  bytecode bytecode format
-  characterEncoding
-  cloud cloud service
-  compiler
-  editor
-  esolang esoteric programming language
-  filesystem
-  framework
-  grammarLanguage
-  idl interface design language
-  interpreter
-  ir intermediate representation language
-  isa instruction set architecture
-  jsonFormat
-  library
-  linter
-  metalanguage
-  notation
-  os operating system
-  packageManager
-  feature language feature
-  pl programming language
-  plzoo minilanguage
-  protocol
-  queryLanguage
-  schema
-  standard
-  stylesheetLanguage
-  template template language
-  textData text data format
-  textMarkup text markup language
-  visual visual programming language
-  vm virtual machine
-  webApi
-  xmlFormat`).toObject()
+assembly assembly language
+binaryDataFormat
+binaryExecutable binary executable format
+bytecode bytecode format
+characterEncoding
+cloud cloud service
+compiler
+editor
+esolang esoteric programming language
+filesystem
+framework
+grammarLanguage
+idl interface design language
+interpreter
+ir intermediate representation language
+isa instruction set architecture
+jsonFormat
+library
+linter
+metalanguage
+notation
+os operating system
+packageManager
+feature language feature
+pl programming language
+plzoo minilanguage
+protocol
+queryLanguage
+schema
+standard
+stylesheetLanguage
+template template language
+textData text data format
+textMarkup text markup language
+visual visual programming language
+vm virtual machine
+webApi
+xmlFormat`).toObject()
 
 class PLDBFile extends TreeBaseFile {
   @includeInCsv
