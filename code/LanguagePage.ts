@@ -703,7 +703,7 @@ ${facts.map(fact => ` - ${fact}`).join("\n")}`
     if (annualReport.length >= 1)
 
       annualReport.forEach((element: string) => {
-        const splitString  = element.split(" ")
+        const splitString  = element.split("|")
         if (splitString[1] ==='releaseNotesUrl'){
           const releaseNotesUrl = splitString[0]
           facts.push(
