@@ -698,35 +698,33 @@ ${facts.map(fact => ` - ${fact}`).join("\n")}`
           packageRepos.length
         } central package repositories for ${title}: ${linkMany(packageRepos)}`
       )
-       
-    const annualReport = file.getAll("annualReports")
+
+    const annualReport = file.getAll("annualReportsUrl")
+    
     if (annualReport.length >= 1)
+      facts.push(
+        `Annual Reports for ${title}<a href="${annualReport[0]}">(Link)</a>`
+      )
 
-      annualReport.forEach((element: string) => {
-        const splitString  = element.split("|")
-        if (splitString[1] ==='releaseNotesUrl'){
-          const releaseNotesUrl = splitString[0]
-          facts.push(
-            `Release Notes for ${title}<a href="${releaseNotesUrl}">(Click)</a>`
-          )
-        } else if (splitString[1] === 'officialBlogUrl') {
-          const officialBlogUrl = splitString[0]
-          facts.push(
-            `Official Blog for ${title}<a href="${officialBlogUrl}">(Click)</a>`
-          )
-        } else if (splitString[1] ==='eventsPageUrl') {
-          const eventsPageUrl = splitString[0]
-          facts.push(
-            `Events Page for ${title}<a href="${eventsPageUrl}">(Click)</a>`
-          )
-        } else {
-          const annualReportUrl = splitString[0] 
-          facts.push(
-            `Annual Reports for ${title}<a href="${annualReportUrl}">(Click)</a>`
-          )
+    const releaseNotes = file.getAll("releaseNotesUrl")
+    
+    if (releaseNotes.length >= 1)
+      facts.push(
+        `Release Notes for ${title}<a href="${releaseNotes[0]}">(Link)</a>`
+      )
+    const officialBlog = file.getAll("officialBlogUrl")
+    
+    if (officialBlog.length >= 1)
+      facts.push(
+        `Official Blog page for ${title}<a href="${officialBlog[0]}">(Link)</a>`
+      )
+    const eventsPage = file.getAll("eventsPageUrl")
+    
+    if (eventsPage.length >= 1)
+      facts.push(
+        `Events page for ${title}<a href="${eventsPage[0]}">(Link)</a>`
+      )
 
-        }        
-      });      
     const cheatSheetUrl = file.get("cheatSheetUrl")
     if (cheatSheetUrl)
       facts.push(`${title} <a href="${cheatSheetUrl}">cheat sheet</a>`)
