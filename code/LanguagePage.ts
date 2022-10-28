@@ -238,7 +238,7 @@ treeTable
       .toDelimited("|", ["title", "titleLink", "date", "score", "comments"])
       .replace(/\n/g, "\n ")
       .trim()
-    return `subsection HackerNews discussions of ${this.file.title}
+    return `## HackerNews discussions of ${this.file.title}
 
 pipeTable
  ${delimited}`
@@ -343,9 +343,7 @@ image ${image.replace("https://pldb.com/", "../")}
   }
 
   get factsSection() {
-    const { facts } = this
-    return `list
-${facts.map(fact => ` - ${fact}`).join("\n")}`
+    return this.facts.map(fact => `- ${fact}`).join("\n")
   }
 
   get description() {
@@ -773,7 +771,7 @@ ${facts.map(fact => ` - ${fact}`).join("\n")}`
   get keywordsSection() {
     const keywords = this.file.get("keywords")
     if (!keywords) return ""
-    return `subsection <a href="../lists/keywords.html?filter=${this.id}">Keywords</a> in ${this.file.title}
+    return `## <a href="../lists/keywords.html?filter=${this.id}">Keywords</a> in ${this.file.title}
 * ${keywords}`
   }
 
