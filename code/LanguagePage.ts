@@ -257,7 +257,7 @@ htmlTitle ${title} - ${lodash.upperFirst(typeName)}
 
 viewSourceUrl https://github.com/breck7/pldb/blob/main/database/things/${id}.pldb
 
-* ${this.oneLiner}
+${this.oneLiner}
 
 ${this.kpiBar}
 
@@ -295,7 +295,7 @@ ${this.publications}
 ${this.hackerNewsTable}
 
 keyboardNav ${this.prevPage} ${this.nextPage}
-`
+`.replace(/\n\n\n+/g, "\n\n")
   }
 
   get image() {
@@ -353,26 +353,22 @@ image ${image.replace("https://pldb.com/", "../")}
     let akaMessage = standsFor ? `, aka ${standsFor},` : ""
 
     let creatorsStr = ""
+    let creatorsLinks = ""
     if (creators.length) {
-      creatorsStr =
-        ` by ` +
-        creators
-          .map(
-            name =>
-              `<a href="../lists/creators.html#${nameToAnchor(
-                name
-              )}">${name}</a>`
-          )
-          .join(" and ")
+      creatorsStr = ` by ` + creators.join(" and ")
+      creatorsLinks = creators
+        .map(
+          name => ` link ../lists/creators.html#${nameToAnchor(name)} ${name}`
+        )
+        .join("\n")
     }
 
-    return `${title}${akaMessage} is ${getIndefiniteArticle(typeName)} ${
+    return `* ${title}${akaMessage} is ${getIndefiniteArticle(typeName)} ${
       this.typeLink
-    }${
-      appeared
-        ? ` created in <a href="../lists/languages.html?filter=${appeared}">${appeared}</a>`
-        : ""
-    }${creatorsStr}.`
+    }${appeared ? ` created in ${appeared}` : ""}${creatorsStr}.
+ link ../lists/languages.html?filter=${appeared} ${appeared}
+${creatorsLinks}
+ `
   }
 
   get typeLink() {
