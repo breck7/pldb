@@ -703,11 +703,30 @@ ${creatorsLinks}
         } central package repositories for ${title}: ${linkMany(packageRepos)}`
       )
 
-    const annualReport = file.getAll("annualReports")
-
-    if (annualReport.length === 1)
+    const annualReport = file.getAll("annualReportsUrl")
+    
+    if (annualReport.length >= 1)
       facts.push(
         `Annual Reports for ${title}<a href="${annualReport[0]}">(Link)</a>`
+      )
+
+    const releaseNotes = file.getAll("releaseNotesUrl")
+    
+    if (releaseNotes.length >= 1)
+      facts.push(
+        `Release Notes for ${title}<a href="${releaseNotes[0]}">(Link)</a>`
+      )
+    const officialBlog = file.getAll("officialBlogUrl")
+    
+    if (officialBlog.length >= 1)
+      facts.push(
+        `Official Blog page for ${title}<a href="${officialBlog[0]}">(Link)</a>`
+      )
+    const eventsPage = file.getAll("eventsPageUrl")
+    
+    if (eventsPage.length >= 1)
+      facts.push(
+        `Events page for ${title}<a href="${eventsPage[0]}">(Link)</a>`
       )
 
     const cheatSheetUrl = file.get("cheatSheetUrl")
