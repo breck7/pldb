@@ -257,7 +257,7 @@ htmlTitle ${title} - ${lodash.upperFirst(typeName)}
 
 viewSourceUrl https://github.com/breck7/pldb/blob/main/database/things/${id}.pldb
 
-* ${this.description}
+* ${this.oneLiner}
 
 ${this.kpiBar}
 
@@ -346,7 +346,7 @@ image ${image.replace("https://pldb.com/", "../")}
     return this.facts.map(fact => `- ${fact}`).join("\n")
   }
 
-  get description() {
+  get oneLiner() {
     const { file } = this
     const { typeName, title, creators, appeared } = file
     const standsFor = file.get("standsFor")
