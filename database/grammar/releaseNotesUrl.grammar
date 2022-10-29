@@ -1,0 +1,5 @@
+releaseNotesUrlNode
+ extends abstractUrlNode
+ cruxFromId
+ description URL to the release notes for this language.
+ single false
