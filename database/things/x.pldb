@@ -14,7 +14,6 @@ writtenIn go cpp
 influencedBy c cpp rust go
 
 visualParadigm false
-visualParadigm false
 
 features
  hasStrings true
@@ -168,7 +167,6 @@ features
   fn a_function() {}
  hasIfs true
  hasIfElses true
- hasSwitch true
  hasDynamicSizedArrays true
   let mut a_slice = [1, 2, 3, 4, 5, 6]
   a_slice = append(a_slice, 7, 8, 9, 10)
