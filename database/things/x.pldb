@@ -14,6 +14,7 @@ writtenIn go cpp
 influencedBy c cpp rust go
 
 visualParadigm false
+visualParadigm false
 
 features
  hasStrings true
@@ -48,8 +49,8 @@ features
   }
  hasTraits true
   trait Person {
-      fn full_name(self) str
-      fn age(self) byte
+      fn get_full_name(self): str
+      fn get_age(self): byte
   }
  hasGenerics true
   type[T]
@@ -112,7 +113,7 @@ features
  hasPolymorphism false
  hasGlobalScope true
  hasValueReturnedFunctions true
-  fn pi_number() f64 {
+  fn get_pi(): f64 {
       ret 3.14159265359
   }
  hasDirectives true
@@ -133,7 +134,7 @@ features
       assert(x < 200)
   }
  hasVariadicFunctions true
-  fn average(x: ...f64) f64 {
+  fn average(x: ...f64): f64 {
       // ...
   }
  hasUnaryOperators true
@@ -153,7 +154,9 @@ features
       // ...
   }
  hasForLoops true
-  for let mut i = 0; i < 10; i++ {
+  // Jule has for loops with while-next iterations
+  let mut i = 0
+  for i < 10; i++ {
       // ...
   }
  hasWhileLoops true
@@ -187,6 +190,17 @@ features
  hasVars true
  hasRegularExpressionsSyntaxSugar false
  hasReservedWords true
+ hasSwitch true
+  match X {
+  case Y:
+      outln("X is Y")
+  case Z:
+      outln("X is Z")
+  case A, B, C:
+      outln("X is A, B, or C")
+  default:
+      outln("X is not Y, Z, A, B and C")
+  }
  hasDuckTyping true
   type[T]
   fn lock_object(obj: T) {
@@ -234,13 +248,12 @@ example
          ret
      }
      let mut i = 0
-     unsafe {
-         for i < s.len-1 {
-             let (mut x, mut y) = &s[i], &s[i+1]
+     for i < s.len-1; i++ {
+         let (mut x, mut y) = &s[i], &s[i+1]
+         unsafe {
              if *x > *y {
                  *x, *y = *y, *x
              }
-             i++
          }
      }
      quicksort(s[:i])
@@ -248,10 +261,10 @@ example
  }
  
  fn main() {
-     let mut my_slice = [1, 9, -2, 25, -24, 4623, 0, -1, 0xFD2]
-     outln(my_slice)
-     quicksort(my_slice)
-     outln(my_slice)
+     let mut s = [1, 9, -2, 25, -24, 4623, 0, -1, 0xFD2]
+     outln(s)
+     quicksort(s)
+     outln(s)
  }
 example
  fn main() {
@@ -261,7 +274,7 @@ example
  use std::math::{PI}
  
  trait Shape {
-     fn area(self) int
+     fn area(self): int
  }
  
  struct Rectangle {
@@ -270,7 +283,7 @@ example
  }
  
  impl Shape for Rectangle {
-     fn area(self) int {
+     fn area(self): int {
          ret self.width * self.height
      }
  }
@@ -280,7 +293,7 @@ example
  }
  
  impl Shape for Circle {
-     fn area(self) int {
+     fn area(self): int {
          ret PI * self.r * self.r
      }
  }
@@ -292,9 +305,9 @@ example
      outln(circ.area())
  }
 
-githubRepo https://github.com/jule-lang/jule
+githubRepo https://github.com/julelang/jule
  firstCommit 2021
- stars 34
+ stars 35
  forks 5
  subscribers 5
  created 2021
@@ -302,7 +315,6 @@ githubRepo https://github.com/jule-lang/jule
  description Jule is the simple, efficient, statically typed and compiled system programming language.
  issues 0
 
-gdbSupport false
 fileType text
 isOpenSource true
 centralPackageRepositoryCount 0
