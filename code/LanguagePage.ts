@@ -537,7 +537,7 @@ ${creatorsLinks}
     if (meetup) {
       const groupCount = numeral(file.get("meetup groupCount")).format("0,0")
       facts.push(
-        `Check out the ${groupCount} <a href="https://www.meetup.com/topics/${meetup}/">${title} meetup groups</a> on Meetup.com.`
+        `Check out the ${groupCount} <a href="${meetup}/">${title} meetup groups</a> on Meetup.com.`
       )
     }
 

@@ -1,9 +1,10 @@
 meetupNode
  description Some languages have active meetup groups on Meetup.com 
- extends abstractOneWordGuidNode
- contentKey id
+ extends abstractUrlGuidNode
+ contentKey url
  inScope meetupMemberCountNode meetupGroupCountNode
  string sourceDomain meetup.com
+ cruxFromId
 meetupMemberCountNode
  crux memberCount
  extends abstractPopulationCountNode
