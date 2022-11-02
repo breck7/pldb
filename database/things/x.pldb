@@ -218,6 +218,9 @@ features
       ptr = nil
   }
  hasConditionals true
+  if BOOLEAN_EXPRESSION {
+    outln(""Condition is true)
+  }
  canUseQuestionMarksAsPartOfIdentifier false
  hasIncrementAndDecrementOperators true
   ++
@@ -305,8 +308,8 @@ example
 
 githubRepo https://github.com/julelang/jule
  firstCommit 2021
- stars 35
- forks 5
+ stars 39
+ forks 6
  subscribers 5
  created 2021
  updated 2022
