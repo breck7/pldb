@@ -201,6 +201,9 @@ tryItOnline tcl
 
 tiobe Tcl
 
+releaseNotesUrl http://www.tcl.tk/software/tcltk/relnotes/index.tml?sc_format=wider
+officialBlogUrl https://www.tcl.tk/software/tcltk/whatsnew.tml
+
 ubuntuPackage tcl
 jupyterKernel https://github.com/rpep/tcl_kernel
 fileType text
