@@ -1,0 +1,147 @@
+selection	Total					
+title	Where are the most programming languages created?					
+subtitle	Every programming language was created in a country (or countries). C launched from the United States, Python from the Netherlands, and Ruby from Japan. At the moment, it appears the United States produces the most programming languages—more than all others combined, in fact. PLDB now has the `country` field for over 1,300 languages. Perhaps when the dataset is more complete the picture will look different. The data comes from https://pldb.com/languages.csv and is public domain and freely available. The chart was made with Our World In Data's Grapher which is open source software available at https://github.com/owid/owid-grapher					
+type	WorldMap					
+hasMapTab	false					
+hideControls	true					
+ySlugs	Languages					
+columns						
+	slug	type	name			
+	Year	Year	Year			
+	Country	EntityName	EntityName			
+	Languages	Numeric	Languages			
+						
+table						
+	Country	Languages	Year			
+	United States	711	2022			
+	Netherlands	11	2022			
+	Switzerland	19	2022			
+	Canada	48	2022			
+	Japan	25	2022			
+	United Kingdom	80	2022			
+	Brazil	3	2022			
+	France	34	2022			
+	Sweden	14	2022			
+	Italy	18	2022			
+	Various	56	2022			
+	Argentina and Germany and Turkey	1	2022			
+	United States and France	4	2022			
+	Germany	51	2022			
+	Norway	9	2022			
+	New Zealand	9	2022			
+	Unknown	68	2022			
+	Brasil	1	2022			
+	Argentina	3	2022			
+	United States and Portugal	1	2022			
+	United Kingdom and United States and Switzerland	1	2022			
+	Poland	4	2022			
+	Russia	10	2022			
+	Cananda	1	2022			
+	Australia	19	2022			
+	Czech Republic and Germany	1	2022			
+	unknown	1	2022			
+	Ukraine and Germany	1	2022			
+	United States and New Zealand	2	2022			
+	Australia and Sweden and United States	1	2022			
+	Germany and United Kingdom	2	2022			
+	Denmark	6	2022			
+	United States and Japan	1	2022			
+	Spain	2	2022			
+	Singapore	3	2022			
+	China	10	2022			
+	The Netherlands	12	2022			
+	Ukraine and India	1	2022			
+	Georgia	1	2022			
+	United States and Germany	1	2022			
+	France and United Kingdom and Cyprus	1	2022			
+	Israel	9	2022			
+	China and Japan	1	2022			
+	Dominican Republic	1	2022			
+	North Cyprus	1	2022			
+	India	3	2022			
+	England	18	2022			
+	United States and China	2	2022			
+	United State	1	2022			
+	Russia and Ukraine amd Lithuania and Serbia	1	2022			
+	Slovenia	5	2022			
+	United Arab Emirates	1	2022			
+	Nigeria	2	2022			
+	Korea	1	2022			
+	Switzerland and Malaysia and Germany	1	2022			
+	Austria	4	2022			
+	Iceland	1	2022			
+	United States and Germany  and France and Spain	1	2022			
+	Czech Republic	5	2022			
+	United States and Switzerland	1	2022			
+	Germany and United States	1	2022			
+	European Union	1	2022			
+	United States and Denmark	2	2022			
+	Australia and Belgium and France and Sweden and Indonesia	1	2022			
+	Turkey	1	2022			
+	United Kingdom and Canada	1	2022			
+	South Korea	2	2022			
+	Paraguay	1	2022			
+	Portugal	2	2022			
+	Various countries in Western Europe	2	2022			
+	Taiwan	1	2022			
+	Ireland	4	2022			
+	United Kingdom and Germany	1	2022			
+	United States and Germany and Canada	1	2022			
+	Belgium	2	2022			
+	South Korea and United States	1	2022			
+	Japan or Korea	1	2022			
+	Mexico	1	2022			
+	Germany and Spain	1	2022			
+	Scotland, United Kingdom	1	2022			
+	United States and United Kingdom	1	2022			
+	Spain and United States	1	2022			
+	Various	1	2022			
+	Malta	1	2022			
+	Interstellar Space	1	2022			
+	Thailand	1	2022			
+	New Zealand and United States	1	2022			
+	Italy and The Netherlands	1	2022			
+	Canada and China	1	2022			
+	Slovakia	1	2022			
+	Spain and Germany	1	2022			
+	France and Poland	1	2022			
+	England and Wales	1	2022			
+	USA	1	2022			
+	The Netherlands and United Kingdom	1	2022			
+	United States and Germany and Norway	1	2022			
+	United States and Israel	2	2022			
+	Hungary	2	2022			
+	The Czech Republic	2	2022			
+	Scotland	2	2022			
+	United States and France and Germany and Japan	1	2022			
+	Canada and Portugal	1	2022			
+	United States and Sweden	1	2022			
+	Portugal and England	1	2022			
+	Bahrain	1	2022			
+	Canada and England	1	2022			
+	Greece	1	2022			
+	Australia and Canada	1	2022			
+	Canada and Australia	1	2022			
+	France and United States	1	2022			
+	Italy and United Kingdom	1	2022			
+	Spain and Italy	1	2022			
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
