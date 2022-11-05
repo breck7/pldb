@@ -303,7 +303,8 @@ keyboardNav ${this.prevPage} ${this.nextPage}
     const { title } = file
 
     let image = file.get("screenshot")
-    let caption = `A screenshot of the <a href="../lists/languages.html?filter=visual">visual language</a> ${title}.`
+    let caption = `A screenshot of the visual language ${title}.
+  link ../lists/languages.html?filter=visual visual language`
     if (!image) {
       image = file.get("photo")
       caption = `A photo of ${title}.`
@@ -433,17 +434,17 @@ ${creatorsLinks}
           .join(", ")}`
       )
 
-      const specLinks = file.getAll("spec")
-      if (specLinks.length === 1)
-        facts.push(`the <a href="${specLinks[0]}">${title} specs</a>`)
-      else if (specLinks.length > 1)
-        facts.push(
-          `PLDB has ${
-            specLinks.length
-          } specification sites for ${title}: ${specLinks
-            .map(makePrettyUrlLink)
-            .join(", ")}`
-        )
+    const specLinks = file.getAll("spec")
+    if (specLinks.length === 1)
+      facts.push(`the <a href="${specLinks[0]}">${title} specs</a>`)
+    else if (specLinks.length > 1)
+      facts.push(
+        `PLDB has ${
+          specLinks.length
+        } specification sites for ${title}: ${specLinks
+          .map(makePrettyUrlLink)
+          .join(", ")}`
+      )
 
     const demoVideo = file.get("demoVideo")
     if (demoVideo)
@@ -704,26 +705,26 @@ ${creatorsLinks}
       )
 
     const annualReport = file.getAll("annualReportsUrl")
-    
+
     if (annualReport.length >= 1)
       facts.push(
         `Annual Reports for ${title}<a href="${annualReport[0]}">(Link)</a>`
       )
 
     const releaseNotes = file.getAll("releaseNotesUrl")
-    
+
     if (releaseNotes.length >= 1)
       facts.push(
         `Release Notes for ${title}<a href="${releaseNotes[0]}">(Link)</a>`
       )
     const officialBlog = file.getAll("officialBlogUrl")
-    
+
     if (officialBlog.length >= 1)
       facts.push(
         `Official Blog page for ${title}<a href="${officialBlog[0]}">(Link)</a>`
       )
     const eventsPage = file.getAll("eventsPageUrl")
-    
+
     if (eventsPage.length >= 1)
       facts.push(
         `Events page for ${title}<a href="${eventsPage[0]}">(Link)</a>`
