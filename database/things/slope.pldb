@@ -27,6 +27,8 @@ features
  hasComments true
   ; I am a comment
  hasBuiltInRegex true
+  (regex-match? `[0-9]+` "Hello 12345")
+  (regex-replace `Hello, (\w+)!$` "Hello, world!" "Goodbye, $1!")
  hasNamespaces true
   (ns-create 'hello-world)
   (ns-define
@@ -40,6 +42,7 @@ features
  hasSemanticIndentation false
  hasStrings true
   "hello world"
+  `hello	wold`
  hasGarbageCollection true
  hasGotos false
  hasImports true
