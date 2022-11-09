@@ -730,6 +730,13 @@ ${creatorsLinks}
         `Events page for ${title}<a href="${eventsPage[0]}">(Link)</a>`
       )
 
+    const faqPage = file.getAll("faqPageUrl")
+
+    if (faqPage.length >= 1)
+      facts.push(
+        `Frequently ask questions(FAQ) page and Forums for ${title}<a href="${faqPage[0]}">(Link)</a>`
+      )
+
     const cheatSheetUrl = file.get("cheatSheetUrl")
     if (cheatSheetUrl)
       facts.push(`${title} <a href="${cheatSheetUrl}">cheat sheet</a>`)
