@@ -734,7 +734,7 @@ ${creatorsLinks}
 
     if (faqPage.length >= 1)
       facts.push(
-        `Frequently ask questions(FAQ) page for ${title}<a href="${faqPage[0]}">(Link)</a>`
+        `Frequently ask questions(FAQ) page and Forums for ${title}<a href="${faqPage[0]}">(Link)</a>`
       )
 
     const cheatSheetUrl = file.get("cheatSheetUrl")
