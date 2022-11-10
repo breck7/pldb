@@ -4,6 +4,7 @@ type pl
 website http://www.gap-system.org/
 standsFor Groups, Algorithms and Programming
 country Germany
+originCommunity RWTH Aachen University
 domainName gap-system.org
  registered 2000
  awisRank
@@ -16,6 +17,8 @@ features
  hasSemanticIndentation false
 
 lineCommentToken #
+
+githubRepo https://github.com/gap-system/gap
 
 wikipedia https://en.wikipedia.org/wiki/GAP_(programming_language)
  example
