@@ -1,0 +1,30 @@
+title Sqlalchemy
+appeared 2006
+type queryLanguage
+creators Michael Bayer
+website https://www.sqlalchemy.org/
+documentation https://docs.sqlalchemy.org/en/14/
+country United States
+originCommunity https://www.sqlalchemy.org/support.html
+
+writtenIn python
+
+wikipedia https://en.wikipedia.org/wiki/SQLAlchemy
+ example
+  SELECT movies.id, movies.title, movies.year, movies.directed_by, directors.id, directors.name
+  FROM movies LEFT OUTER JOIN directors ON directors.id = movies.directed_by  
+
+githubRepo https://github.com/sqlalchemy/sqlalchemy
+ stars 62000
+ forks 1000
+ subscribers 95
+ updated 2022
+
+twitter https://twitter.com/sqlalchemy
+
+goodreads
+ title|year|author|goodreadsId|rating|ratings|reviews
+ Essential SQLAlchemy|2008|Rick Copeland|3424571|3.30|47|4
+ Essential Sqlalchemy: Mapping Python to Databases|2015|Jason Myers|27560172|3.83|66|4
+ Sqlalchemy: Database Access Using Python|2013|Mark Ramm|13660522|5|1|0
+ SQLAlchemy Tutorial: Python SQL toolkit and Object Relational Mapper|2020|Gouic Books|50636637|4|1|0
