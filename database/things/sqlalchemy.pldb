@@ -9,16 +9,16 @@ originCommunity https://www.sqlalchemy.org/support.html
 
 writtenIn python
 
-wikipedia https://en.wikipedia.org/wiki/SQLAlchemy
- example
-  SELECT movies.id, movies.title, movies.year, movies.directed_by, directors.id, directors.name
-  FROM movies LEFT OUTER JOIN directors ON directors.id = movies.directed_by  
-
 githubRepo https://github.com/sqlalchemy/sqlalchemy
  stars 62000
  forks 1000
  subscribers 95
  updated 2022
+
+wikipedia https://en.wikipedia.org/wiki/SQLAlchemy
+ example
+  SELECT movies.id, movies.title, movies.year, movies.directed_by, directors.id, directors.name
+  FROM movies LEFT OUTER JOIN directors ON directors.id = movies.directed_by  
 
 twitter https://twitter.com/sqlalchemy
 
