@@ -23,7 +23,7 @@ author https://github.com/hassamalhajaji Hassam Alhajaji
  https://pldb.com/languages/java.html Java
  https://pldb.com/languages/garbage-collection-feature.html garbage collection
 
-* The other "neat" idea -- still not "mainstream", as far as I know -- is to represent programs as the same kind of objects that the system is good at manipulating: linked lisps, in the case of Lisp.  The transformation from text to list-structured representations is trivial (that's why Lisp programs have some many parentheses), and you can run that code directly in an interpreter or compiler it on the fly into fast, efficient machine code.
+* The other "neat" idea -- still not "mainstream", as far as I know -- is to represent programs as the same kind of objects that the system is good at manipulating: linked lists, in the case of Lisp.  The transformation from text to list-structured representations is trivial (that's why Lisp programs have some many parentheses), and you can run that code directly in an interpreter or compile it on the fly into fast, efficient machine code.
  https://pldb.com/languages/homoiconic-feature.html represent programs as the same kind of objects that the system is good at manipulating
 
 * This makes it possible for Lisp to have a very powerful and flexible macro system, in which programs can easily transform expressions from some surface form to a different internal form.  That, in turn, makes Lisp an excellent tool for implementing more specialized languages, with user interfaces that make sense in that domain.  Most of the major packages in Common Lisp started out as macro packages, and then the popular ones made it into the language spec:  the complex version of LOOP, the complex FORMAT statement, even the Common Lisp Object System.
