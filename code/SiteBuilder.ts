@@ -564,7 +564,8 @@ class SiteBuilder {
           file => `<a href="./languages/${file.permalink}">${file.title}</a>`
         )
         .join(" · "),
-      NEW_POSTS: postsScroll.files
+      NEW_POSTS: postsScroll
+        .getGroup("index")
         .slice(0, 5)
         .map(file => `<a href="./posts/${file.permalink}">${file.title}</a>`)
         .join("<br>")

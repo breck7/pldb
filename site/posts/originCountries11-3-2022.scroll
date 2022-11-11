@@ -1,9 +1,9 @@
 title Where are the most programming languages created?
 import settings.scroll
-groups index
 date 11/3/2022
 maxColumns 1
 columnWidth 200
+groups index
 openGraphImage https://pldb.com/posts/images/originCountries11-3-2022.png
 
 author https://github.com/breck7 Breck Yunits
@@ -31,3 +31,9 @@ ohayoCode
    group.by country
     hidden
     vega.bar
+
+## Previous posts in this series
+
+readingList
+ originCountries.html September 3, 2022
+ which-countries-produce-the-most-programming-languages.html October 31, 2018
