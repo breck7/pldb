@@ -446,6 +446,18 @@ ${creatorsLinks}
           .join(", ")}`
       )
 
+    const emailListLinks = file.getAll("emailList")
+    if (emailListLinks.length === 1)
+      facts.push(`the <a href="${emailListLinks[0]}">${title} mailing list</a>`)
+    else if (emailListLinks.length > 1)
+      facts.push(
+        `PLDB has ${
+          emailListLinks.length
+        } mailing list sites for ${title}: ${emailListLinks
+          .map(makePrettyUrlLink)
+          .join(", ")}`
+      )
+
     const demoVideo = file.get("demoVideo")
     if (demoVideo)
       facts.push(`A <a href="${demoVideo}">video demo of ${title}</a>`)
