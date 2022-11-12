@@ -136,12 +136,14 @@
       const IS_LOCALHOST =
         location.hostname === "localhost" || location.hostname === "127.0.0.1"
       // function for rendering autocomplete suggestions
-      var render = function(item, currentValue) {
-        var itemElement = doc.createElement(ITEM_TAG)
+      const render = function(item, currentValue) {
+        const itemElement = doc.createElement(ITEM_TAG)
         itemElement.textContent = item.label || ""
         itemElement.href = IS_LOCALHOST
           ? item.url
-          : `https://pldb.com${item.url}`
+          : item.id
+          ? `https://pldb.com${item.url}`
+          : `https://build.pldb.com${item.url}`
         return itemElement
       }
       if (settings.render) {
