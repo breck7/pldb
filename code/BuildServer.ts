@@ -11,6 +11,7 @@ const { TreeNode } = jtree
 const { Disk } = require("jtree/products/Disk.node.js")
 const { ScrollFile, getFullyExpandedFile } = require("scroll-cli")
 
+import { SearchServer } from "./SearchServer"
 import { PLDBFolder } from "./Folder"
 import { PLDBFile } from "./File"
 import {
@@ -27,12 +28,10 @@ const builtSiteFolder = path.join(baseFolder, "site")
 const csvFileLength = Disk.read(path.join(builtSiteFolder, "pldb.csv")).length
 
 const editLogPath = path.join(ignoreFolder, "buildServerLog.tree")
-const searchLogPath = path.join(ignoreFolder, "searchLog.tree")
 
 try {
 	Disk.mkdir(ignoreFolder)
 	Disk.touch(editLogPath)
-	Disk.touch(searchLogPath)
 } catch (err) {
 	console.error(err)
 }
@@ -193,28 +192,11 @@ ${editForm(submission, "Error")}`
 			return res.send(this.scrollToHtml(`* "${htmlEscaped(id)}" not found`))
 		}
 
-		const searchCache = {}
+		const searchServer = new SearchServer()
 
-		app.get("/search", (req, res) => {
-			const originalQuery = req.query.q ?? ""
-			const tree = `search
- time ${Date.now()}
- ip ${req.ip}
- query
-  ${originalQuery.replace(/\n/g, "\n  ")} 
-`
-			fs.appendFile(searchLogPath, tree, function() {})
-
-			if (searchCache[originalQuery]) {
-				res.send(searchCache[originalQuery])
-				return
-			}
-			searchCache[originalQuery] = this.scrollToHtml(
-				this.search(decodeURIComponent(originalQuery))
-			)
-
-			res.send(searchCache[originalQuery])
-		})
+		app.get("/search", (req, res) =>
+			res.send(searchServer.search(req.query.q ?? "", req.ip))
+		)
 
 		app.get("/edit/:id", (req, res) => {
 			const { id } = req.params
@@ -316,73 +298,6 @@ ${editForm(submission, "Error")}`
 				error
 			}
 		}
-	}
-
-	search(query): string {
-		const startTime = Date.now()
-		const pldbBase = this.folder
-		const lowerCaseQuery = query.toLowerCase()
-		// Todo: allow advanced search. case sensitive/insensitive, regex, et cetera.
-		const testFn = str => str.includes(lowerCaseQuery)
-
-		const escapedQuery = htmlEscaped(lowerCaseQuery)
-		const hits = pldbBase.filter(file => testFn(file.lowercase))
-		const nameHits = pldbBase.filter(file => file.lowercaseNames.some(testFn))
-		const baseUrl = "https://pldb.com/languages/"
-
-		const highlightHit = file => {
-			const line = file.lowercase.split("\n").find(line => testFn(line))
-			return line.replace(
-				lowerCaseQuery,
-				`<span style="highlightHit">${lowerCaseQuery}</span>`
-			)
-		}
-		const fullTextSearchResults = hits
-			.map(
-				file =>
-					` <div class="searchResultFullText"><a href="${baseUrl}${
-						file.permalink
-					}">${file.title}</a> - ${file.get("type")} #${
-						file.rank
-					} - ${highlightHit(file)}</div>`
-			)
-			.join("\n")
-
-		const nameResults = nameHits
-			.map(
-				file =>
-					` <div class="searchResultName"><a href="${baseUrl}${
-						file.permalink
-					}">${file.title}</a> - ${file.get("type")} #${file.rank}</div>`
-			)
-			.join("\n")
-
-		const time = numeral((Date.now() - startTime) / 1000).format("0.00")
-		return `
-html
- <div class="pldbSearchForm"><form style="display:inline;" method="get" action="https://build.pldb.com/search"><input name="q" placeholder="Search" autocomplete="off" type="search" id="searchFormInput"><input class="pldbSearchButton" type="submit" value="Search"></form></div>
- <script>document.addEventListener("DOMContentLoaded", evt => initSearchAutocomplete("searchFormInput"))</script>
-
-* <p class="searchResultsHeader">Searched ${numeral(pldbBase.length).format(
-			"0,0"
-		)} languages and entities for "${escapedQuery}" in ${time}s.</p>
- <hr>
-
-html
- <p class="searchResultsHeader">Showing ${
-		nameHits.length
- } files whose name or aliases matched.</p>
-
-html
-${nameResults}
-<hr>
-
-* <p class="searchResultsHeader">Showing ${
-			hits.length
-		} files who matched on a full text search.</p>
-
-html
- ${fullTextSearchResults}`
 	}
 
 	listen(port = 4444) {

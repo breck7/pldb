@@ -23,7 +23,8 @@
     "publish": "cd code; npm publish",
     "open": "open site/index.html",
     "local": "./code/BuildServer.js startDevServer",
-    "restart": "pm2 restart 0"
+    "restart": "pm2 restart 0",
+    "search": "./code/SearchServer.js"
   },
   "prettier": {
     "semi": false
