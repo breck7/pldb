@@ -22,24 +22,20 @@ try {
 }
 
 class SearchServer {
-	cache = {}
-
 	folder = PLDBFolder.getBase().loadFolder()
 
-	search(originalQuery: string, ip: string, format = "html"): string {
+	logQuery(originalQuery: string, ip: string) {
 		const tree = `search
  time ${Date.now()}
  ip ${ip}
  query
   ${originalQuery.replace(/\n/g, "\n  ")} 
 `
-
 		fs.appendFile(searchLogPath, tree, function() {})
-		const { cache } = this
-		const cacheHit = cache[originalQuery]
+		return this
+	}
 
-		if (cacheHit) return cacheHit
-
+	search(originalQuery: string, format = "html"): string {
 		const query = decodeURIComponent(originalQuery)
 		const startTime = Date.now()
 		const pldbBase = this.folder
@@ -126,4 +122,4 @@ html
 export { SearchServer }
 
 if (!module.parent)
-	new SearchServer().search(process.argv.slice(2).join(" "), "127.0.0.1", "csv")
+	new SearchServer().search(process.argv.slice(2).join(" "), "csv")

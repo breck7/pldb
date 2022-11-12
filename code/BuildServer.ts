@@ -193,10 +193,19 @@ ${editForm(submission, "Error")}`
 		}
 
 		const searchServer = new SearchServer()
+		const searchHTMLCache = {}
+		app.get("/search", (req, res) => {
+			const originalQuery = req.query.q ?? ""
 
-		app.get("/search", (req, res) =>
-			res.send(searchServer.search(req.query.q ?? "", req.ip))
-		)
+			searchServer.logQuery(originalQuery, req.ip)
+
+			if (!searchHTMLCache[originalQuery])
+				searchHTMLCache[originalQuery] = this.scrollToHtml(
+					searchServer.search(originalQuery)
+				)
+
+			res.send(searchHTMLCache[originalQuery])
+		})
 
 		app.get("/edit/:id", (req, res) => {
 			const { id } = req.params
