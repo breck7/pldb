@@ -67,10 +67,13 @@ code
  npm run tsc
  npm i -g cloc
  npm run build
- (Optional run TESTS): npm run test
- (Following updates): npm run format
+# (Optional run TESTS):
+  npm run test
+# (Following updates):
+npm run format
  npm run local
- -- navigate site in --> http://localhost:4444/index.html
+# navigate site in -->
+ http://localhost:4444/index.html
 
 ## To explore this repo
 
