@@ -53,7 +53,7 @@ testTree.ensureNoErrorsInBlog = areEqual => {
 
 testTree.ensureGoodFilenames = areEqual => {
 	pldbBase.forEach(file =>
-		areEqual(file.id, getCleanedId(file.id), "file name is clean")
+		areEqual(file.id, getCleanedId(file.id), `${file.id} is a valid pldbId`)
 	)
 }
 
