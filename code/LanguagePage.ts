@@ -112,7 +112,7 @@ pipeTable
  )}
 `
   }
-  
+
   get goodreads() {
     const { file } = this
     const { title } = file
