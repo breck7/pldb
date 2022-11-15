@@ -1,6 +1,7 @@
 const dayjs = require("dayjs")
 const lodash = require("lodash")
 const numeral = require("numeral")
+const { SVGS } = require("scroll-cli")
 
 import { jtree } from "jtree"
 const { TreeNode } = jtree
@@ -257,6 +258,9 @@ htmlTitle ${title} - ${lodash.upperFirst(typeName)}
 
 viewSourceUrl https://github.com/breck7/pldb/blob/main/database/things/${id}.pldb
 
+html
+ <div class="quickLinks">${this.quickLinks}</div>
+
 ${this.oneLiner}
 
 ${this.kpiBar}
@@ -341,6 +345,21 @@ image ${image.replace("https://pldb.com/", "../")}
 
   get nextPage() {
     return this.file.nextRanked.permalink
+  }
+
+  get quickLinks() {
+    const { file } = this
+    const links = {
+      home: file.website,
+      github: file.get("githubRepo"),
+      wikipedia: file.get(`wikipedia`),
+      reddit: file.get("subreddit"),
+      twitter: file.get("twitter")
+    }
+    return Object.keys(links)
+      .filter(key => links[key])
+      .map(key => `<a href="${links[key]}">${SVGS[key]}</a>`)
+      .join(" ")
   }
 
   get factsSection() {

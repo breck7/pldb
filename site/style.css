@@ -12,6 +12,16 @@ body {
   border-top-left-radius: 3px;
   border-top-right-radius: 3px;
 }
+.quickLinks a {
+  display: inline-block;
+}
+.quickLinks a svg {
+  width: 24px;
+  height: 24px;
+}
+.quickLinks a svg:hover {
+  filter: drop-shadow(0px 1px 1px rgb(0 0 0 / 0.2));
+}
 .pldbHeader {
   padding: 8px;
   padding-left: 20px;
