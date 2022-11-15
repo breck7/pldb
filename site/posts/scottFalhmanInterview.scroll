@@ -1,10 +1,5 @@
 title A brief interview with Common Lisp creator Dr. Scott Fahlman
-import settings.scroll
-groups index
 date 2022.11.11
-maxColumns 4
-
-openGraphImage https://pldb.com/posts/images/scottFahlman.webp
 
 author https://github.com/hassamalhajaji Hassam Alhajaji
 
@@ -59,4 +54,10 @@ author https://github.com/hassamalhajaji Hassam Alhajaji
  https://pldb.com/languages/python.html Python
 
 image images/scottFahlman.webp
- caption Thank you for your time Dr. Fahlman! :-)
+ caption Thank you for your time Dr. Fahlman! :-) (Image source)
+  https://theculturetrip.com/north-america/usa/pennsylvania/articles/meet-scott-fahlman-the-guy-who-created-the-first-emoticon/ Image source
+openGraphImage https://pldb.com/posts/images/scottFahlman.webp
+
+import settings.scroll
+groups index
+maxColumns 4
