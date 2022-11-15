@@ -3,6 +3,8 @@ appeared 2018
 type idl
 description A type definition syntax to the GraphQL specification.
 reference https://github.com/graphql/graphql-spec/pull/90
+country Various
+originCommunity https://github.com/graphql/
 
 features
  hasComments true

@@ -1,4 +1,12 @@
-# Repo First Commit Monkey patch
+# Setup
+
+## Step 1: creds.json
+
+bashCode
+ mkdir ignore
+ echo '{ "apiToken": "YOURTOKEN", "apiUser": "YOURAPIUSER" }' > ignore/creds.json
+
+## Step 2: Repo First Commit Monkey patch
 
 In file: `crawlers/node_modules/repo-first-commit/dist/repo-first-commit.common.js`
 

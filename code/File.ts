@@ -59,6 +59,8 @@ webApi
 xmlFormat`).toObject()
 
 class PLDBFile extends TreeBaseFile {
+  id = this.getLine() // todo: upstream this to TreeBase.
+
   @includeInCsv
   get pldbId() {
     return this.id

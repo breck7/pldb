@@ -12,6 +12,35 @@ body {
   border-top-left-radius: 3px;
   border-top-right-radius: 3px;
 }
+.quickLinks a {
+  display: inline-block;
+}
+.quickLinks a svg {
+  width: 24px;
+  height: 24px;
+}
+.quickLinks a svg:hover {
+  filter: drop-shadow(0px 1px 1px rgb(0 0 0 / 0.2));
+}
+.prevLang,
+.nextLang {
+  position: absolute;
+  font-size: 14px;
+  top: 10px;
+  color: rgba(204, 204, 204, 0.5);
+}
+.prevLang:hover,
+.nextLang:hover {
+  color: rgba(204, 204, 204, 1);
+}
+.prevLang {
+  left: 2px;
+  text-align: left;
+}
+.nextLang {
+  right: 2px;
+  text-align: right;
+}
 .pldbHeader {
   padding: 8px;
   padding-left: 20px;
@@ -54,9 +83,6 @@ a:hover {
 }
 .gitHubTopRightLinkComponent svg:hover {
   fill: #333;
-}
-.scrollPage {
-  margin: 0;
 }
 .pldbFooter {
   margin-top: 18px;
@@ -129,18 +155,6 @@ a:hover {
   margin-bottom: 8px;
 }
 
-.citationSection {
-  font-size: 10px;
-}
-.citationSection h4 {
-  text-align: center;
-}
-
-.scrollCiteComponent {
-  overflow: scroll;
-  margin: 6px 0;
-}
-
 #monacoContainer {
   display: block;
   height: 10em;
@@ -163,6 +177,10 @@ a:hover {
 .highlightHit {
   font-weight: bold;
   color: #000;
+}
+
+li.scrollParagraphComponent {
+  margin: 0;
 }
 
 .pldbSearchFormPadded {

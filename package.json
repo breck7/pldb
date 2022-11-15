@@ -23,7 +23,8 @@
     "publish": "cd code; npm publish",
     "open": "open site/index.html",
     "local": "./code/BuildServer.js startDevServer",
-    "restart": "pm2 restart 0"
+    "restart": "pm2 restart 0",
+    "search": "./code/SearchServer.js"
   },
   "prettier": {
     "semi": false
@@ -51,7 +52,7 @@
     "lodash": "^4.17.21",
     "monaco-editor": "^0.33.0",
     "numeral": "^2.0.6",
-    "scroll-cli": "^41.0.0",
+    "scroll-cli": "^43.1.0",
     "simple-git": "^3.10.0",
     "simple-statistics": "latest",
     "typescript": ">=3.7.2"

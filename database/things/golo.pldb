@@ -2,6 +2,8 @@ title Golo
 appeared 2012
 type pl
 website http://golo-lang.org
+country Unknown
+originCommunity https://dev.eclipse.org/mailman/listinfo/golo-dev
 domainName golo-lang.org
  registered 2012
 
@@ -26,6 +28,8 @@ features
 lineCommentToken #
 printToken println
 stringToken "
+
+githubRepo https://github.com/eclipse-archived/golo-lang
 
 wikipedia https://en.wikipedia.org/wiki/Golo_(programming_language)
  related jvm java

@@ -1,6 +1,7 @@
 const dayjs = require("dayjs")
 const lodash = require("lodash")
 const numeral = require("numeral")
+const { SVGS } = require("scroll-cli")
 
 import { jtree } from "jtree"
 const { TreeNode } = jtree
@@ -255,7 +256,14 @@ pipeTable
 import settings.scroll
 htmlTitle ${title} - ${lodash.upperFirst(typeName)}
 
+html
+ <a class="prevLang" href="${this.prevPage}">◀</a>
+ <a class="nextLang" href="${this.nextPage}">▶</a>
+
 viewSourceUrl https://github.com/breck7/pldb/blob/main/database/things/${id}.pldb
+
+html
+ <div class="quickLinks">${this.quickLinks}</div>
 
 ${this.oneLiner}
 
@@ -341,6 +349,21 @@ image ${image.replace("https://pldb.com/", "../")}
 
   get nextPage() {
     return this.file.nextRanked.permalink
+  }
+
+  get quickLinks() {
+    const { file } = this
+    const links = {
+      home: file.website,
+      github: file.get("githubRepo"),
+      wikipedia: file.get(`wikipedia`),
+      reddit: file.get("subreddit"),
+      twitter: file.get("twitter")
+    }
+    return Object.keys(links)
+      .filter(key => links[key])
+      .map(key => `<a href="${links[key]}">${SVGS[key]}</a>`)
+      .join(" ")
   }
 
   get factsSection() {
@@ -442,6 +465,18 @@ ${creatorsLinks}
         `PLDB has ${
           specLinks.length
         } specification sites for ${title}: ${specLinks
+          .map(makePrettyUrlLink)
+          .join(", ")}`
+      )
+
+    const emailListLinks = file.getAll("emailList")
+    if (emailListLinks.length === 1)
+      facts.push(`the <a href="${emailListLinks[0]}">${title} mailing list</a>`)
+    else if (emailListLinks.length > 1)
+      facts.push(
+        `PLDB has ${
+          emailListLinks.length
+        } mailing list sites for ${title}: ${emailListLinks
           .map(makePrettyUrlLink)
           .join(", ")}`
       )
