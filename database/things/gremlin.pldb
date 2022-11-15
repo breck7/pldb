@@ -2,6 +2,8 @@ title Gremlin
 appeared 2009
 type queryLanguage
 creators Marko A. Rodriguez
+country Various
+originCommunity https://issues.apache.org/jira/projects/TINKERPOP/issues/TINKERPOP-2814?filter=allopenissues
 
 example
  g.V().hasLabel('movie').values('year').min()
