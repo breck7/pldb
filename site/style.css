@@ -55,9 +55,6 @@ a:hover {
 .gitHubTopRightLinkComponent svg:hover {
   fill: #333;
 }
-.scrollPage {
-  margin: 0;
-}
 .pldbFooter {
   margin-top: 18px;
   padding: 8px;
@@ -129,18 +126,6 @@ a:hover {
   margin-bottom: 8px;
 }
 
-.citationSection {
-  font-size: 10px;
-}
-.citationSection h4 {
-  text-align: center;
-}
-
-.scrollCiteComponent {
-  overflow: scroll;
-  margin: 6px 0;
-}
-
 #monacoContainer {
   display: block;
   height: 10em;
@@ -163,6 +148,10 @@ a:hover {
 .highlightHit {
   font-weight: bold;
   color: #000;
+}
+
+li.scrollParagraphComponent {
+  margin: 0;
 }
 
 .pldbSearchFormPadded {
