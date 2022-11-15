@@ -112,6 +112,27 @@ pipeTable
  )}
 `
   }
+  get engineeringfb() {
+    const { file } = this
+    const { title } = file
+    const engineeringfb = file.getNode(`engineeringfb`)
+    if (!engineeringfb) return ""
+
+    if (engineeringfb.getContent() === "0") return ""
+
+    const tree = TreeNode.fromDelimited(engineeringfb.childrenToString(), "|")
+    tree.forEach(child => {
+      child.set("titleLink", `https://engineering.fb.com/${child.get("iurlid")}`)
+    })
+    return `foldBreak
+## Publications about ${title} from Engineering at Meta
+pipeTable
+ ${cleanAndRightShift(
+   tree.toDelimited("|", ["title", "titleLink", "authors", "year", "likes"])
+ )}
+`
+  }
+
 
   get goodreads() {
     const { file } = this
@@ -292,6 +313,8 @@ ${this.goodreads}
 
 ${this.isbndb}
 
+${this.engineeringfb}
+
 ${this.semanticScholar}
 
 ${this.publications}
@@ -346,7 +369,7 @@ image ${image.replace("https://pldb.com/", "../")}
   get nextPage() {
     return this.file.nextRanked.permalink
   }
-
+  
   get quickLinks() {
     const { file } = this
     const links = {
