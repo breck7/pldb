@@ -256,6 +256,10 @@ pipeTable
 import settings.scroll
 htmlTitle ${title} - ${lodash.upperFirst(typeName)}
 
+html
+ <a class="prevLang" href="${this.prevPage}">◀</a>
+ <a class="nextLang" href="${this.nextPage}">▶</a>
+
 viewSourceUrl https://github.com/breck7/pldb/blob/main/database/things/${id}.pldb
 
 html

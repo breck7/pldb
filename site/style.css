@@ -22,6 +22,25 @@ body {
 .quickLinks a svg:hover {
   filter: drop-shadow(0px 1px 1px rgb(0 0 0 / 0.2));
 }
+.prevLang,
+.nextLang {
+  position: absolute;
+  font-size: 14px;
+  top: 10px;
+  color: rgba(204, 204, 204, 0.5);
+}
+.prevLang:hover,
+.nextLang:hover {
+  color: rgba(204, 204, 204, 1);
+}
+.prevLang {
+  left: 2px;
+  text-align: left;
+}
+.nextLang {
+  right: 2px;
+  text-align: right;
+}
 .pldbHeader {
   padding: 8px;
   padding-left: 20px;
