@@ -358,7 +358,8 @@ image ${image.replace("https://pldb.com/", "../")}
       github: file.get("githubRepo"),
       wikipedia: file.get(`wikipedia`),
       reddit: file.get("subreddit"),
-      twitter: file.get("twitter")
+      twitter: file.get("twitter"),
+      email: file.get("emailList")
     }
     return Object.keys(links)
       .filter(key => links[key])
