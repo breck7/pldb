@@ -1,7 +1,6 @@
 title Everything in the PLDB
 import settings.scroll
 import entitiesImports.scroll
-columnWidth 60
 
 * Here is the list of all COUNT entities in the PLDB. You can also download the whole database as a @CSV@.
  wrap @ a href="../pldb.csv"
