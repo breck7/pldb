@@ -13,6 +13,7 @@ features
  hasLineComments true
   -- A comment
  hasSemanticIndentation false
+ hasCaseInsensitiveIdentifiers true
  hasStrings true
  hasMultiLineComments true
   /* A comment

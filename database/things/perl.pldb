@@ -51,6 +51,7 @@ features
   @array = (1..10);
  hasPrintDebugging true
  hasSemanticIndentation false
+ hasCaseInsensitiveIdentifiers false
  hasWhileLoops true
  hasConditionals true
  hasOctals true

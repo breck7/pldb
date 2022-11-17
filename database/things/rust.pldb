@@ -67,6 +67,7 @@ features
  hasPrintDebugging true
   println!("Hi");
  hasSemanticIndentation false
+ hasCaseInsensitiveIdentifiers false
  hasTypeInference true
  hasLineComments true
   // A comment

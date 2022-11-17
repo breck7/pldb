@@ -20,6 +20,7 @@ features
   C Lines that begin with 'C' (in the first or 'comment' column) are comments
   C
  hasMultiLineComments false
+ hasCaseInsensitiveIdentifiers true
  hasPrintDebugging true
   C     Hello World in Fortran
   
