@@ -1,6 +1,7 @@
 title Golo
 appeared 2012
 type pl
+creators Webmaster
 website http://golo-lang.org
 country Unknown
 originCommunity https://dev.eclipse.org/mailman/listinfo/golo-dev
@@ -30,6 +31,14 @@ printToken println
 stringToken "
 
 githubRepo https://github.com/eclipse-archived/golo-lang
+ firstCommit 2015
+ stars 460
+ forks 92
+ subscribers 65
+ created 2013
+ updated 2022
+ description Golo - a lightweight dynamic language for the JVM.
+ issues 66
 
 wikipedia https://en.wikipedia.org/wiki/Golo_(programming_language)
  related jvm java
