@@ -1,11 +1,8 @@
-title Gödel
+title Gödel (Goedel)
 appeared 1992
 type pl
 creators John Lloyd and Patricia Hill
-website https://dtai.cs.kuleuven.be/projects/ALP/newsletter/archive_93_96/news/books/goedel-book.html
-reference https://dennisdarland.com/my_sw_projects/goedel/v1_4/doc/manual.pdf
-country United Kingdom
-originCommunity University of Bristol
+aka Goedel
 
 wikipedia https://en.wikipedia.org/wiki/Gödel_(programming_language)
  example
@@ -27,6 +24,7 @@ wikipedia https://en.wikipedia.org/wiki/Gödel_(programming_language)
                i Mod d = 0 &
                j Mod d = 0.
  summary Gödel is a declarative, general-purpose programming language that adheres to the logic programming paradigm. It is a strongly typed language, the type system being based on many-sorted logic with parametric polymorphism. It is named after logician Kurt Gödel.
+ reference https://dtai.cs.kuleuven.be/projects/ALP/newsletter/archive_93_96/news/books/goedel-book.html
  pageId 936719
  dailyPageViews 15
  created 2004
@@ -34,9 +32,7 @@ wikipedia https://en.wikipedia.org/wiki/Gödel_(programming_language)
  revisionCount 57
  appeared 1992
 
-hopl https://hopl.info/showlanguage.prx?exp=2072
-
-packageRepository https://www.cs.cmu.edu/afs/cs/project/ai-repository/ai/lang/prolog/impl/other/goedel/0.html
+hopl https://hopl.info/showlanguage.prx?exp=1762
 
 fileType text
 centralPackageRepositoryCount 0
