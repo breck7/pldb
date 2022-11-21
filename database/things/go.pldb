@@ -58,6 +58,7 @@ features
   import m "math"
  hasOperatorOverloading false
  hasSemanticIndentation false
+ hasCaseInsensitiveIdentifiers false
  hasLists true
   myList := []int{1, 2, 3}
  hasTypeInference true

@@ -25,6 +25,7 @@ features
  hasDuckTyping true
  hasSingleDispatch true
  hasRegularExpressionsSyntaxSugar false
+ hasCaseInsensitiveIdentifiers false
  hasBitWiseOperators true
   x << y
  canDoShebang true
