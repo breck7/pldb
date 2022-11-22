@@ -52,6 +52,7 @@ features
   (comment A comment
   )
  hasSemanticIndentation false
+ hasCaseInsensitiveIdentifiers false
  hasHexadecimals true
   ; 0x-?[abcdef\d]+
  hasFloats true
