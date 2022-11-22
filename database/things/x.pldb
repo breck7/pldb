@@ -175,7 +175,6 @@ features
  hasSelfOrThisWord true
   self
  hasBoundedCheckedArrays true
- hasUserDefinedOperators false
  hasTernaryOperators false
  hasStatementTerminatorCharacter true
   ;
@@ -189,7 +188,7 @@ features
   fn main() {
       co my_thread()
   }
- hasVariableAssignment
+ hasVariableAssignment true
   let mut x = 0
   x = 20
  hasTypeAnnotations true
