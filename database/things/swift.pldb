@@ -4,6 +4,7 @@ type pl
 creators Chris Lattner
 website https://swift.org
 documentation https://www.swift.org/documentation/
+emailList https://www.swift.org/blog/forums/
 fileExtensions swift
 originCommunity Apple
 domainName swift.org
@@ -39,6 +40,7 @@ features
   }
  hasOperatorOverloading true
  hasSemanticIndentation false
+ hasCaseInsensitiveIdentifiers false
  hasTypeInference true
  hasLineComments true
   // A comment

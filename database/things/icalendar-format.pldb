@@ -1,6 +1,8 @@
 title iCalendar
 appeared 1998
 type textDataFormat
+country Canada
+originCommunity Open Text Corporation
 
 example
  BEGIN:VCALENDAR
@@ -23,3 +25,5 @@ wikipedia https://en.wikipedia.org/wiki/iCalendar
  pageId 301736
  dailyPageViews -1
  appeared 1998
+
+isOpenSource Yes

@@ -5,6 +5,7 @@ creators Martin Odersky
 website http://www.scala-lang.org
 webRepl https://scastie.scala-lang.org/
 documentation https://docs.scala-lang.org/
+emailList https://www.scala-lang.org/community/
 fileExtensions scala sc
 country Switzerland
 originCommunity École Polytechnique Fédérale de Lausanne
@@ -60,6 +61,7 @@ features
   /* A comment
   */
  hasSemanticIndentation false
+ hasCaseInsensitiveIdentifiers false
  hasBooleans true
  hasWhileLoops true
  hasClasses true

@@ -3,6 +3,7 @@ appeared 1970
 type pl
 creators Niklaus Wirth
 documentation https://www.freepascal.org/docs.html
+emailList https://www.freepascal.org/maillist.html
 fileExtensions pp pas inc
 country Switzerland
 originCommunity ETH Zürich
@@ -35,6 +36,7 @@ features
  hasOperatorOverloading false
  hasPrintDebugging true
  hasSemanticIndentation false
+ hasCaseInsensitiveIdentifiers true
  hasAssignment true
  hasStrings true
  isCaseSensitive false
@@ -186,6 +188,10 @@ indeedJobs pascal developer
  2022 102
 releaseNotesUrl https://www.freepascal.org/news.html
 faqPageUrl https://www.freepascal.org/faq.html
+
+subreddit https://www.reddit.com/r/Pascal
+ memberCount
+  2022 1858
 
 tiobe Pascal
 hopl https://hopl.info/showlanguage.prx?exp=520

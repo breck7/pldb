@@ -2,6 +2,8 @@ title XML
 appeared 1996
 type dataNotation
 documentation https://developer.mozilla.org/en-US/docs/Web/XML/XML_introduction
+emailList http://www.cafeconleche.org/mailinglists.html
+spec https://www.w3.org/TR/xml/
 standsFor Extensible Markup Language
 
 features
@@ -13,6 +15,7 @@ features
   -->
  hasComments true
  hasSemanticIndentation false
+ hasCaseInsensitiveIdentifiers false
 
 multiLineCommentTokens <!-- -->
 

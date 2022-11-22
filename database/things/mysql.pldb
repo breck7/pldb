@@ -4,6 +4,7 @@ type queryLanguage
 creators David Axmark and Michael Widenius
 website http://www.mysql.com/
 documentation https://dev.mysql.com/doc/
+emailList http://mysql.babo.ist/#/en/mailing-lists.html
 originCommunity Oracle
 domainName mysql.com
  registered 1999
@@ -19,6 +20,7 @@ features
   /* A comment
   */
  hasSemanticIndentation false
+ hasCaseInsensitiveIdentifiers true
  hasStrings true
  hasBooleans true
  hasHexadecimals true

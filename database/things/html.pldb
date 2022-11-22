@@ -4,6 +4,8 @@ type textMarkup
 creators Tim Berners-Lee
 webRepl https://playcode.io/html/
 documentation https://devdocs.io/html/
+emailList https://www.w3.org/html/wiki/HTML_Mailing_Lists
+spec https://html.spec.whatwg.org/
 country Switzerland
 originCommunity Conseil Européen pour la Recherche Nucléaire
 
@@ -17,6 +19,7 @@ features
   <!-- A comment
   -->
  hasSemanticIndentation false
+ hasCaseInsensitiveIdentifiers true
 
 multiLineCommentTokens <!-- -->
 

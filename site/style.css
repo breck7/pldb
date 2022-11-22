@@ -25,8 +25,9 @@ body {
 .prevLang,
 .nextLang {
   position: absolute;
-  font-size: 14px;
-  top: 10px;
+  font-size: 16px;
+  line-height: 26px;
+  top: 8px;
   color: rgba(204, 204, 204, 0.5);
 }
 .prevLang:hover,

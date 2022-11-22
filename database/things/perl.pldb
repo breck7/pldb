@@ -4,6 +4,8 @@ type pl
 creators Larry Wall
 website https://www.perl.org
 documentation https://perldoc.perl.org/
+emailList https://lists.perl.org/all.html
+spec https://perldoc.perl.org/File::Spec
 fileExtensions pl pm t pod
 country United States
 originCommunity Unisys
@@ -49,6 +51,7 @@ features
   @array = (1..10);
  hasPrintDebugging true
  hasSemanticIndentation false
+ hasCaseInsensitiveIdentifiers false
  hasWhileLoops true
  hasConditionals true
  hasOctals true

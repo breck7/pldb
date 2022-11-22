@@ -3,6 +3,7 @@ appeared 1974
 type queryLanguage
 creators Donald D. Chamberlin and Raymond F. Boyce
 documentation https://docs.data.world/documentation/sql/concepts/basic/intro.html
+spec https://modern-sql.com/standard
 standsFor Structured Query Language
 country United States
 originCommunity IBM
@@ -12,6 +13,7 @@ features
  hasLineComments true
   -- A comment
  hasSemanticIndentation false
+ hasCaseInsensitiveIdentifiers true
  hasStrings true
  hasMultiLineComments true
   /* A comment

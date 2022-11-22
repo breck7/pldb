@@ -5,6 +5,7 @@ creators Bjarne Stroustrup
 website http://isocpp.org/
 documentation https://devdocs.io/cpp/
 emailList https://lists.isocpp.org/mailman/listinfo.cgi
+spec https://isocpp.org/std/the-standard
 country United States
 originCommunity Bell Labs
 domainName isocpp.org
@@ -17,6 +18,7 @@ visualParadigm false
 features
  hasRegularExpressionsSyntaxSugar false
  hasSemanticIndentation false
+ hasCaseInsensitiveIdentifiers false
  hasImports true
   #include <iostream>
  hasPointers true

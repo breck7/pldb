@@ -5,6 +5,7 @@ creators Rob Pike and Ken Thompson and Robert Griesemer
 website https://go.dev/
 webRepl https://go.dev/play
 documentation https://devdocs.io/go/
+emailList https://groups.google.com/g/golang-nuts
 aka golang
 fileExtensions go
 originCommunity Google
@@ -57,6 +58,7 @@ features
   import m "math"
  hasOperatorOverloading false
  hasSemanticIndentation false
+ hasCaseInsensitiveIdentifiers false
  hasLists true
   myList := []int{1, 2, 3}
  hasTypeInference true

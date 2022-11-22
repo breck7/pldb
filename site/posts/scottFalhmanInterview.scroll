@@ -14,6 +14,8 @@ author https://github.com/hassamalhajaji Hassam Alhajaji
 
 * *Hassam:* Are there any neat ideas from Lisp that have yet to go mainstream?
 
+endSnippet
+
 * *Dr. Fahlman:* It took a long time for Lisp's automatic storage allocation and garbage collection to go mainstream.  This is more than "neat", it eliminates a whole class of bugs that are among the most subtle and difficult to find and fix.  But people resisted this as being too inefficient until Java came along and made the idea more mainstream.
  https://pldb.com/languages/java.html Java
  https://pldb.com/languages/garbage-collection-feature.html garbage collection

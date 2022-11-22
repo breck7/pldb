@@ -3,6 +3,8 @@ appeared 2009
 type pl
 description  OpTT has been implemented in the GURU verified programming language, which includes a type- and proof-checker, and a compiler to efficient C code. In addition to the core OpTT, GURU implements a number of extensions, including ones for verification of programs using mutable state and input/output. This paper gives an introduction to verified programming in GURU.
 reference http://homepage.divms.uiowa.edu/~astump/papers/plpv09.pdf
+country United States and Spain
+originCommunity The University of Iowa and Washington University and Universitat Polit`ecnica de Catalunya
 
 example
  Inductive trie : Fun(A:type).type :=

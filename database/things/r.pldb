@@ -4,6 +4,7 @@ type pl
 creators Ross Ihaka and Robert Gentleman
 website https://www.r-project.org
 documentation https://devdocs.io/r/
+emailList https://www.r-project.org/mail.html
 fileExtensions r R RData rds rda
 country United States
 originCommunity University of Auckland
@@ -40,6 +41,7 @@ features
   # A comment
  hasPrintDebugging true
  hasSemanticIndentation false
+ hasCaseInsensitiveIdentifiers false
  hasAssignment true
  hasBooleans true
  hasWhileLoops true

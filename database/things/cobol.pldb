@@ -3,6 +3,8 @@ appeared 1959
 type pl
 creators Howard Bromberg and Norman Discount and Vernon Reeves and Jean E. Sammet and William Selden and Gertrude Tierney and Grace Hopper
 documentation https://openbase.com/js/cobol/documentation
+emailList https://lists.midrange.com/mailman/listinfo/cobol400-l
+emailList https://lists.openmainframeproject.org/g/wg-cobol/subgroups
 standsFor COmmon Business Oriented Language
 fileExtensions cbl cob cpy
 country United States
@@ -17,6 +19,7 @@ features
   MOVE ABC to XYZ  *> This is a comment.
  hasPrintDebugging true
  hasSemanticIndentation false
+ hasCaseInsensitiveIdentifiers true
  hasBooleans true
  hasFixedPoint true
 

@@ -4,6 +4,7 @@ type queryLanguage
 creators Marc G. Fournier
 website https://www.postgresql.org/
 documentation https://www.postgresql.org/docs/
+emailList https://www.postgresql.org/list/
 aka pgsql
 country United States
 originCommunity University of California
@@ -23,6 +24,7 @@ features
   /* A comment
   */
  hasSemanticIndentation false
+ hasCaseInsensitiveIdentifiers true
  hasStrings true
  hasBooleans true
 

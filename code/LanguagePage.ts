@@ -257,8 +257,8 @@ import settings.scroll
 htmlTitle ${title} - ${lodash.upperFirst(typeName)}
 
 html
- <a class="prevLang" href="${this.prevPage}">◀</a>
- <a class="nextLang" href="${this.nextPage}">▶</a>
+ <a class="prevLang" href="${this.prevPage}">&lt;</a>
+ <a class="nextLang" href="${this.nextPage}">&gt;</a>
 
 viewSourceUrl https://github.com/breck7/pldb/blob/main/database/things/${id}.pldb
 
@@ -358,7 +358,8 @@ image ${image.replace("https://pldb.com/", "../")}
       github: file.get("githubRepo"),
       wikipedia: file.get(`wikipedia`),
       reddit: file.get("subreddit"),
-      twitter: file.get("twitter")
+      twitter: file.get("twitter"),
+      email: file.get("emailList")
     }
     return Object.keys(links)
       .filter(key => links[key])
