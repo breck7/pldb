@@ -118,9 +118,6 @@ features
  hasDirectives true
  hasBitWiseOperators true
   & | ^ << >>
- hasVariableAssignment true
-  let mut x = 10
-  x = 100
  hasOperatorOverloading false
  hasUserDefinedOperators false
  hasAssertStatements true
@@ -178,6 +175,23 @@ features
  hasSelfOrThisWord true
   self
  hasBoundedCheckedArrays true
+ hasUserDefinedOperators false
+ hasTernaryOperators false
+ hasStatementTerminatorCharacter true
+  ;
+ hasStatements true
+ canUseQuestionMarksAsPartOfIdentifier false
+ hasThreads true
+  fn my_thread() {
+      outln("Hello from thread")
+  }
+  
+  fn main() {
+      co my_thread()
+  }
+ hasVariableAssignment
+  let mut x = 0
+  x = 20
  hasTypeAnnotations true
   let x: f64 = 89
  hasAccessModifiers true
@@ -221,7 +235,6 @@ features
   if BOOLEAN_EXPRESSION {
     outln(""Condition is true)
   }
- canUseQuestionMarksAsPartOfIdentifier false
  hasIncrementAndDecrementOperators true
   ++
   --
@@ -308,13 +321,13 @@ example
 
 githubRepo https://github.com/julelang/jule
  firstCommit 2021
- stars 39
- forks 6
- subscribers 5
+ stars 40
+ forks 8
+ subscribers 4
  created 2021
  updated 2022
  description Jule is the simple, efficient, statically typed and compiled system programming language.
- issues 0
+ issues 7
 
 fileType text
 isOpenSource true
