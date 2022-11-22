@@ -67,6 +67,7 @@ features
   import qualified Mod hiding (x,y)
  hasOperatorOverloading true
  hasSemanticIndentation true
+ hasCaseInsensitiveIdentifiers false
  hasTypeInference true
  hasLineComments true
   -- A comment
