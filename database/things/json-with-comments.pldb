@@ -5,6 +5,8 @@ reference https://plus.google.com/118095276221607585885/posts/RK8qyGVaGSr
 reference https://changelog.com/news/jsonc-is-a-superset-of-json-which-supports-comments-6LwR
 reference https://github.com/Microsoft/node-jsonc-parser
 aka jsonc
+country India
+originCommunity https://github.com/muhammadmuzzammil1998/jsonc/issues
 
 supersetOf json
 
@@ -31,6 +33,8 @@ example
  {
    "foobar" : true,       // Not checked in JSHint
  }
+
+githubRepo https://github.com/muhammadmuzzammil1998/jsonc
 
 githubLanguage JSON with Comments
  fileExtensions jsonc code-snippets sublime-build sublime-commands sublime-completions sublime-keymap sublime-macro sublime-menu sublime-mousemap sublime-project sublime-settings sublime-theme sublime-workspace sublime_metrics sublime_session
