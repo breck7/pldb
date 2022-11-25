@@ -4,6 +4,8 @@ type application
 description KiCad writes all files in human readable ASCII. This makes manipulation by hand and scripting very easy.
 reference http://kicad-pcb.org/help/file-formats/d
 fileExtensions sch lib brd kicad_pcb kicad_wks kicad_mod
+country France
+originCommunity Instituts Universitaires de Technologie de Grenoble
 
 example
  (kicad_pcb (version 3)
