@@ -8,7 +8,7 @@ domainName relaxng.org
   2022 2914903
 
 features
- hasComments yes
+ hasComments true
   # Comments start with a # and continue to the end of the line:
  hasLineComments true
   # A comment
