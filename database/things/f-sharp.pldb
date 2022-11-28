@@ -48,6 +48,7 @@ features
      let widgetName = "Widget2"
  hasOperatorOverloading true
  hasSemanticIndentation true
+ hasCaseInsensitiveIdentifiers false
  hasTypeInference true
  hasLineComments true
   // A comment
