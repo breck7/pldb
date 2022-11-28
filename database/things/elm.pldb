@@ -28,6 +28,7 @@ features
   {- A comment
   -}
  hasSemanticIndentation true
+ hasCaseInsensitiveIdentifiers false
  hasStrings true
   "Hello world"
  hasFloats true

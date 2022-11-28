@@ -26,6 +26,7 @@ features
   // A comment
  hasPrintDebugging true
  hasSemanticIndentation false
+ hasCaseInsensitiveIdentifiers false
  hasRegularExpressionsSyntaxSugar true
  hasStrings true
   'Hello world'

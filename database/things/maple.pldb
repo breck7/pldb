@@ -11,6 +11,7 @@ features
   # A comment
  hasPrintDebugging true
  hasSemanticIndentation false
+ hasCaseInsensitiveIdentifiers false
 
 lineCommentToken #
 printToken printf

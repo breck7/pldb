@@ -60,6 +60,7 @@ features
  hasPipes true
   [1,2,3] |> (y -> f(3, y))
  hasSemanticIndentation false
+ hasCaseInsensitiveIdentifiers false
  hasModules true
   module MyModule
   using Lib

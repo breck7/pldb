@@ -20,6 +20,7 @@ features
  hasStreams true
   const stream = require('stream');
  hasPrintDebugging true
+ hasCaseInsensitiveIdentifiers false
  hasStrings true
   "Hello world"
 
