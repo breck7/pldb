@@ -3,6 +3,8 @@ appeared 2004
 type textDataFormat
 description LAV is a plain-text file format for alignments of two DNA sequences. It is the only output format produced by the BLASTZ alignment program (though often converted to AXT format by post-processing programs), and is the default output format for BLASTZ's successor, LASTZ.
 website http://www.bx.psu.edu/miller_lab/dist/lav_format.html
+country United States
+originCommunity The Pennsylvania State University
 
 example
  #:lav
