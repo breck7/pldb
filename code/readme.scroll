@@ -12,12 +12,7 @@ npm install pldb
 - Using:
 
 javascriptCode
-const pldb = require("pldb")
-console.log(
-Object.values(pldb)
-.filter(item => item.type === "pl" && item.appeared === 1972)
-.map(item => item.title)
-)
+ console.log(require("pldb").javascript.appeared)
 
 ## Also available on the web and as CSV:
 
