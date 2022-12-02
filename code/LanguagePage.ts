@@ -288,8 +288,6 @@ ${this.funFactSection}
 
 ${this.keywordsSection}
 
-${this.downloadPageLink}
-
 ${this.featuresTable}
 
 ${this.trendingRepos}
@@ -426,6 +424,10 @@ ${creatorsLinks}
 
     const facts = []
     if (website) facts.push(`the <a href="${website}">${title} website</a>`)
+
+    const downloadPageUrl = file.get("downloadPageUrl")
+    if (downloadPageUrl)
+      facts.push(`<a href="${downloadPageUrl}">${title} downloads page</a>`)
 
     const wikipediaLink = file.get("wikipedia")
     const wikiLink = wikipediaLink ? wikipediaLink : ""
@@ -846,18 +848,6 @@ ${creatorsLinks}
     if (!keywords) return ""
     return `## <a href="../lists/keywords.html?filter=${this.id}">Keywords</a> in ${this.file.title}
 * ${keywords}`
-  }
-
-
-  get downloadPageLink() {
-
-    const { file } = this
-    const { title } = file
-
-  const downloadPage = file.getAll("downloadPageUrl")
-
-  if (downloadPage.length<=0) return ""
-  return `## <a href="${downloadPage[0]}">Download</a> - ${title}`
   }
 
   get funFactSection() {
