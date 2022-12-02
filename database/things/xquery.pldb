@@ -11,6 +11,7 @@ features
   (: Hello World with XQuery :)
  hasLineComments false
  hasSemanticIndentation false
+ hasCaseInsensitiveIdentifiers false
  hasStrings true
   "Hello world"
  hasFloats true
