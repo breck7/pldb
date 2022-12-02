@@ -1,10 +1,10 @@
 importOnly
 
 html
- <div class="pldbSearchForm pldbSearchFormPadded">
-  <form style="display:inline;" method="get" action="https://build.pldb.com/search">
+ <div class="treeBaseSearchForm treeBaseSearchFormPadded">
+  <form style="display:inline;" method="get" action="/search">
    <input name="q" placeholder="Search" autocomplete="off" type="search" id="searchFormInput">
-   <input class="pldbSearchButton" type="submit" value="Search">
+   <input class="searchButton" type="submit" value="Search">
   </form>
  </div>
  <script>document.addEventListener("DOMContentLoaded", evt => initSearchAutocomplete("searchFormInput"))</script>

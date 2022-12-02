@@ -184,12 +184,12 @@ li.scrollParagraphComponent {
   margin: 0;
 }
 
-.pldbSearchFormPadded {
+.treeBaseSearchFormPadded {
   margin-top: 10px;
   margin-bottom: 10px;
 }
 
-.pldbSearchForm #searchFormInput {
+.treeBaseSearchForm #searchFormInput {
   width: 500px;
   height: 50px;
   border: 0;
@@ -197,7 +197,7 @@ li.scrollParagraphComponent {
   font-size: 16px;
 }
 
-.pldbSearchForm .pldbSearchButton {
+.treeBaseSearchForm .searchButton {
   height: 50px;
   font-size: 16px;
   border: 0;
@@ -206,11 +206,11 @@ li.scrollParagraphComponent {
   background-color: rgb(237, 237, 237);
 }
 
-.pldbSearchForm .pldbSearchButton:hover {
+.treeBaseSearchForm .searchButton:hover {
   background-color: rgb(207, 207, 207);
 }
 
-.pldbSearchForm .pldbSearchButton:active {
+.treeBaseSearchForm .searchButton:active {
   background-color: rgb(187, 187, 187);
 }
 

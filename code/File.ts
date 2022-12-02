@@ -66,6 +66,10 @@ class PLDBFile extends TreeBaseFile {
     return this.id
   }
 
+  get webPermalink() {
+    return `https://pldb.com/languages/${this.permalink}`
+  }
+
   get filePath() {
     return this._getFilePath()
   }
