@@ -1,7 +1,7 @@
 conferenceNameCell
  extends stringCell
 conferenceNode
- description Some languages have a recurring conference(s).
+ description Some languages have a recurring conference(s) focused on that specific language.
  cells keywordCell urlCell
  catchAllCellType conferenceNameCell
  extends abstractFactNode
