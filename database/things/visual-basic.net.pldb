@@ -17,6 +17,7 @@ features
  hasComments true
   ' A comment
  hasSemanticIndentation false
+ hasCaseInsensitiveIdentifiers true
  hasBooleans true
 
 lineCommentToken '
