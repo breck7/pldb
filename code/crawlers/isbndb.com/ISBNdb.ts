@@ -16,7 +16,6 @@ const pldbBase = PLDBFolder.getBase().loadFolder()
 
 const superagent = require("superagent")
 const path = require("path")
-const dayjs = require("dayjs")
 
 const creds = JSON.parse(
 	Disk.read(path.join(__dirname, "ignore", "creds.json"))

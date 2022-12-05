@@ -19,7 +19,6 @@ const pldbBase = PLDBFolder.getBase().loadFolder()
 
 const superagent = require("superagent")
 const path = require("path")
-const dayjs = require("dayjs")
 
 const downloadJson = async (url, destination) => {
 	const agent = superagent.agent()
