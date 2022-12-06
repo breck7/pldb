@@ -5,10 +5,14 @@ creators Zoltan Somogyi
 website http://www.mercurylang.org
 documentation https://mercurylang.org/documentation/documentation.html
 fileExtensions m
+country Australia
+originCommunity University of Melbourne
 domainName mercurylang.org
  registered 2011
  awisRank
   2022 7653616
+
+compilesTo c
 
 features
  hasLineComments true
@@ -101,6 +105,8 @@ leachim6 Mercury
   	io.write_string("Hello World\n", !IO).
   
 rosettaCode Mercury
+
+subreddit https://www.reddit.com/r/mercury/
 
 tiobe Mercury
 hopl https://hopl.info/showlanguage.prx?exp=2226
