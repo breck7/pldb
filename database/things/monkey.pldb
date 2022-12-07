@@ -3,6 +3,8 @@ appeared 2011
 type pl
 website https://web.archive.org/web/20171205070657/http://monkey-x.com/
 documentation https://regal-internet-brothers.github.io/monkey/docs/Tutorials_Getting%20started.html
+country United States
+originCommunity https://github.com/Regal-Internet-Brothers
 
 features
  hasLineComments true
@@ -26,6 +28,8 @@ features
 lineCommentToken '
 printToken puts
 stringToken "
+
+githubRepo https://github.com/Regal-Internet-Brothers/webcc-monkey
 
 wikipedia https://en.wikipedia.org/wiki/Monkey_(programming_language)
  example
