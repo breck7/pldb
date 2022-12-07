@@ -3,6 +3,8 @@ appeared 2009
 type pl
 creators Charles Oliver Nutter
 website http://www.mirah.org
+country United States
+originCommunity https://github.com/mirah
 domainName mirah.org
  registered 2010
 
@@ -12,6 +14,8 @@ features
 
 example
  def foo(a:String, b:int)
+
+githubRepo https://github.com/mirah/mirah
 
 wikipedia https://en.wikipedia.org/wiki/Mirah_(programming_language)
  example
