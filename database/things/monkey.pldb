@@ -1,6 +1,7 @@
 title Monkey
 appeared 2011
 type pl
+creators Anthony Diamond
 website https://web.archive.org/web/20171205070657/http://monkey-x.com/
 documentation https://regal-internet-brothers.github.io/monkey/docs/Tutorials_Getting%20started.html
 country United States
@@ -30,6 +31,14 @@ printToken puts
 stringToken "
 
 githubRepo https://github.com/Regal-Internet-Brothers/webcc-monkey
+ firstCommit 2015
+ stars 0
+ forks 0
+ subscribers 3
+ created 2015
+ updated 2016
+ description A modified version of the TransCC "driver" for Monkey's compiler, adapted slightly to work in web browsers.
+ issues 1
 
 wikipedia https://en.wikipedia.org/wiki/Monkey_(programming_language)
  example
