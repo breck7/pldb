@@ -4,6 +4,8 @@ type pl
 creators Lutz Mueller
 website http://www.newlisp.org/
 documentation http://www.newlisp.org/index.cgi?Documentation
+country United States
+originCommunity http://kosh.sdf.org
 domainName newlisp.org
  registered 1999
  awisRank
@@ -16,6 +18,8 @@ features
  hasLineComments true
 
 printToken print
+
+githubRepo https://github.com/kosh04/newlisp
 
 wikipedia https://en.wikipedia.org/wiki/NewLISP
  related lisp common-lisp scheme pascal c tcl s-expressions xml utf-8 tcp udp linux solaris sqlite smtp ftp opengl
@@ -113,6 +117,8 @@ leachim6 NewLISP
   (exit)
   
 rosettaCode NewLISP
+
+tryItOnline http://www.newlisp.org/newlisp-js
 
 twitter https://twitter.com/newlisp
 fileType text

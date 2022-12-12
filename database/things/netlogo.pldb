@@ -4,6 +4,7 @@ type pl
 creators Uri Wilensky
 website http://ccl.northwestern.edu/netlogo/
 country United States
+originCommunity Northwestern University
 
 features
  hasLineComments true
@@ -15,6 +16,8 @@ features
 
 lineCommentToken ;
 booleanTokens true false
+
+githubRepo https://github.com/NetLogo/NetLogo
 
 wikipedia https://en.wikipedia.org/wiki/NetLogo
  related starlogo logo isbn scala java
