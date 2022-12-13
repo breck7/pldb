@@ -1,9 +1,13 @@
 title The New Hampshire X Format
 appeared 1999
 type textDataFormat
-reference https://home.cc.umanitoba.ca/~psgendb/doc/atv/NHX.pdf
+website https://web.archive.org/web/20020819032848/http://www.genetics.wustl.edu/eddy/forester/NHX.html
+reference https://www.cs.cmu.edu/~aiton/split/Manual-2.6.master014.html
+reference https://www.cs.mcgill.ca/~birch/birchhomedir/doc/atv/NHX.pdf
 standsFor New Hampshire X
 aka NHX
+country United States
+originCommunity Washington University in St. Louis
 
 example
  (((ADH2:0.1[&&NHX:S=human:E=1.1.1.1],ADH1:0.11[&&NHX:S=human:E=1.1.1.1]):0
