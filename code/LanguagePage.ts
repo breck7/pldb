@@ -10,7 +10,6 @@ import { PLDBFile } from "./File"
 import {
   cleanAndRightShift,
   getIndefiniteArticle,
-  nameToAnchor,
   toCommaList,
   linkMany,
   makePrettyUrlLink
@@ -383,7 +382,8 @@ image ${image.replace("https://pldb.com/", "../")}
       creatorsStr = ` by ` + creators.join(" and ")
       creatorsLinks = creators
         .map(
-          name => ` link ../lists/creators.html#${nameToAnchor(name)} ${name}`
+          name =>
+            ` link ../lists/creators.html#${lodash.camelCase(name)} ${name}`
         )
         .join("\n")
     }
@@ -423,16 +423,15 @@ ${creatorsLinks}
     const { title, website } = file
 
     const facts = []
-    if (website) facts.push(`the <a href="${website}">${title} website</a>`)
+    if (website) facts.push(`${title} website\n ${website}`)
 
     const downloadPageUrl = file.get("downloadPageUrl")
     if (downloadPageUrl)
-      facts.push(`<a href="${downloadPageUrl}">${title} downloads page</a>`)
+      facts.push(`${title} downloads page\n ${downloadPageUrl}`)
 
     const wikipediaLink = file.get("wikipedia")
     const wikiLink = wikipediaLink ? wikipediaLink : ""
-    if (wikiLink)
-      facts.push(`the <a href="${wikiLink}">${title} Wikipedia page</a>`)
+    if (wikiLink) facts.push(`${title} Wikipedia page\n ${wikiLink}`)
 
     const githubRepo = file.getNode("githubRepo")
     if (githubRepo) {
@@ -448,11 +447,11 @@ ${creatorsLinks}
     }
 
     const gitlabRepo = file.get("gitlabRepo")
-    if (gitlabRepo) facts.push(`<a href="${gitlabRepo}">${title} on GitLab</a>`)
+    if (gitlabRepo) facts.push(`${title} on GitLab\n ${gitlabRepo}`)
 
     const documentationLinks = file.getAll("documentation")
     if (documentationLinks.length === 1)
-      facts.push(`the <a href="${documentationLinks[0]}">${title} docs</a>`)
+      facts.push(`${title} docs\n ${documentationLinks[0]}`)
     else if (documentationLinks.length > 1)
       facts.push(
         `PLDB has ${
@@ -463,8 +462,7 @@ ${creatorsLinks}
       )
 
     const specLinks = file.getAll("spec")
-    if (specLinks.length === 1)
-      facts.push(`the <a href="${specLinks[0]}">${title} specs</a>`)
+    if (specLinks.length === 1) facts.push(`${title} specs\n ${specLinks[0]}`)
     else if (specLinks.length > 1)
       facts.push(
         `PLDB has ${
@@ -476,7 +474,7 @@ ${creatorsLinks}
 
     const emailListLinks = file.getAll("emailList")
     if (emailListLinks.length === 1)
-      facts.push(`the <a href="${emailListLinks[0]}">${title} mailing list</a>`)
+      facts.push(`${title} mailing list\n ${emailListLinks[0]}`)
     else if (emailListLinks.length > 1)
       facts.push(
         `PLDB has ${
@@ -487,8 +485,7 @@ ${creatorsLinks}
       )
 
     const demoVideo = file.get("demoVideo")
-    if (demoVideo)
-      facts.push(`A <a href="${demoVideo}">video demo of ${title}</a>`)
+    if (demoVideo) facts.push(`Video demo of ${title}\n ${demoVideo}`)
 
     const githubRepoCount = file.get("githubLanguage repos")
     if (githubRepoCount) {
@@ -510,7 +507,7 @@ ${creatorsLinks}
       originCommunityStr = originCommunity
         .map(
           name =>
-            `<a href="../lists/originCommunities.html#${nameToAnchor(
+            `<a href="../lists/originCommunities.html#${lodash.camelCase(
               name
             )}">${name}</a>`
         )
@@ -552,8 +549,7 @@ ${creatorsLinks}
       )
 
     const twitter = file.get("twitter")
-    if (twitter)
-      facts.push(`the ${title} team is on <a href="${twitter}">Twitter</a>`)
+    if (twitter) facts.push(`${title} on Twitter\n ${twitter}`)
 
     const conferences = file.getNodesByGlobPath("conference")
     if (conferences.length) {

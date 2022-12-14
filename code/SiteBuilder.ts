@@ -29,7 +29,6 @@ const publishedLanguagesFolder = path.join(siteFolder, "languages") // Todo: eve
 import {
   isLanguage,
   benchmark,
-  nameToAnchor,
   benchmarkResults,
   listGetters,
   lastCommitHashInFolder,
@@ -471,7 +470,7 @@ class SiteBuilder {
       const count = entities[name].length
       const top = -Math.min(...entities[name].map(lang => lang.languageRank))
 
-      const wrappedName = `<a name='${nameToAnchor(name)}' />${name}`
+      const wrappedName = `<a name='${lodash.camelCase(name)}' />${name}`
 
       return { name: wrappedName, languages, count, top }
     })
@@ -526,7 +525,7 @@ class SiteBuilder {
       })
 
       const person = wikipediaLinks.nodesThatStartWith(name)[0]
-      const anchorTag = nameToAnchor(name)
+      const anchorTag = lodash.camelCase(name)
       const wrappedName = !person
         ? `<a name='${anchorTag}' />${name}`
         : `<a name='${anchorTag}' href='https://en.wikipedia.org/wiki/${person.get(

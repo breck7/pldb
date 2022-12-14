@@ -197,8 +197,6 @@ const nodeToFlatObject = parentNode => {
   return newObject
 }
 
-const nameToAnchor = (name: string) => name.replace(/ /g, "_")
-
 const getJoined = (node, keywords): string => {
   const words = keywords
     .map(word => node.get(word) || "")
@@ -328,7 +326,6 @@ const imemo = <Type>(
 export {
   cleanAndRightShift,
   toCommaList,
-  nameToAnchor,
   getIndefiniteArticle,
   replaceNode,
   nodeToFlatObject,
