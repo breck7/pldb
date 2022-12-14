@@ -11,7 +11,7 @@ import {
   cleanAndRightShift,
   getIndefiniteArticle,
   toCommaList,
-  linkMany,
+  linkManyAftertext,
   makePrettyUrlLink
 } from "./utils"
 
@@ -647,7 +647,7 @@ ${creatorsLinks}
       )
 
     const hopl = file.get("hopl")
-    if (hopl) facts.push(`${title} is listed on <a href="${hopl}">HOPL</a>`)
+    if (hopl) facts.push(`${title} on HOPL\n ${hopl}`)
 
     const tiobe = file.get("tiobe")
     const tiobeRank = file.get("tiobe currentRank")
@@ -661,38 +661,37 @@ ${creatorsLinks}
       )
 
     const esolang = file.get("esolang")
-    if (esolang)
-      facts.push(`${title} is listed on <a href="${esolang}">Esolang</a>`)
+    if (esolang) facts.push(`${title} on Esolang\n ${esolang}`)
 
     const ubuntu = file.get("ubuntuPackage")
     if (ubuntu)
       facts.push(
-        `There is an <a href="https://packages.ubuntu.com/jammy/${ubuntu}">Ubuntu package</a> for ${title}`
+        `${title} Ubuntu package\n https://packages.ubuntu.com/jammy/${ubuntu}`
       )
 
     const antlr = file.get("antlr")
     if (antlr)
       facts.push(
-        `Here is an <a href="antlr.html">ANTLR</a> <a href="${antlr}">grammar</a> for ${title}`
+        `<a href="antlr.html">ANTLR</a> <a href="${antlr}">grammar</a> for ${title}`
       )
 
     // todo: handle multiple
     const lsp = file.get("languageServerProtocolProject")
     if (lsp)
       facts.push(
-        `Here is a ${title} <a href="language-server-protocol.html">LSP</a> <a href="${lsp}">implementation</a>`
+        `${title} <a href="language-server-protocol.html">LSP</a> <a href="${lsp}">implementation</a>`
       )
 
     const codeMirror = file.get("codeMirror")
     if (codeMirror)
       facts.push(
-        `There is a <a href="codemirror.html">CodeMirror</a> <a href="https://github.com/codemirror/codemirror5/tree/master/mode/${codeMirror}">package</a> for syntax highlighting ${title}`
+        `<a href="codemirror.html">CodeMirror</a> <a href="https://github.com/codemirror/codemirror5/tree/master/mode/${codeMirror}">package</a> for syntax highlighting ${title}`
       )
 
     const monaco = file.get("monaco")
     if (monaco)
       facts.push(
-        `There is a <a href="monaco.html">Monaco</a> <a href="https://github.com/microsoft/monaco-editor/tree/main/src/basic-languages/${monaco}">package</a> for syntax highlighting ${title}`
+        `<a href="monaco.html">Monaco</a> <a href="https://github.com/microsoft/monaco-editor/tree/main/src/basic-languages/${monaco}">package</a> for syntax highlighting ${title}`
       )
 
     const pygmentsHighlighter = file.get("pygmentsHighlighter")
@@ -738,45 +737,36 @@ ${creatorsLinks}
       facts.push(
         `There are ${
           packageRepos.length
-        } central package repositories for ${title}: ${linkMany(packageRepos)}`
+        } central package repositories for ${title}: ${linkManyAftertext(
+          packageRepos
+        )}`
       )
 
     const annualReport = file.getAll("annualReportsUrl")
 
     if (annualReport.length >= 1)
-      facts.push(
-        `Annual Reports for ${title}<a href="${annualReport[0]}">(Link)</a>`
-      )
+      facts.push(`Annual Reports for ${title}\n ${annualReport[0]}`)
 
     const releaseNotes = file.getAll("releaseNotesUrl")
 
     if (releaseNotes.length >= 1)
-      facts.push(
-        `Release Notes for ${title}<a href="${releaseNotes[0]}">(Link)</a>`
-      )
+      facts.push(`Release Notes for ${title}\n ${releaseNotes[0]}`)
     const officialBlog = file.getAll("officialBlogUrl")
 
     if (officialBlog.length >= 1)
-      facts.push(
-        `Official Blog page for ${title}<a href="${officialBlog[0]}">(Link)</a>`
-      )
+      facts.push(`Official Blog page for ${title}\n ${officialBlog[0]}`)
     const eventsPage = file.getAll("eventsPageUrl")
 
     if (eventsPage.length >= 1)
-      facts.push(
-        `Events page for ${title}<a href="${eventsPage[0]}">(Link)</a>`
-      )
+      facts.push(`Events page for ${title}\n ${eventsPage[0]}`)
 
     const faqPage = file.getAll("faqPageUrl")
 
     if (faqPage.length >= 1)
-      facts.push(
-        `Frequently ask questions(FAQ) page and Forums for ${title}<a href="${faqPage[0]}">(Link)</a>`
-      )
+      facts.push(`Frequently Asked Questions for ${title}\n ${faqPage[0]}`)
 
     const cheatSheetUrl = file.get("cheatSheetUrl")
-    if (cheatSheetUrl)
-      facts.push(`${title} <a href="${cheatSheetUrl}">cheat sheet</a>`)
+    if (cheatSheetUrl) facts.push(`${title} cheat sheet\n ${cheatSheetUrl}`)
 
     const indeedJobs = file.getNode("indeedJobs")
     if (indeedJobs) {
@@ -820,13 +810,13 @@ ${creatorsLinks}
 
     if (semanticScholarReferences.length)
       facts.push(
-        `Read more about ${title} on Semantic Scholar: ${linkMany(
+        `Read more about ${title} on Semantic Scholar: ${linkManyAftertext(
           semanticScholarReferences
         )}`
       )
     if (nonSemanticScholarReferences.length)
       facts.push(
-        `Read more about ${title} on the web: ${linkMany(
+        `Read more about ${title} on the web: ${linkManyAftertext(
           nonSemanticScholarReferences
         )}`
       )

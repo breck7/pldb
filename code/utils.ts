@@ -14,8 +14,9 @@ const ensureDelimiterNotFound = (strings: string[], delimiter: string) => {
   if (hit) throw `Delimiter "${delimiter}" found in hit`
 }
 
-const linkMany = (links: string[]) =>
-  links.map((link, index) => `<a href="${link}">${index + 1}</a>`)
+const linkManyAftertext = (links: string[]) =>
+  links.map((link, index) => `${index + 1}.`).join(" ") + // notice the dot is part of the link. a hack to make it more unique for aftertext matching.
+  links.map((link, index) => `\n ${link} ${index + 1}.`)
 
 const runCommand = (instance, command = "", param = undefined) => {
   const run = name => {
@@ -334,7 +335,7 @@ export {
   getCleanedId,
   runCommand,
   PoliteCrawler,
-  linkMany,
+  linkManyAftertext,
   benchmark,
   benchmarkResults,
   imemo,
