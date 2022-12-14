@@ -412,7 +412,8 @@ ${creatorsLinks}
         wikipediaSummary
           .split(". ")
           .slice(0, 3)
-          .join(". ") + `. <a href="${wpLink}">Read more on Wikipedia...</a>`
+          .join(". ") +
+        `. Read more on Wikipedia...\n ${wpLink} Read more on Wikipedia...`
     else if (authoredDescription) description = authoredDescription
     else if (ghDescription) description = ghDescription
     return `* ${description}`
