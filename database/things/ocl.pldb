@@ -4,6 +4,8 @@ type pl
 description The Object Constraint Language (OCL) is a textual sublanguage of the Unified Modelling Language (UML). It can be used to express additional constraints on UML models that cannot be expressed, or are very difficult to express, with the graphical means provided by UML. OCL is based on first-order predicate logic but it uses a syntax similar to programming languages and closely related to the syntax of UML. It is, thus, more adequate for every-day modelling than pure first-order predicate logic.
 reference http://www-st.inf.tu-dresden.de/ocl/
 reference https://www.omg.org/spec/OCL/2.2/PDF
+country United States
+originCommunity IBM
 
 features
  hasLineComments true
