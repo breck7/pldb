@@ -55,6 +55,4 @@ bashCode
  crontab -e
 
 cronCode
- 0 * * * * goaccess /var/log/nginx/access.log -o /var/www/html/nginxDaily.html --log-format=COMBINED --anonymize-ip --html-report-title='~24 hours traffic to PLDB.com'
- 0 * * * * zcat -f /var/log/nginx/access.log* | goaccess -o /var/www/html/nginxDailyAll.html --log-format=COMBINED --anonymize-ip --html-report-title='~14 days traffic to PLDB.com'
-
+ 0 * * * * /var/www/html/updateStats.sh
