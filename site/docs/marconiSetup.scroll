@@ -55,4 +55,4 @@ bashCode
  crontab -e
 
 cronCode
- 0 * * * * /var/www/html/updateStats.sh
+ 0 * * * * /var/www/html/updateStats.sh >> /var/www/html/cron.log  2>&1
