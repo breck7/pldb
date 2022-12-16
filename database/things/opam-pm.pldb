@@ -2,7 +2,11 @@ title opam-pm
 appeared 2012
 type packageManager
 website https://opam.ocaml.org/
+country Various
+originCommunity https://github.com/ocaml
 domainName opam.ocaml.org
+
+githubRepo https://github.com/ocaml/opam
 
 packageCount 2224
 packageInstallCount 10000000
