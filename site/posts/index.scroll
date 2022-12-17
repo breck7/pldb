@@ -1,2 +1,4 @@
-import settings.scroll
-template snippets index
+import header.scroll
+title PLDB.com - a Programming Language DataBase
+snippets index
+import ../footer.scroll

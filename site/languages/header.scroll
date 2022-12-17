@@ -1,6 +1,6 @@
 importOnly
-import ../settings.scroll
+import ../header.scroll
 replace BASE_URL ..
 viewSourceBaseUrl https://github.com/breck7/pldb/blob/main/database/things/
 baseUrl https://pldb.com/languages/
-maxColumns 4
+startColumns 4

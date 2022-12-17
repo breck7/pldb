@@ -1,5 +1,6 @@
+import header.scroll
 title Everything in the PLDB
-import settings.scroll
+groups index
 import entitiesImports.scroll
 
 * Here is the list of all COUNT entities in the PLDB. You can also download the whole database as a @CSV@.
@@ -7,7 +8,6 @@ import entitiesImports.scroll
 
 * PLDB is focused on general purpose high-level programming languages, but also includes low-level languages and some notable markup languages, protocols, file formats, libraries, and applications.
 
-groups index
 endSnippet
 
 TABLE

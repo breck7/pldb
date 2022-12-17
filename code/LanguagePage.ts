@@ -49,8 +49,7 @@ class LanguagePageTemplate {
         child.set("repo", child.get("name"))
         child.set("repoLink", child.get("url"))
       })
-      return `foldBreak
-## Trending <a href="https://github.com/trending/${githubId}?since=monthly">${title} repos</a> on GitHub
+      return `## Trending <a href="https://github.com/trending/${githubId}?since=monthly">${title} repos</a> on GitHub
 commaTable
  ${cleanAndRightShift(
    tree.toDelimited(",", ["repo", "repoLink", "stars", "description"])
@@ -75,8 +74,7 @@ commaTable
         `https://www.semanticscholar.org/paper/${child.get("paperId")}`
       )
     })
-    return `foldBreak
-## Publications about ${title} from Semantic Scholar
+    return `## Publications about ${title} from Semantic Scholar
 pipeTable
  ${cleanAndRightShift(
    tree.toDelimited("|", [
@@ -103,8 +101,7 @@ pipeTable
     tree.forEach(child => {
       child.set("titleLink", `https://isbndb.com/book/${child.get("isbn13")}`)
     })
-    return `foldBreak
-## Books about ${title} from ISBNdb
+    return `## Books about ${title} from ISBNdb
 pipeTable
  ${cleanAndRightShift(
    tree.toDelimited("|", ["title", "titleLink", "authors", "year", "publisher"])
@@ -127,8 +124,7 @@ pipeTable
           child.get("author")}`
       )
     })
-    return `foldBreak
-## Books about ${title} on goodreads
+    return `## Books about ${title} on goodreads
 pipeTable
  ${cleanAndRightShift(
    tree.toDelimited("|", [
@@ -161,10 +157,9 @@ pipeTable
             : child.get("url")
         )
       })
-      return `foldBreak
-## ${dblp.get("hits")} publications about ${title} on <a href="${file.get(
-        "dblp"
-      )}">DBLP</a>
+      return `## ${dblp.get(
+        "hits"
+      )} publications about ${title} on <a href="${file.get("dblp")}">DBLP</a>
 pipeTable
  ${cleanAndRightShift(tree.toDelimited("|", ["title", "titleLink", "year"]))}
 `
@@ -208,8 +203,7 @@ Token ${supported && tokenPath ? file.get(tokenPath) ?? "" : ""}`
         .setChildren(node.childrenToString())
     })
 
-    return `foldBreak
-## Language <a href="../lists/features.html">features</a>
+    return `## Language <a href="../lists/features.html">features</a>
 
 treeTable
  ${table
@@ -250,10 +244,12 @@ pipeTable
 
     if (title.includes("%20")) throw new Error("bad space in title: " + title)
 
-    return `title ${title}
+    return `import header.scroll
 
-import settings.scroll
-htmlTitle ${title} - ${lodash.upperFirst(typeName)}
+title ${title}
+
+title ${title} - ${lodash.upperFirst(typeName)}
+ hidden
 
 html
  <a class="prevLang" href="${this.prevPage}">&lt;</a>

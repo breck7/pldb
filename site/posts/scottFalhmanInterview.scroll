@@ -1,5 +1,7 @@
+import header.scroll
 title A brief interview with Common Lisp creator Dr. Scott Fahlman
 date 2022.11.11
+groups index
 
 author https://github.com/hassamalhajaji Hassam Alhajaji
 
@@ -59,7 +61,3 @@ image images/scottFahlman.webp
  caption Thank you for your time Dr. Fahlman! :-) (Image source)
   https://theculturetrip.com/north-america/usa/pennsylvania/articles/meet-scott-fahlman-the-guy-who-created-the-first-emoticon/ Image source
 openGraphImage https://pldb.com/posts/images/scottFahlman.webp
-
-import settings.scroll
-groups index
-maxColumns 4

@@ -1,5 +1,5 @@
+import header.scroll
 title Mirrors
-import settings.scroll
 groups index
 
 * The <a href="../languages/url.html">URL</a> for the official PLDB site is <a href="https://pldb.com">https://pldb.com</a>. <a href="../languages/dns.html">DNS</a> will take that domain name and send your browser an <a href="../languages/ipv4.html">IPv4</a> address. Your browser will send a request to that address which will reach our virtual server running Nginx (nicknamed _Marconi_) running in a Digital Ocean datacenter. _Marconi_ will send you the HTML, CSS, Javascript, PNGs, SVGs and JSON that make up the built website.

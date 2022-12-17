@@ -1,5 +1,6 @@
+import header.scroll
 title All Languages
-import settings.scroll
+groups index
 import languagesImports.scroll
 
 * PLDB currently has COUNT languages.
@@ -10,7 +11,6 @@ import languagesImports.scroll
 * You can also download this list as a CSV file.
  link ../languages.csv CSV file
 
-groups index
 endSnippet
 
 TABLE

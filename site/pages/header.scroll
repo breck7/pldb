@@ -1,8 +1,6 @@
 importOnly
-import ../settings.scroll
+import ../header.scroll
 replace BASE_URL ..
 viewSourceBaseUrl https://github.com/breck7/pldb/blob/main/site/pages/
-maxColumns 1
-columnWidth 60
 keyboardNav
 baseUrl https://pldb.com/pages/

@@ -1,5 +1,6 @@
+import header.scroll
 title Programming Language Academic Journals
-import settings.scroll
+groups index
 
 * A list of academic journals about programming language theory and design.
 
@@ -12,5 +13,4 @@ pipeTable
  International Journal of Programming Languages and Applications|http://airccse.org/journal/ijpla/ijpla.html|2011||||variable||IJPLA
  Proceedings of the ACM on Programming Languages|https://dl.acm.org/journal/pacmpl|2017||||variable|yes|
 
-groups index
 tableSearch

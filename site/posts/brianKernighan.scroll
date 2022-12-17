@@ -1,3 +1,5 @@
+import header.scroll
+groups index
 title A brief interview with AWK creator Dr. Brian Kernighan
 date 11/15/2022
 
@@ -46,6 +48,4 @@ image images/brianKernighan.gif
   https://commons.wikimedia.org/wiki/File:Brian_kernighan2.gif Wikimedia Commmons
 openGraphImage https://pldb.com/posts/images/brianKernighan.gif
 
-maxColumns 4
-import settings.scroll
-groups index
+import ../footer.scroll

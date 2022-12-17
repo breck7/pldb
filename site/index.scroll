@@ -1,4 +1,4 @@
-import settings.scroll
+import header.scroll
 
 # %~P~rogramming ~L~anguage ~D~ata~B~ase%
  wrap ~ span style="color:black;"
@@ -25,6 +25,3 @@ html
 
 html
  <br><a href="./pages/grunt-work-for-pldb.html">Grunt work for PLDB</a>
-
-maxColumns 1
-columnWidth 160

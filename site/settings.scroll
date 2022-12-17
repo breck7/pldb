@@ -6,14 +6,9 @@ replaceDefault FACT_PRICE $10
 
 import buildLogImports.scroll
 
-siteTitle PLDB: A Programming Language Database
-siteDescription PLDB: a Programming Language Database. Build the next great programming language.
+description PLDB: a Programming Language Database. Build the next great programming language.
 github https://github.com/breck7/pldb
 viewSourceBaseUrl https://github.com/breck7/pldb/blob/main/site/
 email feedback@pldb.com
 baseUrl https://pldb.com/
-scrollCss 
-maxColumns 2
-import header.scroll
-import footer.scroll
 import scrollExtensions.scroll

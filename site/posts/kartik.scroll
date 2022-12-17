@@ -1,4 +1,6 @@
+import header.scroll
 title A brief interview with Mu creator Dr. Kartik Agaram
+groups index
 date 11/22/2022
 
 author https://github.com/hassamalhajaji Hassam Alhajaji
@@ -56,7 +58,3 @@ endSnippet
 image images/kartikAgaram.png
  caption You have my heartfelt gratitude Dr. Agaram!
 openGraphImage https://pldb.com/posts/images/kartikAgaram.png
-
-maxColumns 4
-import settings.scroll
-groups index

@@ -1,13 +1,5 @@
 importOnly
 
-foldBreakNode
- cruxFromId
- extends abstractScrollNode
- description Start a new section.
- javascript
-  compile() {
-   return `</div><div class="scrollFilePageComponent" style="column-count:1;">`
-  }
 tableSearchNode
  cruxFromId
  extends abstractScrollNode
