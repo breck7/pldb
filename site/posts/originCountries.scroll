@@ -6,7 +6,8 @@ openGraphImage https://pldb.com/posts/images/originCountries.png
 
 author https://github.com/breck7 Breck Yunits
 
-* dateline
+* 
+ dateline
 
 image images/originCountries.svg
  caption The above SVG is also available as a png.
@@ -15,3 +16,5 @@ image images/originCountries.svg
 * The code for the visualization above was written in the Explorer language.
  link explorers/originCountries.explorer code
  link BASE_URL/languages/explorer.html Explorer language
+
+import ../footer.scroll

@@ -1,11 +1,13 @@
 import header.scroll
 title Competitions
+groups index
 
 * A list of active programming competition sites.
 
-groups index
 endSnippet
 
 import competitionsData.scroll
 
 tableSearch
+
+import ../footer.scroll

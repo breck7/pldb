@@ -6,7 +6,8 @@ openGraphImage https://pldb.com/posts/images/languageTrends.png
 
 author https://github.com/breck7 Breck Yunits
 
-* dateline
+* 
+ dateline
 
 image images/languageTrends.svg
  caption The above SVG is also available as a png.
@@ -15,3 +16,5 @@ image images/languageTrends.svg
 * The code for the visualization above was written in the Explorer language.
  link code explorers/number-of-programming-languages.explorer
  link BASE_URL/languages/explorer.html Explorer language
+
+import ../footer.scroll

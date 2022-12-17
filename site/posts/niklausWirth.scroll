@@ -1,6 +1,8 @@
 import header.scroll
 title A brief interview with Pascal and Oberon creator Dr. Niklaus Wirth
 date 11/18/2022
+groups index
+openGraphImage https://pldb.com/posts/images/wirth.jpeg
 
 author https://github.com/hassamalhajaji Hassam Alhajaji
 
@@ -36,6 +38,5 @@ endSnippet
 image images/wirth.jpeg
  caption Thank you for your time Dr. Wirth! Image source
   https://elmidiaspora.az/demo.ict.az/en/news/2139 Image source
-openGraphImage https://pldb.com/posts/images/wirth.jpeg
 
-groups index
+import ../footer.scroll

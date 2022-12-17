@@ -79,3 +79,5 @@ ohayoCode
      columns.setType titleLength number
       filter.where titleLength < 2
        tables.basic
+
+import ../footer.scroll
