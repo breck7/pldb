@@ -283,6 +283,8 @@ ${this.funFactSection}
 
 ${this.keywordsSection}
 
+endColumns
+
 ${this.featuresTable}
 
 ${this.trendingRepos}
@@ -298,6 +300,8 @@ ${this.publications}
 ${this.hackerNewsTable}
 
 keyboardNav ${this.prevPage} ${this.nextPage}
+
+import ../footer.scroll
 `.replace(/\n\n\n+/g, "\n\n")
   }
 
