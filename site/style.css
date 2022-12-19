@@ -1,17 +1,24 @@
 body {
   font-family: Helvetica;
 }
-.exampleCodeHeader {
-  font-size: 80%;
-  text-align: center;
-  background: rgba(224, 224, 224, 0.4);
-  border: 1px solid rgba(204, 204, 204, 0.8);
-  border-bottom: 0;
-  margin-bottom: -7px;
-  padding: 4px 2px;
-  border-top-left-radius: 3px;
-  border-top-right-radius: 3px;
+
+a {
+  text-decoration: none;
 }
+a:hover {
+  text-decoration: underline;
+}
+
+/* Index page */
+.pldbHomepageLink {
+  color: #000;
+  text-decoration: none;
+  display: block;
+}
+
+/* End index page */
+
+/* Language page */
 .quickLinks a {
   display: inline-block;
 }
@@ -42,34 +49,32 @@ body {
   right: 2px;
   text-align: right;
 }
-.pldbHeader {
-  padding: 8px;
-  padding-left: 20px;
-  margin-bottom: 10px;
+
+.exampleCodeHeader {
+  font-size: 80%;
+  text-align: center;
+  background: rgba(224, 224, 224, 0.4);
+  border: 1px solid rgba(204, 204, 204, 0.8);
+  border-bottom: 0;
+  margin-bottom: -7px;
+  padding: 4px 2px;
+  border-top-left-radius: 3px;
+  border-top-right-radius: 3px;
 }
-.pldbHeader a {
-  color: black;
-  margin-right: 5px;
-  font-size: 16px;
+
+#monacoContainer {
+  display: block;
+  height: 10em;
+  border: 1px solid grey;
+  margin-top: 8px;
 }
-.languageSection {
-  border: 1px solid black;
-  padding: 5px;
-  break-inside: avoid;
-}
+
+/* End language page */
+
+/* Header & footer */
 .logoFont {
   font-weight: bold;
   font-family: Tahoma, Arial;
-}
-a {
-  text-decoration: none;
-}
-a:hover {
-  text-decoration: underline;
-}
-.pldbHeader a:hover,
-.pldbFooter a:hover {
-  color: black;
 }
 .gitHubTopRightLinkComponent {
   text-align: right;
@@ -84,6 +89,20 @@ a:hover {
 }
 .gitHubTopRightLinkComponent svg:hover {
   fill: #333;
+}
+.pldbHeader {
+  padding: 8px;
+  padding-left: 20px;
+  margin-bottom: 10px;
+}
+.pldbHeader a {
+  color: black;
+  margin-right: 5px;
+  font-size: 16px;
+}
+.pldbHeader a:hover,
+.pldbFooter a:hover {
+  color: black;
 }
 .pldbFooter {
   margin-top: 18px;
@@ -100,6 +119,8 @@ a:hover {
   font-size: 16px;
   line-height: 1.5;
 }
+
+/* End header + footer */
 
 /*START_AUTOCOMPLETE*/
 /*CSS for autocomplete library https://kraaden.github.io/autocomplete/*/
@@ -130,9 +151,7 @@ a:hover {
 }
 /*END_AUTOCOMPLETE*/
 
-.scrollFilePageTitle {
-  font-size: 36px;
-}
+/* Scroll overrides */
 
 .scrollTableComponent {
   table-layout: auto;
@@ -156,13 +175,13 @@ a:hover {
   margin-bottom: 8px;
 }
 
-#monacoContainer {
-  display: block;
-  height: 10em;
-  border: 1px solid grey;
-  margin-top: 8px;
+li.scrollParagraphComponent {
+  margin: 0;
 }
 
+/* End scroll overrides */
+
+/* todo: should be in treebase code? */
 .searchResultsHeader {
   color: #333;
   margin-bottom: 3px;
@@ -178,10 +197,6 @@ a:hover {
 .highlightHit {
   font-weight: bold;
   color: #000;
-}
-
-li.scrollParagraphComponent {
-  margin: 0;
 }
 
 .treeBaseSearchFormPadded {
@@ -214,8 +229,4 @@ li.scrollParagraphComponent {
   background-color: rgb(187, 187, 187);
 }
 
-.pldbHomepageLink {
-  color: #000;
-  text-decoration: none;
-  display: block;
-}
+/* end search css */

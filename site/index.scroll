@@ -1,5 +1,11 @@
 import header.scroll
 
+html
+ <center>
+
+title PLDB: a Programming Language DataBase
+ hidden
+
 # %~P~rogramming ~L~anguage ~D~ata~B~ase%
  wrap ~ span style="color:black;"
  wrap % span style="color:#828282;"
@@ -25,5 +31,8 @@ html
 
 html
  <br><a href="./pages/grunt-work-for-pldb.html">Grunt work for PLDB</a>
+
+html
+ </center>
 
 import footer.scroll
