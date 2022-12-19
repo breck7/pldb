@@ -257,6 +257,8 @@ html
 
 viewSourceUrl https://github.com/breck7/pldb/blob/main/database/things/${id}.pldb
 
+startColumns 4
+
 html
  <div class="quickLinks">${this.quickLinks}</div>
 
