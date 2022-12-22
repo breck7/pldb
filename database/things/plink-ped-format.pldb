@@ -5,6 +5,8 @@ description The "ped" file is a commonly used format for holding pedigree and ge
 website https://www.cog-genomics.org/plink2/formats#ped
 reference https://www.sciencedirect.com/science/article/pii/S0002929707613524
 fileExtensions ped
+country South Korea
+originCommunity Kyung Hee University
 
 example
  1 1 0 0 1  0  G G  2 2  C C
@@ -13,6 +15,8 @@ example
  2 1 0 0 1  0  A A  2 2  0 0
  2 2 0 0 2  2  A A  2 2  0 0
  2 3 1 2 1  2  A A  2 2  A A
+
+githubRepo https://github.com/WonyoungCho/plink/issues
 
 fileType text
 centralPackageRepositoryCount 0
