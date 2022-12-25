@@ -1,6 +1,8 @@
 title Textile
 appeared 2002
 type textMarkup
+creators netcarver
+website https://textile-lang.com
 
 example
  """
@@ -13,7 +15,15 @@ example
  Link to "Slashdot":http://slashdot.org/
  """
 
-githubRepo https://github.com/textile
+githubRepo https://github.com/textile/php-textile
+ firstCommit 2010
+ stars 208
+ forks 48
+ subscribers 28
+ created 2010
+ updated 2022
+ description Textile markup language parser for PHP
+ issues 25
 
 wikipedia https://en.wikipedia.org/wiki/Textile_(markup_language)
  related markdown php perl python ruby javascript csharp html qt ios android
