@@ -3,6 +3,8 @@ appeared 1991
 type pl
 reference http://www.povray.org/documentation/view/3.6.0/224/
 aka POVRay
+country United States
+originCommunity Persistence of Vision Raytracer Pty. Ltd
 
 features
  hasLineComments true
@@ -20,6 +22,8 @@ features
 
 lineCommentToken //
 multiLineCommentTokens /* */
+
+githubRepo https://github.com/POV-Ray/povray
 
 githubLanguage POV-Ray SDL
  fileExtensions pov inc
