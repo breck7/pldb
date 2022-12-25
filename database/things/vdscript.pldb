@@ -1,0 +1,31 @@
+title vdscript
+appeared 2000
+type pl
+screenshot https://upload.wikimedia.org/wikipedia/commons/4/4c/VirtualDub_1.10.4_20210103.png
+creators Avery Lee
+description  A video capture utility for 32-bit and 64-bit Windows platforms
+website https://virtualdub.org
+documentation https://virtualdub.org/docs/vdscript.txt
+fileExtensions VirtualDub.jobs
+country United States
+originCommunity https://virtualdub.org/virtualdub_history.html
+latestRelease 2013
+
+writtenIn cpp
+
+stringToken true
+keywords declare
+
+example
+ declare foo;
+ foo = VirtualDub.video.filters;
+ foo.Add("bar");
+
+githubRepo https://sourceforge.net/projects/virtualdub
+
+wikipedia https://en.wikipedia.org/wiki/VirtualDub
+ summary VirtualDub is a free and open-source video capture and video processing utility for Microsoft Windows written by Avery Lee. It is designed to process linear video streams, including filtering and recompression. It uses AVI container format to store captured video.The first version of VirtualDub, written for Windows 95, to be released on SourceForge was uploaded on August 20, 2000.
+
+packageRepository https://sourceforge.net/projects/virtualdub/files/virtualdub-win
+
+isOpenSource true
