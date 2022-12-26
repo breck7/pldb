@@ -12,7 +12,7 @@
     "crawl": "./code/crawlers/Crawler.js crawl",
     "githubs": "./code/crawlers/github.com/GitHub.js fetchAllRepoData && ./code/crawlers/github.com/GitHub.js writeAllRepoData",
     "fetchContributors": "wget -O site/pages/contributors.json https://api.github.com/repos/breck7/pldb/contributors",
-    "combineLibs": "cat site/libs/mousetrap.js > site/libs/combined.js; echo '\n\n' >> site/libs/combined.js; cat site/libs/autocomplete.js >> site/libs/combined.js",
+    "buildCombined": "cat site/frontEndJavascript/mousetrap.js > site/frontEndJavascript/combined.js; echo '\n\n' >> site/frontEndJavascript/combined.js; cat site/frontEndJavascript/autocomplete.js >> site/frontEndJavascript/combined.js; echo '\n\n' >> site/frontEndJavascript/combined.js; cat site/frontEndJavascript/search.js >> site/frontEndJavascript/combined.js",
     "perfBuild": "time node --cpu-prof --cpu-prof-name=ignore/pldbBuildNodePerf.cpuprofile ./code/SiteBuilder.js buildAll",
     "clean": "cd code; tsc --build --clean",
     "cloc": "cloc --vcs git . --read-lang-def=code/clocLangs.txt",
@@ -21,7 +21,7 @@
     "jtreeBeta": "npm install ~/jtree",
     "scrollBeta": "npm install ~/scroll",
     "fetchBuildLogs": "scp file build.pldb.com:/home/pldb/pldb/ignore/buildServerLog.tree ignore/",
-    "plusX": "chmod u+x code/*.js; chmod u+x code/**/*.js; chmod u+x code/**/*.js; chmod u+x code/**/**/*.js; chmod u-x code/buildApp.js",
+    "plusX": "chmod u+x code/*.js; chmod u+x code/**/*.js; chmod u+x code/**/*.js; chmod u+x code/**/**/*.js; chmod u-x code/buildFrontEndApp.js",
     "publish": "cd code; npm publish",
     "restart": "pm2 restart 0"
   },

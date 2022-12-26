@@ -1,0 +1,25 @@
+# Front End Javascript Folder
+
+* This folder contains 3rd party JS libs used by our site and a few small scripts that glue them to enhance the basic functionality.
+
+# Building the combined file:
+
+bashCode
+ npm run buildCombined
+
+# Libraries
+
+## Autocomplete by kraaden
+ * https://github.com/kraaden/autocomplete
+
+- Copy the CSS from https://github.com/kraaden/autocomplete/blob/master/autocomplete.css into `style.css`
+- Download https://github.com/kraaden/autocomplete/blob/master/autocomplete.js to `autocomplete.js`
+- WARNING: We've made some monkey patches
+
+## Mousetrap
+
+## JQuery
+
+## JQuery Datatables
+
+

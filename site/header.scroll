@@ -12,9 +12,7 @@ stump
   type text/css
   href BASE_URL/style.css
  script
-  src BASE_URL/libs/combined.js
- script
-  src BASE_URL/search.js
+  src BASE_URL/frontEndJavascript/combined.js
  div
   class pldbHeader
   a PLDB
@@ -22,9 +20,12 @@ stump
    class logoFont
   form
    style display:inline-block;
+   method get
+   action https://build.pldb.com/search
    input
     type search
     id headerSearch
+    name q
     placeholder Search
     autocomplete off
   a Languages

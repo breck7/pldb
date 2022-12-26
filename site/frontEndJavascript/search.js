@@ -22,6 +22,7 @@ const tinyTypeScript = (items, expectedInterface) =>
     })
   })
 
+// This method is currently used to enable autocomplete on: the header search, front page search, 404 page search
 const initSearchAutocomplete = elementId => {
   const input = document.getElementById(elementId)
   const urlParams = new URLSearchParams(window.location.search)
@@ -62,10 +63,12 @@ const initSearchAutocomplete = elementId => {
     onSelect: item => {
       const { url, id } = item
       if (id) window.location = IS_LOCALHOST ? url : `https://pldb.com${url}`
-      else
+      else {
+        const fullUrl = "/search?q=" + encodeURIComponent(input.value)
         window.location = IS_LOCALHOST
           ? fullUrl
           : `https://build.pldb.com${fullUrl}`
+      }
     }
   })
 }

@@ -76,7 +76,7 @@ const cssLibs = "node_modules/jtree/sandbox/lib/codemirror.css node_modules/jtre
 	.map(name => ` <link rel="stylesheet" type="text/css" href="/${name}" />`)
 	.join("\n")
 
-const scripts = "libs/combined.js buildApp.js node_modules/jtree/products/jtree.browser.js pldb.browser.js node_modules/jtree/sandbox/lib/codemirror.js node_modules/jtree/sandbox/lib/show-hint.js"
+const scripts = "frontEndJavascript/combined.js buildFrontEndApp.js node_modules/jtree/products/jtree.browser.js pldb.browser.js node_modules/jtree/sandbox/lib/codemirror.js node_modules/jtree/sandbox/lib/show-hint.js"
 	.split(" ")
 	.map(name => ` <script src="/${name}"></script>`)
 	.join("\n")
@@ -101,8 +101,12 @@ const parseGitAuthor = (field = GIT_DEFAULT_AUTHOR) => {
 	}
 }
 
-const scrollSettings = getFullyExpandedFile(
-	path.join(builtSiteFolder, "settings.scroll")
+const scrollHeader = getFullyExpandedFile(
+	path.join(builtSiteFolder, "header.scroll")
+).code
+
+const scrollFooter = getFullyExpandedFile(
+	path.join(builtSiteFolder, "footer.scroll")
 ).code
 
 class BuildServer {
@@ -373,7 +377,7 @@ ${editForm(submission, "Error")}`
 			`replace BASE_URL ${this.isProd ? "https://pldb.com" : ""}
 replace BUILD_URL ${this.isProd ? "https://build.pldb.com" : "/"}
 
-${scrollSettings}
+${scrollHeader}
 
 html
 ${cssLibs}
@@ -400,6 +404,8 @@ html
  <div id="errorMessage" style="color: red;"></div>
 
 ${scrollContent}
+
+${scrollFooter}
 `
 		).html
 	}
