@@ -232,7 +232,7 @@ features
   }
  hasConditionals true
   if BOOLEAN_EXPRESSION {
-    outln(""Condition is true)
+      outln(""Condition is true)
   }
  hasIncrementAndDecrementOperators true
   ++
@@ -320,13 +320,13 @@ example
 
 githubRepo https://github.com/julelang/jule
  firstCommit 2021
- stars 44
+ stars 50
  forks 8
- subscribers 5
+ subscribers 6
  created 2021
  updated 2022
  description Jule is the simple, efficient, statically typed and compiled system programming language.
- issues 9
+ issues 10
 
 fileType text
 isOpenSource true
