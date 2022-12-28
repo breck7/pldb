@@ -1,6 +1,8 @@
 title python-format-spec
 type template
 website https://docs.python.org/3/library/string.html#format-specification-mini-language
+country United States
+originCommunity Python Software Foundation
 
 example
  '{0}, {1}, {2}'.format('a', 'b', 'c')
