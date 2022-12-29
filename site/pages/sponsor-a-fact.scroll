@@ -1,6 +1,7 @@
 import header.scroll
 title Sponsor a Fact
 groups index
+startColumns 1
 
 * Anyone can sponsor as many facts as they want using any payment method they want. Simply send an email to <a href="mailto:sales@pldb.com">sales@pldb.com</a> with how many facts you'd like to sponsor on what language(s). For an example of a language with sponsored facts, see <a href="https://pldb.com/languages/markdown.html">Markdown</a>. To sponsor one fact costs FACT_PRICE.
  footnote any payment method
@@ -10,4 +11,4 @@ groups index
 
 * Sponsor a fact(s) and PLDB will prioritize research into this language or column type. When the new facts are published, we ask that you send payment (at the moment we ask that you monitor your sponsored page as we don't have an automated way to alert you when the new facts are published yet). If you are not 100% satisfied with the facts we publish, no payment is required.
 
-import ../footer.scroll
+import footer.scroll

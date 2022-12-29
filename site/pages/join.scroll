@@ -1,5 +1,6 @@
 import header.scroll
 title Become an active contributor to the PLDB
+startColumns 1
 groups index
 
 * Do you seek programming language enlightenment? Why not seek that joyfully with colleagues while serving others, making an impact, and accumulating internet points? Become an active contributor to the PLDB!
@@ -20,4 +21,4 @@ groups index
  wrap % https://github.com/breck7/pldb
  wrap ! https://github.com/breck7/pldb/issues
 
-import ../footer.scroll
+import footer.scroll

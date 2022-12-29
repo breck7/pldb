@@ -2,6 +2,7 @@ import header.scroll
 title Acknowledgements
 import acknowledgementsImports.scroll
 groups index
+startColumns 4
 
 ## Contributors
 
@@ -39,4 +40,4 @@ html
 * And of course, thank you to all of the language creators who created the languages that are the subject of this site.
  link BASE_URL/lists/creators.html language creators
 
-import ../footer.scroll
+import footer.scroll

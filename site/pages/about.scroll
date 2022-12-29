@@ -1,5 +1,6 @@
 import header.scroll
 title About
+startColumns 4
 groups index
 
 * Welcome to PLDB: a Programming Language Database!
@@ -82,4 +83,4 @@ code
    note = {https://pldb.com}
   }
 
-import ../footer.scroll
+import footer.scroll

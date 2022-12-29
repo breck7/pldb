@@ -1,6 +1,7 @@
 import header.scroll
 title Write for PLDB
 groups index
+startColumns 1
 
 # Interesting Articles Wanted
 
@@ -12,4 +13,4 @@ code
  tableDescription [describe what the columns that might be in the csv[s] in your post]
  dataVisDescription [describe what an interesting visualization of that data above might be for your post]
 
-import ../footer.scroll
+import footer.scroll
