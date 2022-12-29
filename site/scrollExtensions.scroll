@@ -1,5 +1,12 @@
 importOnly
 
+stumpNoSnippetNode
+ extends stumpNode
+ cruxFromId
+ javascript
+  compileSnippet() {
+   return ""
+  }
 tableSearchNode
  cruxFromId
  extends abstractScrollNode
