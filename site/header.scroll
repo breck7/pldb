@@ -14,7 +14,7 @@ stump
  script
   src BASE_URL/frontEndJavascript/combined.js
  div
-  class pldbHeader
+  class pldbHeader doNotPrint
   a PLDB
    href BASE_URL/index.html
    class logoFont
