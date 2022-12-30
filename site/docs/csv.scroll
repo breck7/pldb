@@ -32,3 +32,5 @@ COLUMN_METADATA_TABLE
 
 * PLDB also builds https://pldb.com/pldb.csv which contains the same rows and columns as `languages.csv` and a row for each non-language entity in the PLDB—such as operating systems and editors—and has ENTITY_COUNT total rows and is ENTITIES_FILE_SIZE_UNCOMPRESSED uncompressed.
  wrapsOn
+
+import ../footer.scroll
