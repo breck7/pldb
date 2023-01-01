@@ -145,7 +145,7 @@ leachim6 Idris
   main : IO ()
   main = putStrLn "Hello World"
   
-rosettaCode Idris
+rosettaCode http://www.rosettacode.org/wiki/Category:Idris
 
 rijuRepl https://riju.codes/idris
  example

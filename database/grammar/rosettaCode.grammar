@@ -1,4 +1,5 @@
 rosettaCodeNode
- extends abstractOneWordGuidNode
+ extends abstractUrlGuidNode
  description A link to this language on Rosetta Code - http://www.rosettacode.org/
  string sourceDomain rosettacode.org
+ cruxFromId

@@ -62,7 +62,7 @@ leachim6 Pony
     new create(env: Env) =>
       env.out.print("Hello World")
   
-rosettaCode Pony
+rosettaCode http://www.rosettacode.org/wiki/Category:Pony
 
 compilerExplorer Pony
  example

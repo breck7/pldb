@@ -60,7 +60,7 @@ leachim6 Zig
       const stdout = std.io.getStdOut().writer();
       try stdout.print("Hello World", .{});
   }
-rosettaCode Zig
+rosettaCode http://www.rosettacode.org/wiki/Category:Zig
 
 compilerExplorer Zig
  example

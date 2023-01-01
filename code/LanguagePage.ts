@@ -641,7 +641,7 @@ ${creatorsLinks}
     const rosettaCode = file.get("rosettaCode")
     if (rosettaCode)
       facts.push(
-        `Explore ${title} snippets on <a href="http://www.rosettacode.org/wiki/Category:${rosettaCode}">Rosetta Code</a>`
+        `Explore ${title} snippets on <a href="${rosettaCode}">Rosetta Code</a>`
       )
 
     const nativeLanguage = file.get("nativeLanguage")
