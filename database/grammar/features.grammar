@@ -1,6 +1,7 @@
 pseudoExampleNode
  description As short an example as possible.
- extends abstractStringNode
+ catchAllCellType codeCell
+ extends abstractFactNode
  cruxFromId
  single
 abstractFeatureGrammarLinkNode
