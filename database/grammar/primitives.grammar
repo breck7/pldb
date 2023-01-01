@@ -7,6 +7,8 @@ populationCountCell
  extends intCell
 stringCell
  highlightScope string
+ description Any string except for a blank cell.
+ regex .+
 fileExtensionCell
  extends stringCell
 boolCell
