@@ -130,7 +130,7 @@ class PLDBFolder extends TreeBaseFolder {
       website: v => 1,
       githubRepo: v => 1,
       "githubRepo forks": v => v * 3,
-      annualReport: v =>1000
+      annualReport: v => 1000
     }
 
     return Math.round(
@@ -631,14 +631,6 @@ wikipedia`.split("\n")
         currentSection = nodeSection
         node.prependSibling("") // Put a blank line before this section
       }
-    })
-
-    // Ensure no trailing empty words
-    program.forEach(node => {
-      // I cannot think if a single place where we would want a line to end with 2 spaces.
-      // There are a few cases where we would want a line to end with 1 space. So this will
-      // Trim any lines that end in 2 spaces (but leave untouched lines that are 2 words, one keyword and one space).
-      if (node.getWords().length > 2) node.setLine(node.getLine().trim())
     })
 
     return program.toString().replace(/\n+$/, "") + "\n" // always end with a newline
