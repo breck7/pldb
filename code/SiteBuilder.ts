@@ -18,7 +18,6 @@ const pldbBase = PLDBFolder.getBase().loadFolder()
 const codeDir = __dirname
 const rootDir = path.join(codeDir, "..")
 const siteFolder = path.join(rootDir, "site")
-const settingsFilePath = path.join(siteFolder, "settings.scroll")
 const pagesDir = path.join(siteFolder, "pages")
 const publishedDocsFolder = path.join(siteFolder, "docs")
 const publishedPagesFolder = path.join(siteFolder, "pages")
@@ -27,12 +26,9 @@ const publishedPostsFolder = path.join(siteFolder, "posts")
 const publishedLanguagesFolder = path.join(siteFolder, "languages") // Todo: eventually redirect away from /languages?
 
 import {
-  isLanguage,
   benchmark,
   benchmarkResults,
-  listGetters,
   lastCommitHashInFolder,
-  imemo,
   runCommand
 } from "./utils"
 

@@ -207,13 +207,6 @@ const getJoined = (node, keywords): string => {
   return lodash.uniq(words).join(" ")
 }
 
-const listGetters = instance =>
-  Object.entries(
-    Object.getOwnPropertyDescriptors(Reflect.getPrototypeOf(instance))
-  )
-    .filter(e => typeof e[1].get === "function" && e[0] !== "__proto__")
-    .map(e => e[0])
-
 // https://github.com/rigoneri/indefinite-article.js/blob/master/indefinite-article.js
 const getIndefiniteArticle = phrase => {
   // Getting the first word
@@ -339,7 +332,6 @@ export {
   benchmark,
   benchmarkResults,
   imemo,
-  listGetters,
   getLinks,
   lastCommitHashInFolder,
   ensureDelimiterNotFound,

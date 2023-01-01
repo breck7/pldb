@@ -7,10 +7,8 @@ const express = require("express")
 const bodyParser = require("body-parser")
 const numeral = require("numeral")
 const { jtree } = require("jtree")
-const { TreeNode } = jtree
 const { Disk } = require("jtree/products/Disk.node.js")
 const { ScrollFile, getFullyExpandedFile } = require("scroll-cli")
-
 const { SearchServer } = require("jtree/products/treeBaseSearchServer.node.js")
 
 import { PLDBFolder } from "./Folder"
@@ -27,7 +25,6 @@ const baseFolder = path.join(__dirname, "..")
 const ignoreFolder = path.join(baseFolder, "ignore")
 const builtSiteFolder = path.join(baseFolder, "site")
 const csvFileLength = Disk.read(path.join(builtSiteFolder, "pldb.csv")).length
-
 const editLogPath = path.join(ignoreFolder, "buildServerLog.tree")
 
 try {
