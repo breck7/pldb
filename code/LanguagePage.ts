@@ -890,8 +890,7 @@ code
       repls.push(`<a href="https://tio.run/#${tryItOnline}">TIO</a>`)
 
     const replit = file.get("replit")
-    if (replit)
-      repls.push(`<a href="https://repl.it/languages/${replit}">Replit</a>`)
+    if (replit) repls.push(`<a href="${replit}">Replit</a>`)
 
     if (!repls.length) return ""
 

@@ -1,4 +1,5 @@
 replitNode
- extends abstractOneWordGuidNode
- description A link to try this langunage on replit.com
+ extends abstractUrlGuidNode
+ description A link to try this language on replit.com
  string sourceDomain replit.com
+ cruxFromId
