@@ -42,6 +42,7 @@ announcementMethodNode
  cruxFromId
  single
 countryNameCell
+ extends stringCell
 countryNode
  description What country was the language first developed in?
  boolean alwaysRecommended true
