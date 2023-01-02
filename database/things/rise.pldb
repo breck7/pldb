@@ -8,6 +8,8 @@ description Rise is a functional pattern-based language in the style of Lift. Ri
      B |> map(fun(bcol =>
       zip(arow, bcol) |> map(*) |> reduce(+, 0) )) ))))
 reference https://michel.steuwer.info/files/publications/2020/accML.pdf
+country United Kingdom
+originCommunity University of Glasgow
 
 semanticScholar 6
  year|title|doi|citations|influentialCitations|authors|paperId
