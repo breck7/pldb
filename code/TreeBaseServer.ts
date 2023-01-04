@@ -25,7 +25,7 @@ const baseFolder = path.join(__dirname, "..")
 const ignoreFolder = path.join(baseFolder, "ignore")
 const builtSiteFolder = path.join(baseFolder, "site")
 const csvFileLength = Disk.read(path.join(builtSiteFolder, "pldb.csv")).length
-const editLogPath = path.join(ignoreFolder, "buildServerLog.tree")
+const editLogPath = path.join(ignoreFolder, "treeBaseServerLog.tree")
 
 try {
 	Disk.mkdir(ignoreFolder)
@@ -73,7 +73,7 @@ const cssLibs = "node_modules/jtree/sandbox/lib/codemirror.css node_modules/jtre
 	.map(name => ` <link rel="stylesheet" type="text/css" href="/${name}" />`)
 	.join("\n")
 
-const scripts = "frontEndJavascript/combined.js buildFrontEndApp.js node_modules/jtree/products/jtree.browser.js pldb.browser.js node_modules/jtree/sandbox/lib/codemirror.js node_modules/jtree/sandbox/lib/show-hint.js"
+const scripts = "frontEndJavascript/combined.js treeBaseFrontEndApp.js node_modules/jtree/products/jtree.browser.js pldb.browser.js node_modules/jtree/sandbox/lib/codemirror.js node_modules/jtree/sandbox/lib/show-hint.js"
 	.split(" ")
 	.map(name => ` <script src="/${name}"></script>`)
 	.join("\n")
@@ -106,7 +106,7 @@ const scrollFooter = getFullyExpandedFile(
 	path.join(builtSiteFolder, "footer.scroll")
 ).code
 
-class BuildServer {
+class TreeBaseServer {
 	folder: PLDBFolder
 	app: any
 	homepage = ""
@@ -121,6 +121,8 @@ class BuildServer {
 			.join(" · ")
 
 		this.homepage = this.scrollToHtml(`
+title PLDB TreeBase Server
+
 html
  <pre>
  - Entities: ${folder.length} files in ${folder.dir}
@@ -321,7 +323,7 @@ ${editForm(submission, "Error")}`
 	listen(port = 4444) {
 		this.app.listen(port, () =>
 			console.log(
-				`BuildServer server running: \ncmd+dblclick: http://localhost:${port}/`
+				`TreeBaseServer server running: \ncmd+dblclick: http://localhost:${port}/`
 			)
 		)
 		return this
@@ -523,17 +525,17 @@ ${scrollFooter}
 	}
 }
 
-class BuildServerCommands {
+class TreeBaseServerCommands {
 	startDevServerCommand(port) {
-		new BuildServer().listen(port)
+		new TreeBaseServer().listen(port)
 	}
 
 	startProdServerCommand() {
-		new BuildServer().listenProd()
+		new TreeBaseServer().listenProd()
 	}
 }
 
-export { BuildServer }
+export { TreeBaseServer }
 
 if (!module.parent)
-	runCommand(new BuildServerCommands(), process.argv[2], process.argv[3])
+	runCommand(new TreeBaseServerCommands(), process.argv[2], process.argv[3])

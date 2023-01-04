@@ -31,7 +31,7 @@ const genDefaultAuthor = () => {
 }
 const defaultAuthor = genDefaultAuthor()
 
-class BuildApp {
+class TreeBaseFrontEndApp {
 	get author() {
 		try {
 			return this.store.getItem("author") || defaultAuthor
@@ -186,6 +186,6 @@ DDG: https://duckduckgo.com/?q=${id}<br>`) +
 }
 
 document.addEventListener("DOMContentLoaded", function(event) {
-	window.app = new BuildApp()
+	window.app = new TreeBaseFrontEndApp()
 	window.app.start()
 })
