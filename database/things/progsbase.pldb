@@ -2,9 +2,11 @@ title progsbase
 appeared 2018
 type pl
 creators Martin F. Johansen
-description A Persistent, Translatable and Understandable Programming System. Code written in progsbase is very low in maintenance. It lasts a long time. Code written in progsbase can be translated to 13 other languages.
+description A programming language and tooling for timeless programming. Programs written in progsbase can be reused accross time and space. Code written in progsbase can currently be translated to 13 other languages, but many more can be supported.
 website https://www.progsbase.com/
-reference https://www.progsbase.com/technical/progsbase-a-persistent-translatable-and-understandable-programming-system/
+documentation https://www.progsbase.com/docs/
+spec https://www.progsbase.com/docs/
+reference https://www.progsbase.com/featuredpost/progsbase-a-timeless-translatable-and-understandable-programming-system/
 country Norway
 originCommunity Inductive AS
 domainName progsbase.com
@@ -13,3 +15,64 @@ domainName progsbase.com
   2022 3521085
 
 packageRepository https://repo.progsbase.com/repoviewer/
+
+twitter https://twitter.com/progsbase
+fileType text
+
+isbndb
+ year|publisher|title|authors|isbn13
+ 2022|Amazon KDP|Foundations of computer Science|Johansen, Martin Fagereng|9798836363796
+
+features
+ hasFunctions true
+ hasAssignment true
+ hasAssertStatements false
+ hasGenerics false
+ hasSingleDispatch false
+ hasPointers false
+ hasStrings true
+ hasComments true
+ hasConstructors false
+ hasGarbageCollection false
+ hasImports true
+ hasInterfaces false
+ hasIterators false
+ hasMacros false
+ hasOperatorOverloading false
+ hasZeroBasedNumbering true
+ hasModules true
+ hasIncrementAndDecrementOperators false
+ hasLineComments true
+ hasThreads true
+ hasPrintDebugging false
+ hasMultiLineComments true
+ hasSemanticIndentation false
+ hasCaseInsensitiveIdentifiers false
+ isCaseSensitive true
+ hasBooleans true
+ hasWhileLoops false
+ hasClasses false
+ hasConstants false
+ hasExceptions false
+ hasSwitch false
+ hasAccessModifiers false
+ hasInheritance false
+ hasConditionals true
+ hasOctals false
+ hasHexadecimals false
+ hasFloats true
+ hasIntegers false
+ hasBinaryNumbers false
+ hasScientificNotation true
+ hasDirectives false
+ hasMultipleInheritance false
+ hasLists false
+ hasMessagePassing true
+ hasStaticTyping true
+ hasRegularExpressionSyntaxSugar false
+ hasMultilineStrings true
+ hasBitwiseOperators false
+ hasPatternMatching false
+ hasManualMemoryManagement true
+ hasGotos false
+ hasStructs true
