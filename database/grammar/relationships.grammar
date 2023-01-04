@@ -26,6 +26,9 @@ supersetOfNode
 writtenInNode
  description What language is this application written in?
  extends abstractRelationshipNode
+extensionOfNode
+ description What language is this language an extension of?
+ extends abstractRelationshipNode
 forkOfNode
  description What language is this language a fork of?
  extends abstractRelationshipNode

@@ -1,7 +1,10 @@
-title Arduino
+title Arduino Programming Language
 appeared 2005
 type pl
+description The Arduino Programming Language is mostly C++ with
+website https://www.arduino.cc
 documentation https://docs.arduino.cc/
+cheatSheetUrl https://github.com/liffiton/Arduino-Cheat-Sheet
 country Italy
 originCommunity Arduino
 
@@ -62,6 +65,10 @@ indeedJobs arduino developer
  2022 598
 releaseNotesUrl https://www.arduino.cc/en/software/ReleaseNotes
 officialBlogUrl https://blog.arduino.cc/
+
+subreddit https://www.reddit.com/r/arduino
+ memberCount
+  2022 514177
 
 centralPackageRepositoryCount 0
 
@@ -363,3 +370,4 @@ semanticScholar 28
  2020|Kendali Kecepatan Motor DC Penguat Terpisah Berbeban Berbasis Arduino|10.24036/jtev.v6i2.108395|1|0|Dio Taufiq Arif and Aswardi Aswardi|5c56716c594dc0662b336ca54c34b733ece038bb
  2020|Experimental Implementation of TinyIPFIX Protocol for Arduino and Raspberry Pi Platform|10.1109/ICETA51985.2020.9379188|1|0|R. Petija and M. Glevaňák and M. Kučan and P. Fecilak and F. Jakab|60c8eb9ea6d32d0806aa59c69d8fcc437172487f
  2021|Perancangan Sistem Perangkap Hama Tanaman Petani Otomatis Menggunakan Modul Mikrokontroler Arduino|10.32672/JNKTI.V4I1.2663|1|0|Rahmat Tampune Bangun and Hasan Fahmi|c8e7fac5b5b8291c011d4d9920626161b05705ee
+extensionOf cpp
