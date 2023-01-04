@@ -14,15 +14,6 @@ domainName progsbase.com
  awisRank
   2022 3521085
 
-packageRepository https://repo.progsbase.com/repoviewer/
-
-twitter https://twitter.com/progsbase
-fileType text
-
-isbndb
- year|publisher|title|authors|isbn13
- 2022|Amazon KDP|Foundations of computer Science|Johansen, Martin Fagereng|9798836363796
-
 features
  hasFunctions true
  hasAssignment true
@@ -69,10 +60,19 @@ features
  hasLists false
  hasMessagePassing true
  hasStaticTyping true
- hasRegularExpressionSyntaxSugar false
+ hasRegularExpressionsSyntaxSugar false
  hasMultilineStrings true
- hasBitwiseOperators false
+ hasBitWiseOperators false
  hasPatternMatching false
  hasManualMemoryManagement true
  hasGotos false
  hasStructs true
+
+packageRepository https://repo.progsbase.com/repoviewer/
+
+twitter https://twitter.com/progsbase
+fileType text
+
+isbndb
+ year|publisher|title|authors|isbn13
+ 2022|Amazon KDP|Foundations of computer Science|Johansen, Martin Fagereng|9798836363796
