@@ -16,7 +16,7 @@ groups index
  https://www.nginx.com/ NGINX
  https://www.digitalocean.com/ Digital Ocean
  https://certbot.eff.org/ certbot
- caveat droplet
+ hoverNote droplet
   Remember to create the droplets in the same region as the reserved IPs so no DNS update is needed when changing servers.
 
 import marconiSetup.scroll
