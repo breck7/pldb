@@ -46,7 +46,7 @@ githubLanguageAliasesNode
  extends abstractGitHubLanguageArrayNode
  description An Array of additional aliases (implicitly includes name.downcase).
  crux aliases
- contentDelimiter  or 
+ listDelimiter  or 
 githubLanguageTypeNode
  extends abstractGitHubLanguageNode
  description Either data, programming, markup, prose, or nil.

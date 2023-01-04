@@ -3,14 +3,14 @@ keywordsNode
  extends abstractFactNode
  cruxFromId
  catchAllCellType tokenCell
- contentDelimiter  
+ listDelimiter  
  single
 abstractCommonTokenNode
  description Most general purpose programming languages implement a set of common tokens for common features like these.
  cells keywordCell
  catchAllCellType tokenCell
  extends abstractFactNode
- contentDelimiter  
+ listDelimiter  
  cruxFromId
  single false
 lineCommentTokenNode

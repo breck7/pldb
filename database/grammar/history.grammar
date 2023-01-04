@@ -5,7 +5,7 @@ creatorsNode
  description Name(s) of the original creators of the language delimited by " and "
  cells keywordCell
  catchAllCellType creatorNameCell
- contentDelimiter  and 
+ listDelimiter  and 
  extends abstractFactNode
  cruxFromId
  single
@@ -44,6 +44,7 @@ announcementMethodNode
 countryNameCell
  extends stringCell
 countryNode
+ uniqueLine
  description What country was the language first developed in?
  boolean alwaysRecommended true
  cells keywordCell

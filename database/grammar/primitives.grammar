@@ -47,7 +47,7 @@ abstractArrayNode
  extends abstractFactNode
  catchAllCellType stringCell
  cells keywordCell
- contentDelimiter  
+ listDelimiter  
 abstractPermalinksNode
  catchAllCellType permalinkCell
  extends abstractArrayNode

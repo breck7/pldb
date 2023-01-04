@@ -9,7 +9,7 @@ const numeral = require("numeral")
 const { jtree } = require("jtree")
 const { Disk } = require("jtree/products/Disk.node.js")
 const { ScrollFile, getFullyExpandedFile } = require("scroll-cli")
-const { SearchServer } = require("jtree/products/treeBaseSearchServer.node.js")
+const { SearchServer } = require("jtree/products/treeBaseServer.node.js")
 
 import { PLDBFolder } from "./Folder"
 import { PLDBFile } from "./File"
