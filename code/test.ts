@@ -1,18 +1,36 @@
 #!/usr/bin/env node
 
+/*
+
+* To investigate slowdowns:
+
+code
+ node --cpu-prof --cpu-prof-name=test.cpuprofile ./test.js
+
+* Then:
+
+- open a new Chrome tab
+- open devtools
+- click Performance
+- click "Load Profile..."
+- select your test.cpuprofile
+*/
+
 const tap = require("tap")
 const lodash = require("lodash")
 const path = require("path")
 const { jtree } = require("jtree")
 const { TreeNode } = jtree
 const grammarNode = require("jtree/products/grammar.nodejs.js")
-const { ScrollFolder, ScrollCli } = require("scroll-cli")
+const { ScrollFolder, ScrollCli, ScrollFile } = require("scroll-cli")
+const { Disk } = require("jtree/products/Disk.node.js")
 
 import { PLDBFolder } from "./Folder"
 import { getCleanedId } from "./utils"
 
 const pldbBase = PLDBFolder.getBase().loadFolder()
 const rootDir = path.join(__dirname, "..")
+const languagesDir = path.join(rootDir, "site", "languages")
 
 const runTree = testTree => {
 	const times = []
@@ -47,6 +65,9 @@ testTree.ensureNoErrorsInScrollExtensions = areEqual => {
 // todo
 testTree.ensureNoErrorsInBlog = areEqual => {
 	const checkScroll = folderPath => {
+		// Do not check all ~5K generated scroll files for errors b/c redundant and wastes time.
+		// Just check the Javascript one below.
+		if (folderPath.includes("languages")) return
 		const folder = new ScrollFolder(folderPath)
 		areEqual(
 			folder.grammarErrors.length,
@@ -58,6 +79,15 @@ testTree.ensureNoErrorsInBlog = areEqual => {
 
 	Object.keys(new ScrollCli().findScrollsInDirRecursive(rootDir)).map(
 		checkScroll
+	)
+
+	const jsPagePath = path.join(languagesDir, "javascript.scroll")
+	const jsFile = new ScrollFile(Disk.read(jsPagePath), undefined, jsPagePath)
+	const errors = jsFile.scrollScriptProgram.getAllErrors()
+	areEqual(
+		errors.length,
+		0,
+		"no scroll errors in a generated language scroll file"
 	)
 }
 
