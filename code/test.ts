@@ -5,7 +5,7 @@
 * To investigate slowdowns:
 
 code
- node --cpu-prof --cpu-prof-name=test.cpuprofile ./test.js
+ node --cpu-prof --cpu-prof-name=test.cpuprofile ./code/test.js
 
 * Then:
 
@@ -72,14 +72,14 @@ testTree.ensureNoErrorsInBlog = areEqual => {
 		areEqual(
 			folder.grammarErrors.length,
 			0,
-			`no grammarErrors in ${folderPath}`
+			`no scroll errors in ${folderPath}`
 		)
 		//areEqual(folder.errors.length, 0, `no errors in ${folderPath}`)
 	}
 
-	Object.keys(new ScrollCli().findScrollsInDirRecursive(rootDir)).map(
-		checkScroll
-	)
+	const cli = new ScrollCli()
+	cli.verbose = false
+	Object.keys(cli.findScrollsInDirRecursive(rootDir)).map(checkScroll)
 
 	const jsPagePath = path.join(languagesDir, "javascript.scroll")
 	const jsFile = new ScrollFile(Disk.read(jsPagePath), undefined, jsPagePath)
