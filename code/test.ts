@@ -144,21 +144,21 @@ testTree.ensurePrettifiedCausesNoSemanticChanges = areEqual => {
 
 	// Act
 	pldbBase.forEach((file, index) => {
+		const originalTypedMap = file.typedMap
 		if (index > 10) return
 		file.prettify()
+
+		areEqual(
+			lodash.isEqual(originalTypedMap, file.typedMap),
+			true,
+			"typed map doesnt change after prettify"
+		)
+
 		const result = file.toString()
 		file.prettify()
 		const result2 = file.toString()
 		areEqual(result, result2, `prettify is stable`)
 	})
-
-	// Assert
-	const post = pldbBase.typedMap
-	areEqual(
-		lodash.isEqual(pre, post),
-		true,
-		"typed map doesnt change after prettify"
-	)
 }
 
 if (module && !module.parent) runTree(testTree)
