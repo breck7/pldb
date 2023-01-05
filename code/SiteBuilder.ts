@@ -25,12 +25,7 @@ const listsFolder = path.join(siteFolder, "lists")
 const publishedPostsFolder = path.join(siteFolder, "posts")
 const publishedLanguagesFolder = path.join(siteFolder, "languages") // Todo: eventually redirect away from /languages?
 
-import {
-  benchmark,
-  benchmarkResults,
-  lastCommitHashInFolder,
-  runCommand
-} from "./utils"
+import { benchmark, benchmarkResults, runCommand } from "./utils"
 
 const buildAllList = []
 const buildAll: MethodDecorator = (
@@ -108,7 +103,6 @@ class SiteBuilder {
   @buildAll
   buildBuildLogImportsCommand() {
     buildImportsFile(path.join(siteFolder, "buildLogImports.scroll"), {
-      LAST_HASH: lastCommitHashInFolder(),
       DAYS_ONLINE: Math.floor(dayjs().diff(dayjs("2022-08-15"), "day", true)),
       DAYS_SINCE_LAUNCH: Math.floor(
         dayjs().diff(dayjs("2022-08-28"), "day", true)
