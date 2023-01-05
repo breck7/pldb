@@ -3,6 +3,8 @@
 const tap = require("tap")
 const lodash = require("lodash")
 const path = require("path")
+const { jtree } = require("jtree")
+const { TreeNode } = jtree
 const grammarNode = require("jtree/products/grammar.nodejs.js")
 const { ScrollFolder, ScrollCli } = require("scroll-cli")
 
@@ -12,10 +14,18 @@ import { getCleanedId } from "./utils"
 const pldbBase = PLDBFolder.getBase().loadFolder()
 const rootDir = path.join(__dirname, "..")
 
-const runTree = testTree =>
+const runTree = testTree => {
+	const times = []
 	Object.keys(testTree).forEach(key => {
+		const startTime = Date.now()
 		testTree[key](tap.equal)
+		times.push({ TestName: key, Elapsed: (Date.now() - startTime) / 1000 })
 	})
+
+	console.log(
+		new TreeNode(lodash.sortBy(times, "Elapsed").reverse()).toFormattedTable()
+	)
+}
 
 const testTree: any = {}
 
