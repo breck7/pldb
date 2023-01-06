@@ -1,5 +1,21 @@
 #!/usr/bin/env node
 
+/*
+
+* To investigate slowdowns:
+
+code
+ node --cpu-prof --cpu-prof-name=test.cpuprofile ./code/SiteBuilder.js buildAll
+
+* Then:
+
+- open a new Chrome tab
+- open devtools
+- click Performance
+- click "Load Profile..."
+- select your test.cpuprofile
+*/
+
 const lodash = require("lodash")
 const path = require("path")
 const { jtree } = require("jtree")
@@ -561,8 +577,9 @@ class SiteBuilder {
     })
   }
 
+  @buildAll
   @benchmark
-  buildDatabasePagesScrollCommand() {
+  buildLanguagesScrollCommand() {
     new ScrollFolder(publishedLanguagesFolder).buildFiles()
   }
 
@@ -574,7 +591,6 @@ class SiteBuilder {
     new ScrollFolder(publishedPagesFolder).buildFiles()
     new ScrollFolder(publishedDocsFolder).buildFiles()
     new ScrollFolder(publishedPostsFolder).buildFiles()
-    this.buildDatabasePagesScrollCommand()
   }
 }
 
