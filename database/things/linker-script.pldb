@@ -4,7 +4,7 @@ type application
 description ld combines a number of object and archive files, relocates their data and ties up symbol references. Usually the last step in compiling a program is to run ld. ld accepts Linker Command Language files written in a superset of AT&T’s Link Editor Command Language syntax, to provide explicit and total control over the linking process.
 reference https://www.eecs.umich.edu/courses/eecs373/readings/Linker.pdf
 country United States
-originCommunity Red Hat Inc and Free Software Foundation, Inc
+originCommunity Red Hat Inc && Free Software Foundation, Inc
 
 example
  /*
