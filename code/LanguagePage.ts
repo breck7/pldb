@@ -246,6 +246,10 @@ pipeTable
  ${delimited}`
   }
 
+  get sourceUrl() {
+    return `https://github.com/breck7/pldb/blob/main/database/things/${this.id}.pldb`
+  }
+
   toScroll() {
     const { file } = this
     const { typeName, title, id } = file
@@ -263,7 +267,7 @@ html
  <a class="prevLang" href="${this.prevPage}">&lt;</a>
  <a class="nextLang" href="${this.nextPage}">&gt;</a>
 
-viewSourceUrl https://github.com/breck7/pldb/blob/main/database/things/${id}.pldb
+viewSourceUrl ${this.sourceUrl}
 
 startColumns 4
 

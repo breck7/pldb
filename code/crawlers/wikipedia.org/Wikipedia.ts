@@ -100,7 +100,7 @@ class PLDBFileWithWikipedia {
     return JSON.parse(Disk.read(this.cachePath))
   }
 
-  // Todo. All of these things could return matches. Use them for conflict resolution.
+  // Todo. All of these could return matches. Use them for conflict resolution.
   getYear(json) {
     let year = json.info && json.info.year
     if (!year) year = json.info && json.info.yearStarted

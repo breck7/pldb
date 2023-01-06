@@ -1,4 +1,5 @@
 import { jtree } from "jtree"
+import { FeatureFile, FeaturesFolder } from "./FeaturesFolder"
 import { PLDBFile, runtimeCsvProps } from "./File"
 import {
   FeatureSummary,
@@ -29,8 +30,11 @@ class PLDBFolder extends TreeBaseFolder {
     return new TreeNode.Parser(PLDBFile)
   }
 
-  get featureFiles(): PLDBFile[] {
-    return this.filter(file => file.get("type") === "feature")
+  _featuresFolder: any
+  get featuresFolder() {
+    if (!this._featuresFolder)
+      this._featuresFolder = FeaturesFolder.getFolder(this)
+    return this._featuresFolder
   }
 
   @imemo
@@ -171,22 +175,19 @@ class PLDBFolder extends TreeBaseFolder {
   @imemo
   get featuresMap(): Map<string, FeatureSummary> {
     const featuresMap = new Map<string, FeatureSummary>()
-    this.topFeatures.forEach(feature => {
-      featuresMap.set(feature.path, feature)
-    })
+    this.topFeatures.forEach(feature => featuresMap.set(feature.path, feature))
     return featuresMap
   }
 
   @imemo
   get topFeatures(): FeatureSummary[] {
-    const files = this.featureFiles.map(file => {
-      const name = file.id
+    const files = this.featuresFolder.map((file: FeatureFile) => {
       const positives = file.languagesWithThisFeature.length
       const negatives = file.languagesWithoutThisFeature.length
       const measurements = positives + negatives
       return {
         feature: file.get("title"),
-        featureLink: `../languages/${file.permalink}`,
+        featureLink: `../features/${file.permalink}`,
         aka: file.getAll("aka").join(" or "),
         path: file.get("featureKeyword"),
         token: file.get("tokenKeyword"),

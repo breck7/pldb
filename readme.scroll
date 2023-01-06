@@ -37,6 +37,10 @@ javascriptCode
 
 * Advanced method: Edit or create a new file in `database/grammar` and add at least 1 example to an entity in `database/things` and send a pull request.
 
+## To add a new feature
+
+* Advanced method: Create a new file in `database/features` like the other files in there. Then add your new feature to the `database/grammar/features.grammar` file. Try to add data from at least 10 languages along with your new feature.
+
 ## To build the full site locally
 
 code

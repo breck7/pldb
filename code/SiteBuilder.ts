@@ -39,6 +39,7 @@ const publishedDocsFolder = path.join(siteFolder, "docs")
 const publishedPagesFolder = path.join(siteFolder, "pages")
 const listsFolder = path.join(siteFolder, "lists")
 const publishedPostsFolder = path.join(siteFolder, "posts")
+const publishedFeaturesFolder = path.join(siteFolder, "features")
 const publishedLanguagesFolder = path.join(siteFolder, "languages") // Todo: eventually redirect away from /languages?
 
 import { benchmark, benchmarkResults, runCommand } from "./utils"
@@ -111,7 +112,7 @@ class SiteBuilder {
   @benchmark
   @buildAll
   buildSingleGrammarFile() {
-    // Copy grammar to docs folder for easy access in things like TN Designer.
+    // Copy grammar to docs folder for easy access for tools like TN Designer.
     Disk.write(path.join(siteFolder, "pldb.grammar"), pldbBase.grammarCode)
   }
 
@@ -162,17 +163,19 @@ class SiteBuilder {
   @benchmark
   @buildAll
   buildDatabasePagesCommand() {
-    pldbBase.forEach(file => {
-      const constructor =
-        file.get("type") === "feature"
-          ? FeaturePageTemplate
-          : LanguagePageTemplate
+    pldbBase.featuresFolder.forEach(file =>
+      Disk.write(
+        path.join(publishedFeaturesFolder, `${file.id}.scroll`),
+        new FeaturePageTemplate(file).toScroll()
+      )
+    )
 
+    pldbBase.forEach(file =>
       Disk.write(
         path.join(publishedLanguagesFolder, `${file.id}.scroll`),
-        new constructor(file).toScroll()
+        new LanguagePageTemplate(file).toScroll()
       )
-    })
+    )
   }
 
   @benchmark

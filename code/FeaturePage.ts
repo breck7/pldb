@@ -29,6 +29,10 @@ class FeaturePageTemplate extends LanguagePageTemplate {
     return `<a href="../lists/features.html">${this.file.typeName}</a>`
   }
 
+  get sourceUrl() {
+    return `https://github.com/breck7/pldb/blob/main/database/features/${this.id}.pldb`
+  }
+
   get exampleSection() {
     const { file } = this
     const { title, featurePath } = file

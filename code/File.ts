@@ -1,10 +1,7 @@
 import { Example, FeaturePrediction, FolderInterface } from "./Interfaces"
 import { getJoined, isLanguage, imemo } from "./utils"
-
 import { jtree } from "jtree"
-
 const { TreeNode } = jtree
-
 const lodash = require("lodash")
 const { TreeBaseFile } = require("jtree/products/treeBase.node.js")
 
@@ -406,29 +403,6 @@ class PLDBFile extends TreeBaseFile {
     })
 
     return examples
-  }
-
-  @imemo
-  get _getLanguagesWithThisFeatureResearched() {
-    const featureKeyword = this.get("featureKeyword")
-
-    return this.base.topLanguages.filter(file =>
-      file.getNode("features")?.has(featureKeyword)
-    )
-  }
-
-  get languagesWithThisFeature() {
-    const { featurePath } = this
-    return this._getLanguagesWithThisFeatureResearched.filter(
-      file => file.get(featurePath) === "true"
-    )
-  }
-
-  get languagesWithoutThisFeature() {
-    const { featurePath } = this
-    return this._getLanguagesWithThisFeatureResearched.filter(
-      file => file.get(featurePath) === "false"
-    )
   }
 
   getMostRecentInt(pathToSet: string): number {

@@ -8,7 +8,7 @@ author https://github.com/breck7 Breck Yunits
 image line-comments.png
 
 * About 85% of the languages in PLDB have line comments.
- link BASE_URL/languages/line-comments-feature.html line comments
+ link BASE_URL/features/line-comments.html line comments
  dateline
 
 endSnippet
@@ -21,7 +21,7 @@ code
 
 * These are different from multiline comments which are delimited by a pair of tokens (such as `%{` and `}%`).
  wrapsOn
- link BASE_URL/languages/multiline-comments-feature.html multiline comments
+ link BASE_URL/features/multiline-comments.html multiline comments
 
 ## The majority of languages use // or # to start a line comment
 

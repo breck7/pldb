@@ -22,14 +22,14 @@ author https://github.com/hassamalhajaji Hassam Alhajaji
 endSnippet
 
 * *Dr. Kernighan:* The main idea in Awk was associative arrays, which were newish at the time, but which now show up in most languages either as library functions (hashmaps in Java or C++) or directly in the language (dictionaries in Perl and Python).  Associative arrays are a very powerful construct, and can be used to simulate lots of other data structures.
- https://build.pldb.com/languages/maps-feature.html associative arrays
+ https://build.pldb.com/features/maps.html associative arrays
  https://pldb.com/languages/java.html Java
  https://pldb.com/languages/cpp.html C++
  https://pldb.com/languages/perl.html Perl
  https://pldb.com/languages/python.html Python
  
 * I guess the pattern-action paradigm was also not novel but not widely used at the time. It's an effective way to organize some kinds of computations.
- https://pldb.com/languages/pattern-matching-feature.html pattern-action
+ https://pldb.com/features/pattern-matching.html pattern-action
 
 * *Hassam:* When you were making programming languages what references did you use?
 
