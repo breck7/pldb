@@ -18,11 +18,11 @@ class FeaturePageTemplate extends LanguagePageTemplate {
   }
 
   get prevPage() {
-    return this.file.previousRankedFeature.permalink
+    return this.file.getPrevious().permalink
   }
 
   get nextPage() {
-    return this.file.nextRankedFeature.permalink
+    return this.file.getNext().permalink
   }
 
   get typeLink() {

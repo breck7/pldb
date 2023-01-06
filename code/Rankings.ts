@@ -73,19 +73,12 @@ const computeRankings = (folder: FolderInterface) => {
     folder.filter(file => file.isLanguage)
   )
   const inverseLanguageRanks = makeInverseRanks(languageRanks)
-  const featureRanks = calcRanks(
-    folder,
-    folder.filter(file => file.isFeature)
-  )
-  const inverseFeatureRanks = makeInverseRanks(featureRanks)
 
   return {
     ranks,
     inverseRanks,
     languageRanks,
-    inverseLanguageRanks,
-    featureRanks,
-    inverseFeatureRanks
+    inverseLanguageRanks
   }
 }
 

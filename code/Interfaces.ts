@@ -34,9 +34,7 @@ interface FolderInterface {
   predictNumberOfUsers: Function
   getFileAtLanguageRank: Function
   getFileAtRank: Function
-  getFeatureAtRank: Function
   getLanguageRankExplanation: Function
-  getFeatureRank: Function
   columnDocumentation: any[]
   topLanguages: any[]
   getRank: Function

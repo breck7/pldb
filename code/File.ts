@@ -180,14 +180,6 @@ class PLDBFile extends TreeBaseFile {
     return `features ${this.get("featureKeyword")}`
   }
 
-  get previousRankedFeature() {
-    return this.base.getFeatureAtRank(this.base.getFeatureRank(this) - 1)
-  }
-
-  get nextRankedFeature() {
-    return this.base.getFeatureAtRank(this.base.getFeatureRank(this) + 1)
-  }
-
   get lineCommentToken() {
     return this.get("lineCommentToken")
   }
@@ -440,10 +432,6 @@ class PLDBFile extends TreeBaseFile {
 
   get otherReferences() {
     return this.findNodes("reference").map(line => line.getContent())
-  }
-
-  get isFeature() {
-    return this.get("type") === "feature"
   }
 
   get wikipediaTitle() {

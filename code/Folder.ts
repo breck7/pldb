@@ -209,10 +209,6 @@ class PLDBFolder extends TreeBaseFolder {
     return sorted
   }
 
-  getFeatureAtRank(rank: number) {
-    return this._getFileAtRank(rank, this.rankings.inverseFeatureRanks)
-  }
-
   getFileAtLanguageRank(rank: number) {
     return this._getFileAtRank(rank, this.rankings.inverseLanguageRanks)
   }
@@ -229,10 +225,6 @@ class PLDBFolder extends TreeBaseFolder {
 
   getLanguageRankExplanation(file: PLDBFile) {
     return this.rankings.languageRanks[file.id]
-  }
-
-  getFeatureRank(file: PLDBFile) {
-    return this.rankings.featureRanks[file.id].index
   }
 
   getLanguageRank(file: PLDBFile) {

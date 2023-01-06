@@ -19,7 +19,7 @@ class FeatureFile extends TreeBaseFile {
     )
   }
 
-  get languageFolder() {
+  get base() {
     return this.getParent().languageFolder
   }
 
@@ -44,7 +44,7 @@ class FeaturesFolder extends TreeBaseFolder {
       .setDir(path.join(databaseFolder, "things"))
       .setGrammarDir(path.join(databaseFolder, "grammar"))
     featuresFolder.languageFolder = languageFolder
-    return featuresFolder
+    return featuresFolder.loadFolder()
   }
 
   createParser() {
