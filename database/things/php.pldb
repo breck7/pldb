@@ -50,6 +50,8 @@ features
  hasComments true
  hasConstructors true
  hasHereDocs true
+ hasTernaryOperators true
+  <?php echo 1 ? 1 : 0;
  hasAssignment true
   $name = "John"
  hasImports true

@@ -26,6 +26,8 @@ features
  hasSingleDispatch true
  hasRegularExpressionsSyntaxSugar false
  hasCaseInsensitiveIdentifiers false
+ hasTernaryOperators true
+  print(1 if 1 else 0)
  hasBitWiseOperators true
   x << y
  canDoShebang true

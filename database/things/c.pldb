@@ -12,6 +12,9 @@ originCommunity Bell Labs
 features
  hasRegularExpressionsSyntaxSugar false
  hasBooleans true
+ hasTernaryOperators true
+  #include <stdio.h>
+  int main(void) { printf("%d", 1 ? 1 : 0); }
  hasPointers true
   int *ptr;
  hasStrings true

@@ -22,6 +22,9 @@ visualParadigm false
 
 features
  hasComments true
+ hasTernaryOperators true
+  // Since if statements are expressions
+  println(if (true) true else false)
  hasImports true
   import foo.Bar // Bar is now accessible without qualification
   import foo.* // everything in 'foo' becomes accessible

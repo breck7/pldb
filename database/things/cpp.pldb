@@ -18,6 +18,9 @@ visualParadigm false
 features
  hasRegularExpressionsSyntaxSugar false
  hasSemanticIndentation false
+ hasTernaryOperators true
+  #include <stdio.h>
+  int main(void) { printf("%d", 1 ? 1 : 0); }
  hasCaseInsensitiveIdentifiers false
  hasImports true
   #include <iostream>
