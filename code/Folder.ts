@@ -1,5 +1,5 @@
 import { jtree } from "jtree"
-import { FeatureFile, FeaturesFolder } from "./FeaturesFolder"
+import { FeatureFile, FeaturesFolder } from "./Features"
 import { PLDBFile, runtimeCsvProps } from "./File"
 import {
   FeatureSummary,

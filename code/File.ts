@@ -176,10 +176,6 @@ class PLDBFile extends TreeBaseFile {
     return kw ? kw.split(" ") : []
   }
 
-  get featurePath() {
-    return `features ${this.get("featureKeyword")}`
-  }
-
   get lineCommentToken() {
     return this.get("lineCommentToken")
   }
