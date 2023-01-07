@@ -35,18 +35,16 @@ startColumns 4
 html
  <div class="quickLinks">${this.quickLinks}</div>
 
-${this.oneLiner}
-
 ${this.image}
 
 ${this.descriptionSection}
-
-${this.factsSection}
 
 html
  <br>
 
 ${this.exampleSection}
+
+${this.factsSection}
 
 endColumns
 
@@ -116,20 +114,6 @@ import ../footer.scroll
     return `${title} ${isOrAre} a ${this.typeLink}.`
   }
 
-  get oneLiner() {
-    const { file } = this
-    const { title, appeared } = file
-    const standsFor = file.get("standsFor")
-    let akaMessage = standsFor ? `, aka ${standsFor},` : ""
-    const isOrAre = title.endsWith("s") ? "are" : "is"
-
-    return `* ${title}${akaMessage} ${isOrAre} a ${this.typeLink}${
-      appeared ? ` created in ${appeared}` : ""
-    }.
- link ../lists/languages.html?filter=${appeared} ${appeared}
- `
-  }
-
   get prevPage() {
     return this.file.getPrevious().permalink
   }
@@ -189,6 +173,7 @@ code
       : ""
 
     return (
+      examplesText +
       negativeText +
       `* Languages *with* ${title} include ${positives
         .map(
@@ -196,8 +181,7 @@ code
         )
         .join(", ")}
 
-` +
-      examplesText
+`
     )
   }
 }
