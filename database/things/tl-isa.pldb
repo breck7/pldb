@@ -1,13 +1,11 @@
 title Timeless Instruction Set (TL ISA)
 appeared 2022
 type isa
-country Norway
-originCommunity Inductive AS
-
 description An ISA for timeless programs. It aims to be simple, concise and powerful. It is easy to read and write by humans. In addition to supporting computations, it also natively supports multiple CPUs, disks, clocks, screens, audio, keyboards and virtual devices. It is a compilation target for the progsbase programming language.
-
 documentation https://www.progsbase.com/isa/
 spec https://www.progsbase.com/isa/
+country Norway
+originCommunity Inductive AS
 
 twitter https://twitter.com/progsbase
 fileType text
