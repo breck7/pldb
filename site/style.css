@@ -51,7 +51,11 @@ a:hover {
   text-align: right;
 }
 
-.exampleCodeHeader {
+.codeWithHeader {
+  break-inside: avoid-column;
+}
+
+.codeHeader {
   font-size: 80%;
   text-align: center;
   background: rgba(224, 224, 224, 0.4);

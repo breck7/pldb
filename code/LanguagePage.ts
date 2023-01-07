@@ -856,8 +856,7 @@ ${creatorsLinks}
       .findNodes("funFact")
       .map(
         fact =>
-          `exampleCodeHeader ${`<a href='${fact.getContent()}'>Fun fact</a>`}:
-code
+          `codeWithHeader ${`<a href='${fact.getContent()}'>Fun fact</a>`}:
  ${cleanAndRightShift(lodash.escape(fact.childrenToString()), 1)}`
       )
       .join("\n\n")
@@ -867,12 +866,11 @@ code
     return this.file.allExamples
       .map(
         example =>
-          `exampleCodeHeader Example from ${
+          `codeWithHeader Example from ${
             !example.link
               ? example.source
               : `<a href='${example.link}'>` + example.source + "</a>"
           }:
-code
  ${cleanAndRightShift(lodash.escape(example.code), 1)}`
       )
       .join("\n\n")

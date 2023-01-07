@@ -32,17 +32,12 @@ viewSourceUrl ${this.sourceUrl}
 
 startColumns 4
 
-html
- <div class="quickLinks">${this.quickLinks}</div>
+${this.exampleSection}
 
 ${this.image}
 
+## Our definition
 ${this.descriptionSection}
-
-html
- <br>
-
-${this.exampleSection}
 
 ${this.factsSection}
 
@@ -127,7 +122,7 @@ import ../footer.scroll
   }
 
   get sourceUrl() {
-    return `https://github.com/breck7/pldb/blob/main/database/features/${this.id}.pldb`
+    return `https://github.com/breck7/pldb/blob/main/database/features/${this.id}.feature`
   }
 
   get exampleSection() {
@@ -155,9 +150,7 @@ import ../footer.scroll
         const links = group
           .map(hit => `<a href="../languages/${hit.id}.html">${hit.title}</a>`)
           .join(", ")
-        return `exampleCodeHeader Example from ${links}:
-
-code
+        return `codeWithHeader Example from ${links}:
  ${cleanAndRightShift(lodash.escape(group[0].example), 1)}`
       })
       .join("\n\n")

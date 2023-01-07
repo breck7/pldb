@@ -35,14 +35,13 @@ observableNode
   compile() {
    return `<div class="scrollQuoteComponent">Analyze this data yourself in <a href="${this.getWord(1)}">Observable</a></div>`
   }
-exampleCodeHeaderNode
- todo Could ditch this if Scroll supported HAML style class tags
+codeWithHeaderNode
  cruxFromId
  catchAllCellType stringCell
- extends abstractScrollNode
+ extends codeNode
  javascript
   compile() {
-   return `<div class="exampleCodeHeader">${this.getContent()}</div>`
+   return `<div class="codeWithHeader"><div class="codeHeader">${this.getContent()}</div>${super.compile()}</div>`
   }
 bashNode
  cruxFromId
@@ -55,7 +54,7 @@ bashNode
    const file = this.getRootNode().file
    const cwd = file.folder.folder
    const output = require("child_process").execSync(command, {cwd})
-   return `<div class="exampleCodeHeader">${command}</div><code class="scrollCodeBlockComponent">${output.toString().trim()}</code>`
+   return `<div class="codeWithHeader"><div class="codeHeader">${command}</div><code class="scrollCodeBlockComponent">${output.toString().trim()}</code></div>`
   }
 monacoEditorNode
  cruxFromId
