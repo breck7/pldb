@@ -81,10 +81,14 @@ const buildImportsFile = (filepath, varMap) => {
 
 class SiteBuilder {
   buildAllCommand() {
+    let lastMethodName = ""
     buildAllList.forEach(methodName => {
-      console.log(methodName)
+      if (lastMethodName) console.log(`Finished: ${lastMethodName}`)
+      console.log(`Running: ${methodName}`)
       this[methodName]()
+      lastMethodName = methodName
     })
+    console.log(`Finished: ${lastMethodName}`)
     this._printBenchmarkResults()
   }
 
@@ -163,10 +167,10 @@ class SiteBuilder {
   @benchmark
   @buildAll
   buildDatabasePagesCommand() {
-    pldbBase.featuresFolder.forEach(file =>
+    pldbBase.features.forEach(feature =>
       Disk.write(
-        path.join(publishedFeaturesFolder, `${file.id}.scroll`),
-        new FeaturePageTemplate(file).toScroll()
+        path.join(publishedFeaturesFolder, `${feature.id}.scroll`),
+        new FeaturePageTemplate(feature).toScroll()
       )
     )
 
@@ -437,10 +441,10 @@ class SiteBuilder {
     buildImportsFile(path.join(listsFolder, "featuresImports.scroll"), {
       COUNT: numeral(Object.values(topFeatures).length).format("0,0"),
       TABLE: {
-        rows: topFeatures,
+        rows: topFeatures.map(feature => feature.summary),
         header: [
-          "feature",
-          "featureLink",
+          "title",
+          "titleLink",
           "pseudoExample",
           "yes",
           "no",

@@ -1,0 +1,5 @@
+hasExceptionsNode
+ extends abstractFeatureNode
+ string title Exceptions
+ string pseudoExample throw new Error("PLDB uh oh")
+ string reference https://en.wikipedia.org/wiki/Exception_handling

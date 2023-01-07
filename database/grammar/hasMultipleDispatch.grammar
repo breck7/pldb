@@ -1,0 +1,5 @@
+hasMultipleDispatchNode
+ extends abstractFeatureNode
+ string title Multiple Dispatch
+ string pseudoExample collide_with(x::Spaceship, y::Spaceship)
+ string reference https://en.wikipedia.org/wiki/Multiple_dispatch

@@ -1,0 +1,5 @@
+hasImplicitArgumentsNode
+ extends abstractFeatureNode
+ string title Implicit Arguments
+ string reference https://docs.scala-lang.org/tour/implicit-parameters.html
+ string pseudoExample shout(implicit message: string)

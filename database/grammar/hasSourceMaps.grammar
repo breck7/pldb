@@ -1,0 +1,4 @@
+hasSourceMapsNode
+ extends abstractFeatureNode
+ string title Source Maps
+ string pseudoExample {file: 'pldb.min.js',sources: ['pldb.js'], mappings: 'CAAC,IAAI,IAAM'}

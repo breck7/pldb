@@ -4,10 +4,7 @@ originCommunityNode
  todo Make origin community name the url for the community, not the name.
  listDelimiter  && 
  example
-  originCommunity Microsoft
-  originCommunity futureofcoding
-  originCommunity /r/programminglanguages
-  originCommunity news.ycombinator.com
+  originCommunity Microsoft && /r/programminglanguages && news.ycombinator.com
  catchAllCellType stringCell
  extends abstractFactNode
  cruxFromId

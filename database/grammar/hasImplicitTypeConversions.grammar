@@ -1,0 +1,5 @@
+hasImplicitTypeConversionsNode
+ extends abstractFeatureNode
+ string title Implicit Type Casting
+ string reference https://en.wikipedia.org/wiki/Type_conversion
+ string pseudoExample console.log("hello " + 2)

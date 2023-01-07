@@ -1,6 +1,0 @@
-title Disk Output
-type feature
-description Many programming languages have the capability to write to disks using system calls.
-
-pseudoExample write("pldb.csv", "...")
-featureKeyword canWriteToDisk

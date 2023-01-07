@@ -1,0 +1,5 @@
+hasPolymorphismNode
+ extends abstractFeatureNode
+ string title Polymorphism
+ string pseudoExample a + "b"; 1 + 2
+ string reference https://en.wikipedia.org/wiki/Polymorphism_(computer_science)

@@ -1,8 +1,0 @@
-title Interfaces
-type feature
-description Aka Protocol pattern.
-
-pseudoExample interface PLDBFile
-featureKeyword hasInterfaces
-
-wikipedia https://en.wikipedia.org/wiki/Protocol_(object-oriented_programming)

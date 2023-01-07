@@ -1,7 +1,0 @@
-title Static Typing
-type feature
-description Static type checking is the process of verifying the type safety of a program based on analysis of a program's text (source code).
-reference https://en.wikipedia.org/wiki/Type_system#Static_type_checking
-
-pseudoExample int pldbRank = 100
-featureKeyword hasStaticTyping

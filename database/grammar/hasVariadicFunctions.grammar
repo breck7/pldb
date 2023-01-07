@@ -1,0 +1,5 @@
+hasVariadicFunctionsNode
+ extends abstractFeatureNode
+ string title Variadic Functions
+ string pseudoExample args.map(doSomething)
+ string reference https://en.wikipedia.org/wiki/Variadic_function

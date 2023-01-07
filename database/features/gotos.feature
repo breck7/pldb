@@ -1,9 +1,0 @@
-title Gotos
-appeared 1982
-type feature
-description It performs a one-way transfer of control to another line of code; in contrast a function call normally returns control.
-
-pseudoExample goto 10
-featureKeyword hasGotos
-
-wikipedia https://en.wikipedia.org/wiki/Goto

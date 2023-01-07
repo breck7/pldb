@@ -1,8 +1,0 @@
-title Traits
-type feature
-description Sometimes referred to as mixins. In computer programming, a trait is a concept used in object-oriented programming, which represents a set of methods that can be used to extend the functionality of a class.
-
-pseudoExample use redBorder
-featureKeyword hasTraits
-
-wikipedia https://en.wikipedia.org/wiki/Trait_(computer_programming)

@@ -1,8 +1,0 @@
-title Type Parameters
-type feature
-description In computer programming languages, TypeParameter is a frequently used generic label used in templates to reference an unknown data type, data structure, or class.
-
-pseudoExample function identity<T>(arg: T): T {return arg}
-featureKeyword hasTypeParameters
-
-wikipedia https://en.wikipedia.org/wiki/TypeParameter

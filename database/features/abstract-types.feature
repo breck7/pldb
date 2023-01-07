@@ -1,9 +1,0 @@
-title Abstract Types
-appeared 1974
-type feature
-description In programming languages, an abstract type is a type in a nominative type system that cannot be instantiated directly.
-
-pseudoExample abstract class PLDBFile {}
-featureKeyword hasAbstractTypes
-
-wikipedia https://en.wikipedia.org/wiki/Abstract_type

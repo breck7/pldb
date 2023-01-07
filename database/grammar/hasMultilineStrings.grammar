@@ -1,0 +1,4 @@
+hasMultilineStringsNode
+ extends abstractFeatureNode
+ string title Multiline Strings
+ string pseudoExample hello = """Hello\nPLDB"""

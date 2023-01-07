@@ -1,0 +1,5 @@
+hasManualMemoryManagementNode
+ extends abstractFeatureNode
+ string title Manual Memory Management
+ string pseudoExample malloc(4);
+ string reference https://en.wikipedia.org/wiki/Manual_memory_management

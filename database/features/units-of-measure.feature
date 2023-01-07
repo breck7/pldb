@@ -1,8 +1,0 @@
-title Units of Measure
-type feature
-description Some languages have builtin units of measurement.
-
-pseudoExample 42cm
-featureKeyword hasUnitsOfMeasure
-
-wikipedia https://en.wikipedia.org/wiki/Unit_of_measurement

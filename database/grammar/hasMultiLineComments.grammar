@@ -1,0 +1,6 @@
+hasMultiLineCommentsNode
+ extends abstractFeatureNode
+ string title MultiLine Comments
+ string reference https://en.wikipedia.org/wiki/Comparison_of_programming_languages_(syntax)#Comments
+ string pseudoExample /* Hello PLDB */
+ string tokenKeyword multiLineCommentTokens

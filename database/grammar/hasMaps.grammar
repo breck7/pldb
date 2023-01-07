@@ -1,0 +1,13 @@
+hasMapsNode
+ extends abstractFeatureNode
+ string title Maps
+ string aka dict
+ string aka dictionary
+ string aka object
+ string aka record
+ string aka struct
+ string aka hashtable
+ string aka keyed list
+ string aka associative array
+ string pseudoExample {name: "PLDB"}
+ string reference https://en.wikipedia.org/wiki/Associative_array

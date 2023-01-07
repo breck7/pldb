@@ -1,0 +1,5 @@
+hasPostfixNotationNode
+ extends abstractFeatureNode
+ string title Postfix Notation
+ string pseudoExample 2 3 4 + 2 -
+ string reference https://en.wikipedia.org/wiki/Reverse_Polish_notation

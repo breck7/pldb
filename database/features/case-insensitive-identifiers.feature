@@ -1,7 +1,0 @@
-title Case Insensitive Identifiers
-type feature
-description Some programming languages have identifiers that are case insensitive, so HOUSE and house and House refer to the same thing.
-reference https://rosettacode.org/wiki/Case-sensitivity_of_identifiers
-
-pseudoExample pLdB = "PLDB"
-featureKeyword hasCaseInsensitiveIdentifiers

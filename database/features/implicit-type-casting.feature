@@ -1,7 +1,0 @@
-title Implicit Type Casting
-type feature
-description Changing an expression from one data type to another automatically.
-reference https://en.wikipedia.org/wiki/Type_conversion
-
-pseudoExample console.log("hello " + 2)
-featureKeyword hasImplicitTypeConversions

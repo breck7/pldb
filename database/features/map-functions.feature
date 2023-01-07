@@ -1,9 +1,0 @@
-title Map Functions
-appeared 1953
-type feature
-description Map is the name of a higher-order function that applies a given function to each element of a functor, e.g. a list, returning a list of results in the same order.
-
-pseudoExample pldbFiles.map(downloadFilesFn)
-featureKeyword hasMapFunctions
-
-wikipedia https://en.wikipedia.org/wiki/Map_(higher-order_function)

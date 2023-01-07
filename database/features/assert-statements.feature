@@ -1,8 +1,0 @@
-title Assert Statements
-appeared 1949
-type feature
-description Assert Statements can be built into the language or included in a standard library.
-reference https://en.wikipedia.org/wiki/Debug_code#Assert_Statements
-
-pseudoExample assert(isTrue)
-featureKeyword hasAssertStatements

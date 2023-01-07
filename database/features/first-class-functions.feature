@@ -1,9 +1,0 @@
-title First-Class Functions
-appeared 1960
-type feature
-description In computer science, a programming language is said to have first-class functions if it treats functions as first-class citizens. This means the language supports passing functions as arguments to other functions, returning them as the values from other functions, and assigning them to variables or storing them in data structures.
-
-pseudoExample [2.1].map(Math.round)
-featureKeyword hasFirstClassFunctions
-
-wikipedia https://en.wikipedia.org/wiki/First-class_function

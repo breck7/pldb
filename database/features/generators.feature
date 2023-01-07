@@ -1,9 +1,0 @@
-title Generators
-appeared 1975
-type feature
-description In computer science, a generator is a special routine that can be used to control the iteration behaviour of a loop. All generators are iterators.
-
-pseudoExample yield 2
-featureKeyword hasGenerators
-
-wikipedia https://en.wikipedia.org/wiki/Generator_(computer_programming)

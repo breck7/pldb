@@ -1,8 +1,0 @@
-title Unary Operators
-type feature
-description Operators with arity 1.
-
-pseudoExample count++
-featureKeyword hasUnaryOperators
-
-wikipedia https://en.wikipedia.org/wiki/Unary_operation

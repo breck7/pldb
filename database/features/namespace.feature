@@ -1,7 +1,0 @@
-title Namespaces
-appeared 2002
-type feature
-description Most languages have implicit scopes/namespaces, but some also allow for explicit namespacing.
-
-pseudoExample namespace PLDB {}
-featureKeyword hasNamespaces

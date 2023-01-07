@@ -1,9 +1,10 @@
 interface FeatureSummary {
-  feature: string
-  featureLink: string
+  fileName: string
+  id: string
+  title: string
+  titleLink: string
   aka: string
-  path: string
-  token?: string
+  token?: string // Links a feature to the related token keyword in the pldb grammar
   yes: number
   no: number
   percentage: string

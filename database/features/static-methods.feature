@@ -1,7 +1,0 @@
-title Static Methods
-type feature
-description Methods on a class in object oriented langauges that are not called on an instance.
-reference https://www.geeksforgeeks.org/static-methods-vs-instance-methods-java/
-
-pseudoExample static downloadPldb() {}
-featureKeyword hasStaticMethods

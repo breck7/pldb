@@ -1,22 +1,19 @@
 import { imemo, linkManyAftertext } from "./utils"
-import { LanguagePageTemplate } from "./LanguagePage"
 import { cleanAndRightShift, getIndefiniteArticle } from "./utils"
-
-const path = require("path")
-
-const { jtree } = require("jtree")
-const { TreeNode } = jtree
-const { TreeBaseFile } = require("jtree/products/treeBase.node.js")
-const { TreeBaseFolder } = require("jtree/products/treeBase.node.js")
-
-const databaseFolder = path.join(__dirname, "..", "database")
-
+import { FeatureSummary } from "./Interfaces"
 const lodash = require("lodash")
 
-class FeaturePageTemplate extends LanguagePageTemplate {
+class FeaturePageTemplate {
+  constructor(feature: Feature) {
+    this.feature = feature
+  }
+
+  feature: Feature
+
   toScroll() {
-    const { file } = this
-    const { title, id } = file
+    const { feature } = this
+    const { title, id, fileName } = feature
+
     return `import header.scroll
 
 title ${title}
@@ -34,13 +31,6 @@ startColumns 4
 
 ${this.exampleSection}
 
-${this.image}
-
-## Our definition
-${this.descriptionSection}
-
-${this.factsSection}
-
 endColumns
 
 keyboardNav ${this.prevPage} ${this.nextPage}
@@ -49,51 +39,20 @@ import ../footer.scroll
 `.replace(/\n\n\n+/g, "\n\n")
   }
 
+  makeATag(id) {
+    const file = this.feature.base.getFile(id)
+    return `<a href="${file.permalink}">${file.title}</a>`
+  }
+
   get facts() {
-    const { file } = this
-    const { title, website } = file
+    const { feature } = this
+    const { title, references } = feature
 
     const facts = []
 
-    const wikipediaLink = file.get("wikipedia")
-    const wikiLink = wikipediaLink ? wikipediaLink : ""
-    if (wikiLink) facts.push(`${title} Wikipedia page\n ${wikiLink}`)
-
-    const demoVideo = file.get("demoVideo")
-    if (demoVideo) facts.push(`Video demo of ${title}\n ${demoVideo}`)
-
-    const wpRelated = file.get("wikipedia related")
-    const seeAlsoLinks = wpRelated ? wpRelated.split(" ") : []
-    const related = file.get("related")
-    if (related) related.split(" ").forEach(id => seeAlsoLinks.push(id))
-
-    if (seeAlsoLinks.length)
+    if (references.length)
       facts.push(
-        "See also: " +
-          `(${seeAlsoLinks.length} related languages)` +
-          seeAlsoLinks.map(link => this.makeATag(link)).join(", ")
-      )
-
-    const { otherReferences } = file
-
-    const semanticScholarReferences = otherReferences.filter(link =>
-      link.includes("semanticscholar")
-    )
-    const nonSemanticScholarReferences = otherReferences.filter(
-      link => !link.includes("semanticscholar")
-    )
-
-    if (semanticScholarReferences.length)
-      facts.push(
-        `Read more about ${title} on Semantic Scholar: ${linkManyAftertext(
-          semanticScholarReferences
-        )}`
-      )
-    if (nonSemanticScholarReferences.length)
-      facts.push(
-        `Read more about ${title} on the web: ${linkManyAftertext(
-          nonSemanticScholarReferences
-        )}`
+        `Read more about ${title} on the web: ${linkManyAftertext(references)}`
       )
 
     facts.push(
@@ -102,39 +61,28 @@ import ../footer.scroll
     return facts
   }
 
-  get description() {
-    const { title } = this.file
-    const isOrAre = title.endsWith("s") ? "are" : "is"
-
-    return `${title} ${isOrAre} a ${this.typeLink}.`
-  }
-
   get prevPage() {
-    return this.file.getPrevious().permalink
+    return this.feature.previous.permalink
   }
 
   get nextPage() {
-    return this.file.getNext().permalink
-  }
-
-  get typeLink() {
-    return `<a href="../lists/features.html">language feature</a>`
+    return this.feature.next.permalink
   }
 
   get sourceUrl() {
-    return `https://github.com/breck7/pldb/blob/main/database/features/${this.id}.feature`
+    return `https://github.com/breck7/pldb/blob/main/database/grammar/${this.feature.id}.grammar`
   }
 
   get exampleSection() {
-    const { file } = this
-    const { title, featurePath } = file
+    const { feature } = this
+    const { title, featurePath } = feature
 
-    const positives = file.languagesWithThisFeature
+    const positives = feature.languagesWithThisFeature
     const positiveText = `* Languages *with* ${title} include ${positives
       .map(file => `<a href="../languages/${file.permalink}">${file.title}</a>`)
       .join(", ")}`
 
-    const negatives = file.languagesWithoutThisFeature
+    const negatives = feature.languagesWithoutThisFeature
     const negativeText = negatives.length
       ? `* Languages *without* ${title} include ${negatives
           .map(
@@ -155,7 +103,7 @@ import ../footer.scroll
     const grouped = lodash.groupBy(examples, "example")
     const examplesText = Object.values(grouped)
       .map((group: any) => {
-        const id = file.id
+        const id = feature.id
         const links = group
           .map(hit => `<a href="../languages/${hit.id}.html">${hit.title}</a>`)
           .join(", ")
@@ -168,37 +116,100 @@ import ../footer.scroll
   }
 }
 
-class FeatureFile extends TreeBaseFile {
+class Feature {
+  constructor(node: any, collection: FeaturesCollection) {
+    this.node = node
+    this.collection = collection
+    this.fileName = this.id + ".grammar"
+  }
+
+  fileName: string
+
+  get permalink() {
+    return this.id + ".html"
+  }
+
+  @imemo
+  get id() {
+    return this.node.id.replace("Node", "")
+  }
+
+  previous: Feature
+  next: Feature
+
+  node: any
+  collection: FeaturesCollection
+
+  get yes() {
+    return this.languagesWithThisFeature.length
+  }
+
+  get no() {
+    return this.languagesWithoutThisFeature.length
+  }
+
+  get percentage() {
+    const { yes, no } = this
+    const measurements = yes + no
+    return measurements < 100
+      ? "-"
+      : lodash.round((100 * yes) / measurements, 0) + "%"
+  }
+
+  @imemo
+  get aka() {
+    return this.get("aka") // .join(" or "),
+  }
+
+  @imemo
+  get token() {
+    return this.get("tokenKeyword")
+  }
+
+  @imemo
+  get titleLink() {
+    return `../features/${this.permalink}`
+  }
+
   @imemo
   get _getLanguagesWithThisFeatureResearched() {
-    const featureKeyword = this.get("featureKeyword")
-
+    const { id } = this
     return this.base.topLanguages.filter(file =>
-      file.getNode("features")?.has(featureKeyword)
+      file.getNode("features")?.has(id)
     )
   }
 
-  get otherReferences() {
-    return this.findNodes("reference").map(line => line.getContent())
+  get(word: string): string {
+    return this.node.getFrom(`string ${word}`)
   }
 
   @imemo
-  get title(): string {
+  get title() {
     return this.get("title") || this.id
   }
 
-  get featurePath() {
-    return `features ${this.get("featureKeyword")}`
+  @imemo
+  get pseudoExample() {
+    return (this.get("pseudoExample") || "")
+      .replace(/\</g, "&lt;")
+      .replace(/\|/g, "&#124;")
   }
 
-  getAll(keyword) {
-    return this.findNodes(keyword).map(i => i.getContent())
+  @imemo
+  get references() {
+    return [this.get("reference")] // todo
+  }
+
+  @imemo
+  get featurePath() {
+    return `features ${this.id}`
   }
 
   get base() {
-    return this.getParent().languageFolder
+    return this.collection.base
   }
 
+  @imemo
   get languagesWithThisFeature() {
     const { featurePath } = this
     return this._getLanguagesWithThisFeatureResearched.filter(
@@ -206,26 +217,73 @@ class FeatureFile extends TreeBaseFile {
     )
   }
 
+  @imemo
   get languagesWithoutThisFeature() {
     const { featurePath } = this
     return this._getLanguagesWithThisFeatureResearched.filter(
       file => file.get(featurePath) === "false"
     )
   }
+
+  @imemo get summary(): FeatureSummary {
+    const {
+      id,
+      title,
+      fileName,
+      titleLink,
+      aka,
+      token,
+      yes,
+      no,
+      percentage,
+      pseudoExample
+    } = this
+    return {
+      id,
+      title,
+      fileName,
+      titleLink,
+      aka,
+      token,
+      yes,
+      no,
+      percentage,
+      pseudoExample
+    }
+  }
 }
 
-class FeaturesFolder extends TreeBaseFolder {
-  static getFolder(languageFolder): FeaturesFolder {
-    const featuresFolder = new FeaturesFolder()
-      .setDir(path.join(databaseFolder, "features"))
-      .setGrammarDir(path.join(databaseFolder, "grammar"))
-    featuresFolder.languageFolder = languageFolder
-    return featuresFolder.loadFolder()
-  }
+class FeaturesCollection {
+  base: any
+  features: Feature[]
+  constructor(base: any) {
+    this.base = base
 
-  createParser() {
-    return new TreeNode.Parser(FeatureFile)
+    const allGrammarNodes = Object.values(
+      base
+        .nodeAt(0)
+        .parsed.getDefinition()
+        ._getProgramNodeTypeDefinitionCache()
+    )
+
+    this.features = allGrammarNodes
+      .filter((node: any) => node.get("extends") === "abstractFeatureNode")
+      .map(nodeDef => {
+        const feature = new Feature(nodeDef, this)
+        if (!feature.title) {
+          throw new Error(`Feature ${nodeDef.toString()} has no title.`)
+        }
+        return feature
+      })
+
+    let previous = this.features[this.features.length - 1]
+    this.features.forEach((feature: Feature, index: number) => {
+      feature.previous = previous
+      feature.next = this.features[index + 1]
+      previous = feature
+    })
+    this.features[this.features.length - 1].next = this.features[0]
   }
 }
 
-export { FeaturesFolder, FeatureFile, FeaturePageTemplate }
+export { FeaturesCollection, FeaturePageTemplate }
