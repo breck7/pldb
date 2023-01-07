@@ -19,7 +19,7 @@ class EditTreeBaseCommands {
       const hit = file.getNode(field)
       if (hit) {
         const parsed = file.parsed.getNode(field)
-        hit.setContent(parsed.typedContent.join(newDelimiter))
+        hit.setContent(parsed.list.join(newDelimiter))
         file.save()
       }
     })
