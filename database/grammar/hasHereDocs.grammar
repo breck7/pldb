@@ -1,2 +1,5 @@
 hasHereDocsNode
  extends abstractFeatureNode
+ string title Here Document
+ string reference https://en.wikipedia.org/wiki/Here_document
+ string pseudoExample `A big multliline text block`

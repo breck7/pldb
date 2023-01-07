@@ -1,2 +1,6 @@
 isLispNode
  extends abstractFeatureNode
+ string title Lispy
+ description Is this in the Lisp family of languages?
+ string reference https://en.wikipedia.org/wiki/Lisp_(programming_language)
+ string pseudoExample (+ 1 2)
