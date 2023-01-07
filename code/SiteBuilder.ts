@@ -27,7 +27,6 @@ const { ScrollFolder } = require("scroll-cli")
 const shell = require("child_process").execSync
 
 import { LanguagePageTemplate } from "./LanguagePage"
-import { FeaturePageTemplate } from "./Features"
 import { PLDBFolder } from "./Folder"
 
 const pldbBase = PLDBFolder.getBase().loadFolder()
@@ -170,7 +169,7 @@ class SiteBuilder {
     pldbBase.features.forEach(feature =>
       Disk.write(
         path.join(publishedFeaturesFolder, `${feature.id}.scroll`),
-        new FeaturePageTemplate(feature).toScroll()
+        feature.toScroll()
       )
     )
 
