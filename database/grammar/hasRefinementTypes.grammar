@@ -1,0 +1,5 @@
+hasRefinementTypesNode
+ extends abstractFeatureNode
+ string title Refinement Types
+ string pseudoExample evenInt where int % 2 = 0
+ string reference https://en.wikipedia.org/wiki/Refinement_type

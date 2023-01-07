@@ -1,0 +1,5 @@
+hasProcessorRegistersNode
+ extends abstractFeatureNode
+ string title Processor Registers
+ string pseudoExample eax 2
+ string reference https://en.wikipedia.org/wiki/Processor_register

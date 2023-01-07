@@ -1,0 +1,5 @@
+hasGarbageCollectionNode
+ extends abstractFeatureNode
+ string title Garbage Collection
+ string pseudoExample var iDontNeedToFreeThis
+ string reference https://en.wikipedia.org/wiki/Garbage_collection_(computer_science)

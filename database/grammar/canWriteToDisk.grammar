@@ -1,0 +1,4 @@
+canWriteToDiskNode
+ extends abstractFeatureNode
+ string title Disk Output
+ string pseudoExample write("pldb.csv", "...")

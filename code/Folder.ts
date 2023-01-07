@@ -1,5 +1,5 @@
 import { jtree } from "jtree"
-import { FeatureFile, FeaturesFolder } from "./Features"
+import { FeaturesCollection } from "./Features"
 import { PLDBFile, runtimeCsvProps } from "./File"
 import {
   FeatureSummary,
@@ -28,13 +28,6 @@ class PLDBFolder extends TreeBaseFolder {
 
   createParser() {
     return new TreeNode.Parser(PLDBFile)
-  }
-
-  _featuresFolder: any
-  get featuresFolder() {
-    if (!this._featuresFolder)
-      this._featuresFolder = FeaturesFolder.getFolder(this)
-    return this._featuresFolder
   }
 
   @imemo
@@ -175,37 +168,19 @@ class PLDBFolder extends TreeBaseFolder {
   @imemo
   get featuresMap(): Map<string, FeatureSummary> {
     const featuresMap = new Map<string, FeatureSummary>()
-    this.topFeatures.forEach(feature => featuresMap.set(feature.path, feature))
+    this.topFeatures.forEach(feature => featuresMap.set(feature.id, feature))
     return featuresMap
+  }
+
+  @imemo get features() {
+    return new FeaturesCollection(this).features
   }
 
   @imemo
   get topFeatures(): FeatureSummary[] {
-    const files = this.featuresFolder.map((file: FeatureFile) => {
-      const positives = file.languagesWithThisFeature.length
-      const negatives = file.languagesWithoutThisFeature.length
-      const measurements = positives + negatives
-      return {
-        feature: file.get("title"),
-        featureLink: `../features/${file.permalink}`,
-        aka: file.getAll("aka").join(" or "),
-        path: file.get("featureKeyword"),
-        token: file.get("tokenKeyword"),
-        yes: positives,
-        no: negatives,
-        percentage:
-          measurements < 100
-            ? "-"
-            : lodash.round((100 * positives) / measurements, 0) + "%",
-        pseudoExample: (file.get("pseudoExample") || "")
-          .replace(/\</g, "&lt;")
-          .replace(/\|/g, "&#124;")
-      }
-    })
-
-    const sorted = lodash.sortBy(files, "yes")
+    const { features } = this
+    const sorted = lodash.sortBy(features, "yes")
     sorted.reverse()
-
     return sorted
   }
 

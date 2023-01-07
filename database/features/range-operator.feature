@@ -1,7 +1,0 @@
-title Range Operator
-type feature
-description A shorthand way for creating arrays.
-reference https://docstore.mik.ua/orelly/perl4/prog/ch03_15.htm
-
-pseudoExample 1 ... 10
-featureKeyword hasRangeOperators

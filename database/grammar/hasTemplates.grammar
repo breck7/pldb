@@ -1,0 +1,5 @@
+hasTemplatesNode
+ extends abstractFeatureNode
+ string title Templates
+ string pseudoExample template TCopy(T) {}
+ string reference https://en.wikipedia.org/wiki/Template_metaprogramming

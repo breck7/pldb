@@ -201,8 +201,8 @@ pipeTable
       table
         .appendLineAndChildren(
           `row`,
-          `Feature ${feature.feature}
-FeatureLink ${feature.featureLink}
+          `Feature ${feature.title}
+FeatureLink ${feature.titleLink}
 Supported ${supported ? "✓" : "ϴ"}
 Example
 Token ${supported && tokenPath ? file.get(tokenPath) ?? "" : ""}`

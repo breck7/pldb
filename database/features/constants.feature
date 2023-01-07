@@ -1,8 +1,0 @@
-title Constants
-type feature
-description Marking a type or identifier as immutable.
-
-pseudoExample const name = "PLDB"
-featureKeyword hasConstants
-
-wikipedia https://en.wikipedia.org/wiki/Const_(computer_programming)

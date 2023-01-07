@@ -1,0 +1,5 @@
+hasPipesNode
+ extends abstractFeatureNode
+ string title Pipes
+ string pseudoExample ls pldb | wc
+ string reference https://en.wikipedia.org/wiki/Pipeline_(software)

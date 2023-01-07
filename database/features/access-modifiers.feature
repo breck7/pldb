@@ -1,7 +1,0 @@
-title Access Modifiers
-type feature
-
-pseudoExample class PLDBFile { public title }
-featureKeyword hasAccessModifiers
-
-wikipedia https://en.wikipedia.org/wiki/Access_modifiers

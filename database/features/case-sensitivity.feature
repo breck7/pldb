@@ -1,7 +1,0 @@
-title Case Sensitivity
-type feature
-description Most programming languages are case sensitive, so x != X.
-reference https://en.wikipedia.org/wiki/Case_sensitivity
-
-pseudoExample pldb != PLDB
-featureKeyword isCaseSensitive

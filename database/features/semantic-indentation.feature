@@ -1,7 +1,0 @@
-title Semantic Indentation
-type feature
-description With this pattern, programmers indent their code blocks with whitespace instead of using braces, brackets, or other visible characters.
-reference https://pldb.com/posts/which-programming-languages-use-indentation.html
-
-pseudoExample line0 if true line1  print "Hello PLDB"
-featureKeyword hasSemanticIndentation

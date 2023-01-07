@@ -1,0 +1,6 @@
+hasBooleansNode
+ extends abstractFeatureNode
+ string title Booleans
+ string pseudoExample pldb = true
+ string tokenKeyword booleanTokens
+ string reference https://en.wikipedia.org/wiki/Boolean_data_type

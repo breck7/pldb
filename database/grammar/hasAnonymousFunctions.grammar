@@ -1,0 +1,6 @@
+hasAnonymousFunctionsNode
+ extends abstractFeatureNode
+ string title Anonymous Functions
+ string aka Lambdas
+ string pseudoExample () => printPldb()
+ string reference https://en.wikipedia.org/wiki/Anonymous_function

@@ -1,6 +1,0 @@
-title Typed Holes
-type feature
-reference https://wiki.haskell.org/GHC/Typed_holes
-
-pseudoExample 2 + _ => 2 + [int|float]
-featureKeyword hasTypedHoles

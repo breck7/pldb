@@ -1,0 +1,5 @@
+hasAssertStatementsNode
+ extends abstractFeatureNode
+ string title Assert Statements
+ string reference https://en.wikipedia.org/wiki/Debug_code#Assert_Statements
+ string pseudoExample assert(isTrue)

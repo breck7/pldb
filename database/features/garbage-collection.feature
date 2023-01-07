@@ -1,9 +1,0 @@
-title Garbage Collection
-appeared 1959
-type feature
-description In computer science, garbage collection (GC) is a form of automatic memory management. The garbage collector, or just collector, attempts to reclaim garbage, or memory occupied by objects that are no longer in use by the program.
-
-pseudoExample var iDontNeedToFreeThis
-featureKeyword hasGarbageCollection
-
-wikipedia https://en.wikipedia.org/wiki/Garbage_collection_(computer_science)

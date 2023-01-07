@@ -1,0 +1,8 @@
+hasListsNode
+ extends abstractFeatureNode
+ string title Lists
+ string aka array
+ string aka vector
+ string aka sequence
+ string pseudoExample [2, 3, 10]
+ string reference https://en.wikipedia.org/wiki/List_(abstract_data_type)

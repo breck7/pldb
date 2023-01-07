@@ -1,8 +1,0 @@
-title Structs
-type feature
-description A composite data type (or record) declaration that defines a physically grouped list of variables to be placed under one name in a block of memory, allowing the different variables to be accessed via a single pointer.
-
-pseudoExample struct pldbFile { int rank; char *title; };
-featureKeyword hasStructs
-
-wikipedia https://en.wikipedia.org/wiki/Struct_(C_programming_language)

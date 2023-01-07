@@ -1,0 +1,6 @@
+hasStringsNode
+ extends abstractFeatureNode
+ string title Strings
+ string pseudoExample "Hello PLDB"
+ string tokenKeyword stringToken
+ string reference https://en.wikipedia.org/wiki/String_(computer_science)

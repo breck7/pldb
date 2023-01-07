@@ -1,6 +1,0 @@
-title Source Maps
-type feature
-description A specific type of Symbol Table. When debugging transpiled code, it is much easier to debug the original source. A source map is a file that maps from the transformed source to the original source.
-
-pseudoExample {file: 'pldb.min.js',sources: ['pldb.js'], mappings: 'CAAC,IAAI,IAAM'}
-featureKeyword hasSourceMaps

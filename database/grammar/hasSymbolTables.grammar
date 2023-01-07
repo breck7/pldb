@@ -1,0 +1,5 @@
+hasSymbolTablesNode
+ extends abstractFeatureNode
+ string title Symbol Tables
+ string pseudoExample SymbolName|Type|Scope;bar|function,double|extern
+ string reference https://en.wikipedia.org/wiki/Symbol_table

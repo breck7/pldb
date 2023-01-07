@@ -1,9 +1,0 @@
-title Strings
-type feature
-description In computer programming, a string is traditionally a sequence of characters, either as a literal constant or as some kind of variable.
-
-pseudoExample "Hello PLDB"
-featureKeyword hasStrings
-tokenKeyword stringToken
-
-wikipedia https://en.wikipedia.org/wiki/String_(computer_science)

@@ -1,0 +1,6 @@
+hasAssignmentNode
+ extends abstractFeatureNode
+ string title Assignment
+ string pseudoExample name = "PLDB"
+ string tokenKeyword assignmentToken
+ string reference https://en.wikipedia.org/wiki/Assignment_(computer_science)

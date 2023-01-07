@@ -1,8 +1,0 @@
-title Methods
-type feature
-description A method in object-oriented programming (OOP) is a procedure associated with a message and an object. An object consists of data and behavior. The data and behavior comprise an interface, which specifies how the object may be utilized by any of various consumers[1] of the object.
-
-pseudoExample pldbFile.downloadWebsite()
-featureKeyword hasMethods
-
-wikipedia https://en.wikipedia.org/wiki/Method_(computer_programming)

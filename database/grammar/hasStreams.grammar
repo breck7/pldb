@@ -1,0 +1,5 @@
+hasStreamsNode
+ extends abstractFeatureNode
+ string title Streams
+ string pseudoExample echo 123 | 123.txt
+ string reference https://en.wikipedia.org/wiki/Stream_(computing)

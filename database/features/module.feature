@@ -1,9 +1,0 @@
-title Module Pattern
-appeared 2003
-type feature
-description In software engineering, the module pattern is a design pattern used to implement the concept of software modules. In Python, the pattern is built into the language, and each .py file is automatically a module.
-
-pseudoExample module PLDB {}
-featureKeyword hasModules
-
-wikipedia https://en.wikipedia.org/wiki/Module_pattern

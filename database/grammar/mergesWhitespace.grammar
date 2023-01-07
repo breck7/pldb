@@ -1,0 +1,5 @@
+mergesWhitespaceNode
+ extends abstractFeatureNode
+ string title Merges Whitespace
+ string reference http://wiki.c2.com/?SyntacticallySignificantWhitespaceConsideredHarmful
+ string pseudoExample result = 1    +    2

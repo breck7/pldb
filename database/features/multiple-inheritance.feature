@@ -1,9 +1,0 @@
-title Multiple Inheritance
-appeared 1969
-type feature
-description Multiple inheritance is a feature of some object-oriented computer programming languages in which an object or class can inherit characteristics and features from more than one parent object or parent class. It is distinct from single inheritance, where an object or class may only inherit from one particular object or class.
-
-pseudoExample extends parentWhichExtendsSomethingElse
-featureKeyword hasMultipleInheritance
-
-wikipedia https://en.wikipedia.org/wiki/Multiple_inheritance

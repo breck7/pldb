@@ -1,9 +1,0 @@
-title Fixed Point Numbers
-appeared 1912
-type feature
-description A data type that stores a fractional number with a fixed number of digits of their fractional part.
-
-pseudoExample 80766866.00
-featureKeyword hasFixedPoint
-
-wikipedia https://en.wikipedia.org/wiki/Fixed-point_arithmetic

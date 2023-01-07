@@ -1,8 +1,0 @@
-title Dispose Blocks Pattern
-type feature
-description To make the safe use of the dispose pattern less verbose, several languages have some kind of built-in support for resources held and released in the same block of code.
-
-pseudoExample with pldb: do computeRanks()
-featureKeyword hasDisposeBlocks
-
-wikipedia https://en.wikipedia.org/wiki/Dispose_pattern
