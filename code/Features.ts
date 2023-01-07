@@ -130,7 +130,18 @@ import ../footer.scroll
     const { title, featurePath } = file
 
     const positives = file.languagesWithThisFeature
+    const positiveText = `* Languages *with* ${title} include ${positives
+      .map(file => `<a href="../languages/${file.permalink}">${file.title}</a>`)
+      .join(", ")}`
+
     const negatives = file.languagesWithoutThisFeature
+    const negativeText = negatives.length
+      ? `* Languages *without* ${title} include ${negatives
+          .map(
+            file => `<a href="../languages/${file.permalink}">${file.title}</a>`
+          )
+          .join(", ")}`
+      : ""
 
     const examples = positives
       .filter(file => file.getNode(featurePath).length)
@@ -141,9 +152,7 @@ import ../footer.scroll
           example: file.getNode(featurePath).childrenToString()
         }
       })
-
     const grouped = lodash.groupBy(examples, "example")
-
     const examplesText = Object.values(grouped)
       .map((group: any) => {
         const id = file.id
@@ -155,27 +164,7 @@ import ../footer.scroll
       })
       .join("\n\n")
 
-    const negativeText = negatives.length
-      ? `* Languages *without* ${title} include ${negatives
-          .map(
-            file => `<a href="../languages/${file.permalink}">${file.title}</a>`
-          )
-          .join(", ")}
-
-`
-      : ""
-
-    return (
-      examplesText +
-      negativeText +
-      `* Languages *with* ${title} include ${positives
-        .map(
-          file => `<a href="../languages/${file.permalink}">${file.title}</a>`
-        )
-        .join(", ")}
-
-`
-    )
+    return [examplesText, positiveText, negativeText].join("\n\n")
   }
 }
 
