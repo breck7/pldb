@@ -15,6 +15,9 @@ domainName swift.org
 visualParadigm false
 
 features
+ hasVariableSubstitutionSyntax false
+ hasAssignment true
+  let label = UILabel()
  hasStrings true
   "hello world"
  hasSingleDispatch true

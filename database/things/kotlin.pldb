@@ -21,6 +21,9 @@ runsOnVm jvm
 visualParadigm false
 
 features
+ hasVariableSubstitutionSyntax false
+ hasAssignment true
+  table = HashMap()
  hasComments true
  hasTernaryOperators true
   // Since if statements are expressions

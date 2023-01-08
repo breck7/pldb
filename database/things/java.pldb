@@ -12,6 +12,7 @@ originCommunity Sun Microsystems
 visualParadigm false
 
 features
+ hasVariableSubstitutionSyntax false
  hasAssertStatements true
   // By default, assertions are disabled
   // java –enableassertions Test

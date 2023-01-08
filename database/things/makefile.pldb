@@ -9,7 +9,7 @@ country United States
 originCommunity Bell Labs
 
 features
- hasVariableSubstiutionSyntax true
+ hasVariableSubstitutionSyntax true
   objects = program.o foo.o utils.o
   $(objects)
  hasAssignment true

@@ -18,6 +18,7 @@ domainName coffeescript.org
 compilesTo javascript
 
 features
+ hasVariableSubstitutionSyntax false
  hasComments true
  hasSemanticIndentation true
  hasCaseInsensitiveIdentifiers false

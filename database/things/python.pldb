@@ -19,6 +19,7 @@ domainName python.org
 visualParadigm false
 
 features
+ hasVariableSubstitutionSyntax false
  hasEnums false
   # Though there is an Enum class in stdlib https://peps.python.org/pep-0435/
  canWriteToDisk true
