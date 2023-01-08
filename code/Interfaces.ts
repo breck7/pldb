@@ -7,6 +7,7 @@ interface FeatureSummary {
   token?: string // Links a feature to the related token keyword in the pldb grammar
   yes: number
   no: number
+  measurements: number
   percentage: string
   pseudoExample: string
 }

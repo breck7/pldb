@@ -42,6 +42,7 @@ const publishedFeaturesFolder = path.join(siteFolder, "features")
 const publishedLanguagesFolder = path.join(siteFolder, "languages") // Todo: eventually redirect away from /languages?
 
 import { benchmark, benchmarkResults, runCommand } from "./utils"
+import { FeatureSummary } from "./Interfaces"
 
 const buildAllList = []
 const buildAll: MethodDecorator = (
@@ -437,10 +438,33 @@ class SiteBuilder {
   buildFeaturesImports() {
     const { topFeatures } = pldbBase
 
-    buildImportsFile(path.join(listsFolder, "featuresImports.scroll"), {
-      COUNT: numeral(Object.values(topFeatures).length).format("0,0"),
+    const summaries: FeatureSummary[] = topFeatures.map(
+      feature => feature.summary
+    )
+
+    buildImportsFile(path.join(listsFolder, "allFeaturesImports.scroll"), {
+      COUNT: numeral(summaries.length).format("0,0"),
       TABLE: {
-        rows: topFeatures.map(feature => feature.summary),
+        rows: summaries,
+        header: [
+          "title",
+          "titleLink",
+          "pseudoExample",
+          "yes",
+          "no",
+          "percentage"
+        ]
+      }
+    })
+
+    const atLeast10 = summaries.filter(
+      (feature: any) => feature.measurements > 9
+    )
+
+    buildImportsFile(path.join(listsFolder, "featuresImports.scroll"), {
+      COUNT: numeral(atLeast10.length).format("0,0"),
+      TABLE: {
+        rows: atLeast10,
         header: [
           "title",
           "titleLink",

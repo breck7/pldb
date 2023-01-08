@@ -36,6 +36,12 @@ class Feature {
     return this.languagesWithoutThisFeature.length
   }
 
+  @imemo
+  get measurements() {
+    const { yes, no } = this
+    return yes + no
+  }
+
   get percentage() {
     const { yes, no } = this
     const measurements = yes + no
@@ -123,6 +129,7 @@ class Feature {
       token,
       yes,
       no,
+      measurements,
       percentage,
       pseudoExample
     } = this
@@ -135,6 +142,7 @@ class Feature {
       token,
       yes,
       no,
+      measurements,
       percentage,
       pseudoExample
     }
