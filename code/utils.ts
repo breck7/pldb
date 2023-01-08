@@ -16,7 +16,7 @@ const ensureDelimiterNotFound = (strings: string[], delimiter: string) => {
 
 const linkManyAftertext = (links: string[]) =>
   links.map((link, index) => `${index + 1}.`).join(" ") + // notice the dot is part of the link. a hack to make it more unique for aftertext matching.
-  links.map((link, index) => `\n ${link} ${index + 1}.`)
+  links.map((link, index) => `\n ${link} ${index + 1}.`).join("")
 
 const runCommand = (instance, command = "", param = undefined) => {
   const run = name => {
