@@ -9,6 +9,8 @@ country United States
 originCommunity Bell Labs
 
 features
+ hasAssignment true
+  objects = program.o foo.o utils.o
  hasSemanticIndentation true
  hasLineComments true
   # A comment

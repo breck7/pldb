@@ -39,7 +39,6 @@ features
  hasFunctionOverloading false
  hasMethods true
  hasMethodOverloading false
- hasVariableDeclarations true
  hasMaps true
   [int:str] {
       0: "Key 0",
@@ -188,7 +187,7 @@ features
   fn main() {
       co my_thread()
   }
- hasVariableAssignment true
+ hasAssignment true
   let mut x = 0
   x = 20
  hasTypeAnnotations true
@@ -198,7 +197,6 @@ features
  hasAsyncAwait false
  hasTryCatch false
  hasMemberVariables true
- hasVars true
  hasRegularExpressionsSyntaxSugar false
  hasReservedWords true
  hasSwitch true
