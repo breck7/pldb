@@ -9,6 +9,9 @@ country United States
 originCommunity Bell Labs
 
 features
+ hasVariableSubstiutionSyntaxSyntax true
+  objects = program.o foo.o utils.o
+  $(objects)
  hasAssignment true
   objects = program.o foo.o utils.o
  hasSemanticIndentation true

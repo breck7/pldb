@@ -10,6 +10,9 @@ country United States
 originCommunity GNU
 
 features
+ hasVariableSubstiutionSyntaxSyntax true
+  STR="Hello World!"
+  echo $STR
  hasComments true
   # A comment
  hasLineComments true
