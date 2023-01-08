@@ -12,6 +12,11 @@ domainName jtree.treenotation.org
 related treenotation antlr
 influencedBy antlr
 
+features
+ hasEnums true
+  boolCell
+   enum true false
+
 example
  latinNode
   root

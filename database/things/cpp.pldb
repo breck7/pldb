@@ -16,6 +16,11 @@ domainName isocpp.org
 visualParadigm false
 
 features
+ hasEnums true
+  enum Gender {
+    Male,
+    Female,
+  };
  hasRegularExpressionsSyntaxSugar false
  hasSemanticIndentation false
  hasTernaryOperators true

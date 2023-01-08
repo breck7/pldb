@@ -15,6 +15,11 @@ domainName typescriptlang.org
   2022 6046
 
 features
+ hasEnums true
+  enum Direction {
+   Up,
+   Down
+  }
  hasStaticMethods true
   class Person {
     static sayHi() {

@@ -10,6 +10,11 @@ country United States
 originCommunity Bell Labs
 
 features
+ hasEnums true
+  enum Gender {
+    Male,
+    Female,
+  };
  hasRegularExpressionsSyntaxSugar false
  hasBooleans true
  hasTernaryOperators true
