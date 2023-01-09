@@ -344,14 +344,11 @@ image ${image.replace("https://pldb.com/", "../")}
     const monaco = file.get("monaco")
     if (!monaco) return ""
 
-    const example = file.allExamples[0]
-      ? file.allExamples[0].code.replace(/\n/g, "\n ")
-      : ""
+    const exampleToUse = file.allExamples.find(
+      example => !example.code.includes("`")
+    ) // our monaco code struggles with backticks for some reason.
 
-    if (example.includes("`"))
-      console.error(
-        `WARNING: backtick detected in a monaco example. Not supported yet.`
-      )
+    const example = exampleToUse ? exampleToUse.code.replace(/\n/g, "\n ") : ""
 
     return `monacoEditor ${monaco}
  ${example}`

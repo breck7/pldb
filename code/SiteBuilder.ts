@@ -66,6 +66,7 @@ const benchmark: MethodDecorator = (
     const result: any = action()
     const elapsed = lodash.round((meter.now() - start) / 1000, 3)
     benchmarkResults.push({
+      step: benchmarkResults.length,
       methodName: String(prop),
       timeInSeconds: elapsed
     })
