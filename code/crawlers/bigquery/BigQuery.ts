@@ -2,7 +2,6 @@
 
 import { PLDBFolder } from "../../Folder"
 import { PLDBFile } from "../../File"
-import { runCommand } from "../../utils"
 
 import { jtree } from "jtree"
 
@@ -98,4 +97,5 @@ class BigQueryImporter {
 
 export { BigQueryImporter }
 
-if (!module.parent) runCommand(new BigQueryImporter(), process.argv[2])
+if (!module.parent)
+	jtree.Utils.runCommand(new BigQueryImporter(), process.argv[2])

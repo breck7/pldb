@@ -2,7 +2,6 @@
 
 import { PLDBFolder } from "../../Folder"
 import { PLDBFile } from "../../File"
-import { runCommand } from "../../utils"
 
 import { jtree } from "jtree"
 
@@ -88,4 +87,4 @@ class WhoIsImporter {
 export { WhoIsImporter }
 
 if (!module.parent)
-  runCommand(new WhoIsImporter(), process.argv[2], process.argv[3])
+  jtree.Utils.runCommand(new WhoIsImporter(), process.argv[2], process.argv[3])

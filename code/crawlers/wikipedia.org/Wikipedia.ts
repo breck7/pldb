@@ -2,8 +2,9 @@
 
 import { PLDBFolder } from "../../Folder"
 import { PLDBFile } from "../../File"
-import { getCleanedId, runCommand, PoliteCrawler } from "../../utils"
+import { getCleanedId, PoliteCrawler } from "../../utils"
 const lodash = require("lodash")
+const { jtree } = require("jtree")
 
 const cacheDir = __dirname + "/cache/"
 
@@ -257,4 +258,5 @@ class WikipediaImporter {
 
 export { WikipediaImporter }
 
-if (!module.parent) runCommand(new WikipediaImporter(), process.argv[2])
+if (!module.parent)
+  jtree.Utils.runCommand(new WikipediaImporter(), process.argv[2])

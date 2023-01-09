@@ -2,7 +2,6 @@
 
 import { PLDBFolder } from "../../Folder"
 import { PLDBFile } from "../../File"
-import { runCommand } from "../../utils"
 
 import { jtree } from "jtree"
 
@@ -97,4 +96,5 @@ code
 
 export { LeaChimImporter }
 
-if (!module.parent) runCommand(new LeaChimImporter(), process.argv[2])
+if (!module.parent)
+	jtree.Utils.runCommand(new LeaChimImporter(), process.argv[2])

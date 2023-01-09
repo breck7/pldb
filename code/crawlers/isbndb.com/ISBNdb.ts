@@ -2,7 +2,7 @@
 
 import { PLDBFolder } from "../../Folder"
 import { PLDBFile } from "../../File"
-import { runCommand, PoliteCrawler, getCleanedId } from "../../utils"
+import { PoliteCrawler, getCleanedId } from "../../utils"
 
 import { jtree } from "jtree"
 
@@ -154,4 +154,5 @@ class ISBNdbImporter {
 
 export { ISBNdbImporter }
 
-if (!module.parent) runCommand(new ISBNdbImporter(), process.argv[2])
+if (!module.parent)
+	jtree.Utils.runCommand(new ISBNdbImporter(), process.argv[2])

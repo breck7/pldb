@@ -2,7 +2,6 @@
 
 import { PLDBFolder } from "../../Folder"
 import { PLDBFile } from "../../File"
-import { runCommand } from "../../utils"
 import { jtree } from "jtree"
 
 const lodash = require("lodash")
@@ -129,4 +128,4 @@ class PyplImporter {
 
 export { PyplImporter }
 
-if (!module.parent) runCommand(new PyplImporter(), process.argv[2])
+if (!module.parent) jtree.Utils.runCommand(new PyplImporter(), process.argv[2])

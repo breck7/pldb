@@ -13,12 +13,7 @@ const { SearchServer } = require("jtree/products/treeBaseServer.node.js")
 
 import { PLDBFolder } from "./Folder"
 import { PLDBFile } from "./File"
-import {
-	runCommand,
-	lastCommitHashInFolder,
-	htmlEscaped,
-	isValidEmail
-} from "./utils"
+import { lastCommitHashInFolder, htmlEscaped, isValidEmail } from "./utils"
 import simpleGit, { SimpleGit } from "simple-git"
 
 const baseFolder = path.join(__dirname, "..")
@@ -538,4 +533,8 @@ class TreeBaseServerCommands {
 export { TreeBaseServer }
 
 if (!module.parent)
-	runCommand(new TreeBaseServerCommands(), process.argv[2], process.argv[3])
+	jtree.Utils.runCommand(
+		new TreeBaseServerCommands(),
+		process.argv[2],
+		process.argv[3]
+	)

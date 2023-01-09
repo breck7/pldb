@@ -1,10 +1,10 @@
 #!/usr/bin/env node
 
-import { runCommand } from "../../utils"
 import { PLDBFolder } from "../../Folder"
 
 const path = require("path")
 const dayjs = require("dayjs")
+const { jtree } = require("jtree")
 
 const { Disk } = require("jtree/products/Disk.node.js")
 
@@ -107,4 +107,5 @@ ${link}
 
 export { RedditImporter }
 
-if (!module.parent) runCommand(new RedditImporter(), process.argv[2])
+if (!module.parent)
+  jtree.Utils.runCommand(new RedditImporter(), process.argv[2])

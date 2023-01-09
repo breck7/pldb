@@ -2,7 +2,6 @@
 
 import { PLDBFolder } from "../../Folder"
 import { PLDBFile } from "../../File"
-import { runCommand } from "../../utils"
 
 import { jtree } from "jtree"
 
@@ -115,4 +114,5 @@ ${website}`)
 
 export { PygmentsImporter }
 
-if (!module.parent) runCommand(new PygmentsImporter(), process.argv[2])
+if (!module.parent)
+	jtree.Utils.runCommand(new PygmentsImporter(), process.argv[2])

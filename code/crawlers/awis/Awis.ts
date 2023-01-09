@@ -2,7 +2,7 @@
 
 import { PLDBFolder } from "../../Folder"
 import { PLDBFile } from "../../File"
-import { runCommand, PoliteCrawler } from "../../utils"
+import { PoliteCrawler } from "../../utils"
 
 import { jtree } from "jtree"
 
@@ -107,4 +107,4 @@ class AwisImporter {
 
 export { AwisImporter }
 
-if (!module.parent) runCommand(new AwisImporter(), process.argv[2])
+if (!module.parent) jtree.Utils.runCommand(new AwisImporter(), process.argv[2])

@@ -2,7 +2,6 @@
 
 import { PLDBFolder } from "../../Folder"
 import { PLDBFile } from "../../File"
-import { runCommand } from "../../utils"
 
 import { jtree } from "jtree"
 
@@ -117,4 +116,5 @@ class MonacoImporter {
 
 export { MonacoImporter }
 
-if (!module.parent) runCommand(new MonacoImporter(), process.argv[2])
+if (!module.parent)
+	jtree.Utils.runCommand(new MonacoImporter(), process.argv[2])

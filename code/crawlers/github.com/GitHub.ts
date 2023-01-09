@@ -2,7 +2,7 @@
 
 import { PLDBFolder } from "../../Folder"
 import { PLDBFile } from "../../File"
-import { runCommand, PoliteCrawler, ensureDelimiterNotFound } from "../../utils"
+import { PoliteCrawler, ensureDelimiterNotFound } from "../../utils"
 import { jtree } from "jtree"
 
 const superagent = require("superagent")
@@ -423,4 +423,5 @@ class GitHubImporter {
 
 export { GitHubImporter }
 
-if (!module.parent) runCommand(new GitHubImporter(), process.argv[2])
+if (!module.parent)
+	jtree.Utils.runCommand(new GitHubImporter(), process.argv[2])

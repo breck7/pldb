@@ -18,33 +18,6 @@ const linkManyAftertext = (links: string[]) =>
   links.map((link, index) => `${index + 1}.`).join(" ") + // notice the dot is part of the link. a hack to make it more unique for aftertext matching.
   links.map((link, index) => `\n ${link} ${index + 1}.`).join("")
 
-const runCommand = (instance, command = "", param = undefined) => {
-  const run = name => {
-    console.log(`Running ${name}:`)
-    instance[name](param)
-  }
-
-  if (instance[command + "Command"]) return run(command + "Command")
-
-  const allCommands = Object.getOwnPropertyNames(
-    Object.getPrototypeOf(instance)
-  ).filter(word => word.endsWith("Command"))
-  allCommands.sort()
-
-  const commandAsNumber = parseInt(command) - 1
-
-  if (command.match(/^\d+$/) && allCommands[commandAsNumber])
-    return run(allCommands[commandAsNumber])
-
-  console.log(
-    `\n❌ No command provided. Available commands:\n\n` +
-      allCommands
-        .map((name, index) => `${index + 1}. ${name.replace("Command", "")}`)
-        .join("\n") +
-      "\n"
-  )
-}
-
 const getCleanedId = str =>
   str
     .replace(/[\/\_\:\\\[\]]/g, "-")
@@ -267,29 +240,6 @@ const getIndefiniteArticle = phrase => {
 
 const htmlEscaped = (content: string) => content.replace(/</g, "&lt;")
 
-const benchmarkResults = []
-
-const benchmark: MethodDecorator = (
-  target: Object,
-  prop: PropertyKey,
-  descriptor: PropertyDescriptor
-): void => {
-  const method: Function = descriptor.value
-  const meter: any = typeof performance !== "undefined" ? performance : Date
-
-  descriptor.value = function(): any {
-    const action: Function = method.apply.bind(method, this, arguments)
-    const start = meter.now()
-    const result: any = action()
-    const elapsed = lodash.round((meter.now() - start) / 1000, 3)
-    benchmarkResults.push({
-      methodName: String(prop),
-      timeInSeconds: elapsed
-    })
-    return result
-  }
-}
-
 // Memoization for immutable getters. Run the function once for this instance and cache the result.
 const memoKeys = "__memoKeys"
 const imemo = <Type>(
@@ -326,11 +276,8 @@ export {
   getJoined,
   isLanguage,
   getCleanedId,
-  runCommand,
   PoliteCrawler,
   linkManyAftertext,
-  benchmark,
-  benchmarkResults,
   imemo,
   getLinks,
   lastCommitHashInFolder,

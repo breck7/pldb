@@ -40,8 +40,6 @@ const listsFolder = path.join(siteFolder, "lists")
 const publishedPostsFolder = path.join(siteFolder, "posts")
 const publishedFeaturesFolder = path.join(siteFolder, "features")
 const publishedLanguagesFolder = path.join(siteFolder, "languages") // Todo: eventually redirect away from /languages?
-
-import { benchmark, benchmarkResults, runCommand } from "./utils"
 import { FeatureSummary } from "./Interfaces"
 
 const buildAllList = []
@@ -51,6 +49,28 @@ const buildAll: MethodDecorator = (
   descriptor: PropertyDescriptor
 ): void => {
   buildAllList.push(prop)
+}
+
+const benchmarkResults = []
+const benchmark: MethodDecorator = (
+  target: Object,
+  prop: PropertyKey,
+  descriptor: PropertyDescriptor
+): void => {
+  const method: Function = descriptor.value
+  const meter: any = typeof performance !== "undefined" ? performance : Date
+
+  descriptor.value = function(): any {
+    const action: Function = method.apply.bind(method, this, arguments)
+    const start = meter.now()
+    const result: any = action()
+    const elapsed = lodash.round((meter.now() - start) / 1000, 3)
+    benchmarkResults.push({
+      methodName: String(prop),
+      timeInSeconds: elapsed
+    })
+    return result
+  }
 }
 
 const buildImportsFile = (filepath, varMap) => {
@@ -82,9 +102,9 @@ const buildImportsFile = (filepath, varMap) => {
 class SiteBuilder {
   buildAllCommand() {
     let lastMethodName = ""
-    buildAllList.forEach(methodName => {
+    buildAllList.forEach((methodName, index) => {
       if (lastMethodName) console.log(`Finished: ${lastMethodName}`)
-      console.log(`Running: ${methodName}`)
+      console.log(`${index}. Running ${methodName}`)
       this[methodName]()
       lastMethodName = methodName
     })
@@ -628,4 +648,4 @@ class SiteBuilder {
 export { SiteBuilder }
 
 if (!module.parent)
-  runCommand(new SiteBuilder(), process.argv[2], process.argv[3])
+  jtree.Utils.runCommand(new SiteBuilder(), process.argv[2], process.argv[3])

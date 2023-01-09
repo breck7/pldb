@@ -2,7 +2,6 @@
 
 import { PLDBFolder } from "../Folder"
 import { GitHubImporter } from "./github.com/GitHub"
-import { runCommand } from "../utils"
 import { jtree } from "jtree"
 import { WhoIsImporter } from "./whois/WhoIs"
 import { WikipediaImporter } from "./wikipedia.org/Wikipedia"
@@ -344,4 +343,5 @@ ${end}`)
 
 export { Crawler }
 
-if (!module.parent) runCommand(new Crawler(), process.argv[2], process.argv[3])
+if (!module.parent)
+  jtree.Utils.runCommand(new Crawler(), process.argv[2], process.argv[3])

@@ -6,7 +6,6 @@ import * as csv from "fast-csv"
 import * as ss from "simple-statistics"
 
 import { jtree } from "jtree"
-import { runCommand } from "../../utils"
 import { PLDBFolder } from "../../Folder"
 
 const lodash = require("lodash")
@@ -108,4 +107,7 @@ stackOverflowSurvey
 export { StackOverflowDeveloperSurveyImporter }
 
 if (!module.parent)
-  runCommand(new StackOverflowDeveloperSurveyImporter(), process.argv[2])
+  jtree.Utils.runCommand(
+    new StackOverflowDeveloperSurveyImporter(),
+    process.argv[2]
+  )

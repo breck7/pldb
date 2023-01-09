@@ -4,7 +4,7 @@ const cheerio = require("cheerio")
 
 import { PLDBFolder } from "../../Folder"
 import { PLDBFile } from "../../File"
-import { runCommand, getLinks } from "../../utils"
+import { getLinks } from "../../utils"
 
 import { jtree } from "jtree"
 
@@ -127,4 +127,8 @@ class WebsiteImporter {
 export { WebsiteImporter }
 
 if (!module.parent)
-  runCommand(new WebsiteImporter(), process.argv[2], process.argv[3])
+  jtree.Utils.runCommand(
+    new WebsiteImporter(),
+    process.argv[2],
+    process.argv[3]
+  )

@@ -4,7 +4,7 @@
 
 import { PLDBFolder } from "../../Folder"
 import { PLDBFile } from "../../File"
-import { runCommand, PoliteCrawler, getCleanedId } from "../../utils"
+import { PoliteCrawler, getCleanedId } from "../../utils"
 
 import { jtree } from "jtree"
 
@@ -167,4 +167,5 @@ class SemanticScholarImporter {
 
 export { SemanticScholarImporter }
 
-if (!module.parent) runCommand(new SemanticScholarImporter(), process.argv[2])
+if (!module.parent)
+	jtree.Utils.runCommand(new SemanticScholarImporter(), process.argv[2])

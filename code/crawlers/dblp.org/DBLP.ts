@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 
-import { runCommand, PoliteCrawler } from "../../utils"
+import { PoliteCrawler } from "../../utils"
 import { PLDBFolder } from "../../Folder"
 import { PLDBFile } from "../../File"
 const lodash = require("lodash")
@@ -105,4 +105,4 @@ class DBLPImporter {
 
 export { DBLPImporter }
 
-if (!module.parent) runCommand(new DBLPImporter(), process.argv[2])
+if (!module.parent) jtree.Utils.runCommand(new DBLPImporter(), process.argv[2])
