@@ -75,7 +75,7 @@ const benchmark: MethodDecorator = (
 }
 
 const buildImportsFile = (filepath, varMap) => {
-  Disk.write(
+  writeIfChanged(
     filepath,
     `importOnly\n` +
       Object.keys(varMap)
@@ -98,6 +98,12 @@ const buildImportsFile = (filepath, varMap) => {
         })
         .join("\n")
   )
+}
+
+// Do not overwrite to preserve mtimes for cache
+const writeIfChanged = (filepath: string, content: string) => {
+  if (!Disk.exists(filepath) || Disk.read(filepath) !== content)
+    Disk.write(filepath, content)
 }
 
 class SiteBuilder {
@@ -138,7 +144,7 @@ class SiteBuilder {
   @buildAll
   buildSingleGrammarFile() {
     // Copy grammar to docs folder for easy access for tools like TN Designer.
-    Disk.write(path.join(siteFolder, "pldb.grammar"), pldbBase.grammarCode)
+    writeIfChanged(path.join(siteFolder, "pldb.grammar"), pldbBase.grammarCode)
   }
 
   @benchmark
@@ -178,7 +184,7 @@ class SiteBuilder {
       .forEach(line => {
         const link = line.split(" ")
         const oldFile = path.join(siteFolder, link[0])
-        Disk.write(
+        writeIfChanged(
           oldFile,
           `<meta http-equiv="Refresh" content="0; url='${link[1]}'" />`
         )
@@ -189,7 +195,7 @@ class SiteBuilder {
   @buildAll
   buildFeaturePagesCommand() {
     pldbBase.features.forEach(feature =>
-      Disk.write(
+      writeIfChanged(
         path.join(publishedFeaturesFolder, `${feature.id}.scroll`),
         feature.toScroll()
       )
@@ -200,7 +206,7 @@ class SiteBuilder {
   @buildAll
   buildDatabasePagesCommand() {
     pldbBase.forEach(file =>
-      Disk.write(
+      writeIfChanged(
         path.join(publishedLanguagesFolder, `${file.id}.scroll`),
         new LanguagePageTemplate(file).toScroll()
       )
@@ -277,7 +283,7 @@ class SiteBuilder {
         url: `/languages/${object.pldbId}.html`
       }
     })
-    Disk.write(
+    writeIfChanged(
       path.join(siteFolder, "searchIndex.json"),
       JSON.stringify(objects, null, 2)
     )
@@ -286,7 +292,7 @@ class SiteBuilder {
   @benchmark
   @buildAll
   buildKeywordsOneHot() {
-    Disk.write(
+    writeIfChanged(
       path.join(siteFolder, "keywordsOneHot.csv"),
       new TreeNode(pldbBase.keywordsOneHot).toCsv()
     )
@@ -305,9 +311,9 @@ class SiteBuilder {
       colNamesForCsv
     } = csvBuildOutput
 
-    Disk.write(path.join(siteFolder, "pldb.csv"), pldbCsv)
-    Disk.write(path.join(siteFolder, "languages.csv"), langsCsv)
-    Disk.write(path.join(siteFolder, "columns.csv"), columnsCsv)
+    writeIfChanged(path.join(siteFolder, "pldb.csv"), pldbCsv)
+    writeIfChanged(path.join(siteFolder, "languages.csv"), langsCsv)
+    writeIfChanged(path.join(siteFolder, "columns.csv"), columnsCsv)
 
     buildImportsFile(path.join(publishedDocsFolder, "csvImports.scroll"), {
       LANG_COUNT: pldbBase.topLanguages.length,
@@ -327,8 +333,8 @@ class SiteBuilder {
   @buildAll
   buildJsonCommand() {
     const str = JSON.stringify(pldbBase.typedMap, null, 2)
-    Disk.write(path.join(siteFolder, "pldb.json"), str)
-    Disk.write(path.join(codeDir, "pldb.json"), str)
+    writeIfChanged(path.join(siteFolder, "pldb.json"), str)
+    writeIfChanged(path.join(codeDir, "pldb.json"), str)
   }
 
   @benchmark
