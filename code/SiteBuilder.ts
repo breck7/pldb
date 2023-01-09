@@ -187,14 +187,18 @@ class SiteBuilder {
 
   @benchmark
   @buildAll
-  buildDatabasePagesCommand() {
+  buildFeaturePagesCommand() {
     pldbBase.features.forEach(feature =>
       Disk.write(
         path.join(publishedFeaturesFolder, `${feature.id}.scroll`),
         feature.toScroll()
       )
     )
+  }
 
+  @benchmark
+  @buildAll
+  buildDatabasePagesCommand() {
     pldbBase.forEach(file =>
       Disk.write(
         path.join(publishedLanguagesFolder, `${file.id}.scroll`),
