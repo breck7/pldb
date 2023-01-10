@@ -640,19 +640,31 @@ class SiteBuilder {
 
   @buildAll
   @benchmark
-  buildLanguagesScrollCommand() {
-    new ScrollFolder(publishedLanguagesFolder).buildFiles()
-  }
-
-  @buildAll
-  @benchmark
   buildScrollsCommand() {
-    new ScrollFolder(listsFolder).buildFiles()
-    new ScrollFolder(siteFolder).buildFiles()
-    new ScrollFolder(publishedPagesFolder).buildFiles()
-    new ScrollFolder(publishedDocsFolder).buildFiles()
-    new ScrollFolder(publishedPostsFolder).buildFiles()
-    new ScrollFolder(publishedFeaturesFolder).buildFiles()
+    const folders = [
+      siteFolder,
+      listsFolder,
+      publishedLanguagesFolder,
+      publishedPagesFolder,
+      publishedDocsFolder,
+      publishedPostsFolder,
+      publishedFeaturesFolder
+    ]
+    const didSiteFolderChange = new ScrollFolder(siteFolder).buildNeeded
+    folders.forEach(folderPath => {
+      const folder = new ScrollFolder(folderPath).silence()
+      if (didSiteFolderChange) {
+        folder.buildFiles()
+        console.log(
+          `Ran scroll build in ${folderPath} because site folder changed`
+        )
+      } else if (folder.buildNeeded) {
+        folder.buildFiles()
+        console.log(
+          `Ran scroll build in ${folderPath} because site folder changed`
+        )
+      }
+    })
   }
 }
 
