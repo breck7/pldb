@@ -224,14 +224,17 @@ ${editForm(submission, "Error")}`
             `${id}#errorMessage=${commitResult.error.message}`
           )
 
-        this.folder = PLDBFolder.getBase().loadFolder()
-
         res.redirect(`${id}#commit=${commitResult.commitHash}`)
+        this.reloadNeeded()
       } catch (error) {
         console.error(error)
         errorForm(content, error, res)
       }
     })
+  }
+
+  reloadNeeded() {
+    // todo: use some pattern like mobx or something to clear cached computeds?
   }
 
   async create(content, author) {
@@ -253,11 +256,11 @@ ${editForm(submission, "Error")}`
 
       if (!commitResult.success)
         return {
-          success: true,
+          success: false,
           redirectUrl: `edit/${newFile.id}#errorMessage=${commitResult.error.message}`
         }
 
-      this.folder = PLDBFolder.getBase().loadFolder()
+      this.reloadNeeded()
 
       return {
         success: true,
