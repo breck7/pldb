@@ -235,6 +235,7 @@ ${editForm(submission, "Error")}`
 
   reloadNeeded() {
     // todo: use some pattern like mobx or something to clear cached computeds?
+    this.folder = PLDBFolder.getBase().loadFolder()
   }
 
   async create(content, author) {
