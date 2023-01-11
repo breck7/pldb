@@ -62,6 +62,9 @@ features
  hasFunctions true
  hasAccessModifiers true
  hasConditionals true
+  if(true){ 
+    println("Hello world")
+  }
 
 lineCommentToken //
 multiLineCommentTokens /* */
