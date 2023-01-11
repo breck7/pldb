@@ -1,0 +1,10 @@
+title cosh
+type pl
+description Concatenative command-line shell
+
+related bash
+
+example
+ lsr; [test m] grep; [f<; [data m] grep] map
+
+githubRepo https://github.com/tomhrr/cosh
