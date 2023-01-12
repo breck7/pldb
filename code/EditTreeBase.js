@@ -2,10 +2,9 @@
 
 // Handy utils for performing common global edit operations on a TreeBase
 
-const { jtree } = require("jtree")
+const { Utils } = require("jtree/products/Utils.js")
 const lodash = require("lodash")
 const path = require("path")
-const { TreeNode } = jtree
 const { Disk } = require("jtree/products/Disk.node.js")
 const { PLDBFolder } = require("./Folder.js")
 
@@ -26,7 +25,7 @@ class EditTreeBaseCommands {
   }
 
   runFromArgs() {
-    jtree.Utils.runCommand(this, process.argv[2], process.argv[3])
+    Utils.runCommand(this, process.argv[2], process.argv[3])
   }
 }
 

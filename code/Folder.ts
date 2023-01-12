@@ -1,4 +1,3 @@
-import { jtree } from "jtree"
 import { FeaturesCollection } from "./Features"
 import { PLDBFile, runtimeCsvProps } from "./File"
 import {
@@ -13,7 +12,7 @@ import { nodeToFlatObject, isLanguage, getCleanedId, imemo } from "./utils"
 const path = require("path")
 const lodash = require("lodash")
 const { Table } = require("jtree/products/jtable.node.js")
-const { TreeNode } = jtree
+const { TreeNode } = require("jtree/products/TreeNode.js")
 const { TreeBaseFolder } = require("jtree/products/treeBase.node.js")
 const { Disk } = require("jtree/products/Disk.node.js")
 

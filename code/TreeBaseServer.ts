@@ -5,7 +5,9 @@ const fs = require("fs")
 const https = require("https")
 const express = require("express")
 const bodyParser = require("body-parser")
-const { jtree } = require("jtree")
+const { TreeNode } = require("jtree/products/TreeNode.js")
+const { Utils } = require("jtree/products/Utils.js")
+const { GrammarCompiler } = require("jtree/products/GrammarCompiler.js")
 const { Disk } = require("jtree/products/Disk.node.js")
 const { ScrollFile, getFullyExpandedFile } = require("scroll-cli")
 const { SearchServer } = require("jtree/products/treeBaseServer.node.js")
@@ -66,7 +68,7 @@ const cssLibs = "node_modules/jtree/sandbox/lib/codemirror.css node_modules/jtre
   .map(name => ` <link rel="stylesheet" type="text/css" href="/${name}" />`)
   .join("\n")
 
-const scripts = "frontEndJavascript/combined.js treeBaseFrontEndApp.js node_modules/jtree/products/jtree.browser.js pldb.browser.js node_modules/jtree/sandbox/lib/codemirror.js node_modules/jtree/sandbox/lib/show-hint.js"
+const scripts = "treeBaseFrontEndApp.js node_modules/jtree/products/jtree.browser.js pldb.browser.js node_modules/jtree/sandbox/lib/codemirror.js node_modules/jtree/sandbox/lib/show-hint.js"
   .split(" ")
   .map(name => ` <script src="/${name}"></script>`)
   .join("\n")
@@ -360,7 +362,7 @@ ${scrollFooter}
 
   compileGrammarForInBrowserCodeMirrorEditor() {
     // todo: cleanup
-    jtree.compileGrammarForBrowser(
+    GrammarCompiler.compileGrammarForBrowser(
       path.join(builtSiteFolder, "pldb.grammar"),
       __dirname + "/",
       false
@@ -487,7 +489,7 @@ class TreeBaseServerCommands {
 export { TreeBaseServer }
 
 if (!module.parent)
-  jtree.Utils.runCommand(
+  Utils.runCommand(
     new TreeBaseServerCommands(),
     process.argv[2],
     process.argv[3]

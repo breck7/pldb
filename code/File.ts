@@ -1,7 +1,6 @@
 import { Example, FeaturePrediction, FolderInterface } from "./Interfaces"
 import { getJoined, isLanguage, imemo } from "./utils"
-import { jtree } from "jtree"
-const { TreeNode } = jtree
+const { TreeNode } = require("jtree/products/TreeNode.js")
 const lodash = require("lodash")
 const { TreeBaseFile } = require("jtree/products/treeBase.node.js")
 

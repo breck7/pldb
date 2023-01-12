@@ -18,10 +18,10 @@ code
 
 const lodash = require("lodash")
 const path = require("path")
-const { jtree } = require("jtree")
 const dayjs = require("dayjs")
 const numeral = require("numeral")
-const { TreeNode } = jtree
+const { TreeNode } = require("jtree/products/TreeNode.js")
+const { Utils } = require("jtree/products/Utils.js")
 const { Disk } = require("jtree/products/Disk.node.js")
 const { ScrollFolder } = require("scroll-cli")
 const shell = require("child_process").execSync
@@ -671,4 +671,4 @@ class SiteBuilder {
 export { SiteBuilder }
 
 if (!module.parent)
-  jtree.Utils.runCommand(new SiteBuilder(), process.argv[2], process.argv[3])
+  Utils.runCommand(new SiteBuilder(), process.argv[2], process.argv[3])

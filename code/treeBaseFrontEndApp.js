@@ -166,7 +166,7 @@ githubRepo https://github.com/elixir-lang/elixir</pre>`
 
 		const permalink = this.route
 		document.getElementById("quickLinks").innerHTML =
-			TreeUtils.linkify(`<b>PLDB on ${id}:</b><br>
+			Utils.linkify(`<b>PLDB on ${id}:</b><br>
 Git: https://github.com/breck7/pldb/blob/main/database/things/${permalink}.pldb<br>
 HTML page: https://pldb.com/languages/${permalink}.html
 <br><br>
