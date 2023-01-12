@@ -17,6 +17,11 @@ a:hover {
   display: block;
 }
 
+.singleColumn {
+  max-width: 500px;
+  margin: auto;
+}
+
 /* End index page */
 
 /* Language page */
