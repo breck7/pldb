@@ -3,8 +3,7 @@ groups index
 
 title Write for PLDB
 
-html
- <div class="singleColumn">
+html <div class="singleColumn">
 
 ## Wanted: data-driven articles of interest to programming language designers
 
@@ -27,7 +26,6 @@ code
  tableDescription [describe what the columns that might be in the csv[s] in your post]
  dataVisDescription [describe what an interesting visualization of that data above might be for your post]
 
-html
- </div>
+html </div>
 
 import footer.scroll

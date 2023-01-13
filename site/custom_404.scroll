@@ -8,9 +8,7 @@ css
 
 import searchForm.scroll
 
-html
- <script>document.getElementById("searchFormInput").value = (window.location.pathname + "").split("/").pop().replace(/\.[^\.]+$/, "").replace(/</g, "&lt;")
- </script>
+html <script>document.getElementById("searchFormInput").value = (window.location.pathname + "").split("/").pop().replace(/\.[^\.]+$/, "").replace(/</g, "&lt;") </script>
 
 * You can report a broken link on the PLDB GitHub.
  https://github.com/breck7/pldb/issues report a broken link
