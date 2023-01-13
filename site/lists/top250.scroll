@@ -1,13 +1,4 @@
-import header.scroll
-title Top 250 Programming Languages
-groups index
-import topLangsImports.scroll
-
-* Here are the top 250 programming languages in the PLDB. You can also view all the languages in the PLDB. Rankings are explained here.
- link ./languages.html all the languages 
- link ../pages/the-rankings-algorithm.html explained here
-
-endSnippet
+replace HOW_MANY 250
+import topHeader.scroll
 TOP_250
-tableSearch
 import ../footer.scroll
