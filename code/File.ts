@@ -208,7 +208,8 @@ class PLDBFile extends TreeBaseFile {
   }
 
   get originCommunity(): string[] {
-    return this.getAll("originCommunity")
+    const originCommunity = this.get("originCommunity")
+    return originCommunity ? originCommunity.split(" && ") : []
   }
 
   get creators(): string[] {
