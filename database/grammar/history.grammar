@@ -14,6 +14,12 @@ appearedNode
  extends abstractYearNode
  cruxFromId
  single
+isDeadNode
+ description Has the creator or maintainer announced it officially dead? Include a link to proof of the announcement.
+ extends abstractBooleanNode
+ cells keywordCell boolCell urlCell
+ cruxFromId
+ single
 nativeLanguageWordCell
  description The name of a natural language like English or Japanese.
 nativeLanguageNode
@@ -55,6 +61,12 @@ countryNode
 isOpenSourceNode
  boolean alwaysRecommended true
  description Is it an open source project?
+ extends abstractBooleanNode
+ cruxFromId
+ single
+isPublicDomainNode
+ boolean alwaysRecommended true
+ description Is it public domain?
  extends abstractBooleanNode
  cruxFromId
  single
