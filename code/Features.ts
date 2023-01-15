@@ -69,7 +69,7 @@ class Feature {
   get _getLanguagesWithThisFeatureResearched() {
     const { id } = this
     return this.base.topLanguages.filter(file =>
-      file.getNode("features")?.has(id)
+      file.extendedFeaturesNode.has(id)
     )
   }
 
@@ -94,28 +94,23 @@ class Feature {
     return (this.get("reference") || "").split(" ").filter(i => i)
   }
 
-  @imemo
-  get featurePath() {
-    return `features ${this.id}`
-  }
-
   get base() {
     return this.collection.base
   }
 
   @imemo
   get languagesWithThisFeature() {
-    const { featurePath } = this
+    const { id } = this
     return this._getLanguagesWithThisFeatureResearched.filter(
-      file => file.get(featurePath) === "true"
+      file => file.extendedFeaturesNode.get(id) === "true"
     )
   }
 
   @imemo
   get languagesWithoutThisFeature() {
-    const { featurePath } = this
+    const { id } = this
     return this._getLanguagesWithThisFeatureResearched.filter(
-      file => file.get(featurePath) === "false"
+      file => file.extendedFeaturesNode.get(id) === "false"
     )
   }
 
@@ -149,15 +144,7 @@ class Feature {
   }
 
   toScroll() {
-    const {
-      title,
-      id,
-      fileName,
-      references,
-      previous,
-      next,
-      featurePath
-    } = this
+    const { title, id, fileName, references, previous, next } = this
 
     const positives = this.languagesWithThisFeature
     const positiveText = `* Languages *with* ${title} include ${positives
@@ -174,12 +161,12 @@ class Feature {
       : ""
 
     const examples = positives
-      .filter(file => file.getNode(featurePath).length)
+      .filter(file => file.extendedFeaturesNode.getNode(id).length)
       .map(file => {
         return {
           id: file.id,
           title: file.title,
-          example: file.getNode(featurePath).childrenToString()
+          example: file.extendedFeaturesNode.getNode(id).childrenToString()
         }
       })
     const grouped = lodash.groupBy(examples, "example")

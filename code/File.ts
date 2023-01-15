@@ -1,5 +1,5 @@
 import { Example, FeaturePrediction, FolderInterface } from "./Interfaces"
-import { getJoined, isLanguage, imemo } from "./utils"
+import { getJoined, isLanguage, imemo, patchTree } from "./utils"
 const { TreeNode } = require("jtree/products/TreeNode.js")
 const lodash = require("lodash")
 const { TreeBaseFile } = require("jtree/products/treeBase.node.js")
@@ -201,10 +201,17 @@ class PLDBFile extends TreeBaseFile {
     return this.allExamples.length + this.featuresWithExamples.length
   }
 
+  @imemo
+  get extendedFeaturesNode() {
+    const { supersetOfFile } = this
+    const featuresNode = this.getNode(`features`) ?? new TreeNode()
+    return supersetOfFile
+      ? patchTree(supersetOfFile.extendedFeaturesNode, featuresNode)
+      : featuresNode
+  }
+
   get featuresWithExamples() {
-    const featuresTable = this.getNode(`features`)
-    if (!featuresTable) return []
-    return featuresTable.filter(node => node.length)
+    return this.extendedFeaturesNode.filter(node => node.length)
   }
 
   get originCommunity(): string[] {
@@ -454,7 +461,7 @@ class PLDBFile extends TreeBaseFile {
     return this.base.predictPercentile(this)
   }
 
-  get supersetFile(): PLDBFile | undefined {
+  get supersetOfFile(): PLDBFile | undefined {
     const supersetOf = this.get("supersetOf")
     return supersetOf ? this.base.getFile(supersetOf) : undefined
   }

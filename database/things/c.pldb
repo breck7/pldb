@@ -18,6 +18,7 @@ features
   };
  hasRegularExpressionsSyntaxSugar false
  hasBooleans true
+ hasConstructors false
  hasTernaryOperators true
   #include <stdio.h>
   int main(void) { printf("%d", 1 ? 1 : 0); }
@@ -122,10 +123,18 @@ features
   //  If a header file is included within <>, the preprocessor will search a predetermined directory path to locate the header file. If the header file is enclosed in "", the preprocessor will look for the header file in the same directory as the source file.
   #include <stdio.h>
   #include "stdio.h"
+ hasNamespaces false
+ hasMultipleInheritance false
+ hasTemplates false
  hasIntegers true
   int pldb = 80766866;
  hasMacros true
-  https://gcc.gnu.org/onlinedocs/cpp/Macro-Arguments.html
+  // https://learn.microsoft.com/en-us/cpp/preprocessor/macros-c-cpp?redirectedfrom=MSDN&view=msvc-170
+  // https://gcc.gnu.org/onlinedocs/cpp/Macro-Arguments.html
+  #define min(X, Y)  ((X) < (Y) ? (X) : (Y))
+    x = min(a, b);          →  x = ((a) < (b) ? (a) : (b));
+    y = min(1, 2);          →  y = ((1) < (2) ? (1) : (2));
+    z = min(a + 28, *p);    →  z = ((a + 28) < (*p) ? (a + 28) : (*p));
  hasManualMemoryManagement true
   #include <stdio.h>
   #include <stdlib.h>
@@ -148,7 +157,18 @@ features
   /* A comment
   */
  hasPrintDebugging true
+ hasSwitch true
+  switch(expression) {
+     case true  :
+        break;
+     default :
+     //
+     break;
+  }
  hasSemanticIndentation false
+ hasAccessModifiers false
+ hasClasses false
+ hasExceptions false
  hasCaseInsensitiveIdentifiers false
  hasAssignment true
  isCaseSensitive true

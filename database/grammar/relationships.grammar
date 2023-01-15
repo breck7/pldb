@@ -21,7 +21,7 @@ renamedToNode
  description What is the new name of this language?
  extends abstractRelationshipNode
 supersetOfNode
- description Is this language a superset of another?
+ description Is this language a superset of another? If you specify this link then the superset language will inherit all features of subset language.
  extends abstractRelationshipNode
 writtenInNode
  description What language is this application written in?

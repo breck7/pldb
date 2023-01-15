@@ -9,6 +9,18 @@ const toCommaList = (arr, conjunction = "and") => {
   return arr.join(", ") + ` ${conjunction} ${last}`
 }
 
+// Combine 2 trees, and if the second has something the first already has,
+// destroy the version from the first
+const patchTree = (one, two) => {
+  const copy = one.clone()
+  two.forEach(node => {
+    const hit = copy.getNode(node.getWord(0))
+    if (hit) hit.destroy()
+  })
+  copy.concat(two)
+  return copy
+}
+
 const ensureDelimiterNotFound = (strings: string[], delimiter: string) => {
   const hit = strings.find(word => word.includes(delimiter))
   if (hit) throw `Delimiter "${delimiter}" found in hit`
@@ -284,5 +296,6 @@ export {
   ensureDelimiterNotFound,
   htmlEscaped,
   isValidEmail,
+  patchTree,
   makePrettyUrlLink
 }

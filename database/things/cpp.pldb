@@ -3,6 +3,7 @@ appeared 1985
 type pl
 creators Bjarne Stroustrup
 website http://isocpp.org/
+supersetOf c
 documentation https://devdocs.io/cpp/
 emailList https://lists.isocpp.org/mailman/listinfo.cgi
 spec https://isocpp.org/std/the-standard
@@ -16,43 +17,6 @@ domainName isocpp.org
 visualParadigm false
 
 features
- hasVariableSubstitutionSyntax false
- hasEnums true
-  enum Gender {
-    Male,
-    Female,
-  };
- hasRegularExpressionsSyntaxSugar false
- hasSemanticIndentation false
- hasTernaryOperators true
-  #include <stdio.h>
-  int main(void) { printf("%d", 1 ? 1 : 0); }
- hasCaseInsensitiveIdentifiers false
- hasImports true
-  #include <iostream>
- hasPointers true
-  int *p;
- hasBooleans true
- hasIntegers true
-  int i = 0;
- hasAssignment true
-  int i = 0;
- hasUnitsOfMeasure false
- hasUnaryOperators true
-  int count = 2;
-  count++;
-  ++count;
-  count--;
-  --count;
-  &count; // address
-  *count; // indirection
-  +count; // Positive
-  -count; // negative
-  ~count; // one's complement
-  !x; // logical negation
-  sizeof count;
-  sizeof(int);
-  (float)count;
  hasPartialApplication true
   // http://www.cplusplus.com/reference/functional/bind/
   // bind example
@@ -94,11 +58,8 @@ features
   
     return 0;
   }
- mergesWhitespace true
  hasSingleDispatch true
- hasBitWiseOperators true
  hasMagicGettersAndSetters false
- hasComments true
  hasConstructors true
   class Foobar {
    public:
@@ -116,46 +77,6 @@ features
   Foobar a,
          b(3),
          c(5, M_PI/4);
- hasConstants true
-  int const one = 1;
- hasGarbageCollection false
- hasStrings true
-  "hello world"
- hasGotos true
-  // C/C++ program to check if a number is 
-  // even or not using goto statement 
-  #include <iostream> 
-  using namespace std; 
-    
-  // function to check even or not 
-  void checkEvenOrNot(int num) 
-  { 
-      if (num % 2 == 0) 
-          goto even; // jump to even 
-      else
-          goto odd; // jump to odd 
-    
-  even: 
-      cout << num << " is evenn"; 
-      return; // return if even 
-  odd: 
-      cout << num << " is oddn"; 
-  } 
-    
-  // Driver program to test above function 
-  int main() 
-  { 
-      int num = 26; 
-      checkEvenOrNot(num); 
-      return 0; 
-  }
- hasDirectives true
-  // #pragma once is a non-standard but widely supported preprocessor directive designed to cause the current source file to be included only once in a single compilation.
-  #pragma once
-  struct foo
-  {
-     int member;
-  };
  hasIterators true
   std::vector<int> items;
   items.push_back(5);  // Append integer value '5' to vector 'items'.
@@ -165,9 +86,6 @@ features
   for (auto it = items.begin(); it != items.end(); ++it) {  // Iterate through 'items'.
     std::cout << *it;  // And print value of 'items' for current index.
   }
- hasMacros true
-  https://msdn.microsoft.com/en-us/library/503x3e3s.aspx
- hasManualMemoryManagement true
  hasFunctionOverloading true
   // volume of a cube
   int volume(const int s) {
@@ -200,9 +118,6 @@ features
   namespace ns_name::inline(since C++20)(optional) name { declarations } 
  hasMultipleInheritance true
  hasOperatorOverloading true
- hasReferences true
- hasPrintDebugging true
-  cout<<"hello world." << std::endl;
  hasTemplates true
   template <int length>
   Vector<length>& Vector<length>::operator+=(const Vector<length>& rhs)
@@ -211,8 +126,6 @@ features
           value[i] += rhs.value[i];
       return *this;
   }
- hasLineComments true
-  // A comment
  hasVirtualFunctions true
   class Animal {
    public:
@@ -232,18 +145,9 @@ features
     }
   };
  hasThreads true
- hasMultiLineComments true
-  /* A comment
-  */
- isCaseSensitive true
- hasWhileLoops true
  hasClasses true
  hasExceptions true
- hasSwitch true
  hasAccessModifiers true
- hasConditionals true
- hasFixedPoint false
- hasScientificNotation true
 
 lineCommentToken //
 multiLineCommentTokens /* */

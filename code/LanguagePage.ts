@@ -178,8 +178,8 @@ pipeTable
 
   get featuresTable() {
     const { file } = this
-    const featuresTable = file.getNode(`features`)
-    if (!featuresTable) return ""
+    const featuresTable = file.extendedFeaturesNode
+    if (!featuresTable.length) return ""
 
     const { featuresMap } = file.base
     const { pldbId } = file
@@ -512,7 +512,7 @@ ${creatorsLinks}
       )
     }
 
-    const supersetOf = file.supersetFile
+    const supersetOf = file.supersetOfFile
     if (supersetOf) facts.push(`${title} is a superset of ${supersetOf.link}`)
 
     const { originCommunity } = file
