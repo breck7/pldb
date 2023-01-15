@@ -24,6 +24,25 @@ class EditTreeBaseCommands {
     })
   }
 
+  replaceListItems(field, replacementMap) {
+    const keys = Object.keys(replacementMap)
+    const delimiter = " && "
+    pldbBase.forEach(file => {
+      const value = file.get(field)
+      if (!value) return
+
+      const values = value
+        .split(delimiter)
+        .map(value => (replacementMap[value] ? replacementMap[value] : value))
+
+      const joined = values.join(delimiter)
+      if (joined === value) return
+
+      file.set(field, joined)
+      file.prettifyAndSave()
+    })
+  }
+
   runFromArgs() {
     Utils.runCommand(this, process.argv[2], process.argv[3])
   }
@@ -33,3 +52,5 @@ const commandRunner = new EditTreeBaseCommands()
 
 // commandRunner.runFromArgs()
 // commandRunner.changeListDelimiterCommand("originCommunity", " && ")
+
+// commandRunner.replaceListItems("originCommunity", { "Apple Inc": "Apple" })
