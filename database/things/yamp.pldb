@@ -1,0 +1,25 @@
+title YAMP
+standsFor Yet Another Macro Processor
+type dataNotation
+appeared 2019
+
+supersetOf yaml
+
+features
+ hasMacros true
+  - defmacro:
+    name: foo
+    args: [who]
+    value:
+        Hello: who
+  - foo:
+    who: World
+
+githubRepo https://github.com/birchb1024/yamp
+ stars 11
+ forks 3
+ subscribers 3
+ created 2019
+ updated 2022
+ description Yet Another Macro Processor - for YAML - Superseded by Goyamp
+ issues 2

@@ -3,12 +3,15 @@ appeared 1994
 type pl
 creators Fredrik Hübinette
 website https://pike.lysator.liu.se/
+documentation https://pike.lysator.liu.se/docs/man/
 country Sweden
 originCommunity Chalmers Datorförening
 domainName pike.lysator.liu.se
 
 features
  hasComments true
+ hasMacros true
+  #define CYCLES 20
  hasLineComments true
   // A comment
  hasPrintDebugging true
