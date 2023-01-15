@@ -9,7 +9,7 @@ domainName rosie-lang.org
 example
  rosie --rpl 'd = [:digit:]' -o json match d
 
-githubRepo https://gitlab.com/rosie-pattern-language/rosie
+gitlabRepo https://gitlab.com/rosie-pattern-language/rosie
 
 fileType text
 isOpenSource true

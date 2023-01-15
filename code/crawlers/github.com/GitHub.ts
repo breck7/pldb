@@ -200,6 +200,7 @@ class PLDBFileWithGitHub {
 			Disk.write(this.firstCommitResultPath, JSON.stringify(commit, null, 2))
 		} catch (err) {
 			console.log(err)
+			console.log(`Error for "${file.id}"`)
 			Disk.write(this.firstCommitResultPath, `Error`)
 		}
 	}

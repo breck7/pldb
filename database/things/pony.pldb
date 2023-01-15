@@ -26,7 +26,7 @@ example
   new create(env: Env) =>
     env.out.print("Hello, world!")
 
-githubRepo https://github.com/ponylang/
+githubRepo https://github.com/ponylang/ponyc
 
 githubLanguage Pony
  fileExtensions pony

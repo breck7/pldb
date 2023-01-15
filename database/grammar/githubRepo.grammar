@@ -1,6 +1,10 @@
+githubRepoUrlCell
+ extends urlCell
+ regex ^https://github.com/.+/.+$
 githubRepoNode
  description URL of the official GitHub repo for the project if it hosted there.
  extends abstractGitRepoUrlNode
+ cells keywordCell githubRepoUrlCell
  inScope abstractGithubYearNode abstractGithubCountNode githubDescriptionNode
  contentKey url
  string sourceDomain github.com
