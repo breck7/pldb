@@ -1,4 +1,5 @@
 import header.scroll
+html <div class="singleColumn">
 title Features
 groups index
 import featuresImports.scroll
@@ -11,4 +12,4 @@ endSnippet
 TABLE
 
 tableSearch
-import ../footer.scroll
+import singleColumnFooter.scroll

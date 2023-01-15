@@ -537,7 +537,7 @@ class SiteBuilder {
       {
         TABLE: {
           rows: sorted,
-          header: ["name", "languages", "count"]
+          header: ["count", "name", "languages"]
         },
         COUNT: numeral(Object.values(entities).length).format("0,0")
       }

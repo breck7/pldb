@@ -1,4 +1,5 @@
 import header.scroll
+html <div class="singleColumn">
 title List of File Extensions
 groups index
 import extensionsImports.scroll
@@ -10,4 +11,4 @@ endSnippet
 TABLE
 
 tableSearch
-import ../footer.scroll
+import singleColumnFooter.scroll

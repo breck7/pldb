@@ -1,0 +1,132 @@
+import header.scroll
+title Resources for Programming Language Designers
+html <div class="singleColumn">
+groups index
+
+# Communities
+* A list of active communities of interest to Programming Language Designers
+pipeTable
+ name|nameLink|description
+ Programming Language Subreddit|https://www.reddit.com/r/ProgrammingLanguages/|Subreddit about programming language design
+ Lambda the Ultimate|http://lambda-the-ultimate.org|Blog, comments and forums about language design
+ ProgLangDesign|http://proglangdesign.net|A website for the #proglangdesign community on freenode
+ HackerNews|http://news.ycombinator.com|HackerNews often contains posts about language design issues
+ Lobste.rs|https://lobste.rs/|Lobsters is a computing-focused community centered around link aggregation and discussion
+ Future of Coding|https://futureofcoding.org/|Future of Coding is an online community with a welcoming, cooperative, and revolutionary spirit.
+ Proceedings of the ACM on Programming Languages (PACMPL)|http://pacmpl.acm.org/|Publishes research on all aspects of programming languages
+ Special Interest Group on Programming Languages (SIGPLAN)|http://sigplan.org/|Explores programming language concepts and tools, focusing on design, implementation, practice, and theory.
+ Programming Research Laboratory|http://prl.ccs.neu.edu/|Research Group at Northeastern University in Boston, MA
+ Programming Language Design on Quora|https://quora.com/topic/Programming-Language-Design|Quora questions tagged with Programming-Language-Design
+ Language Design questions on StackOverflow|https://stackoverflow.com/questions/tagged/language-design|StackOverflow questions tagged with language-design
+ Psychology of Programming Interest Group|http://www.ppig.org/|Gathers people from diverse communities to explore common interests in the psychological aspects of programming and in the computational aspects of psychology.|
+ LangJam|https://github.com/langjam/langjam|In Lang Jam, you and your teammates will create a programming language based on the theme for that jam.
+ CHM|https://computerhistory.org/|Computer History Museum
+ DBLP|https://dblp.org/|dblp computer science bibliography
+ Shape of Code|https://www.shape-of-code.com/|Evidence-based software engineering blog and book
+
+# Journals
+* A list of academic journals about programming language theory and design.
+pipeTable
+ name|nameLink|firstPublished|wikipedia|wikipediaLink|impactFactor|frequency|openAccess|aka
+ Journal of Automata, Languages and Combinatorics|http://www.jalc.de/|1965|WP|https://en.wikipedia.org/wiki/Journal_of_Automata,_Languages_and_Combinatorics||quarterly||
+ ACM Transactions on Programming Languages and Systems|https://dl.acm.org/journal/toplas|1979|WP|https://en.wikipedia.org/wiki/ACM_Transactions_on_Programming_Languages_and_Systems||bimonthly||TOPLAS
+ Information Systems Journal|https://onlinelibrary.wiley.com/journal/13652575|1991|WP|https://en.wikipedia.org/wiki/Information_Systems_Journal|4.267|bimonthly||
+ Journal of Functional Programming|https://www.cambridge.org/core/journals/journal-of-functional-programming|1991|WP|https://en.wikipedia.org/wiki/Journal_of_Functional_Programming||bimonthly||
+ International Journal of Programming Languages and Applications|http://airccse.org/journal/ijpla/ijpla.html|2011||||variable||IJPLA
+ Proceedings of the ACM on Programming Languages|https://dl.acm.org/journal/pacmpl|2017||||variable|yes|
+
+# Ranking Sites
+* PLDB is not the only site that publishes rankings of programming languages. Below is a list of the other ones. Wikipedia has a page on the concept.
+ link https://en.wikipedia.org/wiki/Measuring_programming_language_popularity concept
+ https://pldb.com/lists/top500.html rankings of programming languages
+pipeTable
+ Site|SiteLink
+ TIOBE Index|https://www.tiobe.com/tiobe-index/
+ PYPL PopularitY of Programming Language Index|https://pypl.github.io/PYPL.html
+ IEEE Top Programming Languages|https://spectrum.ieee.org/top-programming-languages/
+
+# Classes
+* Classes on designing programming languages.
+pipeTable
+ site|siteLink|title|instructor|year
+ CS|https://www.cs.umd.edu/class/fall2022/cmsc430/index.html|CMSC 430: Design and Implementation of Programming Languages|David Van Horn|2022
+ EECS|https://web.eecs.umich.edu/~weimerw/2016-ldi/|Language Design & Implementation|Westley Weimer|
+ UDEMY|https://www.udemy.com/course/programming-languages-build-an-interpreter/|Build a Complete Programming Language|Nawaf Alluqmani|
+ CIT|https://courses.cit.ie/index.cfm/page/module/moduleId/13186|SOFT9022 - Programming Language Design|Francisco Ortin|
+ SIMONDLEVY|https://simondlevy.academic.wlu.edu/courses/csci-312-programming-language-design-f14/|CSCI 312: Programming Language Design|Simon D. Levy|
+
+# Competitions
+* A list of active programming competition sites.
+import competitionsData.scroll
+
+# Programming Language Book Publishers
+* A list of publishers who publish books about programming languages.
+pipeTable
+ name|nameLink|founded|location|wikipedia|wikipediaLink|founders
+ Springer|https://www.springer.com/gp/computer-science/?countryChanged=true|1842|Berlin, Germany|Springer_Science%2BBusiness_Media|https://en.wikipedia.org/wiki/Springer_Science%2BBusiness_Media|Julius Springer
+ Addison-Wesley|https://www.pearson.com/us/higher-education/series/Addison-Wesley-Professional-Computing-Series/334583.html|1942|Boston, MA|Addison-Wesley|https://en.wikipedia.org/wiki/Addison-Wesley|Lew Addison Cummings and Melbourne Wesley Cummings
+ O'Reilly Media|https://www.oreilly.com/|1978|Sebastopol, CA|O%27Reilly_Media|https://en.wikipedia.org/wiki/O%27Reilly_Media|Tim O'Reilly
+ No Starch Press|http://www.nostarch.com/|1994|San Francisco, CA|No_Starch_Press|https://en.wikipedia.org/wiki/No_Starch_Press|William Pollock
+ Packt|https://www.packtpub.com/|2004|Birmingham, United Kingdom|Packt|https://en.wikipedia.org/wiki/Packt|
+ Stripe Press|https://press.stripe.com/|2018|San Franciscoo, CA|Stripe,_Inc|https://en.wikipedia.org/wiki/Stripe,_Inc.|
+ MIT Press|https://mitpress.mit.edu/|1926|Cambridge, Massachusetts|MIT_Press|https://en.wikipedia.org/wiki/MIT_Press| James R. Killian, Jr
+ Elsevier|https://www.elsevier.com/en-xm|1880|Amsterdam, Netherlands|Elsevier|https://en.wikipedia.org/wiki/Elsevier| Lodewijk Elzevir
+ Openstax CNX|https://cnx.org/|1999|Rice University, Houston, Texas|OpenStax_CNX|https://en.wikipedia.org/wiki/OpenStax_CNX|Richard Baraniuk
+ Microsoft Press|https://www.microsoftpressstore.com/|1984|Bellevue, Washington|Microsoft_Press|https://en.wikipedia.org/wiki/Microsoft_Press|Peter Norton
+ Trafford Publishing|https://www.trafford.com/en|1995|Canada, USA, Ireland|Trafford_Publishing|https://en.wikipedia.org/wiki/Trafford_Publishing|Bruce and Marsha Batchelor, John Norris and Steve Fisher
+ IEEE Computer Society Press|https://www.ieee.org/|1963|New York|Institute_of_Electrical_and_Electronics_Engineers#Publications|https://en.wikipedia.org/wiki/Institute_of_Electrical_and_Electronics_Engineers#Publications|Nikola Tesla, Thomas Alva Edison, Elihu Thomson, Edwin J. Houston, and Edward Weston
+ The Pragmatic Bookshelf|https://pragprog.com|1999|United States|Addison-Wesley|https://en.wikipedia.org/wiki/Addison-Wesley|Andy Hunt and Dave Thomas
+ Peachpit|https://www.peachpit.com|1986|San Francisco, CA|Peachpit|https://en.wikipedia.org/wiki/Peachpit|Ted Nace and Michael Gardner
+ Wiley|https://www.wiley.com|1807|Manhattan|Wiley|https://en.wikipedia.org/wiki/Wiley_(publisher)|Charles Wiley
+ McGraw Hill Education|https://www.mheducation.com/|1917|New York|McGraw_Hill_Education|https://en.wikipedia.org/wiki/McGraw_Hill_Education|James H. McGraw
+ Jones & Bartlett Learning|https://www.jblearning.com/|1988|Sudbury Massachusetts|Jones_%26_Bartlett_Learning|https://en.wikipedia.org/wiki/Jones_%26_Bartlett_Learning|Donald W. Jones
+ Taylor & Francis|https://www.routledge.com/|1852|London, UK|Taylor_%26_Francis|https://en.wikipedia.org/wiki/Taylor_%26_Francis|Richard Taylor and William Francis
+
+# Jobs
+* Looking for a programming job? Here are some sites for finding one.
+pipeTable
+ site|siteLink
+ Arc|https://arc.dev/
+ Berlinstartupjobs|https://berlinstartupjobs.com/
+ Braintrust|https://www.usebraintrust.com/
+ Craigslist|https://www.craigslist.org/
+ Dice|https://www.dice.com/
+ Dribbble|https://dribbble.com/jobs?location=Anywhere
+ Flexjobs|https://www.flexjobs.com/ 
+ GitHub Jobs|https://jobs.github.com/
+ Glassdoor|https://www.glassdoor.com/
+ Hacker News Jobs|https://news.ycombinator.com/jobs
+ Hubstaff|https://talent.hubstaff.com/
+ Indeed|http://indeed.com/
+ Jobspresso|https://jobspresso.co/
+ LinkedIn|https://www.linkedin.com/
+ Monster|https://www.monster.com/
+ Otta|https://otta.com/
+ Powertofly|https://powertofly.com/jobs/
+ Product Hunt|https://www.producthunt.com/jobs
+ Remote OK|https://remoteok.io/
+ Remote.com|https://remote.com/
+ Remotejobs|https://www.remotejobs.com/
+ Remotive|https://remotive.com/
+ SimplyHired|https://www.simplyhired.com/
+ StackOverflow|https://stackoverflow.com/jobs
+ TripleByte|https://triplebyte.com/
+ Upwork|https://www.upwork.com/
+ Vanhack|https://vanhack.com/jobs
+ We Work Remotely|https://weworkremotely.com/
+ Work At a Startup|https://www.workatastartup.com/
+ Working Nomads|https://www.workingnomads.co/jobs
+ ZipRecruiter|https://www.ziprecruiter.com/
+
+# Free programming eBooks
+commaTable
+ title,titleLink,author,year,publisher
+ Introduction to the Theory of Programming Languages,https://bertrandmeyer.com/2022/09/28/introduction-theory-programming-languages-full-book-now-freely-available/,Bertrand Meyer,2022,Prentice Hall International Series in Computer Science
+ Programming Fundamentals,https://openlibrary-repo.ecampusontario.ca/jspui/bitstream/123456789/692/3/Programming-Fundamentals-1570222270.pdf,Kenneth Leroy Busbee,2008
+ Python Basics: A Practical Introduction to Python 3,https://static.realpython.com/python-basics-sample-chapters.pdf,David Amos,2012–2020
+ Learning Python,https://cfm.ehu.es/ricardo/docs/python/Learning_Python.pdf,Mark Lutz,2009
+ How to Code in Go,https://assets.digitalocean.com/books/how-to-code-in-go.pdf,Mark Bates,2020
+ The Go Programming Language,http://www.cs.uniroma2.it/upload/2017/TSC/The%20Go%20Programming%20Language.pdf,Alan A. A. Donovan,2009
+
+tableSearch
+import singleColumnFooter.scroll

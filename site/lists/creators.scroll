@@ -1,5 +1,6 @@
 import header.scroll
 title List of people who created a programming language
+html <div class="singleColumn">
 groups index
 import creatorsImports.scroll
 
@@ -14,4 +15,4 @@ comment
 TABLE
 
 tableSearch
-import ../footer.scroll
+import singleColumnFooter.scroll

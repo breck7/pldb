@@ -1,4 +1,5 @@
 import header.scroll
+html <div class="singleColumn">
 title Everything in the PLDB
 groups index
 import entitiesImports.scroll
@@ -13,4 +14,4 @@ endSnippet
 TABLE
 
 tableSearch
-import ../footer.scroll
+import singleColumnFooter.scroll

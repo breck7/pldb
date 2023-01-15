@@ -1,9 +1,9 @@
 import header.scroll
+html <div class="singleColumn">
 title Lists
 
 pipeTable
  List|ListLink
- Communities fostering new Programming Languages|./originCommunities.html
  Top 100 Programmming Languages|./top100.html
  Top 250 Programmming Languages|./top250.html
  Top 500 Programmming Languages|./top500.html
@@ -14,14 +14,7 @@ pipeTable
  Keywords|./keywords.html
  File Extensions|./extensions.html
  Programming Language Creators|./creators.html
- Job Sites|./jobs.html
- Free ebooks about programming|./ebooks.html
- Programming Language Design Communities|./communities.html
  Programming Language Conferences|./calendar.html
- Programming Language Academic Journals|./journals.html
- Programming Language Book Publishers|./publishers.html
- Programming Language Design Courses|./courses.html
- Programming Competitions|./competitions.html
- Other Programming Language Rankings Sites|./rankings-sites.html
+ Other Resources|./resources.html
 
-import ../footer.scroll
+import singleColumnFooter.scroll
