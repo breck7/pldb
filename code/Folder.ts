@@ -256,6 +256,23 @@ class PLDBFolder extends TreeBaseFolder {
     return this.columnDocumentation.map(col => col.Column)
   }
 
+  groupByListValues(
+    listColumnName: string,
+    files = this.files,
+    delimiter = " && "
+  ) {
+    const values = {}
+    files.forEach(file => {
+      const value = file.get(listColumnName)
+      if (!value) return
+      value.split(delimiter).forEach(value => {
+        if (!values[value]) values[value] = []
+        values[value].push(file)
+      })
+    })
+    return values
+  }
+
   // todo: is there already a way to do this in jtree?
   getFilePathAndLineNumberWhereGrammarNodeIsDefined(nodeTypeId: string) {
     const { grammarFileMap } = this

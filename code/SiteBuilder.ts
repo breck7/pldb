@@ -511,31 +511,19 @@ class SiteBuilder {
   @benchmark
   @buildAll
   buildOriginCommunitiesImports() {
-    const entities = {}
-
     const files = lodash.sortBy(
       pldbBase.filter(file => file.isLanguage && file.originCommunity.length),
       "languageRank"
     )
 
-    files.forEach(file => {
-      file.originCommunity.forEach(entity => {
-        if (!entities[entity]) entities[entity] = []
-        const { id, title, languageRank } = file
-        entities[entity].push({
-          id,
-          title,
-          languageRank
-        })
-      })
-    })
-
+    const entities = pldbBase.groupByListValues("originCommunity", files)
     const rows = Object.keys(entities).map(name => {
-      const languages = entities[name]
+      const group = entities[name]
+      const languages = group
         .map(lang => `<a href='../languages/${lang.id}.html'>${lang.title}</a>`)
         .join(" - ")
-      const count = entities[name].length
-      const top = -Math.min(...entities[name].map(lang => lang.languageRank))
+      const count = group.length
+      const top = -Math.min(...group.map(lang => lang.languageRank))
 
       const wrappedName = `<a name='${lodash.camelCase(name)}' />${name}`
 
@@ -559,62 +547,42 @@ class SiteBuilder {
   @benchmark
   @buildAll
   buildCreatorsImports() {
-    const creators = {}
-
-    lodash
-      .sortBy(
-        pldbBase.filter(file => file.isLanguage && file.has("creators")),
-        "languageRank"
-      )
-      .forEach(file => {
-        file.creators.forEach(creatorName => {
-          if (!creators[creatorName]) creators[creatorName] = []
-          creators[creatorName].push(file)
-        })
-      })
-
+    const entities = pldbBase.groupByListValues(
+      "creators",
+      pldbBase.filter(file => file.isLanguage),
+      " and "
+    )
     const wikipediaLinks = new TreeNode(
       Disk.read(path.join(listsFolder, "creators.tree"))
     )
 
-    const rows = Object.keys(creators).map(name => {
-      const languages = creators[name]
-        .map(
-          file => `<a href='../languages/${file.permalink}'>${file.title}</a>`
-        )
-        .join(" - ")
-      const count = creators[name].length
-      let topRank = 10000
-
-      creators[name].forEach(file => {
-        const { languageRank } = file
-        if (languageRank < topRank) topRank = languageRank
-      })
-
+    const rows = Object.keys(entities).map(name => {
+      const group = lodash.sortBy(entities[name], "languageRank")
       const person = wikipediaLinks.nodesThatStartWith(name)[0]
       const anchorTag = lodash.camelCase(name)
-      const wrappedName = !person
-        ? `<a name='${anchorTag}' />${name}`
-        : `<a name='${anchorTag}' href='https://en.wikipedia.org/wiki/${person.get(
-            "wikipedia"
-          )}'>${name}</a>`
 
       return {
-        name: wrappedName,
-        languages,
-        count,
-        topRank: topRank + 1
+        name: !person
+          ? `<a name='${anchorTag}' />${name}`
+          : `<a name='${anchorTag}' href='https://en.wikipedia.org/wiki/${person.get(
+              "wikipedia"
+            )}'>${name}</a>`,
+        languages: group
+          .map(
+            file => `<a href='../languages/${file.permalink}'>${file.title}</a>`
+          )
+          .join(" - "),
+        count: group.length,
+        topRank: group[0].languageRank + 1
       }
     })
 
-    const sorted = lodash.sortBy(rows, "topRank")
-
     buildImportsFile(path.join(listsFolder, "creatorsImports.scroll"), {
       TABLE: {
-        rows: sorted,
+        rows: lodash.sortBy(rows, "topRank"),
         header: ["name", "languages", "count", "topRank"]
       },
-      COUNT: numeral(Object.values(creators).length).format("0,0")
+      COUNT: numeral(Object.values(entities).length).format("0,0")
     })
   }
 
