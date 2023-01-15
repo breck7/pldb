@@ -204,9 +204,13 @@ pipeTable
           `row`,
           `Feature ${feature.title}
 FeatureLink ${feature.titleLink}
-Supported ${supported ? "✓" : "ϴ"}
-Example
-Token ${supported && tokenPath ? file.get(tokenPath) ?? "" : ""}`
+Supported ${
+            supported
+              ? `<span class="hasFeature">✓</span>`
+              : `<span class="doesNotHaveFeature">X</span>`
+          }
+Token ${supported && tokenPath ? file.get(tokenPath) ?? "" : ""}
+Example`
         )
         .touchNode("Example")
         .setChildren(node.childrenToString())
