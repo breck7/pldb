@@ -201,14 +201,10 @@ features
  hasReservedWords true
  hasSwitch true
   match X {
-  case Y:
-      outln("X is Y")
-  case Z:
-      outln("X is Z")
-  case A, B, C:
-      outln("X is A, B, or C")
-  default:
-      outln("X is not Y, Z, A, B and C")
+  | Y:         outln("X is Y")
+  | Z:         outln("X is Z")
+  | A | B | C: outln("X is A, B, or C")
+  |:           outln("X is not Y, Z, A, B and C")
   }
  hasDuckTyping true
   type[T]
@@ -251,7 +247,7 @@ assignmentToken =
 stringToken "
 booleanTokens true false
 includeToken use
-keywords fn pub struct enum unsafe const let mut self match case default if else for in impl trait break continue goto cpp i8 i16 i32 i64 u8 u16 u32 u64 f32 f64 str int uint type any true false bool ret fallthrough nil uintptr co
+keywords fn pub struct enum unsafe const let mut self match if else for in impl trait break continue goto cpp i8 i16 i32 i64 u8 u16 u32 u64 f32 f64 str int uint type any true false bool ret fallthrough nil uintptr co
 
 example
  fn quicksort(mut s: []int) {
