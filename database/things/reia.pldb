@@ -2,21 +2,11 @@ title Reia
 appeared 2008
 type pl
 website http://reia-lang.org
+reference http://www.unlimitednovelty.com/2011/06/why-im-stopping-work-on-reia.html
 country United States
 originCommunity https://github.com/tarcieri/reia/issues
 domainName reia-lang.org
  registered 2008
-
-reference http://www.unlimitednovelty.com/2011/06/why-im-stopping-work-on-reia.html
-githubRepo https://github.com/tarcieri/reia
- firstCommit 2008
- stars 777
- forks 40
- subscribers 13
- created 2008
- updated 2022
- description Ruby-like hybrid OOP/functional programming language for BEAM, the Erlang VM
- issues 7
 
 features
  hasAssignment true
@@ -100,6 +90,16 @@ example
  
  # List comprehensions
  doubled = [n * 2 for n in numbers] # doubled is [6,4,2]
+
+githubRepo https://github.com/tarcieri/reia
+ firstCommit 2008
+ stars 777
+ forks 40
+ subscribers 13
+ created 2008
+ updated 2022
+ description Ruby-like hybrid OOP/functional programming language for BEAM, the Erlang VM
+ issues 7
 
 hackerNewsDiscussions
  id|title|url|time|timestamp|by|comments|score
