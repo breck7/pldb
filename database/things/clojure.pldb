@@ -42,7 +42,19 @@ features
   (require 'clojure.contrib.def 'clojure.contrib.except 'clojure.contrib.sql)
   (require '(clojure.contrib def except sql))
  hasMacros true
-  https://clojure.org/reference/macros
+  ; https://www.braveclojure.com/writing-macros/
+  ; https://clojure.org/reference/macros
+  (defmacro and
+   "Evaluates exprs one at a time, from left to right. If a form
+   returns logical false (nil or false), and returns that value and
+   doesn't evaluate any of the other expressions, otherwise it returns
+   the value of the last expr. (and) returns true."
+   {:added "1.0"}
+   ([] true)
+   ([x] x)
+   ([x & next]
+    `(let [and# ~x]
+       (if and# (and ~@next) and#))))
  hasOperatorOverloading true
  hasLineComments true
   ; A comment
