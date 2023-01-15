@@ -1,8 +1,10 @@
 title Futhark
 appeared 2013
 type pl
+creators Troels Henriksen and Cosmin Oancea and Martin Elsman
 description <a href='https://futhark-lang.org'>Futhark</a>, a high-performance parallel functional array language targeting GPUs.
 website https://futhark-lang.org
+fileExtensions fut
 country Denmark
 originCommunity University of Copenhagen
 domainName futhark-lang.org
@@ -10,6 +12,8 @@ domainName futhark-lang.org
  awisRank
   2022 11224882
   2017 2706803
+
+influencedBy apl
 
 features
  hasComments true
@@ -44,6 +48,8 @@ pygmentsHighlighter Futhark
  fileExtensions fut
 
 rosettaCode http://www.rosettacode.org/wiki/Category:Futhark
+
+officialBlogUrl https://futhark-lang.org/blog.html
 
 fileType text
 isOpenSource true
