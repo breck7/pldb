@@ -2,6 +2,10 @@ title Template Attribute Language
 appeared 2007
 type template
 
+example
+ <tal:if condition="context/itemlist">
+ </tal>
+
 wikipedia https://en.wikipedia.org/wiki/Template_Attribute_Language
  example
   <html metal:define-macro="icing">

@@ -3,10 +3,44 @@ appeared 1990
 type textMarkup
 description Groff (GNU troff) is a typesetting system that reads plain text mixed with formatting commands and produces formatted output. Output may be PostScript or PDF, html, or ASCII/UTF8 for display at the terminal. Formatting commands may be either low-level typesetting requests (“primitives”) or macros from a supplied set. Users may also write their own macros. All three may be combined.
 website https://www.gnu.org/software/groff/groff.html
+documentation https://www.gnu.org/software/groff/manual/html_node/index.html
 country United States
 originCommunity GNU Project
 
 related troff
+
+features
+ hasComments true
+  Test
+  \" comment
+  Test
+  Test
+  \# comment
+  Test
+ hasMacros true
+  .de P
+  .  br
+  .  sp .8v
+  ..
+ hasMultiLineComments true
+  text text text...
+  .ig
+  This is part of a large block
+  of text that has been
+  temporarily(?) commented out.
+  
+  We can restore it simply by removing
+  the .ig request and the ".." at the
+  end of the block.
+  ..
+
+lineCommentToken \" \#
+multiLineCommentTokens .ig
+
+example
+ .sp 1.5i
+ My thoughts on the subject
+ .sp
 
 wikipedia https://en.wikipedia.org/wiki/Groff_(software)
 
