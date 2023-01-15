@@ -14,6 +14,16 @@ domainName julialang.org
 visualParadigm false
 
 features
+ hasMacros true
+  # https://jkrumbiegel.com/pages/2021-06-07-macros-for-beginners/
+  macro show_value(variable)
+      quote
+          println("The ", $(string(variable)), " you passed is ", $(esc(variable)))
+      end
+  end
+  
+  @show_value(orange)
+  @show_value(apple)
  hasStrings true
   "hello world"
  hasMultipleDispatch true

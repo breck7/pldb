@@ -24,6 +24,13 @@ features
  hasPartialApplication true
   def add(x: Int, y: Int) = {x+y}; add(1, _: Int)
  hasComments true
+ hasMacros true
+  // https://docs.scala-lang.org/scala3/guides/macros/macros.html
+  import scala.quoted.* // imports Quotes, Expr
+  
+  def inspectCode(x: Expr[Any])(using Quotes): Expr[Any] =
+    println(x.show)
+    x
  hasImplicitArguments true
   // https://docs.scala-lang.org/tour/implicit-parameters.html
   abstract class Monoid[A] {

@@ -10,11 +10,33 @@ domainName nemerle.org
   2022 9445077
   2017 10979387
 
+influencedBy csharp ml lisp
+
 visualParadigm false
 
 features
  hasComments true
  hasSemanticIndentation true
+ hasMacros true
+  // http://nemerle.org/About
+  def title = "Programming language authors";
+  def authors = ["Anders Hejlsberg", "Simon Peyton-Jones"];
+      
+  // 'xml' - macro from Nemerle.Xml.Macro library which alows to inline XML literals into the nemerle-code
+  def html = xml <#
+    <html>
+      <head>
+        <title>$title</title>
+      </head>
+      <body>
+        <ul $when(authors.Any())>
+          <li $foreach(author in authors)>$author</li>
+        </ul>
+      </body>
+    </html>
+  #>
+  Trace.Assert(html.GetType().Equals(typeof(XElement)));
+  WriteLine(html.GetType());
  hasTypeInference true
  hasUnitsOfMeasure true
   def m3 = 1 g;

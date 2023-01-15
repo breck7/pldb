@@ -26,6 +26,18 @@ features
   "Hello world"
  hasWhileLoops true
  hasConditionals true
+ hasMacros true
+  define macro table
+    { table(?table-class:expression, ?table-contents) }
+      => { let ht = make(?table-class); ?table-contents; ht; }
+    { table(?rest:*) } => { table(<table>, ?rest); }
+  
+    table-contents:
+    { } => { }
+    { ?key:expression => ?value:expression, ... }
+      => { ht[?key] := ?value; ... }
+  end macro table
+  
 
 lineCommentToken //
 assignmentToken :=
