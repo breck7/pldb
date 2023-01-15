@@ -61,7 +61,19 @@ features
     println!("{}", n);
   }
  hasMacros true
-  https://doc.rust-lang.org/book/ch19-06-macros.html
+  // https://doc.rust-lang.org/book/ch19-06-macros.html
+  #[macro_export]
+  macro_rules! vec {
+      ( $( $x:expr ),* ) => {
+          {
+              let mut temp_vec = Vec::new();
+              $(
+                  temp_vec.push($x);
+              )*
+              temp_vec
+          }
+      };
+  }
  hasOperatorOverloading true
  hasPatternMatching true
  hasPrintDebugging true

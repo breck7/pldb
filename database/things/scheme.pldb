@@ -16,7 +16,10 @@ features
  hasLineComments true
   ; A comment
  hasMacros true
-  https://en.wikibooks.org/wiki/Scheme_Programming/Macros
+  ; https://en.wikibooks.org/wiki/Scheme_Programming/Macros
+  (defmacro (backwards . body)
+   (cons 'begin
+   (reverse body)))
  hasPrefixNotation true
   (+ 1 2 3)
  hasHomoiconicity true

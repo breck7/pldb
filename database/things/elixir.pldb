@@ -81,7 +81,17 @@ features
  hasPolymorphism true
   https://hexdocs.pm/elixir/Protocol.html
  hasMacros true
-  https://hexdocs.pm/elixir/Macro.html
+  # https://hexdocs.pm/elixir/Macro.html
+  defmodule Example do
+    defmacro macro_inspect(value) do
+      IO.inspect(value)
+      value
+    end
+    def fun_inspect(value) do
+      IO.inspect(value)
+      value
+    end
+  end
  hasStreams true
   https://hexdocs.pm/elixir/Stream.html
  hasPipes true

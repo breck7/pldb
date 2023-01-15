@@ -21,8 +21,18 @@ writtenIn nim
 
 features
  hasComments true
+ hasTemplates true
+  # https://hookrace.net/blog/introduction-to-metaprogramming-in-nim/#templates
+  template debug*(args: varargs[string, `$`]) =
+  if logLevel <= Level.debug:
+    const module = instantiationInfo().filename[0 .. ^5]
+    echo "[$# $#][$#]: $#" % [getDateStr(), getClockStr(),
+      module, join args]
  hasMacros true
-  https://hookrace.net/blog/introduction-to-metaprogramming-in-nim/#macros
+  # https://hookrace.net/blog/introduction-to-metaprogramming-in-nim/#macros
+  import macros
+  dumpTree:
+   result = 10
  hasSemanticIndentation true
  hasCaseInsensitiveIdentifiers true
  hasStaticTyping true
