@@ -91,7 +91,7 @@ features
   ...
   IntList x = ...
   foo(x[1]);
- hasModules true 
+ hasModules true
   module my_module::submodule;
   ...
  hasReservedWords true
@@ -101,7 +101,7 @@ features
   ...
   foo_typed(1, 2, 3);
   foo_untyped(1, "hello", 1.2);
- hasPointers true 
+ hasPointers true
  isCaseSensitive true
  hasConstructors false
  hasCaseInsensitiveIdentifiers false
@@ -138,7 +138,6 @@ features
 
 lineCommentToken //
 multiLineCommentTokens /* */
-assignmentToken
 
 example
  module stack <Type>;
