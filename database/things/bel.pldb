@@ -3,6 +3,7 @@ appeared 2019
 type pl
 creators Paul Graham
 website http://paulgraham.com/bel.html
+documentation https://sep.yimg.com/ty/cdn/paulgraham/bellanguage.txt?t=1595850613&
 country United States
 
 related arc
@@ -14,6 +15,15 @@ features
   ; A comment
  hasPrintDebugging true
  hasSemanticIndentation false
+ hasMacros true
+  ; A macro is essentially a function that generates code. I would have 
+  ; liked the first example of a macro to be something simpler, but fn
+  ; is the one we need first. So I'll introduce macros using a simpler 
+  ; macro that isn't part of Bel, then explain fn.
+  ; Here is a very simple macro:
+  (mac nilwith (x)
+    (list 'cons nil x))
+  
 
 lineCommentToken ;
 printToken prn
