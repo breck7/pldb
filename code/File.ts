@@ -144,7 +144,7 @@ class PLDBFile extends TreeBaseFile {
   }
 
   @includeInCsv
-  get hoplId() {
+  get hopl() {
     return this.get("hopl")?.replace(
       "https://hopl.info/showlanguage.prx?exp=",
       ""

@@ -342,7 +342,7 @@ class PLDBFolder extends TreeBaseFolder {
           colDefId !== "" && colDefId !== "errorNode"
             ? `https://github.com/breck7/pldb/blob/main/database/grammar/${Definition}#L${sourceLocation.lineNumber +
                 1}`
-            : ""
+            : `https://github.com/breck7/pldb/blob/main/code/File.ts#:~:text=get%20${Column}()`
         const SourceLink = Source ? `https://${Source}` : ""
         return {
           Column,
