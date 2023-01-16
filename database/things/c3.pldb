@@ -22,7 +22,7 @@ features
  hasComments true
   // A comment
   /* Another comment */
- hasRegularExpressionsSyntaxSugar false 
+ hasRegularExpressionsSyntaxSugar false
  hasSemanticIndentation false
  hasBooleans true
  hasBitWiseOperators true
@@ -62,7 +62,7 @@ features
       if (x > i) break FOO;
     }
   }
- hasLazyEvaluation true 
+ hasLazyEvaluation true
   fn void print(String s)
   {
      io::printfn("Said: %s", s);
@@ -106,7 +106,7 @@ features
  hasConstants true
   const FOO = 123;
   const void* BAR = null;
- hasAbstractTypes false 
+ hasAbstractTypes false
  hasDocComments true
   /**
    * @param [in] foo "The foo value"
