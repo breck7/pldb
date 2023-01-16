@@ -1,8 +1,8 @@
-title c3
+title C3
 appeared 2019
 type pl
 creators Christoffer Lernö
-description C3 is a systems language based on C. It intends tries to be a short step up from C rather than to replace it with a new paradigm or completely new syntax. C3 is built on top of the C2 lang project by Bas van den Berg. It goes substantially further in regards to error handling, macros, generics and strings. Although it might have some breaking changes, it can – at least currently – be considered a superset of C2.
+description C3 is a systems language based on C. It intends tries to be a short step up from C rather than to replace it with a new paradigm or completely new syntax. C3 is built on top of the C2 lang project by Bas van den Berg. It goes substantially further in regards to error handling, macros, generics and strings.
 website http://www.c3-lang.org/
 reference https://www.reddit.com/r/ProgrammingLanguages/comments/ex7hpp/february_2020_monthly_what_are_you_working_on/fgdpuki/
 reference https://news.ycombinator.com/item?id=32005678
@@ -20,12 +20,63 @@ features
  hasComments true
   // A comment
   /* Another comment */
+ hasRegularExpressionsSyntaxSugar false 
  hasSemanticIndentation false
+ hasBooleans true
+ hasBitWiseOperators true
+  int i = b << 4 + x; // Same as (b << 4) + x  
  hasOctals true
   0o177
  hasArraySlicingSyntax true
   int[] slice1 = array[0..5]; // start..end
   int[] slice2 = array[0:6]; // start:length
+ hasAsyncAwait false
+ hasBoundedCheckedArrays true
+ hasBreak true
+ hasBuiltInRegex false
+ hasContinue true
+ hasDuckTyping false
+ hasDynamicProperties false
+ hasEscapeCharacters true
+  "\e\n\r"
+ hasExpressions true
+ hasForLoops true
+ hasHereDocs false
+ hasHexadecimals true
+ hasIfs true
+ hasIfElses true
+ hasImplicitTypeConversions true
+ hasFunctions true
+ hasFunctionOverloading false
+ hasFunctionComposition false
+ hasHomoiconicity false
+ hasInheritance true
+ hasLabels true
+  while FOO: (x > 0)
+  {
+    for (int i = 0; i < 10; i++
+    {
+      x = baz();
+      if (x > i) break FOO;
+    }
+  }
+ hasLazyEvaluation true 
+  fn void print(String s)
+  {
+     io::printfn("Said: %s", s);
+  }  
+  macro @foo(bool run, #lazy)
+  {
+    if (run) #lazy;
+  }
+  // Only "Said: Hello" is printed:
+  @foo(false, print("Bye"));
+  @foo(true, print("Hello"));
+ hasMagicGettersAndSetters false
+ hasMessagePassing false
+ hasNull true
+ hasPipes false
+ hasSExpressions false
  hasBinaryNumbers true
   0b110011
  hasExplicitTypeCasting true
@@ -36,8 +87,11 @@ features
   ...
   io::printf("%d", i);
  hasMultipleInheritance false
+ hasDirectives false
  hasIntegers true
   int x = 314159;
+ hasIncrementAndDecrementOperators true
+  i++; --j;
  hasManualMemoryManagement true
  hasAssertStatements true
   assert(a > 0, "Expected a positive number");
@@ -47,6 +101,10 @@ features
  hasZeroBasedNumbering true
  hasAccessModifiers true
  hasClasses false
+ hasConstants true
+  const FOO = 123;
+  const void* BAR = null;
+ hasAbstractTypes false 
  hasDocComments true
   /**
    * @param [in] foo "The foo value"
@@ -106,8 +164,13 @@ features
  hasConstructors false
  hasCaseInsensitiveIdentifiers false
  hasAssignment true
+  a = b;
  hasConditionals true
  hasWhileLoops true
+  while (int x = foo(); x > 0) 
+  {
+    sum += x;
+  }
  hasScientificNotation true
  hasTernaryOperators true
   int foo = x ? 1 : 0;
@@ -187,5 +250,7 @@ githubRepo https://github.com/c3lang/c3c
  description The C3 compiler.
 
 rosettaCode https://rosettacode.org/wiki/Category:C3
+
+subreddit https://reddit.com/r/C_Programming
 
 semanticScholar 0
