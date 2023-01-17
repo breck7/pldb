@@ -276,8 +276,7 @@ viewSourceUrl ${this.sourceUrl}
 
 startColumns 4
 
-html
- <div class="quickLinks">${this.quickLinks}</div>
+html <div class="quickLinks">${this.quickLinks}</div>
 
 ${this.oneLiner}
 
@@ -293,8 +292,7 @@ ${this.descriptionSection}
 
 ${this.factsSection}
 
-html
- <br>
+html <br>
 
 ${this.exampleSection}
 
@@ -410,7 +408,7 @@ image ${image.replace("https://pldb.com/", "../")}
     }${appeared ? ` created in ${appeared}` : ""}${creatorsStr}.
  link ../lists/languages.html?filter=${appeared} ${appeared}
 ${creatorsLinks}
- `
+`
   }
 
   get typeLink() {
