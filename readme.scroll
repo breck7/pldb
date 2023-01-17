@@ -61,9 +61,9 @@ code
 ## To build the full site in docker
 
 code
-# -- Run PLDB in docker
+ # -- Run PLDB in docker
  docker run -it -d -v /c/AndelaWork/pldb:/app -p 4444:4444 --name pldbnode node:16 bash
-# -- into docker interactive session run the follow:
+ # -- into docker interactive session run the follow:
  git clone https://github.com/breck7/pldb
  cd pldb
  npm install .
@@ -73,7 +73,7 @@ code
  # (Optional run TESTS):
   npm run test
  # (Following updates):
-npm run format
+ npm run format
  npm run local
  # navigate site in -->
  http://localhost:4444/index.html
