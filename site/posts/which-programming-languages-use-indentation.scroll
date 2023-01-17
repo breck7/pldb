@@ -9,7 +9,7 @@ author https://github.com/breck7 Breck Yunits
 * Python, as one of the top 10 programming languages in the world, is the most popular programming language that treats indentation as significant. In these offside languages, programmers indent their code blocks instead of using braces, brackets, or other visible characters.
  dateline
  link BASE_URL/languages/python.html Python
- link https://en.wikipedia.org/wiki/Off-side_rule offside
+ https://en.wikipedia.org/wiki/Off-side_rule offside
 
 * I was curious about how common these languages were so I did some brief analysis to answer these questions:
 
@@ -26,7 +26,6 @@ endSnippet
 # 2) Only 36 out of 2,500 programming languages in my database use indentation
 
 * These languages use indentation:
-
 * abc, aldor, boo, buddyscript, cobra, coffeescript, csl, curry, elixir, f-sharp, genie, haml, haskell, inform, iswim, literate-coffeescript, livescript, madcap, madcap-vi, makefile, markdown, miranda, nemerle, net-format, nim, occam, org, promal, python, restructuredtext, sass, scss, spin, stylus, xl-programming-language and yaml.
  link BASE_URL/languages/abc.html abc
  link BASE_URL/languages/aldor.html aldor
