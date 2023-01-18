@@ -1,10 +1,45 @@
 title MediaWiki
 appeared 2002
 type wikiMarkup
+description The syntax and keywords used by the MediaWiki software to format a page.
 website https://en.wikipedia.org/wiki/MediaWiki#Markup
 documentation https://www.mediawiki.org/wiki/Documentation
+documentation https://en.wikipedia.org/wiki/Help:Wikitext
+spec https://www.mediawiki.org/wiki/Specs/wikitext/1.0.0
+reference https://www.mediawiki.org/wiki/Wikitext
+reference https://doc.wikimedia.org/mediawiki-core/master/php/classParser.html
+aka wikitext
+aka wikicode
+aka wiki markup
 country United States
 originCommunity Wikimedia Foundation, Inc
+
+example
+ = Heading 1 =
+ Indentation as used on talk pages:
+ :Each colon at the start of a line
+ ::causes the line to be indented by three more character positions.
+ :::(The indentation persists
+ * Item1
+ * Item2
+ * Item3
+ * Item4
+ ** Sub-item 4 a)
+ *** Sub-item 4 a) 1.
+ **** Sub-item 4 a) 1. i)
+ **** Sub-item 4 a) 1. ii)
+ ** Sub-item 4 b)
+ === Ordered Lists ===
+ * Item5
+ # Item1
+ # Item2
+ # Item3
+ # Item4
+ ## Sub-item 1
+ ### Sub-sub-item
+ #### Sub-sub-sub-item
+ ## Sub-item 2
+ # Item5
 
 wikipedia https://en.wikipedia.org/wiki/MediaWiki
  example

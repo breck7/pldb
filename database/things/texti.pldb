@@ -1,6 +1,21 @@
 title texti
+appeared 2017
 type textMarkup
+isPublicDomain true
+creators Gerald Bauer
+description The Best of Markdown, Wikipedia Markup, LaTeX & Friends - All Together Now
 website https://texti.github.io
-domainName texti.github.io
- awisRank
-  2022 11867823
+
+related markdown mediawiki
+
+example
+ = Markup language =
+ 
+ A '''markup language''' is a system for [[annotation|annotating]] a [[document]]
+ in a way that is [[Syntax (logic)|syntactically distinguishable]] from the
+ text.[^] The idea and terminology
+ evolved from the "marking up" of paper manuscripts, i.e., the revision
+ instructions by editors, traditionally written with a [[blue pencil (editing)|blue pencil]]
+ on authors' [[manuscript]]s.
+
+githubRepo https://github.com/texti/texti.github.io
