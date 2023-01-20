@@ -35,6 +35,12 @@ nginxConfigCode
        internal;
  }
 
+bashCode
+ vim /etc/nginx/mime.types
+ # Add line:
+ text/plain                            scroll;
+ systemctl reload nginx
+
 ## Deploying
 
 * Marconi is deployed using rsync.
