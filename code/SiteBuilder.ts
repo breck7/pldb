@@ -77,7 +77,7 @@ const benchmark: MethodDecorator = (
 const buildImportsFile = (filepath, varMap) => {
   writeIfChanged(
     filepath,
-    `importOnly\n` +
+    `importOnly\n\n` +
       Object.keys(varMap)
         .map(key => {
           let value = varMap[key]
@@ -91,12 +91,12 @@ const buildImportsFile = (filepath, varMap) => {
 
           value = value.toString()
 
-          if (value.includes("\n")) return `replace ${key} ${value}`
+          if (!value.includes("\n")) return `replace ${key} ${value}`
 
           return `replace ${key}
  ${value.replace(/\n/g, "\n ")}`
         })
-        .join("\n")
+        .join("\n\n")
   )
 }
 
@@ -245,19 +245,12 @@ class SiteBuilder {
     buildImportsFile(path.join(pagesDir, "acknowledgementsImports.scroll"), {
       WRITTEN_IN_TABLE: lodash
         .sortBy(writtenIn, "rank")
-        .map(
-          file =>
-            `<li><a href="../languages/${file.permalink}">${file.title}</a></li>`
-        )
-        .join(""),
+        .map(file => `- ${file.title}\n link ../languages/${file.permalink}`)
+        .join("\n"),
       PACKAGES_TABLE: npmPackages
-        .map(
-          s => `<li><a href="https://www.npmjs.com/package/${s}">${s}</a></li>`
-        )
-        .join(""),
-      SOURCES_TABLE: sources
-        .map(s => `<li><a href="https://${s}">${s}</a></li>`)
-        .join(""),
+        .map(s => `- ${s}\n https://www.npmjs.com/package/${s}`)
+        .join("\n"),
+      SOURCES_TABLE: sources.map(s => `- ${s}\n https://${s}`).join("\n"),
       CONTRIBUTORS_TABLE: JSON.parse(
         Disk.read(path.join(pagesDir, "contributors.json"))
       )
@@ -267,8 +260,8 @@ class SiteBuilder {
             item.login !== "breck7" &&
             item.login !== "pldbbot"
         )
-        .map(item => `<li><a href="${item.html_url}">${item.login}</a></li>`)
-        .join("")
+        .map(item => `- ${item.login}\n ${item.html_url}`)
+        .join("\n")
     })
   }
 
