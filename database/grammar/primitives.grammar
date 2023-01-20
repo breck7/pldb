@@ -17,6 +17,7 @@ codeCell
  highlightScope comment
 urlCell
  highlightScope constant.language
+ regex (ftp|https?)://.+
 keywordCell
  highlightScope keyword
 tokenCell
