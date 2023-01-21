@@ -2,9 +2,6 @@ importOnly
 
 replaceDefault BASE_URL 
 replaceDefault BUILD_URL https://build.pldb.com
-replaceDefault FACT_PRICE $10
-
-import buildLogImports.scroll
 
 description PLDB: a Programming Language Database. Build the next great programming language.
 git https://github.com/breck7/pldb
@@ -12,3 +9,5 @@ viewSourceBaseUrl https://github.com/breck7/pldb/blob/main/site/
 email feedback@pldb.com
 baseUrl https://pldb.com/
 import scrollExtensions.scroll
+
+replaceJs DAYS_SINCE_LAUNCH Math.floor(dayjs().diff(dayjs("2022-08-28"), "day", true))

@@ -29,12 +29,16 @@ groups index
 * This site is powered by information and software from so many people and organizations, a few of which are listed on the acknowledgements page.
  link acknowledgements.html acknowledgements
 
+replaceJs BUILT_ON_DAY dayjs().format("MM/DD/YYYY")
+
 ## Cloc Stats
 * Below are the cloc stats for the pldb repo as of BUILT_ON_DAY.
  link BASE_URL/languages/cloc.html cloc
  https://github.com/breck7/pldb pldb repo
 
 bash cd ..; cd ..; cloc --quiet --vcs git . --read-lang-def=code/clocLangs.txt
+
+replaceJs DAYS_ONLINE Math.floor(dayjs().diff(dayjs("2022-08-15"), "day", true))
 
 ## History
 * PLDB.com came online DAYS_ONLINE days ago. PLDB.com launched DAYS_SINCE_LAUNCH days ago. PLDB began as an anonymous Jekyll blog on November 18, 2017. The blog was migrated to Scroll and the name changed from CodeLani to PLDB on June 27, 2022.

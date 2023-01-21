@@ -149,19 +149,6 @@ class SiteBuilder {
 
   @benchmark
   @buildAll
-  buildBuildLogImportsCommand() {
-    buildImportsFile(path.join(siteFolder, "buildLogImports.scroll"), {
-      DAYS_ONLINE: Math.floor(dayjs().diff(dayjs("2022-08-15"), "day", true)),
-      DAYS_SINCE_LAUNCH: Math.floor(
-        dayjs().diff(dayjs("2022-08-28"), "day", true)
-      ),
-      BUILT_IN_YEAR: dayjs().format("YYYY"),
-      BUILT_ON_DAY: dayjs().format("MM/DD/YYYY")
-    })
-  }
-
-  @benchmark
-  @buildAll
   buildKeywordsImportsCommand() {
     const { keywordsTable } = pldbBase
     const { rows, langsWithKeywordsCount } = keywordsTable

@@ -1,6 +1,9 @@
 viewSource
 
 importOnly
+
+replaceJs BUILT_IN_YEAR dayjs().format("YYYY")
+
 stumpNoSnippet
  div
   class pldbFooter
