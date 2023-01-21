@@ -9,6 +9,8 @@ fileExtensions h m mm C
 country United States
 originCommunity Apple
 
+supersetOf c
+
 features
  hasStrings true
   "hello world"

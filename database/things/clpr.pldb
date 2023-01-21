@@ -4,6 +4,8 @@ type pl
 country Australia
 originCommunity Monash University
 
+supersetOf prolog
+
 example
  3*X + 4*Y - 2*Z = 8,
  X - 5*Y + Z = 10,

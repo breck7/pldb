@@ -4,6 +4,8 @@ type pl
 country United States
 originCommunity InterSystems
 
+supersetOf mumps
+
 features
  hasPrintDebugging true
  hasStrings true

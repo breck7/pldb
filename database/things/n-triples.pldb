@@ -4,7 +4,7 @@ type dataNotation
 country United States
 originCommunity World Wide Web Consortium
 
-related turtle
+subsetOf turtle
 
 example
  <http://www.w3.org/2001/sw/RDFCore/ntriples/> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> ↵

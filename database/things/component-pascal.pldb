@@ -4,6 +4,8 @@ type pl
 country Switzerland
 originCommunity www.oberon.ch
 
+supersetOf oberon-2
+
 features
  hasMultiLineComments true
   (* A comment
