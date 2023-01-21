@@ -1,9 +1,12 @@
 title S-expressions
 appeared 1960
 type dataNotation
-documentation https://dev-docs.kicad.org/en/components/sexpr/
+reference https://dev-docs.kicad.org/en/components/sexpr/
 
 related i-expressions bayer-expressions
+
+example
+ (x . y)
 
 wikipedia https://en.wikipedia.org/wiki/S-expression
  example

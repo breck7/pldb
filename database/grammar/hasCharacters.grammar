@@ -1,0 +1,5 @@
+hasCharactersNode
+ extends abstractFeatureNode
+ string title Characters
+ string pseudoExample char character = 'P';
+ string reference https://en.wikipedia.org/wiki/Character_(computing)

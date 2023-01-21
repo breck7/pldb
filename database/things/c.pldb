@@ -19,6 +19,8 @@ features
  hasRegularExpressionsSyntaxSugar false
  hasBooleans true
  hasConstructors false
+ hasCharacters true
+  char character = 'P';
  hasTernaryOperators true
   #include <stdio.h>
   int main(void) { printf("%d", 1 ? 1 : 0); }

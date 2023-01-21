@@ -14,6 +14,32 @@ features
  hasComments true
   ; A comment
  hasPrintDebugging true
+ hasPairs true
+  (foo . bar)
+ hasSymbols true
+  foo
+ hasCharacters true
+  \p
+  ; Characters that aren't letters may have longer names. For example the bell character, after which Bel is named, is
+  \bel
+ hasLists true
+  ; here is a list of a, b, and c:
+  (a . (b . (c . nil)))
+  ; can be written as
+  (a b c)
+ hasCaseInsensitiveIdentifiers false
+ hasStreams true
+ hasExpressions true
+  (+ 1 2)
+ hasFunctions true
+  (fn (x) (+ x 1))
+ hasBooleans true
+  ; The symbol nil represents falsity as well as the empty list.
+  ; The symbol t is the default representation for truth, but any object other than nil also counts as true. 
+ hasStrings true
+  (\h \e \l \l \o)
+  ; can also be represented as
+  "hello"
  hasSemanticIndentation false
  hasMacros true
   ; A macro is essentially a function that generates code. I would have 
