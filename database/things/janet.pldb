@@ -13,14 +13,12 @@ features
  hasComments true
  hasMultiLineComments false
  hasPrintDebugging true
-  (print "hello, world!")
  hasFloats true
  hasIntegers true
  hasBooleans true
  hasConditionals true
  hasLists true
  hasAssignment true
-  (def a 100)
  hasFunctions true
  
 example
