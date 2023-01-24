@@ -1,0 +1,16 @@
+title Marp
+type textMarkup
+description Presentations in markdown
+website https://marp.app/
+
+supersetOf markdown
+
+example
+ ---
+ theme: gaia
+ size: 4:3
+ ---
+ 
+ # A traditional 4:3 slide
+
+githubRepo https://github.com/marp-team/marp-core
