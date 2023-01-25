@@ -12,6 +12,63 @@ domainName pugjs.org
   2022 173271
 
 features
+ hasSemanticIndentation true
+ hasForEachLoops true
+  ul
+    each val in [1, 2, 3, 4, 5]
+      li= val
+ hasImports true
+  //- index.pug
+  doctype html
+  html
+    include includes/head.pug
+    body
+      h1 My Site
+      p Welcome to my super lame site.
+      include includes/foot.pug
+ hasConditionals true
+  - var user = {description: 'foo bar baz'}
+  - var authorised = false
+  #user
+    if user.description
+      h2.green Description
+      p.description= user.description
+    else if authorised
+      h2.blue Description
+      p.description.
+        User has no description,
+        why not add one...
+    else
+      h2.red Description
+      p.description User has no description
+ hasSwitch true
+  - var friends = 10
+  case friends
+    when 0
+      p you have no friends
+    when 1
+      p you have a friend
+    default
+      p you have #{friends} friends
+ hasFunctions true
+  mixin article(title)
+    .article
+      .article-wrapper
+        h1= title
+        if block
+          block
+        else
+          p No content provided
+  
+  +article('Hello world')
+  
+  +article('Hello world')
+    p This is my
+    p Amazing article
+ hasAssignment true
+  - var title = "On Dogs: Man's Best Friend";
+  
+  h1= title
  hasStrings true
  hasLineComments true
   // A comment
