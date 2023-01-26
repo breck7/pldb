@@ -5,11 +5,11 @@ import * as path from "path"
 import * as csv from "fast-csv"
 import * as ss from "simple-statistics"
 
-import { jtree } from "jtree"
+const { TreeNode } = require("jtree/products/TreeNode.js")
 import { PLDBFolder } from "../../Folder"
+const { Utils } = require("jtree/products/Utils.js")
 
 const lodash = require("lodash")
-const { TreeNode } = jtree
 const { Disk } = require("jtree/products/Disk.node.js")
 
 const pldbBase = PLDBFolder.getBase()
@@ -107,7 +107,4 @@ stackOverflowSurvey
 export { StackOverflowDeveloperSurveyImporter }
 
 if (!module.parent)
-  jtree.Utils.runCommand(
-    new StackOverflowDeveloperSurveyImporter(),
-    process.argv[2]
-  )
+  Utils.runCommand(new StackOverflowDeveloperSurveyImporter(), process.argv[2])

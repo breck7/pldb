@@ -4,8 +4,7 @@ import { PLDBFolder } from "../../Folder"
 
 const path = require("path")
 const dayjs = require("dayjs")
-const { jtree } = require("jtree")
-
+const { Utils } = require("jtree/products/Utils.js")
 const { Disk } = require("jtree/products/Disk.node.js")
 
 const pldbBase = PLDBFolder.getBase().loadFolder()
@@ -107,5 +106,4 @@ ${link}
 
 export { RedditImporter }
 
-if (!module.parent)
-  jtree.Utils.runCommand(new RedditImporter(), process.argv[2])
+if (!module.parent) Utils.runCommand(new RedditImporter(), process.argv[2])

@@ -3,8 +3,9 @@
 import { PLDBFolder } from "../../Folder"
 import { PLDBFile } from "../../File"
 import { PoliteCrawler, ensureDelimiterNotFound } from "../../utils"
-import { Utils, jtree } from "jtree"
 
+const { Utils } = require("jtree/products/Utils.js")
+const { TreeNode } = require("jtree/products/TreeNode.js")
 const superagent = require("superagent")
 const repoFirstCommit = require("repo-first-commit")
 const dayjs = require("dayjs")
@@ -125,7 +126,7 @@ class PLDBFileWithGitHub {
 			// todo: can monthly be annually?
 			console.log(id)
 			console.log(repositories.length)
-			const data = new jtree.TreeNode(repositories)
+			const data = new TreeNode(repositories)
 			data.forEach(row => {
 				row.delete("builtBy")
 				const desc = row.get("description")

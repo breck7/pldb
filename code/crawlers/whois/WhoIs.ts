@@ -3,7 +3,8 @@
 import { PLDBFolder } from "../../Folder"
 import { PLDBFile } from "../../File"
 
-import { jtree } from "jtree"
+const { TreeNode } = require("jtree/products/TreeNode.js")
+const { Utils } = require("jtree/products/Utils.js")
 
 const whois = require("whois-json")
 const lodash = require("lodash")
@@ -87,4 +88,4 @@ class WhoIsImporter {
 export { WhoIsImporter }
 
 if (!module.parent)
-  jtree.Utils.runCommand(new WhoIsImporter(), process.argv[2], process.argv[3])
+  Utils.runCommand(new WhoIsImporter(), process.argv[2], process.argv[3])

@@ -3,11 +3,9 @@
 import { PLDBFolder } from "../../Folder"
 import { PLDBFile } from "../../File"
 
-import { jtree } from "jtree"
-
+const { Utils } = require("jtree/products/Utils.js")
+const { TreeNode } = require("jtree/products/TreeNode.js")
 const lodash = require("lodash")
-
-const { TreeNode } = jtree
 
 const cacheDir = __dirname + "/cache/"
 const pldbBase = PLDBFolder.getBase().loadFolder()
@@ -116,5 +114,4 @@ class MonacoImporter {
 
 export { MonacoImporter }
 
-if (!module.parent)
-	jtree.Utils.runCommand(new MonacoImporter(), process.argv[2])
+if (!module.parent) Utils.runCommand(new MonacoImporter(), process.argv[2])

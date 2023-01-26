@@ -88,7 +88,7 @@ githubRepo https://github.com/elixir-lang/elixir</pre>`
 	}
 
 	async startCodeMirror() {
-		this.codeMirrorInstance = new jtree.TreeNotationCodeMirrorMode(
+		this.codeMirrorInstance = new GrammarCodeMirrorMode(
 			"custom",
 			() => pldbNode,
 			undefined,
@@ -154,7 +154,7 @@ githubRepo https://github.com/elixir-lang/elixir</pre>`
 	updateQuickLinks() {
 		const { content } = this
 		if (!content) return
-		const tree = new jtree.TreeNode(content)
+		const tree = new TreeNode(content)
 		const id = tree.get("title")
 		const references = tree
 			.findNodes("reference")

@@ -3,10 +3,9 @@
 import { PLDBFolder } from "../../Folder"
 import { PLDBFile } from "../../File"
 
-import { jtree } from "jtree"
-
-const { TreeNode } = jtree
+const { TreeNode } = require("jtree/products/TreeNode.js")
 const { Disk } = require("jtree/products/Disk.node.js")
+const { Utils } = require("jtree/products/Utils.js")
 const lodash = require("lodash")
 const path = require("path")
 const readline = require("readline")
@@ -97,5 +96,4 @@ class BigQueryImporter {
 
 export { BigQueryImporter }
 
-if (!module.parent)
-	jtree.Utils.runCommand(new BigQueryImporter(), process.argv[2])
+if (!module.parent) Utils.runCommand(new BigQueryImporter(), process.argv[2])

@@ -2,13 +2,13 @@
 
 import { PLDBFolder } from "../../Folder"
 import { PLDBFile } from "../../File"
-import { jtree } from "jtree"
+const { TreeNode } = require("jtree/products/TreeNode.js")
+const { Utils } = require("jtree/products/Utils.js")
 
 const lodash = require("lodash")
 const dayjs = require("dayjs")
 const path = require("path")
 const { Disk } = require("jtree/products/Disk.node.js")
-const { TreeNode } = jtree
 
 const cacheDir = __dirname + "/cache/"
 const pldbBase = PLDBFolder.getBase().loadFolder()
@@ -128,4 +128,4 @@ class PyplImporter {
 
 export { PyplImporter }
 
-if (!module.parent) jtree.Utils.runCommand(new PyplImporter(), process.argv[2])
+if (!module.parent) Utils.runCommand(new PyplImporter(), process.argv[2])

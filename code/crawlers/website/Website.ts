@@ -6,7 +6,8 @@ import { PLDBFolder } from "../../Folder"
 import { PLDBFile } from "../../File"
 import { getLinks } from "../../utils"
 
-import { jtree } from "jtree"
+const { Utils } = require("jtree/products/Utils.js")
+const { TreeNode } = require("jtree/products/TreeNode.js")
 
 const lodash = require("lodash")
 
@@ -127,8 +128,4 @@ class WebsiteImporter {
 export { WebsiteImporter }
 
 if (!module.parent)
-  jtree.Utils.runCommand(
-    new WebsiteImporter(),
-    process.argv[2],
-    process.argv[3]
-  )
+  Utils.runCommand(new WebsiteImporter(), process.argv[2], process.argv[3])

@@ -72,8 +72,7 @@ commaTable
  nimskull,Nimskull,2021,2034,
 
 comment
- const { jtree } = require("jtree")
- const { TreeNode } = jtree
+ const { TreeNode } = require("jtree/products/TreeNode.js")
  const { Disk } = require("jtree/products/Disk.node.js")
  
  const data = TreeNode.fromCsv(

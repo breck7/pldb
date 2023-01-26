@@ -19,11 +19,10 @@ code
 const tap = require("tap")
 const lodash = require("lodash")
 const path = require("path")
-const { jtree } = require("jtree")
-const { TreeNode } = jtree
 const grammarNode = require("jtree/products/grammar.nodejs.js")
 const { ScrollFolder, ScrollCli, ScrollFile } = require("scroll-cli")
 const { Disk } = require("jtree/products/Disk.node.js")
+const { TreeNode } = require("jtree/products/TreeNode.js")
 
 import { PLDBFolder } from "./Folder"
 import { getCleanedId } from "./utils"

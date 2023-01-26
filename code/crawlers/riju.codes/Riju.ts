@@ -3,8 +3,8 @@
 import { parse } from "yaml"
 import { PLDBFolder } from "../../Folder"
 
+const { Utils } = require("jtree/products/Utils.js")
 const { Disk } = require("jtree/products/Disk.node.js")
-const { jtree } = require("jtree")
 
 const pldbBase = PLDBFolder.getBase().loadFolder()
 
@@ -101,4 +101,4 @@ type ${type}`,
 
 export { RijuImporter }
 
-if (!module.parent) jtree.Utils.runCommand(new RijuImporter(), process.argv[2])
+if (!module.parent) Utils.runCommand(new RijuImporter(), process.argv[2])

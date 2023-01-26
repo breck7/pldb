@@ -3,8 +3,8 @@
 import { PLDBFolder } from "../../Folder"
 import { PLDBFile } from "../../File"
 
-import { jtree } from "jtree"
-
+const { TreeNode } = require("jtree/products/TreeNode.js")
+const { Utils } = require("jtree/products/Utils.js")
 const cacheDir = __dirname + "/cache/"
 const pldbBase = PLDBFolder.getBase().loadFolder()
 const { Disk } = require("jtree/products/Disk.node.js")
@@ -114,5 +114,4 @@ ${website}`)
 
 export { PygmentsImporter }
 
-if (!module.parent)
-	jtree.Utils.runCommand(new PygmentsImporter(), process.argv[2])
+if (!module.parent) Utils.runCommand(new PygmentsImporter(), process.argv[2])

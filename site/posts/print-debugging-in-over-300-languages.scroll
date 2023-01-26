@@ -154,7 +154,7 @@ comment
 comment
   printDebug() {
     pldbBase.loadFolder()
-    const code = new jtree.TreeNode(
+    const code = new TreeNode(
       Disk.read(
         __dirname + "/blog/posts/does-every-programming-language-support-print-debugging.scroll"
       )

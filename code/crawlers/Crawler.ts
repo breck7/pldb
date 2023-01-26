@@ -2,10 +2,11 @@
 
 import { PLDBFolder } from "../Folder"
 import { GitHubImporter } from "./github.com/GitHub"
-import { jtree } from "jtree"
 import { WhoIsImporter } from "./whois/WhoIs"
 import { WikipediaImporter } from "./wikipedia.org/Wikipedia"
 const { Disk } = require("jtree/products/Disk.node.js")
+const { TreeNode } = require("jtree/products/TreeNode.js")
+const { Utils } = require("jtree/products/Utils.js")
 
 const pldbBase = PLDBFolder.getBase().loadFolder()
 
@@ -41,7 +42,7 @@ class Crawler {
 
   importFromCsvCommand(path: string) {
     const content = Disk.read(path)
-    const rows = jtree.TreeNode.fromCsv(content)
+    const rows = TreeNode.fromCsv(content)
     const queryColumn = rows.nodeAt(0).getFirstWords()[0]
     rows.forEach(entry => {
       entry = entry.toObject()
@@ -344,4 +345,4 @@ ${end}`)
 export { Crawler }
 
 if (!module.parent)
-  jtree.Utils.runCommand(new Crawler(), process.argv[2], process.argv[3])
+  Utils.runCommand(new Crawler(), process.argv[2], process.argv[3])

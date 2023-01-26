@@ -2,11 +2,11 @@
 
 import { PLDBFolder } from "../../Folder"
 import { PLDBFile } from "../../File"
-import { jtree } from "jtree"
+const { TreeNode } = require("jtree/products/TreeNode.js")
+const { Utils } = require("jtree/products/Utils.js")
 
 const path = require("path")
 const { Disk } = require("jtree/products/Disk.node.js")
-const { TreeNode } = jtree
 
 const cacheDir = __dirname + "/cache/"
 const pldbBase = PLDBFolder.getBase().loadFolder()
@@ -118,4 +118,4 @@ class CompilerExplorerImporter {
 export { CompilerExplorerImporter }
 
 if (!module.parent)
-	jtree.Utils.runCommand(new CompilerExplorerImporter(), process.argv[2])
+	Utils.runCommand(new CompilerExplorerImporter(), process.argv[2])

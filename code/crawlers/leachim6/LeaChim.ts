@@ -3,9 +3,8 @@
 import { PLDBFolder } from "../../Folder"
 import { PLDBFile } from "../../File"
 
-import { jtree } from "jtree"
-
-const { TreeNode } = jtree
+const { Utils } = require("jtree/products/Utils.js")
+const { TreeNode } = require("jtree/products/TreeNode.js")
 
 const cacheDir = __dirname + "/cache/"
 const hwDir = cacheDir + "hello-world/"
@@ -96,5 +95,4 @@ code
 
 export { LeaChimImporter }
 
-if (!module.parent)
-	jtree.Utils.runCommand(new LeaChimImporter(), process.argv[2])
+if (!module.parent) Utils.runCommand(new LeaChimImporter(), process.argv[2])

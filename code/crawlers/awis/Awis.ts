@@ -4,8 +4,8 @@ import { PLDBFolder } from "../../Folder"
 import { PLDBFile } from "../../File"
 import { PoliteCrawler } from "../../utils"
 
-import { jtree } from "jtree"
-
+const { TreeNode } = require("jtree/products/TreeNode.js")
+const { Utils } = require("jtree/products/Utils.js")
 const { Disk } = require("jtree/products/Disk.node.js")
 const path = require("path")
 const awis = require("awis")
@@ -107,4 +107,4 @@ class AwisImporter {
 
 export { AwisImporter }
 
-if (!module.parent) jtree.Utils.runCommand(new AwisImporter(), process.argv[2])
+if (!module.parent) Utils.runCommand(new AwisImporter(), process.argv[2])

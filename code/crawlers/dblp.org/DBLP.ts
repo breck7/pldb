@@ -4,7 +4,9 @@ import { PoliteCrawler } from "../../utils"
 import { PLDBFolder } from "../../Folder"
 import { PLDBFile } from "../../File"
 const lodash = require("lodash")
-import { jtree } from "jtree"
+
+const { Utils } = require("jtree/products/Utils.js")
+const { TreeNode } = require("jtree/products/TreeNode.js")
 
 const { Disk } = require("jtree/products/Disk.node.js")
 
@@ -61,7 +63,7 @@ class DBLPFile {
       .getNode("dblp")
       .appendLineAndChildren(
         "publications",
-        new jtree.TreeNode(table.slice(0, 10)).toDelimited("|")
+        new TreeNode(table.slice(0, 10)).toDelimited("|")
       )
     file.prettifyAndSave()
   }
@@ -105,4 +107,4 @@ class DBLPImporter {
 
 export { DBLPImporter }
 
-if (!module.parent) jtree.Utils.runCommand(new DBLPImporter(), process.argv[2])
+if (!module.parent) Utils.runCommand(new DBLPImporter(), process.argv[2])

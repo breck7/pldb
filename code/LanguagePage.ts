@@ -12,8 +12,7 @@ const SVGS = {
   documentation: `<svg viewBox="0 0 500 500" xmlns="http://www.w3.org/2000/svg"><g transform="matrix(1, 0, 0, 1, 13.859316, 9.109739)"><g><g><path d="M340.732,0H55v485h375V94.518L340.732,0z M345,26.364L405.1,90H345V26.364z M415,470H70V15h260v90h85V470z"/><rect x="102.5" y="191" width="280" height="15"/><rect x="102.5" y="141" width="120" height="15"/><rect x="102.5" y="241" width="280" height="15"/><rect x="102.5" y="291" width="280" height="15"/><rect x="102.5" y="341" width="280" height="15"/><rect x="102.5" y="391" width="280" height="15"/></g></g></g></svg>`
 }
 
-import { jtree } from "jtree"
-const { TreeNode } = jtree
+const { TreeNode } = require("jtree/products/TreeNode.js")
 import { PLDBFile } from "./File"
 
 import {

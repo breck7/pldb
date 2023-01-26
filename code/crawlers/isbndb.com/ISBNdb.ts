@@ -4,11 +4,9 @@ import { PLDBFolder } from "../../Folder"
 import { PLDBFile } from "../../File"
 import { PoliteCrawler, getCleanedId } from "../../utils"
 
-import { jtree } from "jtree"
-
+const { Utils } = require("jtree/products/Utils.js")
+const { TreeNode } = require("jtree/products/TreeNode.js")
 const { Disk } = require("jtree/products/Disk.node.js")
-
-const { TreeNode } = jtree
 
 const cacheDir = __dirname + "/cache/"
 
@@ -154,5 +152,4 @@ class ISBNdbImporter {
 
 export { ISBNdbImporter }
 
-if (!module.parent)
-	jtree.Utils.runCommand(new ISBNdbImporter(), process.argv[2])
+if (!module.parent) Utils.runCommand(new ISBNdbImporter(), process.argv[2])
