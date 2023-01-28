@@ -234,6 +234,17 @@ class PLDBFolder extends TreeBaseFolder {
     return this.appendLineAndChildren(id, content)
   }
 
+  // todo: do this properly upstream in jtree
+  rename(oldId, newId) {
+    const content = this.getFile(oldId).childrenToString()
+    Disk.write(this.makeFilePath(newId), content)
+    this.delete(oldId)
+    this.filter(file => file.doesLinkTo(oldId)).forEach(file =>
+      file.updatePermalinks(oldId, newId)
+    )
+    this.appendLineAndChildren(newId, content)
+  }
+
   get exampleCounts() {
     const counts = new Map<string, number>()
     this.forEach(file => counts.set(file.id, file.exampleCount))

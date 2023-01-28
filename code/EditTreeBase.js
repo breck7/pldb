@@ -24,6 +24,10 @@ class EditTreeBaseCommands {
     })
   }
 
+  rename(oldId, newId) {
+    pldbBase.rename(oldId, newId)
+  }
+
   replaceListItems(field, replacementMap) {
     const keys = Object.keys(replacementMap)
     const delimiter = " && "
@@ -49,6 +53,8 @@ class EditTreeBaseCommands {
 }
 
 const commandRunner = new EditTreeBaseCommands()
+
+// commandRunner.rename("cpp", "cPlusPlus")
 
 // commandRunner.runFromArgs()
 // commandRunner.changeListDelimiterCommand("originCommunity", " && ")

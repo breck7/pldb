@@ -515,9 +515,29 @@ class PLDBFile extends TreeBaseFile {
       this.parsed
         .getTopDownArray()
         .filter(node => node.providesPermalinks)
-        .map(node => node.getWords().slice(1))
+        .map(node => node.getWordsFrom(1))
         .flat()
     )
+  }
+
+  doesLinkTo(id) {
+    return this.linksToOtherFiles.includes(id)
+  }
+
+  updatePermalinks(oldId, newId) {
+    this.parsed
+      .getTopDownArray()
+      .filter(node => node.providesPermalinks)
+      .map(node =>
+        node.setContent(
+          node
+            .getWordsFrom(1)
+            .map(word => (word === oldId ? newId : word))
+            .join(" ")
+        )
+      )
+    this.setChildren(this.parsed.childrenToString())
+    this.save()
   }
 
   @includeInCsv
