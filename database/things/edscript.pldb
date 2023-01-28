@@ -1,0 +1,15 @@
+title ed script
+type diffFormat
+description diff can produce commands that direct the ed text editor to change the first file into the second file. These are often called "ed scripts".
+
+related ed-editor
+
+example
+ a
+ ed is the standard Unix text editor.
+ This is line number two.
+ .
+ 2i
+   
+ .
+ ,l
