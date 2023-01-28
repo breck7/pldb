@@ -56,7 +56,6 @@ const getCleanedId = str =>
     .replace(/\&/g, "-n-")
     .replace(/[\+ ]/g, "-")
     .replace(/[^a-zA-Z0-9\-\.]/g, "")
-    .toLowerCase()
 
 // todo: move to grammar
 const isLanguage = type => {
