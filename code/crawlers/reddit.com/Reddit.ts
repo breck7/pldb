@@ -48,6 +48,7 @@ class RedditImporter {
     const cachePath = getCachePath(file)
     if (Disk.exists(cachePath)) return this
     const url = `https://www.reddit.com/subreddits/search.json?q=${file.subredditId}`
+    console.log(`downloading ${url}`)
     await Disk.downloadJson(url, cachePath)
   }
 
@@ -97,10 +98,8 @@ ${link}
     })
   }
 
-  fetchAllCommand() {
-    this.matches.forEach(file => {
-      this.fetchOne(file)
-    })
+  async fetchAllCommand() {
+    await Promise.all(this.matches.map(file => this.fetchOne(file)))
   }
 }
 
