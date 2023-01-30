@@ -78,6 +78,7 @@ node_modules/jtree/products/TreeNode.browser.js
 node_modules/jtree/products/GrammarLanguage.browser.js
 node_modules/jtree/products/GrammarCodeMirrorMode.browser.js
 pldb.browser.js
+tql.browser.js
 node_modules/jtree/sandbox/lib/codemirror.js
 node_modules/jtree/sandbox/lib/show-hint.js`
   .split("\n")
@@ -112,7 +113,7 @@ const scrollFooter = getFullyExpandedFile(
 class PLDBServer extends TreeBaseServer {
   constructor(folder) {
     super(folder)
-    this.compileGrammarForInBrowserCodeMirrorEditor()
+    this.compileGrammarsForCodeMirrorEditors()
     this.serveFolder(builtSiteFolder)
     this.serveFolder(__dirname)
     this.initSearch(ignoreFolder)
@@ -318,10 +319,23 @@ ${scrollFooter}
     ).html
   }
 
-  compileGrammarForInBrowserCodeMirrorEditor() {
+  compileGrammarsForCodeMirrorEditors() {
     // todo: cleanup
     GrammarCompiler.compileGrammarForBrowser(
       path.join(builtSiteFolder, "pldb.grammar"),
+      __dirname + "/",
+      false
+    )
+    GrammarCompiler.compileGrammarForBrowser(
+      path.join(
+        __dirname,
+        "..",
+        "node_modules",
+        "jtree",
+        "langs",
+        "tql",
+        "tql.grammar"
+      ),
       __dirname + "/",
       false
     )

@@ -211,6 +211,10 @@ li.scrollParagraphComponent {
 .tqlForm {
 }
 
+.tqlForm .CodeMirror {
+  display: inline-block;
+}
+
 .tqlForm textarea {
   height: 8em;
   width: 60ch;

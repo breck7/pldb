@@ -42,7 +42,29 @@ class TreeBaseFrontEndApp {
 		return defaultAuthor
 	}
 
+	startSearchPage() {
+		this.startTQLCodeMirror()
+	}
+
+	async startTQLCodeMirror() {
+		this.codeMirrorInstance = new GrammarCodeMirrorMode(
+			"custom",
+			() => tqlNode,
+			undefined,
+			CodeMirror
+		)
+			.register()
+			.fromTextAreaWithAutocomplete(document.getElementById("tqlInput"), {
+				lineWrapping: false,
+				lineNumbers: false,
+			})
+
+		this.codeMirrorInstance.setSize(400, 100)
+		// this.codeMirrorInstance.on("keyup", () => this._onCodeKeyUp())
+	}
+
 	start() {
+		if (this.route === "search") return this.startSearchPage()
 		if (document.getElementById("submitButton")) this.startForm()
 		if (this.route === "create") this.startCreateForm()
 
