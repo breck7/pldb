@@ -1,8 +1,8 @@
-const htmlEscaped = content => content.replace(/</g, "&lt;")
-const capitalizeFirstLetter = string =>
+const htmlEscaped = (content) => content.replace(/</g, "&lt;")
+const capitalizeFirstLetter = (string) =>
 	string.charAt(0).toUpperCase() + string.slice(1)
 // generate a random alpha numeric hash:
-const getRandomCharacters = length => {
+const getRandomCharacters = (length) => {
 	const characters =
 		"ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789"
 	let result = ""
@@ -21,7 +21,7 @@ const genDefaultAuthor = () => {
 		// make sure email address is not too long. i think 64 is the limit.
 		// so here length is max 45 + 7 + 4 + 4.
 		user = [region, platform, vendor]
-			.map(str => str.replace(/[^a-zA-Z]/g, "").substr(0, 15))
+			.map((str) => str.replace(/[^a-zA-Z]/g, "").substr(0, 15))
 			.join(".")
 	} catch (err) {
 		console.error(err)
@@ -42,7 +42,35 @@ class TreeBaseFrontEndApp {
 		return defaultAuthor
 	}
 
+	startSearchPage() {
+		this.startTQLCodeMirror()
+	}
+
+	async startTQLCodeMirror() {
+		this.codeMirrorInstance = new GrammarCodeMirrorMode(
+			"custom",
+			() => tqlNode,
+			undefined,
+			CodeMirror
+		)
+			.register()
+			.fromTextAreaWithAutocomplete(document.getElementById("tqlInput"), {
+				lineWrapping: false,
+				lineNumbers: false,
+			})
+
+		this.codeMirrorInstance.setSize(400, 100)
+		this.codeMirrorInstance.setValue(
+			(new URLSearchParams(window.location.search).get("q") || "").replace(
+				/\r/g,
+				""
+			)
+		)
+		// this.codeMirrorInstance.on("keyup", () => this._onCodeKeyUp())
+	}
+
 	start() {
+		if (this.route === "search") return this.startSearchPage()
 		if (document.getElementById("submitButton")) this.startForm()
 		if (this.route === "create") this.startCreateForm()
 
@@ -54,8 +82,9 @@ class TreeBaseFrontEndApp {
 			const base = "https://github.com/breck7/pldb/commit/"
 			document.getElementById(
 				"successLink"
-			).innerHTML = `<a target="_pldb" href="${base +
-				commit}">Success! Changes published as ${commit.substring(0, 7)}</a>`
+			).innerHTML = `<a target="_pldb" href="${
+				base + commit
+			}">Success! Changes published as ${commit.substring(0, 7)}</a>`
 		}
 		if (errorMessage)
 			document.getElementById("errorMessage").innerHTML = `Error: ${htmlEscaped(
@@ -66,7 +95,7 @@ class TreeBaseFrontEndApp {
 	}
 
 	startForm() {
-		Mousetrap.bind("mod+s", evt => {
+		Mousetrap.bind("mod+s", (evt) => {
 			document.getElementById("submitButton").click()
 			evt.preventDefault()
 			return false
@@ -97,7 +126,7 @@ githubRepo https://github.com/elixir-lang/elixir</pre>`
 			.register()
 			.fromTextAreaWithAutocomplete(document.getElementById("content"), {
 				lineWrapping: false,
-				lineNumbers: true
+				lineNumbers: true,
 			})
 
 		this.codeMirrorInstance.setSize(this.codeMirrorWidth, 500)
@@ -158,11 +187,11 @@ githubRepo https://github.com/elixir-lang/elixir</pre>`
 		const id = tree.get("title")
 		const references = tree
 			.findNodes("reference")
-			.map(node => "Reference: " + node.getContent())
+			.map((node) => "Reference: " + node.getContent())
 
 		const links = ["website", "githubRepo", "wikipedia"]
-			.filter(key => tree.has(key))
-			.map(key => `${capitalizeFirstLetter(key)}: ${tree.get(key)}`)
+			.filter((key) => tree.has(key))
+			.map((key) => `${capitalizeFirstLetter(key)}: ${tree.get(key)}`)
 
 		const permalink = this.route
 		document.getElementById("quickLinks").innerHTML =
@@ -185,7 +214,7 @@ DDG: https://duckduckgo.com/?q=${id}<br>`) +
 	}
 }
 
-document.addEventListener("DOMContentLoaded", function(event) {
+document.addEventListener("DOMContentLoaded", function (event) {
 	window.app = new TreeBaseFrontEndApp()
 	window.app.start()
 })
