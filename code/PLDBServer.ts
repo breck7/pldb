@@ -10,7 +10,10 @@ const { Utils } = require("jtree/products/Utils.js")
 const { GrammarCompiler } = require("jtree/products/GrammarCompiler.js")
 const { Disk } = require("jtree/products/Disk.node.js")
 const { ScrollFile, getFullyExpandedFile } = require("scroll-cli")
-const { SearchServer } = require("jtree/products/treeBaseServer.node.js")
+const {
+  SearchServer,
+  TreeBaseServer,
+} = require("jtree/products/treeBaseServer.node.js")
 
 import { PLDBFolder } from "./Folder"
 import { PLDBFile } from "./File"
@@ -44,7 +47,7 @@ html
  <div class="missingRecommendedColumns">${
    missingRecommendedColumns.length
      ? `<br><b>Missing columns:</b><br>${missingRecommendedColumns
-         .map(col => col.Column)
+         .map((col) => col.Column)
          .join("<br>")}`
      : ""
  }</div>
@@ -63,10 +66,11 @@ html
  <input type="submit" value="Save" id="submitButton" onClick="app.saveAuthorIfUnsaved()"/>
  </form>`
 
-const cssLibs = "node_modules/jtree/sandbox/lib/codemirror.css node_modules/jtree/sandbox/lib/codemirror.show-hint.css"
-  .split(" ")
-  .map(name => ` <link rel="stylesheet" type="text/css" href="/${name}" />`)
-  .join("\n")
+const cssLibs =
+  "node_modules/jtree/sandbox/lib/codemirror.css node_modules/jtree/sandbox/lib/codemirror.show-hint.css"
+    .split(" ")
+    .map((name) => ` <link rel="stylesheet" type="text/css" href="/${name}" />`)
+    .join("\n")
 
 const scripts = `treeBaseFrontEndApp.js
 node_modules/jtree/products/Utils.browser.js
@@ -77,7 +81,7 @@ pldb.browser.js
 node_modules/jtree/sandbox/lib/codemirror.js
 node_modules/jtree/sandbox/lib/show-hint.js`
   .split("\n")
-  .map(name => ` <script src="/${name}"></script>`)
+  .map((name) => ` <script src="/${name}"></script>`)
   .join("\n")
 
 const GIT_DEFAULT_USERNAME = "PLDBBot"
@@ -90,13 +94,10 @@ const parseGitAuthor = (field = GIT_DEFAULT_AUTHOR) => {
     .trim()
     .replace(/[^a-zA-Z \.]/g, "")
     .substr(0, 32)
-  const authorEmail = field
-    .split("<")[1]
-    .replace(">", "")
-    .trim()
+  const authorEmail = field.split("<")[1].replace(">", "").trim()
   return {
     authorName,
-    authorEmail
+    authorEmail,
   }
 }
 
@@ -108,34 +109,14 @@ const scrollFooter = getFullyExpandedFile(
   path.join(builtSiteFolder, "footer.scroll")
 ).code
 
-class TreeBaseServer {
+class PLDBServer extends TreeBaseServer {
   folder: PLDBFolder
   app: any
-  constructor() {
-    this.folder = PLDBFolder.getBase().loadFolder()
+  constructor(folder) {
+    super(folder, builtSiteFolder, ignoreFolder)
     this.compileGrammarForInBrowserCodeMirrorEditor()
 
-    const app = express()
-    this.app = app
-    app.use(bodyParser.urlencoded({ extended: false }))
-    app.use(bodyParser.json())
-    app.use((req: any, res: any, next: any) => {
-      res.setHeader("Access-Control-Allow-Origin", "*")
-      res.setHeader(
-        "Access-Control-Allow-Methods",
-        "GET, POST, OPTIONS, PUT, PATCH, DELETE"
-      )
-      res.setHeader(
-        "Access-Control-Allow-Headers",
-        "X-Requested-With,content-type"
-      )
-      res.setHeader("Access-Control-Allow-Credentials", true)
-      next()
-    })
-
-    app.use(express.static(__dirname))
-    app.use(express.static(builtSiteFolder))
-
+    const { app } = this
     app.get("/create", (req, res) =>
       res.send(this.scrollToHtml(editForm(undefined, "Add a language")))
     )
@@ -155,28 +136,6 @@ ${editForm(submission, "Error")}`
       res.status(500)
       return res.send(this.scrollToHtml(`* "${htmlEscaped(id)}" not found`))
     }
-
-    const searchServer = new SearchServer(this.folder as any)
-    const searchLogPath = path.join(ignoreFolder, "searchLog.tree")
-
-    const searchHTMLCache = {}
-    app.get("/search", (req, res) => {
-      const originalQuery = req.query.q ?? ""
-
-      searchServer.logQuery(searchLogPath, originalQuery, req.ip)
-
-      if (!searchHTMLCache[originalQuery])
-        searchHTMLCache[originalQuery] = this.scrollToHtml(
-          searchServer.search(
-            originalQuery,
-            "html",
-            ["pldbId", "title", "type", "appeared", "creators"],
-            "pldbId"
-          )
-        )
-
-      res.send(searchHTMLCache[originalQuery])
-    })
 
     app.get("/edit/:id", (req, res) => {
       const { id } = req.params
@@ -267,30 +226,21 @@ ${editForm(submission, "Error")}`
       if (!commitResult.success)
         return {
           success: false,
-          redirectUrl: `edit/${newFile.id}#errorMessage=${commitResult.error.message}`
+          redirectUrl: `edit/${newFile.id}#errorMessage=${commitResult.error.message}`,
         }
 
       this.reloadNeeded()
 
       return {
         success: true,
-        redirectUrl: `edit/${newFile.id}#commit=${commitResult.commitHash}`
+        redirectUrl: `edit/${newFile.id}#commit=${commitResult.commitHash}`,
       }
     } catch (error) {
       console.error(error)
       return {
-        error
+        error,
       }
     }
-  }
-
-  listen(port = 4444) {
-    this.app.listen(port, () =>
-      console.log(
-        `TreeBaseServer server running: \ncmd+dblclick: http://localhost:${port}/`
-      )
-    )
-    return this
   }
 
   validateSubmission(content: string, fileBeingEdited?: PLDBFile) {
@@ -309,7 +259,7 @@ ${editForm(submission, "Error")}`
     if (errs.length > 3)
       throw new Error(
         `Too many errors detected in submission: ${JSON.stringify(
-          errs.map(err => err.toObject())
+          errs.map((err) => err.toObject())
         )}`
       )
 
@@ -317,7 +267,7 @@ ${editForm(submission, "Error")}`
     if (scopeErrors.length > 3)
       throw new Error(
         `Too many scope errors detected in submission: ${JSON.stringify(
-          scopeErrors.map(err => err.toObject())
+          scopeErrors.map((err) => err.toObject())
         )}`
       )
 
@@ -325,7 +275,7 @@ ${editForm(submission, "Error")}`
       throw new Error(`Must provide at least 3 facts about the language.`)
 
     return {
-      content: this.folder.prettifyContent(content)
+      content: this.folder.prettifyContent(content),
     }
   }
 
@@ -387,8 +337,8 @@ ${scrollFooter}
         // specify `author=` in every command. See https://stackoverflow.com/q/29685337/10670163 for example.
         config: [
           `user.name='${GIT_DEFAULT_USERNAME}'`,
-          `user.email='${GIT_DEFAULT_EMAIL}'`
-        ]
+          `user.email='${GIT_DEFAULT_EMAIL}'`,
+        ],
       })
     return this._git
   }
@@ -405,7 +355,7 @@ ${scrollFooter}
       )
       return {
         success: true,
-        commitHash: `pretendCommitHash`
+        commitHash: `pretendCommitHash`,
       }
     }
     const { git } = this
@@ -420,7 +370,7 @@ ${scrollFooter}
 
       await git.add(filename)
       const commitResult = await git.commit(commitMessage, filename, {
-        "--author": `${authorName} <${authorEmail}>`
+        "--author": `${authorName} <${authorEmail}>`,
       })
 
       await this.git.pull("origin", "main")
@@ -431,13 +381,13 @@ ${scrollFooter}
 
       return {
         success: true,
-        commitHash
+        commitHash,
       }
     } catch (error) {
       console.error(error)
       return {
         success: false,
-        error
+        error,
       }
     }
   }
@@ -462,42 +412,23 @@ ${scrollFooter}
   listenProd() {
     this.gitOn = true
     this.isProd = true
-    const key = fs.readFileSync(path.join(ignoreFolder, "privkey.pem"))
-    const cert = fs.readFileSync(path.join(ignoreFolder, "fullchain.pem"))
-    https
-      .createServer(
-        {
-          key,
-          cert
-        },
-        this.app
-      )
-      .listen(443)
-
-    const redirectApp = express()
-    redirectApp.use((req, res) =>
-      res.redirect(301, `https://${req.headers.host}${req.url}`)
-    )
-    redirectApp.listen(80, () => console.log(`Running redirect app`))
-    return this
+    return super.listenProd()
   }
 }
 
-class TreeBaseServerCommands {
+class PLDBServerCommands {
+  server = new (<any>PLDBServer)(PLDBFolder.getBase().loadFolder())
+
   startDevServerCommand(port) {
-    new TreeBaseServer().listen(port)
+    this.server.listen(port)
   }
 
   startProdServerCommand() {
-    new TreeBaseServer().listenProd()
+    this.server.listenProd()
   }
 }
 
-export { TreeBaseServer }
+export { PLDBServer }
 
 if (!module.parent)
-  Utils.runCommand(
-    new TreeBaseServerCommands(),
-    process.argv[2],
-    process.argv[3]
-  )
+  Utils.runCommand(new PLDBServerCommands(), process.argv[2], process.argv[3])
