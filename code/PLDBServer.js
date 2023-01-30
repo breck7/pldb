@@ -12,7 +12,7 @@ const { Disk } = require("jtree/products/Disk.node.js")
 const { ScrollFile, getFullyExpandedFile } = require("scroll-cli")
 const {
   SearchServer,
-  TreeBaseServer,
+  TreeBaseServer
 } = require("jtree/products/treeBaseServer.node.js")
 
 const { PLDBFolder } = require("./Folder")
@@ -47,7 +47,7 @@ html
  <div class="missingRecommendedColumns">${
    missingRecommendedColumns.length
      ? `<br><b>Missing columns:</b><br>${missingRecommendedColumns
-         .map((col) => col.Column)
+         .map(col => col.Column)
          .join("<br>")}`
      : ""
  }</div>
@@ -66,11 +66,10 @@ html
  <input type="submit" value="Save" id="submitButton" onClick="app.saveAuthorIfUnsaved()"/>
  </form>`
 
-const cssLibs =
-  "node_modules/jtree/sandbox/lib/codemirror.css node_modules/jtree/sandbox/lib/codemirror.show-hint.css"
-    .split(" ")
-    .map((name) => ` <link rel="stylesheet" type="text/css" href="/${name}" />`)
-    .join("\n")
+const cssLibs = "node_modules/jtree/sandbox/lib/codemirror.css node_modules/jtree/sandbox/lib/codemirror.show-hint.css"
+  .split(" ")
+  .map(name => ` <link rel="stylesheet" type="text/css" href="/${name}" />`)
+  .join("\n")
 
 const scripts = `treeBaseFrontEndApp.js
 node_modules/jtree/products/Utils.browser.js
@@ -82,7 +81,7 @@ tql.browser.js
 node_modules/jtree/sandbox/lib/codemirror.js
 node_modules/jtree/sandbox/lib/show-hint.js`
   .split("\n")
-  .map((name) => ` <script src="/${name}"></script>`)
+  .map(name => ` <script src="/${name}"></script>`)
   .join("\n")
 
 const GIT_DEFAULT_USERNAME = "PLDBBot"
@@ -95,10 +94,13 @@ const parseGitAuthor = (field = GIT_DEFAULT_AUTHOR) => {
     .trim()
     .replace(/[^a-zA-Z \.]/g, "")
     .substr(0, 32)
-  const authorEmail = field.split("<")[1].replace(">", "").trim()
+  const authorEmail = field
+    .split("<")[1]
+    .replace(">", "")
+    .trim()
   return {
     authorName,
-    authorEmail,
+    authorEmail
   }
 }
 
@@ -228,19 +230,19 @@ ${editForm(submission, "Error")}`
       if (!commitResult.success)
         return {
           success: false,
-          redirectUrl: `edit/${newFile.id}#errorMessage=${commitResult.error.message}`,
+          redirectUrl: `edit/${newFile.id}#errorMessage=${commitResult.error.message}`
         }
 
       this.reloadNeeded()
 
       return {
         success: true,
-        redirectUrl: `edit/${newFile.id}#commit=${commitResult.commitHash}`,
+        redirectUrl: `edit/${newFile.id}#commit=${commitResult.commitHash}`
       }
     } catch (error) {
       console.error(error)
       return {
-        error,
+        error
       }
     }
   }
@@ -261,7 +263,7 @@ ${editForm(submission, "Error")}`
     if (errs.length > 3)
       throw new Error(
         `Too many errors detected in submission: ${JSON.stringify(
-          errs.map((err) => err.toObject())
+          errs.map(err => err.toObject())
         )}`
       )
 
@@ -269,7 +271,7 @@ ${editForm(submission, "Error")}`
     if (scopeErrors.length > 3)
       throw new Error(
         `Too many scope errors detected in submission: ${JSON.stringify(
-          scopeErrors.map((err) => err.toObject())
+          scopeErrors.map(err => err.toObject())
         )}`
       )
 
@@ -277,7 +279,7 @@ ${editForm(submission, "Error")}`
       throw new Error(`Must provide at least 3 facts about the language.`)
 
     return {
-      content: this.folder.prettifyContent(content),
+      content: this.folder.prettifyContent(content)
     }
   }
 
@@ -363,8 +365,8 @@ ${scrollFooter}
         // specify `author=` in every command. See https://stackoverflow.com/q/29685337/10670163 for example.
         config: [
           `user.name='${GIT_DEFAULT_USERNAME}'`,
-          `user.email='${GIT_DEFAULT_EMAIL}'`,
-        ],
+          `user.email='${GIT_DEFAULT_EMAIL}'`
+        ]
       })
     return this._git
   }
@@ -381,7 +383,7 @@ ${scrollFooter}
       )
       return {
         success: true,
-        commitHash: `pretendCommitHash`,
+        commitHash: `pretendCommitHash`
       }
     }
     const { git } = this
@@ -396,7 +398,7 @@ ${scrollFooter}
 
       await git.add(filename)
       const commitResult = await git.commit(commitMessage, filename, {
-        "--author": `${authorName} <${authorEmail}>`,
+        "--author": `${authorName} <${authorEmail}>`
       })
 
       await this.git.pull("origin", "main")
@@ -407,13 +409,13 @@ ${scrollFooter}
 
       return {
         success: true,
-        commitHash,
+        commitHash
       }
     } catch (error) {
       console.error(error)
       return {
         success: false,
-        error,
+        error
       }
     }
   }
@@ -438,7 +440,7 @@ ${scrollFooter}
   listenProd() {
     this.gitOn = true
     this.isProd = true
-    return super.listenProd()
+    return super.listenProd(ignoreFolder)
   }
 }
 
