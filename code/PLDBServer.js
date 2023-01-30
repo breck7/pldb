@@ -15,10 +15,11 @@ const {
   TreeBaseServer,
 } = require("jtree/products/treeBaseServer.node.js")
 
-import { PLDBFolder } from "./Folder"
-import { PLDBFile } from "./File"
-import { lastCommitHashInFolder, htmlEscaped, isValidEmail } from "./utils"
-import simpleGit, { SimpleGit } from "simple-git"
+const { PLDBFolder } = require("./Folder")
+const { PLDBFile } = require("./File")
+const { lastCommitHashInFolder, htmlEscaped, isValidEmail } = require("./utils")
+const { PLDBFile } = require("./File")
+const simpleGit = require("simple-git")
 
 const baseFolder = path.join(__dirname, "..")
 const ignoreFolder = path.join(baseFolder, "ignore")
@@ -110,8 +111,8 @@ const scrollFooter = getFullyExpandedFile(
 ).code
 
 class PLDBServer extends TreeBaseServer {
-  folder: PLDBFolder
-  app: any
+  folder
+  app
   constructor(folder) {
     super(folder, builtSiteFolder, ignoreFolder)
     this.compileGrammarForInBrowserCodeMirrorEditor()
@@ -243,7 +244,7 @@ ${editForm(submission, "Error")}`
     }
   }
 
-  validateSubmission(content: string, fileBeingEdited?: PLDBFile) {
+  validateSubmission(content, fileBeingEdited) {
     // Run some simple sanity checks.
     if (content.length > 200000) throw new Error(`Submission too large`)
 
@@ -326,8 +327,8 @@ ${scrollFooter}
     )
   }
 
-  private _git?: SimpleGit
-  private get git() {
+  _git
+  get git() {
     if (!this._git)
       this._git = simpleGit({
         baseDir: this.folder.dir,
@@ -343,11 +344,11 @@ ${scrollFooter}
     return this._git
   }
 
-  private async commitFilePullAndPush(
-    filename: string,
-    commitMessage: string,
-    authorName: string,
-    authorEmail: string
+  async commitFilePullAndPush(
+    filename,
+    commitMessage,
+    authorName,
+    authorEmail
   ) {
     if (!this.gitOn) {
       console.log(
@@ -417,7 +418,7 @@ ${scrollFooter}
 }
 
 class PLDBServerCommands {
-  server = new (<any>PLDBServer)(PLDBFolder.getBase().loadFolder())
+  server = new PLDBServer(PLDBFolder.getBase().loadFolder())
 
   startDevServerCommand(port) {
     this.server.listen(port)

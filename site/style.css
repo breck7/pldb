@@ -208,6 +208,23 @@ li.scrollParagraphComponent {
   color: #000;
 }
 
+.tqlSearchForm {
+}
+
+.tqlSearchForm .tqlSearchInput {
+  height: 8em;
+  width: 60ch;
+  border: 0;
+}
+
+.tqlSearchForm .tqlSearchButton {
+  height: 8em;
+  vertical-align: top;
+  width: 16em;
+  border: 0;
+  cursor: pointer;
+}
+
 .treeBaseSearchFormPadded {
   margin-top: 10px;
   margin-bottom: 10px;
