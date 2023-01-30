@@ -18,7 +18,6 @@ const {
 const { PLDBFolder } = require("./Folder")
 const { PLDBFile } = require("./File")
 const { lastCommitHashInFolder, htmlEscaped, isValidEmail } = require("./utils")
-const { PLDBFile } = require("./File")
 const simpleGit = require("simple-git")
 
 const baseFolder = path.join(__dirname, "..")
@@ -111,11 +110,12 @@ const scrollFooter = getFullyExpandedFile(
 ).code
 
 class PLDBServer extends TreeBaseServer {
-  folder
-  app
   constructor(folder) {
-    super(folder, builtSiteFolder, ignoreFolder)
+    super(folder)
     this.compileGrammarForInBrowserCodeMirrorEditor()
+    this.serveFolder(builtSiteFolder)
+    this.serveFolder(__dirname)
+    this.initSearch(ignoreFolder)
 
     const { app } = this
     app.get("/create", (req, res) =>
@@ -429,7 +429,7 @@ class PLDBServerCommands {
   }
 }
 
-export { PLDBServer }
+module.exports = { PLDBServer }
 
 if (!module.parent)
   Utils.runCommand(new PLDBServerCommands(), process.argv[2], process.argv[3])

@@ -208,16 +208,16 @@ li.scrollParagraphComponent {
   color: #000;
 }
 
-.tqlSearchForm {
+.tqlForm {
 }
 
-.tqlSearchForm .tqlSearchInput {
+.tqlForm textarea {
   height: 8em;
   width: 60ch;
   border: 0;
 }
 
-.tqlSearchForm .tqlSearchButton {
+.tqlForm input {
   height: 8em;
   vertical-align: top;
   width: 16em;
