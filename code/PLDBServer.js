@@ -320,22 +320,33 @@ ${scrollFooter}
   }
 
   compileGrammarsForCodeMirrorEditors() {
+    const { folder } = this
+
     // todo: cleanup
     GrammarCompiler.compileGrammarForBrowser(
       path.join(builtSiteFolder, "pldb.grammar"),
       __dirname + "/",
       false
     )
+
+    const tqlPath = path.join(
+      __dirname,
+      "..",
+      "node_modules",
+      "jtree",
+      "langs",
+      "tql",
+      "tql.grammar"
+    )
+    const tqlGrammar = new TreeNode(Disk.read(tqlPath))
+    const columnNames = Object.keys(
+      folder.grammarDef.getFirstWordMapWithDefinitions()
+    )
+    tqlGrammar.getNode("columnNameCell").set("enum", columnNames.join(" "))
+    const combinedPath = path.join(ignoreFolder, "pldbTql.grammar")
+    Disk.write(combinedPath, tqlGrammar.toString())
     GrammarCompiler.compileGrammarForBrowser(
-      path.join(
-        __dirname,
-        "..",
-        "node_modules",
-        "jtree",
-        "langs",
-        "tql",
-        "tql.grammar"
-      ),
+      combinedPath,
       __dirname + "/",
       false
     )
