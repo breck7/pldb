@@ -335,7 +335,7 @@ import ../footer.scroll
 
     if (!image) return ""
 
-    return `openGraphImage image
+    return `openGraphImage ${image}
 image ${image.replace("https://pldb.com/", "../")}
  caption ${caption}`
   }
