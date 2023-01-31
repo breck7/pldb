@@ -2,8 +2,11 @@ title Simple Binary Encoding
 type pl
 description SBE is an OSI layer 6 presentation for encoding and decoding binary application messages for low-latency financial applications. This repository contains the reference implementations in Java, C++, Golang, C#, and Rust
 website https://github.com/real-logic/simple-binary-encoding
-documentation https://github.com/real-logic/simple-binary-encoding
+documentation https://github.com/real-logic/simple-binary-encoding/wiki
+reference https://github.com/real-logic/simple-binary-encoding
 originCommunity https://github.com/FIXTradingCommunity/fix-simple-binary-encoding
 
 related python java rust
-summary SBE is an OSI layer 6 presentation for encoding and decoding binary application messages for low-latency financial applications. 
+
+officialBlogUrl https://github.com/real-logic/simple-binary-encoding/wiki/Blogs-and-Announcements
+releaseNotesUrl https://github.com/real-logic/simple-binary-encoding/wiki/Change-Log
