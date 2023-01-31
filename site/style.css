@@ -211,6 +211,11 @@ li.scrollParagraphComponent {
 .tqlForm {
 }
 
+#tqlErrors {
+  font-size: 10px;
+  color: #333;
+}
+
 .tqlForm .CodeMirror {
   display: inline-block;
 }

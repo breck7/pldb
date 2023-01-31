@@ -41,6 +41,7 @@ html
    /\n/g,
    "\n "
  )}</textarea>
+ <div id="tqlErrors"></div> <!-- todo: cleanup. -->
  </div>
  <div class="cell">
  <div id="quickLinks"></div>

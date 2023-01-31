@@ -1,8 +1,8 @@
-const htmlEscaped = (content) => content.replace(/</g, "&lt;")
-const capitalizeFirstLetter = (string) =>
+const htmlEscaped = content => content.replace(/</g, "&lt;")
+const capitalizeFirstLetter = string =>
 	string.charAt(0).toUpperCase() + string.slice(1)
 // generate a random alpha numeric hash:
-const getRandomCharacters = (length) => {
+const getRandomCharacters = length => {
 	const characters =
 		"ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789"
 	let result = ""
@@ -21,7 +21,7 @@ const genDefaultAuthor = () => {
 		// make sure email address is not too long. i think 64 is the limit.
 		// so here length is max 45 + 7 + 4 + 4.
 		user = [region, platform, vendor]
-			.map((str) => str.replace(/[^a-zA-Z]/g, "").substr(0, 15))
+			.map(str => str.replace(/[^a-zA-Z]/g, "").substr(0, 15))
 			.join(".")
 	} catch (err) {
 		console.error(err)
@@ -47,6 +47,7 @@ class TreeBaseFrontEndApp {
 	}
 
 	async startTQLCodeMirror() {
+		this.programCompiler = tqlNode
 		this.codeMirrorInstance = new GrammarCodeMirrorMode(
 			"custom",
 			() => tqlNode,
@@ -56,7 +57,7 @@ class TreeBaseFrontEndApp {
 			.register()
 			.fromTextAreaWithAutocomplete(document.getElementById("tqlInput"), {
 				lineWrapping: false,
-				lineNumbers: false,
+				lineNumbers: false
 			})
 
 		this.codeMirrorInstance.setSize(400, 100)
@@ -66,7 +67,21 @@ class TreeBaseFrontEndApp {
 				""
 			)
 		)
-		// this.codeMirrorInstance.on("keyup", () => this._onCodeKeyUp())
+		this.codeMirrorInstance.on("keyup", () => this._onCodeKeyUp())
+	}
+
+	_onCodeKeyUp() {
+		const { codeMirrorInstance } = this
+		const code = codeMirrorInstance.getValue()
+		if (this._code === code) return
+		this._code = code
+		this.program = new this.programCompiler(code)
+		const errs = this.program.getAllErrors()
+
+		const errMessage = errs.length
+			? errs.map(err => err.getMessage()).join(" ")
+			: "&nbsp;"
+		document.getElementById("tqlErrors").innerHTML = errMessage
 	}
 
 	start() {
@@ -82,9 +97,8 @@ class TreeBaseFrontEndApp {
 			const base = "https://github.com/breck7/pldb/commit/"
 			document.getElementById(
 				"successLink"
-			).innerHTML = `<a target="_pldb" href="${
-				base + commit
-			}">Success! Changes published as ${commit.substring(0, 7)}</a>`
+			).innerHTML = `<a target="_pldb" href="${base +
+				commit}">Success! Changes published as ${commit.substring(0, 7)}</a>`
 		}
 		if (errorMessage)
 			document.getElementById("errorMessage").innerHTML = `Error: ${htmlEscaped(
@@ -95,14 +109,14 @@ class TreeBaseFrontEndApp {
 	}
 
 	startForm() {
-		Mousetrap.bind("mod+s", (evt) => {
+		Mousetrap.bind("mod+s", evt => {
 			document.getElementById("submitButton").click()
 			evt.preventDefault()
 			return false
 		})
 		this.updateAuthor()
 		this.updateQuickLinks()
-		this.startCodeMirror()
+		this.startPLDBCodeMirror()
 	}
 
 	startCreateForm() {
@@ -116,7 +130,8 @@ website https://elixir-lang.org/
 githubRepo https://github.com/elixir-lang/elixir</pre>`
 	}
 
-	async startCodeMirror() {
+	async startPLDBCodeMirror() {
+		this.programCompiler = pldbNode
 		this.codeMirrorInstance = new GrammarCodeMirrorMode(
 			"custom",
 			() => pldbNode,
@@ -126,11 +141,11 @@ githubRepo https://github.com/elixir-lang/elixir</pre>`
 			.register()
 			.fromTextAreaWithAutocomplete(document.getElementById("content"), {
 				lineWrapping: false,
-				lineNumbers: true,
+				lineNumbers: true
 			})
 
 		this.codeMirrorInstance.setSize(this.codeMirrorWidth, 500)
-		// this.codeMirrorInstance.on("keyup", () => this._onCodeKeyUp())
+		this.codeMirrorInstance.on("keyup", () => this._onCodeKeyUp())
 	}
 
 	get codeMirrorWidth() {
@@ -187,11 +202,11 @@ githubRepo https://github.com/elixir-lang/elixir</pre>`
 		const id = tree.get("title")
 		const references = tree
 			.findNodes("reference")
-			.map((node) => "Reference: " + node.getContent())
+			.map(node => "Reference: " + node.getContent())
 
 		const links = ["website", "githubRepo", "wikipedia"]
-			.filter((key) => tree.has(key))
-			.map((key) => `${capitalizeFirstLetter(key)}: ${tree.get(key)}`)
+			.filter(key => tree.has(key))
+			.map(key => `${capitalizeFirstLetter(key)}: ${tree.get(key)}`)
 
 		const permalink = this.route
 		document.getElementById("quickLinks").innerHTML =
@@ -214,7 +229,7 @@ DDG: https://duckduckgo.com/?q=${id}<br>`) +
 	}
 }
 
-document.addEventListener("DOMContentLoaded", function (event) {
+document.addEventListener("DOMContentLoaded", function(event) {
 	window.app = new TreeBaseFrontEndApp()
 	window.app.start()
 })
