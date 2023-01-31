@@ -324,6 +324,8 @@ ${scrollFooter}
 
   compileGrammarsForCodeMirrorEditors() {
     const { folder } = this
+    const { csvBuildOutput } = folder
+    const { colNamesForCsv } = csvBuildOutput
 
     // todo: cleanup
     GrammarCompiler.compileGrammarForBrowser(
@@ -342,10 +344,8 @@ ${scrollFooter}
       "tql.grammar"
     )
     const tqlGrammar = new TreeNode(Disk.read(tqlPath))
-    const columnNames = Object.keys(
-      folder.grammarDef.getFirstWordMapWithDefinitions()
-    )
-    tqlGrammar.getNode("columnNameCell").set("enum", columnNames.join(" "))
+
+    tqlGrammar.getNode("columnNameCell").set("enum", colNamesForCsv.join(" "))
     const combinedPath = path.join(ignoreFolder, "pldbTql.grammar")
     Disk.write(combinedPath, tqlGrammar.toString())
     GrammarCompiler.compileGrammarForBrowser(
