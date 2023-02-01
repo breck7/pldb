@@ -1,0 +1,21 @@
+title TQL
+appeared 2023
+creators Breck Yunits
+description A language for querying TreeBases.
+standsFor Tree Query Language
+
+writtenIn grammar javascript
+influencedBy sql
+
+features
+ hasSemanticIndentation true
+ hasBuiltInRegex true
+
+example
+ where appeared > 2009
+ where appeared < 2020
+ notMissing githubRepo.stars
+ where type = pl
+ sortBy githubRepo.stars
+ select githubRepo.stars
+ reverse
