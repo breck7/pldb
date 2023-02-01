@@ -76,7 +76,7 @@ linguistGrammarRepo https://github.com/pchaigno/sublime-aspectj
   
   import org.aspectj.lang.JoinPoint;
   
-  import com.blogspot.miguelinlas3.aspectj.cache.marker.Cachable;
+  import com.blogspot.miguelinlas3.aspectj.cache.marker.Cacheable;
   
   /**
    * This simple aspect simulates the behaviour of a very simple cache
@@ -86,11 +86,11 @@ linguistGrammarRepo https://github.com/pchaigno/sublime-aspectj
    */
   public aspect CacheAspect {
   
-  	public pointcut cache(Cachable cachable): execution(@Cachable * * (..)) && @annotation(cachable);
+  	public pointcut cache(Cacheable cacheable): execution(@Cacheable * * (..)) && @annotation(cacheable);
   	
-  	Object around(Cachable cachable): cache(cachable){
+  	Object around(Cacheable cacheable): cache(cacheable){
   	
-  		String evaluatedKey = this.evaluateKey(cachable.scriptKey(), thisJoinPoint);
+  		String evaluatedKey = this.evaluateKey(cacheable.scriptKey(), thisJoinPoint);
   		
   		if(cache.containsKey(evaluatedKey)){
   			System.out.println("Cache hit for key " + evaluatedKey);
@@ -98,13 +98,13 @@ linguistGrammarRepo https://github.com/pchaigno/sublime-aspectj
   		}
   		
   		System.out.println("Cache miss for key " + evaluatedKey);
-  		Object value = proceed(cachable);
+  		Object value = proceed(cacheable);
   		cache.put(evaluatedKey, value);
   		return value;
   	}
   	
   	protected String evaluateKey(String key, JoinPoint joinPoint) {
-  		// TODO add some smart staff to allow simple scripting in @Cachable annotation
+  		// TODO add some smart staff to allow simple scripting in @Cacheable annotation
   		return key;
   	}
   	
