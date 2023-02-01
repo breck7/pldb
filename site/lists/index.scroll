@@ -2,14 +2,10 @@ import header.scroll
 html <div class="singleColumn">
 title Lists
 
-pipeTable
+table |
  List|ListLink
- Top 1,000 Programmming Languages|./top1000.html
- Language Features|./features.html
- Programming Language Creators|./creators.html
  Keywords|./keywords.html
  File Extensions|./extensions.html
- Programming Language Conference Calendar|./calendar.html
  Other Resources|./resources.html
 
 import singleColumnFooter.scroll
