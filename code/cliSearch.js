@@ -1,8 +1,7 @@
 #!/usr/bin/env node
 
-import { PLDBFolder } from "./Folder"
+const { PLDBFolder } = require("./Folder")
 const { SearchServer } = require("jtree/products/treeBaseServer.node.js")
 
 const folder = PLDBFolder.getBase().loadFolder()
-
-new SearchServer(folder).search(process.argv.slice(2).join(" "), "csv")
+console.log(new SearchServer(folder).csv(process.argv.slice(2).join(" ")))

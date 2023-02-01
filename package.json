@@ -6,7 +6,7 @@
     "test": "./code/test.js",
     "build": "chmod +x ./code/SiteBuilder.js; ./code/SiteBuilder.js buildAll",
     "open": "open site/index.html",
-    "search": "./code/Search.js",
+    "search": "./code/cliSearch.js",
     "local": "./code/PLDBServer.js startDevServer",
     "format": "./code/SiteBuilder.js formatDatabase",
     "crawl": "./code/crawlers/Crawler.js crawl",
