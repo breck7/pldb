@@ -19,7 +19,7 @@ printToken #OUT
 
 wikipedia https://en.wikipedia.org/wiki/Sather
  example
-  upto!(once m:INT):SAME is
+  up to!(once m:INT):SAME is
       i: INT := self; -- initialise i to the value of self, 
                       -- that is the integer of which this method is called
       loop

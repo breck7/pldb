@@ -200,19 +200,19 @@ const getIndefiniteArticle = phrase => {
   else return "an"
 
   var l_word = word.toLowerCase()
-  // Specific start of words that should be preceeded by 'an'
+  // Specific start of words that should be preceded by 'an'
   var alt_cases = ["honest", "hour", "hono"]
   for (var i in alt_cases) {
     if (l_word.indexOf(alt_cases[i]) == 0) return "an"
   }
 
-  // Single letter word which should be preceeded by 'an'
+  // Single letter word which should be preceded by 'an'
   if (l_word.length == 1) {
     if ("aedhilmnorsx".indexOf(l_word) >= 0) return "an"
     else return "a"
   }
 
-  // Capital words which should likely be preceeded by 'an'
+  // Capital words which should likely be preceded by 'an'
   if (
     word.match(
       /(?!FJO|[HLMNS]Y.|RY[EO]|SQU|(F[LR]?|[HL]|MN?|N|RH?|S[CHKLMNPTVW]?|X(YL)?)[AEIOU])[FHLMNRSX][A-Z]/
@@ -221,7 +221,7 @@ const getIndefiniteArticle = phrase => {
     return "an"
   }
 
-  // Special cases where a word that begins with a vowel should be preceeded by 'a'
+  // Special cases where a word that begins with a vowel should be preceded by 'a'
   const regexes = [
     /^e[uw]/,
     /^onc?e\b/,
@@ -240,10 +240,10 @@ const getIndefiniteArticle = phrase => {
     else return "a"
   }
 
-  // Basic method of words that begin with a vowel being preceeded by 'an'
+  // Basic method of words that begin with a vowel being preceded by 'an'
   if ("aeiou".indexOf(l_word[0]) >= 0) return "an"
 
-  // Instances where y follwed by specific letters is preceeded by 'an'
+  // Instances where y follwed by specific letters is preceded by 'an'
   if (l_word.match(/^y(b[lor]|cl[ea]|fere|gg|p[ios]|rou|tt)/)) return "an"
 
   return "a"
