@@ -95,6 +95,15 @@ stringToken "
 booleanTokens true false
 keywords abstract alignof as become box break const continue crate do else enum extern false final fn for if impl in let loop macro match mod move mut offsetof override priv proc pub pure ref return Self self sizeof static struct super trait true type typeof unsafe unsized use virtual where while yield
 
+githubRepo https://github.com/rust-lang/rust
+ stars 77242
+ forks 10314
+ subscribers 1489
+ created 2010
+ updated 2023
+ description Empowering everyone to build reliable and efficient software.
+ issues 9522
+
 wikipedia https://en.wikipedia.org/wiki/Rust_(programming_language)
  related linux freebsd android ios alef csharp cyclone erlang haskell haxe limbo newsqueak ruby scheme standard-ml swift crystal elm idris c ml go java ocaml llvmir d nim emacs-editor
  summary Rust is a systems programming language sponsored by Mozilla Research, which describes it as a "safe, concurrent, practical language," supporting functional and imperative-procedural paradigms. Rust is syntactically similar to C++, but its designers intend it to provide better memory safety while maintaining performance. Rust is an open source programming language. Its designers have refined the language through the experiences of writing the Servo web browser layout engine and the Rust compiler. A large portion of current commits to the project are from community members. Rust won first place for "most loved programming language" in the Stack Overflow Developer Survey in 2016 and 2017; it is referenced in The Book of Mozilla as "oxidised metal".
