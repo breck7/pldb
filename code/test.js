@@ -24,8 +24,8 @@ const { ScrollFolder, ScrollCli, ScrollFile } = require("scroll-cli")
 const { Disk } = require("jtree/products/Disk.node.js")
 const { TreeNode } = require("jtree/products/TreeNode.js")
 
-import { PLDBFolder } from "./Folder"
-import { getCleanedId } from "./utils"
+const { PLDBFolder } = require("./Folder")
+const { getCleanedId } = require("./utils")
 
 const pldbBase = PLDBFolder.getBase().loadFolder()
 const rootDir = path.join(__dirname, "..")
@@ -44,7 +44,7 @@ const runTree = testTree => {
 	)
 }
 
-const testTree: any = {}
+const testTree = {}
 
 testTree.ensureNoErrorsInGrammar = areEqual => {
 	const grammarErrors = new grammarNode(pldbBase.grammarCode)
