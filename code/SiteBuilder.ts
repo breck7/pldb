@@ -340,7 +340,7 @@ class SiteBuilder {
     })
 
     const vars = {}
-    const pages = [100, 250, 500, 1000]
+    const pages = [1000]
     const header = ["title", "titleLink", "appeared", "type", "rank"]
     pages.forEach(
       num =>
@@ -387,60 +387,6 @@ class SiteBuilder {
         header: ["name", "nameLink", "extensions", "numberOfExtensions"]
       },
       LANG_WITH_DATA_COUNT: files.length
-    })
-  }
-
-  @benchmark
-  @buildAll
-  buildEntitiesImports() {
-    let files = pldbBase.map(file => {
-      const appeared = file.get("appeared")
-      const rank = file.rank + 1
-      const type = file.get("type")
-      const title = file.get("title")
-      return {
-        title,
-        titleLink: `../languages/${file.permalink}`,
-        rank,
-        type,
-        appeared
-      }
-    })
-
-    buildImportsFile(path.join(listsFolder, "entitiesImports.scroll"), {
-      COUNT: numeral(Object.values(files).length).format("0,0"),
-      TABLE: {
-        rows: lodash.sortBy(files, "rank"),
-        header: ["title", "titleLink", "type", "appeared", "rank"]
-      }
-    })
-  }
-
-  @benchmark
-  @buildAll
-  buildLanguagesImports() {
-    const files = pldbBase
-      .filter(file => file.isLanguage)
-      .map(file => {
-        const title = file.get("title")
-        const appeared = file.get("appeared") || ""
-        const rank = file.languageRank + 1
-        const type = file.get("type")
-        return {
-          title,
-          titleLink: `../languages/${file.permalink}`,
-          type,
-          appeared,
-          rank
-        }
-      })
-
-    buildImportsFile(path.join(listsFolder, "languagesImports.scroll"), {
-      COUNT: numeral(Object.values(files).length).format("0,0"),
-      TABLE: {
-        rows: lodash.sortBy(files, "rank"),
-        header: ["title", "titleLink", "type", "appeared", "rank"]
-      }
     })
   }
 
