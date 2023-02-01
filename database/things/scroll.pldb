@@ -9,6 +9,7 @@ webRepl https://try.scroll.pub/
 domainName scroll.pub
  registered 2021
 
+subsetOf treenotation
 related markdown treenotation grammar
 
 features
@@ -34,3 +35,5 @@ githubRepo https://github.com/breck7/scroll
  updated 2022
  description The extensible alternative to Markdown.
  issues 6
+
+isOpenSource true

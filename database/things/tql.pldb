@@ -1,10 +1,12 @@
 title TQL
 appeared 2023
 type queryLanguage
+isPublicDomain true
 creators Breck Yunits
 description A language for querying TreeBases.
 standsFor Tree Query Language
 
+subsetOf treenotation
 writtenIn grammar javascript
 influencedBy sql
 
@@ -20,3 +22,14 @@ example
  sortBy githubRepo.stars
  select githubRepo.stars
  reverse
+
+githubRepo https://github.com/breck7/jtree
+ stars 365
+ forks 14
+ subscribers 9
+ created 2017
+ updated 2023
+ description Build your own language using Tree Notation.
+ issues 40
+
+isOpenSource true
