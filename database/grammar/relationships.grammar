@@ -12,7 +12,7 @@ influencedByNode
  description What languages influenced this one?
  extends abstractRelationshipNode
 successorOfNode
- description Was this language launched as the success of another?
+ description Was this language launched as the successor of another?
  extends abstractRelationshipNode
 subsetOfNode
  description Is this language a subset of another?
@@ -24,7 +24,7 @@ supersetOfNode
  description Is this language a superset of another? If you specify this link then the superset language will inherit all features of subset language.
  extends abstractRelationshipNode
 writtenInNode
- description What language is this application written in?
+ description What language(s) is the main implementation written in?
  extends abstractRelationshipNode
 extensionOfNode
  description What language is this language an extension of?
@@ -33,5 +33,5 @@ forkOfNode
  description What language is this language a fork of?
  extends abstractRelationshipNode
 compilesToNode
- description Which language does this language normally compile to?
+ description Which language(s) does this language primarily compile to?
  extends abstractRelationshipNode
