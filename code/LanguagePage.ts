@@ -711,7 +711,7 @@ ${creatorsLinks}
     const pygmentsHighlighter = file.get("pygmentsHighlighter")
     if (pygmentsHighlighter)
       facts.push(
-        `<a href="languages/pygments.html">Pygments</a> supports <a href="https://github.com/pygments/pygments/blob/master/pygments/lexers/${file.get(
+        `<a href="pygments.html">Pygments</a> supports <a href="https://github.com/pygments/pygments/blob/master/pygments/lexers/${file.get(
           "pygmentsHighlighter filename"
         )}">syntax highlighting</a> for ${title}`
       )
