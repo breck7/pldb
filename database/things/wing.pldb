@@ -1,7 +1,28 @@
 title Wing
-appeared 2023
+appeared 2022
 type pl
 creators Elad Ben-Israel
-website https://winglang.io/
+website https://winglang.io
+documentation https://docs.winglang.io
+
+example
+ bring cloud;
+ 
+ let queue = new cloud.Queue(timeout: 2m);
+ let bucket = new cloud.Bucket();
+ let counter = new cloud.Counter(initial: 100);
+ 
+ queue.on_message(inflight (body: str): str => {
+   let next = counter.inc();
+   let key = "myfile-${next}.txt";
+   bucket.put(key, body);
+ });
 
 githubRepo https://github.com/winglang/wing
+ stars 196
+ forks 11
+ subscribers 194
+ created 2022
+ updated 2023
+ description The Wing Programming Language
+ issues 330

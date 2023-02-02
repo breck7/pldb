@@ -113,6 +113,15 @@ stringToken "
 booleanTokens true false
 keywords begin while if for try return break continue function macro quote let local global const do struct abstract typealias bitstype type immutable module baremodule using import export importall end else catch finally true false
 
+githubRepo https://github.com/JuliaLang/julia
+ stars 41515
+ forks 5100
+ subscribers 952
+ created 2011
+ updated 2023
+ description The Julia Programming Language
+ issues 4420
+
 wikipedia https://en.wikipedia.org/wiki/Julia_(programming_language)
  example
   julia> p(x) = 2x^2 + 1; f(x, y) = 1 + 2p(x)y
