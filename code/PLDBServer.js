@@ -197,13 +197,9 @@ ${editForm(submission, "Error")}`
         errorForm(content, error, res)
       }
     })
-
-    //The 404 Route (ALWAYS Keep this as the last route)
-    const notFoundPage = Disk.read(
-      path.join(builtSiteFolder, "custom_404.html")
-    )
-    app.get("*", (req, res) => res.status(404).send(notFoundPage))
   }
+
+  notFoundPage = Disk.read(path.join(builtSiteFolder, "custom_404.html"))
 
   reloadNeeded() {
     // todo: use some pattern like mobx or something to clear cached computeds?
