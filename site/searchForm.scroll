@@ -2,7 +2,7 @@ importOnly
 
 html
  <div class="treeBaseSearchForm treeBaseSearchFormPadded">
-  <form style="display:inline;" method="get" action="https://build.pldb.com/search">
+  <form style="display:inline;" method="get" action="https://pldb.com/search">
    <input name="q" placeholder="Search" autocomplete="off" type="search" id="searchFormInput">
    <input class="searchButton" type="submit" value="Search">
   </form>

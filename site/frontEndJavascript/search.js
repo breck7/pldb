@@ -65,9 +65,7 @@ const initSearchAutocomplete = elementId => {
       if (id) window.location = IS_LOCALHOST ? url : `https://pldb.com${url}`
       else {
         const fullUrl = "/search?q=" + encodeURIComponent(input.value)
-        window.location = IS_LOCALHOST
-          ? fullUrl
-          : `https://build.pldb.com${fullUrl}`
+        window.location = IS_LOCALHOST ? fullUrl : `https://pldb.com${fullUrl}`
       }
     }
   })

@@ -1,7 +1,6 @@
 importOnly
 
 replaceDefault BASE_URL 
-replaceDefault BUILD_URL https://build.pldb.com
 
 description PLDB: a Programming Language Database. Build the next great programming language.
 git https://github.com/breck7/pldb

@@ -61,7 +61,7 @@ html
  <br>
  <div>
  <input type="hidden" name="author" id="author">
- <!-- <input type="button" id="submitButton" value="Save" onClick="alert('You have no call sign set. Build.PLDB.com is temporarily limited while we resolve traffic issues. Please email liability@pldb.com if you want a call sign.')" /> --!>
+ <!-- <input type="button" id="submitButton" value="Save" onClick="alert('You have no call sign set. PLDB.com is temporarily limited while we resolve traffic issues. Please email liability@pldb.com if you want a call sign.')" /> --!>
  </div>
  <p>Remember, you can always submit updates to this file using the traditional GitHub Pull Request flow.</p>
  <input type="submit" value="Save" id="submitButton" onClick="app.saveAuthorIfUnsaved()"/>
@@ -287,7 +287,6 @@ ${editForm(submission, "Error")}`
   scrollToHtml(scrollContent) {
     return new ScrollFile(
       `replace BASE_URL ${this.isProd ? "https://pldb.com" : ""}
-replace BUILD_URL ${this.isProd ? "https://build.pldb.com" : "/"}
 
 ${scrollHeader}
 
