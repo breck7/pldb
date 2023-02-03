@@ -16,6 +16,11 @@ groups index
 ## Analytics
 * This site does not use cookies or include any tracking scripts. Server logs are kept and used primarily for catching broken links, broken scripts, and other QA. If you need even more privacy, you can run the site locally or on your own servers.
 
+* You can view traffic today and/or traffic trends for the last two weeks. GoAccess generates these reports. It runs every hour thanks to the `cron` jobs listed below.
+ https://pldb.com/trafficToday.html traffic today
+ https://pldb.com/trafficTrends.html traffic trends
+ https://goaccess.io/ GoAccess
+
 import buildSetup.scroll
 
 ## Logo and favicons

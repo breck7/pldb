@@ -33,8 +33,19 @@ bashCode
  pm2 start ./code/PLDBServer.js -- startProdServer
  pm2 startup systemd
 
-## Deploying Build Server
+bashCode
+ # add the server stats cron job below with:
+ crontab -e
+ service cron restart
+ # uncomment the cron line and point the log to /root/pldb/site/cron.log
+ vim /etc/rsyslog.d/50-default.conf
+ service rsyslog restart
+ service cron restart
 
+cronCode
+ 0 * * * * /root/pldb/code/updateStats.sh >> /root/pldb/site/cron.log  2>&1
+
+## Deploying Build Server
 bashCode
  ssh root@pldb.com
  cd pldb
