@@ -21,16 +21,8 @@ const { lastCommitHashInFolder, htmlEscaped, isValidEmail } = require("./utils")
 const simpleGit = require("simple-git")
 
 const baseFolder = path.join(__dirname, "..")
-const ignoreFolder = path.join(baseFolder, "ignore")
 const builtSiteFolder = path.join(baseFolder, "site")
-const editLogPath = path.join(ignoreFolder, "treeBaseServerLog.tree")
-
-try {
-  Disk.mkdir(ignoreFolder)
-  Disk.touch(editLogPath)
-} catch (err) {
-  console.error(err)
-}
+const ignoreFolder = path.join(baseFolder, "ignore")
 
 const editForm = (content = "", title = "", missingRecommendedColumns = []) =>
   `${title ? `title ${title}` : ""}
@@ -114,12 +106,13 @@ const scrollFooter = getFullyExpandedFile(
 ).code
 
 class PLDBServer extends TreeBaseServer {
-  constructor(folder) {
-    super(folder)
+  constructor(folder, ignoreFolder) {
+    super(folder, ignoreFolder)
+    this.editLogPath = path.join(ignoreFolder, "treeBaseServerLog.tree")
     this.compileGrammarsForCodeMirrorEditors()
     this.serveFolder(builtSiteFolder)
     this.serveFolder(__dirname)
-    this.initSearch(ignoreFolder)
+    this.initSearch()
 
     const { app } = this
     app.get("/create", (req, res) =>
@@ -345,7 +338,7 @@ ${scrollFooter}
     const tqlGrammar = new TreeNode(Disk.read(tqlPath))
 
     tqlGrammar.getNode("columnNameCell").set("enum", colNamesForCsv.join(" "))
-    const combinedPath = path.join(ignoreFolder, "pldbTql.grammar")
+    const combinedPath = path.join(this.ignoreFolder, "pldbTql.grammar")
     Disk.write(combinedPath, tqlGrammar.toString())
     GrammarCompiler.compileGrammarForBrowser(
       combinedPath,
@@ -423,7 +416,7 @@ ${scrollFooter}
   appendToPostLog(route, author, content) {
     // Write to log for backup in case something goes wrong.
     Disk.append(
-      editLogPath,
+      this.editLogPath,
       `post
  route ${route}
  time ${new Date().toString()}
@@ -440,12 +433,12 @@ ${scrollFooter}
   listenProd() {
     this.gitOn = true
     this.isProd = true
-    return super.listenProd(ignoreFolder)
+    return super.listenProd()
   }
 }
 
 class PLDBServerCommands {
-  server = new PLDBServer(PLDBFolder.getBase().loadFolder())
+  server = new PLDBServer(PLDBFolder.getBase().loadFolder(), ignoreFolder)
 
   startDevServerCommand(port) {
     this.server.listen(port)
