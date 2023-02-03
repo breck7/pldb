@@ -1204,7 +1204,7 @@
           ? item.url
           : item.id
           ? `https://pldb.com${item.url}`
-          : `https://build.pldb.com${item.url}`
+          : `https://pldb.com${item.url}`
         return itemElement
       }
       if (settings.render) {
@@ -1252,9 +1252,7 @@
           empty.textContent = settings.emptyMsg
 
           const fullUrl = "/search?q=" + encodeURIComponent(input.value)
-          empty.href = IS_LOCALHOST
-            ? fullUrl
-            : `https://build.pldb.com${fullUrl}`
+          empty.href = IS_LOCALHOST ? fullUrl : `https://pldb.com${fullUrl}`
 
           container.appendChild(empty)
         } else {
@@ -1569,9 +1567,7 @@ const initSearchAutocomplete = elementId => {
       if (id) window.location = IS_LOCALHOST ? url : `https://pldb.com${url}`
       else {
         const fullUrl = "/search?q=" + encodeURIComponent(input.value)
-        window.location = IS_LOCALHOST
-          ? fullUrl
-          : `https://build.pldb.com${fullUrl}`
+        window.location = IS_LOCALHOST ? fullUrl : `https://pldb.com${fullUrl}`
       }
     }
   })
