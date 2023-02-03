@@ -22,6 +22,4 @@ alias ezp="s ~/.zprofile"
 alias rzp='source ~/.zprofile' # reload this file (after making edits)
 
 # PDP Servers
-alias marconi="ssh pldb.com"
-alias build="ssh build.pldb.com"
-alias george="ssh cancerdb.com"
+alias build="ssh pldb.com"

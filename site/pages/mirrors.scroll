@@ -3,18 +3,19 @@ title Mirrors
 groups index
 startColumns 2
 
-* The <a href="../languages/url.html">URL</a> for the official PLDB site is <a href="https://pldb.com">https://pldb.com</a>. <a href="../languages/dns.html">DNS</a> will take that domain name and send your browser an <a href="../languages/ipv4.html">IPv4</a> address. Your browser will send a request to that address which will reach our virtual server running Nginx (nicknamed _Marconi_) running in a Digital Ocean datacenter. _Marconi_ will send you the HTML, CSS, Javascript, PNGs, SVGs and JSON that make up the built website.
+* The URL for the official PLDB site is https://pldb.com. DNS will take that domain name and send your browser an IPv4 address. Your browser will send a request to that address which will reach our virtual server running Node.js (nicknamed _Build_) running in a Digital Ocean datacenter. _Build_ will send you the HTML, CSS, Javascript, PNGs, SVGs and JSON that make up the built website.
+ link ../languages/url.html URL
+ link ../languages/dns.html DNS
+ link ../languages/ipv4.html IPv4
 
-* In case there's a problem with _Marconi_, you should be able to access the exact same site locally by downloading the source from GitHub.
+* In case there's a problem with _Build_, you should be able to access the exact same site locally by downloading the source from GitHub.
 
-* If _Marconi_ AND GitHub were to go down at the same time...well that's why it's good to regularly download the entire source code of the site to your own machine! You can do that with:
+* If _Build_ AND GitHub were to go down at the same time...well that's why it's good to regularly download the entire source code of the site to your own machine! You can do that with:
 
 bashCode
  git clone https://github.com/breck7/pldb.git
  # Then to keep it updated:
  cd pldb
  git pull
-
-* We have another server running at Digital Ocean named _Build_ that serves <a href="https://build.pldb.com">build.pldb.com</a>. _Build_ serves the site and also let's you easily edit the database right in your web browser. If _Build_ is flakey, it's recommended you just submit your changes to the <a href="https://github.com/breck7/pldb">PLDB repo</a> using the normal GitHub UI.
 
 import footer.scroll

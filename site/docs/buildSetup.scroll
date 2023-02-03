@@ -1,7 +1,6 @@
 importOnly
 
 ## Build Server Setup
-
 bashCode
  apt update
  apt upgrade
@@ -28,8 +27,8 @@ bashCode
  snap install --classic certbot
  certbot certonly --standalone
  mkdir ignore
- cp /etc/letsencrypt/live/build.pldb.com/privkey.pem ignore
- cp /etc/letsencrypt/live/build.pldb.com/fullchain.pem ignore
+ cp /etc/letsencrypt/live/pldb.com/privkey.pem ignore
+ cp /etc/letsencrypt/live/pldb.com/fullchain.pem ignore
  # Now start with pm2 over http2
  pm2 start ./code/PLDBServer.js -- startProdServer
  pm2 startup systemd
@@ -37,7 +36,7 @@ bashCode
 ## Deploying Build Server
 
 bashCode
- ssh root@build.pldb.com
+ ssh root@pldb.com
  cd pldb
  git pull
  npm install .
