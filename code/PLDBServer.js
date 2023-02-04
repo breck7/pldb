@@ -135,6 +135,10 @@ ${editForm(submission, "Error")}`
       return res.send(this.scrollToHtml(`* "${htmlEscaped(id)}" not found`))
     }
 
+    app.get("/fullTextSearch", (req, res) =>
+      res.redirect(`/search?q=includes+${req.query.q}`)
+    )
+
     app.get("/edit/:id", (req, res) => {
       const { id } = req.params
       if (id.endsWith(".pldb")) return res.redirect(id.replace(".pldb", ""))

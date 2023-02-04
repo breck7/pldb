@@ -21,7 +21,7 @@ stumpNoSnippet
   form
    style display:inline-block;
    method get
-   action https://pldb.com/search
+   action /fullTextSearch
    input
     type search
     id headerSearch
