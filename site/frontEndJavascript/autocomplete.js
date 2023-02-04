@@ -1,3 +1,7 @@
+// This file has been modified by me! - Breck
+// It is not a straight copy paste.
+// There is no documentation of what I have changed. Who does this?!!!! Breck is fired.
+// Todo: cleanup
 ;(function(global, factory) {
   typeof exports === "object" && typeof module !== "undefined"
     ? (module.exports = factory())
@@ -133,17 +137,11 @@
         container.removeChild(container.firstChild)
       }
       const ITEM_TAG = "a" // our addition
-      const IS_LOCALHOST =
-        location.hostname === "localhost" || location.hostname === "127.0.0.1"
       // function for rendering autocomplete suggestions
       const render = function(item, currentValue) {
         const itemElement = doc.createElement(ITEM_TAG)
         itemElement.textContent = item.label || ""
-        itemElement.href = IS_LOCALHOST
-          ? item.url
-          : item.id
-          ? `https://pldb.com${item.url}`
-          : `https://pldb.com${item.url}`
+        itemElement.href = item.url
         return itemElement
       }
       if (settings.render) {
@@ -189,10 +187,7 @@
           var empty = doc.createElement(ITEM_TAG)
           empty.className = "empty"
           empty.textContent = settings.emptyMsg
-
-          const fullUrl = "/search?q=" + encodeURIComponent(input.value)
-          empty.href = IS_LOCALHOST ? fullUrl : `https://pldb.com${fullUrl}`
-
+          empty.href = "/fullTextSearch?q=" + encodeURIComponent(input.value)
           container.appendChild(empty)
         } else {
           clear()

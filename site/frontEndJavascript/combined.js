@@ -1059,6 +1059,10 @@
 
 
 
+// This file has been modified by me! - Breck
+// It is not a straight copy paste.
+// There is no documentation of what I have changed. Who does this?!!!! Breck is fired.
+// Todo: cleanup
 ;(function(global, factory) {
   typeof exports === "object" && typeof module !== "undefined"
     ? (module.exports = factory())
@@ -1194,17 +1198,11 @@
         container.removeChild(container.firstChild)
       }
       const ITEM_TAG = "a" // our addition
-      const IS_LOCALHOST =
-        location.hostname === "localhost" || location.hostname === "127.0.0.1"
       // function for rendering autocomplete suggestions
       const render = function(item, currentValue) {
         const itemElement = doc.createElement(ITEM_TAG)
         itemElement.textContent = item.label || ""
-        itemElement.href = IS_LOCALHOST
-          ? item.url
-          : item.id
-          ? `https://pldb.com${item.url}`
-          : `https://pldb.com${item.url}`
+        itemElement.href = item.url
         return itemElement
       }
       if (settings.render) {
@@ -1250,10 +1248,7 @@
           var empty = doc.createElement(ITEM_TAG)
           empty.className = "empty"
           empty.textContent = settings.emptyMsg
-
-          const fullUrl = "/search?q=" + encodeURIComponent(input.value)
-          empty.href = IS_LOCALHOST ? fullUrl : `https://pldb.com${fullUrl}`
-
+          empty.href = "/fullTextSearch?q=" + encodeURIComponent(input.value)
           container.appendChild(empty)
         } else {
           clear()
@@ -1501,6 +1496,7 @@
 
 
 let searchIndex = false
+let searchIndexRequestMade = false
 
 const SearchSuggestionInterface = {
   label: "string",
@@ -1529,8 +1525,6 @@ const initSearchAutocomplete = elementId => {
   const input = document.getElementById(elementId)
   const urlParams = new URLSearchParams(window.location.search)
   const query = urlParams.get("q")
-  const IS_LOCALHOST =
-    location.hostname === "localhost" || location.hostname === "127.0.0.1"
   if (query) input.value = query
   autocomplete({
     input,
@@ -1541,7 +1535,8 @@ const initSearchAutocomplete = elementId => {
       text = query.toLowerCase()
       // you can also use AJAX requests instead of preloaded data
 
-      if (!searchIndex) {
+      if (!searchIndexRequestMade) {
+        searchIndexRequestMade = true
         let response = await fetch("/searchIndex.json")
         if (response.ok) searchIndex = await response.json()
       }
@@ -1556,7 +1551,7 @@ const initSearchAutocomplete = elementId => {
         label: `Full text search for "${htmlEncodedQuery}"`,
         appeared: 2022,
         id: "",
-        url: `/search?q=${htmlEncodedQuery}`
+        url: `/fullTextSearch?q=${htmlEncodedQuery}`
       })
       tinyTypeScript(suggestions, SearchSuggestionInterface)
 
@@ -1564,11 +1559,9 @@ const initSearchAutocomplete = elementId => {
     },
     onSelect: item => {
       const { url, id } = item
-      if (id) window.location = IS_LOCALHOST ? url : `https://pldb.com${url}`
-      else {
-        const fullUrl = "/search?q=" + encodeURIComponent(input.value)
-        window.location = IS_LOCALHOST ? fullUrl : `https://pldb.com${fullUrl}`
-      }
+      if (id) window.location = url
+      else
+        window.location = "/fullTextSearch?q=" + encodeURIComponent(input.value)
     }
   })
 }

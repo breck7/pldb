@@ -1,4 +1,5 @@
 let searchIndex = false
+let searchIndexRequestMade = false
 
 const SearchSuggestionInterface = {
   label: "string",
@@ -27,8 +28,6 @@ const initSearchAutocomplete = elementId => {
   const input = document.getElementById(elementId)
   const urlParams = new URLSearchParams(window.location.search)
   const query = urlParams.get("q")
-  const IS_LOCALHOST =
-    location.hostname === "localhost" || location.hostname === "127.0.0.1"
   if (query) input.value = query
   autocomplete({
     input,
@@ -39,7 +38,8 @@ const initSearchAutocomplete = elementId => {
       text = query.toLowerCase()
       // you can also use AJAX requests instead of preloaded data
 
-      if (!searchIndex) {
+      if (!searchIndexRequestMade) {
+        searchIndexRequestMade = true
         let response = await fetch("/searchIndex.json")
         if (response.ok) searchIndex = await response.json()
       }
@@ -54,7 +54,7 @@ const initSearchAutocomplete = elementId => {
         label: `Full text search for "${htmlEncodedQuery}"`,
         appeared: 2022,
         id: "",
-        url: `/search?q=${htmlEncodedQuery}`
+        url: `/fullTextSearch?q=${htmlEncodedQuery}`
       })
       tinyTypeScript(suggestions, SearchSuggestionInterface)
 
@@ -62,11 +62,9 @@ const initSearchAutocomplete = elementId => {
     },
     onSelect: item => {
       const { url, id } = item
-      if (id) window.location = IS_LOCALHOST ? url : `https://pldb.com${url}`
-      else {
-        const fullUrl = "/search?q=" + encodeURIComponent(input.value)
-        window.location = IS_LOCALHOST ? fullUrl : `https://pldb.com${fullUrl}`
-      }
+      if (id) window.location = url
+      else
+        window.location = "/fullTextSearch?q=" + encodeURIComponent(input.value)
     }
   })
 }
