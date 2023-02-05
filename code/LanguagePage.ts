@@ -13,15 +13,21 @@ const SVGS = {
 }
 
 const { TreeNode } = require("jtree/products/TreeNode.js")
+const { Utils } = require("jtree/products/Utils.js")
 import { PLDBFile } from "./File"
 
-import {
-  cleanAndRightShift,
-  getIndefiniteArticle,
-  toCommaList,
-  linkManyAftertext,
-  makePrettyUrlLink
-} from "./utils"
+import { linkManyAftertext } from "./utils"
+
+const cleanAndRightShift = str =>
+  Utils.shiftRight(Utils.removeReturnChars(str), 1)
+
+const makePrettyUrlLink = url => `<a href="${url}">${new URL(url).hostname}</a>`
+
+const toCommaList = (arr, conjunction = "and") => {
+  if (arr.length === 1) return arr[0]
+  let last = arr.pop()
+  return arr.join(", ") + ` ${conjunction} ${last}`
+}
 
 const currentYear = new Date().getFullYear()
 
@@ -402,9 +408,11 @@ image ${image.replace("https://pldb.com/", "../")}
         .join("\n")
     }
 
-    return `* ${title}${akaMessage} is ${getIndefiniteArticle(typeName)} ${
-      this.typeLink
-    }${appeared ? ` created in ${appeared}` : ""}${creatorsStr}.
+    return `* ${title}${akaMessage} is ${Utils.getIndefiniteArticle(
+      typeName
+    )} ${this.typeLink}${
+      appeared ? ` created in ${appeared}` : ""
+    }${creatorsStr}.
  link ../lists/languages.html?filter=${appeared} ${appeared}
 ${creatorsLinks}
 `
@@ -857,7 +865,7 @@ ${creatorsLinks}
       .map(
         fact =>
           `codeWithHeader ${`<a href='${fact.getContent()}'>Fun fact</a>`}:
- ${cleanAndRightShift(lodash.escape(fact.childrenToString()), 1)}`
+ ${cleanAndRightShift(lodash.escape(fact.childrenToString()))}`
       )
       .join("\n\n")
   }
@@ -871,7 +879,7 @@ ${creatorsLinks}
               ? example.source
               : `<a href='${example.link}'>` + example.source + "</a>"
           }:
- ${cleanAndRightShift(lodash.escape(example.code), 1)}`
+ ${cleanAndRightShift(lodash.escape(example.code))}`
       )
       .join("\n\n")
   }

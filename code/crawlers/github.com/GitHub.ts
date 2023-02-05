@@ -2,7 +2,7 @@
 
 import { PLDBFolder } from "../../Folder"
 import { PLDBFile } from "../../File"
-import { PoliteCrawler, ensureDelimiterNotFound } from "../../utils"
+import { PoliteCrawler } from "../../utils"
 
 const { Utils } = require("jtree/products/Utils.js")
 const { TreeNode } = require("jtree/products/TreeNode.js")
@@ -343,7 +343,7 @@ class GitHubImporter {
 				ghNode.delete("aliases")
 
 				const delimiter = " or "
-				ensureDelimiterNotFound(aliases, delimiter)
+				Utils.ensureDelimiterNotFound(aliases, delimiter)
 				ghNode.set("aliases", aliases.join(delimiter))
 			}
 

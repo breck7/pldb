@@ -1,7 +1,9 @@
 import { imemo, linkManyAftertext } from "./utils"
-import { cleanAndRightShift, getIndefiniteArticle } from "./utils"
 import { FeatureSummary } from "./Interfaces"
 const lodash = require("lodash")
+const { Utils } = require("jtree/products/Utils")
+
+const { shiftRight, removeReturnChars } = Utils
 
 // One feature maps to one grammar file that extends abstractFeatureNode
 class Feature {
@@ -176,7 +178,7 @@ class Feature {
           .map(hit => `<a href="../languages/${hit.id}.html">${hit.title}</a>`)
           .join(", ")
         return `codeWithHeader Example from ${links}:
- ${cleanAndRightShift(lodash.escape(group[0].example), 1)}`
+ ${shiftRight(removeReturnChars(lodash.escape(group[0].example)), 1)}`
       })
       .join("\n\n")
 

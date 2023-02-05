@@ -1,5 +1,5 @@
 import { FeaturesCollection } from "./Features"
-import { PLDBFile, runtimeCsvProps } from "./File"
+import { PLDBFile, runtimeCsvProps, isLanguage } from "./File"
 import {
   FeatureSummary,
   FolderInterface,
@@ -7,7 +7,7 @@ import {
   StringMap
 } from "./Interfaces"
 import { computeRankings } from "./Rankings"
-import { nodeToFlatObject, isLanguage, getCleanedId, imemo } from "./utils"
+import { getCleanedId, imemo } from "./utils"
 
 const path = require("path")
 const lodash = require("lodash")
@@ -17,6 +17,22 @@ const { TreeBaseFolder } = require("jtree/products/treeBase.node.js")
 const { Disk } = require("jtree/products/Disk.node.js")
 
 const databaseFolder = path.join(__dirname, "..", "database")
+
+const nodeToFlatObject = parentNode => {
+  const delimiter = "."
+  let newObject = {}
+  parentNode.forEach((child, index) => {
+    newObject[child.getWord(0)] = child.getContent()
+    child.getTopDownArray().forEach(node => {
+      const key = node
+        .getFirstWordPathRelativeTo(parentNode)
+        .replace(/ /g, delimiter)
+      const value = node.getContent()
+      newObject[key] = value
+    })
+  })
+  return newObject
+}
 
 class PLDBFolder extends TreeBaseFolder {
   static getBase(): PLDBFolder {
