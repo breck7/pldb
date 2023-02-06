@@ -201,6 +201,13 @@ ${editForm(submission, "Error")}`
         errorForm(content, error, res)
       }
     })
+
+    // Short urls:
+    app.get("/:id", (req, res, next) =>
+      this.folder.getFile(req.params.id)
+        ? res.status(302).redirect(`/languages/${req.params.id}.html`)
+        : next()
+    )
   }
 
   notFoundPage = Disk.read(path.join(builtSiteFolder, "custom_404.html"))
