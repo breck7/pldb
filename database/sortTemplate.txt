@@ -11,6 +11,7 @@ description
 website
 webRepl
 documentation
+ebook
 emailList
 spec
 reference
@@ -27,7 +28,9 @@ domainName
 equation
 firstAnnouncement
 announcementMethod
-latestRelease
+usesSemanticVersioning
+releaseNotesUrl
+versions
 
 #
 compilesTo
@@ -102,7 +105,6 @@ indeedJobs
 linkedInSkill
 stackOverflowSurvey
 annualReportsUrl
-releaseNotesUrl
 officialBlogUrl
 eventsPageUrl
 faqPageUrl

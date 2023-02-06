@@ -18,8 +18,6 @@ isDeadNode
  description Has the creator or maintainer announced it officially dead? Include a link to proof of the announcement.
  extends abstractBooleanNode
  cells keywordCell boolCell urlCell
- cruxFromId
- single
 nativeLanguageWordCell
  description The name of a natural language like English or Japanese.
 nativeLanguageNode
@@ -27,11 +25,6 @@ nativeLanguageNode
  extends abstractFactNode
  description Nearly all programming languages are written in English, but some aren't. Set this field for the ones that are not.
  cruxFromId
-latestReleaseNode
- description The year of the most recent release of the thing.
- extends abstractYearNode
- cruxFromId
- single
 firstAnnouncementNode
  description A url announcing the creation or release of a new language
  extends abstractUrlNode
@@ -62,11 +55,7 @@ isOpenSourceNode
  boolean alwaysRecommended true
  description Is it an open source project?
  extends abstractBooleanNode
- cruxFromId
- single
 isPublicDomainNode
  boolean alwaysRecommended true
  description Is it public domain?
  extends abstractBooleanNode
- cruxFromId
- single

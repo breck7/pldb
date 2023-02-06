@@ -9,7 +9,9 @@ documentation https://github.com/buzz-language/buzz/blob/main/README.md
 fileExtensions buzz
 country France
 originCommunity https://github.com/buzz-language/
-latestRelease 2022
+releaseNotesUrl https://github.com/buzz-language/buzz/releases
+versions
+ 2022 0.1.0-rc.1
 
 writtenIn zig
 influencedBy lua
@@ -23,7 +25,5 @@ githubRepo https://github.com/buzz-language/buzz
  updated 2022
  description 👨‍🚀  buzz, A small/lightweight typed scripting language (in development)
  issues 45
-
-releaseNotesUrl https://github.com/buzz-language/buzz/releases
 
 isOpenSource true

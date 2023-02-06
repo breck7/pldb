@@ -4,6 +4,7 @@ type queryLanguage
 isPublicDomain true
 creators Dwayne Richard Hipp
 website https://sqlite.org
+webRepl https://sqlite.org/fiddle/index.html
 documentation https://www.sqlite.org/docs.html
 reference https://www.vldb.org/pvldb/vol15/p3535-gaffney.pdf
 domainName sqlite.org
@@ -11,6 +12,12 @@ domainName sqlite.org
  awisRank
   2022 27031
   2017 24351
+usesSemanticVersioning true
+releaseNotesUrl https://www.sqlite.org/changes.html
+versions
+ 2022 3.40.1
+
+writtenIn c
 
 features
  hasBooleans false
@@ -38,7 +45,6 @@ tryItOnline sqlite
 
 indeedJobs sqlite developer
  2022 561
-releaseNotesUrl https://www.sqlite.org/changes.html
 officialBlogUrl https://www.sqlite.org/news.html
 faqPageUrl https://www.sqlite.org/faq.html
 

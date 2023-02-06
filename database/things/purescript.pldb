@@ -4,6 +4,7 @@ type pl
 creators Phil Freeman
 website http://functorial.com/purescript
 documentation https://github.com/purescript/documentation
+releaseNotesUrl https://github.com/purescript/purescript/releases
 
 compilesTo javascript
 
@@ -125,8 +126,6 @@ leachim6 PureScript
   
 
 tryItOnline purescript
-
-releaseNotesUrl https://github.com/purescript/purescript/releases
 
 hackerNewsDiscussions
  id|title|time|timestamp|by|comments|score

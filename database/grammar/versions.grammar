@@ -1,0 +1,21 @@
+usesSemanticVersioningNode
+ extends abstractBooleanNode
+ description Does the official release of the language use semantic versioning?
+versionCell
+ extends stringCell
+ description Version numbers.
+todo Grammar should probably have pattern matching. And then we can detect semantic versions in the below.
+versionNode
+ description A release year and version. Perhaps in the future we could get more specific to month or even day.
+ cells yearCell versionCell
+versionsNode
+ description The release years and versions of the language.
+ cruxFromId
+ cells keywordCell
+ catchAllNodeType versionNode
+ single
+releaseNotesUrlNode
+ extends abstractUrlNode
+ cruxFromId
+ description URL to the release notes for this language.
+ single
