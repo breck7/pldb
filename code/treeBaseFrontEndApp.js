@@ -63,7 +63,7 @@ class TreeBaseFrontEndApp {
 		if (this._code === code) return
 		this._code = code
 		this.program = new this.programCompiler(code)
-		const errs = this.program.getAllErrors()
+		const errs = this.program.scopeErrors.concat(this.program.getAllErrors())
 
 		const errMessage = errs.length
 			? errs.map(err => err.getMessage()).join(" ")
