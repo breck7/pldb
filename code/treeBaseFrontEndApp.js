@@ -1,16 +1,3 @@
-const htmlEscaped = content => content.replace(/</g, "&lt;")
-const capitalizeFirstLetter = string =>
-	string.charAt(0).toUpperCase() + string.slice(1)
-// generate a random alpha numeric hash:
-const getRandomCharacters = length => {
-	const characters =
-		"ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789"
-	let result = ""
-	for (let i = 0; i < length; i++) {
-		result += characters.charAt(Math.floor(Math.random() * characters.length))
-	}
-	return result
-}
 const genDefaultAuthor = () => {
 	let user = "region.platform.vendor"
 	try {
@@ -26,7 +13,7 @@ const genDefaultAuthor = () => {
 	} catch (err) {
 		console.error(err)
 	}
-	const hash = getRandomCharacters(7)
+	const hash = Utils.getRandomCharacters(7)
 	return `Anon <${`anon.${user}.${hash}`}@pldb.com>`
 }
 const defaultAuthor = genDefaultAuthor()
@@ -101,9 +88,9 @@ class TreeBaseFrontEndApp {
 				commit}">Success! Changes published as ${commit.substring(0, 7)}</a>`
 		}
 		if (errorMessage)
-			document.getElementById("errorMessage").innerHTML = `Error: ${htmlEscaped(
-				errorMessage
-			)}`
+			document.getElementById(
+				"errorMessage"
+			).innerHTML = `Error: ${Utils.htmlEscaped(errorMessage)}`
 
 		window.location.hash = ""
 	}
@@ -153,7 +140,9 @@ githubRepo https://github.com/elixir-lang/elixir</pre>`
 	}
 
 	updateAuthor() {
-		document.getElementById("authorLabel").innerHTML = htmlEscaped(this.author)
+		document.getElementById("authorLabel").innerHTML = Utils.htmlEscaped(
+			this.author
+		)
 		document.getElementById("author").value = this.author
 	}
 
@@ -206,7 +195,7 @@ githubRepo https://github.com/elixir-lang/elixir</pre>`
 
 		const links = ["website", "githubRepo", "wikipedia"]
 			.filter(key => tree.has(key))
-			.map(key => `${capitalizeFirstLetter(key)}: ${tree.get(key)}`)
+			.map(key => `${Utils.capitalizeFirstLetter(key)}: ${tree.get(key)}`)
 
 		const permalink = this.route
 		document.getElementById("quickLinks").innerHTML =

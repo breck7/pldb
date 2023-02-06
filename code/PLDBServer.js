@@ -17,19 +17,26 @@ const {
 
 const { PLDBFolder } = require("./Folder")
 const { PLDBFile } = require("./File")
-const { lastCommitHashInFolder, htmlEscaped, isValidEmail } = require("./utils")
 const simpleGit = require("simple-git")
 
 const baseFolder = path.join(__dirname, "..")
 const builtSiteFolder = path.join(baseFolder, "site")
 const ignoreFolder = path.join(baseFolder, "ignore")
 
+const lastCommitHashInFolder = (cwd = __dirname) =>
+  require("child_process")
+    .execSync("git rev-parse HEAD", {
+      cwd
+    })
+    .toString()
+    .trim()
+
 const editForm = (content = "", title = "", missingRecommendedColumns = []) =>
   `${title ? `title ${title}` : ""}
 html
  <form method="POST" id="editForm">
  <div class="cell" id="leftCell">
- <textarea name="content" id="content">${htmlEscaped(content).replace(
+ <textarea name="content" id="content">${Utils.htmlEscaped(content).replace(
    /\n/g,
    "\n "
  )}</textarea>
@@ -132,7 +139,9 @@ ${editForm(submission, "Error")}`
 
     const notFound = (id, res) => {
       res.status(500)
-      return res.send(this.scrollToHtml(`* "${htmlEscaped(id)}" not found`))
+      return res.send(
+        this.scrollToHtml(`* "${Utils.htmlEscaped(id)}" not found`)
+      )
     }
 
     app.get("/fullTextSearch", (req, res) =>
@@ -180,7 +189,7 @@ ${editForm(submission, "Error")}`
 
         const { authorName, authorEmail } = parseGitAuthor(author)
 
-        isValidEmail(authorEmail)
+        Utils.isValidEmail(authorEmail)
 
         const commitResult = await this.commitFilePullAndPush(
           file.filename,
@@ -399,7 +408,7 @@ ${scrollFooter}
       // git pull --rebase
       // git push
 
-      if (!isValidEmail(authorEmail))
+      if (!Utils.isValidEmail(authorEmail))
         throw new Error(`Invalid email: ${authorEmail}`)
 
       await git.add(filename)

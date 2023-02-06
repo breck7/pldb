@@ -4,7 +4,6 @@ const cheerio = require("cheerio")
 
 import { PLDBFolder } from "../../Folder"
 import { PLDBFile } from "../../File"
-import { getLinks } from "../../utils"
 
 const { Utils } = require("jtree/products/Utils.js")
 const { TreeNode } = require("jtree/products/TreeNode.js")
@@ -54,11 +53,13 @@ class Website {
     const { file } = this
     if (file.has("githubRepo")) return this
 
-    let potentialHits = getLinks(this.content.toLowerCase()).filter(link => {
-      link = link.trim()
-      const path = new URL(link).pathname.split("/")
-      return link.includes("https://github.com") && path.length === 3
-    })
+    let potentialHits = Utils.getLinks(this.content.toLowerCase()).filter(
+      link => {
+        link = link.trim()
+        const path = new URL(link).pathname.split("/")
+        return link.includes("https://github.com") && path.length === 3
+      }
+    )
     //todo: improve
     potentialHits = lodash.uniq(potentialHits)
     if (potentialHits.length === 1)

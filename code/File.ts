@@ -1,5 +1,5 @@
 import { Example, FeaturePrediction, FolderInterface } from "./Interfaces"
-import { getJoined, isLanguage, imemo, patchTree } from "./utils"
+import { imemo } from "./utils"
 const { TreeNode } = require("jtree/products/TreeNode.js")
 const lodash = require("lodash")
 const { TreeBaseFile } = require("jtree/products/treeBase.node.js")
@@ -11,6 +11,46 @@ const includeInCsv = <Type>(
   descriptor: TypedPropertyDescriptor<Type>
 ): void => {
   runtimeCsvProps[propertyName] = ""
+}
+
+const getJoined = (node, keywords): string => {
+  const words = keywords
+    .map(word => node.get(word) || "")
+    .filter(i => i)
+    .join(" ")
+    .split(" ")
+  return lodash.uniq(words).join(" ")
+}
+
+// todo: move to grammar
+const isLanguage = type => {
+  const nonLanguages = {
+    vm: true,
+    linter: true,
+    library: true,
+    webApi: true,
+    characterEncoding: true,
+    cloud: true,
+    editor: true,
+    filesystem: true,
+    feature: true,
+    packageManager: true,
+    os: true,
+    application: true,
+    framework: true,
+    standard: true,
+    hashFunction: true,
+    compiler: true,
+    decompiler: true,
+    binaryExecutable: true,
+    binaryDataFormat: true,
+    equation: true,
+    interpreter: true,
+    computingMachine: true,
+    dataStructure: true
+  }
+
+  return nonLanguages[type] ? false : true
 }
 
 // Todo: move to Grammar with an enum concept?
@@ -206,7 +246,7 @@ class PLDBFile extends TreeBaseFile {
     const { supersetOfFile } = this
     const featuresNode = this.getNode(`features`) ?? new TreeNode()
     return supersetOfFile
-      ? patchTree(supersetOfFile.extendedFeaturesNode, featuresNode)
+      ? supersetOfFile.extendedFeaturesNode.patch(featuresNode)
       : featuresNode
   }
 
@@ -566,4 +606,4 @@ class PLDBFile extends TreeBaseFile {
   }
 }
 
-export { PLDBFile, runtimeCsvProps }
+export { PLDBFile, runtimeCsvProps, isLanguage }
