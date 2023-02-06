@@ -268,10 +268,9 @@ ${editForm(submission, "Error")}`
     if (content.length > 200000) throw new Error(`Submission too large`)
 
     // Remove all return characters
-    content = content.replace(/\r/g, "")
+    content = Utils.removeEmptyLines(Utils.removeReturnChars(content))
 
-    const pldbBase = this.folder
-    const programParser = pldbBase.grammarProgramConstructor
+    const programParser = this.folder.grammarProgramConstructor
     const parsed = new programParser(content)
 
     const errs = parsed.getAllErrors()
@@ -295,7 +294,7 @@ ${editForm(submission, "Error")}`
       throw new Error(`Must provide at least 3 facts about the language.`)
 
     return {
-      content: this.folder.prettifyContent(content)
+      content: parsed.sortFromSortTemplate().toString()
     }
   }
 

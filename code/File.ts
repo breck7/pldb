@@ -593,14 +593,12 @@ class PLDBFile extends TreeBaseFile {
     return this.findNodes(keyword).map(i => i.getContent())
   }
 
-  // todo: move upstream to TreeBase or Grammar
-  prettify() {
-    const str = this.base.prettifyContent(this.childrenToString())
-    this.setChildren(str)
+  sort() {
+    this.setChildren(this.parsed.sortFromSortTemplate().toString())
   }
 
   prettifyAndSave() {
-    this.prettify()
+    this.sort()
     this.save()
     return this
   }

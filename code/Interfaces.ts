@@ -30,7 +30,6 @@ interface FileInterface {
 }
 
 interface FolderInterface {
-  prettifyContent: Function
   predictNumberOfJobs: Function
   predictPercentile: Function
   predictNumberOfUsers: Function

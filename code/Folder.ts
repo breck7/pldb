@@ -391,7 +391,7 @@ class PLDBFolder extends TreeBaseFolder {
       })
       .filter(col => col.Values)
 
-    const sortTemplate = `title
+    const columnSortOrder = `title
 appeared
 type
 pldbId
@@ -411,7 +411,7 @@ website
 wikipedia`.split("\n")
 
     const sortedCols = []
-    sortTemplate.forEach(colName => {
+    columnSortOrder.forEach(colName => {
       const hit = cols.find(col => col.Column === colName)
       sortedCols.push(hit)
     })
@@ -420,7 +420,7 @@ wikipedia`.split("\n")
       .sortBy(cols, "Values")
       .reverse()
       .forEach(col => {
-        if (!sortTemplate.includes(col.Column)) sortedCols.push(col)
+        if (!columnSortOrder.includes(col.Column)) sortedCols.push(col)
       })
 
     sortedCols.forEach((col, index) => (col.Index = index + 1))
@@ -491,33 +491,6 @@ wikipedia`.split("\n")
       columnMetadataColumnNames,
       colNamesForCsv
     }
-  }
-
-  get sortTemplate() {
-    return Disk.read(path.join(databaseFolder, "sortTemplate.txt")).replace(
-      /\n\n/,
-      "\n"
-    )
-  }
-
-  @imemo
-  get sortIndices() {
-    const sortIndices = new Map()
-    this.sortTemplate.split("\n").forEach((word, index) => {
-      sortIndices.set(word, index)
-    })
-    return sortIndices
-  }
-
-  @imemo
-  get sortSections() {
-    const sections = new Map()
-    this.sortTemplate.split("#").forEach((section, sectionIndex) => {
-      section.split("\n").forEach(word => {
-        sections.set(word, sectionIndex)
-      })
-    })
-    return sections
   }
 
   get sources() {
@@ -610,41 +583,6 @@ wikipedia`.split("\n")
       langsWithKeywordsCount,
       rows: lodash.sortBy(rows, "count").reverse()
     }
-  }
-
-  // todo: move upstream to TreeBase or Grammar
-  prettifyContent(original: string) {
-    const { sortIndices, sortSections } = this
-    const noReturnChars = original.replace(/\r/g, "")
-    const noBlankLines = noReturnChars
-      .replace(/\n\n+/g, "\n")
-      .replace(/\n$/, "")
-    const programParser = this.grammarProgramConstructor
-    const program = new programParser(noBlankLines)
-
-    program.sort((nodeA, nodeB) => {
-      const aIndex = sortIndices.get(nodeA.getFirstWord())
-      const bIndex = sortIndices.get(nodeB.getFirstWord())
-      if (aIndex === undefined) {
-        console.error(`sortTemplate is missing "${nodeA.getFirstWord()}"`)
-      }
-      const a = aIndex ?? 1000
-      const b = bIndex ?? 1000
-      return a > b ? 1 : a < b ? -1 : nodeA.getLine() > nodeB.getLine()
-    })
-
-    // pad sections
-    let currentSection = 0
-    program.forEach(node => {
-      const nodeSection = sortSections.get(node.getFirstWord())
-      const sectionHasAdvanced = nodeSection > currentSection
-      if (sectionHasAdvanced) {
-        currentSection = nodeSection
-        node.prependSibling("") // Put a blank line before this section
-      }
-    })
-
-    return program.toString().replace(/\n+$/, "") + "\n" // always end with a newline
   }
 }
 

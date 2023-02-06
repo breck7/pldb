@@ -137,7 +137,7 @@ testTree.ensureNoErrorsInDb = areEqual => {
 	areEqual(errors.length, 0, "no errors in db")
 }
 
-testTree.ensurePrettifiedCausesNoSemanticChanges = areEqual => {
+testTree.ensureSortCausesNoSemanticChanges = areEqual => {
 	// Arrange
 	const pre = pldbBase.typedMap
 
@@ -145,18 +145,21 @@ testTree.ensurePrettifiedCausesNoSemanticChanges = areEqual => {
 	pldbBase.forEach((file, index) => {
 		const originalTypedMap = file.typedMap
 		if (index > 10) return
-		file.prettify()
+		file.sort()
+		const sorted = file.typedMap
 
 		areEqual(
 			lodash.isEqual(originalTypedMap, file.typedMap),
 			true,
-			"typed map doesnt change after prettify"
+			"typed map doesnt change after sort"
 		)
 
-		const result = file.toString()
-		file.prettify()
-		const result2 = file.toString()
-		areEqual(result, result2, `prettify is stable`)
+		const sortedOnce = file.toString()
+		file.sort()
+
+		const sortedTwice = file.toString()
+
+		areEqual(sortedOnce, sortedTwice, `sort is stable`)
 	})
 }
 
