@@ -71,15 +71,15 @@ const cssLibs = "node_modules/jtree/sandbox/lib/codemirror.css node_modules/jtre
   .map(name => ` <link rel="stylesheet" type="text/css" href="/${name}" />`)
   .join("\n")
 
-const scripts = `treeBaseFrontEndApp.js
-node_modules/jtree/products/Utils.browser.js
+const scripts = `node_modules/jtree/products/Utils.browser.js
 node_modules/jtree/products/TreeNode.browser.js
 node_modules/jtree/products/GrammarLanguage.browser.js
 node_modules/jtree/products/GrammarCodeMirrorMode.browser.js
 pldb.browser.js
 tql.browser.js
 node_modules/jtree/sandbox/lib/codemirror.js
-node_modules/jtree/sandbox/lib/show-hint.js`
+node_modules/jtree/sandbox/lib/show-hint.js
+treeBaseFrontEndApp.js`
   .split("\n")
   .map(name => ` <script src="/${name}"></script>`)
   .join("\n")
