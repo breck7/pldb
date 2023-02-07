@@ -612,7 +612,12 @@ class PLDBFile extends TreeBaseFile {
 
   sort() {
     delete this._parsed
-    this.setChildren(this.parsed.sortFromSortTemplate().toString())
+    this.setChildren(
+      this.parsed
+        .sortFromSortTemplate()
+        .toString()
+        .replace(/\n+$/g, "") + "\n"
+    )
   }
 
   prettifyAndSave() {

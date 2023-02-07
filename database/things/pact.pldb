@@ -1,10 +1,13 @@
 title Pact
 appeared 2016
 type contractLanguage
+isPublicDomain false
+creators Stuart Popejoy
 website http://kadena.io/try-pact/
+documentation https://pact-language.readthedocs.io/en/stable/
 country United States
 originCommunity Kadena LLC
-creators Stuart Popejoy
+
 writtenIn haskell
 
 example
@@ -19,13 +22,11 @@ githubRepo https://github.com/kadena-io/pact
  description The Pact Smart Contract Language
  issues 110
 
-isOpenSource true
-isPublicDomain false
-documentation https://pact-language.readthedocs.io/en/stable/
-
 hackerNewsDiscussions
  id|title|time|timestamp|by|comments|score
  12944077|Show HN: Pact – a safe smart contract language (web editor)|2016-11-13 16:30:19 UTC|1479054619|buckie|2|18
+
+isOpenSource true
 
 isbndb 3
  year|publisher|title|authors|isbn13
