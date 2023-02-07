@@ -1,9 +1,27 @@
-title pact
+title Pact
 appeared 2016
 type contractLanguage
 website http://kadena.io/try-pact/
 country United States
 originCommunity Kadena LLC
+creators Stuart Popejoy
+writtenIn haskell
+
+example
+ (map (+ 1) [1 2 3])
+
+githubRepo https://github.com/kadena-io/pact
+ stars 536
+ forks 93
+ subscribers 47
+ created 2016
+ updated 2023
+ description The Pact Smart Contract Language
+ issues 110
+
+isOpenSource true
+isPublicDomain false
+documentation https://pact-language.readthedocs.io/en/stable/
 
 hackerNewsDiscussions
  id|title|time|timestamp|by|comments|score
