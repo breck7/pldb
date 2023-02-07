@@ -1,0 +1,46 @@
+comment https://esp.ethereum.foundation/academic-grants-2023/apply
+
+metaTags
+scrollCssTag
+
+title Grant Proposal: adding detailed data on the design of Smart Contract Languages to PLDB
+
+startColumns 3
+
+# Project Abstract
+
+* Small changes to the design of programming languages can have big effects. A language might be one tweak away from attacting 100x more users or developers.
+
+* In the past it's been very hard and time consuming for language designers to figure out what is wrong with their languages and what they could do better. But now there's a Programming Language DataBase (PLDB). PLDB is a public domain database of over 100,000 facts on over 4,000 programming languages to help language designers make better design decisions faster. It is open source and distributed as a website with search engine as well as a clean CSV file.
+ https://pldb.com/ PLDB
+
+* Currently, PLDB has a small amount of data on contract languages like Solidity. This proposal is to do a deep dive on the top 30 contract languages in existence, filling in at least 100 columns for each, adding over 3,000 facts to our database to make it easier for Ethereum Contact Language designers to make the best decisions in the least amount of time.
+ https://pldb.com/languages/solidity.html Solidity
+
+# Objectives
+* Collect data on all mainstream contract languages and expand our data on contract languages from our current 7 to over 30 with at least 100 facts on each, with a particularly focus on improving our data on Solidity.
+ https://pldb.com/search?q=select+appeared+githubRepo.stars+website+lineCommentToken%0D%0Awhere+type+%3D+contractLanguage%0D%0Arename+githubRepo.stars+Stars%0D%0AsortBy+appeared current 7
+
+# Outcomes
+* The core design team of Solidity will be able to frequently reference PLDB to figure out how they can improve the design of their language and better support their developer ecosystem. Other innovators in the Ethereum community will be able to explore other contract languages and perhaps invent the next great one.
+
+# Grant Scope
+* Over 30 contract languages will be added to PLDB with in depth data on features, history, ecosystem, and usage. In addition, 3 blog posts analyzing that data will be created.
+
+# Project Team
+* PLDB has over 100 open source contributors and approximately 5-10 regular contributors. Breck Yunits will lead this contract language project and delegate some research work to various team members.
+
+# Background
+* PLDB.com
+ https://pldb.com/
+* Breck Yunits on Google Scholar
+ https://scholar.google.com/citations?user=6MBfSY8AAAAJ&hl=en
+
+# Methodology
+* For adding the data we will follow the regular proven process at work on PLDB.com which includes manual data entry, crawlers, AI aides, and old fashioned journalism outreach. Data is stored in plaintext Tree Notation form and version controlled with git so fully auditable.
+
+# Timeline
+* All data and posts will be publicly available within 60 days.
+
+# Budget
+* USD $60,000 for staff and engineering costs.
