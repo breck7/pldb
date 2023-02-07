@@ -1,9 +1,13 @@
-import { imemo, linkManyAftertext } from "./utils"
+import { imemo } from "./utils"
 import { FeatureSummary } from "./Interfaces"
 const lodash = require("lodash")
 const { Utils } = require("jtree/products/Utils")
 
 const { shiftRight, removeReturnChars } = Utils
+
+const linkManyAftertext = (links: string[]) =>
+  links.map((link, index) => `${index + 1}.`).join(" ") + // notice the dot is part of the link. a hack to make it more unique for aftertext matching.
+  links.map((link, index) => `\n ${link} ${index + 1}.`).join("")
 
 // One feature maps to one grammar file that extends abstractFeatureNode
 class Feature {

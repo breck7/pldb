@@ -6,7 +6,9 @@ const { TreeNode } = require("jtree/products/TreeNode.js")
 const { Utils } = require("jtree/products/Utils.js")
 import { PLDBFile } from "./File"
 
-import { linkManyAftertext } from "./utils"
+const linkManyAftertext = (links: string[]) =>
+  links.map((link, index) => `${index + 1}.`).join(" ") + // notice the dot is part of the link. a hack to make it more unique for aftertext matching.
+  links.map((link, index) => `\n ${link} ${index + 1}.`).join("")
 
 const cleanAndRightShift = str =>
   Utils.shiftRight(Utils.removeReturnChars(str), 1)
