@@ -291,3 +291,30 @@ li.scrollParagraphComponent {
 }
 
 /* end search css */
+
+/* edit form code */
+
+#editForm {
+  width: 100%;
+  height: 75%;
+}
+.cell {
+  width: 48%;
+  display: inline-block;
+  vertical-align: top;
+  padding: 5px;
+}
+.linkButton {
+  color: blue;
+  cursor: pointer;
+}
+#patch {
+  width: 600px;
+  height: 100px;
+}
+#quickLinks,
+#missingRecommendedColumns {
+  font-size: 80%;
+}
+
+/* end edit form code */

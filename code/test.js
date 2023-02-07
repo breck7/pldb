@@ -23,9 +23,9 @@ const grammarNode = require("jtree/products/grammar.nodejs.js")
 const { ScrollFolder, ScrollCli, ScrollFile } = require("scroll-cli")
 const { Disk } = require("jtree/products/Disk.node.js")
 const { TreeNode } = require("jtree/products/TreeNode.js")
+const { Utils } = require("jtree/products/Utils.js")
 
 const { PLDBFolder } = require("./Folder")
-const { getCleanedId } = require("./utils")
 
 const pldbBase = PLDBFolder.getBase().loadFolder()
 const rootDir = path.join(__dirname, "..")
@@ -94,7 +94,7 @@ testTree.ensureGoodFilenames = areEqual => {
 	let invalidIds = 0
 	let validIds = 0
 	pldbBase.forEach(file => {
-		if (file.id !== getCleanedId(file.id)) invalidIds++
+		if (file.id !== Utils.titleToPermalink(file.id)) invalidIds++
 		else validIds++
 	})
 
@@ -105,7 +105,11 @@ testTree.ensureGoodFilenames = areEqual => {
 	}
 
 	pldbBase.forEach(file =>
-		areEqual(file.id, getCleanedId(file.id), `${file.id} is a valid pldbId`)
+		areEqual(
+			file.id,
+			Utils.titleToPermalink(file.id),
+			`${file.id} is a valid pldbId`
+		)
 	)
 }
 

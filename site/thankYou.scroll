@@ -1,0 +1,18 @@
+import header.scroll
+title Thank you!
+
+* Success! Your contributions have been committed: <span id="commitHash"></span>
+
+html
+ <script>
+    const urlParams = new URLSearchParams(window.location.hash.replace("#", ""))
+    const commit = urlParams.get("commit")
+    if (commit)
+        document.getElementById(
+            "commitHash"
+        ).innerHTML = `<a target="_pldb" href="https://github.com/breck7/pldb/commit/${commit}">${commit.substring(0, 7)}</a>`
+ </script>
+
+* From all of us at PLDB, as well as all future readers, thank you!
+
+import footer.scroll

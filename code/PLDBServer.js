@@ -31,41 +31,6 @@ const lastCommitHashInFolder = (cwd = __dirname) =>
     .toString()
     .trim()
 
-const editForm = (content = "", title = "", missingRecommendedColumns = []) =>
-  `${title ? `title ${title}` : ""}
-html
- <form method="POST" id="editForm">
- <div class="cell" id="leftCell">
- <textarea name="content" id="content">${Utils.htmlEscaped(content).replace(
-   /\n/g,
-   "\n "
- )}</textarea>
- <div id="tqlErrors"></div> <!-- todo: cleanup. -->
- </div>
- <div class="cell">
- <div id="quickLinks"></div>
- <div class="missingRecommendedColumns">${
-   missingRecommendedColumns.length
-     ? `<br><b>Missing columns:</b><br>${missingRecommendedColumns
-         .map(col => col.Column)
-         .join("<br>")}`
-     : ""
- }</div>
- <div id="exampleSection"></div>
- </div>
- <br><br>
- <div>
- Submitting as: <span id="authorLabel"></span> <a href="#" onClick="app.changeAuthor()">change</a>
- </div>
- <br>
- <div>
- <input type="hidden" name="author" id="author">
- <!-- <input type="button" id="submitButton" value="Save" onClick="alert('You have no call sign set. PLDB.com is temporarily limited while we resolve traffic issues. Please email liability@pldb.com if you want a call sign.')" /> --!>
- </div>
- <p>Remember, you can always submit updates to this file using the traditional GitHub Pull Request flow.</p>
- <input type="submit" value="Save" id="submitButton" onClick="app.saveAuthorIfUnsaved()"/>
- </form>`
-
 const cssLibs = "node_modules/jtree/sandbox/lib/codemirror.css node_modules/jtree/sandbox/lib/codemirror.show-hint.css"
   .split(" ")
   .map(name => ` <link rel="stylesheet" type="text/css" href="/${name}" />`)
@@ -123,19 +88,8 @@ class PLDBServer extends TreeBaseServer {
 
     const { app } = this
     app.get("/create", (req, res) =>
-      res.send(this.scrollToHtml(editForm(undefined, "Add a language")))
+      res.send(this.scrollToHtml("title Add a language"))
     )
-
-    const errorForm = (submission, error, res) => {
-      res.status(500)
-      res.send(
-        this.scrollToHtml(
-          `html
- <div style="color: red;">${error}</div>
-${editForm(submission, "Error")}`
-        )
-      )
-    }
 
     const notFound = (id, res) => {
       res.status(500)
@@ -148,6 +102,18 @@ ${editForm(submission, "Error")}`
       res.redirect(`/search?q=includes+${req.query.q}`)
     )
 
+    app.get("/edit.json/:id", (req, res) => {
+      const { id } = req.params
+      const file = this.folder.getFile(id)
+      if (!file) return notFound(id, res)
+      res.send(
+        JSON.stringify({
+          content: file.childrenToString(),
+          missingRecommendedColumns: file.missingRecommendedColumns
+        })
+      )
+    })
+
     app.get("/edit/:id", (req, res) => {
       const { id } = req.params
       if (id.endsWith(".pldb")) return res.redirect(id.replace(".pldb", ""))
@@ -156,58 +122,66 @@ ${editForm(submission, "Error")}`
       if (!file) return notFound(id, res)
 
       res.send(
-        this.scrollToHtml(
-          editForm(
-            file.childrenToString(),
-            `Editing ${file.id}`,
-            file.missingRecommendedColumns
-          ) + `\nkeyboardNav ${file.previousRanked.id} ${file.nextRanked.id}`
-        )
+        this.scrollToHtml(`title Editing ${file.id}
+\nkeyboardNav ${file.previousRanked.id} ${file.nextRanked.id}`)
       )
     })
 
-    app.post("/create", async (req, res) => {
-      const { content, author } = req.body
-      const result = await this.create(content, author)
-      if (result.success) res.redirect(result.redirectUrl)
-      else errorForm(content, result.error, res)
-    })
-
-    app.post("/edit/:id", async (req, res) => {
-      const { id } = req.params
-      const file = this.folder.getFile(id)
-      if (!file) return notFound(id, res)
-      const { content, author } = req.body
+    app.post("/saveCommitAndPush", async (req, res) => {
+      const { author } = req.body
+      const patch = Utils.removeReturnChars(req.body.patch).trim()
+      this.appendToPostLog(author, patch)
+      const tree = new TreeNode(patch)
+      const filenames = []
 
       try {
-        this.appendToPostLog(id, author, content)
-
-        const validateSubmissionResults = this.validateSubmission(content, file)
-
-        file.setChildren(validateSubmissionResults.content)
-        file.prettifyAndSave()
-
         const { authorName, authorEmail } = parseGitAuthor(author)
-
         Utils.isValidEmail(authorEmail)
+        const create = tree.getNode("create")
+        if (create) {
+          const data = create.childrenToString()
 
-        const commitResult = await this.commitFilePullAndPush(
-          file.filename,
-          `Updated '${file.id}'`,
+          // todo: audit
+          const validateSubmissionResults = this.validateSubmission(data)
+          const newFile = this.folder.createFile(
+            validateSubmissionResults.content
+          )
+
+          filenames.push(newFile.filename)
+        }
+
+        tree.delete("create")
+
+        tree.forEach(node => {
+          const id = node.getWord(0).replace(".pldb", "")
+          const file = this.folder.getFile(id)
+          if (!file) throw new Error(`File '${id}' not found.`)
+
+          const validateSubmissionResults = this.validateSubmission(
+            node.childrenToString(),
+            file
+          )
+          file.setChildren(validateSubmissionResults.content)
+          file.prettifyAndSave()
+          console.log(`Saved '${file.filename}'`)
+          filenames.push(file.filename)
+        })
+
+        const commitResult = await this.commitFilesPullAndPush(
+          filenames,
           authorName,
           authorEmail
         )
 
-        if (!commitResult.success)
-          return res.redirect(
-            `${id}#errorMessage=${commitResult.error.message}`
-          )
-
-        res.redirect(`${id}#commit=${commitResult.commitHash}`)
         this.reloadNeeded()
+        res.redirect(`/thankYou.html#commit=` + commitResult.commitHash)
       } catch (error) {
         console.error(error)
-        errorForm(content, error, res)
+        res
+          .status(500)
+          .send(
+            this.scrollToHtml(`html <div style="color: red;">${error}</div>`)
+          )
       }
     })
 
@@ -224,43 +198,6 @@ ${editForm(submission, "Error")}`
   reloadNeeded() {
     // todo: use some pattern like mobx or something to clear cached computeds?
     this.folder = PLDBFolder.getBase().loadFolder()
-  }
-
-  async create(content, author) {
-    try {
-      this.appendToPostLog("create", author, content)
-
-      // todo: audit
-      const validateSubmissionResults = this.validateSubmission(content)
-      const newFile = this.folder.createFile(validateSubmissionResults.content)
-
-      const { authorName, authorEmail } = parseGitAuthor(author)
-
-      const commitResult = await this.commitFilePullAndPush(
-        newFile.filename,
-        `Added '${newFile.id}'`,
-        authorName,
-        authorEmail
-      )
-
-      if (!commitResult.success)
-        return {
-          success: false,
-          redirectUrl: `edit/${newFile.id}#errorMessage=${commitResult.error.message}`
-        }
-
-      this.reloadNeeded()
-
-      return {
-        success: true,
-        redirectUrl: `edit/${newFile.id}#commit=${commitResult.commitHash}`
-      }
-    } catch (error) {
-      console.error(error)
-      return {
-        error
-      }
-    }
   }
 
   validateSubmission(content, fileBeingEdited) {
@@ -308,27 +245,10 @@ html
 ${cssLibs}
 ${scripts}
 
-css
- #editForm {
-  width: 100%;
-  height: 80%;
- }
- .cell {
-   width: 48%;
-   display: inline-block;
-   vertical-align: top;
-   padding: 5px;
- }
- #quickLinks, .missingRecommendedColumns {
-   font-size: 80%;
- }
-
-
-html
- <div id="successLink"></div>
- <div id="errorMessage" style="color: red;"></div>
-
 ${scrollContent}
+
+html <div id="successLink"></div><div id="errorMessage" style="color: red;"></div>
+html <div id="formHolder"></div>
 
 ${scrollFooter}
 `
@@ -385,15 +305,11 @@ ${scrollFooter}
     return this._git
   }
 
-  async commitFilePullAndPush(
-    filename,
-    commitMessage,
-    authorName,
-    authorEmail
-  ) {
+  async commitFilesPullAndPush(filenames, authorName, authorEmail) {
+    const commitMessage = filenames.join(" ")
     if (!this.gitOn) {
       console.log(
-        `Would commit "${filename}" with message "${commitMessage}" as author "${authorName} <${authorEmail}>"`
+        `Would commit "${commitMessage}" with author "${authorName} <${authorEmail}>"`
       )
       return {
         success: true,
@@ -410,8 +326,11 @@ ${scrollFooter}
       if (!Utils.isValidEmail(authorEmail))
         throw new Error(`Invalid email: ${authorEmail}`)
 
-      await git.add(filename)
-      const commitResult = await git.commit(commitMessage, filename, {
+      // for (const filename of filenames) {
+      //   await git.add(filename)
+      // }
+
+      const commitResult = await git.commit(commitMessage, filenames, {
         "--author": `${authorName} <${authorEmail}>`
       })
 
@@ -434,17 +353,15 @@ ${scrollFooter}
     }
   }
 
-  appendToPostLog(route, author, content) {
+  appendToPostLog(author = "", content = "") {
     // Write to log for backup in case something goes wrong.
     Disk.append(
       this.editLogPath,
       `post
- route ${route}
  time ${new Date().toString()}
- author
-  ${author.replace(/\n/g, "\n ")}
+ author ${author.replace(/\n/g, " ")}
  content
-  ${content.replace(/\n/g, "\n ")}\n`
+  ${content.replace(/\n/g, "\n  ")}\n`
     )
   }
 

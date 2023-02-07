@@ -7,12 +7,13 @@ import {
   StringMap
 } from "./Interfaces"
 import { computeRankings } from "./Rankings"
-import { getCleanedId, imemo } from "./utils"
+import { imemo } from "./utils"
 
 const path = require("path")
 const lodash = require("lodash")
 const { Table } = require("jtree/products/jtable.node.js")
 const { TreeNode } = require("jtree/products/TreeNode.js")
+const { Utils } = require("jtree/products/Utils.js")
 const { TreeBaseFolder } = require("jtree/products/treeBase.node.js")
 const { Disk } = require("jtree/products/Disk.node.js")
 
@@ -87,7 +88,7 @@ class PLDBFolder extends TreeBaseFolder {
     return (
       searchIndex.get(query) ||
       searchIndex.get(query.toLowerCase()) ||
-      searchIndex.get(getCleanedId(query))
+      searchIndex.get(Utils.titleToPermalink(query))
     )
   }
 
@@ -226,7 +227,7 @@ class PLDBFolder extends TreeBaseFolder {
   }
 
   makeId(title: string) {
-    let id = getCleanedId(title)
+    let id = Utils.titleToPermalink(title)
     let newId = id
     if (!this.getFile(newId)) return newId
 

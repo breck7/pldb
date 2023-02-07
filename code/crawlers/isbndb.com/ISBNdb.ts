@@ -2,7 +2,7 @@
 
 import { PLDBFolder } from "../../Folder"
 import { PLDBFile } from "../../File"
-import { PoliteCrawler, getCleanedId } from "../../utils"
+import { PoliteCrawler } from "../../utils"
 
 const { Utils } = require("jtree/products/Utils.js")
 const { TreeNode } = require("jtree/products/TreeNode.js")
@@ -50,7 +50,7 @@ class PLDBFileForBooks {
 	}
 
 	get filename() {
-		return getCleanedId(this.query)
+		return Utils.titleToPermalink(this.query)
 	}
 
 	get query() {

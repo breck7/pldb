@@ -2,7 +2,7 @@
 
 import { PLDBFolder } from "../../Folder"
 import { PLDBFile } from "../../File"
-import { getCleanedId, PoliteCrawler } from "../../utils"
+import { PoliteCrawler } from "../../utils"
 const lodash = require("lodash")
 const { Utils } = require("jtree/products/Utils.js")
 
@@ -35,7 +35,7 @@ class PLDBFileWithWikipedia {
   }
 
   get cacheFilename() {
-    return getCleanedId(this.sourceId)
+    return Utils.titleToPermalink(this.sourceId)
   }
 
   get cachePath() {

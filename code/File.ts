@@ -552,9 +552,10 @@ class PLDBFile extends TreeBaseFile {
     return this.getParent() as FolderInterface
   }
 
-  @imemo
+  _parsed
   get parsed() {
-    return super.parsed
+    if (!this._parsed) this._parsed = super.parsed
+    return this._parsed
   }
 
   @includeInCsv
@@ -610,6 +611,7 @@ class PLDBFile extends TreeBaseFile {
   }
 
   sort() {
+    delete this._parsed
     this.setChildren(this.parsed.sortFromSortTemplate().toString())
   }
 

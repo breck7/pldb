@@ -4,7 +4,7 @@
 
 import { PLDBFolder } from "../../Folder"
 import { PLDBFile } from "../../File"
-import { PoliteCrawler, getCleanedId } from "../../utils"
+import { PoliteCrawler } from "../../utils"
 
 const { TreeNode } = require("jtree/products/TreeNode.js")
 const { Utils } = require("jtree/products/Utils.js")
@@ -40,7 +40,7 @@ class PLDBFileForSemanticScholar {
 	}
 
 	get filename() {
-		return getCleanedId(this.query)
+		return Utils.titleToPermalink(this.query)
 	}
 
 	get query() {

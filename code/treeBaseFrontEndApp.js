@@ -18,6 +18,9 @@ const genDefaultAuthor = () => {
 }
 const defaultAuthor = genDefaultAuthor()
 
+const STAGED_KEY = "staged"
+const TEXTAREA_ID = "fileContent"
+
 class TreeBaseFrontEndApp {
 	get author() {
 		try {
@@ -58,8 +61,7 @@ class TreeBaseFrontEndApp {
 	}
 
 	_onCodeKeyUp() {
-		const { codeMirrorInstance } = this
-		const code = codeMirrorInstance.getValue()
+		const code = this.value
 		if (this._code === code) return
 		this._code = code
 		this.program = new this.programCompiler(code)
@@ -71,50 +73,127 @@ class TreeBaseFrontEndApp {
 		document.getElementById("tqlErrors").innerHTML = errMessage
 	}
 
-	start() {
-		if (this.route === "search") return this.startSearchPage()
-		if (document.getElementById("submitButton")) this.startForm()
-		if (this.route === "create") this.startCreateForm()
+	async start() {
+		const { route } = this
+		if (route === "search") return this.startSearchPage()
+
+		this.renderForm()
+		this.startPLDBCodeMirror()
+		this.bindStageButton()
+		this.updateStagedStatus()
+		this.updateAuthor()
 
 		const urlParams = new URLSearchParams(window.location.hash.replace("#", ""))
-		const commit = urlParams.get("commit")
 		const errorMessage = urlParams.get("errorMessage")
 
-		if (commit) {
-			const base = "https://github.com/breck7/pldb/commit/"
-			document.getElementById(
-				"successLink"
-			).innerHTML = `<a target="_pldb" href="${base +
-				commit}">Success! Changes published as ${commit.substring(0, 7)}</a>`
-		}
 		if (errorMessage)
 			document.getElementById(
 				"errorMessage"
 			).innerHTML = `Error: ${Utils.htmlEscaped(errorMessage)}`
 
 		window.location.hash = ""
-	}
 
-	startForm() {
-		Mousetrap.bind("mod+s", evt => {
-			document.getElementById("submitButton").click()
-			evt.preventDefault()
-			return false
-		})
-		this.updateAuthor()
-		this.updateQuickLinks()
-		this.startPLDBCodeMirror()
-	}
+		if (route === "edit") {
+			await this.initEditData()
 
-	startCreateForm() {
-		document.getElementById(
-			"exampleSection"
-		).innerHTML = `Example:<br><pre>title Elixir
+			this.updateQuickLinks()
+		}
+		if (route === "create") {
+			document.getElementById(
+				"exampleSection"
+			).innerHTML = `Example:<br><pre>title Elixir
 appeared 2011
 type pl
 creators José Valim
 website https://elixir-lang.org/
 githubRepo https://github.com/elixir-lang/elixir</pre>`
+		}
+	}
+
+	async initEditData(currentValue, missingRecommendedColumns) {
+		const { filename, currentFileId } = this
+		const localValue = this.stagedFiles.getNode(filename)
+		let response = await fetch(`/edit.json/${currentFileId}`)
+		const data = await response.json()
+
+		this.codeMirrorInstance.setValue(
+			localValue ? localValue.childrenToString() : data.content
+		)
+		document.getElementById(
+			"missingRecommendedColumns"
+		).innerHTML = `<br><b>Missing columns:</b><br>${data.missingRecommendedColumns
+			.map(col => col.Column)
+			.join("<br>")}`
+	}
+
+	updateStagedStatus() {
+		const el = document.getElementById("stagedStatus")
+		const { stagedFiles } = this
+		el.style.display = "none"
+		if (!stagedFiles.length) return
+		document.getElementById("patch").value = stagedFiles.toString()
+		el.style.display = "block"
+	}
+
+	bindStageButton() {
+		const el = document.getElementById("stageButton")
+		el.onclick = () => {
+			const tree = this.stagedFiles
+			tree.touchNode(this.filename).setChildren(this.value)
+			this.setStage(tree.toString())
+			this.updateStagedStatus()
+		}
+
+		Mousetrap.bind("mod+s", evt => {
+			el.click()
+			evt.preventDefault()
+			return false
+		})
+	}
+
+	setStage(str) {
+		this.store.setItem(STAGED_KEY, str)
+		document.getElementById("patch").value = str
+	}
+
+	get stagedFiles() {
+		const str = this.store.getItem(STAGED_KEY)
+		return str ? new TreeNode(str) : new TreeNode()
+	}
+
+	renderForm() {
+		document.getElementById(
+			"formHolder"
+		).innerHTML = `<form method="POST" action="/saveCommitAndPush" id="stagedStatus" style="display: none;">
+ <div>You have a patch ready to submit. Author is set as: <span id="authorLabel" class="linkButton" onClick="app.changeAuthor()"></span></div>
+ <textarea id="patch" name="patch" readonly></textarea><br>
+ <input type="hidden" name="author" id="author" />
+ <input type="submit" value="Commit and push" id="saveCommitAndPushButton" onClick="app.saveAuthorIfUnsaved()"/> <a class="linkButton" onClick="app.clearChanges()">Clear local changes</a>
+</form>
+<div id="editForm">
+ <div class="cell" id="leftCell">
+   <textarea id="${TEXTAREA_ID}"></textarea>
+   <div id="tqlErrors"></div> <!-- todo: cleanup. -->
+ </div>
+ <div class="cell">
+   <div id="quickLinks"></div>
+   <div id="missingRecommendedColumns"></div>
+   <div id="exampleSection"></div>
+ </div>
+ <div>
+   <button id="stageButton">Stage</button>
+ </div>
+</div>`
+	}
+
+	clearChanges() {
+		if (
+			confirm(
+				"Are you sure you want to delete all local changes? This cannot be undone."
+			)
+		)
+			this.setStage("")
+		this.updateStagedStatus()
 	}
 
 	async startPLDBCodeMirror() {
@@ -126,13 +205,25 @@ githubRepo https://github.com/elixir-lang/elixir</pre>`
 			CodeMirror
 		)
 			.register()
-			.fromTextAreaWithAutocomplete(document.getElementById("content"), {
+			.fromTextAreaWithAutocomplete(document.getElementById(TEXTAREA_ID), {
 				lineWrapping: false,
 				lineNumbers: true
 			})
 
 		this.codeMirrorInstance.setSize(this.codeMirrorWidth, 500)
 		this.codeMirrorInstance.on("keyup", () => this._onCodeKeyUp())
+	}
+
+	get currentFileId() {
+		return location.pathname.split("/").pop()
+	}
+
+	get filename() {
+		return this.currentFileId + ".pldb"
+	}
+
+	get value() {
+		return this.codeMirrorInstance.getValue()
 	}
 
 	get codeMirrorWidth() {
@@ -176,19 +267,15 @@ githubRepo https://github.com/elixir-lang/elixir</pre>`
 		this.updateAuthor()
 	}
 
-	get content() {
-		return document.getElementById("content").value
-	}
-
 	get route() {
-		return location.pathname.split("/").pop()
+		return location.pathname.split("/")[1]
 	}
 
 	updateQuickLinks() {
-		const { content } = this
-		if (!content) return
-		const tree = new TreeNode(content)
-		const id = tree.get("title")
+		const code = this.codeMirrorInstance.getValue()
+		if (!code) return
+		const tree = new TreeNode(code)
+		const title = tree.get("title")
 		const references = tree
 			.findNodes("reference")
 			.map(node => "Reference: " + node.getContent())
@@ -199,22 +286,22 @@ githubRepo https://github.com/elixir-lang/elixir</pre>`
 
 		const permalink = this.route
 		document.getElementById("quickLinks").innerHTML =
-			Utils.linkify(`<b>PLDB on ${id}:</b><br>
+			Utils.linkify(`<b>PLDB on ${title}:</b><br>
 Git: https://github.com/breck7/pldb/blob/main/database/things/${permalink}.pldb<br>
 HTML page: https://pldb.com/languages/${permalink}.html
 <br><br>
-<b>Links about ${id}:</b><br>
+<b>Links about ${title}:</b><br>
 ${links.join("<br>")}
 ${references.join("<br>")}<br><br>
 
-<b>Search for more information about ${id}:</b><br>
-Google: https://www.google.com/search?q=${id}+programming+language<br>
-Google w/time: https://www.google.com/search?q=${id}+programming+language&tbs=cdr%3A1%2Ccd_min%3A1%2F1%2F1980%2Ccd_max%3A12%2F31%2F1995&tbm=<br>
-Google Scholar: https://scholar.google.com/scholar?q=${id}<br>
-Google Groups: https://groups.google.com/forum/#!search/${id}<br>
-Google Trends: https://trends.google.com/trends/explore?date=all&q=${id}<br>
-DDG: https://duckduckgo.com/?q=${id}<br>`) +
-			`Wayback Machine: <a target="_blank" href="https://web.archive.org/web/20220000000000*/${id}">https://web.archive.org/web/20220000000000*/${id}</a>`
+<b>Search for more information about ${title}:</b><br>
+Google: https://www.google.com/search?q=${title}+programming+language<br>
+Google w/time: https://www.google.com/search?q=${title}+programming+language&tbs=cdr%3A1%2Ccd_min%3A1%2F1%2F1980%2Ccd_max%3A12%2F31%2F1995&tbm=<br>
+Google Scholar: https://scholar.google.com/scholar?q=${title}<br>
+Google Groups: https://groups.google.com/forum/#!search/${title}<br>
+Google Trends: https://trends.google.com/trends/explore?date=all&q=${title}<br>
+DDG: https://duckduckgo.com/?q=${title}<br>`) +
+			`Wayback Machine: <a target="_blank" href="https://web.archive.org/web/20220000000000*/${title}">https://web.archive.org/web/20220000000000*/${title}</a>`
 	}
 }
 
