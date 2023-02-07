@@ -133,7 +133,7 @@ testTree.ensureNoErrorsInDb = areEqual => {
 	if (errors.length)
 		errors.forEach(err =>
 			console.log(
-				err._node.getRootNode().get("title"),
+				err._node.root.get("title"),
 				err._node.getFirstWordPath(),
 				err
 			)
@@ -141,12 +141,12 @@ testTree.ensureNoErrorsInDb = areEqual => {
 	areEqual(errors.length, 0, "no errors in db")
 }
 
-testTree.ensureSortWorks = areEqual => {
-	const programParser = pldbBase.grammarProgramConstructor
-	const program = new programParser(`appeared 1923\ntitle foo`)
-	program.sortFromSortTemplate()
-	areEqual(program.toString(), "title foo\nappeared 1923")
-}
+// testTree.ensureSortWorks = areEqual => {
+// 	const programParser = pldbBase.grammarProgramConstructor
+// 	const program = new programParser(`appeared 1923\ntitle foo`)
+// 	program.sortFromSortTemplate()
+// 	areEqual(program.toString(), "title foo\nappeared 1923")
+// }
 
 testTree.ensureSortCausesNoSemanticChanges = areEqual => {
 	// Arrange

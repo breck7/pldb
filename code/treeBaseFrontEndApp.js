@@ -278,7 +278,7 @@ githubRepo https://github.com/elixir-lang/elixir</pre>`
 		const title = tree.get("title")
 		const references = tree
 			.findNodes("reference")
-			.map(node => "Reference: " + node.getContent())
+			.map(node => "Reference: " + node.content)
 
 		const links = ["website", "githubRepo", "wikipedia"]
 			.filter(key => tree.has(key))

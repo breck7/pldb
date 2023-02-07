@@ -84,7 +84,7 @@ class CompilerExplorerImporter {
 			const { file, lang } = match
 			const { name } = lang
 			const node = file.touchNode(compilerExplorerKey)
-			if (!node.getContent()) {
+			if (!node.content) {
 				node.setContent(name)
 				file.prettifyAndSave()
 			}

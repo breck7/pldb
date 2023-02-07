@@ -23,7 +23,7 @@ ohayoCodeNode
  description Provide a direct link to analyze this data in Ohayo.
  javascript
   compile() {
-   const link = `https://ohayo.computer?filename=${this.getRootNode().permalink}.ohayo&data=${encodeURIComponent(this.childrenToString())}`
+   const link = `https://ohayo.computer?filename=${this.root.permalink}.ohayo&data=${encodeURIComponent(this.childrenToString())}`
    return `<div class="scrollQuoteComponent">Analyze this data yourself in <a href="${link}">Ohayo</a></div>`
   }
 observableNode
@@ -41,7 +41,7 @@ codeWithHeaderNode
  extends codeNode
  javascript
   compile() {
-   return `<div class="codeWithHeader"><div class="codeHeader">${this.getContent()}</div>${super.compile()}</div>`
+   return `<div class="codeWithHeader"><div class="codeHeader">${this.content}</div>${super.compile()}</div>`
   }
 bashNode
  cruxFromId
@@ -50,8 +50,8 @@ bashNode
  extends abstractScrollNode
  javascript
   compile() {
-   const command = this.getContent()
-   const file = this.getRootNode().file
+   const command = this.content
+   const file = this.root.file
    const cwd = file.folder.folder
    const output = require("child_process").execSync(command, {cwd})
    return `<div class="codeWithHeader"><div class="codeHeader">${command}</div><code class="scrollCodeBlockComponent">${output.toString().trim()}</code></div>`

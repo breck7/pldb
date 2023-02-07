@@ -118,7 +118,7 @@ class PyplImporter {
 			const { file, lang } = match
 			const { name } = lang
 			const node = file.touchNode(pyplKey)
-			if (!node.getContent()) {
+			if (!node.content) {
 				node.setContent(name)
 				file.prettifyAndSave()
 			}

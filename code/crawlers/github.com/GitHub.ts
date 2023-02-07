@@ -77,7 +77,7 @@ class PLDBFileWithGitHub {
 	}
 
 	get githubLanguageId() {
-		return this.languageNode.getContent()
+		return this.languageNode.content
 	}
 
 	get repoCountPath() {
@@ -330,7 +330,7 @@ class GitHubImporter {
 				interpreters
 			} = lang
 			const ghNode = file.touchNode("githubLanguage")
-			if (!ghNode.getContent()) ghNode.setContent(title)
+			if (!ghNode.content) ghNode.setContent(title)
 			ghNode.set("type", type)
 			if (extensions)
 				ghNode.set("fileExtensions", extensions.join(" ").replace(/\./g, ""))
@@ -369,7 +369,7 @@ class GitHubImporter {
 			const { file, lang } = match
 			const { type, title } = lang
 			const ghNode = file.touchNode("githubLanguage")
-			if (!ghNode.getContent()) {
+			if (!ghNode.content) {
 				ghNode.setContent(title)
 				file.prettifyAndSave()
 			}

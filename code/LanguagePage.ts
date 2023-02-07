@@ -71,7 +71,7 @@ commaTable
     const items = file.getNode(`semanticScholar`)
     if (!items) return ""
 
-    if (items.getContent() === "0") return ""
+    if (items.content === "0") return ""
 
     const tree = TreeNode.fromDelimited(items.childrenToString(), "|")
     tree.forEach(child => {
@@ -101,7 +101,7 @@ pipeTable
     const isbndb = file.getNode(`isbndb`)
     if (!isbndb) return ""
 
-    if (isbndb.getContent() === "0") return ""
+    if (isbndb.content === "0") return ""
 
     const tree = TreeNode.fromDelimited(isbndb.childrenToString(), "|")
     tree.forEach(child => {
@@ -194,7 +194,7 @@ pipeTable
       }
 
       const tokenPath = feature.token
-      const supported = node.getContent() === "true"
+      const supported = node.content === "true"
 
       table
         .appendLineAndChildren(
@@ -593,7 +593,7 @@ ${creatorsLinks}
 
     const githubBigQuery = file.getNode("githubBigQuery")
     if (githubBigQuery) {
-      const url = `https://api.github.com/search/repositories?q=language:${githubBigQuery.getContent()}`
+      const url = `https://api.github.com/search/repositories?q=language:${githubBigQuery.content}`
       const userCount = numeral(githubBigQuery.get("users")).format("0a")
       const repoCount = numeral(githubBigQuery.get("repos")).format("0a")
       facts.push(
@@ -869,7 +869,7 @@ ${creatorsLinks}
       .findNodes("funFact")
       .map(
         fact =>
-          `codeWithHeader ${`<a href='${fact.getContent()}'>Fun fact</a>`}:
+          `codeWithHeader ${`<a href='${fact.content}'>Fun fact</a>`}:
  ${cleanAndRightShift(lodash.escape(fact.childrenToString()))}`
       )
       .join("\n\n")

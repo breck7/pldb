@@ -490,7 +490,7 @@ class PLDBFile extends TreeBaseFile {
   }
 
   get otherReferences() {
-    return this.findNodes("reference").map(line => line.getContent())
+    return this.findNodes("reference").map(line => line.content)
   }
 
   get wikipediaTitle() {
@@ -549,7 +549,7 @@ class PLDBFile extends TreeBaseFile {
   }
 
   get base() {
-    return this.getParent() as FolderInterface
+    return this.parent as FolderInterface
   }
 
   _parsed
@@ -607,7 +607,7 @@ class PLDBFile extends TreeBaseFile {
   }
 
   getAll(keyword) {
-    return this.findNodes(keyword).map(i => i.getContent())
+    return this.findNodes(keyword).map(i => i.content)
   }
 
   sort() {

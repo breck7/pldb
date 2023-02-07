@@ -23,12 +23,12 @@ const nodeToFlatObject = parentNode => {
   const delimiter = "."
   let newObject = {}
   parentNode.forEach((child, index) => {
-    newObject[child.getWord(0)] = child.getContent()
+    newObject[child.getWord(0)] = child.content
     child.getTopDownArray().forEach(node => {
       const key = node
         .getFirstWordPathRelativeTo(parentNode)
         .replace(/ /g, delimiter)
-      const value = node.getContent()
+      const value = node.content
       newObject[key] = value
     })
   })
