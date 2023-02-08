@@ -14,6 +14,7 @@ appearedNode
  extends abstractYearNode
  cruxFromId
  single
+ required
 isDeadNode
  description Has the creator or maintainer announced it officially dead? Include a link to proof of the announcement.
  extends abstractBooleanNode
