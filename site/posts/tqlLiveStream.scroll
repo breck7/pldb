@@ -1,7 +1,6 @@
 import header.scroll
 title TQL livestream
 date 02/4/2023
-startColumns 1
 groups index pldbBehindTheScenes
 
 author https://twitter.com/breckyunits Breck Yunits
@@ -22,4 +21,4 @@ endSnippet
 
 * Sometimes I learn something high level, like how to better name my functions. Other times it's something more mundane, like a new Unix command or keyboard shortcut. I often find an hour watching a top streamer often saves me 20 hours over the course of a year. The ROI is high. While I don't expect people to learn as much from me as I've learned from notch and geohot, perhaps there might be something different I do that people might find useful. Let's try it.
 
-import footer.scroll
+import ../footer.scroll

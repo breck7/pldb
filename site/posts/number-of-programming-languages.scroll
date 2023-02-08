@@ -1,6 +1,5 @@
 import header.scroll
 title What is the growth in programming languages over time?
-startColumns 2
 groups index
 date 9/2/2022
 openGraphImage https://pldb.com/posts/images/languageTrends.png
@@ -18,4 +17,4 @@ image images/languageTrends.svg
  link code explorers/number-of-programming-languages.explorer
  link BASE_URL/languages/explorer.html Explorer language
 
-import footer.scroll
+import ../footer.scroll
