@@ -1,5 +1,12 @@
-title worst
+title Worst
+appeared 2001
 type pl
+description Worst is a simple, malleable programming language
+website http://worst.mitten.party/
+webRepl http://worst.mitten.party/repl/
+releaseNotesUrl http://worst.mitten.party/log/
+
+lineCommentToken ;
 
 example
  import syntax/attributes
@@ -16,3 +23,9 @@ example
  ]
 
 gitlabRepo https://gitlab.com/worst-lang/worst/
+
+
+
+
+built for extensibility and creativity.
+Its syntax system allows you to redefine the entire language as you wish.
