@@ -1,6 +1,19 @@
 title Lush
+appeared 2002
 type pl
+creators Leon Bottou and Yann Le Cun
+description Lush is an object-oriented programming language designed for researchers, experimenters, and engineers interested in large-scale numerical and graphic applications. Lush is designed to be used in situations where one would want to combine the flexibility of a high-level, weakly-typed interpreted language, with the efficiency of a strongly-typed, natively-compiled language
+website https://lush.sourceforge.net/index.html
+documentation https://lush.sourceforge.net/doc.html
 reference http://wiki.c2.com/?LushLanguage
+standsFor Lisp Universal Shell
+
+example
+ (for (i 1 100)
+      (for (j 1 100)
+         (if (= i j) (print (* i j))))))
+
+gitRepo https://sourceforge.net/projects/lush/
 
 rosettaCode http://www.rosettacode.org/wiki/Category:Lush
 
