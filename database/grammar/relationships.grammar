@@ -35,3 +35,6 @@ forkOfNode
 compilesToNode
  description Which language(s) does this language primarily compile to?
  extends abstractRelationshipNode
+inputLanguagesNode
+ description Which language(s) does this take as input? For compilers, what languages does this compile compile?
+ extends abstractRelationshipNode
