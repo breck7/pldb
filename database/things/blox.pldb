@@ -1,5 +1,20 @@
 title Blox
+appeared 2018
 type pl
+
+example
+ print(1+2*3/4)
+ 
+ print(3.0-1.5)
+ 
+ print(1 > 0)
+ print(1 < 0)
+ print(1 >= 0)
+ print(1 <= 0)
+ print(1 == 0)
+ print(1 != 0)
+ 
+ print(not TRUE and FALSE or TRUE)
 
 githubRepo https://github.com/ciromoraismedeiros/blox-lang
  stars 0
@@ -9,7 +24,5 @@ githubRepo https://github.com/ciromoraismedeiros/blox-lang
  updated 2018
  description Blox programming language
  issues 0
-
-hopl https://hopl.info/showlanguage.prx?exp=1862
 
 centralPackageRepositoryCount 0
