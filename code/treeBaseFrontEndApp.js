@@ -16,23 +16,27 @@ const genDefaultAuthor = () => {
 	const hash = Utils.getRandomCharacters(7)
 	return `Anon <${`anon.${user}.${hash}`}@pldb.com>`
 }
-const defaultAuthor = genDefaultAuthor()
-
 const STAGED_KEY = "staged"
 const TEXTAREA_ID = "fileContent"
 
 class TreeBaseFrontEndApp {
+	constructor() {
+		window.app = this
+	}
+
+	defaultAuthor = genDefaultAuthor()
+
 	get author() {
 		try {
-			return this.store.getItem("author") || defaultAuthor
+			return this.store.getItem("author") || this.defaultAuthor
 		} catch (err) {
 			console.error(err)
 		}
 
-		return defaultAuthor
+		return this.defaultAuthor
 	}
 
-	startSearchPage() {
+	renderSearchPage() {
 		this.startTQLCodeMirror()
 	}
 
@@ -73,48 +77,52 @@ class TreeBaseFrontEndApp {
 		document.getElementById("tqlErrors").innerHTML = errMessage
 	}
 
-	async start() {
-		const { route } = this
-		if (route === "search") return this.startSearchPage()
+	async renderEditPage() {
+		this.renderCodeEditorStuff()
+		await this.initEditData()
+		this.updateQuickLinks()
+	}
 
-		this.renderForm()
-		this.startPLDBCodeMirror()
-		this.bindStageButton()
-		this.updateStagedStatus()
-		this.updateAuthor()
-
-		const urlParams = new URLSearchParams(window.location.hash.replace("#", ""))
-		const errorMessage = urlParams.get("errorMessage")
-
-		if (errorMessage)
-			document.getElementById(
-				"errorMessage"
-			).innerHTML = `Error: ${Utils.htmlEscaped(errorMessage)}`
-
-		window.location.hash = ""
-
-		if (route === "edit") {
-			await this.initEditData()
-
-			this.updateQuickLinks()
-		}
-		if (route === "create") {
-			document.getElementById(
-				"exampleSection"
-			).innerHTML = `Example:<br><pre>title Elixir
+	renderCreatePage() {
+		this.renderCodeEditorStuff()
+		document.getElementById(
+			"exampleSection"
+		).innerHTML = `Example:<br><pre>title Elixir
 appeared 2011
 type pl
 creators José Valim
 website https://elixir-lang.org/
 githubRepo https://github.com/elixir-lang/elixir</pre>`
-		}
+	}
+
+	renderCodeEditorStuff() {
+		this.renderForm()
+		this.startPLDBCodeMirror()
+		this.bindStageButton()
+		this.updateStagedStatus()
+		this.updateAuthor()
 	}
 
 	async initEditData(currentValue, missingRecommendedColumns) {
 		const { filename, currentFileId } = this
 		const localValue = this.stagedFiles.getNode(filename)
-		let response = await fetch(`/edit.json/${currentFileId}`)
+		let response = await fetch(`/edit.json?id=${currentFileId}`)
 		const data = await response.json()
+
+		if (data.error)
+			return (document.getElementById("formHolder").innerHTML = data.error)
+
+		document.getElementById(
+			"pageTitle"
+		).innerHTML = `Editing file <i>${filename}</i>`
+
+		document.addEventListener("keydown", function(event) {
+			if (document.activeElement !== document.body) return
+			if (event.key === "ArrowLeft")
+				window.location = `edit.html?id=` + data.previous
+			else if (event.key === "ArrowRight")
+				window.location = `edit.html?id=` + data.next
+		})
 
 		this.codeMirrorInstance.setValue(
 			localValue ? localValue.childrenToString() : data.content
@@ -215,7 +223,7 @@ githubRepo https://github.com/elixir-lang/elixir</pre>`
 	}
 
 	get currentFileId() {
-		return location.pathname.split("/").pop()
+		return new URLSearchParams(window.location.search).get("id")
 	}
 
 	get filename() {
@@ -243,7 +251,7 @@ githubRepo https://github.com/elixir-lang/elixir</pre>`
 
 	saveAuthorIfUnsaved() {
 		try {
-			if (!this.store.getItem("author")) this.saveAuthor(defaultAuthor)
+			if (!this.store.getItem("author")) this.saveAuthor(this.defaultAuthor)
 		} catch (err) {
 			console.error(err)
 		}
@@ -262,7 +270,7 @@ githubRepo https://github.com/elixir-lang/elixir</pre>`
 			`Enter author name and email formatted like "Breck Yunits <by@breckyunits.com>". This information is recorded in the public Git log.`,
 			this.author
 		)
-		if (newValue === "") this.saveAuthor(defaultAuthor)
+		if (newValue === "") this.saveAuthor(this.defaultAuthor)
 		if (newValue) this.saveAuthor(newValue)
 		this.updateAuthor()
 	}
@@ -304,8 +312,3 @@ DDG: https://duckduckgo.com/?q=${title}<br>`) +
 			`Wayback Machine: <a target="_blank" href="https://web.archive.org/web/20220000000000*/${title}">https://web.archive.org/web/20220000000000*/${title}</a>`
 	}
 }
-
-document.addEventListener("DOMContentLoaded", function(event) {
-	window.app = new TreeBaseFrontEndApp()
-	window.app.start()
-})

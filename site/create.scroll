@@ -1,0 +1,10 @@
+import header.scroll
+title Add a language
+
+import editImports.scroll
+
+html <div id="formHolder"></div>
+
+html <script>document.addEventListener("DOMContentLoaded", () => new TreeBaseFrontEndApp().renderCreatePage())</script>
+
+import footer.scroll

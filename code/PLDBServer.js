@@ -1,22 +1,13 @@
 #!/usr/bin/env node
 
 const path = require("path")
-const fs = require("fs")
-const https = require("https")
-const express = require("express")
-const bodyParser = require("body-parser")
 const { TreeNode } = require("jtree/products/TreeNode.js")
 const { Utils } = require("jtree/products/Utils.js")
 const { GrammarCompiler } = require("jtree/products/GrammarCompiler.js")
 const { Disk } = require("jtree/products/Disk.node.js")
-const { ScrollFile } = require("scroll-cli")
-const {
-  SearchServer,
-  TreeBaseServer
-} = require("jtree/products/treeBaseServer.node.js")
+const { TreeBaseServer } = require("jtree/products/treeBaseServer.node.js")
 
 const { PLDBFolder } = require("./Folder")
-const { PLDBFile } = require("./File")
 const simpleGit = require("simple-git")
 
 const baseFolder = path.join(__dirname, "..")
@@ -30,24 +21,6 @@ const lastCommitHashInFolder = (cwd = __dirname) =>
     })
     .toString()
     .trim()
-
-const cssLibs = "node_modules/jtree/sandbox/lib/codemirror.css node_modules/jtree/sandbox/lib/codemirror.show-hint.css"
-  .split(" ")
-  .map(name => ` <link rel="stylesheet" type="text/css" href="/${name}" />`)
-  .join("\n")
-
-const scripts = `node_modules/jtree/products/Utils.browser.js
-node_modules/jtree/products/TreeNode.browser.js
-node_modules/jtree/products/GrammarLanguage.browser.js
-node_modules/jtree/products/GrammarCodeMirrorMode.browser.js
-pldb.browser.js
-tql.browser.js
-node_modules/jtree/sandbox/lib/codemirror.js
-node_modules/jtree/sandbox/lib/show-hint.js
-treeBaseFrontEndApp.js`
-  .split("\n")
-  .map(name => ` <script src="/${name}"></script>`)
-  .join("\n")
 
 const GIT_DEFAULT_USERNAME = "PLDBBot"
 const GIT_DEFAULT_EMAIL = "bot@pldb.com"
@@ -69,11 +42,6 @@ const parseGitAuthor = (field = GIT_DEFAULT_AUTHOR) => {
   }
 }
 
-const headerPath = path.join(builtSiteFolder, "header.scroll")
-const scrollHeader = new ScrollFile(Disk.read(headerPath), headerPath)
-  .importResults.code
-const scrollFooter = Disk.read(path.join(builtSiteFolder, "footer.scroll"))
-
 class PLDBServer extends TreeBaseServer {
   constructor(folder, ignoreFolder) {
     super(folder, ignoreFolder)
@@ -84,43 +52,22 @@ class PLDBServer extends TreeBaseServer {
     this.initSearch()
 
     const { app } = this
-    app.get("/create", (req, res) =>
-      res.send(this.scrollToHtml("title Add a language"))
-    )
-
-    const notFound = (id, res) => {
-      res.status(500)
-      return res.send(
-        this.scrollToHtml(`* "${Utils.htmlEscaped(id)}" not found`)
-      )
-    }
 
     app.get("/fullTextSearch", (req, res) =>
-      res.redirect(`/search?q=includes+${req.query.q}`)
+      res.redirect(`/search.html?q=includes+${req.query.q}`)
     )
 
-    app.get("/edit.json/:id", (req, res) => {
-      const { id } = req.params
+    app.get("/edit.json", (req, res) => {
+      const { id } = req.query
       const file = this.folder.getFile(id)
-      if (!file) return notFound(id, res)
+      if (!file) return res.send(JSON.stringify({ error: "Not found" }))
       res.send(
         JSON.stringify({
           content: file.childrenToString(),
-          missingRecommendedColumns: file.missingRecommendedColumns
+          missingRecommendedColumns: file.missingRecommendedColumns,
+          next: file.nextRanked.id,
+          previous: file.previousRanked.id
         })
-      )
-    })
-
-    app.get("/edit/:id", (req, res) => {
-      const { id } = req.params
-      if (id.endsWith(".pldb")) return res.redirect(id.replace(".pldb", ""))
-
-      const file = this.folder.getFile(id)
-      if (!file) return notFound(id, res)
-
-      res.send(
-        this.scrollToHtml(`title Editing ${file.id}
-\nkeyboardNav ${file.previousRanked.id} ${file.nextRanked.id}`)
       )
     })
 
@@ -128,57 +75,15 @@ class PLDBServer extends TreeBaseServer {
       const { author } = req.body
       const patch = Utils.removeReturnChars(req.body.patch).trim()
       this.appendToPostLog(author, patch)
-      const tree = new TreeNode(patch)
-      const filenames = []
 
       try {
-        const { authorName, authorEmail } = parseGitAuthor(author)
-        Utils.isValidEmail(authorEmail)
-        const create = tree.getNode("create")
-        if (create) {
-          const data = create.childrenToString()
-
-          // todo: audit
-          const validateSubmissionResults = this.validateSubmission(data)
-          const newFile = this.folder.createFile(
-            validateSubmissionResults.content
-          )
-
-          filenames.push(newFile.filename)
-        }
-
-        tree.delete("create")
-
-        tree.forEach(node => {
-          const id = node.getWord(0).replace(".pldb", "")
-          const file = this.folder.getFile(id)
-          if (!file) throw new Error(`File '${id}' not found.`)
-
-          const validateSubmissionResults = this.validateSubmission(
-            node.childrenToString(),
-            file
-          )
-          file.setChildren(validateSubmissionResults.content)
-          file.prettifyAndSave()
-          console.log(`Saved '${file.filename}'`)
-          filenames.push(file.filename)
-        })
-
-        const commitResult = await this.commitFilesPullAndPush(
-          filenames,
-          authorName,
-          authorEmail
-        )
-
-        this.reloadNeeded()
-        res.redirect(`/thankYou.html#commit=` + commitResult.commitHash)
+        const hash = await this.saveCommitAndPush(patch, author)
+        res.redirect(`/thankYou.html?commit=${hash}`)
       } catch (error) {
         console.error(error)
         res
           .status(500)
-          .send(
-            this.scrollToHtml(`html <div style="color: red;">${error}</div>`)
-          )
+          .redirect(`/error.html?error=${encodeURIComponent(error)}`)
       }
     })
 
@@ -188,6 +93,50 @@ class PLDBServer extends TreeBaseServer {
         ? res.status(302).redirect(`/languages/${req.params.id}.html`)
         : next()
     )
+  }
+
+  async saveCommitAndPush(patch, author) {
+    const tree = new TreeNode(patch)
+    const filenames = []
+
+    const { authorName, authorEmail } = parseGitAuthor(author)
+    Utils.isValidEmail(authorEmail)
+    const create = tree.getNode("create")
+    if (create) {
+      const data = create.childrenToString()
+
+      // todo: audit
+      const validateSubmissionResults = this.validateSubmission(data)
+      const newFile = this.folder.createFile(validateSubmissionResults.content)
+
+      filenames.push(newFile.filename)
+    }
+
+    tree.delete("create")
+
+    tree.forEach(node => {
+      const id = node.getWord(0).replace(".pldb", "")
+      const file = this.folder.getFile(id)
+      if (!file) throw new Error(`File '${id}' not found.`)
+
+      const validateSubmissionResults = this.validateSubmission(
+        node.childrenToString(),
+        file
+      )
+      file.setChildren(validateSubmissionResults.content)
+      file.prettifyAndSave()
+      console.log(`Saved '${file.filename}'`)
+      filenames.push(file.filename)
+    })
+
+    const commitResult = await this.commitFilesPullAndPush(
+      filenames,
+      authorName,
+      authorEmail
+    )
+
+    this.reloadNeeded()
+    return commitResult.commitHash
   }
 
   notFoundPage = Disk.read(path.join(builtSiteFolder, "custom_404.html"))
@@ -230,26 +179,6 @@ class PLDBServer extends TreeBaseServer {
     return {
       content: parsed.sortFromSortTemplate().toString()
     }
-  }
-
-  scrollToHtml(scrollContent) {
-    return new ScrollFile(
-      `replace BASE_URL ${this.isProd ? "https://pldb.com" : ""}
-
-${scrollHeader}
-
-html
-${cssLibs}
-${scripts}
-
-${scrollContent}
-
-html <div id="successLink"></div><div id="errorMessage" style="color: red;"></div>
-html <div id="formHolder"></div>
-
-${scrollFooter}
-`
-    ).html
   }
 
   compileGrammarsForCodeMirrorEditors() {

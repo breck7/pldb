@@ -1,0 +1,14 @@
+import header.scroll
+title Error!
+
+css .errorClass {color: red;}
+
+* Sorry! Something has gone wrong:
+
+* Error
+ class errorClass
+ id errorHolder
+
+html <script>document.getElementById("errorHolder").innerHTML = decodeURIComponent(new URLSearchParams(window.location.search).get("error") || ""))</script>
+
+import footer.scroll

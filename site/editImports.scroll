@@ -1,0 +1,14 @@
+importOnly
+
+html
+ <link rel="stylesheet" type="text/css" href="node_modules/jtree/sandbox/lib/codemirror.css" />
+ <link rel="stylesheet" type="text/css" href="node_modules/jtree/sandbox/lib/codemirror.show-hint.css" />
+ <script src="node_modules/jtree/products/Utils.browser.js"></script>
+ <script src="node_modules/jtree/products/TreeNode.browser.js"></script>
+ <script src="node_modules/jtree/products/GrammarLanguage.browser.js"></script>
+ <script src="node_modules/jtree/products/GrammarCodeMirrorMode.browser.js"></script>
+ <script src="pldb.browser.js"></script>
+ <script src="tql.browser.js"></script>
+ <script src="node_modules/jtree/sandbox/lib/codemirror.js"></script>
+ <script src="node_modules/jtree/sandbox/lib/show-hint.js"></script>
+ <script src="treeBaseFrontEndApp.js"></script>
