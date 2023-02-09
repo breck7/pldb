@@ -1,6 +1,6 @@
 importOnly
 
-## Build Server Setup
+## *Marconi* Droplet Setup
 bashCode
  apt update
  apt upgrade
@@ -45,7 +45,7 @@ bashCode
 cronCode
  0 * * * * /root/pldb/code/updateStats.sh >> /root/pldb/site/cron.log  2>&1
 
-## Deploying Build Server
+## Deploying Marconi Server
 bashCode
  ssh root@pldb.com
  cd pldb

@@ -11,7 +11,7 @@ groups index
  https://www.digitalocean.com/ Digital Ocean
 
 # Express app
-* This site is served using Node.js and Express running on a Digital Ocean droplet. SSL certificates are generated using certbot.
+* This site is served using Node.js and Express running on a Digital Ocean droplet named `marconi`. SSL certificates are generated using certbot.
 
 ## Analytics
 * This site does not use cookies or include any tracking scripts. Server logs are kept and used primarily for catching broken links, broken scripts, and other QA. If you need even more privacy, you can run the site locally or on your own servers.
@@ -21,7 +21,7 @@ groups index
  https://pldb.com/trafficTrends.html traffic trends
  https://goaccess.io/ GoAccess
 
-import buildSetup.scroll
+import marconi.scroll
 
 ## Logo and favicons
 * Favicon designed with <a href="https://formito.com/tools/favicon">this</a> and favicon files generated with <a href="https://favicon.io/">this</a>.
