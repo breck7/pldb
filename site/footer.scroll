@@ -1,6 +1,5 @@
-viewSource
-
 importOnly
+viewSource
 
 replaceJs BUILT_IN_YEAR dayjs().format("YYYY")
 

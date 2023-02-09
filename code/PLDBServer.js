@@ -9,7 +9,7 @@ const { TreeNode } = require("jtree/products/TreeNode.js")
 const { Utils } = require("jtree/products/Utils.js")
 const { GrammarCompiler } = require("jtree/products/GrammarCompiler.js")
 const { Disk } = require("jtree/products/Disk.node.js")
-const { ScrollFile, getFullyExpandedFile } = require("scroll-cli")
+const { ScrollFile } = require("scroll-cli")
 const {
   SearchServer,
   TreeBaseServer
@@ -69,13 +69,10 @@ const parseGitAuthor = (field = GIT_DEFAULT_AUTHOR) => {
   }
 }
 
-const scrollHeader = getFullyExpandedFile(
-  path.join(builtSiteFolder, "header.scroll")
-).code
-
-const scrollFooter = getFullyExpandedFile(
-  path.join(builtSiteFolder, "footer.scroll")
-).code
+const headerPath = path.join(builtSiteFolder, "header.scroll")
+const scrollHeader = new ScrollFile(Disk.read(headerPath), headerPath)
+  .importResults.code
+const scrollFooter = Disk.read(path.join(builtSiteFolder, "footer.scroll"))
 
 class PLDBServer extends TreeBaseServer {
   constructor(folder, ignoreFolder) {
