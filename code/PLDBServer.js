@@ -149,12 +149,12 @@ class PLDBServer extends TreeBaseServer {
     app.get("/keywordsOneHot.csv", () => res.send(pldbBase.keywordsOneHotCsv))
     app.get("/pldb.json", () => res.send(pldbBase.typedMapJson))
 
-    const frontEndJsLibs = `site/frontEndJavascript/mousetrap.js
-site/frontEndJavascript/autocomplete.js
-site/frontEndJavascript/search.js`
+    const frontEndJsLibs = `mousetrap.js
+autocomplete.js
+search.js`
       .split("\n")
       .map(filename =>
-        Disk.read(path.join(builtSiteFolder, "frontEndJavascript", filename))
+        Disk.read(path.join(__dirname, "frontEndJavascript", filename))
       )
       .join("\n\n")
     app.get("/frontEndJavascript/combined.js", () => res.send(frontEndJsLibs))
