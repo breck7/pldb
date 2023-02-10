@@ -1,3 +1,4 @@
+const path = require("path")
 const dayjs = require("dayjs")
 const numeral = require("numeral")
 const lodash = require("lodash")
@@ -580,7 +581,7 @@ class PLDBFile extends TreeBaseFile {
 
   writeScrollFileIfChanged(folder) {
     Disk.writeIfChanged(
-      folder + this.id + ".scroll",
+      path.join(folder, this.id + ".scroll"),
       new LanguagePageTemplate(this).toScroll()
     )
   }

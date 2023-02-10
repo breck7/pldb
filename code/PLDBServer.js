@@ -505,7 +505,7 @@ class PLDBServerCommands {
   buildAllCommand() {
     this.buildKeywordsImportsCommand()
     this.buildFeaturePagesCommand()
-    this.buildDatabasePagesCommand()
+    this.buildScrollFilesFromPLDBFilesCommand()
     this.buildAcknowledgementsImportsCommand()
     this.buildCsvImportsCommand()
     this.buildTopListImports()
@@ -540,7 +540,7 @@ class PLDBServerCommands {
     )
   }
 
-  buildDatabasePagesCommand() {
+  buildScrollFilesFromPLDBFilesCommand() {
     pldbBase.forEach(file => file.writeScrollFileIfChanged(languagesFolder))
   }
 
