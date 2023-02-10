@@ -351,6 +351,7 @@ class PLDBFolder extends TreeBaseFolder {
       .setDir(path.join(databaseFolder, "things"))
       .setGrammarDir(path.join(databaseFolder, "grammar"))
   }
+  quickCache = {}
 
   createParser() {
     return new TreeNode.Parser(PLDBFile)
@@ -470,10 +471,12 @@ class PLDBFolder extends TreeBaseFolder {
   }
 
   get rankings() {
+    if (!this.quickCache.rankings)
+      this.quickCache.rankings = computeRankings(this)
     // Todo: once jtree is cleaned up, we should be able to remove this.
     // the problem is this class does implement FolderInterface, but Typescript doesn't know that
     // because it misses the inherited methods (filter and getChildren).
-    return computeRankings(this)
+    return this.quickCache.rankings
   }
 
   _getFileAtRank(rank, ranks) {

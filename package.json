@@ -2,6 +2,7 @@
   "name": "pldb",
   "description": "PLDB: a Programming Language Database",
   "scripts": {
+    "build": "./code/PLDBServer.js buildAll",
     "test": "./code/test.js",
     "local": "./code/PLDBServer.js startDevServer",
     "search": "./code/cliSearch.js",
@@ -44,7 +45,7 @@
     "dayjs": "^1.11.7",
     "express": "^4.18.2",
     "fast-csv": "latest",
-    "jtree": "^67.0.0",
+    "jtree": "^67.1.0",
     "lodash": "^4.17.21",
     "monaco-editor": "^0.34.1",
     "numeral": "^2.0.6",

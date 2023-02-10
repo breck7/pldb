@@ -1,16 +1,15 @@
 import header.scroll
 
-html <center>
-
 title PLDB: a Programming Language DataBase
  hidden
+
+html <center>
 
 # %~P~rogramming ~L~anguage ~D~ata~B~ase%
  wrap ~ span style="color:black;"
  wrap % span style="color:#828282;"
 
-css
- .scrollFilePageComponent { text-align: center;}
+css .scrollFilePageComponent { text-align: center;}
 
 import searchForm.scroll
 
@@ -19,11 +18,9 @@ replace BASE_URL .
 import homepageImports.scroll
 
 html <a class="pldbHomepageLink" href="./lists/top1000.html">Top Languages</a>
-
 * TOP_LANGS
 
 html <br><a class="pldbHomepageLink" href="./posts/index.html">New Posts</a>
-
 * NEW_POSTS
 
 html <br><a href="./pages/write-for-pldb.html">Write for PLDB</a>

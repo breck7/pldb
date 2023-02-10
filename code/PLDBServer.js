@@ -1,5 +1,17 @@
 #!/usr/bin/env node
 
+/*
+* To investigate slowdowns:
+code
+ node --cpu-prof --cpu-prof-name=test.cpuprofile ./code/PLDBServer.js buildAll
+* Then:
+- open a new Chrome tab
+- open devtools
+- click Performance
+- click "Load Profile..."
+- select your test.cpuprofile
+*/
+
 const path = require("path")
 const numeral = require("numeral")
 const lodash = require("lodash")
@@ -254,7 +266,7 @@ ${scrollFooter}
     const { authorName, authorEmail } = parseGitAuthor(author)
     Utils.isValidEmail(authorEmail)
     const create = tree.getNode("create")
-    // clear cache
+    const changedFiles = []
     if (create) {
       const data = create.childrenToString()
 
@@ -263,7 +275,7 @@ ${scrollFooter}
       const newFile = this.folder.createFile(validateSubmissionResults.content)
 
       filenames.push(newFile.filename)
-      newFile.writeScrollFileIfChanged()
+      changedFiles.push(newFile)
     }
 
     tree.delete("create")
@@ -281,9 +293,12 @@ ${scrollFooter}
       file.prettifyAndSave()
       console.log(`Saved '${file.filename}'`)
       filenames.push(file.filename)
-      // clear cache
-      file.writeScrollFileIfChanged()
+
+      changedFiles.push(file)
     })
+
+    pldbBase.quickCache = {}
+    changedFiles.forEach(file => file.writeScrollFileIfChanged())
 
     const commitResult = await this.commitFilesPullAndPush(
       filenames,
