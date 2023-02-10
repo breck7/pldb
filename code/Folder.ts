@@ -7,8 +7,8 @@ import {
   StringMap
 } from "./Interfaces"
 import { computeRankings } from "./Rankings"
-import { imemo } from "./utils"
 
+const { quickCache } = require("./quickCache")
 const path = require("path")
 const lodash = require("lodash")
 const { Table } = require("jtree/products/jtable.node.js")
@@ -46,12 +46,10 @@ class PLDBFolder extends TreeBaseFolder {
     return new TreeNode.Parser(PLDBFile)
   }
 
-  @imemo
+  @quickCache
   get inboundLinks(): StringMap {
     const inBoundLinks = {}
-    this.forEach(file => {
-      inBoundLinks[file.id] = []
-    })
+    this.forEach(file => (inBoundLinks[file.id] = []))
 
     this.forEach(file => {
       file.linksToOtherFiles.forEach(link => {
@@ -72,7 +70,7 @@ class PLDBFolder extends TreeBaseFolder {
     return new gpc().getDefinition()
   }
 
-  @imemo
+  @quickCache
   get searchIndex(): Map<string, string> {
     const map = new Map()
     this.forEach(file => {
@@ -98,7 +96,7 @@ class PLDBFolder extends TreeBaseFolder {
     return extensionsMap.get(hit)
   }
 
-  @imemo
+  @quickCache
   get extensionsMap() {
     const extensionsMap = new Map<string, string>()
     this.topLanguages
@@ -119,7 +117,7 @@ class PLDBFolder extends TreeBaseFolder {
     return this.getNode(id)
   }
 
-  @imemo
+  @quickCache
   get topLanguages(): PLDBFile[] {
     return lodash.sortBy(
       this.filter(lang => lang.isLanguage),
@@ -165,7 +163,7 @@ class PLDBFolder extends TreeBaseFolder {
     )
   }
 
-  @imemo
+  @quickCache
   get rankings() {
     // Todo: once jtree is cleaned up, we should be able to remove this.
     // the problem is this class does implement FolderInterface, but Typescript doesn't know that
@@ -181,18 +179,27 @@ class PLDBFolder extends TreeBaseFolder {
     return this.getFile(ranks[rank].id)
   }
 
-  @imemo
+  _featureCache = {}
+  getLanguagesWithFeatureResearched(id: string) {
+    if (!this._featureCache[id])
+      this._featureCache[id] = this.topLanguages.filter(file =>
+        file.extendedFeaturesNode.has(id)
+      )
+    return this._featureCache[id]
+  }
+
+  @quickCache
   get featuresMap(): Map<string, FeatureSummary> {
     const featuresMap = new Map<string, FeatureSummary>()
     this.topFeatures.forEach(feature => featuresMap.set(feature.id, feature))
     return featuresMap
   }
 
-  @imemo get features() {
+  @quickCache get features() {
     return new FeaturesCollection(this).features
   }
 
-  @imemo
+  @quickCache
   get topFeatures(): FeatureSummary[] {
     const { features } = this
     const sorted = lodash.sortBy(features, "yes")
@@ -268,7 +275,7 @@ class PLDBFolder extends TreeBaseFolder {
     return counts
   }
 
-  @imemo
+  @quickCache
   get colNameToGrammarDefMap() {
     const map = new Map()
     this.nodesForCsv.forEach(node => {
@@ -318,16 +325,16 @@ class PLDBFolder extends TreeBaseFolder {
     return { filePath, lineNumber }
   }
 
-  @imemo
+  @quickCache
   get grammarFileMap() {
     const map = {}
-    this.grammarFilePaths.forEach(filepath => {
-      map[filepath] = Disk.read(filepath)
-    })
+    this.grammarFilePaths.forEach(
+      filepath => (map[filepath] = Disk.read(filepath))
+    )
     return map
   }
 
-  @imemo
+  @quickCache
   get columnDocumentation() {
     // Return columns with documentation sorted in the most interesting order.
 
@@ -429,7 +436,7 @@ wikipedia`.split("\n")
     return sortedCols
   }
 
-  @imemo
+  @quickCache
   get nodesForCsv() {
     const runTimeProps = Object.keys(runtimeCsvProps)
     return this.map(file => {
@@ -448,14 +455,40 @@ wikipedia`.split("\n")
     })
   }
 
-  @imemo
+  @quickCache
+  get typedMapJson() {
+    return JSON.stringify(this.typedMap, null, 2)
+  }
+
+  @quickCache
+  get keywordsOneHotCsv() {
+    return new TreeNode(this.keywordsOneHot).toCsv()
+  }
+
+  @quickCache
+  get searchIndexJson() {
+    return JSON.stringify(
+      this.objectsForCsv.map(object => {
+        return {
+          label: object.title,
+          appeared: parseInt(object.appeared),
+          id: object.pldbId,
+          url: `/languages/${object.pldbId}.html`
+        }
+      }),
+      undefined,
+      2
+    )
+  }
+
+  @quickCache
   get objectsForCsv() {
     return lodash.sortBy(this.nodesForCsv.map(nodeToFlatObject), item =>
       parseInt(item.rank)
     )
   }
 
-  @imemo
+  @quickCache
   get csvBuildOutput() {
     const { colNamesForCsv, objectsForCsv, columnDocumentation } = this
 
@@ -506,7 +539,7 @@ wikipedia`.split("\n")
     return sources.sort()
   }
 
-  @imemo
+  @quickCache
   get keywordsOneHot() {
     const { keywordsTable } = this
     const allKeywords = keywordsTable.rows.map(row => row.keyword)
@@ -527,22 +560,22 @@ wikipedia`.split("\n")
     return rows
   }
 
-  @imemo
+  @quickCache
   get bytes() {
     return this.toString().length
   }
 
-  @imemo
+  @quickCache
   get cachedErrors() {
     return this.errors
   }
 
-  @imemo
+  @quickCache
   get factCount() {
     return lodash.sum(this.map(file => file.factCount))
   }
 
-  @imemo
+  @quickCache
   get keywordsTable() {
     const langsWithKeywords = this.topLanguages.filter(file =>
       file.has("keywords")

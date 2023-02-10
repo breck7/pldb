@@ -1,4 +1,3 @@
-import { imemo } from "./utils"
 import { FeatureSummary } from "./Interfaces"
 const lodash = require("lodash")
 const { Utils } = require("jtree/products/Utils")
@@ -15,17 +14,14 @@ class Feature {
     this.node = node
     this.collection = collection
     this.fileName = this.id + ".grammar"
+    this.id = node.id.replace("Node", "")
   }
 
+  id: string
   fileName: string
 
   get permalink() {
     return this.id + ".html"
-  }
-
-  @imemo
-  get id() {
-    return this.node.id.replace("Node", "")
   }
 
   previous: Feature
@@ -42,12 +38,6 @@ class Feature {
     return this.languagesWithoutThisFeature.length
   }
 
-  @imemo
-  get measurements() {
-    const { yes, no } = this
-    return yes + no
-  }
-
   get percentage() {
     const { yes, no } = this
     const measurements = yes + no
@@ -56,46 +46,32 @@ class Feature {
       : lodash.round((100 * yes) / measurements, 0) + "%"
   }
 
-  @imemo
   get aka() {
     return this.get("aka") // .join(" or "),
   }
 
-  @imemo
   get token() {
     return this.get("tokenKeyword")
   }
 
-  @imemo
   get titleLink() {
     return `../features/${this.permalink}`
-  }
-
-  @imemo
-  get _getLanguagesWithThisFeatureResearched() {
-    const { id } = this
-    return this.base.topLanguages.filter(file =>
-      file.extendedFeaturesNode.has(id)
-    )
   }
 
   get(word: string): string {
     return this.node.getFrom(`string ${word}`)
   }
 
-  @imemo
   get title() {
     return this.get("title") || this.id
   }
 
-  @imemo
   get pseudoExample() {
     return (this.get("pseudoExample") || "")
       .replace(/\</g, "&lt;")
       .replace(/\|/g, "&#124;")
   }
 
-  @imemo
   get references() {
     return (this.get("reference") || "").split(" ").filter(i => i)
   }
@@ -104,23 +80,21 @@ class Feature {
     return this.collection.base
   }
 
-  @imemo
   get languagesWithThisFeature() {
     const { id } = this
-    return this._getLanguagesWithThisFeatureResearched.filter(
-      file => file.extendedFeaturesNode.get(id) === "true"
-    )
+    return this.base
+      .getLanguagesWithFeatureResearched(id)
+      .filter(file => file.extendedFeaturesNode.get(id) === "true")
   }
 
-  @imemo
   get languagesWithoutThisFeature() {
     const { id } = this
-    return this._getLanguagesWithThisFeatureResearched.filter(
-      file => file.extendedFeaturesNode.get(id) === "false"
-    )
+    return this.base
+      .getLanguagesWithFeatureResearched(id)
+      .filter(file => file.extendedFeaturesNode.get(id) === "false")
   }
 
-  @imemo get summary(): FeatureSummary {
+  get summary(): FeatureSummary {
     const {
       id,
       title,
@@ -130,7 +104,6 @@ class Feature {
       token,
       yes,
       no,
-      measurements,
       percentage,
       pseudoExample
     } = this
@@ -143,7 +116,7 @@ class Feature {
       token,
       yes,
       no,
-      measurements,
+      measurements: yes + no,
       percentage,
       pseudoExample
     }

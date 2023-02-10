@@ -8,6 +8,7 @@ const { GrammarCompiler } = require("jtree/products/GrammarCompiler.js")
 const { Disk } = require("jtree/products/Disk.node.js")
 const { TreeBaseServer } = require("jtree/products/treeBaseServer.node.js")
 const { ScrollFile } = require("scroll-cli")
+const { clearQuickCache } = require("./quickCache")
 
 const { PLDBFolder } = require("./Folder")
 const simpleGit = require("simple-git")
@@ -15,11 +16,12 @@ const simpleGit = require("simple-git")
 const baseFolder = path.join(__dirname, "..")
 const builtSiteFolder = path.join(baseFolder, "site")
 const ignoreFolder = path.join(baseFolder, "ignore")
+const nodeModulesFolder = path.join(baseFolder, "node_modules")
 
 const lastCommitHashInFolder = (cwd = __dirname) =>
   require("child_process")
     .execSync("git rev-parse HEAD", {
-      cwd,
+      cwd
     })
     .toString()
     .trim()
@@ -28,7 +30,7 @@ const GIT_DEFAULT_USERNAME = "PLDBBot"
 const GIT_DEFAULT_EMAIL = "bot@pldb.com"
 const GIT_DEFAULT_AUTHOR = `${GIT_DEFAULT_USERNAME} <${GIT_DEFAULT_EMAIL}>`
 
-const delimitedEscapeFunction = (value) =>
+const delimitedEscapeFunction = value =>
   value.includes("\n") ? value.split("\n")[0] : value
 const delimiter = " DeLiM "
 
@@ -38,10 +40,13 @@ const parseGitAuthor = (field = GIT_DEFAULT_AUTHOR) => {
     .trim()
     .replace(/[^a-zA-Z \.]/g, "")
     .substr(0, 32)
-  const authorEmail = field.split("<")[1].replace(">", "").trim()
+  const authorEmail = field
+    .split("<")[1]
+    .replace(">", "")
+    .trim()
   return {
     authorName,
-    authorEmail,
+    authorEmail
   }
 }
 
@@ -62,6 +67,15 @@ class PLDBServer extends TreeBaseServer {
     this.initSearch()
 
     const { app } = this
+
+    this.app.use(
+      "jtree",
+      express.static(path.join(nodeModulesFolder, "jtree", "products"))
+    )
+    this.app.use(
+      "monaco-editor",
+      express.static(path.join(nodeModulesFolder, "monaco-editor"))
+    )
 
     const searchCache = {}
     app.get("/search.html", (req, res) => {
@@ -86,7 +100,7 @@ class PLDBServer extends TreeBaseServer {
           content: file.childrenToString(),
           missingRecommendedColumns: file.missingRecommendedColumns,
           next: file.nextRanked.id,
-          previous: file.previousRanked.id,
+          previous: file.previousRanked.id
         })
       )
     })
@@ -107,11 +121,35 @@ class PLDBServer extends TreeBaseServer {
       }
     })
 
+    app.get("/pldb.grammar", (req, res) => res.send(pldbBase.grammarCode))
+
     // Short urls:
     app.get("/:id", (req, res, next) =>
       this.folder.getFile(req.params.id)
         ? res.status(302).redirect(`/languages/${req.params.id}.html`)
         : next()
+    )
+
+    app.get("/searchIndex.json", () => res.send(pldbBase.searchIndexJson))
+    app.get("/keywordsOneHot.csv", () => res.send(pldbBase.keywordsOneHotCsv))
+    app.get("/pldb.json", () => res.send(pldbBase.typedMapJson))
+    this.addRedirects(app)
+  }
+
+  addRedirects(app) {
+    const redirects = Disk.read(path.join(siteFolder, "redirects.txt"))
+      .split("\n")
+      .map(line => {
+        const [oldUrl, newUrl] = line.split(" ")
+        return {
+          oldUrl,
+          newUrl
+        }
+      })
+    redirects.forEach(redirect =>
+      app.get(`/${redirect.oldUrl}`, (req, res) =>
+        res.status(301).redirect(redirect.newUrl)
+      )
     )
   }
 
@@ -123,7 +161,7 @@ class PLDBServer extends TreeBaseServer {
       columnNames,
       errors,
       title,
-      description,
+      description
     } = this.searchServer.search(
       decodeURIComponent(originalQuery).replace(/\r/g, "")
     )
@@ -170,6 +208,7 @@ ${scrollFooter}
     const { authorName, authorEmail } = parseGitAuthor(author)
     Utils.isValidEmail(authorEmail)
     const create = tree.getNode("create")
+    clearQuickCache(this.folder)
     if (create) {
       const data = create.childrenToString()
 
@@ -178,11 +217,12 @@ ${scrollFooter}
       const newFile = this.folder.createFile(validateSubmissionResults.content)
 
       filenames.push(newFile.filename)
+      newFile.writeScrollFileIfChanged()
     }
 
     tree.delete("create")
 
-    tree.forEach((node) => {
+    tree.forEach(node => {
       const id = node.getWord(0).replace(".pldb", "")
       const file = this.folder.getFile(id)
       if (!file) throw new Error(`File '${id}' not found.`)
@@ -195,6 +235,8 @@ ${scrollFooter}
       file.prettifyAndSave()
       console.log(`Saved '${file.filename}'`)
       filenames.push(file.filename)
+      clearQuickCache(file)
+      file.writeScrollFileIfChanged()
     })
 
     const commitResult = await this.commitFilesPullAndPush(
@@ -203,16 +245,10 @@ ${scrollFooter}
       authorEmail
     )
 
-    this.reloadNeeded()
     return commitResult.commitHash
   }
 
   notFoundPage = Disk.read(path.join(builtSiteFolder, "custom_404.html"))
-
-  reloadNeeded() {
-    // todo: use some pattern like mobx or something to clear cached computeds?
-    this.folder = PLDBFolder.getBase().loadFolder()
-  }
 
   validateSubmission(content, fileBeingEdited) {
     // Run some simple sanity checks.
@@ -229,7 +265,7 @@ ${scrollFooter}
     if (errs.length > 3)
       throw new Error(
         `Too many errors detected in submission: ${JSON.stringify(
-          errs.map((err) => err.toObject())
+          errs.map(err => err.toObject())
         )}`
       )
 
@@ -237,7 +273,7 @@ ${scrollFooter}
     if (scopeErrors.length > 3)
       throw new Error(
         `Too many scope errors detected in submission: ${JSON.stringify(
-          scopeErrors.map((err) => err.toObject())
+          scopeErrors.map(err => err.toObject())
         )}`
       )
 
@@ -245,7 +281,7 @@ ${scrollFooter}
       throw new Error(`Must provide at least 3 facts about the language.`)
 
     return {
-      content: parsed.sortFromSortTemplate().toString(),
+      content: parsed.sortFromSortTemplate().toString()
     }
   }
 
@@ -293,8 +329,8 @@ ${scrollFooter}
         // specify `author=` in every command. See https://stackoverflow.com/q/29685337/10670163 for example.
         config: [
           `user.name='${GIT_DEFAULT_USERNAME}'`,
-          `user.email='${GIT_DEFAULT_EMAIL}'`,
-        ],
+          `user.email='${GIT_DEFAULT_EMAIL}'`
+        ]
       })
     return this._git
   }
@@ -307,7 +343,7 @@ ${scrollFooter}
       )
       return {
         success: true,
-        commitHash: `pretendCommitHash`,
+        commitHash: `pretendCommitHash`
       }
     }
     const { git } = this
@@ -325,7 +361,7 @@ ${scrollFooter}
       // }
 
       const commitResult = await git.commit(commitMessage, filenames, {
-        "--author": `${authorName} <${authorEmail}>`,
+        "--author": `${authorName} <${authorEmail}>`
       })
 
       await this.git.pull("origin", "main")
@@ -336,13 +372,13 @@ ${scrollFooter}
 
       return {
         success: true,
-        commitHash,
+        commitHash
       }
     } catch (error) {
       console.error(error)
       return {
         success: false,
-        error,
+        error
       }
     }
   }

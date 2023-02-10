@@ -1,7 +1,10 @@
 import { Example, FeaturePrediction, FolderInterface } from "./Interfaces"
-import { imemo } from "./utils"
+import { LanguagePageTemplate } from "./LanguagePage"
+
+const { quickCache } = require("./quickCache")
 const { TreeNode } = require("jtree/products/TreeNode.js")
 const lodash = require("lodash")
+const { Disk } = require("jtree/products/Disk.node.js")
 const { TreeBaseFile } = require("jtree/products/treeBase.node.js")
 
 const runtimeCsvProps = {}
@@ -173,17 +176,17 @@ class PLDBFile extends TreeBaseFile {
     return count
   }
 
-  @imemo
+  @quickCache
   get lowercase() {
     return this.toString().toLowerCase()
   }
 
-  @imemo
+  @quickCache
   get lowercaseNames() {
     return this.names.map(name => name.toLowerCase())
   }
 
-  @imemo
+  @quickCache
   get lowercaseTitle() {
     return this.toString().toLowerCase()
   }
@@ -257,7 +260,7 @@ class PLDBFile extends TreeBaseFile {
     return this.allExamples.length + this.featuresWithExamples.length
   }
 
-  @imemo
+  @quickCache
   get extendedFeaturesNode() {
     const { supersetOfFile } = this
     const featuresNode = this.getNode(`features`) ?? new TreeNode()
@@ -464,23 +467,23 @@ class PLDBFile extends TreeBaseFile {
     return parseInt(set[key])
   }
 
-  @imemo
+  @quickCache
   get title(): string {
     return this.get("title") || this.id
   }
 
-  @imemo
+  @quickCache
   get appeared(): number {
     const appeared = this.get("appeared")
     return appeared === undefined ? 0 : parseInt(appeared)
   }
 
-  @imemo
+  @quickCache
   get website(): string {
     return this.get("website")
   }
 
-  @imemo
+  @quickCache
   get type(): string {
     return this.get("type")
   }
@@ -541,7 +544,7 @@ class PLDBFile extends TreeBaseFile {
     ])
   }
 
-  @imemo
+  @quickCache
   get typeName() {
     let { type } = this
     type = typeNames[type] || type
@@ -559,14 +562,14 @@ class PLDBFile extends TreeBaseFile {
   }
 
   @includeInCsv
-  @imemo
+  @quickCache
   get factCount() {
     return this.parsed
       .getTopDownArray()
       .filter(node => node.shouldSerialize !== false).length
   }
 
-  @imemo
+  @quickCache
   get linksToOtherFiles() {
     return lodash.uniq(
       this.parsed
@@ -617,6 +620,13 @@ class PLDBFile extends TreeBaseFile {
         .sortFromSortTemplate()
         .toString()
         .replace(/\n+$/g, "") + "\n"
+    )
+  }
+
+  writeScrollFileIfChanged() {
+    Disk.writeIfChanged(
+      this.filePath,
+      new LanguagePageTemplate(this).toScroll()
     )
   }
 

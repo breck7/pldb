@@ -26,7 +26,6 @@ const { Disk } = require("jtree/products/Disk.node.js")
 const { ScrollFolder } = require("scroll-cli")
 const shell = require("child_process").execSync
 
-import { LanguagePageTemplate } from "./LanguagePage"
 import { PLDBFolder } from "./Folder"
 
 const pldbBase = PLDBFolder.getBase().loadFolder()
@@ -75,7 +74,7 @@ const benchmark: MethodDecorator = (
 }
 
 const buildImportsFile = (filepath, varMap) => {
-  writeIfChanged(
+  Disk.writeIfChanged(
     filepath,
     `importOnly\n\n` +
       Object.keys(varMap)
@@ -98,12 +97,6 @@ const buildImportsFile = (filepath, varMap) => {
         })
         .join("\n\n")
   )
-}
-
-// Do not overwrite to preserve mtimes for cache
-const writeIfChanged = (filepath: string, content: string) => {
-  if (!Disk.exists(filepath) || Disk.read(filepath) !== content)
-    Disk.write(filepath, content)
 }
 
 class SiteBuilder {
@@ -131,24 +124,6 @@ class SiteBuilder {
 
   @benchmark
   @buildAll
-  copyNpmAssetsCommand() {
-    // Copy node module assets
-    Disk.mkdir(path.join(siteFolder, "node_modules"))
-    shell(
-      `cp -R ${rootDir}/node_modules/monaco-editor ${siteFolder}/node_modules/`
-    )
-    shell(`cp -R ${rootDir}/node_modules/jtree ${siteFolder}/node_modules/`)
-  }
-
-  @benchmark
-  @buildAll
-  buildSingleGrammarFile() {
-    // Copy grammar to docs folder for easy access for tools like TN Designer.
-    writeIfChanged(path.join(siteFolder, "pldb.grammar"), pldbBase.grammarCode)
-  }
-
-  @benchmark
-  @buildAll
   buildKeywordsImportsCommand() {
     const { keywordsTable } = pldbBase
     const { rows, langsWithKeywordsCount } = keywordsTable
@@ -165,24 +140,9 @@ class SiteBuilder {
 
   @benchmark
   @buildAll
-  buildRedirectsCommand() {
-    Disk.read(path.join(siteFolder, "redirects.txt"))
-      .split("\n")
-      .forEach(line => {
-        const link = line.split(" ")
-        const oldFile = path.join(siteFolder, link[0])
-        writeIfChanged(
-          oldFile,
-          `<meta http-equiv="Refresh" content="0; url='${link[1]}'" />`
-        )
-      })
-  }
-
-  @benchmark
-  @buildAll
   buildFeaturePagesCommand() {
     pldbBase.features.forEach(feature =>
-      writeIfChanged(
+      Disk.writeIfChanged(
         path.join(publishedFeaturesFolder, `${feature.id}.scroll`),
         feature.toScroll()
       )
@@ -192,12 +152,7 @@ class SiteBuilder {
   @benchmark
   @buildAll
   buildDatabasePagesCommand() {
-    pldbBase.forEach(file =>
-      writeIfChanged(
-        path.join(publishedLanguagesFolder, `${file.id}.scroll`),
-        new LanguagePageTemplate(file).toScroll()
-      )
-    )
+    pldbBase.forEach(file => file.writeScrollFileIfChanged())
   }
 
   @benchmark
@@ -254,32 +209,6 @@ class SiteBuilder {
 
   @benchmark
   @buildAll
-  buildSearchIndexCommand() {
-    const objects = pldbBase.objectsForCsv.map(object => {
-      return {
-        label: object.title,
-        appeared: parseInt(object.appeared),
-        id: object.pldbId,
-        url: `/languages/${object.pldbId}.html`
-      }
-    })
-    writeIfChanged(
-      path.join(siteFolder, "searchIndex.json"),
-      JSON.stringify(objects, null, 2)
-    )
-  }
-
-  @benchmark
-  @buildAll
-  buildKeywordsOneHot() {
-    writeIfChanged(
-      path.join(siteFolder, "keywordsOneHot.csv"),
-      new TreeNode(pldbBase.keywordsOneHot).toCsv()
-    )
-  }
-
-  @benchmark
-  @buildAll
   buildCsvImportsCommand() {
     const { csvBuildOutput } = pldbBase
     const {
@@ -291,9 +220,9 @@ class SiteBuilder {
       colNamesForCsv
     } = csvBuildOutput
 
-    writeIfChanged(path.join(siteFolder, "pldb.csv"), pldbCsv)
-    writeIfChanged(path.join(siteFolder, "languages.csv"), langsCsv)
-    writeIfChanged(path.join(siteFolder, "columns.csv"), columnsCsv)
+    Disk.writeIfChanged(path.join(siteFolder, "pldb.csv"), pldbCsv)
+    Disk.writeIfChanged(path.join(siteFolder, "languages.csv"), langsCsv)
+    Disk.writeIfChanged(path.join(siteFolder, "columns.csv"), columnsCsv)
 
     buildImportsFile(path.join(publishedDocsFolder, "csvImports.scroll"), {
       LANG_COUNT: pldbBase.topLanguages.length,
@@ -307,14 +236,6 @@ class SiteBuilder {
         rows: columnsMetadataTree
       }
     })
-  }
-
-  @benchmark
-  @buildAll
-  buildJsonCommand() {
-    const str = JSON.stringify(pldbBase.typedMap, null, 2)
-    writeIfChanged(path.join(siteFolder, "pldb.json"), str)
-    writeIfChanged(path.join(codeDir, "pldb.json"), str)
   }
 
   @benchmark
