@@ -3,19 +3,16 @@
 const path = require("path")
 const numeral = require("numeral")
 const lodash = require("lodash")
+const simpleGit = require("simple-git")
+
 const { TreeNode } = require("jtree/products/TreeNode.js")
 const { Utils } = require("jtree/products/Utils.js")
 const { GrammarCompiler } = require("jtree/products/GrammarCompiler.js")
 const { Disk } = require("jtree/products/Disk.node.js")
 const { TreeBaseServer } = require("jtree/products/treeBaseServer.node.js")
-const { ScrollFile } = require("scroll-cli")
-const { clearQuickCache } = require("./quickCache")
+const { ScrollFolder, ScrollFile } = require("scroll-cli")
 
 const { PLDBFolder } = require("./Folder")
-const simpleGit = require("simple-git")
-const { ScrollFolder } = require("scroll-cli")
-
-import { PLDBFolder } from "./Folder"
 
 const pldbBase = PLDBFolder.getBase().loadFolder()
 const codeDir = __dirname
@@ -257,7 +254,7 @@ ${scrollFooter}
     const { authorName, authorEmail } = parseGitAuthor(author)
     Utils.isValidEmail(authorEmail)
     const create = tree.getNode("create")
-    clearQuickCache(this.folder)
+    // clear cache
     if (create) {
       const data = create.childrenToString()
 
@@ -284,7 +281,7 @@ ${scrollFooter}
       file.prettifyAndSave()
       console.log(`Saved '${file.filename}'`)
       filenames.push(file.filename)
-      clearQuickCache(file)
+      // clear cache
       file.writeScrollFileIfChanged()
     })
 
@@ -482,7 +479,7 @@ const buildImportsFile = (filepath, varMap) => {
 
 class PLDBServerCommands {
   get server() {
-    return new PLDBServer(PLDBFolder.getBase().loadFolder(), ignoreFolder)
+    return new PLDBServer(pldbBase, ignoreFolder)
   }
 
   startDevServerCommand(port) {
@@ -494,9 +491,22 @@ class PLDBServerCommands {
   }
 
   formatDatabaseCommand() {
-    PLDBFolder.getBase()
-      .loadFolder()
-      .forEach(file => file.prettifyAndSave())
+    pldbBase.forEach(file => file.prettifyAndSave())
+  }
+
+  buildAllCommand() {
+    this.buildKeywordsImportsCommand()
+    this.buildFeaturePagesCommand()
+    this.buildDatabasePagesCommand()
+    this.buildAcknowledgementsImportsCommand()
+    this.buildCsvImportsCommand()
+    this.buildTopListImports()
+    this.buildExtensionsImports()
+    this.buildFeaturesImports()
+    this.buildOriginCommunitiesImports()
+    this.buildCreatorsImports()
+    this.buildHomepageImportsCommand()
+    this.buildScrollsCommand()
   }
 
   buildKeywordsImportsCommand() {
