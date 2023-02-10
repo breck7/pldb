@@ -1,6 +1,7 @@
 import header.scroll
 title Mirrors
 groups index
+
 startColumns 2
 
 * The URL for the official PLDB site is https://pldb.com. DNS will take that domain name and send your browser an IPv4 address. Your browser will send a request to that address which will reach our virtual server running Node.js (nicknamed _Build_) running in a Digital Ocean datacenter. _Build_ will send you the HTML, CSS, Javascript, PNGs, SVGs and JSON that make up the built website.
