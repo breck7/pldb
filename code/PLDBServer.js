@@ -65,12 +65,16 @@ const parseGitAuthor = (field = GIT_DEFAULT_AUTHOR) => {
   }
 }
 
-const scrollHeader =
-  new ScrollFile(undefined, path.join(builtSiteFolder, "header.scroll"))
-    .importResults.code +
-  "\n" +
-  Disk.read(path.join(builtSiteFolder, "editImports.scroll"))
+const scrollHeader = new ScrollFile(
+  undefined,
+  path.join(builtSiteFolder, "header.scroll")
+).importResults.code
 const scrollFooter = Disk.read(path.join(builtSiteFolder, "footer.scroll"))
+
+const getCombinedFiles = (baseDir = "", filepaths = []) =>
+  filepaths
+    .map(filename => Disk.read(path.join(baseDir, filepath)))
+    .join("\n\n")
 
 class PLDBServer extends TreeBaseServer {
   constructor(folder, ignoreFolder) {
@@ -149,15 +153,29 @@ class PLDBServer extends TreeBaseServer {
     app.get("/keywordsOneHot.csv", () => res.send(pldbBase.keywordsOneHotCsv))
     app.get("/pldb.json", () => res.send(pldbBase.typedMapJson))
 
-    const frontEndJsLibs = `mousetrap.js
-autocomplete.js
-search.js`
-      .split("\n")
-      .map(filename =>
-        Disk.read(path.join(__dirname, "frontEndJavascript", filename))
+    const frontEndJsLibs = getCombinedFiles(
+      path.join(__dirname, "frontEndJavascript"),
+      `mousetrap.js autocomplete.js PLDBClientSideApp.js`.split(" ")
+    )
+    app.get("/combinedFrontEnd.js", () => res.send(frontEndJsLibs))
+
+    const editorLibCode =
+      getCombinedFiles(
+        path.join(nodeModulesFolder, "jtree"),
+        `products/Utils.browser.js
+products/TreeNode.browser.js
+products/GrammarLanguage.browser.js
+products/GrammarCodeMirrorMode.browser.js
+sandbox/lib/codemirror.js
+sandbox/lib/show-hint.js`.split("\n")
+      ) +
+      "\n\n" +
+      getCombinedFiles(
+        builtSiteFolder,
+        "pldb.browser.js tql.browser.js".split(" ")
       )
-      .join("\n\n")
-    app.get("/frontEndJavascript/combined.js", () => res.send(frontEndJsLibs))
+
+    app.get("/editorLibCode.js", () => res.send(editorLibCode))
 
     this.addRedirects(app)
   }
@@ -202,6 +220,11 @@ search.js`
 
     return new ScrollFile(
       `${scrollHeader}
+
+html
+ <link rel="stylesheet" type="text/css" href="node_modules/jtree/sandbox/lib/codemirror.css" />
+ <link rel="stylesheet" type="text/css" href="node_modules/jtree/sandbox/lib/codemirror.show-hint.css" />
+ <script src="/editorLibCode.js"></script>
 
 title Search Results
  hidden

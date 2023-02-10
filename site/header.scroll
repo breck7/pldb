@@ -12,7 +12,7 @@ stumpNoSnippet
   type text/css
   href BASE_URL/style.css
  script
-  src BASE_URL/frontEndJavascript/combined.js
+  src BASE_URL/combinedFrontEnd.js
  div
   class pldbHeader doNotPrint
   a PLDB
