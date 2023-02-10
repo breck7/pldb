@@ -15,11 +15,6 @@ const getJoined = (node, keywords) => {
   return lodash.uniq(words).join(" ")
 }
 
-const getFirst = (file, keywords) => {
-  const hit = keywords.find(keyWord => file.get(keyWord))
-  return hit ? file.get(hit) : ""
-}
-
 // todo: move to grammar
 const isLanguage = type => {
   const nonLanguages = {
@@ -201,14 +196,13 @@ class PLDBFile extends TreeBaseFile {
   }
 
   get repo() {
-    return getFirst(
-      this,
+    return this.getOneOf(
       "gitRepo githubRepo gitlabRepo sourcehutRepo".split(" ")
     )
   }
 
   get repl() {
-    return getFirst(this, "webRepl rijuRepl tryItOnline replit".split(" "))
+    return this.getOneOf("webRepl rijuRepl tryItOnline replit".split(" "))
   }
 
   get lineCommentToken() {
@@ -1557,4 +1551,4 @@ ${creatorsLinks}
   }
 }
 
-export { PLDBFile, isLanguage }
+module.exports = { PLDBFile, isLanguage }
