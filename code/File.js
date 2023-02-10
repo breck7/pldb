@@ -578,9 +578,9 @@ class PLDBFile extends TreeBaseFile {
     )
   }
 
-  writeScrollFileIfChanged() {
+  writeScrollFileIfChanged(folder) {
     Disk.writeIfChanged(
-      this.filePath,
+      folder + this.id + ".scroll",
       new LanguagePageTemplate(this).toScroll()
     )
   }

@@ -27,20 +27,16 @@ const { ScrollFolder, ScrollFile } = require("scroll-cli")
 const { PLDBFolder } = require("./Folder")
 
 const pldbBase = PLDBFolder.getBase().loadFolder()
-const codeDir = __dirname
-const rootDir = path.join(codeDir, "..")
-const siteFolder = path.join(rootDir, "site")
-const pagesDir = path.join(siteFolder, "pages")
-const publishedDocsFolder = path.join(siteFolder, "docs")
-const publishedPagesFolder = path.join(siteFolder, "pages")
-const listsFolder = path.join(siteFolder, "lists")
-const publishedPostsFolder = path.join(siteFolder, "posts")
-const publishedFeaturesFolder = path.join(siteFolder, "features")
-const publishedLanguagesFolder = path.join(siteFolder, "languages") // Todo: eventually redirect away from /languages?
 const baseFolder = path.join(__dirname, "..")
-const builtSiteFolder = path.join(baseFolder, "site")
 const ignoreFolder = path.join(baseFolder, "ignore")
 const nodeModulesFolder = path.join(baseFolder, "node_modules")
+const siteFolder = path.join(baseFolder, "site")
+const pagesDir = path.join(siteFolder, "pages")
+const docsFolder = path.join(siteFolder, "docs")
+const listsFolder = path.join(siteFolder, "lists")
+const postsFolder = path.join(siteFolder, "posts")
+const featuresFolder = path.join(siteFolder, "features")
+const languagesFolder = path.join(siteFolder, "languages") // Todo: eventually redirect away from /languages?
 
 const lastCommitHashInFolder = (cwd = __dirname) =>
   require("child_process")
@@ -76,9 +72,9 @@ const parseGitAuthor = (field = GIT_DEFAULT_AUTHOR) => {
 
 const scrollHeader = new ScrollFile(
   undefined,
-  path.join(builtSiteFolder, "header.scroll")
+  path.join(siteFolder, "header.scroll")
 ).importResults.code
-const scrollFooter = Disk.read(path.join(builtSiteFolder, "footer.scroll"))
+const scrollFooter = Disk.read(path.join(siteFolder, "footer.scroll"))
 
 const getCombinedFiles = (baseDir = "", filepaths = []) =>
   filepaths
@@ -90,7 +86,7 @@ class PLDBServer extends TreeBaseServer {
     super(folder, ignoreFolder)
     this.editLogPath = path.join(ignoreFolder, "treeBaseServerLog.tree")
     this.compileGrammarsForCodeMirrorEditors()
-    this.serveFolder(builtSiteFolder)
+    this.serveFolder(siteFolder)
     this.serveFolder(__dirname)
     this.initSearch()
 
@@ -179,10 +175,7 @@ sandbox/lib/codemirror.js
 sandbox/lib/show-hint.js`.split("\n")
       ) +
       "\n\n" +
-      getCombinedFiles(
-        builtSiteFolder,
-        "pldb.browser.js tql.browser.js".split(" ")
-      )
+      getCombinedFiles(siteFolder, "pldb.browser.js tql.browser.js".split(" "))
 
     app.get("/editorLibCode.js", () => res.send(editorLibCode))
 
@@ -298,7 +291,7 @@ ${scrollFooter}
     })
 
     pldbBase.quickCache = {}
-    changedFiles.forEach(file => file.writeScrollFileIfChanged())
+    changedFiles.forEach(file => file.writeScrollFileIfChanged(languagesFolder))
 
     const commitResult = await this.commitFilesPullAndPush(
       filenames,
@@ -309,7 +302,7 @@ ${scrollFooter}
     return commitResult.commitHash
   }
 
-  notFoundPage = Disk.read(path.join(builtSiteFolder, "custom_404.html"))
+  notFoundPage = Disk.read(path.join(siteFolder, "custom_404.html"))
 
   validateSubmission(content, fileBeingEdited) {
     // Run some simple sanity checks.
@@ -353,7 +346,7 @@ ${scrollFooter}
 
     // todo: cleanup
     GrammarCompiler.compileGrammarForBrowser(
-      path.join(builtSiteFolder, "pldb.grammar"),
+      path.join(siteFolder, "pldb.grammar"),
       __dirname + "/",
       false
     )
@@ -541,14 +534,14 @@ class PLDBServerCommands {
   buildFeaturePagesCommand() {
     pldbBase.features.forEach(feature =>
       Disk.writeIfChanged(
-        path.join(publishedFeaturesFolder, `${feature.id}.scroll`),
+        path.join(featuresFolder, `${feature.id}.scroll`),
         feature.toScroll()
       )
     )
   }
 
   buildDatabasePagesCommand() {
-    pldbBase.forEach(file => file.writeScrollFileIfChanged())
+    pldbBase.forEach(file => file.writeScrollFileIfChanged(languagesFolder))
   }
 
   buildAcknowledgementsImportsCommand() {
@@ -616,7 +609,7 @@ class PLDBServerCommands {
     Disk.writeIfChanged(path.join(siteFolder, "languages.csv"), langsCsv)
     Disk.writeIfChanged(path.join(siteFolder, "columns.csv"), columnsCsv)
 
-    buildImportsFile(path.join(publishedDocsFolder, "csvImports.scroll"), {
+    buildImportsFile(path.join(docsFolder, "csvImports.scroll"), {
       LANG_COUNT: pldbBase.topLanguages.length,
       APPROXIMATE_FACT_COUNT: numeral(pldbBase.factCount).format("0,0a"),
       COL_COUNT: colNamesForCsv.length,
@@ -807,7 +800,7 @@ class PLDBServerCommands {
   }
 
   buildHomepageImportsCommand() {
-    const postsScroll = new ScrollFolder(publishedPostsFolder)
+    const postsScroll = new ScrollFolder(postsFolder)
 
     buildImportsFile(path.join(siteFolder, "homepageImports.scroll"), {
       TOP_LANGS: pldbBase.topLanguages
@@ -828,11 +821,11 @@ class PLDBServerCommands {
     const folders = [
       siteFolder,
       listsFolder,
-      publishedLanguagesFolder,
-      publishedPagesFolder,
-      publishedDocsFolder,
-      publishedPostsFolder,
-      publishedFeaturesFolder
+      languagesFolder,
+      pagesDir,
+      docsFolder,
+      postsFolder,
+      featuresFolder
     ]
     const didSiteFolderChange = new ScrollFolder(siteFolder).buildNeeded
     folders.forEach(folderPath => {
@@ -848,6 +841,43 @@ class PLDBServerCommands {
           `Ran scroll build in ${folderPath} because site folder changed`
         )
       }
+    })
+  }
+
+  // new PLDBServerCommands().changeListDelimiterCommand("originCommunity", " && ")
+  changeListDelimiterCommand(field, newDelimiter) {
+    pldbBase.forEach(file => {
+      const hit = file.getNode(field)
+      if (hit) {
+        const parsed = file.parsed.getNode(field)
+        hit.setContent(parsed.list.join(newDelimiter))
+        file.save()
+      }
+    })
+  }
+
+  // new PLDBServerCommands().rename("cpp", "cPlusPlus")
+  rename(oldId, newId) {
+    pldbBase.rename(oldId, newId)
+  }
+
+  // new PLDBServerCommands().replaceListItems("originCommunity", { "Apple Inc": "Apple" })
+  replaceListItems(field, replacementMap) {
+    const keys = Object.keys(replacementMap)
+    const delimiter = " && "
+    pldbBase.forEach(file => {
+      const value = file.get(field)
+      if (!value) return
+
+      const values = value
+        .split(delimiter)
+        .map(value => (replacementMap[value] ? replacementMap[value] : value))
+
+      const joined = values.join(delimiter)
+      if (joined === value) return
+
+      file.set(field, joined)
+      file.prettifyAndSave()
     })
   }
 }
