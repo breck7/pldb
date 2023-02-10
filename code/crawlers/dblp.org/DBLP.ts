@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 
-import { PoliteCrawler } from "../../PoliteCrawler"
+import { PoliteCrawler } from "../PoliteCrawler"
 import { PLDBFolder } from "../../Folder"
 import { PLDBFile } from "../../File"
 const lodash = require("lodash")
