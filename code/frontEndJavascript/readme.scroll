@@ -1,25 +1,16 @@
 # Front End Javascript Folder
-
-* This folder contains 3rd party JS libs used by our site and a few small scripts that glue them to enhance the basic functionality.
-
-# Building the combined file:
-
-bashCode
- npm run buildCombined
+* This folder contains our tiny amount of front end code and some 3rd party JS libs used by our site.
 
 # Libraries
 
 ## Autocomplete by kraaden
  https://github.com/kraaden/autocomplete
-
 - Copy the CSS from https://github.com/kraaden/autocomplete/blob/master/autocomplete.css into `style.css`
 - Download https://github.com/kraaden/autocomplete/blob/master/autocomplete.js to `autocomplete.js`
 - WARNING: We've made some monkey patches
 
 ## Mousetrap
+* For keyboard shortcuts.
 
-## JQuery
-
-## JQuery Datatables
-
-
+## JQuery JQuery Datatables
+* Will be removed once TQL is more mature.

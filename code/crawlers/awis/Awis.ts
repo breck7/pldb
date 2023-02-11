@@ -2,7 +2,7 @@
 
 import { PLDBFolder } from "../../Folder"
 import { PLDBFile } from "../../File"
-import { PoliteCrawler } from "../../PoliteCrawler"
+import { PoliteCrawler } from "../PoliteCrawler"
 
 const { TreeNode } = require("jtree/products/TreeNode.js")
 const { Utils } = require("jtree/products/Utils.js")

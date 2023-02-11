@@ -1,8 +1,9 @@
 import header.scroll
 title All Features
-html <div class="singleColumn">
 groups index
 import allFeaturesImports.scroll
+
+html <div class="singleColumn">
 
 * A list of COUNT features found in programming languages.
 

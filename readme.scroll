@@ -36,18 +36,12 @@ code
  cd pldb
  npm install .
  npm i -g cloc
- npm run tsc
- npm run build
- # Run tests (optional)
+ # Run tests
  npm run test
- # Open the static site in your browser (without full text search)
- open site/index.html
- # Start the dev server to also have full text search running:
+ # Start the dev server
  npm run local
  # After you make changes and before you commit make sure to run:
  npm run format
-
-import code/dockerBuildInstructions.scroll
 
 ## To explore this repo
 * The most important folder is `database/things/`, which contains a file for each entity. The folder `database/grammar/` contains the grammar files (schema) for the database.

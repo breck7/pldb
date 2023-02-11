@@ -67,9 +67,9 @@ monacoEditorNode
  javascript
   compile() {
    return `<div id="monacoContainer"></div>
-    <script src="../node_modules/monaco-editor/min/vs/loader.js"></script>
+    <script src="/monaco-editor/min/vs/loader.js"></script>
     <script>
-    require.config({ paths: { vs: '../node_modules/monaco-editor/min/vs' } })
+    require.config({ paths: { vs: '/monaco-editor/min/vs' } })
     require(["vs/editor/editor.main"], function() {
       monaco.editor.create(document.getElementById('monacoContainer'), {
           value: \`${this.childrenToString().replace(/\n/g, "\\n")}\`,
