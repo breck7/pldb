@@ -79,7 +79,7 @@ const scrollFooter = Disk.read(path.join(siteFolder, "footer.scroll"))
 
 const getCombinedFiles = (baseDir = "", filepaths = []) =>
   filepaths
-    .map(filename => Disk.read(path.join(baseDir, filepath)))
+    .map(filename => Disk.read(path.join(baseDir, filename)))
     .join("\n\n")
 
 class PLDBServer extends TreeBaseServer {
