@@ -36,6 +36,7 @@ code
  cd pldb
  npm install .
  npm i -g cloc
+ npm run build
  # Run tests
  npm run test
  # Start the dev server

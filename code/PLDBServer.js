@@ -577,7 +577,7 @@ class PLDBServerCommands {
     // todo: cleanup
     GrammarCompiler.compileGrammarForBrowser(
       path.join(distFolder, "pldb.grammar"),
-      siteFolder + "/",
+      distFolder + "/",
       false
     )
 
@@ -626,7 +626,7 @@ sandbox/lib/codemirror.js
 sandbox/lib/show-hint.js`.split("\n")
       ) +
       "\n\n" +
-      combineJsFiles(siteFolder, "pldb.browser.js tql.browser.js".split(" "))
+      combineJsFiles(distFolder, "pldb.browser.js tql.browser.js".split(" "))
 
     Disk.write(path.join(distFolder, "editorLibCode.js"), editorLibCode)
   }
