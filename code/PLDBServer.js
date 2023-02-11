@@ -32,6 +32,7 @@ const baseFolder = path.join(__dirname, "..")
 const ignoreFolder = path.join(baseFolder, "ignore")
 const nodeModulesFolder = path.join(baseFolder, "node_modules")
 const siteFolder = path.join(baseFolder, "site")
+const distFolder = path.join(siteFolder, "dist")
 const pagesDir = path.join(siteFolder, "pages")
 const docsFolder = path.join(siteFolder, "docs")
 const listsFolder = path.join(siteFolder, "lists")
@@ -86,7 +87,6 @@ class PLDBServer extends TreeBaseServer {
   constructor(folder, ignoreFolder) {
     super(folder, ignoreFolder)
     this.editLogPath = path.join(ignoreFolder, "treeBaseServerLog.tree")
-    this.compileGrammarsForCodeMirrorEditors()
     this.serveFolder(siteFolder)
     this.serveFolder(__dirname)
     this.initSearch()
@@ -153,35 +153,6 @@ class PLDBServer extends TreeBaseServer {
         : next()
     )
 
-    app.get("/searchIndex.json", (req, res) =>
-      res.send(pldbBase.searchIndexJson)
-    )
-    app.get("/keywordsOneHot.csv", (req, res) =>
-      res.send(pldbBase.keywordsOneHotCsv)
-    )
-    app.get("/pldb.json", (req, res) => res.send(pldbBase.typedMapJson))
-
-    const frontEndJsLibs = getCombinedFiles(
-      path.join(__dirname, "frontEndJavascript"),
-      `mousetrap.js autocomplete.js PLDBClientSideApp.js`.split(" ")
-    )
-    app.get("/combinedFrontEnd.js", (req, res) => res.send(frontEndJsLibs))
-
-    const editorLibCode =
-      getCombinedFiles(
-        path.join(nodeModulesFolder, "jtree"),
-        `products/Utils.browser.js
-products/TreeNode.browser.js
-products/GrammarLanguage.browser.js
-products/GrammarCodeMirrorMode.browser.js
-sandbox/lib/codemirror.js
-sandbox/lib/show-hint.js`.split("\n")
-      ) +
-      "\n\n" +
-      getCombinedFiles(siteFolder, "pldb.browser.js tql.browser.js".split(" "))
-
-    app.get("/editorLibCode.js", (req, res) => res.send(editorLibCode))
-
     this.addRedirects(app)
   }
 
@@ -229,7 +200,7 @@ sandbox/lib/show-hint.js`.split("\n")
 html
  <link rel="stylesheet" type="text/css" href="node_modules/jtree/sandbox/lib/codemirror.css" />
  <link rel="stylesheet" type="text/css" href="node_modules/jtree/sandbox/lib/codemirror.show-hint.css" />
- <script src="/editorLibCode.js"></script>
+ <script src="/dist/editorLibCode.js"></script>
 
 title Search Results
  hidden
@@ -341,41 +312,6 @@ ${scrollFooter}
     return {
       content: parsed.sortFromSortTemplate().toString()
     }
-  }
-
-  compileGrammarsForCodeMirrorEditors() {
-    const { folder } = this
-    const { csvBuildOutput } = folder
-    const { colNamesForCsv } = csvBuildOutput
-
-    Disk.write(path.join(siteFolder, "pldb.grammar"), pldbBase.grammarCode)
-
-    // todo: cleanup
-    GrammarCompiler.compileGrammarForBrowser(
-      path.join(siteFolder, "pldb.grammar"),
-      siteFolder + "/",
-      false
-    )
-
-    const tqlPath = path.join(
-      __dirname,
-      "..",
-      "node_modules",
-      "jtree",
-      "langs",
-      "tql",
-      "tql.grammar"
-    )
-    const tqlGrammar = new TreeNode(Disk.read(tqlPath))
-
-    tqlGrammar.getNode("columnNameCell").set("enum", colNamesForCsv.join(" "))
-    const combinedPath = path.join(this.ignoreFolder, "pldbTql.grammar")
-    Disk.write(combinedPath, tqlGrammar.toString())
-    GrammarCompiler.compileGrammarForBrowser(
-      combinedPath,
-      siteFolder + "/",
-      false
-    )
   }
 
   _git
@@ -520,6 +456,7 @@ class PLDBServerCommands {
     this.buildOriginCommunitiesImports()
     this.buildCreatorsImports()
     this.buildHomepageImportsCommand()
+    this.buildDistFolder()
     this.buildScrollsCommand()
   }
 
@@ -627,6 +564,73 @@ class PLDBServerCommands {
         rows: columnsMetadataTree
       }
     })
+  }
+
+  buildDistFolder() {
+    const { csvBuildOutput } = pldbBase
+    const { colNamesForCsv } = csvBuildOutput
+
+    if (!Disk.exists(distFolder)) Disk.mkdir(distFolder)
+
+    Disk.write(path.join(distFolder, "pldb.grammar"), pldbBase.grammarCode)
+
+    // todo: cleanup
+    GrammarCompiler.compileGrammarForBrowser(
+      path.join(distFolder, "pldb.grammar"),
+      siteFolder + "/",
+      false
+    )
+
+    const tqlPath = path.join(
+      __dirname,
+      "..",
+      "node_modules",
+      "jtree",
+      "langs",
+      "tql",
+      "tql.grammar"
+    )
+    const tqlGrammar = new TreeNode(Disk.read(tqlPath))
+
+    tqlGrammar.getNode("columnNameCell").set("enum", colNamesForCsv.join(" "))
+    const combinedPath = path.join(distFolder, "pldbTql.grammar")
+    Disk.write(combinedPath, tqlGrammar.toString())
+    GrammarCompiler.compileGrammarForBrowser(
+      combinedPath,
+      distFolder + "/",
+      false
+    )
+
+    Disk.write(
+      path.join(distFolder, "searchIndex.json"),
+      pldbBase.searchIndexJson
+    )
+    Disk.write(
+      path.join(distFolder, "keywordsOneHot.csv"),
+      pldbBase.keywordsOneHotCsv
+    )
+    Disk.write(path.join(siteFolder, "pldb.json"), pldbBase.typedMapJson)
+
+    const frontEndJsLibs = getCombinedFiles(
+      path.join(__dirname, "frontEndJavascript"),
+      `mousetrap.js autocomplete.js PLDBClientSideApp.js`.split(" ")
+    )
+    Disk.write(path.join(distFolder, "combinedFrontEnd.json"), frontEndJsLibs)
+
+    const editorLibCode =
+      getCombinedFiles(
+        path.join(nodeModulesFolder, "jtree"),
+        `products/Utils.browser.js
+products/TreeNode.browser.js
+products/GrammarLanguage.browser.js
+products/GrammarCodeMirrorMode.browser.js
+sandbox/lib/codemirror.js
+sandbox/lib/show-hint.js`.split("\n")
+      ) +
+      "\n\n" +
+      getCombinedFiles(siteFolder, "pldb.browser.js tql.browser.js".split(" "))
+
+    Disk.write(path.join(distFolder, "editorLibCode.js"), editorLibCode)
   }
 
   buildTopListImports() {

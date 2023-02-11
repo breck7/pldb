@@ -61,7 +61,7 @@ const initSearchAutocomplete = elementId => {
 
 			if (!searchIndexRequestMade) {
 				searchIndexRequestMade = true
-				let response = await fetch("/searchIndex.json")
+				let response = await fetch("/dist/searchIndex.json")
 				if (response.ok) searchIndex = await response.json()
 			}
 

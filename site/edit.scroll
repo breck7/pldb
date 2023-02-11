@@ -2,10 +2,7 @@ import header.scroll
 title Edit file
  id pageTitle
 
-html
- <link rel="stylesheet" type="text/css" href="node_modules/jtree/sandbox/lib/codemirror.css" />
- <link rel="stylesheet" type="text/css" href="node_modules/jtree/sandbox/lib/codemirror.show-hint.css" />
- <script src="/editorLibCode.js"></script>
+import editorIncludes.scroll
 
 html <div id="formHolder"></div>
 
