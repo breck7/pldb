@@ -198,8 +198,8 @@ class PLDBServer extends TreeBaseServer {
       `${scrollHeader}
 
 html
- <link rel="stylesheet" type="text/css" href="node_modules/jtree/sandbox/lib/codemirror.css" />
- <link rel="stylesheet" type="text/css" href="node_modules/jtree/sandbox/lib/codemirror.show-hint.css" />
+ <link rel="stylesheet" type="text/css" href="/jtree/sandbox/lib/codemirror.css" />
+ <link rel="stylesheet" type="text/css" href="/jtree/sandbox/lib/codemirror.show-hint.css" />
  <script src="/dist/editorLibCode.js"></script>
 
 title Search Results
@@ -582,9 +582,7 @@ class PLDBServerCommands {
     )
 
     const tqlPath = path.join(
-      __dirname,
-      "..",
-      "node_modules",
+      nodeModulesFolder,
       "jtree",
       "langs",
       "tql",
@@ -615,7 +613,7 @@ class PLDBServerCommands {
       path.join(__dirname, "frontEndJavascript"),
       `mousetrap.js autocomplete.js PLDBClientSideApp.js`.split(" ")
     )
-    Disk.write(path.join(distFolder, "combinedFrontEnd.json"), frontEndJsLibs)
+    Disk.write(path.join(distFolder, "combinedFrontEnd.js"), frontEndJsLibs)
 
     const editorLibCode =
       getCombinedFiles(
