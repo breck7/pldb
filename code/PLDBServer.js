@@ -153,15 +153,19 @@ class PLDBServer extends TreeBaseServer {
         : next()
     )
 
-    app.get("/searchIndex.json", () => res.send(pldbBase.searchIndexJson))
-    app.get("/keywordsOneHot.csv", () => res.send(pldbBase.keywordsOneHotCsv))
-    app.get("/pldb.json", () => res.send(pldbBase.typedMapJson))
+    app.get("/searchIndex.json", (req, res) =>
+      res.send(pldbBase.searchIndexJson)
+    )
+    app.get("/keywordsOneHot.csv", (req, res) =>
+      res.send(pldbBase.keywordsOneHotCsv)
+    )
+    app.get("/pldb.json", (req, res) => res.send(pldbBase.typedMapJson))
 
     const frontEndJsLibs = getCombinedFiles(
       path.join(__dirname, "frontEndJavascript"),
       `mousetrap.js autocomplete.js PLDBClientSideApp.js`.split(" ")
     )
-    app.get("/combinedFrontEnd.js", () => res.send(frontEndJsLibs))
+    app.get("/combinedFrontEnd.js", (req, res) => res.send(frontEndJsLibs))
 
     const editorLibCode =
       getCombinedFiles(
@@ -176,7 +180,7 @@ sandbox/lib/show-hint.js`.split("\n")
       "\n\n" +
       getCombinedFiles(siteFolder, "pldb.browser.js tql.browser.js".split(" "))
 
-    app.get("/editorLibCode.js", () => res.send(editorLibCode))
+    app.get("/editorLibCode.js", (req, res) => res.send(editorLibCode))
 
     this.addRedirects(app)
   }
@@ -344,10 +348,12 @@ ${scrollFooter}
     const { csvBuildOutput } = folder
     const { colNamesForCsv } = csvBuildOutput
 
+    Disk.write(path.join(siteFolder, "pldb.grammar"), pldbBase.grammarCode)
+
     // todo: cleanup
     GrammarCompiler.compileGrammarForBrowser(
       path.join(siteFolder, "pldb.grammar"),
-      __dirname + "/",
+      siteFolder + "/",
       false
     )
 
@@ -367,7 +373,7 @@ ${scrollFooter}
     Disk.write(combinedPath, tqlGrammar.toString())
     GrammarCompiler.compileGrammarForBrowser(
       combinedPath,
-      __dirname + "/",
+      siteFolder + "/",
       false
     )
   }
@@ -515,11 +521,6 @@ class PLDBServerCommands {
     this.buildCreatorsImports()
     this.buildHomepageImportsCommand()
     this.buildScrollsCommand()
-    this.buildGrammarCommand()
-  }
-
-  buildGrammarCommand() {
-    Disk.write(path.join(siteFolder, "pldb.grammar"), pldbBase.grammarCode)
   }
 
   buildKeywordsImportsCommand() {
