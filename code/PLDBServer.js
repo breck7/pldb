@@ -78,10 +78,10 @@ const scrollHeader = new ScrollFile(
 ).importResults.code
 const scrollFooter = Disk.read(path.join(siteFolder, "footer.scroll"))
 
-const getCombinedFiles = (baseDir = "", filepaths = []) =>
+const combineJsFiles = (baseDir = "", filepaths = []) =>
   filepaths
     .map(filename => Disk.read(path.join(baseDir, filename)))
-    .join("\n\n")
+    .join(`;\n\n`)
 
 class PLDBServer extends TreeBaseServer {
   constructor(folder, ignoreFolder) {
@@ -94,11 +94,11 @@ class PLDBServer extends TreeBaseServer {
     const { app } = this
 
     this.app.use(
-      "jtree",
-      express.static(path.join(nodeModulesFolder, "jtree", "products"))
+      "/jtree",
+      express.static(path.join(nodeModulesFolder, "jtree"))
     )
     this.app.use(
-      "monaco-editor",
+      "/monaco-editor",
       express.static(path.join(nodeModulesFolder, "monaco-editor"))
     )
 
@@ -609,14 +609,14 @@ class PLDBServerCommands {
     )
     Disk.write(path.join(siteFolder, "pldb.json"), pldbBase.typedMapJson)
 
-    const frontEndJsLibs = getCombinedFiles(
+    const frontEndJsLibs = combineJsFiles(
       path.join(__dirname, "frontEndJavascript"),
       `mousetrap.js autocomplete.js PLDBClientSideApp.js`.split(" ")
     )
     Disk.write(path.join(distFolder, "combinedFrontEnd.js"), frontEndJsLibs)
 
     const editorLibCode =
-      getCombinedFiles(
+      combineJsFiles(
         path.join(nodeModulesFolder, "jtree"),
         `products/Utils.browser.js
 products/TreeNode.browser.js
@@ -626,7 +626,7 @@ sandbox/lib/codemirror.js
 sandbox/lib/show-hint.js`.split("\n")
       ) +
       "\n\n" +
-      getCombinedFiles(siteFolder, "pldb.browser.js tql.browser.js".split(" "))
+      combineJsFiles(siteFolder, "pldb.browser.js tql.browser.js".split(" "))
 
     Disk.write(path.join(distFolder, "editorLibCode.js"), editorLibCode)
   }
