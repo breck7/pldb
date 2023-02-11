@@ -352,13 +352,19 @@ class PLDBFolder extends TreeBaseFolder {
       .setGrammarDir(path.join(databaseFolder, "grammar"))
   }
   quickCache = {}
+  clearQuickCache() {
+    this.quickCache = {}
+  }
 
   createParser() {
     return new TreeNode.Parser(PLDBFile)
   }
 
   get inboundLinks() {
-    const inBoundLinks = {}
+    if (this.quickCache.inBoundLinks) return this.quickCache.inBoundLinks
+
+    this.quickCache.inBoundLinks = {}
+    const inBoundLinks = this.quickCache.inBoundLinks
     this.forEach(file => (inBoundLinks[file.id] = []))
 
     this.forEach(file => {
@@ -381,7 +387,9 @@ class PLDBFolder extends TreeBaseFolder {
   }
 
   get searchIndex() {
-    const map = new Map()
+    if (this.quickCache.searchIndex) return this.quickCache.searchIndex
+    this.quickCache.searchIndex = new Map()
+    const map = this.quickCache.searchIndex
     this.forEach(file => {
       const { id } = file
       file.names.forEach(name => map.set(name.toLowerCase(), id))
@@ -406,7 +414,9 @@ class PLDBFolder extends TreeBaseFolder {
   }
 
   get extensionsMap() {
-    const extensionsMap = new Map()
+    if (this.quickCache.extensionsMap) return this.quickCache.extensionsMap
+    this.quickCache.extensionsMap = new Map()
+    const extensionsMap = this.quickCache.extensionsMap
     this.topLanguages
       .slice(0)
       .reverse()
@@ -426,10 +436,12 @@ class PLDBFolder extends TreeBaseFolder {
   }
 
   get topLanguages() {
-    return lodash.sortBy(
-      this.filter(lang => lang.isLanguage),
-      "languageRank"
-    )
+    if (!this.quickCache.topLanguages)
+      this.quickCache.topLanguages = lodash.sortBy(
+        this.filter(lang => lang.isLanguage),
+        "languageRank"
+      )
+    return this.quickCache.topLanguages
   }
 
   predictNumberOfUsers(file) {
@@ -473,9 +485,6 @@ class PLDBFolder extends TreeBaseFolder {
   get rankings() {
     if (!this.quickCache.rankings)
       this.quickCache.rankings = computeRankings(this)
-    // Todo: once jtree is cleaned up, we should be able to remove this.
-    // the problem is this class does implement FolderInterface, but Typescript doesn't know that
-    // because it misses the inherited methods (filter and getChildren).
     return this.quickCache.rankings
   }
 
@@ -486,29 +495,36 @@ class PLDBFolder extends TreeBaseFolder {
     return this.getFile(ranks[rank].id)
   }
 
-  _featureCache = {}
   getLanguagesWithFeatureResearched(id) {
-    if (!this._featureCache[id])
-      this._featureCache[id] = this.topLanguages.filter(file =>
-        file.extendedFeaturesNode.has(id)
-      )
-    return this._featureCache[id]
+    if (!this.quickCache.featureCache) this.quickCache.featureCache = {}
+    if (this.quickCache.featureCache[id])
+      return this.quickCache.featureCache[id]
+    this.quickCache.featureCache[id] = this.topLanguages.filter(file =>
+      file.extendedFeaturesNode.has(id)
+    )
+    return this.quickCache.featureCache[id]
   }
 
   get featuresMap() {
-    const featuresMap = new Map()
+    if (this.quickCache.featuresMap) return this.quickCache.featuresMap
+    this.quickCache.featuresMap = new Map()
+    const featuresMap = this.quickCache.featuresMap
     this.topFeatures.forEach(feature => featuresMap.set(feature.id, feature))
     return featuresMap
   }
 
   get features() {
-    return new FeaturesCollection(this).features
+    if (!this.quickCache.features)
+      this.quickCache.features = new FeaturesCollection(this).features
+    return this.quickCache.features
   }
 
   get topFeatures() {
+    if (this.quickCache.topFeatures) return this.quickCache.topFeatures
     const { features } = this
     const sorted = lodash.sortBy(features, "yes")
     sorted.reverse()
+    this.quickCache.topFeatures = sorted
     return sorted
   }
 
@@ -581,7 +597,10 @@ class PLDBFolder extends TreeBaseFolder {
   }
 
   get colNameToGrammarDefMap() {
-    const map = new Map()
+    if (this.quickCache.colNameToGrammarDefMap)
+      return this.quickCache.colNameToGrammarDefMap
+    this.quickCache.colNameToGrammarDefMap = new Map()
+    const map = this.quickCache.colNameToGrammarDefMap
     this.nodesForCsv.forEach(node => {
       node.getTopDownArray().forEach(node => {
         const path = node.getFirstWordPath().replace(/ /g, ".")
@@ -626,7 +645,9 @@ class PLDBFolder extends TreeBaseFolder {
   }
 
   get grammarFileMap() {
-    const map = {}
+    if (this.quickCache.grammarFileMap) return this.quickCache.grammarFileMap
+    this.quickCache.grammarFileMap = {}
+    const map = this.quickCache.grammarFileMap
     this.grammarFilePaths.forEach(
       filepath => (map[filepath] = Disk.read(filepath))
     )
@@ -634,6 +655,9 @@ class PLDBFolder extends TreeBaseFolder {
   }
 
   get columnDocumentation() {
+    if (this.quickCache.columnDocumentation)
+      return this.quickCache.columnDocumentation
+
     // Return columns with documentation sorted in the most interesting order.
 
     const { colNameToGrammarDefMap, objectsForCsv } = this
@@ -731,14 +755,16 @@ wikipedia`.split("\n")
 
     sortedCols.forEach((col, index) => (col.Index = index + 1))
 
+    this.quickCache.columnDocumentation = sortedCols
     return sortedCols
   }
 
   get nodesForCsv() {
+    if (this.quickCache.nodesForCsv) return this.quickCache.nodesForCsv
     const runTimeProps = `pldbId bookCount paperCount hopl exampleCount numberOfUsers numberOfRepos numberOfJobs languageRank rank factCount lastActivity`.split(
       " "
     )
-    return this.map(file => {
+    this.quickCache.nodesForCsv = this.map(file => {
       const clone = file.parsed.clone()
       clone.getTopDownArray().forEach(node => {
         if (node.includeChildrenInCsv === false) node.deleteChildren()
@@ -752,38 +778,52 @@ wikipedia`.split("\n")
 
       return clone
     })
+    return this.quickCache.nodesForCsv
   }
 
   get typedMapJson() {
-    return JSON.stringify(this.typedMap, null, 2)
+    if (!this.quickCache.typedMapJson)
+      this.quickCache.typedMapJson = JSON.stringify(this.typedMap, null, 2)
+    return this.quickCache.typedMapJson
   }
 
   get keywordsOneHotCsv() {
-    return new TreeNode(this.keywordsOneHot).toCsv()
+    if (!this.quickCache.keywordsOneHotCsv)
+      this.quickCache.keywordsOneHotCsv = new TreeNode(
+        this.keywordsOneHot
+      ).toCsv()
+    return this.quickCache.keywordsOneHotCsv
   }
 
   get searchIndexJson() {
-    return JSON.stringify(
-      this.objectsForCsv.map(object => {
-        return {
-          label: object.title,
-          appeared: parseInt(object.appeared),
-          id: object.pldbId,
-          url: `/languages/${object.pldbId}.html`
-        }
-      }),
-      undefined,
-      2
-    )
+    if (!this.quickCache.searchIndexJson)
+      this.quickCache.searchIndexJson = JSON.stringify(
+        this.objectsForCsv.map(object => {
+          return {
+            label: object.title,
+            appeared: parseInt(object.appeared),
+            id: object.pldbId,
+            url: `/languages/${object.pldbId}.html`
+          }
+        }),
+        undefined,
+        2
+      )
+    return this.quickCache.searchIndexJson
   }
 
   get objectsForCsv() {
-    return lodash.sortBy(this.nodesForCsv.map(nodeToFlatObject), item =>
-      parseInt(item.rank)
-    )
+    if (this.quickCache.objectsForCsv)
+      this.quickCache.objectsForCsv = lodash.sortBy(
+        this.nodesForCsv.map(nodeToFlatObject),
+        item => parseInt(item.rank)
+      )
+    return this.quickCache.objectsForCsv
   }
 
   get csvBuildOutput() {
+    if (this.quickCache.csvBuildOutput) return this.quickCache.csvBuildOutput
+
     const { colNamesForCsv, objectsForCsv, columnDocumentation } = this
 
     const pldbCsv = new TreeNode(objectsForCsv).toDelimited(",", colNamesForCsv)
@@ -811,7 +851,7 @@ wikipedia`.split("\n")
       columnMetadataColumnNames
     )
 
-    return {
+    this.quickCache.csvBuildOutput = {
       pldbCsv,
       langsCsv,
       columnsCsv,
@@ -819,6 +859,7 @@ wikipedia`.split("\n")
       columnMetadataColumnNames,
       colNamesForCsv
     }
+    return this.quickCache.csvBuildOutput
   }
 
   get sources() {
@@ -834,6 +875,7 @@ wikipedia`.split("\n")
   }
 
   get keywordsOneHot() {
+    if (this.quickCache.keywordsOneHot) return this.quickCache.keywordsOneHot
     const { keywordsTable } = this
     const allKeywords = keywordsTable.rows.map(row => row.keyword)
     const langsWithKeywords = this.topLanguages.filter(file =>
@@ -850,22 +892,23 @@ wikipedia`.split("\n")
       return row
     })
     rows.unshift(headerRow)
+    this.quickCache.keywordsOneHot = rows
     return rows
   }
 
   get bytes() {
-    return this.toString().length
-  }
-
-  get cachedErrors() {
-    return this.errors
+    if (!this.quickCache.bytes) this.quickCache.bytes = this.toString().length
+    return this.quickCache.bytes
   }
 
   get factCount() {
-    return lodash.sum(this.map(file => file.factCount))
+    if (!this.quickCache.factCount)
+      this.quickCache.factCount = lodash.sum(this.map(file => file.factCount))
+    return this.quickCache.factCount
   }
 
   get keywordsTable() {
+    if (this.quickCache.keywordsTable) return this.quickCache.keywordsTable
     const langsWithKeywords = this.topLanguages.filter(file =>
       file.has("keywords")
     )
@@ -902,10 +945,12 @@ wikipedia`.split("\n")
         "%"
     })
 
-    return {
+    this.quickCache.keywordsTable = {
       langsWithKeywordsCount,
       rows: lodash.sortBy(rows, "count").reverse()
     }
+
+    return this.quickCache.keywordsTable
   }
 }
 

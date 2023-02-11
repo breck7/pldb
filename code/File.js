@@ -89,7 +89,10 @@ webApi
 xmlFormat`).toObject()
 
 class PLDBFile extends TreeBaseFile {
-  id = this.getLine() // todo: upstream this to TreeBase.
+  quickCache = {}
+  clearQuickCache() {
+    this.quickCache = {}
+  }
 
   get pldbId() {
     return this.id
@@ -137,19 +140,25 @@ class PLDBFile extends TreeBaseFile {
   }
 
   get bookCount() {
+    if (this.quickCache.bookCount !== undefined)
+      return this.quickCache.bookCount
     const gr = this.getNode(`goodreads`)?.length
     const isbndb = this.getNode(`isbndb`)?.length
     let count = 0
     if (gr) count += gr - 1
     if (isbndb) count += isbndb - 1
+    this.quickCache.bookCount = count
     return count
   }
 
   get paperCount() {
+    if (this.quickCache.paperCount !== undefined)
+      return this.quickCache.paperCount
     const ss = this.getNode(`semanticScholar`)?.length
 
     let count = 0
     if (ss) count += ss - 1
+    this.quickCache.paperCount = count
     return count
   }
 
@@ -232,11 +241,14 @@ class PLDBFile extends TreeBaseFile {
   }
 
   get extendedFeaturesNode() {
+    if (this.quickCache.extendedFeaturesNode)
+      return this.quickCache.extendedFeaturesNode
     const { supersetOfFile } = this
     const featuresNode = this.getNode(`features`) ?? new TreeNode()
-    return supersetOfFile
+    this.quickCache.extendedFeaturesNode = supersetOfFile
       ? supersetOfFile.extendedFeaturesNode.patch(featuresNode)
       : featuresNode
+    return this.quickCache.extendedFeaturesNode
   }
 
   get featuresWithExamples() {
@@ -468,7 +480,9 @@ class PLDBFile extends TreeBaseFile {
   }
 
   get numberOfUsers() {
-    return this.base.predictNumberOfUsers(this)
+    if (this.quickCache.numberOfUsers === undefined)
+      this.quickCache.numberOfUsers = this.base.predictNumberOfUsers(this)
+    return this.quickCache.numberOfUsers
   }
 
   get numberOfRepos() {
@@ -476,7 +490,9 @@ class PLDBFile extends TreeBaseFile {
   }
 
   get numberOfJobs() {
-    return this.base.predictNumberOfJobs(this)
+    if (this.quickCache.numberOfJobs === undefined)
+      this.quickCache.numberOfJobs = this.base.predictNumberOfJobs(this)
+    return this.quickCache.numberOfJobs
   }
 
   get percentile() {
@@ -493,7 +509,9 @@ class PLDBFile extends TreeBaseFile {
   }
 
   get rank() {
-    return this.base.getRank(this)
+    if (this.quickCache.rank === undefined)
+      this.quickCache.rank = this.base.getRank(this)
+    return this.quickCache.rank
   }
 
   get extensions() {
@@ -515,10 +533,9 @@ class PLDBFile extends TreeBaseFile {
     return this.parent
   }
 
-  _parsed
   get parsed() {
-    if (!this._parsed) this._parsed = super.parsed
-    return this._parsed
+    if (!this.quickCache.parsed) this.quickCache.parsed = super.parsed
+    return this.quickCache.parsed
   }
 
   get factCount() {
@@ -570,7 +587,7 @@ class PLDBFile extends TreeBaseFile {
   }
 
   sort() {
-    delete this._parsed
+    this.clearQuickCache()
     this.setChildren(
       this.parsed
         .sortFromSortTemplate()

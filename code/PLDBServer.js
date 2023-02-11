@@ -288,9 +288,10 @@ ${scrollFooter}
       filenames.push(file.filename)
 
       changedFiles.push(file)
+      file.clearQuickCache()
     })
 
-    pldbBase.quickCache = {}
+    pldbBase.clearQuickCache()
     changedFiles.forEach(file => file.writeScrollFileIfChanged(languagesFolder))
 
     const commitResult = await this.commitFilesPullAndPush(
