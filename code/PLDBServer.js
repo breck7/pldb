@@ -145,8 +145,6 @@ class PLDBServer extends TreeBaseServer {
       }
     })
 
-    app.get("/pldb.grammar", (req, res) => res.send(pldbBase.grammarCode))
-
     // Short urls:
     app.get("/:id", (req, res, next) =>
       this.folder.getFile(req.params.id)
@@ -516,6 +514,11 @@ class PLDBServerCommands {
     this.buildCreatorsImports()
     this.buildHomepageImportsCommand()
     this.buildScrollsCommand()
+    this.buildGrammarCommand()
+  }
+
+  buildGrammarCommand() {
+    Disk.write(path.join(siteFolder, "pldb.grammar"), pldbBase.grammarCode)
   }
 
   buildKeywordsImportsCommand() {
