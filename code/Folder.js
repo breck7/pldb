@@ -813,7 +813,7 @@ wikipedia`.split("\n")
   }
 
   get objectsForCsv() {
-    if (this.quickCache.objectsForCsv)
+    if (!this.quickCache.objectsForCsv)
       this.quickCache.objectsForCsv = lodash.sortBy(
         this.nodesForCsv.map(nodeToFlatObject),
         item => parseInt(item.rank)
