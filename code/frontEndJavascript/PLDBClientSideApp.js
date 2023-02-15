@@ -298,6 +298,7 @@ githubRepo https://github.com/elixir-lang/elixir</pre>`
 	}
 
 	get filename() {
+		if (location.pathname.includes("create.html")) return "create"
 		return this.currentFileId + ".pldb"
 	}
 
