@@ -121,10 +121,6 @@ class PLDBFile extends TreeBaseFile {
     return this.get("domainName")
   }
 
-  get factSponsors() {
-    return this.getNode("factSponsors")
-  }
-
   get permalink() {
     return this.id + ".html"
   }
@@ -1526,8 +1522,7 @@ ${creatorsLinks}
       numberOfRepos,
       title,
       isLanguage,
-      languageRank,
-      factSponsors
+      languageRank
     } = file
     const users =
       numberOfUsers > 10
@@ -1551,9 +1546,6 @@ ${creatorsLinks}
         : "",
       isLanguage
         ? `${paperCount} <span title="Academic publications about or leveraging ${title}">Papers</span>`
-        : "",
-      factSponsors
-        ? `${factSponsors.length} <span title="Number of people who have sponsored research on this file for $10 per fact.">Sponsors</span>`
         : "",
       numberOfRepos
         ? `${numeral(numberOfRepos).format(

@@ -18,6 +18,13 @@ a:hover {
   src: url(/googleMaterial.woff2) format("woff2");
 }
 
+.doubleWide {
+  max-width: 800px;
+  margin: auto;
+  padding: 40px;
+  box-sizing: border-box;
+}
+
 .material-symbols-outlined {
   font-family: "Material Symbols Outlined";
   font-weight: normal;
