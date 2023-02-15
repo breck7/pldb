@@ -1,0 +1,38 @@
+title Goal
+appeared 2022
+type pl
+reference https://www.reddit.com/r/ProgrammingLanguages/comments/zycdaq/goal_an_array_programming_language_written_in_go/
+
+writtenIn go
+influencedBy apl j k
+
+features
+ hasRegularExpressionsSyntaxSugar true
+
+example
+ csvs:"\n"_`
+ 1,2,3
+ 4,5,6
+ 7,8,9
+ `
+ tsvs:"\n"_`
+ 1	2	3
+ 4	5	6
+ 7	8	9
+ `
+ (
+   (csv$''-1+"n"$csv csvs) ~ "\n"_`
+ 0,1,2
+ 3,4,5
+ 6,7,8
+ `
+   ("\t"csv$''-1+"n"$"\t"csv tsvs) ~ "\n"_`
+ 0	1	2
+ 3	4	5
+ 6	7	8
+ `
+   (csv "1,2,3") ~ (,"1" "2" "3")
+ )
+ /RESULT:
+
+gitRepo https://codeberg.org/anaseto/goal
