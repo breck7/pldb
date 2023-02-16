@@ -1,1 +1,2 @@
 goaccess /root/pldb/ignore/access.log -o /root/pldb/site/traffic.html --log-format=COMBINED --anonymize-ip
+grep "$(date '+%d\/%b\/%Y' -d 'today')" /root/pldb/ignore/access.log | goaccess -o /root/pldb/site/trafficToday.html --log-format=COMBINED --anonymize-ip
