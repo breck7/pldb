@@ -2,17 +2,20 @@ title Speedie
 appeared 2022
 type pl
 creators Theodore H Smith
+description "General-purpose modern and clean object-oriented programming language."
 website http://github.com/gamblevore/speedie
 webRepl http://github.com/gamblevore/speedie
 documentation https://github.com/gamblevore/speedie/blob/main/Documentation
 emailList https://t.me/speedie_dev
+fileExtensions spd scproj
 country United Kingdom
 domainName speedie.dev
  registered 2023
-related i-expressions json yaml toml xml haml ini grammar treenotation
-influencedBy javascript python c lua cpp visual-basic hypercard html css xml json
 
 supersetOf jeebox
+writtenIn speedie cpp
+related i-expressions json yaml toml xml haml ini grammar treenotation
+influencedBy javascript python c lua cpp visual-basic hypercard html css xml json
 
 visualParadigm false
 
@@ -222,9 +225,7 @@ features
   "hello
   you
   beauty"
- writtenIn
-  speedie c++
- hasHomoiconicity
+ hasHomoiconicity true
   The~entire~Language is (%written in:@Jeebox)
  hasPointers true
   || i = 0
@@ -344,7 +345,7 @@ features
  hasThreads false
  hasClasses true
  hasExceptions false
- 
+
 lineCommentToken //
 multiLineCommentTokens /* */
 printToken print
@@ -360,9 +361,6 @@ githubLanguage Speedie
 helloWorldCollection spd
  main
      "Hello World!"
-
-description "General-purpose modern and clean object-oriented programming language."
-fileExtensions spd scproj
 
 pypl spd
 
