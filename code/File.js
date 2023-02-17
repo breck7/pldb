@@ -89,11 +89,6 @@ webApi
 xmlFormat`).toObject()
 
 class PLDBFile extends TreeBaseFile {
-  quickCache = {}
-  clearQuickCache() {
-    this.quickCache = {}
-  }
-
   get pldbId() {
     return this.id
   }
@@ -529,45 +524,10 @@ class PLDBFile extends TreeBaseFile {
     return this.parent
   }
 
-  get parsed() {
-    if (!this.quickCache.parsed) this.quickCache.parsed = super.parsed
-    return this.quickCache.parsed
-  }
-
   get factCount() {
     return this.parsed
       .getTopDownArray()
       .filter(node => node.shouldSerialize !== false).length
-  }
-
-  get linksToOtherFiles() {
-    return lodash.uniq(
-      this.parsed
-        .getTopDownArray()
-        .filter(node => node.providesPermalinks)
-        .map(node => node.getWordsFrom(1))
-        .flat()
-    )
-  }
-
-  doesLinkTo(id) {
-    return this.linksToOtherFiles.includes(id)
-  }
-
-  updatePermalinks(oldId, newId) {
-    this.parsed
-      .getTopDownArray()
-      .filter(node => node.providesPermalinks)
-      .map(node =>
-        node.setContent(
-          node
-            .getWordsFrom(1)
-            .map(word => (word === oldId ? newId : word))
-            .join(" ")
-        )
-      )
-    this.setChildren(this.parsed.childrenToString())
-    this.save()
   }
 
   get lastActivity() {
@@ -582,27 +542,11 @@ class PLDBFile extends TreeBaseFile {
     return this.findNodes(keyword).map(i => i.content)
   }
 
-  sort() {
-    this.clearQuickCache()
-    this.setChildren(
-      this.parsed
-        .sortFromSortTemplate()
-        .toString()
-        .replace(/\n+$/g, "") + "\n"
-    )
-  }
-
   writeScrollFileIfChanged(folder) {
     Disk.writeIfChanged(
       path.join(folder, this.id + ".scroll"),
       new LanguagePageTemplate(this).toScroll()
     )
-  }
-
-  prettifyAndSave() {
-    this.sort()
-    this.save()
-    return this
   }
 }
 

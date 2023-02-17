@@ -15,14 +15,11 @@ code
 - click "Load Profile..."
 - select your test.cpuprofile
 */
-
-const tap = require("tap")
 const lodash = require("lodash")
 const path = require("path")
 const grammarNode = require("jtree/products/grammar.nodejs.js")
 const { ScrollFolder, ScrollCli, ScrollFile } = require("scroll-cli")
 const { Disk } = require("jtree/products/Disk.node.js")
-const { TreeNode } = require("jtree/products/TreeNode.js")
 const { TestRacer } = require("jtree/products/TestRacer.js")
 const { Utils } = require("jtree/products/Utils.js")
 

@@ -351,11 +351,6 @@ class PLDBFolder extends TreeBaseFolder {
       .setDir(path.join(databaseFolder, "things"))
       .setGrammarDir(path.join(databaseFolder, "grammar"))
   }
-  quickCache = {}
-  clearQuickCache() {
-    this.quickCache = {}
-  }
-
   createParser() {
     return new TreeNode.Parser(PLDBFile)
   }
@@ -379,22 +374,6 @@ class PLDBFolder extends TreeBaseFolder {
     })
 
     return inBoundLinks
-  }
-
-  get grammarDef() {
-    const gpc = this.grammarProgramConstructor
-    return new gpc().getDefinition()
-  }
-
-  get searchIndex() {
-    if (this.quickCache.searchIndex) return this.quickCache.searchIndex
-    this.quickCache.searchIndex = new Map()
-    const map = this.quickCache.searchIndex
-    this.forEach(file => {
-      const { id } = file
-      file.names.forEach(name => map.set(name.toLowerCase(), id))
-    })
-    return map
   }
 
   searchForEntity(query) {
@@ -427,12 +406,6 @@ class PLDBFolder extends TreeBaseFolder {
       })
 
     return extensionsMap
-  }
-
-  getFile(id) {
-    if (id === undefined) return undefined
-    if (id.includes("/")) id = Disk.getFileName(id).replace(".pldb", "")
-    return this.getNode(id)
   }
 
   get topLanguages() {
@@ -552,42 +525,6 @@ class PLDBFolder extends TreeBaseFolder {
 
   getRank(file) {
     return this.rankings.ranks[file.id].index
-  }
-
-  makeId(title) {
-    let id = Utils.titleToPermalink(title)
-    let newId = id
-    if (!this.getFile(newId)) return newId
-
-    newId = id + "-lang"
-    if (!this.getFile(newId)) return newId
-
-    throw new Error(
-      `Already language with id: "${id}". Are you sure this is a new language? Perhaps update the title to something more unique, then update title back`
-    )
-  }
-
-  createFile(content, id) {
-    if (id === undefined) {
-      const title = new TreeNode(content).get("title")
-      if (!title)
-        throw new Error(`A "title" must be provided when creating a new file`)
-
-      id = this.makeId(title)
-    }
-    Disk.write(this.makeFilePath(id), content)
-    return this.appendLineAndChildren(id, content)
-  }
-
-  // todo: do this properly upstream in jtree
-  rename(oldId, newId) {
-    const content = this.getFile(oldId).childrenToString()
-    Disk.write(this.makeFilePath(newId), content)
-    this.delete(oldId)
-    this.filter(file => file.doesLinkTo(oldId)).forEach(file =>
-      file.updatePermalinks(oldId, newId)
-    )
-    this.appendLineAndChildren(newId, content)
   }
 
   get exampleCounts() {

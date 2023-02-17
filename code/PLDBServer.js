@@ -136,7 +136,20 @@ class PLDBServer extends TreeBaseServer {
       this.appendToPostLog(author, patch)
 
       try {
-        const hash = await this.saveCommitAndPush(patch, author)
+        const { authorName, authorEmail } = parseGitAuthor(author)
+        if (!Utils.isValidEmail(authorEmail))
+          throw new Error(`Invalid email: "${Utils.htmlEscaped(authorEmail)}"`)
+
+        const changedFiles = this.applyPatch(patch)
+        const hash = await this.saveCommitAndPush(
+          changedFiles.map(file => file.filename),
+          authorName,
+          authorEmail
+        )
+        changedFiles.forEach(file =>
+          file.writeScrollFileIfChanged(languagesFolder)
+        )
+
         res.redirect(`/thankYou.html?commit=${hash}`)
       } catch (error) {
         console.error(error)
@@ -226,48 +239,7 @@ ${scrollFooter}
     ).html
   }
 
-  async saveCommitAndPush(patch, author) {
-    const tree = new TreeNode(patch)
-    const filenames = []
-
-    const { authorName, authorEmail } = parseGitAuthor(author)
-    Utils.isValidEmail(authorEmail)
-    const create = tree.getNode("create")
-    const changedFiles = []
-    if (create) {
-      const data = create.childrenToString()
-
-      // todo: audit
-      const validateSubmissionResults = this.validateSubmission(data)
-      const newFile = this.folder.createFile(validateSubmissionResults.content)
-
-      filenames.push(newFile.filename)
-      changedFiles.push(newFile)
-    }
-
-    tree.delete("create")
-
-    tree.forEach(node => {
-      const id = node.getWord(0).replace(".pldb", "")
-      const file = this.folder.getFile(id)
-      if (!file) throw new Error(`File '${id}' not found.`)
-
-      const validateSubmissionResults = this.validateSubmission(
-        node.childrenToString(),
-        file
-      )
-      file.setChildren(validateSubmissionResults.content)
-      file.prettifyAndSave()
-      console.log(`Saved '${file.filename}'`)
-      filenames.push(file.filename)
-
-      changedFiles.push(file)
-      file.clearQuickCache()
-    })
-
-    pldbBase.clearQuickCache()
-    changedFiles.forEach(file => file.writeScrollFileIfChanged(languagesFolder))
-
+  async saveCommitAndPush(filenames, authorName, authorEmail) {
     const commitResult = await this.commitFilesPullAndPush(
       filenames,
       authorName,
@@ -278,41 +250,6 @@ ${scrollFooter}
   }
 
   notFoundPage = Disk.read(path.join(siteFolder, "custom_404.html"))
-
-  validateSubmission(content, fileBeingEdited) {
-    // Run some simple sanity checks.
-    if (content.length > 200000) throw new Error(`Submission too large`)
-
-    // Remove all return characters
-    content = Utils.removeEmptyLines(Utils.removeReturnChars(content))
-
-    const programParser = this.folder.grammarProgramConstructor
-    const parsed = new programParser(content)
-
-    const errs = parsed.getAllErrors()
-
-    if (errs.length > 3)
-      throw new Error(
-        `Too many errors detected in submission: ${JSON.stringify(
-          errs.map(err => err.toObject())
-        )}`
-      )
-
-    const { scopeErrors } = parsed
-    if (scopeErrors.length > 3)
-      throw new Error(
-        `Too many scope errors detected in submission: ${JSON.stringify(
-          scopeErrors.map(err => err.toObject())
-        )}`
-      )
-
-    if (parsed.length < 3)
-      throw new Error(`Must provide at least 3 facts about the language.`)
-
-    return {
-      content: parsed.sortFromSortTemplate().toString()
-    }
-  }
 
   _git
   get git() {
