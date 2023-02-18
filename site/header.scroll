@@ -6,9 +6,9 @@ stumpNoSnippet
  link
   rel stylesheet
   type text/css
-  href BASE_URL/combined.css
+  href BASE_URL/dist/combined.css
  script
-  src BASE_URL/dist/combinedFrontEnd.js
+  src BASE_URL/dist/combined.js
  div
   class pldbHeader doNotPrint
   a PLDB

@@ -19,8 +19,8 @@ const genDefaultAuthor = () => {
 const STAGED_KEY = "staged"
 const TEXTAREA_ID = "fileContent"
 
-let searchIndex = false
-let searchIndexRequestMade = false
+let autocompleteIndex = false
+let autocompleteIndexRequestMade = false
 
 const SearchSuggestionInterface = {
 	label: "string",
@@ -59,13 +59,13 @@ const initSearchAutocomplete = elementId => {
 			text = query.toLowerCase()
 			// you can also use AJAX requests instead of preloaded data
 
-			if (!searchIndexRequestMade) {
-				searchIndexRequestMade = true
-				let response = await fetch("/dist/searchIndex.json")
-				if (response.ok) searchIndex = await response.json()
+			if (!autocompleteIndexRequestMade) {
+				autocompleteIndexRequestMade = true
+				let response = await fetch("/dist/autocomplete.json")
+				if (response.ok) autocompleteIndex = await response.json()
 			}
 
-			const suggestions = searchIndex.filter(entity =>
+			const suggestions = autocompleteIndex.filter(entity =>
 				entity.label.toLowerCase().startsWith(text)
 			)
 

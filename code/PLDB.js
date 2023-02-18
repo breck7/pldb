@@ -2287,9 +2287,9 @@ wikipedia`.split("\n")
     return this.quickCache.keywordsOneHotCsv
   }
 
-  get searchIndexJson() {
-    if (!this.quickCache.searchIndexJson)
-      this.quickCache.searchIndexJson = JSON.stringify(
+  get autocompleteJson() {
+    if (!this.quickCache.autocompleteJson)
+      this.quickCache.autocompleteJson = JSON.stringify(
         this.objectsForCsv.map(object => {
           return {
             label: object.title,
@@ -2301,7 +2301,7 @@ wikipedia`.split("\n")
         undefined,
         2
       )
-    return this.quickCache.searchIndexJson
+    return this.quickCache.autocompleteJson
   }
 
   get objectsForCsv() {
@@ -2569,8 +2569,6 @@ class PLDBServer extends TreeBaseServer {
     return new ScrollFile(
       `${scrollHeader}
 
-html <script src="/dist/editorLibCode.js"></script>
-
 title Search Results
  hidden
 
@@ -2749,9 +2747,8 @@ class PLDBServerCommands {
     this.buildOriginCommunitiesImports()
     this.buildCreatorsImports()
     this.buildHomepageImportsCommand()
-    this.buildDistFolder()
     this.buildScrollsCommand()
-    this.buildCss()
+    this.buildDistFolder()
   }
 
   buildKeywordsImportsCommand() {
@@ -2894,8 +2891,8 @@ class PLDBServerCommands {
     )
 
     Disk.write(
-      path.join(distFolder, "searchIndex.json"),
-      pldbBase.searchIndexJson
+      path.join(distFolder, "autocomplete.json"),
+      pldbBase.autocompleteJson
     )
     Disk.write(
       path.join(distFolder, "keywordsOneHot.csv"),
@@ -2903,13 +2900,7 @@ class PLDBServerCommands {
     )
     Disk.write(path.join(siteFolder, "pldb.json"), pldbBase.typedMapJson)
 
-    const frontEndJsLibs = combineJsFiles(
-      path.join(__dirname, "frontEndJavascript"),
-      `mousetrap.js autocomplete.js PLDBClientSideApp.js`.split(" ")
-    )
-    Disk.write(path.join(distFolder, "combinedFrontEnd.js"), frontEndJsLibs)
-
-    const editorLibCode =
+    const combinedJs =
       combineJsFiles(
         path.join(jtreeFolder),
         `products/Utils.browser.js
@@ -2920,9 +2911,25 @@ sandbox/lib/codemirror.js
 sandbox/lib/show-hint.js`.split("\n")
       ) +
       "\n\n" +
-      combineJsFiles(distFolder, "pldb.browser.js tql.browser.js".split(" "))
+      combineJsFiles(distFolder, "pldb.browser.js tql.browser.js".split(" ")) +
+      "\n\n" +
+      combineJsFiles(
+        path.join(__dirname, "frontEndJavascript"),
+        `mousetrap.js autocomplete.js PLDBClientSideApp.js`.split(" ")
+      )
 
-    Disk.write(path.join(distFolder, "editorLibCode.js"), editorLibCode)
+    Disk.write(path.join(distFolder, "combined.js"), combinedJs)
+
+    const filepaths = [
+      path.join(siteFolder, "scroll.css"),
+      path.join(jtreeFolder, "sandbox/lib/codemirror.css"),
+      path.join(jtreeFolder, "sandbox/lib/codemirror.show-hint.css"),
+      path.join(siteFolder, "style.css")
+    ]
+    Disk.write(
+      path.join(distFolder, "combined.css"),
+      filepaths.map(Disk.read).join(`\n\n`)
+    )
   }
 
   buildTopListImports() {
@@ -2952,19 +2959,6 @@ sandbox/lib/show-hint.js`.split("\n")
     )
 
     buildImportsFile(path.join(listsFolder, "topLangsImports.scroll"), vars)
-  }
-
-  buildCss() {
-    const filepaths = [
-      path.join(siteFolder, "scroll.css"),
-      path.join(jtreeFolder, "sandbox/lib/codemirror.css"),
-      path.join(jtreeFolder, "sandbox/lib/codemirror.show-hint.css"),
-      path.join(siteFolder, "style.css")
-    ]
-    Disk.write(
-      path.join(siteFolder, "combined.css"),
-      filepaths.map(Disk.read).join(`\n\n`)
-    )
   }
 
   buildExtensionsImports() {
