@@ -2,7 +2,7 @@ import header.scroll
 title Edit file
  id pageTitle
 
-import editorIncludes.scroll
+html <script src="/dist/editorLibCode.js"></script>
 
 html <div id="formHolder"></div>
 

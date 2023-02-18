@@ -1,7 +1,7 @@
 import header.scroll
 title Add a language
 
-import editorIncludes.scroll
+html <script src="/dist/editorLibCode.js"></script>
 
 html <div id="formHolder"></div>
 

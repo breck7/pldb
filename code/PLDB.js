@@ -39,6 +39,7 @@ const baseFolder = path.join(__dirname, "..")
 const ignoreFolder = path.join(baseFolder, "ignore")
 const databaseFolder = path.join(baseFolder, "database")
 const nodeModulesFolder = path.join(baseFolder, "node_modules")
+const jtreeFolder = path.join(nodeModulesFolder, "jtree")
 const siteFolder = path.join(baseFolder, "site")
 const distFolder = path.join(siteFolder, "dist")
 const pagesDir = path.join(siteFolder, "pages")
@@ -2456,10 +2457,6 @@ class PLDBServer extends TreeBaseServer {
     const { app } = this
 
     this.app.use(
-      "/jtree",
-      express.static(path.join(nodeModulesFolder, "jtree"))
-    )
-    this.app.use(
       "/monaco-editor",
       express.static(path.join(nodeModulesFolder, "monaco-editor"))
     )
@@ -2572,10 +2569,7 @@ class PLDBServer extends TreeBaseServer {
     return new ScrollFile(
       `${scrollHeader}
 
-html
- <link rel="stylesheet" type="text/css" href="/jtree/sandbox/lib/codemirror.css" />
- <link rel="stylesheet" type="text/css" href="/jtree/sandbox/lib/codemirror.show-hint.css" />
- <script src="/dist/editorLibCode.js"></script>
+html <script src="/dist/editorLibCode.js"></script>
 
 title Search Results
  hidden
@@ -2757,6 +2751,7 @@ class PLDBServerCommands {
     this.buildHomepageImportsCommand()
     this.buildDistFolder()
     this.buildScrollsCommand()
+    this.buildCss()
   }
 
   buildKeywordsImportsCommand() {
@@ -2916,7 +2911,7 @@ class PLDBServerCommands {
 
     const editorLibCode =
       combineJsFiles(
-        path.join(nodeModulesFolder, "jtree"),
+        path.join(jtreeFolder),
         `products/Utils.browser.js
 products/TreeNode.browser.js
 products/GrammarLanguage.browser.js
@@ -2957,6 +2952,19 @@ sandbox/lib/show-hint.js`.split("\n")
     )
 
     buildImportsFile(path.join(listsFolder, "topLangsImports.scroll"), vars)
+  }
+
+  buildCss() {
+    const filepaths = [
+      path.join(siteFolder, "scroll.css"),
+      path.join(jtreeFolder, "sandbox/lib/codemirror.css"),
+      path.join(jtreeFolder, "sandbox/lib/codemirror.show-hint.css"),
+      path.join(siteFolder, "style.css")
+    ]
+    Disk.write(
+      path.join(siteFolder, "combined.css"),
+      filepaths.map(Disk.read).join(`\n\n`)
+    )
   }
 
   buildExtensionsImports() {
