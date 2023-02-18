@@ -8,6 +8,7 @@ features
  hasPrintDebugging true
  hasStrings true
   "Hello world"
+  hasCaseInsensitiveIdentifiers false
 
 printToken print
 stringToken "

@@ -45,6 +45,7 @@ features
  hasBooleans true
  hasWhileLoops true
  hasConditionals true
+ hasCaseInsensitiveIdentifiers false
 
 lineCommentToken //
 multiLineCommentTokens { }

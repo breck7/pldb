@@ -33,6 +33,7 @@ features
  hasFunctions true
  hasConditionals true
  hasWhileLoops true
+ hasCaseInsensitiveIdentifiers false
 
 lineCommentToken #
 printToken puts
