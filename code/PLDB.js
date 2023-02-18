@@ -2872,13 +2872,7 @@ class PLDBServerCommands {
       false
     )
 
-    const tqlPath = path.join(
-      nodeModulesFolder,
-      "jtree",
-      "langs",
-      "tql",
-      "tql.grammar"
-    )
+    const tqlPath = path.join(jtreeFolder, "langs", "tql", "tql.grammar")
     const tqlGrammar = new TreeNode(Disk.read(tqlPath))
 
     tqlGrammar.getNode("columnNameCell").set("enum", colNamesForCsv.join(" "))
