@@ -22,7 +22,10 @@ const { TreeNode } = require("jtree/products/TreeNode.js")
 const { Utils } = require("jtree/products/Utils.js")
 const { GrammarCompiler } = require("jtree/products/GrammarCompiler.js")
 const { Disk } = require("jtree/products/Disk.node.js")
-const { TreeBaseServer } = require("jtree/products/treeBaseServer.node.js")
+const {
+  TreeBaseServer,
+  SearchServer
+} = require("jtree/products/treeBaseServer.node.js")
 const { ScrollFolder, ScrollFile } = require("scroll-cli")
 
 const { PLDBFolder } = require("./Folder")
@@ -824,6 +827,14 @@ sandbox/lib/show-hint.js`.split("\n")
       file.set(field, joined)
       file.prettifyAndSave()
     })
+  }
+
+  searchCommand() {
+    console.log(
+      new SearchServer(pldbBase, ignoreFolder).csv(
+        process.argv.slice(3).join(" ")
+      )
+    )
   }
 }
 

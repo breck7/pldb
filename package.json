@@ -5,7 +5,7 @@
     "build": "./code/PLDB.js buildAll",
     "test": "./code/test.js",
     "local": "./code/PLDB.js startDevServer",
-    "search": "./code/cliSearch.js",
+    "search": "./code/PLDB.js search",
     "format": "./code/PLDB.js formatDatabase",
     "tsc": "cd code/crawlers; tsc; chmod u+x *.js; chmod u+x **/*.js; chmod u+x code/**/**/*.js",
     "crawl": "./code/crawlers/Crawler.js crawl",
@@ -18,7 +18,8 @@
     "publish": "cd code; npm publish",
     "deploy": "ssh pldb.com; git pull; x tsc; x restart",
     "fetchLogs": "scp file pldb.com:/root/pldb/ignore/treeBaseServerLog.tree ignore/prodLogs/",
-    "prod": "pm2 start ./code/PLDB.js -- startProdServer",
+    "start": "pm2 start ./code/PLDB.js -- startProdServer",
+    "stop": "pm2 delete 0",
     "restart": "pm2 restart 0"
   },
   "prettier": {
