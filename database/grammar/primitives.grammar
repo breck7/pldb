@@ -27,6 +27,7 @@ searchQueryCell
 yearCell
  extends intCell
 permalinkCell
+ highlightScope string
  description An ID of a language on PLDB.
 externalGuidCell
  description A GUID from another site.

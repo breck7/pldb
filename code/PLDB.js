@@ -2863,7 +2863,11 @@ class PLDBServerCommands {
 
     if (!Disk.exists(distFolder)) Disk.mkdir(distFolder)
 
-    Disk.write(path.join(distFolder, "pldb.grammar"), pldbBase.grammarCode)
+    const ids = pldbBase.map(file => file.id).join(" ")
+    const pldbGrammar = new TreeNode(pldbBase.grammarCode)
+
+    pldbGrammar.getNode("permalinkCell").set("enum", ids)
+    Disk.write(path.join(distFolder, "pldb.grammar"), pldbGrammar.toString())
 
     // todo: cleanup
     GrammarCompiler.compileGrammarForBrowser(
