@@ -1,7 +1,5 @@
 #!/usr/bin/env node
 
-import { PLDBFolder } from "../../Folder"
-import { PLDBFile } from "../../File"
 import { PoliteCrawler } from "../PoliteCrawler"
 const lodash = require("lodash")
 const { Utils } = require("jtree/products/Utils.js")
@@ -20,15 +18,15 @@ const yearRegex = /(released|started|began|published|designed|announced|develope
 const yearRegexRelaxed = /\D(200\d|201\d|199\d|198\d|197\d|196\d|195\d)\D/g
 const withContext = /(\D{3,18}[12][890]\d\d\D{1,18})/gi
 
-const pldbBase = PLDBFolder.getBase().loadFolder()
+const { pldbBase } = require("../../PLDB.js")
 Disk.mkdir(cacheDir)
 
 class PLDBFileWithWikipedia {
-  constructor(file: PLDBFile) {
+  constructor(file: any) {
     this.file = file
   }
 
-  file: PLDBFile
+  file: any
 
   get pldbId() {
     return this.file.id

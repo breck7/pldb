@@ -1,12 +1,10 @@
 #!/usr/bin/env node
 
 import { parse } from "yaml"
-import { PLDBFolder } from "../../Folder"
-
 const { Utils } = require("jtree/products/Utils.js")
 const { Disk } = require("jtree/products/Disk.node.js")
 
-const pldbBase = PLDBFolder.getBase().loadFolder()
+const { pldbBase } = require("../../PLDB.js")
 
 const cachePath = __dirname + "/cache/riju/langs/"
 

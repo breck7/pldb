@@ -1,14 +1,11 @@
 #!/usr/bin/env node
 
-import { PLDBFolder } from "../../Folder"
-import { PLDBFile } from "../../File"
-
 const { Utils } = require("jtree/products/Utils.js")
 const { TreeNode } = require("jtree/products/TreeNode.js")
 const lodash = require("lodash")
 
 const cacheDir = __dirname + "/cache/"
-const pldbBase = PLDBFolder.getBase().loadFolder()
+const { pldbBase } = require("../../PLDB.js")
 const { Disk } = require("jtree/products/Disk.node.js")
 
 const monacoFolder = cacheDir + "monaco-editor/src/basic-languages/"

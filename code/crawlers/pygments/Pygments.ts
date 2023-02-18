@@ -1,12 +1,9 @@
 #!/usr/bin/env node
 
-import { PLDBFolder } from "../../Folder"
-import { PLDBFile } from "../../File"
-
 const { TreeNode } = require("jtree/products/TreeNode.js")
 const { Utils } = require("jtree/products/Utils.js")
 const cacheDir = __dirname + "/cache/"
-const pldbBase = PLDBFolder.getBase().loadFolder()
+const { pldbBase } = require("../../PLDB.js")
 const { Disk } = require("jtree/products/Disk.node.js")
 const outputFile = cacheDir + "output.json"
 

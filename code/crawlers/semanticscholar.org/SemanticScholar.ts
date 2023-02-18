@@ -2,8 +2,6 @@
 
 // Docs: https://api.semanticscholar.org/api-docs/graph#tag/Paper-Data/operation/get_graph_get_paper_search
 
-import { PLDBFolder } from "../../Folder"
-import { PLDBFile } from "../../File"
 import { PoliteCrawler } from "../PoliteCrawler"
 
 const { TreeNode } = require("jtree/products/TreeNode.js")
@@ -14,7 +12,7 @@ const lodash = require("lodash")
 
 const cacheDir = __dirname + "/cache/"
 
-const pldbBase = PLDBFolder.getBase().loadFolder()
+const { pldbBase } = require("../../PLDB.js")
 
 const superagent = require("superagent")
 const path = require("path")
@@ -29,11 +27,11 @@ const downloadJson = async (url, destination) => {
 Disk.mkdir(cacheDir)
 
 class PLDBFileForSemanticScholar {
-	constructor(file: PLDBFile) {
+	constructor(file: any) {
 		this.file = file
 	}
 
-	file: PLDBFile
+	file: any
 
 	get cacheFilePath() {
 		return path.join(cacheDir, `${this.filename}.json`)

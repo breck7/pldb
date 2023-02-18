@@ -1,8 +1,5 @@
 #!/usr/bin/env node
 
-import { PLDBFolder } from "../../Folder"
-import { PLDBFile } from "../../File"
-
 const { TreeNode } = require("jtree/products/TreeNode.js")
 const { Disk } = require("jtree/products/Disk.node.js")
 const { Utils } = require("jtree/products/Utils.js")
@@ -11,7 +8,7 @@ const path = require("path")
 const readline = require("readline")
 const fs = require("fs")
 
-const pldbBase = PLDBFolder.getBase().loadFolder()
+const { pldbBase } = require("../../PLDB.js")
 const cacheDir = path.join(__dirname, "cache")
 
 Disk.mkdir(cacheDir)

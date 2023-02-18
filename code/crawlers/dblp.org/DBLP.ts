@@ -1,8 +1,6 @@
 #!/usr/bin/env node
 
 import { PoliteCrawler } from "../PoliteCrawler"
-import { PLDBFolder } from "../../Folder"
-import { PLDBFile } from "../../File"
 const lodash = require("lodash")
 
 const { Utils } = require("jtree/products/Utils.js")
@@ -10,14 +8,14 @@ const { TreeNode } = require("jtree/products/TreeNode.js")
 
 const { Disk } = require("jtree/products/Disk.node.js")
 
-const pldbBase = PLDBFolder.getBase().loadFolder()
+const { pldbBase } = require("../../PLDB.js")
 
 const cachePath = __dirname + "/cache/"
 Disk.mkdir(cachePath)
 
 class DBLPFile {
-  file: PLDBFile
-  constructor(file: PLDBFile) {
+  file: any
+  constructor(file: any) {
     this.file = file
   }
 

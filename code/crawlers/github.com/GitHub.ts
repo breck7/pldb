@@ -1,7 +1,5 @@
 #!/usr/bin/env node
 
-import { PLDBFolder } from "../../Folder"
-import { PLDBFile } from "../../File"
 import { PoliteCrawler } from "../PoliteCrawler"
 
 const { Utils } = require("jtree/products/Utils.js")
@@ -20,7 +18,7 @@ const firstCommitCache = path.join(cacheDir, "firstCommits")
 const credsPath = path.join(__dirname, "ignore", "creds.json")
 const creds = JSON.parse(Disk.read(credsPath))
 const { apiToken, apiUser } = creds
-const pldbBase = PLDBFolder.getBase().loadFolder()
+const { pldbBase } = require("../../PLDB.js")
 
 if (!apiToken) {
 	console.error(`No GitHub token found`)
@@ -47,11 +45,11 @@ Disk.mkdir(firstCommitCache)
 Disk.mkdir(repoCountCache)
 
 class PLDBFileWithGitHub {
-	constructor(file: PLDBFile) {
+	constructor(file: any) {
 		this.file = file
 	}
 
-	file: PLDBFile
+	file: any
 
 	get firstCommitResultPath() {
 		return firstCommitCache + this.file.id + ".json"

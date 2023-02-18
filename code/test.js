@@ -23,9 +23,8 @@ const { Disk } = require("jtree/products/Disk.node.js")
 const { TestRacer } = require("jtree/products/TestRacer.js")
 const { Utils } = require("jtree/products/Utils.js")
 
-const { PLDBFolder } = require("./Folder")
+const { pldbBase } = require("./PLDB.js")
 
-const pldbBase = PLDBFolder.getBase().loadFolder()
 const rootDir = path.join(__dirname, "..")
 const languagesDir = path.join(rootDir, "site", "languages")
 

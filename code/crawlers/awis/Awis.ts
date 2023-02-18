@@ -1,7 +1,5 @@
 #!/usr/bin/env node
 
-import { PLDBFolder } from "../../Folder"
-import { PLDBFile } from "../../File"
 import { PoliteCrawler } from "../PoliteCrawler"
 
 const { TreeNode } = require("jtree/products/TreeNode.js")
@@ -11,7 +9,7 @@ const path = require("path")
 const awis = require("awis")
 
 const cacheDir = path.join(__dirname, "cache")
-const pldbBase = PLDBFolder.getBase().loadFolder()
+const { pldbBase } = require("../../PLDB.js")
 Disk.mkdir(cacheDir)
 
 const creds = JSON.parse(
@@ -21,7 +19,7 @@ const creds = JSON.parse(
 const client = awis(creds)
 
 class AwisFile {
-  constructor(file: PLDBFile) {
+  constructor(file: any) {
     this.file = file
   }
 
@@ -40,7 +38,7 @@ class AwisFile {
     }
   }
 
-  file: PLDBFile
+  file: any
 
   get path() {
     return path.join(cacheDir, this.file.id + ".json")

@@ -1,14 +1,11 @@
 #!/usr/bin/env node
 
-import { PLDBFolder } from "../../Folder"
-import { PLDBFile } from "../../File"
-
 const { Utils } = require("jtree/products/Utils.js")
 const { TreeNode } = require("jtree/products/TreeNode.js")
 
 const cacheDir = __dirname + "/cache/"
 const hwDir = cacheDir + "hello-world/"
-const pldbBase = PLDBFolder.getBase().loadFolder()
+const { pldbBase } = require("../../PLDB.js")
 const { Disk } = require("jtree/products/Disk.node.js")
 
 const skips = [`MOONBlock`, "Executable", "Scratch ", "Pxem", "Piet"]

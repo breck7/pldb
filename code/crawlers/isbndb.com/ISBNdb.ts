@@ -1,7 +1,5 @@
 #!/usr/bin/env node
 
-import { PLDBFolder } from "../../Folder"
-import { PLDBFile } from "../../File"
 import { PoliteCrawler } from "../PoliteCrawler"
 
 const { Utils } = require("jtree/products/Utils.js")
@@ -10,7 +8,7 @@ const { Disk } = require("jtree/products/Disk.node.js")
 
 const cacheDir = __dirname + "/cache/"
 
-const pldbBase = PLDBFolder.getBase().loadFolder()
+const { pldbBase } = require("../../PLDB.js")
 
 const superagent = require("superagent")
 const path = require("path")
@@ -39,11 +37,11 @@ const falsePositives = new Set(
 )
 
 class PLDBFileForBooks {
-	constructor(file: PLDBFile) {
+	constructor(file: any) {
 		this.file = file
 	}
 
-	file: PLDBFile
+	file: any
 
 	get cacheFilePath() {
 		return path.join(cacheDir, `${this.filename}.json`)

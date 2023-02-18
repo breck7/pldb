@@ -1,6 +1,5 @@
 #!/usr/bin/env node
 
-import { PLDBFolder } from "../Folder"
 import { GitHubImporter } from "./github.com/GitHub"
 import { WhoIsImporter } from "./whois/WhoIs"
 import { WikipediaImporter } from "./wikipedia.org/Wikipedia"
@@ -8,7 +7,7 @@ const { Disk } = require("jtree/products/Disk.node.js")
 const { TreeNode } = require("jtree/products/TreeNode.js")
 const { Utils } = require("jtree/products/Utils.js")
 
-const pldbBase = PLDBFolder.getBase().loadFolder()
+const { pldbBase } = require("../PLDB.js")
 
 class Crawler {
   async update(id: string) {
