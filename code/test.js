@@ -76,25 +76,10 @@ testTree.ensureNoErrorsInBlog = areEqual => {
 }
 
 testTree.ensureGoodFilenames = areEqual => {
-	let invalidIds = 0
-	let validIds = 0
-	pldbBase.forEach(file => {
-		if (file.id !== Utils.titleToPermalink(file.id)) invalidIds++
-		else validIds++
-	})
-
-	if (!invalidIds) {
-		areEqual(0, 0, `all ${validIds} pldbId's are valid`)
-		// We can abort early to print a lot of test output
-		return
-	}
-
-	pldbBase.forEach(file =>
-		areEqual(
-			file.id,
-			Utils.titleToPermalink(file.id),
-			`${file.id} is a valid pldbId`
-		)
+	areEqual(
+		pldbBase.filesWithInvalidFilenames.length,
+		0,
+		`all ${pldbBase.length} filenames are valid`
 	)
 }
 

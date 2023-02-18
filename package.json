@@ -2,11 +2,11 @@
   "name": "pldb",
   "description": "PLDB: a Programming Language Database",
   "scripts": {
-    "build": "./code/PLDBServer.js buildAll",
+    "build": "./code/PLDB.js buildAll",
     "test": "./code/test.js",
-    "local": "./code/PLDBServer.js startDevServer",
+    "local": "./code/PLDB.js startDevServer",
     "search": "./code/cliSearch.js",
-    "format": "./code/PLDBServer.js formatDatabase",
+    "format": "./code/PLDB.js formatDatabase",
     "tsc": "cd code/crawlers; tsc; chmod u+x *.js; chmod u+x **/*.js; chmod u+x code/**/**/*.js",
     "crawl": "./code/crawlers/Crawler.js crawl",
     "githubs": "./code/crawlers/github.com/GitHub.js fetchAllRepoData && ./code/crawlers/github.com/GitHub.js writeAllRepoData",
@@ -18,7 +18,7 @@
     "publish": "cd code; npm publish",
     "deploy": "ssh pldb.com; git pull; x tsc; x restart",
     "fetchLogs": "scp file pldb.com:/root/pldb/ignore/treeBaseServerLog.tree ignore/prodLogs/",
-    "prod": "pm2 start ./code/PLDBServer.js -- startProdServer",
+    "prod": "pm2 start ./code/PLDB.js -- startProdServer",
     "restart": "pm2 restart 0"
   },
   "prettier": {

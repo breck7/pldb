@@ -355,6 +355,10 @@ class PLDBFolder extends TreeBaseFolder {
     return new TreeNode.Parser(PLDBFile)
   }
 
+  get filesWithInvalidFilenames() {
+    return this.filter(file => file.id !== Utils.titleToPermalink(file.id))
+  }
+
   get inboundLinks() {
     if (this.quickCache.inBoundLinks) return this.quickCache.inBoundLinks
 

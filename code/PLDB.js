@@ -3,7 +3,7 @@
 /*
 * To investigate slowdowns:
 code
- node --cpu-prof --cpu-prof-name=test.cpuprofile ./code/PLDBServer.js buildAll
+ node --cpu-prof --cpu-prof-name=test.cpuprofile ./code/PLDB.js buildAll
 * Then:
 - open a new Chrome tab
 - open devtools
