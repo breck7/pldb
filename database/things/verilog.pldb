@@ -31,7 +31,7 @@ features
  hasBinaryNumbers true
   // ([0-9]+)|(\'b)[01]+
  hasCaseInsensitiveIdentifiers false
- 
+
 lineCommentToken //
 multiLineCommentTokens /* */
 printToken $display
