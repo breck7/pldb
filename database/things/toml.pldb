@@ -20,7 +20,6 @@ features
   # (\d+\.\d*|\d*\.\d+)([eE][+-]?[0-9]+)?j?
  hasIntegers true
   # \d{4}-\d{2}-\d{2}(?:T| )\d{2}:\d{2}:\d{2}(?:Z|[-+]\d{2}:\d{2})
- hasCaseInsensitiveIdentifiers false
 
 lineCommentToken #
 
