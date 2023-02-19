@@ -1,23 +1,5 @@
-title PLDB: a Programming Language Database
+# Code folder
 
-## Over 100,000 facts on over 4,000 languages in 1 typed JSON file with 0 dependencies
+* This folder contains the backend code `PLDB.js` and the front end code (in folder `frontEndJavascript`).
 
-- This is the readme for the npm distribution of `pldb.json`.
-
-## Installing:
-
-code
- npm install pldb
-
-- Using:
-
-javascriptCode
- console.log(require("pldb").javascript.appeared)
-
-## Also available on the web and as CSV:
-
-- https://pldb.com/pldb.json
-
-- OR:
-
-- https://pldb.com/pldb.csv
+* There is also some code for testing and server setup.

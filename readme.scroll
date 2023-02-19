@@ -50,6 +50,12 @@ code
 * The `code` folder contains importer scripts and other code for the database and site.
 * You can see the `cloc` language stats on this repo at https://pldb.com/pages/about.html.
 
+## To use as an npm package:
+code
+ npm install pldb
+javascriptCode
+ console.log(require("pldb").javascript.appeared)
+
 ## To cite PLDB
 * PLDB content is published to the public domain and you can use it freely. If needed, here are 3 options for citing PLDB:
 code
