@@ -39,13 +39,13 @@ features
  hasPrintDebugging true
  hasSemanticIndentation false
  hasCaseInsensitiveIdentifiers true
+  s := (A + a + A);
  hasAssignment true
  hasStrings true
  isCaseSensitive false
  hasBooleans true
  hasWhileLoops true
  hasConditionals true
- hasCaseInsensitiveIdentifiers false
 
 lineCommentToken //
 multiLineCommentTokens { }

@@ -13,6 +13,10 @@ features
  hasPrintDebugging true
  hasSemanticIndentation false
  hasCaseInsensitiveIdentifiers true
+  signals some_signal : integer ;
+  signal some_other_signal : integer ;
+  signal result : integer ;
+  ReSULT <= SOME_SIGNAL + sOME_oTHer_SIGNal ; -- Although totally unrecommended - this is perfectly legal
  hasStrings true
   "Hello world"
  hasWhileLoops true
@@ -28,7 +32,6 @@ features
   -- \d{1,2}#[0-9a-f_]+#?
  hasBinaryNumbers true
   -- B"[01_]+"
- hasCaseInsensitiveIdentifiers false
 
 lineCommentToken --
 printToken write

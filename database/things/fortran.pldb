@@ -21,6 +21,8 @@ features
   C
  hasMultiLineComments false
  hasCaseInsensitiveIdentifiers true
+  x = 2.0
+  y = x + X
  hasPrintDebugging true
   C     Hello World in Fortran
   
@@ -71,7 +73,6 @@ features
  isCaseSensitive false
  hasFixedPoint false
  hasScientificNotation true
- hasCaseInsensitiveIdentifiers false
 
 lineCommentToken C
 lineCommentToken !
