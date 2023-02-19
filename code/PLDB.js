@@ -3194,6 +3194,17 @@ sandbox/lib/show-hint.js`.split("\n")
       )
     )
   }
+
+  async crawlGitHubCommand() {
+    // Todo: figuring out best repo orgnization for crawlers.
+    // Note: this currently assumes you have treecrawler project installed separateely.
+    const {
+      GitHubImporter
+    } = require("/../../treecrawler/github.com/GitHub.js")
+    const importer = new GitHubImporter(pldbBase)
+    await importer.fetchAllRepoDataCommand()
+    await importer.writeAllRepoDataCommand()
+  }
 }
 
 const pldbBase = new PLDBFolder()
