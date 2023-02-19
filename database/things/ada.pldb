@@ -63,6 +63,7 @@ features
   -- [0-9_]+
  hasFixedPoint true
  hasScientificNotation true
+ hasCaseInsensitiveIdentifiers false
 
 lineCommentToken --
 printToken Text_IO.Put_Line

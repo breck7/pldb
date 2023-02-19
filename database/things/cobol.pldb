@@ -22,6 +22,7 @@ features
  hasCaseInsensitiveIdentifiers true
  hasBooleans true
  hasFixedPoint true
+ hasCaseInsensitiveIdentifiers false
 
 lineCommentToken *>
 printToken DISPLAY

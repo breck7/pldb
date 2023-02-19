@@ -50,6 +50,7 @@ features
  hasGotos false
  hasUnicodeIdentifiers true
   let δ = 0.00001
+ hasCaseInsensitiveIdentifiers false
 
 lineCommentToken #
 multiLineCommentTokens #[ ]#

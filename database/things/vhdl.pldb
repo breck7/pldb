@@ -28,6 +28,7 @@ features
   -- \d{1,2}#[0-9a-f_]+#?
  hasBinaryNumbers true
   -- B"[01_]+"
+ hasCaseInsensitiveIdentifiers false
 
 lineCommentToken --
 printToken write
