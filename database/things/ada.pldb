@@ -39,9 +39,23 @@ features
      end record;
   end Stacks;
  hasComments true
+  -- A comment
  hasDirectives true
  hasOperatorOverloading true
  hasMultiLineComments false
+ hasCaseInsensitiveIdentifiers true
+  with Gnat.Io; use Gnat.Io;
+  procedure Numbers is
+     Score: Integer;
+     F: Float := 1.0;
+  begin
+     Score := 3 + 2#1011#;
+     Put(score);
+     New_Line;
+     Score := Score + 1_000_000;
+     Put(Score);
+     New_Line;
+  end Numbers;
  hasLineComments true
   -- A comment
  hasPrintDebugging true
