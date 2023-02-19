@@ -1,15 +1,14 @@
 {
   "name": "pldb",
+  "version": "7.0.0",
   "description": "PLDB: a Programming Language Database",
+  "main": "./site/pldb.json",
   "scripts": {
     "build": "./code/PLDB.js buildAll",
     "test": "./code/test.js",
     "local": "./code/PLDB.js startDevServer",
     "search": "./code/PLDB.js search",
     "format": "./code/PLDB.js formatDatabase",
-    "tsc": "cd code/crawlers; tsc; chmod u+x *.js; chmod u+x **/*.js; chmod u+x code/**/**/*.js",
-    "crawl": "./code/crawlers/Crawler.js crawl",
-    "githubs": "./code/crawlers/github.com/GitHub.js fetchAllRepoData && ./code/crawlers/github.com/GitHub.js writeAllRepoData",
     "fetchContributors": "wget -O site/pages/contributors.json https://api.github.com/repos/breck7/pldb/contributors",
     "cloc": "cloc --vcs git . --read-lang-def=code/clocLangs.txt",
     "checkLinks": "linkinator -r https://pldb.com > ignore/brokenLinks.txt",
@@ -40,6 +39,10 @@
   "engines": {
     "node": ">=14.0"
   },
+  "files": [
+    "site/pldb.json",
+    "package.json"
+  ],
   "homepage": "https://pldb.com",
   "dependencies": {
     "autocompleter": "^7.1.0",

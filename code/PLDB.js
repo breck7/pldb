@@ -2800,8 +2800,7 @@ class PLDBServerCommands {
     ].map(s => pldbBase.getFile(pldbBase.searchForEntity(s)))
 
     const npmPackages = Object.keys({
-      ...require("../package.json").dependencies,
-      ...require("./crawlers/package.json").dependencies
+      ...require("../package.json").dependencies
     })
     npmPackages.sort()
 
