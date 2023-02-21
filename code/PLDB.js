@@ -2452,6 +2452,7 @@ class PLDBServer extends TreeBaseServer {
     this.editLogPath = path.join(ignoreFolder, "treeBaseServerLog.tree")
     this.serveFolder(siteFolder)
     this.serveFolder(__dirname)
+    this.buildTqlExtension()
     this.initSearch()
 
     const { app } = this
@@ -2528,6 +2529,31 @@ class PLDBServer extends TreeBaseServer {
     this.addRedirects(app)
   }
 
+  buildTqlExtension() {
+    const extendedTqlGrammar = new TreeNode(
+      Disk.read(path.join(jtreeFolder, "langs", "tql", "tql.grammar"))
+    )
+
+    const { colNamesForCsv } = this.folder.csvBuildOutput
+    extendedTqlGrammar
+      .getNode("columnNameCell")
+      .set("enum", colNamesForCsv.join(" "))
+
+    const extendedTqlPath = path.join(distFolder, "extendedTql.grammar")
+    Disk.write(extendedTqlPath, extendedTqlGrammar.toString())
+    GrammarCompiler.compileGrammarForBrowser(
+      extendedTqlPath,
+      distFolder + "/",
+      false
+    )
+    const jsPath = GrammarCompiler.compileGrammarForNodeJs(
+      extendedTqlPath,
+      distFolder + "/",
+      true
+    )
+    this.extendedTqlParser = require(jsPath)
+  }
+
   addRedirects(app) {
     const redirects = Disk.read(path.join(siteFolder, "redirects.txt"))
       .split("\n")
@@ -2555,7 +2581,8 @@ class PLDBServer extends TreeBaseServer {
       title,
       description
     } = this.searchServer.search(
-      decodeURIComponent(originalQuery).replace(/\r/g, "")
+      decodeURIComponent(originalQuery).replace(/\r/g, ""),
+      this.extendedTqlParser
     )
     const { folder } = this
     const results = new TreeNode(hits)._toDelimited(
@@ -2858,7 +2885,6 @@ class PLDBServerCommands {
 
   buildDistFolder() {
     const { csvBuildOutput } = pldbBase
-    const { colNamesForCsv } = csvBuildOutput
 
     if (!Disk.exists(distFolder)) Disk.mkdir(distFolder)
 
@@ -2871,18 +2897,6 @@ class PLDBServerCommands {
     // todo: cleanup
     GrammarCompiler.compileGrammarForBrowser(
       path.join(distFolder, "pldb.grammar"),
-      distFolder + "/",
-      false
-    )
-
-    const tqlPath = path.join(jtreeFolder, "langs", "tql", "tql.grammar")
-    const tqlGrammar = new TreeNode(Disk.read(tqlPath))
-
-    tqlGrammar.getNode("columnNameCell").set("enum", colNamesForCsv.join(" "))
-    const combinedPath = path.join(distFolder, "pldbTql.grammar")
-    Disk.write(combinedPath, tqlGrammar.toString())
-    GrammarCompiler.compileGrammarForBrowser(
-      combinedPath,
       distFolder + "/",
       false
     )

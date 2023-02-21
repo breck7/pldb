@@ -10,19 +10,19 @@ a:hover {
   text-decoration: underline;
 }
 
+.doubleWide {
+  max-width: 800px;
+  margin: auto;
+  padding: 40px;
+  box-sizing: border-box;
+}
+
 /* fallback */
 @font-face {
   font-family: "Material Symbols Outlined";
   font-style: normal;
   font-weight: 400;
   src: url(/googleMaterial.woff2) format("woff2");
-}
-
-.doubleWide {
-  max-width: 800px;
-  margin: auto;
-  padding: 40px;
-  box-sizing: border-box;
 }
 
 .material-symbols-outlined {
@@ -98,7 +98,6 @@ a:hover {
 .codeWithHeader {
   break-inside: avoid-column;
 }
-
 .codeHeader {
   font-size: 80%;
   text-align: center;
