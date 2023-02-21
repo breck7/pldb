@@ -2522,7 +2522,9 @@ class PLDBServer extends TreeBaseServer {
     // Short urls:
     app.get("/:id", (req, res, next) =>
       this.folder.getFile(req.params.id.toLowerCase())
-        ? res.status(302).redirect(`/languages/${req.params.id}.html`)
+        ? res
+            .status(302)
+            .redirect(`/languages/${req.params.id.toLowerCase()}.html`)
         : next()
     )
 
