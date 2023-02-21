@@ -2777,6 +2777,7 @@ class PLDBServerCommands {
     this.buildCreatorsImports()
     this.buildHomepageImportsCommand()
     this.buildScrollsCommand()
+    this.server.buildTqlExtension() // todo: cleanup
     this.buildDistFolder()
   }
 
