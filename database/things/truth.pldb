@@ -1,10 +1,11 @@
 title Truth
-githubRepo https://github.com/paul-go/Truth
-creators Paul Gordon
-type dataNotation
-
-website https://www.truthlanguage.org/
 appeared 2019
+type dataNotation
+creators Paul Gordon
+website https://www.truthlanguage.org/
+
+features
+ hasSemanticIndentation true
 
 example
  String
@@ -22,5 +23,4 @@ example
  	
  Sales Engineer : Engineer, Salesman
 
-features
- hasSemanticIndentation true
+githubRepo https://github.com/paul-go/Truth

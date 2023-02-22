@@ -1,0 +1,22 @@
+appeared 2022
+type protocol
+creators Paul Gordon
+description YESS: A Reboot Of RSS. The protocol is a subset of HTML and CSS. It's central design idea is to split static HTML files up into small single-screen components, called Scenes.
+standsFor You Easily Syndicate Scenes
+
+influencedBy rss
+
+example
+ <section>
+ 	HTML for section 1
+ </section>
+ <embed src="section-2-and-3.html">
+ <section>
+ 	HTML for section 4
+ </section>
+ <section>
+ 	HTML for section 5
+ </section>
+ <embed src="section-6.html">
+
+githubRepo https://github.com/paul-go/YESS-Specification
