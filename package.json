@@ -16,7 +16,7 @@
     "jtreeBeta": "npm install ~/jtree",
     "scrollBeta": "npm install ~/scroll",
     "deploy": "ssh pldb.com; git pull; x tsc; x restart",
-    "fetchLogs": "scp file pldb.com:/root/pldb/ignore/treeBaseServerLog.tree ignore/prodLogs/",
+    "fetchLogs": "scp file pldb.com:/root/pldb/ignore/trueBaseServerLog.tree ignore/prodLogs/",
     "start": "pm2 start ./code/PLDB.js -- startProdServer",
     "stop": "pm2 delete 0",
     "restart": "pm2 restart 0"
@@ -48,7 +48,7 @@
     "autocompleter": "^7.1.0",
     "dayjs": "^1.11.7",
     "express": "^4.18.2",
-    "jtree": "^67.3.0",
+    "jtree": "^68.0.0",
     "lodash": "^4.17.21",
     "monaco-editor": "^0.34.1",
     "numeral": "^2.0.6",

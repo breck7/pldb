@@ -3,6 +3,6 @@ title Add a language
 
 html <div id="formHolder"></div>
 
-html <script>document.addEventListener("DOMContentLoaded", () => new TreeBaseFrontEndApp().renderCreatePage())</script>
+html <script>document.addEventListener("DOMContentLoaded", () => new TrueBaseFrontEndApp().renderCreatePage())</script>
 
 import footer.scroll

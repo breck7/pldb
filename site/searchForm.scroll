@@ -1,7 +1,7 @@
 importOnly
 
 html
- <div class="treeBaseSearchForm treeBaseSearchFormPadded">
+ <div class="trueBaseSearchForm trueBaseSearchFormPadded">
   <form style="display:inline;" method="get" action="/fullTextSearch">
    <input name="q" placeholder="Search" autocomplete="off" type="search" id="searchFormInput">
    <input class="searchButton" type="submit" value="Search">

@@ -90,7 +90,7 @@ const initSearchAutocomplete = elementId => {
 	})
 }
 
-class TreeBaseFrontEndApp {
+class TrueBaseFrontEndApp {
 	constructor() {
 		window.app = this
 	}

@@ -26,13 +26,13 @@ const { GrammarCompiler } = require("jtree/products/GrammarCompiler.js")
 const { Disk } = require("jtree/products/Disk.node.js")
 const { Table } = require("jtree/products/jtable.node.js")
 const {
-  TreeBaseFolder,
-  TreeBaseFile
-} = require("jtree/products/treeBase.node.js")
+  TrueBaseFolder,
+  TrueBaseFile
+} = require("jtree/products/trueBase.node.js")
 const {
-  TreeBaseServer,
+  TrueBaseServer,
   SearchServer
-} = require("jtree/products/treeBaseServer.node.js")
+} = require("jtree/products/trueBaseServer.node.js")
 const { ScrollFolder, ScrollFile } = require("scroll-cli")
 
 const baseFolder = path.join(__dirname, "..")
@@ -206,7 +206,7 @@ vm virtual machine
 webApi
 xmlFormat`).toObject()
 
-class PLDBFile extends TreeBaseFile {
+class PLDBFile extends TrueBaseFile {
   get pldbId() {
     return this.id
   }
@@ -1876,7 +1876,7 @@ const makeInverseRanks = ranks => {
   return inverseRanks
 }
 
-class PLDBFolder extends TreeBaseFolder {
+class PLDBFolder extends TrueBaseFolder {
   createParser() {
     return new TreeNode.Parser(PLDBFile)
   }
@@ -2446,10 +2446,10 @@ wikipedia`.split("\n")
   }
 }
 
-class PLDBServer extends TreeBaseServer {
+class PLDBServer extends TrueBaseServer {
   constructor(folder, ignoreFolder) {
     super(folder, ignoreFolder)
-    this.editLogPath = path.join(ignoreFolder, "treeBaseServerLog.tree")
+    this.editLogPath = path.join(ignoreFolder, "trueBaseServerLog.tree")
     this.serveFolder(siteFolder)
     this.serveFolder(__dirname)
     this.buildTqlExtension()
@@ -2615,7 +2615,7 @@ ${description ? `* ${encodedDescription}` : ""}
 table ${delimiter}
  ${results.replace(/\n/g, "\n ")}
 
-html <script>document.addEventListener("DOMContentLoaded", () => new TreeBaseFrontEndApp().renderSearchPage())</script>
+html <script>document.addEventListener("DOMContentLoaded", () => new TrueBaseFrontEndApp().renderSearchPage())</script>
 
 ${scrollFooter}
 `

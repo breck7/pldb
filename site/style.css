@@ -222,7 +222,7 @@ li.scrollParagraphComponent {
 
 /* End scroll overrides */
 
-/* todo: should be in treebase code? */
+/* todo: should be in truebase code? */
 .searchResultsHeader {
   color: #333;
   margin-bottom: 3px;
@@ -266,12 +266,12 @@ li.scrollParagraphComponent {
   cursor: pointer;
 }
 
-.treeBaseSearchFormPadded {
+.trueBaseSearchFormPadded {
   margin-top: 10px;
   margin-bottom: 10px;
 }
 
-.treeBaseSearchForm #searchFormInput {
+.trueBaseSearchForm #searchFormInput {
   width: 500px;
   height: 50px;
   border: 0;
@@ -279,7 +279,7 @@ li.scrollParagraphComponent {
   font-size: 16px;
 }
 
-.treeBaseSearchForm .searchButton {
+.trueBaseSearchForm .searchButton {
   height: 50px;
   font-size: 16px;
   border: 0;
@@ -288,11 +288,11 @@ li.scrollParagraphComponent {
   background-color: rgb(237, 237, 237);
 }
 
-.treeBaseSearchForm .searchButton:hover {
+.trueBaseSearchForm .searchButton:hover {
   background-color: rgb(207, 207, 207);
 }
 
-.treeBaseSearchForm .searchButton:active {
+.trueBaseSearchForm .searchButton:active {
   background-color: rgb(187, 187, 187);
 }
 

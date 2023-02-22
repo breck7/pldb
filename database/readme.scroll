@@ -1,10 +1,9 @@
 # PLDB Database Folder
 
-* PLDB uses a flat plain text database called TreeBase.
- https://treebase.treenotation.org/ TreeBase
+* PLDB uses a flat plain text database called TrueBase.
+ https://jtree.treenotation.org/trueBase/ TrueBase
 
-* This folder contains 3 subfolders:
+* This folder contains 2 subfolders:
 
 - 1. `grammar/` - Contains the schema for the database.
 - 2. `things/` - Contains all the actual entries in the database, one file for each entry.
-- 3. `features/` - Contains an entry for each language feature.
