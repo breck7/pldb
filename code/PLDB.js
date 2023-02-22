@@ -2532,6 +2532,7 @@ class PLDBServer extends TrueBaseServer {
   }
 
   buildTqlExtension() {
+    if (!Disk.exists(distFolder)) Disk.mkdir(distFolder)
     const extendedTqlGrammar = new TreeNode(
       Disk.read(path.join(jtreeFolder, "langs", "tql", "tql.grammar"))
     )
