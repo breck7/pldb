@@ -10,7 +10,7 @@ nativeLanguage false
 domainName jule.dev
  registered 2022
 
-writtenIn go cpp
+writtenIn go c cpp
 influencedBy c cpp rust go
 
 visualParadigm false
@@ -38,9 +38,12 @@ features
   }
  hasFunctionOverloading false
  hasMethods true
+  impl MyStruct {
+      fn my_method(self) {}
+  }
  hasMethodOverloading false
  hasMaps true
-  [int:str] {
+  let my_map: [int:str] = {
       0: "Key 0",
       1: "Key 1",
       2: "Key 2",
@@ -51,8 +54,7 @@ features
       fn get_age(self): byte
   }
  hasGenerics true
-  type[T]
-  fn generic_function(s: []T) {
+  fn generic_function[T](s: []T) {
       // ...
   }
  hasBooleans true
@@ -174,6 +176,7 @@ features
  hasSelfOrThisWord true
   self
  hasBoundedCheckedArrays true
+  let arr: [5]byte = ['a', 'b', 'c', 'd', 'e']
  hasTernaryOperators false
  hasStatementTerminatorCharacter true
   ;
@@ -207,8 +210,7 @@ features
   |:           outln("X is not Y, Z, A, B and C")
   }
  hasDuckTyping true
-  type[T]
-  fn lock_object(obj: T) {
+  fn lock_object[T](obj: T) {
       obj.lock()
   }
  isLisp false
@@ -232,13 +234,14 @@ features
   ++
   --
  hasStaticTyping true
+ canWriteToDisk true
  hasStringConcatOperator true
   +
  hasMultilineStrings true
  hasImports true
-  use std::mem
-  use std::mem::{size_of, align_of, self}
-  use std::mem::*
+  use std::fs
+  use std::sys::{self, open, O_RDWR}
+  use std::math::*
 
 lineCommentToken //
 multiLineCommentTokens /* */
@@ -247,7 +250,7 @@ assignmentToken =
 stringToken "
 booleanTokens true false
 includeToken use
-keywords fn pub struct enum unsafe const let mut self match if else for in impl trait break continue goto cpp i8 i16 i32 i64 u8 u16 u32 u64 f32 f64 str int uint type any true false bool ret fallthrough nil uintptr co
+keywords fn pub struct enum unsafe const let mut self match if else for in impl trait break continue goto cpp i8 i16 i32 i64 u8 u16 u32 u64 f32 f64 str int uint type any true false bool ret fall nil uintptr co
 
 example
  fn quicksort(mut s: []int) {
@@ -314,13 +317,13 @@ example
 
 githubRepo https://github.com/julelang/jule
  firstCommit 2021
- stars 52
+ stars 54
  forks 8
  subscribers 6
  created 2021
  updated 2022
  description Jule is the simple, efficient, statically typed and compiled system programming language.
- issues 10
+ issues 11
 
 fileType text
 isOpenSource true
