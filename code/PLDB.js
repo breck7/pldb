@@ -25,14 +25,11 @@ const { shiftRight, removeReturnChars } = Utils
 const { GrammarCompiler } = require("jtree/products/GrammarCompiler.js")
 const { Disk } = require("jtree/products/Disk.node.js")
 const { Table } = require("jtree/products/jtable.node.js")
-const {
-  TrueBaseFolder,
-  TrueBaseFile
-} = require("jtree/products/trueBase.node.js")
+const { TrueBaseFolder, TrueBaseFile } = require("truebase/code/TrueBase.js")
 const {
   TrueBaseServer,
   SearchServer
-} = require("jtree/products/trueBaseServer.node.js")
+} = require("truebase/code/TrueBaseServer.js")
 const { ScrollFolder, ScrollFile } = require("scroll-cli")
 
 const baseFolder = path.join(__dirname, "..")
