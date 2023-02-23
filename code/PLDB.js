@@ -37,6 +37,7 @@ const ignoreFolder = path.join(baseFolder, "ignore")
 const truebaseFolder = path.join(baseFolder, "truebase")
 const nodeModulesFolder = path.join(baseFolder, "node_modules")
 const jtreeFolder = path.join(nodeModulesFolder, "jtree")
+const truebaseModuleFolder = path.join(nodeModulesFolder, "truebase")
 const siteFolder = path.join(baseFolder, "site")
 const distFolder = path.join(siteFolder, "dist")
 const pagesDir = path.join(siteFolder, "pages")
@@ -2531,7 +2532,7 @@ class PLDBServer extends TrueBaseServer {
   buildTqlExtension() {
     if (!Disk.exists(distFolder)) Disk.mkdir(distFolder)
     const extendedTqlGrammar = new TreeNode(
-      Disk.read(path.join(jtreeFolder, "langs", "tql", "tql.grammar"))
+      Disk.read(path.join(truebaseModuleFolder, "tql", "tql.grammar"))
     )
 
     const { colNamesForCsv } = this.folder.csvBuildOutput
