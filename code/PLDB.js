@@ -37,7 +37,7 @@ const { ScrollFolder, ScrollFile } = require("scroll-cli")
 
 const baseFolder = path.join(__dirname, "..")
 const ignoreFolder = path.join(baseFolder, "ignore")
-const databaseFolder = path.join(baseFolder, "database")
+const truebaseFolder = path.join(baseFolder, "truebase")
 const nodeModulesFolder = path.join(baseFolder, "node_modules")
 const jtreeFolder = path.join(nodeModulesFolder, "jtree")
 const siteFolder = path.join(baseFolder, "site")
@@ -894,7 +894,7 @@ pipeTable
   }
 
   get sourceUrl() {
-    return `https://github.com/breck7/pldb/blob/main/database/things/${this.id}.pldb`
+    return `https://github.com/breck7/pldb/blob/main/truebase/things/${this.id}.pldb`
   }
 
   toScroll() {
@@ -1768,7 +1768,7 @@ html
  <a class="prevLang" href="${previous.permalink}">&lt;</a>
  <a class="nextLang" href="${next.permalink}">&gt;</a>
 
-viewSourceUrl https://github.com/breck7/pldb/blob/main/database/grammar/${fileName}
+viewSourceUrl https://github.com/breck7/pldb/blob/main/truebase/grammar/${fileName}
 
 startColumns 4
 
@@ -2189,7 +2189,7 @@ class PLDBFolder extends TrueBaseFolder {
             : "A computed value"
         const DefinitionLink =
           colDefId !== "" && colDefId !== "errorNode"
-            ? `https://github.com/breck7/pldb/blob/main/database/grammar/${Definition}#L${sourceLocation.lineNumber +
+            ? `https://github.com/breck7/pldb/blob/main/truebase/grammar/${Definition}#L${sourceLocation.lineNumber +
                 1}`
             : `https://github.com/breck7/pldb/blob/main/code/File.ts#:~:text=get%20${Column}()`
         const SourceLink = Source ? `https://${Source}` : ""
@@ -3224,8 +3224,8 @@ sandbox/lib/show-hint.js`.split("\n")
 }
 
 const pldbBase = new PLDBFolder()
-  .setDir(path.join(databaseFolder, "things"))
-  .setGrammarDir(path.join(databaseFolder, "grammar"))
+  .setDir(path.join(truebaseFolder, "things"))
+  .setGrammarDir(path.join(truebaseFolder, "grammar"))
   .loadFolder()
 
 module.exports = { PLDBServer, pldbBase }
