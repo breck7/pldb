@@ -1,0 +1,157 @@
+import header.scroll
+
+title Maple
+
+title Maple - Programming language
+ hidden
+
+html
+ <a class="prevLang" href="f-sharp.html">&lt;</a>
+ <a class="nextLang" href="elm.html">&gt;</a>
+
+viewSourceUrl https://github.com/breck7/pldb/blob/main/database/things/maple.pldb
+
+startColumns 4
+
+html <div class="quickLinks"><a href="http://www.maplesoft.com/products/maple/"><svg role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12.7166 3.79541C12.2835 3.49716 11.7165 3.49716 11.2834 3.79541L4.14336 8.7121C3.81027 8.94146 3.60747 9.31108 3.59247 9.70797C3.54064 11.0799 3.4857 13.4824 3.63658 15.1877C3.7504 16.4742 4.05336 18.1747 4.29944 19.4256C4.41371 20.0066 4.91937 20.4284 5.52037 20.4284H8.84433C8.98594 20.4284 9.10074 20.3111 9.10074 20.1665V15.9754C9.10074 14.9627 9.90433 14.1417 10.8956 14.1417H13.4091C14.4004 14.1417 15.204 14.9627 15.204 15.9754V20.1665C15.204 20.3111 15.3188 20.4284 15.4604 20.4284H18.4796C19.0806 20.4284 19.5863 20.0066 19.7006 19.4256C19.9466 18.1747 20.2496 16.4742 20.3634 15.1877C20.5143 13.4824 20.4594 11.0799 20.4075 9.70797C20.3925 9.31108 20.1897 8.94146 19.8566 8.7121L12.7166 3.79541ZM10.4235 2.49217C11.3764 1.83602 12.6236 1.83602 13.5765 2.49217L20.7165 7.40886C21.4457 7.91098 21.9104 8.73651 21.9448 9.64736C21.9966 11.0178 22.0564 13.5119 21.8956 15.3292C21.7738 16.7067 21.4561 18.4786 21.2089 19.7353C20.9461 21.0711 19.7924 22.0001 18.4796 22.0001H15.4604C14.4691 22.0001 13.6655 21.1791 13.6655 20.1665V15.9754C13.6655 15.8307 13.5507 15.7134 13.4091 15.7134H10.8956C10.754 15.7134 10.6392 15.8307 10.6392 15.9754V20.1665C10.6392 21.1791 9.83561 22.0001 8.84433 22.0001H5.52037C4.20761 22.0001 3.05389 21.0711 2.79113 19.7353C2.54392 18.4786 2.22624 16.7067 2.10437 15.3292C1.94358 13.5119 2.00338 11.0178 2.05515 9.64736C2.08957 8.73652 2.55427 7.91098 3.28346 7.40886L10.4235 2.49217Z"/></svg></a> <a href="https://en.wikipedia.org/wiki/Maple_(software)"><svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="98.05px" height="98.05px" viewBox="0 0 98.05 98.05" style="enable-background:new 0 0 98.05 98.05;" xml:space="preserve"><path d="M98.023,17.465l-19.584-0.056c-0.004,0.711-0.006,1.563-0.017,2.121c1.664,0.039,5.922,0.822,7.257,4.327L66.92,67.155 c-0.919-2.149-9.643-21.528-10.639-24.02l9.072-18.818c1.873-2.863,5.455-4.709,8.918-4.843l-0.01-1.968L55.42,17.489 c-0.045,0.499,0.001,1.548-0.068,2.069c5.315,0.144,7.215,1.334,5.941,4.508c-2.102,4.776-6.51,13.824-7.372,15.475 c-2.696-5.635-4.41-9.972-7.345-16.064c-1.266-2.823,1.529-3.922,4.485-4.004v-1.981l-21.82-0.067 c0.016,0.93-0.021,1.451-0.021,2.131c3.041,0.046,6.988,0.371,8.562,3.019c2.087,4.063,9.044,20.194,11.149,24.514 c-2.685,5.153-9.207,17.341-11.544,21.913c-3.348-7.43-15.732-36.689-19.232-44.241c-1.304-3.218,3.732-5.077,6.646-5.213 l0.019-2.148L0,17.398c0.005,0.646,0.027,1.71,0.029,2.187c4.025-0.037,9.908,6.573,11.588,10.683 c7.244,16.811,14.719,33.524,21.928,50.349c0.002,0.029,2.256,0.059,2.281,0.008c4.717-9.653,10.229-19.797,15.206-29.56 L63.588,80.64c0.005,0.004,2.082,0.016,2.093,0.007c7.962-18.196,19.892-46.118,23.794-54.933c1.588-3.767,4.245-6.064,8.543-6.194 l0.032-1.956L98.023,17.465z"/></svg></a> <a href="https://twitter.com/maplesoft"><svg role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M23.953 4.57a10 10 0 01-2.825.775 4.958 4.958 0 002.163-2.723c-.951.555-2.005.959-3.127 1.184a4.92 4.92 0 00-8.384 4.482C7.69 8.095 4.067 6.13 1.64 3.162a4.822 4.822 0 00-.666 2.475c0 1.71.87 3.213 2.188 4.096a4.904 4.904 0 01-2.228-.616v.06a4.923 4.923 0 003.946 4.827 4.996 4.996 0 01-2.212.085 4.936 4.936 0 004.604 3.417 9.867 9.867 0 01-6.102 2.105c-.39 0-.779-.023-1.17-.067a13.995 13.995 0 007.557 2.209c9.053 0 13.998-7.496 13.998-13.985 0-.21 0-.42-.015-.63A9.935 9.935 0 0024 4.59z"/></svg></a> <a href="https://www.maplesoft.com/documentation_center/"><svg viewBox="0 0 500 500" xmlns="http://www.w3.org/2000/svg"><g transform="matrix(1, 0, 0, 1, 13.859316, 9.109739)"><g><g><path d="M340.732,0H55v485h375V94.518L340.732,0z M345,26.364L405.1,90H345V26.364z M415,470H70V15h260v90h85V470z"/><rect x="102.5" y="191" width="280" height="15"/><rect x="102.5" y="141" width="120" height="15"/><rect x="102.5" y="241" width="280" height="15"/><rect x="102.5" y="291" width="280" height="15"/><rect x="102.5" y="341" width="280" height="15"/><rect x="102.5" y="391" width="280" height="15"/></g></g></g></svg></a></div>
+
+* Maple is a <a href="../lists/languages.html?filter=pl">programming language</a> created in 1982.
+ link ../lists/languages.html?filter=1982 1982
+
+kpiTable
+ #66 <span title="TotalRank: 242 Jobs: 51 Users: 44 Facts: 312 Links: 147">on PLDB</span>
+ 41 Years Old
+ 53.3k <span title="Crude user estimate from a linear model.">Users</span>
+ 28 <span title="Books about or leveraging Maple">Books</span>
+ 15 <span title="Academic publications about or leveraging Maple">Papers</span>
+
+* Maple is a symbolic and numeric computing environment, and is also a multi-paradigm programming language. Developed by Maplesoft, Maple also covers other aspects of technical computing, including visualization, data analysis, matrix computation, and connectivity. A toolbox, MapleSim, adds functionality for multidomain physical modeling and code generation.. Read more on Wikipedia...
+ https://en.wikipedia.org/wiki/Maple_(software) Read more on Wikipedia...
+
+- Maple website
+ http://www.maplesoft.com/products/maple/
+- Maple downloads page
+ https://www.maplesoft.com/download/
+- Maple Wikipedia page
+ https://en.wikipedia.org/wiki/Maple_(software)
+- Maple docs
+ https://www.maplesoft.com/documentation_center/
+- Maple first developed in <a href="../lists/originCommunities.html#cybernetSystemsCoLtd">Cybernet Systems Co. Ltd</a>
+- PLDB estimates there are currently 511 job openings for Maple programmers.
+- Maple on Twitter
+ https://twitter.com/maplesoft
+- There are 265 <a href="https://projecteuler.net/language=Maple">Project Euler</a> users using Maple
+- Explore Maple snippets on <a href="http://www.rosettacode.org/wiki/Category:Maple">Rosetta Code</a>
+- Maple on HOPL
+ https://hopl.info/showlanguage.prx?exp=909
+- Maple appears in the <a href="https://www.tiobe.com/tiobe-index/">TIOBE Index</a>
+- There is a <a href="https://www.maplesoft.com/applications/">central package repository</a> for Maple
+- Official Blog page for Maple
+ https://faq.maplesoft.com/
+- See also: (21 related languages)<a href="c.html">C</a>, <a href="java.html">Java</a>, <a href="linux.html">Linux</a>, <a href="pascal.html">Pascal</a>, <a href="csharp.html">C#</a>, <a href="fortran.html">Fortran</a>, <a href="matlab.html">MATLAB</a>, <a href="visual-basic.html">Visual Basic</a>, <a href="excel-app.html">Microsoft Excel</a>, <a href="watcom.html">Watcom</a>, <a href="sql.html">SQL</a>, <a href="http.html">HTTP</a>, <a href="javascript.html">JavaScript</a>, <a href="julia.html">Julia</a>, <a href="perl.html">Perl</a>, <a href="python.html">Python</a>, <a href="r.html">R</a>, <a href="java-server-pages.html">JSP</a>, <a href="mathcad.html">Mathcad</a>, <a href="mupad.html">muPad</a>, <a href="sagemath.html">Sage</a>
+- HTML of this page generated by <a href="https://github.com/breck7/pldb/blob/main/code/LanguagePage.ts">LanguagePage.ts</a>
+- <a href="https://pldb.com/edit/maple">Improve our Maple file</a>
+
+html <br>
+
+codeWithHeader Example from <a href='http://helloworldcollection.de/#Maple'>the Hello World Collection</a>:
+ # Hello World in Maple
+ 
+ &gt;&gt; printf(&quot;Hello World!&quot;);
+ 
+
+codeWithHeader Example from <a href='https://en.wikipedia.org/wiki/Maple_(software)'>Wikipedia</a>:
+ eqn:= f(x)-3*Int((x*y+x^2*y^2)*f(y), y=-1..1) = h(x):
+  intsolve(eqn,f(x));
+
+endColumns
+
+## Language <a href="../lists/features.html">features</a>
+
+treeTable
+ row
+  Feature Print() Debugging
+  FeatureLink ../features/hasPrintDebugging.html
+  Supported <span class="hasFeature">✓</span>
+  Token printf
+  Example
+ row
+  Feature Line Comments
+  FeatureLink ../features/hasLineComments.html
+  Supported <span class="hasFeature">✓</span>
+  Token #
+  Example
+   # A comment
+ row
+  Feature Comments
+  FeatureLink ../features/hasComments.html
+  Supported <span class="hasFeature">✓</span>
+  Token 
+  Example
+ row
+  Feature Case Insensitive Identifiers
+  FeatureLink ../features/hasCaseInsensitiveIdentifiers.html
+  Supported <span class="doesNotHaveFeature">X</span>
+  Token 
+  Example
+ row
+  Feature Semantic Indentation
+  FeatureLink ../features/hasSemanticIndentation.html
+  Supported <span class="doesNotHaveFeature">X</span>
+  Token 
+  Example
+
+## Books about Maple from ISBNdb
+pipeTable
+ title|titleLink|authors|year|publisher
+ The Maple Book|https://isbndb.com/book/9781584882329|Garvan, Frank|2001|Chapman and Hall/CRC
+ The Maple V Primer, Release 4|https://isbndb.com/book/9780849326813|Garvan, Frank|1997|CRC Press
+ Understanding Maple|https://isbndb.com/book/9781316628140|Thompson, Ian|2016|Cambridge University Press
+ Getting Started with Maple|https://isbndb.com/book/9780471470137|Cheung, C-K. and Keough, G. E. and May, Michael|2003|Wiley
+ Introduction to Cryptography with Maple|https://isbndb.com/book/9783642321658|Gómez Pardo, José Luis|2012|Springer
+ Maple V Programming Guide|https://isbndb.com/book/9780387945378|M. B. Monagan K. O. Geddes|1996|Springer Us
+ Introduction to mathematics with maple|https://isbndb.com/book/9789812560094|Adams, P. and Smith, K. and Výborný, R|2004|Wspc
+ Introduction to Maple|https://isbndb.com/book/9780387945354|Heck, Andre|1996|Springer Verlag
+ Essential Maple 7: An Introduction for Scientific Programmers|https://isbndb.com/book/9780387953526|Corless, Robert M.|2002|Springer
+ Nonlinear Physics with Maple for Scientists and Engineers|https://isbndb.com/book/9780817641191|Enns, Richard H. and McGuire, George C.|2000|Birkhäuser
+ Introduction to Mathematics with Maple|https://isbndb.com/book/9789812389312|Adams, Peter and Smith, Ken and Vyborny, Rudolf|2004|World Scientific Publishing Company
+ Nonlinear Physics With Maple For Scientists And Engineers|https://isbndb.com/book/9780817639778|Richard Enns and George McGuire|1997|Boston : BirkhÃ¤user, C1997.
+ Mathematical Methods for Physics: Using MATLAB and Maple|https://isbndb.com/book/9781683920984|Claycomb, J. R.|2018|Mercury Learning and Information
+ Scientific Computing - An Introduction using Maple and MATLAB (Texts in Computational Science and Engineering Book 11)|https://isbndb.com/book/9783319043258|Gander, Walter and Gander, Martin J. and Kwok, Felix|2014|Springer
+ Introduction to Cryptography with Maple|https://isbndb.com/book/9783642321665|Gómez Pardo, José Luis|2012|Springer
+ Maple V Programming Guide: for Release 5|https://isbndb.com/book/9780387983981|Waterloo Maple Incorporated|1997|Springer
+ Maple and Mathematica: A Problem Solving Approach for Mathematics|https://isbndb.com/book/9783211732656|Shingareva, Inna K. and Lizárraga-Celaya, Carlos|2007|Springer
+ Introduction to Scientific Programming: Computational Problem Solving Using Maple and C|https://isbndb.com/book/9780387946306|Zachary, Joseph L.|1996|Springer
+ Maple Programming Guide|https://isbndb.com/book/9781926902258|Maplesoft|2012T|
+ Introduction to Scientific Programming: Computational Problem Solving Using Maple and C|https://isbndb.com/book/9781461275183|Zachary, Joseph L.|2014|Springer
+ Differential Equations With Maple V|https://isbndb.com/book/9780120415489|Abell, Martha L. and Braselton, James P.|1994-09-01T00:00:01Z|Morgan Kaufmann Pub
+ Maple 10 Harnessing the Power of Mathematics Advanced Programming Guide|https://isbndb.com/book/9781894511773|M.B Monagan and K.O. Geddes|2005T|Maplesoft
+ Maple V: Learning Guide|https://isbndb.com/book/9780387983974|Waterloo Maple Incorporated|1997|Springer
+ Maple 12 The Essential Tool For Mathematics and Modeling, Introductory Programming Guide|https://isbndb.com/book/9781897310465|MapleSoft|2022|MapleSoft
+ Introductory Programming Guide: Maple 9|https://isbndb.com/book/9781894511438||2003T|Maplesoft
+ Maple Introductory Programming Guide 11|https://isbndb.com/book/9781897310175|||
+ Mathematical Computation with Maple V: Ideas and Applications: Proceedings of the Maple Summer Workshop and Symposium, University of Michigan, Ann Arbor, June 28–30, 1993|https://isbndb.com/book/9781461267201|Thomas Lee|2012|Birkhäuser
+ Intelligent Routines: Solving Mathematical Analysis with Matlab, Mathcad, Mathematica and Maple (Intelligent Systems Reference Library Book 39)|https://isbndb.com/book/9783642284755|Anastassiou, George A. and Iatan, Iuliana F.|2012|Springer
+
+## Publications about Maple from Semantic Scholar
+pipeTable
+ title|titleLink|authors|year|citations|influentialCitations
+ Maple V Language Reference Manual|https://www.semanticscholar.org/paper/c530f557b3e05aca6ea0627a9d0ab78264d2b9c2|B. Char and K. Geddes and G. Gonnet and Benton L. Leong and M. Monagan|1993|586|42
+ First Leaves: A Tutorial Introduction to Maple V|https://www.semanticscholar.org/paper/b31768389d3fce551e53fc01db39901f835e47f7|B. Char and Benton L. Leong and K. Geddes and M. Monagan and G. Gonnet and S. Watt|1992|252|12
+ The Maple handbook|https://www.semanticscholar.org/paper/bc40f981663a2e71bc09104d48c1a153f6aa51cf|D. Redfern|1994|116|8
+ The Maple Handbook: Maple V Release 3|https://www.semanticscholar.org/paper/9f5968a040c3675e169505cf8f7fe62910c16b4c|D. Redfern|1995|78|2
+ Introduction to Scientific Programming: Computational Problem Solving Using Maple and C|https://www.semanticscholar.org/paper/077bba337809bc9209b3604717a54e64206b2d1a|J. Zachary|1996|35|0
+ Parallelizing algorithms for symbolic computation using MAPLE|https://www.semanticscholar.org/paper/f31333dd8264f418ce1feb76fe5bb9daee6927c9|Kurt Siegl|1993|33|0
+ The Maple Computer Algebra System|https://www.semanticscholar.org/paper/52f9e1f3ffda68298f73bd2a2fac84d8aa4b9a27|M. Monagan|1993|9|0
+ Chemical Engineering with Maple|https://www.semanticscholar.org/paper/fe3a019a88bac24067ade4a400a10ed433c608b5|Ross Taylor and K. Atherley|1994|8|0
+ The Maple Library|https://www.semanticscholar.org/paper/c67e134fc0d24f8d4b96859869c65a18808f1d4c|B. Char and K. Geddes and G. Gonnet and Benton L. Leong and M. Monagan and S. Watt|1991|5|0
+ Using Maple To Obtain Analytic Expressions in Physical Chemistry|https://www.semanticscholar.org/paper/d9075e05457e1ffb563867110597624feefc0fa8|S. McDowell|1997|2|0
+ ANALYTICAL SOLUTION OF THE REGULAR PROBLEM OF THE STURM - LIOUVILLE PROBLEM IN MAPLE ENVIRONMENT|https://www.semanticscholar.org/paper/37121e289613a404fb39841707d8811351772789|Unona Krahmaleva and V. Shevtsov|2019|2|0
+ Highlighting programming language issues using mixed language programming nn Maple and C|https://www.semanticscholar.org/paper/df02add29bd8508d8ff3bce0c6a9c147d8313f06|Andrew T. Phillips|2004|2|0
+ MAPLE V: A Quick Reference|https://www.semanticscholar.org/paper/67093026cd9a0d98b03533ab96f2acdf86190f4f|V. Rovenski|2000|1|0
+ The role of a symbolic programming language in hardware verification: the case of Maple|https://www.semanticscholar.org/paper/04bc961732466a62f71eb88f00439eec5094f550|F. Mavaddat|1993|1|0
+ The Maple Programming Language|https://www.semanticscholar.org/paper/2aaa014af0f2534140aaf2da2e2b7d3eb887386b|B. Char and K. Geddes and G. Gonnet and Benton L. Leong and M. Monagan and S. Watt|1992|1|0
+
+keyboardNav f-sharp.html elm.html
+
+import ../footer.scroll

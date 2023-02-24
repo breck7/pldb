@@ -1,0 +1,511 @@
+import header.scroll
+
+title Ruby
+
+title Ruby - Programming language
+ hidden
+
+html
+ <a class="prevLang" href="fortran.html">&lt;</a>
+ <a class="nextLang" href="mysql.html">&gt;</a>
+
+viewSourceUrl https://github.com/breck7/pldb/blob/main/database/things/ruby.pldb
+
+startColumns 4
+
+html <div class="quickLinks"><a href="https://www.ruby-lang.org"><svg role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12.7166 3.79541C12.2835 3.49716 11.7165 3.49716 11.2834 3.79541L4.14336 8.7121C3.81027 8.94146 3.60747 9.31108 3.59247 9.70797C3.54064 11.0799 3.4857 13.4824 3.63658 15.1877C3.7504 16.4742 4.05336 18.1747 4.29944 19.4256C4.41371 20.0066 4.91937 20.4284 5.52037 20.4284H8.84433C8.98594 20.4284 9.10074 20.3111 9.10074 20.1665V15.9754C9.10074 14.9627 9.90433 14.1417 10.8956 14.1417H13.4091C14.4004 14.1417 15.204 14.9627 15.204 15.9754V20.1665C15.204 20.3111 15.3188 20.4284 15.4604 20.4284H18.4796C19.0806 20.4284 19.5863 20.0066 19.7006 19.4256C19.9466 18.1747 20.2496 16.4742 20.3634 15.1877C20.5143 13.4824 20.4594 11.0799 20.4075 9.70797C20.3925 9.31108 20.1897 8.94146 19.8566 8.7121L12.7166 3.79541ZM10.4235 2.49217C11.3764 1.83602 12.6236 1.83602 13.5765 2.49217L20.7165 7.40886C21.4457 7.91098 21.9104 8.73651 21.9448 9.64736C21.9966 11.0178 22.0564 13.5119 21.8956 15.3292C21.7738 16.7067 21.4561 18.4786 21.2089 19.7353C20.9461 21.0711 19.7924 22.0001 18.4796 22.0001H15.4604C14.4691 22.0001 13.6655 21.1791 13.6655 20.1665V15.9754C13.6655 15.8307 13.5507 15.7134 13.4091 15.7134H10.8956C10.754 15.7134 10.6392 15.8307 10.6392 15.9754V20.1665C10.6392 21.1791 9.83561 22.0001 8.84433 22.0001H5.52037C4.20761 22.0001 3.05389 21.0711 2.79113 19.7353C2.54392 18.4786 2.22624 16.7067 2.10437 15.3292C1.94358 13.5119 2.00338 11.0178 2.05515 9.64736C2.08957 8.73652 2.55427 7.91098 3.28346 7.40886L10.4235 2.49217Z"/></svg></a> <a href="https://en.wikipedia.org/wiki/Ruby_(programming_language)"><svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="98.05px" height="98.05px" viewBox="0 0 98.05 98.05" style="enable-background:new 0 0 98.05 98.05;" xml:space="preserve"><path d="M98.023,17.465l-19.584-0.056c-0.004,0.711-0.006,1.563-0.017,2.121c1.664,0.039,5.922,0.822,7.257,4.327L66.92,67.155 c-0.919-2.149-9.643-21.528-10.639-24.02l9.072-18.818c1.873-2.863,5.455-4.709,8.918-4.843l-0.01-1.968L55.42,17.489 c-0.045,0.499,0.001,1.548-0.068,2.069c5.315,0.144,7.215,1.334,5.941,4.508c-2.102,4.776-6.51,13.824-7.372,15.475 c-2.696-5.635-4.41-9.972-7.345-16.064c-1.266-2.823,1.529-3.922,4.485-4.004v-1.981l-21.82-0.067 c0.016,0.93-0.021,1.451-0.021,2.131c3.041,0.046,6.988,0.371,8.562,3.019c2.087,4.063,9.044,20.194,11.149,24.514 c-2.685,5.153-9.207,17.341-11.544,21.913c-3.348-7.43-15.732-36.689-19.232-44.241c-1.304-3.218,3.732-5.077,6.646-5.213 l0.019-2.148L0,17.398c0.005,0.646,0.027,1.71,0.029,2.187c4.025-0.037,9.908,6.573,11.588,10.683 c7.244,16.811,14.719,33.524,21.928,50.349c0.002,0.029,2.256,0.059,2.281,0.008c4.717-9.653,10.229-19.797,15.206-29.56 L63.588,80.64c0.005,0.004,2.082,0.016,2.093,0.007c7.962-18.196,19.892-46.118,23.794-54.933c1.588-3.767,4.245-6.064,8.543-6.194 l0.032-1.956L98.023,17.465z"/></svg></a> <a href="https://reddit.com/r/ruby"><svg role="img" width="32px" height="32px" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg"><path d="M 18.65625 4 C 16.558594 4 15 5.707031 15 7.65625 L 15 11.03125 C 12.242188 11.175781 9.742188 11.90625 7.71875 13.0625 C 6.945313 12.316406 5.914063 12 4.90625 12 C 3.816406 12 2.707031 12.355469 1.9375 13.21875 L 1.9375 13.25 L 1.90625 13.28125 C 1.167969 14.203125 0.867188 15.433594 1.0625 16.65625 C 1.242188 17.777344 1.898438 18.917969 3.03125 19.65625 C 3.023438 19.769531 3 19.882813 3 20 C 3 22.605469 4.574219 24.886719 6.9375 26.46875 C 9.300781 28.050781 12.488281 29 16 29 C 19.511719 29 22.699219 28.050781 25.0625 26.46875 C 27.425781 24.886719 29 22.605469 29 20 C 29 19.882813 28.976563 19.769531 28.96875 19.65625 C 30.101563 18.917969 30.757813 17.777344 30.9375 16.65625 C 31.132813 15.433594 30.832031 14.203125 30.09375 13.28125 L 30.0625 13.25 C 29.292969 12.386719 28.183594 12 27.09375 12 C 26.085938 12 25.054688 12.316406 24.28125 13.0625 C 22.257813 11.90625 19.757813 11.175781 17 11.03125 L 17 7.65625 C 17 6.675781 17.558594 6 18.65625 6 C 19.175781 6 19.820313 6.246094 20.8125 6.59375 C 21.65625 6.890625 22.75 7.21875 24.15625 7.3125 C 24.496094 8.289063 25.414063 9 26.5 9 C 27.875 9 29 7.875 29 6.5 C 29 5.125 27.875 4 26.5 4 C 25.554688 4 24.738281 4.535156 24.3125 5.3125 C 23.113281 5.242188 22.246094 4.992188 21.46875 4.71875 C 20.566406 4.402344 19.734375 4 18.65625 4 Z M 16 13 C 19.152344 13 21.964844 13.867188 23.9375 15.1875 C 25.910156 16.507813 27 18.203125 27 20 C 27 21.796875 25.910156 23.492188 23.9375 24.8125 C 21.964844 26.132813 19.152344 27 16 27 C 12.847656 27 10.035156 26.132813 8.0625 24.8125 C 6.089844 23.492188 5 21.796875 5 20 C 5 18.203125 6.089844 16.507813 8.0625 15.1875 C 10.035156 13.867188 12.847656 13 16 13 Z M 4.90625 14 C 5.285156 14 5.660156 14.09375 5.96875 14.25 C 4.882813 15.160156 4.039063 16.242188 3.53125 17.4375 C 3.277344 17.117188 3.125 16.734375 3.0625 16.34375 C 2.953125 15.671875 3.148438 14.976563 3.46875 14.5625 C 3.472656 14.554688 3.464844 14.539063 3.46875 14.53125 C 3.773438 14.210938 4.3125 14 4.90625 14 Z M 27.09375 14 C 27.6875 14 28.226563 14.210938 28.53125 14.53125 C 28.535156 14.535156 28.527344 14.558594 28.53125 14.5625 C 28.851563 14.976563 29.046875 15.671875 28.9375 16.34375 C 28.875 16.734375 28.722656 17.117188 28.46875 17.4375 C 27.960938 16.242188 27.117188 15.160156 26.03125 14.25 C 26.339844 14.09375 26.714844 14 27.09375 14 Z M 11 16 C 9.894531 16 9 16.894531 9 18 C 9 19.105469 9.894531 20 11 20 C 12.105469 20 13 19.105469 13 18 C 13 16.894531 12.105469 16 11 16 Z M 21 16 C 19.894531 16 19 16.894531 19 18 C 19 19.105469 19.894531 20 21 20 C 22.105469 20 23 19.105469 23 18 C 23 16.894531 22.105469 16 21 16 Z M 21.25 21.53125 C 20.101563 22.597656 18.171875 23.28125 16 23.28125 C 13.828125 23.28125 11.898438 22.589844 10.75 21.65625 C 11.390625 23.390625 13.445313 25 16 25 C 18.554688 25 20.609375 23.398438 21.25 21.53125 Z"/></svg></a> <a href="https://www.ruby-lang.org/en/community/mailing-lists/"><svg role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M24 5.457v13.909c0 .904-.732 1.636-1.636 1.636h-3.819V11.73L12 16.64l-6.545-4.91v9.273H1.636A1.636 1.636 0 0 1 0 19.366V5.457c0-2.023 2.309-3.178 3.927-1.964L5.455 4.64 12 9.548l6.545-4.91 1.528-1.145C21.69 2.28 24 3.434 24 5.457z"/></svg></a> <a href="https://www.ruby-lang.org/en/documentation/"><svg viewBox="0 0 500 500" xmlns="http://www.w3.org/2000/svg"><g transform="matrix(1, 0, 0, 1, 13.859316, 9.109739)"><g><g><path d="M340.732,0H55v485h375V94.518L340.732,0z M345,26.364L405.1,90H345V26.364z M415,470H70V15h260v90h85V470z"/><rect x="102.5" y="191" width="280" height="15"/><rect x="102.5" y="141" width="120" height="15"/><rect x="102.5" y="241" width="280" height="15"/><rect x="102.5" y="291" width="280" height="15"/><rect x="102.5" y="341" width="280" height="15"/><rect x="102.5" y="391" width="280" height="15"/></g></g></g></svg></a></div>
+
+* Ruby is a <a href="../lists/languages.html?filter=pl">programming language</a> created in 1995 by Yukihiro Matsumoto.
+ link ../lists/languages.html?filter=1995 1995
+ link ../lists/creators.html#yukihiroMatsumoto Yukihiro Matsumoto
+
+kpiTable
+ #14 <span title="TotalRank: 49 Jobs: 19 Users: 20 Facts: 20 Links: 10">on PLDB</span>
+ 28 Years Old
+ 357.7k <span title="Crude user estimate from a linear model.">Users</span>
+ 65 <span title="Books about or leveraging Ruby">Books</span>
+ 13 <span title="Academic publications about or leveraging Ruby">Papers</span>
+ 3m <span title="Ruby repos on GitHub.">Repos</span>
+
+* Try now: <a href="https://riju.codes/ruby">Riju</a> · <a href="https://tio.run/#ruby">TIO</a> · <a href="https://repl.it/languages/ruby">Replit</a>
+
+monacoEditor ruby
+ # Type your code here, or load an example.
+ def square(num)
+   num * num
+ end
+
+* Ruby is a dynamic, reflective, object-oriented, general-purpose programming language. It was designed and developed in the mid-1990s by Yukihiro "Matz" Matsumoto in Japan. According to its creator, Ruby was influenced by Perl, Smalltalk, Eiffel, Ada, and Lisp. Read more on Wikipedia...
+ https://en.wikipedia.org/wiki/Ruby_(programming_language) Read more on Wikipedia...
+
+- Ruby website
+ https://www.ruby-lang.org
+- Ruby downloads page
+ https://www.ruby-lang.org/en/downloads/
+- Ruby Wikipedia page
+ https://en.wikipedia.org/wiki/Ruby_(programming_language)
+- Ruby docs
+ https://www.ruby-lang.org/en/documentation/
+- Ruby specs
+ https://www.iso.org/standard/59579.html
+- Ruby mailing list
+ https://www.ruby-lang.org/en/community/mailing-lists/
+- There are at least 2,659,551 Ruby repos on <a href="https://github.com/search?q=language:Ruby">GitHub</a>
+- PLDB estimates there are currently 11k job openings for Ruby programmers.
+- file extensions for Ruby include rb, builder, eye, fcgi, gemspec, god, jbuilder, mspec, pluginspec, podspec, prawn, rabl, rake, rbi, rbuild, rbw, rbx, ru, ruby, spec, thor, watchr, Rakefile, duby, Gemfile and Vagrantfile
+- Recurring conference about Ruby: <a href="https://rubyconf.org">RubyConf</a>
+- The  Google BigQuery Public Dataset GitHub snapshot shows 186k users using Ruby in 374k repos on <a href="https://api.github.com/search/repositories?q=language:Ruby">GitHub</a>
+- Check out the 932 <a href="https://www.meetup.com/topics/ruby/">Ruby meetup groups</a> on Meetup.com.
+- There are 75,926 members in the <a href="https://reddit.com/r/ruby">Ruby subreddit</a>
+- There are 5,435 <a href="https://projecteuler.net/language=Ruby">Project Euler</a> users using Ruby
+- In the 2021 StackOverflow <a href="https://insights.stackoverflow.com/survey">developer survey</a> Ruby programmers reported a median salary of $80,000. 7% of respondents reported using Ruby. 5,569 programmers reported using Ruby, and 4,942 said they wanted to use it
+- Explore Ruby snippets on <a href="http://www.rosettacode.org/wiki/Category:Ruby">Rosetta Code</a>
+- Ruby on HOPL
+ https://hopl.info/showlanguage.prx?exp=2458
+- Ruby ranks #13 in the <a href="https://www.tiobe.com/tiobe-index/">TIOBE Index</a>
+- Ruby Ubuntu package
+ https://packages.ubuntu.com/jammy/ruby
+- <a href="antlr.html">ANTLR</a> <a href="https://github.com/antlr/grammars-v4/tree/master/ruby">grammar</a> for Ruby
+- Ruby <a href="language-server-protocol.html">LSP</a> <a href="https://github.com/kwerle/ruby_language_server">implementation</a>
+- <a href="codemirror.html">CodeMirror</a> <a href="https://github.com/codemirror/codemirror5/tree/master/mode/ruby">package</a> for syntax highlighting Ruby
+- <a href="monaco.html">Monaco</a> <a href="https://github.com/microsoft/monaco-editor/tree/main/src/basic-languages/ruby">package</a> for syntax highlighting Ruby
+- <a href="pygments.html">Pygments</a> supports <a href="https://github.com/pygments/pygments/blob/master/pygments/lexers/ruby.py">syntax highlighting</a> for Ruby
+- GitHub supports <a href="https://github.com/atom/language-ruby" title="The package used for syntax highlighting by GitHub Linguist.">syntax highlighting</a> for Ruby
+- Ruby appears in the <a href="https://github.com/mame/quine-relay">Quine Relay</a> project
+- There is 1 <a href="jupyter-notebook.html">Jupyter</a> <a href="https://github.com/SciRuby/iruby">Kernel</a> for Ruby
+- There is a <a href="https://rubygems.org/">central package repository</a> for Ruby
+- Release Notes for Ruby
+ https://www.ruby-lang.org/en/downloads/releases/
+- Official Blog page for Ruby
+ https://www.ruby-lang.org/en/community/weblogs/
+- Frequently Asked Questions for Ruby
+ https://www.ruby-lang.org/en/documentation/faq/
+- Indeed.com has 8,719 matches for <a href="https://www.indeed.com/jobs?q=ruby engineer">"ruby engineer"</a>.
+- See also: (40 related languages)<a href="rails.html">Ruby on Rails</a>, <a href="c.html">C</a>, <a href="yarv.html">YARV</a>, <a href="jruby.html">JRuby</a>, <a href="ada.html">Ada</a>, <a href="clu.html">CLU</a>, <a href="dylan.html">Dylan</a>, <a href="eiffel.html">Eiffel</a>, <a href="lisp.html">Lisp</a>, <a href="lua.html">Lua</a>, <a href="perl.html">Perl</a>, <a href="python.html">Python</a>, <a href="smalltalk.html">Smalltalk</a>, <a href="clojure.html">Clojure</a>, <a href="coffeescript.html">CoffeeScript</a>, <a href="crystal.html">Crystal</a>, <a href="d.html">D</a>, <a href="elixir.html">Elixir</a>, <a href="falcon.html">Falcon</a>, <a href="groovy.html">Groovy</a>, <a href="ioke.html">Ioke</a>, <a href="julia.html">Julia</a>, <a href="mirah.html">Mirah</a>, <a href="nu.html">Nu</a>, <a href="rust.html">Rust</a>, <a href="swift.html">Swift</a>, <a href="unicode.html">Unicode</a>, <a href="regex.html">Regular Expressions</a>, <a href="yaml.html">YAML</a>, <a href="json.html">JSON</a>, <a href="xml.html">XML</a>, <a href="java.html">Java</a>, <a href="csharp.html">C#</a>, <a href="jvm.html">JVM</a>, <a href="llvmir.html">LLVM IR</a>, <a href="javascript.html">JavaScript</a>, <a href="objective-c.html">Objective-C</a>, <a href="parrot-vm.html">Parrot</a>, <a href="linux.html">Linux</a>, <a href="solaris.html">Solaris</a>
+- Read more about Ruby on the web: 1.
+ https://stackoverflow.com/questions/9446150/where-are-keywords-defined-in-ruby 1.
+- HTML of this page generated by <a href="https://github.com/breck7/pldb/blob/main/code/LanguagePage.ts">LanguagePage.ts</a>
+- <a href="https://pldb.com/edit/ruby">Improve our Ruby file</a>
+
+html <br>
+
+codeWithHeader Example from <a href='https://godbolt.org/'>Compiler Explorer</a>:
+ # Type your code here, or load an example.
+ def square(num)
+   num * num
+ end
+
+codeWithHeader Example from <a href='https://riju.codes/ruby'>Riju</a>:
+ puts &quot;Hello, world!&quot;
+ 
+
+codeWithHeader Example from <a href='https://github.com/leachim6/hello-world/blob/main/r/Ruby.rb'>hello-world</a>:
+ #!/usr/bin/env ruby
+ print &quot;Hello World&quot;
+ 
+
+codeWithHeader Example from <a href='http://helloworldcollection.de/#Ruby'>the Hello World Collection</a>:
+ # Hello World in Ruby
+ puts &quot;Hello World!&quot;
+ 
+
+codeWithHeader Example from <a href='https://github.com/atom/language-ruby'>Linguist</a>:
+ module Foo
+ end
+ 
+
+codeWithHeader Example from <a href='https://en.wikipedia.org/wiki/Ruby_(programming_language)'>Wikipedia</a>:
+ &quot;Hello, World!&quot;.in_blue
+  =&gt; &quot;&lt;span style=\&quot;color: #00f\&quot;&gt;Hello, World!&lt;/span&gt;&quot;
+
+## <a href="../lists/keywords.html?filter=ruby">Keywords</a> in Ruby
+* __ENCODING__ __FILE__ __LINE__ alias and BEGIN begin break case class def defined do else elsif END end ensure false for if in module next nil not or redo rescue retry return self super then true undef unless until when while yield
+
+endColumns
+
+## Language <a href="../lists/features.html">features</a>
+
+treeTable
+ row
+  Feature Conditionals
+  FeatureLink ../features/hasConditionals.html
+  Supported <span class="hasFeature">✓</span>
+  Token 
+  Example
+ row
+  Feature Functions
+  FeatureLink ../features/hasFunctions.html
+  Supported <span class="hasFeature">✓</span>
+  Token 
+  Example
+ row
+  Feature While Loops
+  FeatureLink ../features/hasWhileLoops.html
+  Supported <span class="hasFeature">✓</span>
+  Token 
+  Example
+ row
+  Feature Case Sensitivity
+  FeatureLink ../features/isCaseSensitive.html
+  Supported <span class="hasFeature">✓</span>
+  Token 
+  Example
+ row
+  Feature Range Operator
+  FeatureLink ../features/hasRangeOperators.html
+  Supported <span class="hasFeature">✓</span>
+  Token 
+  Example
+   (3...6)
+ row
+  Feature Line Comments
+  FeatureLink ../features/hasLineComments.html
+  Supported <span class="hasFeature">✓</span>
+  Token #
+  Example
+   # A comment
+ row
+  Feature Print() Debugging
+  FeatureLink ../features/hasPrintDebugging.html
+  Supported <span class="hasFeature">✓</span>
+  Token puts
+  Example
+   puts "Hi"
+ row
+  Feature Operator Overloading
+  FeatureLink ../features/hasOperatorOverloading.html
+  Supported <span class="hasFeature">✓</span>
+  Token 
+  Example
+ row
+  Feature Multiline Strings
+  FeatureLink ../features/hasMultilineStrings.html
+  Supported <span class="hasFeature">✓</span>
+  Token 
+  Example
+ row
+  Feature Mixins
+  FeatureLink ../features/hasMixins.html
+  Supported <span class="hasFeature">✓</span>
+  Token 
+  Example
+   module A
+      def a1
+      end
+      def a2
+      end
+   end
+   module B
+      def b1
+      end
+      def b2
+      end
+   end
+   class Sample
+   include A
+   include B
+      def s1
+      end
+   end
+   samp = Sample.new
+   samp.a1
+   samp.a2
+   samp.b1
+ row
+  Feature Iterators
+  FeatureLink ../features/hasIterators.html
+  Supported <span class="hasFeature">✓</span>
+  Token 
+  Example
+   (0...42).each do |n|
+     puts n
+   end
+ row
+  Feature File Imports
+  FeatureLink ../features/hasImports.html
+  Supported <span class="hasFeature">✓</span>
+  Token 
+  Example
+   load 'filename.rb'
+   require 'filename'
+   require 'trig.rb'
+ row
+  Feature Directives
+  FeatureLink ../features/hasDirectives.html
+  Supported <span class="hasFeature">✓</span>
+  Token 
+  Example
+   coding: UTF-8
+ row
+  Feature Here Document
+  FeatureLink ../features/hasHereDocs.html
+  Supported <span class="hasFeature">✓</span>
+  Token 
+  Example
+ row
+  Feature Generators
+  FeatureLink ../features/hasGenerators.html
+  Supported <span class="hasFeature">✓</span>
+  Token 
+  Example
+   # Generator from an Enumerator object
+   chars = Enumerator.new(['A', 'B', 'C', 'Z'])
+   
+   4.times { puts chars.next }
+   
+   # Generator from a block
+   count = Enumerator.new do |yielder|
+     i = 0
+     loop { yielder.yield i += 1 }
+   end
+   
+   100.times { puts count.next }
+ row
+  Feature Garbage Collection
+  FeatureLink ../features/hasGarbageCollection.html
+  Supported <span class="hasFeature">✓</span>
+  Token 
+  Example
+ row
+  Feature MultiLine Comments
+  FeatureLink ../features/hasMultiLineComments.html
+  Supported <span class="hasFeature">✓</span>
+  Token =begin =end
+  Example
+   =begin
+   A comment.
+   =end
+ row
+  Feature Comments
+  FeatureLink ../features/hasComments.html
+  Supported <span class="hasFeature">✓</span>
+  Token 
+  Example
+   # This is a single line comment.
+ row
+  Feature Classes
+  FeatureLink ../features/hasClasses.html
+  Supported <span class="hasFeature">✓</span>
+  Token 
+  Example
+   # A tiny Person class in Ruby:
+   class Person
+     attr_accessor :name, :age, :   # getter and setter methods
+     def initialize(name, age)
+       @name = name
+       @age = age
+     end
+   end
+   
+   # Create a new Person object:
+   person = Person.new("John", 30)
+   puts person.name
+   puts person.age
+   
+   # Change the age of the person:
+   person.age = 35
+   puts person.age
+ row
+  Feature Constants
+  FeatureLink ../features/hasConstants.html
+  Supported <span class="hasFeature">✓</span>
+  Token 
+  Example
+   # Constants in Ruby being with a capital letter. Will throw a warning or error, depending on runtime settings.
+   Name = "John"  
+   # Not a constant
+   name = "John"
+ row
+  Feature Exceptions
+  FeatureLink ../features/hasExceptions.html
+  Supported <span class="hasFeature">✓</span>
+  Token 
+  Example
+   def hello
+    puts "Hello, World!"
+      # start an exception handler
+      begin
+          raise "This is an exception"
+      rescue => e
+          puts "Exception caught: #{e}"
+      end
+    end
+   hello
+ row
+  Feature Assignment
+  FeatureLink ../features/hasAssignment.html
+  Supported <span class="hasFeature">✓</span>
+  Token 
+  Example
+   pldb = 80766866
+ row
+  Feature Booleans
+  FeatureLink ../features/hasBooleans.html
+  Supported <span class="hasFeature">✓</span>
+  Token true false
+  Example
+ row
+  Feature Integers
+  FeatureLink ../features/hasIntegers.html
+  Supported <span class="hasFeature">✓</span>
+  Token 
+  Example
+   pldb = 80766866
+ row
+  Feature Duck Typing
+  FeatureLink ../features/hasDuckTyping.html
+  Supported <span class="hasFeature">✓</span>
+  Token 
+  Example
+ row
+  Feature Regular Expression Syntax Sugar
+  FeatureLink ../features/hasRegularExpressionsSyntaxSugar.html
+  Supported <span class="hasFeature">✓</span>
+  Token 
+  Example
+   puts "Hello World".match(/\w/)
+ row
+  Feature Strings
+  FeatureLink ../features/hasStrings.html
+  Supported <span class="hasFeature">✓</span>
+  Token "
+  Example
+   "hello world"
+ row
+  Feature Case Insensitive Identifiers
+  FeatureLink ../features/hasCaseInsensitiveIdentifiers.html
+  Supported <span class="doesNotHaveFeature">X</span>
+  Token 
+  Example
+ row
+  Feature Semantic Indentation
+  FeatureLink ../features/hasSemanticIndentation.html
+  Supported <span class="doesNotHaveFeature">X</span>
+  Token 
+  Example
+ row
+  Feature Async Await
+  FeatureLink ../features/hasAsyncAwait.html
+  Supported <span class="doesNotHaveFeature">X</span>
+  Token 
+  Example
+ row
+  Feature Function Overloading
+  FeatureLink ../features/hasFunctionOverloading.html
+  Supported <span class="doesNotHaveFeature">X</span>
+  Token 
+  Example
+ row
+  Feature Dispose Blocks Pattern
+  FeatureLink ../features/hasDisposeBlocks.html
+  Supported <span class="doesNotHaveFeature">X</span>
+  Token 
+  Example
+ row
+  Feature Dependent types
+  FeatureLink ../features/hasDependentTypes.html
+  Supported <span class="doesNotHaveFeature">X</span>
+  Token 
+  Example
+ row
+  Feature Enums
+  FeatureLink ../features/hasEnums.html
+  Supported <span class="doesNotHaveFeature">X</span>
+  Token 
+  Example
+ row
+  Feature Variable Substitution Syntax
+  FeatureLink ../features/hasVariableSubstitutionSyntax.html
+  Supported <span class="doesNotHaveFeature">X</span>
+  Token 
+  Example
+
+## Books about Ruby from ISBNdb
+pipeTable
+ title|titleLink|authors|year|publisher
+ Computer Science Programming Basics in Ruby: Exploring Concepts and Curriculum with Ruby|https://isbndb.com/book/9781449355975|Frieder, Ophir and Frieder, Gideon and Grossman, David|2013|O'Reilly Media
+ The Ruby Programming Language: Everything You Need to Know|https://isbndb.com/book/9780596516178|Flanagan, David and Matsumoto, Yukihiro|2008|O'Reilly Media
+ Ruby Programming (Introduction to Programming)|https://isbndb.com/book/9781111222376|Ford, Jr.  Jerry Lee|2010|Cengage Learning
+ Programming Ruby 1.9: The Pragmatic Programmers' Guide (Facets of Ruby)|https://isbndb.com/book/9781934356081|Thomas, Dave and Fowler, Chad and Hunt, Andy|2009|Pragmatic Bookshelf
+ Ruby Under a Microscope: An Illustrated Guide to Ruby Internals|https://isbndb.com/book/9781593275273|Shaughnessy, Pat|2013|No Starch Press
+ Enterprise Integration with Ruby|https://isbndb.com/book/9780976694069|Schmidt, Maik|2006|Pragmatic Bookshelf
+ Practical Ruby Projects: Ideas for the Eclectic Programmer (Books for Professionals by Professionals)|https://isbndb.com/book/9781590599112|Cyll, Christopher|2007|Apress
+ Beginning Ruby on Rails|https://isbndb.com/book/9780470069158|Holzner, Steve|2006|Wrox
+ Ruby Developers Guide|https://isbndb.com/book/9781928994640|Syngress and Feldt, Robert and Johnson, Lyle and Ortiz, Jonothon|2002|Syngress
+ Ruby on Rails For Dummies|https://isbndb.com/book/9780470081204|Burd, Barry|2007|For Dummies
+ Sams Teach Yourself Ruby in 21 Days|https://isbndb.com/book/9780672322525|Slagell, Mark|2002|Sams Publishing
+ Making Use of Ruby w/WS|https://isbndb.com/book/9780471219729|Mahadevan, Suresh|2002|John Wiley & Sons
+ Build Your Own Ruby on Rails Web Applications|https://isbndb.com/book/9780975841952|Lenz, Patrick|2007|SitePoint
+ Distributed Programming with Ruby|https://isbndb.com/book/9780321638366|Bates, Mark|2009|AddisonWesley Professional
+ Metaprogramming Ruby: Program Like the Ruby Pros|https://isbndb.com/book/9781934356470|Paolo Perrotta|2010|Pragmatic Bookshelf
+ Ruby on Rails Tutorial|https://isbndb.com/book/9780134077789|Michael Hartl|20150424|Pearson Technology Group
+ Practical Object-Oriented Design in Ruby: An Agile Primer (Addison-Wesley Professional Ruby Series)|https://isbndb.com/book/9780132930888|Metz, Sandi|2012|Addison-Wesley Professional
+ Ruby Phrasebook|https://isbndb.com/book/9780672328978|Clinton, Jason D|2008|Addison-Wesley Professional
+ Ruby on Rails 3 Tutorial: Learn Rails by Example (Livelessons)|https://isbndb.com/book/9780132492546|Hartl, Michael|2011|Addison-Wesley Professional
+ MacRuby: The Definitive Guide: Ruby and Cocoa on OS X|https://isbndb.com/book/9781449380373|Aimonetti, Matt|2011|O'Reilly Media
+ Ruby Quick Syntax Reference|https://isbndb.com/book/9781430265696|Clements, Matt|2014|Apress
+ Ruby by Example: Concepts and Code|https://isbndb.com/book/9781593271602|Baird, Kevin C.|2007|No Starch Press
+ Ruby on Rails for Microsoft Developers|https://isbndb.com/book/9780470374955|Cangiano, Antonio|2009|Wrox
+ Beginning Ruby 3: From Beginner to Pro|https://isbndb.com/book/9781484263235|DiLeo, Carleton|2020|Apress
+ Beginning Ruby|https://isbndb.com/book/9781430223641|Peter Cooper|20170111|Springer Nature
+ Beginning Ruby|https://isbndb.com/book/9781430203643|Kenneth Cooper|20070501|Springer Nature
+ Ruby For Beginners: Your Guide To Easily Learn Ruby Programming in 7 days|https://isbndb.com/book/9781521367704|Academy, iCode|2017|Independently published
+ Practical Ruby for System Administration|https://isbndb.com/book/9781430201946|Andre Ben-Hamou|20071015|Springer Nature
+ Using Ruby On Rails For Web Development, Introduction Guide To Ruby On Rails: An Extensive Roundup Of 100 Ultimate Resources|https://isbndb.com/book/9781921573125|Jacob White|2008|Emereo Pty Ltd
+ Polished Ruby Programming: Build better software with more intuitive, maintainable, scalable, and high-performance Ruby code|https://isbndb.com/book/9781801072724|Evans, Jeremy|2021|Packt Publishing
+ Design Patterns in Ruby (Addison-Wesley Professional Ruby Series)|https://isbndb.com/book/9780132702508|Olsen, Russ|2007|Addison-Wesley Professional
+ Practical Object-Oriented Design: An Agile Primer Using Ruby|https://isbndb.com/book/9780134456478|Metz, Sandi|2018|Addison-Wesley Professional
+ Design Patterns in Ruby|https://isbndb.com/book/9780321490452|Olsen, Russ|2007|Addison-Wesley Professional
+ Ruby on Rails Tutorial|https://isbndb.com/book/9780136702696|Michael, Hartl|2020|Addison-Wesley Professional
+ Ruby Cookbook: Recipes for Object-Oriented Scripting|https://isbndb.com/book/9781449373719|Carlson, Lucas and Richardson, Leonard|2015|O'Reilly Media
+ Eloquent Ruby (Addison-Wesley Professional Ruby Series)|https://isbndb.com/book/9780321584106|Olsen, Russ|2011|Addison-Wesley Professional
+ Pro Active Record: Databases with Ruby and Rails (Expert's Voice)|https://isbndb.com/book/9781590598474|Pytel, Chad and Yurek, Jonathan and Marshall, Kevin|2007|Apress
+ Rails AntiPatterns: Best Practice Ruby on Rails Refactoring (Addison-Wesley Professional Ruby Series)|https://isbndb.com/book/9780132660068|Pytel, Chad and Saleh, Tammer|2010|Addison-Wesley Professional
+ Programming Ruby 1.9 & 2.0: The Pragmatic Programmers' Guide (The Facets of Ruby)|https://isbndb.com/book/9781937785499|Thomas, Dave and Hunt, Andy and Fowler, Chad|2013|Pragmatic Bookshelf
+ Intro To Ruby Programming: Beginners Guide Series|https://isbndb.com/book/9780692714416|Elder, John|2016-05-10T00:00:01Z|Codemy.com
+ Ruby Way, The: Solutions and Techniques in Ruby Programming (Addison-Wesley Professional Ruby Series)|https://isbndb.com/book/9780321714633|Fulton, Hal and Arko, André|2015-03-02T00:00:01Z|Addison-Wesley Professional
+ Metaprogramming Ruby 2: Program Like the Ruby Pros (Facets of Ruby)|https://isbndb.com/book/9781941222126|Perrotta, Paolo|2014|Pragmatic Bookshelf
+ Ruby Wizardry: An Introduction to Programming for Kids|https://isbndb.com/book/9781593275662|Weinstein, Eric|2014|No Starch Press
+ Effective Ruby: 48 Specific Ways to Write Better Ruby (Effective Software Development Series)|https://isbndb.com/book/9780133847062|Jones, Peter J.|2014|Addison-Wesley Professional
+ Ruby Way, The: Solutions and Techniques in Ruby Programming (Addison-Wesley Professional Ruby Series)|https://isbndb.com/book/9780132480376|Fulton, Hal and Arko, André|2015|Addison-Wesley Professional
+ Ruby on Rails Tutorial: Learn Web Development with Rails (Addison-Wesley Professional Ruby Series)|https://isbndb.com/book/9780134597508|Hartl, Michael|2016|Addison-Wesley Professional
+ Ruby Programming (Introduction to Programming)|https://isbndb.com/book/9781133172567|Ford Jr., Jerry Lee|2010|Cengage Learning
+ Learn Ruby the Hard Way: A Simple and Idiomatic Introduction to the Imaginative World Of Computational Thinking with Code (Zed Shaw's Hard Way Series)|https://isbndb.com/book/9780133135633|Shaw, Zed A.|2014|Addison-Wesley Professional
+ Ruby: Learn Ruby in 24 Hours or Less - A Beginner’s Guide To Learning Ruby Programming Now (Ruby, Ruby Programming, Ruby Course)|https://isbndb.com/book/9781533191618|Dwight, Robert|2016|CreateSpace Independent Publishing Platform
+ Ruby Beginner's Crash Course: Beginner's Guide to Ruby Programming, Ruby On Rails & Rails Programming|https://isbndb.com/book/9781777942809|Start Guides, Quick|2021|AND Publishing
+ The Well-Grounded Rubyist: Covers Ruby 1.9.1|https://isbndb.com/book/9781933988658|David A. Black|2009|Manning Publications
+ Learn Rails 6: Accelerated Web Development with Ruby on Rails|https://isbndb.com/book/9781484260258|Notodikromo, Adam|2020|Apress
+ Ruby Programming: Basics to Advanced Concepts|https://isbndb.com/book/9781984935014|Andahi, Alban|2018-02-04T00:00:01Z|CreateSpace Independent Publishing Platform
+ Ruby by Example: Concepts and Code|https://isbndb.com/book/9781593271480|Baird, Kevin C.|2007|No Starch Press
+ Ruby on Rails 3 Tutorial: Learn Rails by Example (Addison-Wesley Professional Ruby Series)|https://isbndb.com/book/9780132564199|Hartl, Michael|2010|Addison-Wesley Professional
+ The Ruby Workshop: Develop powerful applications by writing clean, expressive code with Ruby and Ruby on Rails|https://isbndb.com/book/9781838648879|Paul, Akshat and Philips, Peter and Szabó, Dániel and Wallace, Cheyne|2019|Packt Publishing
+ Ruby Cookbook (Cookbooks (O'Reilly))|https://isbndb.com/book/9780596523695|Carlson, Lucas and Richardson, Leonard|2006|O'Reilly Media
+ Ruby In A Nutshell|https://isbndb.com/book/9780596002145|Yukihiro Matsumoto|2001|O'Reilly Media
+ Learn Rails 5.2: Accelerated Web Development with Ruby on Rails|https://isbndb.com/book/9781484234891|Wintermeyer, Stefan|2018|Apress
+ RUBY Beginner's Crash Course: Ruby for Beginner's Guide to Ruby Programming, Ruby On Rails & Rails Programming (Ruby, Operating Systems, Programming) (Volume 1)|https://isbndb.com/book/9781518721649|Guides, Quick Start|2015-10-21T00:00:01Z|CreateSpace Independent Publishing Platform
+ Distributed Programming with Ruby (Addison-Wesley Professional Ruby Series)|https://isbndb.com/book/9780321699930|Bates, Mark|2009|Addison-Wesley Professional
+ Head First Rails: A Learner's Companion to Ruby on Rails|https://isbndb.com/book/9780596515775|Griffiths, David|2009|O'Reilly Media
+ Ruby Best Practices: Increase Your Productivity - Write Better Code|https://isbndb.com/book/9780596523008|Brown, Gregory T|2009|O'Reilly Media
+ The Ruby Way, Second Edition: Solutions and Techniques in Ruby Programming (2nd Edition)|https://isbndb.com/book/9780672328848|Fulton, Hal|2006|Addison-Wesley Professional
+ Ruby for Rails: Ruby Techniques for Rails Developers|https://isbndb.com/book/9781932394696|David Black|2006|Manning Publications
+
+## Publications about Ruby from Semantic Scholar
+pipeTable
+ title|titleLink|authors|year|citations|influentialCitations
+ BioRuby: bioinformatics software for the Ruby programming language|https://www.semanticscholar.org/paper/6806fe4a47310f6961cdaeca17fca6aed513d33f|Naohisa Goto and P. Prins and M. Nakao and R. Bonnal and J. Aerts and Toshiaki Katayama|2010|186|10
+ Programming ruby|https://www.semanticscholar.org/paper/07cf5fc8f6a8cd4fdc419e541042297ff32f7c60|Parasuram Anantharam|2001|40|5
+ FSelector: a Ruby gem for feature selection|https://www.semanticscholar.org/paper/9f44aa75bf8d4bd691ad30a31d4ae836774d7b3d|Tiejun Cheng and Yanli Wang and S. Bryant|2012|35|5
+ A little language for surveys: constructing an internal DSL in Ruby|https://www.semanticscholar.org/paper/735dcf869561bd8c1cbcd51ab04a838ef79a1e9e|H. C. Cunningham|2008|31|1
+ Feature-oriented programming with Ruby|https://www.semanticscholar.org/paper/0a5e41f0b40a14c679edf1c45742e5d40e34de9e|S. Günther and Sagar Sunkle|2009|27|1
+ The ruby intermediate language|https://www.semanticscholar.org/paper/0b6b91b17263b8b275514c19d6d74606836dcd39|Michael Furr and Jong-hoon An and J. Foster and M. Hicks|2009|25|4
+ FlowR: aspect oriented programming for information flow control in ruby|https://www.semanticscholar.org/paper/88725c499c0b425fcaaf36de32cdd287386a9870|Thomas Pasquier and J. Bacon and B. Shand|2014|17|1
+ αRby - An Embedding of Alloy in Ruby|https://www.semanticscholar.org/paper/c6709b3b8420194bacc64e8f1bd1149cbbeaf710|Aleksandar Milicevic and I. Efrati and D. Jackson|2014|16|3
+ A machine vision extension for the Ruby programming language|https://www.semanticscholar.org/paper/a0ea79afc0f997062f6305877ec38684fe9c33b6|J. Wedekind and B. Amavasai and K. Dutton and M. Boissenin|2008|7|0
+ Language design and implementation using ruby and the interpreter pattern|https://www.semanticscholar.org/paper/602a908e10c1e586a5962823bbe7a3b749d822fb|Ariel Ortiz|2008|4|0
+ Specializing ropes for ruby|https://www.semanticscholar.org/paper/6fcf92f1bf8a95512a01c0fef1236ac2610299db|Kevin Menard and Chris Seaton and Benoit Daloze|2018|2|0
+ Let’s Get It Started: Installing Ruby|https://www.semanticscholar.org/paper/56bfb401cd9a9183005b3aae84ec7ed4c8c6b49f|Pete Cooper|2020|1|0
+ A machine vision extension to the Ruby programming language using OpenCV and FFI|https://www.semanticscholar.org/paper/07e2461bccbd4a17609d022518a82bdba691c21d|A. Marburg and M. Hayes and A. Bainbridge-Smith|2013|1|0
+
+keyboardNav fortran.html mysql.html
+
+import ../footer.scroll

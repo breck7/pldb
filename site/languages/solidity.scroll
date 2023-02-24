@@ -1,0 +1,259 @@
+import header.scroll
+
+title Solidity
+
+title Solidity - Contract language
+ hidden
+
+html
+ <a class="prevLang" href="regex.html">&lt;</a>
+ <a class="nextLang" href="verilog.html">&gt;</a>
+
+viewSourceUrl https://github.com/breck7/pldb/blob/main/database/things/solidity.pldb
+
+startColumns 4
+
+html <div class="quickLinks"><a href="http://github.com/ethereum/solidity"><svg role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12.7166 3.79541C12.2835 3.49716 11.7165 3.49716 11.2834 3.79541L4.14336 8.7121C3.81027 8.94146 3.60747 9.31108 3.59247 9.70797C3.54064 11.0799 3.4857 13.4824 3.63658 15.1877C3.7504 16.4742 4.05336 18.1747 4.29944 19.4256C4.41371 20.0066 4.91937 20.4284 5.52037 20.4284H8.84433C8.98594 20.4284 9.10074 20.3111 9.10074 20.1665V15.9754C9.10074 14.9627 9.90433 14.1417 10.8956 14.1417H13.4091C14.4004 14.1417 15.204 14.9627 15.204 15.9754V20.1665C15.204 20.3111 15.3188 20.4284 15.4604 20.4284H18.4796C19.0806 20.4284 19.5863 20.0066 19.7006 19.4256C19.9466 18.1747 20.2496 16.4742 20.3634 15.1877C20.5143 13.4824 20.4594 11.0799 20.4075 9.70797C20.3925 9.31108 20.1897 8.94146 19.8566 8.7121L12.7166 3.79541ZM10.4235 2.49217C11.3764 1.83602 12.6236 1.83602 13.5765 2.49217L20.7165 7.40886C21.4457 7.91098 21.9104 8.73651 21.9448 9.64736C21.9966 11.0178 22.0564 13.5119 21.8956 15.3292C21.7738 16.7067 21.4561 18.4786 21.2089 19.7353C20.9461 21.0711 19.7924 22.0001 18.4796 22.0001H15.4604C14.4691 22.0001 13.6655 21.1791 13.6655 20.1665V15.9754C13.6655 15.8307 13.5507 15.7134 13.4091 15.7134H10.8956C10.754 15.7134 10.6392 15.8307 10.6392 15.9754V20.1665C10.6392 21.1791 9.83561 22.0001 8.84433 22.0001H5.52037C4.20761 22.0001 3.05389 21.0711 2.79113 19.7353C2.54392 18.4786 2.22624 16.7067 2.10437 15.3292C1.94358 13.5119 2.00338 11.0178 2.05515 9.64736C2.08957 8.73652 2.55427 7.91098 3.28346 7.40886L10.4235 2.49217Z"/></svg></a> <a href="https://github.com/ethereum/solidity"><svg role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg></a> <a href="https://en.wikipedia.org/wiki/Solidity"><svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="98.05px" height="98.05px" viewBox="0 0 98.05 98.05" style="enable-background:new 0 0 98.05 98.05;" xml:space="preserve"><path d="M98.023,17.465l-19.584-0.056c-0.004,0.711-0.006,1.563-0.017,2.121c1.664,0.039,5.922,0.822,7.257,4.327L66.92,67.155 c-0.919-2.149-9.643-21.528-10.639-24.02l9.072-18.818c1.873-2.863,5.455-4.709,8.918-4.843l-0.01-1.968L55.42,17.489 c-0.045,0.499,0.001,1.548-0.068,2.069c5.315,0.144,7.215,1.334,5.941,4.508c-2.102,4.776-6.51,13.824-7.372,15.475 c-2.696-5.635-4.41-9.972-7.345-16.064c-1.266-2.823,1.529-3.922,4.485-4.004v-1.981l-21.82-0.067 c0.016,0.93-0.021,1.451-0.021,2.131c3.041,0.046,6.988,0.371,8.562,3.019c2.087,4.063,9.044,20.194,11.149,24.514 c-2.685,5.153-9.207,17.341-11.544,21.913c-3.348-7.43-15.732-36.689-19.232-44.241c-1.304-3.218,3.732-5.077,6.646-5.213 l0.019-2.148L0,17.398c0.005,0.646,0.027,1.71,0.029,2.187c4.025-0.037,9.908,6.573,11.588,10.683 c7.244,16.811,14.719,33.524,21.928,50.349c0.002,0.029,2.256,0.059,2.281,0.008c4.717-9.653,10.229-19.797,15.206-29.56 L63.588,80.64c0.005,0.004,2.082,0.016,2.093,0.007c7.962-18.196,19.892-46.118,23.794-54.933c1.588-3.767,4.245-6.064,8.543-6.194 l0.032-1.956L98.023,17.465z"/></svg></a> <a href="https://twitter.com/solidity_lang"><svg role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M23.953 4.57a10 10 0 01-2.825.775 4.958 4.958 0 002.163-2.723c-.951.555-2.005.959-3.127 1.184a4.92 4.92 0 00-8.384 4.482C7.69 8.095 4.067 6.13 1.64 3.162a4.822 4.822 0 00-.666 2.475c0 1.71.87 3.213 2.188 4.096a4.904 4.904 0 01-2.228-.616v.06a4.923 4.923 0 003.946 4.827 4.996 4.996 0 01-2.212.085 4.936 4.936 0 004.604 3.417 9.867 9.867 0 01-6.102 2.105c-.39 0-.779-.023-1.17-.067a13.995 13.995 0 007.557 2.209c9.053 0 13.998-7.496 13.998-13.985 0-.21 0-.42-.015-.63A9.935 9.935 0 0024 4.59z"/></svg></a></div>
+
+* Solidity is a <a href="../lists/languages.html?filter=contractLanguage">contract language</a> created in 2014 by Christian Reitwiessner and Alex Beregszaszi.
+ link ../lists/languages.html?filter=2014 2014
+ link ../lists/creators.html#christianReitwiessner Christian Reitwiessner
+ link ../lists/creators.html#alexBeregszaszi Alex Beregszaszi
+
+kpiTable
+ #57 <span title="TotalRank: 211 Jobs: 46 Users: 57 Facts: 108 Links: 271">on PLDB</span>
+ 9 Years Old
+ 31.9k <span title="Crude user estimate from a linear model.">Users</span>
+ 22 <span title="Books about or leveraging Solidity">Books</span>
+ 13 <span title="Academic publications about or leveraging Solidity">Papers</span>
+ 87k <span title="Solidity repos on GitHub.">Repos</span>
+
+* Try now: <a href="https://ethereum.github.io/browser-solidity/">Web</a>
+
+monacoEditor solidity
+ // SPDX-License-Identifier: MIT
+ pragma solidity >=0.6.0 <0.9.0;
+ 
+ contract HelloWorld {
+     function helloWorld() external pure returns (string memory) {
+         return "Hello, World!";
+     }
+ }
+
+* Solidity is a contract-oriented programming language for writing smart contracts. It is used for implementing smart contracts on various blockchain platforms. It was developed by Gavin Wood, Christian Reitwiessner, Alex Beregszaszi, Liana Husikyan, Yoichi Hirai and several former Ethereum core contributors to enable writing smart contracts on blockchain platforms such as Ethereum.. Read more on Wikipedia...
+ https://en.wikipedia.org/wiki/Solidity Read more on Wikipedia...
+
+- Solidity website
+ http://github.com/ethereum/solidity
+- Solidity Wikipedia page
+ https://en.wikipedia.org/wiki/Solidity
+- Solidity is developed on <a href="https://github.com/ethereum/solidity">GitHub</a> and has 17,321 stars
+- There are at least 87,183 Solidity repos on <a href="https://github.com/search?q=language:Solidity">GitHub</a>
+- PLDB estimates there are currently 937 job openings for Solidity programmers.
+- file extensions for Solidity include sol
+- Solidity is written in <a href="cpp.html">C++</a>
+- Solidity on Twitter
+ https://twitter.com/solidity_lang
+- The  Google BigQuery Public Dataset GitHub snapshot shows 76 users using Solidity in 78 repos on <a href="https://api.github.com/search/repositories?q=language:Solidity">GitHub</a>
+- Solidity appears in the <a href="https://www.tiobe.com/tiobe-index/">TIOBE Index</a>
+- Solidity <a href="language-server-protocol.html">LSP</a> <a href="https://github.com/CodeChain-io/solidity-language-server">implementation</a>
+- <a href="monaco.html">Monaco</a> <a href="https://github.com/microsoft/monaco-editor/tree/main/src/basic-languages/solidity">package</a> for syntax highlighting Solidity
+- <a href="pygments.html">Pygments</a> supports <a href="https://github.com/pygments/pygments/blob/master/pygments/lexers/solidity.py">syntax highlighting</a> for Solidity
+- GitHub supports <a href="https://github.com/davidhq/SublimeEthereum.git" title="The package used for syntax highlighting by GitHub Linguist.">syntax highlighting</a> for Solidity
+- Release Notes for Solidity
+ https://blog.soliditylang.org/category/releases/
+- Official Blog page for Solidity
+ https://blog.soliditylang.org/
+- Indeed.com has 937 matches for <a href="https://www.indeed.com/jobs?q=solidity developer">"solidity developer"</a>.
+- See also: (5 related languages)<a href="javascript.html">JavaScript</a>, <a href="ecmascript.html">ECMAScript</a>, <a href="visual-studio-editor.html">Visual Studio</a>, <a href="azure.html">Microsoft Azure</a>, <a href="aws.html">AWS</a>
+- HTML of this page generated by <a href="https://github.com/breck7/pldb/blob/main/code/LanguagePage.ts">LanguagePage.ts</a>
+- <a href="https://pldb.com/edit/solidity">Improve our Solidity file</a>
+
+html <br>
+
+codeWithHeader Example from the web:
+ // SPDX-License-Identifier: MIT
+ pragma solidity &gt;=0.6.0 &lt;0.9.0;
+ 
+ contract HelloWorld {
+     function helloWorld() external pure returns (string memory) {
+         return &quot;Hello, World!&quot;;
+     }
+ }
+
+codeWithHeader Example from <a href='https://godbolt.org/'>Compiler Explorer</a>:
+ // SPDX-License-Identifier: UNLICENSED
+ pragma solidity &gt;=0.4.0;
+ 
+ contract Square {
+     function square(uint32 num) public pure returns (uint32) {
+         return num * num;
+     }
+ }
+ 
+
+codeWithHeader Example from <a href='https://github.com/leachim6/hello-world/blob/main/s/Solidity.sol'>hello-world</a>:
+ pragma solidity ^0.8.9;
+ 
+ contract HelloWorld {
+     function render () public pure returns (string memory) {
+         return &#39;Hello World&#39;;
+     }
+ }
+ 
+
+codeWithHeader Example from <a href='https://en.wikipedia.org/wiki/Solidity'>Wikipedia</a>:
+ contract GavCoin
+ {
+   mapping(address=&gt;uint) balances;
+   uint constant totalCoins = 100000000000;
+ 
+   /// Endows creator of contract with 1m GAV.
+   function GavCoin(){
+       balances[msg.sender] = totalCoins;
+   }
+ 
+   /// Send $((valueInmGAV / 1000).fixed(0,3)) GAV from the account of $(message.caller.address()), to an account accessible only by $(to.address()).
+   function send(address to, uint256 valueInmGAV) {
+     if (balances[msg.sender] &gt;= valueInmGAV) {
+       balances[to] += valueInmGAV;
+       balances[msg.sender] -= valueInmGAV;
+     }
+   }
+ 
+   /// getter function for the balance
+   function balance(address who) constant returns (uint256 balanceInmGAV) {
+     balanceInmGAV = balances[who];
+   }
+ 
+ }
+
+## <a href="../lists/keywords.html?filter=solidity">Keywords</a> in Solidity
+* pragma solidity contract library using struct function modifier constructor address string bool Int Uint Byte Fixed Ufixed int int8 int16 int24 int32 int40 int48 int56 int64 int72 int80 int88 int96 int104 int112 int120 int128 int136 int144 int152 int160 int168 int176 int184 int192 int200 int208 int216 int224 int232 int240 int248 int256 uint uint8 uint16 uint24 uint32 uint40 uint48 uint56 uint64 uint72 uint80 uint88 uint96 uint104 uint112 uint120 uint128 uint136 uint144 uint152 uint160 uint168 uint176 uint184 uint192 uint200 uint208 uint216 uint224 uint232 uint240 uint248 uint256 byte bytes bytes1 bytes2 bytes3 bytes4 bytes5 bytes6 bytes7 bytes8 bytes9 bytes10 bytes11 bytes12 bytes13 bytes14 bytes15 bytes16 bytes17 bytes18 bytes19 bytes20 bytes21 bytes22 bytes23 bytes24 bytes25 bytes26 bytes27 bytes28 bytes29 bytes30 bytes31 bytes32 fixed fixed0x8 fixed0x16 fixed0x24 fixed0x32 fixed0x40 fixed0x48 fixed0x56 fixed0x64 fixed0x72 fixed0x80 fixed0x88 fixed0x96 fixed0x104 fixed0x112 fixed0x120 fixed0x128 fixed0x136 fixed0x144 fixed0x152 fixed0x160 fixed0x168 fixed0x176 fixed0x184 fixed0x192 fixed0x200 fixed0x208 fixed0x216 fixed0x224 fixed0x232 fixed0x240 fixed0x248 fixed0x256 fixed8x8 fixed8x16 fixed8x24 fixed8x32 fixed8x40 fixed8x48 fixed8x56 fixed8x64 fixed8x72 fixed8x80 fixed8x88 fixed8x96 fixed8x104 fixed8x112 fixed8x120 fixed8x128 fixed8x136 fixed8x144 fixed8x152 fixed8x160 fixed8x168 fixed8x176 fixed8x184 fixed8x192 fixed8x200 fixed8x208 fixed8x216 fixed8x224 fixed8x232 fixed8x240 fixed8x248 fixed16x8 fixed16x16 fixed16x24 fixed16x32 fixed16x40 fixed16x48 fixed16x56 fixed16x64 fixed16x72 fixed16x80 fixed16x88 fixed16x96 fixed16x104 fixed16x112 fixed16x120 fixed16x128 fixed16x136 fixed16x144 fixed16x152 fixed16x160 fixed16x168 fixed16x176 fixed16x184 fixed16x192 fixed16x200 fixed16x208 fixed16x216 fixed16x224 fixed16x232 fixed16x240 fixed24x8 fixed24x16 fixed24x24 fixed24x32 fixed24x40 fixed24x48 fixed24x56 fixed24x64 fixed24x72 fixed24x80 fixed24x88 fixed24x96 fixed24x104 fixed24x112 fixed24x120 fixed24x128 fixed24x136 fixed24x144 fixed24x152 fixed24x160 fixed24x168 fixed24x176 fixed24x184 fixed24x192 fixed24x200 fixed24x208 fixed24x216 fixed24x224 fixed24x232 fixed32x8 fixed32x16 fixed32x24 fixed32x32 fixed32x40 fixed32x48 fixed32x56 fixed32x64 fixed32x72 fixed32x80 fixed32x88 fixed32x96 fixed32x104 fixed32x112 fixed32x120 fixed32x128 fixed32x136 fixed32x144 fixed32x152 fixed32x160 fixed32x168 fixed32x176 fixed32x184 fixed32x192 fixed32x200 fixed32x208 fixed32x216 fixed32x224 fixed40x8 fixed40x16 fixed40x24 fixed40x32 fixed40x40 fixed40x48 fixed40x56 fixed40x64 fixed40x72 fixed40x80 fixed40x88 fixed40x96 fixed40x104 fixed40x112 fixed40x120 fixed40x128 fixed40x136 fixed40x144 fixed40x152 fixed40x160 fixed40x168 fixed40x176 fixed40x184 fixed40x192 fixed40x200 fixed40x208 fixed40x216 fixed48x8 fixed48x16 fixed48x24 fixed48x32 fixed48x40 fixed48x48 fixed48x56 fixed48x64 fixed48x72 fixed48x80 fixed48x88 fixed48x96 fixed48x104 fixed48x112 fixed48x120 fixed48x128 fixed48x136 fixed48x144 fixed48x152 fixed48x160 fixed48x168 fixed48x176 fixed48x184 fixed48x192 fixed48x200 fixed48x208 fixed56x8 fixed56x16 fixed56x24 fixed56x32 fixed56x40 fixed56x48 fixed56x56 fixed56x64 fixed56x72 fixed56x80 fixed56x88 fixed56x96 fixed56x104 fixed56x112 fixed56x120 fixed56x128 fixed56x136 fixed56x144 fixed56x152 fixed56x160 fixed56x168 fixed56x176 fixed56x184 fixed56x192 fixed56x200 fixed64x8 fixed64x16 fixed64x24 fixed64x32 fixed64x40 fixed64x48 fixed64x56 fixed64x64 fixed64x72 fixed64x80 fixed64x88 fixed64x96 fixed64x104 fixed64x112 fixed64x120 fixed64x128 fixed64x136 fixed64x144 fixed64x152 fixed64x160 fixed64x168 fixed64x176 fixed64x184 fixed64x192 fixed72x8 fixed72x16 fixed72x24 fixed72x32 fixed72x40 fixed72x48 fixed72x56 fixed72x64 fixed72x72 fixed72x80 fixed72x88 fixed72x96 fixed72x104 fixed72x112 fixed72x120 fixed72x128 fixed72x136 fixed72x144 fixed72x152 fixed72x160 fixed72x168 fixed72x176 fixed72x184 fixed80x8 fixed80x16 fixed80x24 fixed80x32 fixed80x40 fixed80x48 fixed80x56 fixed80x64 fixed80x72 fixed80x80 fixed80x88 fixed80x96 fixed80x104 fixed80x112 fixed80x120 fixed80x128 fixed80x136 fixed80x144 fixed80x152 fixed80x160 fixed80x168 fixed80x176 fixed88x8 fixed88x16 fixed88x24 fixed88x32 fixed88x40 fixed88x48 fixed88x56 fixed88x64 fixed88x72 fixed88x80 fixed88x88 fixed88x96 fixed88x104 fixed88x112 fixed88x120 fixed88x128 fixed88x136 fixed88x144 fixed88x152 fixed88x160 fixed88x168 fixed96x8 fixed96x16 fixed96x24 fixed96x32 fixed96x40 fixed96x48 fixed96x56 fixed96x64 fixed96x72 fixed96x80 fixed96x88 fixed96x96 fixed96x104 fixed96x112 fixed96x120 fixed96x128 fixed96x136 fixed96x144 fixed96x152 fixed96x160 fixed104x8 fixed104x16 fixed104x24 fixed104x32 fixed104x40 fixed104x48 fixed104x56 fixed104x64 fixed104x72 fixed104x80 fixed104x88 fixed104x96 fixed104x104 fixed104x112 fixed104x120 fixed104x128 fixed104x136 fixed104x144 fixed104x152 fixed112x8 fixed112x16 fixed112x24 fixed112x32 fixed112x40 fixed112x48 fixed112x56 fixed112x64 fixed112x72 fixed112x80 fixed112x88 fixed112x96 fixed112x104 fixed112x112 fixed112x120 fixed112x128 fixed112x136 fixed112x144 fixed120x8 fixed120x16 fixed120x24 fixed120x32 fixed120x40 fixed120x48 fixed120x56 fixed120x64 fixed120x72 fixed120x80 fixed120x88 fixed120x96 fixed120x104 fixed120x112 fixed120x120 fixed120x128 fixed120x136 fixed128x8 fixed128x16 fixed128x24 fixed128x32 fixed128x40 fixed128x48 fixed128x56 fixed128x64 fixed128x72 fixed128x80 fixed128x88 fixed128x96 fixed128x104 fixed128x112 fixed128x120 fixed128x128 fixed136x8 fixed136x16 fixed136x24 fixed136x32 fixed136x40 fixed136x48 fixed136x56 fixed136x64 fixed136x72 fixed136x80 fixed136x88 fixed136x96 fixed136x104 fixed136x112 fixed136x120 fixed144x8 fixed144x16 fixed144x24 fixed144x32 fixed144x40 fixed144x48 fixed144x56 fixed144x64 fixed144x72 fixed144x80 fixed144x88 fixed144x96 fixed144x104 fixed144x112 fixed152x8 fixed152x16 fixed152x24 fixed152x32 fixed152x40 fixed152x48 fixed152x56 fixed152x64 fixed152x72 fixed152x80 fixed152x88 fixed152x96 fixed152x104 fixed160x8 fixed160x16 fixed160x24 fixed160x32 fixed160x40 fixed160x48 fixed160x56 fixed160x64 fixed160x72 fixed160x80 fixed160x88 fixed160x96 fixed168x8 fixed168x16 fixed168x24 fixed168x32 fixed168x40 fixed168x48 fixed168x56 fixed168x64 fixed168x72 fixed168x80 fixed168x88 fixed176x8 fixed176x16 fixed176x24 fixed176x32 fixed176x40 fixed176x48 fixed176x56 fixed176x64 fixed176x72 fixed176x80 fixed184x8 fixed184x16 fixed184x24 fixed184x32 fixed184x40 fixed184x48 fixed184x56 fixed184x64 fixed184x72 fixed192x8 fixed192x16 fixed192x24 fixed192x32 fixed192x40 fixed192x48 fixed192x56 fixed192x64 fixed200x8 fixed200x16 fixed200x24 fixed200x32 fixed200x40 fixed200x48 fixed200x56 fixed208x8 fixed208x16 fixed208x24 fixed208x32 fixed208x40 fixed208x48 fixed216x8 fixed216x16 fixed216x24 fixed216x32 fixed216x40 fixed224x8 fixed224x16 fixed224x24 fixed224x32 fixed232x8 fixed232x16 fixed232x24 fixed240x8 fixed240x16 fixed248x8 ufixed ufixed0x8 ufixed0x16 ufixed0x24 ufixed0x32 ufixed0x40 ufixed0x48 ufixed0x56 ufixed0x64 ufixed0x72 ufixed0x80 ufixed0x88 ufixed0x96 ufixed0x104 ufixed0x112 ufixed0x120 ufixed0x128 ufixed0x136 ufixed0x144 ufixed0x152 ufixed0x160 ufixed0x168 ufixed0x176 ufixed0x184 ufixed0x192 ufixed0x200 ufixed0x208 ufixed0x216 ufixed0x224 ufixed0x232 ufixed0x240 ufixed0x248 ufixed0x256 ufixed8x8 ufixed8x16 ufixed8x24 ufixed8x32 ufixed8x40 ufixed8x48 ufixed8x56 ufixed8x64 ufixed8x72 ufixed8x80 ufixed8x88 ufixed8x96 ufixed8x104 ufixed8x112 ufixed8x120 ufixed8x128 ufixed8x136 ufixed8x144 ufixed8x152 ufixed8x160 ufixed8x168 ufixed8x176 ufixed8x184 ufixed8x192 ufixed8x200 ufixed8x208 ufixed8x216 ufixed8x224 ufixed8x232 ufixed8x240 ufixed8x248 ufixed16x8 ufixed16x16 ufixed16x24 ufixed16x32 ufixed16x40 ufixed16x48 ufixed16x56 ufixed16x64 ufixed16x72 ufixed16x80 ufixed16x88 ufixed16x96 ufixed16x104 ufixed16x112 ufixed16x120 ufixed16x128 ufixed16x136 ufixed16x144 ufixed16x152 ufixed16x160 ufixed16x168 ufixed16x176 ufixed16x184 ufixed16x192 ufixed16x200 ufixed16x208 ufixed16x216 ufixed16x224 ufixed16x232 ufixed16x240 ufixed24x8 ufixed24x16 ufixed24x24 ufixed24x32 ufixed24x40 ufixed24x48 ufixed24x56 ufixed24x64 ufixed24x72 ufixed24x80 ufixed24x88 ufixed24x96 ufixed24x104 ufixed24x112 ufixed24x120 ufixed24x128 ufixed24x136 ufixed24x144 ufixed24x152 ufixed24x160 ufixed24x168 ufixed24x176 ufixed24x184 ufixed24x192 ufixed24x200 ufixed24x208 ufixed24x216 ufixed24x224 ufixed24x232 ufixed32x8 ufixed32x16 ufixed32x24 ufixed32x32 ufixed32x40 ufixed32x48 ufixed32x56 ufixed32x64 ufixed32x72 ufixed32x80 ufixed32x88 ufixed32x96 ufixed32x104 ufixed32x112 ufixed32x120 ufixed32x128 ufixed32x136 ufixed32x144 ufixed32x152 ufixed32x160 ufixed32x168 ufixed32x176 ufixed32x184 ufixed32x192 ufixed32x200 ufixed32x208 ufixed32x216 ufixed32x224 ufixed40x8 ufixed40x16 ufixed40x24 ufixed40x32 ufixed40x40 ufixed40x48 ufixed40x56 ufixed40x64 ufixed40x72 ufixed40x80 ufixed40x88 ufixed40x96 ufixed40x104 ufixed40x112 ufixed40x120 ufixed40x128 ufixed40x136 ufixed40x144 ufixed40x152 ufixed40x160 ufixed40x168 ufixed40x176 ufixed40x184 ufixed40x192 ufixed40x200 ufixed40x208 ufixed40x216 ufixed48x8 ufixed48x16 ufixed48x24 ufixed48x32 ufixed48x40 ufixed48x48 ufixed48x56 ufixed48x64 ufixed48x72 ufixed48x80 ufixed48x88 ufixed48x96 ufixed48x104 ufixed48x112 ufixed48x120 ufixed48x128 ufixed48x136 ufixed48x144 ufixed48x152 ufixed48x160 ufixed48x168 ufixed48x176 ufixed48x184 ufixed48x192 ufixed48x200 ufixed48x208 ufixed56x8 ufixed56x16 ufixed56x24 ufixed56x32 ufixed56x40 ufixed56x48 ufixed56x56 ufixed56x64 ufixed56x72 ufixed56x80 ufixed56x88 ufixed56x96 ufixed56x104 ufixed56x112 ufixed56x120 ufixed56x128 ufixed56x136 ufixed56x144 ufixed56x152 ufixed56x160 ufixed56x168 ufixed56x176 ufixed56x184 ufixed56x192 ufixed56x200 ufixed64x8 ufixed64x16 ufixed64x24 ufixed64x32 ufixed64x40 ufixed64x48 ufixed64x56 ufixed64x64 ufixed64x72 ufixed64x80 ufixed64x88 ufixed64x96 ufixed64x104 ufixed64x112 ufixed64x120 ufixed64x128 ufixed64x136 ufixed64x144 ufixed64x152 ufixed64x160 ufixed64x168 ufixed64x176 ufixed64x184 ufixed64x192 ufixed72x8 ufixed72x16 ufixed72x24 ufixed72x32 ufixed72x40 ufixed72x48 ufixed72x56 ufixed72x64 ufixed72x72 ufixed72x80 ufixed72x88 ufixed72x96 ufixed72x104 ufixed72x112 ufixed72x120 ufixed72x128 ufixed72x136 ufixed72x144 ufixed72x152 ufixed72x160 ufixed72x168 ufixed72x176 ufixed72x184 ufixed80x8 ufixed80x16 ufixed80x24 ufixed80x32 ufixed80x40 ufixed80x48 ufixed80x56 ufixed80x64 ufixed80x72 ufixed80x80 ufixed80x88 ufixed80x96 ufixed80x104 ufixed80x112 ufixed80x120 ufixed80x128 ufixed80x136 ufixed80x144 ufixed80x152 ufixed80x160 ufixed80x168 ufixed80x176 ufixed88x8 ufixed88x16 ufixed88x24 ufixed88x32 ufixed88x40 ufixed88x48 ufixed88x56 ufixed88x64 ufixed88x72 ufixed88x80 ufixed88x88 ufixed88x96 ufixed88x104 ufixed88x112 ufixed88x120 ufixed88x128 ufixed88x136 ufixed88x144 ufixed88x152 ufixed88x160 ufixed88x168 ufixed96x8 ufixed96x16 ufixed96x24 ufixed96x32 ufixed96x40 ufixed96x48 ufixed96x56 ufixed96x64 ufixed96x72 ufixed96x80 ufixed96x88 ufixed96x96 ufixed96x104 ufixed96x112 ufixed96x120 ufixed96x128 ufixed96x136 ufixed96x144 ufixed96x152 ufixed96x160 ufixed104x8 ufixed104x16 ufixed104x24 ufixed104x32 ufixed104x40 ufixed104x48 ufixed104x56 ufixed104x64 ufixed104x72 ufixed104x80 ufixed104x88 ufixed104x96 ufixed104x104 ufixed104x112 ufixed104x120 ufixed104x128 ufixed104x136 ufixed104x144 ufixed104x152 ufixed112x8 ufixed112x16 ufixed112x24 ufixed112x32 ufixed112x40 ufixed112x48 ufixed112x56 ufixed112x64 ufixed112x72 ufixed112x80 ufixed112x88 ufixed112x96 ufixed112x104 ufixed112x112 ufixed112x120 ufixed112x128 ufixed112x136 ufixed112x144 ufixed120x8 ufixed120x16 ufixed120x24 ufixed120x32 ufixed120x40 ufixed120x48 ufixed120x56 ufixed120x64 ufixed120x72 ufixed120x80 ufixed120x88 ufixed120x96 ufixed120x104 ufixed120x112 ufixed120x120 ufixed120x128 ufixed120x136 ufixed128x8 ufixed128x16 ufixed128x24 ufixed128x32 ufixed128x40 ufixed128x48 ufixed128x56 ufixed128x64 ufixed128x72 ufixed128x80 ufixed128x88 ufixed128x96 ufixed128x104 ufixed128x112 ufixed128x120 ufixed128x128 ufixed136x8 ufixed136x16 ufixed136x24 ufixed136x32 ufixed136x40 ufixed136x48 ufixed136x56 ufixed136x64 ufixed136x72 ufixed136x80 ufixed136x88 ufixed136x96 ufixed136x104 ufixed136x112 ufixed136x120 ufixed144x8 ufixed144x16 ufixed144x24 ufixed144x32 ufixed144x40 ufixed144x48 ufixed144x56 ufixed144x64 ufixed144x72 ufixed144x80 ufixed144x88 ufixed144x96 ufixed144x104 ufixed144x112 ufixed152x8 ufixed152x16 ufixed152x24 ufixed152x32 ufixed152x40 ufixed152x48 ufixed152x56 ufixed152x64 ufixed152x72 ufixed152x80 ufixed152x88 ufixed152x96 ufixed152x104 ufixed160x8 ufixed160x16 ufixed160x24 ufixed160x32 ufixed160x40 ufixed160x48 ufixed160x56 ufixed160x64 ufixed160x72 ufixed160x80 ufixed160x88 ufixed160x96 ufixed168x8 ufixed168x16 ufixed168x24 ufixed168x32 ufixed168x40 ufixed168x48 ufixed168x56 ufixed168x64 ufixed168x72 ufixed168x80 ufixed168x88 ufixed176x8 ufixed176x16 ufixed176x24 ufixed176x32 ufixed176x40 ufixed176x48 ufixed176x56 ufixed176x64 ufixed176x72 ufixed176x80 ufixed184x8 ufixed184x16 ufixed184x24 ufixed184x32 ufixed184x40 ufixed184x48 ufixed184x56 ufixed184x64 ufixed184x72 ufixed192x8 ufixed192x16 ufixed192x24 ufixed192x32 ufixed192x40 ufixed192x48 ufixed192x56 ufixed192x64 ufixed200x8 ufixed200x16 ufixed200x24 ufixed200x32 ufixed200x40 ufixed200x48 ufixed200x56 ufixed208x8 ufixed208x16 ufixed208x24 ufixed208x32 ufixed208x40 ufixed208x48 ufixed216x8 ufixed216x16 ufixed216x24 ufixed216x32 ufixed216x40 ufixed224x8 ufixed224x16 ufixed224x24 ufixed224x32 ufixed232x8 ufixed232x16 ufixed232x24 ufixed240x8 ufixed240x16 ufixed248x8 event enum let mapping private public external inherited payable true false var import constant if else for else for while do break continue throw returns return suicide new is this super
+
+endColumns
+
+## Language <a href="../lists/features.html">features</a>
+
+treeTable
+ row
+  Feature Conditionals
+  FeatureLink ../features/hasConditionals.html
+  Supported <span class="hasFeature">✓</span>
+  Token 
+  Example
+ row
+  Feature Access Modifiers
+  FeatureLink ../features/hasAccessModifiers.html
+  Supported <span class="hasFeature">✓</span>
+  Token 
+  Example
+ row
+  Feature Functions
+  FeatureLink ../features/hasFunctions.html
+  Supported <span class="hasFeature">✓</span>
+  Token 
+  Example
+ row
+  Feature Exceptions
+  FeatureLink ../features/hasExceptions.html
+  Supported <span class="hasFeature">✓</span>
+  Token 
+  Example
+ row
+  Feature While Loops
+  FeatureLink ../features/hasWhileLoops.html
+  Supported <span class="hasFeature">✓</span>
+  Token 
+  Example
+ row
+  Feature Booleans
+  FeatureLink ../features/hasBooleans.html
+  Supported <span class="hasFeature">✓</span>
+  Token true false
+  Example
+ row
+  Feature MultiLine Comments
+  FeatureLink ../features/hasMultiLineComments.html
+  Supported <span class="hasFeature">✓</span>
+  Token /* */
+  Example
+   /* A comment
+   */
+ row
+  Feature Strings
+  FeatureLink ../features/hasStrings.html
+  Supported <span class="hasFeature">✓</span>
+  Token '
+  Example
+ row
+  Feature Comments
+  FeatureLink ../features/hasComments.html
+  Supported <span class="hasFeature">✓</span>
+  Token 
+  Example
+   // A comment
+ row
+  Feature Line Comments
+  FeatureLink ../features/hasLineComments.html
+  Supported <span class="hasFeature">✓</span>
+  Token //
+  Example
+   // A comment
+ row
+  Feature Semantic Indentation
+  FeatureLink ../features/hasSemanticIndentation.html
+  Supported <span class="doesNotHaveFeature">X</span>
+  Token 
+  Example
+
+## Books about Solidity on goodreads
+pipeTable
+ title|titleLink|author|year|reviews|ratings|rating
+ The Solidity Programmer's Handbook|https://www.goodreads.com/search?q=The Solidity Programmer's Handbook Tony Hontzeas|Tony Hontzeas||0|0|0.0
+ Solidity Programming Essentials: A beginner's guide to build smart contracts for Ethereum and blockchain|https://www.goodreads.com/search?q=Solidity Programming Essentials: A beginner's guide to build smart contracts for Ethereum and blockchain Ritesh Modi|Ritesh Modi||1|8|3.62
+ Introducing Ethereum and Solidity: Foundations of Cryptocurrency and Blockchain Programming for Beginners|https://www.goodreads.com/search?q=Introducing Ethereum and Solidity: Foundations of Cryptocurrency and Blockchain Programming for Beginners Chris Dannen|Chris Dannen||15|110|3.41
+ Ethereum Developer: Learn Solidity From Scratch|https://www.goodreads.com/search?q=Ethereum Developer: Learn Solidity From Scratch Merunas Grincalaitis|Merunas Grincalaitis||0|2|4.50
+ SOLIDITY AND ETHEREUM: Mining and Programming of Blockchain of 2017|https://www.goodreads.com/search?q=SOLIDITY AND ETHEREUM: Mining and Programming of Blockchain of 2017 Michael Bitman|Michael Bitman||0|1|5.00
+ The Essentials of Smart Contract Development for Solidity Developers|https://www.goodreads.com/search?q=The Essentials of Smart Contract Development for Solidity Developers Seungwon Go|Seungwon Go||0|0|0.0
+
+## Books about Solidity from ISBNdb
+pipeTable
+ title|titleLink|authors|year|publisher
+ Mastering Blockchain Programming with Solidity: Write production-ready smart contracts for Ethereum blockchain with Solidity|https://isbndb.com/book/9781839218262|Chittoda, Jitendra|2019|Packt Publishing
+ Building Blockchain Projects: Building decentralized Blockchain applications with Ethereum and Solidity|https://isbndb.com/book/9781787125339|Prusty, Narayan|2017|Packt Publishing
+ Mastering Blockchain Programming with Solidity: Write production-ready smart contracts for Ethereum blockchain with Solidity|https://isbndb.com/book/9781839218637|Chittoda, Jitendra|2019|Packt Publishing
+ Building Games with Ethereum Smart Contracts: Intermediate Projects for Solidity Developers|https://isbndb.com/book/9781484234921|Iyer, Kedar and Dannen, Chris|2018|Apress
+ Solidity Programming Essentials: A beginner's guide to build smart contracts for Ethereum and blockchain|https://isbndb.com/book/9781788838375|Modi, Ritesh|2018|Packt Publishing
+ Ethereum Smart Contract Development: Build blockchain-based decentralized applications using solidity|https://isbndb.com/book/9781788472623|Mukhopadhyay, Mayukh|2018|Packt Publishing
+ Smart Contract Development with Solidity and Ethereum: Building Smart Contracts with the Azure Blockchain (English Edition)|https://isbndb.com/book/9789388511919|Mittal, Akhil|2020|BPB Publications
+ Solidity Programming Essentials: A beginner's guide to build smart contracts for Ethereum and blockchain|https://isbndb.com/book/9781788831383|Modi, Ritesh|2018|Packt Publishing
+ Blockchain and Ethereum Smart Contract Solution Development: Dapp Programming with Solidity|https://isbndb.com/book/9781484281635|Zhang, Weijia and Anand, Tej|2022|Apress
+ Solidity Programming Language 101: Beginner Guide|https://isbndb.com/book/9781719883405|Raja, Ismail and Mohamed, Fazith|2018|Independently published
+ Solidity Programming Essentials: A guide to building smart contracts and tokens using the widely used Solidity language, 2nd Edition|https://isbndb.com/book/9781803231181|Modi, Ritesh|2022|Packt Publishing
+ Hands-on Smart Contract Development With Solidity And Ethereum|https://isbndb.com/book/9781492045236|Kevin Solorio and Randall Kanna and David H. Hoover|2019|O'reilly Media
+ Solidity Programming: A Beginner's Guide to Building Ethereum and Blockchain Smart Contracts(Chinese Edition)|https://isbndb.com/book/9787111616009|[ YIN DU ] LI TE SHEN · MO DI ( Ritesh , Modi ) ZHU|2019|Mechanical Industry Press
+ Solidity Programming Essentials|https://isbndb.com/book/9781803234793|Ritesh Modi|20220610|Packt Publishing
+ Ethereum Smart Contract Development in Solidity|https://isbndb.com/book/9789811562181|Gavin Zheng; Longxiang Gao; Liqun Huang; Jian Guan|20200831|Springer Nature
+ Hands-On Smart Contract Development with Solidity and Ethereum|https://isbndb.com/book/9781492045212|Kevin  Solorio; Randall Kanna; David H. Hoover|20191125|O'Reilly Media, Inc.
+
+## Publications about Solidity from Semantic Scholar
+pipeTable
+ title|titleLink|authors|year|citations|influentialCitations
+ Smart contracts: security patterns in the ethereum ecosystem and solidity|https://www.semanticscholar.org/paper/7d7ce972902c66f4a506c7f35f13aaba40a58880|Maximilian Wöhrer and U. Zdun|2018|178|13
+ Lolisa: Formal Syntax and Semantics for a Subset of the Solidity Programming Language|https://www.semanticscholar.org/paper/129c3bd87981c6bc0111535b9519fb876a6d9c48|Zheng Yang and Hang Lei|2018|29|1
+ Towards Verification of Ethereum Smart Contracts: A Formalization of Core of Solidity|https://www.semanticscholar.org/paper/f1fc26e258271ce34cf4279f6bdb9800f208edc4|Jakub Zakrzewski|2018|25|0
+ Semantic Understanding of Smart Contracts: Executable Operational Semantics of Solidity|https://www.semanticscholar.org/paper/0a8388d08f03018eeb471bd5455c8abaa03d6763|Jiao Jiao and Shuanglong Kan and Shang-Wei Lin and D. Sanán and Yang Liu and Jun Sun|2020|20|2
+ SMT-Friendly Formalization of the Solidity Memory Model|https://www.semanticscholar.org/paper/50babffb567b68fdfcd33d8429c177fb2dc644d6|Á. Hajdu and Dejan Jovanovic|2020|16|1
+ Degree Validation Application Using Solidity and Ethereum Blockchain|https://www.semanticscholar.org/paper/a53fb00dc5a8b8e35be98bcc63d935850f83f04f|C. BouSaba and Ethan Anderson|2019|5|1
+ Deviant: A Mutation Testing Tool for Solidity Smart Contracts|https://www.semanticscholar.org/paper/268fe44b85113a74863d4a0fdb2f9374a2bba445|Patrick Chapman and Dianxiang Xu and Lin Deng and Yin Xiong|2019|4|0
+ Gap between Theory and Practice: An Empirical Study of Security Patches in Solidity|https://www.semanticscholar.org/paper/9dcd7b3836935d81f00c1d5462b716495ded76b6|Sungjae Hwang and S. Ryu|2020|4|0
+ Modularizing Cross-Cutting Concerns with Aspect-Oriented Extensions for Solidity|https://www.semanticscholar.org/paper/35f732815e102f612e962bfa8f4d20dfb868997b|Chien-Che Hung and Kung Chen and Chun-Feng Liao|2019|3|1
+ PASO: A Web-Based Parser for Solidity Language Analysis|https://www.semanticscholar.org/paper/39d8fb3b837c0baff2e56341b93f4ac3d3ae9182|Giuseppe Antonio Pierro and R. Tonelli|2020|3|0
+ A New Approach to Prevent Reentrant Attack in Solidity Smart Contracts|https://www.semanticscholar.org/paper/af8e33b8c5bc0645c3dea27af95deecb4befe7d7|C. Dong and Yuanhong Li and Liang Tan|2019|2|0
+ Programming Smart Contracts in Ethereum Blockchain using Solidity|https://www.semanticscholar.org/paper/bebefcf6281e90d91a057752ab55c07c81b90d99|Debasis Bhattacharya and M. Canul and S. Knight and M. Azhar and Rajiv Malkan|2019|2|0
+ Basic Solidity Programming|https://www.semanticscholar.org/paper/f44c815df713192f26213201fe5b12696e2c4f41|Debajani Mohanty|2018|1|0
+
+keyboardNav regex.html verilog.html
+
+import ../footer.scroll

@@ -1,0 +1,266 @@
+import header.scroll
+
+title AspectJ
+
+title AspectJ - Programming language
+ hidden
+
+html
+ <a class="prevLang" href="chrysalisp.html">&lt;</a>
+ <a class="nextLang" href="setl.html">&gt;</a>
+
+viewSourceUrl https://github.com/breck7/pldb/blob/main/database/things/aspectj.pldb
+
+startColumns 4
+
+html <div class="quickLinks"><a href="http://www.eclipse.org/aspectj/"><svg role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12.7166 3.79541C12.2835 3.49716 11.7165 3.49716 11.2834 3.79541L4.14336 8.7121C3.81027 8.94146 3.60747 9.31108 3.59247 9.70797C3.54064 11.0799 3.4857 13.4824 3.63658 15.1877C3.7504 16.4742 4.05336 18.1747 4.29944 19.4256C4.41371 20.0066 4.91937 20.4284 5.52037 20.4284H8.84433C8.98594 20.4284 9.10074 20.3111 9.10074 20.1665V15.9754C9.10074 14.9627 9.90433 14.1417 10.8956 14.1417H13.4091C14.4004 14.1417 15.204 14.9627 15.204 15.9754V20.1665C15.204 20.3111 15.3188 20.4284 15.4604 20.4284H18.4796C19.0806 20.4284 19.5863 20.0066 19.7006 19.4256C19.9466 18.1747 20.2496 16.4742 20.3634 15.1877C20.5143 13.4824 20.4594 11.0799 20.4075 9.70797C20.3925 9.31108 20.1897 8.94146 19.8566 8.7121L12.7166 3.79541ZM10.4235 2.49217C11.3764 1.83602 12.6236 1.83602 13.5765 2.49217L20.7165 7.40886C21.4457 7.91098 21.9104 8.73651 21.9448 9.64736C21.9966 11.0178 22.0564 13.5119 21.8956 15.3292C21.7738 16.7067 21.4561 18.4786 21.2089 19.7353C20.9461 21.0711 19.7924 22.0001 18.4796 22.0001H15.4604C14.4691 22.0001 13.6655 21.1791 13.6655 20.1665V15.9754C13.6655 15.8307 13.5507 15.7134 13.4091 15.7134H10.8956C10.754 15.7134 10.6392 15.8307 10.6392 15.9754V20.1665C10.6392 21.1791 9.83561 22.0001 8.84433 22.0001H5.52037C4.20761 22.0001 3.05389 21.0711 2.79113 19.7353C2.54392 18.4786 2.22624 16.7067 2.10437 15.3292C1.94358 13.5119 2.00338 11.0178 2.05515 9.64736C2.08957 8.73652 2.55427 7.91098 3.28346 7.40886L10.4235 2.49217Z"/></svg></a> <a href="https://en.wikipedia.org/wiki/AspectJ"><svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="98.05px" height="98.05px" viewBox="0 0 98.05 98.05" style="enable-background:new 0 0 98.05 98.05;" xml:space="preserve"><path d="M98.023,17.465l-19.584-0.056c-0.004,0.711-0.006,1.563-0.017,2.121c1.664,0.039,5.922,0.822,7.257,4.327L66.92,67.155 c-0.919-2.149-9.643-21.528-10.639-24.02l9.072-18.818c1.873-2.863,5.455-4.709,8.918-4.843l-0.01-1.968L55.42,17.489 c-0.045,0.499,0.001,1.548-0.068,2.069c5.315,0.144,7.215,1.334,5.941,4.508c-2.102,4.776-6.51,13.824-7.372,15.475 c-2.696-5.635-4.41-9.972-7.345-16.064c-1.266-2.823,1.529-3.922,4.485-4.004v-1.981l-21.82-0.067 c0.016,0.93-0.021,1.451-0.021,2.131c3.041,0.046,6.988,0.371,8.562,3.019c2.087,4.063,9.044,20.194,11.149,24.514 c-2.685,5.153-9.207,17.341-11.544,21.913c-3.348-7.43-15.732-36.689-19.232-44.241c-1.304-3.218,3.732-5.077,6.646-5.213 l0.019-2.148L0,17.398c0.005,0.646,0.027,1.71,0.029,2.187c4.025-0.037,9.908,6.573,11.588,10.683 c7.244,16.811,14.719,33.524,21.928,50.349c0.002,0.029,2.256,0.059,2.281,0.008c4.717-9.653,10.229-19.797,15.206-29.56 L63.588,80.64c0.005,0.004,2.082,0.016,2.093,0.007c7.962-18.196,19.892-46.118,23.794-54.933c1.588-3.767,4.245-6.064,8.543-6.194 l0.032-1.956L98.023,17.465z"/></svg></a></div>
+
+* AspectJ is a <a href="../lists/languages.html?filter=pl">programming language</a> created in 2001.
+ link ../lists/languages.html?filter=2001 2001
+
+kpiTable
+ #380 <span title="TotalRank: 852 Jobs: 103 Users: 663 Facts: 86 Links: 972">on PLDB</span>
+ 22 Years Old
+ 661 <span title="Crude user estimate from a linear model.">Users</span>
+ 17 <span title="Books about or leveraging AspectJ">Books</span>
+ 37 <span title="Academic publications about or leveraging AspectJ">Papers</span>
+ 671 <span title="AspectJ repos on GitHub.">Repos</span>
+
+* Try now: <a href="https://riju.codes/aspectj">Riju</a>
+
+* AspectJ is an aspect-oriented programming (AOP) extension created at PARC for the Java programming language. It is available in Eclipse Foundation open-source projects, both stand-alone and integrated into Eclipse. AspectJ has become a widely used de facto standard for AOP by emphasizing simplicity and usability for end users. Read more on Wikipedia...
+ https://en.wikipedia.org/wiki/AspectJ Read more on Wikipedia...
+
+- AspectJ website
+ http://www.eclipse.org/aspectj/
+- AspectJ Wikipedia page
+ https://en.wikipedia.org/wiki/AspectJ
+- There are at least 671 AspectJ repos on <a href="https://github.com/search?q=language:AspectJ">GitHub</a>
+- AspectJ first developed in <a href="../lists/originCommunities.html#eclipseFoundation">Eclipse Foundation</a>
+- file extensions for AspectJ include aj
+- The  Google BigQuery Public Dataset GitHub snapshot shows 734 users using AspectJ in 793 repos on <a href="https://api.github.com/search/repositories?q=language:AspectJ">GitHub</a>
+- Explore AspectJ snippets on <a href="http://www.rosettacode.org/wiki/Category:AspectJ">Rosetta Code</a>
+- AspectJ on HOPL
+ https://hopl.info/showlanguage.prx?exp=7055
+- AspectJ appears in the <a href="https://www.tiobe.com/tiobe-index/">TIOBE Index</a>
+- AspectJ Ubuntu package
+ https://packages.ubuntu.com/jammy/aspectj
+- <a href="antlr.html">ANTLR</a> <a href="https://github.com/antlr/grammars-v4/tree/master/aspectj">grammar</a> for AspectJ
+- <a href="pygments.html">Pygments</a> supports <a href="https://github.com/pygments/pygments/blob/master/pygments/lexers/jvm.py">syntax highlighting</a> for AspectJ
+- GitHub supports <a href="https://github.com/pchaigno/sublime-aspectj" title="The package used for syntax highlighting by GitHub Linguist.">syntax highlighting</a> for AspectJ
+- AspectJ appears in the <a href="https://github.com/mame/quine-relay">Quine Relay</a> project
+- See also: (4 related languages)<a href="java.html">Java</a>, <a href="eclipse-editor.html">Eclipse</a>, <a href="emacs-editor.html">Emacs</a>, <a href="isbn.html">ISBN</a>
+- HTML of this page generated by <a href="https://github.com/breck7/pldb/blob/main/code/LanguagePage.ts">LanguagePage.ts</a>
+- <a href="https://pldb.com/edit/aspectj">Improve our AspectJ file</a>
+
+html <br>
+
+codeWithHeader Example from <a href='https://riju.codes/aspectj'>Riju</a>:
+ public class Main {
+     public static void main(String[] args) {
+         System.out.println(&quot;Hello, world!&quot;);
+     }
+ }
+ 
+
+codeWithHeader Example from <a href='https://github.com/leachim6/hello-world/blob/main/a/Aspectj.aj'>hello-world</a>:
+ System.out.println(&quot;Hello World&quot;);
+
+codeWithHeader Example from <a href='https://github.com/pchaigno/sublime-aspectj'>Linguist</a>:
+ package com.blogspot.miguelinlas3.aspectj.cache;
+ 
+ import java.util.Map;
+ import java.util.WeakHashMap;
+ 
+ import org.aspectj.lang.JoinPoint;
+ 
+ import com.blogspot.miguelinlas3.aspectj.cache.marker.Cacheable;
+ 
+ /**
+  * This simple aspect simulates the behaviour of a very simple cache
+  *  
+  * @author migue
+  *
+  */
+ public aspect CacheAspect {
+ 
+ 	public pointcut cache(Cacheable cacheable): execution(@Cacheable * * (..)) &amp;&amp; @annotation(cacheable);
+ 	
+ 	Object around(Cacheable cacheable): cache(cacheable){
+ 	
+ 		String evaluatedKey = this.evaluateKey(cacheable.scriptKey(), thisJoinPoint);
+ 		
+ 		if(cache.containsKey(evaluatedKey)){
+ 			System.out.println(&quot;Cache hit for key &quot; + evaluatedKey);
+ 			return this.cache.get(evaluatedKey);
+ 		}
+ 		
+ 		System.out.println(&quot;Cache miss for key &quot; + evaluatedKey);
+ 		Object value = proceed(cacheable);
+ 		cache.put(evaluatedKey, value);
+ 		return value;
+ 	}
+ 	
+ 	protected String evaluateKey(String key, JoinPoint joinPoint) {
+ 		// TODO add some smart staff to allow simple scripting in @Cacheable annotation
+ 		return key;
+ 	}
+ 	
+ 	protected Map&lt;String, Object&gt; cache = new WeakHashMap&lt;String, Object&gt;();
+ }
+ 
+
+codeWithHeader Example from <a href='https://en.wikipedia.org/wiki/AspectJ'>Wikipedia</a>:
+ pointcut set() : execution(* set*(..) ) &amp;&amp; this(Point);
+
+endColumns
+
+## Language <a href="../lists/features.html">features</a>
+
+treeTable
+ row
+  Feature Binary Literals
+  FeatureLink ../features/hasBinaryNumbers.html
+  Supported <span class="hasFeature">✓</span>
+  Token 
+  Example
+   // 0[bB][01][01_]*[lL]?
+ row
+  Feature Integers
+  FeatureLink ../features/hasIntegers.html
+  Supported <span class="hasFeature">✓</span>
+  Token 
+  Example
+   // 0|[1-9][0-9_]*[lL]?
+ row
+  Feature Floats
+  FeatureLink ../features/hasFloats.html
+  Supported <span class="hasFeature">✓</span>
+  Token 
+  Example
+   // ([0-9][0-9_]*\.([0-9][0-9_]*)?|\.[0-9][0-9_]*)([eE][+\-]?[0-9][0-9_]*)?[fFdD]?|[0-9][eE][+\-]?[0-9][0-9_]*[fFdD]?|[0-9]([eE][+\-]?[0-9][0-9_]*)?[fFdD]|0[xX]([0-9a-fA-F][0-9a-fA-F_]*\.?|([0-9a-fA-F][0-9a-fA-F_]*)?\.[0-9a-fA-F][0-9a-fA-F_]*)[pP][+\-]?[0-9][0-9_]*[fFdD]?
+ row
+  Feature Hexadecimals
+  FeatureLink ../features/hasHexadecimals.html
+  Supported <span class="hasFeature">✓</span>
+  Token 
+  Example
+   // 0[xX][0-9a-fA-F][0-9a-fA-F_]*[lL]?
+ row
+  Feature Octals
+  FeatureLink ../features/hasOctals.html
+  Supported <span class="hasFeature">✓</span>
+  Token 
+  Example
+   // 0[0-7_]+[lL]?
+ row
+  Feature Strings
+  FeatureLink ../features/hasStrings.html
+  Supported <span class="hasFeature">✓</span>
+  Token "
+  Example
+   "Hello world"
+ row
+  Feature MultiLine Comments
+  FeatureLink ../features/hasMultiLineComments.html
+  Supported <span class="hasFeature">✓</span>
+  Token /* */
+  Example
+   /* A comment
+   */
+ row
+  Feature Print() Debugging
+  FeatureLink ../features/hasPrintDebugging.html
+  Supported <span class="hasFeature">✓</span>
+  Token System.out.println
+  Example
+ row
+  Feature Comments
+  FeatureLink ../features/hasComments.html
+  Supported <span class="hasFeature">✓</span>
+  Token 
+  Example
+   // A comment
+ row
+  Feature Line Comments
+  FeatureLink ../features/hasLineComments.html
+  Supported <span class="hasFeature">✓</span>
+  Token //
+  Example
+   // A comment
+ row
+  Feature Semantic Indentation
+  FeatureLink ../features/hasSemanticIndentation.html
+  Supported <span class="doesNotHaveFeature">X</span>
+  Token 
+  Example
+
+## Books about AspectJ on goodreads
+pipeTable
+ title|titleLink|author|year|reviews|ratings|rating
+ Eclipse AspectJ: Aspect-Oriented Programming with AspectJ and the Eclipse AspectJ Development Tools|https://www.goodreads.com/search?q=Eclipse AspectJ: Aspect-Oriented Programming with AspectJ and the Eclipse AspectJ Development Tools Adrian Colyer|Adrian Colyer|2004|0|8|3.25
+ Aspectj in Action: Practical Aspect-Oriented Programming|https://www.goodreads.com/search?q=Aspectj in Action: Practical Aspect-Oriented Programming Ramnivas Laddad|Ramnivas Laddad|2003|2|34|3.76
+ Aspect-Oriented Programming with Aspectj|https://www.goodreads.com/search?q=Aspect-Oriented Programming with Aspectj Ivan Kiselev|Ivan Kiselev|2002|0|3|3.00
+ Mastering Aspectj: Aspect-Oriented Programming in Java|https://www.goodreads.com/search?q=Mastering Aspectj: Aspect-Oriented Programming in Java Joseph D. Gradecki|Joseph D. Gradecki|2003|1|5|3.20
+ Aspect-Oriented Programming with Aspectj|https://www.goodreads.com/search?q=Aspect-Oriented Programming with Aspectj Ivan Kiselev|Ivan Kiselev|2002|0|0|0.0
+ Java Programming Language Family: Godiva, Scala, Processing, Aspectj, Groovy, Javafx Script, Einstein, J Sharp, Judoscript, Jasmin, Beanshell|https://www.goodreads.com/search?q=Java Programming Language Family: Godiva, Scala, Processing, Aspectj, Groovy, Javafx Script, Einstein, J Sharp, Judoscript, Jasmin, Beanshell Books LLC|Books LLC|2011|0|0|0.0
+ Logging and Simulation using Aspect Oriented Software: AOP and AspectJ|https://www.goodreads.com/search?q=Logging and Simulation using Aspect Oriented Software: AOP and AspectJ Mutum Meetei|Mutum Meetei||0|0|0.0
+
+## Books about AspectJ from ISBNdb
+pipeTable
+ title|titleLink|authors|year|publisher
+ AspectJ Cookbook: Aspect Oriented Solutions to Real-World Problems|https://isbndb.com/book/9780596006549|Miles, Russ|2005|O'Reilly Media
+ AspectJ in Action: Enterprise AOP with Spring Applications|https://isbndb.com/book/9781933988054|Ramnivas Laddad|2009|Manning Publications
+ Eclipse AspectJ: Aspect-Oriented Programming with AspectJ and the Eclipse AspectJ Development Tools|https://isbndb.com/book/9780321245878|Colyer, Adrian|2004|Addison-Wesley Professional
+ Aspectj in Action: Practical Aspect-Oriented Programming|https://isbndb.com/book/9781930110939|Laddad, Ramnivas|2003|Manning Publications
+ AspectJ Cookbook|https://isbndb.com/book/9781449338411|Russ Miles|20041220|O'Reilly Media, Inc.
+ AspectJ Cookbook|https://isbndb.com/book/9781449338428|Russ Miles|20041220|O'Reilly Media, Inc.
+ AspectJ in Action|https://isbndb.com/book/9781638354086|Raminvas Laddad|20090831|Simon & Schuster
+ Aspect-oriented Programming With Aspectj|https://isbndb.com/book/9780672324109|Ivan Kiselev|2003|Sams
+ Aspect-oriented programming using AspectJ|https://isbndb.com/book/9780768662467|Ivan Kiselev||Sams
+ Aspect-Oriented Programming with Eclipse AspectJ Development Tools|https://isbndb.com/book/9786139848805|Pankaj Kumar|2018-05-31|LAP LAMBERT Academic Publishing
+
+## Publications about AspectJ from Semantic Scholar
+pipeTable
+ title|titleLink|authors|year|citations|influentialCitations
+ abc: an extensible AspectJ compiler|https://www.semanticscholar.org/paper/3b08aa3b0bdbf04e686abfebc1b35a077dd1b2d6|Pavel Avgustinov and Ask Simon Christensen and L. Hendren and Sascha Kuzins and Jennifer Lhoták and O. Lhoták and O. Moor and D. Sereni and Ganesh Sittampalam and J. Tibble|2005|235|16
+ A UML-based aspect-oriented design notation for AspectJ|https://www.semanticscholar.org/paper/f81f2c353e82df92fa84084e48876d1063c3e797|D. Stein and Stefan Hanenberg and R. Unland|2002|223|12
+ Racer: effective race detection using aspectj|https://www.semanticscholar.org/paper/ad09cd720a5de53ddc995630d019bbee2d2ce72d|E. Bodden and K. Havelund|2008|98|8
+ Aspect-oriented programming with AspectJ|https://www.semanticscholar.org/paper/fe6e3b460c6de9b24957b480f6661808823c9b1c|A. Colyer and Andy Clement|2005|86|5
+ From multi-modal scenarios to code: compiling LSCs into aspectJ|https://www.semanticscholar.org/paper/ab75f597e895a52c7be4be2351b66446a245022e|S. Maoz and D. Harel|2006|81|2
+ Pipa: A Behavioral Interface Specification Language for AspectJ|https://www.semanticscholar.org/paper/36150e05a0b891d257cfa5ff192ea82375779400|Jianjun Zhao and M. Rinard|2003|76|5
+ Generating AspectJ Programs with Meta-AspectJ|https://www.semanticscholar.org/paper/633d837993e813f23aa93fb2aa29ca95b9c6d7fa|David Zook and Shan Shan Huang and Y. Smaragdakis|2004|67|8
+ Using AspectJ to build a software product line for mobile devices|https://www.semanticscholar.org/paper/ab3777108d66be3baef50eceeb153bdd06a487d8|Trevor J. Young|2005|64|9
+ Bridging Java and AspectJ through explicit join points|https://www.semanticscholar.org/paper/266a6af42ce0277ba6182a43709820fdfa3fd7c9|Kevin J. Hoffman and P. Eugster|2007|54|5
+ Declarative, formal, and extensible syntax definition for aspectJ|https://www.semanticscholar.org/paper/2a7b1bfeddf2dfa96b44443752f217760575a84c|Martin Bravenboer and É. Tanter and E. Visser|2006|49|5
+ Automated Generation of Pointcut Mutants for Testing Pointcuts in AspectJ Programs|https://www.semanticscholar.org/paper/dbf5430d23c8586eeac347fbdc19bbac763ba31c|P. Anbalagan and Tao Xie|2008|41|7
+ Semantics of static pointcuts in aspectJ|https://www.semanticscholar.org/paper/3226f7ce9359d37efc592c34e96a5e42cf3fd483|Pavel Avgustinov and Elnar Hajiyev and Neil Ongkingco and O. Moor and D. Sereni and J. Tibble and M. Verbaere|2007|40|6
+ Aspects and polymorphism in AspectJ|https://www.semanticscholar.org/paper/30eb6b208747be2da42b571a66bb074f28354241|Erik Ernst and D. Lorenz|2003|36|1
+ SCoPE: an AspectJ compiler for supporting user-defined analysis-based pointcuts|https://www.semanticscholar.org/paper/c739bd026a9cce9c0b8aee7314ab8bda4f9397b1|Tomoyuki Aotani and Hidehiko Masuhara|2007|36|3
+ Applyinq AspectJ to J2EE application development|https://www.semanticscholar.org/paper/a7c1c10921ab37c06d2f91c853c08eeb17adb97a|Nicholas Lesiecki|2006|26|0
+ APTE: automated pointcut testing for AspectJ programs|https://www.semanticscholar.org/paper/384678644e110223a089ab3aa9116266903dbb62|P. Anbalagan and Tao Xie|2006|26|2
+ A Compiler for Multimodal Scenarios: Transforming LSCs into AspectJ|https://www.semanticscholar.org/paper/e002f7757db323c5402827ac9906b50d03e19fb6|S. Maoz and D. Harel and A. Kleinbort|2011|19|2
+ An empirical study on the impact of AspectJ on software evolvability|https://www.semanticscholar.org/paper/56f08b65a1c3fd04caa27c951b7b634f672cf241|Adam Przybyłek|2018|17|1
+ Security crosscutting concerns and AspectJ|https://www.semanticscholar.org/paper/b93f1c3f93b22e53cd9e54b1c6799d7ec65119d6|Dima Alhadidi and Nadia Belblidia and M. Debbabi|2006|16|0
+ Region pointcut for AspectJ|https://www.semanticscholar.org/paper/92927f6909e66bfc681376e7598ca41105ab03d3|Shumpei Akai and S. Chiba and Muga Nishizawa|2009|13|1
+ AspectJ Paradigm Model: A Basis for Multi-paradigm Design for AspectJ|https://www.semanticscholar.org/paper/b5b884c6578e9d6711393da502b2eda05d05f855|V. Vranic|2001|12|1
+ Formalizing AspectJ Weaving for Static Pointcuts|https://www.semanticscholar.org/paper/7328f6f8de8829350a78a97748ff41f169b1e5fd|Nadia Belblidia and M. Debbabi|2006|10|2
+ Case study: a distributed concurrent system with AspectJ|https://www.semanticscholar.org/paper/6331bf3ad179c88136a4d713de8c819afbc1e9d2|R. Raje and Ming Zhong and Tong-yang Wang|2001|9|0
+ Complex code querying and navigation for AspectJ|https://www.semanticscholar.org/paper/55571587a2d64d6fedbf4846081c7eedde0c8e16|J. Pfeiffer and Andonis Sardos and J. Gurd|2005|8|0
+ Traits Programming with AspectJ|https://www.semanticscholar.org/paper/3758faced50e19baae3042e86c9f4667081a298b|S. Denier|2005|8|1
+ Teste de programs orientados a aspects: uma abordagem estrutural para AspectJ|https://www.semanticscholar.org/paper/8919c2f85e6d9076b315466f314b6bef1a043e30|O. Lemos|2005|7|2
+ An Advice for Advice Composition in AspectJ|https://www.semanticscholar.org/paper/01528533d03b11fb09a9043d4e6a2443fea31804|Fuminobu Takeyama and S. Chiba|2010|7|1
+ 2D and 3D visualization of AspectJ programs|https://www.semanticscholar.org/paper/5ce3a0dc903cad7cd435f59ae1beef9adf10545d|S. Bentrad and D. Meslati|2011|6|0
+ abc the aspectBench compiler for aspectJ a workbench for aspect-oriented programming language and compilers research|https://www.semanticscholar.org/paper/e9c75ec43e213b983f7979ed44be5434b145c235|Chris Allan and Pavel Avgustinov and Ask Simon Christensen and Bruno Dufour and C. Goard and L. Hendren and Sascha Kuzins and Jennifer Lhoták and O. Lhoták and O. Moor and D. Sereni and Ganesh Sittampalam and J. Tibble and Clark Verbrugge|2005|6|0
+ On ASPECTJ and Composition Filters: A Mapping of Concepts|https://www.semanticscholar.org/paper/b23fd11b73b6d0e2f163cf80a003d88da68ec3c9|D. Meslati|2009|5|0
+ Accessing and Evaluating AspectJ based Mutation Testing Tools|https://www.semanticscholar.org/paper/18995a17b168c0a7020820261dda4b08591b67a8|Mayank Singh and Shailendra Mishra and R. Mall|2011|5|0
+ A Case Study of Development of a Java Bytecode Analyzer Framework Using AspectJ|https://www.semanticscholar.org/paper/3515ccc40a107af0784bd8d854ae80cdf6fbd56b|Susumu Yamazaki and Michihiro Matsumoto and T. Nakanishi and T. Kitasuka and Akira Fukuda|2005|3|0
+ Overcoming comprehension barriers in the AspectJ programming language|https://www.semanticscholar.org/paper/a46f13879344a8a5cc5aa67a8e6dce0f5aba3c87|Venera Arnaoudova and L. Eshkevari and Elaheh Safari-Sharifabadi and Constantinos A. Constantinides|2008|3|1
+ Automated testing of pointcuts in AspectJ programs|https://www.semanticscholar.org/paper/ac9f4a883dabe2ea944facc2356d9ddc4a9d2a10|P. Anbalagan|2006|2|0
+ Comparative Analysis of Java and AspectJ on the Basis of Various Metrics|https://www.semanticscholar.org/paper/1009e19133e91087b39f2cd4faa27e3ea5941f7f|Inderjit Singh Dhanoa and Er. Dalwinder Singh Salaria and H. S. Johal|2011|2|0
+ New AspectJ Pointcuts for Integer Overflow and Underflow Detection|https://www.semanticscholar.org/paper/96be1a745232f172b0ce307e7f00ca4e7f3a50d5|Dima Alhadidi and M. Debbabi and P. Bhattacharya|2008|1|0
+ Tackling the Challenges of Integrating 3rd Party Software Using AspectJ|https://www.semanticscholar.org/paper/c85660cb51317005395a8463e9c309919614b4df|U. Hohenstein and M. Jäger|2011|1|0
+
+keyboardNav chrysalisp.html setl.html
+
+import ../footer.scroll

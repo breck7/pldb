@@ -1,0 +1,264 @@
+import header.scroll
+
+title PureBasic
+
+title PureBasic - Programming language
+ hidden
+
+html
+ <a class="prevLang" href="lfe.html">&lt;</a>
+ <a class="nextLang" href="forth.html">&gt;</a>
+
+viewSourceUrl https://github.com/breck7/pldb/blob/main/database/things/purebasic.pldb
+
+startColumns 4
+
+html <div class="quickLinks"><a href="http://www.purebasic.com"><svg role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12.7166 3.79541C12.2835 3.49716 11.7165 3.49716 11.2834 3.79541L4.14336 8.7121C3.81027 8.94146 3.60747 9.31108 3.59247 9.70797C3.54064 11.0799 3.4857 13.4824 3.63658 15.1877C3.7504 16.4742 4.05336 18.1747 4.29944 19.4256C4.41371 20.0066 4.91937 20.4284 5.52037 20.4284H8.84433C8.98594 20.4284 9.10074 20.3111 9.10074 20.1665V15.9754C9.10074 14.9627 9.90433 14.1417 10.8956 14.1417H13.4091C14.4004 14.1417 15.204 14.9627 15.204 15.9754V20.1665C15.204 20.3111 15.3188 20.4284 15.4604 20.4284H18.4796C19.0806 20.4284 19.5863 20.0066 19.7006 19.4256C19.9466 18.1747 20.2496 16.4742 20.3634 15.1877C20.5143 13.4824 20.4594 11.0799 20.4075 9.70797C20.3925 9.31108 20.1897 8.94146 19.8566 8.7121L12.7166 3.79541ZM10.4235 2.49217C11.3764 1.83602 12.6236 1.83602 13.5765 2.49217L20.7165 7.40886C21.4457 7.91098 21.9104 8.73651 21.9448 9.64736C21.9966 11.0178 22.0564 13.5119 21.8956 15.3292C21.7738 16.7067 21.4561 18.4786 21.2089 19.7353C20.9461 21.0711 19.7924 22.0001 18.4796 22.0001H15.4604C14.4691 22.0001 13.6655 21.1791 13.6655 20.1665V15.9754C13.6655 15.8307 13.5507 15.7134 13.4091 15.7134H10.8956C10.754 15.7134 10.6392 15.8307 10.6392 15.9754V20.1665C10.6392 21.1791 9.83561 22.0001 8.84433 22.0001H5.52037C4.20761 22.0001 3.05389 21.0711 2.79113 19.7353C2.54392 18.4786 2.22624 16.7067 2.10437 15.3292C1.94358 13.5119 2.00338 11.0178 2.05515 9.64736C2.08957 8.73652 2.55427 7.91098 3.28346 7.40886L10.4235 2.49217Z"/></svg></a> <a href="https://en.wikipedia.org/wiki/PureBasic"><svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="98.05px" height="98.05px" viewBox="0 0 98.05 98.05" style="enable-background:new 0 0 98.05 98.05;" xml:space="preserve"><path d="M98.023,17.465l-19.584-0.056c-0.004,0.711-0.006,1.563-0.017,2.121c1.664,0.039,5.922,0.822,7.257,4.327L66.92,67.155 c-0.919-2.149-9.643-21.528-10.639-24.02l9.072-18.818c1.873-2.863,5.455-4.709,8.918-4.843l-0.01-1.968L55.42,17.489 c-0.045,0.499,0.001,1.548-0.068,2.069c5.315,0.144,7.215,1.334,5.941,4.508c-2.102,4.776-6.51,13.824-7.372,15.475 c-2.696-5.635-4.41-9.972-7.345-16.064c-1.266-2.823,1.529-3.922,4.485-4.004v-1.981l-21.82-0.067 c0.016,0.93-0.021,1.451-0.021,2.131c3.041,0.046,6.988,0.371,8.562,3.019c2.087,4.063,9.044,20.194,11.149,24.514 c-2.685,5.153-9.207,17.341-11.544,21.913c-3.348-7.43-15.732-36.689-19.232-44.241c-1.304-3.218,3.732-5.077,6.646-5.213 l0.019-2.148L0,17.398c0.005,0.646,0.027,1.71,0.029,2.187c4.025-0.037,9.908,6.573,11.588,10.683 c7.244,16.811,14.719,33.524,21.928,50.349c0.002,0.029,2.256,0.059,2.281,0.008c4.717-9.653,10.229-19.797,15.206-29.56 L63.588,80.64c0.005,0.004,2.082,0.016,2.093,0.007c7.962-18.196,19.892-46.118,23.794-54.933c1.588-3.767,4.245-6.064,8.543-6.194 l0.032-1.956L98.023,17.465z"/></svg></a> <a href="https://www.purebasic.com/documentation/index.html"><svg viewBox="0 0 500 500" xmlns="http://www.w3.org/2000/svg"><g transform="matrix(1, 0, 0, 1, 13.859316, 9.109739)"><g><g><path d="M340.732,0H55v485h375V94.518L340.732,0z M345,26.364L405.1,90H345V26.364z M415,470H70V15h260v90h85V470z"/><rect x="102.5" y="191" width="280" height="15"/><rect x="102.5" y="141" width="120" height="15"/><rect x="102.5" y="241" width="280" height="15"/><rect x="102.5" y="291" width="280" height="15"/><rect x="102.5" y="341" width="280" height="15"/><rect x="102.5" y="391" width="280" height="15"/></g></g></g></svg></a></div>
+
+* PureBasic is a <a href="../lists/languages.html?filter=pl">programming language</a> created in 1998.
+ link ../lists/languages.html?filter=1998 1998
+
+kpiTable
+ #119 <span title="TotalRank: 352 Jobs: 103 Users: 816 Facts: 72 Links: 177">on PLDB</span>
+ 25 Years Old
+ 426 <span title="Crude user estimate from a linear model.">Users</span>
+ 2 <span title="Books about or leveraging PureBasic">Books</span>
+ 0 <span title="Academic publications about or leveraging PureBasic">Papers</span>
+ 6k <span title="PureBasic repos on GitHub.">Repos</span>
+
+* PureBasic is a commercially distributed procedural computer programming language and integrated development environment based on BASIC and developed by Fantaisie Software for Windows 32/64-bit, Linux 32/64-bit, and macOS. An Amiga version is available, although it has been discontinued and some parts of it are released as open source. The first public release of PureBasic for Windows was on December 17, 2000. Read more on Wikipedia...
+ https://en.wikipedia.org/wiki/PureBasic Read more on Wikipedia...
+
+- PureBasic website
+ http://www.purebasic.com
+- PureBasic Wikipedia page
+ https://en.wikipedia.org/wiki/PureBasic
+- PureBasic docs
+ https://www.purebasic.com/documentation/index.html
+- There are at least 6,366 PureBasic repos on <a href="https://github.com/search?q=language:PureBasic">GitHub</a>
+- PureBasic first developed in <a href="../lists/originCommunities.html#fantaisieSoftware">Fantaisie Software</a>
+- file extensions for PureBasic include pb and pbi
+- The  Google BigQuery Public Dataset GitHub snapshot shows 556 users using PureBasic in 647 repos on <a href="https://api.github.com/search/repositories?q=language:PureBasic">GitHub</a>
+- Explore PureBasic snippets on <a href="http://www.rosettacode.org/wiki/Category:PureBasic">Rosetta Code</a>
+- GitHub supports <a href="https://github.com/telnet23/language-basic" title="The package used for syntax highlighting by GitHub Linguist.">syntax highlighting</a> for PureBasic
+- Release Notes for PureBasic
+ https://www.purebasic.com/news.php
+- Official Blog page for PureBasic
+ https://www.purebasic.fr/blog/
+- Frequently Asked Questions for PureBasic
+ https://www.purebasic.com/faq.php
+- Indeed.com has 0 matches for <a href="https://www.indeed.com/jobs?q=purebasic developer">"purebasic developer"</a>.
+- <a href="http://www.purebasic.com">purebasic.com</a> was registered in 2000
+- See also: (5 related languages)<a href="basic.html">BASIC</a>, <a href="linux.html">Linux</a>, <a href="x86-isa.html">X86</a>, <a href="powerpc.html">PowerPC</a>, <a href="isbn.html">ISBN</a>
+- HTML of this page generated by <a href="https://github.com/breck7/pldb/blob/main/code/LanguagePage.ts">LanguagePage.ts</a>
+- <a href="https://pldb.com/edit/purebasic">Improve our PureBasic file</a>
+
+html <br>
+
+codeWithHeader Example from <a href='https://github.com/leachim6/hello-world/blob/main/p/PureBasic.pb'>hello-world</a>:
+ If OpenConsole()
+   PrintN(&quot;Hello World&quot;)
+ EndIf
+ 
+
+codeWithHeader Example from <a href='https://github.com/telnet23/language-basic'>Linguist</a>:
+ EnableExplicit
+ 
+ ; ##################################################### Includes ####################################################
+ 
+ XIncludeFile &quot;Includes/AudioOut.pbi&quot;
+ 
+ ; ##################################################### Prototypes ##################################################
+ 
+ ; ##################################################### Structures ##################################################
+ 
+ ; ##################################################### Constants ###################################################
+ 
+ #Samplerate = 44100
+ 
+ ; ##################################################### Structures ##################################################
+ 
+ Structure Main
+   *AudioOut
+   
+   Quit.i
+ EndStructure
+ Global Main.Main
+ 
+ Structure Main_Window
+   ID.i
+   
+   TrackBar.i [10]
+ EndStructure
+ Global Main_Window.Main_Window
+ 
+ ; ##################################################### Variables ###################################################
+ 
+ Global Frequency.d = 1000
+ Global Amplitude.d = 0.25
+ 
+ ; ##################################################### Procedures ##################################################
+ 
+ Procedure Main_Window_Open()
+   Main_Window\ID = OpenWindow(#PB_Any, 0, 0, 800, 100, &quot;AudioOut Example&quot;, #PB_Window_SystemMenu | #PB_Window_MinimizeGadget | #PB_Window_ScreenCentered)
+   
+   If Main_Window\ID
+     
+     Main_Window\TrackBar[0] = TrackBarGadget(#PB_Any, 10, 10, 780, 30, 0, 20000)
+     SetGadgetState(Main_Window\TrackBar[0], Frequency)
+     
+     Main_Window\TrackBar[1] = TrackBarGadget(#PB_Any, 10, 40, 780, 30, 0, 1000)
+     SetGadgetState(Main_Window\TrackBar[1], Amplitude*1000)
+     
+   EndIf
+ EndProcedure
+ 
+ Procedure Notifier_CallBack(*AudioOut)
+   Protected *Temp, Temp_Size.i
+   Static Rotation.d
+   
+   While AudioOut::GetQueuedBlocks(*AudioOut) &lt;= 3
+     
+     Temp_Size = AudioOut::GetBufferBlocksize(*AudioOut)
+     If Temp_Size &gt; 0
+       *Temp = AllocateMemory(Temp_Size)
+       
+       Define Left.d, Right.d, i
+       For i = 0 To Temp_Size / 4 - 1
+         Left = Sin(Rotation) * Amplitude
+         Right = Sin(Rotation) * Amplitude
+         
+         PokeW(*Temp + i*4    , Left*32767)
+         PokeW(*Temp + i*4 + 2, Right*32767)
+         
+         Rotation + 2.0*#PI / #Samplerate * Frequency
+       Next
+       
+       AudioOut::Write_Data(Main\AudioOut, *Temp, Temp_Size)
+       
+       FreeMemory(*Temp)
+     EndIf
+     
+   Wend
+ EndProcedure
+ 
+ ; ##################################################### Initialisation ##############################################
+ 
+ Main_Window_Open()
+ 
+ AudioOut::GetDevices()
+ 
+ ForEach AudioOut::Device()
+   Debug PeekS(AudioOut::@Device()\szPname)
+ Next
+ 
+ Main\AudioOut = AudioOut::Initialize(#WAVE_MAPPER, #Samplerate, 2, 16, @Notifier_CallBack())
+ 
+ If Not Main\AudioOut
+   Debug AudioOut::GetError()
+   End
+ EndIf
+ 
+ Notifier_CallBack(Main\AudioOut)
+ 
+ ; ##################################################### Main ########################################################
+ 
+ Repeat
+   
+   Repeat
+     Select WaitWindowEvent(100)
+       Case #PB_Event_Gadget
+         Select EventGadget()
+           Case Main_Window\TrackBar[0]
+             Frequency = GetGadgetState(Main_Window\TrackBar[0])
+             Debug Frequency
+             
+           Case Main_Window\TrackBar[1]
+             Amplitude = GetGadgetState(Main_Window\TrackBar[1]) / 1000
+             
+         EndSelect
+         
+       Case #PB_Event_CloseWindow
+         Main\Quit = #True
+         
+       Case 0
+         Break
+     EndSelect
+   ForEver
+   
+ Until Main\Quit
+ 
+ ; ##################################################### End #########################################################
+ 
+ AudioOut::Deinitialize(Main\AudioOut)
+ 
+ ; IDE Options = PureBasic 5.30 Beta 2 (Windows - x64)
+ ; CursorPosition = 109
+ ; FirstLine = 79
+ ; Folding = -
+ ; EnableUnicode
+ ; EnableThread
+ ; EnableXP
+ 
+
+codeWithHeader Example from <a href='https://en.wikipedia.org/wiki/PureBasic'>Wikipedia</a>:
+ Structure type_name
+    field_name.type ; Single field. Perhaps the structures attachment.
+    field_name[count].type ; Static arrays.
+    ; ... 
+    ; Optional construction StructureUnion .. EndStructureUnion allows you
+    ; to combine multiple fields into one area of memory
+    ; that is sometimes required for the conversion types.
+    StructureUnion
+       type_name.type
+       ; ... 
+    EndStructureUnion 
+ EndStructure
+
+endColumns
+
+## Language <a href="../lists/features.html">features</a>
+
+treeTable
+ row
+  Feature Strings
+  FeatureLink ../features/hasStrings.html
+  Supported <span class="hasFeature">✓</span>
+  Token "
+  Example
+   "Hello world"
+ row
+  Feature Print() Debugging
+  FeatureLink ../features/hasPrintDebugging.html
+  Supported <span class="hasFeature">✓</span>
+  Token PrintN
+  Example
+ row
+  Feature Line Comments
+  FeatureLink ../features/hasLineComments.html
+  Supported <span class="hasFeature">✓</span>
+  Token ;
+  Example
+   ; A comment
+ row
+  Feature Comments
+  FeatureLink ../features/hasComments.html
+  Supported <span class="hasFeature">✓</span>
+  Token 
+  Example
+ row
+  Feature Semantic Indentation
+  FeatureLink ../features/hasSemanticIndentation.html
+  Supported <span class="doesNotHaveFeature">X</span>
+  Token 
+  Example
+
+## Books about PureBasic from ISBNdb
+pipeTable
+ title|titleLink|authors|year|publisher
+ Programming 2d Scrolling Games: For Purebasic Developers|https://isbndb.com/book/9781624883415|John P. Logsdon and Derlidio Siqueira|2012|Bookbaby
+ Basic Programming Language Family: Basic, Quickbasic, Gw-basic, Ibm Basica, True Basic, Vbscript, Visual Basic For Applications, Purebasic|https://isbndb.com/book/9781157362517|Books and LLC and Group|2010|
+
+keyboardNav lfe.html forth.html
+
+import ../footer.scroll

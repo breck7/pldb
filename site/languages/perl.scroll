@@ -1,0 +1,596 @@
+import header.scroll
+
+title Perl
+
+title Perl - Programming language
+ hidden
+
+html
+ <a class="prevLang" href="php.html">&lt;</a>
+ <a class="nextLang" href="matlab.html">&gt;</a>
+
+viewSourceUrl https://github.com/breck7/pldb/blob/main/database/things/perl.pldb
+
+startColumns 4
+
+html <div class="quickLinks"><a href="https://www.perl.org"><svg role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12.7166 3.79541C12.2835 3.49716 11.7165 3.49716 11.2834 3.79541L4.14336 8.7121C3.81027 8.94146 3.60747 9.31108 3.59247 9.70797C3.54064 11.0799 3.4857 13.4824 3.63658 15.1877C3.7504 16.4742 4.05336 18.1747 4.29944 19.4256C4.41371 20.0066 4.91937 20.4284 5.52037 20.4284H8.84433C8.98594 20.4284 9.10074 20.3111 9.10074 20.1665V15.9754C9.10074 14.9627 9.90433 14.1417 10.8956 14.1417H13.4091C14.4004 14.1417 15.204 14.9627 15.204 15.9754V20.1665C15.204 20.3111 15.3188 20.4284 15.4604 20.4284H18.4796C19.0806 20.4284 19.5863 20.0066 19.7006 19.4256C19.9466 18.1747 20.2496 16.4742 20.3634 15.1877C20.5143 13.4824 20.4594 11.0799 20.4075 9.70797C20.3925 9.31108 20.1897 8.94146 19.8566 8.7121L12.7166 3.79541ZM10.4235 2.49217C11.3764 1.83602 12.6236 1.83602 13.5765 2.49217L20.7165 7.40886C21.4457 7.91098 21.9104 8.73651 21.9448 9.64736C21.9966 11.0178 22.0564 13.5119 21.8956 15.3292C21.7738 16.7067 21.4561 18.4786 21.2089 19.7353C20.9461 21.0711 19.7924 22.0001 18.4796 22.0001H15.4604C14.4691 22.0001 13.6655 21.1791 13.6655 20.1665V15.9754C13.6655 15.8307 13.5507 15.7134 13.4091 15.7134H10.8956C10.754 15.7134 10.6392 15.8307 10.6392 15.9754V20.1665C10.6392 21.1791 9.83561 22.0001 8.84433 22.0001H5.52037C4.20761 22.0001 3.05389 21.0711 2.79113 19.7353C2.54392 18.4786 2.22624 16.7067 2.10437 15.3292C1.94358 13.5119 2.00338 11.0178 2.05515 9.64736C2.08957 8.73652 2.55427 7.91098 3.28346 7.40886L10.4235 2.49217Z"/></svg></a> <a href="https://en.wikipedia.org/wiki/Perl"><svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="98.05px" height="98.05px" viewBox="0 0 98.05 98.05" style="enable-background:new 0 0 98.05 98.05;" xml:space="preserve"><path d="M98.023,17.465l-19.584-0.056c-0.004,0.711-0.006,1.563-0.017,2.121c1.664,0.039,5.922,0.822,7.257,4.327L66.92,67.155 c-0.919-2.149-9.643-21.528-10.639-24.02l9.072-18.818c1.873-2.863,5.455-4.709,8.918-4.843l-0.01-1.968L55.42,17.489 c-0.045,0.499,0.001,1.548-0.068,2.069c5.315,0.144,7.215,1.334,5.941,4.508c-2.102,4.776-6.51,13.824-7.372,15.475 c-2.696-5.635-4.41-9.972-7.345-16.064c-1.266-2.823,1.529-3.922,4.485-4.004v-1.981l-21.82-0.067 c0.016,0.93-0.021,1.451-0.021,2.131c3.041,0.046,6.988,0.371,8.562,3.019c2.087,4.063,9.044,20.194,11.149,24.514 c-2.685,5.153-9.207,17.341-11.544,21.913c-3.348-7.43-15.732-36.689-19.232-44.241c-1.304-3.218,3.732-5.077,6.646-5.213 l0.019-2.148L0,17.398c0.005,0.646,0.027,1.71,0.029,2.187c4.025-0.037,9.908,6.573,11.588,10.683 c7.244,16.811,14.719,33.524,21.928,50.349c0.002,0.029,2.256,0.059,2.281,0.008c4.717-9.653,10.229-19.797,15.206-29.56 L63.588,80.64c0.005,0.004,2.082,0.016,2.093,0.007c7.962-18.196,19.892-46.118,23.794-54.933c1.588-3.767,4.245-6.064,8.543-6.194 l0.032-1.956L98.023,17.465z"/></svg></a> <a href="https://reddit.com/r/perl"><svg role="img" width="32px" height="32px" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg"><path d="M 18.65625 4 C 16.558594 4 15 5.707031 15 7.65625 L 15 11.03125 C 12.242188 11.175781 9.742188 11.90625 7.71875 13.0625 C 6.945313 12.316406 5.914063 12 4.90625 12 C 3.816406 12 2.707031 12.355469 1.9375 13.21875 L 1.9375 13.25 L 1.90625 13.28125 C 1.167969 14.203125 0.867188 15.433594 1.0625 16.65625 C 1.242188 17.777344 1.898438 18.917969 3.03125 19.65625 C 3.023438 19.769531 3 19.882813 3 20 C 3 22.605469 4.574219 24.886719 6.9375 26.46875 C 9.300781 28.050781 12.488281 29 16 29 C 19.511719 29 22.699219 28.050781 25.0625 26.46875 C 27.425781 24.886719 29 22.605469 29 20 C 29 19.882813 28.976563 19.769531 28.96875 19.65625 C 30.101563 18.917969 30.757813 17.777344 30.9375 16.65625 C 31.132813 15.433594 30.832031 14.203125 30.09375 13.28125 L 30.0625 13.25 C 29.292969 12.386719 28.183594 12 27.09375 12 C 26.085938 12 25.054688 12.316406 24.28125 13.0625 C 22.257813 11.90625 19.757813 11.175781 17 11.03125 L 17 7.65625 C 17 6.675781 17.558594 6 18.65625 6 C 19.175781 6 19.820313 6.246094 20.8125 6.59375 C 21.65625 6.890625 22.75 7.21875 24.15625 7.3125 C 24.496094 8.289063 25.414063 9 26.5 9 C 27.875 9 29 7.875 29 6.5 C 29 5.125 27.875 4 26.5 4 C 25.554688 4 24.738281 4.535156 24.3125 5.3125 C 23.113281 5.242188 22.246094 4.992188 21.46875 4.71875 C 20.566406 4.402344 19.734375 4 18.65625 4 Z M 16 13 C 19.152344 13 21.964844 13.867188 23.9375 15.1875 C 25.910156 16.507813 27 18.203125 27 20 C 27 21.796875 25.910156 23.492188 23.9375 24.8125 C 21.964844 26.132813 19.152344 27 16 27 C 12.847656 27 10.035156 26.132813 8.0625 24.8125 C 6.089844 23.492188 5 21.796875 5 20 C 5 18.203125 6.089844 16.507813 8.0625 15.1875 C 10.035156 13.867188 12.847656 13 16 13 Z M 4.90625 14 C 5.285156 14 5.660156 14.09375 5.96875 14.25 C 4.882813 15.160156 4.039063 16.242188 3.53125 17.4375 C 3.277344 17.117188 3.125 16.734375 3.0625 16.34375 C 2.953125 15.671875 3.148438 14.976563 3.46875 14.5625 C 3.472656 14.554688 3.464844 14.539063 3.46875 14.53125 C 3.773438 14.210938 4.3125 14 4.90625 14 Z M 27.09375 14 C 27.6875 14 28.226563 14.210938 28.53125 14.53125 C 28.535156 14.535156 28.527344 14.558594 28.53125 14.5625 C 28.851563 14.976563 29.046875 15.671875 28.9375 16.34375 C 28.875 16.734375 28.722656 17.117188 28.46875 17.4375 C 27.960938 16.242188 27.117188 15.160156 26.03125 14.25 C 26.339844 14.09375 26.714844 14 27.09375 14 Z M 11 16 C 9.894531 16 9 16.894531 9 18 C 9 19.105469 9.894531 20 11 20 C 12.105469 20 13 19.105469 13 18 C 13 16.894531 12.105469 16 11 16 Z M 21 16 C 19.894531 16 19 16.894531 19 18 C 19 19.105469 19.894531 20 21 20 C 22.105469 20 23 19.105469 23 18 C 23 16.894531 22.105469 16 21 16 Z M 21.25 21.53125 C 20.101563 22.597656 18.171875 23.28125 16 23.28125 C 13.828125 23.28125 11.898438 22.589844 10.75 21.65625 C 11.390625 23.390625 13.445313 25 16 25 C 18.554688 25 20.609375 23.398438 21.25 21.53125 Z"/></svg></a> <a href="https://lists.perl.org/all.html"><svg role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M24 5.457v13.909c0 .904-.732 1.636-1.636 1.636h-3.819V11.73L12 16.64l-6.545-4.91v9.273H1.636A1.636 1.636 0 0 1 0 19.366V5.457c0-2.023 2.309-3.178 3.927-1.964L5.455 4.64 12 9.548l6.545-4.91 1.528-1.145C21.69 2.28 24 3.434 24 5.457z"/></svg></a> <a href="https://perldoc.perl.org/"><svg viewBox="0 0 500 500" xmlns="http://www.w3.org/2000/svg"><g transform="matrix(1, 0, 0, 1, 13.859316, 9.109739)"><g><g><path d="M340.732,0H55v485h375V94.518L340.732,0z M345,26.364L405.1,90H345V26.364z M415,470H70V15h260v90h85V470z"/><rect x="102.5" y="191" width="280" height="15"/><rect x="102.5" y="141" width="120" height="15"/><rect x="102.5" y="241" width="280" height="15"/><rect x="102.5" y="291" width="280" height="15"/><rect x="102.5" y="341" width="280" height="15"/><rect x="102.5" y="391" width="280" height="15"/></g></g></g></svg></a></div>
+
+* Perl is a <a href="../lists/languages.html?filter=pl">programming language</a> created in 1987 by Larry Wall.
+ link ../lists/languages.html?filter=1987 1987
+ link ../lists/creators.html#larryWall Larry Wall
+
+kpiTable
+ #10 <span title="TotalRank: 28 Jobs: 17 Users: 16 Facts: 6 Links: 6">on PLDB</span>
+ 36 Years Old
+ 492.0k <span title="Crude user estimate from a linear model.">Users</span>
+ 276 <span title="Books about or leveraging Perl">Books</span>
+ 9 <span title="Academic publications about or leveraging Perl">Papers</span>
+ 170k <span title="Perl repos on GitHub.">Repos</span>
+
+* Try now: <a href="https://riju.codes/perl">Riju</a> · <a href="https://tio.run/#perl6">TIO</a>
+
+monacoEditor perl
+ print("Hello, world!\n");
+ 
+
+* Perl is a family of high-level, general-purpose, interpreted, dynamic programming languages. The languages in this family include Perl 5 and Perl 6. Though Perl is not officially an acronym, there are various backronyms in use, including "Practical Extraction and Reporting Language". Read more on Wikipedia...
+ https://en.wikipedia.org/wiki/Perl Read more on Wikipedia...
+
+- Perl website
+ https://www.perl.org
+- Perl downloads page
+ https://www.perl.org/get.html
+- Perl Wikipedia page
+ https://en.wikipedia.org/wiki/Perl
+- Perl docs
+ https://perldoc.perl.org/
+- Perl specs
+ https://perldoc.perl.org/File::Spec
+- Perl mailing list
+ https://lists.perl.org/all.html
+- There are at least 169,830 Perl repos on <a href="https://github.com/search?q=language:Perl">GitHub</a>
+- Perl first developed in <a href="../lists/originCommunities.html#unisys">Unisys</a>
+- PLDB estimates there are currently 13k job openings for Perl programmers.
+- file extensions for Perl include pl, pm, t, pod, al, cgi, fcgi, perl, ph, plx and psgi
+- The  Google BigQuery Public Dataset GitHub snapshot shows 69k users using Perl in 102k repos on <a href="https://api.github.com/search/repositories?q=language:Perl">GitHub</a>
+- Check out the 83 <a href="https://www.meetup.com/topics/perl/">Perl meetup groups</a> on Meetup.com.
+- There are 15,510 members in the <a href="https://reddit.com/r/perl">Perl subreddit</a>
+- There are 2,433 <a href="https://projecteuler.net/language=Perl">Project Euler</a> users using Perl
+- In the 2021 StackOverflow <a href="https://insights.stackoverflow.com/survey">developer survey</a> Perl programmers reported a median salary of $80,000. 2% of respondents reported using Perl. 2,028 programmers reported using Perl, and 1,175 said they wanted to use it
+- Explore Perl snippets on <a href="http://www.rosettacode.org/wiki/Category:Perl">Rosetta Code</a>
+- Perl on HOPL
+ https://hopl.info/showlanguage.prx?exp=2355
+- Perl ranks #15 in the <a href="https://www.tiobe.com/tiobe-index/">TIOBE Index</a>
+- <a href="codemirror.html">CodeMirror</a> <a href="https://github.com/codemirror/codemirror5/tree/master/mode/perl">package</a> for syntax highlighting Perl
+- <a href="monaco.html">Monaco</a> <a href="https://github.com/microsoft/monaco-editor/tree/main/src/basic-languages/perl">package</a> for syntax highlighting Perl
+- <a href="pygments.html">Pygments</a> supports <a href="https://github.com/pygments/pygments/blob/master/pygments/lexers/perl.py">syntax highlighting</a> for Perl
+- GitHub supports <a href="https://github.com/textmate/perl.tmbundle" title="The package used for syntax highlighting by GitHub Linguist.">syntax highlighting</a> for Perl
+- PLDB has 4 <a href="jupyter-notebook.html">Jupyter</a> Kernels for Perl: <a href="https://metacpan.org/release/Devel-IPerl">metacpan.org</a>, <a href="https://github.com/gabrielash/p6-net-jupyter">github.com</a>, <a href="https://github.com/timo/iperl6kernel">github.com</a>, <a href="https://github.com/bduggan/p6-jupyter-kernel">github.com</a>
+- There is a <a href="https://www.cpan.org/">central package repository</a> for Perl
+- Annual Reports for Perl
+ http://blogs.perl.org/users/mohammad_s_anwar/2022/01/
+- Release Notes for Perl
+ https://dev.perl.org/perl5/news/
+- Events page for Perl
+ https://www.perl.org/events.html
+- Frequently Asked Questions for Perl
+ https://perldoc.perl.org/perlfaq
+- Indeed.com has 8,795 matches for <a href="https://www.indeed.com/jobs?q=perl engineer">"perl engineer"</a>.
+- <a href="https://www.perl.org">perl.org</a> was registered in 1995
+- See also: (38 related languages)<a href="pearl.html">PEARL</a>, <a href="c.html">C</a>, <a href="lisp.html">Lisp</a>, <a href="pascal.html">Pascal</a>, <a href="sed.html">sed</a>, <a href="coffeescript.html">CoffeeScript</a>, <a href="ecmascript.html">ECMAScript</a>, <a href="falcon.html">Falcon</a>, <a href="groovy.html">Groovy</a>, <a href="javascript.html">JavaScript</a>, <a href="julia.html">Julia</a>, <a href="lpc.html">LPC</a>, <a href="perl-6.html">Perl 6</a>, <a href="php.html">PHP</a>, <a href="python.html">Python</a>, <a href="ruby.html">Ruby</a>, <a href="powershell.html">PowerShell</a>, <a href="unix.html">Unix</a>, <a href="bourne-shell.html">Bourne shell</a>, <a href="regex.html">Regular Expressions</a>, <a href="unicode.html">Unicode</a>, <a href="haskell.html">Haskell</a>, <a href="parrot-vm.html">Parrot</a>, <a href="dtrace.html">DTrace</a>, <a href="json.html">JSON</a>, <a href="awk.html">awk</a>, <a href="fortran.html">Fortran</a>, <a href="s-expressions.html">S-expressions</a>, <a href="yacc.html">Yacc</a>, <a href="bison.html">Bison</a>, <a href="sql.html">SQL</a>, <a href="html.html">HTML</a>, <a href="xs.html">XS</a>, <a href="rfc.html">RFC</a>, <a href="jvm.html">JVM</a>, <a href="apl.html">APL</a>, <a href="perl-data-language.html">Perl Data Language</a>, <a href="pod.html">Pod</a>
+- HTML of this page generated by <a href="https://github.com/breck7/pldb/blob/main/code/LanguagePage.ts">LanguagePage.ts</a>
+- <a href="https://pldb.com/edit/perl">Improve our Perl file</a>
+
+html <br>
+
+codeWithHeader Example from <a href='https://riju.codes/perl'>Riju</a>:
+ print(&quot;Hello, world!\n&quot;);
+ 
+
+codeWithHeader Example from <a href='https://github.com/leachim6/hello-world/blob/main/p/Perl.pl'>hello-world</a>:
+ #!/usr/bin/perl
+ print &quot;Hello World\n&quot;;
+ 
+
+codeWithHeader Example from <a href='http://helloworldcollection.de/#Perl'>the Hello World Collection</a>:
+ # Hello world in perl
+ 
+ print &quot;Hello World!\n&quot;;
+ 
+
+codeWithHeader Example from <a href='https://github.com/textmate/perl.tmbundle'>Linguist</a>:
+ #!/usr/local/bin/perl
+ print &quot;Perl\n&quot;
+ 
+
+codeWithHeader Example from <a href='https://en.wikipedia.org/wiki/Perl'>Wikipedia</a>:
+ #!/usr/bin/perl
+ use strict;
+ use warnings;
+ use IO::Handle;
+ 
+ my ( $remaining, $total );
+ 
+ $remaining = $total = shift(@ARGV);
+ 
+ STDOUT-&gt;autoflush(1);
+ 
+ while ( $remaining ) {
+     printf ( &quot;Remaining %s/%s \r&quot;, $remaining--, $total );
+     sleep 1;
+ }
+ 
+ print &quot;\n&quot;;
+
+## <a href="../lists/keywords.html?filter=perl">Keywords</a> in Perl
+* __DATA__ else lock qw __END__ elsif lt qx __FILE__ eq m s __LINE__ exp ne sub __PACKAGE__ for no tr and foreach or unless cmp ge package until continue gt q while CORE if qq xor do le qr y
+
+endColumns
+
+## Language <a href="../lists/features.html">features</a>
+
+treeTable
+ row
+  Feature Scientific Notation
+  FeatureLink ../features/hasScientificNotation.html
+  Supported <span class="hasFeature">✓</span>
+  Token 
+  Example
+ row
+  Feature Binary Literals
+  FeatureLink ../features/hasBinaryNumbers.html
+  Supported <span class="hasFeature">✓</span>
+  Token 
+  Example
+   # 0b[01]+(_[01]+)*
+ row
+  Feature Integers
+  FeatureLink ../features/hasIntegers.html
+  Supported <span class="hasFeature">✓</span>
+  Token 
+  Example
+   # \d+(_\d+)*
+ row
+  Feature Floats
+  FeatureLink ../features/hasFloats.html
+  Supported <span class="hasFeature">✓</span>
+  Token 
+  Example
+   # (?i)(\d*(_\d*)*\.\d+(_\d*)*|\d+(_\d*)*\.\d+(_\d*)*)(e[+-]?\d+)?
+ row
+  Feature Hexadecimals
+  FeatureLink ../features/hasHexadecimals.html
+  Supported <span class="hasFeature">✓</span>
+  Token 
+  Example
+   # 0x[0-9A-Fa-f]+(_[0-9A-Fa-f]+)*
+ row
+  Feature Octals
+  FeatureLink ../features/hasOctals.html
+  Supported <span class="hasFeature">✓</span>
+  Token 
+  Example
+   # 0_?[0-7]+(_[0-7]+)*
+ row
+  Feature Conditionals
+  FeatureLink ../features/hasConditionals.html
+  Supported <span class="hasFeature">✓</span>
+  Token 
+  Example
+ row
+  Feature While Loops
+  FeatureLink ../features/hasWhileLoops.html
+  Supported <span class="hasFeature">✓</span>
+  Token 
+  Example
+ row
+  Feature Print() Debugging
+  FeatureLink ../features/hasPrintDebugging.html
+  Supported <span class="hasFeature">✓</span>
+  Token print
+  Example
+ row
+  Feature Range Operator
+  FeatureLink ../features/hasRangeOperators.html
+  Supported <span class="hasFeature">✓</span>
+  Token 
+  Example
+   # https://users.cs.cf.ac.uk/Dave.Marshall/PERL/node38.html
+   @array = (1..10);
+ row
+  Feature Operator Overloading
+  FeatureLink ../features/hasOperatorOverloading.html
+  Supported <span class="hasFeature">✓</span>
+  Token 
+  Example
+ row
+  Feature Multiple Inheritance
+  FeatureLink ../features/hasMultipleInheritance.html
+  Supported <span class="hasFeature">✓</span>
+  Token 
+  Example
+ row
+  Feature File Imports
+  FeatureLink ../features/hasImports.html
+  Supported <span class="hasFeature">✓</span>
+  Token 
+  Example
+   use Digest::MD5 'md5_hex';
+ row
+  Feature Directives
+  FeatureLink ../features/hasDirectives.html
+  Supported <span class="hasFeature">✓</span>
+  Token 
+  Example
+   # In Perl, the keyword "use", which imports modules, can also be used to specify directives, such as use strict; or use utf8;
+   use utf8;
+ row
+  Feature Here Document
+  FeatureLink ../features/hasHereDocs.html
+  Supported <span class="hasFeature">✓</span>
+  Token 
+  Example
+ row
+  Feature Line Comments
+  FeatureLink ../features/hasLineComments.html
+  Supported <span class="hasFeature">✓</span>
+  Token #
+  Example
+   # A comment
+ row
+  Feature MultiLine Comments
+  FeatureLink ../features/hasMultiLineComments.html
+  Supported <span class="hasFeature">✓</span>
+  Token =begin =cut
+  Example
+ row
+  Feature Comments
+  FeatureLink ../features/hasComments.html
+  Supported <span class="hasFeature">✓</span>
+  Token 
+  Example
+   # This is a comment in perl
+   =begin comment
+   This is all part of multiline comment.
+   You can use as many lines as you like
+   These comments will be ignored by the 
+   compiler until the next =cut is encountered.
+   =cut
+ row
+  Feature Partial Application
+  FeatureLink ../features/hasPartialApplication.html
+  Supported <span class="hasFeature">✓</span>
+  Token 
+  Example
+   sub first-and-last ( $first, $last ) {
+      say "Name is $first $last";
+   }
+   my &surname-smith = &first-and-last.assuming( *, 'Smith' );
+   &surname-smith.( 'Joe' ); # OUTPUT: «Name is Joe Smith␤» 
+ row
+  Feature Regular Expression Syntax Sugar
+  FeatureLink ../features/hasRegularExpressionsSyntaxSugar.html
+  Supported <span class="hasFeature">✓</span>
+  Token 
+  Example
+   print "Hello World".match(/\w/)
+ row
+  Feature Strings
+  FeatureLink ../features/hasStrings.html
+  Supported <span class="hasFeature">✓</span>
+  Token 
+  Example
+   "hello world"
+ row
+  Feature Case Insensitive Identifiers
+  FeatureLink ../features/hasCaseInsensitiveIdentifiers.html
+  Supported <span class="doesNotHaveFeature">X</span>
+  Token 
+  Example
+ row
+  Feature Semantic Indentation
+  FeatureLink ../features/hasSemanticIndentation.html
+  Supported <span class="doesNotHaveFeature">X</span>
+  Token 
+  Example
+
+## Books about Perl on goodreads
+pipeTable
+ title|titleLink|author|year|reviews|ratings|rating
+ Programming Perl|https://www.goodreads.com/search?q=Programming Perl Tom Christiansen|Tom Christiansen|1991|52|2104|4.04
+ Advanced Perl Programming (Perl Series)|https://www.goodreads.com/search?q=Advanced Perl Programming (Perl Series) Sriram Srinivasan|Sriram Srinivasan|1997|1|201|3.93
+ Effective Perl Programming|https://www.goodreads.com/search?q=Effective Perl Programming Joseph Hall|Joseph Hall|1997|10|103|4.22
+ Perl for Dummies|https://www.goodreads.com/search?q=Perl for Dummies Paul E.  Hoffman|Paul E.  Hoffman|1997|5|48|3.42
+ The Perl CD Bookshelf: Perl in a Nutshell/Programming Perl, 2nd Edition/Perl Cookbook/Advanced Perl Programming/Learning Perl, 2nd Edition/Learning Perl on WIN32 Systems|https://www.goodreads.com/search?q=The Perl CD Bookshelf: Perl in a Nutshell/Programming Perl, 2nd Edition/Perl Cookbook/Advanced Perl Programming/Learning Perl, 2nd Edition/Learning Perl on WIN32 Systems O'Reilly Media Inc.|O'Reilly Media Inc.|1999|0|27|4.11
+ Programming the Perl DBI|https://www.goodreads.com/search?q=Programming the Perl DBI Tim Bunce|Tim Bunce|2000|3|77|3.47
+
+## Books about Perl from ISBNdb
+pipeTable
+ title|titleLink|authors|year|publisher
+ Perl by Example (4th Edition)|https://isbndb.com/book/9780132381826|Quigley, Ellie|2007|Prentice Hall
+ Network Programming with Perl|https://isbndb.com/book/9780201615715|Stein, Lincoln D.|2000|Addison-Wesley Professional
+ Perl 5 Unleashed|https://isbndb.com/book/9780672308918|Husain, Kamran and Breedlove, Robert F.|1996|Sams
+ Perl and CGI for the World Wide Web, Second Edition|https://isbndb.com/book/9780201735680|Castro, Elizabeth|2001|Peachpit Press
+ Beginning Perl|https://isbndb.com/book/9781118013847|Poe, Curtis|2012|Wrox
+ Perl and CGI for the World Wide Web (Visual QuickStart Guide)|https://isbndb.com/book/9780201353587|Castro, Elizabeth|1998|Peachpit Press
+ Advanced Perl Programming (Perl Series)|https://isbndb.com/book/9781565922204|Srinivasan, Sriram|1997|O'Reilly Media
+ Mastering Regular Expressions: Powerful Techniques for Perl and Other Tools (Nutshell Handbooks)|https://isbndb.com/book/9781565922570|Friedl, Jeffrey E. F.|1997|O'Reilly Media
+ Perl 5 Developer's Guide|https://isbndb.com/book/9780079136985|Peschko, Ed and Dewolfe, Michelle|1998|Computing McGraw-Hill
+ Perl Pocket Reference: Programming Tools|https://isbndb.com/book/9781449303709|Vromans, Johan|2011|O'Reilly Media
+ Intermediate Perl|https://isbndb.com/book/9780596102067|Randal L. Schwartz and Tom Phoenix and brian d foy|2006|O'Reilly Media
+ Effective Perl Programming: Writing Better Programs with Perl|https://isbndb.com/book/9780201419757|Hall, Joseph N. and Schwartz, Randal|1998|Addison-Wesley Professional
+ The Perl CD Bookshelf: Perl in a Nutshell/Programming Perl, 2nd Edition/Perl Cookbook/Advanced Perl Programming/Learning Perl, 2nd Edition/Learning Perl on WIN32 Systems|https://isbndb.com/book/9781565924628|O'Reilly Media, Inc.|1999|O'Reilly Media
+ Perl Core Language Little Black Book: The Essentials of the Perl Language|https://isbndb.com/book/9781576104262|Holzner, Steven|1999|Coriolis Group
+ Learning Perl (Nutshell Handbooks)|https://isbndb.com/book/9781565922846|Christiansen, Tom and Schwartz, Randal L.|1997|O'Reilly Media
+ Mastering Perl: Creating Professional Programs with Perl|https://isbndb.com/book/9781449393113|foy, brian d|2014|O'Reilly Media
+ Perl For Dummies|https://isbndb.com/book/9780764537509|Hoffman, Paul|2003|For Dummies
+ Mastering Perl/Tk: Graphical User Interfaces in Perl|https://isbndb.com/book/9781565927162|Lidie, Stephen and Walsh, Nancy|2002|O'Reilly Media
+ Sams Teach Yourself Perl in 24 Hours (3rd Edition)|https://isbndb.com/book/9780672327933|Pierce, Clinton|2005|Sams Publishing
+ Perl Programming For Medicine And Biology|https://isbndb.com/book/9780763743338|Jules J. Berman|2007|Jones & Barlett Learning
+ Instant Perl Modules|https://isbndb.com/book/9780072129625|Sparling, Douglas and Wiles, Frank|2001|McGraw-Hill Osborne Media
+ Professional Perl Development|https://isbndb.com/book/9781861004383|Arva, Adrian and Ellis, Joshua and Corliss, Arthur and Kobes, Randy and Wainwright, Peter and Wilcox, Mark and de Mauro, Pancrazio and Mauro, Pancrazio de and Oliver, Simon and Brown, Gavin|2001|Apress
+ The Perl CD Bookshelf, Version 3.0: 7 Bestselling Books on CD-ROM Includes a Bonus Book!  Perl in a Nutshell, 2nd Edition|https://isbndb.com/book/9780596003890|O'Reilly & Associates|2002|O'Reilly Media
+ Perl CD Bookshelf 2.0 (Book & CD-ROM)|https://isbndb.com/book/9780596001643|Various Authors|2001|O'Reilly Media
+ The Web Wizard's Guide to Perl and CGI|https://isbndb.com/book/9780201764369|David A. Lash|2002|Addison-Wesley
+ Advanced Perl Programming: From Advanced to Expert|https://isbndb.com/book/9781484258620|"Rothwell, William ""Bo"""|2020|Apress
+ Perl 5 Pocket Reference|https://isbndb.com/book/9781565924956|Vromans, Johan|1998|O'Reilly Media
+ Perl Programming for Biologists|https://isbndb.com/book/9780471430599|Jamison, D. Curtis|2003|Wiley-Liss
+ Graphics Programming with Perl|https://isbndb.com/book/9781930110021|Verbruggen, Martien|2002|Manning Publications
+ Perl 6 Essentials|https://isbndb.com/book/9780596004996|Allison Randal and Dan Sugalski and Leopold Totsch|2003|O'Reilly Media
+ Weaving a Website: Programming in HTML, Java Script, Perl and Java|https://isbndb.com/book/9780130282200|Anderson-Freed, Susan|2001|Prentice Hall
+ Perl 5 Desktop Reference (A Nutshell Handbook)|https://isbndb.com/book/9781565921870|Vromans, Johan|1996|O'Reilly Media
+ Win32 Perl Programming: The Standard Extensions|https://isbndb.com/book/9781578702169|Roth, Dave|2001|Sams Publishing
+ Beginning Perl Programming: From Novice to Professional|https://isbndb.com/book/9781484250549|"Rothwell, William ""Bo"""|2019|Apress
+ Wicked Cool Perl Scripts: Useful Perl Scripts That Solve Difficult Problems|https://isbndb.com/book/9781593270629|Oualline, Steve|2006|No Starch Press
+ Perl Debugged|https://isbndb.com/book/9780201700541|Scott, Peter|2001|Addison-wesley
+ Perl Black Book: The Most Comprehensive Perl Reference Available Today|https://isbndb.com/book/9781576104651|Holzner, Steven|1999|Coriolis Group Books
+ Writing CGI Applications with Perl|https://isbndb.com/book/9780201710144|Meltzer, Kevin and Michalski, Brent|2001|Addison-Wesley Professional
+ Perl Black Book, 2nd Edition|https://isbndb.com/book/9781588801937|Holzner, Steven|2001|Coriolis Group
+ Win32 Perl Scripting: The Administrator's Handbook|https://isbndb.com/book/9781578702152|Roth, Dave|2000|Sams Publishing
+ Advanced programming in Perl for beginners|https://isbndb.com/book/9781533018731|Oria San Martin, Dorian|2016|CreateSpace Independent Publishing Platform
+ Teach Yourself Cgi Programming With Perl in a Week (Sams Teach Yourself)|https://isbndb.com/book/9781575210094|Herrmann, Eric|1996|Sams
+ Perl In Your Hands: For Beginners in Perl Programming|https://isbndb.com/book/9781530959631|S, Gokul Amuthan|2016|CreateSpace Independent Publishing Platform
+ Perl 5 for Dummies|https://isbndb.com/book/9780764500442|Hoffman, Paul|1997|Hungry Minds Inc
+ Learning Perl|https://isbndb.com/book/9780596551926|Tom Phoenix; Randal L. Schwartz|20010718|O'Reilly Media, Inc.
+ Combinatorial Pattern Matching Algorithms in Computational Biology Using Perl and R (Chapman & Hall/CRC Computational Biology Series)|https://isbndb.com/book/9781420069730|Valiente, Gabriel|2009|Chapman and Hall/CRC
+ Unix And Perl To The Rescue!: A Field Guide For The Life Sciences (and Other Data-rich Pursuits)|https://isbndb.com/book/9780521169820|Bradnam, Keith.|2012|Cambridge University Press
+ Cgi Developer's Resource: Web Programming in Tcl and Perl (Resource Series)|https://isbndb.com/book/9780137277513|Ivler, J. M. and Husain, Kamran|1997|Prentice Hall Ptr
+ Perl Cookbook|https://isbndb.com/book/9780596554965|Tom Christiansen; Nathan Torkington|20030821|O'Reilly Media, Inc.
+ Beginning Perl for Bioinformatics|https://isbndb.com/book/9780596550479|James Tisdall|20011022|O'Reilly Media, Inc.
+ Programming the Network with Perl|https://isbndb.com/book/9780471486701|Barry, Paul|2002|Wiley
+ Pro Perl Programming: From Professional to Advanced|https://isbndb.com/book/9781484256053|"Rothwell, William ""Bo"""|2020|Apress
+ Sams Teach Yourself Perl 5 For Windows Nt In 21 Days|https://isbndb.com/book/9780672310478|Till and David and Zhang and Tony|1997|Sams
+ Combinatorial Pattern Matching Algorithms in Computational Biology Using Perl and R (Chapman & Hall/CRC Computational Biology Series)|https://isbndb.com/book/9781420069747|Valiente, Gabriel|2009|Chapman and Hall/CRC
+ An Introduction to Language Processing with Perl and Prolog: An Outline of Theories, Implementation, and Application with Special Consideration of English, French, and German (Cognitive Technologies)|https://isbndb.com/book/9783540343363|Nugues, Pierre M.|2006|Springer
+ Perl Cookbook, Second Edition|https://isbndb.com/book/9780596003135|Christiansen, Tom and Torkington, Nathan|2003|O'Reilly Media
+ Programming Perl (3rd Edition)|https://isbndb.com/book/9780596000271|Wall, Larry and Christiansen, Tom and Orwant, Jon|2000|O'Reilly Media
+ Programming for Linguists: Perl for Language Researchers|https://isbndb.com/book/9780631234340|Hammond, Michael|2003|Wiley-Blackwell
+ Intermediate Perl: Beyond The Basics of Learning Perl|https://isbndb.com/book/9781449393090|Schwartz, Randal L. and foy, brian d and Phoenix, Tom|2012|O'Reilly Media
+ Beginning Perl Programming: From Novice to Professional|https://isbndb.com/book/9781484250556|"Rothwell, William ""Bo"""|2019|Apress
+ Perl Best Practices: Standards and Styles for Developing Maintainable Code|https://isbndb.com/book/9780596001735|Conway, Damian|2005|O'Reilly Media
+ Advanced Perl Programming: The Worlds Most Highly Developed Perl Tutorial|https://isbndb.com/book/9780596004569|Cozens, Simon|2005|O'Reilly Media
+ Beginning Perl for Bioinformatics|https://isbndb.com/book/9780596000806|James Tisdall|2001|O'Reilly Media
+ Programming the Perl DBI: Database programming with Perl|https://isbndb.com/book/9781565926998|Tim Bunce and Alligator Descartes|2000|O'Reilly Media
+ CGI Programming 101: Programming Perl for the World Wide Web, Second Edition|https://isbndb.com/book/9780966942613|Jacqueline Hamilton|2004|CGI101.com
+ Effective Perl Programming: Ways to Write Better, More Idiomatic Perl (Effective Software Development)|https://isbndb.com/book/9780321718273|Hall, Joseph N. and McAdams, Joshua A. and Foy, Brian D.|2010|Addison-Wesley Professional
+ Effective Perl Programming: Ways to Write Better, More Idiomatic Perl (Effective Software Development Series)|https://isbndb.com/book/9780321496942|Hall, Joseph and McAdams, Joshua and Foy, Brian|2010|Addison-Wesley Professional
+ Elements of Programming with Perl|https://isbndb.com/book/9781884777806|Johnson, Andrew L|1999|Manning Publications
+ Perl in A Nutshell: A Desktop Quick Reference (2nd Edition)|https://isbndb.com/book/9780596002411|Ellen Siever and Stephen Spainhour and Nathan Patwardhan|2002|O'Reilly Media
+ Mastering Perl for Bioinformatics|https://isbndb.com/book/9780596003074|James D. Tisdall|2003|O'Reilly Media
+ Data Munging with Perl|https://isbndb.com/book/9781930110007|Cross, David|2001|Manning Publications
+ Parsing with Perl 6 Regexes and Grammars: A Recursive Descent into Parsing|https://isbndb.com/book/9781484232286|Lenz, Moritz|2017|Apress
+ CGI Programming in C and Perl|https://isbndb.com/book/9780201422191|Boutell, Thomas|1996|Addison-Wesley Professional
+ Perl Hacks: Tips & Tools for Programming, Debugging, and Surviving|https://isbndb.com/book/9780596526740|"chromatic and Damian Conway and Curtis ""Ovid"" Poe"|2006|O'Reilly Media
+ Perl Graphics Programming: Creating SVG, SWF (Flash), JPEG and PNG files with Perl|https://isbndb.com/book/9780596002190|Wallace, Shawn|2002|O'Reilly Media
+ Perl and XML: XML Processing with Perl|https://isbndb.com/book/9780596002053|Ray, Erik T. and McIntosh, Jason|2002|O'Reilly Media
+ Scripting with Objects: A Comparative Presentation of Object-Oriented Scripting with Perl and Python|https://isbndb.com/book/9780470397251|Kak, Avinash C.|2008|Wiley
+ Perl How to Program|https://isbndb.com/book/9780130284181|Deitel, Harvey M. and Deitel, Paul J. and Nieto, Tem R. and McPhie, D. C.|2001|Prentice Hall
+ Perl 6 Fundamentals: A Primer with Examples, Projects, and Case Studies|https://isbndb.com/book/9781484228999|Lenz, Moritz|2017|Apress
+ Perl Testing: A Developer's Notebook: A Developer's Notebook|https://isbndb.com/book/9780596100926|Ian Langworth and chromatic|2005|O'Reilly Media
+ Perl Programming for the Absolute Beginner|https://isbndb.com/book/9781598632224|Ford, Jr.  Jerry Lee|2006|Cengage Learning PTR
+ Programming Web Services with Perl|https://isbndb.com/book/9780596002060|Randy J. Ray and Pavel Kulchenko|2002|O'Reilly Media
+ PERL: PERL Programming for Beginners. Learn Programming PERL, 2019 Edition. (Step-by-Step PERL Programming)|https://isbndb.com/book/9781088570869|Publishing, Nexcod|2019|Independently published
+ Beginning Perl (Expert's Voice in Open Source)|https://isbndb.com/book/9781430227939|Lee, James|2010|Apress
+ Extending and Embedding Perl|https://isbndb.com/book/9781930110823|Tim Jenness and Simon Cozens|2002|Manning Publications
+ Practical Text Mining with Perl|https://isbndb.com/book/9780470176436|Bilisoly, Roger|2008|Wiley
+ Advanced Perl Programming: From Advanced to Expert|https://isbndb.com/book/9781484258637|"Rothwell, William ""Bo"""|2020|Apress
+ Sams Teach Yourself Perl in 21 Days (2nd Edition)|https://isbndb.com/book/9780672320354|Lemay, Laura|2002|Sams Publishing
+ Learning Perl Objects, References, and Modules|https://isbndb.com/book/9780596004781|Randal L. Schwartz and Tom Phoenix|2003|O'Reilly Media
+ Pro Perl Debugging|https://isbndb.com/book/9781590594544|Lester, Andy and Foley, Richard|2005|Apress
+ Computer Science & Perl Programming: Best of TPJ|https://isbndb.com/book/9780596003104|Jon Orwant|2002|O'Reilly Media
+ Programming Perl|https://isbndb.com/book/9781565921498|Christiansen, Tom and Schwartz, Randal L. and Wall, Larry|1996|O'Reilly Media
+ Mastering Perl|https://isbndb.com/book/9780596527242|brian d foy|2007|O'Reilly Media
+ Pro Perl Parsing|https://isbndb.com/book/9781590595046|Frenz, Christopher M.|2005|Apress
+ Perl Database Programming|https://isbndb.com/book/9780764549564|Michalski, Brent|2002|John Wiley &Sons
+ Learning Perl on Win32 Systems: Perl Programming in Win32 (Perl Series)|https://isbndb.com/book/9781565923249|Schwartz, Randal L. and Olson, Erik and Christiansen, Tom|1997|O'Reilly Media
+ Perl 6 Deep Dive: Data manipulation, concurrency, functional programming, and more|https://isbndb.com/book/9781787123458|Shitov, Andrew|2017|Packt Publishing
+ PERL in easy steps|https://isbndb.com/book/9781840782608|McGrath, Mike|2003|In Easy Steps Limited
+ Perl Scripting for Windows Security: Live Response, Forensic Analysis, and Monitoring|https://isbndb.com/book/9781597491730|Harlan Carvey and Jeremy Faircloth|2007|Elsevier Inc.
+ Games Diversions & Perl Culture: Best of the Perl Journal|https://isbndb.com/book/9780596003128|Jon Orwant|2004|O'Reilly Media
+ Perl 6 Quick Syntax Reference: A Pocket Guide to the Language, the Core Modules, and the Community|https://isbndb.com/book/9781484249567|Merelo, J.J.|2019|Apress
+ UNIX and Perl to the Rescue!: A Field Guide for the Life Sciences (and Other Data-rich Pursuits)|https://isbndb.com/book/9780521169820|Bradnam, Keith and Korf, Ian|2012|Cambridge University Press
+ Perl Pocket Reference, 4th Edition|https://isbndb.com/book/9780596003746|Vromans, Johan|2002|O'Reilly Media
+ Pro Perl Debugging: From Professional to Expert (Pro: From Professional to Expert)|https://isbndb.com/book/9781430200444|Lester, Andy and Foley, Richard|2006|Apress
+ Programming Perl (Nutshell Handbooks)|https://isbndb.com/book/9780937175644|Schwartz, Randal L. and Wall, Larry|1991|O'Reilly Media
+ Learning Perl (Nutshell Handbooks)|https://isbndb.com/book/9781565920422|Schwartz, Randal L.|1993|O'Reilly Media
+ Pro Perl Programming: From Professional to Advanced|https://isbndb.com/book/9781484256046|"Rothwell, William ""Bo"""|2020-02-29T00:00:01Z|Apress
+ Writing Apache Modules with Perl and C: The Apache API and mod_perl|https://isbndb.com/book/9781565925670|MacEachern, Doug and Stein, Lincoln|1999|O'Reilly Media
+ Perl Scripting for Windows Security: Live Response, Forensic Analysis, and Monitoring|https://isbndb.com/book/9780080555638|Carvey, Harlan|2011|Syngress
+ Professional Perl Programming|https://isbndb.com/book/9781861004499|Simon Cozens|2001|Apress
+ Teach Yourself Cgi Programming With Perl 5 in a Week (Teach Yourself Series)|https://isbndb.com/book/9781575211961|Herrmann, Eric|1996|Sams
+ Perl Core Language Little Black Book, Second Edition|https://isbndb.com/book/9781932111927|Steven Holzner|2004|Paraglyph Press
+ Perl 6 and Parrot Essentials, Second Edition|https://isbndb.com/book/9780596007379|Allison Randal and Dan Sugalski and Leopold Toetsch|2004|O'Reilly Media
+ Teach Yourself Perl 5 in 21 Days (Sams Teach Yourself)|https://isbndb.com/book/9780672308949|Till, David|1996|Sams
+ Penetration Testing with Perl|https://isbndb.com/book/9781783283453|Berdeaux, Douglas|2014|Packt Publishing
+ Web Development with Apache and Perl|https://isbndb.com/book/9781930110069|Peterson, Theo and Petersen, Theo|2002|Manning Publications
+ Perl 5 Pocket Reference, 3rd Edition: Programming Tools (O'Reilly Perl)|https://isbndb.com/book/9780596000325|Vromans, Johan and Mui, Linda|2000|O'Reilly Media
+ Perl for Web Site Management: HTML Generation, Link Checking, Simple CGI, and More|https://isbndb.com/book/9781565926479|Callender, John|2001|O'Reilly Media
+ Perl for Exploring DNA|https://isbndb.com/book/9780195305890|LeBlanc, Mark D. and Dyer, Betsey Dexter|2007|Oxford University Press
+ Perl for the Web|https://isbndb.com/book/9780735711143|Radcliff, Chris|2001|Que Publishing
+ Perl Resource Kit -- UNIX Edition|https://isbndb.com/book/9781565923706|Siever, Ellen and Wall, Larry and Jepson, Brian and Futato, David and Patwardhan, Nathan|1997|O'Reilly Media
+ Perl 6 Deep Dive: Data manipulation, concurrency, functional programming, and more|https://isbndb.com/book/9781787282049|Shitov, Andrew|2017|Packt Publishing
+ Special Edition Using Perl 5 for Web Programming|https://isbndb.com/book/9780789706591|Harlan, David and Doyle, Paul and Healy, Matthew D. and Foghlu, Micheal O and Powers, Shelley|1996|Que Pub
+ Web Programming with Perl 5|https://isbndb.com/book/9781575211121|Middleton, Bill and Deng, Brian and Kemp, Chris|1997|Sams
+ A Little Book on Perl|https://isbndb.com/book/9780139279553|Sebesta, Robert W.|1999|Prentice Hall
+ Perl 6 Now: The Core Ideas Illustrated with Perl 5 (Expert's Voice in Open Source)|https://isbndb.com/book/9781590593950|Walters, Scott|2004|Apress
+ Perl For Dummies?|https://isbndb.com/book/9780764507762|Hoffman, Paul|2000|For Dummies
+ Programming Perl for Geoscientists|https://isbndb.com/book/9781483418438|Oria San Martin, Dorian|2015|Lulu Publishing Services
+ Web Client Programming with Perl|https://isbndb.com/book/9780942597264|Wong, Clinton|1997|White Mane Pub. Co
+ Win32 Perl Programming: The Standard Extensions (The Mtp Windows Nt Professional Reference Series)|https://isbndb.com/book/9781578700677|Roth, Dave|1999|New Riders Pub
+ Perl Programmer's Interactive Workbook (Interactive Workbook (Prentice Hall))|https://isbndb.com/book/9780130208682|Lowe, Vincent|1999-07-01T00:00:01Z|Prentice Hall Ptr
+ On Perl: Perl for Students and Professionals|https://isbndb.com/book/9781581125504|Kalita, Jugal K.|2004|Universal Publishers
+ Perl 5 How-To|https://isbndb.com/book/9781571690586|Glover, Mike and Humphreys, Aidan and Weiss, Ed|1996|Waite Group Pr
+ Programming Web Graphics with Perl and GNU Softwar|https://isbndb.com/book/9781565924789|Shawn P. Wallace|1999-02-11T00:00:01Z|O'Reilly Media
+ Learning PERL the Hard Way: Perl Programming for Beginners|https://isbndb.com/book/9781441419033|Downey, Allen B.|2009-03-20T00:00:01Z|CreateSpace Independent Publishing Platform
+ Perl in a Nutshell|https://isbndb.com/book/9781565922860|Ellen Siever and Nathan Patwardhan and Spainhour, Stephen|1999|O'Reilly Media
+ Modern Perl Programming|https://isbndb.com/book/9780130089656|Saltzman, Michael|2002|Pearson P T R
+ Perl for Dummies|https://isbndb.com/book/9780764504600|Hoffman, Paul|1998|Hungry Minds Inc
+ Perl Programming Success In Day|https://isbndb.com/book/9781329502239|Key, Sam|2015|Lulu.com
+ Discover Perl 5 (Discover (Idg Books Worldwide, Inc.).)|https://isbndb.com/book/9780764530760|Barkakati, Nabajyoti|1997|John Wiley & Sons Inc
+ Programming Perl 5.0 Cgi Web Pages for Microsoft Windows Nt (PC Magazine (New York, N.Y.).)|https://isbndb.com/book/9781562764203|Hagey, Jonathan|1996|Ziff Davis Pr
+ An Introduction to Language Processing with Perl and Prolog: An Outline of Theories, Implementation, and Application with Special Consideration of English, French, and German (Cognitive Technologies)|https://isbndb.com/book/9783642064050|Nugues, Pierre M.|2010|Springer
+ Perl|https://isbndb.com/book/9781076869388|Nexcod Publishing|2019|Independently Published
+ Programming Perl|https://isbndb.com/book/9789350236505|Christiansen|2022|
+ PERL PROGRAMMING|https://isbndb.com/book/9781710286021|Toliver, Felicia|2019-11-21T00:00:01Z|Independently published
+ Perl Programming For Bioinformatics|https://isbndb.com/book/9780070474475|Harshawardhan P. Bal and Bal|2003|Tata Mcgraw-hill Education
+ Extreme Programming with Perl|https://isbndb.com/book/9780596002664|Nagler, Rob|2005|O'Reilly Media
+ PROGRAMMING PERL 3/E|https://isbndb.com/book/9788173662652|WALL||NA
+ Effective Perl Programming 2/e: Ways to Write Better, More Idiomatic Perl|https://isbndb.com/book/9788131774250|Hall|2011T|Pearson Education
+ 60 Minute Guide to Cgi Programming With Perl 5|https://isbndb.com/book/9781568847801|Farrell, Robert|1996|John Wiley & Sons Inc
+ Perl|https://isbndb.com/book/9780072121421|Martin C. Brown|1999|Computing Mcgraw-hill
+ Applied Perl|https://isbndb.com/book/9781562057343|William Weinman||New Riders
+ Intermediate Perl|https://isbndb.com/book/9781449343804|Randal L. Schwartz; brian d foy; Tom Phoenix|20120726|O'Reilly Media, Inc.
+ Programming Perl|https://isbndb.com/book/9781417625642|Larry Wall and Tom Christiansen and Jon Orwant|2000|San Val
+ Pro Perl|https://isbndb.com/book/9781430200147|Peter Wainwright|20061101|Springer Nature
+ Mastering Perl|https://isbndb.com/book/9780596551476|brian d foy|2007|O'reilly Media, Inc.
+ Applied Perl|https://isbndb.com/book/9780764547836|Peter Williams|2001|Wiley
+ Mastering Perl|https://isbndb.com/book/9781449364977|brian d foy|20140109|O'Reilly Media, Inc.
+ Mastering Perl|https://isbndb.com/book/9781449364960|brian d foy|20140109|O'Reilly Media, Inc.
+ Learning Perl|https://isbndb.com/book/9780596517953|Tom Phoenix|20010718|O'Reilly Media, Inc.
+ Programming Perl|https://isbndb.com/book/9781565928282|Larry Wall; Steve Talbot; Randal L. Schwartz; Tom Christiansen||
+ Perl Guide|https://isbndb.com/book/9781423208150|Scott Marino|20080908|BarCharts Inc.
+ Learning Perl|https://isbndb.com/book/9781492094906|Randal L. Schwartz; brian d foy; Tom Phoenix|20210629|O'Reilly Media, Inc.
+ Beginning Perl|https://isbndb.com/book/9781118235638|Curtis Poe|2012-09-27|Wiley
+ Programming Perl|https://isbndb.com/book/9781449321475|Tom Christiansen|20120217|O'Reilly Media, Inc.
+ Programming Perl|https://isbndb.com/book/9781449321468|Tom Christiansen; brian d foy; Larry Wall; Jon Orwant|20120217|O'Reilly Media, Inc.
+ Perl Debugged|https://isbndb.com/book/9780133891454|Peter Scott|20140430|Pearson Technology Group
+ Learning Perl|https://isbndb.com/book/9781491954270|Randal L. Schwartz; brian d foy; Tom Phoenix|20161006|O'Reilly Media, Inc.
+ Learning Perl|https://isbndb.com/book/9780596154318|Randal L. Schwartz; Tom Phoenix; brian d foy|20080627|O'Reilly Media, Inc.
+ Beginning Perl|https://isbndb.com/book/9781118221877|Curtis Poe|9/4/12|Wiley Professional Development (P&T)
+ Learning Perl|https://isbndb.com/book/9780596551858|Randal L. Schwartz; Tom Phoenix; brian d foy|20080627|O'Reilly Media, Inc.
+ Perl Cookbook|https://isbndb.com/book/9780596516864|Tom Christiansen; Nathan Torkington|20030821|O'Reilly Media, Inc.
+ Beginning Perl|https://isbndb.com/book/9781430227946|James Lee|20100614|Springer Nature
+ Intermediate Perl|https://isbndb.com/book/9781449343811|Randal L. Schwartz; brian d foy; Tom Phoenix|20120726|O'Reilly Media, Inc.
+ Perl One-Liners|https://isbndb.com/book/9781593275693|Peteris Krumins|20131126|Random House Publishing Services
+ Advanced Perl Programming|https://isbndb.com/book/9781565925588|Sriram Srinivasan / Larry Wall / Tom Christiansen / Ronald Schwartz|2000|
+ XML and Perl|https://isbndb.com/book/9780735712898|Mark Riehl and Ilya Sterin and Llya Sterin|2002|Sams
+ Perl Programming Essentials|https://isbndb.com/book/9781114236967|Software Alchemy||
+ Advanced Perl Programming|https://isbndb.com/book/9781562439774|Rob Roselius|2000|D D C Pub
+ Basic Perl Programming|https://isbndb.com/book/9780596526030|Loy and Marc||Safari Press
+ Professional Perl Programming|https://isbndb.com/book/9780641537356|Peter C. Wainwright and Arthur Corliss and Aldo Calpini and Simon Cozens and J. J. Merelo-Guervos|2001|Wrox Press, Inc.
+ Perl by Example|https://isbndb.com/book/9780133593044|Ellie Quigley|20150102|Pearson Technology Group
+ Perl Pocket Reference|https://isbndb.com/book/9780596528942|Johan Vromans|20020719|O'Reilly Media, Inc.
+ Advanced Perl Programming|https://isbndb.com/book/9781565928305|Sriram Srinivasan; Andy Oram||
+ Advanced Perl Programming|https://isbndb.com/book/9780641500220|Sriram Srinivasan and Andy Oram|1997|O'Reilly Media, Incorporated
+ Programming In Perl|https://isbndb.com/book/9780534376628|Behrouz A. Forouzan and Richard F. Gilberg|2005|
+ Advanced Perl Programming|https://isbndb.com/book/9780596002671|Not Available||
+ Perl Pocket Reference|https://isbndb.com/book/9781449312978|Johan Vromans|20110719|O'Reilly Media, Inc.
+ Perl Pocket Reference|https://isbndb.com/book/9781449313555|Johan Vromans|20110719|O'Reilly Media, Inc.
+ Higher-Order Perl|https://isbndb.com/book/9780080478340|Mark Jason Dominus|20050331|Elsevier S & T
+ Perl and XML|https://isbndb.com/book/9780596516406|Erik T. Ray|20020425|O'Reilly Media, Inc.
+ Perl Pocket Reference|https://isbndb.com/book/9781449378844|Johan Vromans|20020719|O'Reilly Media, Inc.
+ Perl Graphics Programming|https://isbndb.com/book/9781449358310|Shawn Wallace|20021219|O'Reilly Media, Inc.
+ Wall:programming Perl 2e|https://isbndb.com/book/9781565920330|||Longman Higher Education
+ Perl Graphics Programming|https://isbndb.com/book/9781449358303|Shawn Wallace|20021219|O'Reilly Media, Inc.
+ Perl For Dummies|https://isbndb.com/book/9781118085189|Paul Hoffman|2011-05-09|Wiley
+ Perl Best Practices|https://isbndb.com/book/9780596516369|Damian Conway|20050712|O'Reilly Media, Inc.
+ Think Perl 6|https://isbndb.com/book/9781491980507|Laurent Rosenfeld; Allen B. Downey|20170508|O'Reilly Media, Inc.
+ Perl 5 complete|https://isbndb.com/book/9780072129144|Peschko, Ed and DeWolfe, Michele||McGraw-Hill
+ Advanced Perl Programming|https://isbndb.com/book/9781449378912|Simon Cozens|20050628|O'Reilly Media, Inc.
+ Perl and XML|https://isbndb.com/book/9781449366827|Erik T. Ray; Jason McIntosh|20020425|O'Reilly Media, Inc.
+ Advanced Perl Programming|https://isbndb.com/book/9780596517113|Simon Cozens|20050628|O'Reilly Media, Inc.
+ Pro Perl Parsing|https://isbndb.com/book/9781430200499|Christopher M. Frenz|20061107|Springer Nature
+ Learning Perl 6|https://isbndb.com/book/9781491977644|brian d foy|20180824|O'Reilly Media, Inc.
+ Perl Best Practices|https://isbndb.com/book/9780596555023|Damian Conway|20050712|O'Reilly Media, Inc.
+ Perl Power!: A Jumpstart Guide To Programming With Perl 5|https://isbndb.com/book/9780201360684|Michael Schilli|1999|Longhorn Pr
+ Programming The Perl Dbi|https://isbndb.com/book/9780641508608|Alligator Descartes / Tim Bunce|2000|
+ Cgi Programming With Perl|https://isbndb.com/book/9780737253542|Ziff-Davis Education|1998|
+ Perl Programming (5 Days)|https://isbndb.com/book/9781562439767|Jeff Howell|2000|D D C Pub
+ Perl Programming Interview Questions, Answers, And Explanations: Perl Programming Certification Review|https://isbndb.com/book/9781933804484|Itcookbook|2006|Equity Press
+ Perl 5 programmer's notebook|https://isbndb.com/book/9780130213211|Jesse Feiler|1999/08/24|Upper Saddle River, N.J. Prentice Hall PTR, c2000.
+ Computer Science & Perl Programming|https://isbndb.com/book/9781449371357|Jon Orwant|20021104|O'Reilly Media, Inc.
+ Perl for exploring DNA|https://isbndb.com/book/9780195327571|Leblanc, Mark D. , 1962-|2007|Oxford University Press
+ Mastering Algorithms with Perl|https://isbndb.com/book/9781449307271|Jarkko Hietaniemi|19990818|O'Reilly Media, Inc.
+ Beginning Perl Web Development|https://isbndb.com/book/9781430200895|Steve Suehring|20061122|Springer Nature
+ Programming the Perl DBI|https://isbndb.com/book/9781449315368|Tim Bunce; Alligator Descartes|20000204|O'Reilly Media, Inc.
+ Mastering Algorithms with Perl|https://isbndb.com/book/9781449307196|Jarkko Hietaniemi; John Macdonald; Jon Orwant|19990818|O'Reilly Media, Inc.
+ CGI Programming with Perl|https://isbndb.com/book/9781491904664|Scott Guelich|20000629|O'Reilly Media, Inc.
+ Mastering Perl for Bioinformatics|https://isbndb.com/book/9781449390907|James Tisdall|20030925|O'Reilly Media, Inc.
+ Beginning Perl for Bioinformatics|https://isbndb.com/book/9780596516277|James Tisdall|20011022|O'Reilly Media, Inc.
+ Penetration Testing with Perl|https://isbndb.com/book/9781783283460|Douglas Berdeaux|2014-12-30|Packt Publishing
+ Perl programming for biologists|https://isbndb.com/book/9780471722748|||Hoboken, N.J. : Wiley-Liss, c2003.
+ Bioinformatics Biocomputing and Perl|https://isbndb.com/book/9780470026458|Michael Moorhouse and Paul Barry|2005-09-27|Wiley
+ Programming The Perl Dbi|https://isbndb.com/book/9781565929753|||Cambridge, Ma : O'reilly, 2000.
+ Games, Diversions & Perl Culture|https://isbndb.com/book/9781449397784|Jon Orwant|20030522|O'Reilly Media, Inc.
+ Learning Perl Student Workbook|https://isbndb.com/book/9781449335205|foy, brian d|20080514|O'Reilly Media, Inc.
+ Programming The Perl Dbi|https://isbndb.com/book/9780596005863|Tim Bunce and Jeff Zucker|2007|
+ CGI Programming with Perl|https://isbndb.com/book/9781449326791|Scott Guelich; Shishir Gundavaram; Gunther Birznieks|20000629|O'Reilly Media, Inc.
+ Games, Diversions & Perl Culture|https://isbndb.com/book/9781449397913|Jon Orwant|20030522|O'Reilly Media, Inc.
+ Perl in a Nutshell|https://isbndb.com/book/9780596516550|Nathan Patwardhan; Ellen Siever; Stephen Spainhour|20020603|O'Reilly Media, Inc.
+ Programming the Perl DBI|https://isbndb.com/book/9781449315917|Tim Bunce|20000204|O'Reilly Media, Inc.
+ Computer Science & Perl Programming|https://isbndb.com/book/9781449371340|Jon Orwant|20021104|O'Reilly Media, Inc.
+ Perl in a Nutshell|https://isbndb.com/book/9781449378820|Nathan Patwardhan; Ellen Siever; Stephen Spainhour|20020603|O'Reilly Media, Inc.
+ Mastering Perl for Bioinformatics|https://isbndb.com/book/9781449391553|James Tisdall|20030925|O'Reilly Media, Inc.
+ Web Client Programming With Perl|https://isbndb.com/book/9781565922143|Wong, Clinton.|1997|O'reilly
+ Web Client Programming With Perl|https://isbndb.com/book/9780585032238|||Cambridge ; O'reilly, C1997.
+ Programming Web Services with Perl|https://isbndb.com/book/9780596516413|Randy J. Ray; Pavel Kulchenko|20021219|O'Reilly Media, Inc.
+ Practical Text Mining with Perl|https://isbndb.com/book/9781118210505|Roger Bilisoly|2011-09-20|Wiley
+ Perl Testing: A Developer's Notebook|https://isbndb.com/book/9781449313081|Ian Langworth; Chromatic|20050714|O'Reilly Media, Inc.
+ Perl Testing: A Developer's Notebook|https://isbndb.com/book/9781449313678|Ian Langworth|20050714|O'Reilly Media, Inc.
+ Writing Perl Modules for CPAN|https://isbndb.com/book/9781430211525|Sam Tregar|20020809|Springer Nature
+ Programming Cocoa Applications With Perl|https://isbndb.com/book/9780596003586|Sugalski, Dan||O'reilly Media
+ Programming the Network with Perl|https://isbndb.com/book/9780470849415|Paul Barry|2003-01-10|Wiley
+ Learning Perl Objects, References, and Modules|https://isbndb.com/book/9781449365691|Randal L. Schwartz; Tom Phoenix|20030609|O'Reilly Media, Inc.
+ Perl And Cgi Programming Starter Kit|https://isbndb.com/book/9781575210780|Simon & Schuster|1996|Simon & Schuster
+ Perl Programming For The Absolute Beginner|https://isbndb.com/book/9780761536635|Andy Harris|2001|
+ Programming Perl In The .net Environment|https://isbndb.com/book/9780130652065|Yevgeny Menaker and Michael Saltzman and Robert J. Oberg|1902|Addison-wesley Professional
+ Perl Cgi Programming - No Experience Required|https://isbndb.com/book/9780782121575|Erik Strom|1998|Wiley & Sons, Incorporated, John
+ Learning Perl Objects, References, and Modules|https://isbndb.com/book/9781449365707|Randal L. Schwartz|20030609|O'Reilly Media, Inc.
+ UNIX and Perl to the Rescue!|https://isbndb.com/book/9781139368575|Keith Bradnam; Ian Korf|20120719|Cambridge University Press
+ UNIX and Perl to the Rescue!|https://isbndb.com/book/9781139365741|Keith Bradnam; Ian Korf|20120719|Cambridge University Press
+ Programming for Linguists: Perl for Language|https://isbndb.com/book/9780631234333|Michael Hammond|2003|Wiley, John & Sons, Incorporated
+ Perl 254 Success Secrets - 254 Most Asked Questions On Perl - What You Need To Know|https://isbndb.com/book/9781488538193|Janice Randolph|20140316|Emereo
+ Perl Programming Success In A Day: Beginners Guide To Fast, Easy, And Efficient Learning Of Perl Programming|https://isbndb.com/book/9781515168584|Sam Key|2015-07-21|Createspace Independent Publishing Platform
+ Perl 5 Windows Nt Programming (using Series)|https://isbndb.com/book/9781578700011|Mike Mcmillan|1997|Macmillan Technical Pub
+ Perl Programming For Nt Blue Book: The Quickest Path To Expertise In Nt Administration Scripting Using Perl|https://isbndb.com/book/9781576104040|Michael Mcmillan and James Sutherland|1999|Coriolis Group Books
+ Writing Apache Modules With Perl And C|https://isbndb.com/book/9781565925670|Stein, Lincoln D. , 1960-|1999|O'reilly
+ Perl Developer's Guide (book/cd-rom Package)|https://isbndb.com/book/9781402854194|Ed S. Peschko and Ed Peschko and Michele Dewolfe and Michelle DeWolfe|2000|Mcgraw-hill Professional
+ Real World SQL Server Administration with Perl|https://isbndb.com/book/9781590590973|Linchi Shea|2003|APRESS
+ Using Perl 5 For Web Programming, Special Edition|https://isbndb.com/book/9780641024894||1996|
+ Tuomas J. Lukka's Object-oriented Programming In Perl|https://isbndb.com/book/9781893115033|Tuomas J. Lukka|2000|
+ Perl Programming For Biologists: Hands-on Tools For Bioinformatics|https://isbndb.com/book/9781891786143|Unknown|2002|
+ Perl Programming Interview Questions You'll Most Likely Be Asked|https://isbndb.com/book/9781475188387|Vibrant Publishers|2012|Createspace Independent Publishing Platform
+ Scientific Database And Programming Examples Using Php, Mysql, Xml, Matlab, Python, Perl: Using Php, Mysql, Xml, Matlab, Python, Perl (paperback Or Softback)|https://isbndb.com/book/9781465364432|Cheung and K. Y.|2011|Xlibris Corporation 9/27/2011
+ Relational Database Programming for the Web with Perl and CGI|https://isbndb.com/book/9780201432954|Brian Shensky|July 2000|
+ Scripting with Objects: A Comparative Presentation of Object-Oriented Scripting with Perl and Python|https://isbndb.com/book/9781119095095|Avinash C. Kak|2008-05-15|Wiley Global Research (STMS)
+ Unix And Perl To The Rescue!: A Field Guide For The Life Sciences (and Other Data-rich Pursuits)|https://isbndb.com/book/9780521169820|Bradnam, Keith.|2012|Cambridge University Press
+ Open Source: The Wiki Way: Quick Collaboration On The Web, Postgresql: Introduction And Concepts And Network Programming With Perl Package|https://isbndb.com/book/9780201787719|Momjian|2001|
+ Array Programming Languages: FORTRAN, APL, Gnu Octave, J, Mathematica, MATLAB, Nial, Scilab, IDL, Supercollider, K, Numpy, Perl Data Language|https://isbndb.com/book/9781157458708|Books and LLC and Group|2010|
+ An Introduction To Language Processing With Perl And Prolog: An Outline Of Theories, Implementation, And Application With Special Consideration Of English, French, And German|https://isbndb.com/book/9783540250319|Nugues, Pierre M. (author.)||Springer Berlin Heidelberg,
+
+## Publications about Perl from Semantic Scholar
+pipeTable
+ title|titleLink|authors|year|citations|influentialCitations
+ Programming for Linguists: Perl for Language Researchers|https://www.semanticscholar.org/paper/008fce82b00d157447e1432559aa9193d8986bf9|Michael Hammond|2002|20|0
+ Perldoop: Efficient execution of Perl scripts on Hadoop clusters|https://www.semanticscholar.org/paper/a1139332895dd8827f2152413f66c2f6a5918bf8|J. Abuín and J. C. Pichel and T. F. Pena and Pablo Gamallo and Marcos Garcia|2014|6|0
+ Quantitative Linguistic Computing with Perl|https://www.semanticscholar.org/paper/fa316f617c3256ec4ee95c7fbb41fe488e42c217|Haoda Feng|2015|3|0
+ VECT: an automatic visual Perl programming tool for nonprogrammers.|https://www.semanticscholar.org/paper/06a478a88dc7d47277addc1d648ab7f3e749af0a|Hui-Hsien Chou|2005|2|0
+ A newly developed free software tool set for averaging electroencephalogram implemented in the Perl programming language|https://www.semanticscholar.org/paper/fca6d512fc3434c39663f289f7df06a403553dac|S. Suwazono and H. Arao|2020|2|0
+ Joint Application of Perl Scripts and MCNPX in Solving the Dynamic-Geometry Related Problems in Proton Beam Radiotherapy (Selected Papers of the Joint International Conference of Supercomputing in Nuclear Applications and Monte Carlo : SNA + MC 2010)|https://www.semanticscholar.org/paper/e28e642649d133b7f2f861a256c63b2d620c91b0|F. Guan and J. Poston and L. Braby|2011|1|0
+ Running Perl 6|https://www.semanticscholar.org/paper/2146c6d9a24fd20503e7db406799eefa6ff0ae47|J. Merelo|2019|1|0
+ PERL PROGRAMMING FOR BIOLOGISTS, by D. Curtis Jamison, Wiley, Hoboken, 2003, ISBN 0-471-43059-5, ix + 191 pp. (Pbk, £27.95)|https://www.semanticscholar.org/paper/014606001ea7425a185967570b2c8711ed3fb42d|A. Andrew|2004|1|0
+ A Study on Perl Programming Language Aided Informetrics|https://www.semanticscholar.org/paper/c01b9d1786913352f097df4f480d04d5d8a9b222|Chen Xin Chen Tun|2006|1|0
+
+keyboardNav php.html matlab.html
+
+import ../footer.scroll

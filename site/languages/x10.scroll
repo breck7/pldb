@@ -1,0 +1,257 @@
+import header.scroll
+
+title X10
+
+title X10 - Programming language
+ hidden
+
+html
+ <a class="prevLang" href="vala.html">&lt;</a>
+ <a class="nextLang" href="icon.html">&gt;</a>
+
+viewSourceUrl https://github.com/breck7/pldb/blob/main/database/things/x10.pldb
+
+startColumns 4
+
+html <div class="quickLinks"><a href="http://x10-lang.org"><svg role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12.7166 3.79541C12.2835 3.49716 11.7165 3.49716 11.2834 3.79541L4.14336 8.7121C3.81027 8.94146 3.60747 9.31108 3.59247 9.70797C3.54064 11.0799 3.4857 13.4824 3.63658 15.1877C3.7504 16.4742 4.05336 18.1747 4.29944 19.4256C4.41371 20.0066 4.91937 20.4284 5.52037 20.4284H8.84433C8.98594 20.4284 9.10074 20.3111 9.10074 20.1665V15.9754C9.10074 14.9627 9.90433 14.1417 10.8956 14.1417H13.4091C14.4004 14.1417 15.204 14.9627 15.204 15.9754V20.1665C15.204 20.3111 15.3188 20.4284 15.4604 20.4284H18.4796C19.0806 20.4284 19.5863 20.0066 19.7006 19.4256C19.9466 18.1747 20.2496 16.4742 20.3634 15.1877C20.5143 13.4824 20.4594 11.0799 20.4075 9.70797C20.3925 9.31108 20.1897 8.94146 19.8566 8.7121L12.7166 3.79541ZM10.4235 2.49217C11.3764 1.83602 12.6236 1.83602 13.5765 2.49217L20.7165 7.40886C21.4457 7.91098 21.9104 8.73651 21.9448 9.64736C21.9966 11.0178 22.0564 13.5119 21.8956 15.3292C21.7738 16.7067 21.4561 18.4786 21.2089 19.7353C20.9461 21.0711 19.7924 22.0001 18.4796 22.0001H15.4604C14.4691 22.0001 13.6655 21.1791 13.6655 20.1665V15.9754C13.6655 15.8307 13.5507 15.7134 13.4091 15.7134H10.8956C10.754 15.7134 10.6392 15.8307 10.6392 15.9754V20.1665C10.6392 21.1791 9.83561 22.0001 8.84433 22.0001H5.52037C4.20761 22.0001 3.05389 21.0711 2.79113 19.7353C2.54392 18.4786 2.22624 16.7067 2.10437 15.3292C1.94358 13.5119 2.00338 11.0178 2.05515 9.64736C2.08957 8.73652 2.55427 7.91098 3.28346 7.40886L10.4235 2.49217Z"/></svg></a> <a href="https://en.wikipedia.org/wiki/X10_(programming_language)"><svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="98.05px" height="98.05px" viewBox="0 0 98.05 98.05" style="enable-background:new 0 0 98.05 98.05;" xml:space="preserve"><path d="M98.023,17.465l-19.584-0.056c-0.004,0.711-0.006,1.563-0.017,2.121c1.664,0.039,5.922,0.822,7.257,4.327L66.92,67.155 c-0.919-2.149-9.643-21.528-10.639-24.02l9.072-18.818c1.873-2.863,5.455-4.709,8.918-4.843l-0.01-1.968L55.42,17.489 c-0.045,0.499,0.001,1.548-0.068,2.069c5.315,0.144,7.215,1.334,5.941,4.508c-2.102,4.776-6.51,13.824-7.372,15.475 c-2.696-5.635-4.41-9.972-7.345-16.064c-1.266-2.823,1.529-3.922,4.485-4.004v-1.981l-21.82-0.067 c0.016,0.93-0.021,1.451-0.021,2.131c3.041,0.046,6.988,0.371,8.562,3.019c2.087,4.063,9.044,20.194,11.149,24.514 c-2.685,5.153-9.207,17.341-11.544,21.913c-3.348-7.43-15.732-36.689-19.232-44.241c-1.304-3.218,3.732-5.077,6.646-5.213 l0.019-2.148L0,17.398c0.005,0.646,0.027,1.71,0.029,2.187c4.025-0.037,9.908,6.573,11.588,10.683 c7.244,16.811,14.719,33.524,21.928,50.349c0.002,0.029,2.256,0.059,2.281,0.008c4.717-9.653,10.229-19.797,15.206-29.56 L63.588,80.64c0.005,0.004,2.082,0.016,2.093,0.007c7.962-18.196,19.892-46.118,23.794-54.933c1.588-3.767,4.245-6.064,8.543-6.194 l0.032-1.956L98.023,17.465z"/></svg></a> <a href="https://x10.sourceforge.net/documentation/languagespec/x10-latest.pdf"><svg viewBox="0 0 500 500" xmlns="http://www.w3.org/2000/svg"><g transform="matrix(1, 0, 0, 1, 13.859316, 9.109739)"><g><g><path d="M340.732,0H55v485h375V94.518L340.732,0z M345,26.364L405.1,90H345V26.364z M415,470H70V15h260v90h85V470z"/><rect x="102.5" y="191" width="280" height="15"/><rect x="102.5" y="141" width="120" height="15"/><rect x="102.5" y="241" width="280" height="15"/><rect x="102.5" y="291" width="280" height="15"/><rect x="102.5" y="341" width="280" height="15"/><rect x="102.5" y="391" width="280" height="15"/></g></g></g></svg></a></div>
+
+* X10 is a <a href="../lists/languages.html?filter=pl">programming language</a> created in 2004 by Kemal Ebcioğlu and Saravanan Arumugam and Vijay Saraswat and Vivek Sarkar.
+ link ../lists/languages.html?filter=2004 2004
+ link ../lists/creators.html#kemalEbcioglu Kemal Ebcioğlu
+ link ../lists/creators.html#saravananArumugam Saravanan Arumugam
+ link ../lists/creators.html#vijaySaraswat Vijay Saraswat
+ link ../lists/creators.html#vivekSarkar Vivek Sarkar
+
+kpiTable
+ #201 <span title="TotalRank: 542 Jobs: 103 Users: 862 Facts: 115 Links: 324">on PLDB</span>
+ 19 Years Old
+ 376 <span title="Crude user estimate from a linear model.">Users</span>
+ 1 <span title="Books about or leveraging X10">Books</span>
+ 39 <span title="Academic publications about or leveraging X10">Papers</span>
+ 45 <span title="X10 repos on GitHub.">Repos</span>
+
+* X10 is a programming language being developed by IBM at the Thomas J. Watson Research Center as part of the Productive, Easy-to-use, Reliable Computing System (PERCS) project funded by DARPA's High Productivity Computing Systems (HPCS) program. Its primary authors are Kemal Ebcioğlu, Vijay Saraswat, Saravanan Arumugam, and Vivek Sarkar. Read more on Wikipedia...
+ https://en.wikipedia.org/wiki/X10_(programming_language) Read more on Wikipedia...
+
+- X10 website
+ http://x10-lang.org
+- X10 Wikipedia page
+ https://en.wikipedia.org/wiki/X10_(programming_language)
+- X10 docs
+ https://x10.sourceforge.net/documentation/languagespec/x10-latest.pdf
+- There are at least 45 X10 repos on <a href="https://github.com/search?q=language:X10">GitHub</a>
+- X10 first developed in <a href="../lists/originCommunities.html#ibm">IBM</a>
+- file extensions for X10 include x10
+- The  Google BigQuery Public Dataset GitHub snapshot shows 18 users using X10 in 19 repos on <a href="https://api.github.com/search/repositories?q=language:X10">GitHub</a>
+- Explore X10 snippets on <a href="http://www.rosettacode.org/wiki/Category:X10">Rosetta Code</a>
+- X10 on HOPL
+ https://hopl.info/showlanguage.prx?exp=8172
+- X10 appears in the <a href="https://www.tiobe.com/tiobe-index/">TIOBE Index</a>
+- <a href="pygments.html">Pygments</a> supports <a href="https://github.com/pygments/pygments/blob/master/pygments/lexers/x10.py">syntax highlighting</a> for X10
+- GitHub supports <a href="https://github.com/x10-lang/x10-highlighting" title="The package used for syntax highlighting by GitHub Linguist.">syntax highlighting</a> for X10
+- <a href="http://x10-lang.org">x10-lang.org</a> was registered in 2008
+- See also: (5 related languages)<a href="linux.html">Linux</a>, <a href="java.html">Java</a>, <a href="chapel.html">Chapel</a>, <a href="fortress.html">Fortress</a>, <a href="unified-parallel-c.html">UPC</a>
+- HTML of this page generated by <a href="https://github.com/breck7/pldb/blob/main/code/LanguagePage.ts">LanguagePage.ts</a>
+- <a href="https://pldb.com/edit/x10">Improve our X10 file</a>
+
+html <br>
+
+codeWithHeader Example from <a href='https://github.com/leachim6/hello-world/blob/main/x/X10.x10'>hello-world</a>:
+ /*
+  *  This file is part of the X10 project (http://x10-lang.org).
+  *
+  *  This file is licensed to You under the Eclipse Public License (EPL);
+  *  You may not use this file except in compliance with the License.
+  *  You may obtain a copy of the License at
+  *      http://www.opensource.org/licenses/eclipse-1.0.php
+  *
+  *  (C) Copyright IBM Corporation 2006-2016.
+  */
+ 
+ import x10.io.Console;
+ 
+ public class HelloWorld {
+   public static def main(Rail[String]) {
+       Console.OUT.println(&quot;Hello World&quot;);
+   }
+ }
+ 
+ 
+ 
+
+codeWithHeader Example from <a href='https://github.com/x10-lang/x10-highlighting'>Linguist</a>:
+ /*
+  *  This file is part of the X10 project (http://x10-lang.org).
+  *
+  *  This file is licensed to You under the Eclipse Public License (EPL);
+  *  You may not use this file except in compliance with the License.
+  *  You may obtain a copy of the License at
+  *      http://www.opensource.org/licenses/eclipse-1.0.php
+  *
+  *  (C) Copyright IBM Corporation 2006-2014.
+  */
+ 
+ import x10.io.Console;
+ 
+ /**
+  * The classic hello world program, shows how to output to the console.
+  */
+ class HelloWorld {
+   public static def main(Rail[String]) {
+       Console.OUT.println(&quot;Hello World!&quot; );
+   }
+ }
+ 
+ 
+ 
+
+## <a href="../lists/keywords.html?filter=x10">Keywords</a> in X10
+* as assert async at athome ateach atomic break case catch class clocked continue def default do else final finally finish for goto haszero here if import in instanceof interface isref new offer operator package return struct switch throw try type val var when while
+
+endColumns
+
+## Language <a href="../lists/features.html">features</a>
+
+treeTable
+ row
+  Feature Line Comments
+  FeatureLink ../features/hasLineComments.html
+  Supported <span class="hasFeature">✓</span>
+  Token 
+  Example
+ row
+  Feature Conditionals
+  FeatureLink ../features/hasConditionals.html
+  Supported <span class="hasFeature">✓</span>
+  Token 
+  Example
+ row
+  Feature Async Await
+  FeatureLink ../features/hasAsyncAwait.html
+  Supported <span class="hasFeature">✓</span>
+  Token 
+  Example
+ row
+  Feature Switch Statements
+  FeatureLink ../features/hasSwitch.html
+  Supported <span class="hasFeature">✓</span>
+  Token 
+  Example
+ row
+  Feature Functions
+  FeatureLink ../features/hasFunctions.html
+  Supported <span class="hasFeature">✓</span>
+  Token 
+  Example
+ row
+  Feature Exceptions
+  FeatureLink ../features/hasExceptions.html
+  Supported <span class="hasFeature">✓</span>
+  Token 
+  Example
+ row
+  Feature Classes
+  FeatureLink ../features/hasClasses.html
+  Supported <span class="hasFeature">✓</span>
+  Token 
+  Example
+ row
+  Feature While Loops
+  FeatureLink ../features/hasWhileLoops.html
+  Supported <span class="hasFeature">✓</span>
+  Token 
+  Example
+ row
+  Feature File Imports
+  FeatureLink ../features/hasImports.html
+  Supported <span class="hasFeature">✓</span>
+  Token import
+  Example
+   import x10.io.Console;
+ row
+  Feature Strings
+  FeatureLink ../features/hasStrings.html
+  Supported <span class="hasFeature">✓</span>
+  Token "
+  Example
+   "Hello world"
+ row
+  Feature Comments
+  FeatureLink ../features/hasComments.html
+  Supported <span class="hasFeature">✓</span>
+  Token 
+  Example
+   /* A comment
+   */
+ row
+  Feature MultiLine Comments
+  FeatureLink ../features/hasMultiLineComments.html
+  Supported <span class="hasFeature">✓</span>
+  Token /* */
+  Example
+   /* A comment
+   */
+ row
+  Feature Print() Debugging
+  FeatureLink ../features/hasPrintDebugging.html
+  Supported <span class="hasFeature">✓</span>
+  Token Console.OUT.println
+  Example
+ row
+  Feature Semantic Indentation
+  FeatureLink ../features/hasSemanticIndentation.html
+  Supported <span class="doesNotHaveFeature">X</span>
+  Token 
+  Example
+
+## Books about X10 from ISBNdb
+pipeTable
+ title|titleLink|authors|year|publisher
+ X10 (programming Language)|https://isbndb.com/book/9786130368838|Surhone and Lambert M. and Timpledon and Miriam T. and Marseken and Susan F.|2010|
+
+## Publications about X10 from Semantic Scholar
+pipeTable
+ title|titleLink|authors|year|citations|influentialCitations
+ Habanero-Java: the new adventures of old X10|https://www.semanticscholar.org/paper/8368d2fc947cf6ac46a1d251d1895f2f87c7d498|Vincent Cavé and Jisheng Zhao and J. Shirako and Vivek Sarkar|2011|245|26
+ May-happen-in-parallel analysis of X10 programs|https://www.semanticscholar.org/paper/7b83b2cc9b4d5c0ce578b96c2508b0aa926fefda|Shivali Agarwal and R. Barik and Vivek Sarkar and R. Shyamasundar|2007|96|8
+ GPU programming in a high level language: compiling X10 to CUDA|https://www.semanticscholar.org/paper/c0f1c45ef7c9fb9751fdcc268daac62b70a7bd78|D. Cunningham and R. Bordawekar and V. Saraswat|2011|59|8
+ X10 and APGAS at Petascale|https://www.semanticscholar.org/paper/200de04ff121efa826e2ac653a5f7f60edf9e98c|O. Tardieu and Benjamin Herta and D. Cunningham and D. Grove and P. Kambadur and V. Saraswat and Avraham Shinnar and Mikio Takeuchi and M. Vaziri|2016|38|8
+ Resource-aware programming and simulation of MPSoC architectures through extension of X10|https://www.semanticscholar.org/paper/c228daa13e097978c58ac08f08a15c5923f50999|Frank Hannig and Sascha Roloff and G. Snelting and J. Teich and Andreas Zwinkau|2011|38|0
+ A performance model for X10 applications: what's going on under the hood?|https://www.semanticscholar.org/paper/7a7e3f0465f888be4d4f373800a1c8ec648fae8e|D. Grove and O. Tardieu and D. Cunningham and Benjamin Herta and Igor Peshansky and V. Saraswat|2011|32|5
+ Towards highly scalable pregel-based graph processing platform with x10|https://www.semanticscholar.org/paper/be79b13765c272635225c517e8fe37b808d77ff7|Nguyen Thien Bao and T. Suzumura|2013|32|4
+ Communication Optimizations for Distributed-Memory X10 Programs|https://www.semanticscholar.org/paper/11e2f90c671800107219aca7d69e2e80e2161e16|R. Barik and Jisheng Zhao and D. Grove and Igor Peshansky and Zoran Budimlic and Vivek Sarkar|2011|30|3
+ Towards concurrency refactoring for x10|https://www.semanticscholar.org/paper/37c91ce6523af0a1c7d3664b941de14a6f030f49|Shane Markstrum and Robert M. Fuhrer and T. Millstein|2009|22|0
+ X10 and APGAS at Petascale|https://www.semanticscholar.org/paper/261ebca508a91d71bdedd30872af434b5f67fa6d|O. Tardieu and Benjamin Herta and D. Cunningham and D. Grove and P. Kambadur and V. Saraswat and Avraham Shinnar and Mikio Takeuchi and M. Vaziri|2014|16|2
+ Using the Cowichan problems to investigate the programmability of X10 programming system|https://www.semanticscholar.org/paper/eeaef2919b123569021297ce09d793c56a5320d8|Jeeva Paudel and J. N. Amaral|2011|16|0
+ Object Initialization in X10|https://www.semanticscholar.org/paper/072a35321e8f95a3cd44a065bb90168062a927c3|Yoav Zibin and D. Cunningham and Igor Peshansky and V. Saraswat|2012|15|2
+ Compiling X10 to Java|https://www.semanticscholar.org/paper/0fdb97e262a15c21b997a654ca3b15455de2517e|Mikio Takeuchi and Yukifumi Makino and Kiyokuni Kawachiya and H. Horii and T. Suzumura and Toshio Suganuma and Tamiya Onodera|2011|14|1
+ StreamX10: a stream programming framework on X10|https://www.semanticscholar.org/paper/549d0c4b493eb1d3f0dfe638410dbaa617980470|Haitao Wei and Hongshi Tan and Xiaoxian Liu and Junqing Yu|2012|13|0
+ A Malleable and Fault-Tolerant Task Pool Framework for X10|https://www.semanticscholar.org/paper/35a2d77c89762b824faf3bde9b1211faf7c200dc|Marco Bungart and Claudia Fohry|2017|12|0
+ Failure Recovery in Resilient X10|https://www.semanticscholar.org/paper/61e9054ef9e0cb459350040aae5647a58806f406|D. Grove and S. Hamouda and Benjamin Herta and A. Iyengar and Kiyokuni Kawachiya and Josh Milthorpe and V. Saraswat and Avraham Shinnar and Mikio Takeuchi and O. Tardieu|2019|12|1
+ Supporting Array Programming in X10|https://www.semanticscholar.org/paper/997112abeb5b671ef78a903b459e82414906c8a7|D. Grove and Josh Milthorpe and O. Tardieu|2014|12|0
+ Evaluating the Performance and Scalability of MapReduce Applications on X10|https://www.semanticscholar.org/paper/19732da7af58cafd4246ec2cb39fba0a9fc528d7|Chao Zhang and Chenning Xie and Zhiwei Xiao and Haibo Chen|2011|8|0
+ Distributed garbage collection for managed X10|https://www.semanticscholar.org/paper/e227480bd8c5d4b7f36ab8614398afec9f12dd02|Kiyokuni Kawachiya and Mikio Takeuchi and Salikh Zakirov and Tamiya Onodera|2012|7|0
+ PGAS‐FMM: Implementing a distributed fast multipole method using the X10 programming language|https://www.semanticscholar.org/paper/ee8f4acebb70619d1c1bad0bff61d12b1c96ea0f|Josh Milthorpe and A. Rendell and T. Huber|2014|7|0
+ High-Performance Graph Data Management and Mining in Cloud Environments with X10|https://www.semanticscholar.org/paper/8f8bb61eec1488be8ed042c9f174df8d332bce4e|Miyuru Dayarathna and T. Suzumura|2017|6|0
+ Massively Parallel Reasoning under the Well-Founded Semantics Using X10|https://www.semanticscholar.org/paper/a7012b1d97d8585d5740aaa856842983cbc988e2|Ilias Tachmazidis and Long Cheng and S. Kotoulas and G. Antoniou and T. Ward|2014|5|1
+ Achieving load-balancing in power system parallel contingency analysis using X10 programming language|https://www.semanticscholar.org/paper/22affef8e888b99bf726d43f25cb09681a84913f|S. Khaitan and J. McCalley|2013|5|0
+ Towards highly scalable X10 based spectral clustering|https://www.semanticscholar.org/paper/cbd7cdf964fe9e27e03783afef0359529ec00f05|Hidefumi Ogata and Miyuru Dayarathna and T. Suzumura|2012|4|1
+ Java interoperability in managed X10|https://www.semanticscholar.org/paper/e7cf1e2a1c701c786bc18b6b44942e9dd00a0cc2|Mikio Takeuchi and D. Cunningham and D. Grove and V. Saraswat|2013|4|0
+ Improving the Performance of X10 Programs by Clock Removal|https://www.semanticscholar.org/paper/7fd7896a880aab358d795f331af77a02f4e2dda3|P. Feautrier and E. Violard and A. Ketterlin|2014|4|1
+ Optimization of x10 programs with ROSE compiler infrastructure|https://www.semanticscholar.org/paper/8c5711f6827e384f2eb21662acfca9bd6fb4582c|Michihiro Horie and Mikio Takeuchi and Kiyokuni Kawachiya and D. Grove|2015|4|2
+ A memory model for X10|https://www.semanticscholar.org/paper/0e685e55e0e8fc8610b0e56ac4694af7e632a45d|Andreas Zwinkau|2016|4|1
+ Optimizing shared data accesses in distributed-memory X10 systems|https://www.semanticscholar.org/paper/3081628da81f625f8abdcd20b81e4454189e2ba3|Jeeva Paudel and O. Tardieu and J. N. Amaral|2014|3|0
+ Optimizing remote data transfers in X10|https://www.semanticscholar.org/paper/ff7e5746eabf4a8570c992cea7eff46ca807dec3|A. Thangamani and V. K. Nandivada|2018|3|0
+ Towards Parallel Constraint-Based Local Search with the X10 Language|https://www.semanticscholar.org/paper/ce0f8fe37680885ef18741a5beae16571533a324|Danny Múnera and Daniel Diaz and Salvador Abreu|2013|3|0
+ Programming Experiences Using the X10 Language|https://www.semanticscholar.org/paper/25b6ba3575dd762e7cbca1eed7c5ae7e6c816973|M. Tajchman|2010|3|0
+ Resolutions of the Coulomb operator: VIII. Parallel implementation using the modern programming language X10|https://www.semanticscholar.org/paper/d61f2b302642d05ae8ca07a85c395935ca7712c7|T. Limpanuparb and Josh Milthorpe and A. Rendell|2014|3|0
+ A comparative study and empirical evaluation of global view High performance Linpack program in X10|https://www.semanticscholar.org/paper/36258502767e958eaf6d5a13dba381703e57a5cf|Ganesh Bikshandi and G. Almási and Sreedhar B. Kodali and Igor Peshansky and V. Saraswat and S. Sur|2009|2|0
+ X10 implementation of parallel option pricing with BSDE method|https://www.semanticscholar.org/paper/df6a941760a40328637a29224002f43dc71750ce|Hui Liu and Ying Peng and Daizhen Wei and Bin Dai|2011|2|0
+ Characterization of Smith-Waterman sequence database search in X10|https://www.semanticscholar.org/paper/5f6d4070aee2cb36da7fa13e1e8962ae3a606a09|Y. Ji and Li Liu and Guangwen Yang|2012|1|0
+ Replicating Data for Better Performances in X10|https://www.semanticscholar.org/paper/ba74df6fd230291da5c3df42078819c6c187f133|Marina Andric and R. Nicola and Alberto Lluch-Lafuente|2015|1|0
+ Control structure overloading in X10|https://www.semanticscholar.org/paper/f5a1217bf2a904bced4b8d1c904f977a339974ff|Louis Mandel and Josh Milthorpe and O. Tardieu|2016|1|0
+ DPX10: An Efficient X10 Framework for Dynamic Programming Applications|https://www.semanticscholar.org/paper/f96f73ddb3243bdbc4865d393bc09389af56ba19|Chen Wang and Ce Yu and Ji-zhou Sun and X. Meng|2015|1|0
+
+keyboardNav vala.html icon.html
+
+import ../footer.scroll

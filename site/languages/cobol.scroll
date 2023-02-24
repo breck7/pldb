@@ -1,0 +1,530 @@
+import header.scroll
+
+title COBOL
+
+title COBOL - Programming language
+ hidden
+
+html
+ <a class="prevLang" href="css.html">&lt;</a>
+ <a class="nextLang" href="scala.html">&gt;</a>
+
+viewSourceUrl https://github.com/breck7/pldb/blob/main/database/things/cobol.pldb
+
+startColumns 4
+
+html <div class="quickLinks"><a href="https://en.wikipedia.org/wiki/COBOL"><svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="98.05px" height="98.05px" viewBox="0 0 98.05 98.05" style="enable-background:new 0 0 98.05 98.05;" xml:space="preserve"><path d="M98.023,17.465l-19.584-0.056c-0.004,0.711-0.006,1.563-0.017,2.121c1.664,0.039,5.922,0.822,7.257,4.327L66.92,67.155 c-0.919-2.149-9.643-21.528-10.639-24.02l9.072-18.818c1.873-2.863,5.455-4.709,8.918-4.843l-0.01-1.968L55.42,17.489 c-0.045,0.499,0.001,1.548-0.068,2.069c5.315,0.144,7.215,1.334,5.941,4.508c-2.102,4.776-6.51,13.824-7.372,15.475 c-2.696-5.635-4.41-9.972-7.345-16.064c-1.266-2.823,1.529-3.922,4.485-4.004v-1.981l-21.82-0.067 c0.016,0.93-0.021,1.451-0.021,2.131c3.041,0.046,6.988,0.371,8.562,3.019c2.087,4.063,9.044,20.194,11.149,24.514 c-2.685,5.153-9.207,17.341-11.544,21.913c-3.348-7.43-15.732-36.689-19.232-44.241c-1.304-3.218,3.732-5.077,6.646-5.213 l0.019-2.148L0,17.398c0.005,0.646,0.027,1.71,0.029,2.187c4.025-0.037,9.908,6.573,11.588,10.683 c7.244,16.811,14.719,33.524,21.928,50.349c0.002,0.029,2.256,0.059,2.281,0.008c4.717-9.653,10.229-19.797,15.206-29.56 L63.588,80.64c0.005,0.004,2.082,0.016,2.093,0.007c7.962-18.196,19.892-46.118,23.794-54.933c1.588-3.767,4.245-6.064,8.543-6.194 l0.032-1.956L98.023,17.465z"/></svg></a> <a href="https://reddit.com/r/cobol"><svg role="img" width="32px" height="32px" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg"><path d="M 18.65625 4 C 16.558594 4 15 5.707031 15 7.65625 L 15 11.03125 C 12.242188 11.175781 9.742188 11.90625 7.71875 13.0625 C 6.945313 12.316406 5.914063 12 4.90625 12 C 3.816406 12 2.707031 12.355469 1.9375 13.21875 L 1.9375 13.25 L 1.90625 13.28125 C 1.167969 14.203125 0.867188 15.433594 1.0625 16.65625 C 1.242188 17.777344 1.898438 18.917969 3.03125 19.65625 C 3.023438 19.769531 3 19.882813 3 20 C 3 22.605469 4.574219 24.886719 6.9375 26.46875 C 9.300781 28.050781 12.488281 29 16 29 C 19.511719 29 22.699219 28.050781 25.0625 26.46875 C 27.425781 24.886719 29 22.605469 29 20 C 29 19.882813 28.976563 19.769531 28.96875 19.65625 C 30.101563 18.917969 30.757813 17.777344 30.9375 16.65625 C 31.132813 15.433594 30.832031 14.203125 30.09375 13.28125 L 30.0625 13.25 C 29.292969 12.386719 28.183594 12 27.09375 12 C 26.085938 12 25.054688 12.316406 24.28125 13.0625 C 22.257813 11.90625 19.757813 11.175781 17 11.03125 L 17 7.65625 C 17 6.675781 17.558594 6 18.65625 6 C 19.175781 6 19.820313 6.246094 20.8125 6.59375 C 21.65625 6.890625 22.75 7.21875 24.15625 7.3125 C 24.496094 8.289063 25.414063 9 26.5 9 C 27.875 9 29 7.875 29 6.5 C 29 5.125 27.875 4 26.5 4 C 25.554688 4 24.738281 4.535156 24.3125 5.3125 C 23.113281 5.242188 22.246094 4.992188 21.46875 4.71875 C 20.566406 4.402344 19.734375 4 18.65625 4 Z M 16 13 C 19.152344 13 21.964844 13.867188 23.9375 15.1875 C 25.910156 16.507813 27 18.203125 27 20 C 27 21.796875 25.910156 23.492188 23.9375 24.8125 C 21.964844 26.132813 19.152344 27 16 27 C 12.847656 27 10.035156 26.132813 8.0625 24.8125 C 6.089844 23.492188 5 21.796875 5 20 C 5 18.203125 6.089844 16.507813 8.0625 15.1875 C 10.035156 13.867188 12.847656 13 16 13 Z M 4.90625 14 C 5.285156 14 5.660156 14.09375 5.96875 14.25 C 4.882813 15.160156 4.039063 16.242188 3.53125 17.4375 C 3.277344 17.117188 3.125 16.734375 3.0625 16.34375 C 2.953125 15.671875 3.148438 14.976563 3.46875 14.5625 C 3.472656 14.554688 3.464844 14.539063 3.46875 14.53125 C 3.773438 14.210938 4.3125 14 4.90625 14 Z M 27.09375 14 C 27.6875 14 28.226563 14.210938 28.53125 14.53125 C 28.535156 14.535156 28.527344 14.558594 28.53125 14.5625 C 28.851563 14.976563 29.046875 15.671875 28.9375 16.34375 C 28.875 16.734375 28.722656 17.117188 28.46875 17.4375 C 27.960938 16.242188 27.117188 15.160156 26.03125 14.25 C 26.339844 14.09375 26.714844 14 27.09375 14 Z M 11 16 C 9.894531 16 9 16.894531 9 18 C 9 19.105469 9.894531 20 11 20 C 12.105469 20 13 19.105469 13 18 C 13 16.894531 12.105469 16 11 16 Z M 21 16 C 19.894531 16 19 16.894531 19 18 C 19 19.105469 19.894531 20 21 20 C 22.105469 20 23 19.105469 23 18 C 23 16.894531 22.105469 16 21 16 Z M 21.25 21.53125 C 20.101563 22.597656 18.171875 23.28125 16 23.28125 C 13.828125 23.28125 11.898438 22.589844 10.75 21.65625 C 11.390625 23.390625 13.445313 25 16 25 C 18.554688 25 20.609375 23.398438 21.25 21.53125 Z"/></svg></a> <a href="https://lists.openmainframeproject.org/g/wg-cobol/subgroups"><svg role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M24 5.457v13.909c0 .904-.732 1.636-1.636 1.636h-3.819V11.73L12 16.64l-6.545-4.91v9.273H1.636A1.636 1.636 0 0 1 0 19.366V5.457c0-2.023 2.309-3.178 3.927-1.964L5.455 4.64 12 9.548l6.545-4.91 1.528-1.145C21.69 2.28 24 3.434 24 5.457z"/></svg></a> <a href="https://openbase.com/js/cobol/documentation"><svg viewBox="0 0 500 500" xmlns="http://www.w3.org/2000/svg"><g transform="matrix(1, 0, 0, 1, 13.859316, 9.109739)"><g><g><path d="M340.732,0H55v485h375V94.518L340.732,0z M345,26.364L405.1,90H345V26.364z M415,470H70V15h260v90h85V470z"/><rect x="102.5" y="191" width="280" height="15"/><rect x="102.5" y="141" width="120" height="15"/><rect x="102.5" y="241" width="280" height="15"/><rect x="102.5" y="291" width="280" height="15"/><rect x="102.5" y="341" width="280" height="15"/><rect x="102.5" y="391" width="280" height="15"/></g></g></g></svg></a></div>
+
+* COBOL, aka COmmon Business Oriented Language, is a <a href="../lists/languages.html?filter=pl">programming language</a> created in 1959 by Howard Bromberg and Norman Discount and Vernon Reeves and Jean E. Sammet and William Selden and Gertrude Tierney and Grace Hopper.
+ link ../lists/languages.html?filter=1959 1959
+ link ../lists/creators.html#howardBromberg Howard Bromberg
+ link ../lists/creators.html#normanDiscount Norman Discount
+ link ../lists/creators.html#vernonReeves Vernon Reeves
+ link ../lists/creators.html#jeanESammet Jean E. Sammet
+ link ../lists/creators.html#williamSelden William Selden
+ link ../lists/creators.html#gertrudeTierney Gertrude Tierney
+ link ../lists/creators.html#graceHopper Grace Hopper
+
+kpiTable
+ #20 <span title="TotalRank: 68 Jobs: 37 Users: 28 Facts: 7 Links: 33">on PLDB</span>
+ 64 Years Old
+ 187.2k <span title="Crude user estimate from a linear model.">Users</span>
+ 301 <span title="Books about or leveraging COBOL">Books</span>
+ 20 <span title="Academic publications about or leveraging COBOL">Papers</span>
+ 3k <span title="COBOL repos on GitHub.">Repos</span>
+
+* Try now: <a href="https://riju.codes/cobol">Riju</a>
+
+* COBOL (, an acronym for common business-oriented language) is a compiled English-like computer programming language designed for business use. It is imperative, procedural and, since 2002, object-oriented. COBOL is primarily used in business, finance, and administrative systems for companies and governments. Read more on Wikipedia...
+ https://en.wikipedia.org/wiki/COBOL Read more on Wikipedia...
+
+- COBOL Wikipedia page
+ https://en.wikipedia.org/wiki/COBOL
+- COBOL docs
+ https://openbase.com/js/cobol/documentation
+- PLDB has 2 mailing list sites for COBOL: <a href="https://lists.midrange.com/mailman/listinfo/cobol400-l">lists.midrange.com</a>, <a href="https://lists.openmainframeproject.org/g/wg-cobol/subgroups">lists.openmainframeproject.org</a>
+- There are at least 3,411 COBOL repos on <a href="https://github.com/search?q=language:COBOL">GitHub</a>
+- COBOL first developed in <a href="../lists/originCommunities.html#conferenceCommitteeOnDataSystemsLanguages">Conference/Committee on Data Systems Languages</a>
+- PLDB estimates there are currently 3k job openings for COBOL programmers.
+- file extensions for COBOL include cbl, cob, cpy, ccp, cobol, COB and CPY
+- The  Google BigQuery Public Dataset GitHub snapshot shows 628 users using COBOL in 667 repos on <a href="https://api.github.com/search/repositories?q=language:COBOL">GitHub</a>
+- Check out the 4 <a href="https://www.meetup.com/topics/cobol/">COBOL meetup groups</a> on Meetup.com.
+- There are 2,605 members in the <a href="https://reddit.com/r/cobol">COBOL subreddit</a>
+- There are 39 <a href="https://projecteuler.net/language=COBOL">Project Euler</a> users using COBOL
+- In the 2021 StackOverflow <a href="https://insights.stackoverflow.com/survey">developer survey</a> COBOL programmers reported a median salary of $52,340. 1% of respondents reported using COBOL. 437 programmers reported using COBOL, and 309 said they wanted to use it
+- Explore COBOL snippets on <a href="http://www.rosettacode.org/wiki/Category:COBOL">Rosetta Code</a>
+- COBOL on HOPL
+ https://hopl.info/showlanguage.prx?exp=139
+- COBOL ranks #25 in the <a href="https://www.tiobe.com/tiobe-index/">TIOBE Index</a>
+- COBOL Ubuntu package
+ https://packages.ubuntu.com/jammy/open-cobol
+- <a href="codemirror.html">CodeMirror</a> <a href="https://github.com/codemirror/codemirror5/tree/master/mode/cobol">package</a> for syntax highlighting COBOL
+- <a href="pygments.html">Pygments</a> supports <a href="https://github.com/pygments/pygments/blob/master/pygments/lexers/business.py">syntax highlighting</a> for COBOL
+- GitHub supports <a href="https://bitbucket.org/bitlang/sublime_cobol" title="The package used for syntax highlighting by GitHub Linguist.">syntax highlighting</a> for COBOL
+- COBOL appears in the <a href="https://github.com/mame/quine-relay">Quine Relay</a> project
+- Indeed.com has 838 matches for <a href="https://www.indeed.com/jobs?q=cobol developer">"cobol developer"</a>.
+- See also: (16 related languages)<a href="comtran.html">COMTRAN</a>, <a href="eiffel.html">Eiffel</a>, <a href="flow-matic.html">FLOW-MATIC</a>, <a href="smalltalk.html">Smalltalk</a>, <a href="pl-i.html">PL/I</a>, <a href="plb.html">Programming Language for Business</a>, <a href="algol-58.html">ALGOL 58</a>, <a href="fact.html">Fully Automated Compiling Technique</a>, <a href="algol.html">Algol</a>, <a href="unicode.html">Unicode</a>, <a href="xml.html">XML</a>, <a href="unix.html">Unix</a>, <a href="visual-basic.net.html">Visual Basic .NET</a>, <a href="utf-8.html">UTF-8</a>, <a href="jcl.html">JCL</a>, <a href="pascal.html">Pascal</a>
+- HTML of this page generated by <a href="https://github.com/breck7/pldb/blob/main/code/LanguagePage.ts">LanguagePage.ts</a>
+- <a href="https://pldb.com/edit/cobol">Improve our COBOL file</a>
+
+html <br>
+
+codeWithHeader Example from <a href='https://riju.codes/cobol'>Riju</a>:
+ IDENTIFICATION DIVISION.
+ PROGRAM-ID. MAIN.
+ PROCEDURE DIVISION.
+     DISPLAY &quot;Hello, world!&quot;.
+     STOP RUN.
+ 
+
+codeWithHeader Example from <a href='https://github.com/leachim6/hello-world/blob/main/c/COBOL.cbl'>hello-world</a>:
+        identification division.
+        program-id. cobol.
+        procedure division.
+        main.
+            display &#39;Hello World.&#39; end-display.
+            stop run.
+ 
+
+codeWithHeader Example from <a href='http://helloworldcollection.de/#COBOL'>the Hello World Collection</a>:
+        * Hello World in COBOL
+ 
+ *****************************
+ IDENTIFICATION DIVISION.
+ PROGRAM-ID. HELLO.
+ ENVIRONMENT DIVISION.
+ DATA DIVISION.
+ PROCEDURE DIVISION.
+ MAIN SECTION.
+ DISPLAY &quot;Hello World!&quot;
+ STOP RUN.
+ ****************************
+
+codeWithHeader Example from <a href='https://bitbucket.org/bitlang/sublime_cobol'>Linguist</a>:
+         program-id. hello.
+         procedure division.
+         display &quot;Hello, World!&quot;.
+         stop run.
+ 
+ 
+
+codeWithHeader Example from <a href='https://en.wikipedia.org/wiki/COBOL'>Wikipedia</a>:
+ 19.52.48 JOB    3  $HASP100 COBUCLG  ON READER1     COBOL BASE TEST
+     19.52.48 JOB    3  IEF677I WARNING MESSAGE(S) FOR JOB COBUCLG  ISSUED
+     19.52.48 JOB    3  $HASP373 COBUCLG  STARTED - INIT  1 - CLASS A - SYS BSP1
+     19.52.48 JOB    3  IEC130I SYSPUNCH DD STATEMENT MISSING
+     19.52.48 JOB    3  IEC130I SYSLIB   DD STATEMENT MISSING
+     19.52.48 JOB    3  IEC130I SYSPUNCH DD STATEMENT MISSING
+     19.52.48 JOB    3  IEFACTRT - Stepname  Procstep  Program   Retcode
+     19.52.48 JOB    3  COBUCLG    BASETEST  COB       IKFCBL00  RC= 0000
+     19.52.48 JOB    3  COBUCLG    BASETEST  LKED      IEWL      RC= 0000
+     19.52.48 JOB    3  +HELLO, WORLD
+     19.52.48 JOB    3  COBUCLG    BASETEST  GO        PGM=*.DD  RC= 0000
+     19.52.48 JOB    3  $HASP395 COBUCLG  ENDED
+
+## <a href="../lists/keywords.html?filter=cobol">Keywords</a> in COBOL
+* ACCEPT ACCESS ADD ADDRESS ADVANCING AFTER ALL ALPHABET ALPHABETIC ALPHABETIC-LOWER ALPHABETIC-UPPER ALPHANUMERIC ALPHANUMERIC-EDITED ALSO ALTER ALTERNATE AND ANY APPLY ARE AREA AREAS ASCENDING ASSIGN AT AUTHOR BASIS BEFORE BEGINNING BINARY BLANK BLOCK BOTTOM BY CALL CANCEL CBL CD CF CH CHARACTER CHARACTERS CLASS CLASS-ID CLOCK-UNITS CLOSE COBOL CODE CODE-SET COLLATING COLUMN COM-REG COMMA COMMON COMMUNICATION COMP COMP-1 COMP-2 COMP-3 COMP-4 COMP-5 COMPUTATIONAL COMPUTATIONAL-1 COMPUTATIONAL-2 COMPUTATIONAL-3 COMPUTATIONAL-4 COMPUTATIONAL-5 COMPUTE CONFIGURATION CONTAINS CONTENT CONTINUE CONTROL CONTROLS CONVERTING COPY CORR CORRESPONDING COUNT CURRENCY DATA DATE-COMPILED DATE-WRITTEN DAY DAY-OF-WEEK DBCS DE DEBUG-CONTENTS DEBUG-ITEM DEBUG-LINE DEBUG-NAME DEBUG-SUB-1 DEBUG-SUB-2 DEBUG-SUB-3 DEBUGGING DECIMAL-POINT DECLARATIVES DELETE DELIMITED DELIMITER DEPENDING DESCENDING DESTINATION DETAIL DISPLAY DISPLAY-1 DIVIDE DIVISION DOWN DUPLICATES DYNAMIC EGCS EGI EJECT ELSE EMI ENABLE END END-ADD END-CALL END-COMPUTE END-DELETE END-DIVIDE END-EVALUATE END-IF END-INVOKE END-MULTIPLY END-OF-PAGE END-PERFORM END-READ END-RECEIVE END-RETURN END-REWRITE END-SEARCH END-START END-STRING END-SUBTRACT END-UNSTRING END-WRITE ENDING ENTER ENTRY ENVIRONMENT EOP EQUAL ERROR ESI EVALUATE EVERY EXCEPTION EXIT EXTEND EXTERNAL FALSE FD FILE FILE-CONTROL FILLER FINAL FIRST FOOTING FOR FROM FUNCTION GENERATE GIVING GLOBAL GO GOBACK GREATER GROUP HEADING HIGH-VALUE HIGH-VALUES I-O I-O-CONTROL ID IDENTIFICATION IF IN INDEX INDEXED INDICATE INHERITS INITIAL INITIALIZE INITIATE INPUT INPUT-OUTPUT INSERT INSPECT INSTALLATION INTO INVALID INVOKE IS JUST JUSTIFIED KANJI KEY LABEL LAST LEADING LEFT LENGTH LESS LIMIT LIMITS LINAGE LINAGE-COUNTER LINE LINE-COUNTER LINES LINKAGE LOCAL-STORAGE LOCK LOW-VALUE LOW-VALUES MEMORY MERGE MESSAGE METACLASS METHOD METHOD-ID MODE MODULES MORE-LABELS MOVE MULTIPLE MULTIPLY NATIVE NATIVE_BINARY NEGATIVE NEXT NO NOT NULL NULLS NUMBER NUMERIC NUMERIC-EDITED OBJECT OBJECT-COMPUTER OCCURS OF OFF OMITTED ON OPEN OPTIONAL OR ORDER ORGANIZATION OTHER OUTPUT OVERFLOW OVERRIDE PACKED-DECIMAL PADDING PAGE PAGE-COUNTER PASSWORD PERFORM PF PH PIC PICTURE PLUS POINTER POSITION POSITIVE PRINTING PROCEDURE PROCEDURE-POINTER PROCEDURES PROCEED PROCESSING PROGRAM PROGRAM-ID PURGE QUEUE QUOTE QUOTES RANDOM RD READ READY RECEIVE RECORD RECORDING RECORDS RECURSIVE REDEFINES REEL REFERENCE REFERENCES RELATIVE RELEASE RELOAD REMAINDER REMOVAL RENAMES REPLACE REPLACING REPORT REPORTING REPORTS REPOSITORY RERUN RESERVE RESET RETURN RETURN-CODE RETURNING REVERSED REWIND REWRITE RF RH RIGHT ROUNDED RUN SAME SD SEARCH SECTION SECURITY SEGMENT SEGMENT-LIMIT SELECT SELF SEND SENTENCE SEPARATE SEQUENCE SEQUENTIAL SERVICE SET SHIFT-IN SHIFT-OUT SIGN SIZE SKIP1 SKIP2 SKIP3 SORT SORT-CONTROL SORT-CORE-SIZE SORT-FILE-SIZE SORT-MERGE SORT-MESSAGE SORT-MODE-SIZE SORT-RETURN SOURCE SOURCE-COMPUTER SPACE SPACES SPECIAL-NAMES STANDARD STANDARD-1 STANDARD-2 START STATUS STOP STRING SUB-QUEUE-1 SUB-QUEUE-2 SUB-QUEUE-3 SUBTRACT SUM SUPER SUPPRESS SYMBOLIC SYNC SYNCHRONIZED TABLE TALLY TALLYING TAPE TERMINAL TERMINATE TEST TEXT THAN THEN THROUGH THRU TIME TIMES TITLE TO TOP TRACE TRAILING TRUE TYPE UNIT UNSTRING UNTIL UP UPON USAGE USE USING VALUE VALUES VARYING WHEN WHEN-COMPILED WITH WORDS WORKING-STORAGE WRITE WRITE-ONLY ZERO ZEROES ZEROS
+
+endColumns
+
+## Language <a href="../lists/features.html">features</a>
+
+treeTable
+ row
+  Feature Fixed Point Numbers
+  FeatureLink ../features/hasFixedPoint.html
+  Supported <span class="hasFeature">✓</span>
+  Token 
+  Example
+ row
+  Feature Booleans
+  FeatureLink ../features/hasBooleans.html
+  Supported <span class="hasFeature">✓</span>
+  Token TRUE FALSE
+  Example
+ row
+  Feature Case Insensitive Identifiers
+  FeatureLink ../features/hasCaseInsensitiveIdentifiers.html
+  Supported <span class="hasFeature">✓</span>
+  Token 
+  Example
+ row
+  Feature Print() Debugging
+  FeatureLink ../features/hasPrintDebugging.html
+  Supported <span class="hasFeature">✓</span>
+  Token DISPLAY
+  Example
+ row
+  Feature Line Comments
+  FeatureLink ../features/hasLineComments.html
+  Supported <span class="hasFeature">✓</span>
+  Token *>
+  Example
+   MOVE ABC to XYZ  *> This is a comment.
+ row
+  Feature Comments
+  FeatureLink ../features/hasComments.html
+  Supported <span class="hasFeature">✓</span>
+  Token 
+  Example
+ row
+  Feature Pointers
+  FeatureLink ../features/hasPointers.html
+  Supported <span class="hasFeature">✓</span>
+  Token 
+  Example
+ row
+  Feature Semantic Indentation
+  FeatureLink ../features/hasSemanticIndentation.html
+  Supported <span class="doesNotHaveFeature">X</span>
+  Token 
+  Example
+ row
+  Feature MultiLine Comments
+  FeatureLink ../features/hasMultiLineComments.html
+  Supported <span class="doesNotHaveFeature">X</span>
+  Token 
+  Example
+ row
+  Feature Zero-based numbering
+  FeatureLink ../features/hasZeroBasedNumbering.html
+  Supported <span class="doesNotHaveFeature">X</span>
+  Token 
+  Example
+
+## Books about COBOL on goodreads
+pipeTable
+ title|titleLink|author|year|reviews|ratings|rating
+ Cobol Programming|https://www.goodreads.com/search?q=Cobol Programming M.K. Roy|M.K. Roy|1983|1|9|4.11
+ Structured Cobol Programming|https://www.goodreads.com/search?q=Structured Cobol Programming Nancy B. Stern|Nancy B. Stern|1979|0|15|4.33
+ DB2 for the COBOL Programmer, Part 1|https://www.goodreads.com/search?q=DB2 for the COBOL Programmer, Part 1 Curtis Garvin|Curtis Garvin|1998|1|12|3.58
+ IMS for the COBOL Programmer: Database Processing with DL/I|https://www.goodreads.com/search?q=IMS for the COBOL Programmer: Database Processing with DL/I Steve Eckols|Steve Eckols|1985|3|33|4.12
+ Murach's CICS for the COBOL Programmer|https://www.goodreads.com/search?q=Murach's CICS for the COBOL Programmer Raul Menendez|Raul Menendez|2001|1|25|3.96
+ Vsam For The Cobol Programmer: Concepts, Cobol, Jcl, Idcams|https://www.goodreads.com/search?q=Vsam For The Cobol Programmer: Concepts, Cobol, Jcl, Idcams Doug Lowe|Doug Lowe|1982|1|5|2.60
+ DB2 for the COBOL Programmer|https://www.goodreads.com/search?q=DB2 for the COBOL Programmer Curtis Garvin|Curtis Garvin|1999|1|6|4.17
+ Cobol Programming A Complete Course In Writing Cobol Programs|https://www.goodreads.com/search?q=Cobol Programming A Complete Course In Writing Cobol Programs John Watters|John Watters|1972|0|4|2.00
+ DB2 for the COBOL Programmer: An Introductory Course|https://www.goodreads.com/search?q=DB2 for the COBOL Programmer: An Introductory Course Steve Eckols|Steve Eckols|1991|0|9|4.11
+ COBOL for Dummies [With One/Cheatsheet]|https://www.goodreads.com/search?q=COBOL for Dummies [With One/Cheatsheet] Arthur Griffith|Arthur Griffith|1997|0|3|2.33
+
+## Books about COBOL from ISBNdb
+pipeTable
+ title|titleLink|authors|year|publisher
+ COBOL for the 21st Century|https://isbndb.com/book/9780471722618|Stern, Nancy B. and Stern, Robert A. and Ley, James P.|2005|Wiley
+ Successful COBOL Upgrades: Highlights and Programming Techniques|https://isbndb.com/book/9780471330110|Chae, Young and Rogers, Steven|1999|Wiley
+ Structured Cobol Programming: For the Year 2000 and Beyond, 9th Edition|https://isbndb.com/book/9780471318811|Stern, Nancy B. and Stern, Robert A.|1999|Wiley
+ Modern COBOL programming|https://isbndb.com/book/9780070510449|Price, Wilson T|1991|Mitchell McGraw-Hill
+ Structured COBOL Programming: Year 2000 Update Version (with Syntax Guide and Disk)|https://isbndb.com/book/9780471299875|Stern, Nancy B. and Stern, Robert A.|1998|Wiley
+ Cobol Programming Problems and Solutions|https://isbndb.com/book/9780074518656|Roy, M.|1987|McGraw-Hill
+ Cobol programming: A complete course in writing Cobol programs|https://isbndb.com/book/9780435778033|Watters, John|1972|Heinemann Educational
+ Introduction to Computer Programming: ANSI Cobol|https://isbndb.com/book/9780882361031|Shelly, Gary B.|1973|Anaheim Pub Co
+ Programming Principles With Cobol I|https://isbndb.com/book/9780538104203|Don B Medley|1984|South-western Pub. Co
+ COBOL Programmers Swing with Java|https://isbndb.com/book/9780511081507|E. Reed Doke; Bill C. Hardgrave; Richard A. Johnson|20041228|Cambridge University Press
+ Cobol for Students|https://isbndb.com/book/9780340645529|Parkin, Andrew and Yorke, Richard|1995|Butterworth-Heinemann
+ Structured ANS COBOL|https://isbndb.com/book/9780911625387|Mike Murach and Paul Noll|1987|Fresno, Calif. : M. Murach & Associates, c1986-
+ Micro Focus Workbench: Developing Mainframe COBOL Applications on the PC|https://isbndb.com/book/9780471556114|Jatich, Alida and Nowak, Phil|1992|Wiley
+ Structured COBOL Programming: With Syntax Guide and Student Program and Data Disk|https://isbndb.com/book/9780471138860|Stern, Nancy B. and Stern, Robert A.|1996|Wiley
+ Cobol Programming|https://isbndb.com/book/9780835908351|Peter Abel|1984|Prentice Hall
+ Introductory Structured Cobol Programming|https://isbndb.com/book/9780442231668|Popkin, Gary S.,|1981|D.Van Nostrand
+ Object-Oriented COBOL (SIGS: Advances in Object Technology)|https://isbndb.com/book/9780132611404|Arranga, Edmund C. and Coyle, Frank P.|1997|Cambridge University Press
+ From COBOL to OOP (The Morgan Kaufmann Series in Software Engineering and Programming)|https://isbndb.com/book/9781558608221|Knasmüller, Markus|2003|Morgan Kaufmann
+ Structured Cobol Methods: How to Design, Code, and Test Your Programs So They're Easier to Debug, Document, and Maintain|https://isbndb.com/book/9780911625943|Noll, Paul|1997|Mike Murach & Associates Inc
+ Structured Cobol|https://isbndb.com/book/9780070498099|Philippakis, A. S. and Kazmier, Leonard J.|1986|McGraw-Hill College
+ An Introduction to Object COBOL|https://isbndb.com/book/9780471183464|Doke, E. Reed and Hardgrave, Bill C.|1997|Wiley
+ Cics for the Cobol Programmer: An Introductory Course (Pt. 1)|https://isbndb.com/book/9780911625608|Lowe, Doug|1992|Mike Murach & Associates Inc
+ Structured Cobol Programming|https://isbndb.com/book/9788131503829|Shelly|2021|CENEAGE LEARNING INDIA PVT LTD
+ Introduction To Business Data Processing With Basic, Fortran And Cobol Programming|https://isbndb.com/book/9780471030911|Donald Keith Caver|1979|John Wiley & Sons Inc
+ Fundamentals of COBOL Programming|https://isbndb.com/book/9780697081018|Carl Feingold|1971|
+ Fundamentals of structured COBOL programming|https://isbndb.com/book/9780697081735|Feingold, Carl|1983|W.C. Brown Co
+ Programming Standards And Guidelines: Cobol Edition|https://isbndb.com/book/9780137298235|Barry K. Nirmal|1987|Prentice Hall
+ Mastering Cobal: Let the PC Teach You COBOL Programming|https://isbndb.com/book/9780471159742|Woollard, Rex and Bonner, Andrea|1997|Wiley
+ An Introduction To Cobol And Watbol ; A Structured Programming Approach|https://isbndb.com/book/9780919884038|Cowsan and D. D. ; Dirksen and P. H. ; Graham and J. W.|1976|Watfac
+ COBOL II: Programming Techniques, Efficiency Considerations, Debugging Techniques (IBM McGraw-Hill Series)|https://isbndb.com/book/9780070065338|Bookman, Harvey|1990|McGraw-Hill
+ How To Evaluate-and Improve-your Cobol Programming Methods: A Guide For Managers|https://isbndb.com/book/9780911625288|Paul Noll|1986|Mike Murach & Associates Inc
+ Cobol Programming|https://isbndb.com/book/9780730013242|P. A. Crump and R. D. Pearson||Geelong, Vic. : Deakin University, 1992.
+ Cobol Programming Interview Questions: Cobol Job Interview Review Guide|https://isbndb.com/book/9781933804453|Terry Sanchez-clark|2010|Equity Press
+ Methodical Programming in COBOL|https://isbndb.com/book/9780273018209|Ray Welland|1983|Hyperion Books
+ Introductory Structured Cobol Programming|https://isbndb.com/book/9780534231668||1985|Kent Pub Co
+ Fundamentals Of Structured Cobol Programming|https://isbndb.com/book/9780697081865|||Dubuque, Iowa : W.c. Brown Col., C1983.
+ Using Micro Focus Cobol Workbench|https://isbndb.com/book/9780877098140|Leona Roen|1994|Course Technology Inc
+ COBOL programming: An introduction for librarians|https://isbndb.com/book/9780208015273|Brophy, Peter|1976|Linnet Books
+ Structured Programming In Cobol (complete Course Texts)|https://isbndb.com/book/9781870941822|B.j. Holmes|1991|Thomson Learning
+ Elementary Cobol Programming;: A Step By Step Approach|https://isbndb.com/book/9780070157804|Gordon Bitter Davis|1971|Mcgraw-hill
+ Getting Started With Micro Focus Personal COBOL for Windows|https://isbndb.com/book/9780471184904|Doke, E. Reed|1997|Wiley
+ Murach's Mainframe COBOL|https://isbndb.com/book/9781890774240|Mike Murach and Anne Prince and Raul Menendez|2004|Mike Murach & Associates
+ Programming In COBOL / 400|https://isbndb.com/book/9780471418467|Cooper, James and Stern, Nancy B. and Stern, Robert A.|2001|Wiley
+ Advanced COBOL for Structured and Object-Oriented Programming, 3rdEdition|https://isbndb.com/book/9780471314813|Brown, Gary DeWard|1998|Wiley
+ Java for COBOL Programmers (Programming Series)|https://isbndb.com/book/9781584505655|Byrne, John C.|2008|Charles River Media
+ Beginning COBOL for Programmers|https://isbndb.com/book/9781430262541|Coughlan, Michael|2014|Apress
+ Vsam for the Cobol Programmer: Concepts, Cobol, Jcl, Idcams|https://isbndb.com/book/9780911625455|Lowe, Doug|1989|Mike Murach & Associates Inc
+ COBOL for the 21st Century|https://isbndb.com/book/9780471073215|Stern, Nancy B. and Stern, Robert A. and Ley, James P.|2002|Wiley
+ Murach's Structured COBOL|https://isbndb.com/book/9781890774059|Murach, Mike and Prince, Anne and Menendez, Raul|2000|Mike Murach & Associates Inc
+ Sams Teach Yourself COBOL in 24 Hours|https://isbndb.com/book/9780768685206|Hubbell, Thane|1998|Sams Publishing
+ Sams Teach Yourself COBOL in 24 Hours|https://isbndb.com/book/9780672314537|Hubbell, Thane|1998|Sams Publishing
+ Cobol Unleashed|https://isbndb.com/book/9780672312540|Wessler, Jon|1998|Sams
+ Structured COBOL Programming, 7th Edition|https://isbndb.com/book/9780471597476|Stern, Nancy and Stern, Robert A.|1994-02-02T00:00:01Z|Wiley
+ Cobol Programming: A Structural Approach|https://isbndb.com/book/9780876261293|Nickerson, Robert C.|1977|Prentice Hall
+ Structured COBOL Programming, Second Edition (Shelly Cashman Series)|https://isbndb.com/book/9780789557032|Shelly, Gary B. and Cashman, Thomas J. and Foreman, Roy O.|1999-11-18T00:00:01Z|Course Technology
+ Java for Cobol Programmers (Programming Series)|https://isbndb.com/book/9781584502289|Byrne, John C and Cross, Jim|2002|Charles River Media
+ Advanced ANSI COBOL with Structured Programming: For VS COBOL II and Microsoft Micro Focus COBOL|https://isbndb.com/book/9780471547860|Brown, Gary DeWard|1992|Wiley
+ Fundamentals of structured COBOL programming|https://isbndb.com/book/9780697081285|Feingold, Carl|1978T|W. C. Brown Co
+ Structured Cobol Programming|https://isbndb.com/book/9780471183846|Stern, Nancy B. and Stern, Robert A.|1998-03-09T00:00:01Z|Wiley
+ COBOL Programming|https://isbndb.com/book/9780471823179|Stern, Nancy B. and Stern, Robert A.|1970|John Wiley & Sons
+ Structured COBOL Programming Seventh Edition with Wiley COBOL Syntax Reference Guide with IBM and VAX Enhancements|https://isbndb.com/book/9780471008385|Stern, Nancy B. and Stern, Robert A.|1994|Wiley
+ Structured Programming with COBOL Examples|https://isbndb.com/book/9780595650347|Parsons, Earl H.|2002|iUniverse
+ COBOL and Visual Basic on .NET: A Guide for the Reformed Mainframe Programmer|https://isbndb.com/book/9781590590485|Chris L. Richardson|2003|Apress
+ A guide to COBOL programming|https://isbndb.com/book/9780471582434|McCracken, Daniel D|1970|Wiley-Interscience
+ C for COBOL Programmers: A Business Approach|https://isbndb.com/book/9780805316605|Gearing, Jim|2008|Pearson Technology Group
+ Modern Cobol Programming|https://isbndb.com/book/9780078375279|Price, Wilson T. and Olson, Jack|1991-07-01T00:00:01Z|McGraw-Hill College
+ Structured Cobol Programming|https://isbndb.com/book/9780138542177|Grauer, Robert T.|1985-04-01T00:00:01Z|Pearson College Div
+ Structured Programming with COBOL Examples|https://isbndb.com/book/9780595250943|Parsons, Earl|2002|iUniverse
+ Structured COBOL Programming (Shelly Cashman Series)|https://isbndb.com/book/9780878354863|Shelly, Gary B. and Cashman, Thomas J. and Foreman, Roy O.|1995|Course Technology
+ Structured COBOL|https://isbndb.com/book/9780878351978|Shelly, Gary B|1985T|Anaheim Pub. Co
+ COBOL Programming: Problems and Solutions: Refer to Title When This ISBN Is the Main ISBN|https://isbndb.com/book/9780074603185|Roy|1989-06-01T00:00:01Z|McGraw-Hill Education - Europe
+ Teach Yourself Cobol in 21 Days (Sams Teach Yourself)|https://isbndb.com/book/9780672304699|Budlong, Mo|1994|Sams
+ Structured Cobol|https://isbndb.com/book/9780070691667|Welburn, Tyler and Price, Wilson|1990|McGraw-Hill Inc.,US
+ A simplified guide to structured COBOL programming|https://isbndb.com/book/9780471582847|McCracken, Daniel D|1976|Wiley
+ Advanced ANSI Cobol Disk/Tape Programming Efficiencies (Their ANSI COBOL series)|https://isbndb.com/book/9780882361055|Shelly, Gary B. and Cashman, Thomas J.|1974-06-01T00:00:01Z|Anaheim Pub Co
+ Cobol programming, a structured approach|https://isbndb.com/book/9780835908337|Abel, Peter|1980|Reston Pub. Co
+ Structured Cobol Programming 6ed|https://isbndb.com/book/9780471549291||1991|John Wiley & Sons Inc
+ Structured COBOL Programming, Syntax Guide|https://isbndb.com/book/9780471540281|Stern, Nancy B. and Stern, Robert A.|1991|Wiley
+ Fundamentals of Structured Cobol Programming|https://isbndb.com/book/9780697067227|Feingold, Carl and Wolff, Louis|1991|William C Brown Pub
+ Structured Programming in Cobol|https://isbndb.com/book/9780905435411|Holmes, B. J.|1984|Letts Educational
+ Beginning Structured Cobol|https://isbndb.com/book/9780155053700|Coburn, Edward J.|1988-01-01T00:00:01Z|Harcourt College Pub
+ Beyond Cobol|https://isbndb.com/book/9780471099499|Brown, Gary|1981|John Wiley & Sons
+ Structured Cobol Programming, 8Th Ed|https://isbndb.com/book/9788126511877|WILEY INDIA and WILEY INDIA and WILEY INDIA|2007|STERN/ STERN
+ Comprehensive Structured COBOL|https://isbndb.com/book/9780877096214|Horn, L. Wayne and Gleason, Gary M. and Horn, Lister Wayne|1997|Boyd & Fraser Pub. Co.
+ Schaum's Outline of Theory and Problems of Programming With Structured Cobol (Schaum's Outlines)|https://isbndb.com/book/9780070379985|Newcomer, Lawrence R.|1984|Computing McGraw-Hill
+ Mastering COBOL Programming (Macmillan Master Series)|https://isbndb.com/book/9780333343852|Hutty, R.|1983|Palgrave Macmillan
+ High level COBOL programming (Winthrop computer systems series)|https://isbndb.com/book/9780876263297|Weinberg, Gerald M.; et.al.|1977|Winthrop Publishers
+ Structured COBOL Programming: Update Version for 2001 - 2002|https://isbndb.com/book/9780471438656|Stern, Nancy B. and Stern, Robert A.|2001|Wiley
+ Introduction to Computer Programming Structured COBOL|https://isbndb.com/book/9780882362267|Shelly, Gary B. and Cashman, Thomas J.|1981-06T|Anaheim Pub Co
+ Advanced ANS COBOL with structured programming|https://isbndb.com/book/9780471106425|Brown, Gary DeWard|1977|Wiley
+ Structured COBOL programming|https://isbndb.com/book/9780471871507|Stern, Nancy B|1985|Wiley
+ COBOL Programming|https://isbndb.com/book/9780471823292|Stern, Nancy B.|1975|John Wiley & Sons
+ Teach Yourself Computer Programming in COBOL (Teach Yourself)|https://isbndb.com/book/9780340203835|Fisher, M.|1982-10-01T00:00:01Z|Hodder & Stoughton Educational Division
+ Structured COBOL programming|https://isbndb.com/book/9780471170662|Stern, Nancy B|1997|Wiley
+ Structured COBOL Programming|https://isbndb.com/book/9780471524212|Stern, Nancy B. and Stern, Robert A.|1990|Wiley
+ Professional Programming in Cobol|https://isbndb.com/book/9780137255733|Johnson, Bruce M. and Ruwe, Marcia|1990|Prentice Hall
+ Structured COBOL Programming|https://isbndb.com/book/9780471755395|Stern, Nancy B.|2005-09-14T00:00:01Z|John Wiley & Sons Inc
+ COBOL logic and programming (Irwin-Dorsey information processing series)|https://isbndb.com/book/9780256015812|McCameron, Fritz A|1974|R. D. Irwin
+ Modern Cobol Programming/Book and Disk|https://isbndb.com/book/9780078375262|Price, Wilson T.|1991-02-01T00:00:01Z|McGraw-Hill College
+ American National Standard COBOL Programming|https://isbndb.com/book/9780030863127|Newell, John C.|1971|Holt Rinehart and Winston
+ Introduction to Computer Programming: Structured Cobol (With Charts)|https://isbndb.com/book/9780882361116|Shelly, Gary B.|1977-06-01T00:00:01Z|Anaheim Pub Co
+ Modular programming in COBOL (Business data processing: a Wiley series)|https://isbndb.com/book/9780471033257|Armstrong, Russell M|1973|Wiley
+ COBOL Support Packages: Programming and Productivity AIDS (Chemistry of Functional Groups)|https://isbndb.com/book/9780471628408|Naftaly, Stanley M.|1972|John Wiley & Sons
+ COBOL logic and programming: A structured approach (The Irwin series in information and decision sciences)|https://isbndb.com/book/9780256024838|McCameron, Fritz A|1981|R.D. Irwin
+ VS COBOL II for COBOL Programmers|https://isbndb.com/book/9780471622260|Sandler, Robert J.|1990|Wiley
+ COBOL 85 Programming|https://isbndb.com/book/9781349208111|Roger Hutty|19900704|Bloomsbury UK
+ Structured COBOL Programming|https://isbndb.com/book/9780471049135|Stern, Nancy B.|1979|John Wiley & Sons
+ Mastering COBOL Programming|https://isbndb.com/book/9781349143276|Roger Hutty; Mary Spence|19971111|Bloomsbury UK
+ COBOL programming: A structured approach|https://isbndb.com/book/9780835908085|Abel, Peter|1984|Reston Pub. Co
+ Cobol Programming: A Structured Approach|https://isbndb.com/book/9780131392472|Abel, Peter|1988|Prentice Hall
+ Structured Programming With Cobol and Jsp|https://isbndb.com/book/9780862382452|Thompson, John B.|1990|Krieger Pub Co
+ American National Standard, Programming Language Cobol (Classic Reprint)|https://isbndb.com/book/9780428621605|Standards, National Bureau of|2018|Forgotten Books
+ COBOL for students: A programming primer (Winthrop computer systems series)|https://isbndb.com/book/9780876261323|Finkenaur, Robert G|1977|Winthrop Publishers
+ COBOL|https://isbndb.com/book/9781349122387|Tony Royce|19911111|Bloomsbury UK
+ Structured Cobol|https://isbndb.com/book/9780697077639|Gerard A. Paquette|1991|William C Brown Pub
+ Cobol Programming|https://isbndb.com/book/9780435778019|Watters, John.|1970|Heinemann Educational
+ Cobol Programming: A Structured Approach|https://isbndb.com/book/9780131398900|Peter Abel|1988|
+ Structured COBOL|https://isbndb.com/book/9780471053620|Ruth Ashley|1980/05/08|John Wiley & Sons
+ Structured COBOL|https://isbndb.com/book/9780070157880|step approach|1987|New York : McGraw-Hill, c1987.
+ Cobol Programming|https://isbndb.com/book/9780471315391|Nancy B. Stern|1998|John Wiley & Sons Inc
+ Cobol Programming|https://isbndb.com/book/9780074518663|M.k. Roy and D.ghosh Dastidar|1983|Mcgraw-hill Education
+ Cobol Programming|https://isbndb.com/book/9780471894957|J.m. Triance|1982|John Wiley & Sons
+ Structured Cobol|https://isbndb.com/book/9780697067777|Matthews, Robert I.|1989|W.c. Brown
+ COBOL Programming|https://isbndb.com/book/9780850122497|Triance and J. M.||
+ Structured COBOL|https://isbndb.com/book/9781349122400|Tony Royce|19921111|Bloomsbury UK
+ Simplified Structured Cobol With Microsoft Microfocus Cobol|https://isbndb.com/book/9780471514077|Mccracken and Daniel D.; Golden and Donald G.|1990|Wiley
+ Structured COBOL|https://isbndb.com/book/9780801616624|College Pub. and 1988.|1988/02/01|St. Louis : Times Mirror/Mosby College Pub., 1988.
+ Cobol/370: For Vs Cobol And Cobol Ii Programmers (j Ranade Ibm Series)|https://isbndb.com/book/9780070065833|Harvey Bookman|1993|Mcgraw-hill
+ Structured Cobol Programming|https://isbndb.com/book/9780471534006|Nancy Stern and Robert A. Stern|1990|John Wiley And Sons Ltd
+ Structured Cobol Programming|https://isbndb.com/book/9780471305804|Nancy Stern and Robert A. Stern|1994|John Wiley And Sons Ltd
+ Structured Cobol Programming|https://isbndb.com/book/9780672976919|Morris Pollack|1982|Bobbs-merrill Educational Pub
+ Structured Cobol Programming|https://isbndb.com/book/9780789557155|Gary B. Shelly /  Cashman /  Foreman / Thomas J. Cashman|2000|
+ Cobol Programmer's Notebook|https://isbndb.com/book/9780139774140|James Edward Keogh|1998|Prentice Hall Ptr
+ Structured Cobol Programming|https://isbndb.com/book/9780471232148|Nancy B Stern|2002|Wiley
+ Structured Cobol Programming|https://isbndb.com/book/9780471362197|Nancy B. Stern and Robert A. Stern|1999|John Wiley & Sons Inc
+ Structured Cobol (college)|https://isbndb.com/book/9780669062076|Gary Haggard|1985|D C Heath & Co
+ Structured Cobol Programming|https://isbndb.com/book/9789971512460|Nancy Stern and Robert A. M. Stern and Robert A. Stern|1996|Wiley
+ Ans Cobol Programming|https://isbndb.com/book/9780130377708|James A Saxon|1977|Prentice-hall
+ Structured Cobol Programming|https://isbndb.com/book/9780850124217|J. M. Triance|1984|Blackwell Publishers
+ Programming In Cobol|https://isbndb.com/book/9780719005923|John M. Triance|1974|Manchester University Press
+ Structured Cobol Programming|https://isbndb.com/book/9780471384304|Nancy B. Stern and Robert A. Stern|1999|John Wiley & Sons Inc
+ Ansi Cobol Programming|https://isbndb.com/book/9780130377395|Saxon and James A|1972|Prentice-hall
+ Structured Cobol Programming|https://isbndb.com/book/9780672976902|Morris Pollack|1982|Bobbs-merrill Educational Pub
+ Structured Cobol Programming, Getting Started With Fujitsu Cobol 3.0|https://isbndb.com/book/9780471378839|Nancy Stern and Robert A. Stern and Calvin Priester|2000|Wiley
+ Structured COBOL Programming|https://isbndb.com/book/9780471632870|Robert A. Stern and Nancy B. Stern|1988/04/27|John Wiley & Sons
+ Modern Cobol Programming|https://isbndb.com/book/9780075552901|||Watsonville, Calif. : Mitchell Pub., C1989.
+ Structured COBOL programming|https://isbndb.com/book/9780138534905|Robert T. Grauer|1987|Englewood Cliffs, N.J. : Prentice-Hall, 1985.
+ Programming standard COBOL|https://isbndb.com/book/9780121665500|Winchung A. Chai and Henry W. Chai|1976|New York : Academic Press, c1976
+ Structured COBOL Programming|https://isbndb.com/book/9780471323730|Stern, Nancy B. and Stern, Robert Mitchell||John Wiley & Sons Inc
+ Structured Cobol Programming 8e + Microfocus Personal Cobol For Windows + Mastering Cobol Computer Based Training Set|https://isbndb.com/book/9780471255253|||John Wiley & Sons Inc
+ Modern Cobol Programming|https://isbndb.com/book/9780075564966|||Watsonville, Calif. : Mitchell Pub., C1989.
+ Structured Cobol Programming|https://isbndb.com/book/9780673159137|J K Pierson and Jeretta Horn|1986|Glenview, Ill. : Scott, Foresman, C1986.
+ Beginning structured COBOL|https://isbndb.com/book/9780534037956|Donald Keith Carver|1984/11/01|Monterey, Calif. : Brooks/Cole Pub. Co., c1985.
+ ANSI COBOL programming|https://isbndb.com/book/9780130377210|James A. Saxon and H.S. Englander|1972|Englewood Cliffs, N.J., Prentice-Hall [1972]
+ COBOL Software Modernization|https://isbndb.com/book/9781119073222|Franck Barbier and Jean-Luc Recoussine|2015-01-05|Wiley
+ Structured Cobol Programming: With Microfocus Cobol For Windows 1.1|https://isbndb.com/book/9780789512963|Gary B. Shelly and Thomas J. Cashman and Roy O. Foreman|1996|Course Technology Ptr
+ Comprehensive Cobol: Advanced Cobol Programming (chapters 14-26) Vol Ii|https://isbndb.com/book/9780071127684|Andrew S. Philippakis and Leonard J. Kazmier|1991|Mcgraw-hill Education (ise Editions)
+ Cobol Programming: An Introduction|https://isbndb.com/book/9780884053156|Torgil Ekman|1975|Petrocelli Books
+ Computer Programming In Cobol|https://isbndb.com/book/9788120300309|V. Rajaram and H.v. Sahashrabuddhe|2004|Prentice-hall Of India Pvt.ltd
+ Introductory Structured Cobol Programming|https://isbndb.com/book/9780442267711|Gary S Popkin|1981|Van Nostrand Reinhold Co
+ Fundamental Ansi Cobol Programming|https://isbndb.com/book/9780133392340|James B. Maginnis|1975|Prentice Hall
+ Application Programming Using Cobol|https://isbndb.com/book/9780873932509|N/a|1994|Dame Publications
+ Fundamentals Of Structured Cobol|https://isbndb.com/book/9780316606622|Robert C Nickerson|1987|Little, Brown
+ Structured Cobol Programming Seventh Edition With Syntax Guide Cobol Cbt Set|https://isbndb.com/book/9780471160083|Nancy Stern|1996|
+ Structured Ans Cobol Programming|https://isbndb.com/book/9780138544300|William M. Fuori and Stephen Gaughran|1984|Pearson College Div
+ Programming In Standard Cobol|https://isbndb.com/book/9780574179807|Gopal K. Kapur|1973|Science Research Associates
+ Elements Of Cobol Programming|https://isbndb.com/book/9780030183713|Wilson T. Price; Jack Olson|1977|Dryden Press
+ Wie Structured COBOL Programming|https://isbndb.com/book/9780471428855|Stern and Robert A. and Ley and James P. and Nancy||
+ Structured Programming In Cobol|https://isbndb.com/book/9780030705595|Robert Boettcher|1987|Holt Rinehart & Winston
+ Cobol Programming And Applications|https://isbndb.com/book/9780205065509|C. Joseph Sass|1979|Allyn And Bacon
+ Fundamentals Of Cobol Programming|https://isbndb.com/book/9780205048847|Walker, Terry M.|1976|Allyn And Bacon
+ Introductory Structured Cobol Programming|https://isbndb.com/book/9780442267735|Gary Popkin|1980|Van Nostrand Reinhold
+ Fundamentals Of Cobol Programming|https://isbndb.com/book/9780697081070|Carl Feingold|1973|W. C. Brown Co
+ Introductory Structured Cobol Programming|https://isbndb.com/book/9780534045661|Popkin and Gary S.|1985|Kent Pub Co
+ Guide To Cobol Programming|https://isbndb.com/book/9780471582441|Daniel D. Mccracken and Umberto Garbassi|1970|John Wiley & Sons Inc
+ High Level Cobol Programming|https://isbndb.com/book/9780894351266|Gerald Weinberg|1977|A Wiley-qed Publication
+ Beginning Cobol For Programmers|https://isbndb.com/book/|Coughlan, Michael|2014|Apress,
+ Programming In Cobol 400|https://isbndb.com/book/9781882419326|Virginia Willis|1997|29th Street Pr
+ Structured Cobol Programming Eighth Edition and Mastering COBOL: Computer Based Training|https://isbndb.com/book/9780471184089|Rex Woollard and Nancy Stern|October 1997|
+ Comprehensive Cobol: Fundamentals Of Cobol Programming (chapters 1-13) Vol I|https://isbndb.com/book/9780071127677|Andrew S. Philippakis and Leonard J. Kazmier|1991|Mcgraw-hill Education (ise Editions)
+ Fundamental ANSI COBOL programming|https://isbndb.com/book/9780133392180|Maginnis and James B.||Englewood Cliffs, N.J., Prentice-Hall [1974, c1975]
+ Essentials of COBOL programming|https://isbndb.com/book/9780914894346|Gerald N Pitts|1982|Rockville, MD : Computer Science Press, c1982.
+ Reengineering COBOL with objects|https://isbndb.com/book/9780070377745|step to sustainable legacy systems|1995|New York : McGraw-Hill, c1996.
+ Using Structured Cobol. Cobol Book 2.  (data Processing Training Series) (bk. 2)|https://isbndb.com/book/9780471871859|Ruth Ashley|1984|Wiley
+ Cobol From Micro To Mainframe, Structured Cobol Programming Volume 1 (volume 1)|https://isbndb.com/book/9780131402782|Robert T. Grauer & Carol Vazquez Villar|1991|Prentice Hall
+ Crystal Clear Cobol: An Introduction To Cobol And Structured Programming (v. 1)|https://isbndb.com/book/9780131950177|Trotter and William H.|1989|Prentice Hall
+ Introduction To Standard Cobol Programming|https://isbndb.com/book/9780155459632|Fredric Stuart|1975|Harcourt Brace Jovanovich
+ An Introduction To Cobol Programming|https://isbndb.com/book/9780700224579|Paul W Murrill|1974|Intext Educational Publishers
+ Advanced Application Programming Using Cobol|https://isbndb.com/book/9780873932806|Kenneth D Douglas|1994|Dame
+ Structures Cobol Programming 8e Set|https://isbndb.com/book/9780471321033|Stern|1998|John Wiley And Sons Ltd
+ Vse Cobol Ii Power Programming|https://isbndb.com/book/9780471573586|David S. Kirk|1993|*a Wiley-qed Publication
+ Cobol 85 Programming (computer Science)|https://isbndb.com/book/9780333484302|Roger Hutty|1990|Palgrave
+ Comprehensive Application Programming Using Cobol|https://isbndb.com/book/9780873932912|Kenneth D Douglas|1994|Dame
+ Essentials Of Structured Cobol Programming|https://isbndb.com/book/9780534005801|Jan Lee Mize and William W. Cotterman|1978|Krieger Pub Co
+ Structured Cobol Programming 7e Tr|https://isbndb.com/book/9780471306740|Nancy B. Stern|1994|
+ Cobol For The Ibm Pc|https://isbndb.com/book/9780442259709|Lim, Pacifico A.|1986|Van Nostrand Reinhold
+ Structured Cobol Programming 8e Tb|https://isbndb.com/book/9780471167808|Stern and Nancy B.|1997|John Wiley & Sons Inc
+ Elements Of Structured Cobol Programming|https://isbndb.com/book/9780030580529|Wilson T. Price|1982|Holt Rinehart & Winston
+ Fundamentals Of Structured Cobol Programming|https://isbndb.com/book/9780697009692|Carl Feingold|1988|W.c. Brown
+ Structured Cobol Programming Seventh Edition With Syntax Reference Guide And Micro Focus Personal Cobol Compiler And Mf Cobol Student Manual Set|https://isbndb.com/book/9780471034483|Nancy B. Stern and Robert A. Stern|1994|Wiley
+ Structured Cobol Programming 6e Tr|https://isbndb.com/book/9780471535430|N Stern|1992|John Wiley & Sons Inc
+ Programming Principles With Cobol Ii|https://isbndb.com/book/9780538104609|Ronald W. Eaves and Don B. Medley|1985|South-western Pub
+ Stern: Structured Cobol Programming 5ed|https://isbndb.com/book/9780471610533|N Stern|1988|John Wiley And Sons Ltd
+ Object Orientation For Cobol Programming|https://isbndb.com/book/9781569280058|Raymond Obin|1993|Micro Focus Pub
+ Using Micro Focus Personal COBOL|https://isbndb.com/book/9780697226457|Mark W. Smith and Douglas Coker|1994|Dubuque, IA : Business & Educational Technologies, c1994.
+ Getting Started With Rm/cobol Sixth Edition Set 5.25 And Structured Cobol Programming|https://isbndb.com/book/9780471533597|Nancy B. Stern and Robert A. Stern|1991|Wiley
+ Getting Started With Rm/cobal-85/structured Cobol Programming/with Free Cobol Syntax Referen...|https://isbndb.com/book/9780471533603|Nancy Stern and Robert Stern|1991|John Wiley & Sons Inc.
+ Cobol 85 Programming (computer Science Series)|https://isbndb.com/book/9780333484296|Roger Hutty|1990|Palgrave Macmillan
+ A Practical Approach To Cobol Programming|https://isbndb.com/book/9780470273920|Sharad Kant|1984|J. Wiley
+ Reducing Cobol Complexity Through Structured Programming|https://isbndb.com/book/9780884054665|Carma L Mcclure|1977|Petrocelli/charter
+ Mastering Cobol Programming (macmillan Modern Shakespeare)|https://isbndb.com/book/9780333343845|R. Hutty|1983|Palgrave Macmillan
+ Cobol Programming Using The .net Framework|https://isbndb.com/book/9780130668431|Ronald D. Reeves|2002|Pearson Education
+ Mastering Cobol Programming (macmillan Master Guides)|https://isbndb.com/book/9780333354575|R. Hutty|1983|Palgrave, Formerly Macmillan Press
+ Reducing Cobol Complexity Through Structured Programming|https://isbndb.com/book/9780442804664|Carma L. Mcclure|1978|Van Nostrand Reinhold
+ Fundamental Cobol For Ibm System 360|https://isbndb.com/book/9780133321142|Robert L Jones|1969|Prentice-hall
+ Cobol Programming: An Introduction For Librarians|https://isbndb.com/book/9780851572154|Peter Brophy|1976|Facet Publishing
+ Structured Cobol Programming Fujitsu Compiler Cd|https://isbndb.com/book/9780471350286|Stern|1999|John Wiley And Sons
+ A Practical Approach To Cobol Programming|https://isbndb.com/book/9788122427752|Sharad Kant|2010|New Age International Publisher
+ Programming The Ibm Personal Computer: Cobol|https://isbndb.com/book/9780030595639|Graham and N.|1984|International Thomson Publishing
+ Mastering Cobol Programming (macmillan Master Series)|https://isbndb.com/book/9780333681060|Roger Hutty and Mary Spence|1997|Palgrave
+ Advanced Structured Cobol And Program Design|https://isbndb.com/book/9780130114952|Don Cassel|1988|Prentice Hall
+ Cobol For The Ibm Personal Computer|https://isbndb.com/book/9780131397347|Kip R. Irvine|1988|Prentice Hall
+ Cobol For Micros (newnes Programming Books)|https://isbndb.com/book/9780408013420|Norman Stang|1983|Newnes Technical Books
+ Programming the IBM Personal Computer, COBOL|https://isbndb.com/book/9780030639937|Neill Graham|1984|New York : Holt, Rinehart, and Winston, c1984.
+ COBOL and Visual Basic on .NET|https://isbndb.com/book/9781430207726|Chris L. Richardson|20080101|Springer Nature
+ Teach Yourself Computer Programming In Cobol|https://isbndb.com/book/9780679102595|Random House Staff|1983|Teach Yourself
+ COBOL 177 Success Secrets - 177 Most Asked Questions On COBOL - What You Need To Know|https://isbndb.com/book/9781488533242|Wayne Russell|20140106|Emereo
+ Murach's CICS for the COBOL Programmer|https://isbndb.com/book/9781943872428|Doug Lowe, Raul Menendez|05/2001|Mike Murach & Associates
+ Application Programming And File Processing In Cobol|https://isbndb.com/book/9780669165715|Yuksel Uckan||D C Heath & Co
+ Structured Cobol Programming: Interactive And Batch Processing|https://isbndb.com/book/9780877098928|Bernard L. Levite|1994|Boyd & Fraser Pub Co
+ A Simplified Guide To Structured Cobol Programming|https://isbndb.com/book/9780471886587|Daniel D. Mccracken and Donald G. Golden|1988|Wiley
+ Application Programming And File Processing In Cobol|https://isbndb.com/book/9780669165708|Yuksel Uckan|1992|D C Heath & Co
+ Programming Principles With Cobol I: Instructors' Manual|https://isbndb.com/book/9780538277051|||
+ Structured Cobol Programming With Syntax Guide And Student Program, Data Disk And Micro Focus Personal Cobol For Windows And Getting Started With Microfocus Cobol For Windows|https://isbndb.com/book/9780471184966|Nancy Stern and Robert A. Stern and John Crawford and E. Reed Doke|1997|John Wiley & Sons
+ Computer Programming In Cobol The Easy Way|https://isbndb.com/book/9780812028010|Beverly Rosendorf|1984|Barrons Educational Series Inc
+ A Complete Course In Structured Cobol Programming|https://isbndb.com/book/9780534100926|John C Molluzzo|1989|Wadsworth Pub
+ A Simplified Guide To Structured Cobol Programming|https://isbndb.com/book/9780471610540|Daniel D. Mccracken and Donald G. Golden|1988|John Wiley And Sons (wie)
+ Instructor's Manual To Accompany Structured Cobol Programming|https://isbndb.com/book/9780673481054|Horn, Jeretta A.||Scott, Foresman
+ Structured Cobol Programming Eighth Edition And Getting Started With Ryan Mcfarland Cobol 3.5 Inch Disks, Second Edition|https://isbndb.com/book/9780471184096|J. Janossy and Nancy Stern|1997|
+ Structured Cobol Programming Eighth Edition With Syntax Guide And Student Program And Data Disk And Micro Focus Personal Cobol 2.0 For Dos Compiler ... Micro Focus Personal Cobol Student Manual|https://isbndb.com/book/9780471184959|Nancy B. Stern and Robert A. Stern and John B. Crawford|1997|Wiley
+ Handbook of COBOL techniques and programming standards|https://isbndb.com/book/9780894352270|Partners and Computer|1987|Wellesley, Mass. : QED Information Sciences, c1988.
+ Structured Cobol Programming: With Microfocus Net Express 4.0|https://isbndb.com/book/9780471690580|Nancy Stern|2004|John Wiley & Sons
+ Structured Programming With Cobol And Jsp (polytechnic Series)|https://isbndb.com/book/9780862381547|John B. Thompson|1989|Krieger Pub Co
+ Cics/vs Command Level Programming With Cobol Examples|https://isbndb.com/book/9780131338852|S. David Lee|1983|Ccd Online Systems
+ Basic Cobol Programming: Self-instructional Manual And Text|https://isbndb.com/book/9780201071337|L.m. Spitzearth|1970-06|Addison-wesley Pub Co
+ Pocket Guide To Cobol (pitman Programming Pocket Guides)|https://isbndb.com/book/9780273016502|Ray Welland|1981|Financial Times Prentice Hall (a Pearson Education Company)
+ Cobol 2000 Upd Mf Comp Doke Bonner Set|https://isbndb.com/book/9780471321293|||John Wiley & Sons Inc
+ Stern/structured Cobol Programming Seventh Edition With Syntax Reference Guide 2e And Stern/getting Started With Micro Focus Cobol Set|https://isbndb.com/book/9780471014355|Stern||John Wiley & Sons Inc
+ Structured Ans Cobol, Part 1: A Course For Novices Using A Subset Of 1974 And 1985 Ans Cobol (pt. 1)|https://isbndb.com/book/9780911625370|Mike Murach|1986|Mike Murach & Associates Inc
+ COBOL with an emphasis on structured program design|https://isbndb.com/book/9780131398580|Dennis F. Galletta|11/1/1984|Englewood Cliffs, NJ : Prentice-Hall, c1985.
+ Simplified Guide To Structured Cobol Programming: Instructor's Manual|https://isbndb.com/book/9780471600190|Donald G. Golden and Daniel D. McCracken|1988|Wiley
+ Solutions manual to accompany COBOL programming and applications|https://isbndb.com/book/9780205065523|||Boston: Allyn and Bacon, 1979.
+ Website To Accompany Structured Cobol Programming, 10th Edition|https://isbndb.com/book/9780471232131|||John Wiley & Sons Inc
+ Cics/Vs Command Level Programming With Cobol Examples|https://isbndb.com/book/9780961181017|S. David Lee|1986|C C D Online Systems, Incorporated
+ Structured Cobol Programming: For The Year 2000 And Beyond|https://isbndb.com/book/9780471362487|Nancy Stern|1999|John Wiley & Sons Inc
+ Essentials Of Cics Vs Command Level Programming Using Cobol|https://isbndb.com/book/9780697073211|Robert William Lowe|1989|William C Brown Pub
+ Os/2 Presentation Manager Programming For Cobol Programmers, Rev.ed.|https://isbndb.com/book/9780471561408|Robert B. Chapman|1994|*a Wiley-qed Publication
+ Cobol With Style: Programming Proverbs (hayden Computer Programming Series)|https://isbndb.com/book/9780810457812|Louis J Chmura|1976|Hayden Book Co
+ Structured Cobol Programming (wadsworth Series In Computer Information Systems)|https://isbndb.com/book/9780534071882|John C. Molluzzo|1987|Wadsworth Pub Co
+ Structured Cobol Programming 7e - Instructor's Resource Guide (paper Only)|https://isbndb.com/book/9780471306757|Nancy B. Stern|1994|John Wiley & Sons Inc
+ Study Guide To Accompany Structured Cobol Programming, 4th Edition|https://isbndb.com/book/9780471880677|Nancy Stern|1985|John Wiley & Sons Inc
+ Cobol Programming For The Ibm Pc And Pc Xt|https://isbndb.com/book/9789993270805|William M. Fuori|1985|Prentice Hall
+ Programming Language Cobol (ansi X3 23-1985, Fips 21-3)|https://isbndb.com/book/9789993129134|Unknown|1985|Amer Natl Standards Inst
+ Stern: Teachers Manual To Accompany Structured Cobol Programming 6ed (manual)|https://isbndb.com/book/9780471535447|Stern|1992|John Wiley & Sons Inc
+ Elements Of Cobol Web Programming : Using Micro Focus Net Express|https://isbndb.com/book/9780965594516|Price and Wilson T|2001|Object-z Publishing
+ Cobol Programming Starter Kit (includes Cd-rom)  C/ww95/us|https://isbndb.com/book/9780672312045|Microfocus Personal|1997|Macmillan Digital Publishing
+ Introduction To Structured Cobol (data Processing Training Series) (bk. 1)|https://isbndb.com/book/9780471870258|Ruth Ashley|1984|Wiley
+ Structured Programming For The Cobol Programmer: Design Documentation Coding Testing|https://isbndb.com/book/9780911625035|Paul Noll|1977|Mike Murach & Associates
+ Ibm Visualage For Cobol For Os/2 Object: Oriented Programming|https://isbndb.com/book/9780738409344|Ibm Redbooks|1996|Ibm
+ American National Standard Cobol For The Ibm System 360-370|https://isbndb.com/book/9780534001490|Drummond, Marshall E.|1973|Wadsworth Pub. Co.
+ Introduction To Business Data Processing With Basic, Fortran And Cobol Programming|https://isbndb.com/book/9780471063032|Donald Keith Carver|1980|John Wiley & Sons Inc
+ Cobol For Os/390 Power Programming With Complete Year 2000 Section|https://isbndb.com/book/9781892559029|David S. Kirk|1999|M V S Training, Incorporated
+ Cobol For Students: A Programming Primer (little, Brown Computer Systems Series)|https://isbndb.com/book/9780316283205|Robert G. Finkenaur|1977|Scott Foresman & Co
+ Cobol Logic And Programming (the Irwin Series In Information And Decision Sciences)|https://isbndb.com/book/9780256032109|Fritz A Mccameron|1985|R.d. Irwin
+ Schaum's Outling Series: Theory And Problems Of Programming With Advanced Structured Cobol|https://isbndb.com/book/9780070379992|Lawrence R. Newcomer|1986|Mcgraw-hill Book Company, New York
+ Essentials Of Cobol Programming (the Irwin Series In Information And Decision Sciences)|https://isbndb.com/book/9780256029956|Roger R Mcgrath|1984|R.d. Irwin
+ Cobol Made Simple: (programming For The Year 2000 Problem) (made Simple Books)|https://isbndb.com/book/9780750638340|Conor Sexton|1997|Made Simple
+ Business Applications Of Structured Cobol Programming (allyn And Bacon Computer Science Series)|https://isbndb.com/book/9780205077502|Anne L. Topping|1982|William C Brown Pub
+ Instructor's Manual To Accompany Elementary Cobol Programming, A Step By Step Approach|https://isbndb.com/book/9780070157811|Gordon Bitter Davis|1971|Mcgraw-hill
+ Vax Cobol On-line: Interactive Programming Concepts And Examples (wiley Professional Computing)|https://isbndb.com/book/9780471551966|James G. Janossy|1992|Wiley
+ Structured Cobol Programming 9e Sol Programming Assignments For The Year 2000 & Beyond +d3|https://isbndb.com/book/9780471332596|Nancy B. Stern|1999|
+ Structured Cobol Programming And Data-processing Methods (brooks/cole Series In Computer Science)|https://isbndb.com/book/9780534044886|Richard Mccalla|1985|Brooks/cole Pub Co
+ General Computing: Programming Languages - Basic, Cobol And Fortran (wheeler's Question Bank On Computer Science)|https://isbndb.com/book/9788175440784|Subhash Mehta|2000|A H Wheeler Publishing Co Ltd
+ The Cics Companion: A Reference Guide To Cobol Command Level Programming (mainframe Software Series)|https://isbndb.com/book/9780131344617|Thomas Robert Gildersleeve|1988|Prentice Hall
+ Effective Use Of Ans Cobol Computer Programming Language (business Data Processing, A Wiley Series)|https://isbndb.com/book/9780471164364|Laurence S Cohn|1975|Wiley-interscience
+ Ims/vs Dl/i Programming With Cobol Examples (ccd Online Systems Data Processing Series)|https://isbndb.com/book/9780961181048|David Lee|1985|Ccd Online Systems
+ Schaum's Outline Of Theory And Problems Of Programming With Modern Structured Cobol (schaum's Outlines)|https://isbndb.com/book/9780070380196|Lawrence R. Newcomer|1994|Mcgraw-hill
+ The Cobol Presentation Manager Programming Guide: For Os/2 Versions 1.3 And 2.0 (vnr Computer Library)|https://isbndb.com/book/9780442012939|David Dill|1992|Van Nostrand Reinhold Computer
+ A Guide To Structured Cobol With Efficiency Techniques And Special Algorithms (van Nostrand Reinhold Data Processing Series)|https://isbndb.com/book/9780442245856|Pacifico A. Lim|1980|Van Nostrand Reinhold
+ Cobol Support Packages: Programming And Productivity Aids [by] Stanley M. Naftaly, Michael C. Cohen [and] Bruce G. Johnson|https://isbndb.com/book/9780471622109|||New York, Wiley [c1972]
+ Stern Structured Cobol Programming Seventh Edition And Wiley Syntax Reference Guide Second Edition And Stern Getting Started With Ryan Mcfarland Dual Med Set|https://isbndb.com/book/9780471045106|Nancy Stern|1994|John Wiley & Sons Inc
+
+## Publications about COBOL from Semantic Scholar
+pipeTable
+ title|titleLink|authors|year|citations|influentialCitations
+ A study of errors, error-proneness, and error diagnosis in Cobol|https://www.semanticscholar.org/paper/0ae9de76083b4c52136049dc7e0212a57d2be99e|C. Litecky and G. Davis|1976|59|3
+ Migrating from COBOL to Java|https://www.semanticscholar.org/paper/cd620781e4fb1729d66e09f1753ceb6dc6011add|H. Sneed|2010|41|3
+ Object-oriented COBOL|https://www.semanticscholar.org/paper/422657a2aa3ac33ab058ae758fdcdd7ed3e7b4b4|E. C. Arranga and Frank P. Coyle|1996|22|3
+ An implementation of structured walk-throughs in teaching Cobol programming|https://www.semanticscholar.org/paper/14d9e6e6c93402073cc01e64c6d30bd0c27b185b|Ronald S. Lemos|1979|21|0
+ Implications of automated restructuring of COBOL|https://www.semanticscholar.org/paper/a1c6d7d68d2bd0168958c1e671ac4cede66e2542|J. W. Miller and Burton M. Strauss|1987|18|0
+ Exploring software science relations in cobol and api|https://www.semanticscholar.org/paper/359f381d8e35fccd4f59799dc26a2b62c18902ca|S. Zweben and K. Fung|1979|14|0
+ Cobol in an Object-Oriented World: A Learning Perspective|https://www.semanticscholar.org/paper/30eeb73fb3a27fe03503d0b8ec23757b28efd682|B. Hardgrave and E. Doke|2000|13|0
+ Cost-benefit impact study on the adoption of the draft proposed revised X3.23 American National Standard programming language COBOL|https://www.semanticscholar.org/paper/32357d3a28ef8dbe3f0231b7f8221204bd80cd26|M. Fiorello and J. Cugini|1983|9|0
+ Cobol for the Next Millennium|https://www.semanticscholar.org/paper/3390e1b5e9d9ed0883a5451249d1f00304f0edf4|Don Schricker|2000|8|0
+ Structured Programming in COBOL - The Corrent Options|https://www.semanticscholar.org/paper/4c7788321fee507324960b2f379965a5d97c8644|J. M. Triance|1980|4|0
+ An introductory COBOL course with structured programming|https://www.semanticscholar.org/paper/59d15bbc5f950e4827596d5a53c402fc6fe5db4f|Asad Khailany|1976|4|0
+ The cost-effectiveness of team debugging in teaching cobol programming|https://www.semanticscholar.org/paper/3da3fa58a1b1575f382535765829d78cb2cf0306|Ronald S. Lemos|1978|4|0
+ A Toolchain for Metrics-based Comparison of COBOL and Migrated Java Systems|https://www.semanticscholar.org/paper/9520e40b3bf5bd351bf75f7cd1c1a899ad0faf79|Jan Jelschen and A. Winter|2012|3|1
+ Grace Hopper: Compilers and Cobol|https://www.semanticscholar.org/paper/f70f56977fdeb32ede03fabd85e49c62ca4e94ee|George O. Strawn and Candace Strawn|2015|3|0
+ Facilitating COBOL programmers' transition to the C language|https://www.semanticscholar.org/paper/7ec7ab7cfa8716e31c44378a0a3527e0cacf8326|Ritu Agarwal and Jayesh Prasad|1997|2|0
+ ACM SIGPLAN history of programming languages conference COBOL 60 language summary|https://www.semanticscholar.org/paper/3f13750bca503cab4a411c996277b2be87ecf0df|S. Hautaniemi|1978|2|0
+ B73-1 An Introduction to Cobol Programming|https://www.semanticscholar.org/paper/b5dddc982de38a810cc1c486021320f7a446a0c6|K. Siler|1973|2|0
+ Design of a Reverse Engineering Model (A Case Study of COBOL to Java Migration)|https://www.semanticscholar.org/paper/4ac6817bba526d3a2d558ce4f920ce7082696529|Aditya Trivedi and U. Suman|2013|1|0
+ Beginning COBOL for Programmers|https://www.semanticscholar.org/paper/69a84011a9ef5a16a13e2b428c5ee223b0a9a00c|Michael Coughlan|2014|1|0
+ COBOL Script: a business-oriented scripting language|https://www.semanticscholar.org/paper/7a68a5640d97453aeb2a2cd85d424671f54e167c|T. Imajo and T. Miyake and S. Sato and T. Ito and D. Yokotsuka and Y. Tsujihata and S. Uemura|2000|1|0
+
+keyboardNav css.html scala.html
+
+import ../footer.scroll

@@ -1,0 +1,439 @@
+import header.scroll
+
+title Go
+
+title Go - Programming language
+ hidden
+
+html
+ <a class="prevLang" href="json.html">&lt;</a>
+ <a class="nextLang" href="css.html">&gt;</a>
+
+viewSourceUrl https://github.com/breck7/pldb/blob/main/database/things/go.pldb
+
+startColumns 4
+
+html <div class="quickLinks"><a href="https://go.dev/"><svg role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12.7166 3.79541C12.2835 3.49716 11.7165 3.49716 11.2834 3.79541L4.14336 8.7121C3.81027 8.94146 3.60747 9.31108 3.59247 9.70797C3.54064 11.0799 3.4857 13.4824 3.63658 15.1877C3.7504 16.4742 4.05336 18.1747 4.29944 19.4256C4.41371 20.0066 4.91937 20.4284 5.52037 20.4284H8.84433C8.98594 20.4284 9.10074 20.3111 9.10074 20.1665V15.9754C9.10074 14.9627 9.90433 14.1417 10.8956 14.1417H13.4091C14.4004 14.1417 15.204 14.9627 15.204 15.9754V20.1665C15.204 20.3111 15.3188 20.4284 15.4604 20.4284H18.4796C19.0806 20.4284 19.5863 20.0066 19.7006 19.4256C19.9466 18.1747 20.2496 16.4742 20.3634 15.1877C20.5143 13.4824 20.4594 11.0799 20.4075 9.70797C20.3925 9.31108 20.1897 8.94146 19.8566 8.7121L12.7166 3.79541ZM10.4235 2.49217C11.3764 1.83602 12.6236 1.83602 13.5765 2.49217L20.7165 7.40886C21.4457 7.91098 21.9104 8.73651 21.9448 9.64736C21.9966 11.0178 22.0564 13.5119 21.8956 15.3292C21.7738 16.7067 21.4561 18.4786 21.2089 19.7353C20.9461 21.0711 19.7924 22.0001 18.4796 22.0001H15.4604C14.4691 22.0001 13.6655 21.1791 13.6655 20.1665V15.9754C13.6655 15.8307 13.5507 15.7134 13.4091 15.7134H10.8956C10.754 15.7134 10.6392 15.8307 10.6392 15.9754V20.1665C10.6392 21.1791 9.83561 22.0001 8.84433 22.0001H5.52037C4.20761 22.0001 3.05389 21.0711 2.79113 19.7353C2.54392 18.4786 2.22624 16.7067 2.10437 15.3292C1.94358 13.5119 2.00338 11.0178 2.05515 9.64736C2.08957 8.73652 2.55427 7.91098 3.28346 7.40886L10.4235 2.49217Z"/></svg></a> <a href="https://en.wikipedia.org/wiki/Go_(programming_language)"><svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="98.05px" height="98.05px" viewBox="0 0 98.05 98.05" style="enable-background:new 0 0 98.05 98.05;" xml:space="preserve"><path d="M98.023,17.465l-19.584-0.056c-0.004,0.711-0.006,1.563-0.017,2.121c1.664,0.039,5.922,0.822,7.257,4.327L66.92,67.155 c-0.919-2.149-9.643-21.528-10.639-24.02l9.072-18.818c1.873-2.863,5.455-4.709,8.918-4.843l-0.01-1.968L55.42,17.489 c-0.045,0.499,0.001,1.548-0.068,2.069c5.315,0.144,7.215,1.334,5.941,4.508c-2.102,4.776-6.51,13.824-7.372,15.475 c-2.696-5.635-4.41-9.972-7.345-16.064c-1.266-2.823,1.529-3.922,4.485-4.004v-1.981l-21.82-0.067 c0.016,0.93-0.021,1.451-0.021,2.131c3.041,0.046,6.988,0.371,8.562,3.019c2.087,4.063,9.044,20.194,11.149,24.514 c-2.685,5.153-9.207,17.341-11.544,21.913c-3.348-7.43-15.732-36.689-19.232-44.241c-1.304-3.218,3.732-5.077,6.646-5.213 l0.019-2.148L0,17.398c0.005,0.646,0.027,1.71,0.029,2.187c4.025-0.037,9.908,6.573,11.588,10.683 c7.244,16.811,14.719,33.524,21.928,50.349c0.002,0.029,2.256,0.059,2.281,0.008c4.717-9.653,10.229-19.797,15.206-29.56 L63.588,80.64c0.005,0.004,2.082,0.016,2.093,0.007c7.962-18.196,19.892-46.118,23.794-54.933c1.588-3.767,4.245-6.064,8.543-6.194 l0.032-1.956L98.023,17.465z"/></svg></a> <a href="https://twitter.com/golang"><svg role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M23.953 4.57a10 10 0 01-2.825.775 4.958 4.958 0 002.163-2.723c-.951.555-2.005.959-3.127 1.184a4.92 4.92 0 00-8.384 4.482C7.69 8.095 4.067 6.13 1.64 3.162a4.822 4.822 0 00-.666 2.475c0 1.71.87 3.213 2.188 4.096a4.904 4.904 0 01-2.228-.616v.06a4.923 4.923 0 003.946 4.827 4.996 4.996 0 01-2.212.085 4.936 4.936 0 004.604 3.417 9.867 9.867 0 01-6.102 2.105c-.39 0-.779-.023-1.17-.067a13.995 13.995 0 007.557 2.209c9.053 0 13.998-7.496 13.998-13.985 0-.21 0-.42-.015-.63A9.935 9.935 0 0024 4.59z"/></svg></a> <a href="https://groups.google.com/g/golang-nuts"><svg role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M24 5.457v13.909c0 .904-.732 1.636-1.636 1.636h-3.819V11.73L12 16.64l-6.545-4.91v9.273H1.636A1.636 1.636 0 0 1 0 19.366V5.457c0-2.023 2.309-3.178 3.927-1.964L5.455 4.64 12 9.548l6.545-4.91 1.528-1.145C21.69 2.28 24 3.434 24 5.457z"/></svg></a> <a href="https://devdocs.io/go/"><svg viewBox="0 0 500 500" xmlns="http://www.w3.org/2000/svg"><g transform="matrix(1, 0, 0, 1, 13.859316, 9.109739)"><g><g><path d="M340.732,0H55v485h375V94.518L340.732,0z M345,26.364L405.1,90H345V26.364z M415,470H70V15h260v90h85V470z"/><rect x="102.5" y="191" width="280" height="15"/><rect x="102.5" y="141" width="120" height="15"/><rect x="102.5" y="241" width="280" height="15"/><rect x="102.5" y="291" width="280" height="15"/><rect x="102.5" y="341" width="280" height="15"/><rect x="102.5" y="391" width="280" height="15"/></g></g></g></svg></a></div>
+
+* Go is a <a href="../lists/languages.html?filter=pl">programming language</a> created in 2009 by Rob Pike and Ken Thompson and Robert Griesemer.
+ link ../lists/languages.html?filter=2009 2009
+ link ../lists/creators.html#robPike Rob Pike
+ link ../lists/creators.html#kenThompson Ken Thompson
+ link ../lists/creators.html#robertGriesemer Robert Griesemer
+
+kpiTable
+ #18 <span title="TotalRank: 67 Jobs: 26 Users: 15 Facts: 30 Links: 26">on PLDB</span>
+ 14 Years Old
+ 525.2k <span title="Crude user estimate from a linear model.">Users</span>
+ 5 <span title="Books about or leveraging Go">Books</span>
+ 26 <span title="Academic publications about or leveraging Go">Papers</span>
+ 1m <span title="Go repos on GitHub.">Repos</span>
+
+* Try now: <a href="https://go.dev/play">Web</a> · <a href="https://riju.codes/go">Riju</a> · <a href="https://tio.run/#go">TIO</a> · <a href="https://repl.it/languages/go">Replit</a>
+
+monacoEditor go
+ // Type your code here, or load an example.
+ // Your function name should start with a capital letter.
+ package main
+ 
+ func Square(x int) int {
+     return x * x
+ }
+ 
+ func main() {}
+ 
+
+* Go (often referred to as golang) is a programming language created at Google in 2009 by Robert Griesemer, Rob Pike, and Ken Thompson. It is a compiled, statically typed language in the tradition of Algol and C, with garbage collection, limited structural typing, memory safety features and CSP-style concurrent programming features added. The compiler and other language tools originally developed by Google are all free and open source.. Read more on Wikipedia...
+ https://en.wikipedia.org/wiki/Go_(programming_language) Read more on Wikipedia...
+
+- Go website
+ https://go.dev/
+- Go downloads page
+ https://go.dev/dl/
+- Go Wikipedia page
+ https://en.wikipedia.org/wiki/Go_(programming_language)
+- Go docs
+ https://devdocs.io/go/
+- Go mailing list
+ https://groups.google.com/g/golang-nuts
+- There are at least 1,083,789 Go repos on <a href="https://github.com/search?q=language:Go">GitHub</a>
+- Go first developed in <a href="../lists/originCommunities.html#google">Google</a>
+- PLDB estimates there are currently 6k job openings for Go programmers.
+- file extensions for Go include go
+- Go on Twitter
+ https://twitter.com/golang
+- The  Google BigQuery Public Dataset GitHub snapshot shows 45k users using Go in 91k repos on <a href="https://api.github.com/search/repositories?q=language:Go">GitHub</a>
+- Check out the 315 <a href="https://www.meetup.com/topics/golang/">Go meetup groups</a> on Meetup.com.
+- There are 1,768 <a href="https://projecteuler.net/language=Go">Project Euler</a> users using Go
+- In the 2021 StackOverflow <a href="https://insights.stackoverflow.com/survey">developer survey</a> Go programmers reported a median salary of $75,669. 9% of respondents reported using Go. 7,879 programmers reported using Go, and 15,788 said they wanted to use it
+- Explore Go snippets on <a href="http://www.rosettacode.org/wiki/Category:Go">Rosetta Code</a>
+- Go is supported by the <a href="https://www.sourceware.org/gdb/">GDB</a>
+- Go ranks #14 in the <a href="https://www.tiobe.com/tiobe-index/">TIOBE Index</a>
+- Go Ubuntu package
+ https://packages.ubuntu.com/jammy/golang
+- <a href="antlr.html">ANTLR</a> <a href="https://github.com/antlr/grammars-v4/tree/master/golang">grammar</a> for Go
+- Go <a href="language-server-protocol.html">LSP</a> <a href="https://github.com/sourcegraph/go-langserver">implementation</a>
+- <a href="codemirror.html">CodeMirror</a> <a href="https://github.com/codemirror/codemirror5/tree/master/mode/go">package</a> for syntax highlighting Go
+- <a href="monaco.html">Monaco</a> <a href="https://github.com/microsoft/monaco-editor/tree/main/src/basic-languages/go">package</a> for syntax highlighting Go
+- <a href="pygments.html">Pygments</a> supports <a href="https://github.com/pygments/pygments/blob/master/pygments/lexers/go.py">syntax highlighting</a> for Go
+- GitHub supports <a href="https://github.com/AlanQuatermain/go-tmbundle" title="The package used for syntax highlighting by GitHub Linguist.">syntax highlighting</a> for Go
+- Go appears in the <a href="https://github.com/mame/quine-relay">Quine Relay</a> project
+- PLDB has 4 <a href="jupyter-notebook.html">Jupyter</a> Kernels for Go: <a href="https://github.com/yunabe/lgo">github.com</a>, <a href="https://github.com/takluyver/igo">github.com</a>, <a href="https://github.com/fabian-z/gopherlab">github.com</a>, <a href="https://github.com/gopherdata/gophernotes">github.com</a>
+- Release Notes for Go
+ https://go.dev/doc/devel/release
+- Official Blog page for Go
+ https://go.dev/blog/
+- Frequently Asked Questions for Go
+ https://go.dev/doc/faq
+- Indeed.com has 1,284 matches for <a href="https://www.indeed.com/jobs?q=go engineer">"go engineer"</a>.
+- See also: (33 related languages)<a href="assembly-language.html">Assembly language</a>, <a href="linux.html">Linux</a>, <a href="freebsd.html">FreeBSD</a>, <a href="solaris.html">Solaris</a>, <a href="alef.html">ALEF</a>, <a href="apl.html">APL</a>, <a href="bcpl.html">BCPL</a>, <a href="c.html">C</a>, <a href="csp.html">CSP</a>, <a href="limbo.html">Limbo</a>, <a href="modula.html">Modula</a>, <a href="newsqueak.html">Newsqueak</a>, <a href="oberon.html">Oberon</a>, <a href="occam.html">Occam</a>, <a href="pascal.html">Pascal</a>, <a href="python.html">Python</a>, <a href="smalltalk.html">Smalltalk</a>, <a href="crystal.html">Crystal</a>, <a href="algol.html">Algol</a>, <a href="unix.html">Unix</a>, <a href="java.html">Java</a>, <a href="utf-8.html">UTF-8</a>, <a href="csharp.html">C#</a>, <a href="rust.html">Rust</a>, <a href="erlang.html">Erlang</a>, <a href="chapel.html">Chapel</a>, <a href="cilk.html">CIL</a>, <a href="mongodb.html">MongoDB</a>, <a href="standard-ml.html">Standard ML</a>, <a href="cobol.html">COBOL</a>, <a href="fortran.html">Fortran</a>, <a href="scala.html">Scala</a>, <a href="dart.html">Dart</a>
+- HTML of this page generated by <a href="https://github.com/breck7/pldb/blob/main/code/LanguagePage.ts">LanguagePage.ts</a>
+- <a href="https://pldb.com/edit/go">Improve our Go file</a>
+
+html <br>
+
+codeWithHeader Example from <a href='https://godbolt.org/'>Compiler Explorer</a>:
+ // Type your code here, or load an example.
+ // Your function name should start with a capital letter.
+ package main
+ 
+ func Square(x int) int {
+     return x * x
+ }
+ 
+ func main() {}
+ 
+
+codeWithHeader Example from <a href='https://riju.codes/go'>Riju</a>:
+ package main
+ 
+ import &quot;fmt&quot;
+ 
+ func main() {
+ 	fmt.Println(&quot;Hello, world!&quot;)
+ }
+
+codeWithHeader Example from <a href='https://github.com/leachim6/hello-world/blob/main/g/Go.go'>hello-world</a>:
+ package main
+ 
+ import &quot;fmt&quot;
+ 
+ func main() {
+   fmt.Println(&quot;Hello World&quot;)
+ }
+ 
+
+codeWithHeader Example from <a href='http://helloworldcollection.de/#Go'>the Hello World Collection</a>:
+ // Hello world in Go
+ 
+ package main
+ import &quot;fmt&quot;
+ func main() {
+  fmt.Printf(&quot;Hello World\n&quot;)
+ }
+
+codeWithHeader Example from <a href='https://github.com/AlanQuatermain/go-tmbundle'>Linguist</a>:
+ // Autogenerated by Thrift Compiler (1.0.0-dev)
+ // DO NOT EDIT UNLESS YOU ARE SURE THAT YOU KNOW WHAT YOU ARE DOING
+ 
+ package linguist
+ 
+ import (
+ 	&quot;bytes&quot;
+ 	&quot;fmt&quot;
+ 	&quot;git.apache.org/thrift.git/lib/go/thrift&quot;
+ )
+ 
+ // (needed to ensure safety because of naive import list construction.)
+ var _ = thrift.ZERO
+ var _ = fmt.Printf
+ var _ = bytes.Equal
+ 
+ func init() {
+ }
+ 
+
+codeWithHeader Example from <a href='https://en.wikipedia.org/wiki/Go_(programming_language)'>Wikipedia</a>:
+ package main
+ 
+ import (
+     &quot;fmt&quot;
+     &quot;time&quot;
+ )
+ 
+ func readword(ch chan string) {
+     fmt.Println(&quot;Type a word, then hit Enter.&quot;)
+     var word string
+     fmt.Scanf(&quot;%s&quot;, &amp;word)
+     ch &lt;- word
+ }
+ 
+ func timeout(t chan bool) {
+     time.Sleep(5 * time.Second)
+     t &lt;- true
+ }
+ 
+ func main() {
+     t := make(chan bool)
+     go timeout(t)
+ 
+     ch := make(chan string)
+     go readword(ch)
+ 
+     select {
+     case word := &lt;-ch:
+         fmt.Println(&quot;Received&quot;, word)
+     case &lt;-t:
+         fmt.Println(&quot;Timeout.&quot;)
+     }
+ }
+
+## <a href="../lists/keywords.html?filter=go">Keywords</a> in Go
+* break case chan const continue default defer else fallthrough for func go goto if import interface map package range return select struct switch type var
+
+endColumns
+
+## Language <a href="../lists/features.html">features</a>
+
+treeTable
+ row
+  Feature Floats
+  FeatureLink ../features/hasFloats.html
+  Supported <span class="hasFeature">✓</span>
+  Token 
+  Example
+   // \d+(\.\d+[eE][+\-]?\d+|\.\d*|[eE][+\-]?\d+)
+ row
+  Feature Hexadecimals
+  FeatureLink ../features/hasHexadecimals.html
+  Supported <span class="hasFeature">✓</span>
+  Token 
+  Example
+   // 0[xX][0-9a-fA-F]+
+ row
+  Feature Octals
+  FeatureLink ../features/hasOctals.html
+  Supported <span class="hasFeature">✓</span>
+  Token 
+  Example
+   // 0[0-7]+
+ row
+  Feature Conditionals
+  FeatureLink ../features/hasConditionals.html
+  Supported <span class="hasFeature">✓</span>
+  Token 
+  Example
+ row
+  Feature Switch Statements
+  FeatureLink ../features/hasSwitch.html
+  Supported <span class="hasFeature">✓</span>
+  Token 
+  Example
+ row
+  Feature Constants
+  FeatureLink ../features/hasConstants.html
+  Supported <span class="hasFeature">✓</span>
+  Token 
+  Example
+ row
+  Feature Case Sensitivity
+  FeatureLink ../features/isCaseSensitive.html
+  Supported <span class="hasFeature">✓</span>
+  Token 
+  Example
+ row
+  Feature Assignment
+  FeatureLink ../features/hasAssignment.html
+  Supported <span class="hasFeature">✓</span>
+  Token =
+  Example
+ row
+  Feature Print() Debugging
+  FeatureLink ../features/hasPrintDebugging.html
+  Supported <span class="hasFeature">✓</span>
+  Token fmt.Println
+  Example
+ row
+  Feature Message Passing
+  FeatureLink ../features/hasMessagePassing.html
+  Supported <span class="hasFeature">✓</span>
+  Token 
+  Example
+ row
+  Feature Line Comments
+  FeatureLink ../features/hasLineComments.html
+  Supported <span class="hasFeature">✓</span>
+  Token //
+  Example
+   // A comment
+ row
+  Feature Variadic Functions
+  FeatureLink ../features/hasVariadicFunctions.html
+  Supported <span class="hasFeature">✓</span>
+  Token 
+  Example
+   // This variadic function takes an arbitrary number of ints as arguments.
+   func sum(nums ...int) {
+     fmt.Print("The sum of ", nums) // Also a variadic function.
+     total := 0
+     for _, num := range nums {
+       total += num
+     }
+     fmt.Println(" is", total) // Also a variadic function.
+   }
+ row
+  Feature Type Inference
+  FeatureLink ../features/hasTypeInference.html
+  Supported <span class="hasFeature">✓</span>
+  Token 
+  Example
+ row
+  Feature Lists
+  FeatureLink ../features/hasLists.html
+  Supported <span class="hasFeature">✓</span>
+  Token 
+  Example
+   myList := []int{1, 2, 3}
+ row
+  Feature File Imports
+  FeatureLink ../features/hasImports.html
+  Supported <span class="hasFeature">✓</span>
+  Token 
+  Example
+   import (
+      "fmt"
+      "math"
+   )
+   import . "fmt"
+   import _ "io"
+   import log "github.com/foo/bar"
+   import m "math"
+ row
+  Feature Increment and decrement operators
+  FeatureLink ../features/hasIncrementAndDecrementOperators.html
+  Supported <span class="hasFeature">✓</span>
+  Token 
+  Example
+   i := 0
+   i++
+   i--
+ row
+  Feature Integers
+  FeatureLink ../features/hasIntegers.html
+  Supported <span class="hasFeature">✓</span>
+  Token 
+  Example
+   i, j := 42, 2701
+ row
+  Feature Booleans
+  FeatureLink ../features/hasBooleans.html
+  Supported <span class="hasFeature">✓</span>
+  Token 
+  Example
+   c := true
+ row
+  Feature MultiLine Comments
+  FeatureLink ../features/hasMultiLineComments.html
+  Supported <span class="hasFeature">✓</span>
+  Token /* */
+  Example
+   /* A comment
+   */
+ row
+  Feature Comments
+  FeatureLink ../features/hasComments.html
+  Supported <span class="hasFeature">✓</span>
+  Token 
+  Example
+   // This is a comment
+ row
+  Feature Pointers
+  FeatureLink ../features/hasPointers.html
+  Supported <span class="hasFeature">✓</span>
+  Token 
+  Example
+   package main
+   
+   import "fmt"
+   
+   func main() {
+     i, j := 42, 2701
+   
+     p := &i         // point to i
+     fmt.Println(*p) // read i through the pointer
+     *p = 21         // set i through the pointer
+     fmt.Println(i)  // see the new value of i
+   
+     p = &j         // point to j
+     *p = *p / 37   // divide j through the pointer
+     fmt.Println(j) // see the new value of j
+   }
+   
+ row
+  Feature Strings
+  FeatureLink ../features/hasStrings.html
+  Supported <span class="hasFeature">✓</span>
+  Token "
+  Example
+   "hello world"
+ row
+  Feature Case Insensitive Identifiers
+  FeatureLink ../features/hasCaseInsensitiveIdentifiers.html
+  Supported <span class="doesNotHaveFeature">X</span>
+  Token 
+  Example
+ row
+  Feature Semantic Indentation
+  FeatureLink ../features/hasSemanticIndentation.html
+  Supported <span class="doesNotHaveFeature">X</span>
+  Token 
+  Example
+ row
+  Feature Operator Overloading
+  FeatureLink ../features/hasOperatorOverloading.html
+  Supported <span class="doesNotHaveFeature">X</span>
+  Token 
+  Example
+
+## Books about Go from ISBNdb
+pipeTable
+ title|titleLink|authors|year|publisher
+ The Way To Go: A Thorough Introduction To The Go Programming Language|https://isbndb.com/book/9781469769165|Balbaert, Ivo|2012|iUniverse
+ Go Programming Blueprints: Build real-world, production-ready solutions in Go using cutting-edge technology and techniques, 2nd Edition|https://isbndb.com/book/9781786468949|Ryer, Mat|2016|Packt Publishing
+ TouchDevelop: Programming on the Go (Expert's Voice in Web Development)|https://isbndb.com/book/9781430261360|Horspool, Nigel and Tillmann, Nikolai and Bishop, Judith|2013|Apress
+ Go Web Programming|https://isbndb.com/book/9781617292569|Chang, Sau Sheong|2016|Manning Publications
+ Go Programming Blueprints|https://isbndb.com/book/9781783988020|Ryer, Mat|2015|Packt Publishing
+
+## Publications about Go from Semantic Scholar
+pipeTable
+ title|titleLink|authors|year|citations|influentialCitations
+ Structured Programming with go to Statements|https://www.semanticscholar.org/paper/3fdae4603265209ddf420cfaa9cbd0286c567c6c|D. Knuth|1974|685|25
+ When good instructions go bad: generalizing return-oriented programming to RISC|https://www.semanticscholar.org/paper/bc6be5f3f1cf582c3613e3c7de6a793947335854|E. Buchanan and Ryan Roemer and H. Shacham and S. Savage|2008|403|28
+ The Go Programming Language|https://www.semanticscholar.org/paper/e2c3ace95d91ea0d25abce56d7c3e71201c87229|Jeffrey H. Meyerson|2014|278|7
+ Static deadlock detection for concurrent go by global session graph synthesis|https://www.semanticscholar.org/paper/f3902b140f40cf972cb4f3a5489c9ca45b9ed867|Nicholas Ng and N. Yoshida|2016|54|2
+ A Static Verification Framework for Message Passing in Go Using Behavioural Types|https://www.semanticscholar.org/paper/e1a8c301be733b9a413dc21c45c1f013c5f81f94|J. Lange and Nicholas Ng and Bernardo Toninho and N. Yoshida|2018|50|2
+ Understanding Real-World Concurrency Bugs in Go|https://www.semanticscholar.org/paper/246a2af5c477396f52a7af39e3c6a26049ae3310|Tengfei Tu and Xiaoyu Liu and Linhai Song and Yiying Zhang|2019|45|4
+ GoHotDraw: evaluating the Go programming language with design patterns|https://www.semanticscholar.org/paper/ae564736323308356b53aefc2afc67a0764555f2|Frank Schmager and N. Cameron and J. Noble|2010|23|1
+ Go at Google|https://www.semanticscholar.org/paper/8d058d199185c3cbb9446a4ce486a765bd242aa2|R. Pike|2012|22|0
+ An Empirical Study of Messaging Passing Concurrency in Go Projects|https://www.semanticscholar.org/paper/a7029d89d1032c66412872fd17caa45ae635d6f6|Nicolas Dilley and J. Lange|2019|22|1
+ Here We Go Again: Why Is It Difficult for Developers to Learn Another Programming Language?|https://www.semanticscholar.org/paper/112353453760498067a78e5e53220b7a11df9db4|Nischal Shrestha and Colton Botta and Titus Barik and Chris Parnin|2020|19|1
+ Concurrency in Go and Java: Performance analysis|https://www.semanticscholar.org/paper/4b73e80c19f9cbb3881379f73e4bb134ea9d3cf8|Naohiro Togashi and V. Klyuev|2014|16|4
+ Architecture-Based Code Generation: From π-ADL Architecture Descriptions to Implementations in the Go Language|https://www.semanticscholar.org/paper/b52c76f904dfd05395d17e2489614bc59ca99f29|Everton Cavalcante and F. Oquendo and T. Batista|2014|14|1
+ bíogo: a simple high-performance bioinformatics toolkit for the Go language|https://www.semanticscholar.org/paper/92c2f9e43a3799392a963d437adf3901ea6dc3d1|R. Kortschak and Josh Bleecher Snyder and Manolis Maragkakis and D. Adelson|2014|12|1
+ Deferred gratification: engineering for high performance garbage collection from the get go|https://www.semanticscholar.org/paper/6d712e3ccc708a2e7bcda5c2056ccfab43af8270|Ivan Jibaja and S. Blackburn and M. Haghighat and K. McKinley|2011|11|0
+ FML-based Dynamic Assessment Agent for Human-Machine Cooperative System on Game of Go|https://www.semanticscholar.org/paper/2e99badd048590ded429bb08889538270241bbfd|Chang-Shing Lee and Mei-Hui Wang and Sheng-Chi Yang and Pi-Hsia Hung and Su-Wei Lin and Nan Shuo and N. Kubota and Chun-Hsun Chou and P. Chou and Chia-Hsiu Kao|2017|11|0
+ Static Race Detection and Mutex Safety and Liveness for Go Programs (Artifact)|https://www.semanticscholar.org/paper/a5c89ffa3121aec2eace5f64cb75d915ee12a21c|Julia Gabet and N. Yoshida|2020|10|1
+ goDASH — GO Accelerated HAS Framework for Rapid Prototyping|https://www.semanticscholar.org/paper/90e3d263241111cff7064037a0ade6b00323bb80|Darijo Raca and Maëlle Manifacier and Jason J. Quinlan|2020|7|0
+ GoBench: A Benchmark Suite of Real-World Go Concurrency Bugs|https://www.semanticscholar.org/paper/c1bcb1da18bda80a92790a79bdff362980f731fd|Ting Yuan and Guangwei Li and Jie Lu and Chen Liu and Lian Li and Jingling Xue|2021|7|3
+ Two-Phase Dynamic Analysis of Message-Passing Go Programs Based on Vector Clocks|https://www.semanticscholar.org/paper/e1116fdac1e58415c62e21c83f2d6bc5aab08035|M. Sulzmann and K. Stadtmüller|2018|6|0
+ Trace-Based Run-Time Analysis of Message-Passing Go Programs|https://www.semanticscholar.org/paper/8185a6664d62ae017910c8960c302ed7ffac8e40|M. Sulzmann and K. Stadtmüller|2017|5|1
+ Bounded verification of message-passing concurrency in Go using Promela and Spin|https://www.semanticscholar.org/paper/d98f1cf4376c7de5e65391c3d1fa372b03540b49|Nicolas Dilley and J. Lange|2020|4|0
+ PARAGON: an approach for parallelization of power system contingency analysis using Go programming language|https://www.semanticscholar.org/paper/aec59c18d84b2544e119a6ad663b4c5865cca060|S. Khaitan and J. McCalley|2015|4|1
+ Static Race Detection and Mutex Safety and Liveness for Go Programs (extended version)|https://www.semanticscholar.org/paper/6eef6ecf97976770bc407850aeb6f47ee8ccb19c|Julia Gabet and N. Yoshida|2020|3|1
+ Overview of the Go Language|https://www.semanticscholar.org/paper/e8230750cd61b5972228841186cacfdb856fa4d1|J. Newmarch|2017|3|1
+ Pattern matching for object-like structures in the Go programming language|https://www.semanticscholar.org/paper/1787cbbc350b8f812633b14dba353cc4659bccfa|Chanwit Kaewkasi and Pitchaya Kaewkasi|2011|2|0
+ Evaluating the GO Programming Language with Design Patterns|https://www.semanticscholar.org/paper/ab5a1cf83194c5180bf9d0d992fe2514dfd54fe3|Frank Schmager|null|1|0
+
+keyboardNav json.html css.html
+
+import ../footer.scroll

@@ -1,0 +1,490 @@
+import header.scroll
+
+title Cython
+
+title Cython - Programming language
+ hidden
+
+html
+ <a class="prevLang" href="netlogo.html">&lt;</a>
+ <a class="nextLang" href="snobol.html">&gt;</a>
+
+viewSourceUrl https://github.com/breck7/pldb/blob/main/database/things/cython.pldb
+
+startColumns 4
+
+html <div class="quickLinks"><a href="http://cython.org"><svg role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12.7166 3.79541C12.2835 3.49716 11.7165 3.49716 11.2834 3.79541L4.14336 8.7121C3.81027 8.94146 3.60747 9.31108 3.59247 9.70797C3.54064 11.0799 3.4857 13.4824 3.63658 15.1877C3.7504 16.4742 4.05336 18.1747 4.29944 19.4256C4.41371 20.0066 4.91937 20.4284 5.52037 20.4284H8.84433C8.98594 20.4284 9.10074 20.3111 9.10074 20.1665V15.9754C9.10074 14.9627 9.90433 14.1417 10.8956 14.1417H13.4091C14.4004 14.1417 15.204 14.9627 15.204 15.9754V20.1665C15.204 20.3111 15.3188 20.4284 15.4604 20.4284H18.4796C19.0806 20.4284 19.5863 20.0066 19.7006 19.4256C19.9466 18.1747 20.2496 16.4742 20.3634 15.1877C20.5143 13.4824 20.4594 11.0799 20.4075 9.70797C20.3925 9.31108 20.1897 8.94146 19.8566 8.7121L12.7166 3.79541ZM10.4235 2.49217C11.3764 1.83602 12.6236 1.83602 13.5765 2.49217L20.7165 7.40886C21.4457 7.91098 21.9104 8.73651 21.9448 9.64736C21.9966 11.0178 22.0564 13.5119 21.8956 15.3292C21.7738 16.7067 21.4561 18.4786 21.2089 19.7353C20.9461 21.0711 19.7924 22.0001 18.4796 22.0001H15.4604C14.4691 22.0001 13.6655 21.1791 13.6655 20.1665V15.9754C13.6655 15.8307 13.5507 15.7134 13.4091 15.7134H10.8956C10.754 15.7134 10.6392 15.8307 10.6392 15.9754V20.1665C10.6392 21.1791 9.83561 22.0001 8.84433 22.0001H5.52037C4.20761 22.0001 3.05389 21.0711 2.79113 19.7353C2.54392 18.4786 2.22624 16.7067 2.10437 15.3292C1.94358 13.5119 2.00338 11.0178 2.05515 9.64736C2.08957 8.73652 2.55427 7.91098 3.28346 7.40886L10.4235 2.49217Z"/></svg></a> <a href="https://en.wikipedia.org/wiki/Cython"><svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="98.05px" height="98.05px" viewBox="0 0 98.05 98.05" style="enable-background:new 0 0 98.05 98.05;" xml:space="preserve"><path d="M98.023,17.465l-19.584-0.056c-0.004,0.711-0.006,1.563-0.017,2.121c1.664,0.039,5.922,0.822,7.257,4.327L66.92,67.155 c-0.919-2.149-9.643-21.528-10.639-24.02l9.072-18.818c1.873-2.863,5.455-4.709,8.918-4.843l-0.01-1.968L55.42,17.489 c-0.045,0.499,0.001,1.548-0.068,2.069c5.315,0.144,7.215,1.334,5.941,4.508c-2.102,4.776-6.51,13.824-7.372,15.475 c-2.696-5.635-4.41-9.972-7.345-16.064c-1.266-2.823,1.529-3.922,4.485-4.004v-1.981l-21.82-0.067 c0.016,0.93-0.021,1.451-0.021,2.131c3.041,0.046,6.988,0.371,8.562,3.019c2.087,4.063,9.044,20.194,11.149,24.514 c-2.685,5.153-9.207,17.341-11.544,21.913c-3.348-7.43-15.732-36.689-19.232-44.241c-1.304-3.218,3.732-5.077,6.646-5.213 l0.019-2.148L0,17.398c0.005,0.646,0.027,1.71,0.029,2.187c4.025-0.037,9.908,6.573,11.588,10.683 c7.244,16.811,14.719,33.524,21.928,50.349c0.002,0.029,2.256,0.059,2.281,0.008c4.717-9.653,10.229-19.797,15.206-29.56 L63.588,80.64c0.005,0.004,2.082,0.016,2.093,0.007c7.962-18.196,19.892-46.118,23.794-54.933c1.588-3.767,4.245-6.064,8.543-6.194 l0.032-1.956L98.023,17.465z"/></svg></a> <a href="https://cython.readthedocs.io/en/latest/"><svg viewBox="0 0 500 500" xmlns="http://www.w3.org/2000/svg"><g transform="matrix(1, 0, 0, 1, 13.859316, 9.109739)"><g><g><path d="M340.732,0H55v485h375V94.518L340.732,0z M345,26.364L405.1,90H345V26.364z M415,470H70V15h260v90h85V470z"/><rect x="102.5" y="191" width="280" height="15"/><rect x="102.5" y="141" width="120" height="15"/><rect x="102.5" y="241" width="280" height="15"/><rect x="102.5" y="291" width="280" height="15"/><rect x="102.5" y="341" width="280" height="15"/><rect x="102.5" y="391" width="280" height="15"/></g></g></g></svg></a></div>
+
+* Cython is a <a href="../lists/languages.html?filter=pl">programming language</a> created in 2007.
+ link ../lists/languages.html?filter=2007 2007
+
+kpiTable
+ #245 <span title="TotalRank: 614 Jobs: 103 Users: 413 Facts: 334 Links: 177">on PLDB</span>
+ 16 Years Old
+ 1.6k <span title="Crude user estimate from a linear model.">Users</span>
+ 10 <span title="Books about or leveraging Cython">Books</span>
+ 1 <span title="Academic publications about or leveraging Cython">Papers</span>
+ 698 <span title="Cython repos on GitHub.">Repos</span>
+
+* Cython is a superset of the Python programming language, designed to give C-like performance with code which is mostly written in Python. Cython is a compiled language that generates CPython extension modules. These extension modules can then be loaded and used by regular Python code using the import statement. Read more on Wikipedia...
+ https://en.wikipedia.org/wiki/Cython Read more on Wikipedia...
+
+- Cython website
+ http://cython.org
+- Cython Wikipedia page
+ https://en.wikipedia.org/wiki/Cython
+- Cython docs
+ https://cython.readthedocs.io/en/latest/
+- There are at least 698 Cython repos on <a href="https://github.com/search?q=language:Cython">GitHub</a>
+- Cython is a superset of <a href="python.html">Python</a>
+- Cython first developed in <a href="../lists/originCommunities.html#httpsGithubComSagemath">https://github.com/sagemath</a>
+- file extensions for Cython include pyx, pxd and pxi
+- The  Google BigQuery Public Dataset GitHub snapshot shows 528 users using Cython in 580 repos on <a href="https://api.github.com/search/repositories?q=language:Cython">GitHub</a>
+- <a href="pygments.html">Pygments</a> supports <a href="https://github.com/pygments/pygments/blob/master/pygments/lexers/python.py">syntax highlighting</a> for Cython
+- GitHub supports <a href="https://github.com/textmate/cython.tmbundle" title="The package used for syntax highlighting by GitHub Linguist.">syntax highlighting</a> for Cython
+- See also: (9 related languages)<a href="python.html">Python</a>, <a href="c.html">C</a>, <a href="linux.html">Linux</a>, <a href="pyrex.html">Pyrex</a>, <a href="sagemath.html">Sage</a>, <a href="xml.html">XML</a>, <a href="scipy.html">SciPy</a>, <a href="pandas.html">Pandas</a>, <a href="scikit-learn.html">Scikit-learn</a>
+- HTML of this page generated by <a href="https://github.com/breck7/pldb/blob/main/code/LanguagePage.ts">LanguagePage.ts</a>
+- <a href="https://pldb.com/edit/cython">Improve our Cython file</a>
+
+html <br>
+
+codeWithHeader Example from <a href='https://en.wikipedia.org/wiki/Cython'>Wikipedia</a>:
+ In [1]: %load_ext Cython
+ 
+ In [2]: %%cython
+    ...: def f(n):
+    ...:     a = 0
+    ...:     for i in range(n):
+    ...:         a += i
+    ...:     return a
+    ...: 
+    ...: cpdef g(int n):
+    ...:     cdef int a = 0, i
+    ...:     for i in range(n):
+    ...:         a += i
+    ...:     return a
+    ...: 
+ 
+ In [3]: %timeit f(1000000)
+ 42.7 ms ± 783 µs per loop (mean ± std. dev. of 7 runs, 10 loops each)
+ 
+ In [4]: %timeit g(1000000)
+ 74 µs ± 16.6 ns per loop (mean ± std. dev. of 7 runs, 10000 loops each)
+
+endColumns
+
+## Language <a href="../lists/features.html">features</a>
+
+treeTable
+ row
+  Feature Integers
+  FeatureLink ../features/hasIntegers.html
+  Supported <span class="hasFeature">✓</span>
+  Token 
+  Example
+ row
+  Feature Floats
+  FeatureLink ../features/hasFloats.html
+  Supported <span class="hasFeature">✓</span>
+  Token 
+  Example
+ row
+  Feature Hexadecimals
+  FeatureLink ../features/hasHexadecimals.html
+  Supported <span class="hasFeature">✓</span>
+  Token 
+  Example
+ row
+  Feature Octals
+  FeatureLink ../features/hasOctals.html
+  Supported <span class="hasFeature">✓</span>
+  Token 
+  Example
+ row
+  Feature Scientific Notation
+  FeatureLink ../features/hasScientificNotation.html
+  Supported <span class="hasFeature">✓</span>
+  Token 
+  Example
+ row
+  Feature Binary Literals
+  FeatureLink ../features/hasBinaryNumbers.html
+  Supported <span class="hasFeature">✓</span>
+  Token 
+  Example
+   # 0[bB](?:_?[01])+
+ row
+  Feature Functions
+  FeatureLink ../features/hasFunctions.html
+  Supported <span class="hasFeature">✓</span>
+  Token 
+  Example
+ row
+  Feature While Loops
+  FeatureLink ../features/hasWhileLoops.html
+  Supported <span class="hasFeature">✓</span>
+  Token 
+  Example
+ row
+  Feature Case Sensitivity
+  FeatureLink ../features/isCaseSensitive.html
+  Supported <span class="hasFeature">✓</span>
+  Token 
+  Example
+ row
+  Feature Print() Debugging
+  FeatureLink ../features/hasPrintDebugging.html
+  Supported <span class="hasFeature">✓</span>
+  Token 
+  Example
+ row
+  Feature Threads
+  FeatureLink ../features/hasThreads.html
+  Supported <span class="hasFeature">✓</span>
+  Token 
+  Example
+ row
+  Feature Line Comments
+  FeatureLink ../features/hasLineComments.html
+  Supported <span class="hasFeature">✓</span>
+  Token 
+  Example
+   # A comment
+ row
+  Feature Dispose Blocks Pattern
+  FeatureLink ../features/hasDisposeBlocks.html
+  Supported <span class="hasFeature">✓</span>
+  Token 
+  Example
+   with resource_context_manager() as resource:
+      # Perform actions with the resource.
+   # Perform other actions where the resource is guaranteed to be deallocated.
+ row
+  Feature Zero-based numbering
+  FeatureLink ../features/hasZeroBasedNumbering.html
+  Supported <span class="hasFeature">✓</span>
+  Token 
+  Example
+ row
+  Feature Strings
+  FeatureLink ../features/hasStrings.html
+  Supported <span class="hasFeature">✓</span>
+  Token 
+  Example
+   "hello world"
+ row
+  Feature Inheritance
+  FeatureLink ../features/hasInheritance.html
+  Supported <span class="hasFeature">✓</span>
+  Token 
+  Example
+   class SumComputer(object):
+      def __init__(self, a, b):
+          self.a = a
+          self.b = b
+      def transform(self, x):
+          raise NotImplementedError
+      def inputs(self):
+          return range(self.a, self.b)
+      def compute(self):
+          return sum(self.transform(value) for value in self.inputs())
+    class SquareSumComputer(SumComputer):
+        def transform(self, x):
+            return x * x
+    class CubeSumComputer(SumComputer):
+        def transform(self, x):
+            return x * x * x
+ row
+  Feature Semantic Indentation
+  FeatureLink ../features/hasSemanticIndentation.html
+  Supported <span class="hasFeature">✓</span>
+  Token 
+  Example
+   class Person (object):
+     def __init__(self, name):
+       self.name = name
+ row
+  Feature Operator Overloading
+  FeatureLink ../features/hasOperatorOverloading.html
+  Supported <span class="hasFeature">✓</span>
+  Token 
+  Example
+   # Python Program illustrate how  
+   # to overload an binary + operator 
+     
+   class A: 
+       def __init__(self, a): 
+           self.a = a 
+     
+       # adding two objects  
+       def __add__(self, o): 
+           return self.a + o.a  
+   ob1 = A(1) 
+   ob2 = A(2) 
+   ob3 = A("Geeks") 
+   ob4 = A("For") 
+     
+   print(ob1 + ob2) 
+   print(ob3 + ob4)
+ row
+  Feature Multiple Inheritance
+  FeatureLink ../features/hasMultipleInheritance.html
+  Supported <span class="hasFeature">✓</span>
+  Token 
+  Example
+   class Base1:
+       pass
+   class Base2:
+       pass
+   class MultiDerived(Base1, Base2):
+       pass
+   # Or multilevel inheritance:
+   class Base:
+       pass
+   class Derived1(Base):
+       pass
+   class Derived2(Derived1):
+       pass
+ row
+  Feature Lists
+  FeatureLink ../features/hasLists.html
+  Supported <span class="hasFeature">✓</span>
+  Token 
+  Example
+   myList = [1, 2, 3, 4, 5]
+ row
+  Feature Multiline Strings
+  FeatureLink ../features/hasMultilineStrings.html
+  Supported <span class="hasFeature">✓</span>
+  Token 
+  Example
+   template = """This is the first line.
+   This is the second line.
+   This is the third line."""
+ row
+  Feature Mixins
+  FeatureLink ../features/hasMixins.html
+  Supported <span class="hasFeature">✓</span>
+  Token 
+  Example
+   # https://easyaspython.com/mixins-for-fun-and-profit-cb9962760556
+   class EssentialFunctioner(LoggerMixin, object):
+ row
+  Feature Iterators
+  FeatureLink ../features/hasIterators.html
+  Supported <span class="hasFeature">✓</span>
+  Token 
+  Example
+   https://www.w3schools.com/python/python_iterators.asp
+ row
+  Feature Infix Notation
+  FeatureLink ../features/hasInfixNotation.html
+  Supported <span class="hasFeature">✓</span>
+  Token 
+  Example
+   seven = 3 + 4
+ row
+  Feature File Imports
+  FeatureLink ../features/hasImports.html
+  Supported <span class="hasFeature">✓</span>
+  Token 
+  Example
+   import datetime
+   oTime = datetime.datetime.now()
+   from my_pkg import my_funcs
+ row
+  Feature Assignment
+  FeatureLink ../features/hasAssignment.html
+  Supported <span class="hasFeature">✓</span>
+  Token 
+  Example
+   name = "John"
+ row
+  Feature Directives
+  FeatureLink ../features/hasDirectives.html
+  Supported <span class="hasFeature">✓</span>
+  Token 
+  Example
+   from __future__ import feature
+   # coding=<encoding name>
+ row
+  Feature Generators
+  FeatureLink ../features/hasGenerators.html
+  Supported <span class="hasFeature">✓</span>
+  Token 
+  Example
+   https://wiki.python.org/moin/Generators
+ row
+  Feature Constructors
+  FeatureLink ../features/hasConstructors.html
+  Supported <span class="hasFeature">✓</span>
+  Token 
+  Example
+ row
+  Feature MultiLine Comments
+  FeatureLink ../features/hasMultiLineComments.html
+  Supported <span class="hasFeature">✓</span>
+  Token 
+  Example
+   ''' A comment.
+   '''
+ row
+  Feature Comments
+  FeatureLink ../features/hasComments.html
+  Supported <span class="hasFeature">✓</span>
+  Token 
+  Example
+   # This is a comment
+ row
+  Feature Conditionals
+  FeatureLink ../features/hasConditionals.html
+  Supported <span class="hasFeature">✓</span>
+  Token 
+  Example
+   if True:
+    print("Hello world")
+ row
+  Feature Classes
+  FeatureLink ../features/hasClasses.html
+  Supported <span class="hasFeature">✓</span>
+  Token 
+  Example
+   class Person (object):
+     def __init__(self, name):
+       self.name = name
+ row
+  Feature Booleans
+  FeatureLink ../features/hasBooleans.html
+  Supported <span class="hasFeature">✓</span>
+  Token 
+  Example
+ row
+  Feature Dynamic Properties
+  FeatureLink ../features/hasDynamicProperties.html
+  Supported <span class="hasFeature">✓</span>
+  Token 
+  Example
+   class Person (object):
+     def __init__(self, name):
+      self.name = name
+   
+   person = Person("John")
+   person.age = 50
+ row
+  Feature Symbol Tables
+  FeatureLink ../features/hasSymbolTables.html
+  Supported <span class="hasFeature">✓</span>
+  Token 
+  Example
+   # https://eli.thegreenplace.net/2010/09/18/python-internals-symbol-tables-part-1
+ row
+  Feature Shebang
+  FeatureLink ../features/canDoShebang.html
+  Supported <span class="hasFeature">✓</span>
+  Token 
+  Example
+   #!/usr/bin/env python
+ row
+  Feature Bitwise Operators
+  FeatureLink ../features/hasBitWiseOperators.html
+  Supported <span class="hasFeature">✓</span>
+  Token 
+  Example
+   x << y
+ row
+  Feature Ternary operators
+  FeatureLink ../features/hasTernaryOperators.html
+  Supported <span class="hasFeature">✓</span>
+  Token 
+  Example
+   print(1 if 1 else 0)
+ row
+  Feature Single Dispatch
+  FeatureLink ../features/hasSingleDispatch.html
+  Supported <span class="hasFeature">✓</span>
+  Token 
+  Example
+ row
+  Feature Duck Typing
+  FeatureLink ../features/hasDuckTyping.html
+  Supported <span class="hasFeature">✓</span>
+  Token 
+  Example
+ row
+  Feature Disk Output
+  FeatureLink ../features/canWriteToDisk.html
+  Supported <span class="hasFeature">✓</span>
+  Token 
+  Example
+   with open('helloworld.txt', 'w') as filehandle:
+    filehandle.write('Hello, world!\n')
+ row
+  Feature Units of Measure
+  FeatureLink ../features/hasUnitsOfMeasure.html
+  Supported <span class="doesNotHaveFeature">X</span>
+  Token 
+  Example
+ row
+  Feature Pointers
+  FeatureLink ../features/hasPointers.html
+  Supported <span class="doesNotHaveFeature">X</span>
+  Token 
+  Example
+ row
+  Feature Case Insensitive Identifiers
+  FeatureLink ../features/hasCaseInsensitiveIdentifiers.html
+  Supported <span class="doesNotHaveFeature">X</span>
+  Token 
+  Example
+ row
+  Feature Regular Expression Syntax Sugar
+  FeatureLink ../features/hasRegularExpressionsSyntaxSugar.html
+  Supported <span class="doesNotHaveFeature">X</span>
+  Token 
+  Example
+ row
+  Feature Enums
+  FeatureLink ../features/hasEnums.html
+  Supported <span class="doesNotHaveFeature">X</span>
+  Token 
+  Example
+   # Though there is an Enum class in stdlib https://peps.python.org/pep-0435/
+ row
+  Feature Macros
+  FeatureLink ../features/hasMacros.html
+  Supported <span class="doesNotHaveFeature">X</span>
+  Token 
+  Example
+ row
+  Feature Variable Substitution Syntax
+  FeatureLink ../features/hasVariableSubstitutionSyntax.html
+  Supported <span class="doesNotHaveFeature">X</span>
+  Token 
+  Example
+
+## Books about Cython on goodreads
+pipeTable
+ title|titleLink|author|year|reviews|ratings|rating
+ Cython: A Guide for Python Programmers|https://www.goodreads.com/search?q=Cython: A Guide for Python Programmers Kurt W Smith|Kurt W Smith|2014|4|29|3.97
+ Learning Cython Programming|https://www.goodreads.com/search?q=Learning Cython Programming Philip Herron|Philip Herron|2013|3|11|3.91
+ Learning Cython Programming - Second Edition|https://www.goodreads.com/search?q=Learning Cython Programming - Second Edition Philip Herron|Philip Herron||0|0|0.0
+ Learning Cython Programming Second Edition|https://www.goodreads.com/search?q=Learning Cython Programming Second Edition Philip Herron|Philip Herron||0|0|0.0
+
+## Books about Cython from ISBNdb
+pipeTable
+ title|titleLink|authors|year|publisher
+ Learning Cython Programming|https://isbndb.com/book/9781783280797|Herron, Philip|2013|Packt Publishing
+ Cython|https://isbndb.com/book/9781491901755|Kurt W. Smith|20150121|O'Reilly Media, Inc.
+ Cython|https://isbndb.com/book/9781491901762|Kurt W. Smith|20150121|O'Reilly Media, Inc.
+ Learning Cython Programming|https://isbndb.com/book/9781783280803|Philip Herron|2013-09-25|Packt Publishing
+ Learning Cython Programming|https://isbndb.com/book/9781785289125|Philip Herron|22-02-2016|Packt Publishing
+ Learning Cython Programming - Second Edition|https://isbndb.com/book/9781783551675|Herron and Philip|2016|Packt Publishing
+
+## Publications about Cython from Semantic Scholar
+pipeTable
+ title|titleLink|authors|year|citations|influentialCitations
+ A Cython Interface to EPICS Channel Access for High-level Python Applications|https://www.semanticscholar.org/paper/9a750962554912a666a93ac4b4592958b2552c68|J. Chrin|2017|1|0
+
+keyboardNav netlogo.html snobol.html
+
+import ../footer.scroll

@@ -98,7 +98,7 @@ linguistGrammarRepo https://github.com/eregon/oz-tmbundle
     end
   end
   
-  % Returns true if N is a prime and false otherwize
+  % Returns true if N is a prime and false otherwise
   fun {Prime N}
     local PrimeAcc in
       fun {PrimeAcc N Acc}
@@ -182,7 +182,7 @@ semanticScholar 22
  1996|Virtual reality programming in Oz|10.1007/978-3-7091-7488-3_4|22|2|Tomas Axling and Seif Haridi and L. Fahlén|e2a71cf789d9a7f33a36dce3d43d6009585a482b
  1997|Objects in Oz|10.22028/D291-25701|16|2|M. Henz|30077a00fcbcae9e8c88ca85b8f5489f1c82b1bd
  2004|Strasheela: Design and Usage of a Music Composition Environment Based on the Oz Programming Model|10.1007/978-3-540-31845-3_23|13|0|Torsten Anders and C. Anagnostopoulou and Michael Alcorn|3fb32d3ef26e56cd4091fb6702c459b2cd20f5ef
- 1998|Lösen kombinatorischer Probleme mit Constraintprogrammierung in Oz|10.22028/D291-25755|10|0|Jörg Würtz|2ac5f93874908107a52398cc928417df4e221e3b
+ 1998|Lösen kombinatorischer Problem mit Constraintprogrammierung in Oz|10.22028/D291-25755|10|0|Jörg Würtz|2ac5f93874908107a52398cc928417df4e221e3b
  1997|Constraint-Based Scheduling in Oz|10.1007/978-3-642-60744-8_40|8|0|J. Würtz|bfffc8e419b9c05b7999561dedd81f68f21a95a5
  1994|Constraint Programming in Oz|10.7551/mitpress/4283.003.0013|8|0|Tobias Müller and K. Popov and Christian Schulte and J. Würtz|9733a192994b32c1ca5af41f1f49368201e28977
  2004|The CURRENT Platform: Building Conversational Agents in Oz|10.1007/978-3-540-31845-3_14|7|0|T. Lager and Fredrik Kronlid|477e934569677d22b16a053575ce8d944df86b64

@@ -185,15 +185,15 @@ linguistGrammarRepo https://github.com/sanssecours/ABNF.tmbundle
   
   ;; Literal String
   
-  literal-string = apostraphe *literal-char apostraphe
+  literal-string = apostrophe *literal-char apostrophe
   
-  apostraphe = %x27 ; ' Apostrophe
+  apostrophe = %x27 ; ' Apostrophe
   
   literal-char = %x09 / %x20-26 / %x28-10FFFF
   
   ;; Multiline Literal String
   
-  ml-literal-string-delim = apostraphe apostraphe apostraphe
+  ml-literal-string-delim = apostrophe apostrophe apostrophe
   ml-literal-string = ml-literal-string-delim ml-literal-body ml-literal-string-delim
   
   ml-literal-body = *( ml-literal-char / newline )

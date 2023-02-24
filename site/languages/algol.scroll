@@ -1,0 +1,131 @@
+import header.scroll
+
+title Algol
+
+title Algol - Programming language
+ hidden
+
+html
+ <a class="prevLang" href="dot.html">&lt;</a>
+ <a class="nextLang" href="nearley.html">&gt;</a>
+
+viewSourceUrl https://github.com/breck7/pldb/blob/main/database/things/algol.pldb
+
+startColumns 4
+
+html <div class="quickLinks"><a href="https://en.wikipedia.org/wiki/ALGOL"><svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="98.05px" height="98.05px" viewBox="0 0 98.05 98.05" style="enable-background:new 0 0 98.05 98.05;" xml:space="preserve"><path d="M98.023,17.465l-19.584-0.056c-0.004,0.711-0.006,1.563-0.017,2.121c1.664,0.039,5.922,0.822,7.257,4.327L66.92,67.155 c-0.919-2.149-9.643-21.528-10.639-24.02l9.072-18.818c1.873-2.863,5.455-4.709,8.918-4.843l-0.01-1.968L55.42,17.489 c-0.045,0.499,0.001,1.548-0.068,2.069c5.315,0.144,7.215,1.334,5.941,4.508c-2.102,4.776-6.51,13.824-7.372,15.475 c-2.696-5.635-4.41-9.972-7.345-16.064c-1.266-2.823,1.529-3.922,4.485-4.004v-1.981l-21.82-0.067 c0.016,0.93-0.021,1.451-0.021,2.131c3.041,0.046,6.988,0.371,8.562,3.019c2.087,4.063,9.044,20.194,11.149,24.514 c-2.685,5.153-9.207,17.341-11.544,21.913c-3.348-7.43-15.732-36.689-19.232-44.241c-1.304-3.218,3.732-5.077,6.646-5.213 l0.019-2.148L0,17.398c0.005,0.646,0.027,1.71,0.029,2.187c4.025-0.037,9.908,6.573,11.588,10.683 c7.244,16.811,14.719,33.524,21.928,50.349c0.002,0.029,2.256,0.059,2.281,0.008c4.717-9.653,10.229-19.797,15.206-29.56 L63.588,80.64c0.005,0.004,2.082,0.016,2.093,0.007c7.962-18.196,19.892-46.118,23.794-54.933c1.588-3.767,4.245-6.064,8.543-6.194 l0.032-1.956L98.023,17.465z"/></svg></a> <a href="https://public.support.unisys.com/aseries/docs/clearpath-mcp-17.0/pdf/86000098-515.pdf"><svg viewBox="0 0 500 500" xmlns="http://www.w3.org/2000/svg"><g transform="matrix(1, 0, 0, 1, 13.859316, 9.109739)"><g><g><path d="M340.732,0H55v485h375V94.518L340.732,0z M345,26.364L405.1,90H345V26.364z M415,470H70V15h260v90h85V470z"/><rect x="102.5" y="191" width="280" height="15"/><rect x="102.5" y="141" width="120" height="15"/><rect x="102.5" y="241" width="280" height="15"/><rect x="102.5" y="291" width="280" height="15"/><rect x="102.5" y="341" width="280" height="15"/><rect x="102.5" y="391" width="280" height="15"/></g></g></g></svg></a></div>
+
+* Algol is a <a href="../lists/languages.html?filter=pl">programming language</a> created in 1958.
+ link ../lists/languages.html?filter=1958 1958
+
+kpiTable
+ #161 <span title="TotalRank: 459 Jobs: 103 Users: 402 Facts: 334 Links: 22">on PLDB</span>
+ 65 Years Old
+ 1.6k <span title="Crude user estimate from a linear model.">Users</span>
+ 31 <span title="Books about or leveraging Algol">Books</span>
+ 17 <span title="Academic publications about or leveraging Algol">Papers</span>
+
+* Try now: <a href="https://riju.codes/algol">Riju</a>
+
+* ALGOL (short for Algorithmic Language) is a family of imperative computer programming languages, originally developed in the mid-1950s, which greatly influenced many other languages and was the standard method for algorithm description used by the ACM in textbooks and academic sources for more than thirty years. In the sense that the syntax of most modern languages is "Algol-like", it was arguably the most influential of the four high-level programming languages among which it was roughly contemporary: FORTRAN, Lisp, and COBOL. It was designed to avoid some of the perceived problems with FORTRAN and eventually gave rise to many other programming languages, including PL/I, Simula, BCPL, B, Pascal, and C. Read more on Wikipedia...
+ https://en.wikipedia.org/wiki/ALGOL Read more on Wikipedia...
+
+- Algol Wikipedia page
+ https://en.wikipedia.org/wiki/ALGOL
+- Algol docs
+ https://public.support.unisys.com/aseries/docs/clearpath-mcp-17.0/pdf/86000098-515.pdf
+- Algol first developed in <a href="../lists/originCommunities.html#swissFederalInstituteOfTechnology">Swiss Federal Institute of Technology</a>
+- Explore Algol snippets on <a href="http://www.rosettacode.org/wiki/Category:ALGOL">Rosetta Code</a>
+- Algol on HOPL
+ https://hopl.info/showlanguage.prx?exp=2966
+- Algol appears in the <a href="https://www.tiobe.com/tiobe-index/">TIOBE Index</a>
+- See also: (29 related languages)<a href="pl-i.html">PL/I</a>, <a href="simula.html">Simula</a>, <a href="bcpl.html">BCPL</a>, <a href="b.html">B</a>, <a href="pascal.html">Pascal</a>, <a href="c.html">C</a>, <a href="lisp.html">Lisp</a>, <a href="cobol.html">COBOL</a>, <a href="algol-58.html">ALGOL 58</a>, <a href="algol-60.html">ALGOL 60</a>, <a href="algol-68.html">ALGOL 68</a>, <a href="algol-w.html">ALGOL W</a>, <a href="scheme.html">Scheme</a>, <a href="ml.html">ML</a>, <a href="elliott-algol.html">Elliott ALGOL</a>, <a href="jovial.html">JOVIAL</a>, <a href="ada.html">Ada</a>, <a href="act-iii.html">ACT-III</a>, <a href="s-algol.html">S-algol</a>, <a href="espol.html">Executive Systems Problem Oriented Language</a>, <a href="newp.html">NEWP</a>, <a href="ascii.html">ASCII</a>, <a href="alcor.html">ALCOR</a>, <a href="unicode.html">Unicode</a>, <a href="atlas-autocode.html">Atlas Autocode</a>, <a href="coral.html">CORAL</a>, <a href="edinburgh-imp.html">Edinburgh IMP</a>, <a href="iswim.html">ISWIM</a>, <a href="neliac.html">NELIAC</a>
+- HTML of this page generated by <a href="https://github.com/breck7/pldb/blob/main/code/LanguagePage.ts">LanguagePage.ts</a>
+- <a href="https://pldb.com/edit/algol">Improve our Algol file</a>
+
+html <br>
+
+codeWithHeader Example from <a href='https://riju.codes/algol'>Riju</a>:
+ print((&quot;Hello, world!&quot;,new line))
+ 
+
+codeWithHeader Example from <a href='https://en.wikipedia.org/wiki/ALGOL'>Wikipedia</a>:
+ &#39;BEGIN&#39;
+      WRITE TEXT(&#39;(&#39;HELLO%WORLD&#39;)&#39;);
+   &#39;END&#39;
+
+endColumns
+
+## Language <a href="../lists/features.html">features</a>
+
+treeTable
+ row
+  Feature Assignment
+  FeatureLink ../features/hasAssignment.html
+  Supported <span class="hasFeature">✓</span>
+  Token :=
+  Example
+
+## Books about Algol on goodreads
+pipeTable
+ title|titleLink|author|year|reviews|ratings|rating
+ primer of ALGOL 60 programming.|https://www.goodreads.com/search?q=primer of ALGOL 60 programming. Edsger W. Dijkstra|Edsger W. Dijkstra|1962|1|4|4.25
+ Algol-Like Languages|https://www.goodreads.com/search?q=Algol-Like Languages Peter O'Hearn|Peter O'Hearn|1996|0|1|5.00
+ Algol 60 Implementation: The Translation And Use Of Algol 60 Programs On A Computer|https://www.goodreads.com/search?q=Algol 60 Implementation: The Translation And Use Of Algol 60 Programs On A Computer B. Randell|B. Randell||1|1|4.00
+ A Guide to Algol Programming|https://www.goodreads.com/search?q=A Guide to Algol Programming Daniel D. McCracken|Daniel D. McCracken|1962|0|1|4.00
+ Introductory Algol 68 Programming|https://www.goodreads.com/search?q=Introductory Algol 68 Programming D. F Brailsford|D. F Brailsford|1979|0|0|0.0
+ Programming: ALGOL,|https://www.goodreads.com/search?q=Programming: ALGOL, D.J. Malcolme-Lawes|D.J. Malcolme-Lawes|1969|0|0|0.0
+ Programming In Algol|https://www.goodreads.com/search?q=Programming In Algol J.S. Rohl|J.S. Rohl|1970|0|0|0.0
+
+## Books about Algol from ISBNdb
+pipeTable
+ title|titleLink|authors|year|publisher
+ ALGOL in brief: A short, practical guide to computer programming in ALGOL,|https://isbndb.com/book/9780198596103|Ractliffe, J. F|1971|Oxford University Press
+ Programming by Case Studies: An Algol Primer (Introductory Monographs in Mathematics)|https://isbndb.com/book/9780333101469|Chedzoy, O.B. and Ford, Sandra Elizabeth|1969|Palgrave Macmillan
+ The Mathematical Semantics Of Algol 60 (technical Monographs)|https://isbndb.com/book/9780902928084|Peter Mosses|1974|Oxford University Computing Laboratory, Programming Research Group
+ Programming - ALGOL (The Commonwealth and international library of science, technology, engineering, and liberal studies)|https://isbndb.com/book/9780080063843|Malcolme-Lawes, D. J.|1969|Pergamon
+ A Guide to Algol Programming|https://isbndb.com/book/9780471582342|McCracken, Daniel D.|1962-12T|John Wiley & Sons Inc
+ Primer of Algol 60 Programming (Studies in Data Processing)|https://isbndb.com/book/9780122162503|Dijkstra, Edsger W.|1962-06-01T00:00:01Z|Academic Pr
+ Elementary Programming and Algol|https://isbndb.com/book/9780070940093|Nicol, Keith|1965|McGraw Hill
+ Programming and Problem-Solving in Algol 68|https://isbndb.com/book/9780333231159|Colin, Andrew John Theodore|1978|Palgrave HE UK
+ Introductory Algol 68 Programming (Computers and Their Applications)|https://isbndb.com/book/9780853121275|Brailsford, D. F. and Walker, A. N.|1979|Prentice Hall Europe (a Pearson Education company)
+ Introduction to Algol Programming|https://isbndb.com/book/9789144004433|Erik Torgil. FrFoberg, Carl ÂµEkman|1967|StudentlitteraturOxford University Press
+ Informal Introduction to Algol 68|https://isbndb.com/book/9780720407266|Lindsey, C.H.|1977|Elsevier Science
+ Informal introduction to ALGOL 68|https://isbndb.com/book/9780720420487|Meulen, S. G. van der|1971|North-Holland Pub. Co
+ ALGOL 68 implementation;: Proceedings of the IFIP Working Conference on ALGOL 68 Implementation, Munich, July 20-24, 1970|https://isbndb.com/book/9780720420456||1971|North-Holland Pub. Co
+ Programming - Algol|https://isbndb.com/book/9780080063850|D. J. Malcolme-lawes|1969|Pergamon Press
+ Programming In Algol|https://isbndb.com/book/9780719004438|Rohl, J. S. (jeffrey Soden)|1970|Manchester U.p.
+ Algol 60 Programming (computer Science)|https://isbndb.com/book/9780070941427|R.f. Shepherd|1972|Mcgraw-hill Education
+ Programming And Problem-solving In Algol 68|https://isbndb.com/book/9781349035618||1978|Macmillan International Higher Education
+ Introduction To Algol Programming (applied Mathematics S.)|https://isbndb.com/book/9780340047309|R. Wooldridge~john Fuller Ratcliffe|1968|Hodder & Stoughton Ltd
+ Structural Programming And Problem Solving With Algol|https://isbndb.com/book/9780138547370|Richard B. Kieburtz|1975|Prentice Hall
+ Articles On Algol Programming Language Family, Including|https://isbndb.com/book/9781243309327|Hephaestus Books|2011|
+ Introductory Algol 68 Programming (computers And Their Applications)|https://isbndb.com/book/9780470267462|D. F Brailsford|1979|Halsted Press
+ Programming And Problem-solving In Algol 68 (macmillan Computer Science Series)|https://isbndb.com/book/9780333217160|Andrew John Theodore Colin|1977|Macmillan
+ Introduction To The Formal Definition Of Algol 68 (annual Review In Automatic Programming)|https://isbndb.com/book/9780080230566|Andrew D. Mcgettrick|1978|Elsevier
+ Compilers By Programming Language: Algol 60 Compilers, Assemblers, Basic Compilers, C++ Compilers, Cfml Compilers, C Compilers|https://isbndb.com/book/9781157807247|Group and Books and LLC|2010|
+
+## Publications about Algol from Semantic Scholar
+pipeTable
+ title|titleLink|authors|year|citations|influentialCitations
+ Report on the Algorithmic Language ALGOL the ACM committee on programming languages and the GAMM committee on programming|https://www.semanticscholar.org/paper/9bc8b52e7f794020396c16be28a0f05059d82309|A. Perlis and K. Samelson|1959|32|1
+ Note on Algol and conservatively extending functional programming|https://www.semanticscholar.org/paper/1fde5780f1f1d2a66d21564055c0d7b2cea87d35|P. O'Hearn|1996|8|0
+ A string language for symbol manipulation based on ALGOL 60|https://www.semanticscholar.org/paper/de114e46faae7eff6390d13b0a1b1b7870cb4139|J. Wegstein and W. W. Youden|1962|6|0
+ ACM SIGPLAN history of programming languages conference ALGOL 60 language summary|https://www.semanticscholar.org/paper/34160ce443581c856da9a88f54568c3a0ffe9225|D. Gries|1978|6|0
+ Was Algol 60 the First Algorithmic Language?|https://www.semanticscholar.org/paper/d49f0f159489b5e8f5e8f5f92421db53333a135a|Helena Durnova and G. Alberts|2014|5|0
+ Algol in France: From Universal Project to Embedded Culture|https://www.semanticscholar.org/paper/a55277bc35bc95f75ceab9430ff54e22056fa2a2|P. Mounier-Kuhn|2014|4|0
+ Formal Semantics of ALGOL 60: Four Descriptions in their Historical Context|https://www.semanticscholar.org/paper/459991a691c41f07c13d1ab0b5a557af5e7e9b6a|Troy K. Astarte and Cliff B. Jones|2018|4|0
+ Universality versus Locality: The Amsterdam Style of Algol Implementation|https://www.semanticscholar.org/paper/2e12390a2189bb300264ffab2c1bb18e7d82c31b|G. Alberts and E. Daylight|2014|3|0
+ Algol 68 as an extensible language|https://www.semanticscholar.org/paper/583d31c9492594eb2cab69f89ed2ddaf0718c83e|B. J. Mailloux and J. Peck|1969|3|0
+ Evaluation of ALGOL 68, JOVIAL J3B, PASCAL, SIMULA 67, and TACPOL vs. TINMAN Requirements for a Common High Order Programming Language.|https://www.semanticscholar.org/paper/be654e5389930136859ef4263619d9f59a5ee216|J. Goodenough and C. McGowan and J. R. Kelly|1976|3|0
+ On expressing control and data structures in predicate logic language ALGOL M|https://www.semanticscholar.org/paper/cc083f1a6f1fc2bffa21650b328432a563e50918|Alois Glanc|1979|2|0
+ Algol 68 as an implementation language for portable interpreters|https://www.semanticscholar.org/paper/f50e9dd7c4875c9f774cf128a248c146a520d01d|F. G. Pagan|1977|2|0
+ ALGOL 68 and structured programming for learner-programmers|https://www.semanticscholar.org/paper/debb422575b38c120434704dff7b34bfd194fee4|B. Ratcliff|1977|2|0
+ On the Design of Programming Languages Including Mini ALgol 68|https://www.semanticscholar.org/paper/296f3ef8d9f61ca57b7229bfe5cc9539a64ab7f1|L. Ammeraal|1975|2|0
+ Embracing the Algol Effort in Czechoslovakia|https://www.semanticscholar.org/paper/3b9f5a3e7bb3fe20f3b5a4d6272099025a63b04b|Helena Durnova|2014|1|0
+ The current programming language standards scene IV: The ALGOL languages|https://www.semanticscholar.org/paper/5ac44dc4ec61360f97ed6583735cca5302762d08|I. D. Hill|1983|1|0
+ A course in Algol programming : including the revised report on the algorithmiclanguage Algol 60 : including the revised report on the algorithmic language Algol 60|https://www.semanticscholar.org/paper/a7fd9e07f55ffdf9b9971405cc3bdc7fa7ff3132|G. F. Schaefler|1966|1|0
+
+keyboardNav dot.html nearley.html
+
+import ../footer.scroll

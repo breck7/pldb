@@ -1,0 +1,361 @@
+import header.scroll
+
+title MySQL
+
+title MySQL - Query language
+ hidden
+
+html
+ <a class="prevLang" href="ruby.html">&lt;</a>
+ <a class="nextLang" href="r.html">&gt;</a>
+
+viewSourceUrl https://github.com/breck7/pldb/blob/main/database/things/mysql.pldb
+
+startColumns 4
+
+html <div class="quickLinks"><a href="http://www.mysql.com/"><svg role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12.7166 3.79541C12.2835 3.49716 11.7165 3.49716 11.2834 3.79541L4.14336 8.7121C3.81027 8.94146 3.60747 9.31108 3.59247 9.70797C3.54064 11.0799 3.4857 13.4824 3.63658 15.1877C3.7504 16.4742 4.05336 18.1747 4.29944 19.4256C4.41371 20.0066 4.91937 20.4284 5.52037 20.4284H8.84433C8.98594 20.4284 9.10074 20.3111 9.10074 20.1665V15.9754C9.10074 14.9627 9.90433 14.1417 10.8956 14.1417H13.4091C14.4004 14.1417 15.204 14.9627 15.204 15.9754V20.1665C15.204 20.3111 15.3188 20.4284 15.4604 20.4284H18.4796C19.0806 20.4284 19.5863 20.0066 19.7006 19.4256C19.9466 18.1747 20.2496 16.4742 20.3634 15.1877C20.5143 13.4824 20.4594 11.0799 20.4075 9.70797C20.3925 9.31108 20.1897 8.94146 19.8566 8.7121L12.7166 3.79541ZM10.4235 2.49217C11.3764 1.83602 12.6236 1.83602 13.5765 2.49217L20.7165 7.40886C21.4457 7.91098 21.9104 8.73651 21.9448 9.64736C21.9966 11.0178 22.0564 13.5119 21.8956 15.3292C21.7738 16.7067 21.4561 18.4786 21.2089 19.7353C20.9461 21.0711 19.7924 22.0001 18.4796 22.0001H15.4604C14.4691 22.0001 13.6655 21.1791 13.6655 20.1665V15.9754C13.6655 15.8307 13.5507 15.7134 13.4091 15.7134H10.8956C10.754 15.7134 10.6392 15.8307 10.6392 15.9754V20.1665C10.6392 21.1791 9.83561 22.0001 8.84433 22.0001H5.52037C4.20761 22.0001 3.05389 21.0711 2.79113 19.7353C2.54392 18.4786 2.22624 16.7067 2.10437 15.3292C1.94358 13.5119 2.00338 11.0178 2.05515 9.64736C2.08957 8.73652 2.55427 7.91098 3.28346 7.40886L10.4235 2.49217Z"/></svg></a> <a href="https://en.wikipedia.org/wiki/MySQL"><svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="98.05px" height="98.05px" viewBox="0 0 98.05 98.05" style="enable-background:new 0 0 98.05 98.05;" xml:space="preserve"><path d="M98.023,17.465l-19.584-0.056c-0.004,0.711-0.006,1.563-0.017,2.121c1.664,0.039,5.922,0.822,7.257,4.327L66.92,67.155 c-0.919-2.149-9.643-21.528-10.639-24.02l9.072-18.818c1.873-2.863,5.455-4.709,8.918-4.843l-0.01-1.968L55.42,17.489 c-0.045,0.499,0.001,1.548-0.068,2.069c5.315,0.144,7.215,1.334,5.941,4.508c-2.102,4.776-6.51,13.824-7.372,15.475 c-2.696-5.635-4.41-9.972-7.345-16.064c-1.266-2.823,1.529-3.922,4.485-4.004v-1.981l-21.82-0.067 c0.016,0.93-0.021,1.451-0.021,2.131c3.041,0.046,6.988,0.371,8.562,3.019c2.087,4.063,9.044,20.194,11.149,24.514 c-2.685,5.153-9.207,17.341-11.544,21.913c-3.348-7.43-15.732-36.689-19.232-44.241c-1.304-3.218,3.732-5.077,6.646-5.213 l0.019-2.148L0,17.398c0.005,0.646,0.027,1.71,0.029,2.187c4.025-0.037,9.908,6.573,11.588,10.683 c7.244,16.811,14.719,33.524,21.928,50.349c0.002,0.029,2.256,0.059,2.281,0.008c4.717-9.653,10.229-19.797,15.206-29.56 L63.588,80.64c0.005,0.004,2.082,0.016,2.093,0.007c7.962-18.196,19.892-46.118,23.794-54.933c1.588-3.767,4.245-6.064,8.543-6.194 l0.032-1.956L98.023,17.465z"/></svg></a> <a href="https://twitter.com/mysql"><svg role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M23.953 4.57a10 10 0 01-2.825.775 4.958 4.958 0 002.163-2.723c-.951.555-2.005.959-3.127 1.184a4.92 4.92 0 00-8.384 4.482C7.69 8.095 4.067 6.13 1.64 3.162a4.822 4.822 0 00-.666 2.475c0 1.71.87 3.213 2.188 4.096a4.904 4.904 0 01-2.228-.616v.06a4.923 4.923 0 003.946 4.827 4.996 4.996 0 01-2.212.085 4.936 4.936 0 004.604 3.417 9.867 9.867 0 01-6.102 2.105c-.39 0-.779-.023-1.17-.067a13.995 13.995 0 007.557 2.209c9.053 0 13.998-7.496 13.998-13.985 0-.21 0-.42-.015-.63A9.935 9.935 0 0024 4.59z"/></svg></a> <a href="http://mysql.babo.ist/#/en/mailing-lists.html"><svg role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M24 5.457v13.909c0 .904-.732 1.636-1.636 1.636h-3.819V11.73L12 16.64l-6.545-4.91v9.273H1.636A1.636 1.636 0 0 1 0 19.366V5.457c0-2.023 2.309-3.178 3.927-1.964L5.455 4.64 12 9.548l6.545-4.91 1.528-1.145C21.69 2.28 24 3.434 24 5.457z"/></svg></a> <a href="https://dev.mysql.com/doc/"><svg viewBox="0 0 500 500" xmlns="http://www.w3.org/2000/svg"><g transform="matrix(1, 0, 0, 1, 13.859316, 9.109739)"><g><g><path d="M340.732,0H55v485h375V94.518L340.732,0z M345,26.364L405.1,90H345V26.364z M415,470H70V15h260v90h85V470z"/><rect x="102.5" y="191" width="280" height="15"/><rect x="102.5" y="141" width="120" height="15"/><rect x="102.5" y="241" width="280" height="15"/><rect x="102.5" y="291" width="280" height="15"/><rect x="102.5" y="341" width="280" height="15"/><rect x="102.5" y="391" width="280" height="15"/></g></g></g></svg></a></div>
+
+* MySQL is a <a href="../lists/languages.html?filter=queryLanguage">query language</a> created in 1995 by David Axmark and Michael Widenius.
+ link ../lists/languages.html?filter=1995 1995
+ link ../lists/creators.html#davidAxmark David Axmark
+ link ../lists/creators.html#michaelWidenius Michael Widenius
+
+kpiTable
+ #15 <span title="TotalRank: 52 Jobs: 7 Users: 9 Facts: 49 Links: 36">on PLDB</span>
+ 28 Years Old
+ 2.6m <span title="Crude user estimate from a linear model.">Users</span>
+ 168 <span title="Books about or leveraging MySQL">Books</span>
+ 16 <span title="Academic publications about or leveraging MySQL">Papers</span>
+
+* Try now: <a href="https://riju.codes/mysql">Riju</a>
+
+monacoEditor mysql
+ SELECT 'Hello, world!';
+ 
+
+* MySQL (officially pronounced as  "My S-Q-L",) is an open-source relational database management system (RDBMS). Its name is a combination of "My", the name of co-founder Michael Widenius's daughter, and "SQL", the abbreviation for Structured Query Language. The MySQL development project has made its source code available under the terms of the GNU General Public License, as well as under a variety of proprietary agreements. Read more on Wikipedia...
+ https://en.wikipedia.org/wiki/MySQL Read more on Wikipedia...
+
+- MySQL website
+ http://www.mysql.com/
+- MySQL downloads page
+ https://www.mysql.com/downloads/
+- MySQL Wikipedia page
+ https://en.wikipedia.org/wiki/MySQL
+- MySQL docs
+ https://dev.mysql.com/doc/
+- MySQL mailing list
+ http://mysql.babo.ist/#/en/mailing-lists.html
+- MySQL first developed in <a href="../lists/originCommunities.html#oracle">Oracle</a>
+- PLDB estimates there are currently 47k job openings for MySQL programmers.
+- MySQL on Twitter
+ https://twitter.com/mysql
+- Check out the 644 <a href="https://www.meetup.com/topics/mysql/">MySQL meetup groups</a> on Meetup.com.
+- Explore MySQL snippets on <a href="http://www.rosettacode.org/wiki/Category:MySQL">Rosetta Code</a>
+- <a href="antlr.html">ANTLR</a> <a href="https://github.com/antlr/grammars-v4/tree/master/mysql">grammar</a> for MySQL
+- <a href="monaco.html">Monaco</a> <a href="https://github.com/microsoft/monaco-editor/tree/main/src/basic-languages/mysql">package</a> for syntax highlighting MySQL
+- <a href="pygments.html">Pygments</a> supports <a href="https://github.com/pygments/pygments/blob/master/pygments/lexers/sql.py">syntax highlighting</a> for MySQL
+- Release Notes for MySQL
+ https://dev.mysql.com/doc/relnotes/mysql/8.0/en/
+- Official Blog page for MySQL
+ https://dev.mysql.com/blog-archive/
+- Frequently Asked Questions for MySQL
+ https://www.mysql.com/industry/faq/
+- Indeed.com has 21,490 matches for <a href="https://www.indeed.com/jobs?q=MySQL developer">"MySQL developer"</a>.
+- <a href="http://www.mysql.com/">mysql.com</a> was registered in 1999
+- See also: (21 related languages)<a href="c.html">C</a>, <a href="linux.html">Linux</a>, <a href="solaris.html">Solaris</a>, <a href="freebsd.html">FreeBSD</a>, <a href="sql.html">SQL</a>, <a href="perl.html">Perl</a>, <a href="php.html">PHP</a>, <a href="python.html">Python</a>, <a href="wordpress.html">WordPress</a>, <a href="mybb.html">MyBB</a>, <a href="drupal.html">Drupal</a>, <a href="yacc.html">Yacc</a>, <a href="mariadb.html">MariaDB</a>, <a href="sql-psm.html">SQL/PSM</a>, <a href="unicode.html">Unicode</a>, <a href="csv.html">CSV</a>, <a href="postgresql.html">PostgreSQL</a>, <a href="csharp.html">C#</a>, <a href="visual-basic.html">Visual Basic</a>, <a href="asp.html">ASP</a>, <a href="utf-8.html">UTF-8</a>
+- HTML of this page generated by <a href="https://github.com/breck7/pldb/blob/main/code/LanguagePage.ts">LanguagePage.ts</a>
+- <a href="https://pldb.com/edit/mysql">Improve our MySQL file</a>
+
+html <br>
+
+codeWithHeader Example from <a href='https://riju.codes/mysql'>Riju</a>:
+ SELECT &#39;Hello, world!&#39;;
+ 
+
+codeWithHeader Example from <a href='https://github.com/leachim6/hello-world/blob/main/m/MySQL.sql'>hello-world</a>:
+ SELECT &quot;Hello World&quot;;
+ 
+
+## <a href="../lists/keywords.html?filter=mysql">Keywords</a> in MySQL
+* ACCESSIBLE ADD ALL ALTER ANALYZE AND AS ASC ASENSITIVE BEFORE BETWEEN BIGINT BINARY BLOB BOTH BY CALL CASCADE CASE CHANGE CHAR CHARACTER CHECK COLLATE COLUMN CONDITION CONSTRAINT CONTINUE CONVERT CREATE CROSS CUBE CUME_DIST CURRENT_DATE CURRENT_TIME CURRENT_TIMESTAMP CURRENT_USER CURSOR DATABASE DATABASES DAY_HOUR DAY_MICROSECOND DAY_MINUTE DAY_SECOND DEC DECIMAL DECLARE DEFAULT DELAYED DELETE DENSE_RANK DESC DESCRIBE DETERMINISTIC DISTINCT DISTINCTROW DIV DOUBLE DROP DUAL EACH ELSE ELSEIF EMPTY ENCLOSED ESCAPED EXCEPT EXISTS EXIT EXPLAIN FALSE FETCH FIRST_VALUE FLOAT FLOAT4 FLOAT8 FOR FORCE FOREIGN FROM FULLTEXT FUNCTION GENERATED GET GRANT GROUP GROUPING GROUPS HAVING HIGH_PRIORITY HOUR_MICROSECOND HOUR_MINUTE HOUR_SECOND IF IGNORE IN INDEX INFILE INNER INPUT INSENSITIVE INSERT INT INT1 INT2 INT3 INT4 INT8 INTEGER INTERVAL INTO IO_AFTER_GTIDS IO_BEFORE_GTIDS IS ITERATE JOIN JSON_TABLE KEY KEYS KILL LAG LAST_VALUE LATERAL LEAD LEADING LEAVE LEFT LIKE LIMIT LINEAR LINES LOAD LOCALTIME LOCALTIMESTAMP LOCK LONG LONGBLOB LONGTEXT LOOP LOW_PRIORITY MASTER_BIND MASTER_SSL_VERIFY_SERVER_CERT MATCH MAXVALUE MEDIUMBLOB MEDIUMINT MEDIUMTEXT MIDDLEINT MINUTE_MICROSECOND MINUTE_SECOND MOD MODIFIES NATURAL NOT NO_WRITE_TO_BINLOG NTH_VALUE NTILE NULL NUMERIC OF ON OPTIMIZE OPTIMIZER_COSTS OPTION OPTIONALLY OR ORDER OUT OUTER OUTFILE OVER PARTITION PERCENT_RANK PRECISION PRIMARY PROCEDURE PURGE RANGE RANK READ READS READ_WRITE REAL RECURSIVE REFERENCES REGEXP RELEASE RENAME REPEAT REPLACE REQUIRE RESIGNAL RESTRICT RETURN REVOKE RIGHT RLIKE ROW ROWS ROW_NUMBER SCHEMA SCHEMAS SECOND_MICROSECOND SELECT SENSITIVE SEPARATOR SET SHOW SIGNAL SMALLINT SPATIAL SPECIFIC SQL SQLEXCEPTION SQLSTATE SQLWARNING SQL_BIG_RESULT SQL_CALC_FOUND_ROWS SQL_SMALL_RESULT SSL STARTING STORED STRAIGHT_JOIN SYSTEM TABLE TERMINATED THEN TINYBLOB TINYINT TINYTEXT TO TRAILING TRIGGER TRUE UNDO UNION UNIQUE UNLOCK UNSIGNED UPDATE USAGE USE USING UTC_DATE UTC_TIME UTC_TIMESTAMP VALUES VARBINARY VARCHAR VARCHARACTER VARYING VIRTUAL WHEN WHERE WHILE WINDOW WITH WRITE XOR YEAR_MONTH ZEROFILL
+
+endColumns
+
+## Language <a href="../lists/features.html">features</a>
+
+treeTable
+ row
+  Feature Binary Literals
+  FeatureLink ../features/hasBinaryNumbers.html
+  Supported <span class="hasFeature">✓</span>
+  Token 
+  Example
+   -- b'[01]+'
+ row
+  Feature Integers
+  FeatureLink ../features/hasIntegers.html
+  Supported <span class="hasFeature">✓</span>
+  Token 
+  Example
+   -- [0-9]+(?=[^0-9a-z$_\u0080-\uffff])
+ row
+  Feature Floats
+  FeatureLink ../features/hasFloats.html
+  Supported <span class="hasFeature">✓</span>
+  Token 
+  Example
+   -- [0-9]+\.[0-9]*(e[+-]?[0-9]+)?
+ row
+  Feature Hexadecimals
+  FeatureLink ../features/hasHexadecimals.html
+  Supported <span class="hasFeature">✓</span>
+  Token 
+  Example
+   -- x'([0-9a-f]{2})+'
+ row
+  Feature Booleans
+  FeatureLink ../features/hasBooleans.html
+  Supported <span class="hasFeature">✓</span>
+  Token TRUE FALSE
+  Example
+ row
+  Feature Strings
+  FeatureLink ../features/hasStrings.html
+  Supported <span class="hasFeature">✓</span>
+  Token "
+  Example
+ row
+  Feature Case Insensitive Identifiers
+  FeatureLink ../features/hasCaseInsensitiveIdentifiers.html
+  Supported <span class="hasFeature">✓</span>
+  Token 
+  Example
+ row
+  Feature MultiLine Comments
+  FeatureLink ../features/hasMultiLineComments.html
+  Supported <span class="hasFeature">✓</span>
+  Token /* */
+  Example
+   /* A comment
+   */
+ row
+  Feature Comments
+  FeatureLink ../features/hasComments.html
+  Supported <span class="hasFeature">✓</span>
+  Token 
+  Example
+   -- A comment
+ row
+  Feature Line Comments
+  FeatureLink ../features/hasLineComments.html
+  Supported <span class="hasFeature">✓</span>
+  Token --
+  Example
+   -- A comment
+ row
+  Feature Semantic Indentation
+  FeatureLink ../features/hasSemanticIndentation.html
+  Supported <span class="doesNotHaveFeature">X</span>
+  Token 
+  Example
+
+## Books about MySQL on goodreads
+pipeTable
+ title|titleLink|author|year|reviews|ratings|rating
+ MySQL Language Reference|https://www.goodreads.com/search?q=MySQL Language Reference MySQL|MySQL|2004|0|7|3.71
+ PHP and MySQL Web Development (Developer's Library)|https://www.goodreads.com/search?q=PHP and MySQL Web Development (Developer's Library) Luke Welling|Luke Welling|2003|54|854|3.95
+ PHP & MySQL For Dummies|https://www.goodreads.com/search?q=PHP & MySQL For Dummies Janet Valade|Janet Valade|2002|11|186|3.53
+ MySQL Stored Procedure Programming: Building High-Performance Web Applications in MySQL|https://www.goodreads.com/search?q=MySQL Stored Procedure Programming: Building High-Performance Web Applications in MySQL Guy Harrison|Guy Harrison|2006|3|48|3.67
+ MySQL Administrator's Guide and Language Reference|https://www.goodreads.com/search?q=MySQL Administrator's Guide and Language Reference MySQL AB|MySQL AB|2006|2|19|3.63
+
+## Books about MySQL from ISBNdb
+pipeTable
+ title|titleLink|authors|year|publisher
+ Building Bioinformatics Solutions: with Perl, R and MySQL|https://isbndb.com/book/9780199230235|Bessant, Conrad and Shadforth, Ian and Oakley, Darren|2009|Oxford University Press
+ SQL for MySQL Developers: A Comprehensive Tutorial and Reference|https://isbndb.com/book/9780131497351|van der Lans, Rick|2007|Addison-Wesley Professional
+ MySQL (4th Edition)|https://isbndb.com/book/9780672329388|DuBois, Paul|2008|Addison-Wesley Professional
+ The Joy of PHP: A Beginner's Guide to Programming Interactive Web Applications with PHP and mySQL|https://isbndb.com/book/9781494267353|Forbes, Alan|2012|CreateSpace Independent Publishing Platform
+ PHP 5 / MySQL Programming for the Absolute Beginner|https://isbndb.com/book/9781592004942|Harris, Andy|2004|Cengage Learning PTR
+ Learn PHP 7: Object Oriented Modular Programming using HTML5, CSS3, JavaScript, XML, JSON, and MySQL|https://isbndb.com/book/9781484217290|Prettyman, Steve|2015|Apress
+ MySQL and mSQL|https://isbndb.com/book/9781565924345|King, Tim and Reese, George and Yarger, Randy|1999|O'Reilly Media
+ Sams Teach Yourself PHP, MySQL and Apache All in One|https://isbndb.com/book/9780672329760|Meloni, Julie C.|2008|Sams
+ PHP, MySQL & JavaScript All in One, Sams Teach Yourself|https://isbndb.com/book/9780672337703|Meloni, Julie|2017|Sams Publishing
+ Dynamic Web Application Development Using PHP and MySQL|https://isbndb.com/book/9781844807536|Stobart, Simon and Parsons, David|2008|Cengage Learning EMEA
+ MySQL and Java Developer's Guide|https://isbndb.com/book/9780471269236|Mark Matthews and Jim Cole and Joseph D. Gradecki|2003|Wiley
+ MySQL Database Usage & Administration|https://isbndb.com/book/9780071605496|Vaswani, Vikram|2009|McGraw-Hill Education
+ MySQL Database Design and Tuning|https://isbndb.com/book/9780672327650|Schneider, Robert D|2005|MySQL Press
+ MySQL in a Nutshell (In a Nutshell (O'Reilly))|https://isbndb.com/book/9780596007898|Dyer, Russell J. T.|2005|O'Reilly Media
+ Learning PHP, MySQL & JavaScript|https://isbndb.com/book/9781491979099|Robin Nixon|20180509|O'Reilly Media, Inc.
+ PHP and MySQL Everyday Apps For Dummies|https://isbndb.com/book/9780764575877|Valade, Janet|2005|For Dummies
+ Learning PHP and MySQL|https://isbndb.com/book/9780596101107|Michele E. Davis and Jon A. Phillips|2006|O'Reilly Media
+ PHP and MySQL Manual: Simple, yet Powerful Web Programming (Springer Professional Computing)|https://isbndb.com/book/9781447110552|Stobart, Simon and Vassileiou, Mike|2012|Springer
+ Create Dynamic Web Pages Using PHP and MySQL|https://isbndb.com/book/9780201734027|Tansley, David|2001|Addison-Wesley
+ Learning Php, Mysql & Javascript, 5th Edition|https://isbndb.com/book/9781491979075|Robin Nixon|2018|
+ PHP MySQL Website Programming: Problem - Design - Solution|https://isbndb.com/book/9781861008275|Chris Lea and Mike Buzzard and Cinis, Jessey and Thomas, Dilip|2003|Wrox Press
+ MySQL and JSON: A Practical Programming Guide|https://isbndb.com/book/9781260135459|David Stokes|20180608|McGraw-Hill Professional
+ MySQL 5.1 Plugin Development|https://isbndb.com/book/9781849510608|Sergei Golubchik and Andrew Hutchings|2010|Packt Publishing
+ PHP and MySQL Web Development (Developer's Library)|https://isbndb.com/book/9780133038637|Luke, Welling and Thomson Laura|2016|Addison-Wesley Professional
+ PHP and MySQL Recipes: A Problem-Solution Approach|https://isbndb.com/book/9781484206058|Kromann, Frank M.|2016|Apress
+ LAMP Programming, for Professionals - Covers MySQL 5.4 & PHP 6 (Book/CD-ROM/CentOS 5.4 DVD) by Sharanam Shah, Vaishali Shah (2010) Hardcover|https://isbndb.com/book/9788184048438|Sharanam Shah and Vaishali Shah|2010|Shroff Publishers and Distributors Pvt. Ltd.
+ MYSQL Programming Professional Made Easy|https://isbndb.com/book/9781329502178|Key, Sam|2015|Lulu.com
+ Practical PHP and MySQL Website Databases: A Simplified Approach (Expert's Voice in Web Development)|https://isbndb.com/book/9781430260776|West, Adrian W.|2014|Apress
+ Learning PHP, MySQL & JavaScript: A Step-by-Step Guide to Creating Dynamic Websites|https://isbndb.com/book/9781492093824|Nixon, Robin|2021|O'Reilly Media
+ PHP and MySQL for Dynamic Web Sites: Visual QuickPro Guide|https://isbndb.com/book/9780134301914|Ullman, Larry|2017|Peachpit Press
+ PHP and MySQL for Dynamic Web Sites: Visual QuickPro Guide|https://isbndb.com/book/9780134301846|Ullman, Larry|2017|Peachpit Press
+ MySQL Stored Procedure Programming: Building High-Performance Web Applications in MySQL|https://isbndb.com/book/9780596100896|Harrison, Guy and Feuerstein, Steven|2006|O'Reilly Media
+ MySQL (Developer's Library)|https://isbndb.com/book/9780133038538|DuBois, Paul|2013|Addison-Wesley Professional
+ Head First PHP & MySQL|https://isbndb.com/book/9780596800802|Morrison, Michael and Beighley, Lynn|2011|O'Reilly Media
+ MySQL & JSON A Practical Programming Guide: Second Edition|https://isbndb.com/book/9780578783246|Stokes, David|2020|Bowker
+ PHP, MySQL & JavaScript All in One, Sams Teach Yourself|https://isbndb.com/book/9780134439587|Meloni Julie C.|2017|Sams Publishing
+ PHP and MySQL Web Development (4th Edition)|https://isbndb.com/book/9780672329166|Welling, Luke and Thomson, Laura|2008|Addison-Wesley Professional
+ PHP and MySQL for Dynamic Web Sites, Fourth Edition: Visual QuickPro Guide|https://isbndb.com/book/9780132767583|Ullman, Larry|2011|Peachpit Press
+ The Joy of PHP: A Beginner's Guide to Programming Interactive Web Applications with PHP and mySQL|https://isbndb.com/book/9781522792147|Forbes, Alan|2015|CreateSpace Independent Publishing Platform
+ MySQL (Developer's Library)|https://isbndb.com/book/9780321833877|Dubois, Paul|2013|Addison-Wesley Professional
+ PHP and MySQL for Dynamic Web Sites: Visual QuickPro Guide|https://isbndb.com/book/9780321784070|Ullman, Larry|2014|Peachpit Press
+ MySQL 5.0 Certification Study Guide|https://isbndb.com/book/9780672328121|DuBois, Paul and Hinz, Stefan and Pedersen, Carsten|2005|MySQL Press
+ MySQL Cookbook: Solutions for Database Developers and Administrators|https://isbndb.com/book/9781449374020|DuBois, Paul|2014|O'Reilly Media
+ MySQL Connector/Python Revealed: SQL and NoSQL Data Storage Using MySQL for Python Programmers|https://isbndb.com/book/9781484236949|Krogh, Jesper Wisborg|2018|Apress
+ PHP Tutorials: Programming with PHP and MySQL: Learn PHP 7 / 8 with MySQL databases for web Programming|https://isbndb.com/book/9780992869755|Gibbs, Paul|2020-12-02T00:00:01Z|Paul Gibbs
+ MySQL for Python|https://isbndb.com/book/9781849510189|Lukaszewski, Albert|2010|Packt Publishing
+ Introducing InnoDB Cluster: Learning the MySQL High Availability Stack|https://isbndb.com/book/9781484238851|Bell, Charles|2018|Apress
+ MySQL and JSON: A Practical Programming Guide|https://isbndb.com/book/9781260135442|Stokes, David|2018|McGraw-Hill Education
+ PHP Programming for Beginners: Programming Concepts. How to use PHP with MySQL and Oracle databases (MySqli, PDO)|https://isbndb.com/book/9781548980078|Skudaev, Sergey|2018-05-21T00:00:01Z|CreateSpace Independent Publishing Platform
+ MySQL in a Nutshell: A Desktop Quick Reference (In a Nutshell (O'Reilly))|https://isbndb.com/book/9780596514334|Dyer, Russell J. T.|2008|O'Reilly Media
+ Managing and Using MySQL (2nd Edition)|https://isbndb.com/book/9780596002114|King, Tim and Reese, George and Yarger, Randy and Williams, Hugh E. and Yarger, Randy Jay|2002|O'Reilly Media
+ Building REST APIs with Flask: Create Python Web Services with MySQL|https://isbndb.com/book/9781484250228|Relan, Kunal|2019|Apress
+ Pro MySQL NDB Cluster|https://isbndb.com/book/9781484229828|Krogh, Jesper Wisborg and Okuno, Mikiya|2017|Apress
+ PHP and MySQL Web Development: A Beginner’s Guide (Beginner's Guide)|https://isbndb.com/book/9780071837316|Matthews, Marty|2015|McGraw-Hill Education
+ Web Programming with HTML, CSS, Bootstrap, JavaScript, jQuery, PHP, and MySQL|https://isbndb.com/book/9781542604758|Sanchez, Larry|2017-02-07T00:00:01Z|CreateSpace Independent Publishing Platform
+ Practical PHP 7, MySQL 8, and MariaDB Website Databases: A Simplified Approach to Developing Database-Driven Websites|https://isbndb.com/book/9781484238431|West, Adrian W. and Prettyman, Steve|2018|Apress
+ PHP & MySQL Web Development All-in-One Desk Reference For Dummies|https://isbndb.com/book/9780470167779|Valade, Janet|2008|John Wiley &Sons
+ Just Enough Web Programming with XHTML, PHP, and MySQL|https://isbndb.com/book/9781598634815|Lecky-Thompson, Guy W.|2008|Cengage Learning PTR
+ Introducing MySQL Shell: Administration Made Easy with Python|https://isbndb.com/book/9781484250839|Bell, Charles|2019|Apress
+ PHP and MySQL 24-Hour Trainer|https://isbndb.com/book/9781118066881|Tarr, Andrea|2011|Wrox
+ PHP and MySQL by Example|https://isbndb.com/book/9780138006020|Quigley, Ellie and Gargenta, Marko|2006|Pearson
+ Effortless E-Commerce with PHP and MySQL (Voices That Matter)|https://isbndb.com/book/9780321678829|Ullman, Larry|2010|New Riders
+ Web Programming with HTML, CSS, Bootstrap, JavaScript, jQuery, PHP, and MySQL Second Edition|https://isbndb.com/book/9781089565772|Sanchez, Larry|2019-08-10T00:00:01Z|Independently published
+ MySQL Database Design and Tuning|https://isbndb.com/book/9780672332692|Schneider, Robert D|2005|MySQL Press
+ Expert PHP and MySQL|https://isbndb.com/book/9780470563120|Curioso, Andrew and Bradford, Ronald and Galbraith, Patrick|2010|Wrox
+ Creating Data-Driven Web Sites: An Introduction to HTML, CSS, PHP, and MySQL|https://isbndb.com/book/9781946646057|Terrell, Bob|2019|Momentum Press
+ PHP Programming with MySQL|https://isbndb.com/book/9780619216870|Gosselin, Don|2005|Course Technology
+ PHP and MySQL Phrasebook (Developer's Library)|https://isbndb.com/book/9780321834638|Wenz, Christian Wenz|2012|Addison-Wesley Professional
+ Developing a Java Web Application in a Day: Step by step explanations with Eclipse, Tomcat, MySQL - A complete Java Project with Source Code (Java Web Programming) (Volume 2)|https://isbndb.com/book/9781544274386|Manelli, Luciano|2017|CreateSpace Independent Publishing Platform
+ Learn PHP 7: Object Oriented Modular Programming using HTML5, CSS3, JavaScript, XML, JSON, and MySQL|https://isbndb.com/book/9781484217306|Prettyman, Steve|2015|Apress
+ PHP and MySQL Web Development|https://isbndb.com/book/9780672317842|Luke Welling and Laura Thomson|2001|Sams
+ Murach's PHP and MySQL (4th Edition)|https://isbndb.com/book/9781943873005|Joel Murach and Ray Harris|2022|Mike Murach & Associates
+ MySQL and JSP Web Applications: Data-Driven Programming Using Tomcat and MySQL|https://isbndb.com/book/9780672323096|Turner, James|2002|Sams Publishing
+ Beginning PHP 6, Apache, MySQL 6 Web Development|https://isbndb.com/book/9780470391143|Boronczyk, Timothy and Naramore, Elizabeth and Gerner, Jason and Le Scouarnec, Yann and Stolz, Jeremy|2009|Wrox
+ PHP and MySQL Phrasebook (Developer's Library)|https://isbndb.com/book/9780133040333|Wenz, Christian|2012|Addison-Wesley Professional
+ Build Your Own Database Driven Website Using PHP and MySQL: Learning PHP & MySQL Has Never Been So Easy!|https://isbndb.com/book/9780975240212|Yank, Kevin|2004|SitePoint
+ PHP Programming and MySQL For Beginners: A Simple Start To PHP & MySQL Written By A Software Engineer (PHP Programming, MySQL, Computer Programming, Software Engineering) (Volume 1)|https://isbndb.com/book/9781503216051|Sanderson, Scott|2014-11-14T00:00:01Z|CreateSpace Independent Publishing Platform
+ MySQL|https://isbndb.com/book/9780321127310|Ullman, Larry|2002|Peachpit Press
+ How to Do Everything with PHP and MySQL|https://isbndb.com/book/9780071466547|Vaswani, Vikram|2005|McGraw-Hill Education
+ PHP Beginners Course: Understand basics of PHP / MySQL programming in 5 days|https://isbndb.com/book/9781542609876|Thenmayer, Klaus|2017|CreateSpace Independent Publishing Platform
+ PHP MySQL Website Programming: Problem - Design - Solution|https://isbndb.com/book/9781590591505|Chris Lea and Mike Buzzard and Dilip Thomas and Jessey White-Cinis|2003|Apress
+ Web Programming: Techniques for Integrating Python, Linux, Apache, and Mysql|https://isbndb.com/book/9780130410658|Thiruvathukal, George K., Ph.D. and Christopher, Thomas W. and Shafaee, John P.|2001|Prentice Hall
+ Source Code: Path to Programming MySQL|https://isbndb.com/book/9781090807779|Society, Source Code|2019|Independently published
+ How to Do Everything with PHP and MySQL|https://isbndb.com/book/9780072257953|Vaswani, Vikram|2005|McGraw-Hill Education
+ Professional ADO.NET 2: Programming with SQL Server 2005, Oracle, and MySQL|https://isbndb.com/book/9780764584374|McClure, Wallace B. and Beamer, Gregory A. and Croft IV, John J. and Little, J. Ambrose and Ryan, Bill and Winstanley, Phil and Yack, David and Zongker, Jeremy|2005|Wrox
+ Sams Teach Yourself PHP, MySQL and Apache in 24 Hours|https://isbndb.com/book/9780672324895|Meloni, Julie C.|2002|Sams
+ Datenbanken und SQL: Eine praxisorientierte Einführung mit Anwendungen in Oracle, SQL Server und MySQL (Informatik & Praxis 17) (German Edition)|https://isbndb.com/book/9783834821850|Schicker, Edwin|2014|Springer Vieweg
+ Mysql: The definitive guide to using, programming, and administering MySQL 4.1 and 5.0|https://isbndb.com/book/9780672326738|Dubois, Paul|2005|Sams
+ PHP: The Ultimate Step by Step guide for beginners on how to learn PHP and MYSQL programming in just 6 hours|https://isbndb.com/book/9781516927494|Dawson, Ted|2015|CreateSpace Independent Publishing Platform
+ Learn PyQt By Example: A Quick Start Guide to MySQL and SQLite Driven Programming|https://isbndb.com/book/9781711134468|Siahaan, Vivian and Sianipar, Rismon Hasiholan|2019-11-24T00:00:01Z|Independently published
+ MySQL Language Reference: The Official Guide to the MySQL Language and APIs|https://isbndb.com/book/9780672326332|MySQL AB|2004|Mysql Pr
+ PHP and MySQL Manual: Simple, yet Powerful Web Programming (Springer Professional Computing)|https://isbndb.com/book/9781852337476|Stobart, Simon and Vassileiou, Mike|2003|Springer
+ mySQL Database Programming Interview Questions, Answers, and Explanations: mySQL Database Certification Review Guide|https://isbndb.com/book/9781933804590|Sanchez-Clark, Terry|2007|Equity Press
+ Python Programming Professional Made Easy & MYSQL Programming Professional Made Easy (Volume 48)|https://isbndb.com/book/9781511966306|Key, Sam|2015-04-29T00:00:01Z|CreateSpace Independent Publishing Platform
+ MySQL kurz & gut|https://isbndb.com/book/9783897215252|||O´Reilly Verlag
+ Learn SQL: the beginner’s guide that explain to you step by step the computer programming SQL language and how to program your first database using MySQL + practical exercises|https://isbndb.com/book/9781705901298|Harris, Adam|2019-11-05T00:00:01Z|Independently published
+ Desarrollo Web Con Php Y Mysql / PHP and MYSQL Web Development (Programacion / Programming) (Spanish Edition)|https://isbndb.com/book/9788441515697|Welling, Luke|2003-06-30T00:00:01Z|Anaya Multimedia-Anaya Interactiva
+ C Programming Professional Made Easy & MYSQL Programming Professional Made Easy|https://isbndb.com/book/9781511730259|Key, Sam|2015|CreateSpace Independent Publishing Platform
+ Core MySQL|https://isbndb.com/book/9780130661906|Atkinson, Leon|2001|Prentice Hall Ptr
+ Php And Mysql For Kids|https://isbndb.com/book/9781593275655|Johann-Christian Hanke|2015|No Starch Press, Incorporated
+ Mysql (Programacion / Programming) (Spanish Edition)|https://isbndb.com/book/9788441518988|Dubois, Paul|2005|Anaya Multimedia-Anaya Interactiva
+ Programacion con PHP 6 y MySQL/ Programming with PHP 6 and MySQL (Spanish Edition)|https://isbndb.com/book/9788441525528|Harris, Andy|2009|ANAYA MULTIMEDIA
+ Php And Mysql 24-hour Trainer|https://isbndb.com/book/9781118172933|Andrea Tarr|2011|Wiley & Sons, Incorporated, John
+ Web Database Applications with PHP & MySQL|https://isbndb.com/book/9780596100032|Shillingford, Nadine|2006|O'Reilly Media
+ PHP y MySQL (Anaya Multimedia/Wrox) (Spanish Edition)|https://isbndb.com/book/9788441525160|Boronczyk, Timothy and Psinas, Martin E.|2009|ANAYA MULTIMEDIA
+ Learn Php And Mysql With Ajax In A Weekend : Practical Guide For Quick Learn On Php Programming And Mysql Database Management|https://isbndb.com/book/9781545378885|Blerton Abazi|2017|Createspace Independent Publishing Platform
+ National Computer Rank Examination Tutorial - two MySQL database programming(Chinese Edition)|https://isbndb.com/book/9787115370501|QUAN GUO JI SUAN JI DENG JI KAO SHI JIAO CAI BIAN XIE...|2014|People Post Press
+ Websites on Tourism: Internet programming with Java, C#, VB.NET and PHP using Microsoft SQL Server and MySQL databases|https://isbndb.com/book/9783846515532|Voicu, Mirela Catrinel|2011|LAP LAMBERT Academic Publishing
+ MySQL|https://isbndb.com/book/9780132704649|Paul DuBois|2008|Pearson Technology Group
+ MySQL : kurz & gut|https://isbndb.com/book/9783897215252|||O'reilly Verlag Gmbh
+ Murach's MySQL|https://isbndb.com/book/9781890774882|Joel Murach|02/2015|Mike Murach & Associates
+ Murach's MySQL|https://isbndb.com/book/9781943872466|Joel Murach|03/2019|Mike Murach & Associates
+ MySQL Cookbook|https://isbndb.com/book/9781449374150|Paul DuBois|20140728|O'Reilly Media, Inc.
+ MySQL Cookbook|https://isbndb.com/book/9781449374143|Paul DuBois|20140728|O'Reilly Media, Inc.
+ Learning MySQL|https://isbndb.com/book/9780596529468|Saied M.M. Tahaghoghi; Hugh E. Williams|20061114|O'Reilly Media, Inc.
+ Learning MySQL|https://isbndb.com/book/9781449303969|Saied M.M. Tahaghoghi; Hugh E. Williams|20061114|O'Reilly Media, Inc.
+ PHP and MySQL (Video Training)|https://isbndb.com/book/9780137155750|Marc Wandschneider|2008|Prentice Hall
+ Professional Mysql Programming|https://isbndb.com/book/9781861004284|Wrox Author Team|2003|Apress
+ High Performance MySQL|https://isbndb.com/book/9781492080466|Silvia  Botros; Jeremy Tinley|20211018|O'Reilly Media, Inc.
+ Jump Start MySQL|https://isbndb.com/book/9781457192821|Timothy Boronczyk|20150413|O'Reilly Media, Inc.
+ MySQL for Python|https://isbndb.com/book/9781849510196|Albert Lukaszewski|20100921|Packt Publishing
+ Efficient MySQL Performance|https://isbndb.com/book/9781098105044|Daniel  Nichter|20211130|O'Reilly Media, Inc.
+ Jump Start MySQL|https://isbndb.com/book/9781457192838|Timothy Boronczyk|20150413|O'Reilly Media, Inc.
+ The MySQL Workshop|https://isbndb.com/book/9781839215476|Thomas Pettit; Scott Cosentino|29-04-2022|Packt Publishing
+ Managing & Using MySQL|https://isbndb.com/book/9781449316785|Tim King; George Reese; Randy Yarger; Hugh E. Williams|20020423|O'Reilly Media, Inc.
+ Managing & Using MySQL|https://isbndb.com/book/9780596159979|Tim King|20020423|O'Reilly Media, Inc.
+ Php 5 & Mysql Programming|https://isbndb.com/book/9780072228830|Vikram Vaswani|2004|Osborne/mcgraw-hill
+ Learning Php, Mysql & Javascript|https://isbndb.com/book/9781491918647|Robin Nixon|2014|O'reilly Media, Inc.
+ MySQL Database Usage & Administration|https://isbndb.com/book/9780071605502|Vikram Vaswani|20091201|McGraw-Hill Professional
+ Learning Php, Mysql & Javascript|https://isbndb.com/book/9781492093794|Robin Nixon|2021|O'reilly Media, Inc.
+ Expert Php And Mysql|https://isbndb.com/book/9780470643075|Andrew Curioso|2010|John Wiley & Sons, Ltd.
+ Expert Php And Mysql|https://isbndb.com/book/9780470881644|Andrew Curioso|2010|Wiley & Sons, Incorporated, John
+ Learning PHP and MySQL|https://isbndb.com/book/9780596553500|Michele E. Davis; Jon A. Phillips|20060602|O'Reilly Media, Inc.
+ Learning Php, Mysql & Javascript|https://isbndb.com/book/9788184047943|Robin Nixon||
+ Murach's PHP and MySQL|https://isbndb.com/book/9781943872244|Joel Murach, Ray Harris|10/2017|Mike Murach & Associates
+ MySQL in a Nutshell|https://isbndb.com/book/9781449379063|Russell J.T. Dyer|20050503|O'Reilly Media, Inc.
+ MySQL Stored Procedure Programming|https://isbndb.com/book/9780596519162|Guy Harrison|20060328|O'Reilly Media, Inc.
+ PHP and MySQL Manual|https://isbndb.com/book/9780857294043|Simon Stobart; Mike Vassileiou|20121206|Springer Nature
+ MySQL in a Nutshell|https://isbndb.com/book/9780596523237|Russell J.T. Dyer|20080415|O'Reilly Media, Inc.
+ MySQL in a Nutshell|https://isbndb.com/book/9781449379377|Russell J.T. Dyer|20080415|O'Reilly Media, Inc.
+ Murach's PHP and MySQL|https://isbndb.com/book/9781890774745|Joel Murach, Ray Harris|11/2010|Mike Murach & Associates
+ Murach's PHP and MySQL|https://isbndb.com/book/9781890774929|Joel Murach, Ray Harris|12/2014|Mike Murach & Associates
+ Learning PHP, MySQL & JavaScript|https://isbndb.com/book/9781492093770|Robin Nixon|20210722|O'Reilly Media, Inc.
+ Beginning PHP and MySQL|https://isbndb.com/book/9781430231158|W Jason Gilmore|20101228|Springer Nature
+ MySQL in a Nutshell|https://isbndb.com/book/9780596518288|Russell J.T. Dyer|20050503|O'Reilly Media, Inc.
+ Mastering MySQL for Web|https://isbndb.com/book/9781000537758|Mahauganee D. Shaw Bonds|20220303|Taylor & Francis
+ Learning PHP and MySQL|https://isbndb.com/book/9780596519179|Michele E. Davis|20060602|O'Reilly Media, Inc.
+ MySQL Stored Procedure Programming|https://isbndb.com/book/9781449379131|Guy Harrison; Steven Feuerstein|20060328|O'Reilly Media, Inc.
+ SQL for MySQL Developers|https://isbndb.com/book/9780321509673|Rick F. van der Lans|2007|Pearson
+ Php Mysql Web Programming Interview Questions, Answers, And Explanations: Php Mysql Faq|https://isbndb.com/book/9781933804477|Jim Stewart and Itcookbook|2010|Equity Press
+ Murach's PHP and MySQL|https://isbndb.com/book/9781943873012|Joel Murach, Ray Harris|06/2022|Mike Murach & Associates
+ Head First PHP & MySQL|https://isbndb.com/book/9781449331559|Lynn Beighley; Michael Morrison|20081222|O'Reilly Media, Inc.
+ PHP & MySQL in easy steps, 2nd edition|https://isbndb.com/book/9781840788310|Mike McGrath|2018-06-06|In Easy Steps Limited
+ MySQL 8 Query Performance Tuning|https://isbndb.com/book/9781484255841|Jesper Wisborg Krogh|20200316|Springer Nature
+ PHP / MySQL for beginners. Harris E. / PHP/MySQL dlya nachinayushchikh. Kharris E.|https://isbndb.com/book/9785957900467|Kharris E.||Kudits-obraz
+ MySQL and Java Developer's Guide|https://isbndb.com/book/9780471462224|Mark Matthews and Jim Cole and Joseph D. Gradecki|2003-03-14|Wiley
+ Studyguide For Php Programming With Mysql|https://isbndb.com/book/9781478495611|Cram101 Textbook Reviews|2013|Cram101
+ Introducing the MySQL 8 Document Store|https://isbndb.com/book/9781484227251|Charles Bell|20180620|Springer Nature
+ PHP and MySQL 24-Hour Trainer|https://isbndb.com/book/9781118172919|Andrea Tarr|20111013|Wiley Professional Development (P&T)
+ Beginning PHP and MySQL E-Commerce|https://isbndb.com/book/9781430202912|Cristian Darie; Emilian Balanescu|20080328|Springer Nature
+ PHP & MySQL Practice It Learn It|https://isbndb.com/book/9781456614423|Jitendra Patel|20130310|eBookit.com
+ Php Tutorials: Programming With Php And Mysql: Learn Php 7 With Mysql Databases For Web Programming|https://isbndb.com/book/9780992869748|Mr Paul Gibbs|2019-12-02|Paul Gibbs
+ MySQL 323 Success Secrets - 323 Most Asked Questions On MySQL - What You Need To Know|https://isbndb.com/book/9781488536373|Karen Rich|20140220|Emereo
+
+## Publications about MySQL from Semantic Scholar
+pipeTable
+ title|titleLink|authors|year|citations|influentialCitations
+ The Development of Web Based Expert System for Diagnosing Children Diseases Using PHP and MySQL|https://www.semanticscholar.org/paper/e4b687662191d88ae1249632f281317aca509e55|Hustina waty and Randy Aprianggi|2014|12|0
+ Aplikasi Diagnosis Gangguan Kecemasan Menggunakan Metode Forward Chaining Berbasis Web dengan PHP dan MYSQL|https://www.semanticscholar.org/paper/926bb33994dc8ced2416bdf997a19c0497e32220|Raka Yusuf and Harni Kusniyati and Yurike Nuramelia|2016|7|0
+ System Informasi Berbasis Web Sma Al- Mukhtariyah Mamben Lauk Berbasis Php Dan Mysql Dengan Framework Codeigniter|https://www.semanticscholar.org/paper/3293452be118ca6720c4a6ea1bfd2bf7198b713b|S. Suhartini and Muhamad Sadali and Yupi Kuspandi Putra|2020|5|0
+ PHP and MySQL|https://www.semanticscholar.org/paper/b101d45a74a4da315d1d7cf5811bdfea7d01cc11|B. Travis|2011|4|0
+ Determination of Bahasa Melayu Word List From Friday Sermon Transcripts Using PHP and MySQL|https://www.semanticscholar.org/paper/cfa538107946ab4e1f77ae41db99d8af9a0a3471|M. Harun and Muhammad ‘Aasim Asyafi’ie bin Ahmad and S. Hamid and Fareha Abdul Rahman and P. I. Khalid|2013|2|0
+ System Pemrosesan Transaksi Pada Toko Bangunan Berbasis Web Dengan PHP dan MySQL|https://www.semanticscholar.org/paper/dbfb0559140c92a193e4723fc8ca7242531286b9|Rizky Gelar Maliq and R. Isnanto and Ike Pertiwi Windasari|2014|2|0
+ SYSTEM INFORMASI MANAJEMEN SURAT BERBASIS PHP DAN MYSQL DI INSTITUT SENI INDONESIA PADANGPANJANG|https://www.semanticscholar.org/paper/71d4444fc6c57e59c4e1137b97d0b3da121e028a|Irwan Yusti|2016|2|1
+ System Pendaftaran Hotspot Online Berbasis Web Menggunakan Mikrotik API, PHP, MySql Pada SMK Plus Nurul Hakim Kediri|https://www.semanticscholar.org/paper/8a53d05a3b7c9a1cc46115d08bbd0179f0099166|Lalu Yusran Said and Andy Hidayat Jatmika and I Wayan Agus Arimbawa|2019|2|0
+ Design and implementation of massive MYSQL data intelligent export system to excel by using Apache –POI libraries|https://www.semanticscholar.org/paper/3084537903d693e891010c67b082ff28c050fbde|K. Bawankule and N. Raut|2014|1|0
+ Perancangan System Informasi Pengolahan Data Penjualan Secara Kredit dan Controlling Stock Dengan Menerapkan Metode Backorder Pada Toko Master Menggunakan Bahasa Pemrograman Java dan Database MySql|https://www.semanticscholar.org/paper/852a691443d4f13cf474c7327f78677629d3a738|J. Prayoga|2019|1|0
+ Perancangan System Informasi Penjualan pada Toko Stock Point Lily berbasis PHP MySQL|https://www.semanticscholar.org/paper/460f5e0cbb246f392dae830bbf4e2d170b808e38|Nery Nestary|2020|1|1
+ PERANCANGAN APLIKASI PENENTUAN HASIL KINERJA KARYAWAN AVIATION SECURITY BERBASIS DESKTOP DENGAN MENGGUNAKAN VISUAL STUDIO DAN MYSQL|https://www.semanticscholar.org/paper/5b9509a6e6f0400025ef4b305afd50f0aee29d85|A. Gani|2020|1|0
+ Benchmarking the Operation Times of NoSQL and MySQL Databases for Python Clients|https://www.semanticscholar.org/paper/7bca23368078950e94b40d1e397e07870c42901c|M. Reichardt and Michael Gundall and H. Schotten|2021|1|0
+ Developing Plugin e-DDC as an Additional Application for Senayan Library Management System with PHP Language Programming and MySQL Database|https://www.semanticscholar.org/paper/e9f2994a961c188db422c61206970134412286fa|Mohamad Rotmianto and E. Wahyudi|2016|1|0
+ Indonesian Language Portfolio in Elementary Schools Based on C++, C# and MySQL Server|https://www.semanticscholar.org/paper/bbc1d72cc1724d8fb228c0f9aa2ca0e6f976e23a|Ferril Irham Muzaki|2020|1|0
+ Implementation of the Electre (Elimination Et Choix Traduisan La Realite) Method in a Healthy Food Menu Decision Support System for Toddlers in the Sasak Area Health Center Pasisie Using the Php And Database Mysql Programming Language|https://www.semanticscholar.org/paper/3144f67d9059167b99ac70b9c5fd369e38955e4b|Mardison Mardison and Syafrika Deni Rizki and L. Rani and Agung Ramadhanu and R. Witri|2020|1|0
+
+keyboardNav ruby.html r.html
+
+import ../footer.scroll

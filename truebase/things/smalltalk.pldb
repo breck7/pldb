@@ -35,7 +35,7 @@ wikipedia https://en.wikipedia.org/wiki/Smalltalk
       | mul |
       mul := i1 * i2.
       ^mul * 4
- related pharo squeak visualworks lisp simula euler imp planner logo applescript dart dylan erlang etoys falcon go groovy io ioke java lasso lisaac newtonscript object-rexx objective-c php perl-6 python ruby scala scratch self sql flavors clos prolog ascii javascript visual-smalltalk-enterprise smalltalk-mt jvm strongtalk
+ related pharo squeak visualworks lisp simula euler imp planner logo applescript dart dylan erlang etoys falcon go groovy io ioke java lasso lisaac newtonscript object-rexx objective-c php perl-6 python ruby scala scratch self sql flavors close prolog ascii javascript visual-smalltalk-enterprise smalltalk-mt jvm strongtalk
  summary Smalltalk is an object-oriented, dynamically typed, reflective programming language. Smalltalk was created as the language to underpin the "new world" of computing exemplified by "human–computer symbiosis." It was designed and created in part for educational use, more so for constructionist learning, at the Learning Research Group (LRG) of Xerox PARC by Alan Kay, Dan Ingalls, Adele Goldberg, Ted Kaehler, Scott Wallace, and others during the 1970s. The language was first generally released as Smalltalk-80. Smalltalk-like languages are in continuing active development and have gathered loyal communities of users around them. ANSI Smalltalk was ratified in 1998 and represents the standard version of Smalltalk. Smalltalk took second place for "most loved programming language" in the Stack Overflow Developer Survey in 2017.
  pageId 28319
  dailyPageViews 826
@@ -148,9 +148,9 @@ semanticScholar 16
  1983|The object oriented pre-compiler: programming Smalltalk 80 methods in C language|10.1145/948093.948095|16|0|Brad J. Cox|8c27238c4278c72801bc0166242a95f100c7d957
  1987|Object-oriented programming in Smalltalk and ADA|10.1145/38765.38826|15|0|E. Seidewitz|011b1daad5226830a6ae1be4bd0443c5e4e1fd6a
  2011|PHANtom: a modern aspect language for Pharo Smalltalk|10.1145/2166929.2166939|10|1|J. Fabry and Daniel Galdames|dda4fc4ab5d99522fb446c6fd202ba415f343ee8
- 2012|Efficient Method Lookup Customization for Smalltalk|10.1007/978-3-642-30561-0_10|6|0|J. Vraný and Jan Kurs and Claus Gittinger|7f8e57223bea959247929b01ff9c5bc81dec99a3
+ 2012|Efficient Method Lookup Customization for Smalltalk|10.1007/978-3-642-30561-0_10|6|0|J. Vraný and Jan Kurs and Clause Gittinger|7f8e57223bea959247929b01ff9c5bc81dec99a3
  2006|Scl: A Simple, Uniform and Operational Language for Component-Oriented Programming in Smalltalk|10.1007/978-3-540-71836-9_5|5|0|L. Fabresse and C. Dony and M. Huchard|ef9d9e944b0da3fa81c23eb99d9917397669822e
- 2012|On the integration of Smalltalk and Java: practical experience with STX:LIBJAVA|10.1145/2448963.2448968|4|0|Marcel Hlopko and Jan Kurs and J. Vraný and Claus Gittinger|0907378a9af8c4759c857c2974baa9f7d1375594
+ 2012|On the integration of Smalltalk and Java: practical experience with STX:LIBJAVA|10.1145/2448963.2448968|4|0|Marcel Hlopko and Jan Kurs and J. Vraný and Clause Gittinger|0907378a9af8c4759c857c2974baa9f7d1375594
  2013|On planning an evaluation of the impact of identifier names on the readability and quality of smalltalk programs|10.1109/USER.2013.6603079|3|0|Mircea Lungu and Jan Kurs|a117cfdf256c0d57a6148efcb39960914f0fe040
  1993|A visual programming environment for Smalltalk|10.1109/VL.1993.269599|3|0|I. Borne|98ac5d8473c91499be4b47d296d7c15d3f2f55b7
  2010|Programming For Pre College Education Using Squeak Smalltalk|10.18260/1-2--16161|3|1|Kathryn N. Rodhouse and Benjamin Cooper and S. Watkins|6a372109ad0086d5d32e3c4121884520cfd8fa4e

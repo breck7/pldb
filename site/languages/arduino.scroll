@@ -1,0 +1,408 @@
+import header.scroll
+
+title Arduino Programming Language
+
+title Arduino Programming Language - Programming language
+ hidden
+
+html
+ <a class="prevLang" href="kotlin.html">&lt;</a>
+ <a class="nextLang" href="powershell.html">&gt;</a>
+
+viewSourceUrl https://github.com/breck7/pldb/blob/main/database/things/arduino.pldb
+
+startColumns 4
+
+html <div class="quickLinks"><a href="https://www.arduino.cc"><svg role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12.7166 3.79541C12.2835 3.49716 11.7165 3.49716 11.2834 3.79541L4.14336 8.7121C3.81027 8.94146 3.60747 9.31108 3.59247 9.70797C3.54064 11.0799 3.4857 13.4824 3.63658 15.1877C3.7504 16.4742 4.05336 18.1747 4.29944 19.4256C4.41371 20.0066 4.91937 20.4284 5.52037 20.4284H8.84433C8.98594 20.4284 9.10074 20.3111 9.10074 20.1665V15.9754C9.10074 14.9627 9.90433 14.1417 10.8956 14.1417H13.4091C14.4004 14.1417 15.204 14.9627 15.204 15.9754V20.1665C15.204 20.3111 15.3188 20.4284 15.4604 20.4284H18.4796C19.0806 20.4284 19.5863 20.0066 19.7006 19.4256C19.9466 18.1747 20.2496 16.4742 20.3634 15.1877C20.5143 13.4824 20.4594 11.0799 20.4075 9.70797C20.3925 9.31108 20.1897 8.94146 19.8566 8.7121L12.7166 3.79541ZM10.4235 2.49217C11.3764 1.83602 12.6236 1.83602 13.5765 2.49217L20.7165 7.40886C21.4457 7.91098 21.9104 8.73651 21.9448 9.64736C21.9966 11.0178 22.0564 13.5119 21.8956 15.3292C21.7738 16.7067 21.4561 18.4786 21.2089 19.7353C20.9461 21.0711 19.7924 22.0001 18.4796 22.0001H15.4604C14.4691 22.0001 13.6655 21.1791 13.6655 20.1665V15.9754C13.6655 15.8307 13.5507 15.7134 13.4091 15.7134H10.8956C10.754 15.7134 10.6392 15.8307 10.6392 15.9754V20.1665C10.6392 21.1791 9.83561 22.0001 8.84433 22.0001H5.52037C4.20761 22.0001 3.05389 21.0711 2.79113 19.7353C2.54392 18.4786 2.22624 16.7067 2.10437 15.3292C1.94358 13.5119 2.00338 11.0178 2.05515 9.64736C2.08957 8.73652 2.55427 7.91098 3.28346 7.40886L10.4235 2.49217Z"/></svg></a> <a href="https://en.wikipedia.org/wiki/Arduino"><svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="98.05px" height="98.05px" viewBox="0 0 98.05 98.05" style="enable-background:new 0 0 98.05 98.05;" xml:space="preserve"><path d="M98.023,17.465l-19.584-0.056c-0.004,0.711-0.006,1.563-0.017,2.121c1.664,0.039,5.922,0.822,7.257,4.327L66.92,67.155 c-0.919-2.149-9.643-21.528-10.639-24.02l9.072-18.818c1.873-2.863,5.455-4.709,8.918-4.843l-0.01-1.968L55.42,17.489 c-0.045,0.499,0.001,1.548-0.068,2.069c5.315,0.144,7.215,1.334,5.941,4.508c-2.102,4.776-6.51,13.824-7.372,15.475 c-2.696-5.635-4.41-9.972-7.345-16.064c-1.266-2.823,1.529-3.922,4.485-4.004v-1.981l-21.82-0.067 c0.016,0.93-0.021,1.451-0.021,2.131c3.041,0.046,6.988,0.371,8.562,3.019c2.087,4.063,9.044,20.194,11.149,24.514 c-2.685,5.153-9.207,17.341-11.544,21.913c-3.348-7.43-15.732-36.689-19.232-44.241c-1.304-3.218,3.732-5.077,6.646-5.213 l0.019-2.148L0,17.398c0.005,0.646,0.027,1.71,0.029,2.187c4.025-0.037,9.908,6.573,11.588,10.683 c7.244,16.811,14.719,33.524,21.928,50.349c0.002,0.029,2.256,0.059,2.281,0.008c4.717-9.653,10.229-19.797,15.206-29.56 L63.588,80.64c0.005,0.004,2.082,0.016,2.093,0.007c7.962-18.196,19.892-46.118,23.794-54.933c1.588-3.767,4.245-6.064,8.543-6.194 l0.032-1.956L98.023,17.465z"/></svg></a> <a href="https://www.reddit.com/r/arduino"><svg role="img" width="32px" height="32px" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg"><path d="M 18.65625 4 C 16.558594 4 15 5.707031 15 7.65625 L 15 11.03125 C 12.242188 11.175781 9.742188 11.90625 7.71875 13.0625 C 6.945313 12.316406 5.914063 12 4.90625 12 C 3.816406 12 2.707031 12.355469 1.9375 13.21875 L 1.9375 13.25 L 1.90625 13.28125 C 1.167969 14.203125 0.867188 15.433594 1.0625 16.65625 C 1.242188 17.777344 1.898438 18.917969 3.03125 19.65625 C 3.023438 19.769531 3 19.882813 3 20 C 3 22.605469 4.574219 24.886719 6.9375 26.46875 C 9.300781 28.050781 12.488281 29 16 29 C 19.511719 29 22.699219 28.050781 25.0625 26.46875 C 27.425781 24.886719 29 22.605469 29 20 C 29 19.882813 28.976563 19.769531 28.96875 19.65625 C 30.101563 18.917969 30.757813 17.777344 30.9375 16.65625 C 31.132813 15.433594 30.832031 14.203125 30.09375 13.28125 L 30.0625 13.25 C 29.292969 12.386719 28.183594 12 27.09375 12 C 26.085938 12 25.054688 12.316406 24.28125 13.0625 C 22.257813 11.90625 19.757813 11.175781 17 11.03125 L 17 7.65625 C 17 6.675781 17.558594 6 18.65625 6 C 19.175781 6 19.820313 6.246094 20.8125 6.59375 C 21.65625 6.890625 22.75 7.21875 24.15625 7.3125 C 24.496094 8.289063 25.414063 9 26.5 9 C 27.875 9 29 7.875 29 6.5 C 29 5.125 27.875 4 26.5 4 C 25.554688 4 24.738281 4.535156 24.3125 5.3125 C 23.113281 5.242188 22.246094 4.992188 21.46875 4.71875 C 20.566406 4.402344 19.734375 4 18.65625 4 Z M 16 13 C 19.152344 13 21.964844 13.867188 23.9375 15.1875 C 25.910156 16.507813 27 18.203125 27 20 C 27 21.796875 25.910156 23.492188 23.9375 24.8125 C 21.964844 26.132813 19.152344 27 16 27 C 12.847656 27 10.035156 26.132813 8.0625 24.8125 C 6.089844 23.492188 5 21.796875 5 20 C 5 18.203125 6.089844 16.507813 8.0625 15.1875 C 10.035156 13.867188 12.847656 13 16 13 Z M 4.90625 14 C 5.285156 14 5.660156 14.09375 5.96875 14.25 C 4.882813 15.160156 4.039063 16.242188 3.53125 17.4375 C 3.277344 17.117188 3.125 16.734375 3.0625 16.34375 C 2.953125 15.671875 3.148438 14.976563 3.46875 14.5625 C 3.472656 14.554688 3.464844 14.539063 3.46875 14.53125 C 3.773438 14.210938 4.3125 14 4.90625 14 Z M 27.09375 14 C 27.6875 14 28.226563 14.210938 28.53125 14.53125 C 28.535156 14.535156 28.527344 14.558594 28.53125 14.5625 C 28.851563 14.976563 29.046875 15.671875 28.9375 16.34375 C 28.875 16.734375 28.722656 17.117188 28.46875 17.4375 C 27.960938 16.242188 27.117188 15.160156 26.03125 14.25 C 26.339844 14.09375 26.714844 14 27.09375 14 Z M 11 16 C 9.894531 16 9 16.894531 9 18 C 9 19.105469 9.894531 20 11 20 C 12.105469 20 13 19.105469 13 18 C 13 16.894531 12.105469 16 11 16 Z M 21 16 C 19.894531 16 19 16.894531 19 18 C 19 19.105469 19.894531 20 21 20 C 22.105469 20 23 19.105469 23 18 C 23 16.894531 22.105469 16 21 16 Z M 21.25 21.53125 C 20.101563 22.597656 18.171875 23.28125 16 23.28125 C 13.828125 23.28125 11.898438 22.589844 10.75 21.65625 C 11.390625 23.390625 13.445313 25 16 25 C 18.554688 25 20.609375 23.398438 21.25 21.53125 Z"/></svg></a> <a href="https://docs.arduino.cc/"><svg viewBox="0 0 500 500" xmlns="http://www.w3.org/2000/svg"><g transform="matrix(1, 0, 0, 1, 13.859316, 9.109739)"><g><g><path d="M340.732,0H55v485h375V94.518L340.732,0z M345,26.364L405.1,90H345V26.364z M415,470H70V15h260v90h85V470z"/><rect x="102.5" y="191" width="280" height="15"/><rect x="102.5" y="141" width="120" height="15"/><rect x="102.5" y="241" width="280" height="15"/><rect x="102.5" y="291" width="280" height="15"/><rect x="102.5" y="341" width="280" height="15"/><rect x="102.5" y="391" width="280" height="15"/></g></g></g></svg></a></div>
+
+* Arduino Programming Language is a <a href="../lists/languages.html?filter=pl">programming language</a> created in 2005.
+ link ../lists/languages.html?filter=2005 2005
+
+kpiTable
+ #27 <span title="TotalRank: 81 Jobs: 48 Users: 14 Facts: 19 Links: 107">on PLDB</span>
+ 18 Years Old
+ 527.4k <span title="Crude user estimate from a linear model.">Users</span>
+ 265 <span title="Books about or leveraging Arduino Programming Language">Books</span>
+ 28 <span title="Academic publications about or leveraging Arduino Programming Language">Papers</span>
+
+* Arduino is an open-source hardware and software company, project and user community that designs and manufactures single-board microcontrollers and microcontroller kits for building digital devices and interactive objects that can sense and control objects in the physical and digital world. Its products are licensed under the GNU Lesser General Public License (LGPL) or the GNU General Public License (GPL), permitting the manufacture of Arduino boards and software distribution by anyone. Arduino boards are available commercially in preassembled form or as do-it-yourself (DIY) kits. Read more on Wikipedia...
+ https://en.wikipedia.org/wiki/Arduino Read more on Wikipedia...
+
+- Arduino Programming Language website
+ https://www.arduino.cc
+- Arduino Programming Language Wikipedia page
+ https://en.wikipedia.org/wiki/Arduino
+- Arduino Programming Language docs
+ https://docs.arduino.cc/
+- Arduino Programming Language first developed in <a href="../lists/originCommunities.html#arduino">Arduino</a>
+- PLDB estimates there are currently 598 job openings for Arduino Programming Language programmers.
+- file extensions for Arduino Programming Language include ino
+- The  Google BigQuery Public Dataset GitHub snapshot shows 16k users using Arduino Programming Language in 20k repos on <a href="https://api.github.com/search/repositories?q=language:Arduino">GitHub</a>
+- There are 514,177 members in the <a href="https://www.reddit.com/r/arduino">Arduino Programming Language subreddit</a>
+- <a href="pygments.html">Pygments</a> supports <a href="https://github.com/pygments/pygments/blob/master/pygments/lexers/c_like.py">syntax highlighting</a> for Arduino Programming Language
+- Release Notes for Arduino Programming Language
+ https://www.arduino.cc/en/software/ReleaseNotes
+- Official Blog page for Arduino Programming Language
+ https://blog.arduino.cc/
+- Arduino Programming Language cheat sheet
+ https://github.com/liffiton/Arduino-Cheat-Sheet
+- Indeed.com has 598 matches for <a href="https://www.indeed.com/jobs?q=arduino developer">"arduino developer"</a>.
+- See also: (9 related languages)<a href="atmel-avr.html">Atmel AVR</a>, <a href="x86-isa.html">X86</a>, <a href="c.html">C</a>, <a href="processing.html">Processing</a>, <a href="basic-stamp.html">BASIC Stamp</a>, <a href="arm.html">ARM</a>, <a href="java.html">Java</a>, <a href="linux.html">Linux</a>, <a href="ia-32.html">IA-32</a>
+- HTML of this page generated by <a href="https://github.com/breck7/pldb/blob/main/code/LanguagePage.ts">LanguagePage.ts</a>
+- <a href="https://pldb.com/edit/arduino">Improve our Arduino Programming Language file</a>
+
+html <br>
+
+codeWithHeader Example from <a href='https://github.com/leachim6/hello-world/blob/main/a/Arduino.ino'>hello-world</a>:
+ void setup() {
+   Serial.begin(9600);
+   Serial.println(&quot;Hello World&quot;);
+ }
+ 
+ void loop() {
+ 
+ }
+
+codeWithHeader Example from <a href='https://en.wikipedia.org/wiki/Arduino'>Wikipedia</a>:
+ #define LED_PIN 13                  // Pin number attached to LED.
+ 
+ void setup() {
+     pinMode(LED_PIN, OUTPUT);       // Configure pin 13 to be a digital output.
+ }
+ 
+ void loop() {
+     digitalWrite(LED_PIN, HIGH);    // Turn on the LED.
+     delay(1000);                    // Wait 1 second (1000 milliseconds).
+     digitalWrite(LED_PIN, LOW);     // Turn off the LED.
+     delay(1000);                    // Wait 1 second.
+ }
+
+endColumns
+
+## Language <a href="../lists/features.html">features</a>
+
+treeTable
+ row
+  Feature Strings
+  FeatureLink ../features/hasStrings.html
+  Supported <span class="hasFeature">✓</span>
+  Token "
+  Example
+   "Hello world"
+ row
+  Feature Print() Debugging
+  FeatureLink ../features/hasPrintDebugging.html
+  Supported <span class="hasFeature">✓</span>
+  Token Serial.println
+  Example
+ row
+  Feature Case Insensitive Identifiers
+  FeatureLink ../features/hasCaseInsensitiveIdentifiers.html
+  Supported <span class="doesNotHaveFeature">X</span>
+  Token 
+  Example
+
+## Books about Arduino Programming Language from ISBNdb
+pipeTable
+ title|titleLink|authors|year|publisher
+ Beginning C for Arduino, Second Edition: Learn C Programming for the Arduino|https://isbndb.com/book/9781484209417|Purdum, Jack|2015|Apress
+ Arduino Robot Bonanza|https://isbndb.com/book/9780071782777|McComb, Gordon|2013|McGraw Hill TAB
+ Arduino programming in 24 hours|https://isbndb.com/book/9780672337123|Blum, Richard , 1962-|2014|Sams
+ C Programming for Arduino|https://isbndb.com/book/9781849517584|Bayle, Julien|2013|Packt Publishing
+ 30 Arduino Projects for the Evil Genius|https://isbndb.com/book/9780071741330|Monk, Simon|2010|Tab Books
+ Arduino For Dummies|https://isbndb.com/book/9781118446379|Nussey, John|2013|For Dummies
+ Arduino Projects for Amateur Radio|https://isbndb.com/book/9780071834056|Purdum, Jack and Kidder, Dennis|2014|McGraw-Hill Education TAB
+ Arduino Projects For Dummies|https://isbndb.com/book/9781118551479|Craft, Brock|2013|For Dummies
+ Practical Arduino Engineering (Technology in Action)|https://isbndb.com/book/9781430238850|Timmis, Harold|2011|Apress
+ Beginning Android ADK with Arduino (Technology in Action)|https://isbndb.com/book/9781430241973|Bhmer, Mario|2012|Apress
+ Programming Arduino with LabVIEW|https://isbndb.com/book/9781849698221|Marco Schwartz and Oliver Manickum|2015|Packt Publishing
+ Arduino for Musicians: A Complete Guide to Arduino and Teensy Microcontrollers|https://isbndb.com/book/9780199309313|Edstrom, Brent|2016|Oxford University Press
+ Beginning Arduino Programming (Technology in Action)|https://isbndb.com/book/9781430237778|Evans, Brian|2011|Apress
+ Arduino Music and Audio Projects|https://isbndb.com/book/9781484217207|Cook, Mike|2015|Apress
+ Arduino Home Automation Projects : Automate your Home using the powerful Arduino Platform (Community Experience Distilled)|https://isbndb.com/book/9781783986064|Schwartz, Marco|2014|Packt Publishing
+ Professional Android Open Accessory Programming with Arduino|https://isbndb.com/book/9781118454763|Goransson, Andreas and Ruiz, David Cuartielles|2013|Wrox
+ Make: Lego and Arduino Projects: Projects for extending MINDSTORMS NXT with open-source electronics|https://isbndb.com/book/9781449321062|Baichtal, John and Beckler, Matthew and Wolf, Adam|2012|Make Community, LLC
+ Arduino: The complete guide to Arduino for beginners, including projects, tips, tricks, and programming!|https://isbndb.com/book/9781981195831|Arthur, James|2017|CreateSpace Independent Publishing Platform
+ Arduino Programming with .NET and Sketch|https://isbndb.com/book/9781484226582|Kurniawan, Agus|2017|Apress
+ Building Wireless Sensor Networks Using Arduino (Community Experience Distilled)|https://isbndb.com/book/9781784395582|Kooijman, Matthijs|2015|Packt Publishing
+ Arduino Sketches: Tools and Techniques for Programming Wizardry|https://isbndb.com/book/9781118919606|Langbridge, James A.|2015|Wiley
+ Learn Audio Electronics with Arduino: Practical Audio Circuits with Arduino Control|https://isbndb.com/book/9780367186654|Cullen, Charlie|2020|Focal Press
+ Arduino Computer Vision Programming: Design and develop real-world computer vision applications with the powerful combination of OpenCV and Arduino|https://isbndb.com/book/9781783552627|Ozkaya, Ozen and Yillikci, Giray|2015|Packt Publishing
+ Programming Arduino Next Steps: Going Further with Sketches, Second Edition|https://isbndb.com/book/9781260143249|Monk, Simon|2018|McGraw-Hill Education TAB
+ 30 Arduino Projects for the Evil Genius|https://isbndb.com/book/9780071741347|Simon Monk|20100823|McGraw-Hill Professional
+ Arduino: Complete Beginners Guide For Arduino - Everything You Need To Know To Get Started|https://isbndb.com/book/9781532701696|Mckinnon, Matthew|2016|CreateSpace Independent Publishing Platform
+ Arduino: The Comprehensive Beginner's Guide to Take Control of Arduino Programming|https://isbndb.com/book/9781717107022|Price, Miles|2018|CreateSpace Independent Publishing Platform
+ Arduino: Advanced Strategies to Learn and Execute Arduino Programming (Volume 5)|https://isbndb.com/book/9781979095488|Jones, Mr Daniel|2017|CreateSpace Independent Publishing Platform
+ Arduino Measurement Projects For Beginners: Arduino Programming Basics And Get Started Guide|https://isbndb.com/book/9781728981727|Bales and Simone|2018|Independently Published
+ Programming Arduino Getting Started with Sketches|https://isbndb.com/book/9780071784238|Simon Monk|20111222|McGraw-Hill Professional
+ Arduino Programming Guide 75 intelligent hardware programming skills(Chinese Edition)|https://isbndb.com/book/9787115414489|[ YING ] Simon Monk ZHU|2016|People Post Press
+ Microcontroller Prototypes with Arduino and a 3D Printer: Learn, Program, Manufacture|https://isbndb.com/book/9781119782612|Bolanakis, Dimosthenis E.|2021|Wiley
+ Build Your Own Autonomous NERF Blaster: Programming Mayhem with Processing and Arduino|https://isbndb.com/book/9780071802758|Bigger, Bryce|2013|McGraw-Hill Education TAB
+ Arduino Programming|https://isbndb.com/book/9781090104816|Ryan Turner|2019|Arduino Programming
+ Arduino Cookbook|https://isbndb.com/book/9781449321192|Michael Margolis|2011|O'Reilly Media, Inc.
+ Beginning Arduino|https://isbndb.com/book/9781430232414|McRoberts, Michael|2011|Apress
+ Arduino Internals|https://isbndb.com/book/9781430238836|Dale Wheat|20120115|Springer Nature
+ Practical Arduino Engineering|https://isbndb.com/book/9781430238867|Harold Timmis|20120121|Springer Nature
+ Programming Arduino with LabVIEW|https://isbndb.com/book/9781849698238|Schwartz, Marco and Oliver Manickum|2015|Packt Publishing
+ Arduino: 2019 Beginner's Guide to Learn Arduino Programming Step by Step|https://isbndb.com/book/9781086093773|Pearson, Dexter|2019|Independently published
+ Beginning C for Arduino, Second Edition: Learn C Programming for the Arduino|https://isbndb.com/book/9781484209400|Purdum, Jack|2015|Apress
+ Beginning C for Arduino: Learn C Programming for the Arduino (Technology in Action)|https://isbndb.com/book/9781430247777|Purdum Ph.D., Jack|2013|Apress
+ Arduino Programming: The Ultimate Beginner's Guide To Learn Arduino Programming Step By Step|https://isbndb.com/book/9781647710002|Turner Ryan|2019|Nelly B.l. International Consulting Ltd.
+ Arduino Programming: 2 books in 1 - The Ultimate Beginner's & Intermediate Guide to Learn Arduino Programming Step by Step|https://isbndb.com/book/9781647710194|Turner, Ryan|2019|nelly B.L. International Consulting LTD.
+ Internet of Things with Raspberry Pi and Arduino|https://isbndb.com/book/9780367248215|Singh, Rajesh and Gehlot, Anita and Gupta, Lovi Raj and Singh, Bhupendra and Swain, Mahendra|2019|CRC Press
+ Faszinierende Elektronik-Projekte mit Scratch, Arduino und Raspberry Pi|https://isbndb.com/book/9783958750333|Erik Bartmann|20150401|O'Reilly Media, Inc.
+ Sylvia's Super-Awesome Project Book: Super-Simple Arduino (Volume 2)|https://isbndb.com/book/9780989151160|"Todd, Sylvia ""Super-Awesome"""|2014|Constructing Modern Knowledge Press
+ Biomedical Sensors Data Acquisition with LabVIEW: Effective Way to Integrate Arduino with LabView (English Edition)|https://isbndb.com/book/9789389845990|Prakash, Anshuman and Gupta, Dr. Lovi Raj and Gupta, Dr.  Rajesh and Gehlot, Dr. Anita and Beri, Rydhm|2020|BPB Publications
+ Arduino Cookbook: Recipes to Begin, Expand, and Enhance Your Projects|https://isbndb.com/book/9781491903520|Margolis, Michael and Jepson, Brian and Weldin, Nicholas Robert|2020|O'Reilly Media
+ Arduino Book for Beginners|https://isbndb.com/book/9780988780613|Cheich, Mike|2021|Michael Cheich
+ Arduino Programming in 24 Hours, Sams Teach Yourself (Sams Teach Yourself: In 24 Hours)|https://isbndb.com/book/9780672337123|Blum, Richard|2014|Sams Publishing
+ Arduino Cookbook, 2nd Edition|https://isbndb.com/book/9781449313876|Margolis, Michael|2011|O'Reilly Media
+ "Arduino Projects with Tinkercad: Designing and programming Arduino-based electronics projects using Tinkercad (Arduino | Introduction and Projects)"|https://isbndb.com/book/9783987420375|Wild, M.Eng. Johannes|2022|Independently Published
+ Hacking Electronics: Learning Electronics with Arduino and Raspberry Pi, Second Edition|https://isbndb.com/book/9781260012217|Monk, Simon|2017|McGraw-Hill Education TAB
+ Arduino for Musicians: A Complete Guide to Arduino and Teensy Microcontrollers|https://isbndb.com/book/9780199309320|Edstrom, Brent|2016|Oxford University Press
+ Arduino Programming in 24 Hours, Sams Teach Yourself|https://isbndb.com/book/9780133764130|Richard, Blum|2014|Sams Publishing
+ 30 Arduino Projects for the Evil Genius, Second Edition|https://isbndb.com/book/9780071817721|Monk, Simon|2013|McGraw-Hill Education TAB
+ Programming Arduino Next Steps: Going Further with Sketches, Second Edition|https://isbndb.com/book/9781260143256|Monk, Simon|2018|McGraw-Hill Education TAB
+ The AVR Microcontroller and Embedded Systems Using Assembly and C: Using Arduino Uno and Atmel Studio|https://isbndb.com/book/9780997925968|Naimi, Sepehr and Naimi, Sarmad and Mazidi, Muhammad Ali|2017|MicroDigitalEd
+ Arduino: 2020 Beginners Guide to Learn Arduino Programming. Amazing Projects included .|https://isbndb.com/book/9781660614523|Abdous, Rick|2020|Independently published
+ Python Programming for Arduino|https://isbndb.com/book/9781783285938|Desai, Pratik|2015|Packt Publishing
+ Arduino Projects for Amateur Radio|https://isbndb.com/book/9780071834063|Purdum, Jack and Kidder, Dennis|2014|McGraw-Hill Education TAB
+ Programming Arduino Next Steps: Going Further with Sketches|https://isbndb.com/book/9780071830263|Monk, Simon|2013|McGraw-Hill Education TAB
+ ESP8266: Programming NodeMCU Using Arduino IDE - Get Started With ESP8266|https://isbndb.com/book/9781534822665|Learning, UpSkill|2016-06-22T00:00:01Z|CreateSpace Independent Publishing Platform
+ Programming Arduino Next Steps: Going Further with Sketches|https://isbndb.com/book/9780071830256|Monk, Simon|2013|McGraw-Hill Education Tab
+ Arduino Project Handbook, Volume 2: 25 Simple Electronics Projects for Beginners|https://isbndb.com/book/9781593278182|Geddes, Mark|2017|No Starch Press
+ Arduino for Secret Agents|https://isbndb.com/book/9781783986095|Schwartz, Marco|2015|Packt Publishing
+ Beginning Arduino|https://isbndb.com/book/9781430232407|McRoberts, Michael|2011|Apress
+ Building Wireless Sensor Networks Using Arduino (Community Experience Distilled)|https://isbndb.com/book/9781784397159|Kooijman, Matthijs|2015|Packt Publishing
+ Make: Arduino Bots and Gadgets: Six Embedded Projects with Open Source Hardware and Software (Learning by Discovery)|https://isbndb.com/book/9781449389710|Karvinen, Tero and Karvinen, Kimmo|2011|Make Community, LLC
+ Arduino Projects For Dummies|https://isbndb.com/book/9781118551516|Craft, Brock|2013|For Dummies
+ Building Arduino Projects for the Internet of Things: Experiments with Real-World Applications|https://isbndb.com/book/9781484219393|Javed, Adeel|2016|Apress
+ 30 Arduino Projects for the Evil Genius, Second Edition|https://isbndb.com/book/9780071817738|Monk, Simon|2013|McGraw-Hill Education TAB
+ Computer Programming: This Book Includes: SQL, Linux, Java, Python, C#, Arduino, C# For Intermediates, Arduino For Intermediates Learn Any Computer Language In One Day Step by Step (#2020 Version)|https://isbndb.com/book/9781675075104|Tudor, Steve|2019-12-13T00:00:01Z|Independently published
+ Building Smart Drones with ESP8266 and Arduino: Build exciting drones by leveraging the capabilities of Arduino and ESP8266|https://isbndb.com/book/9781788476928|Faruk Towaha, Syed Omar|2018|Packt Publishing
+ Beginning C for Arduino: Learn C Programming for the Arduino (Technology in Action)|https://isbndb.com/book/9781430247760|Purdum, Jack|2012|Apress
+ Arduino for Beginners: Comprehensive Beginners Guide to Learn Arduino Programming Step by Step|https://isbndb.com/book/9781081547776|THORPE, ETHAN|2019-07-19T00:00:01Z|Independently published
+ Arduino meets MATLAB: Interfacing, Programs and Simulink|https://isbndb.com/book/9781681087276|Singh, Rajesh and Gehlot, Anita and Singh, Bhupendra and Choudhury, Sushabhan|2018|Bentham Science Publishers
+ Getting Started with Arduino|https://isbndb.com/book/9781449309879|Banzi, Massimo|2011|Maker Media, Inc
+ Arduino Robot Bonanza|https://isbndb.com/book/9780071782784|McComb, Gordon|2013|McGraw-Hill Education TAB
+ SAE J1939 ECU Programming & Vehicle Bus Simulation with Arduino|https://isbndb.com/book/9781938581182|Voss, Wilfried|2015|Copperhill Media Corporation
+ Arduino Cookbook|https://isbndb.com/book/9780596802479|Margolis, Michael|2011|O'Reilly Media
+ Arduino for Secret Agents|https://isbndb.com/book/9781783986088|Schwartz, Marco|2015|Packt Publishing
+ Beginning Arduino Programming (Technology in Action)|https://isbndb.com/book/9781430237785|Evans, Brian|2011|Apress
+ Basic Programming Essentials: Learn the Basics of Batch, HTML, C, G and M code and Arduino Programming|https://isbndb.com/book/9781979833868|DeSipio Jr., Matthew M|2017|CreateSpace Independent Publishing Platform
+ Arduino + Android Projects for the Evil Genius: Control Arduino with Your Smartphone or Tablet|https://isbndb.com/book/9780071775977|Monk, Simon|2011|McGraw-Hill Education TAB
+ Arduino Internals (Technology in Action)|https://isbndb.com/book/9781430238829|Wheat, Dale|2011|Apress
+ Arduino Sketches: Tools and Techniques for Programming Wizardry|https://isbndb.com/book/9781118919699|Langbridge, James A.|2015|Wiley
+ Arduino Computer Vision Programming|https://isbndb.com/book/9781782174288|Özkaya, Özen and Giray Yıllıkçı|2015|Packt Publishing
+ Arduino Wearables (Technology in Action)|https://isbndb.com/book/9781430243595|Olsson, Tony|2012|Apress
+ Arduino Development Cookbook|https://isbndb.com/book/9781783982950|Amariei, Cornel|2015|Packt Publishing
+ Arduino by Example|https://isbndb.com/book/9781785289088|Boloor, Adith Jagadish|2015|Packt Publishing
+ Arduino: Simple and Effective Strategies to Arduino Programming|https://isbndb.com/book/9781675486207|Thorpe, Ethan|2019-12-14T00:00:01Z|Independently published
+ Arduino Wearable Projects|https://isbndb.com/book/9781785283307|Olsson, Tony|2015|Packt Publishing
+ Building Arduino Projects for the Internet of Things: Experiments with Real-World Applications|https://isbndb.com/book/9781484219409|Javed, Adeel|2016|Apress
+ Hands-On Internet of Things with MQTT: Build connected IoT devices with Arduino and MQ Telemetry Transport (MQTT)|https://isbndb.com/book/9781789345001|Pulver, Tim|2019|Packt Publishing
+ Beginning Arduino (Technology in Action)|https://isbndb.com/book/9781430250173|McRoberts, Michael|2013|Apress
+ Arduino for Beginners: Essential Skills Every Maker Needs|https://isbndb.com/book/9780133416732|Baichtal, John|2013|Que Publishing
+ Arduino for Kids: A cool guide to help kids develop robots and electronics|https://isbndb.com/book/9781785882227|Kuber, Priya and Bhatnagar, Rishi Gaurav and Varada, Vijay|2017|Packt Publishing
+ Learn Arduino Prototyping in 10 days|https://isbndb.com/book/9781788298544|Choudhuri, Kallol Bosu Roy|2017|Packt Publishing
+ Arduino Wearable Projects|https://isbndb.com/book/9781785282799|Olsson, Tony|2015|Packt Publishing
+ Arduino: The Complete 3 Books in 1 for Beginners, Intermediate and 19 Sample Designs and Codings and Advance Crash Guide in Arduino Programming|https://isbndb.com/book/9781730847844|Webber, Zach|2018|Independently published
+ Advanced Programming For Arduino Geeks|https://isbndb.com/book/9781718154780|Magda, Yury and Magda, Yury|2018|Independently published
+ Arduino Programming with .NET and Sketch|https://isbndb.com/book/9781484226599|Kurniawan, Agus|2017|Apress
+ Arduino (Learn Programming Projects) (Volume 1)|https://isbndb.com/book/9781721076628|Thompson, Matthew|2018|CreateSpace Independent Publishing Platform
+ C Programming for the Pc the Mac and the Arduino Microcontroller System|https://isbndb.com/book/9781491880517|Minns, Peter D|2013|AuthorHouse UK
+ Arduino: Getting Started With Arduino: The Ultimate Beginner’s Guide (Arduino 101, Arduino sketches, Complete beginners guide, Programming, Raspberry Pi 2, xml, c++, Ruby, html, php, Robots)|https://isbndb.com/book/9781523999972|Gold, Steve|2016|CreateSpace Independent Publishing Platform
+ "Arduino Programming: This book Includes: The Ultimate Beginner’s And Intermediate’s Guide To Learn Arduino In One Day Step-By-Step (#2020 Updated Version | Effective Computer Programming Languages)"|https://isbndb.com/book/9781675577493|Tudor, Steve|2019|Independently published
+ Arduino Programming: The Ultimate Guide for Absolute Beginners with Steps to Learn Arduino Programming and The Fundamental Electronic Concepts|https://isbndb.com/book/9781708010058|Géron, Daniel Géron|2019-11-13T00:00:01Z|Independently published
+ Physics Experiments with Arduino and Smartphones (Undergraduate Texts in Physics)|https://isbndb.com/book/9783030651404|Organtini, Giovanni|2021|Springer
+ Arduino Adventures: Escape from Gemini Station|https://isbndb.com/book/9781430246060|Kelly, James Floyd and Harold Timmis|2013|Apress
+ Raspberry Pi Home Automation with Arduino|https://isbndb.com/book/9781849695862|K. Dennis, Andrew|2013|Packt Publishing
+ Building a Home Security System with Arduino|https://isbndb.com/book/9781785280603|Castro, Jorge R.|2015|Packt Publishing
+ Arduino: The ultimate Arduino guide for beginners, including Arduino programming, Arduino cookbook, tips, tricks, and more!|https://isbndb.com/book/9781985354203|Newport, Craig|2018-02-13T00:00:01Z|CreateSpace Independent Publishing Platform
+ Arduino Programming From Beginning to Advanced|https://isbndb.com/book/9781970054200|Mazidi, Muhammad Ali and Chen, Shujen and Ghaemi, Eshragh|2019|MicroDigitalEd
+ Arduino and Scilab based Projects|https://isbndb.com/book/9789811410918|Gehlot, Anita and Singh, Rajesh and Singh, Bhupendra|2019|Bentham Science Publishers
+ Programming Arduino Projects with the PIC Microcontroller: A Line-by-Line Code Analysis and Complete Reference Guide for Embedded Programming in C|https://isbndb.com/book/9781484272329|Ward, Hubert Henry|2021|Apress
+ Arduino Adventures: Escape from Gemini Station|https://isbndb.com/book/9781430246053|Floyd Kelly, James and Timmis, Harold|2013|Apress
+ Arduino Programming|https://isbndb.com/book/9781922482211|Hamilton, Jason|2020|Blue Chip Publishing
+ Programming the Intel Galileo: Getting Started with the Arduino -Compatible Development Board|https://isbndb.com/book/9781259644801|Rush, Christopher|2016|McGraw-Hill Education TAB
+ "Arduino Programming: The Practical Beginner's Guide To Learn Arduino Programming In One Day Step-By-Step. (#2020 Updated Version | Effective Computer Languages)"|https://isbndb.com/book/9781672188036|Tudor, Steve|2019|Independently published
+ Arduino: 19 Sample Designs, Coding, and Advanced Crash Course Guide in Arduino Programming|https://isbndb.com/book/9781720160786|Webber, Zach|2018-09-08T00:00:01Z|Independently published
+ Internet of Things with Raspberry Pi and Arduino|https://isbndb.com/book/9781000726787|Singh, Rajesh and Gehlot, Anita and Gupta, Lovi Raj and Singh, Bhupendra and Swain, Mahendra|2019|CRC Press
+ Arduino Programming: The Ultimate Beginner's Guide to Learn 10 Arduino Projects with Sensors|https://isbndb.com/book/9781695475014|Munusami, Sivakumar|2019-09-25T00:00:01Z|Independently published
+ Arduino BLINK Blueprints|https://isbndb.com/book/9781785285868|Shah, Samarth and Shah, Utsav|2016|Packt Publishing
+ Arduino: The complete guide to Arduino for beginners, including projects, tips, tricks, and programming!|https://isbndb.com/book/9781761032806|Arthur, James|2020|Ingram Publishing
+ Programming the Intel Galileo: Getting Started with the Arduino -Compatible Development Board|https://isbndb.com/book/9781259644795|Rush, Christopher|2016|McGraw-Hill Education TAB
+ Arduino: The ultimate Arduino guide for beginners, including Arduino programming, Arduino cookbook, tips, tricks, and more!|https://isbndb.com/book/9781761032684|Newport, Craig|2020|Ingram Publishing
+ Arduino Robotics: Design and Programming|https://isbndb.com/book/9781089431732|david kon, john and david kon, john|2019|Independently published
+ Arduino: Arduino User Guide for Operating system, Programming, Projects and More! (raspberry pi 2, xml, c++, ruby, html, projects, php, programming, ... php, sql, Mainframes, Minicomputer)|https://isbndb.com/book/9781515307532|Scott, Robert|2015-07-31T00:00:01Z|CreateSpace Independent Publishing Platform
+ Arduino Programming: A Step by Step Guide to Learn Arduino Programming For Absolute Beginners|https://isbndb.com/book/9781654490676|Trinity, Lilly|2020-01-02T00:00:01Z|Independently published
+ Arduino: The ultimate Arduino guide for beginners, including Arduino programming, Arduino cookbook, tips, tricks, and more!|https://isbndb.com/book/9781925989816|Newport, Craig|2019|Ingram Publishing
+ C Programming For the PC the MAC and the Arduino Microcontroller System|https://isbndb.com/book/9781491880500|Minns, Peter D.|2013|AuthorHouseUK
+ Learn Audio Electronics with Arduino: Practical Audio Circuits with Arduino Control|https://isbndb.com/book/9780367186647|Cullen, Charlie|2020|Focal Press
+ Bluetooth Low Energy in Arduino 101: Your Guide to Programming the Internet of Things|https://isbndb.com/book/9781775128069|Gaitatzis, Anthony|2017|ISBN Canada
+ Arduino Programming (3 books in 1): For Beginners + Intermediate + Advanced|https://isbndb.com/book/9781675868898|Parsons, Wally|2019|Independently published
+ Programming Arduino Projects with the PIC Microcontroller: A Line-by-Line Code Analysis and Complete Reference Guide for Embedded Programming in C|https://isbndb.com/book/9781484272299|Ward, Hubert Henry|2021|Apress
+ TI ARM Microcontroller Programming with Energia: Going from Arduino to ARM: Using TI ARM Launchpad|https://isbndb.com/book/9781970054217|Mazidi, Muhammad Ali and Chen, Shujen and Ghaemi, Eshragh|2019-06-14T00:00:01Z|MicroDigitalEd.com
+ Arduino: The complete guide to Arduino for beginners, including projects, tips, tricks, and programming!|https://isbndb.com/book/9781925989700|Arthur, James|2019|Ingram Publishing
+ Practical AVR Microcontrollers: Games, Gadgets, and Home Automation with the Microcontroller Used in the Arduino (Technology in Action)|https://isbndb.com/book/9781430244462|Trevennor, Alan|2012|Apress
+ Arduino: Simple and Effective Strategies to Learn Arduino Programming (Volume 3)|https://isbndb.com/book/9781975777623|Jones, Mr Daniel|2017-08-24T00:00:01Z|CreateSpace Independent Publishing Platform
+ Design of a Arduino Processor Based Bi-Servo Robotic Walker|https://isbndb.com/book/9783659684487|Chowdhury Dibyendu and Roy Avisankar and Das Avishek|2015|LAP Lambert Academic Publishing
+ Arduino: 2 Books in 1: The Comprehensive Beginner's Guide to Take Control of Arduino Programming & Best Practices to Excel While Learning Arduino Programming|https://isbndb.com/book/9781719310819|Price, Miles|2018|CreateSpace Independent Publishing Platform
+ Hacking: 3 Books in 1: The Beginner's Complete Guide to Computer Hacking and Penetration Testing & The Complete Beginner's Guide to Learning Ethical ... Guide to Take Control of Arduino Programming|https://isbndb.com/book/9781719312318|Price, Miles|2018|CreateSpace Independent Publishing Platform
+ Arduino|https://isbndb.com/book/9781624312038|Terence O'Neill|2014|Cherry Lake Publishing
+ Arduino Projects|https://isbndb.com/book/9781697408362|Sivakumar Munusami|2019|
+ Arduino Wearables|https://isbndb.com/book/9781430243601|Tony Olsson|20120913|Springer Nature
+ Arduino Programming|https://isbndb.com/book/9781922482228|Hamilton, Jason|2020|Blue Chip Publishing
+ Exploring Arduino|https://isbndb.com/book/9781118786161|Jeremy Blum|2013|Wiley & Sons, Incorporated, John
+ Arduino Basics|https://isbndb.com/book/9781082120145|Moaml Mohmmed|2019|
+ Arduino: The Arduino Book is the Ultimate Guide to Learn And Understand Arduino Programming, Ideal For Arduino Beginners.|https://isbndb.com/book/9781801144834|Myers, Eric|2021-01-28T00:00:01Z|Amplitudo Ltd
+ Arduino: The Complete Beginner's Guide To Programming Arduino|https://isbndb.com/book/9781718903371|Berke and Bruce|2018|Createspace Independent Publishing Platform
+ Arduino Meets Linux|https://isbndb.com/book/9781514230220|Bob Hammell|2015|Createspace Independent Publishing Platform
+ Esp8266 Arduino Tutorial|https://isbndb.com/book/9781983286698|Sha Ga|2018|
+ Arduino: Getting Started With Arduino and Basic Programming With Projects (Advanced Methods to Learn Arduino Programming)|https://isbndb.com/book/9781774854891|Leclerc, Ernest|2022|Zoe Lawson
+ The Basics Of Arduino|https://isbndb.com/book/9781070857244|Moaml Mohmmed|2019|
+ Getting To Know Arduino|https://isbndb.com/book/9781477775028|Heather Moore Niver|2014|Rosen Reference
+ C Programming with Arduino|https://isbndb.com/book/9781907920462|Warwick A. Smith|2022|Elektor
+ Scratch Arduino: Basics Book for Learning programming Arduino by Scratch Language|https://isbndb.com/book/9786202683333|A.Saeed, Elaf|2020|LAP LAMBERT Academic Publishing
+ ESP8266 Programming Tutorial: Programming With Arduino: Esp-01 Programming With Arduino Ide|https://isbndb.com/book/9798746226273|Toolan, Barton|2021|Independently published
+ Programming and Interfacing with Arduino|https://isbndb.com/book/9781032059853|Misra, Yogesh|2021|CRC Press
+ Programming and Interfacing with Arduino|https://isbndb.com/book/9781032063164|Misra, Yogesh|2021|CRC Press
+ Arduino Programming Simply In Depth|https://isbndb.com/book/9780359984923|Ajit Singh|2019|Lulu Press, Inc
+ Arduino Programming: The Ultimate Guide For Making The Best Of Your Arduino Programming Projects|https://isbndb.com/book/9781801114042|||
+ Arduino Programming: The Ultimate Guide For Making the Best of Your Arduino Programming Projects|https://isbndb.com/book/9781801128001|Parker, Damon|2020-10-17T00:00:01Z|New Begin Ltd
+ Raspberry Pi Home Automation with Arduino|https://isbndb.com/book/9781849695879|Andrew K. Dennis|2013-02-05|Packt Publishing
+ Led Wizardry With Propeller Quickstart And Arduino|https://isbndb.com/book/9780071839525|Thomas Talbot|2015|Mcgraw-hill Education Tab
+ A Guide to Lab view Interfaced Arduino Projects|https://isbndb.com/book/9786138913238|Kumar, Pardeep and Kaur Channi, Harpreet and Kundu, Mousumi|2019|Scholars' Press
+ Internet Of Things With Raspberry Pi And Arduino|https://isbndb.com/book/9781032085982|Rajesh Singh and Taylor & Francis Group and Anita Gehlot and Lovi Raj Gupta and Bhupendra Singh and Mahendra Swain|2021|Crc Press
+ Esp8266 Nodemcu Using Arduino Ide (internet Of Things)|https://isbndb.com/book/9781982985189|Jacob Kale|2018|
+ Arduino Programming: The Ultimate Guide for Absolute Beginners with Steps to Learn Arduino Programming and The Fundamental Electronic Concepts|https://isbndb.com/book/9781914306709|Géron, Daniel|2021-01-19T00:00:01Z|Tiger Gain Ltd
+ Arduino Programming: The Ultimate Guide for Absolute Beginners with Steps to Learn Arduino Programming and The Fundamental Electronic Concepts|https://isbndb.com/book/9781914306198|Géron, Daniel|2021-01-12T00:00:01Z|Tiger Gain Ltd
+ Arduino Programming: The Ultimate Guide for Absolute Beginners with Steps to Learn Arduino Programming and The Fundamental Electronic Concepts|https://isbndb.com/book/9781801943550||2021|Tiger Gain Ltd
+ "Arduino Programming: The Practical Intermediate's Guide To Learn Arduino Programming In One Day Step-By-Step (#2020 Updated Version | Effective Computer Languages)"|https://isbndb.com/book/9781672192484|Tudor, Steve|2019|Independently published
+ Arduino Programming: The Ultimate Beginner's And Intermediate's Guide To Learn Arduino In One Day Step-By-Step (#2020 Updated Version - Effective Computer Programming Languages)|https://isbndb.com/book/9781914088506|Tudor, Steve|2020|Ep Enterprise Holding Limited
+ Computer Programming: This Book Includes: Learn Python + SQL Programming + Arduino Programming|https://isbndb.com/book/9781801235563|Parker, Damon|2020|New Begin Ltd
+ Beginning AVR Programming: Learn the microcontroller that's the heart of Arduino|https://isbndb.com/book/9781449307684|Trevennor, Alan|2011|Make Community, LLC
+ Computer Programming for Beginners: This Book Includes: SQL, C++, C#, Arduino Programming|https://isbndb.com/book/9781914306204|Géron, Daniel|2021-01-12T00:00:01Z|Tiger Gain Ltd
+ Computer Programming for Beginners: This Book Includes: SQL, C++, C#, Arduino Programming|https://isbndb.com/book/9781914306716|Géron, Daniel|2021|Tiger Gain Ltd
+ Arduino Programming for Beginners in Projects and Examples: How to Get Started|https://isbndb.com/book/9781540636898|Sharp, Max|2016-12-01T00:00:01Z|CreateSpace Independent Publishing Platform
+ Computer Programming for Beginners: This Book Includes: SQL, C++, C#, Arduino Programming|https://isbndb.com/book/9781801944083|||Daniel Geron
+ Arduino for Beginners: Learn how to Create Interactive Electronic Objects, Setting up Your Board, Discover How Coding Works, Create Your Circuit Plus All the Essentials of Arduino Programming|https://isbndb.com/book/9781801875400||2021|Computer DM-Academy
+ Arduino Based 2-D Robotic Plotter: A Guide to Design: 2 D plotter|https://isbndb.com/book/9786139452620|Patil, Sheetal N. and Patil, Prashant|2019|LAP LAMBERT Academic Publishing
+ IoT Machine Learning Applications in Telecom, Energy, and Agriculture: With Raspberry Pi and Arduino Using Python|https://isbndb.com/book/9781484255490|Mathur, Puneet|2020|Apress
+ Arduino|https://isbndb.com/book/9781987665819|Zach Webber|2018|Createspace Independent Publishing Platform
+ Programming Arduino|https://isbndb.com/book/9781540314086|Upskill Learning|2016|Createspace Independent Publishing Platform
+ Arduino Sketches: Tools and Techniques for Programming Wizardry|https://isbndb.com/book/9781118919620|James A. Langbridge|2015-01-05|Wiley Professional Development (P&T)
+ Arduino Cookbook|https://isbndb.com/book/9781449371968|Michael Margolis|2015|O'Reilly Media, Incorporated
+ Arduino Applied|https://isbndb.com/book/9781484239605|Neil Cameron|20181226|Springer Nature
+ Arduino III|https://isbndb.com/book/9783031799235|Steven F. Barrett|20210309|Springer Nature
+ Arduino Cookbook|https://isbndb.com/book/9781449305611|Michael Margolis|20110324|O'Reilly Media, Inc.
+ Arduino Cookbook|https://isbndb.com/book/9781491903483|Michael Margolis; Brian Jepson; Nicholas Robert Weldin|20200417|O'Reilly Media, Inc.
+ Exploring Arduino|https://isbndb.com/book/9781119405351|Jeremy Blum|2019|John Wiley & Sons
+ Arduino Cookbook|https://isbndb.com/book/9781491903506|Michael Margolis and Brian Jepson and Nicholas Robert Weldin|2020|O'reilly Media
+ Arduino II|https://isbndb.com/book/9783031799198|Steven F. Barrett|20200804|Springer Nature
+ Arduino II|https://isbndb.com/book/9781681738994|Steven F. Barrett|20200804|Morgan & Claypool Publishers
+ Arduino III|https://isbndb.com/book/9781636390840|Steven F. Barrett|20210310|Morgan & Claypool Publishers
+ Arduino Networking|https://isbndb.com/book/9781783986873|Marco Schwartz|20140821|Packt Publishing
+ Arduino Essentials|https://isbndb.com/book/9781784395865|Francis Perea|20150224|Packt Publishing
+ Practical Arduino Projects|https://isbndb.com/book/9781980308171|Michael Klements|2018|
+ Arduino Programming Notebook|https://isbndb.com/book/9781257126064|Brian W. Evans|2011|Lulu.com
+ Building Arduino PLCs|https://isbndb.com/book/9781484226322|Pradeeka Seneviratne|20170207|Springer Nature
+ Arduino: Best Practices To Excel While Learning Arduino Programming|https://isbndb.com/book/9781717393821|Miles Price|2018-04-30|Createspace Independent Publishing Platform
+ Arduino For Musicians|https://isbndb.com/book/9780199309337|Brent Edstrom|2016|Oxford University Press
+ Arduino in Action|https://isbndb.com/book/9781638353911|Jordan Hochenbaum; Joshua Noble; Martin Evans|20130529|Simon & Schuster
+ Adventures in Arduino|https://isbndb.com/book/9781118948460|Becky Stewart|2015-04-27|Wiley Professional Development (P&T)
+ Arduino by Example|https://isbndb.com/book/9781785287114|Adith Jagadish Boloor|20150914|Packt Publishing
+ Arduino in Science|https://isbndb.com/book/9781484267783|Richard J. Smythe|20211007|Springer Nature
+ Arduino for Musicians|https://isbndb.com/book/9780190460044|Brent Edstrom|20160325|Oxford University Press Academic US
+ Junk Box Arduino|https://isbndb.com/book/9781484214251|James R. Strickland|20160704|Springer Nature
+ Arduino For Dummies|https://isbndb.com/book/9781118446423|Nussey, John|04/2013|Wiley Professional Development (P&T)
+ Arduino For Dummies|https://isbndb.com/book/9781118446430|John Nussey|2013-04-29|Wiley
+ Arduino Robotic Projects|https://isbndb.com/book/9781783989836|Richard Grimmett|20140814|Packt Publishing
+ Arduino Android Blueprints|https://isbndb.com/book/9781784391683|Marco Schwartz; Stefan Buttigieg|20141222|Packt Publishing
+ Learn Electronics with Arduino|https://isbndb.com/book/9781680453713|Jody Culkin; Eric Hagan|20170912|O'Reilly Media, Inc.
+ Learn Electronics With Arduino|https://isbndb.com/book/9781680453737|Jody Culkin and Eric Hagan|2017|Maker Media, Inc.
+ C Programming For Arduino|https://isbndb.com/book/9781849517584|Bayle, Julien.||Packt Pub.
+ Arduino + Visual Basic 6.0|https://isbndb.com/book/9781484218440|Ujash G. Patel|2016|Apress
+ C Programming with  Arduino|https://isbndb.com/book/9783895763526|Warwick A. Smith|2020-06-11|Elektor International Media
+ Arduino Step by Step|https://isbndb.com/book/9783949804793|M.Eng. Johannes Wild|2022-04-23|3DTech
+ Arduino Home Automation Projects|https://isbndb.com/book/9781783986071|Marco Schwartz|20140723|Packt Publishing
+ Learn Audio Electronics with Arduino|https://isbndb.com/book/9780429588884|Charlie Cullen|20200326|Taylor & Francis
+ Getting to Know Arduino|https://isbndb.com/book/9781477775004|Heather Moore Niver|20140715|Rosen Publishing
+ Environmental Monitoring with Arduino|https://isbndb.com/book/9781449328610|Emily Gertz; Patrick Di Justo|20120126|O'Reilly Media, Inc.
+ Python Programming for Arduino|https://isbndb.com/book/9781783285945|Pratik Desai|20150227|Packt Publishing
+ Arduino Developer's Notebook: Dotted Grid Pages Customized For Arduino Programmers And Developers, Notebook For Arduino Programming, Arduino Notebook, Include Numbered Pages (150 Pages, 6 X9 Inches)|https://isbndb.com/book/9781651074701|Red Factory|2019-12-26|Independently Published
+ The Arduino Inventor's Guide|https://isbndb.com/book/9781593278397|Brian Huang; Derek Runberg|20170515|Random House Publishing Services
+ C Programming for Arduino|https://isbndb.com/book/9781849517591|Julien Bayle|20130517|Packt Publishing
+ Environmental Monitoring with Arduino|https://isbndb.com/book/9781449328948|Emily Gertz; Patrick Di Justo|20120126|O'Reilly Media, Inc.
+ Learning C for Arduino|https://isbndb.com/book/9781787123571|Syed Omar Faruk Towaha|24-03-2017|Packt Publishing
+ Arduino Microcontroller Processing For Everyone|https://isbndb.com/book/9781608454389|Steven Barrett|2010|Morgan & Claypool Publishers
+ Arduino For Beginners: A Step By Step Ultimate Guide To Learn Arduino Programming|https://isbndb.com/book/9781709004612|Mark Arthur|2019|Independently Published
+ Programming And Interfacing With Arduino|https://isbndb.com/book/9781003201700|Yogesh Misra|2021|Taylor & Francis Group
+ Arduino Programming: The Ultimate Intermediate Guide To Learn Arduino Programming Step By Step|https://isbndb.com/book/9781647710132|Ryan Turner|2019-12-05|Nelly B.l. International Consulting Ltd.
+ Arduino Programming: A Comprehensive Beginner's Guide To Learn Arduino Programming From A-z|https://isbndb.com/book/9781701328457|Alexander Bold|2019|Independently Published
+ iOS Sensor Apps with Arduino|https://isbndb.com/book/9781449317157|Alasdair  Allan|20110913|O'Reilly Media, Inc.
+ Make: Arduino Bots and Gadgets|https://isbndb.com/book/9781449307233|Tero Karvinen; Kimmo Karvinen|20110317|O'Reilly Media, Inc.
+ Make: Arduino Bots and Gadgets|https://isbndb.com/book/9781449307318|Tero Karvinen; Kimmo Karvinen|20110317|O'Reilly Media, Inc.
+ Make: Lego and Arduino Projects|https://isbndb.com/book/9781449324933|John Baichtal; Matthew Beckler; Adam Wolf|20121127|O'Reilly Media, Inc.
+ Arduino and Scilab based Projects|https://isbndb.com/book/9789811410925|Rajesh Singh and Anita Gehlot and Bhupendra Singh|2019-03-05|Bentham Science Publishers
+ iOS Sensor Apps with Arduino|https://isbndb.com/book/9781449317546|Alasdair  Allan|20110913|O'Reilly Media, Inc.
+ Make: Lego and Arduino Projects|https://isbndb.com/book/9781449324940|John Baichtal; Matthew Beckler; Adam Wolf|20121127|O'Reilly Media, Inc.
+ Programming and Interfacing with Arduino|https://isbndb.com/book/9781000431698|Yogesh Misra|20210906|Taylor & Francis
+ Embedded Controllers Using C And Arduino|https://isbndb.com/book/9781796836226|James Fiore|2016|
+ A Complete Programming guide implementing technical designs - Arduino|https://isbndb.com/book/9783330011069|V.S Prasanth and A. Parveen|2016-11-21|LAP LAMBERT Academic Publishing
+ Arduino 144 Success Secrets - 144 Most Asked Questions On Arduino - What You Need To Know|https://isbndb.com/book/9781488819124|Johnny Mendez|20141114|Emereo
+ Arduino 101: A Beginner's Guide To Programming|https://isbndb.com/book/9781480146044|William Smith|2012-12-16|Createspace Independent Publishing Platform
+ Professional Android Open Accessory Programming With Arduino|https://isbndb.com/book/9781118454770|Göransson, Andreas.||John Wiley & Sons, Inc.
+ Learn Arduino Programming Using 37 Sensors For Beginners: Practical Way To Learn Arduino For The Year 2017|https://isbndb.com/book/9781521566763|Jennifer Williams|2017|Independently Published
+ Beginning Robotics with Raspberry Pi and Arduino|https://isbndb.com/book/9781484268919|Jeff Cicolani|20210303|Springer Nature
+ Programming Arduino Projects with the PIC Microcontroller|https://isbndb.com/book/9781484272305|Hubert Henry Ward|20210930|Springer Nature
+ Basics of Arduino Uno Programming for Beginners|https://isbndb.com/book/9786202094566|Abrham Mengistu and Dagnachew Melesew|2017-12-05|LAP LAMBERT Academic Publishing
+ Internet of Things with the Arduino Yun|https://isbndb.com/book/9781783288014|Marco Schwartz|2014-05-21|Packt Publishing
+ Building a Home Security System with Arduino|https://isbndb.com/book/9781785283802|Jorge R. Castro|20150901|Packt Publishing
+ Internet Of Things With Raspberry Pi And Arduino|https://isbndb.com/book/9780429284564|Anita Gehlot|2019|Crc Press
+ Ti Arm Programming For Arduino Programmers Using Energia|https://isbndb.com/book/9781720390237|Muhammad Ali Mazidi and Shujen Chen and Eshragh Ghaemi|2018|Createspace Independent Publishing Platform
+ Microcontroller Prototypes With Arduino And A 3d Printer|https://isbndb.com/book/9781119782674|Dimosthenis E. Bolanakis|2021|Wiley & Sons, Incorporated, John
+ Internet of Things with Raspberry Pi and Arduino|https://isbndb.com/book/9781000727029|Rajesh Singh; Anita Gehlot; Lovi Raj Gupta; Bhupendra Singh; Mahendra Swain|20191118|Taylor & Francis
+ Microcontroller Prototypes with Arduino and a 3D Printer|https://isbndb.com/book/9781119782681|Dimosthenis E. Bolanakis|2021-04-09|Wiley
+ Arduino Programming For Beginners: Getting Started With Sketches Guide|https://isbndb.com/book/9781729108970|Simone Bales|2018|Independently Published
+ The Vidstrom Labs Guide To Arduino Assembly Language Programming|https://isbndb.com/book/9789198566109|Arne Vidstrom|2019|Vidstrom Labs
+ Faszinierende Elektronik-Projekte mit Scratch, Arduino und Raspberry Pi|https://isbndb.com/book/9783958750326|Bartmann, Erik|04/2015|O'Reilly Media, Inc.
+ Das intelligence Haus – Heimautomation mit Arduino und Android und PC|https://isbndb.com/book/9783868993646|Riley, Mike|08/2012|O'Reilly Media, Inc.
+ Das intelligence Haus – Heimautomation mit Arduino und Android und PC|https://isbndb.com/book/9783955610050|Riley, Mike|08/2012|O'Reilly Media, Inc.
+ Arduino and Raspberry Pi Sensor Projects for the Evil Genius|https://isbndb.com/book/9781260010909|Robert Chin|20171123|McGraw-Hill Professional
+
+## Publications about Arduino Programming Language from Semantic Scholar
+pipeTable
+ title|titleLink|authors|year|citations|influentialCitations
+ Smart drip irrigation system using raspberry pi and arduino|https://www.semanticscholar.org/paper/764fb4d5d79641193570ca843589149f3f2dfde5|N. Agrawal and Smita Singhal|2015|125|3
+ Sensing heart beat and body temperature digitally using Arduino|https://www.semanticscholar.org/paper/3730e4fa848ea6c6e3c9e9121be351d3f64c5805|Salomi S. Thomas and Amar Saraswat and Anurag Shashwat and Vishal Bharti|2016|37|3
+ Juniper: a functional reactive programming language for the Arduino|https://www.semanticscholar.org/paper/4823a13fb9060fb8614141ac492fe3cbf704f4a2|Caleb Helbling and Samuel Z. Guyer|2016|26|1
+ Haskino: A Remote Monad for Programming the Arduino|https://www.semanticscholar.org/paper/45db20fdde1f12a7b43744793fbae46aaf2bcc55|Mark Grebe and Andy Gill|2016|14|2
+ PyBoKids: An Innovative Python-Based Educational Framework Using Real and Simulated Arduino Robots|https://www.semanticscholar.org/paper/af02c074aaa97c01f42d6e40c43ae08ac877a4d4|J. Vega and J. Cañas|2019|13|0
+ Light Control Using Human Body Temperature Based on Arduino Uno and PIR (Passive Infrared Receiver) Sensor|https://www.semanticscholar.org/paper/3d4e107dc810feb462ae19321db73584322abb43|Reza Perkasa and Refni Wahyuni and Rika Melyanti and H. Herianto and Yuda Irawan|2021|9|0
+ Arduviz, a visual programming IDE for arduino|https://www.semanticscholar.org/paper/a2d83c85397baa058b6a5a60d18beacd62c25cd8|Admin Baskoro Pratomo and Riza Satria Perdana|2017|9|0
+ Concurrent Event-driven Programming in occam-π for the Arduino|https://www.semanticscholar.org/paper/092209255dbb9239484b4d223ec20c3d3622f801|C. Jacobsen and M. Jadud and Omer Kilic and A. Sampson|2011|6|1
+ Declarative Programming for Microcontrollers - Datalog on Arduino|https://www.semanticscholar.org/paper/146aa8fd69bdcc9cbb970cc2d2b638196930b333|Mario Wenzel and Stefan Brass|2019|6|0
+ An Arduino board with ultrasonic sensor investigation of simple harmonic motion|https://www.semanticscholar.org/paper/587c301df2198301da289530e180771f63520b40|A. Buachoom and A. Thedsakhulwong and S. Wuttiprom|2019|5|0
+ Automatic System to Fish Feeder and Water Turbidity Detector Using Arduino Mega|https://www.semanticscholar.org/paper/fc19165adfdb5eb3694cafbc7d31ecb015b71820|H. Hendri and S. Enggari and Mardison and M. R. Putra and L. N. Rani|2019|5|0
+ Teaching Introductory Programming Concepts: A Comparison of Scratch and Arduino|https://www.semanticscholar.org/paper/81c185f394ae848b35a9bee8d7c30a707ed4298a|A. Beug|2012|5|0
+ Analysis and experimental realization of the logistic map using Arduino Pro Mini|https://www.semanticscholar.org/paper/711b1f6e3c4aa6cd0e3a4738008e24e2bc28724a|V. Rusyn and S. Subbotin and A. Sambas|2020|3|0
+ Blocklino: A graphical language for Arduino|https://www.semanticscholar.org/paper/a6fcc4cbdca7db19f3c97508f9acc797fc7a2b28|P. Domokos and M. Széll and Viktor Takács|2017|3|0
+ Arduino Visual Programming|https://www.semanticscholar.org/paper/982eec22a89913793ee1ec8ea9263b5c98b35256|Kitsiri Chochiang and Kullawat Chaowanawatee and Kittasil Silanon and Thitinan Kliangsuwan|2019|3|1
+ Ardestan: A Visual Programming Language for Arduino|https://www.semanticscholar.org/paper/135dfc5d5ce2a18ac3b7ec35bd0703ae018965e1|H. Nishino|2019|3|1
+ Design and Implementation of a Low-Cost Real-Time In-Situ Drinking Water Quality Monitoring System Using Arduino|https://www.semanticscholar.org/paper/4137c711b60b71321cda141c433e5e0ebf63a6a8|S.O. Osman and Mohamed Mohamed and Alzain M. Suliman and A. Mohammed|2018|2|0
+ Converter matlab fuzzy inference to arduino Csystem|https://www.semanticscholar.org/paper/14d3f48a18166aabb9d51aad9efbc32495e10c29|M. Khairudin and H. A. Wijaya and Muslikhin|2020|2|0
+ Comparative Study on Flexible Link Aerator Using Arduino Programming and Dissolved Oxygen Meter|https://www.semanticscholar.org/paper/129821888cf2d4b65e914a2554d05ff7a0d8ba48|B. A. Zain and Fatin Farhana Anuar and N. Al-Shaibani|2018|2|0
+ Detection of Lock on Radar System Based on Ultrasonic US 100 Sensor And Arduino Uno R3 With Image Processing GUI|https://www.semanticscholar.org/paper/f8d53433c462b3a588278e88681d17c9ee1e6191|F. Baskoro and B. Reynaldo|2018|1|0
+ Hydrolysis of Glucose from Bamboo with Micro Controller PID type Arduino UNO and Fuzzy Method|https://www.semanticscholar.org/paper/f9895f90e6161b9d3ae0e8c291b3f560481a7967|N. K. Sari and D. Ernawati and I. Purbasari and B. Rahmat|2018|1|0
+ Block Coding Algorithm Training Examples using Arduino Board for Elementary and Secondary School Students|https://www.semanticscholar.org/paper/b7a813d8edd47d5fe1ff20e00c5f65cf4a520efe|Kyeong Hur and Won-Sung Sohn and Kil Young Kwon|2018|1|0
+ Leveraging the Arduino Platform to Develop Information Technology Devices|https://www.semanticscholar.org/paper/a579b2243027c6b565b6cee98633c5e140500df2|D. Recupero and Valentino Artizzu and F. Cella and Alessandro Cotza and Davide Curcio and G. Iengo and Riccardo Macis and A. Marras and Simone Picci and Michael Planu and Riccardo Scasseddu|2018|1|0
+ RANCANG BANGUN KENDALI OTOMATIS LAMPU DAN PENDINGIN RUANGAN PADA RUANG PERKULIAHAN BERBASIS MIKROKONTROLER ARDUINO NANO|https://www.semanticscholar.org/paper/5488111b4a607eafbbb6fb2a37af78ae6f4f9e9f|I. W. Yoga Widiana and I. R. Raka Agung and Pratolo Rahardjo|2019|1|0
+ PATIENT HEALTH MONITORING USING ARDUINO THROUGH IOT|https://www.semanticscholar.org/paper/81b346e408659041e18d78ecc269f1ad21cf8fff|Dr.B.Srikanth and P.Divya and P.Nandini and Sk.Sabira and T.Bharathi.|2020|1|0
+ Kendali Kecepatan Motor DC Penguat Terpisah Berbeban Berbasis Arduino|https://www.semanticscholar.org/paper/5c56716c594dc0662b336ca54c34b733ece038bb|Dio Taufiq Arif and Aswardi Aswardi|2020|1|0
+ Experimental Implementation of TinyIPFIX Protocol for Arduino and Raspberry Pi Platform|https://www.semanticscholar.org/paper/60c8eb9ea6d32d0806aa59c69d8fcc437172487f|R. Petija and M. Glevaňák and M. Kučan and P. Fecilak and F. Jakab|2020|1|0
+ Perancangan System Perangkap Hama Tanaman Petani Otomatis Menggunakan Module Mikrokontroler Arduino|https://www.semanticscholar.org/paper/c8e7fac5b5b8291c011d4d9920626161b05705ee|Rahmat Tampune Bangun and Hasan Fahmi|2021|1|0
+
+keyboardNav kotlin.html powershell.html
+
+import ../footer.scroll

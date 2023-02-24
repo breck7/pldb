@@ -36,7 +36,7 @@ wikipedia https://en.wikipedia.org/wiki/Operational_Control_Language
   // IFF '1'=?1R? CANCEL     A parameter is indicated by question marks surrounding a number
   ** Using 1R between question marks indicates that the parameter is required and processing
   ** waits for user input.  CANCEL means immediately go to end of job.
-  // LOAD $DELET                                         $DELET is used to delete files
+  // LOAD $DELETE                                         $DELETE is used to delete files
   // RUN
   // IF DATAF1-PFILE1 SCRATCH UNIT-F1,LABEL-PFILE1       deletes a disk file
   // IF DATAF1-PFILE2 SCRATCH UNIT-F1,LABEL-PFILE2

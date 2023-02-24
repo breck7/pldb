@@ -1,0 +1,359 @@
+import header.scroll
+
+title VBA
+
+title VBA - Programming language
+ hidden
+
+html
+ <a class="prevLang" href="tcl.html">&lt;</a>
+ <a class="nextLang" href="actionscript.html">&gt;</a>
+
+viewSourceUrl https://github.com/breck7/pldb/blob/main/database/things/vba.pldb
+
+startColumns 4
+
+html <div class="quickLinks"><a href="https://en.wikipedia.org/wiki/Visual_Basic_for_Applications"><svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="98.05px" height="98.05px" viewBox="0 0 98.05 98.05" style="enable-background:new 0 0 98.05 98.05;" xml:space="preserve"><path d="M98.023,17.465l-19.584-0.056c-0.004,0.711-0.006,1.563-0.017,2.121c1.664,0.039,5.922,0.822,7.257,4.327L66.92,67.155 c-0.919-2.149-9.643-21.528-10.639-24.02l9.072-18.818c1.873-2.863,5.455-4.709,8.918-4.843l-0.01-1.968L55.42,17.489 c-0.045,0.499,0.001,1.548-0.068,2.069c5.315,0.144,7.215,1.334,5.941,4.508c-2.102,4.776-6.51,13.824-7.372,15.475 c-2.696-5.635-4.41-9.972-7.345-16.064c-1.266-2.823,1.529-3.922,4.485-4.004v-1.981l-21.82-0.067 c0.016,0.93-0.021,1.451-0.021,2.131c3.041,0.046,6.988,0.371,8.562,3.019c2.087,4.063,9.044,20.194,11.149,24.514 c-2.685,5.153-9.207,17.341-11.544,21.913c-3.348-7.43-15.732-36.689-19.232-44.241c-1.304-3.218,3.732-5.077,6.646-5.213 l0.019-2.148L0,17.398c0.005,0.646,0.027,1.71,0.029,2.187c4.025-0.037,9.908,6.573,11.588,10.683 c7.244,16.811,14.719,33.524,21.928,50.349c0.002,0.029,2.256,0.059,2.281,0.008c4.717-9.653,10.229-19.797,15.206-29.56 L63.588,80.64c0.005,0.004,2.082,0.016,2.093,0.007c7.962-18.196,19.892-46.118,23.794-54.933c1.588-3.767,4.245-6.064,8.543-6.194 l0.032-1.956L98.023,17.465z"/></svg></a> <a href="https://learn.microsoft.com/en-us/office/vba/api/overview/"><svg viewBox="0 0 500 500" xmlns="http://www.w3.org/2000/svg"><g transform="matrix(1, 0, 0, 1, 13.859316, 9.109739)"><g><g><path d="M340.732,0H55v485h375V94.518L340.732,0z M345,26.364L405.1,90H345V26.364z M415,470H70V15h260v90h85V470z"/><rect x="102.5" y="191" width="280" height="15"/><rect x="102.5" y="141" width="120" height="15"/><rect x="102.5" y="241" width="280" height="15"/><rect x="102.5" y="291" width="280" height="15"/><rect x="102.5" y="341" width="280" height="15"/><rect x="102.5" y="391" width="280" height="15"/></g></g></g></svg></a></div>
+
+* VBA, aka Visual Basic for Applications, is a <a href="../lists/languages.html?filter=pl">programming language</a> created in 1993.
+ link ../lists/languages.html?filter=1993 1993
+
+kpiTable
+ #54 <span title="TotalRank: 202 Jobs: 51 Users: 247 Facts: 31 Links: 120">on PLDB</span>
+ 30 Years Old
+ 3.7k <span title="Crude user estimate from a linear model.">Users</span>
+ 270 <span title="Books about or leveraging VBA">Books</span>
+ 5 <span title="Academic publications about or leveraging VBA">Papers</span>
+ 29k <span title="VBA repos on GitHub.">Repos</span>
+
+* Visual Basic for Applications (VBA) is an implementation of Microsoft's event-driven programming language Visual Basic 6, which was discontinued in 2008, and its associated integrated development environment (IDE). Although Visual Basic is no longer supported or updated by Microsoft, VBA itself got upgraded in 2010 with the introduction of Visual Basic for Applications 7 in Microsoft Office applications. Visual Basic for Applications enables building user-defined functions (UDFs), automating processes and accessing Windows API and other low-level functionality through dynamic-link libraries (DLLs). Read more on Wikipedia...
+ https://en.wikipedia.org/wiki/Visual_Basic_for_Applications Read more on Wikipedia...
+
+- VBA Wikipedia page
+ https://en.wikipedia.org/wiki/Visual_Basic_for_Applications
+- VBA docs
+ https://learn.microsoft.com/en-us/office/vba/api/overview/
+- There are at least 28,503 VBA repos on <a href="https://github.com/search?q=language:VBA">GitHub</a>
+- VBA first developed in <a href="../lists/originCommunities.html#microsoft">Microsoft</a>
+- PLDB estimates there are currently 511 job openings for VBA programmers.
+- file extensions for VBA include bas, cls, frm, frx and vba
+- The  Google BigQuery Public Dataset GitHub snapshot shows 194 users using VBA in 200 repos on <a href="https://api.github.com/search/repositories?q=language:VBA">GitHub</a>
+- In the 2021 StackOverflow <a href="https://insights.stackoverflow.com/survey">developer survey</a> VBA programmers reported a median salary of $53,825. 5% of respondents reported using VBA. 3,847 programmers reported using VBA, and 1,069 said they wanted to use it
+- Explore VBA snippets on <a href="http://www.rosettacode.org/wiki/Category:VBA">Rosetta Code</a>
+- <a href="antlr.html">ANTLR</a> <a href="https://github.com/antlr/grammars-v4/tree/master/vba">grammar</a> for VBA
+- Indeed.com has 511 matches for <a href="https://www.indeed.com/jobs?q=vba engineer">"vba engineer"</a>.
+- See also: (11 related languages)<a href="quickbasic.html">QuickBASIC</a>, <a href="visual-basic.html">Visual Basic</a>, <a href="excel-app.html">Microsoft Excel</a>, <a href="autocad-app.html">AUTOCAD</a>, <a href="basic.html">BASIC</a>, <a href="microsoft-basic.html">Microsoft BASIC</a>, <a href="visual-basic.net.html">Visual Basic .NET</a>, <a href="vbscript.html">VBScript</a>, <a href="jscript.html">JScript</a>, <a href="csharp.html">C#</a>, <a href="visual-studio-editor.html">Visual Studio</a>
+- HTML of this page generated by <a href="https://github.com/breck7/pldb/blob/main/code/LanguagePage.ts">LanguagePage.ts</a>
+- <a href="https://pldb.com/edit/vba">Improve our VBA file</a>
+
+html <br>
+
+endColumns
+
+## Language <a href="../lists/features.html">features</a>
+
+treeTable
+ row
+  Feature Line Comments
+  FeatureLink ../features/hasLineComments.html
+  Supported <span class="hasFeature">✓</span>
+  Token '
+  Example
+   ' A comment
+ row
+  Feature Comments
+  FeatureLink ../features/hasComments.html
+  Supported <span class="hasFeature">✓</span>
+  Token 
+  Example
+
+## Books about VBA on goodreads
+pipeTable
+ title|titleLink|author|year|reviews|ratings|rating
+ Excel VBA Programming For Dummies|https://www.goodreads.com/search?q=Excel VBA Programming For Dummies John Walkenbach|John Walkenbach|2004|20|353|3.90
+ Excel 2010 Power Programming with VBA|https://www.goodreads.com/search?q=Excel 2010 Power Programming with VBA John Walkenbach|John Walkenbach|2010|12|216|4.05
+ Excel 2007 VBA Programming for Dummies|https://www.goodreads.com/search?q=Excel 2007 VBA Programming for Dummies John Walkenbach|John Walkenbach|1996|2|120|3.77
+ VBA For Dummies|https://www.goodreads.com/search?q=VBA For Dummies John Paul Mueller|John Paul Mueller|2003|2|20|3.00
+ VB & VBA in a Nutshell: The Language|https://www.goodreads.com/search?q=VB & VBA in a Nutshell: The Language Paul Lomax|Paul Lomax|1998|3|50|3.44
+ Microsoft Excel 2013 Power Programming with VBA|https://www.goodreads.com/search?q=Microsoft Excel 2013 Power Programming with VBA John Walkenbach|John Walkenbach|2013|5|86|4.23
+ Excel 2003 Power Programming with VBA|https://www.goodreads.com/search?q=Excel 2003 Power Programming with VBA John Walkenbach|John Walkenbach|2004|5|53|3.85
+ Beginning Excel VBA Programming|https://www.goodreads.com/search?q=Beginning Excel VBA Programming Iducate Learning Technologies|Iducate Learning Technologies|2011|0|34|3.32
+ Access 2007 VBA Programming for Dummies|https://www.goodreads.com/search?q=Access 2007 VBA Programming for Dummies Joseph C. Stockman|Joseph C. Stockman|2007|0|30|3.50
+ Excel VBA Macro Programming|https://www.goodreads.com/search?q=Excel VBA Macro Programming Richard Shepherd|Richard Shepherd|2004|0|12|3.17
+ Access VBA Programming for Dummies|https://www.goodreads.com/search?q=Access VBA Programming for Dummies Alan Simpson|Alan Simpson|2004|1|18|3.72
+
+## Books about VBA from ISBNdb
+pipeTable
+ title|titleLink|authors|year|publisher
+ Introduction to VBA for Excel|https://isbndb.com/book/9780132396677|Chapra, Steven|2009|Pearson
+ Excel 2013 Power Programming with VBA|https://isbndb.com/book/9781118490396|Walkenbach, John|2013|Wiley
+ Credit Risk Modeling using Excel and VBA|https://isbndb.com/book/9780470660928|Löeffler, Gunter and Posch, Peter N.|2011|Wiley
+ Access VBA Programming For Dummies|https://isbndb.com/book/9780764574115|Simpson, Alan|2004|For Dummies
+ Excel Programming with VBA Starter|https://isbndb.com/book/9781849688444|Robert Martin|2012|Packt Publishing
+ Excel 2007 Power Programming with VBA|https://isbndb.com/book/9780470044018|Walkenbach, John|2007|Wiley
+ Excel 2003 Power Programming with VBA (Book & CD-ROM)|https://isbndb.com/book/9780764540721|Walkenbach, John|2004|Wiley
+ VB & VBA in a Nutshell: The Language: The Language (In a Nutshell (O'Reilly))|https://isbndb.com/book/9781565923584|Lomax, Paul|1998|O'Reilly Media
+ Excel VBA Macro Programming|https://isbndb.com/book/9780072231441|Shepherd, Richard|2004|McGraw-Hill Education
+ Access VBA Programming|https://isbndb.com/book/9780072231977|Brown, Charles and Petrusha, Ron|2004|McGraw-Hill Education
+ Microsoft Access VBA Programming for the Absolute Beginner|https://isbndb.com/book/9781598633931|Vine, Michael|2007|Cengage Learning PTR
+ Mastering VBA|https://isbndb.com/book/9780782144369|Hart-Davis|2005|Sybex
+ VBA Programming for Microsoft Project '98 through 2010 with an Introduction to VSTO|https://isbndb.com/book/9781934240212|Rod Gill|2011|Chefetz LLC
+ Excel VBA Programming For Dummies|https://isbndb.com/book/9780764574122|Walkenbach, John|2004|For Dummies
+ Access 97 Macro & VBA Handbook|https://isbndb.com/book/9780782119770|Novalis, Susann|1997|Sybex
+ VBA and Macros for Microsoft Office Excel 2007|https://isbndb.com/book/9780789736826|Jelen, Bill and Syrstad, Tracy|2007|Que Publishing
+ Microsoft Access VBA Programming for the Absolute Beginner|https://isbndb.com/book/9781592000395|Vine, Michael|2002|Cengage Learning PTR
+ VBA and Macros for Microsoft Excel|https://isbndb.com/book/9780789731296|Jelen, Bill|2004|Que Publishing
+ Microsoft Access VBA Programming for the Absolute Beginner, Second Edition|https://isbndb.com/book/9781592007233|Vine, Michael|2005|Cengage Learning PTR
+ Mastering Excel 2003 Programming with VBA|https://isbndb.com/book/9780782142815|Hansen, Steven M. and Sybex|2004|Sybex
+ Excel 2007 VBA Programming with XML and ASP (Wordware Applications Library)|https://isbndb.com/book/9781598220438|Korol, Julitta|2009|Jones & Bartlett Learning
+ VBA for the 2007 Microsoft Office System|https://isbndb.com/book/9780789736673|Mcfedries, Paul|2007|Que Publishing
+ Word 2007 Macros & VBA Made Easy (Made Easy Series)|https://isbndb.com/book/9780071614795|Hart-Davis, Guy|2009|McGraw-Hill Education
+ Absolute Beginner's Guide to VBA|https://isbndb.com/book/9780789730763|McFedries, Paul|2004|Que Publishing
+ Vba For Autocad 2002: Writing Autocad Macros|https://isbndb.com/book/9780130652010|Jeffrey E. Clark|2001|Prentice Hall
+ Course ILT: Microsoft Excel 2002: VBA Programming|https://isbndb.com/book/9780619069544|Technology, Course|2001|Course Technology Ptr (Sd)
+ Mastering VBA 6|https://isbndb.com/book/9780782126365|Hart-Davis|2000|Sybex
+ Excel 2003 VBA Programming With XML And ASP|https://isbndb.com/book/9781556222252|Korol, Julitta|2005|Jones & Bartlett Learning
+ Word 2007 Macros & VBA Made Easy (Made Easy Series)|https://isbndb.com/book/9780071614801|Hart-Davis, Guy|2009|McGraw Hill
+ Excel 2010: Programación con VBA / Power Programmingwith VBA (Spanish Edition)|https://isbndb.com/book/9788441528284|Walkenbach, John|2010|ANAYA MULTIMEDIA
+ Access 2007 VBA Programmer's Reference|https://isbndb.com/book/9781118058527|Hennig, Teresa and Cooper, Rob and Griffith, Geoffrey L. and Stein, Armen|2011|Wrox
+ Excel Vba Programming By Examples|https://isbndb.com/book/9781081431211|Thanh Tran|2019|
+ Excel 2000 VBA Programmers Reference|https://isbndb.com/book/9780764544019|Green, John|1999|John Wiley &Sons
+ Excel VBA: The Ultimate Beginner's Guide to Learn VBA Programming Step by Step|https://isbndb.com/book/9781073361083|A. Williams, David|2019|Independently published
+ EXCEL VBA PROGRAMMING : This Book Includes :: A Step-by-Step Tutorial For Beginners To Learn Excel VBA Programming From Scratch and Intermediate ... VBA Programming For Professional Advancement|https://isbndb.com/book/9781794499881|Bradley, Peter|2019|Independently published
+ Beginning Access 2000 VBA|https://isbndb.com/book/9780764543838|Smith, Robert and Sussman, Dave|2000|Wrox
+ From VBA to VSTO|https://isbndb.com/book/9781615473175|Dr. Gerard M. Verschuuren|20060412|Independent Publishers Group (Chicago Review Press)
+ Excel 2002: Vba Programming : Student Manual|https://isbndb.com/book/9780619175474|TECHNOLOGY, COURSE|2002|Crisp Pub Inc
+ Excel 2016 Power Programming With Vba|https://isbndb.com/book/9788126560608|Michael; Kusleika, Dick Alexander|2016|Wiley India Pvt. Ltd
+ VBA for Modelers: Developing Decision Support Systems|https://isbndb.com/book/9781285225678|S. Christian Albright|20110826|Cengage Learning US
+ Microsoft Excel 2013 Power Programming with VBA|https://isbndb.com/book/9788126542420|John Walkenbach||Wiley
+ Excel VBA Programming For Dummies (For Dummies (Computer/Tech))|https://isbndb.com/book/9781119518174|Alexander, Michael and Walkenbach, John|2018-11-06T00:00:01Z|For Dummies
+ Mastering VBA for Microsoft Office 365|https://isbndb.com/book/9781119579380|Mansfield, Richard|2019|Sybex
+ Excel 2019 Power Programming with VBA|https://isbndb.com/book/9781119514923|Alexander, Michael and Kusleika, Dick|2019|Wiley
+ Excel VBA Programming For Dummies|https://isbndb.com/book/9781119518242|Alexander, Michael and Walkenbach, John|2018|For Dummies
+ Microsoft Access 2010 VBA Macro Programming|https://isbndb.com/book/9780071738583|Shepherd, Richard|2010|McGraw Hill
+ Excel VBA Programming For Dummies|https://isbndb.com/book/9781119843092|Kusleika, Dick|2021|For Dummies
+ Excel 2016 Power Programming with VBA (Mr. Spreadsheet's Bookshelf)|https://isbndb.com/book/9781119067726|Alexander, Michael and Kusleika, Richard|2016-02-08T00:00:01Z|John Wiley & Sons
+ VBA and Macros: Microsoft Excel 2010 (MrExcel Library)|https://isbndb.com/book/9780789743145|Jelen, Bill and Syrstad, Tracy|2010|Que Publishing
+ Programming PowerPoint With VBA Straight to the Point|https://isbndb.com/book/9781615471638|Sanchez, Eduardo N|2022|Holy Macro! Books
+ Excel VBA Programming for Dummies: Third Edition|https://isbndb.com/book/9781118490372|Walkenbach, John|2013|For Dummies
+ Excel 2019 Power Programming with VBA|https://isbndb.com/book/9781119514916|Alexander, Michael and Kusleika , Dick|2019|Wiley
+ Excel VBA in easy steps|https://isbndb.com/book/9781840788242|McGrath, Mike|2019|In Easy Steps Limited
+ Programming Excel with VBA and .NET: Solve Real-World Problems with Excel|https://isbndb.com/book/9780596007669|Webb, Jeff and Saunders, Steve|2006|O'Reilly Media
+ VBA Developer's Handbook, 2nd Edition|https://isbndb.com/book/9780782129786|Ken Getz and Mike Gilbert|2001|Sybex
+ Excel 2010 Power Programming with VBA|https://isbndb.com/book/9780470475355|Walkenbach, John|2010|Wiley
+ Microsoft Excel VBA Programming for the Absolute Beginner|https://isbndb.com/book/9781931841047|Birnbaum, Duane|2002-04-02T00:00:01Z|Cengage Learning PTR
+ Mastering VBA for Microsoft Office 2013|https://isbndb.com/book/9781118695128|Mansfield, Richard|2013|Sybex
+ Excel 2016 Power Programming with VBA (Mr. Spreadsheet's Bookshelf)|https://isbndb.com/book/9781119067627|Alexander, Michael and Kusleika, Richard|2016|Wiley
+ VBA for Beginners: An Introduction to Learn VBA Programming with Tutorials and Hands-On Examples|https://isbndb.com/book/9781080611485|Metzler, Nathan|2019-07-14T00:00:01Z|Independently published
+ VBA For Dummies|https://isbndb.com/book/9780470046500|Mueller, John Paul|2007|For Dummies
+ Excel VBA in easy steps, 3rd edition|https://isbndb.com/book/9781840788716|McGrath, Mike|2019|In Easy Steps Limited
+ VBA for Modelers: Developing Decision Support Systems with Microsoft Office Excel|https://isbndb.com/book/9781305537644|Albright, S. Christian|2015|Cengage Learning
+ Excel 2016 VBA and Macros (MrExcel Library)|https://isbndb.com/book/9780789755858|Jelen, Bill and Syrstad, Tracy|2015|Que Publishing
+ Excel Vba Programming For Dummies, 4e|https://isbndb.com/book/9781119077398|Walkenbach, John|2015|John Wiley &Sons
+ Mastering VBA for Microsoft Office 2016|https://isbndb.com/book/9781119225409|Mansfield, Richard|2016|Sybex
+ Microsoft Access 2010 VBA Macro Programming|https://isbndb.com/book/9780071738576|Shepherd, Richard|2010|McGraw-Hill Education
+ Writing Word Macros: An Introduction to Programming Word using VBA|https://isbndb.com/book/9781565927254|Steven Roman, PhD|1999|O'Reilly Media
+ Excel 2003 VBA Programmer's Reference|https://isbndb.com/book/9780764556609|Kimmel, Paul T. and Bullen, Stephen and Green, John and Bovey, Rob and Rosenberg, Robert|2004|Wrox
+ Excel VBA: A Step-By-Step Guide To Learn And Master Excel VBA Programming|https://isbndb.com/book/9781722122126|Smith, Hein|2018-06-29T00:00:01Z|CreateSpace Independent Publishing Platform
+ Microsoft Office Access 2007 VBA|https://isbndb.com/book/9780132714136|Diamond, Scott B. and Spaulding, Brent|2003|Que Publishing
+ VBA Programming for Microsoft Office Project Versions 98 through 2007 (Emp Learning)|https://isbndb.com/book/9780975982877|Rod Gill|2006|MSProjectExperts
+ Excel VBA Programming For Dummies (For Dummies (Computer/Tech))|https://isbndb.com/book/9781119843078|Kusleika, Dick|2022|For Dummies
+ Numerical Methods with VBA Programming|https://isbndb.com/book/9780763749644|Hiestand, James|2009|Jones & Bartlett Learning
+ Excel VBA Programming For Dummies|https://isbndb.com/book/9780470503690|Walkenbach, John|2010-05-24T00:00:01Z|For Dummies
+ Excel 2013 Power Programming with VBA (Mr. Spreadsheet's Bookshelf Book 15)|https://isbndb.com/book/9781118490402|Walkenbach, John|2013|Wiley
+ Microsoft Excel VBA Programming for the Absolute Beginner|https://isbndb.com/book/9781598633948|Birnbaum, Duane and Vine, Michael|2007|Cengage Learning PTR
+ Microsoft Access 2010 VBA Programming Inside Out|https://isbndb.com/book/9780735664906|Couch, Andrew|2011|Microsoft Press
+ Microsoft Access 2010 VBA Programming Inside Out|https://isbndb.com/book/9780735659872|Couch, Andrew|2011|Microsoft Press
+ Excel VBA: A Step-By-Step Comprehensive Guide on Advanced Excel VBA Programming Techniques and Strategies|https://isbndb.com/book/9781791561086|Bradley, Peter|2018|Independently published
+ Mastering VBA for Microsoft Office 2013|https://isbndb.com/book/9781118786307|Mansfield, Richard|2013|Sybex
+ Access 2007 VBA Programming For Dummies|https://isbndb.com/book/9780470046531|Stockman, Joseph C. and Simpson, Alan|2007|For Dummies
+ Mastering AutoCAD VBA|https://isbndb.com/book/9780782128710|Cottingham, Marion|2001|Sybex
+ Excel Programming: The Ultimate Collection to Learn Excel VBA & Excel Macros Step by Step|https://isbndb.com/book/9781676827481|A. Williams, David|2019|Independently published
+ Professional Excel Development: The Definitive Guide to Developing Applications Using Microsoft Excel and VBA|https://isbndb.com/book/9780321262509|Bullen, Stephen and Bovey, Rob and Green, John|2005|Addison-Wesley Professional
+ Automating Microsoft Access with VBA|https://isbndb.com/book/9780789732446|Gunderloy, Mike and Harkins, Susan Sales|2004|Que Publishing
+ Excel 2007 VBA Programming For Dummies|https://isbndb.com/book/9780470046746|Walkenbach, John|2007|For Dummies
+ Excel 2013 Power Programming with VBA (Mr. Spreadsheet's Bookshelf Book 14)|https://isbndb.com/book/9781118491829|Walkenbach, John|2013-03-13T00:00:00.000Z|Wiley
+ Structured Finance Modeling with Object-Oriented VBA|https://isbndb.com/book/9780470098592|Tick, Evan|2007|Wiley
+ Excel 2007 VBA Macro Programming|https://isbndb.com/book/9780071627009|Shepherd, Richard|2009|McGraw-Hill Education
+ Microsoft Access VBA Programming for the Absolute Beginner|https://isbndb.com/book/9781133788959|Vine, Michael|2011|Cengage Learning PTR
+ EXCEL VBA: A Step by Step Guide to Learn EXCEL VBA Programming for Absolute Beginners|https://isbndb.com/book/9781099162503|Academy, Elite Tech|2019-05-17T00:00:01Z|Independently published
+ Expert @ Excel: 3 BOOKS IN 1: For beginners, Pivot Tables and VBA Programming|https://isbndb.com/book/9781792002656|Reed, Daniel|2019-01-01T00:00:01Z|Independently published
+ Excel VBA: Top Tips, Tricks, Timesavers, and Common Mistakes in VBA Programming|https://isbndb.com/book/9781729528150|Smith, Mr Hein|2018-10-19T00:00:01Z|CreateSpace Independent Publishing Platform
+ VBA for Excel: Programming VBA Macros: The Easy Introduction for Beginners and Non-Programmers|https://isbndb.com/book/9781370048649|Patterson, Andrew J.|2017|
+ How to Learn Microsoft Access VBA Programming Quickly!|https://isbndb.com/book/9781977016294|Besedin, Andrei|2018|Independently published
+ Expert @ Excel VBA Programming: A Step-By-Step Guide To Learn And Master Excel VBA Programming To Get Ahead @ Work, Business And Personal Finances|https://isbndb.com/book/9781729153109|Reed, Daniel and Reed, Daniel|2018-10-23T00:00:01Z|Independently published
+ Excel 2007 VBA Programmer's Reference|https://isbndb.com/book/9780470046432|John Green and Stephen Bullen and Rob Bovey and Michael Alexander|2007|Wrox
+ Absolute Beginner's Guide to VBA|https://isbndb.com/book/9780131389984|McFedries, Paul|2004|Que Publishing
+ Beginning Access 2007 VBA|https://isbndb.com/book/9780470046845|Gosnell, Denise M.|2007|Wrox
+ Excel VBA Macro Programming|https://isbndb.com/book/9780072263695|Shepherd, Richard|2004|McGraw-Hill Education
+ Computing with Excel and VBA|https://isbndb.com/book/9780763756680|Krishan, S.I.|2008|Jones & Bartlett Learning
+ Mastering VBA for Microsoft Office 2007|https://isbndb.com/book/9780470279595|Mansfield, Richard|2008|Sybex
+ Excel VBA: Ultimate Excel VBA Programming Step By Step Guide to Go from Beginner to Expert|https://isbndb.com/book/9781081242756|Ironside, William|2019|Independently published
+ VBA and Macros for Microsoft Excel|https://isbndb.com/book/9780132714785|Syrstad, Tracy and Jelen, Bill|2004|Que Publishing
+ Holy Macro! It's 2,500 Excel VBA Examples: Every Snippet of Excel VBA Code You'll Ever Need|https://isbndb.com/book/9781932802184|Herber, Hans and Jelen, Bill and Urtis, Tom|2006|Holy Macro! Books
+ Automating Microsoft Access with VBA|https://isbndb.com/book/9780789745507|Gunderloy, Mike and Harkins, Susan Sales|2004|Que Publishing
+ Expert@Excel : Pivot Tables and VBA Programming: Bundle: 2 Books in 1: A Step-By-Step Guide To Learn And Master Pivot Tables and VBA Programming To Get Ahead @ Work, Business And Personal Finances|https://isbndb.com/book/9781729165690|Reed, Daniel|2018-11-01T00:00:01Z|Independently published
+ Microsoft Excel 2000 Power Programming with VBA|https://isbndb.com/book/9780764532634|Walkenbach, John|1999|*M&T Press
+ Word 2007 Document Automation With VBA And VSTO|https://isbndb.com/book/9781598220476|Driza, Scott|2009|Jones & Bartlett Learning
+ Excel VBA Programming for Beginners: Excel VBA 2013. Make it Easy. Practical Guide|https://isbndb.com/book/9781546832881|Torrance, Charlie|2017-06-12T00:00:01Z|CreateSpace Independent Publishing Platform
+ Microsoft Office Access 2007 VBA|https://isbndb.com/book/9780789737311|Diamond, Scott and Spaulding, Brent|2007|Que
+ Excel VBA 24-Hour Trainer|https://isbndb.com/book/9780470890691|Urtis, Tom|2011|Wrox
+ Microsoft Excel VBA Professional Projects|https://isbndb.com/book/9781592000654|Birnbaum, Duane|2003|Course Technology PTR
+ An Introduction to Excel VBA Programming|https://isbndb.com/book/9780367261283|Gan, Guojun|2019-03-22T00:00:01Z|Routledge
+ Access 2000 VBA Handbook|https://isbndb.com/book/9780782123241|Novalis, Susann|1999|Sybex
+ Beginning Microsoft Excel VBA Programming for Accountants: A Practical and Project Based Approach|https://isbndb.com/book/9781981190959|Harlan, Mr. Derek|2018-09-29T00:00:01Z|CreateSpace Independent Publishing Platform
+ Excel VBA Macro Programming|https://isbndb.com/book/9780071506823|Shepherd, Richard|2004|McGraw-Hill Education
+ Excel VBA : A Step-by-Step Simplified Guide to Excel VBA Programming Techniques, Data Reporting, Business Analysis and Tips and Tricks for Effective Strategies|https://isbndb.com/book/9781799246428|Bradley, Peter|2019-03-17T00:00:01Z|Independently published
+ Master Visually Excel 2003 VBA Programming|https://isbndb.com/book/9780764579738|Kelly, Julia|2005|Visual
+ Access?2003 Power Programming with VBA|https://isbndb.com/book/9780764525889|Taylor, Allen G. and Andersen, Virginia|2003|Wiley
+ Excel VBA: Programming For Complete Beginners, Step-By-Step Illustrated Guide to Mastering Excel VBA|https://isbndb.com/book/9781726852067|Skates, William B.|2018-10-09T00:00:01Z|Independently published
+ Outlook 2000 VBA Programmers Reference|https://isbndb.com/book/9781861002532|Gifford, Dwayne|1999|Apress
+ An Introduction to Excel VBA Programming: with Applications in Finance and Insurance|https://isbndb.com/book/9781138197152|Gan, Guojun|2017-04-07T00:00:01Z|Chapman and Hall/CRC
+ Expert @ Excel: VBA Programming and Power BI: Step-By-Step Guide To Learn And Master Pivot Tables and VBA Programming To Get Ahead @ Work, Business And Personal Finances|https://isbndb.com/book/9781090881854|Reed, Daniel|2019|Independently published
+ Beginning Access 2000 Vba|https://isbndb.com/book/9781861001764|Smith, Robert|1999|Wrox Pr Inc
+ AutoCAD VBA Programming Tools and Techniques : Exploiting the Power of VBA in AutoCAD 2000|https://isbndb.com/book/9780879305741|Gibb, John and Kramer, Bill|1999|CMP
+ Access 2002 VBA Handbook|https://isbndb.com/book/9780782140132|Novalis, Susann and Jones, Dana|2001|Sybex
+ Brilliant Excel VBA Programming. Ken Bluttman|https://isbndb.com/book/9780273771975|Ken Bluttman,Curtis Frye||Pearson Education
+ Word 2000 VBA Programmers Reference|https://isbndb.com/book/9781861002556|MacKenzie, Duncan and Martins, Felipe|1999|Apress
+ VBA for the 2007 Microsoft Office System|https://isbndb.com/book/9780132714808|McFedries Paul|2007|Que Publishing
+ Microsoft Excel VBA Programming for the Absolute Beginner, Second Edition|https://isbndb.com/book/9781592007295|Birnbaum, Duane|2005|Cengage Learning PTR
+ Visual Studio 2005 Tools for Office for Mere Mortals: A VBA Developer's Guide to Managed Code in Microsoft Office|https://isbndb.com/book/9780132701716|McGrath, Kathleen and Stubbs, Paul|2006|Addison-Wesley Professional
+ Beginning Access 2002 VBA|https://isbndb.com/book/9780764544026|Smith, Robert and Sussman, Dave and Blackburn, Ian and Colby, John and Horner, Mark and Reid, Martin and Turley, Paul and Watson, Helmut|2003|Wrox
+ VBA For Dummies (For Dummies (Computers))|https://isbndb.com/book/9780764508561|Cummings, Steve|2001|For Dummies
+ Excel 2002 Power Programming with VBA (EXCEL POWER PROGRAMMING WITH VBA)|https://isbndb.com/book/9780764547997|Walkenbach, John|2001|*M&T Press
+ Beginning Access 97 Vba Programming|https://isbndb.com/book/9781861000866|Smith, Robert and Sussman, David|1997-09-01T00:00:01Z|Apress
+ Vba for Dummies|https://isbndb.com/book/9780764502583|Cummings, Steve|1998|Hungry Minds Inc
+ Beginning Excel VBA Programming: A concise guide to developing Excel VBA Applications and Macros|https://isbndb.com/book/9781490360829|Technologies, Iducate Learning|2013|CreateSpace Independent Publishing Platform
+ Definitive Guide to Excel VBA|https://isbndb.com/book/9781893115798|Michael Kofler|2000|Apress
+ Office XP Development with VBA|https://isbndb.com/book/9780130654175|Aitken, Peter G.|2001|Prentice Hall
+ Learn Word 2000 Vba Document Automation|https://isbndb.com/book/9781556227516|Driza, Scott|2000|Wordware
+ VBA For Excel Made Simple (Made Simple Programming)|https://isbndb.com/book/9780750660976|Darlington, Keith|2005-09-28T00:00:01Z|Made Simple
+ VBA Programming in Excel: Learn With Examples|https://isbndb.com/book/9781499283358|Thomas, Mrs Susan|2014-04-27T00:00:01Z|CreateSpace Independent Publishing Platform
+ Beginning Access 2002 Vba|https://isbndb.com/book/9781861008213|Smith, Richard and Sussman, Dave and Blackburn, Ian and Colby, John and Homer, Mark and Reid, Martin and Turley, Paul and Watson, Helmut and Blackburn, Ian and Horner, Mark and Smith, Robert|2003|Wrox Press
+ Learn Microsoft Excel 2002: VBA Programming with XML and ASP|https://isbndb.com/book/9781556227615|Korol, Julitta|2003|Wordware Publishing, Inc.
+ Excel 2010: VBA Programming (Ilt)|https://isbndb.com/book/9781426029219|Tremblay, Don|2011-06-10T00:00:01Z|Crisp Pub Inc
+ VBA Programming in Business Economics|https://isbndb.com/book/9788757422672|WÃÂ¸hlk, Sanne|2010|Djoef Publishing
+ Excel 2002 VBA Programmers Reference|https://isbndb.com/book/9781861005700|Bovey, Rob and Rosenberg, Robert|2001-11T|Peer Information
+ Access Vba Programming Interview Questions You'll Most Likely Be Asked|https://isbndb.com/book/9781468170894|Publishers, Vibrant|2012-01-10t00:00:01z|Createspace Independent Publishing Platform
+ VBA For Dummies (For Dummies Series)|https://isbndb.com/book/9780764505676|Cummings, Steve|1999-08-25T00:00:01Z|For Dummies
+ Excel for Windows 95 Power Programming with VBA|https://isbndb.com/book/9780764530012|Walkenbach, John|1996|Wiley
+ Developing Solutions with Office 2000 Components and VBA|https://isbndb.com/book/9780130263056|AITKEN|2000|Pearson
+ Excel 2003 Programacion con VBA / Excel 2003 Power Programming With VBA (Programación) (Spanish Edition)|https://isbndb.com/book/9788441517134|Walkenbach, John|2004-06-07T00:00:01Z|ANAYA MULTIMEDIA
+ Excel 2003: VBA Programming (Course ILT)|https://isbndb.com/book/9780619204105|Course Technology|2004-02-01T00:00:01Z|Crisp Pub Inc
+ Course ILT Access 2003: VBA Programming|https://isbndb.com/book/9780619203832|Course Technology|2004|Crisp Pub Inc
+ Access 2003: VBA Programming, 2nd Edition, Student Manual (ILT)|https://isbndb.com/book/9781423913535|Axzo Press|2006-03-01T00:00:01Z|Axzo Press
+ Mastering VBA|https://isbndb.com/book/9788126506705|Hart-Davis, Guy|2005|TBS
+ Excel 2002: Programacion Con Vba/programming With Vba (Spanish Edition)|https://isbndb.com/book/9788441513495|Walkenbach, John|2005|Anaya Multimedia-Anaya Interactiva
+ Excel 2007: Programación con VBA / Power Programming With VBA (Spanish Edition)|https://isbndb.com/book/9788441522985|Walkenbach, John|2007|ANAYA MULTIMEDIA
+ Excel VBA - Intermediate Lessons in Excel VBA Programming for Professional Advancement|https://isbndb.com/book/9781393228288|Bradley, Peter|2019-07-03T00:00:01Z|Peter Bradley
+ Excel 2007 Vba Macro Prog.|https://isbndb.com/book/9780070703483|Shepherd|2010|Tata Mcgraw-hill Education
+ Beginning Access 95 Vba Programming|https://isbndb.com/book/9781874416647|Smith, Robert and Sussman, David|1996|Apress
+ Excel Vba Programming For Dummies|https://isbndb.com/book/9781118054352|John Walkenbach|2011|Wiley & Sons, Incorporated, John
+ EXCEL POWER PROGRAMMING WITH VBA & MACROS|https://isbndb.com/book/9798807092823|BINN, CARTY|2022|Independently published
+ Microsoft Access 2010 VBA Macro Programming|https://isbndb.com/book/9780071076685|Shepherd, Richard||India Professional
+ Excel 2007 Power Programming With Vba|https://isbndb.com/book/9780470151303|John Walkenbach|2007|John Wiley & Sons
+ VB & VBA in a Nutshell: The Language|https://isbndb.com/book/9780596519919|Paul Lomax|19981001|O'Reilly Media, Inc.
+ Learn Excel 2002 Vba Programming With Xml   Asp|https://isbndb.com/book/9788176567824|||Bpb Publications
+ Microsoft Excel Vba Programming For The Absolute Beginner|https://isbndb.com/book/9781592007301|Duane Birnbaum|2014|Cengage Learning
+ Excel 2010 VBA Programming and Practice - (with CD 1)|https://isbndb.com/book/9787121120398|LUO GANG JUN. ZHANG LAN XIN. HUANG ZHAO YANG.|2010|Electronics Industry Pub. Date :2010-12-1
+ Excel application with VBA programming in Economic Management (Second Edition)(Chinese Edition)|https://isbndb.com/book/9787302368977|XU JUN CHANG GUI YING|2014|清华大学出版社
+ EXCEL VBA programming applications and the Ministry of Education Practical IT personnel training in economic management textbook series(Chinese Edition)|https://isbndb.com/book/9787302332091|XU JUN|2013|Tsinghua University Press
+ Vba Bible|https://isbndb.com/book/9781980850618|Andrei Besedin|2018|Andrei Besedin
+ Beginning Vba Programming|https://isbndb.com/book/9781861002860|Steve Danielson / Joe Sutphin / Mike Sussman|1999|
+ Access Vba Programming|https://isbndb.com/book/9780070594081|Brown, Charles and Petrusha, Ron|2004|Mcgraw-hill Osborne Media
+ Mastering Autocad Vba|https://isbndb.com/book/9780782152821|Marion Cottingham|2006|John Wiley & Sons
+ Excel 2002 VBA|https://isbndb.com/book/9780764558597|Rob Bovey and Stephen Bullen and John Green and Robert Rosenberg|2004-08-18|Wiley
+ AutoCAD 2006 VBA|https://isbndb.com/book/9781430200697|Joe Sutphin|20061114|Springer Nature
+ VBA For Dummies|https://isbndb.com/book/9780470126998|John Paul Mueller|2007-04-09|Wiley
+ Excel 2010: Vba Programming|https://isbndb.com/book/9781426029226|Axzo Press|2011|Crisp Learning
+ From VBA to VSTO|https://isbndb.com/book/9781932802603|Dr. Gerard M. Verschuuren|20060412|Independent Publishers Group (Chicago Review Press)
+ Beginning Access 2002 VBA|https://isbndb.com/book/9780764558788|Robert Smith and Dave Sussman and Ian Blackburn and John Colby and Mark Horner and Martin Reid and Paul Turley and Helmut Watson|2004-08-18|Wiley
+ Word 2003: Vba Programming|https://isbndb.com/book/9781418890711|Michael Springer|2007|Crisp Pub Inc
+ Word 2003 Vba Programming|https://isbndb.com/book/9780619205379|||Course Technology Inc
+ Autocad Platform Customization: Vba|https://isbndb.com/book/9781118798935|Lee Ambrosius|2015|Sybex
+ Excel Vba And Excel Macros: Mastering Excel Vba, Tips And Tricks Of Vba Programming And Mastering Excel Macros|https://isbndb.com/book/9781071154335|Smith and Hein|2019|Independently Published
+ Excel VBA for Physicists|https://isbndb.com/book/9781681744629|Bernard V Liengme|20161207|Morgan & Claypool Publishers
+ Brilliant Excel VBA Programming|https://isbndb.com/book/9780273772903|Curtis Frye|20130307|Pearson International Content
+ Pro Excel 2007 VBA|https://isbndb.com/book/9781430205807|Jim DeMarco|20080529|Springer Nature
+ Course Ilt: Microsoft Vba Programming|https://isbndb.com/book/9780619068202|Course Technology|2001|Crisp Pub Inc
+ Excel VBA 24-Hour Trainer|https://isbndb.com/book/9781118991404|Tom Urtis|2015-03-23|Wiley Professional Development (P&T)
+ Excel Vba Programming For Dummies|https://isbndb.com/book/9781118490389|John Walkenbach|2013|John Wiley & Sons
+ Vba Programming, Instructor's Edition (ilt)|https://isbndb.com/book/9780619068219|Axzo Press|2001|Axzo Press
+ Excel 2007 Vba Programmer's Reference|https://isbndb.com/book/9780470046432|||Wiley
+ Excel Vba In Easy Steps|https://isbndb.com/book/9780760757321|Robinson and Ed|2004|In Easy Steps Limited
+ Excel Vba Programming For Dummies|https://isbndb.com/book/9781119077442|John Walkenbach|2015|John Wiley & Sons
+ Excel Vba Programming For Dummies|https://isbndb.com/book/9780764578526|John Walkenbach||
+ Excel VBA 24-hour trainer|https://isbndb.com/book/9780470890691|Urtis, Tom.|2011|Wiley
+ Excel 2007 VBA Macro Programming|https://isbndb.com/book/9780071627016|Richard Shepherd|20091122|McGraw-Hill Professional
+ Introduction To Programming Using Vba|https://isbndb.com/book/9780787299859|James Bates|2002|Kendall Hunt Pub Co
+ Excel Vba Programming For Dummies|https://isbndb.com/book/9780471730583|Craig D. Knuckles|2005|John Wiley & Sons Inc
+ Computing with Excel and VBA|https://isbndb.com/book/9781449625368|Oakland University S.I. Krishan|04/25/2014|Jones & Bartlett Learning
+ Excel 2007 VBA Programmer's Reference|https://isbndb.com/book/9781118169360|John Green and Stephen Bullen and Rob Bovey and Michael Alexander|2011-08-10|Wiley
+ Writing Excel Macros with VBA|https://isbndb.com/book/9780596516963|Steven Roman, PhD|20020625|O'Reilly Media, Inc.
+ Writing Excel Macros with VBA|https://isbndb.com/book/9780596555238|Steven Roman, PhD|20020625|O'Reilly Media, Inc.
+ Excel VBA Programming For Dummies|https://isbndb.com/book/9781119843085|Dick Kusleika|2021-12-20|Wiley
+ Access VBA Programming For Dummies|https://isbndb.com/book/9780764578564|Alan Simpson|2004-08-26|Wiley
+ Definitive Guide to Excel VBA|https://isbndb.com/book/9781430208617|Michael Kofler|20080101|Springer Nature
+ Excel Programming with VBA Starter|https://isbndb.com/book/9781849688451|Robert Martin|20121018|Packt Publishing
+ Numerical Methods with VBA Programming|https://isbndb.com/book/9781449616229|The University of Tennessee at Chattanooga James Hiestand|08/2009|Jones & Bartlett Learning
+ Definitive Guide to Excel VBA|https://isbndb.com/book/9781430206668|Michael Kofler|20080101|Springer Nature
+ Engineering Analysis & Modeling With Excel Vba|https://isbndb.com/book/9781495295188|Matthew E. Moran|2014|
+ Mastering VBA for Microsoft Office 2013|https://isbndb.com/book/9781118750223|Richard Mansfield|2013-08-19|Wiley Professional Development (P&T)
+ Access X Power Programming With Vba|https://isbndb.com/book/9780470046586|Taylor Allen G.|2009|John Wiley & Sons Inc
+ Autocad Vba Programming: Tools And Techniques|https://isbndb.com/book/9781929629671|John Gibb and  Bill Kramer|1999|San Francisco, Ca : Miller Freeman Books, 1999.
+ Excel 2013 Power Programming With Vba|https://isbndb.com/book/9781118491805|John Walkenbach|2013|Wiley & Sons, Limited, John
+ It Resources, Vba Programming Access 2002|https://isbndb.com/book/9782746015340|Michele Amelot|2002|Eni Publishing
+ Excel 2007 Vba Programming For Dummies|https://isbndb.com/book/9780470142363|Walkenbach, John and Pieterse, Jan P. Nederveen||Wiley
+ Excel 2016 Power Programming with VBA|https://isbndb.com/book/9781119067566|Michael Alexander, Richard Kusleika|02/2016|Wiley Professional Development (P&T)
+ VBA Automation for Excel 2019 Cookbook|https://isbndb.com/book/9781789616330|Mike Van Niekerk|18-09-2020|Packt Publishing
+ Access 2007 Vba Programming For Dummies|https://isbndb.com/book/9780470148044|Joseph C. Stockman and Alan Simpson|2007|For Dummies
+ Excel Vba Programming: Learn Excel Vba Programming Fast And Easy! (programming Is Easy) (volume 9)|https://isbndb.com/book/9781519269263|Matthew Matthew Gimson|2015-11-13|Createspace Independent Publishing Platform
+ Programming Excel with VBA and .NET|https://isbndb.com/book/9781449379056|Jeff Webb; Steve Saunders|20060425|O'Reilly Media, Inc.
+ Excel 2007 Power Programming with VBA|https://isbndb.com/book/9781118050682|John Walkenbach|2011-07-05|Wiley
+ An Introduction to Excel VBA Programming|https://isbndb.com/book/9781315280677|Guojun Gan|20170508|Taylor & Francis
+ Excel 2010 Power Programming with VBA|https://isbndb.com/book/9780470625507|John Walkenbach|2010-04-09|Wiley
+ Programming Excel with VBA and .NET|https://isbndb.com/book/9780596518202|Jeff Webb|20060425|O'Reilly Media, Inc.
+ Excel 2007 VBA Programming For Dummies|https://isbndb.com/book/9781118050804|John Walkenbach|2011-02-08|Wiley
+ Learn MS Excel 2000 VBA Programming|https://isbndb.com/book/9781556227035|Julitta Korol|2000|Wordware Publishing Inc.
+ Access 2007 VBA Programming For Dummies|https://isbndb.com/book/9781118050750|Joseph C. Stockman and Alan Simpson|2011-02-08|Wiley
+ Course Ilt: Microsoft Word 2000: Vba Programming|https://isbndb.com/book/9780619054328|Course Technology|2001|Crisp Pub Inc
+ Course Ilt: Microsoft Excel 2000: Vba Programming|https://isbndb.com/book/9780619022662|Course Technology|2001|Crisp Pub Inc
+ Excel VBA in easy steps, 2nd Ed|https://isbndb.com/book/9781840787702|Mike McGrath|2017-01-04|In Easy Steps Limited
+ Excel 2003 Power Programming With Vba Set|https://isbndb.com/book/9780470231555|John Walkenbach|2007|John Wiley & Sons
+ Structured Finance Modeling with Object-Oriented VBA|https://isbndb.com/book/9781118160664|Evan Tick|2011-07-28|Wiley
+ SAP interface programming with RFC and VBA|https://isbndb.com/book/9783347574793|Karl Josef Hensel|2022-02-21|tredition
+ Professional Financial Computing Using Excel and VBA|https://isbndb.com/book/9781118179086|Donny C. F. Lai and Humphrey K. K. Tung and Michael C. S. Wong and Stephen Ng|2011-12-28|Wiley
+ Excel Vba : A Step-by-step Comprehensive Guide On Excel Vba Programming Tips And Tricks For Effective Strategies|https://isbndb.com/book/9781795358293|Peter Bradley|2019|Independently Published
+ Excel 2007: Vba Programming + Certblaster, Instructor's Edition (ilt)|https://isbndb.com/book/9781423951087|Axzo Press|2007|Axzo Press
+ Excel 2007 Vba Programming With Xml And Asp|https://isbndb.com/book/9780763782764|Julitta Korol|2009|Jones & Bartlett Publishers
+ Excel 2007: Vba Programming + Certblaster, Student Manual (ilt)|https://isbndb.com/book/9781423951070|Axzo Press|2007|Axzo Press
+ Excel Macros: Vba Programming For Beginners Part 1|https://isbndb.com/book/9781986624756|Vijay Kumar|2018|Createspace Independent Publishing Platform
+ Microsoft Office 97 Programming With Vba For Dummies|https://isbndb.com/book/9780764501821|Karen Jaskolka and Mike Gilbert|1997|John Wiley & Sons Inc
+ Microsoft Access Vba Programming For The Absolute Beginner|https://isbndb.com/book/9781598637540|Michael Vine|2007|Cengage Learning
+ Access 2007 Vba Made Accessible (visual Training Series)|https://isbndb.com/book/9781932802399|Dr. Gerard Verschuuren|2008|Holy Macro! Books
+ Microsoft Excel Vba Programming For The Absolute Beginner|https://isbndb.com/book/9780585439853|||Indianapolis, In : Premier Press, 2002.
+ Excel 2003: Vba Programming, 2nd Edition, Instructor's Edition|https://isbndb.com/book/9781418890698|Axzo Press|2006|
+ Advanced Modelling in Finance using Excel and VBA|https://isbndb.com/book/9780470061664|Mary Jackson and Mike Staunton|2006-08-30|Wiley
+ Excel 2007 Power Programming With Vba (mr. Spreadsheet's Bookshelf)|https://isbndb.com/book/9780555034408|John Walkenbach|2007|John Wiley & Sons
+ Ms Office Excel 2003 Vba Programming Course Ilt Manual|https://isbndb.com/book/9780619204129|Y Ilt Course Technology|2004|Crisp Pub Inc
+ Excel 2003: Vba Programming, 2nd Edition, Student Manual (ilt)|https://isbndb.com/book/9781418890681|Axzo Press|2006|Axzo Press
+ Microsoft Access 2000 Vba Fundamentals/mastering Set (training Kit)|https://isbndb.com/book/9780735608146|Evan Callahan and Microsoft Press|1999|Microsoft Press
+ Excel 2007: Vba Programming + Certblaster, Student Manual With Data (ilt)|https://isbndb.com/book/9781423951094|Axzo Press|2007|Axzo Press
+ Excel Vba Programming:   Automating Excel Through Visual Basic For Application|https://isbndb.com/book/9781393703150|Steven Bright|2018-09-10|Monday Sadiku
+ Learn Microsoft Excel 2002 Vba Programming With Xml And Asp|https://isbndb.com/book/9780585448312|Julitta Korol||Plano, Tex. : Wordware Pub., C2003.
+ Excel 2003: Vba Programming, 2nd Edition, Student Manual With Data (ilt)|https://isbndb.com/book/9781418890704|Axzo Press|2006|Axzo Press
+ Studyguide For Numerical Methods With Vba Programming By James Hiestand, Isbn 9780763749644|https://isbndb.com/book/9781618126832|Cram101 Textbook Reviews and James Hiestand||Cram101
+ Microsoft Excel Vba Programming For The Absolute Beginner (for The Absolute Beginner (series).)|https://isbndb.com/book/9788120320536|Duane Birnbaum|2002|
+
+## Publications about VBA from Semantic Scholar
+pipeTable
+ title|titleLink|authors|year|citations|influentialCitations
+ Implementing Large-Scale Optimization Models in Excel Using VBA|https://www.semanticscholar.org/paper/2787f44c655cc1e4e6afe553ed569ed6734ecfe4|L. LeBlanc and Michael R. Galbreth|2007|13|0
+ Definitive Guide to Excel VBA|https://www.semanticscholar.org/paper/d986402a56cb4b7a4db85d1beb8684a1d6a214c0|M. Kofler|2000|9|0
+ Teaching Engineering Analysis Using VBA for Excel|https://www.semanticscholar.org/paper/6392ad290b4ee6877eaf00775febce967bbc94b4|T. Chambers|2006|5|1
+ Life Cycle Cost Prediction for Rolling Stocks in Maintenance Phase Based on VBA Language Program|https://www.semanticscholar.org/paper/def1989130b8031bab240fe1bc7c5eac6e0b37bc|Jiamin Fang and Lin Ji|2015|4|0
+ The design and implementation of the Examination System Based on the Word — VBA|https://www.semanticscholar.org/paper/f18f10722ebf7002129b1a5fcc70e3f5f5d4bddd|Z. Peiping and Dai Zucheng|2015|1|0
+
+keyboardNav tcl.html actionscript.html
+
+import ../footer.scroll
