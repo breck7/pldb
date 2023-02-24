@@ -87,7 +87,7 @@ linguistGrammarRepo https://github.com/harogaston/Sublime-Modula-2
   
     smbT = RECORD			(* Huffman's tree *)
       ch			: CHAR;
-      n			: CARDINAL; (* frequency of char ch *)
+      n			: CARDINAL; (* frequncy of char ch *)
       left,right,next	: smbTp;
     END;
   

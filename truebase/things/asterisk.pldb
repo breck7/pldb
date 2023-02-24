@@ -20,7 +20,7 @@ codeMirror asterisk
 helloWorldCollection Asterisk dialplan
  ;; Hello world in Asterisk
  
- extent => s,1,NoOp(Hello World)
+ exten => s,1,NoOp(Hello World)
 
 fileType text
 isOpenSource true

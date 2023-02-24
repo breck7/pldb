@@ -77,7 +77,7 @@ linguistGrammarRepo https://github.com/hernad/atom-language-harbour
      #xtranslate hb_MemoWrit( [<x,...>] )  => MemoWrit( <x> )
      #xtranslate hb_dbExists( <t> )        => File( <t> )
      #xtranslate hb_dbPack()               => __dbPack()
-     #xtranslate hb_default( @<v>, <x> )   => if( StrTran( ValType( <v> ), "M", "C" ) == StrTran( ValType( <x> ), "M", "C" ),, <v> := <x>, )
+     #xtranslate hb_default( @<v>, <x> )   => iif( StrTran( ValType( <v> ), "M", "C" ) == StrTran( ValType( <x> ), "M", "C" ),, <v> := <x>, )
   #endif
   
 

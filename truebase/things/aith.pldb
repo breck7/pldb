@@ -2,7 +2,7 @@ title Aith
 appeared 2020
 type pl
 creators Superstar64
-description Aith is a performant systems programming language with am empathises on type systems. As of now Aith is very early stages and very little is implemented.
+description Aith is a perfomant systems programming language with am empathises on type systems. As of now Aith is very early stages and very little is implemented.
 website https://github.com/Superstar64/aith
 country Unknown
 originCommunity https://github.com/Superstar64/aith
@@ -72,7 +72,7 @@ example
          x + y
      };
  
-     ambiguous = function(x) {
+     ambigous = function(x) {
          inline y = 1;
          x
      };

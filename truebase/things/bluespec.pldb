@@ -52,7 +52,7 @@ linguistGrammarRepo https://github.com/thotypous/sublime-bsv
   interface Lamp;
      method Bool changed;
      method Action show_offs;
-     method Action show_owns;
+     method Action show_ons;
      method Action reset;
   endinterface
   
@@ -66,7 +66,7 @@ linguistGrammarRepo https://github.com/thotypous/sublime-bsv
         $write (name + " off, ");
      endmethod
   
-     method Action show_owns;
+     method Action show_ons;
         if (!prev && lamp)
         $write (name + " on, ");
      endmethod
@@ -128,7 +128,7 @@ linguistGrammarRepo https://github.com/thotypous/sublime-bsv
      endrule
   
      function do_offs(l) = l.show_offs;
-        function do_owns(l) = l.show_owns;
+        function do_ons(l) = l.show_ons;
         function do_reset(l) = l.reset;
   
         function do_it(f);
@@ -147,7 +147,7 @@ linguistGrammarRepo https://github.com/thotypous/sublime-bsv
   
         rule show (any_changes());
         do_it(do_offs);
-        do_it(do_owns);
+        do_it(do_ons);
         do_it(do_reset);
         $display("(at time %d)", $time);
      endrule

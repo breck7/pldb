@@ -59,7 +59,7 @@ linguistGrammarRepo https://github.com/jflex-de/jflex.tmbundle.git
   
   /* Java 1.2 language lexer specification */
   
-  /* Use together with unicode.flex for Unicode preprocessing */
+  /* Use together with unicode.flex for Unicode preprocesssing */
   /* and java12.cup for a Java 1.2 parser                      */
   
   /* Note that this lexer specification is not tuned for speed.

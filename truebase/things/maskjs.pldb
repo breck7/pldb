@@ -62,7 +62,7 @@ linguistGrammarRepo https://github.com/tenbits/sublime-mask
       if (currentUser) {
           
           .account >
-              a href='/account' >
+              a href='/acount' >
                   'Hello, ~[currentUser.username]'
       }
   }

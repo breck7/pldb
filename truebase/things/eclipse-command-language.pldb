@@ -101,16 +101,16 @@ linguistGrammarRepo https://github.com/alnkpa/sublimeprolog
   
   /**
    * Question 1.15
-   * checkPeriod(+ListVar).
+   * checkPeriode(+ListVar).
    */
   % TODO Any better solution?
-  checkPeriod(ListVar):-
+  checkPeriode(ListVar):-
   	length(ListVar, Length),
   	Length < 10.
-  checkPeriod([X1, X2, X3, X4, X5, X6, X7, X8, X9, X10|Rest]):-
+  checkPeriode([X1, X2, X3, X4, X5, X6, X7, X8, X9, X10|Rest]):-
   	X1 =:= X10,
-  	checkPeriod([X2, X3, X4, X5, X6, X7, X8, X9, X10|Rest]).
-  % faitListe(ListVar, 18, -9, 9), suite(ListVar), checkPeriod(ListVar). => 99 solutions
+  	checkPeriode([X2, X3, X4, X5, X6, X7, X8, X9, X10|Rest]).
+  % faitListe(ListVar, 18, -9, 9), suite(ListVar), checkPeriode(ListVar). => 99 solutions
   
   
   /**

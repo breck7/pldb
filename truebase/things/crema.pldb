@@ -11,8 +11,8 @@ keywords as bool break char def double else eq extern false foreach ge gt if int
 
 example
  def int binarySearch(int values[], int searchTarget){
-     int upperBound = list_length(values) - 1    # Upper index of search region
-     int lowerBound = 0                       # Lower index of search region
+     int upperBound = list_length(values) - 1    # Upper index of seach region
+     int lowerBound = 0                       # Lower index of seach region
      int delta = list_length(values)     # Distance between upperBound and lowerBound
      int middleValueIndex = 0    # Mid-point index between upper and lower bounds
      int middleValue = 0         # Value at the mid-point index
@@ -27,7 +27,7 @@ example
              break
          }
  
-         #Re-adjust the lower and upper bounds for next iteration
+         #Re-adjust the lower and upper bounds for next itteration
          if(middleValue >= searchTarget){
              upperBound = middleValueIndex - 1
          }else{
