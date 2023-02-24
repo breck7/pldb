@@ -26,7 +26,7 @@ const { Utils } = require("jtree/products/Utils.js")
 const { pldbBase } = require("./PLDB.js")
 
 const rootDir = path.join(__dirname, "..")
-const languagesDir = path.join(rootDir, "site", "languages")
+const trueBasePagesDir = path.join(rootDir, "site", "truebase")
 
 const testTree = {}
 testTree.ensureNoErrorsInGrammar = areEqual => {
@@ -49,7 +49,7 @@ testTree.ensureNoErrorsInBlog = areEqual => {
 	const checkScroll = folderPath => {
 		// Do not check all ~5K generated scroll files for errors b/c redundant and wastes time.
 		// Just check the Javascript one below.
-		if (folderPath.includes("languages")) return
+		if (folderPath.includes("truebase")) return
 		const folder = new ScrollFolder(folderPath)
 		areEqual(
 			folder.grammarErrors.length,
@@ -63,7 +63,7 @@ testTree.ensureNoErrorsInBlog = areEqual => {
 	cli.verbose = false
 	Object.keys(cli.findScrollsInDirRecursive(rootDir)).map(checkScroll)
 
-	const jsPagePath = path.join(languagesDir, "javascript.scroll")
+	const jsPagePath = path.join(trueBasePagesDir, "javascript.scroll")
 	const jsFile = new ScrollFile(Disk.read(jsPagePath), jsPagePath)
 	const errors = jsFile.scrollScriptProgram.getAllErrors()
 	if (errors.length) console.log(errors)

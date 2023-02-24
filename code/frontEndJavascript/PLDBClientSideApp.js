@@ -368,7 +368,7 @@ githubRepo https://github.com/elixir-lang/elixir</pre>`
 		document.getElementById("quickLinks").innerHTML =
 			Utils.linkify(`<b>PLDB on ${title}:</b><br>
 Git: https://github.com/breck7/pldb/blob/main/truebase/things/${permalink}.pldb<br>
-HTML page: https://pldb.com/languages/${permalink}.html
+HTML page: https://pldb.com/truebase/${permalink}.html
 <br><br>
 <b>Links about ${title}:</b><br>
 ${links.join("<br>")}

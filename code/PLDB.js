@@ -45,7 +45,7 @@ const docsFolder = path.join(siteFolder, "docs")
 const listsFolder = path.join(siteFolder, "lists")
 const postsFolder = path.join(siteFolder, "posts")
 const featuresFolder = path.join(siteFolder, "features")
-const languagesFolder = path.join(siteFolder, "languages") // Todo: eventually redirect away from /languages?
+const trueBasePagesFolder = path.join(siteFolder, "truebase")
 
 const linkManyAftertext = links =>
   links.map((link, index) => `${index + 1}.`).join(" ") + // notice the dot is part of the link. a hack to make it more unique for aftertext matching.
@@ -210,7 +210,7 @@ class PLDBFile extends TrueBaseFile {
   }
 
   get webPermalink() {
-    return `https://pldb.com/languages/${this.permalink}`
+    return `https://pldb.com/truebase/${this.permalink}`
   }
 
   get filePath() {
@@ -1713,14 +1713,14 @@ class Feature {
 
     const positives = this.languagesWithThisFeature
     const positiveText = `* Languages *with* ${title} include ${positives
-      .map(file => `<a href="../languages/${file.permalink}">${file.title}</a>`)
+      .map(file => `<a href="../truebase/${file.permalink}">${file.title}</a>`)
       .join(", ")}`
 
     const negatives = this.languagesWithoutThisFeature
     const negativeText = negatives.length
       ? `* Languages *without* ${title} include ${negatives
           .map(
-            file => `<a href="../languages/${file.permalink}">${file.title}</a>`
+            file => `<a href="../truebase/${file.permalink}">${file.title}</a>`
           )
           .join(", ")}`
       : ""
@@ -1738,7 +1738,7 @@ class Feature {
     const examplesText = Object.values(grouped)
       .map(group => {
         const links = group
-          .map(hit => `<a href="../languages/${hit.id}.html">${hit.title}</a>`)
+          .map(hit => `<a href="../truebase/${hit.id}.html">${hit.title}</a>`)
           .join(", ")
         return `codeWithHeader Example from ${links}:
  ${shiftRight(removeReturnChars(lodash.escape(group[0].example)), 1)}`
@@ -2293,7 +2293,7 @@ wikipedia`.split("\n")
             label: object.title,
             appeared: parseInt(object.appeared),
             id: object.pldbId,
-            url: `/languages/${object.pldbId}.html`
+            url: `/truebase/${object.pldbId}.html`
           }
         }),
         undefined,
@@ -2427,7 +2427,7 @@ wikipedia`.split("\n")
       row.langs = row.ids
         .map(id => {
           const file = this.getFile(id)
-          return `<a href='../languages/${file.permalink}'>${file.title}</a>`
+          return `<a href='../truebase/${file.permalink}'>${file.title}</a>`
         })
         .join(" ")
       row.frequency =
@@ -2505,7 +2505,7 @@ class PLDBServer extends TrueBaseServer {
           authorEmail
         )
         changedFiles.forEach(file =>
-          file.writeScrollFileIfChanged(languagesFolder)
+          file.writeScrollFileIfChanged(trueBasePagesFolder)
         )
 
         res.redirect(`/thankYou.html?commit=${hash}`)
@@ -2522,8 +2522,13 @@ class PLDBServer extends TrueBaseServer {
       this.folder.getFile(req.params.id.toLowerCase())
         ? res
             .status(302)
-            .redirect(`/languages/${req.params.id.toLowerCase()}.html`)
+            .redirect(`/truebase/${req.params.id.toLowerCase()}.html`)
         : next()
+    )
+
+    // /languages => /truebase redirect
+    app.get("/languages/:id", (req, res, next) =>
+      res.status(302).redirect(`/truebase/${req.params.id}`)
     )
 
     this.addRedirects(app)
@@ -2804,7 +2809,7 @@ class PLDBServerCommands {
   }
 
   buildScrollFilesFromPLDBFilesCommand() {
-    pldbBase.forEach(file => file.writeScrollFileIfChanged(languagesFolder))
+    pldbBase.forEach(file => file.writeScrollFileIfChanged(trueBasePagesFolder))
   }
 
   buildAcknowledgementsImportsCommand() {
@@ -2836,7 +2841,7 @@ class PLDBServerCommands {
     buildImportsFile(path.join(pagesDir, "acknowledgementsImports.scroll"), {
       WRITTEN_IN_TABLE: lodash
         .sortBy(writtenIn, "rank")
-        .map(file => `- ${file.title}\n link ../languages/${file.permalink}`)
+        .map(file => `- ${file.title}\n link ../truebase/${file.permalink}`)
         .join("\n"),
       PACKAGES_TABLE: npmPackages
         .map(s => `- ${s}\n https://www.npmjs.com/package/${s}`)
@@ -2953,7 +2958,7 @@ sandbox/lib/show-hint.js`.split("\n")
       const title = file.get("title")
       return {
         title,
-        titleLink: `../languages/${file.permalink}`,
+        titleLink: `../truebase/${file.permalink}`,
         rank,
         type,
         appeared
@@ -2980,7 +2985,7 @@ sandbox/lib/show-hint.js`.split("\n")
       .map(file => {
         return {
           name: file.title,
-          nameLink: `../languages/${file.permalink}`,
+          nameLink: `../truebase/${file.permalink}`,
           rank: file.rank,
           extensions: file.extensions
         }
@@ -3057,7 +3062,7 @@ sandbox/lib/show-hint.js`.split("\n")
     const rows = Object.keys(entities).map(name => {
       const group = entities[name]
       const languages = group
-        .map(lang => `<a href='../languages/${lang.id}.html'>${lang.title}</a>`)
+        .map(lang => `<a href='../truebase/${lang.id}.html'>${lang.title}</a>`)
         .join(" - ")
       const count = group.length
       const top = -Math.min(...group.map(lang => lang.languageRank))
@@ -3104,7 +3109,7 @@ sandbox/lib/show-hint.js`.split("\n")
             )}'>${name}</a>`,
         languages: group
           .map(
-            file => `<a href='../languages/${file.permalink}'>${file.title}</a>`
+            file => `<a href='../truebase/${file.permalink}'>${file.title}</a>`
           )
           .join(" - "),
         count: group.length,
@@ -3127,9 +3132,7 @@ sandbox/lib/show-hint.js`.split("\n")
     buildImportsFile(path.join(siteFolder, "homepageImports.scroll"), {
       TOP_LANGS: pldbBase.topLanguages
         .slice(0, 10)
-        .map(
-          file => `<a href="./languages/${file.permalink}">${file.title}</a>`
-        )
+        .map(file => `<a href="./truebase/${file.permalink}">${file.title}</a>`)
         .join(" · "),
       NEW_POSTS: postsScroll
         .getGroup("index")
@@ -3143,7 +3146,7 @@ sandbox/lib/show-hint.js`.split("\n")
     const folders = [
       siteFolder,
       listsFolder,
-      languagesFolder,
+      trueBasePagesFolder,
       pagesDir,
       docsFolder,
       postsFolder,
