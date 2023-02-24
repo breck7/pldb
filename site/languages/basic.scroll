@@ -1,0 +1,239 @@
+import header.scroll
+
+title BASIC
+
+title BASIC - Programming language
+ hidden
+
+html
+ <a class="prevLang" href="reason.html">&lt;</a>
+ <a class="nextLang" href="awk.html">&gt;</a>
+
+viewSourceUrl https://github.com/breck7/pldb/blob/main/database/things/basic.pldb
+
+startColumns 4
+
+html <div class="quickLinks"><a href="https://en.wikipedia.org/wiki/BASIC"><svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="98.05px" height="98.05px" viewBox="0 0 98.05 98.05" style="enable-background:new 0 0 98.05 98.05;" xml:space="preserve"><path d="M98.023,17.465l-19.584-0.056c-0.004,0.711-0.006,1.563-0.017,2.121c1.664,0.039,5.922,0.822,7.257,4.327L66.92,67.155 c-0.919-2.149-9.643-21.528-10.639-24.02l9.072-18.818c1.873-2.863,5.455-4.709,8.918-4.843l-0.01-1.968L55.42,17.489 c-0.045,0.499,0.001,1.548-0.068,2.069c5.315,0.144,7.215,1.334,5.941,4.508c-2.102,4.776-6.51,13.824-7.372,15.475 c-2.696-5.635-4.41-9.972-7.345-16.064c-1.266-2.823,1.529-3.922,4.485-4.004v-1.981l-21.82-0.067 c0.016,0.93-0.021,1.451-0.021,2.131c3.041,0.046,6.988,0.371,8.562,3.019c2.087,4.063,9.044,20.194,11.149,24.514 c-2.685,5.153-9.207,17.341-11.544,21.913c-3.348-7.43-15.732-36.689-19.232-44.241c-1.304-3.218,3.732-5.077,6.646-5.213 l0.019-2.148L0,17.398c0.005,0.646,0.027,1.71,0.029,2.187c4.025-0.037,9.908,6.573,11.588,10.683 c7.244,16.811,14.719,33.524,21.928,50.349c0.002,0.029,2.256,0.059,2.281,0.008c4.717-9.653,10.229-19.797,15.206-29.56 L63.588,80.64c0.005,0.004,2.082,0.016,2.093,0.007c7.962-18.196,19.892-46.118,23.794-54.933c1.588-3.767,4.245-6.064,8.543-6.194 l0.032-1.956L98.023,17.465z"/></svg></a> <a href="https://en.wikibooks.org/wiki/BASIC_Programming"><svg viewBox="0 0 500 500" xmlns="http://www.w3.org/2000/svg"><g transform="matrix(1, 0, 0, 1, 13.859316, 9.109739)"><g><g><path d="M340.732,0H55v485h375V94.518L340.732,0z M345,26.364L405.1,90H345V26.364z M415,470H70V15h260v90h85V470z"/><rect x="102.5" y="191" width="280" height="15"/><rect x="102.5" y="141" width="120" height="15"/><rect x="102.5" y="241" width="280" height="15"/><rect x="102.5" y="291" width="280" height="15"/><rect x="102.5" y="341" width="280" height="15"/><rect x="102.5" y="391" width="280" height="15"/></g></g></g></svg></a></div>
+
+* BASIC, aka Beginner's All-purpose Symbolic Instruction Code, is a <a href="../lists/languages.html?filter=pl">programming language</a> created in 1964 by John G. Kemeny and Thomas E. Kurtz.
+ link ../lists/languages.html?filter=1964 1964
+ link ../lists/creators.html#johnGKemeny John G. Kemeny
+ link ../lists/creators.html#thomasEKurtz Thomas E. Kurtz
+
+kpiTable
+ #60 <span title="TotalRank: 223 Jobs: 103 Users: 146 Facts: 115 Links: 5">on PLDB</span>
+ 59 Years Old
+ 7.0k <span title="Crude user estimate from a linear model.">Users</span>
+ 57 <span title="Books about or leveraging BASIC">Books</span>
+ 13 <span title="Academic publications about or leveraging BASIC">Papers</span>
+ 829 <span title="BASIC repos on GitHub.">Repos</span>
+
+* Try now: <a href="https://riju.codes/basic">Riju</a>
+
+* BASIC (an acronym for Beginner's All-purpose Symbolic Instruction Code) is a family of general-purpose, high-level programming languages whose design philosophy emphasizes ease of use. In 1964, John G. Kemeny and Thomas E. Read more on Wikipedia...
+ https://en.wikipedia.org/wiki/BASIC Read more on Wikipedia...
+
+- BASIC Wikipedia page
+ https://en.wikipedia.org/wiki/BASIC
+- BASIC docs
+ https://en.wikibooks.org/wiki/BASIC_Programming
+- There are at least 829 BASIC repos on <a href="https://github.com/search?q=language:BASIC">GitHub</a>
+- BASIC first developed in <a href="../lists/originCommunities.html#dartmouthCollege">Dartmouth College</a>
+- file extensions for BASIC include bas
+- The  Google BigQuery Public Dataset GitHub snapshot shows 61 users using BASIC in 66 repos on <a href="https://api.github.com/search/repositories?q=language:BASIC">GitHub</a>
+- There are 1,336 <a href="https://projecteuler.net/language=BASIC">Project Euler</a> users using BASIC
+- Explore BASIC snippets on <a href="http://www.rosettacode.org/wiki/Category:BASIC">Rosetta Code</a>
+- BASIC on HOPL
+ https://hopl.info/showlanguage.prx?exp=176
+- BASIC appears in the <a href="https://www.tiobe.com/tiobe-index/">TIOBE Index</a>
+- <a href="antlr.html">ANTLR</a> <a href="https://github.com/antlr/grammars-v4/tree/master/basic">grammar</a> for BASIC
+- See also: (55 related languages)<a href="atari-basic.html">Atari BASIC</a>, <a href="dartmouth-basic.html">Dartmouth BASIC</a>, <a href="apple-basic.html">Apple BASIC</a>, <a href="sinclair-basic.html">Sinclair BASIC</a>, <a href="commodore-basic.html">Commodore BASIC</a>, <a href="bbc-basic.html">BBC BASIC</a>, <a href="ti-basic.html">TI-BASIC</a>, <a href="casio-basic.html">Casio BASIC</a>, <a href="microsoft-basic.html">Microsoft BASIC</a>, <a href="liberty-basic.html">Liberty BASIC</a>, <a href="visual-basic.html">Visual Basic</a>, <a href="freebasic.html">FreeBASIC</a>, <a href="powerbasic.html">PowerBASIC</a>, <a href="gambas.html">Gambas</a>, <a href="algol-60.html">ALGOL 60</a>, <a href="fortran.html">Fortran</a>, <a href="joss.html">JOSS</a>, <a href="comal.html">COMAL</a>, <a href="visual-basic.net.html">Visual Basic .NET</a>, <a href="grass.html">GRASS</a>, <a href="autoit.html">AutoIt</a>, <a href="autohotkey.html">AutoHotkey</a>, <a href="basic-plus.html">BASIC-PLUS</a>, <a href="hp-time-shared-basic.html">HP Time-Shared BASIC</a>, <a href="pick-operating-system.html">Pick operating system</a>, <a href="msx-basic.html">MSX BASIC</a>, <a href="tiny-basic.html">Tiny BASIC</a>, <a href="li-chen-wang.html">Li-Chen Wang</a>, <a href="altair-basic.html">Altair BASIC</a>, <a href="mbasic.html">MBASIC</a>, <a href="ibm-basica.html">IBM BASICA</a>, <a href="qbasic.html">QBasic</a>, <a href="pascal.html">Pascal</a>, <a href="turbo-basic.html">Turbo Basic</a>, <a href="amigabasic.html">AmigaBASIC</a>, <a href="c.html">C</a>, <a href="excel-app.html">Microsoft Excel</a>, <a href="vbscript.html">VBScript</a>, <a href="csharp.html">C#</a>, <a href="java.html">Java</a>, <a href="qb64.html">QB64</a>, <a href="rapidq.html">RapidQ</a>, <a href="purebasic.html">PureBasic</a>, <a href="xojo.html">Xojo</a>, <a href="true-basic.html">True BASIC</a>, <a href="microsoft-small-basic.html">Microsoft Small Basic</a>, <a href="quickbasic.html">QuickBASIC</a>, <a href="gw-basic.html">GW-BASIC</a>, <a href="lotusscript.html">LotusScript</a>, <a href="vba.html">VBA</a>, <a href="chipmunk-basic.html">Chipmunk Basic</a>, <a href="hp-basic-for-openvms.html">HP BASIC for OpenVMS</a>, <a href="superbasic.html">SuperBASIC</a>, <a href="staroffice-basic.html">StarOffice Basic</a>, <a href="forth.html">Forth</a>
+- HTML of this page generated by <a href="https://github.com/breck7/pldb/blob/main/code/LanguagePage.ts">LanguagePage.ts</a>
+- <a href="https://pldb.com/edit/basic">Improve our BASIC file</a>
+
+html <br>
+
+codeWithHeader Example from <a href='https://riju.codes/basic'>Riju</a>:
+ PRINT &quot;Hello, world!&quot;
+ 
+
+codeWithHeader Example from <a href='https://github.com/leachim6/hello-world/blob/main/b/BASIC.bas'>hello-world</a>:
+ 10 PRINT &quot;Hello World&quot;
+ 20 END
+ 
+
+codeWithHeader Example from <a href='http://helloworldcollection.de/#Beginner's'>the Hello World Collection</a>:
+ 10 REM Hello World in BASIC
+ 20 PRINT &quot;Hello World!&quot;
+ 
+
+codeWithHeader Example from <a href='https://en.wikipedia.org/wiki/BASIC'>Wikipedia</a>:
+ Public Class StarsProgram
+    Public Shared Sub Main()
+       Dim UserName, Answer, stars As String, NumStars As Integer
+       Console.Write(&quot;What is your name: &quot;)
+       UserName = Console.ReadLine()
+       Console.WriteLine(&quot;Hello {0}&quot;, UserName)
+       Do
+          Console.Write(&quot;How many stars do you want: &quot;)
+          NumStars = CInt(Console.ReadLine())
+          stars = New String(&quot;*&quot;, NumStars)
+          Console.WriteLine(stars)
+          Do
+             Console.Write(&quot;Do you want more stars? &quot;)
+             Answer = Console.ReadLine()
+          Loop Until Answer &lt;&gt; &quot;&quot;
+          Answer = Answer.Substring(0, 1)
+       Loop While Answer.ToUpper() = &quot;Y&quot;
+       Console.WriteLine(&quot;Goodbye {0}&quot;, UserName)
+    End Sub
+ End Class
+
+endColumns
+
+## Language <a href="../lists/features.html">features</a>
+
+treeTable
+ row
+  Feature Strings
+  FeatureLink ../features/hasStrings.html
+  Supported <span class="hasFeature">✓</span>
+  Token "
+  Example
+   "Hello world"
+ row
+  Feature Case Insensitive Identifiers
+  FeatureLink ../features/hasCaseInsensitiveIdentifiers.html
+  Supported <span class="hasFeature">✓</span>
+  Token 
+  Example
+ row
+  Feature Print() Debugging
+  FeatureLink ../features/hasPrintDebugging.html
+  Supported <span class="hasFeature">✓</span>
+  Token PRINT
+  Example
+ row
+  Feature Line Comments
+  FeatureLink ../features/hasLineComments.html
+  Supported <span class="hasFeature">✓</span>
+  Token REM
+  Example
+   REM A comment
+ row
+  Feature Gotos
+  FeatureLink ../features/hasGotos.html
+  Supported <span class="hasFeature">✓</span>
+  Token 
+  Example
+   10 REM This BASIC program shows the use of the PRINT and GOTO Statements.
+   15 REM It fills the screen with the phrase "HELLO"
+   20 PRINT "HELLO"
+   30 GOTO 20
+ row
+  Feature Comments
+  FeatureLink ../features/hasComments.html
+  Supported <span class="hasFeature">✓</span>
+  Token 
+  Example
+   REM This BASIC program shows the use of the PRINT and GOTO Statements.
+ row
+  Feature Case Sensitivity
+  FeatureLink ../features/isCaseSensitive.html
+  Supported <span class="doesNotHaveFeature">X</span>
+  Token 
+  Example
+ row
+  Feature Semantic Indentation
+  FeatureLink ../features/hasSemanticIndentation.html
+  Supported <span class="doesNotHaveFeature">X</span>
+  Token 
+  Example
+ row
+  Feature Operator Overloading
+  FeatureLink ../features/hasOperatorOverloading.html
+  Supported <span class="doesNotHaveFeature">X</span>
+  Token 
+  Example
+
+## Books about BASIC from ISBNdb
+pipeTable
+ title|titleLink|authors|year|publisher
+ Programming in Visual Basic 2010|https://isbndb.com/book/9780073517254|Bradley, Julia Case and Millspaugh, Anita|2010|McGraw-Hill Education
+ Advanced Programming Using Visual Basic 2008|https://isbndb.com/book/9780073517223|Bradley, Julia Case and Millspaugh, Anita|2009|McGraw-Hill Education
+ Basic Engineering Circuit Analysis|https://isbndb.com/book/9780470128695|Irwin, J. David and Nelms, R. Mark|2008|Wiley
+ Microsoft Visual Basic Programs to Accompany Programming Logic and Design|https://isbndb.com/book/9781285867397|Smith, Jo Ann|2014|Cengage Learning
+ An Introduction to Programming Using Visual Basic 2010, 8th Edition|https://isbndb.com/book/9780132128568|Schneider, David I.|2010|Pearson
+ Clearly Visual Basic: Programming with Microsoft Visual Basic 2010 (SAM 2010 Compatible Products)|https://isbndb.com/book/9781111530150|Zak, Diane|2011|Cengage Learning
+ Beginning Visual Basic 2012|https://isbndb.com/book/9781118311813|Newsome, Bryan|2012|Wrox
+ Microsoft Visual Basic 2010: For Windows, Web, Office, and Database Applications: Comprehensive (SAM 2010 Compatible Products)|https://isbndb.com/book/9780538468473|Shelly, Gary B. and Hoisington, Corinne|2010|Cengage Learning
+ Intro to Programming Using Visual Basic 2012 plus MyProgrammingLab with Pearson eText -- Access Card Package (9th Edition)|https://isbndb.com/book/9780133450866|Schneider, David I.|2013|Pearson
+ An Introduction to Programming with Visual Basic 6.0, Update Edition (4th Edition)|https://isbndb.com/book/9780131427075|Schneider, David I.|2003|Pearson
+ Microsoft Visual Basic 2010 for Windows, Web, and Office Applications: Complete (SAM 2010 Compatible Products)|https://isbndb.com/book/9780538468480|Shelly, Gary B. and Hoisington, Corinne|2010|Cengage Learning
+ Microsoft Visual Basic 2005 for Windows and Mobile Applications: Introductory|https://isbndb.com/book/9780619254803|Gary B. Shelly and Thomas J. Cashman and Corinne Hoisington and Corrine Hoisington|2006|Cengage Learning
+ Starting Out With Visual Basic 2008 Update|https://isbndb.com/book/9780136076957|Gaddis, Tony and Irvine, Kip R.|2009|Pearson
+ Structural Equation Modeling With EQS: Basic Concepts, Applications, and Programming, Second Edition (Multivariate Applications Series)|https://isbndb.com/book/9780805841268|Byrne, Barbara M. and Byrne, Barbara M.|2006|Routledge
+ CATIA V5: Macro Programming with Visual Basic Script|https://isbndb.com/book/9780071800020|Ziethen, Dieter|2013|McGraw-Hill Education
+ Programming with Microsoft Visual Basic 2010 (VB.Net Programming)|https://isbndb.com/book/9781111529437|Zak, Diane|2011|Course Technology
+ Structural Equation Modeling with Mplus: Basic Concepts, Applications, and Programming (Multivariate Applications Series)|https://isbndb.com/book/9781848728394|Byrne, Barbara M.|2011|Routledge
+ Structural Equation Modeling with Mplus: Basic Concepts, Applications, and Programming (Multivariate Applications Series)|https://isbndb.com/book/9780805859867|Byrne, Barbara M.|2011|Routledge
+ Introduction to Computer Programming with Visual Basic 6: A Problem-Solving Approach|https://isbndb.com/book/9780130165336|Harriger, Alka R. and Lisack, Susan K. and Gotwals, John K. and Lutes, Kyle D.|2000|Prentice Hall
+ Visual Basic 2010 How to Program (5th Edition) (Pearson Custom Computer Science)|https://isbndb.com/book/9780132152136|Deitel, Paul and Deitel, Harvey|2010|Pearson
+ Applied Medical Image Processing: A Basic Course|https://isbndb.com/book/9781466555570|Birkfellner, Wolfgang|2014|CRC Press
+ Programming with Microsoft Visual Basic 2008 (Available Titles Skills Assessment Manager (SAM) - Office 2010)|https://isbndb.com/book/9780324782769|Zak, Diane|2009|Cengage Learning
+ Machine language for beginners: Machine language programming for BASIC language programmers|https://isbndb.com/book/9780942386110|Mansfield, Richard|1983|Compute! Books
+ Microsoft Visual Basic 2005: RELOADED, Second Edition (Visual Studio)|https://isbndb.com/book/9781418836238|Zak, Diane|2006|Course Technology
+ Introduction to Matlab 7 for Engineers (McGraw-Hill's Best: Basic Engineering Series and Tools)|https://isbndb.com/book/9780072548181|Palm III,William|2004|McGraw-Hill Science/Engineering/Math
+ Visual Basic .NET Tips & Techniques|https://isbndb.com/book/9780072223187|Kris Jamsa|2002|McGraw-Hill Companies
+ Introduction to Computer Programming with Visual Basic 6 (Series in Programming and Development)|https://isbndb.com/book/9781580762410|Harriger, Alka R. and Lisack, Susan K.|1999|Pearson
+ Microsoft Visual Basic 2010 for Windows Applications: Introductory (Available Titles Skills Assessment Manager (SAM) - Office 2010)|https://isbndb.com/book/9780538468459|Shelly, Gary B. and Hoisington, Corinne|2010|Cengage Learning
+ Beginning Visual Basic 2005|https://isbndb.com/book/9780764574016|Willis, Thearon and Newsome, Bryan|2005|Wrox
+ Visual Basic Game Programming with DirectX (The Premier Press Game Development Series)|https://isbndb.com/book/9781931841252|Harbour, Jonathan S.|2002|Course Technology PTR
+ Visual Basic Programming for the Absolute Beginner w/CD|https://isbndb.com/book/9780761535539|Vine, Michael|2002|Course Technology PTR
+ Evolutionary Computation 1: Basic Algorithms and Operators|https://isbndb.com/book/9780750306645||2000|CRC Press
+ Basic Proof Theory 2ed (Cambridge Tracts in Theoretical Computer Science)|https://isbndb.com/book/9780521779111|Troelstra/Schwichtenberg|2008|Cambridge University Press
+ Visual Basic 6 How to Program|https://isbndb.com/book/9780134569550|Deitel, Harvey M. and Deitel, Paul J. and Nieto, Tem R.|1998|Prentice Hall
+ Sams Teach Yourself Visual Basic 2012 in 24 Hours|https://isbndb.com/book/9780672336294|Foxall, James|2012|Sams
+ Python Algorithms: Mastering Basic Algorithms in the Python Language (Expert's Voice in Open Source)|https://isbndb.com/book/9781430232377|Hetland, Magnus Lie|2010|Apress
+ Visual Basic Answers!|https://isbndb.com/book/9780072118957|Otey, Michael|1999|McGraw-Hill Osborne Media
+ Introduction to Programming Using Visual Basic 2008, An (w/VS2008 DVD) (7th Edition)|https://isbndb.com/book/9780136060727|Schneider, David I.|2008|Prentice Hall
+ BASIC Computer Games: Microcomputer Edition|https://isbndb.com/book/9780894800528|Ahl, David H.|1978|Workman Pub Co
+ More Basic Is Child's Play, Commodore Edition|https://isbndb.com/book/9780136010715|Robert T Grauer|1985|Prentice-hall
+ Sams Teach Yourself Visual Basic 2010 in 24 Hours Complete Starter Kit|https://isbndb.com/book/9780672331138|Foxall, James|2010|Sams Publishing
+ Visual Basic 6 For Dummies|https://isbndb.com/book/9780764503702|Wang, Wallace|1998|For Dummies
+ Beginning Microsoft Visual Basic 2008|https://isbndb.com/book/9780470191347|Willis, Thearon and Newsome, Bryan|2008|Wrox
+ Programming In Visual Basic 6.0|https://isbndb.com/book/9780030263910|Spear, Robert J. and Spear, Timothy M.|2021|Harcourt College Pub
+ Alef Basic: A Guide To Basic Programming With Facts, Fun, And Games From Jewish History And Tradition|https://isbndb.com/book/9780930494315|Rachelle S. Heller|1984|Kar-ben Pub
+ Mastering Visual Basic .NET|https://isbndb.com/book/9780782128772|Petroutsos, Evangelos|2001|Sybex
+ Let's Learn Basic: A Kids' Introduction to Basic Programming on the Commodore 64 (The Little, Brown Microcomputer Bookshelf)|https://isbndb.com/book/9780316787253|Shneiderman, Ben|1984|Little Brown & Co
+ The Apple Basic Manual (kids Working With Computers)|https://isbndb.com/book/9780516084220|Thomas Milton Kemnitz and Lynne Mass|1985|Childrens Press
+ Doing Objects in Visual Basic 2005|https://isbndb.com/book/9780321320490|Kurata, Deborah|2007|Addison-Wesley Professional
+ Sams Teach Yourself Visual Basic .NET Web Programming in 21 Days|https://isbndb.com/book/9780672322365|Aitken, Peter|2001|Sams Publishing
+ Complete Basic Programming|https://isbndb.com/book/9780314779212|Mandell and Steven L|1984|West Pub. Co
+ Basic Programming|https://isbndb.com/book/9780471018636|Kemeny, John G.|1980|Halsted Pr
+ Basic Fortran Iv Programming (irwin-dorsey Information Processing Series)|https://isbndb.com/book/9780256015805|Donald H Ford|1974|R. D. Irwin
+ Introduction To Programming With Visual Basic .NET|https://isbndb.com/book/9780763724788|Bronson, Gary|2004|Jones & Bartlett Learning
+ Win32 API Programming with Visual Basic|https://isbndb.com/book/9781565926318|Steven Roman, PhD|1999|O'Reilly Media
+ Beginning Programming with Liberty BASIC|https://isbndb.com/book/9780557228119|Gundel, Carl|2010|lulu.com
+ Practical Magic: A Translation of Basic Neuro-Linguistic Programming into Clinical Psychotherapy|https://isbndb.com/book/9780916990084|Lankton, Stephen|1980|Meta Pubns
+
+## Publications about BASIC from Semantic Scholar
+pipeTable
+ title|titleLink|authors|year|citations|influentialCitations
+ Distributed pC++ Basic Ideas for an Object Parallel Language|https://www.semanticscholar.org/paper/f0d0e8e319f4f733d066f6490cee425a2d864d84|F. Bodin and P. Beckman and Dennis Gannon and S. Narayana and S. Yang|1993|176|9
+ A diagnosis of beginning programmers' misconceptions of BASIC programming statements|https://www.semanticscholar.org/paper/1ba008748c01d4bb8889e765f513f0f3dfbf4a53|P. Bayman and R. Mayer|1983|147|9
+ Design and First Results of a Psychometric Test for Measuring Basic Programming Abilities|https://www.semanticscholar.org/paper/3b3ef3c47c104d7a28597c006b3deae8fb8d89e8|A. Mühling and Alexander Ruf and Peter Hubwieser|2015|75|4
+ The Effect of BASIC Programming Language Instruction on High School Students’ Problem Solving Ability and Computer Anxiety|https://www.semanticscholar.org/paper/ca3f13b926c35417fd729735adefd8510ce7e194|D. Palumbo and W. M. Reed|1991|60|0
+ Improving students' understanding of basic programming concepts through visual programming language: The role of self-efficacy|https://www.semanticscholar.org/paper/99b5c0c121932ce81498732539ba360252f7dd0d|Chun-Yen Tsai|2019|49|3
+ The Effect of the BASIC Programming Language on Problem-Solving Skills and Computer Anxiety|https://www.semanticscholar.org/paper/fc814e59d1827cc9468f14da81c494160d91f619|W. M. Reed and D. Palumbo|1987|40|2
+ Basic concepts in object oriented programming|https://www.semanticscholar.org/paper/ba2be42b631dda8c51d9c90e26755353ce53bab4|K. Nygaard|1986|39|1
+ Evaluating a BASIC approach to sensor network node programming|https://www.semanticscholar.org/paper/ada19ba29f19f212feb635b69a52ae61141a50b3|J. S. Miller and P. Dinda and R. Dick|2009|25|0
+ A rationale and description of a CAI program to teach the BASIC programming language|https://www.semanticscholar.org/paper/b1f3ca8dcb3a193ca2228d0bb720de7ae140d44b|A. Barr and M. Beard and R. Atkinson|1975|25|0
+ Developing Student Programming and Problem-Solving Skills with Visual Basic|https://www.semanticscholar.org/paper/9efa9995668bc1c3be84e436e3b030f2e1abc4d3|Del Siegle|2009|18|1
+ Python Algorithms: Mastering Basic Algorithms in the Python Language|https://www.semanticscholar.org/paper/acd47deeb3a2880764cdb66af506c9cd7ea3741a|Magnus Lie Hetland|2010|15|1
+ BCOOPL: Basic concurrent object-oriented programming language|https://www.semanticscholar.org/paper/a71956655add35c8a7a7bb8f2bce594fa9af1675|H. D. Bruin|2000|7|0
+ BASIC Programming Language|https://www.semanticscholar.org/paper/567862576b247d16ce2a942ed3527fa5126e47a2|T. Kurtz|2003|2|0
+
+keyboardNav reason.html awk.html
+
+import ../footer.scroll

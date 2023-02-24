@@ -1,0 +1,214 @@
+import header.scroll
+
+title Oz
+
+title Oz - Programming language
+ hidden
+
+html
+ <a class="prevLang" href="vbscript.html">&lt;</a>
+ <a class="nextLang" href="cil.html">&gt;</a>
+
+viewSourceUrl https://github.com/breck7/pldb/blob/main/database/things/oz.pldb
+
+startColumns 4
+
+html <div class="quickLinks"><a href="http://mozart.github.io"><svg role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12.7166 3.79541C12.2835 3.49716 11.7165 3.49716 11.2834 3.79541L4.14336 8.7121C3.81027 8.94146 3.60747 9.31108 3.59247 9.70797C3.54064 11.0799 3.4857 13.4824 3.63658 15.1877C3.7504 16.4742 4.05336 18.1747 4.29944 19.4256C4.41371 20.0066 4.91937 20.4284 5.52037 20.4284H8.84433C8.98594 20.4284 9.10074 20.3111 9.10074 20.1665V15.9754C9.10074 14.9627 9.90433 14.1417 10.8956 14.1417H13.4091C14.4004 14.1417 15.204 14.9627 15.204 15.9754V20.1665C15.204 20.3111 15.3188 20.4284 15.4604 20.4284H18.4796C19.0806 20.4284 19.5863 20.0066 19.7006 19.4256C19.9466 18.1747 20.2496 16.4742 20.3634 15.1877C20.5143 13.4824 20.4594 11.0799 20.4075 9.70797C20.3925 9.31108 20.1897 8.94146 19.8566 8.7121L12.7166 3.79541ZM10.4235 2.49217C11.3764 1.83602 12.6236 1.83602 13.5765 2.49217L20.7165 7.40886C21.4457 7.91098 21.9104 8.73651 21.9448 9.64736C21.9966 11.0178 22.0564 13.5119 21.8956 15.3292C21.7738 16.7067 21.4561 18.4786 21.2089 19.7353C20.9461 21.0711 19.7924 22.0001 18.4796 22.0001H15.4604C14.4691 22.0001 13.6655 21.1791 13.6655 20.1665V15.9754C13.6655 15.8307 13.5507 15.7134 13.4091 15.7134H10.8956C10.754 15.7134 10.6392 15.8307 10.6392 15.9754V20.1665C10.6392 21.1791 9.83561 22.0001 8.84433 22.0001H5.52037C4.20761 22.0001 3.05389 21.0711 2.79113 19.7353C2.54392 18.4786 2.22624 16.7067 2.10437 15.3292C1.94358 13.5119 2.00338 11.0178 2.05515 9.64736C2.08957 8.73652 2.55427 7.91098 3.28346 7.40886L10.4235 2.49217Z"/></svg></a> <a href="https://en.wikipedia.org/wiki/Oz_(programming_language)"><svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="98.05px" height="98.05px" viewBox="0 0 98.05 98.05" style="enable-background:new 0 0 98.05 98.05;" xml:space="preserve"><path d="M98.023,17.465l-19.584-0.056c-0.004,0.711-0.006,1.563-0.017,2.121c1.664,0.039,5.922,0.822,7.257,4.327L66.92,67.155 c-0.919-2.149-9.643-21.528-10.639-24.02l9.072-18.818c1.873-2.863,5.455-4.709,8.918-4.843l-0.01-1.968L55.42,17.489 c-0.045,0.499,0.001,1.548-0.068,2.069c5.315,0.144,7.215,1.334,5.941,4.508c-2.102,4.776-6.51,13.824-7.372,15.475 c-2.696-5.635-4.41-9.972-7.345-16.064c-1.266-2.823,1.529-3.922,4.485-4.004v-1.981l-21.82-0.067 c0.016,0.93-0.021,1.451-0.021,2.131c3.041,0.046,6.988,0.371,8.562,3.019c2.087,4.063,9.044,20.194,11.149,24.514 c-2.685,5.153-9.207,17.341-11.544,21.913c-3.348-7.43-15.732-36.689-19.232-44.241c-1.304-3.218,3.732-5.077,6.646-5.213 l0.019-2.148L0,17.398c0.005,0.646,0.027,1.71,0.029,2.187c4.025-0.037,9.908,6.573,11.588,10.683 c7.244,16.811,14.719,33.524,21.928,50.349c0.002,0.029,2.256,0.059,2.281,0.008c4.717-9.653,10.229-19.797,15.206-29.56 L63.588,80.64c0.005,0.004,2.082,0.016,2.093,0.007c7.962-18.196,19.892-46.118,23.794-54.933c1.588-3.767,4.245-6.064,8.543-6.194 l0.032-1.956L98.023,17.465z"/></svg></a> <a href="http://mozart2.org/mozart-v1/doc-1.4.0/tutorial/index.html"><svg viewBox="0 0 500 500" xmlns="http://www.w3.org/2000/svg"><g transform="matrix(1, 0, 0, 1, 13.859316, 9.109739)"><g><g><path d="M340.732,0H55v485h375V94.518L340.732,0z M345,26.364L405.1,90H345V26.364z M415,470H70V15h260v90h85V470z"/><rect x="102.5" y="191" width="280" height="15"/><rect x="102.5" y="141" width="120" height="15"/><rect x="102.5" y="241" width="280" height="15"/><rect x="102.5" y="291" width="280" height="15"/><rect x="102.5" y="341" width="280" height="15"/><rect x="102.5" y="391" width="280" height="15"/></g></g></g></svg></a></div>
+
+* Oz is a <a href="../lists/languages.html?filter=pl">programming language</a> created in 1991 by Gert Smolka.
+ link ../lists/languages.html?filter=1991 1991
+ link ../lists/creators.html#gertSmolka Gert Smolka
+
+kpiTable
+ #127 <span title="TotalRank: 373 Jobs: 103 Users: 663 Facts: 93 Links: 177">on PLDB</span>
+ 32 Years Old
+ 661 <span title="Crude user estimate from a linear model.">Users</span>
+ 0 <span title="Books about or leveraging Oz">Books</span>
+ 22 <span title="Academic publications about or leveraging Oz">Papers</span>
+ 371 <span title="Oz repos on GitHub.">Repos</span>
+
+* Try now: <a href="https://riju.codes/oz">Riju</a>
+
+* Oz is a multiparadigm programming language, developed in the Programming Systems Lab at Université catholique de Louvain, for programming language education. It has a canonical textbook: Concepts, Techniques, and Models of Computer Programming. Oz was first designed by Gert Smolka and his students in 1991. Read more on Wikipedia...
+ https://en.wikipedia.org/wiki/Oz_(programming_language) Read more on Wikipedia...
+
+- Oz website
+ http://mozart.github.io
+- Oz Wikipedia page
+ https://en.wikipedia.org/wiki/Oz_(programming_language)
+- PLDB has 2 documentation sites for Oz: <a href="https://www.ps.uni-saarland.de/oz2/documentation/">www.ps.uni-saarland.de</a>, <a href="http://mozart2.org/mozart-v1/doc-1.4.0/tutorial/index.html">mozart2.org</a>
+- There are at least 371 Oz repos on <a href="https://github.com/search?q=language:Oz">GitHub</a>
+- Oz first developed in <a href="../lists/originCommunities.html#universitatDesSaarlandes">Universität des Saarlandes</a>
+- file extensions for Oz include oz
+- The  Google BigQuery Public Dataset GitHub snapshot shows 70 users using Oz in 72 repos on <a href="https://api.github.com/search/repositories?q=language:Oz">GitHub</a>
+- There are 4 <a href="https://projecteuler.net/language=Oz">Project Euler</a> users using Oz
+- Explore Oz snippets on <a href="http://www.rosettacode.org/wiki/Category:Oz">Rosetta Code</a>
+- Oz on HOPL
+ https://hopl.info/showlanguage.prx?exp=2327
+- Oz appears in the <a href="https://www.tiobe.com/tiobe-index/">TIOBE Index</a>
+- <a href="codemirror.html">CodeMirror</a> <a href="https://github.com/codemirror/codemirror5/tree/master/mode/oz">package</a> for syntax highlighting Oz
+- GitHub supports <a href="https://github.com/eregon/oz-tmbundle" title="The package used for syntax highlighting by GitHub Linguist.">syntax highlighting</a> for Oz
+- Indeed.com has 0 matches for <a href="https://www.indeed.com/jobs?q=oz engineer">"oz engineer"</a>.
+- See also: (11 related languages)<a href="erlang.html">Erlang</a>, <a href="lisp.html">Lisp</a>, <a href="prolog.html">Prolog</a>, <a href="alice.html">Alice</a>, <a href="scala.html">Scala</a>, <a href="unix.html">Unix</a>, <a href="freebsd.html">FreeBSD</a>, <a href="linux.html">Linux</a>, <a href="curry.html">Curry</a>, <a href="mercury.html">Mercury</a>, <a href="visual-prolog.html">Visual Prolog</a>
+- HTML of this page generated by <a href="https://github.com/breck7/pldb/blob/main/code/LanguagePage.ts">LanguagePage.ts</a>
+- <a href="https://pldb.com/edit/oz">Improve our Oz file</a>
+
+html <br>
+
+codeWithHeader Example from <a href='https://riju.codes/oz'>Riju</a>:
+ functor
+ import
+     Application
+     System
+ define
+     {System.showInfo &#39;Hello, world!&#39;}
+     {Application.exit 0}
+ end
+
+codeWithHeader Example from <a href='http://helloworldcollection.de/#Oz'>the Hello World Collection</a>:
+ % Hello World in Oz
+ 
+ functor
+ import
+   System
+   Application
+ define
+   {System.showInfo &quot;Hello World!&quot;}
+   {Application.exit 0}
+ end
+
+codeWithHeader Example from <a href='https://github.com/eregon/oz-tmbundle'>Linguist</a>:
+ % You can get a lot of information about Oz by following theses links  :
+ % - http://mozart.github.io/
+ % - http://en.wikipedia.org/wiki/Oz_(programming_language)
+ % There is also a well known book that uses Oz for pedagogical reason :
+ % - http://mitpress.mit.edu/books/concepts-techniques-and-models-computer-programming
+ % And there are two courses on edX about &#39;Paradigms of Computer Programming&#39; that also uses Oz for pedagogical reason :
+ % - https://www.edx.org/node/2751#.VHijtfl5OSo
+ % - https://www.edx.org/node/4436#.VHijzfl5OSo
+ %
+ % Here is an example of some code written with Oz.
+ 
+ declare
+ % Computes the sum of square of the N first integers.
+ fun {Sum N}
+   local SumAux in
+     fun {SumAux N Acc}
+       if N==0 then Acc
+       else
+         {Sum N-1 Acc}
+       end
+     end
+     {SumAux N 0}
+   end
+ end
+ 
+ % Returns true if N is a prime and false otherwise
+ fun {Prime N}
+   local PrimeAcc in
+     fun {PrimeAcc N Acc}
+ 	    if(N == 1) then false
+ 	    elseif(Acc == 1) then true
+ 	    else
+ 	      if (N mod Acc) == 0 then false
+ 	      else
+ 	       {PrimeAcc N Acc-1}
+ 	      end
+ 	   end
+     end
+   {PrimeAcc N (N div 2)}
+   end
+ end
+ 
+ % Reverse a list using cells and for loop (instead of recursivity)
+ fun {Reverse L}
+   local RevList in
+     RevList = {NewCell nil}
+     for E in L do
+       RevList := E|@RevList
+     end
+     @RevList
+   end
+ end
+ 
+
+codeWithHeader Example from <a href='https://en.wikipedia.org/wiki/Oz_(programming_language)'>Wikipedia</a>:
+ class Counter
+    attr val
+    meth init(Value)
+       val:=Value
+    end
+    meth browse
+       {Browse @val}
+    end
+    meth inc(Value)
+       val :=@val+Value
+    end
+ end
+ 
+ local C in
+    C = {New Counter init(0)}
+    {C inc(6)}
+    {C browse}
+ end
+
+endColumns
+
+## Language <a href="../lists/features.html">features</a>
+
+treeTable
+ row
+  Feature Booleans
+  FeatureLink ../features/hasBooleans.html
+  Supported <span class="hasFeature">✓</span>
+  Token true false
+  Example
+ row
+  Feature Line Comments
+  FeatureLink ../features/hasLineComments.html
+  Supported <span class="hasFeature">✓</span>
+  Token %
+  Example
+   % A comment
+ row
+  Feature Comments
+  FeatureLink ../features/hasComments.html
+  Supported <span class="hasFeature">✓</span>
+  Token 
+  Example
+ row
+  Feature Semantic Indentation
+  FeatureLink ../features/hasSemanticIndentation.html
+  Supported <span class="doesNotHaveFeature">X</span>
+  Token 
+  Example
+
+## Publications about Oz from Semantic Scholar
+pipeTable
+ title|titleLink|authors|year|citations|influentialCitations
+ The Oz Programming Model|https://www.semanticscholar.org/paper/a0ae020a14de2b76598b81f8c2556cc0a3f7cc22|G. Smolka|1996|344|15
+ Mobile objects in distributed Oz|https://www.semanticscholar.org/paper/39864a975b5e91de623665e080337f066e9c6f77|P. V. Roy and Seif Haridi and P. Brand and G. Smolka and Michael Mehl and R. Scheidhauer|1997|116|4
+ Object-Oriented Concurrent Constraint Programming in Oz|https://www.semanticscholar.org/paper/4b0b130602cca2044e027669c3e388b55cf50206|G. Smolka and M. Henz and J. Würtz|1993|111|0
+ Encapsulated Search and Constraint Programming in Oz|https://www.semanticscholar.org/paper/0f7e0b3ab153c5fd5796321eb29eae65d49932b0|Christian Schulte and G. Smolka and J. Würtz|1994|68|0
+ Using Oz for College Timetabling|https://www.semanticscholar.org/paper/17ecb640560df069fcfb43a79f11f0d5863f278c|M. Henz and J. Würtz|1995|65|1
+ The Definition of Kernel Oz|https://www.semanticscholar.org/paper/c67f30469ee981f91d7d65f0396de0534d34402f|G. Smolka|1994|57|2
+ Logic programming in the context of multiparadigm programming: the Oz experience|https://www.semanticscholar.org/paper/59de7c9bfad41d5a4b9372bbbdb20252235ca598|P. V. Roy and P. Brand and D. Duchier and Seif Haridi and M. Henz and Christian Schulte|2002|55|2
+ An overview of the design of Distributed Oz|https://www.semanticscholar.org/paper/628f81e7ea25a065a23d55dfa86aee641a18bb5e|Seif Haridi and P. V. Roy and G. Smolka|1997|54|1
+ Logic Programming in Oz with Mozart|https://www.semanticscholar.org/paper/d04967af2209e726a502d63365f4accbfe16a56e|P. V. Roy|1999|22|1
+ Virtual reality programming in Oz|https://www.semanticscholar.org/paper/e2a71cf789d9a7f33a36dce3d43d6009585a482b|Tomas Axling and Seif Haridi and L. Fahlén|1996|22|2
+ Objects in Oz|https://www.semanticscholar.org/paper/30077a00fcbcae9e8c88ca85b8f5489f1c82b1bd|M. Henz|1997|16|2
+ Strasheela: Design and Usage of a Music Composition Environment Based on the Oz Programming Model|https://www.semanticscholar.org/paper/3fb32d3ef26e56cd4091fb6702c459b2cd20f5ef|Torsten Anders and C. Anagnostopoulou and Michael Alcorn|2004|13|0
+ Lösen kombinatorischer Problem mit Constraintprogrammierung in Oz|https://www.semanticscholar.org/paper/2ac5f93874908107a52398cc928417df4e221e3b|Jörg Würtz|1998|10|0
+ Constraint-Based Scheduling in Oz|https://www.semanticscholar.org/paper/bfffc8e419b9c05b7999561dedd81f68f21a95a5|J. Würtz|1997|8|0
+ Constraint Programming in Oz|https://www.semanticscholar.org/paper/9733a192994b32c1ca5af41f1f49368201e28977|Tobias Müller and K. Popov and Christian Schulte and J. Würtz|1994|8|0
+ The CURRENT Platform: Building Conversational Agents in Oz|https://www.semanticscholar.org/paper/477e934569677d22b16a053575ce8d944df86b64|T. Lager and Fredrik Kronlid|2004|7|0
+ The Development of Oz and Mozart|https://www.semanticscholar.org/paper/f85fc3cdf9a8e32a383312d666c6f59a51ceb0f0|G. Smolka|2004|6|0
+ The Oz Programming Model (Extended Abstract)|https://www.semanticscholar.org/paper/20ee7067494999a4c05678b0305abbdbc808e283|G. Smolka|1995|5|0
+ A Program Verification System Based on Oz|https://www.semanticscholar.org/paper/9e17663abf4679c2fc0b7fa361fed7fe133cabd8|Isabelle Dony and B. L. Charlier|2004|3|0
+ A history of the Oz multiparadigm language|https://www.semanticscholar.org/paper/f7286d7f80225f0386ff7f5e1ceedaeaece12130|P. V. Roy and Seif Haridi and C. Schulte and G. Smolka|2020|3|0
+ The Oz Programming Language and System (Abstract)|https://www.semanticscholar.org/paper/c5d091b371a17b9dfa749dfde3afe2091329f85a|G. Smolka|1996|3|0
+ Compiling Formal Specifications to Oz Programs|https://www.semanticscholar.org/paper/7804cf5eb823a0acb992a37c7dc5f5f528bc2f30|Tim Wahls|2004|2|0
+
+keyboardNav vbscript.html cil.html
+
+import ../footer.scroll

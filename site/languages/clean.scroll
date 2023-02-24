@@ -1,0 +1,183 @@
+import header.scroll
+
+title Clean
+
+title Clean - Programming language
+ hidden
+
+html
+ <a class="prevLang" href="json5.html">&lt;</a>
+ <a class="nextLang" href="robotframework.html">&gt;</a>
+
+viewSourceUrl https://github.com/breck7/pldb/blob/main/database/things/clean.pldb
+
+startColumns 4
+
+html <div class="quickLinks"><a href="http://clean.cs.ru.nl"><svg role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12.7166 3.79541C12.2835 3.49716 11.7165 3.49716 11.2834 3.79541L4.14336 8.7121C3.81027 8.94146 3.60747 9.31108 3.59247 9.70797C3.54064 11.0799 3.4857 13.4824 3.63658 15.1877C3.7504 16.4742 4.05336 18.1747 4.29944 19.4256C4.41371 20.0066 4.91937 20.4284 5.52037 20.4284H8.84433C8.98594 20.4284 9.10074 20.3111 9.10074 20.1665V15.9754C9.10074 14.9627 9.90433 14.1417 10.8956 14.1417H13.4091C14.4004 14.1417 15.204 14.9627 15.204 15.9754V20.1665C15.204 20.3111 15.3188 20.4284 15.4604 20.4284H18.4796C19.0806 20.4284 19.5863 20.0066 19.7006 19.4256C19.9466 18.1747 20.2496 16.4742 20.3634 15.1877C20.5143 13.4824 20.4594 11.0799 20.4075 9.70797C20.3925 9.31108 20.1897 8.94146 19.8566 8.7121L12.7166 3.79541ZM10.4235 2.49217C11.3764 1.83602 12.6236 1.83602 13.5765 2.49217L20.7165 7.40886C21.4457 7.91098 21.9104 8.73651 21.9448 9.64736C21.9966 11.0178 22.0564 13.5119 21.8956 15.3292C21.7738 16.7067 21.4561 18.4786 21.2089 19.7353C20.9461 21.0711 19.7924 22.0001 18.4796 22.0001H15.4604C14.4691 22.0001 13.6655 21.1791 13.6655 20.1665V15.9754C13.6655 15.8307 13.5507 15.7134 13.4091 15.7134H10.8956C10.754 15.7134 10.6392 15.8307 10.6392 15.9754V20.1665C10.6392 21.1791 9.83561 22.0001 8.84433 22.0001H5.52037C4.20761 22.0001 3.05389 21.0711 2.79113 19.7353C2.54392 18.4786 2.22624 16.7067 2.10437 15.3292C1.94358 13.5119 2.00338 11.0178 2.05515 9.64736C2.08957 8.73652 2.55427 7.91098 3.28346 7.40886L10.4235 2.49217Z"/></svg></a> <a href="https://en.wikipedia.org/wiki/Clean_(programming_language)"><svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="98.05px" height="98.05px" viewBox="0 0 98.05 98.05" style="enable-background:new 0 0 98.05 98.05;" xml:space="preserve"><path d="M98.023,17.465l-19.584-0.056c-0.004,0.711-0.006,1.563-0.017,2.121c1.664,0.039,5.922,0.822,7.257,4.327L66.92,67.155 c-0.919-2.149-9.643-21.528-10.639-24.02l9.072-18.818c1.873-2.863,5.455-4.709,8.918-4.843l-0.01-1.968L55.42,17.489 c-0.045,0.499,0.001,1.548-0.068,2.069c5.315,0.144,7.215,1.334,5.941,4.508c-2.102,4.776-6.51,13.824-7.372,15.475 c-2.696-5.635-4.41-9.972-7.345-16.064c-1.266-2.823,1.529-3.922,4.485-4.004v-1.981l-21.82-0.067 c0.016,0.93-0.021,1.451-0.021,2.131c3.041,0.046,6.988,0.371,8.562,3.019c2.087,4.063,9.044,20.194,11.149,24.514 c-2.685,5.153-9.207,17.341-11.544,21.913c-3.348-7.43-15.732-36.689-19.232-44.241c-1.304-3.218,3.732-5.077,6.646-5.213 l0.019-2.148L0,17.398c0.005,0.646,0.027,1.71,0.029,2.187c4.025-0.037,9.908,6.573,11.588,10.683 c7.244,16.811,14.719,33.524,21.928,50.349c0.002,0.029,2.256,0.059,2.281,0.008c4.717-9.653,10.229-19.797,15.206-29.56 L63.588,80.64c0.005,0.004,2.082,0.016,2.093,0.007c7.962-18.196,19.892-46.118,23.794-54.933c1.588-3.767,4.245-6.064,8.543-6.194 l0.032-1.956L98.023,17.465z"/></svg></a> <a href="https://wiki.clean.cs.ru.nl/Documentation"><svg viewBox="0 0 500 500" xmlns="http://www.w3.org/2000/svg"><g transform="matrix(1, 0, 0, 1, 13.859316, 9.109739)"><g><g><path d="M340.732,0H55v485h375V94.518L340.732,0z M345,26.364L405.1,90H345V26.364z M415,470H70V15h260v90h85V470z"/><rect x="102.5" y="191" width="280" height="15"/><rect x="102.5" y="141" width="120" height="15"/><rect x="102.5" y="241" width="280" height="15"/><rect x="102.5" y="291" width="280" height="15"/><rect x="102.5" y="341" width="280" height="15"/><rect x="102.5" y="391" width="280" height="15"/></g></g></g></svg></a></div>
+
+* Clean is a <a href="../lists/languages.html?filter=pl">programming language</a> created in 1987.
+ link ../lists/languages.html?filter=1987 1987
+
+kpiTable
+ #230 <span title="TotalRank: 596 Jobs: 103 Users: 766 Facts: 169 Links: 324">on PLDB</span>
+ 36 Years Old
+ 481 <span title="Crude user estimate from a linear model.">Users</span>
+ 9 <span title="Books about or leveraging Clean">Books</span>
+ 5 <span title="Academic publications about or leveraging Clean">Papers</span>
+ 206 <span title="Clean repos on GitHub.">Repos</span>
+
+* Try now: <a href="https://riju.codes/clean">Riju</a> · <a href="https://tio.run/#clean">TIO</a>
+
+* Clean is a general-purpose purely functional computer programming language. For much of the language's active development history it was called Concurrent Clean, but this was dropped at some point.. Read more on Wikipedia...
+ https://en.wikipedia.org/wiki/Clean_(programming_language) Read more on Wikipedia...
+
+- Clean website
+ http://clean.cs.ru.nl
+- Clean Wikipedia page
+ https://en.wikipedia.org/wiki/Clean_(programming_language)
+- Clean docs
+ https://wiki.clean.cs.ru.nl/Documentation
+- There are at least 206 Clean repos on <a href="https://github.com/search?q=language:Clean">GitHub</a>
+- Clean first developed in <a href="../lists/originCommunities.html#radboudUniversityNijmegen">Radboud University Nijmegen</a>
+- file extensions for Clean include icl, dcl, abc and sapl
+- The  Google BigQuery Public Dataset GitHub snapshot shows 231 users using Clean in 263 repos on <a href="https://api.github.com/search/repositories?q=language:Clean">GitHub</a>
+- Explore Clean snippets on <a href="http://www.rosettacode.org/wiki/Category:Clean">Rosetta Code</a>
+- Clean on HOPL
+ https://hopl.info/showlanguage.prx?exp=1305
+- Clean appears in the <a href="https://www.tiobe.com/tiobe-index/">TIOBE Index</a>
+- <a href="pygments.html">Pygments</a> supports <a href="https://github.com/pygments/pygments/blob/master/pygments/lexers/clean.py">syntax highlighting</a> for Clean
+- GitHub supports <a href="https://github.com/timjs/atom-language-clean.git" title="The package used for syntax highlighting by GitHub Linguist.">syntax highlighting</a> for Clean
+- See also: (7 related languages)<a href="miranda.html">Miranda</a>, <a href="haskell.html">Haskell</a>, <a href="c.html">C</a>, <a href="solaris.html">Solaris</a>, <a href="linux.html">Linux</a>, <a href="fibonacci.html">Fibonacci</a>, <a href="prolog.html">Prolog</a>
+- HTML of this page generated by <a href="https://github.com/breck7/pldb/blob/main/code/LanguagePage.ts">LanguagePage.ts</a>
+- <a href="https://pldb.com/edit/clean">Improve our Clean file</a>
+
+html <br>
+
+codeWithHeader Example from <a href='https://godbolt.org/'>Compiler Explorer</a>:
+ module example
+ 
+ import StdInt
+ 
+ square :: Int -&gt; Int
+ square n = n * n
+ 
+ Start :: Int
+ Start = square 3
+ 
+
+codeWithHeader Example from <a href='https://riju.codes/clean'>Riju</a>:
+ module main
+ 
+ import StdEnv
+ 
+ Start world
+   #(console, world) = stdio world
+   #console = fwrites &quot;Hello, world!\n&quot; console
+   #(ok, world) = fclose console world
+   = world
+ 
+
+codeWithHeader Example from <a href='https://github.com/leachim6/hello-world/blob/main/c/Clean.icl'>hello-world</a>:
+ module hello
+ Start :: {#Char}
+ Start = &quot;Hello World&quot;
+ 
+
+codeWithHeader Example from <a href='http://helloworldcollection.de/#Clean'>the Hello World Collection</a>:
+ // Hello World in Clean
+ 
+ module hello
+ 
+ Start :: String
+ Start = &quot;Hello World!\n&quot;
+ 
+
+codeWithHeader Example from <a href='https://github.com/timjs/atom-language-clean.git'>Linguist</a>:
+ definition module GenMap
+ 
+ import StdGeneric
+ 
+ generic gMap a b :: .a -&gt; .b
+ derive gMap c, UNIT, PAIR, EITHER, CONS, FIELD, OBJECT, {}, {!} 
+ 
+ derive gMap [], (,), (,,),  (,,,), (,,,,), (,,,,,), (,,,,,,), (,,,,,,,)
+ 
+ 
+
+codeWithHeader Example from <a href='https://en.wikipedia.org/wiki/Clean_(programming_language)'>Wikipedia</a>:
+ (^) infixr 8 :: Int Int -&gt; Int
+   (^) x 0 = 1
+   (^) x n = x * x ^ (n-1)
+
+## <a href="../lists/keywords.html?filter=clean">Keywords</a> in Clean
+* case ccall class code code inline derive export foreign generic if in infix infixl infixr instance let of otherwise special stdcall where with
+
+endColumns
+
+## Language <a href="../lists/features.html">features</a>
+
+treeTable
+ row
+  Feature Conditionals
+  FeatureLink ../features/hasConditionals.html
+  Supported <span class="hasFeature">✓</span>
+  Token 
+  Example
+ row
+  Feature Classes
+  FeatureLink ../features/hasClasses.html
+  Supported <span class="hasFeature">✓</span>
+  Token 
+  Example
+ row
+  Feature Strings
+  FeatureLink ../features/hasStrings.html
+  Supported <span class="hasFeature">✓</span>
+  Token "
+  Example
+   "Hello world"
+ row
+  Feature Line Comments
+  FeatureLink ../features/hasLineComments.html
+  Supported <span class="hasFeature">✓</span>
+  Token //
+  Example
+   // A comment
+ row
+  Feature Comments
+  FeatureLink ../features/hasComments.html
+  Supported <span class="hasFeature">✓</span>
+  Token 
+  Example
+ row
+  Feature Semantic Indentation
+  FeatureLink ../features/hasSemanticIndentation.html
+  Supported <span class="doesNotHaveFeature">X</span>
+  Token 
+  Example
+
+## Books about Clean from ISBNdb
+pipeTable
+ title|titleLink|authors|year|publisher
+ The Clean Coder: A Code of Conduct for Professional Programmers|https://isbndb.com/book/9780137081073|Martin, Robert|2011|Pearson
+ Beyond the Basic Stuff with Python: Best Practices for Writing Clean Code|https://isbndb.com/book/9781593279677|Sweigart, Al|2020|No Starch Press
+ Clean Architecture: A Craftsman's Guide to Software Structure and Design (Robert C. Martin Series)|https://isbndb.com/book/9780134494326|C., Martin Robert|2017|Pearson
+ Reactive Programming with Swift 4: Build asynchronous reactive applications with easy-to-maintain and clean code using RxSwift and Xcode 9|https://isbndb.com/book/9781787120211|Singh, Navdeep|2018|Packt Publishing
+ Clean Code in Python: Refactor your legacy code base|https://isbndb.com/book/9781788837064|Anaya, Mariano|2018|Packt Publishing
+ Beyond the Basic Stuff with Python: Best Practices for Writing Clean Code|https://isbndb.com/book/9781593279660|Sweigart, Al|2020|No Starch Press
+ Clean Agile: Back to Basics (Robert C. Martin Series)|https://isbndb.com/book/9780135781999|C., Martin Robert|2019|Pearson
+ Clean Code in Python: Develop maintainable and efficient code, 2nd Edition|https://isbndb.com/book/9781800562097|Anaya, Mariano|2021|Packt Publishing
+ Clean Craftsmanship: Disciplines, Standards, and Ethics (Robert C. Martin Series)|https://isbndb.com/book/9780136915836|Martin, Robert C.|2021|Addison-Wesley Professional
+
+## Publications about Clean from Semantic Scholar
+pipeTable
+ title|titleLink|authors|year|citations|influentialCitations
+ The ins and outs of Clean I/O|https://www.semanticscholar.org/paper/4124fc65e84e6232b6e00ebbe5233ba421ef806f|P. Achten and M. J. Plasmeijer|1995|90|8
+ Interactive Functional Objects in Clean|https://www.semanticscholar.org/paper/494110f72ac432c12d716be98b08c268f15f0cc2|P. Achten and M. J. Plasmeijer|1997|44|2
+ Clean Translation of an Imperative Reversible Programming Language|https://www.semanticscholar.org/paper/6a98a6e70a1d3c21ad583ef6a83a83224d18c524|Holger Bock Axelsen|2011|31|2
+ Luandri: A Clean Lua Interface to the Indri Search Engine|https://www.semanticscholar.org/paper/0af8eea643b0391fb552db4828d7706366ee546f|Bhaskar Mitra and Fernando Diaz and Nick Craswell|2017|5|0
+ Exchanging sources between clean and Haskell: a double-edged front end for the clean compiler|https://www.semanticscholar.org/paper/acfddf78d7f34f83eafd13a9ee70d52c79af3ae7|John H. G. van Groningen and T. V. Noort and P. Achten and P. Koopman and M. J. Plasmeijer|2010|4|0
+
+keyboardNav json5.html robotframework.html
+
+import ../footer.scroll

@@ -22,10 +22,10 @@ wikipedia https://en.wikipedia.org/wiki/IBM_RPG
              outAddr1 like(arAdd1);
              outAddr2 like(arAdd2);
              outCity like(arCity);
-             outState like(arStte);
+             outState like(arState);
              outZip like(arZip);
            end-pi;
-           exec sql select arName, arAdd1, arAdd2, arCity, arStte, arZip
+           exec sql select arName, arAdd1, arAdd2, arCity, arState, arZip
                     into  :outName, :outAddr1, :outAddr2, :outCity, :outState,
                           :outZip
                     from   ARMSTF1

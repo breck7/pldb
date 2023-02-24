@@ -1,0 +1,215 @@
+import header.scroll
+
+title Rexx
+
+title Rexx - Programming language
+ hidden
+
+html
+ <a class="prevLang" href="wasm.html">&lt;</a>
+ <a class="nextLang" href="udp.html">&gt;</a>
+
+viewSourceUrl https://github.com/breck7/pldb/blob/main/database/things/rexx.pldb
+
+startColumns 4
+
+html <div class="quickLinks"><a href="https://en.wikipedia.org/wiki/REXX"><svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="98.05px" height="98.05px" viewBox="0 0 98.05 98.05" style="enable-background:new 0 0 98.05 98.05;" xml:space="preserve"><path d="M98.023,17.465l-19.584-0.056c-0.004,0.711-0.006,1.563-0.017,2.121c1.664,0.039,5.922,0.822,7.257,4.327L66.92,67.155 c-0.919-2.149-9.643-21.528-10.639-24.02l9.072-18.818c1.873-2.863,5.455-4.709,8.918-4.843l-0.01-1.968L55.42,17.489 c-0.045,0.499,0.001,1.548-0.068,2.069c5.315,0.144,7.215,1.334,5.941,4.508c-2.102,4.776-6.51,13.824-7.372,15.475 c-2.696-5.635-4.41-9.972-7.345-16.064c-1.266-2.823,1.529-3.922,4.485-4.004v-1.981l-21.82-0.067 c0.016,0.93-0.021,1.451-0.021,2.131c3.041,0.046,6.988,0.371,8.562,3.019c2.087,4.063,9.044,20.194,11.149,24.514 c-2.685,5.153-9.207,17.341-11.544,21.913c-3.348-7.43-15.732-36.689-19.232-44.241c-1.304-3.218,3.732-5.077,6.646-5.213 l0.019-2.148L0,17.398c0.005,0.646,0.027,1.71,0.029,2.187c4.025-0.037,9.908,6.573,11.588,10.683 c7.244,16.811,14.719,33.524,21.928,50.349c0.002,0.029,2.256,0.059,2.281,0.008c4.717-9.653,10.229-19.797,15.206-29.56 L63.588,80.64c0.005,0.004,2.082,0.016,2.093,0.007c7.962-18.196,19.892-46.118,23.794-54.933c1.588-3.767,4.245-6.064,8.543-6.194 l0.032-1.956L98.023,17.465z"/></svg></a> <a href="https://www.ibm.com/docs/en/zos/2.1.0?topic=guide-learning-rexx-language"><svg viewBox="0 0 500 500" xmlns="http://www.w3.org/2000/svg"><g transform="matrix(1, 0, 0, 1, 13.859316, 9.109739)"><g><g><path d="M340.732,0H55v485h375V94.518L340.732,0z M345,26.364L405.1,90H345V26.364z M415,470H70V15h260v90h85V470z"/><rect x="102.5" y="191" width="280" height="15"/><rect x="102.5" y="141" width="120" height="15"/><rect x="102.5" y="241" width="280" height="15"/><rect x="102.5" y="291" width="280" height="15"/><rect x="102.5" y="341" width="280" height="15"/><rect x="102.5" y="391" width="280" height="15"/></g></g></g></svg></a></div>
+
+* Rexx is a <a href="../lists/languages.html?filter=pl">programming language</a> created in 1979 by Mike Cowlishaw.
+ link ../lists/languages.html?filter=1979 1979
+ link ../lists/creators.html#mikeCowlishaw Mike Cowlishaw
+
+kpiTable
+ #116 <span title="TotalRank: 333 Jobs: 81 Users: 804 Facts: 120 Links: 132">on PLDB</span>
+ 44 Years Old
+ 435 <span title="Crude user estimate from a linear model.">Users</span>
+ 19 <span title="Books about or leveraging Rexx">Books</span>
+ 4 <span title="Academic publications about or leveraging Rexx">Papers</span>
+ 263 <span title="Rexx repos on GitHub.">Repos</span>
+
+* Try now: <a href="https://riju.codes/rexx">Riju</a> · <a href="https://tio.run/#rexx">TIO</a>
+
+* Rexx (Restructured Extended Executor) is an interpreted programming language developed at IBM by Mike Cowlishaw. It is a structured, high-level programming language designed for ease of learning and reading. Proprietary and open source REXX interpreters exist for a wide range of computing platforms; compilers exist for IBM mainframe computers. Read more on Wikipedia...
+ https://en.wikipedia.org/wiki/REXX Read more on Wikipedia...
+
+- Rexx Wikipedia page
+ https://en.wikipedia.org/wiki/REXX
+- Rexx docs
+ https://www.ibm.com/docs/en/zos/2.1.0?topic=guide-learning-rexx-language
+- There are at least 263 Rexx repos on <a href="https://github.com/search?q=language:REXX">GitHub</a>
+- Rexx first developed in <a href="../lists/originCommunities.html#ibm">IBM</a>
+- PLDB estimates there are currently 40 job openings for Rexx programmers.
+- file extensions for Rexx include cmd, exec, rexx, rex, pprx, rx and arexx
+- The  Google BigQuery Public Dataset GitHub snapshot shows 69 users using Rexx in 71 repos on <a href="https://api.github.com/search/repositories?q=language:REXX">GitHub</a>
+- There are 11 <a href="https://projecteuler.net/language=Rexx">Project Euler</a> users using Rexx
+- Explore Rexx snippets on <a href="http://www.rosettacode.org/wiki/Category:REXX">Rosetta Code</a>
+- Rexx on HOPL
+ https://hopl.info/showlanguage.prx?exp=868
+- Rexx appears in the <a href="https://www.tiobe.com/tiobe-index/">TIOBE Index</a>
+- Rexx Ubuntu package
+ https://packages.ubuntu.com/jammy/regina-rexx
+- <a href="pygments.html">Pygments</a> supports <a href="https://github.com/pygments/pygments/blob/master/pygments/lexers/scripting.py">syntax highlighting</a> for Rexx
+- GitHub supports <a href="https://github.com/mblocker/rexx-sublime" title="The package used for syntax highlighting by GitHub Linguist.">syntax highlighting</a> for Rexx
+- Rexx appears in the <a href="https://github.com/mame/quine-relay">Quine Relay</a> project
+- Indeed.com has 40 matches for <a href="https://www.indeed.com/jobs?q=rexx engineer">"rexx engineer"</a>.
+- See also: (17 related languages)<a href="arexx.html">ARexx</a>, <a href="netrexx.html">NetRexx</a>, <a href="object-rexx.html">Object Rexx</a>, <a href="pl-i.html">PL/I</a>, <a href="algol.html">Algol</a>, <a href="cms-exec.html">EXEC</a>, <a href="exec-2.html">EXEC 2</a>, <a href="perl.html">Perl</a>, <a href="assembly-language.html">Assembly language</a>, <a href="tcl.html">Tcl</a>, <a href="python.html">Python</a>, <a href="java.html">Java</a>, <a href="linux.html">Linux</a>, <a href="unix.html">Unix</a>, <a href="solaris.html">Solaris</a>, <a href="visual-basic.html">Visual Basic</a>, <a href="jscript.html">JScript</a>
+- HTML of this page generated by <a href="https://github.com/breck7/pldb/blob/main/code/LanguagePage.ts">LanguagePage.ts</a>
+- <a href="https://pldb.com/edit/rexx">Improve our Rexx file</a>
+
+html <br>
+
+codeWithHeader Example from <a href='https://riju.codes/rexx'>Riju</a>:
+ say &quot;Hello, world!&quot;
+ 
+
+codeWithHeader Example from <a href='https://github.com/leachim6/hello-world/blob/main/r/Rexx.rexx'>hello-world</a>:
+ &lt;&lt;hello.rexx&gt;&gt;=
+ Say &quot;Hello World&quot;
+ 
+
+codeWithHeader Example from <a href='https://github.com/mblocker/rexx-sublime'>Linguist</a>:
+ /* rexx */
+ PARSE ARG filnamn
+ IF filnamn=&#39;&#39; THEN DO
+    filnamn=&#39;raw&#39;
+    filnamn=&#39;font.shapes&#39;
+    end
+ IF ~open(fil,filnamn,r) THEN EXIT 10
+ pixwidth=48
+ ebwidth=pixwidth/8
+ pixheight=48
+ depth=4
+ SAY &quot;Skriver utfil...&quot;
+ CALL open utfil,&quot;RAM:utfil&quot;,W
+ CALL skriv pixwidth,2
+ CALL skriv pixheight,2
+ CALL skriv depth,2
+ CALL skriv ebwidth,2
+ bltsize=Right(C2B(D2C(pixheight)),10,&quot;00&quot;)
+ bltsize=bltsize || Right(C2B(D2C(ebwidth)),6,&quot;00&quot;)
+ /* SAY bltsize */
+ CALL skriv C2D(B2C(bltsize)),2
+ CALL skriv 0,4 /* xhandle, yhandle*/
+ CALL skriv 0,4 /* datapekare */
+ CALL skriv 0,4 /* cookiepekare */
+ CALL skriv ebwidth*pixheight,2 /* onebpmem */
+ CALL skriv ebwidth*pixheight+pixheight*2,2 /* onebpmemx */
+ CALL skriv ebwidth*pixheight*depth,2 /* allbpmem */
+ CALL skriv ebwidth*pixheight*depth+pixheight*2*depth,2 /* allbpmemx */
+ CALL skriv 0,2 /* padding */
+ CALL Close utfil
+ EXIT
+ 
+ skriv:
+ say &quot;Skriver $&quot;D2X(arg(1)) &quot;(&quot;arg(2) &quot;byte)&quot;
+ call writech utfil,right(D2C(ARG(1)),ARG(2),&quot;00&quot;x)
+ return
+ 
+ visacookie:
+    rad=copies(&#39;00&#39;x,pixheight*ebwidth)
+    say &quot;Initierar bitmap till&quot; pixheight*ebwidth*depth
+    say &quot;Ett bitplan =&quot; pixheight*ebwidth
+    bmap.=&#39;&#39;
+    say &quot;laser in&quot;
+    do bitplan=1 to depth
+       say &quot;laser plan&quot; bitplan
+       rad=bitor(rad,readch(fil,pixheight*ebwidth))
+       end
+    ln=1
+    say &quot;skriver ut&quot;
+    do for pixheight
+       say c2b(substr(rad,ln,bredd/8))
+       ln=ln+bredd/8
+       end
+ return
+
+codeWithHeader Example from <a href='https://en.wikipedia.org/wiki/REXX'>Wikipedia</a>:
+ ChangeCodePage: procedure /* protect SIGNAL settings */
+  signal on syntax name ChangeCodePage.Trap
+  return SysQueryProcessCodePage()
+  ChangeCodePage.Trap: return 1004 /* windows-1252 on OS/2 */
+
+endColumns
+
+## Language <a href="../lists/features.html">features</a>
+
+treeTable
+ row
+  Feature Strings
+  FeatureLink ../features/hasStrings.html
+  Supported <span class="hasFeature">✓</span>
+  Token "
+  Example
+   "Hello world"
+ row
+  Feature MultiLine Comments
+  FeatureLink ../features/hasMultiLineComments.html
+  Supported <span class="hasFeature">✓</span>
+  Token /* */
+  Example
+   /* A comment
+   */
+ row
+  Feature Print() Debugging
+  FeatureLink ../features/hasPrintDebugging.html
+  Supported <span class="hasFeature">✓</span>
+  Token say
+  Example
+ row
+  Feature Comments
+  FeatureLink ../features/hasComments.html
+  Supported <span class="hasFeature">✓</span>
+  Token 
+  Example
+   * => 1000000000 */
+ row
+  Feature Semantic Indentation
+  FeatureLink ../features/hasSemanticIndentation.html
+  Supported <span class="doesNotHaveFeature">X</span>
+  Token 
+  Example
+ row
+  Feature Line Comments
+  FeatureLink ../features/hasLineComments.html
+  Supported <span class="doesNotHaveFeature">X</span>
+  Token 
+  Example
+
+## Books about Rexx on goodreads
+pipeTable
+ title|titleLink|author|year|reviews|ratings|rating
+ Programming In Rexx|https://www.goodreads.com/search?q=Programming In Rexx Charles Daney|Charles Daney|1992|0|5|4.40
+ The REXX Language on TSO: REXX Functions|https://www.goodreads.com/search?q=The REXX Language on TSO: REXX Functions Gabriel F. Gargiulo|Gabriel F. Gargiulo|2013|0|2|4.00
+ REXX Programmer's Reference|https://www.goodreads.com/search?q=REXX Programmer's Reference Howard Fosdick|Howard Fosdick|2005|1|12|3.58
+ The REXX Language: A Practical Approach to Programing|https://www.goodreads.com/search?q=The REXX Language: A Practical Approach to Programing Michael Cowlishaw|Michael Cowlishaw|1990|0|12|4.33
+ rexx tutorial for beginners:learn rexx programming: learn rexx programming very fast|https://www.goodreads.com/search?q=rexx tutorial for beginners:learn rexx programming: learn rexx programming very fast Anmol Goyal|Anmol Goyal||0|1|5.00
+ Rexx: Advanced Techniques For Programmers|https://www.goodreads.com/search?q=Rexx: Advanced Techniques For Programmers Peter C. Kiesel|Peter C. Kiesel|1992|0|2|3.00
+ The REXX Language on TSO|https://www.goodreads.com/search?q=The REXX Language on TSO Gabriel F. Gargiulo|Gabriel F. Gargiulo|2012|0|3|4.00
+ Object-Oriented Programming with REXX|https://www.goodreads.com/search?q=Object-Oriented Programming with REXX Thomas Ender|Thomas Ender|1997|0|0|0.0
+
+## Books about Rexx from ISBNdb
+pipeTable
+ title|titleLink|authors|year|publisher
+ Programming in REXX|https://isbndb.com/book/9780070153059|Daney, Charles|1990T|McGraw-Hill
+ The Rexx Language: A Practical Approach to Programming|https://isbndb.com/book/9780137806515|Cowlishaw, Michael|1990|Prentice Hall
+ Rexx Programmer's Reference|https://isbndb.com/book/9780764579967|Fosdick, Howard|2005|Wrox
+ The REXX language: A practical approach to programming|https://isbndb.com/book/9780137807352|Cowlishaw, M. F|1985|Prentice Hall
+ Modern Programming Using Rexx|https://isbndb.com/book/9780135973110|O'Hara, Robert P. and Gomberg, David Roos|1985|Prentice Hall
+ Modern Programming Using Rexx|https://isbndb.com/book/9780135973295|O'Hara, Robert P. and Gomberg, David Roos|1988|Prentice Hall
+ The Net REXX Language|https://isbndb.com/book/9780138063320|Michael F. Cowlishaw|1997|Prentice Hall
+ Object-oriented Programming With Rexx|https://isbndb.com/book/9780471118442|Tom Ender|1997|Wiley
+ Practical Usage of TSO REXX|https://isbndb.com/book/9781447107552|Anthony S. Rudd|20121206|Springer Nature
+ REXX Grundlagen für die z/OS Praxis|https://isbndb.com/book/9783486598759|Johann Deuring|20101001|De Gruyter
+ Vm/esa Gui Facility Developer's Guide Rexx And C++ Gui Programming|https://isbndb.com/book/9780738408699|Ibm Redbooks|1996|Ibm
+
+## Publications about Rexx from Semantic Scholar
+pipeTable
+ title|titleLink|authors|year|citations|influentialCitations
+ The design of the REXX language|https://www.semanticscholar.org/paper/390c4c26f46bc92ef15fff9dfd99ba1e563bbdeb|M. Cowlishaw|1984|12|0
+ The early history of REXX|https://www.semanticscholar.org/paper/e47b141a0094c59c652e2e715829b321298b546f|M. Cowlishaw|1994|5|0
+ REXX on TSO/E|https://www.semanticscholar.org/paper/caadce71ca7e82e1ba8e3e0a471db6be758e6525|Gerhard E. Hoernes|1989|2|0
+ Partial Compilation of REXX|https://www.semanticscholar.org/paper/2d3d89b37f8cfa39ac9b00eeae8507a09f6e350e|R. Pinter and P. Vortman and Zvi Weiss|1991|1|0
+
+keyboardNav wasm.html udp.html
+
+import ../footer.scroll

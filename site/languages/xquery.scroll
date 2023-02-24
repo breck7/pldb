@@ -1,0 +1,236 @@
+import header.scroll
+
+title XQuery
+
+title XQuery - Programming language
+ hidden
+
+html
+ <a class="prevLang" href="scratch.html">&lt;</a>
+ <a class="nextLang" href="llvmir.html">&gt;</a>
+
+viewSourceUrl https://github.com/breck7/pldb/blob/main/database/things/xquery.pldb
+
+startColumns 4
+
+html <div class="quickLinks"><a href="http://www.w3.org/XML/Query/"><svg role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12.7166 3.79541C12.2835 3.49716 11.7165 3.49716 11.2834 3.79541L4.14336 8.7121C3.81027 8.94146 3.60747 9.31108 3.59247 9.70797C3.54064 11.0799 3.4857 13.4824 3.63658 15.1877C3.7504 16.4742 4.05336 18.1747 4.29944 19.4256C4.41371 20.0066 4.91937 20.4284 5.52037 20.4284H8.84433C8.98594 20.4284 9.10074 20.3111 9.10074 20.1665V15.9754C9.10074 14.9627 9.90433 14.1417 10.8956 14.1417H13.4091C14.4004 14.1417 15.204 14.9627 15.204 15.9754V20.1665C15.204 20.3111 15.3188 20.4284 15.4604 20.4284H18.4796C19.0806 20.4284 19.5863 20.0066 19.7006 19.4256C19.9466 18.1747 20.2496 16.4742 20.3634 15.1877C20.5143 13.4824 20.4594 11.0799 20.4075 9.70797C20.3925 9.31108 20.1897 8.94146 19.8566 8.7121L12.7166 3.79541ZM10.4235 2.49217C11.3764 1.83602 12.6236 1.83602 13.5765 2.49217L20.7165 7.40886C21.4457 7.91098 21.9104 8.73651 21.9448 9.64736C21.9966 11.0178 22.0564 13.5119 21.8956 15.3292C21.7738 16.7067 21.4561 18.4786 21.2089 19.7353C20.9461 21.0711 19.7924 22.0001 18.4796 22.0001H15.4604C14.4691 22.0001 13.6655 21.1791 13.6655 20.1665V15.9754C13.6655 15.8307 13.5507 15.7134 13.4091 15.7134H10.8956C10.754 15.7134 10.6392 15.8307 10.6392 15.9754V20.1665C10.6392 21.1791 9.83561 22.0001 8.84433 22.0001H5.52037C4.20761 22.0001 3.05389 21.0711 2.79113 19.7353C2.54392 18.4786 2.22624 16.7067 2.10437 15.3292C1.94358 13.5119 2.00338 11.0178 2.05515 9.64736C2.08957 8.73652 2.55427 7.91098 3.28346 7.40886L10.4235 2.49217Z"/></svg></a> <a href="https://en.wikipedia.org/wiki/XQuery"><svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="98.05px" height="98.05px" viewBox="0 0 98.05 98.05" style="enable-background:new 0 0 98.05 98.05;" xml:space="preserve"><path d="M98.023,17.465l-19.584-0.056c-0.004,0.711-0.006,1.563-0.017,2.121c1.664,0.039,5.922,0.822,7.257,4.327L66.92,67.155 c-0.919-2.149-9.643-21.528-10.639-24.02l9.072-18.818c1.873-2.863,5.455-4.709,8.918-4.843l-0.01-1.968L55.42,17.489 c-0.045,0.499,0.001,1.548-0.068,2.069c5.315,0.144,7.215,1.334,5.941,4.508c-2.102,4.776-6.51,13.824-7.372,15.475 c-2.696-5.635-4.41-9.972-7.345-16.064c-1.266-2.823,1.529-3.922,4.485-4.004v-1.981l-21.82-0.067 c0.016,0.93-0.021,1.451-0.021,2.131c3.041,0.046,6.988,0.371,8.562,3.019c2.087,4.063,9.044,20.194,11.149,24.514 c-2.685,5.153-9.207,17.341-11.544,21.913c-3.348-7.43-15.732-36.689-19.232-44.241c-1.304-3.218,3.732-5.077,6.646-5.213 l0.019-2.148L0,17.398c0.005,0.646,0.027,1.71,0.029,2.187c4.025-0.037,9.908,6.573,11.588,10.683 c7.244,16.811,14.719,33.524,21.928,50.349c0.002,0.029,2.256,0.059,2.281,0.008c4.717-9.653,10.229-19.797,15.206-29.56 L63.588,80.64c0.005,0.004,2.082,0.016,2.093,0.007c7.962-18.196,19.892-46.118,23.794-54.933c1.588-3.767,4.245-6.064,8.543-6.194 l0.032-1.956L98.023,17.465z"/></svg></a> <a href="https://www.w3.org/TR/xquery-31/"><svg viewBox="0 0 500 500" xmlns="http://www.w3.org/2000/svg"><g transform="matrix(1, 0, 0, 1, 13.859316, 9.109739)"><g><g><path d="M340.732,0H55v485h375V94.518L340.732,0z M345,26.364L405.1,90H345V26.364z M415,470H70V15h260v90h85V470z"/><rect x="102.5" y="191" width="280" height="15"/><rect x="102.5" y="141" width="120" height="15"/><rect x="102.5" y="241" width="280" height="15"/><rect x="102.5" y="291" width="280" height="15"/><rect x="102.5" y="341" width="280" height="15"/><rect x="102.5" y="391" width="280" height="15"/></g></g></g></svg></a></div>
+
+* XQuery is a <a href="../lists/languages.html?filter=pl">programming language</a> created in 2007.
+ link ../lists/languages.html?filter=2007 2007
+
+kpiTable
+ #101 <span title="TotalRank: 303 Jobs: 71 Users: 455 Facts: 100 Links: 132">on PLDB</span>
+ 16 Years Old
+ 1.4k <span title="Crude user estimate from a linear model.">Users</span>
+ 2 <span title="Books about or leveraging XQuery">Books</span>
+ 15 <span title="Academic publications about or leveraging XQuery">Papers</span>
+ 2k <span title="XQuery repos on GitHub.">Repos</span>
+
+* XQuery (XML Query) is a query and functional programming language that queries and transforms collections of structured and unstructured data, usually in the form of XML, text and with vendor-specific extensions for other data formats (JSON, binary, etc.). The language is developed by the XML Query working group of the W3C. The work is closely coordinated with the development of XSLT by the XSL Working Group; the two groups share responsibility for XPath, which is a subset of XQuery. Read more on Wikipedia...
+ https://en.wikipedia.org/wiki/XQuery Read more on Wikipedia...
+
+- XQuery website
+ http://www.w3.org/XML/Query/
+- XQuery Wikipedia page
+ https://en.wikipedia.org/wiki/XQuery
+- XQuery docs
+ https://www.w3.org/TR/xquery-31/
+- There are at least 1,753 XQuery repos on <a href="https://github.com/search?q=language:XQuery">GitHub</a>
+- XQuery first developed in <a href="../lists/originCommunities.html#w3C">W3C</a>
+- PLDB estimates there are currently 125 job openings for XQuery programmers.
+- file extensions for XQuery include xq, xql, xqm, xqy and xquery
+- The  Google BigQuery Public Dataset GitHub snapshot shows 983 users using XQuery in 1k repos on <a href="https://api.github.com/search/repositories?q=language:XQuery">GitHub</a>
+- Explore XQuery snippets on <a href="http://www.rosettacode.org/wiki/Category:XQuery">Rosetta Code</a>
+- XQuery appears in the <a href="https://www.tiobe.com/tiobe-index/">TIOBE Index</a>
+- <a href="codemirror.html">CodeMirror</a> <a href="https://github.com/codemirror/codemirror5/tree/master/mode/xquery">package</a> for syntax highlighting XQuery
+- <a href="pygments.html">Pygments</a> supports <a href="https://github.com/pygments/pygments/blob/master/pygments/lexers/webmisc.py">syntax highlighting</a> for XQuery
+- GitHub supports <a href="https://github.com/wcandillon/language-jsoniq" title="The package used for syntax highlighting by GitHub Linguist.">syntax highlighting</a> for XQuery
+- Official Blog page for XQuery
+ https://www.w3.org/blog/tags/xquery/
+- Indeed.com has 125 matches for <a href="https://www.indeed.com/jobs?q=XQuery developer">"XQuery developer"</a>.
+- See also: (10 related languages)<a href="xpath.html">XPath</a>, <a href="sql.html">SQL</a>, <a href="lisp.html">Lisp</a>, <a href="prolog.html">Prolog</a>, <a href="xml.html">XML</a>, <a href="java.html">Java</a>, <a href="csharp.html">C#</a>, <a href="jsoniq.html">JSONiq</a>, <a href="json.html">JSON</a>, <a href="isbn.html">ISBN</a>
+- HTML of this page generated by <a href="https://github.com/breck7/pldb/blob/main/code/LanguagePage.ts">LanguagePage.ts</a>
+- <a href="https://pldb.com/edit/xquery">Improve our XQuery file</a>
+
+html <br>
+
+codeWithHeader Example from <a href='https://github.com/leachim6/hello-world/blob/main/x/XQuery.xq'>hello-world</a>:
+ let $hello := &quot;Hello World&quot;
+ return $hello
+ 
+
+codeWithHeader Example from <a href='http://helloworldcollection.de/#XQuery'>the Hello World Collection</a>:
+ (: Hello World with XQuery :)
+ let $i := &quot;Hello World&quot;
+ return $i
+ 
+
+codeWithHeader Example from <a href='https://github.com/wcandillon/language-jsoniq'>Linguist</a>:
+ (: -------------------------------------------------------------------------------------
+ 
+     xproc.xqm - core xqm contains entry points, primary eval-step function and
+     control functions.
+ 
+  ---------------------------------------------------------------------------------------- :)
+ xquery version &quot;3.0&quot;  encoding &quot;UTF-8&quot;;
+ 
+ module namespace xproc = &quot;http://xproc.net/xproc&quot;;
+ 
+  (: declare namespaces :)
+  declare namespace p=&quot;http://www.w3.org/ns/xproc&quot;;
+  declare namespace c=&quot;http://www.w3.org/ns/xproc-step&quot;;
+  declare namespace err=&quot;http://www.w3.org/ns/xproc-error&quot;;
+ 
+  (: module imports :)
+ (:  import module namespace util = &quot;http://xproc.net/xproc/util&quot; at &quot;util1.xqm&quot;; :)
+  import module namespace const = &quot;http://xproc.net/xproc/const&quot; at &quot;const.xqm&quot;;
+  import module namespace parse = &quot;http://xproc.net/xproc/parse&quot; at &quot;parse.xqm&quot;;
+  import module namespace u = &quot;http://xproc.net/xproc/util&quot; at &quot;util.xqm&quot;;
+ 
+  (: declare options :)
+  declare boundary-space preserve;
+  declare option saxon:output &quot;indent=yes&quot;;
+ 
+  (: declare functions :)
+  declare variable $xproc:run-step       := xproc:run#6;
+  declare variable $xproc:parse-and-eval := ();
+  declare variable $xproc:declare-step   := ();
+  declare variable $xproc:choose         := ();
+  declare variable $xproc:try            := ();
+  declare variable $xproc:catch          := ();
+  declare variable $xproc:group          := ();
+  declare variable $xproc:for-each       := ();
+  declare variable $xproc:viewport       := ();
+  declare variable $xproc:library        := ();
+  declare variable $xproc:pipeline       := ();
+  declare variable $xproc:variable       := ();
+ 
+ 
+  (: list all declared namespaces :)
+  (: -------------------------------------------------------------------------- :)
+  declare function xproc:enum-namespaces($pipeline){
+  (: -------------------------------------------------------------------------- :)
+     &lt;namespace name=&quot;{$pipeline/@name}&quot;&gt;{u:enum-ns(&lt;dummy&gt;{$pipeline}&lt;/dummy&gt;)}&lt;/namespace&gt;
+  };
+ 
+  (: entry point :)
+  (: -------------------------------------------------------------------------- :)
+  declare function xproc:run($pipeline,$stdin,$dflag,$tflag,$bindings,$options){
+  (: -------------------------------------------------------------------------- :)
+ 
+  (: STEP I: preprocess :)
+  let $validate   := ()
+  let $namespaces := xproc:enum-namespaces($pipeline)
+  let $parse      := parse:explicit-bindings( parse:AST(parse:explicit-name(parse:explicit-type($pipeline))))
+  let $ast        := element p:declare-step {$parse/@*,
+        parse:pipeline-step-sort( $parse/*, () )
+      }
+ 
+  (: STEP II: eval AST :)
+  let $eval_result := ()
+ 
+  (: STEP III: serialize and return results :)
+  let $serialized_result := $pipeline
+ 
+  return 
+    $serialized_result
+  };
+ 
+ 
+
+codeWithHeader Example from <a href='https://en.wikipedia.org/wiki/XQuery'>Wikipedia</a>:
+ &lt;html&gt;&lt;body&gt;
+  {
+    for $act in doc(&quot;hamlet.xml&quot;)//ACT
+    let $speakers := distinct-values($act//SPEAKER)
+    return
+      &lt;div&gt;
+        &lt;h1&gt;{ string($act/TITLE) }&lt;/h1&gt;
+        &lt;ul&gt;
+        {
+          for $speaker in $speakers
+          return &lt;li&gt;{ $speaker }&lt;/li&gt;
+        }
+        &lt;/ul&gt;
+      &lt;/div&gt;
+  }
+  &lt;/body&gt;&lt;/html&gt;
+
+endColumns
+
+## Language <a href="../lists/features.html">features</a>
+
+treeTable
+ row
+  Feature Integers
+  FeatureLink ../features/hasIntegers.html
+  Supported <span class="hasFeature">✓</span>
+  Token 
+  Example
+ row
+  Feature Floats
+  FeatureLink ../features/hasFloats.html
+  Supported <span class="hasFeature">✓</span>
+  Token 
+  Example
+ row
+  Feature Strings
+  FeatureLink ../features/hasStrings.html
+  Supported <span class="hasFeature">✓</span>
+  Token "
+  Example
+   "Hello world"
+ row
+  Feature Comments
+  FeatureLink ../features/hasComments.html
+  Supported <span class="hasFeature">✓</span>
+  Token 
+  Example
+   (: Hello World with XQuery :)
+ row
+  Feature Case Insensitive Identifiers
+  FeatureLink ../features/hasCaseInsensitiveIdentifiers.html
+  Supported <span class="doesNotHaveFeature">X</span>
+  Token 
+  Example
+ row
+  Feature Semantic Indentation
+  FeatureLink ../features/hasSemanticIndentation.html
+  Supported <span class="doesNotHaveFeature">X</span>
+  Token 
+  Example
+ row
+  Feature Line Comments
+  FeatureLink ../features/hasLineComments.html
+  Supported <span class="doesNotHaveFeature">X</span>
+  Token 
+  Example
+
+## Books about XQuery from ISBNdb
+pipeTable
+ title|titleLink|authors|year|publisher
+ XML: A Beginner's Guide: Go Beyond the Basics with Ajax, XHTML, XPath 2.0, XSLT 2.0 and XQuery|https://isbndb.com/book/9780071606264|Holzner, Steven|2009|McGraw-Hill Education
+ XML: A Beginner's Guide: Go Beyond the Basics with Ajax, XHTML, XPath 2.0, XSLT 2.0 and XQuery|https://isbndb.com/book/9780071606271|Holzner, Steven|2009|McGraw-Hill Education
+
+## Publications about XQuery from Semantic Scholar
+pipeTable
+ title|titleLink|authors|year|citations|influentialCitations
+ XQuery Reloaded|https://www.semanticscholar.org/paper/398e21c1a7f699a4f0298ce49c4bd0c86480946a|Roger Bamford and Vinayak R. Borkar and M. Brantner and Peter M. Fischer and D. Florescu and David A. Graf and D. Kossmann and Tim Kraska and D. Muresan and Sorin Nasoi and Markos Zacharioudaki|2009|36|1
+ XML programming with SQL/XML and XQuery|https://www.semanticscholar.org/paper/dccdd7c09b1b48be5ad389fb86152851bf918636|J. Funderburk and S. Malaika and B. Reinwald|2002|30|2
+ Design and implementation of a graphical interface to XQuery|https://www.semanticscholar.org/paper/b5bc91313d27f1451ed72ae28e3f3e11fa6744ad|Enrico Augurusa and Daniele Braga and A. Campi and S. Ceri|2003|29|3
+ Highly distributed XQuery with DXQ|https://www.semanticscholar.org/paper/dc4dd7d588dac1952e8a796b01d88b5ef79b8104|M. Fernández and T. Jim and Kristi Morton and Nicola Onose and Jérôme Siméon|2007|28|2
+ Compiling XSLT 2.0 into XQuery 1.0|https://www.semanticscholar.org/paper/fa684f0d013f69deb6e9a0dd9f430363f69f46b5|Achille Fokoue and K. Rose and Jérôme Siméon and L. Villard|2005|18|2
+ XQuery in the browser|https://www.semanticscholar.org/paper/139f38fd02992a746d0710162771e338d7c3ce4b|G. Fourny and Markus Pilman and D. Florescu and D. Kossmann and Tim Kraska and D. McBeath|2009|17|0
+ An Encoding of XQuery in Prolog|https://www.semanticscholar.org/paper/5195d815f3d783c7798e00cbabbb1e83dc00ff6d|J. Almendros-Jiménez|2009|17|1
+ Developing an Enterprise Web Application in XQuery|https://www.semanticscholar.org/paper/6ddcffdaa35a836d21a73acf6b254e6ebc2b94e7|Martin Kaufmann and D. Kossmann|2009|15|0
+ Integrating XQuery and Logic Programming|https://www.semanticscholar.org/paper/79d47519e543be6e80904a89bdf3570b0d4629ce|J. Almendros-Jiménez and A. Becerra-Terón and F. J. Enciso-Baños|2009|14|0
+ Eliminating dead-code from XQuery programs|https://www.semanticscholar.org/paper/d27af0ee184aac902c559b35f32e586643706b80|P. Genevès and Nabil Layaïda|2010|12|0
+ XQuery in the browser|https://www.semanticscholar.org/paper/ba392dbe46c976df4b7ac39426cffafd2de607c5|G. Fourny and D. Kossmann and Tim Kraska and Markus Pilman and D. Florescu|2008|7|1
+ Function inlining in XQuery 3.0 optimization|https://www.semanticscholar.org/paper/6824125891a14a5ea4fcc8427a8a3ee6b358089b|Leonard Wörteler and Michael Grossniklaus and C. Grün and M. Scholl|2015|5|0
+ Unleashing XQuery for Data-Independent Programming|https://www.semanticscholar.org/paper/f6f4cf733b4a9ba7859bbd4d3a58757dd1bd4e6e|Sebastian Bächle and Caetano Sauer|2014|4|0
+ Programming the KDD Process using XQuery|https://www.semanticscholar.org/paper/f1eadf3f8cb7d644d4114bef4f1cb5c1f1a8e486|A. Romei and F. Turini|2011|3|0
+ An expressive bidirectional transformation language for XQuery view update (Special issue : Advanced Programming Techniques for Construction of Robust, Generic and Evolutionary Programs)|https://www.semanticscholar.org/paper/b5aec929e9b515d99a039ead74029f20bb7c6b0c|Dongxi Liu and Zhenjiang Hu and M. Takeichi|2013|1|0
+
+keyboardNav scratch.html llvmir.html
+
+import ../footer.scroll

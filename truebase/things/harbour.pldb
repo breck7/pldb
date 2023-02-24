@@ -50,7 +50,7 @@ wikipedia https://en.wikipedia.org/wiki/Harbour_(programming_language)
       METHOD Describe()
   
       ACCESS Eyes INLINE ::pvtEyes
-      ASSIGN Eyes( x ) INLINE iif( HB_ISSTRING( x ) .AND. x $ "Blue,Brown,Green", ::pvtEyes := x, Alert( "Invalid value" ) )
+      ASSIGN Eyes( x ) INLINE if( HB_ISSTRING( x ) .AND. x $ "Blue,Brown,Green", ::pvtEyes := x, Alert( "Invalid value" ) )
   
       PROTECTED:
   

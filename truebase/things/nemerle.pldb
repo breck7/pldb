@@ -22,7 +22,7 @@ features
   def title = "Programming language authors";
   def authors = ["Anders Hejlsberg", "Simon Peyton-Jones"];
       
-  // 'xml' - macro from Nemerle.Xml.Macro library which alows to inline XML literals into the nemerle-code
+  // 'xml' - macro from Nemerle.Xml.Macro library which allows to inline XML literals into the nemerle-code
   def html = xml <#
     <html>
       <head>

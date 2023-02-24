@@ -1,0 +1,243 @@
+import header.scroll
+
+title Apex
+
+title Apex - Programming language
+ hidden
+
+html
+ <a class="prevLang" href="openscad.html">&lt;</a>
+ <a class="nextLang" href="joy.html">&gt;</a>
+
+viewSourceUrl https://github.com/breck7/pldb/blob/main/database/things/apex.pldb
+
+startColumns 4
+
+html <div class="quickLinks"><a href="https://developer.salesforce.com/docs/atlas.en-us.apexcode.meta/apexcode/apex_intro_what_is_apex.htm"><svg role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12.7166 3.79541C12.2835 3.49716 11.7165 3.49716 11.2834 3.79541L4.14336 8.7121C3.81027 8.94146 3.60747 9.31108 3.59247 9.70797C3.54064 11.0799 3.4857 13.4824 3.63658 15.1877C3.7504 16.4742 4.05336 18.1747 4.29944 19.4256C4.41371 20.0066 4.91937 20.4284 5.52037 20.4284H8.84433C8.98594 20.4284 9.10074 20.3111 9.10074 20.1665V15.9754C9.10074 14.9627 9.90433 14.1417 10.8956 14.1417H13.4091C14.4004 14.1417 15.204 14.9627 15.204 15.9754V20.1665C15.204 20.3111 15.3188 20.4284 15.4604 20.4284H18.4796C19.0806 20.4284 19.5863 20.0066 19.7006 19.4256C19.9466 18.1747 20.2496 16.4742 20.3634 15.1877C20.5143 13.4824 20.4594 11.0799 20.4075 9.70797C20.3925 9.31108 20.1897 8.94146 19.8566 8.7121L12.7166 3.79541ZM10.4235 2.49217C11.3764 1.83602 12.6236 1.83602 13.5765 2.49217L20.7165 7.40886C21.4457 7.91098 21.9104 8.73651 21.9448 9.64736C21.9966 11.0178 22.0564 13.5119 21.8956 15.3292C21.7738 16.7067 21.4561 18.4786 21.2089 19.7353C20.9461 21.0711 19.7924 22.0001 18.4796 22.0001H15.4604C14.4691 22.0001 13.6655 21.1791 13.6655 20.1665V15.9754C13.6655 15.8307 13.5507 15.7134 13.4091 15.7134H10.8956C10.754 15.7134 10.6392 15.8307 10.6392 15.9754V20.1665C10.6392 21.1791 9.83561 22.0001 8.84433 22.0001H5.52037C4.20761 22.0001 3.05389 21.0711 2.79113 19.7353C2.54392 18.4786 2.22624 16.7067 2.10437 15.3292C1.94358 13.5119 2.00338 11.0178 2.05515 9.64736C2.08957 8.73652 2.55427 7.91098 3.28346 7.40886L10.4235 2.49217Z"/></svg></a></div>
+
+* Apex is a <a href="../lists/languages.html?filter=pl">programming language</a> created in 2007.
+ link ../lists/languages.html?filter=2007 2007
+
+kpiTable
+ #647 <span title="TotalRank: 1217 Jobs: 103 Users: 1117 Facts: 142 Links: 972">on PLDB</span>
+ 16 Years Old
+ 201 <span title="Crude user estimate from a linear model.">Users</span>
+ 19 <span title="Books about or leveraging Apex">Books</span>
+ 0 <span title="Academic publications about or leveraging Apex">Papers</span>
+ 23k <span title="Apex repos on GitHub.">Repos</span>
+
+monacoEditor apex
+ global with sharing class HelloWorld {
+   global static void main() {
+     System.debug('Hello World');
+   }
+ }
+
+* Apex is a proprietary programming language provided by the Force.com platform to developers similar to Java and C#. It is a strongly typed, object-oriented, case-insensitive programming language, following a dot-notation and curly-brackets syntax. Apex can be used to execute programmed functions during most processes on the Force.com platform including custom buttons and links, event handlers on record insertion, update, or deletion, via scheduling, or via the custom controllers of Visualforce pages. Due to the multitenant nature of the platform, the language has strictly imposed governor limitations[61] to guard against any code monopolizing shared resources. Salesforce provides a series of asynchronous processing methods for Apex to allow developers to produce longer running and more complex Apex code.
+
+- Apex website
+ https://developer.salesforce.com/docs/atlas.en-us.apexcode.meta/apexcode/apex_intro_what_is_apex.htm
+- There are at least 22,719 Apex repos on <a href="https://github.com/search?q=language:Apex">GitHub</a>
+- Apex first developed in <a href="../lists/originCommunities.html#salesforce">Salesforce</a>
+- file extensions for Apex include cls
+- The  Google BigQuery Public Dataset GitHub snapshot shows 537 users using Apex in 778 repos on <a href="https://api.github.com/search/repositories?q=language:Apex">GitHub</a>
+- <a href="http://www.zdnet.com/article/inside-the-salesforce-apex-language/">First announcement of</a> Apex via interview
+- Explore Apex snippets on <a href="http://www.rosettacode.org/wiki/Category:Apex">Rosetta Code</a>
+- Apex ranks #43 in the <a href="https://www.tiobe.com/tiobe-index/">TIOBE Index</a>
+- <a href="antlr.html">ANTLR</a> <a href="https://github.com/antlr/grammars-v4/tree/master/apex">grammar</a> for Apex
+- Apex <a href="language-server-protocol.html">LSP</a> <a href="https://marketplace.visualstudio.com/items?itemName=salesforce.salesforcedx-vscode-apex">implementation</a>
+- <a href="monaco.html">Monaco</a> <a href="https://github.com/microsoft/monaco-editor/tree/main/src/basic-languages/apex">package</a> for syntax highlighting Apex
+- GitHub supports <a href="https://github.com/textmate/java.tmbundle" title="The package used for syntax highlighting by GitHub Linguist.">syntax highlighting</a> for Apex
+- Read more about Apex on the web: 1.
+ https://en.wikipedia.org/wiki/Salesforce.com#Apex 1.
+- HTML of this page generated by <a href="https://github.com/breck7/pldb/blob/main/code/LanguagePage.ts">LanguagePage.ts</a>
+- <a href="https://pldb.com/edit/apex">Improve our Apex file</a>
+
+html <br>
+
+codeWithHeader Example from <a href='https://github.com/leachim6/hello-world/blob/main/a/Apex.cls'>hello-world</a>:
+ global with sharing class HelloWorld {
+   global static void main() {
+     System.debug(&#39;Hello World&#39;);
+   }
+ }
+
+codeWithHeader Example from <a href='https://github.com/textmate/java.tmbundle'>Linguist</a>:
+ public class GeoUtils {
+ 	// generate a KML string given a page reference, call getContent() 
+ 	// then cleanup the output.
+ 	public static string generateFromContent(PageReference pr) { 
+ 		string ret = &#39;&#39;; 
+ 		try {  
+ 	        ret = (string) pr.getContent().toString();
+ 			
+ 			ret = ret.replaceAll(&#39;&quot;&#39;,&#39;\&#39;&#39; ); // get content produces quote chars \&quot;  
+ 	        ret = ret.replaceAll( &#39;&amp;&#39;,&#39;&amp;amp;&#39;);// we need to escape these in the node value
+         } catch (exception e ) { 
+         	system.debug( &#39;ERROR &#39;+e); 
+         }
+    		
+    		ret = ret.replaceAll(&#39;\n&#39;,&#39; &#39;);	// must use ALL since many new line may get 
+         ret = ret.replaceAll(&#39;\r&#39;,&#39; &#39;);	// get these also!
+       //  system.debug( ret); // dump the KML 
+         return ret ;
+ 	}
+ 	
+ 	public static Map&lt;String, String&gt; geo_response = new Map&lt;String, String&gt;{&#39;200&#39;=&gt;&#39;G_GEO_SUCCESS&#39;,
+     &#39;400&#39;=&gt;&#39;G_GEO_BAD_REQUEST&#39;,
+     &#39;500&#39;=&gt;&#39;G_GEO_SERVER_ERROR&#39;,
+     &#39;601&#39;=&gt;&#39;G_GEO_MISSING_ADDRESS&#39;,
+     &#39;602&#39;=&gt;&#39;G_GEO_UNKNOWN_ADDRESS&#39;,
+     &#39;603&#39;=&gt;&#39;G_GEO_UNAVAILABLE_ADDRESS&#39;,
+     &#39;604&#39;=&gt;&#39;G_GEO_UNKNOWN_DIRECTIONS&#39;,
+     &#39;610&#39;=&gt;&#39;G_GEO_BAD_KEY&#39;,
+     &#39;620&#39;=&gt;&#39;G_GEO_TOO_MANY_QUERIES&#39;
+     };
+         
+ 	public static string accountAddressString ( account acct ) {
+     	// form an address string given an account object
+     	string adr = acct.billingstreet + &#39;,&#39; + acct.billingcity + &#39;,&#39; + acct.billingstate; 
+         if ( acct.billingpostalcode != null ) adr += &#39;,&#39; + acct.billingpostalcode; 
+         if ( acct.billingcountry != null ) adr += &#39;,&#39; + acct.billingcountry; 
+         adr = adr.replaceAll(&#39;\&quot;&#39;, &#39;&#39; );
+         adr = adr.replaceAll(&#39;\&#39;&#39;, &#39;&#39; );
+         adr = adr.replaceAll( &#39;\n&#39;, &#39; &#39; );    
+         adr = adr.replaceAll( &#39;\r&#39;, &#39; &#39; );    
+         system.debug( adr );  
+         return adr;	
+     }
+     
+ 	public static testmethod void t1() { 
+ 		PageReference pageRef =  Page.kmlPreviewTemplate;
+         Test.setCurrentPage(pageRef);
+         system.assert ( GeoUtils.generateFromContent( pageRef ) != null );
+         Account a =  new Account( name=&#39;foo&#39;, billingstreet=&#39;main&#39;, billingcity=&#39;springfield&#39;,billingstate=&#39;il&#39;,
+          billingpostalcode=&#39;9&#39;,billingcountry=&#39;us&#39;);
+         insert a;
+         system.assertEquals( &#39;main,springfield,il,9,us&#39;,accountAddressString( a) );
+        
+ 	}
+ }
+
+## <a href="../lists/keywords.html?filter=apex">Keywords</a> in Apex
+* abstract ABSTRACT Abstract activate ACTIVATE Activate and AND And any ANY Any array ARRAY Array as AS As asc ASC Asc assert ASSERT Assert autonomous AUTONOMOUS Autonomous begin BEGIN Begin bigdecimal BIGDECIMAL Bigdecimal blob BLOB Blob boolean BOOLEAN Boolean break BREAK Break bulk BULK Bulk by BY By case CASE Case cast CAST Cast catch CATCH Catch char CHAR Char class CLASS Class collect COLLECT Collect commit COMMIT Commit const CONST Const continue CONTINUE Continue convertcurrency CONVERTCURRENCY Convertcurrency decimal DECIMAL Decimal default DEFAULT Default delete DELETE Delete desc DESC Desc do DO Do double DOUBLE Double else ELSE Else end END End enum ENUM Enum exception EXCEPTION Exception exit EXIT Exit export EXPORT Export extends EXTENDS Extends false FALSE False final FINAL Final finally FINALLY Finally float FLOAT Float for FOR For from FROM From future FUTURE Future get GET Get global GLOBAL Global goto GOTO Goto group GROUP Group having HAVING Having hint HINT Hint if IF If implements IMPLEMENTS Implements import IMPORT Import in IN In inner INNER Inner insert INSERT Insert instanceof INSTANCEOF Instanceof int INT Int interface INTERFACE Interface into INTO Into join JOIN Join last_90_days LAST_90_DAYS Last_90_days last_month LAST_MONTH Last_month last_n_days LAST_N_DAYS Last_n_days last_week LAST_WEEK Last_week like LIKE Like limit LIMIT Limit list LIST List long LONG Long loop LOOP Loop map MAP Map merge MERGE Merge native NATIVE Native new NEW New next_90_days NEXT_90_DAYS Next_90_days next_month NEXT_MONTH Next_month next_n_days NEXT_N_DAYS Next_n_days next_week NEXT_WEEK Next_week not NOT Not null NULL Null nulls NULLS Nulls number NUMBER Number object OBJECT Object of OF Of on ON On or OR Or outer OUTER Outer override OVERRIDE Override package PACKAGE Package parallel PARALLEL Parallel pragma PRAGMA Pragma private PRIVATE Private protected PROTECTED Protected public PUBLIC Public retrieve RETRIEVE Retrieve return RETURN Return returning RETURNING Returning rollback ROLLBACK Rollback savepoint SAVEPOINT Savepoint search SEARCH Search select SELECT Select set SET Set short SHORT Short sort SORT Sort stat STAT Stat static STATIC Static strictfp STRICTFP Strictfp super SUPER Super switch SWITCH Switch synchronized SYNCHRONIZED Synchronized system SYSTEM System testmethod TESTMETHOD Testmethod then THEN Then this THIS This this_month THIS_MONTH This_month this_week THIS_WEEK This_week throw THROW Throw throws THROWS Throws today TODAY Today tolabel TOLABEL Tolabel tomorrow TOMORROW Tomorrow transaction TRANSACTION Transaction transient TRANSIENT Transient trigger TRIGGER Trigger true TRUE True try TRY Try type TYPE Type undelete UNDELETE Undelete update UPDATE Update upsert UPSERT Upsert using USING Using virtual VIRTUAL Virtual void VOID Void volatile VOLATILE Volatile webservice WEBSERVICE Webservice when WHEN When where WHERE Where while WHILE While yesterday YESTERDAY Yesterday
+
+endColumns
+
+## Language <a href="../lists/features.html">features</a>
+
+treeTable
+ row
+  Feature Conditionals
+  FeatureLink ../features/hasConditionals.html
+  Supported <span class="hasFeature">✓</span>
+  Token 
+  Example
+ row
+  Feature Inheritance
+  FeatureLink ../features/hasInheritance.html
+  Supported <span class="hasFeature">✓</span>
+  Token 
+  Example
+ row
+  Feature Access Modifiers
+  FeatureLink ../features/hasAccessModifiers.html
+  Supported <span class="hasFeature">✓</span>
+  Token 
+  Example
+ row
+  Feature Switch Statements
+  FeatureLink ../features/hasSwitch.html
+  Supported <span class="hasFeature">✓</span>
+  Token 
+  Example
+ row
+  Feature Exceptions
+  FeatureLink ../features/hasExceptions.html
+  Supported <span class="hasFeature">✓</span>
+  Token 
+  Example
+ row
+  Feature Constants
+  FeatureLink ../features/hasConstants.html
+  Supported <span class="hasFeature">✓</span>
+  Token 
+  Example
+ row
+  Feature Classes
+  FeatureLink ../features/hasClasses.html
+  Supported <span class="hasFeature">✓</span>
+  Token 
+  Example
+ row
+  Feature While Loops
+  FeatureLink ../features/hasWhileLoops.html
+  Supported <span class="hasFeature">✓</span>
+  Token 
+  Example
+ row
+  Feature Booleans
+  FeatureLink ../features/hasBooleans.html
+  Supported <span class="hasFeature">✓</span>
+  Token true false
+  Example
+ row
+  Feature MultiLine Comments
+  FeatureLink ../features/hasMultiLineComments.html
+  Supported <span class="hasFeature">✓</span>
+  Token /* */
+  Example
+   /* A comment
+   */
+ row
+  Feature Strings
+  FeatureLink ../features/hasStrings.html
+  Supported <span class="hasFeature">✓</span>
+  Token '
+  Example
+ row
+  Feature Line Comments
+  FeatureLink ../features/hasLineComments.html
+  Supported <span class="hasFeature">✓</span>
+  Token //
+  Example
+   // A comment
+ row
+  Feature Comments
+  FeatureLink ../features/hasComments.html
+  Supported <span class="hasFeature">✓</span>
+  Token 
+  Example
+ row
+  Feature Semantic Indentation
+  FeatureLink ../features/hasSemanticIndentation.html
+  Supported <span class="doesNotHaveFeature">X</span>
+  Token 
+  Example
+
+## Books about Apex from ISBNdb
+pipeTable
+ title|titleLink|authors|year|publisher
+ Advanced Apex Programming for Salesforce.com and Force.com|https://isbndb.com/book/9781936754106|Appleman, Dan|2015|Desaware Publishing
+ Oracle Apex 4.0 Cookbook|https://isbndb.com/book/9781849681346|M. van Zoest and M. van der Plas|2010|Packt Publishing
+ Advanced Apex Programming in Salesforce|https://isbndb.com/book/9781936754120|Appleman, Dan|2018|Desaware Publishing
+ Advanced Apex Programming in Salesforce|https://isbndb.com/book/9781936754144|Appleman, Dan|2021|Desaware Publishing
+ Advanced Apex Programming in Salesforce|https://isbndb.com/book/9781936754151|Appleman, Dan|2021|Desaware Publishing
+ Learning Salesforce Development with Apex: Write, Run and Deploy Apex Code with Ease (English Edition)|https://isbndb.com/book/9789389898187|Battisson, Paul|2020|BPB Publications
+ Mastering Apex Programming: A developer's guide to learning advanced techniques and best practices for building robust Salesforce applications|https://isbndb.com/book/9781800200920|Battisson, Paul|2020-11-20T00:00:01Z|Packt Publishing
+ Apex Design Patterns: Harness the power of Apex design patterns to build robust and scalable code architectures on the Force.com platform|https://isbndb.com/book/9781782173656|Zaa, Jitendra and Verma, Anshul|2016|Packt Publishing
+ Advanced Apex Programming for Salesforce.com and Force.com|https://isbndb.com/book/9781936754076|Appleman, Dan|2013-10-25T00:00:01Z|Desaware Publishing
+ Learning Apex Programming|https://isbndb.com/book/9781782173977|Kaufman, Matt and Wicherski, Michael|2015|Packt Publishing
+ Oracle APEX Cookbook, Second Edition|https://isbndb.com/book/9781782179689|der Plas, Marcel van and Zoest, Michel van|2013|Packt Publishing
+ Oracle Application Express: Build Powerful Data-Centric Web Apps with APEX (Oracle Press)|https://isbndb.com/book/9780071843041|Geller, Arie and Spendolini, Brian|2017|McGraw-Hill Education
+ Learning Apex Programming|https://isbndb.com/book/9781782173984|Matt Kaufman; Michael Wicherski|20150131|Packt Publishing
+ Apex Design Patterns|https://isbndb.com/book/9781782173663|Jitendra Zaa|27-04-2016|Packt Publishing
+ Mastering Apex Programming|https://isbndb.com/book/9781800204331|Paul Battisson; Mike Wheeler|20-11-2020|Packt Publishing
+ Oracle APEX 4.0 Cookbook|https://isbndb.com/book/9781849681353|Michel van Zoest and Marcel van der Plas|2010-12-14|Packt Publishing
+ Understanding Oracle APEX 20 Application Development|https://isbndb.com/book/9781484261651|Edward Sciore|20200921|Springer Nature
+ Advanced Apex Programming For Salesforce.com And Force.com|https://isbndb.com/book/9781936754052|Dan Appleman|2012|Desaware Publishing
+ Oracle Application Express: Build Powerful Data-Centric Web Apps with APEX|https://isbndb.com/book/9780071843065|Arie Geller; Brian Spendolini|20170505|McGraw-Hill Professional
+
+keyboardNav openscad.html joy.html
+
+import ../footer.scroll

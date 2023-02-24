@@ -1,0 +1,477 @@
+import header.scroll
+
+title Scala
+
+title Scala - Programming language
+ hidden
+
+html
+ <a class="prevLang" href="cobol.html">&lt;</a>
+ <a class="nextLang" href="swift.html">&gt;</a>
+
+viewSourceUrl https://github.com/breck7/pldb/blob/main/database/things/scala.pldb
+
+startColumns 4
+
+html <div class="quickLinks"><a href="http://www.scala-lang.org"><svg role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12.7166 3.79541C12.2835 3.49716 11.7165 3.49716 11.2834 3.79541L4.14336 8.7121C3.81027 8.94146 3.60747 9.31108 3.59247 9.70797C3.54064 11.0799 3.4857 13.4824 3.63658 15.1877C3.7504 16.4742 4.05336 18.1747 4.29944 19.4256C4.41371 20.0066 4.91937 20.4284 5.52037 20.4284H8.84433C8.98594 20.4284 9.10074 20.3111 9.10074 20.1665V15.9754C9.10074 14.9627 9.90433 14.1417 10.8956 14.1417H13.4091C14.4004 14.1417 15.204 14.9627 15.204 15.9754V20.1665C15.204 20.3111 15.3188 20.4284 15.4604 20.4284H18.4796C19.0806 20.4284 19.5863 20.0066 19.7006 19.4256C19.9466 18.1747 20.2496 16.4742 20.3634 15.1877C20.5143 13.4824 20.4594 11.0799 20.4075 9.70797C20.3925 9.31108 20.1897 8.94146 19.8566 8.7121L12.7166 3.79541ZM10.4235 2.49217C11.3764 1.83602 12.6236 1.83602 13.5765 2.49217L20.7165 7.40886C21.4457 7.91098 21.9104 8.73651 21.9448 9.64736C21.9966 11.0178 22.0564 13.5119 21.8956 15.3292C21.7738 16.7067 21.4561 18.4786 21.2089 19.7353C20.9461 21.0711 19.7924 22.0001 18.4796 22.0001H15.4604C14.4691 22.0001 13.6655 21.1791 13.6655 20.1665V15.9754C13.6655 15.8307 13.5507 15.7134 13.4091 15.7134H10.8956C10.754 15.7134 10.6392 15.8307 10.6392 15.9754V20.1665C10.6392 21.1791 9.83561 22.0001 8.84433 22.0001H5.52037C4.20761 22.0001 3.05389 21.0711 2.79113 19.7353C2.54392 18.4786 2.22624 16.7067 2.10437 15.3292C1.94358 13.5119 2.00338 11.0178 2.05515 9.64736C2.08957 8.73652 2.55427 7.91098 3.28346 7.40886L10.4235 2.49217Z"/></svg></a> <a href="https://en.wikipedia.org/wiki/Scala_(programming_language)"><svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="98.05px" height="98.05px" viewBox="0 0 98.05 98.05" style="enable-background:new 0 0 98.05 98.05;" xml:space="preserve"><path d="M98.023,17.465l-19.584-0.056c-0.004,0.711-0.006,1.563-0.017,2.121c1.664,0.039,5.922,0.822,7.257,4.327L66.92,67.155 c-0.919-2.149-9.643-21.528-10.639-24.02l9.072-18.818c1.873-2.863,5.455-4.709,8.918-4.843l-0.01-1.968L55.42,17.489 c-0.045,0.499,0.001,1.548-0.068,2.069c5.315,0.144,7.215,1.334,5.941,4.508c-2.102,4.776-6.51,13.824-7.372,15.475 c-2.696-5.635-4.41-9.972-7.345-16.064c-1.266-2.823,1.529-3.922,4.485-4.004v-1.981l-21.82-0.067 c0.016,0.93-0.021,1.451-0.021,2.131c3.041,0.046,6.988,0.371,8.562,3.019c2.087,4.063,9.044,20.194,11.149,24.514 c-2.685,5.153-9.207,17.341-11.544,21.913c-3.348-7.43-15.732-36.689-19.232-44.241c-1.304-3.218,3.732-5.077,6.646-5.213 l0.019-2.148L0,17.398c0.005,0.646,0.027,1.71,0.029,2.187c4.025-0.037,9.908,6.573,11.588,10.683 c7.244,16.811,14.719,33.524,21.928,50.349c0.002,0.029,2.256,0.059,2.281,0.008c4.717-9.653,10.229-19.797,15.206-29.56 L63.588,80.64c0.005,0.004,2.082,0.016,2.093,0.007c7.962-18.196,19.892-46.118,23.794-54.933c1.588-3.767,4.245-6.064,8.543-6.194 l0.032-1.956L98.023,17.465z"/></svg></a> <a href="https://reddit.com/r/scala"><svg role="img" width="32px" height="32px" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg"><path d="M 18.65625 4 C 16.558594 4 15 5.707031 15 7.65625 L 15 11.03125 C 12.242188 11.175781 9.742188 11.90625 7.71875 13.0625 C 6.945313 12.316406 5.914063 12 4.90625 12 C 3.816406 12 2.707031 12.355469 1.9375 13.21875 L 1.9375 13.25 L 1.90625 13.28125 C 1.167969 14.203125 0.867188 15.433594 1.0625 16.65625 C 1.242188 17.777344 1.898438 18.917969 3.03125 19.65625 C 3.023438 19.769531 3 19.882813 3 20 C 3 22.605469 4.574219 24.886719 6.9375 26.46875 C 9.300781 28.050781 12.488281 29 16 29 C 19.511719 29 22.699219 28.050781 25.0625 26.46875 C 27.425781 24.886719 29 22.605469 29 20 C 29 19.882813 28.976563 19.769531 28.96875 19.65625 C 30.101563 18.917969 30.757813 17.777344 30.9375 16.65625 C 31.132813 15.433594 30.832031 14.203125 30.09375 13.28125 L 30.0625 13.25 C 29.292969 12.386719 28.183594 12 27.09375 12 C 26.085938 12 25.054688 12.316406 24.28125 13.0625 C 22.257813 11.90625 19.757813 11.175781 17 11.03125 L 17 7.65625 C 17 6.675781 17.558594 6 18.65625 6 C 19.175781 6 19.820313 6.246094 20.8125 6.59375 C 21.65625 6.890625 22.75 7.21875 24.15625 7.3125 C 24.496094 8.289063 25.414063 9 26.5 9 C 27.875 9 29 7.875 29 6.5 C 29 5.125 27.875 4 26.5 4 C 25.554688 4 24.738281 4.535156 24.3125 5.3125 C 23.113281 5.242188 22.246094 4.992188 21.46875 4.71875 C 20.566406 4.402344 19.734375 4 18.65625 4 Z M 16 13 C 19.152344 13 21.964844 13.867188 23.9375 15.1875 C 25.910156 16.507813 27 18.203125 27 20 C 27 21.796875 25.910156 23.492188 23.9375 24.8125 C 21.964844 26.132813 19.152344 27 16 27 C 12.847656 27 10.035156 26.132813 8.0625 24.8125 C 6.089844 23.492188 5 21.796875 5 20 C 5 18.203125 6.089844 16.507813 8.0625 15.1875 C 10.035156 13.867188 12.847656 13 16 13 Z M 4.90625 14 C 5.285156 14 5.660156 14.09375 5.96875 14.25 C 4.882813 15.160156 4.039063 16.242188 3.53125 17.4375 C 3.277344 17.117188 3.125 16.734375 3.0625 16.34375 C 2.953125 15.671875 3.148438 14.976563 3.46875 14.5625 C 3.472656 14.554688 3.464844 14.539063 3.46875 14.53125 C 3.773438 14.210938 4.3125 14 4.90625 14 Z M 27.09375 14 C 27.6875 14 28.226563 14.210938 28.53125 14.53125 C 28.535156 14.535156 28.527344 14.558594 28.53125 14.5625 C 28.851563 14.976563 29.046875 15.671875 28.9375 16.34375 C 28.875 16.734375 28.722656 17.117188 28.46875 17.4375 C 27.960938 16.242188 27.117188 15.160156 26.03125 14.25 C 26.339844 14.09375 26.714844 14 27.09375 14 Z M 11 16 C 9.894531 16 9 16.894531 9 18 C 9 19.105469 9.894531 20 11 20 C 12.105469 20 13 19.105469 13 18 C 13 16.894531 12.105469 16 11 16 Z M 21 16 C 19.894531 16 19 16.894531 19 18 C 19 19.105469 19.894531 20 21 20 C 22.105469 20 23 19.105469 23 18 C 23 16.894531 22.105469 16 21 16 Z M 21.25 21.53125 C 20.101563 22.597656 18.171875 23.28125 16 23.28125 C 13.828125 23.28125 11.898438 22.589844 10.75 21.65625 C 11.390625 23.390625 13.445313 25 16 25 C 18.554688 25 20.609375 23.398438 21.25 21.53125 Z"/></svg></a> <a href="https://twitter.com/scala_lang"><svg role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M23.953 4.57a10 10 0 01-2.825.775 4.958 4.958 0 002.163-2.723c-.951.555-2.005.959-3.127 1.184a4.92 4.92 0 00-8.384 4.482C7.69 8.095 4.067 6.13 1.64 3.162a4.822 4.822 0 00-.666 2.475c0 1.71.87 3.213 2.188 4.096a4.904 4.904 0 01-2.228-.616v.06a4.923 4.923 0 003.946 4.827 4.996 4.996 0 01-2.212.085 4.936 4.936 0 004.604 3.417 9.867 9.867 0 01-6.102 2.105c-.39 0-.779-.023-1.17-.067a13.995 13.995 0 007.557 2.209c9.053 0 13.998-7.496 13.998-13.985 0-.21 0-.42-.015-.63A9.935 9.935 0 0024 4.59z"/></svg></a> <a href="https://www.scala-lang.org/community/"><svg role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M24 5.457v13.909c0 .904-.732 1.636-1.636 1.636h-3.819V11.73L12 16.64l-6.545-4.91v9.273H1.636A1.636 1.636 0 0 1 0 19.366V5.457c0-2.023 2.309-3.178 3.927-1.964L5.455 4.64 12 9.548l6.545-4.91 1.528-1.145C21.69 2.28 24 3.434 24 5.457z"/></svg></a> <a href="https://docs.scala-lang.org/"><svg viewBox="0 0 500 500" xmlns="http://www.w3.org/2000/svg"><g transform="matrix(1, 0, 0, 1, 13.859316, 9.109739)"><g><g><path d="M340.732,0H55v485h375V94.518L340.732,0z M345,26.364L405.1,90H345V26.364z M415,470H70V15h260v90h85V470z"/><rect x="102.5" y="191" width="280" height="15"/><rect x="102.5" y="141" width="120" height="15"/><rect x="102.5" y="241" width="280" height="15"/><rect x="102.5" y="291" width="280" height="15"/><rect x="102.5" y="341" width="280" height="15"/><rect x="102.5" y="391" width="280" height="15"/></g></g></g></svg></a></div>
+
+* Scala is a <a href="../lists/languages.html?filter=pl">programming language</a> created in 2004 by Martin Odersky.
+ link ../lists/languages.html?filter=2004 2004
+ link ../lists/creators.html#martinOdersky Martin Odersky
+
+kpiTable
+ #21 <span title="TotalRank: 72 Jobs: 30 Users: 31 Facts: 13 Links: 29">on PLDB</span>
+ 19 Years Old
+ 139.5k <span title="Crude user estimate from a linear model.">Users</span>
+ 130 <span title="Books about or leveraging Scala">Books</span>
+ 26 <span title="Academic publications about or leveraging Scala">Papers</span>
+ 219k <span title="Scala repos on GitHub.">Repos</span>
+
+* Try now: <a href="https://scastie.scala-lang.org/">Web</a> · <a href="https://riju.codes/scala">Riju</a> · <a href="https://tio.run/#scala">TIO</a>
+
+monacoEditor scala
+ // Type your code here, or load an example.
+ object Square {
+     def square(num: Int): Int =
+         num * num
+ }
+ 
+
+* Scala ( SKAH-lah) is a general-purpose programming language providing support for functional programming and a strong static type system. Designed to be concise, many of Scala's design decisions aimed to address criticisms of Java. Scala source code is intended to be compiled to Java bytecode, so that the resulting executable code runs on a Java virtual machine. Read more on Wikipedia...
+ https://en.wikipedia.org/wiki/Scala_(programming_language) Read more on Wikipedia...
+
+- Scala website
+ http://www.scala-lang.org
+- Scala downloads page
+ https://scala-lang.org/download/
+- Scala Wikipedia page
+ https://en.wikipedia.org/wiki/Scala_(programming_language)
+- Scala docs
+ https://docs.scala-lang.org/
+- Scala mailing list
+ https://www.scala-lang.org/community/
+- There are at least 219,084 Scala repos on <a href="https://github.com/search?q=language:Scala">GitHub</a>
+- Scala first developed in <a href="../lists/originCommunities.html#ecolePolytechniqueFederaleDeLausanne">École Polytechnique Fédérale de Lausanne</a>
+- PLDB estimates there are currently 5k job openings for Scala programmers.
+- file extensions for Scala include scala, sc, kojo and sbt
+- Scala on Twitter
+ https://twitter.com/scala_lang
+- The  Google BigQuery Public Dataset GitHub snapshot shows 21k users using Scala in 35k repos on <a href="https://api.github.com/search/repositories?q=language:Scala">GitHub</a>
+- Check out the 624 <a href="https://www.meetup.com/topics/scala/">Scala meetup groups</a> on Meetup.com.
+- There are 46,218 members in the <a href="https://reddit.com/r/scala">Scala subreddit</a>
+- There are 1,985 <a href="https://projecteuler.net/language=Scala">Project Euler</a> users using Scala
+- In the 2021 StackOverflow <a href="https://insights.stackoverflow.com/survey">developer survey</a> Scala programmers reported a median salary of $77,832. 3% of respondents reported using Scala. 2,148 programmers reported using Scala, and 3,165 said they wanted to use it
+- Explore Scala snippets on <a href="http://www.rosettacode.org/wiki/Category:Scala">Rosetta Code</a>
+- Scala on HOPL
+ https://hopl.info/showlanguage.prx?exp=6814
+- Scala ranks #39 in the <a href="https://www.tiobe.com/tiobe-index/">TIOBE Index</a>
+- Scala Ubuntu package
+ https://packages.ubuntu.com/jammy/scala
+- <a href="antlr.html">ANTLR</a> <a href="https://github.com/antlr/grammars-v4/tree/master/scala">grammar</a> for Scala
+- Scala <a href="language-server-protocol.html">LSP</a> <a href="https://github.com/scalameta/metals">implementation</a>
+- <a href="monaco.html">Monaco</a> <a href="https://github.com/microsoft/monaco-editor/tree/main/src/basic-languages/scala">package</a> for syntax highlighting Scala
+- <a href="pygments.html">Pygments</a> supports <a href="https://github.com/pygments/pygments/blob/master/pygments/lexers/jvm.py">syntax highlighting</a> for Scala
+- GitHub supports <a href="https://github.com/scala/vscode-scala-syntax" title="The package used for syntax highlighting by GitHub Linguist.">syntax highlighting</a> for Scala
+- Scala appears in the <a href="https://github.com/mame/quine-relay">Quine Relay</a> project
+- PLDB has 2 <a href="jupyter-notebook.html">Jupyter</a> Kernels for Scala: <a href="https://github.com/mattpap/IScala">github.com</a>, <a href="https://github.com/alexarchambault/jupyter-scala">github.com</a>
+- There is a <a href="https://index.scala-lang.org/">central package repository</a> for Scala
+- Release Notes for Scala
+ https://www.scala-lang.org/download/all.html
+- Official Blog page for Scala
+ https://www.scala-lang.org/blog/
+- Events page for Scala
+ https://scala-lang.org/events/
+- Frequently Asked Questions for Scala
+ https://docs.scala-lang.org/tutorials/FAQ/index.html
+- Indeed.com has 3,679 matches for <a href="https://www.indeed.com/jobs?q=scala engineer">"scala engineer"</a>.
+- <a href="http://www.scala-lang.org">scala-lang.org</a> was registered in 2007
+- See also: (32 related languages)<a href="jvm.html">JVM</a>, <a href="javascript.html">JavaScript</a>, <a href="llvmir.html">LLVM IR</a>, <a href="eiffel.html">Eiffel</a>, <a href="erlang.html">Erlang</a>, <a href="haskell.html">Haskell</a>, <a href="java.html">Java</a>, <a href="lisp.html">Lisp</a>, <a href="pizza.html">Pizza</a>, <a href="standard-ml.html">Standard ML</a>, <a href="ocaml.html">OCaml</a>, <a href="scheme.html">Scheme</a>, <a href="smalltalk.html">Smalltalk</a>, <a href="oz.html">Oz</a>, <a href="ceylon.html">Ceylon</a>, <a href="fantom.html">Fantom</a>, <a href="f-sharp.html">F#</a>, <a href="kotlin.html">Kotlin</a>, <a href="lasso.html">Lasso</a>, <a href="red.html">Red</a>, <a href="java-bytecode.html">Java Bytecode</a>, <a href="c.html">C</a>, <a href="android.html">Android</a>, <a href="pascal.html">Pascal</a>, <a href="csharp.html">C#</a>, <a href="python.html">Python</a>, <a href="ml.html">ML</a>, <a href="csp.html">CSP</a>, <a href="groovy.html">Groovy</a>, <a href="clojure.html">Clojure</a>, <a href="php.html">PHP</a>, <a href="ruby.html">Ruby</a>
+- HTML of this page generated by <a href="https://github.com/breck7/pldb/blob/main/code/LanguagePage.ts">LanguagePage.ts</a>
+- <a href="https://pldb.com/edit/scala">Improve our Scala file</a>
+
+html <br>
+
+codeWithHeader Example from <a href='https://godbolt.org/'>Compiler Explorer</a>:
+ // Type your code here, or load an example.
+ object Square {
+     def square(num: Int): Int =
+         num * num
+ }
+ 
+
+codeWithHeader Example from <a href='https://riju.codes/scala'>Riju</a>:
+ println(&quot;Hello, world!&quot;)
+ 
+
+codeWithHeader Example from <a href='https://github.com/leachim6/hello-world/blob/main/s/Scala.scala'>hello-world</a>:
+ object HelloWorld extends App {
+   println(&quot;Hello World&quot;)
+ }
+ 
+
+codeWithHeader Example from <a href='http://helloworldcollection.de/#Scala'>the Hello World Collection</a>:
+ // Hello world in Scala
+ 
+ object HelloWorld extends App {
+   println(&quot;Hello world!&quot;)
+ }
+
+codeWithHeader Example from <a href='https://github.com/scala/vscode-scala-syntax'>Linguist</a>:
+ #!/bin/sh
+ exec scala &quot;$0&quot; &quot;$@&quot;
+ !#
+ 
+ object HelloWorld {
+   def main(args: Array[String]) {
+     println(&quot;Hello, world!&quot;)
+   }
+ }
+ 
+
+codeWithHeader Example from <a href='https://en.wikipedia.org/wiki/Scala_(programming_language)'>Wikipedia</a>:
+ val urls = List(&quot;http://scala-lang.org&quot;,  &quot;https://github.com/scala/scala&quot;)
+ 
+ def fromURL(url: String) = scala.io.Source.fromURL(url)
+   .getLines().mkString(&quot;\n&quot;)
+ 
+ val t = System.currentTimeMillis()
+ urls.par.map(fromURL(_))
+ println(&quot;time: &quot; + (System.currentTimeMillis - t) + &quot;ms&quot;)
+
+## <a href="../lists/keywords.html?filter=scala">Keywords</a> in Scala
+* abstract case catch class def do else extends false final finally for forSome if implicit import lazy match new null object override package private protected return sealed super this throw trait try true type val var while with yield
+
+endColumns
+
+## Language <a href="../lists/features.html">features</a>
+
+treeTable
+ row
+  Feature Conditionals
+  FeatureLink ../features/hasConditionals.html
+  Supported <span class="hasFeature">✓</span>
+  Token 
+  Example
+ row
+  Feature Inheritance
+  FeatureLink ../features/hasInheritance.html
+  Supported <span class="hasFeature">✓</span>
+  Token 
+  Example
+ row
+  Feature Functions
+  FeatureLink ../features/hasFunctions.html
+  Supported <span class="hasFeature">✓</span>
+  Token 
+  Example
+ row
+  Feature Exceptions
+  FeatureLink ../features/hasExceptions.html
+  Supported <span class="hasFeature">✓</span>
+  Token 
+  Example
+ row
+  Feature Classes
+  FeatureLink ../features/hasClasses.html
+  Supported <span class="hasFeature">✓</span>
+  Token 
+  Example
+ row
+  Feature While Loops
+  FeatureLink ../features/hasWhileLoops.html
+  Supported <span class="hasFeature">✓</span>
+  Token 
+  Example
+ row
+  Feature Booleans
+  FeatureLink ../features/hasBooleans.html
+  Supported <span class="hasFeature">✓</span>
+  Token true false
+  Example
+ row
+  Feature MultiLine Comments
+  FeatureLink ../features/hasMultiLineComments.html
+  Supported <span class="hasFeature">✓</span>
+  Token /* */
+  Example
+   /* A comment
+   */
+ row
+  Feature Print() Debugging
+  FeatureLink ../features/hasPrintDebugging.html
+  Supported <span class="hasFeature">✓</span>
+  Token println
+  Example
+ row
+  Feature Message Passing
+  FeatureLink ../features/hasMessagePassing.html
+  Supported <span class="hasFeature">✓</span>
+  Token 
+  Example
+ row
+  Feature Line Comments
+  FeatureLink ../features/hasLineComments.html
+  Supported <span class="hasFeature">✓</span>
+  Token //
+  Example
+   // A comment
+ row
+  Feature Type Inference
+  FeatureLink ../features/hasTypeInference.html
+  Supported <span class="hasFeature">✓</span>
+  Token 
+  Example
+ row
+  Feature Operator Overloading
+  FeatureLink ../features/hasOperatorOverloading.html
+  Supported <span class="hasFeature">✓</span>
+  Token 
+  Example
+ row
+  Feature Implicit Arguments
+  FeatureLink ../features/hasImplicitArguments.html
+  Supported <span class="hasFeature">✓</span>
+  Token 
+  Example
+   // https://docs.scala-lang.org/tour/implicit-parameters.html
+   abstract class Monoid[A] {
+     def add(x: A, y: A): A
+     def unit: A
+   }
+   
+   object ImplicitTest {
+     implicit val stringMonoid: Monoid[String] = new Monoid[String] {
+       def add(x: String, y: String): String = x concat y
+       def unit: String = ""
+     }
+     
+     implicit val intMonoid: Monoid[Int] = new Monoid[Int] {
+       def add(x: Int, y: Int): Int = x + y
+       def unit: Int = 0
+     }
+     
+     def sum[A](xs: List[A])(implicit m: Monoid[A]): A =
+       if (xs.isEmpty) m.unit
+       else m.add(xs.head, sum(xs.tail))
+       
+     def main(args: Array[String]): Unit = {
+       println(sum(List(1, 2, 3)))       // uses intMonoid implicitly
+       println(sum(List("a", "b", "c"))) // uses stringMonoid implicitly
+     }
+   }
+ row
+  Feature Macros
+  FeatureLink ../features/hasMacros.html
+  Supported <span class="hasFeature">✓</span>
+  Token 
+  Example
+   // https://docs.scala-lang.org/scala3/guides/macros/macros.html
+   import scala.quoted.* // imports Quotes, Expr
+   
+   def inspectCode(x: Expr[Any])(using Quotes): Expr[Any] =
+     println(x.show)
+     x
+ row
+  Feature Comments
+  FeatureLink ../features/hasComments.html
+  Supported <span class="hasFeature">✓</span>
+  Token 
+  Example
+ row
+  Feature Partial Application
+  FeatureLink ../features/hasPartialApplication.html
+  Supported <span class="hasFeature">✓</span>
+  Token 
+  Example
+   def add(x: Int, y: Int) = {x+y}; add(1, _: Int)
+ row
+  Feature Strings
+  FeatureLink ../features/hasStrings.html
+  Supported <span class="hasFeature">✓</span>
+  Token "
+  Example
+   "hello world"
+ row
+  Feature Case Insensitive Identifiers
+  FeatureLink ../features/hasCaseInsensitiveIdentifiers.html
+  Supported <span class="doesNotHaveFeature">X</span>
+  Token 
+  Example
+ row
+  Feature Semantic Indentation
+  FeatureLink ../features/hasSemanticIndentation.html
+  Supported <span class="doesNotHaveFeature">X</span>
+  Token 
+  Example
+
+## Books about Scala on goodreads
+pipeTable
+ title|titleLink|author|year|reviews|ratings|rating
+ Programming in Scala|https://www.goodreads.com/search?q=Programming in Scala Martin Odersky|Martin Odersky|2008|87|1325|4.19
+ Functional Programming in Scala|https://www.goodreads.com/search?q=Functional Programming in Scala Rúnar Bjarnason|Rúnar Bjarnason|2013|45|486|4.44
+ Programming Scala|https://www.goodreads.com/search?q=Programming Scala Venkat Subramaniam|Venkat Subramaniam|2009|10|100|3.29
+ Programming Scala: Scalability = Functional Programming + Objects|https://www.goodreads.com/search?q=Programming Scala: Scalability = Functional Programming + Objects Dean Wampler|Dean Wampler|2009|21|204|3.68
+
+## Books about Scala from ISBNdb
+pipeTable
+ title|titleLink|authors|year|publisher
+ Programming in Scala: Updated for Scala 2.12|https://isbndb.com/book/9780981531687|Odersky, Martin and Spoon, Lex and Venners, Bill|2016|Artima Press
+ Functional Programming in Scala|https://isbndb.com/book/9781617290657|Paul Chiusano and Rúnar Bjarnason|2014|Manning Publications
+ Introduction to the Art of Programming Using Scala (Chapman & Hall/CRC Textbooks in Computing)|https://isbndb.com/book/9781439896662|Lewis, Mark C.|2012|Chapman and Hall/CRC
+ Scala High Performance Programming|https://isbndb.com/book/9781786466044|Theron, Vincent and Diamant, Michael|2016|Packt Publishing
+ Scala Cookbook: Recipes for Object-Oriented and Functional Programming|https://isbndb.com/book/9781449339616|Alexander, Alvin|2013|O'Reilly Media
+ Programming in Scala|https://isbndb.com/book/9780981531618|Martin Odersky and Spoon, Lex and Venners, Bill|2020|Artima Inc
+ Scala Functional Programming Patterns|https://isbndb.com/book/9781783985845|S.Khot, Atul|2015|Packt Publishing
+ Scala for Data Science: Leverage the power of Scala with different tools to build scalable, robust data science applications|https://isbndb.com/book/9781785281372|Bugnion, Pascal|2016|Packt Publishing
+ Functional Programming Patterns in Scala and Clojure: Write Lean Programs for the JVM|https://isbndb.com/book/9781937785475|Bevilacqua-Linn, Michael|2013|Pragmatic Bookshelf
+ Beginning Scala (Expert's Voice in Open Source)|https://isbndb.com/book/9781430219897|Pollak, David|2009|Apress
+ Scala Reactive Programming: Build scalable, functional reactive microservices with Akka, Play, and Lagom|https://isbndb.com/book/9781787288645|Posa, Rambabu|2018|Packt Publishing
+ Beginning Scala|https://isbndb.com/book/9781430219903|David Pollak|20091001|Springer Nature
+ Learning Concurrent Programming in Scala|https://isbndb.com/book/9781783281411|Prokopec, Aleksandar|2014|Packt Publishing
+ Programming Scala|https://isbndb.com/book/9781491950166|Dean Wampler|20141204|O'Reilly Media, Inc.
+ Programming with Scala|https://isbndb.com/book/9783319693682|Bhim P. Upadhyaya|20171017|Springer Nature
+ Scala and Spark for Big Data Analytics: Explore the concepts of functional programming, data streaming, and machine learning|https://isbndb.com/book/9781783550500|Karim, Md. Rezaul and Alla, Sridhar|2017|Packt Publishing
+ Programming in Scala Fifth Edition|https://isbndb.com/book/9780997148008|Odersky and Martin and Spoon and Lex and Venners and Bill and Sommers and Frank|2021|Artima Press
+ Scala for the Impatient|https://isbndb.com/book/9780134540658|S., Horstmann Cay|2016|Addison-Wesley Professional
+ Functional Programming in Scala|https://isbndb.com/book/9781638353959|Chiusano , Paul and Bjarnason, Runar|2014|Manning
+ Scala Cookbook: Recipes for Object-Oriented and Functional Programming|https://isbndb.com/book/9781492051541|Alexander, Alvin|2021|O'Reilly Media
+ Hands-on Scala Programming: Learn Scala in a Practical, Project-Based Way|https://isbndb.com/book/9789811456930|Li, Haoyi|2020|Li Haoyi
+ Scala for Machine Learning|https://isbndb.com/book/9781783558759|Nicolas,  Patrick R.|2014|Packt Publishing
+ Scala for the Impatient|https://isbndb.com/book/9780132761802|S., Horstmann Cay|2012|Addison-Wesley Professional
+ Scala for the Impatient|https://isbndb.com/book/9780321774095|Horstmann, Cay|2010|Addison-Wesley Professional
+ Hands-On Data Analysis with Scala: Perform data collection, processing, manipulation, and visualization with Scala|https://isbndb.com/book/9781789346114|Gupta, Rajesh|2019|Packt Publishing
+ 100+ Frequently Asked Interview Questions & Answers In Scala: Scala Programming (Interview Q & A Series)|https://isbndb.com/book/9781982987701|Ojha, Bandana|2018-05-24T00:00:01Z|Independently published
+ Scala Design Patterns: Design modular, clean, and scalable applications by applying proven design patterns in Scala, 2nd Edition|https://isbndb.com/book/9781788472098|Nikolov, Ivan|2018|Packt Publishing
+ Learning Concurrent Programming in Scala|https://isbndb.com/book/9781783281428|Prokopec,  Aleksandar|2014|Packt Publishing
+ Hands-On Data Analysis with Scala: Perform data collection, processing, manipulation, and visualization with Scala|https://isbndb.com/book/9781789344264|Gupta, Rajesh|2019|Packt Publishing
+ Object-Orientation, Abstraction, and Data Structures Using Scala (Chapman & Hall/CRC Textbooks in Computing)|https://isbndb.com/book/9781498732178|Lewis, Mark C. and Lacher, Lisa L.|2017|Chapman and Hall/CRC
+ Get Programming with Scala|https://isbndb.com/book/9781617295270|Sfregola, Daniela|2021|Manning Publications
+ Introduction to Programming and Problem-Solving Using Scala (Chapman & Hall/CRC Textbooks in Computing Book 19)|https://isbndb.com/book/9781498730952|Lewis, Mark C. and Lacher, Lisa|2016|Chapman and Hall/CRC
+ Scala in Action: Covers Scala 2.10|https://isbndb.com/book/9781935182757|Nilanjan Raychaudhuri|2013|Manning Publications
+ Learning Concurrent Programming in Scala - Second Edition|https://isbndb.com/book/9781786466891|Prokopec, Aleksandar|2017|Packt Publishing
+ Scala High Performance Programming|https://isbndb.com/book/9781786467089|Theron, Vincent and Diamant, Michael|2016|Packt Publishing
+ Scala Design Patterns|https://isbndb.com/book/9781785882029|Nikolov, Ivan|2016|Packt Publishing
+ Scala Programming for Big Data Analytics: Get Started With Big Data Analytics Using Apache Spark|https://isbndb.com/book/9781484248096|Elahi, Irfan|2019-07-06T00:00:01Z|Apress
+ Beginning Scala|https://isbndb.com/book/9781484202326|Layka, Vishal and Pollak, David|2015|Apress
+ Modern Systems Programming with Scala Native: Write Lean, High-Performance Code without the JVM|https://isbndb.com/book/9781680506228|Whaling, Richard|2020-02-11T00:00:01Z|Pragmatic Bookshelf
+ Scala Data Analysis Cookbook|https://isbndb.com/book/9781784394998|Manivannan, Arun|2015|Packt Publishing
+ RESTful Web Services with Scala|https://isbndb.com/book/9781785283499|Dirksen, Jos|2015|Packt Publishing
+ Scala Design Patterns|https://isbndb.com/book/9781785882500|Nikolov, Ivan|2016|Packt Publishing
+ Introduction to Programming and Problem-Solving Using Scala (Chapman & Hall/CRC Textbooks in Computing Book 19)|https://isbndb.com/book/9781498730969|Lewis, Mark C. and Lacher, Lisa|2016|Chapman and Hall/CRC
+ Scala and Spark for Big Data Analytics: Explore the concepts of functional programming, data streaming, and machine learning|https://isbndb.com/book/9781785280849|Karim, Md. Rezaul and Alla, Sridhar|2017-07-25T00:00:01Z|Packt Publishing
+ Learn Scala Programming: A comprehensive guide covering functional and reactive programming with Scala 2.13, Akka, and Lagom|https://isbndb.com/book/9781788830997|Schmidt, Slava|2018|Packt Publishing
+ Professional Scala|https://isbndb.com/book/9781119267263|Bogucki, Janek and Lacava, Alessandro and Bedrytski, Aliaksandr and de Detrich, Matthew and Neil, Benjamin|2016|Wrox
+ Building a Recommendation Engine with Scala|https://isbndb.com/book/9781785282584|Ansari, Saleem|2016|Packt Publishing
+ Scala for Machine Learning|https://isbndb.com/book/9781783558742|Nicolas, Patrick R.|2014|Packt Publishing
+ Scala Programming Projects: Build real world projects using popular Scala frameworks like Play, Akka, and Spark|https://isbndb.com/book/9781788397643|Valot, Mikael and Jorand, Nicolas|2018|Packt Publishing
+ Scala for Java Developers|https://isbndb.com/book/9781783283637|Alexandre, Thomas|2014|Packt Publishing
+ Practical Apache Spark: Using the Scala API|https://isbndb.com/book/9781484236529|Chellappan, Subhashini and Ganesan, Dharanitharan|2018|Apress
+ Mastering Functional Programming: Functional techniques for sequential and parallel programming with Scala|https://isbndb.com/book/9781788620796|Kmetiuk, Anatolii|2018|Packt Publishing
+ Learn Scala Programming: A comprehensive guide covering functional and reactive programming with Scala 2.13, Akka, and Lagom|https://isbndb.com/book/9781788836302|Schmidt, Slava|2018-10-31T00:00:01Z|Packt Publishing
+ Mastering Scala Machine Learning|https://isbndb.com/book/9781785880889|Kozlov, Alex|2016|Packt Publishing
+ Actors in Scala|https://isbndb.com/book/9780981531656|Haller, Philipp and Sommers, Frank|2012|Artima Inc
+ Practical Scala DSLs: Real-World Applications Using Domain Specific Languages|https://isbndb.com/book/9781484230367|Riti, Pierluigi|2017|Apress
+ Scala programming: Learn Scala Programming FAST and EASY! (Programming is Easy) (Volume 11)|https://isbndb.com/book/9781539510796|Gimson, Matthew|2016-10-16T00:00:01Z|CreateSpace Independent Publishing Platform
+ Atomic Scala - learn programming in the language of the future|https://isbndb.com/book/9780981872513|Bruce Eckel, Dianne Marsh|2013T|
+ Scientific Computing with Scala|https://isbndb.com/book/9781785886942|Jancauskas, Vytautas|2016|Packt Publishing
+ Modern Scala Projects: Leverage the power of Scala for building data-driven and high-performant projects|https://isbndb.com/book/9781788624114|Gurusamy, Ilango|2018|Packt Publishing
+ Scala Design Patterns: Patterns for Practical Reuse and Design|https://isbndb.com/book/9783319021911|Hunt, John|2013|Springer
+ RESTful Web Services with Scala|https://isbndb.com/book/9781785289408|Dirksen, Jos|2015|Packt Publishing
+ Scala Design Patterns: Patterns for Practical Reuse and Design|https://isbndb.com/book/9783319021928|Hunt, John|2013|Springer
+ Learning Scala Programming: Object-oriented programming meets functional reactive to create Scalable and Concurrent programs|https://isbndb.com/book/9781788392822|Sharma, Vikash|2018-01-30T00:00:01Z|Packt Publishing
+ Reactive Programming with Scala and Akka|https://isbndb.com/book/9781783984343|Prasanna Kumar Sathyanarayanan|2016-02-29|Packt Publishing - ebooks Account
+ Scala programming: Learning Scala fast!|https://isbndb.com/book/9781518888489|Archer, Ralph|2015|CreateSpace Independent Publishing Platform
+ XML Processing with Scala (Programming with Scala)|https://isbndb.com/book/9781549772054|Upadhyaya, Bhim|2017-09-18T00:00:01Z|Independently published
+ A taste of Functional Programming in Scala|https://isbndb.com/book/9781547018949|Mandal, Malay|2017-05-29T00:00:01Z|CreateSpace Independent Publishing Platform
+ Lift Cookbook: Recipes from the Community for Building Web Applications with Scala|https://isbndb.com/book/9781449362683|Dallaway, Richard|2013|O'Reilly Media
+ Introduction to the Art of Programming Using Scala|https://isbndb.com/book/9781138460836|Lewis, Mark C.|2017-07-27T00:00:01Z|Chapman and Hall/CRC
+ Functional Programming In Scala|https://isbndb.com/book/9789351197638|Chiusano Bjarnason|2015|Dreamtech Press India
+ Scala programming combat(Chinese Edition)|https://isbndb.com/book/9787111526865|Alvin Alexander ZHU|2016|Machinery Industry Press
+ Learn Scala For Java Developers|https://isbndb.com/book/9781508734178|Toby Weston|2015|Createspace
+ Modern Systems Programming with Scala Native|https://isbndb.com/book/9781680507492|Richard Whaling|20200123|O'Reilly Media, Inc.
+ Concurrent Application Development Using Akka With Scala|https://isbndb.com/book/9781430258964|Meetu Maltiar and Vikas Hazrati|2015|Apress
+ Scala Programming (4th Edition) (by The Blog Post)(chinese Edition)|https://isbndb.com/book/9787121402722|[ De ] Martin Odersky ( Ma Ding · Ao De Si Ji ) , Lex Spoon ( Lai Si · Peng ) , Bill Venners ( Bi Er · Wen Na Si ) , Gao Yu Xiang Yi||Electronic Industry Press
+ Scala Cookbook|https://isbndb.com/book/9781449340322|Alvin Alexander|20130801|O'Reilly Media, Inc.
+ Programming Scala|https://isbndb.com/book/9781449379261|Dean Wampler; Alex Payne|20090915|O'Reilly Media, Inc.
+ Scala Microservices|https://isbndb.com/book/9781786460134|Jatin Puri and Selvam Palanimalai|2017-09-19|Packt Publishing
+ Professional Scala|https://isbndb.com/book/9781789531190|Nimish Narang||
+ Programming Scala|https://isbndb.com/book/9781491950159|Dean Wampler; Alex Payne|20141204|O'Reilly Media, Inc.
+ Scala Cookbook|https://isbndb.com/book/9781492051497|Alvin Alexander|20210810|O'Reilly Media, Inc.
+ Learning Scala|https://isbndb.com/book/9781449368845|Jason Swartz|20141211|O'Reilly Media, Inc.
+ Scala Cookbook|https://isbndb.com/book/9781449340339|Alvin Alexander|20130801|O'Reilly Media, Inc.
+ Programming Scala|https://isbndb.com/book/9781492077848|Dean Wampler|20210526|O'Reilly Media, Inc.
+ Professional Scala|https://isbndb.com/book/9781789534702|Mads Hartmann; Ruslan Shevchenko|31-07-2018|Packt Publishing
+ Learning Scala|https://isbndb.com/book/9781449368838|Jason Swartz|20141211|O'Reilly Media, Inc.
+ Play for Scala|https://isbndb.com/book/9781638353713|Peter Hilton; Erik Bakker|20131003|Simon & Schuster
+ Testing in Scala|https://isbndb.com/book/9781449360337|Daniel Hinojosa|20130124|O'Reilly Media, Inc.
+ Scala (programming Language)|https://isbndb.com/book/9786130925253|Surhone and Lambert M. and Timpledon and Miriam T. and Marseken and Susan F.|2010|
+ Concurrency in Scala|https://isbndb.com/book/9783659946080|Marvin Hansen|2016-09-15|LAP LAMBERT Academic Publishing
+ Learning Scala Programming|https://isbndb.com/book/9781788391610|Vikash Sharma|30-01-2018|Packt Publishing
+ Scala in Depth|https://isbndb.com/book/9781638352648|Josh Suereth|20120513|Simon & Schuster
+ Scala in Action|https://isbndb.com/book/9781638352419|Nilanjan Raychaudhuri|20130408|Simon & Schuster
+ Steps in Scala|https://isbndb.com/book/9780511795985|Christos K. K. Loverdos; Apostolos Syropoulos|20100923|Cambridge University Press
+ Scala Reactive Programming|https://isbndb.com/book/9781787282872|Rambabu Posa|28-02-2018|Packt Publishing
+ Modern Scala Projects|https://isbndb.com/book/9781788625272|Ilango gurusamy|30-07-2018|Packt Publishing
+ Beginning Scala 3|https://isbndb.com/book/9781484274224|David Pollak; Vishal Layka; Andres Sacco|20220125|Springer Nature
+ Testing in Scala|https://isbndb.com/book/9781449360344|Daniel Hinojosa|20130124|O'Reilly Media, Inc.
+ Scala Programming Projects|https://isbndb.com/book/9781788395342|Mikael Valot; Nicolas Jorand|29-09-2018|Packt Publishing
+ Practical Fp In Scala|https://isbndb.com/book/9781714556793|Gabriel Volpe|2020|
+ Scala for Java Developers|https://isbndb.com/book/9781484231081|Toby Weston|20171212|Springer Nature
+ Get Programming with Scala|https://isbndb.com/book/9781638352259|Daniela Sfregola|20211005|Simon & Schuster
+ Building Applications with Scala|https://isbndb.com/book/9781786461681|Diego Pacheco|2016-12-08|Packt Publishing
+ Scientific Computing with Scala|https://isbndb.com/book/9781785887475|Vytautas Jancauskas|27-04-2016|Packt Publishing
+ Scala for Data Science|https://isbndb.com/book/9781785289385|Pascal Bugnion|28-01-2016|Packt Publishing
+ Mastering Scala Machine Learning|https://isbndb.com/book/9781785885266|Alex Kozlov|28-06-2016|Packt Publishing
+ Scala Functional Programming Patterns|https://isbndb.com/book/9781783985852|Atul S. Khot|29-12-2015|Packt Publishing
+ Building Applications with Scala|https://isbndb.com/book/9781786461483|Diego Pacheco|2016-12-08|Packt Publishing
+ Scala for Java Developers|https://isbndb.com/book/9781783283644|Thomas Alexandre|20140425|Packt Publishing
+ Scala Machine Learning Projects|https://isbndb.com/book/9781788471473|Md. Rezaul Karim|31-01-2018|Packt Publishing
+ Scala Tutorials: Computer Programming Language Scala Tutorials To Learn The Easy Way!|https://isbndb.com/book/9781678687601|Nitin Kanani|2019|Independently Published
+ Scala For Spark In Production|https://isbndb.com/book/9781491929285|Alexy Khrabrov and Andy Petrella and Xavier Tordoir|2017|O'Reilly Media, Incorporated
+ Scala Programming: Learn Scala Programming Fast And Easy! (programming Is Easy) (volume 11)|https://isbndb.com/book/9781519203540|Matthew Gimson|2015-11-12|Createspace Independent Publishing Platform
+ Learning Concurrent Programming in Scala|https://isbndb.com/book/9781786462145|Aleksandar Prokopec|22-02-2017|Packt Publishing
+ Mastering Play Framework for Scala|https://isbndb.com/book/9781783983810|Shiti Saxena|20150529|Packt Publishing
+ Scala for Machine Learning - Second Edition|https://isbndb.com/book/9781787126206|Patrick R. Nicolas|26-09-2017|Packt Publishing
+ Data Structures and Algorithms with Scala|https://isbndb.com/book/9783030125615|Bhim P. Upadhyaya|20190226|Springer Nature
+ Building a Recommendation Engine with Scala|https://isbndb.com/book/9781785282980|Saleem Ansari|2016-01-05|Packt Publishing
+ Reactive Programming with Scala and Akka|https://isbndb.com/book/9781783984350|Prasanna Kumar Sathyanarayanan|2016-02-29|Packt Publishing
+ Scala Programming for Big Data Analytics|https://isbndb.com/book/9781484248102|Irfan Elahi|20190705|Springer Nature
+ Machine Learning with Scala Quick Start Guide|https://isbndb.com/book/9781789345414|Md. Rezaul Karim|30-04-2019|Packt Publishing
+ Introduction to Programming and Problem-Solving Using Scala|https://isbndb.com/book/9781498730976|Mark C. Lewis|20160826|CRC Press
+ Introduction to the Art of Programming Using Scala|https://isbndb.com/book/9781466558724|Mark C. Lewis|20121105|Taylor & Francis
+ Object-Orientation, Abstraction, and Data Structures Using Scala|https://isbndb.com/book/9781498732192|Mark C. Lewis; Lisa L. Lacher|20170106|Taylor & Francis
+ Introduction to the Art of Programming Using Scala|https://isbndb.com/book/9781498759687|Mark C. Lewis|20121105|Taylor & Francis
+
+## Publications about Scala from Semantic Scholar
+pipeTable
+ title|titleLink|authors|year|citations|influentialCitations
+ Chisel: Constructing hardware in a Scala embedded language|https://www.semanticscholar.org/paper/021464b67bb87cf6132b2eb5b0c4a61f31ec2775|J. Bachrach and H. Vo and B. Richards and Yunsup Lee and Andrew Waterman and R. Avizienis and J. Wawrzynek and K. Asanović|2012|597|85
+ Unifying functional and object-oriented programming with Scala|https://www.semanticscholar.org/paper/ac6a6e4601cd33d43cc71e8c1f6998d19228da64|Martin Odersky and Tiark Rompf|2014|50|6
+ Scala to the Power of Z3: Integrating SMT and Programming|https://www.semanticscholar.org/paper/4a0eb42ded1878f39539aceca207f55dea2d8fbe|A. Köksal and Viktor Kuncak and Philippe Suter|2011|40|0
+ Closing the Gap Between Specification and Programming: VDM++ and Scala|https://www.semanticscholar.org/paper/bf49af99588dcf766f2964ed2f0c7a6a526b2b92|K. Havelund|2011|12|3
+ Named and default arguments for polymorphic object-oriented languages: a discussion on the design implemented in the Scala language|https://www.semanticscholar.org/paper/d1d423354d12e5bca47e8aad6d0374d772b3acfb|Lukas Rytz and Martin Odersky|2010|7|0
+ Lightweight Session Programming in Scala (Artifact)|https://www.semanticscholar.org/paper/62eb6ce864f9f5a03de6814e0d07cfbbfefea67d|A. Scalas and N. Yoshida|2016|6|0
+ A scalable infrastructure for teaching concepts of programming languages in Scala with WebLab: an experience report|https://www.semanticscholar.org/paper/00ae557f0b8b87cb0fbb51b9f09858f2ce7df2e7|T. V. D. Lippe and Thomas Smith and Daniël A. A. Pelsmaeker and E. Visser|2016|4|0
+ Introduction to the Art of Programming Using Scala|https://www.semanticscholar.org/paper/adf89c24062d6bfde6d410687db812d3b62364fc|Mark C. Lewis|2017|4|0
+ The Scala Language|https://www.semanticscholar.org/paper/d37fe7e79b56102ee8ad9e5ae6e88142ffa11546|T. Weston|2018|4|1
+ Scalagna 0.1: towards multi-tier programming with Scala and Scala.js|https://www.semanticscholar.org/paper/54eb28a939999162d48773b236679fb40969b5bd|Bob Reynders and Michael Greefs and D. Devriese and F. Piessens|2018|4|0
+ Scala implicits are everywhere: a large-scale study of the use of Scala implicits in the wild|https://www.semanticscholar.org/paper/f251ead7ee9604c89ac9e961bf82c61387003a8d|Filip Krikava and H. Miller and J. Vitek|2019|3|1
+ What are the Odds?: probabilistic programming in Scala|https://www.semanticscholar.org/paper/dbf9f9b4d9345da707ddf3ffb4c699f09e45479f|Sandro Stucki and Nada Amin and Manohar Jonnalagedda and Tiark Rompf|2013|3|0
+ Integrated Modeling and Development of Component-Based Embedded Software in Scala|https://www.semanticscholar.org/paper/9578f08a6492ad0b8de98f42040e2ca633d36b9e|K. Havelund and R. Bocchino|2021|3|0
+ Associated types and constraint propagation for generic programming in Scala|https://www.semanticscholar.org/paper/bc8f8736fa0e350445fae4f75fb4fd6dd9cf30d6|Artem Pelenitsyn|2015|3|0
+ Distributed programming in Scala with APGAS|https://www.semanticscholar.org/paper/1b566c35d3f4ed8850cf08eac619b0626c469142|Philippe Suter and O. Tardieu and Josh Milthorpe|2015|2|1
+ Scowl: a Scala DSL for programming with the OWL API|https://www.semanticscholar.org/paper/0e163b6bea8cd698c47661936fee17f6b061f637|J. Balhoff|2016|2|0
+ Towards an agent-oriented programming language based on Scala|https://www.semanticscholar.org/paper/8265cc5bd3c727b6beb0f1c3cd477db425a3c12c|Dejan Mitrovic and M. Ivanović and Z. Budimac|2012|2|0
+ Implementing a Language for Distributed Systems: Choices and Experiences with Type Level and Macro Programming in Scala|https://www.semanticscholar.org/paper/fa594cdb544a7d4f08d9d8246a810ae0e45ebc63|P. Weisenburger and G. Salvaneschi|2020|2|0
+ Extension of scala language by distributed and parallel computing tools with Linda coordination system|https://www.semanticscholar.org/paper/97733d941f73d4f7b738b1285c4a3f0156bfd225|M. Glybovets and S. S. Gorohovskiy and M. S. Stukalo|2010|1|0
+ A tool written in Scala for preparation and analysis in MD simulation and 3D-RISM calculation of biomolecules|https://www.semanticscholar.org/paper/12d2edebec462ed4571dc0aadea5991d54281802|I. Onishi and Hiroto Tsuji and M. Irisa|2019|1|0
+ Hybrid Taint Flow Analysis in Scala|https://www.semanticscholar.org/paper/38f3bd7f797332a97c4a5e2fa05e2aa9704a02e1|Mohammadreza Ashouri and C. Kreitz|2019|1|0
+ Kaizen: a scalable concolic fuzzing tool for Scala|https://www.semanticscholar.org/paper/6d04b9af1801e0ac90e04f238a23c3c5357b55d6|Mohammadreza Ashouri|2020|1|0
+ A Study of Big Data Analytics using Apache Spark with Python and Scala|https://www.semanticscholar.org/paper/b932ecaf6825fb5a8b838dab9a0e66e7cea3eabf|Y. Gupta and Surbhi Kumari|2020|1|0
+ Programming in Scala|https://www.semanticscholar.org/paper/c70cd8d8c27808f6118bdd1bfd1d52fa13b8a6e8|M. Guller|2015|1|0
+ Programming Behavioral Test Models for SMT Solving in Scala|https://www.semanticscholar.org/paper/d5130df1d0dffd54c5eba84255ef93804324de92|B. Aichernig and Benedikt Maderbacher and Stefan Tiran|2019|1|0
+ Implementation of a MIX Emulator: A Case Study of the Scala Programming Language Facilities|https://www.semanticscholar.org/paper/9d0840c9135fb1092d4ef9f0c59aaee46e371964|R. Batdalov and O. Ņikiforova|2017|1|0
+
+keyboardNav cobol.html swift.html
+
+import ../footer.scroll

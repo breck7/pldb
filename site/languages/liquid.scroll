@@ -1,0 +1,234 @@
+import header.scroll
+
+title Liquid
+
+title Liquid - Template language
+ hidden
+
+html
+ <a class="prevLang" href="nim.html">&lt;</a>
+ <a class="nextLang" href="literate-coffeescript.html">&gt;</a>
+
+viewSourceUrl https://github.com/breck7/pldb/blob/main/database/things/liquid.pldb
+
+startColumns 4
+
+html <div class="quickLinks"><a href="https://shopify.github.io/liquid/"><svg role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12.7166 3.79541C12.2835 3.49716 11.7165 3.49716 11.2834 3.79541L4.14336 8.7121C3.81027 8.94146 3.60747 9.31108 3.59247 9.70797C3.54064 11.0799 3.4857 13.4824 3.63658 15.1877C3.7504 16.4742 4.05336 18.1747 4.29944 19.4256C4.41371 20.0066 4.91937 20.4284 5.52037 20.4284H8.84433C8.98594 20.4284 9.10074 20.3111 9.10074 20.1665V15.9754C9.10074 14.9627 9.90433 14.1417 10.8956 14.1417H13.4091C14.4004 14.1417 15.204 14.9627 15.204 15.9754V20.1665C15.204 20.3111 15.3188 20.4284 15.4604 20.4284H18.4796C19.0806 20.4284 19.5863 20.0066 19.7006 19.4256C19.9466 18.1747 20.2496 16.4742 20.3634 15.1877C20.5143 13.4824 20.4594 11.0799 20.4075 9.70797C20.3925 9.31108 20.1897 8.94146 19.8566 8.7121L12.7166 3.79541ZM10.4235 2.49217C11.3764 1.83602 12.6236 1.83602 13.5765 2.49217L20.7165 7.40886C21.4457 7.91098 21.9104 8.73651 21.9448 9.64736C21.9966 11.0178 22.0564 13.5119 21.8956 15.3292C21.7738 16.7067 21.4561 18.4786 21.2089 19.7353C20.9461 21.0711 19.7924 22.0001 18.4796 22.0001H15.4604C14.4691 22.0001 13.6655 21.1791 13.6655 20.1665V15.9754C13.6655 15.8307 13.5507 15.7134 13.4091 15.7134H10.8956C10.754 15.7134 10.6392 15.8307 10.6392 15.9754V20.1665C10.6392 21.1791 9.83561 22.0001 8.84433 22.0001H5.52037C4.20761 22.0001 3.05389 21.0711 2.79113 19.7353C2.54392 18.4786 2.22624 16.7067 2.10437 15.3292C1.94358 13.5119 2.00338 11.0178 2.05515 9.64736C2.08957 8.73652 2.55427 7.91098 3.28346 7.40886L10.4235 2.49217Z"/></svg></a> <a href="https://github.com/Shopify/liquid"><svg role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg></a> <a href="https://shopify.dev/api/liquid"><svg viewBox="0 0 500 500" xmlns="http://www.w3.org/2000/svg"><g transform="matrix(1, 0, 0, 1, 13.859316, 9.109739)"><g><g><path d="M340.732,0H55v485h375V94.518L340.732,0z M345,26.364L405.1,90H345V26.364z M415,470H70V15h260v90h85V470z"/><rect x="102.5" y="191" width="280" height="15"/><rect x="102.5" y="141" width="120" height="15"/><rect x="102.5" y="241" width="280" height="15"/><rect x="102.5" y="291" width="280" height="15"/><rect x="102.5" y="341" width="280" height="15"/><rect x="102.5" y="391" width="280" height="15"/></g></g></g></svg></a></div>
+
+* Liquid is a <a href="../lists/languages.html?filter=template">template language</a> created in 2008 by Tobias Lütke.
+ link ../lists/languages.html?filter=2008 2008
+ link ../lists/creators.html#tobiasLutke Tobias Lütke
+
+kpiTable
+ #105 <span title="TotalRank: 307 Jobs: 57 Users: 100 Facts: 150 Links: 972">on PLDB</span>
+ 15 Years Old
+ 13.6k <span title="Crude user estimate from a linear model.">Users</span>
+ 2 <span title="Books about or leveraging Liquid">Books</span>
+ 15 <span title="Academic publications about or leveraging Liquid">Papers</span>
+ 11k <span title="Liquid repos on GitHub.">Repos</span>
+
+monacoEditor liquid
+ <h3>We have wonderful products!</h3>
+ <ul id="products">
+   <div id="productpage">
+     <div id="productimages"><div id="productimages-top"><div id="productimages-bottom">
+       {% for image in product.images %}
+         {% if forloop.first %}
+           <a href="{{ image | product_img_url: 'large' }}" class="productimage" rel="lightbox">
+             <img src="{{ image | product_img_url: 'medium'}}" alt="{{product.title | escape }}" />
+           </a>
+         {% else %}
+           <a href="{{ image | product_img_url: 'large' }}" class="productimage-small" rel="lightbox">
+             <img src="{{ image | product_img_url: 'small'}}" alt="{{product.title | escape }}" />
+           </a>
+         {% endif %}
+       {% endfor %}
+     </div></div></div>
+ 
+     <h2>{{ product.title }}</h2>
+ 
+     <ul id="details" class="hlist">
+       <li>Vendor: {{ product.vendor | link_to_vendor }}</li>
+       <li>Type: {{ product.type | link_to_type }}</li>
+     </ul>
+ 
+     <small>{{ product.price_min | money }}{% if product.price_varies %} - {{ product.price_max | money }}{% endif %}</small>
+ 
+     <div id="variant-add">
+       <form action="/cart/add" method="post">
+ 
+         <select id="variant-select" name="id" class="product-info-options">
+           {% for variant in product.variants %}
+             <option value="{{ variant.id }}">{{ variant.title }} - {{ variant.price | money }}</option>
+           {% endfor %}
+         </select>
+ 
+         <div id="price-field" class="price"></div>
+ 
+       <div style="text-align:center;"><input type="image" name="add" value="Add to Cart" id="add" src="{{ 'addtocart.gif' | asset_url }}" /></div>
+       </form>
+     </div>
+ 
+     <div class="description textile">
+       {{ product.description }}
+     </div>
+   </div>
+ 
+   <script type="text/javascript">
+   <!--
+     // prototype callback for multi variants dropdown selector
+     var selectCallback = function(variant, selector) {
+       if (variant && variant.available == true) {
+         // selected a valid variant
+         $('add').removeClassName('disabled'); // remove unavailable class from add-to-cart button
+         $('add').disabled = false;           // reenable add-to-cart button
+         $('price-field').innerHTML = Shopify.formatMoney(variant.price, "{{shop.money_with_currency_format}}");  // update price field
+       } else {
+         // variant doesn't exist
+         $('add').addClassName('disabled');      // set add-to-cart button to unavailable class
+         $('add').disabled = true;              // disable add-to-cart button
+         $('price-field').innerHTML = (variant) ? "Sold Out" : "Unavailable"; // update price-field message
+       }
+     };
+ 
+     // initialize multi selector for product
+     Event.observe(document, 'dom:loaded', function() {
+       new Shopify.OptionSelectors("variant-select", { product: {{ product | json }}, onVariantSelected: selectCallback });
+     });
+   -->
+   </script>
+ </ul>
+
+* Liquid markup language. Safe, customer facing template language for flexible web apps. 
+
+- Liquid website
+ https://shopify.github.io/liquid/
+- Liquid is developed on <a href="https://github.com/Shopify/liquid">GitHub</a> and has 9,596 stars
+- Liquid docs
+ https://shopify.dev/api/liquid
+- There are at least 11,459 Liquid repos on <a href="https://github.com/search?q=language:Liquid">GitHub</a>
+- Liquid first developed in <a href="../lists/originCommunities.html#httpsGithubComShopify">https://github.com/Shopify</a>
+- PLDB estimates there are currently 325 job openings for Liquid programmers.
+- file extensions for Liquid include liquid
+- The  Google BigQuery Public Dataset GitHub snapshot shows 947 users using Liquid in 1k repos on <a href="https://api.github.com/search/repositories?q=language:Liquid">GitHub</a>
+- <a href="monaco.html">Monaco</a> <a href="https://github.com/microsoft/monaco-editor/tree/main/src/basic-languages/liquid">package</a> for syntax highlighting Liquid
+- <a href="pygments.html">Pygments</a> supports <a href="https://github.com/pygments/pygments/blob/master/pygments/lexers/templates.py">syntax highlighting</a> for Liquid
+- GitHub supports <a href="https://github.com/bastilian/validcode-textmate-bundles" title="The package used for syntax highlighting by GitHub Linguist.">syntax highlighting</a> for Liquid
+- Indeed.com has 325 matches for <a href="https://www.indeed.com/jobs?q=liquid engineer">"liquid engineer"</a>.
+- HTML of this page generated by <a href="https://github.com/breck7/pldb/blob/main/code/LanguagePage.ts">LanguagePage.ts</a>
+- <a href="https://pldb.com/edit/liquid">Improve our Liquid file</a>
+
+html <br>
+
+codeWithHeader Example from <a href='https://github.com/bastilian/validcode-textmate-bundles'>Linguist</a>:
+ &lt;h3&gt;We have wonderful products!&lt;/h3&gt;
+ &lt;ul id=&quot;products&quot;&gt;
+   &lt;div id=&quot;productpage&quot;&gt;
+     &lt;div id=&quot;productimages&quot;&gt;&lt;div id=&quot;productimages-top&quot;&gt;&lt;div id=&quot;productimages-bottom&quot;&gt;
+       {% for image in product.images %}
+         {% if forloop.first %}
+           &lt;a href=&quot;{{ image | product_img_url: &#39;large&#39; }}&quot; class=&quot;productimage&quot; rel=&quot;lightbox&quot;&gt;
+             &lt;img src=&quot;{{ image | product_img_url: &#39;medium&#39;}}&quot; alt=&quot;{{product.title | escape }}&quot; /&gt;
+           &lt;/a&gt;
+         {% else %}
+           &lt;a href=&quot;{{ image | product_img_url: &#39;large&#39; }}&quot; class=&quot;productimage-small&quot; rel=&quot;lightbox&quot;&gt;
+             &lt;img src=&quot;{{ image | product_img_url: &#39;small&#39;}}&quot; alt=&quot;{{product.title | escape }}&quot; /&gt;
+           &lt;/a&gt;
+         {% endif %}
+       {% endfor %}
+     &lt;/div&gt;&lt;/div&gt;&lt;/div&gt;
+ 
+     &lt;h2&gt;{{ product.title }}&lt;/h2&gt;
+ 
+     &lt;ul id=&quot;details&quot; class=&quot;hlist&quot;&gt;
+       &lt;li&gt;Vendor: {{ product.vendor | link_to_vendor }}&lt;/li&gt;
+       &lt;li&gt;Type: {{ product.type | link_to_type }}&lt;/li&gt;
+     &lt;/ul&gt;
+ 
+     &lt;small&gt;{{ product.price_min | money }}{% if product.price_varies %} - {{ product.price_max | money }}{% endif %}&lt;/small&gt;
+ 
+     &lt;div id=&quot;variant-add&quot;&gt;
+       &lt;form action=&quot;/cart/add&quot; method=&quot;post&quot;&gt;
+ 
+         &lt;select id=&quot;variant-select&quot; name=&quot;id&quot; class=&quot;product-info-options&quot;&gt;
+           {% for variant in product.variants %}
+             &lt;option value=&quot;{{ variant.id }}&quot;&gt;{{ variant.title }} - {{ variant.price | money }}&lt;/option&gt;
+           {% endfor %}
+         &lt;/select&gt;
+ 
+         &lt;div id=&quot;price-field&quot; class=&quot;price&quot;&gt;&lt;/div&gt;
+ 
+       &lt;div style=&quot;text-align:center;&quot;&gt;&lt;input type=&quot;image&quot; name=&quot;add&quot; value=&quot;Add to Cart&quot; id=&quot;add&quot; src=&quot;{{ &#39;addtocart.gif&#39; | asset_url }}&quot; /&gt;&lt;/div&gt;
+       &lt;/form&gt;
+     &lt;/div&gt;
+ 
+     &lt;div class=&quot;description textile&quot;&gt;
+       {{ product.description }}
+     &lt;/div&gt;
+   &lt;/div&gt;
+ 
+   &lt;script type=&quot;text/javascript&quot;&gt;
+   &lt;!--
+     // prototype callback for multi variants dropdown selector
+     var selectCallback = function(variant, selector) {
+       if (variant &amp;&amp; variant.available == true) {
+         // selected a valid variant
+         $(&#39;add&#39;).removeClassName(&#39;disabled&#39;); // remove unavailable class from add-to-cart button
+         $(&#39;add&#39;).disabled = false;           // reenable add-to-cart button
+         $(&#39;price-field&#39;).innerHTML = Shopify.formatMoney(variant.price, &quot;{{shop.money_with_currency_format}}&quot;);  // update price field
+       } else {
+         // variant doesn&#39;t exist
+         $(&#39;add&#39;).addClassName(&#39;disabled&#39;);      // set add-to-cart button to unavailable class
+         $(&#39;add&#39;).disabled = true;              // disable add-to-cart button
+         $(&#39;price-field&#39;).innerHTML = (variant) ? &quot;Sold Out&quot; : &quot;Unavailable&quot;; // update price-field message
+       }
+     };
+ 
+     // initialize multi selector for product
+     Event.observe(document, &#39;dom:loaded&#39;, function() {
+       new Shopify.OptionSelectors(&quot;variant-select&quot;, { product: {{ product | json }}, onVariantSelected: selectCallback });
+     });
+   --&gt;
+   &lt;/script&gt;
+ &lt;/ul&gt;
+
+endColumns
+
+## Language <a href="../lists/features.html">features</a>
+
+treeTable
+ row
+  Feature Booleans
+  FeatureLink ../features/hasBooleans.html
+  Supported <span class="hasFeature">✓</span>
+  Token true false
+  Example
+
+## Books about Liquid from ISBNdb
+pipeTable
+ title|titleLink|authors|year|publisher
+ Create Web Animations With Microsoft Liquid Motion In A Weekend|https://isbndb.com/book/9780761518228|Steven E. Callihan|1998|Premier Pr
+ High-Temperature Liquid Chromatography|https://isbndb.com/book/9781849731096|Thorsten Teutenberg|20100603|Ingram Publisher Services UK- Academic
+
+## Publications about Liquid from Semantic Scholar
+pipeTable
+ title|titleLink|authors|year|citations|influentialCitations
+ Liquid Metal: Object-Oriented Programming Across the Hardware/Software Boundary|https://www.semanticscholar.org/paper/1eaa543205c3fc0cb4685f2c7e8a631fa7776a74|Shan Shan Huang and Amir Hormati and D. Bacon and R. Rabbah|2008|105|8
+ A retention-time-shift-tolerant background subtraction and noise reduction algorithm (BgS-NoRA) for extraction of drug metabolites in liquid chromatography/mass spectrometry data from biological matrices.|https://www.semanticscholar.org/paper/4d45be9b7542e9be2fc8460e9995cc79a2b94867|P. Zhu and Wei Ding and W. Tong and A. Ghosal and K. Alton and S. Chowdhury|2009|65|1
+ Simultaneous Multiwavelength Detection System for Liquid Chromatography|https://www.semanticscholar.org/paper/8d0d958c0655c5dbe8f219a8fa869f4773836d0c|L. Klatt|1979|26|0
+ Gibbs energy minimization in gas + liquid + solid systems|https://www.semanticscholar.org/paper/b2e10a89654f9586ca3f24ed55a2399cd1a69ada|D. Ebel and M. Ghiorso and R. Sack and L. Grossman|2000|21|0
+ SCORES-II Design Tool for Liquid Rocket Engine Analysis|https://www.semanticscholar.org/paper/a6895309bef561696b4aa659904cb916e5966fce|J. Bradford and A. Crocker|2002|17|0
+ Seismic Response of Elevated Liquid Storage Tanks Using Double Concave Friction Pendulum Bearings with Tri-Linear Behavior|https://www.semanticscholar.org/paper/76e334b2f2fac58c0ff146b2d16f51ad63810821|M. Rabiei and F. Khoshnoudian|2013|9|0
+ Simulation, design and practical implementation of IMC tuned digital PID controller for liquid level control system|https://www.semanticscholar.org/paper/9e65fcce6a08a0dcd3bf6c3d1e166f5a26bf8786|Sandip A. Mehta and Jatin Katrodiya and Bhargav Mankad|2011|7|0
+ Dynamic response of the U-tube liquid manometer with equal diameter columns|https://www.semanticscholar.org/paper/18bb53f207414631ee717ee0b62fd091f2d65b21|D. Zahariea|2010|6|0
+ Performance of A Convolutional Neural Network in Screening Liquid Based Cervical Cytology Smears|https://www.semanticscholar.org/paper/b17feb9d51fb3740ed492f5edad6879bdb9a07eb|Parikshit Sanyal and Sanghita Barui and P. Deb and Harish Chander Sharma|2019|5|0
+ The Liquid Metal Blokus Duo Design|https://www.semanticscholar.org/paper/113e0d3c608d8c04d411fd2b7bc8785467105efa|E. Altman and J. Auerbach and D. Bacon and Ioana Baldini and P. Cheng and Stephen J. Fink and R. Rabbah|2013|3|0
+ Design of Fuzzy Control System for Tank Liquid Level Based on WinCC and Matlab|https://www.semanticscholar.org/paper/15daa30031da4aab3c0a9f4fc772ecfd514cb2eb|Zhu Jianjun|2014|3|0
+ Research on three-dimensional modeling of liquid storage tank|https://www.semanticscholar.org/paper/ad6ccaf0205c321802bfa645357c49346c11e406|Jin Han and Jing Wei and Zhi-hua Zhang and Xiaoyuan Dong|2012|1|0
+ Development of Simulator for LNG Carrier Liquid Cargo Handling|https://www.semanticscholar.org/paper/ba32c26616468eb9235cce441281fbae15e8c751|J. Cao and X. K. Zhang and Q. He|2015|1|0
+ AUTOMATIC LIQUID FILLING USING PROGRAMMABLE LOGIC CONTROLLER(PLC)|https://www.semanticscholar.org/paper/6ddde4bb612e0ec96413b4837c91d947a9e9fa6d|Vinod Jiddi|2017|1|0
+ Simulation of Liquid Vapor Equilibrium in Batch Distillation Process from Cellulose (Bamboo)|https://www.semanticscholar.org/paper/124ebfbcc14bf6d5974a6d14fcc52336e8591b1f|Sari Ni Ketut and D. Ernawati|2018|1|0
+
+keyboardNav nim.html literate-coffeescript.html
+
+import ../footer.scroll
