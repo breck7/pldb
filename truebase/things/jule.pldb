@@ -81,7 +81,25 @@ features
       Failure = 1
   }
  hasFloats true
+  3.14
+  32.60
+  032.60
+  3.
+  0.3
+  1E2
+  .12345E+6
+  1.e+0
+  0x1p-2
+  0x2.p10
+  0x1.Fp+0
+  0X.8p-0
+  0x1fffp-16
+  0x15e-2
  hasIntegers true
+  12345
+  0b0001010101
+  0455
+  0xDFF90
  hasStructs true
   struct Employee {
       first_name: str
@@ -173,6 +191,7 @@ features
  hasGotos true
   goto a_label
  hasRequiredMainFunction true
+  fn main() {}
  hasSelfOrThisWord true
   self
  hasBoundedCheckedArrays true
@@ -235,9 +254,20 @@ features
   --
  hasStaticTyping true
  canWriteToDisk true
+  use std::fs::{open, O_WRONLY}
+  
+  fn main() {
+      let (mut f, _) = open("myfile.txt", O_WRONLY, 0)
+      let bytes = ([]byte)("Text to write")
+      f.write(bytes)
+      f.close()
+  }
  hasStringConcatOperator true
   +
  hasMultilineStrings true
+  `Multiline strings
+  is available in Jule
+  with raw strings`
  hasImports true
   use std::fs
   use std::sys::{self, open, O_RDWR}
@@ -317,13 +347,13 @@ example
 
 githubRepo https://github.com/julelang/jule
  firstCommit 2021
- stars 54
- forks 8
- subscribers 6
+ stars 55
+ forks 9
+ subscribers 5
  created 2021
  updated 2022
  description Jule is the simple, efficient, statically typed and compiled system programming language.
- issues 11
+ issues 12
 
 fileType text
 isOpenSource true
