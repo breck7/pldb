@@ -3135,12 +3135,7 @@ sandbox/lib/show-hint.js`.split("\n")
       TOP_LANGS: this.folder.topLanguages
         .slice(0, 10)
         .map(file => `<a href="./truebase/${file.permalink}">${file.title}</a>`)
-        .join(" · "),
-      NEW_POSTS: postsScroll
-        .getGroup("index")
-        .slice(0, 5)
-        .map(file => `<a href="./posts/${file.permalink}">${file.title}</a>`)
-        .join("<br>")
+        .join(" · ")
     })
   }
 

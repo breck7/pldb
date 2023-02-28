@@ -1,20 +1,20 @@
 import header.scroll
-title A brief interview with Rexx creator 
+title A brief interview with Rexx creator Mike Cowlishaw
 date 02/27/2023
-groups interviews index
+groups interviews frontpage index
 
 startColumns 2
 
 author https://github.com/hassamalhajaji Hassam Alhajaji
 
 ## Introduction
-* Mike Cowlishaw is a distinguished computer scientist and creator of Rexx and NetRexx. He has worked on many other programming languages, including PL/1, C and Java.  Mike Cowlishaw is a Visiting Professor at the Department of Computer Science at the University of Warwick.  He is a Fellow of the Royal Academy of Engineering, elected for his contributions to the field of engineering, and is a retired IBM Fellow.  His relentless spirit has catapulted too many contributions to count yet he remains humble and accessible :)
- Dr Mike Cowlishaw http://www.manmrk.net/tutorials/rexx/MFC/mfc.html
- Rexx https://pldb.com/truebase/rexx.html
- NetRexx https://pldb.com/truebase/netrexx.html
- PL/I https://pldb.com/truebase/pl-i.html
- C https://pldb.com/truebase/c.html
- Java https://pldb.com/truebase/java.html
+* Mike Cowlishaw is a distinguished computer scientist and creator of Rexx and NetRexx. He has worked on many other programming languages, including PL/I, C and Java.  Mike Cowlishaw is a Visiting Professor at the Department of Computer Science at the University of Warwick.  He is a Fellow of the Royal Academy of Engineering, elected for his contributions to the field of engineering, and is a retired IBM Fellow.  His relentless spirit has catapulted too many contributions to count yet he remains humble and accessible :)
+ http://www.manmrk.net/tutorials/rexx/MFC/mfc.html Dr Mike Cowlishaw
+ https://pldb.com/truebase/rexx.html Rexx
+ https://pldb.com/truebase/netrexx.html NetRexx
+ https://pldb.com/truebase/pl-i.html PL/I
+ https://pldb.com/truebase/c.html C 
+ https://pldb.com/truebase/java.html Java
  
 endSnippet
 
@@ -31,8 +31,8 @@ endSnippet
 * *Hassam:* do you predict the next paradigm shift in programming languages will be?  
 * *Dr Cowlishaw:* Hopefully a much higher-level interface, where the programmer describes what's wanted and then refines it with the help of (perhaps) some real AI.
 
-image images/cowlishaw.jpeg
+image images/cowlishaw.jpg
  caption Mahalo for your time, Dr Cowlishaw! Image source
-  https://en.wikipedia.org/wiki/Mike_Cowlishaw#/media/File:Mike_Cowlishaw_2005.jpg
+  https://en.wikipedia.org/wiki/Mike_Cowlishaw#/media/File:Mike_Cowlishaw_2005.jpg Image source
   
 import footer.scroll
