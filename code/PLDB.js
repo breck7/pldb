@@ -2669,7 +2669,11 @@ ${scrollFooter}
     return commitResult.commitHash
   }
 
-  notFoundPage = Disk.read(path.join(siteFolder, "custom_404.html"))
+  get notFoundPage() {
+    if (!this._notFoundPage)
+      this._notFoundPage = Disk.read(path.join(siteFolder, "custom_404.html"))
+    return this._notFoundPage
+  }
 
   _git
   get git() {
