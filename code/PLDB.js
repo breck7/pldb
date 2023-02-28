@@ -116,6 +116,32 @@ const getJoined = (node, keywords) => {
   return lodash.uniq(words).join(" ")
 }
 
+const buildImportsFile = (filepath, varMap) => {
+  Disk.writeIfChanged(
+    filepath,
+    `importOnly\n\n` +
+      Object.keys(varMap)
+        .map(key => {
+          let value = varMap[key]
+
+          if (value.rows)
+            return `replace ${key}
+ pipeTable
+  ${new TreeNode(value.rows)
+    .toDelimited("|", value.header, false)
+    .replace(/\n/g, "\n  ")}`
+
+          value = value.toString()
+
+          if (!value.includes("\n")) return `replace ${key} ${value}`
+
+          return `replace ${key}
+ ${value.replace(/\n/g, "\n ")}`
+        })
+        .join("\n\n")
+  )
+}
+
 const nodeToFlatObject = parentNode => {
   const delimiter = "."
   let newObject = {}
@@ -2730,50 +2756,6 @@ ${scrollFooter}
     this.isProd = true
     return super.listenProd()
   }
-}
-
-const buildImportsFile = (filepath, varMap) => {
-  Disk.writeIfChanged(
-    filepath,
-    `importOnly\n\n` +
-      Object.keys(varMap)
-        .map(key => {
-          let value = varMap[key]
-
-          if (value.rows)
-            return `replace ${key}
- pipeTable
-  ${new TreeNode(value.rows)
-    .toDelimited("|", value.header, false)
-    .replace(/\n/g, "\n  ")}`
-
-          value = value.toString()
-
-          if (!value.includes("\n")) return `replace ${key} ${value}`
-
-          return `replace ${key}
- ${value.replace(/\n/g, "\n ")}`
-        })
-        .join("\n\n")
-  )
-}
-
-class PLDBServerCommands {
-  get server() {
-    return new PLDBServer(pldbBase, ignoreFolder)
-  }
-
-  startDevServerCommand(port) {
-    this.server.listen(port)
-  }
-
-  startProdServerCommand() {
-    this.server.listenProd()
-  }
-
-  formatDatabaseCommand() {
-    pldbBase.forEach(file => file.prettifyAndSave())
-  }
 
   buildAllCommand() {
     this.buildKeywordsImportsCommand()
@@ -2788,12 +2770,12 @@ class PLDBServerCommands {
     this.buildCreatorsImports()
     this.buildHomepageImportsCommand()
     this.buildScrollsCommand()
-    this.server.buildTqlExtension() // todo: cleanup
+    this.buildTqlExtension() // todo: cleanup
     this.buildDistFolder()
   }
 
   buildKeywordsImportsCommand() {
-    const { keywordsTable } = pldbBase
+    const { keywordsTable } = this.folder
     const { rows, langsWithKeywordsCount } = keywordsTable
 
     buildImportsFile(path.join(listsFolder, "keywordsImports.scroll"), {
@@ -2807,7 +2789,7 @@ class PLDBServerCommands {
   }
 
   buildFeaturePagesCommand() {
-    pldbBase.features.forEach(feature =>
+    this.folder.features.forEach(feature =>
       Disk.writeIfChanged(
         path.join(featuresFolder, `${feature.id}.scroll`),
         feature.toScroll()
@@ -2816,11 +2798,13 @@ class PLDBServerCommands {
   }
 
   buildScrollFilesFromPLDBFilesCommand() {
-    pldbBase.forEach(file => file.writeScrollFileIfChanged(trueBasePagesFolder))
+    this.folder.forEach(file =>
+      file.writeScrollFileIfChanged(trueBasePagesFolder)
+    )
   }
 
   buildAcknowledgementsImportsCommand() {
-    const { sources } = pldbBase
+    const { sources } = this.folder
     let writtenIn = [
       "javascript",
       "nodejs",
@@ -2838,7 +2822,7 @@ class PLDBServerCommands {
       "svg",
       "explorer",
       "gitignore"
-    ].map(s => pldbBase.getFile(pldbBase.searchForEntity(s)))
+    ].map(s => this.folder.getFile(this.folder.searchForEntity(s)))
 
     const npmPackages = Object.keys({
       ...require("../package.json").dependencies
@@ -2869,7 +2853,8 @@ class PLDBServerCommands {
   }
 
   buildCsvImportsCommand() {
-    const { csvBuildOutput } = pldbBase
+    const folder = this.folder
+    const { csvBuildOutput } = pldfolderbBase
     const {
       pldbCsv,
       langsCsv,
@@ -2884,10 +2869,10 @@ class PLDBServerCommands {
     Disk.writeIfChanged(path.join(siteFolder, "columns.csv"), columnsCsv)
 
     buildImportsFile(path.join(docsFolder, "csvImports.scroll"), {
-      LANG_COUNT: pldbBase.topLanguages.length,
-      APPROXIMATE_FACT_COUNT: numeral(pldbBase.factCount).format("0,0a"),
+      LANG_COUNT: folder.topLanguages.length,
+      APPROXIMATE_FACT_COUNT: numeral(folder.factCount).format("0,0a"),
       COL_COUNT: colNamesForCsv.length,
-      ENTITY_COUNT: pldbBase.length,
+      ENTITY_COUNT: folder.length,
       ENTITIES_FILE_SIZE_UNCOMPRESSED: numeral(pldbCsv.length).format("0.0b"),
       LANGS_FILE_SIZE_UNCOMPRESSED: numeral(langsCsv.length).format("0.0b"),
       COLUMN_METADATA_TABLE: {
@@ -2898,12 +2883,13 @@ class PLDBServerCommands {
   }
 
   buildDistFolder() {
-    const { csvBuildOutput } = pldbBase
+    const folder = this.folder
+    const { csvBuildOutput } = folder
 
     if (!Disk.exists(distFolder)) Disk.mkdir(distFolder)
 
-    const ids = pldbBase.map(file => file.id).join(" ")
-    const pldbGrammar = new TreeNode(pldbBase.grammarCode)
+    const ids = folder.map(file => file.id).join(" ")
+    const pldbGrammar = new TreeNode(folder.grammarCode)
 
     pldbGrammar.getNode("permalinkCell").set("enum", ids)
     Disk.write(path.join(distFolder, "pldb.grammar"), pldbGrammar.toString())
@@ -2917,13 +2903,13 @@ class PLDBServerCommands {
 
     Disk.write(
       path.join(distFolder, "autocomplete.json"),
-      pldbBase.autocompleteJson
+      folder.autocompleteJson
     )
     Disk.write(
       path.join(distFolder, "keywordsOneHot.csv"),
-      pldbBase.keywordsOneHotCsv
+      folder.keywordsOneHotCsv
     )
-    Disk.write(path.join(siteFolder, "pldb.json"), pldbBase.typedMapJson)
+    Disk.write(path.join(siteFolder, "pldb.json"), folder.typedMapJson)
 
     const combinedJs =
       combineJsFiles(
@@ -2958,7 +2944,7 @@ sandbox/lib/show-hint.js`.split("\n")
   }
 
   buildTopListImports() {
-    const files = pldbBase.topLanguages.map(file => {
+    const files = this.folder.topLanguages.map(file => {
       const appeared = file.get("appeared")
       const rank = file.languageRank + 1
       const type = file.get("type")
@@ -2987,7 +2973,7 @@ sandbox/lib/show-hint.js`.split("\n")
   }
 
   buildExtensionsImports() {
-    const files = pldbBase
+    const files = this.folder
       .filter(file => file.get("type") !== "feature")
       .map(file => {
         return {
@@ -3022,7 +3008,7 @@ sandbox/lib/show-hint.js`.split("\n")
   }
 
   buildFeaturesImports() {
-    const { topFeatures } = pldbBase
+    const { topFeatures } = this.folder
 
     const summaries = topFeatures.map(feature => feature.summary)
 
@@ -3061,11 +3047,13 @@ sandbox/lib/show-hint.js`.split("\n")
 
   buildOriginCommunitiesImports() {
     const files = lodash.sortBy(
-      pldbBase.filter(file => file.isLanguage && file.originCommunity.length),
+      this.folder.filter(
+        file => file.isLanguage && file.originCommunity.length
+      ),
       "languageRank"
     )
 
-    const entities = pldbBase.groupByListValues("originCommunity", files)
+    const entities = this.folder.groupByListValues("originCommunity", files)
     const rows = Object.keys(entities).map(name => {
       const group = entities[name]
       const languages = group
@@ -3094,9 +3082,9 @@ sandbox/lib/show-hint.js`.split("\n")
   }
 
   buildCreatorsImports() {
-    const entities = pldbBase.groupByListValues(
+    const entities = this.folder.groupByListValues(
       "creators",
-      pldbBase.filter(file => file.isLanguage),
+      this.folder.filter(file => file.isLanguage),
       " and "
     )
     const wikipediaLinks = new TreeNode(
@@ -3137,7 +3125,7 @@ sandbox/lib/show-hint.js`.split("\n")
     const postsScroll = new ScrollFolder(postsFolder)
 
     buildImportsFile(path.join(siteFolder, "homepageImports.scroll"), {
-      TOP_LANGS: pldbBase.topLanguages
+      TOP_LANGS: this.folder.topLanguages
         .slice(0, 10)
         .map(file => `<a href="./truebase/${file.permalink}">${file.title}</a>`)
         .join(" · "),
@@ -3178,7 +3166,7 @@ sandbox/lib/show-hint.js`.split("\n")
 
   // new PLDBServerCommands().changeListDelimiterCommand("originCommunity", " && ")
   changeListDelimiterCommand(field, newDelimiter) {
-    pldbBase.forEach(file => {
+    this.folder.forEach(file => {
       const hit = file.getNode(field)
       if (hit) {
         const parsed = file.parsed.getNode(field)
@@ -3190,14 +3178,14 @@ sandbox/lib/show-hint.js`.split("\n")
 
   // new PLDBServerCommands().rename("cpp", "cPlusPlus")
   rename(oldId, newId) {
-    pldbBase.rename(oldId, newId)
+    this.folder.rename(oldId, newId)
   }
 
   // new PLDBServerCommands().replaceListItems("originCommunity", { "Apple Inc": "Apple" })
   replaceListItems(field, replacementMap) {
     const keys = Object.keys(replacementMap)
     const delimiter = " && "
-    pldbBase.forEach(file => {
+    this.folder.forEach(file => {
       const value = file.get(field)
       if (!value) return
 
@@ -3215,7 +3203,7 @@ sandbox/lib/show-hint.js`.split("\n")
 
   searchCommand() {
     console.log(
-      new SearchServer(pldbBase, ignoreFolder).csv(
+      new SearchServer(this.folder, ignoreFolder).csv(
         process.argv.slice(3).join(" ")
       )
     )
@@ -3225,7 +3213,7 @@ sandbox/lib/show-hint.js`.split("\n")
     // Todo: figuring out best repo orgnization for crawlers.
     // Note: this currently assumes you have treecrawler project installed separateely.
     const { GitHubImporter } = require("../../treecrawler/github.com/GitHub.js")
-    const importer = new GitHubImporter(pldbBase)
+    const importer = new GitHubImporter(this.folder)
     await importer.fetchAllRepoDataCommand()
     await importer.writeAllRepoDataCommand()
   }
@@ -3236,7 +3224,8 @@ const pldbBase = new PLDBFolder()
   .setGrammarDir(path.join(truebaseFolder, "grammar"))
   .loadFolder()
 
-module.exports = { PLDBServer, pldbBase }
+const PLDB = new PLDBServer(pldbBase, ignoreFolder)
 
-if (!module.parent)
-  Utils.runCommand(new PLDBServerCommands(), process.argv[2], process.argv[3])
+module.exports = { PLDB }
+
+if (!module.parent) Utils.runCommand(PLDB, process.argv[2], process.argv[3])

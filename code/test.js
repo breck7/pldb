@@ -23,14 +23,14 @@ const { Disk } = require("jtree/products/Disk.node.js")
 const { TestRacer } = require("jtree/products/TestRacer.js")
 const { Utils } = require("jtree/products/Utils.js")
 
-const { pldbBase } = require("./PLDB.js")
+const { PLDB } = require("./PLDB.js")
 
 const rootDir = path.join(__dirname, "..")
 const trueBasePagesDir = path.join(rootDir, "site", "truebase")
 
 const testTree = {}
 testTree.ensureNoErrorsInGrammar = areEqual => {
-	const grammarErrors = new grammarNode(pldbBase.grammarCode)
+	const grammarErrors = new grammarNode(PLDB.folder.grammarCode)
 		.getAllErrors()
 		.map(err => err.toObject())
 	if (grammarErrors.length) console.log(grammarErrors)
@@ -76,15 +76,15 @@ testTree.ensureNoErrorsInBlog = areEqual => {
 
 testTree.ensureGoodFilenames = areEqual => {
 	areEqual(
-		pldbBase.filesWithInvalidFilenames.length,
+		PLDB.folder.filesWithInvalidFilenames.length,
 		0,
-		`all ${pldbBase.length} filenames are valid`
+		`all ${PLDB.folder.length} filenames are valid`
 	)
 }
 
 testTree.ensureNoBrokenPermalinks = areEqual => {
 	areEqual(
-		!!pldbBase.inboundLinks,
+		!!PLDB.folder.inboundLinks,
 		true,
 		"should not throw because of broken permalink"
 	)
@@ -98,7 +98,7 @@ testTree.ensureFieldsAreTrimmed = areEqual => {
 }
 
 testTree.ensureNoErrorsInDb = areEqual => {
-	const { errors } = pldbBase
+	const { errors } = PLDB.folder
 	if (errors.length)
 		errors.forEach(err =>
 			console.log(
@@ -111,7 +111,7 @@ testTree.ensureNoErrorsInDb = areEqual => {
 }
 
 testTree.ensureSortWorks = areEqual => {
-	const programParser = pldbBase.grammarProgramConstructor
+	const programParser = PLDB.folder.grammarProgramConstructor
 	const program = new programParser(`appeared 1923\ntitle foo`)
 	program.sortFromSortTemplate()
 	areEqual(program.toString(), "title foo\nappeared 1923")
@@ -119,10 +119,10 @@ testTree.ensureSortWorks = areEqual => {
 
 testTree.ensureSortCausesNoSemanticChanges = areEqual => {
 	// Arrange
-	const pre = pldbBase.typedMap
+	const pre = PLDB.folder.typedMap
 
 	// Act
-	pldbBase.forEach((file, index) => {
+	PLDB.folder.forEach((file, index) => {
 		const originalTypedMap = file.typedMap
 		if (index > 10) return
 		file.sort()
