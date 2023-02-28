@@ -1,0 +1,66 @@
+title Dak
+appeared 2022
+type pl
+creators Naitik Shah
+description Dak is a Lisp like language that transpiles to JavaScript.
+website https://www.daklang.com/
+webRepl https://www.daklang.com/tour/functions/
+
+compilesTo javascript
+
+example
+ ; Functions are varied and colorful.
+ 
+ ; Simple function:
+ (fn add [a b]
+   (+ a b))
+ (prn (add 40 1))
+ 
+ ; Async function:
+ (fn@ add-promises [a b]
+   (+ @a @b))
+ (prn @(add-promises (Promise.resolve 40) (Promise.resolve 2)))
+ 
+ ; Generator function:
+ (fn* powers [n count]
+   (let [current 1]
+     (for [i 0 count]
+       (yield (*= current n)))))
+ (for-of [v (powers 2 5)]
+   (prn v))
+ 
+ ; Async generator function:
+ (fn@* foo [a b]
+   (yield (inc @a))
+   (yield (inc @b)))
+ (for@ [v (foo (Promise.resolve 41) (Promise.resolve -43))]
+   (prn v))
+ 
+ ; Exported function:
+ (fn ^:export plus [a b]
+   (+ a b))
+ 
+ ; Exported default function:
+ (fn ^:export ^:default [a b]
+   (- a b))
+ 
+ ; Declaration syntax:
+ (fn ^:decl TheClass [a]
+   (set this.answer a))
+ (prn (TheClass. 42))
+ 
+ ; Explicit return is available:
+ (fn until [a]
+   (while true
+     (if (= (++ a) 42)
+       (return :boom))))
+ (prn :returned (until 40))
+ 
+ ; Yield & Yield* are available:
+ (fn* it [a]
+   (yield (++ a))
+   (yield* [(++ a) (++ a)]))
+ (for-of [v (it 39)]
+   (prn "it:" v))
+
+githubRepo https://github.com/daaku/dak
