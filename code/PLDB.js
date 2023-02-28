@@ -2854,7 +2854,7 @@ ${scrollFooter}
 
   buildCsvImportsCommand() {
     const folder = this.folder
-    const { csvBuildOutput } = pldfolderbBase
+    const { csvBuildOutput } = folder
     const {
       pldbCsv,
       langsCsv,
