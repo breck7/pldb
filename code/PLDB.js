@@ -2471,13 +2471,15 @@ wikipedia`.split("\n")
 }
 
 class PLDBServer extends TrueBaseServer {
-  constructor(folder, ignoreFolder) {
-    super(folder, ignoreFolder)
+  prepareToServe() {
+    // todo: cleanup
     this.editLogPath = path.join(ignoreFolder, "trueBaseServerLog.tree")
     this.serveFolder(siteFolder)
     this.serveFolder(__dirname)
     this.buildTqlExtension()
     this.initSearch()
+
+    this.notFoundPage = Disk.read(path.join(siteFolder, "custom_404.html"))
 
     const { app } = this
 
@@ -2558,6 +2560,7 @@ class PLDBServer extends TrueBaseServer {
     )
 
     this.addRedirects(app)
+    return this
   }
 
   buildTqlExtension() {
@@ -2669,12 +2672,6 @@ ${scrollFooter}
     return commitResult.commitHash
   }
 
-  get notFoundPage() {
-    if (!this._notFoundPage)
-      this._notFoundPage = Disk.read(path.join(siteFolder, "custom_404.html"))
-    return this._notFoundPage
-  }
-
   _git
   get git() {
     if (!this._git)
@@ -2756,9 +2753,15 @@ ${scrollFooter}
   isProd = false
 
   listenProd() {
+    this.prepareToServe()
     this.gitOn = true
     this.isProd = true
     return super.listenProd()
+  }
+
+  listen(port) {
+    this.prepareToServe()
+    return super.listen(port)
   }
 
   buildAllCommand() {
@@ -3226,7 +3229,6 @@ sandbox/lib/show-hint.js`.split("\n")
 const pldbBase = new PLDBFolder()
   .setDir(path.join(truebaseFolder, "things"))
   .setGrammarDir(path.join(truebaseFolder, "grammar"))
-  .loadFolder()
 
 const PLDB = new PLDBServer(pldbBase, ignoreFolder)
 
