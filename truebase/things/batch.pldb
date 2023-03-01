@@ -15,7 +15,7 @@ features
  hasComments true
   REM A comment
   :: Another type of comment
- hasGotos
+ hasGotos true
   :: this would create an endless loop
   :myLabel
   goto myLabel
