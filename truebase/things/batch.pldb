@@ -14,6 +14,11 @@ features
   REM A comment
  hasComments true
   REM A comment
+  :: Another type of comment
+ hasGotos
+  :: this would create an endless loop
+  :myLabel
+  goto myLabel
 
 lineCommentToken REM
 printToken echo
