@@ -34,8 +34,10 @@ javascriptCode
 code
  git clone https://github.com/breck7/pldb
  cd pldb
- npm install .
+ # Required to run this during first install only.
  npm i -g cloc
+ # Required to run this on fresh checkout and when upgrading from an old checkout or pereodically when there are new releases
+ npm install .
  npm run build
  # Run tests
  npm run test
