@@ -8,7 +8,7 @@
     "test": "./code/test.js",
     "local": "./code/PLDB.js startDevServer",
     "search": "./code/PLDB.js search",
-    "format": "./code/PLDB.js formatDatabase",
+    "format": "./code/PLDB.js format",
     "githubs": "./code/PLDB.js crawlGitHub",
     "fetchContributors": "wget -O site/pages/contributors.json https://api.github.com/repos/breck7/pldb/contributors",
     "cloc": "cloc --vcs git . --read-lang-def=code/clocLangs.txt",
