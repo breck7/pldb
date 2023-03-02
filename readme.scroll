@@ -36,7 +36,7 @@ code
  cd pldb
  # Required to run this during first install only.
  npm i -g cloc
- # Required to run this on fresh checkout and when upgrading from an old checkout or pereodically when there are new releases
+ # Required to run this on fresh checkout and when upgrading from an old checkout or periodically when there are new releases
  npm install .
  npm run build
  # Run tests
