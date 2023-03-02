@@ -244,7 +244,7 @@ class PLDBFile extends TrueBaseFile {
   }
 
   get missingColumns() {
-    return this.base.columnDocumentation
+    return this.parent.columnDocumentation
       .filter(col => col.Description !== "computed")
       .filter(col => !col.Column.includes("."))
       .filter(col => !this.has(col.Column))
@@ -353,20 +353,20 @@ class PLDBFile extends TrueBaseFile {
   }
 
   get langRankDebug() {
-    const obj = this.base.getLanguageRankExplanation(this)
+    const obj = this.parent.getLanguageRankExplanation(this)
     return `TotalRank: ${obj.totalRank} Jobs: ${obj.jobsRank} Users: ${obj.usersRank} Facts: ${obj.factsRank} Links: ${obj.inboundLinksRank}`
   }
 
   get previousRanked() {
     return this.isLanguage
-      ? this.base.getFileAtLanguageRank(this.languageRank - 1)
-      : this.base.getFileAtRank(this.rank - 1)
+      ? this.parent.getFileAtLanguageRank(this.languageRank - 1)
+      : this.parent.getFileAtRank(this.rank - 1)
   }
 
   get nextRanked() {
     return this.isLanguage
-      ? this.base.getFileAtLanguageRank(this.languageRank + 1)
-      : this.base.getFileAtRank(this.rank + 1)
+      ? this.parent.getFileAtLanguageRank(this.languageRank + 1)
+      : this.parent.getFileAtRank(this.rank + 1)
   }
 
   get exampleCount() {
@@ -582,10 +582,6 @@ class PLDBFile extends TrueBaseFile {
     return parseInt(set[key])
   }
 
-  get title() {
-    return this.get("title") || this.id
-  }
-
   get appeared() {
     const appeared = this.get("appeared")
     return appeared === undefined ? 0 : parseInt(appeared)
@@ -614,7 +610,7 @@ class PLDBFile extends TrueBaseFile {
 
   get numberOfUsers() {
     if (this.quickCache.numberOfUsers === undefined)
-      this.quickCache.numberOfUsers = this.base.predictNumberOfUsers(this)
+      this.quickCache.numberOfUsers = this.parent.predictNumberOfUsers(this)
     return this.quickCache.numberOfUsers
   }
 
@@ -624,26 +620,26 @@ class PLDBFile extends TrueBaseFile {
 
   get numberOfJobs() {
     if (this.quickCache.numberOfJobs === undefined)
-      this.quickCache.numberOfJobs = this.base.predictNumberOfJobs(this)
+      this.quickCache.numberOfJobs = this.parent.predictNumberOfJobs(this)
     return this.quickCache.numberOfJobs
   }
 
   get percentile() {
-    return this.base.predictPercentile(this)
+    return this.parent.predictPercentile(this)
   }
 
   get supersetOfFile() {
     const supersetOf = this.get("supersetOf")
-    return supersetOf ? this.base.getFile(supersetOf) : undefined
+    return supersetOf ? this.parent.getFile(supersetOf) : undefined
   }
 
   get languageRank() {
-    return this.isLanguage ? this.base.getLanguageRank(this) : undefined
+    return this.isLanguage ? this.parent.getLanguageRank(this) : undefined
   }
 
   get rank() {
     if (this.quickCache.rank === undefined)
-      this.quickCache.rank = this.base.getRank(this)
+      this.quickCache.rank = this.parent.getRank(this)
     return this.quickCache.rank
   }
 
@@ -662,10 +658,6 @@ class PLDBFile extends TrueBaseFile {
     return lodash.startCase(type).toLowerCase()
   }
 
-  get base() {
-    return this.parent
-  }
-
   get factCount() {
     return this.parsed
       .getTopDownArray()
@@ -678,10 +670,6 @@ class PLDBFile extends TrueBaseFile {
         .findAllWordsWithCellType("yearCell")
         .map(word => parseInt(word.word))
     )
-  }
-
-  getAll(keyword) {
-    return this.findNodes(keyword).map(i => i.content)
   }
 
   writeScrollFileIfChanged(folder) {
@@ -699,7 +687,7 @@ class LanguagePageTemplate {
   }
 
   makeATag(id) {
-    const file = this.file.base.getFile(id)
+    const file = this.file.parent.getFile(id)
     return `<a href="${file.permalink}">${file.title}</a>`
   }
 
@@ -847,7 +835,7 @@ pipeTable
     const featuresTable = file.extendedFeaturesNode
     if (!featuresTable.length) return ""
 
-    const { featuresMap } = file.base
+    const { featuresMap } = file.parent
     const { pldbId } = file
 
     const table = new TreeNode()
@@ -2295,12 +2283,6 @@ wikipedia`.split("\n")
       return clone
     })
     return this.quickCache.nodesForCsv
-  }
-
-  get typedMapJson() {
-    if (!this.quickCache.typedMapJson)
-      this.quickCache.typedMapJson = JSON.stringify(this.typedMap, null, 2)
-    return this.quickCache.typedMapJson
   }
 
   get keywordsOneHotCsv() {
