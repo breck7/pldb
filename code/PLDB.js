@@ -40,7 +40,6 @@ const truebaseModuleFolder = path.join(nodeModulesFolder, "truebase")
 const siteFolder = path.join(baseFolder, "site")
 const distFolder = path.join(siteFolder, "dist")
 const pagesDir = path.join(siteFolder, "pages")
-const docsFolder = path.join(siteFolder, "docs")
 const listsFolder = path.join(siteFolder, "lists")
 const postsFolder = path.join(siteFolder, "posts")
 const featuresFolder = path.join(siteFolder, "features")
@@ -2618,7 +2617,7 @@ ${scrollFooter}
 
   buildCsvDocumentationImportsCommand() {
     const folder = this.folder
-    buildImportsFile(path.join(docsFolder, "csvDocumentationImports.scroll"), {
+    buildImportsFile(path.join(pagesDir, "csvDocumentationImports.scroll"), {
       LANG_COUNT: folder.topLanguages.length,
       APPROXIMATE_FACT_COUNT: numeral(folder.factCount).format("0,0a"),
       COL_COUNT: folder.colNamesForCsv.length,
@@ -2891,7 +2890,6 @@ sandbox/lib/show-hint.js`.split("\n")
       listsFolder,
       trueBasePagesFolder,
       pagesDir,
-      docsFolder,
       postsFolder,
       featuresFolder
     ]
