@@ -1874,6 +1874,7 @@ class PLDBFolder extends TrueBaseFolder {
   computedColumnNames = `pldbId bookCount paperCount hopl exampleCount numberOfUsers numberOfRepos numberOfJobs languageRank rank factCount lastActivity`.split(
     " "
   )
+  sourceFilename = Utils.getFileName(__filename)
   globalSortFunction = item => parseInt(item.rank)
   githubRepoPath = "breck7/pldb"
   defaultColumnSortOrder = `title
