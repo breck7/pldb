@@ -24,7 +24,6 @@ const { Utils } = require("jtree/products/Utils.js")
 const { shiftRight, removeReturnChars } = Utils
 const { GrammarCompiler } = require("jtree/products/GrammarCompiler.js")
 const { Disk } = require("jtree/products/Disk.node.js")
-const { Table } = require("jtree/products/jtable.node.js")
 const { TrueBaseFolder, TrueBaseFile } = require("truebase/code/TrueBase.js")
 const {
   TrueBaseServer,
@@ -140,22 +139,6 @@ const buildImportsFile = (filepath, varMap) => {
         })
         .join("\n\n")
   )
-}
-
-const nodeToFlatObject = parentNode => {
-  const delimiter = "."
-  let newObject = {}
-  parentNode.forEach((child, index) => {
-    newObject[child.getWord(0)] = child.content
-    child.getTopDownArray().forEach(node => {
-      const key = node
-        .getFirstWordPathRelativeTo(parentNode)
-        .replace(/ /g, delimiter)
-      const value = node.content
-      newObject[key] = value
-    })
-  })
-  return newObject
 }
 
 // todo: move to grammar
@@ -1889,6 +1872,30 @@ const makeInverseRanks = ranks => {
 }
 
 class PLDBFolder extends TrueBaseFolder {
+  computedColumnNames = `pldbId bookCount paperCount hopl exampleCount numberOfUsers numberOfRepos numberOfJobs languageRank rank factCount lastActivity`.split(
+    " "
+  )
+  globalSortFunction = item => parseInt(item.rank)
+  githubRepoPath = "breck7/pldb"
+  defaultColumnSortOrder = `title
+appeared
+type
+pldbId
+rank
+languageRank
+factCount
+lastActivity
+exampleCount
+bookCount
+paperCount
+numberOfUsers
+numberOfJobs
+githubBigQuery.repos
+creators
+githubRepo
+website
+wikipedia`.split("\n")
+
   createParser() {
     return new TreeNode.Parser(PLDBFile)
   }
@@ -2100,24 +2107,6 @@ class PLDBFolder extends TrueBaseFolder {
     return counts
   }
 
-  get colNameToGrammarDefMap() {
-    if (this.quickCache.colNameToGrammarDefMap)
-      return this.quickCache.colNameToGrammarDefMap
-    this.quickCache.colNameToGrammarDefMap = new Map()
-    const map = this.quickCache.colNameToGrammarDefMap
-    this.nodesForCsv.forEach(node => {
-      node.getTopDownArray().forEach(node => {
-        const path = node.getFirstWordPath().replace(/ /g, ".")
-        map.set(path, node.getDefinition())
-      })
-    })
-    return map
-  }
-
-  get colNamesForCsv() {
-    return this.columnDocumentation.map(col => col.Column)
-  }
-
   groupByListValues(listColumnName, files = this.files, delimiter = " && ") {
     const values = {}
     files.forEach(file => {
@@ -2129,160 +2118,6 @@ class PLDBFolder extends TrueBaseFolder {
       })
     })
     return values
-  }
-
-  // todo: is there already a way to do this in jtree?
-  getFilePathAndLineNumberWhereGrammarNodeIsDefined(nodeTypeId) {
-    const { grammarFileMap } = this
-    const regex = new RegExp(`^${nodeTypeId}`, "gm")
-    let filePath
-    let lineNumber
-    Object.keys(grammarFileMap).some(grammarFilePath => {
-      const code = grammarFileMap[grammarFilePath]
-      if (grammarFileMap[grammarFilePath].match(regex)) {
-        filePath = grammarFilePath
-        lineNumber = code.split("\n").indexOf(nodeTypeId)
-        return true
-      }
-    })
-    return { filePath, lineNumber }
-  }
-
-  get grammarFileMap() {
-    if (this.quickCache.grammarFileMap) return this.quickCache.grammarFileMap
-    this.quickCache.grammarFileMap = {}
-    const map = this.quickCache.grammarFileMap
-    this.grammarFilePaths.forEach(
-      filepath => (map[filepath] = Disk.read(filepath))
-    )
-    return map
-  }
-
-  get columnDocumentation() {
-    if (this.quickCache.columnDocumentation)
-      return this.quickCache.columnDocumentation
-
-    // Return columns with documentation sorted in the most interesting order.
-
-    const { colNameToGrammarDefMap, objectsForCsv } = this
-    const colNames = new TreeNode(objectsForCsv)
-      .toCsv()
-      .split("\n")[0]
-      .split(",")
-      .map(col => {
-        return { name: col }
-      })
-    const table = new Table(objectsForCsv, colNames, undefined, false) // todo: fix jtable or switch off
-    const cols = table
-      .getColumnsArray()
-      .map(col => {
-        const reductions = col.getReductions()
-        const Column = col.getColumnName()
-        const colDef = colNameToGrammarDefMap.get(Column)
-        let colDefId
-        if (colDef) colDefId = colDef.getLine()
-        else colDefId = ""
-
-        const Example = reductions.mode
-        const Description =
-          colDefId !== "" && colDefId !== "errorNode"
-            ? colDef.get("description")
-            : "computed"
-        let Source
-        if (colDef) Source = colDef.getFrom("string sourceDomain")
-        else Source = ""
-
-        const sourceLocation = this.getFilePathAndLineNumberWhereGrammarNodeIsDefined(
-          colDefId
-        )
-        const Definition =
-          colDefId !== "" && colDefId !== "errorNode"
-            ? path.basename(sourceLocation.filePath)
-            : "A computed value"
-        const DefinitionLink =
-          colDefId !== "" && colDefId !== "errorNode"
-            ? `https://github.com/breck7/pldb/blob/main/truebase/grammar/${Definition}#L${sourceLocation.lineNumber +
-                1}`
-            : `https://github.com/breck7/pldb/blob/main/code/File.ts#:~:text=get%20${Column}()`
-        const SourceLink = Source ? `https://${Source}` : ""
-        return {
-          Column,
-          Values: reductions.count,
-          Coverage:
-            Math.round(
-              (100 * reductions.count) /
-                (reductions.count + reductions.incompleteCount)
-            ) + "%",
-          Example,
-          Source,
-          SourceLink,
-          Description,
-          Definition,
-          DefinitionLink,
-          Recommended:
-            colDef && colDef.getFrom("boolean alwaysRecommended") === "true"
-        }
-      })
-      .filter(col => col.Values)
-
-    const columnSortOrder = `title
-appeared
-type
-pldbId
-rank
-languageRank
-factCount
-lastActivity
-exampleCount
-bookCount
-paperCount
-numberOfUsers
-numberOfJobs
-githubBigQuery.repos
-creators
-githubRepo
-website
-wikipedia`.split("\n")
-
-    const sortedCols = []
-    columnSortOrder.forEach(colName => {
-      const hit = cols.find(col => col.Column === colName)
-      sortedCols.push(hit)
-    })
-
-    lodash
-      .sortBy(cols, "Values")
-      .reverse()
-      .forEach(col => {
-        if (!columnSortOrder.includes(col.Column)) sortedCols.push(col)
-      })
-
-    sortedCols.forEach((col, index) => (col.Index = index + 1))
-
-    this.quickCache.columnDocumentation = sortedCols
-    return sortedCols
-  }
-
-  get nodesForCsv() {
-    if (this.quickCache.nodesForCsv) return this.quickCache.nodesForCsv
-    const runTimeProps = `pldbId bookCount paperCount hopl exampleCount numberOfUsers numberOfRepos numberOfJobs languageRank rank factCount lastActivity`.split(
-      " "
-    )
-    this.quickCache.nodesForCsv = this.map(file => {
-      const clone = file.parsed.clone()
-      clone.getTopDownArray().forEach(node => {
-        if (node.includeChildrenInCsv === false) node.deleteChildren()
-        if (node.getNodeTypeId() === "blankLineNode") node.destroy()
-      })
-
-      runTimeProps.forEach(prop => {
-        const value = file[prop]
-        if (value !== undefined) clone.set(prop, value.toString())
-      })
-
-      return clone
-    })
-    return this.quickCache.nodesForCsv
   }
 
   get keywordsOneHotCsv() {
@@ -2310,68 +2145,6 @@ wikipedia`.split("\n")
     return this.quickCache.autocompleteJson
   }
 
-  get objectsForCsv() {
-    if (!this.quickCache.objectsForCsv)
-      this.quickCache.objectsForCsv = lodash.sortBy(
-        this.nodesForCsv.map(nodeToFlatObject),
-        item => parseInt(item.rank)
-      )
-    return this.quickCache.objectsForCsv
-  }
-
-  get csvBuildOutput() {
-    if (this.quickCache.csvBuildOutput) return this.quickCache.csvBuildOutput
-
-    const { colNamesForCsv, objectsForCsv, columnDocumentation } = this
-
-    const pldbCsv = new TreeNode(objectsForCsv).toDelimited(",", colNamesForCsv)
-
-    const langsCsv = new TreeNode(
-      objectsForCsv.filter(obj => isLanguage(obj.type))
-    ).toDelimited(",", colNamesForCsv)
-
-    const columnsMetadataTree = new TreeNode(columnDocumentation)
-    const columnMetadataColumnNames = [
-      "Index",
-      "Column",
-      "Values",
-      "Coverage",
-      "Example",
-      "Description",
-      "Source",
-      "SourceLink",
-      "Definition",
-      "DefinitionLink"
-    ]
-
-    const columnsCsv = columnsMetadataTree.toDelimited(
-      ",",
-      columnMetadataColumnNames
-    )
-
-    this.quickCache.csvBuildOutput = {
-      pldbCsv,
-      langsCsv,
-      columnsCsv,
-      columnsMetadataTree,
-      columnMetadataColumnNames,
-      colNamesForCsv
-    }
-    return this.quickCache.csvBuildOutput
-  }
-
-  get sources() {
-    const sources = Array.from(
-      new Set(
-        this.grammarCode
-          .split("\n")
-          .filter(line => line.includes("string sourceDomain"))
-          .map(line => line.split("string sourceDomain")[1].trim())
-      )
-    )
-    return sources.sort()
-  }
-
   get keywordsOneHot() {
     if (this.quickCache.keywordsOneHot) return this.quickCache.keywordsOneHot
     const { keywordsTable } = this
@@ -2392,11 +2165,6 @@ wikipedia`.split("\n")
     rows.unshift(headerRow)
     this.quickCache.keywordsOneHot = rows
     return rows
-  }
-
-  get bytes() {
-    if (!this.quickCache.bytes) this.quickCache.bytes = this.toString().length
-    return this.quickCache.bytes
   }
 
   get factCount() {
@@ -2453,10 +2221,10 @@ wikipedia`.split("\n")
 }
 
 class PLDBServer extends TrueBaseServer {
-  prepareToServe() {
+  mainCsvFilename = "pldb.csv"
+  beforeListen() {
     // todo: cleanup
     this.editLogPath = path.join(ignoreFolder, "trueBaseServerLog.tree")
-    this.serveFolder(siteFolder)
     this.serveFolder(__dirname)
     this.buildTqlExtension()
     this.initSearch()
@@ -2551,7 +2319,7 @@ class PLDBServer extends TrueBaseServer {
       Disk.read(path.join(truebaseModuleFolder, "tql", "tql.grammar"))
     )
 
-    const { colNamesForCsv } = this.folder.csvBuildOutput
+    const { colNamesForCsv } = this.folder
     extendedTqlGrammar
       .getNode("columnNameCell")
       .set("enum", colNamesForCsv.join(" "))
@@ -2735,15 +2503,9 @@ ${scrollFooter}
   isProd = false
 
   listenProd() {
-    this.prepareToServe()
     this.gitOn = true
     this.isProd = true
     return super.listenProd()
-  }
-
-  listen(port) {
-    this.prepareToServe()
-    return super.listen(port)
   }
 
   buildAllCommand() {
@@ -2751,7 +2513,8 @@ ${scrollFooter}
     this.buildFeaturePagesCommand()
     this.buildScrollFilesFromPLDBFilesCommand()
     this.buildAcknowledgementsImportsCommand()
-    this.buildCsvImportsCommand()
+    this.buildCsvFilesCommand()
+    this.buildCsvDocumentationImportsCommand()
     this.buildTopListImports()
     this.buildExtensionsImports()
     this.buildFeaturesImports()
@@ -2841,39 +2604,40 @@ ${scrollFooter}
     })
   }
 
-  buildCsvImportsCommand() {
+  buildCsvFilesCommand() {
+    super.buildCsvFilesCommand()
     const folder = this.folder
-    const { csvBuildOutput } = folder
-    const {
-      pldbCsv,
-      langsCsv,
-      columnsCsv,
-      columnMetadataColumnNames,
-      columnsMetadataTree,
-      colNamesForCsv
-    } = csvBuildOutput
+    Disk.writeIfChanged(
+      path.join(siteFolder, "languages.csv"),
+      folder.makeCsv(
+        "langs.csv",
+        new TreeNode(folder.objectsForCsv.filter(obj => isLanguage(obj.type)))
+      )
+    )
+  }
 
-    Disk.writeIfChanged(path.join(siteFolder, "pldb.csv"), pldbCsv)
-    Disk.writeIfChanged(path.join(siteFolder, "languages.csv"), langsCsv)
-    Disk.writeIfChanged(path.join(siteFolder, "columns.csv"), columnsCsv)
-
-    buildImportsFile(path.join(docsFolder, "csvImports.scroll"), {
+  buildCsvDocumentationImportsCommand() {
+    const folder = this.folder
+    buildImportsFile(path.join(docsFolder, "csvDocumentationImports.scroll"), {
       LANG_COUNT: folder.topLanguages.length,
       APPROXIMATE_FACT_COUNT: numeral(folder.factCount).format("0,0a"),
-      COL_COUNT: colNamesForCsv.length,
+      COL_COUNT: folder.colNamesForCsv.length,
       ENTITY_COUNT: folder.length,
-      ENTITIES_FILE_SIZE_UNCOMPRESSED: numeral(pldbCsv.length).format("0.0b"),
-      LANGS_FILE_SIZE_UNCOMPRESSED: numeral(langsCsv.length).format("0.0b"),
+      ENTITIES_FILE_SIZE_UNCOMPRESSED: numeral(
+        folder.makeCsv("pldb.csv").length
+      ).format("0.0b"),
+      LANGS_FILE_SIZE_UNCOMPRESSED: numeral(
+        folder.makeCsv("langs.csv").length
+      ).format("0.0b"),
       COLUMN_METADATA_TABLE: {
-        header: columnMetadataColumnNames,
-        rows: columnsMetadataTree
+        header: folder.columnsCsvOutput.columnMetadataColumnNames,
+        rows: folder.columnsCsvOutput.columnsMetadataTree
       }
     })
   }
 
   buildDistFolder() {
     const folder = this.folder
-    const { csvBuildOutput } = folder
 
     if (!Disk.exists(distFolder)) Disk.mkdir(distFolder)
 
@@ -3207,7 +2971,7 @@ const pldbBase = new PLDBFolder()
   .setDir(path.join(truebaseFolder, "things"))
   .setGrammarDir(path.join(truebaseFolder, "grammar"))
 
-const PLDB = new PLDBServer(pldbBase, ignoreFolder)
+const PLDB = new PLDBServer(pldbBase, ignoreFolder, siteFolder)
 
 module.exports = { PLDB }
 
