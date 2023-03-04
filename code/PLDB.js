@@ -22,7 +22,6 @@ const dayjs = require("dayjs")
 const { TreeNode } = require("jtree/products/TreeNode.js")
 const { Utils } = require("jtree/products/Utils.js")
 const { shiftRight, removeReturnChars } = Utils
-const { GrammarCompiler } = require("jtree/products/GrammarCompiler.js")
 const { Disk } = require("jtree/products/Disk.node.js")
 const { TrueBaseFolder, TrueBaseFile } = require("truebase/code/TrueBase.js")
 const {
@@ -36,7 +35,6 @@ const ignoreFolder = path.join(baseFolder, "ignore")
 const truebaseFolder = path.join(baseFolder, "truebase")
 const nodeModulesFolder = path.join(baseFolder, "node_modules")
 const jtreeFolder = path.join(nodeModulesFolder, "jtree")
-const truebaseModuleFolder = path.join(nodeModulesFolder, "truebase")
 const siteFolder = path.join(baseFolder, "site")
 const distFolder = path.join(siteFolder, "dist")
 const pagesDir = path.join(siteFolder, "pages")
@@ -2221,12 +2219,13 @@ wikipedia`.split("\n")
 }
 
 class PLDBServer extends TrueBaseServer {
-  mainCsvFilename = "pldb.csv"
+  trueBaseId = "pldb"
+  distFolder = distFolder
   beforeListen() {
     // todo: cleanup
     this.editLogPath = path.join(ignoreFolder, "trueBaseServerLog.tree")
     this.serveFolder(__dirname)
-    this.buildTqlExtension()
+    this.buildRunTimeGrammarsCommand()
     this.initSearch()
 
     this.notFoundPage = Disk.read(path.join(siteFolder, "custom_404.html"))
@@ -2311,32 +2310,6 @@ class PLDBServer extends TrueBaseServer {
 
     this.addRedirects(app)
     return this
-  }
-
-  buildTqlExtension() {
-    if (!Disk.exists(distFolder)) Disk.mkdir(distFolder)
-    const extendedTqlGrammar = new TreeNode(
-      Disk.read(path.join(truebaseModuleFolder, "tql", "tql.grammar"))
-    )
-
-    const { colNamesForCsv } = this.folder
-    extendedTqlGrammar
-      .getNode("columnNameCell")
-      .set("enum", colNamesForCsv.join(" "))
-
-    const extendedTqlPath = path.join(distFolder, "extendedTql.grammar")
-    Disk.write(extendedTqlPath, extendedTqlGrammar.toString())
-    GrammarCompiler.compileGrammarForBrowser(
-      extendedTqlPath,
-      distFolder + "/",
-      false
-    )
-    const jsPath = GrammarCompiler.compileGrammarForNodeJs(
-      extendedTqlPath,
-      distFolder + "/",
-      true
-    )
-    this.extendedTqlParser = require(jsPath)
   }
 
   addRedirects(app) {
@@ -2522,7 +2495,7 @@ ${scrollFooter}
     this.buildCreatorsImports()
     this.buildHomepageImportsCommand()
     this.buildScrollsCommand()
-    this.buildTqlExtension() // todo: cleanup
+    this.buildRunTimeGrammarsCommand() // todo: cleanup
     this.buildDistFolder()
   }
 
@@ -2638,21 +2611,7 @@ ${scrollFooter}
 
   buildDistFolder() {
     const folder = this.folder
-
-    if (!Disk.exists(distFolder)) Disk.mkdir(distFolder)
-
-    const ids = folder.map(file => file.id).join(" ")
-    const pldbGrammar = new TreeNode(folder.grammarCode)
-
-    pldbGrammar.getNode("permalinkCell").set("enum", ids)
-    Disk.write(path.join(distFolder, "pldb.grammar"), pldbGrammar.toString())
-
-    // todo: cleanup
-    GrammarCompiler.compileGrammarForBrowser(
-      path.join(distFolder, "pldb.grammar"),
-      distFolder + "/",
-      false
-    )
+    this.buildRunTimeGrammarsCommand()
 
     Disk.write(
       path.join(distFolder, "autocomplete.json"),
