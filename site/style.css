@@ -3,13 +3,6 @@ body {
   padding: 8px;
 }
 
-a {
-  text-decoration: none;
-}
-a:hover {
-  text-decoration: underline;
-}
-
 .doubleWide {
   max-width: 800px;
   margin: auto;
