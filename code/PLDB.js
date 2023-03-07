@@ -16,6 +16,7 @@ const path = require("path")
 const numeral = require("numeral")
 const lodash = require("lodash")
 const express = require("express")
+const nodemailer = require("nodemailer")
 const simpleGit = require("simple-git")
 const dayjs = require("dayjs")
 
@@ -2332,6 +2333,9 @@ class PLDBServer extends TrueBaseServer {
     return this.trueBaseUsers.get(`${email} loginLink`)
   }
 
+  siteName = "PLDB.com"
+  siteDomain = "pldb.com"
+
   initUserAccounts() {
     this.userPasswordPath = path.join(ignoreFolder, "trueBaseUsers.tree")
     Disk.touch(this.userPasswordPath)
@@ -2347,7 +2351,9 @@ class PLDBServer extends TrueBaseServer {
           throw new Error(`"${email}" is not a valid email.`)
 
         const link = this.getOrCreateLoginLink(email)
-        if (this.isProd) await this.sendLoginEmail(email, link)
+        const { siteName, siteDomain } = this
+        const from = `"${siteName}" <feedbackwelcome@${siteDomain}>`
+        await this.sendEmail(email, from, `Your ${siteName} login link`, link)
         return res.send("OK")
       } catch (err) {
         console.error(err)
@@ -2369,43 +2375,49 @@ class PLDBServer extends TrueBaseServer {
     })
   }
 
-  siteName = "PLDB.com"
-  siteDomain = "pldb.com"
-
-  async sendLoginEmail(email, link) {
-    const nodemailer = require("nodemailer")
-    const { siteDomain, siteName } = this
-
+  async createEmailConfig() {
     // Generate test SMTP service account from ethereal.email
     // Only needed if you don't have a real mail account for testing
     let testAccount = await nodemailer.createTestAccount()
+    Disk.write(
+      this.emailConfigPath,
+      `port 587\nhost smtp.ethereal.email\nsecure false\nuser ${testAccount.user}\npass ${testAccount.pass}`
+    )
+  }
 
-    // create reusable transporter object using the default SMTP transport
+  async sendEmail(to, from, subject, link) {
+    const { siteName } = this
+    if (!this.emailConfig) {
+      this.emailConfigPath = path.join(ignoreFolder, "emailConfig.tree")
+      if (!Disk.exists(this.emailConfigPath)) await this.createEmailConfig()
+      this.emailConfig = new TreeNode(
+        Disk.read(this.emailConfigPath)
+      ).toObject()
+    }
+
+    const { user, pass, host, port, secure } = this.emailConfig
     let transporter = nodemailer.createTransport({
-      host: "smtp.ethereal.email",
-      port: 587,
-      secure: false, // true for 465, false for other ports
+      host,
+      port: parseInt(port),
+      secure: secure === "true",
       auth: {
-        user: testAccount.user, // generated ethereal user
-        pass: testAccount.pass // generated ethereal password
+        user,
+        pass
       }
     })
 
     // send mail with defined transport object
     let info = await transporter.sendMail({
-      from: `"${siteName}" <feedbackwelcome@${siteDomain}>`,
-      to: email,
-      subject: `Your ${siteName} login link`,
+      from,
+      to,
+      subject,
       text: link,
       html: `<a href="${link}">${link}</a>`
     })
 
     console.log("Message sent: %s", info.messageId)
-    // Message sent: <b658f8ca-6296-ccf4-8306-87d57a0b4321@example.com>
-
-    // Preview only available when sending through an Ethereal account
-    console.log("Preview URL: %s", nodemailer.getTestMessageUrl(info))
-    // Preview URL: https://ethereal.email/message/WaQKMgKddxQDoou...
+    if (host === "smtp.ethereal.email")
+      console.log("Preview URL: %s", nodemailer.getTestMessageUrl(info))
   }
 
   addRedirects(app) {
