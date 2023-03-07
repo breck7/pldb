@@ -16,7 +16,6 @@ const path = require("path")
 const numeral = require("numeral")
 const lodash = require("lodash")
 const express = require("express")
-const nodemailer = require("nodemailer")
 const simpleGit = require("simple-git")
 const dayjs = require("dayjs")
 
@@ -2221,6 +2220,8 @@ wikipedia`.split("\n")
 
 class PLDBServer extends TrueBaseServer {
   trueBaseId = "pldb"
+  siteName = "PLDB.com"
+  siteDomain = "pldb.com"
   distFolder = distFolder
   beforeListen() {
     // todo: cleanup
@@ -2313,111 +2314,6 @@ class PLDBServer extends TrueBaseServer {
 
     this.addRedirects(app)
     return this
-  }
-
-  getOrCreateLoginLink(email) {
-    if (!this.trueBaseUsers.has(email)) {
-      const password = Utils.getRandomCharacters(16)
-      const created = new Date().toString()
-      const loginLink = `https://${this.siteDomain}/login.html?email=${email}&password=${password}`
-      Disk.append(
-        this.userPasswordPath,
-        `${email}\n password ${password}\n created ${created}\n loginLink ${loginLink}\n`
-      )
-      this.trueBaseUsers.appendLineAndChildren(email, {
-        password,
-        created,
-        loginLink
-      })
-    }
-    return this.trueBaseUsers.get(`${email} loginLink`)
-  }
-
-  siteName = "PLDB.com"
-  siteDomain = "pldb.com"
-
-  initUserAccounts() {
-    this.userPasswordPath = path.join(ignoreFolder, "trueBaseUsers.tree")
-    Disk.touch(this.userPasswordPath)
-    this.loginLogPath = path.join(ignoreFolder, "trueBaseLogins.log")
-    Disk.touch(this.loginLogPath)
-
-    this.trueBaseUsers = new TreeNode(Disk.read(this.userPasswordPath))
-    const { app } = this
-    app.post("/sendLoginLink", async (req, res, next) => {
-      try {
-        const email = req.body.email
-        if (!Utils.isValidEmail(email))
-          throw new Error(`"${email}" is not a valid email.`)
-
-        const link = this.getOrCreateLoginLink(email)
-        const { siteName, siteDomain } = this
-        const from = `"${siteName}" <feedbackwelcome@${siteDomain}>`
-        await this.sendEmail(email, from, `Your ${siteName} login link`, link)
-        return res.send("OK")
-      } catch (err) {
-        console.error(err)
-        return res.status(500).send(err)
-      }
-    })
-
-    app.post("/login", (req, res, next) => {
-      const { email, password } = req.body
-      if (
-        Utils.isValidEmail(email) &&
-        this.trueBaseUsers.has(email) &&
-        this.trueBaseUsers.get(`${email} password`) === password
-      ) {
-        Disk.append(this.loginLogPath, `${email} ${new Date()}`)
-        return res.send("OK")
-      }
-      return res.send("FAIL")
-    })
-  }
-
-  async createEmailConfig() {
-    // Generate test SMTP service account from ethereal.email
-    // Only needed if you don't have a real mail account for testing
-    let testAccount = await nodemailer.createTestAccount()
-    Disk.write(
-      this.emailConfigPath,
-      `port 587\nhost smtp.ethereal.email\nsecure false\nuser ${testAccount.user}\npass ${testAccount.pass}`
-    )
-  }
-
-  async sendEmail(to, from, subject, link) {
-    const { siteName } = this
-    if (!this.emailConfig) {
-      this.emailConfigPath = path.join(ignoreFolder, "emailConfig.tree")
-      if (!Disk.exists(this.emailConfigPath)) await this.createEmailConfig()
-      this.emailConfig = new TreeNode(
-        Disk.read(this.emailConfigPath)
-      ).toObject()
-    }
-
-    const { user, pass, host, port, secure } = this.emailConfig
-    let transporter = nodemailer.createTransport({
-      host,
-      port: parseInt(port),
-      secure: secure === "true",
-      auth: {
-        user,
-        pass
-      }
-    })
-
-    // send mail with defined transport object
-    let info = await transporter.sendMail({
-      from,
-      to,
-      subject,
-      text: link,
-      html: `<a href="${link}">${link}</a>`
-    })
-
-    console.log("Message sent: %s", info.messageId)
-    if (host === "smtp.ethereal.email")
-      console.log("Preview URL: %s", nodemailer.getTestMessageUrl(info))
   }
 
   addRedirects(app) {
