@@ -2335,6 +2335,9 @@ class PLDBServer extends TrueBaseServer {
   initUserAccounts() {
     this.userPasswordPath = path.join(ignoreFolder, "trueBaseUsers.tree")
     Disk.touch(this.userPasswordPath)
+    this.loginLogPath = path.join(ignoreFolder, "trueBaseLogins.log")
+    Disk.touch(this.loginLogPath)
+
     this.trueBaseUsers = new TreeNode(Disk.read(this.userPasswordPath))
     const { app } = this
     app.post("/sendLoginLink", async (req, res, next) => {
@@ -2358,8 +2361,10 @@ class PLDBServer extends TrueBaseServer {
         Utils.isValidEmail(email) &&
         this.trueBaseUsers.has(email) &&
         this.trueBaseUsers.get(`${email} password`) === password
-      )
+      ) {
+        Disk.append(this.loginLogPath, `${email} ${new Date()}`)
         return res.send("OK")
+      }
       return res.send("FAIL")
     })
   }
