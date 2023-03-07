@@ -2232,6 +2232,8 @@ class PLDBServer extends TrueBaseServer {
 
     const { app } = this
 
+    this.initUserAccounts()
+
     this.app.use(
       "/monaco-editor",
       express.static(path.join(nodeModulesFolder, "monaco-editor"))
@@ -2310,6 +2312,95 @@ class PLDBServer extends TrueBaseServer {
 
     this.addRedirects(app)
     return this
+  }
+
+  getOrCreateLoginLink(email) {
+    if (!this.trueBaseUsers.has(email)) {
+      const password = Utils.getRandomCharacters(16)
+      const created = new Date().toString()
+      const loginLink = `https://${this.siteDomain}/login.html?email=${email}&password=${password}`
+      Disk.append(
+        this.userPasswordPath,
+        `${email}\n password ${password}\n created ${created}\n loginLink ${loginLink}\n`
+      )
+      this.trueBaseUsers.appendLineAndChildren(email, {
+        password,
+        created,
+        loginLink
+      })
+    }
+    return this.trueBaseUsers.get(`${email} loginLink`)
+  }
+
+  initUserAccounts() {
+    this.userPasswordPath = path.join(ignoreFolder, "trueBaseUsers.tree")
+    Disk.touch(this.userPasswordPath)
+    this.trueBaseUsers = new TreeNode(Disk.read(this.userPasswordPath))
+    const { app } = this
+    app.post("/sendLoginLink", async (req, res, next) => {
+      try {
+        const email = req.body.email
+        if (!Utils.isValidEmail(email))
+          throw new Error(`"${email}" is not a valid email.`)
+
+        const link = this.getOrCreateLoginLink(email)
+        if (this.isProd) await this.sendLoginEmail(email, link)
+        return res.send("OK")
+      } catch (err) {
+        console.error(err)
+        return res.status(500).send(err)
+      }
+    })
+
+    app.post("/login", (req, res, next) => {
+      const { email, password } = req.body
+      if (
+        Utils.isValidEmail(email) &&
+        this.trueBaseUsers.has(email) &&
+        this.trueBaseUsers.get(`${email} password`) === password
+      )
+        return res.send("OK")
+      return res.send("FAIL")
+    })
+  }
+
+  siteName = "PLDB.com"
+  siteDomain = "pldb.com"
+
+  async sendLoginEmail(email, link) {
+    const nodemailer = require("nodemailer")
+    const { siteDomain, siteName } = this
+
+    // Generate test SMTP service account from ethereal.email
+    // Only needed if you don't have a real mail account for testing
+    let testAccount = await nodemailer.createTestAccount()
+
+    // create reusable transporter object using the default SMTP transport
+    let transporter = nodemailer.createTransport({
+      host: "smtp.ethereal.email",
+      port: 587,
+      secure: false, // true for 465, false for other ports
+      auth: {
+        user: testAccount.user, // generated ethereal user
+        pass: testAccount.pass // generated ethereal password
+      }
+    })
+
+    // send mail with defined transport object
+    let info = await transporter.sendMail({
+      from: `"${siteName}" <feedbackwelcome@${siteDomain}>`,
+      to: email,
+      subject: `Your ${siteName} login link`,
+      text: link,
+      html: `<a href="${link}">${link}</a>`
+    })
+
+    console.log("Message sent: %s", info.messageId)
+    // Message sent: <b658f8ca-6296-ccf4-8306-87d57a0b4321@example.com>
+
+    // Preview only available when sending through an Ethereal account
+    console.log("Preview URL: %s", nodemailer.getTestMessageUrl(info))
+    // Preview URL: https://ethereal.email/message/WaQKMgKddxQDoou...
   }
 
   addRedirects(app) {
@@ -2638,7 +2729,9 @@ sandbox/lib/show-hint.js`.split("\n")
       "\n\n" +
       combineJsFiles(
         path.join(__dirname, "frontEndJavascript"),
-        `mousetrap.js autocomplete.js PLDBClientSideApp.js`.split(" ")
+        `jquery-3.4.1.min.js mousetrap.js autocomplete.js PLDBClientSideApp.js`.split(
+          " "
+        )
       )
 
     Disk.write(path.join(distFolder, "combined.js"), combinedJs)

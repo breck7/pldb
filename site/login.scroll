@@ -1,0 +1,9 @@
+import header.scroll
+title Logging in
+
+* Logging in...
+ id loginResult
+
+html <script>document.addEventListener("DOMContentLoaded", () => new TrueBaseFrontEndApp().attemptLoginCommand())</script>
+
+import footer.scroll

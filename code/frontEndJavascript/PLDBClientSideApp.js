@@ -16,6 +16,14 @@ const genDefaultAuthor = () => {
 	const hash = Utils.getRandomCharacters(7)
 	return `Anon <${`anon.${user}.${hash}`}@pldb.com>`
 }
+
+const localStorageKeys = {
+	staged: "staged",
+	author: "author",
+	email: "email",
+	password: "password"
+}
+
 const STAGED_KEY = "staged"
 const TEXTAREA_ID = "fileContent"
 
@@ -95,11 +103,87 @@ class TrueBaseFrontEndApp {
 		window.app = this
 	}
 
+	get loggedInUser() {
+		return this.store.getItem(localStorageKeys.email)
+	}
+
+	hideUserAccountsButtons() {
+		jQuery(".loggedIn,.notLoggedIn").hide()
+	}
+
+	revealUserAccountButtons() {
+		if (this.loggedInUser) {
+			jQuery(".loggedIn").show()
+			jQuery("#logoutButton").attr(
+				"title",
+				`Logout of ${this.store.getItem(localStorageKeys.email)}`
+			)
+		} else jQuery(".notLoggedIn").show()
+	}
+
+	logoutCommand() {
+		this.store.clear()
+		jQuery(".loginMessage").show()
+		jQuery(".loginMessage").html(`You are now logged out.`)
+		this.hideUserAccountsButtons()
+		this.revealUserAccountButtons()
+	}
+
+	attemptLoginCommand() {
+		const params = new URLSearchParams(window.location.search)
+		const email = params.get("email")
+		const password = params.get("password")
+		window.history.replaceState({}, null, "login.html")
+		if (this.loggedInUser) {
+			jQuery("#loginResult").html(
+				`You are already logged in as ${this.loggedInUser}`
+			)
+			return
+		}
+		if (!email || !password) {
+			jQuery("#loginResult").html(
+				`Email and password not in url. Try clicking your link again? If you think this is a bug please email loginProblems@pldb.com`
+			)
+			return
+		}
+		jQuery.post("/login", { email, password }, data => {
+			if (data === "OK") {
+				jQuery("#loginResult").html(`You are logged in as ${email}`)
+				this.store.setItem(localStorageKeys.email, email)
+				this.store.setItem(localStorageKeys.password, password)
+				this.hideUserAccountsButtons()
+				this.revealUserAccountButtons()
+			} else
+				jQuery("#loginResult").html(
+					"Sorry. Something went wrong. If you think this is a bug please email loginProblems@pldb.com"
+				)
+		})
+	}
+
+	verifyEmailAndSendLoginLinkCommand() {
+		// send link
+		const email = jQuery("#loginEmail").val()
+		const htmlEscapedEmail = Utils.htmlEscaped(email)
+		if (!Utils.isValidEmail(email)) {
+			jQuery(".loginMessage").show()
+			jQuery(".loginMessage").html(
+				`'${htmlEscapedEmail}' is not a valid email.`
+			)
+			return
+		}
+		jQuery(".notLoggedIn").hide()
+		jQuery.post("/sendLoginLink", { email }, data => {
+			jQuery(".loginMessage").show()
+			console.log(data)
+			jQuery(".loginMessage").html(`Login link sent to '${htmlEscapedEmail}'.`)
+		})
+	}
+
 	defaultAuthor = genDefaultAuthor()
 
 	get author() {
 		try {
-			return this.store.getItem("author") || this.defaultAuthor
+			return this.store.getItem(localStorageKeys.author) || this.defaultAuthor
 		} catch (err) {
 			console.error(err)
 		}
@@ -231,12 +315,12 @@ githubRepo https://github.com/elixir-lang/elixir</pre>`
 	}
 
 	setStage(str) {
-		this.store.setItem(STAGED_KEY, str)
+		this.store.setItem(localStorageKeys.staged, str)
 		document.getElementById("patch").value = str
 	}
 
 	get stagedFiles() {
-		const str = this.store.getItem(STAGED_KEY)
+		const str = this.store.getItem(localStorageKeys.staged)
 		return str ? new TreeNode(str) : new TreeNode()
 	}
 
@@ -323,7 +407,8 @@ githubRepo https://github.com/elixir-lang/elixir</pre>`
 
 	saveAuthorIfUnsaved() {
 		try {
-			if (!this.store.getItem("author")) this.saveAuthor(this.defaultAuthor)
+			if (!this.store.getItem(localStorageKeys.author))
+				this.saveAuthor(this.defaultAuthor)
 		} catch (err) {
 			console.error(err)
 		}
@@ -331,7 +416,7 @@ githubRepo https://github.com/elixir-lang/elixir</pre>`
 
 	saveAuthor(name) {
 		try {
-			this.store.setItem("author", name)
+			this.store.setItem(localStorageKeys.author, name)
 		} catch (err) {
 			console.error(err)
 		}
