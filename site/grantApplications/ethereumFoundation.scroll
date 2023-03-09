@@ -19,7 +19,7 @@ startColumns 3
 
 # Objectives
 * Collect data on all mainstream contract languages and expand our data on contract languages from our current 7 to over 30 with at least 100 facts on each, with a particularly focus on improving our data on Solidity.
- https://pldb.com/search?q=select+appeared+githubRepo.stars+website+lineCommentToken%0D%0Awhere+type+%3D+contractLanguage%0D%0Arename+githubRepo.stars+Stars%0D%0AsortBy+appeared current 7
+ https://pldb.com/search.html?q=select+appeared+githubRepo.stars+website+lineCommentToken%0D%0Awhere+type+%3D+contractLanguage%0D%0Arename+githubRepo.stars+Stars%0D%0AsortBy+appeared current 7
 
 # Outcomes
 * The core design team of Solidity will be able to frequently reference PLDB to figure out how they can improve the design of their language and better support their developer ecosystem. Other innovators in the Ethereum community will be able to explore other contract languages and perhaps invent the next great one.
