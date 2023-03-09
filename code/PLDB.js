@@ -2095,6 +2095,7 @@ class PLDBServer extends TrueBaseServer {
   }
 
   buildAllCommand() {
+    this.initSiteCommand()
     this.buildKeywordsImportsCommand()
     this.buildFeaturePagesCommand()
     this.buildScrollFilesFromPLDBFilesCommand()
