@@ -7,8 +7,7 @@ tableSearchNode
  javascript
   compile() {
    return `
-    <script src="../frontEndJavascript/jquery-3.4.1.min.js"></script>
-    <script src="../frontEndJavascript/jquery.dataTables.min.js"></script>
+    <script src="../jquery.dataTables.min.js"></script>
     <script>
       $(document).ready( function () {
       const urlSearchParams = new URLSearchParams(window.location.search)

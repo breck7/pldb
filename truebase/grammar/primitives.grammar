@@ -26,9 +26,10 @@ searchQueryCell
  extends stringCell
 yearCell
  extends intCell
-permalinkCell
+trueBaseIdCell
+ description A global identifier for this entity in a TrueBase. Currently a very restricted character set to ensure compatibility between a wide variety of URLs and filesystems.
+ regex [a-z0-9\-\.]+
  highlightScope string
- description An ID of a language on PLDB.
 externalGuidCell
  description A GUID from another site.
 errorNode
@@ -51,10 +52,10 @@ abstractArrayNode
  cells keywordCell
  listDelimiter  
 abstractPermalinksNode
- catchAllCellType permalinkCell
+ catchAllCellType trueBaseIdCell
  extends abstractArrayNode
  description Links to other entities on PLDB.
- boolean providesPermalinks true
+ boolean containsTrueBaseIds true
 abstractUrlNode
  cells keywordCell urlCell
  extends abstractFactNode

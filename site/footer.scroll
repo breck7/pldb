@@ -5,10 +5,10 @@ replaceJs BUILT_IN_YEAR dayjs().format("YYYY")
 
 stumpNoSnippet
  div
-  class pldbFooter
+  class trueBaseThemeFooter
   a PLDB
    href BASE_URL/index.html
-   class logoFont
+   class trueBaseThemeLogo
   span - Build the next great programming language
   span ·
   a Search
@@ -22,7 +22,7 @@ stumpNoSnippet
    href BASE_URL/pages/about.html
   span ·
   a Docs
-   href BASE_URL/pages/csvDocumentation.html
+   href BASE_URL/csv.html
   span ·
   a Acknowledgements
    href BASE_URL/pages/acknowledgements.html

@@ -15,27 +15,21 @@ code
 const path = require("path")
 const numeral = require("numeral")
 const lodash = require("lodash")
-const express = require("express")
-const simpleGit = require("simple-git")
 const dayjs = require("dayjs")
 
 const { TreeNode } = require("jtree/products/TreeNode.js")
 const { Utils } = require("jtree/products/Utils.js")
 const { shiftRight, removeReturnChars } = Utils
 const { Disk } = require("jtree/products/Disk.node.js")
-const { TrueBaseFolder, TrueBaseFile } = require("truebase/code/TrueBase.js")
-const {
-  TrueBaseServer,
-  SearchServer
-} = require("truebase/code/TrueBaseServer.js")
-const { ScrollFolder, ScrollFile } = require("scroll-cli")
+const { TrueBaseFolder, TrueBaseFile } = require("truebase/server/TrueBase.js")
+const { TrueBaseServer } = require("truebase/server/TrueBaseServer.js")
+const { ScrollFolder } = require("scroll-cli")
 
 const baseFolder = path.join(__dirname, "..")
 const ignoreFolder = path.join(baseFolder, "ignore")
 const truebaseFolder = path.join(baseFolder, "truebase")
-const nodeModulesFolder = path.join(baseFolder, "node_modules")
-const jtreeFolder = path.join(nodeModulesFolder, "jtree")
 const siteFolder = path.join(baseFolder, "site")
+const nodeModulesFolder = path.join(baseFolder, "node_modules")
 const distFolder = path.join(siteFolder, "dist")
 const pagesDir = path.join(siteFolder, "pages")
 const listsFolder = path.join(siteFolder, "lists")
@@ -60,49 +54,6 @@ const toCommaList = (arr, conjunction = "and") => {
 
 const currentYear = new Date().getFullYear()
 
-const lastCommitHashInFolder = (cwd = __dirname) =>
-  require("child_process")
-    .execSync("git rev-parse HEAD", {
-      cwd
-    })
-    .toString()
-    .trim()
-
-const GIT_DEFAULT_USERNAME = "PLDBBot"
-const GIT_DEFAULT_EMAIL = "bot@pldb.com"
-const GIT_DEFAULT_AUTHOR = `${GIT_DEFAULT_USERNAME} <${GIT_DEFAULT_EMAIL}>`
-
-const delimitedEscapeFunction = value =>
-  value.includes("\n") ? value.split("\n")[0] : value
-const delimiter = " DeLiM "
-
-const parseGitAuthor = (field = GIT_DEFAULT_AUTHOR) => {
-  const authorName = field
-    .split("<")[0]
-    .trim()
-    .replace(/[^a-zA-Z \.]/g, "")
-    .substr(0, 32)
-  const authorEmail = field
-    .split("<")[1]
-    .replace(">", "")
-    .trim()
-  return {
-    authorName,
-    authorEmail
-  }
-}
-
-const scrollHeader = new ScrollFile(
-  undefined,
-  path.join(siteFolder, "header.scroll")
-).importResults.code
-const scrollFooter = Disk.read(path.join(siteFolder, "footer.scroll"))
-
-const combineJsFiles = (baseDir = "", filepaths = []) =>
-  filepaths
-    .map(filename => Disk.read(path.join(baseDir, filename)))
-    .join(`;\n\n`)
-
 const getJoined = (node, keywords) => {
   const words = keywords
     .map(word => node.get(word) || "")
@@ -110,32 +61,6 @@ const getJoined = (node, keywords) => {
     .join(" ")
     .split(" ")
   return lodash.uniq(words).join(" ")
-}
-
-const buildImportsFile = (filepath, varMap) => {
-  Disk.writeIfChanged(
-    filepath,
-    `importOnly\n\n` +
-      Object.keys(varMap)
-        .map(key => {
-          let value = varMap[key]
-
-          if (value.rows)
-            return `replace ${key}
- pipeTable
-  ${new TreeNode(value.rows)
-    .toDelimited("|", value.header, false)
-    .replace(/\n/g, "\n  ")}`
-
-          value = value.toString()
-
-          if (!value.includes("\n")) return `replace ${key} ${value}`
-
-          return `replace ${key}
- ${value.replace(/\n/g, "\n ")}`
-        })
-        .join("\n\n")
-  )
 }
 
 // todo: move to grammar
@@ -215,35 +140,12 @@ class PLDBFile extends TrueBaseFile {
     return this.id
   }
 
-  get webPermalink() {
-    return `https://pldb.com/truebase/${this.permalink}`
-  }
-
   get filePath() {
     return this._getFilePath()
   }
 
-  get missingColumns() {
-    return this.parent.columnDocumentation
-      .filter(col => col.Description !== "computed")
-      .filter(col => !col.Column.includes("."))
-      .filter(col => !this.has(col.Column))
-  }
-
-  get missingRecommendedColumns() {
-    return this.missingColumns.filter(col => col.Recommended === true)
-  }
-
   get domainName() {
     return this.get("domainName")
-  }
-
-  get permalink() {
-    return this.id + ".html"
-  }
-
-  get link() {
-    return `<a href="${this.permalink}">${this.title}</a>`
   }
 
   get subredditId() {
@@ -275,27 +177,11 @@ class PLDBFile extends TrueBaseFile {
     return count
   }
 
-  get lowercase() {
-    return this.toString().toLowerCase()
-  }
-
-  get lowercaseNames() {
-    return this.names.map(name => name.toLowerCase())
-  }
-
-  get lowercaseTitle() {
-    return this.toString().toLowerCase()
-  }
-
   get hopl() {
     return this.get("hopl")?.replace(
       "https://hopl.info/showlanguage.prx?exp=",
       ""
     )
-  }
-
-  get filename() {
-    return this.id + ".pldb"
   }
 
   get names() {
@@ -334,7 +220,7 @@ class PLDBFile extends TrueBaseFile {
 
   get langRankDebug() {
     const obj = this.parent.getLanguageRankExplanation(this)
-    return `TotalRank: ${obj.totalRank} Jobs: ${obj.jobsRank} Users: ${obj.usersRank} Facts: ${obj.factsRank} Links: ${obj.inboundLinksRank}`
+    return `TotalRank: ${obj.totalRank} Jobs: ${obj.jobsRank} Users: ${obj.usersRank} Facts: ${obj.factsRank} Links: ${obj.pageRankLinksRank}`
   }
 
   get previousRanked() {
@@ -638,12 +524,6 @@ class PLDBFile extends TrueBaseFile {
     return lodash.startCase(type).toLowerCase()
   }
 
-  get factCount() {
-    return this.parsed
-      .getTopDownArray()
-      .filter(node => node.shouldSerialize !== false).length
-  }
-
   get lastActivity() {
     return lodash.max(
       this.parsed
@@ -652,11 +532,8 @@ class PLDBFile extends TrueBaseFile {
     )
   }
 
-  writeScrollFileIfChanged(folder) {
-    Disk.writeIfChanged(
-      path.join(folder, this.id + ".scroll"),
-      new LanguagePageTemplate(this).toScroll()
-    )
+  toScroll() {
+    return new LanguagePageTemplate(this).toScroll()
   }
 }
 
@@ -816,7 +693,7 @@ pipeTable
     if (!featuresTable.length) return ""
 
     const { featuresMap } = file.parent
-    const { pldbId } = file
+    const { id } = file
 
     const table = new TreeNode()
     featuresTable.forEach(node => {
@@ -825,7 +702,7 @@ pipeTable
         console.log(
           `warning: we need a features page for feature '${node.getWord(
             0
-          )}' found in '${pldbId}'`
+          )}' found in '${id}'`
         )
         return
       }
@@ -903,14 +780,14 @@ title ${title} - ${lodash.upperFirst(typeName)}
  hidden
 
 html
- <a class="prevLang" href="${this.prevPage}">&lt;</a>
- <a class="nextLang" href="${this.nextPage}">&gt;</a>
+ <a class="trueBaseThemePreviousItem" href="${this.prevPage}">&lt;</a>
+ <a class="trueBaseThemeNextItem" href="${this.nextPage}">&gt;</a>
 
 viewSourceUrl ${this.sourceUrl}
 
 startColumns 4
 
-html <div class="quickLinks">${this.quickLinks}</div>
+html <div class="trueBaseThemeQuickLinks">${this.quickLinks}</div>
 
 ${this.oneLiner}
 
@@ -1757,8 +1634,8 @@ title ${title} - language feature
  hidden
 
 html
- <a class="prevLang" href="${previous.permalink}">&lt;</a>
- <a class="nextLang" href="${next.permalink}">&gt;</a>
+ <a class="trueBaseThemePreviousItem" href="${previous.permalink}">&lt;</a>
+ <a class="trueBaseThemeNextItem" href="${next.permalink}">&gt;</a>
 
 viewSourceUrl https://github.com/breck7/pldb/blob/main/truebase/grammar/${fileName}
 
@@ -1787,7 +1664,7 @@ import ../footer.scroll
 }
 
 const calcRanks = (folder, files) => {
-  const { inboundLinks } = folder
+  const { pageRankLinks } = folder
   let objects = files.map(file => {
     const id = file.id
     const object = {}
@@ -1795,14 +1672,14 @@ const calcRanks = (folder, files) => {
     object.jobs = folder.predictNumberOfJobs(file)
     object.users = folder.predictNumberOfUsers(file)
     object.facts = file.factCount
-    object.inboundLinks = inboundLinks[id].length
+    object.pageRankLinks = pageRankLinks[id].length
     return object
   })
 
   objects = rankSort(objects, "jobs")
   objects = rankSort(objects, "users")
   objects = rankSort(objects, "facts")
-  objects = rankSort(objects, "inboundLinks")
+  objects = rankSort(objects, "pageRankLinks")
 
   objects.forEach((obj, rank) => {
     // Drop the item this does the worst on, as it may be a flaw in PLDB.
@@ -1810,7 +1687,7 @@ const calcRanks = (folder, files) => {
       obj.jobsRank,
       obj.usersRank,
       obj.factsRank,
-      obj.inboundLinksRank
+      obj.pageRankLinksRank
     ]
     obj.totalRank = lodash.sum(lodash.sortBy(top3).slice(0, 3))
   })
@@ -1900,27 +1777,6 @@ wikipedia`.split("\n")
 
   get filesWithInvalidFilenames() {
     return this.filter(file => file.id !== Utils.titleToPermalink(file.id))
-  }
-
-  get inboundLinks() {
-    if (this.quickCache.inBoundLinks) return this.quickCache.inBoundLinks
-
-    this.quickCache.inBoundLinks = {}
-    const inBoundLinks = this.quickCache.inBoundLinks
-    this.forEach(file => (inBoundLinks[file.id] = []))
-
-    this.forEach(file => {
-      file.linksToOtherFiles.forEach(link => {
-        if (!inBoundLinks[link])
-          throw new Error(
-            `Broken permalink in '${file.id}': No language "${link}" found`
-          )
-
-        inBoundLinks[link].push(file.id)
-      })
-    })
-
-    return inBoundLinks
   }
 
   searchForEntity(query) {
@@ -2126,23 +1982,6 @@ wikipedia`.split("\n")
     return this.quickCache.keywordsOneHotCsv
   }
 
-  get autocompleteJson() {
-    if (!this.quickCache.autocompleteJson)
-      this.quickCache.autocompleteJson = JSON.stringify(
-        this.objectsForCsv.map(object => {
-          return {
-            label: object.title,
-            appeared: parseInt(object.appeared),
-            id: object.pldbId,
-            url: `/truebase/${object.pldbId}.html`
-          }
-        }),
-        undefined,
-        2
-      )
-    return this.quickCache.autocompleteJson
-  }
-
   get keywordsOneHot() {
     if (this.quickCache.keywordsOneHot) return this.quickCache.keywordsOneHot
     const { keywordsTable } = this
@@ -2163,12 +2002,6 @@ wikipedia`.split("\n")
     rows.unshift(headerRow)
     this.quickCache.keywordsOneHot = rows
     return rows
-  }
-
-  get factCount() {
-    if (!this.quickCache.factCount)
-      this.quickCache.factCount = lodash.sum(this.map(file => file.factCount))
-    return this.quickCache.factCount
   }
 
   get keywordsTable() {
@@ -2224,99 +2057,22 @@ class PLDBServer extends TrueBaseServer {
   siteDomain = "pldb.com"
   distFolder = distFolder
   beforeListen() {
-    // todo: cleanup
-    this.editLogPath = path.join(ignoreFolder, "trueBaseServerLog.tree")
-    this.serveFolder(__dirname)
-    this.buildRunTimeGrammarsCommand()
-    this.initSearch()
-
-    this.notFoundPage = Disk.read(path.join(siteFolder, "custom_404.html"))
-
-    const { app } = this
-
-    this.initUserAccounts()
-
-    this.app.use(
+    this.serveFolderNested(
       "/monaco-editor",
-      express.static(path.join(nodeModulesFolder, "monaco-editor"))
+      path.join(nodeModulesFolder, "monaco-editor")
     )
+    // todo: cleanup
+    this.addRedirects(this.app)
+    super.beforeListen()
+    return this
+  }
 
-    const searchCache = {}
-    app.get("/search.html", (req, res) => {
-      const { searchServer } = this
-      const query = req.query.q ?? ""
-      searchServer.logQuery(query, req.ip, "scroll")
-      if (!searchCache[query]) searchCache[query] = this.searchToHtml(query)
-
-      res.send(searchCache[query])
-    })
-
-    app.get("/fullTextSearch", (req, res) =>
-      res.redirect(`/search.html?q=includes+${req.query.q}`)
-    )
-
-    app.get("/edit.json", (req, res) => {
-      const { id } = req.query
-      const file = this.folder.getFile(id)
-      if (!file) return res.send(JSON.stringify({ error: "Not found" }))
-      res.send(
-        JSON.stringify({
-          content: file.childrenToString(),
-          missingRecommendedColumns: file.missingRecommendedColumns,
-          next: file.nextRanked.id,
-          previous: file.previousRanked.id
-        })
-      )
-    })
-
-    app.post("/saveCommitAndPush", async (req, res) => {
-      const { author } = req.body
-      const patch = Utils.removeReturnChars(req.body.patch).trim()
-      this.appendToPostLog(author, patch)
-
-      try {
-        const { authorName, authorEmail } = parseGitAuthor(author)
-        if (!Utils.isValidEmail(authorEmail))
-          throw new Error(`Invalid email: "${Utils.htmlEscaped(authorEmail)}"`)
-
-        const changedFiles = this.applyPatch(patch)
-        const hash = await this.saveCommitAndPush(
-          changedFiles.map(file => file.filename),
-          authorName,
-          authorEmail
-        )
-        changedFiles.forEach(file =>
-          file.writeScrollFileIfChanged(trueBasePagesFolder)
-        )
-
-        res.redirect(`/thankYou.html?commit=${hash}`)
-      } catch (error) {
-        console.error(error)
-        res
-          .status(500)
-          .redirect(`/error.html?error=${encodeURIComponent(error)}`)
-      }
-    })
-
-    // Short urls:
-    app.get("/:id", (req, res, next) =>
-      this.folder.getFile(req.params.id.toLowerCase())
-        ? res
-            .status(302)
-            .redirect(`/truebase/${req.params.id.toLowerCase()}.html`)
-        : next()
-    )
-
+  addRedirects(app) {
     // /languages => /truebase redirect
     app.get("/languages/:id", (req, res, next) =>
       res.status(302).redirect(`/truebase/${req.params.id}`)
     )
 
-    this.addRedirects(app)
-    return this
-  }
-
-  addRedirects(app) {
     const redirects = Disk.read(path.join(siteFolder, "redirects.txt"))
       .split("\n")
       .map(line => {
@@ -2333,155 +2089,8 @@ class PLDBServer extends TrueBaseServer {
     )
   }
 
-  // todo: cleanup
-  searchToHtml(originalQuery) {
-    const {
-      hits,
-      queryTime,
-      columnNames,
-      errors,
-      title,
-      description
-    } = this.searchServer.search(
-      decodeURIComponent(originalQuery).replace(/\r/g, ""),
-      this.extendedTqlParser
-    )
-    const { folder } = this
-    const results = new TreeNode(hits)._toDelimited(
-      delimiter,
-      columnNames,
-      delimitedEscapeFunction
-    )
-    const encodedTitle = Utils.escapeScrollAndHtml(title)
-    const encodedDescription = Utils.escapeScrollAndHtml(description)
-    const encodedQuery = encodeURIComponent(originalQuery)
-
-    return new ScrollFile(
-      `${scrollHeader}
-
-title Search Results
- hidden
-
-html <form method="get" action="search.html" class="tqlForm"><textarea id="tqlInput" name="q"></textarea><input type="submit" value="Search"></form>
-html <div id="tqlErrors"></div>
-
-* Searched ${numeral(folder.length).format("0,0")} files and found ${
-        hits.length
-      } matches in ${queryTime}s. 
- class searchResultsHeader
-
-${title ? `# ${encodedTitle}` : ""}
-${description ? `* ${encodedDescription}` : ""}
-
-table ${delimiter}
- ${results.replace(/\n/g, "\n ")}
-
-* Results as JSON, CSV, TSV or Tree
- link search.json?q=${encodedQuery} JSON
- link search.csv?q=${encodedQuery} CSV
- link search.tsv?q=${encodedQuery} TSV
- link search.tree?q=${encodedQuery} Tree
-
-html <script>document.addEventListener("DOMContentLoaded", () => new TrueBaseFrontEndApp().renderSearchPage())</script>
-
-${scrollFooter}
-`
-    ).html
-  }
-
-  async saveCommitAndPush(filenames, authorName, authorEmail) {
-    const commitResult = await this.commitFilesPullAndPush(
-      filenames,
-      authorName,
-      authorEmail
-    )
-
-    return commitResult.commitHash
-  }
-
-  _git
-  get git() {
-    if (!this._git)
-      this._git = simpleGit({
-        baseDir: this.folder.dir,
-        binary: "git",
-        maxConcurrentProcesses: 1,
-        // Needed since git won't let you commit if there's no user name config present (i.e. CI), even if you always
-        // specify `author=` in every command. See https://stackoverflow.com/q/29685337/10670163 for example.
-        config: [
-          `user.name='${GIT_DEFAULT_USERNAME}'`,
-          `user.email='${GIT_DEFAULT_EMAIL}'`
-        ]
-      })
-    return this._git
-  }
-
-  async commitFilesPullAndPush(filenames, authorName, authorEmail) {
-    const commitMessage = filenames.join(" ")
-    if (!this.gitOn) {
-      console.log(
-        `Would commit "${commitMessage}" with author "${authorName} <${authorEmail}>"`
-      )
-      return {
-        success: true,
-        commitHash: `pretendCommitHash`
-      }
-    }
-    const { git } = this
-    try {
-      // git add
-      // git commit
-      // git pull --rebase
-      // git push
-
-      if (!Utils.isValidEmail(authorEmail))
-        throw new Error(`Invalid email: ${authorEmail}`)
-
-      // for (const filename of filenames) {
-      //   await git.add(filename)
-      // }
-
-      const commitResult = await git.commit(commitMessage, filenames, {
-        "--author": `${authorName} <${authorEmail}>`
-      })
-
-      await this.git.pull("origin", "main")
-      await git.push()
-
-      // todo: verify that this is the users commit
-      const commitHash = lastCommitHashInFolder()
-
-      return {
-        success: true,
-        commitHash
-      }
-    } catch (error) {
-      console.error(error)
-      return {
-        success: false,
-        error
-      }
-    }
-  }
-
-  appendToPostLog(author = "", content = "") {
-    // Write to log for backup in case something goes wrong.
-    Disk.append(
-      this.editLogPath,
-      `post
- time ${new Date().toString()}
- author ${author.replace(/\n/g, " ")}
- content
-  ${content.replace(/\n/g, "\n  ")}\n`
-    )
-  }
-
-  gitOn = false
-  isProd = false
-
   listenProd() {
     this.gitOn = true
-    this.isProd = true
     return super.listenProd()
   }
 
@@ -2491,7 +2100,6 @@ ${scrollFooter}
     this.buildScrollFilesFromPLDBFilesCommand()
     this.buildAcknowledgementsImportsCommand()
     this.buildCsvFilesCommand()
-    this.buildCsvDocumentationImportsCommand()
     this.buildTopListImports()
     this.buildExtensionsImports()
     this.buildFeaturesImports()
@@ -2499,15 +2107,12 @@ ${scrollFooter}
     this.buildCreatorsImports()
     this.buildHomepageImportsCommand()
     this.buildScrollsCommand()
-    this.buildRunTimeGrammarsCommand() // todo: cleanup
-    this.buildDistFolder()
   }
 
   buildKeywordsImportsCommand() {
-    const { keywordsTable } = this.folder
-    const { rows, langsWithKeywordsCount } = keywordsTable
+    const { rows, langsWithKeywordsCount } = this.folder.keywordsTable
 
-    buildImportsFile(path.join(listsFolder, "keywordsImports.scroll"), {
+    this.buildImportsFile(path.join(listsFolder, "keywordsImports.scroll"), {
       NUM_KEYWORDS: numeral(rows.length).format("0,0"),
       LANGS_WITH_KEYWORD_DATA: langsWithKeywordsCount,
       KEYWORDS_TABLE: {
@@ -2558,27 +2163,30 @@ ${scrollFooter}
     })
     npmPackages.sort()
 
-    buildImportsFile(path.join(pagesDir, "acknowledgementsImports.scroll"), {
-      WRITTEN_IN_TABLE: lodash
-        .sortBy(writtenIn, "rank")
-        .map(file => `- ${file.title}\n link ../truebase/${file.permalink}`)
-        .join("\n"),
-      PACKAGES_TABLE: npmPackages
-        .map(s => `- ${s}\n https://www.npmjs.com/package/${s}`)
-        .join("\n"),
-      SOURCES_TABLE: sources.map(s => `- ${s}\n https://${s}`).join("\n"),
-      CONTRIBUTORS_TABLE: JSON.parse(
-        Disk.read(path.join(pagesDir, "contributors.json"))
-      )
-        .filter(
-          item =>
-            item.login !== "codelani" &&
-            item.login !== "breck7" &&
-            item.login !== "pldbbot"
+    this.buildImportsFile(
+      path.join(pagesDir, "acknowledgementsImports.scroll"),
+      {
+        WRITTEN_IN_TABLE: lodash
+          .sortBy(writtenIn, "rank")
+          .map(file => `- ${file.title}\n link ../truebase/${file.permalink}`)
+          .join("\n"),
+        PACKAGES_TABLE: npmPackages
+          .map(s => `- ${s}\n https://www.npmjs.com/package/${s}`)
+          .join("\n"),
+        SOURCES_TABLE: sources.map(s => `- ${s}\n https://${s}`).join("\n"),
+        CONTRIBUTORS_TABLE: JSON.parse(
+          Disk.read(path.join(pagesDir, "contributors.json"))
         )
-        .map(item => `- ${item.login}\n ${item.html_url}`)
-        .join("\n")
-    })
+          .filter(
+            item =>
+              item.login !== "codelani" &&
+              item.login !== "breck7" &&
+              item.login !== "pldbbot"
+          )
+          .map(item => `- ${item.login}\n ${item.html_url}`)
+          .join("\n")
+      }
+    )
   }
 
   buildCsvFilesCommand() {
@@ -2591,73 +2199,25 @@ ${scrollFooter}
         new TreeNode(folder.objectsForCsv.filter(obj => isLanguage(obj.type)))
       )
     )
-  }
 
-  buildCsvDocumentationImportsCommand() {
-    const folder = this.folder
-    buildImportsFile(path.join(pagesDir, "csvDocumentationImports.scroll"), {
-      LANG_COUNT: folder.topLanguages.length,
-      APPROXIMATE_FACT_COUNT: numeral(folder.factCount).format("0,0a"),
-      COL_COUNT: folder.colNamesForCsv.length,
-      ENTITY_COUNT: folder.length,
-      ENTITIES_FILE_SIZE_UNCOMPRESSED: numeral(
-        folder.makeCsv("pldb.csv").length
-      ).format("0.0b"),
-      LANGS_FILE_SIZE_UNCOMPRESSED: numeral(
-        folder.makeCsv("langs.csv").length
-      ).format("0.0b"),
-      COLUMN_METADATA_TABLE: {
-        header: folder.columnsCsvOutput.columnMetadataColumnNames,
-        rows: folder.columnsCsvOutput.columnsMetadataTree
+    this.buildImportsFile(
+      path.join(pagesDir, "csvDocumentationImports.scroll"),
+      {
+        LANG_COUNT: folder.topLanguages.length,
+        APPROXIMATE_FACT_COUNT: numeral(folder.factCount).format("0,0a"),
+        COL_COUNT: folder.colNamesForCsv.length,
+        ENTITY_COUNT: folder.length,
+        ENTITIES_FILE_SIZE_UNCOMPRESSED: numeral(
+          folder.makeCsv("pldb.csv").length
+        ).format("0.0b"),
+        LANGS_FILE_SIZE_UNCOMPRESSED: numeral(
+          folder.makeCsv("langs.csv").length
+        ).format("0.0b"),
+        COLUMN_METADATA_TABLE: {
+          header: folder.columnsCsvOutput.columnMetadataColumnNames,
+          rows: folder.columnsCsvOutput.columnsMetadataTree
+        }
       }
-    })
-  }
-
-  buildDistFolder() {
-    const folder = this.folder
-    this.buildRunTimeGrammarsCommand()
-
-    Disk.write(
-      path.join(distFolder, "autocomplete.json"),
-      folder.autocompleteJson
-    )
-    Disk.write(
-      path.join(distFolder, "keywordsOneHot.csv"),
-      folder.keywordsOneHotCsv
-    )
-    Disk.write(path.join(siteFolder, "pldb.json"), folder.typedMapJson)
-
-    const combinedJs =
-      combineJsFiles(
-        path.join(jtreeFolder),
-        `products/Utils.browser.js
-products/TreeNode.browser.js
-products/GrammarLanguage.browser.js
-products/GrammarCodeMirrorMode.browser.js
-sandbox/lib/codemirror.js
-sandbox/lib/show-hint.js`.split("\n")
-      ) +
-      "\n\n" +
-      combineJsFiles(distFolder, "pldb.browser.js tql.browser.js".split(" ")) +
-      "\n\n" +
-      combineJsFiles(
-        path.join(__dirname, "frontEndJavascript"),
-        `jquery-3.4.1.min.js mousetrap.js autocomplete.js PLDBClientSideApp.js`.split(
-          " "
-        )
-      )
-
-    Disk.write(path.join(distFolder, "combined.js"), combinedJs)
-
-    const filepaths = [
-      path.join(siteFolder, "scroll.css"),
-      path.join(jtreeFolder, "sandbox/lib/codemirror.css"),
-      path.join(jtreeFolder, "sandbox/lib/codemirror.show-hint.css"),
-      path.join(siteFolder, "style.css")
-    ]
-    Disk.write(
-      path.join(distFolder, "combined.css"),
-      filepaths.map(Disk.read).join(`\n\n`)
     )
   }
 
@@ -2687,7 +2247,10 @@ sandbox/lib/show-hint.js`.split("\n")
         })
     )
 
-    buildImportsFile(path.join(listsFolder, "topLangsImports.scroll"), vars)
+    this.buildImportsFile(
+      path.join(listsFolder, "topLangsImports.scroll"),
+      vars
+    )
   }
 
   buildExtensionsImports() {
@@ -2715,7 +2278,7 @@ sandbox/lib/show-hint.js`.split("\n")
 
     const rows = lodash.sortBy(files, "rank")
 
-    buildImportsFile(path.join(listsFolder, "extensionsImports.scroll"), {
+    this.buildImportsFile(path.join(listsFolder, "extensionsImports.scroll"), {
       EXTENSION_COUNT: numeral(allExtensions.size).format("0,0"),
       TABLE: {
         rows,
@@ -2730,7 +2293,7 @@ sandbox/lib/show-hint.js`.split("\n")
 
     const summaries = topFeatures.map(feature => feature.summary)
 
-    buildImportsFile(path.join(listsFolder, "allFeaturesImports.scroll"), {
+    this.buildImportsFile(path.join(listsFolder, "allFeaturesImports.scroll"), {
       COUNT: numeral(summaries.length).format("0,0"),
       TABLE: {
         rows: summaries,
@@ -2747,7 +2310,7 @@ sandbox/lib/show-hint.js`.split("\n")
 
     const atLeast10 = summaries.filter(feature => feature.measurements > 9)
 
-    buildImportsFile(path.join(listsFolder, "featuresImports.scroll"), {
+    this.buildImportsFile(path.join(listsFolder, "featuresImports.scroll"), {
       COUNT: numeral(atLeast10.length).format("0,0"),
       TABLE: {
         rows: atLeast10,
@@ -2787,7 +2350,7 @@ sandbox/lib/show-hint.js`.split("\n")
     const sorted = lodash.sortBy(rows, ["count", "top"])
     sorted.reverse()
 
-    buildImportsFile(
+    this.buildImportsFile(
       path.join(listsFolder, "originCommunitiesImports.scroll"),
       {
         TABLE: {
@@ -2830,7 +2393,7 @@ sandbox/lib/show-hint.js`.split("\n")
       }
     })
 
-    buildImportsFile(path.join(listsFolder, "creatorsImports.scroll"), {
+    this.buildImportsFile(path.join(listsFolder, "creatorsImports.scroll"), {
       TABLE: {
         rows: lodash.sortBy(rows, "topRank"),
         header: ["name", "languages", "count", "topRank"]
@@ -2842,7 +2405,7 @@ sandbox/lib/show-hint.js`.split("\n")
   buildHomepageImportsCommand() {
     const postsScroll = new ScrollFolder(postsFolder)
 
-    buildImportsFile(path.join(siteFolder, "homepageImports.scroll"), {
+    this.buildImportsFile(path.join(siteFolder, "homepageImports.scroll"), {
       TOP_LANGS: this.folder.topLanguages
         .slice(0, 10)
         .map(file => `<a href="./truebase/${file.permalink}">${file.title}</a>`)
@@ -2874,51 +2437,6 @@ sandbox/lib/show-hint.js`.split("\n")
         )
       }
     })
-  }
-
-  // new PLDBServerCommands().changeListDelimiterCommand("originCommunity", " && ")
-  changeListDelimiterCommand(field, newDelimiter) {
-    this.folder.forEach(file => {
-      const hit = file.getNode(field)
-      if (hit) {
-        const parsed = file.parsed.getNode(field)
-        hit.setContent(parsed.list.join(newDelimiter))
-        file.save()
-      }
-    })
-  }
-
-  // new PLDBServerCommands().rename("cpp", "cPlusPlus")
-  rename(oldId, newId) {
-    this.folder.rename(oldId, newId)
-  }
-
-  // new PLDBServerCommands().replaceListItems("originCommunity", { "Apple Inc": "Apple" })
-  replaceListItems(field, replacementMap) {
-    const keys = Object.keys(replacementMap)
-    const delimiter = " && "
-    this.folder.forEach(file => {
-      const value = file.get(field)
-      if (!value) return
-
-      const values = value
-        .split(delimiter)
-        .map(value => (replacementMap[value] ? replacementMap[value] : value))
-
-      const joined = values.join(delimiter)
-      if (joined === value) return
-
-      file.set(field, joined)
-      file.prettifyAndSave()
-    })
-  }
-
-  searchCommand() {
-    console.log(
-      new SearchServer(this.folder, ignoreFolder).csv(
-        process.argv.slice(3).join(" ")
-      )
-    )
   }
 
   async crawlGitHubCommand() {

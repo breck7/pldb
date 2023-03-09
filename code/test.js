@@ -84,7 +84,7 @@ testTree.ensureGoodFilenames = areEqual => {
 
 testTree.ensureNoBrokenPermalinks = areEqual => {
 	areEqual(
-		!!PLDB.folder.inboundLinks,
+		!!PLDB.folder.pageRankLinks,
 		true,
 		"should not throw because of broken permalink"
 	)

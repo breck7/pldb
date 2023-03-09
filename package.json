@@ -46,15 +46,12 @@
   ],
   "homepage": "https://pldb.com",
   "dependencies": {
-    "autocompleter": "^7.1.0",
     "dayjs": "^1.11.7",
-    "express": "^4.18.2",
     "jtree": "^69.3.1",
     "lodash": "^4.17.21",
     "monaco-editor": "^0.34.1",
     "numeral": "^2.0.6",
     "scroll-cli": "^59.3.0",
-    "simple-git": "^3.16.0",
-    "truebase": "^6.1.1"
+    "truebase": "^7.2.0"
   }
 }

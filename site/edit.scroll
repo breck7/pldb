@@ -1,9 +1,0 @@
-import header.scroll
-title Edit file
- id pageTitle
-
-html <div id="formHolder"></div>
-
-html <script>document.addEventListener("DOMContentLoaded", () => new TrueBaseFrontEndApp().renderEditPage())</script>
-
-import footer.scroll

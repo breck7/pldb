@@ -1,9 +1,13 @@
 importOnly
 
 replaceDefault BASE_URL 
+replace SITE_NAME PLDB
+replace TRUEBASE_ID pldb
+replace DOMAIN_NAME pldb.com
+replace GIT_URL https://github.com/breck7/pldb
 
 description PLDB: a Programming Language Database. Build the next great programming language.
-git https://github.com/breck7/pldb
+git GIT_URL
 viewSourceBaseUrl https://github.com/breck7/pldb/blob/main/site/
 email feedback@pldb.com
 baseUrl https://pldb.com/
