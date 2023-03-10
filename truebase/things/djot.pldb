@@ -19,6 +19,72 @@ writtenIn lua
 influencedBy commonmark
 successorOf commonmark
 
+multiLineCommentTokens {% %}
+
+example
+ _italic_
+ *bold*
+ `code`
+ H~2~O
+ 20^th^
+ {=highlighted=}
+ {+underlined+}
+ {-strikethrough-}
+ $`p = mv`
+ 
+ $$`E = K + U`
+ 
+ Start a new paragraph with a blank line.
+ 
+ > A blockquote
+ 
+ {% look like this
+ and can span multiple lines %}
+ 
+ # Horizontal lines:
+ ***
+ ---
+ 
+ Verbatim blocks:
+ 
+ ```
+ $ tree
+ .
+ ├── aa
+ │   └── foo.txt
+ ├── bb
+ │   └── bar.txt
+ └── c.png
+ ```
+ 
+ ```myLang
+ func say-hello(nm) {
+     print("hello ${nm}!");
+ }
+ ```
+ 
+ Links:
+ <https://example.com>
+ [read more](https://example.com)
+ [read this too][foo bar]
+ [one more link][]
+ 
+ 
+ ![beautiful skyline](clouds.jpg)
+ ![coastal shores][shore]
+ ![lush forests][]
+ 
+ [shore]: the-beach.jpg
+ [lush forests]: pines.jpg
+ 
+ # Tables
+ 
+ | Name | Size | Color |
+ | --- | --- | --- |
+ | lime | small | green |
+ | orange | medium | orange |
+ | grapefruit | large | yellow or pink |
+
 githubRepo https://github.com/jgm/djot
  firstCommit 2022
  stars 773
