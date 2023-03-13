@@ -2095,23 +2095,22 @@ class PLDBServer extends TrueBaseServer {
 
   warmAll() {
     super.warmAll()
-    this.buildKeywordsImportsCommand()
-    this.buildFeaturePagesCommand()
-    this.buildScrollFilesFromPLDBFilesCommand()
-    this.buildAcknowledgementsImportsCommand()
-    this.buildCsvFilesCommand()
-    this.buildTopListImports()
-    this.buildExtensionsImports()
-    this.buildFeaturesImports()
-    this.buildOriginCommunitiesImports()
-    this.buildCreatorsImports()
-    this.buildHomepageImportsCommand()
+    this.warmKeywordsImportsCommand()
+    this.warmFeaturePagesCommand()
+    this.warmAcknowledgementsImportsCommand()
+    this.warmCsvFilesCommand()
+    this.warmTopListImports()
+    this.warmExtensionsImports()
+    this.warmFeaturesImports()
+    this.warmOriginCommunitiesImports()
+    this.warmCreatorsImports()
+    this.warmHomepageImportsCommand()
   }
 
-  buildKeywordsImportsCommand() {
+  warmKeywordsImportsCommand() {
     const { rows, langsWithKeywordsCount } = this.folder.keywordsTable
 
-    this.buildImportsFile(path.join(listsFolder, "keywordsImports.scroll"), {
+    this.makeVarSection(path.join(listsFolder, "keywordsImports.scroll"), {
       NUM_KEYWORDS: numeral(rows.length).format("0,0"),
       LANGS_WITH_KEYWORD_DATA: langsWithKeywordsCount,
       KEYWORDS_TABLE: {
@@ -2121,7 +2120,7 @@ class PLDBServer extends TrueBaseServer {
     })
   }
 
-  buildFeaturePagesCommand() {
+  warmFeaturePagesCommand() {
     this.folder.features.forEach(feature =>
       Disk.writeIfChanged(
         path.join(featuresFolder, `${feature.id}.scroll`),
@@ -2130,13 +2129,7 @@ class PLDBServer extends TrueBaseServer {
     )
   }
 
-  buildScrollFilesFromPLDBFilesCommand() {
-    this.folder.forEach(file =>
-      file.writeScrollFileIfChanged(trueBasePagesFolder)
-    )
-  }
-
-  buildAcknowledgementsImportsCommand() {
+  warmAcknowledgementsImportsCommand() {
     const { sources } = this.folder
     let writtenIn = [
       "javascript",
@@ -2162,33 +2155,30 @@ class PLDBServer extends TrueBaseServer {
     })
     npmPackages.sort()
 
-    this.buildImportsFile(
-      path.join(pagesDir, "acknowledgementsImports.scroll"),
-      {
-        WRITTEN_IN_TABLE: lodash
-          .sortBy(writtenIn, "rank")
-          .map(file => `- ${file.title}\n link ../truebase/${file.permalink}`)
-          .join("\n"),
-        PACKAGES_TABLE: npmPackages
-          .map(s => `- ${s}\n https://www.npmjs.com/package/${s}`)
-          .join("\n"),
-        SOURCES_TABLE: sources.map(s => `- ${s}\n https://${s}`).join("\n"),
-        CONTRIBUTORS_TABLE: JSON.parse(
-          Disk.read(path.join(pagesDir, "contributors.json"))
+    this.makeVarSection(path.join(pagesDir, "acknowledgementsImports.scroll"), {
+      WRITTEN_IN_TABLE: lodash
+        .sortBy(writtenIn, "rank")
+        .map(file => `- ${file.title}\n link ../truebase/${file.permalink}`)
+        .join("\n"),
+      PACKAGES_TABLE: npmPackages
+        .map(s => `- ${s}\n https://www.npmjs.com/package/${s}`)
+        .join("\n"),
+      SOURCES_TABLE: sources.map(s => `- ${s}\n https://${s}`).join("\n"),
+      CONTRIBUTORS_TABLE: JSON.parse(
+        Disk.read(path.join(pagesDir, "contributors.json"))
+      )
+        .filter(
+          item =>
+            item.login !== "codelani" &&
+            item.login !== "breck7" &&
+            item.login !== "pldbbot"
         )
-          .filter(
-            item =>
-              item.login !== "codelani" &&
-              item.login !== "breck7" &&
-              item.login !== "pldbbot"
-          )
-          .map(item => `- ${item.login}\n ${item.html_url}`)
-          .join("\n")
-      }
-    )
+        .map(item => `- ${item.login}\n ${item.html_url}`)
+        .join("\n")
+    })
   }
 
-  buildCsvFilesCommand() {
+  warmCsvFilesCommand() {
     super.buildCsvFilesCommand()
     const folder = this.folder
     Disk.writeIfChanged(
@@ -2199,28 +2189,25 @@ class PLDBServer extends TrueBaseServer {
       )
     )
 
-    this.buildImportsFile(
-      path.join(pagesDir, "csvDocumentationImports.scroll"),
-      {
-        LANG_COUNT: folder.topLanguages.length,
-        APPROXIMATE_FACT_COUNT: numeral(folder.factCount).format("0,0a"),
-        COL_COUNT: folder.colNamesForCsv.length,
-        ENTITY_COUNT: folder.length,
-        ENTITIES_FILE_SIZE_UNCOMPRESSED: numeral(
-          folder.makeCsv("pldb.csv").length
-        ).format("0.0b"),
-        LANGS_FILE_SIZE_UNCOMPRESSED: numeral(
-          folder.makeCsv("langs.csv").length
-        ).format("0.0b"),
-        COLUMN_METADATA_TABLE: {
-          header: folder.columnsCsvOutput.columnMetadataColumnNames,
-          rows: folder.columnsCsvOutput.columnsMetadataTree
-        }
+    this.makeVarSection(path.join(pagesDir, "csvDocumentationImports.scroll"), {
+      LANG_COUNT: folder.topLanguages.length,
+      APPROXIMATE_FACT_COUNT: numeral(folder.factCount).format("0,0a"),
+      COL_COUNT: folder.colNamesForCsv.length,
+      ENTITY_COUNT: folder.length,
+      ENTITIES_FILE_SIZE_UNCOMPRESSED: numeral(
+        folder.makeCsv("pldb.csv").length
+      ).format("0.0b"),
+      LANGS_FILE_SIZE_UNCOMPRESSED: numeral(
+        folder.makeCsv("langs.csv").length
+      ).format("0.0b"),
+      COLUMN_METADATA_TABLE: {
+        header: folder.columnsCsvOutput.columnMetadataColumnNames,
+        rows: folder.columnsCsvOutput.columnsMetadataTree
       }
-    )
+    })
   }
 
-  buildTopListImports() {
+  warmTopListImports() {
     const files = this.folder.topLanguages.map(file => {
       const appeared = file.get("appeared")
       const rank = file.languageRank + 1
@@ -2246,15 +2233,12 @@ class PLDBServer extends TrueBaseServer {
         })
     )
 
-    this.buildImportsFile(
-      path.join(listsFolder, "topLangsImports.scroll"),
-      vars
-    )
+    this.makeVarSection(path.join(listsFolder, "topLangsImports.scroll"), vars)
   }
 
-  buildExtensionsImports() {
+  warmExtensionsImports() {
     const files = this.folder
-      .filter(file => file.get("type") !== "feature")
+      .filter(file => file.extensions)
       .map(file => {
         return {
           name: file.title,
@@ -2263,36 +2247,32 @@ class PLDBServer extends TrueBaseServer {
           extensions: file.extensions
         }
       })
-      .filter(file => file.extensions)
 
     const allExtensions = new Set()
     files.forEach(file =>
       file.extensions.split(" ").forEach(ext => allExtensions.add(ext))
     )
 
-    files.forEach(file => {
-      let extensionsLength = file.extensions.split(" ").length
-      file.numberOfExtensions = extensionsLength
-    })
+    files.forEach(
+      file => (file.numberOfExtensions = file.extensions.split(" ").length)
+    )
 
-    const rows = lodash.sortBy(files, "rank")
-
-    this.buildImportsFile(path.join(listsFolder, "extensionsImports.scroll"), {
+    this.makeVarSection(path.join(listsFolder, "extensionsImports.scroll"), {
       EXTENSION_COUNT: numeral(allExtensions.size).format("0,0"),
       TABLE: {
-        rows,
+        rows: lodash.sortBy(files, "rank"),
         header: ["name", "nameLink", "extensions", "numberOfExtensions"]
       },
       LANG_WITH_DATA_COUNT: files.length
     })
   }
 
-  buildFeaturesImports() {
+  warmFeaturesImports() {
     const { topFeatures } = this.folder
 
     const summaries = topFeatures.map(feature => feature.summary)
 
-    this.buildImportsFile(path.join(listsFolder, "allFeaturesImports.scroll"), {
+    this.makeVarSection(path.join(listsFolder, "allFeaturesImports.scroll"), {
       COUNT: numeral(summaries.length).format("0,0"),
       TABLE: {
         rows: summaries,
@@ -2309,7 +2289,7 @@ class PLDBServer extends TrueBaseServer {
 
     const atLeast10 = summaries.filter(feature => feature.measurements > 9)
 
-    this.buildImportsFile(path.join(listsFolder, "featuresImports.scroll"), {
+    this.makeVarSection(path.join(listsFolder, "featuresImports.scroll"), {
       COUNT: numeral(atLeast10.length).format("0,0"),
       TABLE: {
         rows: atLeast10,
@@ -2325,7 +2305,7 @@ class PLDBServer extends TrueBaseServer {
     })
   }
 
-  buildOriginCommunitiesImports() {
+  warmOriginCommunitiesImports() {
     const files = lodash.sortBy(
       this.folder.filter(
         file => file.isLanguage && file.originCommunity.length
@@ -2349,7 +2329,7 @@ class PLDBServer extends TrueBaseServer {
     const sorted = lodash.sortBy(rows, ["count", "top"])
     sorted.reverse()
 
-    this.buildImportsFile(
+    this.makeVarSection(
       path.join(listsFolder, "originCommunitiesImports.scroll"),
       {
         TABLE: {
@@ -2361,7 +2341,7 @@ class PLDBServer extends TrueBaseServer {
     )
   }
 
-  buildCreatorsImports() {
+  warmCreatorsImports() {
     const entities = this.folder.groupByListValues(
       "creators",
       this.folder.filter(file => file.isLanguage),
@@ -2392,7 +2372,7 @@ class PLDBServer extends TrueBaseServer {
       }
     })
 
-    this.buildImportsFile(path.join(listsFolder, "creatorsImports.scroll"), {
+    this.makeVarSection(path.join(listsFolder, "creatorsImports.scroll"), {
       TABLE: {
         rows: lodash.sortBy(rows, "topRank"),
         header: ["name", "languages", "count", "topRank"]
@@ -2401,10 +2381,10 @@ class PLDBServer extends TrueBaseServer {
     })
   }
 
-  buildHomepageImportsCommand() {
+  warmHomepageImportsCommand() {
     const postsScroll = new ScrollFolder(postsFolder)
 
-    this.buildImportsFile(path.join(siteFolder, "homepageImports.scroll"), {
+    this.makeVarSection(path.join(siteFolder, "homepageImports.scroll"), {
       TOP_LANGS: this.folder.topLanguages
         .slice(0, 10)
         .map(file => `<a href="./truebase/${file.permalink}">${file.title}</a>`)
