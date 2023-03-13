@@ -27,7 +27,6 @@ const { ScrollFolder } = require("scroll-cli")
 
 const baseFolder = path.join(__dirname, "..")
 const ignoreFolder = path.join(baseFolder, "ignore")
-const truebaseFolder = path.join(baseFolder, "truebase")
 const siteFolder = path.join(baseFolder, "site")
 const nodeModulesFolder = path.join(baseFolder, "node_modules")
 const distFolder = path.join(siteFolder, "dist")
@@ -787,7 +786,7 @@ viewSourceUrl ${this.sourceUrl}
 
 startColumns 4
 
-html <div class="trueBaseThemeQuickLinks">${this.quickLinks}</div>
+<div class="trueBaseThemeQuickLinks">${this.quickLinks}</div>
 
 ${this.oneLiner}
 
@@ -803,7 +802,7 @@ ${this.descriptionSection}
 
 ${this.factsSection}
 
-html <br>
+<br>
 
 ${this.exampleSection}
 
@@ -2094,8 +2093,8 @@ class PLDBServer extends TrueBaseServer {
     return super.listenProd()
   }
 
-  buildAllCommand() {
-    this.initSiteCommand()
+  warmAll() {
+    super.warmAll()
     this.buildKeywordsImportsCommand()
     this.buildFeaturePagesCommand()
     this.buildScrollFilesFromPLDBFilesCommand()
@@ -2107,7 +2106,6 @@ class PLDBServer extends TrueBaseServer {
     this.buildOriginCommunitiesImports()
     this.buildCreatorsImports()
     this.buildHomepageImportsCommand()
-    this.buildScrollsCommand()
   }
 
   buildKeywordsImportsCommand() {
@@ -2414,32 +2412,6 @@ class PLDBServer extends TrueBaseServer {
     })
   }
 
-  buildScrollsCommand() {
-    const folders = [
-      siteFolder,
-      listsFolder,
-      trueBasePagesFolder,
-      pagesDir,
-      postsFolder,
-      featuresFolder
-    ]
-    const didSiteFolderChange = new ScrollFolder(siteFolder).buildNeeded
-    folders.forEach(folderPath => {
-      const folder = new ScrollFolder(folderPath).silence()
-      if (didSiteFolderChange) {
-        folder.buildFiles()
-        console.log(
-          `Ran scroll build in ${folderPath} because site folder changed`
-        )
-      } else if (folder.buildNeeded) {
-        folder.buildFiles()
-        console.log(
-          `Ran scroll build in ${folderPath} because site folder changed`
-        )
-      }
-    })
-  }
-
   async crawlGitHubCommand() {
     // Todo: figuring out best repo orgnization for crawlers.
     // Note: this currently assumes you have treecrawler project installed separateely.
@@ -2450,11 +2422,11 @@ class PLDBServer extends TrueBaseServer {
   }
 }
 
-const pldbBase = new PLDBFolder()
-  .setDir(path.join(truebaseFolder, "things"))
-  .setGrammarDir(path.join(truebaseFolder, "grammar"))
+const pldbFolder = new PLDBFolder()
+  .setDir(path.join(baseFolder, "things"))
+  .setGrammarDir(path.join(baseFolder, "grammar"))
 
-const PLDB = new PLDBServer(pldbBase, ignoreFolder, siteFolder)
+const PLDB = new PLDBServer(path.join(baseFolder, "pldb.truebase"), pldbFolder)
 
 module.exports = { PLDB }
 

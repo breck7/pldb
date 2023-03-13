@@ -3,7 +3,7 @@ import header.scroll
 title PLDB: a Programming Language DataBase
  hidden
 
-html <center>
+<center>
 
 # %~P~rogramming ~L~anguage ~D~ata~B~ase%
  wrap ~ span style="color:black;"
@@ -17,19 +17,19 @@ replace BASE_URL .
 
 import homepageImports.scroll
 
-html <a class="pldbHomepageLink" href="./lists/top1000.html">Top Languages</a>
+<a class="pldbHomepageLink" href="./lists/top1000.html">Top Languages</a>
 * TOP_LANGS
 
-html <br><a class="pldbHomepageLink" href="./posts/index.html">New Posts</a>
-html <p class="scrollParagraphComponent">
+<br><a class="pldbHomepageLink" href="./posts/index.html">New Posts</a>
+<p class="scrollParagraphComponent">
 loop
  groups posts/frontpage
  join <br>
  limit 5
  javascript `<a href="${item.relativeLink}">${item.title}</a>`
 
-html </p><br><a href="./pages/write-for-pldb.html">Write for PLDB</a>
+</p><br><a href="./pages/write-for-pldb.html">Write for PLDB</a>
 
-html </center>
+</center>
 
 import footer.scroll

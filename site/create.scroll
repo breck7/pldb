@@ -1,8 +1,8 @@
 import header.scroll
 title Add a language
 
-html <div id="formHolder"></div>
+<div id="formHolder"></div>
 
-html <script>document.addEventListener("DOMContentLoaded", () => new TrueBaseBrowserApp().renderCreatePage())</script>
+<script>document.addEventListener("DOMContentLoaded", () => new TrueBaseBrowserApp().renderCreatePage())</script>
 
 import footer.scroll

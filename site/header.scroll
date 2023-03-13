@@ -32,9 +32,9 @@ stumpNoSnippet
  link
   rel stylesheet
   type text/css
-  href BASE_URL/dist/combined.css
+  href BASE_URL/combined.css
  script
-  src BASE_URL/dist/combined.js
+  src BASE_URL/combined.js
  div
   class trueBaseThemeHeader doNotPrint
   a PLDB
@@ -93,4 +93,4 @@ stumpNoSnippet
   class trueBaseThemeGitHubTopRight
   href https://github.com/breck7/pldb
 
-html <script>document.addEventListener("DOMContentLoaded", () => new TrueBaseBrowserApp().render().revealUserAccountButtons())</script>
+<script>document.addEventListener("DOMContentLoaded", () => new TrueBaseBrowserApp().render().revealUserAccountButtons())</script>

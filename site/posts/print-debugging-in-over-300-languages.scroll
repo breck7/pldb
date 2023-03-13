@@ -155,7 +155,7 @@ comment
 
 comment
   printDebug() {
-    pldbBase.loadFolder()
+    pldbFolder.loadFolder()
     const code = new TreeNode(
       Disk.read(
         __dirname + "/blog/posts/does-every-programming-language-support-print-debugging.scroll"
@@ -179,7 +179,7 @@ comment
           item.Count = item.Languages.length
           item.Languages = item.Languages.map(
             item =>
-              `<a href='truebase/${pldbBase.searchForEntity(
+              `<a href='truebase/${pldbFolder.searchForEntity(
                 item
               )}.html'>${item}</a>`
           ).join(" ")

@@ -50,10 +50,10 @@ commaTable
 
 comment
   singleLetter() {
-    pldbBase.loadFolder()
+    pldbFolder.loadFolder()
     const results = "aplus b c d e f-sharp labview h-lang i j k l mumps n o p q r s t u v w x y z"
       .split(" ")
-      .map(letter => pldbBase.getFile(letter))
+      .map(letter => pldbFolder.getFile(letter))
       .map((file: any) => {
         return {
           title: file.title,
