@@ -1,10 +1,9 @@
 {
   "name": "pldb",
-  "version": "7.1.0",
+  "version": "8.0.0",
   "description": "PLDB: a Programming Language Database",
   "main": "./site/pldb.json",
   "scripts": {
-    "build": "./code/PLDB.js buildAll",
     "test": "./code/test.js",
     "local": "./code/PLDB.js startDevServer",
     "search": "./code/PLDB.js search",
@@ -16,8 +15,7 @@
     "jtreeBeta": "npm install ~/jtree",
     "scrollBeta": "npm install ~/scroll",
     "trueBaseBeta": "npm install ~/truebase",
-    "launch": "git pull; npm install .; npm run build; npm run restart",
-    "fetchLogs": "scp file pldb.com:/root/pldb/ignore/trueBaseServerLog.tree ignore/prodLogs/",
+    "launch": "git pull; npm install .; npm run restart",
     "start": "pm2 start ./code/PLDB.js -- startProdServer",
     "stop": "pm2 delete 0",
     "restart": "pm2 restart 0"
@@ -47,11 +45,11 @@
   "homepage": "https://pldb.com",
   "dependencies": {
     "dayjs": "^1.11.7",
-    "jtree": "^69.3.1",
+    "jtree": "^69.4.1",
     "lodash": "^4.17.21",
     "monaco-editor": "^0.34.1",
     "numeral": "^2.0.6",
-    "scroll-cli": "^59.5.0",
-    "truebase": "^7.2.1"
+    "scroll-cli": "^62.0.1",
+    "truebase": "^9.0.2"
   }
 }

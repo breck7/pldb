@@ -23,6 +23,5 @@ jobs:
       - run: |
           sudo apt-get install cloc
           npm install .
-          npm run build
           npm run test
       # - run: npm run buildCoverageReport

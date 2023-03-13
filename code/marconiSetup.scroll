@@ -18,7 +18,6 @@ bashCode
  cd pldb
  npm install .
  npm run tsc
- npm run build
  # Test that it works over http
  node ./code/PLDB.js startDevServer 80
  # Now get SSL cert for https
@@ -52,5 +51,4 @@ bashCode
  git pull
  npm install .
  npm run tsc
- npm run build
  pm2 restart 0

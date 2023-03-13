@@ -3,7 +3,7 @@
 /*
 * To investigate slowdowns:
 code
- node --cpu-prof --cpu-prof-name=test.cpuprofile ./code/PLDB.js buildAll
+ node --cpu-prof --cpu-prof-name=test.cpuprofile ./code/PLDB.js
 * Then:
 - open a new Chrome tab
 - open devtools
@@ -763,7 +763,7 @@ pipeTable
   }
 
   get sourceUrl() {
-    return `https://github.com/breck7/pldb/blob/main/truebase/things/${this.id}.pldb`
+    return `https://github.com/breck7/pldb/blob/main/things/${this.id}.pldb`
   }
 
   toScroll() {
@@ -1637,7 +1637,7 @@ html
  <a class="trueBaseThemePreviousItem" href="${previous.permalink}">&lt;</a>
  <a class="trueBaseThemeNextItem" href="${next.permalink}">&gt;</a>
 
-viewSourceUrl https://github.com/breck7/pldb/blob/main/truebase/grammar/${fileName}
+viewSourceUrl https://github.com/breck7/pldb/blob/main/grammar/${fileName}
 
 startColumns 4
 
