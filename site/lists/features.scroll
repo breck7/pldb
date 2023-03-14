@@ -1,7 +1,9 @@
 import header.scroll
 title Features
 groups index
-import featuresImports.scroll
+
+nodejs
+ module.exports = require("../../code/PLDB.js").PLDB.topFeaturesImports
 
 <div class="singleColumn">
 

@@ -15,7 +15,14 @@ import searchForm.scroll
 
 replace BASE_URL .
 
-import homepageImports.scroll
+nodejs
+ const {PLDB} = require("../code/PLDB.js")
+ module.exports = {
+      TOP_LANGS: PLDB.folder.topLanguages
+        .slice(0, 10)
+        .map(file => `<a href="./truebase/${file.permalink}">${file.title}</a>`)
+        .join(" · ")
+    }
 
 <a class="pldbHomepageLink" href="./lists/top1000.html">Top Languages</a>
 * TOP_LANGS

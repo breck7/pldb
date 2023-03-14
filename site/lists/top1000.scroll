@@ -1,7 +1,10 @@
 import header.scroll
 groups index
 title Top 1,000 Programming Languages
-import topLangsImports.scroll
+
+
+nodejs
+ module.exports = require("../../code/PLDB.js").PLDB.top1000Imports
 
 <div class="singleColumn">
 

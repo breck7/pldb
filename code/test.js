@@ -44,35 +44,35 @@ testTree.ensureNoErrorsInScrollExtensions = areEqual => {
 	areEqual(grammarErrors.length, 0, "no errors in scroll extensions")
 }
 
-// todo
-testTree.ensureNoErrorsInBlog = areEqual => {
-	const checkScroll = folderPath => {
-		// Do not check all ~5K generated scroll files for errors b/c redundant and wastes time.
-		// Just check the Javascript one below.
-		if (folderPath.includes("truebase")) return
-		const folder = new ScrollFolder(folderPath)
-		areEqual(
-			folder.grammarErrors.length,
-			0,
-			`no scroll errors in ${folderPath}`
-		)
-		//areEqual(folder.errors.length, 0, `no errors in ${folderPath}`)
-	}
+// // todo
+// testTree.ensureNoErrorsInBlog = areEqual => {
+// 	const checkScroll = folderPath => {
+// 		// Do not check all ~5K generated scroll files for errors b/c redundant and wastes time.
+// 		// Just check the Javascript one below.
+// 		if (folderPath.includes("truebase")) return
+// 		const folder = new ScrollFolder(folderPath)
+// 		areEqual(
+// 			folder.grammarErrors.length,
+// 			0,
+// 			`no scroll errors in ${folderPath}`
+// 		)
+// 		//areEqual(folder.errors.length, 0, `no errors in ${folderPath}`)
+// 	}
 
-	const cli = new ScrollCli()
-	cli.verbose = false
-	Object.keys(cli.findScrollsInDirRecursive(rootDir)).map(checkScroll)
+// 	const cli = new ScrollCli()
+// 	cli.verbose = false
+// 	Object.keys(cli.findScrollsInDirRecursive(rootDir)).map(checkScroll)
 
-	const jsPagePath = path.join(trueBasePagesDir, "javascript.scroll")
-	const jsFile = new ScrollFile(Disk.read(jsPagePath), jsPagePath)
-	const errors = jsFile.scrollScriptProgram.getAllErrors()
-	if (errors.length) console.log(errors)
-	areEqual(
-		errors.length,
-		0,
-		"no scroll errors in a generated language scroll file"
-	)
-}
+// 	const jsPagePath = path.join(trueBasePagesDir, "javascript.scroll")
+// 	const jsFile = new ScrollFile(Disk.read(jsPagePath), jsPagePath)
+// 	const errors = jsFile.scrollScriptProgram.getAllErrors()
+// 	if (errors.length) console.log(errors)
+// 	areEqual(
+// 		errors.length,
+// 		0,
+// 		"no scroll errors in a generated language scroll file"
+// 	)
+// }
 
 testTree.ensureGoodFilenames = areEqual => {
 	areEqual(

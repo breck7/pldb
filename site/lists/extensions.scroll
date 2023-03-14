@@ -1,7 +1,9 @@
 import header.scroll
 title List of File Extensions
 groups index
-import extensionsImports.scroll
+
+nodejs
+ module.exports = require("../../code/PLDB.js").PLDB.extensionsImports
 
 <div class="singleColumn">
 

@@ -1,7 +1,9 @@
 import header.scroll
 title Acknowledgements
-import acknowledgementsImports.scroll
 groups index
+
+nodejs
+ module.exports = require("../../code/PLDB.js").PLDB.acknowledgementsImports
 
 startColumns 4
 

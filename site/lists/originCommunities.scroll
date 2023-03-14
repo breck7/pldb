@@ -1,7 +1,10 @@
 import header.scroll
 title List of communities where programming languages have originated
 groups index
-import originCommunitiesImports.scroll
+
+
+nodejs
+ module.exports = require("../../code/PLDB.js").PLDB.originCommunitiesImports
 
 * Here is the list of COUNT origin communities who fostered the development of a new language(s) or other thing(s) in the PLDB.
 

@@ -1,7 +1,9 @@
 import header.scroll
 title List of people who created a programming language
 groups index
-import creatorsImports.scroll
+
+nodejs
+ module.exports = require("../../code/PLDB.js").PLDB.creatorsImports
 
 <div class="singleColumn">
 

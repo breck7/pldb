@@ -45,6 +45,9 @@ const cleanAndRightShift = str =>
 
 const makePrettyUrlLink = url => `<a href="${url}">${new URL(url).hostname}</a>`
 
+const quickTree = (rows, header) => `pipeTable
+ ${new TreeNode(rows).toDelimited("|", header, false).replace(/\n/g, "\n ")}`
+
 const toCommaList = (arr, conjunction = "and") => {
   if (arr.length === 1) return arr[0]
   let last = arr.pop()
@@ -2107,17 +2110,19 @@ class PLDBServer extends TrueBaseServer {
     this.warmHomepageImportsCommand()
   }
 
-  warmKeywordsImportsCommand() {
+  get keywordsImports() {
     const { rows, langsWithKeywordsCount } = this.folder.keywordsTable
 
-    this.makeVarSection(path.join(listsFolder, "keywordsImports.scroll"), {
+    return {
       NUM_KEYWORDS: numeral(rows.length).format("0,0"),
       LANGS_WITH_KEYWORD_DATA: langsWithKeywordsCount,
-      KEYWORDS_TABLE: {
-        rows,
-        header: ["keyword", "count", "frequency", "langs"]
-      }
-    })
+      KEYWORDS_TABLE: quickTree(rows, [
+        "keyword",
+        "count",
+        "frequency",
+        "langs"
+      ])
+    }
   }
 
   warmFeaturePagesCommand() {
@@ -2129,7 +2134,7 @@ class PLDBServer extends TrueBaseServer {
     )
   }
 
-  warmAcknowledgementsImportsCommand() {
+  get acknowledgementsImports() {
     const { sources } = this.folder
     let writtenIn = [
       "javascript",
@@ -2155,7 +2160,7 @@ class PLDBServer extends TrueBaseServer {
     })
     npmPackages.sort()
 
-    this.makeVarSection(path.join(pagesDir, "acknowledgementsImports.scroll"), {
+    return {
       WRITTEN_IN_TABLE: lodash
         .sortBy(writtenIn, "rank")
         .map(file => `- ${file.title}\n link ../truebase/${file.permalink}`)
@@ -2175,21 +2180,23 @@ class PLDBServer extends TrueBaseServer {
         )
         .map(item => `- ${item.login}\n ${item.html_url}`)
         .join("\n")
-    })
+    }
   }
 
-  warmCsvFilesCommand() {
-    super.buildCsvFilesCommand()
-    const folder = this.folder
-    Disk.writeIfChanged(
-      path.join(siteFolder, "languages.csv"),
-      folder.makeCsv(
-        "langs.csv",
-        new TreeNode(folder.objectsForCsv.filter(obj => isLanguage(obj.type)))
-      )
+  warmCsvFiles() {
+    super.warmCsvFiles()
+    const { folder } = this
+    const { siteFolder } = this.settings
+    const langPath = path.join(siteFolder, "languages.csv")
+    virtualFiles[langPath] = folder.makeCsv(
+      "langs.csv",
+      new TreeNode(folder.objectsForCsv.filter(obj => isLanguage(obj.type)))
     )
+  }
 
-    this.makeVarSection(path.join(pagesDir, "csvDocumentationImports.scroll"), {
+  get csvImports() {
+    const { folder } = this
+    return {
       LANG_COUNT: folder.topLanguages.length,
       APPROXIMATE_FACT_COUNT: numeral(folder.factCount).format("0,0a"),
       COL_COUNT: folder.colNamesForCsv.length,
@@ -2204,10 +2211,10 @@ class PLDBServer extends TrueBaseServer {
         header: folder.columnsCsvOutput.columnMetadataColumnNames,
         rows: folder.columnsCsvOutput.columnsMetadataTree
       }
-    })
+    }
   }
 
-  warmTopListImports() {
+  get top1000Imports() {
     const files = this.folder.topLanguages.map(file => {
       const appeared = file.get("appeared")
       const rank = file.languageRank + 1
@@ -2222,21 +2229,18 @@ class PLDBServer extends TrueBaseServer {
       }
     })
 
-    const vars = {}
-    const pages = [1000]
-    const header = ["title", "titleLink", "appeared", "type", "rank"]
-    pages.forEach(
-      num =>
-        (vars[`TOP_${num}`] = {
-          header,
-          rows: files.slice(0, num)
-        })
-    )
-
-    this.makeVarSection(path.join(listsFolder, "topLangsImports.scroll"), vars)
+    return {
+      TOP_1000: quickTree(files.slice(0, 1000), [
+        "title",
+        "titleLink",
+        "appeared",
+        "type",
+        "rank"
+      ])
+    }
   }
 
-  warmExtensionsImports() {
+  get extensionsImports() {
     const files = this.folder
       .filter(file => file.extensions)
       .map(file => {
@@ -2257,55 +2261,53 @@ class PLDBServer extends TrueBaseServer {
       file => (file.numberOfExtensions = file.extensions.split(" ").length)
     )
 
-    this.makeVarSection(path.join(listsFolder, "extensionsImports.scroll"), {
+    return {
       EXTENSION_COUNT: numeral(allExtensions.size).format("0,0"),
-      TABLE: {
-        rows: lodash.sortBy(files, "rank"),
-        header: ["name", "nameLink", "extensions", "numberOfExtensions"]
-      },
+      TABLE: quickTree(lodash.sortBy(files, "rank"), [
+        "name",
+        "nameLink",
+        "extensions",
+        "numberOfExtensions"
+      ]),
       LANG_WITH_DATA_COUNT: files.length
-    })
+    }
   }
 
-  warmFeaturesImports() {
+  get topFeaturesImports() {
     const { topFeatures } = this.folder
-
-    const summaries = topFeatures.map(feature => feature.summary)
-
-    this.makeVarSection(path.join(listsFolder, "allFeaturesImports.scroll"), {
+    const summaries = topFeatures
+      .map(feature => feature.summary)
+      .filter(feature => feature.measurements > 9)
+    return {
       COUNT: numeral(summaries.length).format("0,0"),
-      TABLE: {
-        rows: summaries,
-        header: [
-          "title",
-          "titleLink",
-          "pseudoExample",
-          "yes",
-          "no",
-          "percentage"
-        ]
-      }
-    })
-
-    const atLeast10 = summaries.filter(feature => feature.measurements > 9)
-
-    this.makeVarSection(path.join(listsFolder, "featuresImports.scroll"), {
-      COUNT: numeral(atLeast10.length).format("0,0"),
-      TABLE: {
-        rows: atLeast10,
-        header: [
-          "title",
-          "titleLink",
-          "pseudoExample",
-          "yes",
-          "no",
-          "percentage"
-        ]
-      }
-    })
+      TABLE: quickTree(summaries, [
+        "title",
+        "titleLink",
+        "pseudoExample",
+        "yes",
+        "no",
+        "percentage"
+      ])
+    }
   }
 
-  warmOriginCommunitiesImports() {
+  get allFeaturesImports() {
+    const { topFeatures } = this.folder
+    const summaries = topFeatures.map(feature => feature.summary)
+    return {
+      COUNT: numeral(summaries.length).format("0,0"),
+      TABLE: quickTree(summaries, [
+        "title",
+        "titleLink",
+        "pseudoExample",
+        "yes",
+        "no",
+        "percentage"
+      ])
+    }
+  }
+
+  get originCommunitiesImports() {
     const files = lodash.sortBy(
       this.folder.filter(
         file => file.isLanguage && file.originCommunity.length
@@ -2329,19 +2331,13 @@ class PLDBServer extends TrueBaseServer {
     const sorted = lodash.sortBy(rows, ["count", "top"])
     sorted.reverse()
 
-    this.makeVarSection(
-      path.join(listsFolder, "originCommunitiesImports.scroll"),
-      {
-        TABLE: {
-          rows: sorted,
-          header: ["count", "name", "languages"]
-        },
-        COUNT: numeral(Object.values(entities).length).format("0,0")
-      }
-    )
+    return {
+      TABLE: quickTree(sorted, ["count", "name", "languages"]),
+      COUNT: numeral(Object.values(entities).length).format("0,0")
+    }
   }
 
-  warmCreatorsImports() {
+  get creatorsImports() {
     const entities = this.folder.groupByListValues(
       "creators",
       this.folder.filter(file => file.isLanguage),
@@ -2372,24 +2368,15 @@ class PLDBServer extends TrueBaseServer {
       }
     })
 
-    this.makeVarSection(path.join(listsFolder, "creatorsImports.scroll"), {
-      TABLE: {
-        rows: lodash.sortBy(rows, "topRank"),
-        header: ["name", "languages", "count", "topRank"]
-      },
+    return {
+      TABLE: quickTree(lodash.sortBy(rows, "topRank"), [
+        "name",
+        "languages",
+        "count",
+        "topRank"
+      ]),
       COUNT: numeral(Object.values(entities).length).format("0,0")
-    })
-  }
-
-  warmHomepageImportsCommand() {
-    const postsScroll = new ScrollFolder(postsFolder)
-
-    this.makeVarSection(path.join(siteFolder, "homepageImports.scroll"), {
-      TOP_LANGS: this.folder.topLanguages
-        .slice(0, 10)
-        .map(file => `<a href="./truebase/${file.permalink}">${file.title}</a>`)
-        .join(" · ")
-    })
+    }
   }
 
   async crawlGitHubCommand() {
