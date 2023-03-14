@@ -3,7 +3,7 @@
 /*
 * To investigate slowdowns:
 code
- node --cpu-prof --cpu-prof-name=test.cpuprofile ./code/PLDB.js
+ node --cpu-prof --cpu-prof-name=test.cpuprofile ./code/PLDB.js testPerf
 * Then:
 - open a new Chrome tab
 - open devtools
@@ -29,7 +29,6 @@ const baseFolder = path.join(__dirname, "..")
 const ignoreFolder = path.join(baseFolder, "ignore")
 const siteFolder = path.join(baseFolder, "site")
 const nodeModulesFolder = path.join(baseFolder, "node_modules")
-const distFolder = path.join(siteFolder, "dist")
 const pagesDir = path.join(siteFolder, "pages")
 const listsFolder = path.join(siteFolder, "lists")
 const postsFolder = path.join(siteFolder, "posts")
@@ -1751,9 +1750,11 @@ class PLDBFolder extends TrueBaseFolder {
   computedColumnNames = `pldbId bookCount paperCount hopl exampleCount numberOfUsers numberOfRepos numberOfJobs languageRank rank factCount lastActivity`.split(
     " "
   )
-  sourceFilename = Utils.getFileName(__filename)
   globalSortFunction = item => parseInt(item.rank)
-  githubRepoPath = "breck7/pldb"
+  // todo: move these to .truebase settings file
+  thingsViewSourcePath = `https://github.com/breck7/pldb/blob/main/things/`
+  grammarViewSourcePath = `https://github.com/breck7/pldb/blob/main/grammar/`
+  computedsViewSourcePath = `https://github.com/breck7/pldb/blob/main/code/PLDB.js`
   defaultColumnSortOrder = `title
 appeared
 type
@@ -2054,10 +2055,6 @@ wikipedia`.split("\n")
 }
 
 class PLDBServer extends TrueBaseServer {
-  trueBaseId = "pldb"
-  siteName = "PLDB.com"
-  siteDomain = "pldb.com"
-  distFolder = distFolder
   beforeListen() {
     this.serveFolderNested(
       "/monaco-editor",
@@ -2375,9 +2372,10 @@ class PLDBServer extends TrueBaseServer {
   }
 }
 
-const pldbFolder = new PLDBFolder()
-  .setDir(path.join(baseFolder, "things"))
-  .setGrammarDir(path.join(baseFolder, "grammar"))
+const pldbFolder = new PLDBFolder().setSettings({
+  grammarFolder: path.join(baseFolder, "grammar"),
+  thingsFolder: path.join(baseFolder, "things")
+})
 
 const PLDB = new PLDBServer(path.join(baseFolder, "pldb.truebase"), pldbFolder)
 
