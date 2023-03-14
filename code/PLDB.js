@@ -2108,12 +2108,19 @@ class PLDBServer extends TrueBaseServer {
     }
   }
 
+  warmTrueBasePages() {
+    super.warmTrueBasePages()
+    this.warmFeaturePagesCommand()
+  }
+
   warmFeaturePagesCommand() {
-    this.folder.features.forEach(feature =>
-      Disk.writeIfChanged(
-        path.join(featuresFolder, `${feature.id}.scroll`),
-        feature.toScroll()
-      )
+    const { virtualFiles } = this
+    const { siteFolder } = this.settings
+    this.folder.features.forEach(
+      feature =>
+        (virtualFiles[
+          siteFolder + `/features/${feature.id}.scroll`
+        ] = feature.toScroll())
     )
   }
 
