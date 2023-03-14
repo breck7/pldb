@@ -774,7 +774,7 @@ pipeTable
 
     if (title.includes("%20")) throw new Error("bad space in title: " + title)
 
-    return `import header.scroll
+    return `import ../header.scroll
 
 title ${title}
 
@@ -2096,20 +2096,6 @@ class PLDBServer extends TrueBaseServer {
     return super.listenProd()
   }
 
-  warmAll() {
-    super.warmAll()
-    this.warmKeywordsImportsCommand()
-    this.warmFeaturePagesCommand()
-    this.warmAcknowledgementsImportsCommand()
-    this.warmCsvFilesCommand()
-    this.warmTopListImports()
-    this.warmExtensionsImports()
-    this.warmFeaturesImports()
-    this.warmOriginCommunitiesImports()
-    this.warmCreatorsImports()
-    this.warmHomepageImportsCommand()
-  }
-
   get keywordsImports() {
     const { rows, langsWithKeywordsCount } = this.folder.keywordsTable
 
@@ -2185,7 +2171,7 @@ class PLDBServer extends TrueBaseServer {
 
   warmCsvFiles() {
     super.warmCsvFiles()
-    const { folder } = this
+    const { folder, virtualFiles } = this
     const { siteFolder } = this.settings
     const langPath = path.join(siteFolder, "languages.csv")
     virtualFiles[langPath] = folder.makeCsv(
@@ -2207,10 +2193,10 @@ class PLDBServer extends TrueBaseServer {
       LANGS_FILE_SIZE_UNCOMPRESSED: numeral(
         folder.makeCsv("langs.csv").length
       ).format("0.0b"),
-      COLUMN_METADATA_TABLE: {
-        header: folder.columnsCsvOutput.columnMetadataColumnNames,
-        rows: folder.columnsCsvOutput.columnsMetadataTree
-      }
+      COLUMN_METADATA_TABLE: quickTree(
+        folder.columnsCsvOutput.columnsMetadataTree,
+        folder.columnsCsvOutput.columnMetadataColumnNames
+      )
     }
   }
 
