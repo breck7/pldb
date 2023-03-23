@@ -1,10 +1,17 @@
 title RQL
 appeared 2017
 type pl
-website http://www.logilab.org/project/rql
+website https://web.archive.org/web/20220310181429/https://www.logilab.org/project/rql
+reference https://readthedocs.org/projects/rql
+reference https://rql.readthedocs.io/en/latest
+reference https://github.com/logilab
+country France
+originCommunity logilab.fr
 
 features
  hasIntegers true
+
+gitRepo https://forge.extranet.logilab.fr/cubicweb/RQL
 
 pygmentsHighlighter RQL
  filename sql.py
