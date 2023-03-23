@@ -774,7 +774,7 @@ pipeTable
     if (title.includes("%20")) throw new Error("bad space in title: " + title)
 
     return `import ../header.scroll
-
+baseUrl https://pldb.com/truebase/
 title ${title}
 
 title ${title} - ${lodash.upperFirst(typeName)}
