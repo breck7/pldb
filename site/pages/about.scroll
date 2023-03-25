@@ -39,6 +39,22 @@ replaceJs BUILT_ON_DAY dayjs().format("MM/DD/YYYY")
 
 bash cd ..; cd ..; cloc --quiet --vcs git . --read-lang-def=code/clocLangs.txt
 
+# Mirrors
+* The URL for the official PLDB site is https://pldb.com. DNS will take that domain name and send your browser an IPv4 address. Your browser will send a request to that address which will reach our virtual server running Node.js (nicknamed _Marconi_) running in a Digital Ocean datacenter. _Marconi_ will send you the HTML, CSS, Javascript, PNGs, SVGs and JSON that make up the built website.
+ link ../truebase/url.html URL
+ link ../truebase/dns.html DNS
+ link ../truebase/ipv4.html IPv4
+
+* In case there's a problem with _Marconi_, you should be able to access the exact same site locally by downloading the source from GitHub.
+
+* If _Marconi_ AND GitHub were to go down at the same time...well that's why it's good to regularly download the entire source code of the site to your own machine! You can do that with:
+
+bashCode
+ git clone https://github.com/breck7/pldb.git
+ # Then to keep it updated:
+ cd pldb
+ git pull
+
 replaceJs DAYS_ONLINE Math.floor(dayjs().diff(dayjs("2022-08-15"), "day", true))
 
 ## History
