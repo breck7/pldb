@@ -3,7 +3,7 @@
 /*
 * To investigate slowdowns:
 code
- node --cpu-prof --cpu-prof-name=test.cpuprofile ./code/PLDB.js testPerf
+ node --cpu-prof --cpu-prof-name=test.cpuprofile ./PLDB.js testPerf
 * Then:
 - open a new Chrome tab
 - open devtools
@@ -25,7 +25,7 @@ const { TrueBaseFolder, TrueBaseFile } = require("truebase/server/TrueBase.js")
 const { TrueBaseServer } = require("truebase/server/TrueBaseServer.js")
 const { ScrollFolder } = require("scroll-cli")
 
-const baseFolder = path.join(__dirname, "..")
+const baseFolder = path.join(__dirname)
 const ignoreFolder = path.join(baseFolder, "ignore")
 const siteFolder = path.join(baseFolder, "site")
 const nodeModulesFolder = path.join(baseFolder, "node_modules")
@@ -1754,7 +1754,7 @@ class PLDBFolder extends TrueBaseFolder {
   // todo: move these to .truebase settings file
   thingsViewSourcePath = `https://github.com/breck7/pldb/blob/main/things/`
   grammarViewSourcePath = `https://github.com/breck7/pldb/blob/main/grammar/`
-  computedsViewSourcePath = `https://github.com/breck7/pldb/blob/main/code/PLDB.js`
+  computedsViewSourcePath = `https://github.com/breck7/pldb/blob/main/PLDB.js`
   defaultColumnSortOrder = `title
 appeared
 type
@@ -2146,7 +2146,7 @@ class PLDBServer extends TrueBaseServer {
     ].map(s => this.folder.getFile(this.folder.searchForEntity(s)))
 
     const npmPackages = Object.keys({
-      ...require("../package.json").dependencies
+      ...require("./package.json").dependencies
     })
     npmPackages.sort()
 

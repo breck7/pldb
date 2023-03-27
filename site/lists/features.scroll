@@ -3,7 +3,7 @@ title Features
 groups index
 
 nodejs
- module.exports = require("../../code/PLDB.js").PLDB.topFeaturesImports
+ module.exports = require("../../PLDB.js").PLDB.topFeaturesImports
 
 <div class="singleColumn">
 

@@ -4,7 +4,7 @@ groups index
 
 
 nodejs
- module.exports = require("../../code/PLDB.js").PLDB.allFeaturesImports
+ module.exports = require("../../PLDB.js").PLDB.allFeaturesImports
 
 <div class="singleColumn">
 

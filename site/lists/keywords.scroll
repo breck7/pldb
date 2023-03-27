@@ -3,7 +3,7 @@ title List of all keywords used in all programming languages
 groups index
 
 nodejs
- module.exports = require("../../code/PLDB.js").PLDB.keywordsImports
+ module.exports = require("../../PLDB.js").PLDB.keywordsImports
 
 * Here is the list of NUM_KEYWORDS keywords for the LANGS_WITH_KEYWORD_DATA languages that PLDB has that information. This list is case insensitive. Refer to the DB for case information.
 

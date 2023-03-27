@@ -2,7 +2,7 @@ import header.scroll
 title PLDB CSV File Documentation
 
 nodejs
- module.exports = require("../code/PLDB.js").PLDB.csvImports
+ module.exports = require("../PLDB.js").PLDB.csvImports
 
 tableSearch
 

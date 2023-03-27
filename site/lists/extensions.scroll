@@ -3,7 +3,7 @@ title List of File Extensions
 groups index
 
 nodejs
- module.exports = require("../../code/PLDB.js").PLDB.extensionsImports
+ module.exports = require("../../PLDB.js").PLDB.extensionsImports
 
 <div class="singleColumn">
 

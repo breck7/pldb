@@ -3,7 +3,7 @@ title Acknowledgements
 groups index
 
 nodejs
- module.exports = require("../../code/PLDB.js").PLDB.acknowledgementsImports
+ module.exports = require("../../PLDB.js").PLDB.acknowledgementsImports
 
 startColumns 4
 

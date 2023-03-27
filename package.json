@@ -5,10 +5,10 @@
   "main": "./site/pldb.json",
   "scripts": {
     "test": "./code/test.js",
-    "local": "./code/PLDB.js startDevServer",
-    "search": "./code/PLDB.js search",
-    "format": "./code/PLDB.js format",
-    "githubs": "./code/PLDB.js crawlGitHub",
+    "local": "./PLDB.js startDevServer",
+    "search": "./PLDB.js search",
+    "format": "./PLDB.js format",
+    "githubs": "./PLDB.js crawlGitHub",
     "fetchContributors": "wget -O site/pages/contributors.json https://api.github.com/repos/breck7/pldb/contributors",
     "cloc": "cloc --vcs git . --read-lang-def=code/clocLangs.txt",
     "checkLinks": "linkinator -r https://pldb.com > ignore/brokenLinks.txt",
@@ -16,7 +16,7 @@
     "scrollBeta": "npm install ~/scroll",
     "trueBaseBeta": "npm install ~/truebase",
     "launch": "git pull; npm install .; npm run restart",
-    "start": "pm2 start ./code/PLDB.js -- startProdServer",
+    "start": "pm2 start ./PLDB.js -- startProdServer",
     "stop": "pm2 delete 0",
     "restart": "pm2 restart 0"
   },
@@ -49,7 +49,7 @@
     "lodash": "^4.17.21",
     "monaco-editor": "^0.34.1",
     "numeral": "^2.0.6",
-    "scroll-cli": "^62.4.0",
+    "scroll-cli": "^62.5.1",
     "truebase": "^11.2.1"
   }
 }

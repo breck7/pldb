@@ -23,7 +23,7 @@ const { Disk } = require("jtree/products/Disk.node.js")
 const { TestRacer } = require("jtree/products/TestRacer.js")
 const { Utils } = require("jtree/products/Utils.js")
 
-const { PLDB } = require("./PLDB.js")
+const { PLDB } = require("../PLDB.js")
 
 const rootDir = path.join(__dirname, "..")
 const trueBasePagesDir = path.join(rootDir, "site", "truebase")

@@ -16,7 +16,7 @@ import searchForm.scroll
 replace BASE_URL .
 
 nodejs
- const {PLDB} = require("../code/PLDB.js")
+ const {PLDB} = require("../PLDB.js")
  module.exports = {
       TOP_LANGS: PLDB.folder.topLanguages
         .slice(0, 10)
