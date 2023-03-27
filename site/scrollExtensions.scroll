@@ -51,7 +51,7 @@ bashNode
   compile() {
    const command = this.content
    const file = this.root.file
-   const cwd = file.folder.folder
+   const cwd = file.folderPath
    const output = require("child_process").execSync(command, {cwd})
    return `<div class="codeWithHeader"><div class="codeHeader">${command}</div><code class="scrollCodeBlockComponent">${output.toString().trim()}</code></div>`
   }

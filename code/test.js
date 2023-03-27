@@ -18,7 +18,7 @@ code
 const lodash = require("lodash")
 const path = require("path")
 const grammarNode = require("jtree/products/grammar.nodejs.js")
-const { ScrollFolder, ScrollCli, ScrollFile } = require("scroll-cli")
+const { ScrollDiskFileSystem, ScrollCli, ScrollFile } = require("scroll-cli")
 const { Disk } = require("jtree/products/Disk.node.js")
 const { TestRacer } = require("jtree/products/TestRacer.js")
 const { Utils } = require("jtree/products/Utils.js")
@@ -38,8 +38,9 @@ testTree.ensureNoErrorsInGrammar = areEqual => {
 }
 
 testTree.ensureNoErrorsInScrollExtensions = areEqual => {
-	const scrollFolder = new ScrollFolder(__dirname)
-	const { grammarErrors } = scrollFolder
+	const grammarErrors = new ScrollDiskFileSystem().getGrammarErrorsInFolder(
+		__dirname
+	)
 	if (grammarErrors.length) console.log(grammarErrors)
 	areEqual(grammarErrors.length, 0, "no errors in scroll extensions")
 }
@@ -88,13 +89,6 @@ testTree.ensureNoBrokenPermalinks = areEqual => {
 		true,
 		"should not throw because of broken permalink"
 	)
-}
-
-testTree.ensureFieldsAreTrimmed = areEqual => {
-	const scrollFolder = new ScrollFolder(__dirname)
-	const { grammarErrors } = scrollFolder
-	if (grammarErrors.length) console.log(grammarErrors)
-	areEqual(grammarErrors.length, 0, "no errors in scroll extensions")
 }
 
 testTree.ensureNoErrorsInDb = areEqual => {

@@ -23,7 +23,6 @@ const { shiftRight, removeReturnChars } = Utils
 const { Disk } = require("jtree/products/Disk.node.js")
 const { TrueBaseFolder, TrueBaseFile } = require("truebase/server/TrueBase.js")
 const { TrueBaseServer } = require("truebase/server/TrueBaseServer.js")
-const { ScrollFolder } = require("scroll-cli")
 
 const baseFolder = path.join(__dirname)
 const ignoreFolder = path.join(baseFolder, "ignore")
