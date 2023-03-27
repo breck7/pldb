@@ -7,7 +7,38 @@ stumpNoSnippet
   a PLDB
    href BASE_URL/index.html
    class trueBaseThemeLogo
-  span - Build the next great programming language
+  span ·
+  a Languages
+   href BASE_URL/lists/top1000.html
+  span ·
+  a Features
+   href BASE_URL/lists/features.html
+  span ·
+  a Creators
+   href BASE_URL/lists/creators.html
+  span ·
+  a CSV
+   href BASE_URL/csv.html
+  span ·
+  a Resources
+   href BASE_URL/lists/resources.html
+  span ·
+  a Challenges
+   href BASE_URL/pages/challenges.html
+  span ·
+  a Add Language
+   href BASE_URL/create.html
+  span ·
+  a Login
+   style display:none;
+   href BASE_URL/loginOrJoin.html
+   class notLoggedIn
+  a Logout
+   onclick new TrueBaseBrowserApp().logoutCommand()
+   class loggedIn
+   style display:none;
+   id logoutButton
+   href #
   span ·
   a Search
    href BASE_URL/search.html
