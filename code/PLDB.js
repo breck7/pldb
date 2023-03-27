@@ -840,7 +840,7 @@ import ../footer.scroll
 
     let image = file.get("screenshot")
     let caption = `A screenshot of the visual language ${title}.
-  link ../lists/languages.html?filter=visual visual language`
+  link /search.html?q=select+type%0D%0Awhere+type+%3D+visual visual language`
     if (!image) {
       image = file.get("photo")
       caption = `A photo of ${title}.`
@@ -936,13 +936,13 @@ image ${image.replace("https://pldb.com/", "../")}
     )} ${this.typeLink}${
       appeared ? ` created in ${appeared}` : ""
     }${creatorsStr}.
- link ../lists/languages.html?filter=${appeared} ${appeared}
+ link /search.html?q=select+type+appeared%0D%0Awhere+appeared+%3D+${appeared} ${appeared}
 ${creatorsLinks}
 `
   }
 
   get typeLink() {
-    return `<a href="../lists/languages.html?filter=${this.file.type}">${this.file.typeName}</a>`
+    return `<a href="/search.html?q=select+type%0D%0Awhere+type+%3D+${this.file.type}">${this.file.typeName}</a>`
   }
 
   get descriptionSection() {
