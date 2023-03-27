@@ -2175,12 +2175,12 @@ class PLDBServer extends TrueBaseServer {
 
   warmCsvFiles() {
     super.warmCsvFiles()
-    const { folder, virtualFiles } = this
-    const { siteFolder } = this.settings
-    const langPath = path.join(siteFolder, "languages.csv")
-    virtualFiles[langPath] = folder.makeCsv(
-      "langs.csv",
-      new TreeNode(folder.objectsForCsv.filter(obj => isLanguage(obj.type)))
+    const { folder } = this
+    this.virtualFiles[
+      path.join(this.settings.siteFolder, "languages.csv")
+    ] = folder.makeCsv(
+      "languages.csv",
+      folder.objectsForCsv.filter(obj => isLanguage(obj.type))
     )
   }
 
@@ -2195,10 +2195,10 @@ class PLDBServer extends TrueBaseServer {
         folder.makeCsv("pldb.csv").length
       ).format("0.0b"),
       LANGS_FILE_SIZE_UNCOMPRESSED: numeral(
-        folder.makeCsv("langs.csv").length
+        folder.makeCsv("languages.csv").length
       ).format("0.0b"),
       COLUMN_METADATA_TABLE: quickTree(
-        folder.columnsCsvOutput.columnsMetadataTree,
+        folder.columnDocumentation,
         folder.columnsCsvOutput.columnMetadataColumnNames
       )
     }
