@@ -57,7 +57,7 @@ githubLanguageGroupNode
  description Name of the parent language. Languages in a group are counted in the statistics as the parent language.
  crux group
 githubTrendingProjectsNode
- todo Figure out typings.
+ // todo Figure out typings.
  extends abstractDelimitedBlobNode
  boolean fromCrawler true
  description Projects in this language trending on GitHub.

@@ -1,7 +1,7 @@
 originCommunityNode
  description In what community(ies) did the language first originate?
  boolean alwaysRecommended true
- todo Make origin community name the url for the community, not the name.
+ // todo Make origin community name the url for the community, not the name.
  listDelimiter  && 
  example
   originCommunity Microsoft && /r/programminglanguages && news.ycombinator.com

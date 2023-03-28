@@ -4,7 +4,7 @@ githubBigQueryNode
  extends abstractMultiwordGuidNode
  contentKey id
  inScope githubBigQueryUserCountNode githubBigQueryRepoCountNode
- todo Anon node types would be useful here
+ // todo Anon node types would be useful here
  string sourceDomain cloud.google.com
 githubBigQueryUserCountNode
  crux users
