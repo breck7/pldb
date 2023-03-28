@@ -33,7 +33,7 @@ loop
  groups posts/frontpage
  join <br>
  limit 5
- javascript `<a href="${item.linkRelativeToCompileTarget}">${item.title}</a>`
+ javascript `<a href="${item.relativePath}${item.file.permalink}">${item.file.title}</a>`
 
 </p>
 
