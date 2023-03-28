@@ -2107,8 +2107,8 @@ class PLDBServer extends TrueBaseServer {
     }
   }
 
-  warmTrueBasePages() {
-    super.warmTrueBasePages()
+  warmAll() {
+    super.warmAll()
     this.warmFeaturePagesCommand()
   }
 
