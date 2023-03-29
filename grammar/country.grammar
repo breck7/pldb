@@ -1,0 +1,9 @@
+countryNameCell
+ extends stringCell
+countryNode
+ uniqueLine
+ description What country was the language first developed in?
+ boolean alwaysRecommended true
+ catchAllCellType countryNameCell
+ extends abstractTrueBaseColumnNode
+ single false

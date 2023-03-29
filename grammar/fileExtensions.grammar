@@ -1,11 +1,11 @@
 fileExtensionsNode
- extends abstractArrayNode
+ extends abstractStringListColumnNode
  crux fileExtensions
  catchAllCellType fileExtensionCell
  single
  description What are the file extensions for this language?
 fileNamesNode
- extends abstractArrayNode
+ extends abstractStringListColumnNode
  catchAllCellType fileNameCell
  crux filenames
  description Filenames commonly associated with the language.

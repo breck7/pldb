@@ -1,4 +1,3 @@
 demoVideoNode
  description Provide a url of a demo video of the language.
- extends abstractUrlNode
- cruxFromId
+ extends abstractUrlColumnNode

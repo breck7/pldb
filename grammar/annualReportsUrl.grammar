@@ -1,5 +1,4 @@
 annualReportsUrlNode
- extends abstractUrlNode
- cruxFromId
+ extends abstractUrlColumnNode
  description URL to the annual reports for this language.
  single false

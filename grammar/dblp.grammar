@@ -1,19 +1,17 @@
 dblpNode
  boolean fromCrawler true
- extends abstractFactNode
- cruxFromId
+ extends abstractTrueBaseColumnNode
  description Publications about this language from https://dblp.org/.
  string sourceDomain dblp.org
- single
  inScope dblpPublicationsNode
 dblpPublicationsHitsNode
  crux hits
- cells keywordCell intCell
+ cells columnNameCell intCell
  description How many matching publications?
  single
 dblpPublicationsNode
  crux publications
- extends abstractDelimitedBlobNode
+ extends abstractDelimitedValuesBlobColumnNode
  description An inline PSV table of hits.
- cells keywordCell
+ cells columnNameCell
  single

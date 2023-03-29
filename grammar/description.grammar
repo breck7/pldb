@@ -1,7 +1,3 @@
 descriptionNode
  boolean alwaysRecommended true
- cruxFromId
- extends abstractFactNode
- baseNodeType blobNode
- boolean includeChildrenInCsv false
- single
+ extends abstractStringColumnNode

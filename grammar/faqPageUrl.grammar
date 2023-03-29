@@ -1,5 +1,4 @@
 faqPageUrlNode
- extends abstractUrlNode
- cruxFromId
+ extends abstractUrlColumnNode
  description URL to the frequently asked questions for this language.
  single false

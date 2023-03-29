@@ -4,12 +4,12 @@ githubRepoUrlCell
 githubRepoNode
  description URL of the official GitHub repo for the project if it hosted there.
  extends abstractGitRepoUrlNode
- cells keywordCell githubRepoUrlCell
+ cells columnNameCell githubRepoUrlCell
  inScope abstractGithubYearNode abstractGithubCountNode githubDescriptionNode
  contentKey url
  string sourceDomain github.com
 abstractGithubYearNode
- extends abstractYearNode
+ extends abstractYearColumnNode
  single
 githubCreatedNode
  extends abstractGithubYearNode
@@ -24,7 +24,7 @@ githubFirstCommitNode
  crux firstCommit
  description What year the first commit made in this git repo?
 abstractGithubCountNode
- extends abstractCountNode
+ extends abstractCountColumnNode
  single
 githubSubscribersNode
  extends abstractGithubCountNode

@@ -1,17 +1,13 @@
+tokenCell
+ highlightScope keyword
 keywordsNode
  description What are all the keywords in this language?
- extends abstractFactNode
- cruxFromId
+ extends abstractStringListColumnNode
  catchAllCellType tokenCell
- listDelimiter  
- single
 abstractCommonTokenNode
  description Most general purpose programming languages implement a set of common tokens for common features like these.
- cells keywordCell
  catchAllCellType tokenCell
- extends abstractFactNode
- listDelimiter  
- cruxFromId
+ extends abstractStringListColumnNode
  single false
 lineCommentTokenNode
  extends abstractCommonTokenNode

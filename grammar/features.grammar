@@ -2,7 +2,7 @@ featureExampleCodeNode
  description Example usage of the feature. Ideally includes any necessary boilerplate to be runnable.
  baseNodeType blobNode
 abstractFeatureNode
- cells keywordCell boolCell
+ cells columnNameCell boolCell
  contentKey value
  childrenKey example
  boolean includeChildrenInCsv false

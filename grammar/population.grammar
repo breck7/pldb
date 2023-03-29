@@ -1,0 +1,12 @@
+populationCountCell
+ description A positive integer representing a number of people.
+ extends intCell
+abstractPopulationCountColumnNode
+ extends abstractCountColumnNode
+annualPopulationCountNode
+ cells yearCell populationCountCell
+ uniqueFirstWord
+abstractAnnualPopulationCountMapNode
+ catchAllNodeType annualPopulationCountNode
+ description A map of counts, one per year.
+ extends abstractTrueBaseColumnNode

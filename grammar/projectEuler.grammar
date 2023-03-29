@@ -1,5 +1,5 @@
 projectEulerNode
- extends abstractMultiwordGuidNode
+ extends abstractMultiwordGuidColumnNode
  description Is this language one of the ones listed on https://projecteuler.net/?
  inScope projectEulerMemberCountNode
  string sourceDomain projecteuler.net

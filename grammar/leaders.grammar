@@ -1,0 +1,8 @@
+creatorNameCell
+ extends stringCell
+creatorsNode
+ extends abstractStringListColumnNode
+ boolean alwaysRecommended true
+ description Name(s) of the original creators of the language delimited by " and "
+ catchAllCellType creatorNameCell
+ listDelimiter  and 

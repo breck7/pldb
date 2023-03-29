@@ -2,7 +2,7 @@ helloWorldCollectionNode
  description Hello world written in this language from http://helloworldcollection.de/
  extends exampleNode
  cruxFromId
- cells keywordCell
+ cells columnNameCell
  catchAllCellType helloWorldCollectionIdCell
  string sourceDomain helloworldcollection.de
 helloWorldCollectionIdCell

@@ -3,17 +3,13 @@ typeCell
  highlightScope constant.language
 typeNode
  description Which category in PLDB's subjective ontology does this entity fit into.
- cells keywordCell typeCell
+ cells columnNameCell typeCell
  required
- cruxFromId
- single
- extends abstractFactNode
+ extends abstractEnumColumnNode
 fileTypeWordCell
  enum paper text binary na
  highlightScope constant.language
 fileTypeNode
  description What is the file encoding for programs in this language?
- cells keywordCell fileTypeWordCell
- extends abstractFactNode
- cruxFromId
- single
+ cells columnNameCell fileTypeWordCell
+ extends abstractEnumColumnNode

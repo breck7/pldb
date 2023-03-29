@@ -1,7 +1,5 @@
 hackerNewsDiscussionsNode
  boolean fromCrawler true
- extends abstractDelimitedBlobNode
- cruxFromId
+ extends abstractDelimitedValuesBlobColumnNode
  description Links to Hacker News posts discussing this language.
  string sourceDomain news.ycombinator.com
- single

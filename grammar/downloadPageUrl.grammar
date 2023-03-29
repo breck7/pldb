@@ -1,5 +1,4 @@
 downloadPageUrlNode
- extends abstractUrlNode
- cruxFromId
+ extends abstractUrlColumnNode
  description URL to the download page for this language.
  single false

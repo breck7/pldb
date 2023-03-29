@@ -1,5 +1,4 @@
 officialBlogUrlNode
- extends abstractUrlNode
- cruxFromId
+ extends abstractUrlColumnNode
  description URL to the official blog for this language.
  single false

@@ -1,8 +1,6 @@
 screenshotNode
  description For visual languages, a picture is worth a thousand words. Provide the URL to the screenshot in the form: https://pldb.com/screenshots/[pldbId].png
- extends abstractUrlNode
- cruxFromId
+ extends abstractUrlColumnNode
 photoNode
  description For notations, a picture is worth a thousand words. Provide a photo in the form: https://pldb.com/photos/[pldbId].png
- extends abstractUrlNode
- cruxFromId
+ extends abstractUrlColumnNode

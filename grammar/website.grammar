@@ -1,24 +1,19 @@
 websiteNode
  description URL of the official homepage for the language project.
- extends abstractUrlNode
- cruxFromId
- single
+ extends abstractUrlColumnNode
 webReplNode
- extends abstractUrlNode
+ extends abstractUrlColumnNode
  description An online repl for the project.
- cruxFromId
 domainNameCell
  extends stringCell
 domainNameNode
  description If the project website is on its own domain.
- cruxFromId
- cells keywordCell domainNameCell
- extends abstractFactNode
- single
+ cells columnNameCell domainNameCell
+ extends abstractWordColumnNode
  contentKey name
  inScope domainRegisteredNode awisRankNode
 domainRegisteredNode
- extends abstractYearNode
+ extends abstractYearColumnNode
  description When was this domain first registered?
  crux registered
  single
