@@ -4,6 +4,7 @@ websiteNode
 webReplNode
  extends abstractUrlColumnNode
  description An online repl for the project.
+ single false
 domainNameCell
  extends stringCell
 domainNameNode
