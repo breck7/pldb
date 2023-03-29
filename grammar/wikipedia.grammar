@@ -3,7 +3,7 @@ wikipediaNode
  inScope wikipediaExampleNode wikipediaRelatedNode wikipediaSummaryNode wikipediaCreatedNode wikipediaDailyPageViewsNode wikipediaYearNode wikipediaBacklinksCountNode wikipediaRevisionCountNode wikipediaPageIdNode fileExtensionsNode
  extends abstractSectionNode
  description URL of the entity on Wikipedia, if and only if it has a page dedicated to it.
- cells keywordCell urlCell
+ cells columnNameCell urlCell
  string sourceDomain wikipedia.org
  contentKey url
 wikipediaExampleNode
@@ -13,42 +13,42 @@ wikipediaExampleNode
  single false
 wikipediaRelatedNode
  description What languages does Wikipedia have as related?
- extends abstractPermalinksNode
+ extends abstractTrueBaseLinksColumnNode
  crux related
 wikipediaSummaryNode
  description What is the text summary of the language from the Wikipedia page?
- extends abstractFactNode
+ extends abstractTrueBaseColumnNode
  baseNodeType blobNode
  boolean includeChildrenInCsv false
  single
  crux summary
 wikipediaCreatedNode
- extends abstractYearNode
+ extends abstractYearColumnNode
  crux created
  description When was the *Wikipedia page* for this entity created?
  single
 wikipediaYearNode
- extends abstractYearNode
+ extends abstractYearColumnNode
  crux appeared
  description When does Wikipedia claim this entity first appeared?
  single
 wikipediaDailyPageViewsNode
- extends abstractCountNode
+ extends abstractCountColumnNode
  crux dailyPageViews
  description How many page views per day does this Wikipedia page get? Useful as a signal for rankings. Available via WP api.
  single
 wikipediaBacklinksCountNode
- extends abstractCountNode
+ extends abstractCountColumnNode
  crux backlinksCount
  description How many pages on WP link to this page?
  single
 wikipediaRevisionCountNode
- extends abstractCountNode
+ extends abstractCountColumnNode
  crux revisionCount
  description How many revisions does this page have?
  single
 wikipediaPageIdNode
- extends abstractIntNode
+ extends abstractIntColumnNode
  crux pageId
- description Waht is the internal ID for this entity on WP?
+ description What is the internal ID for this entity on WP?
  single

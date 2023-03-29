@@ -1,10 +1,10 @@
 pygmentsHighlighterNode
- extends abstractMultiwordGuidNode
+ extends abstractMultiwordGuidColumnNode
  description A link to a Pygments syntax highlighting class for this language (https://pygments.org/)
  string sourceDomain pygments.org
  inScope fileExtensionsNode pygmentsFilenameNode
  contentKey id
 pygmentsFilenameNode
  crux filename
- extends abstractFactNode
- cells keywordCell fileNameCell
+ extends abstractTrueBaseColumnNode
+ cells columnNameCell fileNameCell

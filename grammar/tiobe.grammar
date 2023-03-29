@@ -1,11 +1,10 @@
 tiobeNode
- extends abstractMultiwordGuidNode
+ extends abstractMultiwordGuidColumnNode
  description Tiobe maintains a well known ranking of programming languages here: https://www.tiobe.com/tiobe-index/
  inScope tiobeCurrentRankNode
  string sourceDomain tiobe.com
  contentKey id
 tiobeCurrentRankNode
  description What is the current Tiobe rank of this language?
- extends abstractIntNode
+ extends abstractIntColumnNode
  crux currentRank
- single

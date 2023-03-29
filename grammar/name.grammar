@@ -1,26 +1,18 @@
 aliasCell
 titleNode
  description The official title of the language
- extends abstractStringNode
- cruxFromId
- single
+ extends abstractStringColumnNode
  required
 wordRankNode
  description Some creators use a common English word as their language's name. For these we note how common the word is, where "the" is 1.
- extends abstractIntNode
- cruxFromId
- single
+ extends abstractIntColumnNode
 standsForNode
  description If the language name is an acronym what does/did it stand for?
- extends abstractStringNode
- cruxFromId
- single
+ extends abstractStringColumnNode
 akaNode
  description Another name for the language. Entries can have multiple aka lines.
- extends abstractStringNode
- cruxFromId
+ extends abstractStringColumnNode
  single false
 oldNameNode
  description What is the old name of this language?
- extends abstractStringNode
- cruxFromId
+ extends abstractStringColumnNode

@@ -1,5 +1,3 @@
 githubCopilotOptimizedNode
  description Is this language optimized for GitHub copilot? The list is here: https://docs.github.com/en/copilot/overview-of-github-copilot/about-github-copilot
- extends abstractFlagNode
- cruxFromId
- single
+ extends abstractBooleanColumnNode

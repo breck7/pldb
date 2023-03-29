@@ -1,5 +1,5 @@
 usesSemanticVersioningNode
- extends abstractBooleanNode
+ extends abstractBooleanColumnNode
  description Does the official release of the language use semantic versioning?
 versionCell
  extends stringCell
@@ -10,12 +10,8 @@ versionNode
  cells yearCell versionCell
 versionsNode
  description The release years and versions of the language.
- cruxFromId
- cells keywordCell
+ extension abstractTrueBaseColumnNode
  catchAllNodeType versionNode
- single
 releaseNotesUrlNode
- extends abstractUrlNode
- cruxFromId
+ extends abstractUrlColumnNode
  description URL to the release notes for this language.
- single

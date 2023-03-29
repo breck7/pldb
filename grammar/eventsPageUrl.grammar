@@ -1,5 +1,4 @@
 eventsPageUrlNode
- extends abstractUrlNode
- cruxFromId
+ extends abstractUrlColumnNode
  description URL to the events pages of this language.
  single false

@@ -5,7 +5,4 @@ originCommunityNode
  listDelimiter  && 
  example
   originCommunity Microsoft && /r/programminglanguages && news.ycombinator.com
- catchAllCellType stringCell
- extends abstractFactNode
- cruxFromId
- single
+ extends abstractStringListColumnNode

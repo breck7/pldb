@@ -1,0 +1,9 @@
+rankCell
+ extends intCell
+abstractAnnualRankMapNode
+ catchAllNodeType annualRankNode
+ description A map of ranks, one per year.
+ extends abstractTrueBaseColumnNode
+annualRankNode
+ cells yearCell rankCell
+ uniqueFirstWord

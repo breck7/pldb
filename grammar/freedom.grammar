@@ -1,0 +1,8 @@
+isOpenSourceNode
+ boolean alwaysRecommended true
+ description Is it an open source project?
+ extends abstractBooleanColumnNode
+isPublicDomainNode
+ boolean alwaysRecommended true
+ description Is it public domain?
+ extends abstractBooleanColumnNode

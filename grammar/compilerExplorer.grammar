@@ -1,8 +1,6 @@
 compilerExplorerNode
- extends abstractMultiwordGuidNode
+ extends abstractMultiwordGuidColumnNode
  description This language's name on https://godbolt.org
- cruxFromId
  string sourceDomain godbolt.org
  contentKey id
  inScope exampleNode
- single

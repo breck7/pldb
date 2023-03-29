@@ -1,6 +1,4 @@
 esolangNode
- extends abstractUrlNode
+ extends abstractUrlColumnNode
  description A link to this language on https://esolangs.org/
- cruxFromId
  string sourceDomain esolangs.org
- single

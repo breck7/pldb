@@ -1,10 +1,8 @@
 abstractRelationshipNode
- extends abstractPermalinksNode
- cruxFromId
+ extends abstractTrueBaseLinksColumnNode
 relatedNode
  extends abstractRelationshipNode
  description What languages are related? This serves as a catch all, and it is better to use a more specific relationship node such as "supersetOf".
- single
 runsOnVmNode
  extends abstractRelationshipNode
  description What virtual machine(s) does this language run on? 

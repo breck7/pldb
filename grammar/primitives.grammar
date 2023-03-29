@@ -1,138 +1,22 @@
-numberCell
-intCell
-rankCell
- extends intCell
-populationCountCell
- description A positive integer representing a number of people.
- extends intCell
-stringCell
- highlightScope string
- description Any string except for a blank cell.
- regex .+
 fileExtensionCell
  extends stringCell
-boolCell
- enum true false
 codeCell
  highlightScope comment
-urlCell
- highlightScope constant.language
- regex (ftp|https?)://.+
-keywordCell
- highlightScope keyword
-tokenCell
- highlightScope keyword
 searchQueryCell
  extends stringCell
-yearCell
- extends intCell
-trueBaseIdCell
- description A global identifier for this entity in a TrueBase. Currently a very restricted character set to ensure compatibility between a wide variety of URLs and filesystems.
- regex [a-z0-9\-\.]+
- highlightScope string
-externalGuidCell
- description A GUID from another site.
-errorNode
- baseNodeType errorNode
 fileNameCell
  highlightScope string
-abstractFactNode
- cells keywordCell
 abstractSectionNode
- extends abstractFactNode
- cruxFromId
- single
-abstractFlagNode
- extends abstractFactNode
- cells keywordCell
- single
-abstractArrayNode
- extends abstractFactNode
- catchAllCellType stringCell
- cells keywordCell
- listDelimiter  
-abstractPermalinksNode
- catchAllCellType trueBaseIdCell
- extends abstractArrayNode
- description Links to other entities on PLDB.
- boolean containsTrueBaseIds true
-abstractUrlNode
- cells keywordCell urlCell
- extends abstractFactNode
-abstractGitRepoUrlNode
- extends abstractUrlNode
- single
- cruxFromId
+ extends abstractTrueBaseColumnNode
 abstractDecimalNode
- cells keywordCell numberCell
- extends abstractFactNode
-abstractIntNode
- cells keywordCell intCell
- extends abstractFactNode
-abstractCountNode
- extends abstractIntNode
-abstractPopulationCountNode
- extends abstractCountNode
-abstractYearNode
- cells keywordCell yearCell
- extends abstractIntNode
-abstractAnnualPopulationCountMapNode
- catchAllNodeType annualPopulationCountNode
- description A map of counts, one per year.
- extends abstractFactNode
- single
-abstractAnnualRankMapNode
- catchAllNodeType annualRankNode
- description A map of ranks, one per year.
- extends abstractFactNode
- single
-annualRankNode
- cells yearCell rankCell
- uniqueFirstWord
-annualPopulationCountNode
- cells yearCell populationCountCell
- uniqueFirstWord
-abstractBooleanNode
- cells keywordCell boolCell
- cruxFromId
- single
-abstractStringNode
- catchAllCellType stringCell
- extends abstractFactNode
-abstractMultiwordGuidNode
- // todo Remove if we can in favor of URL guids
- cruxFromId
- cells keywordCell
- catchAllCellType externalGuidCell
- extends abstractFactNode
- single
-abstractOneWordGuidNode
- // todo Remove if we can in favor of URL guids
- cells keywordCell externalGuidCell
- extends abstractFactNode
- single
- cruxFromId
-abstractUrlGuidNode
- cells keywordCell urlCell
- extends abstractFactNode
-abstractCodeNode
+ cells columnNameCell numberCell
+ extends abstractTrueBaseColumnNode
+abstractCodeColumnNode
  catchAllNodeType lineOfCodeNode
- extends abstractFactNode
+ extends abstractTrueBaseColumnNode
  boolean includeChildrenInCsv false
  baseNodeType blobNode
-abstractDelimitedBlobNode
- baseNodeType blobNode
- boolean includeChildrenInCsv false
- extends abstractFactNode
 lineOfCodeNode
  catchAllCellType codeCell
  catchAllNodeType lineOfCodeNode
-blankCell
-blankLineNode
- description Blank lines compile to nothing in the HTML.
- cells blankCell
- compiler
-  stringTemplate 
- pattern ^$
- tags doNotSynthesize
- boolean shouldSerialize false
+ 

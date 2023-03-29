@@ -1,14 +1,14 @@
 leachim6Node
- extends abstractMultiwordGuidNode
+ extends abstractMultiwordGuidColumnNode
  description A link to this language in leachim6's hello-world project.
  string sourceDomain github.com/leachim6/hello-world
  contentKey id
  inScope fileExtensionsNode filepathNode leachim6ExampleNode
 filepathNode
  cruxFromId
- extends abstractFactNode
+ extends abstractTrueBaseColumnNode
  catchAllCellType stringCell
- cells keywordCell
+ cells columnNameCell
  single
 leachim6ExampleNode
  extends exampleNode
