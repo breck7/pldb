@@ -24,13 +24,15 @@ yearCell
 // String Cell Parsers
 stringCell
  highlightScope string
+wordCell
+ extends stringCell
  description Any string except for a blank cell.
  regex .+
 columnNameCell
  highlightScope keyword
 trueBaseIdCell
  description A global identifier for this entity in a TrueBase. Currently a very restricted character set to ensure compatibility between a wide variety of URLs and filesystems.
- regex [a-z0-9\-]+
+ regex [a-z0-9\-\.]+
  highlightScope string
 urlCell
  highlightScope constant.language
@@ -48,7 +50,7 @@ abstractTrueBaseColumnNode
 // Common string parsers
 abstractWordColumnNode
  description A single word.
- cells columnNameCell stringCell
+ cells columnNameCell wordCell
  extends abstractTrueBaseColumnNode
 abstractStringColumnNode
  catchAllCellType stringCell
