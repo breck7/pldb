@@ -91,7 +91,7 @@ abstractCountColumnNode
 // Common time parsers
 abstractYearColumnNode
  cells columnNameCell yearCell
- extends abstractIntNode
+ extends abstractIntColumnNode
 
 // Common miscellaneous parsers
 blankLineNode
