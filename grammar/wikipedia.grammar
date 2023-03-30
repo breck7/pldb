@@ -1,54 +1,35 @@
 // todo Scoping by file in Grammar lang would be really useful for this file. Also, multiple inheritance or mixins.
 wikipediaNode
- inScope wikipediaExampleNode wikipediaRelatedNode wikipediaSummaryNode wikipediaCreatedNode wikipediaDailyPageViewsNode wikipediaYearNode wikipediaBacklinksCountNode wikipediaRevisionCountNode wikipediaPageIdNode fileExtensionsNode
+ inScope fileExtensionsNode
  extends abstractSectionNode
  description URL of the entity on Wikipedia, if and only if it has a page dedicated to it.
  cells columnNameCell urlCell
  string sourceDomain wikipedia.org
  contentKey url
-wikipediaExampleNode
- extends exampleNode
- description Example(s) of this language on the Wikipedia page.
- crux example
- single false
-wikipediaRelatedNode
- description What languages does Wikipedia have as related?
- extends abstractTrueBaseLinksColumnNode
- crux related
-wikipediaSummaryNode
- description What is the text summary of the language from the Wikipedia page?
- extends abstractTrueBaseColumnNode
- baseNodeType blobNode
- boolean includeChildrenInCsv false
- single
- crux summary
-wikipediaCreatedNode
- extends abstractYearColumnNode
- crux created
- description When was the *Wikipedia page* for this entity created?
- single
-wikipediaYearNode
- extends abstractYearColumnNode
- crux appeared
- description When does Wikipedia claim this entity first appeared?
- single
-wikipediaDailyPageViewsNode
- extends abstractCountColumnNode
- crux dailyPageViews
- description How many page views per day does this Wikipedia page get? Useful as a signal for rankings. Available via WP api.
- single
-wikipediaBacklinksCountNode
- extends abstractCountColumnNode
- crux backlinksCount
- description How many pages on WP link to this page?
- single
-wikipediaRevisionCountNode
- extends abstractCountColumnNode
- crux revisionCount
- description How many revisions does this page have?
- single
-wikipediaPageIdNode
- extends abstractIntColumnNode
- crux pageId
- description What is the internal ID for this entity on WP?
- single
+ exampleNode
+  extends exampleNode
+  description Example(s) of this language on the Wikipedia page.
+ relatedNode
+  description What languages does Wikipedia have as related?
+  extends abstractTrueBaseLinksColumnNode
+ summaryNode
+  description What is the text summary of the language from the Wikipedia page?
+  extends abstractStringColumnNode
+ createdNode
+  extends abstractYearColumnNode
+  description When was the *Wikipedia page* for this entity created?
+ appearedNode
+  extends abstractYearColumnNode
+  description When does Wikipedia claim this entity first appeared?
+ dailyPageViewsNode
+  extends abstractCountColumnNode
+  description How many page views per day does this Wikipedia page get? Useful as a signal for rankings. Available via WP api.
+ backlinksCountNode
+  extends abstractCountColumnNode
+  description How many pages on WP link to this page?
+ revisionCountNode
+  extends abstractCountColumnNode
+  description How many revisions does this page have?
+ pageIdNode
+  extends abstractIntColumnNode
+  description What is the internal ID for this entity on WP?

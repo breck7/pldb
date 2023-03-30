@@ -12,14 +12,10 @@ domainNameNode
  cells columnNameCell domainNameCell
  extends abstractWordColumnNode
  contentKey name
- inScope domainRegisteredNode awisRankNode
-domainRegisteredNode
- extends abstractYearColumnNode
- description When was this domain first registered?
- crux registered
- single
-awisRankNode
- cruxFromId
- extends abstractAnnualRankMapNode
- description Alexa Web Information Service (AWIS) domain ranking.
- string sourceDomain aws.amazon.com
+ registeredNode
+  extends abstractYearColumnNode
+  description When was this domain first registered?
+ awisRankNode
+  extends abstractAnnualRankMapNode
+  description Alexa Web Information Service (AWIS) domain ranking.
+  string sourceDomain aws.amazon.com

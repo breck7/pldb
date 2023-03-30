@@ -1,10 +1,8 @@
 projectEulerNode
  extends abstractMultiwordGuidColumnNode
  description Is this language one of the ones listed on https://projecteuler.net/?
- inScope projectEulerMemberCountNode
  string sourceDomain projecteuler.net
  contentKey id
-projectEulerMemberCountNode
- crux memberCount
- description How many project euler members use this language.
- extends abstractAnnualPopulationCountMapNode
+ memberCountNode
+  description How many project euler members use this language.
+  extends abstractAnnualPopulationCountMapNode

@@ -3,29 +3,22 @@ linguistGrammarRepoNode
  extends abstractSectionNode
  cells columnNameCell urlCell
  contentKey url
- inScope linguistExampleNode linguistCommitsNode linguistFirstCommitNode linguistLastCommitNode linguistSampleCountNode linguistCommitterCountNode
  string sourceDomain github.com
-linguistExampleNode
- description An example snippet from the relevant Linguist Grammar package.
- extends exampleNode
- crux example
-linguistCommitsNode
- description How many commits in this repo?
- extends abstractCountColumnNode
- crux commitCount
-linguistFirstCommitNode
- description What year was the first commit made?
- extends abstractYearColumnNode
- crux firstCommit
-linguistLastCommitNode
- description What year was the last commit made?
- extends abstractYearColumnNode
- crux lastCommit
-linguistSampleCountNode
- description How many language samples in this repo?
- extends abstractCountColumnNode
- crux sampleCount
-linguistCommitterCountNode
- description How many people have made commits in this repo?
- extends abstractPopulationCountColumnNode
- crux committerCount
+ exampleNode
+  description An example snippet from the relevant Linguist Grammar package.
+  extends exampleNode
+ commitCountNode
+  description How many commits in this repo?
+  extends abstractCountColumnNode
+ firstCommitNode
+  description What year was the first commit made?
+  extends abstractYearColumnNode
+ lastCommitNode
+  description What year was the last commit made?
+  extends abstractYearColumnNode
+ sampleCountNode
+  description How many language samples in this repo?
+  extends abstractCountColumnNode
+ committerCountNode
+  description How many people have made commits in this repo?
+  extends abstractPopulationCountColumnNode

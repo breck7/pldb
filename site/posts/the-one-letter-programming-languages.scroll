@@ -62,7 +62,7 @@ comment
           rank: file.languageRank
         }
       })
-    console.log(new TreeNode(results).toCsv())
+    console.log(new TreeNode(results).asCsv)
   }
 
 ohayoCode

@@ -1894,9 +1894,7 @@ wikipedia`.split("\n")
   get features() {
     if (!this.quickCache.features) {
       const allGrammarNodes = Object.values(
-        this.nodeAt(0)
-          .parsed.getDefinition()
-          ._getProgramNodeTypeDefinitionCache()
+        this.nodeAt(0).parsed.definition.programNodeTypeDefinitionCache
       )
 
       const features = allGrammarNodes
@@ -1904,7 +1902,7 @@ wikipedia`.split("\n")
         .map(nodeDef => {
           const feature = new Feature(nodeDef, this)
           if (!feature.title) {
-            throw new Error(`Feature ${nodeDef.toString()} has no title.`)
+            throw new Error(`Feature ${nodeDef.asString} has no title.`)
           }
           return feature
         })
@@ -1980,7 +1978,7 @@ wikipedia`.split("\n")
     if (!this.quickCache.keywordsOneHotCsv)
       this.quickCache.keywordsOneHotCsv = new TreeNode(
         this.keywordsOneHot
-      ).toCsv()
+      ).asCsv
     return this.quickCache.keywordsOneHotCsv
   }
 

@@ -3,15 +3,9 @@ dblpNode
  extends abstractTrueBaseColumnNode
  description Publications about this language from https://dblp.org/.
  string sourceDomain dblp.org
- inScope dblpPublicationsNode
-dblpPublicationsHitsNode
- crux hits
- cells columnNameCell intCell
- description How many matching publications?
- single
-dblpPublicationsNode
- crux publications
- extends abstractDelimitedValuesBlobColumnNode
- description An inline PSV table of hits.
- cells columnNameCell
- single
+ hitsNode
+  extends abstractCountColumnNode
+  description How many matching publications?
+ publicationsNode
+  extends abstractDelimitedValuesBlobColumnNode
+  description An inline PSV table of hits.

@@ -3,14 +3,8 @@ leachim6Node
  description A link to this language in leachim6's hello-world project.
  string sourceDomain github.com/leachim6/hello-world
  contentKey id
- inScope fileExtensionsNode filepathNode leachim6ExampleNode
-filepathNode
- cruxFromId
- extends abstractTrueBaseColumnNode
- catchAllCellType stringCell
- cells columnNameCell
- single
-leachim6ExampleNode
- extends exampleNode
- crux example
- single
+ inScope fileExtensionsNode
+ exampleNode
+  extends exampleNode
+ filepathNode
+  extends abstractStringColumnNode
