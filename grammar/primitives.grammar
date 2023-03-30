@@ -6,9 +6,6 @@ fileNameCell
  highlightScope string
 abstractSectionNode
  extends abstractTrueBaseColumnNode
-abstractDecimalNode
- cells columnNameCell numberCell
- extends abstractTrueBaseColumnNode
 abstractCodeColumnNode
  catchAllNodeType lineOfCodeNode
  extends abstractTrueBaseColumnNode

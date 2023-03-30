@@ -1,16 +1,13 @@
 githubLanguageNode
  description GitHub has a set of supported languages as defined here: https://raw.githubusercontent.com/github/linguist/master/lib/linguist/languages.yml
  extends abstractMultiwordGuidColumnNode
- inScope filenamesNode
+ inScope filenamesNode fileExtensionsNode
  contentKey id
  string sourceDomain github.com
  reposNode
   boolean fromCrawler true
   extends abstractCountColumnNode
   description How many repos for this language does GitHub report?
- fileExtensionsNode
-  extends fileExtensionsNode
-  description An Array of associated extensions (the first one is considered the primary extension, the others should be listed alphabetically).
  wrapNode
   extends abstractBooleanColumnNode
   description Boolean wrap to enable line wrapping (default: false)

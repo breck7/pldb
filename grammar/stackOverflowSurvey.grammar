@@ -7,15 +7,16 @@ stackOverflowSurveyNode
   cells yearCell
   pattern \d+
   uniqueFirstWord
- usersNode
-  extends abstractPopulationCountColumnNode
-  description How many developers reported using this language.
- medianSalaryNode
-  description Median salary reported by developers using this language.
-  extends abstractIntColumnNode
- fansNode
-  description How many developers reported wanting to learn this language.
-  extends abstractPopulationCountColumnNode
- percentageUsingNode
-  description What percentage of survey respondents report using this language?
-  extends abstractDecimalNode
+  usersNode
+   extends abstractPopulationCountColumnNode
+   description How many developers reported using this language.
+  medianSalaryNode
+   description Median salary reported by developers using this language.
+   extends abstractIntColumnNode
+  fansNode
+   description How many developers reported wanting to learn this language.
+   extends abstractPopulationCountColumnNode
+  percentageUsingNode
+   description What percentage of survey respondents report using this language?
+   // todo add a percentage column type that extends from float
+   extends abstractFloatColumnNode
