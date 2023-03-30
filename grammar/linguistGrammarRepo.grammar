@@ -4,9 +4,7 @@ linguistGrammarRepoNode
  cells columnNameCell urlCell
  contentKey url
  string sourceDomain github.com
- exampleNode
-  description An example snippet from the relevant Linguist Grammar package.
-  extends exampleNode
+ inScope exampleNode
  commitCountNode
   description How many commits in this repo?
   extends abstractCountColumnNode

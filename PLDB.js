@@ -2194,7 +2194,7 @@ class PLDBServer extends TrueBaseServer {
       LANGS_FILE_SIZE_UNCOMPRESSED: numeral(
         folder.makeCsv("languages.csv").length
       ).format("0.0b"),
-      COLUMN_METADATA_TABLE: quickTree(
+      "// COLUMN_METADATA_TABLE": quickTree(
         folder.columnDocumentation,
         folder.columnsCsvOutput.columnMetadataColumnNames
       )

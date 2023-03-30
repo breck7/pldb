@@ -1,14 +1,11 @@
 // todo Scoping by file in Grammar lang would be really useful for this file. Also, multiple inheritance or mixins.
 wikipediaNode
- inScope fileExtensionsNode
+ inScope fileExtensionsNode exampleNode
  extends abstractSectionNode
  description URL of the entity on Wikipedia, if and only if it has a page dedicated to it.
  cells columnNameCell urlCell
  string sourceDomain wikipedia.org
  contentKey url
- exampleNode
-  extends exampleNode
-  description Example(s) of this language on the Wikipedia page.
  relatedNode
   description What languages does Wikipedia have as related?
   extends abstractTrueBaseLinksColumnNode

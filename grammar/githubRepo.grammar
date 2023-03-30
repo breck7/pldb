@@ -7,11 +7,9 @@ githubRepoNode
  description URL of the official GitHub repo for the project if it hosted there.
  extends abstractGitRepoUrlColumnNode
  cells columnNameCell githubRepoUrlCell
+ inScope descriptionNode
  contentKey url
  string sourceDomain github.com
- descriptionNode
-  extends descriptionNode
-  description Description of the repo on GitHub.
  createdNode
   extends abstractYearColumnNode
   description When was the *Github repo* for this entity created?

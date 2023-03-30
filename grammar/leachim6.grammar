@@ -3,8 +3,6 @@ leachim6Node
  description A link to this language in leachim6's hello-world project.
  string sourceDomain github.com/leachim6/hello-world
  contentKey id
- inScope fileExtensionsNode
- exampleNode
-  extends exampleNode
+ inScope fileExtensionsNode exampleNode
  filepathNode
   extends abstractStringColumnNode
