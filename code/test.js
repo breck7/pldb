@@ -103,7 +103,7 @@ testTree.ensureSortWorks = areEqual => {
 	const programParser = PLDB.folder.grammarProgramConstructor
 	const program = new programParser(`appeared 1923\ntitle foo`)
 	program.sortFromSortTemplate()
-	areEqual(program.toString(), "title foo\nappeared 1923")
+	areEqual(program.asString, "title foo\nappeared 1923")
 }
 
 testTree.ensureSortCausesNoSemanticChanges = areEqual => {
@@ -123,10 +123,10 @@ testTree.ensureSortCausesNoSemanticChanges = areEqual => {
 			"typed map doesnt change after sort"
 		)
 
-		const sortedOnce = file.toString()
+		const sortedOnce = file.asString
 		file.sort()
 
-		const sortedTwice = file.toString()
+		const sortedTwice = file.asString
 
 		areEqual(sortedOnce, sortedTwice, `sort is stable`)
 	})

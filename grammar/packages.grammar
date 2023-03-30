@@ -5,10 +5,9 @@ packageRepositoryNode
 centralPackageRepositoryCountNode
  extends abstractCountColumnNode
  description If you've searched for a CPM for this language and can't find one, set 0 as the count.
-packageInstallsNode
+packageInstallCountNode
  description How many packages have been downloaded?
  extends abstractCountColumnNode
- crux packageInstallCount
 packageCountNode
  description How many packages are in the repository? A package is some code with a name and a namespace, shipped as an atomic unit, with an owner(s).
  extends abstractCountColumnNode

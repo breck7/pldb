@@ -7,46 +7,29 @@ githubRepoNode
  description URL of the official GitHub repo for the project if it hosted there.
  extends abstractGitRepoUrlColumnNode
  cells columnNameCell githubRepoUrlCell
- inScope githubDescriptionNode abstractGithubYearNode abstractGithubCountNode
  contentKey url
  string sourceDomain github.com
-githubDescriptionNode
- extends descriptionNode
- crux description
- description Description of the repo on GitHub.
-
-// Year stuff
-abstractGithubYearNode
- extends abstractYearColumnNode
-githubCreatedNode
- extends abstractGithubYearNode
- crux created
- description When was the *Github repo* for this entity created?
-githubUpdatedNode
- extends abstractGithubYearNode
- crux updated
- description What year was the last commit made?
-githubFirstCommitNode
- extends abstractGithubYearNode
- crux firstCommit
- description What year the first commit made in this git repo?
-
-// Counts
-abstractGithubCountNode
- extends abstractCountColumnNode
-githubSubscribersNode
- extends abstractGithubCountNode
- crux subscribers
- description How many subscribers to the repo?
-githubForksNode
- extends abstractGithubCountNode
- crux forks
- description How many forks of the repo?
-githubStarsNode
- extends abstractGithubCountNode
- crux stars
- description How many stars of the repo?
-githubIssuesNode
- extends abstractGithubCountNode
- crux issues
- description How many isses on the repo?
+ descriptionNode
+  extends descriptionNode
+  description Description of the repo on GitHub.
+ createdNode
+  extends abstractYearColumnNode
+  description When was the *Github repo* for this entity created?
+ updatedNode
+  extends abstractYearColumnNode
+  description What year was the last commit made?
+ firstCommitNode
+  extends abstractYearColumnNode
+  description What year the first commit made in this git repo?
+ subscribersNode
+  extends abstractCountColumnNode
+  description How many subscribers to the repo?
+ forksNode
+  extends abstractCountColumnNode
+  description How many forks of the repo?
+ starsNode
+  extends abstractCountColumnNode
+  description How many stars of the repo?
+ issuesNode
+  extends abstractCountColumnNode
+  description How many isses on the repo?
