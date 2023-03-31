@@ -1,5 +1,5 @@
 stackOverflowSurveyNode
- extends abstractMultiwordGuidColumnNode
+ extends abstractHashMapColumnNode
  description StackOverflow does an annual developer survey: https://insights.stackoverflow.com/survey
  string sourceDomain insights.stackoverflow.com
  stackOverflowSurveyYearNode

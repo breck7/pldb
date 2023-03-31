@@ -30,6 +30,7 @@ wordCell
  regex .+
 columnNameCell
  highlightScope keyword
+ regex [a-zA-Z0-9]+
 trueBaseIdCell
  description A global identifier for this entity in a TrueBase. Currently a very restricted character set to ensure compatibility between a wide variety of URLs and filesystems.
  regex [a-z0-9\-\.]+
@@ -123,4 +124,8 @@ abstractOneWordGuidColumnNode
 abstractMultiwordGuidColumnNode
  description Use when you have a column that serves as a Globally Unique Identifier (GUID) where the GUID can contain spaces.
  catchAllCellType externalGuidCell
+ extends abstractTrueBaseColumnNode
+
+// Common complex Parsers
+abstractHashMapColumnNode
  extends abstractTrueBaseColumnNode
