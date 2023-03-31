@@ -40,10 +40,10 @@ githubLanguage YAML
  trendingProjectsCount 0
  type data
  filenames .clang-format .clang-tidy .gemrc CITATION.cff glide.lock yarn.lock
- ace_mode yaml
- codemirror_mode yaml
- codemirror_mime_type text/x-yaml
- tm_scope source.yaml
+ aceMode yaml
+ codemirrorMode yaml
+ codemirrorMimeType text/x-yaml
+ tmScope source.yaml
  aliases yml
  repos 525
 githubBigQuery YAML

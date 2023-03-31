@@ -35,10 +35,10 @@ githubLanguage edn
  fileExtensions edn
  trendingProjectsCount 0
  type data
- ace_mode clojure
- codemirror_mode clojure
- codemirror_mime_type text/x-clojure
- tm_scope source.clojure
+ aceMode clojure
+ codemirrorMode clojure
+ codemirrorMimeType text/x-clojure
+ tmScope source.clojure
  repos 0
 
 linguistGrammarRepo https://github.com/atom/language-clojure

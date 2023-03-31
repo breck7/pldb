@@ -216,10 +216,10 @@ githubLanguage Python
  type programming
  filenames .gclient DEPS SConscript SConstruct Snakefile wscript
  interpreters python python2 python3
- ace_mode python
- codemirror_mode python
- codemirror_mime_type text/x-python
- tm_scope source.python
+ aceMode python
+ codemirrorMode python
+ codemirrorMimeType text/x-python
+ tmScope source.python
  aliases python3 or rusthon
  repos 9300725
 githubBigQuery Python

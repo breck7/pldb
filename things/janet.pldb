@@ -47,10 +47,10 @@ githubLanguage Janet
  type programming
  fileExtensions janet
  interpreters janet
- ace_mode scheme
- codemirror_mode scheme
- codemirror_mime_type text/x-scheme
- tm_scope source.janet
+ aceMode scheme
+ codemirrorMode scheme
+ codemirrorMimeType text/x-scheme
+ tmScope source.janet
  repos 88
 
 hackerNewsDiscussions

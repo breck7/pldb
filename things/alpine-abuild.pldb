@@ -18,10 +18,10 @@ githubLanguage Alpine Abuild
  type programming
  group Shell
  filenames APKBUILD
- ace_mode sh
- codemirror_mode shell
- codemirror_mime_type text/x-sh
- tm_scope source.shell
+ aceMode sh
+ codemirrorMode shell
+ codemirrorMimeType text/x-sh
+ tmScope source.shell
  aliases abuild or apkbuild
  repos 99
 

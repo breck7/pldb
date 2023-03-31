@@ -37,10 +37,10 @@ githubLanguage Nu
  type programming
  filenames Nukefile
  interpreters nush
- ace_mode scheme
- codemirror_mode scheme
- codemirror_mime_type text/x-scheme
- tm_scope source.nu
+ aceMode scheme
+ codemirrorMode scheme
+ codemirrorMimeType text/x-scheme
+ tmScope source.nu
  aliases nush
  repos 215
 githubBigQuery Nu

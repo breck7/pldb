@@ -92,10 +92,10 @@ githubLanguage Shell
  type programming
  filenames .bash_aliases .bash_history .bash_logout .bash_profile .bashrc .cshrc .env .env.example .flaskenv .kshrc .login .profile .zlogin .zlogout .zprofile .zshenv .zshrc 9fs PKGBUILD bash_aliases bash_logout bash_profile bashrc cshrc gradlew kshrc login man profile zlogin zlogout zprofile zshenv zshrc
  interpreters ash bash dash ksh mksh pdksh rc sh zsh
- ace_mode sh
- codemirror_mode shell
- codemirror_mime_type text/x-sh
- tm_scope source.shell
+ aceMode sh
+ codemirrorMode shell
+ codemirrorMimeType text/x-sh
+ tmScope source.shell
  aliases sh or shell-script or bash or zsh
  repos 1579442
 githubBigQuery Shell

@@ -209,10 +209,10 @@ githubLanguage PHP
  type programming
  filenames .php .php_cs .php_cs.dist Phakefile
  interpreters php
- ace_mode php
- codemirror_mode php
- codemirror_mime_type application/x-httpd-php
- tm_scope text.html.php
+ aceMode php
+ codemirrorMode php
+ codemirrorMimeType application/x-httpd-php
+ tmScope text.html.php
  aliases inc
  repos 3479326
 githubBigQuery PHP

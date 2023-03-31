@@ -123,10 +123,10 @@ githubLanguage Haskell
  trendingProjectsCount 4
  type programming
  interpreters runghc runhaskell runhugs
- ace_mode haskell
- codemirror_mode haskell
- codemirror_mime_type text/x-haskell
- tm_scope source.haskell
+ aceMode haskell
+ codemirrorMode haskell
+ codemirrorMimeType text/x-haskell
+ tmScope source.haskell
  repos 126924
 githubBigQuery Haskell
  repos 29991

@@ -135,10 +135,10 @@ githubLanguage OpenRC runscript
  type programming
  group Shell
  interpreters openrc-run
- ace_mode sh
- codemirror_mode shell
- codemirror_mime_type text/x-sh
- tm_scope source.shell
+ aceMode sh
+ codemirrorMode shell
+ codemirrorMimeType text/x-sh
+ tmScope source.shell
  aliases openrc
 
 linguistGrammarRepo https://github.com/atom/language-shellscript

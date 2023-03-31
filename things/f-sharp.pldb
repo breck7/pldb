@@ -130,10 +130,10 @@ githubLanguage F#
   dotnet fsharp https://github.com/dotnet.png https://github.com/dotnet/fsharp F# #b845fc 1919 476 39 "The F# compiler, FSharp.Core library, and tools for F#"
  trendingProjectsCount 2
  type programming
- ace_mode text
- codemirror_mode mllike
- codemirror_mime_type text/x-fsharp
- tm_scope source.fsharp
+ aceMode text
+ codemirrorMode mllike
+ codemirrorMimeType text/x-fsharp
+ tmScope source.fsharp
  aliases fsharp
 githubBigQuery F#
  repos 5877

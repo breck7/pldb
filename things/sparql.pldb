@@ -52,10 +52,10 @@ githubLanguage SPARQL
  fileExtensions sparql rq
  trendingProjectsCount 0
  type data
- ace_mode text
- codemirror_mode sparql
- codemirror_mime_type application/sparql-query
- tm_scope source.sparql
+ aceMode text
+ codemirrorMode sparql
+ codemirrorMimeType application/sparql-query
+ tmScope source.sparql
  repos 0
 
 antlr https://github.com/antlr/grammars-v4/tree/master/sparql
