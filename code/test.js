@@ -100,8 +100,8 @@ testTree.ensureNoErrorsInDb = areEqual => {
 }
 
 testTree.ensureSortWorks = areEqual => {
-	const programParser = PLDB.folder.grammarProgramConstructor
-	const program = new programParser(`appeared 1923\ntitle foo`)
+	const parser = PLDB.folder.rootParser
+	const program = new parser(`appeared 1923\ntitle foo`)
 	program.sortFromSortTemplate()
 	areEqual(program.asString, "title foo\nappeared 1923")
 }
