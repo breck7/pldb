@@ -41,10 +41,10 @@ githubLanguage CameLIGO
  type programming
  fileExtensions religo
  group LigoLANG
- ace_mode rust
- codemirror_mode rust
- codemirror_mime_type text/x-rustsrc
- tm_scope source.religo
+ aceMode rust
+ codemirrorMode rust
+ codemirrorMimeType text/x-rustsrc
+ tmScope source.religo
  repos 0
 
 monaco pascaligo

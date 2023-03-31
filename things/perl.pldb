@@ -114,10 +114,10 @@ githubLanguage Perl
  type programming
  filenames Makefile.PL Rexfile ack cpanfile
  interpreters cperl perl
- ace_mode perl
- codemirror_mode perl
- codemirror_mime_type text/x-perl
- tm_scope source.perl
+ aceMode perl
+ codemirrorMode perl
+ codemirrorMimeType text/x-perl
+ tmScope source.perl
  aliases cperl
  repos 169830
 githubBigQuery Perl

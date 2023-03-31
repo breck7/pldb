@@ -22,10 +22,10 @@ githubLanguage RMarkdown
  fileExtensions qmd rmd
  trendingProjectsCount 0
  type prose
- ace_mode markdown
- codemirror_mode gfm
- codemirror_mime_type text/x-gfm
- tm_scope source.gfm
+ aceMode markdown
+ codemirrorMode gfm
+ codemirrorMimeType text/x-gfm
+ tmScope source.gfm
  wrap true
  repos 198
 

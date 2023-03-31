@@ -81,10 +81,10 @@ githubLanguage CoffeeScript
  type programming
  filenames Cakefile
  interpreters coffee
- ace_mode coffee
- codemirror_mode coffeescript
- codemirror_mime_type text/x-coffeescript
- tm_scope source.coffee
+ aceMode coffee
+ codemirrorMode coffeescript
+ codemirrorMimeType text/x-coffeescript
+ tmScope source.coffee
  aliases coffee or coffee-script
  repos 64590
 githubBigQuery CoffeeScript

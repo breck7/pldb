@@ -188,10 +188,10 @@ githubLanguage Ruby
  type programming
  filenames .irbrc .pryrc .simplecov Appraisals Berksfile Brewfile Buildfile Capfile Dangerfile Deliverfile Fastfile Gemfile Guardfile Jarfile Mavenfile Podfile Puppetfile Rakefile Snapfile Steepfile Thorfile Vagrantfile buildfile
  interpreters ruby macruby rake jruby rbx
- ace_mode ruby
- codemirror_mode ruby
- codemirror_mime_type text/x-ruby
- tm_scope source.ruby
+ aceMode ruby
+ codemirrorMode ruby
+ codemirrorMimeType text/x-ruby
+ tmScope source.ruby
  aliases jruby or macruby or rake or rb or rbx
  repos 2659551
 githubBigQuery Ruby

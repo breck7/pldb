@@ -100,10 +100,10 @@ githubLanguage R
  type programming
  filenames .Rprofile expr-dist
  interpreters Rscript
- ace_mode r
- codemirror_mode r
- codemirror_mime_type text/x-rsrc
- tm_scope source.r
+ aceMode r
+ codemirrorMode r
+ codemirrorMimeType text/x-rsrc
+ tmScope source.r
  aliases R or Rscript or splus
  repos 689533
 githubBigQuery R

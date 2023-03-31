@@ -8,8 +8,8 @@ originCommunity https://github.com/UniversalDependencies
 githubLanguage CoNLL-U
  fileExtensions conllu conll
  type data
- ace_mode text
- tm_scope text.conllu
+ aceMode text
+ tmScope text.conllu
  aliases CoNLL or CoNLL-X
 
 linguistGrammarRepo https://github.com/odanoburu/conllu-linguist-grammar

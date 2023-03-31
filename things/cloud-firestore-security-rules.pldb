@@ -8,10 +8,10 @@ originCommunity Google
 githubLanguage Cloud Firestore Security Rules
  type data
  filenames firestore.rules
- ace_mode less
- codemirror_mode css
- codemirror_mime_type text/css
- tm_scope source.firestore
+ aceMode less
+ codemirrorMode css
+ codemirrorMimeType text/css
+ tmScope source.firestore
 
 linguistGrammarRepo https://github.com/jaysquared/atom-firestore-grammar
  firstCommit 2017

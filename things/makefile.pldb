@@ -92,10 +92,10 @@ githubLanguage Makefile
  type programming
  filenames BSDmakefile GNUmakefile Kbuild Makefile Makefile.am Makefile.boot Makefile.frag Makefile.in Makefile.inc Makefile.wat makefile makefile.sco mkfile
  interpreters make
- ace_mode makefile
- codemirror_mode cmake
- codemirror_mime_type text/x-cmake
- tm_scope source.makefile
+ aceMode makefile
+ codemirrorMode cmake
+ codemirrorMimeType text/x-cmake
+ tmScope source.makefile
  aliases bsdmake or make or mf
  repos 247622
 githubBigQuery Makefile

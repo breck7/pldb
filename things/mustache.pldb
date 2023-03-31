@@ -29,10 +29,10 @@ githubRepo https://github.com/mustache/mustache
 githubLanguage Mustache
  type markup
  fileExtensions mustache
- ace_mode smarty
- codemirror_mode smarty
- codemirror_mime_type text/x-smarty
- tm_scope text.html.smarty
+ aceMode smarty
+ codemirrorMode smarty
+ codemirrorMimeType text/x-smarty
+ tmScope text.html.smarty
  repos 6085
 githubBigQuery Mustache
  repos 616

@@ -345,10 +345,10 @@ githubLanguage JavaScript
  type programming
  filenames Jakefile
  interpreters chakra d8 gjs js node nodejs qjs rhino v8 v8-shell
- ace_mode javascript
- codemirror_mode javascript
- codemirror_mime_type text/javascript
- tm_scope source.js
+ aceMode javascript
+ codemirrorMode javascript
+ codemirrorMimeType text/javascript
+ tmScope source.js
  aliases js or node
  repos 16046489
 githubBigQuery JavaScript

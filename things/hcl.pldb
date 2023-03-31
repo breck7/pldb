@@ -54,10 +54,10 @@ githubLanguage HCL
   terraform-aws-modules terraform-aws-vpc https://github.com/terraform-aws-modules.png https://github.com/terraform-aws-modules/terraform-aws-vpc HCL #ccc 770 732 32 "Terraform module which creates VPC resources on AWS"
  trendingProjectsCount 6
  type programming
- ace_mode ruby
- codemirror_mode ruby
- codemirror_mime_type text/x-ruby
- tm_scope source.terraform
+ aceMode ruby
+ codemirrorMode ruby
+ codemirrorMimeType text/x-ruby
+ tmScope source.terraform
  aliases HashiCorp Configuration Language or terraform
  repos 180390
 githubBigQuery HCL

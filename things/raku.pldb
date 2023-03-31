@@ -67,10 +67,10 @@ githubLanguage Raku
  type programming
  fileExtensions 6pl 6pm nqp p6 p6l p6m pl pl6 pm pm6 raku rakumod t
  interpreters perl6 raku rakudo
- ace_mode perl
- codemirror_mode perl
- codemirror_mime_type text/x-perl
- tm_scope source.raku
+ aceMode perl
+ codemirrorMode perl
+ codemirrorMimeType text/x-perl
+ tmScope source.raku
  aliases perl6 or perl-6
  repos 2521
 githubBigQuery Raku

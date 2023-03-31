@@ -99,10 +99,10 @@ githubLanguage Erlang
  type programming
  filenames Emakefile rebar.config rebar.config.lock rebar.lock
  interpreters escript
- ace_mode erlang
- codemirror_mode erlang
- codemirror_mime_type text/x-erlang
- tm_scope source.erlang
+ aceMode erlang
+ codemirrorMode erlang
+ codemirrorMimeType text/x-erlang
+ tmScope source.erlang
  repos 28645
 githubBigQuery Erlang
  repos 14920
