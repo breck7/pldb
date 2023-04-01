@@ -1,6 +1,6 @@
 populationCountCell
- description A positive integer representing a number of people.
- extends intCell
+ description A count of people.
+ extends countCell
 abstractPopulationCountColumnNode
  extends abstractCountColumnNode
 annualPopulationCountNode
