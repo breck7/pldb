@@ -5,7 +5,7 @@ appearedNode
 isDeadNode
  description Has the creator or maintainer announced it officially dead? Include a link to proof of the announcement.
  extends abstractBooleanColumnNode
- cells columnNameCell boolCell urlCell
+ catchAllNodeType urlCitationNode
 nativeLanguageWordCell
  description The name of a natural language like English or Japanese.
 nativeLanguageNode

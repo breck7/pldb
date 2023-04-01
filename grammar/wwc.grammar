@@ -40,6 +40,8 @@ urlCell
  regex (ftp|https?)://.+
 externalGuidCell
  description A GUID from another site.
+fileNameCell
+ highlightScope string
 
 // Line Parsers
 // The main line parser. Anything extending this will be included in the CSV dumps.
@@ -71,7 +73,9 @@ abstractStringListColumnNode
 abstractEnumColumnNode
  cells columnNameCell enumCell
  extends abstractTrueBaseColumnNode
-abstractStringBlobNode
+
+// Common blob parsers
+abstractStringBlobColumnNode
  extends abstractTrueBaseColumnNode
  baseNodeType blobNode
  javascript
@@ -80,10 +84,11 @@ abstractStringBlobNode
   }
 abstractDelimitedValuesBlobColumnNode
  description A CSV, TSV, or other delimited blob of text.
- baseNodeType blobNode
  // todo: figure out how we want to dump these in CSV export.
- boolean includeChildrenInCsv false
- extends abstractTrueBaseColumnNode
+ extends abstractStringBlobColumnNode
+abstractCodeColumnNode
+ extends abstractStringBlobColumnNode
+ baseNodeType blobNode
 
 // Links between TrueBase files
 abstractTrueBaseLinksColumnNode
@@ -122,6 +127,9 @@ blankLineNode
  boolean shouldSerialize false
 trueBaseErrorNode
  baseNodeType errorNode
+urlCitationNode
+ description Can serve as a catch all for linking to a source for columns.
+ cells urlCell
 
 // URL Parsers
 abstractUrlColumnNode
