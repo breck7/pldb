@@ -14,97 +14,96 @@ releaseNotesUrl https://docs.julialang.org/en/v1/NEWS/
 
 visualParadigm false
 
-features
- hasMacros true
-  # https://jkrumbiegel.com/pages/2021-06-07-macros-for-beginners/
-  macro show_value(variable)
-      quote
-          println("The ", $(string(variable)), " you passed is ", $(esc(variable)))
-      end
-  end
-  
-  @show_value(orange)
-  @show_value(apple)
- hasStrings true
-  "hello world"
- hasMultipleDispatch true
-  collide_with(x::Asteroid, y::Asteroid) = ... # deal with asteroid hitting asteroid
-  collide_with(x::Asteroid, y::Spaceship) = ... # deal with asteroid hitting spaceship
-  collide_with(x::Spaceship, y::Asteroid) = ... # deal with spaceship hitting asteroid
-  collide_with(x::Spaceship, y::Spaceship) = ... # deal with spaceship hitting spaceship
- hasUnicodeIdentifiers true
-  δ = 0.00001
- hasComments true
-  # This is a comment
- hasMultiLineComments true
-  #=
-  A comment.
-  =#
- hasGarbageCollection true
- hasBooleans true
- hasIntegers true
-  80766866
- hasPrintDebugging true
-  print("hello world")
- hasImports true
-  # Files and file names are mostly unrelated to modules; modules are associated only with module expressions.
-  # One can have multiple files per module, and multiple modules per file:
-  using MyModule
-  using MyModule: x, p
-  import MyModule
-  import MyModule.x, MyModule.p
-  import MyModule: x, p
-  module Foo
-  include("file1.jl")
-  include("file2.jl")
-  end
- hasMixins true
-  # Including the same code in different modules provides mixin-like behavior.
-  module Normal
-  include("mycode.jl")
-  end
-  
-  module Testing
-  include("safe_operators.jl")
-  include("mycode.jl")
-  end
- hasPipes true
-  [1,2,3] |> (y -> f(3, y))
- hasSemanticIndentation false
- hasCaseInsensitiveIdentifiers false
- hasModules true
-  module MyModule
-  using Lib
-  
-  using BigLib: thing1, thing2
-  
-  import Base.show
-  
-  export MyType, foo
-  
-  struct MyType
-      x
-  end
-  
-  bar(x) = 2x
-  foo(a::MyType) = bar(a.x) + 1
-  
-  show(io::IO, a::MyType) = print(io, "MyType $(a.x)")
-  end
- hasLineComments true
-  # A comment
- hasWhileLoops true
- hasConstants true
- hasFunctions true
- hasConditionals true
- hasOctals true
-  # 0o[0-7]+((_[0-7]+)+)?
- hasHexadecimals true
-  # 0x[a-fA-F0-9]+((_[a-fA-F0-9]+)+)?
- hasFloats true
-  # (\d+((_\d+)+)?\.(?!\.)(\d+((_\d+)+)?)?|\.\d+((_\d+)+)?)([eEf][+-]?[0-9]+)?
- hasBinaryNumbers true
-  # 0b[01]+((_[01]+)+)?
+hasMacros true
+ # https://jkrumbiegel.com/pages/2021-06-07-macros-for-beginners/
+ macro show_value(variable)
+     quote
+         println("The ", $(string(variable)), " you passed is ", $(esc(variable)))
+     end
+ end
+ 
+ @show_value(orange)
+ @show_value(apple)
+hasStrings true
+ "hello world"
+hasMultipleDispatch true
+ collide_with(x::Asteroid, y::Asteroid) = ... # deal with asteroid hitting asteroid
+ collide_with(x::Asteroid, y::Spaceship) = ... # deal with asteroid hitting spaceship
+ collide_with(x::Spaceship, y::Asteroid) = ... # deal with spaceship hitting asteroid
+ collide_with(x::Spaceship, y::Spaceship) = ... # deal with spaceship hitting spaceship
+hasUnicodeIdentifiers true
+ δ = 0.00001
+hasComments true
+ # This is a comment
+hasMultiLineComments true
+ #=
+ A comment.
+ =#
+hasGarbageCollection true
+hasBooleans true
+hasIntegers true
+ 80766866
+hasPrintDebugging true
+ print("hello world")
+hasImports true
+ # Files and file names are mostly unrelated to modules; modules are associated only with module expressions.
+ # One can have multiple files per module, and multiple modules per file:
+ using MyModule
+ using MyModule: x, p
+ import MyModule
+ import MyModule.x, MyModule.p
+ import MyModule: x, p
+ module Foo
+ include("file1.jl")
+ include("file2.jl")
+ end
+hasMixins true
+ # Including the same code in different modules provides mixin-like behavior.
+ module Normal
+ include("mycode.jl")
+ end
+ 
+ module Testing
+ include("safe_operators.jl")
+ include("mycode.jl")
+ end
+hasPipes true
+ [1,2,3] |> (y -> f(3, y))
+hasSemanticIndentation false
+hasCaseInsensitiveIdentifiers false
+hasModules true
+ module MyModule
+ using Lib
+ 
+ using BigLib: thing1, thing2
+ 
+ import Base.show
+ 
+ export MyType, foo
+ 
+ struct MyType
+     x
+ end
+ 
+ bar(x) = 2x
+ foo(a::MyType) = bar(a.x) + 1
+ 
+ show(io::IO, a::MyType) = print(io, "MyType $(a.x)")
+ end
+hasLineComments true
+ # A comment
+hasWhileLoops true
+hasConstants true
+hasFunctions true
+hasConditionals true
+hasOctals true
+ # 0o[0-7]+((_[0-7]+)+)?
+hasHexadecimals true
+ # 0x[a-fA-F0-9]+((_[a-fA-F0-9]+)+)?
+hasFloats true
+ # (\d+((_\d+)+)?\.(?!\.)(\d+((_\d+)+)?)?|\.\d+((_\d+)+)?)([eEf][+-]?[0-9]+)?
+hasBinaryNumbers true
+ # 0b[01]+((_[01]+)+)?
 
 lineCommentToken #
 multiLineCommentTokens #= =#

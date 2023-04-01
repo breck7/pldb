@@ -9,10 +9,9 @@ domainName chaiscript.com
  awisRank
   2022 11052396
 
-features
- hasHexadecimals true
- hasFloats true
- hasIntegers true
+hasHexadecimals true
+hasFloats true
+hasIntegers true
 
 example
  #include <chaiscript/chaiscript.hpp>

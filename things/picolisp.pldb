@@ -12,12 +12,11 @@ domainName picolisp.com
   2022 5670205
   2017 9031045
 
-features
- isLisp true
- hasComments true
- hasLineComments true
-  # A comment
- hasSemanticIndentation false
+isLisp true
+hasComments true
+hasLineComments true
+ # A comment
+hasSemanticIndentation false
 
 lineCommentToken #
 

@@ -2,19 +2,18 @@ title SourcePawn
 appeared 2014
 type pl
 
-features
- hasMultiLineComments true
-  /* A comment
-  */
- hasComments true
-  /* A comment
-  */
- hasSemanticIndentation false
- hasOctals true
- hasHexadecimals true
- hasFloats true
- hasIntegers true
- hasLineComments true
+hasMultiLineComments true
+ /* A comment
+ */
+hasComments true
+ /* A comment
+ */
+hasSemanticIndentation false
+hasOctals true
+hasHexadecimals true
+hasFloats true
+hasIntegers true
+hasLineComments true
 
 multiLineCommentTokens /* */
 

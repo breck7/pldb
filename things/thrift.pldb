@@ -5,10 +5,9 @@ website http://thrift.apache.org/
 originCommunity Apache
 domainName thrift.apache.org
 
-features
- hasHexadecimals true
- hasFloats true
- hasIntegers true
+hasHexadecimals true
+hasFloats true
+hasIntegers true
 
 example
  enum PhoneType {

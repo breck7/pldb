@@ -4,10 +4,9 @@ type pl
 country Switzerland
 originCommunity International Organization for Standardization && International Electrotechnical Commission
 
-features
- hasPrintDebugging true
- hasStrings true
-  "Hello world"
+hasPrintDebugging true
+hasStrings true
+ "Hello world"
 
 printToken standard-output
 stringToken "

@@ -6,16 +6,15 @@ documentation https://www.w3.org/TR/xquery-31/
 fileExtensions xq xql xqm xqy xquery
 originCommunity W3C
 
-features
- hasComments true
-  (: Hello World with XQuery :)
- hasLineComments false
- hasSemanticIndentation false
- hasCaseInsensitiveIdentifiers false
- hasStrings true
-  "Hello world"
- hasFloats true
- hasIntegers true
+hasComments true
+ (: Hello World with XQuery :)
+hasLineComments false
+hasSemanticIndentation false
+hasCaseInsensitiveIdentifiers false
+hasStrings true
+ "Hello world"
+hasFloats true
+hasIntegers true
 
 stringToken "
 

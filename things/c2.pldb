@@ -9,28 +9,27 @@ domainName c2lang.org
 
 related c c3
 
-features
- hasAccessModifiers true
- hasAssignment true
- hasBinaryOperators true
- hasBitWiseOperators true
- hasBlobs false
- hasBooleans true
- hasBreak true
- hasBuiltInRegex false
- hasCaseInsensitiveIdentifiers false
- hasClasses false
- hasComments true
- hasConditionals true
- hasConstants true
- hasConstructors false
- hasContinue true
- hasDirectives true
- hasEnums true
- hasStructs true
- hasStrings true
- hasUnionTypes true
- hasUnaryOperators true
+hasAccessModifiers true
+hasAssignment true
+hasBinaryOperators true
+hasBitWiseOperators true
+hasBlobs false
+hasBooleans true
+hasBreak true
+hasBuiltInRegex false
+hasCaseInsensitiveIdentifiers false
+hasClasses false
+hasComments true
+hasConditionals true
+hasConstants true
+hasConstructors false
+hasContinue true
+hasDirectives true
+hasEnums true
+hasStructs true
+hasStrings true
+hasUnionTypes true
+hasUnaryOperators true
 
 githubRepo https://github.com/c2lang/c2compiler
  firstCommit 2013

@@ -8,12 +8,11 @@ reference https://homes.cs.washington.edu/~emina/pubs/rosette.onward13.pdf
 country United States
 originCommunity University of California, Berkeley
 
-features
- hasLineComments true
-  ; A comment
- hasComments true
-  ; A comment
- hasSemanticIndentation false
+hasLineComments true
+ ; A comment
+hasComments true
+ ; A comment
+hasSemanticIndentation false
 
 lineCommentToken ;
 

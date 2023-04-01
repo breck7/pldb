@@ -11,11 +11,10 @@ domainName cython.org
 
 supersetOf python
 
-features
- hasOctals true
- hasHexadecimals true
- hasFloats true
- hasIntegers true
+hasOctals true
+hasHexadecimals true
+hasFloats true
+hasIntegers true
 
 wikipedia https://en.wikipedia.org/wiki/Cython
  example

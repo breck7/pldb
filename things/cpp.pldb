@@ -18,138 +18,137 @@ supersetOf c
 
 visualParadigm false
 
-features
- hasPartialApplication true
-  // http://www.cplusplus.com/reference/functional/bind/
-  // bind example
-  #include <iostream>     // std::cout
-  #include <functional>   // std::bind
+hasPartialApplication true
+ // http://www.cplusplus.com/reference/functional/bind/
+ // bind example
+ #include <iostream>     // std::cout
+ #include <functional>   // std::bind
+ 
+ // a function: (also works with function object: std::divides<double> my_divide;)
+ double my_divide (double x, double y) {return x/y;}
+ 
+ struct MyPair {
+   double a,b;
+   double multiply() {return a*b;}
+ };
+ 
+ int main () {
+   using namespace std::placeholders;    // adds visibility of _1, _2, _3,...
+ 
+   // binding functions:
+   auto fn_five = std::bind (my_divide,10,2);               // returns 10/2
+   std::cout << fn_five() << '\n';                          // 5
+ 
+   auto fn_half = std::bind (my_divide,_1,2);               // returns x/2
+   std::cout << fn_half(10) << '\n';                        // 5
+ 
+   auto fn_invert = std::bind (my_divide,_2,_1);            // returns y/x
+   std::cout << fn_invert(10,2) << '\n';                    // 0.2
+ 
+   auto fn_rounding = std::bind<int> (my_divide,_1,_2);     // returns int(x/y)
+   std::cout << fn_rounding(10,3) << '\n';                  // 3
+ 
+   MyPair ten_two {10,2};
+ 
+   // binding members:
+   auto bound_member_fn = std::bind (&MyPair::multiply,_1); // returns x.multiply()
+   std::cout << bound_member_fn(ten_two) << '\n';           // 20
+ 
+   auto bound_member_data = std::bind (&MyPair::a,ten_two); // returns ten_two.a
+   std::cout << bound_member_data() << '\n';                // 10
+ 
+   return 0;
+ }
+hasSingleDispatch true
+hasMagicGettersAndSetters false
+hasConstructors true
+ class Foobar {
+  public:
+   Foobar(double r = 1.0,
+          double alpha = 0.0)  // Constructor, parameters with default values.
+       : x_(r * cos(alpha))    // <- Initializer list
+   {
+     y_ = r * sin(alpha);  // <- Normal assignment
+   }
+ 
+  private:
+   double x_;
+   double y_;
+ };
+ Foobar a,
+        b(3),
+        c(5, M_PI/4);
+hasIterators true
+ std::vector<int> items;
+ items.push_back(5);  // Append integer value '5' to vector 'items'.
+ items.push_back(2);  // Append integer value '2' to vector 'items'.
+ items.push_back(9);  // Append integer value '9' to vector 'items'.
+ 
+ for (auto it = items.begin(); it != items.end(); ++it) {  // Iterate through 'items'.
+   std::cout << *it;  // And print value of 'items' for current index.
+ }
+hasFunctionOverloading true
+ // volume of a cube
+ int volume(const int s) {
+  return s*s*s;
+ }
+ // volume of a cylinder
+ double volume(const double r, const int h) {
+   return 3.1415926*r*r*static_cast<double>(h);
+ }
+hasNamespaces true
+ #include <iostream>
+ using namespace std;
+ 
+ // Variable created inside namespace
+ namespace first
+ {
+   int val = 500;
+ }
   
-  // a function: (also works with function object: std::divides<double> my_divide;)
-  double my_divide (double x, double y) {return x/y;}
-  
-  struct MyPair {
-    double a,b;
-    double multiply() {return a*b;}
-  };
-  
-  int main () {
-    using namespace std::placeholders;    // adds visibility of _1, _2, _3,...
-  
-    // binding functions:
-    auto fn_five = std::bind (my_divide,10,2);               // returns 10/2
-    std::cout << fn_five() << '\n';                          // 5
-  
-    auto fn_half = std::bind (my_divide,_1,2);               // returns x/2
-    std::cout << fn_half(10) << '\n';                        // 5
-  
-    auto fn_invert = std::bind (my_divide,_2,_1);            // returns y/x
-    std::cout << fn_invert(10,2) << '\n';                    // 0.2
-  
-    auto fn_rounding = std::bind<int> (my_divide,_1,_2);     // returns int(x/y)
-    std::cout << fn_rounding(10,3) << '\n';                  // 3
-  
-    MyPair ten_two {10,2};
-  
-    // binding members:
-    auto bound_member_fn = std::bind (&MyPair::multiply,_1); // returns x.multiply()
-    std::cout << bound_member_fn(ten_two) << '\n';           // 20
-  
-    auto bound_member_data = std::bind (&MyPair::a,ten_two); // returns ten_two.a
-    std::cout << bound_member_data() << '\n';                // 10
-  
-    return 0;
-  }
- hasSingleDispatch true
- hasMagicGettersAndSetters false
- hasConstructors true
-  class Foobar {
-   public:
-    Foobar(double r = 1.0,
-           double alpha = 0.0)  // Constructor, parameters with default values.
-        : x_(r * cos(alpha))    // <- Initializer list
-    {
-      y_ = r * sin(alpha);  // <- Normal assignment
-    }
-  
-   private:
-    double x_;
-    double y_;
-  };
-  Foobar a,
-         b(3),
-         c(5, M_PI/4);
- hasIterators true
-  std::vector<int> items;
-  items.push_back(5);  // Append integer value '5' to vector 'items'.
-  items.push_back(2);  // Append integer value '2' to vector 'items'.
-  items.push_back(9);  // Append integer value '9' to vector 'items'.
-  
-  for (auto it = items.begin(); it != items.end(); ++it) {  // Iterate through 'items'.
-    std::cout << *it;  // And print value of 'items' for current index.
-  }
- hasFunctionOverloading true
-  // volume of a cube
-  int volume(const int s) {
-   return s*s*s;
-  }
-  // volume of a cylinder
-  double volume(const double r, const int h) {
-    return 3.1415926*r*r*static_cast<double>(h);
-  }
- hasNamespaces true
-  #include <iostream>
-  using namespace std;
-  
-  // Variable created inside namespace
-  namespace first
-  {
-    int val = 500;
-  }
-   
-  // Global variable
-  int val = 100;
-  // Ways to do it: https://en.cppreference.com/w/cpp/language/namespace
-  namespace ns_name { declarations }
-  inline namespace ns_name { declarations }
-  namespace { declarations }
-  ns_name::name
-  using namespace ns_name;
-  using ns_name::name;
-  namespace name = qualified-namespace ;
-  namespace ns_name::inline(since C++20)(optional) name { declarations } 
- hasMultipleInheritance true
- hasOperatorOverloading true
- hasTemplates true
-  template <int length>
-  Vector<length>& Vector<length>::operator+=(const Vector<length>& rhs)
-  {
-      for (int i = 0; i < length; ++i)
-          value[i] += rhs.value[i];
-      return *this;
-  }
- hasVirtualFunctions true
-  class Animal {
-   public:
-    // Intentionally not virtual:
-    void Move(void) {
-      std::cout << "This animal moves in some way" << std::endl;
-    }
-    virtual void Eat(void) = 0;
-  };
-  
-  // The class "Animal" may possess a definition for Eat if desired.
-  class Llama : public Animal {
-   public:
-    // The non virtual function Move is inherited but not overridden.
-    void Eat(void) override {
-      std::cout << "Llamas eat grass!" << std::endl;
-    }
-  };
- hasThreads true
- hasClasses true
- hasExceptions true
- hasAccessModifiers true
+ // Global variable
+ int val = 100;
+ // Ways to do it: https://en.cppreference.com/w/cpp/language/namespace
+ namespace ns_name { declarations }
+ inline namespace ns_name { declarations }
+ namespace { declarations }
+ ns_name::name
+ using namespace ns_name;
+ using ns_name::name;
+ namespace name = qualified-namespace ;
+ namespace ns_name::inline(since C++20)(optional) name { declarations } 
+hasMultipleInheritance true
+hasOperatorOverloading true
+hasTemplates true
+ template <int length>
+ Vector<length>& Vector<length>::operator+=(const Vector<length>& rhs)
+ {
+     for (int i = 0; i < length; ++i)
+         value[i] += rhs.value[i];
+     return *this;
+ }
+hasVirtualFunctions true
+ class Animal {
+  public:
+   // Intentionally not virtual:
+   void Move(void) {
+     std::cout << "This animal moves in some way" << std::endl;
+   }
+   virtual void Eat(void) = 0;
+ };
+ 
+ // The class "Animal" may possess a definition for Eat if desired.
+ class Llama : public Animal {
+  public:
+   // The non virtual function Move is inherited but not overridden.
+   void Eat(void) override {
+     std::cout << "Llamas eat grass!" << std::endl;
+   }
+ };
+hasThreads true
+hasClasses true
+hasExceptions true
+hasAccessModifiers true
 
 lineCommentToken //
 multiLineCommentTokens /* */

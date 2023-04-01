@@ -14,61 +14,60 @@ domainName swift.org
 
 visualParadigm false
 
-features
- hasVariableSubstitutionSyntax false
- hasAssignment true
-  let label = UILabel()
- hasStrings true
-  "hello world"
- hasSingleDispatch true
- hasComments true
- hasImports true
-  import UIKit
-  import UIKit.UITableViewController
-  let tvc = UITableViewController()
-  let vc = UIViewController()
-  let label = UILabel()
- hasInterfaces true
-  protocol MyProtocol {
-  init(parameter: Int)
-  var myVariable: Int { get set }
-  var myReadOnlyProperty: Int { get }
-  func myMethod()
-  func myMethodWithBody()
-  }
-  extension MyProtocol {
-  func myMethodWithBody() {
-    // implementation goes here
-    }
-  }
- hasOperatorOverloading true
- hasSemanticIndentation false
- hasCaseInsensitiveIdentifiers false
- hasTypeInference true
- hasLineComments true
-  // A comment
- hasPrintDebugging true
- hasMultiLineComments true
-  /* A comment
-  */
- isCaseSensitive true
- hasBooleans true
- hasWhileLoops true
- hasClasses true
- hasExceptions true
- hasSwitch true
- hasAccessModifiers true
- hasConditionals true
- hasOctals true
-  // 0o[0-7_]+
- hasHexadecimals true
-  // 0x[0-9a-fA-F_]+
- hasFloats true
-  // [0-9][0-9_]*(\.[0-9_]+[eE][+\-]?[0-9_]+|\.[0-9_]*|[eE][+\-]?[0-9_]+)
- hasIntegers true
-  // [0-9][0-9_]*
- hasBinaryNumbers true
-  // 0b[01_]+
+hasVariableSubstitutionSyntax false
+hasAssignment true
+ let label = UILabel()
+hasStrings true
+ "hello world"
+hasSingleDispatch true
+hasComments true
+hasImports true
+ import UIKit
+ import UIKit.UITableViewController
+ let tvc = UITableViewController()
+ let vc = UIViewController()
+ let label = UILabel()
+hasInterfaces true
+ protocol MyProtocol {
+ init(parameter: Int)
+ var myVariable: Int { get set }
+ var myReadOnlyProperty: Int { get }
+ func myMethod()
+ func myMethodWithBody()
+ }
+ extension MyProtocol {
+ func myMethodWithBody() {
+   // implementation goes here
+   }
+ }
+hasOperatorOverloading true
+hasSemanticIndentation false
+hasCaseInsensitiveIdentifiers false
+hasTypeInference true
+hasLineComments true
+ // A comment
+hasPrintDebugging true
+hasMultiLineComments true
+ /* A comment
+ */
+isCaseSensitive true
+hasBooleans true
+hasWhileLoops true
+hasClasses true
+hasExceptions true
+hasSwitch true
+hasAccessModifiers true
+hasConditionals true
+hasOctals true
+ // 0o[0-7_]+
+hasHexadecimals true
+ // 0x[0-9a-fA-F_]+
+hasFloats true
+ // [0-9][0-9_]*(\.[0-9_]+[eE][+\-]?[0-9_]+|\.[0-9_]*|[eE][+\-]?[0-9_]+)
+hasIntegers true
+ // [0-9][0-9_]*
+hasBinaryNumbers true
+ // 0b[01_]+
 
 lineCommentToken //
 multiLineCommentTokens /* */

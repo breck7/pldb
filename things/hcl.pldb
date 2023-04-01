@@ -6,18 +6,17 @@ documentation https://developer.hashicorp.com/terraform/language/syntax/configur
 standsFor HashiCorp configuration language
 originCommunity HashiCorp
 
-features
- hasLineComments true
-  // A comment
- hasComments true
-  // A comment
- hasSemanticIndentation false
- hasStrings true
- hasMultiLineComments true
-  /* A comment
-  */
- hasBooleans true
- hasConditionals true
+hasLineComments true
+ // A comment
+hasComments true
+ // A comment
+hasSemanticIndentation false
+hasStrings true
+hasMultiLineComments true
+ /* A comment
+ */
+hasBooleans true
+hasConditionals true
 
 lineCommentToken //
 multiLineCommentTokens /* */

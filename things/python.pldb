@@ -19,151 +19,150 @@ releaseNotesUrl https://docs.python.org/3/whatsnew/
 
 visualParadigm false
 
-features
- hasVariableSubstitutionSyntax false
- hasMacros false
- hasEnums false
-  # Though there is an Enum class in stdlib https://peps.python.org/pep-0435/
- canWriteToDisk true
-  with open('helloworld.txt', 'w') as filehandle:
-   filehandle.write('Hello, world!\n')
- hasDuckTyping true
- hasSingleDispatch true
- hasRegularExpressionsSyntaxSugar false
- hasCaseInsensitiveIdentifiers false
- hasTernaryOperators true
-  print(1 if 1 else 0)
- hasBitWiseOperators true
-  x << y
- canDoShebang true
-  #!/usr/bin/env python
- hasSymbolTables true
-  # https://eli.thegreenplace.net/2010/09/18/python-internals-symbol-tables-part-1
- hasDynamicProperties true
-  class Person (object):
-    def __init__(self, name):
+hasVariableSubstitutionSyntax false
+hasMacros false
+hasEnums false
+ # Though there is an Enum class in stdlib https://peps.python.org/pep-0435/
+canWriteToDisk true
+ with open('helloworld.txt', 'w') as filehandle:
+  filehandle.write('Hello, world!\n')
+hasDuckTyping true
+hasSingleDispatch true
+hasRegularExpressionsSyntaxSugar false
+hasCaseInsensitiveIdentifiers false
+hasTernaryOperators true
+ print(1 if 1 else 0)
+hasBitWiseOperators true
+ x << y
+canDoShebang true
+ #!/usr/bin/env python
+hasSymbolTables true
+ # https://eli.thegreenplace.net/2010/09/18/python-internals-symbol-tables-part-1
+hasDynamicProperties true
+ class Person (object):
+   def __init__(self, name):
+    self.name = name
+ 
+ person = Person("John")
+ person.age = 50
+hasBooleans true
+hasClasses true
+ class Person (object):
+   def __init__(self, name):
      self.name = name
-  
-  person = Person("John")
-  person.age = 50
- hasBooleans true
- hasClasses true
-  class Person (object):
-    def __init__(self, name):
-      self.name = name
- hasConditionals true
-  if True:
-   print("Hello world")
- hasComments true
-  # This is a comment
- hasMultiLineComments true
-  ''' A comment.
-  '''
- hasConstructors true
- hasGenerators true
-  https://wiki.python.org/moin/Generators
- hasDirectives true
-  from __future__ import feature
-  # coding=<encoding name>
- hasAssignment true
-  name = "John"
- hasImports true
-  import datetime
-  oTime = datetime.datetime.now()
-  from my_pkg import my_funcs
- hasInfixNotation true
-  seven = 3 + 4
- hasIterators true
-  https://www.w3schools.com/python/python_iterators.asp
- hasMixins true
-  # https://easyaspython.com/mixins-for-fun-and-profit-cb9962760556
-  class EssentialFunctioner(LoggerMixin, object):
- hasMultilineStrings true
-  template = """This is the first line.
-  This is the second line.
-  This is the third line."""
- hasPointers false
- hasIntegers true
-  pldb = 80766866
- hasUnitsOfMeasure false
- hasLists true
-  myList = [1, 2, 3, 4, 5]
- hasMultipleInheritance true
-  class Base1:
-      pass
-  class Base2:
-      pass
-  class MultiDerived(Base1, Base2):
-      pass
-  # Or multilevel inheritance:
-  class Base:
-      pass
-  class Derived1(Base):
-      pass
-  class Derived2(Derived1):
-      pass
- hasOperatorOverloading true
-  # Python Program illustrate how  
-  # to overload an binary + operator 
-    
-  class A: 
-      def __init__(self, a): 
-          self.a = a 
-    
-      # adding two objects  
-      def __add__(self, o): 
-          return self.a + o.a  
-  ob1 = A(1) 
-  ob2 = A(2) 
-  ob3 = A("Geeks") 
-  ob4 = A("For") 
-    
-  print(ob1 + ob2) 
-  print(ob3 + ob4)
- hasSemanticIndentation true
-  class Person (object):
-    def __init__(self, name):
-      self.name = name
- hasInheritance true
-  class SumComputer(object):
-     def __init__(self, a, b):
-         self.a = a
-         self.b = b
-     def transform(self, x):
-         raise NotImplementedError
-     def inputs(self):
-         return range(self.a, self.b)
-     def compute(self):
-         return sum(self.transform(value) for value in self.inputs())
-   class SquareSumComputer(SumComputer):
-       def transform(self, x):
-           return x * x
-   class CubeSumComputer(SumComputer):
-       def transform(self, x):
-           return x * x * x
- hasStrings true
-  "hello world"
- hasZeroBasedNumbering true
- hasDisposeBlocks true
-  with resource_context_manager() as resource:
-     # Perform actions with the resource.
-  # Perform other actions where the resource is guaranteed to be deallocated.
- hasLineComments true
-  # A comment
- hasThreads true
- hasPrintDebugging true
- isCaseSensitive true
- hasWhileLoops true
- hasFunctions true
- hasOctals true
-  # 0[oO](?:_?[0-7])+
- hasHexadecimals true
-  # 0[xX](?:_?[a-fA-F0-9])+
- hasFloats true
-  # (\d(?:_?\d)*\.(?:\d(?:_?\d)*)?|(?:\d(?:_?\d)*)?\.\d(?:_?\d)*)([eE][+-]?\d(?:_?\d)*)?
- hasBinaryNumbers true
-  # 0[bB](?:_?[01])+
- hasScientificNotation true
+hasConditionals true
+ if True:
+  print("Hello world")
+hasComments true
+ # This is a comment
+hasMultiLineComments true
+ ''' A comment.
+ '''
+hasConstructors true
+hasGenerators true
+ https://wiki.python.org/moin/Generators
+hasDirectives true
+ from __future__ import feature
+ # coding=<encoding name>
+hasAssignment true
+ name = "John"
+hasImports true
+ import datetime
+ oTime = datetime.datetime.now()
+ from my_pkg import my_funcs
+hasInfixNotation true
+ seven = 3 + 4
+hasIterators true
+ https://www.w3schools.com/python/python_iterators.asp
+hasMixins true
+ # https://easyaspython.com/mixins-for-fun-and-profit-cb9962760556
+ class EssentialFunctioner(LoggerMixin, object):
+hasMultilineStrings true
+ template = """This is the first line.
+ This is the second line.
+ This is the third line."""
+hasPointers false
+hasIntegers true
+ pldb = 80766866
+hasUnitsOfMeasure false
+hasLists true
+ myList = [1, 2, 3, 4, 5]
+hasMultipleInheritance true
+ class Base1:
+     pass
+ class Base2:
+     pass
+ class MultiDerived(Base1, Base2):
+     pass
+ # Or multilevel inheritance:
+ class Base:
+     pass
+ class Derived1(Base):
+     pass
+ class Derived2(Derived1):
+     pass
+hasOperatorOverloading true
+ # Python Program illustrate how  
+ # to overload an binary + operator 
+   
+ class A: 
+     def __init__(self, a): 
+         self.a = a 
+   
+     # adding two objects  
+     def __add__(self, o): 
+         return self.a + o.a  
+ ob1 = A(1) 
+ ob2 = A(2) 
+ ob3 = A("Geeks") 
+ ob4 = A("For") 
+   
+ print(ob1 + ob2) 
+ print(ob3 + ob4)
+hasSemanticIndentation true
+ class Person (object):
+   def __init__(self, name):
+     self.name = name
+hasInheritance true
+ class SumComputer(object):
+    def __init__(self, a, b):
+        self.a = a
+        self.b = b
+    def transform(self, x):
+        raise NotImplementedError
+    def inputs(self):
+        return range(self.a, self.b)
+    def compute(self):
+        return sum(self.transform(value) for value in self.inputs())
+  class SquareSumComputer(SumComputer):
+      def transform(self, x):
+          return x * x
+  class CubeSumComputer(SumComputer):
+      def transform(self, x):
+          return x * x * x
+hasStrings true
+ "hello world"
+hasZeroBasedNumbering true
+hasDisposeBlocks true
+ with resource_context_manager() as resource:
+    # Perform actions with the resource.
+ # Perform other actions where the resource is guaranteed to be deallocated.
+hasLineComments true
+ # A comment
+hasThreads true
+hasPrintDebugging true
+isCaseSensitive true
+hasWhileLoops true
+hasFunctions true
+hasOctals true
+ # 0[oO](?:_?[0-7])+
+hasHexadecimals true
+ # 0[xX](?:_?[a-fA-F0-9])+
+hasFloats true
+ # (\d(?:_?\d)*\.(?:\d(?:_?\d)*)?|(?:\d(?:_?\d)*)?\.\d(?:_?\d)*)([eE][+-]?\d(?:_?\d)*)?
+hasBinaryNumbers true
+ # 0[bB](?:_?[01])+
+hasScientificNotation true
 
 lineCommentToken #
 multiLineCommentTokens '''

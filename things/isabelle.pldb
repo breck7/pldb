@@ -9,18 +9,17 @@ country United Kingdom and Germany
 originCommunity University Of Cambridge && Technische Universität München
 domainName isabelle.in.tum.de
 
-features
- hasMultiLineComments true
-  (* A comment
-  *)
- hasComments true
-  (* A comment
-  *)
- hasSemanticIndentation false
- hasBooleans true
- hasOctals true
- hasHexadecimals true
- hasBinaryNumbers true
+hasMultiLineComments true
+ (* A comment
+ *)
+hasComments true
+ (* A comment
+ *)
+hasSemanticIndentation false
+hasBooleans true
+hasOctals true
+hasHexadecimals true
+hasBinaryNumbers true
 
 multiLineCommentTokens (* *)
 booleanTokens True False

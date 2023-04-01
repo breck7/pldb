@@ -6,16 +6,15 @@ aka PLSQL
 country United States
 originCommunity Oracle
 
-features
- hasLineComments true
-  -- A comment
- hasComments true
-  -- A comment
- hasPrintDebugging true
- hasSemanticIndentation false
- hasStrings true
-  'Hello world'
- hasBooleans true
+hasLineComments true
+ -- A comment
+hasComments true
+ -- A comment
+hasPrintDebugging true
+hasSemanticIndentation false
+hasStrings true
+ 'Hello world'
+hasBooleans true
 
 lineCommentToken --
 printToken dbms_output.put_line

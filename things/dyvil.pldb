@@ -6,10 +6,9 @@ website https://reddit.com/r/Dyvil
 country Germany
 originCommunity https://github.com/Dyvil
 
-features
- hasPrintDebugging true
- hasStrings true
-  'Hello world'
+hasPrintDebugging true
+hasStrings true
+ 'Hello world'
 
 printToken print
 stringToken '

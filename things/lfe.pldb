@@ -9,12 +9,11 @@ country United States
 originCommunity https://github.com/lfe
 releaseNotesUrl http://docs.lfe.io/v0.7/classic-docs/release-notes.html
 
-features
- hasLineComments true
-  ; A comment
- hasComments true
-  ; A comment
- hasSemanticIndentation false
+hasLineComments true
+ ; A comment
+hasComments true
+ ; A comment
+hasSemanticIndentation false
 
 lineCommentToken ;
 

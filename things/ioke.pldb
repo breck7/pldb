@@ -15,13 +15,12 @@ domainName ioke.org
 
 runsOnVm jvm
 
-features
- hasPrintDebugging true
- hasStrings true
-  "Hello world"
- hasHexadecimals true
- hasFloats true
- hasIntegers true
+hasPrintDebugging true
+hasStrings true
+ "Hello world"
+hasHexadecimals true
+hasFloats true
+hasIntegers true
 
 printToken println
 stringToken "

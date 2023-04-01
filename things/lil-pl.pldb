@@ -11,10 +11,9 @@ originCommunity https://github.com/JohnEarnest/Decker/issues
 related sql lua
 influencedBy hypercard
 
-features
- hasStrings true
- hasLists true
-  emptyList = ()
+hasStrings true
+hasLists true
+ emptyList = ()
 
 example
  on mode a do   # line comment

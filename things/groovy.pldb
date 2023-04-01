@@ -17,28 +17,27 @@ releaseNotesUrl http://groovy-lang.org/releases.html
 
 runsOnVm jvm
 
-features
- hasOperatorOverloading true
- hasLineComments true
-  // A comment
- hasComments true
-  // A comment
- hasPrintDebugging true
- hasMultiLineComments true
-  /* A comment
-  */
- hasSemanticIndentation false
- hasStrings true
-  "Hello world"
- hasBooleans true
- hasWhileLoops true
- hasClasses true
- hasConstants true
- hasExceptions true
- hasFunctions true
- hasSwitch true
- hasInheritance true
- hasConditionals true
+hasOperatorOverloading true
+hasLineComments true
+ // A comment
+hasComments true
+ // A comment
+hasPrintDebugging true
+hasMultiLineComments true
+ /* A comment
+ */
+hasSemanticIndentation false
+hasStrings true
+ "Hello world"
+hasBooleans true
+hasWhileLoops true
+hasClasses true
+hasConstants true
+hasExceptions true
+hasFunctions true
+hasSwitch true
+hasInheritance true
+hasConditionals true
 
 lineCommentToken //
 multiLineCommentTokens /* */

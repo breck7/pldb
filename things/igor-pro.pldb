@@ -5,13 +5,12 @@ reference https://groups.google.com/forum/#!search/igor-pro/comp.sys.mac.scitech
 country United States
 originCommunity WaveMetrics, Inc
 
-features
- hasLineComments true
-  // A comment
- hasComments true
-  // A comment
- hasSemanticIndentation false
- hasFunctions true
+hasLineComments true
+ // A comment
+hasComments true
+ // A comment
+hasSemanticIndentation false
+hasFunctions true
 
 lineCommentToken //
 keywords override ThreadSafe MultiThread static Proc Picture Prompt DoPrompt macro window function end Structure EndStructure EndMacro Menu SubMenu

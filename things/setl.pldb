@@ -6,12 +6,11 @@ description SETL is a general-purpose, high-level programming language in which 
 website http://setl.org/setl/
 country United States
 
-features
- hasComments true
- hasLineComments true
-  -- A comment
- hasPrintDebugging true
- hasSemanticIndentation false
+hasComments true
+hasLineComments true
+ -- A comment
+hasPrintDebugging true
+hasSemanticIndentation false
 
 lineCommentToken --
 printToken print

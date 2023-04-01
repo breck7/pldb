@@ -12,8 +12,7 @@ domainName scala-js.org
 
 compilesTo javascript
 
-features
- hasPrintDebugging true
+hasPrintDebugging true
 
 printToken println
 

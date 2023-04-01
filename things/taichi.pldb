@@ -6,12 +6,11 @@ description Taichi Lang is an open-source, imperative, parallel programming lang
 website https://taichi-lang.org/
 reference http://taichi.graphics/wp-content/uploads/2019/09/taichi_lang.pdf
 
-features
- hasLineComments true
-  // A comment
- hasComments true
-  // A comment
- hasSemanticIndentation false
+hasLineComments true
+ // A comment
+hasComments true
+ // A comment
+hasSemanticIndentation false
 
 lineCommentToken //
 

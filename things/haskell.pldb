@@ -16,78 +16,77 @@ domainName haskell.org
 
 visualParadigm false
 
-features
- hasStrings true
-  "hello world"
- hasRunTimeGuards true
-  f x
-   | x > 0 = 1
-   | otherwise = 0
- hasTypedHoles true
-  -- Found hole `_' with type f (Free f b)
- hasMonads true
-  -- https://stackoverflow.com/questions/44965/what-is-a-monad
-  parseExpr = parseString <|> parseNumber
-  
-  parseString = do
-          char '"'
-          x <- many (noneOf "\"")
-          char '"'
-          return (StringValue x)
-  
-  parseNumber = do
-      num <- many1 digit
-      return (NumberValue (read num))
- hasMapFunctions true
-  class Functor f where
-     fmap :: (a -> b) -> f a -> f b
-     (<$) :: a -> f b -> f a
- hasComments true
-   -- a single line comment
-   {- A multiline comment
-      which can continue for many lines
-   -}
- hasMultiLineComments true
- hasZippers true
-  -- https://wiki.haskell.org/Zipper_monad/TravelTree
- hasPatternMatching true
-  fib 0 = 1
-  fib 1 = 1
-  fib n | n >= 2
-        = fib (n-1) + fib (n-2)
- hasGarbageCollection true
- hasDirectives true
-  {-# INLINE foo #-}
- hasImports true
-  import Data.Maybe
-  import Mod as Foo
-  import Mod (x,y, (+++))
-  import qualified Mod
-  import Mod hiding (x,y,(+++))
-  import qualified Mod hiding (x,y)
- hasOperatorOverloading true
- hasSemanticIndentation true
- hasCaseInsensitiveIdentifiers false
- hasTypeInference true
- hasLineComments true
-  -- A comment
- hasFunctionComposition true
-  foo = f . g
- hasRangeOperators true
- hasPrintDebugging true
- isCaseSensitive true
- hasClasses true
- hasConditionals true
- hasOctals true
-  -- 0[oO]_*[0-7](_*[0-7])*
- hasHexadecimals true
-  -- 0[xX]_*[\da-fA-F](_*[\da-fA-F])*
- hasFloats true
-  -- 0[xX]_*[\da-fA-F](_*[\da-fA-F])*_*[pP][+-]?\d(_*\d)*
- hasIntegers true
-  -- \d(_*\d)*
- hasBinaryNumbers true
-  -- 0[bB]_*[01](_*[01])*
+hasStrings true
+ "hello world"
+hasRunTimeGuards true
+ f x
+  | x > 0 = 1
+  | otherwise = 0
+hasTypedHoles true
+ -- Found hole `_' with type f (Free f b)
+hasMonads true
+ -- https://stackoverflow.com/questions/44965/what-is-a-monad
+ parseExpr = parseString <|> parseNumber
+ 
+ parseString = do
+         char '"'
+         x <- many (noneOf "\"")
+         char '"'
+         return (StringValue x)
+ 
+ parseNumber = do
+     num <- many1 digit
+     return (NumberValue (read num))
+hasMapFunctions true
+ class Functor f where
+    fmap :: (a -> b) -> f a -> f b
+    (<$) :: a -> f b -> f a
+hasComments true
+  -- a single line comment
+  {- A multiline comment
+     which can continue for many lines
+  -}
+hasMultiLineComments true
+hasZippers true
+ -- https://wiki.haskell.org/Zipper_monad/TravelTree
+hasPatternMatching true
+ fib 0 = 1
+ fib 1 = 1
+ fib n | n >= 2
+       = fib (n-1) + fib (n-2)
+hasGarbageCollection true
+hasDirectives true
+ {-# INLINE foo #-}
+hasImports true
+ import Data.Maybe
+ import Mod as Foo
+ import Mod (x,y, (+++))
+ import qualified Mod
+ import Mod hiding (x,y,(+++))
+ import qualified Mod hiding (x,y)
+hasOperatorOverloading true
+hasSemanticIndentation true
+hasCaseInsensitiveIdentifiers false
+hasTypeInference true
+hasLineComments true
+ -- A comment
+hasFunctionComposition true
+ foo = f . g
+hasRangeOperators true
+hasPrintDebugging true
+isCaseSensitive true
+hasClasses true
+hasConditionals true
+hasOctals true
+ -- 0[oO]_*[0-7](_*[0-7])*
+hasHexadecimals true
+ -- 0[xX]_*[\da-fA-F](_*[\da-fA-F])*
+hasFloats true
+ -- 0[xX]_*[\da-fA-F](_*[\da-fA-F])*_*[pP][+-]?\d(_*\d)*
+hasIntegers true
+ -- \d(_*\d)*
+hasBinaryNumbers true
+ -- 0[bB]_*[01](_*[01])*
 
 lineCommentToken --
 multiLineCommentTokens {- -}

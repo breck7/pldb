@@ -8,12 +8,11 @@ fileExtensions mu
 country United States
 originCommunity https://github.com/akkartik/mu/issues
 
-features
- hasLineComments true
-  # A comment
- hasComments true
-  # A comment
- hasSemanticIndentation false
+hasLineComments true
+ # A comment
+hasComments true
+ # A comment
+hasSemanticIndentation false
 
 lineCommentToken #
 

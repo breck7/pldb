@@ -6,15 +6,14 @@ documentation https://www.ibm.com/support/pages/ibm-spss-statistics-28-documenta
 country United States
 releaseNotesUrl https://www.ibm.com/support/pages/ibm-spss-statistics-200-release-notess
 
-features
- hasComments true
-  * A comment where first character must be *.
- hasLineComments false
- hasPrintDebugging true
- hasSemanticIndentation false
- hasCaseInsensitiveIdentifiers true
- hasStrings true
-  "Hello world"
+hasComments true
+ * A comment where first character must be *.
+hasLineComments false
+hasPrintDebugging true
+hasSemanticIndentation false
+hasCaseInsensitiveIdentifiers true
+hasStrings true
+ "Hello world"
 
 printToken print
 stringToken "

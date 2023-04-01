@@ -7,16 +7,15 @@ originCommunity https://github.com/ponylang
 domainName ponylang.org
  registered 2015
 
-features
- hasPrintDebugging true
- hasStrings true
-  "Hello world"
- hasHexadecimals true
- hasFloats true
- hasIntegers true
- hasLineComments true
- hasMultiLineComments true
- hasComments true
+hasPrintDebugging true
+hasStrings true
+ "Hello world"
+hasHexadecimals true
+hasFloats true
+hasIntegers true
+hasLineComments true
+hasMultiLineComments true
+hasComments true
 
 printToken env.out.print
 stringToken "

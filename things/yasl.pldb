@@ -4,12 +4,11 @@ type pl
 reference https://www.reddit.com/r/ProgrammingLanguages/comments/diiqwt/request_for_feedback_on_pattern_matchingtype/
 standsFor Yet Another Scripting Language
 
-features
- hasLineComments true
-  # A comment
- hasComments true
-  # A comment
- hasSemanticIndentation false
+hasLineComments true
+ # A comment
+hasComments true
+ # A comment
+hasSemanticIndentation false
 
 lineCommentToken #
 

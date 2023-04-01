@@ -6,17 +6,16 @@ standsFor Classroom Object Oriented Language
 country United States
 originCommunity Stanford University
 
-features
- hasLineComments true
-  -- A comment
- hasComments true
-  -- A comment
- hasPrintDebugging true
- hasMultiLineComments true
-  (* A comment
-  *)
- hasSemanticIndentation false
- hasBooleans true
+hasLineComments true
+ -- A comment
+hasComments true
+ -- A comment
+hasPrintDebugging true
+hasMultiLineComments true
+ (* A comment
+ *)
+hasSemanticIndentation false
+hasBooleans true
 
 lineCommentToken --
 multiLineCommentTokens (* *)

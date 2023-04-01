@@ -11,11 +11,10 @@ domainName cobra-language.com
  awisRank
   2017 5837168
 
-features
- hasSemanticIndentation true
- hasPrintDebugging true
- hasStrings true
-  'Hello world'
+hasSemanticIndentation true
+hasPrintDebugging true
+hasStrings true
+ 'Hello world'
 
 printToken print
 stringToken '

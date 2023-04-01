@@ -5,13 +5,12 @@ documentation https://developer.mozilla.org/en-US/docs/Web/SVG
 standsFor Scalable Vector Graphics
 originCommunity W3C
 
-features
- hasLineComments false
- hasMultiLineComments true
-  <!-- A comment
-  -->
- hasComments true
- hasSemanticIndentation false
+hasLineComments false
+hasMultiLineComments true
+ <!-- A comment
+ -->
+hasComments true
+hasSemanticIndentation false
 
 multiLineCommentTokens <!-- -->
 

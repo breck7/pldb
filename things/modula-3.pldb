@@ -11,15 +11,14 @@ domainName modula3.org
  registered 2007
 releaseNotesUrl http://www.opencm3.net/releng/relnotes-5.8.6.html
 
-features
- hasComments true
- hasLineComments false
- hasMultiLineComments true
-  (* A comment
-  *)
- hasSemanticIndentation false
- hasCaseInsensitiveIdentifiers false
- hasBooleans true
+hasComments true
+hasLineComments false
+hasMultiLineComments true
+ (* A comment
+ *)
+hasSemanticIndentation false
+hasCaseInsensitiveIdentifiers false
+hasBooleans true
 
 multiLineCommentTokens (* *)
 booleanTokens TRUE FALSE

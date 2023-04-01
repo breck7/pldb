@@ -4,11 +4,10 @@ type pl
 country United States
 originCommunity Fox Software
 
-features
- hasStrings true
-  "Hello world"
- hasLineComments true
- hasComments true
+hasStrings true
+ "Hello world"
+hasLineComments true
+hasComments true
 
 stringToken "
 

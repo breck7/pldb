@@ -14,8 +14,7 @@ domainName hazel.org
 compilesTo javascript
 writtenIn reason
 
-features
- hasTypedHoles true
+hasTypedHoles true
 
 example
  let v = {} in

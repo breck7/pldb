@@ -6,11 +6,10 @@ aka vimscript
 aka VimL
 aka vimscript viml
 
-features
- hasPrintDebugging true
- hasStrings true
-  "Hello world"
- hasHexadecimals true
+hasPrintDebugging true
+hasStrings true
+ "Hello world"
+hasHexadecimals true
 
 printToken echo
 stringToken "

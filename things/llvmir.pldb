@@ -8,12 +8,11 @@ country Various
 originCommunity https://github.com/llvm
 releaseNotesUrl https://releases.llvm.org/14.0.0/docs/ReleaseNotes.html
 
-features
- hasLineComments true
-  ; A comment
- hasComments true
-  ; A comment
- hasSemanticIndentation false
+hasLineComments true
+ ; A comment
+hasComments true
+ ; A comment
+hasSemanticIndentation false
 
 lineCommentToken ;
 

@@ -9,27 +9,26 @@ originCommunity Onux
 
 compilesTo javascript
 
-features
- hasComments true
- hasSemanticIndentation false
- hasLineComments true
-  // A comment
- hasPrintDebugging true
- hasMultiLineComments true
-  /* A comment
-  */
- hasStrings true
- hasRegularExpressionsSyntaxSugar true
- hasBooleans true
- hasWhileLoops true
- hasClasses true
- hasSwitch true
- hasInheritance true
- hasConditionals true
- hasHexadecimals true
- hasFloats true
- hasIntegers true
- hasGarbageCollection true
+hasComments true
+hasSemanticIndentation false
+hasLineComments true
+ // A comment
+hasPrintDebugging true
+hasMultiLineComments true
+ /* A comment
+ */
+hasStrings true
+hasRegularExpressionsSyntaxSugar true
+hasBooleans true
+hasWhileLoops true
+hasClasses true
+hasSwitch true
+hasInheritance true
+hasConditionals true
+hasHexadecimals true
+hasFloats true
+hasIntegers true
+hasGarbageCollection true
 
 lineCommentToken //
 multiLineCommentTokens /* */

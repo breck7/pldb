@@ -10,16 +10,15 @@ domainName frinklang.org
   2022 6494861
   2017 6486149
 
-features
- hasComments true
- hasUnitsOfMeasure true
-  10 feet 12 feet 8 feet -> gallons
- hasLineComments true
-  // A comment
- hasPrintDebugging true
- hasSemanticIndentation false
- hasStrings true
-  "Hello world"
+hasComments true
+hasUnitsOfMeasure true
+ 10 feet 12 feet 8 feet -> gallons
+hasLineComments true
+ // A comment
+hasPrintDebugging true
+hasSemanticIndentation false
+hasStrings true
+ "Hello world"
 
 lineCommentToken //
 printToken println

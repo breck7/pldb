@@ -8,16 +8,15 @@ originCommunity https://github.com/LogtalkDotOrg
 domainName logtalk.org
  registered 2002
 
-features
- hasComments true
- hasMultipleInheritance true
- hasPrintDebugging true
- hasSemanticIndentation false
- hasStrings true
-  'Hello world'
- hasOctals true
- hasHexadecimals true
- hasBinaryNumbers true
+hasComments true
+hasMultipleInheritance true
+hasPrintDebugging true
+hasSemanticIndentation false
+hasStrings true
+ 'Hello world'
+hasOctals true
+hasHexadecimals true
+hasBinaryNumbers true
 
 printToken write
 stringToken '

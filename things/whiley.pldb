@@ -10,24 +10,23 @@ domainName whiley.org
  awisRank
   2022 9928594
 
-features
- hasLineComments true
-  // A comment
- hasComments true
-  // A comment
- hasPrintDebugging true
- hasSemanticIndentation false
- hasStrings true
-  "Hello world"
- hasHexadecimals true
-  // 0x[0-9a-fA-F]+
- hasFloats true
-  // [0-9]+\.[0-9]+
- hasIntegers true
-  // [0-9]+
- hasBinaryNumbers true
-  // [01]+b
- hasMultiLineComments true
+hasLineComments true
+ // A comment
+hasComments true
+ // A comment
+hasPrintDebugging true
+hasSemanticIndentation false
+hasStrings true
+ "Hello world"
+hasHexadecimals true
+ // 0x[0-9a-fA-F]+
+hasFloats true
+ // [0-9]+\.[0-9]+
+hasIntegers true
+ // [0-9]+
+hasBinaryNumbers true
+ // [01]+b
+hasMultiLineComments true
 
 lineCommentToken //
 printToken io::println

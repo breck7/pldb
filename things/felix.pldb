@@ -8,44 +8,43 @@ reference http://web.archive.org/web/20080415185225/http://felix-lang.org/
 country Australia
 originCommunity felix-language@googlegroups.com
 
-features
- hasPointers true
-  var x = 1;
-  &x <- 2;
- hasGenerics true
-  // generics
-  fun g (x) => f (f x);
-  println$ g 1, g "hello";
-  println$ _map f (1,"hello",2.0);
- hasPolymorphism true
-  // overloads
-  fun f (x:double) => x +42.1;
-  fun f (x:int) =>  x + 1;
-  fun f (x:string) => x + "!";
- hasPatternMatching true
-  match x with
-   | Some x => println$ x; 
-   | None => println "NONE";
-   endmatch;
- hasLineComments true
-  // A comment
- hasComments true
-  // A comment
- hasPrintDebugging true
- hasSemanticIndentation false
- hasStrings true
-  "Hello world"
- hasConditionals true
- hasOctals true
-  // 0[0-7_]+([tTsSiIlLvV]|ll|LL|([iIuU])(8|16|32|64))?
- hasHexadecimals true
-  // 0[xX][0-9a-fA-F_]+([tTsSiIlLvV]|ll|LL|([iIuU])(8|16|32|64))?
- hasFloats true
-  // 0[xX]([0-9a-fA-F_]*\.[0-9a-fA-F_]+|[0-9a-fA-F_]+)[pP][+\-]?[0-9_]+[lLfFdD]?
- hasIntegers true
-  // (0|[1-9][0-9_]*)([tTsSiIlLvV]|ll|LL|([iIuU])(8|16|32|64))?
- hasBinaryNumbers true
-  // 0[Bb][01_]+([tTsSiIlLvV]|ll|LL|([iIuU])(8|16|32|64))?
+hasPointers true
+ var x = 1;
+ &x <- 2;
+hasGenerics true
+ // generics
+ fun g (x) => f (f x);
+ println$ g 1, g "hello";
+ println$ _map f (1,"hello",2.0);
+hasPolymorphism true
+ // overloads
+ fun f (x:double) => x +42.1;
+ fun f (x:int) =>  x + 1;
+ fun f (x:string) => x + "!";
+hasPatternMatching true
+ match x with
+  | Some x => println$ x; 
+  | None => println "NONE";
+  endmatch;
+hasLineComments true
+ // A comment
+hasComments true
+ // A comment
+hasPrintDebugging true
+hasSemanticIndentation false
+hasStrings true
+ "Hello world"
+hasConditionals true
+hasOctals true
+ // 0[0-7_]+([tTsSiIlLvV]|ll|LL|([iIuU])(8|16|32|64))?
+hasHexadecimals true
+ // 0[xX][0-9a-fA-F_]+([tTsSiIlLvV]|ll|LL|([iIuU])(8|16|32|64))?
+hasFloats true
+ // 0[xX]([0-9a-fA-F_]*\.[0-9a-fA-F_]+|[0-9a-fA-F_]+)[pP][+\-]?[0-9_]+[lLfFdD]?
+hasIntegers true
+ // (0|[1-9][0-9_]*)([tTsSiIlLvV]|ll|LL|([iIuU])(8|16|32|64))?
+hasBinaryNumbers true
+ // 0[Bb][01_]+([tTsSiIlLvV]|ll|LL|([iIuU])(8|16|32|64))?
 
 lineCommentToken //
 printToken println

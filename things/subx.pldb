@@ -6,12 +6,11 @@ description Author of Mu decided this year to switch implementation from C++ to 
 reference https://github.com/akkartik/mu#readme
 fileExtensions subx
 
-features
- hasLineComments true
-  # A comment
- hasComments true
-  # A comment
- hasSemanticIndentation false
+hasLineComments true
+ # A comment
+hasComments true
+ # A comment
+hasSemanticIndentation false
 
 lineCommentToken #
 

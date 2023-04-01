@@ -13,11 +13,10 @@ subsetOf treenotation
 related treenotation antlr
 influencedBy antlr yacc ebnf bnf
 
-features
- hasVariableSubstitutionSyntax false
- hasEnums true
-  boolCell
-   enum true false
+hasVariableSubstitutionSyntax false
+hasEnums true
+ boolCell
+  enum true false
 
 example
  latinNode

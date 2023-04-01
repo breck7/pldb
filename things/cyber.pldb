@@ -4,33 +4,32 @@ type pl
 description Cyber is a new language for fast, efficient, and concurrent scripting.
 website https://cyberscript.dev/
 
-features
- hasImports true
-  import m 'math'
- hasStrings true
-  'World'
- hasForEachLoops true
-  for worlds each w:
-    print 'Hello, {w}!'
- hasSemanticIndentation true
- hasFunctions true
-  func fib(n int) int:
-     coyield
-     if n < 2:
-         return n
-     return fib(n - 1) + fib(n - 2)
- hasPrintDebugging true
-  print '{res} {count}'
- hasAssignment true
-  count = 0
- hasLineComments true
-  -- Counts iterations.
- hasIntegers true
-  count = 0
- hasWhileLoops true
-  while fiber.status() != #done:
-    res = coresume fiber
-    count += 1
+hasImports true
+ import m 'math'
+hasStrings true
+ 'World'
+hasForEachLoops true
+ for worlds each w:
+   print 'Hello, {w}!'
+hasSemanticIndentation true
+hasFunctions true
+ func fib(n int) int:
+    coyield
+    if n < 2:
+        return n
+    return fib(n - 1) + fib(n - 2)
+hasPrintDebugging true
+ print '{res} {count}'
+hasAssignment true
+ count = 0
+hasLineComments true
+ -- Counts iterations.
+hasIntegers true
+ count = 0
+hasWhileLoops true
+ while fiber.status() != #done:
+   res = coresume fiber
+   count += 1
 
 example
  import m 'math'

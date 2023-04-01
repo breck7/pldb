@@ -6,21 +6,20 @@ documentation https://www.forth.com/starting-forth/
 country United States
 originCommunity National Radio Astronomy Observatory
 
-features
- hasComments true
- hasCaseInsensitiveIdentifiers true
- hasPostfixNotation true
-  \ Multiplies 25 and 10 and then adds 50 to result
-  25 10 * 50 +
- isCaseSensitive false
- hasLineComments true
-  \ A comment
- hasPrintDebugging true
- hasSemanticIndentation false
- hasHexadecimals true
-  \ (\$[0-9A-F]+)
- hasIntegers true
-  \ (\#|%|&|\-|\+)?[0-9]+
+hasComments true
+hasCaseInsensitiveIdentifiers true
+hasPostfixNotation true
+ \ Multiplies 25 and 10 and then adds 50 to result
+ 25 10 * 50 +
+isCaseSensitive false
+hasLineComments true
+ \ A comment
+hasPrintDebugging true
+hasSemanticIndentation false
+hasHexadecimals true
+ \ (\$[0-9A-F]+)
+hasIntegers true
+ \ (\#|%|&|\-|\+)?[0-9]+
 
 lineCommentToken \
 printToken .

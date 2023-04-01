@@ -6,18 +6,17 @@ aka ecl
 country Canada
 originCommunity Eclipse Foundation
 
-features
- hasLineComments true
-  % A comment
- hasComments true
-  % A comment
- hasMultiLineComments true
-  /* A comment
-  */
- hasSemanticIndentation false
- hasStrings true
- hasConstants true
- hasFunctions true
+hasLineComments true
+ % A comment
+hasComments true
+ % A comment
+hasMultiLineComments true
+ /* A comment
+ */
+hasSemanticIndentation false
+hasStrings true
+hasConstants true
+hasFunctions true
 
 lineCommentToken %
 multiLineCommentTokens /* */

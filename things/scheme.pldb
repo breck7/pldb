@@ -11,30 +11,29 @@ domainName scheme-reports.org
  registered 2009
 releaseNotesUrl https://www.scheme.com/csv6.9c/6.9c.html
 
-features
- isLisp true
- hasComments true
- hasLineComments true
-  ; A comment
- hasMacros true
-  (define-syntax backwards
-   (syntax-rules ()
-     ((_) (syntax-error "(backwards) not allowed"))
-     ((_ e) e)
-     ((_ e1 ... e2)
-      (begin e2 (backwards e1 ...)))))
- hasPrefixNotation true
-  (+ 1 2 3)
- hasHomoiconicity true
- hasPrintDebugging true
- hasMultiLineComments true
-  #| A comment
-  |#
- hasSemanticIndentation false
- hasCaseInsensitiveIdentifiers false
- hasStrings true
-  "Hello world"
- hasConditionals true
+isLisp true
+hasComments true
+hasLineComments true
+ ; A comment
+hasMacros true
+ (define-syntax backwards
+  (syntax-rules ()
+    ((_) (syntax-error "(backwards) not allowed"))
+    ((_ e) e)
+    ((_ e1 ... e2)
+     (begin e2 (backwards e1 ...)))))
+hasPrefixNotation true
+ (+ 1 2 3)
+hasHomoiconicity true
+hasPrintDebugging true
+hasMultiLineComments true
+ #| A comment
+ |#
+hasSemanticIndentation false
+hasCaseInsensitiveIdentifiers false
+hasStrings true
+ "Hello world"
+hasConditionals true
 
 lineCommentToken ;
 multiLineCommentTokens #| |#

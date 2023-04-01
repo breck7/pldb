@@ -10,9 +10,8 @@ domainName makotemplates.org
  awisRank
   2022 1811247
 
-features
- hasMultiLineComments true
- hasComments true
+hasMultiLineComments true
+hasComments true
 
 example
  <%inherit file="base.html"/>

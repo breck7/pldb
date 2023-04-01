@@ -7,13 +7,12 @@ originCommunity Microsoft
 
 writtenIn csharp
 
-features
- hasLineComments true
-  // A comment
- hasComments true
-  // A comment
- hasPrintDebugging true
- hasSemanticIndentation false
+hasLineComments true
+ // A comment
+hasComments true
+ // A comment
+hasPrintDebugging true
+hasSemanticIndentation false
 
 lineCommentToken //
 printToken print

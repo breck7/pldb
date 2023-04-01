@@ -3,10 +3,9 @@ appeared 2000
 type pl
 creators Gustaf Neumann and Uwe Zdun
 
-features
- hasPrintDebugging true
- hasStrings true
-  "Hello world"
+hasPrintDebugging true
+hasStrings true
+ "Hello world"
 
 printToken puts
 stringToken "

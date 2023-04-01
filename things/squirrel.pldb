@@ -13,14 +13,13 @@ domainName squirrel-lang.org
 
 writtenIn cpp
 
-features
- hasComments true
- hasLineComments true
-  // A comment
- hasPrintDebugging true
- hasSemanticIndentation false
- hasStrings true
-  "Hello world"
+hasComments true
+hasLineComments true
+ // A comment
+hasPrintDebugging true
+hasSemanticIndentation false
+hasStrings true
+ "Hello world"
 
 lineCommentToken //
 printToken print

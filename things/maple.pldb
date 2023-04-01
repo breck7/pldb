@@ -6,13 +6,12 @@ documentation https://www.maplesoft.com/documentation_center/
 country Canada
 originCommunity Cybernet Systems Co. Ltd
 
-features
- hasComments true
- hasLineComments true
-  # A comment
- hasPrintDebugging true
- hasSemanticIndentation false
- hasCaseInsensitiveIdentifiers false
+hasComments true
+hasLineComments true
+ # A comment
+hasPrintDebugging true
+hasSemanticIndentation false
+hasCaseInsensitiveIdentifiers false
 
 lineCommentToken #
 printToken printf

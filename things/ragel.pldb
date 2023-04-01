@@ -5,16 +5,15 @@ website http://complang.org/ragel/
 country The Netherlands
 originCommunity https://github.com/bnoordhuis/ragel/issues
 
-features
- hasLineComments true
-  # A comment
- hasComments true
-  # A comment
- hasSemanticIndentation false
- hasHexadecimals true
-  # 0x[0-9A-Fa-f]+
- hasIntegers true
-  # [+-]?[0-9]+
+hasLineComments true
+ # A comment
+hasComments true
+ # A comment
+hasSemanticIndentation false
+hasHexadecimals true
+ # 0x[0-9A-Fa-f]+
+hasIntegers true
+ # [+-]?[0-9]+
 
 lineCommentToken #
 

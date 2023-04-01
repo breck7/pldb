@@ -7,8 +7,7 @@ domainName zimbu.org
  awisRank
   2022 6795594
 
-features
- hasPrintDebugging true
+hasPrintDebugging true
 
 printToken IO.write
 

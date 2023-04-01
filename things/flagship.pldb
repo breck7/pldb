@@ -8,14 +8,13 @@ domainName flagship.de
  awisRank
   2022 11801152
 
-features
- hasLineComments true
-  // A comment
- hasComments true
-  // A comment
- hasSemanticIndentation false
- hasStrings true
-  "Hello world"
+hasLineComments true
+ // A comment
+hasComments true
+ // A comment
+hasSemanticIndentation false
+hasStrings true
+ "Hello world"
 
 lineCommentToken //
 stringToken "

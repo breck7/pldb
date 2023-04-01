@@ -5,12 +5,11 @@ documentation https://docs.oracle.com/javase/specs/jvms/se7/html/
 country United States
 originCommunity Oracle Corporation
 
-features
- hasLineComments true
-  // A comment
- hasComments true
-  // A comment
- hasSemanticIndentation false
+hasLineComments true
+ // A comment
+hasComments true
+ // A comment
+hasSemanticIndentation false
 
 lineCommentToken //
 

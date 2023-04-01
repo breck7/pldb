@@ -4,13 +4,12 @@ type pl
 website https://ajaymt.github.io/silk/
 reference https://news.ycombinator.com/item?id=22926080
 
-features
- hasLineComments true
-  // A comment
- hasComments true
-  // A comment
- hasPrintDebugging true
- hasSemanticIndentation false
+hasLineComments true
+ // A comment
+hasComments true
+ // A comment
+hasPrintDebugging true
+hasSemanticIndentation false
 
 lineCommentToken //
 printToken printf

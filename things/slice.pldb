@@ -3,15 +3,14 @@ appeared 2011
 type pl
 reference https://zeroc.com/products/ice
 
-features
- hasLineComments true
-  // A comment
- hasComments true
-  // A comment
- hasMultiLineComments true
-  /* A comment
-  */
- hasSemanticIndentation false
+hasLineComments true
+ // A comment
+hasComments true
+ // A comment
+hasMultiLineComments true
+ /* A comment
+ */
+hasSemanticIndentation false
 
 lineCommentToken //
 multiLineCommentTokens /* */

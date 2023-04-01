@@ -13,14 +13,13 @@ announcementMethod webpage
 
 compilesTo c
 
-features
- hasGarbageCollection false
- hasLazyEvaluation true
- hasLineComments true
-  __ A comment
- hasComments true
-  __ A comment
- hasSemanticIndentation false
+hasGarbageCollection false
+hasLazyEvaluation true
+hasLineComments true
+ __ A comment
+hasComments true
+ __ A comment
+hasSemanticIndentation false
 
 lineCommentToken __
 

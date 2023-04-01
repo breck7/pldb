@@ -9,23 +9,22 @@ standsFor Cascading Style Sheets
 country Switzerland
 originCommunity Conseil Européen pour la Recherche Nucléaire
 
-features
- hasEnums false
- canWriteToDisk false
- hasImports true
-  @import 'custom.css';
- hasFunctions false
- hasTernaryOperators false
- hasLineComments false
- hasComments true
-  /* This is a single-line comment */ p { color: red; }
- hasMultiLineComments true
-  /* A comment
-  */
- hasSemanticIndentation false
- hasCaseInsensitiveIdentifiers true
- hasStrings true
-  "Hello world"
+hasEnums false
+canWriteToDisk false
+hasImports true
+ @import 'custom.css';
+hasFunctions false
+hasTernaryOperators false
+hasLineComments false
+hasComments true
+ /* This is a single-line comment */ p { color: red; }
+hasMultiLineComments true
+ /* A comment
+ */
+hasSemanticIndentation false
+hasCaseInsensitiveIdentifiers true
+hasStrings true
+ "Hello world"
 
 multiLineCommentTokens /* */
 stringToken "

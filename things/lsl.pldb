@@ -6,23 +6,22 @@ standsFor Linden Scripting Language
 country United States
 originCommunity Linden Research, Inc
 
-features
- hasLineComments true
-  // A comment
- hasComments true
-  // A comment
- hasMultiLineComments true
-  /* A comment
-  */
- hasSemanticIndentation false
- hasStrings true
-  "Hello world"
- hasHexadecimals true
-  // 0[xX][0-9a-fA-F]+
- hasFloats true
-  // (\d+\.\d*|\.\d+|\d+)[eE][+-]?\d*
- hasIntegers true
-  // \d+
+hasLineComments true
+ // A comment
+hasComments true
+ // A comment
+hasMultiLineComments true
+ /* A comment
+ */
+hasSemanticIndentation false
+hasStrings true
+ "Hello world"
+hasHexadecimals true
+ // 0[xX][0-9a-fA-F]+
+hasFloats true
+ // (\d+\.\d*|\.\d+|\d+)[eE][+-]?\d*
+hasIntegers true
+ // \d+
 
 lineCommentToken //
 multiLineCommentTokens /* */

@@ -9,30 +9,29 @@ originCommunity GNU Project
 
 related troff
 
-features
- hasComments true
-  Test
-  \" comment
-  Test
-  Test
-  \# comment
-  Test
- hasMacros true
-  .de P
-  .  br
-  .  sp .8v
-  ..
- hasMultiLineComments true
-  text text text...
-  .ig
-  This is part of a large block
-  of text that has been
-  temporarily(?) commented out.
-  
-  We can restore it simply by removing
-  the .ig request and the ".." at the
-  end of the block.
-  ..
+hasComments true
+ Test
+ \" comment
+ Test
+ Test
+ \# comment
+ Test
+hasMacros true
+ .de P
+ .  br
+ .  sp .8v
+ ..
+hasMultiLineComments true
+ text text text...
+ .ig
+ This is part of a large block
+ of text that has been
+ temporarily(?) commented out.
+ 
+ We can restore it simply by removing
+ the .ig request and the ".." at the
+ end of the block.
+ ..
 
 lineCommentToken \" \#
 multiLineCommentTokens .ig

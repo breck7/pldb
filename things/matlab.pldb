@@ -11,35 +11,34 @@ releaseNotesUrl https://www.mathworks.com/help/matlab/release-notes.html
 
 visualParadigm true
 
-features
- hasStrings true
-  "hello world"
- hasComments true
-  % This is a comment
- hasMultiLineComments true
-  %{
-  A comment.
-  %}
- hasConstructors true
- hasExplicitTypeCasting true
-  b = cast(a, 'like', p)
- hasImports true
-  import pkg.cls1
-  import pkg.pkfcn
- hasIterators true
-  % Define an array of integers
-  myArray = [1,3,5,7,11,13];
-  
-  for n = myArray
-     % ... do something with n
-     disp(n)  % Echo integer to Command Window
-  end
- hasOperatorOverloading true
- hasLineComments true
-  % A comment
- hasPrintDebugging true
- hasSemanticIndentation false
- hasScientificNotation true
+hasStrings true
+ "hello world"
+hasComments true
+ % This is a comment
+hasMultiLineComments true
+ %{
+ A comment.
+ %}
+hasConstructors true
+hasExplicitTypeCasting true
+ b = cast(a, 'like', p)
+hasImports true
+ import pkg.cls1
+ import pkg.pkfcn
+hasIterators true
+ % Define an array of integers
+ myArray = [1,3,5,7,11,13];
+ 
+ for n = myArray
+    % ... do something with n
+    disp(n)  % Echo integer to Command Window
+ end
+hasOperatorOverloading true
+hasLineComments true
+ % A comment
+hasPrintDebugging true
+hasSemanticIndentation false
+hasScientificNotation true
 
 lineCommentToken %
 multiLineCommentTokens %{ %}

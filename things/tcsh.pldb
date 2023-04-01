@@ -3,10 +3,9 @@ appeared 1983
 type pl
 country United States
 
-features
- hasPrintDebugging true
- hasStrings true
-  "Hello world"
+hasPrintDebugging true
+hasStrings true
+ "Hello world"
 
 printToken echo
 stringToken "

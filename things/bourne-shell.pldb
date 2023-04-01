@@ -4,10 +4,9 @@ type pl
 country United States
 originCommunity Bell Telephone
 
-features
- canDoShebang true
-  #!/bin/sh -x
- hasHereDocs true
+canDoShebang true
+ #!/bin/sh -x
+hasHereDocs true
 
 wikipedia https://en.wikipedia.org/wiki/Bourne_shell
  related unix algol-68 c almquist-shell bash rc linux

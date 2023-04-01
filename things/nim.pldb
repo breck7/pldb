@@ -19,39 +19,38 @@ domainName nim-lang.org
 compilesTo c cpp objective-c javascript
 writtenIn nim
 
-features
- hasComments true
- hasTemplates true
-  # https://hookrace.net/blog/introduction-to-metaprogramming-in-nim/#templates
-  template debug*(args: varargs[string, `$`]) =
-  if logLevel <= Level.debug:
-    const module = instantiationInfo().filename[0 .. ^5]
-    echo "[$# $#][$#]: $#" % [getDateStr(), getClockStr(),
-      module, join args]
- hasMacros true
-  # https://hookrace.net/blog/introduction-to-metaprogramming-in-nim/#macros
-  import macros
-  dumpTree:
-   result = 10
- hasSemanticIndentation true
- hasCaseInsensitiveIdentifiers true
-  # Though they may be phased out:
-  # https://github.com/nim-lang/RFCs/issues/456
- hasStaticTyping true
- hasLineComments true
-  # A comment
- hasPrintDebugging true
- hasMultiLineComments true
-  #[ A comment
-  ]#
- hasAssignment true
- hasStrings true
-  "Hello world"
- hasBooleans true
-   let res = true
- hasGotos false
- hasUnicodeIdentifiers true
-  let δ = 0.00001
+hasComments true
+hasTemplates true
+ # https://hookrace.net/blog/introduction-to-metaprogramming-in-nim/#templates
+ template debug*(args: varargs[string, `$`]) =
+ if logLevel <= Level.debug:
+   const module = instantiationInfo().filename[0 .. ^5]
+   echo "[$# $#][$#]: $#" % [getDateStr(), getClockStr(),
+     module, join args]
+hasMacros true
+ # https://hookrace.net/blog/introduction-to-metaprogramming-in-nim/#macros
+ import macros
+ dumpTree:
+  result = 10
+hasSemanticIndentation true
+hasCaseInsensitiveIdentifiers true
+ # Though they may be phased out:
+ # https://github.com/nim-lang/RFCs/issues/456
+hasStaticTyping true
+hasLineComments true
+ # A comment
+hasPrintDebugging true
+hasMultiLineComments true
+ #[ A comment
+ ]#
+hasAssignment true
+hasStrings true
+ "Hello world"
+hasBooleans true
+  let res = true
+hasGotos false
+hasUnicodeIdentifiers true
+ let δ = 0.00001
 
 lineCommentToken #
 multiLineCommentTokens #[ ]#

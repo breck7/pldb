@@ -14,18 +14,17 @@ domainName jsoftware.com
 
 visualParadigm false
 
-features
- hasComments true
- hasLineComments true
-  NB. A comment
- hasPrintDebugging true
- hasSemanticIndentation false
- hasStrings true
-  'Hello world'
- hasFloats true
-  NB. _?\d+\.(?=\d+)
- hasIntegers true
-  NB. _?\d+
+hasComments true
+hasLineComments true
+ NB. A comment
+hasPrintDebugging true
+hasSemanticIndentation false
+hasStrings true
+ 'Hello world'
+hasFloats true
+ NB. _?\d+\.(?=\d+)
+hasIntegers true
+ NB. _?\d+
 
 lineCommentToken NB.
 printToken echo

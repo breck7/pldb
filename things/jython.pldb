@@ -4,10 +4,9 @@ type pl
 country United States and United Kingdom
 originCommunity https://github.com/jython
 
-features
- hasPrintDebugging true
- hasStrings true
-  "Hello world"
+hasPrintDebugging true
+hasStrings true
+ "Hello world"
 
 printToken print
 stringToken "

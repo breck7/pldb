@@ -7,17 +7,16 @@ aka emacslisp
 country United States
 originCommunity GNU Project
 
-features
- isLisp true
- hasLineComments true
-  ; A comment
- hasComments true
-  ; A comment
- hasPrintDebugging true
- hasMultiLineComments false
- hasSemanticIndentation false
- hasStrings true
-  "Hello world"
+isLisp true
+hasLineComments true
+ ; A comment
+hasComments true
+ ; A comment
+hasPrintDebugging true
+hasMultiLineComments false
+hasSemanticIndentation false
+hasStrings true
+ "Hello world"
 
 lineCommentToken ;
 printToken print

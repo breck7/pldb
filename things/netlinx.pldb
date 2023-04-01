@@ -6,15 +6,14 @@ fileExtensions axserb axierb
 country United States
 originCommunity AMX, LLC
 
-features
- hasLineComments true
-  // A comment
- hasComments true
-  // A comment
- hasMultiLineComments true
-  (* A comment
-  *)
- hasSemanticIndentation false
+hasLineComments true
+ // A comment
+hasComments true
+ // A comment
+hasMultiLineComments true
+ (* A comment
+ *)
+hasSemanticIndentation false
 
 lineCommentToken //
 multiLineCommentTokens (* *)

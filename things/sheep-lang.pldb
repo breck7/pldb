@@ -6,11 +6,10 @@ description New scripting/querying/ipc/programming language I created for Amiga 
 website http://strlen.com/sheep-language/
 reference https://www.osnews.com/story/169/interview-wouter-van-oortmerssen-on-sheep/
 
-features
- hasSemanticIndentation true
-  define pythtree ax:real ay:real bx:real by:real depth:int do
-     cx = ax-ay+by
-   end
+hasSemanticIndentation true
+ define pythtree ax:real ay:real bx:real by:real depth:int do
+    cx = ax-ay+by
+  end
 
 example
  — Tree of Pythagoras

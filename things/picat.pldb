@@ -11,10 +11,9 @@ domainName picat-lang.org
 
 related prolog
 
-features
- hasPrintDebugging true
- hasStrings true
-  "Hello world"
+hasPrintDebugging true
+hasStrings true
+ "Hello world"
 
 printToken println
 stringToken "

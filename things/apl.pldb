@@ -10,16 +10,15 @@ originCommunity Harvard University
 
 visualParadigm false
 
-features
- hasComments true
- hasGarbageCollection true
- hasLineComments true
-  ⍝ A comment
- hasFunctionComposition true
-  foo←f∘g
- hasSemanticIndentation false
- hasStrings true
-  'Hello world'
+hasComments true
+hasGarbageCollection true
+hasLineComments true
+ ⍝ A comment
+hasFunctionComposition true
+ foo←f∘g
+hasSemanticIndentation false
+hasStrings true
+ 'Hello world'
 
 lineCommentToken ⍝
 stringToken '

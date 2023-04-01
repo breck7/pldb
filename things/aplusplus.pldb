@@ -4,10 +4,9 @@ type pl
 country Germany
 originCommunity Bull's Software-Haus
 
-features
- hasPrintDebugging true
- hasStrings true
-  "Hello world"
+hasPrintDebugging true
+hasStrings true
+ "Hello world"
 
 printToken print
 stringToken "

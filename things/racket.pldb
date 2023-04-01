@@ -15,40 +15,39 @@ releaseNotesUrl https://docs.racket-lang.org/release/index.html
 
 visualParadigm false
 
-features
- hasStrings true
-  "hello world"
- isLisp true
- hasSymbolTables true
-  ;; Some programming languages allow the symbol table to be manipulated at run-time, so that symbols can be added at any time.
- hasComments true
- hasImports true
-  (require (prefix-in tcp: racket/tcp))
- hasMacros true
-  ; https://docs.racket-lang.org/guide/macros.html
-  (define-syntax-rule (swap x y)
-  (let ([tmp x])
-    (set! x y)
-    (set! y tmp)))
- hasMixins true
-  (mixin (interface-expr ...) (interface-expr ...)
-   class-clause ...)
- hasPrefixNotation true
-  (+ 1 2 3)
- hasModules true
-  (module nest racket
-     (provide (for-syntax meta-eggs)
-              (for-meta 1 meta-chicks)
-              num-eggs)
-     (define-for-syntax meta-eggs 2)
-     (define-for-syntax meta-chicks 3)
-     (define num-eggs 2))
- hasLineComments true
-  ; A comment
- hasHomoiconicity true
- hasPrintDebugging true
- hasSemanticIndentation false
- hasCaseInsensitiveIdentifiers false
+hasStrings true
+ "hello world"
+isLisp true
+hasSymbolTables true
+ ;; Some programming languages allow the symbol table to be manipulated at run-time, so that symbols can be added at any time.
+hasComments true
+hasImports true
+ (require (prefix-in tcp: racket/tcp))
+hasMacros true
+ ; https://docs.racket-lang.org/guide/macros.html
+ (define-syntax-rule (swap x y)
+ (let ([tmp x])
+   (set! x y)
+   (set! y tmp)))
+hasMixins true
+ (mixin (interface-expr ...) (interface-expr ...)
+  class-clause ...)
+hasPrefixNotation true
+ (+ 1 2 3)
+hasModules true
+ (module nest racket
+    (provide (for-syntax meta-eggs)
+             (for-meta 1 meta-chicks)
+             num-eggs)
+    (define-for-syntax meta-eggs 2)
+    (define-for-syntax meta-chicks 3)
+    (define num-eggs 2))
+hasLineComments true
+ ; A comment
+hasHomoiconicity true
+hasPrintDebugging true
+hasSemanticIndentation false
+hasCaseInsensitiveIdentifiers false
 
 lineCommentToken ;
 printToken display

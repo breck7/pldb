@@ -6,12 +6,11 @@ standsFor Apollo Guidance Computer
 country United States
 originCommunity MIT Instrumentation Laboratory && Charles Stark Draper Laboratory && Raytheon
 
-features
- hasLineComments true
-  # A comment
- hasComments true
-  # A comment
- hasSemanticIndentation false
+hasLineComments true
+ # A comment
+hasComments true
+ # A comment
+hasSemanticIndentation false
 
 lineCommentToken #
 

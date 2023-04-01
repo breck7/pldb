@@ -5,12 +5,11 @@ creators Mike Cowlishaw
 country United States
 originCommunity IBM
 
-features
- hasComments true
- hasPrintDebugging true
- hasSemanticIndentation false
- hasStrings true
-  'Hello world'
+hasComments true
+hasPrintDebugging true
+hasSemanticIndentation false
+hasStrings true
+ 'Hello world'
 
 printToken say
 stringToken '

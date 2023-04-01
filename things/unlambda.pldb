@@ -5,11 +5,10 @@ creators David Madore
 website http://www.madore.org/~david/programs/unlambda/
 country United States
 
-features
- hasComments true
- hasLineComments true
-  # A comment
- hasSemanticIndentation false
+hasComments true
+hasLineComments true
+ # A comment
+hasSemanticIndentation false
 
 lineCommentToken #
 

@@ -17,38 +17,37 @@ releaseNotesUrl https://ocaml.org/releases
 
 visualParadigm false
 
-features
- hasLineComments false
- hasComments true
-  (* This is a single-line comment. *)
-  (* This is a
-   * multi-line
-   * comment.
-   *)
- hasMultipleInheritance true
- hasTypeInference true
- hasModules true
-  (* In OCaml, every piece of code is wrapped into a module. *)
-  (* amodule.ml *)
-  let hello () = print_endline "Hello"
-  (* bmodule.ml *)
-  Amodule.hello ()
- hasMultiLineComments true
-  (* A comment
+hasLineComments false
+hasComments true
+ (* This is a single-line comment. *)
+ (* This is a
+  * multi-line
+  * comment.
   *)
- hasPrintDebugging true
- hasSemanticIndentation false
- hasCaseInsensitiveIdentifiers false
- hasBooleans true
- hasWhileLoops true
- hasClasses true
- hasFunctions true
- hasConditionals true
- hasOctals true
- hasHexadecimals true
- hasFloats true
- hasIntegers true
- hasBinaryNumbers true
+hasMultipleInheritance true
+hasTypeInference true
+hasModules true
+ (* In OCaml, every piece of code is wrapped into a module. *)
+ (* amodule.ml *)
+ let hello () = print_endline "Hello"
+ (* bmodule.ml *)
+ Amodule.hello ()
+hasMultiLineComments true
+ (* A comment
+ *)
+hasPrintDebugging true
+hasSemanticIndentation false
+hasCaseInsensitiveIdentifiers false
+hasBooleans true
+hasWhileLoops true
+hasClasses true
+hasFunctions true
+hasConditionals true
+hasOctals true
+hasHexadecimals true
+hasFloats true
+hasIntegers true
+hasBinaryNumbers true
 
 multiLineCommentTokens (* *)
 printToken print_string

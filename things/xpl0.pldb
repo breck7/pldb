@@ -2,12 +2,11 @@ title XPL0
 appeared 1976
 type pl
 
-features
- hasComments true
- hasPrintDebugging true
- hasSemanticIndentation false
- hasStrings true
-  "Hello world"
+hasComments true
+hasPrintDebugging true
+hasSemanticIndentation false
+hasStrings true
+ "Hello world"
 
 printToken Text
 stringToken "

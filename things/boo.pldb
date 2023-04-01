@@ -7,25 +7,24 @@ documentation https://bootest.readthedocs.io/en/latest/
 country Brasil
 originCommunity The Boo Programming Language
 
-features
- hasSemanticIndentation true
- hasTypeInference true
- hasLineComments true
-  # A comment
- hasComments true
-  # A comment
- hasPrintDebugging true
- hasStrings true
-  "Hello world"
- hasOctals true
-  # 0\d+
- hasHexadecimals true
-  # 0x[a-fA-F0-9]+
- hasFloats true
-  # (\d+\.\d*|\d*\.\d+)([fF][+-]?[0-9]+)?
- hasIntegers true
-  # \d+
- hasMultiLineComments true
+hasSemanticIndentation true
+hasTypeInference true
+hasLineComments true
+ # A comment
+hasComments true
+ # A comment
+hasPrintDebugging true
+hasStrings true
+ "Hello world"
+hasOctals true
+ # 0\d+
+hasHexadecimals true
+ # 0x[a-fA-F0-9]+
+hasFloats true
+ # (\d+\.\d*|\d*\.\d+)([fF][+-]?[0-9]+)?
+hasIntegers true
+ # \d+
+hasMultiLineComments true
 
 lineCommentToken #
 printToken print

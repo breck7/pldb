@@ -5,14 +5,13 @@ creators James Jianbo Huang
 country Unknown
 originCommunity https://github.com/metaprgmr/Judoscript/issues
 
-features
- hasLineComments true
-  // A comment
- hasComments true
-  // A comment
- hasSemanticIndentation false
- hasStrings true
-  "Hello world"
+hasLineComments true
+ // A comment
+hasComments true
+ // A comment
+hasSemanticIndentation false
+hasStrings true
+ "Hello world"
 
 lineCommentToken //
 stringToken "

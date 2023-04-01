@@ -15,24 +15,23 @@ domainName crystal-lang.org
   2022 387907
   2017 299324
 
-features
- hasTypeInference true
- hasLineComments true
-  # A comment
- hasComments true
-  # A comment
- hasMultiLineComments false
- hasPrintDebugging true
- hasSemanticIndentation false
- hasStrings true
-  "Hello world"
- hasBooleans true
- hasImports true
-  require "../../spec_helper"
- hasClasses true
- hasFunctions true
- hasConditionals true
- hasWhileLoops true
+hasTypeInference true
+hasLineComments true
+ # A comment
+hasComments true
+ # A comment
+hasMultiLineComments false
+hasPrintDebugging true
+hasSemanticIndentation false
+hasStrings true
+ "Hello world"
+hasBooleans true
+hasImports true
+ require "../../spec_helper"
+hasClasses true
+hasFunctions true
+hasConditionals true
+hasWhileLoops true
 
 lineCommentToken #
 printToken puts

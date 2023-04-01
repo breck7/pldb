@@ -10,12 +10,11 @@ originCommunity https://github.com/santoshrajan/lispyscript/issues
 domainName lispyscript.com
  registered 2021
 
-features
- hasLineComments true
-  ; A comment
- hasComments true
-  ; A comment
- hasSemanticIndentation false
+hasLineComments true
+ ; A comment
+hasComments true
+ ; A comment
+hasSemanticIndentation false
 
 lineCommentToken ;
 

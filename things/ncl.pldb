@@ -7,12 +7,11 @@ standsFor NCAR Command Language
 country United States
 originCommunity University Corporation for Atmospheric Research
 
-features
- hasLineComments true
-  ; A comment
- hasComments true
-  ; A comment
- hasSemanticIndentation false
+hasLineComments true
+ ; A comment
+hasComments true
+ ; A comment
+hasSemanticIndentation false
 
 lineCommentToken ;
 

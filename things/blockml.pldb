@@ -6,15 +6,14 @@ country Germany
 originCommunity Aww Apps
 domainName blockml.awwapps.com
 
-features
- hasMultiLineComments true
-  /* A comment
-  */
- hasComments true
-  /* A comment
-  */
- hasSemanticIndentation false
- hasBooleans true
+hasMultiLineComments true
+ /* A comment
+ */
+hasComments true
+ /* A comment
+ */
+hasSemanticIndentation false
+hasBooleans true
 
 multiLineCommentTokens /* */
 booleanTokens true false

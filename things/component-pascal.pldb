@@ -6,14 +6,13 @@ originCommunity www.oberon.ch
 
 supersetOf oberon-2
 
-features
- hasMultiLineComments true
-  (* A comment
-  *)
- hasComments true
-  (* A comment
-  *)
- hasSemanticIndentation false
+hasMultiLineComments true
+ (* A comment
+ *)
+hasComments true
+ (* A comment
+ *)
+hasSemanticIndentation false
 
 multiLineCommentTokens (* *)
 

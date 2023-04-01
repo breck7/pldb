@@ -4,15 +4,14 @@ type pl
 description TL (Type Language) serves to describe the used system of types, constructors, and existing functions.
 reference https://core.telegram.org/mtproto/TL
 
-features
- hasLineComments true
-  // A comment
- hasComments true
-  // A comment
- hasMultiLineComments true
-  /* A comment
-  */
- hasSemanticIndentation false
+hasLineComments true
+ // A comment
+hasComments true
+ // A comment
+hasMultiLineComments true
+ /* A comment
+ */
+hasSemanticIndentation false
 
 lineCommentToken //
 multiLineCommentTokens /* */

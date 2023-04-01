@@ -17,18 +17,17 @@ domainName ligolang.org
 
 related solidity pascal reason ocaml
 
-features
- hasStrings true
- hasLineComments true
-  // A comment
- hasMultiLineComments true
-  (* A comment
-  *)
- hasComments true
-  // A comment
- hasBooleans true
- hasFunctions true
- hasConditionals true
+hasStrings true
+hasLineComments true
+ // A comment
+hasMultiLineComments true
+ (* A comment
+ *)
+hasComments true
+ // A comment
+hasBooleans true
+hasFunctions true
+hasConditionals true
 
 lineCommentToken //
 multiLineCommentTokens (* *)

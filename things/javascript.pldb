@@ -12,223 +12,222 @@ aka es5
 country United States
 originCommunity Netscape
 
-features
- hasEnums false
- hasVariableSubstitutionSyntax false
- hasAccessModifiers false
- hasAbstractTypes false
- hasSemanticIndentation false
- hasImports true
-  import { helloWorld } from "./helloWorld.js";
- hasStatements true
-  let x = 3;
- hasRegularExpressionsSyntaxSugar true
-  console.log("Hello World".match(/\w/))
- hasExpressions true
-  1 + 1
- hasAsyncAwait true
-  async doSomething => await somethingElse()
- hasBinaryOperators true
-  1 + 1
- hasMapFunctions true
-  [1,2.1].map(Math.round)
- hasPartialApplication true
-  const addNumbers = (num1, num2) => num1 + num2
-  const add5 = num => addNumbers(10, num)
- supportsBreakpoints true
-  if (false)
-    debugger
- hasPointers false
- hasIntegers true
-  80766866
- hasLists true
-  const list = [1,2,3]
- mergesWhitespace true
- hasMultiLineComments true
-  /* A comment
-  */
- hasPolymorphism true
-  "a" + "b"; 1 + 2
- hasSingleDispatch true
- hasMultipleDispatch false
- hasBitWiseOperators true
-  var x = 5 & 1;
- hasSourceMaps true
-  {
-   version: 3,
-   file: 'min.js',
-   names: ['bar', 'baz', 'n'],
-   sources: ['one.js', 'two.js'],
-   sourceRoot: 'http://example.com/www/js/',
-   mappings: 'CAAC,IAAI,IAAM,SAAUA,GAClB,OAAOC,IAAID;CCDb,IAAI,IAAM,SAAUE,GAClB,OAAOA'
-  };
- hasProcessorRegisters false
- hasDynamicProperties true
-  class Person {}
-  const person = new Person()
-  person.age = 50
- hasMagicGettersAndSetters true
-  // Can be implemented in ES6 using proxies:
-  "use strict";
-  if (typeof Proxy == "undefined") {
-      throw new Error("This browser doesn't support Proxy");
+hasEnums false
+hasVariableSubstitutionSyntax false
+hasAccessModifiers false
+hasAbstractTypes false
+hasSemanticIndentation false
+hasImports true
+ import { helloWorld } from "./helloWorld.js";
+hasStatements true
+ let x = 3;
+hasRegularExpressionsSyntaxSugar true
+ console.log("Hello World".match(/\w/))
+hasExpressions true
+ 1 + 1
+hasAsyncAwait true
+ async doSomething => await somethingElse()
+hasBinaryOperators true
+ 1 + 1
+hasMapFunctions true
+ [1,2.1].map(Math.round)
+hasPartialApplication true
+ const addNumbers = (num1, num2) => num1 + num2
+ const add5 = num => addNumbers(10, num)
+supportsBreakpoints true
+ if (false)
+   debugger
+hasPointers false
+hasIntegers true
+ 80766866
+hasLists true
+ const list = [1,2,3]
+mergesWhitespace true
+hasMultiLineComments true
+ /* A comment
+ */
+hasPolymorphism true
+ "a" + "b"; 1 + 2
+hasSingleDispatch true
+hasMultipleDispatch false
+hasBitWiseOperators true
+ var x = 5 & 1;
+hasSourceMaps true
+ {
+  version: 3,
+  file: 'min.js',
+  names: ['bar', 'baz', 'n'],
+  sources: ['one.js', 'two.js'],
+  sourceRoot: 'http://example.com/www/js/',
+  mappings: 'CAAC,IAAI,IAAM,SAAUA,GAClB,OAAOC,IAAID;CCDb,IAAI,IAAM,SAAUE,GAClB,OAAOA'
+ };
+hasProcessorRegisters false
+hasDynamicProperties true
+ class Person {}
+ const person = new Person()
+ person.age = 50
+hasMagicGettersAndSetters true
+ // Can be implemented in ES6 using proxies:
+ "use strict";
+ if (typeof Proxy == "undefined") {
+     throw new Error("This browser doesn't support Proxy");
+ }
+ let original = {
+     "foo": "bar"
+ };
+ let proxy = new Proxy(original, {
+     get(target, name, receiver) {
+         let rv = Reflect.get(target, name, receiver);
+         if (typeof rv === "string") {
+             rv = rv.toUpperCase();
+         }
+         return rv;
+       }
+ });
+ console.log(`original.foo = ${original.foo}`); // "original.foo = bar"
+ console.log(`proxy.foo = ${proxy.foo}`);       // "proxy.foo = BAR"
+hasBooleans true
+hasMethodChaining true
+ "hello world".toString().substr(0, 1).length
+hasClasses true
+ class Person {}
+hasConditionals true
+ if (true)
+  console.log("hi!")
+hasComments true
+hasConstructors true
+ class Person {
+  constructor(name) {
+    this._name = name
   }
-  let original = {
-      "foo": "bar"
-  };
-  let proxy = new Proxy(original, {
-      get(target, name, receiver) {
-          let rv = Reflect.get(target, name, receiver);
-          if (typeof rv === "string") {
-              rv = rv.toUpperCase();
-          }
-          return rv;
-        }
-  });
-  console.log(`original.foo = ${original.foo}`); // "original.foo = bar"
-  console.log(`proxy.foo = ${proxy.foo}`);       // "proxy.foo = BAR"
- hasBooleans true
- hasMethodChaining true
-  "hello world".toString().substr(0, 1).length
- hasClasses true
-  class Person {}
- hasConditionals true
-  if (true)
-   console.log("hi!")
- hasComments true
- hasConstructors true
-  class Person {
-   constructor(name) {
-     this._name = name
-   }
-  }
-  new Person("Jane")
- hasConstants true
-  const one = 1
- hasDynamicTyping true
- hasExceptions true
-  try {
-   undefinedFn()
-  } catch (err) {
-   console.log(err)
-  }
- hasFirstClassFunctions true
-  [2.0,1.1].map(Math.round)
- hasGarbageCollection true
- hasGenerators true
-  function* fibonacci(limit) {
-      let [prev, curr] = [0, 1];
-      while (!limit || curr <= limit) {
-          yield curr;
-          [prev, curr] = [curr, prev + curr];
-      }
-  }
-  // bounded by upper limit 10
-  for (let n of fibonacci(10)) {
-      console.log(n);
-  }
-  // generator without an upper bound limit
-  for (let n of fibonacci()) {
-      console.log(n);
-      if (n > 10000) break;
-  }
-  // manually iterating
-  let fibGen = fibonacci();
-  console.log(fibGen.next().value); // 1
-  console.log(fibGen.next().value); // 1
-  console.log(fibGen.next().value); // 2
-  console.log(fibGen.next().value); // 3
-  console.log(fibGen.next().value); // 5
-  console.log(fibGen.next().value); // 8
-  // picks up from where you stopped
-  for (let n of fibGen) {
-      console.log(n);
-      if (n > 10000) break;
-  }
- hasDirectives true
-  "use strict";
-  "use asm";
- hasAssignment true
-  var name = "John"
- hasImplicitTypeConversions true
-  console.log("hello " + 2)
- hasInfixNotation true
-  const six = 2 + 2 + 2
- hasAnonymousFunctions true
-  (() => console.log("hello world"))()
- hasMacros false
- hasFunctionOverloading false
- hasMultilineStrings true
-  const lines = `one
-  two`
- hasMultipleInheritance false
- hasCaseInsensitiveIdentifiers false
- hasOperatorOverloading false
- hasReferences true
- hasPrintDebugging true
-  console.log("Hi")
- hasInheritance true
-  class B {}
-  class A extends B {}
- letterFirstIdentifiers true
- hasStrings true
-  "hello world"
- hasSwitch true
-  var animal = "dog"
-  switch (animal) {
-   case "dog": console.log("yay"); break;
-   case "cat": console.log("oh"); break;
-  }
- hasTernaryOperators true
-  let i = true ? 1 : 0
- hasWhileLoops true
-  let times = 10
-  while (times) {times--}
-  console.log("done")
- hasZeroBasedNumbering true
- isCaseSensitive true
- hasFunctions true
-  function helloWorld() {console.log("hi")}
- hasMethods true
-  class Person {
-   method1() {}
-   method2() {}
-  }
- hasIncrementAndDecrementOperators true
-  let i = 0
-  i++
-  i--
- hasLineComments true
-  // A comment
- hasDefaultParameters true
-  function multiply(a, b = 1) {
-   return a * b;
-  }
- hasDestructuring true
-  const o = {p: 42, q: true};
-  const {p, q} = o;
- hasFunctionComposition true
-  function o(f, g) {
-     return function(x) {
-         return f(g(x));
+ }
+ new Person("Jane")
+hasConstants true
+ const one = 1
+hasDynamicTyping true
+hasExceptions true
+ try {
+  undefinedFn()
+ } catch (err) {
+  console.log(err)
+ }
+hasFirstClassFunctions true
+ [2.0,1.1].map(Math.round)
+hasGarbageCollection true
+hasGenerators true
+ function* fibonacci(limit) {
+     let [prev, curr] = [0, 1];
+     while (!limit || curr <= limit) {
+         yield curr;
+         [prev, curr] = [curr, prev + curr];
      }
-  }
- hasSets true
-  set = new Set()
-  set.add("foo")
- hasOctals true
-  // 0[oO]?[0-7]+n?
-  0o464063622
- hasHexadecimals true
-  // 0[xX][0-9a-fA-F]+n?
-  0x4D06792
- hasFloats true
-  // (\.[0-9]+|[0-9]+\.[0-9]*|[0-9]+)([eE][-+]?[0-9]+)?
-  80766866.0
- hasBinaryNumbers true
-  // 0[bB][01]+n?
-  0b100110100000110011110010010
- hasScientificNotation true
+ }
+ // bounded by upper limit 10
+ for (let n of fibonacci(10)) {
+     console.log(n);
+ }
+ // generator without an upper bound limit
+ for (let n of fibonacci()) {
+     console.log(n);
+     if (n > 10000) break;
+ }
+ // manually iterating
+ let fibGen = fibonacci();
+ console.log(fibGen.next().value); // 1
+ console.log(fibGen.next().value); // 1
+ console.log(fibGen.next().value); // 2
+ console.log(fibGen.next().value); // 3
+ console.log(fibGen.next().value); // 5
+ console.log(fibGen.next().value); // 8
+ // picks up from where you stopped
+ for (let n of fibGen) {
+     console.log(n);
+     if (n > 10000) break;
+ }
+hasDirectives true
+ "use strict";
+ "use asm";
+hasAssignment true
+ var name = "John"
+hasImplicitTypeConversions true
+ console.log("hello " + 2)
+hasInfixNotation true
+ const six = 2 + 2 + 2
+hasAnonymousFunctions true
+ (() => console.log("hello world"))()
+hasMacros false
+hasFunctionOverloading false
+hasMultilineStrings true
+ const lines = `one
+ two`
+hasMultipleInheritance false
+hasCaseInsensitiveIdentifiers false
+hasOperatorOverloading false
+hasReferences true
+hasPrintDebugging true
+ console.log("Hi")
+hasInheritance true
+ class B {}
+ class A extends B {}
+letterFirstIdentifiers true
+hasStrings true
+ "hello world"
+hasSwitch true
+ var animal = "dog"
+ switch (animal) {
+  case "dog": console.log("yay"); break;
+  case "cat": console.log("oh"); break;
+ }
+hasTernaryOperators true
+ let i = true ? 1 : 0
+hasWhileLoops true
+ let times = 10
+ while (times) {times--}
+ console.log("done")
+hasZeroBasedNumbering true
+isCaseSensitive true
+hasFunctions true
+ function helloWorld() {console.log("hi")}
+hasMethods true
+ class Person {
+  method1() {}
+  method2() {}
+ }
+hasIncrementAndDecrementOperators true
+ let i = 0
+ i++
+ i--
+hasLineComments true
+ // A comment
+hasDefaultParameters true
+ function multiply(a, b = 1) {
+  return a * b;
+ }
+hasDestructuring true
+ const o = {p: 42, q: true};
+ const {p, q} = o;
+hasFunctionComposition true
+ function o(f, g) {
+    return function(x) {
+        return f(g(x));
+    }
+ }
+hasSets true
+ set = new Set()
+ set.add("foo")
+hasOctals true
+ // 0[oO]?[0-7]+n?
+ 0o464063622
+hasHexadecimals true
+ // 0[xX][0-9a-fA-F]+n?
+ 0x4D06792
+hasFloats true
+ // (\.[0-9]+|[0-9]+\.[0-9]*|[0-9]+)([eE][-+]?[0-9]+)?
+ 80766866.0
+hasBinaryNumbers true
+ // 0[bB][01]+n?
+ 0b100110100000110011110010010
+hasScientificNotation true
 
 lineCommentToken //
 multiLineCommentTokens /* */

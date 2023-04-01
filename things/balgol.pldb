@@ -8,20 +8,19 @@ originCommunity Burroughs
 
 influencedBy algol-58 fortran
 
-features
- hasIntegers true
- hasFloats true
- hasBooleans true
- hasLists true
-  ARRAY MONTHDAYS(12) = (31,28,31,30,31,30,31,31,30,31,30,31)$
- hasFunctions true
-  FUNCTION TORADS(DEGREES) = DEGREES . 3.1415926/180$
- hasExpressions true
-  ALPHA + BETA / GAMMA
- hasAssignment true
-  ALPHA = BETA = GAMMA = 2DELTA + 1$
- hasConditionals true
-  EITHER IF A > B$ FWD = 1$ OTHERWISE$ FWD = 0$
+hasIntegers true
+hasFloats true
+hasBooleans true
+hasLists true
+ ARRAY MONTHDAYS(12) = (31,28,31,30,31,30,31,31,30,31,30,31)$
+hasFunctions true
+ FUNCTION TORADS(DEGREES) = DEGREES . 3.1415926/180$
+hasExpressions true
+ ALPHA + BETA / GAMMA
+hasAssignment true
+ ALPHA = BETA = GAMMA = 2DELTA + 1$
+hasConditionals true
+ EITHER IF A > B$ FWD = 1$ OTHERWISE$ FWD = 0$
 
 example
  INTEGER I..., J..., K..., L..., M..., N...$

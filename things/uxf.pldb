@@ -14,18 +14,17 @@ versions
 
 related python rust scheme
 
-features
- hasBooleans true
- hasComments true
-  # <This is a comment>
- hasStrings true
-  <Hello world>
- hasLists true
-  [1 2]
- hasIntegers true
-  80766866
- hasLineComments true
-  #<A comment>
+hasBooleans true
+hasComments true
+ # <This is a comment>
+hasStrings true
+ <Hello world>
+hasLists true
+ [1 2]
+hasIntegers true
+ 80766866
+hasLineComments true
+ #<A comment>
 
 example
  uxf 1

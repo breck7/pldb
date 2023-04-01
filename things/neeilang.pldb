@@ -6,12 +6,11 @@ reference https://www.reddit.com/r/ProgrammingLanguages/comments/erqm6s/neeilang
 country Unknown
 originCommunity https://github.com/neeilan/neeilang/issues
 
-features
- hasLineComments true
-  // A comment
- hasComments true
-  // A comment
- hasSemanticIndentation false
+hasLineComments true
+ // A comment
+hasComments true
+ // A comment
+hasSemanticIndentation false
 
 lineCommentToken //
 

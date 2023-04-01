@@ -5,10 +5,9 @@ website https://msdn.microsoft.com/library/hbxc2t98.aspx
 fileExtensions js jse wsf wsc
 originCommunity Microsoft
 
-features
- hasPrintDebugging true
- hasStrings true
-  "Hello world"
+hasPrintDebugging true
+hasStrings true
+ "Hello world"
 
 printToken WScript.Echo
 stringToken "

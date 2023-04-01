@@ -6,10 +6,9 @@ website http://yorick.github.com
 fileExtensions i
 domainName yorick.github.com
 
-features
- hasPrintDebugging true
- hasStrings true
-  "Hello world"
+hasPrintDebugging true
+hasStrings true
+ "Hello world"
 
 printToken print
 stringToken "

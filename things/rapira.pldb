@@ -7,10 +7,9 @@ reference http://ershov.iis.nsk.su/ru/node/772586
 country Russia
 nativeLanguage Russian
 
-features
- hasPrintDebugging true
- hasStrings true
-  "Hello world"
+hasPrintDebugging true
+hasStrings true
+ "Hello world"
 
 printToken output:
 stringToken "

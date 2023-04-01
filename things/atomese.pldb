@@ -8,12 +8,11 @@ reference https://opencog.org/
 country Various
 originCommunity OpenCog Foundation
 
-features
- hasLineComments true
-  ; A comment
- hasComments true
-  ; A comment
- hasSemanticIndentation false
+hasLineComments true
+ ; A comment
+hasComments true
+ ; A comment
+hasSemanticIndentation false
 
 lineCommentToken ;
 

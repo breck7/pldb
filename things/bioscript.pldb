@@ -6,14 +6,13 @@ reference https://dl.acm.org/citation.cfm?id=3276498
 country United States
 originCommunity University of California, Riverside
 
-features
- hasMultiLineComments true
-  /* A comment
-  */
- hasComments true
-  /* A comment
-  */
- hasSemanticIndentation false
+hasMultiLineComments true
+ /* A comment
+ */
+hasComments true
+ /* A comment
+ */
+hasSemanticIndentation false
 
 multiLineCommentTokens /* */
 

@@ -14,16 +14,15 @@ releaseNotesUrl http://www.tcl.tk/software/tcltk/relnotes/index.tml?sc_format=wi
 
 visualParadigm false
 
-features
- hasComments true
- hasLineComments true
-  # A comment
- hasMultiLineComments false
- hasPrintDebugging true
- hasSemanticIndentation false
- hasCaseInsensitiveIdentifiers false
- hasStrings true
-  "Hello world"
+hasComments true
+hasLineComments true
+ # A comment
+hasMultiLineComments false
+hasPrintDebugging true
+hasSemanticIndentation false
+hasCaseInsensitiveIdentifiers false
+hasStrings true
+ "Hello world"
 
 lineCommentToken #
 printToken puts

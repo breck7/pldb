@@ -6,9 +6,8 @@ reference https://github.com/kivy/kivy/blob/master/kivy/data/style.kv
 country Various
 originCommunity https://github.com/kivy
 
-features
- hasStrings true
-  "Hello world"
+hasStrings true
+ "Hello world"
 
 stringToken "
 

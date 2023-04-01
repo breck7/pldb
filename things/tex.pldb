@@ -10,14 +10,13 @@ domainName tug.org
   2022 56352
   2017 40951
 
-features
- hasLineComments true
-  % A comment
- hasMultiLineComments false
- hasComments true
-  % A comment
- hasSemanticIndentation false
- hasFixedPoint true
+hasLineComments true
+ % A comment
+hasMultiLineComments false
+hasComments true
+ % A comment
+hasSemanticIndentation false
+hasFixedPoint true
 
 lineCommentToken %
 

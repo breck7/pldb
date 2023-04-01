@@ -11,12 +11,11 @@ originCommunity https://github.com/breuleux/quaint/issues
 writtenIn earl-grey
 related markdown scroll
 
-features
- hasSemanticIndentation true
- hasLineComments true
-  ;; A comment
- hasComments true
-  ;; A comment
+hasSemanticIndentation true
+hasLineComments true
+ ;; A comment
+hasComments true
+ ;; A comment
 
 lineCommentToken ;;
 

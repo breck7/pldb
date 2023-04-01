@@ -5,22 +5,21 @@ creators Gary Grossman
 documentation https://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/index.html
 originCommunity Macromedia
 
-features
- hasPrintDebugging true
- hasMultiLineComments true
-  /* A comment
-  */
- hasComments true
-  /* A comment
-  */
- hasSemanticIndentation false
- hasCaseInsensitiveIdentifiers false
- hasStrings true
-  "Hello world"
- hasHexadecimals true
- hasFloats true
- hasIntegers true
- hasLineComments true
+hasPrintDebugging true
+hasMultiLineComments true
+ /* A comment
+ */
+hasComments true
+ /* A comment
+ */
+hasSemanticIndentation false
+hasCaseInsensitiveIdentifiers false
+hasStrings true
+ "Hello world"
+hasHexadecimals true
+hasFloats true
+hasIntegers true
+hasLineComments true
 
 multiLineCommentTokens /* */
 printToken trace

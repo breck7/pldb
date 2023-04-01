@@ -9,9 +9,8 @@ originCommunity https://gitlab.com/FascinatedBox/lily/-/issues
 domainName lily-lang.org
  registered 2016
 
-features
- hasComments true
- hasSemanticIndentation false
+hasComments true
+hasSemanticIndentation false
 
 example
  scoped enum Color { Black, Blue, Cyan, Green, Magenta, Red, White, Yellow }

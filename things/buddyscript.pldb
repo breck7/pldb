@@ -4,12 +4,11 @@ type pl
 country United States
 originCommunity ActiveBuddy
 
-features
- hasSemanticIndentation true
- hasLineComments true
-  # A comment
- hasComments true
-  # A comment
+hasSemanticIndentation true
+hasLineComments true
+ # A comment
+hasComments true
+ # A comment
 
 lineCommentToken #
 

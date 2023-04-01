@@ -5,12 +5,11 @@ creators Snorri Agnarsson
 country Iceland
 originCommunity University of Iceland
 
-features
- hasLineComments true
-  ; A comment
- hasComments true
-  ; A comment
- hasSemanticIndentation false
+hasLineComments true
+ ; A comment
+hasComments true
+ ; A comment
+hasSemanticIndentation false
 
 lineCommentToken ;
 

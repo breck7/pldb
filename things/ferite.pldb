@@ -2,10 +2,9 @@ title Ferite
 appeared 2000
 type pl
 
-features
- hasPrintDebugging true
- hasStrings true
-  "Hello world"
+hasPrintDebugging true
+hasStrings true
+ "Hello world"
 
 printToken Console.println
 stringToken "

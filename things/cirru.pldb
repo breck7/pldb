@@ -9,11 +9,10 @@ country China
 originCommunity https://github.com/Cirru
 domainName text.cirru.org
 
-features
- hasSemanticIndentation true
-  print
-    + 1 2
-    , 11
+hasSemanticIndentation true
+ print
+   + 1 2
+   , 11
 
 example
  set a

@@ -5,15 +5,14 @@ creators Ken Thompson and Dennis Ritchie
 country United States
 originCommunity Bell Labs
 
-features
- hasPrintDebugging true
- hasMultiLineComments true
-  /* A comment
-  */
- hasComments true
-  /* A comment
-  */
- hasSemanticIndentation false
+hasPrintDebugging true
+hasMultiLineComments true
+ /* A comment
+ */
+hasComments true
+ /* A comment
+ */
+hasSemanticIndentation false
 
 multiLineCommentTokens /* */
 printToken putchar

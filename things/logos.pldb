@@ -6,12 +6,11 @@ reference https://github.com/DHowett/theos-logos-examples
 country United States
 originCommunity https://github.com/DHowett/theos-logos-examples/issues
 
-features
- hasLineComments true
-  // A comment
- hasComments true
-  // A comment
- hasSemanticIndentation false
+hasLineComments true
+ // A comment
+hasComments true
+ // A comment
+hasSemanticIndentation false
 
 lineCommentToken //
 

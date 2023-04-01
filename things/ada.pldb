@@ -15,67 +15,66 @@ domainName adaic.org
 
 visualParadigm false
 
-features
- hasPointers true
- hasGenerics true
-  generic
-     Max_Size : Natural; -- a generic formal value
-     type Element_Type is private; -- a generic formal type; accepts any nonlimited type
-  package Stacks is
-     type Size_Type is range 0 .. Max_Size;
-     type Stack is limited private;
-     procedure Create (S : out Stack;
-                       Initial_Size : in Size_Type := Max_Size);
-     procedure Push (Into : in out Stack; Element : in Element_Type);
-     procedure Pop (From : in out Stack; Element : out Element_Type);
-     Overflow : exception;
-     Underflow : exception;
-  private
-     subtype Index_Type is Size_Type range 1 .. Max_Size;
-     type Vector is array (Index_Type range <>) of Element_Type;
-     type Stack (Allocated_Size : Size_Type := 0) is record
-        Top : Index_Type;
-        Storage : Vector (1 .. Allocated_Size);
-     end record;
-  end Stacks;
- hasComments true
-  -- A comment
- hasDirectives true
- hasOperatorOverloading true
- hasMultiLineComments false
- hasCaseInsensitiveIdentifiers true
-  with Gnat.Io; use Gnat.Io;
-  procedure Numbers is
-     Score: Integer;
-     F: Float := 1.0;
-  begin
-     Score := 3 + 2#1011#;
-     Put(score);
-     New_Line;
-     Score := Score + 1_000_000;
-     Put(Score);
-     New_Line;
-  end Numbers;
- hasLineComments true
-  -- A comment
- hasPrintDebugging true
- hasSemanticIndentation false
- hasAssignment true
- hasStrings true
-  "Hello world"
- isCaseSensitive false
- hasBooleans true
- hasWhileLoops true
- hasFunctions true
- hasConditionals true
- hasHexadecimals true
-  -- [0-9_]+#[0-9a-f_\.]+#
- hasFloats true
-  -- [0-9_]+\.[0-9_]*
- hasIntegers true
-  -- [0-9_]+
- hasFixedPoint true
- hasScientificNotation true
+hasPointers true
+hasGenerics true
+ generic
+    Max_Size : Natural; -- a generic formal value
+    type Element_Type is private; -- a generic formal type; accepts any nonlimited type
+ package Stacks is
+    type Size_Type is range 0 .. Max_Size;
+    type Stack is limited private;
+    procedure Create (S : out Stack;
+                      Initial_Size : in Size_Type := Max_Size);
+    procedure Push (Into : in out Stack; Element : in Element_Type);
+    procedure Pop (From : in out Stack; Element : out Element_Type);
+    Overflow : exception;
+    Underflow : exception;
+ private
+    subtype Index_Type is Size_Type range 1 .. Max_Size;
+    type Vector is array (Index_Type range <>) of Element_Type;
+    type Stack (Allocated_Size : Size_Type := 0) is record
+       Top : Index_Type;
+       Storage : Vector (1 .. Allocated_Size);
+    end record;
+ end Stacks;
+hasComments true
+ -- A comment
+hasDirectives true
+hasOperatorOverloading true
+hasMultiLineComments false
+hasCaseInsensitiveIdentifiers true
+ with Gnat.Io; use Gnat.Io;
+ procedure Numbers is
+    Score: Integer;
+    F: Float := 1.0;
+ begin
+    Score := 3 + 2#1011#;
+    Put(score);
+    New_Line;
+    Score := Score + 1_000_000;
+    Put(Score);
+    New_Line;
+ end Numbers;
+hasLineComments true
+ -- A comment
+hasPrintDebugging true
+hasSemanticIndentation false
+hasAssignment true
+hasStrings true
+ "Hello world"
+isCaseSensitive false
+hasBooleans true
+hasWhileLoops true
+hasFunctions true
+hasConditionals true
+hasHexadecimals true
+ -- [0-9_]+#[0-9a-f_\.]+#
+hasFloats true
+ -- [0-9_]+\.[0-9_]*
+hasIntegers true
+ -- [0-9_]+
+hasFixedPoint true
+hasScientificNotation true
 
 lineCommentToken --
 printToken Text_IO.Put_Line

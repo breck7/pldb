@@ -4,10 +4,9 @@ type pl
 standsFor Enterprise Generation Language
 originCommunity IBM
 
-features
- hasPrintDebugging true
- hasStrings true
-  "Hello world"
+hasPrintDebugging true
+hasStrings true
+ "Hello world"
 
 printToken SysLib.writeStdout
 stringToken "

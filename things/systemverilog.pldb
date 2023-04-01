@@ -4,32 +4,31 @@ type pl
 documentation http://courses.eees.dei.unibo.it/LABMPHSENG/wp-content/uploads/2016/02/SystemVerilog_3.1a.pdf
 originCommunity Synopsys
 
-features
- hasLineComments true
-  // A comment
- hasComments true
-  // A comment
- hasSemanticIndentation false
- hasStrings true
- hasMultiLineComments true
-  /* A comment
-  */
- hasWhileLoops true
- hasClasses true
- hasConstants true
- hasFunctions true
- hasInheritance true
- hasConditionals true
- hasOctals true
-  // ([1-9][_0-9]*)?\s*\'[sS]?[oO]\s*[xXzZ?0-7][_xXzZ?0-7]*
- hasHexadecimals true
-  // ([1-9][_0-9]*)?\s*\'[sS]?[hH]\s*[xXzZ?0-9a-fA-F][_xXzZ?0-9a-fA-F]*
- hasFloats true
-  // (\d+\.\d*|\.\d+|\d+)[eE][+-]?\d+[lL]?
- hasIntegers true
-  // ([1-9][_0-9]*)?\s*\'[sS]?[dD]\s*[xXzZ?0-9][_xXzZ?0-9]*
- hasBinaryNumbers true
-  // ([1-9][_0-9]*)?\s*\'[sS]?[bB]\s*[xXzZ?01][_xXzZ?01]*
+hasLineComments true
+ // A comment
+hasComments true
+ // A comment
+hasSemanticIndentation false
+hasStrings true
+hasMultiLineComments true
+ /* A comment
+ */
+hasWhileLoops true
+hasClasses true
+hasConstants true
+hasFunctions true
+hasInheritance true
+hasConditionals true
+hasOctals true
+ // ([1-9][_0-9]*)?\s*\'[sS]?[oO]\s*[xXzZ?0-7][_xXzZ?0-7]*
+hasHexadecimals true
+ // ([1-9][_0-9]*)?\s*\'[sS]?[hH]\s*[xXzZ?0-9a-fA-F][_xXzZ?0-9a-fA-F]*
+hasFloats true
+ // (\d+\.\d*|\.\d+|\d+)[eE][+-]?\d+[lL]?
+hasIntegers true
+ // ([1-9][_0-9]*)?\s*\'[sS]?[dD]\s*[xXzZ?0-9][_xXzZ?0-9]*
+hasBinaryNumbers true
+ // ([1-9][_0-9]*)?\s*\'[sS]?[bB]\s*[xXzZ?01][_xXzZ?01]*
 
 lineCommentToken //
 multiLineCommentTokens /* */

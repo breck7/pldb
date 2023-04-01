@@ -9,16 +9,15 @@ originCommunity Microsoft
 
 visualParadigm false
 
-features
- hasConstructors true
- hasOperatorOverloading true
- hasLineComments true
-  ' A comment
- hasComments true
-  ' A comment
- hasSemanticIndentation false
- hasCaseInsensitiveIdentifiers true
- hasBooleans true
+hasConstructors true
+hasOperatorOverloading true
+hasLineComments true
+ ' A comment
+hasComments true
+ ' A comment
+hasSemanticIndentation false
+hasCaseInsensitiveIdentifiers true
+hasBooleans true
 
 lineCommentToken '
 booleanTokens True False

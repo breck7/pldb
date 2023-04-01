@@ -8,24 +8,23 @@ originCommunity Salesforce
 firstAnnouncement http://www.zdnet.com/article/inside-the-salesforce-apex-language/
 announcementMethod interview
 
-features
- hasComments true
- hasLineComments true
-  // A comment
- hasSemanticIndentation false
- hasStrings true
- hasMultiLineComments true
-  /* A comment
-  */
- hasBooleans true
- hasWhileLoops true
- hasClasses true
- hasConstants true
- hasExceptions true
- hasSwitch true
- hasAccessModifiers true
- hasInheritance true
- hasConditionals true
+hasComments true
+hasLineComments true
+ // A comment
+hasSemanticIndentation false
+hasStrings true
+hasMultiLineComments true
+ /* A comment
+ */
+hasBooleans true
+hasWhileLoops true
+hasClasses true
+hasConstants true
+hasExceptions true
+hasSwitch true
+hasAccessModifiers true
+hasInheritance true
+hasConditionals true
 
 lineCommentToken //
 multiLineCommentTokens /* */

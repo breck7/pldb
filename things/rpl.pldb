@@ -4,9 +4,8 @@ type pl
 standsFor Reverse Polish Lisp
 originCommunity Hewlett-Packard
 
-features
- hasStrings true
-  "Hello world"
+hasStrings true
+ "Hello world"
 
 stringToken "
 

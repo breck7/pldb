@@ -9,12 +9,11 @@ originCommunity Eidgenössische Technische Hochschule Zürich
 
 supersetOf oberon
 
-features
- hasComments true
- hasPrintDebugging true
- hasSemanticIndentation false
- hasStrings true
-  "Hello world"
+hasComments true
+hasPrintDebugging true
+hasSemanticIndentation false
+hasStrings true
+ "Hello world"
 
 printToken Out.String
 stringToken "

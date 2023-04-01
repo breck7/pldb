@@ -22,97 +22,96 @@ releaseNotesUrl https://www.php.net/releases/index.php
 
 visualParadigm false
 
-features
- hasBooleans true
- hasStrings true
-  "hello world"
- hasMagicGettersAndSetters true
-      public function __set($name, $value)
+hasBooleans true
+hasStrings true
+ "hello world"
+hasMagicGettersAndSetters true
+     public function __set($name, $value)
+    {
+        echo "Setting '$name' to '$value'\n";
+        $this->data[$name] = $value;
+    }
+ 
+    public function __get($name)
+    {
+        echo "Getting '$name'\n";
+        if (array_key_exists($name, $this->data)) {
+            return $this->data[$name];
+        }
+ 
+        $trace = debug_backtrace();
+        trigger_error(
+            'Undefined property via __get(): ' . $name .
+            ' in ' . $trace[0]['file'] .
+            ' on line ' . $trace[0]['line'],
+            E_USER_NOTICE);
+        return null;
+    }
+hasComments true
+hasConstructors true
+hasHereDocs true
+hasTernaryOperators true
+ <?php echo 1 ? 1 : 0;
+hasAssignment true
+ $name = "John"
+hasImports true
+ <?php
+ include 'vars.php';
+ require 'filename'; // FATAL error if fails
+hasMultilineStrings true
+ $xml = <<<XML
+ l
+ vv
+ XML;
+hasOperatorOverloading true
+hasTraits true
+ // The template
+ trait TSingleton
+ {
+     private static $_instance = null; 
+     private function __construct(){} // Must have private default constructor and be aware not to open it in the class
+     public static function getInstance()
      {
-         echo "Setting '$name' to '$value'\n";
-         $this->data[$name] = $value;
-     }
-  
-     public function __get($name)
-     {
-         echo "Getting '$name'\n";
-         if (array_key_exists($name, $this->data)) {
-             return $this->data[$name];
+         if (null === self::$_instance)
+         {
+             self::$_instance = new self();
          }
-  
-         $trace = debug_backtrace();
-         trigger_error(
-             'Undefined property via __get(): ' . $name .
-             ' in ' . $trace[0]['file'] .
-             ' on line ' . $trace[0]['line'],
-             E_USER_NOTICE);
-         return null;
+         return self::$_instance;
      }
- hasComments true
- hasConstructors true
- hasHereDocs true
- hasTernaryOperators true
-  <?php echo 1 ? 1 : 0;
- hasAssignment true
-  $name = "John"
- hasImports true
-  <?php
-  include 'vars.php';
-  require 'filename'; // FATAL error if fails
- hasMultilineStrings true
-  $xml = <<<XML
-  l
-  vv
-  XML;
- hasOperatorOverloading true
- hasTraits true
-  // The template
-  trait TSingleton
-  {
-      private static $_instance = null; 
-      private function __construct(){} // Must have private default constructor and be aware not to open it in the class
-      public static function getInstance()
-      {
-          if (null === self::$_instance)
-          {
-              self::$_instance = new self();
-          }
-          return self::$_instance;
-      }
-  }
-  class FrontController
-  {
-      use TSingleton;
-  }
-  // Can also be used in already extended classes
-  class WebSite extends SomeClass
-  {
-      use TSingleton;
-  }
- hasVariadicFunctions true
-  function sum(...$nums)
-  {
-      return array_sum($nums);
-  }
-  echo sum(1, 2, 3); // 6
- hasFunctions true
- hasIncrementAndDecrementOperators true
- hasLineComments true
-  // A comment
- hasPrintDebugging true
- hasMultiLineComments true
-  /* A comment
-  */
- hasSemanticIndentation false
- hasCaseInsensitiveIdentifiers false
- hasWhileLoops true
- hasClasses true
- hasConstants true
- hasExceptions true
- hasSwitch true
- hasAccessModifiers true
- hasInheritance true
- hasConditionals true
+ }
+ class FrontController
+ {
+     use TSingleton;
+ }
+ // Can also be used in already extended classes
+ class WebSite extends SomeClass
+ {
+     use TSingleton;
+ }
+hasVariadicFunctions true
+ function sum(...$nums)
+ {
+     return array_sum($nums);
+ }
+ echo sum(1, 2, 3); // 6
+hasFunctions true
+hasIncrementAndDecrementOperators true
+hasLineComments true
+ // A comment
+hasPrintDebugging true
+hasMultiLineComments true
+ /* A comment
+ */
+hasSemanticIndentation false
+hasCaseInsensitiveIdentifiers false
+hasWhileLoops true
+hasClasses true
+hasConstants true
+hasExceptions true
+hasSwitch true
+hasAccessModifiers true
+hasInheritance true
+hasConditionals true
 
 lineCommentToken //
 multiLineCommentTokens /* */

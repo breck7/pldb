@@ -3,13 +3,12 @@ appeared 2008
 type grammarLanguage
 standsFor Augmented Backus-Naur Form
 
-features
- hasLineComments true
-  ; A comment
- hasComments true
-  ; A comment
- hasSemanticIndentation false
- hasBooleans true
+hasLineComments true
+ ; A comment
+hasComments true
+ ; A comment
+hasSemanticIndentation false
+hasBooleans true
 
 lineCommentToken ;
 booleanTokens true false

@@ -7,17 +7,16 @@ fileExtensions cmd exec rexx rex
 country United Kingdom
 originCommunity IBM
 
-features
- hasComments true
-  * => 1000000000 */
- hasLineComments false
- hasPrintDebugging true
- hasMultiLineComments true
-  /* A comment
-  */
- hasSemanticIndentation false
- hasStrings true
-  "Hello world"
+hasComments true
+ * => 1000000000 */
+hasLineComments false
+hasPrintDebugging true
+hasMultiLineComments true
+ /* A comment
+ */
+hasSemanticIndentation false
+hasStrings true
+ "Hello world"
 
 multiLineCommentTokens /* */
 printToken say

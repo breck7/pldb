@@ -8,12 +8,11 @@ standsFor Programming Language for Old Timers
 country United States
 originCommunity Association of Lisp Users
 
-features
- hasLineComments true
-  ; A comment
- hasComments true
-  ; A comment
- hasSemanticIndentation false
+hasLineComments true
+ ; A comment
+hasComments true
+ ; A comment
+hasSemanticIndentation false
 
 lineCommentToken ;
 

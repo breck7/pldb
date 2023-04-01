@@ -10,12 +10,11 @@ domainName aldor.org
  awisRank
   2022 5414963
 
-features
- hasSemanticIndentation true
- hasLineComments true
-  -- A comment
- hasComments true
-  -- A comment
+hasSemanticIndentation true
+hasLineComments true
+ -- A comment
+hasComments true
+ -- A comment
 
 lineCommentToken --
 

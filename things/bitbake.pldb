@@ -5,12 +5,11 @@ website https://yoctoproject.org/tools-resources/projects/bitbake
 country Various
 originCommunity Yocto Project
 
-features
- hasLineComments true
-  # A comment
- hasComments true
-  # A comment
- hasSemanticIndentation false
+hasLineComments true
+ # A comment
+hasComments true
+ # A comment
+hasSemanticIndentation false
 
 lineCommentToken #
 

@@ -10,10 +10,9 @@ domainName elementscompiler.com
   2022 788483
   2017 590346
 
-features
- hasPrintDebugging true
- hasStrings true
-  'Hello world'
+hasPrintDebugging true
+hasStrings true
+ 'Hello world'
 
 printToken Console.WriteLine
 stringToken '

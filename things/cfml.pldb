@@ -8,18 +8,17 @@ country United States and Switzerland
 country United States
 originCommunity Adobe Systems && Lucee Association && New Atlanta && openBD && The Railo Company
 
-features
- hasConstructors true
-  component {
-     // properties
-     property name="cheeseName";
-   
-     // constructor
-     function Cheese init( required string cheeseName ) {
-        variables.cheeseName = arguments.cheeseName;
-        return this;
-     }
-  }
+hasConstructors true
+ component {
+    // properties
+    property name="cheeseName";
+  
+    // constructor
+    function Cheese init( required string cheeseName ) {
+       variables.cheeseName = arguments.cheeseName;
+       return this;
+    }
+ }
 
 wikipedia https://en.wikipedia.org/wiki/ColdFusion_Markup_Language
  example

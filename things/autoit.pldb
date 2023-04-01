@@ -7,25 +7,24 @@ documentation https://www.autoitscript.com/autoit3/docs/
 country Unknown
 originCommunity AutoIt Consulting Ltd
 
-features
- hasComments true
- hasLineComments true
-  ; A comment
- hasPrintDebugging true
- hasSemanticIndentation false
- hasStrings true
-  "Hello world"
- hasWhileLoops true
- hasConditionals true
- hasOctals true
-  ; 0\d+
- hasHexadecimals true
-  ; 0[xX][a-fA-F0-9]+
- hasFloats true
-  ; (\d+\.\d*|\d*\.\d+)([eE][+-]?[0-9]+)?
- hasIntegers true
-  ; \d+
- hasMultiLineComments true
+hasComments true
+hasLineComments true
+ ; A comment
+hasPrintDebugging true
+hasSemanticIndentation false
+hasStrings true
+ "Hello world"
+hasWhileLoops true
+hasConditionals true
+hasOctals true
+ ; 0\d+
+hasHexadecimals true
+ ; 0[xX][a-fA-F0-9]+
+hasFloats true
+ ; (\d+\.\d*|\d*\.\d+)([eE][+-]?[0-9]+)?
+hasIntegers true
+ ; \d+
+hasMultiLineComments true
 
 lineCommentToken ;
 printToken MsgBox

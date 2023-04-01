@@ -5,10 +5,9 @@ reference https://semanticscholar.org/paper/4fa23aa15e2d62ee9f3a4091d8b05b1fe4dc
 country United States
 originCommunity Xerox PARC
 
-features
- hasPrintDebugging true
- hasStrings true
-  "Hello world"
+hasPrintDebugging true
+hasStrings true
+ "Hello world"
 
 printToken write-line
 stringToken "

@@ -6,14 +6,13 @@ website http://www.grafxsoft.com/clipper.htm
 country United States
 originCommunity Nantucket Corporation
 
-features
- hasLineComments true
-  // A comment
- hasComments true
-  // A comment
- hasSemanticIndentation false
- hasStrings true
-  "Hello world"
+hasLineComments true
+ // A comment
+hasComments true
+ // A comment
+hasSemanticIndentation false
+hasStrings true
+ "Hello world"
 
 lineCommentToken //
 stringToken "

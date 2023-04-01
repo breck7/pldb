@@ -10,13 +10,12 @@ originCommunity https://groups.google.com/g/hecl
 
 related tcl java
 
-features
- hasPrintDebugging true
- hasLists true
- hasAssignment false
- hasIntegers true
- hasForEachLoops true
- hasForLoops true
- hasWhileLoops true
+hasPrintDebugging true
+hasLists true
+hasAssignment false
+hasIntegers true
+hasForEachLoops true
+hasForLoops true
+hasWhileLoops true
 
 printToken puts

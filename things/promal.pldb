@@ -4,13 +4,12 @@ type pl
 country United States
 originCommunity Systems Management Associates
 
-features
- hasSemanticIndentation true
- hasLineComments true
-  ; A comment
- hasComments true
-  ; A comment
- hasBooleans true
+hasSemanticIndentation true
+hasLineComments true
+ ; A comment
+hasComments true
+ ; A comment
+hasBooleans true
 
 lineCommentToken ;
 booleanTokens TRUE FALSE

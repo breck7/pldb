@@ -12,10 +12,9 @@ domainName pharo.org
  awisRank
   2022 745957
 
-features
- hasPrintDebugging true
- hasStrings true
-  'Hello world'
+hasPrintDebugging true
+hasStrings true
+ 'Hello world'
 
 printToken crLog
 stringToken '

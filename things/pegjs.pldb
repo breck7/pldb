@@ -14,15 +14,14 @@ domainName pegjs.org
 
 compilesTo javascript
 
-features
- hasLineComments true
-  // A comment
- hasMultiLineComments true
-  /* A comment
-  */
- hasComments true
-  // A comment
- hasSemanticIndentation false
+hasLineComments true
+ // A comment
+hasMultiLineComments true
+ /* A comment
+ */
+hasComments true
+ // A comment
+hasSemanticIndentation false
 
 lineCommentToken //
 multiLineCommentTokens /* */

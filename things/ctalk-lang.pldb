@@ -6,12 +6,11 @@ reference http://kiwi.emse.fr/JJG/INTALK/ctalk.txt
 country France
 originCommunity École des Mines de Saint-Étienne
 
-features
- hasLineComments true
-  // A comment
- hasComments true
-  // A comment
- hasSemanticIndentation false
+hasLineComments true
+ // A comment
+hasComments true
+ // A comment
+hasSemanticIndentation false
 
 lineCommentToken //
 

@@ -11,16 +11,15 @@ domainName fstar-lang.org
  awisRank
   2022 3034670
 
-features
- hasPrintDebugging true
- hasBooleans true
- hasFunctions true
- hasConditionals true
- hasOctals true
- hasHexadecimals true
- hasFloats true
- hasIntegers true
- hasBinaryNumbers true
+hasPrintDebugging true
+hasBooleans true
+hasFunctions true
+hasConditionals true
+hasOctals true
+hasHexadecimals true
+hasFloats true
+hasIntegers true
+hasBinaryNumbers true
 
 printToken FStar.IO.print_string
 booleanTokens true false

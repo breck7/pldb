@@ -4,16 +4,15 @@ type template
 website https://twig.symfony.com/
 domainName twig.symfony.com
 
-features
- hasMultiLineComments true
-  {# A comment
-  #}
- hasComments true
-  {# A comment
-  #}
- hasBooleans true
- hasInheritance true
- hasConditionals true
+hasMultiLineComments true
+ {# A comment
+ #}
+hasComments true
+ {# A comment
+ #}
+hasBooleans true
+hasInheritance true
+hasConditionals true
 
 multiLineCommentTokens {# #}
 booleanTokens true false

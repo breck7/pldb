@@ -14,19 +14,18 @@ domainName iolanguage.org
 
 visualParadigm false
 
-features
- hasComments true
- hasOperatorOverloading true
- hasLineComments true
-  // A comment
- hasPrintDebugging true
- hasSemanticIndentation false
- hasAssignment true
- hasFloats true
-  // (\d+\.?\d*|\d*\.\d+)([eE][+-]?[0-9]+)?
- hasIntegers true
-  // \d+
- hasMultiLineComments true
+hasComments true
+hasOperatorOverloading true
+hasLineComments true
+ // A comment
+hasPrintDebugging true
+hasSemanticIndentation false
+hasAssignment true
+hasFloats true
+ // (\d+\.?\d*|\d*\.\d+)([eE][+-]?[0-9]+)?
+hasIntegers true
+ // \d+
+hasMultiLineComments true
 
 lineCommentToken //
 printToken print

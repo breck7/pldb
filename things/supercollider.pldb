@@ -8,21 +8,20 @@ domainName supercollider.github.io
   2022 1121861
   2017 776997
 
-features
- hasLineComments true
-  // A comment
- hasComments true
-  // A comment
- hasPrintDebugging true
- hasSemanticIndentation false
- hasStrings true
-  "Hello world"
- hasHexadecimals true
-  // 0x[0-9a-fA-F]+
- hasFloats true
-  // [0-9][0-9]*\.[0-9]+([eE][0-9]+)?[fd]?
- hasIntegers true
-  // [0-9]+
+hasLineComments true
+ // A comment
+hasComments true
+ // A comment
+hasPrintDebugging true
+hasSemanticIndentation false
+hasStrings true
+ "Hello world"
+hasHexadecimals true
+ // 0x[0-9a-fA-F]+
+hasFloats true
+ // [0-9][0-9]*\.[0-9]+([eE][0-9]+)?[fd]?
+hasIntegers true
+ // [0-9]+
 
 lineCommentToken //
 printToken postln

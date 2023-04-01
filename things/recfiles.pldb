@@ -7,13 +7,12 @@ fileExtensions rec
 country United States
 originCommunity Free Software Foundation
 
-features
- hasComments true
-  # Blah blah…
-  # Unlike some file formats, comments in recfiles must be complete lines. You cannot start a comment in the middle of a line.
- hasLineComments true
-  # A comment
- hasSemanticIndentation false
+hasComments true
+ # Blah blah…
+ # Unlike some file formats, comments in recfiles must be complete lines. You cannot start a comment in the middle of a line.
+hasLineComments true
+ # A comment
+hasSemanticIndentation false
 
 lineCommentToken #
 

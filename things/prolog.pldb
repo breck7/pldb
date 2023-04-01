@@ -7,37 +7,36 @@ fileExtensions pl pro P
 country United Kingdom and France
 originCommunity University of Edinburgh && Aix-Marseille University
 
-features
- hasComments true
- hasTypeInference true
- hasMacros true
-  term_expansion(parent_child(Parent, Child),
-               child_parent(Child, Parent)).
-  parent_child(trevor, simon).
-  % With the above definitions, we can query (even though the predicate child_parent/2 is nowhere explicitly defined in the code above):
-  ?- child_parent(Child, Parent).
-   Child = simon, Parent = trevor.
- hasLineComments true
-  % A comment
- hasPrintDebugging true
- hasMultiLineComments true
-  /* A comment
-  */
- hasSemanticIndentation false
- hasCaseInsensitiveIdentifiers false
- hasStrings true
-  'Hello world'
- isCaseSensitive true
- hasOctals true
-  % 0o[0-7]+
- hasHexadecimals true
-  % 0x[0-9a-fA-F]+
- hasFloats true
-  % (\d+\.\d*|\d*\.\d+)([eE][+-]?[0-9]+)?
- hasIntegers true
-  % \d\d?\'[a-zA-Z0-9]+
- hasBinaryNumbers true
-  % 0b[01]+
+hasComments true
+hasTypeInference true
+hasMacros true
+ term_expansion(parent_child(Parent, Child),
+              child_parent(Child, Parent)).
+ parent_child(trevor, simon).
+ % With the above definitions, we can query (even though the predicate child_parent/2 is nowhere explicitly defined in the code above):
+ ?- child_parent(Child, Parent).
+  Child = simon, Parent = trevor.
+hasLineComments true
+ % A comment
+hasPrintDebugging true
+hasMultiLineComments true
+ /* A comment
+ */
+hasSemanticIndentation false
+hasCaseInsensitiveIdentifiers false
+hasStrings true
+ 'Hello world'
+isCaseSensitive true
+hasOctals true
+ % 0o[0-7]+
+hasHexadecimals true
+ % 0x[0-9a-fA-F]+
+hasFloats true
+ % (\d+\.\d*|\d*\.\d+)([eE][+-]?[0-9]+)?
+hasIntegers true
+ % \d\d?\'[a-zA-Z0-9]+
+hasBinaryNumbers true
+ % 0b[01]+
 
 lineCommentToken %
 multiLineCommentTokens /* */

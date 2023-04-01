@@ -4,14 +4,13 @@ type grammarLanguage
 creators Niklaus Wirth
 standsFor extended Backus-Naur form
 
-features
- hasMultiLineComments true
-  (* A comment
-  *)
- hasComments true
-  (* A comment
-  *)
- hasSemanticIndentation false
+hasMultiLineComments true
+ (* A comment
+ *)
+hasComments true
+ (* A comment
+ *)
+hasSemanticIndentation false
 
 multiLineCommentTokens (* *)
 

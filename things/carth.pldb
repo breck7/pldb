@@ -7,13 +7,12 @@ website https://carth.jo.zone/
 country Sweden
 domainName carth.jo.zone
 
-features
- hasLineComments true
-  ; A comment
- hasComments true
-  ; A comment
- hasSemanticIndentation false
- hasBooleans true
+hasLineComments true
+ ; A comment
+hasComments true
+ ; A comment
+hasSemanticIndentation false
+hasBooleans true
 
 lineCommentToken ;
 booleanTokens true false

@@ -6,15 +6,14 @@ aka qsharp
 country United States
 originCommunity Microsoft
 
-features
- hasStrings true
- hasLineComments true
-  // A comment
- hasComments true
-  // A comment
- hasWhileLoops true
- hasFunctions true
- hasConditionals true
+hasStrings true
+hasLineComments true
+ // A comment
+hasComments true
+ // A comment
+hasWhileLoops true
+hasFunctions true
+hasConditionals true
 
 lineCommentToken //
 stringToken "

@@ -3,12 +3,11 @@ appeared 1976
 type assembly
 reference https://en.wikipedia.org/wiki/Zilog_Z80#Z80_assembly_language
 
-features
- hasLineComments true
-  ; A comment
- hasComments true
-  ; A comment
- hasSemanticIndentation false
+hasLineComments true
+ ; A comment
+hasComments true
+ ; A comment
+hasSemanticIndentation false
 
 lineCommentToken ;
 

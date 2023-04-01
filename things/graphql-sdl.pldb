@@ -6,12 +6,11 @@ reference https://github.com/graphql/graphql-spec/pull/90
 country Various
 originCommunity https://github.com/graphql/
 
-features
- hasComments true
- hasMultiLineComments false
- hasLineComments true
-  “”” A comment
- hasSemanticIndentation false
+hasComments true
+hasMultiLineComments false
+hasLineComments true
+ “”” A comment
+hasSemanticIndentation false
 
 lineCommentToken #
 lineCommentToken “””

@@ -5,12 +5,11 @@ description S# is a weakly-typed dynamic language and runtime infrastructure to 
 website http://www.protsyk.com/scriptdotnet/
 aka Script.NET
 
-features
- hasLineComments true
-  // A comment
- hasComments true
-  // A comment
- hasSemanticIndentation false
+hasLineComments true
+ // A comment
+hasComments true
+ // A comment
+hasSemanticIndentation false
 
 lineCommentToken //
 

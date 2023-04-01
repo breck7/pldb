@@ -8,12 +8,11 @@ standsFor GNU Ubiquitous Intelligent Language for Extensions
 country United States
 originCommunity GNU Project
 
-features
- hasLineComments true
-  ; A comment
- hasComments true
-  ; A comment
- hasSemanticIndentation false
+hasLineComments true
+ ; A comment
+hasComments true
+ ; A comment
+hasSemanticIndentation false
 
 lineCommentToken ;
 

@@ -6,14 +6,13 @@ standsFor Quick Beginners All purpose Symbolic Instruction Code
 country United States
 originCommunity Microsoft
 
-features
- hasPrintDebugging true
- hasStrings true
-  "Hello world"
- hasFloats true
- hasIntegers true
- hasLineComments true
- hasComments true
+hasPrintDebugging true
+hasStrings true
+ "Hello world"
+hasFloats true
+hasIntegers true
+hasLineComments true
+hasComments true
 
 printToken PRINT
 stringToken "

@@ -12,36 +12,35 @@ domainName dartlang.org
   2022 338917
 releaseNotesUrl https://dart.dev/guides/whats-new
 
-features
- hasComments true
-  // Hi
-  /* Assume address is not null. */
- hasMultiLineComments true
-  /* A comment
-  */
- hasImports true
-  import 'file-system.dart';
-  import 'dart:math' as math;
- hasOperatorOverloading true
- hasLineComments true
-  // A comment
- hasPrintDebugging true
- hasSemanticIndentation false
- hasCaseInsensitiveIdentifiers false
- hasRegularExpressionsSyntaxSugar true
- hasStrings true
-  'Hello world'
- hasBooleans true
- hasWhileLoops true
- hasClasses true
- hasConstants true
- hasExceptions true
- hasSwitch true
- hasInheritance true
- hasAsyncAwait true
- hasConditionals true
- hasHexadecimals true
-  // 0[xX][0-9a-fA-F]+
+hasComments true
+ // Hi
+ /* Assume address is not null. */
+hasMultiLineComments true
+ /* A comment
+ */
+hasImports true
+ import 'file-system.dart';
+ import 'dart:math' as math;
+hasOperatorOverloading true
+hasLineComments true
+ // A comment
+hasPrintDebugging true
+hasSemanticIndentation false
+hasCaseInsensitiveIdentifiers false
+hasRegularExpressionsSyntaxSugar true
+hasStrings true
+ 'Hello world'
+hasBooleans true
+hasWhileLoops true
+hasClasses true
+hasConstants true
+hasExceptions true
+hasSwitch true
+hasInheritance true
+hasAsyncAwait true
+hasConditionals true
+hasHexadecimals true
+ // 0[xX][0-9a-fA-F]+
 
 lineCommentToken //
 multiLineCommentTokens /* */

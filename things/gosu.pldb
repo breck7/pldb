@@ -8,15 +8,14 @@ originCommunity Guidewire Software, Inc
 domainName gosu-lang.org
  registered 2009
 
-features
- hasPrintDebugging true
- hasStrings true
-  "Hello world"
- hasFloats true
- hasIntegers true
- hasLineComments true
- hasMultiLineComments true
- hasComments true
+hasPrintDebugging true
+hasStrings true
+ "Hello world"
+hasFloats true
+hasIntegers true
+hasLineComments true
+hasMultiLineComments true
+hasComments true
 
 printToken print
 stringToken "

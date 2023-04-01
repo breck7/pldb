@@ -6,19 +6,18 @@ documentation https://docs.octave.org/interpreter/
 country United States
 originCommunity University of Wisconsin-Madison && University of Texas
 
-features
- hasComments true
- hasLineComments true
-  % A comment
- hasPrintDebugging true
- hasSemanticIndentation false
- hasStrings true
-  "Hello world"
- hasFloats true
-  % (\d+\.\d*|\d*\.\d+)([eEf][+-]?[0-9]+)?
- hasIntegers true
-  % \d+
- hasMultiLineComments true
+hasComments true
+hasLineComments true
+ % A comment
+hasPrintDebugging true
+hasSemanticIndentation false
+hasStrings true
+ "Hello world"
+hasFloats true
+ % (\d+\.\d*|\d*\.\d+)([eEf][+-]?[0-9]+)?
+hasIntegers true
+ % \d+
+hasMultiLineComments true
 
 lineCommentToken %
 printToken printf

@@ -5,14 +5,13 @@ reference https://cc65.github.io/doc/ca65.html
 country Germany
 originCommunity MU software development
 
-features
- hasLineComments true
-  ; A comment
- hasComments true
-  ; A comment
- hasSemanticIndentation false
- hasStrings true
-  "Hello world"
+hasLineComments true
+ ; A comment
+hasComments true
+ ; A comment
+hasSemanticIndentation false
+hasStrings true
+ "Hello world"
 
 lineCommentToken ;
 stringToken "

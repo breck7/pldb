@@ -4,22 +4,21 @@ type pl
 creators Andreas Jönsson
 website http://angelcode.com/angelscript
 
-features
- hasLineComments true
-  // A comment
- hasComments true
-  // A comment
- hasPrintDebugging true
- hasMultiLineComments true
-  /* A comment
-  */
- hasSemanticIndentation false
- hasBooleans true
- hasWhileLoops true
- hasClasses true
- hasConstants true
- hasSwitch true
- hasConditionals true
+hasLineComments true
+ // A comment
+hasComments true
+ // A comment
+hasPrintDebugging true
+hasMultiLineComments true
+ /* A comment
+ */
+hasSemanticIndentation false
+hasBooleans true
+hasWhileLoops true
+hasClasses true
+hasConstants true
+hasSwitch true
+hasConditionals true
 
 lineCommentToken //
 multiLineCommentTokens /* */

@@ -4,24 +4,23 @@ type dataNotation
 country United States
 originCommunity Microsoft
 
-features
- hasComments true
-  # a '#' or ';' character indicates
-  ; a comment
- hasEscapeCharacters true
-  ; \" \\ \n \t \b
-  [section "subsection with \"quotes\""]
- hasAssignment true
-  [branch "master"]
-  remote = origin
-  merge = refs/heads/master
- isCaseSensitive true
-  [subsections "areCaseSensitive"]
- hasLineComments true
-  ; A comment
- hasSemanticIndentation false
- hasStrings true
- hasBooleans false
+hasComments true
+ # a '#' or ';' character indicates
+ ; a comment
+hasEscapeCharacters true
+ ; \" \\ \n \t \b
+ [section "subsection with \"quotes\""]
+hasAssignment true
+ [branch "master"]
+ remote = origin
+ merge = refs/heads/master
+isCaseSensitive true
+ [subsections "areCaseSensitive"]
+hasLineComments true
+ ; A comment
+hasSemanticIndentation false
+hasStrings true
+hasBooleans false
 
 lineCommentToken #
 lineCommentToken ;

@@ -11,15 +11,14 @@ domainName hjson.org
  awisRank
   2017 988341
 
-features
- hasLineComments true
-  # A comment
- hasComments true
-  # A comment
- hasMultiLineComments true
-  /* A comment
-  */
- hasSemanticIndentation false
+hasLineComments true
+ # A comment
+hasComments true
+ # A comment
+hasMultiLineComments true
+ /* A comment
+ */
+hasSemanticIndentation false
 
 lineCommentToken //
 lineCommentToken #

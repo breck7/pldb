@@ -7,24 +7,23 @@ standsFor Advanced Business Application Programming
 originCommunity SAP
 releaseNotesUrl https://help.sap.com/docs/BTP/4726775c8bfc483abb210252604515b2/e9b10e43016e423ab0efe91e668a6efc.html
 
-features
- hasComments true
- hasLineComments true
-  * A comment
- hasSemanticIndentation false
- hasStrings true
-  'Hello world'
- isCaseSensitive false
- hasBooleans true
- hasWhileLoops true
- hasClasses true
- hasExceptions true
- hasFunctions true
- hasSwitch true
- hasAccessModifiers true
- hasConditionals true
- hasIntegers true
-  * [0-9]+
+hasComments true
+hasLineComments true
+ * A comment
+hasSemanticIndentation false
+hasStrings true
+ 'Hello world'
+isCaseSensitive false
+hasBooleans true
+hasWhileLoops true
+hasClasses true
+hasExceptions true
+hasFunctions true
+hasSwitch true
+hasAccessModifiers true
+hasConditionals true
+hasIntegers true
+ * [0-9]+
 
 lineCommentToken *
 stringToken '

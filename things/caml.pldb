@@ -10,10 +10,9 @@ domainName caml.inria.fr
 
 related ocaml
 
-features
- hasPrintDebugging true
- hasStrings true
-  "Hello world"
+hasPrintDebugging true
+hasStrings true
+ "Hello world"
 
 printToken print_endline
 stringToken "

@@ -7,18 +7,17 @@ originCommunity https://github.com/carp-lang
 
 writtenIn haskell
 
-features
- isLisp true
- hasGarbageCollection false
- hasStaticTyping true
- hasLineComments true
-  ; A comment
- hasComments true
-  ; A comment
- hasPrintDebugging true
- hasSemanticIndentation false
- hasStrings true
-  "Hello world"
+isLisp true
+hasGarbageCollection false
+hasStaticTyping true
+hasLineComments true
+ ; A comment
+hasComments true
+ ; A comment
+hasPrintDebugging true
+hasSemanticIndentation false
+hasStrings true
+ "Hello world"
 
 lineCommentToken ;
 printToken println

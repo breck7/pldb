@@ -5,11 +5,10 @@ creators David Turner
 country United Kingdom
 originCommunity Research Software Ltd
 
-features
- hasSemanticIndentation true
- hasPrintDebugging true
- hasStrings true
-  "Hello world"
+hasSemanticIndentation true
+hasPrintDebugging true
+hasStrings true
+ "Hello world"
 
 printToken Stdout
 stringToken "

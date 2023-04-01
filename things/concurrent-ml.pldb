@@ -4,8 +4,7 @@ type pl
 country United States
 originCommunity Bell Labs, Lucent Technologies
 
-features
- hasMessagePassing true
+hasMessagePassing true
 
 wikipedia https://en.wikipedia.org/wiki/Concurrent_ML
  summary Concurrent ML (CML) is a concurrent extension of the Standard ML programming language characterized by its ability to allow programmers to create composable communication abstractions that are first class rather than built into the language. The design of CML and its primitive operations have been adopted in several other programming languages such as GNU Guile, Racket, and Manticore.

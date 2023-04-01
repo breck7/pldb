@@ -10,42 +10,41 @@ country Switzerland
 originCommunity ETH Zürich
 releaseNotesUrl https://www.freepascal.org/news.html
 
-features
- hasPolymorphism true
- hasComments true
-  { This is a single line comment in pascal. But needs to be closed. }
- hasLineComments false
- hasMultiLineComments true
-  (* A comment
-  *)
- hasFunctionOverloading true
-  program Adhoc;
-  
-  function Add(x, y : Integer) : Integer;
-  begin
-      Add := x + y
-  end;
-  
-  function Add(s, t : String) : String;
-  begin
-      Add := Concat(s, t)
-  end;
-  
-  begin
-      Writeln(Add(1, 2));                   (* Prints "3"             *)
-      Writeln(Add('Hello, ', 'World!'));    (* Prints "Hello, World!" *)
-  end.
- hasOperatorOverloading false
- hasPrintDebugging true
- hasSemanticIndentation false
- hasCaseInsensitiveIdentifiers true
-  s := (A + a + A);
- hasAssignment true
- hasStrings true
- isCaseSensitive false
- hasBooleans true
- hasWhileLoops true
- hasConditionals true
+hasPolymorphism true
+hasComments true
+ { This is a single line comment in pascal. But needs to be closed. }
+hasLineComments false
+hasMultiLineComments true
+ (* A comment
+ *)
+hasFunctionOverloading true
+ program Adhoc;
+ 
+ function Add(x, y : Integer) : Integer;
+ begin
+     Add := x + y
+ end;
+ 
+ function Add(s, t : String) : String;
+ begin
+     Add := Concat(s, t)
+ end;
+ 
+ begin
+     Writeln(Add(1, 2));                   (* Prints "3"             *)
+     Writeln(Add('Hello, ', 'World!'));    (* Prints "Hello, World!" *)
+ end.
+hasOperatorOverloading false
+hasPrintDebugging true
+hasSemanticIndentation false
+hasCaseInsensitiveIdentifiers true
+ s := (A + a + A);
+hasAssignment true
+hasStrings true
+isCaseSensitive false
+hasBooleans true
+hasWhileLoops true
+hasConditionals true
 
 lineCommentToken //
 multiLineCommentTokens { }

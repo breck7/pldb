@@ -6,13 +6,12 @@ website http://xlr.sourceforge.net/
 reference https://fosdem.org/2020/schedule/event/xllang/
 domainName xlr.sourceforge.net
 
-features
- hasSemanticIndentation true
- hasTemplates true
- hasPrintDebugging true
- hasStrings true
-  "Hello world"
- hasBooleans true
+hasSemanticIndentation true
+hasTemplates true
+hasPrintDebugging true
+hasStrings true
+ "Hello world"
+hasBooleans true
 
 printToken writeln
 stringToken "

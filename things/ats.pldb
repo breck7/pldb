@@ -13,17 +13,16 @@ domainName ats-lang.org
  awisRank
   2022 5478886
 
-features
- hasLineComments true
-  // A comment
- hasComments true
-  // A comment
- hasMultiLineComments true
-  (* A comment
-  *)
- hasSemanticIndentation false
- hasFunctions true
- hasConditionals true
+hasLineComments true
+ // A comment
+hasComments true
+ // A comment
+hasMultiLineComments true
+ (* A comment
+ *)
+hasSemanticIndentation false
+hasFunctions true
+hasConditionals true
 
 lineCommentToken //
 multiLineCommentTokens (* *)

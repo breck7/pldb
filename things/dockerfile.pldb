@@ -5,12 +5,11 @@ website https://docs.docker.com/engine/reference/builder/
 country United States
 originCommunity Docker, Inc.
 
-features
- hasLineComments true
-  # A comment
- hasComments true
-  # A comment
- hasSemanticIndentation false
+hasLineComments true
+ # A comment
+hasComments true
+ # A comment
+hasSemanticIndentation false
 
 lineCommentToken #
 

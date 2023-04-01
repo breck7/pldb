@@ -4,12 +4,11 @@ type pl
 website http://www.adventuregamestudio.co.uk/site/ags/tutorial/scripting/1/
 originCommunity Adventure Game Studio
 
-features
- hasLineComments true
-  // A comment
- hasComments true
-  // A comment
- hasSemanticIndentation false
+hasLineComments true
+ // A comment
+hasComments true
+ // A comment
+hasSemanticIndentation false
 
 lineCommentToken //
 

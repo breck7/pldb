@@ -9,10 +9,9 @@ domainName dogescript.io
  awisRank
   2022 7328617
 
-features
- hasPrintDebugging true
- hasStrings true
-  "Hello world"
+hasPrintDebugging true
+hasStrings true
+ "Hello world"
 
 printToken console.loge
 stringToken "

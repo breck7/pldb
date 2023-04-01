@@ -6,12 +6,11 @@ reference http://netpbm.sourceforge.net/doc/ppm.html
 country United States
 originCommunity https://netpbm.sourceforge.net/index.html#support
 
-features
- hasLineComments true
-  # A comment
- hasComments true
-  # A comment
- hasSemanticIndentation false
+hasLineComments true
+ # A comment
+hasComments true
+ # A comment
+hasSemanticIndentation false
 
 lineCommentToken #
 

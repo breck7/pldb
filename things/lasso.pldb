@@ -12,15 +12,14 @@ domainName lassosoft.com
  awisRank
   2022 12026019
 
-features
- hasComments true
- hasLineComments true
-  // A comment
- hasMultiLineComments true
-  /* A comment
-  */
- hasSemanticIndentation false
- hasBooleans true
+hasComments true
+hasLineComments true
+ // A comment
+hasMultiLineComments true
+ /* A comment
+ */
+hasSemanticIndentation false
+hasBooleans true
 
 lineCommentToken //
 multiLineCommentTokens /* */

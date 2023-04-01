@@ -6,12 +6,11 @@ documentation https://common-lisp.net/documentation
 country United States
 originCommunity Massachusetts Institute of Technology
 
-features
- isLisp true
- hasGarbageCollection true
- hasCaseInsensitiveIdentifiers false
- hasHomoiconicity true
- hasPrintDebugging true
+isLisp true
+hasGarbageCollection true
+hasCaseInsensitiveIdentifiers false
+hasHomoiconicity true
+hasPrintDebugging true
 
 printToken PRINT
 

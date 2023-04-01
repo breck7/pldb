@@ -7,12 +7,11 @@ originCommunity https://github.com/sarl
 domainName sarl.io
  registered 2013
 
-features
- hasHexadecimals true
- hasFloats true
- hasIntegers true
- hasMultiLineComments true
- hasComments true
+hasHexadecimals true
+hasFloats true
+hasIntegers true
+hasMultiLineComments true
+hasComments true
 
 pygmentsHighlighter SARL
  filename jvm.py

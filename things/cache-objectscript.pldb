@@ -6,10 +6,9 @@ originCommunity InterSystems
 
 supersetOf mumps
 
-features
- hasPrintDebugging true
- hasStrings true
-  "Hello world"
+hasPrintDebugging true
+hasStrings true
+ "Hello world"
 
 printToken Write
 stringToken "

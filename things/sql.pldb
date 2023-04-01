@@ -8,21 +8,20 @@ standsFor Structured Query Language
 country United States
 originCommunity IBM
 
-features
- hasComments true
- hasLineComments true
-  -- A comment
- hasSemanticIndentation false
- hasCaseInsensitiveIdentifiers true
- hasStrings true
- hasMultiLineComments true
-  /* A comment
-  */
- isCaseSensitive false
- hasBooleans true
- hasIntegers true
-  -- [0-9]+
- hasFixedPoint true
+hasComments true
+hasLineComments true
+ -- A comment
+hasSemanticIndentation false
+hasCaseInsensitiveIdentifiers true
+hasStrings true
+hasMultiLineComments true
+ /* A comment
+ */
+isCaseSensitive false
+hasBooleans true
+hasIntegers true
+ -- [0-9]+
+hasFixedPoint true
 
 lineCommentToken --
 multiLineCommentTokens /* */

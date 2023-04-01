@@ -6,10 +6,9 @@ website http://sepwww.stanford.edu/doku.php?id=sep:software:ratfor
 country United States
 originCommunity Stanford University
 
-features
- hasPrintDebugging true
- hasStrings true
-  'Hello world'
+hasPrintDebugging true
+hasStrings true
+ 'Hello world'
 
 printToken print
 stringToken '

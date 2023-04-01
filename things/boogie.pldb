@@ -5,11 +5,10 @@ description The Boogie IVL (intermediate verification language) is a simple lang
 website https://boogie-docs.readthedocs.io/en/latest/
 originCommunity Microsoft
 
-features
- hasIntegers true
- hasLineComments true
- hasMultiLineComments true
- hasComments true
+hasIntegers true
+hasLineComments true
+hasMultiLineComments true
+hasComments true
 
 example
  // Variable a is a nested map that maps

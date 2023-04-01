@@ -6,10 +6,9 @@ reference https://1c-dn.com/library/tutorials/practical_developer_guide_for_1c_e
 country Russia
 originCommunity 1C Company
 
-features
- hasPrintDebugging true
- hasStrings true
-  "Hello world"
+hasPrintDebugging true
+hasStrings true
+ "Hello world"
 
 printToken Message
 stringToken "

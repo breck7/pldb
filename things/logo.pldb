@@ -5,12 +5,11 @@ documentation https://el.media.mit.edu/logo-foundation/what_is_logo/logo_program
 country United States
 originCommunity Massachusetts Institute of Technology
 
-features
- hasComments true
- hasLineComments true
-  ; A comment
- hasPrintDebugging true
- hasSemanticIndentation false
+hasComments true
+hasLineComments true
+ ; A comment
+hasPrintDebugging true
+hasSemanticIndentation false
 
 lineCommentToken ;
 printToken print

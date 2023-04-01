@@ -6,11 +6,10 @@ reference https://en.wikipedia.org/wiki/OpenSCAD
 country Norway
 originCommunity https://opencollective.com/openscad
 
-features
- hasComments true
- hasLineComments true
-  // A comment
- hasSemanticIndentation false
+hasComments true
+hasLineComments true
+ // A comment
+hasSemanticIndentation false
 
 lineCommentToken //
 

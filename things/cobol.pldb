@@ -10,18 +10,17 @@ fileExtensions cbl cob cpy
 country United States
 originCommunity Conference/Committee on Data Systems Languages
 
-features
- hasPointers true
- hasComments true
- hasZeroBasedNumbering false
- hasMultiLineComments false
- hasLineComments true
-  MOVE ABC to XYZ  *> This is a comment.
- hasPrintDebugging true
- hasSemanticIndentation false
- hasCaseInsensitiveIdentifiers true
- hasBooleans true
- hasFixedPoint true
+hasPointers true
+hasComments true
+hasZeroBasedNumbering false
+hasMultiLineComments false
+hasLineComments true
+ MOVE ABC to XYZ  *> This is a comment.
+hasPrintDebugging true
+hasSemanticIndentation false
+hasCaseInsensitiveIdentifiers true
+hasBooleans true
+hasFixedPoint true
 
 lineCommentToken *>
 printToken DISPLAY

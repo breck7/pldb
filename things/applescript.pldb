@@ -9,23 +9,22 @@ originCommunity Apple
 
 influencedBy hypertalk
 
-features
- hasComments true
- hasGarbageCollection true
- hasMessagePassing true
- hasLineComments true
-  -- A comment
- hasPrintDebugging true
- hasMultiLineComments true
-  (* A comment
-  *)
- hasSemanticIndentation false
- hasStrings true
-  "Hello world"
- hasFloats true
-  -- [-+]?(\d+\.\d*|\d*\.\d+)(E[-+][0-9]+)?
- hasIntegers true
-  -- [-+]?\d+
+hasComments true
+hasGarbageCollection true
+hasMessagePassing true
+hasLineComments true
+ -- A comment
+hasPrintDebugging true
+hasMultiLineComments true
+ (* A comment
+ *)
+hasSemanticIndentation false
+hasStrings true
+ "Hello world"
+hasFloats true
+ -- [-+]?(\d+\.\d*|\d*\.\d+)(E[-+][0-9]+)?
+hasIntegers true
+ -- [-+]?\d+
 
 lineCommentToken --
 multiLineCommentTokens (* *)

@@ -15,43 +15,42 @@ releaseNotesUrl https://www.erlang.org/news
 
 visualParadigm false
 
-features
- hasStrings true
-  "hello world"
- canDoShebang true
-  #!/usr/bin/env escript
- hasComments true
-  % hello world program
- hasMultiLineComments false
- hasDirectives true
-  -define(TIMEOUT, 200).
-  ...
-  call(Request) ->
-     server:call(refserver, Request, ?TIMEOUT).
-  -undef(Macro).
- hasImports true
-  -include("my_records.hrl").
-  -include("incdir/my_records.hrl").
-  -include("/home/user/proj/my_records.hrl").
-  -include("$PROJ_ROOT/my_records.hrl").
-  -include_lib("kernel/include/file.hrl").
- hasExports true
-  -export([start/0, codeswitch/1]).
- hasMacros true
-  -define(Const, Replacement).
-  -define(Func(Var1,...,VarN), Replacement).
- hasLineComments true
-  % A comment
- hasMessagePassing true
- hasPrintDebugging true
- hasSemanticIndentation false
- hasCaseInsensitiveIdentifiers false
- hasFunctions true
- hasConditionals true
- hasFloats true
-  % [+-]?\d+.\d+
- hasIntegers true
-  % [+-]?(?:[2-9]|[12][0-9]|3[0-6])#[0-9a-zA-Z]+
+hasStrings true
+ "hello world"
+canDoShebang true
+ #!/usr/bin/env escript
+hasComments true
+ % hello world program
+hasMultiLineComments false
+hasDirectives true
+ -define(TIMEOUT, 200).
+ ...
+ call(Request) ->
+    server:call(refserver, Request, ?TIMEOUT).
+ -undef(Macro).
+hasImports true
+ -include("my_records.hrl").
+ -include("incdir/my_records.hrl").
+ -include("/home/user/proj/my_records.hrl").
+ -include("$PROJ_ROOT/my_records.hrl").
+ -include_lib("kernel/include/file.hrl").
+hasExports true
+ -export([start/0, codeswitch/1]).
+hasMacros true
+ -define(Const, Replacement).
+ -define(Func(Var1,...,VarN), Replacement).
+hasLineComments true
+ % A comment
+hasMessagePassing true
+hasPrintDebugging true
+hasSemanticIndentation false
+hasCaseInsensitiveIdentifiers false
+hasFunctions true
+hasConditionals true
+hasFloats true
+ % [+-]?\d+.\d+
+hasIntegers true
+ % [+-]?(?:[2-9]|[12][0-9]|3[0-6])#[0-9a-zA-Z]+
 
 lineCommentToken %
 printToken io:format

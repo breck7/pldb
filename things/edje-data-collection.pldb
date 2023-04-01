@@ -6,14 +6,13 @@ reference https://phab.enlightenment.org/w/edjebasics/
 country Various
 originCommunity Enlightenment development team
 
-features
- hasMultiLineComments true
-  /* A comment
-  */
- hasComments true
-  /* A comment
-  */
- hasSemanticIndentation false
+hasMultiLineComments true
+ /* A comment
+ */
+hasComments true
+ /* A comment
+ */
+hasSemanticIndentation false
 
 multiLineCommentTokens /* */
 

@@ -13,13 +13,12 @@ domainName haml.info
  awisRank
   2022 1114726
 
-features
- canWriteToDisk false
- hasSemanticIndentation true
- hasLineComments true
-  -# A comment
- hasComments true
-  -# A comment
+canWriteToDisk false
+hasSemanticIndentation true
+hasLineComments true
+ -# A comment
+hasComments true
+ -# A comment
 
 lineCommentToken -#
 

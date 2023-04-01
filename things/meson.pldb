@@ -4,10 +4,9 @@ type pl
 country Various
 originCommunity https://github.com/mesonbuild
 
-features
- hasOctals true
- hasHexadecimals true
- hasIntegers true
+hasOctals true
+hasHexadecimals true
+hasIntegers true
 
 wikipedia https://en.wikipedia.org/wiki/Meson_(software)
  related python unix c d java rust vala visual-studio-editor cmake ninja

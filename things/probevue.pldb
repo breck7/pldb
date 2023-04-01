@@ -5,14 +5,13 @@ cheatSheetUrl http://www.tablespace.net/quicksheet/vue-quicksheet.pdf
 country United States
 originCommunity http://www.tablespace.net
 
-features
- hasMultiLineComments true
-  /* A comment
-  */
- hasComments true
-  /* A comment
-  */
- hasSemanticIndentation false
+hasMultiLineComments true
+ /* A comment
+ */
+hasComments true
+ /* A comment
+ */
+hasSemanticIndentation false
 
 multiLineCommentTokens /* */
 

@@ -9,13 +9,12 @@ originCommunity King Saud University
 domainName ring-lang.net
  registered 2016
 
-features
- hasComments true
- hasLineComments true
-  # A comment
- hasSemanticIndentation false
- hasStrings true
-  "Hello world"
+hasComments true
+hasLineComments true
+ # A comment
+hasSemanticIndentation false
+hasStrings true
+ "Hello world"
 
 lineCommentToken #
 stringToken "

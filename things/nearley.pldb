@@ -12,13 +12,12 @@ domainName nearley.js.org
 
 writtenIn javascript
 
-features
- hasLineComments true
-  # A comment
- hasComments true
-  # A comment
- hasSemanticIndentation false
- hasBooleans true
+hasLineComments true
+ # A comment
+hasComments true
+ # A comment
+hasSemanticIndentation false
+hasBooleans true
 
 lineCommentToken #
 booleanTokens true false

@@ -8,9 +8,8 @@ country United States
 originCommunity https://github.com/pointless-lang
 domainName ptls.dev
 
-features
- hasLineComments true
- hasComments true
+hasLineComments true
+hasComments true
 
 example
  import "chart.ptls" as chart

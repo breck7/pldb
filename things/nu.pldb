@@ -5,10 +5,9 @@ creators Tim Burks
 country United States and Germany
 originCommunity https://github.com/programming-nu
 
-features
- hasPrintDebugging true
- hasStrings true
-  "Hello world"
+hasPrintDebugging true
+hasStrings true
+ "Hello world"
 
 printToken puts
 stringToken "

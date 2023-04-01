@@ -5,11 +5,10 @@ website http://www.yaml.org/spec/1.2/spec.html#Introduction
 documentation https://docs.ansible.com/ansible/latest/reference_appendices/YAMLSyntax.html
 standsFor YAML Ain't Markup Language
 
-features
- hasSemanticIndentation true
- hasLineComments true
-  # A comment
- hasComments true
+hasSemanticIndentation true
+hasLineComments true
+ # A comment
+hasComments true
 
 lineCommentToken #
 

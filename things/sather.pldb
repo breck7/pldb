@@ -8,12 +8,11 @@ originCommunity University of California, Berkeley and University of Waikato and
 
 visualParadigm false
 
-features
- hasComments true
- hasLineComments true
-  -- A comment
- hasPrintDebugging true
- hasSemanticIndentation false
+hasComments true
+hasLineComments true
+ -- A comment
+hasPrintDebugging true
+hasSemanticIndentation false
 
 lineCommentToken --
 printToken #OUT

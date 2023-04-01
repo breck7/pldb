@@ -6,12 +6,11 @@ reference https://github.com/endlesssoftware/mmk
 country Australia
 originCommunity https://github.com/endlesssoftware
 
-features
- hasLineComments true
-  ! A comment
- hasComments true
-  ! A comment
- hasSemanticIndentation false
+hasLineComments true
+ ! A comment
+hasComments true
+ ! A comment
+hasSemanticIndentation false
 
 lineCommentToken !
 

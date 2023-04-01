@@ -7,12 +7,11 @@ standsFor Acorn RISC Machine
 country United Kingdom
 originCommunity Acorn Computers or Arm Ltd
 
-features
- hasLineComments true
-  ; A comment
- hasComments true
-  ; A comment
- hasSemanticIndentation false
+hasLineComments true
+ ; A comment
+hasComments true
+ ; A comment
+hasSemanticIndentation false
 
 lineCommentToken ;
 

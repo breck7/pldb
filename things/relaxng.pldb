@@ -9,12 +9,11 @@ domainName relaxng.org
  awisRank
   2022 2914903
 
-features
- hasComments true
-  # Comments start with a # and continue to the end of the line:
- hasLineComments true
-  # A comment
- hasSemanticIndentation false
+hasComments true
+ # Comments start with a # and continue to the end of the line:
+hasLineComments true
+ # A comment
+hasSemanticIndentation false
 
 lineCommentToken #
 

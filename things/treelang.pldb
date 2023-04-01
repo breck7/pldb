@@ -3,12 +3,11 @@ appeared 1988
 type pl
 reference https://web.archive.org/web/20011108165657/http://www.geocities.com/timjosling/treelang.diff.txt
 
-features
- hasLineComments true
-  // A comment
- hasComments true
-  // A comment
- hasSemanticIndentation false
+hasLineComments true
+ // A comment
+hasComments true
+ // A comment
+hasSemanticIndentation false
 
 lineCommentToken //
 

@@ -10,13 +10,12 @@ domainName leanprover.github.io
  awisRank
   2022 540082
 
-features
- hasPrintDebugging true
- hasStrings true
-  "Hello world"
- hasIntegers true
- hasLineComments true
- hasComments true
+hasPrintDebugging true
+hasStrings true
+ "Hello world"
+hasIntegers true
+hasLineComments true
+hasComments true
 
 printToken #print
 stringToken "

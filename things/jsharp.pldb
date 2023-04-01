@@ -5,10 +5,9 @@ website http://msdn2.microsoft.com/en-us/vjsharp/default.aspx
 country United States
 originCommunity Microsoft
 
-features
- hasPrintDebugging true
- hasStrings true
-  "Hello world"
+hasPrintDebugging true
+hasStrings true
+ "Hello world"
 
 printToken System.Console.Write
 stringToken "

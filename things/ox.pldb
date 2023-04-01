@@ -8,15 +8,14 @@ originCommunity OxMetrics Technologies
 domainName oxmetrics.net
  registered 2002
 
-features
- hasLineComments true
-  // A comment
- hasComments true
-  // A comment
- hasPrintDebugging true
- hasSemanticIndentation false
- hasStrings true
-  'Hello world'
+hasLineComments true
+ // A comment
+hasComments true
+ // A comment
+hasPrintDebugging true
+hasSemanticIndentation false
+hasStrings true
+ 'Hello world'
 
 lineCommentToken //
 printToken Show

@@ -10,15 +10,14 @@ domainName argdown.org
 
 visualParadigm true
 
-features
- hasSemanticIndentation true
- hasLineComments true
-  // A comment
- hasComments true
-  // A comment
- hasMultiLineComments true
-  <!-- A comment
-  -->
+hasSemanticIndentation true
+hasLineComments true
+ // A comment
+hasComments true
+ // A comment
+hasMultiLineComments true
+ <!-- A comment
+ -->
 
 lineCommentToken //
 multiLineCommentTokens <!-- -->

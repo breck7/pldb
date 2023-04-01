@@ -7,16 +7,15 @@ standsFor Compute Unified Device Architecture
 originCommunity Nvidia
 releaseNotesUrl https://docs.nvidia.com/cuda/cuda-toolkit-release-notes/index.html
 
-features
- hasPrintDebugging true
- hasMultiLineComments true
-  /* A comment
-  */
- hasComments true
-  /* A comment
-  */
- hasSemanticIndentation false
- hasCaseInsensitiveIdentifiers false
+hasPrintDebugging true
+hasMultiLineComments true
+ /* A comment
+ */
+hasComments true
+ /* A comment
+ */
+hasSemanticIndentation false
+hasCaseInsensitiveIdentifiers false
 
 multiLineCommentTokens /* */
 printToken printf

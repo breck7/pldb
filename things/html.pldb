@@ -10,20 +10,19 @@ spec https://html.spec.whatwg.org/
 country Switzerland
 originCommunity Conseil Européen pour la Recherche Nucléaire
 
-features
- hasEnums false
- hasImports false
- hasMacros false
- hasLineComments false
- hasConditionals false
- hasTernaryOperators false
- hasComments true
-  <!-- Hello World in HTML -->
- hasMultiLineComments true
-  <!-- A comment
-  -->
- hasSemanticIndentation false
- hasCaseInsensitiveIdentifiers true
+hasEnums false
+hasImports false
+hasMacros false
+hasLineComments false
+hasConditionals false
+hasTernaryOperators false
+hasComments true
+ <!-- Hello World in HTML -->
+hasMultiLineComments true
+ <!-- A comment
+ -->
+hasSemanticIndentation false
+hasCaseInsensitiveIdentifiers true
 
 multiLineCommentTokens <!-- -->
 

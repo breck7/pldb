@@ -5,10 +5,9 @@ reference https://github.com/aviggiano/qcl
 country Austria
 originCommunity Technischen Universität Wien
 
-features
- hasPrintDebugging true
- hasStrings true
-  "Hello world"
+hasPrintDebugging true
+hasStrings true
+ "Hello world"
 
 printToken print
 stringToken "

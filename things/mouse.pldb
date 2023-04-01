@@ -5,14 +5,13 @@ website https://mouse.sourceforge.net
 country United States
 originCommunity https://sourceforge.net/p/mouse/mailman
 
-features
- hasLineComments true
-  ~ A comment
- hasComments true
-  ~ A comment
- hasSemanticIndentation false
- hasStrings true
-  "Hello world"
+hasLineComments true
+ ~ A comment
+hasComments true
+ ~ A comment
+hasSemanticIndentation false
+hasStrings true
+ "Hello world"
 
 lineCommentToken ~
 stringToken "

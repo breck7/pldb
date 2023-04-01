@@ -6,11 +6,10 @@ documentation https://mahi.ucsd.edu/Steve/Occam/documentation.html
 country United Kingdom
 originCommunity Inmos International plc
 
-features
- hasSemanticIndentation true
- hasPrintDebugging true
- hasStrings true
-  "Hello world"
+hasSemanticIndentation true
+hasPrintDebugging true
+hasStrings true
+ "Hello world"
 
 printToken write.full.string
 stringToken "

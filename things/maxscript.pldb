@@ -7,12 +7,11 @@ reference https://dl.acm.org/citation.cfm?id=522752
 country United States
 originCommunity Autodesk, Inc
 
-features
- hasComments true
- hasPrintDebugging true
- hasSemanticIndentation false
- hasStrings true
-  "Hello world"
+hasComments true
+hasPrintDebugging true
+hasSemanticIndentation false
+hasStrings true
+ "Hello world"
 
 printToken print
 stringToken "

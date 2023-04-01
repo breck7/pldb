@@ -6,12 +6,11 @@ website https://www.fon.hum.uva.nl/praat/manual/Praat_script.html
 country The Netherlands
 originCommunity Universiteit van Amsterdam
 
-features
- hasLineComments true
-  # A comment
- hasComments true
-  # A comment
- hasSemanticIndentation false
+hasLineComments true
+ # A comment
+hasComments true
+ # A comment
+hasSemanticIndentation false
 
 lineCommentToken #
 

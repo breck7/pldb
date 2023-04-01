@@ -12,24 +12,23 @@ domainName hylang.org
  awisRank
   2022 2391221
 
-features
- hasLineComments true
-  ; A comment
- hasComments true
-  ; A comment
- hasPrintDebugging true
- hasSemanticIndentation false
- hasStrings true
-  "Hello world"
- hasOctals true
-  ; 0[0-7]+j?
- hasHexadecimals true
-  ; 0[xX][a-fA-F0-9]+
- hasFloats true
-  ; -?\d+\.\d+
- hasIntegers true
-  ; -?\d+
- hasMultiLineComments true
+hasLineComments true
+ ; A comment
+hasComments true
+ ; A comment
+hasPrintDebugging true
+hasSemanticIndentation false
+hasStrings true
+ "Hello world"
+hasOctals true
+ ; 0[0-7]+j?
+hasHexadecimals true
+ ; 0[xX][a-fA-F0-9]+
+hasFloats true
+ ; -?\d+\.\d+
+hasIntegers true
+ ; -?\d+
+hasMultiLineComments true
 
 lineCommentToken ;
 printToken print

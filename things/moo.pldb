@@ -5,12 +5,11 @@ standsFor MUD, object-oriented
 country Canada
 originCommunity University of Waterloo
 
-features
- hasComments true
- hasPrintDebugging true
- hasSemanticIndentation false
- hasStrings true
-  "Hello world"
+hasComments true
+hasPrintDebugging true
+hasSemanticIndentation false
+hasStrings true
+ "Hello world"
 
 printToken player:tell
 stringToken "

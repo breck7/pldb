@@ -12,18 +12,17 @@ domainName ampl.com
  awisRank
   2022 971333
 
-features
- hasLineComments true
-  # A comment
- hasComments true
-  # A comment
- hasSemanticIndentation false
- hasAssignment true
- hasFloats true
-  # (\d+\.(?!\.)\d*|\.(?!.)\d+)([eE][+-]?\d+)?
- hasIntegers true
-  # \d+([eE][+-]?\d+)?
- hasMultiLineComments true
+hasLineComments true
+ # A comment
+hasComments true
+ # A comment
+hasSemanticIndentation false
+hasAssignment true
+hasFloats true
+ # (\d+\.(?!\.)\d*|\.(?!.)\d+)([eE][+-]?\d+)?
+hasIntegers true
+ # \d+([eE][+-]?\d+)?
+hasMultiLineComments true
 
 lineCommentToken #
 assignmentToken :=

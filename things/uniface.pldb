@@ -5,10 +5,9 @@ website http://uniface.com
 domainName uniface.com
  registered 1998
 
-features
- hasPrintDebugging true
- hasStrings true
-  "Hello world"
+hasPrintDebugging true
+hasStrings true
+ "Hello world"
 
 printToken message
 stringToken "

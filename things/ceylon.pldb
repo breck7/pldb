@@ -13,29 +13,28 @@ domainName ceylon-lang.org
 writtenIn java
 runsOnVm jvm
 
-features
- hasOperatorOverloading true
- hasStaticTyping true
- hasTypeInference true
- hasLineComments true
-  // A comment
- hasComments true
-  // A comment
- hasPrintDebugging true
- hasMultiLineComments true
-  /* A comment
-  */
- hasSemanticIndentation false
- hasStrings true
-  "Hello world"
- hasHexadecimals true
-  // #([0-9a-fA-F]{4})(_[0-9a-fA-F]{4})+
- hasFloats true
-  // \d{1,3}(_\d{3})+\.\d{1,3}(_\d{3})+[kMGTPmunpf]?
- hasIntegers true
-  // \d{1,3}(_\d{3})+[kMGTP]?
- hasBinaryNumbers true
-  // \$([01]{4})(_[01]{4})+
+hasOperatorOverloading true
+hasStaticTyping true
+hasTypeInference true
+hasLineComments true
+ // A comment
+hasComments true
+ // A comment
+hasPrintDebugging true
+hasMultiLineComments true
+ /* A comment
+ */
+hasSemanticIndentation false
+hasStrings true
+ "Hello world"
+hasHexadecimals true
+ // #([0-9a-fA-F]{4})(_[0-9a-fA-F]{4})+
+hasFloats true
+ // \d{1,3}(_\d{3})+\.\d{1,3}(_\d{3})+[kMGTPmunpf]?
+hasIntegers true
+ // \d{1,3}(_\d{3})+[kMGTP]?
+hasBinaryNumbers true
+ // \$([01]{4})(_[01]{4})+
 
 lineCommentToken //
 multiLineCommentTokens /* */

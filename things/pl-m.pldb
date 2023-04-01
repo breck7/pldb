@@ -5,15 +5,14 @@ standsFor Programming Language for Microcomputers
 country United States
 originCommunity Microcomputer Applications Associates
 
-features
- hasMultiLineComments true
-  /* A comment
-  */
- hasComments true
-  /* A comment
-  */
- hasSemanticIndentation false
- hasAssignment true
+hasMultiLineComments true
+ /* A comment
+ */
+hasComments true
+ /* A comment
+ */
+hasSemanticIndentation false
+hasAssignment true
 
 multiLineCommentTokens /* */
 assignmentToken :=
