@@ -1,4 +1,5 @@
 // WorldWideColumns is an experimental attempt to define reusuable base abstract column types for TrueBases.
+// Version 2.0.0
 
 // Cell Parsers
 blankCell
@@ -15,11 +16,19 @@ numberCell
 intCell
  extends numberCell
  highlightScope constant.numeric.integer
-countCell
- extends intCell
 floatCell
  extends numberCell
  highlightScope constant.numeric.float
+percentCell
+ highlightScope constant.numeric.integer
+ regex \d+%
+
+// Common numeric cell extensions
+countCell
+ extends intCell
+populationCountCell
+ description A count of people.
+ extends countCell
 yearCell
  extends intCell
 
@@ -99,20 +108,27 @@ abstractTrueBaseLinksColumnNode
  extends abstractStringListColumnNode
  boolean containsTrueBaseIds true
 
-// Commmon numeric parsers
+// Boolean column node
 abstractBooleanColumnNode
  cells columnNameCell boolCell
  extends abstractTrueBaseColumnNode
+
+// Commmon numeric parsers
+abstractNumericColumnNode
+ extends abstractTrueBaseColumnNode
 abstractIntColumnNode
  cells columnNameCell intCell
- extends abstractTrueBaseColumnNode
+ extends abstractNumericColumnNode
 abstractFloatColumnNode
  cells columnNameCell floatCell
- extends abstractTrueBaseColumnNode
+ extends abstractNumericColumnNode
 abstractCountColumnNode
  description A positive count of something. People, for example. Min is 0.
  cells columnNameCell countCell
  extends abstractIntColumnNode
+abstractPercentageColumnNode
+ cells columnNameCell percentCell
+ extends abstractNumericColumnNode
 
 // Common time parsers
 abstractYearColumnNode
@@ -152,10 +168,21 @@ abstractMultiwordGuidColumnNode
  catchAllCellType externalGuidCell
  extends abstractTrueBaseColumnNode
 
-// Common complex Parsers
+// Hashmap parsers
 abstractHashMapColumnNode
  extends abstractTrueBaseColumnNode
  javascript
   get columnValue() {
     return this.childrenToString()
   }
+
+// Common population columns
+abstractPopulationCountColumnNode
+ extends abstractCountColumnNode
+annualPopulationCountNode
+ cells yearCell populationCountCell
+ uniqueFirstWord
+abstractAnnualPopulationCountMapNode
+ catchAllNodeType annualPopulationCountNode
+ description A map of counts, one per year.
+ extends abstractHashMapColumnNode
