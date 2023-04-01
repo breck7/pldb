@@ -4,8 +4,6 @@ searchQueryCell
  extends stringCell
 fileNameCell
  highlightScope string
-abstractSectionNode
- extends abstractTrueBaseColumnNode
 abstractCodeColumnNode
  catchAllNodeType lineOfCodeNode
  extends abstractTrueBaseColumnNode

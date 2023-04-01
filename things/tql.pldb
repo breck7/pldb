@@ -18,10 +18,10 @@ features
 example
  where appeared > 2009
  where appeared < 2020
- notMissing githubRepo.stars
+ notMissing githubRepo_stars
  where type = pl
- sortBy githubRepo.stars
- select githubRepo.stars
+ sortBy githubRepo_stars
+ select githubRepo_stars
  reverse
 
 githubRepo https://github.com/breck7/truebase

@@ -46,7 +46,15 @@ externalGuidCell
 abstractTrueBaseColumnNode
  cells columnNameCell
  cruxFromId
+ boolean isColumn true
  single
+ javascript
+  get columnValue() {
+    return this.content
+  }
+  get columnName() {
+    return this.definition.cruxPathAsColumnName
+  }
 
 // Common string parsers
 abstractWordColumnNode
@@ -63,6 +71,13 @@ abstractStringListColumnNode
 abstractEnumColumnNode
  cells columnNameCell enumCell
  extends abstractTrueBaseColumnNode
+abstractStringBlobNode
+ extends abstractTrueBaseColumnNode
+ baseNodeType blobNode
+ javascript
+  get columnValue() {
+    return this.childrenToString()
+  }
 abstractDelimitedValuesBlobColumnNode
  description A CSV, TSV, or other delimited blob of text.
  baseNodeType blobNode
@@ -129,3 +144,7 @@ abstractMultiwordGuidColumnNode
 // Common complex Parsers
 abstractHashMapColumnNode
  extends abstractTrueBaseColumnNode
+ javascript
+  get columnValue() {
+    return this.childrenToString()
+  }

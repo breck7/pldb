@@ -1767,7 +1767,7 @@ bookCount
 paperCount
 numberOfUsers
 numberOfJobs
-githubBigQuery.repos
+githubBigQuery_repos
 creators
 githubRepo
 website
