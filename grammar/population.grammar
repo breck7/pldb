@@ -9,4 +9,4 @@ annualPopulationCountNode
 abstractAnnualPopulationCountMapNode
  catchAllNodeType annualPopulationCountNode
  description A map of counts, one per year.
- extends abstractTrueBaseColumnNode
+ extends abstractHashMapColumnNode

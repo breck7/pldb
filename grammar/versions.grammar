@@ -10,7 +10,7 @@ versionNode
  cells yearCell versionCell
 versionsNode
  description The release years and versions of the language.
- extends abstractTrueBaseColumnNode
+ extends abstractHashMapColumnNode
  catchAllNodeType versionNode
 releaseNotesUrlNode
  extends abstractUrlColumnNode

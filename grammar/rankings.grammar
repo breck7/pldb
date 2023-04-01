@@ -3,7 +3,7 @@ rankCell
 abstractAnnualRankMapNode
  catchAllNodeType annualRankNode
  description A map of ranks, one per year.
- extends abstractTrueBaseColumnNode
+ extends abstractHashMapColumnNode
 annualRankNode
  cells yearCell rankCell
  uniqueFirstWord

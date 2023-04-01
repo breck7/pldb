@@ -177,7 +177,7 @@ class PLDBFile extends TrueBaseFile {
     return count
   }
 
-  get hopl() {
+  get hoplId() {
     return this.get("hopl")?.replace(
       "https://hopl.info/showlanguage.prx?exp=",
       ""
@@ -239,19 +239,24 @@ class PLDBFile extends TrueBaseFile {
     return this.allExamples.length + this.featuresWithExamples.length
   }
 
-  get extendedFeaturesNode() {
-    if (this.quickCache.extendedFeaturesNode)
-      return this.quickCache.extendedFeaturesNode
+  // Todo: make this a general TrueBase feature
+  // Support inheritance in the dataset. Entities can extend from other entities and override
+  // only the column values where they are different.
+  get extended() {
+    if (this.quickCache.extended) return this.quickCache.extended
     const { supersetOfFile } = this
-    const featuresNode = this.getNode(`features`) ?? new TreeNode()
-    this.quickCache.extendedFeaturesNode = supersetOfFile
-      ? supersetOfFile.extendedFeaturesNode.patch(featuresNode)
-      : featuresNode
-    return this.quickCache.extendedFeaturesNode
+    this.quickCache.extended = supersetOfFile
+      ? supersetOfFile.patch(this)
+      : this
+    return this.quickCache.extended
+  }
+
+  get features() {
+    return this.extended.filter(node => node.sortKey === "abstractFeatureNode")
   }
 
   get featuresWithExamples() {
-    return this.extendedFeaturesNode.filter(node => node.length)
+    return this.features.filter(node => node.length)
   }
 
   get originCommunity() {
@@ -689,14 +694,12 @@ pipeTable
 
   get featuresTable() {
     const { file } = this
-    const featuresTable = file.extendedFeaturesNode
-    if (!featuresTable.length) return ""
+    const { features, id } = file
+    if (!features.length) return ""
 
     const { featuresMap } = file.parent
-    const { id } = file
-
     const table = new TreeNode()
-    featuresTable.forEach(node => {
+    features.forEach(node => {
       const feature = featuresMap.get(node.getWord(0))
       if (!feature) {
         console.log(
@@ -1541,14 +1544,14 @@ class Feature {
     const { id } = this
     return this.base
       .getLanguagesWithFeatureResearched(id)
-      .filter(file => file.extendedFeaturesNode.get(id) === "true")
+      .filter(file => file.extended.get(id) === "true")
   }
 
   get languagesWithoutThisFeature() {
     const { id } = this
     return this.base
       .getLanguagesWithFeatureResearched(id)
-      .filter(file => file.extendedFeaturesNode.get(id) === "false")
+      .filter(file => file.extended.get(id) === "false")
   }
 
   get summary() {
@@ -1597,12 +1600,12 @@ class Feature {
       : ""
 
     const examples = positives
-      .filter(file => file.extendedFeaturesNode.getNode(id).length)
+      .filter(file => file.extended.getNode(id).length)
       .map(file => {
         return {
           id: file.id,
           title: file.title,
-          example: file.extendedFeaturesNode.getNode(id).childrenToString()
+          example: file.extended.getNode(id).childrenToString()
         }
       })
     const grouped = lodash.groupBy(examples, "example")
@@ -1746,7 +1749,7 @@ const makeInverseRanks = ranks => {
 }
 
 class PLDBFolder extends TrueBaseFolder {
-  computedColumnNames = `pldbId bookCount paperCount hopl exampleCount numberOfUsers numberOfRepos numberOfJobs languageRank rank factCount lastActivity`.split(
+  computedColumnNames = `pldbId bookCount paperCount hoplId exampleCount numberOfUsers numberOfRepos numberOfJobs languageRank rank factCount lastActivity`.split(
     " "
   )
   globalSortFunction = item => parseInt(item.rank)
@@ -1878,7 +1881,7 @@ wikipedia`.split("\n")
     if (this.quickCache.featureCache[id])
       return this.quickCache.featureCache[id]
     this.quickCache.featureCache[id] = this.topLanguages.filter(file =>
-      file.extendedFeaturesNode.has(id)
+      file.extended.has(id)
     )
     return this.quickCache.featureCache[id]
   }
