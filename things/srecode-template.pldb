@@ -4,12 +4,11 @@ type textMarkup
 description Semantic Recoder (or SRecode) is a template manager and code generator that is a part of CEDET.
 reference https://www.gnu.org/software/emacs/manual/html_mono/srecode.html
 
-features
- hasLineComments true
-  ; A comment
- hasComments true
-  ; A comment
- hasSemanticIndentation false
+hasLineComments true
+ ; A comment
+hasComments true
+ ; A comment
+hasSemanticIndentation false
 
 lineCommentToken ;
 

@@ -6,12 +6,11 @@ standsFor C for Graphics
 country United States
 originCommunity Nvidia
 
-features
- hasLineComments true
-  // A comment
- hasComments true
-  // A comment
- hasSemanticIndentation false
+hasLineComments true
+ // A comment
+hasComments true
+ // A comment
+hasSemanticIndentation false
 
 lineCommentToken //
 

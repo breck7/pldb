@@ -4,17 +4,16 @@ type pl
 country The Netherlands
 originCommunity Informatie-Technologisch Bureau CompuPhase
 
-features
- hasPrintDebugging true
- hasStrings true
-  "Hello world"
- hasOctals true
- hasHexadecimals true
- hasFloats true
- hasIntegers true
- hasLineComments true
- hasMultiLineComments true
- hasComments true
+hasPrintDebugging true
+hasStrings true
+ "Hello world"
+hasOctals true
+hasHexadecimals true
+hasFloats true
+hasIntegers true
+hasLineComments true
+hasMultiLineComments true
+hasComments true
 
 printToken print
 stringToken "

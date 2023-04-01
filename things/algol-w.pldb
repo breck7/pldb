@@ -3,10 +3,9 @@ appeared 1966
 type pl
 originCommunity Stanford University
 
-features
- hasPrintDebugging true
- hasStrings true
-  "Hello world"
+hasPrintDebugging true
+hasStrings true
+ "Hello world"
 
 printToken write
 stringToken "

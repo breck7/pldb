@@ -10,13 +10,12 @@ domainName csound.com
  awisRank
   2022 1392357
 
-features
- hasLineComments true
-  ; A comment
- hasComments true
-  ; A comment
- hasSemanticIndentation false
- hasMultiLineComments true
+hasLineComments true
+ ; A comment
+hasComments true
+ ; A comment
+hasSemanticIndentation false
+hasMultiLineComments true
 
 lineCommentToken ;
 

@@ -8,19 +8,18 @@ domainName xtend-lang.org
 
 runsOnVm jvm
 
-features
- hasStaticTyping true
- hasTypeInference true
- hasMultiLineComments true
-  /* A comment
-  */
- hasComments true
-  /* A comment
-  */
- hasSemanticIndentation false
- hasHexadecimals true
- hasFloats true
- hasIntegers true
+hasStaticTyping true
+hasTypeInference true
+hasMultiLineComments true
+ /* A comment
+ */
+hasComments true
+ /* A comment
+ */
+hasSemanticIndentation false
+hasHexadecimals true
+hasFloats true
+hasIntegers true
 
 multiLineCommentTokens /* */
 

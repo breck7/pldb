@@ -2,14 +2,13 @@ title WebIDL
 appeared 2012
 type idl
 
-features
- hasMultiLineComments true
-  /* A comment
-  */
- hasComments true
-  /* A comment
-  */
- hasSemanticIndentation false
+hasMultiLineComments true
+ /* A comment
+ */
+hasComments true
+ /* A comment
+ */
+hasSemanticIndentation false
 
 multiLineCommentTokens /* */
 

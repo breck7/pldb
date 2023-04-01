@@ -5,8 +5,7 @@ description WebAssembly has an S-expression-based textual representation, an int
 reference https://developer.mozilla.org/en-US/docs/WebAssembly/Text_format_to_wasm
 fileExtensions wast
 
-features
- hasSemanticIndentation false
+hasSemanticIndentation false
 
 example
   (module

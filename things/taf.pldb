@@ -5,12 +5,11 @@ creators Manuel Simoni
 description A Lisp with row polymorphism, delimited continuations, and hygienic macros. [vaporware]
 reference http://www.manuelsimoni.net/taf/doc/plan.html
 
-features
- hasLineComments true
-  ; A comment
- hasComments true
-  ; A comment
- hasSemanticIndentation false
+hasLineComments true
+ ; A comment
+hasComments true
+ ; A comment
+hasSemanticIndentation false
 
 lineCommentToken ;
 

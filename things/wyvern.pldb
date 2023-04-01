@@ -4,10 +4,9 @@ type pl
 website http://wyvernlang.github.io/
 domainName wyvernlang.github.io
 
-features
- hasPrintDebugging true
- hasStrings true
-  "Hello world"
+hasPrintDebugging true
+hasStrings true
+ "Hello world"
 
 printToken stdout.print
 stringToken "

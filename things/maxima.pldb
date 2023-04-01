@@ -6,17 +6,16 @@ country United States
 originCommunity Massachusetts Institute of Technology
 domainName maxima.sourceforge.net
 
-features
- hasComments true
- hasPrintDebugging true
- hasSemanticIndentation false
- hasStrings true
-  "Hello world"
- hasWhileLoops true
- hasConditionals true
- hasFloats true
- hasIntegers true
- hasMultiLineComments true
+hasComments true
+hasPrintDebugging true
+hasSemanticIndentation false
+hasStrings true
+ "Hello world"
+hasWhileLoops true
+hasConditionals true
+hasFloats true
+hasIntegers true
+hasMultiLineComments true
 
 printToken print
 stringToken "

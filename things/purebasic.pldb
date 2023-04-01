@@ -10,14 +10,13 @@ domainName purebasic.com
   2022 790778
 releaseNotesUrl https://www.purebasic.com/news.php
 
-features
- hasComments true
- hasLineComments true
-  ; A comment
- hasPrintDebugging true
- hasSemanticIndentation false
- hasStrings true
-  "Hello world"
+hasComments true
+hasLineComments true
+ ; A comment
+hasPrintDebugging true
+hasSemanticIndentation false
+hasStrings true
+ "Hello world"
 
 lineCommentToken ;
 printToken PrintN

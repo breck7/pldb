@@ -10,10 +10,9 @@ domainName harelang.org
  awisRank
   2022 1024701
 
-features
- hasPrintDebugging true
- hasStrings true
-  "Hello world"
+hasPrintDebugging true
+hasStrings true
+ "Hello world"
 
 printToken fmt::println
 stringToken "

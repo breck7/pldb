@@ -4,13 +4,12 @@ type assembly
 documentation https://docs.oracle.com/cd/E19253-01/817-5477/817-5477.pdf
 aka x86
 
-features
- hasProcessorRegisters true
- hasLineComments true
-  ; A comment
- hasComments true
-  ; A comment
- hasSemanticIndentation false
+hasProcessorRegisters true
+hasLineComments true
+ ; A comment
+hasComments true
+ ; A comment
+hasSemanticIndentation false
 
 lineCommentToken ;
 

@@ -17,27 +17,26 @@ releaseNotesUrl https://www.lua.org/versions.html
 
 visualParadigm false
 
-features
- hasComments true
- hasMultiLineComments true
-  --[[
-  A comment.
-  --]]
- hasAssignment true
- hasOperatorOverloading true
- hasLineComments true
-  -- A comment
- hasMaps true
-  https://www.lua.org/pil/2.5.html
- hasPrintDebugging true
- hasSemanticIndentation false
- hasCaseInsensitiveIdentifiers false
- hasStrings true
- hasBooleans true
- hasWhileLoops true
- hasFunctions true
- hasConditionals true
- hasScientificNotation true
+hasComments true
+hasMultiLineComments true
+ --[[
+ A comment.
+ --]]
+hasAssignment true
+hasOperatorOverloading true
+hasLineComments true
+ -- A comment
+hasMaps true
+ https://www.lua.org/pil/2.5.html
+hasPrintDebugging true
+hasSemanticIndentation false
+hasCaseInsensitiveIdentifiers false
+hasStrings true
+hasBooleans true
+hasWhileLoops true
+hasFunctions true
+hasConditionals true
+hasScientificNotation true
 
 lineCommentToken --
 multiLineCommentTokens --[[ --]]

@@ -7,17 +7,16 @@ country United States
 originCommunity The University of Texas at Austin
 domainName orc.csres.utexas.edu
 
-features
- hasPrintDebugging true
- hasMultiLineComments true
-  {- A comment
-  -}
- hasComments true
-  {- A comment
-  -}
- hasSemanticIndentation false
- hasStrings true
-  "Hello world"
+hasPrintDebugging true
+hasMultiLineComments true
+ {- A comment
+ -}
+hasComments true
+ {- A comment
+ -}
+hasSemanticIndentation false
+hasStrings true
+ "Hello world"
 
 multiLineCommentTokens {- -}
 printToken Println

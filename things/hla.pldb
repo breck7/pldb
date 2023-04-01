@@ -11,50 +11,49 @@ originCommunity Plantation Productions, Inc
 
 influencedBy pascal ada modula-2 cpp
 
-features
- hasComments true
- hasLineComments true
-  // comment
- hasMacros true
-  // _SortCases_
-  //
-  //  This routine does a bubble sort on an array
-  // of _caseRecord_ objects.  It sorts in ascending
-  // order using the "value" field as the key.
-  //
-  // This is a good old fashioned bubble sort which
-  // turns out to be very efficient because:
-  //
-  //  (1) The list of cases is usually quite small, and
-  //  (2) The data is usually already sorted (or mostly sorted).
-  
-  macro _SortCases_( ary, size ):i, bnd, didswap, temp;
-  
-      ?bnd := size - 1;
-      ?didswap := true;
-      #while( didswap )
-      
-          ?didswap := false;
-          ?i := 0;
-          #while( i < bnd )
-          
-              #if( ary[i].value > ary[i+1].value )
-              
-                  ?temp := ary[i];
-                  ?ary[i] := ary[i+1];
-                  ?ary[i+1] := temp;
-                  ?didswap := true;
-                  
-              #endif
-              ?i := i + 1;
-              
-          #endwhile
-          ?bnd := bnd - 1;
-          
-      #endwhile;
-          
-      
-  endmacro;
+hasComments true
+hasLineComments true
+ // comment
+hasMacros true
+ // _SortCases_
+ //
+ //  This routine does a bubble sort on an array
+ // of _caseRecord_ objects.  It sorts in ascending
+ // order using the "value" field as the key.
+ //
+ // This is a good old fashioned bubble sort which
+ // turns out to be very efficient because:
+ //
+ //  (1) The list of cases is usually quite small, and
+ //  (2) The data is usually already sorted (or mostly sorted).
+ 
+ macro _SortCases_( ary, size ):i, bnd, didswap, temp;
+ 
+     ?bnd := size - 1;
+     ?didswap := true;
+     #while( didswap )
+     
+         ?didswap := false;
+         ?i := 0;
+         #while( i < bnd )
+         
+             #if( ary[i].value > ary[i+1].value )
+             
+                 ?temp := ary[i];
+                 ?ary[i] := ary[i+1];
+                 ?ary[i+1] := temp;
+                 ?didswap := true;
+                 
+             #endif
+             ?i := i + 1;
+             
+         #endwhile
+         ?bnd := bnd - 1;
+         
+     #endwhile;
+         
+     
+ endmacro;
 
 example
  procedure SetFormat;

@@ -7,20 +7,19 @@ fileExtensions mod m2 def MOD DEF mi md
 country Switzerland
 originCommunity ETH Zurich
 
-features
- hasComments true
- hasLineComments false
- hasPointers true
- hasOperatorOverloading false
- hasMultiLineComments true
-  (* A comment
-  *)
- hasPrintDebugging true
- hasSemanticIndentation false
- hasCaseInsensitiveIdentifiers false
- hasStrings true
-  "Hello world"
- hasBooleans true
+hasComments true
+hasLineComments false
+hasPointers true
+hasOperatorOverloading false
+hasMultiLineComments true
+ (* A comment
+ *)
+hasPrintDebugging true
+hasSemanticIndentation false
+hasCaseInsensitiveIdentifiers false
+hasStrings true
+ "Hello world"
+hasBooleans true
 
 multiLineCommentTokens (* *)
 printToken WriteString

@@ -11,12 +11,11 @@ domainName selflanguage.org
  awisRank
   2022 8060537
 
-features
- hasMessagePassing true
- hasPrintDebugging true
- hasSemanticIndentation false
- hasStrings true
-  'Hello world'
+hasMessagePassing true
+hasPrintDebugging true
+hasSemanticIndentation false
+hasStrings true
+ 'Hello world'
 
 printToken printLine
 stringToken '

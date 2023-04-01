@@ -8,14 +8,13 @@ country Sweden
 originCommunity Chalmers Datorförening
 domainName pike.lysator.liu.se
 
-features
- hasComments true
- hasMacros true
-  #define CYCLES 20
- hasLineComments true
-  // A comment
- hasPrintDebugging true
- hasSemanticIndentation false
+hasComments true
+hasMacros true
+ #define CYCLES 20
+hasLineComments true
+ // A comment
+hasPrintDebugging true
+hasSemanticIndentation false
 
 lineCommentToken //
 printToken write

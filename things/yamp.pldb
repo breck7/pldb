@@ -5,15 +5,14 @@ standsFor Yet Another Macro Processor
 
 supersetOf yaml
 
-features
- hasMacros true
-  - defmacro:
-    name: foo
-    args: [who]
-    value:
-        Hello: who
-  - foo:
-    who: World
+hasMacros true
+ - defmacro:
+   name: foo
+   args: [who]
+   value:
+       Hello: who
+ - foo:
+   who: World
 
 githubRepo https://github.com/birchb1024/yamp
  stars 11

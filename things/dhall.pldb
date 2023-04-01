@@ -9,12 +9,11 @@ domainName dhall-lang.org
  awisRank
   2022 4422660
 
-features
- hasLineComments true
-  -- A comment
- hasComments true
-  -- A comment
- hasSemanticIndentation false
+hasLineComments true
+ -- A comment
+hasComments true
+ -- A comment
+hasSemanticIndentation false
 
 lineCommentToken --
 

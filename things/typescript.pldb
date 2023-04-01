@@ -17,103 +17,102 @@ releaseNotesUrl https://www.typescriptlang.org/docs/handbook/release-notes/
 
 supersetOf javascript
 
-features
- hasEnums true
-  enum Direction {
-   Up,
-   Down
-  }
- hasStaticMethods true
-  class Person {
-    static sayHi() {
-      console.log("Hello world")
-    }
-  }
- hasAccessModifiers true
-  class Person {
-    private _age = 2
-    public get age() {
-      return _age
-    }
-    protected year = 1990
-  }
- hasAbstractTypes true
-  abstract class Animal {}
-  class Dog extends Animal
- hasGenerics true
-  function identity<T>(arg: T): T {
-     return arg;
-  }
- hasBooleans true
-  const result = true
- hasClasses true
-  class Person {}
- hasExplicitTypeCasting true
-  <number>something;
- hasImports true
-  import { ZipCodeValidator } from "./ZipCodeValidator";
-  /// <reference path="../typings/jquery.d.ts"/>
-  /// <reference path="components/someclass.ts"/>
-  import moo = module('moo');
-  /// <amd-dependency path="legacy/moduleA" name="moduleA"/>
- hasInterfaces true
-  // https://www.typescriptlang.org/docs/handbook/interfaces.html
-  interface SquareConfig {
-     color?: string;
-     width?: number;
-  }
- hasMixins true
-  // https://www.typescriptlang.org/docs/handbook/mixins.html
-  class SmartObject implements Disposable, Activatable {
-  }
-  // Note: still need to do some runtime ops to make that work.
- hasNamespaces true
-  // Typescript even supports splitting namespaces across multiple files:
-  // Validation.ts
-  namespace Validation {
-      export interface StringValidator {
-          isAcceptable(s: string): boolean;
-      }
-  }
-  // LettersOnlyValidator.ts
-  /// <reference path="Validation.ts" />
-  namespace Validation {
-      const lettersRegexp = /^[A-Za-z]+$/;
-      export class LettersOnlyValidator implements StringValidator {
-          isAcceptable(s: string) {
-              return lettersRegexp.test(s);
-          }
-      }
-  }
- hasOperatorOverloading false
- hasPrintDebugging true
-  console.log("Hi")
- hasInheritance true
-  class B {}
-  class A extends B {}
- hasStaticTyping true
- hasTypeParameters true
-  function identity<T>(arg: T): T {
-     return arg;
-  }
- hasStrings true
-  "hello world"
- hasTypeInference true
- hasSingleTypeArrays true
-  const scores: int[]
- hasUnionTypes true
-  declare type numOrString = string | number
- hasLineComments true
-  // A comment
- hasAlgebraicTypes true
-  declare type numOrString = string | number
- hasComments true
-  // A comment
- hasMultiLineComments true
-  /* A comment
-  */
- hasSemanticIndentation false
- hasCaseInsensitiveIdentifiers false
+hasEnums true
+ enum Direction {
+  Up,
+  Down
+ }
+hasStaticMethods true
+ class Person {
+   static sayHi() {
+     console.log("Hello world")
+   }
+ }
+hasAccessModifiers true
+ class Person {
+   private _age = 2
+   public get age() {
+     return _age
+   }
+   protected year = 1990
+ }
+hasAbstractTypes true
+ abstract class Animal {}
+ class Dog extends Animal
+hasGenerics true
+ function identity<T>(arg: T): T {
+    return arg;
+ }
+hasBooleans true
+ const result = true
+hasClasses true
+ class Person {}
+hasExplicitTypeCasting true
+ <number>something;
+hasImports true
+ import { ZipCodeValidator } from "./ZipCodeValidator";
+ /// <reference path="../typings/jquery.d.ts"/>
+ /// <reference path="components/someclass.ts"/>
+ import moo = module('moo');
+ /// <amd-dependency path="legacy/moduleA" name="moduleA"/>
+hasInterfaces true
+ // https://www.typescriptlang.org/docs/handbook/interfaces.html
+ interface SquareConfig {
+    color?: string;
+    width?: number;
+ }
+hasMixins true
+ // https://www.typescriptlang.org/docs/handbook/mixins.html
+ class SmartObject implements Disposable, Activatable {
+ }
+ // Note: still need to do some runtime ops to make that work.
+hasNamespaces true
+ // Typescript even supports splitting namespaces across multiple files:
+ // Validation.ts
+ namespace Validation {
+     export interface StringValidator {
+         isAcceptable(s: string): boolean;
+     }
+ }
+ // LettersOnlyValidator.ts
+ /// <reference path="Validation.ts" />
+ namespace Validation {
+     const lettersRegexp = /^[A-Za-z]+$/;
+     export class LettersOnlyValidator implements StringValidator {
+         isAcceptable(s: string) {
+             return lettersRegexp.test(s);
+         }
+     }
+ }
+hasOperatorOverloading false
+hasPrintDebugging true
+ console.log("Hi")
+hasInheritance true
+ class B {}
+ class A extends B {}
+hasStaticTyping true
+hasTypeParameters true
+ function identity<T>(arg: T): T {
+    return arg;
+ }
+hasStrings true
+ "hello world"
+hasTypeInference true
+hasSingleTypeArrays true
+ const scores: int[]
+hasUnionTypes true
+ declare type numOrString = string | number
+hasLineComments true
+ // A comment
+hasAlgebraicTypes true
+ declare type numOrString = string | number
+hasComments true
+ // A comment
+hasMultiLineComments true
+ /* A comment
+ */
+hasSemanticIndentation false
+hasCaseInsensitiveIdentifiers false
 
 lineCommentToken //
 multiLineCommentTokens /* */

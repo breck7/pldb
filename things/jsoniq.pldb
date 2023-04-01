@@ -9,9 +9,8 @@ domainName jsoniq.org
 
 supersetOf json
 
-features
- hasStrings true
-  "Hello world"
+hasStrings true
+ "Hello world"
 
 stringToken "
 

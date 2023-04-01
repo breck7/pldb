@@ -7,11 +7,10 @@ cheatSheetUrl https://files.timber.io/pdfs/PromQL+Cheatsheet.pdf
 country Germany
 originCommunity https://github.com/prometheus
 
-features
- hasFloats true
- hasIntegers true
- hasLineComments true
- hasComments true
+hasFloats true
+hasIntegers true
+hasLineComments true
+hasComments true
 
 example
  topk(3, sum by (app, proc) (rate(instance_cpu_time_ns[5m])))

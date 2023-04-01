@@ -5,33 +5,32 @@ documentation https://vhdlguide.readthedocs.io/en/latest/
 standsFor VHSIC Hardware Description Language
 country United States
 
-features
- hasComments true
- hasLineComments true
-  -- A comment
- hasMultiLineComments false
- hasPrintDebugging true
- hasSemanticIndentation false
- hasCaseInsensitiveIdentifiers true
-  signals some_signal : integer ;
-  signal some_other_signal : integer ;
-  signal result : integer ;
-  ReSULT <= SOME_SIGNAL + sOME_oTHer_SIGNal ; -- Although totally unrecommended - this is perfectly legal
- hasStrings true
-  "Hello world"
- hasWhileLoops true
- hasFunctions true
- hasConditionals true
- hasOctals true
-  -- O"[0-7_]+"
- hasHexadecimals true
-  -- X"[0-9a-f_]+"
- hasFloats true
-  -- (\d+\.\d*|\.\d+|\d+)E[+-]?\d+
- hasIntegers true
-  -- \d{1,2}#[0-9a-f_]+#?
- hasBinaryNumbers true
-  -- B"[01_]+"
+hasComments true
+hasLineComments true
+ -- A comment
+hasMultiLineComments false
+hasPrintDebugging true
+hasSemanticIndentation false
+hasCaseInsensitiveIdentifiers true
+ signals some_signal : integer ;
+ signal some_other_signal : integer ;
+ signal result : integer ;
+ ReSULT <= SOME_SIGNAL + sOME_oTHer_SIGNal ; -- Although totally unrecommended - this is perfectly legal
+hasStrings true
+ "Hello world"
+hasWhileLoops true
+hasFunctions true
+hasConditionals true
+hasOctals true
+ -- O"[0-7_]+"
+hasHexadecimals true
+ -- X"[0-9a-f_]+"
+hasFloats true
+ -- (\d+\.\d*|\.\d+|\d+)E[+-]?\d+
+hasIntegers true
+ -- \d{1,2}#[0-9a-f_]+#?
+hasBinaryNumbers true
+ -- B"[01_]+"
 
 lineCommentToken --
 printToken write

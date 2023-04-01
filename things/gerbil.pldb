@@ -5,12 +5,11 @@ website https://cons.io/
 country Unknown
 originCommunity https://github.com/vyzo/gerbil/issues
 
-features
- isLisp true
- hasComments true
- hasLineComments true
-  ; A comment
- hasMacros true
+isLisp true
+hasComments true
+hasLineComments true
+ ; A comment
+hasMacros true
 
 lineCommentToken ;
 

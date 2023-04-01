@@ -6,18 +6,17 @@ documentation https://www.ibm.com/docs/en/SSY2V3_5.1.0/com.ibm.ent.pl1.zos.doc/l
 standsFor Programming Language One
 originCommunity IBM
 
-features
- hasPointers true
- hasThreads true
- hasMultiLineComments true
-  /* A comment
-  */
- hasComments true
-  /* A comment
-  */
- hasSemanticIndentation false
- hasAssignment true
- hasFixedPoint true
+hasPointers true
+hasThreads true
+hasMultiLineComments true
+ /* A comment
+ */
+hasComments true
+ /* A comment
+ */
+hasSemanticIndentation false
+hasAssignment true
+hasFixedPoint true
 
 multiLineCommentTokens /* */
 assignmentToken =

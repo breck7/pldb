@@ -4,10 +4,9 @@ type esolang
 country United States
 originCommunity Fluid Analogies Research Group
 
-features
- hasPrintDebugging true
- hasStrings true
-  'Hello world'
+hasPrintDebugging true
+hasStrings true
+ 'Hello world'
 
 printToken PRINT
 stringToken '

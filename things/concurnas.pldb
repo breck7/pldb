@@ -8,10 +8,9 @@ originCommunity https://github.com/Concurnas
 domainName concurnas.com
  registered 2018
 
-features
- hasPrintDebugging true
- hasStrings true
-  "Hello world"
+hasPrintDebugging true
+hasStrings true
+ "Hello world"
 
 printToken System.out.println
 stringToken "

@@ -4,10 +4,9 @@ type pl
 country United Kingdom
 originCommunity Locomotive Software
 
-features
- hasPrintDebugging true
- hasStrings true
-  "Hello world"
+hasPrintDebugging true
+hasStrings true
+ "Hello world"
 
 printToken print
 stringToken "

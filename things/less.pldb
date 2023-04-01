@@ -12,16 +12,15 @@ domainName lesscss.org
   2022 210051
   2017 102718
 
-features
- hasLineComments true
-  // A comment
- hasMultiLineComments true
-  /* A comment
-  */
- hasComments true
-  // A comment
- hasStrings true
-  "Hello world"
+hasLineComments true
+ // A comment
+hasMultiLineComments true
+ /* A comment
+ */
+hasComments true
+ // A comment
+hasStrings true
+ "Hello world"
 
 lineCommentToken //
 multiLineCommentTokens /* */

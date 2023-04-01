@@ -8,12 +8,11 @@ originCommunity https://github.com/breuleux/earl-grey/issues
 
 compilesTo javascript
 
-features
- hasOctals true
- hasHexadecimals true
- hasFloats true
- hasIntegers true
- hasBinaryNumbers true
+hasOctals true
+hasHexadecimals true
+hasFloats true
+hasIntegers true
+hasBinaryNumbers true
 
 example
  count-words(text) =

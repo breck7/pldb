@@ -12,14 +12,13 @@ domainName openeuphoria.org
  awisRank
   2017 1210678
 
-features
- hasComments true
- hasLineComments true
-  -- A comment
- hasPrintDebugging true
- hasSemanticIndentation false
- hasStrings true
-  "Hello world"
+hasComments true
+hasLineComments true
+ -- A comment
+hasPrintDebugging true
+hasSemanticIndentation false
+hasStrings true
+ "Hello world"
 
 lineCommentToken --
 printToken puts

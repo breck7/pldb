@@ -3,15 +3,14 @@ appeared 1968
 type pl
 originCommunity International Federation for Information Processing
 
-features
- hasDirectives true
-  .PR POINT .PR
-  .PR UPPER .PR
-  .PR RES .PR
-  'pr' quote 'pr'
- hasPrintDebugging true
- hasStrings true
-  "Hello world"
+hasDirectives true
+ .PR POINT .PR
+ .PR UPPER .PR
+ .PR RES .PR
+ 'pr' quote 'pr'
+hasPrintDebugging true
+hasStrings true
+ "Hello world"
 
 printToken print
 stringToken "

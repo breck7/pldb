@@ -10,12 +10,11 @@ originCommunity Edward de Jong
 domainName beadslang.org
  registered 2016
 
-features
- hasLineComments true
-  // A comment
- hasComments true
-  // A comment
- hasSemanticIndentation true
+hasLineComments true
+ // A comment
+hasComments true
+ // A comment
+hasSemanticIndentation true
 
 lineCommentToken //
 

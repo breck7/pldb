@@ -7,14 +7,13 @@ standsFor Basic Combined Programming Language
 country United Kingdom
 originCommunity University of Cambridge
 
-features
- hasLineComments true
-  // A comment
- hasComments true
-  // A comment
- hasPrintDebugging true
- hasSemanticIndentation false
- hasAssignment true
+hasLineComments true
+ // A comment
+hasComments true
+ // A comment
+hasPrintDebugging true
+hasSemanticIndentation false
+hasAssignment true
 
 lineCommentToken //
 printToken WRITES

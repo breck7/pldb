@@ -4,8 +4,7 @@ type pl
 creators Ben L. Titzer
 reference https://news.ycombinator.com/item?id=31954053
 
-features
- hasPrintDebugging true
+hasPrintDebugging true
 
 printToken System.puts
 

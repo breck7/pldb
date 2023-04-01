@@ -4,10 +4,9 @@ type pl
 country Unknown
 originCommunity https://github.com/nickmqb/muon/issues
 
-features
- hasPrintDebugging true
- hasStrings true
-  "Hello world"
+hasPrintDebugging true
+hasStrings true
+ "Hello world"
 
 printToken printf
 stringToken "

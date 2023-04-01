@@ -4,17 +4,16 @@ type pl
 documentation https://www.eclipse.org/Xtext/documentation/305_xbase.html#xbase-expressions
 country United States
 
-features
- hasLineComments true
-  // A comment
- hasComments true
-  // A comment
- hasMultiLineComments true
-  /* A comment
-  */
- hasSemanticIndentation false
- hasStrings true
-  'Hello world'
+hasLineComments true
+ // A comment
+hasComments true
+ // A comment
+hasMultiLineComments true
+ /* A comment
+ */
+hasSemanticIndentation false
+hasStrings true
+ 'Hello world'
 
 lineCommentToken //
 multiLineCommentTokens /* */

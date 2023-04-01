@@ -5,10 +5,9 @@ reference https://semanticscholar.org/paper/b422464b08a7878c2127165c780df52dc052
 country France
 originCommunity INRIA
 
-features
- hasPrintDebugging true
- hasStrings true
-  "Hello world"
+hasPrintDebugging true
+hasStrings true
+ "Hello world"
 
 printToken write
 stringToken "

@@ -8,13 +8,12 @@ originCommunity https://f1zz.org
 domainName f1zz.org
  registered 2017
 
-features
- hasLineComments true
-  // A comment
- hasComments true
-  // A comment
- hasSemanticIndentation false
- hasBooleans true
+hasLineComments true
+ // A comment
+hasComments true
+ // A comment
+hasSemanticIndentation false
+hasBooleans true
 
 lineCommentToken //
 booleanTokens true false

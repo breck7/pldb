@@ -5,10 +5,9 @@ reference https://nixos.org/
 country The Netherlands
 originCommunity NixOS Foundation
 
-features
- hasIntegers true
- hasLineComments true
- hasMultiLineComments true
+hasIntegers true
+hasLineComments true
+hasMultiLineComments true
 
 keywords rec with let in inherit assert if else then ...
 

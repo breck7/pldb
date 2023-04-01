@@ -7,13 +7,12 @@ reference https://web.archive.org/web/20170325000321/http://www.templeos.org/Wb/
 country United States
 originCommunity https://github.com/cia-foundation/TempleOS/issues
 
-features
- hasLineComments true
-  // A comment
- hasComments true
-  // A comment
- hasPrintDebugging true
- hasSemanticIndentation false
+hasLineComments true
+ // A comment
+hasComments true
+ // A comment
+hasPrintDebugging true
+hasSemanticIndentation false
 
 lineCommentToken //
 printToken Print

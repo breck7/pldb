@@ -8,12 +8,11 @@ originCommunity https://github.com/tarcieri/reia/issues
 domainName reia-lang.org
  registered 2008
 
-features
- hasAssignment true
- hasLineComments true
-  # A comment
- hasComments true
-  # A comment
+hasAssignment true
+hasLineComments true
+ # A comment
+hasComments true
+ # A comment
 
 lineCommentToken #
 printToken puts

@@ -5,8 +5,7 @@ website https://devcenter.heroku.com/articles/procfile#procfile-format
 country United States
 originCommunity Heroku, Inc
 
-features
- hasIntegers true
+hasIntegers true
 
 example
  web: bundle exec rails server -p $PORT

@@ -10,15 +10,14 @@ domainName parser.ru
  awisRank
   2022 7803956
 
-features
- hasLineComments true
-  # A comment
- hasComments true
-  # A comment
- hasPrintDebugging true
- hasSemanticIndentation false
- hasStrings true
-  "Hello world"
+hasLineComments true
+ # A comment
+hasComments true
+ # A comment
+hasPrintDebugging true
+hasSemanticIndentation false
+hasStrings true
+ "Hello world"
 
 lineCommentToken #
 printToken $console:line

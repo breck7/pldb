@@ -9,12 +9,11 @@ documentation https://docs.influxdata.com/flux/v0.x/
 country United States
 originCommunity https://github.com/fluxcd
 
-features
- hasLineComments true
-  // A comment
- hasComments true
-  // A comment
- hasSemanticIndentation false
+hasLineComments true
+ // A comment
+hasComments true
+ // A comment
+hasSemanticIndentation false
 
 lineCommentToken //
 

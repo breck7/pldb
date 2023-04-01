@@ -4,10 +4,9 @@ type pl
 country Germany
 originCommunity GFA Systemtechnik GmbH
 
-features
- hasPrintDebugging true
- hasStrings true
-  "Hello world"
+hasPrintDebugging true
+hasStrings true
+ "Hello world"
 
 printToken PRINT
 stringToken "

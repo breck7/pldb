@@ -11,15 +11,14 @@ originCommunity https://github.com/muhammadmuzzammil1998/jsonc/issues
 
 supersetOf json
 
-features
- hasLineComments true
-  // A comment
- hasMultiLineComments true
-  /* A comment
-  */
- hasComments true
-  // A comment
- hasSemanticIndentation false
+hasLineComments true
+ // A comment
+hasMultiLineComments true
+ /* A comment
+ */
+hasComments true
+ // A comment
+hasSemanticIndentation false
 
 lineCommentToken //
 multiLineCommentTokens /* */

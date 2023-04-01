@@ -6,12 +6,11 @@ documentation https://www.postgresql.org/docs/current/plpgsql.html
 country United States
 originCommunity The PostgreSQL Global Development Group
 
-features
- hasFloats true
- hasIntegers true
- hasLineComments true
- hasMultiLineComments true
- hasComments true
+hasFloats true
+hasIntegers true
+hasLineComments true
+hasMultiLineComments true
+hasComments true
 
 wikipedia https://en.wikipedia.org/wiki/PL/pgSQL
  related pl-sql ada postgresql sql-psm sql bison

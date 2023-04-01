@@ -4,14 +4,13 @@ type pl
 country Scotland
 originCommunity University of Glasgow && Heriot Watt University && University of Strathclyde
 
-features
- hasMultiLineComments true
-  ''' A comment
-  '''
- hasComments true
-  ''' A comment
-  '''
- hasSemanticIndentation false
+hasMultiLineComments true
+ ''' A comment
+ '''
+hasComments true
+ ''' A comment
+ '''
+hasSemanticIndentation false
 
 multiLineCommentTokens '''
 

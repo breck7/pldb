@@ -12,30 +12,29 @@ domainName json.org
  awisRank
   2022 62633
 
-features
- canWriteToDisk false
- hasBooleans true
-  false
- hasComments false
- hasMacros false
- hasLineComments false
- hasConditionals false
- hasTernaryOperators false
- hasMultiLineComments false
- hasFloats true
-  2.3
- hasImports false
- hasIntegers true
-  80766866
- hasMultilineStrings false
- hasStrings true
-  "hello world"
- hasMaps true
-  {"name": "Mary"}
- hasLists true
-  [1, 2, 3]
- hasSemanticIndentation false
- hasCaseInsensitiveIdentifiers false
+canWriteToDisk false
+hasBooleans true
+ false
+hasComments false
+hasMacros false
+hasLineComments false
+hasConditionals false
+hasTernaryOperators false
+hasMultiLineComments false
+hasFloats true
+ 2.3
+hasImports false
+hasIntegers true
+ 80766866
+hasMultilineStrings false
+hasStrings true
+ "hello world"
+hasMaps true
+ {"name": "Mary"}
+hasLists true
+ [1, 2, 3]
+hasSemanticIndentation false
+hasCaseInsensitiveIdentifiers false
 
 wikipedia https://en.wikipedia.org/wiki/JSON
  example

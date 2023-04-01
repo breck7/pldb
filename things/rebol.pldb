@@ -12,25 +12,24 @@ domainName rebol.com
  awisRank
   2022 1353792
 
-features
- canWriteToDisk true
-  write %helloworld.txt "Hello, world!^/"
- hasComments true
- hasExceptions true
-  catch [throw 22 print "You'll never see this."]
-  
-  try/except [read %does_not_exist] [print "File not found"]
- hasGarbageCollection true
- hasHomoiconicity true
- hasLineComments true
-  ; A comment
- hasLists true
-  my-list: [1 two 3.0 "four"]
- hasPrintDebugging true
- hasSemanticIndentation false
- hasStrings true
-  "Hello world"
-  {He said "That looks good!"}
+canWriteToDisk true
+ write %helloworld.txt "Hello, world!^/"
+hasComments true
+hasExceptions true
+ catch [throw 22 print "You'll never see this."]
+ 
+ try/except [read %does_not_exist] [print "File not found"]
+hasGarbageCollection true
+hasHomoiconicity true
+hasLineComments true
+ ; A comment
+hasLists true
+ my-list: [1 two 3.0 "four"]
+hasPrintDebugging true
+hasSemanticIndentation false
+hasStrings true
+ "Hello world"
+ {He said "That looks good!"}
 
 lineCommentToken ;
 printToken print probe

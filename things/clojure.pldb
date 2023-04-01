@@ -19,59 +19,58 @@ releaseNotesUrl https://clojure.org/releases/devchangelog
 
 runsOnVm jvm
 
-features
- isLisp true
- hasStrings true
-  "hello world"
- hasPartialApplication true
-  (defn fun-full [x y] (+ x y))
-  (fun-full 2 3)
-  (def fun-half (partial fun-full 2))
-  (fun-half 3)
- hasComments true
- hasImports true
-  (load "fun")
-  (load "files/fun")
-  (load-file "./files/fun.clj")
-  (defproject project-a
-  :dependencies [[org.clojure/clojure "1.5.1"]
-                [project-b "0.1.0"]])
-  (require '[clojure.string :as string])
-  (use '[clojure.string :only [split]])
-  (import 'java.util.Date)
-  (java.util.Date.)
-  (require 'clojure.contrib.def 'clojure.contrib.except 'clojure.contrib.sql)
-  (require '(clojure.contrib def except sql))
- hasMacros true
-  ; https://www.braveclojure.com/writing-macros/
-  ; https://clojure.org/reference/macros
-  (defmacro and
-   "Evaluates exprs one at a time, from left to right. If a form
-   returns logical false (nil or false), and returns that value and
-   doesn't evaluate any of the other expressions, otherwise it returns
-   the value of the last expr. (and) returns true."
-   {:added "1.0"}
-   ([] true)
-   ([x] x)
-   ([x & next]
-    `(let [and# ~x]
-       (if and# (and ~@next) and#))))
- hasOperatorOverloading true
- hasLineComments true
-  ; A comment
- hasHomoiconicity true
- hasPrintDebugging true
- hasMultiLineComments true
-  (comment A comment
-  )
- hasSemanticIndentation false
- hasCaseInsensitiveIdentifiers false
- hasHexadecimals true
-  ; 0x-?[abcdef\d]+
- hasFloats true
-  ; -?\d+\.\d+
- hasIntegers true
-  ; -?\d+
+isLisp true
+hasStrings true
+ "hello world"
+hasPartialApplication true
+ (defn fun-full [x y] (+ x y))
+ (fun-full 2 3)
+ (def fun-half (partial fun-full 2))
+ (fun-half 3)
+hasComments true
+hasImports true
+ (load "fun")
+ (load "files/fun")
+ (load-file "./files/fun.clj")
+ (defproject project-a
+ :dependencies [[org.clojure/clojure "1.5.1"]
+               [project-b "0.1.0"]])
+ (require '[clojure.string :as string])
+ (use '[clojure.string :only [split]])
+ (import 'java.util.Date)
+ (java.util.Date.)
+ (require 'clojure.contrib.def 'clojure.contrib.except 'clojure.contrib.sql)
+ (require '(clojure.contrib def except sql))
+hasMacros true
+ ; https://www.braveclojure.com/writing-macros/
+ ; https://clojure.org/reference/macros
+ (defmacro and
+  "Evaluates exprs one at a time, from left to right. If a form
+  returns logical false (nil or false), and returns that value and
+  doesn't evaluate any of the other expressions, otherwise it returns
+  the value of the last expr. (and) returns true."
+  {:added "1.0"}
+  ([] true)
+  ([x] x)
+  ([x & next]
+   `(let [and# ~x]
+      (if and# (and ~@next) and#))))
+hasOperatorOverloading true
+hasLineComments true
+ ; A comment
+hasHomoiconicity true
+hasPrintDebugging true
+hasMultiLineComments true
+ (comment A comment
+ )
+hasSemanticIndentation false
+hasCaseInsensitiveIdentifiers false
+hasHexadecimals true
+ ; 0x-?[abcdef\d]+
+hasFloats true
+ ; -?\d+\.\d+
+hasIntegers true
+ ; -?\d+
 
 lineCommentToken ;
 multiLineCommentTokens (comment )

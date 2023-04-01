@@ -8,27 +8,26 @@ standsFor Function Manipulation Language
 country United States
 originCommunity https://duriansoftware.com
 
-features
- hasComments true
-  # This is a line comment
-  
-  ###
-  This is a block comment
-  ###
- hasDirectives true
-  # Directives are special lines that have syntax and semantics of their own. Directives all start with a name of the form .foo; new directives may be added by future versions of the language.
-  .import math.constants
-  area = x * math.constants.Pi, ^ 2
-  .from math.constants import Pi, E
-  area = x sq, * Pi
-  polar = a * [E ^ [b * 0+j1]]
- hasLineComments true
-  # A comment
- hasMultiLineComments true
-  ###
-  A comment
-  ###
- hasSemanticIndentation false
+hasComments true
+ # This is a line comment
+ 
+ ###
+ This is a block comment
+ ###
+hasDirectives true
+ # Directives are special lines that have syntax and semantics of their own. Directives all start with a name of the form .foo; new directives may be added by future versions of the language.
+ .import math.constants
+ area = x * math.constants.Pi, ^ 2
+ .from math.constants import Pi, E
+ area = x sq, * Pi
+ polar = a * [E ^ [b * 0+j1]]
+hasLineComments true
+ # A comment
+hasMultiLineComments true
+ ###
+ A comment
+ ###
+hasSemanticIndentation false
 
 lineCommentToken #
 multiLineCommentTokens ###

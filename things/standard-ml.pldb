@@ -11,11 +11,10 @@ domainName sml-family.org
  awisRank
   2017 560018
 
-features
- hasTypeInference true
- hasLineComments false
- hasPrintDebugging true
- hasSemanticIndentation false
+hasTypeInference true
+hasLineComments false
+hasPrintDebugging true
+hasSemanticIndentation false
 
 lineCommentToken #
 printToken print

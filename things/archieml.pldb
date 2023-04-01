@@ -9,9 +9,8 @@ country United States
 originCommunity The New York Times
 domainName archieml.org
 
-features
- hasSemanticIndentation false
-  AML ignores all whitespace not within a value. We believe this makes it easier for non-programmers to use, and is essential for use in environments with non-monospaced fonts, like in Google Documents.
+hasSemanticIndentation false
+ AML ignores all whitespace not within a value. We believe this makes it easier for non-programmers to use, and is essential for use in environments with non-monospaced fonts, like in Google Documents.
 
 example
  [days]

@@ -5,16 +5,15 @@ reference https://github.com/babyraging/yash
 country United States
 originCommunity https://github.com/babyraging/yash/issues
 
-features
- hasMultiLineComments true
-  /* A comment
-  */
- hasComments true
-  /* A comment
-  */
- hasLineComments true
-  // A comment
- hasSemanticIndentation false
+hasMultiLineComments true
+ /* A comment
+ */
+hasComments true
+ /* A comment
+ */
+hasLineComments true
+ // A comment
+hasSemanticIndentation false
 
 lineCommentToken //
 multiLineCommentTokens /* */

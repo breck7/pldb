@@ -5,12 +5,11 @@ description Zimpl is a little language to translate the mathematical model of a 
 website https://zimpl.zib.de/
 domainName zimpl.zib.de
 
-features
- hasLineComments true
-  # A comment
- hasComments true
-  # A comment
- hasSemanticIndentation false
+hasLineComments true
+ # A comment
+hasComments true
+ # A comment
+hasSemanticIndentation false
 
 lineCommentToken #
 

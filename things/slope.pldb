@@ -13,53 +13,52 @@ influencedBy scheme
 
 visualParadigm false
 
-features
- isLisp true
- hasMacros true
- hasPrefixNotation true
-  (+ 1 2)
- hasBitWiseOperators true
-  (& 0xFF 0x1B)
- hasBooleans true
-  (define open? #t)
- hasLineComments true
-  ; I am a comment
- hasComments true
-  ; I am a comment
- hasBuiltInRegex true
-  (regex-match? `[0-9]+` "Hello 12345")
-  (regex-replace `Hello, (\w+)!$` "Hello, world!" "Goodbye, $1!")
- hasNamespaces true
-  (ns-create 'hello-world)
-  (ns-define
-    'hello-world
-    'print
-    (lambda ()
-      (display "hello world!\n")))
-  (hello-world::print)
- canUseQuestionMarksAsPartOfIdentifier true
-  (define yes? #t)
- hasSemanticIndentation false
- hasStrings true
-  "hello world"
-  `hello	wold`
- hasGarbageCollection true
- hasGotos false
- hasImports true
-  (load-mod my-module)
-  (load "examples/test.slo")
- isCaseSensitive true
- hasVariadicFunctions true
-  (lambda (...) (apply + ...))
- hasSwitch true
-  (case my-num
-    (5 (display "Five!"))
-    (0 (display "Zero!"))
-    (else (display "Not an option")))
- hasZeroBasedNumbering true
- hasIncrementAndDecrementOperators false
- hasConditionals true
-  (if positive? 1 -1)
+isLisp true
+hasMacros true
+hasPrefixNotation true
+ (+ 1 2)
+hasBitWiseOperators true
+ (& 0xFF 0x1B)
+hasBooleans true
+ (define open? #t)
+hasLineComments true
+ ; I am a comment
+hasComments true
+ ; I am a comment
+hasBuiltInRegex true
+ (regex-match? `[0-9]+` "Hello 12345")
+ (regex-replace `Hello, (\w+)!$` "Hello, world!" "Goodbye, $1!")
+hasNamespaces true
+ (ns-create 'hello-world)
+ (ns-define
+   'hello-world
+   'print
+   (lambda ()
+     (display "hello world!\n")))
+ (hello-world::print)
+canUseQuestionMarksAsPartOfIdentifier true
+ (define yes? #t)
+hasSemanticIndentation false
+hasStrings true
+ "hello world"
+ `hello	wold`
+hasGarbageCollection true
+hasGotos false
+hasImports true
+ (load-mod my-module)
+ (load "examples/test.slo")
+isCaseSensitive true
+hasVariadicFunctions true
+ (lambda (...) (apply + ...))
+hasSwitch true
+ (case my-num
+   (5 (display "Five!"))
+   (0 (display "Zero!"))
+   (else (display "Not an option")))
+hasZeroBasedNumbering true
+hasIncrementAndDecrementOperators false
+hasConditionals true
+ (if positive? 1 -1)
 
 lineCommentToken ;
 printToken display

@@ -6,12 +6,11 @@ website https://hive.apache.org
 reference https://en.wikipedia.org/wiki/Apache_Hive#HiveQL
 domainName hive.apache.org
 
-features
- hasLineComments true
-  -- A comment
- hasComments true
-  -- A comment
- hasSemanticIndentation false
+hasLineComments true
+ -- A comment
+hasComments true
+ -- A comment
+hasSemanticIndentation false
 
 lineCommentToken --
 

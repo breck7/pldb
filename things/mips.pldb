@@ -4,16 +4,15 @@ type isa
 documentation https://www.mips.com/products/architectures/mips32-2/
 originCommunity MIPS Technologies && Imagination Technologies
 
-features
- hasStrings true
- hasRegularExpressionsSyntaxSugar true
- hasLineComments true
-  # A comment
- hasMultiLineComments true
-  ### A comment
-  ###
- hasComments true
-  # A comment
+hasStrings true
+hasRegularExpressionsSyntaxSugar true
+hasLineComments true
+ # A comment
+hasMultiLineComments true
+ ### A comment
+ ###
+hasComments true
+ # A comment
 
 lineCommentToken #
 multiLineCommentTokens ###

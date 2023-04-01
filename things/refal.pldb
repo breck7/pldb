@@ -10,15 +10,14 @@ domainName refal.net
  awisRank
   2022 8850474
 
-features
- hasLineComments true
-  * A comment
- hasComments true
-  * A comment
- hasPrintDebugging true
- hasSemanticIndentation false
- hasStrings true
-  'Hello world'
+hasLineComments true
+ * A comment
+hasComments true
+ * A comment
+hasPrintDebugging true
+hasSemanticIndentation false
+hasStrings true
+ 'Hello world'
 
 lineCommentToken *
 printToken <Prout

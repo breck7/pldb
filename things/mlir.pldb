@@ -7,12 +7,11 @@ country Various
 originCommunity https://github.com/tensorflow
 domainName mlir.llvm.org
 
-features
- hasLineComments true
-  // A comment
- hasComments true
-  // A comment
- hasSemanticIndentation false
+hasLineComments true
+ // A comment
+hasComments true
+ // A comment
+hasSemanticIndentation false
 
 lineCommentToken //
 

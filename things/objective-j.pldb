@@ -7,15 +7,14 @@ originCommunity https://github.com/cappuccino
 domainName cappuccino-project.org
  registered 2011
 
-features
- hasLineComments true
-  // A comment
- hasComments true
-  // A comment
- hasPrintDebugging true
- hasSemanticIndentation false
- hasStrings true
-  "Hello world"
+hasLineComments true
+ // A comment
+hasComments true
+ // A comment
+hasPrintDebugging true
+hasSemanticIndentation false
+hasStrings true
+ "Hello world"
 
 lineCommentToken //
 printToken document.write

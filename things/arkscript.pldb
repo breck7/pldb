@@ -8,16 +8,15 @@ country France
 originCommunity Alexandre Plateau
 domainName arkscript-lang.github.io
 
-features
- hasLineComments true
-  # A comment
- hasComments true
-  # A comment
- hasPrintDebugging true
- hasSemanticIndentation false
- hasStrings true
-  "Hello world"
- hasBooleans true
+hasLineComments true
+ # A comment
+hasComments true
+ # A comment
+hasPrintDebugging true
+hasSemanticIndentation false
+hasStrings true
+ "Hello world"
+hasBooleans true
 
 lineCommentToken #
 printToken print

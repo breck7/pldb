@@ -5,26 +5,25 @@ website https://developers.google.com/protocol-buffers/
 documentation https://developers.google.com/protocol-buffers/docs/overview
 originCommunity Google
 
-features
- hasLineComments true
-  // A comment
- hasComments true
-  // A comment
- hasSemanticIndentation false
- hasStrings true
- hasMultiLineComments true
-  /* A comment
-  */
- hasBooleans true
- hasAccessModifiers true
- hasOctals true
-  // 0[0-7]+[LlUu]*
- hasHexadecimals true
-  // 0x[0-9a-fA-F]+[LlUu]*
- hasFloats true
-  // (\d+\.\d*|\.\d+|\d+)[eE][+-]?\d+[LlUu]*
- hasIntegers true
-  // \d+[LlUu]*
+hasLineComments true
+ // A comment
+hasComments true
+ // A comment
+hasSemanticIndentation false
+hasStrings true
+hasMultiLineComments true
+ /* A comment
+ */
+hasBooleans true
+hasAccessModifiers true
+hasOctals true
+ // 0[0-7]+[LlUu]*
+hasHexadecimals true
+ // 0x[0-9a-fA-F]+[LlUu]*
+hasFloats true
+ // (\d+\.\d*|\.\d+|\d+)[eE][+-]?\d+[LlUu]*
+hasIntegers true
+ // \d+[LlUu]*
 
 lineCommentToken //
 multiLineCommentTokens /* */

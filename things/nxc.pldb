@@ -5,15 +5,14 @@ reference https://www.hispabrickmagazine.com/pdfs/HBM009_EN/HBM009_EN-32-33.pdf
 country United States
 originCommunity https://sourceforge.net/p/bricxcc/_list/tickets
 
-features
- hasLineComments true
-  // A comment
- hasComments true
-  // A comment
- hasPrintDebugging true
- hasSemanticIndentation false
- hasStrings true
-  "Hello world"
+hasLineComments true
+ // A comment
+hasComments true
+ // A comment
+hasPrintDebugging true
+hasSemanticIndentation false
+hasStrings true
+ "Hello world"
 
 lineCommentToken //
 printToken TextOut

@@ -6,16 +6,15 @@ originCommunity Amazon
 
 related postgresql sql mysql
 
-features
- hasStrings true
- hasLineComments true
-  -- A comment
- hasMultiLineComments true
-  /* A comment
-  */
- hasComments true
-  -- A comment
- hasBooleans true
+hasStrings true
+hasLineComments true
+ -- A comment
+hasMultiLineComments true
+ /* A comment
+ */
+hasComments true
+ -- A comment
+hasBooleans true
 
 lineCommentToken --
 multiLineCommentTokens /* */

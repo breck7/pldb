@@ -11,12 +11,11 @@ domainName livecode.org
   2022 9510664
   2017 2641722
 
-features
- hasComments true
- hasLineComments true
-  -- A comment
- hasPrintDebugging true
- hasSemanticIndentation false
+hasComments true
+hasLineComments true
+ -- A comment
+hasPrintDebugging true
+hasSemanticIndentation false
 
 lineCommentToken --
 printToken answer

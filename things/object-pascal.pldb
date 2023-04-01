@@ -7,20 +7,19 @@ originCommunity https://gitlab.com/groups/freepascal.org/fpc/-/issues
 
 visualParadigm false
 
-features
- hasConstructors true
- hasOperatorOverloading true
- hasComments true
-  (* This is a multi-line comments
-   and it will span multiple lines. *)
-  { This is a single line comment in pascal }
- hasMultiLineComments true
-  (* A comment
-  *)
- hasLineComments false
- hasSemanticIndentation false
- hasStrings true
-  'Hello world'
+hasConstructors true
+hasOperatorOverloading true
+hasComments true
+ (* This is a multi-line comments
+  and it will span multiple lines. *)
+ { This is a single line comment in pascal }
+hasMultiLineComments true
+ (* A comment
+ *)
+hasLineComments false
+hasSemanticIndentation false
+hasStrings true
+ 'Hello world'
 
 multiLineCommentTokens (* *)
 multiLineCommentTokens { }

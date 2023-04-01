@@ -8,15 +8,14 @@ fileExtensions dm dmf
 country Unknown
 originCommunity BYOND Software
 
-features
- hasLineComments true
-  // A comment
- hasComments true
-  // A comment
- hasMultiLineComments true
-  /* A comment
-  */
- hasSemanticIndentation false
+hasLineComments true
+ // A comment
+hasComments true
+ // A comment
+hasMultiLineComments true
+ /* A comment
+ */
+hasSemanticIndentation false
 
 lineCommentToken //
 multiLineCommentTokens /* */

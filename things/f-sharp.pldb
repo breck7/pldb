@@ -18,71 +18,70 @@ releaseNotesUrl https://github.com/dotnet/fsharp/blob/main/release-notes.md
 
 visualParadigm false
 
-features
- hasComments true
- hasDocComments true
-  /// Adds 2 numbers
-  let rec add x y =
-   x + y
- hasDirectives true
-  #if VERSION1
-  let function1 x y =
-     printfn "x: %d y: %d" x y
-     x + 2 * y
-  #else
-  let function1 x y =
-     printfn "x: %d y: %d" x y
-     x - 2*y
-  #endif
-  // Line directives as source maps can be used when compiling to F#:
-  #line 25 "C:\\Projects\\MyProject\\MyProject\\Script1"
- hasImports true
-  open module-or-namespace-name
-  open System.IO
-  open List
-  open Seq
- hasNamespaces true
-  namespace Widgets
-  type MyWidget1 =
-     member this.WidgetName = "Widget1"
-  module WidgetsModule =
-     let widgetName = "Widget2"
- hasOperatorOverloading true
- hasSemanticIndentation true
- hasCaseInsensitiveIdentifiers false
- hasTypeInference true
- hasLineComments true
-  // A comment
- hasUnitsOfMeasure true
-  // https://fsharpforfunandprofit.com/posts/units-of-measure/
-  [<Measure>] type N = kg m/sec^2
-  
-  let force1 = 5.0<kg m/sec^2>    
-  let force2 = 5.0<N>
-  
-  force1 = force2 // true
- hasPrintDebugging true
- hasMultiLineComments true
-  (* A comment
-  *)
- hasStrings true
- hasBooleans true
- hasWhileLoops true
- hasClasses true
- hasConstants true
- hasFunctions true
- hasAccessModifiers true
- hasConditionals true
- hasOctals true
-  // 0[oO][0-7][0-7_]*[uU]?[yslLn]?
- hasHexadecimals true
-  // 0[xX][\da-fA-F][\da-fA-F_]*[uU]?[yslLn]?[fF]?
- hasFloats true
-  // -?\d[\d_]*(.[\d_]*)?([eE][+\-]?\d[\d_]*)[fFmM]?
- hasIntegers true
-  // \d[\d_]*[uU]?[yslLnQRZINGmM]?
- hasBinaryNumbers true
-  // 0[bB][01][01_]*[uU]?[yslLn]?
+hasComments true
+hasDocComments true
+ /// Adds 2 numbers
+ let rec add x y =
+  x + y
+hasDirectives true
+ #if VERSION1
+ let function1 x y =
+    printfn "x: %d y: %d" x y
+    x + 2 * y
+ #else
+ let function1 x y =
+    printfn "x: %d y: %d" x y
+    x - 2*y
+ #endif
+ // Line directives as source maps can be used when compiling to F#:
+ #line 25 "C:\\Projects\\MyProject\\MyProject\\Script1"
+hasImports true
+ open module-or-namespace-name
+ open System.IO
+ open List
+ open Seq
+hasNamespaces true
+ namespace Widgets
+ type MyWidget1 =
+    member this.WidgetName = "Widget1"
+ module WidgetsModule =
+    let widgetName = "Widget2"
+hasOperatorOverloading true
+hasSemanticIndentation true
+hasCaseInsensitiveIdentifiers false
+hasTypeInference true
+hasLineComments true
+ // A comment
+hasUnitsOfMeasure true
+ // https://fsharpforfunandprofit.com/posts/units-of-measure/
+ [<Measure>] type N = kg m/sec^2
+ 
+ let force1 = 5.0<kg m/sec^2>    
+ let force2 = 5.0<N>
+ 
+ force1 = force2 // true
+hasPrintDebugging true
+hasMultiLineComments true
+ (* A comment
+ *)
+hasStrings true
+hasBooleans true
+hasWhileLoops true
+hasClasses true
+hasConstants true
+hasFunctions true
+hasAccessModifiers true
+hasConditionals true
+hasOctals true
+ // 0[oO][0-7][0-7_]*[uU]?[yslLn]?
+hasHexadecimals true
+ // 0[xX][\da-fA-F][\da-fA-F_]*[uU]?[yslLn]?[fF]?
+hasFloats true
+ // -?\d[\d_]*(.[\d_]*)?([eE][+\-]?\d[\d_]*)[fFmM]?
+hasIntegers true
+ // \d[\d_]*[uU]?[yslLnQRZINGmM]?
+hasBinaryNumbers true
+ // 0[bB][01][01_]*[uU]?[yslLn]?
 
 lineCommentToken //
 multiLineCommentTokens (* *)

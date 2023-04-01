@@ -11,19 +11,18 @@ domainName ec-lang.org
  awisRank
   2022 5961071
 
-features
- hasLineComments true
-  // A comment
- hasComments true
-  // A comment
- hasPrintDebugging true
- hasMultiLineComments true
-  /* A comment
-  */
- hasSemanticIndentation false
- hasStrings true
-  "Hello world"
- hasBooleans true
+hasLineComments true
+ // A comment
+hasComments true
+ // A comment
+hasPrintDebugging true
+hasMultiLineComments true
+ /* A comment
+ */
+hasSemanticIndentation false
+hasStrings true
+ "Hello world"
+hasBooleans true
 
 lineCommentToken //
 multiLineCommentTokens /* */

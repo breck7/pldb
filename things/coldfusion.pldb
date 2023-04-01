@@ -6,12 +6,11 @@ website https://www.adobe.com/products/coldfusion
 documentation https://cfdocs.org/
 originCommunity Adobe
 
-features
- hasComments true
- hasPrintDebugging true
- hasSemanticIndentation false
- hasStrings true
-  "Hello world"
+hasComments true
+hasPrintDebugging true
+hasSemanticIndentation false
+hasStrings true
+ "Hello world"
 
 printToken cfoutput
 stringToken "

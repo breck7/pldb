@@ -7,19 +7,18 @@ aka POVRay
 country United States
 originCommunity Persistence of Vision Raytracer Pty. Ltd
 
-features
- hasLineComments true
-  // A comment
- hasComments true
-  // A comment
- hasMultiLineComments true
-  /* A comment
-  */
- hasSemanticIndentation false
- hasFloats true
-  // [0-9]*\.[0-9]+
- hasIntegers true
-  // [0-9]+
+hasLineComments true
+ // A comment
+hasComments true
+ // A comment
+hasMultiLineComments true
+ /* A comment
+ */
+hasSemanticIndentation false
+hasFloats true
+ // [0-9]*\.[0-9]+
+hasIntegers true
+ // [0-9]+
 
 lineCommentToken //
 multiLineCommentTokens /* */

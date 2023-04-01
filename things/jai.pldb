@@ -8,18 +8,17 @@ reference https://twitter.com/Jonathan_Blow/status/1474203662134255618
 country Various
 originCommunity https://github.com/Jai-Community/
 
-features
- hasLineComments true
-  // A comment
- hasMultiLineComments true
-  /* A comment
-  */
- hasComments true
-  // A comment
- hasPrintDebugging true
- hasSemanticIndentation false
- hasStrings true
-  "Hello world"
+hasLineComments true
+ // A comment
+hasMultiLineComments true
+ /* A comment
+ */
+hasComments true
+ // A comment
+hasPrintDebugging true
+hasSemanticIndentation false
+hasStrings true
+ "Hello world"
 
 lineCommentToken //
 printToken Print

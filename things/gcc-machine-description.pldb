@@ -5,12 +5,11 @@ reference https://en.wikipedia.org/wiki/Register_transfer_language
 country United States
 originCommunity University of Arizona
 
-features
- hasLineComments true
-  ; A comment
- hasComments true
-  ; A comment
- hasSemanticIndentation false
+hasLineComments true
+ ; A comment
+hasComments true
+ ; A comment
+hasSemanticIndentation false
 
 lineCommentToken ;
 

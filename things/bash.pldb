@@ -9,37 +9,36 @@ aka Shell
 country United States
 originCommunity GNU
 
-features
- hasVariableSubstitutionSyntax true
-  STR="Hello World!"
-  echo $STR
- hasComments true
-  # A comment
- hasLineComments true
-  # A comment
- hasUnitsOfMeasure false
- hasSemanticIndentation false
- hasStrings true
-  "Hello world"
- hasMultiLineComments false
- hasIntegers true
-  PLDB=80766866
- hasHereDocs true
-  cat <<Message
-   Hello world
-  Message
- hasSets false
- hasPipes true
-  echo "Hello world" > output.txt
- hasPrintDebugging true
-  echo "Hello World"
- hasAssignment true
-  FOO="bar"
- hasImports true
-  source ./bash.sh
- hasWhileLoops true
- hasFunctions true
- hasConditionals true
+hasVariableSubstitutionSyntax true
+ STR="Hello World!"
+ echo $STR
+hasComments true
+ # A comment
+hasLineComments true
+ # A comment
+hasUnitsOfMeasure false
+hasSemanticIndentation false
+hasStrings true
+ "Hello world"
+hasMultiLineComments false
+hasIntegers true
+ PLDB=80766866
+hasHereDocs true
+ cat <<Message
+  Hello world
+ Message
+hasSets false
+hasPipes true
+ echo "Hello world" > output.txt
+hasPrintDebugging true
+ echo "Hello World"
+hasAssignment true
+ FOO="bar"
+hasImports true
+ source ./bash.sh
+hasWhileLoops true
+hasFunctions true
+hasConditionals true
 
 lineCommentToken #
 printToken echo

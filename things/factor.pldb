@@ -12,14 +12,13 @@ domainName factorcode.org
   2022 3422932
   2017 2667281
 
-features
- hasComments true
- hasGarbageCollection true
- hasMacros true
- hasPrintDebugging true
- hasSemanticIndentation false
- hasStrings true
-  "Hello world"
+hasComments true
+hasGarbageCollection true
+hasMacros true
+hasPrintDebugging true
+hasSemanticIndentation false
+hasStrings true
+ "Hello world"
 
 printToken print
 stringToken "

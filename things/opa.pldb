@@ -8,25 +8,24 @@ originCommunity https://github.com/MLstate
 domainName opalang.org
  registered 2010
 
-features
- hasTypeInference true
- hasPrintDebugging true
- hasMultiLineComments true
-  /* A comment
-  */
- hasComments true
-  /* A comment
-  */
- hasSemanticIndentation false
- hasStrings true
-  "Hello world"
- hasFunctions true
- hasConditionals true
- hasOctals true
- hasHexadecimals true
- hasFloats true
- hasIntegers true
- hasBinaryNumbers true
+hasTypeInference true
+hasPrintDebugging true
+hasMultiLineComments true
+ /* A comment
+ */
+hasComments true
+ /* A comment
+ */
+hasSemanticIndentation false
+hasStrings true
+ "Hello world"
+hasFunctions true
+hasConditionals true
+hasOctals true
+hasHexadecimals true
+hasFloats true
+hasIntegers true
+hasBinaryNumbers true
 
 multiLineCommentTokens /* */
 printToken jlog

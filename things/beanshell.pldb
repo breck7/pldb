@@ -9,10 +9,9 @@ domainName beanshell.org
  awisRank
   2022 4177493
 
-features
- hasPrintDebugging true
- hasStrings true
-  "Hello world"
+hasPrintDebugging true
+hasStrings true
+ "Hello world"
 
 printToken print
 stringToken "

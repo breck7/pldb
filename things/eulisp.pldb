@@ -6,13 +6,12 @@ documentation https://people.bath.ac.uk/masrjb/Sources/eunotes.html
 country United States
 originCommunity https://henry.github.io
 
-features
- hasMultipleInheritance true
- hasLineComments true
-  ; A comment
- hasComments true
-  ; A comment
- hasSemanticIndentation false
+hasMultipleInheritance true
+hasLineComments true
+ ; A comment
+hasComments true
+ ; A comment
+hasSemanticIndentation false
 
 lineCommentToken ;
 

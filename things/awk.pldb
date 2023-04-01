@@ -8,20 +8,19 @@ standsFor Aho, Weinberger, Kernighan
 country United States
 originCommunity Bell Labs
 
-features
- hasComments true
- hasLineComments true
-  # A comment
- hasPrintDebugging true
- hasSemanticIndentation false
- hasStrings true
-  "Hello world"
- hasHexadecimals true
-  # 0x[0-9a-fA-F]+
- hasFloats true
-  # [0-9][0-9]*\.[0-9]+([eE][0-9]+)?[fd]?
- hasIntegers true
-  # [0-9]+
+hasComments true
+hasLineComments true
+ # A comment
+hasPrintDebugging true
+hasSemanticIndentation false
+hasStrings true
+ "Hello world"
+hasHexadecimals true
+ # 0x[0-9a-fA-F]+
+hasFloats true
+ # [0-9][0-9]*\.[0-9]+([eE][0-9]+)?[fd]?
+hasIntegers true
+ # [0-9]+
 
 lineCommentToken #
 printToken print

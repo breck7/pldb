@@ -13,18 +13,17 @@ domainName haxe.org
   2022 294666
   2017 193309
 
-features
- hasComments true
- hasStaticTyping true
- hasTypeInference true
- hasLineComments true
-  // A comment
- hasMultiLineComments true
-  /* A comment
-  */
- hasSemanticIndentation false
- hasStrings true
-  "Hello world"
+hasComments true
+hasStaticTyping true
+hasTypeInference true
+hasLineComments true
+ // A comment
+hasMultiLineComments true
+ /* A comment
+ */
+hasSemanticIndentation false
+hasStrings true
+ "Hello world"
 
 lineCommentToken //
 multiLineCommentTokens /* */

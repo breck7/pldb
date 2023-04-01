@@ -8,17 +8,16 @@ domainName alloytools.org
  awisRank
   2022 3455732
 
-features
- hasLineComments true
-  // A comment
- hasComments true
-  // A comment
- hasMultiLineComments true
-  /* A comment
-  */
- hasSemanticIndentation false
- hasIntegers true
-  // [0-9]+
+hasLineComments true
+ // A comment
+hasComments true
+ // A comment
+hasMultiLineComments true
+ /* A comment
+ */
+hasSemanticIndentation false
+hasIntegers true
+ // [0-9]+
 
 lineCommentToken //
 multiLineCommentTokens /* */

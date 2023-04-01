@@ -7,14 +7,13 @@ country United States
 originCommunity https://jasmin.sourceforge.net/
 domainName jasmin.sourceforge.net
 
-features
- hasLineComments true
-  ; A comment
- hasComments true
-  ; A comment
- hasSemanticIndentation false
- hasStrings true
-  "Hello world"
+hasLineComments true
+ ; A comment
+hasComments true
+ ; A comment
+hasSemanticIndentation false
+hasStrings true
+ "Hello world"
 
 lineCommentToken ;
 stringToken "

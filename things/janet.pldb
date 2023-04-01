@@ -10,17 +10,16 @@ domainName janet-lang.org
  awisRank
   2022 3137783
 
-features
- hasComments true
- hasMultiLineComments false
- hasPrintDebugging true
- hasFloats true
- hasIntegers true
- hasBooleans true
- hasConditionals true
- hasLists true
- hasAssignment true
- hasFunctions true
+hasComments true
+hasMultiLineComments false
+hasPrintDebugging true
+hasFloats true
+hasIntegers true
+hasBooleans true
+hasConditionals true
+hasLists true
+hasAssignment true
+hasFunctions true
 
 example
  import joy)

@@ -6,16 +6,15 @@ website http://seed7.sourceforge.net
 fileExtensions sd7 s7i
 domainName seed7.sourceforge.net
 
-features
- hasComments true
- hasOperatorOverloading true
- hasLineComments true
-  # A comment
- hasPrintDebugging true
- hasSemanticIndentation false
- hasAssignment true
- hasStrings true
-  "Hello world"
+hasComments true
+hasOperatorOverloading true
+hasLineComments true
+ # A comment
+hasPrintDebugging true
+hasSemanticIndentation false
+hasAssignment true
+hasStrings true
+ "Hello world"
 
 lineCommentToken #
 printToken writeln

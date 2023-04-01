@@ -11,19 +11,18 @@ domainName hacklang.org
   2022 643552
   2017 328982
 
-features
- hasFirstClassFunctions true
- hasLineComments true
-  // A comment
- hasComments true
-  // A comment
- hasPrintDebugging true
- hasMultiLineComments true
-  /* A comment
-  */
- hasSemanticIndentation false
- hasStrings true
-  "Hello world"
+hasFirstClassFunctions true
+hasLineComments true
+ // A comment
+hasComments true
+ // A comment
+hasPrintDebugging true
+hasMultiLineComments true
+ /* A comment
+ */
+hasSemanticIndentation false
+hasStrings true
+ "Hello world"
 
 lineCommentToken //
 multiLineCommentTokens /* */

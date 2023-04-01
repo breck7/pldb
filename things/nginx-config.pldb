@@ -6,13 +6,12 @@ documentation https://devdocs.io/nginx/
 country Russia
 originCommunity F5, Inc
 
-features
- hasMultiLineComments false
- hasLineComments true
-  # A comment
- hasComments true
-  # A comment
- hasSemanticIndentation false
+hasMultiLineComments false
+hasLineComments true
+ # A comment
+hasComments true
+ # A comment
+hasSemanticIndentation false
 
 lineCommentToken #
 

@@ -12,14 +12,13 @@ domainName fishshell.com
   2022 183077
 releaseNotesUrl https://fishshell.com/docs/current/relnotes.html
 
-features
- hasComments true
- hasLineComments true
-  # A comment
- hasPrintDebugging true
- hasSemanticIndentation false
- hasStrings true
-  "Hello world"
+hasComments true
+hasLineComments true
+ # A comment
+hasPrintDebugging true
+hasSemanticIndentation false
+hasStrings true
+ "Hello world"
 
 lineCommentToken #
 printToken echo

@@ -8,18 +8,17 @@ aka m
 aka powerquery
 originCommunity Microsoft
 
-features
- hasLineComments true
-  // A comment
- hasComments true
-  // A comment
- hasSemanticIndentation false
- hasStrings true
- hasMultiLineComments true
-  /* A comment
-  */
- hasBooleans true
- hasConditionals true
+hasLineComments true
+ // A comment
+hasComments true
+ // A comment
+hasSemanticIndentation false
+hasStrings true
+hasMultiLineComments true
+ /* A comment
+ */
+hasBooleans true
+hasConditionals true
 
 lineCommentToken //
 multiLineCommentTokens /* */

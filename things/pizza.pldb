@@ -7,10 +7,9 @@ originCommunity https://sourceforge.net/p/pizzacompiler/_list/tickets
 
 supersetOf java
 
-features
- hasPrintDebugging true
- hasStrings true
-  "Hello world"
+hasPrintDebugging true
+hasStrings true
+ "Hello world"
 
 printToken System.out.println
 stringToken "

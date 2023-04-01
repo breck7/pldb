@@ -12,18 +12,17 @@ domainName ballerina.io
  awisRank
   2022 898947
 
-features
- hasComments true
-  // A comment
- hasImports true
-  import ballerina/http;
-  import ballerina/io;
- hasLineComments true
-  // A comment
- hasPrintDebugging true
- hasSemanticIndentation false
- hasStrings true
-  "Hello world"
+hasComments true
+ // A comment
+hasImports true
+ import ballerina/http;
+ import ballerina/io;
+hasLineComments true
+ // A comment
+hasPrintDebugging true
+hasSemanticIndentation false
+hasStrings true
+ "Hello world"
 
 lineCommentToken //
 printToken io:println

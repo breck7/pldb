@@ -4,14 +4,13 @@ type pl
 country Canada
 originCommunity NSB Corporation
 
-features
- hasLineComments true
-  // A comment
- hasComments true
-  // A comment
- hasSemanticIndentation false
- hasStrings true
-  "Hello world"
+hasLineComments true
+ // A comment
+hasComments true
+ // A comment
+hasSemanticIndentation false
+hasStrings true
+ "Hello world"
 
 lineCommentToken //
 stringToken "

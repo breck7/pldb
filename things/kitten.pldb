@@ -10,10 +10,9 @@ domainName kittenlang.org
  awisRank
   2017 6913255
 
-features
- hasPrintDebugging true
- hasStrings true
-  "Hello world"
+hasPrintDebugging true
+hasStrings true
+ "Hello world"
 
 printToken say
 stringToken "

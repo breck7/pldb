@@ -6,10 +6,9 @@ standsFor IBM Generalised Markup Language
 country United States
 originCommunity IBM
 
-features
- hasPrintDebugging true
- hasStrings true
-  "Hello world"
+hasPrintDebugging true
+hasStrings true
+ "Hello world"
 
 printToken draw_text
 stringToken "

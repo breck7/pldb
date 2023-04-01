@@ -12,17 +12,16 @@ domainName sass-lang.com
   2022 22267
   2017 38503
 
-features
- hasSemanticIndentation true
- hasLineComments true
-  // A comment
- hasMultiLineComments true
-  /* A comment
-  */
- hasComments true
-  // A comment
- hasStrings true
-  "Hello world"
+hasSemanticIndentation true
+hasLineComments true
+ // A comment
+hasMultiLineComments true
+ /* A comment
+ */
+hasComments true
+ // A comment
+hasStrings true
+ "Hello world"
 
 lineCommentToken //
 multiLineCommentTokens /* */

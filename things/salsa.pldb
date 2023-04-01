@@ -6,14 +6,13 @@ standsFor Simple Actor Language System and Architecture
 country United States
 originCommunity Rensselaer Polytechnic Institute and University of Illinois at Urbana-Champaign
 
-features
- hasMultiLineComments true
-  /* A comment
-  */
- hasComments true
-  /* A comment
-  */
- hasSemanticIndentation false
+hasMultiLineComments true
+ /* A comment
+ */
+hasComments true
+ /* A comment
+ */
+hasSemanticIndentation false
 
 multiLineCommentTokens /* */
 

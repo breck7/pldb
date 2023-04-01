@@ -3,12 +3,11 @@ appeared 1969
 type pl
 reference https://semanticscholar.org/paper/076ae14bfc68acdbaf2ab24913e152d49540e988
 
-features
- hasLineComments true
-  // A comment
- hasComments true
-  // A comment
- hasSemanticIndentation false
+hasLineComments true
+ // A comment
+hasComments true
+ // A comment
+hasSemanticIndentation false
 
 lineCommentToken //
 

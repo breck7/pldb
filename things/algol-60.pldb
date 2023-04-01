@@ -6,11 +6,10 @@ description ALGOL 60 (short for Algorithmic Language 1960) is a member of the AL
 documentation http://www.algol60.org/4documentation.htm
 originCommunity International Federation for Information Processing
 
-features
- hasPrintDebugging true
- hasSemanticIndentation false
- hasStrings true
-  "Hello world"
+hasPrintDebugging true
+hasSemanticIndentation false
+hasStrings true
+ "Hello world"
 
 printToken WRITE
 stringToken "

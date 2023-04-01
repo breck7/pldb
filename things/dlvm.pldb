@@ -12,12 +12,11 @@ domainName dlvm.org
  awisRank
   2017 17839534
 
-features
- hasLineComments true
-  // A comment
- hasComments true
-  // A comment
- hasSemanticIndentation false
+hasLineComments true
+ // A comment
+hasComments true
+ // A comment
+hasSemanticIndentation false
 
 lineCommentToken //
 

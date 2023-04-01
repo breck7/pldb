@@ -12,15 +12,14 @@ domainName sas.com
  awisRank
   2022 8630
 
-features
- hasComments true
- hasMultiLineComments true
-  /* A comment
-  */
- hasLineComments true
-  * A comment
- hasSemanticIndentation false
- hasCaseInsensitiveIdentifiers true
+hasComments true
+hasMultiLineComments true
+ /* A comment
+ */
+hasLineComments true
+ * A comment
+hasSemanticIndentation false
+hasCaseInsensitiveIdentifiers true
 
 lineCommentToken *
 multiLineCommentTokens /* */

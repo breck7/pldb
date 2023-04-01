@@ -11,38 +11,37 @@ originCommunity Apple
 
 supersetOf c
 
-features
- hasStrings true
-  "hello world"
- hasSingleDispatch true
- hasPointers true
- hasConstructors true
- hasGarbageCollection false
- hasImports true
-  // #import ensures that a file is only ever included once so that you never have a problem with recursive includes.
-  #import <Foundation/Foundation.h>
-  #include <asl.h>
-  #include <mach/mach.h>
- hasInterfaces true
-  @protocol Printing
-     -(void) print;
-  @end
- hasOperatorOverloading false
- hasLineComments true
-  // A comment
- hasMessagePassing true
- hasComments true
-  // A comment
- hasPrintDebugging true
- hasMultiLineComments true
-  /* A comment
-  */
- hasSemanticIndentation false
- hasCaseInsensitiveIdentifiers false
- hasWhileLoops true
- hasConstants true
- hasSwitch true
- hasConditionals true
+hasStrings true
+ "hello world"
+hasSingleDispatch true
+hasPointers true
+hasConstructors true
+hasGarbageCollection false
+hasImports true
+ // #import ensures that a file is only ever included once so that you never have a problem with recursive includes.
+ #import <Foundation/Foundation.h>
+ #include <asl.h>
+ #include <mach/mach.h>
+hasInterfaces true
+ @protocol Printing
+    -(void) print;
+ @end
+hasOperatorOverloading false
+hasLineComments true
+ // A comment
+hasMessagePassing true
+hasComments true
+ // A comment
+hasPrintDebugging true
+hasMultiLineComments true
+ /* A comment
+ */
+hasSemanticIndentation false
+hasCaseInsensitiveIdentifiers false
+hasWhileLoops true
+hasConstants true
+hasSwitch true
+hasConditionals true
 
 lineCommentToken //
 multiLineCommentTokens /* */

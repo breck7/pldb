@@ -11,13 +11,12 @@ domainName cell-lang.net
   2022 3568675
   2017 2019201
 
-features
- hasLineComments true
-  // A comment
- hasComments true
-  // A comment
- hasSemanticIndentation false
- hasBooleans true
+hasLineComments true
+ // A comment
+hasComments true
+ // A comment
+hasSemanticIndentation false
+hasBooleans true
 
 lineCommentToken //
 booleanTokens true false

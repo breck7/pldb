@@ -12,10 +12,9 @@ domainName beeflang.org
  awisRank
   2022 5248960
 
-features
- hasPrintDebugging true
- hasStrings true
-  "Hello world"
+hasPrintDebugging true
+hasStrings true
+ "Hello world"
 
 printToken Console.WriteLine
 stringToken "

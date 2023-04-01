@@ -5,12 +5,11 @@ reference https://www.reddit.com/r/ProgrammingLanguages/comments/gprche/neut_a_d
 country Unknown
 originCommunity https://github.com/vekatze/neut/issues
 
-features
- hasLineComments true
-  ; A comment
- hasComments true
-  ; A comment
- hasSemanticIndentation false
+hasLineComments true
+ ; A comment
+hasComments true
+ ; A comment
+hasSemanticIndentation false
 
 lineCommentToken ;
 

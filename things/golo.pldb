@@ -8,23 +8,22 @@ originCommunity https://dev.eclipse.org/mailman/listinfo/golo-dev
 domainName golo-lang.org
  registered 2012
 
-features
- hasLineComments true
-  # A comment
- hasComments true
-  # A comment
- hasPrintDebugging true
- hasSemanticIndentation false
- hasStrings true
-  "Hello world"
- hasOctals true
-  # 0[0-7]+j?
- hasHexadecimals true
-  # 0[xX][a-fA-F0-9]+
- hasFloats true
-  # -?[\d_]*\.[\d_]*([eE][+-]?\d[\d_]*)?F?
- hasIntegers true
-  # -?\d[\d_]*
+hasLineComments true
+ # A comment
+hasComments true
+ # A comment
+hasPrintDebugging true
+hasSemanticIndentation false
+hasStrings true
+ "Hello world"
+hasOctals true
+ # 0[0-7]+j?
+hasHexadecimals true
+ # 0[xX][a-fA-F0-9]+
+hasFloats true
+ # -?[\d_]*\.[\d_]*([eE][+-]?\d[\d_]*)?F?
+hasIntegers true
+ # -?\d[\d_]*
 
 lineCommentToken #
 printToken println

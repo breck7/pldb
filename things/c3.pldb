@@ -16,206 +16,205 @@ domainName c3-lang.org
 
 influencedBy c2 c
 
-features
- hasLineComments true
-  // A comment
- hasComments true
-  // A comment
-  /* Another comment */
- hasRegularExpressionsSyntaxSugar false
- hasSemanticIndentation false
- hasBooleans true
- hasBitWiseOperators true
-  int i = b << 4 + x; // Same as (b << 4) + x  
- hasOctals true
-  0o177
- hasArraySlicingSyntax true
-  int[] slice1 = array[0..5]; // start..end
-  int[] slice2 = array[0:6]; // start:length
- hasAsyncAwait false
- hasBoundedCheckedArrays true
- hasBreak true
- hasBuiltInRegex false
- hasContinue true
- hasDuckTyping false
- hasDynamicProperties false
- hasEscapeCharacters true
-  "\e\n\r"
- hasExpressions true
- hasForLoops true
- hasHereDocs false
- hasHexadecimals true
- hasIfs true
- hasIfElses true
- hasImplicitTypeConversions true
- hasFunctions true
- hasFunctionOverloading false
- hasFunctionComposition false
- hasHomoiconicity false
- hasInheritance true
- hasLabels true
-  while FOO: (x > 0)
-  {
-    for (int i = 0; i < 10; i++
-    {
-      x = baz();
-      if (x > i) break FOO;
-    }
-  }
- hasLazyEvaluation true
-  fn void print(String s)
-  {
-     io::printfn("Said: %s", s);
-  }  
-  macro @foo(bool run, #lazy)
-  {
-    if (run) #lazy;
-  }
-  // Only "Said: Hello" is printed:
-  @foo(false, print("Bye"));
-  @foo(true, print("Hello"));
- hasMagicGettersAndSetters false
- hasMessagePassing false
- hasNull true
- hasPipes false
- hasSExpressions false
- hasBinaryNumbers true
-  0b110011
- hasExplicitTypeCasting true
-  double d = 3.3;
-  int x = (int)d;
- hasNamespaces true
-  import std::io;
-  ...
-  io::printf("%d", i);
- hasMultipleInheritance false
- hasDirectives false
- hasIntegers true
-  int x = 314159;
- hasIncrementAndDecrementOperators true
-  i++; --j;
- hasManualMemoryManagement true
- hasAssertStatements true
-  assert(a > 0, "Expected a positive number");
-  $assert(Foo.sizeof == 8, "Foo sizecheck at compile time failed");
- hasDefaultParameters true
-  fn void test(int x = 10) { ... }  
- hasZeroBasedNumbering true
- hasAccessModifiers true
- hasClasses false
- hasConstants true
-  const FOO = 123;
-  const void* BAR = null;
- hasAbstractTypes false
- hasDocComments true
-  /**
-   * @param [in] foo "The foo value"
-   * @return "the toal foo count"
-   **/
- hasEnums true
-  enum TestEnum : int
-  {
-     FOO,
-     BAR,
-     BAZ
-  }
- hasUnaryOperators true
- hasUnicodeIdentifiers false
- hasUnitsOfMeasure false
- hasUserDefinedOperators false
- hasSingleTypeArrays true
- hasVariableSubstitutionSyntax false
- hasUnionTypes true
-  union Foo
-  {
+hasLineComments true
+ // A comment
+hasComments true
+ // A comment
+ /* Another comment */
+hasRegularExpressionsSyntaxSugar false
+hasSemanticIndentation false
+hasBooleans true
+hasBitWiseOperators true
+ int i = b << 4 + x; // Same as (b << 4) + x  
+hasOctals true
+ 0o177
+hasArraySlicingSyntax true
+ int[] slice1 = array[0..5]; // start..end
+ int[] slice2 = array[0:6]; // start:length
+hasAsyncAwait false
+hasBoundedCheckedArrays true
+hasBreak true
+hasBuiltInRegex false
+hasContinue true
+hasDuckTyping false
+hasDynamicProperties false
+hasEscapeCharacters true
+ "\e\n\r"
+hasExpressions true
+hasForLoops true
+hasHereDocs false
+hasHexadecimals true
+hasIfs true
+hasIfElses true
+hasImplicitTypeConversions true
+hasFunctions true
+hasFunctionOverloading false
+hasFunctionComposition false
+hasHomoiconicity false
+hasInheritance true
+hasLabels true
+ while FOO: (x > 0)
+ {
+   for (int i = 0; i < 10; i++
+   {
+     x = baz();
+     if (x > i) break FOO;
+   }
+ }
+hasLazyEvaluation true
+ fn void print(String s)
+ {
+    io::printfn("Said: %s", s);
+ }  
+ macro @foo(bool run, #lazy)
+ {
+   if (run) #lazy;
+ }
+ // Only "Said: Hello" is printed:
+ @foo(false, print("Bye"));
+ @foo(true, print("Hello"));
+hasMagicGettersAndSetters false
+hasMessagePassing false
+hasNull true
+hasPipes false
+hasSExpressions false
+hasBinaryNumbers true
+ 0b110011
+hasExplicitTypeCasting true
+ double d = 3.3;
+ int x = (int)d;
+hasNamespaces true
+ import std::io;
+ ...
+ io::printf("%d", i);
+hasMultipleInheritance false
+hasDirectives false
+hasIntegers true
+ int x = 314159;
+hasIncrementAndDecrementOperators true
+ i++; --j;
+hasManualMemoryManagement true
+hasAssertStatements true
+ assert(a > 0, "Expected a positive number");
+ $assert(Foo.sizeof == 8, "Foo sizecheck at compile time failed");
+hasDefaultParameters true
+ fn void test(int x = 10) { ... }  
+hasZeroBasedNumbering true
+hasAccessModifiers true
+hasClasses false
+hasConstants true
+ const FOO = 123;
+ const void* BAR = null;
+hasAbstractTypes false
+hasDocComments true
+ /**
+  * @param [in] foo "The foo value"
+  * @return "the toal foo count"
+  **/
+hasEnums true
+ enum TestEnum : int
+ {
+    FOO,
+    BAR,
+    BAZ
+ }
+hasUnaryOperators true
+hasUnicodeIdentifiers false
+hasUnitsOfMeasure false
+hasUserDefinedOperators false
+hasSingleTypeArrays true
+hasVariableSubstitutionSyntax false
+hasUnionTypes true
+ union Foo
+ {
+   int x;
+   float f;
+   struct 
+   {
+     char[2] z;
+   }  
+ }  
+hasMacros true
+ macro square(x)
+ {
+   return x * x;
+ }
+hasForEachLoops true
+ foreach (x : list)
+ {
+   foo(x);
+ }  
+hasImports true
+ import std::io;
+hasMethods true
+ fn int Foo.get_value(Foo* this)
+ {
+    return this.value;
+ }
+hasMultiLineComments true
+ /* 
+   Multiline comment
+ */
+hasMultilineStrings true
+ String s = `this
+  string is multiline`;
+hasOperatorOverloading true
+ fn int IntList.get(IntList* this, int idx) @operator([])
+ {
+    return this.vals[idx];
+ }
+ ...
+ IntList x = ...
+ foo(x[1]);
+hasModules true
+ module my_module::submodule;
+ ...
+hasReservedWords true
+hasVariadicFunctions true
+ fn void foo_typed(int x, int... arg) { ... }
+ fn void foo_untyped(int x, ...arg) 
+ ...
+ foo_typed(1, 2, 3);
+ foo_untyped(1, "hello", 1.2);
+hasPointers true
+isCaseSensitive true
+hasConstructors false
+hasCaseInsensitiveIdentifiers false
+hasAssignment true
+ a = b;
+hasConditionals true
+hasWhileLoops true
+ while (int x = foo(); x > 0) 
+ {
+   sum += x;
+ }
+hasScientificNotation true
+hasTernaryOperators true
+ int foo = x ? 1 : 0;
+hasStrings true
+ String s = "hello";
+ String t = `I say "hello"`;
+hasStructs true
+ struct Test
+ {
     int x;
-    float f;
-    struct 
-    {
-      char[2] z;
-    }  
-  }  
- hasMacros true
-  macro square(x)
-  {
-    return x * x;
-  }
- hasForEachLoops true
-  foreach (x : list)
-  {
-    foo(x);
-  }  
- hasImports true
-  import std::io;
- hasMethods true
-  fn int Foo.get_value(Foo* this)
-  {
-     return this.value;
-  }
- hasMultiLineComments true
-  /* 
-    Multiline comment
-  */
- hasMultilineStrings true
-  String s = `this
-   string is multiline`;
- hasOperatorOverloading true
-  fn int IntList.get(IntList* this, int idx) @operator([])
-  {
-     return this.vals[idx];
-  }
-  ...
-  IntList x = ...
-  foo(x[1]);
- hasModules true
-  module my_module::submodule;
-  ...
- hasReservedWords true
- hasVariadicFunctions true
-  fn void foo_typed(int x, int... arg) { ... }
-  fn void foo_untyped(int x, ...arg) 
-  ...
-  foo_typed(1, 2, 3);
-  foo_untyped(1, "hello", 1.2);
- hasPointers true
- isCaseSensitive true
- hasConstructors false
- hasCaseInsensitiveIdentifiers false
- hasAssignment true
-  a = b;
- hasConditionals true
- hasWhileLoops true
-  while (int x = foo(); x > 0) 
-  {
-    sum += x;
-  }
- hasScientificNotation true
- hasTernaryOperators true
-  int foo = x ? 1 : 0;
- hasStrings true
-  String s = "hello";
-  String t = `I say "hello"`;
- hasStructs true
-  struct Test
-  {
-     int x;
-     float y;
-     String z;
-  }  
- hasGotos false
- hasGarbageCollection false
- hasSwitch true
-  switch(expression) 
-  {
-     case 1:
-        do_something();
-     case 2:
-        if (x > 0) nextcase 1; // Jump to 1
-        nextcase; // Jump to the next case.
-     default:
-        foo();
-  }
-  
+    float y;
+    String z;
+ }  
+hasGotos false
+hasGarbageCollection false
+hasSwitch true
+ switch(expression) 
+ {
+    case 1:
+       do_something();
+    case 2:
+       if (x > 0) nextcase 1; // Jump to 1
+       nextcase; // Jump to the next case.
+    default:
+       foo();
+ }
+ 
 
 lineCommentToken //
 multiLineCommentTokens /* */

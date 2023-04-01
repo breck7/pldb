@@ -4,11 +4,10 @@ type pl
 country Netherlands
 originCommunity Centrum Wiskunde & Informatica
 
-features
- hasSemanticIndentation true
- hasPrintDebugging true
- hasStrings true
-  "Hello world"
+hasSemanticIndentation true
+hasPrintDebugging true
+hasStrings true
+ "Hello world"
 
 printToken WRITE
 stringToken "

@@ -6,16 +6,15 @@ description TLA+ is a formal specification and verification language that helps 
 documentation https://lamport.azurewebsites.net/tla/learning.html
 reference https://lamport.azurewebsites.net/tla/tla.html
 
-features
- hasLineComments true
-  \* A comment
- hasComments true
-  \* A comment
- hasMultiLineComments true
-  (* A comment
-  *)
- hasSemanticIndentation false
- hasBooleans true
+hasLineComments true
+ \* A comment
+hasComments true
+ \* A comment
+hasMultiLineComments true
+ (* A comment
+ *)
+hasSemanticIndentation false
+hasBooleans true
 
 lineCommentToken \*
 multiLineCommentTokens (* *)

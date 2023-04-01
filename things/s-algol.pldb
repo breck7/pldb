@@ -5,16 +5,15 @@ creators Ron Morrison and Tony Davie
 country United Kingdom
 originCommunity University of St Andrews
 
-features
- hasLineComments true
-  ! A comment
- hasComments true
-  ! A comment
- hasPrintDebugging true
- hasSemanticIndentation false
- hasStrings true
-  "Hello world"
- hasBooleans true
+hasLineComments true
+ ! A comment
+hasComments true
+ ! A comment
+hasPrintDebugging true
+hasSemanticIndentation false
+hasStrings true
+ "Hello world"
+hasBooleans true
 
 lineCommentToken !
 printToken write

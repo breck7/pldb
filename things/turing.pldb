@@ -5,15 +5,14 @@ creators Ric Holt
 documentation https://turing.ml/v0.21/docs/using-turing/
 country Canada
 
-features
- hasLineComments true
-  % A comment
- hasComments true
-  % A comment
- hasPrintDebugging true
- hasSemanticIndentation false
- hasStrings true
-  "Hello world"
+hasLineComments true
+ % A comment
+hasComments true
+ % A comment
+hasPrintDebugging true
+hasSemanticIndentation false
+hasStrings true
+ "Hello world"
 
 lineCommentToken %
 printToken put

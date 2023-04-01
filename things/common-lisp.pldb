@@ -16,40 +16,39 @@ domainName common-lisp.net
 
 visualParadigm false
 
-features
- isLisp true
- hasSingleDispatch true
-  ; https://eli.thegreenplace.net/2016/a-polyglots-guide-to-multiple-dispatch-part-3/
-  (defclass Person () ())
-  (defmethod frobnicate ((p Person) record spreadsheet)
-   (format t "~a ~a ~a~&" (type-of p) (type-of record) (type-of spreadsheet)))
-  (defclass Asteroid () ())
-  (defmethod frobnicate ((a Asteroid) velocity size)
-   ; do stuff
+isLisp true
+hasSingleDispatch true
+ ; https://eli.thegreenplace.net/2016/a-polyglots-guide-to-multiple-dispatch-part-3/
+ (defclass Person () ())
+ (defmethod frobnicate ((p Person) record spreadsheet)
+  (format t "~a ~a ~a~&" (type-of p) (type-of record) (type-of spreadsheet)))
+ (defclass Asteroid () ())
+ (defmethod frobnicate ((a Asteroid) velocity size)
+  ; do stuff
+  )
+ ; At runtime these 2 would be routed to respective methods:
+ (frobnicate a-person his-record big-spreadsheet)
+ (frobnicate an-asteroid very-fast pretty-small)
+hasMultipleDispatch true
+  (defmethod collide-with ((x asteroid) (y asteroid))
+   ;; deal with asteroid hitting asteroid
    )
-  ; At runtime these 2 would be routed to respective methods:
-  (frobnicate a-person his-record big-spreadsheet)
-  (frobnicate an-asteroid very-fast pretty-small)
- hasMultipleDispatch true
-   (defmethod collide-with ((x asteroid) (y asteroid))
-    ;; deal with asteroid hitting asteroid
-    )
-  (defmethod collide-with ((x asteroid) (y spaceship))
-    ;; deal with asteroid hitting spaceship
-    )
-  (defmethod collide-with ((x spaceship) (y asteroid))
-    ;; deal with spaceship hitting asteroid
-    )
-  (defmethod collide-with ((x spaceship) (y spaceship))
-    ;; deal with spaceship hitting spaceship
-    )
- hasComments true
- hasDirectives true
- hasMultipleInheritance true
- hasLineComments true
-  ; A comment
- hasPrintDebugging true
- hasSemanticIndentation false
+ (defmethod collide-with ((x asteroid) (y spaceship))
+   ;; deal with asteroid hitting spaceship
+   )
+ (defmethod collide-with ((x spaceship) (y asteroid))
+   ;; deal with spaceship hitting asteroid
+   )
+ (defmethod collide-with ((x spaceship) (y spaceship))
+   ;; deal with spaceship hitting spaceship
+   )
+hasComments true
+hasDirectives true
+hasMultipleInheritance true
+hasLineComments true
+ ; A comment
+hasPrintDebugging true
+hasSemanticIndentation false
 
 lineCommentToken ;
 printToken PRINT

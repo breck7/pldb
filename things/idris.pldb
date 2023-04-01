@@ -15,22 +15,21 @@ domainName idris-lang.org
 
 writtenIn haskell
 
-features
- hasDependentTypes true
- hasLineComments true
-  -- A comment
- hasComments true
-  -- A comment
- hasPrintDebugging true
- hasSemanticIndentation false
- hasStrings true
-  "Hello world"
- hasHexadecimals true
-  -- 0[xX][\da-fA-F]+
- hasFloats true
-  -- \d+[eE][+-]?\d+
- hasIntegers true
-  -- \d+
+hasDependentTypes true
+hasLineComments true
+ -- A comment
+hasComments true
+ -- A comment
+hasPrintDebugging true
+hasSemanticIndentation false
+hasStrings true
+ "Hello world"
+hasHexadecimals true
+ -- 0[xX][\da-fA-F]+
+hasFloats true
+ -- \d+[eE][+-]?\d+
+hasIntegers true
+ -- \d+
 
 lineCommentToken --
 printToken putStrLn

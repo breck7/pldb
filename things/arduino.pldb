@@ -11,11 +11,10 @@ releaseNotesUrl https://www.arduino.cc/en/software/ReleaseNotes
 
 extensionOf cpp
 
-features
- hasPrintDebugging true
- hasCaseInsensitiveIdentifiers false
- hasStrings true
-  "Hello world"
+hasPrintDebugging true
+hasCaseInsensitiveIdentifiers false
+hasStrings true
+ "Hello world"
 
 printToken Serial.println
 stringToken "

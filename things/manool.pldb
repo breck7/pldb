@@ -10,12 +10,11 @@ originCommunity https://github.com/rusini/manool/pulls
 domainName manool.org
  registered 2018
 
-features
- hasLineComments true
-  -- A comment
- hasComments true
-  -- A comment
- hasSemanticIndentation false
+hasLineComments true
+ -- A comment
+hasComments true
+ -- A comment
+hasSemanticIndentation false
 
 lineCommentToken --
 

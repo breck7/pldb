@@ -11,11 +11,10 @@ domainName mongodb.com
 
 writtenIn cpp c javascript
 
-features
- hasComments true
-  $comment: "A comment"
- hasStrings true
- hasBooleans true
+hasComments true
+ $comment: "A comment"
+hasStrings true
+hasBooleans true
 
 keywords find findOne drop createIndex
 

@@ -13,14 +13,13 @@ domainName erights.org
 
 visualParadigm false
 
-features
- hasComments true
- hasLineComments true
-  # A comment
- hasPrintDebugging true
- hasSemanticIndentation false
- hasStrings true
-  "Hello world"
+hasComments true
+hasLineComments true
+ # A comment
+hasPrintDebugging true
+hasSemanticIndentation false
+hasStrings true
+ "Hello world"
 
 lineCommentToken #
 printToken println

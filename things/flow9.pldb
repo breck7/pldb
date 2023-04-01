@@ -10,19 +10,18 @@ originCommunity https://github.com/area9innovation
 domainName flow9.org
  registered 2017
 
-features
- hasStrings true
- hasLineComments true
-  // A comment
- hasMultiLineComments true
-  /* A comment
-  */
- hasComments true
-  // A comment
- hasImports true
-  import runtime;
- hasSwitch true
- hasConditionals true
+hasStrings true
+hasLineComments true
+ // A comment
+hasMultiLineComments true
+ /* A comment
+ */
+hasComments true
+ // A comment
+hasImports true
+ import runtime;
+hasSwitch true
+hasConditionals true
 
 lineCommentToken //
 multiLineCommentTokens /* */

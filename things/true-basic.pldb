@@ -3,12 +3,11 @@ appeared 1983
 type pl
 creators John George Kemeny and Thomas Eugene Kurtz
 
-features
- hasLineComments true
-  ! A comment
- hasComments true
-  ! A comment
- hasSemanticIndentation false
+hasLineComments true
+ ! A comment
+hasComments true
+ ! A comment
+hasSemanticIndentation false
 
 lineCommentToken !
 

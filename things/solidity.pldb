@@ -8,22 +8,21 @@ releaseNotesUrl https://blog.soliditylang.org/category/releases/
 
 writtenIn cpp
 
-features
- hasLineComments true
-  // A comment
- hasComments true
-  // A comment
- hasSemanticIndentation false
- hasStrings true
- hasMultiLineComments true
-  /* A comment
-  */
- hasBooleans true
- hasWhileLoops true
- hasExceptions true
- hasFunctions true
- hasAccessModifiers true
- hasConditionals true
+hasLineComments true
+ // A comment
+hasComments true
+ // A comment
+hasSemanticIndentation false
+hasStrings true
+hasMultiLineComments true
+ /* A comment
+ */
+hasBooleans true
+hasWhileLoops true
+hasExceptions true
+hasFunctions true
+hasAccessModifiers true
+hasConditionals true
 
 lineCommentToken //
 multiLineCommentTokens /* */

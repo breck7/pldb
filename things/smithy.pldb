@@ -3,9 +3,8 @@ appeared 2016
 type pl
 website https://smithy.io/
 
-features
- hasMultiLineComments true
- hasComments true
+hasMultiLineComments true
+hasComments true
 
 pygmentsHighlighter Smithy
  filename smithy.py

@@ -9,16 +9,15 @@ standsFor Interactive Data Language
 country United States
 originCommunity L3Harris Geospatial Solutions, Inc
 
-features
- hasComments true
- hasPrintDebugging true
- hasSemanticIndentation false
- hasStrings true
-  "Hello world"
- hasOctals true
- hasHexadecimals true
- hasFloats true
- hasIntegers true
+hasComments true
+hasPrintDebugging true
+hasSemanticIndentation false
+hasStrings true
+ "Hello world"
+hasOctals true
+hasHexadecimals true
+hasFloats true
+hasIntegers true
 
 printToken print
 stringToken "

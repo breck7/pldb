@@ -21,48 +21,47 @@ runsOnVm jvm
 
 visualParadigm false
 
-features
- hasVariableSubstitutionSyntax false
- hasAssignment true
-  table = HashMap()
- hasComments true
- hasTernaryOperators true
-  // Since if statements are expressions
-  println(if (true) true else false)
- hasImports true
-  import foo.Bar // Bar is now accessible without qualification
-  import foo.* // everything in 'foo' becomes accessible
-  import bar.Bar as bBar // bBar stands for 'bar.Bar'
- hasInterfaces true
-  interface Named {
-     val name: String
-  }
-  interface Person : Named {
-      val firstName: String
-      val lastName: String
-      
-      override val name: String get() = "$firstName $lastName"
-  }
- hasMacros false
- hasOperatorOverloading true
- hasSemanticIndentation false
- hasCaseInsensitiveIdentifiers false
- hasTypeInference true
- hasLineComments true
-  // A comment
- hasPrintDebugging true
- hasMultiLineComments true
-  /* A comment
-  */
- hasStrings true
- hasBooleans true
- hasWhileLoops true
- hasClasses true
- hasConstants true
- hasExceptions true
- hasFunctions true
- hasAccessModifiers true
- hasConditionals true
+hasVariableSubstitutionSyntax false
+hasAssignment true
+ table = HashMap()
+hasComments true
+hasTernaryOperators true
+ // Since if statements are expressions
+ println(if (true) true else false)
+hasImports true
+ import foo.Bar // Bar is now accessible without qualification
+ import foo.* // everything in 'foo' becomes accessible
+ import bar.Bar as bBar // bBar stands for 'bar.Bar'
+hasInterfaces true
+ interface Named {
+    val name: String
+ }
+ interface Person : Named {
+     val firstName: String
+     val lastName: String
+     
+     override val name: String get() = "$firstName $lastName"
+ }
+hasMacros false
+hasOperatorOverloading true
+hasSemanticIndentation false
+hasCaseInsensitiveIdentifiers false
+hasTypeInference true
+hasLineComments true
+ // A comment
+hasPrintDebugging true
+hasMultiLineComments true
+ /* A comment
+ */
+hasStrings true
+hasBooleans true
+hasWhileLoops true
+hasClasses true
+hasConstants true
+hasExceptions true
+hasFunctions true
+hasAccessModifiers true
+hasConditionals true
 
 lineCommentToken //
 multiLineCommentTokens /* */

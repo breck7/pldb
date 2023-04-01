@@ -15,13 +15,12 @@ domainName futhark-lang.org
 
 influencedBy apl
 
-features
- hasComments true
- hasHexadecimals true
- hasFloats true
- hasIntegers true
- hasBinaryNumbers true
- hasLineComments true
+hasComments true
+hasHexadecimals true
+hasFloats true
+hasIntegers true
+hasBinaryNumbers true
+hasLineComments true
 
 githubRepo https://github.com/diku-dk/futhark
  firstCommit 2013

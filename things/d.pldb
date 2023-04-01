@@ -15,41 +15,40 @@ releaseNotesUrl https://dlang.org/changelog/
 
 visualParadigm false
 
-features
- hasPointers true
- hasComments true
- hasOperatorOverloading true
- hasTypeInference true
- hasTemplates true
-  template TCopy(T)
-  {
-      void copy(out T to, T from)
-      {
-          to = from;
-      }
-  }
-  int i;
-  TCopy!(int).copy(i, 3);
- hasLineComments true
-  // A comment
- hasPrintDebugging true
- hasMultiLineComments true
-  /+ A comment
-  +/
- hasSemanticIndentation false
- hasCaseInsensitiveIdentifiers false
- hasStrings true
-  "Hello world"
- hasOctals true
-  // 0[0-7_]+
- hasHexadecimals true
-  // 0[xX][0-9a-fA-F_]+
- hasFloats true
-  // 0[xX]([0-9a-fA-F_]*\.[0-9a-fA-F_]+|[0-9a-fA-F_]+)[pP][+\-]?[0-9_]+[fFL]?[i]?
- hasIntegers true
-  // (0|[1-9][0-9_]*)([LUu]|Lu|LU|uL|UL)?
- hasBinaryNumbers true
-  // 0[Bb][01_]+
+hasPointers true
+hasComments true
+hasOperatorOverloading true
+hasTypeInference true
+hasTemplates true
+ template TCopy(T)
+ {
+     void copy(out T to, T from)
+     {
+         to = from;
+     }
+ }
+ int i;
+ TCopy!(int).copy(i, 3);
+hasLineComments true
+ // A comment
+hasPrintDebugging true
+hasMultiLineComments true
+ /+ A comment
+ +/
+hasSemanticIndentation false
+hasCaseInsensitiveIdentifiers false
+hasStrings true
+ "Hello world"
+hasOctals true
+ // 0[0-7_]+
+hasHexadecimals true
+ // 0[xX][0-9a-fA-F_]+
+hasFloats true
+ // 0[xX]([0-9a-fA-F_]*\.[0-9a-fA-F_]+|[0-9a-fA-F_]+)[pP][+\-]?[0-9_]+[fFL]?[i]?
+hasIntegers true
+ // (0|[1-9][0-9_]*)([LUu]|Lu|LU|uL|UL)?
+hasBinaryNumbers true
+ // 0[Bb][01_]+
 
 lineCommentToken //
 multiLineCommentTokens /* */

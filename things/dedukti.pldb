@@ -6,13 +6,12 @@ country France
 originCommunity https://github.com/Deducteam
 domainName deducteam.github.io
 
-features
- hasComments true
-  (; This is a comment ;)
- hasMultiLineComments true
-  (; A comment
-  ;)
- hasSemanticIndentation false
+hasComments true
+ (; This is a comment ;)
+hasMultiLineComments true
+ (; A comment
+ ;)
+hasSemanticIndentation false
 
 multiLineCommentTokens (; ;)
 

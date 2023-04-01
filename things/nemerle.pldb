@@ -14,44 +14,43 @@ influencedBy csharp ml lisp
 
 visualParadigm false
 
-features
- hasComments true
- hasSemanticIndentation true
- hasMacros true
-  // http://nemerle.org/About
-  def title = "Programming language authors";
-  def authors = ["Anders Hejlsberg", "Simon Peyton-Jones"];
-      
-  // 'xml' - macro from Nemerle.Xml.Macro library which alows to inline XML literals into the nemerle-code
-  def html = xml <#
-    <html>
-      <head>
-        <title>$title</title>
-      </head>
-      <body>
-        <ul $when(authors.Any())>
-          <li $foreach(author in authors)>$author</li>
-        </ul>
-      </body>
-    </html>
-  #>
-  Trace.Assert(html.GetType().Equals(typeof(XElement)));
-  WriteLine(html.GetType());
- hasTypeInference true
- hasUnitsOfMeasure true
-  def m3 = 1 g;
-  def m4 = Si.Mass(m1);
-  
-  WriteLine($"Mass in SI: $m4, in CGS: $m3");
-  
-  def x1 = Si.Area(1 cm * 10 m);
-  
-  WriteLine($"Area of 1 cm * 10 m = $x1 m");
- hasLineComments true
-  // A comment
- hasPrintDebugging true
- hasStrings true
-  "Hello world"
+hasComments true
+hasSemanticIndentation true
+hasMacros true
+ // http://nemerle.org/About
+ def title = "Programming language authors";
+ def authors = ["Anders Hejlsberg", "Simon Peyton-Jones"];
+     
+ // 'xml' - macro from Nemerle.Xml.Macro library which alows to inline XML literals into the nemerle-code
+ def html = xml <#
+   <html>
+     <head>
+       <title>$title</title>
+     </head>
+     <body>
+       <ul $when(authors.Any())>
+         <li $foreach(author in authors)>$author</li>
+       </ul>
+     </body>
+   </html>
+ #>
+ Trace.Assert(html.GetType().Equals(typeof(XElement)));
+ WriteLine(html.GetType());
+hasTypeInference true
+hasUnitsOfMeasure true
+ def m3 = 1 g;
+ def m4 = Si.Mass(m1);
+ 
+ WriteLine($"Mass in SI: $m4, in CGS: $m3");
+ 
+ def x1 = Si.Area(1 cm * 10 m);
+ 
+ WriteLine($"Area of 1 cm * 10 m = $x1 m");
+hasLineComments true
+ // A comment
+hasPrintDebugging true
+hasStrings true
+ "Hello world"
 
 lineCommentToken //
 printToken System.Console.WriteLine

@@ -8,13 +8,12 @@ originCommunity https://github.com/pawwkm/owen/issues
 domainName owen-lang.org
  registered 2019
 
-features
- hasLineComments true
-  // A comment
- hasComments true
-  // A comment
- hasPrintDebugging true
- hasSemanticIndentation false
+hasLineComments true
+ // A comment
+hasComments true
+ // A comment
+hasPrintDebugging true
+hasSemanticIndentation false
 
 lineCommentToken //
 printToken print

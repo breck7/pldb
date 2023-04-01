@@ -4,12 +4,11 @@ type pl
 country England
 originCommunity https://github.com/renpy
 
-features
- hasLineComments true
-  # A comment
- hasComments true
-  # A comment
- hasSemanticIndentation false
+hasLineComments true
+ # A comment
+hasComments true
+ # A comment
+hasSemanticIndentation false
 
 lineCommentToken #
 

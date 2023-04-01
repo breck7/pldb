@@ -6,10 +6,9 @@ website http://www.pmg.lcs.mit.edu/CLU.html
 country United States
 originCommunity Massachusetts Institute of Technology
 
-features
- hasPrintDebugging true
- hasStrings true
-  "Hello world"
+hasPrintDebugging true
+hasStrings true
+ "Hello world"
 
 printToken stream$putl
 stringToken "

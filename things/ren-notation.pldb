@@ -11,12 +11,11 @@ originCommunity Pointillistic Software
 domainName ren-data.org
  registered 2014
 
-features
- hasComments true
- hasLineComments true
-  ; A comment
- hasSemanticIndentation false
- hasBooleans true
+hasComments true
+hasLineComments true
+ ; A comment
+hasSemanticIndentation false
+hasBooleans true
 
 lineCommentToken ;
 booleanTokens true false

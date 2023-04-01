@@ -17,11 +17,10 @@ domainName zsh.org
  awisRank
   2022 656733
 
-features
- hasHereDocs true
- hasPrintDebugging true
- hasStrings true
-  "Hello world"
+hasHereDocs true
+hasPrintDebugging true
+hasStrings true
+ "Hello world"
 
 lineCommentToken #
 printToken echo

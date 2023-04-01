@@ -5,23 +5,22 @@ creators Alan Kay and Dan Ingalls and Adele Goldberg
 documentation https://www.gnu.org/software/smalltalk/manual/html_node/
 country United States
 
-features
- hasMultipleDispatch true
- hasMacros false
- hasComments true
- hasGarbageCollection true
- hasOperatorOverloading true
- hasLineComments false
- hasMessagePassing true
- hasPrintDebugging true
- hasMultiLineComments true
-  " A comment
-  "
- hasSemanticIndentation false
- hasCaseInsensitiveIdentifiers false
- hasAssignment true
- hasStrings true
-  'Hello world'
+hasMultipleDispatch true
+hasMacros false
+hasComments true
+hasGarbageCollection true
+hasOperatorOverloading true
+hasLineComments false
+hasMessagePassing true
+hasPrintDebugging true
+hasMultiLineComments true
+ " A comment
+ "
+hasSemanticIndentation false
+hasCaseInsensitiveIdentifiers false
+hasAssignment true
+hasStrings true
+ 'Hello world'
 
 multiLineCommentTokens "
 printToken displayNl

@@ -6,13 +6,12 @@ documentation https://click.palletsprojects.com/en/8.1.x/
 country United States
 originCommunity Massachusetts Institute of Technology
 
-features
- hasLineComments true
-  // A comment
- hasComments true
-  // A comment
- hasSemanticIndentation false
- hasBooleans true
+hasLineComments true
+ // A comment
+hasComments true
+ // A comment
+hasSemanticIndentation false
+hasBooleans true
 
 lineCommentToken //
 booleanTokens true false

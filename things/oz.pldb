@@ -13,12 +13,11 @@ domainName mozart.github.io
 
 visualParadigm false
 
-features
- hasComments true
- hasLineComments true
-  % A comment
- hasSemanticIndentation false
- hasBooleans true
+hasComments true
+hasLineComments true
+ % A comment
+hasSemanticIndentation false
+hasBooleans true
 
 lineCommentToken %
 booleanTokens true false

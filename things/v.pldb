@@ -10,15 +10,14 @@ domainName vlang.io
  awisRank
   2022 372075
 
-features
- hasStrings true
-  "hello world"
- hasLineComments true
-  // A comment
- hasComments true
-  // A comment
- hasPrintDebugging true
- hasSemanticIndentation false
+hasStrings true
+ "hello world"
+hasLineComments true
+ // A comment
+hasComments true
+ // A comment
+hasPrintDebugging true
+hasSemanticIndentation false
 
 lineCommentToken //
 printToken println

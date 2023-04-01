@@ -4,10 +4,9 @@ type pl
 country New Zealand
 originCommunity Blitz Research
 
-features
- hasPrintDebugging true
- hasStrings true
-  "Hello world"
+hasPrintDebugging true
+hasStrings true
+ "Hello world"
 
 printToken Print
 stringToken "

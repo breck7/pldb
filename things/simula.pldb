@@ -9,16 +9,15 @@ influencedBy algol-60
 
 visualParadigm false
 
-features
- hasComments true
- hasLineComments true
-  ! A comment
- hasPrintDebugging true
- hasSemanticIndentation false
- hasAssignment true
- hasStrings true
-  "Hello world"
- hasBooleans true
+hasComments true
+hasLineComments true
+ ! A comment
+hasPrintDebugging true
+hasSemanticIndentation false
+hasAssignment true
+hasStrings true
+ "Hello world"
+hasBooleans true
 
 lineCommentToken !
 printToken OutText

@@ -15,78 +15,77 @@ domainName rust-lang.org
 
 visualParadigm false
 
-features
- hasStrings true
-  "hello world"
- hasComments true
-  // https://doc.rust-lang.org/reference/comments.html
-  // a comment
- hasMultiLineComments true
-  /* A comment
-  */
- hasDirectives true
-  // A conditionally-compiled module
-  #[cfg(target_os = "linux")]
-  mod bar {
-      /* ... */
-  }
-  // General metadata applied to the enclosing module or crate.
-  #![crate_type = "lib"]
-  // A function marked as a unit test
-  #[test]
-  fn test_foo() {
-      /* ... */
-  }
-  // A lint attribute used to suppress a warning/error
-  #[allow(non_camel_case_types)]
-  type int8_t = i8;
-  
-  // Inner attribute applies to the entire function.
-  fn some_unused_variables() {
-    #![allow(unused_variables)]
-  
-    let x = ();
-    let y = ();
-    let z = ();
-  }
- hasImports true
-  use ::std::fs;  // Imports from the `std` crate, not the module below.
-  use self::std::fs as self_fs;  // Imports the module below.
-  mod my;
-  use self::foo::Zoo as _;
-  #[path = "foo.rs"]
-  mod c;
- hasIterators true
-  for n in 0..42 {
-    println!("{}", n);
-  }
- hasMacros true
-  // https://doc.rust-lang.org/book/ch19-06-macros.html
-  #[macro_export]
-  macro_rules! vec {
-      ( $( $x:expr ),* ) => {
-          {
-              let mut temp_vec = Vec::new();
-              $(
-                  temp_vec.push($x);
-              )*
-              temp_vec
-          }
-      };
-  }
- hasOperatorOverloading true
- hasPatternMatching true
- hasPrintDebugging true
-  println!("Hi");
- hasSemanticIndentation false
- hasCaseInsensitiveIdentifiers false
- hasTypeInference true
- hasLineComments true
-  // A comment
- hasBooleans true
- hasWhileLoops true
- hasConstants true
- hasConditionals true
+hasStrings true
+ "hello world"
+hasComments true
+ // https://doc.rust-lang.org/reference/comments.html
+ // a comment
+hasMultiLineComments true
+ /* A comment
+ */
+hasDirectives true
+ // A conditionally-compiled module
+ #[cfg(target_os = "linux")]
+ mod bar {
+     /* ... */
+ }
+ // General metadata applied to the enclosing module or crate.
+ #![crate_type = "lib"]
+ // A function marked as a unit test
+ #[test]
+ fn test_foo() {
+     /* ... */
+ }
+ // A lint attribute used to suppress a warning/error
+ #[allow(non_camel_case_types)]
+ type int8_t = i8;
+ 
+ // Inner attribute applies to the entire function.
+ fn some_unused_variables() {
+   #![allow(unused_variables)]
+ 
+   let x = ();
+   let y = ();
+   let z = ();
+ }
+hasImports true
+ use ::std::fs;  // Imports from the `std` crate, not the module below.
+ use self::std::fs as self_fs;  // Imports the module below.
+ mod my;
+ use self::foo::Zoo as _;
+ #[path = "foo.rs"]
+ mod c;
+hasIterators true
+ for n in 0..42 {
+   println!("{}", n);
+ }
+hasMacros true
+ // https://doc.rust-lang.org/book/ch19-06-macros.html
+ #[macro_export]
+ macro_rules! vec {
+     ( $( $x:expr ),* ) => {
+         {
+             let mut temp_vec = Vec::new();
+             $(
+                 temp_vec.push($x);
+             )*
+             temp_vec
+         }
+     };
+ }
+hasOperatorOverloading true
+hasPatternMatching true
+hasPrintDebugging true
+ println!("Hi");
+hasSemanticIndentation false
+hasCaseInsensitiveIdentifiers false
+hasTypeInference true
+hasLineComments true
+ // A comment
+hasBooleans true
+hasWhileLoops true
+hasConstants true
+hasConditionals true
 
 lineCommentToken //
 multiLineCommentTokens /* */

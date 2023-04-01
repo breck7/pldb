@@ -5,10 +5,9 @@ creators Chris Gray
 country United States
 originCommunity https://web.archive.org/web/20090221030835/http://www.graysage.com/
 
-features
- hasPrintDebugging true
- hasStrings true
-  "Hello world"
+hasPrintDebugging true
+hasStrings true
+ "Hello world"
 
 printToken writeln
 stringToken "

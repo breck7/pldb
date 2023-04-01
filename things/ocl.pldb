@@ -7,12 +7,11 @@ reference https://www.omg.org/spec/OCL/2.2/PDF
 country United States
 originCommunity IBM
 
-features
- hasLineComments true
-  -- A comment
- hasComments true
-  -- A comment
- hasSemanticIndentation false
+hasLineComments true
+ -- A comment
+hasComments true
+ -- A comment
+hasSemanticIndentation false
 
 lineCommentToken --
 

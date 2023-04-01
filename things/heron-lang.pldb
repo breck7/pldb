@@ -6,12 +6,11 @@ website https://cdiggins.github.io/heron-language
 country Canada
 originCommunity https://github.com/cdiggins/heron-language/issues
 
-features
- hasLineComments true
-  // A comment
- hasComments true
-  // A comment
- hasSemanticIndentation false
+hasLineComments true
+ // A comment
+hasComments true
+ // A comment
+hasSemanticIndentation false
 
 lineCommentToken //
 

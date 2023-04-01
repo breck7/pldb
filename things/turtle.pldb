@@ -3,9 +3,8 @@ appeared 2011
 type dataNotation
 documentation https://www.w3.org/TR/turtle/
 
-features
- hasFloats true
- hasIntegers true
+hasFloats true
+hasIntegers true
 
 example
  @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .

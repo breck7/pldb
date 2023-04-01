@@ -14,39 +14,38 @@ compilesTo ocaml
 writtenIn ocaml
 related rust elm purescript fable-lang clojurescript swift haxe
 
-features
- hasLineComments true
-  // A comment
- hasDestructuring true
-  type person = {name: string, age: int};
-  let somePerson = {name: "Guy", age: 30};
-  let {name, age} = somePerson;
- hasComments true
-  // A comment
- hasPrintDebugging true
- hasMultiLineComments true
-  /* A comment
-  */
- hasSemanticIndentation false
- hasCaseInsensitiveIdentifiers false
- hasStrings true
-  "Hello world"
- hasBooleans true
- hasWhileLoops true
- hasClasses true
- hasFunctions true
- hasSwitch true
- hasConditionals true
- hasOctals true
-  // 0[oO][0-7][0-7_]*
- hasHexadecimals true
-  // 0[xX][\da-fA-F][\da-fA-F_]*
- hasFloats true
-  // -?\d[\d_]*(.[\d_]*)?([eE][+\-]?\d[\d_]*)
- hasIntegers true
-  // \d[\d_]*
- hasBinaryNumbers true
-  // 0[bB][01][01_]*
+hasLineComments true
+ // A comment
+hasDestructuring true
+ type person = {name: string, age: int};
+ let somePerson = {name: "Guy", age: 30};
+ let {name, age} = somePerson;
+hasComments true
+ // A comment
+hasPrintDebugging true
+hasMultiLineComments true
+ /* A comment
+ */
+hasSemanticIndentation false
+hasCaseInsensitiveIdentifiers false
+hasStrings true
+ "Hello world"
+hasBooleans true
+hasWhileLoops true
+hasClasses true
+hasFunctions true
+hasSwitch true
+hasConditionals true
+hasOctals true
+ // 0[oO][0-7][0-7_]*
+hasHexadecimals true
+ // 0[xX][\da-fA-F][\da-fA-F_]*
+hasFloats true
+ // -?\d[\d_]*(.[\d_]*)?([eE][+\-]?\d[\d_]*)
+hasIntegers true
+ // \d[\d_]*
+hasBinaryNumbers true
+ // 0[bB][01][01_]*
 
 lineCommentToken //
 multiLineCommentTokens /* */

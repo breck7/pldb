@@ -8,11 +8,10 @@ originCommunity https://github.com/att
 domainName kornshell.org
  registered 2005
 
-features
- hasHereDocs true
- hasPrintDebugging true
- hasStrings true
-  "Hello world"
+hasHereDocs true
+hasPrintDebugging true
+hasStrings true
+ "Hello world"
 
 printToken echo
 stringToken "

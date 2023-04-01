@@ -7,12 +7,11 @@ reference https://wiki.gentoo.org/wiki/Basic_guide_to_write_Gentoo_Ebuilds
 country United States
 originCommunity Gentoo Foundation
 
-features
- hasLineComments true
-  # A comment
- hasComments true
-  # A comment
- hasSemanticIndentation false
+hasLineComments true
+ # A comment
+hasComments true
+ # A comment
+hasSemanticIndentation false
 
 lineCommentToken #
 

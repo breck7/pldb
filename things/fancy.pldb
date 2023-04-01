@@ -7,15 +7,14 @@ originCommunity https://github.com/bakkdoor/fancy/issues
 domainName fancy-lang.org
  registered 2010
 
-features
- hasComments true
- hasPrintDebugging true
- hasSemanticIndentation false
- hasStrings true
-  "Hello world"
- hasFloats true
- hasIntegers true
- hasLineComments true
+hasComments true
+hasPrintDebugging true
+hasSemanticIndentation false
+hasStrings true
+ "Hello world"
+hasFloats true
+hasIntegers true
+hasLineComments true
 
 printToken println
 stringToken "

@@ -12,26 +12,25 @@ domainName mysql.com
   2022 1475
 releaseNotesUrl https://dev.mysql.com/doc/relnotes/mysql/8.0/en/
 
-features
- hasLineComments true
-  -- A comment
- hasComments true
-  -- A comment
- hasMultiLineComments true
-  /* A comment
-  */
- hasSemanticIndentation false
- hasCaseInsensitiveIdentifiers true
- hasStrings true
- hasBooleans true
- hasHexadecimals true
-  -- x'([0-9a-f]{2})+'
- hasFloats true
-  -- [0-9]+\.[0-9]*(e[+-]?[0-9]+)?
- hasIntegers true
-  -- [0-9]+(?=[^0-9a-z$_\u0080-\uffff])
- hasBinaryNumbers true
-  -- b'[01]+'
+hasLineComments true
+ -- A comment
+hasComments true
+ -- A comment
+hasMultiLineComments true
+ /* A comment
+ */
+hasSemanticIndentation false
+hasCaseInsensitiveIdentifiers true
+hasStrings true
+hasBooleans true
+hasHexadecimals true
+ -- x'([0-9a-f]{2})+'
+hasFloats true
+ -- [0-9]+\.[0-9]*(e[+-]?[0-9]+)?
+hasIntegers true
+ -- [0-9]+(?=[^0-9a-z$_\u0080-\uffff])
+hasBinaryNumbers true
+ -- b'[01]+'
 
 lineCommentToken --
 multiLineCommentTokens /* */

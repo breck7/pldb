@@ -5,15 +5,14 @@ description <a href='https://github.com/monte-language'>Monte</a> is a dynamic p
 country United States
 originCommunity https://github.com/monte-language
 
-features
- hasComments true
- hasPrintDebugging true
- hasSemanticIndentation false
- hasStrings true
-  "Hello world"
- hasHexadecimals true
- hasFloats true
- hasIntegers true
+hasComments true
+hasPrintDebugging true
+hasSemanticIndentation false
+hasStrings true
+ "Hello world"
+hasHexadecimals true
+hasFloats true
+hasIntegers true
 
 printToken traceln
 stringToken "

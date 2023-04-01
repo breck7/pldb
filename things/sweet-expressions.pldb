@@ -8,12 +8,11 @@ reference https://sourceforge.net/p/readable/code/ci/develop/tree/
 
 related i-expressions s-expressions
 
-features
- hasSemanticIndentation true
- hasLineComments true
-  ; A comment
- hasComments true
-  ; A comment
+hasSemanticIndentation true
+hasLineComments true
+ ; A comment
+hasComments true
+ ; A comment
 
 lineCommentToken ;
 

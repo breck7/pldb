@@ -19,22 +19,21 @@ writtenIn haskell
 
 visualParadigm false
 
-features
- hasComments true
- hasTypeInference true
- hasLineComments true
-  -- A comment
- hasMultiLineComments true
-  {- A comment
-  -}
- hasSemanticIndentation true
- hasCaseInsensitiveIdentifiers false
- hasStrings true
-  "Hello world"
- hasFloats true
-  -- _?\d+\.(?=\d+)
- hasIntegers true
-  -- _?\d+
+hasComments true
+hasTypeInference true
+hasLineComments true
+ -- A comment
+hasMultiLineComments true
+ {- A comment
+ -}
+hasSemanticIndentation true
+hasCaseInsensitiveIdentifiers false
+hasStrings true
+ "Hello world"
+hasFloats true
+ -- _?\d+\.(?=\d+)
+hasIntegers true
+ -- _?\d+
 
 lineCommentToken --
 multiLineCommentTokens {- -}

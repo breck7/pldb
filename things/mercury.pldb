@@ -14,15 +14,14 @@ domainName mercurylang.org
 
 compilesTo c
 
-features
- hasLineComments true
-  % A comment
- hasComments true
-  % A comment
- hasPrintDebugging true
- hasSemanticIndentation false
- hasStrings true
-  "Hello world"
+hasLineComments true
+ % A comment
+hasComments true
+ % A comment
+hasPrintDebugging true
+hasSemanticIndentation false
+hasStrings true
+ "Hello world"
 
 lineCommentToken %
 printToken io.write_string

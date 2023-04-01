@@ -8,11 +8,10 @@ standsFor Meta Language
 country United Kingdom
 originCommunity University of Edinburgh
 
-features
- hasGarbageCollection true
- hasTypeInference true
- hasLineComments false
- hasAssignment true
+hasGarbageCollection true
+hasTypeInference true
+hasLineComments false
+hasAssignment true
 
 assignmentToken :=
 

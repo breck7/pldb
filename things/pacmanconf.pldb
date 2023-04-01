@@ -5,9 +5,8 @@ website https://www.archlinux.org/pacman/pacman.conf.5.html
 country Unknown
 originCommunity https://bugs.archlinux.org
 
-features
- hasLineComments true
- hasComments true
+hasLineComments true
+hasComments true
 
 pygmentsHighlighter PacmanConf
  filename configs.py

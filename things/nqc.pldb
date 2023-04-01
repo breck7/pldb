@@ -6,12 +6,11 @@ standsFor Not Quite C
 country United States
 originCommunity https://github.com/nlsandler/nqcc/issues
 
-features
- hasLineComments true
-  // A comment
- hasComments true
-  // A comment
- hasSemanticIndentation false
+hasLineComments true
+ // A comment
+hasComments true
+ // A comment
+hasSemanticIndentation false
 
 lineCommentToken //
 

@@ -9,10 +9,9 @@ originCommunity https://github.com/qorelanguage
 domainName qore.org
  registered 2008
 
-features
- hasPrintDebugging true
- hasStrings true
-  "Hello world"
+hasPrintDebugging true
+hasStrings true
+ "Hello world"
 
 printToken printf
 stringToken "

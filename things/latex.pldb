@@ -11,13 +11,12 @@ domainName latex-project.org
  awisRank
   2022 72488
 
-features
- hasComments true
- hasMultiLineComments false
- hasLineComments true
-  % A comment
- hasSemanticIndentation false
- hasCaseInsensitiveIdentifiers false
+hasComments true
+hasMultiLineComments false
+hasLineComments true
+ % A comment
+hasSemanticIndentation false
+hasCaseInsensitiveIdentifiers false
 
 lineCommentToken %
 

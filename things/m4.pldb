@@ -5,11 +5,10 @@ creators Brian Kernighan and Dennis Ritchie
 country United States
 originCommunity AT&T Bell Laboratories
 
-features
- hasComments true
- hasLineComments true
-  # A comment
- hasSemanticIndentation false
+hasComments true
+hasLineComments true
+ # A comment
+hasSemanticIndentation false
 
 lineCommentToken #
 

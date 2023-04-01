@@ -8,20 +8,19 @@ aka VisualBasic
 country United States
 originCommunity Microsoft
 
-features
- hasDirectives true
-  Option Explicit On|Off
-  Option Compare Binary
- hasOperatorOverloading false
- hasComments true
- hasLineComments true
-  ' A comment
- hasMultiLineComments false
- hasPrintDebugging true
- hasSemanticIndentation false
- hasCaseInsensitiveIdentifiers true
- hasStrings true
- hasBooleans true
+hasDirectives true
+ Option Explicit On|Off
+ Option Compare Binary
+hasOperatorOverloading false
+hasComments true
+hasLineComments true
+ ' A comment
+hasMultiLineComments false
+hasPrintDebugging true
+hasSemanticIndentation false
+hasCaseInsensitiveIdentifiers true
+hasStrings true
+hasBooleans true
 
 lineCommentToken '
 multiLineCommentTokens /* */

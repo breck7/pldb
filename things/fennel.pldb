@@ -10,19 +10,18 @@ domainName fennel-lang.org
  awisRank
   2022 1619996
 
-features
- hasLineComments true
-  ; A comment
- hasComments true
-  ; A comment
- hasPrintDebugging true
- hasSemanticIndentation false
- hasStrings true
-  "Hello world"
- hasFloats true
-  ; -?\d+\.\d+
- hasIntegers true
-  ; -?\d+
+hasLineComments true
+ ; A comment
+hasComments true
+ ; A comment
+hasPrintDebugging true
+hasSemanticIndentation false
+hasStrings true
+ "Hello world"
+hasFloats true
+ ; -?\d+\.\d+
+hasIntegers true
+ ; -?\d+
 
 lineCommentToken ;
 printToken print

@@ -7,9 +7,8 @@ originCommunity X.Org Foundation
 
 related makefile autoconf
 
-features
- hasLineComments true
- hasComments true
+hasLineComments true
+hasComments true
 
 pygmentsHighlighter PkgConfig
  filename configs.py

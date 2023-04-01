@@ -5,10 +5,9 @@ description Macsyma (Project MAC’s SYmbolic MAnipulator[1]) is one of the olde
 country United States
 originCommunity Massachusetts Institute of Technology
 
-features
- hasPrintDebugging true
- hasStrings true
-  "Hello world"
+hasPrintDebugging true
+hasStrings true
+ "Hello world"
 
 printToken print
 stringToken "

@@ -7,12 +7,11 @@ standsFor CBOR data definition language
 country Germany
 originCommunity Fraunhofer-Institut für Sichere Informationstechnologie SIT && Technologie-Zentrum Informatik und Informationstechnik
 
-features
- hasOctals true
- hasHexadecimals true
- hasFloats true
- hasIntegers true
- hasBinaryNumbers true
+hasOctals true
+hasHexadecimals true
+hasFloats true
+hasIntegers true
+hasBinaryNumbers true
 
 example
  pii = (

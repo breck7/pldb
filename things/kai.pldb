@@ -7,15 +7,14 @@ country The Netherlands
 originCommunity https://github.com/kai-language
 domainName docs.kai-lang.org
 
-features
- hasLineComments true
-  // A comment
- hasComments true
-  // A comment
- hasMultiLineComments true
-  /* A comment
-  */
- hasSemanticIndentation false
+hasLineComments true
+ // A comment
+hasComments true
+ // A comment
+hasMultiLineComments true
+ /* A comment
+ */
+hasSemanticIndentation false
 
 lineCommentToken //
 multiLineCommentTokens /* */

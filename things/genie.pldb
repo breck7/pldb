@@ -5,12 +5,11 @@ creators Jamie McCracken
 country United States
 originCommunity GNOME Foundation
 
-features
- hasComments true
- hasSemanticIndentation true
- hasPrintDebugging true
- hasStrings true
-  "Hello world"
+hasComments true
+hasSemanticIndentation true
+hasPrintDebugging true
+hasStrings true
+ "Hello world"
 
 printToken print
 stringToken "

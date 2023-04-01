@@ -6,14 +6,13 @@ reference https://docs.intersystems.com/latest/csp/docbook/DocBook.UI.Page.cls?K
 country United States
 originCommunity InterSystems Corporation
 
-features
- hasLineComments true
-  ' A comment
- hasComments true
-  ' A comment
- hasPrintDebugging true
- hasSemanticIndentation false
- hasBooleans true
+hasLineComments true
+ ' A comment
+hasComments true
+ ' A comment
+hasPrintDebugging true
+hasSemanticIndentation false
+hasBooleans true
 
 lineCommentToken '
 printToken println

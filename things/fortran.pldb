@@ -12,67 +12,66 @@ originCommunity IBM
 
 visualParadigm false
 
-features
- hasReservedWords false
-  C Keywords are specifically NOT reserved words. http://fortranwiki.org/fortran/show/Keywords. http://rsusu1.rnd.runnet.ru/develop/fortran/prof77/node46.html
- hasComments true
-  C
-  C Lines that begin with 'C' (in the first or 'comment' column) are comments
-  C
- hasMultiLineComments false
- hasCaseInsensitiveIdentifiers true
-  x = 2.0
-  y = x + X
- hasPrintDebugging true
-  C     Hello World in Fortran
-  
-        PROGRAM HELLO
-        WRITE (*,100)
-        STOP
-    100 FORMAT (' Hello World! ' /)
-        END
- hasZeroBasedNumbering false
- hasModules true
-  module constants  
-  implicit none 
-  
-     real, parameter :: pi = 3.1415926536  
-     real, parameter :: e = 2.7182818285 
-     
-  contains      
-     subroutine show_consts()          
-        print*, "Pi = ", pi          
-        print*,  "e = ", e     
-     end subroutine show_consts 
-     
-  end module constants 
-  
-  
-  program module_example     
-  use constants      
-  implicit none     
-  
-     real :: x, ePowerx, area, radius 
-     x = 2.0
-     radius = 7.0
-     ePowerx = e ** x
-     area = pi * radius**2     
-     
-     call show_consts() 
-     
-     print*, "e raised to the power of 2.0 = ", ePowerx
-     print*, "Area of a circle with radius 7.0 = ", area  
-     
-  end program module_exampl
- hasLineComments true
-  C A comment
- hasSemanticIndentation false
- hasAssignment true
- hasStrings true
-  'Hello world'
- isCaseSensitive false
- hasFixedPoint false
- hasScientificNotation true
+hasReservedWords false
+ C Keywords are specifically NOT reserved words. http://fortranwiki.org/fortran/show/Keywords. http://rsusu1.rnd.runnet.ru/develop/fortran/prof77/node46.html
+hasComments true
+ C
+ C Lines that begin with 'C' (in the first or 'comment' column) are comments
+ C
+hasMultiLineComments false
+hasCaseInsensitiveIdentifiers true
+ x = 2.0
+ y = x + X
+hasPrintDebugging true
+ C     Hello World in Fortran
+ 
+       PROGRAM HELLO
+       WRITE (*,100)
+       STOP
+   100 FORMAT (' Hello World! ' /)
+       END
+hasZeroBasedNumbering false
+hasModules true
+ module constants  
+ implicit none 
+ 
+    real, parameter :: pi = 3.1415926536  
+    real, parameter :: e = 2.7182818285 
+    
+ contains      
+    subroutine show_consts()          
+       print*, "Pi = ", pi          
+       print*,  "e = ", e     
+    end subroutine show_consts 
+    
+ end module constants 
+ 
+ 
+ program module_example     
+ use constants      
+ implicit none     
+ 
+    real :: x, ePowerx, area, radius 
+    x = 2.0
+    radius = 7.0
+    ePowerx = e ** x
+    area = pi * radius**2     
+    
+    call show_consts() 
+    
+    print*, "e raised to the power of 2.0 = ", ePowerx
+    print*, "Area of a circle with radius 7.0 = ", area  
+    
+ end program module_exampl
+hasLineComments true
+ C A comment
+hasSemanticIndentation false
+hasAssignment true
+hasStrings true
+ 'Hello world'
+isCaseSensitive false
+hasFixedPoint false
+hasScientificNotation true
 
 lineCommentToken C
 lineCommentToken !

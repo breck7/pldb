@@ -5,13 +5,12 @@ website https://www.eclipse.org/Xtext/
 reference https://dl.acm.org/citation.cfm?id=1869625
 fileExtensions xtext
 
-features
- hasImports true
-  import "http://www.xtext.org/example/Domainmodel"
-  import "http://www.xtext.org/example/Domainmodel" as dmodel
- hasMixins true
-  grammar org.example.domainmodel.Domainmodel
-         with org.eclipse.xtext.common.Terminals
+hasImports true
+ import "http://www.xtext.org/example/Domainmodel"
+ import "http://www.xtext.org/example/Domainmodel" as dmodel
+hasMixins true
+ grammar org.example.domainmodel.Domainmodel
+        with org.eclipse.xtext.common.Terminals
 
 example
  grammar org.eclipse.xtext.common.Terminals 

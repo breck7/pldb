@@ -10,18 +10,17 @@ originCommunity Wolfram Research
 
 visualParadigm false
 
-features
- hasLineComments false
- hasPrintDebugging true
- hasMultiLineComments true
-  (* A comment
-  *)
- hasComments true
- hasSemanticIndentation false
- hasStrings true
-  "Hello world"
- hasFloats true
- hasIntegers true
+hasLineComments false
+hasPrintDebugging true
+hasMultiLineComments true
+ (* A comment
+ *)
+hasComments true
+hasSemanticIndentation false
+hasStrings true
+ "Hello world"
+hasFloats true
+hasIntegers true
 
 multiLineCommentTokens (* *)
 printToken Print

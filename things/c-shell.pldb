@@ -6,16 +6,15 @@ country United States
 originCommunity University of California, Berkeley
 domainName mx.gw.com
 
-features
- hasHereDocs true
- hasLineComments true
-  # A comment
- hasComments true
-  # A comment
- hasPrintDebugging true
- hasSemanticIndentation false
- hasStrings true
-  "Hello world"
+hasHereDocs true
+hasLineComments true
+ # A comment
+hasComments true
+ # A comment
+hasPrintDebugging true
+hasSemanticIndentation false
+hasStrings true
+ "Hello world"
 
 lineCommentToken #
 printToken echo

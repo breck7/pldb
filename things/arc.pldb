@@ -9,36 +9,35 @@ country United States
 
 related bel
 
-features
- isLisp true
- hasPrintDebugging true
- hasMacros true
-  ; http://www.arclanguage.org/tut.txt
-  ; We know enough now to start writing macros.  Macros are basically
-  ; functions that generate code.  Of course, generating code is easy;
-  ; just call list.
-  ; 
-  ; arc> (list '+ 1 2)
-  ; (+ 1 2)
-  ; 
-  ; What macros offer is a way of getting code generated this way into
-  ; your programs.  Here's a (rather stupid) macro definition:
-  ; 
-  ; arc> (mac foo () 
-  ;        (list '+ 1 2))
-  ; *** redefining foo
-  ; #3(tagged mac #<procedure>)
-  ; 
-  ; Notice that a macro definition looks exactly like a function
-  ; definition, but with def replaced by mac.  
-  ; 
-  ; What this macro says is that whenever the expression (foo) occurs
-  ; in your code, it shouldn't be evaluated in the normal way like a
-  ; function call.  Instead it should be replaced by the result of
-  ; evaluating the body of the macro definition, (list '+ 1 2).
-  ; This is called the "expansion" of the macro call.
- hasStrings true
-  "Hello world"
+isLisp true
+hasPrintDebugging true
+hasMacros true
+ ; http://www.arclanguage.org/tut.txt
+ ; We know enough now to start writing macros.  Macros are basically
+ ; functions that generate code.  Of course, generating code is easy;
+ ; just call list.
+ ; 
+ ; arc> (list '+ 1 2)
+ ; (+ 1 2)
+ ; 
+ ; What macros offer is a way of getting code generated this way into
+ ; your programs.  Here's a (rather stupid) macro definition:
+ ; 
+ ; arc> (mac foo () 
+ ;        (list '+ 1 2))
+ ; *** redefining foo
+ ; #3(tagged mac #<procedure>)
+ ; 
+ ; Notice that a macro definition looks exactly like a function
+ ; definition, but with def replaced by mac.  
+ ; 
+ ; What this macro says is that whenever the expression (foo) occurs
+ ; in your code, it shouldn't be evaluated in the normal way like a
+ ; function call.  Instead it should be replaced by the result of
+ ; evaluating the body of the macro definition, (list '+ 1 2).
+ ; This is called the "expansion" of the macro call.
+hasStrings true
+ "Hello world"
 
 printToken prn
 stringToken "

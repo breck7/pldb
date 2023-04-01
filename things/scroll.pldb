@@ -12,13 +12,12 @@ domainName scroll.pub
 subsetOf treenotation
 related markdown treenotation grammar
 
-features
- hasImports true
-  import settings.scroll
- hasTernaryOperators false
- hasSemanticIndentation true
-  * A link to PLDB
-   https://pldb.com
+hasImports true
+ import settings.scroll
+hasTernaryOperators false
+hasSemanticIndentation true
+ * A link to PLDB
+  https://pldb.com
 
 example
  title This is Scroll. The keyword for title is title.

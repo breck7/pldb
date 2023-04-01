@@ -7,16 +7,15 @@ aka edn
 country Unknown
 originCommunity https://github.com/edn-format
 
-features
- hasBooleans true
- hasComments true
- hasFloats true
- hasIntegers true
- hasStrings true
- hasLists true
- hasMaps true
- hasSets true
- hasSemanticIndentation false
+hasBooleans true
+hasComments true
+hasFloats true
+hasIntegers true
+hasStrings true
+hasLists true
+hasMaps true
+hasSets true
+hasSemanticIndentation false
 
 example
  {:a 1, "foo" :bar, [1 2 3] four}

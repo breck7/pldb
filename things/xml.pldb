@@ -6,18 +6,17 @@ emailList http://www.cafeconleche.org/mailinglists.html
 spec https://www.w3.org/TR/xml/
 standsFor Extensible Markup Language
 
-features
- canWriteToDisk false
- hasConditionals false
- hasLineComments false
- hasMacros false
- hasTernaryOperators false
- hasMultiLineComments true
-  <!-- A comment
-  -->
- hasComments true
- hasSemanticIndentation false
- hasCaseInsensitiveIdentifiers false
+canWriteToDisk false
+hasConditionals false
+hasLineComments false
+hasMacros false
+hasTernaryOperators false
+hasMultiLineComments true
+ <!-- A comment
+ -->
+hasComments true
+hasSemanticIndentation false
+hasCaseInsensitiveIdentifiers false
 
 multiLineCommentTokens <!-- -->
 

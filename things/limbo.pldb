@@ -7,9 +7,8 @@ documentation http://resibots.eu/limbo/
 country United States
 originCommunity https://groups.google.com/g/inferno-os
 
-features
- hasPrintDebugging true
- hasSemanticIndentation false
+hasPrintDebugging true
+hasSemanticIndentation false
 
 printToken sys->print
 

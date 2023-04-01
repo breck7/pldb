@@ -4,12 +4,11 @@ type pl
 country United States
 originCommunity https://qb64.boards.net
 
-features
- hasLineComments true
-  ' A comment
- hasComments true
-  ' A comment
- hasSemanticIndentation false
+hasLineComments true
+ ' A comment
+hasComments true
+ ' A comment
+hasSemanticIndentation false
 
 lineCommentToken '
 

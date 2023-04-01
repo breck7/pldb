@@ -5,12 +5,11 @@ standsFor desk calculator
 country United States
 originCommunity AT&T Bell Laboratories
 
-features
- hasLineComments true
-  # A comment
- hasComments true
-  # A comment
- hasSemanticIndentation false
+hasLineComments true
+ # A comment
+hasComments true
+ # A comment
+hasSemanticIndentation false
 
 lineCommentToken #
 

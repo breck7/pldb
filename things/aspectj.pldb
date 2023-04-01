@@ -6,28 +6,27 @@ fileExtensions aj
 country Canada
 originCommunity Eclipse Foundation
 
-features
- hasLineComments true
-  // A comment
- hasComments true
-  // A comment
- hasPrintDebugging true
- hasMultiLineComments true
-  /* A comment
-  */
- hasSemanticIndentation false
- hasStrings true
-  "Hello world"
- hasOctals true
-  // 0[0-7_]+[lL]?
- hasHexadecimals true
-  // 0[xX][0-9a-fA-F][0-9a-fA-F_]*[lL]?
- hasFloats true
-  // ([0-9][0-9_]*\.([0-9][0-9_]*)?|\.[0-9][0-9_]*)([eE][+\-]?[0-9][0-9_]*)?[fFdD]?|[0-9][eE][+\-]?[0-9][0-9_]*[fFdD]?|[0-9]([eE][+\-]?[0-9][0-9_]*)?[fFdD]|0[xX]([0-9a-fA-F][0-9a-fA-F_]*\.?|([0-9a-fA-F][0-9a-fA-F_]*)?\.[0-9a-fA-F][0-9a-fA-F_]*)[pP][+\-]?[0-9][0-9_]*[fFdD]?
- hasIntegers true
-  // 0|[1-9][0-9_]*[lL]?
- hasBinaryNumbers true
-  // 0[bB][01][01_]*[lL]?
+hasLineComments true
+ // A comment
+hasComments true
+ // A comment
+hasPrintDebugging true
+hasMultiLineComments true
+ /* A comment
+ */
+hasSemanticIndentation false
+hasStrings true
+ "Hello world"
+hasOctals true
+ // 0[0-7_]+[lL]?
+hasHexadecimals true
+ // 0[xX][0-9a-fA-F][0-9a-fA-F_]*[lL]?
+hasFloats true
+ // ([0-9][0-9_]*\.([0-9][0-9_]*)?|\.[0-9][0-9_]*)([eE][+\-]?[0-9][0-9_]*)?[fFdD]?|[0-9][eE][+\-]?[0-9][0-9_]*[fFdD]?|[0-9]([eE][+\-]?[0-9][0-9_]*)?[fFdD]|0[xX]([0-9a-fA-F][0-9a-fA-F_]*\.?|([0-9a-fA-F][0-9a-fA-F_]*)?\.[0-9a-fA-F][0-9a-fA-F_]*)[pP][+\-]?[0-9][0-9_]*[fFdD]?
+hasIntegers true
+ // 0|[1-9][0-9_]*[lL]?
+hasBinaryNumbers true
+ // 0[bB][01][01_]*[lL]?
 
 lineCommentToken //
 multiLineCommentTokens /* */

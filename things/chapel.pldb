@@ -17,32 +17,31 @@ releaseNotesUrl https://chapel-lang.org/releaseNotes.html
 
 writtenIn chapel
 
-features
- hasComments true
- hasLineComments true
-  // A comment
- hasPrintDebugging true
- hasMultiLineComments true
-  /* A comment
-  */
- hasSemanticIndentation false
- hasCaseInsensitiveIdentifiers false
- hasStrings true
-  "Hello world"
- hasWhileLoops true
- hasClasses true
- hasConstants true
- hasConditionals true
- hasOctals true
-  // 0[oO][0-7]+
- hasHexadecimals true
-  // 0[xX][0-9a-fA-F]+
- hasFloats true
-  // (\d*\.\d+)([eE][+-]?[0-9]+)?i?
- hasIntegers true
-  // [0-9]+
- hasBinaryNumbers true
-  // 0[bB][01]+
+hasComments true
+hasLineComments true
+ // A comment
+hasPrintDebugging true
+hasMultiLineComments true
+ /* A comment
+ */
+hasSemanticIndentation false
+hasCaseInsensitiveIdentifiers false
+hasStrings true
+ "Hello world"
+hasWhileLoops true
+hasClasses true
+hasConstants true
+hasConditionals true
+hasOctals true
+ // 0[oO][0-7]+
+hasHexadecimals true
+ // 0[xX][0-9a-fA-F]+
+hasFloats true
+ // (\d*\.\d+)([eE][+-]?[0-9]+)?i?
+hasIntegers true
+ // [0-9]+
+hasBinaryNumbers true
+ // 0[bB][01]+
 
 lineCommentToken //
 multiLineCommentTokens /* */

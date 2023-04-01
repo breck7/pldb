@@ -11,21 +11,20 @@ domainName modelica.org
  awisRank
   2022 716353
 
-features
- hasLineComments true
-  // A comment
- hasUnitsOfMeasure true
-  type SpecificHeatCapacity = Real (
-    final quantity="SpecificHeatCapacity",
-    final unit="J/(kg.K)"
-  );
- hasComments true
-  // A comment
- hasSemanticIndentation false
- hasFloats true
-  // \d+(\.?\d*[eE][-+]?\d+|\.\d*)
- hasIntegers true
-  // \d+
+hasLineComments true
+ // A comment
+hasUnitsOfMeasure true
+ type SpecificHeatCapacity = Real (
+   final quantity="SpecificHeatCapacity",
+   final unit="J/(kg.K)"
+ );
+hasComments true
+ // A comment
+hasSemanticIndentation false
+hasFloats true
+ // \d+(\.?\d*[eE][-+]?\d+|\.\d*)
+hasIntegers true
+ // \d+
 
 lineCommentToken //
 

@@ -12,16 +12,15 @@ domainName processing.org
   2022 48450
   2017 17405
 
-features
- hasComments true
- hasLineComments true
-  // A comment
- hasMultiLineComments true
-  /* A comment
-  */
- hasSemanticIndentation false
- hasStrings true
-  "Hello world"
+hasComments true
+hasLineComments true
+ // A comment
+hasMultiLineComments true
+ /* A comment
+ */
+hasSemanticIndentation false
+hasStrings true
+ "Hello world"
 
 lineCommentToken //
 multiLineCommentTokens /* */

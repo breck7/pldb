@@ -5,19 +5,18 @@ documentation https://wiki.scilab.org/Documentation
 country Various
 originCommunity https://gitlab.com/groups/scilab/-/issues
 
-features
- hasComments true
- hasLineComments true
-  // A comment
- hasPrintDebugging true
- hasSemanticIndentation false
- hasStrings true
-  "Hello world"
- hasFloats true
-  // (\d+\.\d*|\d*\.\d+)([eEf][+-]?[0-9]+)?
- hasIntegers true
-  // \d+
- hasScientificNotation true
+hasComments true
+hasLineComments true
+ // A comment
+hasPrintDebugging true
+hasSemanticIndentation false
+hasStrings true
+ "Hello world"
+hasFloats true
+ // (\d+\.\d*|\d*\.\d+)([eEf][+-]?[0-9]+)?
+hasIntegers true
+ // \d+
+hasScientificNotation true
 
 lineCommentToken //
 printToken disp

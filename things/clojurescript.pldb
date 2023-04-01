@@ -16,13 +16,12 @@ announcementMethod blogPost
 
 compilesTo javascript
 
-features
- hasPrintDebugging true
- hasHexadecimals true
- hasFloats true
- hasIntegers true
- hasLineComments true
- hasComments true
+hasPrintDebugging true
+hasHexadecimals true
+hasFloats true
+hasIntegers true
+hasLineComments true
+hasComments true
 
 printToken println
 

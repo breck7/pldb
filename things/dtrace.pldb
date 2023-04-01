@@ -10,17 +10,16 @@ domainName dtrace.org
  awisRank
   2022 6607140
 
-features
- hasPrintDebugging true
- hasMultiLineComments true
-  /* A comment
-  */
- hasComments true
-  /* A comment
-  */
- hasSemanticIndentation false
- hasStrings true
-  "Hello world"
+hasPrintDebugging true
+hasMultiLineComments true
+ /* A comment
+ */
+hasComments true
+ /* A comment
+ */
+hasSemanticIndentation false
+hasStrings true
+ "Hello world"
 
 multiLineCommentTokens /* */
 printToken printf

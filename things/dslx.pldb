@@ -6,12 +6,11 @@ reference https://google.github.io/xls/dslx_reference/
 country United States
 originCommunity Google
 
-features
- hasLineComments true
-  // A comment
- hasComments true
-  // A comment
- hasSemanticIndentation false
+hasLineComments true
+ // A comment
+hasComments true
+ // A comment
+hasSemanticIndentation false
 
 lineCommentToken //
 

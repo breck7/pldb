@@ -5,12 +5,11 @@ reference https://www.wikidata.org/wiki/Q11765028
 country Russia
 originCommunity MetaQuotes Software
 
-features
- hasLineComments true
-  // A comment
- hasComments true
-  // A comment
- hasSemanticIndentation false
+hasLineComments true
+ // A comment
+hasComments true
+ // A comment
+hasSemanticIndentation false
 
 lineCommentToken //
 

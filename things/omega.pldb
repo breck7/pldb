@@ -8,15 +8,14 @@ reference https://code.google.com/archive/p/omega
 country United States
 originCommunity Portland State University
 
-features
- hasLineComments true
-  -- A comment
- hasComments true
-  -- A comment
- hasMultiLineComments true
-  {- A comment
-  -}
- hasSemanticIndentation false
+hasLineComments true
+ -- A comment
+hasComments true
+ -- A comment
+hasMultiLineComments true
+ {- A comment
+ -}
+hasSemanticIndentation false
 
 lineCommentToken --
 multiLineCommentTokens {- -}

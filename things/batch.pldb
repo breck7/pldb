@@ -6,19 +6,18 @@ aka cmd
 country United States
 originCommunity Microsoft
 
-features
- hasCaseInsensitiveIdentifiers true
- hasPrintDebugging true
- hasStrings true
- hasLineComments true
-  REM A comment
- hasComments true
-  REM A comment
-  :: Another type of comment
- hasGotos true
-  :: this would create an endless loop
-  :myLabel
-  goto myLabel
+hasCaseInsensitiveIdentifiers true
+hasPrintDebugging true
+hasStrings true
+hasLineComments true
+ REM A comment
+hasComments true
+ REM A comment
+ :: Another type of comment
+hasGotos true
+ :: this would create an endless loop
+ :myLabel
+ goto myLabel
 
 lineCommentToken REM
 printToken echo

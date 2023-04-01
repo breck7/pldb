@@ -5,11 +5,10 @@ website https://www.spicelang.com
 domainName spicelang.com
  registered 2021
 
-features
- hasIntegers true
- hasLineComments true
- hasMultiLineComments true
- hasComments true
+hasIntegers true
+hasLineComments true
+hasMultiLineComments true
+hasComments true
 
 pygmentsHighlighter Spice
  filename spice.py

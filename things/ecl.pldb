@@ -9,14 +9,13 @@ domainName hpccsystems.com
  awisRank
   2022 1525012
 
-features
- hasComments true
- hasLineComments true
-  // A comment
- hasMultiLineComments true
-  /* A comment
-  */
- hasSemanticIndentation false
+hasComments true
+hasLineComments true
+ // A comment
+hasMultiLineComments true
+ /* A comment
+ */
+hasSemanticIndentation false
 
 lineCommentToken //
 multiLineCommentTokens /* */

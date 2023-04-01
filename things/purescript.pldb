@@ -8,26 +8,25 @@ releaseNotesUrl https://github.com/purescript/purescript/releases
 
 compilesTo javascript
 
-features
- hasComments true
- hasDocComments true
-  -- https://github.com/purescript/documentation/blob/master/language/Syntax.md
-  -- | `bool` performs case analysis for the `Boolean` data type, like an `if` statement.
-  bool :: forall a. Boolean -> a -> a -> a
-  bool true x _ = x
-  bool false _ x = x
- hasSemanticIndentation true
-  -- https://github.com/purescript/documentation/blob/master/language/Syntax.md
-  -- Syntax is whitespace sensitive. The general rule of thumb is that declarations which span multiple lines should be indented past the column on which they were first defined on their subsequent lines.
-  foo = bar +
-   baz
- hasLineComments true
-  -- A comment
- hasMultiLineComments true
-  {- A comment
-  -}
- hasStrings true
-  "Hello world"
+hasComments true
+hasDocComments true
+ -- https://github.com/purescript/documentation/blob/master/language/Syntax.md
+ -- | `bool` performs case analysis for the `Boolean` data type, like an `if` statement.
+ bool :: forall a. Boolean -> a -> a -> a
+ bool true x _ = x
+ bool false _ x = x
+hasSemanticIndentation true
+ -- https://github.com/purescript/documentation/blob/master/language/Syntax.md
+ -- Syntax is whitespace sensitive. The general rule of thumb is that declarations which span multiple lines should be indented past the column on which they were first defined on their subsequent lines.
+ foo = bar +
+  baz
+hasLineComments true
+ -- A comment
+hasMultiLineComments true
+ {- A comment
+ -}
+hasStrings true
+ "Hello world"
 
 lineCommentToken --
 multiLineCommentTokens {- -}

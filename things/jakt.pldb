@@ -7,10 +7,9 @@ originCommunity https://github.com/SerenityOS/
 
 compilesTo cpp
 
-features
- hasPrintDebugging true
- hasStrings true
-  "Hello world"
+hasPrintDebugging true
+hasStrings true
+ "Hello world"
 
 printToken println
 stringToken "

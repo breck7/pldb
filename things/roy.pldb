@@ -7,10 +7,9 @@ country Australia
 originCommunity https://github.com/puffnfresh/roy/issues
 domainName roy.brianmckenna.org
 
-features
- hasPrintDebugging true
- hasStrings true
-  "Hello world"
+hasPrintDebugging true
+hasStrings true
+ "Hello world"
 
 printToken console.log
 stringToken "

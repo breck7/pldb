@@ -6,14 +6,13 @@ country United States
 originCommunity Sun Labs
 domainName projectfortress.java.net
 
-features
- hasMultiLineComments true
-  (* A comment
-  *)
- hasComments true
-  (* A comment
-  *)
- hasSemanticIndentation false
+hasMultiLineComments true
+ (* A comment
+ *)
+hasComments true
+ (* A comment
+ *)
+hasSemanticIndentation false
 
 multiLineCommentTokens (* *)
 

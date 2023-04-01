@@ -10,14 +10,13 @@ domainName harbour.github.io
   2022 11714457
   2017 1772199
 
-features
- hasLineComments true
-  // A comment
- hasComments true
-  // A comment
- hasSemanticIndentation false
- hasStrings true
-  "Hello world"
+hasLineComments true
+ // A comment
+hasComments true
+ // A comment
+hasSemanticIndentation false
+hasStrings true
+ "Hello world"
 
 lineCommentToken //
 stringToken "

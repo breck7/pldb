@@ -12,114 +12,113 @@ releaseNotesUrl https://www.oracle.com/java/technologies/javase/jdk-relnotes-ind
 
 visualParadigm false
 
-features
- hasVariableSubstitutionSyntax false
- hasAssertStatements true
-  // By default, assertions are disabled
-  // java –enableassertions Test
-  int score = 10;
-  assert score >= 10 : " Below";
-  System.out.println("score is "+score);
- hasGenerics true
-  List<String> v = new ArrayList<String>();
-  v.add("test");
-  Integer i = v.get(0); // (type error)  compilation-time error
- hasSingleDispatch true
- hasPointers false
- hasStrings true
-  "hello world"
- hasComments true
- hasConstructors true
- hasGarbageCollection true
- hasImports true
-  import javax.swing.*;
-  import javax.swing.JOptionPane;
-  // use fully qualified name without import:
-  javax.swing.JOptionPane.showMessageDialog(null, "Hi");
-  // There are 166 packages containing 3279 classes and interfaces in Java 5.
-  // import java.io.*; Input-output classes.
- hasInterfaces true
-  interface MyInterface{  
-     /* This is a default method so we need not
-      * to implement this method in the implementation 
-      * classes  
-      */
-     default void newMethod(){  
-         System.out.println("Newly added default method");  
+hasVariableSubstitutionSyntax false
+hasAssertStatements true
+ // By default, assertions are disabled
+ // java –enableassertions Test
+ int score = 10;
+ assert score >= 10 : " Below";
+ System.out.println("score is "+score);
+hasGenerics true
+ List<String> v = new ArrayList<String>();
+ v.add("test");
+ Integer i = v.get(0); // (type error)  compilation-time error
+hasSingleDispatch true
+hasPointers false
+hasStrings true
+ "hello world"
+hasComments true
+hasConstructors true
+hasGarbageCollection true
+hasImports true
+ import javax.swing.*;
+ import javax.swing.JOptionPane;
+ // use fully qualified name without import:
+ javax.swing.JOptionPane.showMessageDialog(null, "Hi");
+ // There are 166 packages containing 3279 classes and interfaces in Java 5.
+ // import java.io.*; Input-output classes.
+hasInterfaces true
+ interface MyInterface{  
+    /* This is a default method so we need not
+     * to implement this method in the implementation 
+     * classes  
+     */
+    default void newMethod(){  
+        System.out.println("Newly added default method");  
+    }  
+    /* Already existing public and abstract method
+     * We must need to implement this method in 
+     * implementation classes.
+     */
+    void existingMethod(String str);  
+ }  
+ public class Example implements MyInterface{ 
+   // implementing abstract method
+     public void existingMethod(String str){           
+         System.out.println("String is: "+str);  
      }  
-     /* Already existing public and abstract method
-      * We must need to implement this method in 
-      * implementation classes.
-      */
-     void existingMethod(String str);  
-  }  
-  public class Example implements MyInterface{ 
-    // implementing abstract method
-      public void existingMethod(String str){           
-          System.out.println("String is: "+str);  
-      }  
-      public static void main(String[] args) {  
-        Example obj = new Example();
-        
-        //calling the default method of interface
-          obj.newMethod();     
-          //calling the abstract method of interface
-          obj.existingMethod("Java 8 is easy to learn"); 
-    
-      }  
-  }
- hasIterators true
-  Iterator iter = list.iterator();
-  //Iterator<MyType> iter = list.iterator();    in J2SE 5.0
-  while (iter.hasNext()) {
-      System.out.print(iter.next());
-      if (iter.hasNext())
-          System.out.print(", ");
-  }
- hasMacros false
- hasOperatorOverloading false
- hasZeroBasedNumbering true
- hasModules true
-  // Package = directory. Java classes can be grouped together in packages. A package name is the same as the directory (folder) name which contains the .java files. You declare packages when you define your Java program, and you name the packages you want to use from other libraries in an import statement.
-  // The first statement, other than comments, in a Java source file, must be the package declaration.
-  // Following the optional package declaration, you can have import statements, which allow you to specify classes from other packages that can be referenced without qualifying them with their package.
-  // This source file must be Drawing.java in the illustration directory.
-  package illustration;
-  import java.awt.*;
-  public class Drawing {
-   // ...
-  }
- hasIncrementAndDecrementOperators true
- hasLineComments true
-  // A comment
- hasThreads true
- hasPrintDebugging true
- hasMultiLineComments true
-  /* A comment
-  */
- hasSemanticIndentation false
- hasCaseInsensitiveIdentifiers false
- isCaseSensitive true
- hasBooleans true
- hasWhileLoops true
- hasClasses true
- hasConstants true
- hasExceptions true
- hasSwitch true
- hasAccessModifiers true
- hasInheritance true
- hasConditionals true
- hasOctals true
-  // 0[0-7_]+[lL]?
- hasHexadecimals true
-  // 0[xX][0-9a-fA-F][0-9a-fA-F_]*[lL]?
- hasFloats true
-  // ([0-9][0-9_]*\.([0-9][0-9_]*)?|\.[0-9][0-9_]*)([eE][+\-]?[0-9][0-9_]*)?[fFdD]?|[0-9][eE][+\-]?[0-9][0-9_]*[fFdD]?|[0-9]([eE][+\-]?[0-9][0-9_]*)?[fFdD]|0[xX]([0-9a-fA-F][0-9a-fA-F_]*\.?|([0-9a-fA-F][0-9a-fA-F_]*)?\.[0-9a-fA-F][0-9a-fA-F_]*)[pP][+\-]?[0-9][0-9_]*[fFdD]?
- hasIntegers true
-  // 0|[1-9][0-9_]*[lL]?
- hasBinaryNumbers true
-  // 0[bB][01][01_]*[lL]?
- hasScientificNotation true
+     public static void main(String[] args) {  
+       Example obj = new Example();
+       
+       //calling the default method of interface
+         obj.newMethod();     
+         //calling the abstract method of interface
+         obj.existingMethod("Java 8 is easy to learn"); 
+   
+     }  
+ }
+hasIterators true
+ Iterator iter = list.iterator();
+ //Iterator<MyType> iter = list.iterator();    in J2SE 5.0
+ while (iter.hasNext()) {
+     System.out.print(iter.next());
+     if (iter.hasNext())
+         System.out.print(", ");
+ }
+hasMacros false
+hasOperatorOverloading false
+hasZeroBasedNumbering true
+hasModules true
+ // Package = directory. Java classes can be grouped together in packages. A package name is the same as the directory (folder) name which contains the .java files. You declare packages when you define your Java program, and you name the packages you want to use from other libraries in an import statement.
+ // The first statement, other than comments, in a Java source file, must be the package declaration.
+ // Following the optional package declaration, you can have import statements, which allow you to specify classes from other packages that can be referenced without qualifying them with their package.
+ // This source file must be Drawing.java in the illustration directory.
+ package illustration;
+ import java.awt.*;
+ public class Drawing {
+  // ...
+ }
+hasIncrementAndDecrementOperators true
+hasLineComments true
+ // A comment
+hasThreads true
+hasPrintDebugging true
+hasMultiLineComments true
+ /* A comment
+ */
+hasSemanticIndentation false
+hasCaseInsensitiveIdentifiers false
+isCaseSensitive true
+hasBooleans true
+hasWhileLoops true
+hasClasses true
+hasConstants true
+hasExceptions true
+hasSwitch true
+hasAccessModifiers true
+hasInheritance true
+hasConditionals true
+hasOctals true
+ // 0[0-7_]+[lL]?
+hasHexadecimals true
+ // 0[xX][0-9a-fA-F][0-9a-fA-F_]*[lL]?
+hasFloats true
+ // ([0-9][0-9_]*\.([0-9][0-9_]*)?|\.[0-9][0-9_]*)([eE][+\-]?[0-9][0-9_]*)?[fFdD]?|[0-9][eE][+\-]?[0-9][0-9_]*[fFdD]?|[0-9]([eE][+\-]?[0-9][0-9_]*)?[fFdD]|0[xX]([0-9a-fA-F][0-9a-fA-F_]*\.?|([0-9a-fA-F][0-9a-fA-F_]*)?\.[0-9a-fA-F][0-9a-fA-F_]*)[pP][+\-]?[0-9][0-9_]*[fFdD]?
+hasIntegers true
+ // 0|[1-9][0-9_]*[lL]?
+hasBinaryNumbers true
+ // 0[bB][01][01_]*[lL]?
+hasScientificNotation true
 
 lineCommentToken //
 multiLineCommentTokens /* */

@@ -6,12 +6,11 @@ website http://strlen.com/bla-language/
 country Netherlands
 originCommunity University of Amsterdam
 
-features
- hasLineComments true
-  -- A comment
- hasComments true
-  -- A comment
- hasSemanticIndentation false
+hasLineComments true
+ -- A comment
+hasComments true
+ -- A comment
+hasSemanticIndentation false
 
 lineCommentToken --
 

@@ -11,16 +11,15 @@ originCommunity Ada Core Technologies
 domainName parasail-lang.org
  registered 2012
 
-features
- hasPrintDebugging true
- hasStrings true
-  "Hello world"
- hasHexadecimals true
- hasFloats true
- hasIntegers true
- hasBinaryNumbers true
- hasLineComments true
- hasComments true
+hasPrintDebugging true
+hasStrings true
+ "Hello world"
+hasHexadecimals true
+hasFloats true
+hasIntegers true
+hasBinaryNumbers true
+hasLineComments true
+hasComments true
 
 printToken IO.Println
 stringToken "

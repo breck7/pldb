@@ -5,12 +5,11 @@ description STELLA is a strongly typed, object-oriented, Lisp-like language, des
 website https://www.isi.edu/isd/LOOM/Stella/index.html
 fileExtensions ste
 
-features
- hasLineComments true
-  ; A comment
- hasComments true
-  ; A comment
- hasSemanticIndentation false
+hasLineComments true
+ ; A comment
+hasComments true
+ ; A comment
+hasSemanticIndentation false
 
 lineCommentToken ;
 

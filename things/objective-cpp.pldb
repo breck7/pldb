@@ -7,15 +7,14 @@ aka objectivecpp
 country United States
 originCommunity Apple
 
-features
- hasLineComments true
-  // A comment
- hasComments true
-  // A comment
- hasMultiLineComments true
-  /* A comment
-  */
- hasSemanticIndentation false
+hasLineComments true
+ // A comment
+hasComments true
+ // A comment
+hasMultiLineComments true
+ /* A comment
+ */
+hasSemanticIndentation false
 
 lineCommentToken //
 multiLineCommentTokens /* */

@@ -6,16 +6,15 @@ documentation http://www.frege-lang.org/doc/fregedoc.html
 country Switzerland and Germany and United States
 originCommunity https://github.com/Frege
 
-features
- hasTypeInference true
- hasLineComments true
-  -- A comment
- hasComments true
-  -- A comment
- hasMultiLineComments true
-  {- A comment
-  -}
- hasSemanticIndentation false
+hasTypeInference true
+hasLineComments true
+ -- A comment
+hasComments true
+ -- A comment
+hasMultiLineComments true
+ {- A comment
+ -}
+hasSemanticIndentation false
 
 lineCommentToken --
 multiLineCommentTokens {- -}

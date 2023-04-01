@@ -11,11 +11,10 @@ domainName newlisp.org
  awisRank
   2022 5805944
 
-features
- hasComments true
- hasPrintDebugging true
- hasSemanticIndentation false
- hasLineComments true
+hasComments true
+hasPrintDebugging true
+hasSemanticIndentation false
+hasLineComments true
 
 printToken print
 

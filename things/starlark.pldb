@@ -4,15 +4,14 @@ type pl
 creators Laurent Le Brun
 description The language used in Bazel. Starlark is designed to be small, simple, and thread-safe. Although it is inspired from Python, it is not a general-purpose language and most Python features are not included. Starlark is syntactically a subset of Python 3
 
-features
- hasLineComments true
-  # A comment
- hasComments true
-  # A comment
- hasPrintDebugging true
- hasSemanticIndentation false
- hasStrings true
-  "Hello world"
+hasLineComments true
+ # A comment
+hasComments true
+ # A comment
+hasPrintDebugging true
+hasSemanticIndentation false
+hasStrings true
+ "Hello world"
 
 lineCommentToken #
 printToken print

@@ -11,19 +11,18 @@ domainName projectoberon.com
  awisRank
   2022 6362528
 
-features
- hasPrintDebugging true
- hasPointers true
- hasMultiLineComments true
-  (* A comment
-  *)
- hasComments true
-  (* A comment
-  *)
- hasSemanticIndentation false
- hasAssignment true
- hasStrings true
-  'Hello world'
+hasPrintDebugging true
+hasPointers true
+hasMultiLineComments true
+ (* A comment
+ *)
+hasComments true
+ (* A comment
+ *)
+hasSemanticIndentation false
+hasAssignment true
+hasStrings true
+ 'Hello world'
 
 multiLineCommentTokens (* *)
 printToken Out.String

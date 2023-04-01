@@ -5,14 +5,13 @@ description RenderScript is a component of the Android operating system for mobi
 website http://developer.android.com/guide/topics/renderscript/index.html
 reference https://developer.android.com/guide/topics/renderscript/advanced
 
-features
- hasMultiLineComments true
-  /* A comment
-  */
- hasComments true
-  /* A comment
-  */
- hasSemanticIndentation false
+hasMultiLineComments true
+ /* A comment
+ */
+hasComments true
+ /* A comment
+ */
+hasSemanticIndentation false
 
 multiLineCommentTokens /* */
 

@@ -15,27 +15,26 @@ domainName x10-lang.org
 
 runsOnVm jvm
 
-features
- hasPrintDebugging true
- hasMultiLineComments true
-  /* A comment
-  */
- hasComments true
-  /* A comment
-  */
- hasSemanticIndentation false
- hasStrings true
-  "Hello world"
- hasImports true
-  import x10.io.Console;
- hasWhileLoops true
- hasClasses true
- hasExceptions true
- hasFunctions true
- hasSwitch true
- hasAsyncAwait true
- hasConditionals true
- hasLineComments true
+hasPrintDebugging true
+hasMultiLineComments true
+ /* A comment
+ */
+hasComments true
+ /* A comment
+ */
+hasSemanticIndentation false
+hasStrings true
+ "Hello world"
+hasImports true
+ import x10.io.Console;
+hasWhileLoops true
+hasClasses true
+hasExceptions true
+hasFunctions true
+hasSwitch true
+hasAsyncAwait true
+hasConditionals true
+hasLineComments true
 
 multiLineCommentTokens /* */
 printToken Console.OUT.println

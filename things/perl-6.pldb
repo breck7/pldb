@@ -10,14 +10,13 @@ domainName perl6.org
 
 visualParadigm false
 
-features
- hasMultipleInheritance true
- hasOperatorOverloading true
- hasLineComments true
-  # A comment
- hasComments true
-  # A comment
- hasSemanticIndentation false
+hasMultipleInheritance true
+hasOperatorOverloading true
+hasLineComments true
+ # A comment
+hasComments true
+ # A comment
+hasSemanticIndentation false
 
 lineCommentToken #
 

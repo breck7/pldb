@@ -3,10 +3,9 @@ appeared 2003
 type pl
 creators Jürg Gutknecht
 
-features
- hasPrintDebugging true
- hasStrings true
-  "Hello world"
+hasPrintDebugging true
+hasStrings true
+ "Hello world"
 
 printToken writeln
 stringToken "

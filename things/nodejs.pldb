@@ -15,17 +15,16 @@ releaseNotesUrl https://nodejs.org/en/download/releases/
 
 writtenIn c cpp javascript
 
-features
- canWriteToDisk true
-  require("fs").writeFileSync("foo.txt", "foo", "utf8")
- hasImports true
-  const jtree = require("jtree")
- hasStreams true
-  const stream = require('stream');
- hasPrintDebugging true
- hasCaseInsensitiveIdentifiers false
- hasStrings true
-  "Hello world"
+canWriteToDisk true
+ require("fs").writeFileSync("foo.txt", "foo", "utf8")
+hasImports true
+ const jtree = require("jtree")
+hasStreams true
+ const stream = require('stream');
+hasPrintDebugging true
+hasCaseInsensitiveIdentifiers false
+hasStrings true
+ "Hello world"
 
 printToken console.log
 stringToken "

@@ -10,12 +10,11 @@ originCommunity University of Maryland
 
 related datomic
 
-features
- hasLineComments true
-  % A comment
- hasComments true
-  % A comment
- hasSemanticIndentation false
+hasLineComments true
+ % A comment
+hasComments true
+ % A comment
+hasSemanticIndentation false
 
 lineCommentToken %
 

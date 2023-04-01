@@ -8,10 +8,9 @@ originCommunity https://github.com/rzimmerman/kal/issues
 
 compilesTo javascript
 
-features
- hasHexadecimals true
- hasFloats true
- hasIntegers true
+hasHexadecimals true
+hasFloats true
+hasIntegers true
 
 example
  task getUserFriends (userName)

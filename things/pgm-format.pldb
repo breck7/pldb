@@ -6,12 +6,11 @@ reference https://en.wikipedia.org/wiki/Netpbm_format
 country Unknown
 originCommunity https://netpbm.sourceforge.net/history.html
 
-features
- hasLineComments true
-  # A comment
- hasComments true
-  # A comment
- hasSemanticIndentation false
+hasLineComments true
+ # A comment
+hasComments true
+ # A comment
+hasSemanticIndentation false
 
 lineCommentToken #
 

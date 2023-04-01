@@ -8,17 +8,16 @@ documentation https://www.gnu.org/software/make/manual/make.html
 country United States
 originCommunity Bell Labs
 
-features
- hasVariableSubstitutionSyntax true
-  objects = program.o foo.o utils.o
-  $(objects)
- hasAssignment true
-  objects = program.o foo.o utils.o
- hasSemanticIndentation true
- hasLineComments true
-  # A comment
- hasComments true
-  # A comment
+hasVariableSubstitutionSyntax true
+ objects = program.o foo.o utils.o
+ $(objects)
+hasAssignment true
+ objects = program.o foo.o utils.o
+hasSemanticIndentation true
+hasLineComments true
+ # A comment
+hasComments true
+ # A comment
 
 lineCommentToken #
 
