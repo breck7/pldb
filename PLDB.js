@@ -2366,6 +2366,18 @@ class PLDBServer extends TrueBaseServer {
     }
   }
 
+  flattenFeaturesCommand() {
+    this.folder.forEach(file => {
+      const features = file.getNode("features")
+      if (!features) return
+      features.forEach(node =>
+        file.appendLineAndChildren(node.getLine(), node.childrenToString())
+      )
+      file.delete("features")
+      file.prettifyAndSave()
+    })
+  }
+
   async crawlGitHubCommand() {
     // Todo: figuring out best repo orgnization for crawlers.
     // Note: this currently assumes you have truecrawler project installed separateely.

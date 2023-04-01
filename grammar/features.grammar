@@ -1,6 +1,3 @@
-featuresNode
- inScope abstractFeatureNode
- extends abstractTrueBaseColumnNode
 featureExampleCodeNode
  description Example usage of the feature. Ideally includes any necessary boilerplate to be runnable.
  baseNodeType blobNode
@@ -8,5 +5,5 @@ abstractFeatureNode
  extends abstractBooleanColumnNode
  contentKey value
  childrenKey example
- boolean includeChildrenInCsv false
  catchAllNodeType featureExampleCodeNode
+ string sortKey abstractFeatureNode
