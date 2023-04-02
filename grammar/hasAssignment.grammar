@@ -1,5 +1,5 @@
-hasAssignmentNode
- extends abstractFeatureNode
+hasAssignmentParser
+ extends abstractFeatureParser
  string title Assignment
  string pseudoExample name = "PLDB"
  string tokenKeyword assignmentToken

@@ -1,4 +1,4 @@
-annualReportsUrlNode
- extends abstractUrlColumnNode
+annualReportsUrlParser
+ extends abstractUrlColumnParser
  description URL to the annual reports for this language.
  single false

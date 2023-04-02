@@ -1,5 +1,5 @@
-isLispNode
- extends abstractFeatureNode
+isLispParser
+ extends abstractFeatureParser
  string title Lispy
  description Is this in the Lisp family of languages?
  string reference https://en.wikipedia.org/wiki/Lisp_(programming_language)

@@ -1,5 +1,5 @@
-hasGotosNode
- extends abstractFeatureNode
+hasGotosParser
+ extends abstractFeatureParser
  string title Gotos
  string pseudoExample goto 10
  string reference https://en.wikipedia.org/wiki/Goto

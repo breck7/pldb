@@ -1,5 +1,5 @@
-hasInheritanceNode
- extends abstractFeatureNode
+hasInheritanceParser
+ extends abstractFeatureParser
  string title Inheritance
  string pseudoExample class PLDBFile extends File
  string reference https://en.wikipedia.org/wiki/Inheritance_(object-oriented_programming)

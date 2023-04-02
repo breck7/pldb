@@ -1,6 +1,6 @@
-indeedJobsNode
+indeedJobsParser
  description How many job descriptions match this query for this language on indeed.com?
  catchAllCellType stringCell
- extends abstractAnnualPopulationCountMapNode
+ extends abstractAnnualPopulationCountMapParser
  contentKey query
  string sourceDomain indeed.com

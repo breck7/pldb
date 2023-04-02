@@ -1,5 +1,5 @@
-hasAssertStatementsNode
- extends abstractFeatureNode
+hasAssertStatementsParser
+ extends abstractFeatureParser
  string title Assert Statements
  string reference https://en.wikipedia.org/wiki/Debug_code#Assert_Statements
  string pseudoExample assert(isTrue)

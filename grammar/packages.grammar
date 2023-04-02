@@ -1,19 +1,19 @@
-packageRepositoryNode
- extends abstractUrlColumnNode
+packageRepositoryParser
+ extends abstractUrlColumnParser
  description URL to the package repository for this language.
  single false
-centralPackageRepositoryCountNode
- extends abstractCountColumnNode
+centralPackageRepositoryCountParser
+ extends abstractCountColumnParser
  description If you've searched for a CPM for this language and can't find one, set 0 as the count.
-packageInstallCountNode
+packageInstallCountParser
  description How many packages have been downloaded?
- extends abstractCountColumnNode
-packageCountNode
+ extends abstractCountColumnParser
+packageCountParser
  description How many packages are in the repository? A package is some code with a name and a namespace, shipped as an atomic unit, with an owner(s).
- extends abstractCountColumnNode
-packageAuthorsNode
- extends abstractPopulationCountColumnNode
+ extends abstractCountColumnParser
+packageAuthorsParser
+ extends abstractPopulationCountColumnParser
  description How many people contribute packages to this cpm?
-forLanguagesNode
+forLanguagesParser
  description Which languages is this repository for?
- extends abstractTrueBaseLinksColumnNode
+ extends abstractTrueBaseLinksColumnParser

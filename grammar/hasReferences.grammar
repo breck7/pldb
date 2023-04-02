@@ -1,5 +1,5 @@
-hasReferencesNode
- extends abstractFeatureNode
+hasReferencesParser
+ extends abstractFeatureParser
  string title References
  string pseudoExample fn(objPointer)
  string reference https://en.wikipedia.org/wiki/Reference_(computer_science)

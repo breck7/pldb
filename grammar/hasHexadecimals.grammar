@@ -1,5 +1,5 @@
-hasHexadecimalsNode
- extends abstractFeatureNode
+hasHexadecimalsParser
+ extends abstractFeatureParser
  string title Hexadecimals
  string aka Base16
  string aka hex

@@ -1,5 +1,5 @@
-semanticScholarNode
+semanticScholarParser
  boolean fromCrawler true
- extends abstractDelimitedValuesBlobColumnNode
+ extends abstractDelimitedValuesBlobColumnParser
  description Papers about this language from Semantic Scholar.
  string sourceDomain semanticscholar.org

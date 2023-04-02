@@ -1,5 +1,5 @@
-hasBooleansNode
- extends abstractFeatureNode
+hasBooleansParser
+ extends abstractFeatureParser
  string title Booleans
  string pseudoExample pldb = true
  string tokenKeyword booleanTokens

@@ -1,6 +1,6 @@
-helloWorldCollectionNode
+helloWorldCollectionParser
  description Hello world written in this language from http://helloworldcollection.de/
- extends exampleNode
+ extends exampleParser
  cruxFromId
  cells columnNameCell
  catchAllCellType helloWorldCollectionIdCell

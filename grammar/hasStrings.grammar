@@ -1,5 +1,5 @@
-hasStringsNode
- extends abstractFeatureNode
+hasStringsParser
+ extends abstractFeatureParser
  string title Strings
  string pseudoExample "Hello PLDB"
  string tokenKeyword stringToken

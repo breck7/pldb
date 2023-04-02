@@ -1,25 +1,25 @@
-appearedNode
+appearedParser
  description What year was the language publicly released and/or announced?
- extends abstractYearColumnNode
+ extends abstractYearColumnParser
  required
-isDeadNode
+isDeadParser
  description Has the creator or maintainer announced it officially dead? Include a link to proof of the announcement.
- extends abstractBooleanColumnNode
- catchAllNodeType urlCitationNode
+ extends abstractBooleanColumnParser
+ catchAllParser urlCitationParser
 nativeLanguageWordCell
  description The name of a natural language like English or Japanese.
-nativeLanguageNode
+nativeLanguageParser
  cells columnNameCell nativeLanguageWordCell
  description Nearly all programming languages are written in English, but some aren't. Set this field for the ones that are not.
- extends abstractEnumColumnNode
-firstAnnouncementNode
+ extends abstractEnumColumnParser
+firstAnnouncementParser
  description A url announcing the creation or release of a new language
- extends abstractUrlColumnNode
+ extends abstractUrlColumnParser
 announcementMethodCell
  description Common ways languages are first announced.
  enum pressRelease paper rfc webpage blogPost interview dissertation
  highlightScope constant.language
-announcementMethodNode
+announcementMethodParser
  description How was the language first announced?
- extends abstractEnumColumnNode
+ extends abstractEnumColumnParser
  cells columnNameCell announcementMethodCell

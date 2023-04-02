@@ -1,11 +1,11 @@
-dblpNode
+dblpParser
  boolean fromCrawler true
- extends abstractTrueBaseColumnNode
+ extends abstractTrueBaseColumnParser
  description Publications about this language from https://dblp.org/.
  string sourceDomain dblp.org
- hitsNode
-  extends abstractCountColumnNode
+ hitsParser
+  extends abstractCountColumnParser
   description How many matching publications?
- publicationsNode
-  extends abstractDelimitedValuesBlobColumnNode
+ publicationsParser
+  extends abstractDelimitedValuesBlobColumnParser
   description An inline PSV table of hits.

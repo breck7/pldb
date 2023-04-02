@@ -1,5 +1,5 @@
-hasUnitsOfMeasureNode
- extends abstractFeatureNode
+hasUnitsOfMeasureParser
+ extends abstractFeatureParser
  string title Units of Measure
  string pseudoExample 42cm
  string reference https://en.wikipedia.org/wiki/Unit_of_measurement

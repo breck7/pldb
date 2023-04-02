@@ -1,8 +1,8 @@
 importOnly
 
-tableSearchNode
+tableSearchParser
  cruxFromId
- extends abstractScrollNode
+ extends abstractScrollParser
  description Add table search to the tables
  javascript
   compile() {
@@ -16,8 +16,8 @@ tableSearchNode
     } );
     </script>`
   }
-ohayoCodeNode
- extends codeNode
+ohayoCodeParser
+ extends codeParser
  cruxFromId
  description Provide a direct link to analyze this data in Ohayo.
  javascript
@@ -25,8 +25,8 @@ ohayoCodeNode
    const link = `https://ohayo.computer?filename=${this.root.permalink}.ohayo&data=${encodeURIComponent(this.childrenToString())}`
    return `<div class="scrollQuoteComponent">Analyze this data yourself in <a href="${link}">Ohayo</a></div>`
   }
-observableNode
- extends abstractScrollNode
+observableParser
+ extends abstractScrollParser
  cruxFromId
  cells keywordCell urlCell
  description Provide a direct link to analyze this data in Observable.
@@ -34,19 +34,19 @@ observableNode
   compile() {
    return `<div class="scrollQuoteComponent">Analyze this data yourself in <a href="${this.getWord(1)}">Observable</a></div>`
   }
-codeWithHeaderNode
+codeWithHeaderParser
  cruxFromId
  catchAllCellType stringCell
- extends codeNode
+ extends codeParser
  javascript
   compile() {
    return `<div class="codeWithHeader"><div class="codeHeader">${this.content}</div>${super.compile()}</div>`
   }
-bashNode
+bashParser
  cruxFromId
  description Run a bash oneliner via nodejs and dumps stdout to pre tag.
  catchAllCellType stringCell
- extends abstractScrollNode
+ extends abstractScrollParser
  javascript
   compile() {
    const command = this.content
@@ -55,11 +55,11 @@ bashNode
    const output = require("child_process").execSync(command, {cwd})
    return `<div class="codeWithHeader"><div class="codeHeader">${command}</div><code class="scrollCodeBlockComponent">${output.toString().trim()}</code></div>`
   }
-monacoEditorNode
+monacoEditorParser
  cruxFromId
- extends abstractScrollNode
+ extends abstractScrollParser
  description A Monaco code editor.
- baseNodeType blobNode
+ baseParser blobParser
  example
   monacoEditor javascript
    // Hello world

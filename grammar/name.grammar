@@ -1,18 +1,18 @@
 aliasCell
-titleNode
+titleParser
  description The official title of the language
- extends abstractStringColumnNode
+ extends abstractStringColumnParser
  required
-wordRankNode
+wordRankParser
  description Some creators use a common English word as their language's name. For these we note how common the word is, where "the" is 1.
- extends abstractIntColumnNode
-standsForNode
+ extends abstractIntColumnParser
+standsForParser
  description If the language name is an acronym what does/did it stand for?
- extends abstractStringColumnNode
-akaNode
+ extends abstractStringColumnParser
+akaParser
  description Another name for the language. Entries can have multiple aka lines.
- extends abstractStringColumnNode
+ extends abstractStringColumnParser
  single false
-oldNameNode
+oldNameParser
  description What is the old name of this language?
- extends abstractStringColumnNode
+ extends abstractStringColumnParser

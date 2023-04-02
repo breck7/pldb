@@ -1,5 +1,5 @@
-hasTypeInferenceNode
- extends abstractFeatureNode
+hasTypeInferenceParser
+ extends abstractFeatureParser
  string title Type Inference
  string reference https://en.wikipedia.org/wiki/Type_inference
  string pseudoExample imAString = "pldb"

@@ -1,8 +1,8 @@
-isOpenSourceNode
+isOpenSourceParser
  boolean alwaysRecommended true
  description Is it an open source project?
- extends abstractBooleanColumnNode
-isPublicDomainNode
+ extends abstractBooleanColumnParser
+isPublicDomainParser
  boolean alwaysRecommended true
  description Is it public domain?
- extends abstractBooleanColumnNode
+ extends abstractBooleanColumnParser

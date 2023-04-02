@@ -17,7 +17,7 @@ code
 */
 const lodash = require("lodash")
 const path = require("path")
-const grammarNode = require("jtree/products/grammar.nodejs.js")
+const grammarParser = require("jtree/products/grammar.nodejs.js")
 const { ScrollDiskFileSystem, ScrollCli, ScrollFile } = require("scroll-cli")
 const { Disk } = require("jtree/products/Disk.node.js")
 const { TestRacer } = require("jtree/products/TestRacer.js")
@@ -31,7 +31,7 @@ const trueBasePagesDir = path.join(rootDir, "site", "truebase")
 
 const testTree = {}
 testTree.ensureNoErrorsInGrammar = areEqual => {
-	const grammarErrors = new grammarNode(PLDB.folder.grammarCode)
+	const grammarErrors = new grammarParser(PLDB.folder.grammarCode)
 		.getAllErrors()
 		.map(err => err.toObject())
 	if (grammarErrors.length) console.log(grammarErrors)

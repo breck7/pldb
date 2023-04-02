@@ -1,5 +1,5 @@
-hasRegularExpressionsSyntaxSugarNode
- extends abstractFeatureNode
+hasRegularExpressionsSyntaxSugarParser
+ extends abstractFeatureParser
  string title Regular Expression Syntax Sugar
  string reference https://pldb.com/truebase/regex.html
  string pseudoExample /pldb/

@@ -1,5 +1,5 @@
-hasGenericsNode
- extends abstractFeatureNode
+hasGenericsParser
+ extends abstractFeatureParser
  string title Generics
  string pseudoExample function identity<T>(arg: T): T
  string reference https://en.wikipedia.org/wiki/Generic_programming

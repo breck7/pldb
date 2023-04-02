@@ -1,5 +1,5 @@
-hasAccessModifiersNode
- extends abstractFeatureNode
+hasAccessModifiersParser
+ extends abstractFeatureParser
  string title Access Modifiers
  string pseudoExample class PLDBFile { public title }
  string reference https://en.wikipedia.org/wiki/Access_modifiers

@@ -1,5 +1,5 @@
-hasThreadsNode
- extends abstractFeatureNode
+hasThreadsParser
+ extends abstractFeatureParser
  string title Threads
  string pseudoExample thread1(); thread2();
  string reference https://en.wikipedia.org/wiki/Thread_(computing)

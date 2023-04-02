@@ -1,5 +1,5 @@
-hasFirstClassFunctionsNode
- extends abstractFeatureNode
+hasFirstClassFunctionsParser
+ extends abstractFeatureParser
  string title First-Class Functions
  string pseudoExample [2.1].map(Math.round)
  string reference https://en.wikipedia.org/wiki/First-class_function

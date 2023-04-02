@@ -1,9 +1,9 @@
-featureExampleCodeNode
+featureExampleCodeParser
  description Example usage of the feature. Ideally includes any necessary boilerplate to be runnable.
- baseNodeType blobNode
-abstractFeatureNode
- extends abstractBooleanColumnNode
+ baseParser blobParser
+abstractFeatureParser
+ extends abstractBooleanColumnParser
  contentKey value
  childrenKey example
- catchAllNodeType featureExampleCodeNode
- string sortKey abstractFeatureNode
+ catchAllParser featureExampleCodeParser
+ string sortKey abstractFeatureParser

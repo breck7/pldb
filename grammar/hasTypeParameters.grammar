@@ -1,5 +1,5 @@
-hasTypeParametersNode
- extends abstractFeatureNode
+hasTypeParametersParser
+ extends abstractFeatureParser
  string title Type Parameters
  string pseudoExample function identity<T>(arg: T): T {return arg}
  string reference https://en.wikipedia.org/wiki/TypeParameter

@@ -1,5 +1,5 @@
-hasBitWiseOperatorsNode
- extends abstractFeatureNode
+hasBitWiseOperatorsParser
+ extends abstractFeatureParser
  string title Bitwise Operators
  string reference https://en.wikipedia.org/wiki/Bitwise_operations_in_C https://en.wikipedia.org/wiki/Bitwise_operation
  string pseudoExample 3 == (2 | 1)

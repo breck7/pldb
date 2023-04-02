@@ -1,8 +1,8 @@
-projectEulerNode
- extends abstractMultiwordGuidColumnNode
+projectEulerParser
+ extends abstractMultiwordGuidColumnParser
  description Is this language one of the ones listed on https://projecteuler.net/?
  string sourceDomain projecteuler.net
  contentKey id
- memberCountNode
+ memberCountParser
   description How many project euler members use this language.
-  extends abstractAnnualPopulationCountMapNode
+  extends abstractAnnualPopulationCountMapParser

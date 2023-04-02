@@ -1,5 +1,5 @@
-hasSwitchNode
- extends abstractFeatureNode
+hasSwitchParser
+ extends abstractFeatureParser
  string title Switch Statements
  string pseudoExample switch animal: case dog-buy; case cat-sell;
  string reference https://en.wikipedia.org/wiki/Switch_statement

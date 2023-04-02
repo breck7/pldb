@@ -1,4 +1,4 @@
-officialBlogUrlNode
- extends abstractUrlColumnNode
+officialBlogUrlParser
+ extends abstractUrlColumnParser
  description URL to the official blog for this language.
  single false

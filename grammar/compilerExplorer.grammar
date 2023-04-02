@@ -1,6 +1,6 @@
-compilerExplorerNode
- extends abstractMultiwordGuidColumnNode
+compilerExplorerParser
+ extends abstractMultiwordGuidColumnParser
  description This language's name on https://godbolt.org
  string sourceDomain godbolt.org
  contentKey id
- inScope exampleNode
+ inScope exampleParser

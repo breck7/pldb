@@ -1,5 +1,5 @@
-hasDependentTypesNode
- extends abstractFeatureNode
+hasDependentTypesParser
+ extends abstractFeatureParser
  string title Dependent types
  string pseudoExample pldbSortedList // a list where is sorted is true
  string reference https://en.wikipedia.org/wiki/Dependent_type

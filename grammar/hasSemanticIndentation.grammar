@@ -1,5 +1,5 @@
-hasSemanticIndentationNode
- extends abstractFeatureNode
+hasSemanticIndentationParser
+ extends abstractFeatureParser
  string title Semantic Indentation
  string reference https://pldb.com/posts/which-programming-languages-use-indentation.html
  string pseudoExample line0 if true line1  print "Hello PLDB"

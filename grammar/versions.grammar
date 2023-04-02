@@ -1,17 +1,17 @@
-usesSemanticVersioningNode
- extends abstractBooleanColumnNode
+usesSemanticVersioningParser
+ extends abstractBooleanColumnParser
  description Does the official release of the language use semantic versioning?
 versionCell
  extends stringCell
  description Version numbers.
 // todo Grammar should probably have pattern matching. And then we can detect semantic versions in the below.
-versionNode
+versionParser
  description A release year and version. Perhaps in the future we could get more specific to month or even day.
  cells yearCell versionCell
-versionsNode
+versionsParser
  description The release years and versions of the language.
- extends abstractHashMapColumnNode
- catchAllNodeType versionNode
-releaseNotesUrlNode
- extends abstractUrlColumnNode
+ extends abstractHashMapColumnParser
+ catchAllParser versionParser
+releaseNotesUrlParser
+ extends abstractUrlColumnParser
  description URL to the release notes for this language.

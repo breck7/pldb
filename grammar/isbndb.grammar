@@ -1,5 +1,5 @@
-isbndbNode
+isbndbParser
  boolean fromCrawler true
- extends abstractDelimitedValuesBlobColumnNode
+ extends abstractDelimitedValuesBlobColumnParser
  description Books about this language from ISBNdb.
  string sourceDomain isbndb.com

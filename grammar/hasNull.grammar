@@ -1,5 +1,5 @@
-hasNullNode
- extends abstractFeatureNode
+hasNullParser
+ extends abstractFeatureParser
  string title Null
  string reference https://en.wikipedia.org/wiki/Null_pointer
  string pseudoExample uhOh = null

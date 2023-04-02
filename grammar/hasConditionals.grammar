@@ -1,5 +1,5 @@
-hasConditionalsNode
- extends abstractFeatureNode
+hasConditionalsParser
+ extends abstractFeatureParser
  string title Conditionals
  string pseudoExample if (isTrue) printPldb()
  string reference https://en.wikipedia.org/wiki/Conditional_(computer_programming)

@@ -1,4 +1,4 @@
-hasNamespacesNode
- extends abstractFeatureNode
+hasNamespacesParser
+ extends abstractFeatureParser
  string title Namespaces
  string pseudoExample namespace PLDB {}

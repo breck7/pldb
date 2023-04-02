@@ -1,6 +1,6 @@
-abstractParadigmNode
+abstractParadigmParser
  cells columnNameCell boolCell
- extends abstractBooleanColumnNode
-visualParadigmNode
- extends abstractParadigmNode
+ extends abstractBooleanColumnParser
+visualParadigmParser
+ extends abstractParadigmParser
  description Is this a visual programming thing? Sometimes called "no code" or "low code"?

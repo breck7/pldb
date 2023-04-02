@@ -1,5 +1,5 @@
-hasMapFunctionsNode
- extends abstractFeatureNode
+hasMapFunctionsParser
+ extends abstractFeatureParser
  string title Map Functions
  string pseudoExample pldbFiles.map(downloadFilesFn)
  string reference https://en.wikipedia.org/wiki/Map_(higher-order_function)

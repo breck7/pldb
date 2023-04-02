@@ -1,4 +1,4 @@
-downloadPageUrlNode
- extends abstractUrlColumnNode
+downloadPageUrlParser
+ extends abstractUrlColumnParser
  description URL to the download page for this language.
  single false

@@ -1,5 +1,5 @@
-hasMixinsNode
- extends abstractFeatureNode
+hasMixinsParser
+ extends abstractFeatureParser
  string title Mixins
  string pseudoExample extends pldbFile, diskFile
  string reference https://en.wikipedia.org/wiki/Mixin

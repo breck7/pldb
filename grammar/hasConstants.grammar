@@ -1,5 +1,5 @@
-hasConstantsNode
- extends abstractFeatureNode
+hasConstantsParser
+ extends abstractFeatureParser
  string title Constants
  string pseudoExample const name = "PLDB"
  string reference https://en.wikipedia.org/wiki/Const_(computer_programming)

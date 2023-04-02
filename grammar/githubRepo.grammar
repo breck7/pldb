@@ -3,31 +3,31 @@ githubRepoUrlCell
  regex ^https://github.com/.+/.+$
 
 // Basics
-githubRepoNode
+githubRepoParser
  description URL of the official GitHub repo for the project if it hosted there.
- extends abstractGitRepoUrlColumnNode
+ extends abstractGitRepoUrlColumnParser
  cells columnNameCell githubRepoUrlCell
- inScope descriptionNode
+ inScope descriptionParser
  contentKey url
  string sourceDomain github.com
- createdNode
-  extends abstractYearColumnNode
+ createdParser
+  extends abstractYearColumnParser
   description When was the *Github repo* for this entity created?
- updatedNode
-  extends abstractYearColumnNode
+ updatedParser
+  extends abstractYearColumnParser
   description What year was the last commit made?
- firstCommitNode
-  extends abstractYearColumnNode
+ firstCommitParser
+  extends abstractYearColumnParser
   description What year the first commit made in this git repo?
- subscribersNode
-  extends abstractCountColumnNode
+ subscribersParser
+  extends abstractCountColumnParser
   description How many subscribers to the repo?
- forksNode
-  extends abstractCountColumnNode
+ forksParser
+  extends abstractCountColumnParser
   description How many forks of the repo?
- starsNode
-  extends abstractCountColumnNode
+ starsParser
+  extends abstractCountColumnParser
   description How many stars of the repo?
- issuesNode
-  extends abstractCountColumnNode
+ issuesParser
+  extends abstractCountColumnParser
   description How many isses on the repo?

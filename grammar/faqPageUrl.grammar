@@ -1,4 +1,4 @@
-faqPageUrlNode
- extends abstractUrlColumnNode
+faqPageUrlParser
+ extends abstractUrlColumnParser
  description URL to the frequently asked questions for this language.
  single false

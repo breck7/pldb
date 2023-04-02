@@ -1,5 +1,5 @@
-hasPointersNode
- extends abstractFeatureNode
+hasPointersParser
+ extends abstractFeatureParser
  string title Pointers
  string pseudoExample int *pldb
  string reference https://en.wikipedia.org/wiki/Pointer_(computer_programming)

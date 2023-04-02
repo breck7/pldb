@@ -1,4 +1,4 @@
-demoVideoNode
+demoVideoParser
  description Provide a url of a demo video of the language.
- extends abstractUrlColumnNode
+ extends abstractUrlColumnParser
  single false

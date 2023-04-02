@@ -1,18 +1,18 @@
 // todo trim the trailing slash
-subredditNode
- extends abstractUrlGuidColumnNode
+subredditParser
+ extends abstractUrlGuidColumnParser
  string sourceDomain reddit.com
  contentKey url
  single false
  description Url of a subreddit(s) for this language.
  example
   subreddit php
- memberCountNode
-  extends abstractAnnualPopulationCountMapNode
+ memberCountParser
+  extends abstractAnnualPopulationCountMapParser
   description How many members in this subreddit.
 
-redditDiscussionNode
+redditDiscussionParser
  description A link to a related discussion on reddit.
- extends abstractUrlColumnNode
+ extends abstractUrlColumnParser
  string sourceDomain reddit.com
  single false
