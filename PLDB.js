@@ -2372,7 +2372,7 @@ class PLDBServer extends TrueBaseServer {
   async crawlGitHubCommand() {
     // Todo: figuring out best repo orgnization for crawlers.
     // Note: this currently assumes you have truecrawler project installed separateely.
-    const { GitHubImporter } = require("../../truecrawler/github.com/GitHub.js")
+    const { GitHubImporter } = require("../truecrawler/github.com/GitHub.js")
     const importer = new GitHubImporter(this.folder)
     await importer.fetchAllRepoDataCommand()
     await importer.writeAllRepoDataCommand()
