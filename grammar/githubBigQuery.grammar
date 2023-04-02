@@ -1,10 +1,10 @@
-githubBigQueryNode
+githubBigQueryParser
  description Google BigQuery Public Datasets has a dataset with info on GitHub repos: https://cloud.google.com/blog/topics/public-datasets/github-on-bigquery-analyze-all-the-open-source-code
- extends abstractMultiwordGuidColumnNode
+ extends abstractMultiwordGuidColumnParser
  contentKey id
  string sourceDomain cloud.google.com
- usersNode
-  extends abstractPopulationCountColumnNode
- reposNode
+ usersParser
+  extends abstractPopulationCountColumnParser
+ reposParser
   description How many repos for this language are listed in Google's BigQuery Public GitHub Dataset snapshot.
-  extends abstractCountColumnNode
+  extends abstractCountColumnParser

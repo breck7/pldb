@@ -1,5 +1,5 @@
-hasStatementsNode
- extends abstractFeatureNode
+hasStatementsParser
+ extends abstractFeatureParser
  string title Statements
  string pseudoExample print "Hello PLDB"
  string reference https://en.wikipedia.org/wiki/Statement_(computer_science)

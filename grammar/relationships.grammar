@@ -1,38 +1,38 @@
-abstractRelationshipNode
- extends abstractTrueBaseLinksColumnNode
-relatedNode
- extends abstractRelationshipNode
+abstractRelationshipParser
+ extends abstractTrueBaseLinksColumnParser
+relatedParser
+ extends abstractRelationshipParser
  description What languages are related? This serves as a catch all, and it is better to use a more specific relationship node such as "supersetOf".
-runsOnVmNode
- extends abstractRelationshipNode
+runsOnVmParser
+ extends abstractRelationshipParser
  description What virtual machine(s) does this language run on? 
-influencedByNode
+influencedByParser
  description What languages influenced this one?
- extends abstractRelationshipNode
-successorOfNode
+ extends abstractRelationshipParser
+successorOfParser
  description Was this language launched as the successor of another?
- extends abstractRelationshipNode
-subsetOfNode
+ extends abstractRelationshipParser
+subsetOfParser
  description Is this language a subset of another?
- extends abstractRelationshipNode
-renamedToNode
+ extends abstractRelationshipParser
+renamedToParser
  description What is the new name of this language?
- extends abstractRelationshipNode
-supersetOfNode
+ extends abstractRelationshipParser
+supersetOfParser
  description Is this language a superset of another? If you specify this link then the superset language will inherit all features of subset language.
- extends abstractRelationshipNode
-writtenInNode
+ extends abstractRelationshipParser
+writtenInParser
  description What language(s) is the main implementation written in?
- extends abstractRelationshipNode
-extensionOfNode
+ extends abstractRelationshipParser
+extensionOfParser
  description What language is this language an extension of?
- extends abstractRelationshipNode
-forkOfNode
+ extends abstractRelationshipParser
+forkOfParser
  description What language is this language a fork of?
- extends abstractRelationshipNode
-compilesToNode
+ extends abstractRelationshipParser
+compilesToParser
  description Which language(s) does this language primarily compile to?
- extends abstractRelationshipNode
-inputLanguagesNode
+ extends abstractRelationshipParser
+inputLanguagesParser
  description Which language(s) does this take as input? For compilers, what languages does this compile compile?
- extends abstractRelationshipNode
+ extends abstractRelationshipParser

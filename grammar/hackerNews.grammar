@@ -1,5 +1,5 @@
-hackerNewsDiscussionsNode
+hackerNewsDiscussionsParser
  boolean fromCrawler true
- extends abstractDelimitedValuesBlobColumnNode
+ extends abstractDelimitedValuesBlobColumnParser
  description Links to Hacker News posts discussing this language.
  string sourceDomain news.ycombinator.com

@@ -1,4 +1,4 @@
-gitlabRepoNode
+gitlabRepoParser
  description URL of the official GitLab repo for the language project.
- extends abstractGitRepoUrlColumnNode
+ extends abstractGitRepoUrlColumnParser
  string sourceDomain gitlab.com

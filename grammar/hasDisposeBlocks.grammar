@@ -1,5 +1,5 @@
-hasDisposeBlocksNode
- extends abstractFeatureNode
+hasDisposeBlocksParser
+ extends abstractFeatureParser
  string title Dispose Blocks Pattern
  string pseudoExample with pldb: do computeRanks()
  string reference https://en.wikipedia.org/wiki/Dispose_pattern

@@ -1,52 +1,52 @@
 tokenCell
  highlightScope keyword
-keywordsNode
+keywordsParser
  description What are all the keywords in this language?
- extends abstractStringListColumnNode
+ extends abstractStringListColumnParser
  catchAllCellType tokenCell
-abstractCommonTokenNode
+abstractCommonTokenParser
  description Most general purpose programming languages implement a set of common tokens for common features like these.
  catchAllCellType tokenCell
- extends abstractStringListColumnNode
+ extends abstractStringListColumnParser
  single false
-lineCommentTokenNode
- extends abstractCommonTokenNode
+lineCommentTokenParser
+ extends abstractCommonTokenParser
  description Defined as a token that can be placed anywhere on a line and starts a comment that cannot be stopped except by a line break character or end of file.
  example
   javascript
    lineCommentToken //
-multiLineCommentTokensNode
- extends abstractCommonTokenNode
+multiLineCommentTokensParser
+ extends abstractCommonTokenParser
  description A comment with a start delimiter and end token (which can be the same) that can span multiple lines.
  example
   javascript
    multiLineCommentTokens /* */
-printTokenNode
- extends abstractCommonTokenNode
+printTokenParser
+ extends abstractCommonTokenParser
  description What token(s) is used to print a message?
  example
   javascript
    printToken console.log
-stringTokenNode
- extends abstractCommonTokenNode
+stringTokenParser
+ extends abstractCommonTokenParser
  description What token(s) is used to delimite a string?
  example
   javascript
    stringToken "
-assignmentTokenNode
- extends abstractCommonTokenNode
+assignmentTokenParser
+ extends abstractCommonTokenParser
  description What token(s) is used for assignment to an identifier?
  example
   javascript
    assignmentToken =
-booleanTokensNode
- extends abstractCommonTokenNode
+booleanTokensParser
+ extends abstractCommonTokenParser
  description What token(s) is used for true and false?
  example
   javascript
    booleanTokens true false
-includeTokenNode
- extends abstractCommonTokenNode
+includeTokenParser
+ extends abstractCommonTokenParser
  description What token(s) is used for including another file?
  example
   nodejs

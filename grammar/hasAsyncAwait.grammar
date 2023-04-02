@@ -1,5 +1,5 @@
-hasAsyncAwaitNode
- extends abstractFeatureNode
+hasAsyncAwaitParser
+ extends abstractFeatureParser
  string title Async Await
  string pseudoExample async downloadPldb => await getFiles()
  string reference https://en.wikipedia.org/wiki/Async/await

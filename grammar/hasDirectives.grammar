@@ -1,5 +1,5 @@
-hasDirectivesNode
- extends abstractFeatureNode
+hasDirectivesParser
+ extends abstractFeatureParser
  string title Directives
  string pseudoExample use strict;
  string reference https://en.wikipedia.org/wiki/Directive_(programming)

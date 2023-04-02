@@ -252,7 +252,9 @@ class PLDBFile extends TrueBaseFile {
   }
 
   get features() {
-    return this.extended.filter(node => node.sortKey === "abstractFeatureNode")
+    return this.extended.filter(
+      node => node.sortKey === "abstractFeatureParser"
+    )
   }
 
   get featuresWithExamples() {
@@ -1478,13 +1480,13 @@ ${creatorsLinks}
   }
 }
 
-// One feature maps to one grammar file that extends abstractFeatureNode
+// One feature maps to one grammar file that extends abstractFeatureParser
 class Feature {
   constructor(node, base) {
     this.node = node
     this.base = base
     this.fileName = this.id + ".grammar"
-    this.id = node.id.replace("Node", "")
+    this.id = node.id.replace("Parser", "")
   }
 
   id = ""
@@ -1776,8 +1778,8 @@ githubRepo
 website
 wikipedia`.split("\n")
 
-  createParser() {
-    return new TreeNode.Parser(PLDBFile)
+  createParserCombinator() {
+    return new TreeNode.ParserCombinator(PLDBFile)
   }
 
   get filesWithInvalidFilenames() {
@@ -1897,11 +1899,11 @@ wikipedia`.split("\n")
   get features() {
     if (!this.quickCache.features) {
       const allGrammarNodes = Object.values(
-        this.nodeAt(0).parsed.definition.programNodeTypeDefinitionCache
+        this.nodeAt(0).parsed.definition.programParserDefinitionCache
       )
 
       const features = allGrammarNodes
-        .filter(node => node.get("extends") === "abstractFeatureNode")
+        .filter(node => node.get("extends") === "abstractFeatureParser")
         .map(nodeDef => {
           const feature = new Feature(nodeDef, this)
           if (!feature.title) {

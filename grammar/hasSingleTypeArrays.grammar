@@ -1,5 +1,5 @@
-hasSingleTypeArraysNode
- extends abstractFeatureNode
+hasSingleTypeArraysParser
+ extends abstractFeatureParser
  description Has an array data structure that only can hold items of the same type.
  string title Single-Type Arrays
  string reference https://en.wikipedia.org/wiki/Array_data_structure

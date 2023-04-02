@@ -1,10 +1,10 @@
 fileExtensionCell
  extends stringCell
-fileExtensionsNode
- extends abstractStringListColumnNode
+fileExtensionsParser
+ extends abstractStringListColumnParser
  catchAllCellType fileExtensionCell
  description What are the file extensions for this language?
-filenamesNode
- extends abstractStringListColumnNode
+filenamesParser
+ extends abstractStringListColumnParser
  catchAllCellType fileNameCell
  description Filenames commonly associated with the language.

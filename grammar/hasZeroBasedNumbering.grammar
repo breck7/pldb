@@ -1,5 +1,5 @@
-hasZeroBasedNumberingNode
- extends abstractFeatureNode
+hasZeroBasedNumberingParser
+ extends abstractFeatureParser
  string title Zero-based numbering
  string reference https://en.wikipedia.org/wiki/Zero-based_numbering
  string pseudoExample firstItem = pldb[0]

@@ -1,9 +1,9 @@
-meetupNode
+meetupParser
  description Some languages have active meetup groups on Meetup.com 
- extends abstractUrlGuidColumnNode
+ extends abstractUrlGuidColumnParser
  contentKey url
  string sourceDomain meetup.com
- memberCountNode
-  extends abstractPopulationCountColumnNode
- groupCountNode
-  extends abstractCountColumnNode
+ memberCountParser
+  extends abstractPopulationCountColumnParser
+ groupCountParser
+  extends abstractCountColumnParser

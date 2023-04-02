@@ -1,5 +1,5 @@
-hasFloatsNode
- extends abstractFeatureNode
+hasFloatsParser
+ extends abstractFeatureParser
  string title Floats
  string reference https://evanw.github.io/float-toy/ https://en.wikipedia.org/wiki/Floating-point_arithmetic
  string pseudoExample 80766866.0

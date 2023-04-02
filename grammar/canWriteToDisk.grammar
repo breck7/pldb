@@ -1,4 +1,4 @@
-canWriteToDiskNode
- extends abstractFeatureNode
+canWriteToDiskParser
+ extends abstractFeatureParser
  string title Disk Output
  string pseudoExample write("pldb.csv", "...")

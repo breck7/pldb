@@ -1,5 +1,5 @@
-hasBinaryNumbersNode
- extends abstractFeatureNode
+hasBinaryNumbersParser
+ extends abstractFeatureParser
  string title Binary Literals
  string pseudoExample 0b100110100000110011110010010
  string reference https://en.wikipedia.org/wiki/Binary_number

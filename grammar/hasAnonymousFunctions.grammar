@@ -1,5 +1,5 @@
-hasAnonymousFunctionsNode
- extends abstractFeatureNode
+hasAnonymousFunctionsParser
+ extends abstractFeatureParser
  string title Anonymous Functions
  string aka Lambdas
  string pseudoExample () => printPldb()

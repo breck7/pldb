@@ -1,5 +1,5 @@
-canDoShebangNode
- extends abstractFeatureNode
+canDoShebangParser
+ extends abstractFeatureParser
  string title Shebang
  string pseudoExample #! /run
  string reference https://en.wikipedia.org/wiki/Shebang_(Unix)

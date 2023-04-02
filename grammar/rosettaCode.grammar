@@ -1,4 +1,4 @@
-rosettaCodeNode
- extends abstractUrlGuidColumnNode
+rosettaCodeParser
+ extends abstractUrlGuidColumnParser
  description A link to this language on Rosetta Code - http://www.rosettacode.org/
  string sourceDomain rosettacode.org

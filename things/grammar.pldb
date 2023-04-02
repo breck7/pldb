@@ -21,9 +21,9 @@ hasEnums true
 example
  latinNode
   root
-  catchAllNodeType anyNode
+  catchAllParser anyNode
  anyNode
-  baseNodeType blobNode
+  baseParser blobNode
 
 githubRepo https://github.com/breck7/jtree
  firstCommit 2017

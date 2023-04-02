@@ -1,5 +1,5 @@
-supportsBreakpointsNode
- extends abstractFeatureNode
+supportsBreakpointsParser
+ extends abstractFeatureParser
  string title Breakpoints
  string pseudoExample debugger;
  string reference https://en.wikipedia.org/wiki/Breakpoint

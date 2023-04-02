@@ -1,4 +1,4 @@
-antlrNode
- extends abstractUrlGuidColumnNode
+antlrParser
+ extends abstractUrlGuidColumnParser
  description A link to the ANTLR grammar for this language (https://github.com/antlr/grammars-v4/tree/master/LANGUAGE)
  string sourceDomain www.antlr.org

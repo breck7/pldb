@@ -1,5 +1,5 @@
-hasImportsNode
- extends abstractFeatureNode
+hasImportsParser
+ extends abstractFeatureParser
  string title File Imports
  string pseudoExample import pldb
  string tokenKeyword includeToken

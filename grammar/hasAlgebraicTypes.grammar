@@ -1,5 +1,5 @@
-hasAlgebraicTypesNode
- extends abstractFeatureNode
+hasAlgebraicTypesParser
+ extends abstractFeatureParser
  string title Algebraic Data Type
  string pseudoExample garageContents = empty | vehicle
  string reference https://en.wikipedia.org/wiki/Algebraic_data_type

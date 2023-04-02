@@ -1,4 +1,5 @@
 // WorldWideColumns is an experimental attempt to define reusuable base abstract column types for TrueBases.
+// Version 2.0.0
 
 // Cell Parsers
 blankCell
@@ -15,11 +16,19 @@ numberCell
 intCell
  extends numberCell
  highlightScope constant.numeric.integer
-countCell
- extends intCell
 floatCell
  extends numberCell
  highlightScope constant.numeric.float
+percentCell
+ highlightScope constant.numeric.integer
+ regex \d+%
+
+// Common numeric cell extensions
+countCell
+ extends intCell
+populationCountCell
+ description A count of people.
+ extends countCell
 yearCell
  extends intCell
 
@@ -47,7 +56,7 @@ fileNameCell
 
 // Line Parsers
 // The main line parser. Anything extending this will be included in the CSV dumps.
-abstractTrueBaseColumnNode
+abstractTrueBaseColumnParser
  cells columnNameCell
  cruxFromId
  boolean isColumn true
@@ -61,66 +70,73 @@ abstractTrueBaseColumnNode
   }
 
 // Common string parsers
-abstractWordColumnNode
+abstractWordColumnParser
  description A single word.
  cells columnNameCell wordCell
- extends abstractTrueBaseColumnNode
-abstractStringColumnNode
+ extends abstractTrueBaseColumnParser
+abstractStringColumnParser
  catchAllCellType stringCell
- extends abstractTrueBaseColumnNode
-abstractStringListColumnNode
+ extends abstractTrueBaseColumnParser
+abstractStringListColumnParser
  description A list of strings separated by the `listDelimiter`. The default `listDelimiter` is space.
- extends abstractStringColumnNode
+ extends abstractStringColumnParser
  listDelimiter  
-abstractEnumColumnNode
+abstractEnumColumnParser
  cells columnNameCell enumCell
- extends abstractTrueBaseColumnNode
+ extends abstractTrueBaseColumnParser
 
 // Common blob parsers
-abstractStringBlobColumnNode
- extends abstractTrueBaseColumnNode
- baseNodeType blobNode
+abstractStringBlobColumnParser
+ extends abstractTrueBaseColumnParser
+ baseParser blobParser
  javascript
   get columnValue() {
     return this.childrenToString()
   }
-abstractDelimitedValuesBlobColumnNode
+abstractDelimitedValuesBlobColumnParser
  description A CSV, TSV, or other delimited blob of text.
  // todo: figure out how we want to dump these in CSV export.
- extends abstractStringBlobColumnNode
-abstractCodeColumnNode
- extends abstractStringBlobColumnNode
- baseNodeType blobNode
+ extends abstractStringBlobColumnParser
+abstractCodeColumnParser
+ extends abstractStringBlobColumnParser
+ baseParser blobParser
 
 // Links between TrueBase files
-abstractTrueBaseLinksColumnNode
+abstractTrueBaseLinksColumnParser
  description Links to other files in the TrueBase.
  catchAllCellType trueBaseIdCell
- extends abstractStringListColumnNode
+ extends abstractStringListColumnParser
  boolean containsTrueBaseIds true
 
-// Commmon numeric parsers
-abstractBooleanColumnNode
+// Boolean column node
+abstractBooleanColumnParser
  cells columnNameCell boolCell
- extends abstractTrueBaseColumnNode
-abstractIntColumnNode
+ extends abstractTrueBaseColumnParser
+
+// Commmon numeric parsers
+abstractNumericColumnParser
+ extends abstractTrueBaseColumnParser
+abstractIntColumnParser
  cells columnNameCell intCell
- extends abstractTrueBaseColumnNode
-abstractFloatColumnNode
+ extends abstractNumericColumnParser
+abstractFloatColumnParser
  cells columnNameCell floatCell
- extends abstractTrueBaseColumnNode
-abstractCountColumnNode
+ extends abstractNumericColumnParser
+abstractCountColumnParser
  description A positive count of something. People, for example. Min is 0.
  cells columnNameCell countCell
- extends abstractIntColumnNode
+ extends abstractIntColumnParser
+abstractPercentageColumnParser
+ cells columnNameCell percentCell
+ extends abstractNumericColumnParser
 
 // Common time parsers
-abstractYearColumnNode
+abstractYearColumnParser
  cells columnNameCell yearCell
- extends abstractIntColumnNode
+ extends abstractIntColumnParser
 
 // Common miscellaneous parsers
-blankLineNode
+blankLineParser
  description Blank lines are okay.
  cells blankCell
  compiler
@@ -128,34 +144,45 @@ blankLineNode
  pattern ^$
  tags doNotSynthesize
  boolean shouldSerialize false
-trueBaseErrorNode
- baseNodeType errorNode
-urlCitationNode
+trueBaseErrorParser
+ baseParser errorParser
+urlCitationParser
  description Can serve as a catch all for linking to a source for columns.
  cells urlCell
 
 // URL Parsers
-abstractUrlColumnNode
+abstractUrlColumnParser
  cells columnNameCell urlCell
- extends abstractTrueBaseColumnNode
+ extends abstractTrueBaseColumnParser
 
 // GUID Parsers
-abstractUrlGuidColumnNode
+abstractUrlGuidColumnParser
  description A column containing a URL that is also a Globablly Unique Identifier (GUID) for an entity on that site.
- extends abstractUrlColumnNode
-abstractOneWordGuidColumnNode
+ extends abstractUrlColumnParser
+abstractOneWordGuidColumnParser
  cells columnNameCell externalGuidCell
- extends abstractTrueBaseColumnNode
+ extends abstractTrueBaseColumnParser
  description Use when you have a column that serves as a Globally Unique Identifier (GUID) where the GUID does not contain spaces.
-abstractMultiwordGuidColumnNode
+abstractMultiwordGuidColumnParser
  description Use when you have a column that serves as a Globally Unique Identifier (GUID) where the GUID can contain spaces.
  catchAllCellType externalGuidCell
- extends abstractTrueBaseColumnNode
+ extends abstractTrueBaseColumnParser
 
-// Common complex Parsers
-abstractHashMapColumnNode
- extends abstractTrueBaseColumnNode
+// Hashmap parsers
+abstractHashMapColumnParser
+ extends abstractTrueBaseColumnParser
  javascript
   get columnValue() {
     return this.childrenToString()
   }
+
+// Common population columns
+abstractPopulationCountColumnParser
+ extends abstractCountColumnParser
+annualPopulationCountParser
+ cells yearCell populationCountCell
+ uniqueFirstWord
+abstractAnnualPopulationCountMapParser
+ catchAllParser annualPopulationCountParser
+ description A map of counts, one per year.
+ extends abstractHashMapColumnParser

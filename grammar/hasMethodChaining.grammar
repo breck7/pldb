@@ -1,5 +1,5 @@
-hasMethodChainingNode
- extends abstractFeatureNode
+hasMethodChainingParser
+ extends abstractFeatureParser
  string title Method Chaining
  string pseudoExample pldbFile.toString().length
  string reference https://en.wikipedia.org/wiki/Method_chaining

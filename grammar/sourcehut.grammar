@@ -1,4 +1,4 @@
-sourcehutRepoNode
+sourcehutRepoParser
  description URL of the official sourcehut repo for the project.
- extends abstractGitRepoUrlColumnNode
+ extends abstractGitRepoUrlColumnParser
  string sourceDomain sr.ht

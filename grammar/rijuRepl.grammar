@@ -1,6 +1,6 @@
-rijuReplNode
- extends abstractUrlColumnNode
+rijuReplParser
+ extends abstractUrlColumnParser
  description A link to try this language on riju.codes
  string sourceDomain riju.codes
  contentKey id
- inScope fileExtensionsNode descriptionNode websiteNode gitRepoNode exampleNode
+ inScope fileExtensionsParser descriptionParser websiteParser gitRepoParser exampleParser

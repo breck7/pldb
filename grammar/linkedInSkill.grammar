@@ -1,6 +1,6 @@
-linkedInSkillNode
+linkedInSkillParser
  description How many people list this skill on LinkedIn?
- extends abstractAnnualPopulationCountMapNode
+ extends abstractAnnualPopulationCountMapParser
  catchAllCellType stringCell
  contentKey id
  string sourceDomain linkedin.com

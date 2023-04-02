@@ -1,5 +1,5 @@
-hasPartialApplicationNode
- extends abstractFeatureNode
+hasPartialApplicationParser
+ extends abstractFeatureParser
  string title Partial Application
  string pseudoExample add5 = num => addNumbers(10, num)
  string reference https://en.wikipedia.org/wiki/Partial_application

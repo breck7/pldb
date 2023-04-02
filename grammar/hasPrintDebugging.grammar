@@ -1,5 +1,5 @@
-hasPrintDebuggingNode
- extends abstractFeatureNode
+hasPrintDebuggingParser
+ extends abstractFeatureParser
  string title Print() Debugging
  string reference https://en.wikipedia.org/wiki/Debug_code#Print_debugging
  string pseudoExample print "Hello PLDB"

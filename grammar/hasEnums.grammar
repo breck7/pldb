@@ -1,5 +1,5 @@
-hasEnumsNode
- extends abstractFeatureNode
+hasEnumsParser
+ extends abstractFeatureParser
  string title Enums
  string reference https://en.wikipedia.org/wiki/Enumerated_type
  string pseudoExample colorsEnum { "red", "white", "blue"}

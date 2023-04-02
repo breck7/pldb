@@ -1,7 +1,7 @@
-twitterNode
- extends abstractUrlGuidColumnNode
+twitterParser
+ extends abstractUrlGuidColumnParser
  description Official Twitter handle of the entity, if any.
  string sourceDomain twitter.com
- followersNode
+ followersParser
   description How many followers the linked account has.
-  extends abstractPopulationCountColumnNode
+  extends abstractPopulationCountColumnParser

@@ -1,5 +1,5 @@
-hasConstructorsNode
- extends abstractFeatureNode
+hasConstructorsParser
+ extends abstractFeatureParser
  string title Constructors
  string pseudoExample PLDBFile { constructor() {} }
  string reference https://en.wikipedia.org/wiki/Constructor_(object-oriented_programming)

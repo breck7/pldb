@@ -1,5 +1,5 @@
-hasMonadsNode
- extends abstractFeatureNode
+hasMonadsParser
+ extends abstractFeatureParser
  string title Monad
  string pseudoExample g >>= f
  string reference https://en.wikipedia.org/wiki/Monad_(functional_programming)

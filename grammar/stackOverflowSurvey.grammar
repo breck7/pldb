@@ -1,22 +1,22 @@
-stackOverflowSurveyNode
- extends abstractHashMapColumnNode
+stackOverflowSurveyParser
+ extends abstractHashMapColumnParser
  description StackOverflow does an annual developer survey: https://insights.stackoverflow.com/survey
  string sourceDomain insights.stackoverflow.com
- stackOverflowSurveyYearNode
+ stackOverflowSurveyYearParser
   description Survey results for a particular year.
   cells yearCell
   pattern \d+
   uniqueFirstWord
-  usersNode
-   extends abstractPopulationCountColumnNode
+  usersParser
+   extends abstractPopulationCountColumnParser
    description How many developers reported using this language.
-  medianSalaryNode
+  medianSalaryParser
    description Median salary reported by developers using this language.
-   extends abstractIntColumnNode
-  fansNode
+   extends abstractIntColumnParser
+  fansParser
    description How many developers reported wanting to learn this language.
-   extends abstractPopulationCountColumnNode
-  percentageUsingNode
+   extends abstractPopulationCountColumnParser
+  percentageUsingParser
    description What percentage of survey respondents report using this language?
    // todo add a percentage column type that extends from float
-   extends abstractFloatColumnNode
+   extends abstractFloatColumnParser

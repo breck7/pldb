@@ -1,5 +1,5 @@
-hasUnionTypesNode
- extends abstractFeatureNode
+hasUnionTypesParser
+ extends abstractFeatureParser
  string title Union Types
  string pseudoExample any = string | number
  string reference https://en.wikipedia.org/wiki/Union_type

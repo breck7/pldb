@@ -1,21 +1,21 @@
-websiteNode
+websiteParser
  description URL of the official homepage for the language project.
- extends abstractUrlColumnNode
-webReplNode
- extends abstractUrlColumnNode
+ extends abstractUrlColumnParser
+webReplParser
+ extends abstractUrlColumnParser
  description An online repl for the project.
  single false
 domainNameCell
  extends stringCell
-domainNameNode
+domainNameParser
  description If the project website is on its own domain.
  cells columnNameCell domainNameCell
- extends abstractWordColumnNode
+ extends abstractWordColumnParser
  contentKey name
- registeredNode
-  extends abstractYearColumnNode
+ registeredParser
+  extends abstractYearColumnParser
   description When was this domain first registered?
- awisRankNode
-  extends abstractAnnualRankMapNode
+ awisRankParser
+  extends abstractAnnualRankMapParser
   description Alexa Web Information Service (AWIS) domain ranking.
   string sourceDomain aws.amazon.com

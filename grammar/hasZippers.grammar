@@ -1,5 +1,5 @@
-hasZippersNode
- extends abstractFeatureNode
+hasZippersParser
+ extends abstractFeatureParser
  string title Zippers
  string reference https://wiki.haskell.org/Zipper https://en.wikipedia.org/wiki/Zipper_(data_structure)
  string pseudoExample pldbCursor.moveLeft()

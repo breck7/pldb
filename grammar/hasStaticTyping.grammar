@@ -1,5 +1,5 @@
-hasStaticTypingNode
- extends abstractFeatureNode
+hasStaticTypingParser
+ extends abstractFeatureParser
  string title Static Typing
  string reference https://en.wikipedia.org/wiki/Type_system#Static_type_checking
  string pseudoExample int pldbRank = 100

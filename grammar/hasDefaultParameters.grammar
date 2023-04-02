@@ -1,5 +1,5 @@
-hasDefaultParametersNode
- extends abstractFeatureNode
+hasDefaultParametersParser
+ extends abstractFeatureParser
  string title Default Parameters Pattern
  string reference https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/Default_parameters
  string pseudoExample say(message = "Hello PLDB")

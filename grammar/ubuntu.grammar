@@ -1,4 +1,4 @@
-ubuntuPackageNode
- extends abstractOneWordGuidColumnNode
+ubuntuPackageParser
+ extends abstractOneWordGuidColumnParser
  description The name of an Ubuntu package for the language from https://packages.ubuntu.com/.
  string sourceDomain ubuntu.com

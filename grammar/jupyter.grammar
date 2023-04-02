@@ -1,5 +1,5 @@
-jupyterKernelNode
- extends abstractUrlGuidColumnNode
+jupyterKernelParser
+ extends abstractUrlGuidColumnParser
  single false
  description A link to a Jupyter Kernel for this language.
  string sourceDomain jupyter.org
