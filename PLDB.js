@@ -2112,10 +2112,10 @@ class PLDBServer extends TrueBaseServer {
 
   warmAll() {
     super.warmAll()
-    this.warmFeaturePagesCommand()
+    this.warmFeaturePages()
   }
 
-  warmFeaturePagesCommand() {
+  warmFeaturePages() {
     const { virtualFiles } = this
     const { siteFolder } = this.settings
     this.folder.features.forEach(

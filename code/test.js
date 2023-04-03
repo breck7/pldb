@@ -18,7 +18,7 @@ code
 const lodash = require("lodash")
 const path = require("path")
 const grammarParser = require("jtree/products/grammar.nodejs.js")
-const { ScrollDiskFileSystem, ScrollCli, ScrollFile } = require("scroll-cli")
+const { ScrollDiskFileSystem, ScrollCli } = require("scroll-cli")
 const { Disk } = require("jtree/products/Disk.node.js")
 const { TestRacer } = require("jtree/products/TestRacer.js")
 const { Utils } = require("jtree/products/Utils.js")
