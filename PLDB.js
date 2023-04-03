@@ -1475,7 +1475,7 @@ ${creatorsLinks}
       .filter(i => i)
       .join("\n ")
 
-    return `kpiTable
+    return `dashboard
  ${lines}`
   }
 }
