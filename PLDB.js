@@ -1759,24 +1759,6 @@ class PLDBFolder extends TrueBaseFolder {
   thingsViewSourcePath = `https://github.com/breck7/pldb/blob/main/things/`
   grammarViewSourcePath = `https://github.com/breck7/pldb/blob/main/grammar/`
   computedsViewSourcePath = `https://github.com/breck7/pldb/blob/main/PLDB.js`
-  defaultColumnSortOrder = `title
-appeared
-type
-pldbId
-rank
-languageRank
-factCount
-lastActivity
-exampleCount
-bookCount
-paperCount
-numberOfUsers
-numberOfJobs
-githubBigQuery_repos
-creators
-githubRepo
-website
-wikipedia`.split("\n")
 
   createParserCombinator() {
     return new TreeNode.ParserCombinator(PLDBFile)
