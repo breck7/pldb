@@ -28,7 +28,7 @@ stumpNoSnippet
   class notLoggedIn
   onclick new TrueBaseBrowserApp().verifyEmailAndSendLoginLinkCommand()
  span Login messages here.
-  class loginMessage
+  id loginMessage
   style display:none;
 
 </div>
