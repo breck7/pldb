@@ -539,32 +539,17 @@ class PLDBFile extends TrueBaseFile {
     )
   }
 
-  toScroll() {
-    return new LanguagePageTemplate(this).toScroll()
-  }
-}
-
-class LanguagePageTemplate {
-  constructor(file) {
-    this.file = file
-    this.id = this.file.id
-  }
-
   makeATag(id) {
-    const file = this.file.parent.getFile(id)
+    const file = this.parent.getFile(id)
     return `<a href="${file.permalink}">${file.title}</a>`
   }
 
-  file
-  id
-
   get trendingRepos() {
-    const { file } = this
-    const { title } = file
-    const count = file.get(`$githubLanguage trendingProjectsCount`)
+    const { title } = this
+    const count = this.get(`$githubLanguage trendingProjectsCount`)
     if (parseInt(count) > 0) {
-      const table = file.getNode("githubLanguage trendingProjects")
-      const githubId = file.get("githubLanguage")
+      const table = this.getNode("githubLanguage trendingProjects")
+      const githubId = this.get("githubLanguage")
 
       if (!table) {
         console.log(`Error with ${this.id}`)
@@ -587,9 +572,8 @@ commaTable
   }
 
   get semanticScholar() {
-    const { file } = this
-    const { title } = file
-    const items = file.getNode(`semanticScholar`)
+    const { title } = this
+    const items = this.getNode(`semanticScholar`)
     if (!items) return ""
 
     if (items.content === "0") return ""
@@ -617,9 +601,8 @@ pipeTable
   }
 
   get isbndb() {
-    const { file } = this
-    const { title } = file
-    const isbndb = file.getNode(`isbndb`)
+    const { title } = this
+    const isbndb = this.getNode(`isbndb`)
     if (!isbndb) return ""
 
     if (isbndb.content === "0") return ""
@@ -637,9 +620,8 @@ pipeTable
   }
 
   get goodreads() {
-    const { file } = this
-    const { title } = file
-    const goodreads = file.getNode(`goodreads`) // todo: the goodreadsIds we have are wrong.
+    const { title } = this
+    const goodreads = this.getNode(`goodreads`) // todo: the goodreadsIds we have are wrong.
     if (!goodreads) return ""
 
     const tree = TreeNode.fromDelimited(goodreads.childrenToString(), "|")
@@ -668,9 +650,8 @@ pipeTable
   }
 
   get publications() {
-    const { file } = this
-    const { title } = file
-    const dblp = file.getNode(`dblp`)
+    const { title } = this
+    const dblp = this.getNode(`dblp`)
     if (dblp && dblp.get("hits") !== "0") {
       const tree = TreeNode.fromDelimited(
         dblp.getNode("publications").childrenToString(),
@@ -686,7 +667,7 @@ pipeTable
       })
       return `## ${dblp.get(
         "hits"
-      )} publications about ${title} on <a href="${file.get("dblp")}">DBLP</a>
+      )} publications about ${title} on <a href="${this.get("dblp")}">DBLP</a>
 pipeTable
  ${cleanAndRightShift(tree.toDelimited("|", ["title", "titleLink", "year"]))}
 `
@@ -695,11 +676,10 @@ pipeTable
   }
 
   get featuresTable() {
-    const { file } = this
-    const { features, id } = file
+    const { features, id } = this
     if (!features.length) return ""
 
-    const { featuresMap } = file.parent
+    const { featuresMap } = this.parent
     const table = new TreeNode()
     features.forEach(node => {
       const feature = featuresMap.get(node.getWord(0))
@@ -725,7 +705,7 @@ Supported ${
               ? `<span class="hasFeature">✓</span>`
               : `<span class="doesNotHaveFeature">X</span>`
           }
-Token ${supported && tokenPath ? file.get(tokenPath) ?? "" : ""}
+Token ${supported && tokenPath ? this.get(tokenPath) ?? "" : ""}
 Example`
         )
         .touchNode("Example")
@@ -743,9 +723,7 @@ treeTable
   }
 
   get hackerNewsTable() {
-    const hnTable = this.file
-      .getNode(`hackerNewsDiscussions`)
-      ?.childrenToString()
+    const hnTable = this.getNode(`hackerNewsDiscussions`)?.childrenToString()
     if (!hnTable) return ""
 
     const table = TreeNode.fromDelimited(hnTable, "|")
@@ -761,7 +739,7 @@ treeTable
       .toDelimited("|", ["title", "titleLink", "date", "score", "comments"])
       .replace(/\n/g, "\n ")
       .trim()
-    return `## HackerNews discussions of ${this.file.title}
+    return `## HackerNews discussions of ${this.title}
 
 pipeTable
  ${delimited}`
@@ -772,8 +750,7 @@ pipeTable
   }
 
   toScroll() {
-    const { file } = this
-    const { typeName, title, id } = file
+    const { typeName, title, id } = this
 
     if (title.includes("%20")) throw new Error("bad space in title: " + title)
 
@@ -839,14 +816,13 @@ import ../footer.scroll
   }
 
   get image() {
-    const { file } = this
-    const { title } = file
+    const { title } = this
 
-    let image = file.get("screenshot")
+    let image = this.get("screenshot")
     let caption = `A screenshot of the visual language ${title}.
   link /search.html?q=select+type%0D%0Awhere+type+%3D+visual visual language`
     if (!image) {
-      image = file.get("photo")
+      image = this.get("photo")
       caption = `A photo of ${title}.`
     }
 
@@ -858,11 +834,10 @@ image ${image.replace("https://pldb.com/", "../")}
   }
 
   get monacoEditor() {
-    const { file } = this
-    const monaco = file.get("monaco")
+    const monaco = this.get("monaco")
     if (!monaco) return ""
 
-    const exampleToUse = file.allExamples.find(
+    const exampleToUse = this.allExamples.find(
       example => !example.code.includes("`")
     ) // our monaco code struggles with backticks for some reason.
 
@@ -873,16 +848,14 @@ image ${image.replace("https://pldb.com/", "../")}
   }
 
   get prevPage() {
-    return this.file.previousRanked.permalink
+    return this.previousRanked.permalink
   }
 
   get nextPage() {
-    return this.file.nextRanked.permalink
+    return this.nextRanked.permalink
   }
 
   get quickLinks() {
-    const { file } = this
-
     // Sigh. After learning Material Designs realized
     // it's partially broken on purpose:
     // https://github.com/google/material-design-icons/issues/166
@@ -893,15 +866,15 @@ image ${image.replace("https://pldb.com/", "../")}
     }
 
     const links = {
-      home: file.website,
-      terminal: file.repl,
-      code: file.repo,
-      menu_book: file.get("documentation"),
-      mail: file.get("emailList"),
-      wikipedia: file.get(`wikipedia`),
-      reddit: file.get("subreddit"),
-      twitter: file.get("twitter"),
-      edit: `/edit.html?id=${file.id}`
+      home: this.website,
+      terminal: this.repl,
+      code: this.repo,
+      menu_book: this.get("documentation"),
+      mail: this.get("emailList"),
+      wikipedia: this.get(`wikipedia`),
+      reddit: this.get("subreddit"),
+      twitter: this.get("twitter"),
+      edit: `/edit.html?id=${this.id}`
     }
     return Object.keys(links)
       .filter(key => links[key])
@@ -918,9 +891,8 @@ image ${image.replace("https://pldb.com/", "../")}
   }
 
   get oneLiner() {
-    const { file } = this
-    const { typeName, title, creators, appeared } = file
-    const standsFor = file.get("standsFor")
+    const { typeName, title, creators, appeared } = this
+    const standsFor = this.get("standsFor")
     let akaMessage = standsFor ? `, aka ${standsFor},` : ""
 
     let creatorsStr = ""
@@ -946,16 +918,15 @@ ${creatorsLinks}
   }
 
   get typeLink() {
-    return `<a href="/search.html?q=select+type%0D%0Awhere+type+%3D+${this.file.type}">${this.file.typeName}</a>`
+    return `<a href="/search.html?q=select+type%0D%0Awhere+type+%3D+${this.type}">${this.typeName}</a>`
   }
 
   get descriptionSection() {
-    const { file } = this
     let description = ""
-    const authoredDescription = file.get("description")
-    const wikipediaSummary = file.get("wikipedia summary")
-    const ghDescription = file.get("githubRepo description")
-    const wpLink = file.get(`wikipedia`)
+    const authoredDescription = this.get("description")
+    const wikipediaSummary = this.get("wikipedia summary")
+    const ghDescription = this.get("githubRepo description")
+    const wpLink = this.get(`wikipedia`)
     if (wikipediaSummary)
       description =
         wikipediaSummary
@@ -969,21 +940,20 @@ ${creatorsLinks}
   }
 
   get facts() {
-    const { file } = this
-    const { title, website } = file
+    const { title, website } = this
 
     const facts = []
     if (website) facts.push(`${title} website\n ${website}`)
 
-    const downloadPageUrl = file.get("downloadPageUrl")
+    const downloadPageUrl = this.get("downloadPageUrl")
     if (downloadPageUrl)
       facts.push(`${title} downloads page\n ${downloadPageUrl}`)
 
-    const wikipediaLink = file.get("wikipedia")
+    const wikipediaLink = this.get("wikipedia")
     const wikiLink = wikipediaLink ? wikipediaLink : ""
     if (wikiLink) facts.push(`${title} Wikipedia page\n ${wikiLink}`)
 
-    const githubRepo = file.getNode("githubRepo")
+    const githubRepo = this.getNode("githubRepo")
     if (githubRepo) {
       const stars = githubRepo.get("stars")
       const starMessage = stars
@@ -996,10 +966,10 @@ ${creatorsLinks}
       )
     }
 
-    const gitlabRepo = file.get("gitlabRepo")
+    const gitlabRepo = this.get("gitlabRepo")
     if (gitlabRepo) facts.push(`${title} on GitLab\n ${gitlabRepo}`)
 
-    const documentationLinks = file.getAll("documentation")
+    const documentationLinks = this.getAll("documentation")
     if (documentationLinks.length === 1)
       facts.push(`${title} docs\n ${documentationLinks[0]}`)
     else if (documentationLinks.length > 1)
@@ -1011,7 +981,7 @@ ${creatorsLinks}
           .join(", ")}`
       )
 
-    const specLinks = file.getAll("spec")
+    const specLinks = this.getAll("spec")
     if (specLinks.length === 1) facts.push(`${title} specs\n ${specLinks[0]}`)
     else if (specLinks.length > 1)
       facts.push(
@@ -1022,7 +992,7 @@ ${creatorsLinks}
           .join(", ")}`
       )
 
-    const emailListLinks = file.getAll("emailList")
+    const emailListLinks = this.getAll("emailList")
     if (emailListLinks.length === 1)
       facts.push(`${title} mailing list\n ${emailListLinks[0]}`)
     else if (emailListLinks.length > 1)
@@ -1034,12 +1004,12 @@ ${creatorsLinks}
           .join(", ")}`
       )
 
-    const demoVideo = file.get("demoVideo")
+    const demoVideo = this.get("demoVideo")
     if (demoVideo) facts.push(`Video demo of ${title}\n ${demoVideo}`)
 
-    const githubRepoCount = file.get("githubLanguage repos")
+    const githubRepoCount = this.get("githubLanguage repos")
     if (githubRepoCount) {
-      const url = `https://github.com/search?q=language:${file.get(
+      const url = `https://github.com/search?q=language:${this.get(
         "githubLanguage"
       )}`
       const repoCount = numeral(githubRepoCount).format("0,0")
@@ -1048,10 +1018,10 @@ ${creatorsLinks}
       )
     }
 
-    const supersetOf = file.supersetOfFile
+    const supersetOf = this.supersetOfFile
     if (supersetOf) facts.push(`${title} is a superset of ${supersetOf.link}`)
 
-    const { originCommunity } = file
+    const { originCommunity } = this
     let originCommunityStr = ""
     if (originCommunity.length) {
       originCommunityStr = originCommunity
@@ -1065,14 +1035,14 @@ ${creatorsLinks}
       facts.push(`${title} first developed in ${originCommunityStr}`)
     }
 
-    const { numberOfJobs } = file
+    const { numberOfJobs } = this
     const jobs = numberOfJobs > 10 ? numeral(numberOfJobs).format("0a") : ""
     if (jobs)
       facts.push(
         `PLDB estimates there are currently ${jobs} job openings for ${title} programmers.`
       )
 
-    const { extensions } = file
+    const { extensions } = this
     if (extensions)
       facts.push(
         `file extensions for ${title} include ${toCommaList(
@@ -1080,7 +1050,7 @@ ${creatorsLinks}
         )}`
       )
 
-    const compilesTo = file.get("compilesTo")
+    const compilesTo = this.get("compilesTo")
     if (compilesTo)
       facts.push(
         `${title} compiles to ${compilesTo
@@ -1089,7 +1059,7 @@ ${creatorsLinks}
           .join(" or ")}`
       )
 
-    const writtenIn = file.get("writtenIn")
+    const writtenIn = this.get("writtenIn")
     if (writtenIn)
       facts.push(
         `${title} is written in ${writtenIn
@@ -1098,10 +1068,10 @@ ${creatorsLinks}
           .join(" & ")}`
       )
 
-    const twitter = file.get("twitter")
+    const twitter = this.get("twitter")
     if (twitter) facts.push(`${title} on Twitter\n ${twitter}`)
 
-    const conferences = file.getNodesByGlobPath("conference")
+    const conferences = this.getNodesByGlobPath("conference")
     if (conferences.length) {
       facts.push(
         `Recurring conference about ${title}: ${conferences.map(
@@ -1110,7 +1080,7 @@ ${creatorsLinks}
       )
     }
 
-    const githubBigQuery = file.getNode("githubBigQuery")
+    const githubBigQuery = this.getNode("githubBigQuery")
     if (githubBigQuery) {
       const url = `https://api.github.com/search/repositories?q=language:${githubBigQuery.content}`
       const userCount = numeral(githubBigQuery.get("users")).format("0a")
@@ -1120,16 +1090,16 @@ ${creatorsLinks}
       )
     }
 
-    const meetup = file.get("meetup")
+    const meetup = this.get("meetup")
     if (meetup) {
-      const groupCount = numeral(file.get("meetup groupCount")).format("0,0")
+      const groupCount = numeral(this.get("meetup groupCount")).format("0,0")
       facts.push(
         `Check out the ${groupCount} <a href="${meetup}/">${title} meetup groups</a> on Meetup.com.`
       )
     }
 
-    const firstAnnouncement = file.get("firstAnnouncement")
-    const announcementMethod = file.get("announcementMethod")
+    const firstAnnouncement = this.get("firstAnnouncement")
+    const announcementMethod = this.get("announcementMethod")
     if (firstAnnouncement)
       facts.push(
         `<a href="${firstAnnouncement}">First announcement of</a> ${title}${
@@ -1137,27 +1107,27 @@ ${creatorsLinks}
         }`
       )
 
-    const subreddit = file.get("subreddit")
+    const subreddit = this.get("subreddit")
     if (subreddit) {
       const peNum = numeral(
-        file.getMostRecentInt("subreddit memberCount")
+        this.getMostRecentInt("subreddit memberCount")
       ).format("0,0")
       facts.push(
         `There are ${peNum} members in the <a href="${subreddit}">${title} subreddit</a>`
       )
     }
 
-    const pe = file.get("projectEuler")
+    const pe = this.get("projectEuler")
     if (pe) {
       const peNum = numeral(
-        file.getMostRecentInt("projectEuler memberCount")
+        this.getMostRecentInt("projectEuler memberCount")
       ).format("0,0")
       facts.push(
         `There are ${peNum} <a href="https://projecteuler.net/language=${pe}">Project Euler</a> users using ${title}`
       )
     }
 
-    const soSurvey = file.getNode("stackOverflowSurvey 2021")
+    const soSurvey = this.getNode("stackOverflowSurvey 2021")
     if (soSurvey) {
       let fact = `In the 2021 StackOverflow <a href="https://insights.stackoverflow.com/survey">developer survey</a> ${title} programmers reported a median salary of $${numeral(
         soSurvey.get("medianSalary")
@@ -1177,29 +1147,29 @@ ${creatorsLinks}
       facts.push(fact)
     }
 
-    const rosettaCode = file.get("rosettaCode")
+    const rosettaCode = this.get("rosettaCode")
     if (rosettaCode)
       facts.push(
         `Explore ${title} snippets on <a href="${rosettaCode}">Rosetta Code</a>`
       )
 
-    const nativeLanguage = file.get("nativeLanguage")
+    const nativeLanguage = this.get("nativeLanguage")
     if (nativeLanguage)
       facts.push(
         `${title} is written with the native language of ${nativeLanguage}`
       )
 
-    const gdb = file.get("gdbSupport")
+    const gdb = this.get("gdbSupport")
     if (gdb)
       facts.push(
         `${title} is supported by the <a href="https://www.sourceware.org/gdb/">GDB</a>`
       )
 
-    const hopl = file.get("hopl")
+    const hopl = this.get("hopl")
     if (hopl) facts.push(`${title} on HOPL\n ${hopl}`)
 
-    const tiobe = file.get("tiobe")
-    const tiobeRank = file.get("tiobe currentRank")
+    const tiobe = this.get("tiobe")
+    const tiobeRank = this.get("tiobe currentRank")
     if (tiobeRank)
       facts.push(
         `${title} ranks #${tiobeRank} in the <a href="https://www.tiobe.com/tiobe-index/">TIOBE Index</a>`
@@ -1209,61 +1179,61 @@ ${creatorsLinks}
         `${title} appears in the <a href="https://www.tiobe.com/tiobe-index/">TIOBE Index</a>`
       )
 
-    const esolang = file.get("esolang")
+    const esolang = this.get("esolang")
     if (esolang) facts.push(`${title} on Esolang\n ${esolang}`)
 
-    const ubuntu = file.get("ubuntuPackage")
+    const ubuntu = this.get("ubuntuPackage")
     if (ubuntu)
       facts.push(
         `${title} Ubuntu package\n https://packages.ubuntu.com/jammy/${ubuntu}`
       )
 
-    const antlr = file.get("antlr")
+    const antlr = this.get("antlr")
     if (antlr)
       facts.push(
         `<a href="antlr.html">ANTLR</a> <a href="${antlr}">grammar</a> for ${title}`
       )
 
     // todo: handle multiple
-    const lsp = file.get("languageServerProtocolProject")
+    const lsp = this.get("languageServerProtocolProject")
     if (lsp)
       facts.push(
         `${title} <a href="language-server-protocol.html">LSP</a> <a href="${lsp}">implementation</a>`
       )
 
-    const codeMirror = file.get("codeMirror")
+    const codeMirror = this.get("codeMirror")
     if (codeMirror)
       facts.push(
         `<a href="codemirror.html">CodeMirror</a> <a href="https://github.com/codemirror/codemirror5/tree/master/mode/${codeMirror}">package</a> for syntax highlighting ${title}`
       )
 
-    const monaco = file.get("monaco")
+    const monaco = this.get("monaco")
     if (monaco)
       facts.push(
         `<a href="monaco.html">Monaco</a> <a href="https://github.com/microsoft/monaco-editor/tree/main/src/basic-languages/${monaco}">package</a> for syntax highlighting ${title}`
       )
 
-    const pygmentsHighlighter = file.get("pygmentsHighlighter")
+    const pygmentsHighlighter = this.get("pygmentsHighlighter")
     if (pygmentsHighlighter)
       facts.push(
-        `<a href="pygments.html">Pygments</a> supports <a href="https://github.com/pygments/pygments/blob/master/pygments/lexers/${file.get(
+        `<a href="pygments.html">Pygments</a> supports <a href="https://github.com/pygments/pygments/blob/master/pygments/lexers/${this.get(
           "pygmentsHighlighter filename"
         )}">syntax highlighting</a> for ${title}`
       )
 
-    const linguist = file.get("linguistGrammarRepo")
+    const linguist = this.get("linguistGrammarRepo")
     if (linguist)
       facts.push(
         `GitHub supports <a href="${linguist}" title="The package used for syntax highlighting by GitHub Linguist.">syntax highlighting</a> for ${title}`
       )
 
-    const quineRelay = file.get("quineRelay")
+    const quineRelay = this.get("quineRelay")
     if (quineRelay)
       facts.push(
         `${title} appears in the <a href="https://github.com/mame/quine-relay">Quine Relay</a> project`
       )
 
-    const jupyters = file.getAll("jupyterKernel")
+    const jupyters = this.getAll("jupyterKernel")
     if (jupyters.length === 1)
       facts.push(
         `There is 1 <a href="jupyter-notebook.html">Jupyter</a> <a href="${jupyters[0]}">Kernel</a> for ${title}`
@@ -1277,7 +1247,7 @@ ${creatorsLinks}
           .join(", ")}`
       )
 
-    const packageRepos = file.getAll("packageRepository")
+    const packageRepos = this.getAll("packageRepository")
     if (packageRepos.length === 1)
       facts.push(
         `There is a <a href="${packageRepos[0]}">central package repository</a> for ${title}`
@@ -1291,36 +1261,36 @@ ${creatorsLinks}
         )}`
       )
 
-    const annualReport = file.getAll("annualReportsUrl")
+    const annualReport = this.getAll("annualReportsUrl")
 
     if (annualReport.length >= 1)
       facts.push(`Annual Reports for ${title}\n ${annualReport[0]}`)
 
-    const releaseNotes = file.getAll("releaseNotesUrl")
+    const releaseNotes = this.getAll("releaseNotesUrl")
 
     if (releaseNotes.length >= 1)
       facts.push(`Release Notes for ${title}\n ${releaseNotes[0]}`)
-    const officialBlog = file.getAll("officialBlogUrl")
+    const officialBlog = this.getAll("officialBlogUrl")
 
     if (officialBlog.length >= 1)
       facts.push(`Official Blog page for ${title}\n ${officialBlog[0]}`)
-    const eventsPage = file.getAll("eventsPageUrl")
+    const eventsPage = this.getAll("eventsPageUrl")
 
     if (eventsPage.length >= 1)
       facts.push(`Events page for ${title}\n ${eventsPage[0]}`)
 
-    const faqPage = file.getAll("faqPageUrl")
+    const faqPage = this.getAll("faqPageUrl")
 
     if (faqPage.length >= 1)
       facts.push(`Frequently Asked Questions for ${title}\n ${faqPage[0]}`)
 
-    const cheatSheetUrl = file.get("cheatSheetUrl")
+    const cheatSheetUrl = this.get("cheatSheetUrl")
     if (cheatSheetUrl) facts.push(`${title} cheat sheet\n ${cheatSheetUrl}`)
 
-    const indeedJobs = file.getNode("indeedJobs")
+    const indeedJobs = this.getNode("indeedJobs")
     if (indeedJobs) {
-      const query = file.get("indeedJobs")
-      const jobCount = numeral(file.getMostRecentInt("indeedJobs")).format(
+      const query = this.get("indeedJobs")
+      const jobCount = numeral(this.getMostRecentInt("indeedJobs")).format(
         "0,0"
       )
       facts.push(
@@ -1328,17 +1298,17 @@ ${creatorsLinks}
       )
     }
 
-    const domainRegistered = file.get("domainName registered")
+    const domainRegistered = this.get("domainName registered")
     if (domainRegistered)
       facts.push(
-        `<a href="${website}">${file.get(
+        `<a href="${website}">${this.get(
           "domainName"
         )}</a> was registered in ${domainRegistered}`
       )
 
-    const wpRelated = file.get("wikipedia related")
+    const wpRelated = this.get("wikipedia related")
     const seeAlsoLinks = wpRelated ? wpRelated.split(" ") : []
-    const related = file.get("related")
+    const related = this.get("related")
     if (related) related.split(" ").forEach(id => seeAlsoLinks.push(id))
 
     if (seeAlsoLinks.length)
@@ -1348,7 +1318,7 @@ ${creatorsLinks}
           seeAlsoLinks.map(link => this.makeATag(link)).join(", ")
       )
 
-    const { otherReferences } = file
+    const { otherReferences } = this
 
     const semanticScholarReferences = otherReferences.filter(link =>
       link.includes("semanticscholar")
@@ -1377,15 +1347,14 @@ ${creatorsLinks}
   }
 
   get keywordsSection() {
-    const keywords = this.file.get("keywords")
+    const keywords = this.get("keywords")
     if (!keywords) return ""
-    return `## <a href="../lists/keywords.html?filter=${this.id}">Keywords</a> in ${this.file.title}
+    return `## <a href="../lists/keywords.html?filter=${this.id}">Keywords</a> in ${this.title}
 * ${keywords}`
   }
 
   get funFactSection() {
-    return this.file
-      .findNodes("funFact")
+    return this.findNodes("funFact")
       .map(
         fact =>
           `codeWithHeader ${`<a href='${fact.content}'>Fun fact</a>`}:
@@ -1395,7 +1364,7 @@ ${creatorsLinks}
   }
 
   get exampleSection() {
-    return this.file.allExamples
+    return this.allExamples
       .map(
         example =>
           `codeWithHeader Example from ${
@@ -1409,21 +1378,19 @@ ${creatorsLinks}
   }
 
   get tryNowRepls() {
-    const { file } = this
-
     const repls = []
 
-    const webRepl = file.get("webRepl")
+    const webRepl = this.get("webRepl")
     if (webRepl) repls.push(`<a href="${webRepl}">Web</a>`)
 
-    const rijuRepl = file.get("rijuRepl")
+    const rijuRepl = this.get("rijuRepl")
     if (rijuRepl) repls.push(`<a href="${rijuRepl}">Riju</a>`)
 
-    const tryItOnline = file.get("tryItOnline")
+    const tryItOnline = this.get("tryItOnline")
     if (tryItOnline)
       repls.push(`<a href="https://tio.run/#${tryItOnline}">TIO</a>`)
 
-    const replit = file.get("replit")
+    const replit = this.get("replit")
     if (replit) repls.push(`<a href="${replit}">Replit</a>`)
 
     if (!repls.length) return ""
@@ -1432,7 +1399,6 @@ ${creatorsLinks}
   }
 
   get kpiBar() {
-    const { file } = this
     const {
       appeared,
       numberOfUsers,
@@ -1442,7 +1408,7 @@ ${creatorsLinks}
       title,
       isLanguage,
       languageRank
-    } = file
+    } = this
     const users =
       numberOfUsers > 10
         ? numberOfUsers < 1000
@@ -1453,9 +1419,9 @@ ${creatorsLinks}
     const lines = [
       isLanguage
         ? `#${languageRank + 1} <span title="${
-            file.langRankDebug
+            this.langRankDebug
           }">on PLDB</span>`
-        : `#${file.rank + 1} on PLDB`,
+        : `#${this.rank + 1} on PLDB`,
       appeared ? `${currentYear - appeared} Years Old` : "",
       users
         ? `${users} <span title="Crude user estimate from a linear model.">Users</span>`
