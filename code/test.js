@@ -18,7 +18,7 @@ code
 const lodash = require("lodash")
 const path = require("path")
 const grammarParser = require("jtree/products/grammar.nodejs.js")
-const { ScrollDiskFileSystem, ScrollCli } = require("scroll-cli")
+const { ScrollCli } = require("scroll-cli")
 const { Disk } = require("jtree/products/Disk.node.js")
 const { TestRacer } = require("jtree/products/TestRacer.js")
 const { Utils } = require("jtree/products/Utils.js")
@@ -39,24 +39,20 @@ testTree.ensureNoErrorsInGrammar = areEqual => {
 }
 
 testTree.ensureNoErrorsInScrollExtensions = areEqual => {
-	const grammarErrors = new ScrollDiskFileSystem().getGrammarErrorsInFolder(
-		__dirname
-	)
+	const { grammarErrors } = new ScrollCli().getErrorsInFolder(__dirname)
 	if (grammarErrors.length) console.log(grammarErrors)
 	areEqual(grammarErrors.length, 0, "no errors in scroll extensions")
 }
 
 // todo
 testTree.ensureNoErrorsInBlog = areEqual => {
-	const fileSystem = new ScrollDiskFileSystem()
+	const cli = new ScrollCli().silence()
 	const checkScroll = folderPath => {
-		const errors = fileSystem.getScrollErrorsInFolder(folderPath)
-		areEqual(errors.length, 0, `no scroll errors in ${folderPath}`)
-		if (errors.length) console.log(errors)
+		const { scrollErrors } = cli.getErrorsInFolder(folderPath)
+		areEqual(scrollErrors.length, 0, `no scroll errors in ${folderPath}`)
+		if (scrollErrors.length) console.log(scrollErrors)
 	}
 
-	const cli = new ScrollCli()
-	cli.verbose = false
 	Object.keys(cli.findScrollsInDirRecursive(siteDir)).map(checkScroll)
 
 	// const jsPagePath = path.join(trueBasePagesDir, "javascript.scroll")
