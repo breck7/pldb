@@ -106,8 +106,18 @@ abstractTrueBaseLinksColumnParser
  description Links to other files in the TrueBase.
  catchAllCellType trueBaseIdCell
  extends abstractStringListColumnParser
- boolean containsTrueBaseIds true
-
+ javascript
+  get trueBaseIds() {
+    return this.getWordsFrom(1)
+  }
+  updateTruebaseIds(oldTrueBaseId, newTrueBaseId) {
+    this.setContent(
+          this
+            .getWordsFrom(1)
+            .map(word => (word === oldTrueBaseId ? newTrueBaseId : word))
+            .join(" ")
+        )
+  }
 // Boolean column node
 abstractBooleanColumnParser
  cells columnNameCell boolCell
