@@ -1,0 +1,4 @@
+gourceParser
+ description Provide a url to a Gource visualization of a project's git history. 
+ extends abstractUrlColumnParser
+ string sourceDomain gource.io

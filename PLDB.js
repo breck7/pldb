@@ -863,6 +863,9 @@ ${creatorsLinks}
       facts.push(`${title} is developed on <a href="${githubRepo.getWord(1)}">GitHub</a>${starMessage}`)
     }
 
+    const gource = this.get("gource")
+    if (gource) facts.push(`Watch the history of <a href="${gource}">the ${title} repo visualized with Gource</a>`)
+
     const gitlabRepo = this.get("gitlabRepo")
     if (gitlabRepo) facts.push(`${title} on GitLab\n ${gitlabRepo}`)
 
