@@ -19,6 +19,9 @@ css
  .doesNotHaveFeature {
    color: red;
  }
+ .keywordsBlock .scrollCodeBlock {
+   white-space: normal;
+ }
  #monacoContainer {
    display: block;
    height: 10em;

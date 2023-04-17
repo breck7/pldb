@@ -1343,8 +1343,10 @@ ${creatorsLinks}
   get keywordsSection() {
     const keywords = this.get("keywords")
     if (!keywords) return ""
-    return `## <a href="../lists/keywords.html?filter=${this.id}">Keywords</a> in ${this.title}
-* ${keywords}`
+    return `<div class="keywordsBlock">
+codeWithHeader ${this.title} <a href="../lists/keywords.html?filter=${this.id}">Keywords</a>
+ ${keywords}
+</div>`
   }
 
   get funFactSection() {
