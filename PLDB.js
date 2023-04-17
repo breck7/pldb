@@ -799,12 +799,6 @@ ${this.featuresTable}
 
 ${this.trendingRepos}
 
-${this.goodreads}
-
-${this.isbndb}
-
-${this.semanticScholar}
-
 ${this.publications}
 
 ${this.hackerNewsTable}
