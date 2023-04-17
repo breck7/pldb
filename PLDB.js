@@ -38,8 +38,7 @@ const linkManyAftertext = links =>
   links.map((link, index) => `${index + 1}.`).join(" ") + // notice the dot is part of the link. a hack to make it more unique for aftertext matching.
   links.map((link, index) => `\n ${link} ${index + 1}.`).join("")
 
-const cleanAndRightShift = str =>
-  Utils.shiftRight(Utils.removeReturnChars(str), 1)
+const cleanAndRightShift = str => Utils.shiftRight(Utils.removeReturnChars(str), 1)
 
 const makePrettyUrlLink = url => `<a href="${url}">${new URL(url).hostname}</a>`
 
@@ -149,14 +148,11 @@ class PLDBFile extends TrueBaseFile {
   }
 
   get subredditId() {
-    return this.get("subreddit")
-      ?.split("/")
-      .pop()
+    return this.get("subreddit")?.split("/").pop()
   }
 
   get bookCount() {
-    if (this.quickCache.bookCount !== undefined)
-      return this.quickCache.bookCount
+    if (this.quickCache.bookCount !== undefined) return this.quickCache.bookCount
     const gr = this.getNode(`goodreads`)?.length
     const isbndb = this.getNode(`isbndb`)?.length
     let count = 0
@@ -167,8 +163,7 @@ class PLDBFile extends TrueBaseFile {
   }
 
   get paperCount() {
-    if (this.quickCache.paperCount !== undefined)
-      return this.quickCache.paperCount
+    if (this.quickCache.paperCount !== undefined) return this.quickCache.paperCount
     const ss = this.getNode(`semanticScholar`)?.length
 
     let count = 0
@@ -178,10 +173,7 @@ class PLDBFile extends TrueBaseFile {
   }
 
   get hoplId() {
-    return this.get("hopl")?.replace(
-      "https://hopl.info/showlanguage.prx?exp=",
-      ""
-    )
+    return this.get("hopl")?.replace("https://hopl.info/showlanguage.prx?exp=", "")
   }
 
   get names() {
@@ -205,9 +197,7 @@ class PLDBFile extends TrueBaseFile {
   }
 
   get repo() {
-    return this.getOneOf(
-      "gitRepo githubRepo gitlabRepo sourcehutRepo".split(" ")
-    )
+    return this.getOneOf("gitRepo githubRepo gitlabRepo sourcehutRepo".split(" "))
   }
 
   get repl() {
@@ -245,16 +235,12 @@ class PLDBFile extends TrueBaseFile {
   get extended() {
     if (this.quickCache.extended) return this.quickCache.extended
     const { supersetOfFile } = this
-    this.quickCache.extended = supersetOfFile
-      ? supersetOfFile.patch(this)
-      : this
+    this.quickCache.extended = supersetOfFile ? supersetOfFile.patch(this) : this
     return this.quickCache.extended
   }
 
   get features() {
-    return this.extended.filter(
-      node => node.sortKey === "abstractFeatureParser"
-    )
+    return this.extended.filter(node => node.sortKey === "abstractFeatureParser")
   }
 
   get featuresWithExamples() {
@@ -314,9 +300,7 @@ class PLDBFile extends TrueBaseFile {
         const example = this.allExamples.find(code => code.code.includes(word))
 
         if (example) {
-          const exampleLine = example.code
-            .split("\n")
-            .filter(line => line.includes(word))[0]
+          const exampleLine = example.code.split("\n").filter(line => line.includes(word))[0]
           return {
             value: true,
             token: word,
@@ -413,9 +397,7 @@ class PLDBFile extends TrueBaseFile {
       examples.push({
         code: node.getNode("example").childrenToString(),
         source: "hello-world",
-        link:
-          `https://github.com/leachim6/hello-world/blob/main/` +
-          node.get("filepath")
+        link: `https://github.com/leachim6/hello-world/blob/main/` + node.get("filepath")
       })
     })
 
@@ -492,8 +474,7 @@ class PLDBFile extends TrueBaseFile {
   }
 
   get numberOfJobs() {
-    if (this.quickCache.numberOfJobs === undefined)
-      this.quickCache.numberOfJobs = this.parent.predictNumberOfJobs(this)
+    if (this.quickCache.numberOfJobs === undefined) this.quickCache.numberOfJobs = this.parent.predictNumberOfJobs(this)
     return this.quickCache.numberOfJobs
   }
 
@@ -511,8 +492,7 @@ class PLDBFile extends TrueBaseFile {
   }
 
   get rank() {
-    if (this.quickCache.rank === undefined)
-      this.quickCache.rank = this.parent.getRank(this)
+    if (this.quickCache.rank === undefined) this.quickCache.rank = this.parent.getRank(this)
     return this.quickCache.rank
   }
 
@@ -532,11 +512,7 @@ class PLDBFile extends TrueBaseFile {
   }
 
   get lastActivity() {
-    return lodash.max(
-      this.parsed
-        .findAllWordsWithCellType("yearCell")
-        .map(word => parseInt(word.word))
-    )
+    return lodash.max(this.parsed.findAllWordsWithCellType("yearCell").map(word => parseInt(word.word)))
   }
 
   makeATag(id) {
@@ -563,9 +539,7 @@ class PLDBFile extends TrueBaseFile {
       })
       return `## Trending <a href="https://github.com/trending/${githubId}?since=monthly">${title} repos</a> on GitHub
 commaTable
- ${cleanAndRightShift(
-   tree.toDelimited(",", ["repo", "repoLink", "stars", "description"])
- )}
+ ${cleanAndRightShift(tree.toDelimited(",", ["repo", "repoLink", "stars", "description"]))}
 `
     }
     return ""
@@ -580,22 +554,12 @@ commaTable
 
     const tree = TreeNode.fromDelimited(items.childrenToString(), "|")
     tree.forEach(child => {
-      child.set(
-        "titleLink",
-        `https://www.semanticscholar.org/paper/${child.get("paperId")}`
-      )
+      child.set("titleLink", `https://www.semanticscholar.org/paper/${child.get("paperId")}`)
     })
     return `## Publications about ${title} from Semantic Scholar
 pipeTable
  ${cleanAndRightShift(
-   tree.toDelimited("|", [
-     "title",
-     "titleLink",
-     "authors",
-     "year",
-     "citations",
-     "influentialCitations"
-   ])
+   tree.toDelimited("|", ["title", "titleLink", "authors", "year", "citations", "influentialCitations"])
  )}
 `
   }
@@ -613,9 +577,7 @@ pipeTable
     })
     return `## Books about ${title} from ISBNdb
 pipeTable
- ${cleanAndRightShift(
-   tree.toDelimited("|", ["title", "titleLink", "authors", "year", "publisher"])
- )}
+ ${cleanAndRightShift(tree.toDelimited("|", ["title", "titleLink", "authors", "year", "publisher"]))}
 `
   }
 
@@ -626,26 +588,11 @@ pipeTable
 
     const tree = TreeNode.fromDelimited(goodreads.childrenToString(), "|")
     tree.forEach(child => {
-      child.set(
-        "titleLink",
-        `https://www.goodreads.com/search?q=${child.get("title") +
-          " " +
-          child.get("author")}`
-      )
+      child.set("titleLink", `https://www.goodreads.com/search?q=${child.get("title") + " " + child.get("author")}`)
     })
     return `## Books about ${title} on goodreads
 pipeTable
- ${cleanAndRightShift(
-   tree.toDelimited("|", [
-     "title",
-     "titleLink",
-     "author",
-     "year",
-     "reviews",
-     "ratings",
-     "rating"
-   ])
- )}
+ ${cleanAndRightShift(tree.toDelimited("|", ["title", "titleLink", "author", "year", "reviews", "ratings", "rating"]))}
 `
   }
 
@@ -653,21 +600,11 @@ pipeTable
     const { title } = this
     const dblp = this.getNode(`dblp`)
     if (dblp && dblp.get("hits") !== "0") {
-      const tree = TreeNode.fromDelimited(
-        dblp.getNode("publications").childrenToString(),
-        "|"
-      )
+      const tree = TreeNode.fromDelimited(dblp.getNode("publications").childrenToString(), "|")
       tree.forEach(child => {
-        child.set(
-          "titleLink",
-          child.get("doi")
-            ? `https://doi.org/` + child.get("doi")
-            : child.get("url")
-        )
+        child.set("titleLink", child.get("doi") ? `https://doi.org/` + child.get("doi") : child.get("url"))
       })
-      return `## ${dblp.get(
-        "hits"
-      )} publications about ${title} on <a href="${this.get("dblp")}">DBLP</a>
+      return `## ${dblp.get("hits")} publications about ${title} on <a href="${this.get("dblp")}">DBLP</a>
 pipeTable
  ${cleanAndRightShift(tree.toDelimited("|", ["title", "titleLink", "year"]))}
 `
@@ -684,11 +621,7 @@ pipeTable
     features.forEach(node => {
       const feature = featuresMap.get(node.getWord(0))
       if (!feature) {
-        console.log(
-          `warning: we need a features page for feature '${node.getWord(
-            0
-          )}' found in '${id}'`
-        )
+        console.log(`warning: we need a features page for feature '${node.getWord(0)}' found in '${id}'`)
         return
       }
 
@@ -700,11 +633,7 @@ pipeTable
           `row`,
           `Feature ${feature.title}
 FeatureLink ${feature.titleLink}
-Supported ${
-            supported
-              ? `<span class="hasFeature">✓</span>`
-              : `<span class="doesNotHaveFeature">X</span>`
-          }
+Supported ${supported ? `<span class="hasFeature">✓</span>` : `<span class="doesNotHaveFeature">X</span>`}
 Token ${supported && tokenPath ? this.get(tokenPath) ?? "" : ""}
 Example`
         )
@@ -715,11 +644,7 @@ Example`
     return `## Language <a href="../lists/features.html">features</a>
 
 treeTable
- ${table
-   .sortBy(["Supported", "Example"])
-   .reverse()
-   .toString()
-   .replace(/\n/g, "\n ")}`
+ ${table.sortBy(["Supported", "Example"]).reverse().toString().replace(/\n/g, "\n ")}`
   }
 
   get hackerNewsTable() {
@@ -728,10 +653,7 @@ treeTable
 
     const table = TreeNode.fromDelimited(hnTable, "|")
     table.forEach(row => {
-      row.set(
-        "titleLink",
-        `https://news.ycombinator.com/item?id=${row.get("id")}`
-      )
+      row.set("titleLink", `https://news.ycombinator.com/item?id=${row.get("id")}`)
       row.set("date", dayjs(row.get("time")).format("MM/DD/YYYY"))
     })
 
@@ -831,9 +753,7 @@ image ${image.replace("https://pldb.com/", "../")}
     const monaco = this.get("monaco")
     if (!monaco) return ""
 
-    const exampleToUse = this.allExamples.find(
-      example => !example.code.includes("`")
-    ) // our monaco code struggles with backticks for some reason.
+    const exampleToUse = this.allExamples.find(example => !example.code.includes("`")) // our monaco code struggles with backticks for some reason.
 
     const example = exampleToUse ? exampleToUse.code.replace(/\n/g, "\n ") : ""
 
@@ -893,17 +813,10 @@ image ${image.replace("https://pldb.com/", "../")}
     let creatorsLinks = ""
     if (creators.length) {
       creatorsStr = ` by ` + creators.join(" and ")
-      creatorsLinks = creators
-        .map(
-          name =>
-            ` link ../lists/creators.html#${lodash.camelCase(name)} ${name}`
-        )
-        .join("\n")
+      creatorsLinks = creators.map(name => ` link ../lists/creators.html#${lodash.camelCase(name)} ${name}`).join("\n")
     }
 
-    return `* ${title}${akaMessage} is ${Utils.getIndefiniteArticle(
-      typeName
-    )} ${this.typeLink}${
+    return `* ${title}${akaMessage} is ${Utils.getIndefiniteArticle(typeName)} ${this.typeLink}${
       appeared ? ` created in ${appeared}` : ""
     }${creatorsStr}.
  link /search.html?q=select+type+appeared%0D%0Awhere+appeared+%3D+${appeared} ${appeared}
@@ -923,10 +836,7 @@ ${creatorsLinks}
     const wpLink = this.get(`wikipedia`)
     if (wikipediaSummary)
       description =
-        wikipediaSummary
-          .split(". ")
-          .slice(0, 3)
-          .join(". ") +
+        wikipediaSummary.split(". ").slice(0, 3).join(". ") +
         `. Read more on Wikipedia...\n ${wpLink} Read more on Wikipedia...`
     else if (authoredDescription) description = authoredDescription
     else if (ghDescription) description = ghDescription
@@ -940,8 +850,7 @@ ${creatorsLinks}
     if (website) facts.push(`${title} website\n ${website}`)
 
     const downloadPageUrl = this.get("downloadPageUrl")
-    if (downloadPageUrl)
-      facts.push(`${title} downloads page\n ${downloadPageUrl}`)
+    if (downloadPageUrl) facts.push(`${title} downloads page\n ${downloadPageUrl}`)
 
     const wikipediaLink = this.get("wikipedia")
     const wikiLink = wikipediaLink ? wikipediaLink : ""
@@ -950,27 +859,18 @@ ${creatorsLinks}
     const githubRepo = this.getNode("githubRepo")
     if (githubRepo) {
       const stars = githubRepo.get("stars")
-      const starMessage = stars
-        ? ` and has ${numeral(stars).format("0,0")} stars`
-        : ""
-      facts.push(
-        `${title} is developed on <a href="${githubRepo.getWord(
-          1
-        )}">GitHub</a>${starMessage}`
-      )
+      const starMessage = stars ? ` and has ${numeral(stars).format("0,0")} stars` : ""
+      facts.push(`${title} is developed on <a href="${githubRepo.getWord(1)}">GitHub</a>${starMessage}`)
     }
 
     const gitlabRepo = this.get("gitlabRepo")
     if (gitlabRepo) facts.push(`${title} on GitLab\n ${gitlabRepo}`)
 
     const documentationLinks = this.getAll("documentation")
-    if (documentationLinks.length === 1)
-      facts.push(`${title} docs\n ${documentationLinks[0]}`)
+    if (documentationLinks.length === 1) facts.push(`${title} docs\n ${documentationLinks[0]}`)
     else if (documentationLinks.length > 1)
       facts.push(
-        `PLDB has ${
-          documentationLinks.length
-        } documentation sites for ${title}: ${documentationLinks
+        `PLDB has ${documentationLinks.length} documentation sites for ${title}: ${documentationLinks
           .map(makePrettyUrlLink)
           .join(", ")}`
       )
@@ -979,21 +879,14 @@ ${creatorsLinks}
     if (specLinks.length === 1) facts.push(`${title} specs\n ${specLinks[0]}`)
     else if (specLinks.length > 1)
       facts.push(
-        `PLDB has ${
-          specLinks.length
-        } specification sites for ${title}: ${specLinks
-          .map(makePrettyUrlLink)
-          .join(", ")}`
+        `PLDB has ${specLinks.length} specification sites for ${title}: ${specLinks.map(makePrettyUrlLink).join(", ")}`
       )
 
     const emailListLinks = this.getAll("emailList")
-    if (emailListLinks.length === 1)
-      facts.push(`${title} mailing list\n ${emailListLinks[0]}`)
+    if (emailListLinks.length === 1) facts.push(`${title} mailing list\n ${emailListLinks[0]}`)
     else if (emailListLinks.length > 1)
       facts.push(
-        `PLDB has ${
-          emailListLinks.length
-        } mailing list sites for ${title}: ${emailListLinks
+        `PLDB has ${emailListLinks.length} mailing list sites for ${title}: ${emailListLinks
           .map(makePrettyUrlLink)
           .join(", ")}`
       )
@@ -1003,13 +896,9 @@ ${creatorsLinks}
 
     const githubRepoCount = this.get("githubLanguage repos")
     if (githubRepoCount) {
-      const url = `https://github.com/search?q=language:${this.get(
-        "githubLanguage"
-      )}`
+      const url = `https://github.com/search?q=language:${this.get("githubLanguage")}`
       const repoCount = numeral(githubRepoCount).format("0,0")
-      facts.push(
-        `There are at least ${repoCount} ${title} repos on <a href="${url}">GitHub</a>`
-      )
+      facts.push(`There are at least ${repoCount} ${title} repos on <a href="${url}">GitHub</a>`)
     }
 
     const supersetOf = this.supersetOfFile
@@ -1019,30 +908,17 @@ ${creatorsLinks}
     let originCommunityStr = ""
     if (originCommunity.length) {
       originCommunityStr = originCommunity
-        .map(
-          name =>
-            `<a href="../lists/originCommunities.html#${lodash.camelCase(
-              name
-            )}">${name}</a>`
-        )
+        .map(name => `<a href="../lists/originCommunities.html#${lodash.camelCase(name)}">${name}</a>`)
         .join(" and ")
       facts.push(`${title} first developed in ${originCommunityStr}`)
     }
 
     const { numberOfJobs } = this
     const jobs = numberOfJobs > 10 ? numeral(numberOfJobs).format("0a") : ""
-    if (jobs)
-      facts.push(
-        `PLDB estimates there are currently ${jobs} job openings for ${title} programmers.`
-      )
+    if (jobs) facts.push(`PLDB estimates there are currently ${jobs} job openings for ${title} programmers.`)
 
     const { extensions } = this
-    if (extensions)
-      facts.push(
-        `file extensions for ${title} include ${toCommaList(
-          extensions.split(" ")
-        )}`
-      )
+    if (extensions) facts.push(`file extensions for ${title} include ${toCommaList(extensions.split(" "))}`)
 
     const compilesTo = this.get("compilesTo")
     if (compilesTo)
@@ -1087,9 +963,7 @@ ${creatorsLinks}
     const meetup = this.get("meetup")
     if (meetup) {
       const groupCount = numeral(this.get("meetup groupCount")).format("0,0")
-      facts.push(
-        `Check out the ${groupCount} <a href="${meetup}/">${title} meetup groups</a> on Meetup.com.`
-      )
+      facts.push(`Check out the ${groupCount} <a href="${meetup}/">${title} meetup groups</a> on Meetup.com.`)
     }
 
     const firstAnnouncement = this.get("firstAnnouncement")
@@ -1103,19 +977,13 @@ ${creatorsLinks}
 
     const subreddit = this.get("subreddit")
     if (subreddit) {
-      const peNum = numeral(
-        this.getMostRecentInt("subreddit memberCount")
-      ).format("0,0")
-      facts.push(
-        `There are ${peNum} members in the <a href="${subreddit}">${title} subreddit</a>`
-      )
+      const peNum = numeral(this.getMostRecentInt("subreddit memberCount")).format("0,0")
+      facts.push(`There are ${peNum} members in the <a href="${subreddit}">${title} subreddit</a>`)
     }
 
     const pe = this.get("projectEuler")
     if (pe) {
-      const peNum = numeral(
-        this.getMostRecentInt("projectEuler memberCount")
-      ).format("0,0")
+      const peNum = numeral(this.getMostRecentInt("projectEuler memberCount")).format("0,0")
       facts.push(
         `There are ${peNum} <a href="https://projecteuler.net/language=${pe}">Project Euler</a> users using ${title}`
       )
@@ -1132,9 +1000,7 @@ ${creatorsLinks}
         2
       )}% of respondents reported using ${title}. `
 
-      fact += `${numeral(soSurvey.get("users")).format(
-        "0,0"
-      )} programmers reported using ${title}, and ${numeral(
+      fact += `${numeral(soSurvey.get("users")).format("0,0")} programmers reported using ${title}, and ${numeral(
         soSurvey.get("fans")
       ).format("0,0")} said they wanted to use it`
 
@@ -1142,22 +1008,13 @@ ${creatorsLinks}
     }
 
     const rosettaCode = this.get("rosettaCode")
-    if (rosettaCode)
-      facts.push(
-        `Explore ${title} snippets on <a href="${rosettaCode}">Rosetta Code</a>`
-      )
+    if (rosettaCode) facts.push(`Explore ${title} snippets on <a href="${rosettaCode}">Rosetta Code</a>`)
 
     const nativeLanguage = this.get("nativeLanguage")
-    if (nativeLanguage)
-      facts.push(
-        `${title} is written with the native language of ${nativeLanguage}`
-      )
+    if (nativeLanguage) facts.push(`${title} is written with the native language of ${nativeLanguage}`)
 
     const gdb = this.get("gdbSupport")
-    if (gdb)
-      facts.push(
-        `${title} is supported by the <a href="https://www.sourceware.org/gdb/">GDB</a>`
-      )
+    if (gdb) facts.push(`${title} is supported by the <a href="https://www.sourceware.org/gdb/">GDB</a>`)
 
     const hopl = this.get("hopl")
     if (hopl) facts.push(`${title} on HOPL\n ${hopl}`)
@@ -1165,35 +1022,21 @@ ${creatorsLinks}
     const tiobe = this.get("tiobe")
     const tiobeRank = this.get("tiobe currentRank")
     if (tiobeRank)
-      facts.push(
-        `${title} ranks #${tiobeRank} in the <a href="https://www.tiobe.com/tiobe-index/">TIOBE Index</a>`
-      )
-    else if (tiobe)
-      facts.push(
-        `${title} appears in the <a href="https://www.tiobe.com/tiobe-index/">TIOBE Index</a>`
-      )
+      facts.push(`${title} ranks #${tiobeRank} in the <a href="https://www.tiobe.com/tiobe-index/">TIOBE Index</a>`)
+    else if (tiobe) facts.push(`${title} appears in the <a href="https://www.tiobe.com/tiobe-index/">TIOBE Index</a>`)
 
     const esolang = this.get("esolang")
     if (esolang) facts.push(`${title} on Esolang\n ${esolang}`)
 
     const ubuntu = this.get("ubuntuPackage")
-    if (ubuntu)
-      facts.push(
-        `${title} Ubuntu package\n https://packages.ubuntu.com/jammy/${ubuntu}`
-      )
+    if (ubuntu) facts.push(`${title} Ubuntu package\n https://packages.ubuntu.com/jammy/${ubuntu}`)
 
     const antlr = this.get("antlr")
-    if (antlr)
-      facts.push(
-        `<a href="antlr.html">ANTLR</a> <a href="${antlr}">grammar</a> for ${title}`
-      )
+    if (antlr) facts.push(`<a href="antlr.html">ANTLR</a> <a href="${antlr}">grammar</a> for ${title}`)
 
     // todo: handle multiple
     const lsp = this.get("languageServerProtocolProject")
-    if (lsp)
-      facts.push(
-        `${title} <a href="language-server-protocol.html">LSP</a> <a href="${lsp}">implementation</a>`
-      )
+    if (lsp) facts.push(`${title} <a href="language-server-protocol.html">LSP</a> <a href="${lsp}">implementation</a>`)
 
     const codeMirror = this.get("codeMirror")
     if (codeMirror)
@@ -1223,9 +1066,7 @@ ${creatorsLinks}
 
     const quineRelay = this.get("quineRelay")
     if (quineRelay)
-      facts.push(
-        `${title} appears in the <a href="https://github.com/mame/quine-relay">Quine Relay</a> project`
-      )
+      facts.push(`${title} appears in the <a href="https://github.com/mame/quine-relay">Quine Relay</a> project`)
 
     const jupyters = this.getAll("jupyterKernel")
     if (jupyters.length === 1)
@@ -1234,49 +1075,36 @@ ${creatorsLinks}
       )
     else if (jupyters.length > 1)
       facts.push(
-        `PLDB has ${
-          jupyters.length
-        } <a href="jupyter-notebook.html">Jupyter</a> Kernels for ${title}: ${jupyters
+        `PLDB has ${jupyters.length} <a href="jupyter-notebook.html">Jupyter</a> Kernels for ${title}: ${jupyters
           .map(makePrettyUrlLink)
           .join(", ")}`
       )
 
     const packageRepos = this.getAll("packageRepository")
     if (packageRepos.length === 1)
-      facts.push(
-        `There is a <a href="${packageRepos[0]}">central package repository</a> for ${title}`
-      )
+      facts.push(`There is a <a href="${packageRepos[0]}">central package repository</a> for ${title}`)
     else if (packageRepos.length > 1)
       facts.push(
-        `There are ${
-          packageRepos.length
-        } central package repositories for ${title}: ${linkManyAftertext(
-          packageRepos
-        )}`
+        `There are ${packageRepos.length} central package repositories for ${title}: ${linkManyAftertext(packageRepos)}`
       )
 
     const annualReport = this.getAll("annualReportsUrl")
 
-    if (annualReport.length >= 1)
-      facts.push(`Annual Reports for ${title}\n ${annualReport[0]}`)
+    if (annualReport.length >= 1) facts.push(`Annual Reports for ${title}\n ${annualReport[0]}`)
 
     const releaseNotes = this.getAll("releaseNotesUrl")
 
-    if (releaseNotes.length >= 1)
-      facts.push(`Release Notes for ${title}\n ${releaseNotes[0]}`)
+    if (releaseNotes.length >= 1) facts.push(`Release Notes for ${title}\n ${releaseNotes[0]}`)
     const officialBlog = this.getAll("officialBlogUrl")
 
-    if (officialBlog.length >= 1)
-      facts.push(`Official Blog page for ${title}\n ${officialBlog[0]}`)
+    if (officialBlog.length >= 1) facts.push(`Official Blog page for ${title}\n ${officialBlog[0]}`)
     const eventsPage = this.getAll("eventsPageUrl")
 
-    if (eventsPage.length >= 1)
-      facts.push(`Events page for ${title}\n ${eventsPage[0]}`)
+    if (eventsPage.length >= 1) facts.push(`Events page for ${title}\n ${eventsPage[0]}`)
 
     const faqPage = this.getAll("faqPageUrl")
 
-    if (faqPage.length >= 1)
-      facts.push(`Frequently Asked Questions for ${title}\n ${faqPage[0]}`)
+    if (faqPage.length >= 1) facts.push(`Frequently Asked Questions for ${title}\n ${faqPage[0]}`)
 
     const cheatSheetUrl = this.get("cheatSheetUrl")
     if (cheatSheetUrl) facts.push(`${title} cheat sheet\n ${cheatSheetUrl}`)
@@ -1284,9 +1112,7 @@ ${creatorsLinks}
     const indeedJobs = this.getNode("indeedJobs")
     if (indeedJobs) {
       const query = this.get("indeedJobs")
-      const jobCount = numeral(this.getMostRecentInt("indeedJobs")).format(
-        "0,0"
-      )
+      const jobCount = numeral(this.getMostRecentInt("indeedJobs")).format("0,0")
       facts.push(
         `Indeed.com has ${jobCount} matches for <a href="https://www.indeed.com/jobs?q=${query}">"${query}"</a>.`
       )
@@ -1294,11 +1120,7 @@ ${creatorsLinks}
 
     const domainRegistered = this.get("domainName registered")
     if (domainRegistered)
-      facts.push(
-        `<a href="${website}">${this.get(
-          "domainName"
-        )}</a> was registered in ${domainRegistered}`
-      )
+      facts.push(`<a href="${website}">${this.get("domainName")}</a> was registered in ${domainRegistered}`)
 
     const wpRelated = this.get("wikipedia related")
     const seeAlsoLinks = wpRelated ? wpRelated.split(" ") : []
@@ -1314,25 +1136,13 @@ ${creatorsLinks}
 
     const { otherReferences } = this
 
-    const semanticScholarReferences = otherReferences.filter(link =>
-      link.includes("semanticscholar")
-    )
-    const nonSemanticScholarReferences = otherReferences.filter(
-      link => !link.includes("semanticscholar")
-    )
+    const semanticScholarReferences = otherReferences.filter(link => link.includes("semanticscholar"))
+    const nonSemanticScholarReferences = otherReferences.filter(link => !link.includes("semanticscholar"))
 
     if (semanticScholarReferences.length)
-      facts.push(
-        `Read more about ${title} on Semantic Scholar: ${linkManyAftertext(
-          semanticScholarReferences
-        )}`
-      )
+      facts.push(`Read more about ${title} on Semantic Scholar: ${linkManyAftertext(semanticScholarReferences)}`)
     if (nonSemanticScholarReferences.length)
-      facts.push(
-        `Read more about ${title} on the web: ${linkManyAftertext(
-          nonSemanticScholarReferences
-        )}`
-      )
+      facts.push(`Read more about ${title} on the web: ${linkManyAftertext(nonSemanticScholarReferences)}`)
 
     facts.push(
       `HTML of this page generated by <a href="https://github.com/breck7/pldb/blob/main/code/LanguagePage.ts">LanguagePage.ts</a>`
@@ -1364,9 +1174,7 @@ codeWithHeader ${this.title} <a href="../lists/keywords.html?filter=${this.id}">
       .map(
         example =>
           `codeWithHeader Example from ${
-            !example.link
-              ? example.source
-              : `<a href='${example.link}'>` + example.source + "</a>"
+            !example.link ? example.source : `<a href='${example.link}'>` + example.source + "</a>"
           }:
  ${cleanAndRightShift(lodash.escape(example.code))}`
       )
@@ -1383,8 +1191,7 @@ codeWithHeader ${this.title} <a href="../lists/keywords.html?filter=${this.id}">
     if (rijuRepl) repls.push(`<a href="${rijuRepl}">Riju</a>`)
 
     const tryItOnline = this.get("tryItOnline")
-    if (tryItOnline)
-      repls.push(`<a href="https://tio.run/#${tryItOnline}">TIO</a>`)
+    if (tryItOnline) repls.push(`<a href="https://tio.run/#${tryItOnline}">TIO</a>`)
 
     const replit = this.get("replit")
     if (replit) repls.push(`<a href="${replit}">Replit</a>`)
@@ -1395,16 +1202,7 @@ codeWithHeader ${this.title} <a href="../lists/keywords.html?filter=${this.id}">
   }
 
   get kpiBar() {
-    const {
-      appeared,
-      numberOfUsers,
-      bookCount,
-      paperCount,
-      numberOfRepos,
-      title,
-      isLanguage,
-      languageRank
-    } = this
+    const { appeared, numberOfUsers, bookCount, paperCount, numberOfRepos, title, isLanguage, languageRank } = this
     const users =
       numberOfUsers > 10
         ? numberOfUsers < 1000
@@ -1414,25 +1212,13 @@ codeWithHeader ${this.title} <a href="../lists/keywords.html?filter=${this.id}">
 
     const lines = [
       isLanguage
-        ? `#${languageRank + 1} <span title="${
-            this.langRankDebug
-          }">on PLDB</span>`
+        ? `#${languageRank + 1} <span title="${this.langRankDebug}">on PLDB</span>`
         : `#${this.rank + 1} on PLDB`,
       appeared ? `${currentYear - appeared} Years Old` : "",
-      users
-        ? `${users} <span title="Crude user estimate from a linear model.">Users</span>`
-        : "",
-      isLanguage
-        ? `${bookCount} <span title="Books about or leveraging ${title}">Books</span>`
-        : "",
-      isLanguage
-        ? `${paperCount} <span title="Academic publications about or leveraging ${title}">Papers</span>`
-        : "",
-      numberOfRepos
-        ? `${numeral(numberOfRepos).format(
-            "0a"
-          )} <span title="${title} repos on GitHub.">Repos</span>`
-        : ""
+      users ? `${users} <span title="Crude user estimate from a linear model.">Users</span>` : "",
+      isLanguage ? `${bookCount} <span title="Books about or leveraging ${title}">Books</span>` : "",
+      isLanguage ? `${paperCount} <span title="Academic publications about or leveraging ${title}">Papers</span>` : "",
+      numberOfRepos ? `${numeral(numberOfRepos).format("0a")} <span title="${title} repos on GitHub.">Repos</span>` : ""
     ]
       .filter(i => i)
       .join("\n ")
@@ -1469,9 +1255,7 @@ class Feature {
   get percentage() {
     const { yes, no } = this
     const measurements = yes + no
-    return measurements < 100
-      ? "-"
-      : lodash.round((100 * yes) / measurements, 0) + "%"
+    return measurements < 100 ? "-" : lodash.round((100 * yes) / measurements, 0) + "%"
   }
 
   get aka() {
@@ -1495,9 +1279,7 @@ class Feature {
   }
 
   get pseudoExample() {
-    return (this.get("pseudoExample") || "")
-      .replace(/\</g, "&lt;")
-      .replace(/\|/g, "&#124;")
+    return (this.get("pseudoExample") || "").replace(/\</g, "&lt;").replace(/\|/g, "&#124;")
   }
 
   get references() {
@@ -1506,31 +1288,16 @@ class Feature {
 
   get languagesWithThisFeature() {
     const { id } = this
-    return this.base
-      .getLanguagesWithFeatureResearched(id)
-      .filter(file => file.extended.get(id) === "true")
+    return this.base.getLanguagesWithFeatureResearched(id).filter(file => file.extended.get(id) === "true")
   }
 
   get languagesWithoutThisFeature() {
     const { id } = this
-    return this.base
-      .getLanguagesWithFeatureResearched(id)
-      .filter(file => file.extended.get(id) === "false")
+    return this.base.getLanguagesWithFeatureResearched(id).filter(file => file.extended.get(id) === "false")
   }
 
   get summary() {
-    const {
-      id,
-      title,
-      fileName,
-      titleLink,
-      aka,
-      token,
-      yes,
-      no,
-      percentage,
-      pseudoExample
-    } = this
+    const { id, title, fileName, titleLink, aka, token, yes, no, percentage, pseudoExample } = this
     return {
       id,
       title,
@@ -1557,9 +1324,7 @@ class Feature {
     const negatives = this.languagesWithoutThisFeature
     const negativeText = negatives.length
       ? `* Languages *without* ${title} include ${negatives
-          .map(
-            file => `<a href="../truebase/${file.permalink}">${file.title}</a>`
-          )
+          .map(file => `<a href="../truebase/${file.permalink}">${file.title}</a>`)
           .join(", ")}`
       : ""
 
@@ -1575,19 +1340,14 @@ class Feature {
     const grouped = lodash.groupBy(examples, "example")
     const examplesText = Object.values(grouped)
       .map(group => {
-        const links = group
-          .map(hit => `<a href="../truebase/${hit.id}.html">${hit.title}</a>`)
-          .join(", ")
+        const links = group.map(hit => `<a href="../truebase/${hit.id}.html">${hit.title}</a>`).join(", ")
         return `codeWithHeader Example from ${links}:
  ${shiftRight(removeReturnChars(lodash.escape(group[0].example)), 1)}`
       })
       .join("\n\n")
 
     let referencesText = ""
-    if (references.length)
-      referencesText = `* Read more about ${title} on the web: ${linkManyAftertext(
-        references
-      )}`
+    if (references.length) referencesText = `* Read more about ${title} on the web: ${linkManyAftertext(references)}`
 
     let descriptionText = ""
     const description = this.node.get(`description`)
@@ -1650,12 +1410,7 @@ const calcRanks = (folder, files) => {
 
   objects.forEach((obj, rank) => {
     // Drop the item this does the worst on, as it may be a flaw in PLDB.
-    const top3 = [
-      obj.jobsRank,
-      obj.usersRank,
-      obj.factsRank,
-      obj.pageRankLinksRank
-    ]
+    const top3 = [obj.jobsRank, obj.usersRank, obj.factsRank, obj.pageRankLinksRank]
     obj.totalRank = lodash.sum(lodash.sortBy(top3).slice(0, 3))
   })
   objects = lodash.sortBy(objects, ["totalRank"])
@@ -1713,9 +1468,10 @@ const makeInverseRanks = ranks => {
 }
 
 class PLDBFolder extends TrueBaseFolder {
-  computedColumnNames = `pldbId bookCount paperCount hoplId exampleCount numberOfUsers numberOfRepos numberOfJobs languageRank rank factCount lastActivity`.split(
-    " "
-  )
+  computedColumnNames =
+    `pldbId bookCount paperCount hoplId exampleCount numberOfUsers numberOfRepos numberOfJobs languageRank rank factCount lastActivity`.split(
+      " "
+    )
   globalSortFunction = item => parseInt(item.rank)
   // todo: move these to .truebase settings file
   thingsViewSourcePath = `https://github.com/breck7/pldb/blob/main/things/`
@@ -1734,9 +1490,7 @@ class PLDBFolder extends TrueBaseFolder {
     if (query === undefined || query === "") return
     const { searchIndex } = this
     return (
-      searchIndex.get(query) ||
-      searchIndex.get(query.toLowerCase()) ||
-      searchIndex.get(Utils.titleToPermalink(query))
+      searchIndex.get(query) || searchIndex.get(query.toLowerCase()) || searchIndex.get(Utils.titleToPermalink(query))
     )
   }
 
@@ -1754,9 +1508,7 @@ class PLDBFolder extends TrueBaseFolder {
       .slice(0)
       .reverse()
       .forEach(file => {
-        file.extensions
-          .split(" ")
-          .forEach(ext => extensionsMap.set(ext, file.id))
+        file.extensions.split(" ").forEach(ext => extensionsMap.set(ext, file.id))
       })
 
     return extensionsMap
@@ -1772,11 +1524,7 @@ class PLDBFolder extends TrueBaseFolder {
   }
 
   predictNumberOfUsers(file) {
-    const mostRecents = [
-      "linkedInSkill",
-      "subreddit memberCount",
-      "projectEuler members"
-    ]
+    const mostRecents = ["linkedInSkill", "subreddit memberCount", "projectEuler members"]
     const directs = ["meetup members", "githubRepo stars"]
     const customs = {
       wikipedia: v => 20,
@@ -1803,15 +1551,11 @@ class PLDBFolder extends TrueBaseFolder {
   }
 
   predictNumberOfJobs(file) {
-    return (
-      Math.round(file.getMostRecentInt("linkedInSkill") * 0.01) +
-      file.getMostRecentInt("indeedJobs")
-    )
+    return Math.round(file.getMostRecentInt("linkedInSkill") * 0.01) + file.getMostRecentInt("indeedJobs")
   }
 
   get rankings() {
-    if (!this.quickCache.rankings)
-      this.quickCache.rankings = computeRankings(this)
+    if (!this.quickCache.rankings) this.quickCache.rankings = computeRankings(this)
     return this.quickCache.rankings
   }
 
@@ -1824,11 +1568,8 @@ class PLDBFolder extends TrueBaseFolder {
 
   getLanguagesWithFeatureResearched(id) {
     if (!this.quickCache.featureCache) this.quickCache.featureCache = {}
-    if (this.quickCache.featureCache[id])
-      return this.quickCache.featureCache[id]
-    this.quickCache.featureCache[id] = this.topLanguages.filter(file =>
-      file.extended.has(id)
-    )
+    if (this.quickCache.featureCache[id]) return this.quickCache.featureCache[id]
+    this.quickCache.featureCache[id] = this.topLanguages.filter(file => file.extended.has(id))
     return this.quickCache.featureCache[id]
   }
 
@@ -1842,9 +1583,7 @@ class PLDBFolder extends TrueBaseFolder {
 
   get features() {
     if (!this.quickCache.features) {
-      const allGrammarNodes = Object.values(
-        this.nodeAt(0).parsed.definition.programParserDefinitionCache
-      )
+      const allGrammarNodes = Object.values(this.nodeAt(0).parsed.definition.programParserDefinitionCache)
 
       const features = allGrammarNodes
         .filter(node => node.get("extends") === "abstractFeatureParser")
@@ -1924,10 +1663,7 @@ class PLDBFolder extends TrueBaseFolder {
   }
 
   get keywordsOneHotCsv() {
-    if (!this.quickCache.keywordsOneHotCsv)
-      this.quickCache.keywordsOneHotCsv = new TreeNode(
-        this.keywordsOneHot
-      ).asCsv
+    if (!this.quickCache.keywordsOneHotCsv) this.quickCache.keywordsOneHotCsv = new TreeNode(this.keywordsOneHot).asCsv
     return this.quickCache.keywordsOneHotCsv
   }
 
@@ -1935,9 +1671,7 @@ class PLDBFolder extends TrueBaseFolder {
     if (this.quickCache.keywordsOneHot) return this.quickCache.keywordsOneHot
     const { keywordsTable } = this
     const allKeywords = keywordsTable.rows.map(row => row.keyword)
-    const langsWithKeywords = this.topLanguages.filter(file =>
-      file.has("keywords")
-    )
+    const langsWithKeywords = this.topLanguages.filter(file => file.has("keywords"))
     const headerRow = allKeywords.slice()
     headerRow.unshift("pldbId")
     const rows = langsWithKeywords.map(file => {
@@ -1955,9 +1689,7 @@ class PLDBFolder extends TrueBaseFolder {
 
   get keywordsTable() {
     if (this.quickCache.keywordsTable) return this.quickCache.keywordsTable
-    const langsWithKeywords = this.topLanguages.filter(file =>
-      file.has("keywords")
-    )
+    const langsWithKeywords = this.topLanguages.filter(file => file.has("keywords"))
     const langsWithKeywordsCount = langsWithKeywords.length
 
     const keywordsMap = {}
@@ -1986,9 +1718,7 @@ class PLDBFolder extends TrueBaseFolder {
           return `<a href='../truebase/${file.permalink}'>${file.title}</a>`
         })
         .join(" ")
-      row.frequency =
-        Math.round(100 * lodash.round(row.count / langsWithKeywordsCount, 2)) +
-        "%"
+      row.frequency = Math.round(100 * lodash.round(row.count / langsWithKeywordsCount, 2)) + "%"
     })
 
     this.quickCache.keywordsTable = {
@@ -2002,10 +1732,7 @@ class PLDBFolder extends TrueBaseFolder {
 
 class PLDBServer extends TrueBaseServer {
   beforeListen() {
-    this.serveFolderNested(
-      "/monaco-editor",
-      path.join(nodeModulesFolder, "monaco-editor")
-    )
+    this.serveFolderNested("/monaco-editor", path.join(nodeModulesFolder, "monaco-editor"))
     // todo: cleanup
     this.addRedirects(this.app)
     super.beforeListen()
@@ -2014,9 +1741,7 @@ class PLDBServer extends TrueBaseServer {
 
   addRedirects(app) {
     // /languages => /truebase redirect
-    app.get("/languages/:id", (req, res, next) =>
-      res.status(302).redirect(`/truebase/${req.params.id}`)
-    )
+    app.get("/languages/:id", (req, res, next) => res.status(302).redirect(`/truebase/${req.params.id}`))
 
     const redirects = Disk.read(path.join(siteFolder, "redirects.txt"))
       .split("\n")
@@ -2028,9 +1753,7 @@ class PLDBServer extends TrueBaseServer {
         }
       })
     redirects.forEach(redirect =>
-      app.get(`/${redirect.oldUrl}`, (req, res) =>
-        res.status(301).redirect(redirect.newUrl)
-      )
+      app.get(`/${redirect.oldUrl}`, (req, res) => res.status(301).redirect(redirect.newUrl))
     )
   }
 
@@ -2045,12 +1768,7 @@ class PLDBServer extends TrueBaseServer {
     return {
       NUM_KEYWORDS: numeral(rows.length).format("0,0"),
       LANGS_WITH_KEYWORD_DATA: langsWithKeywordsCount,
-      KEYWORDS_TABLE: quickTree(rows, [
-        "keyword",
-        "count",
-        "frequency",
-        "langs"
-      ])
+      KEYWORDS_TABLE: quickTree(rows, ["keyword", "count", "frequency", "langs"])
     }
   }
 
@@ -2063,10 +1781,7 @@ class PLDBServer extends TrueBaseServer {
     const { virtualFiles } = this
     const { siteFolder } = this.settings
     this.folder.features.forEach(
-      feature =>
-        (virtualFiles[
-          siteFolder + `/features/${feature.id}.scroll`
-        ] = feature.toScroll())
+      feature => (virtualFiles[siteFolder + `/features/${feature.id}.scroll`] = feature.toScroll())
     )
   }
 
@@ -2101,19 +1816,10 @@ class PLDBServer extends TrueBaseServer {
         .sortBy(writtenIn, "rank")
         .map(file => `- ${file.title}\n link ../truebase/${file.permalink}`)
         .join("\n"),
-      PACKAGES_TABLE: npmPackages
-        .map(s => `- ${s}\n https://www.npmjs.com/package/${s}`)
-        .join("\n"),
+      PACKAGES_TABLE: npmPackages.map(s => `- ${s}\n https://www.npmjs.com/package/${s}`).join("\n"),
       SOURCES_TABLE: sources.map(s => `- ${s}\n https://${s}`).join("\n"),
-      CONTRIBUTORS_TABLE: JSON.parse(
-        Disk.read(path.join(pagesDir, "contributors.json"))
-      )
-        .filter(
-          item =>
-            item.login !== "codelani" &&
-            item.login !== "breck7" &&
-            item.login !== "pldbbot"
-        )
+      CONTRIBUTORS_TABLE: JSON.parse(Disk.read(path.join(pagesDir, "contributors.json")))
+        .filter(item => item.login !== "codelani" && item.login !== "breck7" && item.login !== "pldbbot")
         .map(item => `- ${item.login}\n ${item.html_url}`)
         .join("\n")
     }
@@ -2122,9 +1828,7 @@ class PLDBServer extends TrueBaseServer {
   warmCsvFiles() {
     super.warmCsvFiles()
     const { folder } = this
-    this.virtualFiles[
-      path.join(this.settings.siteFolder, "languages.csv")
-    ] = folder.makeCsv(
+    this.virtualFiles[path.join(this.settings.siteFolder, "languages.csv")] = folder.makeCsv(
       "languages.csv",
       folder.objectsForCsv.filter(obj => isLanguage(obj.type))
     )
@@ -2137,12 +1841,8 @@ class PLDBServer extends TrueBaseServer {
       APPROXIMATE_FACT_COUNT: numeral(folder.factCount).format("0,0a"),
       COL_COUNT: folder.colNamesForCsv.length,
       ENTITY_COUNT: folder.length,
-      ENTITIES_FILE_SIZE_UNCOMPRESSED: numeral(
-        folder.makeCsv("pldb.csv").length
-      ).format("0.0b"),
-      LANGS_FILE_SIZE_UNCOMPRESSED: numeral(
-        folder.makeCsv("languages.csv").length
-      ).format("0.0b"),
+      ENTITIES_FILE_SIZE_UNCOMPRESSED: numeral(folder.makeCsv("pldb.csv").length).format("0.0b"),
+      LANGS_FILE_SIZE_UNCOMPRESSED: numeral(folder.makeCsv("languages.csv").length).format("0.0b"),
       "// COLUMN_METADATA_TABLE": quickTree(
         folder.columnDocumentation,
         folder.columnsCsvOutput.columnMetadataColumnNames
@@ -2166,13 +1866,7 @@ class PLDBServer extends TrueBaseServer {
     })
 
     return {
-      TOP_1000: quickTree(files.slice(0, 1000), [
-        "title",
-        "titleLink",
-        "appeared",
-        "type",
-        "rank"
-      ])
+      TOP_1000: quickTree(files.slice(0, 1000), ["title", "titleLink", "appeared", "type", "rank"])
     }
   }
 
@@ -2189,41 +1883,23 @@ class PLDBServer extends TrueBaseServer {
       })
 
     const allExtensions = new Set()
-    files.forEach(file =>
-      file.extensions.split(" ").forEach(ext => allExtensions.add(ext))
-    )
+    files.forEach(file => file.extensions.split(" ").forEach(ext => allExtensions.add(ext)))
 
-    files.forEach(
-      file => (file.numberOfExtensions = file.extensions.split(" ").length)
-    )
+    files.forEach(file => (file.numberOfExtensions = file.extensions.split(" ").length))
 
     return {
       EXTENSION_COUNT: numeral(allExtensions.size).format("0,0"),
-      TABLE: quickTree(lodash.sortBy(files, "rank"), [
-        "name",
-        "nameLink",
-        "extensions",
-        "numberOfExtensions"
-      ]),
+      TABLE: quickTree(lodash.sortBy(files, "rank"), ["name", "nameLink", "extensions", "numberOfExtensions"]),
       LANG_WITH_DATA_COUNT: files.length
     }
   }
 
   get topFeaturesImports() {
     const { topFeatures } = this.folder
-    const summaries = topFeatures
-      .map(feature => feature.summary)
-      .filter(feature => feature.measurements > 9)
+    const summaries = topFeatures.map(feature => feature.summary).filter(feature => feature.measurements > 9)
     return {
       COUNT: numeral(summaries.length).format("0,0"),
-      TABLE: quickTree(summaries, [
-        "title",
-        "titleLink",
-        "pseudoExample",
-        "yes",
-        "no",
-        "percentage"
-      ])
+      TABLE: quickTree(summaries, ["title", "titleLink", "pseudoExample", "yes", "no", "percentage"])
     }
   }
 
@@ -2232,31 +1908,20 @@ class PLDBServer extends TrueBaseServer {
     const summaries = topFeatures.map(feature => feature.summary)
     return {
       COUNT: numeral(summaries.length).format("0,0"),
-      TABLE: quickTree(summaries, [
-        "title",
-        "titleLink",
-        "pseudoExample",
-        "yes",
-        "no",
-        "percentage"
-      ])
+      TABLE: quickTree(summaries, ["title", "titleLink", "pseudoExample", "yes", "no", "percentage"])
     }
   }
 
   get originCommunitiesImports() {
     const files = lodash.sortBy(
-      this.folder.filter(
-        file => file.isLanguage && file.originCommunity.length
-      ),
+      this.folder.filter(file => file.isLanguage && file.originCommunity.length),
       "languageRank"
     )
 
     const entities = this.folder.groupByListValues("originCommunity", files)
     const rows = Object.keys(entities).map(name => {
       const group = entities[name]
-      const languages = group
-        .map(lang => `<a href='../truebase/${lang.id}.html'>${lang.title}</a>`)
-        .join(" - ")
+      const languages = group.map(lang => `<a href='../truebase/${lang.id}.html'>${lang.title}</a>`).join(" - ")
       const count = group.length
       const top = -Math.min(...group.map(lang => lang.languageRank))
 
@@ -2279,9 +1944,7 @@ class PLDBServer extends TrueBaseServer {
       this.folder.filter(file => file.isLanguage),
       " and "
     )
-    const wikipediaLinks = new TreeNode(
-      Disk.read(path.join(listsFolder, "creators.tree"))
-    )
+    const wikipediaLinks = new TreeNode(Disk.read(path.join(listsFolder, "creators.tree")))
 
     const rows = Object.keys(entities).map(name => {
       const group = lodash.sortBy(entities[name], "languageRank")
@@ -2291,26 +1954,15 @@ class PLDBServer extends TrueBaseServer {
       return {
         name: !person
           ? `<a name='${anchorTag}' />${name}`
-          : `<a name='${anchorTag}' href='https://en.wikipedia.org/wiki/${person.get(
-              "wikipedia"
-            )}'>${name}</a>`,
-        languages: group
-          .map(
-            file => `<a href='../truebase/${file.permalink}'>${file.title}</a>`
-          )
-          .join(" - "),
+          : `<a name='${anchorTag}' href='https://en.wikipedia.org/wiki/${person.get("wikipedia")}'>${name}</a>`,
+        languages: group.map(file => `<a href='../truebase/${file.permalink}'>${file.title}</a>`).join(" - "),
         count: group.length,
         topRank: group[0].languageRank + 1
       }
     })
 
     return {
-      TABLE: quickTree(lodash.sortBy(rows, "topRank"), [
-        "name",
-        "languages",
-        "count",
-        "topRank"
-      ]),
+      TABLE: quickTree(lodash.sortBy(rows, "topRank"), ["name", "languages", "count", "topRank"]),
       COUNT: numeral(Object.values(entities).length).format("0,0")
     }
   }

@@ -22,7 +22,14 @@
     "perf": "node --cpu-prof --cpu-prof-name=test.cpuprofile ./PLDB.js testPerf"
   },
   "prettier": {
-    "semi": false
+    "parser": "babel",
+    "useTabs": false,
+    "tabWidth": 2,
+    "semi": false,
+    "printWidth": 120,
+    "trailingComma": "none",
+    "arrowParens": "avoid",
+    "quoteProps": "as-needed"
   },
   "repository": {
     "type": "git",
