@@ -176,6 +176,35 @@ class PLDBFile extends TrueBaseFile {
     return this.get("hopl")?.replace("https://hopl.info/showlanguage.prx?exp=", "")
   }
 
+  get helpfulResearchLinks() {
+    const id = this.id
+    const title = this.get("title")
+    const references = this.findNodes("reference").map(node => "Reference: " + node.content)
+
+    const links = ["website", "githubRepo", "wikipedia"]
+      .filter(key => this.has(key))
+      .map(key => `${Utils.capitalizeFirstLetter(key)}: ${this.get(key)}`)
+
+    return (
+      Utils.linkify(`<b>PLDB on ${title}:</b><br>
+Git: https://github.com/breck7/pldb/blob/main/truebase/things/${id}.pldb<br>
+HTML page: https://pldb.com/truebase/${id}.html
+<br><br>
+<b>Links about ${title}:</b><br>
+${links.join("<br>")}
+${references.join("<br>")}<br><br>
+
+<b>Search for more information about ${title}:</b><br>
+Google: https://www.google.com/search?q=${title}+programming+language<br>
+Google w/time: https://www.google.com/search?q=${title}+programming+language&tbs=cdr%3A1%2Ccd_min%3A1%2F1%2F1980%2Ccd_max%3A12%2F31%2F1995&tbm=<br>
+Google Scholar: https://scholar.google.com/scholar?q=${title}<br>
+Google Groups: https://groups.google.com/forum/#!search/${title}<br>
+Google Trends: https://trends.google.com/trends/explore?date=all&q=${title}<br>
+DDG: https://duckduckgo.com/?q=${title}<br>`) +
+      `Wayback Machine: <a target="_blank" href="https://web.archive.org/web/20220000000000*/${title}">https://web.archive.org/web/20220000000000*/${title}</a>`
+    )
+  }
+
   get names() {
     return [
       this.id,
