@@ -1,4 +1,5 @@
 hasVariadicFunctionsParser
+ description Does the language support functions that accept a variable number of parameters?
  extends abstractFeatureParser
  string title Variadic Functions
  string pseudoExample args.map(doSomething)

@@ -1,4 +1,5 @@
 hasZeroBasedNumberingParser
+ description Does the language start counting from 0, rather than 1?
  extends abstractFeatureParser
  string title Zero-based numbering
  string reference https://en.wikipedia.org/wiki/Zero-based_numbering

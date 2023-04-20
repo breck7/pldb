@@ -1,5 +1,6 @@
 hasZippersParser
  extends abstractFeatureParser
+ description Does the language have zippers built in or as a library, which are roughly a pointer with context on a tree?
  string title Zippers
  string reference https://wiki.haskell.org/Zipper https://en.wikipedia.org/wiki/Zipper_(data_structure)
  string pseudoExample pldbCursor.moveLeft()
