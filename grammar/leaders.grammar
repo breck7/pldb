@@ -3,6 +3,6 @@ creatorNameCell
 creatorsParser
  extends abstractStringListColumnParser
  boolean alwaysRecommended true
- description Name(s) of the original creators of the language delimited by " and "
+ description What are the name(s) of the original creators of the language delimited by " and "?
  catchAllCellType creatorNameCell
  listDelimiter  and 

@@ -1,14 +1,14 @@
 websiteParser
- description URL of the official homepage for the language project.
+ description What is the URL of the official homepage for this language project?
  extends abstractUrlColumnParser
 webReplParser
  extends abstractUrlColumnParser
- description An online repl for the project.
+ description What is a URL for an online repl of this language?
  single false
 domainNameCell
  extends stringCell
 domainNameParser
- description If the project website is on its own domain.
+ description What is the domain for this language's website if it has its own?
  cells columnNameCell domainNameCell
  extends abstractWordColumnParser
  contentKey name
@@ -17,5 +17,5 @@ domainNameParser
   description When was this domain first registered?
  awisRankParser
   extends abstractAnnualRankMapParser
-  description Alexa Web Information Service (AWIS) domain ranking.
+  description What is the Alexa Web Information Service (AWIS) domain ranking?
   string sourceDomain aws.amazon.com

@@ -1,7 +1,7 @@
 twitterParser
  extends abstractUrlGuidColumnParser
- description Official Twitter handle of the entity, if any.
+ description What is a URL to the official Twitter account of this thing, if any?
  string sourceDomain twitter.com
  followersParser
-  description How many followers the linked account has.
+  description How many followers does the linked account have?
   extends abstractPopulationCountColumnParser

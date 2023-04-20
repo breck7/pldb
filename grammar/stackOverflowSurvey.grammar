@@ -1,20 +1,20 @@
 stackOverflowSurveyParser
  extends abstractHashMapColumnParser
- description StackOverflow does an annual developer survey: https://insights.stackoverflow.com/survey
+ description What is the summary of this language from the StackOverflow annual developer survey found here https://insights.stackoverflow.com/survey?
  string sourceDomain insights.stackoverflow.com
  stackOverflowSurveyYearParser
-  description Survey results for a particular year.
+  description What are the survey results for a particular year?
   cells yearCell
   pattern \d+
   uniqueFirstWord
   usersParser
    extends abstractPopulationCountColumnParser
-   description How many developers reported using this language.
+   description How many developers reported using this language?
   medianSalaryParser
-   description Median salary reported by developers using this language.
+   description What is the median salary reported by developers using this language?
    extends abstractIntColumnParser
   fansParser
-   description How many developers reported wanting to learn this language.
+   description How many developers reported wanting to learn this language?
    extends abstractPopulationCountColumnParser
   percentageUsingParser
    description What percentage of survey respondents report using this language?

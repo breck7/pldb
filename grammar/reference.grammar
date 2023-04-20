@@ -1,4 +1,5 @@
 referenceParser
  extends abstractUrlColumnParser
- description A link to more info about this entity. You can add raw links and then auto "upgrade" them using some of the importer code.
+ description What is a URL to more info about this thing?
+ // You can add raw links and then auto "upgrade" them using some of the importer code.
  single false

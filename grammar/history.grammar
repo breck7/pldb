@@ -6,19 +6,23 @@ isDeadParser
  description Has the creator or maintainer announced it officially dead? Include a link to proof of the announcement.
  extends abstractBooleanColumnParser
  catchAllParser urlCitationParser
+
 nativeLanguageWordCell
  description The name of a natural language like English or Japanese.
 nativeLanguageParser
  cells columnNameCell nativeLanguageWordCell
- description Nearly all programming languages are written in English, but some aren't. Set this field for the ones that are not.
+ description What is the native human language for this language, if not English?
  extends abstractEnumColumnParser
+
 firstAnnouncementParser
- description A url announcing the creation or release of a new language
+ description What is a URL announcing the creation or release of this language?
  extends abstractUrlColumnParser
+
 announcementMethodCell
  description Common ways languages are first announced.
  enum pressRelease paper rfc webpage blogPost interview dissertation
  highlightScope constant.language
+
 announcementMethodParser
  description How was the language first announced?
  extends abstractEnumColumnParser

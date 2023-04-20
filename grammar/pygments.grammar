@@ -1,6 +1,6 @@
 pygmentsHighlighterParser
  extends abstractMultiwordGuidColumnParser
- description A link to a Pygments syntax highlighting class for this language (https://pygments.org/)
+ description What is a url to a Pygments syntax highlighting class for this language https://pygments.org/?
  string sourceDomain pygments.org
  inScope fileExtensionsParser
  contentKey id

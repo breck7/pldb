@@ -2,7 +2,7 @@
 wikipediaParser
  inScope fileExtensionsParser exampleParser
  extends abstractUrlColumnParser
- description URL of the entity on Wikipedia, if and only if it has a page dedicated to it.
+ description What is the URL of this entity on Wikipedia, if and only if it has a page dedicated to it?
  cells columnNameCell urlCell
  string sourceDomain wikipedia.org
  contentKey url

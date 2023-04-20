@@ -1,4 +1,4 @@
 sourcehutRepoParser
- description URL of the official sourcehut repo for the project.
+ description What is the URL of the official sourcehut repo for this project?
  extends abstractGitRepoUrlColumnParser
  string sourceDomain sr.ht

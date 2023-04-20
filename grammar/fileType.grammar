@@ -1,0 +1,7 @@
+fileTypeWordCell
+ enum paper text binary na
+ highlightScope constant.language
+fileTypeParser
+ description What is the file encoding for programs in this language?
+ cells columnNameCell fileTypeWordCell
+ extends abstractEnumColumnParser

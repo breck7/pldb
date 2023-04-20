@@ -1,6 +1,6 @@
 screenshotParser
- description For visual languages, a picture is worth a thousand words. Provide the URL to the screenshot in the form: https://pldb.com/screenshots/[pldbId].png
+ description What is a URL to a screenshot of this visual language in the form https://pldb.com/screenshots/[pldbId].png?
  extends abstractUrlColumnParser
 photoParser
- description For notations, a picture is worth a thousand words. Provide a photo in the form: https://pldb.com/photos/[pldbId].png
+ description What is a URL to a screenshot of this real world notation in the form https://pldb.com/photos/[pldbId].png?
  extends abstractUrlColumnParser

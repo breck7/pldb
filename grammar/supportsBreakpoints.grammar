@@ -1,5 +1,6 @@
 supportsBreakpointsParser
  extends abstractFeatureParser
+ description Does this language support breakpoints?
  string title Breakpoints
  string pseudoExample debugger;
  string reference https://en.wikipedia.org/wiki/Breakpoint

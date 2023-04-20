@@ -1,4 +1,4 @@
 ubuntuPackageParser
  extends abstractOneWordGuidColumnParser
- description The name of an Ubuntu package for the language from https://packages.ubuntu.com/.
+ description What is the name of an Ubuntu package for this language from https://packages.ubuntu.com/, if any?
  string sourceDomain ubuntu.com

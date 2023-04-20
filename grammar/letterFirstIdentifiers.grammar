@@ -1,5 +1,5 @@
 letterFirstIdentifiersParser
  extends abstractFeatureParser
- description Must identifiers start with a letter
+ description Must identifiers start with a letter?
  string title Letter-first Identifiers
  string pseudoExample pldb100 = "OK" // 100pldb = "ERROR"

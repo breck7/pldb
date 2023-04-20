@@ -1,5 +1,6 @@
 isCaseSensitiveParser
  extends abstractFeatureParser
+ description Is this language case sensitive?
  string title Case Sensitivity
  string reference https://en.wikipedia.org/wiki/Case_sensitivity
  string pseudoExample pldb != PLDB

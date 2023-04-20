@@ -2,7 +2,8 @@ abstractRelationshipParser
  extends abstractTrueBaseLinksColumnParser
 relatedParser
  extends abstractRelationshipParser
- description What languages are related? This serves as a catch all, and it is better to use a more specific relationship node such as "supersetOf".
+ description What languages are related?
+ // This serves as a catch all, and it is better to use a more specific relationship node such as "supersetOf".
 runsOnVmParser
  extends abstractRelationshipParser
  description What virtual machine(s) does this language run on? 
@@ -19,7 +20,8 @@ renamedToParser
  description What is the new name of this language?
  extends abstractRelationshipParser
 supersetOfParser
- description Is this language a superset of another? If you specify this link then the superset language will inherit all features of subset language.
+ description Is this language a superset of another?
+ // If you specify this link then the superset language will inherit all features of subset language.
  extends abstractRelationshipParser
 writtenInParser
  description What language(s) is the main implementation written in?

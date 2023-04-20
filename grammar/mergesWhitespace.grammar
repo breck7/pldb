@@ -1,5 +1,6 @@
 mergesWhitespaceParser
  extends abstractFeatureParser
+ description Does this language merge whitespace, so N spaces is treated the same as a single space?
  string title Merges Whitespace
  string reference http://wiki.c2.com/?SyntacticallySignificantWhitespaceConsideredHarmful
  string pseudoExample result = 1    +    2
