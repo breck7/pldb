@@ -1,7 +1,7 @@
 dblpParser
  boolean fromCrawler true
  extends abstractTrueBaseColumnParser
- description Publications about this language from https://dblp.org/.
+ description What are publications about this language from https://dblp.org/?
  string sourceDomain dblp.org
  hitsParser
   extends abstractCountColumnParser

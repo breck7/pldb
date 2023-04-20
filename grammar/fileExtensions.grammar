@@ -1,10 +1,12 @@
 fileExtensionCell
  extends stringCell
+
 fileExtensionsParser
  extends abstractStringListColumnParser
  catchAllCellType fileExtensionCell
  description What are the file extensions for this language?
+
 filenamesParser
  extends abstractStringListColumnParser
  catchAllCellType fileNameCell
- description Filenames commonly associated with the language.
+ description What are the filenames commonly associated with this language?

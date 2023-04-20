@@ -1,5 +1,6 @@
 featureExampleCodeParser
- description Example usage of the feature. Ideally includes any necessary boilerplate to be runnable.
+ description What is an example that demonstrates usage of this feature?
+ // Ideally includes any necessary boilerplate to be runnable.
  baseParser blobParser
 abstractFeatureParser
  extends abstractBooleanColumnParser

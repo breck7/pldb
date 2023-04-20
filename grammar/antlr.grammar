@@ -1,4 +1,5 @@
 antlrParser
  extends abstractUrlGuidColumnParser
- description A link to the ANTLR grammar for this language (https://github.com/antlr/grammars-v4/tree/master/LANGUAGE)
+ description What is a URL to an ANTLR grammar for this language?
+ // A good collection of ANTLR grammars: https://github.com/antlr/grammars-v4/tree/master/LANGUAGE)
  string sourceDomain www.antlr.org

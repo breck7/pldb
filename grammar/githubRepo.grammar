@@ -4,7 +4,7 @@ githubRepoUrlCell
 
 // Basics
 githubRepoParser
- description URL of the official GitHub repo for the project if it hosted there.
+ description What is the URL of the official GitHub repo for the project if it is hosted there?
  extends abstractGitRepoUrlColumnParser
  cells columnNameCell githubRepoUrlCell
  inScope descriptionParser

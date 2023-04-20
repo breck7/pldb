@@ -1,5 +1,5 @@
 goodreadsParser
  boolean fromCrawler true
  extends abstractDelimitedValuesBlobColumnParser
- description Books about this language from Goodreads.
+ description What are books about this language from Goodreads?
  string sourceDomain goodreads.com

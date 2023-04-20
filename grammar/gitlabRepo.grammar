@@ -1,4 +1,4 @@
 gitlabRepoParser
- description URL of the official GitLab repo for the language project.
+ description What is the URL of the official GitLab repo for the language project?
  extends abstractGitRepoUrlColumnParser
  string sourceDomain gitlab.com

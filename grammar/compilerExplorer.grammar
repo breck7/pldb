@@ -1,6 +1,6 @@
 compilerExplorerParser
  extends abstractMultiwordGuidColumnParser
- description This language's name on https://godbolt.org
+ description What is this language's name on https://godbolt.org?
  string sourceDomain godbolt.org
  contentKey id
  inScope exampleParser
