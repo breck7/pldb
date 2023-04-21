@@ -1,5 +1,6 @@
 hasTriplesParser
  extends abstractFeatureParser
+ description Does the language have a structure for subject–predicate–object expressions?
  string title Triples
  string pseudoExample Javascript isListedIn PLDB
  string reference https://en.wikipedia.org/wiki/Semantic_triple

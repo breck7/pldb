@@ -1,5 +1,6 @@
 hasMultipleInheritanceParser
  extends abstractFeatureParser
+ description Does the language allow multiple inheritance?
  string title Multiple Inheritance
  string pseudoExample extends parentWhichExtendsSomethingElse
  string reference https://en.wikipedia.org/wiki/Multiple_inheritance

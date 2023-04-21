@@ -95,6 +95,9 @@ hasConditionals true
  if (true)
   console.log("hi!")
 hasComments true
+hasLabels true
+ main:
+ console.log("pldb")
 hasConstructors true
  class Person {
   constructor(name) {
@@ -162,6 +165,8 @@ hasMultilineStrings true
  two`
 hasMultipleInheritance false
 hasCaseInsensitiveIdentifiers false
+hasOperators true
+ 1 + 1
 hasOperatorOverloading false
 hasReferences true
 hasPrintDebugging true

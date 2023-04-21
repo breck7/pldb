@@ -1,5 +1,6 @@
 hasMacrosParser
  extends abstractFeatureParser
+ description Does the language have a compile-time macro pass?
  string title Macros
  string pseudoExample #define pldbItems 4000
  string reference https://en.wikipedia.org/wiki/Macro_(computer_science)

@@ -1,5 +1,6 @@
 hasInterfacesParser
  extends abstractFeatureParser
+ description Does this language have a concept of interfaces?
  string title Interfaces
  string pseudoExample interface PLDBFile
  string reference https://en.wikipedia.org/wiki/Protocol_(object-oriented_programming)

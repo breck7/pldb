@@ -1,5 +1,7 @@
 hasPointersParser
  extends abstractFeatureParser
+ // question: are there languages that have pointers to a location in an l1/lN cache?
+ description Does the language have a structure that is a location in memory?
  string title Pointers
  string pseudoExample int *pldb
  string reference https://en.wikipedia.org/wiki/Pointer_(computer_programming)

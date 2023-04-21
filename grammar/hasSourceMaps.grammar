@@ -1,4 +1,5 @@
 hasSourceMapsParser
  extends abstractFeatureParser
+ description Does the language support the generation of source maps?
  string title Source Maps
  string pseudoExample {file: 'pldb.min.js',sources: ['pldb.js'], mappings: 'CAAC,IAAI,IAAM'}

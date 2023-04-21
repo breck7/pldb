@@ -1,5 +1,6 @@
 hasStructsParser
  extends abstractFeatureParser
+ description Does the language have a structs structure?
  string title Structs
  string pseudoExample struct pldbFile { int rank; char *title; };
  string reference https://en.wikipedia.org/wiki/Struct_(C_programming_language)

@@ -1,5 +1,6 @@
 hasMapsParser
  extends abstractFeatureParser
+ description Does the language have a map (aka hashtable) data structure?
  string title Maps
  string aka dict
  string aka dictionary

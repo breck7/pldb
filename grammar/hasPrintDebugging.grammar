@@ -1,5 +1,6 @@
 hasPrintDebuggingParser
  extends abstractFeatureParser
+ description Does the language have a built in function that allows one to print debug?
  string title Print() Debugging
  string reference https://en.wikipedia.org/wiki/Debug_code#Print_debugging
  string pseudoExample print "Hello PLDB"

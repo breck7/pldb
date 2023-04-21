@@ -1,5 +1,6 @@
 hasMagicGettersAndSettersParser
  extends abstractFeatureParser
+ description Does the language have a way to handle undefined getters and setters?
  string title Magic Getters and Setters
  string reference https://www.php.net/manual/en/language.oop5.overloading.php#object.get
  string pseudoExample get(name) => obj[name]

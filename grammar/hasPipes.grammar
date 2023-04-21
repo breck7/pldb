@@ -1,5 +1,6 @@
 hasPipesParser
  extends abstractFeatureParser
+ description Does the language have a pipe operator?
  string title Pipes
  string pseudoExample ls pldb | wc
  string reference https://en.wikipedia.org/wiki/Pipeline_(software)

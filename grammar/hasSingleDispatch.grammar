@@ -1,5 +1,6 @@
 hasSingleDispatchParser
  extends abstractFeatureParser
+ description Does the method called depended on a single operand?
  string title Single Dispatch
  string reference https://en.wikipedia.org/wiki/Dynamic_dispatch#Single_and_multiple_dispatch
  string pseudoExample person.run()

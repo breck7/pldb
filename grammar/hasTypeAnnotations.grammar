@@ -1,4 +1,5 @@
 hasTypeAnnotationsParser
  extends abstractFeatureParser
+ description Does the language have a syntax for annotating the types of variables?
  string title Type Annotations
  string pseudoExample score: number

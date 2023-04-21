@@ -1,5 +1,6 @@
 hasMapFunctionsParser
  extends abstractFeatureParser
+ description Does the language support running map over a list?
  string title Map Functions
  string pseudoExample pldbFiles.map(downloadFilesFn)
  string reference https://en.wikipedia.org/wiki/Map_(higher-order_function)

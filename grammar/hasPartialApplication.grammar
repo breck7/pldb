@@ -1,5 +1,6 @@
 hasPartialApplicationParser
  extends abstractFeatureParser
+ description Does the language support partial application?
  string title Partial Application
  string pseudoExample add5 = num => addNumbers(10, num)
  string reference https://en.wikipedia.org/wiki/Partial_application

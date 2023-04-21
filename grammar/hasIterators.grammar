@@ -1,5 +1,6 @@
 hasIteratorsParser
  extends abstractFeatureParser
+ description Does this language have iterators?
  string title Iterators
  string pseudoExample for lang in pldb()
  string reference https://en.wikipedia.org/wiki/Iterator

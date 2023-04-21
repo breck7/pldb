@@ -1,5 +1,6 @@
 hasTraitsParser
  extends abstractFeatureParser
+ description Does the language support traits?
  string title Traits
  string pseudoExample use redBorder
  string reference https://en.wikipedia.org/wiki/Trait_(computer_programming)

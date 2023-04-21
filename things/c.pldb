@@ -145,6 +145,8 @@ hasManualMemoryManagement true
    free(poin);
  }
 hasOperatorOverloading false
+hasOperators true
+ 1 + 1;
 hasVariadicFunctions true
  double average(int count, ...)
  {

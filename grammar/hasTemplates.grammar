@@ -1,5 +1,6 @@
 hasTemplatesParser
  extends abstractFeatureParser
+ description Does the language support templates?
  string title Templates
  string pseudoExample template TCopy(T) {}
  string reference https://en.wikipedia.org/wiki/Template_metaprogramming

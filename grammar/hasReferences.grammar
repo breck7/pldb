@@ -1,5 +1,6 @@
 hasReferencesParser
  extends abstractFeatureParser
+ description Does the language have a structure for holding a reference to an existing object?
  string title References
  string pseudoExample fn(objPointer)
  string reference https://en.wikipedia.org/wiki/Reference_(computer_science)

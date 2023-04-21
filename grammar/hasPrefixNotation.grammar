@@ -1,5 +1,6 @@
 hasPrefixNotationParser
  extends abstractFeatureParser
+ description Does the language allow operators to be placed at the beginning of the expression?
  string title Prefix Notation
  string pseudoExample + 1 2
  string reference https://en.wikipedia.org/wiki/Polish_notation

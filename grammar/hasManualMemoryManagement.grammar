@@ -1,5 +1,6 @@
 hasManualMemoryManagementParser
  extends abstractFeatureParser
+ description Does the language have manual memory management?
  string title Manual Memory Management
  string pseudoExample malloc(4);
  string reference https://en.wikipedia.org/wiki/Manual_memory_management

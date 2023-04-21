@@ -1,5 +1,6 @@
 hasMonadsParser
  extends abstractFeatureParser
+ description Does the language have monads?
  string title Monad
  string pseudoExample g >>= f
  string reference https://en.wikipedia.org/wiki/Monad_(functional_programming)

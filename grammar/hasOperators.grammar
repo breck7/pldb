@@ -1,0 +1,6 @@
+hasOperatorsParser
+ extends abstractFeatureParser
+ description Does the language have operators?
+ string title Operators
+ string reference https://en.wikipedia.org/wiki/Operator_(computer_programming)
+ string pseudoExample 1 + 1

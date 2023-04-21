@@ -1,5 +1,6 @@
 hasTernaryOperatorsParser
  extends abstractFeatureParser
+ description Does the language have ternary operators?
  string title Ternary operators
  string pseudoExample true ? 1 : 0
  string reference https://en.wikipedia.org/wiki/Ternary_operation

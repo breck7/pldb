@@ -1,6 +1,6 @@
 hasSingleTypeArraysParser
  extends abstractFeatureParser
- description Has an array data structure that only can hold items of the same type.
+ description Does the language have a list data structure that only can hold items of the same type?
  string title Single-Type Arrays
  string reference https://en.wikipedia.org/wiki/Array_data_structure
  string pseudoExample const pldbRanks: int[]

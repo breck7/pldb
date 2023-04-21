@@ -1,5 +1,6 @@
 hasStringsParser
  extends abstractFeatureParser
+ description Does the language have a strings data structure?
  string title Strings
  string pseudoExample "Hello PLDB"
  string tokenKeyword stringToken

@@ -1,5 +1,6 @@
 hasRangeOperatorsParser
  extends abstractFeatureParser
+ description Does the language have a syntax for creating ranges?
  string title Range Operator
  string reference https://docstore.mik.ua/orelly/perl4/prog/ch03_15.htm
  string pseudoExample 1 ... 10

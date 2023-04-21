@@ -1,5 +1,6 @@
 hasLineCommentsParser
  extends abstractFeatureParser
+ description Does the language have line comments?
  string title Line Comments
  string reference https://en.wikipedia.org/wiki/Comparison_of_programming_languages_(syntax)#Comments
  string pseudoExample # Hello PLDB

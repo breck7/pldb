@@ -1,4 +1,5 @@
 hasMultilineStringsParser
  extends abstractFeatureParser
+ description Does the language support multiline strings?
  string title Multiline Strings
  string pseudoExample hello = """Hello\nPLDB"""

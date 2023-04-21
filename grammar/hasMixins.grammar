@@ -1,5 +1,6 @@
 hasMixinsParser
  extends abstractFeatureParser
+ description Does the language allow including methods from a class without inheriting from that class?
  string title Mixins
  string pseudoExample extends pldbFile, diskFile
  string reference https://en.wikipedia.org/wiki/Mixin

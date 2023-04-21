@@ -1,5 +1,6 @@
 hasPolymorphismParser
  extends abstractFeatureParser
+ description Does the language have polymorphism?
  string title Polymorphism
  string pseudoExample a + "b"; 1 + 2
  string reference https://en.wikipedia.org/wiki/Polymorphism_(computer_science)

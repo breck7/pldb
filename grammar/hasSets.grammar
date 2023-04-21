@@ -1,5 +1,6 @@
 hasSetsParser
  extends abstractFeatureParser
+ description Does the language come with a Set data structure?
  string title Sets
  string pseudoExample {"pldb", "PLDB"}
  string reference https://en.wikipedia.org/wiki/Set_(abstract_data_type)
