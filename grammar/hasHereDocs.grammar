@@ -1,5 +1,6 @@
 hasHereDocsParser
  extends abstractFeatureParser
+ description Does the language have a syntax for multiline text blocks?
  string title Here Document
  string reference https://en.wikipedia.org/wiki/Here_document
  string pseudoExample `A big multliline text block`

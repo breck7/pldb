@@ -1,5 +1,6 @@
 hasHexadecimalsParser
  extends abstractFeatureParser
+ description Does the language have a syntax for hexadecimals?
  string title Hexadecimals
  string aka Base16
  string aka hex

@@ -1,5 +1,6 @@
 hasBinaryOperatorsParser
  extends abstractFeatureParser
+ description Does the language have operators for operating on binary types?
  string title Binary Operators
  string pseudoExample 1 + 1
  string reference https://en.wikipedia.org/wiki/Binary_operation

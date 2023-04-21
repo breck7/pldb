@@ -1,5 +1,6 @@
 hasDestructuringParser
  extends abstractFeatureParser
+ description Does the language have a syntax for conveniently extracting multiple values from a structure?
  string title Destructuring
  string website https://github.com/facebook/reason
  string reference https://reasonml.github.io/docs/en/destructuring

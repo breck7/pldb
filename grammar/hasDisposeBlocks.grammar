@@ -1,5 +1,6 @@
 hasDisposeBlocksParser
  extends abstractFeatureParser
+ description Does the language have a syntax for dispose blocks to free up resources allocated during execution?
  string title Dispose Blocks Pattern
  string pseudoExample with pldb: do computeRanks()
  string reference https://en.wikipedia.org/wiki/Dispose_pattern

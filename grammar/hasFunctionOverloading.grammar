@@ -1,5 +1,6 @@
 hasFunctionOverloadingParser
  extends abstractFeatureParser
+ description Can you have multiple functions with the same name but different parameters?
  string title Function Overloading
  string reference https://en.wikibooks.org/wiki/Introduction_to_Programming_Languages/Overloading https://en.wikipedia.org/wiki/Function_overloading
  string aka Ad hoc polymorphism

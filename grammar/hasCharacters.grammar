@@ -1,5 +1,6 @@
 hasCharactersParser
  extends abstractFeatureParser
+ description Does this language have a syntax and type for a "character"?
  string title Characters
  string pseudoExample char character = 'P';
  string reference https://en.wikipedia.org/wiki/Character_(computing)

@@ -1,5 +1,6 @@
 hasAsyncAwaitParser
  extends abstractFeatureParser
+ description Does the language have an async/await construct?
  string title Async Await
  string pseudoExample async downloadPldb => await getFiles()
  string reference https://en.wikipedia.org/wiki/Async/await

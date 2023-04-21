@@ -1,5 +1,7 @@
 hasImplicitArgumentsParser
  extends abstractFeatureParser
+ // todo: should we remove this one? I would have thought it was referring to something like an "arguments" implicit parameter
+ description Does the language have a concept of contextual or implicit parameters?
  string title Implicit Arguments
  string reference https://docs.scala-lang.org/tour/implicit-parameters.html
  string pseudoExample shout(implicit message: string)

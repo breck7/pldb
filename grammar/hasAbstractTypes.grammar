@@ -1,5 +1,6 @@
 hasAbstractTypesParser
  extends abstractFeatureParser
+ description Does this language have a keyword for abstract classes or types?
  string title Abstract Types
  string pseudoExample abstract class PLDBFile {}
  string reference https://en.wikipedia.org/wiki/Abstract_type

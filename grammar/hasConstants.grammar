@@ -1,5 +1,6 @@
 hasConstantsParser
  extends abstractFeatureParser
+ description Does the language have a way to declare constant compile time variables?
  string title Constants
  string pseudoExample const name = "PLDB"
  string reference https://en.wikipedia.org/wiki/Const_(computer_programming)

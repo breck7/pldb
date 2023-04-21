@@ -1,5 +1,6 @@
 hasFunctionsParser
  extends abstractFeatureParser
+ description Does the language have a concept of and syntax for functions?
  string title Functions
  string aka routines
  string aka procedures

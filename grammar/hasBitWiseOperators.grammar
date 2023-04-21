@@ -1,5 +1,6 @@
 hasBitWiseOperatorsParser
  extends abstractFeatureParser
  string title Bitwise Operators
+ description Does the language have operators for bitwise manipulations?
  string reference https://en.wikipedia.org/wiki/Bitwise_operations_in_C https://en.wikipedia.org/wiki/Bitwise_operation
  string pseudoExample 3 == (2 | 1)

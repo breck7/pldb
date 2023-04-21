@@ -1,4 +1,5 @@
 hasDynamicPropertiesParser
  extends abstractFeatureParser
+ description Does all properties have to be declared or does the language support dynamic properties?
  string title Dynamic Properties
  string pseudoExample pldb.score = 50

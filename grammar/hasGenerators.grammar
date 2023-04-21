@@ -1,5 +1,6 @@
 hasGeneratorsParser
  extends abstractFeatureParser
+ description Does the language have a concept of loops that yield?
  string title Generators
  string pseudoExample yield 2
  string reference https://en.wikipedia.org/wiki/Generator_(computer_programming)

@@ -1,5 +1,6 @@
 hasImplicitTypeConversionsParser
  extends abstractFeatureParser
+ description Does the language automatically convert types as needed?
  string title Implicit Type Casting
  string reference https://en.wikipedia.org/wiki/Type_conversion
  string pseudoExample console.log("hello " + 2)

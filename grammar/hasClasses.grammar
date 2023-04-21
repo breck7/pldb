@@ -1,5 +1,6 @@
 hasClassesParser
  extends abstractFeatureParser
+ description Does the language have a concept of classes?
  string title Classes
  string pseudoExample class PLDBFile {}
  string reference https://en.wikipedia.org/wiki/Class_(computer_programming)

@@ -1,5 +1,6 @@
 hasConditionalsParser
  extends abstractFeatureParser
+ description Does the language have conditional statements and/or conditional expressions?
  string title Conditionals
  string pseudoExample if (isTrue) printPldb()
  string reference https://en.wikipedia.org/wiki/Conditional_(computer_programming)

@@ -1,5 +1,6 @@
 hasAlgebraicTypesParser
  extends abstractFeatureParser
  string title Algebraic Data Type
+ description Does this language support algebraic types?
  string pseudoExample garageContents = empty | vehicle
  string reference https://en.wikipedia.org/wiki/Algebraic_data_type

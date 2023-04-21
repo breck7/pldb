@@ -1,5 +1,6 @@
 hasExplicitTypeCastingParser
  extends abstractFeatureParser
+ description Does the language have a syntax for type casting?
  string title Type Casting
  string pseudoExample (float)pldbRank;
  string reference https://en.wikipedia.org/wiki/Type_conversion

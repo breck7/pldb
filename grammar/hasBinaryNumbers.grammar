@@ -1,5 +1,6 @@
 hasBinaryNumbersParser
  extends abstractFeatureParser
+ description Does the language have a type and syntax for binary numbers?
  string title Binary Literals
  string pseudoExample 0b100110100000110011110010010
  string reference https://en.wikipedia.org/wiki/Binary_number

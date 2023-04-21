@@ -1,5 +1,6 @@
 hasGotosParser
  extends abstractFeatureParser
+ description Does the language have a concept of and syntax for gotos?
  string title Gotos
  string pseudoExample goto 10
  string reference https://en.wikipedia.org/wiki/Goto

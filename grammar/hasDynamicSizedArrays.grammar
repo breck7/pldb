@@ -1,2 +1,3 @@
 hasDynamicSizedArraysParser
+ description Do arrays have to have their size specified at compile time or can they be dynamically sized?
  extends abstractFeatureParser

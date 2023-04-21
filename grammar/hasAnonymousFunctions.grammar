@@ -1,6 +1,7 @@
 hasAnonymousFunctionsParser
  extends abstractFeatureParser
  string title Anonymous Functions
+ description Does the language support anonymous functions, aka Lambdas?
  string aka Lambdas
  string pseudoExample () => printPldb()
  string reference https://en.wikipedia.org/wiki/Anonymous_function
