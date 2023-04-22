@@ -499,10 +499,6 @@ DDG: https://duckduckgo.com/?q=${title}<br>`) +
     return this.quickCache.numberOfUsers
   }
 
-  get numberOfRepos() {
-    return this.get("githubLanguage repos")
-  }
-
   get numberOfJobs() {
     if (this.quickCache.numberOfJobs === undefined) this.quickCache.numberOfJobs = this.parent.predictNumberOfJobs(this)
     return this.quickCache.numberOfJobs
@@ -1235,13 +1231,14 @@ codeWithHeader ${this.title} <a href="../lists/keywords.html?filter=${this.id}">
   }
 
   get kpiBar() {
-    const { appeared, numberOfUsers, bookCount, paperCount, numberOfRepos, title, isLanguage, languageRank } = this
+    const { appeared, numberOfUsers, bookCount, paperCount, title, isLanguage, languageRank } = this
     const users =
       numberOfUsers > 10
         ? numberOfUsers < 1000
           ? numeral(numberOfUsers).format("0")
           : numeral(numberOfUsers).format("0.0a")
         : ""
+    const numberOfRepos = this.get("githubLanguage repos")
 
     const lines = [
       isLanguage
@@ -1502,7 +1499,7 @@ const makeInverseRanks = ranks => {
 
 class PLDBFolder extends TrueBaseFolder {
   computedColumnNames =
-    `pldbId bookCount paperCount hoplId exampleCount numberOfUsers numberOfRepos numberOfJobs languageRank rank factCount lastActivity`.split(
+    `pldbId bookCount paperCount hoplId exampleCount numberOfUsers numberOfJobs languageRank rank factCount lastActivity`.split(
       " "
     )
   globalSortFunction = item => parseInt(item.rank)
