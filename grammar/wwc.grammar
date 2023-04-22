@@ -196,3 +196,14 @@ abstractAnnualPopulationCountMapParser
  catchAllParser annualPopulationCountParser
  description A map of counts, one per year.
  extends abstractHashMapColumnParser
+
+// Common computed types
+abstractComputedSumColumnParser
+ boolean isComputed true
+ extends abstractIntColumnParser
+abstractComputedEstimateColumnParser
+ boolean isComputed true
+ extends abstractCountColumnParser
+abstractComputedRankColumnParser
+ boolean isComputed true
+ extends abstractIntColumnParser

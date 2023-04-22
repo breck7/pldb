@@ -493,15 +493,16 @@ DDG: https://duckduckgo.com/?q=${title}<br>`) +
     return wp ? wp.replace("https://en.wikipedia.org/wiki/", "").trim() : ""
   }
 
-  get numberOfUsers() {
-    if (this.quickCache.numberOfUsers === undefined)
-      this.quickCache.numberOfUsers = this.parent.predictNumberOfUsers(this)
-    return this.quickCache.numberOfUsers
+  get numberOfUsersEstimate() {
+    if (this.quickCache.numberOfUsersEstimate === undefined)
+      this.quickCache.numberOfUsersEstimate = this.parent.predictnumberOfUsersEstimate(this)
+    return this.quickCache.numberOfUsersEstimate
   }
 
-  get numberOfJobs() {
-    if (this.quickCache.numberOfJobs === undefined) this.quickCache.numberOfJobs = this.parent.predictNumberOfJobs(this)
-    return this.quickCache.numberOfJobs
+  get numberOfJobsEstimate() {
+    if (this.quickCache.numberOfJobsEstimate === undefined)
+      this.quickCache.numberOfJobsEstimate = this.parent.predictnumberOfJobsEstimate(this)
+    return this.quickCache.numberOfJobsEstimate
   }
 
   get percentile() {
@@ -942,8 +943,8 @@ ${creatorsLinks}
       facts.push(`${title} first developed in ${originCommunityStr}`)
     }
 
-    const { numberOfJobs } = this
-    const jobs = numberOfJobs > 10 ? numeral(numberOfJobs).format("0a") : ""
+    const { numberOfJobsEstimate } = this
+    const jobs = numberOfJobsEstimate > 10 ? numeral(numberOfJobsEstimate).format("0a") : ""
     if (jobs) facts.push(`PLDB estimates there are currently ${jobs} job openings for ${title} programmers.`)
 
     const { extensions } = this
@@ -1231,12 +1232,12 @@ codeWithHeader ${this.title} <a href="../lists/keywords.html?filter=${this.id}">
   }
 
   get kpiBar() {
-    const { appeared, numberOfUsers, bookCount, paperCount, title, isLanguage, languageRank } = this
+    const { appeared, numberOfUsersEstimate, bookCount, paperCount, title, isLanguage, languageRank } = this
     const users =
-      numberOfUsers > 10
-        ? numberOfUsers < 1000
-          ? numeral(numberOfUsers).format("0")
-          : numeral(numberOfUsers).format("0.0a")
+      numberOfUsersEstimate > 10
+        ? numberOfUsersEstimate < 1000
+          ? numeral(numberOfUsersEstimate).format("0")
+          : numeral(numberOfUsersEstimate).format("0.0a")
         : ""
     const numberOfRepos = this.get("githubLanguage repos")
 
@@ -1426,8 +1427,8 @@ const calcRanks = (folder, files) => {
     const id = file.id
     const object = {}
     object.id = id
-    object.jobs = folder.predictNumberOfJobs(file)
-    object.users = folder.predictNumberOfUsers(file)
+    object.jobs = folder.predictnumberOfJobsEstimate(file)
+    object.users = folder.predictnumberOfUsersEstimate(file)
     object.facts = file.factCount
     object.pageRankLinks = pageRankLinks[id].length
     return object
@@ -1498,15 +1499,10 @@ const makeInverseRanks = ranks => {
 }
 
 class PLDBFolder extends TrueBaseFolder {
-  computedColumnNames =
-    `pldbId bookCount paperCount hoplId exampleCount numberOfUsers numberOfJobs languageRank rank factCount lastActivity`.split(
-      " "
-    )
   globalSortFunction = item => parseInt(item.rank)
   // todo: move these to .truebase settings file
   thingsViewSourcePath = `https://github.com/breck7/pldb/blob/main/things/`
   grammarViewSourcePath = `https://github.com/breck7/pldb/blob/main/grammar/`
-  computedsViewSourcePath = `https://github.com/breck7/pldb/blob/main/PLDB.js`
 
   createParserCombinator() {
     return new TreeNode.ParserCombinator(PLDBFile)
@@ -1553,7 +1549,7 @@ class PLDBFolder extends TrueBaseFolder {
     return this.quickCache.topLanguages
   }
 
-  predictNumberOfUsers(file) {
+  predictnumberOfUsersEstimate(file) {
     const mostRecents = ["linkedInSkill", "subreddit memberCount", "projectEuler members"]
     const directs = ["meetup members", "githubRepo stars"]
     const customs = {
@@ -1580,7 +1576,7 @@ class PLDBFolder extends TrueBaseFolder {
     )
   }
 
-  predictNumberOfJobs(file) {
+  predictnumberOfJobsEstimate(file) {
     return Math.round(file.getMostRecentInt("linkedInSkill") * 0.01) + file.getMostRecentInt("indeedJobs")
   }
 
