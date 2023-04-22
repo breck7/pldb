@@ -42,8 +42,9 @@ const cleanAndRightShift = str => Utils.shiftRight(Utils.removeReturnChars(str),
 
 const makePrettyUrlLink = url => `<a href="${url}">${new URL(url).hostname}</a>`
 
-const quickTree = (rows, header) => `pipeTable
- ${new TreeNode(rows).toDelimited("|", header, false).replace(/\n/g, "\n ")}`
+const delimiter = `|_$^`
+const quickTree = (rows, header) => `table ${delimiter}
+ ${new TreeNode(rows).toDelimited(delimiter, header, false).replace(/\n/g, "\n ")}`
 
 const toCommaList = (arr, conjunction = "and") => {
   if (arr.length === 1) return arr[0]
