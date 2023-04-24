@@ -1,8 +1,0 @@
-import header.scroll
-title Add a language
-
-<div id="formHolder"></div>
-
-<script>document.addEventListener("DOMContentLoaded", () => new TrueBaseBrowserApp().renderCreatePage())</script>
-
-import footer.scroll
