@@ -1,9 +1,29 @@
 title Maude
 appeared 1990
 type pl
+description Maude is a high-level language and high-performance system supporting both equational and rewriting logic computation for a wide range of applications.
 reference https://semanticscholar.org/paper/a9c022579be9dcff685682c1876f8a4532ac02cf
 country Spain and United States
 originCommunity Universidad de Navarra && Universidad de Málaga && Universidad Complutense && Centro Informático Científico de Andalucía && SRI International
+
+influencedBy obj
+
+example
+ fmod FACTORIAL is
+ 
+    protecting INT .
+    
+    op undefined : -> Int .
+    op _! : Int -> Int .
+    
+    var n : Int .
+    
+    eq 0 ! = 1 .
+    eq n ! = if n < 0 then undefined else n * (sd(n, 1) !) fi .
+    
+ endfm
+ 
+ red 11 ! .
 
 rosettaCode http://www.rosettacode.org/wiki/Category:Maude
 
