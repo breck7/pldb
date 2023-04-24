@@ -1783,11 +1783,6 @@ class PLDBServer extends TrueBaseServer {
     )
   }
 
-  listenProd() {
-    this.gitOn = true
-    return super.listenProd()
-  }
-
   get keywordsImports() {
     const { rows, langsWithKeywordsCount } = this.folder.keywordsTable
 
