@@ -187,15 +187,9 @@ class PLDBFile extends TrueBaseFile {
       .map(key => `${Utils.capitalizeFirstLetter(key)}: ${this.get(key)}`)
 
     return (
-      Utils.linkify(`<b>PLDB on ${title}:</b><br>
-Git: https://github.com/breck7/pldb/blob/main/truebase/things/${id}.pldb<br>
-HTML page: https://pldb.com/truebase/${id}.html
-<br><br>
-<b>Links about ${title}:</b><br>
+      Utils.linkify(`<br><h3>Links for researching ${title}</h3>
 ${links.join("<br>")}
-${references.join("<br>")}<br><br>
-
-<b>Search for more information about ${title}:</b><br>
+${references.join("<br>")}<br>
 Google: https://www.google.com/search?q=${title}+programming+language<br>
 Google w/time: https://www.google.com/search?q=${title}+programming+language&tbs=cdr%3A1%2Ccd_min%3A1%2F1%2F1980%2Ccd_max%3A12%2F31%2F1995&tbm=<br>
 Google Scholar: https://scholar.google.com/scholar?q=${title}<br>
