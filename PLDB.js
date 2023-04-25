@@ -180,23 +180,30 @@ class PLDBFile extends TrueBaseFile {
   get helpfulResearchLinks() {
     const id = this.id
     const title = this.get("title")
-    const references = this.findNodes("reference").map(node => "Reference: " + node.content)
-
+    const references = this.findNodes("reference")
+      .map(node => "Reference: " + node.content)
+      .join("\n")
     const links = ["website", "githubRepo", "wikipedia"]
       .filter(key => this.has(key))
       .map(key => `${Utils.capitalizeFirstLetter(key)}: ${this.get(key)}`)
+      .join("\n")
+    const searchEngines = `Google: https://www.google.com/search?q=${title}+programming+language
+Google w/time: https://www.google.com/search?q=${title}+programming+language&tbs=cdr%3A1%2Ccd_min%3A1%2F1%2F1980%2Ccd_max%3A12%2F31%2F1995&tbm=
+Google Scholar: https://scholar.google.com/scholar?q=${title}
+Google Groups: https://groups.google.com/forum/#!search/${title}
+Google Trends: https://trends.google.com/trends/explore?date=all&q=${title}
+DDG: https://duckduckgo.com/?q=${title}
+Wayback Machine: https://web.archive.org/web/20220000000000*/${title}`
 
     return (
-      Utils.linkify(`<br><h3>Links for researching ${title}</h3>
-${links.join("<br>")}
-${references.join("<br>")}<br>
-Google: https://www.google.com/search?q=${title}+programming+language<br>
-Google w/time: https://www.google.com/search?q=${title}+programming+language&tbs=cdr%3A1%2Ccd_min%3A1%2F1%2F1980%2Ccd_max%3A12%2F31%2F1995&tbm=<br>
-Google Scholar: https://scholar.google.com/scholar?q=${title}<br>
-Google Groups: https://groups.google.com/forum/#!search/${title}<br>
-Google Trends: https://trends.google.com/trends/explore?date=all&q=${title}<br>
-DDG: https://duckduckgo.com/?q=${title}<br>`) +
-      `Wayback Machine: <a target="_blank" href="https://web.archive.org/web/20220000000000*/${title}">https://web.archive.org/web/20220000000000*/${title}</a>`
+      `<br><h3>Links for researching ${title}</h3>` +
+      (links + references + searchEngines)
+        .split("\n")
+        .map(line => {
+          const parts = line.split(": ")
+          return `<a href="${parts[1]}">${parts[0]}</a>`
+        })
+        .join("<br>")
     )
   }
 
