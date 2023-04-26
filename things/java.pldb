@@ -4,14 +4,18 @@ type pl
 creators James Gosling
 website https://oracle.com/java/
 documentation https://docs.oracle.com/en/java/
+ebook https://sd.blackball.lv/library/thinking_in_java_4th_edition.pdf
 emailList http://www.cafeaulait.org/mailinglists.html
 spec https://docs.oracle.com/javase/specs/
 country United States
 originCommunity Sun Microsystems
 releaseNotesUrl https://www.oracle.com/java/technologies/javase/jdk-relnotes-index.html
 
+influencedBy c cpp
+
 visualParadigm false
 
+hasSExpressions false
 hasVariableSubstitutionSyntax false
 hasAssertStatements true
  // By default, assertions are disabled
