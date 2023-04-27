@@ -5,6 +5,6 @@ pygmentsHighlighterParser
  inScope fileExtensionsParser
  contentKey id
  filenameParser
-  description What is the filename of the Python file implementing the highlighting for this language?
+  description What is the Python filename implementing the highlighting for this language?
   extends abstractTrueBaseColumnParser
   cells columnNameCell fileNameCell
