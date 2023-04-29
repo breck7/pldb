@@ -9,6 +9,14 @@ hasSemanticIndentation true
 hasLineComments true
  # A comment
 hasComments true
+hasSets true
+ # Explicitly typed set.
+ baseball players: !!set
+   ? Mark McGwire
+   ? Sammy Sosa
+   ? Ken Griffey
+ # Flow style
+ baseball teams: !!set { Boston Red Sox, Detroit Tigers, New York Yankees }
 
 lineCommentToken #
 
