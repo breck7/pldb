@@ -2,12 +2,12 @@
 
 /*
 
-* To investigate slowdowns:
+To investigate slowdowns:
 
 code
  node --cpu-prof --cpu-prof-name=test.cpuprofile ./code/test.js
 
-* Then:
+Then:
 
 - open a new Chrome tab
 - open devtools
@@ -31,9 +31,7 @@ const trueBasePagesDir = path.join(rootDir, "site", "truebase")
 
 const testTree = {}
 testTree.ensureNoErrorsInGrammar = areEqual => {
-	const grammarErrors = new grammarParser(PLDB.folder.grammarCode)
-		.getAllErrors()
-		.map(err => err.toObject())
+	const grammarErrors = new grammarParser(PLDB.folder.grammarCode).getAllErrors().map(err => err.toObject())
 	if (grammarErrors.length) console.log(grammarErrors)
 	areEqual(grammarErrors.length, 0, "no errors in pldb grammar")
 }
@@ -67,31 +65,16 @@ testTree.ensureNoErrorsInBlog = areEqual => {
 }
 
 testTree.ensureGoodFilenames = areEqual => {
-	areEqual(
-		PLDB.folder.filesWithInvalidFilenames.length,
-		0,
-		`all ${PLDB.folder.length} filenames are valid`
-	)
+	areEqual(PLDB.folder.filesWithInvalidFilenames.length, 0, `all ${PLDB.folder.length} filenames are valid`)
 }
 
 testTree.ensureNoBrokenPermalinks = areEqual => {
-	areEqual(
-		!!PLDB.folder.pageRankLinks,
-		true,
-		"should not throw because of broken permalink"
-	)
+	areEqual(!!PLDB.folder.pageRankLinks, true, "should not throw because of broken permalink")
 }
 
 testTree.ensureNoErrorsInDb = areEqual => {
 	const { errors } = PLDB.folder
-	if (errors.length)
-		errors.forEach(err =>
-			console.log(
-				err._node.root.get("title"),
-				err._node.getFirstWordPath(),
-				err
-			)
-		)
+	if (errors.length) errors.forEach(err => console.log(err._node.root.get("title"), err._node.getFirstWordPath(), err))
 	areEqual(errors.length, 0, "no errors in db")
 }
 
@@ -113,11 +96,7 @@ testTree.ensureSortCausesNoSemanticChanges = areEqual => {
 		file.sort()
 		const sorted = file.typedMap
 
-		areEqual(
-			lodash.isEqual(originalTypedMap, file.typedMap),
-			true,
-			"typed map doesnt change after sort"
-		)
+		areEqual(lodash.isEqual(originalTypedMap, file.typedMap), true, "typed map doesnt change after sort")
 
 		const sortedOnce = file.asString
 		file.sort()
