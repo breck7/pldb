@@ -7,7 +7,16 @@ fileExtensions egi
 country Japan
 originCommunity University of Tokyo
 
+hasPatternMatching true
+
+lineCommentToken --
 keywords as integer list matchAll multiset set with
+
+example
+ -- Extract all twin primes from the infinite list of prime numbers with pattern matching!
+ def twinPrimes :=
+   matchAll primes as list integer with
+     | _ ++ $p :: #(p + 2) :: _ -> (p, p + 2)
 
 githubRepo https://github.com/egison/egison/
  stars 854
