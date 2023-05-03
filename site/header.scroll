@@ -5,9 +5,12 @@ copyButtons
 
 css
  /* Index page */
- .pldbHomepageLink {
+ .pldbHomepageLink a{
    color: #000;
-   display: block;
+ }
+ .newPostLink {
+  display: block;
+  line-height: 1.3em;
  }
  .singleColumn {
   max-width: 500px;

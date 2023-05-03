@@ -24,18 +24,21 @@ nodejs
         .join(" · ")
     }
 
-<a class="pldbHomepageLink" href="./lists/top1000.html">Top Languages</a>
-* TOP_LANGS
+Top Languages
+ link ./lists/top1000.html
+ class pldbHomepageLink
 
-<br><a class="pldbHomepageLink" href="./posts/index.html">New Posts</a>
-<p class="scrollParagraphComponent">
+TOP_LANGS
+
+<br><br>
+
+New Posts
+ link ./posts/index.html
+ class pldbHomepageLink
 loop
  groups posts/frontpage
- join <br>
  limit 5
- javascript `<a href="${item.relativePath}${item.file.permalink}">${item.file.title}</a>`
-
-</p>
+ javascript `<a class="newPostLink" href="${item.relativePath}${item.file.permalink}">${item.file.title}</a>`
 
 </center>
 
