@@ -16,7 +16,3 @@ versionsParser
 usesSemanticVersioningParser
  extends abstractBooleanColumnParser
  description Does the official release of the language use semantic versioning?
-
-releaseNotesUrlParser
- extends abstractUrlColumnParser
- description What is the URL to the release notes or changelog for this language?
