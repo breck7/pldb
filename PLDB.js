@@ -200,7 +200,7 @@ Wayback Machine: https://web.archive.org/web/20220000000000*/${title}`
 
     return (
       `<br><h3>Links for researching ${title}</h3>` +
-      (links + references + searchEngines)
+      (links + references + "\n" + searchEngines)
         .split("\n")
         .map(line => {
           const parts = line.split(": ")
