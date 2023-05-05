@@ -2018,7 +2018,7 @@ class PLDBServer extends TrueBaseServer {
     // Todo: figuring out best repo orgnization for crawlers.
     // Note: this currently assumes you have truecrawler project installed separateely.
     const gitsFolder = path.join(ignoreFolder, "gits")
-    this.folder.topLanguages.slice(0, 3).forEach(async file => {
+    this.folder.topLanguages.forEach(async file => {
       const repo = file.repo
       if (!repo) return
       if (file.has("repoStats")) return
