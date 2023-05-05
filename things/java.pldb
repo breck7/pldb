@@ -3,14 +3,15 @@ appeared 1995
 type pl
 creators James Gosling
 website https://openjdk.org/
+devDocumentation https://openjdk.org/guide/
 ebook https://sd.blackball.lv/library/thinking_in_java_4th_edition.pdf
 emailList https://mail.openjdk.org/mailman/listinfo
 spec https://docs.oracle.com/javase/specs/
+aka OpenJDK
 country United States
 originCommunity Sun Microsystems
-proposals https://openjdk.org/jeps/0
-devDocumentation https://openjdk.org/guide/
 releaseNotesUrl https://openjdk.org/projects/jdk-updates/
+proposals https://openjdk.org/jeps/0
 
 influencedBy c cpp
 
@@ -133,6 +134,13 @@ booleanTokens true false
 keywords abstract continue for new switch assert default goto package synchronized boolean do if private this break double implements protected throw byte else import public throws case enum instanceof return transient catch extends int short try char final interface static void class finally long strictfp volatile const float native super while _
 
 githubRepo https://github.com/openjdk/jdk
+ stars 15796
+ forks 4503
+ subscribers 311
+ created 2018
+ updated 2023
+ description JDK main-line development https://openjdk.org/projects/jdk
+ issues 311
 
 wikipedia https://en.wikipedia.org/wiki/Java_(programming_language)
  example
@@ -493,6 +501,7 @@ ubuntuPackage openjdk-8-jdk
 jupyterKernel https://github.com/SpencerPark/IJava
 fileType text
 wordRank 1489
+isOpenSource true
 
 goodreads
  title|year|author|goodreadsId|rating|ratings|reviews

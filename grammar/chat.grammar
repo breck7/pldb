@@ -1,3 +1,5 @@
 abstractChatUrlColumnParser
  description What is a URL to a chat room about the language?
  extends abstractUrlColumnParser
+ // todo remove the need for the below from grammar
+ string sortKey abstractChatUrlColumnParser

@@ -1,7 +1,10 @@
 title v8
 appeared 2008
 type vm
-website https://chromium.googlesource.com/v8/v8.git
+website https://v8.dev/
+
+inputLanguages javascript wasm
+writtenIn cpp
 
 gource https://www.youtube.com/watch?v=Mbpd1K-ToYg
 githubRepo https://github.com/v8/v8
@@ -13,6 +16,8 @@ githubRepo https://github.com/v8/v8
  updated 2022
  description The official mirror of the V8 Git repository
  issues 0
+
+wikipedia https://en.wikipedia.org/wiki/V8_(JavaScript_engine)
 
 fileType text
 isOpenSource true

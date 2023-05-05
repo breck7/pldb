@@ -847,8 +847,14 @@ image ${image.replace("https://pldb.com/", "../")}
     return this.facts.map(fact => `- ${fact}`).join("\n")
   }
 
+  get sourceStatus() {
+    const value = this.get("isOpenSource")
+    if (value === undefined) return ""
+    return value ? " open source" : " closed source"
+  }
+
   get oneLiner() {
-    const { typeName, title, creators, appeared } = this
+    const { typeName, title, creators, appeared, sourceStatus } = this
     const standsFor = this.get("standsFor")
     let akaMessage = standsFor ? `, aka ${standsFor},` : ""
 
@@ -859,9 +865,9 @@ image ${image.replace("https://pldb.com/", "../")}
       creatorsLinks = creators.map(name => ` link ../lists/creators.html#${lodash.camelCase(name)} ${name}`).join("\n")
     }
 
-    return `* ${title}${akaMessage} is ${Utils.getIndefiniteArticle(typeName)} ${this.typeLink}${
-      appeared ? ` created in ${appeared}` : ""
-    }${creatorsStr}.
+    return `* ${title}${akaMessage} is ${Utils.getIndefiniteArticle(sourceStatus || typeName)}${sourceStatus} ${
+      this.typeLink
+    }${appeared ? ` created in ${appeared}` : ""}${creatorsStr}.
  link /search.html?q=select+type+appeared%0D%0Awhere+appeared+%3D+${appeared} ${appeared}
 ${creatorsLinks}
 `
