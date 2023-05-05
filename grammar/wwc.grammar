@@ -58,6 +58,7 @@ fileNameCell
 // The main line parser. Anything extending this will be included in the CSV dumps.
 abstractTrueBaseColumnParser
  cells columnNameCell
+ string typeForCsvDocs unspecified
  cruxFromId
  boolean isColumn true
  single
@@ -73,20 +74,25 @@ abstractTrueBaseColumnParser
 abstractWordColumnParser
  description A single word.
  cells columnNameCell wordCell
+ string typeForCsvDocs word
  extends abstractTrueBaseColumnParser
 abstractStringColumnParser
+ string typeForCsvDocs string
  catchAllCellType stringCell
  extends abstractTrueBaseColumnParser
 abstractStringListColumnParser
+ string typeForCsvDocs string[]
  description A list of strings separated by the `listDelimiter`. The default `listDelimiter` is space.
  extends abstractStringColumnParser
  listDelimiter  
 abstractEnumColumnParser
+ string typeForCsvDocs enum
  cells columnNameCell enumCell
  extends abstractTrueBaseColumnParser
 
 // Common blob parsers
 abstractStringBlobColumnParser
+ string typeForCsvDocs multilineString
  extends abstractTrueBaseColumnParser
  baseParser blobParser
  javascript
@@ -105,6 +111,7 @@ abstractCodeColumnParser
 abstractTrueBaseLinksColumnParser
  description Links to other files in the TrueBase.
  catchAllCellType trueBaseIdCell
+ string typeForCsvDocs trueBaseId[]
  extends abstractStringListColumnParser
  javascript
   get trueBaseIds() {
@@ -120,13 +127,16 @@ abstractTrueBaseLinksColumnParser
   }
 // Boolean column node
 abstractBooleanColumnParser
+ string typeForCsvDocs boolean
  cells columnNameCell boolCell
  extends abstractTrueBaseColumnParser
 
 // Commmon numeric parsers
 abstractNumericColumnParser
+ string typeForCsvDocs number
  extends abstractTrueBaseColumnParser
 abstractIntColumnParser
+ string typeForCsvDocs integer
  cells columnNameCell intCell
  extends abstractNumericColumnParser
 abstractFloatColumnParser
@@ -162,6 +172,7 @@ urlCitationParser
 
 // URL Parsers
 abstractUrlColumnParser
+ string typeForCsvDocs url
  cells columnNameCell urlCell
  extends abstractTrueBaseColumnParser
 
@@ -170,16 +181,19 @@ abstractUrlGuidColumnParser
  description A column containing a URL that is also a Globablly Unique Identifier (GUID) for an entity on that site.
  extends abstractUrlColumnParser
 abstractOneWordGuidColumnParser
+ string typeForCsvDocs guid
  cells columnNameCell externalGuidCell
  extends abstractTrueBaseColumnParser
  description Use when you have a column that serves as a Globally Unique Identifier (GUID) where the GUID does not contain spaces.
 abstractMultiwordGuidColumnParser
+ string typeForCsvDocs guid
  description Use when you have a column that serves as a Globally Unique Identifier (GUID) where the GUID can contain spaces.
  catchAllCellType externalGuidCell
  extends abstractTrueBaseColumnParser
 
 // Hashmap parsers
 abstractHashMapColumnParser
+ string typeForCsvDocs multilineStringMap
  extends abstractTrueBaseColumnParser
  javascript
   get columnValue() {
@@ -200,10 +214,13 @@ abstractAnnualPopulationCountMapParser
 // Common computed types
 abstractComputedSumColumnParser
  boolean isComputed true
+ boolean suggestInAutocomplete false
  extends abstractIntColumnParser
 abstractComputedEstimateColumnParser
  boolean isComputed true
+ boolean suggestInAutocomplete false
  extends abstractCountColumnParser
 abstractComputedRankColumnParser
  boolean isComputed true
+ boolean suggestInAutocomplete false
  extends abstractIntColumnParser
