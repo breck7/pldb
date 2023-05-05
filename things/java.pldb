@@ -2,14 +2,15 @@ title Java
 appeared 1995
 type pl
 creators James Gosling
-website https://oracle.com/java/
-documentation https://docs.oracle.com/en/java/
+website https://openjdk.org/
 ebook https://sd.blackball.lv/library/thinking_in_java_4th_edition.pdf
-emailList http://www.cafeaulait.org/mailinglists.html
+emailList https://mail.openjdk.org/mailman/listinfo
 spec https://docs.oracle.com/javase/specs/
 country United States
 originCommunity Sun Microsystems
-releaseNotesUrl https://www.oracle.com/java/technologies/javase/jdk-relnotes-index.html
+proposals https://openjdk.org/jeps/0
+devDocumentation https://openjdk.org/guide/
+releaseNotesUrl https://openjdk.org/projects/jdk-updates/
 
 influencedBy c cpp
 
@@ -130,6 +131,8 @@ printToken System.out.println
 stringToken "
 booleanTokens true false
 keywords abstract continue for new switch assert default goto package synchronized boolean do if private this break double implements protected throw byte else import public throws case enum instanceof return transient catch extends int short try char final interface static void class finally long strictfp volatile const float native super while _
+
+githubRepo https://github.com/openjdk/jdk
 
 wikipedia https://en.wikipedia.org/wiki/Java_(programming_language)
  example

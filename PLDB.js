@@ -273,8 +273,8 @@ Wayback Machine: https://web.archive.org/web/20220000000000*/${title}`
   // only the column values where they are different.
   get extended() {
     if (this.quickCache.extended) return this.quickCache.extended
-    const { supersetOfFile } = this
-    this.quickCache.extended = supersetOfFile ? supersetOfFile.patch(this) : this
+    const extendedFile = this.getRelationshipFile("supersetOf") || this.getRelationshipFile("implementationOf")
+    this.quickCache.extended = extendedFile ? extendedFile.patch(this) : this
     return this.quickCache.extended
   }
 
@@ -518,9 +518,9 @@ Wayback Machine: https://web.archive.org/web/20220000000000*/${title}`
     return this.parent.predictPercentile(this)
   }
 
-  get supersetOfFile() {
-    const supersetOf = this.get("supersetOf")
-    return supersetOf ? this.parent.getFile(supersetOf) : undefined
+  getRelationshipFile(relationshipType) {
+    const hit = this.get(relationshipType)
+    return hit ? this.parent.getFile(hit) : undefined
   }
 
   get languageRank() {
@@ -947,8 +947,11 @@ ${creatorsLinks}
       facts.push(`There are at least ${repoCount} ${title} repos on <a href="${url}">GitHub</a>`)
     }
 
-    const supersetOf = this.supersetOfFile
+    const supersetOf = this.getRelationshipFile("supersetOf")
     if (supersetOf) facts.push(`${title} is a superset of ${supersetOf.link}`)
+
+    const implementationOf = this.getRelationshipFile("implementationOf")
+    if (implementationOf) facts.push(`${title} is an implementation of ${implementationOf.link}`)
 
     const { originCommunity } = this
     let originCommunityStr = ""

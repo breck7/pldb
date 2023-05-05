@@ -1,5 +1,7 @@
 abstractRelationshipParser
  extends abstractTrueBaseLinksColumnParser
+ // todo: remove need for sortKey in Grammar
+ string sortKey abstractRelationshipParser
 relatedParser
  extends abstractRelationshipParser
  description What languages are related?
@@ -15,6 +17,9 @@ successorOfParser
  extends abstractRelationshipParser
 subsetOfParser
  description Is this language a subset of another?
+ extends abstractRelationshipParser
+implementationOfParser
+ description Is this language an implementation of another?
  extends abstractRelationshipParser
 renamedToParser
  description What is the new name of this language?
