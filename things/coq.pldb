@@ -1,15 +1,26 @@
 title Coq
 appeared 1989
 type pl
+website https://coq.inria.fr/
+webRepl https://coq.vercel.app/
 documentation https://coq.inria.fr/documentation
+devDocumentation https://github.com/coq/coq/blob/master/CONTRIBUTING.md
 country France
 originCommunity The Coq development team
 
+hasMultiLineComments true
+ (* a comment *)
+hasDependentTypes true
+ (* http://www-sop.inria.fr/members/Yves.Bertot/tsinghua/tsinghua-1.pdf *)
 hasOctals true
 hasHexadecimals true
 hasFloats true
 hasIntegers true
 hasBinaryNumbers true
+
+multiLineCommentTokens (* *)
+
+githubRepo https://github.com/coq/coq
 
 wikipedia https://en.wikipedia.org/wiki/Coq
  related ocaml agda idris c isabelle
@@ -88,12 +99,15 @@ linguistGrammarRepo https://github.com/mkolosick/Sublime-Coq
 
 rosettaCode http://www.rosettacode.org/wiki/Category:Coq
 
+zulip https://coq.zulipchat.com/
+discourse https://coq.discourse.group/
 subreddit https://reddit.com/r/Coq
  memberCount
   2022 2066
 
 hopl https://hopl.info/showlanguage.prx?exp=6970
 
+twitter https://twitter.com/CoqLang
 fileType text
 isOpenSource true
 centralPackageRepositoryCount 0
