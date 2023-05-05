@@ -12,6 +12,7 @@ class GitStats {
   }
 
   clone() {
+    console.log(`Cloning into ${this.targetDir}`)
     cloneRepo(this.repoUrl, this.targetDir)
     return this
   }

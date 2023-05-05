@@ -2023,10 +2023,14 @@ class PLDBServer extends TrueBaseServer {
       if (!repo) return
       if (file.has("repoStats")) return
       const baseFolder = path.join(gitsFolder, file.id)
-      const stats = new GitStats(repo, baseFolder)
-      if (!Disk.exists(baseFolder)) stats.clone()
-      file.appendLineAndChildren("repoStats", stats.summary)
-      file.save()
+      try {
+        const stats = new GitStats(repo, baseFolder)
+        if (!Disk.exists(baseFolder)) stats.clone()
+        file.appendLineAndChildren("repoStats", stats.summary)
+        file.save()
+      } catch (err) {
+        console.error(err, file.id)
+      }
     })
   }
 }
