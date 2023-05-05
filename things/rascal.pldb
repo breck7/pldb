@@ -20,6 +20,12 @@ githubRepo https://github.com/usethesource/rascal
  description The implementation of the Rascal meta-programming language (including interpreter, type checker, parser generator, compiler and JVM based run-time system)
  issues 401
 
+repoStats
+ firstCommit 2008
+ commits 20580
+ committers 98
+ files 1336
+
 wikipedia https://en.wikipedia.org/wiki/RascalMPL
  related linux unix antlr
  summary Rascal is an experimental domain specific language for metaprogramming, such as static code analysis, program transformation and implementation of domain specific languages. It is a general meta language in the sense that it does not have a bias for any particular software language. It includes primitives from relational calculus and term rewriting. Its syntax and semantics are based on procedural (imperative) and functional programming.
@@ -65,9 +71,3 @@ isOpenSource true
 centralPackageRepositoryCount 0
 
 isbndb 0
-
-repoStats
- firstCommit 2008
- commits 20580
- committers 98
- files 1336

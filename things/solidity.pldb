@@ -51,6 +51,12 @@ githubRepo https://github.com/ethereum/solidity
  description Solidity, the Smart Contract Programming Language
  issues 1103
 
+repoStats
+ firstCommit 2014
+ commits 25408
+ committers 740
+ files 9812
+
 wikipedia https://en.wikipedia.org/wiki/Solidity
  example
   contract GavCoin
@@ -188,9 +194,3 @@ semanticScholar 13
  2019|A New Approach to Prevent Reentrant Attack in Solidity Smart Contracts|10.1007/978-981-15-3278-8_6|2|0|C. Dong and Yuanhong Li and Liang Tan|af8e33b8c5bc0645c3dea27af95deecb4befe7d7
  2019|Programming Smart Contracts in Ethereum Blockchain using Solidity|10.1145/3287324.3287542|2|0|Debasis Bhattacharya and M. Canul and S. Knight and M. Azhar and Rajiv Malkan|bebefcf6281e90d91a057752ab55c07c81b90d99
  2018|Basic Solidity Programming|10.1007/978-1-4842-4075-5_3|1|0|Debajani Mohanty|f44c815df713192f26213201fe5b12696e2c4f41
-
-repoStats
- firstCommit 2014
- commits 25408
- committers 740
- files 9812

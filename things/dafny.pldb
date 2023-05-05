@@ -27,6 +27,12 @@ githubRepo https://github.com/Microsoft/dafny
  description Dafny is a verification-aware programming language
  issues 550
 
+repoStats
+ firstCommit 2009
+ commits 6823
+ committers 125
+ files 4188
+
 wikipedia https://en.wikipedia.org/wiki/Dafny_(programming_language)
  example
   datatype List = Nil | Link(data:int,next:List)
@@ -116,9 +122,3 @@ semanticScholar 11
  2018|Towards progressive program verification in Dafny|10.1145/3264637.3264649|2|0|Ismael Figueroa and Bruno García and Paul Leger|145b3453b2df6f00fb93275acdef2958235cdc00
  2019|An Assertional Proof of Red–Black Trees Using Dafny|10.1007/s10817-019-09534-y|2|0|R. Peña|9b5c59696f3cc11c0f40b071560be0c10ebd6c02
  2016|Mechanised Verification Patterns for Dafny|10.1007/978-3-319-48989-6_20|1|0|G. Grov and Yuhui Lin and V. Tumas|6ee1f76da9b91f0d493e28afdfa796a48781fc25
-
-repoStats
- firstCommit 2009
- commits 6823
- committers 125
- files 4188

@@ -16,6 +16,12 @@ githubRepo https://github.com/nexml/nexml
  description NeXML is an exchange standard for representing phyloinformatic data.
  issues 9
 
+repoStats
+ firstCommit 2007
+ commits 3471
+ committers 12
+ files 108
+
 wikipedia https://en.wikipedia.org/wiki/NeXML_format
  related nexus-format xml
  summary NeXML is an exchange standard for representing phyloinformatic data. It was inspired by the widely used Nexus file format but uses XML to produce a more robust format for rich phylogenetic data. Advantages include syntax validation, semantic annotation, and web services. The format is broadly supported and has libraries in many popular programming languages for bioinformatics.
@@ -28,9 +34,3 @@ wikipedia https://en.wikipedia.org/wiki/NeXML_format
 fileType text
 isOpenSource true
 centralPackageRepositoryCount 0
-
-repoStats
- firstCommit 2007
- commits 3471
- committers 12
- files 108

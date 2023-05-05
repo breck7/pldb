@@ -123,6 +123,12 @@ githubRepo https://github.com/JuliaLang/julia
  description The Julia Programming Language
  issues 4420
 
+repoStats
+ firstCommit 2009
+ commits 62820
+ committers 1731
+ files 1531
+
 wikipedia https://en.wikipedia.org/wiki/Julia_(programming_language)
  example
   julia> p(x) = 2x^2 + 1; f(x, y) = 1 + 2p(x)y
@@ -352,9 +358,3 @@ semanticScholar 35
  2021|Julia Language in Computational Mechanics: A New Competitor|10.1007/s11831-021-09636-0|1|0|Lei Xiao and Gang Mei and Ning Xi and F. Piccialli|1ef389a28b48ff11e8da8bb26a79ce7c0853e841
  2019|The Usage of Julia Programming in Grounding Grids Simulations : An alternative to MATLAB and Python|10.1109/sipda47030.2019.8951702|1|0|Rodolfo A. R. Moura and M. Schroeder and S. J. S. Silva and E. Nepomuceno and P. H. N. Vieira and A. Lima|183303bc57f9f6b3c05c5828dd34a02b19a4784b
  2018|An Overview of the Julia Programming Language|10.1145/3277104.3277119|1|0|Tyler A. Cabutto and Sean P. Heeney and S. Ault and Guifen Mao and Jin Wang|3e62ce30a835230fa8d51c053e4bd2541cfc5fb8
-
-repoStats
- firstCommit 2009
- commits 62820
- committers 1731
- files 1531

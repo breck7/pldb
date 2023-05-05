@@ -138,6 +138,12 @@ githubRepo https://github.com/JarrettBillingsley/Croc
  updated 2017
  description Croc is an extensible extension language in the vein of Lua, which also wishes it were a standalone language. Also it's fun. 
 
+repoStats
+ firstCommit 2006
+ commits 1481
+ committers 2
+ files 226
+
 wikipedia https://web.archive.org/web/20190311032913/https://en.wikipedia.org/wiki/MiniD
  example
   function first(x: array|string) = x[0]
@@ -157,9 +163,3 @@ wikipedia https://web.archive.org/web/20190311032913/https://en.wikipedia.org/wi
 pygmentsHighlighter Croc
  filename d.py
  fileExtensions croc
-
-repoStats
- firstCommit 2006
- commits 1481
- committers 2
- files 226

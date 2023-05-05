@@ -46,6 +46,12 @@ githubRepo https://github.com/halide/Halide
  description a language for fast, portable data-parallel computation
  issues 769
 
+repoStats
+ firstCommit 2010
+ commits 30615
+ committers 325
+ files 2161
+
 isOpenSource true
 centralPackageRepositoryCount 0
 
@@ -65,9 +71,3 @@ semanticScholar 12
  2016|Locality-Aware Scheduling for Stencil Code in Halide|10.1109/ICPPW.2016.26|3|0|Shih-Wei Liao and Sheng-Jun Tsai and Chieh-Hsun Yang and C. Lo|58f7375ba591a446d5ff44d08cf9aaf143441d8b
  2019|Sparse-Matrix Compression Primitives with OpenCL Framework to Support Halide|10.1145/3318170.3318179|3|0|Chao-Lin Lee and Chen-Ting Chao and Jenq-Kuen Lee and Chung-Wen Huang and Ming-Yu Hung|2fa067b5a7bccbb6abcd5a813416fee9202f2989
  2020|Halide and OpenMP for generating high-performance recursive filters|10.1117/12.2566537|1|0|Yuta Tsuji and Norishige Fukushima|e14b46621e0c04bd4b877e11a71d76b56e1396d7
-
-repoStats
- firstCommit 2010
- commits 30615
- committers 325
- files 2161

@@ -52,6 +52,12 @@ githubRepo https://github.com/crystal-lang/crystal
  description The Crystal Programming Language
  issues 1520
 
+repoStats
+ firstCommit 2012
+ commits 15519
+ committers 602
+ files 2191
+
 wikipedia https://en.wikipedia.org/wiki/Crystal_(programming_language)
  example
   channel = Channel(Int32).new
@@ -250,9 +256,3 @@ centralPackageRepositoryCount 0
 isbndb 0
 
 semanticScholar 0
-
-repoStats
- firstCommit 2012
- commits 15519
- committers 602
- files 2191

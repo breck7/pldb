@@ -25,6 +25,12 @@ githubRepo https://github.com/elves/elvish
  description Elvish = Expressive Programming Language + Versatile Interactive Shell
  issues 260
 
+repoStats
+ firstCommit 2013
+ commits 6343
+ committers 88
+ files 911
+
 rijuRepl https://riju.codes/elvish
  example
   echo "Hello, world!"
@@ -32,9 +38,3 @@ rijuRepl https://riju.codes/elvish
 twitter https://twitter.com/elvishshell
 
 isbndb 0
-
-repoStats
- firstCommit 2013
- commits 6343
- committers 88
- files 911

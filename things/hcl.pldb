@@ -42,6 +42,12 @@ githubRepo https://github.com/hashicorp/hcl
  description HCL is the HashiCorp configuration language.
  issues 162
 
+repoStats
+ firstCommit 2014
+ commits 1484
+ committers 97
+ files 360
+
 githubLanguage HCL
  fileExtensions hcl nomad tf tfvars workflow
  trendingProjects
@@ -95,9 +101,3 @@ isbndb 2
 semanticScholar 1
  year|title|doi|citations|influentialCitations|authors|paperId
  2015|Layering RTL, SAFL, Handel-C and Bluespec constructs on Chisel HCL|10.1109/MEMCOD.2015.7340477|2|1|D. Greaves|29555321aa1ffee0cc205b0adbdae4d978a0c684
-
-repoStats
- firstCommit 2014
- commits 1484
- committers 97
- files 360

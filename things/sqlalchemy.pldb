@@ -16,6 +16,12 @@ githubRepo https://github.com/sqlalchemy/sqlalchemy
  subscribers 95
  updated 2022
 
+repoStats
+ firstCommit 2005
+ commits 20900
+ committers 656
+ files 912
+
 wikipedia https://en.wikipedia.org/wiki/SQLAlchemy
  example
   SELECT movies.id, movies.title, movies.year, movies.directed_by, directors.id, directors.name
@@ -29,9 +35,3 @@ goodreads
  Essential Sqlalchemy: Mapping Python to Databases|2015|Jason Myers|27560172|3.83|66|4
  Sqlalchemy: Database Access Using Python|2013|Mark Ramm|13660522|5|1|0
  SQLAlchemy Tutorial: Python SQL toolkit and Object Relational Mapper|2020|Gouic Books|50636637|4|1|0
-
-repoStats
- firstCommit 2005
- commits 20900
- committers 656
- files 912

@@ -65,6 +65,12 @@ githubRepo https://github.com/Whiley/WhileyCompiler
  description The Whiley Compiler (WyC)
  issues 39
 
+repoStats
+ firstCommit 2010
+ commits 8032
+ committers 23
+ files 1539
+
 wikipedia https://en.wikipedia.org/wiki/Whiley_(programming_language)
  summary Whiley is an experimental programming language that combines features from the functional and imperative paradigms, and supports formal specification through function preconditions, postconditions and loop invariants. The language uses flow-sensitive typing also known as "flow typing." The Whiley project began in 2009 in response to the "Verifying Compiler Grand Challenge" put forward by Tony Hoare in 2003. The first public release of Whiley was in June, 2010.Primarily developed by David Pearce, Whiley is an open source project with contributions from a small community. The system has been used for student research projects and in teaching undergraduate classes.  It was supported between 2012 and 2014 by the Royal Society of New Zealand's Marsden Fund.The Whiley compiler generates code for the Java virtual machine and can inter-operate with Java and other JVM based languages.
  backlinksCount 9
@@ -100,9 +106,3 @@ leachim6 Whiley
 twitter https://twitter.com/whileylang
 
 isbndb 0
-
-repoStats
- firstCommit 2010
- commits 8032
- committers 23
- files 1539

@@ -142,6 +142,12 @@ githubRepo https://github.com/openjdk/jdk
  description JDK main-line development https://openjdk.org/projects/jdk
  issues 311
 
+repoStats
+ firstCommit 2007
+ commits 76734
+ committers 1775
+ files 67099
+
 wikipedia https://en.wikipedia.org/wiki/Java_(programming_language)
  example
   // Hello.java (Java SE 5)
@@ -949,9 +955,3 @@ semanticScholar 37
  2018|Comparison of garbage collectors in Java programming language|10.23919/MIPRO.2018.8400277|12|0|H. Grgic and B. Mihaljević and A. Radovan|090173690ad7bcf3c2d83f840db65872d0d66b5f
  2018|Java Programming Language|10.1007/978-3-030-02619-6_35|1|0|Gerard O'Regan|6bffc1a6dff69fc47734945adfc4e04775d3b139
  1996|Java Programming Language|10.32388/4ejcag|1|0|D. Friedel and Anthony P. Potts|6e0f1aacb150c00ef2c9ad638c7fa495332086fa
-
-repoStats
- firstCommit 2007
- commits 76734
- committers 1775
- files 67099

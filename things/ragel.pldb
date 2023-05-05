@@ -98,6 +98,12 @@ githubRepo https://github.com/bnoordhuis/ragel
  description Ragel State Machine Compiler - http://www.complang.org/ragel/
  issues 1
 
+repoStats
+ firstCommit 2007
+ commits 821
+ committers 8
+ files 475
+
 wikipedia https://en.wikipedia.org/wiki/Ragel
  related c d go ruby java regex ascii xuml umple
  summary Ragel is a finite-state machine compiler and a parser generator. Initially Ragel supported output for C, C++ and Assembly source code,. Although subsequently extended to support several other languages (said to be Objective C, D, Go, Ruby, and Java) this support of other languages was withdrawn .  It supports the generation of table or control flow driven state machines from regular expressions and/or state charts and can also build lexical analysers via the longest-match method. Ragel specifically targets text parsing and input validation.
@@ -128,9 +134,3 @@ isOpenSource true
 centralPackageRepositoryCount 0
 
 isbndb 0
-
-repoStats
- firstCommit 2007
- commits 821
- committers 8
- files 475

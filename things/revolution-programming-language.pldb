@@ -17,6 +17,12 @@ githubRepo https://github.com/livecode/livecode
  description LiveCode cross-platform development environment (engine)
  issues 198
 
+repoStats
+ firstCommit 2013
+ commits 29990
+ committers 124
+ files 7646
+
 wikipedia https://en.wikipedia.org/wiki/Revolution_(programming_language)
  example
   put url "binfile:picture.jpg" into url "ftp://john:passwd@ftp.example.net:2121/picture.jpg"
@@ -30,9 +36,3 @@ wikipedia https://en.wikipedia.org/wiki/Revolution_(programming_language)
  appeared 2001
 
 centralPackageRepositoryCount 0
-
-repoStats
- firstCommit 2013
- commits 29990
- committers 124
- files 7646

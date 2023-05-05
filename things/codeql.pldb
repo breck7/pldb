@@ -26,6 +26,12 @@ githubRepo https://github.com/github/codeql
  description CodeQL: the libraries and queries that power security researchers around the world, as well as code scanning in GitHub Advanced Security (code scanning), LGTM.com, and LGTM Enterprise
  issues 736
 
+repoStats
+ firstCommit 2018
+ commits 57878
+ committers 480
+ files 42417
+
 githubLanguage CodeQL
  type programming
  fileExtensions ql qll
@@ -36,9 +42,3 @@ githubLanguage CodeQL
 githubBigQuery CodeQL
  repos 25
  users 23
-
-repoStats
- firstCommit 2018
- commits 57878
- committers 480
- files 42417

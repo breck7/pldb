@@ -33,6 +33,12 @@ githubRepo https://github.com/VirusTotal/yara
  description The pattern matching swiss knife
  issues 140
 
+repoStats
+ firstCommit 2008
+ commits 3259
+ committers 213
+ files 368
+
 wikipedia https://en.wikipedia.org/wiki/YARA
  related perl regex elf
  summary YARA is the name of a tool primarily used in malware research and detection. It provides a rule-based approach to create descriptions of malware families based on textual or binary patterns. A description is essentially a Yara rule name, where these rules consist of sets of strings and a boolean expression. The language used has traits of Perl compatible regular expressions.
@@ -70,9 +76,3 @@ centralPackageRepositoryCount 0
 isbndb 0
 
 semanticScholar 0
-
-repoStats
- firstCommit 2008
- commits 3259
- committers 213
- files 368

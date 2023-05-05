@@ -17,6 +17,12 @@ githubRepo https://github.com/JetBrains/MPS
  description JetBrains Meta programming System
  issues 7
 
+repoStats
+ firstCommit 2004
+ commits 92204
+ committers 121
+ files 46129
+
 wikipedia https://en.wikipedia.org/wiki/JetBrains_MPS
  related java
  summary JetBrains MPS is a metaprogramming system which is being developed by JetBrains. MPS is a tool to design Domain-specific languages (DSL). It uses projectional editing which allows users to overcome the limits of language parsers, and build DSL editors, such as ones with tables and diagrams. It implements language-oriented programming. MPS is an environment for language definition, a language workbench, and integrated development environment (IDE) for such languages.
@@ -35,9 +41,3 @@ centralPackageRepositoryCount 0
 isbndb 1
  year|publisher|title|authors|isbn13
  2014|CreateSpace Independent Publishing Platform|The MPS Language Workbench, Vol. 1|Campagne, Fabien|9781497378650
-
-repoStats
- firstCommit 2004
- commits 92204
- committers 121
- files 46129

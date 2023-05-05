@@ -43,6 +43,12 @@ githubRepo https://github.com/mitsuhiko/twig
  description a template engine for the chyrp blog engine.
  issues 0
 
+repoStats
+ firstCommit 2008
+ commits 9
+ committers 3
+ files 15
+
 wikipedia https://en.wikipedia.org/wiki/Twig_(template_engine)
  example
   {% extends "base.html" %}
@@ -97,9 +103,3 @@ centralPackageRepositoryCount 0
 isbndb 0
 
 semanticScholar 0
-
-repoStats
- firstCommit 2008
- commits 9
- committers 3
- files 15

@@ -130,6 +130,12 @@ githubRepo https://github.com/microsoft/TypeScript
  description TypeScript is a superset of JavaScript that compiles to clean JavaScript output.
  issues 6073
 
+repoStats
+ firstCommit 2014
+ commits 38013
+ committers 919
+ files 68473
+
 wikipedia https://en.wikipedia.org/wiki/TypeScript
  example
   class Person {
@@ -333,9 +339,3 @@ semanticScholar 8
  2017|Mixed Messages: Measuring Conformance and Non-Interference in TypeScript|10.4230/LIPIcs.ECOOP.2017.28|11|1|Jack Williams and J. Garrett Morris and P. Wadler and Jakub Zalewski|aac07bd3202a7da8ab2d627bf15a2ac97c1837cd
  2019|Static TypeScript: an implementation of a static compiler for the TypeScript language|10.1145/3357390.3361032|5|1|T. Ball and J. D. Halleux and Michal Moskal|80fedaa1921bb6e42069f83679ae2c42f863a68e
  2022|To Type or Not to Type? A Systematic Comparison of the Software Quality of JavaScript and TypeScript Applications on GitHub|10.48550/arXiv.2203.11115|1|0|J. Bogner and Manuel Merkel|475615b230f0fe5a8dffa5970a90c0d98c94827c
-
-repoStats
- firstCommit 2014
- commits 38013
- committers 919
- files 68473

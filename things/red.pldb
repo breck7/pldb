@@ -35,6 +35,12 @@ githubRepo https://github.com/red/red
  description Red is a next-generation programming language strongly inspired by Rebol, but with a broader field of usage thanks to its native-code compiler, from system programming to high-level scripting and cross-platform reactive GUI, while providing modern support for concurrency, all in a zero-install, zero-config, single 1MB file! 
  issues 543
 
+repoStats
+ firstCommit 2011
+ commits 15037
+ committers 111
+ files 622
+
 wikipedia https://en.wikipedia.org/wiki/Red_(programming_language)
  example
   Red/System [Title: "A factorial script"]
@@ -234,9 +240,3 @@ centralPackageRepositoryCount 0
 isbndb 0
 
 semanticScholar 0
-
-repoStats
- firstCommit 2011
- commits 15037
- committers 111
- files 622

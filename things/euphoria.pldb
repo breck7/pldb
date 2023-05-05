@@ -34,6 +34,12 @@ githubRepo https://github.com/OpenEuphoria/euphoria
  description The Euphoria programming language (https://openeuphoria.org/)
  issues 1
 
+repoStats
+ firstCommit 2006
+ commits 6590
+ committers 33
+ files 859
+
 wikipedia https://en.wikipedia.org/wiki/Euphoria_(programming_language)
  example
   global function replace_item( object old, object new, sequence group )
@@ -96,9 +102,3 @@ isOpenSource true
 centralPackageRepositoryCount 0
 
 isbndb 0
-
-repoStats
- firstCommit 2006
- commits 6590
- committers 33
- files 859

@@ -2028,7 +2028,7 @@ class PLDBServer extends TrueBaseServer {
         const stats = new GitStats(repo, baseFolder)
         if (!Disk.exists(baseFolder)) stats.clone()
         file.appendLineAndChildren("repoStats", stats.summary)
-        file.save()
+        file.prettifyAndSave()
       } catch (err) {
         console.error(err, file.id)
       }

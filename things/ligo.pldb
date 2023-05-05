@@ -36,6 +36,12 @@ keywords abs assert block Bytes case Crypto Current else failwith false for fun 
 
 gitlabRepo https://gitlab.com/ligolang/ligo
 
+repoStats
+ firstCommit 2016
+ commits 18425
+ committers 245
+ files 6439
+
 githubLanguage CameLIGO
  type programming
  fileExtensions religo
@@ -47,9 +53,3 @@ githubLanguage CameLIGO
  repos 0
 
 monaco pascaligo
-
-repoStats
- firstCommit 2016
- commits 18425
- committers 245
- files 6439

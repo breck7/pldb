@@ -26,6 +26,12 @@ githubRepo https://github.com/HaxeFoundation/neko
  description The Neko Virtual Machine
  issues 53
 
+repoStats
+ firstCommit 2005
+ commits 2522
+ committers 41
+ files 207
+
 wikipedia https://en.wikipedia.org/wiki/Neko_(programming_language)
  example
   get_params = $loader.loadprim("mod_neko@get_params",0);
@@ -59,9 +65,3 @@ centralPackageRepositoryCount 0
 isbndb 0
 
 semanticScholar 0
-
-repoStats
- firstCommit 2005
- commits 2522
- committers 41
- files 207

@@ -105,6 +105,12 @@ githubRepo https://github.com/rust-lang/rust
  description Empowering everyone to build reliable and efficient software.
  issues 9522
 
+repoStats
+ firstCommit 2010
+ commits 227223
+ committers 6006
+ files 41028
+
 wikipedia https://en.wikipedia.org/wiki/Rust_(programming_language)
  related linux freebsd android ios alef csharp cyclone erlang haskell haxe limbo newsqueak ruby scheme standard-ml swift crystal elm idris c ml go java ocaml llvmir d nim emacs-editor
  summary Rust is a systems programming language sponsored by Mozilla Research, which describes it as a "safe, concurrent, practical language," supporting functional and imperative-procedural paradigms. Rust is syntactically similar to C++, but its designers intend it to provide better memory safety while maintaining performance. Rust is an open source programming language. Its designers have refined the language through the experiences of writing the Servo web browser layout engine and the Rust compiler. A large portion of current commits to the project are from community members. Rust won first place for "most loved programming language" in the Stack Overflow Developer Survey in 2016 and 2017; it is referenced in The Book of Mozilla as "oxidised metal".
@@ -366,9 +372,3 @@ semanticScholar 36
  2021|Translating C to safer Rust|10.1145/3485498|1|0|Mehmet Emre and Ryan Schroeder and Kyle Dewey and B. Hardekopf|d0fb133db727fc51913e623041a6e86eb99e8c6c
  2021|Performance vs Programming Effort between Rust and C on Multicore Architectures: Case Study in N-Body|10.1109/CLEI53233.2021.9640225|1|0|Manuel Costanzo and Enzo Rucci and M. Naiouf and A. D. Giusti|74dfb86326be51d0cc2d0aee69d3266d8994ea31
  2019|On Evaluating Rust as a Programming Language for the Future of Massive Agent-Based Simulations|10.1007/978-981-15-1078-6_2|1|0|Alessia Antelmi and G. Cordasco and Matteo D'Auria and Daniele De Vinco and A. Negro and Carmine Spagnuolo|f57083b736fa347d6e48d09bdc09a308df017eeb
-
-repoStats
- firstCommit 2010
- commits 227223
- committers 6006
- files 41028
