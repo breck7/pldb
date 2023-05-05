@@ -2012,6 +2012,23 @@ class PLDBServer extends TrueBaseServer {
     await importer.fetchAllRepoDataCommand()
     await importer.writeAllRepoDataCommand()
   }
+
+  async crawlGitsCommand() {
+    const { GitStats } = require("./code/gitStats.js")
+    // Todo: figuring out best repo orgnization for crawlers.
+    // Note: this currently assumes you have truecrawler project installed separateely.
+    const gitsFolder = path.join(ignoreFolder, "gits")
+    this.folder.topLanguages.slice(0, 3).forEach(async file => {
+      const repo = file.repo
+      if (!repo) return
+      if (file.has("repoStats")) return
+      const baseFolder = path.join(gitsFolder, file.id)
+      const stats = new GitStats(repo, baseFolder)
+      if (!Disk.exists(baseFolder)) stats.clone()
+      file.appendLineAndChildren("repoStats", stats.summary)
+      file.save()
+    })
+  }
 }
 
 const pldbFolder = new PLDBFolder().setSettings({
