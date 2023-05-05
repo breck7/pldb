@@ -9,6 +9,11 @@ hoplIdParser
  extends abstractIntColumnParser
  description What is the HOPL id of this language?
 
+getSourceParser
+ boolean isComputed true
+ extends abstractStringColumnParser
+ description What is a one line shell command to download the source code for this language?
+
 bookCountParser
  extends abstractComputedSumColumnParser
  description What is the count of booked we have published about this thing?

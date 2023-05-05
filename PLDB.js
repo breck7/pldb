@@ -155,6 +155,11 @@ class PLDBFile extends TrueBaseFile {
     return this.get("subreddit")?.split("/").pop()
   }
 
+  get getSource() {
+    const { repo } = this
+    return repo ? `git clone ${repo}` : ""
+  }
+
   get bookCount() {
     if (this.quickCache.bookCount !== undefined) return this.quickCache.bookCount
     const gr = this.getNode(`goodreads`)?.length
@@ -703,9 +708,14 @@ pipeTable
   }
 
   toScroll() {
-    const { typeName, title, id } = this
+    const { typeName, title, id, getSource } = this
 
     if (title.includes("%20")) throw new Error("bad space in title: " + title)
+
+    const sourceCode = getSource
+      ? `codeWithHeader Source code:
+ ${getSource}`
+      : ""
 
     return `import ../header.scroll
 baseUrl https://pldb.com/truebase/
@@ -725,6 +735,8 @@ startColumns 4
 <div class="trueBaseThemeQuickLinks">${this.quickLinks}</div>
 
 ${this.oneLiner}
+
+${sourceCode}
 
 ${this.kpiBar}
 
@@ -1236,13 +1248,7 @@ codeWithHeader ${this.title} <a href="../lists/keywords.html?filter=${this.id}">
   }
 
   get kpiBar() {
-    const { appeared, numberOfUsersEstimate, bookCount, paperCount, title, isLanguage, languageRank } = this
-    const users =
-      numberOfUsersEstimate > 10
-        ? numberOfUsersEstimate < 1000
-          ? numeral(numberOfUsersEstimate).format("0")
-          : numeral(numberOfUsersEstimate).format("0.0a")
-        : ""
+    const { appeared, title, isLanguage, languageRank } = this
     const numberOfRepos = this.get("githubLanguage repos")
 
     const lines = [
@@ -1250,9 +1256,6 @@ codeWithHeader ${this.title} <a href="../lists/keywords.html?filter=${this.id}">
         ? `#${languageRank + 1} <span title="${this.langRankDebug}">on PLDB</span>`
         : `#${this.rank + 1} on PLDB`,
       appeared ? `${currentYear - appeared} Years Old` : "",
-      users ? `${users} <span title="Crude user estimate from a linear model.">Users</span>` : "",
-      isLanguage ? `${bookCount} <span title="Books about or leveraging ${title}">Books</span>` : "",
-      isLanguage ? `${paperCount} <span title="Academic publications about or leveraging ${title}">Papers</span>` : "",
       numberOfRepos ? `${numeral(numberOfRepos).format("0a")} <span title="${title} repos on GitHub.">Repos</span>` : ""
     ]
       .filter(i => i)
