@@ -16,6 +16,12 @@ githubRepo https://github.com/radian-software/kalyn
  description ⚗️ Self-hosting compiler from a Haskell-like Lisp directly to x86-64, from scratch.
  issues 20
 
+repoStats
+ firstCommit 2020
+ commits 330
+ committers 2
+ files 80
+
 rijuRepl https://riju.codes/kalyn
  example
   (import "/opt/kalyn/Stdlib.kalyn")
