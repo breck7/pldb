@@ -13,6 +13,13 @@ hoplIdParser
  boolean suggestInAutocomplete false
  description What is the HOPL id of this language?
 
+isLanguageParser
+ boolean isComputed true
+ extends abstractBooleanColumnParser
+ // todo: bug the below line should be included via inheritance from WWC.
+ boolean suggestInAutocomplete false
+ description Does PLDB categorize this entity as a language?
+
 getSourceParser
  boolean isComputed true
  extends abstractStringColumnParser
@@ -61,7 +68,7 @@ languageRankParser
  // todo: bug the below line should be included via inheritance from WWC.
  boolean suggestInAutocomplete false
  description How does this language rank amongst all languages in PLDB?
- 
+
 factCountParser
  extends abstractComputedSumColumnParser
  // todo: bug the below line should be included via inheritance from WWC.
