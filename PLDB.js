@@ -1862,31 +1862,6 @@ class PLDBServer extends TrueBaseServer {
     }
   }
 
-  warmCsvFiles() {
-    super.warmCsvFiles()
-    const { folder } = this
-    this.virtualFiles[path.join(this.settings.siteFolder, "languages.csv")] = folder.makeCsv(
-      "languages.csv",
-      folder.objectsForCsv.filter(obj => isLanguage(obj.type))
-    )
-  }
-
-  get csvImports() {
-    const { folder } = this
-    return {
-      LANG_COUNT: folder.topLanguages.length,
-      APPROXIMATE_FACT_COUNT: numeral(folder.factCount).format("0,0a"),
-      COL_COUNT: folder.colNamesForCsv.length,
-      ENTITY_COUNT: folder.length,
-      ENTITIES_FILE_SIZE_UNCOMPRESSED: numeral(folder.makeCsv("pldb.csv").length).format("0.0b"),
-      LANGS_FILE_SIZE_UNCOMPRESSED: numeral(folder.makeCsv("languages.csv").length).format("0.0b"),
-      "// COLUMN_METADATA_TABLE": quickTree(
-        folder.columnDocumentation,
-        folder.columnsCsvOutput.columnMetadataColumnNames
-      )
-    }
-  }
-
   get top1000Imports() {
     const files = this.folder.topLanguages.map(file => {
       const appeared = file.get("appeared")
