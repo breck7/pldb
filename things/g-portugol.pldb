@@ -4,7 +4,6 @@ type pl
 creators Thiago Silva
 reference https://pt.wikipedia.org/wiki/G-Portugol
 country Portugal
-originCommunity https://github.com/rafaelgou/gpt/issues
 
 example
  algoritmo OlaMundo;
@@ -13,15 +12,7 @@ example
     imprima("Olá, Mundo!");
  fim 
 
-githubRepo https://github.com/thiago-silva/gpt
- firstCommit 2005
- stars 3
- forks 1
- subscribers 2
- created 2013
- updated 2017
- description G-Portugol - A linguagem de programação
- issues 0
+githubRepo https://github.com/rafaelgou/gpt
 
 quineRelay G-Portugol
 
