@@ -1,10 +1,8 @@
-pldbIdParser
- cells columnNameCell trueBaseIdCell
+idParser
+ description What is the name of this file without the extension?
  extends abstractStringColumnParser
  boolean isComputed true
- // todo: bug the below line should be included via inheritance from WWC.
  boolean suggestInAutocomplete false
- description What is the id of this entity in this TrueBase?
 
 hoplIdParser
  boolean isComputed true

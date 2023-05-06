@@ -139,10 +139,6 @@ webApi
 xmlFormat`).toObject()
 
 class PLDBFile extends TrueBaseFile {
-  get pldbId() {
-    return this.id
-  }
-
   get filePath() {
     return this._getFilePath()
   }
@@ -1715,7 +1711,7 @@ class PLDBFolder extends TrueBaseFolder {
     const allKeywords = keywordsTable.rows.map(row => row.keyword)
     const langsWithKeywords = this.topLanguages.filter(file => file.has("keywords"))
     const headerRow = allKeywords.slice()
-    headerRow.unshift("pldbId")
+    headerRow.unshift("id")
     const rows = langsWithKeywords.map(file => {
       const row = [file.id]
       const keywords = new Set(file.keywords)
