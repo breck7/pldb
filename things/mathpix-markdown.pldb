@@ -1,0 +1,13 @@
+title Mathpix Markdown
+appeared 2019
+type textMarkup
+description Standard Markdown and extended it with key LaTeX features and chemistry support. Mathpix Markdown extends standard Markdown, for more power and control when converting your document to HTML, LaTeX, PDF, and DOCX.
+documentation https://mathpix.com/docs/mathpix-markdown/syntax-reference
+reference https://mathpix.com/markdown-to-latex
+
+supersetOf markdown
+
+example
+ Compute \(f(x) = x^2 + 2\) if \(x=2\).
+
+githubRepo https://github.com/Mathpix/mathpix-markdown-it
