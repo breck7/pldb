@@ -33,9 +33,6 @@ const siteFolder = path.join(baseFolder, "site")
 const nodeModulesFolder = path.join(baseFolder, "node_modules")
 const pagesDir = path.join(siteFolder, "pages")
 const listsFolder = path.join(siteFolder, "lists")
-const postsFolder = path.join(siteFolder, "posts")
-const featuresFolder = path.join(siteFolder, "features")
-const trueBasePagesFolder = path.join(siteFolder, "truebase")
 
 const linkManyAftertext = links =>
   links.map((link, index) => `${index + 1}.`).join(" ") + // notice the dot is part of the link. a hack to make it more unique for aftertext matching.
@@ -2007,12 +2004,9 @@ class PLDBServer extends TrueBaseServer {
   }
 }
 
-const pldbFolder = new PLDBFolder().setSettings({
-  grammarFolder: path.join(baseFolder, "grammar"),
-  thingsFolder: path.join(baseFolder, "things")
-})
-
-const PLDB = new PLDBServer(path.join(baseFolder, "pldb.truebase"), pldbFolder)
+const settingsPath = path.join(baseFolder, "pldb.truebase")
+const pldbFolder = new PLDBFolder().setSettingsFromPath(settingsPath)
+const PLDB = new PLDBServer(settingsPath, pldbFolder)
 
 module.exports = { PLDB }
 

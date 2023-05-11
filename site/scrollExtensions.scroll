@@ -23,7 +23,7 @@ ohayoCodeParser
  javascript
   compile() {
    const link = `https://ohayo.computer?filename=${this.root.permalink}.ohayo&data=${encodeURIComponent(this.childrenToString())}`
-   return `<div class="scrollQuoteComponent">Analyze this data yourself in <a href="${link}">Ohayo</a></div>`
+   return `<div class="scrollQuote">Analyze this data yourself in <a href="${link}">Ohayo</a></div>`
   }
 observableParser
  extends abstractScrollParser
@@ -32,7 +32,7 @@ observableParser
  description Provide a direct link to analyze this data in Observable.
  javascript
   compile() {
-   return `<div class="scrollQuoteComponent">Analyze this data yourself in <a href="${this.getWord(1)}">Observable</a></div>`
+   return `<div class="scrollQuote">Analyze this data yourself in <a href="${this.getWord(1)}">Observable</a></div>`
   }
 codeWithHeaderParser
  cruxFromId
@@ -53,7 +53,7 @@ bashParser
    const file = this.root.file
    const cwd = file.folderPath
    const output = require("child_process").execSync(command, {cwd})
-   return `<div class="codeWithHeader"><div class="codeHeader">${command}</div><code class="scrollCodeBlockComponent">${output.toString().trim()}</code></div>`
+   return `<div class="codeWithHeader"><div class="codeHeader">${command}</div><code class="scrollCodeBlock">${output.toString().trim()}</code></div>`
   }
 monacoEditorParser
  cruxFromId

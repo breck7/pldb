@@ -1,0 +1,5 @@
+title Which programming languages use indentation?
+select hasSemanticIndentation rank
+notMissing hasSemanticIndentation
+where hasSemanticIndentation = true
+sortBy rank

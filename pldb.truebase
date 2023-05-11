@@ -2,7 +2,8 @@ trueBaseId pldb
 name PLDB
 domain pldb.com
 grammarFolder ./grammar
-thingsFolder ./things
+rowsFolder ./things
+questionsFolder ./questions
 ignoreFolder ./ignore/
 siteFolder ./site
 devPort 1689
