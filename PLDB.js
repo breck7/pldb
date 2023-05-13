@@ -697,7 +697,7 @@ pipeTable
   }
 
   get sourceUrl() {
-    return `https://github.com/breck7/pldb/blob/main/things/${this.id}.pldb`
+    return `https://github.com/breck7/pldb/blob/main/rows/${this.id}.pldb`
   }
 
   toScroll() {
@@ -1510,7 +1510,7 @@ const makeInverseRanks = ranks => {
 class PLDBFolder extends TrueBaseFolder {
   globalSortFunction = item => parseInt(item.rank)
   // todo: move these to .truebase settings file
-  thingsViewSourcePath = `https://github.com/breck7/pldb/blob/main/things/`
+  rowsViewSourcePath = `https://github.com/breck7/pldb/blob/main/rows/`
   grammarViewSourcePath = `https://github.com/breck7/pldb/blob/main/grammar/`
 
   createParserCombinator() {
