@@ -1,0 +1,6 @@
+title Which of today's top languages were created in the 1980's?
+select isLanguage rank type appeared
+where isLanguage oneOf true
+where appeared > 1979
+where appeared < 1990
+sortBy rank
