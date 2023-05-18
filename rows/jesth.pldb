@@ -1,0 +1,19 @@
+title Jesth
+appeared 2022
+type dataNotation
+reference https://news.ycombinator.com/item?id=35991018
+standsFor Just Extract Sections Then Hack !
+
+related toml json yaml
+
+example
+ This text actually belongs to an anonymous section,
+ which happens to also be the first section of this document
+ 
+ []
+ This text actually belongs to the second anonymous section
+ of this document.
+ If the very first section of a document is anonymous, it can
+ ignore to define its header.
+
+githubRepo https://github.com/pyrustic/jesth
