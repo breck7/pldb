@@ -32,6 +32,11 @@ testTree.ensureSortWorks = areEqual => {
 	areEqual(program.asString, "title foo\nappeared 1923")
 }
 
+testTree.ensureFeaturesWorks = areEqual => {
+	const js = PLDB.folder.getFile("javascript")
+	areEqual(js.features.length > 0, true)
+}
+
 testTree.ensureSortCausesNoSemanticChanges = areEqual => {
 	// Arrange
 	const pre = PLDB.folder.typedMap

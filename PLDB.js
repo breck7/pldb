@@ -272,7 +272,8 @@ Wayback Machine: https://web.archive.org/web/20220000000000*/${title}`
   }
 
   get features() {
-    return this.extended.filter(node => node.sortKey === "abstractFeatureParser")
+    const featuresMap = this.parent.featuresMap
+    return this.extended.filter(node => featuresMap.has(node.getWord(0)))
   }
 
   get featuresWithExamples() {
