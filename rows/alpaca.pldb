@@ -1,0 +1,37 @@
+title Alpaca
+appeared 2017
+type pl
+creators Jeremy Pierre
+oldName ML-flavoured Erlang
+
+compilesTo beam-bytecode
+
+example 
+ module simple_example
+ 
+ -- a basic top-level function:
+ let add2 x = x + 2
+ 
+ let something_with_let_bindings x =
+   -- a function:
+   let adder a b = a + b in
+   -- a variable (immutable):
+   let x_plus_2 = adder x 2 in
+   add2 x
+ 
+ -- a polymorphic ADT:
+ type messages 'x = 'x | Fetch pid 'x
+ 
+ {- A function that can be spawned to receive `messages int`
+     messages, that increments its state by received integers
+     and can be queried for its state.
+ -}
+ let will_be_a_process x = receive with
+     i -> will_be_a_process (x + i)
+   | Fetch sender ->
+     let sent = send x sender in
+     will_be_a_process x
+ 
+ let start_a_process init = spawn will_be_a_process init
+
+githubRepo https://github.com/alpaca-lang/alpaca
