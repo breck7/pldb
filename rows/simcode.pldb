@@ -3,6 +3,8 @@ appeared 1997
 type pl
 description SimCode is a C like description language. You use it to define the characteristics and behavior of the device you are modeling. It includes functions to define parameters such as propagation delays, load characteristics, strengths, and so on. The device behavior is defined using truth tables, math functions and conditional control statements, such as IF..THEN statements. Digital SimCode is a proprietary language - devices created with it are not compatible with other simulators, nor are digital components created for other simulators compatible with Altium Designer's Mixed-Signal Circuit Simulator.
 reference https://en.wikipedia.org/wiki/CircuitMaker
+country United States and Australia
+originCommunity Altium Limited
 
 hasLineComments true
  // A comment
