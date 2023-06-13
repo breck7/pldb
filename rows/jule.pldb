@@ -4,11 +4,10 @@ type pl
 creators Mertcan Davulcu
 description Jule is the simple, efficient, statically typed and compiled system programming language.
 website https://jule.dev
-documentation https://jule.dev/pages/docs.html
+documentation https://jule.dev/pages/manual.html?page=jule-lang
 fileExtensions .jule
 country Turkey
 nativeLanguage false
-originCommunity Beykoz Okan University
 domainName jule.dev
  registered 2022
 
@@ -284,29 +283,32 @@ includeToken use
 keywords fn pub struct enum unsafe const let mut self match if else for in impl trait break continue goto cpp i8 i16 i32 i64 u8 u16 u32 u64 f32 f64 str int uint type any true false bool ret fall nil uintptr co
 
 example
- fn quicksort(mut s: []int) {
-     if s.len <= 1 {
-         ret
-     }
-     let mut i = 0
-     for i < s.len-1; i++ {
-         let (mut x, mut y) = &s[i], &s[i+1]
-         unsafe {
-             if *x > *y {
-                 *x, *y = *y, *x
-             }
-         }
-     }
-     quicksort(s[:i])
-     quicksort(s[i+1:])
- }
- 
- fn main() {
-     let mut s = [1, 9, -2, 25, -24, 4623, 0, -1, 0xFD2]
-     outln(s)
-     quicksort(s)
-     outln(s)
- }
+  fn quicksort(mut s: []int) {
+      if s.len <= 1 {
+          ret
+      }
+  
+      let mut i = -1
+      let last = s[s.len-1]
+      for j in s {
+          let mut x = &s[j]
+          if (unsafe{ *x <= last }) {
+              i++
+              let mut y = &s[i]
+              unsafe { *x, *y = *y, *x }
+          }
+      }
+  
+      quicksort(s[:i])
+      quicksort(s[i+1:])
+  }
+  
+  fn main() {
+      let mut my_slice = [1, 9, -2, 25, -24, 4623, 0, -1, 0xFD2]
+      outln(my_slice)
+      quicksort(my_slice)
+      outln(my_slice)
+  }
 example
  fn main() {
      outln("Hello World")
@@ -315,7 +317,7 @@ example
  use std::math::{PI}
  
  trait Shape {
-     fn area(self): int
+     fn area(self): f32
  }
  
  struct Rectangle {
@@ -324,7 +326,7 @@ example
  }
  
  impl Shape for Rectangle {
-     fn area(self): int {
+     fn area(self): f32 {
          ret self.width * self.height
      }
  }
@@ -334,7 +336,7 @@ example
  }
  
  impl Shape for Circle {
-     fn area(self): int {
+     fn area(self): f32 {
          ret PI * self.r * self.r
      }
  }
@@ -348,7 +350,7 @@ example
 
 githubRepo https://github.com/julelang/jule
  firstCommit 2021
- stars 60
+ stars 67
  forks 9
  subscribers 5
  created 2021
@@ -358,8 +360,8 @@ githubRepo https://github.com/julelang/jule
 
 repoStats
  firstCommit 2021
- commits 1847
- committers 7
+ commits 2093
+ committers 4
  files 216
 
 fileType text
