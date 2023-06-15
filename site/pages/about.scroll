@@ -34,16 +34,16 @@ replaceJs BUILT_ON_DAY dayjs().format("MM/DD/YYYY")
 
 ## Cloc Stats
 Below are the cloc stats for the pldb repo as of BUILT_ON_DAY.
- link BASE_URL/truebase/cloc.html cloc
+ link BASE_URL/rows/cloc.html cloc
  https://github.com/breck7/pldb pldb repo
 
 bash cd ..; cd ..; cloc --quiet --vcs git . --read-lang-def=code/clocLangs.txt
 
 # Mirrors
 The URL for the official PLDB site is https://pldb.com. DNS will take that domain name and send your browser an IPv4 address. Your browser will send a request to that address which will reach our virtual server running Node.js (nicknamed _Marconi_) running in a Digital Ocean datacenter. _Marconi_ will send you the HTML, CSS, Javascript, PNGs, SVGs and JSON that make up the built website.
- link ../truebase/url.html URL
- link ../truebase/dns.html DNS
- link ../truebase/ipv4.html IPv4
+ link ../rows/url.html URL
+ link ../rows/dns.html DNS
+ link ../rows/ipv4.html IPv4
 
 In case there's a problem with _Marconi_, you should be able to access the exact same site locally by downloading the source from GitHub.
 
@@ -61,9 +61,9 @@ replaceJs DAYS_ONLINE Math.floor(dayjs().diff(dayjs("2022-08-15"), "day", true))
 PLDB.com came online DAYS_ONLINE days ago. PLDB.com launched DAYS_SINCE_LAUNCH days ago. PLDB began as an anonymous Jekyll blog on November 18, 2017. The blog was migrated to Scroll and the name changed from CodeLani to PLDB on June 27, 2022.
  https://github.com/breck7/pldb/commit/95ff2c2e69d77ecc89a3ac58e71b353e9485dc81 came online
  https://news.ycombinator.com/item?id=32619671 launched
- link ../truebase/jekyll.html Jekyll
+ link ../rows/jekyll.html Jekyll
  link ../posts/hello-world.html November 18, 2017
- link ../truebase/scroll.html Scroll
+ link ../rows/scroll.html Scroll
  https://github.com/breck7/pldb/commit/273f34a8620111e326a49332761e2c01823b58ef CodeLani to PLDB
 The site owes its existence to a kind (_but firm_) Internet commenter who told Breck Yunits to "learn to research properly" if he wanted to make his languages any good.
  https://breckyunits.com Breck Yunits

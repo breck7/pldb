@@ -11,8 +11,8 @@ image print-debugging.png
 
 * Paul Graham—creator of Arc and Bel—started an interesting thread last month about "print() debugging".
  https://twitter.com/paulg/status/1532448988766650385 interesting thread
- link BASE_URL/truebase/arc.html Arc
- link BASE_URL/truebase/bel.html Bel
+ link BASE_URL/rows/arc.html Arc
+ link BASE_URL/rows/bel.html Bel
  dateline
 
 endSnippet
@@ -24,7 +24,7 @@ endSnippet
 * Different languages use different commands. There are a few popular patterns. Many languages have a simple global keyword like `print` or `echo` or `puts`. Many others don't use the global namespace and you "print() debug" via a call like `console.log`. Many provide multiple keywords, such as `print` and `println`—the latter a shortcut for printing a string followed by a `\n`.
 
 * There is also a long tail distribution of how languages let you do it. Some have special syntactic sugar, such as the code golf esolang 05AB1E (`"hello world`).
- link BASE_URL/truebase/05AB1E.html 05AB1E
+ link BASE_URL/rows/05AB1E.html 05AB1E
 
 * Below is a table of over 100 keyword(s) used to "print() debug" in over 300 languages.
 

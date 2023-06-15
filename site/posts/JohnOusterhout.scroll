@@ -11,9 +11,9 @@ author https://github.com/hassamalhajaji Hassam Alhajaji
 * Dr. John Ousterhout is a computer science luminary who has made significant contributions to the field of computer science, particularly in the areas of operating systems and file systems. He is the creator of the Tcl scripting language, and has also worked on several major software projects, including the Log-Structered file system and the Sprite operating system. John Ousterhout's creation of Tcl has had a lasting impact on the technology industry, transforming the way developers think about scripting and automation.
  dateline
  https://web.stanford.edu/~ouster/cgi-bin/home.php Dr. John Ousterhout
- https://pldb.com/truebase/tcl.html Tcl
- https://pldb.com/truebase/afs.html AFS
- https://pldb.com/truebase/sprite-os.html Sprite operating system
+ https://pldb.com/rows/tcl.html Tcl
+ https://pldb.com/rows/afs.html AFS
+ https://pldb.com/rows/sprite-os.html Sprite operating system
 
 endSnippet
 
@@ -21,26 +21,26 @@ endSnippet
 * *Hassam:* What is unique about tcl?
 * *Dr. Ousterhout:* I would highlight 2 things:
 - The first thing is its embeddable nature: I designed Tcl so that the library could be embedded in applications, with Tcl providing generic scripting features and the application adding its own commands to the built-in command set. The boundary between Tcl and the application is extremely fluid, and applications can extend Tcl in very powerful ways, such as adding new control structures to the  language. I don't think any other scripting language has achieved embeddability to the degree that Tcl did.
- https://pldb.com/truebase/tcl.html Tcl
+ https://pldb.com/rows/tcl.html Tcl
 - The second thing is Tcl's "everything is a string" philosophy. This played a big role in Tcl's embeddability and made it easy to extend Tcl in a variety of ways. But, it also carried a performance penalty; even with a lot of work, Tcl has never become as efficient as other languages with more traditional types, such as Python. The string focus is also responsible for Tcl's unusual command syntax, which some people love and some people hate.
- https://pldb.com/truebase/python.html Python
+ https://pldb.com/rows/python.html Python
 
 * *Hassam:* How different would tcl be had you stayed on with the development team? :)
 * *Dr. Ousterhout:* I don't think it would have been very different. Tcl was quite mature by the time I passed off development responsibility. Tcl had its heyday in the 1990's, due in large part to the power of the Tk toolkit and the awfulness of the other X Window GUI toolkits; Tcl/Tk was the easiest and most powerful way to create GUI apps. Unfortunately, Tcl didn't make the jump to the Web, and most of the applications for which people would have used Tcl in the 1990s became Web applications.
 * Interesting footnote: the founding of Netscape occurred at the same time I was deciding where to go in industry when I left Berkeley in 1994. Jim Clarke and Marc Andreessen approached me about the possibility of my joining Netscape as a founder, but I eventually decided against it (they hadn't yet decided to do Web stuff when I talked with them). This is one of the biggest "what if" moments of my career. If I had gone to Netscape, I think there's a good chance that Tcl would have become the browser language instead of JavaScript and the world would be a different place! However, in retrospect I'm not sure that Tcl would actually be a better language for the Web than JavaScript, so maybe the right thing happened.
- https://pldb.com/truebase/javascript.html Javascript
+ https://pldb.com/rows/javascript.html Javascript
 
 * *Hassam:* As a long time educator, what do you predict the next paradigm shift in programming languages will be? 
 * *Dr. Ousterhout:* I don't really know. It used to be that every 5-10 years a major new language came along, but it's been almost 20 or years since the last interesting new language I can think of (Go). Maybe others would count Rust, in which case maybe the 5-10 year interval is still holding. One interesting note on this. Historically, I think the most widely used programming linkages have come not from the programming language research committee, but rather from people who build systems and wanted a language to help themselves. PL researchers tend to create languages that are useful for PL researchers: they have interesting theoretical and conceptual properties (e.g., ML) but aren't usually useful for real systems. Systems people create languages that are useful for systems builders, so they get widely adopted. Examples are C, C++ (I think?), Perl, Java, and Go. I would put Tcl in this category as well, and perhaps Python also?
- https://pldb.com/truebase/go.html Go
- https://pldb.com/truebase/rust.html Rust
- https://pldb.com/truebase/c.html C
- https://pldb.com/truebase/cpp.html C++
- https://pldb.com/truebase/perl.html Perl
- https://pldb.com/truebase/ml.html ML
- https://pldb.com/truebase/java.html Java
- https://pldb.com/truebase/tcl.html Tcl
- https://pldb.com/truebase/python.html Python
+ https://pldb.com/rows/go.html Go
+ https://pldb.com/rows/rust.html Rust
+ https://pldb.com/rows/c.html C
+ https://pldb.com/rows/cpp.html C++
+ https://pldb.com/rows/perl.html Perl
+ https://pldb.com/rows/ml.html ML
+ https://pldb.com/rows/java.html Java
+ https://pldb.com/rows/tcl.html Tcl
+ https://pldb.com/rows/python.html Python
 
 image images/JohnO.jpg
  caption Thank you for your time Dr. Ousterhout!
