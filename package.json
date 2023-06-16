@@ -8,6 +8,7 @@
     "local": "./PLDB.js startDevServer",
     "search": "./PLDB.js search",
     "format": "./PLDB.js format",
+    "static": "./PLDB.js dumpStaticSite",
     "gits": "./PLDB.js crawlGits",
     "githubs": "./PLDB.js crawlGitHub",
     "fetchContributors": "wget -O site/pages/contributors.json https://api.github.com/repos/breck7/pldb/contributors",
@@ -59,6 +60,6 @@
     "monaco-editor": "^0.34.1",
     "numeral": "^2.0.6",
     "scroll-cli": "^70.0.0",
-    "truebase": "^18.0.1"
+    "truebase": "^19.0.0"
   }
 }
