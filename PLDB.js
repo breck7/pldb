@@ -1765,7 +1765,7 @@ class PLDBFolder extends TrueBaseFolder {
 
 class PLDBServer extends TrueBaseServer {
   beforeListen() {
-    this.serveFolderNested("/monaco-editor", path.join(nodeModulesFolder, "monaco-editor"))
+    this.serveFolder(path.join(nodeModulesFolder, "monaco-editor"), "/monaco-editor")
     // todo: cleanup
     this.addRedirects(this.app)
     super.beforeListen()
