@@ -1402,7 +1402,7 @@ html
  <a class="trueBaseThemePreviousItem" href="${previous.permalink}">&lt;</a>
  <a class="trueBaseThemeNextItem" href="${next.permalink}">&gt;</a>
 
-viewSourceUrl https://github.com/breck7/pldb/blob/main/columns/${fileName}
+viewSourceUrl https://github.com/breck7/pldb/blob/main/questions/${fileName}
 
 startColumns 4
 
@@ -1508,8 +1508,8 @@ const makeInverseRanks = ranks => {
 class PLDBFolder extends TrueBaseFolder {
   globalSortFunction = item => parseInt(item.rank)
   // todo: move these to .truebase settings file
-  rowsViewSourcePath = `https://github.com/breck7/pldb/blob/main/rows/`
-  grammarViewSourcePath = `https://github.com/breck7/pldb/blob/main/columns/`
+  conceptsViewSourcePath = `https://github.com/breck7/pldb/blob/main/concepts/`
+  questionsViewSourcePath = `https://github.com/breck7/pldb/blob/main/questions/`
 
   createParserCombinator() {
     return new TreeNode.ParserCombinator(PLDBFile)
