@@ -9,7 +9,7 @@ author https://github.com/breck7 Breck Yunits
 
 * Python, as one of the top 10 programming languages in the world, is the most popular programming language that treats indentation as significant. In these offside languages, programmers indent their code blocks instead of using braces, brackets, or other visible characters.
  dateline
- link BASE_URL/rows/python.html Python
+ link BASE_URL/concepts/python.html Python
  https://en.wikipedia.org/wiki/Off-side_rule offside
 
 * I was curious about how common these languages were so I did some brief analysis to answer these questions:
@@ -28,42 +28,42 @@ endSnippet
 
 * These languages use indentation:
 * abc, aldor, boo, buddyscript, cobra, coffeescript, csl, curry, elixir, f-sharp, genie, haml, haskell, inform, iswim, literate-coffeescript, livescript, madcap, madcap-vi, makefile, markdown, miranda, nemerle, net-format, nim, occam, org, promal, python, restructuredtext, sass, scss, spin, stylus, xl-programming-language and yaml.
- link BASE_URL/rows/abc.html abc
- link BASE_URL/rows/aldor.html aldor
- link BASE_URL/rows/boo.html boo
- link BASE_URL/rows/buddyscript.html buddyscript
- link BASE_URL/rows/cobra.html cobra
- link BASE_URL/rows/coffeescript.html coffeescript
- link BASE_URL/rows/csl.html csl
- link BASE_URL/rows/curry.html curry
- link BASE_URL/rows/elixir.html elixir
- link BASE_URL/rows/f-sharp.html f-sharp
- link BASE_URL/rows/genie.html genie
- link BASE_URL/rows/haml.html haml
- link BASE_URL/rows/haskell.html haskell
- link BASE_URL/rows/inform.html inform
- link BASE_URL/rows/iswim.html iswim
- link BASE_URL/rows/literate-coffeescript.html literate-coffeescript
- link BASE_URL/rows/livescript.html livescript
- link BASE_URL/rows/madcap-vi.html madcap-vi
- link BASE_URL/rows/madcap.html madcap
- link BASE_URL/rows/makefile.html makefile
- link BASE_URL/rows/markdown.html markdown
- link BASE_URL/rows/miranda.html miranda
- link BASE_URL/rows/nemerle.html nemerle
- link BASE_URL/rows/net-format.html net-format
- link BASE_URL/rows/nim.html nim
- link BASE_URL/rows/occam.html occam
- link BASE_URL/rows/org.html org
- link BASE_URL/rows/promal.html promal
- link BASE_URL/rows/python.html python
- link BASE_URL/rows/restructuredtext.html restructuredtext
- link BASE_URL/rows/sass.html sass
- link BASE_URL/rows/scss.html scss
- link BASE_URL/rows/spin.html spin
- link BASE_URL/rows/stylus.html stylus
- link BASE_URL/rows/xl-programming-language.html xl-programming-language
- link BASE_URL/rows/yaml.html yaml
+ link BASE_URL/concepts/abc.html abc
+ link BASE_URL/concepts/aldor.html aldor
+ link BASE_URL/concepts/boo.html boo
+ link BASE_URL/concepts/buddyscript.html buddyscript
+ link BASE_URL/concepts/cobra.html cobra
+ link BASE_URL/concepts/coffeescript.html coffeescript
+ link BASE_URL/concepts/csl.html csl
+ link BASE_URL/concepts/curry.html curry
+ link BASE_URL/concepts/elixir.html elixir
+ link BASE_URL/concepts/f-sharp.html f-sharp
+ link BASE_URL/concepts/genie.html genie
+ link BASE_URL/concepts/haml.html haml
+ link BASE_URL/concepts/haskell.html haskell
+ link BASE_URL/concepts/inform.html inform
+ link BASE_URL/concepts/iswim.html iswim
+ link BASE_URL/concepts/literate-coffeescript.html literate-coffeescript
+ link BASE_URL/concepts/livescript.html livescript
+ link BASE_URL/concepts/madcap-vi.html madcap-vi
+ link BASE_URL/concepts/madcap.html madcap
+ link BASE_URL/concepts/makefile.html makefile
+ link BASE_URL/concepts/markdown.html markdown
+ link BASE_URL/concepts/miranda.html miranda
+ link BASE_URL/concepts/nemerle.html nemerle
+ link BASE_URL/concepts/net-format.html net-format
+ link BASE_URL/concepts/nim.html nim
+ link BASE_URL/concepts/occam.html occam
+ link BASE_URL/concepts/org.html org
+ link BASE_URL/concepts/promal.html promal
+ link BASE_URL/concepts/python.html python
+ link BASE_URL/concepts/restructuredtext.html restructuredtext
+ link BASE_URL/concepts/sass.html sass
+ link BASE_URL/concepts/scss.html scss
+ link BASE_URL/concepts/spin.html spin
+ link BASE_URL/concepts/stylus.html stylus
+ link BASE_URL/concepts/xl-programming-language.html xl-programming-language
+ link BASE_URL/concepts/yaml.html yaml
 
 * According to my present database, languages that strip indentation are about <b>70x</b> more common than languages that employ it.
 
@@ -84,8 +84,8 @@ image images/indentation-time.png
 * I would like to expand upon this to help language designers answer the question: will adding significant indentation increase the odds of my language becoming successful? I will continue to invest in my data collection and mining efforts to ensure I am not missing accurate information about the lesser documented languages.
 
 * UPDATE: masonic on HackerNews pointed out that COBOL should be included on this list. The column position of tokens is indeed significant in COBOL (and FORTRAN too), so perhaps in the next update I'll clarify this categorization to adhere more closely to the offside rule, or will include a broader definition of significant indentation that includes some of these additional languages
- link BASE_URL/rows/cobol.html COBOL
- link BASE_URL/rows/fortran.html FORTRAN
+ link BASE_URL/concepts/cobol.html COBOL
+ link BASE_URL/concepts/fortran.html FORTRAN
 
 ohayoCode
  html.h1 Which programming languages use indentation?

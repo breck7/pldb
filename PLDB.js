@@ -34,6 +34,8 @@ const nodeModulesFolder = path.join(baseFolder, "node_modules")
 const pagesDir = path.join(siteFolder, "pages")
 const listsFolder = path.join(siteFolder, "lists")
 
+const conceptsFolderName = "/concepts/"
+
 const linkManyAftertext = links =>
   links.map((link, index) => `${index + 1}.`).join(" ") + // notice the dot is part of the link. a hack to make it more unique for aftertext matching.
   links.map((link, index) => `\n ${link} ${index + 1}.`).join("")
@@ -698,7 +700,7 @@ pipeTable
   }
 
   get sourceUrl() {
-    return `https://github.com/breck7/pldb/blob/main/rows/${this.id}.pldb`
+    return `https://github.com/breck7/pldb/blob/main/concepts/${this.id}.pldb`
   }
 
   toScroll() {
@@ -712,7 +714,7 @@ pipeTable
       : ""
 
     return `import ../header.scroll
-baseUrl https://pldb.com/rows/
+baseUrl https://pldb.com/concepts/
 title ${title}
 
 title ${title} - ${lodash.upperFirst(typeName)}
@@ -1356,13 +1358,13 @@ class Feature {
 
     const positives = this.languagesWithThisFeature
     const positiveText = `* Languages *with* ${title} include ${positives
-      .map(file => `<a href="../rows/${file.permalink}">${file.title}</a>`)
+      .map(file => `<a href="../concepts/${file.permalink}">${file.title}</a>`)
       .join(", ")}`
 
     const negatives = this.languagesWithoutThisFeature
     const negativeText = negatives.length
       ? `* Languages *without* ${title} include ${negatives
-          .map(file => `<a href="../rows/${file.permalink}">${file.title}</a>`)
+          .map(file => `<a href="../concepts/${file.permalink}">${file.title}</a>`)
           .join(", ")}`
       : ""
 
@@ -1378,7 +1380,7 @@ class Feature {
     const grouped = lodash.groupBy(examples, "example")
     const examplesText = Object.values(grouped)
       .map(group => {
-        const links = group.map(hit => `<a href="../rows/${hit.id}.html">${hit.title}</a>`).join(", ")
+        const links = group.map(hit => `<a href="../concepts/${hit.id}.html">${hit.title}</a>`).join(", ")
         return `codeWithHeader Example from ${links}:
  ${shiftRight(removeReturnChars(lodash.escape(group[0].example)), 1)}`
       })
@@ -1748,7 +1750,7 @@ class PLDBFolder extends TrueBaseFolder {
       row.langs = row.ids
         .map(id => {
           const file = this.getFile(id)
-          return `<a href='../rows/${file.permalink}'>${file.title}</a>`
+          return `<a href='../concepts/${file.permalink}'>${file.title}</a>`
         })
         .join(" ")
       row.frequency = Math.round(100 * lodash.round(row.count / langsWithKeywordsCount, 2)) + "%"
@@ -1774,7 +1776,7 @@ class PLDBServer extends TrueBaseServer {
 
   addRedirects(app) {
     // /languages => /truebase redirect
-    app.get("/languages/:id", (req, res, next) => res.status(302).redirect(`/rows/${req.params.id}`))
+    app.get("/languages/:id", (req, res, next) => res.status(302).redirect(`/concepts/${req.params.id}`))
 
     const redirects = Disk.read(path.join(siteFolder, "redirects.txt"))
       .split("\n")
@@ -1842,7 +1844,7 @@ class PLDBServer extends TrueBaseServer {
     return {
       WRITTEN_IN_TABLE: lodash
         .sortBy(writtenIn, "rank")
-        .map(file => `- ${file.title}\n link ../rows/${file.permalink}`)
+        .map(file => `- ${file.title}\n link ../concepts/${file.permalink}`)
         .join("\n"),
       PACKAGES_TABLE: npmPackages.map(s => `- ${s}\n https://www.npmjs.com/package/${s}`).join("\n"),
       SOURCES_TABLE: sources.map(s => `- ${s}\n https://${s}`).join("\n"),
@@ -1861,7 +1863,7 @@ class PLDBServer extends TrueBaseServer {
       const title = file.get("title")
       return {
         title,
-        titleLink: `../rows/${file.permalink}`,
+        titleLink: `../concepts/${file.permalink}`,
         rank,
         type,
         appeared
@@ -1879,7 +1881,7 @@ class PLDBServer extends TrueBaseServer {
       .map(file => {
         return {
           name: file.title,
-          nameLink: `../rows/${file.permalink}`,
+          nameLink: `../concepts/${file.permalink}`,
           rank: file.rank,
           extensions: file.extensions
         }
@@ -1924,7 +1926,7 @@ class PLDBServer extends TrueBaseServer {
     const entities = this.folder.groupByListValues("originCommunity", files)
     const rows = Object.keys(entities).map(name => {
       const group = entities[name]
-      const languages = group.map(lang => `<a href='../rows/${lang.id}.html'>${lang.title}</a>`).join(" - ")
+      const languages = group.map(lang => `<a href='../concepts/${lang.id}.html'>${lang.title}</a>`).join(" - ")
       const count = group.length
       const top = -Math.min(...group.map(lang => lang.languageRank))
 
@@ -1958,7 +1960,7 @@ class PLDBServer extends TrueBaseServer {
         name: !person
           ? `<a name='${anchorTag}' />${name}`
           : `<a name='${anchorTag}' href='https://en.wikipedia.org/wiki/${person.get("wikipedia")}'>${name}</a>`,
-        languages: group.map(file => `<a href='../rows/${file.permalink}'>${file.title}</a>`).join(" - "),
+        languages: group.map(file => `<a href='../concepts/${file.permalink}'>${file.title}</a>`).join(" - "),
         count: group.length,
         topRank: group[0].languageRank + 1
       }

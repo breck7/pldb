@@ -20,7 +20,7 @@ nodejs
  module.exports = {
       TOP_LANGS: PLDB.folder.topLanguages
         .slice(0, 10)
-        .map(file => `<a href="./rows/${file.permalink}">${file.title}</a>`)
+        .map(file => `<a href="./concepts/${file.permalink}">${file.title}</a>`)
         .join(" · ")
     }
 
