@@ -7,6 +7,7 @@ website https://slope.colorfield.space
 standsFor SLOum's Programming Environment
 fileExtensions slo
 country United States
+originCommunity https://git.rawtext.club/slope-lang
 
 writtenIn go
 influencedBy scheme
@@ -71,5 +72,7 @@ example
  (define greeting "Hello")
  (display greeting ", world!\n")
  
+
+gitRepo https://git.rawtext.club/slope-lang/slope
 
 packageRepository https://git.rawtext.club/slope-lang/packages
