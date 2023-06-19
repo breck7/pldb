@@ -42,6 +42,8 @@ code
  npm run test
  # Start the dev server
  npm run local
+ # Or to rum the local site statically
+ npm run static
  # After you make changes and before you commit make sure to run:
  npm run format
 
