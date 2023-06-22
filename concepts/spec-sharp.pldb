@@ -1,8 +1,10 @@
 title Spec Sharp
 appeared 2004
 type pl
+country United States
+originCommunity Microsoft Research
 
-wikipedia https://en.wikipedia.org/wiki/Spec_Sharp
+wikipedia https://web.archive.org/web/20190321010218/https://en.wikipedia.org/wiki/Spec_Sharp
  example
   static int Main(string![] args)
           requires args.Length > 0;
