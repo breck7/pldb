@@ -1,0 +1,17 @@
+title Spark
+appeared 1988
+type pl
+country United Kingdom
+
+influencedBy ada
+
+example
+ procedure Increment (X : in out Counter_Type)
+   with Global  => null,
+        Depends => (X => X),
+        Pre     => X < Counter_Type'Last,
+        Post    => X = X'Old + 1;
+
+wikipedia https://en.wikipedia.org/wiki/SPARK_(programming_language)
+
+hopl https://hopl.info/showlanguage.prx?exp=2518
