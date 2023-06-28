@@ -4,6 +4,8 @@ type template
 creators Kyle Fuller
 description Stencil is a simple and powerful template language for Swift. It provides a syntax similar to Django and Mustache.
 website https://stencil.fuller.li/en/latest/
+country United Kingdom
+originCommunity https://github.com/stencilproject
 
 example
  There are {{ articles.count }} articles.
