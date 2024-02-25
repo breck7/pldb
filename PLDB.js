@@ -1404,7 +1404,7 @@ html
  <a class="trueBaseThemePreviousItem" href="${previous.permalink}">&lt;</a>
  <a class="trueBaseThemeNextItem" href="${next.permalink}">&gt;</a>
 
-viewSourceUrl https://github.com/breck7/pldb/blob/main/questions/${fileName}
+viewSourceUrl https://github.com/breck7/pldb/blob/main/measures/${fileName}
 
 startColumns 4
 
@@ -1511,7 +1511,7 @@ class PLDBFolder extends TrueBaseFolder {
   globalSortFunction = item => parseInt(item.rank)
   // todo: move these to .truebase settings file
   conceptsViewSourcePath = `https://github.com/breck7/pldb/blob/main/concepts/`
-  questionsViewSourcePath = `https://github.com/breck7/pldb/blob/main/questions/`
+  measuresViewSourcePath = `https://github.com/breck7/pldb/blob/main/measures/`
 
   createParserCombinator() {
     return new TreeNode.ParserCombinator(PLDBFile)
