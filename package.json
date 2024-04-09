@@ -8,7 +8,7 @@
     "local": "./PLDB.js startDevServer",
     "search": "./PLDB.js search",
     "format": "./PLDB.js format",
-    "static": "./PLDB.js dumpStaticSite",
+    "static": "./PLDB.js dumpStaticSite; cp -R node_modules/monaco-editor ignore/static",
     "gits": "./PLDB.js crawlGits",
     "githubs": "./PLDB.js crawlGitHub",
     "fetchContributors": "wget -O site/pages/contributors.json https://api.github.com/repos/breck7/pldb/contributors",
