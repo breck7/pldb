@@ -68,7 +68,7 @@ endSnippet
 
 ohayoCode
  html.h1 How Many Programming Languages are there in the World?
- web.get https://pldb.com/pldb.csv
+ web.get https://pldb.io/pldb.csv
   filter.where type = pl
    show.rowCount
 

@@ -17,7 +17,7 @@ This site is served using Node.js and Express running on a Digital Ocean droplet
 This site does not use cookies or include any tracking scripts. Server logs are kept and used primarily for catching broken links, broken scripts, and other QA. If you need even more privacy, you can run the site locally or on your own servers.
 
 You can view traffic reports from GoAccess. GoAccess runs every hour thanks to the `cron` job listed below.
- https://pldb.com/traffic.html traffic
+ https://pldb.io/traffic.html traffic
  https://goaccess.io/ GoAccess
 
 import marconiSetup.scroll

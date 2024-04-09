@@ -26,8 +26,8 @@ bashCode
  snap install --classic certbot
  certbot certonly --standalone
  mkdir ignore
- cp /etc/letsencrypt/live/pldb.com/privkey.pem ignore
- cp /etc/letsencrypt/live/pldb.com/fullchain.pem ignore
+ cp /etc/letsencrypt/live/pldb.io/privkey.pem ignore
+ cp /etc/letsencrypt/live/pldb.io/fullchain.pem ignore
  # Now start with pm2 over http2
  pm2 start ./PLDB.js -- startProdServer
  pm2 startup systemd
@@ -46,7 +46,7 @@ cronCode
 
 ## Deploying Marconi Server
 bashCode
- ssh root@pldb.com
+ ssh root@pldb.io
  cd pldb
  git pull
  npm install .

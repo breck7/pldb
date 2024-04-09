@@ -105,7 +105,7 @@ observable https://observablehq.com/@breck7/languages-with-central-package-repos
 
 ohayoCode
  html.h1 Does every programming language have a central package repository?
- web.get https://pldb.com/pldb.csv
+ web.get https://pldb.io/pldb.csv
   filter.where appeared > 1950
    columns.keep appeared packageRepository title
     columns.setType appeared year

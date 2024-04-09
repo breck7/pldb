@@ -714,7 +714,7 @@ pipeTable
       : ""
 
     return `import ../header.scroll
-baseUrl https://pldb.com/concepts/
+baseUrl https://pldb.io/concepts/
 title ${title}
 
 title ${title} - ${lodash.upperFirst(typeName)}
@@ -784,7 +784,7 @@ import ../footer.scroll
     if (!image) return ""
 
     return `openGraphImage ${image}
-image ${image.replace("https://pldb.com/", "../")}
+image ${image.replace("https://pldb.io/", "../")}
  caption ${caption}`
   }
 

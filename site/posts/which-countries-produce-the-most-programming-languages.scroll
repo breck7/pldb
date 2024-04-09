@@ -48,7 +48,7 @@ commaTable
 
 ohayoCode
  html.h1 Which countries produce the most programming languages?
- web.get https://pldb.com/pldb.csv
+ web.get https://pldb.io/pldb.csv
   hidden
   filter.where country > 
    group.by country

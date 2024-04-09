@@ -40,7 +40,7 @@ Below are the cloc stats for the pldb repo as of BUILT_ON_DAY.
 bash cd ..; cd ..; cloc --quiet --vcs git . --read-lang-def=code/clocLangs.txt
 
 # Mirrors
-The URL for the official PLDB site is https://pldb.com. DNS will take that domain name and send your browser an IPv4 address. Your browser will send a request to that address which will reach our virtual server running Node.js (nicknamed _Marconi_) running in a Digital Ocean datacenter. _Marconi_ will send you the HTML, CSS, Javascript, PNGs, SVGs and JSON that make up the built website.
+The URL for the official PLDB site is https://pldb.io. DNS will take that domain name and send your browser an IPv4 address. Your browser will send a request to that address which will reach our virtual server running Node.js (nicknamed _Marconi_) running in a Digital Ocean datacenter. _Marconi_ will send you the HTML, CSS, Javascript, PNGs, SVGs and JSON that make up the built website.
  link ../concepts/url.html URL
  link ../concepts/dns.html DNS
  link ../concepts/ipv4.html IPv4
@@ -71,16 +71,16 @@ The site owes its existence to a kind (_but firm_) Internet commenter who told B
 ## Citation
 PLDB content is published to the public domain and you can use it freely. If needed, here are 3 options for citing PLDB:
 quote
- https://pldb.com
+ https://pldb.io
 quote
- PLDB contributors. (2022) - "PLDB: a Programming Language Database". Retrieved from: 'https://pldb.com' [Online Resource]
+ PLDB contributors. (2022) - "PLDB: a Programming Language Database". Retrieved from: 'https://pldb.io' [Online Resource]
 code
  @article{pldb,
    author = {PLDB contributors},
    title = {PLDB: a Programming Language Database},
    journal = {PLDB},
    year = {2022},
-   note = {https://pldb.com}
+   note = {https://pldb.io}
   }
 
 import footer.scroll

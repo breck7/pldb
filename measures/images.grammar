@@ -1,6 +1,6 @@
 screenshotParser
- description What is a URL to a screenshot of this visual language in the form https://pldb.com/screenshots/[id].png?
+ description What is a URL to a screenshot of this visual language in the form https://pldb.io/screenshots/[id].png?
  extends abstractUrlColumnParser
 photoParser
- description What is a URL to a screenshot of this real world notation in the form https://pldb.com/photos/[id].png?
+ description What is a URL to a screenshot of this real world notation in the form https://pldb.io/photos/[id].png?
  extends abstractUrlColumnParser
