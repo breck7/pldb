@@ -58,7 +58,7 @@ bashCode
 replaceJs DAYS_ONLINE Math.floor(dayjs().diff(dayjs("2022-08-15"), "day", true))
 
 ## History
-PLDB.com came online DAYS_ONLINE days ago. PLDB.com launched DAYS_SINCE_LAUNCH days ago. PLDB began as an anonymous Jekyll blog on November 18, 2017. The blog was migrated to Scroll and the name changed from CodeLani to PLDB on June 27, 2022.
+PLDB.io came online DAYS_ONLINE days ago. PLDB.io launched DAYS_SINCE_LAUNCH days ago. PLDB began as an anonymous Jekyll blog on November 18, 2017. The blog was migrated to Scroll and the name changed from CodeLani to PLDB on June 27, 2022.
  https://github.com/breck7/pldb/commit/95ff2c2e69d77ecc89a3ac58e71b353e9485dc81 came online
  https://news.ycombinator.com/item?id=32619671 launched
  link ../concepts/jekyll.html Jekyll
