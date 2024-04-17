@@ -1,0 +1,18 @@
+title Muldis
+appeared 2007
+type queryLanguage
+creators Darren Duncan
+description Muldis Data Language is an industrial-strength computationally complete high-level application programming language with fully integrated database functionality; you can use it to define, query, and update ("object") relational databases, as well as write general purpose applications. The language's paradigm is a mixture of declarative, homoiconic, functional, imperative, and object-oriented. Muldis Data Language is currently under development.
+website https://muldis.com/Muldis_Data_Language.html
+
+example
+   if ?people
+     then (
+       people
+       map \(( group : args:.\0 %= \$(age,ctry), member : args:.\0 ))
+       pipe group
+       map \( args:.\0:.\group %+ ( count_by_age_ctry : #args:.\0:.\members, ))
+     )
+     else \?%( age, ctry, count_by_age_ctry )
+
+githubRepo https://github.com/muldis/Muldis_Data_Language
