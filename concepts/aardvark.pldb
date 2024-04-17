@@ -3,33 +3,12 @@ appeared 2020
 type pl
 creators Hg0428 and JustCoding123 and CompilingCoder and TheBoys619 and PlasDev and ZDev1
 description Aardvark was originally designed in Python as an interpretter. This encompassed all releases up to 1.0. Then, in 2021 and 2022, other implementations started emerging, written in language such as Go and C++. In 2022, however, Aardvark underwent the 1.0 redesign. The language was redesigned from the ground up and re-implemented with a new, but temporary Python interpretter. Now, in 2023, the team is building the final compiler. This compiler is written in Aardvark itself and compiles to LLVM. It has the goal of being faster than C while easier than Python. It was designed for beginners and pros alike. The documentation is avaialiable here: https://aardvark-docs.programit.repl.co. It includes many tutorials and articles.
+documentation https://aardvark-docs.programit.repl.co/
 country United Kingdom
 country United States
 country South Korea
 originCommunity discord
 
-example
- stdout.write("Hello World!\n")
-
-
-githubRepo https://github.com/Aardvark-team/Aardvark-py
- firstCommit 2022
- stars 2
- forks 0
- subscribers 2
- created 2022
- updated 2022
- issues 0
-
-repoStats
- firstCommit 2022
- commits 76
- committers 2
- files 100
-
-documentation https://aardvark-docs.programit.repl.co/
-isOpenSource true
-discord https://discord.gg/MM3HmfzRfS
 hasAnonymousFunctions true
 hasAssignment true
 hasBinaryNumbers true
@@ -85,3 +64,25 @@ hasReservedWords true
 hasSelfOrThisWord true
  You can name it whatever you like.
 hasSets true
+
+example
+ stdout.write("Hello World!\n")
+
+githubRepo https://github.com/Aardvark-team/Aardvark-py
+ firstCommit 2022
+ stars 2
+ forks 0
+ subscribers 2
+ created 2022
+ updated 2022
+ issues 0
+
+repoStats
+ firstCommit 2022
+ commits 76
+ committers 2
+ files 100
+
+discord https://discord.gg/MM3HmfzRfS
+
+isOpenSource true
