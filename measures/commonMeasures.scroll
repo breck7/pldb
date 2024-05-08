@@ -38,6 +38,12 @@ abstractUniqueWordMeasureParser
 abstractUniqueStringMeasureParser
  extends abstractStringMeasureParser
 
+abstractStringListMeasureParser
+ extends abstractStringMeasureParser
+
+abstractPopulationCountMeasureParser
+ extends abstractIntegerMeasureParser
+
 // todo: idCell
 // Links between concepts
 abstractConceptIdsMeasureParser

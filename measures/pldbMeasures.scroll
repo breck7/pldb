@@ -157,22 +157,18 @@ lastActivityParser
 
 
 // conference
-conferenceNameCell
- extends stringCell
 conferenceParser
  description What is a URL to a recurring conference(s) focused on this language?
- catchAllCellType conferenceNameCell
+ catchAllCellType stringCell
  extends abstractUrlMeasureParser
  single false
 
 // country
-countryNameCell
- extends stringCell
 countryParser
  uniqueLine
  description What country was this language first developed in?
  boolean alwaysRecommended true
- catchAllCellType countryNameCell
+ catchAllCellType stringCell
  extends abstractStringMeasureParser
  single false
 
@@ -269,15 +265,13 @@ faqPageUrlParser
  single false
 
 // featureTokens
-tokenCell
- highlightScope keyword
 keywordsParser
  description What are all the keywords in this language?
  extends abstractStringListMeasureParser
- catchAllCellType tokenCell
+ catchAllCellType stringCell
 abstractCommonTokenParser
  description Most general purpose programming languages implement a set of common tokens for common features like these.
- catchAllCellType tokenCell
+ catchAllCellType stringCell
  extends abstractStringListMeasureParser
  single false
 lineCommentTokenParser
@@ -336,12 +330,12 @@ abstractFeatureParser
  string sortKey abstractFeatureParser
 
 // fileExtensions
-fileExtensionCell
+// fileExtensionCell
  extends stringCell
 
 fileExtensionsParser
  extends abstractStringListMeasureParser
- catchAllCellType fileExtensionCell
+ catchAllCellType stringCell
  description What are the file extensions for this language?
 
 filenamesParser
@@ -350,12 +344,12 @@ filenamesParser
  description What are the filenames commonly associated with this language?
 
 // fileType
-fileTypeWordCell
+// fileTypeWordCell
  enum paper text binary na
  highlightScope constant.language
 fileTypeParser
  description What is the file encoding for programs in this language?
- cells columnNameCell fileTypeWordCell
+ cells columnNameCell stringCell
  extends abstractEnumMeasureParser
 
 // freedom
@@ -463,7 +457,7 @@ githubLanguageParser
   description Which of the types best describes this: data, programming, markup, prose, or nil?
 
 // githubRepo
-githubRepoUrlCell
+// githubRepoUrlCell
  extends urlCell
  regex ^https://github.com/.+/.+$
 
@@ -471,7 +465,7 @@ githubRepoUrlCell
 githubRepoParser
  description What is the URL of the official GitHub repo for the project if it is hosted there?
  extends abstractGitRepoUrlMeasureParser
- cells columnNameCell githubRepoUrlCell
+ cells columnNameCell urlCell
  inScope descriptionParser
  contentKey url
  string sourceDomain github.com
@@ -1720,10 +1714,8 @@ helloWorldCollectionParser
  extends exampleParser
  cruxFromId
  cells columnNameCell
- catchAllCellType helloWorldCollectionIdCell
+ catchAllCellType stringCell
  string sourceDomain helloworldcollection.de
-helloWorldCollectionIdCell
- description Id for this language on hello world collection.
 
 // history
 appearedParser
@@ -1735,10 +1727,8 @@ isDeadParser
  extends abstractBooleanMeasureParser
  catchAllParser urlCitationParser
 
-nativeLanguageWordCell
- description The name of a natural language like English or Japanese.
 nativeLanguageParser
- cells columnNameCell nativeLanguageWordCell
+ cells columnNameCell stringCell
  description What is the native human language for this language, if not English?
  extends abstractEnumMeasureParser
 
@@ -1746,15 +1736,16 @@ firstAnnouncementParser
  description What is a URL announcing the creation or release of this language?
  extends abstractUrlMeasureParser
 
-announcementMethodCell
- description Common ways languages are first announced.
- enum pressRelease paper rfc webpage blogPost interview dissertation
- highlightScope constant.language
+//
+ announcementMethodCell
+  description Common ways languages are first announced.
+  enum pressRelease paper rfc webpage blogPost interview dissertation
+  highlightScope constant.language
 
 announcementMethodParser
  description How was the language first announced?
  extends abstractEnumMeasureParser
- cells columnNameCell announcementMethodCell
+ cells columnNameCell stringCell
 
 // hopl
 hoplParser
@@ -1833,13 +1824,14 @@ leachim6Parser
   extends abstractStringMeasureParser
 
 // leaders
-creatorNameCell
- extends stringCell
+//
+ creatorNameCell
+  extends stringCell
 creatorsParser
  extends abstractStringListMeasureParser
  boolean alwaysRecommended true
  description What are the name(s) of the original creators of the language delimited by " and "?
- catchAllCellType creatorNameCell
+ catchAllCellType stringCell
  listDelimiter  and 
 
 
@@ -1914,7 +1906,6 @@ monacoParser
  string sourceDomain microsoft.github.io/monaco-editor/
 
 // name
-aliasCell
 titleParser
  description What is the official title of the language?
  extends abstractStringMeasureParser
@@ -1977,7 +1968,7 @@ packageAuthorsParser
 
 forLanguagesParser
  description Which languages is this repository for?
- extends abstractTrueBaseLinksMeasureParser
+ extends abstractConceptIdsMeasureParser
 
 // paradigms
 abstractParadigmParser
@@ -2027,14 +2018,14 @@ quineRelayParser
  string sourceDomain github.com/mame/quine-relay
 
 // rankings
-rankCell
- extends intCell
+// rankCell
+  extends intCell
 abstractAnnualRankMapParser
  catchAllParser annualRankParser
  description A map of ranks, one per year.
  extends abstractHashMapMeasureParser
 annualRankParser
- cells yearCell rankCell
+ cells yearCell integerCell
  uniqueFirstWord
 
 // reddit
@@ -2066,7 +2057,7 @@ referenceParser
 
 // relationships
 abstractRelationshipParser
- extends abstractTrueBaseLinksMeasureParser
+ extends abstractConceptIdsMeasureParser
  // todo: remove need for sortKey in Grammar
  string sortKey abstractRelationshipParser
 relatedParser
@@ -2236,12 +2227,13 @@ twitterParser
   extends abstractPopulationCountMeasureParser
 
 // type
-typeCell
- enum assembly pl barCodeFormat hardwareDescriptionLanguage knowledgeBase binaryDataFormat contractLanguage timeFormat computingMachine xmlFormat yamlFormat jsonFormat compiler grammarLanguage dataValidationLanguage application ir isa queryLanguage protocol os esolang template textMarkup characterEncoding idl library editor cloud textDataFormat visual plzoo interpreter notation binaryExecutable dataNotation stylesheetLanguage schema bytecode vm filesystem standard linter packageManager framework webApi feature optimizingCompiler numeralSystem hashFunction database font distribution headerLang dataStructure musicalNotation textEncodingFormat equation wikiMarkup decompiler configFormat diffFormat unixApplication webBrowser browserEngine
+//
+ typeCell
+  enum assembly pl barCodeFormat hardwareDescriptionLanguage knowledgeBase binaryDataFormat contractLanguage timeFormat computingMachine xmlFormat yamlFormat jsonFormat compiler grammarLanguage dataValidationLanguage application ir isa queryLanguage protocol os esolang template textMarkup characterEncoding idl library editor cloud textDataFormat visual plzoo interpreter notation binaryExecutable dataNotation stylesheetLanguage schema bytecode vm filesystem standard linter packageManager framework webApi feature optimizingCompiler numeralSystem hashFunction database font distribution headerLang dataStructure musicalNotation textEncodingFormat equation wikiMarkup decompiler configFormat diffFormat unixApplication webBrowser browserEngine
  highlightScope constant.language
 typeParser
  description Which category in PLDB's subjective ontology does this entity fit into?
- cells columnNameCell typeCell
+ cells columnNameCell stringCell
  required
  extends abstractEnumMeasureParser
 
@@ -2253,7 +2245,7 @@ ubuntuPackageParser
  string sourceDomain ubuntu.com
 
 // versions
-versionCell
+// versionCell
  extends stringCell
  description Version numbers.
 
@@ -2261,7 +2253,7 @@ versionCell
 versionParser
  description What is the version and release year?
  // perhaps in the future we could get more specific to month. Maybe even include what new features were added.
- cells yearCell versionCell
+ cells yearCell floatCell
 
 versionsParser
  description What are the release years and versions of this language?
@@ -2281,11 +2273,11 @@ webReplParser
  extends abstractUrlMeasureParser
  description What is a URL for an online repl of this language?
  single false
-domainNameCell
+// domainNameCell
  extends stringCell
 domainNameParser
  description What is the domain for this language's website if it has its own?
- cells columnNameCell domainNameCell
+ cells columnNameCell stringCell
  extends abstractWordMeasureParser
  contentKey name
  registeredParser
@@ -2307,7 +2299,7 @@ wikipediaParser
  contentKey url
  relatedParser
   description What languages does Wikipedia have as related?
-  extends abstractTrueBaseLinksMeasureParser
+  extends abstractConceptIdsMeasureParser
  summaryParser
   description What is the text summary of the language from the Wikipedia page?
   extends abstractStringMeasureParser
