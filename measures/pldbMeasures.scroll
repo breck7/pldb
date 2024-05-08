@@ -2049,7 +2049,7 @@ abstractRelationshipParser
  extends abstractConceptIdsMeasureParser
  // todo: remove need for sortKey in Grammar
  string sortKey abstractRelationshipParser
-relatedParser
+relatedConceptsParser
  extends abstractRelationshipParser
  description What languages are related?
  // This serves as a catch all, and it is better to use a more specific relationship node such as "supersetOf".
