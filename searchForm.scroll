@@ -1,0 +1,10 @@
+importOnly
+
+html
+ <div class="trueBaseSearchForm trueBaseSearchFormPadded">
+  <form style="display:inline;" method="get" action="/fullTextSearch">
+   <input name="q" placeholder="Search" autocomplete="off" type="search" id="searchFormInput">
+   <input class="searchButton" type="submit" value="Search">
+  </form>
+ </div>
+ <script>document.addEventListener("DOMContentLoaded", evt => TrueBaseBrowserApp.getApp().render().initAutocomplete("searchFormInput"))</script>

@@ -8,7 +8,7 @@ reference https://www.microsoft.com/en-us/research/publication/hardening-attack-
 originCommunity Microsoft
 
 compilesTo c
-related protobuf flatbuffers
+relatedConcepts protobuf flatbuffers
 
 example
  typedef struct _OrderedPair {

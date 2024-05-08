@@ -5,7 +5,7 @@ type textEncodingFormat
 conceptDescription OpenPGP provides the service of converting the raw 8-bit binary octet stream to a stream of printable ASCII characters, called Radix-64 encoding or ASCII Armor.
 reference https://datatracker.ietf.org/doc/html/rfc4880#page-54
 
-related base64
+relatedConcepts base64
 
 example
    -----BEGIN PGP MESSAGE-----

@@ -70,12 +70,6 @@ compilerExplorerParser
  inScope exampleParser
 
 // computeds
-idParser
- description What is the name of this file without the extension?
- extends abstractStringMeasureParser
- boolean isComputed true
- boolean suggestInAutocomplete false
-
 hoplIdParser
  boolean isComputed true
  extends abstractIntegerMeasureParser
@@ -192,7 +186,7 @@ demoVideoParser
  single false
 
 // description
-descriptionParser
+conceptDescriptionParser
  boolean alwaysRecommended true
  extends abstractStringMeasureParser
  description What is a short description of this language?
@@ -340,7 +334,7 @@ fileExtensionsParser
 
 filenamesParser
  extends abstractStringListMeasureParser
- catchAllCellType fileNameCell
+ catchAllCellType stringCell
  description What are the filenames commonly associated with this language?
 
 // fileType
@@ -349,7 +343,7 @@ filenamesParser
  highlightScope constant.language
 fileTypeParser
  description What is the file encoding for programs in this language?
- cells columnNameCell stringCell
+ cells measureNameCell stringCell
  extends abstractEnumMeasureParser
 
 // freedom
@@ -365,7 +359,7 @@ isPublicDomainParser
 
 // funFact
 funFactParser
- cells columnNameCell urlCell
+ cells measureNameCell urlCell
  description What is a code block or some text containing a fun or unusual fact about the language?
  extends abstractCodeMeasureParser
 
@@ -465,7 +459,7 @@ githubLanguageParser
 githubRepoParser
  description What is the URL of the official GitHub repo for the project if it is hosted there?
  extends abstractGitRepoUrlMeasureParser
- cells columnNameCell urlCell
+ cells measureNameCell urlCell
  inScope descriptionParser
  contentKey url
  string sourceDomain github.com
@@ -1713,7 +1707,7 @@ helloWorldCollectionParser
  description What is the name of this project in the Hello World Collection?
  extends exampleParser
  cruxFromId
- cells columnNameCell
+ cells measureNameCell
  catchAllCellType stringCell
  string sourceDomain helloworldcollection.de
 
@@ -1721,14 +1715,13 @@ helloWorldCollectionParser
 appearedParser
  description What year was the language publicly released and/or announced?
  extends abstractYearMeasureParser
- required
+ // required
 isDeadParser
  description Has the creator or maintainer announced it officially dead? Include a link to proof of the announcement.
  extends abstractBooleanMeasureParser
- catchAllParser urlCitationParser
 
 nativeLanguageParser
- cells columnNameCell stringCell
+ cells measureNameCell stringCell
  description What is the native human language for this language, if not English?
  extends abstractEnumMeasureParser
 
@@ -1745,7 +1738,7 @@ firstAnnouncementParser
 announcementMethodParser
  description How was the language first announced?
  extends abstractEnumMeasureParser
- cells columnNameCell stringCell
+ cells measureNameCell stringCell
 
 // hopl
 hoplParser
@@ -1847,7 +1840,7 @@ linguistGrammarRepoParser
  description What is the URL to the Linguist Grammar repo used by GitHub for this language?
  // Linguist is a library used by GitHub to syntax highlight files on GitHub via a grammar. The list of languages supported by Linguist and the grammar package used for each language is listed here: https://github.com/github/linguist/blob/master/vendor/README.md. If Linguist has support for a language, it will have a repo on GitHub. Given a language is supported by Linguist, that is a good indication it has at least 200 unique :user/:repo repositories, according to their docs.
  extends abstractUrlMeasureParser
- cells columnNameCell urlCell
+ cells measureNameCell urlCell
  contentKey url
  string sourceDomain github.com
  inScope exampleParser
@@ -1906,10 +1899,6 @@ monacoParser
  string sourceDomain microsoft.github.io/monaco-editor/
 
 // name
-titleParser
- description What is the official title of the language?
- extends abstractStringMeasureParser
- required
 
 wordRankParser
  description Where does this word rank in terms of common English words?
@@ -1972,7 +1961,7 @@ forLanguagesParser
 
 // paradigms
 abstractParadigmParser
- cells columnNameCell boolCell
+ cells measureNameCell booleanCell
  extends abstractBooleanMeasureParser
 visualParadigmParser
  extends abstractParadigmParser
@@ -2003,7 +1992,7 @@ pygmentsHighlighterParser
  filenameParser
   description What is the Python filename implementing the highlighting for this language?
   extends abstractStringMeasureParser
-  cells columnNameCell fileNameCell
+  cells measureNameCell stringCell
 
 // pypl
 pyplParser
@@ -2233,8 +2222,8 @@ twitterParser
  highlightScope constant.language
 typeParser
  description Which category in PLDB's subjective ontology does this entity fit into?
- cells columnNameCell stringCell
- required
+ cells measureNameCell stringCell
+ // required
  extends abstractEnumMeasureParser
 
 
@@ -2277,7 +2266,7 @@ webReplParser
  extends stringCell
 domainNameParser
  description What is the domain for this language's website if it has its own?
- cells columnNameCell stringCell
+ cells measureNameCell stringCell
  extends abstractWordMeasureParser
  contentKey name
  registeredParser
@@ -2294,7 +2283,7 @@ wikipediaParser
  inScope fileExtensionsParser exampleParser
  extends abstractUrlMeasureParser
  description What is the URL of this entity on Wikipedia, if and only if it has a page dedicated to it?
- cells columnNameCell urlCell
+ cells measureNameCell urlCell
  string sourceDomain wikipedia.org
  contentKey url
  relatedParser

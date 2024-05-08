@@ -6,7 +6,7 @@ conceptDescription Concatenative command-line shell
 country United States
 originCommunity https://github.com/tomhrr/cosh/issues
 
-related bash
+relatedConcepts bash
 
 example
  lsr; [test m] grep; [f<; [data m] grep] map
