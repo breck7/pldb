@@ -29,6 +29,15 @@ abstractAnnualPopulationCountMapParser
  description A map of counts, one per year.
  extends abstractHashMapMeasureParser
 
+abstractUniqueUrlMeasureParser
+ extends abstractUrlMeasureParser
+
+abstractUniqueWordMeasureParser
+ extends abstractWordMeasureParser
+
+abstractUniqueStringMeasureParser
+ extends abstractStringMeasureParser
+
 // todo: idCell
 // Links between concepts
 abstractConceptIdsMeasureParser

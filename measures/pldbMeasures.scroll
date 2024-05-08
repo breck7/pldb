@@ -11,7 +11,7 @@ annualReportsUrlParser
 
 // antlr
 antlrParser
- extends abstractUrlGuidMeasureParser
+ extends abstractUniqueUrlMeasureParser
  description What is a URL to an ANTLR grammar for this language?
  // A good collection of ANTLR grammars: https://github.com/antlr/grammars-v4/tree/master/LANGUAGE)
  string sourceDomain www.antlr.org
@@ -56,14 +56,14 @@ cheatSheetUrlParser
 
 // codemirror
 codeMirrorParser
- extends abstractOneWordGuidMeasureParser
+ extends abstractUniqueWordMeasureParser
  description What is a URL to a CodeMirror syntax highlighting package for this language?
  // Many can be found here: https://github.com/codemirror/codemirror5/tree/master/mode/LANGUAGE
  string sourceDomain codemirror.net
 
 // compilerExplorer
 compilerExplorerParser
- extends abstractMultiwordGuidMeasureParser
+ extends abstractUniqueStringMeasureParser
  description What is this language's name on https://godbolt.org?
  string sourceDomain godbolt.org
  contentKey id
@@ -78,7 +78,7 @@ idParser
 
 hoplIdParser
  boolean isComputed true
- extends abstractIntMeasureParser
+ extends abstractIntegerMeasureParser
  // todo: bug the below line should be included via inheritance from WWC.
  boolean suggestInAutocomplete false
  description What is the HOPL id of this language?
@@ -98,52 +98,54 @@ getSourceParser
  description What is a one line shell command to download the source code for this language?
 
 bookCountParser
- extends abstractComputedSumMeasureParser
- // todo: bug the below line should be included via inheritance from WWC.
- boolean suggestInAutocomplete false
+ boolean isComputed true
+ extends abstractIntegerMeasureParser
  description What is the count of booked we have published about this thing?
 
 paperCountParser
- extends abstractComputedSumMeasureParser
- // todo: bug the below line should be included via inheritance from WWC.
- boolean suggestInAutocomplete false
+ boolean isComputed true
+ extends abstractIntegerMeasureParser
  description What is the count of papers we have published about this thing?
 
 exampleCountParser
- extends abstractComputedSumMeasureParser
- // todo: bug the below line should be included via inheritance from WWC.
- boolean suggestInAutocomplete false
+ boolean isComputed true
+ extends abstractIntegerMeasureParser
  description How many examples do we have written in this language?
 
 numberOfUsersEstimateParser
- extends abstractComputedEstimateMeasureParser
- // todo: bug the below line should be included via inheritance from WWC.
- boolean suggestInAutocomplete false
+ boolean isComputed true
+ extends abstractIntegerMeasureParser
  description What is our estimate of number of users of this language?
 
 numberOfJobsEstimateParser
- extends abstractComputedEstimateMeasureParser
- // todo: bug the below line should be included via inheritance from WWC.
- boolean suggestInAutocomplete false
+ boolean isComputed true
+ extends abstractIntegerMeasureParser
  description What is our estimate of the number of jobs in this language?
 
 rankParser
- extends abstractComputedRankMeasureParser
- // todo: bug the below line should be included via inheritance from WWC.
- boolean suggestInAutocomplete false
+ boolean isComputed true
+ extends abstractIntegerMeasureParser
  description How does this thing rank amongst all entities in this TrueBase?
 
 languageRankParser
- extends abstractComputedRankMeasureParser
- // todo: bug the below line should be included via inheritance from WWC.
- boolean suggestInAutocomplete false
+ boolean isComputed true
+ extends abstractIntegerMeasureParser
  description How does this language rank amongst all languages in PLDB?
 
-factCountParser
- extends abstractComputedSumMeasureParser
- // todo: bug the below line should be included via inheritance from WWC.
- boolean suggestInAutocomplete false
- description How many answers do we have about this thing?
+measurementsParser
+ boolean isComputed true
+ extends abstractIntegerMeasureParser
+ int sortIndex 1
+ description How many measurements do we have about this thing?
+ javascript
+  computeValue(concept) {
+    let count = 0
+    concept.forEach(node => {
+      if (node.isMeasure)
+        count++
+    })
+    return count
+  }
 
 lastActivityParser
  extends abstractYearMeasureParser
@@ -171,13 +173,13 @@ countryParser
  description What country was this language first developed in?
  boolean alwaysRecommended true
  catchAllCellType countryNameCell
- extends abstractTrueBaseMeasureParser
+ extends abstractStringMeasureParser
  single false
 
 // dblp
 dblpParser
  boolean fromCrawler true
- extends abstractTrueBaseMeasureParser
+ extends abstractStringMeasureParser
  description What are publications about this language from https://dblp.org/?
  string sourceDomain dblp.org
  hitsParser
@@ -393,7 +395,7 @@ gitRepoParser
 // githubBigQuery
 githubBigQueryParser
  description What is the name of this language in the Google BigQuery Public Datasets about GitHub repos found at https://cloud.google.com/blog/topics/public-datasets/github-on-bigquery-analyze-all-the-open-source-code?
- extends abstractMultiwordGuidMeasureParser
+ extends abstractUniqueStringMeasureParser
  contentKey id
  string sourceDomain cloud.google.com
  usersParser
@@ -411,7 +413,7 @@ githubCopilotOptimizedParser
 // githubLanguage
 githubLanguageParser
  description What is the name of this language on GitHub's list of supported languages defined here https://raw.githubusercontent.com/github/linguist/master/lib/linguist/languages.yml?
- extends abstractMultiwordGuidMeasureParser
+ extends abstractUniqueStringMeasureParser
  inScope filenamesParser fileExtensionsParser
  contentKey id
  string sourceDomain github.com
@@ -435,7 +437,7 @@ githubLanguageParser
    author name avatar url language languageColor stars forks currentPeriodStars description
    PavelDoGreat WebGL-Fluid-Simulation https://github.com/PavelDoGreat.png https://github.com/PavelDoGreat/WebGL-Fluid-Simulation JavaScript #f1e05a 6010 473 2246 "Play with fluids in your browser (works even on mobile)"
  groupParser
-  extends abstractMultiwordGuidMeasureParser
+  extends abstractUniqueStringMeasureParser
   description What is the name of the parent language group according to GitHub?
  aliasesParser
   extends abstractStringListMeasureParser
@@ -454,7 +456,7 @@ githubLanguageParser
   extends abstractWordMeasureParser
   description What is the name of the file mime type used for highlighting whenever a file is edited, from the list here https://git.io/f4SoQ?
  tmScopeParser
-  extends abstractMultiwordGuidMeasureParser
+  extends abstractUniqueStringMeasureParser
   description What is the TextMate scope that represents this programming language, matching one of the scopes listed in the grammars.yml file, or "none" if there is no grammar for this language?
  typeParser
   extends abstractEnumMeasureParser
@@ -1756,7 +1758,7 @@ announcementMethodParser
 
 // hopl
 hoplParser
- extends abstractUrlGuidMeasureParser
+ extends abstractUniqueUrlMeasureParser
  description What is the URL to this language in Diarmuid Pigott's Online Historical Encyclopaedia of Programming Languages site?
  string sourceDomain hopl.info
 
@@ -1806,7 +1808,7 @@ isbndbParser
 
 // jupyter
 jupyterKernelParser
- extends abstractUrlGuidMeasureParser
+ extends abstractUniqueUrlMeasureParser
  single false
  description What is a link to a Jupyter Kernel for this language?
  string sourceDomain jupyter.org
@@ -1821,7 +1823,7 @@ languageServerProtocolProjectParser
 
 // leachim6
 leachim6Parser
- extends abstractMultiwordGuidMeasureParser
+ extends abstractUniqueStringMeasureParser
  description What is a URL to this language in leachim6's hello-world project?
  string sourceDomain github.com/leachim6/hello-world
  contentKey id
@@ -1884,7 +1886,7 @@ linkedInSkillParser
 // meetup
 meetupParser
  description What is a URL for active meetup groups for this language on Meetup.com?
- extends abstractUrlGuidMeasureParser
+ extends abstractUniqueUrlMeasureParser
  contentKey url
  string sourceDomain meetup.com
  memberCountParser
@@ -1904,7 +1906,7 @@ mergesWhitespaceParser
 
 // monaco
 monacoParser
- extends abstractOneWordGuidMeasureParser
+ extends abstractUniqueWordMeasureParser
  description What is a URL to a Monaco syntax highlighting package for this language?
  example
   javascript
@@ -1921,7 +1923,7 @@ titleParser
 wordRankParser
  description Where does this word rank in terms of common English words?
  // where "the" is 1.
- extends abstractIntMeasureParser
+ extends abstractIntegerMeasureParser
 
 standsForParser
  description If the language name is an acronym what does/did it stand for?
@@ -1987,7 +1989,7 @@ visualParadigmParser
 
 // projectEuler
 projectEulerParser
- extends abstractMultiwordGuidMeasureParser
+ extends abstractUniqueStringMeasureParser
  description Is this language one of the ones listed on https://projecteuler.net/?
  string sourceDomain projecteuler.net
  contentKey id
@@ -2002,25 +2004,25 @@ proposalsParser
 
 // pygments
 pygmentsHighlighterParser
- extends abstractMultiwordGuidMeasureParser
+ extends abstractUniqueStringMeasureParser
  description What is a url to a Pygments syntax highlighting class for this language https://pygments.org/?
  string sourceDomain pygments.org
  inScope fileExtensionsParser
  contentKey id
  filenameParser
   description What is the Python filename implementing the highlighting for this language?
-  extends abstractTrueBaseMeasureParser
+  extends abstractStringMeasureParser
   cells columnNameCell fileNameCell
 
 // pypl
 pyplParser
- extends abstractMultiwordGuidMeasureParser
+ extends abstractUniqueStringMeasureParser
  description What is this language's id on https://pypl.github.io?
  string sourceDomain pypl.github.io
 
 // quineRelay
 quineRelayParser
- extends abstractMultiwordGuidMeasureParser
+ extends abstractUniqueStringMeasureParser
  description What is the name of this language in the Quine Relay project from here https://github.com/mame/quine-relay?
  string sourceDomain github.com/mame/quine-relay
 
@@ -2038,7 +2040,7 @@ annualRankParser
 // reddit
 // todo trim the trailing slash
 subredditParser
- extends abstractUrlGuidMeasureParser
+ extends abstractUniqueUrlMeasureParser
  string sourceDomain reddit.com
  contentKey url
  single false
@@ -2116,7 +2118,7 @@ releaseNotesUrlParser
 
 // replit
 replitParser
- extends abstractUrlGuidMeasureParser
+ extends abstractUniqueUrlMeasureParser
  description What is a URL to try this language on replit.com?
  string sourceDomain replit.com
 
@@ -2152,27 +2154,9 @@ roadmapParser
  extends abstractUrlMeasureParser
  description What is the URL to a public roadmap page for this language, if one exists?
 
-// root
-pldbParser
- root
- description A truebase about programming languages and related concepts.
- catchAllParser trueBaseErrorParser
- // todo Should not have to manually list each node type here, but should be able to mark some tag as inscope. Should be fixed upstream in Jtree.
- inScope blankLineParser abstractTrueBaseMeasureParser
- cells fileNameCell
- string fileExtension pldb
- example
-  title TunaScript
-  type pl
-  appeared 2017
-  creators Sam Lam
-  example
-   Hello world
- sortTemplate title appeared type isDead isPublicDomain screenshot photo demoVideo creators description website webRepl documentation devDocumentation ebook emailList spec reference cheatSheetUrl standsFor oldName renamedTo aka fileExtensions country nativeLanguage originCommunity domainName equation firstAnnouncement announcementMethod usesSemanticVersioning releaseNotesUrl proposals roadmap versions  abstractRelationshipParser  visualParadigm  abstractFeatureParser  lineCommentToken multiLineCommentTokens printToken assignmentToken stringToken booleanTokens includeToken keywords  example  gource abstractGitRepoUrlMeasureParser  repoStats  funFact  wikipedia  githubLanguage githubBigQuery  antlr monaco codeMirror pygmentsHighlighter linguistGrammarRepo languageServerProtocolProject  projectEuler helloWorldCollection leachim6 rosettaCode quineRelay  compilerExplorer rijuRepl replit tryItOnline  indeedJobs linkedInSkill stackOverflowSurvey annualReportsUrl officialBlogUrl eventsPageUrl faqPageUrl downloadPageUrl  abstractChatUrlMeasureParser subreddit meetup conference  hackerNewsDiscussions redditDiscussion  tiobe hopl esolang pypl  packageRepository packageCount packageAuthors packageInstallCount forLanguages  twitter ubuntuPackage gdbSupport jupyterKernel fileType wordRank isOpenSource githubCopilotOptimized centralPackageRepositoryCount  goodreads  isbndb  semanticScholar 
-
 // rosettaCode
 rosettaCodeParser
- extends abstractUrlGuidMeasureParser
+ extends abstractUniqueUrlMeasureParser
  description What is a URL to this language on Rosetta Code - http://www.rosettacode.org/?
  string sourceDomain rosettacode.org
 
@@ -2209,7 +2193,7 @@ stackOverflowSurveyParser
    description How many developers reported using this language?
   medianSalaryParser
    description What is the median salary reported by developers using this language?
-   extends abstractIntMeasureParser
+   extends abstractIntegerMeasureParser
   fansParser
    description How many developers reported wanting to learn this language?
    extends abstractPopulationCountMeasureParser
@@ -2228,23 +2212,23 @@ supportsBreakpointsParser
 
 // tiobe
 tiobeParser
- extends abstractMultiwordGuidMeasureParser
+ extends abstractUniqueStringMeasureParser
  description What is the ID of this language in Tiobe's ranking of programming languages here: https://www.tiobe.com/tiobe-index/?
  string sourceDomain tiobe.com
  contentKey id
  currentRankParser
   description What is the current Tiobe rank of this language?
-  extends abstractIntMeasureParser
+  extends abstractIntegerMeasureParser
 
 // tryItOnline
 tryItOnlineParser
- extends abstractOneWordGuidMeasureParser
+ extends abstractUniqueWordMeasureParser
  description What is a link to try this language on https://tio.run?
  string sourceDomain tio.run
 
 // twitter
 twitterParser
- extends abstractUrlGuidMeasureParser
+ extends abstractUniqueUrlMeasureParser
  description What is a URL to the official Twitter account of this thing, if any?
  string sourceDomain twitter.com
  followersParser
@@ -2264,7 +2248,7 @@ typeParser
 
 // ubuntu
 ubuntuPackageParser
- extends abstractOneWordGuidMeasureParser
+ extends abstractUniqueWordMeasureParser
  description What is the name of an Ubuntu package for this language from https://packages.ubuntu.com/, if any?
  string sourceDomain ubuntu.com
 
@@ -2343,7 +2327,7 @@ wikipediaParser
   extends abstractCountMeasureParser
   description How many revisions does this page have?
  pageIdParser
-  extends abstractIntMeasureParser
+  extends abstractIntegerMeasureParser
   description What is the internal ID for this entity on WP?
 
 // zulip
