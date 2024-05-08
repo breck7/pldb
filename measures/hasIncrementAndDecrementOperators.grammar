@@ -1,6 +1,0 @@
-hasIncrementAndDecrementOperatorsParser
- extends abstractFeatureParser
- description Does this language have increment and decrement operators?
- string title Increment and decrement operators
- string pseudoExample i++
- string reference https://en.wikipedia.org/wiki/Increment_and_decrement_operators

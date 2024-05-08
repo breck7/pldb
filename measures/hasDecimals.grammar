@@ -1,6 +1,0 @@
-hasDecimalsParser
- description Does the language have a decimal data type?
- extends abstractFeatureParser
- string title Decimals
- string pseudoExample 0.80766866
- string reference https://en.wikipedia.org/wiki/Decimal_data_type

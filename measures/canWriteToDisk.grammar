@@ -1,5 +1,0 @@
-canWriteToDiskParser
- extends abstractFeatureParser
- description Does this language have methods or standard libraries for writing to disk?
- string title Disk Output
- string pseudoExample write("pldb.csv", "...")

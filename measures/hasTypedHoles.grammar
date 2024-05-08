@@ -1,6 +1,0 @@
-hasTypedHolesParser
- extends abstractFeatureParser
- description Does the language have a syntax for typed holes?
- string title Typed Holes
- string reference https://wiki.haskell.org/GHC/Typed_holes
- string pseudoExample 2 + _ => 2 + [int|float]

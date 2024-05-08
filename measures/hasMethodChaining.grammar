@@ -1,6 +1,0 @@
-hasMethodChainingParser
- extends abstractFeatureParser
- description Does the language support method chaining?
- string title Method Chaining
- string pseudoExample pldbFile.toString().length
- string reference https://en.wikipedia.org/wiki/Method_chaining

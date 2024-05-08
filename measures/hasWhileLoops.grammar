@@ -1,6 +1,0 @@
-hasWhileLoopsParser
- description Does the language have while loops?
- extends abstractFeatureParser
- string title While Loops
- string pseudoExample while (pldb.pop()) loop()
- string reference https://en.wikipedia.org/wiki/While_loop

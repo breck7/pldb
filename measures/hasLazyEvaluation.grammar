@@ -1,6 +1,0 @@
-hasLazyEvaluationParser
- extends abstractFeatureParser
- description Does the language wait to evaluate expressions until needed?
- string title Lazy Evaluation
- string pseudoExample print(range(1000000)[2])
- string reference https://en.wikipedia.org/wiki/Lazy_evaluation

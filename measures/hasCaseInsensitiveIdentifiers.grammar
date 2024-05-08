@@ -1,6 +1,0 @@
-hasCaseInsensitiveIdentifiersParser
- extends abstractFeatureParser
- description Are identifiers in this language case insensitive?
- string title Case Insensitive Identifiers
- string reference https://rosettacode.org/wiki/Case-sensitivity_of_identifiers
- string pseudoExample pLdB = "PLDB"

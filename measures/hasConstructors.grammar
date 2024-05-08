@@ -1,6 +1,0 @@
-hasConstructorsParser
- extends abstractFeatureParser
- description Does the language have a syntax and/or notion of constructors?
- string title Constructors
- string pseudoExample PLDBFile { constructor() {} }
- string reference https://en.wikipedia.org/wiki/Constructor_(object-oriented_programming)

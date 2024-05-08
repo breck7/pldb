@@ -1,7 +1,0 @@
-twitterParser
- extends abstractUrlGuidColumnParser
- description What is a URL to the official Twitter account of this thing, if any?
- string sourceDomain twitter.com
- followersParser
-  description How many followers does the linked account have?
-  extends abstractPopulationCountColumnParser

@@ -1,6 +1,0 @@
-hasAccessModifiersParser
- extends abstractFeatureParser
- string title Access Modifiers
- description Does this language have access modifiers?
- string pseudoExample class PLDBFile { public title }
- string reference https://en.wikipedia.org/wiki/Access_modifiers

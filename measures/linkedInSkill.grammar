@@ -1,6 +1,0 @@
-linkedInSkillParser
- description How many people list this skill on LinkedIn?
- extends abstractAnnualPopulationCountMapParser
- catchAllCellType stringCell
- contentKey id
- string sourceDomain linkedin.com

@@ -1,6 +1,0 @@
-hasOperatorOverloadingParser
- extends abstractFeatureParser
- description Does the language allow operator overloading?
- string title Operator Overloading
- string reference https://en.wikibooks.org/wiki/Introduction_to_Programming_Languages/Overloading https://en.wikipedia.org/wiki/Operator_overloading
- string pseudoExample def __add__(): doSomethingDifferent()

@@ -1,0 +1,31 @@
+import rootHeader.scroll
+title PLDB.CSV
+
+css
+ .scrollTable td {
+   max-width: 30ch;
+   white-space: nowrap;
+   text-overflow: ellipsis;
+ }
+
+Download the PLDB concept dataset as: CSV | TSV | JSON
+ link pldb.csv CSV
+ link pldb.tsv TSV
+ link pldb.json JSON
+
+import measures/pldbMeasures.scroll
+loadConcepts concepts
+writeConcepts pldb.csv
+writeConcepts pldb.json
+writeConcepts pldb.tsv
+
+Statistics on the measures (columns) are below and can be downloaded as: CSV | TSV | JSON
+ link measures.csv CSV
+ link measures.tsv TSV
+ link measures.json JSON
+writeMeasures measures.tsv
+writeMeasures measures.csv
+writeMeasures measures.json
+printMeasures
+
+import footer.scroll

@@ -1,6 +1,0 @@
-hasVirtualFunctionsParser
- description Does the language have virtual functions?
- extends abstractFeatureParser
- string title Virtual function
- string pseudoExample virtual FetchPLDBFile();
- string reference https://en.wikipedia.org/wiki/Virtual_function

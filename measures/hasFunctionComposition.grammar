@@ -1,6 +1,0 @@
-hasFunctionCompositionParser
- extends abstractFeatureParser
- description Can you pass functions into other functions and get new combined functions?
- string title Function Composition
- string pseudoExample o = (f, g) => x => f(g(x))
- string reference https://en.wikipedia.org/wiki/Function_composition_(computer_science)

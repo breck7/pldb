@@ -1,0 +1,21 @@
+importOnly
+replace BASE_URL ..
+import pldbMeasures.scroll
+
+groups All
+
+keyboardNav
+
+import ../header.scroll
+
+viewSourceBaseUrl https://github.com/breck7/pldb/blob/main/concepts/
+
+nodejs
+ const { TreeNode } = require("jtree/products/TreeNode.js")
+ const tree = TreeNode.fromDisk(__filename.replace(".js", ""))
+ const code = tree.toString().replace("import ../measures/conceptPage.scroll\n", "")
+ module.exports = {TEMPLATE : `title ${tree.get("id")}\ncode\n ${code.replace(/\n/g, "\n ")}`}
+TEMPLATE
+
+import ../footer.scroll
+

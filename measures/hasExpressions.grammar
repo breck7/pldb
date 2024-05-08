@@ -1,6 +1,0 @@
-hasExpressionsParser
- extends abstractFeatureParser
- description Does the language have a concept of expressions?
- string title Expressions
- string pseudoExample (1 + 2)
- string reference https://en.wikipedia.org/wiki/Expression_(computer_science)

@@ -1,6 +1,0 @@
-hasGenericsParser
- extends abstractFeatureParser
- description Does the language have generics?
- string title Generics
- string pseudoExample function identity<T>(arg: T): T
- string reference https://en.wikipedia.org/wiki/Generic_programming

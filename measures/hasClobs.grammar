@@ -1,7 +1,0 @@
-hasClobsParser
- extends abstractFeatureParser
- description Does the language have a specific type for character large object?
- string title Clobs
- string aka Character large objects
- string pseudoExample class PLDBFile {}
- string reference https://en.wikipedia.org/wiki/Character_large_object

@@ -1,0 +1,2352 @@
+importOnly
+
+import commonMeasures.scroll
+
+
+// annualReportsUrl
+annualReportsUrlParser
+ extends abstractUrlMeasureParser
+ description What is a URL to annual reports for this language?
+ single false
+
+// antlr
+antlrParser
+ extends abstractUrlGuidMeasureParser
+ description What is a URL to an ANTLR grammar for this language?
+ // A good collection of ANTLR grammars: https://github.com/antlr/grammars-v4/tree/master/LANGUAGE)
+ string sourceDomain www.antlr.org
+
+// canDoShebang
+canDoShebangParser
+ extends abstractFeatureParser
+ description Does this language support shebang executable scripts?
+ string title Shebang
+ string pseudoExample #! /run
+ string reference https://en.wikipedia.org/wiki/Shebang_(Unix)
+
+// canReadCommandLineArgs
+canReadCommandLineArgsParser
+ description Does this language support command line arguments?
+ extends abstractFeatureParser
+
+// canUseQuestionMarksAsPartOfIdentifier
+canUseQuestionMarksAsPartOfIdentifierParser
+ description Is the question mark (?) allowed as part of an identifier?
+ extends abstractFeatureParser
+
+// canWriteToDisk
+canWriteToDiskParser
+ extends abstractFeatureParser
+ description Does this language have methods or standard libraries for writing to disk?
+ string title Disk Output
+ string pseudoExample write("pldb.csv", "...")
+
+// chat
+abstractChatUrlMeasureParser
+ description What is a URL to a chat room about the language?
+ extends abstractUrlMeasureParser
+ // todo remove the need for the below from grammar
+ string sortKey abstractChatUrlMeasureParser
+
+// cheatSheetUrl
+cheatSheetUrlParser
+ extends abstractUrlMeasureParser
+ single false
+ description What is a URL to a cheat sheet for this language?
+
+// codemirror
+codeMirrorParser
+ extends abstractOneWordGuidMeasureParser
+ description What is a URL to a CodeMirror syntax highlighting package for this language?
+ // Many can be found here: https://github.com/codemirror/codemirror5/tree/master/mode/LANGUAGE
+ string sourceDomain codemirror.net
+
+// compilerExplorer
+compilerExplorerParser
+ extends abstractMultiwordGuidMeasureParser
+ description What is this language's name on https://godbolt.org?
+ string sourceDomain godbolt.org
+ contentKey id
+ inScope exampleParser
+
+// computeds
+idParser
+ description What is the name of this file without the extension?
+ extends abstractStringMeasureParser
+ boolean isComputed true
+ boolean suggestInAutocomplete false
+
+hoplIdParser
+ boolean isComputed true
+ extends abstractIntMeasureParser
+ // todo: bug the below line should be included via inheritance from WWC.
+ boolean suggestInAutocomplete false
+ description What is the HOPL id of this language?
+
+isLanguageParser
+ boolean isComputed true
+ extends abstractBooleanMeasureParser
+ // todo: bug the below line should be included via inheritance from WWC.
+ boolean suggestInAutocomplete false
+ description Does PLDB categorize this entity as a language?
+
+getSourceParser
+ boolean isComputed true
+ extends abstractStringMeasureParser
+ // todo: bug the below line should be included via inheritance from WWC.
+ boolean suggestInAutocomplete false
+ description What is a one line shell command to download the source code for this language?
+
+bookCountParser
+ extends abstractComputedSumMeasureParser
+ // todo: bug the below line should be included via inheritance from WWC.
+ boolean suggestInAutocomplete false
+ description What is the count of booked we have published about this thing?
+
+paperCountParser
+ extends abstractComputedSumMeasureParser
+ // todo: bug the below line should be included via inheritance from WWC.
+ boolean suggestInAutocomplete false
+ description What is the count of papers we have published about this thing?
+
+exampleCountParser
+ extends abstractComputedSumMeasureParser
+ // todo: bug the below line should be included via inheritance from WWC.
+ boolean suggestInAutocomplete false
+ description How many examples do we have written in this language?
+
+numberOfUsersEstimateParser
+ extends abstractComputedEstimateMeasureParser
+ // todo: bug the below line should be included via inheritance from WWC.
+ boolean suggestInAutocomplete false
+ description What is our estimate of number of users of this language?
+
+numberOfJobsEstimateParser
+ extends abstractComputedEstimateMeasureParser
+ // todo: bug the below line should be included via inheritance from WWC.
+ boolean suggestInAutocomplete false
+ description What is our estimate of the number of jobs in this language?
+
+rankParser
+ extends abstractComputedRankMeasureParser
+ // todo: bug the below line should be included via inheritance from WWC.
+ boolean suggestInAutocomplete false
+ description How does this thing rank amongst all entities in this TrueBase?
+
+languageRankParser
+ extends abstractComputedRankMeasureParser
+ // todo: bug the below line should be included via inheritance from WWC.
+ boolean suggestInAutocomplete false
+ description How does this language rank amongst all languages in PLDB?
+
+factCountParser
+ extends abstractComputedSumMeasureParser
+ // todo: bug the below line should be included via inheritance from WWC.
+ boolean suggestInAutocomplete false
+ description How many answers do we have about this thing?
+
+lastActivityParser
+ extends abstractYearMeasureParser
+ // todo: bug the below line should be included via inheritance from WWC.
+ boolean suggestInAutocomplete false
+ boolean isComputed true
+ description In our data on this entity, what year is the most recent activity?
+
+
+
+// conference
+conferenceNameCell
+ extends stringCell
+conferenceParser
+ description What is a URL to a recurring conference(s) focused on this language?
+ catchAllCellType conferenceNameCell
+ extends abstractUrlMeasureParser
+ single false
+
+// country
+countryNameCell
+ extends stringCell
+countryParser
+ uniqueLine
+ description What country was this language first developed in?
+ boolean alwaysRecommended true
+ catchAllCellType countryNameCell
+ extends abstractTrueBaseMeasureParser
+ single false
+
+// dblp
+dblpParser
+ boolean fromCrawler true
+ extends abstractTrueBaseMeasureParser
+ description What are publications about this language from https://dblp.org/?
+ string sourceDomain dblp.org
+ hitsParser
+  extends abstractCountMeasureParser
+  description How many matching publications?
+ publicationsParser
+  extends abstractDelimitedValuesBlobMeasureParser
+  description An inline PSV table of hits.
+
+// demoVideo
+demoVideoParser
+ description What is a URL of a demo video of this language?
+ extends abstractUrlMeasureParser
+ single false
+
+// description
+descriptionParser
+ boolean alwaysRecommended true
+ extends abstractStringMeasureParser
+ description What is a short description of this language?
+
+// discord
+discordParser
+ extends abstractChatUrlMeasureParser
+ description What is a URL to an official (or popular unofficial) Discord for this language?
+
+// discourse
+discourseParser
+ extends abstractChatUrlMeasureParser
+ description What is a URL to an official (or popular unofficial) Discourse for this language?
+
+// documentation
+documentationParser
+ extends abstractUrlMeasureParser
+ description What is a URL to the official documentation for this language?
+ single false
+
+devDocumentationParser
+ extends abstractUrlMeasureParser
+ description What is a URL to the official documentation for developers who want to contribute to the language project?
+ single false
+
+// downloadPageUrl
+downloadPageUrlParser
+ extends abstractUrlMeasureParser
+ description What is a URL to the download page for this language?
+ single false
+
+// ebook
+ebookParser
+ extends abstractUrlMeasureParser
+ description What is a link to a free public domain high quality eBook about this language?
+
+// emailList
+emailListParser
+ extends abstractUrlMeasureParser
+ description What is a link to the mailing list for this language?
+ single false
+
+// equation
+equationParser
+ description What is a LaTeX encoding of this equation?
+ extends abstractCodeMeasureParser
+
+// esolang
+esolangParser
+ extends abstractUrlMeasureParser
+ description What is a URL to this language on https://esolangs.org/?
+ string sourceDomain esolangs.org
+
+// eventsPageUrl
+eventsPageUrlParser
+ extends abstractUrlMeasureParser
+ description What is a URL to an events pages for this language?
+ single false
+
+// example
+exampleParser
+ description What is a representative snippet for this language?
+ extends abstractCodeMeasureParser
+ single false
+
+// faqPageUrl
+faqPageUrlParser
+ extends abstractUrlMeasureParser
+ description What is a URL to a frequently asked questions page for this language?
+ single false
+
+// featureTokens
+tokenCell
+ highlightScope keyword
+keywordsParser
+ description What are all the keywords in this language?
+ extends abstractStringListMeasureParser
+ catchAllCellType tokenCell
+abstractCommonTokenParser
+ description Most general purpose programming languages implement a set of common tokens for common features like these.
+ catchAllCellType tokenCell
+ extends abstractStringListMeasureParser
+ single false
+lineCommentTokenParser
+ extends abstractCommonTokenParser
+ description What is the token(s) that can be placed anywhere on a line and starts a comment that cannot be stopped except by a line break character or end of file?
+ example
+  javascript
+   lineCommentToken //
+multiLineCommentTokensParser
+ extends abstractCommonTokenParser
+ description What is the start delimiter and end token (which can be the same) for comments that can span multiple lines?
+ example
+  javascript
+   multiLineCommentTokens /* */
+printTokenParser
+ extends abstractCommonTokenParser
+ description What token(s) is used to print a message?
+ example
+  javascript
+   printToken console.log
+stringTokenParser
+ extends abstractCommonTokenParser
+ description What token(s) is used to delimit a string?
+ example
+  javascript
+   stringToken "
+assignmentTokenParser
+ extends abstractCommonTokenParser
+ description What token(s) is used for assignment to an identifier?
+ example
+  javascript
+   assignmentToken =
+booleanTokensParser
+ extends abstractCommonTokenParser
+ description What token(s) is used for true and false?
+ example
+  javascript
+   booleanTokens true false
+includeTokenParser
+ extends abstractCommonTokenParser
+ description What token(s) is used for including another file?
+ example
+  nodejs
+   includeToken require
+
+// features
+featureExampleCodeParser
+ description What is an example that demonstrates usage of this feature?
+ // Ideally includes any necessary boilerplate to be runnable.
+ baseParser blobParser
+abstractFeatureParser
+ extends abstractBooleanMeasureParser
+ contentKey value
+ childrenKey example
+ catchAllParser featureExampleCodeParser
+ string sortKey abstractFeatureParser
+
+// fileExtensions
+fileExtensionCell
+ extends stringCell
+
+fileExtensionsParser
+ extends abstractStringListMeasureParser
+ catchAllCellType fileExtensionCell
+ description What are the file extensions for this language?
+
+filenamesParser
+ extends abstractStringListMeasureParser
+ catchAllCellType fileNameCell
+ description What are the filenames commonly associated with this language?
+
+// fileType
+fileTypeWordCell
+ enum paper text binary na
+ highlightScope constant.language
+fileTypeParser
+ description What is the file encoding for programs in this language?
+ cells columnNameCell fileTypeWordCell
+ extends abstractEnumMeasureParser
+
+// freedom
+isOpenSourceParser
+ boolean alwaysRecommended true
+ description Is this an open source project?
+ extends abstractBooleanMeasureParser
+
+isPublicDomainParser
+ boolean alwaysRecommended true
+ description Is this public domain?
+ extends abstractBooleanMeasureParser
+
+// funFact
+funFactParser
+ cells columnNameCell urlCell
+ description What is a code block or some text containing a fun or unusual fact about the language?
+ extends abstractCodeMeasureParser
+
+// gdb
+gdbSupportParser
+ extends abstractBooleanMeasureParser
+ description Is the language supported by the GNU Debugger?
+ string sourceDomain sourceware.org
+
+// git
+abstractGitRepoUrlMeasureParser
+ extends abstractUrlMeasureParser
+ // todo remove the need for the below from grammar
+ string sortKey abstractGitRepoUrlMeasureParser
+
+// gitRepo
+gitRepoParser
+ description What is the URL of the official git repo for the language project if not hosted on GitHub or GitLab or Sourcehut?
+ extends abstractGitRepoUrlMeasureParser
+
+// githubBigQuery
+githubBigQueryParser
+ description What is the name of this language in the Google BigQuery Public Datasets about GitHub repos found at https://cloud.google.com/blog/topics/public-datasets/github-on-bigquery-analyze-all-the-open-source-code?
+ extends abstractMultiwordGuidMeasureParser
+ contentKey id
+ string sourceDomain cloud.google.com
+ usersParser
+  description How many unique users have a repo using this language according to Google BigQuery?
+  extends abstractPopulationCountMeasureParser
+ reposParser
+  description How many repos for this language are listed in Google's BigQuery Public GitHub Dataset snapshot?
+  extends abstractCountMeasureParser
+
+// githubCopilot
+githubCopilotOptimizedParser
+ description Is this language optimized for GitHub copilot, as found on this list https://docs.github.com/en/copilot/overview-of-github-copilot/about-github-copilot?
+ extends abstractBooleanMeasureParser
+
+// githubLanguage
+githubLanguageParser
+ description What is the name of this language on GitHub's list of supported languages defined here https://raw.githubusercontent.com/github/linguist/master/lib/linguist/languages.yml?
+ extends abstractMultiwordGuidMeasureParser
+ inScope filenamesParser fileExtensionsParser
+ contentKey id
+ string sourceDomain github.com
+ reposParser
+  boolean fromCrawler true
+  extends abstractCountMeasureParser
+  description How many repos for this language does GitHub report?
+ wrapParser
+  extends abstractBooleanMeasureParser
+  description Does GitHub override it's default of not wrapping lines when displaying this language?
+ trendingProjectsCountParser
+  boolean fromCrawler true
+  extends abstractCountMeasureParser
+  description How many trending repos for this language does GitHub report?
+ trendingProjectsParser
+  // todo Figure out typings.
+  extends abstractDelimitedValuesBlobMeasureParser
+  boolean fromCrawler true
+  description What are trending projects in this language GitHub?
+  example
+   author name avatar url language languageColor stars forks currentPeriodStars description
+   PavelDoGreat WebGL-Fluid-Simulation https://github.com/PavelDoGreat.png https://github.com/PavelDoGreat/WebGL-Fluid-Simulation JavaScript #f1e05a 6010 473 2246 "Play with fluids in your browser (works even on mobile)"
+ groupParser
+  extends abstractMultiwordGuidMeasureParser
+  description What is the name of the parent language group according to GitHub?
+ aliasesParser
+  extends abstractStringListMeasureParser
+  description What are additional aliases, excluding name.downcase which are implicitly included?
+  listDelimiter  or 
+ interpretersParser
+  extends abstractStringListMeasureParser
+  description What are the associated interpreters?
+ aceModeParser
+  extends abstractWordMeasureParser
+  description What is the name of the Ace Mode used for highlighting whenever a file is edited, matching one of the filenames in http://git.io/3XO_Cg, or "text" for everything else?
+ codemirrorModeParser
+  extends abstractWordMeasureParser
+  description What is the name name of the CodeMirror Mode used for highlighting whenever a file is edited, from the list here https://git.io/vi9Fx?
+ codemirrorMimeTypeParser
+  extends abstractWordMeasureParser
+  description What is the name of the file mime type used for highlighting whenever a file is edited, from the list here https://git.io/f4SoQ?
+ tmScopeParser
+  extends abstractMultiwordGuidMeasureParser
+  description What is the TextMate scope that represents this programming language, matching one of the scopes listed in the grammars.yml file, or "none" if there is no grammar for this language?
+ typeParser
+  extends abstractEnumMeasureParser
+  description Which of the types best describes this: data, programming, markup, prose, or nil?
+
+// githubRepo
+githubRepoUrlCell
+ extends urlCell
+ regex ^https://github.com/.+/.+$
+
+// Basics
+githubRepoParser
+ description What is the URL of the official GitHub repo for the project if it is hosted there?
+ extends abstractGitRepoUrlMeasureParser
+ cells columnNameCell githubRepoUrlCell
+ inScope descriptionParser
+ contentKey url
+ string sourceDomain github.com
+ createdParser
+  extends abstractYearMeasureParser
+  description When was the *Github repo* for this entity created?
+ updatedParser
+  extends abstractYearMeasureParser
+  description What year was the last commit made?
+ firstCommitParser
+  extends abstractYearMeasureParser
+  description What year the first commit made in this git repo?
+ subscribersParser
+  extends abstractCountMeasureParser
+  description How many subscribers to the repo?
+ forksParser
+  extends abstractCountMeasureParser
+  description How many forks of the repo?
+ starsParser
+  extends abstractCountMeasureParser
+  description How many stars of the repo?
+ issuesParser
+  extends abstractCountMeasureParser
+  description How many isses on the repo?
+
+// gitlabRepo
+gitlabRepoParser
+ description What is the URL of the official GitLab repo for the language project?
+ extends abstractGitRepoUrlMeasureParser
+ string sourceDomain gitlab.com
+
+// goodreads
+goodreadsParser
+ boolean fromCrawler true
+ extends abstractDelimitedValuesBlobMeasureParser
+ description What are books about this language from Goodreads?
+ string sourceDomain goodreads.com
+
+// gource
+gourceParser
+ description What is a URL to a Gource visualization of this project's git history?
+ extends abstractUrlMeasureParser
+ string sourceDomain gource.io
+
+// hackerNews
+hackerNewsDiscussionsParser
+ boolean fromCrawler true
+ extends abstractDelimitedValuesBlobMeasureParser
+ description What are URLS to Hacker News posts discussing this language?
+ string sourceDomain news.ycombinator.com
+
+// hasAbstractTypes
+hasAbstractTypesParser
+ extends abstractFeatureParser
+ description Does this language have a keyword for abstract classes or types?
+ string title Abstract Types
+ string pseudoExample abstract class PLDBFile {}
+ string reference https://en.wikipedia.org/wiki/Abstract_type
+
+// hasAccessModifiers
+hasAccessModifiersParser
+ extends abstractFeatureParser
+ string title Access Modifiers
+ description Does this language have access modifiers?
+ string pseudoExample class PLDBFile { public title }
+ string reference https://en.wikipedia.org/wiki/Access_modifiers
+
+// hasAlgebraicTypes
+hasAlgebraicTypesParser
+ extends abstractFeatureParser
+ string title Algebraic Data Type
+ description Does this language support algebraic types?
+ string pseudoExample garageContents = empty | vehicle
+ string reference https://en.wikipedia.org/wiki/Algebraic_data_type
+
+// hasAnonymousFunctions
+hasAnonymousFunctionsParser
+ extends abstractFeatureParser
+ string title Anonymous Functions
+ description Does the language support anonymous functions, aka Lambdas?
+ string aka Lambdas
+ string pseudoExample () => printPldb()
+ string reference https://en.wikipedia.org/wiki/Anonymous_function
+
+// hasArraySlicingSyntax
+hasArraySlicingSyntaxParser
+ extends abstractFeatureParser
+ description Does the language have array slicing syntax, such as [0:2]?
+
+// hasAssertStatements
+hasAssertStatementsParser
+ extends abstractFeatureParser
+ description Does the language have built in assert statements?
+ string title Assert Statements
+ string reference https://en.wikipedia.org/wiki/Debug_code#Assert_Statements
+ string pseudoExample assert(isTrue)
+
+// hasAssignment
+hasAssignmentParser
+ extends abstractFeatureParser
+ description Does the language allow assigning values to variables?
+ string title Assignment
+ string pseudoExample name = "PLDB"
+ string tokenKeyword assignmentToken
+ string reference https://en.wikipedia.org/wiki/Assignment_(computer_science)
+
+// hasAsyncAwait
+hasAsyncAwaitParser
+ extends abstractFeatureParser
+ description Does the language have an async/await construct?
+ string title Async Await
+ string pseudoExample async downloadPldb => await getFiles()
+ string reference https://en.wikipedia.org/wiki/Async/await
+
+// hasBinaryNumbers
+hasBinaryNumbersParser
+ extends abstractFeatureParser
+ description Does the language have a type and syntax for binary numbers?
+ string title Binary Literals
+ string pseudoExample 0b100110100000110011110010010
+ string reference https://en.wikipedia.org/wiki/Binary_number
+
+// hasBinaryOperators
+hasBinaryOperatorsParser
+ extends abstractFeatureParser
+ description Does the language have operators for operating on binary types?
+ string title Binary Operators
+ string pseudoExample 1 + 1
+ string reference https://en.wikipedia.org/wiki/Binary_operation
+
+// hasBitWiseOperators
+hasBitWiseOperatorsParser
+ extends abstractFeatureParser
+ string title Bitwise Operators
+ description Does the language have operators for bitwise manipulations?
+ string reference https://en.wikipedia.org/wiki/Bitwise_operations_in_C https://en.wikipedia.org/wiki/Bitwise_operation
+ string pseudoExample 3 == (2 | 1)
+
+// hasBlobs
+hasBlobsParser
+ description Does the language have a blobs concept?
+ extends abstractFeatureParser
+
+// hasBooleans
+hasBooleansParser
+ extends abstractFeatureParser
+ description Does the language have a type and syntax for booleans?
+ string title Booleans
+ string pseudoExample pldb = true
+ string tokenKeyword booleanTokens
+ string reference https://en.wikipedia.org/wiki/Boolean_data_type
+
+// hasBoundedCheckedArrays
+hasBoundedCheckedArraysParser
+ description Are array boundaries checked by the language?
+ extends abstractFeatureParser
+
+// hasBreak
+hasBreakParser
+ description Does the language have a keyword for breaking out of a loop?
+ extends abstractFeatureParser
+
+// hasBuiltInRegex
+hasBuiltInRegexParser
+ description Does the language include/import a regular expression language?
+ extends abstractFeatureParser
+
+// hasCaseInsensitiveIdentifiers
+hasCaseInsensitiveIdentifiersParser
+ extends abstractFeatureParser
+ description Are identifiers in this language case insensitive?
+ string title Case Insensitive Identifiers
+ string reference https://rosettacode.org/wiki/Case-sensitivity_of_identifiers
+ string pseudoExample pLdB = "PLDB"
+
+// hasCharacters
+hasCharactersParser
+ extends abstractFeatureParser
+ description Does this language have a syntax and type for a "character"?
+ string title Characters
+ string pseudoExample char character = 'P';
+ string reference https://en.wikipedia.org/wiki/Character_(computing)
+
+// hasClasses
+hasClassesParser
+ extends abstractFeatureParser
+ description Does the language have a concept of classes?
+ string title Classes
+ string pseudoExample class PLDBFile {}
+ string reference https://en.wikipedia.org/wiki/Class_(computer_programming)
+
+// hasClobs
+hasClobsParser
+ extends abstractFeatureParser
+ description Does the language have a specific type for character large object?
+ string title Clobs
+ string aka Character large objects
+ string pseudoExample class PLDBFile {}
+ string reference https://en.wikipedia.org/wiki/Character_large_object
+
+// hasComments
+hasCommentsParser
+ extends abstractFeatureParser
+ description Does the language have a syntax and support for comments?
+ string title Comments
+ string reference https://en.wikipedia.org/wiki/Comparison_of_programming_languages_(syntax)#Comments https://en.wikipedia.org/wiki/Comment_(computer_programming)
+ string pseudoExample # Hello PLDB
+
+// hasConditionals
+hasConditionalsParser
+ extends abstractFeatureParser
+ description Does the language have conditional statements and/or conditional expressions?
+ string title Conditionals
+ string pseudoExample if (isTrue) printPldb()
+ string reference https://en.wikipedia.org/wiki/Conditional_(computer_programming)
+
+// hasConstants
+hasConstantsParser
+ extends abstractFeatureParser
+ description Does the language have a way to declare constant compile time variables?
+ string title Constants
+ string pseudoExample const name = "PLDB"
+ string reference https://en.wikipedia.org/wiki/Const_(computer_programming)
+
+// hasConstructors
+hasConstructorsParser
+ extends abstractFeatureParser
+ description Does the language have a syntax and/or notion of constructors?
+ string title Constructors
+ string pseudoExample PLDBFile { constructor() {} }
+ string reference https://en.wikipedia.org/wiki/Constructor_(object-oriented_programming)
+
+// hasContinue
+hasContinueParser
+ description Does the language have a syntax/keyword for continuing a loop?
+ extends abstractFeatureParser
+
+// hasDecimals
+hasDecimalsParser
+ description Does the language have a decimal data type?
+ extends abstractFeatureParser
+ string title Decimals
+ string pseudoExample 0.80766866
+ string reference https://en.wikipedia.org/wiki/Decimal_data_type
+
+// hasDefaultParameters
+hasDefaultParametersParser
+ extends abstractFeatureParser
+ description Does the language have a way to define default parameters for functions?
+ string title Default Parameters Pattern
+ string reference https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/Default_parameters
+ string pseudoExample say(message = "Hello PLDB")
+
+// hasDependentTypes
+hasDependentTypesParser
+ extends abstractFeatureParser
+ description Does a language have types who's definition depends on its value or the value of other types?
+ string title Dependent types
+ string pseudoExample pldbSortedList // a list where is sorted is true
+ string reference https://en.wikipedia.org/wiki/Dependent_type
+
+// hasDestructuring
+hasDestructuringParser
+ extends abstractFeatureParser
+ description Does the language have a syntax for conveniently extracting multiple values from a structure?
+ string title Destructuring
+ string website https://github.com/facebook/reason
+ string reference https://reasonml.github.io/docs/en/destructuring
+ string pseudoExample {title, rank} = pldbFile
+
+// hasDirectives
+hasDirectivesParser
+ extends abstractFeatureParser
+ description Is the language embedded in a tiny compile-time directive language?
+ string title Directives
+ string pseudoExample use strict;
+ string reference https://en.wikipedia.org/wiki/Directive_(programming)
+
+// hasDisposeBlocks
+hasDisposeBlocksParser
+ extends abstractFeatureParser
+ description Does the language have a syntax for dispose blocks to free up resources allocated during execution?
+ string title Dispose Blocks Pattern
+ string pseudoExample with pldb: do computeRanks()
+ string reference https://en.wikipedia.org/wiki/Dispose_pattern
+
+// hasDocComments
+hasDocCommentsParser
+ extends abstractFeatureParser
+ description Is there a standard mini language written in comments for documenting code?
+ string title Doc comments
+ string pseudoExample // param1: A comment about the first param
+
+// hasDuckTyping
+hasDuckTypingParser
+ extends abstractFeatureParser
+ description Are types defined not by their name, but by the presence of certain methods and properties?
+ string title Duck Typing
+ string pseudoExample length() // makes me an iterator
+ string reference https://en.wikipedia.org/wiki/Duck_typing
+
+// hasDynamicProperties
+hasDynamicPropertiesParser
+ extends abstractFeatureParser
+ description Does all properties have to be declared or does the language support dynamic properties?
+ string title Dynamic Properties
+ string pseudoExample pldb.score = 50
+
+// hasDynamicSizedArrays
+hasDynamicSizedArraysParser
+ description Do arrays have to have their size specified at compile time or can they be dynamically sized?
+ extends abstractFeatureParser
+
+// hasDynamicTyping
+hasDynamicTypingParser
+ description Are types of variables fixed or can they change during runtime?
+ extends abstractFeatureParser
+
+// hasEnums
+hasEnumsParser
+ extends abstractFeatureParser
+ description Does the language have a syntax and type for enums?
+ string title Enums
+ string reference https://en.wikipedia.org/wiki/Enumerated_type
+ string pseudoExample colorsEnum { "red", "white", "blue"}
+
+// hasEscapeCharacters
+hasEscapeCharactersParser
+ description Does the language have any notion of escape characters?
+ extends abstractFeatureParser
+
+// hasExceptions
+hasExceptionsParser
+ extends abstractFeatureParser
+ description Does the language have a concept and syntax for exceptions?
+ string title Exceptions
+ string pseudoExample throw new Error("PLDB uh oh")
+ string reference https://en.wikipedia.org/wiki/Exception_handling
+
+// hasExplicitTypeCasting
+hasExplicitTypeCastingParser
+ extends abstractFeatureParser
+ description Does the language have a syntax for type casting?
+ string title Type Casting
+ string pseudoExample (float)pldbRank;
+ string reference https://en.wikipedia.org/wiki/Type_conversion
+
+// hasExports
+hasExportsParser
+ description Does the language have a syntax for explicitly exporting items from a module or file?
+ extends abstractFeatureParser
+
+// hasExpressions
+hasExpressionsParser
+ extends abstractFeatureParser
+ description Does the language have a concept of expressions?
+ string title Expressions
+ string pseudoExample (1 + 2)
+ string reference https://en.wikipedia.org/wiki/Expression_(computer_science)
+
+// hasFirstClassFunctions
+hasFirstClassFunctionsParser
+ extends abstractFeatureParser
+ description Does the language have functions that can be passed as arguments to other functions, can be returned by other functions, and can be assigned to variables or stored in data structures?
+ string title First-Class Functions
+ string pseudoExample [2.1].map(Math.round)
+ string reference https://en.wikipedia.org/wiki/First-class_function
+
+// hasFixedPoint
+hasFixedPointParser
+ extends abstractFeatureParser
+ description Does the language have a type and syntax for fixed point numbers, such as currencies with 2 decimal points?
+ string title Fixed Point Numbers
+ string pseudoExample 80766866.00
+ string reference https://en.wikipedia.org/wiki/Fixed-point_arithmetic
+
+// hasFloats
+hasFloatsParser
+ extends abstractFeatureParser
+ description Does the language have a syntax and type for floating points?
+ string title Floats
+ string reference https://evanw.github.io/float-toy/ https://en.wikipedia.org/wiki/Floating-point_arithmetic
+ string pseudoExample 80766866.0
+
+// hasFnArguments
+hasFnArgumentsParser
+ description Do functions accept arguments?
+ extends abstractFeatureParser
+
+// hasForEachLoops
+hasForEachLoopsParser
+ description Does the language have a concept and syntax for for-each loops?
+ extends abstractFeatureParser
+
+// hasForLoops
+hasForLoopsParser
+ description Does the language have a concept of and syntax for for-loops?
+ extends abstractFeatureParser
+
+// hasFunctionComposition
+hasFunctionCompositionParser
+ extends abstractFeatureParser
+ description Can you pass functions into other functions and get new combined functions?
+ string title Function Composition
+ string pseudoExample o = (f, g) => x => f(g(x))
+ string reference https://en.wikipedia.org/wiki/Function_composition_(computer_science)
+
+// hasFunctionOverloading
+hasFunctionOverloadingParser
+ extends abstractFeatureParser
+ description Can you have multiple functions with the same name but different parameters?
+ string title Function Overloading
+ string reference https://en.wikibooks.org/wiki/Introduction_to_Programming_Languages/Overloading https://en.wikipedia.org/wiki/Function_overloading
+ string aka Ad hoc polymorphism
+ string pseudoExample add(string: str, string2: str)
+
+// hasFunctions
+hasFunctionsParser
+ extends abstractFeatureParser
+ description Does the language have a concept of and syntax for functions?
+ string title Functions
+ string aka routines
+ string aka procedures
+ string aka methods
+ string pseudoExample function computePLDBRanks() {}
+ string reference https://en.wikipedia.org/wiki/Subroutine
+
+// hasGarbageCollection
+hasGarbageCollectionParser
+ extends abstractFeatureParser
+ description Does the language have a garbage collector or must memory of constructs be managed manually?
+ string title Garbage Collection
+ string pseudoExample var iDontNeedToFreeThis
+ string reference https://en.wikipedia.org/wiki/Garbage_collection_(computer_science)
+
+// hasGenerators
+hasGeneratorsParser
+ extends abstractFeatureParser
+ description Does the language have a concept of loops that yield?
+ string title Generators
+ string pseudoExample yield 2
+ string reference https://en.wikipedia.org/wiki/Generator_(computer_programming)
+
+// hasGenerics
+hasGenericsParser
+ extends abstractFeatureParser
+ description Does the language have generics?
+ string title Generics
+ string pseudoExample function identity<T>(arg: T): T
+ string reference https://en.wikipedia.org/wiki/Generic_programming
+
+// hasGlobalScope
+hasGlobalScopeParser
+ description Is there at least one top level scope?
+ extends abstractFeatureParser
+
+// hasGotos
+hasGotosParser
+ extends abstractFeatureParser
+ description Does the language have a concept of and syntax for gotos?
+ string title Gotos
+ string pseudoExample goto 10
+ string reference https://en.wikipedia.org/wiki/Goto
+
+// hasHereDocs
+hasHereDocsParser
+ extends abstractFeatureParser
+ description Does the language have a syntax for multiline text blocks?
+ string title Here Document
+ string reference https://en.wikipedia.org/wiki/Here_document
+ string pseudoExample `A big multliline text block`
+
+// hasHexadecimals
+hasHexadecimalsParser
+ extends abstractFeatureParser
+ description Does the language have a syntax for hexadecimals?
+ string title Hexadecimals
+ string aka Base16
+ string aka hex
+ string pseudoExample 0x4D06792
+ string reference https://en.wikipedia.org/wiki/Hexadecimal
+
+// hasHomoiconicity
+hasHomoiconicityParser
+ extends abstractFeatureParser
+ description Is the language also a valid data structure in that language?
+ string title Homoiconicity
+ string pseudoExample (list ())
+ string reference https://en.wikipedia.org/wiki/Homoiconicity
+
+// hasIds
+hasIdsParser
+ description Does the language have a concept of unique identifiers?
+ extends abstractFeatureParser
+
+// hasIfElses
+hasIfElsesParser
+ description Does the language have if-else statements or expressions?
+ extends abstractFeatureParser
+
+// hasIfs
+hasIfsParser
+ description Does the language have "if" statements or expressoins?
+ extends abstractFeatureParser
+
+// hasImplicitArguments
+hasImplicitArgumentsParser
+ extends abstractFeatureParser
+ // todo: should we remove this one? I would have thought it was referring to something like an "arguments" implicit parameter
+ description Does the language have a concept of contextual or implicit parameters?
+ string title Implicit Arguments
+ string reference https://docs.scala-lang.org/tour/implicit-parameters.html
+ string pseudoExample shout(implicit message: string)
+
+// hasImplicitTypeConversions
+hasImplicitTypeConversionsParser
+ extends abstractFeatureParser
+ description Does the language automatically convert types as needed?
+ string title Implicit Type Casting
+ string reference https://en.wikipedia.org/wiki/Type_conversion
+ string pseudoExample console.log("hello " + 2)
+
+// hasImports
+hasImportsParser
+ extends abstractFeatureParser
+ description Does this language have a syntax for importing other files?
+ string title File Imports
+ string pseudoExample import pldb
+ string tokenKeyword includeToken
+
+// hasIncrementAndDecrementOperators
+hasIncrementAndDecrementOperatorsParser
+ extends abstractFeatureParser
+ description Does this language have increment and decrement operators?
+ string title Increment and decrement operators
+ string pseudoExample i++
+ string reference https://en.wikipedia.org/wiki/Increment_and_decrement_operators
+
+// hasInfixNotation
+hasInfixNotationParser
+ extends abstractFeatureParser
+ description Does this language use operators between operands?
+ string title Infix Notation
+ string pseudoExample 1 + 2
+ string reference https://en.wikipedia.org/wiki/Infix_notation
+
+// hasInheritance
+hasInheritanceParser
+ extends abstractFeatureParser
+ description Does this language have class inheritance?
+ string title Inheritance
+ string pseudoExample class PLDBFile extends File
+ string reference https://en.wikipedia.org/wiki/Inheritance_(object-oriented_programming)
+
+// hasIntegers
+hasIntegersParser
+ extends abstractFeatureParser
+ description Does this language have a syntax and type for integers?
+ string title Integers
+ string pseudoExample 80766866
+ string reference https://en.wikipedia.org/wiki/Integer_(computer_science)
+
+// hasInterfaces
+hasInterfacesParser
+ extends abstractFeatureParser
+ description Does this language have a concept of interfaces?
+ string title Interfaces
+ string pseudoExample interface PLDBFile
+ string reference https://en.wikipedia.org/wiki/Protocol_(object-oriented_programming)
+
+// hasIterators
+hasIteratorsParser
+ extends abstractFeatureParser
+ description Does this language have iterators?
+ string title Iterators
+ string pseudoExample for lang in pldb()
+ string reference https://en.wikipedia.org/wiki/Iterator
+
+// hasLabels
+hasLabelsParser
+ extends abstractFeatureParser
+ description Does the language have a way to label locations within the source code?
+ string title Labels
+ string pseudoExample mainFn:
+ string reference https://en.wikipedia.org/wiki/Label_(computer_science)
+
+// hasLazyEvaluation
+hasLazyEvaluationParser
+ extends abstractFeatureParser
+ description Does the language wait to evaluate expressions until needed?
+ string title Lazy Evaluation
+ string pseudoExample print(range(1000000)[2])
+ string reference https://en.wikipedia.org/wiki/Lazy_evaluation
+
+// hasLineComments
+hasLineCommentsParser
+ extends abstractFeatureParser
+ description Does the language have line comments?
+ string title Line Comments
+ string reference https://en.wikipedia.org/wiki/Comparison_of_programming_languages_(syntax)#Comments
+ string pseudoExample # Hello PLDB
+ string tokenKeyword lineCommentToken
+
+// hasLists
+hasListsParser
+ extends abstractFeatureParser
+ description Does the language have lists?
+ string title Lists
+ string aka array
+ string aka vector
+ string aka sequence
+ string pseudoExample [2, 3, 10]
+ string reference https://en.wikipedia.org/wiki/List_(abstract_data_type)
+
+// hasMacros
+hasMacrosParser
+ extends abstractFeatureParser
+ description Does the language have a compile-time macro pass?
+ string title Macros
+ string pseudoExample #define pldbItems 4000
+ string reference https://en.wikipedia.org/wiki/Macro_(computer_science)
+
+// hasMagicGettersAndSetters
+hasMagicGettersAndSettersParser
+ extends abstractFeatureParser
+ description Does the language have a way to handle undefined getters and setters?
+ string title Magic Getters and Setters
+ string reference https://www.php.net/manual/en/language.oop5.overloading.php#object.get
+ string pseudoExample get(name) => obj[name]
+
+// hasManualMemoryManagement
+hasManualMemoryManagementParser
+ extends abstractFeatureParser
+ description Does the language have manual memory management?
+ string title Manual Memory Management
+ string pseudoExample malloc(4);
+ string reference https://en.wikipedia.org/wiki/Manual_memory_management
+
+// hasMapFunctions
+hasMapFunctionsParser
+ extends abstractFeatureParser
+ description Does the language support running map over a list?
+ string title Map Functions
+ string pseudoExample pldbFiles.map(downloadFilesFn)
+ string reference https://en.wikipedia.org/wiki/Map_(higher-order_function)
+
+// hasMaps
+hasMapsParser
+ extends abstractFeatureParser
+ description Does the language have a map (aka hashtable) data structure?
+ string title Maps
+ string aka dict
+ string aka dictionary
+ string aka object
+ string aka record
+ string aka struct
+ string aka hashtable
+ string aka keyed list
+ string aka associative array
+ string pseudoExample {name: "PLDB"}
+ string reference https://en.wikipedia.org/wiki/Associative_array
+
+// hasMemberVariables
+hasMemberVariablesParser
+ extends abstractFeatureParser
+ description Does the language have member variables?
+ string aka properties
+
+// hasMessagePassing
+hasMessagePassingParser
+ extends abstractFeatureParser
+ description Does the language support message passing?
+ string title Message Passing
+ string pseudoExample "get pldb"
+ string reference https://en.wikipedia.org/wiki/Message_passing
+
+// hasMethodChaining
+hasMethodChainingParser
+ extends abstractFeatureParser
+ description Does the language support method chaining?
+ string title Method Chaining
+ string pseudoExample pldbFile.toString().length
+ string reference https://en.wikipedia.org/wiki/Method_chaining
+
+// hasMethodOverloading
+hasMethodOverloadingParser
+ description Does the language support method overloading?
+ extends abstractFeatureParser
+
+// hasMethods
+hasMethodsParser
+ extends abstractFeatureParser
+ description Does the language have methods on classes?
+ string title Methods
+ string pseudoExample pldbFile.downloadWebsite()
+ string reference https://en.wikipedia.org/wiki/Method_(computer_programming)
+
+// hasMixins
+hasMixinsParser
+ extends abstractFeatureParser
+ description Does the language allow including methods from a class without inheriting from that class?
+ string title Mixins
+ string pseudoExample extends pldbFile, diskFile
+ string reference https://en.wikipedia.org/wiki/Mixin
+
+// hasModules
+hasModulesParser
+ extends abstractFeatureParser
+ description Does the language have a concept of modules for organizing and packaging code?
+ string title Module Pattern
+ string pseudoExample module PLDB {}
+ string reference https://en.wikipedia.org/wiki/Module_pattern
+
+// hasMonads
+hasMonadsParser
+ extends abstractFeatureParser
+ description Does the language have monads?
+ string title Monad
+ string pseudoExample g >>= f
+ string reference https://en.wikipedia.org/wiki/Monad_(functional_programming)
+
+// hasMultiLineComments
+hasMultiLineCommentsParser
+ extends abstractFeatureParser
+ description Does the language have multi-line comments?
+ string title MultiLine Comments
+ string reference https://en.wikipedia.org/wiki/Comparison_of_programming_languages_(syntax)#Comments
+ string pseudoExample /* Hello PLDB */
+ string tokenKeyword multiLineCommentTokens
+
+// hasMultilineStrings
+hasMultilineStringsParser
+ extends abstractFeatureParser
+ description Does the language support multiline strings?
+ string title Multiline Strings
+ string pseudoExample hello = """Hello\nPLDB"""
+
+// hasMultipleDispatch
+hasMultipleDispatchParser
+ extends abstractFeatureParser
+ description Does the language support multiple dispatch?
+ string title Multiple Dispatch
+ string pseudoExample collide_with(x::Spaceship, y::Spaceship)
+ string reference https://en.wikipedia.org/wiki/Multiple_dispatch
+
+// hasMultipleInheritance
+hasMultipleInheritanceParser
+ extends abstractFeatureParser
+ description Does the language allow multiple inheritance?
+ string title Multiple Inheritance
+ string pseudoExample extends parentWhichExtendsSomethingElse
+ string reference https://en.wikipedia.org/wiki/Multiple_inheritance
+
+// hasNamespaces
+hasNamespacesParser
+ extends abstractFeatureParser
+ description Does the language have a namespace construct?
+ string title Namespaces
+ string pseudoExample namespace PLDB {}
+
+// hasNull
+hasNullParser
+ extends abstractFeatureParser
+ description Does the language have a null value?
+ string title Null
+ string reference https://en.wikipedia.org/wiki/Null_pointer
+ string pseudoExample uhOh = null
+
+// hasOctals
+hasOctalsParser
+ extends abstractFeatureParser
+ description Does the language have a syntax for octal numbers?
+ string title Octals
+ string aka Base8
+ string aka oct
+ string pseudoExample 0o464063622
+ string reference https://en.wikipedia.org/wiki/Octal
+
+// hasOperatorOverloading
+hasOperatorOverloadingParser
+ extends abstractFeatureParser
+ description Does the language allow operator overloading?
+ string title Operator Overloading
+ string reference https://en.wikibooks.org/wiki/Introduction_to_Programming_Languages/Overloading https://en.wikipedia.org/wiki/Operator_overloading
+ string pseudoExample def __add__(): doSomethingDifferent()
+
+// hasOperators
+hasOperatorsParser
+ extends abstractFeatureParser
+ description Does the language have operators?
+ string title Operators
+ string reference https://en.wikipedia.org/wiki/Operator_(computer_programming)
+ string pseudoExample 1 + 1
+
+// hasPairs
+hasPairsParser
+ extends abstractFeatureParser
+ description Does the language have a pair structure?
+ string title Pairs
+ string pseudoExample (pl . db)
+
+// hasPartialApplication
+hasPartialApplicationParser
+ extends abstractFeatureParser
+ description Does the language support partial application?
+ string title Partial Application
+ string pseudoExample add5 = num => addNumbers(10, num)
+ string reference https://en.wikipedia.org/wiki/Partial_application
+
+// hasPatternMatching
+hasPatternMatchingParser
+ extends abstractFeatureParser
+ description Does the language support pattern matching?
+ string title Pattern Matching
+ string pseudoExample fib 0 = 1; fib 1 = 1
+ string reference https://en.wikipedia.org/wiki/Pattern_matching
+
+// hasPipes
+hasPipesParser
+ extends abstractFeatureParser
+ description Does the language have a pipe operator?
+ string title Pipes
+ string pseudoExample ls pldb | wc
+ string reference https://en.wikipedia.org/wiki/Pipeline_(software)
+
+// hasPointers
+hasPointersParser
+ extends abstractFeatureParser
+ // question: are there languages that have pointers to a location in an l1/lN cache?
+ description Does the language have a structure that is a location in memory?
+ string title Pointers
+ string pseudoExample int *pldb
+ string reference https://en.wikipedia.org/wiki/Pointer_(computer_programming)
+
+// hasPolymorphism
+hasPolymorphismParser
+ extends abstractFeatureParser
+ description Does the language have polymorphism?
+ string title Polymorphism
+ string pseudoExample a + "b"; 1 + 2
+ string reference https://en.wikipedia.org/wiki/Polymorphism_(computer_science)
+
+// hasPostfixNotation
+hasPostfixNotationParser
+ extends abstractFeatureParser
+ description Does the language allow operators to be placed at the end of the expression?
+ string title Postfix Notation
+ string pseudoExample 2 3 4 + 2 -
+ string reference https://en.wikipedia.org/wiki/Reverse_Polish_notation
+
+// hasPrefixNotation
+hasPrefixNotationParser
+ extends abstractFeatureParser
+ description Does the language allow operators to be placed at the beginning of the expression?
+ string title Prefix Notation
+ string pseudoExample + 1 2
+ string reference https://en.wikipedia.org/wiki/Polish_notation
+
+// hasPrintDebugging
+hasPrintDebuggingParser
+ extends abstractFeatureParser
+ description Does the language have a built in function that allows one to print debug?
+ string title Print() Debugging
+ string reference https://en.wikipedia.org/wiki/Debug_code#Print_debugging
+ string pseudoExample print "Hello PLDB"
+ string tokenKeyword printToken
+
+// hasProcessorRegisters
+hasProcessorRegistersParser
+ extends abstractFeatureParser
+ description Does the language have named symbols for a processor's registers?
+ string title Processor Registers
+ string pseudoExample eax 2
+ string reference https://en.wikipedia.org/wiki/Processor_register
+
+// hasRangeOperators
+hasRangeOperatorsParser
+ extends abstractFeatureParser
+ description Does the language have a syntax for creating ranges?
+ string title Range Operator
+ string reference https://docstore.mik.ua/orelly/perl4/prog/ch03_15.htm
+ string pseudoExample 1 ... 10
+
+// hasReferences
+hasReferencesParser
+ extends abstractFeatureParser
+ description Does the language have a structure for holding a reference to an existing object?
+ string title References
+ string pseudoExample fn(objPointer)
+ string reference https://en.wikipedia.org/wiki/Reference_(computer_science)
+
+// hasRefinementTypes
+hasRefinementTypesParser
+ extends abstractFeatureParser
+ description Does the language have a way to attach a predicate to a type?
+ string title Refinement Types
+ string pseudoExample evenInt where int % 2 = 0
+ string reference https://en.wikipedia.org/wiki/Refinement_type
+
+// hasRegularExpressionsSyntaxSugar
+hasRegularExpressionsSyntaxSugarParser
+ extends abstractFeatureParser
+ description Does the language have special syntax for regular expressions?
+ string title Regular Expression Syntax Sugar
+ string reference https://pldb.io/concepts/regex.html
+ string pseudoExample /pldb/
+
+// hasRequiredMainFunction
+hasRequiredMainFunctionParser
+ description Does the language require a function named main (or similar)?
+ extends abstractFeatureParser
+
+// hasReservedWords
+hasReservedWordsParser
+ description Does a concept of reserved words exists, for example, not being able to use certain keywords as variable names.?
+ extends abstractFeatureParser
+
+// hasRunTimeGuards
+hasRunTimeGuardsParser
+ extends abstractFeatureParser
+ description Does the language support run-time guards?
+ string title Runtime Guards
+ string pseudoExample f x | x > 0 = 1 | otherwise = 0
+ string reference https://en.wikipedia.org/wiki/Guard_(computer_science)
+
+// hasSExpressions
+hasSExpressionsParser
+ description Does the language have S Expressions?
+ extends abstractFeatureParser
+ string title S-Expressions
+ string pseudoExample (+ 1 1)
+ string reference https://en.wikipedia.org/wiki/S-expression
+
+// hasScientificNotation
+hasScientificNotationParser
+ extends abstractFeatureParser
+ description Does the language have a syntax for Scientific Notation?
+ string title Scientific Notation
+ string aka E Notation
+ string pseudoExample 8076686.6e1
+ string reference https://en.wikipedia.org/wiki/Scientific_notation
+
+// hasSelfOrThisWord
+hasSelfOrThisWordParser
+ description Does a language have a keyword or syntax to refer to the current instance?
+ extends abstractFeatureParser
+
+// hasSemanticIndentation
+hasSemanticIndentationParser
+ extends abstractFeatureParser
+ description Does the language use semantic indentation?
+ string aka off-side rule
+ string title Semantic Indentation
+ string reference https://pldb.io/posts/which-programming-languages-use-indentation.html
+ string pseudoExample line0 if true line1  print "Hello PLDB"
+
+// hasSets
+hasSetsParser
+ extends abstractFeatureParser
+ description Does the language come with a Set data structure?
+ string title Sets
+ string pseudoExample {"pldb", "PLDB"}
+ string reference https://en.wikipedia.org/wiki/Set_(abstract_data_type)
+
+// hasSingleDispatch
+hasSingleDispatchParser
+ extends abstractFeatureParser
+ description Does the method called depended on a single operand?
+ string title Single Dispatch
+ string reference https://en.wikipedia.org/wiki/Dynamic_dispatch#Single_and_multiple_dispatch
+ string pseudoExample person.run()
+
+// hasSingleTypeArrays
+hasSingleTypeArraysParser
+ extends abstractFeatureParser
+ description Does the language have a list data structure that only can hold items of the same type?
+ string title Single-Type Arrays
+ string reference https://en.wikipedia.org/wiki/Array_data_structure
+ string pseudoExample const pldbRanks: int[]
+
+// hasSourceMaps
+hasSourceMapsParser
+ extends abstractFeatureParser
+ description Does the language support the generation of source maps?
+ string title Source Maps
+ string pseudoExample {file: 'pldb.min.js',sources: ['pldb.js'], mappings: 'CAAC,IAAI,IAAM'}
+
+// hasStatementTerminatorCharacter
+hasStatementTerminatorCharacterParser
+ description Does the language have a statement terminator character such as ";"?
+ extends abstractFeatureParser
+
+// hasStatements
+hasStatementsParser
+ extends abstractFeatureParser
+ description Does the language have a concept of statements?
+ string title Statements
+ string pseudoExample print "Hello PLDB"
+ string reference https://en.wikipedia.org/wiki/Statement_(computer_science)
+
+// hasStaticMethods
+hasStaticMethodsParser
+ extends abstractFeatureParser
+ description Can a class have static methods?
+ string title Static Methods
+ string reference https://www.geeksforgeeks.org/static-methods-vs-instance-methods-java/
+ string pseudoExample static downloadPldb() {}
+
+// hasStaticTyping
+hasStaticTypingParser
+ extends abstractFeatureParser
+ description Does the language have static typing at compile time?
+ string title Static Typing
+ string reference https://en.wikipedia.org/wiki/Type_system#Static_type_checking
+ string pseudoExample int pldbRank = 100
+
+// hasStreams
+hasStreamsParser
+ extends abstractFeatureParser
+ description Does the language have a concept of streams?
+ string title Streams
+ string pseudoExample echo 123 | 123.txt
+ string reference https://en.wikipedia.org/wiki/Stream_(computing)
+
+// hasStringConcatOperator
+hasStringConcatOperatorParser
+ description Is there an operator for concatenating strings?
+ extends abstractFeatureParser
+
+// hasStrings
+hasStringsParser
+ extends abstractFeatureParser
+ description Does the language have a strings data structure?
+ string title Strings
+ string pseudoExample "Hello PLDB"
+ string tokenKeyword stringToken
+ string reference https://en.wikipedia.org/wiki/String_(computer_science)
+
+// hasStructs
+hasStructsParser
+ extends abstractFeatureParser
+ description Does the language have a structs structure?
+ string title Structs
+ string pseudoExample struct pldbFile { int rank; char *title; };
+ string reference https://en.wikipedia.org/wiki/Struct_(C_programming_language)
+
+// hasSwitch
+hasSwitchParser
+ extends abstractFeatureParser
+ description Does the language have switch statements or expressions?
+ string title Switch Statements
+ string pseudoExample switch animal: case dog-buy; case cat-sell;
+ string reference https://en.wikipedia.org/wiki/Switch_statement
+
+// hasSymbolTables
+hasSymbolTablesParser
+ extends abstractFeatureParser
+ description Does the compiler use symbol tables internally?
+ string title Symbol Tables
+ string pseudoExample SymbolName|Type|Scope;bar|function,double|extern
+ string reference https://en.wikipedia.org/wiki/Symbol_table
+
+// hasSymbols
+hasSymbolsParser
+ description Does the language have a concept of symbols?
+ extends abstractFeatureParser
+
+// hasTemplates
+hasTemplatesParser
+ extends abstractFeatureParser
+ description Does the language support templates?
+ string title Templates
+ string pseudoExample template TCopy(T) {}
+ string reference https://en.wikipedia.org/wiki/Template_metaprogramming
+
+// hasTernaryOperators
+hasTernaryOperatorsParser
+ extends abstractFeatureParser
+ description Does the language have ternary operators?
+ string title Ternary operators
+ string pseudoExample true ? 1 : 0
+ string reference https://en.wikipedia.org/wiki/Ternary_operation
+
+// hasThreads
+hasThreadsParser
+ extends abstractFeatureParser
+ description Does the language support a concept of threads?
+ string title Threads
+ string pseudoExample thread1(); thread2();
+ string reference https://en.wikipedia.org/wiki/Thread_(computing)
+
+// hasTimestamps
+hasTimestampsParser
+ description Does the language have a builtin timestamps data structure?
+ extends abstractFeatureParser
+
+// hasTraits
+hasTraitsParser
+ extends abstractFeatureParser
+ description Does the language support traits?
+ string title Traits
+ string pseudoExample use redBorder
+ string reference https://en.wikipedia.org/wiki/Trait_(computer_programming)
+
+// hasTriples
+hasTriplesParser
+ extends abstractFeatureParser
+ description Does the language have a structure for subject–predicate–object expressions?
+ string title Triples
+ string pseudoExample Javascript isListedIn PLDB
+ string reference https://en.wikipedia.org/wiki/Semantic_triple
+
+// hasTryCatch
+hasTryCatchParser
+ description Does the language have a try/catch construct?
+ extends abstractFeatureParser
+
+// hasTypeAnnotations
+hasTypeAnnotationsParser
+ extends abstractFeatureParser
+ description Does the language have a syntax for annotating the types of variables?
+ string title Type Annotations
+ string pseudoExample score: number
+
+// hasTypeInference
+hasTypeInferenceParser
+ extends abstractFeatureParser
+ description Can the parser infer the type of a variable at compile time without an annotation?
+ string title Type Inference
+ string reference https://en.wikipedia.org/wiki/Type_inference
+ string pseudoExample imAString = "pldb"
+
+// hasTypeParameters
+hasTypeParametersParser
+ extends abstractFeatureParser
+ description Does the language support a concept of type parameters?
+ string title Type Parameters
+ string pseudoExample function identity<T>(arg: T): T {return arg}
+ string reference https://en.wikipedia.org/wiki/TypeParameter
+
+// hasTypedHoles
+hasTypedHolesParser
+ extends abstractFeatureParser
+ description Does the language have a syntax for typed holes?
+ string title Typed Holes
+ string reference https://wiki.haskell.org/GHC/Typed_holes
+ string pseudoExample 2 + _ => 2 + [int|float]
+
+// hasUnaryOperators
+hasUnaryOperatorsParser
+ extends abstractFeatureParser
+ description Does the language have any unary operators like ++ or --?
+ string title Unary Operators
+ string pseudoExample count++
+ string reference https://en.wikipedia.org/wiki/Unary_operation
+
+// hasUnicodeIdentifiers
+hasUnicodeIdentifiersParser
+ extends abstractFeatureParser
+ description Does the language support Unicode identifiers?
+ // some support only ASCII
+ string title Unicode Identifers
+ string pseudoExample δ = 0.00001
+
+// hasUnionTypes
+hasUnionTypesParser
+ extends abstractFeatureParser
+ description Does the language support union types?
+ string title Union Types
+ string pseudoExample any = string | number
+ string reference https://en.wikipedia.org/wiki/Union_type
+
+// hasUnitsOfMeasure
+hasUnitsOfMeasureParser
+ extends abstractFeatureParser
+ description Does the language support units of measure?
+ string title Units of Measure
+ string pseudoExample 42cm
+ string reference https://en.wikipedia.org/wiki/Unit_of_measurement
+
+// hasUserDefinedOperators
+hasUserDefinedOperatorsParser
+ description Does the language allow for defining your own operators?
+ extends abstractFeatureParser
+
+// hasValueReturnedFunctions
+hasValueReturnedFunctionsParser
+ description Can functions return a value?
+ extends abstractFeatureParser
+
+// hasVariableSubstitutionSyntax
+hasVariableSubstitutionSyntaxParser
+ extends abstractFeatureParser
+ description Do you use different syntax when assigning versus referencing a variable?
+ string title Variable Substitution Syntax
+ string pseudoExample name = "PLDB"; print $name
+
+// hasVariadicFunctions
+hasVariadicFunctionsParser
+ description Does the language support functions that accept a variable number of parameters?
+ extends abstractFeatureParser
+ string title Variadic Functions
+ string pseudoExample args.map(doSomething)
+ string reference https://en.wikipedia.org/wiki/Variadic_function
+
+// hasVirtualFunctions
+hasVirtualFunctionsParser
+ description Does the language have virtual functions?
+ extends abstractFeatureParser
+ string title Virtual function
+ string pseudoExample virtual FetchPLDBFile();
+ string reference https://en.wikipedia.org/wiki/Virtual_function
+
+// hasVoidFunctions
+hasVoidFunctionsParser
+ description Does the language have void functions that return nothing?
+ extends abstractFeatureParser
+
+// hasWhileLoops
+hasWhileLoopsParser
+ description Does the language have while loops?
+ extends abstractFeatureParser
+ string title While Loops
+ string pseudoExample while (pldb.pop()) loop()
+ string reference https://en.wikipedia.org/wiki/While_loop
+
+// hasZeroBasedNumbering
+hasZeroBasedNumberingParser
+ description Does the language start counting from 0, rather than 1?
+ extends abstractFeatureParser
+ string title Zero-based numbering
+ string reference https://en.wikipedia.org/wiki/Zero-based_numbering
+ string pseudoExample firstItem = pldb[0]
+
+// hasZippers
+hasZippersParser
+ extends abstractFeatureParser
+ description Does the language have zippers built in or as a library, which are roughly a pointer with context on a tree?
+ string title Zippers
+ string reference https://wiki.haskell.org/Zipper https://en.wikipedia.org/wiki/Zipper_(data_structure)
+ string pseudoExample pldbCursor.moveLeft()
+
+// helloWorldCollection
+helloWorldCollectionParser
+ description What is the name of this project in the Hello World Collection?
+ extends exampleParser
+ cruxFromId
+ cells columnNameCell
+ catchAllCellType helloWorldCollectionIdCell
+ string sourceDomain helloworldcollection.de
+helloWorldCollectionIdCell
+ description Id for this language on hello world collection.
+
+// history
+appearedParser
+ description What year was the language publicly released and/or announced?
+ extends abstractYearMeasureParser
+ required
+isDeadParser
+ description Has the creator or maintainer announced it officially dead? Include a link to proof of the announcement.
+ extends abstractBooleanMeasureParser
+ catchAllParser urlCitationParser
+
+nativeLanguageWordCell
+ description The name of a natural language like English or Japanese.
+nativeLanguageParser
+ cells columnNameCell nativeLanguageWordCell
+ description What is the native human language for this language, if not English?
+ extends abstractEnumMeasureParser
+
+firstAnnouncementParser
+ description What is a URL announcing the creation or release of this language?
+ extends abstractUrlMeasureParser
+
+announcementMethodCell
+ description Common ways languages are first announced.
+ enum pressRelease paper rfc webpage blogPost interview dissertation
+ highlightScope constant.language
+
+announcementMethodParser
+ description How was the language first announced?
+ extends abstractEnumMeasureParser
+ cells columnNameCell announcementMethodCell
+
+// hopl
+hoplParser
+ extends abstractUrlGuidMeasureParser
+ description What is the URL to this language in Diarmuid Pigott's Online Historical Encyclopaedia of Programming Languages site?
+ string sourceDomain hopl.info
+
+// images
+screenshotParser
+ description What is a URL to a screenshot of this visual language in the form https://pldb.io/screenshots/[id].png?
+ extends abstractUrlMeasureParser
+photoParser
+ description What is a URL to a screenshot of this real world notation in the form https://pldb.io/photos/[id].png?
+ extends abstractUrlMeasureParser
+
+// indeedJobs
+indeedJobsParser
+ description How many job descriptions match this query for this language on indeed.com?
+ catchAllCellType stringCell
+ extends abstractAnnualPopulationCountMapParser
+ contentKey query
+ string sourceDomain indeed.com
+
+// irc
+ircParser
+ extends abstractChatUrlMeasureParser
+ description What is a link to an official (or popular unofficial) IRC channel(s) for language development?
+
+// isCaseSensitive
+isCaseSensitiveParser
+ extends abstractFeatureParser
+ description Is this language case sensitive?
+ string title Case Sensitivity
+ string reference https://en.wikipedia.org/wiki/Case_sensitivity
+ string pseudoExample pldb != PLDB
+
+// isLisp
+isLispParser
+ extends abstractFeatureParser
+ string title Lispy
+ description Is this in the Lisp family of languages?
+ string reference https://en.wikipedia.org/wiki/Lisp_(programming_language)
+ string pseudoExample (+ 1 2)
+
+// isbndb
+isbndbParser
+ boolean fromCrawler true
+ extends abstractDelimitedValuesBlobMeasureParser
+ description What are books about this language from ISBNdb?
+ string sourceDomain isbndb.com
+
+// jupyter
+jupyterKernelParser
+ extends abstractUrlGuidMeasureParser
+ single false
+ description What is a link to a Jupyter Kernel for this language?
+ string sourceDomain jupyter.org
+
+// languageServerProtocolProject
+languageServerProtocolProjectParser
+ extends abstractUrlMeasureParser
+ inScope writtenInParser
+ single false
+ description What is the URL to a project implementing LSP for this language?
+ string sourceDomain langserver.org
+
+// leachim6
+leachim6Parser
+ extends abstractMultiwordGuidMeasureParser
+ description What is a URL to this language in leachim6's hello-world project?
+ string sourceDomain github.com/leachim6/hello-world
+ contentKey id
+ inScope fileExtensionsParser exampleParser
+ filepathParser
+  description What is the filepath to this language in leachim6's hello-world project?
+  extends abstractStringMeasureParser
+
+// leaders
+creatorNameCell
+ extends stringCell
+creatorsParser
+ extends abstractStringListMeasureParser
+ boolean alwaysRecommended true
+ description What are the name(s) of the original creators of the language delimited by " and "?
+ catchAllCellType creatorNameCell
+ listDelimiter  and 
+
+
+// letterFirstIdentifiers
+letterFirstIdentifiersParser
+ extends abstractFeatureParser
+ description Must identifiers start with a letter?
+ string title Letter-first Identifiers
+ string pseudoExample pldb100 = "OK" // 100pldb = "ERROR"
+
+// linguistGrammarRepo
+linguistGrammarRepoParser
+ description What is the URL to the Linguist Grammar repo used by GitHub for this language?
+ // Linguist is a library used by GitHub to syntax highlight files on GitHub via a grammar. The list of languages supported by Linguist and the grammar package used for each language is listed here: https://github.com/github/linguist/blob/master/vendor/README.md. If Linguist has support for a language, it will have a repo on GitHub. Given a language is supported by Linguist, that is a good indication it has at least 200 unique :user/:repo repositories, according to their docs.
+ extends abstractUrlMeasureParser
+ cells columnNameCell urlCell
+ contentKey url
+ string sourceDomain github.com
+ inScope exampleParser
+ commitCountParser
+  description How many commits in this repo?
+  extends abstractCountMeasureParser
+ firstCommitParser
+  description What year was the first commit made?
+  extends abstractYearMeasureParser
+ lastCommitParser
+  description What year was the last commit made?
+  extends abstractYearMeasureParser
+ sampleCountParser
+  description How many language samples in this repo?
+  extends abstractCountMeasureParser
+ committerCountParser
+  description How many people have made commits in this repo?
+  extends abstractPopulationCountMeasureParser
+
+// linkedInSkill
+linkedInSkillParser
+ description How many people list this skill on LinkedIn?
+ extends abstractAnnualPopulationCountMapParser
+ catchAllCellType stringCell
+ contentKey id
+ string sourceDomain linkedin.com
+
+// meetup
+meetupParser
+ description What is a URL for active meetup groups for this language on Meetup.com?
+ extends abstractUrlGuidMeasureParser
+ contentKey url
+ string sourceDomain meetup.com
+ memberCountParser
+  description How many people in this meetup group?
+  extends abstractPopulationCountMeasureParser
+ groupCountParser
+  description How many groups?
+  extends abstractCountMeasureParser
+
+// mergesWhitespace
+mergesWhitespaceParser
+ extends abstractFeatureParser
+ description Does this language merge whitespace, so N spaces is treated the same as a single space?
+ string title Merges Whitespace
+ string reference http://wiki.c2.com/?SyntacticallySignificantWhitespaceConsideredHarmful
+ string pseudoExample result = 1    +    2
+
+// monaco
+monacoParser
+ extends abstractOneWordGuidMeasureParser
+ description What is a URL to a Monaco syntax highlighting package for this language?
+ example
+  javascript
+   monaco javascript
+ string sourceDomain microsoft.github.io/monaco-editor/
+
+// name
+aliasCell
+titleParser
+ description What is the official title of the language?
+ extends abstractStringMeasureParser
+ required
+
+wordRankParser
+ description Where does this word rank in terms of common English words?
+ // where "the" is 1.
+ extends abstractIntMeasureParser
+
+standsForParser
+ description If the language name is an acronym what does/did it stand for?
+ extends abstractStringMeasureParser
+
+akaParser
+ description What is this also known as?
+ extends abstractStringMeasureParser
+ single false
+
+oldNameParser
+ description What is the old name of this language?
+ extends abstractStringMeasureParser
+
+// officialBlogUrl
+officialBlogUrlParser
+ extends abstractUrlMeasureParser
+ description What is the URL to the official blog for this language?
+ single false
+
+// originCommunity
+originCommunityParser
+ description In what community(ies) did the language first originate?
+ boolean alwaysRecommended true
+ // todo Make origin community name the url for the community? instead of the name? Not sure.
+ listDelimiter  && 
+ example
+  originCommunity Microsoft && /r/programminglanguages && news.ycombinator.com
+ extends abstractStringListMeasureParser
+
+// packages
+packageRepositoryParser
+ extends abstractUrlMeasureParser
+ description What is a URL to the package repository for this language?
+ single false
+
+centralPackageRepositoryCountParser
+ extends abstractCountMeasureParser
+ description How many central package repositories does this language have?
+
+packageInstallCountParser
+ description How many packages have been downloaded?
+ extends abstractCountMeasureParser
+packageCountParser
+ description How many packages are in the repository?
+ // A package is some code with a name and a namespace, shipped as an atomic unit, with an owner(s).
+ extends abstractCountMeasureParser
+packageAuthorsParser
+ extends abstractPopulationCountMeasureParser
+ description How many people contribute packages to this cpm?
+
+forLanguagesParser
+ description Which languages is this repository for?
+ extends abstractTrueBaseLinksMeasureParser
+
+// paradigms
+abstractParadigmParser
+ cells columnNameCell boolCell
+ extends abstractBooleanMeasureParser
+visualParadigmParser
+ extends abstractParadigmParser
+ description Is this a visual programming thing? Sometimes called "no code" or "low code"?
+
+// projectEuler
+projectEulerParser
+ extends abstractMultiwordGuidMeasureParser
+ description Is this language one of the ones listed on https://projecteuler.net/?
+ string sourceDomain projecteuler.net
+ contentKey id
+ memberCountParser
+  description How many project euler members use this language?
+  extends abstractAnnualPopulationCountMapParser
+
+// proposals
+proposalsParser
+ extends abstractUrlMeasureParser
+ description What is the URL to a the place where language proposals are made, if one exists?
+
+// pygments
+pygmentsHighlighterParser
+ extends abstractMultiwordGuidMeasureParser
+ description What is a url to a Pygments syntax highlighting class for this language https://pygments.org/?
+ string sourceDomain pygments.org
+ inScope fileExtensionsParser
+ contentKey id
+ filenameParser
+  description What is the Python filename implementing the highlighting for this language?
+  extends abstractTrueBaseMeasureParser
+  cells columnNameCell fileNameCell
+
+// pypl
+pyplParser
+ extends abstractMultiwordGuidMeasureParser
+ description What is this language's id on https://pypl.github.io?
+ string sourceDomain pypl.github.io
+
+// quineRelay
+quineRelayParser
+ extends abstractMultiwordGuidMeasureParser
+ description What is the name of this language in the Quine Relay project from here https://github.com/mame/quine-relay?
+ string sourceDomain github.com/mame/quine-relay
+
+// rankings
+rankCell
+ extends intCell
+abstractAnnualRankMapParser
+ catchAllParser annualRankParser
+ description A map of ranks, one per year.
+ extends abstractHashMapMeasureParser
+annualRankParser
+ cells yearCell rankCell
+ uniqueFirstWord
+
+// reddit
+// todo trim the trailing slash
+subredditParser
+ extends abstractUrlGuidMeasureParser
+ string sourceDomain reddit.com
+ contentKey url
+ single false
+ description What is a URL of a subreddit(s) for this language?
+ example
+  subreddit php
+ memberCountParser
+  extends abstractAnnualPopulationCountMapParser
+  description How many members in this subreddit?
+
+redditDiscussionParser
+ description What is a link to a related discussion on reddit?
+ extends abstractUrlMeasureParser
+ string sourceDomain reddit.com
+ single false
+
+// reference
+referenceParser
+ extends abstractUrlMeasureParser
+ description What is a URL to more info about this thing?
+ // You can add raw links and then auto "upgrade" them using some of the importer code.
+ single false
+
+// relationships
+abstractRelationshipParser
+ extends abstractTrueBaseLinksMeasureParser
+ // todo: remove need for sortKey in Grammar
+ string sortKey abstractRelationshipParser
+relatedParser
+ extends abstractRelationshipParser
+ description What languages are related?
+ // This serves as a catch all, and it is better to use a more specific relationship node such as "supersetOf".
+runsOnVmParser
+ extends abstractRelationshipParser
+ description What virtual machine(s) does this language run on? 
+influencedByParser
+ description What languages influenced this one?
+ extends abstractRelationshipParser
+successorOfParser
+ description Was this language launched as the successor of another?
+ extends abstractRelationshipParser
+subsetOfParser
+ description Is this language a subset of another?
+ extends abstractRelationshipParser
+implementationOfParser
+ description Is this language an implementation of another?
+ extends abstractRelationshipParser
+renamedToParser
+ description What is the new name of this language?
+ extends abstractRelationshipParser
+supersetOfParser
+ description Is this language a superset of another?
+ // If you specify this link then the superset language will inherit all features of subset language.
+ extends abstractRelationshipParser
+writtenInParser
+ description What language(s) is the main implementation written in?
+ extends abstractRelationshipParser
+extensionOfParser
+ description What language is this language an extension of?
+ extends abstractRelationshipParser
+forkOfParser
+ description What language is this language a fork of?
+ extends abstractRelationshipParser
+compilesToParser
+ description Which language(s) does this language primarily compile to?
+ extends abstractRelationshipParser
+inputLanguagesParser
+ description Which language(s) does this take as input? For compilers, what languages does this compile compile?
+ extends abstractRelationshipParser
+
+// releaseNotes
+releaseNotesUrlParser
+ extends abstractUrlMeasureParser
+ description What is the URL to the release notes or changelog for this language?
+
+// replit
+replitParser
+ extends abstractUrlGuidMeasureParser
+ description What is a URL to try this language on replit.com?
+ string sourceDomain replit.com
+
+// repoStats
+// Basics
+repoStatsParser
+ description What is the URL of the official GitHub repo for the project if it is hosted there?
+ extends abstractHashMapMeasureParser
+ inScope descriptionParser
+ firstCommitParser
+  extends abstractYearMeasureParser
+  description What year the first commit made in this git repo?
+ commitsParser
+  extends abstractCountMeasureParser
+  description How many commits to the repo?
+ committersParser
+  extends abstractCountMeasureParser
+  description How many committers to the repo?
+ filesParser
+  extends abstractCountMeasureParser
+  description How many files in the repo?
+
+// rijuRepl
+rijuReplParser
+ extends abstractUrlMeasureParser
+ description What is a URL to try this language on riju.codes?
+ string sourceDomain riju.codes
+ contentKey id
+ inScope fileExtensionsParser descriptionParser websiteParser gitRepoParser exampleParser
+
+// roadmap
+roadmapParser
+ extends abstractUrlMeasureParser
+ description What is the URL to a public roadmap page for this language, if one exists?
+
+// root
+pldbParser
+ root
+ description A truebase about programming languages and related concepts.
+ catchAllParser trueBaseErrorParser
+ // todo Should not have to manually list each node type here, but should be able to mark some tag as inscope. Should be fixed upstream in Jtree.
+ inScope blankLineParser abstractTrueBaseMeasureParser
+ cells fileNameCell
+ string fileExtension pldb
+ example
+  title TunaScript
+  type pl
+  appeared 2017
+  creators Sam Lam
+  example
+   Hello world
+ sortTemplate title appeared type isDead isPublicDomain screenshot photo demoVideo creators description website webRepl documentation devDocumentation ebook emailList spec reference cheatSheetUrl standsFor oldName renamedTo aka fileExtensions country nativeLanguage originCommunity domainName equation firstAnnouncement announcementMethod usesSemanticVersioning releaseNotesUrl proposals roadmap versions  abstractRelationshipParser  visualParadigm  abstractFeatureParser  lineCommentToken multiLineCommentTokens printToken assignmentToken stringToken booleanTokens includeToken keywords  example  gource abstractGitRepoUrlMeasureParser  repoStats  funFact  wikipedia  githubLanguage githubBigQuery  antlr monaco codeMirror pygmentsHighlighter linguistGrammarRepo languageServerProtocolProject  projectEuler helloWorldCollection leachim6 rosettaCode quineRelay  compilerExplorer rijuRepl replit tryItOnline  indeedJobs linkedInSkill stackOverflowSurvey annualReportsUrl officialBlogUrl eventsPageUrl faqPageUrl downloadPageUrl  abstractChatUrlMeasureParser subreddit meetup conference  hackerNewsDiscussions redditDiscussion  tiobe hopl esolang pypl  packageRepository packageCount packageAuthors packageInstallCount forLanguages  twitter ubuntuPackage gdbSupport jupyterKernel fileType wordRank isOpenSource githubCopilotOptimized centralPackageRepositoryCount  goodreads  isbndb  semanticScholar 
+
+// rosettaCode
+rosettaCodeParser
+ extends abstractUrlGuidMeasureParser
+ description What is a URL to this language on Rosetta Code - http://www.rosettacode.org/?
+ string sourceDomain rosettacode.org
+
+// semanticScholar
+semanticScholarParser
+ boolean fromCrawler true
+ extends abstractDelimitedValuesBlobMeasureParser
+ description What are papers about this language from Semantic Scholar?
+ string sourceDomain semanticscholar.org
+
+// sourcehut
+sourcehutRepoParser
+ description What is the URL of the official sourcehut repo for this project?
+ extends abstractGitRepoUrlMeasureParser
+ string sourceDomain sr.ht
+
+// spec
+specParser
+ extends abstractUrlMeasureParser
+ description What is a URL to the official spec for this language?
+
+// stackOverflowSurvey
+stackOverflowSurveyParser
+ extends abstractHashMapMeasureParser
+ description What is the summary of this language from the StackOverflow annual developer survey found here https://insights.stackoverflow.com/survey?
+ string sourceDomain insights.stackoverflow.com
+ stackOverflowSurveyYearParser
+  description What are the survey results for a particular year?
+  cells yearCell
+  pattern \d+
+  uniqueFirstWord
+  usersParser
+   extends abstractPopulationCountMeasureParser
+   description How many developers reported using this language?
+  medianSalaryParser
+   description What is the median salary reported by developers using this language?
+   extends abstractIntMeasureParser
+  fansParser
+   description How many developers reported wanting to learn this language?
+   extends abstractPopulationCountMeasureParser
+  percentageUsingParser
+   description What percentage of survey respondents report using this language?
+   // todo add a percentage column type that extends from float
+   extends abstractFloatMeasureParser
+
+// supportsBreakpoints
+supportsBreakpointsParser
+ extends abstractFeatureParser
+ description Does this language support breakpoints?
+ string title Breakpoints
+ string pseudoExample debugger;
+ string reference https://en.wikipedia.org/wiki/Breakpoint
+
+// tiobe
+tiobeParser
+ extends abstractMultiwordGuidMeasureParser
+ description What is the ID of this language in Tiobe's ranking of programming languages here: https://www.tiobe.com/tiobe-index/?
+ string sourceDomain tiobe.com
+ contentKey id
+ currentRankParser
+  description What is the current Tiobe rank of this language?
+  extends abstractIntMeasureParser
+
+// tryItOnline
+tryItOnlineParser
+ extends abstractOneWordGuidMeasureParser
+ description What is a link to try this language on https://tio.run?
+ string sourceDomain tio.run
+
+// twitter
+twitterParser
+ extends abstractUrlGuidMeasureParser
+ description What is a URL to the official Twitter account of this thing, if any?
+ string sourceDomain twitter.com
+ followersParser
+  description How many followers does the linked account have?
+  extends abstractPopulationCountMeasureParser
+
+// type
+typeCell
+ enum assembly pl barCodeFormat hardwareDescriptionLanguage knowledgeBase binaryDataFormat contractLanguage timeFormat computingMachine xmlFormat yamlFormat jsonFormat compiler grammarLanguage dataValidationLanguage application ir isa queryLanguage protocol os esolang template textMarkup characterEncoding idl library editor cloud textDataFormat visual plzoo interpreter notation binaryExecutable dataNotation stylesheetLanguage schema bytecode vm filesystem standard linter packageManager framework webApi feature optimizingCompiler numeralSystem hashFunction database font distribution headerLang dataStructure musicalNotation textEncodingFormat equation wikiMarkup decompiler configFormat diffFormat unixApplication webBrowser browserEngine
+ highlightScope constant.language
+typeParser
+ description Which category in PLDB's subjective ontology does this entity fit into?
+ cells columnNameCell typeCell
+ required
+ extends abstractEnumMeasureParser
+
+
+// ubuntu
+ubuntuPackageParser
+ extends abstractOneWordGuidMeasureParser
+ description What is the name of an Ubuntu package for this language from https://packages.ubuntu.com/, if any?
+ string sourceDomain ubuntu.com
+
+// versions
+versionCell
+ extends stringCell
+ description Version numbers.
+
+// todo Grammar should probably have pattern matching. And then we can detect semantic versions in the below.
+versionParser
+ description What is the version and release year?
+ // perhaps in the future we could get more specific to month. Maybe even include what new features were added.
+ cells yearCell versionCell
+
+versionsParser
+ description What are the release years and versions of this language?
+ extends abstractHashMapMeasureParser
+ catchAllParser versionParser
+
+usesSemanticVersioningParser
+ extends abstractBooleanMeasureParser
+ description Does the official release of the language use semantic versioning?
+
+
+// website
+websiteParser
+ description What is the URL of the official homepage for this language project?
+ extends abstractUrlMeasureParser
+webReplParser
+ extends abstractUrlMeasureParser
+ description What is a URL for an online repl of this language?
+ single false
+domainNameCell
+ extends stringCell
+domainNameParser
+ description What is the domain for this language's website if it has its own?
+ cells columnNameCell domainNameCell
+ extends abstractWordMeasureParser
+ contentKey name
+ registeredParser
+  extends abstractYearMeasureParser
+  description When was this domain first registered?
+ awisRankParser
+  extends abstractAnnualRankMapParser
+  description What is the Alexa Web Information Service (AWIS) domain ranking?
+  string sourceDomain aws.amazon.com
+
+// wikipedia
+// todo Scoping by file in Grammar lang would be really useful for this file. Also, multiple inheritance or mixins.
+wikipediaParser
+ inScope fileExtensionsParser exampleParser
+ extends abstractUrlMeasureParser
+ description What is the URL of this entity on Wikipedia, if and only if it has a page dedicated to it?
+ cells columnNameCell urlCell
+ string sourceDomain wikipedia.org
+ contentKey url
+ relatedParser
+  description What languages does Wikipedia have as related?
+  extends abstractTrueBaseLinksMeasureParser
+ summaryParser
+  description What is the text summary of the language from the Wikipedia page?
+  extends abstractStringMeasureParser
+ createdParser
+  extends abstractYearMeasureParser
+  description When was the *Wikipedia page* for this entity created?
+ appearedParser
+  extends abstractYearMeasureParser
+  description When does Wikipedia claim this entity first appeared?
+ dailyPageViewsParser
+  extends abstractCountMeasureParser
+  description How many page views per day does this Wikipedia page get? Useful as a signal for rankings. Available via WP api.
+ backlinksCountParser
+  extends abstractCountMeasureParser
+  description How many pages on WP link to this page?
+ revisionCountParser
+  extends abstractCountMeasureParser
+  description How many revisions does this page have?
+ pageIdParser
+  extends abstractIntMeasureParser
+  description What is the internal ID for this entity on WP?
+
+// zulip
+zulipParser
+ extends abstractChatUrlMeasureParser
+ description What is a URL to an official (or popular unofficial) Zulip for language development?

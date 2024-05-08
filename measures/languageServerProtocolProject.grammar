@@ -1,6 +1,0 @@
-languageServerProtocolProjectParser
- extends abstractUrlColumnParser
- inScope writtenInParser
- single false
- description What is the URL to a project implementing LSP for this language?
- string sourceDomain langserver.org

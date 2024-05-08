@@ -1,7 +1,0 @@
-hasAssignmentParser
- extends abstractFeatureParser
- description Does the language allow assigning values to variables?
- string title Assignment
- string pseudoExample name = "PLDB"
- string tokenKeyword assignmentToken
- string reference https://en.wikipedia.org/wiki/Assignment_(computer_science)

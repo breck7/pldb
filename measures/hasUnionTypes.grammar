@@ -1,6 +1,0 @@
-hasUnionTypesParser
- extends abstractFeatureParser
- description Does the language support union types?
- string title Union Types
- string pseudoExample any = string | number
- string reference https://en.wikipedia.org/wiki/Union_type

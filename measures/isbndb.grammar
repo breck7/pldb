@@ -1,5 +1,0 @@
-isbndbParser
- boolean fromCrawler true
- extends abstractDelimitedValuesBlobColumnParser
- description What are books about this language from ISBNdb?
- string sourceDomain isbndb.com

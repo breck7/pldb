@@ -1,8 +1,0 @@
-hasOctalsParser
- extends abstractFeatureParser
- description Does the language have a syntax for octal numbers?
- string title Octals
- string aka Base8
- string aka oct
- string pseudoExample 0o464063622
- string reference https://en.wikipedia.org/wiki/Octal

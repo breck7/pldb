@@ -1,9 +1,0 @@
-countryNameCell
- extends stringCell
-countryParser
- uniqueLine
- description What country was this language first developed in?
- boolean alwaysRecommended true
- catchAllCellType countryNameCell
- extends abstractTrueBaseColumnParser
- single false

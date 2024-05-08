@@ -1,6 +1,0 @@
-hasRegularExpressionsSyntaxSugarParser
- extends abstractFeatureParser
- description Does the language have special syntax for regular expressions?
- string title Regular Expression Syntax Sugar
- string reference https://pldb.io/concepts/regex.html
- string pseudoExample /pldb/

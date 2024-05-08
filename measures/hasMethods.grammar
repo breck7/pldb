@@ -1,6 +1,0 @@
-hasMethodsParser
- extends abstractFeatureParser
- description Does the language have methods on classes?
- string title Methods
- string pseudoExample pldbFile.downloadWebsite()
- string reference https://en.wikipedia.org/wiki/Method_(computer_programming)

@@ -1,7 +1,0 @@
-monacoParser
- extends abstractOneWordGuidColumnParser
- description What is a URL to a Monaco syntax highlighting package for this language?
- example
-  javascript
-   monaco javascript
- string sourceDomain microsoft.github.io/monaco-editor/

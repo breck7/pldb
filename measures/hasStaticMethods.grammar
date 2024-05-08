@@ -1,6 +1,0 @@
-hasStaticMethodsParser
- extends abstractFeatureParser
- description Can a class have static methods?
- string title Static Methods
- string reference https://www.geeksforgeeks.org/static-methods-vs-instance-methods-java/
- string pseudoExample static downloadPldb() {}
