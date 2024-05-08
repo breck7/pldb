@@ -15,20 +15,7 @@ import searchForm.scroll
 
 replace BASE_URL .
 
-nodejs
- const {PLDB} = require("../PLDB.js")
- module.exports = {
-      TOP_LANGS: PLDB.folder.topLanguages
-        .slice(0, 10)
-        .map(file => `<a href="./concepts/${file.permalink}">${file.title}</a>`)
-        .join(" · ")
-    }
-
-Top Languages
- link ./lists/top1000.html
- class pldbHomepageLink
-
-TOP_LANGS
+import topLangs.scroll
 
 <br><br>
 
