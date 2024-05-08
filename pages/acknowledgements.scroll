@@ -3,7 +3,16 @@ title Acknowledgements
 groups index
 
 nodejs
- module.exports = require("../../PLDB.js").PLDB.acknowledgementsImports
+ const fs = require("fs")
+ const path = require("path")
+ module.exports = {
+   CONTRIBUTORS_TABLE: JSON.parse(
+     fs.readFileSync(path.join(__dirname, "contributors.json"), "utf8")
+   )
+     .filter(item => item.login !== "breck7")
+     .map(item => `- ${item.login}\n ${item.html_url}`)
+     .join("\n")
+ }
 
 startColumns 4
 
@@ -21,12 +30,6 @@ The vast majority of the information on this site comes from other websites and 
  wrap ` span title="And if there's a link missing somewhere, please report a bug!"
 
 SOURCES_TABLE
-
-## NPM Packages
-
-Thank you to the developers building these packages used by PLDB:
-
-PACKAGES_TABLE
 
 ## Written In
 
