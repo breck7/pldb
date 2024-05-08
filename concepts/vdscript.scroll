@@ -1,9 +1,10 @@
-title vdscript
+import ../measures/conceptPage.scroll
+id vdscript
 appeared 2000
 type pl
 screenshot https://upload.wikimedia.org/wikipedia/commons/4/4c/VirtualDub_1.10.4_20210103.png
 creators Avery Lee
-description  A video capture utility for 32-bit and 64-bit Windows platforms
+conceptDescription  A video capture utility for 32-bit and 64-bit Windows platforms
 website https://virtualdub.org
 documentation https://virtualdub.org/docs/vdscript.txt
 reference https://sourceforge.net/projects/virtualdub

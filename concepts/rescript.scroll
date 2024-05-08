@@ -1,7 +1,8 @@
-title Rescript
+import ../measures/conceptPage.scroll
+id Rescript
 appeared 2020
 type pl
-description ReScript is a robustly typed language that compiles to efficient and human-readable JavaScript. It comes with a lightning fast compiler toolchain that scales to any codebase size.
+conceptDescription ReScript is a robustly typed language that compiles to efficient and human-readable JavaScript. It comes with a lightning fast compiler toolchain that scales to any codebase size.
 website https://rescript-lang.org/
 webRepl https://rescript-lang.org/try
 domainName rescript-lang.org

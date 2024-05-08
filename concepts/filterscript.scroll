@@ -1,7 +1,8 @@
-title Filterscript
+import ../measures/conceptPage.scroll
+id Filterscript
 appeared 2012
 type pl
-description A subset of RenderScript
+conceptDescription A subset of RenderScript
 
 example
  #pragma version(1)

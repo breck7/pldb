@@ -1,8 +1,9 @@
-title Filebench WML
+import ../measures/conceptPage.scroll
+id Filebench WML
 appeared 2011
 type pl
 creators Vasily Tarasov
-description Filebench is a file system and storage benchmark that can generate a large variety of workloads. Unlike typical benchmarks it is extremely flexible and allows to specify application's I/O behavior using its extensive Workload Model Language (WML).
+conceptDescription Filebench is a file system and storage benchmark that can generate a large variety of workloads. Unlike typical benchmarks it is extremely flexible and allows to specify application's I/O behavior using its extensive Workload Model Language (WML).
 website https://github.com/filebench/filebench/wiki
 reference https://github.com/filebench/filebench/wiki/Workload-model-language
 country United States

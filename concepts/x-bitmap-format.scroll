@@ -1,7 +1,8 @@
-title X BitMap
+import ../measures/conceptPage.scroll
+id X BitMap
 appeared 1989
 type textDataFormat
-description XBM files differ markedly from most image files in that they take the form of C source files.
+conceptDescription XBM files differ markedly from most image files in that they take the form of C source files.
 
 example
  #define test_width 16

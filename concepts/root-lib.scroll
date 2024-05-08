@@ -1,7 +1,8 @@
-title ROOT
+import ../measures/conceptPage.scroll
+id ROOT
 appeared 1994
 type library
-description A modular scientific software toolkit. It provides all the functionalities needed to deal with big data processing, statistical analysis, visualisation and storage. It is mainly written in C++ but integrated with other languages such as Python and R.
+conceptDescription A modular scientific software toolkit. It provides all the functionalities needed to deal with big data processing, statistical analysis, visualisation and storage. It is mainly written in C++ but integrated with other languages such as Python and R.
 website https://root.cern.ch/
 country Switzerland
 originCommunity Conseil européen pour la recherche nucléaire or CERN

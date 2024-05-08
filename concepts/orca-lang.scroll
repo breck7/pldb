@@ -1,8 +1,9 @@
-title orca-lang
+import ../measures/conceptPage.scroll
+id orca-lang
 appeared 2014
 type pl
 creators Karl Robillard
-description Orca is a REBOL-like interpreter which can be used under the terms of either the GPL or LGPL. The interpreter is a C library so that C/C++ applications can use Orca as an embedded scripting system.
+conceptDescription Orca is a REBOL-like interpreter which can be used under the terms of either the GPL or LGPL. The interpreter is a C library so that C/C++ applications can use Orca as an embedded scripting system.
 website https://sourceforge.net/p/urlan/wiki/OrcaProject/
 country Unknown
 originCommunity https://sourceforge.net/p/urlan/mailman/urlan-orca

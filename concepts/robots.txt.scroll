@@ -1,8 +1,9 @@
-title Robots.txt
+import ../measures/conceptPage.scroll
+id Robots.txt
 appeared 1994
 type configFormat
 creators Martijn Koster
-description A robots.txt file tells search engine crawlers which URLs the crawler can access on your site.
+conceptDescription A robots.txt file tells search engine crawlers which URLs the crawler can access on your site.
 reference https://developers.google.com/search/docs/advanced/robots/intro
 reference https://en.wikipedia.org/wiki/Robots_exclusion_standard
 country United Kingdom

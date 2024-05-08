@@ -1,7 +1,8 @@
-title miniml
+import ../measures/conceptPage.scroll
+id miniml
 appeared 2013
 type plzoo
-description eager, functional, recursive functions, statically typed, compiler, abstract machine
+conceptDescription eager, functional, recursive functions, statically typed, compiler, abstract machine
 website http://plzoo.andrej.com/language/miniml.html
 reference https://github.com/andrejbauer/plzoo
 country Slovenia

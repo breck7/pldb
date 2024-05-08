@@ -1,8 +1,9 @@
-title lllpg
+import ../measures/conceptPage.scroll
+id lllpg
 appeared 2012
 type library
 creators David Piepgrass
-description LLLPG is a recursive-decent LL(k) parser generator for C# that generates efficient code and integrates with Visual Studio.
+conceptDescription LLLPG is a recursive-decent LL(k) parser generator for C# that generates efficient code and integrates with Visual Studio.
 website http://ecsharp.net/lllpg/
 country Canada
 originCommunity https://github.com/qwertie/ecsharp/issues

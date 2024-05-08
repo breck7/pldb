@@ -1,7 +1,8 @@
-title Ion
+import ../measures/conceptPage.scroll
+id Ion
 appeared 2016
 type idl
-description Amazon Ion is a richly-typed, self-describing, hierarchical data serialization format offering interchangeable binary and text representations. The text format (a superset of JSON) is easy to read and author, supporting rapid prototyping. The binary representation is efficient to store, transmit, and skip-scan parse.
+conceptDescription Amazon Ion is a richly-typed, self-describing, hierarchical data serialization format offering interchangeable binary and text representations. The text format (a superset of JSON) is easy to read and author, supporting rapid prototyping. The binary representation is efficient to store, transmit, and skip-scan parse.
 reference https://amzn.github.io/ion-docs/
 aka Amazon Ion
 country United States

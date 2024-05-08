@@ -1,8 +1,9 @@
-title visdown
+import ../measures/conceptPage.scroll
+id visdown
 appeared 2016
 type textMarkup
 creators Amit Kapoor
-description Write visualisation using a simple declarative markup like you would write code. Just wrap it in fenced block (three backticks) and mark the language as `vis`.
+conceptDescription Write visualisation using a simple declarative markup like you would write code. Just wrap it in fenced block (three backticks) and mark the language as `vis`.
 website https://visdown.com/
 domainName visdown.com
  registered 2017

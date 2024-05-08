@@ -1,7 +1,8 @@
-title Linux Kernel Module
+import ../measures/conceptPage.scroll
+id Linux Kernel Module
 appeared 1996
 type application
-description As of Linux kernel version 2.6, KO files are used in place of .O files and contain additional information that the kernel uses to load modules. The Linux program modpost can be used to convert O files into KO files.
+conceptDescription As of Linux kernel version 2.6, KO files are used in place of .O files and contain additional information that the kernel uses to load modules. The Linux program modpost can be used to convert O files into KO files.
 reference https://www.tldp.org/LDP/lkmpg/2.6/lkmpg.pdf
 fileExtensions ko
 country United States

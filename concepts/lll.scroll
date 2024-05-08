@@ -1,7 +1,8 @@
-title Low Level Lisp
+import ../measures/conceptPage.scroll
+id Low Level Lisp
 appeared 2014
 type pl
-description LLL is one of the original Ethereum smart contract programming languages and provides a different perspective and programming discipline when compared to the ubiquitous Solidity language. Lisp Like Language (LLL) is a low level language similar to Assembly. It is meant to be very simple and minimalistic; essentially just a tiny wrapper over coding in EVM directly.
+conceptDescription LLL is one of the original Ethereum smart contract programming languages and provides a different perspective and programming discipline when compared to the ubiquitous Solidity language. Lisp Like Language (LLL) is a low level language similar to Assembly. It is meant to be very simple and minimalistic; essentially just a tiny wrapper over coding in EVM directly.
 reference https://lll-docs.readthedocs.io/en/latest/lll_introduction.html
 country United Kingdom
 originCommunity https://github.com/benjaminion/LLL_docs/issues

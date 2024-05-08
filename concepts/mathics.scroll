@@ -1,7 +1,8 @@
-title mathics
+import ../measures/conceptPage.scroll
+id mathics
 appeared 2012
 type pl
-description Mathics is a free, general-purpose online computer algebra system featuring Mathematica-compatible syntax and functions. It is backed by highly extensible Python code, relying on SymPy for most mathematical tasks.
+conceptDescription Mathics is a free, general-purpose online computer algebra system featuring Mathematica-compatible syntax and functions. It is backed by highly extensible Python code, relying on SymPy for most mathematical tasks.
 website https://mathics.github.io/
 reference https://news.ycombinator.com/item?id=11459186
 country United States

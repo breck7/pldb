@@ -1,8 +1,9 @@
-title hacspec
+import ../measures/conceptPage.scroll
+id hacspec
 appeared 2018
 type pl
 creators Franziskus Kiefer
-description A specification language for crypto primitives and more in Rust.
+conceptDescription A specification language for crypto primitives and more in Rust.
 website https://hacspec.org
 country Germany
 originCommunity https://github.com/hacspec/hacspec/discussions

@@ -1,8 +1,9 @@
-title gogs-editor
+import ../measures/conceptPage.scroll
+id gogs-editor
 appeared 2014
 type editor
 creators Joe Chen
-description Gogs is a painless self-hosted Git service
+conceptDescription Gogs is a painless self-hosted Git service
 website https://gogs.io/
 webRepl https://try.gogs.io/user/login
 documentation https://gogs.io/docs

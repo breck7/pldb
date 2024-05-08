@@ -1,8 +1,9 @@
-title Djot
+import ../measures/conceptPage.scroll
+id Djot
 appeared 2022
 type textMarkup
 creators John MacFarlane
-description  A light markup language
+conceptDescription  A light markup language
 website https://djot.net
 webRepl https://djot.net/playground/
 documentation https://github.com/jgm/djot/blob/main/README.md

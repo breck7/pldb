@@ -1,7 +1,8 @@
-title popr
+import ../measures/conceptPage.scroll
+id popr
 appeared 2012
 type pl
-description <a href='https://github.com/HackerFoo/poprc'>Popr</a> applies concatenative programming to types as well as values, striving for purity and correctness, and efficient execution.
+conceptDescription <a href='https://github.com/HackerFoo/poprc'>Popr</a> applies concatenative programming to types as well as values, striving for purity and correctness, and efficient execution.
 website https://popr.dev
 webRepl http://hackerfoo.com/eval.html
 country United States

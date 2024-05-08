@@ -1,7 +1,8 @@
-title mir
+import ../measures/conceptPage.scroll
+id mir
 appeared 2015
 type ir
-description MIR is a human readable serialization format that is used to represent LLVM’s machine specific intermediate representation. The MIR serialization format uses a YAML container.
+conceptDescription MIR is a human readable serialization format that is used to represent LLVM’s machine specific intermediate representation. The MIR serialization format uses a YAML container.
 website http://llvm.org/docs/MIRLangRef.html
 country United States
 originCommunity LLVM Foundation

@@ -1,8 +1,9 @@
-title gitignore
+import ../measures/conceptPage.scroll
+id gitignore
 appeared 2005
 type configFormat
 creators Linus Torvalds
-description A simple application specific language used to tell git which files to ignore.
+conceptDescription A simple application specific language used to tell git which files to ignore.
 
 example
  .DS_Store

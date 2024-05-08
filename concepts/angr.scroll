@@ -1,7 +1,8 @@
-title angr
+import ../measures/conceptPage.scroll
+id angr
 appeared 2015
 type decompiler
-description angr is an open-source binary analysis platform for Python. It combines both static and dynamic symbolic ("concolic") analysis, providing tools to solve a variety of tasks.
+conceptDescription angr is an open-source binary analysis platform for Python. It combines both static and dynamic symbolic ("concolic") analysis, providing tools to solve a variety of tasks.
 website https://angr.io/
 country United States
 originCommunity University of California, Santa Barbara && Arizona State University

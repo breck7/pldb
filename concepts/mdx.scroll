@@ -1,8 +1,9 @@
-title MDX
+import ../measures/conceptPage.scroll
+id MDX
 appeared 2017
 type textMarkup
 creators John Otander
-description MDX allows you to use JSX in your markdown content. You can import components, such as interactive charts or alerts, and embed them within your content.
+conceptDescription MDX allows you to use JSX in your markdown content. You can import components, such as interactive charts or alerts, and embed them within your content.
 website https://mdxjs.com/
 webRepl https://mdxjs.com/playground/
 country Various

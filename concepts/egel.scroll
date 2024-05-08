@@ -1,7 +1,8 @@
-title egel
+import ../measures/conceptPage.scroll
+id egel
 appeared 2016
 type interpreter
-description <a href='https://egel-lang.github.io/'>Egel</a> An interpreter for eager untyped combinator rewriting implemented in C++.
+conceptDescription <a href='https://egel-lang.github.io/'>Egel</a> An interpreter for eager untyped combinator rewriting implemented in C++.
 website https://egel-lang.github.io/
 country Unknown
 originCommunity https://github.com/egel-lang

@@ -1,7 +1,8 @@
-title ROS Message
+import ../measures/conceptPage.scroll
+id ROS Message
 appeared 2010
 type idl
-description The format of this language is simple: a message description is a list of data field descriptions and constant definitions on separate lines.
+conceptDescription The format of this language is simple: a message description is a list of data field descriptions and constant definitions on separate lines.
 reference http://wiki.ros.org/msg
 fileExtensions msg
 country United States and Canada and Australia

@@ -1,7 +1,8 @@
-title plink-bim-format
+import ../measures/conceptPage.scroll
+id plink-bim-format
 appeared 2007
 type textDataFormat
-description Extended variant information file accompanying a .bed binary genotype table.
+conceptDescription Extended variant information file accompanying a .bed binary genotype table.
 website https://www.cog-genomics.org/plink2/formats#bim
 reference https://www.sciencedirect.com/science/article/pii/S0002929707613524
 fileExtensions bim

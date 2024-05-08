@@ -1,8 +1,9 @@
-title Mojo
+import ../measures/conceptPage.scroll
+id Mojo
 appeared 2022
 type pl
 creators Chris Lattner
-description Mojo combines the usability of Python with the performance of C, unlocking unparalleled programmability of AI hardware and extensibility of AI models.
+conceptDescription Mojo combines the usability of Python with the performance of C, unlocking unparalleled programmability of AI hardware and extensibility of AI models.
 website https://www.modular.com/mojo
 documentation https://docs.modular.com/mojo/
 fileExtensions mojo

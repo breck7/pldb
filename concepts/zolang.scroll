@@ -1,8 +1,9 @@
-title zolang
+import ../measures/conceptPage.scroll
+id zolang
 appeared 2018
 type pl
 creators Þorvaldur Rúnarsson
-description A programming language to generate code for multiple platforms
+conceptDescription A programming language to generate code for multiple platforms
 
 example
  describe Person {

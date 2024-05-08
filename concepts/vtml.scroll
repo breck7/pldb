@@ -1,7 +1,8 @@
-title Visual Tool Markup Language
+import ../measures/conceptPage.scroll
+id Visual Tool Markup Language
 appeared 1997
 type pl
-description VTML is a family of markup languages used to extend the IDE of HomeSite and ColdFusion Studio. Using VTML you can define your own Tag Insight and Tag Editors, which is very helpful when developing your own custom tags, since you can simply put the VTML files inside your distribution, enabling your custom tags to tightly integrate into the ColdFusion Studio IDE. As the name (Markup Language) might suggest, VTML is a tag-based language (CFML is also tag-based) and therefore easy to learn.
+conceptDescription VTML is a family of markup languages used to extend the IDE of HomeSite and ColdFusion Studio. Using VTML you can define your own Tag Insight and Tag Editors, which is very helpful when developing your own custom tags, since you can simply put the VTML files inside your distribution, enabling your custom tags to tightly integrate into the ColdFusion Studio IDE. As the name (Markup Language) might suggest, VTML is a tag-based language (CFML is also tag-based) and therefore easy to learn.
 reference http://www.ulitzer.com/node/41770
 
 example

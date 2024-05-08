@@ -1,7 +1,8 @@
-title specrtl
+import ../measures/conceptPage.scroll
+id specrtl
 appeared 2011
 type pl
-description specRTL (Spec Register Transfer Language) is a language designed to replace the existing RTL form machine descriptions which along with C Code forms the backend of GCC.
+conceptDescription specRTL (Spec Register Transfer Language) is a language designed to replace the existing RTL form machine descriptions which along with C Code forms the backend of GCC.
 reference https://www.cse.iitb.ac.in/grc/software/specRTL/specRTL.pdf
 country India
 originCommunity Indian Institute of Technology, Bombay

@@ -1,8 +1,9 @@
-title CodeQL
+import ../measures/conceptPage.scroll
+id CodeQL
 appeared 2018
 type queryLanguage
 creators Pavel Avgustinov
-description CodeQL let's you query code as if it were data.
+conceptDescription CodeQL let's you query code as if it were data.
 website https://codeql.github.com/
 reference https://www.cyberark.com/resources/threat-research-blog/make-memcpy-safe-again-codeql
 fileExtensions ql

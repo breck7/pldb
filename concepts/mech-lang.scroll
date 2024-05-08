@@ -1,8 +1,9 @@
-title Mech
+import ../measures/conceptPage.scroll
+id Mech
 appeared 2018
 type pl
 creators Corey Montella
-description Mech is a language for developing data-driven, reactive systems like animations, games, and robots. It makes composing, transforming, and distributing data easy, allowing you to focus on the essential complexity of your problem.
+conceptDescription Mech is a language for developing data-driven, reactive systems like animations, games, and robots. It makes composing, transforming, and distributing data easy, allowing you to focus on the essential complexity of your problem.
 website http://mech-lang.org
 webRepl http://try.mech-lang.org/
 reference https://docs.google.com/spreadsheets/d/12sTu7RT-s_QlAupY1v-3DfI1Mm9NEX5YMWWTDAKHLfc/edit#gid=0

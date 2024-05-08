@@ -1,8 +1,9 @@
-title Crema
+import ../measures/conceptPage.scroll
+id Crema
 appeared 2014
 type pl
 creators Jacob Torrey and Jared Wright
-description Crema is a LLVM front-end that aims to specifically execute in sub-Turing Complete space. Designed to be simple to learn, and practical for the majority of programming tasks needed, Crema can restrict the computational complexity of the program to the minimum needed to improve security.
+conceptDescription Crema is a LLVM front-end that aims to specifically execute in sub-Turing Complete space. Designed to be simple to learn, and practical for the majority of programming tasks needed, Crema can restrict the computational complexity of the program to the minimum needed to improve security.
 website https://github.com/ainfosec/crema/wiki
 country United States
 originCommunity Assured Information Security, Inc.

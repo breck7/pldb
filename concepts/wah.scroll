@@ -1,8 +1,9 @@
-title wah
+import ../measures/conceptPage.scroll
+id wah
 appeared 2017
 type pl
 creators Tom MacWright
-description a slightly higher-level language superset of webassembly
+conceptDescription a slightly higher-level language superset of webassembly
 
 compilesTo wasm
 supersetOf wasm

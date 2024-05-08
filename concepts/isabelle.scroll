@@ -1,7 +1,8 @@
-title Isabelle
+import ../measures/conceptPage.scroll
+id Isabelle
 appeared 1986
 type pl
-description Isabelle is a generic proof assistant. It allows mathematical formulas to be expressed in a formal language and provides tools for proving those formulas in a logical calculus. Isabelle was originally developed at the University of Cambridge and Technische Universität München, but now includes numerous contributions from institutions and individuals worldwide.
+conceptDescription Isabelle is a generic proof assistant. It allows mathematical formulas to be expressed in a formal language and provides tools for proving those formulas in a logical calculus. Isabelle was originally developed at the University of Cambridge and Technische Universität München, but now includes numerous contributions from institutions and individuals worldwide.
 website http://isabelle.in.tum.de/
 reference https://books.google.com/books?id=xwdqCQAAQBAJ&dq=isabelle+language+proof&lr=
 fileExtensions ROOT

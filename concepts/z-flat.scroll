@@ -1,8 +1,9 @@
-title Z-flat
+import ../measures/conceptPage.scroll
+id Z-flat
 appeared 2021
 type pl
 creators Adam Hutchings
-description Z-flat is a compiled, statically-typed programming language. Its design goals are intuitive syntax, type-safety, and easy library management.
+conceptDescription Z-flat is a compiled, statically-typed programming language. Its design goals are intuitive syntax, type-safety, and easy library management.
 fileExtensions zf
 
 example

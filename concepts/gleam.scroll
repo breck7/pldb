@@ -1,8 +1,9 @@
-title gleam
+import ../measures/conceptPage.scroll
+id gleam
 appeared 2016
 type pl
 creators Louis Pilfold
-description Gleam is a statically typed functional programming language for building scalable concurrent systems. It compiles to Erlang and has straightforward interop with other BEAM languages such as Erlang, Elixir and LFE.
+conceptDescription Gleam is a statically typed functional programming language for building scalable concurrent systems. It compiles to Erlang and has straightforward interop with other BEAM languages such as Erlang, Elixir and LFE.
 website https://gleam.run/
 reference https://news.ycombinator.com/item?id=22902462
 country United States and United Kingdom

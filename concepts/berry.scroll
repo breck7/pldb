@@ -1,8 +1,9 @@
-title Berry
+import ../measures/conceptPage.scroll
+id Berry
 appeared 2018
 type pl
 creators 官文亮
-description Berry is a ultra-lightweight dynamically typed embedded scripting language. It is designed for lower-performance embedded devices. The Berry interpreter-core's code size is less than 40KiB and can run on less than 4KiB heap (on ARM Cortex M4 CPU, Thumb ISA and ARMCC compiler).
+conceptDescription Berry is a ultra-lightweight dynamically typed embedded scripting language. It is designed for lower-performance embedded devices. The Berry interpreter-core's code size is less than 40KiB and can run on less than 4KiB heap (on ARM Cortex M4 CPU, Thumb ISA and ARMCC compiler).
 website https://github.com/berry-lang/berry
 country China
 originCommunity https://github.com/berry-lang/

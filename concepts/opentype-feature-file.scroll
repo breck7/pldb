@@ -1,7 +1,8 @@
-title OpenType Feature File
+import ../measures/conceptPage.scroll
+id OpenType Feature File
 appeared 1996
 type application
-description An OpenType feature file is a text file that contains the typographic layout feature specifications for an OpenType font in an easy-to-read format. It may also contain override values for certain fields in the font tables. It is read in during the creation or editing of an OpenType font.
+conceptDescription An OpenType feature file is a text file that contains the typographic layout feature specifications for an OpenType font in an easy-to-read format. It may also contain override values for certain fields in the font tables. It is read in during the creation or editing of an OpenType font.
 reference https://en.wikipedia.org/wiki/OpenType
 country United States
 originCommunity Microsoft && Adobe Systems

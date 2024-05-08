@@ -1,8 +1,9 @@
-title Zeta
+import ../measures/conceptPage.scroll
+id Zeta
 appeared 2008
 type pl
 creators Russ Cox and Tom Bergan† and Austin T. Clements and Frans Kaashoek and Eddie Kohler
-description A prototype implementation of xoc in zeta, a C-like interpreted procedural language with first-class functions. Zeta makes writing extensions easier than standard C, although extension writers must adjust to a slightly different language. Our implementation runs zeta using a bytecode interpreter and is therefore limited in its performance; we plan to replace the bytecode interpreter with compilation to machine code, which should reduce the compilation time for a large program from tens of seconds to a fraction of a second.
+conceptDescription A prototype implementation of xoc in zeta, a C-like interpreted procedural language with first-class functions. Zeta makes writing extensions easier than standard C, although extension writers must adjust to a slightly different language. Our implementation runs zeta using a bytecode interpreter and is therefore limited in its performance; we plan to replace the bytecode interpreter with compilation to machine code, which should reduce the compilation time for a large program from tens of seconds to a fraction of a second.
 reference https://pdos.csail.mit.edu/archive/xoc/
 reference https://swtch.com/~rsc/papers/xoc-asplos2008.pdf
 originCommunity MIT CSAIL && UCLA

@@ -1,8 +1,9 @@
-title kitten
+import ../measures/conceptPage.scroll
+id kitten
 appeared 2012
 type pl
 creators Jon Purdy
-description <a href='http://kittenlang.org'>Kitten</a> is a statically typed concatenative language with effect types.
+conceptDescription <a href='http://kittenlang.org'>Kitten</a> is a statically typed concatenative language with effect types.
 website http://kittenlang.org/
 country United States
 originCommunity https://github.com/evincarofautumn/kitten/issues

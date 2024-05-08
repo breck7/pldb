@@ -1,8 +1,9 @@
-title Superjson
+import ../measures/conceptPage.scroll
+id Superjson
 appeared 2014
 type dataNotation
 creators Matthew Mueller
-description A superset of JSON adding: undefined bigint Date RegExp Set Map Error
+conceptDescription A superset of JSON adding: undefined bigint Date RegExp Set Map Error
 
 supersetOf json
 

@@ -1,8 +1,9 @@
-title Boron
+import ../measures/conceptPage.scroll
+id Boron
 appeared 2009
 type pl
 creators Karl Robillard
-description Boron is a scripting language similar to REBOL. The interpreter is a C library which may be copied under the terms of the LGPLv3.
+conceptDescription Boron is a scripting language similar to REBOL. The interpreter is a C library which may be copied under the terms of the LGPLv3.
 website http://urlan.sourceforge.net/boron/
 fileExtensions b sb
 

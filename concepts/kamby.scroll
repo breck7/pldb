@@ -1,8 +1,9 @@
-title Kamby
+import ../measures/conceptPage.scroll
+id Kamby
 appeared 2022
 type pl
 creators Henrique Gogó
-description A small, embeddable and convenient language for who want to use and understand what is happening behind the scenes. The core is just ~400LOC and binary has just 20kb
+conceptDescription A small, embeddable and convenient language for who want to use and understand what is happening behind the scenes. The core is just ~400LOC and binary has just 20kb
 website https://kamby.org/
 webRepl https://kamby.org/
 reference https://news.ycombinator.com/item?id=32761113

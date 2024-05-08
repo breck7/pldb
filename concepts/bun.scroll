@@ -1,8 +1,9 @@
-title Bun
+import ../measures/conceptPage.scroll
+id Bun
 appeared 2021
 type vm
 creators Jarred Sumner
-description Bundle, transpile, install and run JavaScript & TypeScript projects — all in Bun. Bun is a new JavaScript runtime with a native bundler, transpiler, task runner and npm client built-in.
+conceptDescription Bundle, transpile, install and run JavaScript & TypeScript projects — all in Bun. Bun is a new JavaScript runtime with a native bundler, transpiler, task runner and npm client built-in.
 website https://bun.sh/
 reference https://news.ycombinator.com/item?id=31993429
 country Various

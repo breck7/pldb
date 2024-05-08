@@ -1,7 +1,8 @@
-title myrddin
+import ../measures/conceptPage.scroll
+id myrddin
 appeared 2016
 type pl
-description <a href='https://myrlang.org'>Myrddin</a> is a systems programming language. Myrddin emphasizes control, simplicity, a clear mental model and predictable, transparent behavior. It features strong type checking, generics, type inference, closures, and traits. It aims to fit a similar niche as C, but with fewer bullets in your feet.
+conceptDescription <a href='https://myrlang.org'>Myrddin</a> is a systems programming language. Myrddin emphasizes control, simplicity, a clear mental model and predictable, transparent behavior. It features strong type checking, generics, type inference, closures, and traits. It aims to fit a similar niche as C, but with fewer bullets in your feet.
 website https://myrlang.org
 country United States
 originCommunity https://github.com/oridb/mc/issues

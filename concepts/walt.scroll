@@ -1,7 +1,8 @@
-title walt
+import ../measures/conceptPage.scroll
+id walt
 appeared 2017
 type pl
-description Walt is a JavaScript-like syntax for WebAssembly text format
+conceptDescription Walt is a JavaScript-like syntax for WebAssembly text format
 website https://ballercat.github.io/walt/
 
 compilesTo wasm

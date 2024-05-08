@@ -1,7 +1,8 @@
-title KiCad Legacy Layout
+import ../measures/conceptPage.scroll
+id KiCad Legacy Layout
 appeared 1992
 type application
-description KiCad writes all files in human readable ASCII. This makes manipulation by hand and scripting very easy.
+conceptDescription KiCad writes all files in human readable ASCII. This makes manipulation by hand and scripting very easy.
 reference http://kicad-pcb.org/help/file-formats/d
 fileExtensions sch lib brd kicad_pcb kicad_wks kicad_mod
 country France

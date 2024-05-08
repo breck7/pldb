@@ -1,7 +1,8 @@
-title Cell
+import ../measures/conceptPage.scroll
+id Cell
 appeared 2017
 type pl
-description Cell is a very high-level embeddable language. Cell's data model combines a staple of functional programming, algebraic data types, with relations and other ideas from relational databases.
+conceptDescription Cell is a very high-level embeddable language. Cell's data model combines a staple of functional programming, algebraic data types, with relations and other ideas from relational databases.
 website http://cell-lang.net/
 country Various
 originCommunity https://github.com/cell-lang

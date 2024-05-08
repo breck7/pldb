@@ -1,7 +1,8 @@
-title plink-map-format
+import ../measures/conceptPage.scroll
+id plink-map-format
 appeared 2007
 type textDataFormat
-description Variant information file accompanying a .ped text pedigree + genotype table.
+conceptDescription Variant information file accompanying a .ped text pedigree + genotype table.
 website https://www.cog-genomics.org/plink2/formats#map
 reference https://www.sciencedirect.com/science/article/pii/S0002929707613524
 fileExtensions map

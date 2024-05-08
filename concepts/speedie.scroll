@@ -1,8 +1,9 @@
-title Speedie
+import ../measures/conceptPage.scroll
+id Speedie
 appeared 2022
 type pl
 creators Theodore H Smith
-description "General-purpose modern and clean object-oriented programming language."
+conceptDescription "General-purpose modern and clean object-oriented programming language."
 website http://github.com/gamblevore/speedie
 webRepl http://github.com/gamblevore/speedie
 documentation https://github.com/gamblevore/speedie/blob/main/Documentation

@@ -1,7 +1,8 @@
-title CIR
+import ../measures/conceptPage.scroll
+id CIR
 appeared 2020
 type ir
-description Clang IR (CIR) is a new IR for Clang.
+conceptDescription Clang IR (CIR) is a new IR for Clang.
 website https://facebookincubator.github.io/clangir/
 reference https://news.ycombinator.com/item?id=31904624
 reference https://discourse.llvm.org/t/rfc-an-mlir-based-clang-ir-cir/63319

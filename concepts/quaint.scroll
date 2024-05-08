@@ -1,8 +1,9 @@
-title Quaint
+import ../measures/conceptPage.scroll
+id Quaint
 appeared 2014
 type textMarkup
 creators Olivier Breuleux
-description Quaint is a markup language that you can use to write documents. It is similar to Markdown, but it is more powerful and more extensible.
+conceptDescription Quaint is a markup language that you can use to write documents. It is similar to Markdown, but it is more powerful and more extensible.
 website http://breuleux.github.io/quaint/
 webRepl http://breuleux.github.io/quaint/tryit.html
 country Canada

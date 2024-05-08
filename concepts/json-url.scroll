@@ -1,8 +1,9 @@
-title json->url
+import ../measures/conceptPage.scroll
+id json->url
 appeared 2017
 type jsonFormat
 creators Tim Bray
-description JSON→URL is a language-independent data interchange format for the JSON data model suitable for use within a URL/URI query string. It is defined by an open specification, though not through a standards body.
+conceptDescription JSON→URL is a language-independent data interchange format for the JSON data model suitable for use within a URL/URI query string. It is defined by an open specification, though not through a standards body.
 website https://jsonurl.org
 webRepl https://jsonurl.org/#sandbox
 documentation https://github.com/jsonurl/specification

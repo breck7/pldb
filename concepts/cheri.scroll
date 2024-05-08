@@ -1,7 +1,8 @@
-title Cheri
+import ../measures/conceptPage.scroll
+id Cheri
 appeared 2010
 type isa
-description CHERI extends conventional hardware Instruction-Set Architectures (ISAs) with new architectural features to enable fine-grained memory protection and highly scalable software compartmentalization.
+conceptDescription CHERI extends conventional hardware Instruction-Set Architectures (ISAs) with new architectural features to enable fine-grained memory protection and highly scalable software compartmentalization.
 website https://www.cl.cam.ac.uk/research/security/ctsrd/cheri/
 standsFor Capability Hardware Enhanced RISC Instructions
 country England

@@ -1,8 +1,9 @@
-title Scoop
+import ../measures/conceptPage.scroll
+id Scoop
 appeared 2013
 type packageManager
 creators Luke Sampson
-description A command-line installer for Windows
+conceptDescription A command-line installer for Windows
 website https://scoop.sh/
 country Australia
 originCommunity https://github.com/ScoopInstaller

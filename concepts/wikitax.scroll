@@ -1,7 +1,8 @@
-title Wikitax
+import ../measures/conceptPage.scroll
+id Wikitax
 appeared 2002
 type wikiMarkup
-description Wikitax: a plaintext markup syntax to indicate semantical, display, and formatting information for text in CMSes, wikies, and blogs.
+conceptDescription Wikitax: a plaintext markup syntax to indicate semantical, display, and formatting information for text in CMSes, wikies, and blogs.
 reference https://meta.wikimedia.org/wiki/Wikitax
 
 related mediawiki

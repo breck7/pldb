@@ -1,8 +1,9 @@
-title SQRL
+import ../measures/conceptPage.scroll
+id SQRL
 appeared 2018
 type queryLanguage
 creators Josh Yudaken and Pete Hunt and Julian Tempelsman and Paul Mou and Yunjing Xu and David Newman
-description SQRL was the language designed by Smyte, and later acquired by Twitter in 2018. It is a safe, stateful language for event streams, designed to make it easy to enforce anti-abuse rules.
+conceptDescription SQRL was the language designed by Smyte, and later acquired by Twitter in 2018. It is a safe, stateful language for event streams, designed to make it easy to enforce anti-abuse rules.
 website https://sqrl-lang.github.io/sqrl/
 webRepl https://websqrl.vercel.app/twitter
 reference https://websqrl.vercel.app/twitter

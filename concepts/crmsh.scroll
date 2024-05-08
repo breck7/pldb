@@ -1,8 +1,9 @@
-title crmsh
+import ../measures/conceptPage.scroll
+id crmsh
 appeared 2008
 type pl
 creators Dejan Muhamedagic
-description crmsh is a cluster management shell for the Pacemaker High Availability stack.
+conceptDescription crmsh is a cluster management shell for the Pacemaker High Availability stack.
 website http://crmsh.github.io/
 country Various
 originCommunity https://github.com/ClusterLabs/

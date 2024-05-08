@@ -1,8 +1,9 @@
-title Makefile
+import ../measures/conceptPage.scroll
+id Makefile
 appeared 1976
 type pl
 creators Stuart Feldman
-description Lines that begin with TAB are assumed to be part of a recipe (so they are shell scripts and passed to the shell for parsing), and lines that do not begin with TAB cannot be part of a recipe (so they cannot be shell scripts: they must be make syntax).
+conceptDescription Lines that begin with TAB are assumed to be part of a recipe (so they are shell scripts and passed to the shell for parsing), and lines that do not begin with TAB cannot be part of a recipe (so they cannot be shell scripts: they must be make syntax).
 website https://www.gnu.org/software/make/
 documentation https://www.gnu.org/software/make/manual/make.html
 country United States

@@ -1,8 +1,9 @@
-title PRQL
+import ../measures/conceptPage.scroll
+id PRQL
 appeared 2022
 type queryLanguage
 creators Maximilian Roos
-description PRQL is a modern language for transforming data — a simple, powerful, pipelined SQL replacement
+conceptDescription PRQL is a modern language for transforming data — a simple, powerful, pipelined SQL replacement
 website https://prql-lang.org/
 reference https://news.ycombinator.com/item?id=31897430
 reference https://news.ycombinator.com/item?id=30060784

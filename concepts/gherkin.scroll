@@ -1,7 +1,8 @@
-title Gherkin
+import ../measures/conceptPage.scroll
+id Gherkin
 appeared 2008
 type pl
-description Executable specifications
+conceptDescription Executable specifications
 website https://docs.cucumber.io/gherkin/
 reference https://docs.cucumber.io/gherkin/reference/
 aka Cucumber

@@ -1,8 +1,9 @@
-title QOIR
+import ../measures/conceptPage.scroll
+id QOIR
 appeared 2022
 type binaryDataFormat
 creators Nigel Tao
-description A Fast, Simple, Lossless Image File Format based on QOI ( http://qoiformat.org )
+conceptDescription A Fast, Simple, Lossless Image File Format based on QOI ( http://qoiformat.org )
 website https://nigeltao.github.io
 documentation https://github.com/nigeltao/qoir#readme
 reference https://nigeltao.github.io/blog/2022/qoir.html

@@ -1,8 +1,9 @@
-title Austral
+import ../measures/conceptPage.scroll
+id Austral
 appeared 2018
 type pl
 creators Fernando Borretti
-description Austral is a new systems programming language. You can think of it as Rust: The Good Parts or a modernized, stripped-down Ada. It features a strong static type system, linear types, capability-based security, and strong modularity.
+conceptDescription Austral is a new systems programming language. You can think of it as Rust: The Good Parts or a modernized, stripped-down Ada. It features a strong static type system, linear types, capability-based security, and strong modularity.
 website https://austral-lang.org/
 reference https://borretti.me/article/introducing-austral
 country Unknown

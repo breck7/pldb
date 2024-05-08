@@ -1,8 +1,9 @@
-title Ron
+import ../measures/conceptPage.scroll
+id Ron
 appeared 2015
 type dataNotation
 creators Juniper Tyree
-description RON is a simple readable data serialization format that looks similar to Rust syntax. It's designed to support all of Serde's data model, so structs, enums, tuples, arrays, generic maps, and primitive values.
+conceptDescription RON is a simple readable data serialization format that looks similar to Rust syntax. It's designed to support all of Serde's data model, so structs, enums, tuples, arrays, generic maps, and primitive values.
 standsFor Rusty Object Notation
 country Finland
 originCommunity https://github.com/ron-rs

@@ -1,9 +1,10 @@
-title Manim
+import ../measures/conceptPage.scroll
+id Manim
 appeared 2015
 type framework
 demoVideo https://www.youtube.com/3blue1brown
 creators Grant Sanderson
-description A community-maintained Python framework for creating mathematical animations
+conceptDescription A community-maintained Python framework for creating mathematical animations
 website https://www.manim.community
 documentation https://docs.manim.community/en/stable
 cheatSheetUrl https://docs.manim.community/en/stable/tutorials/quickstart.html

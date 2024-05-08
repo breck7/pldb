@@ -1,8 +1,9 @@
-title omega
+import ../measures/conceptPage.scroll
+id omega
 appeared 2005
 type pl
 creators Tim Sheard
-description The Ωmega interpreter is styled after the Hugs Haskell Interpreter. The Ωmega syntax is based upon the syntax of Haskell. If you’re unsure of what syntax to use, a best first approximation is to use Haskell syntax. It works most of the time. While clearly descended from Haskell, Ωmega has several important syntactic and semantic differences.
+conceptDescription The Ωmega interpreter is styled after the Hugs Haskell Interpreter. The Ωmega syntax is based upon the syntax of Haskell. If you’re unsure of what syntax to use, a best first approximation is to use Haskell syntax. It works most of the time. While clearly descended from Haskell, Ωmega has several important syntactic and semantic differences.
 website http://web.cecs.pdx.edu/~sheard/Omega/index.html
 reference https://code.google.com/archive/p/omega
 country United States

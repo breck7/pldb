@@ -1,8 +1,9 @@
-title Nim
+import ../measures/conceptPage.scroll
+id Nim
 appeared 2008
 type pl
 creators Andreas Rumpf
-description Nim was called Nimrod until 2014. Nimrod is a relatively new programming language that is severely underrated in comparison to other new programming languages, with extensive metaprogramming support, generics and exception tracking built in, optional garbage collection, and rivals C in performance. And it can compile to C, C++, Objective-C, or JavaScript. Nimrod is a statically typed, imperative programming language that tries to give the programmer ultimate power without compromises on runtime efficiency. This means it focuses on compile-time mechanisms in all their various forms.
+conceptDescription Nim was called Nimrod until 2014. Nimrod is a relatively new programming language that is severely underrated in comparison to other new programming languages, with extensive metaprogramming support, generics and exception tracking built in, optional garbage collection, and rivals C in performance. And it can compile to C, C++, Objective-C, or JavaScript. Nimrod is a statically typed, imperative programming language that tries to give the programmer ultimate power without compromises on runtime efficiency. This means it focuses on compile-time mechanisms in all their various forms.
 website https://nim-lang.org/
 documentation https://nim-lang.org/documentation.html
 reference https://irclogs.nim-lang.org/01-07-2012.html

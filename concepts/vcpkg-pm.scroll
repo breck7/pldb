@@ -1,7 +1,8 @@
-title Vcpkg
+import ../measures/conceptPage.scroll
+id Vcpkg
 appeared 2016
 type packageManager
-description Vcpkg helps you manage C and C++ libraries on Windows, Linux and MacOS. This tool and ecosystem are constantly evolving; your involvement is vital to its success!
+conceptDescription Vcpkg helps you manage C and C++ libraries on Windows, Linux and MacOS. This tool and ecosystem are constantly evolving; your involvement is vital to its success!
 
 githubRepo https://github.com/microsoft/vcpkg
  firstCommit 2016

@@ -1,8 +1,9 @@
-title dexvis
+import ../measures/conceptPage.scroll
+id dexvis
 appeared 2012
 type application
 creators Patrick Martin
-description Dex : The Data Explorer -- A data visualization tool written in Java/Groovy/JavaFX capable of powerful ETL and publishing web visualizations.
+conceptDescription Dex : The Data Explorer -- A data visualization tool written in Java/Groovy/JavaFX capable of powerful ETL and publishing web visualizations.
 website http://dexvis.net/
 reference https://dexvis.wordpress.com/2012/11/19/261/
 country United States
