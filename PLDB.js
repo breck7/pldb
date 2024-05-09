@@ -726,7 +726,7 @@ html
 
 viewSourceUrl ${this.sourceUrl}
 
-startColumns 4
+thinColumns 4
 
 <div class="trueBaseThemeQuickLinks">${this.quickLinks}</div>
 
@@ -1406,7 +1406,7 @@ html
 
 viewSourceUrl https://github.com/breck7/pldb/blob/main/measures/${fileName}
 
-startColumns 4
+thinColumns 4
 
 ${examplesText}
 
