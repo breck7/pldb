@@ -10,6 +10,7 @@ abstractComputedIntMeasureParser
  extends abstractIntegerMeasureParser
  javascript
   computeValue(concept, measureName, parsedProgram) {
+    return 0
     if (!parsedProgram.computer) {
       // console.log("initializing computer")
       const {Computer} = require("/Users/breck/pldb/Computer.js") // todo: fix path
@@ -243,6 +244,12 @@ conceptDescriptionParser
  boolean alwaysRecommended true
  extends abstractStringMeasureParser
  description What is a short description of this language?
+
+subDescriptionParser
+ // todo fix columnName crux path issue.
+ extends conceptDescriptionParser
+ description How is this language described here?
+ crux description
 
 // discord
 discordParser
@@ -515,7 +522,7 @@ githubRepoParser
  description What is the URL of the official GitHub repo for the project if it is hosted there?
  extends abstractGitRepoUrlMeasureParser
  cells measureNameCell urlCell
- inScope descriptionParser
+ inScope subDescriptionParser
  contentKey url
  string sourceDomain github.com
  createdParser
@@ -2164,7 +2171,7 @@ replitParser
 repoStatsParser
  description What is the URL of the official GitHub repo for the project if it is hosted there?
  extends abstractHashMapMeasureParser
- inScope descriptionParser
+ inScope subDescriptionParser
  firstCommitParser
   extends abstractYearMeasureParser
   description What year the first commit made in this git repo?
@@ -2184,7 +2191,7 @@ rijuReplParser
  description What is a URL to try this language on riju.codes?
  string sourceDomain riju.codes
  contentKey id
- inScope fileExtensionsParser descriptionParser websiteParser gitRepoParser exampleParser
+ inScope fileExtensionsParser subDescriptionParser websiteParser gitRepoParser exampleParser
 
 // roadmap
 roadmapParser
