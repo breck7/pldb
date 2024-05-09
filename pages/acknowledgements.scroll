@@ -2,7 +2,7 @@ import header.scroll
 title Acknowledgements
 groups index
 
-nodejs
+replaceNodejs
  const fs = require("fs")
  const path = require("path")
  module.exports = {
