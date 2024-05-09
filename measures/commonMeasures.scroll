@@ -31,14 +31,6 @@ abstractAnnualPopulationCountMapParser
  description A map of counts, one per year.
  extends abstractHashMapMeasureParser
 
-abstractComputedIntMeasureParser
- boolean isComputed true
- extends abstractIntegerMeasureParser
- javascript
-  computeValue(concept) {
-    return 0
-  }
-
 abstractUniqueUrlMeasureParser
  extends abstractUrlMeasureParser
 
