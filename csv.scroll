@@ -27,5 +27,6 @@ writeMeasures measures.tsv
 writeMeasures measures.csv
 writeMeasures measures.json
 printMeasures
+tableSearch
 
 import footer.scroll
