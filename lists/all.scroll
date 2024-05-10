@@ -11,9 +11,9 @@ endSnippet
 
 replaceNodejs
  const {Tables} = require("../Computer.js")
- module.exports = {TEMPLATE : Tables.all}
+ module.exports = {TABLE : Tables.all}
 
-TEMPLATE
+TABLE
 
 </div>
 

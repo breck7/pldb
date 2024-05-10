@@ -12,9 +12,9 @@ endSnippet
 
 replaceNodejs
  const {Tables} = require("../Computer.js")
- module.exports = {TEMPLATE : Tables.top1000}
+ module.exports = {TABLE : Tables.top1000}
 
-TEMPLATE
+TABLE
 
 </div>
 

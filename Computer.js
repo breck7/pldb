@@ -1,4 +1,13 @@
 const lodash = require("lodash")
+const path = require("path")
+const { TreeNode } = require("jtree/products/TreeNode.js")
+const { Disk } = require("jtree/products/Disk.node.js")
+const listsFolder = path.join(__dirname, "lists")
+const numeral = require("numeral")
+
+const delimiter = `|_$^`
+const quickTree = (rows, header) => `table ${delimiter}
+ ${new TreeNode(rows).toDelimited(delimiter, header, false).replace(/\n/g, "\n ")}`
 
 const getMostRecentInt = (concept, pathToSet) => {
   let set = concept.getNode(pathToSet)
@@ -6,6 +15,19 @@ const getMostRecentInt = (concept, pathToSet) => {
   set = set.toObject()
   const key = Math.max(...Object.keys(set).map(year => parseInt(year)))
   return parseInt(set[key])
+}
+
+const groupByListValues = (listColumnName, rows, delimiter = " && ") => {
+  const values = {}
+  rows.forEach(row => {
+    const value = row[listColumnName]
+    if (!value) return
+    value.split(delimiter).forEach(value => {
+      if (!values[value]) values[value] = []
+      values[value].push(row)
+    })
+  })
+  return values
 }
 
 class Tables {
@@ -47,6 +69,35 @@ class Tables {
       )
       .value()
     return this._top
+  }
+
+  get creators() {
+    const entities = groupByListValues(
+      "creators",
+      require("./pldb.json").filter(row => row.isLanguage),
+      " and "
+    )
+    const wikipediaLinks = new TreeNode(Disk.read(path.join(listsFolder, "creators.tree")))
+
+    const rows = Object.keys(entities).map(name => {
+      const group = lodash.sortBy(entities[name], "languageRank")
+      const person = wikipediaLinks.nodesThatStartWith(name)[0]
+      const anchorTag = lodash.camelCase(name)
+
+      return {
+        name: !person
+          ? `<a name='${anchorTag}' />${name}`
+          : `<a name='${anchorTag}' href='https://en.wikipedia.org/wiki/${person.get("wikipedia")}'>${name}</a>`,
+        languages: group.map(file => `<a href='../concepts/${file.permalink}'>${file.id}</a>`).join(" - "),
+        count: group.length,
+        topRank: group[0].languageRank
+      }
+    })
+
+    return {
+      TABLE: quickTree(lodash.sortBy(rows, "topRank"), ["name", "languages", "count", "topRank"]),
+      COUNT: numeral(Object.values(entities).length).format("0,0")
+    }
   }
 }
 
