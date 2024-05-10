@@ -6,7 +6,7 @@ wideColumns 1
 
 The PLDB rankings algorithm is:
 
-katex LangScore(x) = sum(sortDesc(LinkRank(x), FactRank(x), JobsEstRank(x), UserEstRank(x))[0:2])
+katex LangScore(x) = sum(sortDesc(LinkRank(x), MeasurementsRank(x), JobsEstRank(x), UserEstRank(x))[0:2])
 
 You can verify this yourself by reading the source code.
 

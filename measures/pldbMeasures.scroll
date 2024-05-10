@@ -4,23 +4,6 @@ importOnly
 
 import commonMeasures.scroll
 
-// Computer
-abstractComputedIntMeasureParser
- boolean isComputed true
- extends abstractIntegerMeasureParser
- javascript
-  computeValue(concept, measureName, parsedProgram) {
-    return 0
-    if (!parsedProgram.computer) {
-      // console.log("initializing computer")
-      const {Computer} = require("/Users/breck/pldb/Computer.js") // todo: fix path
-      parsedProgram.computer = new Computer(parsedProgram)
-    }
-    return parsedProgram.computer.get(measureName, concept)
-  }
-
-
-
 // annualReportsUrl
 annualReportsUrlParser
  extends abstractUrlMeasureParser
@@ -88,49 +71,28 @@ compilerExplorerParser
  inScope exampleParser
 
 // computeds
+
+// Computer
+abstractComputedIntMeasureParser
+ boolean isComputed true
+ extends abstractIntegerMeasureParser
+ javascript
+  computeValue(concept, measureName, parsedProgram, concepts) {
+    if (!parsedProgram.computer) {
+      const {Computer} = require("/Users/breck/pldb/Computer.js") // todo: fix path
+      parsedProgram.computer = new Computer(parsedProgram, concepts)
+    }
+    return parsedProgram.computer.get(measureName, concept)
+  }
+
 hoplIdParser
  extends abstractComputedIntMeasureParser
- javascript
-  computeValue(concept) {
-    const id = concept.get("hopl")?.replace("https://hopl.info/showlanguage.prx?exp=", "")
-    return id === undefined ? "" : parseInt(id)
-  }
  description What is the HOPL id of this language?
 
 isLanguageParser
- boolean isComputed true
- extends abstractBooleanMeasureParser
+ // todo: i wish i had mixins and could make this a boolean and extend abstractComputedIntMeasureParser
+ extends abstractComputedIntMeasureParser
  description Does PLDB categorize this entity as a language?
- javascript
-  computeValue(concept) {
-     const nonLanguages = {
-    vm: true,
-    linter: true,
-    library: true,
-    webApi: true,
-    characterEncoding: true,
-    cloud: true,
-    editor: true,
-    filesystem: true,
-    feature: true,
-    packageManager: true,
-    os: true,
-    application: true,
-    framework: true,
-    standard: true,
-    hashFunction: true,
-    compiler: true,
-    decompiler: true,
-    binaryExecutable: true,
-    binaryDataFormat: true,
-    equation: true,
-    interpreter: true,
-    computingMachine: true,
-    dataStructure: true
-    }
-    const type = concept.get("type")
-    return nonLanguages[type] ? false : true
-  }
 
 getSourceParser
  boolean isComputed true
@@ -141,6 +103,11 @@ getSourceParser
     const repo = concept.getOneOf("gitRepo githubRepo gitlabRepo sourcehutRepo".split(" "))
     return repo ? `git clone ${repo}` : ""
   }
+
+measurementsParser
+ extends abstractComputedIntMeasureParser
+ int sortIndex 5
+ description How many measurements do we have about this thing?
 
 bookCountParser
  int sortIndex 8
@@ -177,32 +144,10 @@ languageRankParser
  extends abstractComputedIntMeasureParser
  description How does this language rank amongst all languages in PLDB?
 
-measurementsParser
- extends abstractComputedIntMeasureParser
- int sortIndex 5
- description How many measurements do we have about this thing?
- javascript
-  computeValue(concept) {
-    let count = 0
-    concept.forEach(node => {
-      if (node.isMeasure)
-        count++
-    })
-    return count
-  }
-
 lastActivityParser
  int sortIndex 6
- extends abstractYearMeasureParser
- boolean isComputed true
+ extends abstractComputedIntMeasureParser
  description In our data on this entity, what year is the most recent activity?
- javascript
-  computeValue(concept) {
-    // lodash.max(this.parsed.findAllWordsWithCellType("yearCell").map(word => parseInt(word.word)))
-    return 0
-  }
-
-
 
 // conference
 conferenceParser
@@ -311,6 +256,7 @@ exampleParser
  description What is a representative snippet for this language?
  extends abstractCodeMeasureParser
  single false
+ boolean isExampleCode true
 
 // faqPageUrl
 faqPageUrlParser

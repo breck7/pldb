@@ -6,11 +6,41 @@ metaTags
 
 gazetteCss
 
+css
+ /* Index page */
+ .pldbHomepageLink a{
+   color: #000;
+ }
+ .newPostLink {
+  display: block;
+  line-height: 1.3em;
+ }
+ .singleColumn {
+  max-width: 800px;
+  margin: auto;
+ }
+ .hasFeature {
+   color: green;
+ }
+ .doesNotHaveFeature {
+   color: red;
+ }
+ .keywordsBlock .scrollCodeBlock {
+   white-space: normal;
+ }
+ #monacoContainer {
+   display: block;
+   height: 10em;
+   border: 1px solid grey;
+   margin-top: 8px;
+ }
+ li.scrollParagraph {
+  margin: 0;
+ }
+
+<link rel="stylesheet" type="text/css" href="BASE_URL/TrueBaseTheme.css"></link>
+
 stumpNoSnippet
- link
-  rel stylesheet
-  type text/css
-  href BASE_URL/TrueBaseTheme.css
  div
   class trueBaseThemeHeader
   a PLDB
@@ -18,8 +48,8 @@ stumpNoSnippet
    class trueBaseThemeLogo
   a Posts
    href BASE_URL/posts/index.html
-  a Concepts
-   href BASE_URL/list.html
+  a Top 1,000
+   href BASE_URL/lists/top1000.html
   a CSV
    href BASE_URL/csv.html
 

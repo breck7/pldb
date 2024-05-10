@@ -91,9 +91,6 @@ body {
   font-size: 2em;
 }
 
-.scrollTable {
-  table-layout: auto;
-}
 .scrollTable pre {
   max-width: 80ch;
   overflow: auto;
