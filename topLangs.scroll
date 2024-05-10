@@ -1,16 +1,56 @@
 importOnly
 
-// todo: make this generated again?
-
 Top Languages
  link ./lists/top1000.html
  class pldbHomepageLink
 
 replaceNodejs
- const {Tables} = require("./Computer.js")
+ // const {Tables} = require("./Computer.js")
+ const tops = [
+    {
+        "id": "JavaScript",
+        "link": "javascript.scroll"
+    },
+    {
+        "id": "Java",
+        "link": "java.scroll"
+    },
+    {
+        "id": "Python",
+        "link": "python.scroll"
+    },
+    {
+        "id": "C",
+        "link": "c.scroll"
+    },
+    {
+        "id": "C++",
+        "link": "cpp.scroll"
+    },
+    {
+        "id": "PHP",
+        "link": "php.scroll"
+    },
+    {
+        "id": "Ruby",
+        "link": "ruby.scroll"
+    },
+    {
+        "id": "SQL",
+        "link": "sql.scroll"
+    },
+    {
+        "id": "R",
+        "link": "r.scroll"
+    },
+    {
+        "id": "HTML",
+        "link": "html.scroll"
+    }
+ ]
  module.exports = {
-      TOP_LANGS: Tables.top.slice(0, 10)
-        .map(file => `<a href="${file.idLink.replace("../", "")}">${file.id}</a>`)
+      TOP_LANGS: tops
+        .map(file => `<a href="concepts/${file.link.replace(".scroll", ".html")}">${file.id}</a>`)
         .join(" · ")
     }
 
