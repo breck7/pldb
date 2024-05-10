@@ -12,9 +12,8 @@ viewSourceBaseUrl https://github.com/breck7/pldb/blob/main/concepts/
 
 replaceJs TEMPLATE
  {
-  const code = originalScrollCode.replace("import ../measures/conceptPage.scroll\n", "");
-  const template = `title ${tree.get("id")}\ncode\n ${code.replace(/\n/g, "\n ")}`;
-  template;
+  const {Tables} = require("/Users/breck/pldb/Computer.js")
+  Tables.getLanguageTemplate(absolutePath);
  }
 TEMPLATE
 

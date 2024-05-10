@@ -6,4 +6,12 @@ Top Languages
  link ./lists/top1000.html
  class pldbHomepageLink
 
-<a href="./concepts/java.html">Java</a> · <a href="./concepts/javascript.html">JavaScript</a> · <a href="./concepts/python.html">Python</a> · <a href="./concepts/c.html">C</a> · <a href="./concepts/sql.html">SQL</a> · <a href="./concepts/html.html">HTML</a> · <a href="./concepts/cpp.html">C++</a> · <a href="./concepts/xml.html">XML</a> · <a href="./concepts/php.html">PHP</a> · <a href="./concepts/perl.html">Perl</a>
+replaceNodejs
+ const {Tables} = require("./Computer.js")
+ module.exports = {
+      TOP_LANGS: Tables.top.slice(0, 10)
+        .map(file => `<a href="${file.idLink.replace("../", "")}">${file.id}</a>`)
+        .join(" · ")
+    }
+
+TOP_LANGS
