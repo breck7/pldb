@@ -5,7 +5,7 @@ groups index
 nodejs
  module.exports = require("../../PLDB.js").PLDB.creatorsImports
 
-<div class="singleColumn">
+mediumColumns 1
 
 Here is the list of COUNT people who created a language(s) in the PLDB.
 
@@ -17,5 +17,5 @@ comment
 
 TABLE
 
-import singleColumnFooter.scroll
+import footer.scroll
 tableSearch

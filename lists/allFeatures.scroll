@@ -6,7 +6,7 @@ groups index
 nodejs
  module.exports = require("../../PLDB.js").PLDB.allFeaturesImports
 
-<div class="singleColumn">
+mediumColumns 1
 
 A list of COUNT features found in programming languages.
 
@@ -14,5 +14,5 @@ endSnippet
 
 TABLE
 
-import singleColumnFooter.scroll
+import footer.scroll
 tableSearch

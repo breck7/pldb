@@ -5,7 +5,7 @@ groups index
 nodejs
  module.exports = require("../../PLDB.js").PLDB.extensionsImports
 
-<div class="singleColumn">
+mediumColumns 1
 
 Here is the list of EXTENSION_COUNT unique file extensions across LANG_WITH_DATA_COUNT languages in the PLDB.
 
@@ -13,5 +13,5 @@ endSnippet
 
 TABLE
 
-import singleColumnFooter.scroll
+import footer.scroll
 tableSearch

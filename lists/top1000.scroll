@@ -6,7 +6,10 @@ title Top 1,000 Programming Languages
 nodejs
  module.exports = require("../../PLDB.js").PLDB.top1000Imports
 
-<div class="singleColumn">
+wideColumns 1
+
+// select id permalink appeared type rank
+// orderBy rank asc
 
 Here are the top 1,000 programming languages in the PLDB. You can also view all the languages in the PLDB. Rankings are explained here.
  link BASE_URL/search.html?q=select+type+appeared all the languages 
@@ -16,5 +19,5 @@ endSnippet
 
 TOP_1000
 
-import singleColumnFooter.scroll
+import footer.scroll
 tableSearch
