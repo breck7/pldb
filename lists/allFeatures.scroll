@@ -4,7 +4,7 @@ groups index
 
 replaceNodejs
  const {Tables} = require("../Computer.js")
- module.exports = Tables.topFeaturesImports
+ module.exports = Tables.allFeaturesImports
 
 mediumColumns 1
 
