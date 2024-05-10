@@ -1470,7 +1470,9 @@ const groupByListValues = (listColumnName, rows, delimiter = " && ") => {
 }
 
 class Tables {
-  constructor() {}
+  constructor() {
+    this.quickCache = {}
+  }
 
   get top1000() {
     return this.toTable(this.top.slice(0, 1000))
@@ -1553,9 +1555,12 @@ class Tables {
   initConceptPages() {
     if (this._conceptPageCache) return
     this._conceptPageCache = {}
+    this._conceptPages = []
     this.pldb.forEach(file => {
       const name = file.filename.replace(".scroll", "")
-      this._conceptPageCache[name] = new ConceptPage(name, file, this)
+      const page = new ConceptPage(name, file, this)
+      this._conceptPageCache[name] = page
+      this._conceptPages.push(page)
     })
   }
 
@@ -1731,6 +1736,59 @@ class Tables {
       "\n\n" +
       Disk.read(path.join(__dirname, "browser", "client.js"))
     return `plainText\n ` + js.replace(/\n/g, "\n ")
+  }
+
+  get keywordsImports() {
+    const { rows, langsWithKeywordsCount } = this.keywordsTable
+
+    return {
+      NUM_KEYWORDS: numeral(rows.length).format("0,0"),
+      LANGS_WITH_KEYWORD_DATA: langsWithKeywordsCount,
+      KEYWORDS_TABLE: quickTree(rows, ["keyword", "count", "frequency", "langs"])
+    }
+  }
+
+  get keywordsTable() {
+    if (this.quickCache.keywordsTable) return this.quickCache.keywordsTable
+    this.initConceptPages()
+    const langsWithKeywords = this._conceptPages.filter(file => file.node.has("keywords"))
+    const langsWithKeywordsCount = langsWithKeywords.length
+
+    const keywordsMap = {}
+    langsWithKeywords.forEach(file => {
+      file.keywords.forEach(keyword => {
+        const keywordKey = "Q" + keyword // b.c. you cannot have a key "constructor" in JS objects.
+
+        if (!keywordsMap[keywordKey])
+          keywordsMap[keywordKey] = {
+            keyword,
+            ids: []
+          }
+
+        const row = keywordsMap[keywordKey]
+
+        row.ids.push(file.filename)
+      })
+    })
+
+    const rows = Object.values(keywordsMap)
+    rows.forEach(row => {
+      row.count = row.ids.length
+      row.langs = row.ids
+        .map(id => {
+          const file = this.getFile(id.replace(".scroll", ""))
+          return `<a href='../concepts/${file.filename.replace(".scroll", ".html")}'>${file.id}</a>`
+        })
+        .join(" ")
+      row.frequency = Math.round(100 * lodash.round(row.count / langsWithKeywordsCount, 2)) + "%"
+    })
+
+    this.quickCache.keywordsTable = {
+      langsWithKeywordsCount,
+      rows: lodash.sortBy(rows, "count").reverse()
+    }
+
+    return this.quickCache.keywordsTable
   }
 
   get acknowledgements() {
