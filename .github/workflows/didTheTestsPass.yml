@@ -22,6 +22,7 @@ jobs:
           node-version: ${{ matrix.node-version }}
       - run: |
           npm install .
+          sudo apt-get install cloc
           npm run build
           npm run test
       # - run: npm run buildCoverageReport
