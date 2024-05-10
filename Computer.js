@@ -473,7 +473,7 @@ class Tables {
     ].map(s => this.getFile(s))
 
     const npmPackages = Object.keys({
-      ...require("./package.json").dependencies
+      ...require("./package.json").devDependencies
     })
     npmPackages.sort()
 

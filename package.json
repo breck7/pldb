@@ -1,6 +1,6 @@
 {
   "name": "pldb",
-  "version": "9.0.0",
+  "version": "10.0.0",
   "description": "PLDB: a Programming Language Database",
   "main": "./pldb.json",
   "scripts": {
@@ -38,7 +38,7 @@
     "pldb.json"
   ],
   "homepage": "https://pldb.io",
-  "dependencies": {
+  "devDependencies": {
     "dayjs": "^1.11.7",
     "jtree": "^75.2.0",
     "lodash": "^4.17.21",
