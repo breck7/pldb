@@ -121,6 +121,10 @@ class ConceptPage {
     return path.basename(this.absolutePath)
   }
 
+  get permalink() {
+    return this.filename.replace(".scroll", ".html")
+  }
+
   get domainName() {
     return this.get("domainName")
   }
@@ -223,13 +227,13 @@ Wayback Machine: https://web.archive.org/web/20220000000000*/${title}`
   }
 
   get langRankDebug() {
+    // todo
     return ""
     const obj = this.parent.getLanguageRankExplanation(this)
     return `TotalRank: ${obj.totalRank} Jobs: ${obj.jobsRank} Users: ${obj.usersRank} Facts: ${obj.factsRank} Links: ${obj.pageRankLinksRank}`
   }
 
   get previousRanked() {
-    return this
     return this.isLanguage
       ? this.computer.getFileAtLanguageRank(this.languageRank - 1)
       : this.computer.getFileAtRank(this.rank - 1)
@@ -249,6 +253,7 @@ Wayback Machine: https://web.archive.org/web/20220000000000*/${title}`
   // Support inheritance in the dataset. Entities can extend from other entities and override
   // only the column values where they are different.
   get extended() {
+    return this.node // todo
     if (this.quickCache.extended) return this.quickCache.extended
     const extendedFile = this.getRelationshipFile("supersetOf") || this.getRelationshipFile("implementationOf")
     this.quickCache.extended = extendedFile ? extendedFile.patch(this) : this
@@ -256,8 +261,7 @@ Wayback Machine: https://web.archive.org/web/20220000000000*/${title}`
   }
 
   get features() {
-    return []
-    const featuresMap = this.parent.featuresMap
+    const featuresMap = this.computer.featuresMap
     return this.extended.filter(node => featuresMap.has(node.getWord(0)))
   }
 
@@ -482,17 +486,11 @@ Wayback Machine: https://web.archive.org/web/20220000000000*/${title}`
   }
 
   get numberOfUsersEstimate() {
-    return 0
-    if (this.quickCache.numberOfUsersEstimate === undefined)
-      this.quickCache.numberOfUsersEstimate = this.parent.predictnumberOfUsersEstimate(this)
-    return this.quickCache.numberOfUsersEstimate
+    return this.parsed.numberOfUsers
   }
 
   get numberOfJobsEstimate() {
-    return 0
-    if (this.quickCache.numberOfJobsEstimate === undefined)
-      this.quickCache.numberOfJobsEstimate = this.parent.predictnumberOfJobsEstimate(this)
-    return this.quickCache.numberOfJobsEstimate
+    return this.parsed.numberOfJobs
   }
 
   get percentile() {
@@ -500,6 +498,7 @@ Wayback Machine: https://web.archive.org/web/20220000000000*/${title}`
   }
 
   getRelationshipFile(relationshipType) {
+    // todo
     return undefined
     const hit = this.get(relationshipType)
     return hit ? this.parent.getFile(hit) : undefined
@@ -533,8 +532,7 @@ Wayback Machine: https://web.archive.org/web/20220000000000*/${title}`
   }
 
   makeATag(id) {
-    return id
-    const file = this.parent.getFile(id)
+    const file = this.computer.getConceptPage(id)
     return `<a href="${file.permalink}">${file.title}</a>`
   }
 
@@ -634,7 +632,7 @@ pipeTable
     const { features, id } = this
     if (!features.length) return ""
 
-    const { featuresMap } = this.parent
+    const { featuresMap } = this.computer
     const table = new TreeNode()
     features.forEach(node => {
       const feature = featuresMap.get(node.getWord(0))
@@ -1251,9 +1249,7 @@ codeWithHeader ${this.title} <a href="../lists/keywords.html#q=${this.id}">Keywo
     const numberOfRepos = this.get("githubLanguage repos")
 
     const lines = [
-      isLanguage
-        ? `#${languageRank + 1} <span title="${this.langRankDebug}">on PLDB</span>`
-        : `#${this.rank + 1} on PLDB`,
+      isLanguage ? `#${languageRank} <span title="${this.langRankDebug}">on PLDB</span>` : `#${this.rank} on PLDB`,
       appeared ? `${currentYear - appeared} Years Old` : "",
       numberOfRepos ? `${numeral(numberOfRepos).format("0a")} <span title="${title} repos on GitHub.">Repos</span>` : ""
     ]
@@ -1538,6 +1534,7 @@ class Tables {
   }
 
   _getFileAtRank(rank, ranks) {
+    rank = rank - 1
     const count = Object.keys(ranks).length
     if (rank < 0) rank = count - 1
     if (rank >= count) rank = 0
@@ -1581,6 +1578,14 @@ class Tables {
 
   get measures() {
     return require("./measures.json")
+  }
+
+  get featuresMap() {
+    if (this.quickCache.featuresMap) return this.quickCache.featuresMap
+    this.quickCache.featuresMap = new Map()
+    const featuresMap = this.quickCache.featuresMap
+    this.features.forEach(feature => featuresMap.set(feature.id, feature))
+    return featuresMap
   }
 
   get features() {

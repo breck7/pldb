@@ -4,11 +4,7 @@ import pldbMeasures.scroll
 
 groups All
 
-keyboardNav
-
 import ../header.scroll
-
-viewSourceBaseUrl https://github.com/breck7/pldb/blob/main/concepts/
 
 replaceJs TEMPLATE
  {
