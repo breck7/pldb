@@ -852,7 +852,9 @@ image ${image.replace("https://pldb.io/", "../")}
     let creatorsLinks = ""
     if (creators.length) {
       creatorsStr = ` by ` + creators.join(" and ")
-      creatorsLinks = creators.map(name => ` link ../lists/creators.html#q=${name}`).join("\n")
+      creatorsLinks = creators
+        .map(name => ` link ../lists/creators.html#q=${encodeURIComponent(name)} ${name}`)
+        .join("\n")
     }
 
     return `* ${title}${akaMessage} is ${Utils.getIndefiniteArticle(sourceStatus || typeName)}${sourceStatus} ${
@@ -1196,7 +1198,7 @@ ${creatorsLinks}
     const keywords = this.get("keywords")
     if (!keywords) return ""
     return `<div class="keywordsBlock">
-codeWithHeader ${this.title} <a href="../lists/keywords.html?filter=${this.id}">Keywords</a>
+codeWithHeader ${this.title} <a href="../lists/keywords.html#q=${this.id}">Keywords</a>
  ${keywords}
 </div>`
   }
