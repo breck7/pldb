@@ -1,6 +1,11 @@
 permalink 404.html
 
-import rootHeader.scroll
+// Set the base url. Without this trick, browsing the site locally would require serving it via localhost to get relative url paths to work since we reuse the header and footer in nested folders. (There could be a better way to do this.)
+replace BASE_URL 
+viewSourceBaseUrl https://github.com/breck7/pldb/blob/main/
+
+import header.scroll
+
 title Page not found
 thinColumns 1
 
