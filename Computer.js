@@ -17,6 +17,15 @@ const getMostRecentInt = (concept, pathToSet) => {
   return parseInt(set[key])
 }
 
+const getJoined = (row, keywords) => {
+  const words = keywords
+    .map(word => row[word] || "")
+    .filter(i => i)
+    .join(" ")
+    .split(" ")
+  return lodash.uniq(words).join(" ")
+}
+
 const groupByListValues = (listColumnName, rows, delimiter = " && ") => {
   const values = {}
   rows.forEach(row => {
@@ -51,7 +60,7 @@ class Tables {
   _top
   get top() {
     if (this._top) return this._top
-    const pldb = require("./pldb.json")
+    const { pldb } = this
     this._top = lodash
       .chain(pldb)
       .orderBy(["rank"], ["asc"])
@@ -71,10 +80,14 @@ class Tables {
     return this._top
   }
 
+  get pldb() {
+    return require("./pldb.json")
+  }
+
   get creators() {
     const entities = groupByListValues(
       "creators",
-      require("./pldb.json").filter(row => row.isLanguage),
+      this.pldb.filter(row => row.isLanguage),
       " and "
     )
     const wikipediaLinks = new TreeNode(Disk.read(path.join(listsFolder, "creators.tree")))
@@ -97,6 +110,39 @@ class Tables {
     return {
       TABLE: quickTree(lodash.sortBy(rows, "topRank"), ["name", "languages", "count", "topRank"]),
       COUNT: numeral(Object.values(entities).length).format("0,0")
+    }
+  }
+
+  get extensions() {
+    const files = this.pldb
+      .map(row => {
+        row.extensions = getJoined(row, [
+          "fileExtensions",
+          "githubLanguage_fileExtensions",
+          "pygmentsHighlighter_fileExtensions",
+          "wikipedia_fileExtensions"
+        ])
+        return row
+      })
+      .filter(file => file.extensions)
+      .map(file => {
+        return {
+          name: file.id,
+          nameLink: `../concepts/${file.permalink}`,
+          rank: file.rank,
+          extensions: file.extensions
+        }
+      })
+
+    const allExtensions = new Set()
+    files.forEach(file => file.extensions.split(" ").forEach(ext => allExtensions.add(ext)))
+
+    files.forEach(file => (file.numberOfExtensions = file.extensions.split(" ").length))
+
+    return {
+      EXTENSION_COUNT: numeral(allExtensions.size).format("0,0"),
+      TABLE: quickTree(lodash.sortBy(files, "rank"), ["name", "nameLink", "extensions", "numberOfExtensions"]),
+      LANG_WITH_DATA_COUNT: files.length
     }
   }
 }
