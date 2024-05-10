@@ -17,6 +17,8 @@ jobs:
           npm run build
           # The line below is needed if you have *.html in your gitignore file
           rm .gitignore
+          # We want to check in the monaco-editor so it is available on the built site
+          git add -f node_modules/monaco-editor
       - name: Deploy 🚀
         uses: JamesIves/github-pages-deploy-action@4.1.4
         with:
