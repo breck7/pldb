@@ -39,11 +39,11 @@
   ],
   "homepage": "https://pldb.io",
   "dependencies": {
-    "scroll-cli": "^85.4.0",
     "dayjs": "^1.11.7",
     "jtree": "^75.2.0",
     "lodash": "^4.17.21",
     "monaco-editor": "^0.34.1",
-    "numeral": "^2.0.6"
+    "numeral": "^2.0.6",
+    "scroll-cli": "^85.6.0"
   }
 }

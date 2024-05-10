@@ -10,9 +10,6 @@ abstractHashMapMeasureParser
   get measureValue() {
     return this.content
   }
-  get measureName() {
-    return this.definition.cruxPathAsColumnName
-  }
 
 abstractCountMeasureParser
  description A positive count of something. People, for example. Min is 0.

@@ -15,17 +15,14 @@ Download the PLDB concept database as: CSV | TSV | JSON
 
 import measures/pldbMeasures.scroll
 loadConcepts concepts
-writeConcepts pldb.csv
-writeConcepts pldb.json
-writeConcepts pldb.tsv
+writeConcepts pldb.csv pldb.json pldb.tsv
+ sortBy rank
 
 Statistics on the measures (columns) are below and can be downloaded as: CSV | TSV | JSON
  link measures.csv CSV
  link measures.tsv TSV
  link measures.json JSON
-writeMeasures measures.tsv
-writeMeasures measures.csv
-writeMeasures measures.json
+writeMeasures measures.tsv measures.csv measures.json
 printMeasures
 tableSearch
 
