@@ -1,25 +1,29 @@
 import header.scroll
-title Become an active contributor to the PLDB
+title Become an active contributor to PLDB
 groups index
 
-thinColumns 1
+mediumColumns 1
 
-Do you seek programming language enlightenment? Why not seek that joyfully with colleagues while serving others, making an impact, and accumulating internet points? Become an active contributor to the PLDB!
+Do you seek programming language enlightenment?
+
+Why not seek that joyfully with colleagues while serving others, making an impact, and accumulating internet points? 
+
+Become an active contributor to PLDB!
 
 # Tasks you could do
 
-- Write an article
- link write-for-pldb.html Write an article
+- Write a data backed guest post on the blog
+ link ../posts/index.html blog
 - Add or edit languages in the concept database
 - Add or edit language features and examples in the concept database
 - Improve or add a data importer for a source like Wikipedia or Github
-- Write or connect deep learning models that can add information to the concept database
+- Write or connect AI models that can add information to the concept database
 - Discuss and improve the data grammar and ranking algorithm
 - Improve the website or codebase
 
-To get involved, say hi <a href="mailto:feedback@pldb.io">via email</a>, !open an issue!, or %send a pull request%.
- https://github.com/breck7/pldb
- wrap % https://github.com/breck7/pldb
- wrap ! https://github.com/breck7/pldb/issues
+To get involved, say hi via email, open an issue, or send a pull request.
+ https://github.com/breck7/pldb send a pull request
+ https://github.com/breck7/pldb/issues open an issue
+ link mailto:feedback@pldb.io via email
 
 import footer.scroll
