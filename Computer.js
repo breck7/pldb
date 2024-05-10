@@ -8,6 +8,48 @@ const getMostRecentInt = (concept, pathToSet) => {
   return parseInt(set[key])
 }
 
+class Tables {
+  constructor() {}
+
+  get top1000() {
+    return this.toTable(this.top.slice(0, 1000))
+  }
+
+  get all() {
+    return this.toTable(this.top)
+  }
+
+  toTable(data) {
+    const header = lodash.keys(data[0]).join("\t")
+    const rows = lodash.map(data, row => lodash.values(row).join("\t"))
+    const tsv = [header, ...rows].join("\n ")
+    return "tabTable\n " + tsv
+  }
+
+  _top
+  get top() {
+    if (this._top) return this._top
+    const pldb = require("./pldb.json")
+    this._top = lodash
+      .chain(pldb)
+      .orderBy(["rank"], ["asc"])
+      .map(row =>
+        lodash.pick(row, [
+          "id",
+          "rank",
+          "appeared",
+          "type",
+          "creators",
+          "numberOfUsersEstimate",
+          "numberOfJobsEstimate",
+          "measurements"
+        ])
+      )
+      .value()
+    return this._top
+  }
+}
+
 const computeds = {
   numberOfUsersEstimate(concept) {
     const mostRecents = ["linkedInSkill", "subreddit memberCount", "projectEuler members"]
@@ -213,4 +255,4 @@ const makeInverseRanks = ranks => {
   return inverseRanks
 }
 
-module.exports = { Computer }
+module.exports = { Computer, Tables: new Tables() }

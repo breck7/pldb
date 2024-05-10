@@ -2,27 +2,19 @@ import header.scroll
 groups index
 
 <div class="singleColumn">
-title Top 1,000 Programming Languages
+title Top 1,000 Computer Languages
 
-Here are the top 1,000 programming languages in the PLDB. You can also view all the languages in the PLDB. Rankings are explained here.
- link BASE_URL/search.html?q=select+type+appeared all the languages 
+Here are the top 1,000 computer languages in the PLDB. You can also view all the languages in the PLDB. Rankings are explained here.
+ link all.html all the languages 
  link ../pages/the-rankings-algorithm.html explained here
 
 endSnippet
 
 replaceNodejs
- const lodash = require("lodash")
- const pldb = require("../pldb.json")
- const data = lodash.chain(pldb)
-  .orderBy(['rank'], ['asc'])
-  .map(row => lodash.pick(row, ['id', 'rank', 'appeared', 'type', 'numberOfUsersEstimate', 'numberOfJobsEstimate', 'measurements', 'exampleCount']))
-  .value()
- const header = lodash.keys(data[0]).join('\t');
- const rows = lodash.map(data, row => lodash.values(row).join('\t'));
- const tsv = [header, ...rows].join('\n ');
- module.exports = {TOP_1000 : 'tabTable\n ' + tsv}
+ const {Tables} = require("../Computer.js")
+ module.exports = {TEMPLATE : Tables.top1000}
 
-TOP_1000
+TEMPLATE
 
 </div>
 
