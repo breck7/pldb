@@ -1,0 +1,34 @@
+import ../measures/conceptPage.scroll
+id FAUST
+appeared 2002
+type pl
+website http://faust.grame.fr
+country France
+originCommunity Centre national de création musicale
+domainName faust.grame.fr
+
+wikipedia https://en.wikipedia.org/wiki/FAUST_(programming_language)
+ related linux unix c max haskell
+ summary FAUST (Functional AUdio STream) is a domain-specific purely functional programming language for implementing signal processing algorithms in the form of libraries, audio plug-ins, or standalone applications. A FAUST program denotes a signal processor: a mathematical function that is applied to some input signal and then fed out.
+ pageId 4532356
+ created 2006
+ backlinksCount 76
+ revisionCount 107
+ dailyPageViews 30
+ appeared 2015
+
+githubLanguage Faust
+ type programming
+ fileExtensions dsp
+ aceMode text
+ tmScope source.faust
+ repos 199
+githubBigQuery Faust
+ repos 22
+ users 21
+
+rosettaCode http://www.rosettacode.org/wiki/Category:FAUST
+
+fileType text
+isOpenSource true
+centralPackageRepositoryCount 0

@@ -1,0 +1,107 @@
+import ../measures/conceptPage.scroll
+id Zig
+appeared 2015
+type pl
+creators Andrew Kelley
+conceptDescription A programming language designed for robustness, optimality, and clarity.
+website https://ziglang.org/
+documentation https://ziglang.org/documentation/master/
+domainName ziglang.org
+ awisRank
+  2022 173299
+releaseNotesUrl https://ziglang.org/download/0.10.0/release-notes.html
+
+hasPrintDebugging true
+hasStrings true
+ "Hello world"
+hasOctals true
+hasHexadecimals true
+hasFloats true
+hasIntegers true
+hasBinaryNumbers true
+hasLineComments true
+hasComments true
+
+printToken std.debug.print
+stringToken "
+
+gource https://www.youtube.com/watch?v=MQXfU5Czy64
+githubRepo https://github.com/ziglang/zig
+ firstCommit 2015
+ stars 14344
+ forks 1205
+ subscribers 242
+ created 2015
+ updated 2022
+ description General-purpose programming language and toolchain for maintaining robust, optimal, and reusable software.
+ issues 2126
+
+repoStats
+ firstCommit 2015
+ commits 24502
+ committers 920
+ files 15997
+
+wikipedia https://en.wikipedia.org/wiki/Zig_(programming_language)
+
+githubLanguage Zig
+ type programming
+ fileExtensions zig
+ aceMode text
+ tmScope source.zig
+ repos 3909
+githubBigQuery Zig
+ repos 21
+ users 20
+
+pygmentsHighlighter Zig
+ filename zig.py
+ fileExtensions zig
+
+leachim6 Zig
+ filepath z/Zig.zig
+ fileExtensions zig
+ example
+  const std = @import("std");
+  
+  pub fn main() !void {
+      const stdout = std.io.getStdOut().writer();
+      try stdout.print("Hello World", .{});
+  }
+rosettaCode http://www.rosettacode.org/wiki/Category:Zig
+
+compilerExplorer Zig
+ example
+  // Type your code here, or load an example.
+  export fn square(num: i32) i32 {
+      return num * num;
+  }
+  
+rijuRepl https://riju.codes/zig
+ example
+  const std = @import("std");
+  
+  pub fn main() anyerror!void {
+      std.log.info("Hello, world!", .{});
+  }
+  
+ description General-purpose programming language and toolchain for maintaining robust, optimal, and reusable software
+ fileExtensions zig
+ website https://ziglang.org/
+ gitRepo https://github.com/ziglang/zig
+tryItOnline zig
+
+officialBlogUrl https://ziglang.org/news/
+faqPageUrl https://github.com/ziglang/zig/wiki/FAQ
+
+subreddit https://reddit.com/r/Zig
+ memberCount
+  2022 5511
+
+fileType text
+isOpenSource true
+centralPackageRepositoryCount 0
+
+isbndb 0
+
+semanticScholar 0

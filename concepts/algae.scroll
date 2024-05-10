@@ -1,0 +1,22 @@
+import ../measures/conceptPage.scroll
+id Algae
+appeared 1997
+type pl
+reference http://algae.sourceforge.net/
+originCommunity Boeing
+
+hasPrintDebugging true
+
+printToken printf
+
+leachim6 Algae
+ filepath a/Algae.algae
+ fileExtensions algae
+ example
+  printf("Hello World\n");
+  
+rosettaCode http://www.rosettacode.org/wiki/Category:Algae
+
+hopl https://hopl.info/showlanguage.prx?exp=2713
+
+centralPackageRepositoryCount 0

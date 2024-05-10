@@ -1,0 +1,138 @@
+import ../measures/conceptPage.scroll
+id x86 Assembly
+appeared 1972
+type assembly
+documentation https://docs.oracle.com/cd/E19253-01/817-5477/817-5477.pdf
+aka x86
+
+hasProcessorRegisters true
+hasLineComments true
+ ; A comment
+hasComments true
+ ; A comment
+hasSemanticIndentation false
+
+lineCommentToken ;
+
+wikipedia https://en.wikipedia.org/wiki/X86_assembly_language
+ example
+  cmp	eax, ebx
+  	jne	do_something
+  	; ...
+  do_something:
+  	; do something here
+ related assembly-language x86-isa mmx unix nasm gas
+ summary x86 assembly language is a family of backward-compatible assembly languages, which provide some level of compatibility all the way back to the Intel 8008 introduced in April 1972. x86 assembly languages are used to produce object code for the x86 class of processors. Like all assembly languages, it uses short mnemonics to represent the fundamental instructions that the CPU in a computer can understand and follow. Compilers sometimes produce assembly code as an intermediate step when translating a high level program into machine code.  Regarded as a programming language, assembly coding is machine-specific and low level. Assembly languages are more typically used for detailed and time critical applications such as small real-time embedded systems or operating system kernels and device drivers.
+ backlinksCount 165
+ pageId 214948
+ created 2003
+ revisionCount 732
+ dailyPageViews 426
+ appeared 1972
+
+githubLanguage Unix Assembly
+ fileExtensions s ms
+ trendingProjectsCount 0
+ type programming
+ group Assembly
+ aceMode assembly_x86
+ tmScope source.x86
+ aliases gas or gnu asm or unix asm
+ repos 61156
+
+linguistGrammarRepo https://github.com/calculuswhiz/Assembly-Syntax-Definition
+ firstCommit 2014
+ lastCommit 2017
+ committerCount 2
+ commitCount 107
+ sampleCount 2
+ example
+   .cstring
+  LC0:
+   .ascii "Hello World\0"
+   .text
+  .globl _main
+  _main:
+  LFB3:
+   pushq %rbp
+  LCFI0:
+   movq  %rsp, %rbp
+  LCFI1:
+   leaq  LC0(%rip), %rdi
+   call  _puts
+   movl  $0, %eax
+   leave
+   ret
+  LFE3:
+   .section __TEXT,__eh_frame,coalesced,no_toc+strip_static_syms+live_support
+  EH_frame1:
+   .set L$set$0,LECIE1-LSCIE1
+   .long L$set$0
+  LSCIE1:
+   .long 0x0
+   .byte 0x1
+   .ascii "zR\0"
+   .byte 0x1
+   .byte 0x78
+   .byte 0x10
+   .byte 0x1
+   .byte 0x10
+   .byte 0xc
+   .byte 0x7
+   .byte 0x8
+   .byte 0x90
+   .byte 0x1
+   .align 3
+  LECIE1:
+  .globl _main.eh
+  _main.eh:
+  LSFDE1:
+   .set L$set$1,LEFDE1-LASFDE1
+   .long L$set$1
+  LASFDE1:
+   .long LASFDE1-EH_frame1
+   .quad LFB3-.
+   .set L$set$2,LFE3-LFB3
+   .quad L$set$2
+   .byte 0x0
+   .byte 0x4
+   .set L$set$3,LCFI0-LFB3
+   .long L$set$3
+   .byte 0xe
+   .byte 0x10
+   .byte 0x86
+   .byte 0x2
+   .byte 0x4
+   .set L$set$4,LCFI1-LCFI0
+   .long L$set$4
+   .byte 0xd
+   .byte 0x6
+   .align 3
+  LEFDE1:
+   .subsections_via_symbols
+
+rijuRepl https://riju.codes/x86
+ example
+  	.text
+  	.globl main
+  main:
+  	movq $1, %rax
+  	movq $1, %rdi
+  	leaq message(%rip), %rsi
+  	movq $14, %rdx
+  	syscall
+  	movq $60, %rax
+  	movq $0, %rdi
+  	syscall
+  	.data
+  message:
+  	.string "Hello, world!\n"
+  
+
+gdbSupport true
+fileType text
+centralPackageRepositoryCount 0
+
+isbndb 0
+
+semanticScholar 0

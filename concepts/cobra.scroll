@@ -1,0 +1,76 @@
+import ../measures/conceptPage.scroll
+id Cobra
+appeared 2006
+type pl
+creators Charles Esterbrook
+website http://cobra-language.com/
+fileExtensions cobra
+country United States
+originCommunity Cobra Language LLC
+domainName cobra-language.com
+ registered 2008
+ awisRank
+  2017 5837168
+
+hasSemanticIndentation true
+hasPrintDebugging true
+hasStrings true
+ 'Hello world'
+
+printToken print
+stringToken '
+
+wikipedia https://en.wikipedia.org/wiki/Cobra_(programming_language)
+ example
+  class Person
+  
+      var _name as String
+      var _age as int
+  
+      cue init(name as String, age as int)
+          _name, _age = name, age
+  
+      def toString as String is override
+          return 'My name is [_name] and I am [_age] years old'
+ related python eiffel csharp objective-c
+ summary Cobra is a general-purpose, object-oriented programming language. Cobra is designed by Charles Esterbrook, and runs on the Microsoft .NET and Mono platforms. It is strongly influenced by Python, C#, Eiffel, Objective-C, and other programming languages. It supports both static and dynamic typing. It has support for unit tests and contracts. It has lambda expressions, closures, list comprehensions, and generators. Cobra is an open-source project; it was released under the MIT License on February 29, 2008. Updates are posted to the Cobra news forum with progress on features, fixes, documentation and related projects since the last update.
+ pageId 13862555
+ dailyPageViews 82
+ created 2007
+ backlinksCount 104
+ revisionCount 136
+ appeared 2006
+ fileExtensions cobra
+
+projectEuler Cobra
+ memberCount
+  2019 11
+  2022 11
+helloWorldCollection Cobra
+ """Hello world in Cobra"""
+ 
+ class Hello
+ 
+     def main
+         print 'Hello, world.'
+leachim6 Cobra
+ filepath c/Cobra.cobra
+ fileExtensions cobra
+ example
+  class Hello
+  
+      def main
+          print 'Hello World'
+rosettaCode http://www.rosettacode.org/wiki/Category:Cobra
+
+tryItOnline cobra
+
+tiobe Cobra
+
+fileType text
+isOpenSource true
+centralPackageRepositoryCount 0
+
+isbndb 1
+ year|publisher|title|authors|isbn13
+ 2010||Cobra (programming Language From Cobra Language Llc)|Surhone and Lambert M. and Timpledon and Miriam T. and Marseken and Susan F.|9786132215611

@@ -1,0 +1,52 @@
+import ../measures/conceptPage.scroll
+id datascript
+appeared 2014
+type queryLanguage
+country Germany
+originCommunity https://www.patreon.com/tonsky
+
+hasLineComments true
+ ; A comment
+hasComments true
+ ; A comment
+hasSemanticIndentation false
+
+lineCommentToken ;
+
+example
+ (require '[datascript.core :as d])
+ 
+ ;; Implicit join, multi-valued attribute
+ 
+ (let [schema {:aka {:db/cardinality :db.cardinality/many}}
+       conn   (d/create-conn schema)]
+   (d/transact! conn [ { :db/id -1
+                         :name  "Maksim"
+                         :age   45
+                         :aka   ["Max Otto von Stierlitz", "Jack Ryan"] } ])
+   (d/q '[ :find  ?n ?a
+           :where [?e :aka "Max Otto von Stierlitz"]
+                  [?e :name ?n]
+                  [?e :age  ?a] ]
+        @conn))
+ 
+ ;; => #{ ["Maksim" 45] }
+ 
+ 
+ ;; Destructuring, function call, predicate call, query over collection
+
+githubRepo https://github.com/tonsky/DataScript
+ firstCommit 2014
+ stars 4793
+ forks 280
+ subscribers 153
+ created 2014
+ updated 2022
+ description Immutable database and Datalog query engine for Clojure, ClojureScript and JS
+ issues 75
+
+repoStats
+ firstCommit 2014
+ commits 686
+ committers 70
+ files 99

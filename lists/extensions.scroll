@@ -1,0 +1,18 @@
+import header.scroll
+title List of File Extensions
+groups index
+
+mediumColumns 1
+
+Here is the list of EXTENSION_COUNT unique file extensions across LANG_WITH_DATA_COUNT languages in PLDB.
+
+endSnippet
+
+replaceNodejs
+ const {Tables} = require("../Computer.js")
+ module.exports = Tables.extensions
+
+TABLE
+
+import footer.scroll
+tableSearch

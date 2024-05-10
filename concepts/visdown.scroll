@@ -1,0 +1,43 @@
+import ../measures/conceptPage.scroll
+id visdown
+appeared 2016
+type textMarkup
+creators Amit Kapoor
+conceptDescription Write visualisation using a simple declarative markup like you would write code. Just wrap it in fenced block (three backticks) and mark the language as `vis`.
+website https://visdown.com/
+domainName visdown.com
+ registered 2017
+
+example
+ ```vis
+ data:
+   url: data/cars.csv
+ mark: point
+ encoding: 
+   x: 
+     field: kmpl
+     type: quantitative
+   y: 
+     field: price
+     type: quantitative
+  ```
+
+githubRepo https://github.com/amitkaps/visdown
+ firstCommit 2016
+ stars 654
+ forks 37
+ subscribers 20
+ created 2016
+ updated 2022
+ description Visualisation Markdown
+ issues 11
+
+repoStats
+ firstCommit 2016
+ commits 74
+ committers 2
+ files 65
+
+fileType text
+isOpenSource true
+centralPackageRepositoryCount 0

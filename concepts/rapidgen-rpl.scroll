@@ -1,0 +1,18 @@
+import ../measures/conceptPage.scroll
+id rapidgen-rpl
+appeared 1983
+type pl
+conceptDescription RapidGen translates the XML into a concise and transparent format of decision tables for decision logic programming —RPL— a rich, purpose-built language developed by the company. Supports high speed execution of decision models. Is capable of processing large data volumes. Preserves traceability to the original DMN model.
+country United Kingdom
+originCommunity RapidGen Software Ltd
+
+example
+ Days_leave <- 22
+ AGE < 18         Y N N N N ELSE
+ AGE >= 60        N Y - N N -
+ SERVICE >= 30    N - Y N N -
+ SERVICE >= 15    N - - Y N -
+ AGE >= 45        N - - - Y -
+ Days_leave + 5   X X X . . .
+ Days_leave + 2   . . . X X .
+ Days_leave + 3   . X X . . .

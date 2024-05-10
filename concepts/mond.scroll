@@ -1,0 +1,59 @@
+import ../measures/conceptPage.scroll
+id Mond
+appeared 2014
+type pl
+creators Rohan Singh
+conceptDescription A scripting language for C# which can be embedded in Lua-like manner.
+website https://web.archive.org/web/20160429013247/https://rohbot.net/mond/
+country Canada
+originCommunity https://github.com/Rohansi/Mond
+
+keywords Infinity NaN break case const continue debugger default do else false for foreach fun global if in null return seq switch true undefined var while yield
+
+example
+ // documentation can be found here: https://github.com/Rohansi/Mond/wiki
+ seq range(start, end) {
+     for (var i = start; i <= end; i++)
+         yield i;
+ }
+ 
+ seq where(list, filter) {
+     foreach (var x in list) {
+         if (filter(x))
+             yield x;
+     }
+ }
+ 
+ seq select(list, transform) {
+     foreach (var x in list)
+         yield transform(x);
+ }
+ 
+ fun toArray(list) {
+     var array = [];
+ 
+     foreach (var value in list) {
+         array.add(value);
+     }
+ 
+     return array;
+ }
+ 
+ return range(0, 1000)
+        |> where(x -> x % 2 == 0)
+        |> select(x -> x / 2)
+        |> toArray();
+
+githubRepo https://github.com/Rohansi/Mond
+ stars 292
+ forks 22
+ subscribers 17
+ created 2014
+ updated 2022
+ description A scripting language for .NET Core
+
+repoStats
+ firstCommit 2014
+ commits 574
+ committers 11
+ files 259

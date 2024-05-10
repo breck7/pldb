@@ -1,0 +1,30 @@
+import ../measures/conceptPage.scroll
+id nimrod
+appeared 2013
+type pl
+website http://nimrod-lang.org
+domainName nimrod-lang.org
+ registered 2013
+
+hasWhileLoops true
+hasConstants true
+hasConditionals true
+hasOctals true
+hasHexadecimals true
+hasFloats true
+hasIntegers true
+hasBinaryNumbers true
+
+keywords addr and as asm bind block break case cast concept const continue converter defer discard distinct div do elif else end enum except export finally for func if in yield interface is isnot iterator let macro method mixin mod not notin object of or out proc ptr raise ref return shl shr static template try tuple type using when while xor
+
+githubBigQuery Nimrod
+ repos 601
+ users 375
+
+pygmentsHighlighter Nimrod
+ filename nimrod.py
+ fileExtensions nim nimrod
+
+hackerNewsDiscussions
+ id|title|url|time|timestamp|by|comments|score
+ 6820474|Nimrod: A new approach to metaprogramming|http://nimrod-lang.org/talk01/slides.html|2013-11-29 18:39:28 UTC|1385750368|ryeguy|57|218

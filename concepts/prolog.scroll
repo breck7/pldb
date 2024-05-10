@@ -1,0 +1,275 @@
+import ../measures/conceptPage.scroll
+id Prolog
+appeared 1972
+type pl
+creators Alain Colmerauer
+documentation https://www.swi-prolog.org/pldoc/index.html
+fileExtensions pl pro P
+country United Kingdom and France
+originCommunity University of Edinburgh && Aix-Marseille University
+
+hasComments true
+hasTypeInference true
+hasMacros true
+ term_expansion(parent_child(Parent, Child),
+              child_parent(Child, Parent)).
+ parent_child(trevor, simon).
+ % With the above definitions, we can query (even though the predicate child_parent/2 is nowhere explicitly defined in the code above):
+ ?- child_parent(Child, Parent).
+  Child = simon, Parent = trevor.
+hasLineComments true
+ % A comment
+hasPrintDebugging true
+hasMultiLineComments true
+ /* A comment
+ */
+hasSemanticIndentation false
+hasCaseInsensitiveIdentifiers false
+hasStrings true
+ 'Hello world'
+isCaseSensitive true
+hasOctals true
+ % 0o[0-7]+
+hasHexadecimals true
+ % 0x[0-9a-fA-F]+
+hasFloats true
+ % (\d+\.\d*|\d*\.\d+)([eE][+-]?[0-9]+)?
+hasIntegers true
+ % \d\d?\'[a-zA-Z0-9]+
+hasBinaryNumbers true
+ % 0b[01]+
+
+lineCommentToken %
+multiLineCommentTokens /* */
+printToken write
+stringToken '
+
+wikipedia https://en.wikipedia.org/wiki/Prolog
+ example
+  rule(q0, 1, q0, 1, right).
+  rule(q0, b, qf, 1, stay).
+ related poplog swi-prolog visual-prolog mercury oz erlang datalog unicode lambda-prolog html xml rdf owl actionscript lisp planner agentspeak
+ summary Prolog is a general-purpose logic programming language associated with artificial intelligence and computational linguistics. Prolog has its roots in first-order logic, a formal logic, and unlike many other programming languages, Prolog is intended as primarily a declarative programming language: the program logic is expressed in terms of relations, represented as facts and rules. A computation is initiated by running a query over these relations. The language was first conceived by a group around Alain Colmerauer in Marseille, France, in the early 1970s and the first Prolog system was developed in 1972 by Colmerauer with Philippe Roussel. Prolog was one of the first logic programming languages, and remains the most popular among such languages today, with several free and commercial implementations available. The language has been used for theorem proving, expert systems, term rewriting, type inference, and automated planning, as well as its original intended field of use, natural language processing. Modern Prolog environments support the creation of graphical user interfaces, as well as administrative and networked applications. Prolog is well-suited for specific tasks that benefit from rule-based logical queries such as searching databases, voice control systems, and filling templates.
+ pageId 23485
+ dailyPageViews 1127
+ created 2001
+ backlinksCount 1469
+ revisionCount 1748
+ appeared 1972
+ fileExtensions pl pro P
+
+githubLanguage Prolog
+ fileExtensions pl pro prolog yap
+ trendingProjectsCount 0
+ type programming
+ interpreters swipl yap
+ aceMode prolog
+ tmScope source.prolog
+ repos 22512
+githubBigQuery Prolog
+ repos 11137
+ users 9245
+
+antlr https://github.com/antlr/grammars-v4/tree/master/prolog
+pygmentsHighlighter Prolog
+ filename prolog.py
+ fileExtensions ecl prolog pro pl
+linguistGrammarRepo https://github.com/alnkpa/sublimeprolog
+ firstCommit 2012
+ lastCommit 2018
+ committerCount 10
+ commitCount 63
+ sampleCount 9
+ example
+  %6.8
+  subset(Set, Subset) :-
+  	append(L1, Subset, Set).
+  powerset(Set, Subset) :-
+  	bagof(Subset, subset(Set, Subset), Subset).
+  
+
+projectEuler Prolog
+ memberCount
+  2019 143
+  2022 156
+helloWorldCollection Prolog
+ % Hello World in Prolog
+ 
+ hello :- display('Hello World!') , nl .
+ 
+leachim6 Prolog
+ filepath p/Prolog.pro
+ fileExtensions pro
+ example
+  helloWorld :-
+    write('Hello World').
+  
+  :- helloWorld.
+  
+rosettaCode http://www.rosettacode.org/wiki/Category:Prolog
+quineRelay Prolog
+
+rijuRepl https://riju.codes/prolog
+ example
+  :- initialization main.
+  
+  main :-
+      write("Hello, world!"), nl.
+  
+
+indeedJobs prolog developer
+ 2022 79
+linkedInSkill prolog
+ 2018 36743
+faqPageUrl https://www.swi-prolog.org/FAQ/
+downloadPageUrl https://www.swi-prolog.org/Download.html
+
+subreddit https://reddit.com/r/prolog
+ memberCount
+  2017 1756
+  2022 7884
+meetup https://www.meetup.com/topics/prolog
+ memberCount 3771
+ groupCount 8
+
+tiobe Prolog
+ currentRank 41
+hopl https://hopl.info/showlanguage.prx?exp=562
+
+packageRepository http://www.swi-prolog.org/pldoc/doc/_SWI_/library/prolog_pack.pl
+
+ubuntuPackage swi-prolog
+jupyterKernel https://github.com/Calysto/calysto_prolog
+fileType text
+
+goodreads
+ title|year|author|goodreadsId|rating|ratings|reviews
+ PROLOG: Programming for Artificial Intelligence|1986|Ivan Bratko|2059933|3.75|166|4
+ Programming in PROLOG: Using the ISO Standard|1981|William F. Clocksin|1601676|3.57|83|4
+ The Art of Prolog: Advanced Programming Techniques|1994|Leon Sterling|2365132|3.91|22|2
+ The Art Of Prolog: Advanced Programming Techniques|1986|Leon Sterling|1710377|3.79|43|2
+ Logic Programming with PROLOG|2005|Max Bramer|2069010|3.56|16|0
+
+isbndb 95
+ year|publisher|title|authors|isbn13
+ 2006|College Publications|Learn Prolog Now! (Texts in Computing, Vol. 7)|Patrick Blackburn and Johan Bos and Kristina Striegnitz|9781904987178
+ 1990|Addison-Wesley Pub (Sd)|Prolog Programming for Artificial Intelligence|Bratko, Ivan|9780201416060
+ 1988|Oxford University Press|Logic with Prolog (Oxford Applied Mathematics and Computing Science Series)|Gibbins, Peter|9780198596592
+ 2003|Kendall Hunt Publishing|INTRODUCTION TO PROGRAMMING LANGUAGES: PRINCIPLES, C, C++, SCHEME AND PROLOG|Yinong Chen|9780757503672
+ 1998|Routledge|An Introduction to Natural Language Processing Through Prolog (Learning about Language)|Matthews, Clive|9780582066229
+ 2005|Springer|Logic Programming with Prolog|Bramer, Max|9781852339388
+ 2003|MIT Press|The Practice of Prolog (Logic Programming)|Sterling, Leon S.|9780262514453
+ 1988|Addison-Wesley|Computing With Logic: Logic Programming With Prolog|Maier, David and Warren, David S.|9780805366815
+ 1993|Alfred Waller Ltd|Application Programming in Quintus Prolog|Lucas, Robert|9781872474045
+ 1992|Wiley|Techniques of Prolog Programming with Implementation of Logical Negation and Quantified Goals|Van Le, T.|9780471571759
+ 1983|Tab Books|Disc For Turbo Prolog Advanced Programming Techniques|Hashim|9780830666645
+ 1997|Springer|Clause and Effect: Prolog Programming for the Working Programmer|Clocksin, William F.|9783540652373
+ 1988|The Mit Press|Concurrent Prolog - 2 Vol. Set: Collected Papers (logic Programming)|Ehud Shapiro; with a foreword by Kazuhiro Fuchi|9780262192552
+ 1987|Prentice-hall International|Productive Prolog Programming (prentice-hall International Series In Computer Science)|Peter Schnupp|9780137251100
+ 1986|Addison-Wesley Pub. Co|Prolog programming: Applications for database systems, expert systems, and natural language systems|Marcus, Claudia|9780201146479
+ 2007|Alpha Science Intl Ltd|Introduction To Prolog|R. P. Suri|9781842653968
+ 1984|Research Studies Press Wiley|A Prolog Database System|Li, Deyi , 1944-|9780863800146
+ 1988|Scott Foresman & Co|Prolog Programming In Depth|Michael A. Covington and Donald Nute and Andre Vellino|9780673186591
+ 1991|Oxford University Press|Knowledge Systems Through Prolog|Kim, Steven H.|9780195072419
+ 1996|Prentice Hall|From Logic Programming to Prolog|Apt, Krzysztof R.|9780132303682
+ 2015|CreateSpace Independent Publishing Platform|Prolog Programming Success in a Day: Beginners Guide to Fast, Easy and Efficient Learning of Prolog Programming|Key, Sam|9781516878444
+ 1989|Springer|Concepts, Design, and Performance Analysis of a Parallel Prolog Machine (Lecture Notes in Computer Science (404))|Beer, Joachim|9783540520535
+ 2011-08-31T00:00:01Z|Pearson Education Canada|Prolog Programming for Artificial Intelligence (4th Edition) (International Computer Science Series)|Bratko, Ivan|9780321417466
+ 2019-11-15T00:00:01Z|Kendall Hunt Pub Co|Introduction to Programming Languages: Programming in C C++ Scheme Prolog C# and Python|Chen, Yinong|9781792407994
+ 2013|Springer|Logic Programming with Prolog|Bramer, Max|9781447154877
+ 2017|Independently published|Expert Systems in Prolog|Merritt, Dennis|9781723821868
+ 1994|Springer-Verlag|Programming in Prolog|Clocksin, W. F. and Mellish, C. S.|9780387583501
+ 1990|The MIT Press|The Practice of Prolog (Logic Programming)||9780262193016
+ 1997|Springer|Clause and Effect: Prolog Programming for the Working Programmer|Clocksin, William F.|9783540629719
+ 2013|Springer|Logic Programming with Prolog|Bramer, Max|9781447154860
+ 1996|Prentice Hall|Prolog Programming in Depth|Covington, Michael A. and Nute, Donald and Vellino, Andre|9780131386457
+ 2009|The MIT Press|The Craft of Prolog (Logic Programming)|O'Keefe, Richard|9780262512275
+ 2000|Pearson|Prolog Programming for Artificial Intelligence|Bratko, Ivan|9780201403756
+ 1990|The MIT Press|The Craft of Prolog (Logic Programming)|Richard A. O'Keefe|9780262150392
+ 1984|Springer Berlin Heidelberg|Programming in Prolog|Clocksin, William F.|9783540150114
+ 1986|Addison-Wesley|Prolog programming for artificial intelligence (International computer science series)|Bratko, Ivan|9780201142242
+ 1989-12-18T00:00:01Z|Springer|An Introduction to Programming in Prolog|Saint-Dizier, Patrick|9780387971445
+ 2012-01-26T00:00:01Z|Kendall Hunt Publishing|INTRODUCTION TO PROGRAMMING LANGUAGES: PRINCIPLES, C, C++, SCHEME AND PROLOG|CHEN  YINONG and TSAI  WEI-TEK|9780757529740
+ 2015-08-26T00:00:01Z|Lulu.com|Prolog Programming Success In A Day|Key, Sam|9781329502369
+ 1990|Wiley|Logic, Programming and Prolog|Nilsson, Ulf and Maluszynski, Jan|9780471926252
+ 1987|The MIT Press|Concurrent Prolog - Vol. 2: Collected Papers (Logic Programming)||9780262192675
+ 1995|Wiley|Logic, Programming and Prolog|Nilsson, Ulf and Maluszynski, Jan|9780471959960
+ 1987|Springer|Programming in PROLOG|Clocksin, William F and Clocksin, W F and Mellish, C S|9780387175393
+ 1987-12-31T00:00:01Z|Springer-Verlag Berlin and Heidelberg GmbH & Co. K|Programming in Prolog|Clocksin, W F|9783540175391
+ 1996|Prentice Hall|An Introduction to Logic Programming Through Prolog (Prentice Hall International Series in Computer Science)|Spivey, J. M. and Spivey, Michael|9780135360477
+ 1991|Wiley|Prolog for Natural Language Processing|Gal, Annie and Lapalme, Guy and Saint-Dizier, Patrick and Somers, Harold|9780471930129
+ 2001|Cengage Learning EMEA|Prolog Programming for Students: With Expert Systems and Artificial Intelligence Topics|Callear, David|9781844801121
+ 1999|Springer|Agent-Oriented Programming: From Prolog to Guarded Definite Clauses (Lecture Notes in Computer Science (1630))|Huntbach, Matthew M. and Ringwood, Graem A.|9783540666837
+ 1985|Palgrave HE UK|Prolog Programming and Applications (MacMillan Computer Science)|Burnham, W. and Hall, Alex|9780333391594
+ 1987|H.W. Sams|Advanced Turbo prolog programming|Shafer, Dan|9780672225734
+ 1987|The MIT Press|Concurrent Prolog - Vol. 1: Collected Papers (Volume 1) (Logic Programming)||9780262192668
+ 2001|Thomson Learning|Prolog Programming for Students: With Expert Systems and Artificial Intelligence Topics|Callear, David|9780826454966
+ 1981|Springer-Verlag|Programming in Prolog|Clocksin, W. F|9780387110462
+ 1994|Addison-Wesley|Prolog ++: The Power of Object-Oriented and Logic Programming (International Series in Logic Programming)|Moss, Chris|9780201565072
+ 2021|PEARSON INDIA|Prolog : Programming for Artificial Intelligence, 3/e|BRATKO|9788131711347
+ 1986|Springer-Verlag Telos|Programming in PROLOG|Clocksin, W. F. and Mellish, C. S.|9780387150116
+ 1989|Springer|Prolog Versus You: An Introduction to Logic Programming|Johansson, Anna-Lena and Eriksson-Granskog, Agneta and Edman, Anneli|9783540175773
+ 2012|Springer Science & Business Media|Programming In Prolog|W. F. Clocksin and C. S. Mellish|9783642968730
+ 1984-01-01T00:00:01Z|Springer Berlin Heidelberg|Programming in Prolog|Clocksin, William F.|9783540110460
+ 20121206|Springer Nature|Programming in Prolog|William F. Clocksin; Christopher S. Mellish|9783642554810
+ 2011|Springer|Adventure in Prolog (Springer Compass International)|Merritt, Dennis|9781461280071
+ 2013|LAP LAMBERT Academic Publishing|Prolog and inductive reasoning: a logic programming language|Alsmail, Kumeel Alsmail|9783659486784
+ 1989|Wiley|Prolog Programming|Nigel Ford|9780471921417
+ 1987|Longman Higher Education Division (a Pearson Education Company)|Further Programming Prolog|Hepburn|9780745802879
+ 20220323|O'Reilly Media, Inc.|Programmer Passport: Prolog|Bruce Tate|9781680509380
+ 1985|Macmillan International Higher Education|Prolog Programming And Applications||9781349079629
+ 1985|Wiley|Prolog Programming And Applications|W. D Burnham|9780470202630
+ ||Logic Programming With Prolog|Bramer and Max|9781848008410
+ ||Introduction To Turbo Prolog|Carl Townsend|9788170291046
+ 20040114|CRC Press|Problem Solving With Prolog|John Stobo|9780203168905
+ 20140714|Princeton University Press|The Implementation of Prolog|Patrice Boizumault|9781400863440
+ 1992-04-01|Mit Pr|Prolog Vlsi Implementations (logic Programming)|Pierluigi Civera|9780262031707
+ 2012|Springer-Verlag New York, LLC|Building Expert Systems in Prolog|Dennis Merritt|9781461389132
+ 1988|Tab Books|Turbo Prolog Advanced Programming Techniques|Safaa H Hashim|9780830693085
+ 1988|Prentice Hall|Introduction To Programming In Prolog|Danny Crookes|9780137101481
+ |John Wiley & Sons|PROLOG for Natural Language Processing||9780471930891
+ 1988|Prentice Hall|Expert Systems Programming In Turbo Prolog|Daniel H. Marcellus|9780132958417
+ 2012|Springer Science & Business Media|An Introduction To Programming In Prolog|Patrick Saint-Dizier|9781461233329
+ 1990|Springer-verlag Berlin And Heidelberg Gmbh & Co. K|An Introduction To Programming In Prolog|Patrick Saint-dizier|9783540971443
+ 1990|Mit Pr|Prolog And It's Applications (logic Programming Series)||9780262521512
+ 1990|Pearson Higher Education|Logic Programming: Prolog And Stream Parallel Languages|Jan Newmarch|9780724807000
+ 1986|Addison-wesley Professional|Logic Programming: Prolog Its Appl Vid Pkg|Kowalski|9780201145045
+ 1996|Mcgraw Hill Higher Education|Programming Languages: Paradigm And Practice: Prolog Minimanual|Appleby|9780070053199
+ 1988|Sigma Press|Prolog Through Examples: A Practical Programming Guide|I. Kononenko and N. Lavrac|9781850580720
+ 1991|Mcgraw Hill Higher Education|Programming Languages: Paradigm And Practice: Prolog Mini-manual|J.k|9780070025790
+ 1990|Alfred Waller Ltd|Prolog Programming: A Tutorial Introduction (artificial Intelligence Texts)|Carlton Mcdonald and Masoud Yazdani|9780632012466
+ 20160701|Taylor & Francis|An Introduction to Natural Language Processing Through Prolog|Clive Matthews|9781317898337
+ 1987|Prentice Hall Europe (a Pearson Education Company)|Hepburn: Further Programming In Prolog - Writing Application Programs (cloth)|Philip Henry Hepburn|9780745801735
+ 1994|Open University Worldwide|Programming And Programming Languages: Prolog V. 2 (course M353)||9780749247966
+ 2015-06-29|LAP LAMBERT Academic Publishing|A Quick Guide To An Introduction to Expert System Using PROLOG|Alemu Kumilachew Tegegnie and Adane Nega Tarekegn|9783659749155
+ |Wiley|Techniques Of Prolog Programming: With Implementation Of Logical Negation And Quantified Goals|Van Le, T.|
+ 1988|Prentice Hall|Introduction To Programming In Prolog (prentice Hall International Series In Computer Science)|Danny Crookes|9780137101467
+ 1992|John Wiley & Sons Inc|Techniques Of Prolog Programming With Implementation Of Logical Negation And Quantified Goals Software||9780471591085
+ 1993|John Wiley And Sons Ltd|The Techniques Of Prolog Programming With Implementation Of Logical Negation And Quantified Goals|T. Van Le|9780471599708
+ 1990|Prentice Hall|Logic Programming: Prolog And Stream Parallel Languages (prentice Hall Advances In Computer Science Series)|J. D. Newmarch|9780135398425
+
+semanticScholar 23
+ year|title|doi|citations|influentialCitations|authors|paperId
+ 1987|Programming in Prolog|10.1007/978-3-642-97005-4|1301|102|W. Clocksin and C. Mellish|ec74eaf722b5fb9c49e3fe38fe30ddf3dda61d72
+ 1987|Prolog and Natural-Language Analysis|10.2307/414538|397|27|F. Pereira and S. Shieber|547d483ed1e80066693af561f63daa30ffa8e9fa
+ 1977|Prolog - the language and its implementation compared with Lisp|10.1145/800228.806939|157|6|D. Warren and L. Pereira and Fernando C Pereira|57f796c1bb843b65ba45c42aa00c1068c529eae0
+ 1992|High-performance logic programming with the Aquarius Prolog compiler|10.1109/2.108055|141|8|P. V. Roy and A. Despain|901aabda7822b120245399bde172dbaf2cc68d9d
+ 1982|Partial evaluation as a means for inferencing data structures in an applicative language: a theory and implementation in the case of prolog|10.1145/582153.582181|134|4|J. Komorowski|bd0021d9a1816dad9759c43dc0a0889917fcdd22
+ 2005|Logic Programming with Prolog|10.1007/978-1-4471-5487-7|116|30|M. Bramer|ae8a471753922d18c550cd0fa7db01055c82e85f
+ 1985|If Prolog is the Answer, What is the Question? or What it Takes to Support AI Programming Paradigms|10.1109/TSE.1985.231888|69|0|D. Bobrow|b3f45bca1bcbd81fd5319341ad15907b37d85890
+ 1986|Tokio: Logic Programming Language Based on Temporal Logic and its Compilation to Prolog|10.1007/3-540-16492-8_119|61|4|M. Fujita and S. Kono and Hidehiko Tanaka and T. Moto-Oka|6266ea0a988231d0d73544cca601e9300fc9ec0b
+ 1985|Reasoning about protein topology using the logic programming language PROLOG|10.1016/0263-7855(85)80027-8|60|0|C. Rawlings and W. Taylor and J. Nyakairu and John Fox and M. Sternberg|5cae6a91ba51c2febd78839a801c3085c1849610
+ 1984|Systems programming in concurrent prolog|10.1145/800017.800520|55|1|E. Shapiro|29607edfbf48bd0d820f9d45854e19320c7520d1
+ 1991|Prolog programming techniques|10.1007/BF00120879|39|1|P. Brna and A. Bundy and Tony Dodd and M. Eisenstadt and C. Looi and H. Pain and D. Robertson and Barbara M. Smith and M. Someren|d1e1c791ea0fb12f3929ee1362fca0e571b18e5f
+ 1986|Prolog programming: applications for database systems, expert systems, and natural language systems|10.1016/0950-5849(87)90357-0|15|0|C. Marcus|f6bb99f3f2e0eac5f238729fae7a99d36c5dca2f
+ 1989|Rapid prototyping of programming language semantics using Prolog|10.1109/CMPSAC.1989.65123|14|0|B. Bryant and Aiqin Pan|b5e4a9cbbbb5b528668f5cb70628160e9240b18a
+ 1986|Programming in Modal Logic: An Extension of PROLOG based on Modal Logic|10.1007/3-540-18024-9_24|12|1|Y. Sakakibara|5e6f4bb243db724e65fe1c56c177a58350e69f88
+ 1984|On implementing Prolog in functional programming|10.1007/BF03037326|11|0|M. Carlsson|319932ff3d51905bb0557c8076982b1e6c22c8e9
+ 2010|Natural language processing: a prolog perspective|10.1007/s10462-009-9151-4|6|0|Christian Bitter and David A. Elizondo and Yingjie Yang|389a0f41524e226c6a01e31040e6e8ee279b824b
+ 1970|Prolog As A First Programming Language|10.2495/SEHE940321|6|0|Martin P. Lee and J. Pryce and A. Harrison|db49d728b8ceec7570695c877c66a02e268d6685
+ 1986|Pitfalls in PROLOG programming|10.1145/15095.15102|5|0|K. Ng and W. Ma|3cee6a1787ec611e962a733b5be822749be11505
+ 1985|Prolog Programming and Applications|10.1109/mex.1986.4306988|5|0|W. D. Burnham and A. Hall and R. Bharath|f12d2a1753264f09e792e1343742640d136f289f
+ 1990|A plea for a readable Prolog programming style|10.1145/101356.101360|4|0|Robert McLaughlin|beea2925d73b4bf7edb8017644b6068123b9831a
+ 1988|Enhancing Prolog to Support Prolog Programming Environments|10.1007/3-540-19027-9_21|4|0|A. Martelli and G. Rossi|281a193b8fcd79442cd54d98e8e95ccaed15d162
+ 2012|An adaptive prolog programming language with machine learning|10.1109/CCIS.2012.6664359|1|0|Benjie Lu and Zhiqing Liu and Hui Gao|a22535f08ebba5e76633ceb8a321cbb156727dfc
+ 2013|Design an Arm Robot through Prolog Programming Language|10.4172/2168-9695.1000104|1|0|A. Azad and T. Rashid|1e2d636b3b4df2802b0815122ba551c001f7235a

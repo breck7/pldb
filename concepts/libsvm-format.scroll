@@ -1,0 +1,15 @@
+import ../measures/conceptPage.scroll
+id libsvm-format
+appeared 2011
+type textDataFormat
+conceptDescription <class/target>[ <attribute number>:<attribute value>]*
+website https://www.csie.ntu.edu.tw/~cjlin/libsvm/
+reference https://www.csie.ntu.edu.tw/~cjlin/papers/libsvm.pdf
+country Taiwan
+originCommunity National Taiwan University
+
+example
+ 1 10:3.4 123:0.5 34567:0.231
+ 0.2 22:1 456:03
+
+centralPackageRepositoryCount 0

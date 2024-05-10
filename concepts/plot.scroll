@@ -1,0 +1,39 @@
+import ../measures/conceptPage.scroll
+id plot
+appeared 2019
+type template
+creators John Sundell
+country Poland
+originCommunity https://github.com/JohnSundell/Plot/pulls
+
+example
+ let html = HTML(
+     .head(
+         .title("My website"),
+         .stylesheet("styles.css")
+     ),
+     .body(
+         .div(
+             .h1("My website"),
+             .p("Writing HTML in Swift is pretty great!")
+         )
+     )
+ )
+
+githubRepo https://github.com/JohnSundell/Plot
+ firstCommit 2019
+ stars 1780
+ forks 119
+ subscribers 29
+ created 2019
+ updated 2022
+ description A DSL for writing type-safe HTML, XML and RSS in Swift.
+ issues 14
+
+repoStats
+ firstCommit 2019
+ commits 108
+ committers 36
+ files 86
+
+isbndb 0

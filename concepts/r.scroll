@@ -1,0 +1,244 @@
+import ../measures/conceptPage.scroll
+id R
+appeared 1993
+type pl
+creators Ross Ihaka and Robert Gentleman
+website https://www.r-project.org
+documentation https://devdocs.io/r/
+emailList https://www.r-project.org/mail.html
+fileExtensions r R RData rds rda
+country United States
+originCommunity University of Auckland
+domainName r-project.org
+ registered 1999
+ awisRank
+  2022 6182
+  2017 6883
+releaseNotesUrl https://developer.r-project.org/
+
+visualParadigm false
+
+hasStrings true
+ "hello world"
+hasBitWiseOperators true
+ ! x
+ x & y
+ x && y
+ x | y
+ x || y
+ xor(x, y)
+hasComments true
+ # A comment
+hasMultiLineComments false
+hasImports true
+ source("filename.r")
+hasLazyEvaluation true
+hasOperatorOverloading true
+hasPipes true
+ # R has pipes via a library like dplyr
+ starwars %>% filter(species == "Droid")
+hasZeroBasedNumbering false
+hasLineComments true
+ # A comment
+hasPrintDebugging true
+hasSemanticIndentation false
+hasCaseInsensitiveIdentifiers false
+hasAssignment true
+hasBooleans true
+hasWhileLoops true
+hasFunctions true
+hasConditionals true
+
+lineCommentToken #
+printToken print
+assignmentToken =
+stringToken "
+booleanTokens TRUE FALSE
+keywords if else repeat while function for in next break TRUE FALSE NULL Inf NaN NA NA_integer_ NA_real_ NA_complex_ NA_character_ ...
+
+wikipedia https://en.wikipedia.org/wiki/R_(programming_language)
+ example
+  install.packages("caTools")  # install external package
+  library(caTools)           # external package providing write.gif function
+  jet.colors <- colorRampPalette(c("#00007F", "blue", "#007FFF", "cyan", "#7FFF7F",
+                                   "yellow", "#FF7F00", "red", "#7F0000"))
+  dx <- 400                  # define width
+  dy <- 400                  # define height
+  C <- complex( real=rep(seq(-2.2, 1.0, length.out=dx), each=dy ),
+                imag=rep(seq(-1.2, 1.2, length.out=dy), dx ) )
+  C <- matrix(C,dy,dx)       # reshape as square matrix of complex numbers
+  Z <- 0                     # initialize Z to zero
+  X <- array(0, c(dy,dx,20)) # initialize output 3D array
+  for (k in 1:20) {          # loop with 20 iterations
+    Z <- Z^2+C               # the central difference equation
+    X[,,k] <- exp(-abs(Z))   # capture results
+  }
+  write.gif(X, "Mandelbrot.gif", col=jet.colors, delay=100)
+ related common-lisp s scheme julia c fortran java python latex apl matlab octave knitr sweave utf-8 rstudio-editor eclipse-editor emacs-editor lyx-editor perl ruby f-sharp spss stata mathematica
+ summary R is an open source programming language and software environment for statistical computing and graphics that is supported by the R Foundation for Statistical Computing. The R language is widely used among statisticians and data miners for developing statistical software and data analysis. Polls, surveys of data miners, and studies of scholarly literature databases show that R's popularity has increased substantially in recent years. R is a GNU package. The source code for the R software environment is written primarily in C, Fortran, and R. R is freely available under the GNU General Public License, and pre-compiled binary versions are provided for various operating systems. While R has a command line interface, there are several graphical front-ends available.
+ pageId 376707
+ dailyPageViews 3651
+ created 2003
+ backlinksCount 1479
+ revisionCount 2219
+ appeared 1993
+ fileExtensions r R RData rds rda
+
+githubLanguage R
+ fileExtensions r rd rsx
+ trendingProjects
+  author name avatar url language languageColor stars forks currentPeriodStars description
+  rstudio bookdown https://github.com/rstudio.png https://github.com/rstudio/bookdown R #198CE7 1586 711 44 "Authoring Books and Technical Documents with R Markdown"
+  hadley r4ds https://github.com/hadley.png https://github.com/hadley/r4ds R #198CE7 2051 2560 44 "R for data science: a book"
+  rfordatascience tidytuesday https://github.com/rfordatascience.png https://github.com/rfordatascience/tidytuesday R #198CE7 1062 490 94 "Official repo for the #tidytuesday project"
+  rstudio shiny https://github.com/rstudio.png https://github.com/rstudio/shiny R #198CE7 3527 1528 46 "Easy interactive web applications with R"
+  rstudio rmarkdown https://github.com/rstudio.png https://github.com/rstudio/rmarkdown R #198CE7 1596 676 29 "Dynamic Documents for R"
+  swirldev swirl_courses https://github.com/swirldev.png https://github.com/swirldev/swirl_courses R #198CE7 3009 6259 30 "🎓 A collection of interactive courses for the swirl R package."
+  griffithlab rnaseq_tutorial https://github.com/griffithlab.png https://github.com/griffithlab/rnaseq_tutorial R #198CE7 767 417 30 "Informatics for RNA-seq: A web resource for analysis on the cloud. Educational tutorials and working pipelines for RNA-seq analysis including an introduction to: cloud computing, critical file formats, reference genomes, gene annotation, expression, differential expression, alternative splicing, data visualization, and interpretation."
+  satijalab seurat https://github.com/satijalab.png https://github.com/satijalab/seurat R #198CE7 540 326 25 "R toolkit for single cell genomics"
+ trendingProjectsCount 9
+ type programming
+ filenames .Rprofile expr-dist
+ interpreters Rscript
+ aceMode r
+ codemirrorMode r
+ codemirrorMimeType text/x-rsrc
+ tmScope source.r
+ aliases R or Rscript or splus
+ repos 689533
+githubBigQuery R
+ repos 29347
+ users 20273
+
+antlr https://github.com/antlr/grammars-v4/tree/master/r
+monaco r
+codeMirror r
+linguistGrammarRepo https://github.com/textmate/r.tmbundle
+ firstCommit 2005
+ lastCommit 2016
+ committerCount 13
+ commitCount 226
+ sampleCount 7
+ example
+  hello <- function() {
+      print("hello, world!")
+  }
+  hello()
+  
+languageServerProtocolProject https://github.com/REditorSupport/languageserver
+ writtenIn r
+
+projectEuler R
+ memberCount
+  2019 1115
+  2022 1329
+helloWorldCollection R
+ # Hello World in R
+ cat("Hello world\n")
+ 
+leachim6 R
+ filepath r/R.R
+ fileExtensions R
+ example
+  cat("Hello World")
+  
+rosettaCode http://www.rosettacode.org/wiki/Category:R
+quineRelay R
+
+rijuRepl https://riju.codes/r
+ example
+  print("Hello, world!")
+  
+tryItOnline r
+
+indeedJobs r data scientist
+ 2017 3912
+linkedInSkill r
+ 2018 1026107
+stackOverflowSurvey
+ 2021
+  users 4185
+  medianSalary 59454
+  fans 4015
+  percentageUsing 0.05
+officialBlogUrl https://developer.r-project.org/Blog/public/
+faqPageUrl https://cran.r-project.org/doc/FAQ/R-FAQ.html
+downloadPageUrl https://cran.r-project.org/bin/windows/base/
+
+subreddit https://reddit.com/r/Rlanguage
+ memberCount
+  2017 12731
+  2022 29980
+meetup https://www.meetup.com/topics/r-programming-language
+ memberCount 26230
+ groupCount 84
+
+tiobe R
+ currentRank 11
+hopl https://hopl.info/showlanguage.prx?exp=2426
+pypl R
+
+packageRepository https://cran.r-project.org/
+packageRepository http://bioconductor.org/
+
+twitter https://twitter.com/_r_foundation
+ubuntuPackage r-base
+jupyterKernel http://irkernel.github.io/
+fileType text
+wordRank 179
+isOpenSource true
+
+isbndb 40
+ year|publisher|title|authors|isbn13
+ 2009|Oxford University Press|Building Bioinformatics Solutions: with Perl, R and MySQL|Bessant, Conrad and Shadforth, Ian and Oakley, Darren|9780199230235
+ 2014|Chapman and Hall/CRC|Introduction to Scientific Programming and Simulation Using R (Chapman & Hall/CRC The R Series)|Jones, Owen and Maillardet, Robert and Robinson, Andrew|9781466569997
+ 2013|Wiley|Data Mining and Business Analytics with R|Ledolter, Johannes|9781118447147
+ 2009|Springer Verlag|Introducing Monte Carlo Methods with R (Use R!)|Christian P. Robert and George Casella|9781441915757
+ 2008|Springer|Software for Data Analysis: Programming with R (Statistics and Computing)|John M. Chambers|9780387759357
+ 2020|Chapman and Hall/CRC|Interactive Web-Based Data Visualization with R, plotly, and shiny (Chapman & Hall/CRC The R Series)|Sievert, Carson|9781138331457
+ 2008|Springer|Data Manipulation with R (Use R!)|Spector, Phil|9780387747309
+ 2020|O'Reilly Media|Practical Statistics for Data Scientists: 50+ Essential Concepts Using R and Python|Bruce, Peter and Bruce, Andrew and Gedeck, Peter|9781492072942
+ 2007|Cambridge University Press|A First Course in Statistical Programming with R|Braun, W. John|9780521694247
+ 2008|Chapman and Hall/CRC|R Programming for Bioinformatics (Chapman & Hall/CRC Computer Science & Data Analysis)|Gentleman, Robert|9781420063677
+ 2013|Packt Publishing|Web Application Development with R Using Shiny|Beeley, Chris|9781783284474
+ 2009|Chapman and Hall/CRC|Introduction to Scientific Programming and Simulation Using R (Chapman & Hall/CRC The R Series)|Jones, Owen and Maillardet, Robert and Robinson, Andrew|9781420068726
+ 2004|Chapman and Hall/CRC|Linear Models with R (Chapman & Hall/CRC Texts in Statistical Science)|Faraway, Julian J.|9781584884255
+ 2015|O'Reilly Media|R Packages: Organize, Test, Document, and Share Your Code|Wickham, Hadley|9781491910597
+ 2016|CRC Press|R for Programmers: Mastering the Tools|Zhang, Dan|9781498736817
+ 2015|Packt Publishing|Building a Recommendation System with R|Gorakala, Suresh K. and Usuelli, Michele|9781783554492
+ 2020|CRC Press|Mathematics and Programming for Machine Learning with R|Claster, William|9780367507855
+ 2016|Packt Publishing|RStudio for R Statistical Computing Cookbook|Cirillo, Andrea|9781784391034
+ 2016|Routledge|Quantitative Corpus Linguistics with R|Gries, Stefan Th.|9781138816282
+ 2017|Apress|Functional Data Structures in R: Advanced Statistical Programming in R|Mailund, Thomas|9781484231432
+ 2005|Springer|Analysis of Integrated and Cointegrated Time Series with R (Use R)|Pfaff, Bernhard|9780387279596
+ 2020||Visual Linguistics With R|Christoph Rühlemann|9789027207104
+ 2017|O'Reilly Media|Efficient R Programming: A Practical Guide to Smarter Programming|Gillespie, Colin and Lovelace, Robin|9781491950784
+ 2010|Packt Publishing|Statistical Analysis with R|M. Quick, John|9781849512084
+ 2016|Packt Publishing|Big Data Analytics with R: Leverage R Programming to uncover hidden patterns in your Big Data|Walkowiak, Simon|9781786466457
+ 2011|O'Reilly Media|Getting Started with RStudio: An Integrated Development Environment for R|Verzani, John|9781449309039
+ 2019|Manning Publications|Practical Data Science with R|Nina Zumel and John Mount|9781617295874
+ 2007|Cambridge University Press|A First Course in Statistical Programming with R|Braun, W. John and Murdoch, Duncan J.|9780521872652
+ 2015|SAGE Publications Ltd|An Introduction to R for Spatial Analysis and Mapping|Brunsdon, Chris and Comber, Lex|9781446272947
+ 2014|Packt Publishing|R Machine Learning Essentials|Usuelli, Michele|9781783987740
+ 2016|Packt Publishing|R Data Structures and Algorithms|Prakash, Dr. PKS and Rao, Achyutuni Sri Krishna|9781786465153
+ 2019|Packt Publishing|R Machine Learning Projects: Implement supervised, unsupervised, and reinforcement learning techniques using R 3.5|Chinnamgari, Dr. Sunil Kumar|9781789807943
+ 2018|Apress|Machine Learning Using R: With Time Series and Industry-Based Use Cases in R|Ramasubramanian, Karthik and Singh, Abhishek|9781484242148
+ 2017|Springer|Introduction to Statistics and Data Analysis: With Exercises, Solutions and Applications in R|Heumann, Christian and Schomaker, Michael and Shalabh|9783319461625
+ 2012|Wiley|The Essential R Reference|Gardener, Mark|9781118391419
+ 2014|Apress|Using R for Statistics|Baldock, Sarah|9781484201398
+ 20161212|O'Reilly Media, Inc.|R for Data Science|Hadley Wickham; Garrett Grolemund|9781491910344
+ 2018|Manning Publications|Beyond Spreadsheets with R: A beginner's guide to R and RStudio|Carroll, Dr Jonathan|9781617294594
+ 2020|Apress|Advanced R 4 Data Programming and the Cloud: Using PostgreSQL, AWS, and Shiny|Wiley, Matt and Wiley, Joshua F.|9781484259726
+ 2014|Springer|Beginning Data Science with R|Pathak, Manas A.|9783319120652
+
+semanticScholar 9
+ year|title|doi|citations|influentialCitations|authors|paperId
+ 2017|brms: An R Package for Bayesian Multilevel Models Using Stan|10.18637/JSS.V080.I01|3062|267|P. Bürkner|4bf0e9786d6638dc7d4b1fc929def68da9003c4e
+ 2017|Advanced Bayesian Multilevel Modeling with the R Package brms|10.32614/RJ-2018-017|928|89|P. Bürkner|232a4da46a5f77ff1fc725fd06a4967a57c3b651
+ 2006|Support Vector Machines in R|10.18637/JSS.V015.I09|555|32|Alexandros Karatzoglou and David Meyer and K. Hornik|1c0020ad0f0a6c7bed9fc395b292d9007e17d72f
+ 2010|EBImage—an R package for image processing with applications to cellular phenotypes|10.1093/bioinformatics/btq046|507|26|Grégoire Pau and Florian Fuchs and O. Sklyar and M. Boutros and W. Huber|c7ba786c84c9c5161604e021551a23f098028eba
+ 2012|Evaluating the Design of the R Language - Objects and Functions for Data Analysis|10.1007/978-3-642-31057-7_6|125|4|Floréal Morandat and B. Hill and Leo Osvald and J. Vitek|85dbdb61a133eecbde3cf635de9c84eaecf249fa
+ 2019|formr: A study framework allowing for automated feedback generation and complex longitudinal experience-sampling studies using R|10.3758/s13428-019-01236-y|98|3|Ruben C. Arslan and Matthias Walther and Cyril S. Tata|220ea16cf578f440570b383dfbea6b4b24a5a6bd
+ 2016|Optimizing R language execution via aggressive speculation|10.1145/2989225.2989236|29|0|Lukas Stadler and Adam Welc and Christian Humer and Mick J. Jordan|c17ac40f0fb475c810c70a52b3dd6535454eabf4
+ 2012|Tight Coupling of R and Distributed Linear Algebra for High-Level Programming with Big Data|10.1109/SC.Companion.2012.113|13|0|D. Schmidt and G. Ostrouchov and Wei-Chen Chen and Pragneshkumar B. Patel|bcc6a968df0d63be5bd21044a81c956377796d81
+ 2012|The Functional Programming Language R and the Paradigm of Dynamic Scientific Programming - (Position Paper)|10.1007/978-3-642-40447-4_12|5|0|B. T. Widemann and Carl Friedrich Bolz-Tereick and C. Grelck|134c0c03c08b6496c7c6075a4366a96c4708ece1

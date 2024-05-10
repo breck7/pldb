@@ -1,0 +1,74 @@
+import ../measures/conceptPage.scroll
+id Stan
+appeared 2012
+type pl
+website http://mc-stan.org/
+country Various
+originCommunity https://github.com/stan-dev
+domainName mc-stan.org
+ awisRank
+  2022 266535
+
+writtenIn cpp
+
+hasTypeInference true
+hasFloats true
+hasIntegers true
+
+wikipedia https://en.wikipedia.org/wiki/Stan_(software)
+ related ia-32 r matlab stata
+ summary Stan is a probabilistic programming language for statistical inference written in C++. The Stan language is used to specify a (Bayesian) statistical model with an imperative program calculating the log probability density function. Stan is licensed under the New BSD License. Stan is named in honour of Stanislaw Ulam, pioneer of the Monte Carlo method.
+ pageId 42243853
+ dailyPageViews 68
+ created 2014
+ backlinksCount 116
+ revisionCount 34
+ appeared 2012
+
+githubLanguage Stan
+ fileExtensions stan
+ trendingProjectsCount 0
+ type programming
+ aceMode text
+ tmScope source.stan
+ repos 774
+githubBigQuery Stan
+ repos 154
+ users 134
+
+pygmentsHighlighter Stan
+ filename modeling.py
+ fileExtensions stan
+linguistGrammarRepo https://github.com/jrnold/atom-language-stan
+ firstCommit 2015
+ lastCommit 2018
+ committerCount 2
+ commitCount 86
+ sampleCount 3
+ example
+  data {
+    int<lower=0> N;
+    vector[N] incumbency_88;
+    vector[N] vote_86;
+    vector[N] vote_88;
+  }
+  parameters {
+    vector[3] beta;
+    real<lower=0> sigma;
+  }
+  model {
+      vote_88 ~ normal(beta[1] + beta[2] * vote_86
+                       + beta[3] * incumbency_88,sigma);
+  }
+  
+
+twitter https://twitter.com/mcmc_stan
+fileType text
+wordRank 9401
+isOpenSource true
+centralPackageRepositoryCount 0
+
+isbndb 2
+ year|publisher|title|authors|isbn13
+ 2015|Chapman and Hall/CRC|Statistical Rethinking: A Bayesian Course with Examples in R and Stan (Chapman & Hall/CRC Texts in Statistical Science)|McElreath, Richard|9781482253443
+ 2014|Academic Press|Doing Bayesian Data Analysis: A Tutorial with R, JAGS, and Stan|Kruschke, John|9780124059160

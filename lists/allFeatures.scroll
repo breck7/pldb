@@ -1,0 +1,18 @@
+import header.scroll
+title All Features
+groups index
+
+replaceNodejs
+ const {Tables} = require("../Computer.js")
+ module.exports = Tables.allFeaturesImports
+
+mediumColumns 1
+
+A list of COUNT features found in programming languages.
+
+endSnippet
+
+TABLE
+
+import footer.scroll
+tableSearch

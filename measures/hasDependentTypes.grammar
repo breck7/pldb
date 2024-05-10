@@ -1,6 +1,0 @@
-hasDependentTypesParser
- extends abstractFeatureParser
- description Does a language have types who's definition depends on its value or the value of other types?
- string title Dependent types
- string pseudoExample pldbSortedList // a list where is sorted is true
- string reference https://en.wikipedia.org/wiki/Dependent_type

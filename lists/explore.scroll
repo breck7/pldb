@@ -1,0 +1,31 @@
+import header.scroll
+title Explore PLDB
+groups index
+
+endSnippet
+
+<div style="">
+<div style="float: left; width: 200px;">
+<div id="measureLinks" style="font-size:80%;"></div>
+</div>
+
+<div style="float: left; max-width: calc(100% - 250px);" id="tableHolder">
+<table id="exploreTable" class="scrollTable"></table>
+</div>
+</div>
+
+<div style="clear:both;"></div>
+
+import footer.scroll
+
+<script defer src="../jquery-3.7.1.min.js"></script>
+<style>.dt-search{font-family: "SF Pro", "Helvetica Neue", "Segoe UI", "Arial";}</style>
+<link rel="stylesheet" href="../dataTables.dataTables.min.css" />
+<script defer src="../dataTables.min.js"></script>
+<script defer src="../pldb.js"></script>
+<script defer src="../measures.js"></script>
+<script defer src="./explore.js"></script>
+
+<script defer>
+
+</script>

@@ -1,0 +1,21 @@
+import ../measures/conceptPage.scroll
+id LES
+appeared 2012
+type grammarLanguage
+creators David Piepgrass
+conceptDescription LES is an interchange format for syntax trees, comparable to s-expressions but designed for languages in the Algol family such as C, C++, C#, Java, EcmaScript, Rust and Python. It can be described as “JSON for code”: just as XML/YAML/JSON are tree structures that assign no particular meaning to the data inside, likewise LES represents syntax trees without assigning any particular meaning to them.
+website http://loyc.net/les/
+reference http://loyc.net/origin.html
+standsFor Loyc Expression Syntax
+country Canada
+originCommunity https://github.com/qwertie/loyc.net/issues
+
+example
+ @[#static]
+ fn factorial(x::int)::int {
+   var result = 1;
+   for (; x > 1; x--) {
+     result *= x;
+   };
+   return result;
+ };

@@ -1,0 +1,75 @@
+importOnly
+
+// parsersOnly
+
+// Hashmap parsers
+abstractHashMapMeasureParser
+ string typeForCsvDocs multilineStringMap
+ extends abstractMeasureParser
+ javascript
+  get measureValue() {
+    return this.content
+  }
+
+abstractCountMeasureParser
+ description A positive count of something. People, for example. Min is 0.
+ cells measureNameCell countCell
+ extends abstractIntegerMeasureParser
+
+abstractYearMeasureParser
+ cells measureNameCell yearCell
+ extends abstractIntegerMeasureParser
+
+abstractAnnualPopulationCountParser
+ cells yearCell countCell
+ uniqueFirstWord
+abstractAnnualPopulationCountMapParser
+ catchAllParser abstractAnnualPopulationCountParser
+ description A map of counts, one per year.
+ extends abstractHashMapMeasureParser
+
+abstractUniqueUrlMeasureParser
+ extends abstractUrlMeasureParser
+
+abstractUniqueWordMeasureParser
+ extends abstractWordMeasureParser
+
+abstractUniqueStringMeasureParser
+ extends abstractStringMeasureParser
+
+abstractStringListMeasureParser
+ extends abstractStringMeasureParser
+
+abstractPopulationCountMeasureParser
+ extends abstractIntegerMeasureParser
+
+// todo: idCell
+// Links between concepts
+abstractConceptEdgesMeasureParser
+ description Link one concept to other concepts.
+ catchAllCellType stringCell
+ string typeForCsvDocs conceptFilename[]
+ extends abstractStringMeasureParser
+ javascript
+  get filenames() {
+    return this.getWordsFrom(1)
+  }
+  // todo: re-add the method to update these foreign keys if an ID changes.
+
+
+// Common blob parsers
+abstractStringBlobMeasureParser
+ string typeForCsvDocs multilineString
+ extends abstractMeasureParser
+ baseParser blobParser
+ javascript
+  get measureValue() {
+    return this.childrenToString().replace(/\n/g, "\\n")
+  }
+abstractDelimitedValuesBlobMeasureParser
+ description A CSV, TSV, or other delimited blob of text.
+ // todo: figure out how we want to dump these in CSV export.
+ extends abstractStringBlobMeasureParser
+abstractCodeMeasureParser
+ extends abstractStringBlobMeasureParser
+ baseParser blobParser

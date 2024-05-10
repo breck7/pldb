@@ -1,0 +1,85 @@
+import ../measures/conceptPage.scroll
+id Unicon
+appeared 2008
+type pl
+creators Clint Jeffery
+website http://www.unicon.org/
+domainName unicon.org
+ registered 2004
+
+relatedConcepts icon
+
+hasLineComments true
+ # A comment
+hasComments true
+ # A comment
+hasPrintDebugging true
+hasSemanticIndentation false
+hasStrings true
+ "Hello world"
+hasHexadecimals true
+ # \b([+-]?([2-9]|[12][0-9]|3[0-6])[rR][0-9a-zA-Z]+)\b
+hasFloats true
+ # [+-]?[0-9]*\.([0-9]*)([Ee][+-]?[0-9]*)?
+hasIntegers true
+ # \b([+-]?[0-9]+[KMGTPkmgtp]?)\b
+
+lineCommentToken #
+printToken write
+stringToken "
+
+example
+ procedure main()
+  w := open("test UNICON window", "g")
+  write(w, "Hello, World!")
+  read(w)
+  close(w)
+ end
+
+wikipedia https://en.wikipedia.org/wiki/Unicon_(programming_language)
+ example
+  procedure main()
+  	w := open("test UNICON window", "g")
+  	write(w, "Hello, World!")
+  	read(w)
+  	close(w)
+  end
+ related unix uml unicode rebol curl
+ summary Unicon is a programming language designed by American computer scientist Clint Jeffery with collaborators including Shamim Mohamed, Jafar Al Gharaibeh, Robert Parlett and others. Unicon descended from Icon and a preprocessor for Icon called IDOL. Compared with Icon, Unicon offers better access to the operating system as well as support for object-oriented programming. Unicon began life as a merger of three popular Icon extensions: an OO preprocessor named Idol, a POSIX filesystem and networking interface, and an ODBC facility. The name is shorthand for "Unified Extended Dialect of Icon." Compared with Icon, many of the new features of Unicon are extensions to the I/O and system interface, to complement Icon's core control and data structures. Rather than providing lower-level APIs as-is from C, Unicon implements higher level and easier to use facilities, enabling rapid development of graphic- and network-intensive applications in addition to Icon's core strengths in text and file processing. classes and packages exceptions as a contributed class library - see mailing list loadable child programs monitoring of child programs dynamic loading of C modules (some platforms) multiple inheritance, with novel semantics ODBC database access dbm files can be used as associative arrays posix system interface 3D graphics true concurrency (on platforms supporting Posix threads) When run as a graphical IDE, the Unicon program ui.exe continues to offer links to Icon help. The official Unicon programming book in PDF format is a popular way to learn Unicon. The book includes an introduction to object-oriented development as well as UML. It includes useful chapters on topics such as the use of Unicon for CGI. Recent additions to Unicon include true concurrency. Unicon is not yet Unicode-compliant. There are opportunities posted at a help-wanted page.
+ pageId 902180
+ dailyPageViews 19
+ created 2004
+ backlinksCount 25
+ revisionCount 82
+ appeared 2008
+
+pygmentsHighlighter Unicon
+ filename unicon.py
+ fileExtensions icn
+
+projectEuler Unicon
+ memberCount
+  2019 20
+  2022 20
+leachim6 Unicon
+ filepath u/Unicon.icn
+ fileExtensions icn
+ example
+  procedure main()
+      write("Hello World")
+  end
+  
+rosettaCode http://www.rosettacode.org/wiki/Category:Unicon
+
+fileType text
+isOpenSource true
+centralPackageRepositoryCount 0
+
+isbndb 1
+ year|publisher|title|authors|isbn13
+ 2011||Unicon (programming Language)|Lambert M. Surhone|9786135234947
+
+semanticScholar 2
+ year|title|doi|citations|influentialCitations|authors|paperId
+ 2001|Goal-directed object-oriented programming in Unicon|10.1145/372202.372347|3|0|C. Jeffery|09e1945238747b4f1a1327f1f6a2e0638703afc8
+ 2006|Adding High Level VoIP Facilities to the Unicon Language|10.1109/ITNG.2006.24|2|0|Ziad Al-Sharif and C. Jeffery|150bdbcaf859f03c7e7eb796450d87e38e59ea8e

@@ -1,0 +1,26 @@
+import ../measures/conceptPage.scroll
+id CBOR data definition language
+appeared 2017
+type idl
+conceptDescription Concise Data Definition Language (CDDL): A Notational Convention to Express Concise Binary Object Representation (CBOR) and JSON Data Structures
+reference https://tools.ietf.org/html/draft-ietf-cbor-cddl-00
+standsFor CBOR data definition language
+country Germany
+originCommunity Fraunhofer-Institut für Sichere Informationstechnologie SIT && Technologie-Zentrum Informatik und Informationstechnik
+
+hasOctals true
+hasHexadecimals true
+hasFloats true
+hasIntegers true
+hasBinaryNumbers true
+
+example
+ pii = (
+   age: int,
+   name: tstr,
+   employer: tstr,
+ )
+
+pygmentsHighlighter CDDL
+ filename cddl.py
+ fileExtensions cddl

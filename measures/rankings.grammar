@@ -1,9 +1,0 @@
-rankCell
- extends intCell
-abstractAnnualRankMapParser
- catchAllParser annualRankParser
- description A map of ranks, one per year.
- extends abstractHashMapColumnParser
-annualRankParser
- cells yearCell rankCell
- uniqueFirstWord

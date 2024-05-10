@@ -1,6 +1,0 @@
-hasAssertStatementsParser
- extends abstractFeatureParser
- description Does the language have built in assert statements?
- string title Assert Statements
- string reference https://en.wikipedia.org/wiki/Debug_code#Assert_Statements
- string pseudoExample assert(isTrue)

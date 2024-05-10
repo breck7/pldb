@@ -1,0 +1,25 @@
+import ../measures/conceptPage.scroll
+id Ruby Document format
+appeared 1995
+type textMarkup
+country Various
+originCommunity https://ml.ruby-lang.org/mailman3/hyperkitty/list/ruby-talk@ml.ruby-lang.org
+
+wikipedia https://en.wikipedia.org/wiki/Ruby_Document_format
+ example
+  here.is_a?(Piece::Of::Code)
+  print <<"END"
+  This indented block will not be scanned for formatting
+  codes or directives, and spacing will be preserved.
+  END
+ related ruby rdoc pod
+ summary RD (Ruby Document) is a lightweight markup language for writing Ruby-related documents. It can be embedded in Ruby source code. RD is a traditional format. In modern Ruby, developers tend to write documents in RDoc instead of RD.
+ pageId 2111570
+ created 2005
+ backlinksCount 66
+ revisionCount 58
+ dailyPageViews 6
+ appeared 2002
+
+fileType text
+centralPackageRepositoryCount 0

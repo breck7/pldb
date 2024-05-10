@@ -1,0 +1,111 @@
+import ../measures/conceptPage.scroll
+id LLVM IR
+appeared 2003
+type ir
+website http://llvm.org/docs/LangRef.html
+documentation https://llvm.org/docs/LangRef.html
+aka llvm
+country Various
+originCommunity https://github.com/llvm
+releaseNotesUrl https://releases.llvm.org/14.0.0/docs/ReleaseNotes.html
+
+hasLineComments true
+ ; A comment
+hasComments true
+ ; A comment
+hasSemanticIndentation false
+
+lineCommentToken ;
+
+wikipedia https://en.wikipedia.org/wiki/LLVM
+ example
+  @.str = internal constant [14 x i8] c"hello, world\0A\00"
+  
+  declare i32 @printf(i8*, ...)
+  
+  define i32 @main(i32 %argc, i8** %argv) nounwind {
+  entry:
+      %tmp1 = getelementptr [14 x i8], [14 x i8]* @.str, i32 0, i32 0
+      %tmp2 = call i32 (i8*, ...) @printf( i8* %tmp1 ) nounwind
+      ret i32 0
+  }
+ related c actionscript ada csharp common-lisp crystal d delphi fortran glsl haskell java-bytecode julia lua objective-c python r ruby rust cuda scala swift xojo ios assembly-language java opengl cil standard-ml arm hexagon mips ptx powerpc sparc x86-isa elf c-- pure opencl isbn
+ summary The LLVM compiler infrastructure project is a "collection of modular and reusable compiler and toolchain technologies" used to develop compiler front ends and back ends. LLVM is written in C++ and is designed for compile-time, link-time, run-time, and "idle-time" optimization of programs written in arbitrary programming languages. Originally implemented for C and C++, the language-agnostic design of LLVM has since spawned a wide variety of front ends: languages with compilers that use LLVM include ActionScript, Ada, C#, Common Lisp, Crystal, D, Delphi, Fortran, OpenGL Shading Language, Halide, Haskell, Java bytecode, Julia, Lua, Objective-C, Pony, Python, R, Ruby, Rust, CUDA, Scala, Swift, and Xojo. The LLVM project started in 2000 at the University of Illinois at Urbana–Champaign, under the direction of Vikram Adve and Chris Lattner. LLVM was originally developed as a research infrastructure to investigate dynamic compilation techniques for static and dynamic programming languages. LLVM was released under the University of Illinois/NCSA Open Source License, a permissive free software licence. In 2005, Apple Inc. hired Lattner and formed a team to work on the LLVM system for various uses within Apple's development systems. LLVM is an integral part of Apple's latest development tools for macOS and iOS. Since 2013, Sony has been using LLVM's primary front end Clang compiler in the software development kit (SDK) of its PS4 console. The name LLVM was originally an initialism for Low Level Virtual Machine. This initialism has offically been removed to avoid confusion, as the LLVM has evolved into an umbrella project that has little relationship to what most current developers think of as virtual machines. Now, LLVM is a brand that applies to the LLVM umbrella project, the LLVM intermediate representation (IR), the LLVM debugger, the LLVM C++ Standard Library (with full support of C++11 and C++14), etc. LLVM is administered by the LLVM Foundation. Its president is compiler engineer Tanya Lattner. The Association for Computing Machinery presented Adve, Lattner, and Evan Cheng with the 2012 ACM Software System Award for LLVM.
+ pageId 654611
+ dailyPageViews 693
+ created 2004
+ backlinksCount 252
+ revisionCount 692
+ appeared 2000
+
+githubLanguage LLVM
+ fileExtensions ll
+ trendingProjects
+  author name avatar url language languageColor stars forks currentPeriodStars description
+  llvm-mirror llvm https://github.com/llvm-mirror.png https://github.com/llvm-mirror/llvm LLVM #185619 4073 1911 87 "Mirror of official llvm git repository located at http://llvm.org/git/llvm. Updated every five minutes."
+ trendingProjectsCount 2
+ type programming
+ aceMode text
+ tmScope source.llvm
+ repos 1351
+githubBigQuery LLVM
+ repos 1345
+ users 1263
+
+pygmentsHighlighter LLVM
+ filename asm.py
+ fileExtensions ll
+
+leachim6 LLVM
+ filepath l/LLVM.ll
+ fileExtensions ll
+ example
+  target datalayout = "e-p:32:32:32-i1:8:8-i8:8:8-i16:16:16-i32:32:32-i64:32:64-f32:32:32-f64:32:64-v64:64:64-v128:128:128-a0:0:64-f80:128:128"
+  @.str = internal constant [12 x i8] c"Hello World\00"
+  
+  ; puts from libc
+  declare i32 @puts(i8*)
+  
+  define i32 @main(...) {
+  	call i32 @puts(i8* getelementptr([12 x i8]* @.str, i32 0, i32 0))
+  	ret i32 0
+  }
+  
+quineRelay LLVM asm
+
+compilerExplorer LLVM IR
+ example
+  define i32 @square(i32) local_unnamed_addr #0 {
+      %2 = mul nsw i32 %0, %0
+      ret i32 %2
+  }
+  
+rijuRepl https://riju.codes/llvm
+ example
+  @.str = private unnamed_addr constant [13 x i8] c"Hello, world!"
+  
+  declare i32 @puts(i8* nocapture) nounwind
+  
+  define i32 @main() {
+      %cast210 = getelementptr [13 x i8],[13 x i8]* @.str, i64 0, i64 0
+      call i32 @puts(i8* %cast210)
+      ret i32 0
+  }
+  
+tryItOnline llvm
+
+linkedInSkill llvm
+ 2018 2326
+officialBlogUrl https://blog.llvm.org/tags/llvm-ir/
+eventsPageUrl https://discourse.llvm.org/t/llvm-community-events-calendar/63237
+faqPageUrl https://llvm.org/docs/FAQ.html
+downloadPageUrl https://releases.llvm.org/download.html
+
+ubuntuPackage llvm
+fileType text
+isOpenSource true
+centralPackageRepositoryCount 0
+
+isbndb 0
+
+semanticScholar 0

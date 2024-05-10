@@ -1,0 +1,106 @@
+import ../measures/conceptPage.scroll
+id Twig
+appeared 2009
+type template
+website https://twig.symfony.com/
+domainName twig.symfony.com
+
+hasMultiLineComments true
+ {# A comment
+ #}
+hasComments true
+ {# A comment
+ #}
+hasBooleans true
+hasInheritance true
+hasConditionals true
+
+multiLineCommentTokens {# #}
+booleanTokens true false
+keywords apply autoescape block deprecated do embed extends flush for from if import include macro sandbox set use verbatim with endapply endautoescape endblock endembed endfor endif endmacro endsandbox endset endwith true false
+
+example
+ {% extends "base.html" %}
+ {% block navigation %}
+     <ul id="navigation">
+     {% for item in navigation %}
+         <li>
+             <a href="{{ item.href }}">
+                 {% if item.level == 2 %}&nbsp;&nbsp;{% endif %}
+                 {{ item.caption|upper }}
+             </a>
+         </li>
+     {% endfor %}
+     </ul>
+ {% endblock navigation %}
+
+githubRepo https://github.com/mitsuhiko/twig
+ firstCommit 2008
+ stars 35
+ forks 3
+ subscribers 5
+ created 2008
+ updated 2022
+ description a template engine for the chyrp blog engine.
+ issues 0
+
+repoStats
+ firstCommit 2008
+ commits 9
+ committers 3
+ files 15
+
+wikipedia https://en.wikipedia.org/wiki/Twig_(template_engine)
+ example
+  {% extends "base.html" %}
+  {% block navigation %}
+      <ul id="navigation">
+      {% for item in navigation %}
+          <li>
+              <a href="{{ item.href }}">
+                  {% if item.level == 2 %}&nbsp;&nbsp;{% endif %}
+                  {{ item.caption|upper }}
+              </a>
+          </li>
+      {% endfor %}
+      </ul>
+  {% endblock navigation %}
+ related php jinja django eclipse-editor emacs-editor sublime-editor textmate-editor vim-editor smarty
+ summary Twig is a template engine for the PHP programming language. Its syntax originates from Jinja and Django templates. It's an open source product licensed under a BSD License and maintained by Fabien Potencier. The initial version was created by Armin Ronacher. Symfony2 PHP framework comes with a bundled support for Twig as its default template engine.
+ pageId 30042663
+ dailyPageViews 59
+ created 2010
+ backlinksCount 22
+ revisionCount 89
+ appeared 2009
+
+githubLanguage Twig
+ fileExtensions twig
+ trendingProjectsCount 0
+ type markup
+ aceMode twig
+ codemirrorMode twig
+ codemirrorMimeType text/x-twig
+ tmScope text.html.twig
+ repos 5791
+githubBigQuery Twig
+ repos 811
+ users 626
+
+monaco twig
+codeMirror twig
+pygmentsHighlighter Twig
+ filename templates.py
+linguistGrammarRepo https://github.com/Anomareh/PHP-Twig.tmbundle
+ firstCommit 2010
+ lastCommit 2016
+ committerCount 13
+ commitCount 86
+
+fileType text
+isOpenSource true
+centralPackageRepositoryCount 0
+
+isbndb 0
+
+semanticScholar 0

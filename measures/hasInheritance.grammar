@@ -1,6 +1,0 @@
-hasInheritanceParser
- extends abstractFeatureParser
- description Does this language have class inheritance?
- string title Inheritance
- string pseudoExample class PLDBFile extends File
- string reference https://en.wikipedia.org/wiki/Inheritance_(object-oriented_programming)

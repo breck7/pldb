@@ -1,0 +1,12 @@
+import ../measures/conceptPage.scroll
+id Verse
+appeared 2022
+type pl
+creators Simon Peyton Jones and Tim Sweeney and Lennart Augustsson and Koen Claess
+reference https://simon.peytonjones.org/assets/pdfs/haskell-exchange-22.pdf
+
+example
+ f(p:int,q:int):int :=
+ if (x=0) then { p=3; q=4 } 
+ else { p=232; q=913 }; y:int; z:int;
+ f(y,z); y+z

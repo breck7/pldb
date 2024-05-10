@@ -1,5 +1,0 @@
-semanticScholarParser
- boolean fromCrawler true
- extends abstractDelimitedValuesBlobColumnParser
- description What are papers about this language from Semantic Scholar?
- string sourceDomain semanticscholar.org

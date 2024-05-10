@@ -1,6 +1,0 @@
-hasNullParser
- extends abstractFeatureParser
- description Does the language have a null value?
- string title Null
- string reference https://en.wikipedia.org/wiki/Null_pointer
- string pseudoExample uhOh = null

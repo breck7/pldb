@@ -1,0 +1,42 @@
+import ../measures/conceptPage.scroll
+id Pod6
+appeared 2019
+type textMarkup
+creators Aliaksandr Zahatski
+website https://pod6.in
+country Unknown
+originCommunity https://github.com/zag/js-pod6/issues
+domainName pod6.in
+ registered 2012
+
+example
+ =begin pod
+  This is an ordinary paragraph
+ 
+     While this is not
+     This is a code block
+     
+     =head1 Mumble mumble
+     
+     Suprisingly, this is not a code block
+         (with fancy indentation too)
+ 
+ But this is just a text. Again
+ 
+ =end pod
+
+githubRepo https://github.com/zag/js-pod6
+ firstCommit 2019
+ stars 8
+ forks 0
+ subscribers 2
+ created 2019
+ updated 2022
+ description Pod6 is an easy-to-use markup language. It can be used for writing language documentation, for documenting programs and modules, as well as for other types of document composition
+ issues 17
+
+repoStats
+ firstCommit 2019
+ commits 269
+ committers 2
+ files 155

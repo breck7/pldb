@@ -1,0 +1,45 @@
+import ../measures/conceptPage.scroll
+id Fibonacci
+appeared 1991
+type pl
+creators Antonio Albano and Giorgio Ghelli and and Renzo Orsini
+conceptDescription Fibonacci is an object-oriented database programming language characterized by static and strong typing, and by new mechanisms for modeling databases in terms of objects with roles, classes, and associations.
+reference https://dl.acm.org/doi/pdf/10.5555/615224.615227
+reference https://semanticscholar.org/paper/3b9aa468a7bd9d75811680a3a3db1a42b73dbdf7
+country Italy
+originCommunity Università di Pisa
+
+hasComments true
+ (* query examples *)
+hasMultiLineComments true
+ (* A comment
+ *)
+hasSemanticIndentation false
+
+multiLineCommentTokens (* *)
+
+example
+ let john = role Person
+  private
+   let address = var ("Darwin road, 123 - London") ;5
+  methods
+   Name = "John Daniels";
+   BirthYear = 1967;
+   Age = currentYear() - me.BirthYear;
+   Address = at (address);
+   modAddress (newAddress: String) =
+       if stringLength(newAddress) <= 0
+       then failwith "incorrect address"
+       else address := newAddress
+   Introduce = "My name is " & me.Name &
+        "and I was born in " ~ intToString(me.BirthYear);
+ end; 
+
+hopl https://hopl.info/showlanguage.prx?exp=5759
+
+centralPackageRepositoryCount 0
+
+isbndb 2
+ year|publisher|title|authors|isbn13
+ 20200505|World Scientific Publishing|"Mathematics Of Harmony As A New Interdisciplinary Direction And ""Golden"" Paradigm Of Modern Science - Volume 1: The Golden Section, Fibonacci Numbers, Pascal Triangle, And Platonic Solids"|Alexey Stakhov|9789811206382
+ 20141011|Emereo|Fibonacci number 81 Success Secrets - 81 Most Asked Questions On Fibonacci number - What You Need To Know|Lois Mckay|9781488805868

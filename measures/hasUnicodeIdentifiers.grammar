@@ -1,6 +1,0 @@
-hasUnicodeIdentifiersParser
- extends abstractFeatureParser
- description Does the language support Unicode identifiers?
- // some support only ASCII
- string title Unicode Identifers
- string pseudoExample δ = 0.00001

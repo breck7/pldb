@@ -1,0 +1,18 @@
+import ../measures/conceptPage.scroll
+id Nelua
+appeared 2019
+type pl
+country United States
+originCommunity https://github.com/edubart/nelua-lang/issues
+
+compilesTo c
+relatedConcepts lua
+
+rijuRepl https://riju.codes/nelua
+ example
+  print 'Hello, world!'
+  
+ description Systems programming language for performance sensitive applications
+ fileExtensions nelua
+ website https://nelua.io/
+ gitRepo https://github.com/edubart/nelua-lang

@@ -1,0 +1,48 @@
+import ../measures/conceptPage.scroll
+id UCL
+appeared 2013
+type dataNotation
+standsFor Universal Configuration Language
+
+example
+ param = value;
+ section {
+     param = value;
+     param1 = value1;
+     flag = true;
+     number = 10k;
+     time = 0.2s;
+     string = "something";
+     subsection {
+         host = {
+             host = "hostname";
+             port = 900;
+         }
+         host = {
+             host = "hostname";
+             port = 901;
+         }
+     }
+ }
+
+githubRepo https://github.com/vstakhov/libucl
+ stars 1443
+ forks 139
+ subscribers 53
+ created 2013
+ updated 2022
+ firstCommit 2013
+ description Universal configuration library parser
+ issues 67
+
+repoStats
+ firstCommit 2013
+ commits 1078
+ committers 56
+ files 170
+
+fileType text
+isOpenSource true
+centralPackageRepositoryCount 0
+
+isbndb 0

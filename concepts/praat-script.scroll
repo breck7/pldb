@@ -1,0 +1,51 @@
+import ../measures/conceptPage.scroll
+id Praat Script
+appeared 1997
+type pl
+conceptDescription The language is bundled with Praat, a speech analysis tool, to execute menu and action commands.
+website https://www.fon.hum.uva.nl/praat/manual/Praat_script.html
+country The Netherlands
+originCommunity Universiteit van Amsterdam
+
+hasLineComments true
+ # A comment
+hasComments true
+ # A comment
+hasSemanticIndentation false
+
+lineCommentToken #
+
+example
+ clearinfo
+ # print fizzbuzz result
+ procedure fizzbuzz: .i
+ 	if .i mod 15 == 0
+ 		appendInfoLine: "fizzbuzz"
+ 	elsif .i mod 3 == 0
+ 		appendInfoLine: "fizz"
+ 	elsif .i mod 5 == 0
+ 		appendInfoLine: "buzz"
+ 	else
+ 		appendInfoLine: .i
+ 	endif
+ endproc
+ 
+ for i from 1 to 100
+ 	@fizzbuzz: i
+ endfor
+
+githubRepo https://github.com/praat/praat
+ firstCommit 2005
+ stars 915
+ forks 195
+ subscribers 44
+ created 2014
+ updated 2022
+ description Praat: Doing Phonetics By Computer
+ issues 50
+
+repoStats
+ firstCommit 2005
+ commits 7914
+ committers 17
+ files 3231

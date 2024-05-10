@@ -1,0 +1,48 @@
+import ../measures/conceptPage.scroll
+id Lisaac
+appeared 2003
+type pl
+website https://lisaac.org/
+reference https://en.bmstu.wiki/Lisaac
+country France
+originCommunity https://web.archive.org/web/20071111235238/http://isaacproject.u-strasbg.fr/community.html
+
+hasPrintDebugging true
+
+printToken .print
+
+leachim6 Lisaac
+ filepath l/Lisaac.li
+ fileExtensions li
+ example
+  // Hello World in Lisaac
+  
+  Section Header
+  	+ name		:= HELLO_WORLD;
+  
+  Section Inherit
+  
+  	- parent_object:OBJECT := OBJECT;
+  
+  Section Public
+  
+  	- main <-
+  	(
+  		"Hello World !\n".print;
+  	);
+  
+rosettaCode http://www.rosettacode.org/wiki/Category:Lisaac
+
+rijuRepl https://riju.codes/lisaac
+ example
+  Section Header
+    + name := MAIN;
+  
+  Section Public
+    - main <-
+    (
+      "Hello, world!\n".print;
+    );
+  
+
+centralPackageRepositoryCount 0

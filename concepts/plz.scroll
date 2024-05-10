@@ -1,0 +1,63 @@
+import ../measures/conceptPage.scroll
+id PLZ
+appeared 1979
+type pl
+conceptDescription PLZ/SYS is intended to aid the implementation of system programs for microcomputers. PLZ/SYS is a synthesis of concepts from contemporary programming languages and compilers--the language Pascal has had the most notable influence on the overall design and implementation of PLZ/SYS.
+reference https://semanticscholar.org/paper/a6f73d43d666ff8763b9cc97ce408243c9b95038
+country United States
+originCommunity Zilog, Inc
+
+influencedBy pascal
+
+hasBooleans true
+
+booleanTokens true false
+
+example
+ bubble sort MODULE
+ 
+ CONSTANT
+  false : .. 0
+  true := 1
+  
+ EXTERNAL
+  printarray PROCEDURE (first tWORD count BYTE)
+  
+ INTERNAL
+  a ARRAY [10 WORD]
+   := [33 10 2000 400 410
+    3 3 33 500 1999]
+  sort PROCEDURE (n BYTE)
+   LOCAL
+    i j limit BYTE
+    temp WORD
+    switched BYTE
+   ENTRY
+   DO
+    switched := false
+     i := 0
+     limit := n-2
+     DO
+      IF i > limit THEN EXIT FI
+      j := i + 1
+      IF a[i] > a[j] THEN
+       switched := true
+       temp :'" a [i)
+       a[i] := a[j]
+       a [j] : .. temp
+      FI
+      i +- 1
+    OD
+    IF switched .. false THEN RETURN FI
+   END sort
+ GLOBAL
+  main PROCEDURE
+   ENTRY
+    sort (10)
+    printarray(ta[O] 10)
+   END main
+ END bubble sort
+
+hopl https://hopl.info/showlanguage.prx?exp=865
+
+centralPackageRepositoryCount 0

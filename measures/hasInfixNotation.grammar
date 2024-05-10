@@ -1,6 +1,0 @@
-hasInfixNotationParser
- extends abstractFeatureParser
- description Does this language use operators between operands?
- string title Infix Notation
- string pseudoExample 1 + 2
- string reference https://en.wikipedia.org/wiki/Infix_notation

@@ -1,6 +1,0 @@
-hasLabelsParser
- extends abstractFeatureParser
- description Does the language have a way to label locations within the source code?
- string title Labels
- string pseudoExample mainFn:
- string reference https://en.wikipedia.org/wiki/Label_(computer_science)

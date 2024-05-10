@@ -1,0 +1,76 @@
+import ../measures/conceptPage.scroll
+id Self
+appeared 1987
+type pl
+creators David Ungar
+website http://www.selflanguage.org
+documentation https://handbook.selflanguage.org/2017.1/index.html
+reference https://www.youtube.com/watch?v=Ox5P7QyL774
+country United States
+originCommunity Sun Microsystems, Inc
+domainName selflanguage.org
+ registered 2009
+ awisRank
+  2022 8060537
+
+hasMessagePassing true
+hasPrintDebugging true
+hasSemanticIndentation false
+hasStrings true
+ 'Hello world'
+
+printToken printLine
+stringToken '
+
+wikipedia https://en.wikipedia.org/wiki/Self_(programming_language)
+ example
+  _AddSlots: (| porsche911 <- sportsCar copy |).
+  porsche911 name:'Bobs Porsche'.
+ related smalltalk newtonscript javascript io agora squeak lisaac lua factor rebol java solaris linux c cecil ioke
+ summary Self is an object-oriented programming language based on the concept of prototypes. Self began as a dialect of Smalltalk, being dynamically typed and using just-in-time compilation (JIT) as well as the prototype-based approach to objects: it was first used as an experimental test system for language design in the 1980s and 1990s. In 2006, Self was still being developed as part of the Klein project, which was a Self virtual machine written fully in Self. The latest version is 2017.1 released in May 2017. Several just-in-time compilation techniques were pioneered and improved in Self research as they were required to allow a very high level object oriented language to perform at up to half the speed of optimized C. Much of the development of Self took place at Sun Microsystems, and the techniques they developed were later deployed for Java's HotSpot virtual machine. At one point a version of Smalltalk was implemented in Self. Because it was able to use the JIT, this also gave extremely good performance.
+ pageId 60265
+ dailyPageViews 88
+ created 2002
+ backlinksCount 87
+ revisionCount 350
+ appeared 1987
+
+githubLanguage Self
+ fileExtensions self
+ trendingProjectsCount 0
+ type programming
+ aceMode text
+ tmScope none
+ repos 36
+githubBigQuery Self
+ repos 26
+ users 24
+
+helloWorldCollection Self
+ (|  "Hello World in Self"
+ 
+   hello = (| | 'Hello World!' print)
+ |)
+ 
+leachim6 Self
+ filepath s/Self.self
+ fileExtensions self
+ example
+  'Hello World' printLine
+rosettaCode http://www.rosettacode.org/wiki/Category:Self
+
+hopl https://hopl.info/showlanguage.prx?exp=1361
+
+fileType text
+wordRank 697
+isOpenSource true
+centralPackageRepositoryCount 0
+
+isbndb 1
+ year|publisher|title|authors|isbn13
+ 2015|CreateSpace Independent Publishing Platform|Dark NLP: How To Use Neuro-linguistic Programming For Self Mastery, Getting What You Want, Mastering Others And To Gain An Advantage Over Anyone|Pace, Michael|9781518825392
+
+semanticScholar 2
+ year|title|doi|citations|influentialCitations|authors|paperId
+ 2007|Self|10.1145/1238844.1238853|218|8|D. Ungar and Randall B. Smith|f2ba08767970ae656b6af921fd96dd359e27ab41
+ 1995|Programming as an Experience: The Inspiration for Self|10.1007/3-540-49538-X_15|112|5|Randall B. Smith and D. Ungar|8f4083c32a564a9f101ae6e907b94d4e50dc739f

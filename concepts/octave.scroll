@@ -1,0 +1,90 @@
+import ../measures/conceptPage.scroll
+id GNU Octave
+appeared 1988
+type pl
+website https://gnu.org/software/octave/
+documentation https://docs.octave.org/interpreter/
+country United States
+originCommunity University of Wisconsin-Madison && University of Texas
+
+hasComments true
+hasLineComments true
+ % A comment
+hasPrintDebugging true
+hasSemanticIndentation false
+hasStrings true
+ "Hello world"
+hasFloats true
+ % (\d+\.\d*|\d*\.\d+)([eEf][+-]?[0-9]+)?
+hasIntegers true
+ % \d+
+hasMultiLineComments true
+
+lineCommentToken %
+printToken printf
+stringToken "
+
+wikipedia https://en.wikipedia.org/wiki/GNU_Octave
+ example
+  % create figure and panel on it
+  f = figure;
+  % create a button group
+  gp = uibuttongroup (f, "Position", [ 0 0.5 1 1])
+  % create a buttons in the group
+  b1 = uicontrol (gp, "style", "radiobutton", "string", "Choice 1", "Position", [ 10 150 100 50 ]);
+  b2 = uicontrol (gp, "style", "radiobutton", "string", "Choice 2", "Position", [ 10 50 100 30 ]);
+  % create a button not in the group
+  b3 = uicontrol (f, "style", "radiobutton","string", "Not in the group","Position", [ 10 50 100 50 ]);
+ related linux c fortran scilab opengl gnuplot unix bash lisp qt
+ summary GNU Octave is software featuring a high-level programming language, primarily intended for numerical computations. Octave helps in solving linear and nonlinear problems numerically, and for performing other numerical experiments using a language that is mostly compatible with Matlab. It may also be used as a batch-oriented language. Since it is part of the GNU Project, it is free software under the terms of the GNU General Public License. Octave is one of the major free alternatives to Matlab, others being Scilab and FreeMat. Scilab, however, puts less emphasis on (bidirectional) syntactic compatibility with Matlab than Octave does.
+ pageId 48707
+ dailyPageViews 467
+ created 2002
+ backlinksCount 613
+ revisionCount 653
+ appeared 1988
+
+codeMirror octave
+pygmentsHighlighter Octave
+ filename matlab.py
+ fileExtensions m
+
+projectEuler Octave
+ memberCount
+  2019 137
+  2022 150
+helloWorldCollection GNU Octave
+ #Hello World in Octave (http://www.octave.org/)
+ printf("Hello World\n");
+ 
+leachim6 Octave
+ filepath o/Octave.m
+ fileExtensions m
+ example
+  printf("Hello World");
+  
+rosettaCode http://www.rosettacode.org/wiki/Category:Octave
+quineRelay Octave
+
+rijuRepl https://riju.codes/octave
+ example
+  disp("Hello, world!")
+  
+tryItOnline octave
+
+tiobe GNU Octave
+hopl https://hopl.info/showlanguage.prx?exp=2302
+
+ubuntuPackage octave
+jupyterKernel https://github.com/calysto/octave_kernel
+fileType text
+isOpenSource true
+centralPackageRepositoryCount 0
+
+goodreads
+ title|year|author|goodreadsId|rating|ratings|reviews
+ Scientific Computing with MATLAB and Octave|2003|Alfio Quarteroni|312792|4.10|10|0
+
+isbndb 0
+
+semanticScholar 0

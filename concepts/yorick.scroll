@@ -1,0 +1,66 @@
+import ../measures/conceptPage.scroll
+id Yorick
+appeared 1996
+type pl
+creators David H. Munro
+website http://yorick.github.com
+fileExtensions i
+domainName yorick.github.com
+
+hasPrintDebugging true
+hasStrings true
+ "Hello world"
+
+printToken print
+stringToken "
+
+wikipedia https://en.wikipedia.org/wiki/Yorick_(programming_language)
+ example
+  > x=[[1,2,3],[4,5,6]]
+  > x
+  [[1,2,3],[4,5,6]]
+  > y=[[7,8],[9,10],[11,12]]
+  > x(,+)*y(+,)
+  [[39,54,69],[49,68,87],[59,82,105]]
+  > x(+,)*y(,+)
+  [[58,139],[64,154]]
+ related c fortran perl-data-language
+ summary Yorick is an interpreted programming language designed for numerics, graph plotting, and steering large scientific simulation codes. It is quite fast due to array syntax, and extensible via C or Fortran routines. It was created in 1996 by David H. Munro of Lawrence Livermore National Laboratory.
+ pageId 175271
+ dailyPageViews 14
+ created 2003
+ backlinksCount 10
+ revisionCount 79
+ appeared 1996
+ fileExtensions i
+
+leachim6 Yorick
+ filepath y/Yorick.i
+ fileExtensions i
+ example
+  #!/usr/bin/yorick -batch
+  print, "Hello World";
+  
+rosettaCode http://www.rosettacode.org/wiki/Category:Yorick
+quineRelay Yorick
+
+rijuRepl https://riju.codes/yorick
+ example
+  write, "Hello, world!"
+  
+
+tiobe Yorick
+hopl https://hopl.info/showlanguage.prx?exp=2637
+
+ubuntuPackage yorick
+fileType text
+isOpenSource true
+centralPackageRepositoryCount 0
+
+isbndb 1
+ year|publisher|title|authors|isbn13
+ ||Yorick (programming Language)|Surhone and Lambert M. and Tennoe and Mariam T. and Henssonow and Susan F.|9786133269828
+
+semanticScholar 1
+ year|title|doi|citations|influentialCitations|authors|paperId
+ 1976|"Review of ""Coputational Semantics: An Introduction to Artificial Intelligence and Natural Language Comprhension by Eugue Charniak and Yorick Wilks, Eds."" North-Holland, Amer. Elsevier."|10.1145/1045276.1045281|5|0|M. Rychener|a218cf15a4920446d1f432272028f9326725a65f

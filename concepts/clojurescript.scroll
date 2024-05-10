@@ -1,0 +1,81 @@
+import ../measures/conceptPage.scroll
+id ClojureScript
+appeared 2011
+type pl
+website https://clojurescript.org/
+webRepl https://clojurescript.io/
+cheatSheetUrl http://cljs.info/cheatsheet/
+country Various
+originCommunity https://github.com/clojure
+domainName clojurescript.org
+ registered 2011
+ awisRank
+  2022 403705
+  2017 660977
+firstAnnouncement http://clojure.com/blog/2011/07/22/introducing-clojurescript.html
+announcementMethod blogPost
+
+compilesTo javascript
+
+hasPrintDebugging true
+hasHexadecimals true
+hasFloats true
+hasIntegers true
+hasLineComments true
+hasComments true
+
+printToken println
+
+githubRepo https://github.com/clojure/clojurescript
+ stars 8887
+ forks 783
+ subscribers 379
+ created 2011
+ updated 2022
+ firstCommit 2011
+ description Clojure to JS compiler
+ issues 2
+
+repoStats
+ firstCommit 2011
+ commits 6165
+ committers 248
+ files 392
+
+pygmentsHighlighter ClojureScript
+ filename jvm.py
+ fileExtensions cljs
+
+rijuRepl https://riju.codes/clojurescript
+ example
+  (println "Hello, world!")
+  
+ description Compiler for Clojure that targets JavaScript
+ fileExtensions cljs
+ website https://clojurescript.org/
+ gitRepo https://github.com/clojure/clojurescript
+
+subreddit https://reddit.com/r/Clojurescript
+ memberCount
+  2022 2985
+
+fileType text
+isOpenSource true
+centralPackageRepositoryCount 0
+
+goodreads
+ title|year|author|goodreadsId|rating|ratings|reviews
+ Clojurescript: Up and Running: Functional Programming for the Web|2015|Stuart Sierra|46459747|4.00|1|0
+ Reactive with Clojurescript Recipes: Functional Programming for the Web||Nicolas Modrzyk|57019123|0.0|0|0
+ Reactive with ClojureScript Recipes: Functional Programming for the Web||Nicolas Modrzyk|59492133|0.0|0|0
+
+isbndb 6
+ year|publisher|title|authors|isbn13
+ 20170928|Springer Nature|Reactive with ClojureScript Recipes|Nicolas Modrzyk|9781484230091
+ 2020|Packt Publishing|The Clojure Workshop: Use functional programming to build data-centric applications with Clojure and ClojureScript|Fahey, Joseph and Haratyk, Thomas and McCaughie, Scott and Sharvit, Yehonathan and Szydlo, Konrad|9781838825119
+ 2017-09-29T00:00:01Z|Apress|Reactive with ClojureScript Recipes: Functional Programming for the Web|Modrzyk, Nicolas|9781484230084
+ 30-06-2016|Packt Publishing|Learning ClojureScript|W. David Jarvis|9781785887796
+ 2016-06-30|Packt Publishing|Learning ClojureScript|W. David Jarvis and Allen Rohner|9781785887635
+ 20151116|O'Reilly Media, Inc.|Etudes for ClojureScript|J.  David Eisenberg|9781491952306
+
+semanticScholar 0

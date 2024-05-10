@@ -1,0 +1,48 @@
+import ../measures/conceptPage.scroll
+id scribble
+appeared 1997
+type pl
+creators Matthew Flatt
+country United States 
+originCommunity https://github.com/racket
+
+example
+ #lang scribble/doc
+ @(require scribble/manual "utils.rkt"
+           (for-syntax racket/base)
+           (for-label scribble/manual-struct
+                      version/utils
+                      syntax/quote))
+ 
+ @(define lit-ellipses (racket ...))
+ @(define lit-ellipses+ (racket ...+))
+ 
+ @title[#:tag "manual" #:style 'toc]{Manual Forms}
+ 
+ @defmodulelang[scribble/manual]{The @racketmodname[scribble/manual]
+ language provides all of @racketmodname[scribble/base] plus many
+ additional functions that are specific to writing Racket
+ documentation. It also associates @tech{style properties} with the
+ generated @racket[doc] export to select the default Racket manual
+ style for rendering; see @secref["manual-render-style"] for more
+ information.
+ 
+ The @racketmodname[scribble/manual] name can also be used as a library
+ with @racket[require], in which case it provides all of the same
+ bindings, but without setting the reader or setting the default
+ rendering format to the Racket manual format.}
+
+githubRepo https://github.com/racket/scribble
+ firstCommit 1997
+ stars 151
+ forks 81
+ subscribers 28
+ created 2014
+ updated 2022
+ issues 98
+
+repoStats
+ firstCommit 1997
+ commits 2165
+ committers 93
+ files 393

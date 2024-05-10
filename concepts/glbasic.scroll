@@ -1,0 +1,33 @@
+import ../measures/conceptPage.scroll
+id GLBasic
+appeared 2003
+type pl
+website http://www.glbasic.com/
+country Unknown
+originCommunity Dream Design Entertainment Software
+domainName glbasic.com
+ registered 2003
+ awisRank
+  2022 5595095
+
+wikipedia https://en.wikipedia.org/wiki/GLBasic
+ example
+  FUNCTION add: v AS Tvec
+     INC self.x, v.x
+     INC self.y, v.y
+     INC self.z, v.z
+    END FUNCTION
+   END TYPE
+ related basic linux c opengl ios android sdlbasic fenix-project
+ summary GLBasic is a commercial BASIC programming language that can compile to various platforms including Windows, Linux, Mac OS X, as well as some handheld devices. The language is designed to be simple and intuitive.
+ created 2008
+ backlinksCount 111
+ pageId 19628971
+ revisionCount 171
+ dailyPageViews 16
+ appeared 2014
+
+rosettaCode http://www.rosettacode.org/wiki/Category:GLBasic
+
+isOpenSource true
+centralPackageRepositoryCount 0

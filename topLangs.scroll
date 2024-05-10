@@ -1,0 +1,17 @@
+importOnly
+
+// todo: make this generated again?
+
+Top Languages
+ link ./lists/top1000.html
+ class pldbHomepageLink
+
+replaceNodejs
+ const {Tables} = require("./Computer.js")
+ module.exports = {
+      TOP_LANGS: Tables.top.slice(0, 10)
+        .map(file => `<a href="${file.idLink.replace("../", "")}">${file.id}</a>`)
+        .join(" · ")
+    }
+
+TOP_LANGS

@@ -1,6 +1,0 @@
-hasTypeParametersParser
- extends abstractFeatureParser
- description Does the language support a concept of type parameters?
- string title Type Parameters
- string pseudoExample function identity<T>(arg: T): T {return arg}
- string reference https://en.wikipedia.org/wiki/TypeParameter

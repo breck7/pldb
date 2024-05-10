@@ -1,0 +1,14 @@
+import ../measures/conceptPage.scroll
+id Lighttpd configuration file
+appeared 2003
+type configFormat
+reference http://lighttpd.net/
+country Germany
+originCommunity University of Applied Sciences
+
+hasLineComments true
+hasComments true
+
+pygmentsHighlighter Lighttpd configuration file
+ filename configs.py
+ fileExtensions lighttpd.conf

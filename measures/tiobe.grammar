@@ -1,8 +1,0 @@
-tiobeParser
- extends abstractMultiwordGuidColumnParser
- description What is the ID of this language in Tiobe's ranking of programming languages here: https://www.tiobe.com/tiobe-index/?
- string sourceDomain tiobe.com
- contentKey id
- currentRankParser
-  description What is the current Tiobe rank of this language?
-  extends abstractIntColumnParser

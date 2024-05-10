@@ -1,0 +1,43 @@
+import ../measures/conceptPage.scroll
+id VRML
+appeared 1994
+type pl
+
+hasStrings true
+ "Hello world"
+
+stringToken "
+
+wikipedia https://en.wikipedia.org/wiki/VRML
+ related java ecmascript gzip collada webgl
+ summary VRML (Virtual Reality Modeling Language, pronounced vermal or by its initials, originally—before 1995—known as the Virtual Reality Markup Language) is a standard file format for representing 3-dimensional (3D) interactive vector graphics, designed particularly with the World Wide Web in mind. It has been superseded by X3D.
+ created 2002
+ backlinksCount 384
+ pageId 101679
+ revisionCount 802
+ dailyPageViews 170
+ appeared 1995
+
+leachim6 VRML
+ filepath v/VRML.wrl
+ fileExtensions wrl
+ example
+  #VRML V2.0 utf8
+  Shape {
+      geometry Text {
+          string "Hello World"
+      }
+  }
+rosettaCode http://www.rosettacode.org/wiki/Category:VRML
+
+hopl https://hopl.info/showlanguage.prx?exp=3756
+
+centralPackageRepositoryCount 0
+
+isbndb 5
+ year|publisher|title|authors|isbn13
+ 1996|Addison-Wesley Professional|The Vrml 2.0 Handbook: Building Moving Worlds on the Web|Hartman, Jed and Wernecke, Josie|9780201479447
+ 1996|Ziff Davis Pr|Instant Vrml Worlds|Kennedy, Randall|9781562764210
+ 1995|Hayden Books|Virtus Vrml Toolkit|Smith, David and Boyd, Richard and Scott, Alan|9781568302478
+ 2010|LAP Lambert Academic Publishing|Managing Active Object Scalability on Distributed Memory: With a Case Study in Parallel VRML|Rischbeck, Thomas|9783838307282
+ 1996|Waite Group|VRML Construction Kit: Creating 3D Web Worlds|David Fox and Philip Shaddock|9781571690685

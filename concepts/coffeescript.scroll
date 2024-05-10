@@ -1,0 +1,168 @@
+import ../measures/conceptPage.scroll
+id CoffeeScript
+appeared 2009
+type pl
+creators Jeremy Ashkenas
+website http://coffeescript.org
+documentation https://coffeescript.org/#introduction
+documentation https://devdocs.io/coffeescript~1/
+aka coffee
+fileExtensions coffee litcoffee
+country United States
+originCommunity https://github.com/jashkenas
+domainName coffeescript.org
+ registered 2009
+ awisRank
+  2022 383033
+  2017 128299
+
+compilesTo javascript
+
+hasVariableSubstitutionSyntax false
+hasComments true
+hasSemanticIndentation true
+hasCaseInsensitiveIdentifiers false
+hasLineComments true
+ # A comment
+hasPrintDebugging true
+hasMultiLineComments true
+ ### A comment
+ ###
+hasStrings true
+hasRegularExpressionsSyntaxSugar true
+hasBooleans true
+hasWhileLoops true
+hasClasses true
+hasExceptions true
+hasSwitch true
+hasInheritance true
+hasConditionals true
+hasHexadecimals true
+ # 0x[0-9a-fA-F]+
+hasFloats true
+ # [0-9][0-9]*\.[0-9]+([eE][0-9]+)?[fd]?
+hasIntegers true
+ # [0-9]+
+
+lineCommentToken #
+multiLineCommentTokens ###
+printToken console.log
+stringToken "
+booleanTokens true false
+keywords and or is isnt not on yes @ no off true false null this new delete typeof in instanceof return throw break continue debugger if else switch for while do try catch finally class extends super undefined then unless until loop of by when
+
+wikipedia https://en.wikipedia.org/wiki/CoffeeScript
+ example
+  author = "Wittgenstein"
+  quote  = "A picture is a fact. -- #{ author }"
+  
+  sentence = "#{ 22 / 7 } is a decent approximation of π"
+ related haskell javascript perl python ruby yaml livescript rails jquery maven-pom java markdown elm haxe dart opa typescript
+ summary CoffeeScript is a programming language that transcompiles to JavaScript. It adds syntactic sugar inspired by Ruby, Python and Haskell in an effort to enhance JavaScript's brevity and readability. Specific additional features include list comprehension and pattern matching. CoffeeScript support is included in Ruby on Rails version 3.1 and Play Framework. In 2011, Brendan Eich referenced CoffeeScript as an influence on his thoughts about the future of JavaScript.
+ pageId 27403236
+ dailyPageViews 295
+ created 2010
+ backlinksCount 205
+ revisionCount 394
+ appeared 2011
+ fileExtensions coffee litcoffee
+
+githubLanguage CoffeeScript
+ fileExtensions coffee _coffee cake cjsx iced
+ trendingProjects
+  author name avatar url language languageColor stars forks currentPeriodStars description
+  cypress-io cypress https://github.com/cypress-io.png https://github.com/cypress-io/cypress CoffeeScript #244776 14465 770 668 "Fast, easy and reliable testing for anything that runs in a browser."
+  basecamp trix https://github.com/basecamp.png https://github.com/basecamp/trix CoffeeScript #244776 13950 661 171 "A rich text editor for everyday writing"
+  codecombat codecombat https://github.com/codecombat.png https://github.com/codecombat/codecombat CoffeeScript #244776 6869 3506 42 "Game for learning how to code."
+  overleaf overleaf https://github.com/overleaf.png https://github.com/overleaf/overleaf CoffeeScript #244776 5599 712 110 "A web-based collaborative LaTeX editor"
+  FelisCatus SwitchyOmega https://github.com/FelisCatus.png https://github.com/FelisCatus/SwitchyOmega CoffeeScript #244776 13272 2230 266 "Manage and switch between multiple proxies quickly & easily."
+  philc vimium https://github.com/philc.png https://github.com/philc/vimium CoffeeScript #244776 11430 1380 164 "The hacker's browser."
+ trendingProjectsCount 7
+ type programming
+ filenames Cakefile
+ interpreters coffee
+ aceMode coffee
+ codemirrorMode coffeescript
+ codemirrorMimeType text/x-coffeescript
+ tmScope source.coffee
+ aliases coffee or coffee-script
+ repos 64590
+githubBigQuery CoffeeScript
+ repos 68631
+ users 44937
+
+monaco coffee
+codeMirror coffeescript
+pygmentsHighlighter CoffeeScript
+ filename javascript.py
+ fileExtensions coffee
+linguistGrammarRepo https://github.com/atom/language-coffee-script
+ firstCommit 2013
+ lastCommit 2018
+ committerCount 30
+ commitCount 332
+ sampleCount 10
+ example
+  console.log "Hello, World!"
+  
+
+helloWorldCollection CoffeeScript
+ // Hello world in CoffeeScript
+ 
+ alert "Hello, World!"
+leachim6 CoffeeScript
+ filepath c/CoffeeScript.coffee
+ fileExtensions coffee
+ example
+  alert "Hello World"
+  
+rosettaCode http://www.rosettacode.org/wiki/Category:CoffeeScript
+quineRelay CoffeeScript
+
+rijuRepl https://riju.codes/coffeescript
+ example
+  console.log "Hello, world!"
+  
+ description Compile-to-JavaScript programming language adding syntactic sugar inspired by Ruby, Python and Haskell in an effort to enhance JavaScript's brevity and readability
+ fileExtensions coffee litcoffee
+ website https://coffeescript.org/
+ gitRepo https://github.com/jashkenas/coffeescript
+replit https://repl.it/languages/coffeescript
+tryItOnline coffeescript
+
+linkedInSkill coffeescript
+ 2018 21574
+faqPageUrl https://github.com/jashkenas/coffeescript/wiki/FAQ
+
+tiobe CoffeeScript
+
+ubuntuPackage coffeescript
+jupyterKernel https://github.com/n-riesco/jp-coffeescript
+fileType text
+isOpenSource true
+centralPackageRepositoryCount 0
+
+goodreads
+ title|year|author|goodreadsId|rating|ratings|reviews
+ Programming in CoffeeScript (Developer's Library)|2012|Mark Bates|19193715|3.50|22|2
+ Coffeescript Programming with Jquery, Rails, and Node.Js|2012|Michael Erasmus|23544945|3.50|10|2
+ Programming in Coffeescript|2012|Mark Bates|46311721|0.0|0|0
+ Programming in Coffeescript|2012|Mark Bates|46311722|0.0|0|0
+
+isbndb 13
+ year|publisher|title|authors|isbn13
+ 2013|Packt Publishing|CoffeeScript Application Development|Young, Ian|9781782162667
+ 2014|Manning|CoffeeScript in Action|Patrick Lee|9781617290626
+ 2012|Packt Publishing|CoffeeScript Programming with jQuery, Rails, and Node.js|Erasmus, Michael|9781849519588
+ 2012-12-13|Packt Publishing|CoffeeScript Programming with jQuery, Rails, and Node.js|Michael Erasmus|9781849519595
+ 2012|Addison-Wesley Professional|Programming in CoffeeScript (Developer's Library)|Bates, Mark|9780132946148
+ 2015|Packt Publishing|CoffeeScript Application Development Cookbook|Hatfield, Mike|9781783289707
+ 2012|Addison-Wesley Professional|Programming in CoffeeScript (Developer's Library)|Bates, Mark|9780321820105
+ 2013|Wiley|Smashing CoffeeScript|Hudson, Alex|9781118454374
+ 20121128|O'Reilly Media, Inc.|Jump Start CoffeeScript|Earle Castledine|9781457191961
+ 20140508|Simon & Schuster|CoffeeScript in Action|Patrick Lee|9781638352921
+ 20121128|O'Reilly Media, Inc.|Jump Start CoffeeScript|Earle Castledine|9781457191954
+ 20120119|O'Reilly Media, Inc.|The Little Book on CoffeeScript|Alex MacCaw|9781449325541
+ 20120119|O'Reilly Media, Inc.|The Little Book on CoffeeScript|Alex MacCaw|9781449325558
+
+semanticScholar 0

@@ -1,0 +1,82 @@
+import ../measures/conceptPage.scroll
+id Puppet
+appeared 2005
+type pl
+country United States
+originCommunity Puppet, Inc
+
+hasOctals true
+hasHexadecimals true
+hasFloats true
+hasIntegers true
+
+wikipedia https://en.wikipedia.org/wiki/Puppet_(software)
+ example
+  user { 'harry':
+    ensure => present,
+    uid    => '1000',
+    shell  => '/bin/bash',
+    home   => '/var/tmp'
+  }
+ related clojure ruby linux rest solaris
+ summary In computing, Puppet is an open-source software configuration management tool. It runs on many Unix-like systems as well as on Microsoft Windows, and includes its own declarative language to describe system configuration. Puppet is produced by Puppet, founded by Luke Kanies in 2005. It is written in Ruby and released as free software under the GNU General Public License (GPL) until version 2.7.0 and the Apache License 2.0 after that.
+ pageId 14432911
+ dailyPageViews 586
+ created 2007
+ backlinksCount 144
+ revisionCount 286
+ appeared 2005
+
+githubLanguage Puppet
+ fileExtensions pp
+ trendingProjectsCount 0
+ type programming
+ filenames Modulefile
+ aceMode text
+ codemirrorMode puppet
+ codemirrorMimeType text/x-puppet
+ tmScope source.puppet
+ repos 23445
+githubBigQuery Puppet
+ repos 14936
+ users 8311
+
+codeMirror puppet
+pygmentsHighlighter Puppet
+ filename dsls.py
+ fileExtensions pp
+linguistGrammarRepo https://github.com/russCloak/SublimePuppet
+ firstCommit 2013
+ lastCommit 2018
+ committerCount 9
+ commitCount 72
+ sampleCount 5
+ example
+  hiera_include('classes')
+  
+languageServerProtocolProject https://github.com/lingua-pupuli/puppet-editor-services
+ writtenIn ruby
+
+twitter https://twitter.com/puppetize
+fileType text
+isOpenSource true
+centralPackageRepositoryCount 0
+
+isbndb 11
+ year|publisher|title|authors|isbn13
+ 1996|Amer Library Assn|Amazingly Easy Puppet Plays: 42 New Scripts for One-Person Puppetry|Anderson, Dee|9780838906972
+ 2014|Apress|Pro Puppet|Krum, Spencer and Van Hevelingen, William and Kero, Ben and Turnbull, James and McCune, Jeffrey|9781430260417
+ 20080902|Springer Nature|Pulling Strings with Puppet|James Turnbull|9781430206224
+ 2017|Packt Publishing|Puppet 5 Beginner's Guide - Third Edition: Go from newbie to pro with Puppet 5|Arundel, John|9781788395366
+ 2017|Packt Publishing|Puppet 4.10 Beginner's Guide - Second Edition: From newbie to pro with Puppet 4.10|Arundel, John|9781787120969
+ 2011|Packt Publishing|Puppet 2.7 Cookbook|Arundel, John|9781849515399
+ 2015|Packt Publishing|Learning Puppet Security|Slagle, Jason|9781784398897
+ 2016|Packt Publishing|Puppet for Containerization|Coulton, Scott|9781785885389
+ 2013|Packt Publishing|Puppet 3 Cookbook|Arundel, John|9781782169765
+ 2011|Packt Publishing|Puppet 2.7 Cookbook|Arundel, John|9781849515382
+ 20121212|O'Reilly Media, Inc.|Puppet Types and Providers|Dan Bode; Nan Liu|9781449339302
+
+semanticScholar 2
+ year|title|doi|citations|influentialCitations|authors|paperId
+ 2015|Rehearsal: a configuration verification tool for puppet|10.1145/2908080.2908083|50|11|Rian Shambaugh and Aaron Weiss and Arjun Guha|3d09b1c2ba9f3c985cbbda778dd53f6f8dd888c5
+ 2016|muPuppet: A Declarative Subset of the Puppet Configuration Language|10.4230/LIPIcs.ECOOP.2017.12|7|0|Weili Fu and R. Perera and P. Anderson and J. Cheney|8165b44e7a4f455fb6f5fd43e0e83b0e1d6e5722

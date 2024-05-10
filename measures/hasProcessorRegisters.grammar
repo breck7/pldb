@@ -1,6 +1,0 @@
-hasProcessorRegistersParser
- extends abstractFeatureParser
- description Does the language have named symbols for a processor's registers?
- string title Processor Registers
- string pseudoExample eax 2
- string reference https://en.wikipedia.org/wiki/Processor_register

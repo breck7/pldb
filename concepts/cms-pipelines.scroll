@@ -1,0 +1,27 @@
+import ../measures/conceptPage.scroll
+id CMS Pipelines
+appeared 1986
+type pl
+reference https://www-01.ibm.com/support/docview.wss?uid=pub1sl26001805
+aka TSO Pipelines
+originCommunity IBM
+
+example
+ PIPE (end ?) 
+    < input txt 
+  | a: locate /Hello/ 
+  | insert / World!/ after
+  | i: faninany
+  | > newfile txt a
+  ? a:
+  | xlate upper
+  | i:
+
+wikipedia https://en.wikipedia.org/wiki/CMS_Pipelines
+ summary CMS Pipelines implements the pipeline concept under the VM/CMS operating system. The programs in a pipeline operate on a sequential stream of records. A program writes records that are read by the next program in the pipeline. Any program can be combined with any other because reading and writing is done through a device independent interface.
+ backlinksCount 10
+ pageId 692211
+ dailyPageViews 7
+ appeared 1986
+
+semanticScholar 0

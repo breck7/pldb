@@ -1,0 +1,37 @@
+import ../measures/conceptPage.scroll
+id Binary notation
+appeared 1689
+type notation
+photo https://pldb.io/photos/binary-notation.png
+demoVideo https://www.youtube.com/watch?v=wgbV6DLVezo
+creators Gottfried Leibniz
+reference https://pdfs.semanticscholar.org/4e42/8d4918e7da3adc468c5b7cc3958b1fe21fc2.pdf
+reference https://writings.stephenwolfram.com/2013/05/dropping-in-on-gottfried-leibniz/
+
+wikipedia https://en.wikipedia.org/wiki/Binary_code
+ example
+  100101 = [ ( 1 ) × 2^5 ] + [ ( 0 ) × 2^4 ] + [ ( 0 ) × 2^3 ] + [ ( 1 ) × 2^2 ] + [ ( 0 ) × 2^1 ] + [ ( 1 ) × 2^0 ]
+  100101 = [ 1 × 32 ] + [ 0 × 16 ] + [ 0 × 8 ] + [ 1 × 4 ] + [ 0 × 2 ] + [ 1 × 1 ]
+  100101 = 37
+ summary A binary code represents text, computer processor instructions, or any other data using a two-symbol system. The two-symbol system used is often "0" and "1" from the binary number system. The binary code assigns a pattern of binary digits, also known as bits, to each character, instruction, etc. For example, a binary string of eight bits can represent any of 256 possible values and can, therefore, represent a wide variety of different items. In computing and telecommunications, binary codes are used for various methods of encoding data, such as character strings, into bit strings. Those methods may use fixed-width or variable-width strings. In a fixed-width binary code, each letter, digit, or other character is represented by a bit string of the same length; that bit string, interpreted as a binary number, is usually displayed in code tables in octal, decimal or hexadecimal notation. There are many character sets and many character encodings for them. A bit string, interpreted as a binary number, can be translated into a decimal number. For example, the lower case a, if represented by the bit string 01100001 (as it is in the standard ASCII code), can also be represented as the decimal number "97".
+ backlinksCount 447
+ pageId 219202
+ dailyPageViews 939
+ appeared 1971
+
+conference https://binary-tools.net/summit.html
+
+hackerNewsDiscussions
+ id|title|url|time|timestamp|by|comments|score
+ 30539292|How I See Numbers|https://www.csun.io/2022/03/03/how-i-see-numbers.html|2022-03-03 10:24:28 UTC|1646283268|igpay|194|300
+
+goodreads
+ title|year|author|goodreadsId|rating|ratings|reviews
+ Binary Numbers|1977| Clyde Watson, Wendy Watson|1110018|4.17|12|3
+
+isbndb 0
+
+semanticScholar 1
+ year|title|doi|citations|influentialCitations|authors|paperId
+ 2018|Binary Numbers|10.5951/mathteacmiddscho.24.1.0006|2|0|J. Ryu|68c823ef9fa80e960022ad7a61cefcac369cb354
+ 2017|The Universe of Binary Numbers|10.1007/978-3-319-64807-1_1|0|0|V. Moret-Bonillo|4f3a9d920a68b601d732b4ea68061e9e46bb630b

@@ -1,0 +1,26 @@
+import ../measures/conceptPage.scroll
+id Calc4
+appeared 2018
+type pl
+creators Yuya Watari
+conceptDescription Calc4 is a programming language where everything in its code is an operator.
+website https://github.com/proprowataya/calc4
+country Japan
+originCommunity https://github.com/proprowataya
+
+example
+ [fib2|x, a, b|x ? ((x-1) ? ((x-1) {fib2} (a+b) {fib2}a) ? a) ? b] 38{fib2}1{fib2}0
+
+githubRepo https://github.com/proprowataya/calc4
+ stars 3
+ forks 0
+ subscribers 2
+ created 2018
+ updated 2022
+ description The Calc4 Programming Language - Every code element is an operator, allowing programming in the style of a calculator
+
+repoStats
+ firstCommit 2018
+ commits 180
+ committers 4
+ files 37

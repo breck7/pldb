@@ -1,0 +1,41 @@
+import ../measures/conceptPage.scroll
+id Bython
+appeared 2016
+type pl
+conceptDescription Python with braces. Because python is awesome, but whitespace is awful.
+country Norway
+
+hasPrintDebugging true
+
+printToken print
+
+example
+ def print_message(num_of_times) {
+     for i in range(num_of_times) {
+         print("Bython is awesome!");
+     }
+ }
+ 
+ if __name__ == "__main__" {
+     print_message(10);
+ }
+
+githubRepo https://github.com/mathialo/bython
+ firstCommit 2016
+ stars 393
+ forks 21
+ subscribers 14
+ created 2016
+ updated 2022
+ description Python with braces. Because python is awesome, but whitespace is awful.
+ issues 17
+
+repoStats
+ firstCommit 2016
+ commits 170
+ committers 4
+ files 33
+
+rijuRepl https://riju.codes/bython
+ example
+  print("Hello, world!")

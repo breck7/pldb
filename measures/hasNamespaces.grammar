@@ -1,5 +1,0 @@
-hasNamespacesParser
- extends abstractFeatureParser
- description Does the language have a namespace construct?
- string title Namespaces
- string pseudoExample namespace PLDB {}

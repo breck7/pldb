@@ -1,0 +1,90 @@
+import ../measures/conceptPage.scroll
+id RobotFramework
+appeared 2013
+type pl
+website http://robotframework.org/
+documentation https://robotframework.org/robotframework/
+country Finland
+originCommunity Robot Framework ry
+domainName robotframework.org
+ registered 2007
+ awisRank
+  2022 146514
+
+githubRepo https://github.com/robotframework/robotframework
+ stars 7076
+ forks 1980
+ subscribers 473
+ created 2014
+ updated 2022
+ description Generic automation framework for acceptance testing and RPA
+ issues 237
+ firstCommit 2013
+
+repoStats
+ firstCommit 2013
+ commits 14154
+ committers 204
+ files 2336
+
+githubLanguage RobotFramework
+ fileExtensions robot
+ trendingProjectsCount 0
+ type programming
+ aceMode text
+ tmScope text.robot
+ repos 7602
+githubBigQuery RobotFramework
+ repos 515
+ users 447
+
+pygmentsHighlighter RobotFramework
+ filename robotframework.py
+ fileExtensions robot resource
+linguistGrammarRepo https://github.com/shellderp/sublime-robot-plugin
+ firstCommit 2012
+ lastCommit 2016
+ committerCount 7
+ commitCount 83
+ sampleCount 3
+ example
+  *** Settings ***
+  Documentation     Example test case using the gherkin syntax.
+  ...
+  ...               This test has a workflow similar to the keyword-driven
+  ...               examples. The difference is that the keywords use higher
+  ...               abstraction level and their arguments are embedded into
+  ...               the keyword names.
+  ...
+  ...               This kind of _gherkin_ syntax has been made popular by
+  ...               [http://cukes.info|Cucumber]. It works well especially when
+  ...               tests act as examples that need to be easily understood also
+  ...               by the business people.
+  Library           CalculatorLibrary
+  
+  *** Test Cases ***
+  Addition
+      Given calculator has been cleared
+      When user types "1 + 1"
+      and user pushes equals
+      Then result is "2"
+  
+  *** Keywords ***
+  Calculator has been cleared
+      Push button    C
+  
+  User types "${expression}"
+      Push buttons    ${expression}
+  
+  User pushes equals
+      Push button    =
+  
+  Result is "${result}"
+      Result should be    ${result}
+  
+
+fileType text
+isOpenSource true
+centralPackageRepositoryCount 0
+
+semanticScholar 0

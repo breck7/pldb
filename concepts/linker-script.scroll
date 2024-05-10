@@ -1,0 +1,33 @@
+import ../measures/conceptPage.scroll
+id Linker Script
+appeared 1991
+type application
+conceptDescription ld combines a number of object and archive files, relocates their data and ties up symbol references. Usually the last step in compiling a program is to run ld. ld accepts Linker Command Language files written in a superset of AT&T’s Link Editor Command Language syntax, to provide explicit and total control over the linking process.
+reference https://www.eecs.umich.edu/courses/eecs373/readings/Linker.pdf
+country United States
+originCommunity Red Hat Inc && Free Software Foundation, Inc
+
+example
+ /*
+ *  link.ld
+ */
+ OUTPUT_FORMAT(elf32-i386)
+ ENTRY(start)
+ SECTIONS
+  {
+    . = 0x100000;
+    .text : { *(.text) }
+    .data : { *(.data) }
+    .bss  : { *(.bss)  }
+  }
+
+githubLanguage Linker Script
+ fileExtensions ld lds x
+ trendingProjectsCount 0
+ type data
+ filenames ld.script
+ aceMode text
+ tmScope none
+
+fileType text
+centralPackageRepositoryCount 0

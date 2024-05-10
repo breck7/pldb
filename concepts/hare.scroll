@@ -1,0 +1,56 @@
+import ../measures/conceptPage.scroll
+id Hare
+appeared 2020
+type pl
+conceptDescription Hare is a systems programming language designed to be simple, stable, and robust. Hare uses a static type system, manual memory management, and a minimal runtime. It is well-suited to writing operating systems, system tools, compilers, networking software, and other low-level, high performance tasks.
+website https://harelang.org/
+country Various
+originCommunity https://harelang.org/community/
+domainName harelang.org
+ registered 2020
+ awisRank
+  2022 1024701
+
+hasPrintDebugging true
+hasStrings true
+ "Hello world"
+
+printToken fmt::println
+stringToken "
+
+example
+ use fmt;
+ 
+ export fn main() void = {
+ 	const greetings = [
+ 		"Hello, world!",
+ 		"¡Hola Mundo!",
+ 		"Γειά σου Κόσμε!",
+ 		"Привет, мир!",
+ 		"こんにちは世界！",
+ 	];
+ 	for (let i = 0z; i < len(greetings); i += 1) {
+ 		fmt::println(greetings[i])!;
+ 	};
+ };
+
+sourcehutRepo https://git.sr.ht/~sircmpwn/hare
+
+repoStats
+ firstCommit 2021
+ commits 2999
+ committers 84
+ files 674
+
+leachim6 Hare
+ filepath h/Hare.ha
+ fileExtensions ha
+ example
+  use fmt;
+  
+  export fn main() void = {
+  	fmt::println("Hello World")!;
+  };
+  
+
+semanticScholar 0

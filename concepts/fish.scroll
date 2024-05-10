@@ -1,0 +1,145 @@
+import ../measures/conceptPage.scroll
+id fish
+appeared 2005
+type pl
+website http://fishshell.com/
+documentation https://fishshell.com/docs/2.3/index.html
+standsFor friendly interactive shell
+country Various
+originCommunity https://github.com/fish-shell
+domainName fishshell.com
+ registered 2010
+ awisRank
+  2022 183077
+releaseNotesUrl https://fishshell.com/docs/current/relnotes.html
+
+hasComments true
+hasLineComments true
+ # A comment
+hasPrintDebugging true
+hasSemanticIndentation false
+hasStrings true
+ "Hello world"
+
+lineCommentToken #
+printToken echo
+stringToken "
+
+githubRepo https://github.com/fish-shell/fish-shell
+ firstCommit 2005
+ stars 19123
+ forks 1569
+ subscribers 268
+ created 2012
+ updated 2022
+ description The user-friendly command line shell.
+ issues 460
+
+repoStats
+ firstCommit 2005
+ commits 17585
+ committers 970
+ files 1905
+
+wikipedia https://en.wikipedia.org/wiki/Friendly_interactive_shell
+ example
+  string replace --regex '.*?\.(.*)' '$1' a.b.c #b.c
+  string replace --regex '.*\.(.*)' '$1' a.b.c  #c
+  string replace --regex '(.*)\..*' '$1' a.b.c  #a.b
+  string replace --regex '(.*?)\..*' '$1' a.b.c #a
+ related bash z-shell
+ summary The friendly interactive shell (fish) is a Unix shell that attempts to be more interactive and user-friendly than those with a longer history (i.e. most other Unix shells) or those formulated as function-compatible replacements for the aforementioned (e.g. zsh, the Falstad shell). The design goal of fish is to give the user a rich set of powerful features in a way that is easy to discover, remember, and use. fish is considered an "exotic shell", in that its syntax derives from neither the Bourne shell (ksh, bash, zsh) nor the C shell (csh, tcsh). Also unlike previous shells, which disable certain features by default to save system resources, fish enables all features by default.
+ created 2005
+ pageId 1889847
+ backlinksCount 38
+ revisionCount 226
+ dailyPageViews 62
+ appeared 2017
+
+githubLanguage fish
+ fileExtensions fish
+ trendingProjectsCount 0
+ type programming
+ group Shell
+ interpreters fish
+ aceMode text
+ tmScope source.fish
+ repos 0
+
+pygmentsHighlighter Fish
+ filename shell.py
+ fileExtensions fish load
+linguistGrammarRepo https://github.com/l15n/fish-tmbundle
+ firstCommit 2008
+ lastCommit 2014
+ committerCount 2
+ commitCount 16
+ sampleCount 3
+ example
+  
+  function eval -S -d "Evaluate parameters as a command"
+  
+  	# If we are in an interactive shell, eval should enable full
+  	# job control since it should behave like the real code was
+  	# executed.  If we don't do this, commands that expect to be
+  	# used interactively, like less, wont work using eval.
+  
+  	set -l mode
+  	if status --is-interactive-job-control
+  		set mode interactive
+  	else
+  		if status --is-full-job-control
+  			set mode full
+  		else
+  			set mode none
+  		end
+  	end
+  	if status --is-interactive
+  		status --job-control full
+  	end
+  
+  	echo "begin; $argv ;end eval2_inner <&3 3<&-" | . 3<&0
+  	set -l res $status
+  
+  	status --job-control $mode
+  	return $res
+  end
+  
+
+leachim6 Fish
+ filepath f/Fish.fish
+ fileExtensions fish
+ example
+  #!/usr/bin/env fish
+  echo "Hello World"
+  
+rosettaCode http://www.rosettacode.org/wiki/Category:Fish
+
+rijuRepl https://riju.codes/fish
+ example
+  echo "Hello, world!"
+  
+tryItOnline fish
+
+indeedJobs fish developer
+ 2022 1
+officialBlogUrl https://fishshell.com/blog/index.html
+faqPageUrl https://fishshell.com/docs/current/faq.html
+
+fileType text
+wordRank 1563
+isOpenSource true
+centralPackageRepositoryCount 0
+
+isbndb 1
+ year|publisher|title|authors|isbn13
+ 1990|HarperPerennial|When Do Fish Sleep? and Other Imponderables of Everyday Life|David Feldman|9780060920111
+
+semanticScholar 6
+ year|title|doi|citations|influentialCitations|authors|paperId
+ 1999|Programming in FISh|10.1007/s100090050037|23|3|C. Jay|85dfbb3dcd3d87ec608b2cdc76d9194b3bdc1bf9
+ 1997|Do the Fish Really Need Remote Control? A Proposal for Self-Active Objects in Oberon|10.1007/3-540-62599-2_41|14|1|J. Gutknecht|7a1834c14d7dd5a0ec4bf9e570f08c5ad62803cc
+ 2019|Automatic System to Fish Feeder and Water Turbidity Detector Using Arduino Mega|10.1088/1742-6596/1339/1/012013|5|0|H. Hendri and S. Enggari and Mardison and M. R. Putra and L. N. Rani|fc19165adfdb5eb3694cafbc7d31ecb015b71820
+ 2009|Design Approach to Fish Data Identification Tag via RFID|10.1109/ICFCC.2009.62|4|0|T. Hla and Z. M. Aung|09d110c338041ace56cd3c118c8ef1f93dad2607
+ 2018|Simulation of drying process of secondary products of fish cutting and description of the main processes of heat and moisture transfer in the model|10.20914/2310-1202-2018-2-125-129|1|0|O. Dvoryaninova and A. Sokolov|29ac77f1078bcc7ff310332ccd408d2227b63d0e
+ 2021|IoT-Based Monitoring and Design of Automatic Fish Drying Equipment Using Fuzzy Logic|10.1088/1755-1315/704/1/012042|1|0|Y. Alvinika and D. Setyohadi and M. Sulistyoningsih|e4845a128784ca237943106acc0c3daa4ac9da3d

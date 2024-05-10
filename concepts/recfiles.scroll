@@ -1,0 +1,54 @@
+import ../measures/conceptPage.scroll
+id Recfiles
+appeared 1994
+type dataNotation
+creators Jose E. Marchesi
+conceptDescription GNU recutils is a set of tools and libraries to access human-editable, text-based databases called recfiles. The data is stored as a sequence of records, each record containing an arbitrary number of named fields. Advanced capabilities usually found in other data storage systems are supported: data types, data integrity (keys, mandatory fields, etc.) as well as the ability of records to refer to other records (sort of foreign keys). Despite its simplicity, recfiles can be used to store medium-sized databases.
+reference https://www.gnu.org/software/recutils/
+fileExtensions rec
+country United States
+originCommunity Free Software Foundation
+
+hasComments true
+ # Blah blah…
+ # Unlike some file formats, comments in recfiles must be complete lines. You cannot start a comment in the middle of a line.
+hasLineComments true
+ # A comment
+hasSemanticIndentation false
+
+lineCommentToken #
+
+example
+ %rec: Book
+ %mandatory: Title
+ %type: Location enum loaned home unknown
+ %doc:
+ + A book in my personal collection.
+ 
+ Title: GNU Emacs Manual
+ Author: Richard M. Stallman
+ Publisher: FSF
+ Location: home
+ 
+ Title: The Colour of Magic
+ Author: Terry Pratchett
+ Location: loaned
+ 
+ Title: Mio Cid
+ Author: Anonymous
+ Location: home
+ 
+ Title: chapters.gnu.org administration guide
+ Author: Nacho Gonzalez
+ Author: Jose E. Marchesi
+ Location: unknown
+ 
+ Title: Yeelong User Manual
+ Location: home
+
+wikipedia https://en.wikipedia.org/wiki/Recfiles
+ summary recfiles is a file format for human-editable, plain text databases. Databases using this file format can be edited using any text editor. recfiles allow for basic relational database operations, typing, auto-incrementing, as well as a simple join operation. Recutils is a collection of tools, like recfmt, recsel, and rec2csv used to work with recfile databases. Various software libraries support the format.
+ backlinksCount 1
+ pageId 63063548
+ dailyPageViews -1
+ appeared 1964

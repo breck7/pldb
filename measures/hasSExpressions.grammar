@@ -1,6 +1,0 @@
-hasSExpressionsParser
- description Does the language have S Expressions?
- extends abstractFeatureParser
- string title S-Expressions
- string pseudoExample (+ 1 1)
- string reference https://en.wikipedia.org/wiki/S-expression

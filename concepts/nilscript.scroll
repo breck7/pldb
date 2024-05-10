@@ -1,0 +1,32 @@
+import ../measures/conceptPage.scroll
+id NilScript
+appeared 2013
+type pl
+creators Ricci Adams
+website https://github.com/musictheory/NilScript
+country United States
+originCommunity musictheory.net, LLC
+
+example
+ @implementation TheClass {
+     String _myStringInstanceVariable;
+ }
+ @end
+ @implementation TheSubClass : TheSuperClass {
+     String _myStringInstanceVariable;
+ }
+ @end
+
+githubRepo https://github.com/musictheory/NilScript
+ stars 49
+ forks 5
+ subscribers 5
+ created 2013
+ updated 2018
+ description Objective-C-style language superset of JavaScript with a tiny, simple runtime
+
+repoStats
+ firstCommit 2013
+ commits 523
+ committers 2
+ files 74

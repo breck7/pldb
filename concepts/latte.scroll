@@ -1,0 +1,115 @@
+import ../measures/conceptPage.scroll
+id Latte
+appeared 2008
+type template
+creators David Grudl
+website https://latte.nette.org
+country Czech Republic
+originCommunity https://github.com/nette
+domainName latte.nette.org
+
+githubRepo https://github.com/nette/latte
+ firstCommit 2008
+ stars 825
+ forks 94
+ subscribers 64
+ created 2012
+ updated 2022
+ description ☕ Latte: the safest & truly intuitive templates for PHP. Engine for those who want the most secure PHP sites.
+ issues 14
+
+repoStats
+ firstCommit 2008
+ commits 2180
+ committers 59
+ files 635
+
+githubLanguage Latte
+ fileExtensions latte
+ trendingProjectsCount 0
+ type markup
+ aceMode smarty
+ codemirrorMode smarty
+ codemirrorMimeType text/x-smarty
+ tmScope text.html.smarty
+ repos 270
+githubBigQuery Latte
+ repos 26
+ users 24
+
+linguistGrammarRepo https://github.com/textmate/php-smarty.tmbundle
+ firstCommit 2005
+ lastCommit 2018
+ committerCount 8
+ commitCount 34
+ sampleCount 2
+ example
+  {**
+   * @param string $basePath web base path
+   * @param string $robots tell robots how to index the content of a page (optional)
+   * @param array $flashes flash messages
+   *}
+  <!DOCTYPE html>
+  <html>
+  <head>
+  	<meta charset="utf-8">
+  	<meta name="description" content="">
+  	<meta name="author" content="">
+  	<meta name="robots" content="{$robots}" n:ifset="$robots">
+  	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+  	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  	<title>{ifset $title}{$title} › {/ifset}Translation report</title>
+  
+  	<link rel="stylesheet" media="screen,projection,tv" href="{$cdnUrl}/css/style.css?v={$cssHash}">
+  	<link rel="shortcut icon" href="{$cdnUrl}/favicon.png">
+  	<!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+      <!--[if lt IE 9]>
+  		<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+  		<script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+      <![endif]-->
+      <script n:syntax="off">
+  		(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  		(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  		m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  		})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+  		ga('create', 'UA-33892654-4', 'khanovaskola.cz');
+  		ga('send', 'pageview');
+      </script>
+  	{block #head}{/block}
+  </head>
+  
+  <body class="amara-guest history-empty">
+  	<script> document.documentElement.className+=' js' </script>
+  
+  	{block #navbar}
+  		{include _navbar.latte}
+  	{/block}
+  
+  	<div class="container">
+  		<div class="row">
+  			<div class="col-md-8 col-md-offset-2" n:inner-foreach="$flashes as $flash">
+  				{include _flash.latte, flash => $flash}
+  			</div>
+  		</div>
+  
+  		{include #content}
+  	</div>
+  
+  	<footer>
+  	</footer>
+  
+  	<script src="{$cdnUrl}/js/compiled.js?v={$jsHash}"></script>
+  	{block #scripts}{/block}
+  </body>
+  </html>
+
+fileType text
+isOpenSource true
+centralPackageRepositoryCount 0
+
+isbndb 3
+ year|publisher|title|authors|isbn13
+ 1997|Coriolis Group,u.s.|Latte Programming Explorer: The Best Way To Master Java Programming With Latte|Jeff Duntemann and Don Taylor|9781576100059
+ 1997|Coriolis Group,u.s.|Latte Programming Frontrunner: Hands-on Guide To Mastering Java Development With Latte|Jeff Duntemann|9781576100042
+ 1997||Kickass Latte Programming: Cutting-edge Java Techniques With An Attituded|Tonny Espeset|9781576100677

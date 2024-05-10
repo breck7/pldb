@@ -1,0 +1,159 @@
+import ../measures/conceptPage.scroll
+id LookML
+appeared 2012
+type pl
+website https://docs.looker.com/data-modeling/learning-lookml/what-is-lookml
+reference https://docs.looker.com/relnotes/v1-release-notes#looker_1.10.13
+originCommunity Looker
+
+hasLineComments true
+ # A comment
+hasComments true
+ # A comment
+hasSemanticIndentation false
+
+lineCommentToken #
+
+example
+ ######################################
+ # FILE: ecommercestore.model.lkml    #
+ # Define the explores and join logic #
+ ######################################
+ connection: order_database
+ include: "*.view.lkml"
+ explore: orders {
+   join: customers {
+     sql_on: ${orders.customer_id} = ${customers.id} ;;
+   }
+ }
+ 
+ ##########################################################
+ # FILE: orders.view.lkml                                 #
+ # Define the dimensions and measures for the ORDERS view #
+ ##########################################################
+ view: orders {
+   dimension: id {
+     primary_key: yes
+     type: number
+     sql: ${TABLE}.id ;;
+   }
+   dimension: customer_id {      # field: orders.customer_id
+     sql: ${TABLE}.customer_id ;;
+   }
+   dimension: amount {           # field: orders.amount
+     type: number
+     value_format: "0.00"
+     sql: ${TABLE}.amount ;;
+   }
+   dimension_group: created {                # generates fields:
+     type: time                              # orders.created_time, orders.created_date
+     timeframes: [time, date, week, month]   # orders.created_week, orders.created_month
+     sql: ${TABLE}.created_at ;;
+   }
+   measure: count {             # field: orders.count
+     type: count                # creates a sql COUNT(*)
+     drill_fields: [drill_set*] # list of fields to show when someone clicks 'ORDERS Count'
+   }
+   measure: total_amount {
+     type: sum
+     sql: ${amount} ;;
+   }
+   set: drill_set {
+     fields: [id, created_time, customers.name, amount]
+   }
+ }
+ 
+ #############################################################
+ # FILE: customers.view.lkml                                 #
+ # Define the dimensions and measures for the CUSTOMERS view #
+ #############################################################
+ view: customers {
+   dimension: id {
+     primary_key: yes
+     type: number
+     sql: ${TABLE}.id ;;
+   }
+   dimension: city {                    # field: customers.city
+     sql: ${TABLE}.city ;;
+   }
+   dimension: state {                   # field: customers.state
+     sql: ${TABLE}.state ;;
+   }
+   dimension: name {
+     sql: CONCAT(${TABLE}.firstname, " ", ${TABLE}.lastname) ;;
+   }
+   measure: count {             # field: customers.count
+     type: count                # creates a sql COUNT(*)
+     drill_fields: [drill_set*] # fields to show when someone clicks 'CUSTOMERS Count'
+   }
+   set: drill_set {                     # set: customers.drill_set
+     fields: [id, state, orders.count]  # list of fields to show when someone clicks 'CUSTOMERS Count'
+   }
+ }
+
+githubLanguage LookML
+ fileExtensions lookml modellkml viewlkml
+ trendingProjectsCount 0
+ type programming
+ aceMode yaml
+ codemirrorMode yaml
+ codemirrorMimeType text/x-yaml
+ tmScope source.yaml
+ repos 5427
+githubBigQuery LookML
+ repos 185
+ users 47
+
+linguistGrammarRepo https://github.com/atom/language-yaml
+ firstCommit 2013
+ lastCommit 2018
+ committerCount 25
+ commitCount 205
+ sampleCount 3
+ example
+  - view: comments
+    fields:
+  
+    - dimension: id
+      primary_key: true
+      type: int
+      sql: ${TABLE}.id
+  
+    - dimension: body
+      sql: ${TABLE}.body
+  
+    - dimension_group: created
+      type: time
+      timeframes: [time, date, week, month]
+      sql: ${TABLE}.created_at
+  
+    - dimension: headline_id
+      type: int
+      hidden: true
+      sql: ${TABLE}.headline_id
+  
+    - dimension_group: updated
+      type: time
+      timeframes: [time, date, week, month]
+      sql: ${TABLE}.updated_at
+  
+    - dimension: user_id
+      type: int
+      hidden: true
+      sql: ${TABLE}.user_id
+  
+    - measure: count
+      type: count
+      detail: detail*
+  
+  
+    # ----- Detail ------
+    sets:
+      detail:
+        - id
+        - headlines.id
+        - headlines.name
+        - users.id
+
+fileType text
+centralPackageRepositoryCount 0

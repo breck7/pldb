@@ -1,0 +1,25 @@
+import ../measures/conceptPage.scroll
+id praxis-lang
+appeared 2011
+type pl
+creators Richard Evans
+reference https://versu.com/
+reference https://www.ifwiki.org/Versu
+reference https://versublog.files.wordpress.com/2014/05/versu.pdf
+aka praxis
+country United Kingdom
+originCommunity Imperial College
+
+example
+ insert data.scene_data.linus_wakes_up
+  {
+  noun!”Linus wakes up”
+  set_location.jordan_fischer!anonymous_room
+  set_location.linus_bergstrom!anonymous_room
+  establish_relationship.linus_bergstrom.jordan_fischer!
+ friends!”{A}We get along really well”
+  movement_restricted
+  timeout_conclusion.null_scene!”The story has ended due
+ to inactivity.”!10000
+  setup!stocker_for_linus_wakes_up
+  }

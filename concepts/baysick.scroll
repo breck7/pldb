@@ -1,0 +1,41 @@
+import ../measures/conceptPage.scroll
+id baysick
+appeared 2009
+type esolang
+creators Michael Fogus
+website http://blog.fogus.me/2009/03/26/baysick-a-scala-dsl-implementing-basic/
+country United States
+originCommunity Cognitect, Inc
+
+hasPrintDebugging true
+
+printToken PRINT
+
+example
+ object SquareRoot extends Baysick {
+   def main(args:Array[String]) = {
+     10 PRINT "Enter a number"
+     20 INPUT 'n
+     30 PRINT "Square root of " % "'n is " % SQRT('n)
+     40 END
+     RUN
+   }
+ }
+
+githubRepo https://github.com/fogus/baysick
+ firstCommit 2009
+ stars 244
+ forks 46
+ subscribers 15
+ created 2009
+ updated 2022
+ description An embedded Insane-specific Language for Scala implementing the BASIC programming language
+ issues 5
+
+repoStats
+ firstCommit 2009
+ commits 126
+ committers 6
+ files 8
+
+twitter https://twitter.com/fogus

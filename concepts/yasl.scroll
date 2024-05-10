@@ -1,0 +1,57 @@
+import ../measures/conceptPage.scroll
+id Yet Another Scripting Language
+appeared 2017
+type pl
+reference https://www.reddit.com/r/ProgrammingLanguages/comments/diiqwt/request_for_feedback_on_pattern_matchingtype/
+standsFor Yet Another Scripting Language
+
+hasLineComments true
+ # A comment
+hasComments true
+ # A comment
+hasSemanticIndentation false
+
+lineCommentToken #
+
+example
+ # simple program that iteratively calculates factorials
+ 
+ fn range(a, b) {
+   tmp := []
+   for i := a; i < b; i += 1 {
+     tmp->push(i)
+   }
+ 
+   return tmp
+ }
+ 
+ fn fact(n) {
+   tmp := 1
+   while n > 0 {
+     tmp *= n
+     n -= 1
+   }
+ 
+   return tmp
+ }
+ 
+ 
+ for i <- range(0, 7) {
+   echo "fact(#{i}): #{fact(i)}"
+ }
+
+githubRepo https://github.com/yasl-lang/yasl
+ firstCommit 2017
+ stars 60
+ forks 13
+ subscribers 5
+ created 2017
+ updated 2022
+ description Bytecode Interpreter for Yet Another Scripting Language (YASL).
+ issues 62
+
+repoStats
+ firstCommit 2017
+ commits 2050
+ committers 13
+ files 1204

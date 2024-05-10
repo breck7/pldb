@@ -1,0 +1,54 @@
+import ../measures/conceptPage.scroll
+id Crema
+appeared 2014
+type pl
+creators Jacob Torrey and Jared Wright
+conceptDescription Crema is a LLVM front-end that aims to specifically execute in sub-Turing Complete space. Designed to be simple to learn, and practical for the majority of programming tasks needed, Crema can restrict the computational complexity of the program to the minimum needed to improve security.
+website https://github.com/ainfosec/crema/wiki
+country United States
+originCommunity Assured Information Security, Inc.
+
+keywords as bool break char def double else eq extern false foreach ge gt if int le lt neq return sdef string struct true uint void
+
+example
+ def int binarySearch(int values[], int searchTarget){
+     int upperBound = list_length(values) - 1    # Upper index of seach region
+     int lowerBound = 0                       # Lower index of seach region
+     int delta = list_length(values)     # Distance between upperBound and lowerBound
+     int middleValueIndex = 0    # Mid-point index between upper and lower bounds
+     int middleValue = 0         # Value at the mid-point index
+     int foundIndex = -1         # The index of the target number after finding
+ 
+     foreach(values as value){
+         # Check middle value to see if it matches target number
+         middleValueIndex = ((upperBound + lowerBound) / 2)
+         middleValue = values[middleValueIndex]
+         if(middleValue == searchTarget){
+             foundIndex = middleValueIndex
+             break
+         }
+ 
+         #Re-adjust the lower and upper bounds for next itteration
+         if(middleValue >= searchTarget){
+             upperBound = middleValueIndex - 1
+         }else{
+             lowerBound = middleValueIndex + 1
+         }
+         delta = upperBound - lowerBound
+     }
+     return foundIndex
+ }
+
+githubRepo https://github.com/ainfosec/crema
+ stars 64
+ forks 11
+ subscribers 14
+ created 2014
+ updated 2015
+ description Crema: A Sub-Turing Programming Language 
+
+repoStats
+ firstCommit 2014
+ commits 317
+ committers 6
+ files 84

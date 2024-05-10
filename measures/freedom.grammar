@@ -1,9 +1,0 @@
-isOpenSourceParser
- boolean alwaysRecommended true
- description Is this an open source project?
- extends abstractBooleanColumnParser
-
-isPublicDomainParser
- boolean alwaysRecommended true
- description Is this public domain?
- extends abstractBooleanColumnParser

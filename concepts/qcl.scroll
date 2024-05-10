@@ -1,0 +1,27 @@
+import ../measures/conceptPage.scroll
+id QCL
+appeared 2005
+type pl
+reference https://github.com/aviggiano/qcl
+country Austria
+originCommunity Technischen Universität Wien
+
+hasPrintDebugging true
+hasStrings true
+ "Hello world"
+
+printToken print
+stringToken "
+
+leachim6 QCL
+ filepath q/QCL.qcl
+ fileExtensions qcl
+ example
+  print "Hello World";
+  
+
+hopl https://hopl.info/showlanguage.prx?exp=8263
+
+centralPackageRepositoryCount 0
+
+semanticScholar 0

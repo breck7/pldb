@@ -1,0 +1,49 @@
+import ../measures/conceptPage.scroll
+id Claro
+appeared 2021
+type pl
+creators Jason Steving
+website https://clarolang.com/
+country United States
+originCommunity https://github.com/JasonSteving99
+domainName clarolang.com
+ registered 2020
+
+hasLineComments true
+ # A comment
+hasComments true
+ # A comment
+hasPrintDebugging true
+hasSemanticIndentation false
+
+lineCommentToken #
+printToken print
+
+githubRepo https://github.com/JasonSteving99/claro-lang
+ firstCommit 2020
+ stars 3
+ forks 1
+ subscribers 2
+ created 2020
+ updated 2022
+ description Claro Lang
+ issues 18
+
+repoStats
+ firstCommit 2020
+ commits 284
+ committers 3
+ files 345
+
+rijuRepl https://riju.codes/claro
+ example
+  # Thanks for trying out Claro during its early development stages!
+  # To learn Claro by example, check out:
+  # https://clarolang.com/tree/main/src/java/com/claro/claro_programs
+  
+  print("Hello, world!");
+  
+ description High-level toy programming language providing standardized Software Engineering best practices out of the box
+ fileExtensions claro
+ website https://clarolang.com/
+ gitRepo https://github.com/JasonSteving99/claro-lang

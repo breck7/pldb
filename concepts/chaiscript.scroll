@@ -1,0 +1,48 @@
+import ../measures/conceptPage.scroll
+id chaiscript
+appeared 2009
+type pl
+website http://chaiscript.com/
+country United States and New Zealand
+originCommunity https://github.com/ChaiScript
+domainName chaiscript.com
+ registered 2009
+ awisRank
+  2022 11052396
+
+hasHexadecimals true
+hasFloats true
+hasIntegers true
+
+example
+ #include <chaiscript/chaiscript.hpp>
+ std::string helloWorld(const std::string &t_name) {
+   return "Hello " + t_name + "!";
+ }
+ int main() {
+   chaiscript::ChaiScript chai;
+   chai.add(chaiscript::fun(&helloWorld), "helloWorld");
+   chai.eval(R"(
+     puts(helloWorld("Bob"));
+   )");
+ }
+
+githubRepo https://github.com/ChaiScript/ChaiScript
+ firstCommit 2009
+ stars 2532
+ forks 317
+ subscribers 126
+ created 2011
+ updated 2022
+ description Embedded Scripting Language Designed for C++
+ issues 114
+
+repoStats
+ firstCommit 2009
+ commits 2380
+ committers 79
+ files 386
+
+pygmentsHighlighter ChaiScript
+ filename scripting.py
+ fileExtensions chai

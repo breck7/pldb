@@ -1,0 +1,71 @@
+import ../measures/conceptPage.scroll
+id Deno
+appeared 2018
+type compiler
+creators Ryan Dahl
+website https://deno.land/
+documentation https://deno.land/manual@v1.27.1/introduction
+country United States
+originCommunity Deno Land Inc
+domainName deno.land
+ registered 2018
+ awisRank
+  2022 71476
+
+writtenIn rust
+relatedConcepts javascript typescript
+
+hasLineComments true
+ // A comment
+hasComments true
+ // A comment
+hasPrintDebugging true
+hasSemanticIndentation false
+hasStrings true
+ "Hello world"
+
+lineCommentToken //
+printToken console.log
+stringToken "
+
+example
+ // Imports `serve` from the remote Deno standard library, using URL.
+ import { serve } from "https://deno.land/std@v0.21.0/http/server.ts";
+ 
+ // `serve` function returns an asynchronous iterator, yielding a stream of requests
+ for await (const req of serve({ port: 8000 })) {
+     req.respond({ body: "Hello, World!\n" });
+ }
+
+gource https://www.youtube.com/watch?v=cV1CEnfKtdI
+githubRepo https://github.com/denoland/deno
+ firstCommit 2018
+ stars 84234
+ forks 4546
+ subscribers 1540
+ created 2018
+ updated 2022
+ description A modern runtime for JavaScript and TypeScript.
+ issues 924
+
+wikipedia https://en.wikipedia.org/wiki/Deno_(software)
+
+leachim6 Deno
+ filepath d/Deno.ts
+ fileExtensions ts
+ example
+  console.log("Hello World");
+  
+
+subreddit https://reddit.com/r/Deno
+ memberCount
+  2022 8226
+
+twitter https://twitter.com/deno_land
+
+isbndb 2
+ year|publisher|title|authors|isbn13
+ 2021|Packt Publishing|Deno Web Development: Write, test, maintain, and deploy JavaScript and TypeScript web applications using Deno|Santos, Alexandre Portela dos|9781800201149
+ 20200916|Springer Nature|Introducing Deno|Fernando Doglio|9781484261972
+
+semanticScholar 0

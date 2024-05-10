@@ -1,0 +1,50 @@
+import ../measures/conceptPage.scroll
+id NWScript
+appeared 2004
+type pl
+originCommunity BioWare
+
+hasStrings true
+ "Hello world"
+
+stringToken "
+
+wikipedia https://en.wikipedia.org/wiki/NWScript
+ example
+  void main()
+  {
+      SendMessageToPC(GetEnteringObject(), "Hello world");
+  }
+ related linux c java
+ summary NWScript is the scripting language developed by BioWare for the role-playing video game Neverwinter Nights. It is based on the C programming language and is implemented in the Aurora toolset. Neverscript, an open source 3rd party editor, has been created for the Mac OS X and Linux versions of NWN because the Aurora toolset has not been ported to those platforms. NWScript is also used in the video games The Witcher, Star Wars: Knights of the Old Republic and Star Wars: Knights of the Old Republic II The Sith Lords, which use the Odyssey Engine. Neverwinter Nights 2, the sequel to the original NWN, features a modified version of this scripting language.
+ pageId 853032
+ created 2004
+ backlinksCount 87
+ revisionCount 100
+ dailyPageViews 11
+ appeared 1975
+
+githubLanguage NWScript
+ type programming
+ fileExtensions nss
+ aceMode c_cpp
+ codemirrorMode clike
+ codemirrorMimeType text/x-csrc
+ tmScope source.c.nwscript
+ repos 78
+githubBigQuery NWScript
+ repos 1
+ users 1
+
+leachim6 NWScript
+ filepath n/NWScript.nss
+ fileExtensions nss
+ example
+  // Place in the OnClientEnter event of the module's properties
+  {
+      SendMessageToPC(GetEnteringObject(), "Hello World");
+  }
+  
+
+fileType text
+centralPackageRepositoryCount 0

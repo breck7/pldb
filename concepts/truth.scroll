@@ -1,0 +1,39 @@
+import ../measures/conceptPage.scroll
+id Truth
+appeared 2019
+type dataNotation
+creators Paul Gordon
+website https://www.truthlanguage.org/
+
+hasSemanticIndentation true
+
+example
+ String
+ Number
+ Language
+ 
+ Employee
+ 	Name : String
+ 	
+ Engineer : Employee
+ 	Specialization : Language
+ 	
+ Salesman : Employee
+ 	Commission Rate : Number
+ 	
+ Sales Engineer : Engineer, Salesman
+
+githubRepo https://github.com/paul-go/Truth
+ stars 23
+ forks 4
+ subscribers 3
+ created 2018
+ updated 2023
+ description A Domain Representation Language
+ issues 4
+
+repoStats
+ firstCommit 2018
+ commits 1378
+ committers 7
+ files 272

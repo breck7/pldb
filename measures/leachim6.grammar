@@ -1,9 +1,0 @@
-leachim6Parser
- extends abstractMultiwordGuidColumnParser
- description What is a URL to this language in leachim6's hello-world project?
- string sourceDomain github.com/leachim6/hello-world
- contentKey id
- inScope fileExtensionsParser exampleParser
- filepathParser
-  description What is the filepath to this language in leachim6's hello-world project?
-  extends abstractStringColumnParser

@@ -1,0 +1,249 @@
+import ../measures/conceptPage.scroll
+id Tcl
+appeared 1988
+type pl
+creators John Ousterhout
+website http://www.tcl.tk
+documentation https://www.tcl.tk/doc/
+documentation https://devdocs.io/tcl_tk/
+standsFor Tool Command Language
+fileExtensions tcl tbc
+domainName tcl.tk
+ awisRank
+  2022 223557
+releaseNotesUrl http://www.tcl.tk/software/tcltk/relnotes/index.tml?sc_format=wider
+
+visualParadigm false
+
+hasComments true
+hasLineComments true
+ # A comment
+hasMultiLineComments false
+hasPrintDebugging true
+hasSemanticIndentation false
+hasCaseInsensitiveIdentifiers false
+hasStrings true
+ "Hello world"
+
+lineCommentToken #
+printToken puts
+stringToken "
+
+wikipedia https://en.wikipedia.org/wiki/Tcl
+ example
+  oo::class create fruit {
+      method eat {} {
+          puts "yummy!"
+      }
+  }
+  oo::class create banana {
+      superclass fruit
+      constructor {} {
+          my variable peeled
+          set peeled 0
+      }
+      method peel {} {
+          my variable peeled
+          set peeled 1
+          puts "skin now off"
+      }
+      method edible? {} {
+          my variable peeled
+          return $peeled
+      }
+      method eat {} {
+          if {![my edible?]} {
+              my peel
+          }
+          next
+      }
+  }
+  set b [banana new]
+  $b eat               → prints "skin now off" and "yummy!"
+  fruit destroy
+  $b eat               → error "unknown command"
+ related awk lisp php tea powershell c python expect unicode regex java unix linux bourne-shell xotcl snit verilog vhdl udp mysql postgresql sqlite
+ summary Tcl (pronounced "tickle" or tee cee ell, ) is a high-level, general-purpose, interpreted, dynamic programming language. It was designed with the goal of being very simple but powerful. Tcl casts everything into the mold of a command, even programming constructs like variable assignment and procedure definition. Tcl supports multiple programming paradigms, including object-oriented, imperative and functional programming or procedural styles. It is commonly used embedded into C applications, for rapid prototyping, scripted applications, GUIs, and testing. Tcl interpreters are available for many operating systems, allowing Tcl code to run on a wide variety of systems. Because Tcl is a very compact language, it is used on embedded systems platforms, both in its full form and in several other small-footprint versions. The popular combination of Tcl with the Tk extension is referred to as Tcl/Tk, and enables building a graphical user interface (GUI) natively in Tcl. Tcl/Tk is included in the standard Python installation in the form of Tkinter.
+ pageId 39880682
+ dailyPageViews 567
+ created 2001
+ backlinksCount 938
+ revisionCount 944
+ appeared 1988
+ fileExtensions tcl tbc
+
+githubLanguage Tcl
+ fileExtensions tcl adp tclin tm
+ trendingProjectsCount 0
+ type programming
+ filenames owh starfield
+ interpreters tclsh wish
+ aceMode tcl
+ codemirrorMode tcl
+ codemirrorMimeType text/x-tcl
+ tmScope source.tcl
+ repos 13969
+githubBigQuery Tcl
+ repos 8111
+ users 7067
+
+monaco tcl
+codeMirror tcl
+pygmentsHighlighter Tcl
+ filename tcl.py
+ fileExtensions tcl rvt
+linguistGrammarRepo https://github.com/textmate/tcl.tmbundle
+ firstCommit 2005
+ lastCommit 2013
+ committerCount 4
+ commitCount 56
+ sampleCount 2
+ example
+  # XDG Base Directory Specification handling
+  #
+  # Copyright (C) 2013 Lawrence Woodman
+  #
+  # Licensed under an MIT licence.  Please see LICENCE.md for details.
+  #
+  # For XDG Base Directory Specification
+  #   http://standards.freedesktop.org/basedir-spec/basedir-spec-latest.html
+  #
+  package require Tcl 8.5
+  
+  namespace eval XDG {
+    variable DEFAULTS ""
+    namespace export DATA_HOME CONFIG_HOME CACHE_HOME
+    namespace export RUNTIME_DIR DATA_DIRS CONFIG_DIRS
+  }
+  
+  proc XDG::SetDefaults {} {
+    variable DEFAULTS
+    if {$DEFAULTS ne ""} return
+    set DEFAULTS [list \
+      DATA_HOME   [file join $::env(HOME) .local share] \
+      CONFIG_HOME [file join $::env(HOME) .config] \
+      CACHE_HOME  [file join $::env(HOME) .cache] \
+      DATA_DIRS   [list [file join /usr local share] [file join /usr share]] \
+      CONFIG_DIRS [list [file join /etc xdg ]]
+    ]
+  }
+  
+  proc XDG::XDGVarSet {var} {
+    expr {[info exists ::env(XDG_$var)] && $::env(XDG_$var) ne ""}
+  }
+  
+  proc XDG::Dir {var {subdir ""} } {
+    variable DEFAULTS
+    SetDefaults
+    set dir [dict get $DEFAULTS $var]
+  
+    if {[XDGVarSet $var]} {
+      set dir $::env(XDG_$var)
+    }
+  
+    return [file join $dir $subdir]
+  }
+  
+  proc XDG::Dirs {var {subdir ""} } {
+    variable DEFAULTS
+    SetDefaults
+    set rawDirs [dict get $DEFAULTS $var]
+  
+    if {[XDGVarSet $var]} {
+      set rawDirs [split $::env(XDG_$var) ":"]
+    }
+  
+    set outDirs {}
+    foreach dir $rawDirs {
+      lappend outDirs [file join $dir $subdir]
+    }
+    return $outDirs
+  }
+  
+  # The remaining procs reference the environmental variables XDG_
+  # followed by the proc name.
+  proc XDG::DATA_HOME {{subdir ""}} {Dir DATA_HOME $subdir}
+  proc XDG::CONFIG_HOME {{subdir ""}} {Dir CONFIG_HOME $subdir}
+  proc XDG::CACHE_HOME {{subdir ""}} {Dir CACHE_HOME $subdir}
+  
+  proc XDG::RUNTIME_DIR {{subdir ""}} {
+    if {![XDGVarSet RUNTIME_DIR]} { return {} }
+    return [file join $::env(XDG_RUNTIME_DIR) $subdir]
+  }
+  
+  # The following procs returning the directories as a list with the most
+  # important first.
+  proc XDG::DATA_DIRS {{subdir ""}} {Dirs DATA_DIRS $subdir}
+  proc XDG::CONFIG_DIRS {{subdir ""}} {Dirs CONFIG_DIRS $subdir}
+  
+
+projectEuler Tcl
+ memberCount
+  2019 75
+  2022 71
+helloWorldCollection Tool Command Language
+ #!/usr/local/bin/tclsh
+ # Hello World in Tcl
+ 
+ puts "Hello World!"
+ 
+leachim6 Tcl
+ filepath t/Tcl.tcl
+ fileExtensions tcl
+ example
+  puts "Hello World"
+rosettaCode http://www.rosettacode.org/wiki/Category:Tcl
+quineRelay Tcl
+
+rijuRepl https://riju.codes/tcl
+ example
+  puts {Hello, world!}
+  
+tryItOnline tcl
+
+officialBlogUrl https://www.tcl.tk/software/tcltk/whatsnew.tml
+
+tiobe Tcl
+
+ubuntuPackage tcl
+jupyterKernel https://github.com/rpep/tcl_kernel
+fileType text
+isOpenSource true
+centralPackageRepositoryCount 0
+
+goodreads
+ title|year|author|goodreadsId|rating|ratings|reviews
+ Practical Programming in TCL & TK|1961|Brent B. Welch|1665118|3.87|55|2
+ Effective Tcl/TK Programming: Writing Better Programs with TCL and TK|1997|Mark Harrison|800119|3.50|4|0
+ Tcl/TK Pocket Reference: Programming Tools|1998|Paul Raines|1370427|3.22|9|0
+ TCL/TK Programmer's Reference|1999|Chris Nelson|3658168|5.00|1|1
+ Tcl/Tk 8.5 Programming Cookbook|2011|Bert Wheeler|15375794|3.00|1|0
+ Tcl/TK Programming for the Absolute Beginner|2007|Kurt Wall|2138390|4.00|1|1
+ TCL 8.5 Network Programming|2010|Wojciech Kocjan|14701556|3.67|3|1
+ Tcl/TK: A Developer's Guide|2003|Clif Flynt|19278649|0.0|0|0
+ TCL/TK for Dummies?|1997|Tim Webster|2387039|3.50|2|0
+ CGI Programming with TCL [With CDROM]|1999|David Maggiano|5169621|0.0|0|0
+
+isbndb 16
+ year|publisher|title|authors|isbn13
+ 1997|Addison-Wesley Professional|Effective Tcl/TK Programming: Writing Better Programs with TCL and TK|Harrison, Mark and McLennan, Michael|9780201634747
+ 2009|Addison-Wesley Professional|Tcl and the Tk Toolkit|Ousterhout, John and Jones, Ken|9780321336330
+ 2010|Packt Publishing|Tcl 8.5 Network Programming (Community Experience Distilled)|Kocjan, Wojciech and Beltowski, Piotr|9781849510967
+ 1997|Prentice Hall Ptr|Cgi Developer's Resource: Web Programming in Tcl and Perl (Resource Series)|Ivler, J. M. and Husain, Kamran|9780137277513
+ 1999|McGraw-Hill Inc.,US|Web TCL Complete|Stephen Ball|9780079137135
+ 2003|Pearson|Practical Programming in Tcl and Tk|Welch, Brent and Jones, Ken|9780130385604
+ 2017|CreateSpace Independent Publishing Platform|The Tcl Programming Language: A Comprehensive Guide|Nadkarni, Ashok P.|9781548679644
+ 1997|Prentice Hall|Practical Programming in Tcl & Tk|Welch, Brent B.|9780136168300
+ 1999|O'Reilly Media|TCL / TK in a Nutshell: A Desktop Quick Reference|Raines, Paul and Tranter, Jeff|9781565924338
+ 2007|Cengage Learning PTR|Tcl and Tk Programming for the Absolute Beginner|Wall, Kurt|9781598634389
+ 1994|Addison-Wesley Professional|Tcl and the Tk Toolkit|Ousterhout, John K.|9780201633375
+ 1999|Prentice Hall|Practical Programming in Tcl and Tk (3rd Edition)|Welch, Brent B.|9780130220288
+ 1995-04T|Prentice Hall|Practical Programming in Tcl and Tk/Book and Disk|Welch, Brent B.|9780131820074
+ 1999|Addison-wesley|Cgi Programming With Tcl|David Maggiano|9780201606294
+ 20100701|Packt Publishing|Tcl 8.5 Network Programming|Wojciech Kocjan; Piotr Beltowski|9781849510974
+ 1994|Addison-wesley|Tcl And The Tk Toolkit|Ousterhout, John K.|9780201633375
+
+semanticScholar 2
+ year|title|doi|citations|influentialCitations|authors|paperId
+ 1994|VIPERS: a data flow visual programming environment based on the Tcl language|10.1145/192309.192361|21|3|Massimo Bernini and M. Mosconi|9aa8df179b2f6b3c252657a8813850e22d2fe7e9
+ 2014|Petascale Tcl with NAMD, VMD, and Swift/T|10.1109/HPTCDL.2014.7|18|0|James C. Phillips and J. Stone and Kirby L. Vandivort and Timothy G. Armstrong and J. Wozniak and M. Wilde and K. Schulten|dbc9036c86dbe20795e6eccc8393d02dd7251692

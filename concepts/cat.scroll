@@ -1,0 +1,46 @@
+import ../measures/conceptPage.scroll
+id cat
+appeared 2016
+type pl
+creators Christopher Diggins
+conceptDescription Cat is a higher-order stack-oriented language.
+reference https://web.archive.org/web/20150205061802/http://cat-language.com/tutorial.html
+country Canada
+
+example
+ 1 1 +
+ eq 2
+ ["As I expected!"]
+ ["I need to be repaired!"]
+ if
+
+githubRepo https://github.com/cdiggins/cat-language
+ firstCommit 2016
+ stars 185
+ forks 10
+ subscribers 9
+ created 2016
+ updated 2022
+ description Cat - a statically typed functional stack-based programming language 
+ issues 4
+
+repoStats
+ firstCommit 2016
+ commits 14
+ committers 2
+ files 428
+
+leachim6 cat
+ filepath c/cat.cat
+ fileExtensions cat
+ example
+  Hello World
+  
+
+rijuRepl https://riju.codes/cat
+ example
+  72 101 108 108 111 44 32 119 111 114 108 100 33 10
+  
+ description Statically typed stack-based programming language in C#
+ fileExtensions cat
+ gitRepo https://github.com/cdiggins/cat-language

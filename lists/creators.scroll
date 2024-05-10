@@ -1,0 +1,22 @@
+import header.scroll
+title List of people who created a programming language
+groups index
+
+mediumColumns 1
+
+Here is the list of COUNT people who created a language(s) in PLDB.
+
+endSnippet
+
+replaceNodejs
+ const {Tables} = require("../Computer.js")
+ module.exports = Tables.creators
+
+TABLE
+
+//
+ Todo:
+ Name | Wikipedia | Website | GitHub
+
+import footer.scroll
+tableSearch

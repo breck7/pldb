@@ -1,0 +1,59 @@
+import ../measures/conceptPage.scroll
+id Qore
+appeared 2006
+type pl
+creators David Nichols
+website http://qore.org/
+fileExtensions q qm qtest
+country Czech Republic
+originCommunity https://github.com/qorelanguage
+domainName qore.org
+ registered 2008
+
+hasPrintDebugging true
+hasStrings true
+ "Hello world"
+
+printToken printf
+stringToken "
+
+githubRepo https://github.com/qorelanguage/qore
+ firstCommit 2006
+ stars 41
+ forks 9
+ subscribers 15
+ created 2015
+ updated 2022
+ description Qore Programming Language
+ issues 232
+
+repoStats
+ firstCommit 2006
+ commits 13332
+ committers 51
+ files 1879
+
+wikipedia https://en.wikipedia.org/wiki/Qore_(programming_language)
+ summary Qore is an interpreted, high-level, general-purpose, garbage collected  dynamic programming language, featuring support for code embedding and sandboxing with optional strong typing and a focus on fundamental support for multithreading and SMP scalability. Qore is unique because it is an interpreted scripting language with fundamental support for multithreading (meaning more than one part of the same code can run at the same time), and additionally because it features automatic memory management (meaning programmers do not have to allocate and free memory explicitly) while also supporting the RAII idiom with destructors for scope-based resource management and exception-safe programming.  This is due to Qore's unique prompt collection implementation for garbage collection.
+ backlinksCount 9
+ pageId 33850384
+ dailyPageViews 6
+
+leachim6 Qore
+ filepath q/Qore.q
+ fileExtensions q
+ example
+  #!/usr/bin/env qore
+  %exec-class HelloWorld
+  class HelloWorld
+  {
+      constructor()
+      {
+  	    background $.say("Hello World");
+      }
+      private say($arg)
+      {
+  	    printf("%s\n", $arg);
+      }
+  }
+  

@@ -1,0 +1,40 @@
+import ../measures/conceptPage.scroll
+id Explorer
+appeared 2020
+type visual
+screenshot https://pldb.io/screenshots/explorer.png
+demoVideo https://www.youtube.com/watch?v=0l2QWH-iV3k
+creators Hannah Ritchie and Breck Yunits and Shahid Ahmad
+conceptDescription Programs are encoded as TSVs so are easy to read+write from a spreadsheet IDE, code, or plain text editor.
+reference https://github.com/owid/owid-grapher/tree/master/explorer
+aka Hannah
+originCommunity Our World In Data
+
+relatedConcepts 6gunz
+influencedBy treesheets
+
+visualParadigm true
+
+hasTernaryOperators false
+
+example
+ selection	Canada~India			
+ title	Population of different countries			
+ subtitle	How many people live in each country?			
+ type	DiscreteBar			
+ hasMapTab	true			
+ hideControls	true			
+ ySlugs	Population			
+ table				
+ 	Country	Population	Year	MapleleafsInFlag
+ 	Canada	32000000	2020	1
+ 	India	1000000000	2020	0
+ 	France	50000000	2020	0
+ columns				
+ 	slug	type	name	notes
+ 	Country	EntityName	Country	Unreviewed
+ 	Population	Numeric	Population	Unreviewed
+ 	Year	Year	Year	Unreviewed
+ 	MapleleafsInFlag	Numeric	MapleleafsInFlag	Unreviewed
+
+isOpenSource true

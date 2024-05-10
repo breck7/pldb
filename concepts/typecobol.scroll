@@ -1,0 +1,26 @@
+import ../measures/conceptPage.scroll
+id typecobol
+appeared 2015
+type pl
+creators Laurent Prud'hon
+
+githubRepo https://github.com/TypeCobolTeam/TypeCobol
+ firstCommit 2015
+ stars 60
+ forks 24
+ subscribers 13
+ created 2015
+ updated 2022
+ description TypeCobol is an Incremental Cobol parser for IBM Enterprise Cobol 6 for zOS syntax.   TypeCobol is also an extension of Cobol 85 language which can then be converted to Cobol85.
+ issues 330
+
+repoStats
+ firstCommit 2015
+ commits 4344
+ committers 53
+ files 3572
+
+languageServerProtocolProject https://github.com/TypeCobolTeam/TypeCobol/tree/master/TypeCobol.LanguageServer
+ writtenIn csharp
+languageServerProtocolProject https://github.com/TypeCobolTeam/LanguageServerRobot/wiki
+ writtenIn csharp

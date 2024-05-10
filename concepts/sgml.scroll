@@ -1,0 +1,42 @@
+import ../measures/conceptPage.scroll
+id SGML
+appeared 1986
+type textMarkup
+standsFor Standard Generalized Markup Language
+country United States
+originCommunity IBM
+
+wikipedia https://en.wikipedia.org/wiki/Standard_Generalized_Markup_Language
+ example
+  <lines>
+  <line>first line</line>
+  <line>second line</line>
+  </lines>
+ related ibm-gml html xml scheme linux hytime regex unicode xquery java-server-pages scala dtd s-expressions latex
+ summary The Standard Generalized Markup Language (SGML; ISO 8879:1986) is a standard for defining generalized markup languages for documents. ISO 8879 Annex A.1 defines generalized markup:  Generalized markup is based on two postulates: Markup should be declarative: it should describe a document's structure and other attributes, rather than specify the processing to be performed on it. Declarative markup is less likely to conflict with unforeseen future processing needs and techniques. Markup should be rigorous so that the techniques available for processing rigorously-defined objects like programs and databases can be used for processing documents as well.  HTML was theoretically an example of an SGML-based language until HTML 5, which admits that browsers cannot parse it as SGML (for compatibility reasons) and codifies exactly what they must do instead. DocBook SGML and LinuxDoc are better examples, as they were used almost exclusively with actual SGML tools.
+ pageId 28994
+ dailyPageViews 384
+ created 2001
+ backlinksCount 761
+ revisionCount 575
+ appeared 1986
+
+hopl https://hopl.info/showlanguage.prx?exp=1435
+
+fileType text
+centralPackageRepositoryCount 0
+
+goodreads
+ title|year|author|goodreadsId|rating|ratings|reviews
+ SGML for Dummies [With CDROM]|1997|William von Hagen|1025599|0.0|0|0
+ Sgml For Dummies Quick Reference||William von Hagen|18182883|0.0|0|0
+ PARSEME.1st: SGML for Software Developers|1997|Sean McGrath|2235173|0.0|0|0
+
+isbndb 2
+ year|publisher|title|authors|isbn13
+ 1995|Prentice Hall|Developing Sgml Dtds: From Text to Model to Markup|Maler, Eve and El Andaloussi, Jeanne|9780133098815
+ 1998|Prentice Hall|Sgml at Work|Vint, Danny R.|9780136365723
+
+semanticScholar 1
+ year|title|doi|citations|influentialCitations|authors|paperId
+ 1997|Using SGML as a Basis for Data-Intensive Natural Language Processing|10.1023/A:1001053128638|31|5|D. McKelvie and Chris Brew and H. Thompson|90f6397fb414b7739cc34ed6c53fb276f14da7f0

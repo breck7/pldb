@@ -1,0 +1,145 @@
+import ../measures/conceptPage.scroll
+id Clean
+appeared 1987
+type pl
+website http://clean.cs.ru.nl
+documentation https://wiki.clean.cs.ru.nl/Documentation
+fileExtensions icl dcl abc sapl
+country Netherlands
+originCommunity Radboud University Nijmegen
+domainName clean.cs.ru.nl
+
+hasComments true
+hasLineComments true
+ // A comment
+hasSemanticIndentation false
+hasStrings true
+ "Hello world"
+hasClasses true
+hasConditionals true
+
+lineCommentToken //
+stringToken "
+keywords case ccall class code code inline derive export foreign generic if in infix infixl infixr instance let of otherwise special stdcall where with
+
+wikipedia https://en.wikipedia.org/wiki/Clean_(programming_language)
+ example
+  (^) infixr 8 :: Int Int -> Int
+    (^) x 0 = 1
+    (^) x n = x * x ^ (n-1)
+ related miranda haskell c solaris linux fibonacci prolog
+ summary Clean is a general-purpose purely functional computer programming language. For much of the language's active development history it was called Concurrent Clean, but this was dropped at some point.
+ pageId 161878
+ dailyPageViews 52
+ created 2002
+ backlinksCount 41
+ revisionCount 390
+ appeared 1987
+ fileExtensions icl dcl abc sapl
+
+githubLanguage Clean
+ fileExtensions icl dcl
+ trendingProjectsCount 0
+ type programming
+ aceMode text
+ tmScope source.clean
+ repos 206
+githubBigQuery Clean
+ repos 263
+ users 231
+
+pygmentsHighlighter Clean
+ filename clean.py
+ fileExtensions icl dcl
+linguistGrammarRepo https://github.com/timjs/atom-language-clean.git
+ firstCommit 2016
+ lastCommit 2017
+ committerCount 2
+ commitCount 25
+ sampleCount 9
+ example
+  definition module GenMap
+  
+  import StdGeneric
+  
+  generic gMap a b :: .a -> .b
+  derive gMap c, UNIT, PAIR, EITHER, CONS, FIELD, OBJECT, {}, {!} 
+  
+  derive gMap [], (,), (,,),  (,,,), (,,,,), (,,,,,), (,,,,,,), (,,,,,,,)
+  
+  
+
+helloWorldCollection Clean
+ // Hello World in Clean
+ 
+ module hello
+ 
+ Start :: String
+ Start = "Hello World!\n"
+ 
+leachim6 Clean
+ filepath c/Clean.icl
+ fileExtensions icl
+ example
+  module hello
+  Start :: {#Char}
+  Start = "Hello World"
+  
+rosettaCode http://www.rosettacode.org/wiki/Category:Clean
+
+compilerExplorer Clean
+ example
+  module example
+  
+  import StdInt
+  
+  square :: Int -> Int
+  square n = n * n
+  
+  Start :: Int
+  Start = square 3
+  
+rijuRepl https://riju.codes/clean
+ example
+  module main
+  
+  import StdEnv
+  
+  Start world
+    #(console, world) = stdio world
+    #console = fwrites "Hello, world!\n" console
+    #(ok, world) = fclose console world
+    = world
+  
+ description General-purpose purely functional computer programming language
+ fileExtensions icl dcl abc
+ website https://clean.cs.ru.nl/Clean
+ gitRepo https://gitlab.science.ru.nl/clean-compiler-and-rts/compiler
+tryItOnline clean
+
+tiobe Clean
+hopl https://hopl.info/showlanguage.prx?exp=1305
+
+fileType text
+wordRank 1809
+centralPackageRepositoryCount 0
+
+isbndb 9
+ year|publisher|title|authors|isbn13
+ 2011|Pearson|The Clean Coder: A Code of Conduct for Professional Programmers|Martin, Robert|9780137081073
+ 2020|No Starch Press|Beyond the Basic Stuff with Python: Best Practices for Writing Clean Code|Sweigart, Al|9781593279677
+ 2017|Pearson|Clean Architecture: A Craftsman's Guide to Software Structure and Design (Robert C. Martin Series)|C., Martin Robert|9780134494326
+ 2018|Packt Publishing|Reactive Programming with Swift 4: Build asynchronous reactive applications with easy-to-maintain and clean code using RxSwift and Xcode 9|Singh, Navdeep|9781787120211
+ 2018|Packt Publishing|Clean Code in Python: Refactor your legacy code base|Anaya, Mariano|9781788837064
+ 2020|No Starch Press|Beyond the Basic Stuff with Python: Best Practices for Writing Clean Code|Sweigart, Al|9781593279660
+ 2019|Pearson|Clean Agile: Back to Basics (Robert C. Martin Series)|C., Martin Robert|9780135781999
+ 2021|Packt Publishing|Clean Code in Python: Develop maintainable and efficient code, 2nd Edition|Anaya, Mariano|9781800562097
+ 2021|Addison-Wesley Professional|Clean Craftsmanship: Disciplines, Standards, and Ethics (Robert C. Martin Series)|Martin, Robert C.|9780136915836
+
+semanticScholar 5
+ year|title|doi|citations|influentialCitations|authors|paperId
+ 1995|The ins and outs of Clean I/O|10.1017/S0956796800001258|90|8|P. Achten and M. J. Plasmeijer|4124fc65e84e6232b6e00ebbe5233ba421ef806f
+ 1997|Interactive Functional Objects in Clean|10.1007/BFb0055438|44|2|P. Achten and M. J. Plasmeijer|494110f72ac432c12d716be98b08c268f15f0cc2
+ 2011|Clean Translation of an Imperative Reversible Programming Language|10.1007/978-3-642-19861-8_9|31|2|Holger Bock Axelsen|6a98a6e70a1d3c21ad583ef6a83a83224d18c524
+ 2017|Luandri: A Clean Lua Interface to the Indri Search Engine|10.1145/3077136.3080650|5|0|Bhaskar Mitra and Fernando Diaz and Nick Craswell|0af8eea643b0391fb552db4828d7706366ee546f
+ 2010|Exchanging sources between clean and Haskell: a double-edged front end for the clean compiler|10.1145/1863523.1863530|4|0|John H. G. van Groningen and T. V. Noort and P. Achten and P. Koopman and M. J. Plasmeijer|acfddf78d7f34f83eafd13a9ee70d52c79af3ae7

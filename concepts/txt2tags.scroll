@@ -1,0 +1,35 @@
+import ../measures/conceptPage.scroll
+id Txt2tags
+appeared 2001
+type textMarkup
+creators Aurelio Jargas and Florent Gallaire and Jendrik Seipp
+website http://txt2tags.org/
+domainName txt2tags.org
+ registered 2010
+
+relatedConcepts asciidoc dokuwiki moinmoin
+
+example
+ **bold text**
+ //italic text//
+ ``monospace text``
+ __underlined__
+ --strike-through--
+
+wikipedia https://en.wikipedia.org/wiki/Txt2tags
+ example
+  = Level 1 Header =
+  == Level 2 Header ==
+  === Level 3 Header ===
+ related python html latex mediawiki
+ summary txt2tags is a document generator software that uses a lightweight markup language. txt2tags is free software under GNU General Public License. Written in Python, it can export documents to several formats including: HTML, XHTML, SGML, LaTeX, Lout, roff, MediaWiki, Google Code Wiki, DokuWiki, MoinMoin, MagicPoint, PageMaker and plain text.
+ backlinksCount 7
+ pageId 11093733
+ created 2007
+ revisionCount 58
+ dailyPageViews 8
+ appeared 2010
+
+fileType text
+isOpenSource true
+centralPackageRepositoryCount 0

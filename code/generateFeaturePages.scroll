@@ -1,0 +1,7 @@
+importOnly
+
+// Very hacky but this builds the Scroll files in the features/ folder just in time.
+replaceNodejs
+ const {Tables} = require("../Computer.js")
+ Tables.writeAllFeaturePages()
+ module.exports = {}

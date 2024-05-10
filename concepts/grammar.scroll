@@ -1,0 +1,49 @@
+import ../measures/conceptPage.scroll
+id Grammar
+appeared 2017
+type grammarLanguage
+isPublicDomain true
+creators Breck Yunits
+conceptDescription Grammar is a Tree Language for creating new Tree Languages. By creating a grammar file you get a parser, a type checker, syntax highlighting, autocomplete, a compiler, and interpreter for executing your new language. Grammar uses both postfix and prefix language features.
+website https://jtree.treenotation.org/langs/grammar/
+webRepl https://jtree.treenotation.org/designer/
+country United States and Ireland and Norway and India
+originCommunity https://github.com/breck7/jtree/issues
+releaseNotesUrl https://jtree.treenotation.org/langs/grammar/
+roadmap https://jtree.treenotation.org/langs/grammar/
+
+subsetOf treenotation
+relatedConcepts treenotation antlr
+influencedBy antlr yacc ebnf bnf
+
+hasVariableSubstitutionSyntax false
+hasEnums true
+ boolCell
+  enum true false
+
+example
+ latinNode
+  root
+  catchAllParser anyNode
+ anyNode
+  baseParser blobNode
+
+githubRepo https://github.com/breck7/jtree
+ firstCommit 2017
+ stars 365
+ forks 14
+ subscribers 9
+ created 2017
+ updated 2023
+ description Build your own language using Tree Notation.
+ issues 40
+
+repoStats
+ firstCommit 2017
+ commits 1444
+ committers 11
+ files 226
+
+isOpenSource true
+
+isbndb 0

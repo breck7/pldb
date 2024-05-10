@@ -1,5 +1,0 @@
-hasVariableSubstitutionSyntaxParser
- extends abstractFeatureParser
- description Do you use different syntax when assigning versus referencing a variable?
- string title Variable Substitution Syntax
- string pseudoExample name = "PLDB"; print $name

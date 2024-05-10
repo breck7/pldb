@@ -1,0 +1,41 @@
+import ../measures/conceptPage.scroll
+id AviSynth
+appeared 2000
+type editor
+creators Ben Rudiak-Gould and Edwin van Eggelen and Klaus Post and Richard Berg and Ian Brabham
+conceptDescription Avisynth is a scripting language and a collection of filters for simple (and not so simple!) non-linear video editing tasks. It frameserves video to applications
+website http://avisynth.nl
+documentation http://avisynth.nl/index.php/Main_Page
+cheatSheetUrl http://avisynth.nl/index.php/First_script
+fileExtensions .avs
+country The Netherlands
+originCommunity https://forum.doom9.org/showthread.php?t=181351
+domainName avisynth.nl
+versions
+ 2022 3.7.2
+
+writtenIn cpp
+
+example
+ filename="somefile.avi"
+ logfile="output.txt" 
+ path="P:\ath\To\Files\" 
+ lumathresh=80 
+ imageprefix="prefix_"
+
+githubRepo https://github.com/AviSynth/AviSynthPlus
+ firstCommit 2002
+ stars 703
+ forks 59
+ subscribers 47
+ created 2013
+ updated 2023
+ description AviSynth with improvements
+ issues 61
+sourcehutRepo https://sourceforge.net/projects/avisynth2/
+
+wikipedia https://en.wikipedia.org/wiki/AviSynth
+
+packageRepository https://www.npmjs.com/package/avisynth
+
+isOpenSource true

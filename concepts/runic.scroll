@@ -1,0 +1,20 @@
+import ../measures/conceptPage.scroll
+id runic
+appeared 2017
+type template
+conceptDescription Runic is a first order templating language operating on arrays of strings.
+website https://wiki.xxiivv.com/#runic
+country Unknown
+originCommunity https://github.com/XXIIVV
+domainName wiki.xxiivv.com
+
+example
+ * Header
+ & Paragraph
+ - List Element 1
+ - List Element 2
+ | table | row1
+ | table | row2
+ # -- CODE BLOCK
+ > -- HTML BLOCK
+ λ -- LAIN BLOCK

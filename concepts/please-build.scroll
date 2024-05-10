@@ -1,0 +1,41 @@
+import ../measures/conceptPage.scroll
+id Please Build
+appeared 2016
+type pl
+conceptDescription Language for the please.build cross-language build system. The Please build language is a full programming language.
+website https://please.build
+reference https://please.build/language.html
+country United Kingdom
+originCommunity Thought Machine Group
+
+relatedConcepts makefile
+influencedBy python
+
+example
+ # Taken from //src/core/BUILD in the Please repo
+ go_library(
+     name = "core",
+     srcs = glob(["*.go"], exclude=["*_test.go", "version.go"]) + [":version"],
+     visibility = ["PUBLIC"],
+     deps = [
+         "//third_party/go:gcfg",
+         "//third_party/go:logging",
+         "//third_party/go:queue",
+     ]
+ )
+
+githubRepo https://github.com/thought-machine/please
+ firstCommit 2016
+ stars 2060
+ forks 175
+ subscribers 34
+ created 2016
+ updated 2022
+ description High-performance extensible build system for reproducible multi-language builds.
+ issues 57
+
+repoStats
+ firstCommit 2016
+ commits 4042
+ committers 133
+ files 1032

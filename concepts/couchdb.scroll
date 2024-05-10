@@ -1,0 +1,44 @@
+import ../measures/conceptPage.scroll
+id CouchDB
+appeared 2005
+type application
+website https://couchdb.apache.org/
+documentation https://docs.couchdb.org/en/3.2.2-docs/
+originCommunity https://github.com/apache/couchdb
+domainName couchdb.apache.org
+
+writtenIn cpp c javascript erlang python elixir
+
+hasStrings true
+hasBooleans true
+
+githubRepo https://github.com/apache/couchdb
+ stars 5500
+ forks 1000
+ updated 2022
+ description Seamless multi-master syncing database with an intuitive HTTP/JSON API, designed for reliability
+ issues 275
+
+wikipedia https://en.wikipedia.org/wiki/Apache_CouchDB
+ related c javascript linux solaris freebsd json nginx-config sql mongodb postgresql
+ summary Apache CouchDB is an open-source document-oriented NoSQL database, implemented in Erlang. CouchDB uses multiple formats and protocols to store, transfer, and process its data. It uses JSON to store data, JavaScript as its query language using MapReduce, and HTTP for an API.
+ pageId 13427539
+ dailyPageViews 70
+ appeared 2005
+
+indeedJobs couchdb developer
+ 2022 13
+
+subreddit https://www.reddit.com/r/CouchDB
+ memberCount
+  2022 1000
+
+twitter https://twitter.com/couchdb
+fileType text
+isOpenSource true
+
+goodreads
+ title|year|author|goodreadsId|rating|ratings|reviews
+ The Definitive Guide: Time to Relax|2010|J.Chris Anderson|6712632|3.50|68|9
+ Getting Started with CouchDB|2011|M.C. Brown|13217933|3.42|19|2
+ Scaling CouchDB|2011|Bradley Holt|11354246|3.58|12|0

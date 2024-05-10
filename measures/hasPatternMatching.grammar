@@ -1,6 +1,0 @@
-hasPatternMatchingParser
- extends abstractFeatureParser
- description Does the language support pattern matching?
- string title Pattern Matching
- string pseudoExample fib 0 = 1; fib 1 = 1
- string reference https://en.wikipedia.org/wiki/Pattern_matching

@@ -1,0 +1,73 @@
+import ../measures/conceptPage.scroll
+id Xtext
+appeared 2006
+type grammarLanguage
+website https://www.eclipse.org/Xtext/
+reference https://dl.acm.org/citation.cfm?id=1869625
+fileExtensions xtext
+
+hasImports true
+ import "http://www.xtext.org/example/Domainmodel"
+ import "http://www.xtext.org/example/Domainmodel" as dmodel
+hasMixins true
+ grammar org.example.domainmodel.Domainmodel
+        with org.eclipse.xtext.common.Terminals
+
+example
+ grammar org.eclipse.xtext.common.Terminals 
+     hidden(WS, ML_COMMENT, SL_COMMENT)
+  
+ import "http://www.eclipse.org/emf/2002/Ecore" as ecore
+  
+ terminal ID: 
+     '^'?('a'..'z'|'A'..'Z'|'_')('a'..'z'|'A'..'Z'|'_'|'0'..'9')*;
+  
+ terminal INT returns ecore::EInt: 
+     ('0'..'9')+;
+  
+ terminal STRING: 
+     '"' ( '\\'('b'|'t'|'n'|'f'|'r'|'u'|'"'|"'"|'\\') | !('\\'|'"') )* '"' |
+     "'" ( '\\'('b'|'t'|'n'|'f'|'r'|'u'|'"'|"'"|'\\') | !('\\'|"'") )* "'";
+  
+ terminal ML_COMMENT: 
+     '/*' -> '*/';
+  
+ terminal SL_COMMENT: 
+     '//' !('\n'|'\r')* ('\r'? '\n')?;
+  
+ terminal WS: 
+     (' '|'\t'|'\r'|'\n')+;
+  
+ terminal ANY_OTHER: 
+     .;
+
+githubRepo https://github.com/eclipse/xtext
+ firstCommit 2008
+ stars 645
+ forks 297
+ subscribers 46
+ created 2011
+ updated 2022
+ description Eclipse Xtext™ is a language development framework 
+ issues 78
+
+repoStats
+ firstCommit 2008
+ commits 36912
+ committers 185
+ files 20334
+
+wikipedia https://en.wikipedia.org/wiki/Xtext
+ summary Xtext is an open-source software framework for developing programming languages and domain-specific languages (DSLs). Unlike standard parser generators, Xtext generates not only a parser, but also a class model for the abstract syntax tree, as well as providing a fully featured, customizable Eclipse-based IDE.Xtext is being developed in the Eclipse Project as part of the Eclipse Modeling Framework Project and is licensed under the Eclipse Public License.
+ backlinksCount 41
+ pageId 32232589
+ dailyPageViews 31
+ appeared 2019
+
+twitter https://twitter.com/xtext
+
+isbndb 3
+ year|publisher|title|authors|isbn13
+ 2013|Packt Publishing|Implementing Domain-Specific Languages with Xtext and Xtend|Bettini, Lorenzo|9781782160311
+ 2013|Packt Publishing|Implementing Domain-Specific Languages with Xtext and Xtend|Bettini, Lorenzo|9781782160304
+ 31-08-2016|Packt Publishing|Implementing Domain-Specific Languages with Xtext and Xtend|Lorenzo Bettini|9781786463272

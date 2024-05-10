@@ -1,0 +1,50 @@
+import ../measures/conceptPage.scroll
+id ECMAScript
+appeared 1997
+type pl
+creators Brendan Eich
+documentation https://262.ecma-international.org/5.1/
+country Switzerland
+originCommunity Ecma International
+
+visualParadigm false
+
+wikipedia https://en.wikipedia.org/wiki/ECMAScript
+ example
+  var readWikiArticle = (content) => {
+      //Read article!
+  }
+ related javascript actionscript jscript qtscript self hypertalk awk c perl python java scheme json regex csharp
+ summary ECMAScript (or ES) is a trademarked scripting-language specification standardized by Ecma International in ECMA-262 and ISO/IEC 16262. It was created to standardize JavaScript, so as to foster multiple independent implementations.  JavaScript has remained the best-known implementation of ECMAScript since the standard was first published, with other well-known implementations including JScript and ActionScript. ECMAScript is commonly used for client-side scripting on the World Wide Web, and it is increasingly being used for writing server applications and services using Node.js.
+ created 2003
+ backlinksCount 1269
+ pageId 188515
+ revisionCount 1547
+ dailyPageViews 1310
+ appeared 1997
+
+projectEuler ECMAScript
+ memberCount
+  2022 2478
+
+hopl https://hopl.info/showlanguage.prx?exp=2179
+
+centralPackageRepositoryCount 0
+
+isbndb 9
+ year|publisher|title|authors|isbn13
+ 2015|Packt Publishing|Learning Ecmascript 6|Prusty, Narayan|9781785884443
+ 2016|No Starch Press|Understanding ECMAScript 6: The Definitive Guide for JavaScript Developers|Zakas, Nicholas C.|9781593277987
+ 2015|Packt Publishing|Learning ECMAScript 6|Prusty, Narayan|9781785886539
+ 2018|Apress|Beginning Functional JavaScript: Uncover the Concepts of Functional Programming with EcmaScript 8|Aravinth, Anto and Machiraju, Srikanth|9781484240878
+ 2018|Manning Publications|Get Programming with JavaScript Next: New features of ECMAScript 2015, 2016, and beyond|Isaacks, J.D.|9781617294204
+ 2018-12-06T00:00:01Z|Apress|Beginning Functional JavaScript: Uncover the Concepts of Functional Programming with EcmaScript 8|Aravinth, Anto and Machiraju, Srikanth|9781484240861
+ 2017-03-10T00:00:01Z|Apress|Beginning Functional JavaScript: Functional Programming with JavaScript Using EcmaScript 6|Aravinth, Anto|9781484226551
+ 30-03-2018|Packt Publishing|ECMAScript Cookbook|Ross Harrison|9781788625630
+ 26-02-2018|Packt Publishing|Learn ECMAScript|Narayan Prusty; MEHUL MOHAN|9781788629621
+
+semanticScholar 3
+ year|title|doi|citations|influentialCitations|authors|paperId
+ 2020|Static Analysis for ECMAScript String Manipulation Programs|10.3390/app10103525|8|0|Vincenzo Arceri and Isabella Mastroeni and Sunyi Xu|fc2f20fff5ad9c164eeb4737a071559b00ac792a
+ 2018|EMME: a formal tool for ECMAScript Memory Model Evaluation|10.1007/978-3-319-89963-3_4|5|0|Cristian Mattarei and C. Barrett and S. Guo and Bradley S. Nelson and Ben Smith|3d0221e45832df2c861f3b7725ed70d094bea075
+ 2005|An ECMAScript compiler for the .NET framework|10.1109/ENC.2005.10|2|0|Cesar Lopez-Nataren and Elisa Viso-Gurovich|4782285f0f6c14d1a3f4e7e0fde023f765aa6423

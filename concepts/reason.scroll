@@ -1,0 +1,627 @@
+import ../measures/conceptPage.scroll
+id Reason
+appeared 2016
+type pl
+website https://reasonml.github.io/
+documentation https://reasonml.github.io/docs/en/what-and-why
+aka reasonml
+originCommunity Facebook
+domainName reasonml.github.io
+ awisRank
+  2022 636094
+  2017 272174
+
+compilesTo ocaml
+writtenIn ocaml
+relatedConcepts rust elm purescript fable-lang clojurescript swift haxe
+
+hasLineComments true
+ // A comment
+hasDestructuring true
+ type person = {name: string, age: int};
+ let somePerson = {name: "Guy", age: 30};
+ let {name, age} = somePerson;
+hasComments true
+ // A comment
+hasPrintDebugging true
+hasMultiLineComments true
+ /* A comment
+ */
+hasSemanticIndentation false
+hasCaseInsensitiveIdentifiers false
+hasStrings true
+ "Hello world"
+hasBooleans true
+hasWhileLoops true
+hasClasses true
+hasFunctions true
+hasSwitch true
+hasConditionals true
+hasOctals true
+ // 0[oO][0-7][0-7_]*
+hasHexadecimals true
+ // 0[xX][\da-fA-F][\da-fA-F_]*
+hasFloats true
+ // -?\d[\d_]*(.[\d_]*)?([eE][+\-]?\d[\d_]*)
+hasIntegers true
+ // \d[\d_]*
+hasBinaryNumbers true
+ // 0[bB][01][01_]*
+
+lineCommentToken //
+multiLineCommentTokens /* */
+printToken print_string
+stringToken "
+booleanTokens true false
+keywords as assert begin class constraint do done downto else end exception external false for fun esfun function functor if in include inherit initializer lazy let switch module pub mutable new nonrec object of open pri rec sig struct then to true try type val virtual when while with
+
+example
+ type schoolPerson = Teacher | Director | Student(string);
+ 
+ let greeting = person =>
+   switch (person) {
+   | Teacher => "Hey Professor!"
+   | Director => "Hello Director."
+   | Student("Richard") => "Still here Ricky?"
+   | Student(anyOtherName) => "Hey, " ++ anyOtherName ++ "."
+   };
+
+githubRepo https://github.com/facebook/reason
+ stars 9670
+ forks 448
+ subscribers 188
+ created 2015
+ updated 2022
+ firstCommit 2016
+ description Simple, fast & type safe code that leverages the JavaScript & OCaml ecosystems
+ issues 474
+
+repoStats
+ firstCommit 2016
+ commits 2223
+ committers 159
+ files 598
+
+githubLanguage Reason
+ fileExtensions re rei
+ trendingProjectsCount 0
+ type programming
+ aceMode rust
+ codemirrorMode rust
+ codemirrorMimeType text/x-rustsrc
+ tmScope source.reason
+ repos 1924
+githubBigQuery Reason
+ repos 24
+ users 23
+
+pygmentsHighlighter ReasonML
+ filename ml.py
+ fileExtensions re rei
+linguistGrammarRepo https://github.com/reasonml-editor/language-reason
+ firstCommit 2016
+ lastCommit 2017
+ committerCount 1
+ commitCount 10
+ sampleCount 5
+ example
+  type component = {displayName: string};
+  
+  let module Bar = {
+    let createElement c::c=? children => {
+      displayName: "test"
+    };
+  };
+  
+  let module Nesting = {
+    let createElement children => {
+      displayName: "test"
+    };
+  };
+  
+  let module Much = {
+    let createElement children => {
+      displayName: "test"
+    };
+  };
+  
+  let module Foo = {
+    let createElement a::a=? b::b=? children => {
+      displayName: "test"
+    };
+  };
+  
+  let module One = {
+    let createElement
+        test::test=?
+        foo::foo=?
+        children => {
+      displayName: "test"
+    };
+    let createElementobvioustypo
+        test::test
+        children => {
+      displayName: "test"
+    };
+  };
+  
+  let module Two = {
+    let createElement foo::foo=? children => {
+      displayName: "test"
+    };
+  };
+  
+  let module Sibling = {
+    let createElement
+        foo::foo=?
+        (children: list component) => {
+      displayName: "test"
+    };
+  };
+  
+  let module Test = {
+    let createElement yo::yo=? children => {
+      displayName: "test"
+    };
+  };
+  
+  let module So = {
+    let createElement children => {
+      displayName: "test"
+    };
+  };
+  
+  let module Foo2 = {
+    let createElement children => {
+      displayName: "test"
+    };
+  };
+  
+  let module Text = {
+    let createElement children => {
+      displayName: "test"
+    };
+  };
+  
+  let module Exp = {
+    let createElement children => {
+      displayName: "test"
+    };
+  };
+  
+  let module Pun = {
+    let createElement intended::intended=? children => {
+      displayName: "test"
+    };
+  };
+  
+  let module Namespace = {
+    let module Foo = {
+      let createElement
+          intended::intended=?
+          anotherOptional::x=100
+          children => {
+        displayName: "test"
+      };
+    };
+  };
+  
+  let module LotsOfArguments = {
+    let createElement
+        argument1::argument1=?
+        argument2::argument2=?
+        argument3::argument3=?
+        argument4::argument4=?
+        argument5::argument5=?
+        argument6::argument6=?
+        children => {
+      displayName: "test"
+    };
+  };
+  
+  let div argument1::argument1=? children => {
+    displayName: "test"
+  };
+  
+  let module List1 = {
+    let createElement children => {
+      displayName: "test"
+    };
+  };
+  
+  let module List2 = {
+    let createElement children => {
+      displayName: "test"
+    };
+  };
+  
+  let module List3 = {
+    let createElement children => {
+      displayName: "test"
+    };
+  };
+  
+  let (/><) a b => a + b;
+  
+  let (><) a b => a + b;
+  
+  let (/>) a b => a + b;
+  
+  let (><\/) a b => a + b;
+  
+  let tag1 = 5 />< 6;
+  
+  let tag2 = 5 >< 7;
+  
+  let tag3 = 5 /> 7;
+  
+  let tag4 = 5 ><\/ 7;
+  
+  let b = 2;
+  
+  let selfClosing = <Foo />;
+  
+  let selfClosing2 = <Foo a=1 b=true />;
+  
+  let selfClosing3 =
+    <Foo
+      a="really long values that should"
+      b="cause the entire thing to wrap"
+    />;
+  
+  let a = <Foo> <Bar c=(fun a => a + 2) /> </Foo>;
+  
+  let a3 = <So> <Much> <Nesting /> </Much> </So>;
+  
+  let a4 =
+    <Sibling>
+      <One test=true foo=b />
+      <Two foo=b />
+    </Sibling>;
+  
+  let a5 = <Foo> "testing a string here" </Foo>;
+  
+  let a6 =
+    <Foo2>
+      <Text> "testing a string here" </Text>
+      <Test yo=1 />
+      <Text> "another string" </Text>
+      <Bar />
+      <Exp> (2 + 4) </Exp>
+    </Foo2>;
+  
+  let intended = true;
+  
+  let punning = <Pun intended />;
+  
+  let namespace = <Namespace.Foo />;
+  
+  let c = <Foo />;
+  
+  let d = <Foo />;
+  
+  let spaceBefore =
+    <So> <Much> <Nesting /> </Much> </So>;
+  
+  let spaceBefore2 = <So> <Much /> </So>;
+  
+  let siblingNotSpaced =
+    <So> <Much /> <Much /> </So>;
+  
+  let jsxInList = [<Foo />];
+  
+  let jsxInList2 = [<Foo />];
+  
+  let jsxInListA = [<Foo />];
+  
+  let jsxInListB = [<Foo />];
+  
+  let jsxInListC = [<Foo />];
+  
+  let jsxInListD = [<Foo />];
+  
+  let jsxInList3 = [<Foo />, <Foo />, <Foo />];
+  
+  let jsxInList4 = [<Foo />, <Foo />, <Foo />];
+  
+  let jsxInList5 = [<Foo />, <Foo />];
+  
+  let jsxInList6 = [<Foo />, <Foo />];
+  
+  let jsxInList7 = [<Foo />, <Foo />];
+  
+  let jsxInList8 = [<Foo />, <Foo />];
+  
+  let testFunc b => b;
+  
+  let jsxInFnCall = testFunc <Foo />;
+  
+  let lotsOfArguments =
+    <LotsOfArguments
+      argument1=1
+      argument2=2
+      argument3=3
+      argument4=4
+      argument5=5
+      argument6="test">
+      <Namespace.Foo />
+    </LotsOfArguments>;
+  
+  let lowerCase = <div argument1=1 />;
+  
+  let b = 0;
+  
+  let d = 0;
+  
+  /*
+   * Should pun the first example:
+   */
+  let a = <Foo a> 5 </Foo>;
+  
+  let a = <Foo a=b> 5 </Foo>;
+  
+  let a = <Foo a=b b=d> 5 </Foo>;
+  
+  let a = <Foo a> 0.55 </Foo>;
+  
+  let a = Foo.createElement "" [@JSX];
+  
+  let ident = <Foo> a </Foo>;
+  
+  let fragment1 = <> <Foo /> <Foo /> </>;
+  
+  let fragment2 = <> <Foo /> <Foo /> </>;
+  
+  let fragment3 = <> <Foo /> <Foo /> </>;
+  
+  let fragment4 = <> <Foo /> <Foo /> </>;
+  
+  let fragment5 = <> <Foo /> <Foo /> </>;
+  
+  let fragment6 = <> <Foo /> <Foo /> </>;
+  
+  let fragment7 = <> <Foo /> <Foo /> </>;
+  
+  let fragment8 = <> <Foo /> <Foo /> </>;
+  
+  let fragment9 = <> 2 2 2 2 </>;
+  
+  let fragment10 = <> 2.2 3.2 4.6 1.2 </>;
+  
+  let fragment11 = <> "str" </>;
+  
+  let fragment12 = <> (6 + 2) (6 + 2) (6 + 2) </>;
+  
+  let fragment13 = <> fragment11 fragment11 </>;
+  
+  let listOfItems1 = <List1> 1 2 3 4 5 </List1>;
+  
+  let listOfItems2 =
+    <List2> 1.0 2.8 3.8 4.0 5.1 </List2>;
+  
+  let listOfItems3 =
+    <List3> fragment11 fragment11 </List3>;
+  
+  /*
+   * Several sequential simple jsx expressions must be separated with a space.
+   */
+  let thisIsRight a b => ();
+  
+  let tagOne children => ();
+  
+  let tagTwo children => ();
+  
+  /* thisIsWrong <tagOne /><tagTwo />; */
+  thisIsRight <tagOne /> <tagTwo />;
+  
+  /* thisIsWrong <tagOne> </tagOne><tagTwo> </tagTwo>; */
+  thisIsRight <tagOne /> <tagTwo />;
+  
+  let a children => ();
+  
+  let b children => ();
+  
+  let thisIsOkay =
+    <List1> <a /> <b /> <a /> <b /> </List1>;
+  
+  let thisIsAlsoOkay =
+    <List1> <a /> <b /> </List1>;
+  
+  /* Doesn't make any sense, but suppose you defined an
+     infix operator to compare jsx */
+  <a /> < <b />;
+  
+  <a /> > <b />;
+  
+  <a /> < <b />;
+  
+  <a /> > <b />;
+  
+  let listOfListOfJsx = [<> </>];
+  
+  let listOfListOfJsx = [<> <Foo /> </>];
+  
+  let listOfListOfJsx = [
+    <> <Foo /> </>,
+    <> <Bar /> </>
+  ];
+  
+  let listOfListOfJsx = [
+    <> <Foo /> </>,
+    <> <Bar /> </>,
+    ...listOfListOfJsx
+  ];
+  
+  let sameButWithSpaces = [<> </>];
+  
+  let sameButWithSpaces = [<> <Foo /> </>];
+  
+  let sameButWithSpaces = [
+    <> <Foo /> </>,
+    <> <Bar /> </>
+  ];
+  
+  let sameButWithSpaces = [
+    <> <Foo /> </>,
+    <> <Bar /> </>,
+    ...sameButWithSpaces
+  ];
+  
+  /*
+   * Test named tag right next to an open bracket.
+   */
+  let listOfJsx = [];
+  
+  let listOfJsx = [<Foo />];
+  
+  let listOfJsx = [<Foo />, <Bar />];
+  
+  let listOfJsx = [<Foo />, <Bar />, ...listOfJsx];
+  
+  let sameButWithSpaces = [];
+  
+  let sameButWithSpaces = [<Foo />];
+  
+  let sameButWithSpaces = [<Foo />, <Bar />];
+  
+  let sameButWithSpaces = [
+    <Foo />,
+    <Bar />,
+    ...sameButWithSpaces
+  ];
+  
+  
+  /**
+   * Test no conflict with polymorphic variant types.
+   */
+  type thisType = [ | `Foo | `Bar];
+  
+  type t 'a = [< thisType] as 'a;
+  
+  let asd =
+    <One test=true foo=2> "a" "b" </One> [@foo];
+  
+  let asd2 =
+    One.createElementobvioustypo
+    test::false
+    ["a", "b"]
+    [@JSX]
+    [@foo];
+  
+  let span
+      test::(test: bool)
+      foo::(foo: int)
+      children => 1;
+  
+  let asd =
+    <span test=true foo=2> "a" "b" </span> [@foo];
+  
+  /* "video" call doesn't end with a list, so the expression isn't converted to JSX */
+  let video test::(test: bool) children => children;
+  
+  let asd2 = video test::false 10 [@JSX] [@foo];
+  
+  let div children => 1;
+  
+  ((fun () => div) ()) [] [@JSX];
+  
+  let myFun () =>
+    <>
+      <Namespace.Foo
+        intended=true
+        anotherOptional=200
+      />
+      <Namespace.Foo
+        intended=true
+        anotherOptional=200
+      />
+      <Namespace.Foo
+        intended=true anotherOptional=200>
+        <Foo />
+        <Foo />
+        <Foo />
+        <Foo />
+        <Foo />
+        <Foo />
+        <Foo />
+      </Namespace.Foo>
+    </>;
+  
+  let myFun () => <> </>;
+  
+  let myFun () =>
+    <>
+      <Namespace.Foo
+        intended=true
+        anotherOptional=200
+      />
+      <Namespace.Foo
+        intended=true
+        anotherOptional=200
+      />
+      <Namespace.Foo
+        intended=true anotherOptional=200>
+        <Foo />
+        <Foo />
+        <Foo />
+        <Foo />
+        <Foo />
+        <Foo />
+        <Foo />
+      </Namespace.Foo>
+    </>;
+  
+  
+  /**
+   * Children should wrap without forcing attributes to.
+   */
+  <Foo a=10 b=0>
+    <Bar />
+    <Bar />
+    <Bar />
+    <Bar />
+  </Foo>;
+  /**
+   * Failing test cases:
+   */
+  /* let res = <Foo a=10 b=(<Foo a=200 />) > */
+  /*   <Bar /> */
+  /* </Foo>; */
+  /* let res = <Foo a=10 b=(<Foo a=200 />) />; */
+  
+languageServerProtocolProject https://github.com/jaredly/reason-language-server
+ writtenIn ocaml
+
+leachim6 Reason
+ filepath r/Reason.re
+ fileExtensions re
+ example
+  print_string "Hello World"
+  
+rosettaCode http://www.rosettacode.org/wiki/Category:Reason
+
+rijuRepl https://riju.codes/reasonml
+ example
+  print_string("Hello, world!\n");
+tryItOnline reason
+
+officialBlogUrl https://reasonml.github.io/blog/
+
+meetup https://www.meetup.com/topics/reasonml
+ memberCount 901
+ groupCount 11
+
+fileType text
+wordRank 1246
+isOpenSource true
+centralPackageRepositoryCount 0
+
+isbndb 1
+ year|publisher|title|authors|isbn13
+ 2006|Pc Publishing|Fast Guide To Propellerhead Reason|Hollin Jones; Debbie Poyser; Derek Johnson|9781870775274
+
+semanticScholar 3
+ year|title|doi|citations|influentialCitations|authors|paperId
+ 1997|Interval propagation to reason about sets: Definition and implementation of a practical language|10.1007/BF00137870|177|14|C. Gervet|6532f8973c4640b8feec743a9937f02ac16f6a38
+ 2006|How to reason with OWL in a logic programming system|10.1109/RULEML.2006.14|33|1|M. Krötzsch and P. Hitzler and Denny Vrandečić and Michael Sintek|a022506f8daec551f86ec601b1e9e972a86271ee
+ 2019|Semantic Query Integration With Reason|10.22152/programming-journal.org/2019/3/13|6|0|Philipp Seifer and Martin Leinberger and R. Lämmel and Steffen Staab|7f31fa37c6311d844637ea126e1c47dd5fd387a9

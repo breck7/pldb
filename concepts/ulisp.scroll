@@ -1,0 +1,26 @@
+import ../measures/conceptPage.scroll
+id ulisp
+appeared 2016
+type pl
+creators David Johnson-Davies
+conceptDescription uLisp® is a version of the Lisp programming language specifically designed to run on microcontrollers with a limited amount of RAM.
+website http://www.ulisp.com/show?3J
+
+example
+ (defun b (x) (pinmode 13 t) (digitalwrite 13 x) (delay 500) (b (not x)))
+
+githubRepo https://github.com/technoblogy/ulisp
+ firstCommit 2016
+ stars 297
+ forks 40
+ subscribers 23
+ created 2016
+ updated 2022
+ description A version of the Lisp programming language for ATmega-based Arduino boards.
+ issues 8
+
+repoStats
+ firstCommit 2016
+ commits 69
+ committers 2
+ files 7

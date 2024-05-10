@@ -1,0 +1,111 @@
+import ../measures/conceptPage.scroll
+id JSON5
+appeared 2012
+type dataNotation
+creators Aseem Kishore
+conceptDescription The JSON5 Data Interchange Format (JSON5) is a superset of JSON that aims to alleviate some of the limitations of JSON by expanding its syntax to include some productions from ECMAScript 5.1.
+website https://json5.org/
+documentation https://json5.org/
+country United States
+originCommunity https://github.com/json5
+domainName json5.org
+ registered 2011
+ awisRank
+  2022 1469395
+
+supersetOf json
+
+hasLineComments true
+ // A comment
+hasComments true
+ // A comment
+hasMultiLineComments true
+ /* A comment
+ */
+hasSemanticIndentation false
+
+lineCommentToken //
+multiLineCommentTokens /* */
+
+example
+ {
+   // comments
+   unquoted: 'and you can quote me on that',
+   singleQuotes: 'I can use "double quotes" here',
+   lineBreaks: "Look, Mom! \
+ No \\n's!",
+   hexadecimal: 0xdecaf,
+   leadingDecimalPoint: .8675309, andTrailing: 8675309.,
+   positiveSign: +1,
+   trailingComma: 'in objects', andIn: ['arrays',],
+   "backwardsCompatible": "with JSON",
+ } 
+
+githubRepo https://github.com/json5/json5
+ firstCommit 2012
+ stars 5161
+ forks 192
+ subscribers 78
+ created 2012
+ updated 2022
+ description JSON5 — JSON for humans
+ issues 32
+
+repoStats
+ firstCommit 2012
+ commits 649
+ committers 28
+ files 39
+
+githubLanguage JSON5
+ fileExtensions json5
+ trendingProjectsCount 0
+ type data
+ aceMode javascript
+ codemirrorMode javascript
+ codemirrorMimeType application/json
+ tmScope source.js
+ repos 0
+
+linguistGrammarRepo https://github.com/atom/language-javascript
+ firstCommit 2013
+ lastCommit 2018
+ committerCount 103
+ commitCount 1133
+ sampleCount 2
+ example
+  /*
+   * The following is a contrived example, but it illustrates most of the features:
+   */
+  
+  {
+      foo: 'bar',
+      while: true,
+  
+      this: 'is a \
+  multi-line string',
+  
+      // this is an inline comment
+      here: 'is another', // inline comment
+  
+      /* this is a block comment
+         that continues on another line */
+  
+      hex: 0xDEADbeef,
+      half: .5,
+      delta: +10,
+      to: Infinity,   // and beyond!
+  
+      finally: 'a trailing comma',
+      oh: [
+          "we shouldn't forget",
+          'arrays can have',
+          'trailing commas too',
+      ],
+  }
+
+fileType text
+isOpenSource true
+centralPackageRepositoryCount 0
+
+semanticScholar 0

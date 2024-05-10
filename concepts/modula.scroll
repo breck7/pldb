@@ -1,0 +1,45 @@
+import ../measures/conceptPage.scroll
+id Modula
+appeared 1975
+type pl
+creators Niklaus Wirth
+country Switzerland
+originCommunity ETH Zurich
+
+hasAssignment true
+
+assignmentToken :=
+
+wikipedia https://en.wikipedia.org/wiki/Modula
+ related pascal alma-0 go modula-2
+ summary The Modula programming language is a descendant of the Pascal programming language. It was developed in Switzerland in the 1970s by Niklaus Wirth, the same person who designed Pascal. The main innovation of Modula over Pascal is a module system, used for grouping sets of related declarations into program units; hence the name Modula. The language is defined in a report by Wirth called Modula. A language for modular multiprogramming published 1976. Modula was first implemented by Niklaus Wirth himself on a PDP-11. Very soon other implementations followed, most important the University of York Modula compiler and a compiler developed at Philips Laboratories named PL Modula, which generated code for the LSI-11 microprocessor. The development of Modula was discontinued soon after its publication. Wirth then concentrated his efforts on Modula's successor, Modula-2.
+ pageId 20824
+ dailyPageViews 37
+ created 2002
+ backlinksCount 55
+ revisionCount 68
+ appeared 1975
+
+hopl https://hopl.info/showlanguage.prx?exp=771
+
+fileType text
+centralPackageRepositoryCount 0
+
+goodreads
+ title|year|author|goodreadsId|rating|ratings|reviews
+ Programming in Modula-2|1982|Niklaus Wirth|18071084|3.60|5|0
+ Programming in Modula-2 (Texts and Monographs in Computer Science)|1985|Niklaus Wirth|2717625|3.14|7|0
+ Modula 2 For Pascal Programmers|1984|Richard Gleaves|4016916|0.0|0|0
+ Systems Programming With Modula 3|1991|Greg Nelson|5007845|3.00|2|0
+ Software Engineering and Modula-2|1984|Gustav Pomberger|2655108|0.0|0|0
+ Modula 2 Programming||I. Kaplan|4393413|0.0|0|0
+ Portable Modula-2 Programming|1989|Mark Woodman|3649250|0.0|0|0
+
+isbndb 6
+ year|publisher|title|authors|isbn13
+ 1992|Addison-Wesley|Programming in Oberon: Steps Beyond Pascal and Modula|Reiser, Martin and Wirth, Niklaus|9780201565430
+ 2010|General Books|Modula Programming Language Family: Modula-3|Books and LLC|9781156290996
+ 1984|Prentice Hall Direct|Programming In Modula 2|I. Kaplan|9780137292943
+ 1987|Charles Merrill|Introduction Programming Using Modula 2|SUTCLIFFE|9780675218610
+ 1989|Mcgraw-hill|Programming In Modula 2 (schaum's Outline Series)|Tremblay|9780070651784
+ 1988|Prentice Hall|Modula 2: A Second Course In Programming (prentice Hall Advances In Computer Science Series)|K. J. Gough and George M. Mohay|9780135993903

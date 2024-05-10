@@ -1,0 +1,66 @@
+import ../measures/conceptPage.scroll
+id Q#
+appeared 2017
+type pl
+website https://docs.microsoft.com/en-us/quantum/quantum-qr-intro?view=qsharp-preview
+aka qsharp
+country United States
+originCommunity Microsoft
+
+hasStrings true
+hasLineComments true
+ // A comment
+hasComments true
+ // A comment
+hasWhileLoops true
+hasFunctions true
+hasConditionals true
+
+lineCommentToken //
+stringToken "
+keywords namespace open as operation function body adjoint newtype controlled if elif else repeat until fixup for in while return fail within apply Adjoint Controlled Adj Ctl is self auto distribute invert intrinsic let set w/ new not and or use borrow using borrowing mutable
+
+githubLanguage Q#
+ type programming
+ fileExtensions qs
+ aceMode text
+ tmScope source.qsharp
+ aliases qsharp
+ repos 768
+githubBigQuery Q#
+ repos 4
+ users 4
+
+monaco qsharp
+
+leachim6 QSharp
+ filepath q/QSharp.qs
+ fileExtensions qs
+ example
+  ﻿namespace Quantum.HelloWorld {
+      open Microsoft.Quantum.Canon;
+      open Microsoft.Quantum.Intrinsic;
+  
+  
+      operation HelloWorld() : Unit {
+          Message("Hello World");
+      }
+  }
+  
+
+rijuRepl https://riju.codes/qsharp
+ example
+  namespace main {
+  
+      open Microsoft.Quantum.Canon;
+      open Microsoft.Quantum.Intrinsic;
+  
+      @EntryPoint()
+      operation Main() : Unit {
+          Message("Hello, world!");
+      }
+  }
+  
+
+fileType text
+centralPackageRepositoryCount 0

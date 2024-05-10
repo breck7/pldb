@@ -1,0 +1,19 @@
+import ../measures/conceptPage.scroll
+id Base64
+appeared 1987
+type textEncodingFormat
+country United States
+originCommunity RSA Laboratories
+
+wikipedia https://en.wikipedia.org/wiki/Base64
+ summary In computer science, Base64 is a group of binary-to-text encoding schemes that represent binary data in an ASCII string format by translating it into a radix-64 representation. The term Base64 originates from a specific MIME content transfer encoding. Each Base64 digit represents exactly 6 bits of data. Three 8-bit bytes (i.e., a total of 24 bits) can therefore be represented by four 6-bit Base64 digits. Common to all binary-to-text encoding schemes, Base64 is designed to carry data stored in binary formats across channels that only reliably support text content. Base64 is particularly prevalent on the World Wide Web where its uses include the ability to embed image files or other binary assets inside textual assets such as HTML and CSS files.
+ backlinksCount 381
+ pageId 215241
+ dailyPageViews 2402
+ appeared 1987
+
+isbndb 0
+
+semanticScholar 1
+ year|title|doi|citations|influentialCitations|authors|paperId
+ 2019|Base64 Encoding on Heterogeneous Computing Platforms|10.1109/ASAP.2019.00014|1|0|Zheming Jin and H. Finkel|748ab7705c599ab009e9e2fc84970d5afbee677a

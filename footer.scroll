@@ -1,0 +1,30 @@
+importOnly
+viewSource
+
+copyButtons
+
+stumpNoSnippet
+ div
+  class trueBaseThemeFooter
+  a PLDB
+   href BASE_URL/index.html
+   class trueBaseThemeLogo
+  span - Build the next great programming language
+  span ·
+  a About
+   href BASE_URL/pages/about.html
+  span ·
+  a Acknowledgements
+   href BASE_URL/pages/acknowledgements.html
+  span ·
+  a Extensions
+   href BASE_URL/lists/extensions.html
+  span ·
+  a Day DAYS_SINCE_LAUNCH
+   href https://github.com/breck7/pldb/commits/main
+  span ·
+  a feedback@pldb.io
+   href mailto:feedback@pldb.io
+
+<script src="BASE_URL/lists/autocompleteCombined.js"></script>
+<script>document.addEventListener("DOMContentLoaded", evt => initAutocomplete("trueBaseThemeHeaderSearch"))</script>

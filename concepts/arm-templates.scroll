@@ -1,0 +1,25 @@
+import ../measures/conceptPage.scroll
+id ARM Templates
+appeared 2017
+type jsonFormat
+conceptDescription Azure Resource Manager templates are JavaScript Object Notation (JSON) files that define the infrastructure and configuration for your project.
+reference https://docs.microsoft.com/en-us/azure/azure-resource-manager/templates/
+originCommunity Microsoft
+
+example
+ "properties": {
+   "publisher": "Microsoft.Azure.Extensions",
+   "type": "CustomScript",
+   "typeHandlerVersion": "2.0",
+   "autoUpgradeMinorVersion": true,
+   "settings": {
+     "fileUris": [
+       "[concat(variables('template').assets, '/lamp-app/install_lamp.sh')]"
+     ]
+   },
+   "protectedSettings": {
+     "commandToExecute": "[concat('sh install_lamp.sh ', parameters('mySqlPassword'))]"
+   }
+ }
+
+semanticScholar 0

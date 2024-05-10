@@ -1,0 +1,35 @@
+import ../measures/conceptPage.scroll
+id Gren
+appeared 2012
+type pl
+creators evancz
+conceptDescription A programming language for simple and correct applications
+website https://gren-lang.org/
+fileExtensions gren
+country Unknown
+originCommunity https://github.com/gren-lang
+
+example
+ module Main exposing (main)
+ 
+ import Html exposing (Html)
+ 
+ main : Html a
+ main =
+   Html.text "Hello, world!"
+ 
+
+githubRepo https://github.com/gren-lang/compiler
+ firstCommit 2012
+ stars 117
+ forks 6
+ subscribers 9
+ created 2021
+ updated 2022
+ issues 55
+
+repoStats
+ firstCommit 2012
+ commits 6438
+ committers 131
+ files 170

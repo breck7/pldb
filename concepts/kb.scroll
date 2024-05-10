@@ -1,0 +1,15 @@
+import ../measures/conceptPage.scroll
+id KB
+appeared 1990
+type pl
+conceptDescription A knowledge representation package for Common Lisp
+reference https://repository.upenn.edu/cgi/viewcontent.cgi?article=1569&context=cis_reports
+country United States
+originCommunity University of Pennsylvania
+
+example
+ (defconcept circle () (center radius)) 
+
+hopl https://hopl.info/showlanguage.prx?exp=7724
+
+wordRank 1795

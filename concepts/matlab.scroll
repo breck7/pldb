@@ -1,0 +1,374 @@
+import ../measures/conceptPage.scroll
+id MATLAB
+appeared 1984
+type pl
+creators Cleve Moler
+website http://mathworks.com/products/matlab
+documentation https://www.mathworks.com/help/matlab/
+emailList https://lists.rothamsted.ac.uk/mailman/listinfo/matlab-users
+country United States
+originCommunity University of New Mexico
+releaseNotesUrl https://www.mathworks.com/help/matlab/release-notes.html
+
+visualParadigm true
+
+hasStrings true
+ "hello world"
+hasComments true
+ % This is a comment
+hasMultiLineComments true
+ %{
+ A comment.
+ %}
+hasConstructors true
+hasExplicitTypeCasting true
+ b = cast(a, 'like', p)
+hasImports true
+ import pkg.cls1
+ import pkg.pkfcn
+hasIterators true
+ % Define an array of integers
+ myArray = [1,3,5,7,11,13];
+ 
+ for n = myArray
+    % ... do something with n
+    disp(n)  % Echo integer to Command Window
+ end
+hasOperatorOverloading true
+hasLineComments true
+ % A comment
+hasPrintDebugging true
+hasSemanticIndentation false
+hasScientificNotation true
+
+lineCommentToken %
+multiLineCommentTokens %{ %}
+printToken disp
+stringToken '
+
+wikipedia https://en.wikipedia.org/wiki/MATLAB
+ example
+  [X,Y] = meshgrid(-10:0.25:10,-10:0.25:10);
+  f = sinc(sqrt((X/pi).^2+(Y/pi).^2));
+  surf(X,Y,f);
+  axis([-10 10 -10 10 -0.3 1])
+  xlabel('{\bfx}')
+  ylabel('{\bfy}')
+  zlabel('{\bfsinc} ({\bfR})')
+ related mathlab c java linux ia-32 apl pl-0 speakeasy julia octave scilab csharp fortran python mupad simulink r perl xml sql maple mathematica idl sagemath s perl-data-language numpy scipy matplotlib lua ruby javascript jvm hdf powerpc solaris sparc subversion json isbn
+ summary MATLAB (matrix laboratory) is a multi-paradigm numerical computing environment. A proprietary programming language developed by MathWorks, MATLAB allows matrix manipulations, plotting of functions and data, implementation of algorithms, creation of user interfaces, and interfacing with programs written in other languages, including C, C++, C#, Java, Fortran and Python. Although MATLAB is intended primarily for numerical computing, an optional toolbox uses the MuPAD symbolic engine, allowing access to symbolic computing abilities. An additional package, Simulink, adds graphical multi-domain simulation and model-based design for dynamic and embedded systems. As of 2017, MATLAB has over 2 million users across industry and academia. MATLAB users come from various backgrounds of engineering, science, and economics.
+ pageId 20412
+ dailyPageViews 2338
+ created 2001
+ backlinksCount 1565
+ revisionCount 2461
+ appeared 1984
+
+githubLanguage Matlab
+ fileExtensions matlab m
+ trendingProjects
+  author name avatar url language languageColor stars forks currentPeriodStars description
+  luanfujun deep-photo-styletransfer https://github.com/luanfujun.png https://github.com/luanfujun/deep-photo-styletransfer MATLAB #e16737 9275 1342 92 "Code and data for paper ""Deep Photo Style Transfer"": https://arxiv.org/abs/1703.07511"
+  HuangCongQing Algorithms_MathModels https://github.com/HuangCongQing.png https://github.com/HuangCongQing/Algorithms_MathModels MATLAB #e16737 376 162 47 "【国赛】【美赛】数学建模相关算法 MATLAB实现"
+  AvaisP machine-learning-programming-assignments-coursera-andrew-ng https://github.com/AvaisP.png https://github.com/AvaisP/machine-learning-programming-assignments-coursera-andrew-ng MATLAB #e16737 218 214 14 "Solutions to Andrew NG's machine learning course on Coursera"
+ trendingProjectsCount 4
+ type programming
+ aceMode matlab
+ codemirrorMode octave
+ codemirrorMimeType text/x-octave
+ tmScope source.matlab
+ aliases octave
+ repos 311901
+githubBigQuery MATLAB
+ repos 2791
+ users 2497
+
+pygmentsHighlighter Matlab
+ filename matlab.py
+ fileExtensions m
+linguistGrammarRepo https://github.com/mathworks/MATLAB-Language-grammar
+ firstCommit 2017
+ lastCommit 2018
+ committerCount 2
+ commitCount 21
+ sampleCount 39
+ example
+  function [ d, d_mean, d_std ] = normalize( d )
+      d_mean = mean(d);
+      d = d - repmat(d_mean, size(d,1), 1);
+      d_std = std(d);
+      d = d./ repmat(d_std, size(d,1), 1);
+  end
+  
+
+projectEuler Matlab
+ memberCount
+  2019 3028
+  2022 3252
+helloWorldCollection MATLAB
+ % Hello World in MATLAB.
+ 
+ disp('Hello World');
+ 
+leachim6 MATLAB
+ filepath m/MATLAB.m
+ fileExtensions m
+ example
+  disp('Hello World')
+  
+rosettaCode http://www.rosettacode.org/wiki/Category:MATLAB
+
+indeedJobs matlab engineer
+ 2017 6204
+linkedInSkill matlab
+ 2018 2602372
+stackOverflowSurvey
+ 2021
+  users 3846
+  medianSalary 43948
+  fans 1562
+  percentageUsing 0.05
+officialBlogUrl https://blogs.mathworks.com/matlab/
+eventsPageUrl https://www.mathworks.com/company/events.html
+faqPageUrl https://www.mathworks.com/matlabcentral/answers/faqs
+
+subreddit https://reddit.com/r/matlab
+ memberCount
+  2017 13222
+  2022 46296
+meetup https://www.meetup.com/topics/matlab
+ memberCount 10609
+ groupCount 25
+
+tiobe MATLAB
+ currentRank 12
+hopl https://hopl.info/showlanguage.prx?exp=2216
+pypl Matlab
+
+packageRepository https://www.mathworks.com/matlabcentral/fileexchange/
+
+twitter https://twitter.com/matlab
+jupyterKernel https://github.com/imatlab/imatlab
+jupyterKernel https://github.com/calysto/matlab_kernel
+fileType text
+
+goodreads
+ title|year|author|goodreadsId|rating|ratings|reviews
+ MATLAB Programming for Engineers|1999|Stephen J. Chapman|4467285|4.10|114|6
+ MATLAB for Neuroscientists: An Introduction to Scientific Computing in MATLAB|2008|Pascal Wallisch|3922239|3.94|32|0
+ MATLAB for Engineers|2010|Holly Moore|18128130|3.95|37|1
+ Getting Started with MATLAB: A Quick Introduction for Scientists and Engineers|2009|Rudra Pratap|13368999|4.01|72|4
+ MATLAB for Control Engineers|2007|Katsuhiko Ogata|2185450|4.00|38|0
+ Essential MATLAB for Engineers and Scientists|1997|Brian D. Hahn|546841|3.86|43|3
+ Introduction to MATLAB for Engineers|1998|William J. Palm III|10706762|3.88|17|1
+ An Engineers Guide to MATLAB|2000|Edward B. Magrab|3884382|4.29|7|0
+ Essentials of MATLAB Programming|2005|Stephen J. Chapman|1175135|4.00|17|0
+ Getting Started with MATLAB 7: A Quick Introduction for Scientists and Engineers|2005|Rudra Pratap|337141|4.03|105|5
+
+isbndb 167
+ year|publisher|title|authors|isbn13
+ 2010|McGraw-Hill Education|Introduction to MATLAB for Engineers|Palm, William|9780073534879
+ 2012|Pearson|Engineering Computation with MATLAB|Smith, David|9780132568708
+ 2015|Cengage Learning|MATLAB Programming for Engineers|Chapman, Stephen J.|9781111576714
+ 2013|Academic Press|MATLAB for Neuroscientists: An Introduction to Scientific Computing in MATLAB|Wallisch, Pascal and Lusignan, Michael E. and Benayoun, Marc D. and Baker, Tanya I. and Dickey, Adam Seth and Hatsopoulos, Nicholas G.|9780123838360
+ 2008|Cengage Learning|Essentials of MATLAB Programming|Chapman, Stephen J.|9780495295686
+ 2009|Pearson|Engineering Computation With MATLAB|Smith, David M.|9780136080633
+ 2011|CL Engineering|Digital Signal Processing Using MATLAB|Ingle, Vinay K. and Proakis, John G.|9781111427375
+ 2011|Wiley|Fundamentals of Digital Image Processing: A Practical Approach with Examples in Matlab|Solomon, Chris and Breckon, Toby|9780470844731
+ 2014|CRC Press|Essential MATLAB and Octave|Rogel-Salazar, Jesus|9781482234633
+ 2017|Apress|MATLAB Deep Learning: With Machine Learning, Neural Networks and Artificial Intelligence|Kim, Phil|9781484228456
+ 2009|CRC Press|MATLAB with Applications to Engineering, Physics and Finance|Baez-Lopez, David|9781439806975
+ 2005|Springer|Mechanics of Composite Materials with MATLAB|Voyiadjis, George Z and Kattan, Peter I.|9783540243533
+ 2003|Prentice Hall|Matlab Programming|Kuncicky, David C.|9780130351272
+ 2017|SDC Publications|An Engineer's Introduction to Programming with MATLAB 2017|Shawna Lockhart and Eric Tilleson|9781630571252
+ 2017|Academic Press|MATLAB Programming for Biomedical Engineers and Scientists|King, Andrew P. and Aljabar, Paul|9780128122037
+ 2004|McGraw-Hill Science/Engineering/Math|Introduction to Matlab 7 for Engineers (McGraw-Hill's Best: Basic Engineering Series and Tools)|Palm III,William|9780072548181
+ 2005|Wiley-Interscience|Applied Numerical Methods Using MATLAB|Yang, Won Y. and Cao, Wenwu and Chung, Tae-Sang and Morris, John|9780471698333
+ 2001|SIAM: Society for Industrial and Applied Mathematics|Spectral Methods in MATLAB (Software, Environments, Tools)|Trefethen, Lloyd N.|9780898714654
+ 2009|Academic Press|Essential Matlab for Engineers and Scientists (Hahn and Attaway Bundle)|Hahn, Brian and Valentine Ph.D., Daniel|9780123748836
+ 2006|Jones & Bartlett Learning|Digital Signal Processing Using Matlab And Wavelets (Electrical Engineering)|Weeks, Michael|9780977858200
+ 2005|Oxford University Press|Getting Started with MATLAB 7: A Quick Introduction for Scientists and Engineers (The Oxford Series in Electrical And Computer Engineering)|Pratap, Rudra|9780195179378
+ 2009|Prentice Hall|MATLAB and Its Applications in Engineering: Based on Matlab 7.5 (R2007b)|Bansal, Raj Kumar and Goel, Ashok Kumar and Sharma, Manoj Kumar|9788131716816
+ 2008|Jones & Bartlett Learning|Classical Mechanics With MATLAB Applications|Hasbun, Javier|9780763746360
+ 2007|Addison Wesley|Engineering Computation with MATLAB|Smith, David M|9780321481085
+ 2001|Prentice Hall|Numerical Analysis and Graphic Visualization with MATLAB (2nd Edition)|Nakamura, Shoichiro|9780130654892
+ |CENGAGE Learning Custom Publishing|Essentials of MATLAB (R) Programming, International Edition|Chapman, Stephen|9781305970717
+ 2004|Course Technology|Introduction to Digital Image Processing with MATLAB|McAndrew, Alasdair|9780534400118
+ 2004|CRC Press|Electronics and Circuit Analysis Using MATLAB|John Okyere Attia|9780849318924
+ 2022|PHI|Lab Primer Through Matlab|JAYADEVAN, R.|9788120349322
+ 2006|Dog Ear Publishing, LLC|MATLAB Advanced GUI Development|Scott T. Smith|9781598581812
+ 1998|Oxford University Press|Getting Started with MATLAB 5, A Quick Introduction for Scientists and Engineers|Pratap, Rudra|9780195129472
+ 2005-02-04|Wiley|Engineering and Scientific Computations Using MATLAB|Sergey E. Lyshevski|9780471723851
+ 2020|Wiley|Applied Numerical Methods Using MATLAB|Yang, Won Y. and Cao, Wenwu and Kim, Jaekwon and Park, Kyung W. and Park, Ho-Hyun and Joung, Jingon and Ro, Jong-Suk and Lee, Han L. and Hong, Cheol-Ho and Im, Taeho|9781119626800
+ 2019|Springer|Linear Algebra, Signal Processing, and Wavelets - A Unified Approach: MATLAB Version (Springer Undergraduate Texts in Mathematics and Technology)|Øyvind Ryan|9783030018122
+ 2003|Springer|Scientific Computing with MATLAB (Texts in Computational Science and Engineering 2)|Quarteroni, Alfio and Saleri, Fausto|9783540443636
+ 2018|CRC Press|Programming with MATLAB for Scientists: A Beginner’s Introduction|Mikhailov, Eugeniy E.|9781498738286
+ 2005|Chapman and Hall/CRC|An Introduction to Numerical Methods: A MATLAB Approach|Kharab, Abdelwahab and Kharab, Abdelwahab and Guenther, Ronald B.|9781584885573
+ 2006|Morgan and Claypool Publishers|Learning Programming using MATLAB (Synthesis Lectures on Electrical Engineering)|Sayood, Khalid|9781598291421
+ 2014|PEARSON INDIA|Programming in MATLAB|PATEL / MITTAL|9789332524811
+ 2019|Independently Published|Optimization Introduction With Matlab|Lopez and J.|9781099648281
+ 1991|Electronic Industry|Matlab Advanced Programming (matlab Practical Guide Series)|Su Jin Ming Bian Zhu|9787121013768
+ 2013|LAP LAMBERT Academic Publishing|One Dimensional Analysis Program for Scramjet and Ramjet Flowpaths: Conceptual Analysis and Simulation of Scramjet/Ramjet Engine with MATLAB Programming|Ganapathy, Rohan M. and Maruthaiyan, Pradhapraj and Johnson, Pradeep|9783659323973
+ 2013|LAP LAMBERT Academic Publishing|Matlab for Regional Economists|Zheng, Shi|9783659366703
+ 1997|Prentice Hall|Mastering Dsp Concepts Using Matlab|Ambardar, Ashok and Borghesani, Craig|9780135349762
+ 1997|Arnold,|Essential Matlab For Scientists And Engineers|Brian D. Hahn|9780340691441
+ 2020|SDC Publications|Programming and Engineering Computing with MATLAB 2020|Huei-Huang Lee|9781630573973
+ 20171127|Springer Nature|Introduction to MATLAB for Engineers and Scientists|Sandeep Nagar|9781484231890
+ 2004|Springer|Scientific Computing With Matlab (texts In Computational Science And Engineering)|Alfio Quarteroni and Fausto Saleri|9783540208372
+ 2010|Springer|An Introduction to Scientific Computing: Twelve Computational Projects Solved with MATLAB|Danaila, Ionut and Joly, Pascal and Kaber, Sidi Mahmoud and Postel, Marie|9781441921611
+ 2008|Chapman and Hall/CRC|Computational Partial Differential Equations Using MATLAB (Chapman & Hall/CRC Applied Mathematics & Nonlinear Science)|Li, Jichun and Chen, Yi-Tung|9781420089059
+ 2014|Apress|MATLAB Programming for Numerical Analysis (Matlab Solutions)|Lopez, Cesar|9781484202951
+ 2014|Apress|MATLAB Graphical Programming: Practical hands-on MATLAB solutions|Lopez, Cesar|9781484203163
+ 2014|Apress|MATLAB Differential Equations|Lopez, Cesar|9781484203101
+ 2012|Springer|MATLAB for Psychologists|Borgo, Mauro and Soranzo, Alessandro and Grassi, Massimo|9781461421979
+ 2014|Apress|MATLAB Linear Algebra|Lopez, Cesar|9781484203224
+ 2014|Apress|MATLAB Control Systems Engineering|Lopez, Cesar|9781484202890
+ 20010806|Cambridge University Press|A Guide to MATLAB|Brian R. Hunt; Ronald L. Lipsman; Jonathan M. Rosenberg|9780511074813
+ 2014|Apress|MATLAB Differential and Integral Calculus|Lopez, Cesar|9781484203040
+ 2014|Apress|MATLAB Symbolic Algebra and Calculus Tools|Lopez, Cesar|9781484203439
+ 2021|Vikas Publishing|Matlab : Demystified Basic Concepts And Applications|DR. KANDARPA KUMAR SARMA|9788125937128
+ 2017|Chapman and Hall/CRC|A Guide to MATLAB Object-Oriented Programming|Register, Andy H.|9781138460867
+ 2013|Morgan Kaufmann|Accelerating MATLAB with GPU Computing: A Primer with Examples|Suh, Jung W. and Kim, Youngmin|9780124079168
+ 2017|Wiley-Blackwell|Practical Finite Element Modeling in Earth Science using Matlab|Simpson, Guy|9781119248668
+ 2014|Springer|Exercises in Computational Mathematics with MATLAB (Problem Books in Mathematics)|Lyche, Tom and Merrien, Jean-Louis|9783662435113
+ 2016|Cengage Learning|Digital Signal Processing using MATLAB (Activate Learning with these NEW titles from Engineering!)|Schilling, Robert J. and Harris, Sandra L|9781305887206
+ 2016|Routledge|Programming Behavioral Experiments with MATLAB and Psychtoolbox: 9 Simple Steps for Students and Researchers|Misirlisoy, Erman|9781138671928
+ 2011|Springer|Numerical Methods for the Life Scientist: Binding and Enzyme Kinetics Calculated with GNU Octave and MATLAB|Prinz, Heino|9783642208201
+ 2013|Springer|A Journey from Robot to Digital Human: Mathematical Principles and Applications with MATLAB Programming (Modeling and Optimization in Science and Technologies Book 1)|Gu, Edward Y L|9783642390470
+ 2019|Cengage Learning|MATLAB Programming for Engineers|Chapman, Stephen J.|9780357030394
+ 2020|Academic Press|Programming for Electrical Engineers: MATLAB and Spice|Squire Ph.D., James C. and Brown Ph.D., Julie Phillips|9780128215029
+ 2019|Cengage Learning|MATLAB Programming for Engineers|Chapman, Stephen J.|9780357030523
+ 2017|LAP LAMBERT Academic Publishing|Operations Research with Lingo: Solutions of Linear Programming Problems through LINGO and MATLAB|Gahan, Padmabati and Pattnaik, Monalisha|9783330328457
+ 2014|For Dummies|MATLAB For Dummies|Sizemore, Jim and Mueller, John Paul|9781118820032
+ 2020-07-28T00:00:01Z|Mercury Learning & Information|Programming Fundamentals Using MATLAB|Weeks PhD, Michael|9781683925552
+ 2007|McGraw-Hill Education|A Concise Introduction to Matlab|Palm, William|9780073385839
+ 2020|Academic Press|Programming Mathematics Using MATLAB|Oberbroeckling, Lisa A.|9780128178003
+ 2000|Pearson|Numerical Methods with MATLAB : Implementations and Applications|Recktenwald, Gerald|9780201308600
+ 2019-06-19T00:00:01Z|SDC Publications|An Engineer's Introduction to Programming with MATLAB 2019|Shawna Lockhart and Eric Tilleson|9781630572921
+ 2019|Apress|Beginning MATLAB and Simulink: From Novice to Professional|Eshkabilov, Sulaymon|9781484250600
+ 2003|Pearson|Numerical Methods Using Matlab|Mathews, John and Fink, Kurtis|9780130652485
+ 2008|Academic Press|MATLAB for Neuroscientists: An Introduction to Scientific Computing in MATLAB|Wallisch, Pascal and Lusignan, Michael E. and Benayoun, Marc D. and Baker, Tanya I. and Dickey, Adam Seth and Hatsopoulos, Nicholas G.|9780123745514
+ 2009|New Age Science|MATLAB for Mechanical Engineers|R. V. Dukkipati|9781906574130
+ 2017|Academic Press|Neural Data Science: A Primer with MATLAB and Python|Nylen, Erik Lee and Wallisch, Pascal|9780128040430
+ 2015|Cengage Learning|MATLAB Programming for Engineers|Chapman, Stephen J.|9781305445369
+ 2014|Apress|MATLAB Optimization Techniques|Lopez, Cesar|9781484202920
+ 2012-01-01T00:00:01Z|CL-Engineering|MATLAB Programming with Applications for Engineers|Stephen J. Chapman|9780495668077
+ 2019|Apress|Beginning MATLAB and Simulink: From Novice to Professional|Eshkabilov, Sulaymon|9781484250617
+ 2019-09-30T00:00:01Z|SDC Publications|Programming and Engineering Computing with MATLAB 2019|Huei-Huang Lee|9781630572976
+ 2017|Cengage Learning|Essentials of MATLAB Programming|Chapman, Stephen J.|9781337515368
+ 2001|Academic Press|A Matlab Companion for Multivariable Calculus|Cooper, Jeffery|9780121876258
+ 2020|BPB Publications|Fundamental Concepts of MATLAB Programming: From Learning the Basics to Solving a Problem with MATLAB (English Edition)|Bakariya, Dr. Brijesh and Parmar, Dr. Kulwinder Singh|9789389845822
+ 2009|Society for Industrial and Applied Mathematics|Insight Through Computing: A MATLAB Introduction to Computational Science and Engineering|Van Loan, Charles F. and Fan, K.-Y. Daisy|9780898716917
+ 2016-08-10T00:00:01Z|CreateSpace Independent Publishing Platform|MATLAB - Programming with MATLAB for Beginners: A Practical Introduction To Programming And Problem Solving (MATLAB for Engineers, MATLAB for Scientists, MATLAB Programming for Dummies)|Learning, UpSkill|9781536991444
+ 2011|Wiley|Financial Risk Forecasting: The Theory and Practice of Forecasting Market Risk with Implementation in R and Matlab|Danielsson, Jon|9780470669433
+ 2020|Apress|Practical MATLAB Deep Learning: A Project-Based Approach|Paluszek, Michael and Thomas, Stephanie|9781484251249
+ 2003|Springer|MATLAB for Engineers Explained|Gustafsson, Fredrik and Bergman, Niclas|9781852336974
+ 2007|CL Engineering|MATLAB Programming for Engineers|Chapman, Stephen J.|9780495244493
+ 2009|Wiley|Applied Optimization with MATLAB Programming|Venkataraman, P.|9780470084885
+ 2018|Routledge|Hack Audio: An Introduction to Computer Programming and Digital Signal Processing in MATLAB (Audio Engineering Society Presents)|Tarr, Eric|9781351018456
+ 2020|Apress|Practical MATLAB Modeling with Simulink: Programming and Simulating Ordinary and Partial Differential Equations|Eshkabilov, Sulaymon L.|9781484257982
+ 2017|Cengage Learning|Essentials of MATLAB Programming|Chapman, Stephen J.|9781305970656
+ 2015|Chapman and Hall/CRC|R and MATLAB (Chapman & Hall/CRC The R Series Book 30)|Hiebeler, David E.|9781466568396
+ 2018|Mercury Learning and Information|Mathematical Methods for Physics: Using MATLAB and Maple|Claycomb, J. R.|9781683920984
+ 2003|Pearson Prentice Hall|Digital Image Processing Using MATLAB|Gonzalez, Rafael C. and Woods, Richard E. and Eddins, Steven L.|9780130085191
+ 2010|CreateSpace Independent Publishing Platform|MATLAB for Beginners: A Gentle Approach - Revised Edition|Kattan, Peter I|9781453683811
+ 2017|Academic Press|MATLAB Programming for Biomedical Engineers and Scientists|King, Andrew P. and Aljabar, Paul|9780128135105
+ 2018|SDC Publications|Programming and Engineering Computing with MATLAB 2018|Huei-Huang Lee|9781630571719
+ 2005|Springer|An Introduction to Programming and Numerical Methods in MATLAB|Otto, Steve and Denier, James P.|9781852339197
+ 2020|Apress|Practical MATLAB Modeling with Simulink: Programming and Simulating Ordinary and Partial Differential Equations|Eshkabilov, Sulaymon L.|9781484257999
+ 2014|Apress|MATLAB Matrix Algebra (Matlab Solutions)|Lopez, Cesar|9781484203071
+ 1996|Pearson|Engineering Problem Solving with MATLAB|Etter, Delores|9780133976885
+ 2006|McGraw-Hill Science/Engineering/Math|Applied Numerical Methods with MATLAB for Engineers and Scientists|Chapra, Steven|9780073132907
+ 2016|Morgan Kaufmann|GPU Programming in MATLAB|Ploskas, Nikolaos and Samaras, Nikolaos|9780128051320
+ 2016|Apress|MATLAB Machine Learning|Paluszek, Michael and Thomas, Stephanie|9781484222508
+ 2011|Springer|Programming for Engineers: A Foundational Approach to Learning C and Matlab|Bradley, Aaron R.|9783642233029
+ 2008-07-30T00:00:01Z|Society for Industrial and Applied Mathematics|Linear Programming with MATLAB (MPS-SIAM Series on Optimization)|Ferris, Michael C. and Mangasarian, Olvi L. and Wright, Stephen J.|9780898716436
+ 2016|CreateSpace Independent Publishing Platform|Matlab And Python Programming: A Practical Guide For Engineers And Data Scientists (Matlab And Python Programming for Beginners)|Learning, UpSkill|9781540599568
+ 2012|Cengage Learning|MATLAB Programming with Applications for Engineers|Chapman, Stephen J.|9781285402796
+ 2016-09-13T00:00:01Z|SDC Publications|Programming with MATLAB 2016|Huei-Huang Lee|9781630570132
+ 2016|Morgan Kaufmann|GPU Programming in MATLAB|Ploskas, Nikolaos and Samaras, Nikolaos|9780128051337
+ 2020|Independently published|Design Optimization using Matlab and SolidWorks|Suresh, Prof Krishnan|9781653515608
+ 2013|Wiley|Financial Modelling: Theory, Implementation and Practice with MATLAB Source (The Wiley Finance Series)|Kienitz, Joerg and Wetterau, Daniel|9780470744895
+ 2019|CRC Press|Fundamentals of Graphics Using MATLAB|Parekh, Ranjan|9780429591730
+ 2009-07-23T00:00:01Z|Society for Industrial and Applied Mathematics|Parallel MATLAB for Multicore and Multinode Computers (Software, Environments and Tools)|Kepner, Jeremy|9780898716733
+ 2021|SDC Publications|Programming and Engineering Computing with MATLAB 2021|Huei-Huang Lee|9781630574918
+ 2017|SDC Publications|Programming and Engineering Computing with MATLAB 2017|Huei-Huang Lee|9781630571405
+ 2007|Wiley|Numerical Methods for Engineers and Scientists: An Introduction with Applications Using MATLAB|Gilat, Amos and Subramaniam, Vish|9780471734406
+ 2014|Academic Press|Numerical Linear Algebra with Applications: Using MATLAB|Ford, William|9780123944351
+ 2005-10-06T00:00:01Z|CL Engineering|Essentials of MATLAB Programming|Chapman, Stephen J.|9780495073000
+ 2018|SDC Publications|An Engineer's Introduction to Programming with MATLAB 2018|Shawna Lockhart and Eric Tilleson|9781630572068
+ 2008|Wiley|Stochastic Simulation and Applications in Finance with MATLAB Programs|Huynh, Huu Tue and Lai, Van Son and Soumare, Issouf|9780470725382
+ 2020-07-08T14:21:52.970-00:00|Mercury Learning and Information|Programming Fundamentals Using MATLAB|Weeks, Michael C.|9781683925545
+ 2014|Springer|Scientific Computing with MATLAB and Octave (Texts in Computational Science and Engineering, 2)|Quarteroni, Alfio and Saleri, Fausto and Gervasio, Paola|9783642453663
+ 2014|Academic Press|Numerical Linear Algebra with Applications: Using MATLAB|Ford, William|9780123947840
+ 2014|Apress|MATLAB Graphical Programming: Practical hands-on MATLAB solutions|Lopez, Cesar|9781484203170
+ 2009|CRC Press|Numerical and Analytical Methods with MATLAB (Applied and Computational Mechanics)|Bober, William and Tsai, Chi-Tay and Masory, Oren|9781420093568
+ 2018|CreateSpace Independent Publishing Platform|Phasor Methods of AC Circuit Analysis: - Designed using MATLAB Object Oriented Programming|Agrawal, Prof Jai P|9781720666028
+ 2002-05-02T00:00:01Z|Wiley|MATLAB Tutorial Update to Version 6 to accompany Control Systems Engineering|Nise, Norman S.|9780471250913
+ 2011|Wiley|Fundamentals of Digital Image Processing: A Practical Approach with Examples in Matlab|Solomon, Chris and Breckon, Toby|9780470844724
+ 2014|Ferret Publishing|Programming with MATLAB for Engineers||9780966960167
+ 2014|Springer|Scientific Computing with MATLAB and Octave (Texts in Computational Science and Engineering Book 2)|Quarteroni, Alfio and Saleri, Fausto and Gervasio, Paola|9783642453670
+ 2010|Springer|Scientific Computing with MATLAB and Octave (Texts in Computational Science and Engineering Book 2)|Quarteroni, Alfio|9783642124303
+ 2010|Jones & Bartlett Learning|Digital Signal Processing Using MATLAB & Wavelets|Weeks, Michael|9780763784225
+ 1999|Cengage Learning|Contemporary Linear Systems Using MATLAB (Pws Bookware Companion Series.)|Strum, Robert S. and Kirk, Donald E.|9780534371722
+ 2008|Chapman and Hall/CRC|Computational Partial Differential Equations Using MATLAB (Textbooks in Mathematics)|Li, Jichun and Chen, Yi-Tung|9781420089042
+ 2009|Springer|Signals and Systems with MATLAB|Yang, Won Young|9783540929543
+ 2013|Morgan Kaufmann|Accelerating MATLAB with GPU Computing: A Primer with Examples|Suh, Jung W. and Kim, Youngmin|9780124080805
+ 2001|Wiley-Interscience|Applied Optimization with MATLAB Programming|Venkataraman, P.|9780471349587
+ 2013|Packt Publishing|Visual Media Processing Using Matlab Beginner's Guide|Siogkas, George|9781849697217
+ 2014|Apress|MATLAB Optimization Techniques|Lopez, Cesar|9781484202937
+ 2017|Wiley|Engineering Biostatistics: An Introduction using MATLAB and WinBUGS (Wiley Series in Probability and Statistics)|Vidakovic, Brani|9781119168980
+ 2010|Academic Press|MATLAB for Neuroscientists: An Introduction to Scientific Computing in MATLAB|Wallisch, Pascal and Lusignan, Michael E. and Benayoun, Marc D. and Baker, Tanya I. and Dickey, Adam Seth and Hatsopoulos, Nicholas G.|9780080923284
+ 2011|Springer|Programming for Engineers: A Foundational Approach to Learning C and Matlab|Bradley, Aaron R.|9783642233036
+ 2016|Routledge|Programming Behavioral Experiments with MATLAB and Psychtoolbox: 9 Simple Steps for Students and Researchers|Misirlisoy, Erman|9781138671935
+ 2019|Springer|Boundary Value Problems for Engineers: with MATLAB Solutions|Ali Ümit Keskin|9783030210809
+ 2004|Wiley-Interscience|Introduction to Numerical Ordinary and Partial Differential Equations Using MATLAB|Stanoyevitch, Alexander|9780471697381
+ 2013|McGraw-Hill Education|MATLAB Numerical Methods with Chemical Engineering Applications|Al-Malah, Kamal I.M.|9780071831291
+ 2015|Springer|The Finite Volume Method in Computational Fluid Dynamics: An Advanced Introduction with OpenFOAM® and Matlab (Fluid Mechanics and Its Applications Book 113)|Moukalled, F. and Mangani, L. and Darwish, M.|9783319168746
+ 2005|Springer|An Introduction to Programming and Numerical Methods in MATLAB|Otto, Steve and Denier, James P.|9781846281334
+ 2014|Apress|MATLAB Control Systems Engineering|Lopez, Cesar|9781484202906
+ 2004|CL Engineering|Fundamentals of Digital Signal Processing Using MATLAB (with CD-ROM)|Schilling, Robert J. and Harris, Sandra L|9780534391508
+ 2020|Wiley|Applied Numerical Methods Using MATLAB|Yang, Won Y. and Cao, Wenwu and Kim, Jaekwon and Park, Kyung W. and Park, Ho-Hyun and Joung , Jingon and Ro, Jong-Suk and Lee, Han L. and Hong, Cheol-Ho and Im, Taeho|9781119626824
+ 1999|Wiley|Introduction to Engineering Programming: In C, Matlab and Java|Austin, Mark and Chancogne, David|9780471001164
+ 2011|Chapman and Hall/CRC|An Introduction to Numerical Methods: A MATLAB Approach, Third Edition|Kharab, Abdelwahab and Kharab, Abdelwahab and Guenther, Ronald B.|9781439868997
+ 2020|De Gruyter|MATLAB Programming: Mathematical Problem Solutions (De Gruyter STEM)|Dingyü Xue|9783110663563
+ 2014|Springer|Exercises in Computational Mathematics with MATLAB (Problem Books in Mathematics)|Lyche, Tom and Merrien, Jean-Louis|9783662435106
+ 2010|CRC Press|Computational Intelligence Paradigms: Theory & Applications using MATLAB|Sumathi, S. and Sumathi|9781439809037
+
+semanticScholar 35
+ year|title|doi|citations|influentialCitations|authors|paperId
+ 2002|The Eyelink Toolbox: Eye tracking with MATLAB and the Psychophysics Toolbox|10.3758/BF03195489|848|47|F. Cornelissen and Enno M Peters and J. Palmer|d0ed7b7fad72097d327cc5fd946cbd1a4e74b7e3
+ 1994|Using MATLAB as a programming language for numerical analysis|10.1080/0020739940250402|50|0|J. H. Mathews and Kurtis D. Fink|0b0be159982bbee3c9c0ddcbcf31232c1aee82f1
+ 2017|SDPNAL+: A Matlab software for semidefinite programming with bound constraints (version 1.0)|10.1080/10556788.2019.1576176|41|3|Defeng Sun and K. Toh and Yancheng Yuan and Xinyuan Zhao|48536ec4ce40bba11064a8c1b07e850ee0e396b3
+ 2013|Design of FPGA-controlled power electronics and drives using MATLAB Simulink|10.1109/ECCE-ASIA.2013.6579155|40|5|Y. Siwakoti and G. Town|5bf67012ede77841fb8263f48a850ae3cd8126ec
+ 2014|MATLAB Optimization Techniques|10.1007/978-1-4842-0292-0|33|3|C. López|b4f91965499d8b1514bf2c6c82e785b3143557c6
+ 2006|Teaching the introductory computer programming course for engineers using Matlab|10.1109/FIE.2008.4720302|30|0|A. Azemi and L. L. Pauley|ff6e31e8ea88cc6144a333338370ad6ac7dc5939
+ 2018|BioSigKit: A Matlab Toolbox and Interface for Analysis of BioSignals|10.21105/joss.00671|28|0|Hooman Sedghamiz|75c6b61aadee9c1d73119a60c42944de4e1a1a00
+ 2001|Teaching programming skills with MATLAB|10.18260/1-2--9874|26|0|M. Herniter and D. Scott and Rakesh Pangasa|797815e5f7aabad61c29676c7c5c31f81655db7f
+ 2019|A Comprehensive Framework for Physiologically‐Based Pharmacokinetic Modeling in Matlab|10.1002/psp4.12399|19|1|Felix Stader and M. Penny and M. Siccardi and C. Marzolini|aacb41c32a57a51a7ee867e84a33be768eeebca5
+ 2012|McSAF: A Static Analysis Framework for MATLAB|10.1007/978-3-642-31057-7_7|15|2|Jesse Doherty and L. Hendren|7afae83f0bf5e23da82d403856545140b868261b
+ 2006|MATLAB as an introductory programming language|10.1002/cae.20064|14|0|M. Wirth and P. Kovesi|09f940ced7ab73bf079c3957f509d32206c2cbc0
+ 2016|A MATLAB subset to C compiler targeting embedded systems|10.1002/spe.2408|12|3|João Bispo and João MP Cardoso|b88e27a57916b2237a2d8e31e5e710ac0852ec53
+ 2014|Parallel performance comparison of alternating group explicit method between parallel virtual machine and matlab distributed computing for solving large sparse partial differential equations|10.1166/ASL.2014.5330|11|0|N. Alias and H. F. S. Saipol and A. C. A. Ghani and M. N. Mustaffa|055015bec06b739c2ad7ac94b1cd517ef4485999
+ 2015|A Matlab code to fit periodic data|10.5335/RBCA.2015.4618|11|0|R. Brum and J. Ramalho and L. Rocha and L. Isoldi and E. D. D. Santos|854d0eca1173ec4b467b120f753d5f5b1d73d190
+ 2013|Advanced remote laboratory for control systems based on Matlab and .NET platform|10.1109/ICETA.2013.6674400|10|0|P. Bisták|6d67d1aacd08b5e14500938599631d01c5bb71c0
+ 2015|MATLAB Function Based Approach to FOC of PMSM Drive|10.1109/EMS.2015.81|10|0|O. C. Kivanc and S. Ozturk|04be37568ec4069667bbe22cbffdc7f2524d2b9b
+ 1997|MATLAB as an econometric programming environment|10.1002/(SICI)1099-1255(199711/12)12:6<735::AID-JAE471>3.0.CO;2-7|9|1|Francisco Cribari‐Neto and Mark J. Jensen|cfd6a43559d31a3bcca1fffaa4978853ce5d5bda
+ 2014|MATLAB Control Systems Engineering|10.1007/978-1-4842-0289-0|8|0|C. López|a77172dffd1a3a407af0680a9afbea66fc754eed
+ 2014|Contract-Based Verification of MATLAB and Simulink Matrix-Manipulating Code|10.1007/978-3-319-11737-9_26|8|1|J. Wiik and Pontus Boström|5e7912085fd135f8c19d7fc3ab607f2090777ec2
+ 2015|Programación de Controladores Lógicos (PLC) mediante Ladder y Lenguaje de Control Estructurado (SCL) en MATLAB|10.19053/01211129.3555|8|1|Heyder Paez-Logreira and Ronald Zamora-Musa and José Bohórquez-Pérez|7e29910f19a0d713c5aaffd72ac0cb724aaed807
+ 2016|Porting Matlab Applications to High-Performance C++ Codes: CPU/GPU-Accelerated Spherical Deconvolution of Diffusion MRI Data|10.1007/978-3-319-49583-5_49|8|0|Francisco Javier García Blas and M. F. Dolz and J. Sánchez and J. Carretero and Alessandro Daducci and Y. Alemán‐Gómez and Erick Jorge Canales-Rodríguez|66fcf726eec6a8e904e273f449451591e2b6519b
+ 2016|Heuristic production line balancing problem solution with MATLAB software programming|10.1108/IJCST-01-2016-0002|8|0|A. Türkmen and Y. Yeşil and Mahmut Kayar|79997df420e398deb6391c0c8938f36e7dbbaeed
+ 2020|A history of MATLAB|10.1145/3386331|7|0|C. Moler and Jack Little|38ac69cc1e3a5d7e715d66929cdd022999d01f26
+ 2016|RoBO-2L, a Matlab interface for extended offline programming of KUKA industrial robots|10.1109/MECATRONICS.2016.7547117|7|0|J. Golz and Tim Wruetz and Dominik Eickmann and R. Biesenbach|9df38a5ee9b195def8b333b2a1639c241984da36
+ 2014|MATLAB Programming for Numerical Analysis|10.1007/978-1-4842-0295-1|6|1|C. López|01d0935f76f57fc2e87cb35a60c9923648eedb7c
+ 2019|Programming in MATLAB|10.1201/9781315228457-6|6|0|J. Miguel and D. Báez‐López and David Alfredo Báez Villegas|fc133c3152399d53c213ba53875aec37ba50d9ac
+ 2004|Using Matlab To Teach The Introductory Computer Programming Course For Engineers|10.18260/1-2--12728|5|0|A. Azemi and L. L. Pauley|c1d3ee8f51da4df128ffe8cdd556ca9647f30aab
+ 2017|MATLAB Implementation of 128-key length SAFER+ Cipher System|10.9790/9622-0702054955|5|1|M. K. Mahmood|f289bcc24b1fb801301e47634202928a00580903
+ 2006|Learning Programming Using MATLAB|10.2200/S00051ED1V01Y200609EEL003|4|0|K. Sayood|4a5d1e744f03a4b7a79df8ff05b1e5aea5720a4f
+ 2017|Analysis by STAAD-PRO and Design of Structural Elements by MATLAB|10.18488/JOURNAL.2.2017.75.145.164|4|0|S. Harle|563bef77282115b1cccb8e4881a3f3cbda9dd4f9
+ 2016|Design and implementation of a RoBO-2L MATLAB toolbox for a motion control of a robotic manipulator|10.1109/SSD.2016.7473678|3|0|H. Elshatarat and Mohammed Baniyounis and R. Biesenbach|3b091e6798d97e7275dcb03bf46ecb3acf765e3f
+ 2018|A Brief Introduction to MATLAB|10.1007/978-3-319-67125-3_2|3|0|M. Okereke and S. Keates|95a5c7ef63d5ebceb8ec17ca8a8271c91cde860a
+ 2018|GELAB - A Matlab Toolbox for Grammatical Evolution|10.1007/978-3-030-03496-2_22|3|0|Muhammad Adil Raja and C. Ryan|d5d94e191b27846bb4f06cc01d72b5ed9b869aa7
+ 2011|McLAB: enabling programming language, compiler and software engineering research for matlab|10.1145/2048147.2048203|2|0|L. Hendren and Jesse Doherty and Anton Dubrau and R. Garg and Nurudeen Lameed and Soroush Radpour and Amina Aslam and Toheed Aslam and Andrew Casey and Maxime Chevalier-Boisvert and Jun Li and Clark Verbrugge and Olivier Savary Bélanger|54603028d353893ad2b357771b6a1e2f7b11ca5b
+ 2009|Supporting image algebra in the Matlab programming language for compression research|10.1117/12.829203|1|0|M. Schmalz and G. Ritter and Joseph N. Wilson and Eric T. Hayden|cea8433a106f0ffa807ac00d02972a7d34c2d0eb

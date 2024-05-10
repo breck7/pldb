@@ -1,0 +1,198 @@
+import ../measures/conceptPage.scroll
+id GraphQL
+appeared 2012
+type queryLanguage
+creators Lee Byron
+website http://graphql.org/
+documentation https://graphql.org/learn/
+originCommunity Facebook
+domainName graphql.org
+ registered 2015
+ awisRank
+  2022 34910
+releaseNotesUrl https://github.com/graphql/graphql-js/releases
+
+hasBooleans true
+hasEnums true
+ enum Episode {
+   NEWHOPE
+   EMPIRE
+   JEDI
+ }
+hasFloats true
+hasInterfaces true
+ interface Character {
+  id: ID!
+  name: String!
+  friends: [Character]
+  appearsIn: [Episode]!
+ }
+ type Human implements Character {
+   id: ID!
+   name: String!
+   friends: [Character]
+   appearsIn: [Episode]!
+   starships: [Starship]
+   totalCredits: Int
+ }
+ type Droid implements Character {
+   id: ID!
+   name: String!
+   friends: [Character]
+   appearsIn: [Episode]!
+   primaryFunction: String
+ }
+hasIntegers true
+hasStrings true
+hasUnionTypes true
+ union SearchResult = Human | Droid | Starship
+hasLists true
+hasIds true
+ # The ID scalar type represents a unique identifier, often used to refetch an object or as the key for a cache. The ID type is serialized in the same way as a String; however, defining it as an ID signifies that it is not intended to be human‐readable.
+ query {
+   hero {
+     name
+   }
+   droid(id: "2000") {
+     name
+   }
+ }
+hasLineComments true
+ # A comment
+hasComments true
+ # A comment
+hasSemanticIndentation false
+hasCaseInsensitiveIdentifiers false
+
+lineCommentToken #
+stringToken "
+booleanTokens true false
+keywords null true false query mutation subscription extend schema directive scalar type interface union enum input implements fragment on
+
+wikipedia https://en.wikipedia.org/wiki/GraphQL
+ related javascript ruby scala
+ summary GraphQL is a data query language developed internally by Facebook in 2012 before being publicly released in 2015. It provides an alternative to REST and ad-hoc webservice architectures.. It allows clients to define the structure of the data required, and exactly the same structure of the data is returned from the server. It is a strongly typed runtime which allows clients to dictate what data is needed. This avoids both the problems of over-fetching as well as under-fetching of data. Major GraphQL clients include Apollo Client and Relay. GraphQL servers are available for multiple languages, including JavaScript, Python, Ruby, Java, C#, Scala, Go, Elixir, Erlang, PHP, and Clojure.
+ pageId 50353761
+ dailyPageViews 195
+ created 2016
+ backlinksCount 15
+ revisionCount 65
+ appeared 2015
+
+githubLanguage GraphQL
+ fileExtensions graphql gql graphqls
+ trendingProjectsCount 0
+ type data
+ aceMode text
+ tmScope source.graphql
+ repos 1
+
+antlr https://github.com/antlr/grammars-v4/tree/master/graphql
+monaco graphql
+linguistGrammarRepo https://github.com/rmosolgo/language-graphql
+ firstCommit 2015
+ lastCommit 2018
+ committerCount 6
+ commitCount 47
+ sampleCount 2
+ example
+  # Copyright (c) 2015, Facebook, Inc.
+  # All rights reserved.
+  #
+  # This source code is licensed under the BSD-style license found in the
+  # LICENSE file in the root directory of this source tree. An additional grant
+  # of patent rights can be found in the PATENTS file in the same directory.
+  
+  schema {
+    query: QueryType
+    mutation: MutationType
+  }
+  
+  type Foo implements Bar {
+    one: Type
+    two(argument: InputType!): Type
+    three(argument: InputType, other: String): Int
+    four(argument: String = "string"): String
+    five(argument: [String] = ["string", "string"]): String
+    six(argument: InputType = {key: "value"}): Type
+  }
+  
+  interface Bar {
+    one: Type
+    four(argument: String = "string"): String
+  }
+  
+  union Feed = Story | Article | Advert
+  
+  scalar CustomScalar
+  
+  enum Site {
+    DESKTOP
+    MOBILE
+  }
+  
+  input InputType {
+    key: String!
+    answer: Int = 42
+  }
+  
+  extend type Foo {
+    seven(argument: [String]): Type
+  }
+  
+  directive @skip(if: Boolean!) on FIELD | FRAGMENT_SPREAD | INLINE_FRAGMENT
+  
+  directive @include(if: Boolean!)
+    on FIELD
+     | FRAGMENT_SPREAD
+     | INLINE_FRAGMENT
+  
+languageServerProtocolProject https://github.com/graphql/graphql-language-service
+ writtenIn javascript
+languageServerProtocolProject https://github.com/Mayank1791989/gql-language-server
+ writtenIn javascript
+
+leachim6 GraphQL
+ filepath g/GraphQL.graphql
+ fileExtensions graphql
+ example
+  {
+      "Hello World"
+  }
+
+annualReportsUrl https://graphql.org/foundation/annual-reports/
+officialBlogUrl https://graphql.org/blog/
+eventsPageUrl https://graphql.org/community/upcoming-events/
+faqPageUrl https://graphql.org/faq/
+
+subreddit https://reddit.com/r/GraphQL
+ memberCount
+  2022 17480
+
+twitter https://twitter.com/graphql
+fileType text
+centralPackageRepositoryCount 0
+
+isbndb 11
+ year|publisher|title|authors|isbn13
+ 2017|Manning Publications|React Quickly: Painless web apps with React, JSX, Redux, and GraphQL|Mardan, Azat|9781617293344
+ 2019|Packt Publishing|Hands-On Full-Stack Web Development with GraphQL and React: Build scalable full-stack applications while learning to solve complex problems with GraphQL|Grebe, Sebastian|9781789135763
+ 2020|Packt Publishing|Full-Stack React, TypeScript, and Node: Build cloud-ready web applications using React 17 with Hooks and GraphQL|Choi, David|9781839214691
+ 2019|Packt Publishing|Mastering React Test-Driven Development: Build rock-solid, well-tested web apps with React, Redux and GraphQL|Irvine, Daniel|9781789138788
+ 2018|Apress|Visual Design of GraphQL Data: A Practical Introduction with Legacy Data and Neo4j|Frisendal, Thomas|9781484239049
+ 20180809|O'Reilly Media, Inc.|Learning GraphQL|Eve Porcello; Alex  Banks|9781492044864
+ 20210221|Simon & Schuster|GraphQL in Action|Samer Buna|9781638350859
+ 2016-08-30|Packt Publishing|Learning GraphQL and Relay|Samer Buna|9781786461971
+ 20180327|O'Reilly Media, Inc.|Craft GraphQL APIs in Elixir with Absinthe|Bruce Williams; Ben  Wilson|9781680505931
+ 2022-03-30|Packt Publishing|Full Stack Development with Angular and GraphQL|Ahmed Bouchefra|9781800209756
+ 28-02-2022|Packt Publishing|Full-Stack Web Development with GraphQL and React|Sebastian Grebe|9781801079174
+
+semanticScholar 7
+ year|title|doi|citations|influentialCitations|authors|paperId
+ 2018|Semantics and Complexity of GraphQL|10.1145/3178876.3186014|51|6|O. Hartig and Jorge Pérez|cf1ac803fcd5339063003a7847556055d25983d7
+ 2019|An Empirical Study of GraphQL Schemas|10.1007/978-3-030-33702-5_1|19|0|Erik Wittern and Alan Cha and James C. Davis and Guillaume Baudart and Louis Mandel|512fb84e420f7001c9b4ba1e7b485d4cd06ba1cb
+ 2017|Implementing GraphQL as a Query Language for Deductive Databases in SWI-Prolog Using DCGs, Quasi Quotations, and Dicts|10.4204/EPTCS.234.4|14|2|Falco Nogatz and D. Seipel|6fc5114fada3dc4eaa0a33345522c5b353b3d702
+ 2019|Comparative Analysis Between Standards Oriented to Web Services: SOAP, REST and GRAPHQL|10.1007/978-3-030-42517-3_22|4|0|Jaime Sayago Heredia and Evelin Flores-García and Andrés Solano|1d0a063e1ae7cff3197be11322ecf7f63740c4c2
+ 2019|morph-GraphQL: GraphQL Servers Generation from R2RML Mappings (S)|10.18293/SEKE2019-055|4|0|Freddy Priyatna and David Chaves-Fraga and Ahmad Alobaid and Óscar Corcho|c0f1a7e772591f87b5ef2a232d3196ef5752a9d3
+ 2020|Exploiting Declarative Mapping Rules for Generating GraphQL Servers with Morph-GraphQL|10.1142/s0218194020400070|3|0|David Chaves-Fraga and Freddy Priyatna and Ahmad Alobaid and Óscar Corcho|08e989912b7ed00b32195c269edea18edcc33f6b
+ 2020|COMPARATIVE ANALYSIS OF WEB APPLICATION PERFORMANCE IN CASE OF USING REST VERSUS GRAPHQL|10.31410/ITEMA.2020.17|1|0|M. Vesić and N. Kojić|bc1399b7e27c20633989a561d8cfd00f746391af

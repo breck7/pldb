@@ -1,7 +1,0 @@
-conferenceNameCell
- extends stringCell
-conferenceParser
- description What is a URL to a recurring conference(s) focused on this language?
- catchAllCellType conferenceNameCell
- extends abstractUrlColumnParser
- single false

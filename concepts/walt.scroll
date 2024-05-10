@@ -1,0 +1,42 @@
+import ../measures/conceptPage.scroll
+id walt
+appeared 2017
+type pl
+conceptDescription Walt is a JavaScript-like syntax for WebAssembly text format
+website https://ballercat.github.io/walt/
+
+compilesTo wasm
+
+example
+ export function fibonacci(n: i32): i32 {
+  if (n <= 0) return 0;
+ 
+  if (n == 1) return 1;
+ 
+  return fibonacci(n - 1) + fibonacci(n - 2);
+ }
+
+githubRepo https://github.com/ballercat/walt
+ firstCommit 2017
+ stars 4565
+ forks 154
+ subscribers 119
+ created 2017
+ updated 2022
+ description :zap: Walt is a JavaScript-like syntax for WebAssembly text format :zap:
+ issues 27
+
+repoStats
+ firstCommit 2017
+ commits 506
+ committers 30
+ files 356
+
+fileType text
+wordRank 8707
+isOpenSource true
+centralPackageRepositoryCount 0
+
+isbndb 0
+
+semanticScholar 0

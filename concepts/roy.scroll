@@ -1,0 +1,51 @@
+import ../measures/conceptPage.scroll
+id roy
+appeared 2011
+type pl
+creators Brian McKenna
+website http://roy.brianmckenna.org/
+country Australia
+originCommunity https://github.com/puffnfresh/roy/issues
+domainName roy.brianmckenna.org
+
+hasPrintDebugging true
+hasStrings true
+ "Hello world"
+
+printToken console.log
+stringToken "
+
+githubRepo https://github.com/puffnfresh/roy
+ firstCommit 2011
+ stars 830
+ forks 74
+ subscribers 47
+ created 2011
+ updated 2022
+ description Small functional language that compiles to JavaScript.
+ issues 64
+
+repoStats
+ firstCommit 2011
+ commits 569
+ committers 39
+ files 128
+
+leachim6 Roy
+ filepath r/Roy.roy
+ fileExtensions roy
+ example
+  console.log "Hello World"
+  
+
+replit https://repl.it/languages/roy
+
+twitter https://twitter.com/roylangjs
+fileType text
+wordRank 5386
+isOpenSource true
+centralPackageRepositoryCount 0
+
+isbndb 1
+ year|publisher|title|authors|isbn13
+ 2001|Springer|Aiding Decisions with Multiple Criteria: Essays in Honor of Bernard Roy (International Series in Operations Research & Management Science, 44)|Bouyssou, Denis and Jacquet-Lagrèze, Eric and Perny, Patrice and Slowiński, Roman and Vanderpooten, Daniel and Vincke, P.|9780792376118

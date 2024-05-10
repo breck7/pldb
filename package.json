@@ -1,27 +1,19 @@
 {
   "name": "pldb",
-  "version": "8.0.0",
+  "version": "10.0.0",
   "description": "PLDB: a Programming Language Database",
-  "main": "./site/pldb.json",
+  "main": "./pldb.json",
   "scripts": {
-    "test": "./code/test.js",
-    "local": "./PLDB.js startDevServer",
-    "search": "./PLDB.js search",
-    "format": "./PLDB.js format",
-    "static": "./PLDB.js dumpStaticSite; cp -R node_modules/monaco-editor ignore/static",
-    "gits": "./PLDB.js crawlGits",
-    "githubs": "./PLDB.js crawlGitHub",
-    "fetchContributors": "wget -O site/pages/contributors.json https://api.github.com/repos/breck7/pldb/contributors",
+    "build": "scroll list | scroll build",
+    "test": "scroll list | scroll test",
+    "format": "scroll list | scroll format",
+    "open": "open index.html",
+    "up": "npm install scroll-cli@latest",
+    "gits": "./legacy.js crawlGits",
+    "githubs": "./legacy.js crawlGitHub",
+    "fetchContributors": "wget -O pages/contributors.json https://api.github.com/repos/breck7/pldb/contributors",
     "cloc": "cloc --vcs git . --read-lang-def=code/clocLangs.txt",
-    "checkLinks": "linkinator -r https://pldb.io > ignore/brokenLinks.txt",
-    "jtreeBeta": "npm install ~/jtree",
-    "scrollBeta": "npm install ~/scroll",
-    "trueBaseBeta": "npm install ~/truebase",
-    "launch": "git pull; npm install .; npm run restart",
-    "start": "pm2 start ./PLDB.js -- startProdServer",
-    "stop": "pm2 delete 0",
-    "restart": "pm2 restart 0",
-    "perf": "node --cpu-prof --cpu-prof-name=test.cpuprofile ./PLDB.js testPerf"
+    "checkLinks": "linkinator -r https://pldb.io > ignore/brokenLinks.txt"
   },
   "prettier": {
     "parser": "babel",
@@ -41,25 +33,16 @@
     "programming languages"
   ],
   "author": "Breck Yunits et al.",
-  "bugs": {
-    "url": "https://github.com/breck7/pldb/issues"
-  },
-  "engineStrict": true,
-  "engines": {
-    "node": ">=16.0"
-  },
   "files": [
-    "site/pldb.json",
-    "package.json"
+    "pldb.json"
   ],
   "homepage": "https://pldb.io",
-  "dependencies": {
+  "devDependencies": {
     "dayjs": "^1.11.7",
-    "jtree": "^75.1.1",
+    "jtree": "^75.2.0",
     "lodash": "^4.17.21",
     "monaco-editor": "^0.34.1",
     "numeral": "^2.0.6",
-    "scroll-cli": "^70.0.0",
-    "truebase": "^21.1.0"
+    "scroll-cli": "^85.8.0"
   }
 }

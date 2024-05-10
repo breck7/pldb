@@ -1,0 +1,17 @@
+import ../measures/conceptPage.scroll
+id ed script
+appeared 1973
+type diffFormat
+conceptDescription diff can produce commands that direct the ed text editor to change the first file into the second file. These are often called "ed scripts".
+
+relatedConcepts ed-editor
+
+example
+ a
+ ed is the standard Unix text editor.
+ This is line number two.
+ .
+ 2i
+   
+ .
+ ,l

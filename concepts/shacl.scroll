@@ -1,0 +1,31 @@
+import ../measures/conceptPage.scroll
+id SHACL
+appeared 2015
+type pl
+conceptDescription A standard language for describing Resource Description Framework (RDF) graphs.
+reference https://www.w3.org/TR/shacl/
+standsFor Shapes Constraint Language
+country United States
+originCommunity World Wide Web Consortium
+
+relatedConcepts rdf
+
+example
+ ex:PersonShape
+ a sh:NodeShape ;
+ sh:targetClass ex:Person ;    # Applies to all persons
+ sh:property [                 # _:b1
+ 	sh:path ex:ssn ;           # constrains the values of ex:ssn
+ 	sh:maxCount 1 ;
+ 	sh:datatype xsd:string ;
+ 	sh:pattern "^\\d{3}-\\d{2}-\\d{4}$" ;
+ ] ;
+ sh:property [                 # _:b2
+ 	sh:path ex:worksFor ;
+ 	sh:class ex:Company ;
+ 	sh:nodeKind sh:IRI ;
+ ] ;
+ sh:closed true ;
+ sh:ignoredProperties ( rdf:type ) .
+
+wikipedia https://en.wikipedia.org/wiki/SHACL

@@ -1,5 +1,0 @@
-codeMirrorParser
- extends abstractOneWordGuidColumnParser
- description What is a URL to a CodeMirror syntax highlighting package for this language?
- // Many can be found here: https://github.com/codemirror/codemirror5/tree/master/mode/LANGUAGE
- string sourceDomain codemirror.net

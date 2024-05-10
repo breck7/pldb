@@ -1,0 +1,25 @@
+import ../measures/conceptPage.scroll
+id rosie
+appeared 2015
+type queryLanguage
+conceptDescription RPL is a variant of modern Regular Expressions (regex) that is designed to scale to big data, many developers, and large collections of patterns.  If you use regex, you already know a lot of RPL.
+website https://rosie-lang.org
+country United States
+originCommunity https://gitlab.com/rosie-pattern-language
+domainName rosie-lang.org
+ registered 2016
+
+example
+ rosie --rpl 'd = [:digit:]' -o json match d
+
+gitlabRepo https://gitlab.com/rosie-pattern-language/rosie
+
+repoStats
+ firstCommit 2016
+ commits 3871
+ committers 21
+ files 386
+
+fileType text
+isOpenSource true
+centralPackageRepositoryCount 0

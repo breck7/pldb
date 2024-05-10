@@ -1,0 +1,16 @@
+importOnly
+replace BASE_URL ..
+import pldbMeasures.scroll
+
+groups All
+
+import ../header.scroll
+
+replaceJs TEMPLATE
+ {
+  const {Tables} = require("/Users/breck/pldb/Computer.js")
+  Tables.getLanguageTemplate(absolutePath);
+ }
+TEMPLATE
+
+import ../footer.scroll

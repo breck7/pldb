@@ -1,0 +1,69 @@
+import ../measures/conceptPage.scroll
+id Cyber
+appeared 2022
+type pl
+conceptDescription Cyber is a new language for fast, efficient, and concurrent scripting.
+website https://cyberscript.dev/
+
+hasImports true
+ import m 'math'
+hasStrings true
+ 'World'
+hasForEachLoops true
+ for worlds each w:
+   print 'Hello, {w}!'
+hasSemanticIndentation true
+hasFunctions true
+ func fib(n int) int:
+    coyield
+    if n < 2:
+        return n
+    return fib(n - 1) + fib(n - 2)
+hasPrintDebugging true
+ print '{res} {count}'
+hasAssignment true
+ count = 0
+hasLineComments true
+ -- Counts iterations.
+hasIntegers true
+ count = 0
+hasWhileLoops true
+ while fiber.status() != #done:
+   res = coresume fiber
+   count += 1
+
+example
+ import m 'math'
+ 
+ worlds = ['World', '世界', 'दुनिया']
+ worlds.append(m.random())
+ for worlds each w:
+     print 'Hello, {w}!'
+ 
+ func fib(n int) int:
+     coyield
+     if n < 2:
+         return n
+     return fib(n - 1) + fib(n - 2)
+ 
+ count = 0    -- Counts iterations.
+ fiber = coinit fib(30)
+ while fiber.status() != #done:
+     res = coresume fiber
+     count += 1
+ print '{res} {count}'
+
+githubRepo https://github.com/fubark/cyber
+ stars 272
+ forks 7
+ subscribers 10
+ created 2022
+ updated 2023
+ description Fast and concurrent scripting.
+ issues 10
+
+repoStats
+ firstCommit 2022
+ commits 866
+ committers 8
+ files 309

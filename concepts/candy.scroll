@@ -1,0 +1,37 @@
+import ../measures/conceptPage.scroll
+id Candy
+appeared 2020
+type pl
+creators Jonas Wanke and Marcel Garus
+website https://github.com/candy-lang/Candy
+fileExtensions candy
+country Germany
+originCommunity https://github.com/candy-lang/
+
+example
+ type = use "..Type"
+ is value := type.is value Struct
+ hasKey struct key :=
+   needs (is struct)
+   ✨.structHasKey struct key
+ getUnwrap struct key :=
+   needs (is struct)
+   needs (hasKey struct key)
+   ✨.structGet struct key
+ getKeys struct :=
+   needs (is struct)
+   ✨.structGetKeys struct
+
+githubRepo https://github.com/candy-lang/Candy
+ stars 77
+ forks 1
+ subscribers 3
+ created 2020
+ updated 2022
+ description A sweet programming language that is robust, minimalistic, and expressive.
+
+repoStats
+ firstCommit 2020
+ commits 3655
+ committers 9
+ files 295

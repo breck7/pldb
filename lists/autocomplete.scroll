@@ -1,0 +1,6 @@
+permalink autocompleteCombined.js
+replaceNodejs
+ const {Tables} = require("../Computer.js")
+ module.exports = {SCRIPT: Tables.autocompleteJs}
+
+SCRIPT

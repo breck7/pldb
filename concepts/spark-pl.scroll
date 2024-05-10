@@ -1,0 +1,24 @@
+import ../measures/conceptPage.scroll
+id Spark
+appeared 1988
+type pl
+country France and United States
+originCommunity Altran Technologies, SA and Ada Core Technologies
+
+influencedBy ada
+
+example
+ procedure Increment (X : in out Counter_Type)
+   with Global  => null,
+        Depends => (X => X),
+        Pre     => X < Counter_Type'Last,
+        Post    => X = X'Old + 1;
+
+wikipedia https://en.wikipedia.org/wiki/SPARK_(programming_language)
+
+rosettaCode http://www.rosettacode.org/wiki/Category:SPARK
+
+tiobe SPARK
+hopl https://hopl.info/showlanguage.prx?exp=2518
+
+fileType text

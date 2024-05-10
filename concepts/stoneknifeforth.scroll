@@ -1,0 +1,23 @@
+import ../measures/conceptPage.scroll
+id stoneknifeforth
+appeared 2008
+type pl
+conceptDescription This is StoneKnifeForth, a very simple language inspired by Forth. It is not expected to be useful; instead, its purpose is to show how simple a compiler can be. The compiler is a bit under two pages of code when the comments are removed. This package includes a “metacircular compiler” which is written in StoneKnifeForth and compiles StoneKnifeForth to an x86 Linux ELF executable.
+country United States
+originCommunity https://github.com/kragen/stoneknifeforth/issues
+
+githubRepo https://github.com/kragen/stoneknifeforth
+ firstCommit 2008
+ stars 369
+ forks 21
+ subscribers 23
+ created 2009
+ updated 2022
+ description a tiny self-hosted Forth implementation
+ issues 3
+
+repoStats
+ firstCommit 2008
+ commits 113
+ committers 7
+ files 22

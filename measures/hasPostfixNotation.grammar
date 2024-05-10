@@ -1,6 +1,0 @@
-hasPostfixNotationParser
- extends abstractFeatureParser
- description Does the language allow operators to be placed at the end of the expression?
- string title Postfix Notation
- string pseudoExample 2 3 4 + 2 -
- string reference https://en.wikipedia.org/wiki/Reverse_Polish_notation

@@ -1,0 +1,41 @@
+import ../measures/conceptPage.scroll
+id bosque
+appeared 2019
+type pl
+country United States
+originCommunity Microsoft Research
+
+hasStrings true
+ "Hello world"
+
+stringToken "
+
+githubRepo https://github.com/Microsoft/BosqueLanguage
+ firstCommit 2019
+ stars 5294
+ forks 314
+ subscribers 179
+ created 2019
+ updated 2022
+ description The Bosque programming language is an experiment in regularized design for a machine assisted rapid and reliable software development lifecycle. 
+ issues 4
+
+repoStats
+ firstCommit 2019
+ commits 585
+ committers 47
+ files 256
+
+leachim6 Bosque
+ filepath b/Bosque.bsq
+ fileExtensions bsq
+ example
+  namespace NSMain;
+  
+  entrypoint function main(): String {  
+      return "Hello World";
+  }
+
+isbndb 1
+ year|publisher|title|authors|isbn13
+ 2021|Packt Publishing|Learn Bosque Programming: Boost your productivity and software reliability with Microsoft's new open-source programming language|Kaczmarek, Sebastian and Ibaceta, Joel|9781839211973

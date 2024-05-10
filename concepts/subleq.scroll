@@ -1,0 +1,58 @@
+import ../measures/conceptPage.scroll
+id Subleq
+appeared 2009
+type isa
+creators David Roberts
+fileExtensions sq
+
+githubRepo https://github.com/davidar/subleq
+ firstCommit 2009
+ stars 94
+ forks 13
+ subscribers 11
+ created 2009
+ updated 2022
+ description CPU design and toolchain for a simple computer architecture
+ issues 0
+
+repoStats
+ firstCommit 2009
+ commits 7
+ committers 2
+ files 35
+
+leachim6 SubleQ
+ filepath s/SubleQ.sq
+ fileExtensions sq
+ example
+  loop:       hello (-1)
+              minusOne loop
+              minusOne checkEnd+1
+  checkEnd:   Z hello (-1) 
+              Z Z loop
+  				
+  . minusOne: -1
+  . hello: "Hello World\n" Z: 0
+  
+
+rijuRepl https://riju.codes/subleq
+ example
+  12 12 3
+  36 37 6
+  37 12 9
+  37 37 12
+  0 -1 15
+  38 36 18
+  12 12 21
+  53 37 24
+  37 12 27
+  37 37 30
+  36 12 -1
+  37 37 0
+  39 0 -1
+  72 101 108
+  108 111 44
+  32 119 111
+  114 108 100
+  33 10 53
+  

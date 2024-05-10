@@ -1,0 +1,47 @@
+import ../measures/conceptPage.scroll
+id Project Mentat
+appeared 2016
+type queryLanguage
+creators Richard Newman
+conceptDescription Project Mentat is a persistent, embedded knowledge base. It draws heavily on DataScript and Datomic. This project was started by Mozilla, but is no longer being developed or actively maintained by them.
+website https://mentat.rs/
+reference https://mozilla.github.io/mentat
+country United States
+originCommunity Mozilla Foundation
+domainName mentat.rs
+
+relatedConcepts datascript datomic sqlite
+
+hasLineComments true
+ ; A comment
+hasComments true
+ ; A comment
+hasSemanticIndentation false
+
+lineCommentToken ;
+
+example
+ {:db/id          :person/email
+  :db/valueType   :db.type/string
+  :db/cardinality :db.cardinality/many     ; People can have multiple email addresses.
+  :db/unique      :db.unique/identity      ; For our purposes, each email identifies one person.
+  :db/index       true}                    ; We want fast lookups by email.
+ {:db/id          :person/friend
+  :db/valueType   :db.type/ref
+  :db/cardinality :db.cardinality/many}    ; People can have many friends.
+
+githubRepo https://github.com/qpdb/mentat
+ firstCommit 2016
+ stars 28
+ forks 1
+ subscribers 3
+ created 2018
+ updated 2022
+ description A persistent, relational store inspired by Datomic and DataScript.
+ issues 299
+
+repoStats
+ firstCommit 2016
+ commits 1530
+ committers 27
+ files 2321

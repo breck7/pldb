@@ -1,0 +1,31 @@
+import ../measures/conceptPage.scroll
+id YAMP
+appeared 2019
+type dataNotation
+standsFor Yet Another Macro Processor
+
+supersetOf yaml
+
+hasMacros true
+ - defmacro:
+   name: foo
+   args: [who]
+   value:
+       Hello: who
+ - foo:
+   who: World
+
+githubRepo https://github.com/birchb1024/yamp
+ stars 11
+ forks 3
+ subscribers 3
+ created 2019
+ updated 2022
+ description Yet Another Macro Processor - for YAML - Superseded by Goyamp
+ issues 2
+
+repoStats
+ firstCommit 2019
+ commits 114
+ committers 3
+ files 59

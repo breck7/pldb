@@ -1,0 +1,122 @@
+import ../measures/conceptPage.scroll
+id ECL
+appeared 2000
+type pl
+website http://hpccsystems.com/
+country United States
+originCommunity LexisNexis Risk Solutions Group
+domainName hpccsystems.com
+ registered 2010
+ awisRank
+  2022 1525012
+
+hasComments true
+hasLineComments true
+ // A comment
+hasMultiLineComments true
+ /* A comment
+ */
+hasSemanticIndentation false
+
+lineCommentToken //
+multiLineCommentTokens /* */
+
+githubRepo https://github.com/hpcc-systems/HPCC-Platform
+ stars 521
+ forks 285
+ subscribers 49
+ created 2011
+ updated 2023
+ description HPCC Systems (High Performance Computing Cluster) is an open source, massive parallel-processing computing platform for big data processing and analytics.
+ issues 484
+
+repoStats
+ firstCommit 2011
+ commits 35093
+ committers 172
+ files 13257
+
+wikipedia https://en.wikipedia.org/wiki/ECL,_data-centric_programming_language_for_Big_Data
+ example
+  D := DATASET([{'ECL'},{'Declarative'},{'Data'},{'Centric'},{'Programming'},{'Language'}],{STRING Value;});
+ related linux prolog pascal sql clarion
+ summary ECL is a declarative, data centric programming language designed in 2000 to allow a team of programmers to process big data across a high performance computing cluster without the programmer being involved in many of the lower level, imperative decisions.
+ pageId 31108124
+ dailyPageViews 1
+ created 2012
+ backlinksCount 19
+ revisionCount 1
+ appeared 2000
+
+githubLanguage ECL
+ fileExtensions ecl eclxml
+ trendingProjectsCount 0
+ type programming
+ aceMode text
+ codemirrorMode ecl
+ codemirrorMimeType text/x-ecl
+ tmScope source.ecl
+ repos 234
+githubBigQuery ECL
+ repos 25
+ users 25
+
+codeMirror ecl
+pygmentsHighlighter ECL
+ filename ecl.py
+ fileExtensions ecl
+linguistGrammarRepo https://github.com/hpcc-systems/ecl-tmLanguage
+ sampleCount 1
+ example
+  /* 
+   * Multi-line comment
+   */
+  #option ('slidingJoins', true);
+  
+  namesRecord :=
+              RECORD
+  string20        surname;
+  string10        forename;
+  integer2        age;
+  integer2        dadAge;
+  integer2        mumAge;
+              END;
+  
+  namesRecord2 :=
+              record
+  string10        extra;
+  namesRecord;
+              end;
+  
+  namesTable := dataset('x',namesRecord,FLAT);
+  namesTable2 := dataset('y',namesRecord2,FLAT);
+  
+  integer2 aveAgeL(namesRecord l) := (l.dadAge+l.mumAge)/2;
+  integer2 aveAgeR(namesRecord2 r) := (r.dadAge+r.mumAge)/2;
+  
+  // Standard join on a function of left and right
+  output(join(namesTable, namesTable2, aveAgeL(left) = aveAgeR(right)));
+  
+  //Several simple examples of sliding join syntax
+  output(join(namesTable, namesTable2, left.age >= right.age - 10 and left.age <= right.age +10));
+  output(join(namesTable, namesTable2, left.age between right.age - 10 and right.age +10));
+  output(join(namesTable, namesTable2, left.age between right.age + 10 and right.age +30));
+  output(join(namesTable, namesTable2, left.age between (right.age + 20) - 10 and (right.age +20) + 10));
+  output(join(namesTable, namesTable2, aveAgeL(left) between aveAgeR(right)+10 and aveAgeR(right)+40));
+  
+  //Same, but on strings.  Also includes age to ensure sort is done by non-sliding before sliding.
+  output(join(namesTable, namesTable2, left.surname between right.surname[1..10]+'AAAAAAAAAA' and right.surname[1..10]+'ZZZZZZZZZZ' and left.age=right.age));
+  output(join(namesTable, namesTable2, left.surname between right.surname[1..10]+'AAAAAAAAAA' and right.surname[1..10]+'ZZZZZZZZZZ' and left.age=right.age,all));
+  
+  //This should not generate a self join
+  output(join(namesTable, namesTable, left.age between right.age - 10 and right.age +10));
+  
+
+rosettaCode http://www.rosettacode.org/wiki/Category:ECL
+
+fileType text
+centralPackageRepositoryCount 0
+
+isbndb 1
+ year|publisher|title|authors|isbn13
+ ||Ecl Programming Language|Surhone and Lambert M. and Tennoe and Mariam T. and Henssonow and Susan F.|9786133156937

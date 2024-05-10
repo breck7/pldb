@@ -1,0 +1,34 @@
+import ../measures/conceptPage.scroll
+id Differential Datalog
+appeared 2018
+type pl
+creators Leonid Ryzhyk
+conceptDescription DDlog is a programming language for incremental computation. It is well suited for writing programs that continuously update their output in response to input changes. A DDlog programmer does not write incremental algorithms; instead they specify the desired input-output mapping in a declarative manner.
+documentation https://github.com/vmware/differential-datalog/blob/master/doc/tutorial/tutorial.md
+reference https://github.com/vmware/differential-datalog/blob/master/doc/language_reference/language_reference.md
+reference https://twitter.com/vmwopensource
+aka DDlog
+country United States
+originCommunity VMware, Inc
+versions
+ 2021 1.2.3
+
+writtenIn java c python
+
+githubRepo https://github.com/vmware/differential-datalog
+ firstCommit 2018
+ stars 1186
+ forks 103
+ subscribers 23
+ created 2018
+ updated 2022
+ description DDlog is a programming language for incremental computation. It is well suited for writing programs that continuously update their output in response to input changes. A DDlog programmer does not write incremental algorithms; instead they specify the desired input-output mapping in a declarative manner.
+ issues 131
+
+repoStats
+ firstCommit 2018
+ commits 2136
+ committers 44
+ files 1073
+
+isOpenSource true

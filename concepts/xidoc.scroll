@@ -1,0 +1,48 @@
+import ../measures/conceptPage.scroll
+id Xidoc
+appeared 2021
+type textMarkup
+creators Adam Blažek
+conceptDescription A consistent markup language
+website https://xidoc.nim.town/
+country Czech Republic
+originCommunity Adam Blažek
+
+example
+ [section HTML;
+   [p
+     HTML is such an [it ugly] language!
+     Each [code html; <tag>] has to be repeated twice.
+   ]
+ ]
+ [section [LaTeX];
+   [p
+     [LaTeX] is great for writing math formulas like [$ e^{\tau i} = 1],
+     but it's painful to write with all those [code latex; \begin], [code latex; \end]
+     and different syntaxes for different things.
+   ]
+ ]
+
+githubRepo https://github.com/xigoi/xidoc
+ firstCommit 2021
+ stars 33
+ forks 0
+ subscribers 2
+ created 2021
+ updated 2022
+ description A consistent markup language
+ issues 2
+
+repoStats
+ firstCommit 2021
+ commits 320
+ committers 2
+ files 479
+
+fileType text
+isOpenSource true
+centralPackageRepositoryCount 0
+
+isbndb 0
+
+semanticScholar 0

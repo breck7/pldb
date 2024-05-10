@@ -1,0 +1,190 @@
+import ../measures/conceptPage.scroll
+id Idris
+appeared 2014
+type pl
+creators Edwin Brady
+website http://idris-lang.org
+documentation http://docs.idris-lang.org/en/latest/
+fileExtensions idr lidr
+country United Kingdom
+originCommunity University of St Andrews
+domainName idris-lang.org
+ registered 2010
+ awisRank
+  2022 1726658
+  2017 803360
+
+writtenIn haskell
+
+hasDependentTypes true
+hasLineComments true
+ -- A comment
+hasComments true
+ -- A comment
+hasPrintDebugging true
+hasSemanticIndentation false
+hasStrings true
+ "Hello world"
+hasHexadecimals true
+ -- 0[xX][\da-fA-F]+
+hasFloats true
+ -- \d+[eE][+-]?\d+
+hasIntegers true
+ -- \d+
+
+lineCommentToken --
+printToken putStrLn
+stringToken "
+
+githubRepo https://github.com/idris-lang/Idris-dev
+ stars 3342
+ forks 663
+ subscribers 123
+ created 2011
+ updated 2022
+ firstCommit 2011
+ description A Dependently Typed Functional Programming Language
+ issues 710
+
+repoStats
+ firstCommit 2011
+ commits 10140
+ committers 442
+ files 1643
+
+wikipedia https://en.wikipedia.org/wiki/Idris_(programming_language)
+ example
+  total
+  pairAdd : Num a => Vect n a -> Vect n a -> Vect n a
+  pairAdd Nil       Nil       = Nil
+  pairAdd (x :: xs) (y :: ys) = x + y :: pairAdd xs ys
+ related agda coq epigram haskell ml rust perl c javascript java jvm cil ocaml llvmir
+ summary Idris is a general-purpose purely functional programming language with dependent types, strict or optional lazy evaluation and features such as a totality checker. Even before its possible usage for interactive theorem-proving, the focus of Idris is on general-purpose programming, like the purely functional Haskell, and with sufficient performance. The type system of Idris is similar to the one used by Agda and theorem-proving in it is similar to Coq, including tactics. In comparison, Idris has a priority on easy management of side-effects and support for implementing embedded domain specific languages. As of May 2017, Idris compiles to C (relying on a custom copying garbage collector using Cheney's algorithm) and JavaScript (both browser- and Node.js-based). There are also a number of third-party code generators for other platforms, including Java, JVM, CIL, OCaml, and a partial LLVM backend. The name Idris goes back to the character of the singing dragon in the 1970s UK kids' program Ivor the Engine.
+ pageId 39035048
+ dailyPageViews 123
+ created 2013
+ backlinksCount 38
+ revisionCount 109
+ appeared 2017
+ fileExtensions idr lidr
+
+githubLanguage Idris
+ fileExtensions idr lidr
+ trendingProjectsCount 0
+ type programming
+ aceMode text
+ tmScope source.idris
+ repos 1895
+githubBigQuery Idris
+ repos 301
+ users 219
+
+pygmentsHighlighter Idris
+ filename haskell.py
+ fileExtensions idr
+linguistGrammarRepo https://github.com/idris-hackers/idris-sublime.git
+ firstCommit 2013
+ lastCommit 2017
+ committerCount 6
+ commitCount 24
+ sampleCount 1
+ example
+  module Prelude.Char
+  
+  import Builtins
+  
+  isUpper : Char -> Bool
+  isUpper x = x >= 'A' && x <= 'Z'
+  
+  isLower : Char -> Bool
+  isLower x = x >= 'a' && x <= 'z'
+  
+  isAlpha : Char -> Bool
+  isAlpha x = isUpper x || isLower x
+  
+  isDigit : Char -> Bool
+  isDigit x = (x >= '0' && x <= '9')
+  
+  isAlphaNum : Char -> Bool
+  isAlphaNum x = isDigit x || isAlpha x
+  
+  isSpace : Char -> Bool
+  isSpace x = x == ' '  || x == '\t' || x == '\r' ||
+              x == '\n' || x == '\f' || x == '\v' ||
+              x == '\xa0'
+  
+  isNL : Char -> Bool
+  isNL x = x == '\r' || x == '\n'
+  
+  toUpper : Char -> Char
+  toUpper x = if (isLower x)
+                 then (prim__intToChar (prim__charToInt x - 32))
+                 else x
+  
+  toLower : Char -> Char
+  toLower x = if (isUpper x)
+                 then (prim__intToChar (prim__charToInt x + 32))
+                 else x
+  
+  isHexDigit : Char -> Bool
+  isHexDigit x = elem (toUpper x) hexChars where
+    hexChars : List Char
+    hexChars = ['0', '1', '2', '3', '4', '5', '6', '7', '8', '9',
+                'A', 'B', 'C', 'D', 'E', 'F']
+  
+
+projectEuler Idris
+ memberCount
+  2019 10
+  2022 11
+helloWorldCollection Idris
+ Hello world in Idris
+ 
+ > main : IO ()
+ > main = putStrLn "Hello, World!"
+leachim6 Idris
+ filepath i/Idris.idr
+ fileExtensions idr
+ example
+  module Main
+  
+  main : IO ()
+  main = putStrLn "Hello World"
+  
+rosettaCode http://www.rosettacode.org/wiki/Category:Idris
+
+rijuRepl https://riju.codes/idris
+ example
+  module Main
+  
+  main : IO ()
+  main = putStrLn "Hello, world!"
+  
+tryItOnline idris
+
+indeedJobs idris developer
+ 2017 1
+officialBlogUrl https://www.idris-lang.org/category/news.html
+faqPageUrl https://docs.idris-lang.org/en/latest/faq/faq.html]
+
+tiobe Idris
+
+twitter https://twitter.com/idrislang
+fileType text
+isOpenSource true
+centralPackageRepositoryCount 0
+
+isbndb 1
+ year|publisher|title|authors|isbn13
+ 20170313|Simon & Schuster|Type-Driven Development with Idris|Edwin Brady|9781638352242
+
+semanticScholar 8
+ year|title|doi|citations|influentialCitations|authors|paperId
+ 2011|IDRIS ---: systems programming meets full dependent types|10.1145/1929529.1929536|85|6|Edwin C. Brady|1baf62357fb0b8c60f735c27f89444d1492e62c5
+ 2016|Elaborator reflection: extending Idris in Idris|10.1145/2951913.2951932|31|4|D. Christiansen and Edwin C. Brady|38aafe4d16639f77be616c320ed12a9560430e7d
+ 2021|Idris 2: Quantitative Type Theory in Practice|10.4230/LIPIcs.ECOOP.2021.9|15|0|Edwin C. Brady|d670ad0f4a9448d3c0869a1519fed7fc97be60a2
+ 2019|A Dependently Typed Library for Static Information-Flow Control in Idris|10.1007/978-3-030-17138-4_3|4|1|Simon Gregersen and Søren Eller Thomsen and Aslan Askarov|ebf5c08847ffa8fe95ee857c4d11f0c3f47cf960
+ 2018|Edit-Time Tactics in Idris|10.14418/wes01.2.181|3|0|Joomy Korkut|991236ead6e9eee6b66081e7735b97cdb195914c
+ 2013|The Idris Programming Language - Implementing Embedded Domain Specific Languages with Dependent Types|10.1007/978-3-319-15940-9_4|3|0|Edwin C. Brady|e0f0d473b110fa75001ed13b5d2eaa1a374dd6f9
+ 2021|Idris 2: Quantitative Type Theory in Practice (Artifact)|10.4230/DARTS.7.2.10|1|0|Edwin C. Brady|c92b6092462563f3b3132f3a3285493d02aa906d
+ 2019|Building a Blockchain Simulation using the Idris Programming Language|10.1145/3299815.3314456|1|0|Qiutai Pan and X. Koutsoukos|97cab544a22c289edd423d0a71fcc73fb011fe87

@@ -1,0 +1,28 @@
+import ../measures/conceptPage.scroll
+id bml
+appeared 2014
+type dataNotation
+reference https://news.ycombinator.com/item?id=8645591
+
+hasSemanticIndentation true
+
+example
+ server
+   path: /core/www/
+   host: example.com
+   port: 80
+   service: true
+   proxy
+     host: proxy.example.com
+     port: 8080
+     authentication: plain
+   description
+     :Primary web-facing server
+     :Provides commerce-related functionality
+ 
+ server
+   ...
+   proxy host="proxy.example.com" port="8080"
+     authentication: plain
+
+semanticScholar 0

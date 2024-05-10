@@ -1,0 +1,20 @@
+import ../measures/conceptPage.scroll
+id Citrine
+appeared 2014
+type pl
+website http://citrine-lang.org/
+reference https://news.ycombinator.com/item?id=23885059
+country The Netherlands
+originCommunity gaborsoftware.nl
+domainName citrine-lang.org
+ registered 2014
+
+example
+ salut := 'Bună țară!'.
+ salut țară: 'România'.
+ scrie: salut.
+
+wikipedia https://en.wikipedia.org/wiki/Citrine
+
+twitter https://twitter.com/citrinelanguage
+centralPackageRepositoryCount 0

@@ -1,6 +1,0 @@
-hasRefinementTypesParser
- extends abstractFeatureParser
- description Does the language have a way to attach a predicate to a type?
- string title Refinement Types
- string pseudoExample evenInt where int % 2 = 0
- string reference https://en.wikipedia.org/wiki/Refinement_type

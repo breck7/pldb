@@ -1,0 +1,49 @@
+import ../measures/conceptPage.scroll
+id DAX
+appeared 2009
+type queryLanguage
+conceptDescription Data Analysis Expressions (DAX) is a formula expression language used in Analysis Services, Power BI, and Power Pivot in Excel. DAX formulas include functions, operators, and values to perform advanced calculations and queries on data in related tables and columns in tabular data models.
+website https://docs.microsoft.com/en-us/dax/dax-overview
+standsFor Data analysis expressions
+aka msdax
+originCommunity Microsoft
+
+hasStrings true
+hasLineComments true
+ // A comment
+hasMultiLineComments true
+ /* A comment
+ */
+hasComments true
+ // A comment
+
+lineCommentToken //
+multiLineCommentTokens /* */
+keywords VAR RETURN NOT EVALUATE DATATABLE ORDER BY START AT DEFINE MEASURE ASC DESC IN BOOLEAN DOUBLE INTEGER DATETIME CURRENCY STRING
+
+example
+ EVALUATE
+  ( FILTER ( 'DimProduct', [SafetyStockLevel] < 200 ) )
+ ORDER BY [EnglishProductName] ASC
+
+wikipedia https://en.wikipedia.org/wiki/Data_analysis_expressions
+ related excel-app
+ summary Data Analysis Expressions (DAX) is the native formula and query language for Microsoft PowerPivot, Power BI Desktop and SQL Server Analysis Services (SSAS) Tabular models. DAX includes some of the functions that are used in Excel formulas with additional functions that are designed to work with relational data and perform dynamic aggregation. It is, in part, an evolution of the Multidimensional Expression (MDX) language developed by Microsoft for Analysis Services multidimensional models (often called cubes) combined with Excel formula functions. It is designed to be simple and easy to learn, while exposing the power and flexibility of PowerPivot and SSAS tabular models.
+ created 2012
+ backlinksCount 14
+ pageId 37774833
+ revisionCount 30
+ dailyPageViews 76
+ appeared 2009
+
+monaco msdax
+
+centralPackageRepositoryCount 0
+
+isbndb 3
+ year|publisher|title|authors|isbn13
+ 2018|Apress|Beginning DAX with Power BI: The SQL Pro’s Guide to Better Business Intelligence|Seamark, Philip|9781484234778
+ 20191210|Springer Nature|Pro DAX with Power BI|Philip Seamark; Thomas Martens|9781484248973
+ 20220524|Springer Nature|Up and Running with DAX for Power BI|Alison Box|9781484281888
+
+semanticScholar 0

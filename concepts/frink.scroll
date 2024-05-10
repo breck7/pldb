@@ -1,0 +1,57 @@
+import ../measures/conceptPage.scroll
+id Frink
+appeared 2001
+type pl
+website https://frinklang.org/
+country United States
+originCommunity https://futureboy.us/
+domainName frinklang.org
+ registered 2014
+ awisRank
+  2022 6494861
+  2017 6486149
+
+hasComments true
+hasUnitsOfMeasure true
+ 10 feet 12 feet 8 feet -> gallons
+hasLineComments true
+ // A comment
+hasPrintDebugging true
+hasSemanticIndentation false
+hasStrings true
+ "Hello world"
+
+lineCommentToken //
+printToken println
+stringToken "
+
+wikipedia https://en.wikipedia.org/wiki/Frink_(programming_language)
+ related jvm java
+ summary Frink is a computer programming language. It is, according to creator of the language, "designed to make physical calculations simple, to help ensure that answers come out right, and to make a tool that's really useful in the real world. It tracks units of measure (feet, meters, kilograms, watts, etc.) through all calculations, allowing you to mix units of measure transparently, and helps you easily verify that your answers make sense."
+ pageId 54431028
+ dailyPageViews 8
+ created 2017
+ backlinksCount 6
+ revisionCount 11
+ appeared 2011
+
+projectEuler Frink
+ memberCount
+  2019 14
+  2022 14
+helloWorldCollection Frink programming language
+ // Hello World in Frink
+ 
+ println["Hello World!"]
+ 
+leachim6 Frink
+ filepath f/Frink.frink
+ fileExtensions frink
+ example
+  println["Hello World"]
+  
+rosettaCode http://www.rosettacode.org/wiki/Category:Frink
+
+twitter https://twitter.com/frinklang
+fileType text
+centralPackageRepositoryCount 0

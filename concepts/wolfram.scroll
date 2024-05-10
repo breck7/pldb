@@ -1,0 +1,85 @@
+import ../measures/conceptPage.scroll
+id Wolfram Language
+appeared 1988
+type pl
+creators Stephen Wolfram
+website https://www.wolfram.com/language/
+webRepl https://www.wolframcloud.com/
+aka wolframlanguage
+fileExtensions nb m wl
+originCommunity Wolfram Research
+
+hasComments true
+ (* A comment *)
+hasLineComments false
+hasPrintDebugging true
+hasMultiLineComments true
+ (* A comment
+ *)
+hasSemanticIndentation false
+hasStrings true
+ "Hello world"
+hasSwitch true
+ Switch[expr,
+  pattern1, code1,
+  pattern2, code2,
+  pattern3, code3
+ ]
+hasOperatorOverloading true
+ f[x_Integer] := x^2;
+ f[x_String] := "not a number";
+ f[x_Symbol] := x^2;
+
+multiLineCommentTokens (* *)
+printToken Print
+stringToken "
+
+wikipedia https://en.wikipedia.org/wiki/Wolfram_Language
+ related mathematica-editor apl c lisp pascal prolog simula smalltalk julia mathematica unity-engine
+ summary The Wolfram Language, a general multi-paradigm programming language developed by Wolfram Research, is the programming language of mathematical symbolic computation program Mathematica and the Wolfram Programming Cloud. It emphasizes symbolic computation, functional programming, and rule-based programming and can employ arbitrary structures and data. It includes built-in functions for generating and running Turing machines, creating graphics and audio, analyzing 3D models, matrix manipulations, and solving differential equations. It is extensively documented. The Wolfram language was released for the Raspberry Pi in 2013 with the goal of making it free for all Raspberry Pi users. It was controversially included in the recommended software bundle that the Raspberry Pi Foundation provides for beginners. Plans to port the Wolfram language to the Intel Edison were announced after the board's introduction at CES 2014. There was also a short lived proposal to make Wolfram libraries compatible with the Unity game engine, giving game developers access to the language's high level functions.
+ pageId 40205956
+ dailyPageViews 199
+ created 2013
+ backlinksCount 123
+ revisionCount 156
+ appeared 1988
+ fileExtensions nb m wl
+
+helloWorldCollection Wolfram
+ (* Hello world in Wolfram Language *)
+ 
+ CloudDeploy["Hello World"]
+leachim6 WolframLanguage
+ filepath w/WolframLanguage.wl
+ fileExtensions wl
+ example
+  Print["Hello World"];
+  
+
+rijuRepl https://riju.codes/wolframlanguage
+ example
+  Print["Hello, world!"]
+  
+
+subreddit https://reddit.com/r/wolframlanguage
+ memberCount
+  2022 610
+meetup https://www.meetup.com/topics/wolfram
+ memberCount 721
+ groupCount 4
+
+tiobe Wolfram
+
+jupyterKernel https://github.com/mmatera/iwolfram
+fileType text
+isOpenSource false
+centralPackageRepositoryCount 0
+
+goodreads
+ title|year|author|goodreadsId|rating|ratings|reviews
+ An Elementary Introduction to the Wolfram Language|2015|Stephen Wolfram|47752634|4.22|63|9
+ Hands-On Start to Wolfram Mathematica: And Programming with the Wolfram Language|2015|Cliff Hastings|46155341|4.29|14|2
+
+isbndb 0
+
+semanticScholar 0

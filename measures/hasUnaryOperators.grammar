@@ -1,6 +1,0 @@
-hasUnaryOperatorsParser
- extends abstractFeatureParser
- description Does the language have any unary operators like ++ or --?
- string title Unary Operators
- string pseudoExample count++
- string reference https://en.wikipedia.org/wiki/Unary_operation

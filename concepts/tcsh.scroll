@@ -1,0 +1,58 @@
+import ../measures/conceptPage.scroll
+id tcsh
+appeared 1983
+type pl
+country United States
+
+hasPrintDebugging true
+hasStrings true
+ "Hello world"
+
+printToken echo
+stringToken "
+
+githubLanguage Tcsh
+ fileExtensions tcsh csh
+ trendingProjectsCount 0
+ type programming
+ group Shell
+ interpreters tcsh csh
+ aceMode sh
+ codemirrorMode shell
+ codemirrorMimeType text/x-sh
+ tmScope source.shell
+ repos 0
+
+pygmentsHighlighter Tcsh
+ filename shell.py
+ fileExtensions tcsh csh
+linguistGrammarRepo https://github.com/atom/language-shellscript
+ firstCommit 2013
+ lastCommit 2018
+ committerCount 31
+ commitCount 243
+
+leachim6 TCSH
+ filepath t/TCSH.tcsh
+ fileExtensions tcsh
+ example
+  #!/bin/tcsh
+  echo "Hello World"
+  
+
+rijuRepl https://riju.codes/tcsh
+ example
+  echo "Hello, world!"
+  
+tryItOnline tcsh
+
+hopl https://hopl.info/showlanguage.prx?exp=2560
+
+fileType text
+centralPackageRepositoryCount 0
+
+isbndb 3
+ year|publisher|title|authors|isbn13
+ 1995|O'Reilly & Associates|Using csh & tcsh (Nutshell Handbooks)|DuBois, Paul|9781565921320
+ 19950701|O'Reilly Media, Inc.|Using csh & tcsh|Paul DuBois|9781449391683
+ 19950701|O'Reilly Media, Inc.|Using csh & tcsh|Paul DuBois|9781449391065

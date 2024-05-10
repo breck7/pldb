@@ -1,0 +1,30 @@
+import ../measures/conceptPage.scroll
+id nydp
+appeared 2014
+type pl
+country United States
+originCommunity https://github.com/conanite/nydp/issues
+
+example
+ (def pre-compile (expr)
+   (map pre-compile
+     (if (mac-names (car expr))
+         (pre-compile (mac-expand (car expr) (cdr expr)))
+         expr)))
+ (mac yoyo (thing) `(do-yoyo ,thing))
+
+githubRepo https://github.com/conanite/nydp
+ firstCommit 2014
+ stars 8
+ subscribers 3
+ created 2014
+ updated 2021
+ description nydp - a modern, more dangerous kind of lisp
+ forks 0
+ issues 0
+
+repoStats
+ firstCommit 2014
+ commits 968
+ committers 2
+ files 214

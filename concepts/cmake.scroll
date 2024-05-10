@@ -1,0 +1,107 @@
+import ../measures/conceptPage.scroll
+id CMake
+appeared 2000
+type application
+website https://cmake.org/
+reference https://www.jetbrains.com/help/clion/cmakelists-txt-file.html
+country United States
+originCommunity Kitware, Inc
+domainName cmake.org
+ registered 2001
+ awisRank
+  2022 23114
+
+gitlabRepo https://gitlab.kitware.com/cmake/cmake
+
+wikipedia https://en.wikipedia.org/wiki/CMake
+ related c visual-studio-editor eclipse-editor linux ninja unix falcon kicad llvmir mysql mariadb qt amqp root-lib meson qmake
+ summary CMake is cross-platform free and open-source software for managing the build process of software using a compiler-independent method. It supports directory hierarchies and applications that depend on multiple libraries. It is used in conjunction with native build environments such as make, Apple's Xcode, and Microsoft Visual Studio. It has minimal dependencies, requiring only a C++ compiler on its own build system.
+ pageId 4965560
+ dailyPageViews 255
+ created 2006
+ backlinksCount 90
+ revisionCount 560
+ appeared 2000
+
+githubLanguage CMake
+ fileExtensions cmake cmakein
+ trendingProjects
+  author name avatar url language languageColor stars forks currentPeriodStars description
+  microsoft vcpkg https://github.com/microsoft.png https://github.com/microsoft/vcpkg CMake #ccc 6545 1638 307 "C++ Library Manager for Windows, Linux, and MacOS"
+  wzpan cmake-demo https://github.com/wzpan.png https://github.com/wzpan/cmake-demo CMake #ccc 533 332 37 《CMake入门实战》源码
+  ultralight-ux Ultralight https://github.com/ultralight-ux.png https://github.com/ultralight-ux/Ultralight CMake #ccc 1145 65 95 "Ultralight— a lightweight, pure-GPU, HTML UI renderer for native apps."
+ trendingProjectsCount 4
+ type programming
+ filenames CMakeLists.txt
+ aceMode text
+ codemirrorMode cmake
+ codemirrorMimeType text/x-cmake
+ tmScope source.cmake
+githubBigQuery CMake
+ repos 56490
+ users 39454
+
+codeMirror cmake
+pygmentsHighlighter CMake
+ filename make.py
+ fileExtensions cmake CMakeLists.txt
+linguistGrammarRepo https://github.com/textmate/cmake.tmbundle
+ firstCommit 2008
+ lastCommit 2015
+ committerCount 7
+ commitCount 48
+ sampleCount 6
+ example
+  cmake_minimum_required(VERSION 2.6)
+  
+  enable_testing()
+  
+  set(CMAKE_BUILD_TYPE debug)
+  
+  include_directories("/usr/local/include")
+  
+  find_library(ssl_LIBRARY NAMES ssl PATHS "/usr/local/lib")
+  
+  add_custom_command(OUTPUT "ver.c" "ver.h" COMMAND ./ver.sh)
+  
+  add_executable(foo foo.c bar.c baz.c ver.c)
+  
+  target_link_libraries(foo ${ssl_LIBRARY})
+  
+
+helloWorldCollection CMake
+ # Hello World in CMake
+ 
+ message(STATUS "Hello World!")
+ 
+leachim6 CMake
+ filepath c/CMake.cmake
+ fileExtensions cmake
+ example
+  message("Hello World")
+  
+rosettaCode http://www.rosettacode.org/wiki/Category:CMake
+
+compilerExplorer CMake
+ example
+  project(default)
+  
+  add_compile_options(-Werror -Wall -Wextra -g)
+  
+  add_executable(output.s example.cpp)
+  
+rijuRepl https://riju.codes/cmake
+ example
+  message("Hello, world!")
+  
+
+fileType text
+isOpenSource true
+centralPackageRepositoryCount 0
+
+goodreads
+ title|year|author|goodreadsId|rating|ratings|reviews
+ CMake Cookbook: Over 40 recipes enabling you to build, test, and package software for distribution using the CMake suite||Radovan Bast;Roberto Di Remigio|63961172|0.0|0|0
+ CMake Cookbook: Over 40 recipes enabling you to build, test, and package software for distribution using the CMake suite||Radovan Bast|61191205|0.0|0|0
+ Building C++ Software with CMake (Software Tools Series Book 1)|2014|Chris Weed|42501938|5.00|2|0
+ Using CMake to Manage Project - A Demo (Linux Software Development)||Jie Deng|52502246|0.0|0|0

@@ -1,0 +1,47 @@
+import ../measures/conceptPage.scroll
+id Tree Notation
+appeared 2017
+type dataNotation
+isPublicDomain true
+creators Breck Yunits
+conceptDescription A minimalist notation consisting of just the word break rule and the off-side rule.
+website https://treenotation.org/
+webRepl https://jtree.treenotation.org/sandbox/
+domainName treenotation.org
+ registered 2019
+
+relatedConcepts i-expressions json yaml toml xml haml ini grammar
+influencedBy haml treesheets racket lisp haskell antlr typescript mathematica scheme python csharp red cobol rebol apl r html css xml json cpp forth fortran sql
+
+hasSemanticIndentation true
+ example
+  title Tree Notation
+hasEscapeCharacters false
+hasComments false
+
+example
+ title Tree Notation
+ type dataNotation
+ example
+  title Tree Notation
+  type dataNotation
+
+githubRepo https://github.com/breck7/jtree
+ stars 365
+ forks 14
+ subscribers 9
+ created 2017
+ updated 2023
+ description Build your own language using Tree Notation.
+ issues 40
+
+repoStats
+ firstCommit 2017
+ commits 1444
+ committers 11
+ files 226
+
+twitter https://twitter.com/treenotation
+isOpenSource true
+
+isbndb 0

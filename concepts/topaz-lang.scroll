@@ -1,0 +1,43 @@
+import ../measures/conceptPage.scroll
+id Topaz
+appeared 2021
+type pl
+creators m-schm
+website https://github.com/m-schm/topaz
+country Unknown
+
+compilesTo javascript
+
+example
+ ;; This is a comment
+ ;; `Ven n a` represents lists that are `n` long, that contain `a`s
+ ;; A Vec is either:
+ type Vec (n: Uint) (a: Type) =
+   ;; empty, with length 0...
+   Nil: {a} -> Vec 0 a
+   ;; or 1 item longer than a Vec of length n.
+   `::`: {n a} -> a -> Vec n a -> Vec (n+1) a
+ ;; `zip` should take two lists and return a list of pairs.
+ ;; The two lists are required to be the same length because `n` is the same for
+ ;; both parameters.
+ let zip {n a b} (left: Vec n a) (right: Vec n b): Vec n (a, b) =
+   match left, right in
+     ;; Either both lists are empty...
+     Nil,     Nil     => Nil
+     ;; or they both contain at least one item.
+     x :: xs, y :: ys => (x, y) :: zip xs ys
+     ;; No other cases are needed, because the lists are the same length!
+
+githubRepo https://github.com/m-schm/topaz
+ stars 0
+ forks 0
+ subscribers 1
+ created 2021
+ updated 2021
+ description Dependently typed language that compiles to JavaScript
+
+repoStats
+ firstCommit 2021
+ commits 78
+ committers 1
+ files 27

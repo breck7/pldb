@@ -1,0 +1,34 @@
+import ../measures/conceptPage.scroll
+id rosette-lang
+appeared 2013
+type pl
+creators Emina Torlak and Rastislav Bodik
+conceptDescription Rosette is a solver-aided programming language that extends Racket with language constructs for program synthesis, verification, and more. To verify or synthesize code, Rosette compiles it to logical constraints solved with off-the-shelf SMT solvers. By combining virtualized access to solvers with Racket’s metaprogramming, Rosette makes it easy to develop synthesis and verification tools for new languages.
+website https://emina.github.io/rosette/
+reference https://homes.cs.washington.edu/~emina/pubs/rosette.onward13.pdf
+country United States
+originCommunity University of California, Berkeley
+
+hasLineComments true
+ ; A comment
+hasComments true
+ ; A comment
+hasSemanticIndentation false
+
+lineCommentToken ;
+
+example
+ #lang rosette
+ 
+ (define (interpret formula)
+   (match formula
+     [`(∧ ,expr ...) (apply && (map interpret expr))]
+     [`(∨ ,expr ...) (apply || (map interpret expr))]
+     [`(¬ ,expr)     (! (interpret expr))]
+     [lit            (constant lit boolean?)]))
+ 
+ ; This implements a SAT solver.
+ (define (SAT formula)
+   (solve (assert (interpret formula))))
+ 
+ (SAT `(∧ r o (∨ s e (¬ t)) t (¬ e)))

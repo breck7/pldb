@@ -1,0 +1,27 @@
+import ../measures/conceptPage.scroll
+id Slony
+appeared 2004
+type application
+creators Steve Singer
+conceptDescription Slony-I is a "master to multiple slaves" replication system for PostgreSQL supporting cascading (e.g. - a node can feed another node which feeds another node...) and failover.
+website https://www.slony.info/
+documentation https://www.slony.info/documentation/
+country United States
+originCommunity https://github.com/ssinger/slony1-engine
+domainName slony.info
+
+githubRepo https://github.com/ssinger/slony1-engine
+ stars 35
+ forks 19
+ updated 2020
+ description Slony-I is a "master to multiple slaves" replication system with cascading and failover.The big picture for the development of Slony-I is a master-slave system that includes all features and capabilities needed to replicate large databases to a reasonably limited number of slave systems.
+ issues 1
+
+wikipedia https://en.wikipedia.org/wiki/Slony-I
+ related c postgresql linux sql plpgsql pl-sql perl javascript
+ summary Slony-I is an asynchronous master-slave replication system for the PostgreSQL DBMS, providing support for cascading and failover. Asynchronous means that when a database transaction has been committed to the master server, it is not yet guaranteed to be available in slaves. Cascading means that replicas can be created (and updated) via other replicas, i.e. they needn't directly connect to the master.
+ pageId 15462886
+ dailyPageViews 2
+ created 2008
+
+isOpenSource true

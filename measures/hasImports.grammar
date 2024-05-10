@@ -1,6 +1,0 @@
-hasImportsParser
- extends abstractFeatureParser
- description Does this language have a syntax for importing other files?
- string title File Imports
- string pseudoExample import pldb
- string tokenKeyword includeToken

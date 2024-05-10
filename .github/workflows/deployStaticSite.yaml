@@ -1,5 +1,5 @@
 # Adapted from https://github.com/JamesIves/github-pages-deploy-action
-name: Build and Deploy Static Site
+name: Build and Deploy Scroll
 on:
   push:
     branches:
@@ -9,16 +9,15 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout 🛎️
-        uses: actions/checkout@v4
+        uses: actions/checkout@v2.3.1
       - name: Install and Build
         run: |
           npm install .
-          sudo apt-get install cloc
-          npm run static
+          npm run build
           # The line below is needed if you have *.html in your gitignore file
           rm .gitignore
       - name: Deploy 🚀
         uses: JamesIves/github-pages-deploy-action@4.1.4
         with:
           branch: scroll-output # The branch the action should deploy to.
-          folder: ignore/static/
+          folder: .

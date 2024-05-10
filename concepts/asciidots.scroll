@@ -1,0 +1,62 @@
+import ../measures/conceptPage.scroll
+id AsciiDots
+appeared 2017
+type esolang
+creators Aaron Janse
+website http://ajanse.me/asciidots/
+webRepl http://ajanse.me/asciidots/demo
+
+visualParadigm true
+
+hasStrings true
+ "Hello world"
+
+stringToken "
+
+example
+ /-&         `` This is where the program ends!
+ |
+ \-\ /-\
+   | | |
+ /-/ | \-\
+ \---/   |
+         |
+         \-. `` Here's where the program starts
+
+githubRepo https://github.com/aaronduino/asciidots
+ stars 1047
+ forks 36
+ subscribers 24
+ created 2017
+ updated 2022
+ firstCommit 2017
+ description Esolang inspired by ASCII art
+ issues 12
+
+repoStats
+ firstCommit 2017
+ commits 455
+ committers 19
+ files 124
+
+leachim6 AsciiDots
+ filepath a/AsciiDots.ascii
+ fileExtensions ascii
+ example
+  .-$"Hello World" 
+  
+rosettaCode http://www.rosettacode.org/wiki/Category:AsciiDots
+
+tryItOnline asciidots
+
+hackerNewsDiscussions
+ id|title|time|timestamp|by|comments|score
+ 14947449|Show HN: AsciiDots – a 2D esoteric language inspired by circuits|2017-08-07 13:57:27 UTC|1502114247|aaronduino|33|148
+
+esolang https://esolangs.org/wiki/AsciiDots
+
+fileType text
+isOpenSource true
+centralPackageRepositoryCount 0
+
+semanticScholar 0

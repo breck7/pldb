@@ -1,0 +1,958 @@
+import ../measures/conceptPage.scroll
+id Java
+appeared 1995
+type pl
+creators James Gosling
+website https://openjdk.org/
+devDocumentation https://openjdk.org/guide/
+ebook https://sd.blackball.lv/library/thinking_in_java_4th_edition.pdf
+emailList https://mail.openjdk.org/mailman/listinfo
+spec https://docs.oracle.com/javase/specs/
+aka OpenJDK
+country United States
+originCommunity Sun Microsystems
+releaseNotesUrl https://openjdk.org/projects/jdk-updates/
+proposals https://openjdk.org/jeps/0
+
+influencedBy c cpp
+
+visualParadigm false
+
+hasSExpressions false
+hasVariableSubstitutionSyntax false
+hasAssertStatements true
+ // By default, assertions are disabled
+ // java –enableassertions Test
+ int score = 10;
+ assert score >= 10 : " Below";
+ System.out.println("score is "+score);
+hasGenerics true
+ List<String> v = new ArrayList<String>();
+ v.add("test");
+ Integer i = v.get(0); // (type error)  compilation-time error
+hasSingleDispatch true
+hasPointers false
+hasStrings true
+ "hello world"
+hasComments true
+hasConstructors true
+hasGarbageCollection true
+hasImports true
+ import javax.swing.*;
+ import javax.swing.JOptionPane;
+ // use fully qualified name without import:
+ javax.swing.JOptionPane.showMessageDialog(null, "Hi");
+ // There are 166 packages containing 3279 classes and interfaces in Java 5.
+ // import java.io.*; Input-output classes.
+hasInterfaces true
+ interface MyInterface{  
+    /* This is a default method so we need not
+     * to implement this method in the implementation 
+     * classes  
+     */
+    default void newMethod(){  
+        System.out.println("Newly added default method");  
+    }  
+    /* Already existing public and abstract method
+     * We must need to implement this method in 
+     * implementation classes.
+     */
+    void existingMethod(String str);  
+ }  
+ public class Example implements MyInterface{ 
+   // implementing abstract method
+     public void existingMethod(String str){           
+         System.out.println("String is: "+str);  
+     }  
+     public static void main(String[] args) {  
+       Example obj = new Example();
+       
+       //calling the default method of interface
+         obj.newMethod();     
+         //calling the abstract method of interface
+         obj.existingMethod("Java 8 is easy to learn"); 
+   
+     }  
+ }
+hasIterators true
+ Iterator iter = list.iterator();
+ //Iterator<MyType> iter = list.iterator();    in J2SE 5.0
+ while (iter.hasNext()) {
+     System.out.print(iter.next());
+     if (iter.hasNext())
+         System.out.print(", ");
+ }
+hasMacros false
+hasOperatorOverloading false
+hasZeroBasedNumbering true
+hasModules true
+ // Package = directory. Java classes can be grouped together in packages. A package name is the same as the directory (folder) name which contains the .java files. You declare packages when you define your Java program, and you name the packages you want to use from other libraries in an import statement.
+ // The first statement, other than comments, in a Java source file, must be the package declaration.
+ // Following the optional package declaration, you can have import statements, which allow you to specify classes from other packages that can be referenced without qualifying them with their package.
+ // This source file must be Drawing.java in the illustration directory.
+ package illustration;
+ import java.awt.*;
+ public class Drawing {
+  // ...
+ }
+hasIncrementAndDecrementOperators true
+hasLineComments true
+ // A comment
+hasThreads true
+hasPrintDebugging true
+hasMultiLineComments true
+ /* A comment
+ */
+hasSemanticIndentation false
+hasCaseInsensitiveIdentifiers false
+isCaseSensitive true
+hasBooleans true
+hasWhileLoops true
+hasClasses true
+hasConstants true
+hasExceptions true
+hasSwitch true
+hasAccessModifiers true
+hasInheritance true
+hasConditionals true
+hasOctals true
+ // 0[0-7_]+[lL]?
+hasHexadecimals true
+ // 0[xX][0-9a-fA-F][0-9a-fA-F_]*[lL]?
+hasFloats true
+ // ([0-9][0-9_]*\.([0-9][0-9_]*)?|\.[0-9][0-9_]*)([eE][+\-]?[0-9][0-9_]*)?[fFdD]?|[0-9][eE][+\-]?[0-9][0-9_]*[fFdD]?|[0-9]([eE][+\-]?[0-9][0-9_]*)?[fFdD]|0[xX]([0-9a-fA-F][0-9a-fA-F_]*\.?|([0-9a-fA-F][0-9a-fA-F_]*)?\.[0-9a-fA-F][0-9a-fA-F_]*)[pP][+\-]?[0-9][0-9_]*[fFdD]?
+hasIntegers true
+ // 0|[1-9][0-9_]*[lL]?
+hasBinaryNumbers true
+ // 0[bB][01][01_]*[lL]?
+hasScientificNotation true
+
+lineCommentToken //
+multiLineCommentTokens /* */
+printToken System.out.println
+stringToken "
+booleanTokens true false
+keywords abstract continue for new switch assert default goto package synchronized boolean do if private this break double implements protected throw byte else import public throws case enum instanceof return transient catch extends int short try char final interface static void class finally long strictfp volatile const float native super while _
+
+githubRepo https://github.com/openjdk/jdk
+ stars 15796
+ forks 4503
+ subscribers 311
+ created 2018
+ updated 2023
+ description JDK main-line development https://openjdk.org/projects/jdk
+ issues 311
+
+repoStats
+ firstCommit 2007
+ commits 76734
+ committers 1775
+ files 67099
+
+wikipedia https://en.wikipedia.org/wiki/Java_(programming_language)
+ example
+  // Hello.java (Java SE 5)
+  import javax.swing.*;
+  
+  public class Hello extends JFrame {
+      public Hello() {
+          super("hello");
+          super.setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
+          super.add(new JLabel("Hello, world!"));
+          super.pack();
+          super.setVisible(true);
+      }
+  
+      public static void main(final String[] args) {
+          new Hello();
+      }
+  }
+ related javascript pizza ada csharp eiffel mesa modula-3 oberon objective-c ucsd-pascal object-pascal beanshell chapel clojure ecmascript fantom gambas groovy hack jsharp kotlin php python scala seed7 vala java-bytecode jvm c oak linux solaris arm eclipse-editor html http mime java-server-pages motif-software android xml java-ee-version-history
+ summary Java is a general-purpose computer programming language that is concurrent, class-based, object-oriented, and specifically designed to have as few implementation dependencies as possible. It is intended to let application developers "write once, run anywhere" (WORA), meaning that compiled Java code can run on all platforms that support Java without the need for recompilation. Java applications are typically compiled to bytecode that can run on any Java virtual machine (JVM) regardless of computer architecture. As of 2016, Java is one of the most popular programming languages in use, particularly for client-server web applications, with a reported 9 million developers. Java was originally developed by James Gosling at Sun Microsystems (which has since been acquired by Oracle Corporation) and released in 1995 as a core component of Sun Microsystems' Java platform. The language derives much of its syntax from C and C++, but it has fewer low-level facilities than either of them. The original and reference implementation Java compilers, virtual machines, and class libraries were originally released by Sun under proprietary licenses. As of May 2007, in compliance with the specifications of the Java Community Process, Sun relicensed most of its Java technologies under the GNU General Public License. Others have also developed alternative implementations of these Sun technologies, such as the GNU Compiler for Java (bytecode compiler), GNU Classpath (standard libraries), and IcedTea-Web (browser plugin for applets). The latest version is Java 9, released on September 21, 2017, and is one of the two versions currently supported for free by Oracle. Versions earlier than Java 8 are supported by companies on a commercial basis; e.g. by Oracle back to Java 6 as of October 2017 (while they still "highly recommend that you uninstall" pre-Java 8 from at least Windows computers).
+ pageId 15881
+ dailyPageViews 5242
+ created 2001
+ backlinksCount 11543
+ revisionCount 7818
+ appeared 1995
+
+githubLanguage Java
+ fileExtensions java jav
+ trendingProjects
+  author name avatar url language languageColor stars forks currentPeriodStars description
+  xkcoding spring-boot-demo https://github.com/xkcoding.png https://github.com/xkcoding/spring-boot-demo Java #b07219 5022 1536 3876 "spring boot demo 是一个用来深度学习并实战 spring boot 的项目，目前总共包含 59 个集成demo，已经完成 49 个。 该项目已成功集成 actuator(监控)、admin(可视化监控)、logback(日志)、aopLog(通过AOP记录web请求日志)、统一异常处理(json级别和页面级别)、freemarker(模板引擎)、thymeleaf(模板引擎)、Beetl(模板引擎)、Enjoy(模板引擎)、JdbcTemplate(通用JDBC操作数据库)、JPA(强大的ORM框架)、mybatis(强大的ORM框架)、通用Mapper(快速操作Mybatis)、PageHelper(通用的Mybatis分页插件)、mybatis-plus(快速操作M…"
+  hope-for hope-boot https://github.com/hope-for.png https://github.com/hope-for/hope-boot Java #b07219 2706 523 1757 🌱🚀一款现代化的脚手架项目。企业开发？接外包？赚外快？还是学习？这都能满足你，居家必备，值得拥有🍻整合Springboot2，单点登陆+tk.mybatis+shiro+redis+thymeleaf+maven+swagger前后端分离接口管理+代码生成+定时任务+数据库版本管理flyway+hutool工具包，等实用技术。
+  alibaba spring-cloud-alibaba https://github.com/alibaba.png https://github.com/alibaba/spring-cloud-alibaba Java #b07219 8811 2415 1176 "Spring Cloud Alibaba provides a one-stop solution for application development for the distributed solutions of Alibaba middleware."
+  elunez eladmin https://github.com/elunez.png https://github.com/elunez/eladmin Java #b07219 3080 1123 744 "项目基于 Spring Boot 2.1.0 、 Jpa、 Spring Security、redis、Vue的前后端分离的后台管理系统，项目采用分模块开发方式， 权限控制采用 RBAC，支持数据字典与数据权限管理，支持一键生成前后端代码，支持动态路由"
+  zhoutaoo SpringCloud https://github.com/zhoutaoo.png https://github.com/zhoutaoo/SpringCloud Java #b07219 1237 666 345 基于SpringCloud2.0的微服务开发脚手架，整合了spring-security-oauth2、apollo、eureka、feign、hystrix、springcloud-gateway、springcloud-bus等。治理方面引入elasticsearch、skywalking、springboot-admin、zipkin等，让项目开发快速进入业务开发，而不需过多时间花费在架构搭建上。持续更新中
+  b3log solo https://github.com/b3log.png https://github.com/b3log/solo Java #b07219 11000 3050 1605 "🎸 一款小而美的博客系统，专为程序员设计。"
+  2227324689 gpmall https://github.com/2227324689.png https://github.com/2227324689/gpmall Java #b07219 1404 531 1387 【咕泡学院实战项目】-基于SpringBoot+Dubbo构建的电商平台-微服务架构、商城、电商、微服务、高并发、kafka、Elasticsearch
+  justauth JustAuth https://github.com/justauth.png https://github.com/justauth/JustAuth Java #b07219 4025 635 2866 "💯 史上最全的整合第三方登录的开源库。目前已支持Github、Gitee、微博、钉钉、百度、Coding、腾讯云开发者平台、OSChina、支付宝、QQ、微信、淘宝、Google、Facebook、抖音、领英、小米、微软、今日头条、Teambition、StackOverflow、Pinterest、人人、华为、企业微信、酷家乐和Gitlab等第三方平台的授权登录。 Login, so easy!"
+  seaswalker spring-analysis https://github.com/seaswalker.png https://github.com/seaswalker/spring-analysis Java #b07219 4014 1560 1136 Spring源码阅读
+  dengyuhan magnetW https://github.com/dengyuhan.png https://github.com/dengyuhan/magnetW Java #b07219 2748 571 1857 "磁力搜网页版 - 磁力链接聚合搜索 - https://bt.biedian.me"
+  frank-lam fullstack-tutorial https://github.com/frank-lam.png https://github.com/frank-lam/fullstack-tutorial Java #b07219 5473 1193 991 "🚀 fullstack tutorial 2019，后台技术栈/架构师之路/全栈开发社区，春招/秋招/校招/面试"
+  Angel-ML angel https://github.com/Angel-ML.png https://github.com/Angel-ML/angel Java #b07219 5174 1295 941 "A Flexible and Powerful Parameter Server for large-scale machine learning"
+  alibaba COLA https://github.com/alibaba.png https://github.com/alibaba/COLA Java #b07219 1054 348 314 "Clean Object-oriented & Layered Architecture"
+  apache skywalking https://github.com/apache.png https://github.com/apache/skywalking Java #b07219 10224 2942 742 "APM, Application Performance Monitoring System"
+  hollischuang toBeTopJavaer https://github.com/hollischuang.png https://github.com/hollischuang/toBeTopJavaer Java #b07219 8122 1818 1939 "To Be Top Javaer - Java工程师成神之路"
+  Activiti Activiti https://github.com/Activiti.png https://github.com/Activiti/Activiti Java #b07219 5681 4712 180 "Activiti is a light-weight workflow and Business Process Management (BPM) Platform targeted at business people, developers and system admins. Its core is a super-fast and rock-solid BPMN 2 process engine for Java. It's open-source and distributed under the Apache license. Activiti runs in any Java application, on a server, on a cluster or in the…"
+  MisterBooo LeetCodeAnimation https://github.com/MisterBooo.png https://github.com/MisterBooo/LeetCodeAnimation Java #b07219 39935 6812 3065 "Demonstrate all the questions on LeetCode in the form of animation.（用动画的形式呈现解LeetCode题目的思路）"
+  flowable flowable-engine https://github.com/flowable.png https://github.com/flowable/flowable-engine Java #b07219 2141 867 126 "A compact and highly efficient workflow and Business Process Management (BPM) platform for developers, system admins and business users."
+  ZXZxin ZXBlog https://github.com/ZXZxin.png https://github.com/ZXZxin/ZXBlog Java #b07219 3358 865 333 记录各种学习笔记(算法、Java、数据库、并发......)
+  CymChad BaseRecyclerViewAdapterHelper https://github.com/CymChad.png https://github.com/CymChad/BaseRecyclerViewAdapterHelper Java #b07219 18176 3805 361 "BRVAH:Powerful and flexible RecyclerAdapter"
+  crossoverJie cim https://github.com/crossoverJie.png https://github.com/crossoverJie/cim Java #b07219 3769 1134 278 "📲cim(cross IM) 适用于开发者的分布式即时通讯系统"
+  cabaletta baritone https://github.com/cabaletta.png https://github.com/cabaletta/baritone Java #b07219 961 273 308 "google maps for block game"
+  macrozheng mall-learning https://github.com/macrozheng.png https://github.com/macrozheng/mall-learning Java #b07219 2149 965 719 "mall学习教程，架构、业务、技术要点全方位解析。mall项目（20k+star）是一套电商系统，使用现阶段主流技术实现。 涵盖了SpringBoot2.1.3、MyBatis3.4.6、Elasticsearch6.2.2、RabbitMQ3.7.15、Redis3.2、Mongodb3.2、Mysql5.7等技术，采用Docker容器化部署。"
+  keycloak keycloak https://github.com/keycloak.png https://github.com/keycloak/keycloak Java #b07219 4386 2167 199 "Open Source Identity and Access Management For Modern Applications and Services"
+  hankcs HanLP https://github.com/hankcs.png https://github.com/hankcs/HanLP Java #b07219 14671 4174 518 "自然语言处理 中文分词 词性标注 命名实体识别 依存句法分析 新词发现 关键词短语提取 自动摘要 文本分类聚类 拼音简繁"
+ trendingProjectsCount 26
+ type programming
+ aceMode java
+ codemirrorMode clike
+ codemirrorMimeType text/x-java
+ tmScope source.java
+ repos 11529980
+githubBigQuery Java
+ repos 369548
+ users 216933
+
+antlr https://github.com/antlr/grammars-v4/tree/master/java
+monaco java
+pygmentsHighlighter Java
+ filename jvm.py
+ fileExtensions java
+linguistGrammarRepo https://github.com/textmate/java.tmbundle
+ firstCommit 2004
+ lastCommit 2018
+ committerCount 21
+ commitCount 283
+ sampleCount 9
+ example
+  /**
+   *   Copyright (c) Rich Hickey. All rights reserved.
+   *   The use and distribution terms for this software are covered by the
+   *   Eclipse Public License 1.0 (http://opensource.org/licenses/eclipse-1.0.php)
+   *   which can be found in the file epl-v10.html at the root of this distribution.
+   *   By using this software in any fashion, you are agreeing to be bound by
+   * 	 the terms of this license.
+   *   You must not remove this notice, or any other, from this software.
+   **/
+  
+  /* rich Apr 19, 2008 */
+  
+  package clojure.lang;
+  
+  import java.lang.ref.Reference;
+  import java.math.BigInteger;
+  import java.util.Map;
+  import java.util.concurrent.ConcurrentHashMap;
+  import java.lang.ref.SoftReference;
+  import java.lang.ref.ReferenceQueue;
+  
+  public class Util{
+  static public boolean equiv(Object k1, Object k2){
+  	if(k1 == k2)
+  		return true;
+  	if(k1 != null)
+  		{
+  		if(k1 instanceof Number && k2 instanceof Number)
+  			return Numbers.equal((Number)k1, (Number)k2);
+  		else if(k1 instanceof IPersistentCollection || k2 instanceof IPersistentCollection)
+  			return pcequiv(k1,k2);
+  		return k1.equals(k2);
+  		}
+  	return false;
+  }
+  
+  static public boolean equiv(long k1, long k2){
+  	return k1 == k2;
+  }
+  
+  static public boolean equiv(Object k1, long k2){
+  	return equiv(k1, (Object)k2);
+  }
+  
+  static public boolean equiv(long k1, Object k2){
+  	return equiv((Object)k1, k2);
+  }
+  
+  static public boolean equiv(double k1, double k2){
+  	return k1 == k2;
+  }
+  
+  static public boolean equiv(Object k1, double k2){
+  	return equiv(k1, (Object)k2);
+  }
+  
+  static public boolean equiv(double k1, Object k2){
+  	return equiv((Object)k1, k2);
+  }
+  
+  static public boolean equiv(boolean k1, boolean k2){
+  	return k1 == k2;
+  }
+  
+  static public boolean equiv(Object k1, boolean k2){
+  	return equiv(k1, (Object)k2);
+  }
+  
+  static public boolean equiv(boolean k1, Object k2){
+  	return equiv((Object)k1, k2);
+  }
+  
+  static public boolean equiv(char c1, char c2) {
+      return c1 == c2;
+  }
+  
+  static public boolean pcequiv(Object k1, Object k2){
+  	if(k1 instanceof IPersistentCollection)
+  		return ((IPersistentCollection)k1).equiv(k2);
+  	return ((IPersistentCollection)k2).equiv(k1);
+  }
+  
+  static public boolean equals(Object k1, Object k2){
+  	if(k1 == k2)
+  		return true;
+  	return k1 != null && k1.equals(k2);
+  }
+  
+  static public boolean identical(Object k1, Object k2){
+  	return k1 == k2;
+  }
+  
+  static public Class classOf(Object x){
+  	if(x != null)
+  		return x.getClass();
+  	return null;
+  }
+  
+  static public int compare(Object k1, Object k2){
+  	if(k1 == k2)
+  		return 0;
+  	if(k1 != null)
+  		{
+  		if(k2 == null)
+  			return 1;
+  		if(k1 instanceof Number)
+  			return Numbers.compare((Number) k1, (Number) k2);
+  		return ((Comparable) k1).compareTo(k2);
+  		}
+  	return -1;
+  }
+  
+  static public int hash(Object o){
+  	if(o == null)
+  		return 0;
+  	return o.hashCode();
+  }
+  
+  static public int hasheq(Object o){
+  	if(o == null)
+  		return 0;
+  	if(o instanceof Number)
+  		return Numbers.hasheq((Number)o);
+  	else if(o instanceof IHashEq)
+  		return ((IHashEq)o).hasheq();
+  	return o.hashCode();
+  }
+  
+  static public int hashCombine(int seed, int hash){
+  	//a la boost
+  	seed ^= hash + 0x9e3779b9 + (seed << 6) + (seed >> 2);
+  	return seed;
+  }
+  
+  static public boolean isPrimitive(Class c){
+  	return c != null && c.isPrimitive() && !(c == Void.TYPE);
+  }
+  
+  static public boolean isInteger(Object x){
+  	return x instanceof Integer
+  			|| x instanceof Long
+  	        || x instanceof BigInt
+  			|| x instanceof BigInteger;
+  }
+  
+  static public Object ret1(Object ret, Object nil){
+  		return ret;
+  }
+  
+  static public ISeq ret1(ISeq ret, Object nil){
+  		return ret;
+  }
+  
+  static public <K,V> void clearCache(ReferenceQueue rq, ConcurrentHashMap<K, Reference<V>> cache){
+  		//cleanup any dead entries
+  	if(rq.poll() != null)
+  		{
+  		while(rq.poll() != null)
+  			;
+  		for(Map.Entry<K, Reference<V>> e : cache.entrySet())
+  			{
+              Reference<V> val = e.getValue();
+  			if(val != null && val.get() == null)
+  				cache.remove(e.getKey(), val);
+  			}
+  		}
+  }
+  
+  static public RuntimeException runtimeException(String s){
+  	return new RuntimeException(s);
+  }
+  
+  static public RuntimeException runtimeException(String s, Throwable e){
+  	return new RuntimeException(s, e);
+  }
+  
+  /**
+   * Throw even checked exceptions without being required
+   * to declare them or catch them. Suggested idiom:
+   * <p>
+   * <code>throw sneakyThrow( some exception );</code>
+   */
+  static public RuntimeException sneakyThrow(Throwable t) {
+      // http://www.mail-archive.com/javaposse@googlegroups.com/msg05984.html
+  	if (t == null)
+  		throw new NullPointerException();
+  	Util.<RuntimeException>sneakyThrow0(t);
+  	return null;
+  }
+  
+  @SuppressWarnings("unchecked")
+  static private <T extends Throwable> void sneakyThrow0(Throwable t) throws T {
+  	throw (T) t;
+  }
+  
+  }
+  
+  
+languageServerProtocolProject https://github.com/georgewfraser/vscode-javac
+ writtenIn java
+
+projectEuler Java
+ memberCount
+  2019 27921
+  2022 29675
+helloWorldCollection Java
+ // Hello World in Java
+ 
+ class HelloWorld {
+   static public void main( String args[] ) {
+     System.out.println( "Hello World!" );
+   }
+ }
+ 
+leachim6 Java
+ filepath j/Java.java
+ fileExtensions java
+ example
+  public class Java {
+  	public static void main(String[] args) {
+  		System.out.println("Hello World");
+  	}
+  }
+  
+rosettaCode http://www.rosettacode.org/wiki/Category:Java
+quineRelay Java
+
+compilerExplorer Java
+ example
+  // Type your code here, or load an example.
+  class Square {
+      static int square(int num) {
+          return num * num;
+      }
+  }
+rijuRepl https://riju.codes/java
+ example
+  public class Main {
+      public static void main(String[] args) {
+          System.out.println("Hello, world!");
+      }
+  }
+  
+replit https://repl.it/languages/java
+
+indeedJobs java engineer
+ 2017 32645
+linkedInSkill java
+ 2018 5256079
+stackOverflowSurvey
+ 2021
+  users 29162
+  medianSalary 51888
+  fans 17222
+  percentageUsing 0.35
+officialBlogUrl https://blogs.oracle.com/java/
+eventsPageUrl https://dev.java/community/events/
+downloadPageUrl https://www.oracle.com/java/technologies/downloads/
+
+subreddit https://reddit.com/r/java
+ memberCount
+  2017 77297
+  2022 266613
+meetup https://www.meetup.com/topics/java
+ memberCount 1162766
+ groupCount 2090
+
+tiobe Java
+ currentRank 3
+hopl https://hopl.info/showlanguage.prx?exp=2131
+pypl Java
+
+packageRepository https://search.maven.org/
+packageRepository https://mvnrepository.com/popular
+
+twitter https://twitter.com/java
+ubuntuPackage openjdk-8-jdk
+jupyterKernel https://github.com/SpencerPark/IJava
+fileType text
+wordRank 1489
+isOpenSource true
+
+goodreads
+ title|year|author|goodreadsId|rating|ratings|reviews
+ Effective Java Programming Language Guide|2001|Joshua Bloch|101316|4.48|5484|299
+
+isbndb 400
+ year|publisher|title|authors|isbn13
+ 2017|Pearson|Java Software Solutions|Lewis, John and Loftus, William|9780134462028
+ 2011|Pearson|Data Structures and Other Objects Using Java|Main, Michael|9780132576246
+ 2013|Pearson|Building Java Programs (3rd Edition)|Reges, Stuart and Stepp, Marty|9780133360905
+ 2009|McGraw-Hill Education|Java Programming: From The Ground Up|Ralph Bravaco and Shai Simonson|9780073523354
+ 2011|Pearson|Java Software Solutions: Foundations of Program Design|Lewis, John and Loftus, William|9780132149181
+ 2014|O'Reilly Media|Java in a Nutshell: A Desktop Quick Reference|Evans, Benjamin J and Flanagan, David|9781449370824
+ 2003|Pearson|C++ for Java Programmers|Weiss, Mark|9780139194245
+ 2013|Cengage Learning|Java Programming|Farrell, Joyce|9781285081953
+ 2014|Manning Publications|Java 8 in Action: Lambdas, Streams, and functional-style programming|Urma, Raoul-Gabriel and Fusco, Mario and Mycroft, Alan|9781617291999
+ 2006|Pearson|Thinking in Java|Eckel, Bruce|9780131872486
+ 2017|Mike Murach & Associates|Murach's Java Programming (5th Edition)|Joel Murach|9781943872077
+ 2012|Pearson|Absolute Java (5th Edition)|Savitch, Walter and Mock, Kenrick|9780132830317
+ 2005|Pearson|Data Structures and Algorithms in Java|Drake, Peter|9780131469143
+ 2009|Wiley|Big Java: Compatible with Java 5, 6 and 7|Horstmann, Cay S.|9780470509487
+ 2017|Pearson|Java How to Program, Early Objects (Deitel: How to Program)|Deitel, Paul and Deitel, Harvey|9780134743356
+ 2014|Pearson|Introduction to Java Programming, Comprehensive Version plus MyLab Programming with Pearson eText -- Access Card Package (10th Edition)|Liang, Y. Daniel|9780133813463
+ 2000|Pearson|C for Java Programmers|Muldner, Tomasz|9780201702798
+ 2002|Sams|Sams Teach Yourself Java 2 in 24 Hours (3rd Edition) (Sams Teach Yourself...in 24 Hours (Paperback))|Cadenhead, Rogers|9780672324604
+ 2012|Wiley|Java Concepts: Early Objects|Horstmann, Cay S.|9781118431122
+ 2013|O'Reilly Media|RESTful Java with JAX-RS 2.0: Designing and Developing Distributed Web Services|Burke, Bill|9781449361341
+ 2005|Wiley|Java Concepts|Horstmann, Cay S.|9780471697046
+ 2014|Sybex|OCA: Oracle Certified Associate Java SE 8 Programmer I Study Guide: Exam 1Z0-808|Boyarsky, Jeanne and Scott Selikoff|9781118957400
+ 2014|Pearson|Intro to Java Programming, Comprehensive Version, Student Value Edition (10th Edition)|Liang, Y. Daniel|9780133593495
+ 2008|McGraw-Hill Science/Engineerin|Introduction to Programming with Java A Problem Solving Approach|John S. Dean and Raymond H. Dean|9780073047027
+ 2007|Wiley|Java Concepts for AP Computer Science|Horstmann, Cay S.|9780470181607
+ 2007|Cengage Learning|Java Programming Lab Manual: From Problem Analysis To Program Design, 3rd Edition|Mayfield, Blayne|9781423901884
+ 2004|O'Reilly Media|Java Threads: Understanding and Mastering Concurrent Programming|Scott Oaks and Henry Wong|9780596007829
+ 2005|Cengage Learning|Java Programming: Program Design Including Data Structures|Malik, D. S.|9781418835408
+ 2009|Prentice Hall|Java How to Program: Late Objects Version|Deitel, Paul|9780136123712
+ 2012|Prentice Hall|Introduction to Java Programming, Comprehensive Version Plus Myprogramminglab with Pearson Etext -- Access Card Package|Liang, Y Daniel|9780133050578
+ 08/24/2012|O'Reilly Media, Inc.|Java in a Nutshell|Flanagan, David|9780596007737
+ 2014|Pearson|Introduction to Java Programming, Brief Version Plus MyLab Programming with Pearson eText -- Access Card Package (10th Edition)|Liang, Y. Daniel|9780133813487
+ 2014|O'Reilly Media|Java 8 Lambdas: Functional Programming For The Masses|Warburton, Richard|9781449370770
+ 2013|O'Reilly Media|Java Network Programming|Harold, Elliotte Rusty|9781449357672
+ 2012|McGraw Hill|Java Programming: A Comprehensive Introduction|Schildt, Herbert and Skrien, Dale|9780078022074
+ 2004|Pearson|Addison-Wesley's Java Backpack Reference Guide|DePasquale, Peter|9780321304278
+ 2002|Manning|Bitter Java|Tate, Bruce A.|9781930110434
+ 2008|Pearson|Programming with Alice and Java|Lewis, John and DePasquale, Peter|9780321512093
+ 2006|Lulu.com|Java by Dissection|McDowell, Charlie|9781411652385
+ 2011|McGraw-Hill Education|Java The Complete Reference, 8th Edition|Schildt, Herbert|9780071606301
+ 2001|O'Reilly Media|Java Security (2nd Edition)|Oaks, Scott|9780596001575
+ 1996|Addison-Wesley Pub (Sd)|The Java Programming Language|Arnold, Ken and Gosling, James|9780201634556
+ 1998|O'Reilly Media|Java Swing (Java (O'Reilly))|Eckstein, Robert and Loy, Marc and Wood, Dave|9781565924550
+ 2002|Jones & Bartlett Learning|Fundamentals Of Computer Science Using Java|Hughes, David|9780763717612
+ 2017|Packt Publishing|Programming Kotlin: Get to grips quickly with the best Java alternative|Samuel, Stephen and Bocutiu, Stefan|9781787126367
+ 2017|Mercury Learning & Information|Computer Graphics Programming in OpenGL with Java|Gordon, V. Scott and Clevenger, John L.|9781683920274
+ 2016|Pearson|Building Java Programs: A Back to Basics Approach Plus MyLab Programming with Pearson eText -- Access Card Package|Reges, Stuart and Stepp, Marty|9780134448305
+ 2002|McGraw-Hill Osborne Media|Java 2: The Complete Reference, Fifth Edition|Schildt, Herbert|9780072224207
+ 2005|For Dummies|Beginning Programming with Java For Dummies|Burd, Barry A.|9780764588747
+ 2016|Packt Publishing|Neural Network Programming with Java: Create and unleash the power of neural networks by implementing professional Java code|Souza, Alan M.F. and Soares, Fabio M.|9781785880902
+ 2003|Prentice Hall|Object-Oriented Software Engineering: Using UML, Patterns and Java (2nd Edition)|Bruegge, Bernd and Dutoit, Allen H.|9780130471109
+ 1997|Addison-Wesley|The Java Programming Language (Java Series)|Arnold, Ken and Gosling, James|9780201310061
+ 2006|Wiley|Operating System Concepts with Java|Silberschatz, Abraham and Galvin, Peter B. and Gagne, Greg|9780471769071
+ 2012|O'Reilly Media|Programming Android: Java Programming for the New Generation of Mobile Devices|Mednieks, Zigurd and Dornin, Laird and Meike, G. Blake and Nakamura, Masumi|9781449316648
+ 2010|O'Reilly Media|Java: The Good Parts: Unearthing the Excellence in Java|Waldo, Jim|9780596803735
+ 1997|Butterworth-Heinemann|Software Development for Engineers, C/C++, Pascal, Assembly, Visual Basic, HTML, Java Script, Java DOS, Windows NT, UNIX|Buchanan, William|9780340700143
+ 2012|McGraw Hill|Java Programming (Oracle Press)|Sarang, Poornachandra|9780071633604
+ 2017|Pearson|Introduction to Java Programming and Data Structures, Comprehensive Version, Student Value Edition Plus MyLab Programming with Pearson eText - Access Card Package|Liang, Y. Daniel|9780134756431
+ 1999|O'Reilly Media|Java I/O (Java Series)|Harold, Elliotte Rusty|9781565924857
+ 2005|Addison-Wesley Professional|Java Puzzlers: Traps, Pitfalls, and Corner Cases|Bloch, Joshua and Gafter, Neal|9780321336781
+ 2004|Springer|Multimedia Introduction to Programming Using Java|Gries, David and Gries, Paul|9780387226811
+ 2002|Apress|Bug Patterns In Java|Allen, Eric|9781590590614
+ 2020|Sybex|OCP Oracle Certified Professional Java SE 11 Developer Complete Study Guide: Exam 1Z0-815, Exam 1Z0-816, and Exam 1Z0-817|Boyarsky, Jeanne and Selikoff, Scott|9781119619130
+ 1997|McGraw-Hill Osborne Media|Java Programmer's Reference|Schildt, Herbert and O'Neil, Joe|9780078823688
+ 2002|Sams|Java for the Web With Servlets, Jsp, and Ejb: A Developer's Guide to Scalable Solutions|Kurniawan, Budi|9780735711952
+ 2007|John Wiley and Sons|Java Concepts, Compatible with Java 5 and 6, 5th Edition|Horstmann, Cay S.|9780470105559
+ 2014|Pearson|MyLab Programming with Pearson eText -- Access Card -- for Intro to Java Programming, Comprehensive Version, 10/e|Liang, Y. and Liang, Y. Daniel|9780133762518
+ 2003|Course Technology|Data Structures Using Java|Malik, D. S.|9780619159504
+ 2010|Pearson Education|Introduction to Java Programming, Comprehensive: International Edition|Liang|9780132472753
+ 2006|Wiley|Concurrency: State Models and Java Programs|Magee, Jeff and Kramer, Jeff|9780470093559
+ 2000|O'Reilly Media|Learning Java (Java Series)|Knudsen, Jonathan and Niemeyer, Patrick|9781565927186
+ 2014|Pragmatic Bookshelf|Functional Programming in Java: Harnessing the Power Of Java 8 Lambda Expressions|Subramaniam, Venkat|9781937785468
+ 2005|Cengage Learning|Java Programming: Introductory Concepts and Techniques (Available Titles Skills Assessment Manager (SAM) - Office 2010)|Shelly, Gary B. and Cashman, Thomas J. and Starks, Joy L.|9781418859831
+ 2014|Addison-Wesley Professional|Java Language Specification, Java SE 8 Edition, The (Java Series)|Gosling, James and Joy, Bill and Steele Jr., Guy and Bracha, Gilad and Buckley, Alex|9780133900699
+ 2007|Chapman and Hall/CRC|A Practical Guide to Data Structures and Algorithms using Java (Chapman & Hall/CRC Applied Algorithms and Data Structures series)|Goldman, Sally. A and Goldman, Kenneth. J|9781584884552
+ 2015|DT EDITORIAL SERVICES|Java 8 Programming: Black Book|WILEY INDIA and WILEY INDIA and WILEY INDIA|9789351197584
+ 2011|Wrox|Java Programming 24-Hour Trainer|Fain, Yakov|9780470889640
+ 2004|Prentice Hall|Just Java 2 (6th Edition)|van der Linden, Peter|9780131482111
+ 2020|O'Reilly Media|Learning Java: An Introduction to Real-World Programming with Java|Loy, Marc and Niemeyer, Patrick and Leuck, Daniel|9781492056270
+ 1999|Sams|Java Thread Programming|Hyde, Paul|9780672315855
+ 2014|Apress|Beginning Java 8 APIs, Extensions and Libraries: Swing, JavaFX, JavaScript, JDBC and Network Programming APIs (Expert's Voice in Java)|Sharan, Kishori|9781430266617
+ 2003|Cambridge University Press|Java Frameworks and Components: Accelerate Your Web Application Development|Nash, Michael|9780521520591
+ 2001|Addison-Wesley Professional|Building Parsers with Java|Metsker, Steven John Metsker|9780201719628
+ 1996|Addison-Wesley|The Java Class Libraries: An Annotated Reference (Java Series) (v. 1)|Chan, Patrick and Lee, Rosanna|9780201634587
+ 2000|McGraw-Hill|Java 2 Programmer's Reference|ONeil, Joseph|9780072123548
+ 2007|Springer|Java for Bioinformatics and Biomedical Applications|Bal, Harshawardhan and Hujol, Johnny|9780387372372
+ 20130312|Springer Nature|Java kompakt|Matthias Hölzl; Allaithy Raed; Martin Wirsing|9783642285042
+ 2017|No Starch Press|Learn Java the Easy Way: A Hands-On Introduction to Programming|Payne, Bryson|9781593278052
+ 2018|Cengage Learning|Bundle: Java Programming, Loose-Leaf Version, 9th + MindTap Programming, 1 term (6 months) Printed Access Card|Farrell, Joyce|9781337756280
+ 20080514|O'Reilly Media, Inc.|Java Web Services: Up and Running|Kalin, Martin|9780596521127
+ 2012|O'Reilly Media|Clojure Programming: Practical Lisp for the Java World|Emerick, Chas and Carper, Brian and Grand, Christophe|9781449394707
+ 2011|Wiley-IEEE Press|Practical Database Programming with Java|Bai, Ying|9780470889404
+ 2015|Wrox|Java Programming: 24-Hour Trainer|Fain, Yakov|9781118951453
+ 2009|McGraw-Hill Higher Education|An Introduction to Object-Oriented Programming with Java|Wu, C. Thomas|9780071283687
+ 2007|McGraw-Hill Science/Engineering/Math|A Comprehensive Introduction to Object-Oriented Programming with Java|Wu, C|9780073317083
+ 2014|Pearson|MyLab Programming with Pearson eText -- Access Code Card -- for Java Software Solutions: Foundations of Program Design|Lewis, John and Lewis, John and Loftus, William|9780133781281
+ 2004|O'Reilly Media|Java Network Programming, Third Edition|Harold, Elliotte Rusty|9780596007218
+ 2000|Addison-Wesley|The Real-Time Specification for Java|Gosling, James and Bollella, Greg and Dibble, Peter and Furr, Steve and Turnbull, Mark|9780201703238
+ 1996|Waite Group Pr|Black Art of Java Game Programming|Fan, Joel and Tenitchi, Calin and Ries, Eric|9781571690432
+ 2000|Addison-Wesley|Advanced Programming for the Java 2 Platform|Austin, Calvin and Pawlan, Monica|9780201715019
+ 2000|Cambridge University Press|Fundamentals of OOP and Data Structures in Java|Wiener, Richard and Pinson, Lewis J.|9780521662208
+ 2017|For Dummies|Java For Dummies (For Dummies (Computers))|Burd, Barry|9781119235552
+ 2008|Pragmatic Bookshelf|Programming Groovy: Dynamic Productivity for the Java Developer (Pragmatic Programmers)|Subramaniam, Venkat|9781934356098
+ 2008|CRC Press|Java Programming Fundamentals: Problem Solving Through Object Oriented Analysis and Design|Nair, Premchand S.|9781420065473
+ 2004|McGraw-Hill Education|Java Demystified|Keogh, Jim|9780072254549
+ 2008|Prentice Hall|Introduction to Java Programming|Liang, Y. Daniel|9780136042587
+ 1997|Cambridge University Press|Modern Compiler Implementation in Java|Appel, Andrew W.|9780521583886
+ 2004|Prentice Hall|Small Java How To Program|Deitel, Harvey M. and Deitel, Paul J.|9780131486607
+ 2017|Manning Publications|Functional Programming in Java: How functional techniques improve your Java programs|Saumont, Pierre-Yves|9781617292736
+ 1999|Wiley|Mastering Enterprise JavaBeans and the Java 2 Platform, Enterprise Edition|Roman, Ed|9780471332299
+ 2003|Jones & Bartlett Publishers|Programming and Problem Solving with Java|Dale, Nell B. and Chip Weems and Mark R. Headington|9780763704902
+ 1996|Ventana Pr|Java Programming For The Internet: A Guide To Creating Dynamic, Interactive Internet Applications|Pratik R. Patel and Alan D. Hudson and Donald A. Ball|9781566043557
+ 2002|McGraw-Hill/OsborneMedia|Java Servlets Developer's Guide|Karl Moss and Michael Mueller and Lyssa Wald|9780072222623
+ 2019|Pearson|Mylab Programming with Pearson Etext -- Access Card -- For Introduction to Java Programming and Data Structures, Comprehensive Version|Liang, Y. Daniel|9780134672816
+ 2004|Morgan Kaufmann|Java Cryptography Extensions: Practical Guide for Programmers (The Practical Guides)|Weiss, Jason R.|9780127427515
+ 2001|O'Reilly Media|Java Programming with Oracle JDBC|Bales, Donald|9780596000882
+ 2004|Prentice Hall|Java Application Development on Linux|Albing, Carl|9780131436978
+ 2006|Jones & Bartlett Learning|Java Web Development Illuminated (Jones and Bartlett Illuminated (Paperback))|Qian, Kai|9780763734237
+ 2000|Que Pub|Platinum Edition Using Xhtml, Xml and Java 2|O'Donnell, Jim|9780789724731
+ 1996|Addison-Wesley|Hooked on Java: Creating Hot Web Sites With Java Applets|Van Hoff, Arthur and Shaio, Sami and Starbuck, Orca and Sun Microsystems, Inc.|9780201488371
+ 2012||Java Programming: A Comprehensive 1st Skrien|Herbert Schildt, Dale John Skrien|9780071310376
+ 1996|Addison-wesley Pub. Co.|Hooked On Java: Creating Hot Web Sites With Java Applets|Van Hoff, Arthur.|9780201852745
+ 2010|Apress|The Definitive Guide to Jython: Python for the Java Platform (Expert's Voice in Software Development)|Juneau, Josh and Baker, Jim and Wierzbicki, Frank and Soto Muoz, Leo and Ng, Victor and Ng, Alex and Baker, Donna L.|9781430225270
+ 1999|Wiley|Concurrency: State Models & Java Programs|Magee, Jeff and Kramer, Jeff|9780471987109
+ 2021|Oxford University Press|Programming in Java|Sachin Malhotra,Saurabh Chaudhary|9780198094852
+ 2002|O'Reilly Media|Learning Wireless Java|Qusay Mahmoud|9780596002435
+ 2007|Addison Wesley|Java Foundations: Introduction to Program Design and Data Structures|Lewis, John and DePasquale, Peter and Chase, Joseph|9780321429728
+ 2006|Springer|An Introduction to Network Programming with Java|Graba, Jan|9781846283802
+ 1997|O'Reilly Media|Java Virtual Machine (Java Series)|Downing, Troy and Meyer, Jon|9781565921948
+ 2002|Course Technology|Object-Oriented Application Development Using Java|Doke, E. Reed and Satzinger, John W. and Rebstock Williams, Susan|9780619035655
+ 2005|Lawrenceville Pr|A Guide To Programming in Java: Java 2 Platform Standard Edition 5|Brown, Beth|9781580030717
+ 2004|Wrox|Professional Java Tools for Extreme Programming: Ant, XDoclet, JUnit, Cactus, and Maven|Hightower, Richard and Onstine, Warner and Visan, Paul and Payne, Damon and Gradecki, Joseph D.|9780764556173
+ 2019|Pearson|Building Java Programs, Student Value Edition|Reges, Stuart and Stepp, Marty|9780135472118
+ 1999|Sams|Java 2 for Professional Developers|Morgan, Michael|9780672316975
+ 1999|Manning Publications|Java Network Programming, 2nd Edition|Hughes, Merlin and Hamner, Derek and Hughes, Merlin|9781884777493
+ 2007|Course Technology|Modern Software Development Using Java|Tymann, Paul T. and Schneider, G.Michael|9781423901235
+ 2002|O'Reilly Media|Java Management Extensions: Managing Java Applications with JMX|J. Steven Perry|9780596002459
+ 2014|Pearson|MyLab Programming with Pearson eText -- Access Card -- for Intro to Java Programming, Brief Version|Liang, Y. Daniel|9780133592689
+ 2004|Prentice Hall|Java Transaction Processing (Hewlett-Packard Professional Books): Design and Implementation|Mark Little and Jon Maron and Greg Pavlik and Jonathan Maron|9780130352903
+ 2003|IBM Press|Enterprise Java Programming with IBM WebSphere (2nd Edition)|Brown, Kyle and Craig, Gary and Hester, Greg and Pitt, David and Stinehour, Russell and Weitzel, Mark and Amsden, Jim and Jakab, Peter M. and Berg, Daniel|9780321185792
+ 2004|O'Reilly Media|Hardcore Java|Robert Simmons|9780596005689
+ 1999|Addison Wesley|Introduction to Programming Using Java: An Object-Oriented Approach: Java 2 Update|Arnow, David and Weiss, Gerald|9780201612721
+ 2009|Cengage Learning|Java Programming|Farrell, Joyce|9780324599510
+ 1997|O'Reilly Media|Java in a Nutshell: A Desktop Quick Reference for Java Programmers (In a Nutshell (O'Reilly))|Flanagan, David|9781565922624
+ 2007|Cengage Learning PTR|Beginning Java Game Programming Second Edition|Harbour, Jonathan S.|9781598634761
+ 2001|Prentice Hall Ptr|Java 3D API Jump-Start|Aaron E. Walsh and Doug Gehringer|9780130340764
+ 1999|Prentice Hall|Java 2 Programmer's Interactive Workbook|Chu, Kevin and Brower, Eric|9780130166388
+ 2005|Wiley-Interscience|Modern Multithreading : Implementing, Testing, and Debugging Multithreaded Java and C++/Pthreads/Win32 Programs|Carver, Richard H. and Tai, Kuo-Chung|9780471725046
+ 2015|Apress|Pro Java 8 Programming|Brett Spell, Terrill|9781484206423
+ 2006|Pragmatic Bookshelf|From Java to Ruby: Things Every Manager Should Know (Pragmatic Programmers)|Tate, Bruce A.|9780976694090
+ 2011|Addison-Wesley Professional|Starting Out with Java: From Control Structures Through Data Structures with Java Integrated Development Environment Resource Kit|Gaddis, Tony and Muganda, Godfrey|9780132757638
+ 1999|Springer|Essential Java 2 fast: How to develop applications and applets with Java 2 (Essential Series)|Cowell, John|9781852330712
+ 2008|Apress|Practical API Design: Confessions of a Java Framework Architect|Tulach, Jaroslav|9781430209737
+ 2003|For Dummies|Beginning Programming with Java For Dummies (For Dummies (Computers))|Burd, Barry A.|9780764526466
+ 2000|Coriolis Group|Java Black Book: The Java Book Programmers Turn To First|Holzner, Steven|9781576105313
+ 20200417|Pearson Education (US)|Introduction to Java Programming and Data Structures, Comprehensive Version|Y. Daniel Liang|9780136801504
+ 2017|Pearson|Java Software Solutions, Student Value Edition Plus MyLab Programming with Pearson eText - Access Card Package|Lewis, John and Loftus, William|9780134756387
+ 1998|Wiley|Client/Server Programming with Java and CORBA, 2nd Edition|Orfali, Robert and Harkey, Dan|9780471245780
+ 2012|Packt Publishing|Oracle Certified Associate, Java SE 7 Programmer Study Guide|M. Reese Richard|9781849687324
+ 2005|John Wiley & Sons|Concurrent And Real-time Programming In Java|Andrew Wellings|9780470011270
+ 2011|Oxford University Press|Programming in JAVA|Malhotra, Sachin and Choudhary, Saurabh|9780198063582
+ 1996|IDG Books|Java for Dummies|Aaron E. Walsh|9781568846415
+ 1998|Addison-Wesley|The Java Tutorial: Object-Oriented Programming for the Internet (2nd Edition)|Campione, Mary and Walrath, Kathy|9780201310078
+ 1999|Sams|Sams Teach Yourself Java 2 in 21 Days (Teach Yourself in 21 Days Series)|Lemay, Laura and Cadenhead, Rogers|9780672316388
+ 2005|Course Technology|Java Programming|Farrell, Joyce|9780619213190
+ 2012|McGraw-Hill Education TAB|Kinect Open Source Programming Secrets: Hacking the Kinect with OpenNI, NITE, and Java|Davison, Andrew|9780071783170
+ 2003|Wiley|MySQL and Java Developer's Guide|Mark Matthews and Jim Cole and Joseph D. Gradecki|9780471269236
+ 2013|Pearson|MyProgrammingLab with Pearson eText -- Access Card -- for Building Java Programs (MyProgrammingLab (Access Codes))|Reges, Stuart and Stepp, Marty|9780133379785
+ 1999|Prentice Hall|Java for Students 1.2|Bell, Doug and Parr, Mike|9780130109224
+ 1996|John Wiley & Sons Inc|Foundations of Java Programming for the World Wide Web|Walsh, Aaron E.|9781568848112
+ 2017|O'Reilly Media|Java Pocket Guide: Instant Help for Java Programmers|Liguori, Robert and Liguori, Patricia|9781491938690
+ 2001|Prentice Hall PTR|Core Java 2, Volume II: Advanced Features (5th Edition)|Horstmann, Cay and Cornell, Gary|9780130927385
+ ||Java|In Easy Steps|9780071077101
+ 2002|Prentice Hall|Java, Java, Java Object-Oriented Problem Solving (2nd Edition)|Morelli, Ralph|9780130333704
+ 2006|Sams Publishing|Agile Java Development with Spring, Hibernate and Eclipse|Hemrajani, Anil|9780672328961
+ 2002|Syngress|Programming Lego Mindstorms with Java (With CD-ROM)|Dario Laverde and Giulio Ferrari and Jurgen Stuber|9781928994558
+ 2007|AddisonWesley Professional|Eclipse Web Tools Platform: Developing Java Web Applications|Dai, Naci|9780321396853
+ 2001|O'Reilly Media|Java Programming with Oracle SQLJ|Price, Jason|9780596000875
+ 2016|Createspace Independent Publishing Platform|Java: The Ultimate Guide To Learn Java Programming And Computer Hacking (java For Beginners, Java For Dummies, Java Apps, Hacking) (html, Javascript, ... Developers, Coding, Css, Php) (volume 2)|Peter Hoffman and Matt Benton|9781523407811
+ 2003|John Wiley &Sons|Mastering AspectJ: Aspect-Oriented Programming in Java|Gradecki, Joseph D.|9780471431046
+ 2005|Addison Wesley|Starting Out with Java 5: Control Structures to Objects|Gaddis, Tony|9781576761717
+ 2008|I. K. International Pvt Ltd|Data Structures Through Java|Muniswamy|9788189866822
+ 2001|Prentice Hall|Weaving a Website: Programming in HTML, Java Script, Perl and Java|Anderson-Freed, Susan|9780130282200
+ 2006|Prentice Hall|Introduction to Java Programming (GOAL Series)|Liang, Y Daniel|9780132237383
+ 2002|Wiley|Java the UML Way: Integrating Object-Oriented Design and Programming|Lervik, Else and Havdal, Vegard B.|9780470843864
+ 2012|Apress|Pro JavaFX 2: A Definitive Guide to Rich Clients with Java Technology|Weaver, James and Gao, Weiqi and Chin, Stephen and Iverson, Dean and Vos, Johan|9781430268727
+ 2000|O'Reilly Media|Java Network Programming (Java (O'Reilly))|Harold, Elliotte Rusty|9781565928701
+ 2003|Sybex|Java Programming 10-Minute Solutions|Watson, Mark and Sybex|9780782142853
+ 1996|Mis Pr|Java Programming Basics|Au, Edith and Makower, Dave|9781558284692
+ 2002|Wrox|Beginning Java 2|Horton, Ivor|9780764543654
+ 2015|Kidware Software|Java For Kids: NetBeans 8 Programming Tutorial|Conrod, Philip and Tylee, Lou|9781937161880
+ 2018|Mercury Learning & Information|Computer Graphics Programming in OpenGL with JAVA|Gordon, V. Scott and Clevenger, John L.|9781683922193
+ 1999|Prentice Hall Ptr|Core Java 2 , Volume 2: Advanced Features (4th Edition)|Horstmann, Cay S. and Cornell, Gary|9780130819345
+ 2012|Pearson|MyProgrammingLab with Pearson eText  --  Access Card  -- for Absolute Java (5th Edition)|Pearson Education and Mock, Kenrick|9780132846387
+ 2007|Pragmatic Bookshelf|Rails for Java Developers|Halloway, Stuart and Gehtland, Justin|9780977616695
+ 1997|Computing McGraw-Hill|Advanced Java 1.1 Programming|Rice, Jeffrey C. and Salisbury, Irving|9780079130891
+ 2020|O'Reilly Media|Programming AWS Lambda: Build and Deploy Serverless Applications with Java|Chapin, John and Roberts, Mike|9781492041054
+ 2019|Springer|Fundamentals of Java Programming|Ogihara, Mitsunori|9783030077853
+ 2020|O'Reilly Media|Quarkus Cookbook: Kubernetes-Optimized Java Solutions|Bueno, Alex Soto and Porter, Jason|9781492062653
+ 1996|Sybex Inc|Mastering Java|Phillips, Ivan and Hsu, Goang-Tay and Sankar, Krishna and Ries, Eric and Rohaly, Tim and Zukowski, John and Vanhelsuwe, Laurence|9780782119350
+ 2002|Wiley|Java Database Programming Bible|O'Donahue, John|9780764549243
+ 2009|Springer|A Concise and Practical Introduction to Programming Algorithms in Java (Undergraduate Topics in Computer Science)|Nielsen, Frank|9781848823389
+ 2006|Lawrenceville Pr|A Guide to Programming in Java: Java 2 Platform Standard Edition 5|Brown, Beth|9781580030724
+ 2002|Pearson P T R|Java Web Services: For Experienced Programmers (Deitel Developers Series)|Deitel, Harvey M. and Deitel, Paul J. and Gadzik, J. P. and Lomeli, K. and Santry, S. E. and Zhang, S.|9780130461346
+ 2013|Kidware Software|Java For Kids - A Computer Programming Tutorial|Conrod, Philip and Tylee, Lou|9781937161606
+ 2003|Charles River Media|ANT: The Java Build Tool In Practice (Programming Series)|Matzke, Bernd|9781584502487
+ 2001|Pearson|On to Java (3rd Edition)|Winston, Patrick Henry and Narasimhan, Sundar|9780201725933
+ 2003|Apress|Java Regular Expressions: Taming the java.util.regex Engine|Mehran Habibi|9781590591079
+ 2000|Apress|Professional Java Programming|Spell, Brett|9781861003829
+ 1996|Osborne Mcgraw-Hill|The Java Handbook|Naughton, Patrick|9780078821998
+ 2003|Wiley, John & Sons, Incorporated|Java Testing Patterns|Andrew Glover and Kyle Brown and Jon Thomas and Matthew Young|9780471448464
+ 2020|Payload Media|Android Studio 4.0 Development Essentials - Java Edition: Developing Android Apps Using Android Studio 4.0, Java and Android Jetpack|Smyth, Neil|9781951442224
+ 2001|Wiley|Java In Telecommunications: Solutions For Next Generation Networks|Thomas C. Jepsen and Farooq Anjum and Ravi Raj Bhat and Douglas Tait|9780471498261
+ 2007|Apress|Pro Java 6 3D Game Development: Java 3D, JOGL, JInput and JOAL APIs (Expert's Voice in Java)|Davison, Andrew|9781590598177
+ 1998|Addison-Wesley|Understanding Object-Oriented Programming With Java|Budd, Timothy|9780201308815
+ 1999|Wiley|Computing Concepts with Java 2 Essentials|Horstmann, Cay S.|9780471346098
+ 2002|Manning Publications|Java 2 Micro Edition|White, James and Hemphill, David A and Hemphill, David|9781930110335
+ 2005|Charles River Media|Java Messaging (Programming Series)|Bruno, Eric|9781584504184
+ 2000|Apress|Beginning Java 2 - Jdk 1.3 Edition (Programmer to Programmer)|Horton, Ivor|9781861003669
+ 2000|Sybex Inc|The Complete Java 2 Certification Study Guide: Programmer's and Developers Exams (With CD-ROM)|Roberts, Simon and Heller, Philip and Ernest, Michael and Heller, Philip|9780782128253
+ 2003|Prentice Hall|Information Systems Programming with Java (2nd Edition)|Staugaard, Andrew|9780131018600
+ 2017|Packt Publishing|Mastering Concurrency Programming with Java 9 - Second Edition: Fast, reactive and parallel application development|Gonzalez, Javier Fernandez|9781785887949
+ 1999|McGraw-Hill Education|Java 2: The Complete Reference|Naughton, Patrick and Schildt, Herbert|9780072132878
+ 2001|Research & Education Association|Java Super Review w/ CD-ROM (Super Reviews Study Guides)|Rea and Staff of Research & Education Association and Randall Raus and Dr. Hang Lau|9780878913800
+ 1997|O'Reilly Media|Java in a Nutshell, Deluxe Edition (In a Nutshell (O'Reilly))|Flanagan, David|9781565923041
+ 2017|Pearson|MyLab Programming with Pearson eText -- Access Code Card -- for Java How to Program, Early Objects|Deitel, Paul and Deitel, Harvey|9780134752129
+ 1996|Sams|Teach Yourself Java in 21 Days (Teach Yourself (Teach Yourself))|Lemay, Laura and Perkins, Charles L.|9781575210308
+ 2014|Pragmatic Bookshelf|Learn to Program with Minecraft Plugins: Create Flaming Cows in Java Using CanaryMod|Hunt, Andy|9781941222942
+ 2021|Sybex|OCP Java SE 11 Developer Complete Certication Kit|Boyarsky, Jeanne and Selikoff, Scott|9781119784746
+ 2009|Apress|Learn Objective-C for Java Developers (Learn Series)|Bucanek, James|9781430223696
+ 1999|Iuniverse|Principles Of Object-oriented Programming In Java 1.1|James W. Cooper|9781583482186
+ 2002|Addison-Wesley|Java Data Objects|Roos, Robin M.|9780321123800
+ 1998|O'Reilly Media|Java Cryptography (Java Series)|Knudsen, Jonathan|9781565924024
+ 1998|McGraw-Hill|Schaum's Outlines of Programming with Java|Hubbard, John R.|9780071342100
+ 2019|Apress|Practical Microservices Architectural Patterns: Event-Based Java Microservices with Spring Boot and Spring Cloud|Binildas Christudas|9781484245019
+ 2003|Que Pub|Java 2 Developer Exam Cram 2: Exam Cx-310-252A and Cx-310-027|Trottier, Alain|9780789729927
+ 1997|Prentice Hall Ptr|JAVA JUMP START: A Beginner's Guide to Internet Programming|Enete, Noel|9780135658543
+ 2002|Sams Publishing|JXTA: Java P2P Programming|Brookshier, Daniel and Govoni, Darren and Krishnan, Navaneeth and Soto, Juan|9780672323669
+ 2016|Pearson|MyLab Programming with Pearson eText -- Access Card -- for Introduction to Java Programming, AP Version (1-year access)|Liang, Y. Daniel|9780134441160
+ 2018|CreateSpace Independent Publishing Platform|Java: Simple Beginner’s Guide to Java Programming (Tips and Tricks and Strategies of Java Programming) (Volume 1)|Laurence, Paul|9781718753914
+ 1999|Waite Group Pr|Java Programming for Linux|Meyers, Nathan|9781571691668
+ 2001|Apress|Professional WebObjects with Java|Thomas Termini and Pierce Wetter and Ben Galbraith and Jim Roepcke and Pero Maric and John Hopkins and Josh Flowers and Daniel Steinberg and Max Muller and Michael DeMann and Bernard Scholz|9781861004314
+ 2008|Morgan Kaufmann|Bluetooth Application Programming with the Java APIs Essentials Edition (The Morgan Kaufmann Series in Networking)|Thompson, Timothy J. and Kumar, C Bala and Kline, Paul J.|9780123743428
+ 2012|Pearson College Div|Introduction to Java Programming|Liang, Y. Daniel|9780133051469
+ 2008|Packt Publishing|Java EE 5 Development with NetBeans 6|Heffelfinger, David|9781847195463
+ |Pearson Education Limited|Introduction to Java Programming and Data Structures, Comprehensive Version Plus Pearson Mylab Programming with Pearson Etext, Global Edition||9781292222028
+ |Wrox Press|Professional Oracle 8i Java|Wrox Press Author Team|9781861004154
+ 2005|Sams Publishing|Java After Hours: 10 Projects You'll Never Do at Work|Holzner, Steven|9780672327476
+ 1999|Apress|Professional JavaScript with DHTML, ASP, CGI, FESI, Netscape Enterprise Server, Windows Script Host, LiveConnect and Java|Chirelli, Andrea and Li, Sing and Wilton, Paul and McFarlane, Nigel and Updegrave, Stuart and Wilcox, Mark and Wootton, Cliff and McFarlane, Nigel and James De Carli|9781861002709
+ 2001|Sams|Wireless Java Programming With J2me|Yu Feng and Jun Zhu|9780672321351
+ 2017|Cengage Learning|Java Programming, Loose-leaf Version|Farrell, Joyce|9781337685917
+ 1996|Computing McGraw-Hill|Web Site Programming With Java|Harms, David and Fiske, Barton C. and Rice, Jeffrey C.|9780079129864
+ 2002|Charles River Media|Java Programming Fundamentals (CYBERROOKIES SERIES)|Seefeld, Kimberly|9781584502210
+ 2000|Sams|Java Server Pages Application Development|Scott M. Stirling and Andre Lei and Ben Forta and Edwin Smith and Larry Kim and Roger Kerr and David Aden|9780672319396
+ 2000|Addison-wesley Professional|Ldap Programming With Java (paperback)|Rob Weltman and Tony Dahbura|9780768682144
+ 20041228|Cambridge University Press|COBOL Programmers Swing with Java|E. Reed Doke; Bill C. Hardgrave; Richard A. Johnson|9780511081507
+ 1999|Holt Software Associates Inc.|Programming Concepts in Java 2nd Edition w/ IBM's VisualAge for Java 2.0 Software||9780921598329
+ 2007|AddisonWesley Professional|Next Generation Java Testing: TestNG and Advanced Concepts|Beust, C\Xe9dric|9780321503107
+ 20140328|O'Reilly Media, Inc.|Client-Server Web Apps with JavaScript and Java|Casimir Saternos|9781449369316
+ 2014|Apress|Pro JavaFX 8: A Definitive Guide to Building Desktop, Mobile, and Embedded Java Clients|Vos, Johan and Gao, Weiqi and Weaver, James and Chin, Stephen and Iverson, Dean|9781430265740
+ 1999|Sams|Pure Java 2|Litwak, Kenneth|9780672316548
+ 2021|McGraw-Hill Publishing Co.|Programming with Java|Bradley, Julia Case and Millspaugh, Anita|9780071123099
+ 2006|BrainySoftware|Java 5: A Beginner's Tutorial (BrainySoftware)|Kurniawan, Budi|9780975212851
+ 2002|Sams Publishing|Java 2 Unleashed|Potts, Stephen and Pestrikov, Alex|9780672323942
+ 2002|Sams Publishing|Java Media APIs: Cross-Platform Imaging, Media and Visualization|Terrazas PH.D., Alejandro and Ostuni PH.D., John and Barlow, Michael|9780672320941
+ 2002|Microsoft Press|C# for Java Developers (Pro-Developer)|Jones, Allen and Freeman, Adam|9780735617797
+ 2001|Pearson Education (US)|Understanding Object-Oriented Programming with Java|Timothy A. Budd|9780201787047
+ 2001|Addison-Wesley Professional|Programming Open Service Gateways with Java Embedded Server™ Technology|Mike Hendrickson and Chen, Kirk and Gong, Li|9780201711028
+ 2013|CreateSpace Independent Publishing Platform|Fundamentals of Object-Oriented Programming in Java|Mohan, Permanand|9781482587524
+ 2021|CENGAGE INDIA|Java Programming: Advanced Topics (GTU) (with CD)|WILLIAMS RICHARD H.|9788131508688
+ 2002|Course Technology|Java Programming, Second Edition|Farrell, Joyce|9780619016593
+ 2022|N/a|Java An Introduction to Problem Solving & Programming|Walter Savitch|9780273751427
+ 2003|O'Reilly Media|Java Extreme Programming Cookbook|Eric M. Burke and Brian M. Coyner|9780596003876
+ 2011|Course Technology|Java Programming From Problem Analysis To Program Design|Malik and D. S.|9781111577643
+ 2010|Packt Publishing|Google App Engine Java and GWT Application Development|Guermeur, Daniel and Unruh, Amy|9781849690447
+ 2002|Routledge|Java Programming for Engineers (Mechanical Engineering)|Sanchez, Julio|9780849308109
+ 2004|Wiley|Concurrent and Real-Time Programming in Java|Wellings, Andrew|9780470844373
+ 2021|Jones & Bartlet|A Laboratory Course for Programming with Java|Dale|9789380108186
+ 2014|Apress|Learn Java for Web Development: Modern Java Web Development|Layka, Vishal|9781430259848
+ 1999|Alpha|The Complete Idiot's Guide to Java 2|Morrison, Michael|9780789721310
+ 2004|O'Reilly Media|Java Threads: Understanding and Mastering Concurrent Programming|Scott Oaks and Henry Wong|9780448446257
+ 2012|Pearson College Div|Java + MyProgrammingLab Access Code: How to Program|Deitel, Paul and Deitel, Harvey|9780132940955
+ 2006|Apress|Pro EJB 3: Java Persistence API (Expert's Voice in Java)|Keith, Mike and Schincariol, Merrick|9781590596456
+ 2012|PUP Department of Computer Science|Start Concurrent: An Introduction to Problem Solving in Java with a Focus on Concurrency, 2013 Edition|Wittman, Barry and Mathur, Aditya and Korb, Tim|9781557536723
+ 2008|Packt Publishing|DWR Java AJAX Applications|Sami Salkosuo|9781847192936
+ 1999|Springer|Formal Syntax and Semantics of Java (Lecture Notes in Computer Science (1523))||9783540661580
+ 2004|Course Technology|Java Programs to Accompany Programming Logic and Design|Smith, Jo Ann|9780619160258
+ 2013|CreateSpace Independent Publishing Platform|Learning Java through Alice|Daly, Tebring and Wrigley, Eileen|9781491073933
+ 2002|Mc Press|Java for RPG Programmers|Coulthard, Phil and Farr, George|9781931182065
+ 2012|Pearson|MyProgrammingLab with Pearson eText -- Access Card -- for Introduction to Java Programming, Brief Version (MyProgrammingLab (Access Codes))|Liang, Y. Daniel|9780132991568
+ 2016|Apress|Beginning Robotics Programming in Java with LEGO Mindstorms|Lu, Wei|9781484220047
+ 1999|Charles River Media|Graphics Programming With Java Second Edition/Book and Cd-Rom (Graphics Series)|Stevens, Roger T.|9781886801912
+ 2016|CreateSpace Independent Publishing Platform|Java: The Guide to Master Java Programming Fast (Booklet) (Volume 2)|Hoffman, Andrew|9781532852701
+ 2013|Packt Publishing|BPEL and Java Cookbook|Laznik, Jurij|9781849689205
+ 2003|Mcgraw-hill (tx)|An Introduction To Object-oriented Programming With Java|C. Thomas Wu|9780071217705
+ 2001|Sams Publishing|Jython for Java Programmers|Bill, Robert|9780735711112
+ 2000|Manning Publications|Server-Based Java Programming|Neward, Ted|9781884777714
+ 2016-09-26|Wiley Global Education US|Big Java Late Objects|Cay S. Horstmann|9781119321071
+ 2000|O'Reilly Media|The Java Enterprise CD Bookshelf|O'Reilly Media, Inc.|9781565928503
+ 20170404|Pearson Technology Group|Introduction to Programming in Java|Robert Sedgewick; Kevin Wayne|9780134512396
+ 2011|BrainySoftware|Java 7: A Beginner's Tutorial|Kurniawan, Budi|9780980839616
+ 2000|Holt Software Assoc Inc|Introduction to Programming in Java|Hume, J. N. Patterson and Stephenson, Christine|9780921598398
+ 20100824|Pearson Technology Group|Java EE 6 Tutorial, The|Eric Jendrock; Ian Evans; Devika Gollapudi; Kim Haase; Chinmayee Srivathsa|9780137084265
+ 2001|McGraw-Hill Science/Engineering/Math|Objects Have Class: An Introduction to Programming with Java with CD-ROM and OLC|Poplawski, David A.|9780072505016
+ 2009|Pearson|Seam Framework: Experience the Evolution of Java EE (2nd Edition)|Yuan, Michael and Orshalick, Jacob and Heute, Thomas|9780137129393
+ 2004|Wiley|An Introduction to Programming and Object-Oriented Design Using Java|Ni?o, Jaime and Hosch, Frederick A.|9780471481676
+ 2016|CreateSpace Independent Publishing Platform|Learn Java 8 In a Week: A beginner's guide to Java Programming (Black Book)|Rathore, Mahavir DS|9781530669172
+ 2002|Jones & Bartlett Learning|Introduction To Cryptography With Java Applets|Bishop, David|9780763722074
+ 2017|Packt Publishing|Modular Programming in Java 9: Build large scale applications using Java modularity and Project Jigsaw|Kothagal, Koushik|9781787126909
+ 2015|机械工业出版社|Java Programming Language (Basic) (the original book version 10) - Java语言程序设计（基础篇）（原书第10版）|[美]Y.Daniel Liang|9787111506904
+ 1996|Coriolis Group|Java Programming EXplorer: Everything You Need to Develop Internet Applications with the Java Programming Language|Simkin, Steve and Bartlett, Neil and Leslie, Alex|9781883577810
+ 1998|Cambridge University Press|Java Gems: Jewels from Java Report|Dwight Deugo and Donald G. Firesmith|9780521648240
+ 2017|Addison-Wesley Professional|Effective Java|Joshua, Bloch|9780134686042
+ 1999|Coriolis Group|Java 2 Exam Cram Exam 310-025|William B. Brogden|9781576102916
+ 2010|Pearson Education|Introduction to Java Programming, Brief: International Edition|Liang, Y. Daniel|9780132473118
+ 1999|Coriolis Group|Java 2 Exam Prep (Exam: 310-025)|Brogden, Bill|9781576102619
+ 1999|Mc Pr Llc|Java Application Strategies For The As/400|Don Denoncourt|9781883884611
+ 2018|Packt Publishing|Developing Java Applications with Spring and Spring Boot|Oliveira, Claudio Eduardo de and Turnquist, Greg L. and Antonov, Alex|9781789534757
+ 2002|Prentice Hall|Practical Object-Oriented Development with UML and Java|Lee, Richard C. and Tepfenhart, William M.|9780130672384
+ 2019|Arcler Press|Java Programming Applications|Prudhomme, Gerard|9781774073193
+ 2000|Addison-Wesley|The Java 3D(TM)  API Specification (2nd Edition)|Sowizral, Henry and Rushforth, Kevin and Deering, Michael|9780201710410
+ 20170830|Pearson Education (US)|Java Software Solutions|John Lewis; William Loftus|9780134544021
+ 2002|Apress|The Sun Certified Java Developer Exam with J2SE 1.4|Patterson, Jeremy and Habibi, Mehran and Camerlengo, Terry|9781590590300
+ 2019|Apress|Learn Java with Math: Using Fun Projects and Games|Dai, Ron|9781484252086
+ 2008|Pragmatic Bookshelf|Groovy Recipes: Greasing the Wheels of Java (Pragmatic Programmers)|Davis, Scott|9780978739294
+ 2004||Java Programming For Kids|Yakov Fain|9780971843950
+ 2001|Apress|Java XML Programmer's Reference|Eric Jung and Andrei Cioroianu and Dave Writz and Mohammad Akif and Steven Brodhead and James Hart|9781861005205
+ 2004-08-26|Wiley|Java 2 For Dummies|Barry Burd|9780764578496
+ 20150529|Pearson Education (US)|Starting Out with Java|Tony Gaddis|9780133957235
+ 2000|Morgan Kaufmann|Understanding SQL and Java Together: A Guide to SQLJ, JDBC, and Related Technologies (The Morgan Kaufmann Series in Data Management Systems)|Melton, Jim and Eisenberg, Andrew|9781558605626
+ 2003|Sams|Extreme Programming With Ant: Building and Deploying Java Applications With Jsp, Ejb, Xslt, Xdoclet, and Junit|Niemeyer, Glenn and Poteet, Jeremy|9780672325625
+ 2015|Packt Publishing|Learning Network Programming with Java|Reese, Richard|9781785882562
+ 1998|Wiley|Computer Graphics for Java Programmers|Ammeraal, Leen|9780471981428
+ 2014|Apress|Beginning Java 8 Games Development|Jackson, Wallace|9781484204153
+ 2017|Independently published|Programming: Python Programming, JAVA Programming, HTML and CSS Programming for Beginners|Academy, iCode|9781520676081
+ 2006|Wiley|Developing Java Software (third edition)|Winder, Russel and Roberts, Graham|9780470090251
+ 2004|ISTE Publishing Company|Java & Databases (Innovative Technology Series)||9781903996157
+ 2020|Apress|Beginning Quarkus Framework: Build Cloud-Native Enterprise Java Applications and Microservices|Koleoso, Tayo|9781484260319
+ 2000|John Wiley and Sons|(Wcs)Intro to Programming W/ Java|Nino|9780471399568
+ 2005|Heaton Research, Inc.|Introduction to Neural Networks with Java|Heaton, Jeff T|9780977320608
+ 2005|Charles River Media|Learning JAVA through Applications (Programming Series)|Jarc, Duane J|9781584503767
+ 20080212|Jones & Bartlett Learning|Programming and Problem Solving with Java|Nell Dale|9781449639808
+ 1999|Mcgraw-hill Education (ise Editions)|An Introduction To Object Oriented Programming With Java (mcgraw-hill International Editions)|C.thomas Wu|9780071168502
+ 2022|SYS-CON Media|Rich Internet Applications with Adobe Flex and Java : Secrets of the Masters|Fain, Yakov; Rasputnis, Victor; Tartakovsky, Anatole|9780977762224
+ 2002|Cengage Learning PTR|Java Programming for the Absolute Beginner|Russell, Joseph P.|9780761535225
+ 1999|Addison-Wesley Professional|Mr. Bunny's Big Cup o' Java|Egremont, Carlton|9780201615630
+ 2020|Apress|Spring Boot Persistence Best Practices: Optimize Java Persistence Performance in Spring Boot Applications|Anghel Leonard|9781484256268
+ 2019|Packt Publishing|Serverless Programming Cookbook: Practical solutions to building serverless applications using Java and AWS|Kanikathottu, Heartin|9781788623797
+ 2000|Morgan Kaufmann|Object-Oriented Implementation of Numerical Methods: An Introduction with Java & Smalltalk (The Morgan Kaufmann Series in Software Engineering and Programming)|Besset, Didier H.|9781558606791
+ 1998|Sams|Sams Teach Yourself Java 1.2 in 21 Days|Lemay, Laura and Cadenhead, Rogers|9781575213903
+ 2015|Cengage Learning|Java Programming|Farrell, Joyce|9781305480537
+ 2002|Muska & Lipman/Premier-Trade|Java Security|Ganguli, Madhushree|9781931841856
+ 2009||Java Programming|D. S. Malik|9781439040348
+ 2017|Apress|Pro Java Clustering and Scalability: Building Real-Time Apps with Spring, Cassandra, Redis, WebSocket and RabbitMQ|Acetozi, Jorge|9781484229859
+ 2000|Apress|Definitive Guide to Swing for Java 2, Second Edition|Zukowski, John|9781893115781
+ 2019|lulu.com|Reviewing Java|Maureau, Alex|9780557043552
+ 2007|Pearson|Introduction To Java Programming Comprehensive Version Custom Edition Sixth Edition|Y. Daniel Liang|9780558100117
+ 2017|CreateSpace Independent Publishing Platform|Computer Programming: 6 Books in 1: Beginner's Guide + Best Practices to Programming Code with Python, JavaScript and Java|Masterson, Charlie|9781548828547
+ 2002|Manning Publications|Java 3D Programming|Selman, Daniel|9781930110359
+ 1999|Course Technology Ptr (Sd)|Java Programming: Comprehensive|Farrell, Joyce M.|9780760010709
+ 2011|Pearson College Div|Java Software Solutions|Lewis and John/ Loftus|9780132783385
+ 20140226|Pearson Education (US)|Java Software Solutions|John Lewis; William Loftus|9780133795318
+ 2005|Virtualbookworm.com Publishing, Incorporated|Ant Java Notes: An Accelerated Intro Guide to the Java Ant Build Tool|A. T. Bell|9781589397385
+ 2016|CreateSpace Independent Publishing Platform|Android: Android Programming And Android App Development For Beginners: (Learn How To Program Android Apps, How To Develop Android Applications Through Java Programming, Android For Dummies)|Publishing, UpSkill|9781534746183
+ 1997|Sams|Maximum Java 1.1|Vanderburg, Glenn|9781575212906
+ 2000||Java Network Programming|E. Harold|9780765561947
+ 2006|Wiley|Developing Chemical Information Systems: An Object-Oriented Approach Using Enterprise Java|Li, Fan|9780471751571
+ 2007|Cengage Learning Ptr|Mobile 3d Graphics: Learning 3d Graphics With The Java Micro Edition|Claus Höfele|9781598632927
+ 20060516|O'Reilly Media, Inc.|Java I/O|Elliotte Rusty Harold|9781449390884
+ 2015-09-18|Packt Publishing|Java Hibernate Cookbook|Yogesh Prajapati|9781784391904
+ 2013|Springer|An Introduction to Network Programming with Java: Java 7 Compatible|Graba, Jan|9781447152545
+ 2021|Prentice Hall of India|Object Oriented Programming with C++ and Java [Oct 30, 2004] D. Samanta|Samanta|9788120316201
+ 2002|Apress|Beginning Java Web Services|Henry Bequet and Meeraj Kunnumpurath and Rhody, Sean and Andre Tost|9781861007537
+ 2007|New Age Publications (academic)|Internet And Java Programming|R. Krishnamoorty,prabhu R. Krishnamoorty|9788122413526
+ 2002|John Wiley &Sons|Java Web Services Programming|Mogha, Rashim|9780764549526
+ 2004|Sams Publishing|BEA WebLogic Workshop 8.1 Kick Start: Simplifying Java Web Applications and J2EE|Saganich Jr., Albert and Hardy, Tom and Kaye, Lawrence and Srivatsan, Sunila|9780672326226
+ 1996|Coriolis Group,U.S.|Kickass Java Programming: Cutting-Edge Java Techniques With an Attitude|Tonny Espeset|9781883577995
+ 2012|Jaico Publishing House|Introduction To Java Programming|K. Somasundaram|9788184954432
+ 2012|Wiley Global Education|Big Java Late Objects|Cay S. Horstmann|9781118214572
+ 2014|Addison-Wesley Professional|Java Tutorial, The: A Short Course on the Basics (Java Series)|Gallardo, Raymond and Hommel, Scott and Kannan, Sowmya and Gordon, Joni and Zakhour, Sharon Biocca|9780134034690
+ 2004|Springer|The JR Programming Language: Concurrent Programming in an Extended Java (The Springer International Series in Engineering and Computer Science (774))|Olsson, Ronald A. and Keen, Aaron W.|9781402080852
+ 1999|Prentice Hall Ptr|Core Java Media Framework|deCarmo, Linden|9780130115195
+ 1997|Charles River Media|Graphics Programming with Java|Stevens, Roger|9781886801622
+ 2014|Wspc|The Nonlinear Workbook: Chaos, Fractals, Cellular Automata, Genetic Algorithms, Gene Expression Programming, Support Vector Machine, Wavelets, Hidden ... Java And Symbolicc++ Programs|Steeb, Willi-Hans|9789814583473
+ 2002|BPB Publications|Learn Advanced Java Script Programming|Vijay Mukhi|9788170299370
+ 20070830|O'Reilly Media, Inc.|Darkstar: The Java Game Server|Brendan Burns|9780596514846
+ 1996|Prentice Hall Ptr|Java Programming For The Internet|Marc Loy|9780132707787
+ 2002|London ; Taylor & Francis, 2002.|Java Programming For Spatial Sciences|Jo Wood|9780203166178
+ 2004|iUniverse|First Course: Data Structures and Algorithms Using Java: Data Structures and Algorithms Using JAVA|Hill, Edward|9780595318964
+ 2017|Pearson Education Limited|Java Plus Myprogramminglab With Pearson Etext|Savitch and Walter J.|9781292184944
+ 2001|Wiley|Mobile Information Device Profile For Java 2 Microedition: Professional Developer's Guide (professional Developer's Guide Series)|C. Enrique Ortiz and Eric Gigu?re|9780471034650
+ 1999|Wiley|Programming Windows with Java and WFC|Krell, Bruce E.|9780764532726
+ 2011|Lulu.com|C For Java Programmers: A Primer|Charlie McDowell|9781257188796
+ 2009|China Water Power Press Pub. Date :2009-09|Java Case Programming Tutorials(chinese Edition)|Guo Zhen Min Sheng Gui Yong|9787508468280
+ 2002|Indianapolis, In : Wiley, 2002.|Wireless Java Programming For Enterprise Applications|Dan Harkey and Shan Appajodu and Mike Larkin|9780471218784
+ 2008|Prentice Hall|Java: Introduction To Problem Solving And Programming Value Package (includes Addison-wesley's Java Backpack Reference Guide)|Walter Savitch and Frank Carrano|9780135038253
+ 2007-02-15|Packt Publishing|Google Web Toolkit: GWT Java AJAX Programming|Prabhakar Chaganti|9781847191014
+ 20061107|Springer Nature|The Definitive Guide to Building Java Robots|Scott Preston|9781430200888
+ 2013|Cengage Learning|Bundle: Java Programming, 7th + Coursemate Printed Access Card|Joyce Farrell|9781285999722
+ 2002|Cengage Learning|Java With Object-oriented Programming (non-infotrac Version)|Paul S. Wang|9780534391447
+
+semanticScholar 37
+ year|title|doi|citations|influentialCitations|authors|paperId
+ 1998|Making the future safe for the past: adding genericity to the Java programming language|10.1145/286936.286957|594|44|Gilad Bracha and Martin Odersky and David Stoutamire and P. Wadler|7862ab20bf14ff78eb74c5b17fd52a4d498eaec2
+ 1998|Compatible genericity with run-time types for the Java programming language|10.1145/286936.286958|150|13|Robert Cartwright and G. Steele|fb892076f2b162d2c061bfefdad88158cf522b99
+ 2008|Session-Based Distributed Programming in Java|10.1007/978-3-540-70592-5_22|149|19|Raymond Hu and N. Yoshida and Kohei Honda|1c657b0b5a77b302493a69820540d418ba18ba47
+ 2004|Adding wildcards to the Java programming language|10.1145/967900.968162|137|13|Mads Torgersen and Erik Ernst and Christian Plesner Hansen and P. Ahé and Gilad Bracha and N. Gafter|cec77c48196c68ae617911e7b316612396ad27ec
+ 2000|Java programming for high-performance numerical computing|10.1147/SJ.391.0021|117|8|J. Moreira and S. Midkiff and Manish Gupta and Pedro V. Artigas and M. Snir and Richard D. Lawrence|e6ba2aae171aaadf0d4648cbd254f279c5b92566
+ 2014|Mining billions of AST nodes to study actual and potential usage of Java language features|10.1145/2568225.2568295|97|7|Robert Dyer and Hridesh Rajan and H. Nguyen and T. Nguyen|d5fd3931b0f0492bd543aac33c953aa541f2d03c
+ 2011|ContextJ: Context-oriented Programming with Java|10.11185/IMT.6.399|95|9|M. Appeltauer and R. Hirschfeld and M. Haupt and Hidehiko Masuhara|6472be8854d79560923461f32c36026ebc97f883
+ 2000|NaturalJava: a natural language interface for programming in Java|10.1145/325737.325845|93|5|D. Price and E. Riloff and J. Zachary and Brandon Harvey|a11513ce3256ebea0eec68b38acbd8275723050d
+ 2013|Maxine: An approachable virtual machine for, and in, java|10.1145/2400682.2400689|89|12|Christian Wimmer and M. Haupt and M. V. D. Vanter and Mick J. Jordan and L. Daynès and Doug Simon|3a54e9d683c172acf9d2a503754f1c68b7daf611
+ 1998|Java as first programming language: a critical evaluation|10.1145/292422.292440|87|6|Said Hadjerrouit|2f80cbad16b5945f2f5029012999aeff12efd51d
+ 2007|Keyword programming in Java|10.1007/s10515-008-0041-9|78|3|Greg Little and Rob Miller|6f6c15e91faf8afa4ad9b48c224350f1bf135054
+ 2007|Interface-based programming assignments and automatic grading of java programs|10.1145/1268784.1268805|64|7|Michael T. Helmick|48142625261b1cca94ab650a6ccf10706e830f49
+ 2017|Investigating Static Analysis Errors in Student Java Programs|10.1145/3105726.3106182|62|2|S. Edwards and Nischel Kandru and Mukund B. M. Rajagopal|f0552a483f71919a32365012de15051c206c00ad
+ 2001|Concurrent Programming: The Java Programming Language|10.12694/scpe.v4i2.230|62|5|G. Gagne|fcfd49bdf3cecf170a4bf5974bdfa2abcd250397
+ 2000|A Java programming tool for students with visual disabilities|10.1145/354324.354356|58|3|Ann C. Smith and J. Francioni and Sam D. Matzek|8892647a286cd2141d5d18c1a9b00fc2e1c58ff4
+ 2017|Understanding the use of lambda expressions in Java|10.1145/3133909|56|8|D. Mazinanian and Ameya Ketkar and Nikolaos Tsantalis and Danny Dig|f3047998ef0ab6ffffe617397cf8efe99bd34b80
+ 2014|LeakWatch: Estimating Information Leakage from Java Programs|10.1007/978-3-319-11212-1_13|50|4|Tom Chothia and Yusuke Kawamoto and Chris Novakovic|c72cea83ed4b4649251f54a83adc18124f42de55
+ 2014|DeltaJ 1.5: delta-oriented programming for Java 1.5|10.1145/2647508.2647512|50|5|J. Koscielny and Sönke Holthusen and I. Schaefer and Sandro Schulze and Lorenzo Bettini and F. Damiani|777b8c22184ce1b10a56730d594adae962f10cbc
+ 2008|Caching and incrementalisation in the java query language|10.1145/1449764.1449766|40|10|Darren Willis and David J. Pearce and J. Noble|1ef340939607eaf1361c9da010da9c3c12dcde42
+ 2015|Genetic Algorithms in Java Basics|10.1007/978-1-4842-0328-6|40|3|Lee Jacobson and B. Kanber|94ebd1b97887bd36ca54d93581ac83b2911157b4
+ 2012|Using mobile phone programming to teach Java and advanced programming to computer scientists|10.1145/2157136.2157292|39|5|D. Riley|d6b50fc7e13a1057b077ab3bd48f87271d9af8b8
+ 2002|Language-specific make technology for the Java programming language|10.1145/582419.582453|39|3|M. Dmitriev|c6db9561b9769a5fc1618e1fe29ee3b7851555a1
+ 2010|Programming Finite Elements in Java|10.1007/978-1-84882-972-5|34|2|G. Nikishkov|a8f6e0d60e1364333694ccc60cb04d5cf5f44374
+ 2011|Safe Parallel Programming with Session Java|10.1007/978-3-642-21464-6_8|30|0|Nicholas Ng and N. Yoshida and Olivier Pernet and Raymond Hu and Yiannos Kryftis|870662bb6c66a2069a7392e2ad2bb67f9a65dd94
+ 2012|A machine-checked, type-safe model of Java concurrency: language, virtual machine, memory model, and verified compiler|10.5445/KSP/1000028867|30|2|Andreas Lochbihler|c36ff13c201aa3caaa8ed1179b206023fdd194ed
+ 1997|The Case for Java as a Programming Language|10.1109/4236.585172|30|2|A. Hoff|2aed90d637971b96a891f79187f3e6e92736b925
+ 1998|Concurrent programming: the Java programming language|10.5860/choice.36-1006|30|1|Stephen J. Hartley|f3919013a32e7236f1235dc39b085e8fa3357be4
+ 2002|Evaluation of Assertion Support for the Java Programming Language|10.5381/jot.2002.1.3.a1|28|0|Reinhold Plösch|0e6ee9ce96b9f5aae32f1da6fbf21a44d7ee198b
+ 2010|Web-Based Multiplayer Online Role Playing Game (MORPG) for Assessing Students' Java Programming Knowledge and Skills|10.1109/DIGITEL.2010.20|22|0|Maiga Chang and Kinshuk|c6446458e72ce254305ef3cd4eeb0fc62c71cb4e
+ 2012|Modeling the Knowledge Domain of the Java Programming Language as an Ontology|10.1007/978-3-642-33642-3_16|21|1|Aggeliki Kouneli and G. Solomou and C. Pierrakeas and A. Kameas|3915703932e988d909d0a9251009fa6c5933290e
+ 1997|Improving the interactivity and functionality of Web-based radiology teaching files with the Java programming language.|10.1148/RADIOGRAPHICS.17.6.9397464|20|2|J. Eng|09501e85462489a754a1cab8eafd9ccb759f8234
+ 2003|Assessment of the Java programming language for use in high integrity systems|10.1145/844091.844099|19|1|J. Kwon and A. Wellings and S. King|90b925874632d2a11c9d3ada8c963e899e363c4e
+ 1998|Applications of JAVA programming language to database management|10.1145/273244.273254|13|0|Bradley F. Burton and V. Marek|e502374c91f0b196836e965cf0ac88002d642bb3
+ 1999|SQLJ Part 1: SQL routines using the Java programming language|10.1145/344816.344864|13|1|A. Eisenberg and Jim Melton|75aac5614558f08595d4b737c075e89e47040337
+ 2018|Comparison of garbage collectors in Java programming language|10.23919/MIPRO.2018.8400277|12|0|H. Grgic and B. Mihaljević and A. Radovan|090173690ad7bcf3c2d83f840db65872d0d66b5f
+ 2018|Java Programming Language|10.1007/978-3-030-02619-6_35|1|0|Gerard O'Regan|6bffc1a6dff69fc47734945adfc4e04775d3b139
+ 1996|Java Programming Language|10.32388/4ejcag|1|0|D. Friedel and Anthony P. Potts|6e0f1aacb150c00ef2c9ad638c7fa495332086fa

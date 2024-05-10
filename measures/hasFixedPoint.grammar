@@ -1,6 +1,0 @@
-hasFixedPointParser
- extends abstractFeatureParser
- description Does the language have a type and syntax for fixed point numbers, such as currencies with 2 decimal points?
- string title Fixed Point Numbers
- string pseudoExample 80766866.00
- string reference https://en.wikipedia.org/wiki/Fixed-point_arithmetic

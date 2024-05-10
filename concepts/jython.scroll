@@ -1,0 +1,55 @@
+import ../measures/conceptPage.scroll
+id Jython
+appeared 2001
+type pl
+country United States and United Kingdom
+originCommunity https://github.com/jython
+
+hasPrintDebugging true
+hasStrings true
+ "Hello world"
+
+printToken print
+stringToken "
+
+wikipedia https://en.wikipedia.org/wiki/Jython
+ related python java c java-bytecode
+ summary Jython is an implementation of the Python programming language designed to run on the Java platform. It is the successor of JPython.
+ pageId 390263
+ created 2003
+ backlinksCount 197
+ revisionCount 364
+ dailyPageViews 173
+ appeared 2001
+
+leachim6 Jython
+ filepath j/Jython.py
+ fileExtensions py
+ example
+  print "Hello World"
+
+jupyterKernel https://github.com/fiber-space/jupyter-kernel-jsr223
+jupyterKernel https://github.com/suvarchal/IJython
+fileType text
+centralPackageRepositoryCount 0
+
+goodreads
+ title|year|author|goodreadsId|rating|ratings|reviews
+ Jython for Java Programmers|2001|Robert Bill|1506585|2.33|3|0
+ Python Programming with the Java� Class Libraries: A Tutorial for Building Web and Enterprise Applications with Jython|1996|Richard Hightower|774737|3.00|1|1
+ The Definitive Guide to Jython: Python for the Java Platform (Expert's Voice in Software Development)|2010|Jim Baker|40475508|5.00|1|0
+
+isbndb 7
+ year|publisher|title|authors|isbn13
+ 2002|O'Reilly Media|Jython Essentials (O'Reilly Scripting)|Pedroni, Samuele and Rappin, Noel|9780596002473
+ 2001|Sams Publishing|Jython for Java Programmers|Bill, Robert|9780735711112
+ 2010|Springer|Scientific Data Analysis using Jython Scripting and Java (Advanced Information and Knowledge Processing)|Chekanov, Sergei V.|9781849962872
+ 2002|Addison-Wesley Professional|Python Programming with the Java¿ Class Libraries: A Tutorial for Building Web and Enterprise Applications with Jython|Hightower, Richard|9780201616163
+ |John Wiley & Sons|Jython Programming||9780782140606
+ 20020321|O'Reilly Media, Inc.|Jython Essentials|Samuele Pedroni|9781449397906
+ 20020321|O'Reilly Media, Inc.|Jython Essentials|Samuele Pedroni; Noel Rappin|9781449397777
+
+semanticScholar 2
+ year|title|doi|citations|influentialCitations|authors|paperId
+ 2010|Scientific Data Analysis using Jython Scripting and Java|10.1007/978-1-84996-287-2|19|0|S. Chekanov|80d69908e8742d29634f5367c36d0a15498a81ed
+ 2009|CSP as a Domain-Specific Language Embedded in Python and Jython|10.3233/978-1-60750-065-0-293|15|0|S. Mount and Mohammad Hammoudeh and Sam Wilson and R. Newman|4cfaf832b2ba26b30a584a5055361de505d6d5b8

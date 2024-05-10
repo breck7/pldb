@@ -1,0 +1,23 @@
+import ../measures/conceptPage.scroll
+id opam-pm
+appeared 2012
+type packageManager
+creators Fabrice Le Fessant
+website https://opam.ocaml.org/
+country Various
+originCommunity https://github.com/ocaml
+domainName opam.ocaml.org
+
+githubRepo https://github.com/ocaml/opam
+ firstCommit 2012
+ stars 1040
+ forks 324
+ subscribers 56
+ created 2012
+ updated 2022
+ description opam is a source-based package manager. It supports multiple simultaneous compiler installations, flexible package constraints, and a Git-friendly development workflow.
+ issues 445
+
+packageCount 2224
+packageInstallCount 10000000
+forLanguages ocaml

@@ -1,0 +1,119 @@
+import ../measures/conceptPage.scroll
+id PL/SQL
+appeared 1991
+type pl
+documentation https://docs.oracle.com/database/121/LNPLS/toc.htm
+aka PLSQL
+country United States
+originCommunity Oracle
+
+hasLineComments true
+ -- A comment
+hasComments true
+ -- A comment
+hasPrintDebugging true
+hasSemanticIndentation false
+hasStrings true
+ 'Hello world'
+hasBooleans true
+
+lineCommentToken --
+printToken dbms_output.put_line
+stringToken '
+booleanTokens TRUE FALSE
+
+wikipedia https://en.wikipedia.org/wiki/PL/SQL
+ example
+  DECLARE
+    CURSOR cursor_person IS
+      SELECT person_code FROM people_table;
+  BEGIN
+    FOR RecordIndex IN cursor_person
+    LOOP
+      DBMS_OUTPUT.PUT_LINE(recordIndex.person_code);
+    END LOOP;
+  END;
+ related sql transact-sql postgresql plpgsql sql-psm object-pascal free-pascal java sqlite sqlpl
+ summary PL/SQL (Procedural Language/Structured Query Language) is Oracle Corporation's procedural extension for SQL and the Oracle relational database. PL/SQL is available in Oracle Database (since version 6 - stored pl/sql procedures/functions/packages/triggers since version 7), TimesTen in-memory database (since version 11.2.1), and IBM DB2 (since version 9.7). Oracle Corporation usually extends PL/SQL functionality with each successive release of the Oracle Database. PL/SQL includes procedural language elements such as conditions and loops. It allows declaration of constants and variables, procedures and functions, types and variables of those types, and triggers. It can handle exceptions (runtime errors). Arrays are supported involving the use of PL/SQL collections. Implementations from version 8 of Oracle Database onwards have included features associated with object-orientation. One can create PL/SQL units such as procedures, functions, packages, types, and triggers, which are stored in the database for reuse by applications that use any of the Oracle Database programmatic interfaces.
+ pageId 33862363
+ dailyPageViews 427
+ created 2001
+ backlinksCount 432
+ revisionCount 1056
+ appeared 2005
+
+githubLanguage PLSQL
+ fileExtensions pls bdy ddl fnc pck pkb pks plb plsql prc spc sql tpb tps trg vw
+ trendingProjectsCount 0
+ type programming
+ aceMode sql
+ codemirrorMode sql
+ codemirrorMimeType text/x-plsql
+ tmScope none
+ repos 20365
+githubBigQuery PLSQL
+ repos 6767
+ users 6008
+
+antlr https://github.com/antlr/grammars-v4/tree/master/plsql
+linguistGrammarRepo https://github.com/textmate/sql.tmbundle
+ sampleCount 8
+ example
+  create or replace procedure print_bool(
+      p_bool in BOOLEAN,
+      p_true_value in varchar2 default 'TRUE',
+      p_false_value in varchar2 := 'FALSE'
+  )
+  as
+  begin
+  
+      dbms_output.put_line(case when p_bool then p_true_value else p_false_value end);
+  
+  end print_bool;
+  /
+  
+
+helloWorldCollection PL%2FSQL
+ -- Hello World in Oracle PL/SQL (sqlplus)
+ 
+ set serveroutput on
+ 
+ begin
+   dbms_output.enable(10000);
+   dbms_output.put_line('Hello World');
+ end;
+ /
+ 
+leachim6 PL∕SQL
+ filepath p/PL∕SQL.pls
+ fileExtensions pls
+ example
+  BEGIN
+    dbms_output.put_line('Hello World');
+  END;
+  /
+  
+
+indeedJobs pl/sql developer
+ 2017 2972
+
+meetup https://www.meetup.com/topics/oracle
+ memberCount 78458
+ groupCount 276
+
+tiobe PL/SQL
+ currentRank 18
+hopl https://hopl.info/showlanguage.prx?exp=7323
+
+fileType text
+centralPackageRepositoryCount 0
+
+goodreads
+ title|year|author|goodreadsId|rating|ratings|reviews
+ Advanced Plsql Programming: The Definitive Reference||Boobal Ganesan|58532308|0.0|0|0
+ Oracle SQL: Sql-Plsql Concepts, Queries & Tips for All Database Developers & Programmers||Niraj Gupta|55220774|0.0|0|1
+ 100 Plus SQL and PLSQL Tips: Useful for Beginner's and Experienced Database Programmers and Developers|2014|Niraj Gupta|45930441|4.00|5|0
+ Data-Centric Programming Languages: Mumps, Microsoft Access, Plsql, Transact-SQL, IBM RPG, Visual FoxPro, Jade, K||Source Wikipedia|59365714|0.0|0|0
+ Oracle: Oracle Adf, Sun Microsystems, Plsql, Oracle Rac, Larry Ellison, Jdeveloper, BMW Oracle Racing, SQL Developer||Quelle Wikipedia|54064120|0.0|0|0
+
+semanticScholar 0

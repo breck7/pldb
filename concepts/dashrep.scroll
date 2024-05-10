@@ -1,0 +1,35 @@
+import ../measures/conceptPage.scroll
+id Dashrep
+appeared 2011
+type pl
+creators Richard Fobes
+conceptDescription Dashrep™, the text-manipulation programming language that is powerful and fast, yet simple
+website http://www.dashrep.org/
+country United States
+originCommunity www.solutionscreative.com
+
+example
+ animal-type:
+ dolphin
+ ----
+ characteristic-for-dolphin:
+ talkative
+ ----
+ start-here:
+ The animal-type is characteristic-for
+ fenambee animal-type amenn no-space .
+ ----
+
+githubRepo https://github.com/cpsolver/Dashrep-language
+ stars 4
+ forks 0
+ subscribers 3
+ created 2011
+ updated 2022
+ description Dashrep is a versatile descriptive programming language based on hyphenated phrases being successively expanded into replacement text. It is a much more flexible alternative to using a template language.
+
+repoStats
+ firstCommit 2011
+ commits 2760
+ committers 1
+ files 1944

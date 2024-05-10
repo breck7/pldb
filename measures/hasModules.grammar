@@ -1,6 +1,0 @@
-hasModulesParser
- extends abstractFeatureParser
- description Does the language have a concept of modules for organizing and packaging code?
- string title Module Pattern
- string pseudoExample module PLDB {}
- string reference https://en.wikipedia.org/wiki/Module_pattern

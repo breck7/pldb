@@ -1,6 +1,0 @@
-canDoShebangParser
- extends abstractFeatureParser
- description Does this language support shebang executable scripts?
- string title Shebang
- string pseudoExample #! /run
- string reference https://en.wikipedia.org/wiki/Shebang_(Unix)

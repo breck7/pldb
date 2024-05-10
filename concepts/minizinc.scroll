@@ -1,0 +1,46 @@
+import ../measures/conceptPage.scroll
+id MiniZinc
+appeared 2012
+type pl
+website http://www.minizinc.org/
+country Australia
+originCommunity Monash University
+domainName minizinc.org
+ awisRank
+  2022 8165783
+
+githubRepo https://github.com/MiniZinc/libminizinc
+ firstCommit 2012
+ stars 393
+ forks 67
+ subscribers 38
+ created 2015
+ updated 2022
+ description The MiniZinc compiler
+ issues 59
+
+repoStats
+ firstCommit 2012
+ commits 6766
+ committers 56
+ files 2399
+
+rosettaCode http://www.rosettacode.org/wiki/Category:MiniZinc
+quineRelay MiniZinc
+
+rijuRepl https://riju.codes/minizinc
+ example
+  solve satisfy;
+  
+  output ["Hello, world!\n"];
+  
+
+twitter https://twitter.com/minizinc
+ubuntuPackage minizinc
+fileType text
+isOpenSource true
+centralPackageRepositoryCount 0
+
+isbndb 1
+ year|publisher|title|authors|isbn13
+ 2020|Springer|Building Decision Support Systems: Using Minizinc|Wallace, Mark|9783030417314

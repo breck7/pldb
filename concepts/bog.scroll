@@ -1,0 +1,82 @@
+import ../measures/conceptPage.scroll
+id bog
+appeared 2020
+type pl
+conceptDescription Small, strongly typed, embeddable language.
+country Finland
+originCommunity https://github.com/Vexu/bog/issues
+
+writtenIn zig
+
+hasPrintDebugging true
+hasAssignment true
+ let pldb = "pldb"
+hasStrings true
+ "pldb"
+hasImports true
+ let {print} = import "std.io"
+hasSemanticIndentation true
+hasDestructuring true
+ let add = fn ((a,b)) a + b
+ let tuplify = fn (a,b) (a,b)
+ return add(tuplify(1,2)) # 3
+hasTryCatch true
+ let foo = fn(arg)
+   try
+       fails_on_1(arg)
+       fails_on_2(arg)
+       fails_on_3(arg)
+   catch let err
+       return err
+   return 99
+hasForLoops true
+ let mut sum = 0
+ for let c in "hellö wörld"
+   match c
+       "h" => sum += 1
+       "e" => sum += 2
+       "l" => sum += 3
+       "ö" => sum += 4
+       "w" => sum += 5
+       "d" => sum += 6
+hasAsyncAwait true
+ let {print} = import "std.io"
+ let foo = fn()
+     print("foo started")
+     let bar_frame = async bar()
+     print("in foo")
+     let bar_res = await bar_frame
+     print("foo finished")
+     return bar_res
+ let bar = fn()
+     print("bar started")
+     suspend
+     print("bar resumed")
+     suspend
+     print("bar finished")
+     return 1
+ print("main started")
+ let foo_frame = async foo()
+ print("in main")
+ let res = await foo_frame
+ print("main finished:", res)
+
+example
+ let {print} = import "std.io"
+ let world = "world"
+ print(f"hello {world}!")
+
+githubRepo https://github.com/Vexu/bog
+ stars 254
+ forks 5
+ subscribers 10
+ created 2020
+ updated 2023
+ description Small, strongly typed, embeddable language.
+ issues 5
+
+repoStats
+ firstCommit 2020
+ commits 441
+ committers 8
+ files 52

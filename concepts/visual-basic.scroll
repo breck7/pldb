@@ -1,0 +1,115 @@
+import ../measures/conceptPage.scroll
+id Visual Basic
+appeared 1991
+type pl
+website https://msdn.microsoft.com/en-us/library/windows/desktop/ms788229.aspx
+documentation https://learn.microsoft.com/en-us/dotnet/visual-basic/
+aka vb
+aka VisualBasic
+country United States
+originCommunity Microsoft
+
+hasDirectives true
+ Option Explicit On|Off
+ Option Compare Binary
+hasOperatorOverloading false
+hasComments true
+hasLineComments true
+ ' A comment
+hasMultiLineComments false
+hasPrintDebugging true
+hasSemanticIndentation false
+hasCaseInsensitiveIdentifiers true
+hasStrings true
+hasBooleans true
+
+lineCommentToken '
+multiLineCommentTokens /* */
+printToken Console.WriteLine
+stringToken "
+booleanTokens True False
+keywords AddHandler AddressOf Alias And AndAlso As Async Boolean ByRef Byte ByVal Call Case Catch CBool CByte CChar CDate CDbl CDec Char CInt Class CLng CObj Const Continue CSByte CShort CSng CStr CType CUInt CULng CUShort Date Decimal Declare Default Delegate Dim DirectCast Do Double Each Else ElseIf End EndIf Enum Erase Error Event Exit False Finally For Friend Function Get GetType GetXMLNamespace Global GoSub GoTo Handles If Implements Imports In Inherits Integer Interface Is IsNot Let Lib Like Long Loop Me Mod Module MustInherit MustOverride MyBase MyClass NameOf Namespace Narrowing New Next Not Nothing NotInheritable NotOverridable Object Of On Operator Option Optional Or OrElse Out Overloads Overridable Overrides ParamArray Partial Private Property Protected Public RaiseEvent ReadOnly ReDim RemoveHandler Resume Return SByte Select Set Shadows Shared Short Single Static Step Stop String Structure Sub SyncLock Then Throw To True Try TryCast TypeOf UInteger ULong UShort Using Variant Wend When While Widening With WithEvents WriteOnly Xor
+
+wikipedia https://en.wikipedia.org/wiki/Visual_Basic
+ example
+  Option Explicit
+  Dim Count As Integer
+  Private Sub Form_Load()
+      Count = 0
+      Timer1.Interval = 1000 ' units of milliseconds
+  End Sub
+  Private Sub Timer1_Timer()
+      Count = Count + 1
+      Label1.Caption = Count
+  End Sub
+ related visual-basic.net visual-studio-editor basic gambas xojo basic4ppc ns-basic vba perl pascal fortran vbscript ruby quickbasic autocad-app asp winwrap-basic lotusscript
+ summary Visual Basic is a third-generation event-driven programming language and integrated development environment (IDE) from Microsoft for its Component Object Model (COM) programming model first released in 1991 and declared legacy during 2008. Microsoft intended Visual Basic to be relatively easy to learn and use. Visual Basic was derived from BASIC and enables the rapid application development (RAD) of graphical user interface (GUI) applications, access to databases using Data Access Objects, Remote Data Objects, or ActiveX Data Objects, and creation of ActiveX controls and objects. A programmer can create an application using the components provided by the Visual Basic program itself. Over time the community of programmers developed third-party components. Programs written in Visual Basic can also use the Windows API, which requires external function declarations. The final release was version 6 in 1998 (now known simply as Visual Basic). On  April 8, 2008, Microsoft stopped supporting Visual Basic 6.0 IDE. The Microsoft Visual Basic team still maintains compatibility for Visual Basic 6.0 applications on Windows Vista, Windows Server 2008 including R2, Windows 7, Windows 8, Windows 8.1, Windows Server 2012, Windows 10 and Windows Server 2016 through its "It Just Works" program. In 2014, some software developers still preferred Visual Basic 6.0 over its successor, Visual Basic .NET.  In 2014 some developers lobbied for a new version of the VB6 programming environment. In 2016, Visual Basic 6.0 won the technical impact award at The 19th Annual D.I.C.E. Awards. A dialect of Visual Basic, Visual Basic for Applications (VBA), is used as a macro or scripting language within several Microsoft applications, including Microsoft Office.
+ pageId 6097382
+ dailyPageViews 1574
+ created 2001
+ backlinksCount 2512
+ revisionCount 4052
+ appeared 1991
+
+githubBigQuery Visual Basic
+ repos 10510
+ users 9062
+
+antlr https://github.com/antlr/grammars-v4/tree/master/vb6
+monaco vb
+linguistGrammarRepo https://github.com/angryant0007/VBDotNetSyntax
+ firstCommit 2012
+ lastCommit 2017
+ committerCount 4
+ commitCount 61
+
+leachim6 Visual Basic
+ filepath v/Visual Basic.vb
+ example
+  Module HelloWorld
+      Sub Main()
+          MsgBox("Hello World")
+      End Sub
+  End Module
+quineRelay Visual Basic
+
+compilerExplorer Visual Basic
+ example
+  Module Program
+      Function Square(num As Integer) As Integer
+          Return num * num
+      End Function
+  End Module
+  
+rijuRepl https://riju.codes/visualbasic
+ example
+  Module Main
+      Sub Main(args As String())
+          Console.WriteLine("Hello, world!")
+      End Sub
+  End Module
+  
+
+indeedJobs visual basic engineer
+ 2017 3294
+
+subreddit https://reddit.com/r/visualbasic
+ memberCount
+  2017 3474
+  2022 7807
+meetup https://www.meetup.com/topics/vb
+ memberCount 12487
+ groupCount 21
+
+tiobe Visual Basic
+ currentRank 6
+hopl https://hopl.info/showlanguage.prx?exp=1374
+pypl Visual Basic
+
+ubuntuPackage mono-vbnc
+fileType text
+centralPackageRepositoryCount 0
+
+isbndb 0
+
+semanticScholar 0

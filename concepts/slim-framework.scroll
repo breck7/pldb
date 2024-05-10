@@ -1,0 +1,30 @@
+import ../measures/conceptPage.scroll
+id Slim Framework
+appeared 2013
+type framework
+website https://www.slimframework.com
+documentation https://www.slimframework.com/docs/v4/
+country United States and United Kingdom and Canada
+originCommunity https://github.com/slimphp
+
+writtenIn php
+
+example
+ <?php
+ use Psr\Http\Message\ResponseInterface as Response;
+ use Psr\Http\Message\ServerRequestInterface as Request;
+ use Slim\Factory\AppFactory;
+ 
+ require __DIR__ . '/../vendor/autoload.php';
+ 
+ $app = AppFactory::create();
+ 
+ $app->get('/hello/{name}', function (Request $request, Response $response, array $args) {
+     $name = $args['name'];
+     $response->getBody()->write("Hello, $name");
+     return $response;
+ });
+ 
+ $app->run();
+
+githubRepo https://github.com/slimphp/Slim

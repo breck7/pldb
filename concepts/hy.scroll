@@ -1,0 +1,130 @@
+import ../measures/conceptPage.scroll
+id Hy
+appeared 2013
+type pl
+creators Paul Tagliamonte
+conceptDescription A dialect of Lisp that's embedded in Python
+website http://hylang.org/
+documentation https://docs.hylang.org/en/stable/
+country Various
+originCommunity https://github.com/hylang
+domainName hylang.org
+ registered 2013
+ awisRank
+  2022 2391221
+
+hasLineComments true
+ ; A comment
+hasComments true
+ ; A comment
+hasPrintDebugging true
+hasSemanticIndentation false
+hasStrings true
+ "Hello world"
+hasOctals true
+ ; 0[0-7]+j?
+hasHexadecimals true
+ ; 0[xX][a-fA-F0-9]+
+hasFloats true
+ ; -?\d+\.\d+
+hasIntegers true
+ ; -?\d+
+hasMultiLineComments true
+
+lineCommentToken ;
+printToken print
+stringToken "
+
+example
+ (+ "Hyllo " "World" "!")
+
+githubRepo https://github.com/hylang/hy
+ firstCommit 2012
+ stars 4282
+ forks 350
+ subscribers 122
+ created 2012
+ updated 2022
+ description A dialect of Lisp that's embedded in Python
+ issues 68
+
+repoStats
+ firstCommit 2012
+ commits 3979
+ committers 203
+ files 163
+
+wikipedia https://en.wikipedia.org/wiki/Hy_(programming_language)
+ example
+  => (print "Hy!")
+  Hy!
+  => (defn salutationsnm [name] (print (+ "Hy " name "!")))
+  => (salutationsnm "YourName")
+  Hy YourName!
+ related lisp ia-32 clojure python jvm
+ summary Hy (alternately, Hylang) is a programming language, a dialect of the language Lisp designed to interact with the language Python by translating expressions into Python's abstract syntax tree (AST). Hy was introduced at Python Conference (PyCon) 2013 by Paul Tagliamonte.Similar to Kawa's and Clojure's mapping of s-expressions onto the Java virtual machine (JVM), Hy is meant to operate as a transparent Lisp front end to Python's abstract syntax. Lisp allows operating on code as data (metaprogramming). Thus, Hy can be used to write domain-specific languages. Hy also allows Python libraries, including the standard library, to be imported and accessed alongside Hy code with a compiling step converting the data structure of both into Python's AST.
+ pageId 43723435
+ created 2015
+ backlinksCount 76
+ revisionCount 1
+ dailyPageViews 1
+ appeared 2013
+ fileExtensions hy
+
+githubLanguage Hy
+ fileExtensions hy
+ trendingProjectsCount 0
+ type programming
+ interpreters hy
+ aceMode text
+ tmScope source.hy
+ aliases hylang
+ repos 398
+githubBigQuery Hy
+ repos 180
+ users 154
+
+pygmentsHighlighter Hy
+ filename lisp.py
+ fileExtensions hy
+linguistGrammarRepo https://github.com/Slowki/hy.tmLanguage.git
+ firstCommit 2013
+ lastCommit 2018
+ committerCount 30
+ commitCount 97
+ sampleCount 3
+ example
+  ;; Fibonacci example in Hy.
+  
+  (defn fib [n]
+    (if (<= n 2) n
+        (+ (fib (- n 1)) (fib (- n 2)))))
+  
+  (if (= __name__ "__main__")
+    (for [x [1 2 3 4 5 6 7 8]]
+      (print (fib x))))
+  
+
+leachim6 Hy
+ filepath h/Hy.hy
+ fileExtensions hy
+ example
+  (print "Hello World")
+  
+rosettaCode http://www.rosettacode.org/wiki/Category:Hy
+
+rijuRepl https://riju.codes/hy
+ example
+  (print "Hello, world!")
+  
+tryItOnline hy
+
+jupyterKernel https://github.com/bollwyvl/hy_kernel/
+jupyterKernel https://github.com/Calysto/calysto_hy
+fileType text
+isOpenSource true
+centralPackageRepositoryCount 0
+
+isbndb 0
+
+semanticScholar 0

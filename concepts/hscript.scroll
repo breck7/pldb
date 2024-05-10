@@ -1,0 +1,15 @@
+import ../measures/conceptPage.scroll
+id HScript
+appeared 1996
+type pl
+conceptDescription HScript is Houdini’s legacy scripting language.
+reference https://en.wikipedia.org/wiki/Houdini_(software)
+country Canada
+originCommunity Side Effects Software Inc
+
+example
+ if ( $F == 1 ) then
+     echo Frame One
+ else
+     echo Not Frame One
+ endif

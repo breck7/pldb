@@ -1,0 +1,29 @@
+import ../measures/conceptPage.scroll
+id Plot
+appeared 2006
+type pl
+creators David A. Moon
+website http://users.rcn.com/david-moon/PLOT/
+reference http://users.rcn.com/david-moon/PLOT/Moon-ILC09.pdf
+standsFor Programming Language for Old Timers
+country United States
+originCommunity Association of Lisp Users
+
+hasLineComments true
+ ; A comment
+hasComments true
+ ; A comment
+hasSemanticIndentation false
+
+lineCommentToken ;
+
+example
+ ;; A silly toy program
+ def response(threat)
+   if threat = #severe
+     run-in-circles()
+     scream-and-shout()
+   elseif threat = #moderate
+     print("Danger Will Robinson")
+   else
+     sleep(1)

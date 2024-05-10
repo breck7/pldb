@@ -1,0 +1,175 @@
+import ../measures/conceptPage.scroll
+id ColdFusion
+appeared 1995
+type pl
+creators Joseph J. Allaire
+website https://www.adobe.com/products/coldfusion
+documentation https://cfdocs.org/
+originCommunity Adobe
+
+hasComments true
+hasPrintDebugging true
+hasSemanticIndentation false
+hasStrings true
+ "Hello world"
+
+printToken cfoutput
+stringToken "
+
+wikipedia https://en.wikipedia.org/wiki/ColdFusion
+ example
+  http://path/to/components/Component.cfc?method=search&query=your+query&mode=strict
+ related java html cfml asp java-server-pages php javascript cfscript soap pdf smtp ftp xml xpath solaris excel-app linux ecmascript eclipse-editor wsdl json jython groovy jruby
+ summary Adobe ColdFusion is a commercial rapid web application development platform created by J. J. Allaire in 1995. (The programming language used with that platform is also commonly called ColdFusion, though is more accurately known as CFML.) ColdFusion was originally designed to make it easier to connect simple HTML pages to a database. By version 2 (1996), it became a full platform that included an IDE in addition to a full scripting language.
+ pageId 374636
+ dailyPageViews 85
+ created 2012
+ backlinksCount 386
+ revisionCount 1
+ appeared 1995
+
+githubLanguage ColdFusion
+ fileExtensions cfm cfml
+ trendingProjectsCount 0
+ type programming
+ aceMode coldfusion
+ tmScope text.html.cfm
+ aliases cfm or cfml or coldfusion html
+ repos 20756
+githubBigQuery ColdFusion
+ repos 2061
+ users 1476
+
+pygmentsHighlighter Coldfusion HTML
+ filename templates.py
+ fileExtensions cfm cfml
+linguistGrammarRepo https://github.com/SublimeText/ColdFusion
+ firstCommit 2012
+ lastCommit 2017
+ committerCount 15
+ commitCount 584
+ sampleCount 1
+ example
+  <!--- cfcomment --->
+  <!--- nested <!--- cfcomment ---> --->
+  <!--- multi-line
+  nested
+  <!---
+  cfcomment
+  --->
+  --->
+  <!-- html comment -->
+  <html>
+  <head>
+  <title>Date Functions</title>
+  </head>
+  <body>
+  <cfset RightNow = Now()>
+  <cfoutput>
+   #RightNow#<br />
+   #DateFormat(RightNow)#<br />
+   #DateFormat(RightNow,"mm/dd/yy")#<br />
+   #TimeFormat(RightNow)#<br />
+   #TimeFormat(RightNow,"hh:mm tt")#<br />
+   #IsDate(RightNow)#<br />
+   #IsDate("January 31, 2007")#<br />
+   #IsDate("foo")#<br />
+   #DaysInMonth(RightNow)#
+  </cfoutput>
+  <cfset x="x">
+  <cfset y="y">
+  <cfset z="z">
+  <cfoutput group="x">
+      #x#
+      <cfoutput>#y#</cfoutput>
+      #z#
+  </cfoutput>
+  </body>
+  </html>
+  
+  <cfset person = "Paul">
+  <cfset greeting = "Hello #person#">
+  
+  <cfset greeting = "Hello" & " world!">
+  <cfset a = 5>
+  <cfset b = 10>
+  <cfset c = a^b>
+  <cfset c = a MOD b>
+  <cfset c = a / b>
+  <cfset c = a * b>
+  <cfset c = a + b>
+  <cfset c = a - b>
+  <!--- <!-- another <!--- nested --> ---> comment --->
+
+projectEuler ColdFusion
+ memberCount
+  2019 9
+  2022 10
+helloWorldCollection ColdFusion
+ <!---Hello world in ColdFusion--->
+ 
+ <cfset message = "Hello World">
+ <cfoutput> #message#</cfoutput>
+ 
+leachim6 ColdFusion
+ filepath c/ColdFusion.cfm
+ fileExtensions cfm
+ example
+  <cfset message = "Hello World">
+  <cfoutput> #message#</cfoutput>
+  
+rosettaCode http://www.rosettacode.org/wiki/Category:ColdFusion
+
+meetup https://www.meetup.com/topics/coldfusion
+ memberCount 7310
+ groupCount 22
+
+packageRepository https://www.forgebox.io/
+
+twitter https://twitter.com/coldfusion
+fileType text
+isOpenSource false
+
+goodreads
+ title|year|author|goodreadsId|rating|ratings|reviews
+ Programming ColdFusion|2001|Rob Brooks-Bilson|559987|3.86|7|0
+ Programming Coldfusion MX|2003|Rob Brooks-Bilson|559982|3.78|18|0
+ Object-Oriented Programming in Coldfusion|2010|Matt Gifford|14947964|3.92|12|4
+ Coldfusion 8 Developer Tutorial|2008|John Farrar|6550757|4.00|5|0
+ Macromedia Coldfusion Mx7 Certified Developer Study Guide|2001|Ben Forta|559981|3.56|27|2
+ Java for Coldfusion Developers|2003|Eben Hewitt|2233112|3.00|3|0
+ ColdFusion MX for Dummies|2002|John Paul Ashenfelter|614391|4.25|4|0
+ Coldfusion 4.5 for Dummies [With CDROM]|2000|Alexis D. Gutzman|1731069|3.00|1|0
+ Coldfusion 9 Developer Tutorial|2010|John Farrar|14182329|0.0|0|0
+
+isbndb 27
+ year|publisher|title|authors|isbn13
+ 2010|Adobe Press|Adobe ColdFusion 9 Web Application Construction Kit: v. 1: Getting Started|Forta, Ben Forta|9780321660343
+ 2001|O'Reilly Media|Programming ColdFusion|Brooks-Bilson, Rob|9781565926981
+ 2010|Adobe Press|Adobe ColdFusion 9 Web Application Construction Kit, Volume 2: Application Development|Forta, Ben|9780321679192
+ 2002|Macromedia Press|ColdFusion MX Web Application Construction Kit (5th Edition)|Forta, Ben and Weiss, Nate and Chalnick, Leon and Buraglia, Angela C.|9780321125163
+ 2010|Packt Publishing|Object-Oriented Programming in ColdFusion|Gifford, Matt|9781847196323
+ 2004|Career Education|Programming The Web With Coldfusion Mx 6.1 Using Xhtml (web Developer Series)|Lakshmi Prayaga and Hamsa Suri|9780072890327
+ 2001|Pearson Education|ColdFusion 5 Language Reference|Ben Forta|9780789726988
+ 2010|Packt Publishing|ColdFusion 9 Developer Tutorial|Farrar, John|9781849690249
+ 2013|Adobe Press|Adobe ColdFusion 10 Web Application Construction Kit: ColdFusion 10 Enhancements and Improvements|Ben Forta and Charlie Arehart and Raymond Camden and Ken Fricklas and Hemanth Khandelwal and Chandan Kumar and Rob Brooks-Bilson|9780321890962
+ 2010|Packt Publishing|ColdFusion 9 Developer Tutorial|Farrar, John|9781849690256
+ 2013|Adobe Press|Adobe ColdFusion Web Application Construction Kit: ColdFusion 10 Enhancements and Improvements|Forta, Ben and Charlie Arehart and Raymond Camden and Ken Fricklas and Hemanth Khandelwal and Chandan Kumar and Rob Brooks-Bilson|9780133352511
+ 2003|O'Reilly Media|Programming ColdFusion MX, 2nd Edition|Rob Brooks-Bilson|9780596003807
+ 2002|Prentice Hall Ptr|Java for ColdFusion Developers|Hewitt, Eben|9780130461803
+ 1998|Que Pub|The Coldfusion 4.0 Web Application Construction Kit|Forta, Ben and Weiss, Nate|9780789718099
+ 2002|Syngress|Hack Proofing ColdFusion|Steve Casco and Rob Rusher and Greg Meyer and Sarge and David Vaccaro and David An|9781928994770
+ 2002|McGraw-Hill/OsborneMedia|ColdFusion 5: A Beginner's Guide (Beginner's Guides (Osborne))||9780072191097
+ 20121206|Springer Nature|Essential ColdFusion fast|Matthew Norman|9781447103332
+ 20030813|O'Reilly Media, Inc.|Programming ColdFusion MX|Rob Brooks-Bilson|9780596516987
+ 2011|Apress|Adobe Coldfusion Anthology|Michael Dinowitz and Judith Dinowitz|9781430269533
+ 2002|Macromedia Press|Macromedia ColdFusion 5: training from the source|Schmidt, Kevin J. (kevin James)|9780201758474
+ 20030813|O'Reilly Media, Inc.|Programming ColdFusion MX|Rob Brooks-Bilson|9781491909485
+ 2001|Osborne/mcgraw-hill|Optimizing Coldfusion 5|Chris Cortes|9780072193046
+ 20101228|Springer Nature|Adobe ColdFusion Anthology|Michael Dinowitz; Judith Dinowitz|9781430272144
+ 2002|New Riders|Dynamic Publishing with ColdFusion MX|Benjamin Elmore|9780735713123
+ 20101013|Packt Publishing|Object-Oriented Programming in ColdFusion|Matt Gifford|9781847196330
+ 2006|Equity Press|Macromedia Coldfusion MX 7 Interview Que|Terry Sanchez-Clark and Itcookbook|9781933804538
+ 2003|Mcgraw-hill Custom Publishing|Programming The Web With Coldfusion Mx Using Xhtml|Hamsa Suri Lakshmi Prayaga|9780072943924
+
+semanticScholar 0

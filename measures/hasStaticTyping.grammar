@@ -1,6 +1,0 @@
-hasStaticTypingParser
- extends abstractFeatureParser
- description Does the language have static typing at compile time?
- string title Static Typing
- string reference https://en.wikipedia.org/wiki/Type_system#Static_type_checking
- string pseudoExample int pldbRank = 100

@@ -1,0 +1,46 @@
+import ../measures/conceptPage.scroll
+id Triton
+appeared 2021
+type pl
+creators Philippe Tillet
+conceptDescription This is the development repository of Triton, a language and compiler for writing highly efficient custom Deep-Learning primitives. The aim of Triton is to provide an open-source environment to write fast code at higher productivity than CUDA, but also with higher flexibility than other existing DSLs.
+reference https://openai.com/blog/triton/
+originCommunity OpenAI
+
+relatedConcepts numba
+
+example
+ # This is a GPU kernel in Triton.
+ # Different instances of this
+ # function may run in parallel.
+ @jit
+ def add(X, Y, Z, N):
+    # In Triton, each kernel instance
+    # executes block operations on a
+    # single thread: there is no construct
+    # analogous to threadIdx
+    pid = program_id(0)
+    # block of indices
+    idx = pid * BLOCK + arange(BLOCK)
+    mask = idx < N
+    # Triton uses pointer arithmetics  
+    # rather than indexing operators
+    x = load(X + idx, mask=mask)
+    y = load(Y + idx, mask=mask)
+    store(Z + idx, x + y, mask=mask)
+
+githubRepo https://github.com/openai/triton
+ firstCommit 2021
+ stars 3881
+ forks 304
+ subscribers 89
+ created 2014
+ updated 2022
+ description Development repository for the Triton language and compiler
+ issues 83
+
+repoStats
+ firstCommit 2021
+ commits 3075
+ committers 133
+ files 289

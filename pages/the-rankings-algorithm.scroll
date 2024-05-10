@@ -1,0 +1,22 @@
+import header.scroll
+title The PLDB Rankings Algorithm
+groups index
+
+wideColumns 1
+
+The PLDB rankings algorithm is:
+
+katex LangScore(x) = sum(sortDesc(LinkRank(x), MeasurementsRank(x), JobsEstRank(x), UserEstRank(x))[0:2])
+
+You can verify this yourself by reading the source code.
+
+Each one of the four main inputs is composed from many sources and well over 100 signals go into calculating the rankings.
+ link acknowledgements.html sources
+
+# About the rankings
+In the beginning, PLDB did not have any rankings system. But I learned over the years that an imperfect ranking system is _vastly_ more useful than no ranking system. For example, languages used to be listed alphabetically which made it very hard to find the pages for the languages people used most. At least in my opinion, the site has become signficantly more useful since I added the rankings system.
+
+Along those lines, improvements to the rankings system make the site better, and therefore I am rather frequently trying to add more signals and improve the algorithm. 100% of the data and code produced by PLDB is open source, public domain, and published to git, so it can be a team effort to continuously build better rankings.
+ https://github.com/breck7/pldb published to git
+
+import footer.scroll

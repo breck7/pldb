@@ -1,0 +1,375 @@
+import ../measures/conceptPage.scroll
+id Rust
+appeared 2010
+type pl
+creators Graydon Hoare
+website https://www.rust-lang.org
+documentation https://www.rust-lang.org/learn
+documentation https://devdocs.io/rust/
+reference https://blog.rust-lang.org/2018/11/27/Rust-survey-2018.html
+fileExtensions rs rlib
+originCommunity Mozilla
+domainName rust-lang.org
+ registered 2010
+ awisRank
+  2022 10763
+proposals https://github.com/rust-lang/rfcs
+
+visualParadigm false
+
+hasStrings true
+ "hello world"
+hasComments true
+ // https://doc.rust-lang.org/reference/comments.html
+ // a comment
+hasMultiLineComments true
+ /* A comment
+ */
+hasDirectives true
+ // A conditionally-compiled module
+ #[cfg(target_os = "linux")]
+ mod bar {
+     /* ... */
+ }
+ // General metadata applied to the enclosing module or crate.
+ #![crate_type = "lib"]
+ // A function marked as a unit test
+ #[test]
+ fn test_foo() {
+     /* ... */
+ }
+ // A lint attribute used to suppress a warning/error
+ #[allow(non_camel_case_types)]
+ type int8_t = i8;
+ 
+ // Inner attribute applies to the entire function.
+ fn some_unused_variables() {
+   #![allow(unused_variables)]
+ 
+   let x = ();
+   let y = ();
+   let z = ();
+ }
+hasImports true
+ use ::std::fs;  // Imports from the `std` crate, not the module below.
+ use self::std::fs as self_fs;  // Imports the module below.
+ mod my;
+ use self::foo::Zoo as _;
+ #[path = "foo.rs"]
+ mod c;
+hasIterators true
+ for n in 0..42 {
+   println!("{}", n);
+ }
+hasMacros true
+ // https://doc.rust-lang.org/book/ch19-06-macros.html
+ #[macro_export]
+ macro_rules! vec {
+     ( $( $x:expr ),* ) => {
+         {
+             let mut temp_vec = Vec::new();
+             $(
+                 temp_vec.push($x);
+             )*
+             temp_vec
+         }
+     };
+ }
+hasOperatorOverloading true
+hasPatternMatching true
+hasPrintDebugging true
+ println!("Hi");
+hasSemanticIndentation false
+hasCaseInsensitiveIdentifiers false
+hasTypeInference true
+hasLineComments true
+ // A comment
+hasBooleans true
+hasWhileLoops true
+hasConstants true
+hasConditionals true
+
+lineCommentToken //
+multiLineCommentTokens /* */
+printToken println!
+stringToken "
+booleanTokens true false
+keywords abstract alignof as become box break const continue crate do else enum extern false final fn for if impl in let loop macro match mod move mut offsetof override priv proc pub pure ref return Self self sizeof static struct super trait true type typeof unsafe unsized use virtual where while yield
+
+gource https://www.youtube.com/watch?v=Ds0Psk1YmOc
+githubRepo https://github.com/rust-lang/rust
+ stars 77242
+ forks 10314
+ subscribers 1489
+ created 2010
+ updated 2023
+ description Empowering everyone to build reliable and efficient software.
+ issues 9522
+
+repoStats
+ firstCommit 2010
+ commits 227223
+ committers 6006
+ files 41028
+
+wikipedia https://en.wikipedia.org/wiki/Rust_(programming_language)
+ related linux freebsd android ios alef csharp cyclone erlang haskell haxe limbo newsqueak ruby scheme standard-ml swift crystal elm idris c ml go java ocaml llvmir d nim emacs-editor
+ summary Rust is a systems programming language sponsored by Mozilla Research, which describes it as a "safe, concurrent, practical language," supporting functional and imperative-procedural paradigms. Rust is syntactically similar to C++, but its designers intend it to provide better memory safety while maintaining performance. Rust is an open source programming language. Its designers have refined the language through the experiences of writing the Servo web browser layout engine and the Rust compiler. A large portion of current commits to the project are from community members. Rust won first place for "most loved programming language" in the Stack Overflow Developer Survey in 2016 and 2017; it is referenced in The Book of Mozilla as "oxidised metal".
+ pageId 29414838
+ dailyPageViews 1159
+ created 2010
+ backlinksCount 336
+ revisionCount 956
+ appeared 2016
+ fileExtensions rs rlib
+
+githubLanguage Rust
+ fileExtensions rs rsin
+ trendingProjects
+  author name avatar url language languageColor stars forks currentPeriodStars description
+  rust-lang rust https://github.com/rust-lang.png https://github.com/rust-lang/rust Rust #dea584 38932 6045 851 "Empowering everyone to build reliable and efficient software."
+  xi-editor druid https://github.com/xi-editor.png https://github.com/xi-editor/druid Rust #dea584 623 33 162 "Data-oriented Rust UI design toolkit."
+  yewstack yew https://github.com/yewstack.png https://github.com/yewstack/yew Rust #dea584 8506 323 422 "Rust framework for building client web apps"
+  getzola zola https://github.com/getzola.png https://github.com/getzola/zola Rust #dea584 2306 215 156 "A fast static site generator in a single binary with everything built-in."
+  wasmerio wasmer https://github.com/wasmerio.png https://github.com/wasmerio/wasmer Rust #dea584 4321 146 315 "The Universal WebAssembly Runtime"
+  cloudflare wrangler https://github.com/cloudflare.png https://github.com/cloudflare/wrangler Rust #dea584 644 63 185 "🤠 wrangle your cloudflare workers"
+  rust-unofficial awesome-rust https://github.com/rust-unofficial.png https://github.com/rust-unofficial/awesome-rust Rust #dea584 12178 807 497 "A curated list of Rust code and resources."
+  CraneStation wasmtime https://github.com/CraneStation.png https://github.com/CraneStation/wasmtime Rust #dea584 1282 90 130 "Standalone JIT-style runtime for WebAssembly, using Cranelift"
+  tokio-rs tokio https://github.com/tokio-rs.png https://github.com/tokio-rs/tokio Rust #dea584 5810 483 326 "A runtime for writing reliable asynchronous applications with Rust. Provides I/O, networking, scheduling, timers, ..."
+  SergioBenitez Rocket https://github.com/SergioBenitez.png https://github.com/SergioBenitez/Rocket Rust #dea584 7888 551 273 "A web framework for Rust."
+  hyperium hyper https://github.com/hyperium.png https://github.com/hyperium/hyper Rust #dea584 5153 752 171 "An HTTP library for Rust"
+  rust-lang-nursery futures-rs https://github.com/rust-lang-nursery.png https://github.com/rust-lang-nursery/futures-rs Rust #dea584 2833 350 85 "Zero-cost asynchronous programming in Rust"
+  Spotifyd spotifyd https://github.com/Spotifyd.png https://github.com/Spotifyd/spotifyd Rust #dea584 2017 106 112 "A spotify daemon"
+  maps4print azul https://github.com/maps4print.png https://github.com/maps4print/azul Rust #dea584 3105 123 211 "Desktop GUI Framework"
+  rust-lang regex https://github.com/rust-lang.png https://github.com/rust-lang/regex Rust #dea584 1200 189 42 "An implementation of regular expressions for Rust. This implementation uses finite automata and guarantees linear time matching on all inputs."
+  servo servo https://github.com/servo.png https://github.com/servo/servo Rust #dea584 14762 2222 210 "The Servo Browser Engine"
+  tokio-rs tracing https://github.com/tokio-rs.png https://github.com/tokio-rs/tracing Rust #dea584 262 27 127 "Application level tracing for Rust."
+  CraneStation cranelift https://github.com/CraneStation.png https://github.com/CraneStation/cranelift Rust #dea584 2066 172 138 "Cranelift code generator"
+  ggez ggez https://github.com/ggez.png https://github.com/ggez/ggez Rust #dea584 1715 213 79 "Rust library to create a Good Game Easily"
+  rust-lang cargo https://github.com/rust-lang.png https://github.com/rust-lang/cargo Rust #dea584 4696 989 109 "The Rust package manager"
+  sharkdp bat https://github.com/sharkdp.png https://github.com/sharkdp/bat Rust #dea584 15094 295 413 "A cat(1) clone with wings."
+  paritytech substrate https://github.com/paritytech.png https://github.com/paritytech/substrate Rust #dea584 1437 374 95 "Substrate: The platform for blockchain innovators"
+  gfx-rs gfx https://github.com/gfx-rs.png https://github.com/gfx-rs/gfx Rust #dea584 3334 389 111 "A low-overhead Vulkan-like GPU API for Rust."
+  rust-lang rust-clippy https://github.com/rust-lang.png https://github.com/rust-lang/rust-clippy Rust #dea584 3740 498 114 "A bunch of lints to catch common mistakes and improve your Rust code"
+  seanmonstar reqwest https://github.com/seanmonstar.png https://github.com/seanmonstar/reqwest Rust #dea584 1782 277 109 "An easy and powerful Rust HTTP Client"
+ trendingProjectsCount 26
+ type programming
+ aceMode rust
+ codemirrorMode rust
+ codemirrorMimeType text/x-rustsrc
+ tmScope source.rust
+ aliases rs
+ repos 356891
+githubBigQuery Rust
+ repos 15753
+ users 9148
+
+monaco rust
+codeMirror rust
+pygmentsHighlighter Rust
+ filename rust.py
+ fileExtensions rs rs.in
+linguistGrammarRepo https://github.com/zargony/atom-language-rust
+ firstCommit 2014
+ lastCommit 2018
+ committerCount 28
+ commitCount 181
+ sampleCount 3
+ example
+  extern crate foo;
+  extern crate bar;
+  
+  use foo::{self, quix};
+  use bar::car::*;
+  use bar;
+  
+  fn main() {
+      println!("Hello {}", "World");
+  
+      panic!("Goodbye")
+  }
+  
+languageServerProtocolProject https://github.com/rust-lang-nursery/rls
+ writtenIn rust
+
+projectEuler Rust
+ memberCount
+  2019 507
+  2022 1227
+helloWorldCollection Rust
+ // Hello world in Rust
+ 
+ fn main() {
+     println!("Hello World!");
+ }
+leachim6 Rust
+ filepath r/Rust.rs
+ fileExtensions rs
+ example
+  fn main() {
+      println!("Hello World");
+  }
+  
+rosettaCode http://www.rosettacode.org/wiki/Category:Rust
+quineRelay Rust
+
+compilerExplorer Rust
+ example
+  // Type your code here, or load an example.
+  pub fn square(num: i32) -> i32 {
+      num * num
+  }
+  
+  // If you use `main()`, declare it as `pub` to see it in the output:
+  // pub fn main() { ... }
+  
+rijuRepl https://riju.codes/rust
+ example
+  fn main() {
+      println!("Hello, world!");
+  }
+  
+replit https://repl.it/languages/rust
+tryItOnline rust
+
+indeedJobs rust engineer
+ 2017 141
+stackOverflowSurvey
+ 2021
+  users 5799
+  medianSalary 77530
+  fans 15865
+  percentageUsing 0.07
+officialBlogUrl https://blog.rust-lang.org/
+faqPageUrl https://prev.rust-lang.org/en-US/faq.html
+
+irc https://webchat.freenode.net/?channels=##rust
+discord https://discord.gg/rust-lang
+zulip https://rust-lang.zulipchat.com/
+subreddit https://reddit.com/r/rust
+ memberCount
+  2017 30807
+  2022 186942
+meetup https://www.meetup.com/topics/rust
+ memberCount 29951
+ groupCount 122
+
+tiobe Rust
+ currentRank 31
+pypl Rust
+
+packageRepository https://crates.io/
+
+twitter https://twitter.com/rustlang
+ubuntuPackage rustc
+gdbSupport true
+jupyterKernel https://github.com/google/evcxr/tree/master/evcxr_jupyter
+fileType text
+isOpenSource true
+
+isbndb 65
+ year|publisher|title|authors|isbn13
+ 2018|No Starch Press|The Rust Programming Language|Klabnik, Steve and Nichols, Carol|9781593278281
+ 2020|Manning Publications|Rust in Action|McNamara, TS|9781617294556
+ 2020|Packt Publishing|Creative Projects for Rust Programmers: Build exciting projects on domains such as web apps, WebAssembly, games, and parsing|Milanesi, Carlo|9781789346220
+ 2019|Packt Publishing|Rust Programming Cookbook: Explore the latest features of Rust 2018 for building fast and secure apps|Matzinger, Claus|9781789530667
+ 2019-08-12T00:00:01Z|No Starch Press|The Rust Programming Language (Covers Rust 2018)|Klabnik, Steve and Nichols, Carol|9781718500440
+ 2021|No Starch Press|Rust for Rustaceans: Idiomatic Programming for Experienced Developers|Gjengset, Jon|9781718501850
+ 2021|Pragmatic Bookshelf|Hands-on Rust|Wolverson, Herbert|9781680508802
+ 2021|No Starch Press|Rust for Rustaceans: Idiomatic Programming for Experienced Developers|Gjengset, Jon|9781718501867
+ 2019|No Starch Press|The Rust Programming Language (Covers Rust 2018)|Klabnik, Steve and Nichols, Carol|9781718500457
+ 2022|O'Reilly Media|Command-Line Rust: A Project-Based Primer for Writing Rust CLIs|Youens-Clark, Ken|9781098109431
+ 2021|Wiley|Beginning Rust Programming|Messier, Ric|9781119712978
+ 2020|Packt Publishing|Creative Projects for Rust Programmers: Build exciting projects on domains such as web apps, WebAssembly, games, and parsing|Milanesi, Carlo|9781789343878
+ 2021|Manning|Rust in Action|McNamara, Tim|9781638356226
+ 2021|Packt Publishing - ebooks Account|Rust Web Programming: A hands-on guide to developing fast and secure web apps with the Rust programming language|Flitton, Maxwell|9781800560819
+ 2019-01-25T00:00:01Z|Packt Publishing|Hands-On Data Structures and Algorithms with Rust: Learn programming techniques to build effective, maintainable, and readable code in Rust 2018|Matzinger, Claus|9781788995528
+ 2018|No Starch Press|The Rust Programming Language|Klabnik, Steve and Nichols, Carol|9781593278519
+ 2019-05-22T00:00:01Z|Packt Publishing|The Complete Rust Programming Reference Guide: Design, develop, and deploy effective software systems using the advanced constructs of Rust|Sharma, Rahul and Kaihlavirta, Vesa and Matzinger, Claus|9781838828103
+ 2020|Apress|Rust for the IoT: Building Internet of Things Apps with Rust and Raspberry Pi|Nusairat, Joseph Faisal|9781484258590
+ 2020|Apress|Rust for the IoT: Building Internet of Things Apps with Rust and Raspberry Pi|Nusairat, Joseph Faisal|9781484258606
+ 2019|Packt Publishing|Hands-On Microservices with Rust: Build, test, and deploy scalable and reactive microservices with Rust 2018|Kolodin, Denis|9781789341980
+ 2019|Apress|Practical Machine Learning with Rust: Creating Intelligent Applications in Rust|Bhattacharjee, Joydeep|9781484251218
+ 2019|Packt Publishing|Rust Programming Cookbook: Explore the latest features of Rust 2018 for building fast and secure apps|Matzinger, Claus|9781789531749
+ 2021|Wiley|Beginning Rust Programming|Messier, Ric|9781119712879
+ 2018|Packt Publishing|Hands-On Functional Programming in Rust: Build modular and reactive applications with functional programming techniques in Rust 2018|Johnson, Andrew|9781788831581
+ 2018|Packt Publishing|Rust High Performance: Learn to skyrocket the performance of your Rust applications|Eguia Moraza, Iban|9781788478236
+ 2018|Packt Publishing|Rust Programming By Example: Enter the world of Rust by building engaging, concurrent, reactive, and robust applications|Gomez, Guillaume and Boucher, Antoni|9781788470308
+ 2021|Apress|Practical Rust Web Projects: Building Cloud and Web-Based Applications|Lyu, Shing|9781484265895
+ 2018-05-31T00:00:01Z|Packt Publishing|Hands-On Functional Programming in Rust: Build modular and reactive applications with functional programming techniques in Rust 2018|Johnson, Andrew|9781788839358
+ 2020-12-24T00:00:01Z|Packt Publishing|Practical System Programming for Rust Developers: Build fast and secure software for Linux/Unix systems with the help of practical examples|Eshwarla, Prabhu|9781800560963
+ 2020|Apress|Practical Rust Projects: Building Game, Physical Computing, and Machine Learning Applications|Lyu, Shing|9781484255995
+ 2018-01-15T00:00:00.000Z|Armstrong Publications LLC|Step Ahead with Rust: Systems Programming in Rust|Jonathan Creekmore and James Miller|9780999361801
+ 2019|Packt Publishing|Mastering Rust: Learn about memory safety, type system, concurrency, and the new features of Rust 2018 edition, 2nd Edition|Sharma, Rahul and Kaihlavirta, Vesa|9781789341188
+ 2018|Packt Publishing|Rust Quick Start Guide: The easiest way to learn Rust programming|Arbuckle, Daniel|9781789616705
+ 2018-01-11T00:00:01Z|Packt Publishing|Rust Programming By Example: Enter the world of Rust by building engaging, concurrent, reactive, and robust applications|Gomez, Guillaume and Boucher, Antoni|9781788390637
+ 2020|Apress|Practical Rust Projects: Building Game, Physical Computing, and Machine Learning Applications|Lyu, Shing|9781484255988
+ 2019||The Rust Programming Language|Steve Klabnik and Carol Nichols|9781098122539
+ 2019|Electronic Industry Press|Rust programming(Chinese Edition)|ZHANG HAN DONG ZHU|9787121354854
+ 2022|Packt Publishing - ebooks Account|Practical WebAssembly-Explore the fundamentals of WebAssembly programming using Rust|Sendil Kumar Nellaiyapen|9781838828004
+ 2022|BPB Publications|Learn Rust Programming: Safe Code, Supports Low Level and Embedded Systems Programming with a Strong Ecosystem (English Edition)|Matzinger, Claus|9789355511546
+ 2022|BPB Publications|Rust Crash Course: Build High-Performance, Efficient and Productive Software with the Power of Next-Generation Programming Skills (English Edition)|Kumar, Abhishek|9789355510952
+ 24-11-2017|Packt Publishing|Learning Rust|Paul Johnson|9781785888885
+ 2021|O'reilly Media, Inc.|Programming Rust|Jim Blandy and Jason Orendorff and Leonora F.S. Tindall|9781492052562
+ 2017-05-30|Packt Publishing|Mastering Rust|Vesa Kaihlavirta|9781785881374
+ 20210611|O'Reilly Media, Inc.|Programming Rust|Jim Blandy; Jason Orendorff; Leonora F .S. Tindall|9781492052548
+ 20171121|O'Reilly Media, Inc.|Programming Rust|Jim Blandy; Jason Orendorff|9781491927236
+ 2015-05-27|Packt Publishing|Rust Essentials|Ivo Balbaert|9781785282133
+ 2017-07-27|Packt Publishing|Rust Cookbook|Vigneshwer Dhinakaran|9781785886218
+ 20180322|Springer Nature|Beginning Rust|Carlo Milanesi|9781484234686
+ 2021|翔泳社|Rust In Action|Tim McNamara|9784798160221
+ 26-02-2021|Packt Publishing|Rust Web Programming|Maxwell Flitton|9781800566095
+ 2022|O'reilly Media, Inc.|Command-line Rust|Ken Youens-Clark|9781098109400
+ 20220225|O'Reilly Media, Inc.|Rust Brain Teasers|Herbert Wolverson|9781680509557
+ 20220113|O'Reilly Media, Inc.|Command-Line Rust|Ken Youens-Clark|9781098109387
+ ||Network Programming With Rust|Abhishek Chanda|9781789348071
+ 30-10-2018|Packt Publishing|Rust Quick Start Guide|Daniel Arbuckle|9781789610611
+ 43047|Packt Publishing|Rust Essentials - Second Edition|Ivo Balbaert|9781788399135
+ 29-03-2018|Packt Publishing|Rust Standard Library Cookbook|Jan Hohenheim, Daniel Durante|9781788629652
+ ||Learn Rust In 7 Days|Matthew Stoodley|9781789805499
+ 2022-06-30|Packt Publishing|Rust Web Development with Rocket|Karuna Murti|9781800560826
+ 31-05-2018|Packt Publishing|Hands-On Concurrency with Rust|Brian L. Troutwine|9781788478359
+ 24-12-2020|Packt Publishing|Practical System Programming for Rust Developers|Prabhu Eshwarla|9781800562011
+ 29-04-2022|Packt Publishing|Game Development with Rust and WebAssembly|Eric Smith|9781801074995
+ 43607|Packt Publishing|The Complete Rust Programming Reference Guide|Rahul Sharma; Vesa Kaihlavirta; Claus Matzinger|9781838826383
+ 21-01-2022|Packt Publishing|Speed Up Your Python with Rust|Maxwell Flitton|9781801812320
+ 25-01-2019|Packt Publishing|Hands-On Data Structures and Algorithms with Rust|Claus Matzinger|9781788991490
+
+semanticScholar 36
+ year|title|doi|citations|influentialCitations|authors|paperId
+ 2014|The rust language|10.1145/2663171.2663188|238|25|Nicholas D. Matsakis and Felix S. Klock|50eba68089cf51323d95631c2f59ff916848863f
+ 2017|RustBelt: securing the foundations of the rust programming language|10.1145/3158154|192|23|Ralf Jung and Jacques-Henri Jourdan and R. Krebbers and Derek Dreyer|6a8ceba15f95d03617e79aaba35515776c4bc4d9
+ 2020|Is Rust Used Safely by Software Developers?|10.1145/3377811.3380413|23|5|A. Evans and Bradford Campbell and M. Soffa|8f564873814a12526a844d69c216ba2b599bdf9a
+ 2020|Understanding memory and thread safety practices and issues in real-world Rust programs|10.1145/3385412.3386036|23|5|Boqin Qin and Yilun Chen and Zeming Yu and Linhai Song and Yiying Zhang|d536933053c16f6ab16f92468542084630e72f55
+ 2017|POSTER: Rust SGX SDK: Towards Memory Safety in Intel SGX Enclave|10.1145/3133956.3138824|21|4|Yu Ding and Ran Duan and Long Li and Yueqiang Cheng and Yulong Zhang and Tanghui Chen and Tao Wei and Huibo Wang|187e2d1c888c5c0529e5a50c8c90efe9889cbd69
+ 2017|Sandcrust: Automatic Sandboxing of Unsafe Components in Rust|10.1145/3144555.3144562|20|3|Benjamin Lamowski and C. Weinhold and A. Lackorzynski and Hermann Härtig|2b7bd2b93f5aa66a65d9cfc7f0222a16d3aca007
+ 2018|Verifying Rust Programs with SMACK|10.1007/978-3-030-01090-4_32|20|1|Marek S. Baranowski and Shaobo He and Z. Rakamaric|350795523676e071a64d8d60acd30252db2c7eec
+ 2021|Safe systems programming in Rust|10.1145/3418295|17|0|Ralf Jung and Jacques-Henri Jourdan and R. Krebbers and Derek Dreyer|01bd07b28877e088aefc9a54ba842b8aa3b804f5
+ 2018|KRust: A Formal Executable Semantics of Rust|10.1109/TASE.2018.00014|12|1|Feng Wang and Fu Song and Min Zhang and Xiaoran Zhu and Jun Zhang|dc734f8a1e20f7de5dbbe8c668c0683381bbcb1a
+ 2019|Exploring Rust for Unikernel Development|10.1145/3365137.3365395|12|0|Stefan Lankes and J. Breitbart and Simon Pickartz|efa6eb7b43f19f8b072f9323ac2e838618537932
+ 2020|Understanding and evolving the Rust programming language|10.22028/D291-31946|11|1|Ralf Jung|37d7114d5a9bc202742bd0c248fe8af1a689d1b6
+ 2018|Fidelius Charm: Isolating Unsafe Rust Code|10.1145/3176258.3176330|8|2|Hussain M. J. Almohri and David Evans|d72458f9501963670b50ee9fe78e622425955630
+ 2020|Design of a DSL for Converting Rust Programming Language into RTL|10.1007/978-3-030-39746-3_36|8|0|K. Takano and Tetsuya Oda and M. Kohata|aaf8eeb909892036436dff4bef41a0924e730d6c
+ 2019|Identifying Barriers to Adoption for Rust through Online Discourse|10.4230/OASIcs.PLATEAU.2018.5|7|0|Anna Zeng and Will Crichton|6f6a28a3115e147e443a545fd8f75cf7a3babf1b
+ 2020|Memory-Safety Challenge Considered Solved? An In-Depth Study with All Rust CVEs|10.1145/3466642|6|1|Hui Xu and Zhuangbin Chen and Mingshen Sun and Yangfan Zhou and Michael R. Lyu|164b3187c0d904f04e96ac5f0d5b9fdeab0da547
+ 2020|Securing UnSafe Rust Programs with XRust|10.1145/3377811.3380325|6|2|Peiming Liu and Gang Zhao and Jeff Huang|f3b75979611c111233c9cd5e6674e71be83b6f13
+ 2021|GhostCell: separating permissions from data in Rust|10.1145/3473597|5|1|Joshua Yanovski and Hoang-Hai Dang and Ralf Jung and Derek Dreyer|c2e188799c7bdca68f6334b329682e12b1d58da9
+ 2021|A Lightweight Formalism for Reference Lifetimes and Borrowing in Rust|10.1145/3443420|5|0|David J. Pearce|fede987ed6b38a516655cc05c3ed55a19068b1a9
+ 2016|What can the programming language Rust do for astrophysics?|10.1017/S1743921316013168|5|0|S. Blanco-Cuaresma and É. Bolmont|4567c1f22d80334eade2ceb396d43ae8e895b131
+ 2017|On utilizing rust programming language for Internet of Things|10.1109/CICN.2017.8319363|4|0|Tunç Uzlu and E. Saykol|c9cb48a5680fe6911ca620897980c51a8aa5f9a6
+ 2019|Structured Stream Parallelism for Rust|10.1145/3355378.3355384|3|0|Ricardo Pieper and Dalvan Griebler and L. G. Fernandes|2739f9c914bb01de599f4549b0e847b10c83c3df
+ 2021|Keeping Safe Rust Safe with Galeed|10.1145/3485832.3485903|3|0|Elijah Rivera and Samuel Mergendahl and Howie Shrobe and H. Okhravi and N. Burow|ff3de8816bc7685668a56da5c30eecc76c817558
+ 2022|RustHornBelt: a semantic foundation for functional verification of Rust programs with unsafe code|10.1145/3519939.3523704|2|0|Yusuke Matsushita and Xavier Denis and Jacques-Henri Jourdan and Derek Dreyer|36674fd3bc28fd3f01711de8785171c720a97a25
+ 2020|Towards Profile-Guided Optimization for Safe and Efficient Parallel Stream Processing in Rust|10.1109/SBAC-PAD49847.2020.00047|2|0|Stefan Sydow and Mohannad Nabelsee and S. Glesner and Paula Herber|336759267740e25049691e8f74374721dc4718a4
+ 2021|Rudra: Finding Memory Safety Bugs in Rust at the Ecosystem Scale|10.1145/3477132.3483570|2|1|Yechan Bae and Youngsuk Kim and Ammar Askar and Jungwon Lim and Taesoo Kim|57b463af9a5699fb4011435cee3429f51ce86113
+ 2018|Detecting Unsafe Raw Pointer Dereferencing Behavior in Rust|10.1587/TRANSINF.2018EDL8040|1|0|Zhijian Huang and Y. Wang and J. Liu|0dd40638f259c5b99cab356706943ee7697c811d
+ 2019|Basics of Rust|10.1007/978-1-4842-5121-8_1|1|0|J. Bhattacharjee|cc5c9f522aa65cb5ddb5f2dae650a3e7a0739b03
+ 2019|Devise Rust Compiler Optimizations on RISC-V Architectures with SIMD Instructions|10.1145/3339186.3339193|1|0|Heng Lin and Piyo Chen and Yuan-Shin Hwang and Jenq-Kuen Lee|fcee0c1a34783b7f7253dfccae2f29af38dd3259
+ 2019|Verification of Safety Functions Implemented in Rust - a Symbolic Execution based approach|10.1109/INDIN41052.2019.8972014|1|0|Marcus Lindner and Nils Fitinghoff and Johan Eriksson and P. Lindgren|f17890851dcaa805c0d47cc084113626c298382b
+ 2022|Verifying Dynamic Trait Objects in Rust|10.1109/ICSE-SEIP55303.2022.9794041|1|0|Alexa VanHattum and Daniel Schwartz-Narbonne and Nathan Chong and Adrian Sampson|1ff44db7ee219174273efba0e4a42bf24c1807cf
+ 2021|SafeDrop: Detecting Memory Deallocation Bugs of Rust Programs via Static Data-Flow Analysis|10.1145/3542948|1|0|Mohan Cui and Chengjun Chen and Hui Xu and Yangfan Zhou|9d0046724361849d494d42338bbb77874dd0bdf4
+ 2020|VRLifeTime -- An IDE Tool to Avoid Concurrency and Memory Bugs in Rust|10.1145/3372297.3420024|1|0|Ziyi Zhang and Boqin Qin and Yilun Chen and Linhai Song and Yiying Zhang|38a0f156a77cdac95dbac2affdeb3b9e91cc531c
+ 2020|Approach of a Coding Conventions for Warning and Suggestion in Transpiler for Rust Convert to RTL|10.1109/GCCE50665.2020.9292032|1|0|K. Takano and Tetsuya Oda and M. Kohata|9046c775dcb9ad9e21eaece1f90537f9741acf51
+ 2021|Translating C to safer Rust|10.1145/3485498|1|0|Mehmet Emre and Ryan Schroeder and Kyle Dewey and B. Hardekopf|d0fb133db727fc51913e623041a6e86eb99e8c6c
+ 2021|Performance vs Programming Effort between Rust and C on Multicore Architectures: Case Study in N-Body|10.1109/CLEI53233.2021.9640225|1|0|Manuel Costanzo and Enzo Rucci and M. Naiouf and A. D. Giusti|74dfb86326be51d0cc2d0aee69d3266d8994ea31
+ 2019|On Evaluating Rust as a Programming Language for the Future of Massive Agent-Based Simulations|10.1007/978-981-15-1078-6_2|1|0|Alessia Antelmi and G. Cordasco and Matteo D'Auria and Daniele De Vinco and A. Negro and Carmine Spagnuolo|f57083b736fa347d6e48d09bdc09a308df017eeb

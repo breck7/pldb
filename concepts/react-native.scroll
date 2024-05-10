@@ -1,0 +1,45 @@
+import ../measures/conceptPage.scroll
+id React Native
+appeared 2015
+type library
+creators Ben Alpert
+website http://www.reactnative.com/
+country United States
+originCommunity Facebook, Inc or TheFacebook, Inc
+domainName reactnative.com
+ registered 2015
+ awisRank
+  2022 2683585
+
+githubRepo https://github.com/facebook/react-native
+ stars 103571
+ forks 22211
+ subscribers 3667
+ created 2015
+ updated 2022
+ firstCommit 2015
+ description A framework for building native applications using React
+ issues 2183
+
+leachim6 React Native
+ filepath r/React Native.js
+ example
+  import React from "react";
+  import { Text, View } from "react-native";
+  
+  export default function HelloWorld() {
+      return (
+          <View>
+              <Text>Hello World</Text>
+          </View>
+      );
+  }
+  
+
+fileType text
+isOpenSource true
+centralPackageRepositoryCount 0
+
+goodreads
+ title|year|author|goodreadsId|rating|ratings|reviews
+ Programming React Native||Dotan Nahum|51202148|4.67|3|1

@@ -1,0 +1,38 @@
+import ../measures/conceptPage.scroll
+id dex
+appeared 2018
+type pl
+country United States
+originCommunity Google
+
+hasLineComments true
+ -- A comment
+hasComments true
+ -- A comment
+hasSemanticIndentation false
+
+lineCommentToken --
+
+example
+ :p x = 1.                -- let binding
+   y = (z = 2.; z + 1.)  -- let binding of a nested let expression
+   ..                    -- escaped cosmetic line break
+   x + y                 -- body of let expression
+
+githubRepo https://github.com/google-research/dex-lang
+ firstCommit 2018
+ stars 1232
+ forks 83
+ subscribers 53
+ created 2019
+ updated 2022
+ description Research language for array processing in the Haskell/ML family
+ issues 152
+
+repoStats
+ firstCommit 2018
+ commits 3922
+ committers 55
+ files 255
+
+isbndb 0

@@ -1,6 +1,0 @@
-abstractParadigmParser
- cells columnNameCell boolCell
- extends abstractBooleanColumnParser
-visualParadigmParser
- extends abstractParadigmParser
- description Is this a visual programming thing? Sometimes called "no code" or "low code"?

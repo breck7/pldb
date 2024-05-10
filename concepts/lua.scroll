@@ -1,0 +1,235 @@
+import ../measures/conceptPage.scroll
+id Lua
+appeared 1993
+type pl
+creators Roberto Ierusalimschy
+website https://www.lua.org/
+documentation https://www.lua.org/docs.html
+documentation https://devdocs.io/lua/
+emailList https://www.lua.org/lua-l.html
+reference http://www.lua.org/manual/5.1/manual.html#2.1
+country Brazil
+originCommunity Tecgraf
+domainName lua.org
+ registered 2000
+ awisRank
+  2022 51513
+releaseNotesUrl https://www.lua.org/versions.html
+
+visualParadigm false
+
+hasComments true
+hasMultiLineComments true
+ --[[
+ A comment.
+ --]]
+hasAssignment true
+hasOperatorOverloading true
+hasLineComments true
+ -- A comment
+hasMaps true
+ https://www.lua.org/pil/2.5.html
+hasPrintDebugging true
+hasSemanticIndentation false
+hasCaseInsensitiveIdentifiers false
+hasStrings true
+hasBooleans true
+hasWhileLoops true
+hasFunctions true
+hasConditionals true
+hasScientificNotation true
+
+lineCommentToken --
+multiLineCommentTokens --[[ --]]
+printToken print
+stringToken "
+booleanTokens true false
+keywords and break do else elseif end false for function if in local nil not or repeat return then true until while
+
+wikipedia https://en.wikipedia.org/wiki/Lua_(programming_language)
+ example
+  $ cc -o example example.c -llua
+  $ ./example
+  Result: 8
+ related clu modula-2 scheme snobol falcon gamemonkey-script io javascript julia minid red ruby squirrel tcl lisp python modula awk ada eiffel haskell sql vhdl self perl-6 parrot-vm android c
+ summary Lua ( LOO-ə, from Portuguese: lua [ˈlu.(w)ɐ] meaning moon) is a lightweight, multi-paradigm programming language designed primarily for embedded systems and clients. Lua is cross-platform, since the interpreter is written in ANSI C, and has a relatively simple C API. Lua was originally designed in 1993 as a language for extending software applications to meet the increasing demand for customization at the time. It provided the basic facilities of most procedural programming languages, but more complicated or domain-specific features were not included; rather, it included mechanisms for extending the language, allowing programmers to implement such features. As Lua was intended to be a general embeddable extension language, the designers of Lua focused on improving its speed, portability, extensibility, and ease-of-use in development.
+ pageId 46150
+ dailyPageViews 1069
+ created 2002
+ backlinksCount 2096
+ revisionCount 2536
+ appeared 1993
+
+githubLanguage Lua
+ fileExtensions lua fcgi nse p8 pd_lua rbxs rockspec wlua
+ trendingProjects
+  author name avatar url language languageColor stars forks currentPeriodStars description
+  vulnersCom nmap-vulners https://github.com/vulnersCom.png https://github.com/vulnersCom/nmap-vulners Lua #000080 1613 245 112 "NSE script based on Vulners.com API"
+  koreader koreader https://github.com/koreader.png https://github.com/koreader/koreader Lua #000080 5226 668 103 "An ebook reader application supporting PDF, DjVu, EPUB, FB2 and many more formats, running on Cervantes, Kindle, Kobo, PocketBook and Android devices"
+  stijnwop guidanceSteering https://github.com/stijnwop.png https://github.com/stijnwop/guidanceSteering Lua #000080 174 55 15 "Guidance Steering (AutoTrack) for Farming Simulator 19."
+  cmusatyalab openface https://github.com/cmusatyalab.png https://github.com/cmusatyalab/openface Lua #000080 12574 3099 141 "Face recognition with deep neural networks."
+  cardwing Codes-for-Lane-Detection https://github.com/cardwing.png https://github.com/cardwing/Codes-for-Lane-Detection Lua #000080 375 125 92 "Learning Lightweight Lane Detection CNNs by Self Attention Distillation (ICCV 2019)"
+  Kong kong https://github.com/Kong.png https://github.com/Kong/kong Lua #000080 23291 2898 452 "🦍 The Cloud-Native API Gateway"
+  nagadomi waifu2x https://github.com/nagadomi.png https://github.com/nagadomi/waifu2x Lua #000080 15744 1802 374 "Image Super-Resolution for Anime-Style Art"
+  opentibiabr OTServBR-Global https://github.com/opentibiabr.png https://github.com/opentibiabr/OTServBR-Global Lua #000080 57 81 14 "OTServBR-Global 10x and 12x for OpenTibia community. | Supported by:"
+  Tencent LuaPanda https://github.com/Tencent.png https://github.com/Tencent/LuaPanda Lua #000080 329 74 48 "Lua Debugger for VS Code"
+ trendingProjectsCount 10
+ type programming
+ filenames .luacheckrc
+ interpreters lua
+ aceMode lua
+ codemirrorMode lua
+ codemirrorMimeType text/x-lua
+ tmScope source.lua
+ repos 243541
+githubBigQuery Lua
+ repos 34346
+ users 23389
+
+antlr https://github.com/antlr/grammars-v4/tree/master/lua
+monaco lua
+codeMirror lua
+pygmentsHighlighter Lua
+ filename scripting.py
+ fileExtensions lua wlua
+linguistGrammarRepo https://github.com/textmate/lua.tmbundle
+ firstCommit 2006
+ lastCommit 2018
+ committerCount 11
+ commitCount 63
+ sampleCount 5
+ example
+  
+  -- A simple counting object that increments an internal counter whenever it receives a bang at its first inlet, or changes to whatever number it receives at its second inlet.
+  
+  local HelloCounter = pd.Class:new():register("h-counter")
+  
+  function HelloCounter:initialize(sel, atoms)
+  	self.inlets = 2
+  	self.outlets = 1
+  	self.num = 0
+  	return true
+  end
+  
+  function HelloCounter:in_1_bang()
+  	self:outlet(1, "float", {self.num})
+  	self.num = self.num + 1
+  end
+  
+  function HelloCounter:in_2_float(f)
+  	self.num = f
+  end
+  
+languageServerProtocolProject https://github.com/Alloyed/lua-lsp
+ writtenIn lua
+
+projectEuler Lua
+ memberCount
+  2019 437
+  2022 477
+helloWorldCollection Lua
+ # Hello World in Lua
+ 
+ print "Hello world"
+ 
+leachim6 Lua
+ filepath l/Lua.lua
+ fileExtensions lua
+ example
+  print("Hello World")
+rosettaCode http://www.rosettacode.org/wiki/Category:Lua
+quineRelay Lua
+
+rijuRepl https://riju.codes/lua
+ example
+  print("Hello, world!")
+  
+replit https://repl.it/languages/lua
+tryItOnline lua
+
+indeedJobs lua developer
+ 2022 736
+linkedInSkill lua
+ 2018 36954
+officialBlogUrl https://www.lua.org/news.html
+faqPageUrl https://www.lua.org/faq.html
+downloadPageUrl https://www.lua.org/download.html
+
+subreddit https://reddit.com/r/lua
+ memberCount
+  2017 5571
+  2022 15290
+meetup https://www.meetup.com/topics/lua
+ memberCount 4670
+ groupCount 24
+
+tiobe Lua
+ currentRank 30
+hopl https://hopl.info/showlanguage.prx?exp=2196
+pypl Lua
+
+packageRepository https://luarocks.org/
+
+ubuntuPackage lua5.3
+jupyterKernel https://github.com/pakozm/IPyLua
+jupyterKernel https://github.com/neomantra/lua_ipython_kernel
+jupyterKernel https://github.com/scrapinghub/splash/tree/master/splash/kernel
+fileType text
+isOpenSource true
+
+goodreads
+ title|year|author|goodreadsId|rating|ratings|reviews
+ Programming in Lua|2001|Roberto Ierusalimschy|1321894|3.97|323|21
+
+isbndb 34
+ year|publisher|title|authors|isbn13
+ 2013|Packt Publishing|LÖVE for Lua Game Programming|Akinlaja, Darmie|9781782161608
+ 2003|Roberto Ierusalimschy|Programming In Lua|Ierusalimschy, Roberto|9788590379812
+ 2006|Lua.org|Lua 5.1 Reference Manual|Ierusalimschy, Roberto and de Figueiredo, Luiz Henrique and Celes, Waldemar|9788590379836
+ 2012|Apress|Learn Lua for iOS Game Development|Varma, Jayant|9781430246626
+ 2011|John Wiley & Sons|Beginning Lua Programming|Kurt Jung and Aaron Brown|9781118079119
+ 2013|Packt Publishing|CryENGINE Game Programming with C++, C#, and Lua|Lundgren, Filip and Pearce-Authers, Ruan|9781849695909
+ 2013|Apress|Learn Lua for iOS Game Development|Varma, Jayant|9781430246633
+ 2018-07-27T00:00:01Z|Packt Publishing|Lua Quick Start Guide: The easiest way to learn Lua programming|Szauer, Gabor|9781789343229
+ 2018|Packt Publishing|Lua Quick Start Guide: The easiest way to learn Lua programming|Szauer, Gabor|9781789340136
+ 2021|Packt Publishing|Coding Roblox Games Made Easy: The ultimate guide to creating games with Roblox Studio and Lua programming|Brumbaugh, Zander|9781800566361
+ 2009|Apress|Beginning Lua with World of Warcraft Add-ons|Emmerich, Paul|9781430223719
+ 2007|Wrox|Beginning Lua Programming|Jung, Kurt|9780470069172
+ 2013-01-03T00:00:01Z|Lua.org|Programming in Lua|Ierusalimschy, Roberto|9788590379850
+ 2021|Sams Publishing|Coding with Roblox Lua in 24 Hours: The Official Roblox Guide|Official Roblox Books (HarperCollins)|9780136829287
+ 2012|CreateSpace Independent Publishing Platform|Basic ROBLOX Lua Programming: (Black and White Edition)|LaRouche, Brandon John|9781475026047
+ 2021|Packt Publishing - ebooks Account|Coding Roblox Games Made Easy: The Ultimate Guide to Creating Games with Roblox Studio and Lua programming|Zander Brumbaugh|9781800561991
+ 2008|Lua.org|Lua Programming Gems||9788590379843
+ 2009|Apress|Beginning Lua with World of Warcraft Add-ons|Emmerich, Paul|9781430223726
+ 2014|Packt Publishing|Learning Game AI Programming with Lua|Young, David|9781783281336
+ 2013|Packt Publishing|CryENGINE Game Programming with C++, C#, and Lua|Lundgren, Filip and Pearce-Authers, Ruan|9781849695916
+ 2015|Packt Publishing|Lua Game Development Cookbook: Over 70 recipes that will help you master the elements and best practices required to build a modern game engine using Lua|Kasuba, Mario|9781849515504
+ 2018-12-20T00:00:01Z|Apress|Developing Games on the Raspberry Pi: App Programming with Lua and LÖVE|Kenlon, Seth|9781484241691
+ 2013|CreateSpace Independent Publishing Platform|ComputerCraft: Lua Programming in Minecraft|Monk, Matthew and Monk, Simon|9781481927659
+ 2001|O'Reilly Media|Programming Lua|Roberto Ierusalimschy|9780596101114
+ 2019||Lua Programming Language, First Edition|Lua Publishing|9781704204666
+ 2010||Lua Programming Language: Lua, Luatex, Luaforge|Books and LLC|9781157436553
+ 2007|John Wiley & Sons, Ltd.|Beginning Lua Programming|Kurt Jung|9780470139523
+ 2009||Lua (programming Language)|Frederic P. Miller and Agnes F. Vandome and John McBrewster and Miller and Frederic P. and Vandome and Agnes F. and McBrewster and John|9786130256982
+ |Brandon Larouche|Basic Roblox Lua Programming||9780985451301
+ 20150728|Packt Publishing|Lua Game Development Cookbook|Mario Kasuba|9781849515511
+ 2009|ToÌkyoÌ : AsukiÌmediawaÌkusu, ToÌkyoÌ : KadokawaguruÌpupaburisshingu. 2009 ;|Programming In Lua Lua Programming Language Official Reference (2009) Isbn: 4048677977 [japanese Import]|Roberto Ierusalimschy; Kei ShinjoÌ|9784048677974
+ 20131003|Packt Publishing|LOVE for Lua Game Programming|Darmie Akinlaja|9781782161615
+ 20141128|Packt Publishing|Learning Game AI Programming with Lua|David Young|9781783281343
+ |Packt Pub.|LÖve For Lua Game Programming: Master The Lua Programming Language And Build Exciting Strategy-based Games In 2d Using The LÖve Framework|Akinlaja, Darmie.|9781782161608
+
+semanticScholar 13
+ year|title|doi|citations|influentialCitations|authors|paperId
+ 2014|Typed Lua: An Optional Type System for Lua|10.1145/2617548.2617553|20|1|André Murbach Maidl and Fabio Mascarenhas and R. Ierusalimschy|ea5301e30ef4b41aec9fa4195b6203cf109460d7
+ 2009|Programming with Multiple Paradigms in Lua|10.1007/978-3-642-11999-6_1|14|0|R. Ierusalimschy|f2b781bf970a8b7c73aa12bd87c1fc615f83a9b2
+ 2003|Processing sequence annotation data using the Lua programming language.|10.11234/GI1990.14.154|11|0|Y. Ueno and Masanori Arita and Toshitaka Kumagai and K. Asai|cb7050a0e9215caa9956b66f67ee691697f11009
+ 2017|Lua Code: Security Overview and Practical Approaches to Static Analysis|10.1109/SPW.2017.38|9|0|Andrei Costin|88cc784a7e846af8889eeb524f9b0dc480d6368a
+ 2017|Luandri: A Clean Lua Interface to the Indri Search Engine|10.1145/3077136.3080650|5|0|Bhaskar Mitra and Fernando Diaz and Nick Craswell|0af8eea643b0391fb552db4828d7706366ee546f
+ 2015|Unit test code generator for lua programming language|10.1109/ICODSE.2015.7437005|5|0|Junno Tantra Pratama Wibowo and B. Hendradjaya and Yani Widyani|73eac2f3afa05a25133296f4d89df3c8472e6a1f
+ 2013|LuaRocks - A Declarative and Extensible Package Management System for Lua|10.1007/978-3-642-40922-6_2|4|0|Hisham H. Muhammad and Fabio Mascarenhas and R. Ierusalimschy|f14491f989fc88b8e64986ff25bcee3e4bec41a6
+ 2015|GUI rendering engine utilizing Lua as script|10.1109/CEWS.2015.7867151|3|0|Dusan Zivkov and Daniel Kurtjak and Mladen Grumic|084164a7f0f9bf5c01de64acea10b7add97fb427
+ 2015|Operational Semantics for Featherweight Lua|10.31979/etd.xysf-s2af|3|1|Hao Lin|efa547deaa7a77b4e9009cd38bb8035d611c968a
+ 2012|From visual scripting to Lua|10.1145/2389836.2389848|1|0|Mwawi F. Msiska and L. V. Zijl|d2a9f3989f76dec14c09105735ef0d66245fe407
+ 2016|Towards a GPU Abstraction for Lua|10.1109/SBAC-PADW.2016.11|1|0|Raphael Ribeiro and Paulo Motta|0fd3290aea2a7b33cd37dab5a9c0a13c928b87cc
+ 2019|Beginning Lua Scripting|10.1007/978-1-4842-5073-0_8|1|0|Jaken Chandler Herman|3fbf132d1d63c88d6560bc41570058b9b6f2590a
+ 2017|Remote Sensing Image Processing Functions in Lua Language|10.6062/JCIS.2017.08.03.0133|1|0|R. F. B. Marujo and Leila Maria Garcia Fonseca and T. Körting and H. N. Bendini and G. R. Queiroz and L. Vinhas and K. Ferreira|a5233f484177b2d6a042c864a80392eb45cc768a

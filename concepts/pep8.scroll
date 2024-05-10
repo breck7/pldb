@@ -1,0 +1,87 @@
+import ../measures/conceptPage.scroll
+id Pep8
+appeared 2009
+type assembly
+reference http://computersystemsbook.com/4th-edition/pep8/
+country United States
+originCommunity Pepperdine University
+
+example
+  BR main
+  num: .EQUATE 0 
+  main: SUBSP 2,i 
+  DECI num,s 
+  if: LDA num,s 
+  ANDA 0x0001,i
+  BRNE else
+  STRO even_msg,d 
+  BR endIf
+  else: STRO odd_msg,d 
+  endIf: ADDSP 2,i 
+  STOP
+  odd_msg: .ASCII "The number is: Odd\x00"
+  even_msg: .ASCII "The number is: Even\x00"
+  .END
+
+githubRepo https://github.com/StanWarford/pep8
+ firstCommit 2009
+ stars 20
+ forks 4
+ subscribers 8
+ created 2015
+ updated 2022
+ description Pep/8 assembler and simulator for the textbook Computer Systems, J. Stanley Warford, Fourth edition
+ issues 0
+
+repoStats
+ firstCommit 2009
+ commits 490
+ committers 8
+ files 265
+
+githubLanguage Pep8
+ fileExtensions pep
+ trendingProjectsCount 0
+ type programming
+ aceMode text
+ tmScope source.pep8
+ repos 165
+githubBigQuery Pep8
+ repos 33
+ users 32
+
+linguistGrammarRepo https://github.com/R4PaSs/Sublime-Pep8
+ firstCommit 2015
+ lastCommit 2017
+ committerCount 1
+ commitCount 3
+ sampleCount 7
+ example
+  _start:	LDA	0,i
+  	LDX	0,i
+  	LDA	20, i
+  	ADDA	51, i
+  	CPA	0,i
+  	BRLT	s3
+  	BR	s4
+  s1:	LDBYTEA	s3, x
+  	NOTA
+  	STBYTEA s3, x
+  	ADDX	1,i
+  	CPX	12, i
+  	BRNE	s1
+  s2:	STOP
+  s4:	LDA	31, d
+  	LDX	50, d
+  	RET0
+  	STOP
+  s3:	CPX	-27746, d
+  	ANDX	-8241, i
+  	SUBA	-12337, sxf
+  	LDX	-12289, sx
+  	.END
+  
+
+fileType text
+isOpenSource true
+centralPackageRepositoryCount 0

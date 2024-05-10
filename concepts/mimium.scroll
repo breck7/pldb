@@ -1,0 +1,40 @@
+import ../measures/conceptPage.scroll
+id mimium
+appeared 2019
+type pl
+creators Tomoya Matsuura
+conceptDescription mimium (MInimal Musical medIUM) a programming language as an infrastructure for sound and music.
+website https://mimium.org
+reference https://dblp.org/rec/conf/icfp/MatsuuraJ21
+country Japan
+originCommunity Kyushu University
+domainName mimium.org
+ registered 2020
+
+example
+ // A minimal example below generates a sinewave of 440Hz:
+ // minimal.mmm
+ twopi = 3.141595*2
+ sr = 48000
+ fn dsp(){
+     out = sin(now * 440 * twopi / sr)
+     return (out,out)
+ }
+
+githubRepo https://github.com/mimium-org/mimium
+ firstCommit 2019
+ stars 251
+ forks 7
+ subscribers 8
+ created 2020
+ updated 2022
+ description mimium (MInimal Musical medIUM) a programming language as an infrastructure for sound and music.
+ issues 7
+
+repoStats
+ firstCommit 2019
+ commits 1167
+ committers 9
+ files 229
+
+twitter https://twitter.com/mimium-org

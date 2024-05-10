@@ -1,0 +1,154 @@
+import ../measures/conceptPage.scroll
+id Hack
+appeared 2014
+type pl
+creators Julien Verlaguet and Alok Menghrajani and Drew Paroski
+website http://hacklang.org/
+documentation https://docs.hhvm.com/hack/
+originCommunity Facebook
+domainName hacklang.org
+ registered 2013
+ awisRank
+  2022 643552
+  2017 328982
+
+hasFirstClassFunctions true
+hasLineComments true
+ // A comment
+hasComments true
+ // A comment
+hasPrintDebugging true
+hasMultiLineComments true
+ /* A comment
+ */
+hasSemanticIndentation false
+hasStrings true
+ "Hello world"
+
+lineCommentToken //
+multiLineCommentTokens /* */
+printToken echo
+stringToken "
+
+wikipedia https://en.wikipedia.org/wiki/Hack_(programming_language)
+ example
+  <?hh
+  // Hack functions are annotated with types.
+  function negate(bool $x): bool {
+      return !$x;
+  }
+ related php ocaml java csharp scala haskell actionscript html parrot-vm
+ summary Hack is a programming language for the HipHop Virtual Machine (HHVM), created by Facebook as a dialect of PHP. The language implementation is open-source, licensed under the BSD License. Hack allows programmers to use both dynamic typing and static typing. This kind of a type system is called gradual typing, which is also implemented in other programming languages such as ActionScript. Hack's type system allows types to be specified for function arguments, function return values, and class properties; however, types of local variables are always inferred and cannot be specified.
+ pageId 42257880
+ dailyPageViews 243
+ created 2014
+ backlinksCount 156
+ revisionCount 209
+ appeared 2014
+
+githubLanguage Hack
+ fileExtensions hack hh hhi php
+ trendingProjects
+  author name avatar url language languageColor stars forks currentPeriodStars description
+  facebook fbctf https://github.com/facebook.png https://github.com/facebook/fbctf Hack #878787 5992 1205 31 "Platform to host Capture the Flag competitions"
+ trendingProjectsCount 2
+ type programming
+ aceMode php
+ codemirrorMode php
+ codemirrorMimeType application/x-httpd-php
+ tmScope source.hack
+ repos 68473
+githubBigQuery Hack
+ repos 3242
+ users 2993
+
+linguistGrammarRepo https://github.com/textmate/php.tmbundle
+ firstCommit 2005
+ lastCommit 2018
+ committerCount 28
+ commitCount 509
+ sampleCount 28
+ example
+  <?hh // strict
+  /**
+   * Copyright (c) 2014, Facebook, Inc.
+   * All rights reserved.
+   *
+   * This source code is licensed under the BSD-style license found in the
+   * LICENSE file in the root directory of this source tree. An additional grant
+   * of patent rights can be found in the PATENTS file in the same directory.
+   *
+   */
+  
+  function startup(): void {
+    setup_errors();
+  }
+  
+
+helloWorldCollection Hack
+ <?hh
+ // Hello world in Hack
+ echo 'Hello World';
+leachim6 Hack
+ filepath h/Hack.hh
+ fileExtensions hh
+ example
+  <?hh 
+  echo "Hello World";
+  
+rosettaCode http://www.rosettacode.org/wiki/Category:Hack
+
+rijuRepl https://riju.codes/hack
+ example
+  <<__EntryPoint>>
+  function main(): void {
+    echo "Hello, world!\n";
+  }
+
+indeedJobs hack developer
+ 2022 19
+
+tiobe Hack
+ currentRank 33
+
+twitter https://twitter.com/hacklang
+fileType text
+wordRank 8412
+isOpenSource true
+centralPackageRepositoryCount 0
+
+isbndb 27
+ year|publisher|title|authors|isbn13
+ 2001|Syngress|Hack Proofing Your Web Applications|Syngress and Forristal, Jeff|9781928994312
+ 2015|O'Reilly Media|Hack and HHVM: Programming Productivity Without Breaking Things|Yamauchi, Owen|9781491920879
+ 2001|Syngress|Hack Proofing Sun Solaris 8|Syngress and Mitchell, Ed and Dubrawsky, Ido and Miles, Wyman and Lynch, F. William|9781928994442
+ 2001|Syngress|Hack Proofing Your Ecommerce Site|L. Brent Huston and Teri Bidwell and Ryan Russell and Robin Walshaw and Oliver Steudler|9781928994275
+ 2019|No Starch Press|Raspberry Pi Projects for Kids: Create an MP3 Player, Mod Minecraft, Hack Radio Waves, and More!|Aldred, Dan|9781593279462
+ 2019|Independently published|"Hacking With Kali Linux: The Practical Beginner's Guide to Learn How To Hack With Kali Linux in One Day Step-by-Step (#2020 Updated Version | Effective Computer Programming)"|Tudor, Steve|9781703885675
+ 2019|Independently Published|How To Analyze People: Learn How To Read People And Improve Your Empathic, Mind-control And Body Language Skills To Develop A Deeper Understanding Of Human Relationships And To Hack Others' Thought|Johnson, Adam|9781704309217
+ 2018|Routledge|Hack Audio: An Introduction to Computer Programming and Digital Signal Processing in MATLAB (Audio Engineering Society Presents)|Tarr, Eric|9781351018456
+ 2019|No Starch Press|Raspberry Pi Projects for Kids: Create an MP3 Player, Mod Minecraft, Hack Radio Waves, and More!|Aldred, Dan|9781593279479
+ 2006|Syngress|Hack the Stack: Using Snort and Ethereal to Master The 8 Layers of An Insecure Network|Michael Gregg and Stephen Watkins and George Mays and Chris Ries and Ronald M. Bandes and Brandon Franklin|9781597491099
+ 2002|Syngress|Hack Proofing Your Network (Second Edition)|Ryan Russell and Dan Kaminsky and Rain Forest Puppy and Joe Grand and K2 and David Ahmad and Hal Flynn and Ido Dubrawsky and Steve W. Manzuik and Ryan Permeh|9781928994701
+ 2018|Routledge|Hack Audio: An Introduction to Computer Programming and Digital Signal Processing in MATLAB (Audio Engineering Society Presents)|Tarr, Eric|9781138497542
+ 2002|Syngress|Hack Proofing ColdFusion|Steve Casco and Rob Rusher and Greg Meyer and Sarge and David Vaccaro and David An|9781928994770
+ 2001|Syngress|Hack Proofing Linux : A Guide to Open Source Security|Stanger, James and Lane, Patrick T.|9781928994343
+ 2021|Charlie Creative Lab|Python Programming Crash Course: Master Python From Zero Without Headaches Supported by Professional Instructions. The Non-Binding Guide to Hack Python in 2021.||9781801583381
+ 2002|Syngress|Hack Proofing Your Network|Syngress|9780080478166
+ 2014|Rosen Young Adult|Getting to Know Hackety Hack (Code Power: A Teen Programmer’s Guide, 2)|Rauf, Don|9781477777053
+ 2020|Hacking and Programming for Beginners|Hacking: Become a World Class Hacker, Hack Any Password, Program Or System With Proven Strategies and Tricks|Studios, Hacking|9789198630855
+ 20180628|Taylor & Francis|Hack Audio|Eric Tarr|9781351018449
+ 20191029|Taylor & Francis|Art Hack Practice|Loren David Calder|9781351241199
+ 20150902|O'Reilly Media, Inc.|Hack and HHVM|Owen Yamauchi|9781491920855
+ 20150902|O'Reilly Media, Inc.|Hack and HHVM|Owen Yamauchi|9781491920831
+ 20171107|Sourcebooks|The Happiness Hack|Ellen Petry Leanse|9781492670162
+ 20170707|Open Road Integrated Media, Inc.|The Mind Hack Recipe|Jason Mangrum|9781683502531
+ 20140715|Rosen Publishing|Getting to Know Hackety Hack|Don Rauf|9781477777060
+ 2020|Routledge|Art Hack Practice: Critical Intersections Of Art, Innovation And The Maker Movement|Bradbury, Victoria and O'hara, Suzy|9780815374916
+ 2019|Independently Published|Nlp: Neuro-linguistic Programming: Techniques For Your Best Self: Hack Your Mind For Healthier Relationships, More Self-con|Wright and Avery|9781795503181
+
+semanticScholar 3
+ year|title|doi|citations|influentialCitations|authors|paperId
+ 2017|Hack weeks as a model for data science education and collaboration|10.1073/pnas.1717196115|36|3|D. Huppenkothen and A. Arendt and D. Hogg and Karthik Ram and J. Vanderplas and A. Rokem|589ebdd0d7b4a58f7fdfb07f116f62681bb9a915
+ 2018|HHVM JIT: a profile-guided, region-based compiler for PHP and Hack|10.1145/3192366.3192374|30|5|Guilherme Ottoni|463bdf21ef53ae058836529fa277fc3d511e9665
+ 2020|“Serenade Tower” Hack and Slash Game|10.1088/1757-899X/1007/1/012151|1|0|Leonardo and Jeanny Pragantha and Darius Andana Haris|a941607acfa813854417b43be867ad1ad30772b6

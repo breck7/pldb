@@ -1,8 +1,0 @@
-creatorNameCell
- extends stringCell
-creatorsParser
- extends abstractStringListColumnParser
- boolean alwaysRecommended true
- description What are the name(s) of the original creators of the language delimited by " and "?
- catchAllCellType creatorNameCell
- listDelimiter  and 

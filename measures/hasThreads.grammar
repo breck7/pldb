@@ -1,6 +1,0 @@
-hasThreadsParser
- extends abstractFeatureParser
- description Does the language support a concept of threads?
- string title Threads
- string pseudoExample thread1(); thread2();
- string reference https://en.wikipedia.org/wiki/Thread_(computing)

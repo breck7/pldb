@@ -1,0 +1,70 @@
+import ../measures/conceptPage.scroll
+id LiveCode
+appeared 2001
+type pl
+website https://livecode.org/
+oldName revolution
+country Scotland
+originCommunity LiveCode Ltd
+domainName livecode.org
+ registered 2012
+ awisRank
+  2022 9510664
+  2017 2641722
+
+hasComments true
+hasLineComments true
+ -- A comment
+hasPrintDebugging true
+hasSemanticIndentation false
+
+lineCommentToken --
+printToken answer
+
+wikipedia https://en.wikipedia.org/wiki/LiveCode
+ example
+  put url "binfile:picture.jpg" into url "ftp://john:passwd@ftp.example.net:2121/picture.jpg"
+ related linux android ios hypertalk hypercard sql
+ summary LiveCode (formerly Revolution and MetaCard) is a cross-platform rapid application development runtime environment inspired by HyperCard. It features the Transcript (formerly MetaTalk) programming language which belongs to the family of xTalk scripting languages like HyperCard's HyperTalk. The environment was introduced in 2001. The "Revolution" development system was based on the MetaCard engine technology which Runtime Revolution later acquired from MetaCard Corporation in 2003. The platform won the Macworld Annual Editor's Choice Award for "Best Development Software" in 2004. "Revolution" was renamed "LiveCode" in the fall of 2010. "LiveCode" is developed and sold by Runtime Revolution Ltd., based in Edinburgh, Scotland. In March, 2015, the company was renamed "LiveCode Ltd.", to unify the company name with the product. In April 2013 a free/open source version 'LiveCode Community Edition 6.0' was published after a successful crowdfunding campaign at Kickstarter. The code base was re-licensed and made available as free and open source software with a version in April 2013. LiveCode runs on iOS, Android, OS X, Windows 95 through Windows 10, Raspberry Pi and several variations of Unix, including Linux, Solaris, and BSD. It can be used for mobile, desktop and server/CGI applications. The iOS (iPhone and iPad) version was released in December 2010. The first version to deploy to the Web was released in 2009. It is the most widely used HyperCard/HyperTalk clone, and the only one that runs on all major operating systems. A developer release of v.8 was announced in New York on March 12, 2015. This major enhancement to the product includes a new, separate development language, known as "LiveCode Builder", which is capable of creating new object classes called "widgets". In earlier versions, the set of object classes was fixed, and could only be enhanced via the use of ordinary procedural languages like C. The new language, which runs in its own IDE, is a departure from the transitional x-talk paradigm in that it permits typing of variables. But the two environments are fully integrated, and apart from the ability to create new objects, development in LiveCode proceeds in the normal way, within the established IDE. A second crowdfunding campaign to Bring HTML5 to LiveCode reached funding goals of nearly $400,000 USD on July 31, 2014. LiveCode developer release 8.0 DP4 (August 31, 2015) was the first to include a standalone deployment option to HTML5.
+ pageId 30890362
+ dailyPageViews 60
+ created 2003
+ backlinksCount 55
+ revisionCount 303
+ appeared 2001
+
+projectEuler LiveCode
+ memberCount
+  2022 1
+helloWorldCollection LiveCode
+ -- Hello world in LiveCode (formerly called Revolution, formerly called Transcript)
+ 
+ answer "Hello World!"
+leachim6 LiveCode
+ filepath l/LiveCode
+ example
+  answer "Hello World!" 
+  
+rosettaCode http://www.rosettacode.org/wiki/Category:LiveCode
+
+tiobe LiveCode
+
+fileType text
+centralPackageRepositoryCount 0
+
+goodreads
+ title|year|author|goodreadsId|rating|ratings|reviews
+ Programming Livecode for the Real Beginner||Mark Schonewille|52807550|3.00|1|1
+ LiveCode Lite: Computer Programming Made Ridiculously Simple||Stephen Goldberg|55375098|3.00|1|0
+
+isbndb 7
+ year|publisher|title|authors|isbn13
+ 2013|Economy-x-talk|Programming Livecode For The Real Beginner|Mark Schonewille|9789082074109
+ 2014|Packt Publishing|LiveCode Mobile Development Cookbook|Lavieri, Dr Edward|9781783558827
+ 2013|Packt Publishing|LiveCode Mobile Development Hotshot|Edward D. Lavieri Jr.|9781849697484
+ 2012|Packt Publishing|LiveCode Mobile Development Beginner's Guide|Holgate Colin|9781849692489
+ 2013-10-24|Packt Publishing|LiveCode Mobile Development HOTSHOT|Edward D Lavieri Jr.|9781849697491
+ 20120726|Packt Publishing|LiveCode Mobile Development Beginner's Guide|Colin Holgate|9781849692496
+ 20150529|Packt Publishing|LiveCode Mobile Development: Beginner's Guide - Second Edition|Colin Holgate; Joel Gerdeen|9781849699662
+
+semanticScholar 0

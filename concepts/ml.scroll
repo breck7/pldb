@@ -1,0 +1,121 @@
+import ../measures/conceptPage.scroll
+id ML
+appeared 1973
+type pl
+creators Robin Milner
+documentation http://www.cs.cmu.edu/~rwh/isml/book.pdf
+documentation https://www.cs.nmsu.edu/~rth/cs/cs471/sml.html
+standsFor Meta Language
+country United Kingdom
+originCommunity University of Edinburgh
+
+hasGarbageCollection true
+hasTypeInference true
+hasLineComments false
+hasAssignment true
+
+assignmentToken :=
+
+wikipedia https://en.wikipedia.org/wiki/ML_(programming_language)
+ example
+  structure Rational : ARITH =
+  struct
+          datatype t = Rat of int * int;
+          val zero = Rat(0,1);
+          fun succ(Rat(a,b)) = Rat( a+b , b  );
+          fun sum (Rat(a,b),  Rat(c,d)) = Rat(a*d+ c*b  , b*d) : t ;
+  end
+ related standard-ml caml iswim clojure coq cyclone elm f-sharp fstar haskell idris miranda nemerle ocaml opa erlang rust scala lisp ats alice dependent-ml lazyml clean
+ summary ML ('Meta Language') is a general-purpose functional programming language. It has roots in Lisp, and has been characterized as "Lisp with types". It is known for its use of the polymorphic Hindley–Milner type system, which automatically assigns the types of most expressions without requiring explicit type annotations, and ensures type safety – there is a formal proof that a well-typed ML program does not cause runtime type errors. ML provides pattern matching for function arguments, garbage collection, imperative programming, call-by-value and currying. It is used heavily in programming language research and is one of the few languages to be completely specified and verified using formal semantics. Its types and pattern matching make it well-suited and commonly used to operate on other formal languages, such as in compiler writing, automated theorem proving and formal verification.
+ pageId 20607
+ dailyPageViews 541
+ created 2001
+ backlinksCount 214
+ revisionCount 449
+ appeared 1973
+
+projectEuler ML
+ memberCount
+  2019 435
+  2022 427
+rosettaCode http://www.rosettacode.org/wiki/Category:ML
+
+indeedJobs ml engineer
+ 2022 6
+faqPageUrl http://www.faqs.org/faqs/meta-lang-faq/
+
+tiobe ML
+hopl https://hopl.info/showlanguage.prx?exp=620
+
+fileType text
+wordRank 3710
+centralPackageRepositoryCount 0
+
+isbndb 33
+ year|publisher|title|authors|isbn13
+ 1998|Pearson|Elements of ML Programming, ML97 Edition|Ullman, Jeffrey|9780137903870
+ 2019|BPB Publications|AI & ML - Powering the Agents of Automation: Demystifying, IOT, Robots, ChatBots, RPA, Drones & Autonomous Cars- The new workforce led Digital ... by AI & ML and secured through Blockchain|M, Deepika and Cuddapah, Vijay and Srivastava, Amitendra and Mahankali, Srinivas|9789388511636
+ 2020|Apress|Deep Reinforcement Learning in Unity: With Unity ML Toolkit|Majumder, Abhilash|9781484265031
+ 2018|Apress|Monetizing Machine Learning: Quickly Turn Python ML Ideas into Web Applications on the Serverless Cloud|Amunategui, Manuel and Roopaei, Mehdi|9781484238738
+ 1996|Cambridge University Press|ML for the Working Programmer, 2nd Edition|L. C. Paulson|9780521565431
+ 2018|Packt Publishing|Learn Unity ML-Agents – Fundamentals of Unity Machine Learning: Incorporate new powerful ML algorithms such as Deep Reinforcement Learning for games|Lanham, Micheal|9781789131864
+ 2007|Cambridge University Press|Concurrent Programming in ML|Reppy, John H.|9780521714723
+ 2019|Packt Publishing|Hands-On Machine Learning with TensorFlow.js: A guide to building ML applications integrated with web technology using the TensorFlow.js library|Sasaki, Kai|9781838827878
+ 1991|Cambridge University Press|ML for the Working Programmer|Paulson, Lawrence C.|9780521390224
+ 2018|Packt Publishing|Machine Learning Projects for Mobile Applications: Build Android and iOS applications using TensorFlow Lite and Core ML|NG, Karthikeyan|9781788998468
+ 1999|Cambridge University Press|Concurrent Programming in ML|Reppy, John H.|9780521480895
+ 2018|Packt Publishing|Machine Learning Projects for Mobile Applications: Build Android and iOS applications using TensorFlow Lite and Core ML|NG, Karthikeyan|9781788994590
+ 2020|BPB Publications|Machine Learning Cookbook with Python: Create ML and Data Analytics Projects Using Some Amazing Open Datasets (English Edition|Guha, Rehan|9789389898002
+ 1987-06-01T00:00:01Z|Prentice Hall|Functional Programming Using Standard Ml (Prentice Hall International Series in Computer Science)|Wikstrom, Ake|9780133316612
+ 1994-06T|Prentice Hall|Elements of Ml Programming|Ullman, Jeffrey D.|9780131848542
+ 1988-10-01T00:00:01Z|Prentice Hall|Functional Programming Using Standard Ml (Prentice-hall International Series in Computer Science)|Wikstrom, Ake|9780133319682
+ 1995|McGraw-Hill|A Practical Course in Functional Programming Using ML|Bosworth, Richard|9780077076252
+ 2021|BPB Publications|Practical Full Stack Machine Learning: A Guide to Build Reliable, Reusable, and Production-Ready Full Stack ML Solutions (English Edition)|Kumar, Alok|9789391030421
+ 2019|Independently published|Beginning iOS 12 & Swift App Development: Develop iOS Apps with Xcode 10, Swift 4, Core ML 2, ARKit 2 and more|Lim, Greg|9781796997965
+ 1998||Elements Of Ml Programming|Jeffrey D. Ullman|9780130803917
+ 19960628|Cambridge University Press|ML for the Working Programmer|Larry C. Paulson|9781107266346
+ 20040708|Cambridge University Press|Modern Compiler Implementation in ML|Andrew W. Appel|9781107266391
+ 20040405|Cambridge University Press|The Standard ML Basis Library|Emden R. Gansner|9780511192197
+ 19960628|Cambridge University Press|ML for the Working Programmer|Larry C. Paulson|9781107263772
+ |Addison Wesley|Modern Functional Programming In Ml||9780201648645
+ 2004|Cambridge University Press|The Standard ML Basis Library|Emden R. Gansner and John H. Reppy|9780521791427
+ 1993|Prentice Hall|Programming With Standard Ml (bcs Practitioner)|Colin Myers and Chris Clack and Ellen Poon|9780137220755
+ 2011||Articles On Ml Programming Language Family, Including|Hephaestus Books|9781243284167
+ 2010||Programming Languages Created In 1990: Standard Ml|Books and LLC|9781156307267
+ 2012|Springer-Verlag New York, LLC|ML with Concurrency: Design, Analysis, Implementation, and Application|Flemming Nielson|9781461274834
+ 20120917|De Gruyter|Programmierung - eine Einführung in die Informatik mit Standard ML|Gert Smolka|9783486719734
+ 20090101|De Gruyter|Programmierung - eine Einführung in die Informatik mit Standard ML|Gert Smolka|9783486595345
+ 1991|Chapman & Hall|Applicative High Order Programming: Standard Ml In Practice (chapman And Hall Computing Series)|S. Sokolowski|9780442308384
+
+semanticScholar 30
+ year|title|doi|citations|influentialCitations|authors|paperId
+ 1990|Definition of standard ML|10.7551/mitpress/2319.001.0001|2479|100|R. Milner and M. Tofte and R. Harper|37e634588f112478e145fa522a4afb2a40a2d250
+ 1999|Concurrent programming in ML|10.1017/cbo9780511574962|304|35|J. Reppy|ee041315f66165e43199893d511e4887c4a22824
+ 1999|Recursion and dynamic data-structures in bounded space: towards embedded ML programming|10.1145/317636.317785|147|7|John Hughes and L. Pareto|79ee2551ee77ab4323e9eaf52bbd642d6f4d37c9
+ 1998|From ML to Ada: Strongly-typed language interoperability via source translation|10.1017/S0956796898003086|109|10|A. Tolmach and D. Oliva|fd383081c14938ba1f38e5fc385b0a76db90bfea
+ 1994|Programming Objects with ML-ART, an Extension to ML with Abstract and Record Types|10.1007/3-540-57887-0_102|91|3|Didier Rémy|6a424575907fa91582d830a23696ec7a29d0bc2f
+ 2007|Dependent ML An approach to practical programming with dependent types|10.1017/S0956796806006216|83|6|H. Xi|e9a621f0da90fa13e7d48bd98c548657bb5b1896
+ 2012|Resource Aware ML|10.1007/978-3-642-31424-7_64|78|7|Jan Hoffmann and Klaus Aehlig and M. Hofmann|901ad3ea56ae97530cb15c7f761f9e1e026131cd
+ 2014|Proof-producing translation of higher-order logic into pure and stateful ML|10.1017/S0956796813000282|52|7|Magnus O. Myreen and Scott Owens|5b203abc65643b5237ffb703e01ff5ae080b35fe
+ 2017|Programming by Examples: PL Meets ML|10.1007/978-3-319-71237-6_1|39|2|Sumit Gulwani and Prateek Jain|8c9d778a6380f7a5d1f4a04f341215024ed3f90d
+ 1997|ML for the Working Programmer (2nd edition) by L. C. Paulson, Cambridge University Press, 1996. A Practical Course in Functional Programming Using Standard ML by R. Bosworth, McGraw Hill, 1996.|10.1017/S0956796897002761|34|2|C. Reade|cd28200fcc479cafc07a383660766e28acfb97d3
+ 2012|Proof-producing synthesis of ML from higher-order logic|10.1145/2364527.2364545|30|3|Magnus O. Myreen and Scott Owens|58bb00b882700d67779871a6208f288f68a0b71c
+ 1994|Programming with Behaviors in an ML Framework - The Syntax and Semantics of LCS|10.1007/3-540-57880-3_6|27|3|B. Berthomieu and T. Sergent|fb1838077df3bd2bb17ad5a48574e74a1ed2d52f
+ 2011|Making standard ML a practical database programming language|10.1145/2034773.2034815|27|1|A. Ohori and Katsuhiro Ueno|2a2430b6607a077eabac54a8339c1d6b2f2687b7
+ 2016|Eliom: A Core ML Language for Tierless Web Programming|10.1007/978-3-319-47958-3_20|22|4|Gabriel Radanne and Jérôme Vouillon and V. Balat|c68561486aa1eb715b2fd02cb0170f1535670b48
+ 2017|FabULous Interoperability for ML and a Linear Language|10.1007/978-3-319-89366-2_8|13|0|G. Scherer and Max S. New and Nick Rioux and A. Ahmed|33354f7006a13cfac99e3d521127bc2c30f908b1
+ 2010|Functional Parallel Programming with Revised Bulk Synchronous Parallel ML|10.1109/IC-NC.2010.57|11|1|Wadoud Bousdira and F. Gava and Louis Gesbert and F. Loulergue and Guillaume Petiot|8dc34822905f7833306a4f82f8c9e78a2f91f6de
+ 2016|ML Pattern-Matching, Recursion, and Rewriting: From FoCaLiZe to Dedukti|10.1007/978-3-319-46750-4_26|7|0|Raphaël Cauderlier and Catherine Dubois|208552e5bc4a53766f932c3d02bb135e3786246c
+ 2017|Multi-ML: Programming Multi-BSP Algorithms in ML|10.1007/s10766-016-0417-6|7|0|Victor Allombert and F. Gava and J. Tesson|2bf244eb59500a9ee58210232074e74334376bc5
+ 2017|Program generation for ML modules (short paper)|10.1145/3162072|6|0|Takahisa Watanabe and Yukiyoshi Kameyama|6b327154ea724fb75639bff85f2263c8adaa7496
+ 2020|The history of Standard ML|10.1145/3386336|5|0|David B. MacQueen and R. Harper and J. Reppy|d90fe939342b472ce4344c7b437abe9f108e020a
+ 2005|Functional programming languages for verification tools: a comparison of Standard ML and Haskell|10.1007/s10009-004-0184-3|4|0|M. Leucker and T. Noll and P. Stevens and Michael Weber|bb7c485843e97b376ef02d71798cee12daa04178
+ 2017|Implementing Algorithmic Skeletons with Bulk Synchronous Parallel ML|10.1109/PDCAT.2017.00079|4|0|F. Loulergue|a1717062000e907819d70bbc1f2508a6580737fe
+ 1993|Categorical ML — Category-theoretic modular programming|10.1007/BF01212406|3|0|E. Dennis-Jones and D. Rydeheard|dfef120a8a6b7c4e4519f6d9a0171eb5fe689e2b
+ 2017|A BSPlib-style API for Bulk Synchronous Parallel ML|10.12694/scpe.v18i3.1306|2|0|F. Loulergue|6d2c6381ea8e94589fbbe73d65df7ac265295f9f
+ 2018|An ML Implementation of the MULTI-BSP Model|10.1109/HPCS.2018.00085|2|0|Victor Allombert and F. Gava|b883f7f2b598baab7ff13ac9514b65e4c26d4b53
+ 2018|Programming bsp and multi-bsp algorithms in ml|10.1007/s11227-019-02822-9|2|0|Victor Allombert and F. Gava|8c290e8b9393c9f74916203d234ee7315b925fa4
+ 2006|ML grid programming with ConCert|10.1145/1159876.1159879|1|0|Tom Murphy Vii|5ae7538beaa255cede9fac93c2116ef39be77b67
+ 2006|ML grid programming with ConCert|10.1145/1159876.1159879|1|0|Tom Murphy|6172de57616b3faa82b722f86e66136dca3e9694
+ 2019|PML2: Integrated Program Verification in ML|10.4230/LIPIcs.TYPES.2017.5|1|0|Rodolphe Lepigre|0071469f766abf45de3746ad76867ecaa1418c88
+ 2010|Functional Programming in ML|10.1081/E-ESE-120044136|1|0|Lawrence Charles Paulson|3562eb30e03c871a954b47247077e8b6b62d57a5

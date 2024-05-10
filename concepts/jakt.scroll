@@ -1,0 +1,61 @@
+import ../measures/conceptPage.scroll
+id Jakt
+appeared 2022
+type pl
+conceptDescription Jakt is a memory-safe systems programming language. It currently transpiles to C++.
+country Various
+originCommunity https://github.com/SerenityOS/
+
+compilesTo cpp
+
+hasPrintDebugging true
+hasStrings true
+ "Hello world"
+
+printToken println
+stringToken "
+
+example
+ function main() {
+    let x = ("a", 2, true)
+ 
+    println("{}", x.1)
+ }
+
+githubRepo https://github.com/SerenityOS/jakt
+ firstCommit 2022
+ stars 1671
+ forks 170
+ subscribers 28
+ created 2022
+ updated 2022
+ description The Jakt Programming Language
+ issues 67
+
+repoStats
+ firstCommit 2022
+ commits 2372
+ committers 122
+ files 1232
+
+leachim6 Jakt
+ filepath j/Jakt.jakt
+ fileExtensions jakt
+ example
+  function main() {
+      println("Hello World")
+  }
+  
+
+compilerExplorer Jakt
+ example
+  function square(num: i32) -> i32 {
+      return num * num
+  }
+  
+  function main() {
+      return square(num: 3)
+  }
+  
+
+isbndb 0

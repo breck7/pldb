@@ -1,9 +1,0 @@
-helloWorldCollectionParser
- description What is the name of this project in the Hello World Collection?
- extends exampleParser
- cruxFromId
- cells columnNameCell
- catchAllCellType helloWorldCollectionIdCell
- string sourceDomain helloworldcollection.de
-helloWorldCollectionIdCell
- description Id for this language on hello world collection.
