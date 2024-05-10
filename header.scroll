@@ -49,7 +49,7 @@ stumpNoSnippet
   form
    style display:inline-block;
    method get
-   action BASE_URL/lists/search.html
+   action BASE_URL/lists/all.html
    input
     type search
     id trueBaseThemeHeaderSearch

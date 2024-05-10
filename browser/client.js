@@ -1,12 +1,10 @@
 let autocompleteSearchIndex = window.autocompleteJs || [] // todo: cleanup?
 // handle localhost differently
+const isNested = location.href.split("/pldb/")[1].split("/").length - 1
+const normalizeUrl = url => (isNested ? ".." + url : url.substr(1))
 if (location.href.includes("/pldb/")) {
-  let baseUrl = ""
-  const isNested = location.href.split("/pldb/")[1].split("/").length - 1
   autocompleteSearchIndex = autocompleteSearchIndex.map(row => {
-    if (isNested) row.url = ".." + row.url
-    else row.url = row.url.substr(1)
-
+    row.url = normalizeUrl(row.url)
     return row
   })
 }
@@ -30,14 +28,14 @@ const initAutocomplete = elementId => {
       suggestions.push({
         label: `Full text search for "${htmlEncodedQuery}"`,
         id: "",
-        url: `/lists/search.html?q=${htmlEncodedQuery}`
+        url: normalizeUrl(`/lists/all.html#q=${htmlEncodedQuery}`)
       })
       update(suggestions)
     },
     onSelect: item => {
       const { url, id } = item
       if (id) window.location = url
-      else window.location = "/lists/search.html?q=" + encodeURIComponent(input.value)
+      else window.location = normalizeUrl("/lists/all.html#q=" + encodeURIComponent(input.value))
     }
   })
 }
