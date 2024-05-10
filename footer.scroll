@@ -17,9 +17,6 @@ stumpNoSnippet
   a Features
    href BASE_URL/lists/features.html
   span ·
-  a Creators
-   href BASE_URL/lists/creators.html
-  span ·
   a Resources
    href BASE_URL/lists/resources.html
   span ·
@@ -38,3 +35,5 @@ stumpNoSnippet
   a feedback@pldb.io
    href mailto:feedback@pldb.io
 
+<script src="BASE_URL/lists/autocompleteCombined.js"></script>
+<script>document.addEventListener("DOMContentLoaded", evt => initAutocomplete("trueBaseThemeHeaderSearch"))</script>

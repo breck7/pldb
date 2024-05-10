@@ -46,6 +46,16 @@ stumpNoSnippet
   a PLDB
    href BASE_URL/index.html
    class trueBaseThemeLogo
+  form
+   style display:inline-block;
+   method get
+   action BASE_URL/lists/search.html
+   input
+    type search
+    id trueBaseThemeHeaderSearch
+    name q
+    placeholder Search
+    autocomplete off
   a Top 1,000
    href BASE_URL/lists/top1000.html
   a Creators

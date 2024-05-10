@@ -171,6 +171,28 @@ class Tables {
       COUNT: numeral(Object.values(entities).length).format("0,0")
     }
   }
+
+  get autocompleteJs() {
+    const json = JSON.stringify(
+      this.pldb.map(file => {
+        return {
+          label: file.id,
+          id: file.id,
+          url: `/concepts/${file.id}.html`
+        }
+      }),
+      undefined,
+      2
+    )
+    const js =
+      Disk.read(path.join(__dirname, "browser", "autocompleter.js")) +
+      "\n" +
+      `var autocompleteJs = ` +
+      json +
+      "\n\n" +
+      Disk.read(path.join(__dirname, "browser", "client.js"))
+    return `plainText\n ` + js.replace(/\n/g, "\n ")
+  }
 }
 
 const computeds = {
