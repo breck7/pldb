@@ -2,6 +2,7 @@ const lodash = require("lodash")
 const path = require("path")
 const { TreeNode } = require("jtree/products/TreeNode.js")
 const { Disk } = require("jtree/products/Disk.node.js")
+const ParserFile = new TreeNode(Disk.read(path.join(__dirname, "measures", "pldbMeasures.scroll")))
 const listsFolder = path.join(__dirname, "lists")
 const pagesDir = path.join(__dirname, "pages")
 const numeral = require("numeral")
@@ -9,6 +10,106 @@ const numeral = require("numeral")
 const delimiter = `|_$^`
 const quickTree = (rows, header) => `table ${delimiter}
  ${new TreeNode(rows).toDelimited(delimiter, header, false).replace(/\n/g, "\n ")}`
+
+// One feature maps to one Parser that extends abstractFeatureParser
+class Feature {
+  constructor(measure, computer) {
+    this.measure = measure
+    this.fileName = "pldbMeasures.scroll"
+    this.id = measure.Name
+    this.computer = computer
+  }
+
+  id = ""
+  fileName = ""
+
+  get permalink() {
+    return this.id + ".html"
+  }
+
+  get yes() {
+    return this.languagesWithThisFeature.length
+  }
+
+  get no() {
+    return this.languagesWithoutThisFeature.length
+  }
+
+  get percentage() {
+    const { yes, no } = this
+    const measurements = yes + no
+    return measurements < 100 ? "-" : lodash.round((100 * yes) / measurements, 0) + "%"
+  }
+
+  get aka() {
+    return this.get("aka") // .join(" or "),
+  }
+
+  get token() {
+    return this.get("tokenKeyword")
+  }
+
+  get titleLink() {
+    return `../features/${this.permalink}`
+  }
+
+  get(word) {
+    // todo; fix this
+    // return this.measure[word]
+    return this.node.getFrom(`string ${word}`)
+  }
+
+  get node() {
+    return ParserFile.getNode(this.id + "Parser")
+  }
+
+  get title() {
+    return this.get("title") || this.id
+  }
+
+  get pseudoExample() {
+    return (this.get("pseudoExample") || "").replace(/\</g, "&lt;").replace(/\|/g, "&#124;")
+  }
+
+  get references() {
+    return (this.get("reference") || "").split(" ").filter(i => i)
+  }
+
+  get languagesWithThisFeature() {
+    const { id } = this
+    return this.getLanguagesWithFeatureResearched(id).filter(file => file[id])
+  }
+
+  get languagesWithoutThisFeature() {
+    const { id } = this
+    return this.getLanguagesWithFeatureResearched(id).filter(file => !file[id])
+  }
+
+  getLanguagesWithFeatureResearched(id) {
+    if (!this.computer.featureCache) this.computer.featureCache = {}
+    if (this.computer.featureCache[id]) return this.computer.featureCache[id]
+    // todo: re-add support for "extended"
+    this.computer.featureCache[id] = this.computer.pldb.filter(file => file[id] !== "")
+    return this.computer.featureCache[id]
+  }
+
+  get summary() {
+    const { id, title, fileName, titleLink, aka, token, yes, no, percentage, pseudoExample } = this
+    return {
+      id,
+      title,
+      fileName,
+      titleLink,
+      aka,
+      token,
+      yes,
+      no,
+      measurements: yes + no,
+      percentage,
+      pseudoExample
+    }
+  }
+}
 
 const getMostRecentInt = (concept, pathToSet) => {
   let set = concept.getNode(pathToSet)
@@ -93,6 +194,47 @@ class Tables {
 
   get measures() {
     return require("./measures.json")
+  }
+
+  get features() {
+    const features = this.measures
+      .filter(measure => measure.SortIndex === 42)
+      .map(measure => {
+        const feature = new Feature(measure, this)
+        if (!feature.title) {
+          throw new Error(`Feature ${measure} has no title.`)
+        }
+        return feature
+      })
+
+    let previous = features[features.length - 1]
+    features.forEach((feature, index) => {
+      feature.previous = previous
+      feature.next = features[index + 1]
+      previous = feature
+    })
+    features[features.length - 1].next = features[0]
+
+    return features
+  }
+
+  getFeaturesImports(limit = 0) {
+    const { features } = this
+    const topFeatures = lodash.sortBy(features, "yes")
+    topFeatures.reverse()
+    const summaries = topFeatures.map(feature => feature.summary).filter(feature => feature.measurements >= limit)
+    return {
+      COUNT: numeral(summaries.length).format("0,0"),
+      TABLE: quickTree(summaries, ["title", "titleLink", "pseudoExample", "yes", "no", "percentage"])
+    }
+  }
+
+  get topFeaturesImports() {
+    return this.getFeaturesImports(10)
+  }
+
+  get allFeaturesImports() {
+    return this.getFeaturesImports(0)
   }
 
   get creators() {

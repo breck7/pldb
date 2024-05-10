@@ -2,10 +2,12 @@ import header.scroll
 title Features
 groups index
 
-nodejs
- module.exports = require("../../PLDB.js").PLDB.topFeaturesImports
-
 mediumColumns 1
+
+replaceNodejs
+ const {Tables} = require("../Computer.js")
+ module.exports = Tables.topFeaturesImports
+
 
 A list of COUNT features found in programming languages. View all features.
  link allFeatures.html all features

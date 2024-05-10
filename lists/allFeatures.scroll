@@ -2,9 +2,9 @@ import header.scroll
 title All Features
 groups index
 
-
-nodejs
- module.exports = require("../../PLDB.js").PLDB.allFeaturesImports
+replaceNodejs
+ const {Tables} = require("../Computer.js")
+ module.exports = Tables.topFeaturesImports
 
 mediumColumns 1
 

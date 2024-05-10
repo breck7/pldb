@@ -327,6 +327,7 @@ abstractFeatureParser
  contentKey value
  childrenKey example
  catchAllParser featureExampleCodeParser
+ int sortIndex 42
  string sortKey abstractFeatureParser
 
 // fileExtensions
