@@ -145,6 +145,32 @@ class Tables {
       LANG_WITH_DATA_COUNT: files.length
     }
   }
+
+  get originCommunities() {
+    const files = lodash.sortBy(
+      this.pldb.filter(file => file.isLanguage && file.originCommunity.length),
+      "languageRank"
+    )
+
+    const entities = groupByListValues("originCommunity", files)
+    const rows = Object.keys(entities).map(name => {
+      const group = entities[name]
+      const languages = group.map(lang => `<a href='../concepts/${lang.id}.html'>${lang.id}</a>`).join(" - ")
+      const count = group.length
+      const top = -Math.min(...group.map(lang => lang.languageRank))
+
+      const wrappedName = `<a name='${lodash.camelCase(name)}' />${name}`
+
+      return { name: wrappedName, languages, count, top }
+    })
+    const sorted = lodash.sortBy(rows, ["count", "top"])
+    sorted.reverse()
+
+    return {
+      TABLE: quickTree(sorted, ["count", "name", "languages"]),
+      COUNT: numeral(Object.values(entities).length).format("0,0")
+    }
+  }
 }
 
 const computeds = {
