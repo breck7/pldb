@@ -498,10 +498,8 @@ Wayback Machine: https://web.archive.org/web/20220000000000*/${title}`
   }
 
   getRelationshipFile(relationshipType) {
-    // todo
-    return undefined
     const hit = this.get(relationshipType)
-    return hit ? this.parent.getFile(hit) : undefined
+    return hit ? this.computer.getConceptPage(hit) : undefined
   }
 
   get languageRank() {
@@ -858,13 +856,13 @@ image ${image.replace("https://pldb.io/", "../")}
     return `* ${title}${akaMessage} is ${Utils.getIndefiniteArticle(sourceStatus || typeName)}${sourceStatus} ${
       this.typeLink
     }${appeared ? ` created in ${appeared}` : ""}${creatorsStr}.
- link ../lists/all.html#q=${appeared} ${appeared}
+ link ../lists/explore.html#q=${appeared} ${appeared}
 ${creatorsLinks}
 `
   }
 
   get typeLink() {
-    return `<a href="../lists/all.html#q=${this.type}">${this.typeName}</a>`
+    return `<a href="../lists/explore.html#q=${this.type}">${this.typeName}</a>`
   }
 
   get descriptionSection() {
@@ -1549,10 +1547,6 @@ class Tables {
     return this._getFileAtRank(rank, this.languages)
   }
 
-  getFile(permalink) {
-    return this.pldb.find(row => row.filename === permalink + ".scroll")
-  }
-
   initConceptPages() {
     if (this._conceptPageCache) return
     this._conceptPageCache = {}
@@ -1786,7 +1780,7 @@ class Tables {
       row.count = row.ids.length
       row.langs = row.ids
         .map(id => {
-          const file = this.getFile(id.replace(".scroll", ""))
+          const file = this.getConceptPage(id)
           return `<a href='../concepts/${file.filename.replace(".scroll", ".html")}'>${file.id}</a>`
         })
         .join(" ")
@@ -1820,7 +1814,7 @@ class Tables {
       "svg",
       "explorer",
       "gitignore"
-    ].map(s => this.getFile(s))
+    ].map(s => this.getConceptPage(s).parsed)
 
     const npmPackages = Object.keys({
       ...require("./package.json").devDependencies

@@ -2,7 +2,7 @@ importOnly
 
 html
  <div class="trueBaseSearchForm trueBaseSearchFormPadded">
-  <form style="display:inline;" method="get" action="BASE_URL/lists/all.html">
+  <form style="display:inline;" method="get" action="BASE_URL/lists/explore.html">
    <input name="q" placeholder="Search" autocomplete="off" type="search" id="searchFormInput">
    <input class="searchButton" type="submit" value="Search">
   </form>
