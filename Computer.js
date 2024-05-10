@@ -175,10 +175,11 @@ class Tables {
   get autocompleteJs() {
     const json = JSON.stringify(
       this.pldb.map(file => {
+        const permalink = file.filename.replace(".scroll", "")
         return {
           label: file.id,
-          id: file.id,
-          url: `/concepts/${file.id}.html`
+          id: permalink,
+          url: `/concepts/${permalink}.html`
         }
       }),
       undefined,

@@ -48,13 +48,13 @@ abstractPopulationCountMeasureParser
 
 // todo: idCell
 // Links between concepts
-abstractConceptIdsMeasureParser
+abstractConceptEdgesMeasureParser
  description Link one concept to other concepts.
  catchAllCellType stringCell
- string typeForCsvDocs conceptId[]
+ string typeForCsvDocs conceptFilename[]
  extends abstractStringMeasureParser
  javascript
-  get conceptIds() {
+  get filenames() {
     return this.getWordsFrom(1)
   }
   // todo: re-add the method to update these foreign keys if an ID changes.

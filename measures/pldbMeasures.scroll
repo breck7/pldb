@@ -1967,7 +1967,7 @@ packageAuthorsParser
 
 forLanguagesParser
  description Which languages is this repository for?
- extends abstractConceptIdsMeasureParser
+ extends abstractConceptEdgesMeasureParser
 
 // paradigms
 abstractParadigmParser
@@ -2056,7 +2056,7 @@ referenceParser
 
 // relationships
 abstractRelationshipParser
- extends abstractConceptIdsMeasureParser
+ extends abstractConceptEdgesMeasureParser
  // todo: remove need for sortKey in Grammar
  string sortKey abstractRelationshipParser
 relatedConceptsParser
@@ -2301,7 +2301,7 @@ wikipediaParser
  contentKey url
  relatedParser
   description What languages does Wikipedia have as related?
-  extends abstractConceptIdsMeasureParser
+  extends abstractConceptEdgesMeasureParser
  summaryParser
   description What is the text summary of the language from the Wikipedia page?
   extends abstractStringMeasureParser
