@@ -79,7 +79,8 @@ abstractComputedIntMeasureParser
  javascript
   computeValue(concept, measureName, parsedProgram, concepts) {
     if (!parsedProgram.computer) {
-      const {Computer} = require("/Users/breck/pldb/Computer.js") // todo: fix path
+      const path = require("path")
+      const {Computer} = require(path.join(path.dirname(parsedProgram.file.filePath), "Computer.js"))
       parsedProgram.computer = new Computer(parsedProgram, concepts)
     }
     return parsedProgram.computer.get(measureName, concept)

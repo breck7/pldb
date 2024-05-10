@@ -13,6 +13,7 @@ jobs:
       - name: Install and Build
         run: |
           npm install .
+          sudo apt-get install cloc
           npm run build
           # The line below is needed if you have *.html in your gitignore file
           rm .gitignore

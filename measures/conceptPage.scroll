@@ -8,7 +8,8 @@ import ../header.scroll
 
 replaceJs TEMPLATE
  {
-  const {Tables} = require("/Users/breck/pldb/Computer.js")
+  const path = require("path")
+  const {Tables} = require(path.join(path.dirname(absolutePath), "..", "Computer.js"))
   Tables.getLanguageTemplate(absolutePath);
  }
 TEMPLATE
