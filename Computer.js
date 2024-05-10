@@ -1389,7 +1389,9 @@ class Feature {
     const grouped = lodash.groupBy(examples, "example")
     const examplesText = Object.values(grouped)
       .map(group => {
-        const links = group.map(hit => `<a href="../concepts/${hit.id}.html">${hit.title}</a>`).join(", ")
+        const links = group
+          .map(hit => `<a href="../concepts/${hit.id.replace(".scroll", "")}.html">${hit.title}</a>`)
+          .join(", ")
         return `codeWithHeader Example from ${links}:
  ${shiftRight(removeReturnChars(lodash.escape(group[0].example)), 1)}`
       })
@@ -1570,6 +1572,7 @@ class Tables {
   }
 
   getLanguageTemplate(absolutePath) {
+    if (absolutePath.endsWith("conceptPage.scroll")) return ""
     const name = path.basename(absolutePath).replace(".scroll", "")
     return this.getConceptPage(name).toScroll()
   }
