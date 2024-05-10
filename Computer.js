@@ -852,7 +852,7 @@ image ${image.replace("https://pldb.io/", "../")}
     let creatorsLinks = ""
     if (creators.length) {
       creatorsStr = ` by ` + creators.join(" and ")
-      creatorsLinks = creators.map(name => ` link ../lists/creators.html#${lodash.camelCase(name)} ${name}`).join("\n")
+      creatorsLinks = creators.map(name => ` link ../lists/creators.html#q=${name}`).join("\n")
     }
 
     return `* ${title}${akaMessage} is ${Utils.getIndefiniteArticle(sourceStatus || typeName)}${sourceStatus} ${
@@ -953,7 +953,7 @@ ${creatorsLinks}
     let originCommunityStr = ""
     if (originCommunity.length) {
       originCommunityStr = originCommunity
-        .map(name => `<a href="../lists/originCommunities.html#${lodash.camelCase(name)}">${name}</a>`)
+        .map(name => `<a href="../lists/originCommunities.html#q=${name}">${name}</a>`)
         .join(" and ")
       facts.push(`${title} first developed in ${originCommunityStr}`)
     }
