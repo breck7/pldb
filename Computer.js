@@ -3,6 +3,7 @@ const path = require("path")
 const { TreeNode } = require("jtree/products/TreeNode.js")
 const { Disk } = require("jtree/products/Disk.node.js")
 const listsFolder = path.join(__dirname, "lists")
+const pagesDir = path.join(__dirname, "pages")
 const numeral = require("numeral")
 
 const delimiter = `|_$^`
@@ -67,6 +68,7 @@ class Tables {
       .map(row =>
         lodash.pick(row, [
           "id",
+          "filename",
           "rank",
           "appeared",
           "type",
@@ -77,11 +79,20 @@ class Tables {
         ])
       )
       .value()
+      .map(row => {
+        row.idLink = "../concepts/" + row.filename.replace(".scroll", ".html")
+        delete row.filename
+        return row
+      })
     return this._top
   }
 
   get pldb() {
     return require("./pldb.json")
+  }
+
+  get measures() {
+    return require("./measures.json")
   }
 
   get creators() {
@@ -101,7 +112,9 @@ class Tables {
         name: !person
           ? `<a name='${anchorTag}' />${name}`
           : `<a name='${anchorTag}' href='https://en.wikipedia.org/wiki/${person.get("wikipedia")}'>${name}</a>`,
-        languages: group.map(file => `<a href='../concepts/${file.permalink}'>${file.id}</a>`).join(" - "),
+        languages: group
+          .map(file => `<a href='../concepts/${file.filename.replace(".scroll", ".html")}'>${file.id}</a>`)
+          .join(" - "),
         count: group.length,
         topRank: group[0].languageRank
       }
@@ -128,7 +141,7 @@ class Tables {
       .map(file => {
         return {
           name: file.id,
-          nameLink: `../concepts/${file.permalink}`,
+          nameLink: `../concepts/${file.filename.replace(".scroll", ".html")}`,
           rank: file.rank,
           extensions: file.extensions
         }
@@ -193,6 +206,50 @@ class Tables {
       "\n\n" +
       Disk.read(path.join(__dirname, "browser", "client.js"))
     return `plainText\n ` + js.replace(/\n/g, "\n ")
+  }
+
+  getFile(permalink) {
+    return this.pldb.find(row => row.filename === permalink + ".scroll")
+  }
+
+  get acknowledgements() {
+    const sources = this.measures.map(col => col.Source).filter(i => i)
+    let writtenIn = [
+      "javascript",
+      "nodejs",
+      "html",
+      "css",
+      "treenotation",
+      "scroll",
+      "grammar",
+      "python",
+      "bash",
+      "markdown",
+      "json",
+      "typescript",
+      "png-format",
+      "svg",
+      "explorer",
+      "gitignore"
+    ].map(s => this.getFile(s))
+
+    const npmPackages = Object.keys({
+      ...require("./package.json").dependencies
+    })
+    npmPackages.sort()
+
+    return {
+      WRITTEN_IN_TABLE: lodash
+        .sortBy(writtenIn, "rank")
+        .map(file => `- ${file.id}\n link ../concepts/${file.filename.replace(".scroll", ".html")}`)
+        .join("\n"),
+      PACKAGES_TABLE: npmPackages.map(s => `- ${s}\n https://www.npmjs.com/package/${s}`).join("\n"),
+      SOURCES_TABLE: sources.map(s => `- ${s}\n https://${s}`).join("\n"),
+      CONTRIBUTORS_TABLE: JSON.parse(Disk.read(path.join(pagesDir, "contributors.json")))
+        .filter(item => item.login !== "codelani" && item.login !== "breck7" && item.login !== "pldbbot")
+        .map(item => `- ${item.login}\n ${item.html_url}`)
+        .join("\n")
+    }
   }
 }
 
