@@ -1,5 +1,17 @@
+let autocompleteSearchIndex = window.autocompleteJs || [] // todo: cleanup?
+// handle localhost differently
+if (location.href.includes("/pldb/")) {
+  let baseUrl = ""
+  const isNested = location.href.split("/pldb/")[1].split("/").length - 1
+  autocompleteSearchIndex = autocompleteSearchIndex.map(row => {
+    if (isNested) row.url = ".." + row.url
+    else row.url = row.url.substr(1)
+
+    return row
+  })
+}
+
 const initAutocomplete = elementId => {
-  const autocompleteSearchIndex = window.autocompleteJs || [] // todo: cleanup?
   const input = document.getElementById(elementId)
   const urlParams = new URLSearchParams(window.location.search)
   const query = urlParams.get("q")
