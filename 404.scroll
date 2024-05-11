@@ -1,6 +1,4 @@
 permalink 404.html
-
-// Set the base url. Without this trick, browsing the site locally would require serving it via localhost to get relative url paths to work since we reuse the header and footer in nested folders. (There could be a better way to do this.)
 replace BASE_URL 
 viewSourceBaseUrl https://github.com/breck7/pldb/blob/main/
 
@@ -11,7 +9,16 @@ thinColumns 1
 
 Sorry, the url you requested was not found.
 
-helpfulNotFound
+extendedNotFoundParser
+ extends helpfulNotFoundParser
+ // Make the path absolute in prod so it works even on nested folders.
+ // Of course, getting this to work for locally built sites and www sites is tricky.
+ // Only reason it is useful locally is for testing though, so for now,
+ // for this page, just make it work on www. 
+ string requireOnce
+  <script defer src="/helpfulNotFound.js"></script>
+
+extendedNotFound
 
 If you think there's a bug on our site, please email help@pldb.com or open an issue to let us know. Thank you!
  https://github.com/breck7/pldb/issues open an issue
