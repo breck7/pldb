@@ -68,8 +68,7 @@ hasSymbolTables true
  // sum|double|block local
  // i|int|for-loop statement
 hasComments true
- /* hello world */
- // hi
+ // A comment
 hasStructs true
  struct account {
    int account_number;

@@ -107,6 +107,7 @@ hasConditionals true
  if (true)
   console.log("hi!")
 hasComments true
+ // A comment
 hasLabels true
  main:
  console.log("pldb")
