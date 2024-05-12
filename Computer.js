@@ -1938,10 +1938,10 @@ const computeds = {
   },
 
   rank(concept, computer) {
-    return computer.ranks[concept.get("id")].index
+    return computer.ranks[concept.get("filename")].index
   },
   languageRank(concept, computer) {
-    return computeds.isLanguage(concept) ? computer.languageRanks[concept.get("id")].index : ""
+    return computeds.isLanguage(concept) ? computer.languageRanks[concept.get("filename")].index : ""
   }
 }
 
@@ -1949,10 +1949,15 @@ class Computer {
   constructor(scrollFile, concepts) {
     this.concepts = concepts
     this.ranks = calcRanks(concepts, this)
-    this.languageRanks = calcRanks(
-      concepts.filter(concept => computeds.isLanguage(concept)),
-      this
-    )
+    this.languageRanks = {}
+
+    Object.values(this.ranks)
+      .filter(obj => obj.isLanguage)
+      .forEach((obj, index) => {
+        const rank = { ...obj }
+        rank.index = index + 1
+        this.languageRanks[obj.filename] = obj
+      })
   }
 
   get(measureName, concept) {
@@ -1967,13 +1972,14 @@ class Computer {
 const calcRanks = (concepts, computer) => {
   // const { pageRankLinks } = folder
   let objects = concepts.map(concept => {
-    const id = concept.get("id")
+    const filename = concept.get("filename")
     const object = {}
-    object.id = id
+    object.filename = filename
     object.jobs = computer.get("numberOfJobsEstimate", concept)
     object.users = computer.get("numberOfUsersEstimate", concept)
     object.measurements = computer.get("measurements", concept)
-    // object.pageRankLinks = pageRankLinks[id].length
+    object.isLanguage = computeds.isLanguage(concept)
+    // object.pageRankLinks = pageRankLinks[filename].length
     return object
   })
 
@@ -1992,7 +1998,7 @@ const calcRanks = (concepts, computer) => {
   const ranks = {}
   objects.forEach((obj, index) => {
     obj.index = index + 1
-    ranks[obj.id] = obj
+    ranks[obj.filename] = obj
   })
   return ranks
 }
@@ -2014,31 +2020,6 @@ const rankSort = (objects, key) => {
     }
   })
   return objects
-}
-
-const computeRankings = folder => {
-  const ranks = calcRanks(folder, folder.getChildren())
-  const inverseRanks = makeInverseRanks(ranks)
-  const languageRanks = calcRanks(
-    folder,
-    folder.filter(file => file.isLanguage)
-  )
-  const inverseLanguageRanks = makeInverseRanks(languageRanks)
-
-  return {
-    ranks,
-    inverseRanks,
-    languageRanks,
-    inverseLanguageRanks
-  }
-}
-
-const makeInverseRanks = ranks => {
-  const inverseRanks = {}
-  Object.keys(ranks).forEach(id => {
-    inverseRanks[ranks[id].index] = ranks[id]
-  })
-  return inverseRanks
 }
 
 module.exports = { Computer, Tables: new Tables() }
