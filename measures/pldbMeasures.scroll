@@ -2255,7 +2255,7 @@ ubuntuPackageParser
 versionParser
  description What is the version and release year?
  // perhaps in the future we could get more specific to month. Maybe even include what new features were added.
- cells yearCell floatCell
+ cells yearCell anyCell
 
 versionsParser
  description What are the release years and versions of this language?
