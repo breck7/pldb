@@ -1727,8 +1727,8 @@ appearedParser
  description What year was the language publicly released and/or announced?
  extends abstractYearMeasureParser
  // required
-isDeadParser
- description Has the creator or maintainer announced it officially dead? Include a link to proof of the announcement.
+isRetiredParser
+ description Has the creator or maintainer announced it officially over? Include a link to proof of the announcement.
  extends abstractBooleanMeasureParser
 
 nativeLanguageParser
