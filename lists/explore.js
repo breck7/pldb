@@ -9,11 +9,18 @@ class ExploreApp {
   bindToHashChange() {
     // Listen for hash changes to update the DataTable search
     window.addEventListener("hashchange", () => {
-      this.columnsString = this.getColumnStringFromHash()
-      this.dataTable.destroy(true)
-      jQuery("#tableHolder").append(`<table id="exploreTable" class="scrollTable"></table>`)
-      this.createDatatable()
-      this.renderMeasureLinks()
+      const colString = this.getColumnStringFromHash()
+
+      // If columns changed, we need to rebuild the whole table
+      if (colString !== this.columnsString) {
+        this.columnsString = colString
+        this.dataTable.destroy(true)
+        jQuery("#tableHolder").append(`<table id="exploreTable" class="scrollTable"></table>`)
+        this.createDatatable()
+        this.renderMeasureLinks()
+      } else {
+        this.dataTable.search(getSearchFromHash()).draw(false)
+      }
     })
   }
 
@@ -88,7 +95,13 @@ class ExploreApp {
       .split(",")
       .filter(name => measures.find(m => m.Name === name))
       .map(measure => {
-        return { data: measure, title: measure }
+        const col = { data: measure, title: measure }
+
+        if (measure === "id")
+          col.render = (data, type, row, meta) =>
+            `<a href="../concepts/${row.filename.replace(".scroll", ".html")}">${row.id}</a>`
+
+        return col
       })
   }
 }
