@@ -1,6 +1,4 @@
 importOnly
 import ../header.scroll
-replace BASE_URL ..
-viewSourceBaseUrl https://github.com/breck7/pldb/blob/main/lists/
+import settings.scroll
 keyboardNav
-baseUrl https://pldb.io/lists/
