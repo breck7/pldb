@@ -77,19 +77,6 @@ replaceJs DAYS_ONLINE Math.floor(dayjs().diff(dayjs("2022-08-15"), "day", true))
 The site owes its existence to a kind (_but firm_) Internet commenter who told Breck Yunits to "learn to research properly" if he wanted to make his languages any good.
  https://breckyunits.com Breck Yunits
 
-## Citation
-PLDB content is published to the public domain and you can use it freely. If needed, here are 3 options for citing PLDB:
-quote
- https://pldb.io
-quote
- PLDB contributors. (2022) - "PLDB: a Programming Language Database". Retrieved from: 'https://pldb.io' [Online Resource]
-code
- @article{pldb,
-   author = {PLDB contributors},
-   title = {PLDB: a Programming Language Database},
-   journal = {PLDB},
-   year = {2022},
-   note = {https://pldb.io}
-  }
+import ../citation.scroll
 
 import footer.scroll

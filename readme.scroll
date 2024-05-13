@@ -6,6 +6,9 @@ title PLDB Readme
 
 wideColumns 1
 
+#### View this readme as HTML
+ https://pldb.io/readme.html
+
 import code/ciBadges.scroll
 
 PLDB is a public domain database and website containing over 135,000 facts about over 4,000 programming languages.
@@ -55,18 +58,7 @@ code
 javascriptCode
  console.log(require("pldb").javascript.appeared)
 
-## To cite PLDB
-PLDB content is published to the public domain and you can use it freely. If needed, here are 3 options for citing PLDB:
-> https://pldb.io
-> PLDB contributors. (2022) - "PLDB: a Programming Language Database". Retrieved from: 'https://pldb.io' [Online Resource]
-code
- @article{pldb,
-  author = {PLDB contributors},
-  title = {PLDB: a Programming Language Database},
-  journal = {PLDB},
-  year = {2022},
-  note = {https://pldb.io}
- }
+import citation.scroll
 
 All sources for PLDB can be found here: https://pldb.io/pages/acknowledgements.html
 
