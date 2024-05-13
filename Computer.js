@@ -818,8 +818,11 @@ image ${image.replace("https://pldb.io/", "../")}
       wikipedia: this.get(`wikipedia`),
       reddit: this.get("subreddit"),
       twitter: this.get("twitter"),
-      // todo: update Designer to be able to take a URL for the grammar and a URL for the program.
-      edit: `https://jtree.treenotation.org/designer#url%20https%3A%2F%2Fpldb.io%2Fpldb.grammar`
+      edit: `https://jtree.treenotation.org/designer#${encodeURIComponent(
+        new TreeNode(
+          `url https://pldb.io/pldb.grammar\nprogramUrl https://pldb.io/concepts/${this.filename}`
+        ).toString()
+      )}`
     }
     return Object.keys(links)
       .filter(key => links[key])
