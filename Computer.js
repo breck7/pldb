@@ -469,10 +469,11 @@ Wayback Machine: https://web.archive.org/web/20220000000000*/${title}`
   }
 
   get type() {
-    return this.get("type")
+    return this.get("type").split(" ")[0]
   }
 
   get isLanguage() {
+    // todo: add a "computerLanguage" enum type, then just search types for that string.
     return isLanguage(this.get("type"))
   }
 
@@ -1933,6 +1934,7 @@ const computeds = {
       computingMachine: true,
       dataStructure: true
     }
+    // todo: this should just search for "computerLanguage" in type
     const type = concept.get("type")
     return nonLanguages[type] ? 0 : 1
   },

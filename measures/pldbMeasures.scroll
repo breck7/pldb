@@ -2234,10 +2234,9 @@ twitterParser
  highlightScope constant.language
 typeParser
  int sortIndex 2
- description Which category in PLDB's subjective ontology does this entity fit into?
- cells measureNameCell stringCell
+ description Which category(ies) in PLDB's subjective ontology does this entity fit into?
  // required
- extends abstractEnumMeasureParser
+ extends abstractEnumsMeasureParser
 
 
 // ubuntu

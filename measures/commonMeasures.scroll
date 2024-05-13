@@ -11,6 +11,11 @@ abstractHashMapMeasureParser
     return this.content
   }
 
+abstractEnumsMeasureParser
+ description A measure that can have unlimited enums.
+ catchAllCellType enumCell
+ extends abstractEnumMeasureParser
+
 abstractCountMeasureParser
  description A positive count of something. People, for example. Min is 0.
  cells measureNameCell countCell
