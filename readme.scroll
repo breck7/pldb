@@ -1,4 +1,10 @@
-title PLDB: a Programming Language Database
+import rootHeader.scroll
+
+title PLDB Readme
+
+# A Programming Language Database
+
+wideColumns 1
 
 import code/ciBadges.scroll
 
@@ -6,28 +12,26 @@ PLDB is a public domain database and website containing over 135,000 facts about
 
 This repo contains the entire database, code, and website for https://pldb.io.
 
-## To analyze the data
-The PLDB database is freely available:
+## To download the data
+The entire database is ready to analyze in popular formats. Full documentation is here: https://pldb.io/download.html
 - As CSV: https://pldb.io/pldb.csv
+- As TSV: https://pldb.io/pldb.tsv
 - As JSON: https://pldb.io/pldb.json
 - The JSON file is also available via npm:
 javascriptCode
  // npm install pldb
  console.log(require("pldb").javascript.appeared)
-Documentation for the CSV is available here: https://pldb.io/csv.html.
 
 ## To add a new language
-Easy method: https://pldb.io/create.html
-Advanced method: Create a new file in `concepts` with a unique URL friendly filename ending in `.pldb` and send a pull request.
+Create a new Scroll file in `concepts` with a unique URL friendly filename and send a pull request.
 
 ## To update a language
-Easy method: https://pldb.io/
-Advanced method: Edit the corresponding `concepts/*.pldb` file and send a pull request.
+Edit the corresponding `concepts/*.scroll` file and send a pull request.
 
 ## To add a new measure
-Advanced method: Edit or create a new file in `measures/` and add at least 1 measurement to a concept in `concepts` and send a pull request.
+Update the file `measures/pldbMeasures.scroll` and add at least 1 measurement to a concept in `concepts` and send a pull request.
 
-## To run the site locally
+## To build the site locally
 code
  git clone https://github.com/breck7/pldb
  cd pldb
@@ -35,19 +39,14 @@ code
  npm i -g cloc
  # Required to run this on fresh checkout and when upgrading from an old checkout or periodically when there are new releases
  npm install .
- # Run tests
+ # (Optional) Run tests
  npm run test
- # Start the dev server
- npm run local
- # Or to rum the local site statically
- npm run static
+ npm run build
  # After you make changes and before you commit make sure to run:
  npm run format
 
 ## To explore this repo
 The most important folder is `concepts`, which contains a file for each entity. The folder `measures` contains the grammar files (schema) for the database.
-The website content is in the `site` folder.
-The `code` folder contains importer scripts and other code for the database and site.
 You can see the `cloc` language stats on this repo at https://pldb.io/pages/about.html.
 
 ## To use as an npm package:
@@ -58,10 +57,8 @@ javascriptCode
 
 ## To cite PLDB
 PLDB content is published to the public domain and you can use it freely. If needed, here are 3 options for citing PLDB:
-code
- https://pldb.io
-code
- PLDB contributors. (2022) - "PLDB: a Programming Language Database". Retrieved from: 'https://pldb.io' [Online Resource]
+> https://pldb.io
+> PLDB contributors. (2022) - "PLDB: a Programming Language Database". Retrieved from: 'https://pldb.io' [Online Resource]
 code
  @article{pldb,
   author = {PLDB contributors},
@@ -72,3 +69,7 @@ code
  }
 
 All sources for PLDB can be found here: https://pldb.io/pages/acknowledgements.html
+
+endColumns
+
+import footer.scroll

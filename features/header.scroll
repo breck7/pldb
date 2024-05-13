@@ -1,5 +1,4 @@
 importOnly
+import settings.scroll
 import ../header.scroll
-replace BASE_URL ..
-viewSourceBaseUrl https://github.com/breck7/pldb/blob/main/measures/
-baseUrl https://pldb.io/features/
+groups All

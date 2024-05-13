@@ -1,6 +1,6 @@
 import header.scroll
 title All Features
-groups index
+groups All
 
 replaceNodejs
  const {Tables} = require("../Computer.js")
