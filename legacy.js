@@ -83,7 +83,7 @@ class PLDBServer extends TrueBaseServer {
       const repo = file.repo
       if (!repo) return
       if (file.has("repoStats")) return
-      if (file.get("isRetired") === "true") return
+      if (file.get("isDone") === "true") return
       const baseFolder = path.join(gitsFolder, file.id)
       try {
         const stats = new GitStats(repo, baseFolder)
