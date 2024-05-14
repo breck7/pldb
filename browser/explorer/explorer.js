@@ -27,9 +27,20 @@ class ExploreApp {
   columnsString = ""
 
   createDatatable() {
+    const columns = this.makeColumns(this.getColumnStringFromHash())
     this.dataTable = jQuery("#exploreTable").DataTable({
       data: pldb,
-      columns: this.makeColumns(this.getColumnStringFromHash()),
+      columns,
+      layout: {
+        topStart: {
+          buttons: ["copy", "csv", "excel", "pdf", "print"]
+        },
+        top1: {
+          searchBuilder: {
+            columns: columns.map((col, index) => index)
+          }
+        }
+      },
       paging: false,
       stateSave: true,
       stateSaveCallback: (settings, data) => {

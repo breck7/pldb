@@ -861,13 +861,13 @@ image ${image.replace("https://pldb.io/", "../")}
     return `* ${title}${akaMessage} is ${Utils.getIndefiniteArticle(sourceStatus || typeName)}${sourceStatus} ${
       this.typeLink
     }${appeared ? ` created in ${appeared}` : ""}${creatorsStr}.
- link ../lists/explore.html#q=${appeared} ${appeared}
+ link ../lists/explorer.html#q=${appeared} ${appeared}
 ${creatorsLinks}
 `
   }
 
   get typeLink() {
-    return `<a href="../lists/explore.html#q=${this.type}">${this.typeName}</a>`
+    return `<a href="../lists/explorer.html#q=${this.type}">${this.typeName}</a>`
   }
 
   get descriptionSection() {

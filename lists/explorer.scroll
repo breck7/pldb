@@ -1,5 +1,5 @@
 import header.scroll
-title Explore PLDB
+title PLDB Explorer
 groups All
 
 endSnippet
@@ -20,11 +20,11 @@ import footer.scroll
 
 <script defer src="../jquery-3.7.1.min.js"></script>
 <style>.dt-search{font-family: "SF Pro", "Helvetica Neue", "Segoe UI", "Arial";}</style>
-<link rel="stylesheet" href="../dataTables.dataTables.min.css" />
-<script defer src="../dataTables.min.js"></script>
+<link rel="stylesheet" href="../browser/explorer/dataTables.min.css" />
+<script defer src="../browser/explorer/dataTables.min.js"></script>
 <script defer src="../pldb.js"></script>
 <script defer src="../measures.js"></script>
-<script defer src="./explore.js"></script>
+<script defer src="../browser/explorer/explorer.js"></script>
 
 <script defer>
 

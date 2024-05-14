@@ -1732,6 +1732,17 @@ appearedParser
 isDoneParser
  description Has the creator or maintainer announced the language officially over, or has all activity stopped? Include a link to proof of the announcement.
  extends abstractBooleanMeasureParser
+ boolean isComputed true
+ javascript
+  computeValue(concept, measureName, parsedProgram, concepts) {
+    if (!parsedProgram.computer) {
+      const path = require("path")
+      const {Computer} = require(path.join(path.dirname(parsedProgram.file.filePath), "Computer.js"))
+      parsedProgram.computer = new Computer(parsedProgram, concepts)
+    }
+    return parsedProgram.computer.get(measureName, concept)
+  }
+
 
 nativeLanguageParser
  cells measureNameCell stringCell

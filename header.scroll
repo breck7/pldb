@@ -50,7 +50,7 @@ stumpNoSnippet
   form
    style display:inline-block;
    method get
-   action BASE_URL/lists/explore.html
+   action BASE_URL/lists/explorer.html
    input
     type search
     id trueBaseThemeHeaderSearch
@@ -67,8 +67,8 @@ stumpNoSnippet
    href BASE_URL/lists/resources.html
   a Blog
    href BASE_URL/posts/index.html
-  a Explore
-   href BASE_URL/lists/explore.html
+  a Explorer
+   href BASE_URL/lists/explorer.html
   a Download
    href BASE_URL/download.html
 
