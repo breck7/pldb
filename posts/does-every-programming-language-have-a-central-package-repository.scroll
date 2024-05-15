@@ -1,9 +1,10 @@
 import postHeader.scroll
-title Does every programming language have a central package repository?
 groups All
 date 2019.02.04 12:00:00 -8000
 
-thinColumns 2
+mediumColumns 1
+
+title Does every programming language have a central package repository?
 
 byLine https://github.com/breck7 Breck Yunits
 
@@ -14,6 +15,8 @@ Like millions of other programmers, every day I depend on central package reposi
  dateline
 
 The other day I was curious: does every programming language have one of these? I decided to find out. I pointed my crawler and trained a model to check for a package repository for every one of the 3,006 languages I am tracking. The results surprised me.
+
+***
 
 # ★ Only 1% have them
 
@@ -44,12 +47,16 @@ Given the size of GitHub, and it's growth as somewhat of a universal central pac
 
 This surprised me. The median age of a language with a CR is 24 (1995). Of the top 5 languages I mentioned above, all were created by then. Almost always the creation of the CR follows the launch of the language, sometimes by months or sometimes by years. I expected most CRs to be from newer languages, but that wasn't the case. While some new languages like Rust and Julia have CRs, others like Go and Kotlin do not.
 
-# ★ A Visual
+***
+
+# A Visual
 
 image images/packages-repos.png
  caption Languages with web package managers plotted by year and number of published packages.
 
-# ★ The List
+***
+
+# The List
 
 Here's my list of the main central package repositories for languages that have them. I cut the list a bit to only include CRs with more than 100 packages available. As always, open an issue if you spot any omissions or mistakes!
  https://github.com/breck7/pldb/issues/new open an issue
@@ -91,8 +98,9 @@ pipeTable
  prolog|/concepts/prolog.html|http://www.swi-prolog.org/pldoc/doc/_SWI_/library/prolog_pack.pl|http://www.swi-prolog.org/pldoc/doc/_SWI_/library/prolog_pack.pl|275|1972
  mathematica|/concepts/mathematica.html|http://packagedata.net/|http://packagedata.net/|210|1988
 
-## Updates
+***
 
+## Updates
 As Jay18001 pointed out, a few of these repositories serve packages for more than one language. Cocoapods => Objective-C, and Nuget => F# and other .Net langs. In this post I collapsed things so each repo only has 1 language.
 
 Update: 8/26/2019. Multiple readers pointed out that my stat for Ruby was off by 10x. I used the # I found on this page, which turned out to be just the gems beginning with the letter A. I apologize for the mistake and am very grateful for the corrections.

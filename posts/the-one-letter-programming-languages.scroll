@@ -3,6 +3,8 @@ title The One Letter Programming Languages
 groups All
 date 2022.07.16
 
+wideColumns 1
+
 byLine https://github.com/breck7 Breck Yunits
 
 image oneLetterLangs.png
@@ -79,5 +81,7 @@ ohayoCode
      columns.setType titleLength number
       filter.where titleLength < 2
        tables.basic
+
+endColumns
 
 import ../footer.scroll
