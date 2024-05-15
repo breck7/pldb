@@ -1959,10 +1959,11 @@ const computeds = {
   }
 }
 
-class Computer {
+class MeasureComputer {
   constructor(scrollFile, concepts) {
+    this.quickCache = {}
     this.concepts = concepts
-    this.ranks = calcRanks(concepts, this)
+    this.ranks = calcRanks(concepts, this, this.pageRankLinks)
     this.languageRanks = {}
 
     Object.values(this.ranks)
@@ -1974,6 +1975,33 @@ class Computer {
       })
   }
 
+  get pageRankLinks() {
+    if (this.quickCache.pageRankLinks) return this.quickCache.pageRankLinks
+
+    this.quickCache.pageRankLinks = {}
+    const pageRankLinks = this.quickCache.pageRankLinks
+    this.concepts.forEach(concept => {
+      pageRankLinks[concept.get("filename")] = []
+    })
+
+    this.concepts.forEach(concept => {
+      const filename = concept.get("filename")
+      concept
+        .filter(node => node.isLinks)
+        .forEach(node => {
+          const links = node.content.split(" ")
+          links.forEach(link => {
+            link += ".scroll"
+            if (!pageRankLinks[link]) throw new Error(`No file "${link}" found in "${filename}"`)
+
+            pageRankLinks[link].push(filename)
+          })
+        })
+    })
+
+    return pageRankLinks
+  }
+
   get(measureName, concept) {
     if (computeds[measureName]) {
       if (!concept[measureName]) concept[measureName] = computeds[measureName](concept, this)
@@ -1983,8 +2011,7 @@ class Computer {
   }
 }
 
-const calcRanks = (concepts, computer) => {
-  // const { pageRankLinks } = folder
+const calcRanks = (concepts, computer, pageRankLinks) => {
   let objects = concepts.map(concept => {
     const filename = concept.get("filename")
     const object = {}
@@ -1993,18 +2020,18 @@ const calcRanks = (concepts, computer) => {
     object.users = computer.get("numberOfUsersEstimate", concept)
     object.measurements = computer.get("measurements", concept)
     object.isLanguage = computeds.isLanguage(concept)
-    // object.pageRankLinks = pageRankLinks[filename].length
+    object.pageRankLinks = pageRankLinks[filename].length
     return object
   })
 
   objects = rankSort(objects, "jobs")
   objects = rankSort(objects, "users")
   objects = rankSort(objects, "measurements")
-  // objects = rankSort(objects, "pageRankLinks")
+  objects = rankSort(objects, "pageRankLinks")
 
   objects.forEach((obj, rank) => {
     // Drop the item this does the worst on, as it may be a flaw in PLDB.
-    const top3 = [obj.jobsRank, obj.usersRank, obj.measurementsRank]
+    const top3 = [obj.jobsRank, obj.usersRank, obj.measurementsRank, obj.pageRankLinks]
     obj.totalRank = lodash.sum(lodash.sortBy(top3).slice(0, 3))
   })
   objects = lodash.sortBy(objects, ["totalRank"])
@@ -2036,4 +2063,4 @@ const rankSort = (objects, key) => {
   return objects
 }
 
-module.exports = { Computer, Tables: new Tables() }
+module.exports = { MeasureComputer, Tables: new Tables() }

@@ -90,8 +90,8 @@ abstractComputedIntMeasureParser
   computeValue(concept, measureName, parsedProgram, concepts) {
     if (!parsedProgram.computer) {
       const path = require("path")
-      const {Computer} = require(path.join(path.dirname(parsedProgram.file.filePath), "Computer.js"))
-      parsedProgram.computer = new Computer(parsedProgram, concepts)
+      const {MeasureComputer} = require(path.join(path.dirname(parsedProgram.file.filePath), "Computer.js"))
+      parsedProgram.computer = new MeasureComputer(parsedProgram, concepts)
     }
     return parsedProgram.computer.get(measureName, concept)
   }
@@ -1737,8 +1737,8 @@ isDoneParser
   computeValue(concept, measureName, parsedProgram, concepts) {
     if (!parsedProgram.computer) {
       const path = require("path")
-      const {Computer} = require(path.join(path.dirname(parsedProgram.file.filePath), "Computer.js"))
-      parsedProgram.computer = new Computer(parsedProgram, concepts)
+      const {MeasureComputer} = require(path.join(path.dirname(parsedProgram.file.filePath), "Computer.js"))
+      parsedProgram.computer = new MeasureComputer(parsedProgram, concepts)
     }
     return parsedProgram.computer.get(measureName, concept)
   }
@@ -2070,51 +2070,47 @@ referenceParser
  single false
 
 // relationships
-abstractRelationshipParser
- extends abstractConceptEdgesMeasureParser
- // todo: remove need for sortKey in Grammar
- string sortKey abstractRelationshipParser
 relatedConceptsParser
- extends abstractRelationshipParser
+ extends abstractFilenameRelationshipParser
  description What languages are related?
  // This serves as a catch all, and it is better to use a more specific relationship node such as "supersetOf".
 runsOnVmParser
- extends abstractRelationshipParser
+ extends abstractFilenameRelationshipParser
  description What virtual machine(s) does this language run on? 
 influencedByParser
  description What languages influenced this one?
- extends abstractRelationshipParser
+ extends abstractFilenameRelationshipParser
 successorOfParser
  description Was this language launched as the successor of another?
- extends abstractRelationshipParser
+ extends abstractFilenameRelationshipParser
 subsetOfParser
  description Is this language a subset of another?
- extends abstractRelationshipParser
+ extends abstractFilenameRelationshipParser
 implementationOfParser
  description Is this language an implementation of another?
- extends abstractRelationshipParser
+ extends abstractFilenameRelationshipParser
 renamedToParser
  description What is the new name of this language?
- extends abstractRelationshipParser
+ extends abstractFilenameRelationshipParser
 supersetOfParser
  description Is this language a superset of another?
  // If you specify this link then the superset language will inherit all features of subset language.
- extends abstractRelationshipParser
+ extends abstractFilenameRelationshipParser
 writtenInParser
  description What language(s) is the main implementation written in?
- extends abstractRelationshipParser
+ extends abstractFilenameRelationshipParser
 extensionOfParser
  description What language is this language an extension of?
- extends abstractRelationshipParser
+ extends abstractFilenameRelationshipParser
 forkOfParser
  description What language is this language a fork of?
- extends abstractRelationshipParser
+ extends abstractFilenameRelationshipParser
 compilesToParser
  description Which language(s) does this language primarily compile to?
- extends abstractRelationshipParser
+ extends abstractFilenameRelationshipParser
 inputLanguagesParser
  description Which language(s) does this take as input? For compilers, what languages does this compile compile?
- extends abstractRelationshipParser
+ extends abstractFilenameRelationshipParser
 
 // releaseNotes
 releaseNotesUrlParser

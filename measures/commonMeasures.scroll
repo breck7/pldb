@@ -78,3 +78,13 @@ abstractDelimitedValuesBlobMeasureParser
 abstractCodeMeasureParser
  extends abstractStringBlobMeasureParser
  baseParser blobParser
+
+abstractRelationshipParser
+ extends abstractConceptEdgesMeasureParser
+ // todo: remove need for sortKey in Grammar
+ string sortKey abstractRelationshipParser
+ boolean isLinks true
+abstractFilenameRelationshipParser
+ extends abstractRelationshipParser
+abstractIDRelationshipParser
+ extends abstractRelationshipParser

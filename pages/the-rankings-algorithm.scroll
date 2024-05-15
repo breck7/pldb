@@ -4,7 +4,14 @@ groups All
 
 wideColumns 1
 
-The PLDB rankings algorithm is:
+PLDB ranks languages by combining scores in 4 broad categories:
+
+- number of estimated users
+- number of estimated jobs
+- number of languages it has influenced
+- number of measurements PLDB has on a language
+
+# The Ranking Algorithm
 
 katex LangScore(x) = sum(sortDesc(LinkRank(x), MeasurementsRank(x), JobsEstRank(x), UserEstRank(x))[0:2])
 
