@@ -1,18 +1,19 @@
-import header.scroll
 groups All
-
-<div class="singleColumn">
-title Top 1,000 Computer Languages
-
-Here are the top 1,000 computer languages in PLDB. You can also explore all the languages in PLDB. Rankings are explained here.
- link explorer.html all the languages 
- link ../pages/the-rankings-algorithm.html explained here
-
-endSnippet
-
 replaceNodejs
  const {Tables} = require("../Computer.js")
  module.exports = {TABLE : Tables.top1000}
+title Top 1,000 Computer Languages
+
+import header.scroll
+
+<div class="singleColumn">
+printTitle
+
+Here are the top 1,000 computer languages in PLDB. You can also explore all the languages in PLDB. Rankings are explained here.
+ link explorer.html all the languages
+ link ../pages/the-rankings-algorithm.html explained here
+
+endSnippet
 
 TABLE
 

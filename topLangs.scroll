@@ -1,9 +1,4 @@
 importOnly
-
-Top Languages
- link ./lists/top1000.html
- class pldbHomepageLink
-
 replaceNodejs
  // const {Tables} = require("./Computer.js")
  const tops = [
@@ -53,5 +48,9 @@ replaceNodejs
         .map(file => `<a href="concepts/${file.link.replace(".scroll", ".html")}">${file.id}</a>`)
         .join(" · ")
     }
+
+Top Languages
+ link ./lists/top1000.html
+ class pldbHomepageLink
 
 TOP_LANGS

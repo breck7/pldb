@@ -1,7 +1,9 @@
-import postHeader.scroll
-title How many programmers are there in the world?
-groups All
 date 2019.05.26 12:00:00 -8000
+groups All
+title How many programmers are there in the world?
+
+import postHeader.scroll
+printTitle
 
 mediumColumns 1
 

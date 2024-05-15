@@ -441,7 +441,7 @@ githubLanguageParser
  aliasesParser
   extends abstractStringListMeasureParser
   description What are additional aliases, excluding name.downcase which are implicitly included?
-  listDelimiter  or 
+  listDelimiter  or
  interpretersParser
   extends abstractStringListMeasureParser
   description What are the associated interpreters?
@@ -1743,7 +1743,6 @@ isDoneParser
     return parsedProgram.computer.get(measureName, concept)
   }
 
-
 nativeLanguageParser
  cells measureNameCell stringCell
  description What is the native human language for this language, if not English?
@@ -1850,8 +1849,7 @@ creatorsParser
  boolean alwaysRecommended true
  description What are the name(s) of the original creators of the language delimited by " and "?
  catchAllCellType stringCell
- listDelimiter  and 
-
+ listDelimiter  and
 
 // letterFirstIdentifiers
 letterFirstIdentifiersParser
@@ -1954,7 +1952,7 @@ originCommunityParser
  description In what community(ies) did the language first originate?
  boolean alwaysRecommended true
  // todo Make origin community name the url for the community? instead of the name? Not sure.
- listDelimiter  && 
+ listDelimiter  &&
  example
   originCommunity Microsoft && /r/programminglanguages && news.ycombinator.com
  extends abstractStringListMeasureParser
@@ -2076,7 +2074,7 @@ relatedConceptsParser
  // This serves as a catch all, and it is better to use a more specific relationship node such as "supersetOf".
 runsOnVmParser
  extends abstractFilenameRelationshipParser
- description What virtual machine(s) does this language run on? 
+ description What virtual machine(s) does this language run on?
 influencedByParser
  description What languages influenced this one?
  extends abstractFilenameRelationshipParser
@@ -2247,7 +2245,6 @@ typeParser
  // required
  extends abstractEnumsMeasureParser
 
-
 // ubuntu
 ubuntuPackageParser
  extends abstractUniqueWordMeasureParser
@@ -2273,7 +2270,6 @@ versionsParser
 usesSemanticVersioningParser
  extends abstractBooleanMeasureParser
  description Does the official release of the language use semantic versioning?
-
 
 // website
 websiteParser

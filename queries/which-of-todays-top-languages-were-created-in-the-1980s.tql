@@ -1,3 +1,4 @@
+printTitle
 title Which of today's top languages were created in the 1980's?
 select isLanguage rank type appeared
 where isLanguage oneOf true

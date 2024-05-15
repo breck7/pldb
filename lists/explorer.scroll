@@ -1,6 +1,8 @@
-import header.scroll
-title PLDB Explorer
 groups All
+title PLDB Explorer
+
+import header.scroll
+printTitle
 
 endSnippet
 

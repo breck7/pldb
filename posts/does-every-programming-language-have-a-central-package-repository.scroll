@@ -1,10 +1,12 @@
-import postHeader.scroll
-groups All
 date 2019.02.04 12:00:00 -8000
+groups All
+title Does every programming language have a central package repository?
+
+import postHeader.scroll
 
 mediumColumns 1
 
-title Does every programming language have a central package repository?
+printTitle
 
 byLine https://github.com/breck7 Breck Yunits
 
@@ -120,7 +122,7 @@ ohayoCode
      columns.rename packageRepository cpr
       group.by cpr
        tables.basic
-      filter.where cpr != 
+      filter.where cpr !=
        tables.basic
        group.by appeared
         vega.bar

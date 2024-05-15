@@ -1,7 +1,9 @@
-import postHeader.scroll
-title The One Letter Programming Languages
-groups All
 date 2022.07.16
+groups All
+title The One Letter Programming Languages
+
+import postHeader.scroll
+printTitle
 
 wideColumns 1
 
@@ -72,7 +74,7 @@ ohayoCode
  web.get https://pldb.io/pldb.csv
   tables.basic
    columns.keep title id aka appeared type rank
-    filter.where aka != 
+    filter.where aka !=
      text.length aka
       columns.setType akaLength number
        filter.where akaLength < 2

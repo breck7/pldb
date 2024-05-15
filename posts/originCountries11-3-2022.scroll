@@ -1,8 +1,10 @@
-import postHeader.scroll
-title Where are the most programming languages created?
 date 11/3/2022
 groups All
 openGraphImage https://pldb.io/posts/images/originCountries11-3-2022.png
+title Where are the most programming languages created?
+
+import postHeader.scroll
+printTitle
 
 wideColumns 1
 
@@ -24,7 +26,7 @@ ohayoCode
  html.h1 Which countries produce the most programming languages?
  web.get https://pldb.io/pldb.csv
   hidden
-  filter.where country > 
+  filter.where country >
    show.rowCount
    group.by country
     hidden

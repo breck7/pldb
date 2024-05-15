@@ -706,10 +706,9 @@ pipeTable
 
     return `import ../header.scroll
 baseUrl https://pldb.io/concepts/
-title ${title}
-
 title ${title} - ${lodash.upperFirst(typeName)}
- hidden
+
+printTitle ${title}
 
 html
  <a class="trueBaseThemePreviousItem" href="${this.prevPage}">&lt;</a>
@@ -1415,10 +1414,8 @@ class Feature {
 
     return `import header.scroll
 
-title ${title}
-
 title ${title} - language feature
- hidden
+printTitle ${title}
 
 html
  <a class="trueBaseThemePreviousItem" href="${previous.permalink}">&lt;</a>
@@ -1971,7 +1968,7 @@ class MeasureComputer {
       .forEach((obj, index) => {
         const rank = { ...obj }
         rank.index = index + 1
-        this.languageRanks[obj.filename] = obj
+        this.languageRanks[obj.filename] = rank
       })
   }
 

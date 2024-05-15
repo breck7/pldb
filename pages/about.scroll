@@ -1,6 +1,10 @@
-import header.scroll
-title About
 groups All
+replaceJs BUILT_ON_DAY dayjs().format("MM/DD/YYYY")
+replaceJs DAYS_ONLINE Math.floor(dayjs().diff(dayjs("2022-08-15"), "day", true))
+title About
+
+import header.scroll
+printTitle
 
 thinColumns 4
 
@@ -28,8 +32,6 @@ PLDB is an entirely static site. PLDB.io is served via GitHub Pages. You can clo
 ## Acknowledgements
 This site is powered by information and software from so many people and organizations, a few of which are listed on the acknowledgements page.
  link acknowledgements.html acknowledgements
-
-replaceJs BUILT_ON_DAY dayjs().format("MM/DD/YYYY")
 
 ## Cloc Stats
 Below are the cloc stats for the pldb repo as of BUILT_ON_DAY.
@@ -60,12 +62,10 @@ bashCode
  cd pldb
  git pull
 
-replaceJs DAYS_ONLINE Math.floor(dayjs().diff(dayjs("2022-08-15"), "day", true))
-
 ## History
 - Breck Yunits started PLDB as an anonymous Jekyll blog named "CodeLani" on November 18, 2017.
  link ../lists/explorer.html#q=Breck%20Yunits Breck Yunits
- link ../concepts/jekyll.html Jekyll 
+ link ../concepts/jekyll.html Jekyll
  link ../posts/hello-world.html November 18, 2017
 - Breck renamed CodeLani to PLDB and migrated it to Scroll and TrueBase on June 27, 2022.
  link ../concepts/scroll.html Scroll

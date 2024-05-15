@@ -1,3 +1,4 @@
+printTitle
 title Does every programming language have line comments?
 select hasLineComments lineCommentToken rank type appeared
 notMissing hasLineComments

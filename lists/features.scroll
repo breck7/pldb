@@ -1,13 +1,13 @@
-import header.scroll
-title Features
 groups All
-
-mediumColumns 1
-
 replaceNodejs
  const {Tables} = require("../Computer.js")
  module.exports = Tables.topFeaturesImports
+title Features
 
+import header.scroll
+printTitle
+
+mediumColumns 1
 
 A list of COUNT features found in programming languages. View all features.
  link allFeatures.html all features

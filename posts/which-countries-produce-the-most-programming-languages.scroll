@@ -1,7 +1,9 @@
-import postHeader.scroll
-title Which countries produce the most programming languages?
-groups archive
 date 2018.10.28 12:00:00 -8000
+groups archive
+title Which countries produce the most programming languages?
+
+import postHeader.scroll
+printTitle
 
 wideColumns 1
 
@@ -52,7 +54,7 @@ ohayoCode
  html.h1 Which countries produce the most programming languages?
  web.get https://pldb.io/pldb.csv
   hidden
-  filter.where country > 
+  filter.where country >
    group.by country
     hidden
     vega.bar

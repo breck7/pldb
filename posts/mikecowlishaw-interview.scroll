@@ -1,7 +1,9 @@
-import postHeader.scroll
-title A brief interview with Rexx creator Mike Cowlishaw
 date 02/27/2023
 groups interviews frontpage All
+title A brief interview with Rexx creator Mike Cowlishaw
+
+import postHeader.scroll
+printTitle
 
 thinColumns 2
 
@@ -14,22 +16,22 @@ byLine https://github.com/hassamalhajaji Hassam Alhajaji
  https://pldb.io/concepts/rexx.html Rexx
  https://pldb.io/concepts/netrexx.html NetRexx
  https://pldb.io/concepts/pl-i.html PL/I
- https://pldb.io/concepts/c.html C 
+ https://pldb.io/concepts/c.html C
  https://pldb.io/concepts/java.html Java
 
 endSnippet
 
 ## Interview
-* *Hassam:* I've read some of your early papers on Rexx. If you were to edit them now knowing what you know, what would you change? I want to know what worked for Rexx, as well as what didn't. 
-* *Dr Cowlishaw:* I don't think I'd change anything in them except to emphasise more that a programming language is a Human-Computer-Interface and the language designer should design for the users of the language, not just for himself or herself. 
+* *Hassam:* I've read some of your early papers on Rexx. If you were to edit them now knowing what you know, what would you change? I want to know what worked for Rexx, as well as what didn't.
+* *Dr Cowlishaw:* I don't think I'd change anything in them except to emphasise more that a programming language is a Human-Computer-Interface and the language designer should design for the users of the language, not just for himself or herself.
 
 * As for what I'd change in Rexx: there are some limitations because of the slowness of computers at that time (e.g., I wanted all comparisons to be, by default, caseless).  Many of these sorts of things I fixed in NetRexx (see).
  https://speleotrove.com/misc/NetRexx2.pdf see
 
-* *Hassam:* Rexx has been battle tested at IBM and has given birth to many implementations. To what do you attribute the early success of Rexx? 
+* *Hassam:* Rexx has been battle tested at IBM and has given birth to many implementations. To what do you attribute the early success of Rexx?
 * *Dr Cowlishaw* It was (and still is) very easy for people who were not programmers to learn and to get results with Rexx, due it it having few specials codes and so on (the one that caused most trouble was '*' meaning 'multiply'.  That was (and is) completely non-intuitive to someone seeing a Rexx program for the first time.
 
-* *Hassam:* do you predict the next paradigm shift in programming languages will be?  
+* *Hassam:* do you predict the next paradigm shift in programming languages will be?
 * *Dr Cowlishaw:* Hopefully a much higher-level interface, where the programmer describes what's wanted and then refines it with the help of (perhaps) some real AI.
 
 image images/cowlishaw.jpg

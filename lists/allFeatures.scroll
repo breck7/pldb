@@ -1,10 +1,11 @@
-import header.scroll
-title All Features
 groups All
-
 replaceNodejs
  const {Tables} = require("../Computer.js")
  module.exports = Tables.allFeaturesImports
+title All Features
+
+import header.scroll
+printTitle
 
 mediumColumns 1
 

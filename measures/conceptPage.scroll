@@ -1,17 +1,17 @@
 importOnly
-replace BASE_URL ..
-import pldbMeasures.scroll
-
 groups All
-
-import ../header.scroll
-
+replace BASE_URL ..
 replaceJs TEMPLATE
  {
   const path = require("path")
   const {Tables} = require(path.join(path.dirname(absolutePath), "..", "Computer.js"))
   Tables.getLanguageTemplate(absolutePath);
  }
+
+import pldbMeasures.scroll
+
+import ../header.scroll
+
 TEMPLATE
 
 import ../footer.scroll

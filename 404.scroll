@@ -1,10 +1,11 @@
 permalink 404.html
-replace BASE_URL 
+replace BASE_URL .
+title Page not found
 viewSourceBaseUrl https://github.com/breck7/pldb/blob/main/
 
 import header.scroll
 
-title Page not found
+printTitle
 thinColumns 1
 
 Sorry, the url you requested was not found.
@@ -14,7 +15,7 @@ extendedNotFoundParser
  // Make the path absolute in prod so it works even on nested folders.
  // Of course, getting this to work for locally built sites and www sites is tricky.
  // Only reason it is useful locally is for testing though, so for now,
- // for this page, just make it work on www. 
+ // for this page, just make it work on www.
  string requireOnce
   <script defer src="/helpfulNotFound.js"></script>
 

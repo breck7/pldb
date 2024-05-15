@@ -1,3 +1,4 @@
+printTitle
 title Which language repos have the most files?
 select repoStats_files rank appeared
 notMissing repoStats_files

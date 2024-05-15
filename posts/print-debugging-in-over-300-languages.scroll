@@ -1,7 +1,9 @@
-import postHeader.scroll
-title "print() debugging" in over 300 languages
-groups All
 date 2022.07.15
+groups All
+title "print() debugging" in over 300 languages
+
+import postHeader.scroll
+printTitle
 
 wideColumns 1
 
@@ -194,12 +196,11 @@ comment
     )
   }
 
-
 ohayoCode
  html.h1 Does every programming language have a central package repository?
  web.get https://pldb.io/pldb.csv
   tables.basic
-  filter.where printToken != 
+  filter.where printToken !=
    tables.basic
    group.by printToken
     rows.sortByReverse count

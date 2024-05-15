@@ -1,11 +1,11 @@
-import header.scroll
-title Acknowledgements
 groups All
-
-
 replaceNodejs
  const {Tables} = require("../Computer.js")
  module.exports = Tables.acknowledgements
+title Acknowledgements
+
+import header.scroll
+printTitle
 
 thinColumns
 

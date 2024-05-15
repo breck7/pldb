@@ -1,10 +1,12 @@
-import postHeader.scroll
-groups All
 date 2018.11.06 12:00:00 -8000
+groups All
+title When did GitHub become the place to host new programming language projects?
+
+import postHeader.scroll
 
 mediumColumns 1
 
-title When did GitHub become the place to host new programming language projects?
+printTitle
 
 byLine https://github.com/breck7 Breck Yunits
 
@@ -93,7 +95,6 @@ commaTable
  2016,27,10,37
  2017,26,15,58
  2018,7,4,57
-
 
 ohayoCode
  html.h1 When did GitHub become the place to host new programming language projects?

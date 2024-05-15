@@ -1,9 +1,9 @@
+groups All
+replace BASE_URL .
+title PLDB: a Programming Language DataBase
+
 import header.scroll
 
-title PLDB: a Programming Language DataBase
- hidden
-
-groups All
 keyboardNav
 
 <center>
@@ -15,8 +15,6 @@ keyboardNav
 css .scrollFilePage { text-align: center;}
 
 import searchForm.scroll
-
-replace BASE_URL .
 
 import topLangs.scroll
 

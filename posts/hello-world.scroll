@@ -1,7 +1,9 @@
-import postHeader.scroll
-title Hello, world!
-groups All
 date 2017.11.15 12:00:00 -8000
+groups All
+title Hello, world!
+
+import postHeader.scroll
+printTitle
 
 thinColumns 1
 

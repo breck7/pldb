@@ -1,7 +1,10 @@
-import postHeader.scroll
-title A brief interview with Mu creator Dr. Kartik Agaram
-groups interviews frontpage All
 date 11/22/2022
+groups interviews frontpage All
+openGraphImage https://pldb.io/posts/images/kartikAgaram.png
+title A brief interview with Mu creator Dr. Kartik Agaram
+
+import postHeader.scroll
+printTitle
 
 thinColumns 2
 
@@ -58,6 +61,5 @@ So yes, breakage will be a little more visible where it's normally happening in 
  https://en.wikipedia.org/wiki/Tracy_Kidder Tracy Kidder's
 image images/kartikAgaram.png
  caption You have my heartfelt gratitude Dr. Agaram!
-openGraphImage https://pldb.io/posts/images/kartikAgaram.png
 
 import footer.scroll
