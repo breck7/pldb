@@ -249,7 +249,7 @@ Wayback Machine: https://web.archive.org/web/20220000000000*/${title}`
     return this.allExamples.length + this.featuresWithExamples.length
   }
 
-  // Todo: make this a general TrueBase feature
+  // Todo: make this a general Scroll feature
   // Support inheritance in the dataset. Entities can extend from other entities and override
   // only the column values where they are different.
   get extended() {
@@ -509,6 +509,10 @@ Wayback Machine: https://web.archive.org/web/20220000000000*/${title}`
 
   get rank() {
     return this.parsed.rank
+  }
+
+  link(baseFolder = "") {
+    return `<a href="${baseFolder + this.permalink}">${this.title}</a>`
   }
 
   get extensions() {
@@ -948,10 +952,13 @@ ${creatorsLinks}
     }
 
     const supersetOf = this.getRelationshipFile("supersetOf")
-    if (supersetOf) facts.push(`${title} is a superset of ${supersetOf.link}`)
+    if (supersetOf)
+      facts.push(
+        `${title} is a <a href="../lists/explorer.html#columns=rank~id~appeared~type~creators~supersetOf&searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22!null%22%2C%22data%22%3A%22supersetOf%22%2C%22origData%22%3A%22supersetOf%22%2C%22type%22%3A%22html%22%2C%22value%22%3A%5B%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D">superset</a> of ${supersetOf.link()}`
+      )
 
     const implementationOf = this.getRelationshipFile("implementationOf")
-    if (implementationOf) facts.push(`${title} is an implementation of ${implementationOf.link}`)
+    if (implementationOf) facts.push(`${title} is an implementation of ${implementationOf.link()}`)
 
     const { originCommunity } = this
     let originCommunityStr = ""
