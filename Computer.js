@@ -1422,6 +1422,14 @@ class Feature {
     let referencesText = ""
     if (references.length) referencesText = `* Read more about ${title} on the web: ${linkManyAftertext(references)}`
 
+    const filledLink = `../lists/explorer.html#columns=rank~id~appeared~tags~creators~${id}&searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22!null%22%2C%22data%22%3A%22${id}%22%2C%22origData%22%3A%22${id}%22%2C%22type%22%3A%22num%22%2C%22value%22%3A%5B%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D`
+    const missingLink =  `../lists/explorer.html#columns=rank~id~appeared~tags~creators~${id}&searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22null%22%2C%22data%22%3A%22${id}%22%2C%22origData%22%3A%22${id}%22%2C%22type%22%3A%22num%22%2C%22value%22%3A%5B%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D`
+
+    const explorerLinks = `View all concepts with or missing a *${id}* measurement
+ link ${missingLink} missing
+ link ${filledLink} with
+`
+
     let descriptionText = ""
     const description = this.measure.Description
     if (description) descriptionText = `* This question asks: ${description}`
@@ -1443,7 +1451,7 @@ ${examplesText}
 
 ***
 
-${[positiveText, negativeText, descriptionText, referencesText].filter(i => i).join("\n\n***\n\n")}
+${[positiveText, negativeText, descriptionText, explorerLinks, referencesText].filter(i => i).join("\n\n***\n\n")}
 
 endColumns
 
