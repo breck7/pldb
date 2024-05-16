@@ -26,7 +26,7 @@ New Posts
 loop
  groups posts/frontpage
  limit 5
- javascript `<a class="newPostLink" href="${item.relativePath}${item.file.permalink}">${item.file.title}</a>`
+ javascript `<a class="newPostLink" href="${item.relativePath}${item.file.permalink}">${item.file.title}</a><br>`
 
 </center>
 
