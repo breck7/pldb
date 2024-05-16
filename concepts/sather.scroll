@@ -21,10 +21,10 @@ printToken #OUT
 wikipedia https://en.wikipedia.org/wiki/Sather
  example
   upto!(once m:INT):SAME is
-      i: INT := self; -- initialise i to the value of self, 
+      i: INT := self; -- initialise i to the value of self,
                       -- that is the integer of which this method is called
       loop
-        if i>m then 
+        if i>m then
           quit;  -- leave the loop when i goes beyond m
         end;
         yield i; -- else use i as return value and stay in the loop
@@ -52,10 +52,10 @@ leachim6 Sather
  fileExtensions sa
  example
   class MAIN is
-     main is 
-        loop 
-           #OUT + "Hello World\n" 
-        end 
+     main is
+        loop
+           #OUT + "Hello World\n"
+        end
      end
   end
   

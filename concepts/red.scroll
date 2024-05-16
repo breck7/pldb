@@ -33,7 +33,7 @@ githubRepo https://github.com/red/red
  created 2011
  updated 2022
  firstCommit 2011
- description Red is a next-generation programming language strongly inspired by Rebol, but with a broader field of usage thanks to its native-code compiler, from system programming to high-level scripting and cross-platform reactive GUI, while providing modern support for concurrency, all in a zero-install, zero-config, single 1MB file! 
+ description Red is a next-generation programming language strongly inspired by Rebol, but with a broader field of usage thanks to its native-code compiler, from system programming to high-level scripting and cross-platform reactive GUI, while providing modern support for concurrency, all in a zero-install, zero-config, single 1MB file!
  issues 543
 
 repoStats
@@ -117,7 +117,7 @@ linguistGrammarRepo https://github.com/Oldes/Sublime-Red
       ; CLOCKS_PER_SEC value for Syllable, Linux (XSI-conformant systems)
       ; TODO: check for other systems
       #define clocks-per-second   1000'000
-  ] 
+  ]
   
   #import [LIBC-file cdecl [
   
@@ -216,7 +216,7 @@ leachim6 Red
  fileExtensions red
  example
   Red [Needs: 'View]
-  view [text "Hello World"] 
+  view [text "Hello World"]
 rosettaCode http://www.rosettacode.org/wiki/Category:Red
 
 rijuRepl https://riju.codes/red

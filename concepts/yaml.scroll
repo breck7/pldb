@@ -72,20 +72,20 @@ linguistGrammarRepo https://github.com/atom/language-yaml
  commitCount 205
  sampleCount 6
  example
-  --- 
+  ---
   name: R Console
   fileTypes: []
   
   scopeName: source.r-console
   uuid: F629C7F3-823B-4A4C-8EEE-9971490C5710
-  patterns: 
+  patterns:
   - name: source.r.embedded.r-console
     begin: "^> "
-    beginCaptures: 
-      "0": 
+    beginCaptures:
+      "0":
         name: punctuation.section.embedded.r-console
     end: \n|\z
-    patterns: 
+    patterns:
     - include: source.r
   keyEquivalent: ^~R
   

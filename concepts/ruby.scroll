@@ -45,7 +45,7 @@ hasFunctionOverloading false
 hasAsyncAwait false
 hasConstants true
  # Constants in Ruby being with a capital letter. Will throw a warning or error, depending on runtime settings.
- Name = "John"  
+ Name = "John"
  # Not a constant
  name = "John"
 hasClasses true

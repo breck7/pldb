@@ -8,8 +8,8 @@ originCommunity 80/20 Software
 wikipedia https://en.wikipedia.org/wiki/ASIC_programming_language
  example
   REM 10 a=2
-  L10: 
-  	A@ = 2 
+  L10:
+  	A@ = 2
   	
   	REM 20 b=a^10
   	2:  Syntax error

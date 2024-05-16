@@ -28,14 +28,14 @@ wikipedia https://en.wikipedia.org/wiki/PureBasic
   Structure type_name
      field_name.type ; Single field. Perhaps the structures attachment.
      field_name[count].type ; Static arrays.
-     ; ... 
+     ; ...
      ; Optional construction StructureUnion .. EndStructureUnion allows you
      ; to combine multiple fields into one area of memory
      ; that is sometimes required for the conversion types.
      StructureUnion
         type_name.type
-        ; ... 
-     EndStructureUnion 
+        ; ...
+     EndStructureUnion
   EndStructure
  related basic linux x86-isa powerpc isbn
  summary PureBasic is a commercially distributed procedural computer programming language and integrated development environment based on BASIC and developed by Fantaisie Software for Windows 32/64-bit, Linux 32/64-bit, and macOS. An Amiga version is available, although it has been discontinued and some parts of it are released as open source. The first public release of PureBasic for Windows was on December 17, 2000. It has been continually updated since. PureBasic has a "lifetime license model". As cited on the website, the very first PureBasic user (who registered in 1998) still has free access to new updates and this is not going to change.PureBasic compiles directly to x86, x86-64, PowerPC or 680x0  instruction sets, generating small standalone executables and DLLs which need no runtime libraries beyond the standard system libraries. Programs developed without using the platform-specific application programming interfaces (APIs) can be built easily from the same source file with little or no modification. PureBasic supports inline assembly, allowing the developer to include FASM assembler commands within PureBasic source code, while using the variables declared in PureBasic source code, enabling experienced programmers to improve the speed of speed-critical sections of code. PureBasic supports and has integrated the OGRE 3D Environment. Other 3D environments such as the Irrlicht Engine are unofficially supported.

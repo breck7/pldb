@@ -93,9 +93,9 @@ leachim6 Sas
  filepath s/Sas.sas
  fileExtensions sas
  example
-  %macro putit( string= ); 
-       %put &string; 
-       %mend; 
+  %macro putit( string= );
+       %put &string;
+       %mend;
   
   %putit(string=Hello World)
   

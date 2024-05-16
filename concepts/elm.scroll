@@ -85,7 +85,7 @@ wikipedia https://en.wikipedia.org/wiki/Elm_(programming_language)
   hypotenuse a b =
       sqrt (a^2 + b^2)
   
-  -- Functions are also curried; here we've curried the multiplication 
+  -- Functions are also curried; here we've curried the multiplication
   -- infix operator with a `2`
   multiplyBy2 : number -> number
   multiplyBy2 =
@@ -101,7 +101,7 @@ wikipedia https://en.wikipedia.org/wiki/Elm_(programming_language)
   book =
       { title = "Steppenwolf"
       , author = "Hesse"
-      , pages = 237 
+      , pages = 237
       }
   
   -- Record access is done with `.`

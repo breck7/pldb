@@ -95,7 +95,7 @@ linguistGrammarRepo https://github.com/wronex/sublime-angelscript
   }
   
   final class DumbBot : BotManager::BaseBot
-  {	
+  {
   	DumbBot( CBasePlayer@ pPlayer )
   	{
   		super( pPlayer );

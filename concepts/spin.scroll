@@ -60,7 +60,7 @@ linguistGrammarRepo https://github.com/bitbased/sublime-spintools
   '' Initializes serial LCD object
   '' -- returns true if all parameters okay
   
-    okay := lcd.init(pin, baud, lines) 
+    okay := lcd.init(pin, baud, lines)
   
   
   PUB finalize
@@ -88,22 +88,22 @@ linguistGrammarRepo https://github.com/bitbased/sublime-spintools
   
   '' Print a signed decimal number
   
-    lcd.str(num.dec(value))  
+    lcd.str(num.dec(value))
   
   
-  PUB decf(value, width) 
+  PUB decf(value, width)
   
   '' Prints signed decimal value in space-padded, fixed-width field
   
-    lcd.str(num.decf(value, width))   
+    lcd.str(num.decf(value, width))
     
   
-  PUB decx(value, digits) 
+  PUB decx(value, digits)
   
   '' Prints zero-padded, signed-decimal string
   '' -- if value is negative, field width is digits+1
   
-    lcd.str(num.decx(value, digits)) 
+    lcd.str(num.decx(value, digits))
   
   
   PUB hex(value, digits)
@@ -117,7 +117,7 @@ linguistGrammarRepo https://github.com/bitbased/sublime-spintools
   
   '' Print an indicated hexadecimal number
   
-    lcd.str(num.ihex(value, digits))   
+    lcd.str(num.ihex(value, digits))
   
   
   PUB bin(value, digits)
@@ -131,14 +131,14 @@ linguistGrammarRepo https://github.com/bitbased/sublime-spintools
   
   '' Print an indicated (%) binary number
   
-    lcd.str(num.ibin(value, digits))     
+    lcd.str(num.ibin(value, digits))
       
   
   PUB cls
   
   '' Clears LCD and moves cursor to home (0, 0) position
   
-    lcd.cls 
+    lcd.cls
   
   
   PUB home
@@ -165,9 +165,9 @@ linguistGrammarRepo https://github.com/bitbased/sublime-spintools
   PUB cursor(type)
   
   '' Selects cursor type
-  ''   0 : cursor off, blink off  
-  ''   1 : cursor off, blink on   
-  ''   2 : cursor on, blink off  
+  ''   0 : cursor off, blink off
+  ''   1 : cursor off, blink on
+  ''   2 : cursor on, blink off
   ''   3 : cursor on, blink on
   
     lcd.cursor(type)
@@ -201,9 +201,9 @@ linguistGrammarRepo https://github.com/bitbased/sublime-spintools
   {{
   
   ┌──────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┐
-  │                                                   TERMS OF USE: MIT License                                                  │                                                            
+  │                                                   TERMS OF USE: MIT License                                                  │
   ├──────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┤
-  │Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation    │ 
+  │Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation    │
   │files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy,    │
   │modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software│
   │is furnished to do so, subject to the following conditions:                                                                   │
@@ -215,7 +215,7 @@ linguistGrammarRepo https://github.com/bitbased/sublime-spintools
   │COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE,   │
   │ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.                         │
   └──────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┘
-  }}  
+  }}
 
 rosettaCode http://www.rosettacode.org/wiki/Category:Spin
 

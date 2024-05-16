@@ -34,7 +34,7 @@ example
 
 wikipedia https://en.wikipedia.org/wiki/Common_Intermediate_Language
  example
-  .method assembly static void modopt([mscorlib]System.Runtime.CompilerServices.CallConvCdecl) 
+  .method assembly static void modopt([mscorlib]System.Runtime.CompilerServices.CallConvCdecl)
           test_pointer_operations(int32 param) cil managed
   {
     .vtentry 1 : 1
@@ -45,7 +45,7 @@ wikipedia https://en.wikipedia.org/wiki/Common_Intermediate_Language
              [2] valuetype A* a,
              [3] int32 k)
   // k = 0;
-    IL_0000:  ldc.i4.0 
+    IL_0000:  ldc.i4.0
     IL_0001:  stloc.3
   // ptr = &k;
     IL_0002:  ldloca.s   k // load local's address instruction

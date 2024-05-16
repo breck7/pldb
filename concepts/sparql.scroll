@@ -86,8 +86,8 @@ leachim6 SparQL
  filepath s/SparQL.sparql
  fileExtensions sparql
  example
-  SELECT ?h WHERE { 
-    VALUES ?h { "Hello World" } 
+  SELECT ?h WHERE {
+    VALUES ?h { "Hello World" }
   }
   
 

@@ -26,7 +26,7 @@ example
  set I   := { 1 .. columns };
  set IxI := I * I;
  
- set TABU[<i,j> in IxI] := { <m,n> in IxI with 
+ set TABU[<i,j> in IxI] := { <m,n> in IxI with
     (m != i or n != j) and (m == i or n == j or abs(m - i) == abs(n - j)) };
  
  var x[IxI] binary;

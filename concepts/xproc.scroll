@@ -5,7 +5,7 @@ tags pl
 
 wikipedia https://en.wikipedia.org/wiki/XProc
  example
-  <p:pipeline name="pipeline" xmlns:p="http://www.w3.org/ns/xproc" 
+  <p:pipeline name="pipeline" xmlns:p="http://www.w3.org/ns/xproc"
     version="1.0">
     <p:input port="schemas" sequence="true"/>
   

@@ -34,7 +34,7 @@ wikipedia https://en.wikipedia.org/wiki/BlooP_and_FlooP
   			OUTPUT ⇐ 1;
   			CELL(0) ⇐ MINUS [CELL(0), 1];
   			QUIT BLOCK 1;
-  		BLOCK 3: END 
+  		BLOCK 3: END
   		OUTPUT ⇐ MINUS [OUTPUT, 1];
   		CELL(1) ⇐ PUSH [MINUS [CELL(0), 1], CELL(1)];
   	BLOCK 1: END;
@@ -55,7 +55,7 @@ leachim6 Bloop
   BLOCK 0: BEGIN
        PRINT['Hello World']
   BLOCK 0: END.
-  HELLO-WORLD[1]; 
+  HELLO-WORLD[1];
 rosettaCode http://www.rosettacode.org/wiki/Category:BlooP
 
 replit https://repl.it/languages/bloop

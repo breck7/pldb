@@ -8,24 +8,24 @@ domainName xsharp.info
  registered 2015
 
 example
- FUNCTION start AS VOID 
+ FUNCTION start AS VOID
   LOCAL oErr AS OBJECT
   LOCAL nI AS LONG
   LOCAL f AS FLOAT
-  oErr := Error{} 
+  oErr := Error{}
   f := Seconds()
   nI := 0
   FOR VAR nX := 1 TO 10_000_000
      IF IsInstanceOf(oErr, #Error)
         nI++
      ENDIF
-  NEXT 
+  NEXT
   ? Seconds() - f, nI
   f := Seconds()
   FOR VAR nX := 1 TO 10_000_000
      IF oErr IS Error
         nI++
      ENDIF
-  NEXT 
+  NEXT
   ? Seconds() - f, nI
   WAIT

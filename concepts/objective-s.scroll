@@ -15,10 +15,10 @@ example
  
     UIView animateWithDuration:0.4
            animations: { aView setAlpha: 0.0. }
-           completion: { aView removeFromSuperview. 
+           completion: { aView removeFromSuperview.
                          UIView animateWithDuration: 0.2
                                 animations: { self thumbsView layoutSubviews. }
-                                completion: { 3 }. 
+                                completion: { 3 }.
                        }.
     url := self urlForFile:aFilename.
     NSFileManager defaultManager removeItemAtURL:url  error:nil.

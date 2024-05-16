@@ -11,7 +11,7 @@ domainName clixml.org
 
 example
  <forall var="dates" in="//fpml:calculationPeriodDates>
-   <less op1="$dates/fpml:effectiveDate/fpml:unadjustedDate" 
+   <less op1="$dates/fpml:effectiveDate/fpml:unadjustedDate"
          op2="$dates/fpml:terminationDate/fpml:unadjustedDate"/>
  </forall>
 

@@ -22,7 +22,7 @@ example
  @ . foo == (@ . bar) then
   @ set foo = 0
   
- @ var myList = 
+ @ var myList =
   1
   2
   3
@@ -35,7 +35,7 @@ example
     "firstname" , "Ola"
     "lastname" , "Nordmann"
  
- @ var MyService := 
+ @ var MyService :=
   @ var myAction :
     @ . argument + 10
     

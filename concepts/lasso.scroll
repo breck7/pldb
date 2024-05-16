@@ -31,7 +31,7 @@ wikipedia https://en.wikipedia.org/wiki/Lasso_(programming_language)
   // Define type
   define bottles_of_beer => type {
   
-  	// Define internal data 
+  	// Define internal data
   	data private bottles = 99
   
   	// Define private methods
@@ -52,7 +52,7 @@ wikipedia https://en.wikipedia.org/wiki/Lasso_(programming_language)
   			#out +=  .bottles + ' bottle' + .s + ' of beer; ' + .br
   			.bottles--
   			#out += 'Take one down, pass it around, ' + .br
-  			#out += .bottles + ' bottle' + .s + ' of beer on the wall. ' + (.br * 2) 
+  			#out += .bottles + ' bottle' + .s + ' of beer on the wall. ' + (.br * 2)
   		}
   
   		// Return result
@@ -135,7 +135,7 @@ linguistGrammarRepo https://github.com/bfad/Sublime-Lasso
   	return('[' + #output + ']');
   }
   define json_serialize(e::map)::string => {
-  	local(output = with pr in #e->eachPair 
+  	local(output = with pr in #e->eachPair
   					select json_serialize(#pr->first->asString) + ': ' + json_serialize(#pr->second))
   	return '{' + #output->join(',') + '}'
   }
@@ -184,7 +184,7 @@ linguistGrammarRepo https://github.com/bfad/Sublime-Lasso
   //	Is also end of token if end of array[]
   	#temp == 93? // ]
   		#ibytes->marker -= 1
-  //............................................................................		
+  //............................................................................
   
   	local(output = string(#obytes))
   	#output == 'true'?
@@ -266,7 +266,7 @@ linguistGrammarRepo https://github.com/bfad/Sublime-Lasso
   //============================================================================
   //	Reset marker on provided bytes
   	#ibytes->marker = 0
-  //............................................................................		
+  //............................................................................
   	
   	Local(temp) = #ibytes->export8bits;
   	If(#temp == 91); // [

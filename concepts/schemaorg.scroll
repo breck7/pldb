@@ -14,18 +14,18 @@ domainName schema.org
 wikipedia https://en.wikipedia.org/wiki/Schema.org
  example
   <script type="application/ld+json">
-  { 
+  {
     "@context": "http://schema.org/",
     "@type": "Movie",
     "name": "Avatar",
-    "director": 
-      { 
+    "director":
+      {
          "@type": "Person",
          "name": "James Cameron",
          "birthDate": "1954-08-16"
       },
     "genre": "Science fiction",
-    "trailer": "../movies/avatar-theatrical-trailer.html" 
+    "trailer": "../movies/avatar-theatrical-trailer.html"
   }
   </script>
  related rdf owl turtle json csv url

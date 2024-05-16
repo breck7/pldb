@@ -89,7 +89,7 @@ example
      mov (rgb, cf.crTextColor);
      w.SendMessage(hwnd, w.EM_SETCHARFORMAT, w.SCF_SELECTION,&cf);
      w.SendMessage(hREd, w.WM_SETFONT, hFont, true);
-     w.SendMessage(hREd, w.EM_SETMARGINS, w.EC_LEFTMARGIN,5); 
+     w.SendMessage(hREd, w.EM_SETMARGINS, w.EC_LEFTMARGIN,5);
      pop (eax);
      w.SendMessage(hwnd, w.EM_SETMODIFY, eax,0);
      w.SendMessage(hwnd, w.EM_EXSETSEL,0,&chr);

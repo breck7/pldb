@@ -8,14 +8,14 @@ standsFor Web Services Description Language
 wikipedia https://en.wikipedia.org/wiki/Web_Services_Description_Language
  example
   <?xml version="1.0" encoding="UTF-8"?>
-  <description xmlns="http://www.w3.org/ns/wsdl" 
-               xmlns:tns="http://www.tmsws.com/wsdl20sample" 
+  <description xmlns="http://www.w3.org/ns/wsdl"
+               xmlns:tns="http://www.tmsws.com/wsdl20sample"
                xmlns:whttp="http://schemas.xmlsoap.org/wsdl/http/"
                xmlns:wsoap="http://schemas.xmlsoap.org/wsdl/soap/"
                targetNamespace="http://www.tmsws.com/wsdl20sample">
   
   <documentation>
-      This is a sample WSDL 2.0 document. 
+      This is a sample WSDL 2.0 document.
   </documentation>
   
   <!-- Abstract type -->
@@ -39,14 +39,14 @@ wikipedia https://en.wikipedia.org/wiki/Web_Services_Description_Language
      </interface>
   
   <!-- Concrete Binding Over HTTP -->
-     <binding name="HttpBinding" interface="tns:Interface1" 
+     <binding name="HttpBinding" interface="tns:Interface1"
               type="http://www.w3.org/ns/wsdl/http">
         <operation ref="tns:Get" whttp:method="GET"/>
      </binding>
      
   <!-- Concrete Binding with SOAP-->
-     <binding name="SoapBinding" interface="tns:Interface1" 
-              type="http://www.w3.org/ns/wsdl/soap" 
+     <binding name="SoapBinding" interface="tns:Interface1"
+              type="http://www.w3.org/ns/wsdl/soap"
               wsoap:protocol="http://www.w3.org/2003/05/soap/bindings/HTTP/"
               wsoap:mepDefault="http://www.w3.org/2003/05/soap/mep/request-response">
         <operation ref="tns:Get" />
@@ -54,11 +54,11 @@ wikipedia https://en.wikipedia.org/wiki/Web_Services_Description_Language
   
   <!-- Web Service offering endpoints for both bindings-->
      <service name="Service1" interface="tns:Interface1">
-        <endpoint name="HttpEndpoint" 
-                  binding="tns:HttpBinding" 
+        <endpoint name="HttpEndpoint"
+                  binding="tns:HttpBinding"
                   address="http://www.example.com/rest/"/>
-        <endpoint name="SoapEndpoint" 
-                  binding="tns:SoapBinding" 
+        <endpoint name="SoapEndpoint"
+                  binding="tns:SoapBinding"
                   address="http://www.example.com/soap/"/>
      </service>
   </description>

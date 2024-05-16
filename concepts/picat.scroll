@@ -22,7 +22,7 @@ stringToken "
 example
  import util.
  
- input_data(Tri) => 
+ input_data(Tri) =>
      Lines = read_file_lines("triangle.txt"),
      Tri = new_array(Lines.length),
      I = 1,
@@ -37,4 +37,3 @@ leachim6 PiCat
  example
   main =>
     println("Hello World").
-  

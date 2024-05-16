@@ -65,7 +65,7 @@ linguistGrammarRepo https://github.com/staltz/SublimeXtend
    * are made available under the terms of the Eclipse Public License v1.0
    * which accompanies this distribution, and is available at
    * http://www.eclipse.org/legal/epl-v10.html
-   * 
+   *
    * Author - Sven Efftinge
    *******************************************************************************/
   package example6
@@ -80,7 +80,7 @@ linguistGrammarRepo https://github.com/staltz/SublimeXtend
   	
   	/**
   	 * @return the total number of action movies
-  	 */ 
+  	 */
   	@Test def void numberOfActionMovies() {
   		assertEquals(828, movies.filter[categories.contains('Action')].size)
   	}
@@ -103,10 +103,10 @@ linguistGrammarRepo https://github.com/staltz/SublimeXtend
   	val movies = new FileReader('data.csv').readLines.map[ line |
   		val segments = line.split('  ').iterator
   		return new Movie(
-  			segments.next, 
-  			Integer::parseInt(segments.next), 
-  			Double::parseDouble(segments.next), 
-  			Long::parseLong(segments.next), 
+  			segments.next,
+  			Integer::parseInt(segments.next),
+  			Double::parseDouble(segments.next),
+  			Long::parseLong(segments.next),
   			segments.toSet
   		)
   	]
@@ -117,7 +117,7 @@ linguistGrammarRepo https://github.com/staltz/SublimeXtend
   	int year
   	double rating
   	long numberOfVotes
-  	Set<String> categories 
+  	Set<String> categories
   }
   
 

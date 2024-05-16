@@ -33,7 +33,7 @@ example
        else address := newAddress
    Introduce = "My name is " & me.Name &
         "and I was born in " ~ intToString(me.BirthYear);
- end; 
+ end;
 
 hopl https://hopl.info/showlanguage.prx?exp=5759
 

@@ -37,13 +37,13 @@ wikipedia https://en.wikipedia.org/wiki/ELLA_%28programming_language%29
     ARITH integer1 * integer2.
   
   FN MULT_234 = ([2][3]element:matrix1, [3][4]element:matrix2) ->
-               [2][4]product:  
+               [2][4]product:
     MATRIX_MULT{MULT,PLUS}(matrix1, matrix2).
   
   FN TEST = () -> [2][4]product:
   ( LET m1 = ((elt/2, elt/1, elt/1),
-              (elt/3, elt/6, elt/9)), 
-        m2 = ((elt/6, elt/1, elt/3, elt/4), 
+              (elt/3, elt/6, elt/9)),
+        m2 = ((elt/6, elt/1, elt/3, elt/4),
               (elt/9, elt/2, elt/8, elt/3),
               (elt/6, elt/4, elt/1, elt/2)).
     OUTPUT

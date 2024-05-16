@@ -23,7 +23,7 @@ wikipedia https://en.wikipedia.org/wiki/RoboMind
   
   procedure follow{
       if(frontIsWhite){
-                forward(1)		
+                forward(1)
       }
       else if(rightIsWhite){
                 right

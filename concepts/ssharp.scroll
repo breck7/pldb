@@ -37,12 +37,12 @@ wikipedia https://en.wikipedia.org/wiki/Script.NET
   function Push(item)
   [
   //Limit to 10 items
-   pre(me{{Not a typo|.}}Count < 10 ); 
+   pre(me{{Not a typo|.}}Count < 10 );
    post();
    invariant();
   ]
   {
-   //me is mutated object, 
+   //me is mutated object,
    //stack in this case
    me.Push(item);
   }

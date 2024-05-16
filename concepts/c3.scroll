@@ -26,7 +26,7 @@ hasRegularExpressionsSyntaxSugar false
 hasSemanticIndentation false
 hasBooleans true
 hasBitWiseOperators true
- int i = b << 4 + x; // Same as (b << 4) + x  
+ int i = b << 4 + x; // Same as (b << 4) + x
 hasOctals true
  0o177
 hasArraySlicingSyntax true
@@ -66,7 +66,7 @@ hasLazyEvaluation true
  fn void print(String s)
  {
     io::printfn("Said: %s", s);
- }  
+ }
  macro @foo(bool run, #lazy)
  {
    if (run) #lazy;
@@ -99,7 +99,7 @@ hasAssertStatements true
  assert(a > 0, "Expected a positive number");
  $assert(Foo.sizeof == 8, "Foo sizecheck at compile time failed");
 hasDefaultParameters true
- fn void test(int x = 10) { ... }  
+ fn void test(int x = 10) { ... }
 hasZeroBasedNumbering true
 hasAccessModifiers true
 hasClasses false
@@ -130,11 +130,11 @@ hasUnionTypes true
  {
    int x;
    float f;
-   struct 
+   struct
    {
      char[2] z;
-   }  
- }  
+   }
+ }
 hasMacros true
  macro square(x)
  {
@@ -144,7 +144,7 @@ hasForEachLoops true
  foreach (x : list)
  {
    foo(x);
- }  
+ }
 hasImports true
  import std::io;
 hasMethods true
@@ -153,7 +153,7 @@ hasMethods true
     return this.value;
  }
 hasMultiLineComments true
- /* 
+ /*
    Multiline comment
  */
 hasMultilineStrings true
@@ -173,7 +173,7 @@ hasModules true
 hasReservedWords true
 hasVariadicFunctions true
  fn void foo_typed(int x, int... arg) { ... }
- fn void foo_untyped(int x, ...arg) 
+ fn void foo_untyped(int x, ...arg)
  ...
  foo_typed(1, 2, 3);
  foo_untyped(1, "hello", 1.2);
@@ -185,7 +185,7 @@ hasAssignment true
  a = b;
 hasConditionals true
 hasWhileLoops true
- while (int x = foo(); x > 0) 
+ while (int x = foo(); x > 0)
  {
    sum += x;
  }
@@ -201,11 +201,11 @@ hasStructs true
     int x;
     float y;
     String z;
- }  
+ }
 hasGotos false
 hasGarbageCollection false
 hasSwitch true
- switch(expression) 
+ switch(expression)
  {
     case 1:
        do_something();
@@ -234,7 +234,7 @@ example
  }
  
  // The type methods offers dot syntax calls,
- // so this function can either be called 
+ // so this function can either be called
  // Stack.push(&my_stack, ...) or
  // my_stack.push(...)
  fn void Stack.push(Stack* this, Type element)

@@ -33,8 +33,8 @@ example
  
  ** File: dbf1.prg           // handles available/creates new database
  #include "fspreset.fh"      // converts all file names to lower case
- PARAMETER par1              // accepts command-line parameters 
- dbname := IF(EMPTY(par1), "mydbf1", par1)       // set default if required 
+ PARAMETER par1              // accepts command-line parameters
+ dbname := IF(EMPTY(par1), "mydbf1", par1)       // set default if required
  IF .NOT. FILE(dbname + ".dbf")                  // database available?
    DBCREATE(dbname, {{"Name",    "C", 25, 0}, ;  //  not yet, so
                      {"Address", "C", 30, 0}, ;  //  create a new

@@ -137,7 +137,7 @@ linguistGrammarRepo https://github.com/wcandillon/language-jsoniq
    (: STEP III: serialize and return results :)
    let $serialized_result := $pipeline
   
-   return 
+   return
      $serialized_result
    };
   

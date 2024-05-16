@@ -17,7 +17,7 @@ githubRepo https://github.com/Microsoft/BosqueLanguage
  subscribers 179
  created 2019
  updated 2022
- description The Bosque programming language is an experiment in regularized design for a machine assisted rapid and reliable software development lifecycle. 
+ description The Bosque programming language is an experiment in regularized design for a machine assisted rapid and reliable software development lifecycle.
  issues 4
 
 repoStats
@@ -32,7 +32,7 @@ leachim6 Bosque
  example
   namespace NSMain;
   
-  entrypoint function main(): String {  
+  entrypoint function main(): String {
       return "Hello World";
   }
 

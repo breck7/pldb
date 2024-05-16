@@ -25,11 +25,11 @@ wikipedia https://en.wikipedia.org/wiki/Handel-C
      /* "a" and "b" are within scope */
      {
        int c;
-       /* "a", "b" and "c" are within scope */ 
+       /* "a", "b" and "c" are within scope */
      }
      {
        int d;
-       /* "a", "b" and "d" are within scope */  
+       /* "a", "b" and "d" are within scope */
      }
   }
  related c csp occam fpgac

@@ -117,7 +117,7 @@ hasNamespaces true
  using namespace ns_name;
  using ns_name::name;
  namespace name = qualified-namespace ;
- namespace ns_name::inline(since C++20)(optional) name { declarations } 
+ namespace ns_name::inline(since C++20)(optional) name { declarations }
 hasMultipleInheritance true
 hasOperatorOverloading true
 hasTemplates true
@@ -164,7 +164,7 @@ wikipedia https://en.wikipedia.org/wiki/C++
   1 #include <iostream>
   2 #include <vector>
   3 #include <stdexcept>
-  4 
+  4
   5 int main() {
   6     try {
   7         std::vector<int> vec{3, 4, 3, 1};

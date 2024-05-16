@@ -10,7 +10,7 @@ originCommunity Stanford University
 example
  Alphabet: {[, ]}
  Initial word: []
- Production rules: 
+ Production rules:
  (1)       $ → [$]
  (2)       $ → $$
  (3)       $1$2 → $1[]$2

@@ -30,7 +30,7 @@ linguistGrammarRepo https://github.com/samcv/language-xcompose
   include "%L"
   
   # def emit(keys, codepoint, word):
-  #     print ('<Multi_key> %s <period>\t: "%s"\tU%04X\t\t# CIRCLED DIGIT %s' % 
+  #     print ('<Multi_key> %s <period>\t: "%s"\tU%04X\t\t# CIRCLED DIGIT %s' %
   #            (keys, unichr(codepoint), codepoint, word)).encode('utf8')
   # numbers = 'one two three four five six seven eight nine ten eleven twelve thirteen fourteen fifteen sixteen seventeen eighteen nineteen twenty'
   # words = numbers.upper().split()

@@ -97,7 +97,7 @@ linguistGrammarRepo https://github.com/textmate/c.tmbundle
      }
   ds_map_destroy(args);
   
-  //Append query string to ds_list of requests to be sent at End Step. 
+  //Append query string to ds_list of requests to be sent at End Step.
   ds_list_add(_PIWIK_REQS, "?" + argstring);
 
 projectEuler Game Maker Language

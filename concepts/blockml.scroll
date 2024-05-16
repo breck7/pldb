@@ -21,9 +21,9 @@ booleanTokens true false
 
 example
  /*
-     ____  __           __   __  _____ 
-    / __ )/ /___  _____/ /__/  |/  / / 
-   / __  / / __ \/ ___/ //_/ /|_/ / /  
+     ____  __           __   __  _____
+    / __ )/ /___  _____/ /__/  |/  / /
+   / __  / / __ \/ ___/ //_/ /|_/ / /
   / /_/ / / /_/ / /__/ ,< / /  / / /___
  /_____/_/\____/\___/_/|_/_/  /_/_____/
  
@@ -42,7 +42,7 @@ example
  
  h1[Preface]
  
- This text is originated as an exercise for an university course about scientific writing at the Beuth University of Applied Sciences Berlin. The assignment was to choose a  computer science paper, reproduce the key ideas in own words, and add some own thoughts about that topic as conclusion. 
+ This text is originated as an exercise for an university course about scientific writing at the Beuth University of Applied Sciences Berlin. The assignment was to choose a  computer science paper, reproduce the key ideas in own words, and add some own thoughts about that topic as conclusion.
  
  I have selected the classical paper "b[Recursive Functions of Symbolic Expressions and Their Computation by Machine, Part I]" by John McCarthy from 1960 (id[LISP]), because it  permits a fascinating look into the history of programming languages and is the origin of many concepts that are still relevant today.
  
@@ -91,8 +91,8 @@ example
  
  The whole conditional expressions is undefined:
  ol[
- - if all b[p]'s are false, 
- - if an undefined b[p] occurs before a true b[p] occurs 
+ - if all b[p]'s are false,
+ - if an undefined b[p] occurs before a true b[p] occurs
  - or if the b[e] that belongs to the first true b[p] is undefined it self
  ]
  
@@ -158,7 +158,7 @@ example
  
  math[$$label(f,\cal E)$$]
  
- b[f] can be seen as the function name. The occurrence of b[f] within im[$\cal E$] will be evaluated to the label-expression as if b[f] is a parameter of the function. 
+ b[f] can be seen as the function name. The occurrence of b[f] within im[$\cal E$] will be evaluated to the label-expression as if b[f] is a parameter of the function.
  
  math[$$label(sqrt, \lambda((a,x,\epsilon),(| x^2 - a|
  < \epsilon \rightarrow x, T \rightarrow {\rm sqrt} (a, {1 \over 2}(x + {a

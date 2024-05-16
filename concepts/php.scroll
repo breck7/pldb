@@ -70,7 +70,7 @@ hasTraits true
  // The template
  trait TSingleton
  {
-     private static $_instance = null; 
+     private static $_instance = null;
      private function __construct(){} // Must have private default constructor and be aware not to open it in the class
      public static function getInstance()
      {
@@ -190,7 +190,7 @@ githubLanguage PHP
   author name avatar url language languageColor stars forks currentPeriodStars description
   fzaninotto Faker https://github.com/fzaninotto.png https://github.com/fzaninotto/Faker PHP #4F5D95 21754 2507 375 "Faker is a PHP library that generates fake data for you"
   laravel laravel https://github.com/laravel.png https://github.com/laravel/laravel PHP #4F5D95 54813 16809 929 "A PHP framework for web artisans"
-  laravel framework https://github.com/laravel.png https://github.com/laravel/framework PHP #4F5D95 18676 6774 463 
+  laravel framework https://github.com/laravel.png https://github.com/laravel/framework PHP #4F5D95 18676 6774 463
   monicahq monica https://github.com/monicahq.png https://github.com/monicahq/monica PHP #4F5D95 7726 935 302 "Personal CRM. Remember everything about your friends and family."
   mautic mautic https://github.com/mautic.png https://github.com/mautic/mautic PHP #4F5D95 3421 1236 88 "Mautic: Open Source Marketing Automation Software."
   danielmiessler SecLists https://github.com/danielmiessler.png https://github.com/danielmiessler/SecLists PHP #4F5D95 19907 8011 550 "SecLists is the security tester's companion. It's a collection of multiple types of lists used during security assessments, collected in one place. List types include usernames, passwords, URLs, sensitive data patterns, fuzzing payloads, web shells, and many more."
@@ -207,7 +207,7 @@ githubLanguage PHP
   elementor elementor https://github.com/elementor.png https://github.com/elementor/elementor PHP #4F5D95 2505 632 81 "The most advanced frontend drag & drop page builder. Create high-end, pixel perfect websites at record speeds. Any theme, any page, any design."
   opencart opencart https://github.com/opencart.png https://github.com/opencart/opencart PHP #4F5D95 5040 3838 87 "A free shopping cart system. OpenCart is an open source PHP-based online e-commerce solution."
   tymondesigns jwt-auth https://github.com/tymondesigns.png https://github.com/tymondesigns/jwt-auth PHP #4F5D95 8258 1047 134 "🔐 JSON Web Token Authentication for Laravel & Lumen"
-  laravel cashier https://github.com/laravel.png https://github.com/laravel/cashier PHP #4F5D95 1655 411 41 
+  laravel cashier https://github.com/laravel.png https://github.com/laravel/cashier PHP #4F5D95 1655 411 41
   magento magento2 https://github.com/magento.png https://github.com/magento/magento2 PHP #4F5D95 7806 6717 128 "All Submissions you make to Magento Inc. (""Magento"") through GitHub are subject to the following terms and conditions: (1) You grant Magento a perpetual, worldwide, non-exclusive, no charge, royalty free, irrevocable license under your applicable copyrights and patents to reproduce, prepare derivative works of, display, publically perform, subli…"
   tennc webshell https://github.com/tennc.png https://github.com/tennc/webshell PHP #4F5D95 4829 3617 191 "This is a webshell open source project"
   area17 twill https://github.com/area17.png https://github.com/area17/twill PHP #4F5D95 1507 162 119 "Twill is an open source CMS toolkit for Laravel that helps developers rapidly create a custom admin console that is intuitive, powerful and flexible. Chat with us and others on Spectrum! https://spectrum.chat/twill"

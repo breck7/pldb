@@ -18,10 +18,10 @@ lineCommentToken #
 
 example
  # Hello There Example
- data: 
+ data:
    name is number
  
- procedure: 
+ procedure:
    display "Hello there, what's your name?"
    accept name
    display "你好, " name "!" crlf

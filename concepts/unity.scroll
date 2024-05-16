@@ -14,7 +14,7 @@ example
  assign
      <# k : 0 <= k < 2 ::
          <|| i : i % 2 = k and 0 <= i < n - 1 ::
-             A[i], A[i+1] := A[i+1], A[i] 
+             A[i], A[i+1] := A[i+1], A[i]
                  if A[i] > A[i+1] > >
  end
 

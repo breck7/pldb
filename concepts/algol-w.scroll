@@ -14,9 +14,9 @@ stringToken "
 wikipedia https://en.wikipedia.org/wiki/ALGOL_W
  example
   RECORD PERSON (
-      STRING(20) NAME; 
-      INTEGER AGE; 
-      LOGICAL MALE; 
+      STRING(20) NAME;
+      INTEGER AGE;
+      LOGICAL MALE;
       REFERENCE(PERSON) FATHER, MOTHER, YOUNGESTOFFSPRING, ELDERSIBLING
   );
   
@@ -29,11 +29,11 @@ wikipedia https://en.wikipedia.org/wiki/ALGOL_W
           M := YOUNGESTOFFSPRING(MOTHER(MOTHER(R)));
           WHILE (M ¬= NULL) AND (¬ MALE(M)) DO
               M := ELDERSIBLING(M);
-          IF P = NULL THEN 
-              M 
-          ELSE IF M = NULL THEN 
-              P 
-          ELSE 
+          IF P = NULL THEN
+              M
+          ELSE IF M = NULL THEN
+              P
+          ELSE
               IF AGE(P) < AGE(M) THEN P ELSE M
       END
  related algol-60 pascal modula-2

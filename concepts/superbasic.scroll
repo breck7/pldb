@@ -6,10 +6,10 @@ tags pl
 wikipedia https://en.wikipedia.org/wiki/SuperBASIC
  example
   100 DIM month$(12,9)
-   110 RESTORE 
+   110 RESTORE
    120 REMark QL User Guide's "Data Read Restore" example ii
    130 REMark (appropriately amended relative to example i)
-   140 FOR count=1 TO 12 : READ month$(count) 
+   140 FOR count=1 TO 12 : READ month$(count)
    150 DATA "January", "February", "March"
    160 DATA "April","May","June"
    170 DATA "July","August","September"

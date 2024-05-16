@@ -84,7 +84,7 @@ example
  # Function references can be invoked just like lambdas
  reversed = reverser() # reversed is now [3,2,1]
  
- # You can add a ! to the end of any method to rebind the method receiver to 
+ # You can add a ! to the end of any method to rebind the method receiver to
  # the return value of the given method minus the bang.
  numbers.reverse!() # numbers is now [3,2,1]
  

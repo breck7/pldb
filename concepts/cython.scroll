@@ -27,13 +27,13 @@ wikipedia https://en.wikipedia.org/wiki/Cython
      ...:     for i in range(n):
      ...:         a += i
      ...:     return a
-     ...: 
+     ...:
      ...: cpdef g(int n):
      ...:     cdef int a = 0, i
      ...:     for i in range(n):
      ...:         a += i
      ...:     return a
-     ...: 
+     ...:
   
   In [3]: %timeit f(1000000)
   42.7 ms ± 783 µs per loop (mean ± std. dev. of 7 runs, 10 loops each)

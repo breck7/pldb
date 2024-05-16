@@ -43,7 +43,7 @@ example
   % Add more as you need them (shouldn’t happen often).
  
   % Using “\newenvironment” to redefine verbatim to
-  % be called “code” doesn’t always work properly. 
+  % be called “code” doesn’t always work properly.
   % You can more reliably use:
  
   \usepackage{fancyvrb}
@@ -71,7 +71,7 @@ example
    where
  
    idʳ : ∀ x y (r : x ⟶ y) → r ∘ id y ≡ r
-   idʳ x y r = single-inhabitant x y (r ∘ id y) r 
+   idʳ x y r = single-inhabitant x y (r ∘ id y) r
  
    idˡ : ∀ x y (r : x ⟶ y) → id x ∘ r ≡ r
    idˡ x y r = single-inhabitant x y (id x ∘ r) r

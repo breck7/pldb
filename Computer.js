@@ -1916,6 +1916,10 @@ const computeds = {
     return count
   },
 
+  isDone(concept) {
+    return concept.get("isDone") ?? this.lastActivity(concept) < 2014
+  },
+
   hoplId(concept) {
     const id = concept.get("hopl")?.replace("https://hopl.info/showlanguage.prx?exp=", "")
     return id === undefined ? "" : parseInt(id)

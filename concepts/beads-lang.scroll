@@ -31,8 +31,8 @@ example
  
    //  warning: you must use the same unicode math chars in case statements later in arithmetic()
    KEYCAPS = [ 'C', '±', '%', '÷',  //  tried \u207A\u2215\u208B instead of ± but it is ugly
-         '1', '2', '3', 'x', 
-         '4', '5', '6', '−', // \u2212 is the minus sign 
+         '1', '2', '3', 'x',
+         '4', '5', '6', '−', // \u2212 is the minus sign
          '7', '8', '9', '+',
          '', '0', '.', '=']  // '⌫' is U+232B, for future undo key
  
@@ -65,7 +65,7 @@ example
  
  vert slice main_draw
    var cellsize = if b.box.width > b.box.height then b.box.height/8 else b.box.width/4
-   var result_v = cellsize*2  //  need to enhance compiler so that expressions don't get converted 
+   var result_v = cellsize*2  //  need to enhance compiler so that expressions don't get converted
    var keys_v = cellsize*5
    var keys_maxh = min(b.box.width, cellsize*8)  // don't go wider than 8 squares wide (double)
    draw_rect(b.box, fill:#121F30)
@@ -139,7 +139,7 @@ example
  
    else
      //  must be a digit
-     add_digit(KEYCAPS[b.cell_seq])  
+     add_digit(KEYCAPS[b.cell_seq])
  
  // calc do_backspace
  //  log "backspace"
@@ -258,7 +258,7 @@ example
      //  multiple operators in a row, rewrite the previous operator
      g.terms[g.termx-1].op = operand
    else
-     //  we did have a term, advance to the next term 
+     //  we did have a term, advance to the next term
      g.terms[g.termx].op = operand
      inc g.termx
-     g.terms[g.termx].ss = "" // empty term 
+     g.terms[g.termx].ss = "" // empty term

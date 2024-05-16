@@ -73,7 +73,7 @@ linguistGrammarRepo https://github.com/hernad/atom-language-harbour
            
   #command ENDIF <*x*> => endif
   
-  #ifdef __CLIPPER__   
+  #ifdef __CLIPPER__
      #xtranslate hb_MemoWrit( [<x,...>] )  => MemoWrit( <x> )
      #xtranslate hb_dbExists( <t> )        => File( <t> )
      #xtranslate hb_dbPack()               => __dbPack()

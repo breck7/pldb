@@ -18,19 +18,19 @@ visualParadigm true
 hasTernaryOperators false
 
 example
- selection	Canada~India			
- title	Population of different countries			
- subtitle	How many people live in each country?			
- type	DiscreteBar			
- hasMapTab	true			
- hideControls	true			
- ySlugs	Population			
- table				
+ selection	Canada~India
+ title	Population of different countries
+ subtitle	How many people live in each country?
+ type	DiscreteBar
+ hasMapTab	true
+ hideControls	true
+ ySlugs	Population
+ table
  	Country	Population	Year	MapleleafsInFlag
  	Canada	32000000	2020	1
  	India	1000000000	2020	0
  	France	50000000	2020	0
- columns				
+ columns
  	slug	type	name	notes
  	Country	EntityName	Country	Unreviewed
  	Population	Numeric	Population	Unreviewed

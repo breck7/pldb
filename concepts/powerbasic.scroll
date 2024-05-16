@@ -18,7 +18,7 @@ wikipedia https://en.wikipedia.org/wiki/PowerBASIC
   #Compile Exe ' using either PBCC6 or PBWIN10 compiler
   #Dim All
   
-  Function PBMain 
+  Function PBMain
       Local GW As Dword
       ' start a GRAPHIC WINDOW
       Graphic Window New "graphic window", 100, 100, 200, 200 to GW

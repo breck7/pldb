@@ -49,13 +49,13 @@ example
  Lbl SET
  .start, set up
  ClrDraw
- StoreGDB 
+ StoreGDB
  DiagnosticOff
  Fix 5
  Full
  !If GetCalc(Str1,[Y1])
  	sub(NEW)
- 	StoreGDB 
+ 	StoreGDB
  End
  GetCalc(Str1,[Y1])
  If {[Y1]+0}

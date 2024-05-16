@@ -25,7 +25,7 @@ wikipedia https://en.wikipedia.org/wiki/Mary_(programming_language)
      INT j := 11;
      j :- REF INT =: ri;   %% Type conversion and assignment
                            %% ri now points to j.
-     i =: (ri :- VAL REF INT);     
+     i =: (ri :- VAL REF INT);
                            %% Assignment and type conversion
                            %% ri points to j so j is changed.
      IF j > 10             %% Conditional statement with result

@@ -25,8 +25,8 @@ wikipedia https://en.wikipedia.org/wiki/SageMath
  example
   sage: E2 = EllipticCurve(CC, [0,0,-2,1,1])
   sage: E2
-  Elliptic Curve defined by y^2 + (-2.00000000000000)*y = 
-           x^3 + 1.00000000000000*x + 1.00000000000000 over 
+  Elliptic Curve defined by y^2 + (-2.00000000000000)*y =
+           x^3 + 1.00000000000000*x + 1.00000000000000 over
            Complex Field with 53 bits of precision
   sage: E2.j_invariant()
   61.7142857142857

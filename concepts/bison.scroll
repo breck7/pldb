@@ -47,7 +47,7 @@ wikipedia https://en.wikipedia.org/wiki/GNU_bison
   test:		$(FILES)
   		$(CC) $(CFLAGS) $(FILES) -o test
   
-  Lexer.c:	Lexer.l 
+  Lexer.c:	Lexer.l
   		flex Lexer.l
   
   Parser.c:	Parser.y Lexer.c

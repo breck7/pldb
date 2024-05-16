@@ -18,7 +18,7 @@ stringToken "
 wikipedia https://en.wikipedia.org/wiki/JSONiq
  example
   for $p in collection("persons")
-   return 
+   return
      <person>
        <firstName>{$p("firstName")}</firstName>
        <lastName>{$p("lastName")}</lastName>
@@ -52,7 +52,7 @@ linguistGrammarRepo https://github.com/wcandillon/language-jsoniq
  commitCount 108
  sampleCount 2
  example
-  (: Query for returning one database entry :) 
+  (: Query for returning one database entry :)
   
   import module namespace req = "http://www.28msec.com/modules/http-request";
   import module namespace catalog = "http://guide.com/catalog";

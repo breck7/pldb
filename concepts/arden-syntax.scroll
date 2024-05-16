@@ -39,7 +39,7 @@ example
   data:
   /* read the diastolic blood pressure */
   diastolic_blood_pressure := read last
-  {diastolic blood pressure}; /* the value in braces is specific to your 
+  {diastolic blood pressure}; /* the value in braces is specific to your
   runtime environment */
   /* If the height is lower than height_threshold, output a message */
   diastolic_pressure_threshold := 60;

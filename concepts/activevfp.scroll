@@ -16,7 +16,7 @@ wikipedia https://en.wikipedia.org/wiki/ActiveVFP
  example
   * customers.prg -Customers Controller
   * * bypasses Main.prg and .AVFP script code
-  * 
+  *
   DEFINE CLASS customersController AS restController
    *
    PROCEDURE openData
@@ -40,7 +40,7 @@ wikipedia https://en.wikipedia.org/wiki/ActiveVFP
      *quick and dirty JSON
      cJSON = [{"custId":"] + RTRIM(custId) + [","custName":"] + RTRIM(custName) + [",] + ;
              ["custStat":"] + RTRIM(custStat) + ["}]
-     RETURN cJSON 
+     RETURN cJSON
     ENDIF
    ENDPROC
    
@@ -52,7 +52,7 @@ wikipedia https://en.wikipedia.org/wiki/ActiveVFP
     THIS.openData()
     SELECT CUSTOMERS
     cHTML= oHTML.mergescript(FILETOSTR(substr(oProp.AppStartPath,1,AT([\],oProp.AppStartPath,2))+'viewtest.avfp'))
-    RETURN cHTML 
+    RETURN cHTML
    ENDPROC
    
    PROCEDURE helloworld      && custom method (&& GET www.hostname.com/app/customers/helloworld/)
@@ -61,7 +61,7 @@ wikipedia https://en.wikipedia.org/wiki/ActiveVFP
     *USE mydbf
     *SET PROC to substr(oProp.AppStartPath,1,AT([\],oProp.AppStartPath,2))+'prg\AVFPutilities' ADDITIVE   && Make sure you use ADDITIVE or bad things happen!
     cHTML= oHTML.mergescript(FILETOSTR(substr(oProp.AppStartPath,1,AT([\],oProp.AppStartPath,2))+'hello.avfp'))
-    RETURN cHTML 
+    RETURN cHTML
    ENDPROC
    
    PROCEDURE getemployees      && custom method   (&& GET www.hostname.com/app/customers/getemployee/<id>
@@ -79,7 +79,7 @@ wikipedia https://en.wikipedia.org/wiki/ActiveVFP
   	oJSON.keyforcursors="items"
   
   	* send JSON data and properties back
-  	oResponse.ContentType = "application/json;charset=utf-8"  
+  	oResponse.ContentType = "application/json;charset=utf-8"
   	oResponse.Write(oJSON.stringify('SearchResults'))
   	oResponse.Flush
   	lcHTMLout=[]

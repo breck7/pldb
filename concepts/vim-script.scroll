@@ -104,9 +104,9 @@ linguistGrammarRepo https://github.com/Alhadis/language-viml
   " ---------------------------------------------------------------------
   " OPTIONS:
   " ---------------------------------------------------------------------
-  " See the "solarized.txt" help file included with this colorscheme (in the 
-  " "doc" subdirectory) for information on options, usage, the Toggle Background 
-  " function and more. If you have already installed Solarized, this is available 
+  " See the "solarized.txt" help file included with this colorscheme (in the
+  " "doc" subdirectory) for information on options, usage, the Toggle Background
+  " function and more. If you have already installed Solarized, this is available
   " from the Solarized menu and command line as ":help solarized"
   "
   " ---------------------------------------------------------------------
@@ -121,7 +121,7 @@ linguistGrammarRepo https://github.com/Alhadis/language-viml
   "     and unarchive the file.
   " 2.  Move `solarized.vim` to your `.vim/colors` directory.
   " 3.  Move each of the files in each subdirectories to the corresponding .vim
-  "     subdirectory (e.g. autoload/togglebg.vim goes into your .vim/autoload 
+  "     subdirectory (e.g. autoload/togglebg.vim goes into your .vim/autoload
   "     directory as .vim/autoload/togglebg.vim).
   "
   " RECOMMENDED PATHOGEN INSTALLATION OPTION:

@@ -9,11 +9,11 @@ wikipedia https://en.wikipedia.org/wiki/Facelets
  example
   <ui:composition
       xmlns="http://www.w3.org/1999/xhtml"
-      xmlns:ui="http://java.sun.com/jsf/facelets" 
+      xmlns:ui="http://java.sun.com/jsf/facelets"
       xmlns:h="http://java.sun.com/jsf/html"
       xmlns:cc="http://java.sun.com/jsf/composite">
       <cc:interface/>
-      <cc:implementation> 
+      <cc:implementation>
           <h:outputText value="&amp;nbsp;" escape="false"/>
       </cc:implementation>
   </ui:composition>

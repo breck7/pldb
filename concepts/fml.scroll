@@ -9,14 +9,14 @@ originCommunity University of Salerno
 wikipedia https://en.wikipedia.org/wiki/Fuzzy_markup_language
  example
   <?xml version="1.0" encoding="UTF-8"?>
-  <xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">	
+  <xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
     ........
   	<xs:complexType name="KnowledgeBaseType">
   		<xs:sequence>
   		   <xs:choice minOccurs="0" maxOccurs="unbounded">
   			   <xs:element name="FuzzyVariable" type="FuzzyVariableType"/>
   			   <xs:element name="TSKVariable" type="TSKVariableType"/>
-  			 </xs:choice>	
+  			 </xs:choice>
   		</xs:sequence>
   	</xs:complexType>
   	<xs:complexType name="FuzzyVariableType">
@@ -156,7 +156,7 @@ wikipedia https://en.wikipedia.org/wiki/Fuzzy_markup_language
   		<xs:attribute name="modifier" use="optional">
   			<xs:simpleType>
   				<xs:restriction base="xs:string">
-  					<xs:pattern     
+  					<xs:pattern
                                               value="above|below|extremely|intensify|more_or_less|norm|not|plus|slightly|somewhat|very"/>
   				</xs:restriction>
   			</xs:simpleType>

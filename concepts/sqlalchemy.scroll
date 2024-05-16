@@ -26,7 +26,7 @@ repoStats
 wikipedia https://en.wikipedia.org/wiki/SQLAlchemy
  example
   SELECT movies.id, movies.title, movies.year, movies.directed_by, directors.id, directors.name
-  FROM movies LEFT OUTER JOIN directors ON directors.id = movies.directed_by  
+  FROM movies LEFT OUTER JOIN directors ON directors.id = movies.directed_by
 
 twitter https://twitter.com/sqlalchemy
 

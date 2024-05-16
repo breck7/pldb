@@ -29,8 +29,8 @@ wikipedia https://en.wikipedia.org/wiki/Modula-3
  example
   MODULE Person;
   
-  REVEAL T = Public BRANDED 
-  OBJECT 
+  REVEAL T = Public BRANDED
+  OBJECT
     name: TEXT;   (* These two variables *)
     age: INTEGER; (* are private. *)
   OVERRIDES
@@ -115,7 +115,7 @@ linguistGrammarRepo https://github.com/newgrammars/m3
         Ungetbuff            : REF ARRAY OF CHAR := NIL;
         Waitingbuff          : REF ARRAY OF CHAR := NIL;
         st                   : CARDINAL;              (* index into buff *)
-        Ungetst              : CARDINAL;              (* index into Ungetbuff *) 
+        Ungetst              : CARDINAL;              (* index into Ungetbuff *)
         Waitingst            : CARDINAL;              (* index into WaitingBuff *)
         cur                  : CARDINAL         := 0; (* index into src(rd) *)
         lo, hi               : CARDINAL         := 0; (* indexes into src(rd) *)
@@ -141,17 +141,17 @@ linguistGrammarRepo https://github.com/newgrammars/m3
   fields cur, closed, seekable, and intermittent in the object represent
   the corresponding abstract attributes of rd.  The buff, st, lo, and hi
   fields represent a buffer that contains part of src(rd), the rest of
-  which is represented in some class-specific way. 
+  which is represented in some class-specific way.
   
   More precisely, we say that the state of the representation is valid
   if conditions V1 through V4 hold:
   
-  V1. the characters of buff in the range [st .. st+(hi-lo)] accurately 
+  V1. the characters of buff in the range [st .. st+(hi-lo)] accurately
       reflect src.  That is,  for all i in [rd.lo .. rd.hi-1],
              
   	rd.buff[rd.st + i - rd.lo] = src(rd)[i]
   
-  V2. the cur field is in or just past the end of the occupied part of the 
+  V2. the cur field is in or just past the end of the occupied part of the
       buffer, that is:
   
           rd.lo <= rd.cur <= rd.hi
@@ -189,20 +189,20 @@ linguistGrammarRepo https://github.com/newgrammars/m3
   As in the case of writers, the seek method can be called even for an
   unseekable reader in the special case of advancing to the next buffer.
   
-  The fields with names beginning with "Unget" describe a buffer of characters 
-  retained in case they need to be reused by UngetChar.  The fields with names 
+  The fields with names beginning with "Unget" describe a buffer of characters
+  retained in case they need to be reused by UngetChar.  The fields with names
   beginning with "Waiting" are a buffer once supplied by class-dependent code
-  but temporarily suspended while characters originally saved in the unget 
+  but temporarily suspended while characters originally saved in the unget
   and then ungotten are being returned.  If NIL#Ungetbuff=buff, we are accessing
-  previously ungotten characters from Ungetbuff^, and Waitingbuff is the buffer 
+  previously ungotten characters from Ungetbuff^, and Waitingbuff is the buffer
   most recently provided by seek.  Otherwise, buff is the buffer most recently
-  provided by seek.  Either way, the fast path in class-independent code for 
-  getting characters works the same, using buff, st, lo, and hi, as in the 
-  earlier implementation, and ignoring the other buffer fields.  
+  provided by seek.  Either way, the fast path in class-independent code for
+  getting characters works the same, using buff, st, lo, and hi, as in the
+  earlier implementation, and ignoring the other buffer fields.
   
-  Similarly, (class-dependent) seek method bodies use only these same fields.  
+  Similarly, (class-dependent) seek method bodies use only these same fields.
   Only UngetChar and class-independent code surrounding seek method calls need
-  be aware of the additional two buffer pointers and their subscripts.        
+  be aware of the additional two buffer pointers and their subscripts.
   
   There is a wrinkle to support the implementation of CharsReady.  If rd
   is ready, the class-independent code can handle the call to
@@ -230,8 +230,8 @@ linguistGrammarRepo https://github.com/newgrammars/m3
   then dontBlock was TRUE and avail(rd) = cur(rd).
   
   The getSub method is used to implement Rd.GetSub and is
-  called with the reader lock held and the reader not closed.  Efficient 
-  implementations override this method to avoid unnecessary copying by reading 
+  called with the reader lock held and the reader not closed.  Efficient
+  implementations override this method to avoid unnecessary copying by reading
   directly from the reader source, bypassing the reader buffer.  The default
   implementation is correct for any class, but always copies through
   the reader buffer.
@@ -243,16 +243,16 @@ linguistGrammarRepo https://github.com/newgrammars/m3
   
   The close method releases all resources associated with rd.  The exact
   meaning of this is class-specific.  "Rd.Close" sets the "buff" field
-  to "NIL", so the method need not do this.  When the method is 
-  called the state will be valid; validity is not required when the 
-  method returns (since after it returns, the class-independent code 
-  will set the closed bit in the reader, which makes the rest of 
+  to "NIL", so the method need not do this.  When the method is
+  called the state will be valid; validity is not required when the
+  method returns (since after it returns, the class-independent code
+  will set the closed bit in the reader, which makes the rest of
   the state irrelevant).
   
-  The remainder of the interface is similar to the corresponding part 
+  The remainder of the interface is similar to the corresponding part
   of the WrClass interface: *)
   
-  PROCEDURE Init(rd: Rd.T); 
+  PROCEDURE Init(rd: Rd.T);
   (* Class-independent initialize rd, including private fields revealed herein. *)
   
   PROCEDURE Lock(rd: Rd.T) RAISES {};

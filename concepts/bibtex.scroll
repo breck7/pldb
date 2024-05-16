@@ -64,11 +64,11 @@ helloWorldCollection BibTeX
  ENTRY{author}{}{}
  
  FUNCTION {hello.world}
- { 
+ {
    "Hello World!" write$ newline$
  }
  
- READ 
+ READ
  EXECUTE {hello.world}
 
 fileType text

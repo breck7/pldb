@@ -24,4 +24,3 @@ leachim6 Blender
   text.setText("Hello World")
   Scene.GetCurrent().objects.new(text)
   Blender.Redraw()
-  

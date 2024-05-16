@@ -13,7 +13,7 @@ example
   @prefix ex: <http://www.example.org/vocabulary#> .
   @prefix : <http://www.example.org/exampleDocument#> .
   
-  :G1 { :Monica ex:name "Monica Murphy" .      
+  :G1 { :Monica ex:name "Monica Murphy" .
         :Monica ex:homepage <http://www.monicamurphy.org> .
         :Monica ex:email <mailto:monica@monicamurphy.org> .
         :Monica ex:hasSkill ex:Management }
@@ -23,7 +23,7 @@ example
   
   :G3 { :G1 swp:assertedBy _:w1 .
         _:w1 swp:authority :Chris .
-        _:w1 dc:date "2003-10-02"^^xsd:date .   
+        _:w1 dc:date "2003-10-02"^^xsd:date .
         :G2 swp:quotedBy _:w2 .
         :G3 swp:assertedBy _:w2 .
         _:w2 dc:date "2003-09-03"^^xsd:date .

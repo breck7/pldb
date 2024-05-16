@@ -12,13 +12,13 @@ domainName orange-lang.org
 keywords alias bool break catch char class const continue data def delete do double elif else enum extend extern false final finally float fro get if import int int16 int32 int64 int8 interface new of package private property protected public return set static string super this throw true try uint uint16 uint362 uint64 uint8 var virtual void where while
 
 example
- extern printf(char* s, ...) -> int32 
+ extern printf(char* s, ...) -> int32
  
  class Person
    public char* name
  
    public Person(char* name)
-     @name = name 
+     @name = name
    end
  end
  

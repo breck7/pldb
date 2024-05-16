@@ -23,11 +23,11 @@ example
  ' RightTriangle compute area and hypotenuse of a right triangle
  ' this routine contains examples of Cache Basic features */
   
- Sub Run() 
+ Sub Run()
  println "Compute the area and hypotenuse of a right triangle"
- println "given the lengths of its two sides."    
+ println "given the lengths of its two sides."
  println
- println "First, choose a unit of measurement. " 
+ println "First, choose a unit of measurement. "
  input "(i)nches, (f)eet, (m)iles, " _
        , "(c)entimeters, m(e)ters, (k)ilometers: ", units
  println
@@ -63,7 +63,7 @@ example
  ' is num negative?
      ' check in range "1" through "9"
      if (num < chr(49)) or (num > chr(57)) then
-         print "  Enter a positive number." 
+         print "  Enter a positive number."
          return True
      else
          print "  Accepted."

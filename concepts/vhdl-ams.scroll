@@ -21,15 +21,15 @@ wikipedia https://en.wikipedia.org/wiki/VHDL-AMS
   
   -- this is the entity
   entity DIODE is
-     generic (iss : current := 1.0e-14;  
-              af  : real    := 1.0;      
-              kf  : real    := 0.0);     
-     port (terminal anode, cathode : electrical);      
+     generic (iss : current := 1.0e-14;
+              af  : real    := 1.0;
+              kf  : real    := 0.0);
+     port (terminal anode, cathode : electrical);
   end entity DIODE;
   
   architecture IDEAL of DIODE is
     quantity v across i through anode to cathode;
-    constant vt : voltage := 0.0258;     
+    constant vt : voltage := 0.0258;
   begin
   
     i == iss * (exp(v/vt) - 1.0);

@@ -15,7 +15,7 @@ stringToken "
 
 wikipedia https://en.wikipedia.org/wiki/HyperTalk
  example
-  on mouseUp 
+  on mouseUp
       select the clickLine
       put word 2 of the clickLine into linenum
       do line linenum of cd fld 1

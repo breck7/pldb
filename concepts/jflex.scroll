@@ -69,10 +69,10 @@ linguistGrammarRepo https://github.com/jflex-de/jflex.tmbundle.git
   /* and java12.cup for a Java 1.2 parser                      */
   
   /* Note that this lexer specification is not tuned for speed.
-     It is in fact quite slow on integer and floating point literals, 
+     It is in fact quite slow on integer and floating point literals,
      because the input is read twice and the methods used to parse
-     the numbers are not very fast. 
-     For a production quality application (e.g. a Java compiler) 
+     the numbers are not very fast.
+     For a production quality application (e.g. a Java compiler)
      this could be optimized */
   
   
@@ -103,10 +103,10 @@ linguistGrammarRepo https://github.com/jflex-de/jflex.tmbundle.git
       return new JavaSymbol(type, yyline+1, yycolumn+1, value);
     }
   
-    /** 
-     * assumes correct representation of a long value for 
-     * specified radix in scanner buffer from <code>start</code> 
-     * to <code>end</code> 
+    /**
+     * assumes correct representation of a long value for
+     * specified radix in scanner buffer from <code>start</code>
+     * to <code>end</code>
      */
     private long parseLong(int start, int end, int radix) {
       long result = 0;

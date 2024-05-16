@@ -13,7 +13,7 @@ wikipedia https://en.wikipedia.org/wiki/Lucid_(programming_language)
      where
        h = 1 fby merge(merge(2 * h, 3 * h), 5 * h);
        merge(x,y) = if xx <= yy then xx else yy fi
-          where 
+          where
             xx = x upon xx <= yy;
             yy = y upon yy <= xx;
           end;

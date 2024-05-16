@@ -91,6 +91,25 @@ class PLDBCli {
       }
     })
   }
+
+    importCommand(filename) {
+    // todo: add support for updating as well
+    const processEntry = (node, index) => {
+      const filename = node.get("filename")
+      node.delete("filename")
+      const target = path.join(__dirname, "concepts", filename)
+      Disk.write(target, new TreeNode(Disk.read(target)).patch(node).toString())
+      console.log(`Processed ${filename}`)
+    }
+
+    const extension = filename.split(".").pop()
+
+    if (extension === "csv") TreeNode.fromCsv(Disk.read(filename)).forEach(processEntry)
+    
+    if (extension === "tsv") TreeNode.fromTsv(Disk.read(filename)).forEach(processEntry)
+    
+    if (extension === "tree") TreeNode.fromDisk(filename).forEach(processEntry)
+  }
 }
 
 module.exports = { PLDBCli }

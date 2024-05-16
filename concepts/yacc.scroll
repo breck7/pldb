@@ -109,20 +109,20 @@ linguistGrammarRepo https://github.com/textmate/bison.tmbundle
   };
   struct init const arith_fncts[] =
   {
-      "sin"   , sin   , 
-      "asin"  , asin  , 
-      "cos"   , cos   , 
-      "acos"  , acos  , 
-      "tan"   , tan   , 
-      "atan"  , atan  , 
-      "ceil"  , ceil  , 
-      "floor" , floor , 
-      "abs"   , fabs  , 
-      "ln"    , log   , 
-      "log"   , log10 , 
-      "lg"    , log2  , 
-      "exp"   , exp   , 
-      "sqrt"  , sqrt  , 
+      "sin"   , sin   ,
+      "asin"  , asin  ,
+      "cos"   , cos   ,
+      "acos"  , acos  ,
+      "tan"   , tan   ,
+      "atan"  , atan  ,
+      "ceil"  , ceil  ,
+      "floor" , floor ,
+      "abs"   , fabs  ,
+      "ln"    , log   ,
+      "log"   , log10 ,
+      "lg"    , log2  ,
+      "exp"   , exp   ,
+      "sqrt"  , sqrt  ,
       0       , 0
   };
   /* The symbol table: a chain of `struct symrec'.  */

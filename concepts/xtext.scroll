@@ -14,31 +14,31 @@ hasMixins true
         with org.eclipse.xtext.common.Terminals
 
 example
- grammar org.eclipse.xtext.common.Terminals 
+ grammar org.eclipse.xtext.common.Terminals
      hidden(WS, ML_COMMENT, SL_COMMENT)
   
  import "http://www.eclipse.org/emf/2002/Ecore" as ecore
   
- terminal ID: 
+ terminal ID:
      '^'?('a'..'z'|'A'..'Z'|'_')('a'..'z'|'A'..'Z'|'_'|'0'..'9')*;
   
- terminal INT returns ecore::EInt: 
+ terminal INT returns ecore::EInt:
      ('0'..'9')+;
   
- terminal STRING: 
+ terminal STRING:
      '"' ( '\\'('b'|'t'|'n'|'f'|'r'|'u'|'"'|"'"|'\\') | !('\\'|'"') )* '"' |
      "'" ( '\\'('b'|'t'|'n'|'f'|'r'|'u'|'"'|"'"|'\\') | !('\\'|"'") )* "'";
   
- terminal ML_COMMENT: 
+ terminal ML_COMMENT:
      '/*' -> '*/';
   
- terminal SL_COMMENT: 
+ terminal SL_COMMENT:
      '//' !('\n'|'\r')* ('\r'? '\n')?;
   
- terminal WS: 
+ terminal WS:
      (' '|'\t'|'\r'|'\n')+;
   
- terminal ANY_OTHER: 
+ terminal ANY_OTHER:
      .;
 
 githubRepo https://github.com/eclipse/xtext
@@ -48,7 +48,7 @@ githubRepo https://github.com/eclipse/xtext
  subscribers 46
  created 2011
  updated 2022
- description Eclipse Xtext™ is a language development framework 
+ description Eclipse Xtext™ is a language development framework
  issues 78
 
 repoStats

@@ -7,7 +7,7 @@ originCommunity University of Manchester && University of Cambridge && Universit
 
 wikipedia https://en.wikipedia.org/wiki/Autocode
  example
-  1     n1 = 1         
+  1     n1 = 1
        vn1 = I         reads input into v[n[1]]
         n1 = n1 + 1
      j1,11 ≥ n1        jumps to 1 if n[1] ≤ 11

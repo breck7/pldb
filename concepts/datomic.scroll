@@ -10,7 +10,7 @@ originCommunity Cognitect, Inc
 relatedConcepts edn datalog
 
 example
- [:find ?e 
+ [:find ?e
   :where [?e :age 42]]
 
 semanticScholar 0

@@ -19,7 +19,7 @@ example
     {  name = 'string.quoted.double.untitled';
        begin = '"';
        end = '"';
-       patterns = ( 
+       patterns = (
           {  name = 'constant.character.escape.untitled';
              match = '\\.';
           }

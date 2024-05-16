@@ -53,7 +53,7 @@ linguistGrammarRepo https://github.com/perl6/atom-language-perl6
  commitCount 510
  sampleCount 22
  example
-  # used in t/spec/S11-modules/nested.t 
+  # used in t/spec/S11-modules/nested.t
   
   BEGIN { @*INC.push('t/spec/packages') };
   

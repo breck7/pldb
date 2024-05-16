@@ -128,7 +128,7 @@ linguistGrammarRepo https://github.com/textmate/c.tmbundle
   /////////////////////////////////////////////
    
   class Entity
-  {	
+  {
   	constructor(etype,entityname)
   	{
   		name = entityname;
@@ -163,7 +163,7 @@ linguistGrammarRepo https://github.com/textmate/c.tmbundle
    
   local newplayer = Player("da playar");
    
-  newplayer.MoveTo(100,200,300);	
+  newplayer.MoveTo(100,200,300);
   
 
 projectEuler Squirrel

@@ -15,13 +15,13 @@ hasPrintDebugging true
 printToken _printf
 
 example
- input int KEY;  
- par/or do  
-   every 1s do  
-     _printf("Hello World!\n");  
-   end  
- with  
-   await KEY;  
+ input int KEY;
+ par/or do
+   every 1s do
+     _printf("Hello World!\n");
+   end
+ with
+   await KEY;
  end
 
 githubRepo https://github.com/fsantanna/ceu

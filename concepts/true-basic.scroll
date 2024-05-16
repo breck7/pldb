@@ -39,7 +39,7 @@ wikipedia https://en.wikipedia.org/wiki/True_BASIC
    
   FOR x=1 TO 20 STEP 1 !Create a 'for' loop
       BOX SHOW road$ AT 0,0
-      BOX SHOW car$ AT x,5  
+      BOX SHOW car$ AT x,5
       PAUSE .1
       CLEAR
   NEXT x !End the 'for' loop

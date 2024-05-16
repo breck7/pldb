@@ -149,7 +149,7 @@ leachim6 Objective C
  filepath o/Objective C.m
  example
   /*
-   Build on OS X: 
+   Build on OS X:
    clang -framework Foundation -fobjc-arc objc.m -o objc
    
    Build on Linux with GNUstep:

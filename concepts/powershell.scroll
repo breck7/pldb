@@ -60,7 +60,7 @@ githubLanguage PowerShell
   Disassembler0 Win10-Initial-Setup-Script https://github.com/Disassembler0.png https://github.com/Disassembler0/Win10-Initial-Setup-Script PowerShell #012456 2542 607 95 "PowerShell script for automation of routine tasks done after fresh installations of Windows 10 / Server 2016 / Server 2019"
   BloodHoundAD BloodHound https://github.com/BloodHoundAD.png https://github.com/BloodHoundAD/BloodHound PowerShell #012456 3358 622 114 "Six Degrees of Domain Admin"
   Sycnex Windows10Debloater https://github.com/Sycnex.png https://github.com/Sycnex/Windows10Debloater PowerShell #012456 2759 362 222 "Script to remove Windows 10 bloatware."
-  fireeye flare-vm https://github.com/fireeye.png https://github.com/fireeye/flare-vm PowerShell #012456 1575 266 78 
+  fireeye flare-vm https://github.com/fireeye.png https://github.com/fireeye/flare-vm PowerShell #012456 1575 266 78
   dotnet machinelearning-samples https://github.com/dotnet.png https://github.com/dotnet/machinelearning-samples PowerShell #012456 1966 908 106 "Samples for ML.NET, an open source and cross-platform machine learning framework for .NET."
   dahlbyk posh-git https://github.com/dahlbyk.png https://github.com/dahlbyk/posh-git PowerShell #012456 3788 610 75 "A PowerShell environment for Git"
   dfinke ImportExcel https://github.com/dfinke.png https://github.com/dfinke/ImportExcel PowerShell #012456 1083 206 42 "PowerShell module to import/export Excel spreadsheets, without Excel"
@@ -99,7 +99,7 @@ linguistGrammarRepo https://github.com/PowerShell/EditorSyntax
   
   # source:  https://github.com/PowerShell/PowerShellStandard/blob/3436bfc162d6804dd11d1d76c4faff486b4b405d/build.ps1
   
-  param ( 
+  param (
       [Parameter(ParameterSetName="Clean")][switch]$Clean,
       [Parameter(ParameterSetName="Test")][switch]$Test
   )

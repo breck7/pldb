@@ -52,7 +52,7 @@ wikipedia https://en.wikipedia.org/wiki/Dafny_(programming_language)
   
   ghost method NatSumLemma(l:List, n:int)
   requires isNatList(l) && n == sum(l)
-  ensures n >= 0 
+  ensures n >= 0
   {
     match l
       case Nil =>

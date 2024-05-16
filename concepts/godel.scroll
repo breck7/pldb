@@ -14,7 +14,7 @@ wikipedia https://en.wikipedia.org/wiki/Gödel_(programming_language)
   IMPORT      Integers.
    
   PREDICATE   Gcd : Integer * Integer * Integer.
-  Gcd(i,j,d) <- 
+  Gcd(i,j,d) <-
              CommonDivisor(i,j,d) &
              ~ SOME [e] (CommonDivisor(i,j,e) & e > d).
    

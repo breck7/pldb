@@ -40,7 +40,7 @@ wikipedia https://en.wikipedia.org/wiki/Netwide_Assembler
   	mov	rax, 0x2000004	 	; put the write-system-call-code into register rax
   	mov	rdi, 1				; tell kernel to use stdout
   	mov	rsi, query_string	; rsi is where the kernel expects to find the address of the message
-  	mov	rdx, query_string_len	; and rdx is where the kernel expects to find the length of the message 
+  	mov	rdx, query_string_len	; and rdx is where the kernel expects to find the length of the message
   	syscall
   
   	; read in the character

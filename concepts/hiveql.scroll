@@ -48,11 +48,11 @@ linguistGrammarRepo https://github.com/adidonato/language-hql
   create table nzhang_t1 like srcpart;
   create table nzhang_t2 like srcpart;
   
-  FROM srcpart 
-  INSERT OVERWRITE TABLE nzhang_t1 PARTITION (ds, hr) 
+  FROM srcpart
+  INSERT OVERWRITE TABLE nzhang_t1 PARTITION (ds, hr)
   SELECT key, value, ds, hr
   WHERE ds = '2008-04-08' AND hr = '11'
-  INSERT OVERWRITE TABLE nzhang_t2 PARTITION (ds, hr) 
+  INSERT OVERWRITE TABLE nzhang_t2 PARTITION (ds, hr)
   SELECT key, value, ds, hr
   WHERE ds = '2008-04-08' and hr = '12'
   GROUP BY key, value, ds, hr;

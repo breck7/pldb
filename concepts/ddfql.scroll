@@ -44,7 +44,7 @@ example
       key: "geo",
       where: {
           "is--country": true,
-        "latitude": { "$lte": 0 }, 
+        "latitude": { "$lte": 0 },
       }
     }
   },

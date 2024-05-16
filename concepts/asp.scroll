@@ -25,8 +25,8 @@ wikipedia https://en.wikipedia.org/wiki/Active_Server_Pages
        Response.Write "Error Code: " & Server.HTMLEncode(Err.Number) & "<br />"
        Response.Write "Error Source: " & Server.HTMLEncode(Err.Source) & "<br />"
        Response.Write "Error Description: " & Server.HTMLEncode(Err.Description) & "<br />"
-       Err.Clear 
-  End If 
+       Err.Clear
+  End If
   %>
  related vbscript jscript html csharp java-server-pages php
  summary Active Server Pages (ASP), later known as Classic ASP or ASP Classic, is Microsoft's first server-side script engine for dynamically generated web pages. ASP.NET, first released in January 2002, has superseded ASP.

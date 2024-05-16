@@ -13,7 +13,7 @@ wikipedia https://en.wikipedia.org/wiki/Stockholm_format
                                          Any non-gap character (e.g. x's) can indicate consensus/conserved/match columns
                                          .'s or -'s indicate insert columns
                                          ~'s indicate unaligned insertions
-                                         Upper and lower case can be used to discriminate strong and weakly conserved 
+                                         Upper and lower case can be used to discriminate strong and weakly conserved
                                          residues respectively
         MM        Model Mask             Indicates which columns in an alignment should be masked, such
                                          that the emission probabilities for match states corresponding to

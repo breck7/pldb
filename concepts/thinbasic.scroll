@@ -29,9 +29,9 @@ wikipedia https://en.wikipedia.org/wiki/ThinBasic
   
     ' If length of username is 0 then no name is specified, else program will say hello
     if len(UserName) = 0 then
-      Console_PrintLine("No user name specified...") 
+      Console_PrintLine("No user name specified...")
     else
-      Console_PrintLine("Hello " + UserName + "!")  
+      Console_PrintLine("Hello " + UserName + "!")
     end if
   
     ' Waits for any key from user before program ends

@@ -9,8 +9,8 @@ country Portugal
 originCommunity Universidade de Lisboa
 
 example
- class File { 
-    usage lin{open; Read} where 
+ class File {
+    usage lin{open; Read} where
     Read = lin{eof; <lin{close; end} + lin{read; Read}>};
   ...
  }

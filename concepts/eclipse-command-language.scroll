@@ -121,7 +121,7 @@ linguistGrammarRepo https://github.com/alnkpa/sublimeprolog
   vabs(5, -5). => No
   vabs(-5, 5). => Yes
   vabs(X, 5).
-  vabs(X, AbsX). 
+  vabs(X, AbsX).
   vabsIC(5, 5). => Yes
   vabsIC(5, -5). => No
   vabsIC(-5, 5). => Yes

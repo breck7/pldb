@@ -35,16 +35,16 @@ hasFunctions true
  (fn (x) (+ x 1))
 hasBooleans true
  ; The symbol nil represents falsity as well as the empty list.
- ; The symbol t is the default representation for truth, but any object other than nil also counts as true. 
+ ; The symbol t is the default representation for truth, but any object other than nil also counts as true.
 hasStrings true
  (\h \e \l \l \o)
  ; can also be represented as
  "hello"
 hasSemanticIndentation false
 hasMacros true
- ; A macro is essentially a function that generates code. I would have 
+ ; A macro is essentially a function that generates code. I would have
  ; liked the first example of a macro to be something simpler, but fn
- ; is the one we need first. So I'll introduce macros using a simpler 
+ ; is the one we need first. So I'll introduce macros using a simpler
  ; macro that isn't part of Bel, then explain fn.
  ; Here is a very simple macro:
  (mac nilwith (x)

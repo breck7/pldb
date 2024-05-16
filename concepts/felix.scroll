@@ -24,7 +24,7 @@ hasPolymorphism true
  fun f (x:string) => x + "!";
 hasPatternMatching true
  match x with
-  | Some x => println$ x; 
+  | Some x => println$ x;
   | None => println "NONE";
   endmatch;
 hasLineComments true

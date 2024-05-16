@@ -38,7 +38,7 @@ repoStats
 
 wikipedia https://en.wikipedia.org/wiki/Frege_(programming_language)
  example
-  {-- 
+  {--
       This program displays the
       current time on standard output
       every other second.
@@ -56,7 +56,7 @@ wikipedia https://en.wikipedia.org/wiki/Frege_(programming_language)
       d <- Date.new ()  -- reads system timer, hence IO
       d.toString
   
-  main args =  
+  main args =
       forever do
           current >>= print   -- print formatted date
           print "\r"          -- followed by carriage return
@@ -88,7 +88,7 @@ linguistGrammarRepo https://github.com/atom-haskell/language-haskell
  commitCount 463
  sampleCount 4
  example
-  {-- 
+  {--
       This program displays the
       current time on stdandard output
       every other second.
@@ -106,7 +106,7 @@ linguistGrammarRepo https://github.com/atom-haskell/language-haskell
       d <- Date.new ()
       d.toString
   
-  {- 
+  {-
       "java.lang.Thread.sleep" takes a "long" and
       returns nothing, but may throw an InterruptedException.
       This is without doubt an IO action.
@@ -125,7 +125,7 @@ linguistGrammarRepo https://github.com/atom-haskell/language-haskell
   -- native sleep java.lang.Thread.sleep :: Long -> IO () throws InterruptedException
   
         
-  main args =  
+  main args =
       forever do
           current >>= print
           print "\r"

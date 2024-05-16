@@ -105,7 +105,7 @@ linguistGrammarRepo https://github.com/Hardmath123/sublime-nearley
   expr_member ->
         word {% id %}
       | "$" word {% function(d) {return {mixin: d[1]}} %}
-      | word "[" expressionlist "]" {% function(d) {return {macrocall: d[0], args: d[2]}} %} 
+      | word "[" expressionlist "]" {% function(d) {return {macrocall: d[0], args: d[2]}} %}
       | string "i":? {% function(d) { if (d[1]) {return insensitive(d[0]); } else {return d[0]; } } %}
       | "%" word {% function(d) {return {token: d[1]}} %}
       | charclass {% id %}

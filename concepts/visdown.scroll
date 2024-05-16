@@ -13,11 +13,11 @@ example
  data:
    url: data/cars.csv
  mark: point
- encoding: 
-   x: 
+ encoding:
+   x:
      field: kmpl
      type: quantitative
-   y: 
+   y:
      field: price
      type: quantitative
   ```

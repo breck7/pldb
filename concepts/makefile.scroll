@@ -50,7 +50,7 @@ example
 
 wikipedia https://en.wikipedia.org/wiki/Makefile
  example
-  edit: main.o kbd.o command.o display.o 
+  edit: main.o kbd.o command.o display.o
       cc -o edit main.o kbd.o command.o display.o
        
   main.o: main.c defs.h

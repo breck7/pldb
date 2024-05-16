@@ -22,7 +22,7 @@ example
          "refund_no_shows" : { value: 0.5 },
          "refund_overbook" : { value: 1.25 }
      },
-     uncertainVariables : 
+     uncertainVariables :
      {
          "no_shows" : { formula: "PsiLogNormal(0.1*sold, 0.06*sold)" }
      },

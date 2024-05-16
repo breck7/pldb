@@ -9,7 +9,7 @@ originCommunity Semmle Inc
 wikipedia https://en.wikipedia.org/wiki/.QL
  example
   1  from Class c, int numOfMethods
-  2  where numOfMethods = count(Method m| m.getDeclaringType()=c 
+  2  where numOfMethods = count(Method m| m.getDeclaringType()=c
   3                       and m.hasModifier("public"))
   4        and numOfMethods > 10
   5  select c.getPackage(), c, numOfMethods

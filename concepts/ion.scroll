@@ -24,7 +24,7 @@ hasFloats true
  // http://amzn.github.io/ion-docs/docs/spec.html
  -0.12e4           // Type is float
 hasAssignment true
- // A subset of symbols called identifiers can be denoted in text without single-quotes. 
+ // A subset of symbols called identifiers can be denoted in text without single-quotes.
 hasIntegers true
  // http://amzn.github.io/ion-docs/docs/spec.html
  null.int   // A null int value
@@ -85,7 +85,7 @@ hasTypeAnnotations true
  jpeg :: {{ ... }}                        // Indicates the blob contains jpeg data
  bool :: null.int                         // A very misleading annotation on the integer null
  '' :: 1                                  // An empty annotation
- null.symbol :: 1                         // ERROR: type annotation cannot be null 
+ null.symbol :: 1                         // ERROR: type annotation cannot be null
 hasLists true
  null.list         // A null list value
  []                // An empty list value

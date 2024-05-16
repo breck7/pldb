@@ -13,7 +13,7 @@ stringToken "
 wikipedia https://en.wikipedia.org/wiki/MXML
  example
   <?xml version="1.0" encoding="utf-8"?>
-  <mx:Application xmlns:mx="http://www.adobe.com/2006/mxml" 
+  <mx:Application xmlns:mx="http://www.adobe.com/2006/mxml"
                   layout="absolute" backgroundGradientColors="[#000011, #333333]">
      <mx:Label text="Hello World!" verticalCenter="0" horizontalCenter="0" fontSize="48" letterSpacing="1">
         <mx:filters>

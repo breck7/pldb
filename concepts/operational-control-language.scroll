@@ -16,10 +16,10 @@ lineCommentToken //
 wikipedia https://en.wikipedia.org/wiki/Operational_Control_Language
  example
   ** Procedure PROC1
-  ** 
+  **
   ** Written by Joe User 2006-05-29
   **
-  ** 
+  **
   // * 'PROC1 procedure is running'
   // * ' '
   // IFF ACTIVE-'PROC2,PROC3' GOTO OKAY
@@ -50,7 +50,7 @@ wikipedia https://en.wikipedia.org/wiki/Operational_Control_Language
   ** It's not necessary or valid to put an END statement after most user programs
   // SWITCH 1XXXXXXX                                    Causes U1 to be SETON in the RPG program
   // LOCAL OFFSET-1,DATA-'PROC1'      Places PROC1 in the Local Data Area
-  // LOCAL OFFSET-101,DATA-'?USER?'   Substitutes the operator's User ID                        
+  // LOCAL OFFSET-101,DATA-'?USER?'   Substitutes the operator's User ID
   ** LDA becomes the external data structure (UDS) in an RPG program
   // LOAD PR102
   // FILE NAME-PAYMAST,DISP-SHR                         DISP-SHR means the file is shared

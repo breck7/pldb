@@ -50,7 +50,7 @@ linguistGrammarRepo https://github.com/atom-haskell/language-haskell
   
   -- (c) 2009 Aarne Ranta under LGPL
   
-  concrete FoodsFin of Foods = FoodsI with 
+  concrete FoodsFin of Foods = FoodsI with
     (Syntax = SyntaxFin),
     (LexFoods = LexFoodsFin) ;
   

@@ -18,7 +18,7 @@ wikipedia https://en.wikipedia.org/wiki/Action_Code_Script
  example
   1  // Similar to C's stdio.h, ACS has its own library of basic functions
   2  #include "zcommon.acs"
-  3  
+  3
   4  script 1 ENTER
   5  {
   6     print(s:"Hello World!");

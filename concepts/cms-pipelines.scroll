@@ -7,9 +7,9 @@ aka TSO Pipelines
 originCommunity IBM
 
 example
- PIPE (end ?) 
-    < input txt 
-  | a: locate /Hello/ 
+ PIPE (end ?)
+    < input txt
+  | a: locate /Hello/
   | insert / World!/ after
   | i: faninany
   | > newfile txt a

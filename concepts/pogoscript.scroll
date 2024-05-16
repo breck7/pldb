@@ -54,7 +54,7 @@ linguistGrammarRepo https://github.com/featurist/PogoScript.tmbundle
       replacements = sort (links in (html).concat(scripts in (html)))
       for each @(r) in (replacements) @{ r.url = resolve(url, r.href) }
       async.map (replacements, get) @(err, requested)
-          callback (err, replace (requested) in (html))    
+          callback (err, replace (requested) in (html))
   
   sort (replacements) =
       replacements.sort @(a, b) @{ a.index - b.index }

@@ -40,7 +40,7 @@ wikipedia https://en.wikipedia.org/wiki/DOT_(graph_description_language)
   	B1 -> B3 [label="(g o f)'" tailport=s headport=s];
   
   	{ rank=same; A1 A2 A3 }
-  	{ rank=same; B1 B2 B3 } 
+  	{ rank=same; B1 B2 B3 }
   }
  related javascript java python google-cloud actionscript svg
  summary DOT is a plain text graph description language. DOT graphs are typically files with the file extension gv or dot. The extension gv is preferred to avoid confusion with the extension dot used by early (pre-2007) versions of Microsoft Word. Various programs can process DOT files. Some, such as dot, neato, twopi, circo, fdp, and sfdp, can read a DOT file and render it in graphical form. Others, such as gvpr, gc, acyclic, ccomps, sccmap, and tred, read DOT files and perform calculations on the represented graph. Finally, others, such as lefty, dotty, and grappa, provide an interactive interface. The GVedit tool combines a text editor with noninteractive image viewer. Most programs are part of the Graphviz package or use it internally.
@@ -73,12 +73,12 @@ linguistGrammarRepo https://github.com/textmate/graphviz.tmbundle
  commitCount 47
  sampleCount 2
  example
-  /* 
+  /*
     Huffman Tree DOT graph.
   
     DOT Reference :  http://www.graphviz.org/doc/info/lang.html
                      http://en.wikipedia.org/wiki/DOT_language
-    Timestamp     :  1415989074 
+    Timestamp     :  1415989074
     Phrase        :  'OH GOD WHY IS LINGUIST SO ANAL ABOUT THIS STUFF'
   
     Generated on http://huffman.ooz.ie/

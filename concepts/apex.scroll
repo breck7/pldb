@@ -56,22 +56,22 @@ linguistGrammarRepo https://github.com/textmate/java.tmbundle
  sampleCount 6
  example
   public class GeoUtils {
-  	// generate a KML string given a page reference, call getContent() 
+  	// generate a KML string given a page reference, call getContent()
   	// then cleanup the output.
-  	public static string generateFromContent(PageReference pr) { 
-  		string ret = ''; 
-  		try {  
+  	public static string generateFromContent(PageReference pr) {
+  		string ret = '';
+  		try {
   	        ret = (string) pr.getContent().toString();
   			
-  			ret = ret.replaceAll('"','\'' ); // get content produces quote chars \"  
+  			ret = ret.replaceAll('"','\'' ); // get content produces quote chars \"
   	        ret = ret.replaceAll( '&','&amp;');// we need to escape these in the node value
-          } catch (exception e ) { 
-          	system.debug( 'ERROR '+e); 
+          } catch (exception e ) {
+          	system.debug( 'ERROR '+e);
           }
      		
-     		ret = ret.replaceAll('\n',' ');	// must use ALL since many new line may get 
+     		ret = ret.replaceAll('\n',' ');	// must use ALL since many new line may get
           ret = ret.replaceAll('\r',' ');	// get these also!
-        //  system.debug( ret); // dump the KML 
+        //  system.debug( ret); // dump the KML
           return ret ;
   	}
   	
@@ -88,18 +88,18 @@ linguistGrammarRepo https://github.com/textmate/java.tmbundle
           
   	public static string accountAddressString ( account acct ) {
       	// form an address string given an account object
-      	string adr = acct.billingstreet + ',' + acct.billingcity + ',' + acct.billingstate; 
-          if ( acct.billingpostalcode != null ) adr += ',' + acct.billingpostalcode; 
-          if ( acct.billingcountry != null ) adr += ',' + acct.billingcountry; 
+      	string adr = acct.billingstreet + ',' + acct.billingcity + ',' + acct.billingstate;
+          if ( acct.billingpostalcode != null ) adr += ',' + acct.billingpostalcode;
+          if ( acct.billingcountry != null ) adr += ',' + acct.billingcountry;
           adr = adr.replaceAll('\"', '' );
           adr = adr.replaceAll('\'', '' );
-          adr = adr.replaceAll( '\n', ' ' );    
-          adr = adr.replaceAll( '\r', ' ' );    
-          system.debug( adr );  
-          return adr;	
+          adr = adr.replaceAll( '\n', ' ' );
+          adr = adr.replaceAll( '\r', ' ' );
+          system.debug( adr );
+          return adr;
       }
       
-  	public static testmethod void t1() { 
+  	public static testmethod void t1() {
   		PageReference pageRef =  Page.kmlPreviewTemplate;
           Test.setCurrentPage(pageRef);
           system.assert ( GeoUtils.generateFromContent( pageRef ) != null );

@@ -66,7 +66,7 @@ linguistGrammarRepo https://github.com/textmate/standard-ml.tmbundle
  example
    
   signature LAZY_BASE =
-     sig 
+     sig
         type 'a lazy
         exception Undefined
         val force: 'a lazy -> 'a
@@ -85,7 +85,7 @@ linguistGrammarRepo https://github.com/textmate/standard-ml.tmbundle
         val compare: ('a * 'a -> order) -> 'a lazy * 'a lazy -> order
         val map: ('a -> 'b) -> 'a lazy -> 'b lazy
   
-        structure Ops: 
+        structure Ops:
                      sig
                         val ! : 'a lazy -> 'a (* force *)
                         val ? : 'a -> 'a lazy (* inject *)

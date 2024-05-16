@@ -65,7 +65,7 @@ linguistGrammarRepo https://github.com/komsit37/sublime-q
   qf:`time`ex`sym`s`bid`bsize`ask`asize`cond`mmid`bex`aex`seq`bbo`qbbo`corr`cqs
   qt:("TCSSFIFIC*CCJCCCC ";9 1 6 10 11 7 11 7 1 4 1 1 16 1 1 1 1 2)
   
-  / sym[.s] "e"$pricebidask 
+  / sym[.s] "e"$pricebidask
   g:{[f;x]`sym`time xcols delete s from @[;`sym;{$[null y;x;` sv x,y]}';x`s]@[x;f;"e"$%;1e4]}
   foo:{[d;f;t;g;x]@[;`sym;`p#].Q.dsftg[(dst;"D"$-8#string x;d);(` sv src,x;sum t 1;0);f;t;g]}
   

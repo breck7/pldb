@@ -36,7 +36,7 @@ example
        val r = Reg[Int]
        
        // Loop over each element in SRAM
-       Foreach(16 by 1, 32 by 1){(i,j) => 
+       Foreach(16 by 1, 32 by 1){(i,j) =>
          s(i,j) = i + j
        }
        // Store element into the register, based on the input arg
@@ -47,7 +47,7 @@ example
      }
  
    }
- } 
+ }
 
 githubRepo https://github.com/stanford-ppl/spatial
  firstCommit 2017

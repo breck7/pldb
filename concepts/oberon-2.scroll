@@ -50,7 +50,7 @@ wikipedia https://en.wikipedia.org/wiki/Oberon-2
                 | WITH Guard DO StatementSeq {"|" Guard DO StatementSeq} [ELSE StatementSeq] END
                 | EXIT
                 | RETURN [Expr]
-        ].	
+        ].
   Case          = [CaseLabels {"," CaseLabels} ":" StatementSeq].
   CaseLabels    = ConstExpr [".." ConstExpr].
   Guard         = Qualident ":" Qualident.
@@ -80,7 +80,7 @@ wikipedia https://en.wikipedia.org/wiki/Oberon-2
 leachim6 Oberon 2
  filepath o/Oberon 2.obn
  example
-  MODULE HelloWorld;                     
+  MODULE HelloWorld;
   IMPORT Out;
   BEGIN
     Out.String( "Hello World" );
