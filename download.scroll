@@ -18,7 +18,7 @@ Download the PLDB concept database as: CSV | TSV | JSON
  link pldb.tsv TSV
  link pldb.json JSON
 
-import measures/pldbMeasures.scroll
+import code/pldbMeasures.scroll
 loadConcepts concepts
 
 Statistics on the measures (columns) are below and can be downloaded as: CSV | TSV | JSON
