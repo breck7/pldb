@@ -24,35 +24,47 @@ const quickTree = (rows, header) => `table ${delimiter}
  ${new TreeNode(rows).toDelimited(delimiter, header, false).replace(/\n/g, "\n ")}`
 
 // todo: move to grammar
-const isLanguage = tag => {
-  const nonLanguages = {
-    vm: true,
-    linter: true,
-    library: true,
-    webApi: true,
-    characterEncoding: true,
-    cloud: true,
-    editor: true,
-    filesystem: true,
-    feature: true,
-    packageManager: true,
-    os: true,
-    application: true,
-    framework: true,
-    standard: true,
-    hashFunction: true,
-    compiler: true,
-    decompiler: true,
-    binaryExecutable: true,
-    binaryDataFormat: true,
-    equation: true,
-    interpreter: true,
-    computingMachine: true,
-    dataStructure: true
-  }
-
-  return nonLanguages[tag] ? false : true
-}
+const languageTags = new Set(`assembly
+barCodeFormat
+bytecode
+characterEncoding
+compiler
+configFormat
+contractLanguage
+dataNotation
+dataValidationLanguage
+diffFormat
+esolang
+grammarLanguage
+hardwareDescriptionLanguage
+headerLang
+idl
+interpreter
+ir
+isa
+jsonFormat
+library
+musicalNotation
+notation
+numeralSystem
+pl
+plzoo
+protocol
+queryLanguage
+schema
+standard
+stylesheetLanguage
+template
+textDataFormat
+textEncodingFormat
+textMarkup
+timeFormat
+unixApplication
+visual
+wikiMarkup
+xmlFormat
+yamlFormat`.split("\n"))
+const isLanguage = tag => languageTags.has(tag)
 
 // Todo: move to Grammar with an enum concept?
 const tagNames = new TreeNode(`application
@@ -1913,34 +1925,7 @@ const computeds = {
   },
 
   isLanguage(concept) {
-    const nonLanguages = {
-      vm: true,
-      linter: true,
-      library: true,
-      webApi: true,
-      characterEncoding: true,
-      cloud: true,
-      editor: true,
-      filesystem: true,
-      feature: true,
-      packageManager: true,
-      os: true,
-      application: true,
-      framework: true,
-      standard: true,
-      hashFunction: true,
-      compiler: true,
-      decompiler: true,
-      binaryExecutable: true,
-      binaryDataFormat: true,
-      equation: true,
-      interpreter: true,
-      computingMachine: true,
-      dataStructure: true
-    }
-    // todo: this should just search for "cl" in tags
-    const primaryTag = concept.get(PLDBKeywords.tags).split(" ")[0]
-    return nonLanguages[primaryTag] ? 0 : 1
+    return isLanguage(concept.get(PLDBKeywords.tags).split(" ")[0])
   },
 
   rank(concept, computer) {
