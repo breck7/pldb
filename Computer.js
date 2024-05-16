@@ -24,7 +24,7 @@ const quickTree = (rows, header) => `table ${delimiter}
  ${new TreeNode(rows).toDelimited(delimiter, header, false).replace(/\n/g, "\n ")}`
 
 // todo: move to grammar
-const isLanguage = type => {
+const isLanguage = tag => {
   const nonLanguages = {
     vm: true,
     linter: true,
@@ -51,11 +51,11 @@ const isLanguage = type => {
     dataStructure: true
   }
 
-  return nonLanguages[type] ? false : true
+  return nonLanguages[tag] ? false : true
 }
 
 // Todo: move to Grammar with an enum concept?
-const typeNames = new TreeNode(`application
+const tagNames = new TreeNode(`application
 assembly assembly language
 binaryDataFormat
 binaryExecutable binary executable format
@@ -94,6 +94,10 @@ visual visual programming language
 vm virtual machine
 webApi
 xmlFormat`).toObject()
+
+const PLDBKeywords = {
+  tags: "tags"
+}
 
 class ConceptPage {
   constructor(name, parsed, computer) {
@@ -468,13 +472,13 @@ Wayback Machine: https://web.archive.org/web/20220000000000*/${title}`
     return this.get("website")
   }
 
-  get type() {
-    return this.get("type").split(" ")[0]
+  get primaryTag() {
+    return this.get(PLDBKeywords.tags).split(" ")[0]
   }
 
   get isLanguage() {
-    // todo: add a "computerLanguage" enum type, then just search types for that string.
-    return isLanguage(this.get("type"))
+    // todo: add a "cl" enum tag, then just search tags for that string.
+    return isLanguage(this.get(PLDBKeywords.tags))
   }
 
   get otherReferences() {
@@ -524,10 +528,10 @@ Wayback Machine: https://web.archive.org/web/20220000000000*/${title}`
     ])
   }
 
-  get typeName() {
-    let { type } = this
-    type = typeNames[type] || type
-    return lodash.startCase(type).toLowerCase()
+  get primaryTagName() {
+    let { primaryTag } = this
+    primaryTag = tagNames[primaryTag] || primaryTag
+    return lodash.startCase(primaryTag).toLowerCase()
   }
 
   get lastActivity() {
@@ -695,7 +699,7 @@ pipeTable
   }
 
   toScroll() {
-    const { typeName, title, id, getSource } = this
+    const { primaryTagName, title, id, getSource } = this
 
     if (title.includes("%20")) throw new Error("bad space in title: " + title)
 
@@ -706,7 +710,7 @@ pipeTable
 
     return `import ../header.scroll
 baseUrl https://pldb.io/concepts/
-title ${title} - ${lodash.upperFirst(typeName)}
+title ${title} - ${lodash.upperFirst(primaryTagName)}
 
 printTitle ${title}
 
@@ -768,8 +772,7 @@ import ../footer.scroll
     const { title } = this
 
     let image = this.get("screenshot")
-    let caption = `A screenshot of the visual language ${title}.
-  link /search.html?q=select+type%0D%0Awhere+type+%3D+visual visual language`
+    let caption = `A screenshot of the ${this.primaryTagLink} ${title}.`
     if (!image) {
       image = this.get("photo")
       caption = `A photo of ${title}.`
@@ -848,7 +851,7 @@ image ${image.replace("https://pldb.io/", "../")}
   }
 
   get oneLiner() {
-    const { typeName, title, creators, appeared, sourceStatus } = this
+    const { primaryTagName, title, creators, appeared, sourceStatus } = this
     const standsFor = this.get("standsFor")
     let akaMessage = standsFor ? `, aka ${standsFor},` : ""
 
@@ -861,17 +864,17 @@ image ${image.replace("https://pldb.io/", "../")}
         .join("\n")
     }
 
-    return `* ${title}${akaMessage} is ${Utils.getIndefiniteArticle(sourceStatus || typeName)}${sourceStatus} ${
-      this.typeLink
+    return `* ${title}${akaMessage} is ${Utils.getIndefiniteArticle(sourceStatus || primaryTagName)}${sourceStatus} ${
+      this.primaryTagLink
     }${appeared ? ` created in ${appeared}` : ""}${creatorsStr}.
- link ../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22type%22%3A%22num%22%2C%22value%22%3A%5B%22${appeared}%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D ${appeared}
+ link ../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%22${appeared}%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D ${appeared}
 ${creatorsLinks}
 `
   }
 
-  get typeLink() {
-    const { type } = this
-    return `<a href="../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22type%22%2C%22origData%22%3A%22type%22%2C%22type%22%3A%22string%22%2C%22value%22%3A%5B%22${type}%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D">${this.typeName}</a>`
+  get primaryTagLink() {
+    const { primaryTag } = this
+    return `<a href="../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22tags%22%2C%22origData%22%3A%22tags%22%2C%22tags%22%3A%22string%22%2C%22value%22%3A%5B%22${primaryTag}%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D">${this.primaryTagName}</a>`
   }
 
   get descriptionSection() {
@@ -953,7 +956,7 @@ ${creatorsLinks}
     const supersetOf = this.getRelationshipFile("supersetOf")
     if (supersetOf)
       facts.push(
-        `${title} is a <a href="../lists/explorer.html#columns=rank~id~appeared~type~creators~supersetOf&searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22!null%22%2C%22data%22%3A%22supersetOf%22%2C%22origData%22%3A%22supersetOf%22%2C%22type%22%3A%22html%22%2C%22value%22%3A%5B%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D">superset</a> of ${supersetOf.link()}`
+        `${title} is a <a href="../lists/explorer.html#columns=rank~id~appeared~tags~creators~supersetOf&searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22!null%22%2C%22data%22%3A%22supersetOf%22%2C%22origData%22%3A%22supersetOf%22%2C%22tags%22%3A%22html%22%2C%22value%22%3A%5B%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D">superset</a> of ${supersetOf.link()}`
       )
 
     const implementationOf = this.getRelationshipFile("implementationOf")
@@ -1509,7 +1512,7 @@ class Tables {
           "filename",
           "rank",
           "appeared",
-          "type",
+          PLDBKeywords.tags,
           "creators",
           "numberOfUsersEstimate",
           "numberOfJobsEstimate",
@@ -1935,9 +1938,9 @@ const computeds = {
       computingMachine: true,
       dataStructure: true
     }
-    // todo: this should just search for "computerLanguage" in type
-    const type = concept.get("type")
-    return nonLanguages[type] ? 0 : 1
+    // todo: this should just search for "cl" in tags
+    const primaryTag = concept.get(PLDBKeywords.tags).split(" ")[0]
+    return nonLanguages[primaryTag] ? 0 : 1
   },
 
   rank(concept, computer) {
