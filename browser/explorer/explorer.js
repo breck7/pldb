@@ -193,7 +193,7 @@ class ExploreApp {
     return this.objectFromHash.columns || this.defaultColumns
   }
 
-  defaultColumns = "rank id appeared type creators".replace(/ /g, this.columnDelimiter)
+  defaultColumns = "rank id appeared tags creators".replace(/ /g, this.columnDelimiter)
 
   makeColumns(measureNames) {
     return measureNames

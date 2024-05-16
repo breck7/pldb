@@ -1,7 +1,7 @@
 import ../measures/conceptPage.scroll
 id SubX
 appeared 2019
-type assembly
+tags assembly
 creators Kartik K. Agaram
 conceptDescription Author of Mu decided this year to switch implementation from C++ to his own x86 assembler subset named SubX.
 reference https://github.com/akkartik/mu#readme

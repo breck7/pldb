@@ -1,7 +1,7 @@
 import ../measures/conceptPage.scroll
 id TLA
 appeared 1999
-type pl
+tags pl
 creators Leslie Lamport
 conceptDescription TLA+ is a formal specification and verification language that helps engineers design, specify, reason about and verify complex, real-life algorithms and software or hardware systems. TLA+ has been successfully used by Intel, Compaq and Microsoft in the design of hardware systems, and has started seeing recent use in large software systems, at Microsoft, Oracle, and most famously at Amazon, where engineers use TLA+ to specify and verify many AWS services.
 documentation https://lamport.azurewebsites.net/tla/learning.html

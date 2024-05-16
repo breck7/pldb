@@ -1,7 +1,7 @@
 import ../measures/conceptPage.scroll
 id Slony
 appeared 2004
-type application
+tags application
 creators Steve Singer
 conceptDescription Slony-I is a "master to multiple slaves" replication system for PostgreSQL supporting cascading (e.g. - a node can feed another node which feeds another node...) and failover.
 website https://www.slony.info/

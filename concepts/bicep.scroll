@@ -1,7 +1,7 @@
 import ../measures/conceptPage.scroll
 id Bicep
 appeared 2020
-type jsonFormat
+tags jsonFormat
 creators Anthony Martin
 conceptDescription Bicep is a Domain Specific Language (DSL) for deploying Azure resources declaratively.
 reference https://docs.microsoft.com/en-us/azure/azure-resource-manager/bicep/

@@ -1,7 +1,7 @@
 import ../measures/conceptPage.scroll
 id flexbuffers
 appeared 2014
-type idl
+tags idl
 conceptDescription A schemaless binary encoding. This is a binary format that can be used in conjunction with FlatBuffers (by storing a part of a buffer in FlexBuffers format), or also as its own independent serialization format.
 reference https://google.github.io/flatbuffers/flatbuffers_internals.html
 country United States
