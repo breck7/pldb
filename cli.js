@@ -1,3 +1,5 @@
+#! /usr/bin/env node
+
 const path = require("path")
 const numeral = require("numeral")
 const lodash = require("lodash")
@@ -7,19 +9,15 @@ const { TreeNode } = require("jtree/products/TreeNode.js")
 const { Utils } = require("jtree/products/Utils.js")
 const { shiftRight, removeReturnChars } = Utils
 const { Disk } = require("jtree/products/Disk.node.js")
-const { TrueBaseFolder, TrueBaseFile } = require("truebase/server/TrueBase.js")
-const { TrueBaseServer } = require("truebase/server/TrueBaseServer.js")
 
 const baseFolder = path.join(__dirname)
 const ignoreFolder = path.join(baseFolder, "ignore")
-const siteFolder = path.join(baseFolder, "site")
-const nodeModulesFolder = path.join(baseFolder, "node_modules")
-const pagesDir = path.join(siteFolder, "pages")
-const listsFolder = path.join(siteFolder, "lists")
+const pagesDir = path.join(baseFolder, "pages")
+const listsFolder = path.join(baseFolder, "lists")
 
 const conceptsFolderName = "/concepts/"
 
-class PLDBFolder extends TrueBaseFolder {
+class PLDBCli {
   get keywordsOneHotCsv() {
     if (!this.quickCache.keywordsOneHotCsv) this.quickCache.keywordsOneHotCsv = new TreeNode(this.keywordsOneHot).asCsv
     return this.quickCache.keywordsOneHotCsv
@@ -44,9 +42,7 @@ class PLDBFolder extends TrueBaseFolder {
     this.quickCache.keywordsOneHot = rows
     return rows
   }
-}
 
-class PLDBServer extends TrueBaseServer {
   // addRedirects(app) {
   //   // /languages => /truebase redirect
   //   app.get("/languages/:id", (req, res, next) => res.status(302).redirect(`/concepts/${req.params.id}`))
@@ -97,10 +93,6 @@ class PLDBServer extends TrueBaseServer {
   }
 }
 
-const settingsPath = path.join(baseFolder, "pldb.truebase")
-const pldbFolder = new PLDBFolder().setSettingsFromPath(settingsPath)
-const PLDB = new PLDBServer(settingsPath, pldbFolder)
+module.exports = { PLDBCli }
 
-module.exports = { PLDB }
-
-if (!module.parent) Utils.runCommand(PLDB, process.argv[2], process.argv[3])
+if (!module.parent) Utils.runCommand(new PLDBCli(), process.argv[2], process.argv[3])

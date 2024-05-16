@@ -25,6 +25,9 @@
     "arrowParens": "avoid",
     "quoteProps": "as-needed"
   },
+  "bin": {
+    "pldb": "./cli.js"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/breck7/pldb.git"
