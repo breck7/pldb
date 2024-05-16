@@ -1,7 +1,7 @@
 import ../measures/conceptPage.scroll
 id PTX
 appeared 2009
-type assembly
+tags assembly
 conceptDescription PTX, a low-level parallel thread execution virtual machine and instruction set architecture (ISA). PTX exposes the GPU as a data-parallel computing device.
 website https://llvm.org/docs/NVPTXUsage.html
 reference https://www.nvidia.com/content/cuda-ptx_isa_1.4.pdf

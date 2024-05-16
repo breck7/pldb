@@ -1,7 +1,7 @@
 import ../measures/conceptPage.scroll
 id gnu-rtl
 appeared 1987
-type ir
+tags ir
 conceptDescription In GCC, RTL is generated from the GIMPLE representation, transformed by various passes in the GCC 'middle-end', and then converted to assembly language.
 reference https://en.wikipedia.org/wiki/Register_transfer_language
 country United States

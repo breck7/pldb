@@ -1,7 +1,7 @@
 import ../measures/conceptPage.scroll
 id kaitai
 appeared 2016
-type idl
+tags idl
 creators Mikhail Yakshin
 conceptDescription Kaitai Struct is a YAML-based declarative language used to describe various binary data structures, laid out in files or in memory: i.e. binary file formats, network stream packet formats, etc. The main idea is that a particular format is described in Kaitai Struct language (.ksy file) and then can be compiled with ksc into source files in one of the supported programming languages. These modules will include a generated code for a parser that can read described data structure from a file / stream and give access to it in a nice, easy-to-comprehend API.
 website http://kaitai.io/

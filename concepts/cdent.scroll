@@ -1,7 +1,7 @@
 import ../measures/conceptPage.scroll
 id C'Dent
 appeared 2010
-type ir
+tags ir
 creators Ingy döt Net
 conceptDescription When you write a module in C'Dent, you can use it in a dozen different programming languages. For instance, you could write a module in Python and use it in JavaScript, or you could write a module in JavaScript and use it in Perl 6, Ruby or Java. C'Dent has multiple input syntaxes. These syntaxes are strict subsets of common and popular object-oriented programming languages. The current implementation of C'Dent supports Python, JavaScript and Perl 6 inputs. Perl and Ruby will be added soon. C'Dent parses and analyzes the input into a well defined tree structure that is is known as C'Dent. The C'Dent format can be trivially serialized to disk as YAML or XML.
 website http://cdent.org/
