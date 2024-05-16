@@ -1526,6 +1526,7 @@ class Tables {
           "appeared",
           PLDBKeywords.tags,
           "creators",
+          "impactScore",
           "numberOfUsersEstimate",
           "numberOfJobsEstimate",
           "measurements"
@@ -1927,6 +1928,9 @@ const computeds = {
   isLanguage(concept) {
     return isLanguage(concept.get(PLDBKeywords.tags).split(" ")[0])
   },
+  impactScore(concept, computer) {
+    return computer.ranks[concept.get("filename")].impactScore
+  },
 
   rank(concept, computer) {
     return computer.ranks[concept.get("filename")].index
@@ -1988,6 +1992,11 @@ class MeasureComputer {
   }
 }
 
+function impactScore(rank, totalItems, A = 5000, k = 0.001) {
+    const B = Math.log(k) / totalItems;
+    return A * Math.exp(B * rank)
+}
+
 const calcRanks = (concepts, computer, pageRankLinks) => {
   let objects = concepts.map(concept => {
     const filename = concept.get("filename")
@@ -2006,10 +2015,14 @@ const calcRanks = (concepts, computer, pageRankLinks) => {
   objects = rankSort(objects, "measurements")
   objects = rankSort(objects, "pageRankLinks")
 
+  const conceptCount = objects.length
+
   objects.forEach((obj, rank) => {
     // Drop the item this does the worst on, as it may be a flaw in PLDB.
-    const top3 = [obj.jobsRank, obj.usersRank, obj.measurementsRank, obj.pageRankLinks]
-    obj.totalRank = lodash.sum(lodash.sortBy(top3).slice(0, 3))
+    const top3 = lodash.sortBy([obj.jobsRank, obj.usersRank, obj.measurementsRank, obj.pageRankLinks]).slice(0, 3)
+    // todo: add a lot more data for pagerank, and have pagerank pass on (so languages influencing other langs have a bigger impact)
+    obj.totalRank = lodash.sum(top3)
+    obj.impactScore = Math.round(impactScore(obj.totalRank, conceptCount))
   })
   objects = lodash.sortBy(objects, ["totalRank"])
 

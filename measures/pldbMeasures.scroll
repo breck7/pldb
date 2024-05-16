@@ -145,10 +145,15 @@ numberOfJobsEstimateParser
  extends abstractComputedIntMeasureParser
  description What is our estimate of the number of jobs in this language?
 
+impactScoreParser
+ float sortIndex 3.1
+ extends abstractComputedIntMeasureParser
+ description What is the impact score of this concept?
+
 rankParser
  int sortIndex 3
  extends abstractComputedIntMeasureParser
- description How does this thing rank amongst all entities in this TrueBase?
+ description How does this concept rank amongst all other concepts?
 
 languageRankParser
  int sortIndex 4
