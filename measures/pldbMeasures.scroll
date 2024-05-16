@@ -12,6 +12,19 @@ abstractFeatureParser
  int sortIndex 42
  string sortKey abstractFeatureParser
 
+abstractComputedIntMeasureParser
+ boolean isComputed true
+ extends abstractIntegerMeasureParser
+ javascript
+  computeValue(concept, measureName, parsedProgram, concepts) {
+    if (!parsedProgram.measureComputer) {
+      const path = require("path")
+      const {MeasureComputer} = require(path.join(path.dirname(parsedProgram.file.filePath).replace("/concepts",""), "Computer.js"))
+      parsedProgram.measureComputer = new MeasureComputer(concepts)
+    }
+    return parsedProgram.measureComputer.get(measureName, concept)
+  }
+
 // fileExtensions
 
 // annualReportsUrl
@@ -81,21 +94,6 @@ compilerExplorerParser
  inScope exampleParser
 
 // computeds
-
-// Computer
-abstractComputedIntMeasureParser
- boolean isComputed true
- extends abstractIntegerMeasureParser
- javascript
-  computeValue(concept, measureName, parsedProgram, concepts) {
-    if (!parsedProgram.computer) {
-      const path = require("path")
-      const {MeasureComputer} = require(path.join(path.dirname(parsedProgram.file.filePath), "Computer.js"))
-      parsedProgram.computer = new MeasureComputer(parsedProgram, concepts)
-    }
-    return parsedProgram.computer.get(measureName, concept)
-  }
-
 hoplIdParser
  extends abstractComputedIntMeasureParser
  description What is the HOPL id of this language?
@@ -1731,22 +1729,14 @@ helloWorldCollectionParser
 // history
 appearedParser
  int sortIndex 1
+ boolean isRequired true
  description What year was the language publicly released and/or announced?
  extends abstractYearMeasureParser
- // required
 isDoneParser
  description Has the creator or maintainer announced the language officially over, or has all activity stopped? Include a link to proof of the announcement.
- extends abstractBooleanMeasureParser
- boolean isComputed true
- javascript
-  computeValue(concept, measureName, parsedProgram, concepts) {
-    if (!parsedProgram.computer) {
-      const path = require("path")
-      const {MeasureComputer} = require(path.join(path.dirname(parsedProgram.file.filePath), "Computer.js"))
-      parsedProgram.computer = new MeasureComputer(parsedProgram, concepts)
-    }
-    return parsedProgram.computer.get(measureName, concept)
-  }
+ extends abstractComputedIntMeasureParser
+ string typeForCsvDocs boolean
+ cells measureNameCell booleanCell
 
 nativeLanguageParser
  cells measureNameCell stringCell
@@ -2247,7 +2237,7 @@ twitterParser
 tagsParser
  int sortIndex 2
  description Which category(ies) in PLDB's subjective ontology does this entity fit into?
- // required
+ boolean isRequired true
  extends abstractEnumsMeasureParser
 
 // ubuntu

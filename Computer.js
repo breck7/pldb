@@ -1953,7 +1953,7 @@ const computeds = {
 }
 
 class MeasureComputer {
-  constructor(scrollFile, concepts) {
+  constructor(concepts) {
     this.quickCache = {}
     this.concepts = concepts
     this.ranks = calcRanks(concepts, this, this.pageRankLinks)
