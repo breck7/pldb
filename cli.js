@@ -92,6 +92,19 @@ class PLDBCli {
     })
   }
 
+  buildGrammarFileCommand() {
+    const code = `node_modules/scroll-cli/grammar/cellTypes.grammar
+node_modules/scroll-cli/grammar/root.grammar
+node_modules/scroll-cli/grammar/comments.grammar
+node_modules/scroll-cli/grammar/blankLine.grammar
+node_modules/scroll-cli/grammar/measures.grammar
+node_modules/scroll-cli/grammar/import.grammar
+node_modules/scroll-cli/grammar/errors.grammar
+measures/commonMeasures.scroll
+measures/pldbMeasures.scroll`.split("\n").map(filepath => Disk.read(path.join(__dirname, filepath))).join("\n\n").replace("catchAllParser catchAllParagraphParser", "catchAllParser errorParser").replace(/^importOnly\n/gm, "").replace(/^import .+/gm, "")
+    Disk.write(path.join(__dirname, "pldb.grammar"), code)
+  }
+
     importCommand(filename) {
     // todo: add support for updating as well
     const processEntry = (node, index) => {
