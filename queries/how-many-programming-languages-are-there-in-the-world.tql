@@ -1,5 +1,0 @@
-printTitle
-title How many programming languages are there in the world?
-select isLanguage rank type appeared
-where isLanguage oneOf true
-sortBy rank
