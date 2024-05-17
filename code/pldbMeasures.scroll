@@ -1860,7 +1860,7 @@ hoplParser
 
 // images
 screenshotParser
- description What is a URL to a screenshot of this visual language in the form https://pldb.io/screenshots/[id].png?
+ description What is the filename to a screenshot of this visual language in the concepts/screenshots/ folder?
  extends abstractUrlMeasureParser
 photoParser
  description What is a URL to a screenshot of this real world notation in the form https://pldb.io/photos/[id].png?

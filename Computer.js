@@ -787,13 +787,15 @@ import ../footer.scroll
     let caption = `A screenshot of the ${this.primaryTagLink} ${title}.`
     if (!image) {
       image = this.get("photo")
+      if (!image)
+        return ""
+      image = "photos/" + image
       caption = `A photo of ${title}.`
-    }
+    } else
+      image = "screenshots/" + image
 
-    if (!image) return ""
-
-    return `openGraphImage ${image}
-image ${image.replace("https://pldb.io/", "../")}
+    return `openGraphImage https://pldb.io/concepts/${image}
+image ${image}
  caption ${caption}`
   }
 
