@@ -78,28 +78,25 @@ class PLDBCli {
     // Todo: figuring out best repo orgnization for crawlers.
     // Note: this currently assumes you have measurementscrawlers project installed separateely.
     const gitsFolder = path.join(ignoreFolder, "gits")
-    this.pldb
-      .slice(0)
-      .reverse()
-      .forEach(async file => {
-        const repo = file.gitRepo || file.githubRepo || file.gitlabRepo || file.sourcehutRepo
-        if (!repo) return
-        //if (file.repoStats_files) return
-        if (file.isDone) return
-        try {
-          const targetFolder = path.join(gitsFolder, file.filename.replace(".scroll", ""))
-          const gitStats = new GitStats(repo, targetFolder)
-          if (!Disk.exists(targetFolder)) gitStats.clone()
-          else gitStats.pull()
+    this.pldb.forEach(async file => {
+      const repo = file.gitRepo || file.githubRepo || file.gitlabRepo || file.sourcehutRepo
+      if (!repo) return
+      //if (file.repoStats_files) return
+      if (file.isDone) return
+      try {
+        const targetFolder = path.join(gitsFolder, file.filename.replace(".scroll", ""))
+        const gitStats = new GitStats(repo, targetFolder)
+        if (!Disk.exists(targetFolder)) gitStats.clone()
+        else gitStats.pull()
 
-          const targetPath = path.join(conceptsFolder, file.filename)
-          const tree = new TreeNode(Disk.read(targetPath))
-          tree.touchNode("repoStats").setProperties(gitStats.summary)
-          Disk.write(targetPath, tree.toString())
-        } catch (err) {
-          console.error(err, file.id)
-        }
-      })
+        const targetPath = path.join(conceptsFolder, file.filename)
+        const tree = new TreeNode(Disk.read(targetPath))
+        tree.touchNode("repoStats").setProperties(gitStats.summary)
+        Disk.write(targetPath, tree.toString())
+      } catch (err) {
+        console.error(err, file.id)
+      }
+    })
   }
 
   buildGrammarFileCommand() {
