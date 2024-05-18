@@ -2,7 +2,7 @@ const { execSync } = require("child_process")
 
 function cloneRepo(repoUrl, targetDir) {
   const command = `git clone ${repoUrl} ${targetDir}`
-  execSync(command, { encoding: "utf8", timeout: 10000 })
+  execSync(command, { encoding: "utf8", timeout: 20000 })
 }
 
 class GitStats {
