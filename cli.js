@@ -81,10 +81,11 @@ class PLDBCli {
     this.pldb.forEach(async file => {
       const repo = file.gitRepo || file.githubRepo || file.gitlabRepo || file.sourcehutRepo
       if (!repo) return
+      const targetFolder = path.join(gitsFolder, file.filename.replace(".scroll", ""))
+      if (Disk.exists(targetFolder)) return
       //if (file.repoStats_files) return
       if (file.isDone) return
       try {
-        const targetFolder = path.join(gitsFolder, file.filename.replace(".scroll", ""))
         const gitStats = new GitStats(repo, targetFolder)
         if (!Disk.exists(targetFolder)) gitStats.clone()
         else gitStats.pull()
