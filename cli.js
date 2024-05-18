@@ -84,7 +84,7 @@ class PLDBCli {
       const targetFolder = path.join(gitsFolder, file.filename.replace(".scroll", ""))
       if (Disk.exists(targetFolder)) return
       //if (file.repoStats_files) return
-      if (file.isDone) return
+      if (file.isFinished) return
       try {
         const gitStats = new GitStats(repo, targetFolder)
         if (!Disk.exists(targetFolder)) gitStats.clone()

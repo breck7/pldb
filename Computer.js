@@ -1926,8 +1926,8 @@ const computeds = {
     return count
   },
 
-  isDone(concept) {
-    return concept.get("isDone") ?? this.lastActivity(concept) < 2014
+  isFinished(concept) {
+    return concept.get("isFinished") ?? this.lastActivity(concept) < 2014
   },
 
   hoplId(concept) {
