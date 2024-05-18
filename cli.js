@@ -77,7 +77,7 @@ class PLDBCli {
     const { GitStats } = require("./code/gitStats.js")
     // Todo: figuring out best repo orgnization for crawlers.
     // Note: this currently assumes you have measurementscrawlers project installed separateely.
-    const gitsFolder = path.join(ignoreFolder, "gits")
+    const gitsFolder = path.join(ignoreFolder, "node_modules", "gits") // toss in a fake "node_modules" folder to avoid a "scroll list" scan. hacky i know.
     this.pldb.forEach(async file => {
       const repo = file.gitRepo || file.githubRepo || file.gitlabRepo || file.sourcehutRepo
       if (!repo) return

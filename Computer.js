@@ -24,7 +24,8 @@ const quickTree = (rows, header) => `table ${delimiter}
  ${new TreeNode(rows).toDelimited(delimiter, header, false).replace(/\n/g, "\n ")}`
 
 // todo: move to grammar
-const languageTags = new Set(`assembly
+const languageTags = new Set(
+  `assembly
 barCodeFormat
 bytecode
 characterEncoding
@@ -63,7 +64,8 @@ unixApplication
 visual
 wikiMarkup
 xmlFormat
-yamlFormat`.split("\n"))
+yamlFormat`.split("\n")
+)
 const isLanguage = tag => languageTags.has(tag)
 
 // Todo: move to Grammar with an enum concept?
@@ -787,12 +789,10 @@ import ../footer.scroll
     let caption = `A screenshot of the ${this.primaryTagLink} ${title}.`
     if (!image) {
       image = this.get("photo")
-      if (!image)
-        return ""
+      if (!image) return ""
       image = "photos/" + image
       caption = `A photo of ${title}.`
-    } else
-      image = "screenshots/" + image
+    } else image = "screenshots/" + image
 
     return `openGraphImage https://pldb.io/concepts/${image}
 image ${image}
@@ -1425,7 +1425,7 @@ class Feature {
     if (references.length) referencesText = `* Read more about ${title} on the web: ${linkManyAftertext(references)}`
 
     const filledLink = `../lists/explorer.html#columns=rank~id~appeared~tags~creators~${id}&searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22!null%22%2C%22data%22%3A%22${id}%22%2C%22origData%22%3A%22${id}%22%2C%22type%22%3A%22num%22%2C%22value%22%3A%5B%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D`
-    const missingLink =  `../lists/explorer.html#columns=rank~id~appeared~tags~creators~${id}&searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22null%22%2C%22data%22%3A%22${id}%22%2C%22origData%22%3A%22${id}%22%2C%22type%22%3A%22num%22%2C%22value%22%3A%5B%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D`
+    const missingLink = `../lists/explorer.html#columns=rank~id~appeared~tags~creators~${id}&searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22null%22%2C%22data%22%3A%22${id}%22%2C%22origData%22%3A%22${id}%22%2C%22type%22%3A%22num%22%2C%22value%22%3A%5B%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D`
 
     const explorerLinks = `View all concepts with or missing a *${id}* measurement
  link ${missingLink} missing
@@ -1867,7 +1867,7 @@ class Tables {
 const computeds = {
   numberOfUsersEstimate(concept) {
     const mostRecents = ["linkedInSkill", "subreddit memberCount", "projectEuler members"]
-    const directs = ["meetup members", "githubRepo stars"]
+    const directs = ["meetup members", "githubRepo stars", "repoStats committers"]
     const customs = {
       wikipedia: v => 20,
       packageRepository: v => 1000, // todo: pull author number
@@ -2007,8 +2007,8 @@ class MeasureComputer {
 }
 
 function impactScore(rank, totalItems, A = 5000, k = 0.001) {
-    const B = Math.log(k) / totalItems;
-    return A * Math.exp(B * rank)
+  const B = Math.log(k) / totalItems
+  return A * Math.exp(B * rank)
 }
 
 const calcRanks = (concepts, computer, pageRankLinks) => {
