@@ -1,0 +1,35 @@
+import ../code/conceptPage.scroll
+id no ordinary object notation
+tags dataNotation
+creators monsterkodi
+appeared 2015
+github https://github.com/monsterkodi/noon
+reference https://github.com/breck7/jtree/issues/140
+
+hasSemanticIndentation true
+example
+ name            noon
+ version         4.6.1
+ description     no ordinary object notation
+ keywords
+                 noon
+                 object
+                 notation
+ author          monsterkodi
+ license         Unlicense
+ scripts
+                 build   ./node_modules/.bin/kode -Ho js kode/*.kode
+                 test    ./node_modules/.bin/kode -t kode/*.kode test/test.kode
+                 watch   ./node_modules/.bin/kode -wt test/test.kode kode/*.kode
+ files
+                 bin/noon
+                 js/*.js
+ main            js/main.js
+ bin
+                 noon  ./bin/noon
+ repository      github:monsterkodi/noon
+ dependencies
+                 karg  github:monsterkodi/karg
+                 klor  github:monsterkodi/klor
+ devDependencies
+                 kode  github:monsterkodi/kode
