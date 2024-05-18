@@ -73,6 +73,15 @@ class PLDBCli {
     await importer.writeAllRepoDataCommand()
   }
 
+  async crawlRedditPLCommand() {
+    // Todo: figuring out best repo orgnization for crawlers.
+    // Note: this currently assumes you have measurementscrawlers project installed separateely.
+    const { RedditImporter } = require("../measurementscrawlers/reddit.com/Reddit.js")
+
+    const importer = new RedditImporter(this.pldb, conceptsFolder)
+    await importer.createFromAnnouncementsCommand()
+  }
+
   async crawlGitsCommand() {
     const { GitStats } = require("./code/gitStats.js")
     // Todo: figuring out best repo orgnization for crawlers.
@@ -82,17 +91,17 @@ class PLDBCli {
       const repo = file.gitRepo || file.githubRepo || file.gitlabRepo || file.sourcehutRepo
       if (!repo) return
       const targetFolder = path.join(gitsFolder, file.filename.replace(".scroll", ""))
-      if (Disk.exists(targetFolder)) return
-      //if (file.repoStats_files) return
+      //if (Disk.exists(targetFolder)) return
+      if (file.repoStats_files) return
       if (file.isFinished) return
       try {
         const gitStats = new GitStats(repo, targetFolder)
         if (!Disk.exists(targetFolder)) gitStats.clone()
-        else gitStats.pull()
 
         const targetPath = path.join(conceptsFolder, file.filename)
         const tree = new TreeNode(Disk.read(targetPath))
         tree.touchNode("repoStats").setProperties(gitStats.summary)
+        if (!tree.has("appeared")) tree.set("appeared", gitStats.firstCommit.toString())
         Disk.write(targetPath, tree.toString())
       } catch (err) {
         console.error(err, file.id)

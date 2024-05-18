@@ -10,7 +10,7 @@ class GitStats {
     const { repoUrl, targetDir } = this
     console.log(`Cloning into ${this.targetDir}`)
     const command = `git clone ${repoUrl} ${targetDir}`
-    execSync(command, { encoding: "utf8", timeout: 600000 })
+    execSync(command, { encoding: "utf8", timeout: 10000 })
     return this
   }
 
