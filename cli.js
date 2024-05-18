@@ -60,12 +60,16 @@ class PLDBCli {
   //   )
   // }
 
+  get pldb() {
+    return require("./pldb.json")
+  }
+
   async crawlGitHubCommand() {
     // Todo: figuring out best repo orgnization for crawlers.
     // Note: this currently assumes you have measurementscrawlers project installed separateely.
     const { GitHubImporter } = require("../measurementscrawlers/github.com/GitHub.js")
-    const importer = new GitHubImporter(require("./pldb.json"), conceptsFolder)
-    //await importer.fetchAllRepoDataCommand()
+    const importer = new GitHubImporter(this.pldb, conceptsFolder)
+    await importer.fetchAllRepoDataCommand()
     await importer.writeAllRepoDataCommand()
   }
 
@@ -74,21 +78,27 @@ class PLDBCli {
     // Todo: figuring out best repo orgnization for crawlers.
     // Note: this currently assumes you have measurementscrawlers project installed separateely.
     const gitsFolder = path.join(ignoreFolder, "gits")
-    this.folder.topLanguages.forEach(async file => {
-      const repo = file.repo
-      if (!repo) return
-      if (file.has("repoStats")) return
-      if (file.get("isDone") === "true") return
-      const baseFolder = path.join(gitsFolder, file.id)
-      try {
-        const stats = new GitStats(repo, baseFolder)
-        if (!Disk.exists(baseFolder)) stats.clone()
-        file.appendLineAndChildren("repoStats", stats.summary)
-        file.prettifyAndSave()
-      } catch (err) {
-        console.error(err, file.id)
-      }
-    })
+    this.pldb
+      .slice(0)
+      .reverse()
+      .forEach(async file => {
+        const repo = file.gitRepo || file.githubRepo || file.gitlabRepo || file.sourcehutRepo
+        if (!repo) return
+        if (file.repoStats_files) return
+        if (file.isDone) return
+        try {
+          const targetFolder = path.join(gitsFolder, file.filename.replace(".scroll", ""))
+          const stats = new GitStats(repo, targetFolder)
+          if (!Disk.exists(targetFolder)) stats.clone()
+
+          const targetPath = path.join(conceptsFolder, file.filename)
+          const tree = new TreeNode(Disk.read(targetPath))
+          tree.touchNode("repoStats").setProperties(stats.summary)
+          Disk.write(targetPath, tree.toString())
+        } catch (err) {
+          console.error(err, file.id)
+        }
+      })
   }
 
   buildGrammarFileCommand() {
