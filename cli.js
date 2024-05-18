@@ -14,8 +14,7 @@ const baseFolder = path.join(__dirname)
 const ignoreFolder = path.join(baseFolder, "ignore")
 const pagesDir = path.join(baseFolder, "pages")
 const listsFolder = path.join(baseFolder, "lists")
-
-const conceptsFolderName = "/concepts/"
+const conceptsFolder = path.join(baseFolder, "concepts")
 
 class PLDBCli {
   get keywordsOneHotCsv() {
@@ -63,17 +62,17 @@ class PLDBCli {
 
   async crawlGitHubCommand() {
     // Todo: figuring out best repo orgnization for crawlers.
-    // Note: this currently assumes you have truecrawler project installed separateely.
-    const { GitHubImporter } = require("../truecrawler/github.com/GitHub.js")
-    const importer = new GitHubImporter(this.folder)
-    await importer.fetchAllRepoDataCommand()
+    // Note: this currently assumes you have measurementscrawlers project installed separateely.
+    const { GitHubImporter } = require("../measurementscrawlers/github.com/GitHub.js")
+    const importer = new GitHubImporter(require("./pldb.json"), conceptsFolder)
+    //await importer.fetchAllRepoDataCommand()
     await importer.writeAllRepoDataCommand()
   }
 
   async crawlGitsCommand() {
     const { GitStats } = require("./code/gitStats.js")
     // Todo: figuring out best repo orgnization for crawlers.
-    // Note: this currently assumes you have truecrawler project installed separateely.
+    // Note: this currently assumes you have measurementscrawlers project installed separateely.
     const gitsFolder = path.join(ignoreFolder, "gits")
     this.folder.topLanguages.forEach(async file => {
       const repo = file.repo
@@ -100,11 +99,17 @@ node_modules/scroll-cli/grammar/blankLine.grammar
 node_modules/scroll-cli/grammar/measures.grammar
 node_modules/scroll-cli/grammar/import.grammar
 node_modules/scroll-cli/grammar/errors.grammar
-code/pldbMeasures.scroll`.split("\n").map(filepath => Disk.read(path.join(__dirname, filepath))).join("\n\n").replace("catchAllParser catchAllParagraphParser", "catchAllParser errorParser").replace(/^importOnly\n/gm, "").replace(/^import .+/gm, "")
+code/pldbMeasures.scroll`
+      .split("\n")
+      .map(filepath => Disk.read(path.join(__dirname, filepath)))
+      .join("\n\n")
+      .replace("catchAllParser catchAllParagraphParser", "catchAllParser errorParser")
+      .replace(/^importOnly\n/gm, "")
+      .replace(/^import .+/gm, "")
     Disk.write(path.join(__dirname, "pldb.grammar"), code)
   }
 
-    importCommand(filename) {
+  importCommand(filename) {
     // todo: add support for updating as well
     const processEntry = (node, index) => {
       const filename = node.get("filename")
@@ -117,9 +122,9 @@ code/pldbMeasures.scroll`.split("\n").map(filepath => Disk.read(path.join(__dirn
     const extension = filename.split(".").pop()
 
     if (extension === "csv") TreeNode.fromCsv(Disk.read(filename)).forEach(processEntry)
-    
+
     if (extension === "tsv") TreeNode.fromTsv(Disk.read(filename)).forEach(processEntry)
-    
+
     if (extension === "tree") TreeNode.fromDisk(filename).forEach(processEntry)
   }
 }

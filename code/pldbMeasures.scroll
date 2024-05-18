@@ -1823,7 +1823,7 @@ helloWorldCollectionParser
 // history
 appearedParser
  int sortIndex 1
- boolean isRequired true
+ boolean isMeasureRequired true
  description What year was the language publicly released and/or announced?
  extends abstractYearMeasureParser
 isDoneParser
@@ -2331,7 +2331,7 @@ twitterParser
 tagsParser
  int sortIndex 2
  description Which category(ies) in PLDB's subjective ontology does this entity fit into?
- boolean isRequired true
+ boolean isMeasureRequired true
  extends abstractEnumsMeasureParser
 
 // ubuntu
