@@ -2219,6 +2219,9 @@ repoStatsParser
  firstCommitParser
   extends abstractYearMeasureParser
   description What year the first commit made in this git repo?
+ newestCommitParser
+  extends abstractYearMeasureParser
+  description What year was the newest commit made in this git repo?
  commitsParser
   extends abstractCountMeasureParser
   description How many commits to the repo?

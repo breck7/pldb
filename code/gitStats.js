@@ -1,10 +1,5 @@
 const { execSync } = require("child_process")
 
-function cloneRepo(repoUrl, targetDir) {
-  const command = `git clone ${repoUrl} ${targetDir}`
-  execSync(command, { encoding: "utf8", timeout: 20000 })
-}
-
 class GitStats {
   constructor(repoUrl, targetDir) {
     this.repoUrl = repoUrl
@@ -12,8 +7,18 @@ class GitStats {
   }
 
   clone() {
+    const { repoUrl, targetDir } = this
     console.log(`Cloning into ${this.targetDir}`)
-    cloneRepo(this.repoUrl, this.targetDir)
+    const command = `git clone ${repoUrl} ${targetDir}`
+    execSync(command, { encoding: "utf8", timeout: 20000 })
+    return this
+  }
+
+  pull() {
+    const { repoUrl, targetDir } = this
+    console.log(`Pulling into ${this.targetDir}`)
+    const command = `git pull ${repoUrl} ${targetDir}`
+    execSync(command, { encoding: "utf8", timeout: 20000 })
     return this
   }
 
@@ -23,6 +28,12 @@ class GitStats {
 
   get firstCommit() {
     const command = 'log --reverse --pretty=format:"%ad" | head -n 1'
+    const output = this.execGitCommand(command)
+    return new Date(output.trim()).getFullYear()
+  }
+
+  get newestCommit() {
+    const command = 'log --pretty=format:"%ad" | head -n 1'
     const output = this.execGitCommand(command)
     return new Date(output.trim()).getFullYear()
   }
@@ -50,6 +61,7 @@ class GitStats {
   get summary() {
     return {
       firstCommit: this.firstCommit,
+      newestCommit: this.newestCommit,
       commits: this.commits,
       committers: this.committers,
       files: this.files
