@@ -17,6 +17,10 @@ const listsFolder = path.join(baseFolder, "lists")
 const conceptsFolder = path.join(baseFolder, "concepts")
 
 class PLDBCli {
+  constructor() {
+    this.quickCache = {}
+  }
+
   get keywordsOneHotCsv() {
     if (!this.quickCache.keywordsOneHotCsv) this.quickCache.keywordsOneHotCsv = new TreeNode(this.keywordsOneHot).asCsv
     return this.quickCache.keywordsOneHotCsv
@@ -107,6 +111,73 @@ class PLDBCli {
         console.error(err, file.id)
       }
     })
+  }
+
+  get searchIndex() {
+    if (!this.quickCache.searchIndex) this.quickCache.searchIndex = this.makeNameSearchIndex()
+    return this.quickCache.searchIndex
+  }
+
+  makeFilePath(id) {
+    return path.join(conceptsFolder, id.replace(".scroll", "") + ".scroll")
+  }
+
+  getTree(file) {
+    return new TreeNode(Disk.read(this.makeFilePath(file.filename)))
+  }
+
+  setAndSave(file, measurementPath, measurementValue) {
+    const tree = this.getTree(file)
+    tree.set(measurementPath, measurementValue)
+    return this.save(file, tree)
+  }
+
+  save(file, tree) {
+    const dest = this.makeFilePath(file.filename)
+    return Disk.write(dest, tree.toString())
+  }
+
+  makeNameSearchIndex(files = this.pldb.slice(0).reverse()) {
+    const map = new Map()
+    files.forEach(parsedConcept => {
+      const id = parsedConcept.filename.replace(".scroll", "")
+      this.makeNames(parsedConcept).forEach(name => map.set(name.toLowerCase(), parsedConcept))
+    })
+    return map
+  }
+
+  makeNames(concept) {
+    return [
+      concept.filename.replace(".scroll", ""),
+      concept.id,
+      concept.standsFor,
+      concept.githubLanguage,
+      concept.wikipediaTitle,
+      concept.aka
+    ].filter(i => i)
+  }
+
+  searchForConcept(query) {
+    if (query === undefined || query === "") return
+    const { searchIndex } = this
+    return (
+      searchIndex.get(query) || searchIndex.get(query.toLowerCase()) || searchIndex.get(Utils.titleToPermalink(query))
+    )
+  }
+
+  searchForConceptByFileExtensions(extensions = []) {
+    const { extensionsMap } = this
+    const hit = extensions.find(ext => extensionsMap.has(ext))
+    return extensionsMap.get(hit)
+  }
+
+  get extensionsMap() {
+    if (this.quickCache.extensionsMap) return this.quickCache.extensionsMap
+    this.quickCache.extensionsMap = new Map()
+    const extensionsMap = this.quickCache.extensionsMap
+    this.concepts.forEach(concept => concept.extensions.split(" ").forEach(ext => extensionsMap.set(ext, concept.id)))
+
+    return extensionsMap
   }
 
   buildGrammarFileCommand() {

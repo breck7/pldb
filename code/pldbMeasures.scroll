@@ -429,6 +429,11 @@ fileExtensionsParser
  catchAllCellType stringCell
  description What are the file extensions for this language?
 
+clocExtensionsParser
+ extends abstractStringListMeasureParser
+ catchAllCellType stringCell
+ description What are the file extensions for this language recognized by Al Danial's cloc?
+
 filenamesParser
  extends abstractStringListMeasureParser
  catchAllCellType stringCell
@@ -487,6 +492,8 @@ mainRepoParser
     const repo = concept.getOneOf("gitRepo githubRepo gitlabRepo sourcehutRepo".split(" "))
     return repo || ""
   }
+
+
 
 // githubBigQuery
 githubBigQueryParser
