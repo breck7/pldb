@@ -10,7 +10,7 @@ fileExtensions ucg
 domainName ucg.marzhillstudios.com
 
 compilesTo json yaml toml xml
-writtenIn rust
+writtenIn rust markdown scss toml html yaml nix make json bourne-shell javascript
 
 example
  let db_confs = import "db/mysql/hosts.ucg";

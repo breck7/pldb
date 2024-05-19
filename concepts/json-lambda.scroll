@@ -8,7 +8,7 @@ aka jl
 country England and Canada
 originCommunity https://chrisdone.com/
 
-writtenIn haskell
+writtenIn haskell yaml markdown
 
 example
  map (\o -> { sha: o.sha, ps: map _.sha o.parents }) | filter (\o -> length o.ps > 1)

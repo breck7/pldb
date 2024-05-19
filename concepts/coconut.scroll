@@ -13,7 +13,7 @@ domainName coconut-lang.org
   2017 4032050
 
 compilesTo python
-writtenIn python
+writtenIn python yaml markdown json make restructuredtext toml
 
 hasPatternMatching true
  match [head] + tail in [0, 1, 2, 3]:

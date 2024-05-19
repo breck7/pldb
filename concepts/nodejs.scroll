@@ -14,7 +14,7 @@ domainName nodejs.org
   2022 2451
 releaseNotesUrl https://nodejs.org/en/download/releases/
 
-writtenIn c cpp javascript
+writtenIn javascript cpp c python html json perl markdown assembly-language typescript bourne-shell yaml cmake starlark restructuredtext m4 make pascal diff wasm xml css powershell idl bash svg rust csv r xhtml lisp toml sql vim-script fortran-90 bazel scheme csharp php awk ruby coffeescript ini jsx dockerfile sed
 
 canWriteToDisk true
  require("fs").writeFileSync("foo.txt", "foo", "utf8")
