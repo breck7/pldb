@@ -2035,8 +2035,10 @@ const calcRanks = computer => {
 
   const conceptCount = objects.length
 
-  objects.forEach((obj, rank) => (obj.pldbScore = lodash.sum(categories.map(category => obj[category + "Rank"]))))
-  objects = lodash.sortBy(objects, ["pldbScore"])
+  objects.forEach(
+    (obj, rank) => (obj.pldbScore = lodash.sum(categories.map(category => conceptCount - obj[category + "Rank"])))
+  )
+  objects = lodash.sortBy(objects, ["pldbScore"]).reverse()
 
   const ranks = {}
   objects.forEach((obj, index) => {
