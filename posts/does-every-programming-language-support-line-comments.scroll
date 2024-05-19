@@ -70,7 +70,7 @@ ohayoCode
  html.h1 Line comments
  web.get https://pldb.io/languages.csv
   filter.where rank < 300
-   columns.keep appeared title rank languageRank features.hasLineComments lineCommentToken
+   columns.keep appeared title rank features.hasLineComments lineCommentToken
     columns.rename features.hasLineComments hasLineComments
      filter.where hasLineComments !=
       tables.basic

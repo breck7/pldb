@@ -63,7 +63,7 @@ comment
           title: file.title,
           id: file.id,
           appeared: file.get("appeared"),
-          rank: file.languageRank
+          rank: file.rank
         }
       })
     console.log(new TreeNode(results).asCsv)

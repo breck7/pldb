@@ -16,7 +16,7 @@ PLDB ranks languages by combining scores in 5 broad categories:
 
 # The Ranking Algorithm
 
-katex LangScore(x) = sum(UserEstRank(x), FoundationScore(x), JobsEstRank(x), LinkRank(x), MeasurementsRank(x))
+katex PLDBScore(x) = sum(UserEstRank(x), FoundationScoreRank(x), JobsEstRank(x), LinkRank(x), MeasurementsRank(x))
 
 You can verify this yourself by reading the source code.
 

@@ -235,23 +235,12 @@ Wayback Machine: https://web.archive.org/web/20220000000000*/${title}`
     return this.get("lineCommentToken")
   }
 
-  get langRankDebug() {
-    // todo
-    return ""
-    const obj = this.parent.getLanguageRankExplanation(this)
-    return `TotalRank: ${obj.totalRank} Jobs: ${obj.jobsRank} Users: ${obj.usersRank} Facts: ${obj.factsRank} Links: ${obj.pageRankLinksRank}`
-  }
-
   get previousRanked() {
-    return this.isLanguage
-      ? this.computer.getFileAtLanguageRank(this.languageRank - 1)
-      : this.computer.getFileAtRank(this.rank - 1)
+    return this.computer.getFileAtRank(this.rank - 1)
   }
 
   get nextRanked() {
-    return this.isLanguage
-      ? this.computer.getFileAtLanguageRank(this.languageRank + 1)
-      : this.computer.getFileAtRank(this.rank + 1)
+    return this.computer.getFileAtRank(this.rank + 1)
   }
 
   get exampleCount() {
@@ -510,10 +499,6 @@ Wayback Machine: https://web.archive.org/web/20220000000000*/${title}`
   getRelationshipFile(relationshipType) {
     const hit = this.get(relationshipType)
     return hit ? this.computer.getConceptPage(hit) : undefined
-  }
-
-  get languageRank() {
-    return this.parsed.languageRank
   }
 
   get rank() {
@@ -1266,11 +1251,11 @@ codeWithHeader ${this.title} <a href="../lists/keywords.html#q=${this.id}">Keywo
   }
 
   get kpiBar() {
-    const { appeared, title, isLanguage, languageRank } = this
+    const { appeared, title, rank } = this
     const numberOfRepos = this.get("githubLanguage repos")
 
     const lines = [
-      isLanguage ? `#${languageRank} <span title="${this.langRankDebug}">on PLDB</span>` : `#${this.rank} on PLDB`,
+      `#${this.rank} on PLDB`,
       appeared ? `${currentYear - appeared} Years Old` : "",
       numberOfRepos ? `${numeral(numberOfRepos).format("0a")} <span title="${title} repos on GitHub.">Repos</span>` : ""
     ]
@@ -1530,9 +1515,10 @@ class Tables {
           "appeared",
           PLDBKeywords.tags,
           "creators",
-          "impactScore",
+          "foundationScore",
           "numberOfUsersEstimate",
           "numberOfJobsEstimate",
+          "inboundLinks",
           "measurements"
         ])
       )
@@ -1549,10 +1535,6 @@ class Tables {
     return require("./pldb.json")
   }
 
-  get languages() {
-    return this.pldb.filter(file => file.isLanguage)
-  }
-
   _getFileAtRank(rank, ranks) {
     rank = rank - 1
     const count = Object.keys(ranks).length
@@ -1563,10 +1545,6 @@ class Tables {
 
   getFileAtRank(rank) {
     return this._getFileAtRank(rank, this.pldb)
-  }
-
-  getFileAtLanguageRank(rank) {
-    return this._getFileAtRank(rank, this.languages)
   }
 
   initConceptPages() {
@@ -1660,7 +1638,7 @@ class Tables {
     const wikipediaLinks = new TreeNode(Disk.read(path.join(listsFolder, "creators.tree")))
 
     const rows = Object.keys(entities).map(name => {
-      const group = lodash.sortBy(entities[name], "languageRank")
+      const group = lodash.sortBy(entities[name], "rank")
       const person = wikipediaLinks.nodesThatStartWith(name)[0]
       const anchorTag = lodash.camelCase(name)
 
@@ -1672,7 +1650,7 @@ class Tables {
           .map(file => `<a href='../concepts/${file.filename.replace(".scroll", ".html")}'>${file.id}</a>`)
           .join(" - "),
         count: group.length,
-        topRank: group[0].languageRank
+        topRank: group[0].rank
       }
     })
 
@@ -1719,7 +1697,7 @@ class Tables {
   get originCommunities() {
     const files = lodash.sortBy(
       this.pldb.filter(file => file.isLanguage && file.originCommunity.length),
-      "languageRank"
+      "rank"
     )
 
     const entities = groupByListValues("originCommunity", files)
@@ -1727,7 +1705,7 @@ class Tables {
       const group = entities[name]
       const languages = group.map(lang => `<a href='../concepts/${lang.id}.html'>${lang.id}</a>`).join(" - ")
       const count = group.length
-      const top = -Math.min(...group.map(lang => lang.languageRank))
+      const top = -Math.min(...group.map(lang => lang.rank))
 
       const wrappedName = `<a name='${lodash.camelCase(name)}' />${name}`
 
@@ -1905,10 +1883,6 @@ const computeds = {
     return count
   },
 
-  foundationScore(concept, computer) {
-    return computer.writtenIn[concept.get("filename").replace(".scroll", "")].length
-  },
-
   bookCount(concept) {
     const gr = concept.getNode(`goodreads`)?.length
     const isbndb = concept.getNode(`isbndb`)?.length
@@ -1941,15 +1915,21 @@ const computeds = {
   isLanguage(concept) {
     return isLanguage(concept.get(PLDBKeywords.tags).split(" ")[0])
   },
-  impactScore(concept, computer) {
-    return computer.ranks[concept.get("filename")].impactScore
-  },
 
   rank(concept, computer) {
     return computer.ranks[concept.get("filename")].index
   },
-  languageRank(concept, computer) {
-    return computeds.isLanguage(concept) ? computer.languageRanks[concept.get("filename")].index : ""
+
+  pldbScore(concept, computer) {
+    return computer.ranks[concept.get("filename")].pldbScore
+  },
+
+  inboundLinks(concept, computer) {
+    return computer.inboundLinks[concept.get("filename")].length
+  },
+
+  foundationScore(concept, computer) {
+    return computer.writtenIn[concept.get("filename").replace(".scroll", "")].length
   }
 }
 
@@ -1958,16 +1938,8 @@ class MeasureComputer {
     this.quickCache = {}
     this.concepts = concepts
     this.writtenIn = this.makeWrittenInCache()
-    this.ranks = calcRanks(concepts, this, this.pageRankLinks)
-    this.languageRanks = {}
-
-    Object.values(this.ranks)
-      .filter(obj => obj.isLanguage)
-      .forEach((obj, index) => {
-        const rank = { ...obj }
-        rank.index = index + 1
-        this.languageRanks[obj.filename] = rank
-      })
+    this.inboundLinks = this.makeInboundLinksCache()
+    this.ranks = calcRanks(this)
   }
 
   makeWrittenInCache() {
@@ -1984,13 +1956,10 @@ class MeasureComputer {
     return writtenInCache
   }
 
-  get pageRankLinks() {
-    if (this.quickCache.pageRankLinks) return this.quickCache.pageRankLinks
-
-    this.quickCache.pageRankLinks = {}
-    const pageRankLinks = this.quickCache.pageRankLinks
+  makeInboundLinksCache() {
+    const inboundLinks = {}
     this.concepts.forEach(concept => {
-      pageRankLinks[concept.get("filename")] = []
+      inboundLinks[concept.get("filename")] = []
     })
 
     this.concepts.forEach(concept => {
@@ -2001,14 +1970,14 @@ class MeasureComputer {
           const links = node.content.split(" ")
           links.forEach(link => {
             link += ".scroll"
-            if (!pageRankLinks[link]) throw new Error(`No file "${link}" found in "${filename}"`)
+            if (!inboundLinks[link]) throw new Error(`No file "${link}" found in "${filename}"`)
 
-            pageRankLinks[link].push(filename)
+            inboundLinks[link].push(filename)
           })
         })
     })
 
-    return pageRankLinks
+    return inboundLinks
   }
 
   get(measureName, concept) {
@@ -2016,49 +1985,36 @@ class MeasureComputer {
       if (!concept[measureName]) concept[measureName] = computeds[measureName](concept, this)
       return concept[measureName]
     }
-    return concept.get("appeared")
+    throw new Error(`${measureName} not found`)
   }
 }
 
-function impactScore(rank, totalItems, A = 5000, k = 0.001) {
-  const B = Math.log(k) / totalItems
-  return A * Math.exp(B * rank)
-}
+const calcRanks = computer => {
+  const { concepts } = computer
+  const categories = [
+    "numberOfUsersEstimate",
+    "foundationScore",
+    "numberOfJobsEstimate",
+    "inboundLinks",
+    "measurements"
+  ]
 
-const calcRanks = (concepts, computer, pageRankLinks) => {
   let objects = concepts.map(concept => {
     const filename = concept.get("filename")
     const id = filename.replace(".scroll", "")
     const object = {}
     object.filename = filename
-    object.jobs = computer.get("numberOfJobsEstimate", concept)
-    object.users = computer.get("numberOfUsersEstimate", concept)
-    object.measurements = computer.get("measurements", concept)
-    object.isLanguage = computeds.isLanguage(concept)
-    object.foundationScore = computer.writtenIn[id]
-    object.pageRankLinks = pageRankLinks[filename].length
+    categories.forEach(category => (object[category] = computer.get(category, concept)))
+
     return object
   })
 
-  objects = rankSort(objects, "jobs")
-  objects = rankSort(objects, "users")
-  objects = rankSort(objects, "foundationScore")
-  objects = rankSort(objects, "measurements")
-  objects = rankSort(objects, "pageRankLinks")
+  categories.forEach(category => (objects = rankSort(objects, category)))
 
   const conceptCount = objects.length
 
-  objects.forEach((obj, rank) => {
-    obj.totalRank = lodash.sum([
-      obj.jobsRank,
-      obj.usersRank,
-      obj.measurementsRank,
-      obj.pageRankLinksRank,
-      obj.foundationScoreRank
-    ])
-    obj.impactScore = Math.round(impactScore(obj.totalRank, conceptCount))
-  })
-  objects = lodash.sortBy(objects, ["totalRank"])
+  objects.forEach((obj, rank) => (obj.pldbScore = lodash.sum(categories.map(category => obj[category + "Rank"]))))
+  objects = lodash.sortBy(objects, ["pldbScore"])
 
   const ranks = {}
   objects.forEach((obj, index) => {

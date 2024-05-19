@@ -232,20 +232,20 @@ numberOfJobsEstimateParser
  extends abstractComputedIntMeasureParser
  description What is our estimate of the number of jobs in this language?
 
-impactScoreParser
+inboundLinksParser
  float sortIndex 3.1
  extends abstractComputedIntMeasureParser
- description What is the impact score of this concept?
+ description How many other concepts link to this one?
+
+pldbScoreParser
+ float sortIndex 3.01
+ extends abstractComputedIntMeasureParser
+ description What is the combined score of this language across all the categories of rankings?
 
 rankParser
  int sortIndex 3
  extends abstractComputedIntMeasureParser
  description How does this concept rank amongst all other concepts?
-
-languageRankParser
- int sortIndex 4
- extends abstractComputedIntMeasureParser
- description How does this language rank amongst all languages in PLDB?
 
 lastActivityParser
  int sortIndex 6
