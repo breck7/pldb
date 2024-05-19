@@ -1,0 +1,411 @@
+// A ScrollSet with information on programming language creators
+
+idParser
+ extends abstractIdParser
+wikipediaParser
+ extends abstractUrlMeasureParser
+websiteParser
+ extends abstractUrlMeasureParser
+gitsParser
+ description A link to their GitHub or GitLab or other Git portfolio.
+ extends abstractUrlMeasureParser
+twitterParser
+ extends abstractUrlMeasureParser
+bornParser
+ cells measureNameCell yearCell
+ extends abstractIntegerMeasureParser
+
+writeConcepts creators.json
+
+id Aaron Swartz
+wikipedia https://en.wikipedia.org/wiki/Aaron_Swartz
+
+id Adele Goldberg
+wikipedia https://en.wikipedia.org/wiki/Adele_Goldberg_(computer_scientist)
+
+id Breck Yunits
+website https://breckyunits.com
+twitter https://twitter.com/breckyunits
+gits https://github.com/breck7
+born 1984
+
+id Adriaan van Wijngaarden
+wikipedia https://en.wikipedia.org/wiki/Adriaan_van_Wijngaarden
+
+id Alain Colmerauer
+wikipedia https://en.wikipedia.org/wiki/Alain_Colmerauer
+
+id Alan Edelman
+wikipedia https://en.wikipedia.org/wiki/Alan_Edelman
+
+id Alan Kay
+wikipedia https://en.wikipedia.org/wiki/Alan_Kay
+
+id Alan Perlis
+wikipedia https://en.wikipedia.org/wiki/Alan_Perlis
+
+id Alfred Aho
+wikipedia https://en.wikipedia.org/wiki/Alfred_Aho
+
+id Anders Hejlsberg
+wikipedia https://en.wikipedia.org/wiki/Anders_Hejlsberg
+
+id Andrei Alexandrescu
+wikipedia https://en.wikipedia.org/wiki/Andrei_Alexandrescu
+
+id Anthony James Barr
+wikipedia https://en.wikipedia.org/wiki/Anthony_James_Barr
+
+id Arthur Whitney
+wikipedia https://en.wikipedia.org/wiki/Arthur_Whitney_(computer_scientist)
+
+id Barbara Liskov
+wikipedia https://en.wikipedia.org/wiki/Barbara_Liskov
+
+id Bertrand Meyer
+wikipedia https://en.wikipedia.org/wiki/Bertrand_Meyer
+
+id Bill Paxton
+wikipedia https://en.wikipedia.org/wiki/Bill_Paxton_(computer_scientist)
+
+id Bjarne Stroustrup
+wikipedia https://en.wikipedia.org/wiki/Bjarne_Stroustrup
+
+id Brad Cox
+wikipedia https://en.wikipedia.org/wiki/Brad_Cox
+
+id Brendan Eich
+wikipedia https://en.wikipedia.org/wiki/Brendan_Eich
+
+id Brian Fox
+wikipedia https://en.wikipedia.org/wiki/Brian_Fox_(computer_programmer)
+
+id Brian Kernighan
+wikipedia https://en.wikipedia.org/wiki/Brian_Kernighan
+
+id Carl Sassenrath
+wikipedia https://en.wikipedia.org/wiki/Carl_Sassenrath
+
+id Charles Goldfarb
+wikipedia https://en.wikipedia.org/wiki/Charles_Goldfarb
+
+id Charles H. Moore
+wikipedia https://en.wikipedia.org/wiki/Charles_H._Moore
+
+id Charles Katz
+wikipedia https://en.wikipedia.org/wiki/Charles_Katz
+
+id Chris Lattner
+wikipedia https://en.wikipedia.org/wiki/Chris_Lattner
+
+id Chuck Geschke
+wikipedia https://en.wikipedia.org/wiki/Charles_Geschke
+
+id Cleve Moler
+wikipedia https://en.wikipedia.org/wiki/Cleve_Moler
+
+id Dan Ingalls
+wikipedia https://en.wikipedia.org/wiki/Dan_Ingalls
+
+id Dan Weinreb
+wikipedia https://en.wikipedia.org/wiki/Daniel_Weinreb
+
+id Dave Bayer
+wikipedia https://en.wikipedia.org/wiki/Dave_Bayer
+
+id Dave Winer
+wikipedia https://en.wikipedia.org/wiki/Dave_Winer
+
+id David A. Moon
+wikipedia https://en.wikipedia.org/wiki/David_A._Moon
+
+id David Axmark
+wikipedia https://en.wikipedia.org/wiki/David_Axmark
+
+id David Cournapeau
+wikipedia https://en.wikipedia.org/wiki/David_Cournapeau
+
+id David Ungar
+wikipedia https://en.wikipedia.org/wiki/David_Ungar
+
+id Dennis Ritchie
+wikipedia https://en.wikipedia.org/wiki/Dennis_Ritchie
+
+id Don Box
+wikipedia https://en.wikipedia.org/wiki/Don_Box
+
+id Don Syme
+wikipedia https://en.wikipedia.org/wiki/Don_Syme
+
+id Donald D. Chamberlin
+wikipedia https://en.wikipedia.org/wiki/Donald_D._Chamberlin
+
+id Douglas Crockford
+wikipedia https://en.wikipedia.org/wiki/Douglas_Crockford
+
+id Douglas McIlroy
+wikipedia https://en.wikipedia.org/wiki/Douglas_McIlroy
+
+id Dwayne Richard Hipp
+wikipedia https://en.wikipedia.org/wiki/D._Richard_Hipp
+
+id Friedrich L. Bauer
+wikipedia https://en.wikipedia.org/wiki/Friedrich_L._Bauer
+
+id Gary Grossman
+wikipedia https://en.wikipedia.org/wiki/Gary_Grossman
+
+id Gerald Jay Sussman
+wikipedia https://en.wikipedia.org/wiki/Gerald_Jay_Sussman
+
+id Grace Hopper
+wikipedia https://en.wikipedia.org/wiki/Grace_Hopper
+
+id Graham Nelson
+wikipedia https://en.wikipedia.org/wiki/Graham_Nelson
+
+id Guido van Rossum
+wikipedia https://en.wikipedia.org/wiki/Guido_van_Rossum
+
+id Guy Steele
+wikipedia https://en.wikipedia.org/wiki/Guy_L._Steele_Jr.
+
+id Håkon Wium Lie
+wikipedia https://en.wikipedia.org/wiki/H%C3%A5kon_Wium_Lie
+
+id Hampton Lintorn-Catlin
+wikipedia https://en.wikipedia.org/wiki/Hampton_Lintorn-Catlin
+
+id James Gosling
+wikipedia https://en.wikipedia.org/wiki/James_Gosling
+
+id James Strachan
+wikipedia https://en.wikipedia.org/wiki/James_Strachan_(programmer)
+
+id Jean E. Sammet
+wikipedia https://en.wikipedia.org/wiki/Jean_E._Sammet
+
+id Jean Ichbiah
+wikipedia https://en.wikipedia.org/wiki/Jean_Ichbiah
+
+id Donald Knuth
+wikipedia https://en.wikipedia.org/wiki/Donald_Knuth
+website https://cs.stanford.edu/~knuth/
+born 1938
+
+id Jeff Bezanson
+wikipedia https://en.wikipedia.org/wiki/Jeff_Bezanson_(programmer)
+
+id Jeffrey Snover
+wikipedia https://en.wikipedia.org/wiki/Jeffrey_Snover
+
+id Jeremy Ashkenas
+wikipedia https://en.wikipedia.org/wiki/Jeremy_Ashkenas
+
+id Joe Armstrong
+wikipedia https://en.wikipedia.org/wiki/Joe_Armstrong_(programmer)
+
+id Joe Ossanna
+wikipedia https://en.wikipedia.org/wiki/Joe_Ossanna
+
+id John Backus
+wikipedia https://en.wikipedia.org/wiki/John_Backus
+
+id John G. Kemeny
+wikipedia https://en.wikipedia.org/wiki/John_G._Kemeny
+
+id John Gruber
+wikipedia https://en.wikipedia.org/wiki/John_Gruber
+
+id John Hughes
+wikipedia https://en.wikipedia.org/wiki/John_Hughes_(computer_scientist)
+
+id John McCarthy
+wikipedia https://en.wikipedia.org/wiki/John_McCarthy_(computer_scientist)
+
+id John Ousterhout
+wikipedia https://en.wikipedia.org/wiki/John_Ousterhout
+
+id John Warnock
+wikipedia https://en.wikipedia.org/wiki/John_Warnock
+
+id Joseph J. Allaire
+wikipedia https://en.wikipedia.org/wiki/Joseph_J._Allaire
+
+id Ken Thompson
+wikipedia https://en.wikipedia.org/wiki/Ken_Thompson
+
+id Kenneth E. Iverson
+wikipedia https://en.wikipedia.org/wiki/Kenneth_E._Iverson
+
+id Kent Pitman
+wikipedia https://en.wikipedia.org/wiki/Kent_Pitman
+
+id Konrad Zuse
+wikipedia https://en.wikipedia.org/wiki/Konrad_Zuse
+
+id Larry Wall
+wikipedia https://en.wikipedia.org/wiki/Larry_Wall
+
+id Lars Bak
+wikipedia https://en.wikipedia.org/wiki/Lars_Bak_(computer_programmer)
+born 1965
+gits https://github.com/larsbak
+
+id Lars Pensjö
+wikipedia https://en.wikipedia.org/wiki/Lars_Pensjö
+
+id Lee E. McMahon
+wikipedia https://en.wikipedia.org/wiki/Lee_E._McMahon
+
+id Mark S. Miller
+wikipedia https://en.wikipedia.org/wiki/Mark_S._Miller
+
+id Martin Odersky
+wikipedia https://en.wikipedia.org/wiki/Martin_Odersky
+
+id Martin Richards
+wikipedia https://en.wikipedia.org/wiki/Martin_Richards_(computer_scientist)
+
+id Matthew Flatt
+wikipedia https://en.wikipedia.org/wiki/Matthew_Flatt
+
+id Matthias Felleisen
+wikipedia https://en.wikipedia.org/wiki/Matthias_Felleisen
+
+id Michael Widenius
+wikipedia https://en.wikipedia.org/wiki/Michael_Widenius
+
+id Mike Cowlishaw
+wikipedia https://en.wikipedia.org/wiki/Mike_Cowlishaw
+
+id Nathaniel Borenstein
+wikipedia https://en.wikipedia.org/wiki/Nathaniel_Borenstein
+
+id Ned Freed
+wikipedia https://en.wikipedia.org/wiki/Ned_Freed
+
+id Niklaus Wirth
+wikipedia https://en.wikipedia.org/wiki/Niklaus_Wirth
+
+id Ole-Johan Dahl
+wikipedia https://en.wikipedia.org/wiki/Ole-Johan_Dahl
+
+id P. J. Plauger
+wikipedia https://en.wikipedia.org/wiki/P._J._Plauger
+
+id Paul Graham
+wikipedia https://en.wikipedia.org/wiki/Paul_Graham_(programmer)
+
+id Paul Hudak
+wikipedia https://en.wikipedia.org/wiki/Paul_Hudak
+
+id Peter J. Weinberger
+wikipedia https://en.wikipedia.org/wiki/Peter_J._Weinberger
+
+id Peter Naur
+wikipedia https://en.wikipedia.org/wiki/Peter_Naur
+
+id Ralph Griswold
+wikipedia https://en.wikipedia.org/wiki/Ralph_Griswold
+
+id Rasmus Lerdorf
+wikipedia https://en.wikipedia.org/wiki/Rasmus_Lerdorf
+
+id Raymond F. Boyce
+wikipedia https://en.wikipedia.org/wiki/Raymond_F._Boyce
+
+id Rich Hickey
+wikipedia https://en.wikipedia.org/wiki/Rich_Hickey
+
+id Richard P. Gabriel
+wikipedia https://en.wikipedia.org/wiki/Richard_P._Gabriel
+
+id Richard Stallman
+wikipedia https://en.wikipedia.org/wiki/Richard_Stallman
+
+id Rob Pike
+wikipedia https://en.wikipedia.org/wiki/Rob_Pike
+born 1956
+website http://herpolhode.com/rob/
+gits https://github.com/robpike
+
+id Robert Bruce Findler
+wikipedia https://en.wikipedia.org/wiki/Robert_Bruce_Findler
+
+id Robert Fourer
+wikipedia https://en.wikipedia.org/wiki/Robert_Fourer
+
+id Robert Gentleman
+wikipedia https://en.wikipedia.org/wiki/Robert_Gentleman_(statistician)
+
+id Robert Griesemer
+wikipedia https://en.wikipedia.org/wiki/Robert_Griesemer
+
+id Roberto Ierusalimschy
+wikipedia https://en.wikipedia.org/wiki/Roberto_Ierusalimschy
+
+id Robin Milner
+wikipedia https://en.wikipedia.org/wiki/Robin_Milner
+
+id Roger Hui
+wikipedia https://en.wikipedia.org/wiki/Roger_Hui
+
+id Ross Ihaka
+wikipedia https://en.wikipedia.org/wiki/Ross_Ihaka
+
+id Ryan Dahl
+wikipedia https://en.wikipedia.org/wiki/Ryan_Dahl
+
+id Scott Fahlman
+wikipedia https://en.wikipedia.org/wiki/Scott_Fahlman
+
+id Shriram Krishnamurthi
+wikipedia https://en.wikipedia.org/wiki/Shriram_Krishnamurthi
+
+id Sophie Wilson
+wikipedia https://en.wikipedia.org/wiki/Sophie_Wilson
+
+id Stefan Karpinski
+wikipedia https://en.wikipedia.org/wiki/Stefan_Karpinski
+
+id Stephen Wolfram
+wikipedia https://en.wikipedia.org/wiki/Stephen_Wolfram
+born 1959
+website https://www.stephenwolfram.com/
+
+id Steve Crocker
+wikipedia https://en.wikipedia.org/wiki/Steve_Crocker
+
+id Steve Furber
+wikipedia https://en.wikipedia.org/wiki/Steve_Furber
+
+id Steve Omohundro
+wikipedia https://en.wikipedia.org/wiki/Steve_Omohundro
+
+id Thomas E. Kurtz
+wikipedia https://en.wikipedia.org/wiki/Thomas_E._Kurtz
+
+id Tim Berners-Lee
+wikipedia https://en.wikipedia.org/wiki/Tim_Berners-Lee
+
+id Tobias Lütke
+wikipedia https://en.wikipedia.org/wiki/Tobias_Lütke
+
+id Tom Preston-Werner
+wikipedia https://en.wikipedia.org/wiki/Tom_Preston-Werner
+
+id Vern Paxson
+wikipedia https://en.wikipedia.org/wiki/Vern_Paxson
+
+id Viral B. Shah
+wikipedia https://en.wikipedia.org/wiki/Viral_B._Shah
+
+id Walter Bright
+wikipedia https://en.wikipedia.org/wiki/Walter_Bright
+
+id Xavier Leroy
+wikipedia https://en.wikipedia.org/wiki/Xavier_Leroy
+
+id Yukihiro Matsumoto
+wikipedia https://en.wikipedia.org/wiki/Yukihiro_Matsumoto

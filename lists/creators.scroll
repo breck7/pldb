@@ -1,13 +1,13 @@
 groups All
 replaceNodejs
  const {Tables} = require("../Computer.js")
- module.exports = Tables.creators
+ module.exports = Tables.creatorsTable
 title List of people who created a programming language
 
 import header.scroll
 printTitle
 
-mediumColumns 1
+wideColumns 1
 
 Here is the list of COUNT people who created a language(s) in PLDB.
 
