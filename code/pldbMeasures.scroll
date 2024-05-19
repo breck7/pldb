@@ -197,16 +197,6 @@ isLanguageParser
  extends abstractComputedIntMeasureParser
  description Does PLDB categorize this entity as a language?
 
-getSourceParser
- boolean isComputed true
- extends abstractStringMeasureParser
- description What is a one line shell command to download the source code for this language?
- javascript
-  computeValue(concept) {
-    const repo = concept.getOneOf("gitRepo githubRepo gitlabRepo sourcehutRepo".split(" "))
-    return repo ? `git clone ${repo}` : ""
-  }
-
 measurementsParser
  extends abstractComputedIntMeasureParser
  int sortIndex 5
@@ -486,6 +476,17 @@ abstractGitRepoUrlMeasureParser
 gitRepoParser
  description What is the URL of the official git repo for the language project if not hosted on GitHub or GitLab or Sourcehut?
  extends abstractGitRepoUrlMeasureParser
+
+// mainRepo
+mainRepoParser
+ boolean isComputed true
+ extends abstractStringMeasureParser
+ description Where is the main source code for this language?
+ javascript
+  computeValue(concept) {
+    const repo = concept.getOneOf("gitRepo githubRepo gitlabRepo sourcehutRepo".split(" "))
+    return repo || ""
+  }
 
 // githubBigQuery
 githubBigQueryParser

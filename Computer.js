@@ -151,11 +151,6 @@ class ConceptPage {
     return this.get("subreddit")?.split("/").pop()
   }
 
-  get getSource() {
-    const { repo } = this
-    return repo ? `git clone ${repo}` : ""
-  }
-
   get bookCount() {
     if (this.quickCache.bookCount !== undefined) return this.quickCache.bookCount
     const gr = this.getNode(`goodreads`)?.length
@@ -230,10 +225,6 @@ Wayback Machine: https://web.archive.org/web/20220000000000*/${title}`
   get keywords() {
     const kw = this.get("keywords")
     return kw ? kw.split(" ") : []
-  }
-
-  get repo() {
-    return this.node.getOneOf("gitRepo githubRepo gitlabRepo sourcehutRepo".split(" "))
   }
 
   get repl() {
@@ -713,13 +704,15 @@ pipeTable
   }
 
   toScroll() {
-    const { primaryTagName, title, id, getSource } = this
+    const { primaryTagName, title, id } = this
 
     if (title.includes("%20")) throw new Error("bad space in title: " + title)
 
-    const sourceCode = getSource
+    const { mainRepo } = this.parsed
+
+    const sourceCode = mainRepo
       ? `codeWithHeader Download source code:
- ${getSource}`
+ git clone ${mainRepo}`
       : ""
 
     return `import ../header.scroll
@@ -832,7 +825,7 @@ image ${image}
     const links = {
       home: this.website,
       terminal: this.repl,
-      code: this.repo,
+      code: this.mainRepo,
       menu_book: this.get("documentation"),
       mail: this.get("emailList"),
       wikipedia: this.get(`wikipedia`),

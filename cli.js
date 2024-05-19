@@ -88,14 +88,14 @@ class PLDBCli {
     // Note: this currently assumes you have measurementscrawlers project installed separateely.
     const gitsFolder = path.join(ignoreFolder, "node_modules", "gits") // toss in a fake "node_modules" folder to avoid a "scroll list" scan. hacky i know.
     this.pldb.forEach(async file => {
-      const repo = file.gitRepo || file.githubRepo || file.gitlabRepo || file.sourcehutRepo
-      if (!repo) return
+      const { mainRepo } = file
+      if (!mainRepo) return
       const targetFolder = path.join(gitsFolder, file.filename.replace(".scroll", ""))
       //if (Disk.exists(targetFolder)) return
       if (file.repoStats_files) return
       if (file.isFinished) return
       try {
-        const gitStats = new GitStats(repo, targetFolder)
+        const gitStats = new GitStats(mainRepo, targetFolder)
         if (!Disk.exists(targetFolder)) gitStats.clone()
 
         const targetPath = path.join(conceptsFolder, file.filename)
