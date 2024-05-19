@@ -83,25 +83,3 @@ monacoEditorParser
     </script>`
   }
 
-printDateParser
- extends abstractScrollParser
- cruxFromId
- cells keywordCell
- javascript
-  compile() {
-   return `<div style="text-align: center;" class="scrollDateline">${this.day}</div>`
-  }
-  get day() {
-   let day = this.content || this.root.get("date")
-   if (!day) return ""
-   try {
-    const dayjs = require("dayjs")
-    return dayjs(day).format(`MMMM D, YYYY`)
-   } catch (err) {
-    console.error(err)
-   }
-   return day || ""
-  }
-  compileTextVersion() {
-    return this.day
-  }
