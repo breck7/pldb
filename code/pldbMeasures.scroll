@@ -202,6 +202,11 @@ measurementsParser
  int sortIndex 5
  description How many measurements do we have about this thing?
 
+foundationScoreParser
+ extends abstractComputedIntMeasureParser
+ int sortIndex 6
+ description How many languages are built using this language?
+
 bookCountParser
  int sortIndex 8
  extends abstractComputedIntMeasureParser

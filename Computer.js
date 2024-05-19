@@ -1905,6 +1905,10 @@ const computeds = {
     return count
   },
 
+  foundationScore(concept, computer) {
+    return computer.writtenIn[concept.get("filename").replace(".scroll", "")].length
+  },
+
   bookCount(concept) {
     const gr = concept.getNode(`goodreads`)?.length
     const isbndb = concept.getNode(`isbndb`)?.length
@@ -1953,6 +1957,7 @@ class MeasureComputer {
   constructor(concepts) {
     this.quickCache = {}
     this.concepts = concepts
+    this.writtenIn = this.makeWrittenInCache()
     this.ranks = calcRanks(concepts, this, this.pageRankLinks)
     this.languageRanks = {}
 
@@ -1963,6 +1968,20 @@ class MeasureComputer {
         rank.index = index + 1
         this.languageRanks[obj.filename] = rank
       })
+  }
+
+  makeWrittenInCache() {
+    const writtenInCache = {}
+    this.concepts.forEach(concept => {
+      writtenInCache[concept.get("filename").replace(".scroll", "")] = []
+    })
+    this.concepts.forEach(concept => {
+      const conceptId = concept.get("filename").replace(".scroll", "")
+      const writtenIn = concept.get("writtenIn")
+      if (!writtenIn) return
+      writtenIn.split(" ").forEach(id => writtenInCache[id].push(conceptId))
+    })
+    return writtenInCache
   }
 
   get pageRankLinks() {
@@ -2009,28 +2028,34 @@ function impactScore(rank, totalItems, A = 5000, k = 0.001) {
 const calcRanks = (concepts, computer, pageRankLinks) => {
   let objects = concepts.map(concept => {
     const filename = concept.get("filename")
+    const id = filename.replace(".scroll", "")
     const object = {}
     object.filename = filename
     object.jobs = computer.get("numberOfJobsEstimate", concept)
     object.users = computer.get("numberOfUsersEstimate", concept)
     object.measurements = computer.get("measurements", concept)
     object.isLanguage = computeds.isLanguage(concept)
+    object.foundationScore = computer.writtenIn[id]
     object.pageRankLinks = pageRankLinks[filename].length
     return object
   })
 
   objects = rankSort(objects, "jobs")
   objects = rankSort(objects, "users")
+  objects = rankSort(objects, "foundationScore")
   objects = rankSort(objects, "measurements")
   objects = rankSort(objects, "pageRankLinks")
 
   const conceptCount = objects.length
 
   objects.forEach((obj, rank) => {
-    // Drop the item this does the worst on, as it may be a flaw in PLDB.
-    const top3 = lodash.sortBy([obj.jobsRank, obj.usersRank, obj.measurementsRank, obj.pageRankLinks]).slice(0, 3)
-    // todo: add a lot more data for pagerank, and have pagerank pass on (so languages influencing other langs have a bigger impact)
-    obj.totalRank = lodash.sum(top3)
+    obj.totalRank = lodash.sum([
+      obj.jobsRank,
+      obj.usersRank,
+      obj.measurementsRank,
+      obj.pageRankLinksRank,
+      obj.foundationScoreRank
+    ])
     obj.impactScore = Math.round(impactScore(obj.totalRank, conceptCount))
   })
   objects = lodash.sortBy(objects, ["totalRank"])
