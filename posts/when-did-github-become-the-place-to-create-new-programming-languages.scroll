@@ -4,11 +4,8 @@ groups All
 title When did GitHub become the place to host new programming language projects?
 
 import postHeader.scroll
-
 mediumColumns 1
-
 printTitle
-
 printAuthor
 
 * Before GitHub started in 2008, the source code for nascent programming languages was stored in a variety of places. In the early days it was physical media; later on it was publicly accessible servers; and even later it started moving to online source control systems like self-hosted SVN servers or Sourceforce.
