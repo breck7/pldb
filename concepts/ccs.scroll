@@ -13,3 +13,5 @@ example
  $sysDescr like /IOS/ and
  $Version like /^1[2-9]/ and
  $Type in ['Router', 'Switch-Router']]
+
+clocExtensions ccs

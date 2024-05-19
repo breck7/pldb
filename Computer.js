@@ -527,6 +527,7 @@ Wayback Machine: https://web.archive.org/web/20220000000000*/${title}`
   get extensions() {
     return getJoined(this, [
       "fileExtensions",
+      "clocExtensions",
       "githubLanguage fileExtensions",
       "pygmentsHighlighter fileExtensions",
       "wikipedia fileExtensions"
@@ -1686,6 +1687,7 @@ class Tables {
       .map(row => {
         row.extensions = getJoined(row, [
           "fileExtensions",
+          "clocExtensions",
           "githubLanguage_fileExtensions",
           "pygmentsHighlighter_fileExtensions",
           "wikipedia_fileExtensions"

@@ -95,3 +95,5 @@ isbndb 6
 semanticScholar 1
  year|title|doi|citations|influentialCitations|authors|paperId
  2017|A Cython Interface to EPICS Channel Access for High-level Python Applications|10.18429/JACOW-PCAPAC2016-WEUIPLCO04|1|0|J. Chrin|9a750962554912a666a93ac4b4592958b2552c68
+
+clocExtensions pxd pxi pyx
